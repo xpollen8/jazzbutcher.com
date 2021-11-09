@@ -24,6 +24,18 @@ Once you are a member of this repo, the workflow usually looks like this:
      
 - Mark the Issue as "ready for review"
 
+## OF PARTICLUAR INTEREST
+
+Much activity is occurring on the closed-world of Face\*\*k/Meta. Let's not forget the lesson of MySpace.
+
+Many things, I understand, are being shared there, and copies really, really, need to stored elsewhere.
+
+Not just media, but ancedotes, histories, etc.
+
+_All of these are important_
+
+If you have access to this material, please open Issues and attach salvaged images (no screenshots, plz, unless that's all there is),
+with proper provenance/attribution.
 
 
 ## Any assistance is sincerely appreciated!

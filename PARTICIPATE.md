@@ -6,6 +6,8 @@ In the [Issues](https://github.com/xpollen8/jazzbutcher.com//issues), you'll fin
 
 In the [Projects](https://github.com/xpollen8/jazzbutcher.com/projects/1), you'll see some Issues prioritized.
 
+Here's the [longterm Roadmap](https://github.com/xpollen8/jazzbutcher.com/wiki/Roadmap).
+
 For general conversations, see the [Discussions](https://github.com/xpollen8/jazzbutcher.com/discussions) section.
 
 ## How To Help

@@ -24,7 +24,7 @@ Once you are a member of this repo, the workflow usually looks like this:
      
 - Mark the Issue as "ready for review"
 
-## OF PARTICLUAR INTEREST
+## OF PARTICULAR INTEREST
 
 Much activity is occurring on the closed-world of Face\*\*k/Meta. Let's not forget the lesson of MySpace.
 

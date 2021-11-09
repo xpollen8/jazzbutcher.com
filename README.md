@@ -9,7 +9,7 @@ Once something like that starts, it just keeps on keeping on.
 
 None of us will last forever, but with a little bit of effort, perhaps the collected Jazz Butcher archives, as stored on jazzbutcher.com, can have a fighting chance to make it past just my lifetime.
 
-This is the first attempt to formalize a public/participatory framework for maintaining the jazzbutcher.com website.
+This is the initial effort to formalize a public/participatory framework for maintaining the jazzbutcher.com website.
 
 With shared ownership in this repository, the raw information that drives jbc com will not be stuck "somewhere".
 

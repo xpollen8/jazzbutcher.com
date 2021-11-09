@@ -26,7 +26,9 @@ Once you are a member of this repo, the workflow usually looks like this:
 
 - That "stuff" needs to be stored somewhere, and we'll have
       to sort out the permissions so that conspirators can dump the
-      media/pics/etc directly on the Amazon S3 storage bucket used by jazzbutcher.com
+      media/pics/etc directly on the Amazon S3 storage bucket used by jazzbutcher.com.
+      If the task was to mirror text or images, then attach that information to the Issue as a comment.
+      Anything large... Lets' discuss.
      
 - When you've completed a task, attach your results to the Issue, and
    move the Project card from "In Progress" to "Done" [Here](https://github.com/xpollen8/jazzbutcher.com/projects/1)

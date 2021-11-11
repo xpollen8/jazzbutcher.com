@@ -13,7 +13,7 @@ For general conversations, see the [Discussions](https://github.com/xpollen8/jaz
 ## How To Help
 
 - Create a github.com account
-- Ask to be invited to this repository
+- Go [Here and ask](https://github.com/xpollen8/jazzbutcher.com/discussions/45) to be invited to this repository
 
 ## And Then..?
 

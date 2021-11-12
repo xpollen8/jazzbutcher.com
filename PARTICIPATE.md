@@ -17,7 +17,7 @@ For general conversations, see the [Discussions](https://github.com/xpollen8/jaz
 
 ## And Then..?
 
-Once you are a member of this repo, the workflow usually looks like this:
+Once you are a member of this repo, an easy place place to start is by helping to capture material "elsewhere":
 
 - There's an "Issue" created, which describes the task
 
@@ -28,7 +28,7 @@ Once you are a member of this repo, the workflow usually looks like this:
   
 - That "stuff" needs to be stored somewhere.  Text can be attached directly as a comment in the issue.
 
-- There's a custom file uploader for transfering large files.
+- A custom file uploader for transfering large files.
   [upload.jazzbutcher.com](https://upload.jazzbutcher.com)
   You will need to login using your github account, and all uploads must referance a github Issue #.
      

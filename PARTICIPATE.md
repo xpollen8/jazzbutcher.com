@@ -25,12 +25,12 @@ Once you are a member of this repo, the workflow usually looks like this:
   Currently, most of the Issues are simply "Go to this URL and grab the stuff"
 
 - If you've decided to work on a task, move the "card" from the "TODO" -> "In Progress" column [Here](https://github.com/xpollen8/jazzbutcher.com/projects/1)
+  
+- That "stuff" needs to be stored somewhere.  Text can be attached directly as a comment in the issue.
 
-- That "stuff" needs to be stored somewhere, and we'll have
-      to sort out the permissions so that conspirators can dump the
-      media/pics/etc directly on the Amazon S3 storage bucket used by jazzbutcher.com.
-      If the task was to mirror text or images, then attach that information to the Issue as a comment.
-      Anything large... Lets' discuss.
+- There's a custom file uploader for transfering large files.
+  [upload.jazzbutcher.com](https://upload.jazzbutcher.com)
+  You will need to login using your github account, and all uploads must referance a github Issue #.
      
 - When you've completed a task, attach your results to the Issue, and
    move the Project card from "In Progress" to "Done" [Here](https://github.com/xpollen8/jazzbutcher.com/projects/1)

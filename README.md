@@ -1,7 +1,9 @@
 
 # Hello!
 
-I'm David Whittemore.  Like many of you, the JBC has been important to me and being in Pat's sphere of influence has colored my life to a certain extent.  I would not be sharing this had I not learned about programming for the web way back.  The initial Jazz Butcher website was one of the first 1,000 _in the world_.
+David Whittemore, here..
+
+Like many of you, being in Pat's sphere of influence has colored my life to a certain extent.  I would not *here* had I not learned about programming for the web way back (1994!).  The initial Jazz Butcher website was one of the first 1,000 _in the world_.
 
 Once something like that starts, it just keeps on keeping on.
 
@@ -13,7 +15,7 @@ This is the initial effort to formalize a public/participatory framework for mai
 
 With shared ownership in this repository, the raw information that drives jbc com will not be stuck "somewhere".
 
-Eventually, a proper "workflow" will be developed, but this is the first step: announcing the intent, and inviting participants in an open sharing of information.
+This is the first step: announcing the intent, and inviting participants in an open sharing of information.
 
 # *I hope you'll join us*
 

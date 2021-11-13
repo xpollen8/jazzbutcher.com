@@ -23,7 +23,8 @@ Once you are a member of this repo, an easy place place to start is by helping t
 - There's an "Issue" created, which describes the task
 
 - Find a task that's in the "TODO" column [Here](https://github.com/xpollen8/jazzbutcher.com/projects/1)
-  Currently, most of the Issues are simply "Go to this URL and grab the stuff"
+  Currently, most of the Issues are simply "Go to this URL and grab the stuff".
+  Open an Issue if you've found something we need to capture!
 
 - If you've decided to work on a task, move the "card" from the "TODO" -> "In Progress" column [Here](https://github.com/xpollen8/jazzbutcher.com/projects/1)
   

@@ -10,10 +10,11 @@ Here's the [longterm Roadmap](https://github.com/xpollen8/jazzbutcher.com/wiki/R
 
 For general conversations, see the [Discussions](https://github.com/xpollen8/jazzbutcher.com/discussions) section.
 
-## How To Help
+## Getting Started
 
 - Create a github.com account
 - Go [Here and ask](https://github.com/xpollen8/jazzbutcher.com/discussions/45) to be invited to this repository
+- [Tell us about yourself](https://github.com/xpollen8/jazzbutcher.com/discussions/59)
 
 ## And Then..?
 

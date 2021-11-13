@@ -3,19 +3,17 @@
 
 David Whittemore, here..
 
-Like many of you, being in Pat's sphere of influence has colored my life to a certain extent.  I would not *here* had I not learned about programming for the web way back (1994!).  The initial Jazz Butcher website was one of the first 1,000 _in the world_.
+Historically, the contents of the jazzbutcher.com website has been a tightly-curated affair, and the accuracy of its contents has been dictated by information availability and personal free time.
 
-Once something like that starts, it just keeps on keeping on.
+Obviously, there is more information "out there", and having more people on the case could only be a good thing.
 
 # *Which is where _you_ come in*
 
-None of us will last forever, but with a little bit of effort, perhaps the collected Jazz Butcher archives, as stored on jazzbutcher.com, can have a fighting chance to make it past just my lifetime.
+With a little bit of effort, the collected Jazz Butcher archives can have a fighting chance to make it past just the lifetime of one person.
 
-This is the initial effort to formalize a public/participatory framework for maintaining the jazzbutcher.com website.
+With shared ownership in this repository, the raw information that drives jbc com will not be stuck "somewhere". Instead the information could be available for others to mine and repurpose and improve upon.
 
-With shared ownership in this repository, the raw information that drives jbc com will not be stuck "somewhere".
-
-This is the first step: announcing the intent, and inviting participants in an open sharing of information.
+This is the first step to formalize a public/participatory framework for maintaining the jazzbutcher.com website: announcing the intent, and inviting participants in an open sharing of information.
 
 # *I hope you'll join us*
 

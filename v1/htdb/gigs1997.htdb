@@ -1,0 +1,297 @@
+#define	Mar11.html()
+	${gigHeader(
+		photosets= /images/19970311/19970311_martinsreed_001.jpg$$
+			/images/19970311/19970311_martinsreed_003.jpg$$
+			Martin Reed
+		---
+		/images/19970311/sumo1.jpg$$
+			/images/19970311/sumo2.jpg$$
+			/images/19970311/sumo3.jpg$$
+			/images/19970311/sumo4.jpg$$
+			/images/19970311/sumo5.jpg$$
+			/images/19970311/sumo6.jpg$$
+			/images/19970311/sumo7.jpg$$
+			/images/19970311/sumo8.jpg$$
+			/images/19970311/sumo9.jpg$$
+			/images/19970311/sumo10.jpg$$
+			/images/19970311/sumo11.jpg$$
+			John Devitofranceschi
+			,
+			notes=${literalizeCommas(
+				Sumosonic will be playing live at The Powerhaus, London
+				at 9:15pm on Tuesday, 11th March '97. Tube Station: Finsbury Park.
+				People who want discounted tickets should call Pat.
+			)},
+			reviews=${literalizeCommas(
+				Sound was initially v. poor, but improved after the first song (CF
+				Spacemen).  Vocals/rap handled by unknown person - sounded slightly
+				unsure.  Female backing vox v. good throughout.  Musicianship
+				excellent comme d'habitude.  Audience inc. sad hippy bloke but also
+				luminaries such as Tim from Homer and Wotjek from BA.
+				<p>
+				Not just Butcher legacy here but felt that his vocals had an authority
+				that was noticeably absent otherwise.  Liked new bloke though - maybe
+				better sound would have helped him.  Sound problems worst for guitar.
+				Lighting really good, incidentally.
+				<p>
+				Venue fortified, previous band quite dodgy (Rush fans), nevertheless
+				fun evening - good impression made.  Girlfriend disappointed by
+				rendition of CFS, and worried by presence of unfashionable sad hippy
+				bloke.  Steve (raver) loved it.  Christie (teacher) liked it.  I
+				thought it was brilliant.  There you go.
+			)}$$
+			Jim Davies;;Jim.Davies@comlab.ox.ac.uk
+
+	)}
+
+#define	Aug3.html()
+	${gigHeader(
+	)}
+
+#define	Aug9.html()
+	${gigHeader(
+	)}
+
+#define	Aug29.html()
+	${gigHeader(
+		cost=&pound;2.50,
+		with=${literalizeCommas(
+			D.J. Johnny Octopus (Octopus Records)
+		)}
+	)}
+
+#define	Sep11.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${max}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		From Pat Fish:  This gig is from the 12 Bar Club in London's "Tin Pan Alley", Denmark Street in the West End on Thursday 11th September 1997. Max and I booked it as a warm-up for the trip to Seattle and San Francisco. It was the first time that we had played a set together in public since 1985. You can kind of tell; both players are on their best behaviour. 🙂
+		${g_credit(g=Hale, u=https://www.youtube.com/senorme1001, d=2023-03-01)}
+		)}
+	)}
+
+#define	Sep16.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${max}, Joe Skyward (bass), Greg Gilmore (drums)
+		)},
+		photosets=/images/19970916/19970916_notebook_spaceneedle.jpg$$
+			Pat Fish,
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Sep17.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${max}, Joe Skyward (bass), Greg Gilmore (drums)
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)},
+		photosets= /images/19970917/17Sep97_1.jpg$$
+			/images/19970917/17Sep97_2.jpg$$
+			/images/water.jpg$$
+		${del}
+	)}
+
+#define	Sep19.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${max}, Joe Skyward (bass), Greg Gilmore (drums)
+		)},
+		notes=${literalizeCommas(
+			${del} ran sound.
+		)},
+		pat=${literalizeCommas(
+		)},
+		photosets=
+			/images/19970919/1dance.jpg$$
+			/images/19970919/bandg.jpg;;Bob & Anne Frangooles$$
+			/images/19970919/dancflr2.jpg$$
+			/images/19970919/group1.jpg$$
+			/images/19970919/max.jpg$$
+			/images/19970919/maxpat.jpg$$
+			/images/19970919/ourhero.jpg;;${del}$$
+			/images/19970919/pat.jpg$$
+			Unknown Wedding Photographer
+		---
+			/images/19970919/19Sep97_1.jpg$$
+			/images/19970919/19Sep97_2.jpg$$
+			/images/19970919/19Sep97_3.jpg;;This room is swayin' like a boat - because it IS a boat$$
+			/images/19970919/19Sep97_4.jpg$$
+			/images/19970919/19Sep97_5.jpg$$
+			/images/19970919/19Sep97_6.jpg$$
+			Dave Lee;;dlee@eskimo.com
+	,
+	reviews=
+		${literalizeCommas(
+			There were 2 practice sessions before the wedding, which were almost
+			enough.  Just the fact that they were playing to a room of someone's
+			relatives added a grin-leaving element to it - and a great time was had
+			by all.  Imagine your large grey-haired aunt trying to dance to
+			Caroline Wheeler and you get the gist.
+		)}$$
+			${del}
+	)}
+
+#define	Sep22.html()
+	${gigHeader(
+		cost=$12.00,
+		address=859 O'Farrell St,
+		eventweb=http://www.musichallsf.com,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${max}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)}
+		,
+		photosets= /images/19970922/22Sep97_1.jpg$$
+			/images/19970922/22Sep97_2.jpg$$
+			/images/19970922/22Sep97_3.jpg$$
+			/images/19970922/22Sep97_4.jpg$$
+			/images/19970922/22Sep97_5.jpg$$
+			/images/19970922/22Sep97_6.jpg$$
+		${del}
+		---
+			/images/19970922/22Sep97_marquee.jpg$$
+		Murray Digby
+		,
+		tickets=
+			/images/19970922/19970922_ticket.jpg$$
+			${del}
+		,
+	reviews=
+		${literalizeCommas(
+			One word: perfect.
+		)}$$
+			Will Nerini;;wnerini@ww-web.com
+	---
+		${literalizeCommas(
+			Max is my new hero, and i hope he finds the time and/or desire to return to
+			music as his primary profession. i will be hounding the local record stores
+			for a copy of "Best Kisser" now. 
+			I met great people off this list, thanks David, Bob, and Anne for all your
+			work on making this  happen... 
+			and if they ever want to come back, I'd be happy to throw in for a plane
+			ticket fund.
+		)}$$
+			valerie hilligan;;valerie@wired.com
+	---
+		${literalizeCommas(
+			This was my first chance to see Max in person.  Not only can the man
+			*play* ("inhuman" is how my non-JBC-literate date described his guitar work),
+			but he also has an amazing voice.  There's a hint of it on record, but
+			nothing like the vocal form he showed last night.
+			A truly magic evening, 'twas.  Cheers to everybody who made it possible.
+		)}$$
+			Craig Kolb;;cek@graphics.stanford.edu
+	---
+		${literalizeCommas(
+			pat & max. & a kazoo. 
+			wot? you don't remember the kazoo in any jbc song?  sure, you know
+			that bit in DRINK with the kazoo solo? oh. you sure it was a trombone?
+			well, maybe you're right. but not this night.
+			max was definitely the hit of the evening. i was certainly glad of the
+			chance to see him play. he really gets into it, eyes squeezed tight
+			shut & grimacing. he & pat really seemed to have fun together, too.
+			it'd be shame if they never did it again.
+			i loved the version of zombie love--pat hit top form and it was the
+			best rendition of that soung i've heard. it ended the set, right?
+			angels and roadrunner were the encores i think.
+			listening to _draining the glass_ now the songs seem too busy with 
+			bass & drums & stuff.
+		)}$$
+			Greg Dykema;;gdykema@chromatic.com
+	---
+		${literalizeCommas(
+			Seeing Pat and Max perform together again took me back ten years.  Back to
+			the days when CDs were making records obsolete.  But, I loved my
+			records, especially all the JBC ones with those funny little messages
+			inscribed near the label.  I had only seen the Jazz Butcher perform once
+			in 1986 at the Berkeley Square in California.  Being underage at the time
+			I had to use my older sister's ID to get into the club.  Little did I know
+			that that would be the only time I'd see Pat and Max perform together
+			until last night.  I fell off the face of the earth in 1987, left all my
+			beloved music behind and only resurfaced this year.  Can you imagine I
+			missed the whole music scene of the last decade?  Everything after
+			Distressed Gentlefolk was new to me...But I could still sing along to all
+			those familiar songs sung at the show last night.  Needless to say, those
+			two gentlemen performing at the charming GAMH are still as cool and dapper
+			as ever.
+		)}$$
+			Theresa Zarate;;tzarate@bmw.autobahn.org
+	---
+		${literalizeCommas(
+			the Great American Music Hall.  right next door to the
+			acclaimed O'Farrell Theatre girly joint is the Hall - a very beautiful
+			old theatre - marble columns, balcony, the whole bit.
+			to say the least, it was an ON night
+			it was odd how quiet everyone was during the songs as though
+			they were trying to absorb the thing completely.  of course, mayhem
+			ensued between the tunes.
+			taped? yes.  success.
+		)}$$
+			${del}
+	)}
+
+#define	Nov4.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}
+		)},
+		notes=${literalizeCommas(
+			<i>"If we had the money, we'd go all over Europe and
+			destroy everyone, because we're harder than you"</i>
+			<br><b>Member of the Mad Butcher's</b>
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Dec10.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${max}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

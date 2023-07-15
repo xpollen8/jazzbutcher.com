@@ -1,0 +1,58 @@
+#define	Dec18_1930.html()
+	${gigHeader(
+		with=${literalizeCommas(
+			Love Kittens, The Woodentops, Jasmine Minks
+		)},
+		notes=${literalizeCommas(
+		<p>
+		In celebration of what would have been Pat Fish's 65th birthday (20th December) friends/fellow musicians present an evening of entertainment remembering his legacy, all profits to go to relevant charities.
+		</p>
+
+		<p>
+		There will be three main bands -
+		</p>
+
+		<p>
+		Love Kittens - performing tracks from Pat's final album, 'The Highest In The Land', featuring Tim Keegan, Simon Mawby, John Silver, Dave Musker, Dave Morgan, guest trumpet from Simon Taylor and other, surprise, guest vocalists.
+		</p>
+
+		<p>
+		The Woodentops (acoustic) - with Rolo McGinty
+		</p>
+
+		<p>
+		Tom and Chris (Jasmine Minks) - acoustic version of Jasmine Minks
+		</p>
+
+		<p>
+		Plus one or two other surprises.
+		</p>
+
+		<p>
+		The highlight of the evening will be the first live performances of songs from Pat's last album, 'The Highest In The Land', with guest vocalists.
+		</p>
+		)},
+#		eventweb=https://wegottickets.com/event/5147127,
+#		cost=£12:00,
+#		who=${literalizeCommas(
+#		)},
+#		with=${literalizeCommas(
+#		)},
+#		photosets=
+#		   /images/20211127/20211127_mccookerybook.jpg;;Helen McCookerybook$$
+#		   /images/20211127/20211127_sumishaheidi.jpg;;${sumishta} and Heidi Berry$$
+#		   Planet Ruth;;https://twitter.com/Planetruth_;;2021-11-27
+#		   ---
+#		   /images/20211127/20211127_heidiberry.jpg;;${pete}\, ${sumishta}\, Tim Keegan\, Heidi Berry\, John Silver\, Simon Mawby$$
+#		   ${sumishta};;2021-11-28
+#		,setlists=
+#			/images/20211127/20211127_setlist.jpg$$
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

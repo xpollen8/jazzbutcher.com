@@ -1,0 +1,864 @@
+#define	newsItem->numFields	5
+#define	newsItem->field[1]	subject
+#define	newsItem->field[2]	body
+#define	newsItem->field[3]	dt
+#define	newsItem->field[4]	link
+#define	newsItem->field[5]	category
+
+#define	newsItem[1]->link ${jbc_help}
+#define	newsItem[1]->subject Help Us!
+#define	newsItem[1]->body
+	We're in the midst of a massive tidy-up of the data that drives this website.
+	You can help the effort!  We're looking for fans of the JBC to <a href="${jbc_help}">help us</a> fill in missing details from past gigs.
+#define	newsItem[1]->dt	${date(U, 2017-02-18)}
+
+#define	newsItem[2]->link http://addict-culture.com/bowie-jazz-butcher-marlon-williams-wild-beasts/
+#define	newsItem[2]->subject The Jazz Butcher: "Sound And Vision"
+#define	newsItem[2]->body
+	<div class="annotation">
+	Pat Fish: My favorite song of Bowie? I have many, but it is often
+	"Sound and Vision" that I choose. At the time of the release of "Low",
+	I lived with a friend in an apartment in upper floors of the
+	Cromwell Tower in the Barbican. We were unable to start the day,
+	to leave the building or anything else without listening to
+	"Sound and Vision". The energy, simplicity and clarity of this title are incredible.
+	</div>
+	<p>
+	${linkExternal(http://addict-culture.com/bowie-jazz-butcher-marlon-williams-wild-beasts/, The Man Who Changed Our World)} (French)
+#define	newsItem[2]->dt	${date(U, 2016-12-03)}
+
+#define	newsItem[3]->link ${jbc_gigs}/1993/Dec23.html
+#define	newsItem[3]->subject Pat Fish + David J, Racehorse Christmas Gig, 1993
+#define	newsItem[3]->category	media
+#define	newsItem[3]->body
+	${linkAudio(title=The Entire Show, mp3=${jbc_audio}/19931223/19931223_JazzButcher_TheRacehorse_Gen0_Cassette.mp3)}
+	<p>
+	Pat and David J play 4 songs, and then Alan Moore takes the stage (*that* set is
+	not included in this download)
+
+#define	newsItem[3]->dt	${date(U, 2016-11-15)}
+#define	newsItem[4]->subject "Near Perfect Pitch" podcast #1
+#define	newsItem[4]->category	media
+#define	newsItem[4]->body
+	${linkAudio(title=${newsItem[4]->subject}, mp3=${jbc_audio}/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3, autolink=no)}
+	Excerpted from ${linkExternal(https://twitter.com/NearPerfPitch, \@NearPerfPitch)}'s inaugural podcast.
+	Dara Mottahed and Pat (via Skype) ${linkExternal(http://www.ckcufm.com/node/700, chat about recent band history. And football)}.
+#define	newsItem[4]->dt	${date(U, 2016-05-09)}
+
+#define	newsItem[5]->link	http://www.northamptonchron.co.uk/news/local/northampton-barbershop-that-was-at-the-heart-of-community-closes-after-103-years-1-7303919
+#define	newsItem[5]->subject Steve Garofalo, drummer for The Jazz Butcher Quartet
+#define	newsItem[5]->body
+	${linkExternal(http://www.northamptonchron.co.uk/news/local/northampton-barbershop-that-was-at-the-heart-of-community-closes-after-103-years-1-7303919, He also a much loved barber.)}
+#define	newsItem[5]->dt	${date(U, 2016-03-31)}
+
+#define	newsItem[6]->subject ${garofalo}
+#define	newsItem[6]->body
+	<div class="annotation">
+	It is with great regret that the Jazz Butcher Quartet must announce
+	that ${garofalo}, our drummer, died unexpectedly at his home in
+	Northampton NN1 on 28th February. Steve was so much more than just
+	the drummer in a band. He was the true, beating heart of the entire
+	operation in every way imaginable, and at the moment it seems
+	inconceivable that the band might be able to continue without
+	him. We are utterly bereft, as is his enormous circle of loving friends and family.
+	<p>
+	Naturally, we apologise to those whom we are forced to let down
+	over bookings and so forth. If there was a way to fulfil such obligations,
+	we would normally find it, but this is just too enormous for us to cope with at this time.
+	<p>
+	Our thoughts and prayers are with Steve's family.
+	</div>
+#define	newsItem[6]->dt	${date(U, 2016-03-15)}
+
+#define	newsItem[7]->subject Ah, press. 
+#define	newsItem[7]->body
+	I'd almost forgotten about press. 
+	<p>
+	Good old press. 
+	<p>
+	It's press week. 
+	<p>
+	I'd almost forgotten about press week.
+	<p>
+	${linkExternal(https://radio.abc.net.au/programitem/peqQVbq2yQ, Australia!)}
+	${linkInternal(${jbc_press}/20160203_distorsioni.html, Italy!)}
+	${linkInternal(${jbc_press}/20160202_terapijanet.html, Croatia!)}
+	${linkExternal(http://www.popnews.com/popnews/du-premier-choix-cette-annee-chez-the-jazz-butcher, France!)}
+	<p>
+	Pat
+#define	newsItem[7]->dt	${date(U, 2016-02-09)}
+
+#define	newsItem[8]->subject Fire Records Re-issues
+#define	newsItem[8]->body
+	We have signed a deal with Fire Records of London, who will be
+	re-releasing a bunch of Jazz Butcher records, starting with our
+	most recent effort, Last of the Gentleman Adventurers, in February 2016.
+	<p>
+	A new album , tentatively entitled "The Highest in the Land", is scheduled for Autumn 2016.
+#define	newsItem[8]->dt	${date(U, 2015-12-10)}
+
+#define	newsItem[9]->link	${jbc_press}/20150202_spiritsjournal.html
+#define	newsItem[9]->subject Interview
+#define	newsItem[9]->body
+	I was ${linkExternal(http://spiritsjournal.klwines.com/klwinescom-spirits-blog/2015/2/2/d2d-interview-pat-fish.html,
+	interviewed by Spirits Journal)}.
+#define	newsItem[9]->dt	${date(U, 2015-02-02)}
+
+#define	newsItem[10]->subject Band News
+#define	newsItem[10]->body
+	Someone didn't chop the heads off!!  They're back from the dead.
+	The JBC are more.
+	<p>
+	As of March 1998, the Jazz Butcher and ${creat} have parted ways.
+	<p>
+	${max}, who left the group in the 80's is back.
+	<p>
+	${pat}'s follow-on project
+	${sumosonic}, is well worth your time.
+#define	newsItem[10]->dt ${date(U, Fri Jan  7 04:34:34 2000)}
+
+#define	newsItem[11]->subject	Rev-Ola compilation
+#define	newsItem[11]->dt	${date(U, 2003-10-20)}
+#define	newsItem[11]->body
+	Rev-Ola issued a compilation of the JBC's Creation output at the end of
+	October. Although it has a lot in common with the US release "${violent}", it does also
+	feature stuff from "${ill}" and two previously unreleased efforts from the "${bus}"
+	sessions. Besides, you can't get "${violent}" anywhere anyway.
+	<p>
+	Title: ${lunch}<br>
+	Release date: October 20th<br>
+	Label: Rev-Ola<br>
+	Cat. No: CRREV 54
+
+
+#define	newsItem[12]->dt	${date(U, 2008-03-03 19:52:31)}
+#define	newsItem[12]->body
+	Any dates you see listed here from now on will essentially be
+	 solo gigs by me. I shall be aiming to style myself simply "Pat Fish" wherever I can, though no doubt some promoters will still prefer to
+	list me as the Butcher.
+	<p>
+	Those of you who haven't seen me for a while will find themselves confronted with large swathes of new material, both acoustic and
+	electric.
+
+#define	newsItem[13]->dt	${date(U, Wed Aug 16 09:35:17 2006)}
+#define	newsItem[13]->body
+	Max is taking a break from playing live
+	to concentrate on finishing his new record, scheduled for release early next year.
+
+#define	newsItem[14]->dt	${date(U, 2005-10-15 18:22:50)}
+#define	newsItem[14]->body
+		I would like to thank everybody who voted for my acoustic session on BBC
+        Radio Northampton in their end of year awards. In the end I was knocked
+        back into 2nd place by The Zutons, which is perfectly all right by me,
+        for they are a talented bunch of aliens for sure. Still, thanks for your
+        support, and I hope one or two of you managed to download the session
+        tunes from the BBC website while you were at it.
+        <p>
+        This seems like a good opportunity to say that I've had a really
+        wonderful time this year, so thanks to all my lovely colleagues in Wilson
+        and the JBC, thanks to all the artists who have come and played my mad
+        little club, and thanks most of all to everybody who has come to our club
+        nights and gigs and to everybody who has helped and supported us this
+        last twelve months. Special shouts to Pete and Sophie at The Racehorse
+        for their endless kindness; John Purcell for lights fantastic; Steve and
+        Duncan at Phoenix Soundworks for technical support way beyond the call of
+        duty; Andy Skank for involving me in the World of Budvar and everybody at
+        the Labour Club for putting up with me and my noisy mates; and, of
+        course, to David for hosting the worldwide wonderland that is jbc.com. A
+        happy Christmas and a sterling New Year to you all.
+        <p>
+        Love,<br>
+        Pat<br>
+
+#define	newsItem[15]->dt	${date(U, 2009-09-21 19:31:09)}
+#define	newsItem[15]->body
+	Pat & Max are making some West Coast US appearances..
+	<p>
+	Max Eider's new album is out and available at the newly-renovated ${linkExternal(http://www.maxeider.com,  Eider website)}
+
+#define	newsItem[16]->dt	${date(U, 2010-10-11)}
+#define	newsItem[16]->subject	For immediate release
+#define	newsItem[16]->body
+	For further information, contact tundraducks@@btinternet.com<br>
+	<br>
+	Max Eider: Disaffection (TDKS003) 11 October 2010<br>
+	<br>
+	Augustus Pokerback, Supremo of Tundraducks Records, has announced the release date for Max Eider's new album, Disaffection.
+	'It is with a heavy heart that I prepare to offer this morbidly morose record to an indifferent public,' said Pokerback.
+	'On the other hand, we thereby become the first record company to escape bankruptcy and release two Eider albums. My
+	strategy was simple but brilliant: I invested absolutely nothing whatsoever.'<br>
+	<br>
+	Augustus Pokerback is 97.<br>
+	<br>
+	${linkExternal(maxeider.com)}<br>
+	${linkExternal(myspace.com/maxeider)}
+
+
+#define	newsItem[17]->dt	${date(U, 2010-09-19 17:43:56)}
+#define	newsItem[17]->body
+	I shall have 3 brand new tunes released at the end of August on a compilation
+	called (I shit you not) "Now, That's What I Call Northampton - Vol. 1".
+	It's a bonzer wee compilation that also features new studio recordings
+	by Curtis E. Johnson, Joe Woolley and Andy Harding, plus previously unreleased
+	studio stuff from Eaglehead, P-Hex, Good Cop Bad Cop, Fat Controller and ${wilson}.
+	There's even a ${linkExternal(http://www.nowthatswhaticallnorthampton.com, website)} where you can keep an eye
+	on developments. There will be a few promotional gigs around that time.
+	<p>
+	Also, at the beginning of September the Creation Records movie comes out.
+	It's called "Upside Down" and I think the premiere is in London on the 5th September.
+	I'm in the movie and there will be some London gigs around the time of its release.
+	There's a trailer up on the YouTube at the moment.
+
+#define	newsItem[18]->dt	${date(U, 2011-02-17 05:08:15)}
+#define	newsItem[18]->body
+	Went to see the Creation movie, "${linkExternal(http://www.bfi.org.uk/lff/films/new_british_cinema/821, Upside Down)}". Really not bad at all. Kinda tells it like it was. I'm in it, plus namechecks for Kizzy and
+	Mulreany. Nice. Because it got shown at the London Film Festival, suddenly film fests all over the world want it. It's already been to        Barcelona. I'd keep an eye open, if I were you. It'll be out on DVD early in 2011...
+	<p>
+	...As will the ${linkExternal(http://www.wilsondub.com, Wilson)} movie. We gave a sneak preview last week at a local film night...which was in the venue where we played the gig. So
+	<p>
+	There are clips from the Wilson DVD to be seen on  ${linkExternal(http://www.youtube.com/watch?v=Hic-yax9asQ, teh youtube)}.
+
+#define	newsItem[19]->dt	${date(U, 2011-07-25 17:02:19)}
+#define	newsItem[19]->body
+	I finally have the money to manufacture the Wilson DVD. Soon come, as they say...soon come...
+
+#define	newsItem[20]->dt	${date(U, 2012-07-06)}
+#define	newsItem[20]->body
+	I've got a good album's worth of new and unreleased stuff. I wonder what happens now...
+	<p>
+	There is, in fact, a lot more to it than that: check out our page on Pledgemusic and you will see that there are all manner of strangely diverting things available to those of you who choose to support us.
+	<p>
+	Pledgemusic is an international company which has successfully funded projects for the likes of Cornershop, Viv Albertine, Amanda Palmer and Ian McCullough. They can deal with international payments, exchange rates and all that stuff. Your money is safe with them and, if for any reason the album doesn't go ahead, you will get it back. The fundraising project runs until the beginning of September.
+	<p>
+	Please help us out with this one. Check out our page:
+	${linkExternal(http://www.pledgemusic.com/projects/thejazzbutcher, here)}
+
+#define	newsItem[21]->dt	${date(U, 2012-10-23 18:39:50)}
+#define	newsItem[21]->body
+	The crowd-funded Jazz Butcher album, ${adventurers} has been released!
+	<p>
+	Currently only available for download by pledgers.
+	Physical media and iTunes download will be available in a few weeks.
+
+#define	newsItem[22]->dt	${date(U, Tue Aug  7 10:58:17 2012)}
+#define	newsItem[22]->body
+        The Wilson DVD, entitled No Known Predators, is to be released on Friday 7th September 2012.
+        <p>
+        To celebrate, Wilson will be reforming for a special one-off show at The Picturedrome, Kettering Road, Northampton NN1 on
+        <a href="http://wilsondub.com${jbc_gigs}/2012/Sep7.html">Friday 7th September 2012.</a><p>
+        Tickets for the event cost £2:50, exactly the same as at Wilson's very first show in March 2001.
+        <p>
+        The DVD will be available to buy at the Picturedrome show.
+        Further availability details to follow.
+        <p>
+        Cheers,
+        Pat x
+
+#define	newsItem[23]->dt	${date(U, 2013-07-11 23:05:59)}
+#define	newsItem[23]->body
+	<p>We enjoyed brief, surreal trip to Japan, playing to lovely, knowledgeable audiences and meeting the charming Stuart Moxham, who, as part of Young Marble Giants, had been a profound influence on us when we were but youths.</p>
+	<p>While Max holed up in his Northern fortress, Pat gamely rode the Eurostar to Brussels to play an electric set to a gaggle of sophisticats in a concrete basement and negotiated the mysteries of online check-in for a flight to Germany, where he played some solo shows and joined up with Paul Wallfisch, Thomas Truax and Markus Maria Jansen for concerts in Hamburg and Dortmund under the spurious "supergroup" handle of The Almost Has Beens. It's all been most enjoyable.</p>
+	<p>We have plans for one or two UK appearances later in the year.</p>
+	<p>What we are now looking for is engagements for Pat and Max, performing as a duo, in Germany, Belgium, France and the USA.</p>
+	<p>Now, a word of warning is in order here. We really are seeking only professional, paid gigs in venues where people come to listen to music, rather than rock out and riot or, indeed, spend the evening enjoying a nice chat with their friends. Whereas a band can compete with a noisy room, two ageing nutters on stools are best enjoyed in a somewhat more&#8230;uh&#8230;sedate environment.</p>
+	<p>It's easy to be tempted into trying to do a DIY job of putting on your favourite band in your local venue. "How hard can it be?" is the seductive question. The cruel answer is: "Harder than you think."<br />
+	It's not just a question of paying two old lunatics for sitting around playing songs. We have to pay our travel expenses and we need some sort of vaguely civilised accommodation. (We are, to be honest, getting a bit too old and fragile for kipping on our friends' floors!) We need fed and watered too, and we need some razor wire to keep Fishy safe from the enraged "smoke-free" fundamentalists.</p>
+
+	<p>While we have, over the years, occasionally enjoyed brilliant DIY nights organised by fans in their local bar, the truth is that the live music game can be very hard these days and we don't want to see people who like us losing money. So while we are in no way "against" DIY gigs, we do urge that you make sure that you know exactly what you're doing.  Do feel free to e-mail us if you have any questions.</p>
+	<p>Our main hope is that one or two of you lovely people out there will actually have connections to a club or a promoter who might be interested in putting us on and that you might be able to point us in their direction, or, indeed, point them in ours.</p>
+	<p>If you want to make some enquiries, send us a message at <a href="http://www.facebook.com/jazz.butcher.official">www.facebook.com/jazz.butcher.official</a> or e-mail us at <a href="mailto://tundraducks@@btinternet.com">tundraducks@@btinternet.com</a></p>
+	<p>All suggestions gratefully received, folks.<br />
+
+#define	newsItem[24]->dt	${date(U, 2014-03-30 19:25:20)}
+#define	newsItem[24]->subject	Hello, everybody
+#define	newsItem[24]->body
+	It's been a great few months for us at JBC Central. As we may have mentioned before, we were overwhelmed by your swiftness and generosity in supporting our fundraising campaign for the new record. We're pleased with the way that copies have been making their way out of the door as well, which, at the very least, affords Fishy an airing once in a while on his trips to the Post Office.  We have sold copies in the UK, France, Belgium, the Netherlands, Germany, Italy, Greece, Spain, Sweden, Canada, Japan, Australia, New Zealand, Brazil and the USA.
+
+
+#define	newsItem[25]->dt	${date(U, 2014-06-14 04:07:52)}
+#define	newsItem[25]->subject	New CD, Disaffection
+#define	newsItem[25]->body
+	out and available now at maxeider.com                                               
+	<p>
+	If you prefer to donate a large proportion of the cover price to some dotcom billionaire or other, the
+	album is also available at Amazon, CD Baby, iTunes and most other digital retailers when they get round to
+	adding it.
+
+#define	newsItem[26]->dt	${date(U, 2014-06-14 04:07:52)}
+#define	newsItem[26]->subject	updated upcoming gig
+#define	newsItem[26]->body
+	Also on the horizon, it looks as though I might well be going to play solo in Japan, supporting the Monochrome Set in Tokyo in October. Again, more news as things firm up. (Eider won't be joining me on this trip.)
+
+#define	newsItem[27]->dt	${date(U, 2014-06-19 18:50:25)}
+#define	newsItem[27]->subject	JBQ
+#define	newsItem[27]->body
+	We're going to record the lounge quartet on Monday, then try and sync it up with some video to make a sort of "business card". Steve the drummer has
+	his own old-fashioned barber's shop and we're going to be filming in there in our lived-in suits. Obviously, I'll let you know how this senile
+	delinquency works out.
+
+#define	newsItem[29]->dt	${date(U, 2014-07-24 18:33:32)}
+#define	newsItem[29]->body
+	In August the Jazz Butcher Conspiracy emerges to play its first run of UK dates since 2002. The four-piece band
+	comprises Pat Fish, Max Eider, bassist Steve New and drummer Steve Garofalo. The set will focus chiefly on the
+	Butcher's latest album "Last of the Gentleman Adventurers" with a few tunes from the past thrown in to see what
+	happens.
+	<p>
+	We hope to see you out and about at one of these shows.
+	<p>
+	Pat x
+
+#define	newsItem[30]->dt	${date(U, 2014-10-10 04:47:16)}
+#define	newsItem[30]->subject	Jazz Butcher Quartet
+#define	newsItem[30]->body
+	A nice Jazz Butcher Quartet write-up ${linkExternal(http://louderthanwar.com/the-butch-is-back-the-return-of-the-jazz-butcher/, at "Louder Than War")}
+
+
+#define	newsItem[31]->dt	${date(U, 2014-06-05 11:39:23)}
+#define	newsItem[31]->body
+	We have finally found somebody who is prepared to do some luxurious, lathe-cut vinyl copies of "Gentleman Adventurer". I shall keep you
+	up to date with our progress on this, of course.
+	<p>
+	Also on the horizon, it looks as though I might well be going to play solo in Japan, supporting the Monochrome Set in Tokyo October ${linkInternal(http://jazzbutcher.com${jbc_gigs}/2014/Oct24_1800.html, 24th)} and ${linkInternal(http://jazzbutcher.com${jbc_gigs}/2014/Oct25_1800.html, 25th)} .
+	(Eider won't be joining me on this trip.)
+	<p>
+	I'm also in talks with Alan McGee about a solo acoustic show at his new venue The Tabernacle, which is a beautifully refurbished chapel in a village in
+	Wales!
+	<p>
+	Confused yet? Splendid! Right. I shall probably be sending some dope on the new loungecore combo shortly. Hopefully, a few more dates as well.
+	<p>
+	Pat xxx
+
+#define	newsItem[32]->dt	${date(U, 1999-08-30)}
+#define	newsItem[32]->subject	Speaking of aberrations..
+#define	newsItem[32]->body
+	Hey, kids... there's <a href="${jbc_gigs}/1999">a US tour in September!</a>
+	<p>
+	featuring ${pat}, ${max}, ${owen} with ${dj} in L.A. and ${hask} in
+	L.A., S.F., and N.Y.C!
+
+#define	newsItem[33]->dt	${date(U, 2000-04-16)}
+#define	newsItem[33]->body
+	Shock!
+	<p>
+	On Saturday 19th February 2000 in Northampton NN1 Pat Fish and Max Eider signed a contract with the record company Vinyl Japan to make a new Jazz Butcher Conspiracy LP. The record, which will feature all new material from Max and The Butcher, has the working title "Big Cat Diary". Bear in mind, however, that the Conspiracy are also rather taken with the title "Just Plain Sick".
+	<p>
+	Pat and Max will be recording in March at the home studio of sometime JBC guitarist Peter Crouch. There are also likely to be contributions from Archbishop Gabriel Turner, Sumosonic percussionist Russ Cooper and others.
+	<p>
+	The record will be released as both a CD and a vinyl LP. Hooray!
+	<p>
+	Horror!
+	<p>
+	Vinyl Japan are hoping to have the record released by June 2000, at which point the JBC will set off for their first ever concerts in Japan. The dates are:
+	Sat 17 June : Tokyo
+	Sun 18 June : Tokyo
+	Tue 20 June : Osaka
+	<p>
+	Club information will follow when we know it.
+	<p>
+	The JBC line-up will be:
+	<p>
+	Pat Fish - Guitar, Singing
+	Max Eider : Guitar, Singing
+	Owen Jones : Drums, Singing
+	Steve Valentine : Bass, Singing
+	<p>
+	Support on all dates will be Dislocation Dance, with a short solo set by Max as well.
+	<p>
+	Find out more about Vinyl Japan by visiting their website: www.vinyljapan.demon.co.uk .
+	<p>
+	(Those who have signed up for the$100 EP should not fear. The tunes on their record remain exclusive to them and will not be appearing on the new LP.)
+	<p>
+	Mayhem!
+	<p>
+	Max is also surprised to announce the imminent re-release of his ancient and improbably named solo effort 'The Best Kisser in the World' (now the Second Best Kisser in the World?). All complaints and objections once again to Vinyl Japan, please.
+	<p>
+#
+#define	newsItem[34]->dt	${date(U, 2000-04-16)}
+#define	newsItem[34]->subject	Songs For Summer
+#define	newsItem[34]->body
+	Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects.
+	<p>
+	I contributed a track, recorded on Curtis' computer. It's a version of "Indian Summer" as written by the Beat Happening, and recorded by Luna and Spectrum. (In fact, that's me on lead guitar on the Spectrum version, but that's another story. You should probably point out to people that this is a new version altogether.) The record also features Jonathan Richman, B-52s, Pansy Division, G-Love and a bunch of others. At your favourite online store now!
+
+#define	newsItem[35]->dt	${date(U, 2001-03-20)}
+#define	newsItem[35]->body
+	The JBC are in the early stages of planning a short tour of Britain and Germany for the first two weeks of August 2001. Anybody who would be interested in putting the band on during this period, please get in touch. Thanks!
+
+#define	newsItem[36]->dt	${date(U, 2002-01-12)}
+#define	newsItem[36]->body
+	Vinyl Japan Is My Friend
+	Max's new CD is now for sale! The official street date is 28 Jan 2002. Until then, it is available exclusively via mail order. If you do not want to send credit card details over the net then you can also order by phone (+44 (0) 20 7284 0359) or fax (+44 (0) 20 7267 5186). Contact spencer(@)vinyljapan.com for details!
+	<p>
+	Vinyl Japan also has made available the LONG awaited re-issues of Distressed Gentlefolk, A Scandal in Bohemia and the new Glass-era compilation, Cake City.
+
+#define	newsItem[37]->dt	${date(U, 2002-06-04)}
+#define	newsItem[37]->body
+	The JBC begin their 20th year with these European gigs:
+	<p>
+	Tue, 11 Jun - The Onion - Hamburg , Germany - NOT A GIG! JUST A PARTY
+	<br/>
+	Thu, 13 Jun - Club 2 - Munich , Germany
+	<br/>
+	Fri, 14 Jun - Hemdendienst - N&uuml;remberg  , Germany - Karl-Grillenberger-Strasse 40
+	<br/>
+	Sat, 15 Jun - Elfenbein - Bielefeld , Germany - Niederwall 37-39
+	33602 Bielefeld, (05 21) 600 19
+	<br/>
+	Tue, 18 Jun - Klein Stadhuis - Ypres , Belgium
+	<br/>
+	Sat, 22 Jun - Logo - Hamburg , Germany
+
+#define	newsItem[38]->dt	${date(U, 2002-08-02)}
+#define	newsItem[38]->subject	Upcoming Gigs
+#define	newsItem[38]->body
+	Wed, 25 Aug - The Racehorse - Northampton , England - Wilson - Free - "Playing at Home"
+	<br/>
+	Wed, 20 Sep - The Roadmender - Northampton , England - Wilson - Headlining a 6 band bill - £3:00 - Open late
+
+#define	newsItem[39]->dt	${date(U, 2002-09-27)}
+#define	newsItem[39]->subject	Upcoming Gigs
+#define	newsItem[39]->body
+	Sat, 12Oct2002	The Roadmender - Northampton , England 
+	<br/>
+	We are opening for Skindread
+
+#define	newsItem[40]->dt	${date(U, 2003-03-25)}
+#define	newsItem[40]->link	${jbc_tomhall}
+#define	newsItem[40]->subject	Tom Hall
+#define	newsItem[40]->body
+	Tom Hall, itinerant musician, songwriter, overt sartorial provocateur, player of unlikely ancient instruments and 109% solid platinum genius, died at three o'clock this morning.
+
+#define	newsItem[41]->dt	${date(U, 2003-10-04)}
+#define	newsItem[41]->body
+	Pat's new band - Wilson - invade the capital. We're playing at Cargo, 83 Rivington Street, Shoreditch, London EC2 on 16th October. It's a club night called "For Your Pleasure". We will be playing live at about 10:00pm, and there will be a DJ set from The Freestylers. The club is supposed to have one of the best sound systems in London. Should be a top night.
+
+#define	newsItem[42]->dt	${date(U, 1998-01-16)}
+#define	newsItem[42]->subject	Sumosonic
+#define	newsItem[42]->link	http://sumosonic.com
+#define	newsItem[42]->body
+	Sumosonic is the new Pat Fish project.
+
+#define	newsItem[43]->dt	${date(U, 1998-04-26)}
+#define	newsItem[43]->subject	Gigs!
+#define	newsItem[43]->body
+	May 1, 1998! 
+	<p>
+	The Jazz Butcher Conspiracy starring Pat Fish and Max Eider will be appearing (with a local bassist & drummer) at The Point in Atlanta, Georgia, USA (404.659.3522). Tickets $8. Call for availability.
+
+#define	newsItem[44]->dt	${date(U, 1998-12-05)}
+#define	newsItem[44]->link	${jbc_mad}
+#define	newsItem[44]->subject
+	How MAD are you? (new feature!)
+#define	newsItem[44]->body
+	Show us yourself wearing your JBC best
+
+#define	newsItem[45]->dt	${date(U, 1999-02-19)}
+#define	newsItem[45]->subject	Another aberration!
+#define	newsItem[45]->body
+	February 26, 1999! The Jazz Butcher Conspiracy starring Pat Fish and Max Eider supported by Curtis Johnson will be playing at Logo, Hamburg, Germany. 
+	<br/>
+	Address: Logo, Grindelallee 5, 20146 Hamburg, Germany 
+	<br/>
+	Tickets by phone: +49 40 433 039 (9:00-6:30 mon-fri and 10:00-2:00 saturday) (times are Central European) 
+	<br/>
+	E-mail : LogoHH@Bigfoot.com
+
+#define	newsItem[46]->link ${jbc_etc}
+#define	newsItem[46]->subject Older JBC website features
+#define	newsItem[46]->body
+	As part of the JBC website make-over, several older site features
+	have been archived together in <a href="${jbc_etc}">one location</a>.
+#define	newsItem[46]->dt	${date(U, 2017-03-03)}
+
+#
+#	pat wants this gone Thu Mar 23 16:40:30 PDT 2017
+#
+#define	newsItem[47x]->dt ${date(U, 2017-03-05)}
+#define	newsItem[47x]->subject Black Raoul
+#define	newsItem[47x]->category	media
+#define	newsItem[47x]->body
+	A lovely video for ${black_raoul}, filmed <a href="htdb/gigs/2015/Sep22_2000.html">2015-02-22</a>
+	${embedVideo(url=https://www.youtube.com/embed/ZAnYjrYmF4Q)}
+
+#define	newsItem[48]->dt ${date(U, 2017-03-04)}
+#define	newsItem[48]->subject Andrew Brooksbank photos
+#define	newsItem[48]->category	media
+#define	newsItem[48]->body
+
+David J. and Bauhaus archivist, Andrew Brooksbank has graciously
+provided a glimpse into his collection with photographs from 
+the following early JBC gigs:
+${linkInternal(${jbc_gigs}/1986/Mar4.html, 1986-03-04)},
+${linkInternal(${jbc_gigs}/1986/Oct29.html, 1986-10-29)},
+${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
+<img src="/images/19890921/19890921_brooksbank_006_500.jpg">)}
+
+#define newsItem[49]->dt ${date(U, 2017-03-09)}
+#define	newsItem[49]->link ${jbc_gigs}/1986/Mar4.html
+#define	newsItem[49]->subject Besancon, France - 1986-03-04
+#define	newsItem[49]->category	media
+#define	newsItem[49]->body
+	${linkAudio(title=The Entire Show, mp3=http://jazzbutcher.com/audio/19860304/19860304_JazzButcher_Besacon_EQd.mp3)}
+	${g_credit(g=Dom Genot, u=https://soundcloud.com/lonesomedog)}
+
+#define newsItem[50]->dt ${date(U, 2017-03-11)}
+#define	newsItem[50]->subject Pierre Guillaume Ticket Stubs
+#define	newsItem[50]->category	media
+#define	newsItem[50]->body
+	Pierre Guillaume responded to our <a href="${jbc_help}">request for assistance</a>
+	with some high-quality scans of ticket stubs from several gigs in France - including
+	one show not previously listed in the archives!
+	<blockquote>
+	<a href="${jbc_gigs}/1994/Jul7.html"><img src="/images/19940707/19940707_ticket_250.jpg"></a>
+	<p>
+	<a href="${jbc_gigs}/1987/Aug2.html">1987-08-02</a>,
+	<a href="${jbc_gigs}/1987/Feb2.html">1987-02-02</a>,
+	<a href="${jbc_gigs}/1988/Apr8.html">1988-04-08</a>,
+	<a href="${jbc_gigs}/1990/Mar13.html">1990-03-13</a>,
+	<a href="${jbc_gigs}/1991/Oct21.html">1991-10-21</a>,
+	<a href="${jbc_gigs}/1993/Feb16.html">1993-02-16</a>,
+	<a href="${jbc_gigs}/1994/Jul7.html">1994-07-07</a>,
+	<a href="${jbc_gigs}/1995/Sep13.html">1995-09-13</a>,
+	<p>
+	<a href="${jbc_gigs}/1987/Aug2.html"><img src="/images/19870802/19870802_ticket_250.jpg"></a>
+	${g_credit(g=Pierre Guillaume)}
+	</blockquote>
+	Merci!
+
+#define newsItem[51]->dt ${date(U, 2017-03-21)}
+#define	newsItem[51]->subject JBC in the news
+#define	newsItem[51]->body
+	Added pages for (mechanical) translations of
+	${linkInternal(${jbc_press}/20160203_distorsioni.html, Italian)}
+	and
+	${linkInternal(${jbc_press}/20160202_terapijanet.html, Croatian)}
+	press tidbits from 2016.
+
+#define newsItem[52]->dt ${date(U, 2017-03-29)}
+#define	newsItem[52]->subject More Pierre Guillaume scans!
+#define	newsItem[52]->category	media
+#define	newsItem[52]->body
+	Pierre Guillaume has provided yet more high-quality scans of JBC ephemera:
+	<p>
+	<a href="${jbc_gigs}/1990/Mar8.html"><img src="/images/19900308/19900308_poster_250.jpg"></a>
+	<p>
+	<b>posters and announcements</b>
+	<blockquote>
+	<a href="${jbc_gigs}/1986/Apr4.html">1986-04-04</a>,
+	<a href="${jbc_gigs}/1986/Aug14.html">1986-08-14</a>,
+	<a href="${jbc_gigs}/1987/May29.html">1987-05-29</a>,
+	<a href="${jbc_gigs}/1988/Apr8.html">1988-04-08</a>,
+	<a href="${jbc_gigs}/1989/Sep1.html">1989-09-01</a>,
+	<a href="${jbc_gigs}/1990/Mar13.html">1990-03-13</a>,
+	<a href="${jbc_gigs}/1990/Mar14.html">1990-03-14</a>,
+	<a href="${jbc_gigs}/1990/Mar16.html">1990-03-16</a>,
+	<a href="${jbc_gigs}/1990/Sep15.html">1990-09-15</a>,
+	<a href="${jbc_gigs}/1993/Nov15.html">1993-11-15</a>,
+	<a href="${jbc_gigs}/1994/Feb17.html">1994-02-17</a>,
+	<a href="${jbc_gigs}/1995/Sep13_2000.html">1995-09-13</a>,
+	<a href="${jbc_gigs}/1995/Dec21.html">1995-12-21</a>
+	</blockquote>
+	<b>newspaper clippings</b>
+	<blockquote>
+	<a href="${jbc_gigs}/1993/Nov15.html">1993-11-15</a>,
+	<a href="${jbc_gigs}/1993/Feb16.html">1993-02-16</a>,
+	<a href="${jbc_gigs}/1993/Feb21_2000.html">1993-02-21</a>,
+	<a href="${jbc_gigs}/1987/Feb10.html">1987-02-10</a>
+	</blockquote>
+	Big Merci!
+
+#define	newsItem[53]->subject "Near Perfect Pitch" podcast #35
+#define	newsItem[53]->category	media
+#define	newsItem[53]->body
+	${linkAudio(title=${newsItem[53]->subject}, mp3=${jbc_audio}/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3, autolink=no)}
+	Excerpted from ${linkExternal(https://twitter.com/NearPerfPitch, \@NearPerfPitch)}'s podcast #35.
+	Dara Mottahed and Pat (via Skype) ${linkExternal(http://www.nearperfectpitch.com, catch up on happenings since the previous podcast.)}.
+#define	newsItem[53]->dt	${date(U, 2017-04-02)}
+
+#define	newsItem[54]->subject Press Clippings, Posters, and Audio
+#define	newsItem[54]->category	media
+#define	newsItem[54]->body
+	Archive additions: more newspaper clippings:
+	<blockquote>
+	${linkInternal(${jbc_press}/19990923_press_villagevoice.html, Village Voice 1999-09-23)},
+	${linkInternal(${jbc_press}/19990923_press_timeout.html, Time Out 1999-09-23)},
+	${linkInternal(${jbc_press}/19990916_press_seattle_rocket.html, Seattle Rocket 1999-09-16)},
+	${linkInternal(${jbc_press}/19990916_press_seattle.html, Seattle Newspaper 1999-09-16)},
+	</blockquote>
+	And a few posters, including this crackerjack for The Black Eg:
+	<blockquote>
+	<a href="${jbc_gigs}/1999/Jun3.html"><img src="/images/19990603/19990603_poster_250.jpg"></a>
+	</blockquote>
+	<b>${linkInternal(${jbc_gigs}/1989/Nov18.html, Madison\, Wisconsin - 1989-11-18)}</b>
+	<blockquote>
+	${linkAudio(title=The Entire Show, mp3=http://jazzbutcher.com/audio/19891118/19891118_JazzButcher_Madison_EQd.mp3)}
+	</blockquote>
+#define	newsItem[54]->dt	${date(U, 2017-04-02)}
+
+#define	newsItem[55]->subject Interviews from 1990 & 1992
+#define	newsItem[55]->category	media
+#define	newsItem[55]->body
+	Added to the archives: a few hoarded audio interviews:
+	<p>
+	${linkInternal(${jbc_gigs}/1992/May6_1200.html, 1992 CBC)}  professional Brave New Waves Condition Blue-era interview.
+	<p>
+	${linkInternal(${jbc_gigs}/1992/May16_1600.html, 1992 WNUR)} Chicago College radio interview with a couple of live tunes.
+	<p>
+	${linkInternal(${jbc_gigs}/1992/Apr26_1200.html, 1992 WXYC)} Chapel Hill, NC radio interview + tunes
+	<p>
+	${linkInternal(${jbc_gigs}/1992/Apr25_1200.html, 1992 WRAS)} Atlanta radio interview which includes the "Sydney Meats Story".
+	<p>
+	${linkInternal(${jbc_gigs}/1990/Nov19.html, 1990 WTBS)} Austin, TX radio interview
+#define	newsItem[55]->dt	${date(U, 2017-04-05)}
+
+#define	newsItem[56]->subject Interview: Last Day Deaf
+#define	newsItem[56]->link	${jbc_press}/20170406_lastdaydeaf.html
+#define	newsItem[56]->category	media
+#define	newsItem[56]->body
+	Here's an ${linkInternal(${jbc_press}/20170406_lastdaydeaf.html, interview with Pat)} ahead of the
+	upcoming ${linkInternal(${jbc_gigs}/2017/Apr8_2000.html, gig at The Continental)}.
+#define	newsItem[56]->dt	${date(U, 2017-04-06)}
+
+#define	newsItem[57]->subject Side-Project Mayhem
+#define	newsItem[57]->category	media
+#define	newsItem[57]->body
+	Audio and artwork for the Wilson, Sumosonic, The Vaguely Familiar, Cambodia, and Black Eg projects
+	${linkInternal(${jbc_audio}, have been added to the listening room)}
+#define	newsItem[57]->dt	${date(U, 2017-04-13)}
+
+#define	newsItem[58]->subject Site Updates
+#define	newsItem[58]->category	media
+#define	newsItem[58]->body
+	<b>${linkInternal(${jbc_gigs}/1991/Nov14.html, Arena\, Vienna - 1991-11-14)}</b>
+	<blockquote>
+	${linkAudio(href=${jbc_gigs}/1991/Nov14.html, mp3=http://jazzbutcher.com/audio/19911114/19911114_JazzButcher_Vienna_Gen1_Flat.mp3)}
+	</blockquote>
+	Also, appearances on many "Various Artists" releases ${linkInternal(${jbc_albums}, are now better documented.)}
+#define	newsItem[58]->dt	${date(U, 2017-07-23)}
+
+#define	newsItem[59]->subject Interviews Added
+#define	newsItem[59]->category	media
+#define	newsItem[59]->body
+	${linkInternal(${jbc_press}/1995_apollox_alex_green.html, Alex Green (1995))}<br/>
+	${linkInternal(${jbc_press}/200002_julian_poole.html, Julian Poole (2000))}<br/>
+	${linkInternal(${jbc_press}/200505_apollox.html, Pat Fish (2005))}<br/>
+	${linkInternal(${jbc_press}/20081120_stereoembers_max_eider.html, Max Eider (2007))}<br/>
+	${linkInternal(${jbc_press}/20081120_caughtinthecarousel.html, Pat Fish (2007) - VERY long!)}<br/>
+	${linkInternal(${jbc_press}/20080219_mickmercer_max_eider.html, Max Eider (2008))}<br/>
+	<blockquote>
+	${linkAudio(title=Christmas With The Pygmies, mp3=http://jazzbutcher.com/audio/JazzButcher_ChristmasWithThePygmies.mp3)}
+	</blockquote>
+#define	newsItem[59]->dt	${date(U, 2017-08-01)}
+
+#define	newsItem[60]->dt	${date(U, 2015-02-01)}
+#define	newsItem[60]->subject Max Eider's Quiet Life
+#define	newsItem[60]->category
+#define	newsItem[60]->body
+		An announcement may be over-dramatic in the circumstances
+		but perhaps I should confirm that I have decided to give
+		up playing live. I prefer a quiet life these days. But
+		I am forever grateful to Pat and everyone who has helped
+		and supported us over the years. It has been a great adventure.
+		As I said to Pat the other day, when I think of the places
+		we’ve been, the times we’ve had, the friends we’ve made,
+		and the bars we have drunk dry at other people’s expense
+		(we never paid you see), I just feel very, very lucky.
+		<p>
+		The JBC of course marches on. Pat has turned my departure
+		into an opportunity before now and I have no doubt he
+		will do so again. In truth, he’s already got that covered.
+		And we may yet record together again. The last album wasn’t
+		too shabby after all.
+		<p>
+		And if, at some time in the future, you should happen
+		to see me propping up the bar at a JBC show somewhere
+		while Pat does all the hard work, do come up and say hello.
+		<p>
+		Many thanks again
+		<p>
+		${linkExternal(http://maxeider.com, Maximilian Theodore Eider III)} (aged 55 and a half)
+		<p>
+		Buy Max Eider's <i>Duck Dance</i>, over at ${linkExternal(maxeider.com)}
+		<p>
+		(here is Eider's <a href="${jbc_gigs}/2014/Aug20_2000.html">last recorded gig with the JBC</a>,
+		and here is Eider's <a href="${jbc_gigs}/2014/Aug21.html">last gig with the JBC</a>)
+
+
+#define	newsItem[61]->dt	${date(U, 2017-08-03)}
+#define	newsItem[61]->subject Fire Records Boxset - <i>The Wasted Years</i>
+#define	newsItem[61]->category
+#define	newsItem[61]->link	http://www.firerecords.com/product/the-jazz-butcher-the-wasted-years/
+#define	newsItem[61]->body
+This item will be released on October 20, 2017.
+<p>
+Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’.
+${linkExternal(http://www.firerecords.com/product/the-jazz-butcher-the-wasted-years/, Purchase Here)}
+
+#define	newsItem[62]->dt	${date(U, 2017-08-24)}
+#define	newsItem[62]->subject Un Samedi Soir Avec The Jazz Butcher
+#define	newsItem[62]->category
+#define	newsItem[62]->link	${jbc_press}/20170824_soulkitchen.html
+#define	newsItem[62]->body
+<a href="${jbc_press}/20170824_soulkitchen.html">Pat discusses</a> the Glass era releases and the
+	new Fire Records boxset.
+
+#define	newsItem[63]->dt	${date(U, 2017-10-15)}
+#define	newsItem[63]->subject Wasted Years Press
+#define	newsItem[63]->category
+#define	newsItem[63]->link	${jbc_press}/20171002_bandcamp.html
+#define	newsItem[63]->body
+On the occasion of the ${fire_wasted} box set release,
+<u><a href="${jbc_press}/20171002_bandcamp.html">here's a nice review and interview</a></u> and <u><a href="${jbc_press}/20171012_louderthanwar.html">a nice review</a></u>, and <u><a href="${jbc_press}/20171015_apessimistisneverdisappointed.html">or two</a></u>.
+<u><a href="${jbc_press}/20171020_popmatters.html">or three</a></u>
+</p>
+<p>
+Also, unearthed on the 'tube are some recent video segments where Pat talks
+briefly on a variety of topics. Click the "Etc" tab over in ${linkInternal(${jbc_video}, The Viewing Room)}.
+
+#define	newsItem[64]->dt	${date(U, 2017-11-04)}
+#define	newsItem[64]->subject Live Shows Uploaded
+#define	newsItem[64]->category	media
+#define	newsItem[64]->link
+#define	newsItem[64]->body
+	<b>${linkInternal(${jbc_gigs}/1993/Feb15.html, French National Radio\, Paris - 1993-02-15)}</b>
+	${linkAudio(mp3=http://jazzbutcher.com/audio/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3, comment=In French\, 4 songs performed)}
+
+	<b>${linkInternal(${jbc_gigs}/1993/Oct28.html, The Forum\, London - 1993-10-28)}</b>
+	${linkAudio(mp3=http://jazzbutcher.com/audio/19931028/19931028_JazzButcher_London_Gen0_Flat.mp3, comment=Opening for John Cale. w/Alex Green and Paul Mulreany)}
+
+	<b>${linkInternal(${jbc_gigs}/1985/Mar24.html, Kolingsborg\, Stockholm\, Sweden - 1985-03-24)}</b>
+	${linkAudio(mp3=http://jazzbutcher.com/audio/19850324/19850324_JazzButcher_Stockholm_Gen2_Flat.mp3)}
+
+#	<b>${linkInternal(${jbc_gigs}/1987/Feb3.html, Caveau Des Dominicains\, Nancy\, France - 1987-02-03)}</b>
+#	${linkAudio(mp3=http://jazzbutcher.com/audio/19870203/19870203_JazzButcher_Nancy_Gen1_Flat.mp3)}
+
+#	<b>${linkInternal(${jbc_gigs}/1989/Jul6.html, Loft\, Berlin\, Germany - 1989-07-06)}</b>
+#	${linkAudio(mp3=http://jazzbutcher.com/audio/19890706/19890706_JazzButcher_Berlin_Gen2_Flat.mp3)}
+
+#define	newsItem[65]->dt	${date(U, 2017-12-26)}
+#define	newsItem[65]->subject Four more Jazz Butcher albums compiled in upcoming ‘The Violent Years’ box set
+#define	newsItem[65]->category	news
+#define	newsItem[65]->link	/albums/fire_violent.html
+#define	newsItem[65]->body
+	<img src="/images/releases/fire_violent_250.jpg">
+	<p>
+	Fire Records next spring will follow up its collection of the first four albums by The Jazz Butcher, Pat Fish’s long-running U.K. indie-pop outfit, with a new box set called The Violent Years that compiles the next four LPs, all originally released on Creation Records between 1988 and 1991.
+	<p>
+	Due out March 9 on streaming/download or in a 4CD box set encased in a book, The Violent Years collects straight, bonus-less reissues of Fishcotheque (1988), Big Planet, Scarey Planet (1989), Cult of the Basement (1990) and Condition Blue (1990). The collection can be ${linkExternal(https://thejazzbutcher.bandcamp.com/album/the-violent-years, pre-ordered now via Bandcamp)}.
+
+#define	newsItem[66]->dt	${date(U, 2018-04-01)}
+#define	newsItem[66]->subject The Earliest Known Jazz Butcher Gig Review
+#define	newsItem[66]->category	press
+#define	newsItem[66]->link	${jbc_press}/198306_all_that_thinks_and_moves_2.html
+#define	newsItem[66]->body
+<u><a href="${jbc_press}/198306_all_that_thinks_and_moves_2.html">1983-04-19</a></u>
+Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
+
+#define	newsItem[67]->dt	${date(U, 2019-11-24)}
+#define	newsItem[67]->subject "On The Road" - CBC featurette
+#define	newsItem[67]->category	press
+#define	newsItem[67]->body
+	${linkAudio(mp3=${jbc_audio}/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3, comment=While en-route to 1989 Germany dates\, ${pat} answers "Big Questions" for CBC radio listeners)}
+	${g_credit(g=Dana Mottahead)}
+
+#define	newsItem[68]->dt	${date(U, 2020-01-10)}
+#define	newsItem[68]->subject Gig photos from Martin Reed
+#define	newsItem[68]->category	press
+#define	newsItem[68]->body
+	Martin Reed shares his photos from 3 gigs - including the Sumsonic debut:
+
+	<a href="/gigs/1997/Mar11.html">1997-03-11</a>,
+	<a href="/gigs/1999/Sep23_2000.html">1999-09-23</a>,
+	<a href="/gigs/2005/Sep19.html">2005-09-19</a>
+
+#define	newsItem[69]->dt	${date(U, 2020-03-21)}
+#define	newsItem[69]->subject Gig photos from Pierre Guillaume
+#define	newsItem[69]->category	press
+#define	newsItem[69]->body
+	Pierre Guillaume shares his photos from <a href="gigs/2019/Sep28_1900.html">2019-09-28 Paris</a>
+
+#define	newsItem[70]->dt	${date(U, 2020-05-04)}
+#define	newsItem[70]->subject "My songs have not always been well understood."
+#define	newsItem[70]->category	press
+#define	newsItem[70]->body
+	French interview from Pop News: <a href="${jbc_press}/20200504_press_popnews.html">translated here</a>
+
+#define	newsItem[71]->dt	${date(U, 2020-05-06)}
+#define	newsItem[71]->subject 1985 NME article
+#define	newsItem[71]->category	press
+#define	newsItem[71]->body
+	<a href="${jbc_press}/19850302_press_nme.html">Scanned and OCR'd early NME interview w/photo</a>
+
+#define	newsItem[72]->dt	${date(U, 2021-09-06)}
+#define	newsItem[72]->subject Dr Cholmondley Repents: A-sides, B-sides and Seasides
+#define	newsItem[72]->category	press
+#define	newsItem[72]->link	https://fire-records.lnk.to/JazzButcherDrCholmondleyFA
+#define	newsItem[72]->body
+	<img src="/images/cover_singles_500.jpg">
+	<p>
+	The Jazz Butcher reveals limited edition bookback CD ‘Dr Cholmondley Repents: A-sides, B-sides and Seasides’    
+	(out 12th November).
+	</p>
+	<p>
+	${linkExternal(https://fire-records.lnk.to/JazzButcherDrCholmondleyFA, Listen to the first singles 'Sixteen Years/Rebecca Wants Her Bike Back'/pre-order here)}
+	</p>
+	<p>
+	“The Jazz Butcher is one of the most brilliant incisive pop writers that Britain has produced since the glory days of Ray          
+	Davies and Pete Townshend” Alan McGee, Creation
+	</p>
+
+#define	newsItem[73]->dt	${date(U, 2021-10-06 12:02:22)}
+#define	newsItem[73]->subject Pat Fish - 1957-12-20 .. 2021-10-05
+#define	newsItem[73]->link	http://jazzbutcher.com/memoriam
+#define	newsItem[73]->category	press
+#define	newsItem[73]->body
+	<table width="100%">
+	<tr>
+	<td valign="top" width="50%">
+	${mkMaxSez(
+	<blockquote>
+	Very sad to announce that my old friend Pat Fish died suddenly but peacefully on Tuesday evening. Pat rocked my world in         
+	every way and his death leaves a big hole in my life and my memory, much of which was only stored in his outsized brain.         
+	Goodbye mate and thanks for everything. I’m going to miss you.<br/><i>Max x</i>
+	</blockquote>
+	)}
+	<p>
+	<a href="http://jazzbutcher.com/memoriam">
+	<b>Memoriam is here.</b>
+	</a>
+	</p>
+	</td>
+	<td valign="top">
+		<a href="http://jazzbutcher.com/memoriam"> <img src="/images/20211006_portrait_500.jpg" style="border: 1px; border-radius: 10px;" alt="portrait"></a>
+		${g_credit(g=Dave E. Barker)}
+#	<center>
+#		<a href="http://jazzbutcher.com/memoriam"> <img src="/images/20211006_portrait_500.jpg" alt="portrait"></a>
+#	</center>
+	</td>
+	</tr>
+	</table>
+#	<blockquote>
+#	Very sad to announce that my old friend Pat Fish died suddenly but peacefully on Tuesday evening. Pat rocked my world in         
+#	every way and his death leaves a big hole in my life and my memory, much of which was only stored in his outsized brain.         
+#	Goodbye mate and thanks for everything. I’m going to miss you.
+#	<br/>
+#	<i>Max x</i>
+#	</blockquote>
+#
+
+#define	newsItem[74]->dt	${date(U, 2022-08-30 13:12:22)}
+#define	newsItem[74]->subject THE JAZZ BUTCHER 'NEVER GIVE UP (GLASS VERSION)'
+#define	newsItem[74]->link	https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7
+#define	newsItem[74]->category	press
+#define	newsItem[74]->body
+	Cargo Records UK | The Jazz Butcher 'Never Give Up (Glass Version)' - Random colour via \@CargoRecords
+	"Order this now and let’s do a “Pastels/Sonic Youth” and get it in the charts!" - 
+	${linkExternal(https://twitter.com/chrisseventeen, Chris Coleman)}
+
+#define	newsItem->numResults	74
+
+
+#define	data.json
+#live if (getval(page) = data.json)
+${objectToJSON(newsItem)}
+#live	endif

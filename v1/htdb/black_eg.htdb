@@ -1,0 +1,21 @@
+#define	index.html
+	${mkHeader(section=Eg)}
+	<img src="https://jazzbutcher.com/images/blackeg_logo_50.png"/>
+	${beg_tabs}
+	${begTab(About)}
+	<div class="annotation">
+	</div>
+	${endTab}
+	${begTab(Who)}
+	<div class="annotation">
+	</div>
+	${endTab}
+	${begTab(Live)}
+	${doGigSearch(f=extras, q=eg)}
+	${endTab}
+	${begTab(Released)}
+	<div class="annotation">
+	</div>
+	${endTab}
+	${end_tabs}
+	${jbc_footer}

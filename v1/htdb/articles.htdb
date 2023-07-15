@@ -1,0 +1,40 @@
+#define	index.html
+	${mkHeader(section=Articles)}
+
+	<p>
+	<center>
+	<b>The mailing list is on hiatus..</b>
+	</center>
+	<table border=0 cellspacing=10 width=70%><tr><td>
+	<strike>
+	The Jazz Butcher Conspiracy mailing list has been in existence
+	since October 1989 and has a few hundred subscribers.  Several
+	subscribers are in contact with the band, and report here.
+	<p>
+	This is the place for up-to-date information.
+	For your convenience, the archives are here in their entirety,
+	although they can lag several months depending on how busy I am :-|
+	</strike>
+	</td><td>
+	<a href="${jbc_root}/articles/1989/index.html">1989</a>,
+	<a href="${jbc_root}/articles/1990/index.html">1990</a>,
+	<a href="${jbc_root}/articles/1991/index.html">1991</a>,
+	<a href="${jbc_root}/articles/1992/index.html">1992</a>,
+	<a href="${jbc_root}/articles/1993/index.html">1993</a>,
+	<a href="${jbc_root}/articles/1994/index.html">1994</a>,
+	<a href="${jbc_root}/articles/1995/index.html">1995</a>,
+	<a href="${jbc_root}/articles/1996/index.html">1996</a>,
+	<a href="${jbc_root}/articles/1997/index.html">1997</a>,
+	</td><td width="10%">
+	<a href="${jbc_root}/articles/1998/index.html">1998</a>,
+	<a href="${jbc_root}/articles/1999/index.html">1999</a>,
+	(did anyone archive 2000?)
+	<a href="${jbc_root}/articles/2001/index.html">2001</a>,
+	<a href="${jbc_root}/articles/2002/index.html">2002</a>,
+	<a href="${jbc_root}/articles/2003/index.html">2003</a>
+	</td></tr></table>
+#	<b><font size=+1>Join The Mailing List</font>:<br>
+#	<a href="mailto:jbc-list-request@jazzbutcher.com">
+#	jbc-list-request@jazzbutcher.com</b></a>
+
+	${jbc_footer}

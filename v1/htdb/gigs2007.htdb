@@ -1,0 +1,1227 @@
+#define	Jan5.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			The Adult Section, DJ Flash
+		)},
+		notes=${literalizeCommas(
+			Masters of Budvar - Friday 5th January 2007 - The Labour Club, Earl Street, Northampton NN1
+																																	
+			<p>THE ADULT SECTION
+																																	
+			<p>This blistering 4 piece formed only a year ago but has already started to blaze a trail on the London circuit,
+			playing at The Water Rats, Hope & Anchor, Dublin Castle, Caernarvon Castle, The Luminaire and Ryan's Bar with their
+			fusion of powerpop punk and glam. Their influences are obvious and unavoidable: Bowie, Buzzcocks, New York Dolls,
+			Patti Smith. And, yes, they feature former JBC man Dooj.
+																																	
+			<p>THE WOW! SCENARIO
+																																	
+			<p>New and fascinating young band from Northamptonshire featuring James Acaster.
+																																	
+			<p>SUPERSTAR DJ FLASH
+																																	
+			<p>The man behind P-Hex, the heavy artillery of Wilson, the rhythm guitarist of Ghost Train: DJ Flash has the music in
+			him and now it's gotta come out.
+																																	
+			<p>Entry is free, as it has been for almost three years. First band onstage at about nine o'clock. Well-stocked and
+			genially staffed bar open until midnight. We hope to see you there.
+		)}
+	)}
+
+#define	Jan28.html()
+	${gigHeader(
+		cost=free,
+	)}
+
+#define	Feb2.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Misterlee, The Black Watch, DJ Sonic Boom (Spacemen 3)
+		)},
+		notes=${literalizeCommas(
+			MISTERLEE (Leicester) + THE BLACK WATCH (Los Angeles) + Superstar DJ SONIC BOOM (Spacemen 3)
+		)}
+	)}
+
+#define	Feb18.html()
+	${gigHeader(
+	)}
+
+#define	Mar2.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Black Carrot, DJ James Acaster
+		)},
+		notes=${literalizeCommas(
+			BLACK CARROT<br>
+			PAT FISH<br>
+			SUPERSTAR DJ JAMES ACASTER (MUSIC FOR SQUARES)
+			<p>
+			It's going to be a wild old night in NN1, with Market Harborough's frankly terrifying purveyors of 21st Century
+			Krautrock,
+			foul-mouthed psychedelic karaoke from NN1 and a mystifying smorgasbord of post-everything pop from James Acaster on
+			the decks.
+			<p>
+			${g_artistweb(g=http://www.blackcarrot.net)}<br>
+			${g_artistweb(g=http://www.jazzbutcher.com)}<br>
+			${g_artistweb(g=http://www.myspace.com/thewowscenario)}<br>
+		)}
+	)}
+
+#define	Mar22_2215.html()
+	${gigHeader(
+		cost=&pound;6:00,
+		with=${literalizeCommas(
+			Justin Nozuka, Farah Naz, Moody McArdle, Maxwells Daemon
+		)},
+		notes=${literalizeCommas(
+			I shall be doing a show at the 12 Bar Club, Denmark Street, London on Thursday 22nd
+			March 2007.
+			<p>
+			It's six quid to get in. I'm on at ten o'clock. The other acts look interesting.
+			Here's the full line-up for Thursday 22nd:<p>
+			7-30pm Justin Nozuka<p>
+			8pm Farah Naz<p>
+			8-45pm Moody McArdle<p>
+			9-30pm Maxwells Daemon <p>
+			10-15pm Pat Fish
+		)}
+	)}
+
+#define	Mar25.html()
+	${gigHeader(
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Wilson will be playing at THE ROADMENDER, Northampton NN1 on SUNDAY 25th MARCH.
+			<p>
+			The show is an all-day benefit concert for the Cambodian Kids Project, which basically takes care of orphans in that
+			country. Details to follow when we have them.
+		)}
+	)}
+
+#define	Apr6_2130.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			They Came From The Stars I Saw Them, DJ Joe Woolley
+		)},
+		notes=${literalizeCommas(
+			Masters of Budvar present
+			
+			<br>
+			at
+			<br>
+			The Labour Club
+			<br>
+			Corner of Earl and Charles
+			<br>
+			Northampton NN1
+			<br>
+			
+			<br>
+			on
+			<br>
+			
+			<br>
+			Friday 6th April
+			<br>
+			
+			<br>
+			
+			<br>
+			Wilson
+			<br>
+			After terrorising a small posse of teens at the Roadmender in the name of charity, the NN1 dub fiends bring their bitter and twisted breaks, wailing guitars and Venezuelan disco sensibilities back uptown.
+			<br>
+			${g_artistweb(g=http://www.myspace.com/wilsondub)}
+			<br>
+			
+			<br>
+			
+			<br>
+			they came from the stars i saw them
+			<br>
+			Michael Horton Jupiter brings the maddest band in London back for a second assault on the difficult south face of the Labour Club. Steve Lamacq reckoned that these "could be the future of pop music". Good grief!
+			<br>
+			${g_artistweb(g=http://www.myspace.com/theycamefromthestarsisawthem)}
+			<br>
+			
+			<br>
+			
+			<br>
+			Superstar DJ Joe Woolley
+			<br>
+			Alan Ginsberg, Syd Barrett, Slim Gaillard, the Black Eg.tutto possibile when our superstar DJ takes to the decks. Honestly, it's like a proper be-in.
+			<br>
+			${g_artistweb(g=http://www.myspace.com/joewoolley)}
+			<br>
+			
+			<br>
+			
+			<br>
+			This is a night of proper mayhem and it should not be missed.
+			<br>
+			Doors are open from 8:00pm
+			<br>
+			Joe will hit the wheels of steel at about 8:30pm
+			<br>
+			they came from the stars I saw them onstage at 9:30pm
+			<br>
+			Wilson onstage 10:30pm
+			<br>
+			Bar open until midnight
+			<br>
+			ADMISSION FREE
+		)}
+	)}
+
+#define	Apr10.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)}
+	)}
+
+#define	Apr12.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)}
+	)}
+
+#define	May4.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Tim Chaplin (aka Luminous), DJ Johnny P.
+		)},
+		notes=${literalizeCommas(
+			May the Fourth be with you. This month we feature the very wonderful TIM CHAPLIN (aka Luminous), plus a support act tbc and superstar DJ JOHNNY P.
+		)}
+	)}
+
+#define	May6_1200.html()
+	${gigHeader(
+		cost=,
+		blurb=German Beer Festival,
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			There is a German Beer Festival coming to Northampton from the 4th to the 7th May. I shall be performing there at noon (yes,
+			midday) on Sunday 6th May and again on Monday 7th May. I'll be playing acoustic.
+		)}
+	)}
+
+#define	May7_1200.html()
+	${gigHeader(
+		cost=,
+		blurb=German Beer Festival,
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			There is a German Beer Festival coming to Northampton from the 4th to the 7th May. I shall be performing there at noon (yes,
+			midday) on Sunday 6th May and again on Monday 7th May. I'll be playing acoustic.
+		)}
+	)}
+
+#define	May20.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)}
+	)}
+
+#define	May27.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Steven Wilson (Plasticsoul), Dave Boy Fish and the Wheel
+		)},
+		notes=${literalizeCommas(
+			This gig has moved from The Monk and minstrel in Isham to THE WHITE HORSE in WOODFORD, NN14. Again, we&#39;re talking about the extreme
+			eastern side of Northamptonshire here, out beyond Kettering, I believe. Also on the bill is Steven Wilson of Plasticsoul and an outfit
+			called Dave Boy Fish and the Wheel.
+		)}
+	)}
+
+#define	Jun1.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Steven Wilson (Plasticsoul)
+		)},
+		notes=${literalizeCommas(
+			This month our headliner, from San Gabriel, California, is Steven Wilson, known to his many admirers as PLASTICSOUL. A classic songwriter in the vein of John Lennon or Neil Young, Wilson is possessed of an awesome voice and enormous talent. Support and superstar DJ to be confirmed, so check back later for more Budvar thrills.
+		)}
+	)}
+
+#define	Jun24.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)}
+	)}
+
+#define	Jul6.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Ray, Just Fontaine
+		)},
+		notes=${literalizeCommas(
+			This month we feature London-based recording artists RAY, plus NN1's own JUST FONTAINE. Your host and DJ for the evening: yours truly, PAT FISH.
+			<p>
+			Masters of Budvar present
+			<p>
+			-at-
+			<p>
+			The Labour Club
+			Corner of Earl & Charles
+			Northampton NN1
+			<p>
+			-on-
+			<p>
+			Friday 6th July 2007
+			<p>
+			Your headliners
+			RAY
+			<p>
+			Superb melancholy quartet from London who combine the world-weary longing of Leonard Cohen or Nick Drake with the awesome sonic authority of Echo & The Bunnymen, Mercury Rev, or even - whisper this - Pink Floyd. A year ago Ray gave one of the most memorable shows that Masters of Budvar have hosted in four years. With a new album ready for release, they are unmissable.
+			<p>
+			New RAY single Great Strange Dream out now. This new single follows the release of their last two albums - Daylight in the Darkroom (Aug 2006) and Deep Blue Happy (Nov 2005). It was produced by regular band cohort John Rivers, - whose credits include The Specials (Ghost Town), Felt & Ocean Colour Scene. John was also at the production helm for their previous LPs.
+			These LPs (along with their 2001 Rough Trade debut First Light) have seen the London-based band reinforce their reputation for epic, emotive British guitar pop - having been hailed in some quarters as the missing link between House of Love, Echo and the Bunnymen, The Chameleons and Tindersticks
+			<p>
+			The line up of songwriting brothers Nev and Mark Bradford (vocals and guitar respectively) and drummer Chris Lowe, have now been joined by Martin Tisdall on bass after the departure of Jenni Tarma to LA
+			<p>
+			Young Masters
+			Mojo
+			<p>
+			Almost flawless - Ray's touch is breathtaking
+			Q
+			<p>
+			Guitar notes hang in the air. Words are weighted then dispersed in the ether... but acutely present undercurrents of hostility, give the songs a serrated edge
+			NME
+			<p>
+			Loveliness galore for those lugubrious nights of the soul. A Ray of delight, if you will
+			Rocksound
+			<p>
+			RAY have tapped into the wonderful musical nostalgia of a bygone sonic age, but mixed it with enough contemporary panache to make the hairs on the back of your neck stand on end
+			msn.co.uk
+			<p>
+			Sublimely Melodic
+			The Guardian
+			<p>
+			${g_artistweb(g=http://www.raytheband.com)}
+			<p>
+			${g_artistweb(g=http://www.myspace.com/raytheband)}
+			<p>
+			Your opening entertainers
+			<p>
+			Just Fontaine
+			<p>
+			>From the new Barcelona, NN1, these sharp-tongued men in sharp suits pursue their unsavoury but ultimately redemptive agenda somewhere on the other side of this life. A stately limo driven through the heart of darkness, Just Fontaine find grace under pressure in the strangest of places and work their way effortlessly into the listener's heart. They don't really do happy.
+			<p>
+			${g_artistweb(g=http://www.myspace.com/thebandfontaine)}
+			<p>
+			Plus your cheapskate superstar DJ
+			<p>
+			Pat Fish
+			<p>
+			The man who "discovered" the Spacemen 3 discovers that he has a virgin copy of "It's So Funny (How We Don't Talk Any More)" by Sir Lord Cliff Richard in his record bag. Slowly and methodically he prepares himself for ritual suicide right here in the Labour Club, pausing only to cue up "Rock Me Amadeus" by the all-conquering Falco as the blood begins to spray over hapless, shrieking alternative-rock fans who thought (God bless!) that this might have been the happening place to be - rather than this brutal charnel house of forcibly collided beats, ill-matched pads, warring riffs and spine-warping howls of unsatisfied desire. Oh, well.
+			<p>
+			${g_artistweb(g=http://www.myspace.com/patfish77)}
+			<p>
+			It's free to get in. The music is always really cool.
+			<p>
+			Why would you think it was not for you?
+		)}
+	)}
+
+#define	Jul7.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Jim Jasmine, Chipanman
+		)},
+		notes=${literalizeCommas(
+			JIM JASMINE PAT FISH CHIMPANMAN plus superstar DJ tbc A bit of a night for Creation fans, this one. Jim Shepherd, leader of first generation Creation band The Jasmine Minks will be travelling down from Scotland to perform a solo set and also a set of Jasmine Minks tunes backed by Northampton/Milton Keynes combo Chimpanman. I shall be there with my guitar and a laptop and Chimpanman will open the evening with their own original set. Jim is an immensely talented songwriter with a heart as big as a mountain. It should be a super night. More details as I have them, Pat x
+		)}
+	)}
+
+#define	Aug3.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Masters of Budvar
+			present
+			<p>
+			at
+			<p>
+			The Labour Club
+			<p>
+			Corner of Earl
+			&amp; Charles
+			<p>
+			Northampton NN1
+			<p>
+			on
+			<p>
+			Friday 3rd August 2007
+			<p>
+			SATURATION
+			POINT
+				${g_artistweb(g=http://www.myspace.com/thesaturationpoin)}
+
+			<p>
+			Last time that this Bristol trio
+			played at Masters of Budvar they ended up being signed to a record deal with
+			Very Friendly Records, part of Cargo. So it seems only right that they should
+			make their return to the Labour Club just as their album is
+			released.
+			<p>
+			With a history involving Blue
+			Aeroplanes, Strangelove, Witness and Groove Armada (!), Saturation Point are a
+			deeply powerful and melodic post-rock outfit, combining powerful electric guitar
+			drones with fizzing electronics and a mighty rhythm section. Their lovely
+			instrumentals work their way deep into your consciousness and a sense of deep
+			satisfaction and contentment can only ensue.
+			<p>
+			BROKEN
+			STARS
+			${g_artistweb(g=http://www.myspace.com/brokenstarsu)}
+
+			<p>
+			A first appearance at Masters of
+			Budvar for this darkly talented quintet from London. Classic songwriting and
+			powerful, committed lyrics combine to bring to mind memories of the Perfect
+			Disaster.
+			<p>
+			SUPERSTAR DJ THE NOTORIOUS
+			B.E.Z.
+			<p>
+			NN1's leviathan of the leisure lounge
+			graces us with a fine selection of tunes from his capacious
+			collection.
+			<p>
+			Admission is free and the doors are
+			open from 8:00pm
+			<p>
+			Don't let the speakeasy-style door
+			entryphone system put you off. Somebody will surely come and let you
+			in.
+			<p>
+			Don't worry about smoking either. The
+			Labour Club has erected a covered area for smokers in the back garden. We like
+			to call it "The Bike Shed".
+			<p>
+			We hope to see you there for another
+			rocking night at Masters of Budvar.
+			<p>
+			This message has reached
+			you because your name has found its way onto the mailing list for Masters of
+			Budvar, a non-profit organisation devoted to bringing the best in global music
+			talent to the confines of Northampton Labour Club on the first friday of every
+			month. It is not spam, and we don't actually want anything from you, except that
+			you consider coming to our events and wigging out like a good 'un. If, on the
+			other hand, this all strikes you as in any way tedious, odious, noxious or
+			distressing, then please feel free to reply to our e-mail with the code "LEAVE
+			IT!" in the subject field and we shall drop your address from our list at a
+			speed quicker than can be detected by the human eye.
+			<p>
+			If, on the other hand,
+			this kind of thing looks interesting to you, please feel free to forward this
+			message to all your music-loving pals. Thank you!
+		)}
+	)}
+
+#define	Sep7.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Kevin Hewick, The New Moon, DJ Mister Lee
+		)},
+		notes=${literalizeCommas(
+			<DIV><FONT face=Arial size=2>
+			<P style="TEXT-ALIGN: center" align=center><?xml:namespace prefix = st1 ns =
+			"urn:schemas-microsoft-com:office:smarttags" /><st1:date Year="2007" Day="7"
+			Month="9"><SPAN style="COLOR: black; FONT-FAMILY: Arial"><FONT
+			size=3>Friday 7th September </FONT></SPAN></STRONG><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">2007</SPAN></STRONG></st1:date></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="COLOR: black; FONT-FAMILY: Arial">The Labour Club, Corner of Earl &amp;
+			Charles, </SPAN></STRONG><st1:City><st1:place><SPAN
+			style="COLOR: black; FONT-FAMILY: Arial">Northampton</SPAN></STRONG></st1:place></st1:City><SPAN
+			style="COLOR: black; FONT-FAMILY: Arial"> NN1</SPAN></STRONG></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>Masters of Budvar
+			present</FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-SIZE: 24pt; FONT-FAMILY: Arial">Kevin Hewick</SPAN></STRONG></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>Kevin Hewick is a Leicester-based
+			singer-songwriter who was an early member of the Factory Records roster. In the
+			present day he is known for his epic career-spanning live
+			sets.</FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center><U><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>The Factory Years</FONT></SPAN></U></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>Following the death of Ian Curtis, it's
+			alleged by certain sources that Factory owner Tony Wilson suggested the
+			remaining members of Joy Division try out Hewick as lead singer in their
+			proposed new band. No more came of it other than a session in June 1980 with
+			producer Martin Hannett in Graveyard Studios where they recorded the track
+			"Haystack."</FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><BR><FONT size=3>Other Factory releases included the
+			controversial live side of the A Factory Quartet double album (FACT 24) in 1981
+			- live tracks picked against Hewick's wishes by Tony Wilson of a confrontation
+			between him and a very aggressive audience - and the single "Ophelia's Drinking
+			Song" (FAC 48) which featured producer Donald Johnson of A Certain Ratio on
+			percussion and was mixed by Peter Hook of New Order.</FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>For a time Hewick was privy to many
+			pivotal moments in Factory's early history, describing himself as a "gormless
+			bystander" to those events. He often stayed at the famous Palatine Road flat of
+			Alan Erasmus but as Alan became less involved with the label and Kevin's fraught
+			working relationship with Tony Wilson rapidly worsened throughout 1982 (with
+			Hewick even telling Wilson that the Hacienda was a bad idea as he "couldn't even
+			run a record company properly never mind a club as well") an offer to "jump
+			ship" to Cherry Red Records in London proved too tempting to
+			resist.</FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center><U><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>Cherry Red</FONT></SPAN></U></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>In 1982 he left Factory for a period on
+			Cherry Red Records, releasing an album Such Hunger For Love and an EP in
+			collaboration with the late Adrian Borland of The Sound, entitled Reality/Unreal
+			(1983). These items, and much of the Factory era, have been compiled on 2003
+			Cherry Red release Tender Bruises And Scars, which also features sleeve notes by
+			Kevin about his experiences in the early '80s.</FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">During 1982-83 Kevin was part of the poetry / music
+			collective Ghosts of Individuals with Patrik Fitzgerald , Anne Clark and John
+			Hollingsworth, touring in both the </SPAN><st1:country-region><st1:place><SPAN
+			style="FONT-FAMILY: Arial">UK</SPAN></st1:place></st1:country-region><SPAN
+			style="FONT-FAMILY: Arial"> and </SPAN><st1:country-region><st1:place><SPAN
+			style="FONT-FAMILY: Arial">Sweden</SPAN></st1:place></st1:country-region><SPAN
+			style="FONT-FAMILY: Arial">.</SPAN></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>After being dropped by Cherry Red by
+			1984, constantly savaged and ridiculed by the music press, and developing total
+			writer's block, Hewick hit rock bottom in his musical and personal
+			life.</FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center><U><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>Present Day</FONT></SPAN></U></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>After a 5-year self-confessed "black
+			hole period", since 1989 Hewick has returned to the Leicester music scene, and
+			can be found at frequent gigs within the city both as performer and/or event
+			organiser, including when he booked and hosted the monthly Firebug acoustic
+			sessions between September 2005&nbsp; and October 2006.</FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">Kevin's support slots over the years have included
+			Roy Harper, Durutti Column, New Order, Section 25, PJ Harvey, Martin Carthy,
+			Kevin Coyne, Fairport Convention, Eyeless In Gaza, Ben Watt, Tim Rose, and
+			Jackie Leven, with whom he has also performed in "The Stornoway Girls". He also
+			appeared on Leven's live albums Greetings from </SPAN><st1:City><st1:place><SPAN
+			style="FONT-FAMILY: Arial">Milford</SPAN></st1:place></st1:City><SPAN
+			style="FONT-FAMILY: Arial"> (2001) and Only The Ocean Can Forgive (2003). He has
+			also guested on guitar and/or vocals on albums by The Freed Unit, Steve
+			Cartwright, Meta-Tekki and recently on ist 's King Martha (2005) and has
+			contributed both lyrics and vocals for Soul Sonic Sauce's forthcoming
+			self-titled first album.</SPAN></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">Kevin has also recently returned to the
+			</SPAN><st1:City><st1:place><SPAN
+			style="FONT-FAMILY: Arial">London</SPAN></st1:place></st1:City><SPAN
+			style="FONT-FAMILY: Arial"> acoustic circuit after an absence of nearly five
+			years. Much of his recent work, including the album Helpline (1999), has been
+			issued by </SPAN><st1:place><SPAN
+			style="FONT-FAMILY: Arial">Leicester</SPAN></st1:place><SPAN
+			style="FONT-FAMILY: Arial"> maverick label Sorted Records.</SPAN></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">He has twice paid tribute to his old friend the late
+			Adrian Borland at concerts in his memory in </SPAN><st1:City><st1:place><SPAN
+			style="FONT-FAMILY: Arial">Holland</SPAN></st1:place></st1:City><SPAN
+			style="FONT-FAMILY: Arial"> at the Patronaat Haarlem (2001) and Amsterdam
+			Paradiso (2006) and also toured </SPAN><st1:country-region><st1:place><SPAN
+			style="FONT-FAMILY: Arial">Germany</SPAN></st1:place></st1:country-region><SPAN
+			style="FONT-FAMILY: Arial"> with The Convent in 2001. Further European dates are
+			planned for late 2007.</SPAN></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>2007 has so far seen the re-issue on LTM
+			Records of the 1980 Crepuscule compilation "From Brussels With Love" which
+			features "Haystack" from the 1980 session with New Order and "Whispers in the
+			Offing", a tribute album to Kevin Coyne, on which Hewick contributes a version
+			of Coyne's song "Raindrops on the Window". </FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">He has also co-written the song "A Scotsman in A
+			Church" with Kenton Hall, singer and songwriter with
+			</SPAN><st1:country-region><st1:place><SPAN
+			style="FONT-FAMILY: Arial">UK</SPAN></st1:place></st1:country-region><SPAN
+			style="FONT-FAMILY: Arial"> band ist, for inclusion on their forthcoming album
+			</SPAN><st1:place><st1:PlaceName><SPAN
+			style="FONT-FAMILY: Arial">Toothpick</SPAN></st1:PlaceName><SPAN
+			style="FONT-FAMILY: Arial"> </SPAN><st1:PlaceType><SPAN
+			style="FONT-FAMILY: Arial">Bridge</SPAN></st1:PlaceType></st1:place><SPAN
+			style="FONT-FAMILY: Arial">.</SPAN></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">Kevin is also involved in the development of a
+			musical with playwright Jez Simons of Hathi Productions to be staged at
+			</SPAN><st1:place><SPAN
+			style="FONT-FAMILY: Arial">Leicester</SPAN></st1:place><SPAN
+			style="FONT-FAMILY: Arial">'s Phoenix Arts Centre in September 2007 and further
+			afield in the </SPAN><st1:country-region><st1:place><SPAN
+			style="FONT-FAMILY: Arial">UK</SPAN></st1:place></st1:country-region><SPAN
+			style="FONT-FAMILY: Arial"> in late '07 / early '08.</SPAN></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">In July 2007, Kevin Hewick released a ltd. edition 7"
+			single on yellow vinyl - "Something to Do On The Bus" - and 4 track downloadable
+			EP - "That Side of You" - through </SPAN><st1:place><SPAN
+			style="FONT-FAMILY: Arial">Leicester</SPAN></st1:place><SPAN
+			style="FONT-FAMILY: Arial"> label Pink Box Records.</SPAN></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center>
+			${g_artistweb(g=http://www.myspace.com/kevinhewickuk)}
+			</p>
+			<P style="TEXT-ALIGN: center" align=center><BR><SPAN
+			style="FONT-SIZE: 24pt; FONT-FAMILY: Arial">The New Moon</SPAN></STRONG></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">A welcome return to Masters of Budvar for this
+			ever-intriguing psych-folk duo from </SPAN><st1:City><st1:place><SPAN
+			style="FONT-FAMILY: Arial">Oxford</SPAN></st1:place></st1:City><SPAN
+			style="FONT-FAMILY: Arial">. With skilful acoustic guitar and loping electric
+			bass Matt and Jules weave elaborate and beguiling tales of the everyday
+			strange.</SPAN></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">Their subject matter ranges wildly from pirates
+			("tonight we're gonna party like it's 1799") to outer space (Dark Matter), from
+			the Neolithic stargazers of the </SPAN><st1:place><SPAN
+			style="FONT-FAMILY: Arial">Hebrides</SPAN></st1:place><SPAN
+			style="FONT-FAMILY: Arial"> to the insides of Terry Walpole's camera. Their
+			music bears comparison with Richard Thompson or Robyn Hitchcock, but remains
+			truly original.</SPAN></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">Ever more confident, they come to NN1 from a
+			successful </SPAN><st1:City><st1:place><SPAN
+			style="FONT-FAMILY: Arial">Oxford</SPAN></st1:place></st1:City><SPAN
+			style="FONT-FAMILY: Arial"> festival appearance, where they apparently played a
+			version of the Beatles' "A Day in the Life".</SPAN></FONT></P>
+			<P style="TEXT-ALIGN: center" align=center>
+			${g_artistweb(g=http://www.myspace.com/thenewmoonnews)}
+			</p>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-SIZE: 24pt; FONT-FAMILY: Arial">Superstar DJ Mister
+			Lee</SPAN></STRONG></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>Lee Allatson has twice terrorized
+			Masters of Budvar with his band Misterlee. Once described as a demented cross
+			between Syd Barrett and Keith Moon, this Leicester legend is sure to
+			discombobulate and delight.</FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center>
+			${g_artistweb(g=http://www.myspace.com/leeallatson)}
+			</p>
+
+			<P style="TEXT-ALIGN: center" align=center><BR><FONT size=3><SPAN
+			style="FONT-FAMILY: Arial">Things kick off at about </SPAN><st1:time Minute="30"
+			Hour="20"><SPAN style="FONT-FAMILY: Arial">8:30pm</SPAN></st1:time></FONT><FONT
+			size=3><SPAN style="FONT-FAMILY: Arial"> when Lee takes to the decks.<BR>Expect
+			The New Moon onstage at </SPAN><st1:time Minute="0" Hour="21"><SPAN
+			style="FONT-FAMILY: Arial">9:00pm</SPAN></st1:time><SPAN
+			style="FONT-FAMILY: Arial"> and Kevin Hewick onstage at </SPAN><st1:time
+			Minute="0" Hour="22"><SPAN
+			style="FONT-FAMILY: Arial">10:00pm</SPAN></st1:time></FONT><SPAN
+			style="FONT-FAMILY: Arial"><BR><FONT size=3>The bar stays open until
+			</FONT></SPAN><st1:time Minute="0" Hour="0"><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>midnight</FONT></SPAN></st1:time><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3> and there are ample facilities for
+			smokers in the garden, with a covered area, ashtrays and all that stuff. <BR>The
+			people are friendly, the lights are pretty as all-get-out and a good time is on
+			the cards for all. </FONT></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-FAMILY: Arial"><FONT size=3>We hope that you can join
+			us.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office"
+			/><o:p></o:p></FONT></SPAN></STRONG></P>
+			<P style="TEXT-ALIGN: center" align=center><FONT size=3><SPAN
+			style="FONT-WEIGHT: normal; FONT-FAMILY: Arial; mso-bidi-font-weight: bold">Also,
+			please bear in mind that the Fishmarket Café is open from
+			</SPAN></STRONG><st1:time Minute="0" Hour="5"><SPAN
+			style="FONT-WEIGHT: normal; FONT-FAMILY: Arial; mso-bidi-font-weight: bold">5:00
+			o'clock</SPAN></STRONG></st1:time><SPAN
+			style="FONT-WEIGHT: normal; FONT-FAMILY: Arial; mso-bidi-font-weight: bold">
+			until </SPAN></STRONG><st1:time Minute="0" Hour="9"><SPAN
+			style="FONT-WEIGHT: normal; FONT-FAMILY: Arial; mso-bidi-font-weight: bold">9:00
+			o'clock</SPAN></STRONG></st1:time><SPAN
+			style="FONT-WEIGHT: normal; FONT-FAMILY: Arial; mso-bidi-font-weight: bold">,
+			offering a champagne bar (cheap beers too) with free tapas and a DJ. It's a fine
+			place to meet up and start your Friday night, wholeheartedly endorsed by Masters
+			of Budvar.<o:p></o:p></SPAN></STRONG></FONT></P>
+		)}
+	)}
+
+#define	Oct5.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			The Adult Section, Freelovebabies, DJ 78
+		)},
+		notes=${literalizeCommas(
+			<DIV><FONT face=Arial size=2>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN style="FONT-SIZE: 8pt; FONT-FAMILY: Arial"><?xml:namespace
+			prefix = o ns = "urn:schemas-microsoft-com:office:office"
+			/><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 8pt; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Masters of Budvar
+			present<o:p></o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">at<o:p></o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">The Labour
+			Club<o:p></o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Corner of Earl &amp;
+			Charles<o:p></o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><?xml:namespace prefix = st1 ns =
+			"urn:schemas-microsoft-com:office:smarttags" /><st1:City><st1:place><B
+			style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Northampton</SPAN></B></st1:place></st1:City><B
+			style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">
+			NN1<o:p></o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><st1:date Year="2007" Day="5" Month="10"><B
+			style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Friday 5<SUP>th</SUP>
+			October 2007</SPAN></B></st1:date><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p></o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 20pt; COLOR: black; FONT-FAMILY: Arial">THE ADULT
+			SECTION<o:p></o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Having kicked,
+			screamed, cried and drunk their way through mid-life crisis, nothing now stands
+			in the way of <B style="mso-bidi-font-weight: normal">THE ADULT SECTION</B>
+			indulging their wildest dreams of creating the deep down dirty rock n roll music
+			that is the destiny they were born to fulfil. They have emerged from their
+			misspent youths as defiant, wild-eyed, passionately obsessed adults with a fine
+			sense of glamour and camp and a dedication to intoxicating their audiences with
+			a vision that ranges from the ridiculous to the
+			outrageous.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">This blistering 4
+			piece was formed only a year ago but has already started to blaze a trail on the
+			London live circuit - <B style="mso-bidi-font-weight: normal">WATER RATS, HOPE
+			AND ANCHOR, DUBLIN CASTLE, CAERNARVON CASTLE, THE LUMINAIRE, RYAN'S BAR</B> -
+			with their fusion of power-pop punk and glam. Their demo ranges from the fierce
+			to the bizarre and is a testimony to what rock 'n roll once epitomised before it
+			became a soundtrack for multinational corporations.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Their influences
+			are obvious and unavoidable. When has it been any other way?
+			"</SPAN><st1:City><st1:place><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">BOWIE</SPAN></B></st1:place></st1:City><B
+			style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">, </SPAN></B><st1:place><st1:City><B
+			style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">BUZZCOCKS</SPAN></B></st1:City><B
+			style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">, </SPAN></B><st1:State><B
+			style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">NEW
+			YORK</SPAN></B></st1:State></st1:place><B
+			style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"> DOLLS, PATTI SMITH</SPAN></B><SPAN
+			style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">" the band confirm. The Adult
+			Sections D.I.Y. ethos is apparent from the moment they appear and is
+			substantiated when they play.<SPAN
+			style="mso-bidi-font-style: italic"><o:p></o:p></SPAN></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-style: italic"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-style: italic">Heres
+			a live review</SPAN><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p></o:p></SPAN></P>
+			<H2 style="MARGIN: 12pt 0cm 3pt; TEXT-ALIGN: center" align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-style: italic">The
+			Adult Section</SPAN><SPAN
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-weight: bold; mso-bidi-font-style: italic">
+			The Luminaire, </SPAN><st1:City><st1:place><SPAN
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-weight: bold; mso-bidi-font-style: italic">London</SPAN></st1:place></st1:City><SPAN
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-weight: bold; mso-bidi-font-style: italic">,
+			</SPAN><st1:date Year="2006" Day="22" Month="2"><SPAN
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-weight: bold; mso-bidi-font-style: italic">22<SUP>nd</SUP>
+			February, 2006</SPAN></st1:date><SPAN
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-weight: bold; mso-bidi-font-style: italic"><o:p></o:p></SPAN></H2>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">This band can
+			entertain and is growing in stature with each show. Describing them as DIY, Glam
+			Punk (their words not mine) is fully justified but only really appreciated when
+			you see and hear them.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Visually, The Adult
+			Section are a delight. Its great to see a band looking this good and a bloody
+			marvel that they also cut it with some of the most original and entertaining
+			rock and pop to hit the live music scene in years.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">The
+			Adult Section achieve this with a set largely consisting of original glam and
+			punk songs written by Dooj and Johnny (yes, songs, those short-ish things with
+			lyrics that you can hear and with hooky, memorable choruses) punctuated with
+			stunning guitar licks, melodic rock bass and foot-stomping drums.<SPAN
+			style="mso-spacerun: yes">&nbsp; </SPAN>Occasionally, and engagingly they
+			introduce some interesting choices of covers from a Country standard (a pacey,
+			rocked-up Blanket On the Ground) to a Bay City Rollers hit (Shang a Lang on
+			speed) and Kylie for an encore (a punky take on Cant Get You Out of My
+			Head).<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Okay, there is more
+			than a whiff of Seventies nostalgia about this group but their audience appeal
+			is broad enough to encompass both the kids who werent there first time round
+			and hardened campaigners like yours truly whove seen it all. The crowd
+			genuinely appreciated this blistering, good-time, vaudeville rock act.<SPAN
+			style="mso-spacerun: yes">&nbsp; </SPAN>It was the perfect antidote to a cold,
+			damp February evening and in the end I was well glad that I made the effort to
+			get off my butt to see them. Someone will sign this band soon and theyll go on
+			to bigger things, so catch them in clubland while you still can. - Review by
+			Doug Son of Hercules<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center>
+			${g_artistweb(g=http://www.myspace.com/theadultsection)}
+			</p>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 20pt; COLOR: black; FONT-FAMILY: Arial">FREELOVEBABIES<o:p></o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Led
+			by the almost-legendary Spacemen 3 and Spiritualised bassist Will Carruthers, <B
+			style="mso-bidi-font-weight: normal">Freelovebabies </B>comprise something of a
+			supergroup, with Steve Beswick (Wilson) on drums, Dave from The Electric Koolaid
+			Company on bass and Northamptons own Joe Woolley on Fender Jaguar guitar, with
+			rumours of celebrity percussionists to boot. Their stock-in-trade is a sort of
+			bleached, hostile, psychedelic funk where riffs and melodies circle the
+			pulsebeat like gnarly urban predators waiting to pick off the slow and the weak.
+			There is black humour and feeling aplenty and the piratical Carruthers is a
+			mesmerising frontman.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">As
+			he puts it so well himself: <B
+			style="mso-bidi-font-weight: normal">Freelovebabies </B>invite you to peek
+			through the net curtains of your mind and enjoy songs of urban decay,
+			unrealistic dreams and rats. He also gives us to understand that the show will
+			incorporate skimpy bacon costumes and real, live tigers.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center>
+			${g_artistweb(g=http://www.myspace.com/freelovebabies)}
+			</p>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 20pt; COLOR: black; FONT-FAMILY: Arial">DJ
+			78<o:p></o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><B style="mso-bidi-font-weight: normal"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></B></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">This months superstar
+			DJ really lives up to the billing, coming fresh from appearances this summer at
+			</SPAN><st1:City><st1:place><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Glastonbury</SPAN></st1:place></st1:City><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">, Latitude and
+			Bestival. A self-confessed silly old punk from
+			</SPAN><st1:City><st1:place><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Norwich</SPAN></st1:place></st1:City><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">, DJ 78 arrives with
+			his tuxedo, two ancient wind-up gramophones and a stack of red-hot dance tunes
+			from the nineteen-twenties through to the first hysterical twitchings of rock
+			and roll. We cant believe our luck. Must surely be seen to be
+			believed.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">The night's theatrics
+			begin with a serious shellac attack by way of DJ78.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Wee
+			Davey G, an ex-punk by way of </SPAN><st1:country-region><st1:place><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">East
+			Anglia</SPAN></st1:place></st1:country-region><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"> greets the Ulster
+			Hall punters in the lobby on arrival. The DM boots have been replaced by a
+			rather more dapper dinner suit and bow tie. 1920s dancehall jives blend into the
+			classics of 50s rock 'n' roll seamlessly and hints to the vaudevillian air of
+			refinement that marks the nights proceedings. When the meet and greet act is
+			confirmed as part of the </SPAN><st1:City><st1:place><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Glastonbury</SPAN></st1:place></st1:City><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"> line up for the
+			summer, one senses the night's entertainment is not going to disappoint.<SPAN
+			style="mso-spacerun: yes">&nbsp; </SPAN> Trevor Gordon, BBC Radio
+			</SPAN><st1:country-region><st1:place><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Ulster</SPAN></st1:place></st1:country-region><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P style="TEXT-ALIGN: center" align=center>
+			${g_artistweb(g=http://www.myspace.com/dj78rpm)}
+			</p>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Masters of Budvar will
+			kick off at around </SPAN><st1:time Minute="30" Hour="8"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">half past
+			eight</SPAN></st1:time><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"> as DJ78 winds up the
+			Victrola<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Freelovebabies should
+			be on stage at around </SPAN><st1:time Minute="0" Hour="9"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">nine
+			oclock</SPAN></st1:time><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">Expect the Adult
+			Section to play around </SPAN><st1:time Minute="30" Hour="10"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">half past
+			ten</SPAN></st1:time><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">The
+			bar stays open till </SPAN><st1:time Minute="0" Hour="0"><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">midnight</SPAN></st1:time><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">, the lights are
+			pretty, the people friendly. There is ample provision for smokers in the area
+			that we lovingly terms The Bike Shed.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial">And
+			its all for free.<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN style="FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Arial">
+			<o:p></o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
+			align=center><SPAN
+			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
+			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN
+			style="FONT-SIZE: 8pt; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P></FONT></DIV>
+		)}
+	)}
+
+#define	Oct24.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Anton Barbeau
+		)},
+		notes=${literalizeCommas(
+			I'm playing the 12 Bar Club in London on Weds 24th October.
+			<p>
+			I'm on with Anton Barbeau and his band. The 12 Bar is in
+			Denmark Street in the West End. Nearest tube station is Tottenham Court Road.
+			It's a lovely club. I always have fun there.
+		)},
+		photosets= /images/20071024/IMG_1297.jpg$$
+			/images/20071024/IMG_1326.jpg$$
+			/images/20071024/IMG_1336.jpg$$
+			/images/20071024/IMG_1302.jpg$$
+			/images/20071024/IMG_1305.jpg$$
+			/images/20071024/IMG_1311.jpg$$
+			/images/20071024/IMG_1322.jpg$$
+			/images/20071024/IMG_1345.jpg$$
+			Zack;;https://plus.google.com/photos/100942252565341556659/albums/5126592988184945457
+		,
+		reviews=
+			${literalizeCommas(
+				Once again, I was in London on business and was able to take in a live gig by Pat 'The Jazz Butcher' Fish at the famous 12 Bar Club on Denmark Street. This time around, I brought a decent camera, my Canon G9, and was able to capture some photos and video, now on YouTube. It was an all-acoustic gig --just Pat, his guitar and a couple of effects pedals. Still, you got to see a glimpse of the man's range as a musician and songwriter, moving gracefully from humor to heartbreak and back again. As good as this gig was, it left me wanting for more. But for now, I'll just have to make due with some of the Jazz Butcher CD's from Amazon.
+				<p>
+				One nice change since the last gig in April is that London's bars and restaurants now have a smoking ban in effect. So instead of me having to go outside every 20 minutes for fresh air, it was the smokers who went out! Also, it was nice to see the Reading branch of the Pat Fish fan club out in full force. Thanks to Nigel and Dominic for the drinks. See you again next time, guys!
+			)}$$
+			Zack's Guitarvibe post;;http://www.guitarvibe.com/2007/10/pat-jazz-butche.html
+	)}
+
+#define	Nov2_2030.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Eaglehead, Will Carruthers
+		)},
+		notes=${literalizeCommas(
+			The Labour Club, Earl Street, Northampton NN1
+			<p>
+			Friday 2nd November 2007
+			<p>
+			Masters of Budvar present
+			<p>
+			Last minute de-railments at tonight's Master of Budvar.
+			Important updates.
+			<p>
+			At the last moment, Tim Keegan has been in touch to report that he is bedridden with ME and, despite his
+			best endeavours, is simply too unwell to perform at tonight's Masters of Budvar. He apologises, can't
+			remember when he ever missed a show before. Masters of Budvar apologise, it's a terrible shame. We shall
+			take all steps to bring Tim and his band back as soon as it is possible.
+			<p>
+			Within an hour of that little bombshell we heard from DJ Flash. He - happily - is alive and well, but he
+			had forgotten that he was down to play out at this night and gone and got himself a load of work in Corby
+			instead. Well, fair enough, it's probably better paid for a start. So there we were. Eight o'clock the
+			night before the show and we were down two out of three artistes. Masters of Nothing Very Much.
+			<p>
+			Hasty revision, a phew phone calls and here's the situation.
+			<p>
+			EAGLEHEAD will headline. Rocking. ${g_artistweb(g=http://www.myspace.com/eagleheaduk)}
+			<p>
+			WILL CARRUTHERS leader of the Freelovebabies, will open with an acoustic set.
+			${g_artistweb(g=http://www.myspace.com/freelovebabies)}
+			<p>
+			Tunes will be provided from the Archives of Budvar.
+			<p>
+			It's still going to be worth your time.
+			<p>
+			Labour Club NN1
+			<p>
+			As usual this all kicks off at around half past eight at the Labour Club.
+			<p>
+			As usual, admission is free.
+		)}
+	)}
+
+#define	Nov16.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)}
+	)}
+
+#define	Dec7.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			The Winnebago Orchestra, The Havenots, DJ Special Horse
+		)},
+		notes=${literalizeCommas(
+			Masters of Budvar present
+			<p>
+			The Labour Club, Corner or Earl & Charles, Northampton NN1
+			<p>
+			Friday 7th December 2007
+			<p>
+			>From Birmingham
+			<p>
+			THE WINNEBAGO ORCHESTRA
+			<p>
+			"When enlightenment thought took a wrong turn"
+			<p>
+			The Winnebago Orchestra were formed in England in 2001. They are former Blue Aeroplanes guitarist Caroline Trettine and multi instrumentalist Spencer Roberts.
+			<p>
+			Together they perform a singularly eclectic, yet brilliant blend of melodic English beat poetry and song. After releasing a couple of albums on their own independent Oporto Records in 2002/3, they were snapped up by tuition (home of Go-Betweens and Kevin Ayers) in 2005.
+			<p>
+			It's impossible to draw comparisons, so no one does!
+			<p>
+			However, their influences range from the melodic pop of The Go Betweens, through to Nick Drake, Love, Fairport Convention, The Velvet Underground right through to Erik Satie and Laurie Anderson, but this provides but a fraction of a guide to their unique musical appeal.
+			<p>
+			Spencer's unique musical talent creates sounds and landscapes which act as a cinematic canvas to singer-songwriter and former Blue Aeroplanes guitarist Caroline Trettine. Caroline, a former protegee of Billy Bragg, adds an extra dimension to The Winnebago Orchestra with her sensual and folk orientated vocal style.
+			<p>
+			The new Winnebago Orchestra album 'Born in the Sun' will be released in the UK, November 2007; Germany 25th January 2008; the USA and the rest of Europe January 2008 too.
+			<p>
+			${g_artistweb(g=http://www.myspace.com/thewinnebagoorchestra)}
+			<p>
+			THE HAVENOTS
+			<p>
+			Well-loved local artist Liam Dullaghan and Sophia Marshall made two very well received albums as The Havenots. Tonight, with their third album "Weakender" shortly to be released, they reunite for a rare appearance together here at Masters of Budvar.
+			<p>
+			Praise for the Havenots' previous releases:
+			<p>
+			Bad Pennies (Circus 65) 2003
+			<p>
+			The voices are spectacular. Dullaghan's lazy drawl already likened to Ryan Adams on smack, Marshall's classically trained larynx somewhere between Emmylou and Hope Sandoval. Heartening stuff. - Helen Keen, Uncut ****
+			<p>
+			Never Say Goodnight (Cooking Vinyl) 2005
+			<p>
+			Maverick Magazine
+			<p>
+			The Havenots
+			Never Say Goodnight
+			Cooking Vinyl
+			COOK327
+			****
+			<p>
+			Only three years into the Havenots' career and already the Leicester couple have produced two stunning albums. NEVER SAY GOODNIGHT is the splendid second after 2003's BAD PENNIES, and the two song-writing youngsters (Liam Dullaghan and Sophia Marshall) already sound like old pros. Here they have an album solid with good songs, blends of gorgeous pop and unbridled folk-tinged melancholy.
+			<p>
+			>From the rocky, Garbage-lite Sweetest Feeling to the fragile Ryan Adamsy Ghost to the ethereal Byrds influenced Lets Just Start Again, this bundle of tracks will no doubt to be a hit with both the alternative country in-crowd and Radio 2's more mainstream listeners. Sophia sings like a fallen angel while Liam tempers his smoky tones into a calm summer breeze. And Chicago songwriter Chris Mills guests on mandolin and synths as well as helping out with production. If their success continues at this rate, who knows, maybe one day it will be Wembley. Never say goodnight. - HK
+			<p>
+			Album Of The Week - Irish Sunday Tribune
+			<p>
+			Will undoubtedly be a contender for album of the year for everyone who hears it. Unreservedly recommended. - Jeremy Searle, Americana UK
+			<p>
+			Spellbinding: four stars. - Uncut
+			<p>
+			${g_artistweb(g=http://www.myspace.com/justturnleft)}
+			<p>
+			${g_artistweb(g=http://www.havenots.co.uk)}
+			<p>
+			Superstar DJ Special Horse
+			<p>
+			He is a horse that plays records. He is a special horse. Your thoroughbred superstar DJ comes from the dark regions of NN2 to bring first rate cuts of psychedelia, folk and blues to delight you all. Sugar lumps all round!
+			<p>
+			All in the delightfully spacious new Labour-Drome!
+			<p>
+			Doors 8:00pm
+			<p>
+			First band onstage around 9:15pm
+			<p>
+			Bar until midnight
+			<p>
+			Admission free
+		)}
+	)}
+
+#define	Dec15.html()
+	${gigHeader(
+		cost=&pound;5:00,
+		with=${literalizeCommas(
+			Vic Godard & The Subway Sect, Zallaz
+		)},
+		notes=${literalizeCommas(
+			Spiral Archive present
+			<p>
+			VIC GODARD & THE SUBWAY SECT
+			<br>
+			PAT FISH
+			<br>
+			ZALLAZ
+			<p>
+			The Soundhaus, Gt Russell St, Northampton NN1
+			<p>
+			Saturday 15th December
+			<p>
+			Tickets &pound;5:00 in advance from Spiral Archive
+		)}
+	)}
+
+#define	Dec22_2230.html()
+	${gigHeader(
+		cost=&pound;6:00 ,
+		with=${literalizeCommas(
+			Alabama 3
+		)},
+		notes=${literalizeCommas(
+			Hot Wilson gig news.
+			<p>
+			Saturday 22nd December Wilson are opening for the Alabama 3 at Dirty South, 162 Lee High Road, Lewisham, London SE13 5PR. 8:00pm
+			til 2:00am. Wilson onstage at 10:30pm.
+			<p>
+			BR or Dockland Light Railway station: Lewisham. Buses: 185, 178, 261, 321, 122, 273, 202.
+			Wilson have 50 tickets for this event, going at the stupidly low price of £6:00 each. Available from the band. We'll be setting up
+			an online service within the week. More on that as it comes up. Meanwhile, feel free to contact us for tickets.
+		)}
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

@@ -1,0 +1,333 @@
+#include	newsItems
+#include	db_albums
+#include	songbook
+#include	book_sikkorski
+
+#define	newsNeverGiveUp
+	<div class="release">
+	<div class="album_details">
+<span class="album_title">${linkExternal(https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7, Cargo Records UK | The Jazz Butcher 'Never Give Up (Glass Version)')}</span>
+<div class="album_blurb">
+	    "Order this now and let’s do a “Pastels/Sonic Youth” and get it in the charts!" -
+		${linkExternal(https://twitter.com/chrisseventeen, Chris Coleman)}
+	</div>
+</div>
+<div style="max-width: 350px; flex: 1">
+	<a href="https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7" target="_new"><img src="/images/releases/nevergiveup_poster_500.jpg" width="250"></a>
+</div>
+	</div>
+
+#define	randomLiveVideo()
+#live	if ((sql(ev:select g.*, gs.* from gigsong gs, gig g where gs.datetime=g.datetime and gs.mediaurl like "%%youtube%%" order by rand() limit 1)) && (getnum(ev->numResults) = 1))
+	${tag_beg}
+	Random Forced Viewing
+	${tag_end}
+	<div class="listenItem">
+		<b>${songLinkMapped(${ev->song})}</b>
+		- <a href="${jbc_gigs}/${ts2URI(${ev->datetime})}">${substr(0, 10, ${ev->datetime})}</a> \@ ${ev->venue}, ${ev->city}
+		${embedVideo(url=${ev->mediaurl})}
+#live	if (getval(ev->mediacredit))
+		${g_credit(g=${ev->mediacredit}, u=${ev->mediacrediturl})}
+#live	endif
+	</div>
+#live	endif
+
+#define	dateInHistory()
+#live	if ((sql(dih:select * from gig where month(datetime)=month(now()) and day(datetime)=day(now()) order by datetime)) && (getnum(dih->numResults) > 0))
+	${tag_beg}
+	On This Date In History..
+	${tag_end}
+#live	while (d = dih[*]->datetime)
+	${showGigListing(prefix=dih[${d}])}
+#live	endwhile
+#live	endif
+
+#define	mainContent()
+
+#	${showNews(limit=2, showMore=no)}
+	<div id="container">
+	<div id="right">
+		${book_sikkorski}
+		${newsNeverGiveUp}
+		${songbook}
+		${mkAlbumBlurb(prefix=albums[87], details=no)}
+		${mkAlbumBlurb(prefix=albums[88], details=no)}
+		${mkAlbumBlurb(prefix=albums[86], details=no)}
+		${mkAlbumBlurb(prefix=albums[73], details=no)}
+		${mkAlbumBlurb(prefix=albums[76], details=no)}
+		${mkAlbumBlurb(prefix=albums[47], details=no)}
+		${randomLiveVideo()}
+		${dateInHistory()}
+	</div>
+	<div id="left">
+		${upcomingGigs()}
+	</div>
+	</div>
+
+#define	homeBlurb[1]	Being brilliant since before you were born
+#define	homeBlurb[2]	Better than a cold bath
+#define	homeBlurb[3]	"Boozer, intellectual and troubadour.."
+#define	homeBlurb[4]	Not eating meat, not playing jazz
+#define	homeBlurb[5]	"What I do is not entertainment"
+#define	homeBlurb->numResults	5
+
+#define	Celebration
+	<div style="margin-left: 10px; width: 100%; border: 1px solid; border-radius: 5px; padding: 5px; background-color: white; margin-bottom: 10px;">
+	<center>
+	Revisit ... ${linkInternal(http://jazzbutcher.com/gigs/2021/Nov27_1930.html, ${literalizeCommas(
+	<b>A Celebration Of Pat Fish</b>
+	<br/>
+	<i>at Dublin Castle, London</i>
+	<br/>
+	<b>2021-11-27</b>
+	)})}
+	</center>
+	</div>
+
+#define	index.html
+#live	if (getval(page) = index.html)
+#	${mkHeader(home=${Celebration})}
+	${mkHeader(title=${literalizeCommas(${homeblurb[${random(${homeBlurb->numResults})}]})})}
+#	<!-- 23701 : Fri Jan 24 12:37:28 PST 1997 -->
+	<style type="text/css">
+		#container {
+		   height: auto;
+		   overflow: hidden;
+		}
+
+		#right {
+			margin-left: 5px;
+#			width: 250px;
+			width: 70%;
+			float: right;
+		}
+
+		#left {
+			float: none;
+			width: auto;
+			overflow: hidden;
+		}
+		\@media (max-width: 600px) {
+			#right {
+				width: 100%;
+				float: none;
+				margin-left: 0px;
+			}
+		}
+	</style>
+#	<div id="container">
+#	<div id="right">
+	${mainContent()}
+#	</div>
+#	<div id="left">
+#		${upcomingGigs()}
+#	</div>
+#	</div>
+#
+#	MOOT.IT	<!--
+#	MOOT.IT	 You can put this page on your web server and see it working on your browser.
+#	MOOT.IT	
+#	MOOT.IT	 Follow these steps to embed this on your own page:
+#	MOOT.IT	
+#	MOOT.IT	 1. Copy the lines starting with (1) from the HEAD section to your own page's HEAD
+#	MOOT.IT	 2. Copy the A tag (2) from the BODY section anwhere inside your BODY
+#	MOOT.IT	 3. Verify that the page works on your browser.
+#	MOOT.IT	 4. Fine tune the looks with CSS. Details: https://moot.it/docs/styling.html
+#	MOOT.IT	
+#	MOOT.IT	 For more help:
+#	MOOT.IT	
+#	MOOT.IT	 https://moot.it/docs/
+#	MOOT.IT	 https://moot.it/forum/
+#	MOOT.IT	-->
+#	MOOT.IT	<!-- Use the HTML5 doctype -->
+#	MOOT.IT	<!doctype html>
+#	MOOT.IT	
+#	MOOT.IT	<html>
+#	MOOT.IT	
+#	MOOT.IT	 <head>
+#	MOOT.IT	 <meta charset="utf-8">
+#	MOOT.IT	
+#	MOOT.IT	 <title>Moot Forums</title>
+#	MOOT.IT	
+#	MOOT.IT	 <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+#	MOOT.IT	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#	MOOT.IT	
+#	MOOT.IT	 <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+#	MOOT.IT	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+#	MOOT.IT	
+#	MOOT.IT	 <!-- (1) Moot look and feel -->
+#	MOOT.IT	 <link rel="stylesheet" href="https://cdn.moot.it/1/moot.css">
+#	MOOT.IT	
+#	MOOT.IT	 <!-- (4) Custom CSS -->
+#	MOOT.IT	 <style>
+#	MOOT.IT	 body {
+#	MOOT.IT	 font-family: "myriad pro", tahoma, verdana, arial, sans-serif;
+#	MOOT.IT	 margin: 0; padding: 0;
+#	MOOT.IT	 }
+#	MOOT.IT	
+#	MOOT.IT	 .moot {
+#	MOOT.IT	 font-size: 18px;
+#	MOOT.IT	 }
+#	MOOT.IT	 </style>
+#	MOOT.IT	
+#	MOOT.IT	 <!-- (1) Moot depends on jQuery v1.7 or greater -->
+#	MOOT.IT	 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+#	MOOT.IT	
+#	MOOT.IT	 <!-- (1) Moot client application -->
+#	MOOT.IT	 <script src="https://cdn.moot.it/1/moot.min.js"></script>
+#	MOOT.IT	
+#	MOOT.IT	 </head>
+#	MOOT.IT	
+#	MOOT.IT	 <body>
+#	MOOT.IT	
+#	MOOT.IT	 <!-- (2) Placeholder for the forum. The forum will be rendered inside this element -->
+#	MOOT.IT	 <a class="moot" href="https://moot.it/i/jazzbutcher">jazzbutcher forums</a>
+#	MOOT.IT	
+#	MOOT.IT	 <!--
+#	MOOT.IT	 Moot paths are awesome: https://moot.it/docs/embedding.html#paths
+#	MOOT.IT	
+#	MOOT.IT	 (2) Example tag for commenting, put it on a different page
+#	MOOT.IT	 <a class="moot" href="https://moot.it/i/jazzbutcher/comments:my-comment-page">
+#	MOOT.IT	 Comments for my blog entry
+#	MOOT.IT	 </a>
+#	MOOT.IT	
+#	MOOT.IT	 (2) Example tag for threaded commenting
+#	MOOT.IT	 <a class="moot" href="https://moot.it/i/jazzbutcher/comments/my-large-comment-page">
+#	MOOT.IT	 Comments for my blog entry
+#	MOOT.IT	 </a>
+#	MOOT.IT	 -->
+#	MOOT.IT	
+#	MOOT.IT	 </body>
+#	MOOT.IT	
+#	MOOT.IT	</html>
+#live	endif
+	${jbc_footer}
+
+#define	responsiveTabs.min.js
+#live	if (getval(page) = responsiveTabs.min.js)
+// ResponsiveTabs.js | Version:1.10 | Author:Pete Love | www.petelove.com
+var RESPONSIVEUI={};(function($){RESPONSIVEUI.responsiveTabs=function(){var $tabSets=$(".responsive-tabs");if(!$tabSets.hasClass("responsive-tabs--enabled")){$tabSets.addClass("responsive-tabs--enabled");var tablistcount=1;$tabSets.each(function(){var $tabs=$(this);$tabs.children(":header").addClass("responsive-tabs__heading");$tabs.children("div").addClass("responsive-tabs__panel");var $activePanel=$tabs.find(".responsive-tabs__panel--active");if(!$activePanel.length){$activePanel=$tabs.find(".responsive-tabs__panel").first().addClass("responsive-tabs__panel--active")}$tabs.find(".responsive-tabs__panel").not(".responsive-tabs__panel--active").hide().attr("aria-hidden","true");$activePanel.attr("aria-hidden","false");$activePanel.addClass("responsive-tabs__panel--closed-accordion-only");var $tabsWrapper=$("<div/>",{"class":"responsive-tabs-wrapper"});$tabs.wrap($tabsWrapper);var highestHeight=0;$tabs.find(".responsive-tabs__panel").each(function(){var tabHeight=$(this).height();if(tabHeight>highestHeight){highestHeight=tabHeight}});var $tabList=$("<ul/>",{"class":"responsive-tabs__list",role:"tablist"});var tabcount=1;$tabs.find(".responsive-tabs__heading").each(function(){var $tabHeading=$(this);var $tabPanel=$(this).next();$tabHeading.attr("tabindex",0);var $tabListItem=$("<li/>",{"class":"responsive-tabs__list__item",id:"tablist"+tablistcount+"-tab"+tabcount,"aria-controls":"tablist"+tablistcount+"-panel"+tabcount,role:"tab",tabindex:0,text:$tabHeading.text(),keydown:function(objEvent){if(objEvent.keyCode===13){$tabListItem.click()}},click:function(){$tabsWrapper.css("height",highestHeight);$tabs.find(".responsive-tabs__panel--closed-accordion-only").removeClass("responsive-tabs__panel--closed-accordion-only");$tabs.find(".responsive-tabs__panel--active").toggle().removeClass("responsive-tabs__panel--active").attr("aria-hidden","true").prev().removeClass("responsive-tabs__heading--active");$tabPanel.toggle().addClass("responsive-tabs__panel--active").attr("aria-hidden","false");$tabHeading.addClass("responsive-tabs__heading--active");$tabList.find(".responsive-tabs__list__item--active").removeClass("responsive-tabs__list__item--active");$tabListItem.addClass("responsive-tabs__list__item--active");$tabsWrapper.css("height","auto")}});$tabPanel.attr({role:"tabpanel","aria-labelledby":$tabListItem.attr("id"),id:"tablist"+tablistcount+"-panel"+tabcount});if($tabPanel.hasClass("responsive-tabs__panel--active")){$tabListItem.addClass("responsive-tabs__list__item--active")}$tabList.append($tabListItem);$tabHeading.keydown(function(objEvent){if(objEvent.keyCode===13){$tabHeading.click()}});$tabHeading.click(function(){$tabs.find(".responsive-tabs__panel--closed-accordion-only").removeClass("responsive-tabs__panel--closed-accordion-only");if(!$tabHeading.hasClass("responsive-tabs__heading--active")){var oldActivePos,$activeHeading=$tabs.find(".responsive-tabs__heading--active");if($activeHeading.length){oldActivePos=$activeHeading.offset().top}$tabs.find(".responsive-tabs__panel--active").slideToggle().removeClass("responsive-tabs__panel--active").prev().removeClass("responsive-tabs__heading--active");$tabs.find(".responsive-tabs__panel").hide().attr("aria-hidden","true");$tabPanel.slideToggle().addClass("responsive-tabs__panel--active").attr("aria-hidden","false");$tabHeading.addClass("responsive-tabs__heading--active");var $currentActive=$tabs.find(".responsive-tabs__list__item--active");$currentActive.removeClass("responsive-tabs__list__item--active");var panelId=$tabPanel.attr("id");var tabId=panelId.replace("panel","tab");$("#"+tabId).addClass("responsive-tabs__list__item--active");var tabsPos=$tabs.offset().top;var newActivePos=($tabHeading.offset().top)-15;if(oldActivePos<newActivePos){$("html, body").animate({scrollTop:tabsPos},0).animate({scrollTop:newActivePos},400)}}else{$tabPanel.removeClass("responsive-tabs__panel--active").slideToggle(function(){$(this).addClass("responsive-tabs__panel--closed-accordion-only")});$tabHeading.removeClass("responsive-tabs__heading--active")}});tabcount++});$tabs.prepend($tabList);tablistcount++})}}})(jQuery);
+#live	endif
+
+#define	responsiveWidth	700
+#define	responsive-tabs.css
+#live	if (getval(page) = responsive-tabs.css)
+/* REQUIRED for core functionality */
+
+.responsive-tabs__heading { display: none;}
+.responsive-tabs__list__item { display: inline; cursor:pointer;}
+
+
+\@media (max-width: ${responsiveWidth}px) {
+	.responsive-tabs__list { display: none;}
+	.responsive-tabs__heading { display: block; cursor: pointer; }
+	.responsive-tabs__panel--closed-accordion-only { display: none;}
+}
+
+\@media (min-width: ${eval(${responsiveWidth} + 1)}px) {
+	.responsive-tabs__panel--closed-accordion-only { display: block !important;}
+}
+
+/* END - Required for core functionality */
+
+
+/* OPTIONAL - Basic Skin */
+
+.responsive-tabs-wrapper { 
+	clear: both;
+	zoom: 1; 
+}
+.responsive-tabs-wrapper:before,
+.responsive-tabs-wrapper:after {
+ content: "";
+ display: table;
+} 
+.responsive-tabs-wrapper:after {
+ clear: both;
+}
+
+.responsive-tabs__heading:focus,
+.responsive-tabs__list__item:focus { outline: 1px solid #ccc; }
+
+.responsive-tabs__heading--active:focus,
+.responsive-tabs__list__item--active:focus { outline: none !important;}
+
+.responsive-tabs__list { font-size: 1.2em; margin: 5px 0 0 0; padding: 0; border-bottom: 1px solid #ddd; padding-bottom: 2px; line-height: 1em;}
+.responsive-tabs__list__item { background: #eee; padding: 1px 10px; margin-right: 5px; border-top-left-radius: 1px; border-top-right-radius: 1px;border: 1px solid #ddd; }
+.responsive-tabs__list__item:hover { background: #efefef }
+.responsive-tabs__list__item--active, 
+.responsive-tabs__list__item--active:hover { background: #fff; border-bottom-color: #fff;}
+
+.responsive-tabs__panel { margin-bottom: 15px;}
+
+\@media (max-width: ${responsiveWidth}px) {
+	.responsive-tabs__heading { 
+		padding: 0.5em; border-radius: 1px; border: 1px solid #ccc; box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+		background: #ddd;
+		position: relative;
+	}
+
+	.responsive-tabs__heading:after {
+		content:"";
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 40%;
+		width: 0; 
+		height: 0; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid #000;
+	}
+	.responsive-tabs__heading:hover,
+	.responsive-tabs__heading--active:hover { background-color: #efefef}
+	.responsive-tabs__heading--active { background: #fff;}
+	.responsive-tabs__heading--active:after {
+		border-bottom: 10px solid #000;
+		border-top:0;
+	 }
+}
+
+/* END - Optional - Basic Skin */
+
+#live	endif
+
+#define	eulogy.html
+#live   if (getval(page) = eulogy.html)
+    ${mkHeader(title=${literalizeCommas(${homeblurb[${random(${homeBlurb->numResults})}]})})}
+	${tag_beg}
+	Eulogy
+	${tag_end}
+	<h3>The End of the Jazz Age</h3>
+	<p>
+		As Chairman Mao once said, “the true revolutionary moves through the people like a fish through water”. While that’s almost certainly not how Pat chose his name, it does come close to summing up his style: he was subversive, glided effortlessly through a dozen scenes or circles and, here at this furthest inland point, he was an ocean breeze along our peeling terraces.
+	</p>
+	<p>
+		Wherever he was physically, you knew that somewhere in his heart he was in stripy shirt and jaunty cap aboard a yacht, and we’re so lucky that Northampton was the hostile landbound island where he drunkenly saw fit to beach himself. When he first put to shore here in the early eighties at the shallow end of Margaret Thatcher, sizzling with talent, fresh tunes and ridiculous ideas, he had a sense beyond his years that understood the seething musical diversity and energy behind the urban blight. Pat saw a fertile undergrowth where he could blossom into something tropical, unhindered by the greenhouse practices of the big metropolitan pop Meccas. He loved this unravelled, aggravating, glorious town – once called it England’s Barcelona – and the town adored him back; was proud of him; one of the very brightest badges on its frayed lapel.
+	</p>
+	<p>
+		Pat was a hipster in the old, pre-beard-oil sense of someone who knew what was hip. He knew his Baudelaire from his Syd Barrett, and his Brecht from his Beat Generation. He had every classic shot from every great French film on file in his ingenious brain, and you could see it the way he dressed and walked and smiled, a perfect Gallic leading man looking poetic through the Gauloise haze. When he built the Jazz Butcher as an alter-ego, he bolted together a wonderful Frankenstein’s monster of Cool – his favourite unearthings from the cultural boneyard, stitched together and then animated by the lightning of a thousand magic voices on the radio. 
+	</p>
+	<p>
+		And he knew all those voices, all those bands, knew everything about them. He breathed music and he had a nervous-system made of limited-edition coloured vinyl. Jukebox histories poured through him into every album; every number; every moving, funny, smart-arsed line; seventy years of white-hot culture made as new as wet paint by his blinding skill and unique personality. Pat was a world-class singer-songwriter, one of the best that even this prolific land has ever seen. Had he based his career practically anywhere except the haunted black hole of Northampton, then his lyrics could have been on every lip, although he never seemed the kind who’d want that easy, meaningless acclaim. Instead, he watched with his perpetual air of louche amusement as less capable performers borrowed his song-structures, his breath-taking range of reference, even took the look and lilt of him, then tailored his exotic handmade jungle into lucrative, conventional careers. He bore this with a tight smile and sometimes a wry aside, because Pat wasn’t one for starting a commotion, although it might well be argued that he started The Commotions.
+	</p>
+	<p>
+		He was an astonishing musician with a perfect sense of where to take a song, so that it ended up where nobody had been before. The drive and the invention pushing him through his Conspiracy and his Sikorskis, through the blazing Wilson-Sumosonic-Drones Club rush of these last twenty years, are irreplaceable. The map of modern music, without all the acts he’s championed from Spacemen 3 to Liam Dullaghan, would be a sparse cartography indeed. The hole he leaves in culture as a great performer is enormous, although not as gaping as the hole he leaves in us as inspiration, musical collaborator and, above all, friend. We’re going to miss the fireworks of his mind, his casually hilarious conversation, and the Mardi Gras that was his company. We’re going to miss the updates on his furry soulmate Raoul, and his endless enthusiasm, and that finger-flick he’d sometimes do that signified delight. The swan of Shakespeare Road has moved upriver, and how will we cut to the musical meat of the matter, now that the Butcher’s gone?
+	</p>
+	<p>
+		Pat, last of the gentleman adventurers, it was a privilege to know you and to be a part of your Shoe-town eternity. You’re always with us, and the Art School dance goes on forever. There’s a heaven in the lead-out groove. Rest easy, Fishy. 
+	</p>
+	<p>
+	<b>Alan Moore</b> - 2021-11-04
+	${jbc_footer}
+#live	endif
+
+#define	memoriam.html
+#live   if (getval(page) = memoriam.html)
+    ${mkHeader(title=${literalizeCommas(${homeblurb[${random(${homeBlurb->numResults})}]})})}
+	${tag_beg}
+	In Memoriam
+	${tag_end}
+	${InMemoriam}
+	${jbc_footer}
+#live	endif

@@ -1,0 +1,554 @@
+#define	index.html
+#live	if (getval(page) = index.html)
+	${mkHeader(section=Gigs)}
+
+	${beg_tabs}
+	${begTab(Search)}
+	${searchGigs}
+	${endTab}
+	${begTab(Archives)}
+	<div class="annotation">
+	The first JBC dates are shrouded in confusion.
+	${max}, ${pat} and Louis played three very small shows under
+	the umbrella of "Cabaret Cent-Neuf" during November and
+	December 1981.
+	<p>
+	These shows, which were almost entirely acoustic also
+	featured the shadowy figure of The Antichrist, who performed
+	as Ramon Destine (with ${max}
+	on guitar; it was Ramon who first uttered the words "Take
+	it, Max... "), the Rockin' Belgians and Terence Walpole,
+	a deranged poet later to find recording fame with ${eg}.
+	The shows were at Merton College Oxford; Chez Louis,
+	Wimbledon (!) ; and Drayton Court flats New Year's Eve
+	party in Chelsea.
+	<p>
+	The first show to be advertised as "The Jazz Butcher"
+	was at Merton College, Oxford on 20th February 1982.
+	The band lined up as: ${pat}: guitar and voice, The Antichrist:
+	guitar and voice, ${at}: organ and voice, Chris "Snogger"
+	Rudd (later of the Lost T-Shirts Of Atlantis) on bass,
+	and ${owen} on drums.
+	<p>
+	It was perceived as a one-off laugh, not unlike something that
+	happened last Wednesday in a ditch in central London.
+	<p>
+	Pat then went away to the country and started writing
+	some tunes.  The Glass deal was offered, and eventually
+	a new romantic band called Where's Lisse?, who lived
+	in Pat's area and who were also on Glass, suggested a
+	"gig" together.  This is where it really starts ...
+	${g_source(g=Pat Letter: 1994-06-24, u=${jbc_letters}/94Jun24/all_the_gigs.html, d=1994-06-24)}
+	</div>
+#
+#	noun:gigs_and_year
+#
+#live	if (sql(_gig1:select *, year(datetime) as year from gig where isdeleted is NULL order by datetime desc))
+	${tag_beg}
+	${_gig1->numResults} performances!
+	${tag_end}
+	${doGraph(prefix=_gig1, section=main, inpage=no)}
+#live	endif
+	${endTab}
+#	${begTab(w/Reviews)}
+##
+##	noun:gigs_and_year_by_id/id=self
+##
+##live	if (sql(_gig2:select *, year(datetime) as year from gig where find_in_set('self', extra) and isdeleted is NULL order by datetime desc))
+#	${tag_beg}
+#	Pat has commented upon ${_gig2->numResults} individual events
+#	${tag_end}
+#	${doListings(prefix=_gig2, section=pat)}
+##live	endif
+#	${endTab}
+#
+#	noun:gigs_and_year_by_id/id=pix
+#
+##live	if ((sql(_gig3:select *, year(datetime) as year from gig where find_in_set('pix', extra) and isdeleted is NULL order by datetime desc)) && (getnum(_gig3->numResults) > 0))
+#	${begTab(w/Photos)}
+#	${tag_beg}
+#	${_gig3->numResults} events have photos <a href="${jbc_help}">(send us more!)</a>
+#	${tag_end}
+#	${doListings(prefix=_gig3, section=pix)}
+#	${endTab}
+##live	endif
+#
+#	noun:gigs_with_feedback/id=${_domain_id}
+#
+#live	if ((sql(g:select distinct(uri) from feedback where uri like 'gigs/%%' and domain_id=${_domain_id} and uri not like '%%search.html' order by uri desc)) && (getnum(g->numResults) > 0))
+	${begTab(I Was There!)}
+	${tag_beg}
+	Fans have shared memories of ${g->numResults} shows
+	${tag_end}
+	<blockquote>
+#live	while (r = g[*]->uri)
+		${makeGigLink(u=${g[${r}]->uri})}
+#live	endwhile
+	</blockquote>
+	${endTab}
+#live	endif
+	${end_tabs}
+	${jbc_footer}
+#live	endif
+
+#define	makeGigLink(u)
+#live	if ((getval(u) != index) && (getval(u) != bootleg))
+	<a href="${u}">${substr(0, 10, ${gigURI2ts(y=${substr(0, 10, ${u})}, u=${substr(10, 99, ${u})})})}</a> ..
+#live	endif
+
+#define	begThing	<table border=1 width=100%>
+#define	endThing	</td></tr></table>
+#define	typeLive	Show
+#define	typeView	Interview
+#define	typeStore	In-store
+#define	typeProject	Project
+#define	typeOther	Other
+#define	begDate		</td><td align=right>&nbsp;
+#define	endDate		</td>
+#define	begCity		<td>&nbsp;
+#define	endCity		</td>
+#define	begEvent	<td>&nbsp;
+#define	endEvent	</td></tr>
+#define	begDigitized	<td>&nbsp;
+#define	endDigitized	</td>
+
+#define	bootlegs.html
+#live	if (getval(page) = bootlegs.html)
+	${mkHeader(section=Gigs, title=David's Bootlegs)}
+
+	<h1>Live Shows</h1>
+	${begThing}
+	${begDigitized}Digitized?${endDigitized}${begDate}when${endDate} ${begCity}city${endCity} ${begEvent}venue${endEvent}
+	${begDigitized}${endDigitized}${begDate}8Dec84${endDate} ${begCity}Hamburg, Germany${endCity} ${begEvent}Onkel Po${endEvent}
+	${begDigitized}Yup${endDigitized}${begDate}<a href="${jbc_gigs}/1985/Apr23.html">1985-04-23</a>${endDate} ${begCity}Hamburg, Germany${endCity} ${begEvent}Onkel Po${endEvent}
+	${begDigitized}${endDigitized}${begDate}25Apr85${endDate} ${begCity}Amsterdam, Holland${endCity} ${begEvent}Melkweg${endEvent}
+	${begDigitized}${endDigitized}${begDate}7Mar86${endDate} ${begCity}London, UK${endCity} ${begEvent}Goldsmith's College${endEvent}
+	${begDigitized}${endDigitized}${begDate}21Jul86${endDate} ${begCity}Cambridge, MA, USA${endCity} ${begEvent}Jonathan Swift's${endEvent}
+	${begDigitized}Yup${endDigitized}${begDate}24Jul86${endDate} ${begCity}Toronto, Canada${endCity} ${begEvent}Club RPM${endEvent}
+	${begDigitized}${endDigitized}${begDate}31Jul86${endDate} ${begCity}Chicago, IL, USA${endCity} ${begEvent}Cabaret Metro${endEvent}
+	${begDigitized}${endDigitized}${begDate}14Nov86${endDate} ${begCity}Hamburg, Germany${endCity} ${begEvent}Markthalle${endEvent}
+	${begDigitized}Yup${endDigitized}${begDate}2Dec86${endDate} ${begCity}Vienna, Austria${endCity} ${begEvent}Szene Wien${endEvent}
+	${begDigitized}${endDigitized}${begDate}20Mar87${endDate} ${begCity}London, UK${endCity} ${begEvent}Black Horse${endEvent}
+	${begDigitized}${endDigitized}${begDate}20Mar87${endDate} ${begCity}London, UK${endCity} ${begEvent}Front Door To Babylon${endEvent}
+	${begDigitized}Yup${endDigitized}${begDate}15Mar88${endDate} ${begCity}Osnabruck, Austria${endCity} ${begEvent}Hyde Park${endEvent}
+	${begDigitized}${endDigitized}${begDate}18Mar88${endDate} ${begCity}Braunschweig, Germany${endCity} ${begEvent}Fbz Burgerhalle${endEvent}
+	${begDigitized}${endDigitized}${begDate}22May88${endDate} ${begCity}London, UK${endCity} ${begEvent}The Marquee${endEvent}
+	${begDigitized}${endDigitized}${begDate}6Apr89${endDate} ${begCity}Paris, France${endCity} ${begEvent}Le Troupeau${endEvent}
+	${begDigitized}${endDigitized}${begDate}7Jul89${endDate} ${begCity}Hamburg, Germany${endCity} ${begEvent}Grosse Freiheit 36${endEvent}
+	${begDigitized}${endDigitized}${begDate}10Jul89${endDate} ${begCity}Frankfurt, Germany${endCity} ${begEvent}Cookie's${endEvent}
+	${begDigitized}Yup${endDigitized}${begDate}17Nov89${endDate} ${begCity}Chicago, IL, USA${endCity} ${begEvent}Lounge Ax${endEvent}
+	${begDigitized}${endDigitized}${begDate}10Dec89${endDate} ${begCity}San Juan Capistrano, CA, USA${endCity} ${begEvent}The Coach House${endEvent}
+	${begDigitized}${endDigitized}${begDate}18Dec89${endDate} ${begCity}New Orleans, LA, USA${endCity} ${begEvent}Tipitina's${endEvent}
+	${begDigitized}Yup${endDigitized}${begDate}28Apr90${endDate} ${begCity}Landesbergen, Germany${endCity} ${begEvent}Szenerie${endEvent}
+	${begDigitized}${endDigitized}${begDate}12Nov90${endDate} ${begCity}Noboken, NJ, USA${endCity} ${begEvent}Maxwell's Cradle${endEvent}
+	${begDigitized}${endDigitized}${begDate}15Nov90${endDate} ${begCity}Chapel Hill, NC, USA${endCity} ${begEvent}Cat's Cradle${endEvent}
+	${begDigitized}${endDigitized}${begDate}16Nov90${endDate} ${begCity}Atlanta GA, USA${endCity} ${begEvent}Masquerade${endEvent}
+	${begDigitized}${endDigitized}${begDate}17Nov90${endDate} ${begCity}New Orleans, LA, USA${endCity} ${begEvent}Jimmy's${endEvent}
+	${begDigitized}${endDigitized}${begDate}19Nov90${endDate} ${begCity}Austin, TX, USA${endCity} ${begEvent}Liberty Lunch${endEvent}
+	${begDigitized}${endDigitized}${begDate}20Nov90${endDate} ${begCity}Dallas, TX, USA${endCity} ${begEvent}Trees${endEvent}
+	${begDigitized}${endDigitized}${begDate}23Nov90${endDate} ${begCity}Hollywood, CA, USA${endCity} ${begEvent}Roxy Theatre${endEvent}
+	${begDigitized}Yup${endDigitized}${begDate}<a href="${jbc_gigs}/1991/Jun18.html">1991-06-18</a>${endDate} ${begCity}London${endCity} ${begEvent}The Mean Fiddler${endEvent}
+	${begDigitized}${endDigitized}${begDate}14Nov91${endDate} ${begCity}Vienna, Austria${endCity} ${begEvent}Arena${endEvent}
+	${begDigitized}${endDigitized}${begDate}10Dec91${endDate} ${begCity}Stuttgart, Germany${endCity} ${begEvent}Maxim Gorky${endEvent}
+	${begDigitized}${endDigitized}${begDate}24Apr92${endDate} ${begCity}Athens, GA, USA${endCity} ${begEvent}Georgia Theatre${endEvent}
+	${begDigitized}${endDigitized}${begDate}26Apr92${endDate} ${begCity}Chapel Hill, NC, USA${endCity} ${begEvent}Cat's Cradle${endEvent}
+	${begDigitized}Yup${endDigitized}${begDate}28Apr92${endDate} ${begCity}Baltimore, MD, USA${endCity} ${begEvent}Max's${endEvent}
+	${begDigitized}Yup${endDigitized}${begDate}29Apr92${endDate} ${begCity}Philadelphia, PA, USA${endCity} ${begEvent}JC Dobbs${endEvent}
+	${begDigitized}${endDigitized}${begDate}1May92${endDate} ${begCity}Washington DC, USA${endCity} ${begEvent}930 Club${endEvent}
+	${begDigitized}${endDigitized}${begDate}3May92${endDate} ${begCity}Providence, RI, USA${endCity} ${begEvent}Club Babyhead${endEvent}
+	${begDigitized}${endDigitized}${begDate}5May92${endDate} ${begCity}Boston, MA, USA${endCity} ${begEvent}Nightstage${endEvent}
+	${begDigitized}${endDigitized}${begDate}6May92${endDate} ${begCity}Montreal, QU, Canada${endCity} ${begEvent}Club Soda${endEvent}
+	${begDigitized}${endDigitized}${begDate}7May92${endDate} ${begCity}Ottawa, ON, Canada${endCity} ${begEvent}Zaphod Beeblebrox${endEvent}
+	${begDigitized}${endDigitized}${begDate}8May92${endDate} ${begCity}Waterloo, Canada${endCity} ${begEvent}Bomb Shelter${endEvent}
+	${begDigitized}${endDigitized}${begDate}9May92${endDate} ${begCity}Toronto, Canada${endCity} ${begEvent}El Macambo${endEvent}
+	${begDigitized}${endDigitized}${begDate}10May92${endDate} ${begCity}Guelph, ON, Canada${endCity} ${begEvent}Trashateria${endEvent}
+	${begDigitized}${endDigitized}${begDate}13May92${endDate} ${begCity}Cleveland, OH, USA${endCity} ${begEvent}Peabody's${endEvent}
+	${begDigitized}${endDigitized}${begDate}16May92${endDate} ${begCity}Chicago, IL, USA${endCity} ${begEvent}Lounge Ax${endEvent}
+	${begDigitized}${endDigitized}${begDate}5Jun92${endDate} ${begCity}Los Angeles, CA, USA${endCity} ${begEvent}Roxy Theatre${endEvent}
+	${begDigitized}${endDigitized}${begDate}15May93${endDate} ${begCity}London, UK${endCity} ${begEvent}The Mean Fiddler${endEvent}
+	${begDigitized}${endDigitized}${begDate}28Oct93${endDate} ${begCity}London, UK${endCity} ${begEvent}The Forum${endEvent}
+	${begDigitized}${endDigitized}${begDate}17Feb94${endDate} ${begCity}Paris, France${endCity} ${begEvent}Arapaho${endEvent}
+	${begDigitized}${endDigitized}${begDate}4Jun94${endDate} ${begCity}London, UK${endCity} ${begEvent}Royal Albert Hall${endEvent}
+	${begDigitized}${endDigitized}${begDate}21Dec94${endDate} ${begCity}Northampton, UK${endCity} ${begEvent}The Racehorse${endEvent}
+	${begDigitized}${endDigitized}${begDate}11Sep97${endDate} ${begCity}${LO}${endCity} ${begEvent}12 Bar Club${endEvent}
+	${begDigitized}${endDigitized}${begDate}17Sep97${endDate} ${begCity}Seattle WA, USA${endCity} ${begEvent}Bob & Anne's Wedding Practice${endEvent}
+	${begDigitized}${endDigitized}${begDate}19Sep97${endDate} ${begCity}Seattle WA, USA${endCity} ${begEvent}Bob & Anne's Wedding${endEvent}
+	${begDigitized}${endDigitized}${begDate}22Sep97${endDate} ${begCity}San Francisco CA, USA${endCity} ${begEvent}Great American Music Hall${endEvent}
+	${begDigitized}${endDigitized}${begDate}13Sep99${endDate} ${begCity}San Francisco CA, USA${endCity} ${begEvent}Sy Klopps Studios${endEvent}
+	${begDigitized}${endDigitized}${begDate}11Oct2001${endDate} ${begCity}San Francisco CA, USA${endCity} ${begEvent}Cafe Du Norde${endEvent}
+	${endThing}
+	<h1>Interviews</h1>
+	${begThing}
+	${begDate}19Nov89${endDate} ${begCity}Milwaukee, WI, USA${endCity} ${begEvent}Kelly & Whittemore${endEvent}
+	${begDate}6Dec89${endDate} ${begCity}Santa Monica, CA, USA${endCity} ${begEvent}KCRW${endEvent}
+	${begDate}13Nov90${endDate} ${begCity}New York, NY, USA${endCity} ${begEvent}Rough Trade Offices${endEvent}
+	${begDate}19Nov90${endDate} ${begCity}Austin, TX, USA${endCity} ${begEvent}KTBS${endEvent}
+	${begDate}24Nov90${endDate} ${begCity}Santa Monica, CA, USA${endCity} ${begEvent}KCRW${endEvent}
+	${begDate}25Apr92${endDate} ${begCity}Atlanta, GA, USA${endCity} ${begEvent}WRAS${endEvent}
+	${begDate}26Apr92${endDate} ${begCity}Chapel Hill, NC, USA${endCity} ${begEvent}WXYC${endEvent}
+	${begDate}6May92${endDate} ${begCity}Montreal QU, Canada${endCity} ${begEvent}CBC Interview${endEvent}
+	${begDate}16May92${endDate} ${begCity}Chicago, IL, USA${endCity} ${begEvent}WNUR${endEvent}
+	${begDate}15Feb93${endDate} ${begCity}Paris, France${endCity} ${begEvent}France Inter${endEvent}
+	${begDate}29Aug93${endDate} ${begCity}Santa Monica, CA, USA${endCity} ${begEvent}91X Snap Judgements${endEvent}
+	${endThing}
+	<h1>Side Projects</h1>
+	${begThing}
+	${begDate}92${endDate} ${begCity}Vaguely Familiar${endCity} ${begEvent}Demo${endEvent}
+	${begDate}26Jun92${endDate} ${begCity}Chicago, IL, USA${endCity} ${begEvent}Black Eg WHPK Interview${endEvent}
+	${begDate}15Sep92${endDate} ${begCity}Black Eg${endCity} ${begEvent}Peter Murphy${endEvent}
+	${begDate}1Sep93${endDate} ${begCity}Black Eg${endCity} ${begEvent}L'esprit Formidable${endEvent}
+	${begDate}1Jun94${endDate} ${begCity}London, UK${endCity} ${begEvent}The Soundshaft Black Eg Debut (backing tape)${endEvent}
+	${begDate}1Jun94${endDate} ${begCity}London, UK${endCity} ${begEvent}The Soundshaft Black Eg Debut${endEvent}
+	${begDate}23Sep96${endDate} ${begCity}Sumosonic${endCity} ${begEvent}Demo${endEvent}
+	${endThing}
+	<h1>In-Stores</h1>
+	${begThing}
+	${begDate}25Apr92${endDate} ${begCity}Atlanta, GA, USA${endCity} ${begEvent}Turtles Records${endEvent}
+	${begDate}28Apr90${endDate} ${begCity}Minden, Germany${endCity} ${begEvent}Neckermanns Musikwelt${endEvent}
+	${begDate}16May92${endDate} ${begCity}Chicago, IL, USA${endCity} ${begEvent}Tower Records${endEvent}
+	${endThing}
+	<h1>Other</h1>
+	${begThing}
+	${begDate}94${endDate} ${begCity}Western Family${endCity} ${begEvent}Pre-Master${endEvent}
+	${endThing}
+	<h1>Videos</h1>
+	${begThing}
+	${begDate}9Nov89${endDate} ${begCity}Philadelphia PA, USA${endCity} ${begEvent}JC Dobbs${endEvent}
+	${begDate}19Dec89${endDate} ${begCity}Atlanta GA, USA${endCity} ${begEvent}Cotton Club${endEvent}
+	${begDate}5Nov90${endDate} ${begCity}Minneapolis MN, USA${endCity} ${begEvent}1st Avenue${endEvent}
+	${begDate}14Nov90${endDate} ${begCity}Boston MA, USA${endCity} ${begEvent}Paradise${endEvent}
+	${endThing}
+
+#	<h2>legend</h2>
+#	<tt>
+#	X# #X
+#	|| ||
+#	format: D = DAT, C = analog cassette, V = VHS, NTSC video<br>
+#	_| ||<br>
+#	_generation: 0 to ?<br>
+#	___||<br>
+#	___recording quality: A to F<br>
+#	____|<br>
+#	____interest: 5 to 1<br>
+#	</tt>
+#	
+#	<hr>
+#	<h2>shows</h2>
+#	
+#	C? D2	<a href="${jbc_gigs}/1985/Mar24.html">85mar24 Kolingsborg, Stockholm Sweden</a>
+#		<ul>
+#		<li> FM.</li>
+#		</ul>
+#	C? D4	<a href="${jbc_gigs}/1985/Apr23.html">85apr23 ${PO}${HAM}</a>
+#		<ul>
+#		<li> fun show. room recording. 4+ generations down.</li>
+#		</ul>
+#	C1 B5	<a href="${jbc_gigs}/1986/Jul21.html">86jul21 Jonathan Swifts, Cambridge MA</a>
+#		by everson@bbn.com
+#		<ul>
+#		<li> nice audience recording. 5th-ever US show</li>
+#		</ul>
+#	C1 B5	<a href="${jbc_gigs}/1986/Jul31.html">86jul31</a> ${METRO}, Chicago IL
+#		<ul>
+#		<li> excellent performance, fantasitc &quot;presence&quot; in this room recording - DAT dub of the analog master</li>
+#		</ul>
+#	C2 D2 	<a href="${jbc_gigs}/1987/Feb3.html">87feb3 Careau Des Dominicains, Nancay France</a>
+#		<ul>
+#		<li> not so good quality</li>
+#		</ul>
+#	C2 D2	<a href="${jbc_gigs}/1988/Mar18.html">88mar18 Braunschweig, Burgerpark Germany</a>
+#		<ul>
+#		<li> not so good quality</li>
+#		</ul>
+#	C2 D2 	<a href="${jbc_gigs}/1989/Jul6.html">89jul6 Loft, Berlin Germany</a>
+#		<ul>
+#		<li> not so good quality</li>
+#		</ul>
+#	C1 B5	<a href="${jbc_gigs}/1989/Nov17.html">89nov17</a> ${AX}, Chicago Illinois
+#		<ul>
+#		<li> intimate show, good room recording.</li>
+#		</ul>
+#	C1 D2	<a href="${jbc_gigs}/1990/Nov12.html">90nov12 ${CLUB_MAXWELL}, Hoboken NJ by woiccare@pebbles.sct.clarkson.edu</a>
+#		<ul>
+#		<li> not so good quality</li>
+#		</ul>
+#	C0 A4	<a href="${jbc_gigs}/1990/Nov15.html">90nov15 Cats Cradle, Chapel Hill NC</a>
+#		<ul>
+#		<li> soundboard. nice sound, hot in right channel.
+#		julians 1st time ever playing angels. pat is heard coaching.</li>
+#		</ul>
+#	C0 A4	<a href="${jbc_gigs}/1990/Nov16.html">90nov16 Masquerade, Atlanta GA</a>
+#		<ul>
+#		<li> soundboard. slight distortion in right channel on
+#		high frequencies. good crowd banter. the only time they played
+#		My Zeppelin on the US tour. afterwards, the ${aero} can
+#		be heard in the background howling their approval.</li>
+#		</ul>
+#	C0 C3	<a href="${jbc_gigs}/1990/Nov17.html">90nov17 Jimmy's, New Orleans LA</a>
+#		<ul>
+#		<li> soundboard. uninspired performance, half the songs
+#		cut in and out due to technical problems.</li>
+#		</ul>
+#	C0 C4	<a href="${jbc_gigs}/1990/Nov19_2000.html">90nov19 Liberty Lunch, Austin TX</a>
+#		<ul>
+#		<li> soundboard. mono mix, some low frequency distortion,
+#		excellent crowd banter, very good show.</li>
+#		</ul>
+#	C0 F3	<a href="${jbc_gigs}/1990/Nov20.html">90nov20 Trees, Dallas TX</a>
+#		<ul>
+#		<li> soundboard. not so good quality</li>
+#		</ul>
+#	D0 B4	<a href="${jbc_gigs}/1990/Nov23.html">90nov23 Roxy, Hollywood CA</a>
+#		by engineer
+#		${rev}
+#		<ul>
+#		<li> soundboard. good, but dry.</li>
+#		</ul>
+#	D0 B2	<a href="${jbc_gigs}/1992/Apr24.html">92apr24 Georgia Theater, Atlanta GA</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.
+#		1st night out, kinda rough performance</li>
+#		</ul>
+#	D0 B3	<a href="${jbc_gigs}/1992/Apr25_2000.html">92apr25 Cotton Club, Atlanta GA</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.</li>
+#		</ul>
+#	D0 A5	<a href="${jbc_gigs}/1992/Apr26_2000.html">92apr26 Cats Cradle, Chapel Hill NC</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.
+#		slightly un-inspired show, good mix, good bass.</li>
+#		</ul>
+#	D0 A3	<a href="${jbc_gigs}/1992/Apr28.html">92apr28 Max's, Baltimore MD</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.
+#		crowd really into it. nice stereo separation and mix.</li>
+#		</ul>
+#	D0 B5	<a href="${jbc_gigs}/1992/Apr29.html">92apr29 JC Dobbs, Philadelphia, PA</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.
+#		decent tape. out-of-tune on last songs. one channel mono
+#		soundboard, one channel live room. clear vocals.</li>
+#		</ul>
+#	D0 B4 	<a href="${jbc_gigs}/1992/May1.html">92may1 ${CLUB930}, Washington DC</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.</li>
+#		</ul>
+#	D0 C3 	<a href="${jbc_gigs}/1992/May3.html">92may3 Club Babyhead, Providence RI</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.</li>
+#		</ul>
+#	D0 B4 	<a href="${jbc_gigs}/1992/May5.html">92may5 Night Stage, Cambridge MA</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.
+#		vocals buried. poor bass.  geetars in yer face</li>
+#		</ul>
+#	<a name="Soda92">
+#	D0 B3 	<a href="${jbc_gigs}/1992/May6_2000.html">92may6 Club Soda, Montreal QU</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.
+#		weak vocals in the otherwise excellent mix. brilliant tugboat.</li>
+#		</ul>
+#	</a>
+#	<a name="Zaphod92">
+#	D0 B2 	<a href="${jbc_gigs}/1992/May7.html">92may7 Zaphod, Ottawa ON</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.</li>
+#		</ul>
+#	D0 B2 	<a href="${jbc_gigs}/1992/May8.html">92may8 Bomb Shelter, Waterloo ON</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.</li>
+#		</ul>
+#	</a>
+#	<a name="Mocambo92">
+#	D0 A4 	<a href="${jbc_gigs}/1992/May9.html">92may9 El Mocambo, Toronto ON</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.
+#		out-of-phase. stereo geetar mix, excellent drums, tight bass.
+#		great show. drunk girl rips down my mics during partytime.
+#		rainbeau is audience sing-along.</li>
+#		</ul>
+#	</a>
+#	D0 B3	<a href="${jbc_gigs}/1992/May10.html">92may10 Trashateria, Guelph ON</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.</li>
+#		</ul>
+#	D0 B5	<a href="${jbc_gigs}/1992/May13.html">92may13 Peabody's, Cleveland OH</a>
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.
+#		some microphone overload. buzzing in monitors.</li>
+#		</ul>
+#	D0 B5	<a href="${jbc_gigs}/1992/May15.html">92may15</a> ${AX}, Chicago IL
+#		<ul>
+#		<li> soundboard + PZM mics to DAT.
+#		microphone overload. nice stereo separation and mix.
+#		great crowd banter. snow white hair is ad-lib.</li>
+#		</ul>
+#	D0 B4	<a href="${jbc_gigs}/1992/May16_2.html">92may16</a> ${AX}, Chicago IL
+#		<ul>
+#		<li> soundboard + Core Sound mics to DAT.
+#		crowd really into it. mic distortion nearly everywhere..</li>
+#		</ul>
+#	D0 4B	<a href="${jbc_gigs}/1993/May15.html">93may15 ${FIDDLER}, London UK</a>
+#		by m_cockerill@icrf.icnet.uk
+#		<ul>
+#		<li> mono room recording.
+#		small, enthusiastic crowd, nervous performer, intimate show.
+#		<a href="${jbc_letters}/93Aug30/fiddler.html">As he describes it..</a></li>
+#		</ul>
+#	D1 4B	<a href="${jbc_gigs}/1993/Oct28.html">93oct28 The Forum, London UK</a>
+#		<ul>
+#		<li> mono soundboard recording.
+#		opening for ${cale} - never so nervous.
+#		with ${paul} and ${green}.</li>
+#		</ul>
+#	D1 5B	<a href="${jbc_gigs}/1993/Dec23.html">93dec23 The Racehorse, Northampton UK</a>
+#		<ul>
+#		<li> last 4 tunes duet with ${dj}.</li>
+#		</ul>
+#	
+#	<hr>
+#	<h2>interviews</h2>
+#	
+#	C2 C5	<a href="${jbc_gigs}/1989/Nov19.html">89nov19 Milwaukee WI</a>
+#		<ul>
+#		<li> 90 minutes, very candid interview</li>
+#		</ul>
+#	C1 B5 	<a href="${jbc_gigs}/1989/Dec6.html">89dec6 ${KCRW}, Santa Monica CA</a>
+#		<ul>
+#		<li> +lots of tunes</li>
+#		</ul>
+#	C1 A4	<a href="${jbc_gigs}/1990/Nov24.html">90nov24 ${KCRW}, Santa Monica CA</a>
+#		<ul>
+#		<li> +lots of tunes + ${aero}</li>
+#		</ul>
+#	C1 C2	<a href="${jbc_gigs}/1990/Nov19.html">90nov19 ${KTBS}, Austin TX </a>
+#		<ul>
+#		<li> 20 minutes, by Robert Kacob rob@meteor.wisc.edu</li>
+#		</ul>
+#	D0 A2	<a href="${jbc_gigs}/1992/Apr25.html">92apr25 WRAS, Atlanta GA</a>
+#		<ul>
+#		<li> FM broadcast.</li>
+#		</ul>
+#	D0 A3	<a href="${jbc_gigs}/1992/Apr26.html">92apr26 
+#		${WXYC}, Chapel Hill NC</a>
+#		<ul>
+#		<li> in-studio. basic college radio interview</li>
+#		</ul>
+#	D0 B3	<a href="${jbc_gigs}/1992/May16.html">92may16</a> ${WNUR}, Chicago IL
+#		<ul>
+#		<li> in-studio. recorded slightly hot.</li>
+#		</ul>
+#	D0 A5 	<a href="${jbc_gigs}/1992/May6.html">92may6 ${CBC}, Montreal QU</a>
+#		<ul>
+#		<li> excellent in-studio professional interview</li>
+#		</ul>
+#	<a name="WHPK">
+#	D1 B4	<a href="${jbc_gigs}/1992/Jun26.html">92jun26</a>
+#		interview. ${WHPK}, Chicago IL
+#		<ul>
+#		<li> in-studio. Pat and Martin as Karel &amp; Otto
+#		interviewed by dan and deerkiller.
+#		<br><a href="${eg_audio}/blackeg.mp3">${icon_audio}
+#		Excerpts.. </a></li>
+#		</ul>
+#	</a>
+#	
+#	<hr>
+#	<h2>in-store performances</h2>
+#	
+#	D0 B3	<a href="${jbc_gigs}/1992/Apr25_1600.html">92apr25 Atlanta, Turtles Records</a>
+#		<ul>
+#		<li> Core sound mics to DAT.
+#		mix is all vocals after angels.</li>
+#		</ul>
+#	D0 B5	<a href="${jbc_gigs}/1992/May16_1200.html">92may16 Chicago, ${TOWER}</a>
+#		<ul>
+#		<li> Core Sound mics to DAT. sounds great with EQ.</li>
+#		</ul>
+#	
+#	<hr>
+#	<h2>videos </h2>
+#	
+#	V1 C3	<a href="${jbc_gigs}/1989/Dec19.html">89dec19 Cotton Club, Atlanta GA</a>
+#		<ul>
+#		<li> ok</li>
+#		</ul>
+#	V0 A4	<a href="${jbc_gigs}/1990/Nov14.html">90nov14 Paradise, Boston MA</a>
+#		<ul>
+#		<li> multi-camera by rough trade</li>
+#		</ul>
+#	V1 C2 	<a href="${jbc_gigs}/1989/Nov9.html">89nov9 JC Dobbs, Philadelphia PA</a>
+#		<ul>
+#		</ul>
+#	V1 B4 	<a href="${jbc_gigs}/1990/Nov5.html">90nov5 1st Avenue, Minneapolis MN</a>
+#		<ul>
+#		<li> good sound</li>
+#		</ul>
+#	
+#	<hr>
+#	<h2>misc.</h2>
+#	
+#	C1 C4	<a href="${jbc_gigs}/1989/Dec20.html">89dec20 Days Inn Hotel, Atlanta GA</a>
+#		<ul>
+#		<li> spontaneous end-of-tour hotel acoustic tunes</li>
+#		</ul>
+#	D1 B1	<a href="${jbc_gigs}/1992/1992.html">92 The Vaguely Familiar</a>
+#		<li> demo. pat, ${richard} and female singer.</li>
+#		</ul>
+#	<a name="Murphy">
+#	D1 B5	<a href="${jbc_gigs}/1992/Sep15.html">92sep15</a>
+#		${eg}:
+#		<ul><li>(un-released) second album entitled Peter Murphy</li>
+#		</ul>
+#	</a>
+#	D1 B5	<a href="${jbc_gigs}/1993/Sep1.html">93sep1</a>
+#		${eg}:
+#		<ul>
+#		<li>
+#		(un-released) third album entitled l'esprit formidable
+#		</li>
+#		</ul>
+#
+	${jbc_footer}
+#live	endif
+
+#define	searchGigs
+#live	if ((defined(f)) && (defined(q)))
+	${doGigSearch(f=${f}, q=${q})}
+#live	else
+#	${tag_beg}
+#	Search gigs by..
+#	${tag_end}
+#	<blockquote>
+#	<form action="${jbc_search}">
+#	<select name="f">
+#		<option value="venue">venue</option>
+#		<option value="city">city</option>
+#		<option value="country">country</option>
+#		<option value="act">shared the bill with JBC..</option>
+#		<option value="performer">this band member performed..</option>
+#		<option value="song">played this song..</option>
+#	</select>
+#		<input type="text" name="q"></input>
+#	<input type="submit">
+#	</form>
+#	</blockquote>
+	${tag_beg}
+	Find gigs which..
+	${tag_end}
+	<blockquote>
+#live	if (makeArray(es, [comma], ${gigExtras}))
+#live	loop (esi, 1, ${es->numresults})
+	${linkInternal(${jbc_search}?f=extras&q=${es[${esi}]}, ${gigExtra[${es[${esi}]}]})}.
+	<br/>
+#live	endloop
+	</blockquote>
+#live	endif
+#live	endif
+
+#define	search.html
+#live	if (getval(page) = search.html)
+	${mkHeader(section=Gigs)}
+	${searchGigs}
+	${jbc_footer}
+#live	endif

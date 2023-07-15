@@ -1,0 +1,1996 @@
+#define	images_abc	${jbc_images}/abcs_of_drugs
+#define	widthABC	100%
+#define	headerABC
+	${mkHeader(section=etc, title=The ABCs Of Drugs)}
+
+#define	Anabolic_steroids.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td><a
+				href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53"
+				border="0"></a><font face="arial,verdana,helvetica" color="white"><b><br clear="all">
+					<br>
+					</b></font><b><font face="arial,verdana,helvetica" size="5" color="white">Anabolic
+					steroids</font><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<br>
+					Most synthetic anabolic steroids ('roids) are derived from the male
+					sex hormone testosterone. Their trade names include Anadrol, Anavar,
+					Durabolin, Dianabol, Stanozolol and Sustanon. They are swallowed or
+					injected. Medically, they are used to treat thrombosis (the clotting
+					of blood vessels) and anaemia and to help build up wasted muscles after
+					illness.<br>
+					<br>
+					</font></td>
+				<td width="25%" align="center" valign="middle"><img src="${images_abc}/steroids.gif"
+				width="196" height="184" hspace="10" vspace="10"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2">
+					<hr>
+					<font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<a name="002"></a></font><font face="arial,verdana,helvetica" color="white"><b>Why
+					people use them</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					As well as directly helping to build up muscles, in combination with
+					exercise and the right diet, anabolic steroids also appear to increase
+					aggression, so that body-builders and athletes (including anyone who
+					is highly motivated to work out and get fitter) can train harder. Many
+					users also believe that they directly improve athletic performance,
+					though this is disputed. Anabolic steroids can also increase the sex drive.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people
+					may wish they hadn't </b></font><b><font face="arial,verdana,helvetica"
+					size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					Some users have claimed that anabolic steroids can lead to extreme aggression
+					and violence - so-called 'roid rage'.<br>
+					<br>
+					<b>Dependence</b><br>
+					Athletes and body-builders may come to feel psychologically dependent
+					on anabolic steroids, and withdrawal can lead to tiredness and depression.<br>
+					<br>
+					<b>In the long term</b><br>
+					Research suggests that long-term use may cause acne, the shakes, liver
+					and kidney problems and high blood pressure. Anabolic steroids can also
+					stop young people from growing properly. In men, long-term use may shrink
+					the testicles, reduce both the sex drive and the sperm count and lead
+					to the development of breasts. Women may grow facial hair and develop
+					a deep voice. Psychological problems including mood swings, depression,
+					general irritability and paranoia have also been reported.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special
+					risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Taking
+						anabolic steroids with stimulants/uppers can be dangerous.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Many
+						anabolic steroids are made in illegal laboratories, so their purity
+						and strength is not reliable.<br>
+						</font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font
+					face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">Anabolic
+					steroids that have not been prescribed are in <a
+					href="law.html#a3"><font color="#00cc00">Class C</font></a>, amongst a number of drugs in that class
+					that you can legally possess but not supply.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					<br>
+					</font></td>
+			</tr>
+		</table>
+		</td></tr></table>
+
+	${jbc_footer}
+
+#define	Barbiturates.html
+	${headerABC}
+	<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+	<a name="001"></a>
+	<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+		<tr>
+			<td width="10">&nbsp;</td>
+			<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"><font face="arial,verdana,helvetica" color="white"><b><br clear="all">
+				</b></font></a><font face="arial,verdana,helvetica" color="white"><b><br>
+				</b></font><font face="arial,verdana,helvetica" size="5" color="white"><b>Barbiturates</b></font><b><font face="arial,verdana,helvetica" color="white"><br>
+				</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+				Barbiturates (barbs) are powerful downers/depressants of a type classed as hypnosedatives &#150; drugs that sedate and, at higher doses, send you to sleep. They usually come in the form of tablets or coloured capsules, which are swallowed, but some people prepare barbiturates for injection. The commonest forms used illegally include Seconal, Tuinal and Nembutal.</font><br>
+			</td>
+			<td width="25%"></td>
+		</tr>
+		<tr>
+			<td width="10"></td>
+			<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white">
+				<hr>
+				<br>
+				<b>Background<br>
+				</b><br>
+				Barbiturates have been around since the beginning of the 20th century and used to be widely prescribed to treat anxiety and sleeplessness. However, because of their associated risks, since the 1960s they have been largely supplanted by <a href="Benzodiazepines.html"><font color="#00cc00">benzodiazepines</font></a>. The widespread availability of benzodiazepines has also caused a decline in the illegal use of barbiturates.<br>
+				<br>
+				<hr>
+				<a name="002"></a><br>
+				</font><font face="arial,verdana,helvetica" color="white"><b>Why people use them</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+				</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+				Barbiturates have similar effects to alcohol. Small doses tend to make you feel relaxed, happy and sociable.<br>
+				<br>
+				<hr>
+				<a name="003"></a></font><font face="arial,verdana,helvetica" color="white"><br>
+				<b>Why people may wish they hadn't </b></font><font face="arial,verdana,helvetica" size="2" color="white"><b><br>
+				</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+				<b>In the short term</b><br>
+				Larger doses will normally send you to sleep if you're inactive and in quiet surroundings, but if you're up and about they can lead to slurred speech, staggering, slowed reactions, confusion and intense, unpredictable emotions, including anxiety, depression and aggression. The breathing becomes more shallow and uneven, and overdose can cause death from breathing failure.<br>
+				<b><br>
+				Dependence</b><br>
+				As with all sedatives, regular use carries a high risk of psychological dependence. Regular heavy users are also likely to experience withdrawal symptoms, including restlessness, anxiety, insomnia, irritability and, in extreme cases, delirium and convulsions. Sudden withdrawal from very high doses can be fatal.<br>
+				<br>
+				<b>In the long term</b><br>
+				Regular use leads to tolerance &#150; you have to increase the amount you take to get the same effect. However, the amount needed to stop your breathing stays the same, so long-term, heavy users are at more risk of overdose. They also tend to be vulnerable to bronchitis and pneumonia.<br>
+				<br>
+				<hr>
+				<a name="004"></a><br>
+				</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+				</font></b>
+				<ul>
+					<li><font face="arial,verdana,helvetica" size="2" color="white">The difference between a dose that works and a lethal dose is very small with barbiturates. As few as 10 pills can kill you. Partly for this reason, and partly because of the risk of skin abscesses and gangrene (if these drugs are injected into an artery by mistake), injecting barbiturates is considered one of the most dangerous forms of drug use.<br>
+					</font>
+					<li><font face="arial,verdana,helvetica" size="2" color="white">Combining barbiturates with opiates and other downers, including alcohol, greatly increases the risks.<br>
+					</font>
+					<li><font face="arial,verdana,helvetica" size="2" color="white">Heavy barbiturate use in the later stages of pregnancy can lead to withdrawal symptoms in newborn babies.</font>
+				</ul>
+				<p><font face="arial,verdana,helvetica" size="2" color="white">
+				<hr>
+				<a name="005"></a><br>
+				</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+				</font></p>
+				<p><font face="arial,verdana,helvetica" size="2" color="white">Barbiturates are in <a href="law.html#a2"><font color="#00cc00">Class B</font></a>.<br>
+				<br>
+				<hr>
+				<br>
+				<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+				<br>
+				</font></td>
+		</tr>
+	</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	Benzodiazepines.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a><font face="arial,verdana,helvetica" color="white"><b><br>
+					<br>
+					</b></font><b><font face="arial,verdana,helvetica" size="5" color="white">Benzodiazepines (tranquillisers)</font><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Benzodiazepines (benzos, tranx) are downers/depressants of a type called minor tranquillisers and hypnotics (sleeping pills). Common varieties/products include temazepam, diazepam (Valium), Librium, Ativan and Mogadon. They normally come as tablets or capsules that are swallowed.<br>
+					<br>
+					</font></td>
+				<td width="25%"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<br>
+					<b>Background<br>
+					</b><br>
+					Benzodiazepines were introduced in the 1960s and, because they are safer and have fewer unwanted side-effects, quickly replaced barbiturates as the main type of drug used to treat anxiety and insomnia. They are among the most widely prescribed drugs in the UK, though there have been concerns about inappropriate prescribing, and the number of prescriptions has fallen from an astounding 30 million in 1979 to about half that number in recent years. Non-medical use is not widespread, because these drugs do not generally have positive effects for those not suffering from anxiety or insomnia.<br>
+					<br>
+					<hr>
+					<br>
+					<a name="002"></a></font><font face="arial,verdana,helvetica" color="white"><b>Why people use them</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Benzodiazepines are mainly used to offset the after-effects of stimulants/uppers such as amphetamines, cocaine and ecstasy, but they are also used as a temporary replacement when opiates are not available. They can make you feel calm and relaxed. Higher doses can send you to sleep. The effects generally last between three and six hours.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					<br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't used them</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					Benzodiazepines can make you drowsy and forgetful, though these effects usually disappear with continued use. Fatal overdose is not impossible, but the difference between a dose that works and an overdose is much greater than with barbiturates.<br>
+					<br>
+					<b>Dependence</b><br>
+					There is a strong risk of psychological dependence with benzodiazepines, despite the fact that tolerance develops to the extent that they may produce almost none of the desired effects after a matter of months. There is also a risk of physical dependence &#150; mild withdrawal symptoms, including insomnia, irritability, anxiety and vomiting may occur after several years' use at prescribed doses. People who regularly use higher doses may experience more serious withdrawal symptoms including severe anxiety, panic attacks and convulsions. In extreme cases sudden withdrawal can be fatal.<br>
+					<br>
+					<b>In the long term</b><br>
+					Apart from the dangers of dependence and withdrawal, people have described long-term tranquilliser use as a 'chemical lobotomy', dulling perceptions and feelings.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Benzodiazepines can exaggerate the effects of alcohol, and mixing the two makes death from overdose much more likely.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Flunitrazepam (Rohypnol) &#150; the drug implicated in 'date rape' in the US - is sometimes offered as a substitute for temazepam, but it's much stronger and so carries a higher risk of overdose.<br>
+						</font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">Benzodiazepines are <a href="law.html#a3"><font color="#00cc00">Class C</font></a> drugs &#150; all are illegal to supply but not to possess, with the exception of temazepam, which was made illegal to possess without a prescription because of a growing trend for injecting it.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					</font><br>
+				</td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	Caffeine.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a><font face="arial,verdana,helvetica" color="white"><b><br clear="all">
+					<br>
+					</b></font><b><font face="arial,verdana,helvetica" size="5" color="white">Caffeine</font><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					In its pure form, the stimulant/upper caffeine is a white powder. Caffeine is found in coffee and (in lesser concentrations) in tea. It's also a constituent of some soft drinks.<br>
+					<br>
+					</font></td>
+				<td width="25%"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<br>
+					<b>Background<br>
+					</b><br>
+					Coffee spread into Europe from north-east Africa via Arabia and Turkey, reaching the UK at the beginning of the 17th century. Coffee houses soon became popular as a meeting place for men, and licensing restrictions were imposed as a result of concern that such places encouraged political discussion and activity. A belief that coffee made men impotent led to a campaign against it. By the end of the 17th century, coffee had been largely superseded by tea as the fashionable non-alcoholic drink.<br>
+					<br>
+					Caffeine is now taken by far more people than any other drug. Medicinally, it is used as a mild stimulant and in painkillers.<br>
+					<br>
+					<hr>
+					<br>
+					<a name="002"></a></font><font face="arial,verdana,helvetica" color="white"><b>Why people use it</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Caffeine speeds up the heart and breathing, reducing fatigue and aiding concentration. The effects come on about five minutes after it enters the system and last for several hours. Of course, people also drink coffee and tea socially, as a focus for breaks from work and other activities, and because they like the taste.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't </b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					Caffeine can stop you getting to sleep, and even if you don't lose sleep, when the effects wear off you may feel more tired than you would have done otherwise. In large amounts caffeine can make you feel restless and anxious and give you a headache, the shakes and an upset stomach. Very large amounts can even lead to delirium and convulsions.<br>
+					<br>
+					<b>Dependence</b><br>
+					Some people feel psychologically dependent on caffeine, and there are also withdrawal symptoms, including fatigue, headaches, anxiety, depression and irritability.<br>
+					<br>
+					<b>In the long term</b><br>
+					People who consume a lot of caffeine on a daily basis may generally feel anxious, depressed and irritable and suffer from headaches and the shakes. High caffeine levels in the long term may also aggravate high blood pressure and stomach conditions.<br>
+					</font>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">There are no legal restrictions on caffeine.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					<br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	Cannabis.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10" valign="top">&nbsp;</td>
+				<td valign="top"><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="56" border="0"><font face="arial,verdana,helvetica" color="white"><b><br>
+					</b></font></a><font face="arial,verdana,helvetica" color="white"><b><br>
+					</b></font><font face="arial,verdana,helvetica" size="5" color="white"><b>Cannabis</b></font><b><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Cannabis (puff, draw, dope, blow, spliff and so on) comes from the plant <i>Cannabis sativa</i>. Broadly speaking it can be classed as a hallucinogen which alters perceptual function, but it is also a relaxant. The main psychoactive ingredient is a tetrahydrocannabinol (THC) &#150; delta-9-tetrahydrocannabinol, to be precise. Cannabis is sold in two main forms &#150; marijuana and resin.<br>
+					<br>
+					Marijuana (grass, bush, weed, herb) is the dried leaves and flowers of the plant. It can be smoked on its own in a pipe or in a joint/spliff, but in the UK is normally mixed with tobacco. Particularly strong varieties, including Skunk, Purple Haze and Northern Lights, are now quite widely available. Sinsemilla, made from the flowering tops of an unfertilised female plant, is also very strong.<br>
+					<br>
+					Cannabis resin or hashish (hash) is a brown or greenish-brown solid. It's stronger than standard varieties of grass. It can be eaten but is usually smoked with tobacco or neat in a pipe. A dark, sticky, powerful oil can be made from the resin, but cannabis oil is not common in the UK.<br>
+					<br>
+					</font></td>
+				<td width="25%" valign="middle" align="center"><img src="${images_abc}/cannabis.gif" hspace="10" vspace="10" width="200" height="159"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2">
+					<hr>
+					<font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>Background<br>
+					</b><br>
+					Cannabis was used both medically and for pleasure in ancient China and later in India. In the UK it was first legally controlled in 1928, though its widespread use as a recreational drug has later origins, in the 1950s and 1960s. The medical use of cannabis was banned in 1973, despite evidence that the drug can relieve muscular spasm in multiple sclerosis and glaucoma as well as nausea in patients undergoing drug treatment for cancer. Cannabis can also be used as an appetite stimulant.<br>
+					<br>
+					Cannabis is the most popular illegal drug in the UK. Recent surveys suggest that, by their mid twenties, about two in five young people will have used it. Partly for this reason, and partly because there is no conclusive evidence that in itself it has significant ill effects, the illegal status of this drug in particular is controversial.<br>
+					<br>
+					<hr>
+					<a name="002"></a><br>
+					<br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people use it</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Many people enjoy the taste of cannabis smoke and the rituals associated with using it, just as they do with alcohol. As far as the effects are concerned, small amounts can make you feel relaxed, happy, talkative and giggly. Many users also feel that their senses are heightened, particularly with reference to colours and music. With large amounts, or very strong cannabis, there may be mild, pleasurable hallucinations of colours, patterns and slight movement in objects. The effects can last several hours. If you eat hashish, the effects come on more slowly and last longer.<br>
+					<br>
+					<hr>
+					<a name="003"></a></font><font face="arial,verdana,helvetica" color="white"><br>
+					<b>Why people may wish they hadn't </b></font><font face="arial,verdana,helvetica" size="2" color="white"><b><br>
+					</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					Cannabis can make you anxious, panicky, paranoid, confused or depressed, particularly if you're very stoned. Short-term memory loss and difficulty in concentration are also common. It's possible that the drug may aggravate existing mental disorders.<br>
+					<br>
+					<b>Dependence</b><br>
+					Cannabis does not produce physical dependence, but psychological dependence is possible.<br>
+					<br>
+					<b>In the long term</b><br>
+					It's likely that smoking cannabis, like smoking tobacco, can cause bronchitis and other breathing disorders, and it's certainly true that people who smoke a lot of joints with tobacco are damaging their lungs more than people who smoke filtered cigarettes.<br>
+					<br>
+					Some people say they suffer from general anxiety, paranoia or depression as a result of regular, long-term use of cannabis, and certain people who are stoned all the time tend to be lethargic and not at their sharpest mentally. However, there is no conclusive evidence that cannabis causes any lasting damage to mental or physical health. Long-term cannabis smoking has been linked with cancers, but the link is disputed. Similarly, there is conflicting evidence on whether frequent cannabis use in pregnancy can lead to premature birth.<br>
+					<br>
+					There is also controversy about whether cannabis use leads to other drug use. It's statistically true that cannabis users are more likely to take other drugs, as are people who smoke tobacco or drink. But there is no evidence of a <i>causal</i> link.<br>
+					<br>
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">Cannabis is a <a href="law.html#a2"><font color="#00cc00">Class B</font></a> drug .<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					<br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	Cocaine_crack.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10" valign="top">&nbsp;</td>
+				<td valign="top"><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a><font face="arial,verdana,helvetica" color="white"><b><br clear="all">
+					<br>
+					</b></font><b><font face="arial,verdana,helvetica" size="5" color="white">Cocaine/crack</font><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Cocaine (coke, charlie, snow, C) is a powerful stimulant/upper made from the leaves of the coca plant. It usually takes the form of a white powder, which can be injected or smoked with tobacco but is usually snorted up the nose.<br>
+					<br>
+					Freebase is cocaine treated with chemicals to make it more suitable for smoking. Crack (crack, wash, rock, stone) is a form of freebase cocaine that comes in small rocks or pellets.<br>
+					</font></td>
+				<td align="center" valign="middle"><img src="${images_abc}/crack.gif" width="200" height="198" hspace="10" vspace="10"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" color="white"><b>
+					<hr>
+					</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>Background<br>
+					</b><br>
+					There is a long tradition of chewing coca leaves in the areas of South America where the plant grows. Cocaine was first extracted at the end of the last century, and it became a popular stimulant and tonic - for years, Coca-Cola contained small amounts of the drug. Sigmund Freud believed it could be used to treat depression and addiction. Cocaine has also been widely used as a local anaesthetic, and is still sometimes used in surgery. In the UK it was first controlled during the First World War, after rumours that troops were taking it.<br>
+					<br>
+					Cocaine became popular in the music and entertainment industries in the 1970s and with 'yuppies' in the 1980s. However, it has also come to be more widely used. An estimated 2% of the adult population (nearly three-quarters of a million people) have used it at some point.<br>
+					<br>
+					<hr>
+					<br>
+					<a name="002"></a></font><font face="arial,verdana,helvetica" color="white"><b>Why people use it</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Cocaine can make you feel elated, positive, confident and alert &#150; strong both mentally and physically. The effects are in many ways similar to those of amphetamines, but cocaine wears off much more quickly &#150; in less than two hours &#150; and it's considered a smoother or more subtle drug. All the same it's a powerful stimulant, speeding up the heart and breathing. Some people say it improves sex.<br>
+					<br>
+					The effects of crack are both more intense and more shortlived, lasting only a matter of minutes.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't </b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					Sometimes people feel anxious and panicky while under the influence of cocaine, and any negative feelings will be worse with high doses or repeated doses. If you smoke a lot of crack over a short period, anxiety and paranoia can be still more intense, and you may become wildly overexcited and hyperactive. Overdose on cocaine or crack, leading to a heart attack or a stroke, is possible but rare.<br>
+					<br>
+					After the effects wear off, people often feel tired and hungry and may also feel agitated, anxious, paranoid or depressed. Taking large amounts or smaller amounts in quick succession (and there's a great temptation to go back for more, because the effects wear off so quickly) make the come-down worse. However, the after-effects are not considered to be as bad as those of amphetamines.<br>
+					<br>
+					Despite cocaine's reputation for going well with sex, some men find it difficult to get an erection or come after using the drug.<br>
+					<br>
+					<b>Dependence</b><br>
+					Cocaine does not lead to physical dependence &#150; there are no heroin-type withdrawal symptoms if you stop taking it. But you can become psychologically dependent on the high and, as with amphetamines, a craving for the positive effects may be reinforced by a desire to escape the negative after-effects. Smoking crack is more likely to lead to dependence, because both the positive and the negative effects are more intense, and because crack wears off even more quickly, encouraging people to smoke it at frequent intervals.<br>
+					<br>
+					<b>In the long term</b><br>
+					Frequent long-term use of cocaine and crack can make people chronically anxious, excitable, paranoid and unable to sleep. As with amphetamines, loss of sleep and appetite can also leave long-term users very run down.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks<br>
+					<br>
+					</b></font><font face="arial,verdana,helvetica" size="2" color="white">Many of the special risks of <a href="amphetamines.html"><font color="#00cc00">amphetamines</font></a> also apply to cocaine. In addition:</font>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Cocaine is expensive and the effects are shortlived, so even occasional users can seriously damage their bank balances.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Mixing cocaine and downers, especially heroin, to make a 'speedball' is extremely dangerous.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Snorting cocaine frequently can permanently damage the inside of your nose.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Smoking crack can damage the lungs over time.<br>
+						</font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">Cocaine is a <a href="law.html#a1"><font color="#00cc00">Class A</font></a> drug.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	Ecstasy.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a><font face="arial,verdana,helvetica" color="white"><b><br clear="all">
+					<br>
+					</b></font><b><font face="arial,verdana,helvetica" size="5" color="white">Ecstasy</font><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Ecstasy or 3,4,methylenedioxymethamphetamine (E or MDMA for short; also called XTC, pills, jubes, smarties, doves and so on) is a mind-altering stimulant, combining some of the effects of amphetamines and LSD. It's usually sold in capsules or tablets, which vary widely in colour, size &#150; and rather more importantly &#150; content.<br>
+					<br>
+					</font></td>
+				<td width="25%" align="center" valign="middle"><img src="${images_abc}/ecstasy.gif" width="200" height="146" hspace="10" vspace="10"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" color="white"><b>
+					<hr>
+					</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>Background<br>
+					</b><br>
+					A natural version of MDMA is found in nutmeg and oil of sassafras. The drug was first synthesised in 1912 and was used for a time in some psychiatric treatments in Switzerland and the US. In the UK, the Misuse of Drugs Act was amended to cover all amphetamine compounds in 1977, but it wasn't until the late 80s that ecstasy started to become widely available. It is very much linked with the dance and club scene. About 2% of the adult population (an estimated 730,000 people) are thought to have tried ecstasy.<br>
+					<br>
+					<hr>
+					<a name="002"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people use it</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Physically, the effects are similar to those of amphetamines. Your heart and breathing speed up and your body temperature rises, your mouth dries up, your jaw tightens and you lose your appetite. You may also feel a laxative effect. However, these symptoms aren't generally why people use the drug.<br>
+					<br>
+					The psychological effects of ecstasy vary to some extent according to mood and circumstances &#150; and, of course, according to what the tablets actually contain. It can make you feel relaxed and calm as well as energetic, exhilarated and able to experience things with more intensity &#150; especially music. Ecstasy is also commonly said to make you feel warmer towards or more in tune with other people. It probably doesn't actually increase the sex drive, but many people say it improves sex.<br>
+					<br>
+					The effects usually take 30 to 60 minutes to come on and can last for several hours.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't </b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					Some people feel unsteady and nauseous or actually throw up after taking ecstasy. Like amphetamines, ecstasy can make you anxious and paranoid, and however you feel while the drug is working, when the effects wear off you will feel tired, and you may feel anxious and depressed. Some people report having LSD-type 'flashbacks' - a recurrence of the feelings experienced on the drug. All of these problems are more likely to occur and to be more serious with high and repeated doses.<br>
+					<br>
+					An estimated 60&#150;70 deaths have been directly associated with ecstasy use. Most of these seem to have been caused by a combination of exhaustion, overheating and dehydration (see <a href="#004"><font color="#00cc00">special risks</font></a> below), though a few people have suffered heart attacks or brain haemorrhage brought on by the stimulant effect of the drug. A very small number have died as a result of drinking <i>too much</i> water, because ecstasy can cause a condition which leads to a build-up of water in the cells of the brain, causing it to swell.<br>
+					<br>
+					<b>Dependence</b><br>
+					Ecstasy does not produce physical dependence, and though many young people use the drug repeatedly, the vast majority do so on an occasional basis. However, psychological dependence is possible.<br>
+					<br>
+					<b>In the long term</b><br>
+					You can build up a tolerance to ecstasy, so you have to take more to get the desired effect, and if this happens you're more at risk from toxic side-effects such as nausea and dizziness. Other symptoms reported by long-term users include general anxiety, panic attacks, depression, insomnia and confusion. And as with amphetamines, long-term users may become generally run-down. One study has suggested that ecstasy can cause liver damage.<br>
+					<br>
+					Experiments have also shown that, in animals, ecstasy can permanently damage brain nerve pathways and nerve terminals, possibly leading to serious mood problems and brain disease in later life. However, the relevance of these experiments to humans is not clear.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Ecstasy is dangerous for anyone suffering from high blood pressure, a heart condition, diabetes, asthma or epilepsy.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Ecstasy tablets often contain other drugs or non-active substances. Some adulterated tablets may be dangerous. Testing a small amount first may reduce the risks.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Ecstasy raises body temperature, and this combined with dehydration and exhaustion from long spells of dancing in a hot club can be dangerous. Sipping water &#150; no more than about a pint an hour &#150; and taking regular rests will help. Alcohol makes dehydration worse.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">It's particularly dangerous to mix ecstasy with anti-depressants or other stimulants.<br>
+						</font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">Ecstasy is a <a href="law.html#a1"><font color="#00cc00">Class A</font></a> drug.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	GHB.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a><font face="arial,verdana,helvetica" color="white"><b><br clear="all">
+					<br>
+					</b></font><b><font face="arial,verdana,helvetica" size="5" color="white">GHB</font><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Gammahydroxybutyrate (GHB, but known as GBH or liquid E on the street) is an anaesthetic/sedative usually sold as a clear liquid in plastic bottles, which is swallowed, but it occasionally comes as capsules or a powder. It was originally used to put people to sleep before an operation.</font></td>
+				<td width="25%"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<br>
+					<a name="002"></a></font><font face="arial,verdana,helvetica" color="white"><b>Why people use it</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Small amounts of GHB make you feel relaxed, happy and less inhibited. Some people say that the effects are rather like those of <a href="Ecstasy.html"><font color="#00cc00">ecstasy</font></a>, though the drug is not a stimulant/upper and has more in common with a depressant/downer such as alcohol. Larger amounts lead to drowsiness and sedation. The effects come on after about 10 minutes and can last a day or more<br>
+					<br>
+					GHB has been used by body-builders because it encourages the secretion of growth hormone by the brain.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					High doses can lead to confusion, nausea, vomiting, stiffness, convulsions, collapse, coma and even death by breathing failure. However, there are no recorded cases of deaths from overdose.<br>
+					<br>
+					<b>In the long term</b><br>
+					Both physical and psychological dependence are possible, but there has been no research into the long-term effects of the drug.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">The difference between a dose that produces the desired effects and an overdose is very small with GHB.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Using GHB with other downers &#150; including alcohol &#150; is particularly dangerous.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">There is no way of knowing the strength of GHB, and it may contain dangerous impurities. Testing a very small amount may reduce the risks.<br>
+						</font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">GHB is not a controlled drug, but it's classed as a medicine, so production and supply could be illegal.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					<br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	Heroin.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"><font face="arial,verdana,helvetica" color="white"><b><br>
+					</b></font></a><font face="arial,verdana,helvetica" color="white"><b><br>
+					</b></font><font face="arial,verdana,helvetica" size="5" color="white"><b>Heroin, methadone and other opiates</b></font><b><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Heroin (smack, skag, H, junk, brown) is produced from morphine, which, like codeine, is produced from opium, which is in turn produced from the Asian poppy. These drugs are the natural opiates. There are also synthetic opiates, including dipipanone (Diconal), pethidine and methadone (Physeptone). All these drugs are painkillers but can also be broadly considered as depressants/downers.<br>
+					<br>
+					Heroin is twice as powerful as morphine. When pure, it's a white powder, but street heroin tends to be brown. It can be snorted up the nose, injected in a solution or heated on tin foil and smoked ('chasing the dragon'). Opium is a brown, sticky solid, and is smoked or swallowed. Methadone (meth, linctus) usually comes as a green, syrupy liquid or as tablets, which are swallowed, or in ampoules for injection.<br>
+					<br>
+					</font></td>
+				<td width="25%" valign="middle" align="center"><img src="${images_abc}/heroin.gif" width="196" height="219" align="top" hspace="10" vspace="10"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2">
+					<hr>
+					<font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>Background<br>
+					</b><br>
+					Opiates have been used for centuries. Laudanum &#150; opium prepared in an alcoholic solution &#150; was taken from the 16th century onwards as a painkiller and a cure for 'nerves' and diarrhoea. Morphine was first extracted in a pure form in the early 19th century, and heroin was introduced at the end of the 19th century. Codeine and morphine are still commonly used as painkillers.<br>
+					<br>
+					Opium legislation has a long history: the first restrictions were introduced in 1868. The current illegal market in heroin dates mainly from the 1960s and 1970s. According to government figures, up to 1% of the adult population (about a quarter of a million people) have used heroin at some point in their lives.<br>
+					<br>
+					<hr>
+					<a name="002"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people use them</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Heroin, like the other opiates, reduces pain, both physical and emotional. In the short term it stops you worrying and makes you feel safe, warm and contented. Physically, these drugs slow down the heart and breathing, and higher doses produce drowsiness. However, opiates impair mental and physical functioning less than true downers/depressants such as alcohol and tranquillisers.<br>
+					<br>
+					Methadone does not produce such an intense high as heroin, but the effects last longer &#150; up to 24 hours. For dependent heroin users, methadone is primarily used as a way of avoiding withdrawal symptoms.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't </b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					First-time users may feel sick or actually throw up. With high doses, people can black out and even enter coma. Death from breathing failure is possible. The impurities of street heroin can lead to illness or death if the drug is injected. Death from methadone overdose is also a risk, particularly for people who haven't built up a tolerance.<br>
+					<br>
+					<b>Dependence</b><br>
+					Some people take heroin or other opiates on an occasional basis, but these drugs can be very difficult to control, particularly if you're using them because you feel troubled, anxious or unable to cope. Psychological dependence is the biggest risk, but after as little as a few weeks of frequent doses, users also experience physical withdrawal symptoms ('cold turkey') if they stop using abruptly. These include a runny nose and sneezing, diarrhoea, vomiting, sweats, chills, cramps and insomnia. The desire to avoid these symptoms is an additional reason for continual use. Abrupt withdrawal from heroin is not considered as dangerous as abrupt withdrawal from alcohol, however.<br>
+					<br>
+					Estimates put the number of people dependent on heroin at up to 200,000. Though methadone is used as a substitute for heroin, some dependent users say that methadone is harder to give up.<br>
+					<br>
+					<b>In the long term</b><br>
+					Opiates may stop you worrying about things you don't want to worry about, but they tend to make you care less about everything, including relationships, study, work and interests. It can also affect your motivation to look after yourself at a basic level, leading to general health problems. Men may experience impotence or loss of sex drive, and women may have irregular periods. Breathing problems and constipation are quite common. In addition, regular injecting in itself has many <a href="Intro.html#002"><font color="#00cc00">dangers</font></a>.<br>
+					<br>
+					Tolerance builds up, so that you have to increase the amount you take to get the same effect. However, after a while, the pleasurable effects may disappear altogether, and dependent users may find themselves taking the drug just to feel 'normal'.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Sometimes unexpectedly pure heroin finds its way onto the streets, leading people to overdose. Testing a small amount of newly bought heroin may reduce the risk.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Using opiates with downers such as tranquillisers or alcohol can lead to coma or breathing failure.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Using opiates during pregnancy may result in your having an underweight baby, and newborn babies may suffer severe withdrawal symptoms.</font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">Heroin, morphine, opium, methadone, dipipanone and pethidine are all <a href="law.html#a1"><font color="#00cc00">Class A.</font></a> Codeine is <a href="law.html#a2"><font color="#00cc00">Class B</font></a> unless prepared for injection, in which case it's considered <a href="law.html#a1"><font color="#00cc00">Class A.</font>
+					</a><br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	Intro.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+<table border="0" cellpadding="0" cellspacing="5" width="${widthABC}">
+	<tr>
+		<td width="40"><a name="001"></a>&nbsp;</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td colspan="2" valign="top"><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a></td>
+	</tr>
+	<tr>
+		<td colspan="2"><font face="arial,verdana,helvetica" size="5" color="white"><b>Introduction</b></font><font color="#ffff66"> </font></td>
+	</tr>
+	<tr>
+		<td width="40">&nbsp;</td>
+		<td><font face="arial,verdana,helvetica" size="2" color="white"><br>
+			Almost everyone takes drugs for non-medical reasons - either
+			for pleasure or to use their effects in other ways. For instance,
+			people have drinks containing caffeine to get them going in
+			the mornings or keep them going at night, or they have a couple
+			of alcoholic drinks to help them wind down after work or feel
+			relaxed in company. These habits are both legal and socially
+			acceptable, and people who regularly drink tea, coffee or alcohol
+			in moderation are very unlikely to think of themselves as drug users.<br>
+			<br>
+			However, legal drugs such as alcohol, nicotine and even caffeine
+			can lead to psychological dependence and physical withdrawal
+			symptoms. Nicotine is one of the most dependence-forming of
+			all drugs, and tobacco is one of the most damaging substances.
+			In his book <i>Licit and Illicit</i> <i>Drugs</i> (Little, Brown
+			1972), Dr Vincent Dole concludes that 'cigarette smoking is
+			unquestionably more damaging to the human body than heroin'.<br>
+			<br>
+			Alcohol also causes serious concern. According to a major government survey
+			in 1995, about 1 in 25 adults, making a total of around 1.8 million, are
+			dependent on it. This is more than twice the number dependent on illegal
+			drugs. And like dependence on 'hard' drugs such as heroin, alcohol dependence
+			can lead to serious personal and social problems, serious damage to mental
+			and physical health, and even death, either by overdose or through associated
+			problems.<br>
+			<br>
+			So it's hardly surprising that many people who use illegal drugs feel
+			that double standards apply in this area - in the law, in general attitudes
+			and in the media. An alcohol-related death scarcely rates a mention in
+			the local paper, but an ecstasy-related death can be major national news
+			- partly, of course, because of the very rarity of the event. An estimated
+			28,000&#150;33,000 people die each year from alcohol-related causes; since
+			1985 the total number of deaths related to ecstasy is put at 60&#150;70.
+			And there's little more consistency in attitudes to drugs within the illegal
+			categories. Deaths related to amphetamines or opiates aren't big news
+			either, perhaps because these drugs have been around for longer than ecstasy.<br>
+			<br>
+			The crusial point is that, however illegal drug users are treated by the
+			law or perceived by other people, the experience of many is that you can
+			smoke cannabis or even take ecstasy, amphetamines or LSD without harming
+			yourself or anyone else. This Website isn't concerned with arguments about
+			the legal control of different drugs. But given that a growing number
+			of people regard taking certain illegal drugs as a normal part of their
+			lives, and (according to the British Crime Survey 1996) 29% of the adult
+			population have tried illegal drugs, sources of straightforward information
+			about the effects and risks are crucial. <i>The ABC of Drugs</i> aims
+			to provide one such source and tell you about the others.<br>
+			<br>
+			<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+			</font></td>
+	</tr>
+	<tr>
+		<td width="40"><a name="002"></a>&nbsp;</td>
+		<td>
+			<hr>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" valign="top"><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a></td>
+	</tr>
+	<tr>
+		<td colspan="2"><font face="arial,verdana,helvetica" size="4" color="white"><b>Drugs and general safety</b></font></td>
+	</tr>
+	<tr>
+		<td width="40"></td>
+		<td><font face="arial,verdana,helvetica" size="2" color="white"><br>
+			All drugs, legal and illegal, have side-effects and may involve risks.
+			The special problems associated with different types of drugs are dealt
+			with under the drugs' individual headings. However, some risks apply more
+			or less across the board or are associated with the way drugs are taken.<br>
+			</font>
+			<ul>
+				<li><font face="arial,verdana,helvetica" size="2" color="white">Taking
+				drugs on your own increases the risks. If you get into difficulties or
+				simply have a bad time, friends may be able to help.<br>
+				</font><font face="arial,verdana,helvetica" size="2" color="#cc0000"><br>
+				</font>
+				<li><font face="arial,verdana,helvetica" size="2" color="white">Though
+				it may be tempting to take drugs (including alcohol) when you feel anxious,
+				depressed or unable to cope, they may make you feel worse, particularly
+				in the longer term. Also, if you're using drugs as a way of escaping
+				from problems, you're more likely to become dependent.<br>
+				</font><font face="arial,verdana,helvetica" size="2" color="#cc0000"><br>
+				</font>
+				<li><font face="arial,verdana,helvetica" size="2" color="white">Some
+				drugs can alter the way you approach, negotiate and enjoy sex. But always
+				remember that unprotected sex carries risks of unwanted pregnancy and
+				infection with HIV and other sexually transmitted diseases.<br>
+				</font><font face="arial,verdana,helvetica" size="2" color="#cc0000"><br>
+				</font>
+				<li><font face="arial,verdana,helvetica" size="2" color="white">Some
+				drugs affect your ability to perform mental and physical tasks more than
+				others, but they all change your mental or physical state to some degree.
+				The only safe rule is not to drive, operate heavy machinery, or do anything
+				that may put yourself or others at physical risk when you're under the
+				influence of illegal drugs or alcohol. Consult your doctor or chemist
+				if in doubt about prescription or over-the-counter medicines.<br>
+				</font><font face="arial,verdana,helvetica" size="2" color="#cc0000"><br>
+				</font>
+				<li><font face="arial,verdana,helvetica" size="2" color="white">Drugs
+				can affect unborn babies. You should get advice on any drugs you are
+				taking, legal or illegal, if you're pregnant.<br>
+				</font><font face="arial,verdana,helvetica" size="2" color="#cc0000"><br>
+				</font>
+				<li><font face="arial,verdana,helvetica" size="2" color="white">Mixing
+				drugs (including alcohol or prescription medicines with illegal drugs)
+				can be particularly dangerous.<br>
+				</font><font face="arial,verdana,helvetica" size="2" color="#cc0000"><br>
+				</font>
+				<li><font face="arial,verdana,helvetica" size="2" color="white">Injecting
+				is without doubt the most dangerous way of taking drugs. This is partly
+				because it's easier to take an overdose if you inject, but also because
+				of the risk of contracting HIV and hepatitis through sharing injecting
+				equipment. People who inject drugs should therefore <i>never</i> share
+				equipment. There are also particular dangers in injecting crushed tablets.
+				For more information about safe injecting, contact one of the organisations
+				listed in <a href="law.html"><font color="#00cc00">sources of help</font></a>.<br>
+				</font>
+			</ul>
+			<p><font face="arial,verdana,helvetica" size="2" color="white"><b><a name="what"></a>What
+			to do if someone is in difficulties<br>
+			<br>
+			</b>If someone who has taken drugs gets very anxious or panicky, take
+			them somewhere quiet and warm, and reassure them that they will gradually
+			feel better. Don't leave them alone.<br>
+			<br>
+			If someone is overheating and becoming dehydrated after dancing a lot
+			(symptoms may include fainting, feeling sick, headache, sudden tiredness,
+			cramps and stopping sweating) they should immediately take a rest and
+			<i>slowly</i> sip about a pint of water. Splashing cool water on the face
+			and neck can help lower the body temperature. People who use drugs such
+			as ecstasy and amphetamines and go dancing are advised to take regular
+			breaks and sip water throughout the evening - about a pint an hour is
+			recommended by the Health Education Authority.<br>
+			<br>
+			If someone seems on the verge of passing out, don't leave them alone to
+			sleep it off - they may throw up while unconscious and choke. Put them
+			in the <a href="#recovery"><font color="#00cc00">recovery position</font></a>, loosen any tight clothing
+			that might restrict the breathing, and try to keep them awake by talking
+			to them. Never give someone black coffee to wake them up - it may have
+			the opposite effect, speeding up the body's absorption of the drugs they've
+			taken. If the person shows no signs of revival, call an ambulance.<br>
+			<br>
+			If someone actually passes out, put them in the <a href="#recovery"><font color="#00cc00">recovery
+			position</font></a>, loosen any clothing that might restrict the breathing and
+			call an ambulance. If you know what sort of drugs they've been taking,
+			tell the crew. You won't get into trouble for doing this, and it could
+			save someone's life.<br>
+			<br>
+			Mouth-to-mouth resuscitation can also save someone's life if they have
+			stopped breathing. First-aid courses teaching this and other techniques
+			are available from St John Ambulance (0171 235 5231) or the Red Cross
+			(0171 235 5454).<br>
+			<br>
+			<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+			</font></td>
+	</tr>
+	<tr>
+		<td width="40" valign="top"><a name="recovery"></a>&nbsp;</td>
+		<td align="center"><img src="${images_abc}/recovery.gif" hspace="10" vspace="10" width="447" height="71"></td>
+	</tr>
+	<tr>
+		<td width="40"><a name="003"></a>&nbsp;</td>
+		<td>
+			<hr>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" valign="top"><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a></td>
+	</tr>
+	<tr>
+		<td colspan="2"><font face="arial,verdana,helvetica" size="4" color="white"><b>What is drug dependence/addiction?</b></font></td>
+	</tr>
+	<tr>
+		<td width="40"></td>
+		<td><br>
+			<font face="arial,verdana,helvetica" size="2" color="white">The vast majority
+			of people who try drugs, or even use them repeatedly, do not become dependent
+			on them. The question of why some people do become dependent is complicated.
+			Different drugs have different potentials for leading to dependence, and
+			this is dealt with under the separate headings for each drug or group
+			of drugs. But the personality, state of mind and circumstances of the
+			user - and the way they use a drug - are also crucial.<br>
+			<br>
+			The words 'dependence' and 'addiction' are shorthand for a complex set
+			of changes that can occur over time with repeated use of a drug. These
+			changes involve the way someone thinks and behaves and the way in which
+			their bodies adapt to and handle the drug. No one feature alone spells
+			dependence, though individual features may be a clue or warning sign.
+			Becoming dependent on a drug is often a long and subtle process, and it's
+			difficult to identify the exact point at which repeated use slips into
+			dependence.<br>
+			<br>
+			People who are dependent on a drug continue to use it despite clear and
+			repeated evidence that it's causing significant problems. They also spend
+			increasing amounts of time obtaining the drug, taking it and recovering
+			from it. Their thoughts tend to be dominated by a craving for the drug,
+			which often results in neglect of their health, family and work. They
+			may make repeated unsuccessful attempts to cut down their use or stop
+			using altogether. All of this points to the main feature of drug dependence
+			- a loss of control over drug taking. The drug is controlling the person
+			rather than the other way around.<br>
+			<br>
+			By the time this happens, a drug user's body has often (but not invariably)
+			developed increased <i>tolerance</i> for the drug and also shows characteristic
+			<i>withdrawal symptoms</i> if they stop taking a drug or reduce their
+			consumption.<br>
+			<br>
+			Tolerance to a drug means that someone gradually needs more to get the
+			same effect. Over time this can result in their taking doses that would
+			harm or even kill an inexperienced user.<br>
+			<br>
+			Withdrawal symptoms result from the fact that the body has adapted to
+			the presence of the drug, so it reacts to its absence. The characteristic
+			withdrawal symptoms associated with alcohol, for instance, include the
+			shakes, sickness and sweats. With heroin they include chills and sweats,
+			cramps and aches and pains. These symptoms can be severe enough for people
+			to want to make sure their bodies are never without the drug for too long.
+			The early morning drink for someone dependent on alcohol is one example
+			of this; a dependent heroin user's sometimes desperate search for the
+			next fix is another.<br>
+			<br>
+			<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+			</font></td>
+	</tr>
+	<tr>
+		<td width="40" valign="top"><a name="005"></a>&nbsp;</td>
+		<td valign="top">
+			<hr>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" valign="top"><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a></td>
+	</tr>
+	<tr>
+		<td colspan="2"><font face="arial,verdana,helvetica" size="4" color="white"><b>Drug groups</b></font></td>
+	</tr>
+	<tr>
+		<td width="40"></td>
+		<td><font face="arial,verdana,helvetica" size="2" color="white"><br>
+			Not all the drugs listed fit neatly into these categories, but many can be broadly classed as:<br>
+			</font>
+			<ul>
+				<li type="disc"><font face="arial,verdana,helvetica" size="2" color="white"><b>Depressants</b></font><font
+				face="arial,verdana,helvetica" size="2" color="white">, which reduce
+				brain activity (for example alcohol, gases and glues, tranquillisers)<br>
+				<br>
+				</font>
+				<li type="disc"><font face="arial,verdana,helvetica" size="2" color="white"><b>Stimulants</b></font><font
+				face="arial,verdana,helvetica" size="2" color="white">, which increase
+				brain activity (for example cocaine, amphetamines, ecstasy, nitrites,
+				anabolic steroids, nicotine)<br>
+				<br>
+				</font>
+				<li type="disc"><font face="arial,verdana,helvetica" size="2" color="white"><b>Hallucinogens</b></font><font
+				face="arial,verdana,helvetica" size="2" color="white">, which alter the
+				way you perceive things (for example LSD, magic mushrooms, cannabis)<br>
+				<br>
+				</font>
+				<li type="disc"><font face="arial,verdana,helvetica" size="2" color="white"><b>Analgesics</b></font><font
+				face="arial,verdana,helvetica" size="2" color="white">, which reduce
+				physical and emotional pain (for example heroin and other opiates)<br>
+				<br>
+				</font>
+			</ul>
+			<p><a href="${max_abc}/contents.html"><font face="arial,verdana,helvetica" size="2"
+			color="#00cc00"><b>contents</b></font></font></a>
+			</td>
+	</tr>
+</table>
+</td></tr></table>
+
+	${jbc_footer}
+
+#define	Ketamine.html
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a><br>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td width="367"><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"><font face="arial,verdana,helvetica" color="white"><b><br clear="all">
+					</b></font></a><font face="arial,verdana,helvetica" color="white"><b><br>
+					</b></font><font face="arial,verdana,helvetica" size="5" color="white"><b>Ketamine</b></font><b><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Like <a href="GHB.html"><font color="#00cc00">GHB</font></a>, ketamine (special K, vitamin K, K) is an anaesthetic, but it also acts as a hallucinogen and painkiller. It's occasionally sold as a liquid for injection but usually comes as a powder or as tablets. Ketamine tablets are sometimes passed off as ecstasy.<br>
+					<br>
+					</font></td>
+				<td width="25%"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<br>
+					<a name="002"></a></font><font face="arial,verdana,helvetica" color="white"><b>Why people use it</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					As with other drugs with hallucinogenic properties, the experience of taking ketamine varies according to mood, personality and circumstances. There may be an initial speedy rush, after which effects include visual hallucinations and distortion of hearing, and a feeling of being detached &#150; both from your body and from things around you.<br>
+					<br>
+					If the drug is swallowed, the effects come on after about 20 minutes. They last for up to three hours.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't </b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					The possible unpleasant effects of ketamine are pretty much as you'd expect from an anaesthetic &#150; numbness, slurred speech, blurred vision, confusion, lack of co-ordination and even paralysis. You may feel sick or throw up, especially if you've eaten within a few hours of taking the drug. Some people say ketamine makes them aggressive. The higher the dose, the greater the risk of serious unpleasant effects, and overdose can result in heart or breathing failure. However, deaths from overdose are rare.<br>
+					<br>
+					<b>Dependence</b><br>
+					Ketamine does not produce physical dependence, but there is a risk of psychological dependence.<br>
+					<br>
+					<b>In the long term</b><br>
+					There has been little research into the long-term effects of ketamine, though one study has suggested that memory, vision and concentration may be affected.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">It's particularly dangerous to mix ketamine with other downers/depressants, including alcohol.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Ketamine increases the risk of physical injury, both because it affects co-ordination and because you feel less pain.<br>
+						</font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">Possession of ketamine is not illegal, but it can only be legally supplied on prescription.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					<br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	LSD.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10" valign="top">&nbsp;</td>
+				<td valign="top"><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a><font face="arial,verdana,helvetica" color="white"><b><br>
+					<br>
+					</b></font><b><font face="arial,verdana,helvetica" size="5" color="white">LSD</font><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Lysergic acid diethylamide or LSD (acid) is a powerful hallucinogen made from ergot, a fungus that grows on rye and other grains. It's usually sold soaked in small pieces of blotting paper or (now less frequently) in small pills or microdots.</font></td>
+				<td width="25%" align="center" valign="middle"><img src="${images_abc}/acid.gif" hspace="10" vspace="10" width="175" height="161"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<br>
+					<b>Background<br>
+					</b><br>
+					LSD was first produced in 1938. In the 50s and 60s it was used in psychotherapy to help people recover repressed memories and emotions. In the 60s it became popular with hippies and other young people, and also with some writers and intellectuals. Such users tended to believe that LSD expanded the consciousness and led to spiritual experiences. The authorities disapproved, and in the UK LSD was first controlled by legislation in 1966.<br>
+					<br>
+					Like everything associated with 'hippy values', LSD became very unfashionable in the late 70s, but the acid house dance scene of the late 80s led to a revival of interest, and the drug was easily incorporated into the subsequent rave and dance culture. An estimated 4% of the adult population (1.3 million people) have taken LSD at some point.<br>
+					<br>
+					<hr>
+					<a name="002"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people use it</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Whether LSD opens the doors of perception or just replaces them with warped, multi-coloured windows is open to question, but there's no doubt that it can radically alter the way you feel and perceive the world around you. Full hallucinations are rare, at least with normal doses, but it's common to see patterns and colours that don't really exist and also slight movement in solid, stationary objects. Familiar objects and people may seem unfamiliar, fascinating or hilarious. A feeling of increased self-awareness is also common, and some people report ecstatic or transcendental experiences, as if they've moved beyond their bodies. The effects usually come on after between half an hour and an hour and can last anything between five and 24 hours, but eight to 12 hours is common.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					LSD is unpredictable, even for experienced users. Things may seem fascinating or funny, but they may also seem alien and terrifying. You might feel dizzy, confused, anxious, panic-stricken or paranoid, or as if you're dying or losing your mind. To some extent the effects of the drug depend on how you feel when you take it &#150; if you feel anxious or depressed anyway, you're more likely to have a bad trip. Friendly reassurance and efforts to divert the mind towards pleasant subjects may help a user who is having a hard time. Occasionally a bad trip may produce a longer-lasting disturbance, such as recurring anxiety attacks, but this will normally fade.<br>
+					<br>
+					Even if you've had a good trip, you may feel anxious and depressed the next day. Flashbacks &#150; sudden recurrences of the experience of a trip &#150; can occur a few days or even weeks later. These can be disturbing, especially if they happen at an awkward time, but they don't usually last long.<br>
+					<br>
+					The intensity of experiences on LSD &#150; both good and bad &#150; depend on how much you take and how strong the tab or microdot is.<br>
+					<br>
+					<b>Dependence</b><br>
+					LSD does not produce physical dependence, and psychological dependence is rare because the drug stops working if you keep using it over three or four days. However, after a few more days, tolerance subsides, and some people feel a strong desire to keep repeating the experience.<br>
+					<br>
+					<b>In the long term</b><br>
+					Despite talk of 'acid casualties', there is no reliable evidence that LSD damages the brain. However, long-term use may increase anxiety and depression. More serious and prolonged psychological problems do occur, but it's difficult to know to what extent LSD causes them. However, it is thought that the drug can aggravate existing mental health problems, or bring hidden problems to the surface.<br>
+					</font>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">LSD is a <a href="law.html#a1"><font color="#00cc00">Class A</font></a> drug<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					<br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	Solvents.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a><font face="arial,verdana,helvetica" color="white"><b><br>
+					<br>
+					</b></font><b><font face="arial,verdana,helvetica" size="5" color="white">Solvents/glues and gases</font><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					These are products whose vapours act as downers/depressants when inhaled. They include various glues, cleaning fluids and paints, gas lighter fuel, petrol and the gases in aerosols and fire extinguishers. Studies have suggested that 7&#150;10% of young people at secondary school have experimented with inhalants of this type.<br>
+					<br>
+					</font></td>
+				<td width="25%"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<br>
+					<a name="002"></a></font><font face="arial,verdana,helvetica" color="white"><b>Why people use them</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					The effects are in some ways similar to those of alcohol &#150; you can lose your inhibitions and feel happy and social. They come on very quickly and last no more than an hour.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					As with alcohol, the effects of solvents and gases depend partly on your mood, personality and the situation you're in. They tend to intensify emotions, so if you feel depressed anyway they may make you feel worse. They can also make you feel giddy and drowsy, and some people feel sick. Hallucinations are possible. Afterwards, you may get a hangover.<br>
+					<br>
+					Large doses can make you feel out of control and confused, and you may even pass out. Overdose, particularly with lighter fuel and strong solvents, can be fatal, though most deaths involving glues and gases are caused by suffocation or accidents (see <a href="#004"><font color="#00cc00">Special Risks</font></a>).<br>
+					<br>
+					<b>Dependence</b><br>
+					A small number of young people become psychologically dependent on solvents and gases, but there are no significant physical withdrawal symptoms.<br>
+					<br>
+					<b>In the long term</b><br>
+					Long-term use may cause problems with the kidneys and liver, and with brain function. Permanent damage is possible but rare. However, people who habitually inhale gases or solvents often become generally tired, run-down and depressed.<br>
+					<br>
+					<hr noshade size="1">
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">If you pass out, death though inhalation of vomit is possible.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">If you pass out with a plastic bag over your head, and there's no one to help you, you'll probably suffocate.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Aerosols or butane gas sprayed directly into the mouth freeze the throat, which can go into spasm, resulting in breathing difficulties or suffocation.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Some substances, including aerosol gases and cleaning fluids, make the heart more sensitive to excitement and strenuous exercise. This has been known to cause heart problems.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Dangerous accidents are more likely if you're under the influence of gases and glues, because you have less control over your body and you may pass out.</font><font color="white"> </font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">It's not illegal to possess or inhale solvents, but it is illegal for a shopkeeper to sell them to people under 18 if they think they are likely to be misused.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					<br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	Tobacco.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a><br clear="all">
+					<br>
+					<font face="arial,verdana,helvetica" size="5" color="white"><b>Tobacco/nicotine</b></font><b><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Tobacco is the dried leaves of the plant <i>Nicotiana tabacum</i>. The drug it contains, nicotine, is a mild stimulant/upper.</font><br>
+					<br>
+				</td>
+				<td width="25%" align="center" valign="middle"><img src="${images_abc}/fags.gif" hspace="5" vspace="5" width="200" height="209"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<br>
+					<b>Background<br>
+					</b><br>
+					Tobacco was first introduced into the UK in the 16th century. Increasing concerns (especially in the second half of this century) about the damage tobacco can do to health have been offset by the money it generates, not least for the government. However, there are now restrictions on advertising and, increasingly, on smoking in public places.<br>
+					<br>
+					The UK General Household Survey in 1994/5 estimated that 28% of men and 26% of women smoked.<br>
+					<br>
+					<hr>
+					<a name="002"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people use it</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Nicotine stimulates the central nervous system and raises the heart rate and breathing rate, helping you keep going and maintain concentration. But paradoxically, smokers usually feel that the main effect is to relax them and reduce stress. As with drinking alcohol and smoking cannabis, people also enjoy the taste and sensation of smoking tobacco.<br>
+					<br>
+					Nicotine acts almost instantaneously, and the levels decline very rapidly.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					Nicotine is particularly habit-forming because of the brevity of the effects and because tolerance develops rapidly. A remarkably high proportion of people who start smoking go on to become psychologically dependent. Sudden withdrawal can cause symptoms such as headaches and insomnia as well as anxiety, depression and a craving to smoke.<br>
+					<br>
+					<b>In the long term</b><br>
+					Tobacco contains more than 4000 chemicals, many of which damage health. The well-documented risks include bronchitis, emphysema, lung cancer, heart disease, blood clots and ulcers. The risks increase in proportion to how much you smoke and how long ago you started.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Women who smoke during pregnancy tend to have underweight babies.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Women who both smoke and take the pill are more likely to develop blood clots and heart disease.</font><font color="white"> </font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+						</font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">It's illegal to sell tobacco to people under 16, though it's legal for people under 16 to buy and smoke it &#150; only the seller can be prosecuted.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	alcohol.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10"></td>
+				<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a><font face="arial,verdana,helvetica" color="white"><b><br>
+					<br>
+					</b></font><b><font face="arial,verdana,helvetica" size="5" color="white">Alcohol</font><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Ethyl alcohol or ethanol, the type of alcohol found in drinks, is a depressant/downer produced by fermenting or distilling fruits, vegetables or grains. As a very rough guide, beer contains between 3.5% and 9% ethanol by volume, wine between 10% and 14%, and spirits 35&#150;40%. The main effects of drinking depend on the amount of alcohol consumed rather than the type of drink, though many drinkers say that drinks vary in their effects. Weight, metabolism, how much you have eaten, how quickly you're drinking and how much you usually drink also affect how drunk you get on a given amount of alcohol. On average, women get drunk more quickly than men, partly because they tend to weigh less and partly because water forms a lower proportion of their body weight, so that the same amount of alcohol produces a higher concentration in the blood.<br>
+					<br>
+					</font></td>
+				<td width="25%" align="center" valign="middle"><img src="${images_abc}/alcohol.gif" hspace="10" width="200" height="249" align="middle"></td>
+			</tr>
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<br>
+					<b>Background<br>
+					</b><br>
+					Alcohol has been widely used for social and religious purposes for thousands of years. Alcohol-related legislation in the UK dates from the late 19th century, when age restrictions were introduced. Restrictions on when alcohol could be sold were imposed during the First World War, to try to make sure workers in essential industries weren't drunk or hung-over.<br>
+					<br>
+					More than 90% of the adult population drink alcohol.<br>
+					<br>
+					<hr>
+					<a name="002"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people use it</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					The way alcohol affects you depends to quite a large extent on personality, mood and circumstances. The main desirable effects are that it can relieve tension, reduce anxiety and produce feelings of warmth and contentment. It also reduces inhibitions, acting as a social lubricant and giving you 'Dutch courage'. Of course, people also like the taste of alcoholic drinks.<br>
+					<br>
+					The effects come on after about 10 minutes and can last for several hours if you drink a large amount.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't </b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					Losing your inhibitions is a good thing only up to a point, as many people have realised to their cost the morning after. In addition, emotional reactions when you're drunk can be very unpredictable. Some people become aggressive or tearful after only a couple of drinks, and the larger the amount, the more exaggerated these reactions can be. A great deal of violence is associated with alcohol. Also, the more you drink, the less well your brain and body work. Symptoms include slurring of speech, staggering, loss of memory and comprehension, and eventually unconsciousness. Fatal overdose is possible, though people who don't normally drink much will probably start throwing up well before levels become life-threatening, as long as they're not drinking very quickly. However, inhalation of vomit while someone is asleep or unconscious can also be fatal.<br>
+					<br>
+					Hangovers are due partly to poisoning by alcohol and other constituents of drinks and partly to short-term withdrawal. Symptoms include headache (caused by dehydration), the shakes, tiredness, nausea, vomiting, depression and anxiety. Many people say certain drinks produce worse hangovers than others, and that mixing grape and grain (for example wine and beer) leads to the mother of them all. However, the amount of alcohol you consume is by far the most important factor.<br>
+					<br>
+					<br>
+					<b>Dependence</b><br>
+					Psychological dependence on alcohol can occur with the daily use of even moderate amounts. Alcohol can also lead to physical dependence, so that sudden withdrawal produces sweating, anxiety, the shakes, and nausea and vomiting. In severe cases, delirium (delirium tremens or the DTs), hallucinations, convulsions and even death are possible from withdrawal. According to the organisation Alcohol Concern, nearly 1 in 10 male drinkers and 1 in 20 female drinkers show psychological or physical signs of alcohol dependence.<br>
+					<br>
+					<b>In the long term</b><br>
+					Long-term alcohol use can directly harm most parts of the body. In particular, it often leads to heart and liver disease and inflammation of the stomach. The risk of serious disease increases in proportion to the amount you drink, though some people are naturally more resilient than others. Other problems include loss of appetite, vitamin deficiencies, infection, impotence and menstrual irregularity.<br>
+					<br>
+					In addition, almost all drinkers seeking help say they feel anxious and depressed. These symptoms are likely to be made worse by other problems associated with alcohol dependence, such as strains on finances and relationships.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">It's particularly dangerous to combine alcohol with other downers/depressants, or with ecstasy or amphetamines in hot clubs (because of the danger of dehydration). Drinking water or soft drinks reduces the risk of dehydration - but <a href="Ecstasy.html#004"><font color="#00cc00">see Ecstasy: Special Risks</font></a>.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Accidents are more likely if you're drunk.<br>
+						</font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<b><a name="005"></a><br>
+					</b></font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">You need a licence to sell alcohol, and it's illegal to sell alcohol to someone under 18 or give it to a child under five. It's also an offence to be drunk in a public place or to drive with too much alcohol in your system (more than 80mg of alcohol per 100ml of blood).<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	amphetamines.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td><a href="${max_abc}/index.html"><font face="arial,verdana,helvetica" size="5" color="white"><b><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></b></font></a><b><font face="arial,verdana,helvetica" color="white"><br>
+					<br>
+					</font><font face="arial,verdana,helvetica" size="5" color="white">Amphetamines (speed)</font><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<br>
+					Amphetamines (speed, billy, whizz, sulphate) are powerful synthetic stimulants/uppers. The commonest illegally made form, amphetamine sulphate powder, can be smoked, swallowed in a drink or injected in a solution, but it's usually snorted up the nose. The powder should be white, but can be pink or grey.<br>
+					<br>
+					Crystal methamphetamine (meth, ice, crystal) is a very strong, pure, crystalline form of the drug, which is usually smoked. Amphetamine base, the base from which amphetamine sulphate powder is made, is also very strong and pure. Base is injected or wrapped in cigarette papers and swallowed.<br>
+					<br>
+					</font></td>
+				<td align="center" valign="middle"><img src="${images_abc}/speed.gif" width="214" height="141" hspace="10"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2">
+					<hr>
+					<font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>Background<br>
+					</b><br>
+					Amphetamines were first introduced in the 1930s as a cure for nasal congestion, but they have long been used as a way of staying awake and boosting energy levels. In the 1950s and 1960s amphetamines were also widely prescribed to treat depression and help people lose weight. Amphetamines and amphetamine-like drugs currently available on prescription, such as Dexedrine and Ritalin, are mainly used to treat narcolepsy (uncontrollable sleeping fits) and, oddly enough, hyperactivity in children.<br>
+					<br>
+					In the UK, the use of amphetamines for fun dates mainly from the 1960s, and they were controlled by legislation in 1964. Amphetamines are now common in the dance scene and, apart from cannabis, are the most commonly used illegal drug in the UK. According to government figures, an estimated 9% of the population have used amphetamines at some point in their lives.<br>
+					<br>
+					<hr>
+					<a name="002"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people use them</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Amphetamines have a similar effect to a rush of adrenalin &#150; one that can last for anything between three and eight hours. Your breathing and heart speed up, your pupils dilate, your mouth dries up and you feel more energetic and alert. You may also feel more confident and positive, and become very talkative, believing your mind is on top form - though a straight listener might not agree. Loss of appetite is also common.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't </b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					While experiencing the physical effects described above, people may mainly feel anxious and restless rather than confident and energetic, and all users have to cope with coming down. Taking amphetamines is like getting an advance on your energy reserves, and as these reserves are used up, you begin to feel tired and drained. You may also feel depressed.<br>
+					<br>
+					If taken in large quantities, and especially if repeated high doses are taken over a few days, the possible unwanted effects are more serious. They include aggression, panic, paranoia, hallucinations and delirium. The physical effects of very high doses can include the shakes, uneven heartbeat, breathlessness, chest pain, seizure and even heart failure. But deaths caused directly by amphetamines are rare in people without heart problems or high blood pressure.<br>
+					<br>
+					<b>Dependence</b><br>
+					Some people become psychologically dependent on amphetamines, partly because these drugs can make you feel more confident and more able to cope, and partly because it's tempting to take more to counteract the effects of coming down. There are no heroin-type withdrawal symptoms if regular users give up abruptly, but long-term users may well feel generally tired, apathetic and continually hungry when they stop using.<br>
+					<br>
+					<b>In the long term</b><br>
+					Frequent users build up a tolerance, so larger doses are needed to obtain the same effect. This increases all the risks. Long-term users are prone to depression and paranoia, and some people develop psychosis. Sustained heavy use also increases the risk of damage to blood vessels and even heart failure. Other health problems may develop because users are generally run-down and not eating or sleeping properly.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Amphetamine sulphate powder is notoriously impure, often being cut by up to 95% with anything from paracetamol to chalk. This means injecting it could be lethal.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">It's dangerous for people with high blood pressure, heart problems or breathing problems to take amphetamines.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Using amphetamines with other uppers, such as poppers, cocaine or ecstasy, is particularly dangerous, as it puts an added strain on the heart.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Stimulants tend to make you less aware of the effects of alcohol, and this can lead to <a href="alcohol.html"><font color="#00cc00">excessive drinking</font></a> and all that entails.<br>
+						</font>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Long periods of dancing in hot clubs can lead to serious dehydration. Sipping water and taking rests can prevent this.</font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">Amphetamines are <a href="law.html#a2"><font color="#00cc00">Class B</font></a> drugs unless they are prepared for injection, in which case they are considered <a href="law.html#a1"><font color="#00cc00">Class A</font></a>.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					<br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	contents.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+	<table border="0" cellpadding="0" cellspacing="10" width="${widthABC}" bgcolor="#000000">
+		<tr>
+			<td valign="top"><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a></td>
+			<td align="left" rowspan="2"><font face="arial,verdana,helvetica" size="5" color="white"><b>Contents<br>
+				<br>
+				</b></font><a href="Intro.html"><font color="#00cc00" face="arial,verdana,helvetica">Introduction</font></a><br>
+				<a href="Intro.html#002"><font color="#00cc00" face="arial,verdana,helvetica">Drugs and general safety</font></a><br>
+				<a href="Intro.html"><font color="#00cc00" face="arial,verdana,helvetica">What to do if someone is in difficulties</font></a><br>
+				<a href="Intro.html#003"><font color="#00cc00" face="arial,verdana,helvetica">What is drug dependence/addiction?</font></a><br>
+				<a href="Intro.html#what"><font color="#00cc00" face="arial,verdana,helvetica">Drug groups</font></a><br>
+				</font>
+				<p><a href="alcohol.html"><font color="#00cc00" face="arial,verdana,helvetica">Alcohol</font></a><br>
+				<a href="amphetamines.html"><font color="#00cc00" face="arial,verdana,helvetica">Amphetamines (speed)</font></a><br>
+				<a href="Anabolic_steroids.html"><font color="#00cc00" face="arial,verdana,helvetica">Anabolic steroids</font></a><br>
+				<a href="Barbiturates.html"><font color="#00cc00" face="arial,verdana,helvetica">Barbiturates</font></a><br>
+				<a href="Benzodiazepines.html"><font color="#00cc00" face="arial,verdana,helvetica">Benzodiazepines (tranquillisers)</font></a><br>
+				<a href="Caffeine.html"><font color="#00cc00" face="arial,verdana,helvetica">Caffeine</font></a><br>
+				<a href="Cannabis.html"><font color="#00cc00" face="arial,verdana,helvetica">Cannabis</font></a><br>
+				<a href="Cocaine_crack.html"><font color="#00cc00" face="arial,verdana,helvetica">Cocaine/crack</font></a><br>
+				<a href="Ecstasy.html"><font color="#00cc00" face="arial,verdana,helvetica">Ecstasy</font></a><br>
+				<a href="GHB.html"><font color="#00cc00" face="arial,verdana,helvetica">GHB</font></a><br>
+				<a href="Heroin.html"><font color="#00cc00" face="arial,verdana,helvetica">Heroin, methadone and other opiates</font></a><br>
+				<a href="Ketamine.html"><font color="#00cc00" face="arial,verdana,helvetica">Ketamine</font></a><br>
+				<a href="LSD.html"><font color="#00cc00" face="arial,verdana,helvetica">LSD</font></a><br>
+				<a href="mushrooms.html"><font color="#00cc00" face="arial,verdana,helvetica">Magic mushrooms</font></a><br>
+				<a href="poppers.html"><font color="#00cc00" face="arial,verdana,helvetica">Nitrites (poppers)</font></a><br>
+				<a href="Solvents.html"><font color="#00cc00" face="arial,verdana,helvetica">Solvents/glues and gases</font></a><br>
+				<a href="Tobacco.html"><font color="#00cc00" face="arial,verdana,helvetica">Tobacco/nicotine</font></a><br>
+				<br>
+				<a href="law.html#001"><font color="#00cc00" face="arial,verdana,helvetica">Drugs and the law </font></a><br>
+				<a href="law.html#002"><font color="#00cc00" face="arial,verdana,helvetica">Sources of help and further information </font></a><br>
+				</font></td>
+		</tr>
+		<tr>
+			<td align="center" valign="top">
+				<hr noshade size="1">
+				<font face="arial,verdana,helvetica"><img src="${images_abc}/pills.gif" width="255" height="266" align="top"><br clear="all">
+				</font></td>
+		</tr>
+	</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	index.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr align="right">
+				<td width="5" align="right" valign="top" bgcolor="red">&nbsp;</td>
+				<td bgcolor="red" colspan="4" align="right" valign="top"><font face="arial,verdana,helvetica" color="red"><b><img src="${images_abc}/homepic.gif" width="400" height="120" align="top"></b></font></td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="4"><img src="${images_abc}/abc_title.gif" width="219" height="53"></td>
+			</tr>
+			<tr>
+				<td width="5"></td>
+				<td width="75%"><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					More and more people are using illegal drugs. Cannabis is by far the most popular, but many young people also take drugs such as LSD, amphetamines and ecstasy as a normal part of their social lives, much as other people have a few drinks.<br>
+					<br>
+					One reason for this may be that a drug's legal status is a poor guide to its safety. For instance, alcohol, like heroin, can lead to serious personal and social problems, serious damage to mental and physical health and even death. Or, to compare illegal drugs, the Misuse of Drugs Act puts ecstasy and heroin in the same class, but heroin carries a far greater risk of dependence and associated problems.<br>
+					<br>
+					So the need for straightforward information about both legal and illegal drugs is clear. This Website explains what the various drugs are, why people use them, and why they might wish they hadn't. There are also sections on the law and</font><font size="2" color="white"> </font><font face="arial,verdana,helvetica" size="2" color="white">on general safety, and an extensive list of sources of advice and further information.<br>
+					</font><font face="arial,verdana,helvetica" size="2"><br>
+					</font></td>
+				<td width="52">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td align="center"><a href="${max_abc}/contents.html"><font face="arial,verdana,helvetica" color="white"><b>open</b></font></a></td>
+				<td width="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5"></td>
+				<td colspan="4"><font face="arial,verdana,helvetica"><b>
+					<hr>
+					</b></font></td>
+			</tr>
+			<tr>
+				<td width="5"></td>
+				<td colspan="4"><font face="arial,verdana,helvetica" size="1" color="#666666"><br>
+					</font><font face="arial,verdana,helvetica" size="1" color="#999999">Produced by <a href="http://www.bss.org" target="new"><font color="#00cc00">BSS</font></a> to accompany <i>Drugs Uncovered</i> a season of programmes exploring drug-related issues, first shown on Channel 4 in autumn 1998<br>
+					<br>
+					Writer: Peter Millson<br>
+					Editor: Paula Snyder<br>
+					Consultant and additional material: Dr Ron Alcorn, consultant psychiatrist in problems of substance misuse<br>
+					images: Science Photo Library, Network Photographers, Photofusion. All images copywrite control.<br>
+					Design:BSS<br>
+					<br>
+					For printed copies of this publication, please send a postal order or cheque (made payable to Channel 4 Television) for &pound;1.00 (to cover postage and packing) to:<br>
+					<br>
+					The ABC of Drugs<br>
+					PO Box 4000<br>
+					Manchester M60 3LL<br>
+					<br>
+					Or you can telephone 0990 44 66 99.</font><font face="arial,verdana,helvetica" size="1" color="#666666"><br>
+					<br>
+					</font></td>
+			</tr>
+		</table>
+		</td></tr></table>
+
+	${jbc_footer}
+
+#define	law.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<font face="arial,verdana,helvetica" size="2" color="white"><br>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="5" width="${widthABC}">
+			<tr>
+				<td width="10">&nbsp;</td>
+				<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="5" color="white"><b>Drugs and the law</b></font><font size="5" color="#ffff66"> </font></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2">&nbsp;<font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<i>The law on drugs is complicated, and sentencing is even more so. If you need advice or more detailed information, phone <a href="#release"><font color="#00cc00">Release</font></a></i><br>
+					<br>
+					The Misuse of Drugs Act divides illegal drugs into three main classes &#150; A, B and C.<br>
+					<br>
+					<a name="a1"></a><b>Class A</b><br>
+					drugs (which include cocaine, crack, ecstasy, heroin, methadone, LSD, 'prepared' magic mushrooms, and amphetamines prepared for injection) can attract a maximum penalty of seven years in prison and/or a fine for possession, and life in prison and/or a fine for supply.<br>
+					<br>
+					<a name="a2"></a><b>Class B</b><br>
+					drugs (which include amphetamines, cannabis and barbiturates) can attract a maximum penalty of five years in prison and/or a fine for possession, and 14 years in prison and/or a fine for supply.<br>
+					<br>
+					<a name="a3"></a><b>Class C</b><br>
+					drugs (which include anabolic steroids and tranquillisers) can attract a maximum of five years in prison and/or a fine for supply. It is not illegal to possess anabolic steroids and tranquillisers (except temazepam, which can attract a maximum penalty of two years in prison and/or a fine).<br>
+					<br>
+					However, what actually happens to you if you get caught varies according to the quantity of the drug, the attitude of the local police and courts and whether &#150; and how many times &#150; you've been caught before. The following are very broad guidelines.<br>
+					<br>
+					If you are caught for the first time in possession of small amount of any drug, the police may do nothing, give you a warning, give you a formal caution (which means you'll have a criminal record) or prosecute you. You're more likely to be prosecuted if you're caught with a Class A drug, but if you are prosecuted for a first possession offence, even for a Class A drug, you'll probably only be fined.<br>
+					<br>
+					Supply and possession with intent to supply are taken much more seriously, and it's important to realise that you can be charged with these offences simply for sharing your drugs or going to collect drugs for a group of friends who have pooled money.<br>
+					<br>
+					<br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Your rights<br>
+					<br>
+					</b></font><font face="arial,verdana,helvetica" size="2" color="white">If you're arrested, you have the right to talk to a solicitor before answering any questions. In fact, you don't have to answer questions at all, though this might count against you later, and being polite is definitely a good idea. If you don't know a solicitor, you can ask for the duty solicitor or ring the <a href="#release"><font color="#00cc00">Release</font></a> helpline<br>
+					<br>
+					You also have the right to ask the police to let a friend or relative know that you have been arrested.<br>
+					<br>
+					If you're under 17, the police should not question you in the absence of your parents or guardians.<br>
+					<br>
+					The police can hold you for a maximum of 24 hours, or 36 hours for a serious offence, at the end of which they must either charge you, let you go, or apply to a court to hold you for longer.<br>
+					</font><br>
+					<a href="${max_abc}/contents.html"><font face="arial,verdana,helvetica" size="2" color="#00cc00"><b>contents</b></font></a><br>
+				</td>
+			</tr>
+			<tr>
+				<td width="10"><a name="002"></a>&nbsp;</td>
+				<td>
+					<hr>
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"></a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="5" color="white"><b>Sources of help and further information</b></font></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Organisations<br>
+					<a href="#web"><font color="#00cc00">Websites</font></a><br>
+					</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>Adfam National</b><br>
+					Waterbridge House<br>
+					32&#150;36 Loman Street<br>
+					London SE1 0EE<br>
+					Tel: 0171 928 8900<br>
+					Fax: 0171 928 8923<br>
+					Confidential advice, support and information for the families and friends of drug users.<br>
+					<br>
+					<b>Alcohol Concern</b><br>
+					Waterbridge House<br>
+					32&#150;36 Loman Street<br>
+					London SE1 0EE<br>
+					Tel: 0171 928 7377<br>
+					Fax: 0171 928 4644<br>
+					Email: alccon@popmail.dircon.co.uk<br>
+					Web:<a href="http://www.alcoholconcern.org.uk/"><font color="#00cc00">http://www.alcoholconcern.org.uk/</font></a><br>
+					Information about alcohol and services for people with alcohol problems.<br>
+					<br>
+					<b>Al-Anon Family Groups UK and Eire</b><br>
+					61 Great Dover Street<br>
+					London SE1 4YF<br>
+					Tel: 0171 403 0888<br>
+					E-mail: alanonuk@aol.com<br>
+					Web: <a href="http://www.hexnet.co.uk/alanon"><font color="#00cc00">www.hexnet.co.uk/alanon</font></a><br>
+					Support for the families and friends of problem drinkers, whether they are still drinking or not. Alateen, a part of Al-Anon, is for young people aged 12&#150;20 who have been affected by someone else's drinking, usually that of a parent.<br>
+					<br>
+					<b>Alcoholics Anonymous</b><br>
+					PO Box 1<br>
+					Stonebow House<br>
+					Stonebow<br>
+					York YO1 7NJ<br>
+					Tel: 01904 644026<br>
+					Fax: 01904 629091<br>
+					Self-help groups for alcohol-dependent people determined to give up.<br>
+					<br>
+					<b>Cocaine Anonymous</b><br>
+					c/o Matey<br>
+					PO Box 2EY<br>
+					London W1A 2EY<br>
+					Tel: 0171 284 1123<br>
+					Self-help groups for dependent cocaine users determined to give up.<br>
+					<br>
+					<b>Drinkline</b><br>
+					0500 801802<br>
+					Advice and information about alcohol.<br>
+					<br>
+					<b>Families Anonymous</b><br>
+					Unit 37<br>
+					Doddington and Rollo Community Association<br>
+					Charlotte Despard Avenue<br>
+					London SW11 5JE<br>
+					Tel: 0171 498 4680<br>
+					Fax: 0171 498 1990<br>
+					Self-help groups for the friends and families of drug users.<br>
+					<br>
+					<b>HIT</b><br>
+					Cavern Walks<br>
+					8 Mathew Street<br>
+					Liverpool L2 6RE<br>
+					Tel: 0151 227 4012<br>
+					Fax: 0151 227 4023<br>
+					E-mail: hit@hit.org.uk<br>
+					Web: <a href="http://www.hit.org.uk"><font color="#00cc00">www.hit.org.uk</font></a><br>
+					Good publications for young people, plus library and information service (for Merseyside and Cheshire only).<br>
+					<br>
+					<b>Health Education Authority (HEA)</b><br>
+					Trevelyan House<br>
+					30 Great Peter Street<br>
+					London SW1P 2HW<br>
+					Ordering service: 01304 614731<br>
+					For a list of the HEA's drug information resources or for multiple orders of their publications. For single orders, ring the National Drugs Helpline.<br>
+					<br>
+					<b>Institute for the Study of Drug Dependence</b><br>
+					32 Loman Street<br>
+					London SE1 0EE<br>
+					Tel: 0171 928 1211<br>
+					Fax: 0171 928 1771<br>
+					E-mail: services@isdd.co.uk<br>
+					Web: <a href="http://www.isdd.co.uk"><font color="#00cc00">www.isdd.co.uk</font></a><br>
+					The national drugs information agency for practitioners and policy makers. Services include a library, publications (including some materials for parents and young people &#150; see Website for details) as well as policy research and consultancy.<br>
+					<br>
+					<b>Lifeline</b><br>
+					101&#150;103 Oldham Street<br>
+					Manchester M4 1LW<br>
+					Tel: 0161 834 7160<br>
+					Parents' helpline: 0800 716701<br>
+					Fax: 0161 834 5903<br>
+					E-mail: drughelp@lifeline.demon.co.uk<br>
+					Web: <a href="http://www.lifeline.demon.co.uk/index.html"><font color="#00cc00">www.lifeline.demon.co.uk/index.html</font></a><br>
+					Good publications for young people, plus face-to-face counselling in the Manchester area.<br>
+					<br>
+					<b>Local drugs services</b><br>
+					Check the local phone book, ask in the library or contact your local Citizens' Advice Bureau for details of local confidential drugs services. Or contact the National Drugs Helpline.<br>
+					<br>
+					<b>National Drugs Helpline</b><br>
+					0800 776600<br>
+					Free and confidential advice, support and information, including details of local services.<br>
+					<br>
+					<b>Narcotics Anonymous</b><br>
+					202 City Road<br>
+					London EC1V 2PH<br>
+					Office: 0171 251 4007<br>
+					Fax: 0171 251 4006<br>
+					Helpline: 0171 730 0009<br>
+					Self-help groups for dependent opiate users determined to give up.<br>
+					<br>
+					<b>Quitline</b><br>
+					0800 002200<br>
+					Advice and information about smoking.<br>
+					<br>
+					<a name="release"></a><b>Release</b><br>
+					388 Old Street<br>
+					London EC1V 9LT<br>
+					Office: 0171 729 5255<br>
+					Helpline: (weekdays 10am&#150;6pm) 0171 729 9904: (other times) 0171 603 8645<br>
+					Drugs in Schools Helpline: 0345 366666<br>
+					Advice and publications, particularly about drugs and the law, but also more general advice and information.<br>
+					<br>
+					<b>Re-Solv</b><br>
+					30a High Street<br>
+					Stone<br>
+					Staffordshire ST15 8AW<br>
+					Tel: 01785 817885<br>
+					Fax: 01785 813205<br>
+					Advice and information about solvent misuse.<br>
+					<br>
+					<b>Tacade</b><br>
+					1 Hulme Place<br>
+					The Crescent<br>
+					Salford<br>
+					Greater Manchester M5 4QA<br>
+					Tel: 0161 745 8925<br>
+					Fax: 0161 745 8923<br>
+					E-mail: tacade@dial.pipex.com<br>
+					Health education publications include materials on alcohol and drugs for teachers, children and young people.<br>
+					<br>
+					<b>Turning Point</b><br>
+					New Loom House<br>
+					101 Back Church Lane<br>
+					London E1 1LU<br>
+					Tel: 0171 702 2300<br>
+					Fax: 0171 702 1456<br>
+					A network of more than 90 centres offering care, advice and support for people with drug, alcohol or mental health problems.<br>
+					<br>
+					<hr>
+					<br>
+					<a name="web"></a></font><font face="arial,verdana,helvetica" color="white"><b>Websites<br>
+					</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					There is a huge amount of information about drugs on the Web. The following sites are a brief selection. Many include extensive links to other relevant sites.<br>
+					<br>
+					<b>Alcohol Concern</b><br>
+					<a href="http://www.alcoholconcern.org.uk/achome.htm"><font color="#00cc00">www.alcoholconcern.org.uk/achome.htm</font></a><br>
+					Includes extensive information about alcohol and its social and personal costs.<br>
+					<br>
+					<b>Addiction Research Foundation</b> (Canada)<br>
+					<a href="http://www.arf.org/isd/info.html"><font color="#00cc00">http://www.arf.org/isd/info.html</font></a><br>
+					Public information about drugs and alcohol, plus journal and research papers.<br>
+					<br>
+					<b>Crew 200</b><br>
+					<a href="http://recomputer.electricfrog.co.uk/crew2000/crew2000.htm"><font color="#00cc00">recomputer.electricfrog.co.uk/crew2000/crew2000.htm</font></a><br>
+					Online drugs information service compiled by young volunteers.<br>
+					<br>
+					<b>Institute for the Study of Drug Dependence</b><br>
+					<a href="http://www.isdd.co.uk/"><font color="#00cc00">www.isdd.co.uk</font></a><br>
+					Includes drug information, news, details of publications and good links.<br>
+					<br>
+					<b>National Institute on Drug Abuse (US)</b><br>
+					<a href="http://www.nida.nih.gov/NIDAindex.html"><font color="#00cc00">www.nida.nih.gov/NIDAindex.html</font></a><br>
+					Contains a variety of scientific and layperson's information about drugs, including factsheets designed for children.<br>
+					<br>
+					<b>Release</b><br>
+					<a href="http://www.drugtext.nl/RELEASE/default.htm"><font color="#00cc00">www.drugtext.nl/RELEASE/default.htm</font></a><br>
+					Online newsletter.<br>
+					<br>
+					<b>The Site</b><br>
+					<a href="http://www.thesite.org.uk"><font color="#00cc00">www.thesite.org.uk</font></a><br>
+					General site for young people. There is extensive drug information plus pages on issues including education, leisure time, housing, sex and money.<br>
+					<br>
+					<b>Urban 75</b><br>
+					<a href="http://www.urban75.com/index.html"><font color="#00cc00">www.urban75.com/index.html</font></a><br>
+					Online magazine with good drugs information aimed at young people.<br>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</b></font></a><br>
+					<br>
+					</font></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"></td>
+			</tr>
+		</table>
+		<br>
+		</font>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	mushrooms.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<a name="001"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}">
+			<tr>
+				<td width="10" valign="top">&nbsp;</td>
+				<td valign="top"><a href="${max_abc}/index.html"><img src="${images_abc}/abc_title.gif" width="219" height="53" border="0"><font face="arial,verdana,helvetica" color="white"><b><br clear="all">
+					</b></font></a><font face="arial,verdana,helvetica" color="white"><b><br>
+					</b></font><font face="arial,verdana,helvetica" size="5" color="white"><b>Magic mushrooms</b></font><b><font face="arial,verdana,helvetica" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					Magic mushrooms contain natural hallucinogens. The most commonly used type in the UK is a species called <i>Psilocybe semilanceata</i>, the liberty cap, but other mushrooms of the <i>Psilocybe</i> and <i>Paneolus</i> genera, as well as the species <i>Amanita muscaria</i> (fly agaric), are also used. <i>Psilocybe</i> and <i>Paneolus</i> mushrooms are small, with pointed caps; fly agaric has a wide red cap with white spots (but see <a href="#004"><font color="#00cc00">Special Risks</font></a> below). Magic mushrooms are eaten or boiled and mixed with tea and drunk.</font></td>
+				<td width="25%" align="center" valign="middle"><img src="${images_abc}/mushrooms.gif" hspace="10" vspace="10" width="200" height="201"></td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td colspan="2"><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<br>
+					<b>Background<br>
+					</b><br>
+					Hallucinogenic mushrooms &#150; and any number of other hallucinogenic plants &#150; have been used in rituals and sacred ceremonies for thousands of years. Their modern use as a recreational drug dates mainly from the 1970s.<br>
+					<br>
+					<hr>
+					<a name="002"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people use them</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					At low doses mushrooms induce a fairly mild high &#150; you might feel relaxed and euphoric and laugh a lot. At higher doses the effects are similar to those of <a href="LSD.html"><font color="#00cc00">LSD</font></a>, but they don't last as long &#150; usually between four and nine hours.<br>
+					<br>
+					<hr>
+					<a name="003"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Why people may wish they hadn't</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					<b>In the short term</b><br>
+					Like LSD, magic mushrooms can make you feel anxious and even terrified, and in some cases disturbance can persist after the effects of the drug have worn off. However, people normally recover quite quickly without help.<br>
+					<br>
+					You may well have stomach pains, feel sick or actually throw up after taking mushrooms.<br>
+					<br>
+					<b>Dependence</b><br>
+					Magic mushrooms do not produce physical dependence and, again like LSD, they are unlikely to lead to psychological dependence because tolerance builds up very quickly with repeated doses and the desired effects disappear. Sensitivity to the drug returns after a few days.<br>
+					<br>
+					<b>In the long term</b><br>
+					There has been no research into the long-term effects.<br>
+					<br>
+					<hr>
+					<a name="004"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Special risks</b></font><b><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></b>
+					<ul>
+						<li><font face="arial,verdana,helvetica" size="2" color="white">Without question, the biggest danger posed by magic mushrooms is poisoning yourself by taking the wrong sort. Identifying mushrooms is tricky, and taking species related to magic mushrooms &#150; and looking very like them &#150; can be fatal.</font><font color="white"> </font>
+					</ul>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">
+					<hr>
+					<a name="005"></a><br>
+					</font><font face="arial,verdana,helvetica" color="white"><b>Legal status</b></font><font face="arial,verdana,helvetica" size="2" color="white"><br>
+					</font></p>
+					<p><font face="arial,verdana,helvetica" size="2" color="white">Magic mushrooms are not illegal, but the drugs psilocin and psylocybin are &#150; they are in <a href="law.html#a1"><font color="#00cc00">Class A</font></a>, like<a href="LSD.html"><font color="#00cc00"> LSD</font></a>. The crucial point is whether mushrooms containing these drugs have been <i>prepared</i>. Quite what this means is up to the courts, but it could be enough just to crush them.<br>
+					<br>
+					<hr>
+					<br>
+					<a href="${max_abc}/contents.html"><font color="#00cc00"><b>contents</font></b></a><br>
+					</font></td>
+			</tr>
+		</table>
+	</td></tr></table>
+
+	${jbc_footer}
+
+#define	poppers.html
+	${headerABC}
+		<table border="0" cellpadding="0" cellspacing="0" width="${widthABC}" bgcolor="#000000"><tr><td>
+		<P><A NAME="001"></A><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+
+			<TR>
+				<TD WIDTH="10">&nbsp;</TD>
+				<TD><A href="${max_abc}/index.html"><IMG SRC="${images_abc}/abc_title.gif" WIDTH="219" HEIGHT="53" BORDER="0"><B><FONT FACE="arial,verdana,helvetica" COLOR="#FFFFFF"><BR CLEAR="all">
+				</FONT></B></A><FONT FACE="arial,verdana,helvetica" COLOR="#FFFFFF"><B><BR>
+				</B></FONT><B><FONT FACE="arial,verdana,helvetica" SIZE="5" COLOR="#FFFFFF">Nitrites (poppers)</FONT><FONT FACE="arial,verdana,helvetica" COLOR="#FFFFFF"><BR>
+				</FONT></B><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF"><BR>
+				The stimulants/uppers amyl and butyl nitrites (alkyl nitrites
+				or poppers) are liquids derived from nitrous oxide or 'laughing
+				gas'. Yellow in colour, they are highly flammable. The name 'poppers'
+				derives from the small glass capsules in which amyl nitrite is
+				supplied on prescription, which make a popping noise when broken
+				open. Nowadays nitrites for recreational use are mainly sold in
+				small bottles, from which the vapour is inhaled. <BR>
+				<BR>
+				</FONT></TD>
+				<TD WIDTH="25%" ALIGN="CENTER"><IMG SRC="${images_abc}/poppers.gif" HSPACE="10" WIDTH="200" HEIGHT="212"></TD>
+			</TR>
+
+			<TR>
+				<TD WIDTH="10"></TD>
+				<TD COLSPAN="2">
+				<P><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF">
+				<HR>
+				<BR>
+				<B>Background<BR>
+				</B><BR>
+				Amyl nitrite was discovered in 1857. Because it widens the blood
+				vessels, it was used &shy; and is still sometimes used - as a treatment
+				for the heart condition angina. The non-medical use of amyl nitrite
+				first became popular during the 1960s. Butyl nitrite has never
+				been used medically and is now the most common nitrite used recreationally.
+				<BR>
+				<BR>
+				Amyl nitrite is, in theory, only available from chemists, but
+				butyl nitrite can be sold anywhere, and is available in some clothes
+				shops, record shops and sex shops and in some clubs and bars.<BR>
+				<BR>
+
+				<HR>
+				<BR>
+				<A NAME="002"></A></FONT><B><FONT FACE="arial,verdana,helvetica" COLOR="#FFFFFF">Why people use them</FONT><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF"><BR>
+				</FONT></B><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF"><BR>
+				The widening of the blood vessels caused by nitrites lowers the
+				blood pressure and so makes the heart beat more quickly, pumping
+				blood to the brain. This results in a dizzy rush of energy, heightening
+				sensory experiences, after which you may feel light-headed for
+				a few minutes. Some gay men use nitrites because they relax the
+				muscles, making anal sex easier. Nitrites are also said to delay
+				and prolong orgasm, but the effects last for five minutes at the
+				most.<BR>
+				<BR>
+
+				<HR>
+				<A NAME="003"></A><BR>
+				<BR>
+				</FONT><B><FONT FACE="arial,verdana,helvetica" COLOR="#FFFFFF">Why people may wish they hadn't </FONT><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF"><BR>
+				</FONT></B><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF"><BR>
+				<B>In the short term<BR>
+				</B>Some people experience a thumping headache, flushes, dizziness
+				and nausea, and despite nitrites' reputation for improving sex,
+				they may prevent some men from getting an erection. There is also
+				a small risk that a user will black out. Repeated use can cause
+				a rash around the mouth and nose.<BR>
+				<BR>
+				<B>Dependence<BR>
+				</B>Nitrites do not lead to physical or psychological dependence,
+				though some people may come to feel reliant on them in specific
+				situations, particularly for having sex. Tolerance develops after
+				two or three weeks of frequent use, but sensitivity is regained
+				after a few days' abstinence.<BR>
+				<BR>
+				<B>In the long term<BR>
+				</B>There are no known long-term adverse effects from inhaling nitrites.<BR>
+				<BR>
+
+				<HR>
+				<A NAME="004"></A><BR>
+				</FONT><B><FONT FACE="arial,verdana,helvetica" COLOR="#FFFFFF">Special risks</FONT><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF"><BR>
+				</FONT></B></P>
+				<UL>
+					<LI><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF">Nitrites will burn the skin if spilled on it.<BR>
+					</FONT>
+					<LI><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF">Nitrites can be fatal if swallowed, and should not be used at
+					all by anyone with low blood pressure, a heart or breathing problem,
+					or glaucoma. Using other stimulants at the same time greatly increases
+					the risks.<BR>
+					</FONT>
+					<LI><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF">Mixing nitrites with new drug Viagra, which is designed as a temporary
+					cure for impotence, is highly dangerous and can be fatal, as both
+					lower the blood <A NAME="Anchor"></A>pressure.</FONT><FONT COLOR="#FFFFFF"> <BR>
+					<BR>
+					</FONT>
+				</UL>
+				<P><FONT COLOR="#FFFFFF">
+				<HR>
+				</FONT></P>
+				<P><B><FONT FACE="arial,verdana,helvetica" COLOR="#FFFFFF"><A NAME="005"></A>Legal status</FONT></B><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF"><BR>
+				</FONT></P>
+				<P><FONT FACE="arial,verdana,helvetica" SIZE="2" COLOR="#FFFFFF">It's not illegal to possess nitrites or to sell butyl nitrite.
+				In theory only licensed chemists can sell amyl nitrite.<BR>
+				<BR>
+
+				<HR>
+				<BR>
+				<B><A href="${max_abc}/contents.html"><font color="#00cc00">contents</font></A></B><BR>
+				<BR>
+				</FONT></TD>
+			</TR>
+		</TABLE>
+	</td></tr></table>
+
+	${jbc_footer}

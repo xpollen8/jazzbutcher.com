@@ -1,0 +1,702 @@
+#define headerLetters13Sep94(title)
+	${mkHeader(section=Letters,
+		passthru=<a href="${jbc_letters}/94Sep13"><b>13Sep94</b></a>,
+		title=${title})}
+
+#define	index.html
+#live	if (getval(page) = index.html)
+	${mkHeader(section=Letters, title=13Sep94)}
+
+	<center>
+		<a href="${jbc_letters}/94Sep13/intro.html">
+		Introduction</a>
+		<br><a href="${jbc_letters}/94Sep13/gigs.html">
+		Recent Gig Reviews</a>
+		<br><a href="${jbc_letters}/94Sep13/lynch.html">
+		David Lynch -v- JBC</a>
+		<br><a href="${jbc_letters}/94Sep13/albums.html">
+		Re-Issues</a>
+		<br><a href="${jbc_letters}/94Sep13/harlan.html">
+		Harlan</a>
+		<br><a href="${jbc_letters}/94Sep13/lorre.html">
+		Peter Lorre</a>
+		<br><a href="${jbc_letters}/94Sep13/politics.html">
+		Politics</a>
+		<br><a href="${jbc_letters}/94Sep13/sis.html">
+		Sister Death</a>
+		<br><a href="${jbc_letters}/94Sep13/misc.html">
+		Odds-n-Ends</a>
+		<br><a href="${jbc_letters}/94Sep13/news.html">
+		News</a>
+		<br><a href="${jbc_letters}/94Sep13/next.html">
+		Up-coming gigs</a>
+		<p><img width=176 height=176 alt="[signature]"
+		src="${jbc_images}/19940913/94Sep13_sig.gif">
+	</center>
+
+	${jbc_footer}
+#live	endif
+
+#define	albums.html
+#live	if (getval(page) = albums.html)
+	${headerLetters13Sep94(title=Re-Issues)}
+
+	<b>RE-ISSUES</b>
+	<p>
+	${bacon}!
+	${scandal}!
+	${sex}!
+	${dist}!
+	<p>
+	We are continuing our negotiations over the re-releases
+	of these fairly amusing recordings.  Fire Records have
+	accepted our version of the contract, and we have given
+	a permissable amount of space to them.
+	<p>
+	There remains one enormous sticking point (a legal nicety
+	which would bore you all to tears, but which means Real
+	Money to Fire and to us), so nobody hold their breath
+	yet, okay.  Nonetheless, progress is being made.
+	<p>
+	I don't suppose the "product" will appear in very altered
+	form.  After all, they were "good enough" to go out that
+	way at the time.  It seems like cheating to "soup up"
+	and LP for re-release.  That said, ${sex} will probably be
+	slightly extended.  All in the best possible taste, of course...
+	<p>
+	<blockquote>
+	<tt>
+	<nobr>&gt; Date: Sat, 18 Jun 1994 16:11:00 BST<br></nobr>
+	<nobr>&gt; From: Cliff Lovelock<br></nobr>
+	<nobr>&gt; Subject: So what were the elephants doing there, apart from sinking?<br></nobr>
+	<nobr>&gt; Ed seems to think that this re-release (of the Glass material) will<br></nobr>
+	<nobr>&gt; be selective, i.e. only "good" albums will be chosen (Good job<br></nobr>
+	<nobr>&gt; "Condition Snooze" wasn't released on Glass or we'd never hear of it<br></nobr>
+	<nobr>&gt; again - which might not be such a bad thing).<br></nobr>
+	<nobr>&gt; Cheers, Cliff.</nobr>
+	</tt>
+	</blockquote>
+	Cliff - "Condition Snooze" is rude.
+	<br>Might I ask you
+	to listen again - with a bucket of crystal meth if necessary?
+	<p>
+	<blockquote>
+	<tt>
+	<nobr>&gt; Date: Tue, 21 Jun 94 16:45:07 EDT<br></nobr>
+	<nobr>&gt; From: Mojo90210@aol.com<br></nobr>
+	<nobr>&gt; Subject: Condition Blue = Masterwork<br></nobr>
+	<nobr>&gt; Gang, no two ways, ${blue} is the best LP Pat's done and may<br></nobr>
+	<nobr>&gt; ever do (if Love Bus is any indication). So much stuff on other discs<br></nobr>
+	<nobr>&gt; is borderline "novelty" music, Condition Blue stands tall from start<br></nobr>
+	<nobr>&gt; to finish. I really value the other stuff, but Condition Blue demands<br></nobr>
+	<nobr>&gt; to be taken seriously. (I'm only sorry that Pat had to go through hell<br></nobr>
+	<nobr>&gt; to inspire it.)<br></nobr>
+	<nobr>&gt; Vaya Con Dios,<br></nobr>
+	<nobr>&gt; Mojo</nobr>
+	</tt>
+	</blockquote>
+	Oh, and THANKS, Mojo!  Vaya con Dios yourself, hombre.
+	<p>
+	See Cliff? SOMEONE was nice about the fucker.
+
+	${jbc_footer}
+#live	endif
+
+#define	gigs.html
+#live	if (getval(page) = gigs.html)
+	${headerLetters13Sep94(title=Re-Gigs)}
+
+	${green} now fully re-assimilated into live line-up, alongside
+	${dooj}, ${gab}, ${hend} and myself.  Since when we have played:
+	<p>
+	<a href="${jbc_gigs}/1994/Sep.html">
+	<b>FESTIVAL ROCK AU MAXIMUM, CLERMONT-FERRAND, FRANCE</b></a>
+	<blockquote>
+	Very good.  Big hall, big P.A., big crowd.  Also on the
+	bill; The Posies, who all wore dresses, and Nyan Ferties,
+	who, being Scots, all wore kilts.  Thus, it was left to the
+	JBC to wear the trousers, which we duly did.  Dooj's were
+	exceptional.  ${filth} made its live debut and worked well.
+	</blockquote>
+	<b>FRIDGE TWO at SLURPS, NORTHAMPTON</b>
+	<dl>
+	<a href="${jbc_gigs}/1994/Aug3.html">
+	<dd>3 Aug 94</a>
+	<blockquote>
+	As detailed already by Matt Cockerill, who had a chat with me that
+	evening.  Very enjoyable to be able to put on the whole band
+	here in Northampton, and - indeed - the local folks seemed
+	glad that we had bothered.  Lots of mad decor out in the
+	yard where we played; it looked more "Apocalypse Now!" to
+	me, with all the drunks stumbling about in the psychedelic
+	half-dark, but I guess early Floyd is pretty cool, too.  A
+	deliberately good-natured set, complete with gratuitous ${vu}
+	cover right at the top.
+	</blockquote>
+	<a href="${jbc_gigs}/1994/Aug6.html">
+	<dd>6 Aug 94</a>
+	<blockquote>
+	Transambient Communications were billed to open, but
+	recording commitments prevented them.  Instead their
+	collaborator, Dave Kirby, presented his live sound system.
+	On the dark and stormy night, under lights, it was hypnotic.
+	${eg}, on the other hand,
+	were just chaotic.
+	Amid rumours that <a href="${jbc_people}/von_dammerung.html">Karel</a>
+	was being impersonated by someone else, and
+	confusion as to the origins of the mystery live vocals that
+	had no visible source, violence broke out between the
+	audience, the promoters, the bar owner, and, eventually, the
+	band.  The event closed in confusion, during which it was
+	observed that neither the brothers, not any member of the
+	JBC could be found.  We were here getting pissed.
+	</blockquote>
+	</dl>
+	<b>THE BORDERLINE, LONDON ENGLAND</b>
+	<a href="${jbc_gigs}/1994/Aug17.html">
+	<br>17 Aug 94</a>
+	<blockquote>
+	JBC in business success shock horror!  Pissed at our agent
+	for being useless, we booked this ourselves.  As a
+	consequence we were sent a contract more suited to joke
+	pub-rock groups from Petersborough.  You know the sort of
+	thing: "You get 47&#190; of the door between 8:45 and 10:17,
+	minus &#163;125 for the lights".  Very un-trusting, and a
+	bit insulting, really.  Well, we went down there and played,
+	and it looked like there were a good few civilians there.
+	When Kathie went to get paid they gave her just over
+	&#163;400, which is twice what we would have asked for in
+	the bloody first place!  Still, if that's the way they
+	wanted to do it, hey gang?
+	<p>
+	The show was loud and swinging.  It seemed a little chaotic
+	to me here and there, but Gabriel, who is fussier than me in
+	this department, said he thought it was the best that this
+	line-up has played.  So that's okay, then.  Also, we met an
+	old friend who is now organising tours (for The Cramps,
+	among others), who was well into the band, and who has since
+	replaced that scaley and unemployable agent.  Nice evening!
+	Also re-united with Harry, of Magic Stick fame (US '89), who
+	had turned up, having just returned to London from living in
+	Germany.  Yes, a lovely night.
+	</blockquote>
+	<b>FLEECE AND FLIRKIN BRISTOL ENGLAND</b>
+	<a href="${jbc_gigs}/1994/Jul26.html">
+	<br>26 Jul 94</a>
+	<blockquote>
+	Nearly forgot this one, as it came before Northampton and London.
+	A smallish crowd, but perfectly formed.  All of ${strange}
+	showed up with wives, girlfriends and family pets, as did
+	half ${aero}, and Donald Ross-Skinner.  We played well, the
+	P.A. was fine, and the party afterwards was long.
+	${hend}, Dylan nut, had been warned not to talk Gerard Langley about
+	the Big Z., but went ahead and did it anyway.  Most
+	amusing.
+	</blockquote>
+
+	${jbc_footer}
+#live	endif
+
+#define	harlan.html
+#live	if (getval(page) = harlan.html)
+	${headerLetters13Sep94(title=Harlan)}
+
+	<b>THE <a href="${jbc_lyrics}/harlan.html">
+	HARLAN</a> THING</b>
+	<p>
+	<blockquote>
+	<tt>
+	<nobr>&gt; Date: Thu, 14 Jul 1994 23:18:05 -0400<br></nobr>
+	<nobr>&gt; From: Christopher Camfield (ccamfiel@undergrad.math.uwaterloo.ca)<br></nobr>
+	<nobr>&gt; Subject: Harlan<br></nobr>
+	<nobr>&gt; I just wanted to mention that I recently started reading Harlan<br></nobr>
+	<nobr>&gt; Ellison's stories, and got a complete blast (and a bit of a chill)<br></nobr>
+	<nobr>&gt; when I recognized what the lines in the song about Jeffy are about<br></nobr>
+	<nobr>&gt; ("Jeffy is 5... the same as he was in 1959..." I think it goes) -<br></nobr>
+	<nobr>&gt; one of Harlan's stories is called Jeffy, and it's a classic.<br></nobr>
+	<nobr>&gt; Quite spooky.<br></nobr>
+	<nobr>&gt; The other thing that flipped in my mind was what "We're not alone"<br></nobr>
+	<nobr>&gt;  meant. I figured, before reading any of the stories, that it meant<br></nobr>
+	<nobr>&gt; there were aliens out there or something.</nobr>
+	</tt>
+	</blockquote>
+	Yes, indeed, Chris.  You got it.  "Jefy Is Five" is one
+	of a number of Harlan Ellison story-titles that litter
+	the lyrics to the song that
+	bears his name.  Like:
+	<blockquote>
+	<br>"Time's A-Wastin'"
+	<br>"I Have No Mouth And I Must Scream"
+	<br>"A Boy And His Dog"
+	<br>"Alone Against Tomorrow"
+	</blockquote>
+	It's what I call a T-Rex Letter.  You know, where fans of a group
+	write a letter about that group, quoting all their song titles?  One
+	of those.  In an introduction to one of his collections, Mr. Ellison
+	writes that he tells these stories to tell people that "You Are Not
+	Alone"... because we're ALL IN THE SHIT TOGETHER!
+	<p>
+	What a dude!
+	<p>
+	(He does, incidentally, keep his number in the L.A. phone
+	book.  That line is true.  So, I should warn you, is
+	the one about his not suffering fools.  He is an impatient
+	man, and should not be approached for quotable quotes
+	on the subject of the JBC by those who could do without
+	being told to... uh... go someplace else.
+
+	${jbc_footer}
+#live	endif
+
+#define	intro.html
+#live	if (getval(page) = intro.html)
+	${headerLetters13Sep94(title=Intro)}
+
+	Hello, Boss.
+	<p>
+	Thanks for writing and keeping me up to date with Internet
+	developments here in the Physical World.  All us bog
+	people sure does appreciate it, sir...
+	<p>
+	Actually, I wish I knew a way of getting onto a computer
+	so that I could see some of this stuff.  I may even be
+	able to access it via a pal at the local college.  We'll
+	see, I guess.  Will anyone recognise me?  Well, that's for the future.
+	<p>
+	Here, as normal, is a bunch of stuff in response to what's
+	been on lately, plus various updates.  Life here in Northampton
+	has been hectic and enjoyable since the
+	<a href="${jbc_letters}/94Sep13/gigs.html">Fridge Two series
+	of gigs</a>; the party vibe just didn't dissipate somehow.
+	This has been expensive, exhausting, not particularly
+	productive and lots o fun.
+	<p>
+	I've seen ${strange} a couple of times (my opinion: Grand/<a
+	href="${jbc_people}/paul_mulreany.html">Mulreany's</a>
+	opinion: ${haus}), played a little bit with my band (see the
+	accompanying), formed a formidable desire for Feta cheese
+	At All Times Of Day And Night, and some other things
+	that I've forgotten.  Little Jake is fine.  Kathie remains
+	a tower of strength, organisation and Reasonableness. (Also foxy).
+	<p>
+	Shrike have split up - it all just got too much.  Alan
+	is performing and demoing "solo", with a spot of vocal
+	help from Sophie the 'cello.  He calls his act Best Ever
+	Redemption, which may be overdoing it, but it's a fair
+	title all the same.  Julie Starchild has also been making
+	tapes by herself.  I haven't heard these, but I hear
+	they're smart, so maybe I shall.  Paul and Musical Dave
+	and Sophie are headlong into the Ubu Swirl (Hobo Swill)
+	thing.  They've made a demo and seem quite positive.
+	<p>
+	(Jake has just caught the Biggest Dragonfly in Europe.)
+	<p>
+	(And eaten it.)
+	<p>
+	Kathie sez "Hi", so do I.
+	Hope all is rockin'
+	<center>
+	<br><img width=176 height=176 alt="[signature]"
+	src="${jbc_images}/19940913/94Sep13_sig.gif">
+	</center>
+
+	${jbc_footer}
+#live	endif
+
+#define	lorre.html
+#live	if (getval(page) = lorre.html)
+	${headerLetters13Sep94(title=Peter Lorre)}
+
+	<a href="${jbc_lyrics}/peter_lorre.html"><b>PETER LORRE</b></a>
+	<p>
+	<blockquote>
+	<tt>
+	<nobr>&gt; Date: Fri, 29 Jul 1994 19:09:53 -0400<br></nobr>
+	<nobr>&gt; From: Christopher Camfield (ccamfiel@undergrad.math.uwaterloo.ca)<br></nobr>
+	<nobr>&gt; Subject: Peter Lorre question<br></nobr>
+	<nobr>&gt; I was typing up the lyrics for Peter Lorre earlier and a question<br></nobr>
+	<nobr>&gt; floated into my mind - Is the song supposed to be serious or sarcastic?<br></nobr>
+	<nobr>&gt; I've only seen Peter Lorre in _Casablanca_, _The Maltese Falcon_,<br></nobr>
+	<nobr>&gt; and _All through the night_. In _Falcon_ and _All through..._ he is<br></nobr>
+	<nobr>&gt; rather NOT like he's described in the song - he's NOT the guy you'd<br></nobr>
+	<nobr>&gt; want to trust, like the song says, and in _Falcon_ he is scared of<br></nobr>
+	<nobr>&gt; Sydney Greenstreet's character. Is anyone on the list a b&w film buff,<br></nobr>
+	<nobr>&gt; who can say a bit more about Peter Lorre? I presume the song was written<br></nobr>
+	<nobr>&gt; because he died not long before? I don't know.<br></nobr>
+	<nobr>&gt; Chris</nobr>
+	</tt>
+	</blockquote>
+	He looks really cool.  I was not fully sober when I first
+	had the idea of writing about him.  It's an imaginative
+	thing; yeah, he was the bad guy, but imagine some scary-intrigue-casbah
+	type picture where he was your pal.  Yeah?
+
+	${jbc_footer}
+#live	endif
+
+#define	lynch.html
+#live	if (getval(page) = lynch.html)
+	${headerLetters13Sep94(title=David Lynch)}
+
+	<b>DAVID LYNCH AND <a href="${jbc_lyrics}/angels.html">ANGELS</b></a>
+	<p>
+	<blockquote>
+	<tt>
+	<nobr>&gt; Date: Sat, 30 Jul 94 15:17:26 EST<br></nobr>
+	<nobr>&gt; From: George Heard<br></nobr>
+	<nobr>&gt; Subject: Look out - Western Family again<br></nobr>
+	<nobr>&gt; The version of "Angels" off this CD has a reference I haven't picked<br></nobr>
+	<nobr>&gt; up on before until just now. In the middle of the song, Pat sings<br></nobr>
+	<nobr>&gt;<br></nobr>
+	<nobr>&gt; "In heaven, everything is fine<br></nobr>
+	<nobr>&gt; In heaven, everything is fine..."<br></nobr>
+	<nobr>&gt;<br></nobr>
+	<nobr>&gt; EXACTLY the same as in "Eraserhead".<br></nobr>
+	<nobr>&gt; Yay! Now I have a link between the JBC and David Lynch as well as a<br></nobr>
+	<nobr>&gt; link between the JBC and Laurie Anderson<br></nobr>
+	<nobr>&gt; George (now seeking a link between Laurie Anderson and David Lynch)<br></nobr>
+	</tt>
+	</blockquote>
+	<p>
+	Well, hello Tasmania!  I am, let me say, ASTONISHED that
+	people (well, a person) are buying our stuff so far from
+	home!  Hope you like it there.
+	<p>
+	The "Heaven" bit on ${angels} is, of course, a total steal
+	from <b>Eraserhead</b>.  It was ${dooj}'s idea, and it
+	fitted perfectly with the mood of the time.  There it is.
+	<p>
+	See also the <b>Twin Peaks</b> reference in ${honey} on
+	<a href="${jbc_albums}/blue.html">Condition Mogadon</a>.
+	By the way, George,
+	<a href="http://web.city.ac.uk/citylive/Dave.html">David Lynch</a>
+	and Laurie Anderson use the same pet-psychologist.
+	Dogs on Prozac - it's already happening!
+
+	${jbc_footer}
+#live	endif
+
+#define	misc.html
+#live	if (getval(page) = misc.html)
+	${headerLetters13Sep94(title=Odd N Ends)}
+
+	<b>GROLSCH</b>
+	<p>
+	<blockquote>
+	<tt>
+	<nobr>&gt; Date: Mon, 6 Jun 94 11:34:19 BST<br></nobr>
+	<nobr>&gt; From: smeats@lincoln.gpsemi.COM (Sad Git on the Internet)<br></nobr>
+	<nobr>&gt; Subject: Re: Black Eg<br></nobr>
+	<nobr>&gt; Don't drink too much Grolsch. It makes yer head hurt.</nobr>
+	</tt>
+	</blockquote>
+	I too much Grolsch, your head Will Hurt.  More than with
+	many other beers, I might point out to the sceptical.
+	Grolsch has a very attractive old-fashioned bottle, and
+	its bizarre name leads the Unwary to imagine that it
+	must be the product of generations of dedicated Germanic
+	brewing obsessives.  Well, it's not.  It's Dutch and
+	it will make your Head Hurt.
+	<p>
+	<b>RIDE</b>
+	<blockquote>
+	<tt>
+	<nobr>&gt; Date: Wed, 8 Jun 94 11:26:10 BS<br></nobr>
+	<nobr>&gt; From: joe@anvil.co.uk (Joe Nicholson)<br></nobr>
+	<nobr>&gt; Subject: e.g. black undrugged<br></nobr>
+	<nobr>&gt; Undrugged: Albert Hall, 4th June<br></nobr>
+	<nobr>&gt; Lowlights: The Creations (over the hill hippies), Ride (under the<br></nobr>
+	<nobr>&gt; hill hippies)</nobr>
+	</tt>
+	</blockquote>
+	Yes, they were Bloody Awful at the Albert Hall, weren't
+	they?  A rented sitar!  Sophie the cellist, who ought
+	to know, said that the string section (yes, "string section")
+	had been really badly arranged.  My guess is that it
+	must have been the work of Andy "I'm A Genius And My
+	Swedish Wife Has A Record Contract Of Her Own, Thank
+	You Very Much" Bell.  Good old Andy.  It was like watching
+	Free!  Rock shat.
+	<p>
+	<b>HELLO MISTER MITCHELL R. DICKERMAN : THIS ONE'S FOR YOU</b>
+	<blockquote>
+	<tt>
+	<nobr>&gt; Date: Sun, 14 Aug 1994 11:52:04 -0400 (EDT)<br></nobr>
+	<nobr>&gt; From: mrd@world.std.com (Mitchell R Dickerman)<br></nobr>
+	<nobr>&gt; Subject: ${strange}, ${bwatch}<br></nobr>
+	<nobr>&gt; In the 'thank you's on The Black Watch's latest, _Amphetamines_,<br></nobr>
+	<nobr>&gt; they thank Butchie. Anyone know the connection? Did they open for<br></nobr>
+	<nobr>&gt; him on his last trip to the West Coast, where they're from?<br></nobr>
+	<nobr>&gt; Oh, and the album is excellent, strongly recommended.<br></nobr>
+	<nobr>&gt; I'm surprised there hasn't been more talk about Strangelove.<br></nobr>
+	<nobr>&gt; After leaving the Blue Aeroplanes (whose new album, _Life Model_,<br></nobr>
+	<nobr>&gt; is good but misses his touch), Alex Lee formed Strangelove.</nobr>
+	</tt>
+	</blockquote>
+	${bwatch} come from L.A.  We have got to know them
+	pretty well since we met on tour in 1989.  They're good
+	people.  They opened for us at <b>The Roxy</b> in
+	<a href="${jbc_gigs}/1992/Jun5.html">June
+	1992</a>.  J'Anne Jacobi, their violin vixen, played with
+	us that night on ${rachel}, which REALLY dragged out the
+	${vu} influences, as you can imagine.  I'm glad they gave
+	me a credit.  I'd be gladder if they gave me a copy of
+	the LP.  We would like to play with them again in America.
+	<p>
+	${strange} are grand.  They are
+	<blockquote>
+	<br>${lix} - Guitar, songwriter,
+	Provisional Member Of The JBC In Perpetuity.
+	<br>John Langley - Drums, ex ${aero}, brother of Gerard,
+	all round leading human being.
+	<br>Patrick Duff - Singer, not really as miserable as all that...
+	<br>${joea}- Bass, ex-${levit}, played all the bass on <a
+	href="${jbc_albums}/blue.html">Condition Mandrax.</a>
+	<br>${jules} - Guitar, played
+	lead with the JBC on 1990 tour of USA and Canada.
+	</blockquote>
+	I've seen them twice on the recent U.K. tour and they were very good.
+	A severely cranked <a href="${jbc_people}/paul_mulreany.html">Mulreany</a>,
+	however, watching the London show, pronounced: "It's fuckin' ${haus},
+	innit?"  I don't know about any touring plans for
+	Strangelove in the US.  Sorry.
+
+	${jbc_footer}
+#live	endif
+
+#define	news.html
+#live	if (getval(page) = news.html)
+	${headerLetters13Sep94(title=News)}
+
+	<b>THE BAD NEWS</b>
+	<p>
+	<blockquote>
+	We shall not be coming to America or Canada in 1994.
+	<p>
+	We are simply NOT getting the support of record companies
+	in that part of the world, especially in Canada, where
+	Sony are showing no sign of either (i) Intelligence,
+	or (ii) Any desire to make money out of anything ever.
+	This we can only put down to a virulent case of Corporate
+	Mentality.  Never mind.
+	<p>
+	We are, actually, slightly re-assured that the problems
+	stem from the arrangement that Sony have entered into
+	with ${creat}.  We are afraid that the problems were
+	beginning with a lack of interest in London, which then
+	radiated out to places where it would undermine whatever
+	work we had done ourselves.
+	<p>
+	Now, however, it appears that ${creat} have been experiencing
+	these difficulties with Sony over a number of artists
+	and in a number or territories.  The point of this is
+	that it IS something that ${creat} are trying to sort
+	out.  Thus, we can at least count on them in this situation.
+	Likewise, we know that something IS being done.  It could
+	have been worse, guys.
+	<p>
+	Next LP, at least we will know what we are up against,
+	and prepare in advance.  Further, we should look at a
+	simultaneous release Here and There, which will enable
+	us to move a lot more quickly and co-ordinatedly.  This
+	wasn't possible last time, because ${bus} came out here
+	before the Sony Thing was fully set up.  next time, we
+	shan't waste so much time.
+	</blockquote>
+	<p>
+	<b>THE GOOD NEWS</b>
+	<p>
+	<blockquote>
+	It's been a long time since <a href="${jbc_albums}/bus.html">Love
+	Bus</a> came out here.  If we can't take it round North
+	America right now, then we might as well get in and record
+	a new LP.
+	<p>
+	And that is what we're going to do.  We've got the money
+	off ${creat}, and the studio is booked.  We go in on
+	16th October.  Release is planned for the end of January.
+	We should be moving into Europe around March '95, and
+	then go on more or less directly to North America.  (Pretty
+	much a copy of the schedule for "${fishco})  The live
+	band will do the "core" of the LP, with help from the
+	Provisional Members.  Musical Direction will be down
+	to me; mixing will be done by ${dj}.
+	</blockquote>
+	<p>
+	<b>THE ORDINARY NEWS</b>
+	<p>
+	<blockquote>
+	We shall be playing at <b>The Boat Race</b>, Cambridge,
+	England on <a href="${jbc_gigs}/1994/Oct7.html">7th October 1994</a>.
+	After we finish the LP, in mid-November, we are aiming
+	for a few European dates to take us up to Christmas.
+	<p>
+	The JBC Christmas Party will take place in December at Slurps,
+	Northampton.  They will have a proper music license by
+	then, so it will be a full-band-and-guests spectacular.
+	</blockquote>
+
+	${jbc_footer}
+#live	endif
+
+#define	next.html
+#live	if (getval(page) = next.html)
+	${headerLetters13Sep94(title=Up-coming Gigs)}
+
+	<b>Upcoming Gigs</b>
+	<br><a href="${jbc_gigs}/1994/Oct7.html"><b>7 Oct 94</b></a>
+		- The Boat Race, Cambridge, England
+	<br><a href="${jbc_gigs}/1994/Oct12.html"><b>12 Oct 94</b></a>
+		- Slurp's Wino Bar, Northampton, England
+	<br><a href="${jbc_gigs}/1994/Dec21.html"><b>21 Dec 94</b></a>
+		- Slurp's Wino Bar, Northampton, England
+
+	${jbc_footer}
+#live	endif
+
+#define	politics.html
+#live	if (getval(page) = politics.html)
+	${headerLetters13Sep94(title=Politics)}
+
+	<a name="chang">
+	How can you tell when a politician is lying?
+	<br>Their lips move.
+	<p>
+	<blockquote>
+	<tt>
+	<nobr>&gt; Date: Mon, 01 Aug 94 09:42:10 EDT<br></nobr>
+	<nobr>&gt; From: BertieV@aol.com  (John Ford)<br></nobr>
+	<nobr>&gt; Subject: Politics, toilet training, etc..<br></nobr>
+	<nobr>&gt; David, I was in particular thinking of an interview I read in the<br></nobr>
+	<nobr>&gt; mid-eighties --a long time ago, to be sure--in which he referred<br></nobr>
+	<nobr>&gt; rather even-handedly to the U.S. as 'the most evil regime the world<br></nobr>
+	<nobr>&gt; has ever created'</nobr>
+	</tt>
+	</blockquote>
+	As <a href="${jbc_people}/david_whittemore.html">David</a>
+	pointed out "Why Vote For The Lesser Evil?" is a slogan
+	from a crazed bunch of Americans who set up their own
+	political "party" at the last election.  The party, in fact,
+	of The Great Cthulhu.
+	<p>
+	Who was an enormous, unspeakable evil and ancient... THING in the
+	works of <a
+	href="http://elmer-fudd.cs.berkeley.edu/people/davesimp/lovecraft/lovecraft.html">
+	H.P. Lovecraft.</a>  So you can see what they were saying!  It
+	seemed a neat response to the common modern problem;
+	whoever you vote for they all behave the same.  And let
+	me say it again, <i>"Chang"</i> is London slang for Columbia's
+	No. 1 Export.  As far as that song goes, I reckon things
+	couldn't be clearer.  If the line "He never smokes, but
+	he sure inhales" reminds anyone of a contemporary politician...
+	well, hey, it's topical, and it also says exactly what
+	I want to say.
+	<p>
+	If John read an interview with me from the mid-eighties,
+	yes, he would be in a position to call some things "sophomoric"
+	(fortunately, I speak American and do not need to have
+	this term explained to me..)
+	<p>
+	Two things about interviews and the mid-eighties:
+	<blockquote>
+	1)
+	Before we first visited America (which was the summer of '86, not
+	long after the "still-hasn't-been-justified" bombing of Tripoli in
+	Libya) we saw things from the typical young European viewpoint.  A
+	distant, probably hostile land gave us an easy focus; it's easy to
+	blame all of the world's evils on the mechinations of a sinister,
+	powerful, far-away state of which one knows very little.  (Remember,
+	"The Evil Empire" and all that cak about Moscow?)  Hanging out, as we
+	were, with young, idealistic Europeans, whose countries had twice been
+	racked with war in the last sixty years, and who were clearly worried
+	about a Superpower confrontation taking place on their turf, it was
+	easy for us to build up a bad view of America.  Eventually, continued
+	exposure to Real Life in the US caused us to change our views a bit.
+	So did historical developments.  Not before '88 at the earliest,
+	though.  These things take time.
+	</blockquote>
+	<blockquote>
+	2) In the mid-eighties there were still a lot of people who would want
+	to meet us or interview us because we seemed like a new group to them,
+	and we might perhaps be famous, or something.  Thus we got interviewed
+	by a lot of people who weren't really interested in the JBC or what it
+	thought.  People who wouldn't necessarily understand our experiences
+	(in terms of "where we were coming from"), wouldn't be sufficiently
+	interested to cop for anything more than the usual "lefty band"
+	schtick, and who - in an inevitable few cases - wouldn't actually be
+	that bright!  Even a really enjoyable interview comes out with things
+	in it that are hard to recognise as your own opinions or remarks.  A
+	mediocre interview, carried out with a dull and disinterested person
+	by a bored and unsympathetic band, can come out making Ronald
+	MacDonald looking like Geoffrey Dahlmer (in fact, now I come to
+	mention it, they do have a couple of points in common, don't they?).
+	</blockquote>
+
+	${jbc_footer}
+#live	endif
+
+#define	sis.html
+#live	if (getval(page) = sis.html)
+	${headerLetters13Sep94(title=Sister Death)}
+
+	<b>THE
+	<a href="${jbc_mp3}/sisdeath.mp3">${icon_audio}</a>
+	<a href="${jbc_lyrics}/sister_death.html">SISTER DEATH</a> THING</b>
+	<blockquote>
+	<tt>
+	<nobr>&gt; Date: Mon, 15 Aug 1994 15:51:08 -0500<br></nobr>
+	<nobr>&gt; From: rstill@utdallas.edu<br></nobr>
+	<nobr>&gt; Subject: JBC query<br></nobr>
+	<nobr>&gt; This might be a FAQ (I'm new here), but does anyone think<br></nobr>
+	<nobr>&gt; the song "Sister Death" is a reference to the character Death<br></nobr>
+	<nobr>&gt; from Gaiman's Sandman?<br></nobr>
+	<nobr>&gt; My case for Sister Death deriving from the Sandman<br></nobr>
+	<nobr>&gt; comic is somewhat circumstantial. First, Death is Dream's sister,<br></nobr>
+	<nobr>&gt; ergo Sister Death. Second, Death's role in Gaiman's cosmology is to<br></nobr>
+	<nobr>&gt; escort dying souls to their post-corporeal destinations--thus<br></nobr>
+	<nobr>&gt; accounting for the line "Sister Death get me out of here"</nobr>
+	</tt>
+	<p>
+	<tt>
+	<nobr>&gt; Date: Mon, 15 Aug 1994 17:10:46 -0700 (PDT)<br></nobr>
+	<nobr>&gt; From: Glen Davis<br></nobr>
+	<nobr>&gt; Subject: JBC query (fwd)<br></nobr>
+	<nobr>&gt; Very interesting someone asked this today.<br></nobr>
+	<nobr>&gt; Sister Death is one of my favorite JBC songs and I was thinking<br></nobr>
+	<nobr>&gt; about its inspiration just yesterday.<br></nobr>
+	<nobr>&gt; I picked up a copy of Anne Rice's, 'Interview with the Vampire',<br></nobr>
+	<nobr>&gt; this week-end and was surprised to see that the 'main' vampire,<br></nobr>
+	<nobr>&gt; Lestat, refers to a young vampire girl in the book as (among other<br></nobr>
+	<nobr>&gt; names), you guessed it, Sister Death.</nobr>
+	</tt>
+	</blockquote>
+	<p>
+	Inspiration?
+	<br>Explication!
+	<p>
+	The inspiration for this tune, initially, came from St. Francis of
+	Assisi.  You know the chap - "Hello, brother donkey.  Hello, Sister
+	Milkfloat..."  Big in the world of Poor-But-Honest Christianity.  Got
+	made a saint...
+	<p>
+	Well, according to some source or other to which I was exposed under
+	education, his last words were "Come, Sister Death..."
+	<p>
+	There you go.  Beyond that, the lyric was written very quickly and
+	without much conscious thought, which means that it's The Real Stuff
+	(as it were).  It also, however, means that - since I was listening to
+	${star}'s 3rd LP an awful lot round that time (Dec. '89) - I nicked
+	the "get me out of here" line wholesale from <i>Night Time</i>.
+	<p>
+	St. Francis, Alex Chilton and Yer Actual Life - those are the main
+	constituents.  I've never seen <b>Sandman</b>.  I did read a little
+	Anne Rice, but I thought it was a tad... muddled, if you like.  She
+	seems to make the rules of Being Undead up as she goes along.  Having
+	been raised on Uncle Terry's vampire pictures since the age of about
+	six, I feel that i <b>know</b> the rules, and cling to what I learned
+	as a youth.  Don't forget, folks - after you stake 'em, you got to
+	CHOP OFF THE HEAD, or it ain't nothing but a sequel in the works.
+
+	${jbc_footer}
+#live	endif
+

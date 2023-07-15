@@ -1,0 +1,61 @@
+#define	index.html
+	${mkHeader(section=Letters)}
+
+	${tag_beg}
+	Pat responds to questions posed by fans of the band (historical).
+	${tag_end}
+	<ul>
+	<li><a href="${jbc_letters}/90Feb14">1990-02-14</a> - <b>Cult Of The Basement</b> </li>
+	<li><a href="${jbc_letters}/91Feb01">1991-02-01</a> - the "Hunter S. Thompson" letter </li>
+	<li><a href="${jbc_letters}/93Aug30">1993-08-30</a> - The Albums, The Bands, <b>LoveBus</b>, 93 Euro Tour </li>
+	<li><a href="${jbc_letters}/93Oct19">1993-10-19</a> - Eider, The Fall, News </li>
+	<li><a href="${jbc_letters}/94Apr13">1994-04-13</a> - 94 Euro Tour, Two Gigs, News, 93/94 Tours </li>
+	<li><a href="${jbc_press}/94stop_press.html">1994-05-20</a> - Press Release </li>
+	<li><a href="${jbc_letters}/94Jun24">1994-06-24</a> - All the gigs, ever </li>
+	<li><a href="${jbc_letters}/94Sep13">1994-09-13</a> - Gig reviews, <a href="${jbc_articles}">jbc-list</a> rebuttals, etc </li>
+	<li><a href="${jbc_letters}/94Jun24/top_20.html">1994-06-24</a> - Pat's Top 20 Gigs </li>
+	<li><a href="${jbc_letters}/artwork.html">1994</a> - Sketches culled from the above letters </li>
+	<li><a href="${jbc_press}/20020709_starindia.html">2002-07</a> - The Star Of India: Pat reviews his favorite Restaurant </li>
+	</ul>
+	<a href="${jbc_images}/pat_party.jpg">
+		<iMG alt="[photo]" width=195 height=145
+		SRC="${jbc_images}/spat_party.gif"></a>
+	<img alt="[PatFishInfo]" width=289 height=139
+		border=0 src="${jbc_images}/pat_sig.gif">
+
+	${jbc_footer}
+
+#define	artwork.html
+	${mkHeader(section=Letters, title=Pat Fish Sketches)}
+
+	<center>
+	<font size=+2><b>Scanned from:</b></font>
+	<br><a href="${jbc_images}/advert.gif">
+		<img width=195 height=223 align=middle
+		alt="[image]" src="${jbc_images}/sadvert.gif"></a>
+	
+	<p>
+			<a href="${jbc_images}/notes.gif"> Happy Notes</a> and
+			<a href="${jbc_images}/HappyNotes.gif"> processed</a>
+			<a href="${jbc_images}/sky.gif"> Happy Clouds</a>
+			<br><a href="${jbc_images}/them.gif"> Happy Cassettes</a>
+			<br><a href="${jbc_images}/fish.gif"> Somber Fish</a>
+	
+	<hr noshade size=1>
+	<font size=+2><b>Scanned from:</b></font>
+	<br><a href="${eg_images}/pmurphy.jpg">
+		<img width=201 height=223 align=middle
+		alt="[image]" src="${eg_images}/spmurphy.gif"></a></h2>
+	
+	<p>
+			<a href="${eg_images}/eg.gif"> Happy Eg(g)</a>
+			<br><a href="${eg_images}/flag_bw.gif"> Tutto Possibile Flag</a>
+			and
+			<a href="${eg_images}/flag.gif">In Color</a>
+			<br><a href="${eg_images}/blackeg.gif">"The Black Eg"</a>
+			and
+			<a href="${eg_images}/bigblackeg.gif">bigger</a>
+			<br><a href="${eg_images}/pmurphy.gif">Color Flag & Eg</a>
+	</center>
+	
+	${jbc_footer}

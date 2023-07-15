@@ -1,0 +1,1632 @@
+#define headerLetters24Jun94(title)
+	${mkHeader(section=Letters,
+		passthru=<a href="${jbc_letters}/94Jun24"><b>24Jun94</b></a>,
+		title=${title})}
+
+#define	index.html
+#live	if (getval(page) = index.html)
+	${mkHeader(section=Letters, title=24Jun94)}
+
+	<center>
+		<br><a href="${jbc_letters}/94Jun24/intro.html">
+		Introduction</a>
+		<br><a href="${jbc_letters}/94Jun24/all_the_gigs.html">
+		All the gigs, ever</a>
+		<br><a href="${jbc_letters}/94Jun24/top_20.html">
+		Top 20 Gigs</a>
+		<p><img width=270 height=122 alt="[signature]"
+		src="${jbc_images}/19940624/94Jun24_sig.gif">
+	</center>
+
+	${jbc_footer}
+#live	endif
+
+#define	intro.html
+#live	if (getval(page) = intro.html)
+	${headerLetters24Jun94(title=Intro)}
+
+	I have passed the time since [4Jun94] ruthlessly instilling
+	an iron discipline within the ranks, and things are starting
+	to happen.  Like - would you believe?  - a live version of
+	${filth}!
+	<p>
+	I have seen ${levit} with their new American singer (whom
+	they all appear to hate) - very powerful and strong,
+	but rather pointless, in a very "modern" ways and ${strange}
+	- quite splendid!
+	<p>
+	Have succeeded in booking ${strange} for the second annual
+	"It's Got To Be Belgium" festival here - at a price of... NOTHING!
+	Ha!Ha!Ha!  It will be their first gig after the l.p. comes out.
+	I love doing this - it annoys the local promoters SO
+	much! The guy came last year when we put on ${astor} and
+	he just stood in the corner asking "How?" Excellent!
+	Also lined up for the fest are Curt's mob, "Stranger
+	Tractors", Spittle Rattle, Transambient Communications
+	and, coup of coups!, a band from Vienna called ${eg}.
+	<p>
+	This is all across 8th-10th August in the garden at Belgium.
+	The Eg are also playing a rave in London on 22nd July
+	at The Fortress, King's Cross, and they have been invited
+	to Ibiza too!  Vibornye!
+	<p>
+	On Friday night ${hend} and I will be doing an acoustic
+	show in Rugby.  The next proper JBC show is at La Maison
+	Du Peuple (!) in Clermont-Ferrand${FR}, on 7th July.
+	<p>
+	We have achieved a Canadian release (Sony), and so renewed
+	energy has been given to the North American campaign.
+	We're aiming for September, so that we can relieve all
+	the students of the dough their loving parents have just
+	given them at the start of the semester.  (See? I can
+	speak American.)
+	<p>
+	I've begun a little writing; favourite lines at this
+	early stage rhyme "civilised way" with "drivel I say"...
+	hmmmm...
+	<p>
+	Here is the price of free Publicity - a list of every
+	JBC date that I can recall.  I think I missed one in
+	June 1985 at a teacher-training college in London, the
+	night before we flew to Rome for the Foro Tevere.  Also
+	I've neglected to put in all the in-store type things
+	and the legendary Clare's Party, Hammersmith in the fall
+	of 1985.  Apart from these errors, which I spotted too
+	late for the list, I think you'll find that you have
+	The Definitive Word on JBC live action since the year zero.
+	<p>
+	God - what it is to have a head full of trivial cak, hey?
+	<p>
+	Hope that all is groovy out west and that you are having
+	as much fun with the World Cup as I currently am.
+	<center>
+	<br><img width=270 height=122 alt="[signature]"
+	src="${jbc_images}/19940624/94Jun24_sig.gif">
+	</center>
+
+	${jbc_footer}
+#live	endif
+
+#define	top_20.html
+#live	if (getval(page) = top_20.html)
+	${headerLetters24Jun94(title=Top Twenty Gigs)}
+
+	<center>
+	A full gig listing is <a href="${jbc_gigs}">here</a>
+	</center>
+	<hr>
+	<center>
+	<b>PAT'S THE TOP TWENTY</b>
+	<br><b>for any reason</b>
+	</center>
+	<br><a href="${jbc_gigs}/1993/Mar11.html">1993-Mar-11</a>	Szene Wien, Vienna${AU}
+	${pat}, ${dooj}, ${nick}, ${lix}
+	<br><a href="${jbc_gigs}/1986/Jul3.html">1986-Jul-3</a>	Festival, Naples${ITALIA}
+	${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1993/Oct28.html">1993-Oct-28</a>	The Forum${LO}
+	${pat}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1992/Jun5.html">1992-Jun-5</a>	Roxy Theatre, ${LA}
+	${pat}, ${dooj}, ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1988/Aug7.html">1988-Aug-7</a>	Town & Country Club${LO}
+	${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1985/Aug17.html">1985-Aug-17</a>	Jubek Festival, ${HAM}
+	${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1992/May15.html">1992-May-15</a>	${AX}, ${CHI}
+	${pat}, ${dooj}, ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1991/Jun11.html">1991-Jun-11</a>	The Borderline${LO}
+	${pat}, ${green}, ${pete}
+	<br><a href="${jbc_gigs}/1986/Jul17.html">1986-Jul-17</a>	The Cat Club, ${NYC}
+	${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1984/Jun11.html">1984-Jun-11</a>	Dingwall's${LO}
+	${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Dec9.html">1984-Dec-9</a>	${PO}${HAM}
+	${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1990/Aug21.html">1990-Aug-21</a>	The Borderline${LO}
+	${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1994/Feb17.html">1994-Feb-17</a>	Arapaho, ${PAR}
+	${pat}, ${dooj}, ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1985/Dec17.html">1985-Dec-17</a>	Salle De La Cite, Rennes${FR}
+	${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jun27.html">1985-Jun-27</a>	University Of Warwick, Coventry${UK}
+	${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1989/Nov28.html">1989-Nov-28</a>	Commodore Ballroom, Vancouver${CAN}
+	${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1990/Jun16.html">1990-Jun-16</a>	Tonfestival, Kuchl
+	${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov25.html">1990-Nov-25</a>	Slim's, San Fransisco${CA}
+	${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr13.html">1988-Apr-13</a>	Garage, Valencia${ES}
+	${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Jul1.html">1988-Jul-1</a>	The Coach House, San Juan Capistrano${CA}
+	${pat}, ${kizzy}, ${larry}, ${paul}
+
+	${jbc_footer}
+#live	endif
+
+#define	all_the_gigs.html
+#live	if (getval(page) = all_the_gigs.html)
+	${headerLetters24Jun94(title=All The Gigs)}
+
+	<center>
+	This information is also available <a href="${jbc_gigs}">
+	in greatly expanded database format</a>
+		</center>
+	<hr>
+	     <b>THE JAZZ BUTCHER CONSPIRACY THE WHOLE STORY</b>
+	<p>
+	The first JBC dates are shrouded in confusion.
+	${max}, ${pat} and Louis played three very small shows under
+	the umbrella of "Cabaret Cent-Neuf" during November and
+	December 1981.
+	<p>
+	These shows, which were almost entirely acoustic also
+	featured the shadowy figure of The Antichrist, who performed
+	as Ramon Destine (with ${max}
+	on guitar; it was Ramon who first uttered the words "Take
+	it, Max... "), the Rockin' Belgians and Terence Walpole,
+	a deranged poet later to find recording fame with ${eg}.
+	The shows were at Merton College Oxford; Chez Louis,
+	Wimbledon (!) ; and Drayton Court flats New Year's Eve
+	party in Chelsea.
+	<p>
+	The first show to be advertised as "The Jazz Butcher"
+	was at Merton College, Oxford on 20th February 1982.
+	The band lined up as: ${pat}: guitar and voice, The Antichrist:
+	guitar and voice, ${at}: organ and voice, Chris "Snogger"
+	Rudd (later of the Lost T-Shirts Of Atlantis) on bass,
+	and ${owen} on drums.
+	<p>
+	It was perceived as a one-off laugh, not unlike something that
+	happened last Wednesday in a ditch in central London.
+	<p>
+	Pat then went away to the country and started writing
+	some tunes.  The Glass deal was offered, and eventually
+	a new romantic band called Where's Lisse?, who lived
+	in Pat's area and who were also on Glass, suggested a
+	"gig" together.  This is where it really starts ...
+	<hr>
+	<br><a href="${jbc_gigs}/1982/Feb20.html">1982-Feb-20</a>	Merton College, Oxford${UK}
+			${pat}, Ramon Destine, ${at}, Chris Rudd, ${owen}
+	<br><a href="${jbc_gigs}/1982/Jun.html">1982-Jun</a>	Private Party, Oxford${UK}
+			${pat}, ${max}, Louis
+	<br><a href="${jbc_gigs}/1982/Jun12.html">1982-Jun-12</a>	Black Lion, ${NH}
+			${pat}, ${max}, Louis
+	<br><a href="${jbc_gigs}/1982/Jul4.html">1982-Jul-4</a>	The Nag's Head, Oxford${UK}
+			${pat}, ${max}, Louis
+	<br><a href="${jbc_gigs}/1982/Aug1.html">1982-Aug-1</a>	Private Party, ${NH}
+			${pat}, ${at}
+	<br><a href="${jbc_gigs}/1982/Aug17.html">1982-Aug-17</a>	Cobbler's Bar, ${NH}
+			${pat}, ${max}, ${at}
+	<br><a href="${jbc_gigs}/1982/Nov1.html">1982-Nov-1</a>	Hammersmith Palais${LO}
+			${pat}, ${max}, ${at}, Louis, ${rolo}
+	<br><a href="${jbc_gigs}/1982/Dec17.html">1982-Dec-17</a>	The Other Club${LO}
+			${pat}, ${max}, Louis
+	<br><a href="${jbc_gigs}/1982/Dec18.html">1982-Dec-18</a>	Black Lion, ${NH}
+			${pat}, ${max}, Louis, ${at}, Brando, Sturgess
+	<br><a href="${jbc_gigs}/1983/Jan.html">1983-Jan</a>	The Tunnel Club${LO}
+			${pat}, ${at}, ${rolo}
+	<br><a href="${jbc_gigs}/1983/Feb17.html">1983-Feb-17</a>	Flipper's Party, Shutlanger${UK}
+			${pat}, ${at}, Louis
+	<br><a href="${jbc_gigs}/1983/Mar10.html">1983-Mar-10</a>	The Culture Bunker${LO}
+			${pat}, ${at}, Louis, ${max}, ${rolo}
+	<br><a href="${jbc_gigs}/1983/Mar19.html">1983-Mar-19</a>	Black Lion, ${NH}
+			${pat}, ${at}, Louis, ${max}, ${rolo}
+	<br><a href="${jbc_gigs}/1983/Apr19.html">1983-Apr-19</a>	Old White Horse${LO}
+			${pat}, ${at}, Louis, ${max}, ${rolo}
+	<br><a href="${jbc_gigs}/1983/May7.html">1983-May-7</a>	Chez Louis, Wimbledon${UK}
+			${pat}, ${at}, Louis, ${max}, ${rolo}
+	<br><a href="${jbc_gigs}/1983/May17.html">1983-May-17</a>	The Clarendon${LO}
+			${pat}, ${at}, Louis, ${max}, ${rolo}
+	<br><a href="${jbc_gigs}/1983/May18.html">1983-May-18</a>	The Rock Garden${LO}
+			${pat}, ${at}, Louis, ${max}, ${rolo}, Hookham
+	<br><a href="${jbc_gigs}/1983/Jun4.html">1983-Jun-4</a>	Black Lion, ${NH}
+			${pat}, ${at}, Louis, ${max}, ${rolo}, Hookham
+	<br><a href="${jbc_gigs}/1983/Jun25.html">1983-Jun-25</a>	Merton College, Oxford${UK}
+			${pat}, ${at}, Louis, ${max}, ${rolo}, Hookham
+	<br><a href="${jbc_gigs}/1983/Jul25.html">1983-Jul-25</a>	The Adlib Club${LO}
+			${pat}, ${at}, ${rolo}, ${hask}
+	<br><a href="${jbc_gigs}/1983/Aug21.html">1983-Aug-21</a>	Caernarvon Castle${LO}
+			${pat}, ${at}, ${rolo}, ${max}
+	<br><a href="${jbc_gigs}/1983/Sep24.html">1983-Sep-24</a>	Derngate Centre, ${NH}
+			${pat}, ${at}, ${rolo}, ${max}
+	<br><a href="${jbc_gigs}/1983/Sep25.html">1983-Sep-25</a>	Abington Park, ${NH}
+			${pat}, ${max}, ${rolo}
+	<br><a href="${jbc_gigs}/1983/Oct20.html">1983-Oct-20</a>	The Venue${LO}
+			${pat}, ${max}, Mick Packwood
+	<br><a href="${jbc_gigs}/1983/Oct1.html">1983-Oct-1</a>	Cobbler's Bar, ${NH}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1983/Oct22.html">1983-Oct-22</a>	Merton College, Oxford${UK}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1983/Nov18.html">1983-Nov-18</a>	Fulham Greyhound${LO}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1983/Nov23.html">1983-Nov-23</a>	The Embassy Club${LO}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1983/Nov24.html">1983-Nov-24</a>	Kingston Polytechnic${LO}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1983/Nov25.html">1983-Nov-25</a>	The Rock Garden${LO}
+			${pat}, ${max}, Musgrove
+	<br><a href="${jbc_gigs}/1983/Dec2.html">1983-Dec-2</a>	Merton College, Oxford${UK}
+			${pat}, ${max}, Musgrove
+	<br><a href="${jbc_gigs}/1984/Jan8.html">1984-Jan-8</a>	Derngate Centre, ${NH}
+			${pat}, ${max},Ady Tilley,Tim
+	<br><a href="${jbc_gigs}/1984/Jan27.html">1984-Jan-27</a>	City Polytechnic${LO}
+			${pat}, ${max}, Ramon Destine
+	<br><a href="${jbc_gigs}/1984/Feb3.html">1984-Feb-3</a>	The Rock Garden${LO}
+			${pat}, ${max}, ${owen}, Louis
+	<br><a href="${jbc_gigs}/1984/Feb27.html">1984-Feb-27</a>	Chez Nonne${LO}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1984/Mar3.html">1984-Mar-3</a>	Town Hall, Towcester${UK}
+			${pat}, ${max}, ${owen}, Musgrove
+	<br><a href="${jbc_gigs}/1984/Mar10.html">1984-Mar-10</a>	The Rock Garden${LO}
+			${pat}, ${max}, ${owen}, Musgrove
+	<br><a href="${jbc_gigs}/1984/Mar15.html">1984-Mar-15</a>	Warwick University, Coventry${UK}
+			${pat}, ${max}, ${owen}, Musgrove
+	<br><a href="${jbc_gigs}/1984/Mar31.html">1984-Mar-31</a>	The Fridge${LO}
+			${pat}, ${max}, ${owen}, Musgrove
+	<br><a href="${jbc_gigs}/1984/Apr21.html">1984-Apr-21</a>	The Living Room${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Apr24.html">1984-Apr-24</a>	Verdley House, Sussex${UK}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1984/Apr29.html">1984-Apr-29</a>	The Pindar Of Wakefield${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/May6.html">1984-May-6</a>	The Fridge${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/May12.html">1984-May-12</a>	Black Lion, ${NH}
+			${pat} solo and ${dj} solo
+	<br><a href="${jbc_gigs}/1984/May22.html">1984-May-22</a>	The Moving Sidewalk${LO}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1984/May25.html">1984-May-25</a>	Moles, Bath${UK}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/May26.html">1984-May-26</a>	The Rock Garden${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Jun2.html">1984-Jun-2</a>	Lings Theatre, ${NH}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Jun11.html">1984-Jun-11</a>	Dingwall's${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Jun27.html">1984-Jun-27</a>	University, Loughborough${UK}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Jun29.html">1984-Jun-29</a>	St Alban's Street Gallery${LO}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1984/Jun29_2000.html">1984-Jun-29</a>	The Captain's Cabin${LO}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1984/Jul14.html">1984-Jul-14</a>	The Living Room${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Aug4.html">1984-Aug-4</a>	The Rock Garden${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Sep1.html">1984-Sep-1</a>	Arts Centre, ${NH}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Oct29.html">1984-Oct-29</a>	Essex University, Colchester${UK}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Nov9.html">1984-Nov-9</a>	King's College${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Nov16.html">1984-Nov-16</a>	The Rock Garden${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Nov17.html">1984-Nov-17</a>	The Rock Garden${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Nov29.html">1984-Nov-29</a>	Dingwall's${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Dec1.html">1984-Dec-1</a>	Black Lion, ${NH}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Dec7.html">1984-Dec-7</a>	Melkweg, ${AMST}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Dec8.html">1984-Dec-8</a>	${PO}, ${HAM}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Dec9.html">1984-Dec-9</a>	${PO}, ${HAM}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Dec10.html">1984-Dec-10</a>	Cookie's, ${FRANK}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Dec22.html">1984-Dec-22</a>	The Rock Garden${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1984/Dec30.html">1984-Dec-30</a>	I.C.A.${LO}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1985/Jan5.html">1985-Jan-5</a>	The Leadmill, Sheffield${UK}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1985/Jan6.html">1985-Jan-6</a>	Arts Centre, ${NH}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1985/Jan17.html">1985-Jan-17</a>	Ziggy's, Plymouth${UK}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1985/Jan30.html">1985-Jan-30</a>	University${LO} (U.L.U.)
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1985/Jan31.html">1985-Jan-31</a>	Richmond Club, Brighton${UK}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1985/Feb1.html">1985-Feb-1</a>	University, Reading${UK}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1985/Feb2.html">1985-Feb-2</a>	Lanchester Polytechnic, Coventry${UK}
+			${pat}, ${max}, ${dj}, ${owen}
+	<br><a href="${jbc_gigs}/1985/Feb8.html">1985-Feb-8</a>	North East Polytechnic${LO}	
+	<br><a href="${jbc_gigs}/1985/Feb24.html">1985-Feb-24</a>	Derngate Centre, ${NH}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar1.html">1985-Mar-1</a>	The Thekla, Bristol${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar7.html">1985-Mar-7</a>	Hammersmith Town Hall${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar9.html">1985-Mar-9</a>	The Rock Garden${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar14.html">1985-Mar-14</a>	Kingston Polytechnic${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar16.html">1985-Mar-16</a>	Essex University, Colchester${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar22.html">1985-Mar-22</a>	Rockmagasinet, Orebro, Sweden
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar23.html">1985-Mar-23</a>	Restaurant Oskar, Sundsvall
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar24.html">1985-Mar-24</a>	Kolingsborg, Stockholm, Sweden
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar26.html">1985-Mar-26</a>	Hulen, Bergen${NOR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar27.html">1985-Mar-27</a>	Renegat, Oslo${NOR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Mar31.html">1985-Mar-31</a>	Rote Fabrik, Zurich${SW}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr2.html">1985-Apr-2</a>	Tenax, Florence${ITALIA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr2_2000.html">1985-Apr-2</a>	Salt Peanuts, Florence${ITALIA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr3.html">1985-Apr-3</a>	Muchmore, Rome${ITALIA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr4.html">1985-Apr-4</a>	Small, Cento
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr5.html">1985-Apr-5</a>	Vidia, Cesena
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr6.html">1985-Apr-6</a>	Spielboden, Dornbir${${AU}}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr7.html">1985-Apr-7</a>	Scala, Dornbirn${AU}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr9.html">1985-Apr-9</a>	Arena, Vienna${AU}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr10.html">1985-Apr-10</a>	Posthof, Linz${AU}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr11.html">1985-Apr-11</a>	Manege, Munich${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr12.html">1985-Apr-12</a>	Zabo Linde, N&uuml;remberg ${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr13.html">1985-Apr-13</a>	Odeon, Munster${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr14.html">1985-Apr-14</a>	Luxor, Cologne${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr15.html">1985-Apr-15</a>	P.C.69, Bielefeld${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr17.html">1985-Apr-17</a>	Markthalle, ${HAM}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr19.html">1985-Apr-19</a>	Metropol, Berlin${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr23.html">1985-Apr-23</a>	${PO}, ${HAM}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Apr25.html">1985-Apr-25</a>	Melkweg, ${AMST}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/May3.html">1985-May-3</a>	Stafford College${UK}, Stafford, UK
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/May11.html">1985-May-11</a>	The Leadmill, Sheffield${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/May23.html">1985-May-23</a>	Ziggy's, Plymouth${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/May24.html">1985-May-24</a>	The Thekla, Bristol${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/May25.html">1985-May-25</a>	Clarendon${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/May28.html">1985-May-28</a>	Escape Club, Brighton${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jun8.html">1985-Jun-8</a>	Black Lion, ${NH}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jun17.html">1985-Jun-17</a>	${FIDDLER}${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jun22.html">1985-Jun-22</a>	Foro Tevere, Rome${ITALIA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jun27.html">1985-Jun-27</a>	University Of Warwick, Coventry${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jun28.html">1985-Jun-28</a>	Tom Allen Centre${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jun28_2000.html">1985-Jun-28</a>	Bedford College${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jun29.html">1985-Jun-29</a>	Clarendon${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jul5.html">1985-Jul-5</a>	666, Barcelona${ES}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jul6.html">1985-Jul-6</a>	Chocolatte, Valencia${ES}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jul7.html">1985-Jul-7</a>	Chocolatte, Valencia${ES}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jul20.html">1985-Jul-20</a>	Clarendon${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jul27.html">1985-Jul-27</a>	Jackson's Lane Centre${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Jul29.html">1985-Jul-29</a>	Grunt-Grunt A-Go Go, Norwich${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Aug16.html">1985-Aug-16</a>	${PO}, ${HAM}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Aug17.html">1985-Aug-17</a>	Jubek Festival, ${HAM}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Aug18.html">1985-Aug-18</a>	Shauburg, Bremen${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Aug23.html">1985-Aug-23</a>	Zeche, Bochum${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Aug25.html">1985-Aug-25</a>	Ice Stadium, Groningen
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Aug25_2000.html">1985-Aug-25</a>	Festival, Hougewoud
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Sep5.html">1985-Sep-5</a>	Staple (party), Kent${UK}
+			${pat}, ${max}
+	<br><a href="${jbc_gigs}/1985/Sep7.html">1985-Sep-7</a>	Festival, Trochtelfingen
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Sep15.html">1985-Sep-15</a>	Greek Theatre, Syracuse
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Sep19.html">1985-Sep-19</a>	Underground, Croydon
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Sep20.html">1985-Sep-20</a>	The Rock Garden${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Sep27.html">1985-Sep-27</a>	Paradise, Reading${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Oct12.html">1985-Oct-12</a>	Tom Allen Centre${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Oct14.html">1985-Oct-14</a>	Electric Ballroom${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Oct17.html">1985-Oct-17</a>	Hatfield Polytechnic, Herts${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Oct18.html">1985-Oct-18</a>	Brunel University, Uxbridge${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Oct21.html">1985-Oct-21</a>	Gatehouse Theatre, Stafford${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Oct24.html">1985-Oct-24</a>	Polytechnic, Manchester${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Oct26.html">1985-Oct-26</a>	Imperial College${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Oct26_2000.html">1985-Oct-26</a>	I.C.A.${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Oct29.html">1985-Oct-29</a>	Hammersmith Palais${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov1.html">1985-Nov-1</a>	University, Leicester${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov6.html">1985-Nov-6</a>	Luxor, Cologne${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov7.html">1985-Nov-7</a>	Odeon, Munster${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov8.html">1985-Nov-8</a>	${PO}, ${HAM}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov9.html">1985-Nov-9</a>	${PO}, ${HAM}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov11.html">1985-Nov-11</a>	Alabamahalle, Munich${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov13.html">1985-Nov-13</a>	Pavilion, Hanover${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov14.html">1985-Nov-14</a>	Loft, Berlin${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov15.html">1985-Nov-15</a>	Zeche, Bochum${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov16.html">1985-Nov-16</a>	Batschkapp, ${FRANK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov17.html">1985-Nov-17</a>	Triebehaus, Kassel${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov18.html">1985-Nov-18</a>	Rohre, Stuttgart${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov19.html">1985-Nov-19</a>	Manege, Munich${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov20.html">1985-Nov-20</a>	Manege, Munich${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov22.html">1985-Nov-22</a>	Spielboden, Dornbirn${AU}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov23.html">1985-Nov-23</a>	Berufschule, Vienna${AU}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov28.html">1985-Nov-28</a>	La Dolce Vita, Lausanne
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov29.html">1985-Nov-29</a>	Domino, Schaffhausen
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Nov30.html">1985-Nov-30</a>	Totentanz, Basel
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec1.html">1985-Dec-1</a>	Crasch, Freiburg
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec2.html">1985-Dec-2</a>	Metropol, Aachen${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec4.html">1985-Dec-4</a>	${PO}, ${HAM}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec5.html">1985-Dec-5</a>	Subway, Osnabruck
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec7.html">1985-Dec-7</a>	Zabo Linde, N&uuml;remberg ${DE}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec10.html">1985-Dec-10</a>	Diamond Dogs, Naples${ITALIA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec11.html">1985-Dec-11</a>	Blackout, Rome${ITALIA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec12.html">1985-Dec-12</a>	Mascotte, Modena${ITALIA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec13.html">1985-Dec-13</a>	Viridis, Milan${ITALIA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec14.html">1985-Dec-14</a>	Alice Club, Arezzo
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec15.html">1985-Dec-15</a>	Vidia, Cesena
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec17.html">1985-Dec-17</a>	Salle De La Cite, Rennes${FR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1985/Dec21.html">1985-Dec-21</a>	The Rock Garden${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jan11.html">1986-Jan-11</a>	International, Manchester${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jan17.html">1986-Jan-17</a>	Brunel University, Uxbridge${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Feb1.html">1986-Feb-1</a>	The Thekla, Bristol${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Feb14.html">1986-Feb-14</a>	The Tube, Newcastle-Upon-Tyne${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Feb25.html">1986-Feb-25</a>	University, Caen${FR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Feb26.html">1986-Feb-26</a>	University, Brest${FR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Feb27.html">1986-Feb-27</a>	Salon, Nantes${FR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Feb28.html">1986-Feb-28</a>	Cave Des Vignerons, Bordeaux${FR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Mar2.html">1986-Mar-2</a>	Ubu, Rennes${FR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Mar3.html">1986-Mar-3</a>	Opera Night, ${PAR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Mar4.html">1986-Mar-4</a>	University, Besancon${FR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Mar5.html">1986-Mar-5</a>	Bandit, Strasbourg${FR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Mar7.html">1986-Mar-7</a>	Goldsmith's College${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Mar8.html">1986-Mar-8</a>	Division One, Wendover${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Mar13.html">1986-Mar-13</a>	The Cricketer's${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Mar21.html">1986-Mar-21</a>	University${LO} (U.L.U.)
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Mar27.html">1986-Mar-27</a>	Reverberation Club, Rugby${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Mar29.html">1986-Mar-29</a>	Internaticnal, Manchester${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Apr4.html">1986-Apr-4</a>	Clarendon${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Apr10.html">1986-Apr-10</a>	Tropic Club, Bristol${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Apr25.html">1986-Apr-25</a>	Bravatta, Valencia${ES}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Apr26.html">1986-Apr-26</a>	Spit, Alicante${ES}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Apr27.html">1986-Apr-27</a>	Bravatta, Valencia${ES}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Apr30.html">1986-Apr-30</a>	Town & Country Club${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/May3.html">1986-May-3</a>	Rock Garden${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/May17.html">1986-May-17</a>	Canon's Hill Park, Birmingham${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/May22.html">1986-May-22</a>	St Catherine's College, Oxford${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/May23.html">1986-May-23</a>	The Cricketer's${LO}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/May31.html">1986-May-31</a>	Division One, Wendover${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jun2.html">1986-Jun-2</a>	University Of Surrey, Guildford${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jun14.html">1986-Jun-14</a>	Palais Des Arts, Vannes${FR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jun15.html">1986-Jun-15</a>	Coatelan, Morlaix${FR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jun19.html">1986-Jun-19</a>	Festival, Glastonbury${UK}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul3.html">1986-Jul-3</a>	Festival, Naples${ITALIA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul16.html">1986-Jul-16</a>	Maxwell's, Hoboken, New Jersey${USA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul17.html">1986-Jul-17</a>	The Cat Club, ${NYC}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul18.html">1986-Jul-18</a>	930 Club, Washington D.C.${USA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul19.html">1986-Jul-19</a>	Pearl Street Lounge, Northampton, Massachusetts${USA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul21.html">1986-Jul-21</a>	Jonathan Swift's, Boston, Massachusetts${USA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul22.html">1986-Jul-22</a>	Biznis Bar, Montreal, Quebec${CAN}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul23.html">1986-Jul-23</a>	Zinc, Ottawa${ONT}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul24.html">1986-Jul-24</a>	R.P.M., ${TOR}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul25.html">1986-Jul-25</a>	The Loft, Guelph${ONT}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul26.html">1986-Jul-26</a>	Subway, Windsor${ONT}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul28.html">1986-Jul-28</a>	The Blind Pig, Ann Arbor, Michigan${USA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul29.html">1986-Jul-29</a>	Phantasy, Cleveland, OHIO${USA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Jul31.html">1986-Jul-31</a>	${METRO}, ${CHI}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug1.html">1986-Aug-1</a>	O'Kay'S Corral, Madison, Wisconsin${USA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug2.html">1986-Aug-2</a>	Underground, Milwaukee, Wisconsin${USA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug3.html">1986-Aug-3</a>	First Avenue, Minneapolis, Minnesota${USA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug5.html">1986-Aug-5</a>	Wellington's, Winnipeg, Manitoba${CAN}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug7.html">1986-Aug-7</a>	University, Calgary, Alberta${CAN}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug9.html">1986-Aug-9</a>	Town Pump, Vancouver${CAN}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug10.html">1986-Aug-10</a>	Cafe Central, Seattle, Washington${USA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug12.html">1986-Aug-12</a>	Berkley Square, Berkley${CA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug13.html">1986-Aug-13</a>	Oasis, San Fransisco${CA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug14.html">1986-Aug-14</a>	Roxy Theatre, ${LA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug15.html">1986-Aug-15</a>	Texas Records, ${LA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Aug15_2000.html">1986-Aug-15</a>	Cooney's Garden Party, ${LA}
+			${pat}, ${max}, ${owen}, ${felix}
+	<br><a href="${jbc_gigs}/1986/Sep5.html">1986-Sep-5</a>	Roadmender Centre, ${NH}
+			${pat}, ${max}, ${owen}, ${green}
+	<br><a href="${jbc_gigs}/1986/Oct4.html">1986-Oct-4</a>	Essex University, Colchester${UK}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct13.html">1986-Oct-13</a>	Academy, Portsmouth${UK}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct15.html">1986-Oct-15</a>	Lanchester Polytechnic, Coventry${UK}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct16.html">1986-Oct-16</a>	Sugarhouse, Lancaster${UK}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct17.html">1986-Oct-17</a>	University${LO} (U.L.U.)
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct18.html">1986-Oct-18</a>	University, Liverpool${UK}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct22.html">1986-Oct-22</a>	University Of Surrey, Guildford${UK}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct23.html">1986-Oct-23</a>	Kingston Polytechnic${LO}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct24.html">1986-Oct-24</a>	Tom Allen Centre${LO}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct29.html">1986-Oct-29</a>	Warehouse, Leeds${UK}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct30.html">1986-Oct-30</a>	Clarendon${LO}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Oct31.html">1986-Oct-31</a>	University, Reading${UK}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov6.html">1986-Nov-6</a>	Ballhaus Tiergarten, Berlin${DE}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov13.html">1986-Nov-13</a>	Hunky Dory, Detmold${DE}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov14.html">1986-Nov-14</a>	Markthalle, ${HAM}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov15.html">1986-Nov-15</a>	Schlachthof, Bremen${DE}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov17.html">1986-Nov-17</a>	Subway, Osnabruck
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov18.html">1986-Nov-18</a>	Fabrik, Coesfeld
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov19.html">1986-Nov-19</a>	Luxor, Cologne${DE}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov20.html">1986-Nov-20</a>	Manege, Munich${DE}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov21.html">1986-Nov-21</a>	Manege, Munich${DE}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov22.html">1986-Nov-22</a>	Zabo Linde, N&uuml;remberg ${DE}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov25.html">1986-Nov-25</a>	Rohre, Stuttgart${DE}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov27.html">1986-Nov-27</a>	Club 33, Zurich${SW}
+			${pat}, ${max}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov28.html">1986-Nov-28</a>	Domino, Schaffhausen
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Nov29.html">1986-Nov-29</a>	Nightmeer, Bern${SW}
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec2.html">1986-Dec-2</a>	Szene Wien, Vienna${AU}
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec4.html">1986-Dec-4</a>	Corallo, Scandiano
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec5.html">1986-Dec-5</a>	Vidia, Cesena
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec6.html">1986-Dec-6</a>	Riot Club, Naples${ITALIA}
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec7.html">1986-Dec-7</a>	Empire, Catania${ITALIA}
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec9.html">1986-Dec-9</a>	Camelot, Bari${ITALIA}
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec11.html">1986-Dec-11</a>	Zentrum Zoc, Tubingen
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec12.html">1986-Dec-12</a>	Live Station, Dortmund${DE}
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec17.html">1986-Dec-17</a>	Astoria, Madrid${ES}
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec18.html">1986-Dec-18</a>	Garage, Valencia${ES}
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec19.html">1986-Dec-19</a>	Zeleste, Barcelona${ES}
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1986/Dec20.html">1986-Dec-20</a>	En Bruto, Zaragoza${ES}
+			${pat}, ${owen}, ${green}, Lohan
+	<br><a href="${jbc_gigs}/1987/Jan21.html">1987-Jan-21</a>	Hulen, Bergen${NOR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Jan22.html">1987-Jan-22</a>	Sardines, Oslo${NOR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Jan26.html">1987-Jan-26</a>	Logo, ${HAM}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Jan27.html">1987-Jan-27</a>	OkeyDokey, Neuss
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Jan31.html">1987-Jan-31</a>	La Dolce Vita, Lausanne
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb2.html">1987-Feb-2</a>	Bandit, Strasbourg${FR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb3.html">1987-Feb-3</a>	Caveau Des Dominicains, Nancy${FR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb4.html">1987-Feb-4</a>	Forum, Tours${FR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb5.html">1987-Feb-5</a>	Babylone, Bordeaux${FR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb6.html">1987-Feb-6</a>	Le Pied, Toulouse${FR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb7.html">1987-Feb-7</a>	Confort Moderne, Poitiers${FR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb8.html">1987-Feb-8</a>	Julien, Marseille${FR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb10.html">1987-Feb-10</a>	Rex Club, ${PAR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb11.html">1987-Feb-11</a>	Coatelan, Morlaix${FR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb12.html">1987-Feb-12</a>	Salle De La Cite, Rennes${FR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Feb13.html">1987-Feb-13</a>	Bop Pub, Evreux${FR}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Mar7.html">1987-Mar-7</a>	The Old 5 Bells, ${NH}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Mar20.html">1987-Mar-20</a>	Black Horse${LO}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Mar28.html">1987-Mar-28</a>	Division One, Wendover${UK}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Apr14.html">1987-Apr-14</a>	Arts Centre, ${NH}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Apr15.html">1987-Apr-15</a>	The Irish Squat${LO}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Apr16.html">1987-Apr-16</a>	Tropic Club, Bristol${UK}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/May21.html">1987-May-21</a>	Astoria${LO}
+			${pat}, ${green}, ${kizzy}
+	<br><a href="${jbc_gigs}/1987/May27.html">1987-May-27</a>	The Wheatsheaf, Oxford${UK}
+			${pat}, ${green}, ${kizzy}
+	<br><a href="${jbc_gigs}/1987/May29.html">1987-May-29</a>	Town & Country Club${LO}
+			${pat}, ${green}, ${kizzy}
+	<br><a href="${jbc_gigs}/1987/Jul28.html">1987-Jul-28</a>	Kite Farm, Kent${UK}
+			${pat}, ${kizzy}, ${erol}, Blair MacDonald
+	<br><a href="${jbc_gigs}/1987/Aug2.html">1987-Aug-2</a>	Festival Veni Vidi Vici, Frejus
+			${pat}, ${kizzy}, ${erol}, Blair MacDonald
+	<br><a href="${jbc_gigs}/1987/Aug21.html">1987-Aug-21</a>	Black Horse${LO}
+			${pat}, ${kizzy}, ${erol}, Blair MacDonald
+	<br><a href="${jbc_gigs}/1987/Sep18.html">1987-Sep-18</a>	The Groovy Fishtank, Sheffield${UK}
+			${pat} (with a cold)
+	<br><a href="${jbc_gigs}/1987/Oct20.html">1987-Oct-20</a>	Goldsmith's College${LO}
+			${pat}, ${kizzy}, ${larry},Buj
+	<br><a href="${jbc_gigs}/1987/Dec8.html">1987-Dec-8</a>	Arts Centre, ${NH}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1987/Dec19.html">1987-Dec-19</a>	The Falcon${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Jan11.html">1988-Jan-11</a>	Dingwall's${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Jan30.html">1988-Jan-30</a>	Clarendon${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Feb12.html">1988-Feb-12</a>	Polytechnic, Plymouth${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Feb13.html">1988-Feb-13</a>	Brunel University, Uxbridge${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Feb18.html">1988-Feb-18</a>	West Indian Club, Southampton${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Feb19.html">1988-Feb-19</a>	University Of Kent, Canterbury${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Feb22.html">1988-Feb-22</a>	Escape Club, Brighton${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Feb23.html">1988-Feb-23</a>	Portlands${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Feb24.html">1988-Feb-24</a>	Adelphi, Hull${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Feb25.html">1988-Feb-25</a>	Sugarhouse, Lancaster${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Feb26.html">1988-Feb-26</a>	Boardwalk, Manchester${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Feb27.html">1988-Feb-27</a>	The Venue, Edinburgh${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Feb28.html">1988-Feb-28</a>	Rooftops, Glasgow${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Feb29.html">1988-Feb-29</a>	University, Leeds${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar.html">1988-Mar</a>	${CBC}, Montreal, Quebec${CAN}
+			${pat}
+	<br><a href="${jbc_gigs}/1988/Mar2.html">1988-Mar-2</a>	Mardi Gras, Nottingham${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar3.html">1988-Mar-3</a>	Raffles, Port Talbot${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar4.html">1988-Mar-4</a>	Polytechnic, Stoke-On-Trent${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar5.html">1988-Mar-5</a>	Tropic Club, Bristol${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar8.html">1988-Mar-8</a>	Elysee Montmartre, ${PAR}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar9.html">1988-Mar-9</a>	Caveau Des Dominicains, Nancy${FR}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar10.html">1988-Mar-10</a>	Ubu, Rennes${FR}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar11.html">1988-Mar-11</a>	Le Royal, Le Mans${FR}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar14.html">1988-Mar-14</a>	The Loft, Berlin${DE}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar15.html">1988-Mar-15</a>	Hyde Park, Osnabruck
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar16.html">1988-Mar-16</a>	Pumpwerk, Wilhelmshaven
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar17.html">1988-Mar-17</a>	Markthalle, ${HAM}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar18.html">1988-Mar-18</a>	Fbz Burgerhalle, Braunschweig${DE}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar19.html">1988-Mar-19</a>	Gesamtschule, Herten${DE}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar20.html">1988-Mar-20</a>	Zeche, Bochum${DE}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar21.html">1988-Mar-21</a>	Luxor, Cologne${DE}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar22.html">1988-Mar-22</a>	Kunstbunker, Kassel${DE}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar23.html">1988-Mar-23</a>	Batschkapp, ${FRANK}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar24.html">1988-Mar-24</a>	Metropol, Aachen${DE}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar25.html">1988-Mar-25</a>	Zabo Linde, Nuermberg${DE}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar27.html">1988-Mar-27</a>	Rohre, Stuttgart${DE}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar28.html">1988-Mar-28</a>	Alabamahalle, Munich${DE}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Mar31.html">1988-Mar-31</a>	Domino, Schaffhausen
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr1.html">1988-Apr-1</a>	Spielboden, Dornbirn${AU}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr2.html">1988-Apr-2</a>	Bogen 13, Innsbruck${AU}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr3.html">1988-Apr-3</a>	Arena, Vienna${AU}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr7.html">1988-Apr-7</a>	Piper 80, Rome${ITALIA}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr8.html">1988-Apr-8</a>	Julien, Marseille${FR}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr9.html">1988-Apr-9</a>	The End, Vitoria
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr11.html">1988-Apr-11</a>	Zeleste, Barcelona${ES}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr13.html">1988-Apr-13</a>	Garage, Valencia${ES}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr14.html">1988-Apr-14</a>	Heartbreak Hotel, Sete
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr15.html">1988-Apr-15</a>	Rail Theatre, Lyon${FR}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Apr16.html">1988-Apr-16</a>	Rex Club, ${PAR}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/May2.html">1988-May-2</a>	Dingwall's${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/May11.html">1988-May-11</a>	Bierkeller, Bristol${UK}
+			${pat} solo & the Blue Aeroplanes
+	<br><a href="${jbc_gigs}/1988/May19.html">1988-May-19</a>	St Catherine's College, Oxford${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/May22.html">1988-May-22</a>	The Marquee${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Jun2.html">1988-Jun-2</a>	Maxwell's, Hoboken, New Jersey${USA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/May3.html">1988-May-3</a>	T.T. The Bear's Place, Boston, Massachusetts${USA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Jun4.html">1988-Jun-4</a>	Club Soda, Montreal, Quebec${CAN}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Jun6.html">1988-Jun-6</a>	Barrymore's Theatre, Ottawa${ONT}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Jun7.html">1988-Jun-7</a>	R.P.M., ${TOR}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Jul1.html">1988-Jul-1</a>	The Coach House, San Juan Capistrano${CA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug8.html">1988-Aug-8</a>	Victoria Park Pavilion, Kitchener${ONT}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug9.html">1988-Aug-9</a>	Peabody's Down-Under, Cleveland, Ohio${USA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug10.html">1988-Aug-10</a>	St Andrew's Hall, Detroit, Michigan${USA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug11.html">1988-Aug-11</a>	${CUBBY}, ${CHI}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug12.html">1988-Aug-12</a>	Odd Rock Cafe, Milwaukee, Wisconsin${USA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug13.html">1988-Aug-13</a>	First Avenue, Minneapolis, Minnesota${USA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug15.html">1988-Aug-15</a>	Spectrum, Winnipeg, Manitoba${CAN}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug16.html">1988-Aug-16</a>	The Venue, Regina, Saskatchewan${CAN}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug17.html">1988-Aug-17</a>	Holiday Inn, Saskatoon, Saskatchewan${CAN}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug18.html">1988-Aug-18</a>	University, Edmonton, Alberta${CAN}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug19.html">1988-Aug-19</a>	McEwen Hall, Calgary, Alberta${CAN}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug21.html">1988-Aug-21</a>	Town Pump, Vancouver${CAN}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug22.html">1988-Aug-22</a>	Town Pump, Vancouver${CAN}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug23.html">1988-Aug-23</a>	Town Pump, Vancouver${CAN}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug24.html">1988-Aug-24</a>	Moore's Theatre, Seattle, Washington${USA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug25.html">1988-Aug-25</a>	Satyricon, Portland, Oregon${USA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug27.html">1988-Aug-27</a>	I-Beam, San Fransisco${CA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug28.html">1988-Aug-28</a>	Oasis, San Jose${CA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug30.html">1988-Aug-30</a>	Roxy Theatre, ${LA}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Aug7_2000.html">1988-Aug-7</a>	Town & Country Club${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Aug22.html">1988-Aug-22</a>	Dingwall's${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1988/Sep8.html">1988-Sep-8</a>	Market Tavern${LO}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1988/Sep14.html">1988-Sep-14</a>	Portlands${LO}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1988/Oct5.html">1988-Oct-5</a>	After Dark, Reading${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Oct6.html">1988-Oct-6</a>	Town & Country Club${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Oct21.html">1988-Oct-21</a>	The Limelight, Belfast${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Oct22.html">1988-Oct-22</a>	Trinity College, Dublin${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Oct23.html">1988-Oct-23</a>	Union Hall, Derry City${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Nov1.html">1988-Nov-1</a>	Drummonds${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Nov2.html">1988-Nov-2</a>	Ealing College${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Nov4.html">1988-Nov-4</a>	Galerie Galea, Caen${FR}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1988/Nov10.html">1988-Nov-10</a>	City Hall, Salisbury${UK}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1988/Nov12.html">1988-Nov-12</a>	Polytechnic, Manchester${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Nov30.html">1988-Nov-30</a>	University Of Surrey, Guildford${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Dec14.html">1988-Dec-14</a>	After Dark, Reading${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Dec16.html">1988-Dec-16</a>	Polytechnic, Glasgow${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1988/Dec21.html">1988-Dec-21</a>	Market Tavern${LO}
+			${pat} and Ed Ball
+	<br><a href="${jbc_gigs}/1989/Jan21.html">1989-Jan-21</a>	The Hothouse${LO}
+			${pat}, ${max}, ${owen}, ${dj}, Louis
+	<br><a href="${jbc_gigs}/1989/Feb3.html">1989-Feb-3</a>	Western Star Domino Club, Bristol${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1989/Feb25.html">1989-Feb-25</a>	Boardwalk, Manchester${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1989/Feb28.html">1989-Feb-28</a>	Drummonds${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1989/Mar10.html">1989-Mar-10</a>	White Horse${LO}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Apr6.html">1989-Apr-6</a>	Le Troupeau, ${PAR}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Apr7.html">1989-Apr-7</a>	Le Troupeau, ${PAR}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Apr12.html">1989-Apr-12</a>	The Marquee${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1989/Apr14.html">1989-Apr-14</a>	Carribean Centre, Ipswich${UK}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1989/Apr26.html">1989-Apr-26</a>	Dingwall's${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1989/Apr28.html">1989-Apr-28</a>	Roadmender Centre, ${NH}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1989/May3.html">1989-May-3</a>	National Ballroom${LO}
+			${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1989/May5.html">1989-May-5</a>	University, Bristol${UK}
+			${pat}, ${paul}
+	<br><a href="${jbc_gigs}/1989/May12.html">1989-May-12</a>	University${LO} (U.L.U.)
+			${pat}, ${paul}, ${larry}, ${kizzy}
+	<br><a href="${jbc_gigs}/1989/May13.html">1989-May-13</a>	St Edmund's Hall, Oxford${UK}
+			${pat}, ${paul}, ${larry}, ${kizzy}
+	<br><a href="${jbc_gigs}/1989/May23.html">1989-May-23</a>	Zap Club, Brighton${UK}
+			${pat}, ${paul}, ${larry}, ${kizzy}
+	<br><a href="${jbc_gigs}/1989/Jun6.html">1989-Jun-6</a>	Reverb Club${LO}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Jun9.html">1989-Jun-9</a>	Powerhaus${LO}
+			${pat}, ${paul}, ${kizzy}, ${larry}
+	<br><a href="${jbc_gigs}/1989/Jun24.html">1989-Jun-24</a>	Queen's College, Oxford${UK}
+			${pat}, ${paul}, ${kizzy}, ${larry}
+	<br><a href="${jbc_gigs}/1989/Jun28.html">1989-Jun-28</a>	University, Lancaster${UK}
+			${pat}, ${paul}, ${kizzy}, ${larry}
+	<br><a href="${jbc_gigs}/1989/Jul5.html">1989-Jul-5</a>	Romer, Bremen${DE}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Jul6.html">1989-Jul-6</a>	The Loft, Berlin${DE}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Jul7.html">1989-Jul-7</a>	Grosse Freiheit 36, ${HAM}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Jul9.html">1989-Jul-9</a>	Live Station, Dortmund${DE}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Jul10.html">1989-Jul-10</a>	Cookie's, ${FRANK}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Jul27.html">1989-Jul-27</a>	Jericho Tavern, Oxford${UK}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Sep1.html">1989-Sep-1</a>	Powerhaus${LO}
+			${pat}, ${larry}, ${paul}, ${kizzy}
+	<br><a href="${jbc_gigs}/1989/Sep2.html">1989-Sep-2</a>	Adelphi, Hull${UK}
+			${pat}, ${larry}, ${paul}, ${kizzy}
+	<br><a href="${jbc_gigs}/1989/Sep4.html">1989-Sep-4</a>	Take 2, Sheffield${UK}
+			${pat}, ${larry}, ${paul}, ${kizzy}
+	<br><a href="${jbc_gigs}/1989/Sep7.html">1989-Sep-7</a>	Boardwalk, Manchester${UK}
+			${pat}, ${larry}, ${paul}
+	<br><a href="${jbc_gigs}/1989/Sep19.html">1989-Sep-19</a>	Studio, Bristol${UK}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Sep20.html">1989-Sep-20</a>	Camden Workers' Social Club${LO}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Sep21.html">1989-Sep-21</a>	Duchess Of York, Leeds${UK}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Oct4.html">1989-Oct-4</a>	Subterrania${LO}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Oct5.html">1989-Oct-5</a>	Joiner's Arms, Southampton${UK}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Oct6.html">1989-Oct-6</a>	Jericho Tavern, Oxford${UK}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Oct13.html">1989-Oct-13</a>	Szenerie, Landesbergen
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Oct14.html">1989-Oct-14</a>	The Falcon${LO}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Oct24.html">1989-Oct-24</a>	The Falcon${LO}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1989/Nov3.html">1989-Nov-3</a>	Maxwell's, Hoboken, New Jersey${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov4.html">1989-Nov-4</a>	930 Club, Washington D.C.${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov5.html">1989-Nov-5</a>	Knitting Factory, ${NYC}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov6.html">1989-Nov-6</a>	J.C. Dobbs, Philadelphia, Pennsylvania${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov8.html">1989-Nov-8</a>	Paradise, Boston, Massachusetts${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov9.html">1989-Nov-9</a>	University, Brunswick, New Jersey${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov10.html">1989-Nov-10</a>	Tree Cafe, Portland, Oregon${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov11.html">1989-Nov-11</a>	Foufounes Electriques, Montreal, Quebec${CAN}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov13.html">1989-Nov-13</a>	Barrymore's Theatre, Ottawa${ONT}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov14.html">1989-Nov-14</a>	R.P.M., ${TOR}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov15.html">1989-Nov-15</a>	The Blind Pig, Ann Arbor, Michigan${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov16.html">1989-Nov-16</a>	<a href="http://www.infinet.com/~markg/liveshow/staches.html">Stache's</a>, Columbus, Ohio${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov17.html">1989-Nov-17</a>	${AX}, ${CHI}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov18.html">1989-Nov-18</a>	Ratskeller, Madison, Wisconsin${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov19_1600.html">1989-Nov-19</a>	Pat, Milwaukee, Wisconsin${USA}
+			${pat}
+	<br><a href="${jbc_gigs}/1989/Nov19_2000.html">1989-Nov-19</a>	Shank Hall, Milwaukee, Wisconsin${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov20.html">1989-Nov-20</a>	First Avenue, Minneapolis, Minnesota${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov22.html">1989-Nov-22</a>	Circuit Cabaret, Winnipeg, Manitoba${CAN}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov23.html">1989-Nov-23</a>	The Venue, Regina, Saskatchewan${CAN}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov24.html">1989-Nov-24</a>	The Airliner, Saskatoon, Saskatchewan${CAN}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov25.html">1989-Nov-25</a>	Dinwoodie Lounge, Edmonton, Alberta${CAN}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov26.html">1989-Nov-26</a>	McEwen Hall, Calgary, Alberta${CAN}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov28.html">1989-Nov-28</a>	Commodore Ballroom, Vancouver${CAN}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Nov29.html">1989-Nov-29</a>	The Forge, Victoria${CAN}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec1.html">1989-Dec-1</a>	Backstage, Seattle, Washington${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec2.html">1989-Dec-2</a>	Blue Gallery, Portland, Oregon${USA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec4.html">1989-Dec-4</a>	Cactus Club, San Jose
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec5.html">1989-Dec-5</a>	Slim's, San Fransisco
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec6.html">1989-Dec-6</a>	${KCRW}, Santa Monica${CA}
+			${pat}, ${paul}, ${larry}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec7.html">1989-Dec-7</a>	Bogart's, Long Beach
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec8.html">1989-Dec-8</a>	Roxy Theatre, ${LA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec9.html">1989-Dec-9</a>	Roxy Theatre, ${LA}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec10.html">1989-Dec-10</a>	The Coach House, San Juan Capistrano
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec11.html">1989-Dec-11</a>	The Casbah, San Diego
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec13.html">1989-Dec-13</a>	Atomic Theatre, Albuquerque
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec15.html">1989-Dec-15</a>	The Venue, Dallas
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec16.html">1989-Dec-16</a>	Liberty Lunch, Austin
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec17.html">1989-Dec-17</a>	Rockerfeller's, Houston
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec18.html">1989-Dec-18</a>	Tipitina's, New Orleans
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec19.html">1989-Dec-19</a>	The Cotton Club, Atlanta
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1989/Dec20.html">1989-Dec-20</a>	Days Inn Hotel Lobby, Atlanta
+			${pat}
+	<br><a href="${jbc_gigs}/1989/Dec29.html">1989-Dec-29</a>	The Rock Garden${LO}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1990/Feb26.html">1990-Feb-26</a>	Dingwall's${LO}
+			${pat}, ${larry}, ${paul}, ${richard}
+	<br><a href="${jbc_gigs}/1990/Mar2.html">1990-Mar-2</a>	Sala Gares, Pamplona
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar3.html">1990-Mar-3</a>	Txitxarro, Deba
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar4.html">1990-Mar-4</a>	Periferia, Leon
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar7.html">1990-Mar-7</a>	Sala Hippo, Valladollid
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar8.html">1990-Mar-8</a>	Universal, Madrid${ES}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar9.html">1990-Mar-9</a>	Central, Valencia${ES}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar10.html">1990-Mar-10</a>	Zeleste, Barcelona${ES}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar13.html">1990-Mar-13</a>	Le Truc(k), Lyon${FR}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar14.html">1990-Mar-14</a>	New Morning, ${PAR}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar15.html">1990-Mar-15</a>	Vrije Universitat, Brussels, Belgium
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar16.html">1990-Mar-16</a>	Le Plan, Ris-Orangis
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar17.html">1990-Mar-17</a>	Cahier De Brouillon, Hoogstraaten
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar30.html">1990-Mar-30</a>	I.S.C., Bern${SW}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Mar31.html">1990-Mar-31</a>	Usine, Geneva${SW}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr1.html">1990-Apr-1</a>	La Dolce Vita, Lausanne
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr4.html">1990-Apr-4</a>	Cineteatro Astra, Rome${ITALIA}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr5.html">1990-Apr-5</a>	Teatro C.T.M. Arco, Brescia
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr6.html">1990-Apr-6</a>	Gratis, Senigallia
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr7.html">1990-Apr-7</a>	Macabre, Bra
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr8.html">1990-Apr-8</a>	Vinile, Bassano Del Grappa
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr11.html">1990-Apr-11</a>	Blue Box, Budapest, Hungary
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr13.html">1990-Apr-13</a>	Rote Fabrik, Zurich${SW}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr15.html">1990-Apr-15</a>	Spielboden, Dornbirn${AU}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr17.html">1990-Apr-17</a>	Utopia, Innsbruck${AU}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr18.html">1990-Apr-18</a>	Posthof, Linz${AU}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr19.html">1990-Apr-19</a>	Szene Wien, Vienna${AU}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr20.html">1990-Apr-20</a>	Altes Schutzenhaus, Stuttgart${DE}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr21.html">1990-Apr-21</a>	Nachtwerk, Munich${DE}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr22.html">1990-Apr-22</a>	Kulturzentrum, Mainz
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr23.html">1990-Apr-23</a>	Rockfabrik, Ubach-Palenberg
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr24.html">1990-Apr-24</a>	New York, Kassel${DE}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr25.html">1990-Apr-25</a>	University, Berlin${DE}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr26.html">1990-Apr-26</a>	Hunky Dory, Detmold${DE}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr27.html">1990-Apr-27</a>	Live Station${DE}, Dortmund, Germany
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr28.html">1990-Apr-28</a>	Szenerie, Landesbergen${DE}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr29.html">1990-Apr-29</a>	Markthalle, ${HAM}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Apr30.html">1990-Apr-30</a>	Riders Cafe, Lubeck
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/May1.html">1990-May-1</a>	M.A.X. Musikhalle, Kiel
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/May23.html">1990-May-23</a>	Freud's, Oxford${UK}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1990/Jun16.html">1990-Jun-16</a>	Tonfestival, Kuchl
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Jul4.html">1990-Jul-4</a>	Powerhaus${LO}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Aug21.html">1990-Aug-21</a>	The Borderline${LO}
+			${pat}, ${larry}, ${paul}, ${richard}, ${green}
+	<br><a href="${jbc_gigs}/1990/Aug25.html">1990-Aug-25</a>	Festival, Tonara, Sardinia
+			${pat}, ${larry}, ${paul}, ${richard} (his last show), ${green}
+	<br><a href="${jbc_gigs}/1990/Sep13.html">1990-Sep-13</a>	Duchess Of York, Leeds${UK}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Sep14.html">1990-Sep-14</a>	The Venue, Oxford${UK}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Sep15.html">1990-Sep-15</a>	The Venue${LO}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Oct22.html">1990-Oct-22</a>	Melody Ballroom, Portland, Oregon${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Oct23.html">1990-Oct-23</a>	Backstage, Seattle, Washington${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Oct26.html">1990-Oct-26</a>	Commodore Ballroom, Vancouver${CAN}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Oct29.html">1990-Oct-29</a>	The Bronx, Edmonton, Alberta${CAN}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Oct30.html">1990-Oct-30</a>	Westward Club, Calgary, Alberta${CAN}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Oct31.html">1990-Oct-31</a>	University, Regina, Saskatchewan${CAN}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov1.html">1990-Nov-1</a>	University, Saskatoon, Saskatchewan${CAN}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov3.html">1990-Nov-3</a>	Circuit Cabaret, Winnipeg, Manitoba${CAN}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov5.html">1990-Nov-5</a>	First Avenue, Minneapolis, Minnesota${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov6.html">1990-Nov-6</a>	${METRO}, ${CHI}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov7.html">1990-Nov-7</a>	Peabody's Down-Under, Cleveland, Ohio${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov8.html">1990-Nov-8</a>	The Diamond, ${TOR}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov9.html">1990-Nov-9</a>	Peter Clark Hall, Guelph${ONT}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov10.html">1990-Nov-10</a>	Club Soda, Montreal, Quebec${CAN}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov11.html">1990-Nov-11</a>	Paradise, Boston, Massachusetts${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov12.html">1990-Nov-12</a>	Maxwell's, Hoboken, New Jersey${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov13.html">1990-Nov-13</a>	The Marquee, ${NYC}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov14.html">1990-Nov-14</a>	930 Club, Washington D.C.${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov15.html">1990-Nov-15</a>	Cat's Cradle, Chapel Hill, North Carolina${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov16.html">1990-Nov-16</a>	Masquerade, Atlanta, Georgia${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov17.html">1990-Nov-17</a>	Jimmy's, New Orleans, Louisiana${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov19.html">1990-Nov-19</a>	KTBS, Austin, Texas${USA}
+			${pat}
+	<br><a href="${jbc_gigs}/1990/Nov19_2000.html">1990-Nov-19</a>	Liberty Lunch, Austin, Texas${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov20.html">1990-Nov-20</a>	Trees, Dallas, Texas${USA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov23.html">1990-Nov-23</a>	Roxy Theatre, ${LA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov24_1600.html">1990-Nov-24</a>	${KCRW}, Santa Monica${CA}
+			${pat}, ${green}, Gerard Langley
+	<br><a href="${jbc_gigs}/1990/Nov24_2000.html">1990-Nov-24</a>	Bogart's, Long Beach${CA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Nov25.html">1990-Nov-25</a>	Slim's, San Fransisco${CA}
+			${pat}, ${larry}, ${paul}, ${jules}, ${green}
+	<br><a href="${jbc_gigs}/1990/Dec12.html">1990-Dec-12</a>	Jericho Tavern, Oxford${UK}
+			${pat}, ${sonic}
+	<br><a href="${jbc_gigs}/1991/Apr25.html">1991-Apr-25</a>	Arc Club${LO}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1991/Jun11.html">1991-Jun-11</a>	The Borderline${LO}
+			${pat}, ${green}, ${pete}
+	<br><a href="${jbc_gigs}/1991/Jun18.html">1991-Jun-18</a>	${FIDDLER}${LO}
+			${pat}, ${green}, ${pete}
+	<br><a href="${jbc_gigs}/1991/Aug27.html">1991-Aug-27</a>	Molly Malone's, ${LA}
+			${pat},Charlie Baldonado, ${hask}
+	<br><a href="${jbc_gigs}/1991/Sep4.html">1991-Sep-04</a>	Whisky A-Go-Go, ${LA}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1991/Oct12.html">1991-Oct-12</a>	Theatre Eurupeen, ${PAR}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Oct14.html">1991-Oct-14</a>	???, Vitoria
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Oct16.html">1991-Oct-16</a>	Txitxarro, Deba
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Oct17.html">1991-Oct-17</a>	???, Logrono
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Oct21.html">1991-Oct-21</a>	Central, Valencia${ES}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Oct22.html">1991-Oct-22</a>	Limite, Murcia${ES}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Oct26.html">1991-Oct-26</a>	Revolver, Madrid${ES}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Oct27.html">1991-Oct-27</a>	Pepe, Burgos
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Oct28.html">1991-Oct-28</a>	Periferia, Leon
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov3.html">1991-Nov-3</a>	Luxor, Cologne${DE}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov4.html">1991-Nov-4</a>	The Loft, Berlin${DE}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov5.html">1991-Nov-5</a>	Vier Linden, Hildesheim${DE}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov6.html">1991-Nov-6</a>	Knust, ${HAM}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov7.html">1991-Nov-7</a>	Romer, Bremen${DE}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov8.html">1991-Nov-8</a>	Batschkapp, ${FRANK}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov9.html">1991-Nov-9</a>	Maxim Gorki, Stuttgart${DE}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov11.html">1991-Nov-11</a>	Jazzhaus, Freiburg${DE}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov13.html">1991-Nov-13</a>	Utopia, Innsbruck${AU}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov14.html">1991-Nov-14</a>	Arena, Vienna${AU}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1991/Nov15.html">1991-Nov-15</a>	Orpheum, Graz${AU}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1992/1992.html">1992</a>		Demo Tape, The Vaguely Familiar
+			${pat}, ${richard}, female singer
+	<br><a href="${jbc_gigs}/1992/Mar18.html">1992-Mar-18</a>	Powerhaus${LO}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1992/Apr11.html">1992-Apr-11</a>	Olympic Cinema, Nantes${FR}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Apr18.html">1992-Apr-18</a>	Underworld${LO}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Apr24.html">1992-Apr-24</a>	Georgia Theatre, Athens, Georgia${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Apr25_1200.html">1992-Apr-25</a>	WRAS, Atlanta, Georgia${USA}
+			${pat}
+	<br><a href="${jbc_gigs}/1992/Apr25_1600.html">1992-Apr-25</a>	Turtle's Records, Atlanta, Georgia${USA}
+			${pat}, ${pete}
+	<br><a href="${jbc_gigs}/1992/Apr25_2000.html">1992-Apr-25</a>	Cotton Club, Atlanta, Georgia${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Apr26_1200.html">1992-Apr-26</a>	${WXYC}, Chapel Hill, North Carolina${USA}
+			${pat}, ${dooj}
+	<br><a href="${jbc_gigs}/1992/Apr26_2000.html">1992-Apr-26</a>	Cat's Cradle, Chapel Hill, North Carolina${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Apr28.html">1992-Apr-28</a>	Max's, Baltimore, Maryland${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Apr29.html">1992-Apr-29</a>	J.C. Dobbs, Philadelphia, Pennsylvania${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Apr30.html">1992-Apr-30</a>	Maxwell's, Hoboken, New Jersey${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May1.html">1992-May-1</a>	930 Club, Washington D.C.${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May2_2000.html">1992-May-2</a>	Tramp's, ${NYC}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May3.html">1992-May-3</a>	Club Babyhead, Providence, Rhode Island${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May5.html">1992-May-5</a>	Nightstage, Boston, Massachusetts${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May6_1200.html">1992-May-6</a>	${CBC}, Montreal, Quebec${CAN}
+			${pat}
+	<br><a href="${jbc_gigs}/1992/May6_2000.html">1992-May-6</a>	Club Soda, Montreal, Quebec${CAN}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May7.html">1992-May-7</a>	Zaphod Beeblebrox, Ottawa${ONT}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May8.html">1992-May-8</a>	The Bomb Shelter, Waterloo${ONT}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May9.html">1992-May-9</a>	El Mocambo, ${TOR}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May10.html">1992-May-10</a>	Trasheteria, Guelph${ONT}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May12.html">1992-May-12</a>	The Hideaway, St Catherine's${ONT}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May13.html">1992-May-13</a>	Peabody's Down-Under, Cleveland, Ohio${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May14.html">1992-May-14</a>	St Andrew's Hall, Detroit, Michigan${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May15.html">1992-May-15</a>	${AX}, ${CHI}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May16_1600.html">1992-May-16</a>	${WNUR}, ${CHI}
+			${pat}, ${pete}
+	<br><a href="${jbc_gigs}/1992/May16_1200.html">1992-May-16</a>	<a href="http://bianca.com/chicago/music/tower.html">Tower Records</a>, ${CHI}
+			${pat}, ${pete}, ${dooj}
+	<br><a href="${jbc_gigs}/1992/May16_2000.html">1992-May-16</a>	${AX}, ${CHI}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May18.html">1992-May-18</a>	First Avenue, Minneapolis, Minnesota${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May20.html">1992-May-20</a>	Spectrum, Winnipeg, Manitoba${CAN}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May21.html">1992-May-21</a>	Channel One, Regina, Saskatchewan${CAN}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May22.html">1992-May-22</a>	University, Saskatoon, Saskatchewan${CAN}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May23.html">1992-May-23</a>	McEwen Hall, Calgary, Alberta${CAN}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May24.html">1992-May-24</a>	The Bronx, Edmonton, Alberta${CAN}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May26.html">1992-May-26</a>	Harpo's, Victoria${CAN}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May27.html">1992-May-27</a>	Commodore Ballroom, Vancouver${CAN}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May29.html">1992-May-29</a>	Backstage, Seattle, Washington${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/May30.html">1992-May-30</a>	Pine Street Theatre, Portland, Oregon${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun1.html">1992-Jun-1</a>	Slim's, San Fransisco${CA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun2.html">1992-Jun-2</a>	Fx The Club, San Jose${CA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun3.html">1992-Jun-3</a>	Sweetwater Saloon, Los Osos${CA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun5.html">1992-Jun-5</a>	Roxy Theatre, ${LA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun6.html">1992-Jun-6</a>	Winter's, San Diego${CA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun7.html">1992-Jun-7</a>	Bogart's, Long Beach${CA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun10.html">1992-Jun-10</a>	The Mason Jar, Phoenix, Arizona${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun12.html">1992-Jun-12</a>	Clearview, Dallas, Texas${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun13.html">1992-Jun-13</a>	Liberty Lunch, Austin, Texas${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun14.html">1992-Jun-14</a>	Fitzgerald's, Houston, Texas${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun15.html">1992-Jun-15</a>	Tipitina's, New Orleans, Louisiana${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun17.html">1992-Jun-17</a>	The Nick, Birmingham, Alabama${USA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Jun26.html">1992-Jun-26</a>	WHPK, ${CHI}
+			${eg}
+	<br><a href="${jbc_gigs}/1992/Aug28.html">1992-Aug-28</a>	Ponder's Alley, Rugby${UK}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Sep9.html">1992-Sep-9</a>	Umbrella Festival, ${NH}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1992/Sep15.html">1992-Sep-15</a>	Demo Tape, Peter Murphy
+			${eg}
+	<br><a href="${jbc_gigs}/1992/Dec22.html">1992-Dec-22</a>	${FIDDLER}${LO}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb16.html">1993-Feb-16</a>	Theatre Europeen, ${PAR}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb17.html">1993-Feb-17</a>	Le Jimmy, Bordeaux${FR}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb18.html">1993-Feb-18</a>	Floride, Nantes${FR}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb19.html">1993-Feb-19</a>	Ubu, Rennes${FR}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb20.html">1993-Feb-20</a>	Le Manege En Chantier, Lorient${FR}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb21.html">1993-Feb-21</a>	Coatelan, Morlaix${FR}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb24.html">1993-Feb-24</a>	Zinetti${HO}, Breda, Holland
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb25.html">1993-Feb-25</a>	Kremlin, ${AMST}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb26_2000.html">1993-Feb-26</a>	Para, Breda${HO}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb26_2300.html">1993-Feb-26</a>	Zinetti, Breda${HO}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb27.html">1993-Feb-27</a>	Logo, ${HAM}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Feb28.html">1993-Feb-28</a>	Loft, Berlin${DE}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Mar1.html">1993-Mar-1</a>	Charterhalle, Munich${DE}
+			${pat}, ${pete}
+	<br><a href="${jbc_gigs}/1993/Mar2.html">1993-Mar-2</a>	Luxor, Cologne${DE}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Mar4.html">1993-Mar-4</a>	Circolo Palomar, Valenza Po${ITALIA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Mar5.html">1993-Mar-5</a>	Auditorium Flog, Florence${ITALIA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Mar6.html">1993-Mar-6</a>	Ex Macchina, Forli${ITALIA}
+			${pat}, ${dooj} ${pete}, ${nick}
+	<br><a href="${jbc_gigs}/1993/Mar7.html">1993-Mar-7</a>	Arge Nonntal, Salzburg${AU}
+			${pat}, ${dooj} ${nick}
+	<br><a href="${jbc_gigs}/1993/Mar9.html">1993-Mar-9</a>	Glocklturm, Linz${AU}
+			${pat}, ${dooj} ${nick}, ${lix}
+	<br><a href="${jbc_gigs}/1993/Mar10.html">1993-Mar-10</a>	Utopia, Innsbruck${AU}
+			${pat}, ${dooj} ${nick}, ${lix}
+	<br><a href="${jbc_gigs}/1993/Mar11.html">1993-Mar-11</a>	Szene Wien, Vienna${AU}
+			${pat}, ${dooj} ${nick}, ${lix}
+	<br><a href="${jbc_gigs}/1993/Mar12.html">1993-Mar-12</a>	Kind, Ebensee${AU}
+			${pat}, ${dooj} ${nick}, ${lix}
+	<br><a href="${jbc_gigs}/1993/Mar13.html">1993-Mar-13</a>	Spielboden, Dornbirn${AU}
+			${pat}, ${dooj} ${nick}, ${lix}
+	<br><a href="${jbc_gigs}/1993/Apr7.html">1993-Apr-7</a>	${BELG}${NH}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1993/Apr21.html">1993-Apr-21</a>	${BELG}${NH}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1993/May15.html">1993-May-15</a>	${FIDDLER}${LO}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1993/Aug11.html">1993-Aug-11</a>	${BELG}${NH}
+			${pat}, ${dooj}
+	<br><a href="${jbc_gigs}/1993/Aug27.html">1993-Aug-27</a>	Congo Square Cafe, Santa Monica${CA}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1993/Aug29.html">1993-Aug-29</a>	Discafe, La Jolla${CA}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1993/Sep1.html">1993-Sep-1</a>	Demo Tape, l'esprit formidable
+			${eg}
+	<br><a href="${jbc_gigs}/1993/Sep3.html">1993-Sep-3</a>	${FIDDLER}${LO}
+			${pat} solo
+	<br><a href="${jbc_gigs}/1993/Sep9.html">1993-Sep-9</a>	Powerhaus${LO}
+			${pat}, ${dooj} ${lix}, ${paul}
+	<br><a href="${jbc_gigs}/1993/Sep15.html">1993-Sep-15</a>	${BELG}${NH}
+			${pat}, ${dooj}
+	<br><a href="${jbc_gigs}/1993/Oct20.html">1993-Oct-20</a>	${BELG}${NH}
+			${pat}, ${richard}
+	<br><a href="${jbc_gigs}/1993/Oct22.html">1993-Oct-22</a>	The Racehorse, ${NH}
+			${pat}, ${richard}, ${dooj} ${paul}
+	<br><a href="${jbc_gigs}/1993/Oct28.html">1993-Oct-28</a>	The Forum${LO}
+			${pat}, ${paul}, ${green}
+	<br><a href="${jbc_gigs}/1993/Oct30.html">1993-Oct-30</a>	Festival De Di-Venir, St Quentin${FR}
+			${pat}, ${paul}, ${dooj} ${richard}
+	<br><a href="${jbc_gigs}/1993/Nov12.html">1993-Nov-12</a>	Zinetti, Breda${HO}
+			${pat}, ${dooj} ${richard}
+	<br><a href="${jbc_gigs}/1993/Nov13.html">1993-Nov-13</a>	Maison De La Jeunesse, Colmar${FR}
+			${pat}, ${dooj} ${richard}
+	<br><a href="${jbc_gigs}/1993/Nov15.html">1993-Nov-15</a>	Tao's Blue, Besancon${FR}
+			${pat}, ${dooj} ${richard}
+	<br><a href="${jbc_gigs}/1993/Nov17.html">1993-Nov-17</a>	Le Salamandre, Strasbourg${FR}
+			${pat}, ${dooj} ${richard}
+	<br><a href="${jbc_gigs}/1993/Nov19.html">1993-Nov-19</a>	Passage Du Nord-Ouest, ${PAR}
+			${pat}, ${dooj} ${richard}
+	<br><a href="${jbc_gigs}/1993/Nov27.html">1993-Nov-27</a>	The Venue${LO}
+			${pat}, ${dooj} ${richard}
+	<br><a href="${jbc_gigs}/1993/Dec22.html">1993-Dec-22</a>	${BELG}${NH}
+			${pat}, ${dooj}
+	<br><a href="${jbc_gigs}/1993/Dec23.html">1993-Dec-23</a>	The Racehorse, ${NH}
+			${pat}, ${dj}
+	<br><a href="${jbc_gigs}/1994/Feb1.html">1994-Feb-1</a>	Logo, ${HAM}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb2.html">1994-Feb-2</a>	Loft, Berlin${DE}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb3.html">1994-Feb-3</a>	Rumer, Bremen${DE}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb4.html">1994-Feb-4</a>	Live station, Dortmund${DE}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb5.html">1994-Feb-5</a>	Kamp, Bielefeld${DE}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb6.html">1994-Feb-6</a>	Nachtleben, ${FRANK}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb8.html">1994-Feb-8</a>	Usine, Geneva${SW}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb9.html">1994-Feb-9</a>	Cafe Des Grandes Places, Fribourg${SW}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb10.html">1994-Feb-10</a>	Palais Xtra, Zurich${SW}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb11.html">1994-Feb-11</a>	I.S.C., Bern${SW}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb12.html">1994-Feb-12</a>	Anciennes Prisons, Moudon${FR}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb15.html">1994-Feb-15</a>	Le Bikini, Toulouse${FR}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb16.html">1994-Feb-16</a>	CLUB 3000, Clermont-Ferrand${FR}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb17.html">1994-Feb-17</a>	Arapaho, ${PAR}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb18.html">1994-Feb-18</a>	Odd Balls, Dordrecht${HO}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Feb19.html">1994-Feb-19</a>	Zinetti, Breda${HO}
+			${pat}, ${dooj} ${nick}, ${curt}
+	<br><a href="${jbc_gigs}/1994/Mar10.html">1994-Mar-10</a>	The Garage${LO}
+			${pat}, ${dooj} ${paul}
+	<br><a href="${jbc_gigs}/1994/Apr8.html">1994-Apr-8</a>	${FIDDLER}${LO}
+			${pat}, ${dooj} ${hend}, ${gab}
+	<br><a href="${jbc_gigs}/1994/Apr13.html">1994-Apr-13</a>	${BELG}${NH}
+			${pat}, ${dooj} ${hend}
+	<br><a href="${jbc_gigs}/1994/Apr30.html">1994-Apr-30</a>	Festival, Arlon
+			${pat}, ${dooj} ${hend}, ${gab}
+	<br><a href="${jbc_gigs}/1994/May21.html">1994-May-21</a>	The Barbican, Lincoln${UK}
+			${pat}, ${hend}
+	<br><a href="${jbc_gigs}/1994/May25.html">1994-May-25</a>	${BELG}${NH}
+			${pat}, ${hend}, ${dooj}
+	<br><a href="${jbc_gigs}/1994/Jun1.html">1994-Jun-1</a>	The Sound Shaft${LO}
+			${eg}
+	<br><a href="${jbc_gigs}/1994/Jun4.html">1994-Jun-4</a>	Royal Albert Hall${LO}
+			${pat}, ${dooj} ${hend}, ${gab}, ${green}
+	<br><a href="${jbc_gigs}/1994/Jul15.html">1994-Jul-15</a>	Powerhaus${LO}
+			${pat}, ${green}
+	<br><a href="${jbc_gigs}/1994/Jul26.html">1994-Jul-26</a>	Fleece Firkins, Bristol${UK}
+			${pat}, ${green}, ${dooj} ${gab}, ${hend}
+	<br><a href="${jbc_gigs}/1994/Aug3.html">1994-Aug-3</a>	${BELG}${NH}
+			${pat}, ${green}, ${dooj} ${gab}, ${hend}
+	<br><a href="${jbc_gigs}/1994/Aug6.html">1994-Aug-6</a>	${BELG}${NH}
+			${eg}
+	<br><a href="${jbc_gigs}/1994/Aug17.html">1994-Aug-17</a>	Borderline${LO}
+			${pat}, ${green}, ${dooj} ${gab}, ${hend}
+	<br><a href="${jbc_gigs}/1994/Sep.html">1994-Sep</a>	Festival Rock Au Maximum, Clermont-Ferrand${FR}
+			${pat}, ${green}, ${dooj} ${gab}, ${hend}
+	<br><a href="${jbc_gigs}/1994/Oct7.html">1994-Oct-7</a>	The Boat Race, Cambridge${UK}	
+	<br><a href="${jbc_gigs}/1994/Oct12.html">1994-Oct-12</a>	${BELG}${NH}	
+	<br><a href="${jbc_gigs}/1994/Nov15.html">1994-Nov-15</a>	Roadmender's, ${NH}	
+			${pat}, ${dooj} ${gab}, ${hend}
+	<br><a href="${jbc_gigs}/1994/Dec21.html">1994-Dec-21</a>	${BELG}${NH}	
+	<br><a href="${jbc_gigs}/1994/Dec31.html">1994-Dec-31</a>	${FIDDLER}${LO}	${pat}, ${gab}, ${hend}
+	<br><a href="${jbc_gigs}/1995/Mar11.html">1995-Mar-11</a>	Cellar Bar, Rugby${UK}
+	<br><a href="${jbc_gigs}/1995/Mar23.html">1995-Mar-11</a>	Borderline, ${LO}
+	<br><a href="${jbc_gigs}/1995/Apr1.html">1995-Apr-1</a>	Nene College, ${NH}
+
+	${jbc_footer}
+#live	endif

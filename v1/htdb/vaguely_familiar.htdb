@@ -1,0 +1,13 @@
+#define	index.html
+	${mkHeader(section=VaguelyFamiliar)}
+	${beg_tabs}
+	${begTab(About)}
+	<div class="annotation">
+	The Vaguely Familiar was a studio project with Richard Formby and Sumishta from 13 Frightened Girls.       
+	The initial sessions in summer 1991 yielded 5 tunes. Richard and I did further sessions in 1992 but,       
+	despite laying down lots of backing tracks, we never got around to finishing them. I have spotted bits     
+	and pieces from some of those aborted tracks showing up on Richard's Triumph 2000 LP. 
+	</div>
+	${endTab}
+	${end_tabs}
+	${jbc_footer}

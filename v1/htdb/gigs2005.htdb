@@ -1,0 +1,1994 @@
+#define	Jan7.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Joe Woolley and the Moon Children, Mrs. Pilgrimm, Big Tim Sansom
+		)},
+		notes=${literalizeCommas(
+			People of Earth-
+			<p>
+			The first Masters of Budvar night of the new year falls this Friday 7th January 2005 at our regular
+			venue, the Labour Club, Charles Street, Northampton NN1. As usual, entry is free, the prices are
+			reasonable, the artists talented, the speeches short. Three wildly disparate acts from Northampton
+			Town this month.
+			<p>
+			${joe_woolley} and the Moon Children (onstage 10:15pm)
+			<p>
+			What do they like to call it? Soulful punk folk with a psychedelic edge? I bet I've got that wrong.
+			Whatever, Joe's freewheeling electric band certainly does cover a lot of ground in a colourful,
+			good-natured set. Skewed funk rhythms, sweet vocals and soulful electric guitar are on offer to warm
+			your January night. And William Hill are open for business on where The One might be found in their
+			version of "Money".
+			<p>
+			Mrs. Pilgrimm (onstage 9:40pm)
+			<p>
+			We are thrilled to snag this guest appearance by the deeply wonderful Mrs. P. This extraordinary
+			artist surely needs no introduction or explanation. If you've really been away for a while, there's a
+			young woman, a cello and a chair...
+			<p>
+			Check out more at ${g_artistweb(g=http://www.mrspilgrimm.de)}
+			<p>
+			Big Tim Sansom (onstage 9:00pm)
+			<p>
+			Again, there is very little that one can say about the illustrious Big Tim, one of our town's very
+			finest songwriters. His last set at Masters of Budvar was chock full of his best-loved hits, delivered
+			with a growing confidence and charm. The word is that he has been recording with Mark Refoy again.
+			It's good to see him back at the coalface, and it will be good to see him in the Labour Club too, so
+			do get down good and early to catch him.
+			<p>
+			That's all at the Labour Club, this Friday 7th January 2005.
+			<p>
+			You have found yourself on the Masters of Budvar mailing list, an essentially well-intentioned
+			information service relating to monthly knees-up events at Northampton Labour Club and occasional
+			other counter-cultural bunfights. Should you at any point tire of receiving these bulletins from
+			beneath the stairs, please reply to this e-mail with the phrase "Avast there, ye scurvy knaves,
+			I'll have none of your drivel" in the subject field. Thank you.
+		)},
+		pat=${literalizeCommas(
+			A truly surprising turn-out for the January MOB night. I had anticipated something of a
+			post-festive slowdown, but instead the place was absolutely packed.Perhaps they had all heard Big
+			Tim's new recording on the BBC Weekender. We listened to it huddled together in Big Tim's car
+			outside the club, and it came across truly magnificent. Mark Refoy's production magic clearly in
+			evidence on the brilliant new waxing "A Prayer For Thee" - God, it sounds like Roy Orbison!
+			<p>
+			As usual, Big Tim had to be restrained with steel hawsers before taking the stage before everyone
+			was in the house. Eventually we let him go up there. As the dulcet tones of "I'm Batman" by The
+			Marble Tea gently faded out, Big Tim picked up the chords, strummed along and piled straight into
+			the intro to one of his own tunes, an inspired beginning. Standing four-square in front of the
+			swelling crowd, Tim was on fire, barely stopping for breath between one hit and another. A great
+			set.
+			<p>
+			Minimal fuss as Mrs. Pilgrimm installed herself onstage and tore off into her set. Once again,
+			absolutely inspired. It's not easy to write about Mrs. P's music, because it is so unique. There's
+			just a torrent of mad, mutated and very beautiful cello music, all running at different speeds -
+			indeed, things often go BACKWARDS - with catchy, teasing vocals delivered in a disarmingly direct
+			and intimate fashion. If you want to know more, go to www.mrspilgrimm.de and order her fabulous
+			"Alone Queen" album. Thank you.
+			<p>
+			Despite a few pre-gig concerns, ${joe_woolley} and his band turned in a wonderful set. Robert was
+			magnificent on the drums, Luke warm and solid on electric bass, leaving acres of space for Joe's
+			amped-up, heavily verbed acoustic guitar to spin out soulful psychedelic phrases across the top.
+			Add in the Moonettes with their chorus of back-up vocals and you get a fabulous little late
+			sixties West Coast beat happening, yea even unto the point of an Eight Miles High style feedback
+			wig-out at the end. An encore was demanded and delivered. On went the "Nouvelle Vague" version of
+			Guns of Brixton and there you have it for another month.
+			<p>
+			Thanks to all the artists and all the people who came to see them, thanks to the Labour Club and
+			thanks to the guys at Weekender for their continuing and much-valued support in all this. Next
+			month is our first anniversary and we shall be celebrating with the Jesse Morningstar Soul Revue,
+			featuring Jesse, his band and a full supporting bill from the cream of Bristol's acoustic music
+			scene - not to be missed.
+		)}
+	)}
+
+#define	Jan27_2030.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			The New Moon, The Race
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			The Cellar is in a street called Cornmarket, right in the centre of Oxford. We understand that the rather
+			splendid Oxford band The New Moon will be supporting on the night.
+		)},
+		pat=${literalizeCommas(
+			At twenty past five in the wintry darkness of a Thursday night, the six members of
+			Wilson, joined by Anita and Pete "Rommel" Heyworth, High Priest of the Temple Of
+			Beer called The Racehorse, squeeze themselves into a small VW Transporter and set
+			forth. An uneventful journey takes us to a small, orange basement beneath the very
+			heart of Oxford. The Cellar used to be part of the wine cellars pof the Oxford Union
+			Society (ooh), on whose lawns Russ, Anita and I later smoke a sneaky spliff. Now it
+			is a groovy wee catacomb with a helpful soundman called Robin. We set up and
+			soundcheck with ruthless efficiency then head off to the house of Matt Sewell,
+			singer of The New Moon, where we are to be fed.
+			<p>
+			After an interesting van/underground-parking-lot interface we relax in style as Matt
+			and Chrissie regale us with phenomenal quantities of delicious chilli and beer in
+			their calm and lovely flat. Well, as calm as anything with Terry Walpole in it can
+			be...
+			<p>
+			On the way back to the venue I try to send the entire band the wrong way up St.
+			Giles Street. "It's probably changed a bit since you were here," says Pete.
+			<p>
+			The New Moon open the show at the faintly ridiculous hour of 8:30. There is already
+			a small crowd, though, which swells throughout their set. Shades of Robin Hitchcock
+			and Jeff Buckley hover around the surprisingly tough sounds that Matt and bassist
+			Ian conjur. The double bass really does give the songs body and drive and Matt is in
+			fine voice. Later they are joined by a man playing a flute. He's very good, but I
+			wouldn't have said they really needed him.
+			<p>
+			A good crowd has gathered by the time that The Race begin their set. We don't know
+			much about them beyond the fact that they come from Reading, but we do know that
+			they are on a bit of a tour, and we rather suspect that perhaps most of the punters
+			tonight will really be here to see them, not us. (This actually turns out not to be
+			true - I should point out that a lot of them are probably there more for the
+			pound-a-pint deal than for any particular one of the groups.)
+			<p>
+			The Race start strongly; in tune, powerful, passionate. It's The Big Music. During
+			their first number, which starts off epic and then, rather bravely, just gets bigger
+			and bigger, Russ and I both suddenly realise that they remind us of U2. It's a kind
+			of music that I don't usually like, but they do it with charm and verve, and in a
+			small cellar on a cold night it is very agreeable.The diminiutive frontman, who has
+			a lovely voice, is whacking the shit out himself with his tambourine. I would be
+			surprised if he sits down for a week. Two or three more epics into their set and
+			Terry Walpole is on the dance floor, whirling like a dervish and frightening the
+			natives. Meanwhile MC Bot is in something called The Goat With Three Heads. Russ and
+			Anita and I attempt to go and find this goat, but get no further than the
+			aforementioned lawns of academe.
+			<p>
+			Soon enough we are on the little stage: the sound is crisp, the house full, the
+			headcase down the front. We play the same set we have played since Steve Bez joined
+			us, and once again it is improved. It really feels good, with Steve Bez and Russ
+			locked into a groove and Kathy good and loud, courtesy of The Race's marvellous bass
+			tractor. Good response from the audience too. They didn't lose interest after The
+			Race after all. Native observers later tell us that for Oxford they were positively
+			animated.
+			<p>
+			A drink or two and a brief chat with Richard from Gappy Tooth Promotions (he sounded
+			like my kind of guy) and we're stuffing ourselves back into the van, all paid up and
+			packed away. On the trip home we hear somebody on national BBC Radio use the phrase
+			"celebrating Auschwitz". Well done, everybody out there in Hollyoaks World. I was
+			wondering how long it would take.
+			<p>
+			Sincere thanks, though, are due to Matt and Chrissie for their extreme hospitality;
+			to Jimmy Evil for booking us; to The Race for being so easy to work with and for
+			that lovely bass thing; and to Terry Walpole, for it is true that without him the
+			evening would never actually have happened.
+			<p>
+		)}
+	)}
+
+#define	Feb4.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			The Four Sures (Jesse Morningstar)
+		)},
+		notes=${literalizeCommas(
+			Friday 4th February 2005 at The Labour Club, Charles St, Northampton NN1
+			Masters of Budvar present The Jesse Morningstar Soul Revue
+			featuring the keenly awaited return of Jesse Morningstar and his band, plus a full supporting cast made up of the cream
+			of Bristol's acoustic music scene. Doors open from 8:00pm, admission free, as always.
+			<p>
+			Friends of Budvar~
+			<p>
+			This Friday, the 4th February, Masters of Budvar are once again in full effect at
+			the Labour Club, Charles Street, Northampton NN1. This month we hail the return of
+			Jesse Morningstar, who is bringing with him a veritable soul revue of talent from
+			his Bristol club night, The Greatness and the Magnificence.
+			Under the title of The Four Shores (or is that the For Sures? - nobody really is),
+			Jesse and three other artists will perform both individually and collectively. But
+			don't just take our word for it: here's a message received at MOB Secret
+			Headquarters from the artists themselves...
+			<p>
+			Hello, this tells of a tour undertaken by this band called The
+			Four Shores. It consists of Banjo Kate Stables, Darren Countryboy
+			Swindells, Jesse Morningstar Vernon and Jimmy the Canadian Goodrich.
+			Each artist will be showcasing their own finest songs supported by the others
+			<p>
+			30th Jan - the Retreat, Long Ashton<br>
+			3rd Feb London Royal College of Art<br>
+			4th Feb Northampton Labour Club<br>
+			6th Feb The Cabbage Patch, Twickenham<br>
+			7th Feb - Rezonance FM session<br>
+			9th Feb Seaton Village hall (nr Looe), Cornwall<br>
+			11th Feb Callahans, Cardiff<br>
+			13th Feb Hull, New Adelphi<br>
+			18th Feb Bristol Bar Unlimited
+			<p>
+			The band have also made a 7" split single, one song by each member, on
+			the Disco-ordination label.It's out on the 5th Feb so get your orders in now.
+			<p>
+			So there you have it. Bristol mini-massive soon appear. Alongside the usual MOB
+			things, of course, like good beer at sensible prices, records both hot and mental
+			from around the globe, free admission to everybody and the best vibe around. Hope to
+			see you there.
+		)},
+		pat=${literalizeCommas(
+			Jesse was great the other night. Our first banjo at the club! This bloke from Slovakia spots it and cries
+			"BALALAIKA!" No, Kathie and I respond, it's a banjo, mate. In response to which he cries, slightly louder
+			"BALALAIKA!!!" No, mate. It's an American balalaika. He laughs like a drain - "American balalaika - ha ha ha
+			ha ha!" The banjo player is sporting the best pair of shoes ever worn at Masters of Budvar. Grown men find
+			themselves confused at their emotional responses. Sonic Boom gets to frighten everybody and we all go home
+			happy.
+		)},
+	)}
+
+#define	Feb5.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Wilson have a very limited number of tickets for a private party which we are
+			playing in Northampton Town on Saturday 5th February 2005. If you want one, come and
+			find us...
+		)},
+		pat=${literalizeCommas(
+			Wilson played on Saturday night. It was a party so we didn't advertise it, plus we were without Stevie G, who
+			was living it up in Budapest. Despite all of this we had a great night.
+		)}
+	)}
+
+#define	Feb8.html()
+	${gigHeader(
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			I'm recording a session for BBC Radio Northampton on Tuesday. I'll let you know when it's going out.
+		)}
+	)}
+
+#define	Mar2_2100.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			 Joe Woolley
+		)},
+		notes=${literalizeCommas(
+			I'm playing an acoustic gig. As in really acoustic: no amps, no microphones, no
+			nothing. Just me and an acoustic guitar. Oh, and maybe ${joe_woolley} and another
+			acoustic guitar. It's part of Joe's Beat Wednesday season at the Labour Club. The
+			nights take place upstairs in the Keir Hardie Room: soft furnishings, warm and cosy
+			vibration, candlelight...and a ring of fire around the stage!
+			<p>
+			Wednesday 2nd March 2005 - The Labour Club NN1 - 9:00pm - Free
+		)},
+		pat=${literalizeCommas(
+			A nice evening at Joe's Beat Wednesday club last week. I missed the earlier acts, engaged as I was in
+			watching the mighty Tottenham running the legs off a hapless Nottingham Forest, but arrived in time to
+			see the best set so far by Ghost Train. They really do have a spring in their step now and delivered a
+			wonderful and well-received set.
+			<p>
+			I played my set on Curtis' rather lovely Yamaha acoustic, accompanied by ${joe_woolley} on acoustic lead.
+			After Ghost Train it all felt a bit dirgey and heavy-handed, but it went down well enough and ended up
+			finishing in a near-riot as certain senile delinquents forced us into a spirited little rendition of
+			the TVP's "Part Time Punks" wherein everything got spilled on the floor.
+		)}
+	)}
+
+#define	Mar4.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Ramon de Juan, Columbus & Crusoe, DJ Bic Hayes
+		)},
+		notes=${literalizeCommas(
+			Our next Masters of Budvar night is on Friday 4th March at the Labour Club in
+			Northampton NN1.
+			The bill features:
+			<p>
+			Ramon de Juan - The welcome return of this wonderful Anglo-Spanish troubadour, promoting
+			his debut album, Foot Of Film.
+			Columbus & Crusoe - Excitingly different young Northampton combo...with glockenspiel...
+			Pat Fish - The Skuff Karaoke man playing originals and covers.
+			Plus guest celebrity DJ Bic Hayes (Levitation/Dark Star/Pet Shop Boys)
+			<p>
+			Admission is free. Don't miss it.
+			<p>
+			Ramon de Juan<br>
+			Columbus & Crusoe<br>
+			Pat Fish<br>
+			plus Superstar DJ Bic Hayes
+			<p>
+			Born in the Spanish, Sahara, raised amid the infamous nightclubs of downtown Benidorm and currently domiciled in Leeds
+			under the production guidance of Choque Hosein, the captivating Ramon de Juan makes a welcome return to our club. With
+			his first album Foot Of Film now released and garnering warm reviews, Ramon is on his way to big things. For those who
+			missed his performance at Masters of Budvar last summer, Ramon plays an unbelievalbly simple, direct, honest set with
+			acoustic guitar and voice. With these most basic of tools and a catalogue of richly melodic original tunes he charms you
+			into his own parallel universe.
+			Irrational feelings of calm, beauty and warmth are the inevitable result. Could this be the start of the thaw?
+			<p>
+			Columbus & Crusoe are a highly-rated new ensemble from Wellingborough. Young, fresh and original, they seem to be
+			entirely unaware of the excitement that they are causing wherever they play. Another act that is high on melody...and
+			with a glockenspiel too! Tonight they will be performing as a duo.
+			<p>
+			Spoiling the party with his ineptly recorded backing tapes and questionable guitar technique, we also present
+			Northampton's
+			self-styled "loudest solo artist" Pat Fish. Get there early and marvel at his quaint misappropriation of mid-period
+			Temptations guitar licks while you get the beers in.
+			<p>
+			On the record decks we have guest Superstar DJ Bic Hayes. Bic is the boss of Ramon's record label. He is also a world
+			class guitarist whose CV includes The Cardiacs, Levitation and Dark Star. He currently plays alongside Mark Refoy in the
+			Pet Shop Boys touring line-up.
+			<p>
+			As usual, all this comes for free in the unpretentious and genial surroundings of the Labour Club, Charles Street, NN1.
+			<p>
+			Excerpts from a review of Ramon de Juan's first EP written by Sam Saunders, Leeds Music Scene:
+			<blockquote>
+			It is an exquisite piece of work. It's so much more than just mood music. Soft and emotionally fragile might not be your
+			thing. But you have to stand back and admit the guy can write and perform a song that tells a delicate story. You'd burst
+			yourself with joy if you could sing such a song to your loved one. There are some distant FX guitar touches and the
+			lightest of electronic suggestions. It fades deliciously away, leaving a nostalgic and lonesome feeling as piano notes
+			fall like gentle touches of silk. It is beautiful.
+			<p>
+			It isn't rock and roll, but it could save your love life.
+			Four and a half stars
+			</blockquote>
+			Praise for Ramon's new album, Foot of Film:
+			<blockquote>
+			Foot of Film does not clamour for attention; instead, it draws you in almost imperceptibly with its diet of delicate
+			strummery, patches of melancholy and whimsy and De Juan's pure, beseeching tones.
+			Fiona Shepherd - The Scotsman'
+			<p>
+			${g_artistweb(g=http://www.ramondejuan.com)}
+			</blockquote>
+		)},
+		pat=${literalizeCommas(
+			Ramon de Juan made a triumphant return to Masters of Budvar last Friday, silencing the rather garrulous
+			crowd with the simple power of a good tune properly sung. Encores way beyond closing-time and pleasing
+			sales of his new album were the eventual outcome.
+			<p>
+			Columbus & Crusoe gave a good indication of why they
+			are attracting so much interest around these parts; even playing in a stripped-down format, they
+			charmed and intrigued with their sweet, unassuming and yet instantly memorable tunes. They also brought
+			with them a significant number of young fans, so here's hoping that they enjoyed the night and will
+			consider coming again.
+			<p>
+			I opened up the proceedings, playing a couple of acoustic numbers with Joe
+			Woolley before turning on the tape recorder and going all sparkly on the assembled. I have to say that
+			I enjoyed it, especially the last couple of numbers, which, frankly, had no place in a folk club...
+		)}
+	)}
+
+#define	Apr1.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			The Moobs, Anton Barbeau, Paul Cox
+		)},
+		notes=${literalizeCommas(
+			Friday 1st April 2005
+			Masters Of Budvar - at- The Labour Club, Northampton
+			<p>
+			The Moobs
+			<p>
+			From Cheshire, the duo of guitarist/songwriter Jim Farmer and bassist Andy Shardlow has created a
+			unique style that puts them at the leading edge of the developing New Acoustic scene. Their debut CD,
+			Form Shape and Fashiion, produced by Nigel Stonier, is a fresh and accessible waxing, described as both
+			"an understarted, raw, heartfelt sound" and "brutally tender". Their song "Tinderbox" secured them a
+			headlining slot at Masters of Budvar as soon as we heard it. For this gig Jim and Andy will be joined
+			by a drummer and by Incredible String Band violinist Fluff for what promises to be a storming
+			performance.
+			<p>
+			${g_artistweb(g=http://www.themoobs.co.uk)}
+			<p>
+			Anton Barbeau
+			<p>
+			Hailing from Sacramento, California, the eccentric Mr. Barbeau counts Andy Partridge of XTC and Nick
+			Salomon of the Bevis Frond among his admirers. Masters of Budvar ran into him at London's 12 Bar Club
+			last October and a deal was done. So here's what people are saying about him...
+			<p>
+			"Prolific, pretentious, precocious, intelligent, quirky, nasal, amusing, annoying to some, pop genius
+			to others, and never ever boring -- this, my friends, is the cumulative description of northern
+			California's musical auteur Anton Barbeau."
+			-Pop Matters
+			<p>
+			"It's a rare thing these days to stumble upon musical genius. While many musicians are happy to travel
+			a currently established road, Anton Barbeau veers off into a direction not heard since the heyday of
+			60's pop."
+			-Amp3.com
+			<p>
+			Oh my God, it's you... I finally get to meet you!"
+			-Andy Partridge
+			<p>
+			${g_artistweb(g=http://www.antonbarbeau.com)}
+			<p>
+			Paul Cox
+			<p>
+			Northampton's lushest, dreamiest songwriter makes a welcome return to Masters of Budvar. Hypnotic tunes
+			and elegant, world-weary wordplay are surely to be expected.
+			<p>
+			${g_artistweb(g=http://www.paulmcox.com)}
+			<p>
+			So there it is. It's all free and it kicks off at nine o'clock in the evening. Masters of Budvar, doing
+			it for the love of a good night out.
+		)}
+	)}
+
+#define	Apr11.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			The Black Watch
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Just the Black Watch
+		)}
+	)}
+
+#define	Apr14.html()
+	${gigHeader(
+		cost=&pound;4:00,
+		with=${literalizeCommas(
+			The Black Watch, The New Moon
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Thursday 14th April 2005
+			The Port Mahon, St. Clements, Oxford
+			<p>
+			Masters of Budvar present:
+			<p>
+			The Black Watch (Los Angeles, California)<br>
+			Pat Fish (Northampton NN1)<br>
+			The New Moon (Oxford)
+			<p>
+			That's right. Masters of Budvar ON THE ROAD! Wa-hey!
+			I'll let you have the times and ticket prices shortly.
+			<p>
+			For Oxford on 14th April we have added Anton Barbeau ( www.antonbarbeau.com ) to the line-up.
+			And it's &pound;4:00 to get in. The first band on will be the New Moon at 8:30pm sharp, so come early, music fans, coz they are worth it.
+			<p>
+			<b>
+			A little preview of the Oxford show from a magazine called "Nightshift":
+			</b>
+			<p>
+			"A rare chance to see LA's long-standing best kept pop secret, The Black
+			Watch, in the UK. The country-tinged janglers carry echoes of the
+			Go-Betweens, My Bloody Valentine and Lloyd Cole, alternating between
+			lysergic fluffy pink cloud pop and lachrymose balladeering. And they're
+			really quite lovely. Even better, you get 80s indie cult star The Jazz
+			Butcher (aka Pat Fish) into the bargain. The former Creation Records
+			signing, now playing solo acoustic shows is joined by prolific
+			Anglo-American singer Anton Barbeau with his 60s-styled psychedelic
+			acoustic pop, plus local folk-rock duo The New Moon"
+		)},
+	)}
+
+#define	Apr15_2030.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			John Andrew Frederick (Black Watch), Doc Rock, Viva Las Vegas
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Another date for me and John Andrew Frederick of the Black Watch. We'll be at the 12 Bar Club, Denmark Place,
+			London on Friday 15th April.
+			<P>
+			I will be on early, around 8:30pm John will be directly after me. I'll probably play
+			some tunes alongside him as well. Then there are 2 other acts, one from New York, one from London, playing - I'm
+			assured - Elvis numbers!
+			<p>
+			Nearest tube station: Tottenham Court Road.
+		)}
+	)}
+
+#define	Apr16.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			The Black Watch
+		)},
+		notes=${literalizeCommas(
+			The Black Watch + support tbc - I shall play with the Black Watch
+		)}
+	)}
+
+#define	Apr22_2215.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Robert Bray, Paul Cox
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Another solo gig for me. I'll be playing at the Pulse Festival at Northampton Labour Club on Friday 22nd April 2005. I believe
+			that support is from Robert Bray and Paul Cox. I'll be on about 10:15, I should imagine. It's almost certainly free to get in.
+			You can probably find out more at: ${g_artistweb(g=http://www.spiralarchive.com)}
+		)},
+		pat=${literalizeCommas(
+			Pulse Festival Songwriters Night - Friday 22nd April
+			<p>
+			A good night at Alex Novak's Pulse festival affair at the Labour Club. Alex was upstairs, spinning the records
+			(I swear I heard somebody playing "My Sharona" at one point, but I can only assume that the upstairs area had
+			by then been invaded by
+			liquored-up young Republicans or something), while downstairs you had your songwriters. John Novak started up,
+			ably backed by Paul Cox and Andy Denton. They did "Hot Love"! Then Paul did a solo set, his best yet. He's
+			getting louder, which is a good thing. I had one of those nights where it felt as though I wasn't getting the
+			sound right at all. Of course, everybody came up afterwards and mentioned what a good sound I had had tonight.
+			So there you go. It seemed to go down fairly well, after all.
+			<p>
+			Back to Shakespeare Villas, where we were joined by Curtis and Andy Skank for an in-depth examination of the
+			early career of the new Pontiff, so memorably described by the Italian Communist Party newspaper as "Il
+			Pastore Tedescho" -
+			"The German Shepherd".
+		)}
+	)}
+
+#define	Apr23.html()
+	${gigHeader(
+		cost=&pound;5:00,
+		with=${literalizeCommas(
+			Curtis E. Johnson, Mrs. Pilgrimm, Ghost Train
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Wilson have been invited to headline at the Tom Hall Memorial gig at Northamptonshire
+			County Cricket Club, Wantage Road, NN1 on Saturday 23rd April. Full details in due
+			course, but we already know that the show also features sets from Curtis E. Johnson,
+			Mrs. Pilgrimm, and  Ghost Train. It will not be in the afternoon. It will be in the evening. Nor shall we
+			be without our artillery. We shall be drummed up to the hilt.
+			<p>
+			Wilson headline at the Phippsville Festival, a Tom Hall memorial gig to be held at Northamptonshire County Cricket Club, Wantage Road,
+			Northampton NN1 on Saturday 23rd April 2005. Other acts on the bill include: Curtis E. Johnson, Mrs. Pilgrimm and Ghost Train. Admission is &pound;5:00.
+		)},
+		pat=${literalizeCommas(
+			The Phippsville Festival - Wilson make third attempt on difficult south face of Cricket Club
+			<p>
+			When they rang to ask me if Wilson would play this event, I thought perhaps that somebody had made a terrible
+			mistake.
+			<br>
+			"You know we're horrible, don't you?" I enquired as politely as a horrible bloke can.<br>
+			"Yes, yes. That's what we want."<br>
+			"You want the horrible. Okay."<br>
+			<p>
+			They asked us, so we came.
+			<p>
+			Our previous attempts to rock the County Cricket Club's spacious Ken Turner Suite have been, shall we say
+			chequered:
+			a somewhat inauspicious wedding party where we were obliged to sing The Stalker Song* in the dark, and a
+			bizarre charity-related afternoon encounter between a drum-free Wilson, their deeply inebriated hardcore
+			supporters and the local Police cricket team. From our limited experience, it seems that you never quite know
+			what's going to happen to you at the Cricket Club.
+			<p>
+			Still, we had been to the previous Tom Hall Memorial show back in 2003 and that had been a beauty, so we had
+			some reason to hope that this third attempt on the Ken Turner Ice Face might work out. The soundman had all
+			our technical whoopsie-daisy in advance, we were (as advertised) drummed to the hilt. Assuming that anybody
+			turned up, this one ought to be good.
+			<p>
+			Soundchecking in the afternoon ate right into Doctor Who, so we only just managed to make it back to Stevie
+			G's house in time to see the big blubbery aliens get their faces blown off by a nuclear missile. Bravo! Stevie
+			G serves out the curry!
+			<p>
+			Moments later, Steve is back out the door, heading back to the festival to play the opening set with Ghost
+			Train. We mill about the house playing the Good Cop Bad Cop album and knocking back the strong continental
+			lagers. It's not long before Steve returns, mortified. Apparently Ghost Train have spent their set imprisoned
+			among a forest of microphone stands, not that these have in any way rendered the band audible. Yes, there are
+			people there. No, he doesn't want to go back there again, if that's all right with us.
+			<p>
+			Of course, we do all go back down there, quite sharpish, in fact. I think that Steve has awakened our
+			curiosity. We arrive to catch the end of Curtis' set, then we settle in and lay about the generous backstage
+			spread while watching Pete Garofalo and Sue Figuoera front a band doing Tom Hall songs, rather well as it
+			goes. But my, it is quiet. I take to telling anybody who will listen that my guitar amplifier is louder than
+			all that lot up there put together. I do this because I am becoming nervous. I am becoming nervous because I
+			cannot imagine what will happen when we get up there with our horrible loud music.
+			<p>
+			Sara Spade comes on and delivers a lovely set, during which I discover that Steve Beswick and Ian Anderson
+			have taken strategic control of the best public toilet in the county. Soap! Paper towels! No wonder they are
+			guarding the doorway so carefully.
+			<p>
+			And then we are on. And nobody throws anything. Nothing breaks. Nobody does anything stupid. We just play and
+			shout and it all works perfectly. Everybody has a good time. Curtis keeps running up to deliver odd little
+			vocal whoopsie-daisies. People thrashing about down the front, all that stuff. A good time is had by all (of
+			us, anyway) and I don't see a single person with their hands over their ears. We even get to play our planned
+			- inevitable - encore of "Hippy Shit".
+			<p>
+			Wilson finally get a positive result at the Cricket Club and the Phippsville Festival is a big success all
+			round. We thank the crew, loot the vino and head back to Steve's. Somebody hands me a margarita.
+			<p>
+			Headstone NN1 25/4/05
+		)}
+	)}
+
+#define	May6.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Son of Dave, Black Carror, Joe Woolley
+		)},
+		notes=${literalizeCommas(
+			Friday 6th May 2005 -at- The Labour Club, Charles Street, Northampton NN1
+			<p>
+			Masters of Budvar present
+			<p>
+			Son of Dave ${g_artistweb(g=http://www.sonofdave.com)}
+			<p>
+			Astonishing harmonica virtuoso from Canada. Formerly a member of the Crash Test Dummies, and featured in the current
+			Guardian Guide article on 21st Century one-man-bands, Son of Dave is a sharp-suited gent who performs with a pocket full of
+			blues harps and a sampling delay. With human beatboxing and layers of wailing harmonica he builds a mighty, earthy, unique
+			sound. Original and compelling, Son of Dave is an absolute must-see this month.
+			<p>
+			Black Carrot ${g_artistweb(g=http://www.blackcarrot.net)}
+			<p>
+			Sometimes you find the strangest things in the strangest places. Black Carrot come from the sleepy provincial town of
+			Market Harborough, where they have clearly evolved in splendid isolation. A trio with dums, bass and saxophones, they play
+			a fierce, largely improvised set of what they themselves style krautrock-inspired space jazz folk. Certainly, if you have
+			any fondness for Can or Faust, or perhaps more recently the American band Morphine, you are going to find something to love
+			about Black Carrot.
+			<p>
+			${joe_woolley}
+			<p>
+			Joe needs no introduction to Masters of Budvar regulars. This preposterously talented young sixties throwback is at the
+			height of his powers right now, his playing and songwriting dramatically improved over months of hard gigging in London,
+			Northampton and beyond. There are people around town calling Joe a "genius" these days, and, you know - maybe they're
+			right.
+			<p>
+			As usual, doors are open from 8:00pm and admission is free to anyone who cares to walk in off the street and hear some top
+			quality music. Masters of Budvar. Yes, thank you very much.
+		)}
+	)}
+
+#define	May17.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Polysics
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Expect to see us opening for Polysics at the Soundhaus on Tuesday 17th May
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	May21_2030.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Wilson play live at the Labour Club, Northampton NN1 on Saturday 21st May
+			2005. It's free. Support to be confirmed.
+			<p>
+			Wilson have invented a horrible new kind of music called Battle Garage.
+			<p>
+			WILSON
+			plus acoustic support and top tunes
+			it's all free from 8:30pm
+		)},
+		pat=${literalizeCommas(
+		Well, that all turned out for the best, then. Curtis E. Johnson delivered a super opening set, huge fat guitar and lots of backchat. He played that fantastic new song, "Snapshot", which should really make all decent Northamptonians stop what they are doing and weep like newborns. The crowd just kept on swelling and the place was packed for Wilson. The bass was coming up through the floorboards and thrashing about was the order of the day. Somehwere in there Video Tim was recovering from his encounter with a naughty policewoman. Drinks went over. Bot went over. A top night all round. Thanks to everybody at the Labour Club!
+		)}
+	)}
+
+#define	May27.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Plasticsoul, Joe Woolley
+		)},
+		notes=${literalizeCommas(
+			You lucky people, it's another of those pesky Masters Of Budvar Hands-Across-The-Water Specials...
+			<p>
+			PLASTICSOUL
+			<p>
+			plus
+			<p>
+			JOE WOOLLEY
+			<p>
+			The Labour Club, Northampton NN1
+			<p>
+			Friday 27th May 2005 - Free!
+			<p>
+			Plasticsoul is the brainchild of songwriter Steven Wilson from San Gabriel, California.
+			<p>
+			Over in the UK to play at the International Pop Overthrow Fesival at Liverpool's world-famous Cavern Club, Steven
+			will be performing songs from his album Pictures From The Long Ago. The album is a phenomenally ambitious piece of
+			work,
+			reminiscent of - and standing up to comparisons with - John Lennon and Neil Young. It's well worth your time, so
+			why not check out some tracks at www.plasticsoulmusic.com . Steven will be performing live, solo and electric at
+			about 10:00 o'clock this Friday.
+			<p>
+			Long Buckby's 21st century troubadour ${joe_woolley} just gets better and better. Ubiquity suits him well. He will be
+			playing an acoustic set with a couple of special guests joining him here and there. Expect to see him onstage at
+			around 9:00 o'clock.
+			<p>
+			This is a free event organised by the Masters of Budvar, a shadowy but ultimately well-intentioned non-profit
+			organisation dedicated to bringing the best possible live music to Northampton's mighty Labour Club. Lovers of
+			classic songwriting will want to be there.
+		)}
+	)}
+
+#define	Jun3_2100.html()
+	${gigHeader(
+		cost=free,
+		blurb=Masters of Budvar,
+		with=${literalizeCommas(
+			Wolfgang Tschegg, Peter Crouch
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			The next Masters of Budvar. It's on Friday 3rd June at the Labour Club and the bill is:
+			<p>
+			From Berlin - Wolfgang Tschegg<br>
+			From London - Peter Crouch<br>
+			From NN1 - Yours truly, Pat Fish
+			<p>
+			It's free, of course.
+			<p>
+			Coming soon to Masters of Budvar - The Telescopes; Hot Mocambo; Tim Keegan; ${max}; Mickey Greaney; Dave Kusworth and many
+			more...
+			<p>
+			Masters of Budvar present
+			<p>
+			- at -
+			<p>
+			The Labour Club, Charles Street, Northampton NN1
+			<p>
+			Friday 3rd June 2005
+			<p>
+			Wolfgang Tschegg
+			<p>
+			Born in a part of Austria where the German language never really made it into the 15th Century, Wolfgang Tschegg studied at the conservatory in Vienna and made
+			early appearances at that city's notorious Flex Club, U-4 and Szene Wien before recording his extraordinarily beautiful first album in a rural church. He recorded
+			two further albums with Vienna Scientists producer Gernot Ebenlechner before decamping for several months to New York. He is currently based in Berlin and has
+			just released another CD.
+			<p>
+			Styling himself the Electric Alpine Country Boy, Wolfgang mixes soulful Vienna house backing tracks with melodic electric guitar lines and that wonderful rich,
+			dark voice of his.  Often he sings in German, sometimes in English, occasionally in Italian or French, but the beauty and feeling of his songs need no
+			translating.
+			<p>
+			Wolfgang is in the UK for just two dates, at London's 12 Bar Club on Sunday 5th June (for all you metropolitan readers) and, of course, at Masters of Budvar this
+			Friday. Check out this unique artist for yourselves, people.
+			<p>
+			Disappointment is not an option.
+			<p>
+			${g_artistweb(g=http://www.wolfgangtschegg.de)}
+			<p>
+			Peter Crouch
+			<p>
+			From 1991 to 1993 Peter Crouch was the lead guitarist in the Jazz Butcher Conspiracy. Since then he has been writing and producing songs from his home studio
+			under the name Cellartime, building a substantial body of work that bears comparison with Leonard Cohen, Dean Wareham or English post-punk songwriters like the
+			Weather Prophets' Peter Astor and Laurence Heyward of Felt. He admits to influences from Randy Newman and Robert Cray, so expect a dark blues inflection to his
+			sweet, elegantly simple tunes of misery and despair.
+			<p>
+			Important note to fans of Southampton FC: this is not the same Peter Crouch as the lanky Spurs reject you will be shortly losing to a Premiership club.
+			<p>
+			Pat Fish
+			<p>
+			As Creation Records positivity-generator-in-chief Edward Ball once put it, "Part Madonna, part Maradona". This man likes to make what he calls Skuff Karaoke.
+			Funny, really - it was Wolfgang Tschegg who sold him on the idea in the first place. A part electric, part acoustic set with lush melodies and annoying little
+			squelchy noises of uncertain origin.
+			<p>
+			${g_artistweb(g=http://www.jazzbutcher.com)}
+			<p>
+			Stage times:
+			<p>
+			Pat Fish - 9:00pm
+			<p>
+			Peter Crouch - 9:30pm
+			<p>
+			Wolfgang Tschegg - 10:00pm
+			<p>
+			Admission is free, as always. The people are friendly, the beer is cheap, the PA warm, the speeches short.
+			<p>
+			PS - Don't forget Beat Wednesday this week, upstairs at the Labour Club, featuring totally acoustic performances from ${joe_woolley} and his guests, Katy Malko and
+			Californian songwriter Steven Wilson aka Plasticsoul.
+		)},
+		pat=${literalizeCommas(
+			Outrage at Masters of Budvar! Fishy walks on and sings "Julian Cope is Dead"! He can't resist the urge to sing it
+			like Bill Drummond. Curtis barely resists the urge to throw furniture about. ${joe_woolley} then proceeds to join in to
+			play lead on Sister Death. JBC twin lead guitar beasts Peter Crouch and ${max} (for it is he) gaze in baffled
+			astonishment. Fishy blames Big Tim Sansom (a spurious excuse, if ever there were one) and careers off into a karaoke
+			set, crashing into the wall about twenty minutes later with a rendition of De La Soul's "Tread Water".
+			<p>
+			This is Peter Crouch's first ever solo show, so he has sent for moral support and recruited the aforementioned Eider
+			to play his lovely old Gretsch while a seated Crouchy sings and plays acoustic rhythm. Max starts a little quiet,
+			but, once he hits the right level, he provides a beautiful lush accompaniment to Crouchy's acid-tongued chronicles of
+			intercontinental anguish and despair. It's fun to hear him playing Crouchy's own lead lines from the recordings too.
+			Altogether it's an inspired pairing: elegant,
+			world-weary, darkly tuneful and quite mesmerising. We want this back again.
+			<p>
+			Wearing a baseball cap and a fat old semi-acoustic that could almost give Max's Gretsch a run for its money,
+			accompanied by assorted odd little bits of machinery and the dapper German jazz bassist Rainer, Wolfgang Tschegg
+			returns to Northampton Town. He opens up with one of my favourite tunes, "Helicopter", then makes brief introductions
+			before setting up the mutated bossanova beat for "Mann aus den Bergen", one of the loveliest tunes on his new album.
+			Next comes a choppy little number called Mustang: "And if you ask yourself do I mean the car or the horse...it
+			doesn't matter. Both are cool." By this stage of the game Wolfgang and Rainer are really grooving, and although their
+			singing in German makes them a touch impenetrable, the audience are starting to get it too. Me, I'm sitting right in
+			front of the stage, so happy I could...well, never mind what I could do. Wolfgang is giving that guitar a good going
+			over. "Yeah, yeah - all right!" Then into the cool ballad "Das Haus" and "Dunkel" ("It's a little bit dark, but not
+			very dark") complete with harmonica solo before the recorder apocalypse that heralds the new single "Tarzan Sagt"
+			(Yes, "Tarzan Says", that's right...) There is a touching version of "Winter Kompakt" before Rainer takes gamely to
+			the electric piano for "Superhimmel". There is a supremely far-out droney thing called "Das Schiff" ("It's a space
+			ship") with some outrageous bendy bass playing, all of which has people cheering like fools and baying for more, so
+			we are graced with a kicking, souped-up "Sonnenmaedchen" to conclude. It was all unspeakably beautiful. So I shall
+			speak of it no more, save to offer my heartfelt thanks to Wolfgang and Rainer for coming and doing that in our club.
+			<p>
+			Back at Shakespeare Villas we enjoyed another fine afterhours set from ${joe_woolley}, whose CD was promptly seized by
+			Rainer for further investigation back in Berlin. Doesn't it get light early these days? What's that you say, Crouchy?
+			No, leave it. Leave it.
+		)}
+	)}
+
+#define	Jun4_2000.html()
+	${gigHeader(
+		cost=,
+		blurb=Twinfest,
+		eventweb=http://www.twinfest.org.uk,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Wilson will once again be taking part in the Twinfest Euro-bunfight in Northampton this year. We shall be appearing in the garden
+			of the Racehorse at 8:00pm on Saturday 4th June 2005. More details as we get 'em.
+		)},
+		pat=${literalizeCommas(
+			Twinfest was a riot all round. Bot got shouted at for doing his Roger Daltrey impression, but the SM58 is a resilient model and no harm ended up being done. In
+			fact, we all got shouted at for various reasons, and there was much thrashing about. A lovely day out. We also enjoyed the talents of The Ashes of Pompeii from
+			Marburg, who are a bit like a sort of shoe-gazey metal band, if that makes sense, and the mighty Magic Skool Bus, who, for new readers, play shouty ska punk music
+			very, very fast and leave rather sweet rude messages on our website. The wags! Well done to Rob, Paul and all the Twinfest crew, who brought off an enormous bill
+			with easy charm and an almost uniformly great sound. Well done, also to lanky striker Peter Crouch for his generous contribution to the evening's fun. Oh yes.
+			<p>
+			Our next gig is at The Racehorse on Sunday 26th June, a free gig for all youze folks who couldn't (be bothered to go through all that securidee crap to) get a
+			Glastonbury ticket. We'll be playing a one hour set of our latest and greatest joints, and if all goes well we shall have lighting as well. We have added a support
+			band to the bill. They are The Importers and they come from Earls Barton. They dig New Order and they have an electronic groove similar to the Lo-Fidelity
+			Allstars. We think that they will go well with Wilson. You can find out more about them at: ${linkExternal(http://www.theimporters.net)} .
+		)}
+	)}
+
+#define	Jun26_2200.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Free admission. Wilson onstage at 10:00pm sharp. Drier than glastonbury.
+		)},
+		pat=${literalizeCommas(
+			No boats required! We said it would be drier than Glastonbury, didn't we? Another super night at the Racehorse for Wilson. Our projector made its live debut,
+			running kung-fu movies and footage of...uh...Wilson over the band and the PA from Phoenix Soundworks performed admirably under severe pressure. The Importers got
+			the show under way with a bright and tuneful set of original pirate material that certainly revealed their fondness for New Order. It was only their second ever
+			show, but despite the occasional wobbly moment where band and backing track didn't quite see eye-to-eye, they acquitted themselves well. We shall surely be seeing
+			more of them.
+			<p>
+			We've really taken to starting the set with Dark Agenda. It's just the right pace for getting us started, makes us feel all confident and in control of things. And
+			so it went: MC Bot was in fine voice and the crowd was warm and friendly. Well, we were all warm, let's face it, except for Steve Bez, who had simply gone out and
+			bought himself the biggest electric fan that he could find. Stevie G broke his bigfoot wah-wah pedal and I found myself obliged to finish Battle Time on an
+			acoustic after breaking a string on my Burns. Apart from that, sweet as you like. So thanks to Phoenix Soundworks, Ash and John at the Racehorse, The Importers and
+			everybody who came along.
+		)}
+	)}
+
+#define	Jul1.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			The Telescopes, Wilby, Elk Force
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			The saga continues. July's bill for Masters of Budvar looks like this:
+			<p>
+			<b>The Telescopes</b>
+			Modern psychedelics from the erstwhile Creation band, now working as a duo with guitars, electronics and lush, spacey melodies.
+			<p>
+			<b>Wilby</b>
+			Classic songwriting from Rosie Wilby and her band. Shades of Chrissie Hynde and kd lang.
+			<p>
+			<b>Elk Force</b>
+			A harrowing glimpse into the wonderful and frightening world of Scott Millar. Far out and deeply fishy. Well, elky, really.
+			<p>
+			All taking place for free at Northampton Labour Club on Friday 1st July 2005. Wa-hey!
+		)},
+		pat=${literalizeCommas(
+			Some far-out and provocative shit on offer at Friday's latest in the Masters of Budvar What's On Next Challenge
+			Series.
+			On the stereo we played New Order, Can, Anthony and the Johnsons, Rolo McGinty's Bad Apples CD and more besides, but
+			that's not really what I meant. After a month or two away, the funny coloured lights made a welcome return to action,
+			and we had that black stuff hanging up all over the walls and the windows, with big old electric fans blowing every
+			whichway. That's not it either, though.
+			<p>
+			At about 9:15 three young men take to the corner of the room which, with an arch and knowing wink, we call "the
+			stage". These men, for a whom a small and painfully hip crowd has gathered, are none other than Elk Force. Now, I
+			believe that in my advertising spiel I might possibly have caused some inadvertent distress to Elk Force's hip-hop
+			kingpin Scott by implying that The Force might in some way prove difficult or...I think the word was "harrowing". As
+			he himself put it:
+			<p class="annotation">
+			" We honestly didn't know we were traumatic, terrifying and troublesome. We always thought we were more of a mildly
+			left wing pop outfit for the mtv generation. (that was the idea anyway). Just for the record, we in no way support
+			chairman mao - He was a very bad man whose presence still seems to loom large and overshadow China - It's time China
+			faced up to this and moved on."
+			</p>
+			But of course.
+			<p>
+			To be fair, the Hinterhoff label's latest hopefuls had, since recording their inital manifesto, focussed their -
+			shall we say? - sonic maelstrom with the clever addition of drummer Ben Jackson, last seen round these parts with
+			Saab 77. With Ben driving things along with force and precision, it was easier to follow the intricate and
+			ever-so-slightly mental patterns that Scott and Richard weave with their guitars. Great lyrics well delivered. It's a
+			shame that tune about the Jesus Centre doesn't go on a bit longer. Remix, anybody?
+			<p>
+			This was the first appearance of Elk Force and they played really well. By the end of the night it was hard to find a
+			punter not proudly sporting their Elk Force button badge. I have no idea as to whether these people are going to do
+			more of this, and I've no idea how to describe what they do. I still think they're mental, but I can see how they
+			might not appear that way to people who listen to modern post-rock type stuff. Somewhere to the left of Pavement,
+			perhaps. (I know nothing about that kind of music. Shows, doesn't it?)
+			<p>
+			Swiftly following The Force came Rosie Wilby accompanied by Kontra Band's Al Tate on bass and Paul de Gallier on
+			percussion. A much more melodic proposition, the trio made the most of the club sound system with a warm, deep sound
+			that made a perfect setting for Rosie's singing. Still reeling from Glastonbury, Rosie even took on the swelling
+			crowd of hepsters on her own, singing the most delicate ballad imaginable. There is an awful lot of songwriting savvy
+			at work here, choruses that just fall right out at you, like that one on You Amaze Me, which gets stuck in my damn
+			head all the time. And check out Guitar Rosie - she knows all the chords. A warm, assured showing; just the thing for
+			just that moment, really.
+			<p>
+			When the Telescopes arrived for a soundcheck I was surprised to see that they showed no interest in any of the
+			microphones set up around the stage and that they didn't really seem to have anything that they wanted to plug into
+			the PA. All these charming types from Burton On Trent really seemed to want was tables. As many tables as you've got,
+			really, thanks. Brilliant. On these tables Steven and Lorin set up guitars and various devices which they employ to
+			coax sounds from these guitars. They effectively operate on the instruments, like surgeons. Instead of scalpels they
+			employ ball-bearings, violin bows, portable electric fans, crocodile clips and a seven inch tall metal robot. All of
+			which goes off into a bewildering array of outboard hardware for treatment before barreling on out the amplifiers at
+			you, the punter. Jo, meanwhile, sits on her amp, big old 335 in her lap, rapt in concentration.
+			<p>
+			By the time the Telescopes were taking to the stage it had crossed my mid that I might as well try to use the three
+			microphones to some effect, so in a homage to the Telescopes' erstwhile producer Rich Formby, I pottered around "sort
+			of" setting up the mics to pick up amps and ambience and broadcast same through the PA. To be honest, I wish I'd done
+			it all a bit louder.
+			<p>
+			The Telescopes start their set with a lush drone, centred around the soporific beat of a needle spinning on an empty
+			record deck. The drone builds, changes texture, swells, recedes. The surgeons are hard at work on their instruments,
+			heads down. Jo's head is down too. When once she glances up into the crowd it is with a look of icy determination
+			that could stop a speeding truck. People are staring open-mouthed. No beat comes crashing in, no vocal emerges; only
+			the most abstract wisps of melody, conjured from the very effect of the different constituent elements of the drone
+			moving cyclically/seismically together and apart. Some people, it has to be said, are becoming impatient. Most are
+			very quiet. I'm bloody riveted, me.
+			<p>
+			After who-knows-how-long the initial drone starts to fade and an electronic ghost of a beat begins to pulse beneath
+			the soundscapes. They're into Phase Two of their set and things are getting a touch polarised. There are people
+			actually leaving. Well, it's Friday night and maybe this isn't what they'd bargained for and that's fair enough.
+			Meanwhile back on Planet X, the Telescopes continue to sculpt and shape their noise to great effect. When finally,
+			after about 45 minutes of utterly beautiful music, they achieve a graceful landing, those who have taken the ride
+			along with them give genuinely warm and appreciative applause. With good reason. This is not the sort of thing that
+			you see every day. In fact, the last time I can recall being at a gig like this was the Spacemen's evening of
+			contemporary sitar music at the Watermans Art Centre in Brentford. Frankly and fortunately, the atmosphere tonight
+			doesn't come close to the chilly miasma of misunderstanding, suspicion and thinly-veiled hostility that characterised
+			the event that launched the Dreamweapon. No, China has moved on, so instead it's trebles all round and back to
+			Masters of Budvar Secret Headquarters for afters. Thanks to the Labour Club, Andy, all the musicians and everybody
+			who came out.
+		)}
+	)}
+
+#define	Aug1.html()
+	${gigHeader(
+		cost=&pound;10:00,
+		with=${literalizeCommas(
+			Barry "The Fish" Melton, Joe Woolley
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Monday 1st August 2005
+			<p>
+			Upstairs at The Labour Club, Northampton NN1
+			<p>
+			draft dodgers deluxe present
+			<p>
+			BARRY "THE FISH" MELTON
+			<p>
+			JOE WOOLLEY
+			<p>
+			A genuine living legend of the San Francisco psychedelic underground is coming to play in Northampton Town. Barry
+			Melton was the lead guitarist in Country Joe And The Fish. Hell, people, he IS "The Fish". He played at Monterey
+			Pop. He played at Woodstock. He has played with everybody from Quicksilver's John Cipollina to the Grateful Dead.
+			And now, by a quirk of fate which even we don't quite understand, he's coming to play - solo and acoustic - in the
+			top room of the Labour Club! Barry has promised two 45 minute sets, taking in everything from folk to blues to the
+			truly freaked-out. It is a once in a lifetime opportunity for the music lovers of Northampton to see The Real Deal
+			up close and personal. You can check out Barry Melton's web pages at: www.counterculture.net/thefish
+			<p>
+			Support will come from Long Buckby's rising folk/blues troubadour ${joe_woolley}.
+			<p>
+			The event will take place across the entire top floor of the Labour Club, with an upstairs bar/chill-out room. If
+			you good people show enough interest, the club will lay on hot veggie food (not included in the ticket price,
+			though.)
+			<p>
+			There are only 40 tickets available for this unique, intimate show. Tickets will cost &pound;10:00 and will be available
+			from the Labour Club from Saturday 9th July (tomorrow, when, incidentally, Slipstream are playing the main bar for
+			free). Alternatively, as a preferred trading nation, you can reserve your tickets by replying to this e-mail. When
+			ordering tickets, please let us know if you would be interested in the food option so that the Labour Club can gauge
+			demand for this.All tickets will be numbered and must be paid for in cash before the date of the show.
+			<p>
+			Don't delay - order your tickets today!
+
+			<div class="annotation">
+			"According to the fabled Rough guide to Rock, Country Joe & The Fish "formed in Berkley, California, 1965" and made
+			"substantial contributions to the halcyon days of psychedelic music". The very same Barry "The Fish" Melton graced
+			Northampton with this intimate gig, taking to the hot seat only after ${joe_woolley} set the scene with his always
+			delightfully affecting yet unaffected acoustic ditties.
+			<p>
+			While the rickety old Labour Club holds no more history for some than a few Friday night drinking excursions, Barry Melton
+			is enamoured with its links to a labour movement arguably long forgotten. When they weren't fighting for workers' rights
+			his parents introduced him to the wistful, witty and inspiring folk songs of the early 1930s American labour movement,
+			mirrored in the union posters on the walls of Northampton's own Labour Club.
+			<p>
+			Turns out that like a fine wine you've never heard of but you know you're going to enjoy, Barry Melton is rich and
+			satisfying in the drinking. Far from stuck in a 1960s time warp, he recalls Woodstock psychedelia with the wry humour of a
+			man who knows that getting wasted and writing songs about hamburgers falling in love with hotdogs is a novelty that just
+			won't last.
+			<p>
+			Still, he doesn't regret one moment of it, and neither do we as his awesome, and at times ridiculous, gravelly blues and
+			traditional union chants float into the night air, reminding Northampton that there's a vintage you can't buy on Camden
+			High Street. And The Fish has it, down to a T."
+			<p>
+			${g_credit(g=Natasha House, u=Northampton Chronicle & Echo, d=2005-08-05)}
+			</div>
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Aug5.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Spittle Rattle, Columbus & Crusoe, Anton Barbeau
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Masters of Budvar present
+			<p>
+			-at-
+			<p>
+			The Labour Club, Northampton NN1
+			<p>
+			Friday 5th August 2005
+			<p>
+			COLUMBUS & CRUSOE
+			<p>
+			Rising young band from Wellingborough with a uniquely chilled English sensibility and lots of mad little instruments.
+			A welcome return to Masters of Budvar for this intriguing young band from Wellingborough.
+			<p>
+			Chilled, English and elegant is their thing. Their songs have a wide-eyed innocence that sits well with their lovely
+			melodies and fullsome arrangements. Last time they appeared as a duo - this time it will be the full band. Already
+			Weekender chart-toppers, Columbus & Crusoe are busting out this summer. Come and enjoy them.
+			<p>
+			ANTON BARBEAU
+			<p>
+			Standing in heroically at the last minute to cover for a sadly unavailable Big Tim, the Sacramento mentallist returns to
+			Master of Budvar with more of his crazed, irony-drenched stadium folk. Must be seen to be believed, people.
+			<p>
+			SPITTLE RATTLE
+			<p>
+			Michael Holloway's cracked and twisted Nene Delta blues.
+			Nice sound, pretty lights, cheap drinks, great atmosphere. The enlightened Masters of Budvar strike another blow for
+			proper entertainment.
+			Under this none-more-black handle Michael Holloway practices his own unique style of cracked, demented urban blues. This
+			solo set promises to be compelling stuff.
+			<p>
+			It's all free, of course, lovely sound, lovely retro lighting, lovely Czech beer, lovely people.
+			<p>
+			Assume that the first artist will be on stage at 9:00 o'clock and you can't go wrong. Hope to see you there.
+			</center>
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Aug11.html()
+	${gigHeader(
+		cost=&pound;3:00,
+		with=${literalizeCommas(
+			The New Moon
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Back by popular demand, with support from Oxford's own The New Moon. Admission &pound;3:00.
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Aug19_2200.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Wilson will be appearing during the afternoon at this fantastic extreme sports and music event.
+			For details, go to ${linkExternal(http://www.air05.co.uk)}
+			<p>
+			Wilson will be playing Air-05 at 10:00pm on Friday 19th August, headlining the first night of the
+			festival.
+		)},
+		pat=${literalizeCommas(
+			It is three thirty on a damp afternoon in the teeth-grindingly picturesque village of Castle Ashby. A
+			large silver station wagon packed to the gunnels with boxes of black and chrome slides stealthily along
+			a quaint country lane. Two faintly desperate looking men in sunglasses are in the front, their windows
+			wound fully down, as though the day were much sunnier than it is. From those windows comes a cloud of
+			acrid smoke and the unmistakeable roar of Killing Joke's mighty Asteroid. The first wave has almost
+			made it to Security Checkpoint One.
+			<p>
+			On the floor of the Nene Valley some twelve miles east of Northampton lie the Grendon Lakes. The place
+			is a local beauty spot, popular with fishermen, families and - on occasion - with the more hardcore
+			element of the Racehorse regulars. There is a nice little club house there with a bar, restaurant and
+			all the facilities you could want. A pleasant little patio looks out over the water.
+			<p>
+			Because of the eponymous lakes, somebody has had the bright idea of staging an extreme sports event
+			here: wakeboarding, skateboarding, BMX, all that sort of thing. Air 05 is to be a three day event with
+			live music, DJs, camping, all that good shit. Wilson have been invited to play the first evening, so
+			here we are, about half a mile off the main road, waiting in a short line of vehicles queuing to clear
+			security. Agent Wilson and I are impressed to see that the people checking the vehicles are in
+			paramilitary garb, some with helmets and goggles. They do take their time, though. It must have
+			something to do with the large and immobile Winnebago parked up about three ahead of us. Eventually we
+			announce ourselves as Wilson: The First Wave and are tooled up with the requisite paperwork to proceed
+			to Security Checkpoint Two. We continue down the track towards the lakes, wondering how many people are
+			going to be queuing up at that gate later in the weekend.
+			<p>
+			Checkpoint Two succumbs easily to the glamour of our new paperwork and in a minute or two we are
+			pulling up outside the clubhouse. As we load in Rob from The Buzz is at the controls. playing groovy
+			punk, soul and dub sounds to perhaps two or three dozen people milling about on the patio or down by
+			the lake, where the wakeboarders are warming up. Russ tools me up with some fags and leaves me to set
+			up as much kit as I can while he sets off back to NN1 to fetch the Second Wave. Rob Carter buys me a
+			pint of Stella. It is 4:00pm.
+			<p>
+			At a picnic table high on a hill above the lake under a leaden sky they sit, crow-like. Wilson, minus
+			MC Bot but plus Anita Allbright and her small Soviet flask of brandy, huddle together, safe in the
+			knowledge that a soundcheck has finally been completed. A few last shafts of sunlight break through the
+			looming clouds. Red sky at night: shepherd's delight. Red sky in the morning: nuclear war.
+			<p>
+			We watch the wakeboarders still practising in the fading light. They are getting air all right. It is
+			radical, possibly gnarly even. Stevie G decides that he wants to see some mishap action. Each time one
+			of the talented aquatic daredevils comes speeding by, Steve cries with a passionate intensity: "Foot off!"
+			<p>
+			A tall, dark figure is coming up the hill towards the picnic table. It is unsteady on its feet and it
+			is gesticulating wildly in a manner that we cannot fully understand. It is MC Bot and he feels like
+			getting naked. Somebody asks what time it is. It is eight o'clock. We are on at ten o'clock. A sort of
+			desperate hilarity breaks out.
+			<p>
+			I miss the first band on the bill. Rob Carter reckons that they did Stone Roses songs in a Norfolk
+			accent: "The Alan Partridge Project". Mind you, Rob Carter is off his face. They seemed like perfectly
+			decent people to me. I wobble off and sit by the peaceful water's edge. Rob Carter plays Crazy Horses
+			by the Osmonds. While I am still reeling from this, he wanders out of the clubhouse and finds me at the
+			water's edge: "Oi, Buckley - No!"
+			<p>
+			The second band are very competent and are going down very well with the ten or twelve people who have
+			actually gone into the clubhouse. This is not entirely the band's fault. The room is small and the PA
+			is very large indeed. Those who are in the room are literally pinned along the back wall. This does
+			not, however, sink in at the time. Somehow I reckon it will be different for us. Had you asked me where
+			I thought all the people were coming from, I might have gone a bit quiet, though.
+			<p>
+			From the moment we take the stage it is chaos. We are really, really loud. MC Bot is really, really off
+			it and really, really up for it at the same time. The stage doesn't even hold him until the first
+			chorus. He's out there. Those who weren''t already pinned against the back wall by the volume are now
+			cowering there in the hope that the crazy singer man's microphone lead won't reach that far. It does,
+			though. Nobody is safe. With Bot spending most of his time in front of the PA, the filthy racket that
+			we are already generating becomes wholesomely larded with swathes of mid-range feedback. The band is
+			playing its teeth out. It's murder.
+			<p>
+			There is so little room on the stage that I stay pretty much immobile, head down, getting on with it as
+			best I can. I miss lots of what is going on. By the end I pretty much assume that we have cleared the
+			place. So as everyone leaves the stage I get down on the floor and make with a little bit of delay
+			feedback. As the other sounds die away I start to reduce the level, then slow it down to sound like a
+			record slowly running out of speed. It takes ages. I am certain that nobody is paying the slightest
+			attention. As finally I fade the feedback out to silence, for a second you can hear a pin drop. Then
+			about three young girls burst into keen applause. Bless 'em, I think, they were waiting for the ending.
+			A few people come up and say very polite things. Rob Carter reckons it was fantastic. Did I mention
+			that Rob Carter is off his face?
+			<p>
+			By midnight we are speeding back through the Northamptonshire country lanes, heading for Agent
+			Wilson's. Running the performance back in my head I simply cannot see how we are going to play the
+			Balloon Festival tomorrow without getting fully and comprehensively arrested.
+		)}
+	)}
+
+#define	Aug20_1700.html()
+	${gigHeader(
+		cost=free,
+		blurb=The Balloon Fair Festival,
+		with=${literalizeCommas(
+			Joe Woolley, Visionstate, One Toy Soldier, Atlantic Dash, DJ Black Cat Found, DJ Inspiration FM
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			In a move calculated to cause anxiety and stress across the nation, Wilson will be appearing at the Northampton Balloon Festival on Saturday 20th August.
+			<p>
+			Not exactly the sort of event at which you would expect to find us, perhaps, but it's all the work of Jon and Griff at the BBC Radio Northampton Weekender.
+			<p>
+			For that Saturday only they are taking control of the big stage at the Barrack Road end of the Racecourse (where Desmond Dekker played that fantastic set last year) and presenting a bunch of local bands who feature on their show. It's not one of their live outside broadcast affairs (too risky - Wilson are on, you know), but they are planning on recording the event and broadcasting the best bits on later editions of the Weekender.
+			<p>
+			As well as Wilson, the event features Joe Woolley and his band (featuring our own, dear Misery), Visionstate, One Toy Soldier and Northampton Town's latest Fierce Panda signings, Atlantic Dash. Jon and Griff will be playing records, and so will the mighty Black Cat Found and DJs from Inspiration FM. Sounds like it's going to be a great day out.
+			<p>
+			Wilson will be appearing on the Weekender Stage at about 5:00pm on Saturday 20th August. It's free to get in, so bring your friends and we'll all have a proper lark in the park.
+		)},
+		pat=${literalizeCommas(
+			The First Wave penetrates the Balloon Festival at about 3:30 on a sunny Saturday afternoon. Happily
+			Julie Reinger and the Weather Prophets have got it badly wrong. Deluge there is none. It's a beautiful
+			day in the neighbourhood. The first thing we find as we enter the backstage compound is the Mystic
+			Crew, which is a good way to start. Northampton's finest original reggae rockers have the slot before
+			ours this afternoon, but right now the Drake Music Project are onstage. They are an extraordinary band,
+			made up entirely of some pretty severely disabled people. With keyboards and percussion they are
+			weaving a mad, precise and rather beautiful sort of mutated sixties soundtrack samba sound. It's like
+			nothing you have ever heard. See them if you get the chance; you won't believe what's going on in front
+			of you.
+			<p>
+			By the time the Second Wave has arrived, there is something even stranger up there on the stage. In my
+			weakened condition I am astonished to see a seven foot high giant panda in a bright red satin Fun
+			Manchu gown cavorting with an equally massive dog, a bear in dungarees and a huge koala in a yellow
+			t-shirt with a map of Australia on it. They go into a frenzied dance routine to a song about somebody
+			(one them, I can only guess) having a birthday. This also is like nothing you have ever seen. It is
+			wrong, distressing and horribly seductive. Ah, the lure of plush - perhaps it is as well that Stevie G
+			is not with us today. A nice holiday in the wholesome seaside air of beautiful Pembrokeshire will
+			surely be better for the poor man's head. Meanwhile, I am trying to figure how I can get my hands on
+			the panda outfit. Then I have to have some beer. Quickly.
+			<p>
+			The relentless positivity and family-friendliness of the acts onstage has completely vaporized my head.
+			What are we doing here with our songs about cancer, corruption and war? When a nice man comes out and
+			announces the Mystic Crew with a spiel that involves the words "positive sunshine vibrations" I teeter
+			on the edge of panic.
+			<p>
+			Happily, the Crew are positive in all the right ways. Dennis on the bass sounds huge and he's playing a
+			blinder. With both Robbie and Zebby onstage the Mystics are blessed with two really charismatic,
+			tuneful front men, which really gets the crowd involved. Nothing too mental, mind, all solid, melodic
+			stuff, beautifully delivered. Though I don't know if I'll ever get my head around the version of "I
+			Still Haven't Found What I'm Looking For" ...however much of an improvement it is on the original.
+			<p>
+			The really good news is that all this reggae music is sounding fantastic through the big old outdoor
+			PA. Somebody out there is clearly well on top of their job. This we find reassuring. We head backstage
+			to assemble our kit, just in time to find our old friend Ruby the red bus pulling in with Jonny Mattock
+			at the wheel and a well-dressed but not entirely stable Joe Woolley on board. Out of the van he comes.
+			Over he goes. Later tonight I will find him being carried, unconscious, down the stairs on the back of
+			Agent Wilson. Griff from the BBC Weekender comes by and asks how it went at Air 05 last night. "Chaos,
+			mate. Like the Stooges' last ever gig," I tell him with a rueful smile. I can feel the bravery
+			radiating off him. All his artist are belong out control.
+			<p>
+			Mystic Crew finish their set to warm applause, then there are a fairly frantic fifteen minutes of
+			moving shit about, plugging shit in and generally sorting shit out. At 5:30 the DJ shuts down and
+			that's it: we're on. The first sound that can be heard is a police radio, dubbed up to the eyes,
+			floating out over bewildered balloon festival families. There are, to our delight, little knots of
+			mates out there in the crowd. Also there is Holly. As the instruments kick in and we realise that, yes,
+			we can more or less all hear each other on this whopping great stage, it's all set. If only the very
+			first line of the song wasn't "Grandpa pissed his pants again"...
+			<p>
+			Bot and I are on our best behaviour. This grandpa did him pants instead. Still, it doesn't change the
+			fact that we are starting with a tune about incest, madness, sickness and death. I'm missing Steve, me.
+			I feel like I'm too loud and exposed on my stupid ostrich guitar. I'm wondering if we might be needing
+			to dig deep to find a little something extra this afternoon when something comes to pass.
+			<p>
+			As the first chorus hits I look to my right and there is Curtis, craning to shout harmoniously down my
+			microphone. No milk crates being available, the stage crew sort him out with his own microphone and -
+			behold - we are six once again. The return of Mister E. Wilson! Curt stalks the stage, vibing things up
+			a treat. There are enough Wilson heads in the audience to get something going and the whole set starts
+			to roll rather nicely. Ash and Rhiannon from the Racehorse are down the front, arms in the air, rocking
+			it properly. Holly wants to hear that song about bananas, but we play Police Chief instead. It's not
+			the vicious maelstrom of last night, which is probably all to the good. It's measured and right and
+			what we lose from Stevie G's wicked guitar we make up with the spectacle of a shouty bald man stamping
+			about shouting "Kill 'im!" That and the fact that Steve Bes is on fire. Literally. Smoke rising all
+			around him in the most disconcerting fashion.
+			<p>
+			As we come off stage there is nobody waiting with plastic handcuffs. We count this as a victory. We
+			clear the stage in preparation for Joe and Jonny. The DJ from Inspiration FM teases the audience,
+			telling them that they are about to see Jah Woolley.
+			<p>
+			People speak kindly to us and tell us that the sound was good. Having seen the Mystics I can get my
+			head around this and I feel pleased. Then the Mystics tell us that we were good, and we tell them that
+			they were good, and respect is all over the place. I realise that we have indeed got away with it. Then
+			I have to have another beer. Quickly.
+			<p>
+			Joe and Jonny turn in a set that is completely mental. Jon's kick drum is massive, more than
+			compensating for the lack of any bass guitar. Joe is ranting and raving like a good 'un, shredding at
+			his acoustic guitar, but the entire crowd has its back to him, watching as about 50 balloons take off
+			into the lovely blue sky for their evening flight. This is something that I do not envy him. Unable to
+			gaze any longer upon the bizarre spectacle, I join MC Bot backstage for debriefing.
+			"So, did you know that Curtis was coming?" he asks.
+			<p>
+			"Well, he stopped by my yard about two hours ago in a big red Piper Heidsieck apron and I slipped him
+			Stevie G's backstage pass...but I didn't know he was going to do that."
+			"Aaaaaaah..."
+			<p>
+			We hang out behind the stage and listen to Joe and Jon ripping it up like they are The Who or
+			something. They do a version of "Who Do You Love?" which goes mad at the end. Jon is doing ridiculous,
+			over-the-top, out-of-time Keith Moon drum rolls. The guitar sounds very peculiar indeed. Then all we
+			can hear is Jon whacking the occasional cymbal, apparently at random. Then we see Jon and Joe come
+			reeling down the ramp from the stage, arm in arm, covered in sweat, gathering momentum and ready to go
+			over in about...ooooh...two and three quarter seconds. Yup. There they go. Whump! Upright again, Jon
+			dives into Ruby and emerges with a bottle of champagne. He and Joe make like racing drivers. At one
+			point they have both got champagne coming out of their noses. By this time, of course, Wilson have hold
+			of the bottle.
+			<p>
+			Of course, it turns out that we've missed it all. Kathie, who was out front, tells me all about it, how
+			Joe smashed his guitar to matchwood in front of the whole crowd. Those weird single cymbal crashes?
+			That was Jon synchronising with the final, lethal blows. Kathie is concerned "What's he going to do
+			now?" she wants to know, not unreasonably. Turns out that Joe had bought a guitar especially for the
+			purpose. "What did you pay for that then?" I ask him. "Ten quid" he replies, the devious hound. Of
+			course, round about now I have to have another beer. Quickly.
+			<p>
+			We stick around a while to enjoy Visionstate, who do good things with the old bass-drums-two guitar
+			line-up. Sharp and a bit modal, reminiscent of very early Oasis, but in a good way. They could make a
+			lot of young people very sweaty. I'd enjoyed their record on the Weekender show, and I wasn't
+			disappointed. Perhaps they'd like to play the Labour Club some time? But it's time to go now, for we
+			have to eat and make our way down the hill to Mister Cotton's house for the mother of all parties.
+			<p>
+			Just to confirm: Nobody got arrested. Nobody got hurt. Nothing got broken. Except Joe's guitar. And he
+			meant to do that. Honest.
+		)},
+		photosets= /images/20050820/weekender_stage_wilson_band_470x300.jpg$$
+			/images/20050820/weekender_stage_wilson_botty_470x300.jpg;;MC Bot$$
+			/images/20050820/weekender_stage_wilson_cathy_470x300.jpg;;Misery$$
+			/images/20050820/weekender_stage_wilson_curtis_470x300.jpg;;Curtis E. Johnson$$
+			/images/20050820/weekender_stage_wilson_pat_470x300.jpg;;Headstone$$
+			/images/20050820/weekender_stage_wilson_russell_470x300.jpg;;Agent Cooper$$
+			BBC Weekender website
+	)}
+
+#define	Aug27.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Joe Woolley
+		)},
+		who=${literalizeCommas(
+			${pat}, Jon Mattock, Joe Woolley
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+			The way that Joe Woolley sold this night to me was that there was nothing booked in at the Labour Club, so he
+			was planning to take his estimable acoustic club downstairs into the main bar, a sort of "Beat Saturday" if
+			you will. You know the sort of thing - not a "proper" gig, just a few mates sat round playing tunes in the
+			neighbourhood bar of a Saturday night. Old school. Easy. Local.
+			<p>
+			So would I care to put in half an hour as a solo acoustic pensioner? Sure, beats watching facile Saturday
+			night TV.
+			I can tape Match of the Day. No problem.
+			<p>
+			Then a few days before the gig, Joe comes to me and asks about my bass playing. After his recent excesses
+			with Jon Mattock, Joe is after rocking himself up. We spend a boozy evening learning a Warren Zevon tune.
+			Towards the end of the evening Joe tells me that he wants to play the Perfect Disaster's B-52! It crosses my
+			mind that Jonny used to play B-52 with the Perfect Disaster. Bloody hell, you might say.
+			<p>
+			Disconcerted, enraged with a vital surge of pure rock fury, but without any time to go on a programming
+			spree, I decide that my approach to my set should be of the old school. I style it "sit down mental". No amp,
+			no fancy playing or singing, just heads-down, wig-out acoustic idiot music...and if anybody doesn't like it,
+			they can meet my piggie Sam. My only intention is to keep the guitar in tune. After that, it's all up for
+			grabs.
+			<p>
+			So this is what I play:
+			<p>
+			Quality People - The Ugliest Song In The World - Big Jake (by Curtis) - Ghosts - Hysteria - Sister Death.
+			<p>
+			For the last song I am joined by Joe, who burns vital gases out of the atmosphere with his electric guitar.
+			It's about 9:45 and the Labour Club is wringing with hideous scrabbling guitar noise. Yes. Welcome to
+			acoustic night.
+			<p>
+			Joe takes the stage and plays a few numbers on his own. Then Jon Mattock joins him for a few tunes. The small
+			crowd is growing larger and rowdier. Joe is giving his all. Jonny is watching him like a hawk and drumming
+			like a medium. Then they call me back up and I have to strap on the big bass. We play:
+			<p>
+			Carmelita (by Warren Zevon) - B52 (by the Perfect Disaster) - Magic Bus (by The Who)
+			<p>
+			During B52 I look up and see Kevin Haskins walking into the Labour Club. He's over in town for the weekend
+			and apparently someone has told him that I was playing an acoustic set. Well, them's the breaks. Acoustic
+			night just turned into mental, churning acid rock frenzy night.
+			<p>
+			An encore was attempted but Joe had seized the bass and I couldn't get any noise out of the guitar (I expect
+			he broke it), so I fled the stage, leaving Joe and Jon to pass a contented ten minutes or so re-inventing
+			progressive rock somewhere along the Can/Pink Floyd axis of evil. Off to the Charles Bradlaugh to catch up
+			with Kevin on this most unlikely of Saturday nights at the Labour.
+		)}
+	)}
+
+#define	Aug28.html()
+	${gigHeader(
+		cost=free,
+		eventweb=http://www.theshakedown.com,
+		address=Bridge Street,
+		with=${literalizeCommas( Project DJ vs Shakedown DJs, Funjunkie DJs Vs Operatir DJs, Cricketclaps DJs Vs DJ Rik Moran, DJ Pat Fish Vs Kainerface DJs, Kapowski DJs Vs Atlantic Dash DJs, Weekender Jon Vs Weekender Griff, Shakedown DJs Vs Blackcar Found DJs, The New Cassettes, Black Wire, The Shakedown DJs
+		)},
+		who=${literalizeCommas(
+			DJ ${pat}
+		)},
+		notes=${literalizeCommas(
+			Well, now really is the time of a great big mother of a battle in the time of the end time. I bloody
+			knew it was.
+			On Sunday 28th August, I'm taking part in a Battle Royale.
+			<p>
+			Battle Royale takes place at a bar called The End on Bridge Street in central Northampton. It has
+			been organised by the boys from The Shakedown, a DJ crew with even more Weekender awards to their
+			name than Wilson. The idea is that everybody piles out into the rather lovely garden to watch and
+			groove as DJs battle it out mano a mano, tune by tune, for an hour at a time. I find myself with an
+			appointment for 4:00 in the afternoon, when I am due to go up against Kainerface, the mad monocled
+			eminence-grise of them Retro-Spankees. It's free to get in and there are live bands playing in the
+			evening, so if you're as curious as I am about the whole thing, why not come and see what happens?
+			<div class="annotation">
+		THIS SUNDAY AT THE END - FREE ALL DAY ${g_artistweb(g=http://www.theshakedown.com)}
+		<p>
+		BATTLE ROYALE - BLACKWIRE AND THE NEW CASSETTES LIVE AT THE END
+		<p>
+		WHY CAN'T WE ALL JUST GET ALONG
+		Let's be honest: everybody hates somebody. We all hold grudges and we're all capable of detesting people we've only just met based on the flimsiest of
+		evidence (example: "he once used the word 'Stateside' during a conversation about ten-pin bowling - verdict: twat.")
+		<p>
+		The Shakedown DJs have harnessed this suppressed rage and plan on unleashing it all over the course of a single Sunday afternoon. We've paired up
+		all the Northamptonians with a beef and given them the opportunity to battle it out on the decks. By the end of the day we expect a feeling of serenity
+		to descend as the sun rises over the Shire on Monday morning, bringing with it a new dawn of peace.
+		<p>
+		Until Sunday 28th August, let's make sure we can't get along. Shouldn't be hard. I mean, you're a prick, but I don't make a big
+		issue out of it.
+		<p>
+		14 DJs battle it out and 2 live bands calm the nerves while we clear up the blood and put it on your hotdogs.
+		<p>
+		THE FULL LINE UP
+		<p>
+		1pm Project DJ vs Shakedown DJs<br>
+		2pm Funjunkie DJs Vs Operatir DJs<br>
+		3pm Cricketclaps DJs Vs DJ Rik Moran<br>
+		4pm DJ Pat Fish Vs Kainerface DJs<br>
+		5pm Kapowski DJs Vs Atlantic Dash DJs<br>
+		6pm Weekender Jon Vs Weekender Griff<br>
+		7pm Shakedown DJs Vs Blackcar Found DJs<br>
+		<p>
+		PLAYING LIVE<p>
+		8pm The New Cassettes<br>
+		9pm Black Wire
+		<p>
+		10pm The Shakedown DJs
+		<p>
+		WWW.THESHAKEDOWN.COM - News, dates and music plus speak to the DJS online all day HERE ON THE MESSAGEBOARD.
+		</div>
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Sep2.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Tim Keegan, The New Moon, The Max Eider Experience
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Masters of Budvar present our headliner: TIM KEEGAN
+			<p>
+			I first saw Tim Keegan play in 1986, when he was still a student and his band opened for the JBC. He has been making music ever since, leading his
+			bands Homer, The Homer Lounge and The Departure Lounge through a succession of delicious recordings and worldwide concert tours. He has collaborated
+			with Robin Hitchcock and played in the Blue Aeroplanes' veritable Foreign Legion of ace guitar-slingers. He is in the front rank of original British
+			songwriters, comparable with Ray Davies, Morrissey or Boo Hewerdine. I don't - at this stage - know in what format he will be appearing, but he is
+			somebody that I have dreamed of booking for Masters of Budvar since we opened, and I have no doubt that - however he presents his music - he is
+			guaranteed to be sensational.
+			<p>
+			Masters of Budvar present our guests: THE MAX EIDER EXPERIENCE
+			<p>
+			Ladies and gentlemen, the elegantly-wasted JBC guitar supremo has himself a supergroup. On the drums is June Miles-Kingston, who drummed and sang on
+			about 85% of all listenable British hits of the nineteen-eighties. Remember the cool girlie harmonies on those calssic Funboy Three singles? June. On
+			guitar is Simon Mawby, whose past credits include tours and records with The Woodentops, The House of Love and The Communards. On bass, flying in from
+			Los Angeles, is Mister Steven "Twin Cadillac" Valentine, bass player of the Jazz Butcher Conspiracy, and on guitar and vocals, none other than the man
+			himself, ${max}. And their first ever performance? Why, it's right here at Masters of Budvar. And it's at nine-thirty, so don't even consider being
+			late.
+			<p>
+			Masters of Budvar present our guests: THE NEW MOON
+			<p>
+			Making a welcome return to Masters of Budvar, Matt Sewell and his posse from Oxford bring a lovely, swirling acoustic sound with shades of Hitchcock
+			Robin and Buckleys Jeff and Tim. Infamous for having written a song about Terry Walpole's camera, The New Moon make a cracking start to possibly the
+			best bill that the Masters of Budvar have yet hosted.
+			<p>
+			It's at the Labour Club, Charles Street, Northampton on Friday 2nd September 2005. It's free to get in, the vibes are friendly, the beer is cheap, the
+			lights are pretty, the PA is warm and the speeches are short. Doors are open from 7:30pm and the first act will take the stage at nine o'clock sharp.
+			The Masters of Budvar thank you.
+
+			<div class="annotation">
+			Masters of Budvar present
+			<p>
+			at
+			<p>
+			The Labour Club
+			<p>
+			Charles Street
+			<p>
+			Northampton NN1
+			<p>
+			on
+			<p>
+			Friday 2nd September 2005
+			<p>
+			Tim Keegan
+			<p>
+			Tim Keegan has been on the Masters of Budvar wish-list since we opened. He is a super-talented British songwriter. For several years Tim and his band
+			Departure Lounge were based in Nashville, Tennessee. There they made a brace of albums which garnered all manner of critical acclaim. Their 1999 waxing
+			"Out Of Here" is a classic late night record, required listening for those who value the Velvet Underground's third album, Leonard Cohen or the tender
+			(dark) side of the Perfect Disaster. More recently Tim lived and recorded in Paris, where he worked with ace French producer Kid Loco. He has also
+			toured and recorded with Robin Hitchcock (he can be seen in Jonathan Demme's "Storefront Hitchcock" movie) and played guitar with the Blue Aeroplanes.
+			Now he is back in the UK and making a rare and precious solo appearance right here in Northampton. Did you dig Micky Greaney or Ramon de Juan when they
+			played? Come see Tim.
+			<p>
+			${max} & His Orchestra
+			<p>
+			You may well know Max Eider as the exceptional guitarist with The Jazz Butcher Conspiracy or David J. You know the guy: tall and elegantly wasted with
+			a sound like a tripped-out Wes Montgomery and fingers that grown men find troubling to gaze upon. His 1987 album "The Best Kisser In The World" is a
+			much sought-after collector's item, and his 2001 release "Hotel Figueroa" even earned him column inches in Forbes Magazine! Tonight, for the first
+			time, he presents his all-star orchestra, featuring Steven "Twin Cadillac" Valentine (bass) and Pat Beirne (harmonica) from the current JBC line-up,
+			along with vocalist Lynda Skulpone (from Los Angeles underground band Saltypop), guitarist Simon Mawby (who has played with the Woodentops, Jimmy
+			Somerville and the House of Love) and world-class drummer and vocalist June Miles-Kingston (who has played with everybody from Funboy Three to
+			Everything But The Girl). Expect the lushest of loungecore backing to provide the perfect setting for Eider's bittersweet songwriting skills. Find out
+			more than you need to know at: www.maxeider.com
+			<p>
+			The New Moon
+			<p>
+			Hailing from Oxford and boasting one of the finest bassists to grace our club, the New Moon made their Masters of Budvar debut last November. They
+			specialise in a kind of psychedelic folk music, spinning out great tumbling chord sequences with powerful vocals soaring way up there above. Comparable
+			to the aforementioned Mr. Hitchcock or perhaps Jeff Buckley, the New Moon make a surprisingly muscular sound that repays your attention in spades. They
+			are also the only band in the world currently known to have a song about Terry Walpole and his camera.
+			<p>
+			This all kicks off at 8:30pm
+			</div>
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Sep10.html()
+	${gigHeader(
+		cost=&pound;3:00,
+		with=${literalizeCommas(
+			Anton Barbeau, Joe Woolley, The New Moon
+		)},
+		who=${literalizeCommas(
+			${pat}, Russ Cooper (Wilson)
+		)},
+		notes=${literalizeCommas(
+			Saturday 10th September - The Port Mahon, St. Clements Street, Oxford
+			Pat Fish - Anton Barbeau - ${joe_woolley} - The New Moon.
+			Masters of Budvar on the road again. Admission &pound;3:00.
+			Pat Fish playing a part acoustic, part digital set, with live percussion from Russ Cooper (Wilson).
+		)},
+		pat=${literalizeCommas(
+			Oxford gig a glorious great big mess. The New Moon were on fine form, Anton turned in a tuneful double act, Joe
+			was excitable. Future editors of the NME chatted away throughout.
+			<p>
+			Russell and I got on and whacked out a
+			passable acoustic version of Quality People, but the new 17 on my acoustic was in open revolt throughout Soul
+			Happy Hour, which was disfigured accordingly. On the next number I was re-tuning the little sod as I went
+			along. Things got a bit...um...passionate and by the end of it, the acoustic was skidding across the floor.
+			<p>
+			Switching to my Burns electric had a soothing effect on the sound, but just then the DAT kicked in, brutalising
+			it up all over again. From then on I enjoyed myself thoroughly. Many thanks to Matt from the New Moon for
+			putting it all together.
+		)}
+	)}
+
+#define	Sep19.html()
+	${gigHeader(
+		cost=&pound;6:00,
+		with=${literalizeCommas(
+			Anton Barbeau
+		)},
+		who=${literalizeCommas(
+			${pat}, ${max}
+		)},
+		photosets=
+			/images/20050919/20050919_martinsreed_001.jpg$$
+			/images/20050919/20050919_martinsreed_003.jpg$$
+			/images/20050919/20050919_martinsreed_004.jpg$$
+			Martin Reed
+		,
+		notes=${literalizeCommas(
+			Monday 19th September - The 12 Bar Club, Denmark Street, London
+			<p>
+			The Jazz Butcher - Anton Barbeau + guests tbc
+			<p>
+			Pat Fish and ${max} together in this smashing little central London club.
+		)},
+		pat=${literalizeCommas(
+			The 12 Bar Club show was a gas. Lots of friendly faces and lovely little bottles of Budvar, plus a shouty French woman putting the moves on Joe
+			Woolley, yea, even as we sang a tune about elephants at the seaside.
+			<p>
+			Herr Doktor Professor Eider responded well to his first live brush with
+			digitisation, thrilling the room with guitars both eloquent and fierce.
+			<p>
+			Thanks to Anton (who sang Bob Dylan's Tangled Up In Blue!) for getting it
+			together, thanks to Andy Lowe for booking us, thanks to John for a good live sound and thanks to everybody who came out.
+			<p>
+			Next Butcher -v- Eider
+			action is in Hamburg at the KIR nightclub on Thursday 27th October, with Owen, Curtis and Joe all on board for a mega soul revue.
+		)}
+	)}
+
+#define	Sep25.html()
+	${gigHeader(
+		cost=&pound;4:00,
+		phone=07974 885450,
+		with=${literalizeCommas(
+			Slipstream, Paul Cox & Joe Woolley
+		)},
+		who=${literalizeCommas(
+			${pat}, Russell Cooper
+		)},
+		notes=${literalizeCommas(
+			Sunday 25th September - The Soundhaus, Great Russell Street, Northampton
+			<p>
+			Who's Playing: Slipstream, Pat Fish and Paul Cox/Joe Woolley
+			<p>
+			Admission &pound;4:00 - Info 07974 885450
+			<p>
+			Sponsored by Spiral Archive Records, Abington Sq, Northampton -
+			${g_artistweb(g=http://www.spiralarchive.com)}
+		)},
+		pat=${literalizeCommas(
+			It was me, Russell and, for the bold part of the show, the DAT player.
+		)}
+	)}
+
+#define	Oct7.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Slipstream, Kevin Buxton and Kontra Band, Charles Barnard
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Masters of Budvar present
+			<p>
+			at
+			<p>
+			The Labour Club, Northampton NN1
+			<p>
+			on
+			<p>
+			Friday 7th October 2005
+			<p>
+			SLIPSTREAM
+			<p>
+			You know these guys by now. These super-professional psychedelic rockers (with a string of top flight credits as long as the M6) played
+			two magical sets at Masters of Budvar last year, two of the best nights we have had. Now we are delighted to welcome Mark Refoy and Jon
+			Mattock back to the cheery confines of the Labour Club once again. At a recent soundcheck their computer died on them, forcing them to
+			alter their set list at the very last minute. Having seen the ensuing set, I'm happy to report that the technical whoopsie-daisie didn't
+			seem to phaze them in the slightest. A huge, barrelling wall of spaced-out sonority, simple melodies sweetly sung and a drummer to marvel
+			at.
+			<p>
+			Come and see how Slipstream just keep getting better and better.
+			<p>
+			${g_artistweb(g=http://www.slipstreamweb.co.uk)}
+			<p>
+			KEVIN BUXTON and KONTRA BAND
+			<p>
+			Riding in from the badlands of Wellingborough with his trusty team of pistoleros in tow comes a man who has clearly done a lot of living,
+			and taken the time to chronicle it all in his sharply-observed, poignant songs. His recent album "Through Any Window" offers a range of
+			thoughtful character studies and wry reflections on a full life richly lived. The music is deceptively simple and inviting, but cast
+			about with mysterious and faintly intimidating ambient shadows, perhaps along the lines of one of John Cale's early solo albums. (He's
+			got a song about cowboys, too.) When our Masters of Budvar talent scouts last clocked Kevin and the band they were grinding out a truly
+			frightening tune about Robert Johnson, the Devil and...well, you should just come and see for yourselves.
+			<p>
+			${g_artistweb(g=http://www.kevinbuxton.co.uk)}
+			<p>
+			CHARLIE BARNARD
+			<p>
+			Charlie Barnard comes from Milton Keynes, where he used to front a band called The Dead Girls. He is a charming solo performer, with a
+			very English take on the dark side of psychedelia. We first saw him at Beat Wednesday, where his resemblance to a young Peter Perrett
+			held an awful fascination for our talent scouts and indeed for Glenn Hoddle's cousin, who happened to be passing through at the time.
+			There are also more than a few flashes of Syd Barrett about when Charlie sings. Altogether, then, the signs are that he'll probably
+			disappear off the face of the Earth when he's about 28, so catch him now would be our advice!
+			<p>
+			${g_artistweb(g=http://www.lemonrock.com/charlie)}
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Oct27.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Curtis E. Johnson, Joe Woolley
+		)},
+		phone=040/43 80 41,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${owen}
+		)},
+		notes=${literalizeCommas(
+			Masters of Budvar present The Jazz Butcher Conspiracy Soul Revue
+			featuring
+			${pat}, ${max} & ${owen}
+			plus
+			${curt}<br>
+			${joe_woolley}
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Nov4.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			Dave Kusworth, Paul Cox, Joe Woolley, Charlie Barnard
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Masters of Budvar present
+			Dave Kusworth
+			Paul M Cox & Joe Woolley
+			Charlie Barnard
+			Northampton Labour Club - Free
+			<div class="annotation">
+			Moin moin, lieber Musikfreunde...
+			<p>
+			This month - for one lovely, tranquil month only - the Masters of Budvar return to their original brief as a showcase for acoustic singer songwriters. And we
+			believe that we have secured for your edification and delight one of the finest, most authentic rock and roll songwriters that the UK has produced in the last
+			twenty years, plus a top supporting cast of talent from NN1 and around. So...
+			<p>
+			Masters of Budvar present
+			<p>
+			at
+			<p>
+			The Labour Club, Charles Street, Northampton NN1
+			<p>
+			on
+			<p>
+			Friday 4th November 2005
+			<p>
+			DAVE KUSWORTH
+			<p>
+			There are a few precious people who are truly, irrevocably rock and roll to the bone.
+			<p>
+			Birmingham's prodigal son Dave Kusworth is one of them. He is also the kind of songwriter who can play his songs all on his own with just an acoustic guitar and
+			his unearthly voice and hold you spellbound, no less rock and roll than if he were fronting a full-on electric band with a ten-piece horn section. The boy just
+			can't help it.
+			<p>
+			Dave Kusworth has been playing professionally since 1977, and at the turn of the eighties he founded The Hawks with the great Micky Greaney and a teenaged Steven
+			Duffy (last sighted writing the songs on Robbie Williams' new album, for goodness' sake!) He toured and recorded with UK rock legends the Dogs D'Amour before
+			hooking up with the Swell Maps' Nikki Sudden to record several albums for Glass Records, Creation Records and Glitterhouse Records under the name of The
+			Jacobites. He has toured all over the world and his wild, cracked, heartbreaking songs have been covered by The Lemonheads and Mercury Rev.
+			<p>
+			As I write this, Dave has just returned from touring Germany with his band (where he was joined onstage in Berlin by Sudden) and he has just completed his
+			umpteenth album, the particularly magnificent "Silver Blades". He will be appearing solo and acoustic at Masters of Budvar, offering a rare and unmissable insight
+			into his astonishing knack for writing simple but devastatingly effective rock and roll songs. As a writer and as a frontline rock and roll road warrior, Dave
+			really is in the same league as Peter Perrett or Keith Richards. We are honoured to host him and we hope that, come closing time, you will love him, yea, even as
+			we love him.
+			<p>
+			${g_artistweb(g=http://www.davekusworth.com)}
+			<p>
+			PAUL COX & JOE WOOLLEY
+			<p>
+			Masters of Budvar regulars will be familiar with the elegant balladeering style of Northampton artist Paul Cox. Now he joins up with the irrepressible Joe Woolley
+			on electric guitar, bringing a whole new range of dynamic power and colour to his songs. Check out this collaboration and be amazed.
+			<p>
+			${g_artistweb(g=http://www.paulmcox.com)}
+			${g_artistweb(g=http://www.joewoolley.com)}
+			<p>
+			CHARLIE BARNARD
+			<p>
+			From Milton Keynes, Charlie Barnard is a more than promising young talent, very English and very psychedelic. He made his Masters of Budvar debut last month
+			supporting Slipstream, and his slightly sinister, wide-eyed songwriting combined with his uncanny take on the Syd Barrett guitar sound induced us to ask him back
+			straight away for another shot at establishing a foothold upon the NN1 scene. Worth getting in early for!
+			<p>
+			${g_artistweb(g=http://www.lemonrock.com/charlie)}
+			<p>
+			As usual, the Labour Club welcomes all comers from 8:00pm and as usual entry is free. We hope to see you there.
+			</div>
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Nov17.html()
+	${gigHeader(
+		cost=&pound;6 door. &pound;5 with flyer,
+		eventweb=http://www.madamejojos.com,
+		with=${literalizeCommas(
+			Slipstream, Greenhaus, Venus Fly Trap, Space Between
+		)},
+		who=${literalizeCommas(
+			${duo}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Nov25.html()
+	${gigHeader(
+		cost=,
+		eventweb=http://gappytooth.com,
+		with=${literalizeCommas(
+			Modek, Gone To Ground, Raggasaurus
+		)},
+		who=${literalizeCommas(
+			${solo}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Dec2.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+			The Importers, That Girl's Name
+		)},
+		who=${literalizeCommas(
+			${solo}
+		)},
+		notes=${literalizeCommas(
+			Masters of Budvar present
+			at
+			The Labour Club, Northampton
+			on
+			Friday 2nd December 2005
+			<p>
+			THE IMPORTERS
+			<p>
+			Based in Earls Barton, home of the mighty Phoenix Soundworks and the
+			deeply scary doll-museum-in-a-pharmacy,
+			The Importers make a bright and breezy electronic pop sound, melodic,
+			airy and openly indebted to the perfect pop of New Order. Since their
+			debut in the Spring of 2005 this ambitious outfit have been playing out
+			and recording busily, so we expect them to be on top form for this
+			night.
+			<p>
+			THAT GIRL'S NAME
+			<p>
+			Featuring Gregg Cave on guitar alongside another acoustic guitarist and
+			a cellist, this brand new band describe themselves as "A fusion of
+			contemporary and classical sounds with folk roots around the edges".
+			<p>
+			PAT FISH
+			<p>
+			Skuff karaoke from your genial and twisted host. Expect electric guitar,
+			squelchy bleepy noises and spectacularly ill-advised cover versions.
+			<p>
+			As ever, admission is free, and - as of this month - the bar will be
+			open until midnight!
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Dec10.html()
+	${gigHeader(
+		cost=free,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Wilson will be playing at The Labour Club, Northampton on Saturday 10th December.
+			<p>
+			Admission is free, the bar is open until 12:30am and there will be Superstar DJs in support.
+		)},
+		pat=${literalizeCommas(
+			Great night at the Labour club on Saturday. After the Weekender boys played Buffalo Sniper on the
+			radio, the place was absolutely packed with punters baying for evil dub. Which is exactly what they
+			got.
+		)}
+	)}
+
+#define	Dec22_2000.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			The Black Watch, The New Moon
+		)},
+		who=${literalizeCommas(
+			${solo}
+		)},
+		notes=${literalizeCommas(
+			The Black Watch<br>
+			Pat Fish<br>
+			The New Moon
+			<p>
+			Yo ho ho! Jolly pop giant John Andrew Frederick returns to the UK for a festive mini-tour. Check him out at www.theblackwatchmusic.com
+			Also on the bill are myself and Oxford's own psycho-acoustic warriors The New Moon. Admission will surely be entirely reasonable, as you
+			will no doubt discover when the doors open at 8:00pm. Hope to see you there!
+		)},
+		pat=${literalizeCommas(
+			Thoroughly enjoyable and more than faintly complicated trip to 
+			Oxfodd the other night.
+			<p>
+			Played on my own with an acoustic 
+			guitar - no way was I taking the Big Wooden Tape Recorder on 
+			the bus. Decided to cover Charlie Barnard's "Regrets of a 
+			Spaceman" at about three o'clock that afternoon.
+			<p>
+			Managed to get 
+			from one end of the song to the other without going 
+			"Mmmmrrrbbbble...mrrrb" too much...which was nice.
+			<p>
+			The New 
+			Moon were muscular and enthusiastic, the Black Watch 
+			magisterial. More dates just like this at: 
+			Swindon, The Beehive - Tue 27th December 
+			Bath, Porter Cellar Bar - Wed 28th December 
+			Cambridge, Man On The Moon - Fri 30th December
+		)}
+	)}
+
+#define	Dec27.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			The Black Watch
+		)},
+		who=${literalizeCommas(
+			${solo}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+			After the Swindon gig, the promoter came and told me: "Great stuff, man. Like an acoustic Hawkwind." Uh...OK..
+		)}
+	)}
+
+#define	Dec28.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			The Black Watch
+		)},
+		who=${literalizeCommas(
+			${solo}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Dec30.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			The Black Watch
+		)},
+		who=${literalizeCommas(
+			${solo}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+			The Cambridge gig was the one where, at the end of Sister Death, unable to wring any more noise out of the guitar, I flung it (still plugged in) at the wall.
+			<p>Very satisfying.
+			<p>The back end of the guitar remains dramatically stoved-in to this very day.
+		)}
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

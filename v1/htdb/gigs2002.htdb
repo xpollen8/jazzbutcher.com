@@ -1,0 +1,1430 @@
+#define	Jan31.html()
+	${gigHeader(
+		with=${literalizeCommas(
+			Tobermory
+		)},
+		pat=${literalizeCommas(
+			In January ${wilson} played with ${gab}'s band, Tobermory, in Cambridge.
+		)},
+		photosets= /images/20020131/20020131_wilson_boatrace.jpg$$
+	)}
+
+#define	Jan4_2100.html()
+	${gigHeader(
+		cost=&pound;3:00,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${owen}, ${steve}, ${beirne}, ${curt}
+		)},
+		with=${literalizeCommas(
+			Curtis E. Johnson
+		)},
+		notes=${literalizeCommas(
+			9:00 pm &pound;3:00
+			Pat, Max, Steve and Owen continue to plunder the UK on their festiff mission.
+			Support bands tbc plus top party vibrations and hospitality.
+		)},
+		pat=${literalizeCommas(
+			<h1>JBC GO HOME! </h1>
+			<b>A NIGHT AT THE RACEHORSE</b>
+			<p>
+			It takes a couple of days for the JBC to recover from their <a href="${jbc_gigs}/2001/Dec31.html">New
+			Year's Eve</a> at Fawlty Towers Platinum. By Friday we are about ready
+			to take on The Hardest Room In The World, that is to say the
+			back room of the Racehorse in Abington Square NN1, also known
+			as The Heart O'Darkness. We arrive to find The Man Skinner setting up the PA.
+			Is he the new <a href="${jbc_people}/iain_ohiggins.html">O'Higgins</a>, we wonder with a shudder. The room itself has been beautifully
+			decked out in drapes, with a huge multi-coloured parachute hanging
+			over the stage.
+			<p>
+			The London posse arrives and Max heads off to the local music
+			shop to get some bits and pieces, among them a drum key for Owen.
+			When he returns shortly he hands this to Owen, announcing that
+			he got it for free. The Butcher is astonished: 
+			<p>
+			You got something from the music shop for free? That's a fucking first!
+			"Fuck off," replies Skinner, "I work in that shop!"
+			(Which shows how long it has been since I shopped there.)
+			<p>
+			In the end we agree that being sneering, dismissive and condescending
+			probably counts as a perk of the job. After all, think how many
+			times a month these poor bastards get to hear <i>Sweet Child O'Mine.</i>
+			<p>
+			After a fairly uneventful soundcheck (that's what we pay for) we retire
+			to JBC Central, where Kathie has somehow managed
+			to cook up dinner for everybody. 
+			<p>
+			Great dressing room, this - almost like being in your own living room.
+			<p>
+			We arrive back at the venue at half past eight. Apart from Kathie
+			and George, bravely manning the door, there are two people in
+			the room! Now, it's fair to say that this show was organised pretty much at the
+			last minute, but this is scary. Still, we get some beers in and
+			wait, and sure enough the place soon begins to fill up. As we
+			hit the magic "double figures" mark, somebody remarks 
+			"JBC friends and family night."
+			<p>
+			The crowd is still fairly thin as the great ${curt}
+			takes the stage. He plays a fine set featuring a load of new
+			songs. He has started using 
+			a Line 6 delay unit to make layers of sound with the one guitar,
+			and it works well. Except, that is, when he essays a version
+			of Suicide's <i>Rocket USA</i>
+			only to discover that he has forgotten to switch the thing on!
+			Still, he succeeds in mutating the tune into his own wonderful
+			<i>Point Blank</i> and concludes his set on a high note. 
+			<p>
+			While Curtis is singing, the JBC are delighted to note the arrival
+			of one ${sonic} in the area. Mysteriously Pat and Steve follow
+			him into a small cupboard by the side of the stage, from which
+			they do not emerge for some time
+			<p>
+			Not long after the emergence of the JBC Stoner Tendency, the
+			band takes the stage. By now the room has filled up a little
+			more. We are probably playing to about 50 people. That's Death Week
+			for you. Of those 50 punters probably 35 are musicians themselves,
+			including all the members of Wilson. That's intimidation for you. Well, for us, anyway.
+			<p>
+			Skinner has sorted us a good, strong sound and we get off to
+			a fine start with ${odd} and ${drugs} before throwing The Punter
+			a fairly radical curve and starting up ${who}. In this room
+			it's somehow very hard to establish eye contact with the audience
+			(it's so dark out there), but I keep facing them down as best I can
+			as we move on through The Talented One's Spot, whacking out ${rosemary} and ${morphine}, which marks some
+			kind of major step in the set, as indeed it always seems to do.
+			<p>
+			It's only as we move on into ${rain} "from the sublime to the ridiculous"
+			(as I remark at the time) that I close my eyes, more in embarrassment
+			at the creaky 19 year old lyric than in any kind of rock ecstasy.
+			<p>
+			I then manage to bring the intro of ${hour} to a grinding
+			halt, accidentally trying out an entirely new intro revolving
+			around the Special Upmarket Waitrose Superstore (on account of
+			I'm 44), which leaves everybody without a clue as to when the tune
+			proper should start.
+			<p>
+			This is followed by ${wheel}
+			before Owen starts up the groovy beat to ${friendly}.
+			Sumo vocalist Mr. B. is in the house and keen to run up and join
+			in, but he is frustrated by a crowd of thirsty punters for he
+			is working behind the bar. 
+			<p>
+			I have to manage on my own. 
+			<p>
+			After ${niagara}, dedicated to the hole in the bathroom ceiling
+			at JBC Central, we unpack ${sis} from its big black box.
+			It's a storming version, and as it comes to a fiery end I find myself
+			baffled that we ever thought to put anything after it in the
+			list. But we have, and it's ${party}! We finish with ${zombie}, one of those versions
+			where everything ends up playing on a mad off-beat, huge dirty
+			great noises bouncing off each other in what is only theoretically
+			4/4 time. The thing ends in total chaos and destruction and,
+			like Germans, the punters of NN1 reserve their loudest applause
+			for the end.
+			<p>
+			We play two encores, a version of ${gf} that seems livelier
+			and more committed than it has in years (possibly something to
+			do with the location), and a romping ${skins}, with Curtis adding
+			his own distinctive rapping skills ("Fuck off! Fuck off! Fuck off!")
+			<p>
+			People are very kind as we leave the stage. Sonic is particularly
+			taken with the skills of Mr. Beirne, who wasn't with us on our last visit to NN1 in the summer. We take care
+			not reveal Pat's telephone number: industrial confidentiality and all that.
+			A quick check reveals that we have taken just about enough money
+			on the door to pay everybody 
+			hurrah! Skinner is duly sorted out and the kit packed away.
+			<p>
+			Then something rather wonderful happens. There is a bar in NN1,
+			named after the celebrated radical MP Charles Bradlaugh, which
+			now has a license to continue serving until 1:00am. I know that
+			this might not seem too impressive to our overseas readers, but
+			in the UK this is still something rare and precious. It is with
+			great satisfaction that the JBC and their friends leave the gig,
+			walk a couple of hundred yards up the street and settle down
+			for a civilised post-concert drink. Not, it has to be said, all
+			that civilised: those who were there just minutes before we arrived
+			were witness to a massive barroom brawl. Still, it has all blown
+			over by the time we make it in, so no problems there. 
+			<p>
+			I'm chatting to Steve from Wilson when Lynda appears and asks if
+			they have Jaegermeister here. I am forced to say that they don't,
+			and my mind turns to trying to come up with an equally frightening
+			and viscous local liqueur. I settle on Drambuie. 
+			<p>
+			Long ago, back before Air Rage had been invented, I found myself
+			"doing"
+			Drambuies with a young actor on a flight back from Los Angeles.
+			I found myself moved to tell a joke 
+			one whose punch line must of necessity be screamed out at top
+			volume. Owing largely to the Drambuies I had failed to notice
+			that I was delivering this punch line right in the middle of
+			the transatlantic night, with everybody else on the plane fast
+			asleep. A slightly panicky waitress 
+			- oh, so sorry, - Flight Attendant
+			soon brought home to me what I had just done. I suppose if it
+			had happened this year I would have ended up sharing a cell with
+			celebrated joghurt-slosher Peter Buck.
+			<p>
+			I haven't had a lot of Drambuie since that incident, 
+			but I remember it with affection. Heaven knows why: one mouthful
+			and we are all agreed that it's revolting stuff!
+			<p>
+			We drink until closing time, and then it's back to JBC Central for a party.
+			<p>
+			Yes, we have a show tomorrow. No, we haven't forgotten. Yes, we end up getting
+			to bed at about six in the
+			morning. But this is NN1 and we wouldn't have it any other way.
+		)},
+	)}
+
+#define	Jan5.html()
+	${gigHeader(
+		cost=&pound;6:00,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${beirne}, ${steve}, ${owen}
+		)},
+		with=${literalizeCommas(
+			The Sunny Valley Dance Band
+		)},
+		notes=${literalizeCommas(
+			Just confirmed the support for the Garage show on 5th January.
+			<p>
+			It's The Sunny Valley Dance Band.
+			They are a three piece, featuring Mark Refoy (Spiritualised/Slipstream) and the rhythm section
+			from Ultrasound.
+			<p>
+			The bassist, Vanessa, is really something, with a voice so powerful it can be downright
+			frightening.
+		)},
+		pat=${literalizeCommas(
+			<h1>CAPITAL OFFENCE </h1>
+			<b>THE JBC GO LONDON</b>
+			<br>Upstairs at The Garage 
+			Saturday 5th January 2002
+			<p>
+			An elderly, poorly JBC rises in the dank midday. Pat Beirne,
+			Max and Tamaki head straight for the train to London. As Max
+			later points out, this actually allows them to go home before
+			immediately setting out again for the venue. You see, Gentle
+			Reader, why they let me navigate the bus.
+			<p>
+			The hardcore heads for the Cafe
+			Rico on Abington Square, where your correspondent suffers his
+			usual series of minor aneurisms at the content of Saturday's
+			Guardian. Full Veggie Breakfast is the order of the day, and,
+			duly restored, we head across the road to collect our kit from
+			the pub, where we abandoned it last night in search of nocturnal
+			urban delights. 
+			<p>
+			All right, then - a drink at the Bradlaugh.
+			<p>
+			We pass by JBC Central to shower and to pick up George for the
+			trip to London. As we board the bus, Kathie is in the driving
+			seat, looking utterly miserable and racked with the 
+			flu that has been so fashionable in our neighbourhood ever since
+			Depak The Shopkeeper developed it after opening what he thought
+			was a parcel of specialist pornography from an address in Uzbekistan.
+			Ever chivalrous and apparently indestructible, Steve swiftly
+			takes the wheel and we pass a pleasant journey to London. During
+			the trip we hatch a plot for the Great American Action Movie
+			Of The Future. This is confidential copyright shit, so I'm
+			not going to lay it on you here. All you movie producers in
+			LA and Hong Kong and Bollywood are just going to have to e-mail
+			me via the site and we'll talk.
+			<p>
+			We arrive at The Garage on the very stroke of 5:00pm and load
+			in our shit through the strange backstage labyrinth that has,
+			over the years, become known to us as The Birth Canal Of Rock.
+			(It's hard to explain unless you've done it. Those of you who
+			have will understand at once, I'm sure.)
+			<p>
+			Soundcheck is remarkable only for its ease. (Thanks, Rich!) We
+			greet our esteemed opening act, The Sunny Valley Dance Band,
+			and they are still soundchecking as the posse heads out for dinner.
+			George, Kathie and I are joined by our good friend Bob Goodman
+			as we head across the road to that splendid little trattoria
+			on the Holloway Road called Spiazzo. Bob, of course, is an ex-Doctor-Who-Monster
+			and the author of ${hobbu}. He could also use a job right
+			now, so do write in, won't you?
+			<p>
+			This Spiazzo place really is very nice and not very expensive
+			at all.
+			<p>
+			I enjoyed a Pizza Buffala (well, you're forced to, ain't ya?)
+			with mozzarella and fresh tomatoes. They serve Budvar
+			too. Go there. Eat and be happy.
+			<p>
+			After espressos we pass by a nearby bar, where I am happy to
+			greet Mister Edwards, writer and fellow Tottenham Hotspur FC
+			fan, in town from Pittsburgh, where he has been living lately.
+			Also, scarcely credibly, I find myself face to face with the
+			man who has, since last summer, come to be known to us as
+			<a href="${jbc_people}/peter_crouch.html">No Show Crouchy</a>.
+			<p>
+			Sunny Valley are already on stage as we return to the club. They
+			are a trio, made up of:
+			<p>
+			Mark Refoy - Guitar, singing<br>
+			Vanessa - Bass, Singing<br>
+			Andy - Drums
+			<p>
+			Mark, of course, is my pal from NN1, who played in Slipstream,
+			The Tell-Tale Hearts, ${space} and Spiritualised. The others were
+			in Ultrasound. They come from way up north, Sunderland, possibly,
+			though I can't be sure and I wouldn't want to hurt their feelings
+			by placing them in the wrong town.
+			Whatever, they live in London now. 
+			<p>
+			Vanessa's got a song about it. 
+			<p>
+			The chorus appears to run "Save my soul!"
+			<p>
+			Sunny Valley make an extraordinary noise, deep and rumbling,
+			yet drenched in melody and harmony. Mark is a beautiful guitar
+			player and Vanessa has a voice to bring down the walls of Jericho.
+			Spotting ${dooj} in the audience,
+			I rush up to share with him an idea that I have been 
+			nursing since I first saw the band: "Dooj - that's the girl you're going to marry!"
+			<p>
+			(It is not without satisfaction that I later discover that they
+			have exchanged telephone numbers.)
+			<p>
+			Then I find myself next to Juan-Carlos, a devoted Spacemen fan
+			from Lima, Peru, who shows up at a fair few of our gigs. Perhaps
+			naively, I ask him if he likes Sunny Valley. 
+			"Pat,"
+			he replies, looking at me as though I have lost my mind, 
+			"That's Mark Refoy."
+			Yeah, that's good enough, as it goes. This is a fucking beautiful band.
+			<p>
+			They haven't released anything yet, but when they do you should just go
+			straight down the record store and buy it. It'll be brilliant.
+			<p>
+			Sunny Valley finish with <i>Everything</i>, a wonderful Refoy composition
+			that Slipstream used to play in their last, dark days. I haven't
+			told anybody this before, but the night that ${sumosonic} got dropped
+			off Creation I sat and played that song over and over again,
+			tears streaming down my face. 
+			<p>
+			It felt fucking great.
+			<p>
+			It feels the same way tonight.
+			<p>
+			Gorgeous.
+			<p>
+			In due course we line up to start. The hall is full, pleasingly,
+			but there is even less room up on the little stage. Things kick
+			off well, though, and we are cruising through 
+			${who} when The Talented One's amplifier starts to sound
+			distinctly dodgy. By the end of the
+			tune it has all but given out entirely, but thanks to Rich's quick thinking
+			we soon plumb Eider directly into the PA. It
+			sounds surprisingly good, not least because, thank God, Max programmes
+			his sounds directly into an effects unit before they ever go
+			any further down the pipe. The set rolls on with nary a bump.
+			<p>
+			${morphine} is, if anything, better even than <a href="${jbc_gigs}/2002/Jan5.html">last night</a>. And
+			this time we have the sense to follow it with ${party}, which
+			makes a lot more sense than ${rain}. Thence to ${gf}, a special
+			request, not perhaps as evil as the night before, but definitely
+			still carrying a sting. We finish with another deep ${sis}.
+			People weep. Literally.
+			<p>
+			We get called back for ${hour} and ${skins}, a rather
+			more cheerful way to say thanks to all the people who have come
+			out to see us on this cold and dismal night just after Christmas.
+			The eleven o'clock curfew in force at the venue means that we can do no more.
+			A few people say to me later that it's a shame we don't play longer, but
+			that's just a fact of life on the UK scene. Bands are rarely expected
+			to play for longer than 45 minutes, and the time just doesn't get allotted. Tell you what 
+			I expect a lot of those British bands can't play for longer than 45 minutes.
+			<p>
+			Bah!
+			<p>
+			We spend a happy half hour back in the dressing room, drinking
+			and smoking with our friends. There are people here tonight who
+			have been coming to see the JBC since <a href="${jbc_gigs}/1983">1983</a> or <a href="${jbc_gigs}/1984">1984</a>. Some of them
+			used to be rock journalists (got proper jobs now). Several of
+			them tell me that the band is better than it has ever been. These
+			are people who stopped feeling the need to flatter us way back,
+			when we threw up on them or accidentally shot their dogs or something,
+			so I take their comments seriously and it makes me happy and
+			not sad.
+			<p>
+			The only faintly jarring note is the demise of Max's amplifier.
+			<p>
+			Mark is stalking the backstage area distraught, convinced that
+			he has killed it during the Sunny Valley set. Max is more philosophical
+			and doesn't apportion any blame to Mark, but it isn't easy to see your
+			amp suddenly go down after almost 20 years
+			of trusty service. Good-bye, old horse, and all that. Kathie
+			and I resolve to try and get the thing fixed at the splendid
+			Phoenix Soundworks in Earls Barton. So resolved, we head for
+			the bar and spend a very pleasant few minutes drinking with Mister
+			Dooj Dooj. 
+			<p>
+			Then, indecently satisfied with our string of odd little dates,
+			we retreat to the street and load the van. The London Posse disappears
+			in a cab, while the hardcore travel back to NN1 in the van, enjoying
+			Bob Marley on the radio and learning, via the same medium, that
+			${curt} and Syd Barrett share a birthday. Somewhere
+			along the way it is decided that, 
+			"on our return to JBC Central, we should smoke a shed load of
+			marijuana."
+			<p>
+			And this we do.
+			<p>
+			I should like to extend the grateful thanks of the JBC to all
+			those who booked us, helped us or came to see us. Especially
+			I would like to thank Kathie Schaer for the loan of her bass
+			amplifier and Jonny Mattock for the loan of his drum kit. And
+			a special shout to Tour Manager George.
+			<p>
+			It was real, mate!
+			<p>
+			Pat Fish 2002
+		)},
+	)}
+
+#define	Jan15.html()
+	${gigHeader(
+		cost=,
+		phone=0207 209 2248,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${owen}, ${steve}
+		)},
+		with=${literalizeCommas(
+			Wolfgang Tschegg
+		)},
+		notes=${literalizeCommas(
+			Supported by Messrs. Eider and Fish of the JBC in some form of sedentary guitar-related entertainment.
+			Not sure about the ticket prices yet, but you can always call the nice people at the club on 0207 209 2248.
+			I have almost certainly said so before, but this tiny club has a great vibration and a very late bar.
+			It's one of my favourite places in London.
+			<p>
+			The gig is part of a UK tour that Wolfgang is undertaking. I shall send you a list of dates when I have them.
+			(Max and I are not a regular tour support on this, we're just doing London. I believe that Saab 77 may play
+			on some dates too)
+			Real Tschegg-Heads could even get in touch with the excellent young promoters,
+			teamborscht@netscapeonline.co.uk .
+		)},
+		pat=${literalizeCommas(
+			<h1>RETURN OF THE TSCHEGG</h1>
+			<b>
+			Wolfgang meets Scary and Posh Uptown
+			</b>
+			<p>
+			The World's Favourite Electric Ambient Country Boy arrived in fine form,
+			despite having experienced a little blazing vehicle episode on
+			his way back from his gig in Newcastle and an enforced bus ride
+			from Leeds to London. It probably cost him less than Max and
+			I paid out on taxis across town to the venue. 
+			<p>
+			Once the thoroughly agreeable house staff had been persuaded
+			to move their Playstation off the stage, sound checks went easily
+			under the supervision of the 12-Bar's excellent house sound man Allessandro.
+			Max and I retired to
+			the dressing room (which is possibly slightly larger than the
+			auditorium in this particular venue) to write and learn our set.
+			We hadn't actually done a duo show like this since last time ${wolfi}
+			was over, back in the summer of 1999, and we were feeling a bit unsure
+			of ourselves. After a run of band shows it's a touch intimidating to get
+			up there without the backing of
+			the JBC Intercontinental Rhythm Machine.
+			<p>
+			Short on time, we dined at the venue (the veggie burgers are
+			large!) while some fellow from England pretended to be Jeff Buckley
+			in the background. Having heard the real Jeff Buckley when he
+			supported the JBC in New York in 1992, your correspondent reserved
+			the right to be a touch sneering, dismissive and condescending.
+			The thing is, boys and girls, we all agreed: there is far too
+			much of this sort of thing going on at the moment.
+			<p>
+			Once Mini-Jeff had got it all out of his system, Wolfgang's
+			Austrian friend stepped up to deliver one or two songs of fragile
+			beauty before the man himself appeared, looking sharp in one
+			his favoured shiny Euro-gigolo shirts and toting my own black
+			Telecaster. He played through a selection of highlights from
+			${linkAlbum(title=gigolo jet)} and his most recent release, 
+			${linkAlbum(title=finder)}, with great confidence and style. There were
+			new songs in the
+			set too, notably 
+			${linkSong(title=In Dieser Grossen Strassen)}
+			and the ineffable 
+			${linkSong(title=Helicopter)}. This last is Wolfgang just the way we like him, all surging
+			fat ambient pad and chiming guitar, not in the least compromised
+			by its knock-out opening line:
+			"Helicopter nimm mich mit."
+			<p>
+			About half way through the set in walks my good friend Joe Foster,
+			record producer and gentleman adventurer, who has literally stumbled
+			upon the night on his way back from the Warner Brothers offices
+			where he has been working. Joe was actually in Vienna on the
+			night we first saw Wolfgang play, so happy re-unions all round,
+			then.
+			<p>
+			During his set Wolfgang had been speaking in English and singing
+			in German, so it seemed only natural that Eider and I should
+			start our set by singing in French. The two Italian girls in
+			the front row were becoming visibly confused. We laid down a
+			fairly soporific set of tunes, but a prett.
+			<p>
+			People were very kind and yelled for an encore, but at the end
+			of the last tune I had shredded my 36, if you know what I mean,
+			and with no spare guitar to hand, that had to be that. Later
+			a brave American lady jumped up to take on the graveyard shift
+			while the rest of us got pissed up. Everybody got paid and Wolfgang
+			took a night bus back to his friends
+			pad in South London. His next intended destination was Dartmoor,
+			so I tooled him up with Gabriel's phone number, and indeed he was in residence when Gabe and
+			I spoke on the phone last night. The rest of us stayed until
+			the barman would serve no more, then wobbled out into the night
+			in search of taxis.
+		)},
+	)}
+
+#define	Mar29.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+			Saab 77, Andy Skank
+		)},
+		notes=${literalizeCommas(
+			Further excitement attends the Wilson show at The Racehorse.
+			<p>
+			We shall be having lights from Johnny P, who used to do Spacemen 3 among others,
+			and there will be DJ sets from Andy Skank, whose rocksteady and dub disco has been
+			an essential part of NN1 life for several months.
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Mar30.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+			Saab 77
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)},
+		photosets= /images/20020330/20020320_LeedsTrip.jpg$$
+			/images/20020330/20020320_YeahAnd.jpg$$
+	)}
+
+#define	Apr18.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${richard}
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Pat n Max JBC Sit-Down Duo live at The Packhorse, Leeds on Thursday 18th April.
+			<p>
+			Another production of Team Borscht, who look after Wilson oop north.
+			Richard Morris from Team Borscht may well get in touch with some shit about the gig.
+			${g_artistweb(u=http://www.hinterhoff.com/teamborscht)}
+		)},
+		pat=${literalizeCommas(
+			<b>HOLGER CZUKAY LOOKALIKE PENETRATES SPACE-TIME WORMHOLE IN DOWNTOWN
+			LEEDS, PLAYS SLIDE GUITAR SOLO.</b>
+			<p>
+			<i>JBC trans-generational mayhem as Eider and Formby clash on allegedly
+			acoustic version of "Girl-Go"</i>
+			<p>
+			Leeds, England - A small knot of quaint but ultimately confused
+			northerners were exposed to the mysterious powers of counter-cultural
+			entertainers and analytically impermeable rock sociopaths the
+			Jazz Butcher Conspiracy in an intimate British pub Thursday,
+			writes Muffin Ritblatt. Once again the cheeky music hall eccentrics
+			demonstrated their complete inability to come to terms with the
+			Space/Time continuum by performing with a line-up that blatently
+			flouted the very principles of quantum physics as they are understood
+			today.
+			<p>
+			The Conspiracy, represented on this occasion by ringleaders Pat
+			Fish and Max Eider, began the evening in August 1982, playing
+			a selection of their cult songs from their first album, "Bath
+			Of Bacon" recorded in the year of the Falklands War. But this
+			was no simple effort at reviving a lost era of indie-pop mediocrity.
+			Deprived of his usual effects unit (whose power supply he had
+			left back in Lodon), Eider actually managed to recreate his exact
+			sound from a concert in the upstairs room of a quaint London
+			pub style venue in November 1982, while Fish's inept caterwaulings
+			and scratchy amateurish strumming had listeners longing for the
+			DJ to play some Bronski Beat or fine Young Cannibals.
+			<p>
+			Amid rumours that members of talented doom-rockers Bauhaus were
+			in attendance (it turned out to be the head of the Love & Rockets
+			fan club), the dentally-challenged Fish and the frankly alarming
+			Eider played through a selection of ancient garbage before throwing
+			the audience a curve ball with the inclusion of the song "Whaddya?",
+			recorded long after Eider left the group.
+			<p>
+			Owing the the spectacularly shakey performance of the tune, many
+			failed to notice that the eclectic duo had departed from the
+			norms of reality and were in fact engaged in an assault on the
+			very fabric of the universe itself.
+			<p>
+			Experts are undecided on how exactly the British fops were able
+			to effect their ultimately nightmarish bending of time and space,
+			but Doktor Herbert Pruegler of the Berlin Institute of Home Economics
+			believes that an apparently endless rendition of the song "Sister
+			Death", followed by a period of some five minutes during which
+			the guitar-toting deviants played only the chord of D Major,
+			may have had the effect of temporarily bringing the passing of
+			time to a standstill. At any rate, after a moment of collective
+			amnesia, or "lost time" as X-philes might have it, the audience
+			became aware that Eider and Fish had been joined onstage by guitarist/producer
+			Richard "Lenin" Formby. The traditional rock "old pals" act had
+			an bizarre twist, however: Eider had left the band before ${richard}
+			ever joined, and Formby had already disappeared from the JBC
+			circle before Eider ever re-joined. Long-term students of forteana
+			will recall a similar incident in 1995 when Eider was supposedly
+			spotted on stage in London alongside
+			<a href="${jbc_people}/peter_crouch.html">Peter "Something Simple
+			For The Weekend" Crouch</a>, the JBC guitarist who infamously became
+			an air hostess in 1993 before going on to Premier League success
+			with the Aston Villa soccer club.
+			<p>
+			Owing to the practical difficulties of warping the space/time
+			continuum in such an outrageous fashion, the dandyish and heavily
+			moustachioed Formby experienced a few problems with his equipment
+			before starting to play. It soon became clear that the Conspiracy's
+			disrespect for the laws of physics was matched only by its cavalier
+			attitude towards its own material: for "Mister Odd" Eider found
+			himself laying down the rhythmic chord backing alone, while Fish
+			and Formby insisted on both playing the same guitar solo simultaneously.
+			Professor Haskins of the University of Hawaii suspects that this
+			might have been a device to "fix" the astonishing temporo-historical
+			wormhole which they had constructed.
+			<p>
+			The performance continued with a rendition of "Girl-Go" from
+			1990's album "Cult of Debasement" whereon Eider and Formby fought
+			an aerial dogfight reminiscent of the later years of the first
+			World War. Towards the end of the version all pretence of chord
+			structure was abandoned in favour of a heinous squalling, droning
+			row. An ensuing version of the brutalist paean to necrophilia
+			"Zombie Love" saw the quaint Brits returning to the 14th Century,
+			reproducing a chillingly accurate sonic portrayal of the Black
+			Death that decimated the audiences - sorry, population - of Mediaeval
+			Europe.
+			<p>
+			After noisy demands from the audience to be returned to the 21st
+			Century forthwith, Eider and Fish returned to the stage for a
+			valedictory version of "Drink" before retiring to a secret laboratory
+			for debriefing and refreshment. The majority of the stunned listeners
+			left the venue to find themselves returned to the early 21st
+			Century, but a small number remain stranded in a dark and evil
+			place somewhere between 1983 and 1993 with no obvious means of
+			egress. Emergency services are doing as much as they can, but
+			say that they are in urgent need of parapsychological assistance
+			from experts in St. Petersburg last seen in 1991. President Tony
+			Blur has appealed for information, while Minister of the Interior
+			David Blunkett has sworn to outlaw any further interference with
+			the fabric of space and time by pot-smoking oddballs. (A.P.)
+		)},
+	)}
+
+#define	Apr28.html()
+	${gigHeader(
+	)}
+
+#define	Jun3.html()
+	${gigHeader(
+		with=${literalizeCommas(
+			P-Hex, UK Waste, Screwface
+		)},
+		notes=${literalizeCommas(
+			Special Jubilee Mayhem
+			<p>
+			Wilson + full supporting cast in a punk rock special - The Racehorse, Northampton NN1 - Monday 3rd June 2002.
+		)},
+		pat=${literalizeCommas(
+			Thought folks might enjoy a brief round-up of the various kinds of pop
+			entertainment available to the lucky British punter on the 50th anniversary
+			of our sovereign's accession to the throne.
+			<p>
+			First off, Wilson Headstone spills his guts on the Racehorse punk rock
+			all-dayer:
+			<p>
+			The Great Jane Goes-Shopping having set out to recreate the Spirit of '77
+			with a punk rock knees-up, the Jubilee was well and truly stuffed in
+			Northampton NN1. The sun shone and we enjoyed
+			looted champagne and a great deal of herb. There was a Union Jack with a
+			dirty word on
+			it and a big bloke with a load of punk records and a smoke machine, whose
+			entire family were through the doors on the stroke of three o'clock. P-Hex
+			graced us with Tarantino Funk and a truly, authentically incompetent God
+			Save The Queen; some
+			band with inflammable dreadlocks and jungle elephants made a punky ska sort
+			of row; UK Waste
+			are just unbelievable altogether - what are they playing at, eh? What's it
+			all about? - Screwface did Full Metal Jackoff by the Dead Kennedys and
+			Wilson
+			did Police and Thieves.
+			<p>
+			After the raffle we played God's Green Earth and
+			told entire swathes of British society to go and feck themselfs with a stick
+			at night, entirely careless of the possible consequences. People were
+			weeping in the aisles. Several floppy-haired types from villages were
+			trapped in the alley where Peter Wyngarde was arrested for cottaging and
+			triumphantly torched by the inflamed republican mob. A nice family day out
+			alltogether, concluding
+			in a blaze of Raki, reggae and barely suppressed ultraviolence at
+			Shakespeare Villas.
+			Marvellous!
+			<p>
+			Max Eider writes from our capital city, London:
+			<div class="annotation">
+			"Glad to see you celebrated the Jubilee with respect, Pat. Wish I'd been
+			there. Tamaki and I watched the bash on TV - I thought Tamaki was going to
+			do herself an injury laughing. Nice touch failing to turn up Rod Stewart's
+			mike for
+			his big moment during the final gross-out version of 'All you need is love'.
+			Oh, wow, and of course there was Queen (QUEEN, geddit?) without the singer
+			(or the bass player, come to that - did he die too?). And Brian May played
+			God Save the Queen on the roof. Really, if you'd set out to take the piss,
+			you couldn't have done a better job. Who said it was the Americans who
+			didn't have a sense of irony?" 
+			</div>
+		)},
+	)}
+
+#define	Jun11.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, ${owen}, ${steve}
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+			As midnight chimes the band will be 20 years old. The Onion stays open quite
+			late.
+			For the hardcore only!
+		)},
+		photosets= /images/20020611/2002Jun11_owen_pat.jpg$$
+			/images/20020611/2002Jun11_JBC.jpg$$
+			/images/20020611/2002Jun11_max.jpg$$
+			Brian Kelly
+		,
+		reviews=
+			${literalizeCommas(
+				<b>JBC 20th Anniversary Tour Travelogue - Day 4
+				<br>June 11, 2002</b> -
+				<a href="${jbc_press}/kelly_20th_tour.html">read Brian's full tour report here</a>
+			<p>
+				Today was mostly business in preparation for this evening's show.
+
+			<p>
+				Owen & Kathy & I went to sort out the business of the tour bus,
+			 whilst Pat & Max headed off to the airport to pick up Mr. Valentine.
+
+			<p>
+				A little background on Steve...he is a California native and
+			 a JBC fan like myself. He volunteered to play with the boys at
+			 one point, and...like many fans...was abducted. He
+			 helped Max record his solo record last summer, and, in that
+			 he is a lawyer, he serves as legal representation. As I say,
+			 he is quite a bit younger than the pop stars he's gigging with,
+			 and looks even younger than his age, hence the nickname of 'baby'.
+
+			<p>
+				So it was that we loaded up the bus, and went to the venue. This
+			 was not an 'official gig' in any real sense, more of a party
+			 and a warm up for the next week's shows. The pub itself is not
+			 really designed for a rock show...they have folk music on Tuesdays.
+			 So it was that the quarters were most tight on the 'stage'...also,
+			 it was commented upon that the bar had never heard music so loud
+			 before.
+			<p>
+				So loud, in fact, the politzei were called. As Pat pointed out,
+			 'we may be old, but we're still antisocial.' So it was that the
+			 gig was cut short...but they did make it to the midnight mark,
+			 at which point baerbel brought out a birthday cake for the band
+			 & guests.
+			<p>
+				The strangeness of the evening left the band feeling a bit out
+			 of sorts, but a few pints and things looked brighter. At any
+			 rate, tomorrow we leave for Munich, thus starting the official
+			 tour.
+			)}$$
+			Brian Kelly
+	)}
+
+#define	Jun13.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${owen}, ${steve}, ${pete}
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			part of 20th anniversary tour
+		)},
+		photosets= /images/20020613/2002Jun13_JBC1.jpg$$
+			/images/20020613/2002Jun13_JBC2.jpg$$
+			/images/20020613/2002Jun13_pat1.jpg$$
+			/images/20020613/2002Jun13_pat2.jpg$$
+			/images/20020613/2002Jun13_pat_crouchy.jpg$$
+			/images/20020613/2002Jun13_pat_crouchy_max.jpg$$
+			Brian Kelly
+		,
+		reviews=
+			${literalizeCommas(
+					<b>JBC 20th Anniversary Tour Travelogue - Day 5-6
+					<br>June 12-13, 2002</b> -
+					<a href="${jbc_press}/kelly_20th_tour.html">read Brian's full tour report here</a>
+				<p>
+				<p>
+					Day 5 was mostly travel. The day began with a phone call booking
+				 the band for a second gig in Belgium...rock! We got on the road
+				 at a fairly reasonable hour, Baerbel kissed us all good luck,
+				 and we were on our way.
+				<p>
+					Everyone was still a bit weary from the night before, not to
+				 mention getting up at an unGodly hour to watch football. The
+				 drive was long, but we reached N&uuml;remberg in about 6 hours or
+				 so. The initial plan was to go straight on to Munich, but Pat's
+				 judgment at N&uuml;remberg  (pun intended) was to stay the night and
+				 pick up the additional two hours or so the next day.
+				<p>
+					The hotel we stayed at was French, and had all of the modern
+				 conveniences of a plastic room with a mattress on the floor.
+				 Indeed, we got onto the elevator, which promptly trapped us until
+				 Owen smartly came to look for us. Good thing, too...for we know
+				 what happens when you leave a Fish too long in an elevator (don't
+				 we?)...Also, no phones in the room (hence, no internet connection,
+				 hence no report...QED)
+				<p>
+					I enjoyed a much needed shower and a good night's sleep, and
+				 in the morning, we had breakfast outside a small cafe. We again
+				 took to the autobahn, arriving in Munich mid-afternoon.
+				<p>
+					After setting up, the band did a rehearsal (since they hadn't
+				 had one...even prior to the Hamburg gig) and really tightened
+				 up. By soundcheck they were in the groove, and well looking forward
+				 to the show.
+			   <p>
+					The club owner prepared dinner for all, after which I went for
+				 a stroll. Former JBC alum Peter 'No Show' Crouch turned up, to
+				 everyone's delight. I ran merchandise before and after the show,
+				 and once again got to be 'JBC answer man', a job I am uniquely
+				 suited for. Pat decided that I was in charge of 'Public relations',
+				 and was pleased with the number of CDs that sold...so I am earning
+				 my keep.
+				<p>
+					The show itself was great: a nice club, a good audience, and
+				 the band was keen to play. Crouchy even got up (after a chant
+				 of 'Crou-chy, Crou-chy') and played on 'Zombie Love'. Three or
+				 four of the people that I sold CDs to hadn't heard of the band
+				 before, so that itself speaks to the performance.
+				<p>
+					Tonight we are all flopping in one big room over the club...
+				 Beds strewn about the floor, slumber party style. In the morning,
+				 the band plans to go to the pub to watch more football. (The
+				 good thing about not being into sports is, you get to sleep in.)
+				 Then we make our way back to Nuremburg for the show there. No
+				 cheap French hotel tomorrow though, an old friend of Owen's will
+				 be putting us up.
+				<p>
+					So to bed, to dream of windmills off the autobahn and breakfast
+				 strudel. Mmmmm.
+			)}$$
+				Brian Kelly
+	)}
+
+#define	Jun14.html()
+	${gigHeader(
+		cost=,
+		phone=244 8657,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${owen}, ${steve}
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			part of 20th anniversary tour
+			<p>
+			address:<p>
+			Lammstrasse 8<br>
+			N&uuml;remberg <br>
+			Germany<br>
+			Tel. (local) 244 8657
+		)},
+		pat=${literalizeCommas(
+		)},
+		photosets= /images/20020614/2002Jun14_nuremburg1.jpg$$
+			/images/20020614/2002Jun14_nuremburg3.jpg$$
+			/images/20020614/2002Jun14_nuremburg4.jpg$$
+			/images/20020614/2002Jun14_nuremburg5.jpg$$
+			/images/20020614/2002Jun14_nuremburg6.jpg$$
+			/images/20020614/2002Jun14_nuremburg7.jpg$$
+			Brian Kelly
+		,
+		reviews=
+			${literalizeCommas(
+					<b>JBC 20th Anniversary Tour Travelogue - Day 7
+					<br>June 14, 2002</b>
+					- <a href="${jbc_press}/kelly_20th_tour.html">read Brian's full tour report here</a>
+				<p>
+					It is incredible how different each and every day is.
+				<p>
+					I woke up this morning and realized that I'd only been in Germany
+				 a week! It seems like so much longer...not in a bad way, it's
+				 just that so much goes down day to day.
+				<p>
+					We left Munich and took the short jaunt back to Nuremburg. This
+				 time, Crouchy was with us...making the crowded bus even more
+				 crowded...but, the more the merrier with the JBC.
+				<p>
+					The club...  how shall I say it? Well, it made the bus seem positively spacious.
+				 But, with the JBC it's roll up your sleeves and get to it. After sound check, our
+				 hostess du jour, Katarina (an old friend of Owen's) took us for
+				 a stroll en route to get dinner. We went walking through the
+				 garden of a castle that overlooks the city...and me without my
+				 camera, grrr...but it was gorgeous. We all just sort of strolled
+				 in silence, soaking in the beautiful surroundings.
+				<p>
+					For dinner, we sat outside a small cafe, and while my vegetarian
+				 comrades ordered Camenbert and potato pancakes, I felt compelled
+				 comrades ordered Camenbert and potato pancakes, I felt compelled
+				 to try the ostrich. I didn't even know people ate ostrich.
+				 Pretty much like steak. Good, and curiosity satisfied.
+				<p>
+					The show was great, and the owner, Stefan (this sort of Gregarious
+				 Fabio) was soooooo pleased. Many free beers for the band...Kathy,
+				 Katarina and I practically had to drag the boys from the bar,
+				 but not before Stefan had smuggled them a bottle of strawberry
+				 vodka for the road.
+				<p>
+					We returned to Katarina's flat, where the combined presence of
+				 vodka & Crouchy ensured that the party continue on well into
+				 the morning...
+			)}$$
+				Brian Kelly
+	)}
+
+#define	Jun15.html()
+	${gigHeader(
+		phone=05 21 600 19,
+		cost=,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${owen}, ${steve}
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)},
+		reviews=
+			${literalizeCommas(
+					<b>JBC 20th Anniversary Tour Travelogue - Day 8
+					<br>June 15, 2002</b>
+					- <a href="${jbc_press}/kelly_20th_tour.html">read Brian's full tour report here</a>
+				<p>
+					Woke up and hit the road, sans Crouchy, who returns to London,
+				 and made the trek for Bielefeld. A four hour drive stretched
+				 waaaaay long by construction on the autobahn. We arrived with
+				 just enough time to set up & soundcheck before the club opened
+				 its doors. The sound was excellent, and though the crowd was
+				 small, they were impossibly enthusiastic, demanding no less than
+				 three encores.
+				<p>
+					After the show we went to an Irish pub, where a horrible British
+				 cover band was playing. It occurred to me that I was in Germany,
+				 listening to a British Band in an Irish pub doing covers of 'Boston'.
+				 It was like the UN...if Butros Butros Ghali played piss poor
+				 Jimmy Page licks. But, we had spinich pizza, which was niiiiiice.
+
+				<p>
+					Tomorrow we must leave early for Belgium...probably a six hour
+				 drive. But Tomorrow & Tuesday's shows are both in Belgium, so
+				 we will have a few days without hectic schedules and lengthy
+				 bus rides.
+			)}$$
+				Brian Kelly
+	)}
+
+#define	Jun16_2100.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${owen}, ${steve}
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			part of 20th anniversary tour
+			<p>
+			'AU CASINO', Doorniksewijk 31, KORTRIJK, Belgium, 21u.00.
+		)},
+		pat=${literalizeCommas(
+		)},
+		photosets= /images/20020616/2002Jun16_max1.jpg$$
+			/images/20020616/2002Jun16_max2.jpg$$
+			/images/20020616/2002Jun16_pat.jpg$$
+			Brian Kelly
+		,
+		reviews=
+			${literalizeCommas(
+			<b>JBC 20th Anniversary Tour Travelogue - Day 9
+					<br>June 16, 2002</b>
+					- <a href="${jbc_press}/kelly_20th_tour.html">read Brian's full tour report here</a>
+				<p>
+					When we last left our heroes...We were in Bielefeld, which was
+				 kind of a downer...but what a difference a day makes!
+				<p>
+					The drive to Belgium was quite a long one. Pat told me that in
+				 Belgium it is 'the future'. I didn't know what he meant. I told
+				 him that that must be why everyone drives so fast...so that they
+				 stay in the future. But all I saw of it was quaint and rustic
+				 living.
+				<p>
+					We arrived in Kortrijk. It was to be an outdoor show, and lo!
+				 the outdoor in question was a serene garden affair...gorgeous,
+				 and the weather, perfect for a concert outside. Max confessed
+				 that he was sorry to disrupt the serenity...and so the show began
+				 rather quietly. Turns out, those in attendance very much enjoyed
+				 the squelch.
+				<p>
+					The sound technicians were TOP! Sooo much can vary from venue
+				 to venue, but these guys were true professionals. The sound was
+				 glorious. There were several 'punters', but many sort of stumbled
+				 upon the event. There was a family sitting dead center, young
+				 and old. Kathy and I were certain that these were fans by their
+				 response, but they came up to us afterwards and informed us that
+				 they had just come in to eat, but LOVED the band. (Kathy & I
+				 laughed as the father bounced his daughter on his knee singing
+				 'sha la la la, ooh my my - she's on drugs'.)
+				<p>
+					Our host du jour was another old friend of Owen's by the name
+				 of Jean Pierre. He is a very earthy guy with an intense love
+				 of music. He positively BEAMED during the show. Afterwards, we
+				 all had dinner & drinks (I should mention, I am still the sober
+				 man I was when I left, tempting though it might be) and were
+				 escorted by Jean Pierre to our accommodations for the next few
+				 days. 
+				<p>
+					The farmhouse! Wow. Basically a friend's summer home. Beds for
+				 everyone and a shower (HUGE bonuses when on the road), with all
+				 manner of animals living next door. Quiet and peaceful...well,
+				 until this group gets wound up.
+
+			)}$$
+				Brian Kelly
+	)}
+
+#define	Jun18.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${owen}, ${steve}
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			part of 20th anniversary tour
+		)},
+		pat=${literalizeCommas(
+		)},
+		photosets= /images/20020618/2002Jun18_stadhuis.jpg$$
+			/images/20020618/2002Jun18_JBC1.jpg$$
+			/images/20020618/2002Jun18_JBC2.jpg$$
+			/images/20020618/2002Jun18_JBC3.jpg$$
+			/images/20020618/2002Jun18_JBC4.jpg$$
+			/images/20020618/2002Jun18_JBC5.jpg$$
+			/images/20020618/2002Jun18_JBC6.jpg$$
+			/images/20020618/2002Jun18_JBC7.jpg$$
+			/images/20020618/2002Jun18_max.jpg$$
+			/images/20020618/2002Jun18_pat1.jpg$$
+			/images/20020618/2002Jun18_want_some.jpg$$
+			/images/20020618/2002Jun18_pat2.jpg$$
+			/images/20020618/2002Jun18_pat_max.jpg$$
+			/images/20020618/2002Jun18_perfect.jpg$$
+			/images/20020618/2002Jun18_pot.jpg$$
+			/images/20020618/2002Jun18_cunts.jpg$$
+			/images/20020618/2002Jun18_max_owen_baby_postshow.jpg$$
+			/images/20020618/2002Jun18_max_owen_postshow.jpg$$
+			Brian Kelly
+		,
+		reviews=
+			${literalizeCommas(
+			<b>JBC 20th Anniversary Tour Travelogue - Day 11
+					<br>June 18, 2002</b>
+					- <a href="${jbc_press}/kelly_20th_tour.html">read Brian's full tour report here</a>
+				<p>
+					Owen's Birthday and the gig in Ypres. I sang Owen the ComedySportz
+				 birthday song, which he enjoyed (I guess if you've never heard
+				 it before, it's still funny). We watched football (Italy vs.
+				 South Korea) which was (apparently) the most exciting game of
+				 the cup thus far (overtime, with Korea pulling it out with a
+				 beautiful header in the final minutes). Okay...I confess, I have
+				 taken the most PASSING interest in the sport. It's the obsession
+				 here, so...when in Rome, or Belgium as the case may be....
+				<p>
+					A cat had had kittens in the shed. The runt of the litter, the
+				 cutest & friendliest, Owen named 'Corea'(sic) for the victors
+				 in that morning's cup. Lengthy debate was held as to the logistics
+				 of bringing the kitten on the bus back to Hamburg. In the end,
+				 Owen thinks he will go back in a few month's time, and retrieve
+				 the tiny cutie.
+				<p>
+					We went to the venue, situated right next to the cathedral, and
+				 got set up. Another outdoor show...more punters, and even more
+				 passersby. This was a two-set deal, and the first set, found
+				 Pat a bit reserved. He was disconcerted by the huge number of
+				 people, yet the mere smattering of applause. We informed him
+				 that everyone was drinking, and therefore, no one had hands free
+				 to clap. Armed with this information (not to mention Pat finding
+				 some kind of undisclosed inspiration in-between sets), the band
+				 launched into the second half in high gear, filling the square
+				 with the 'ROCK show'...a far cry from the more pop-flavored garden
+				 show of two nights before. Beers were being dropped in favor
+				 of clapping and cheering. This was the sound of the band having
+				 fun, and Pat in particular going positively MENTAL. Needless
+				 to say, the band went after the post-show festivities with a
+				 similar fervor to that of the show itself. Max nearly had to
+				 drag Steve from the pub at the end of it. We left Jean Pierre
+				 DJ-ing the night away.
+				<p>
+					We gave Owen his birthday cake and gift, complete with card (which
+				 I illustrated) signed by all. We had cake, listened to music,
+				 and basically gave the rooster next door a dose of his own medicine,
+				 waking him up at an unGodly hour.
+
+			)}$$
+				Brian Kelly
+	)}
+
+#define	Jun22.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${owen}, ${steve}
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			part of 20th anniversary tour
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Aug25.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+			Well, that was quite a night at the Racehorse, let me tell you.
+			<p>
+			The team: MC Bot (birthday boy, resplendent all in red and armed with a frankly risible bubble gun) - Misery
+			(Elegant and almost motionless in black)- Russ (A busy man) - Headstone (new heavy armaments in place, please keep
+			your heads down at the front) - Steve (mental as anything and fascinated by his own light show). Curt was
+			away in a foreign land on special familial business. Steve Ward did the sound and Johnny P the lights.
+			<p>
+			The Racehorse bar stages musical acts every Sunday. Some nights you barely notice they are there, even though there are
+			only about 15 drinkers in the bar. Some acts do pull in a small crowd of mates. And that's what we'd normally expect. All
+			right, we're older, so we know a few more mates. We put on some lights, try to do a decent sound, we get a few people in
+			and hopefully they enjoy it. We get paid, but we spend that on getting in a good pa and lights.
+			Last night when Johnny P and I came in from dinner, the place was fecking heaving.
+			<p>
+			MC Bot was enjoying his birthday, and to please him we put The Streets on the pa about 15 minutes before we went on, a move
+			of staggering arrogance and over-confidence, the sort of move that really filled me with karma terror. The sort of thing we
+			do all the fecking time, to be honest. Some kids waiting to see the group actually split when The Streets came on. At the
+			back of the room a small knot of middle-aged men were shouting along and making clenched-fist gestures in a display more
+			suited to men half their age, to whom such things are supposed still to matter.
+			<p>
+			As we took tthe stage I saw that Bot was toting some manner of ray gun. It turned out to fire bubbles. Stevie Ward brought
+			up my vocal mic just in time to catch me wailing "Sharon! Shaaaarrrroooooon!" But I mean, really. Here we are, the princes
+			and princess of the feckin' heart of darkness, and he's letting off fecking bubbles. What's evil about feckin' bubbles?
+			SHAAARROOOOOOON!!!!!!!!
+			Quality People kicked in like a bomb hitting the place, more or less. By the end the punters were cheering. Punters do not
+			cheer in the Racehorse bar of a Sunday night. It doesn't happen. But these punters were cheering. "Happy Birthday, Bot!"
+			cried Bot, instantly establishing the catch-phrase of the night. He had also, by now, fully mastered the technique of
+			wringing as much feedback from his radio mic as humanly possible. For the rest of the night, more on stage than among the
+			punters, it was like the fecking Mary Chain up there. WHOOOOOOOO- WHOOP- WHHHHEEEEEUUUUURRRRRRGGGGHHHHSSSSSSSZTSST...
+			<p>
+			The rest of the sound was pretty hard, though. Misery was positively subsonic. Russ got a rake of cavernous reverb on his
+			congas for Hippy Shit. We did the best "Trouble Every Day" since the Mothers stopped doing it. Bot was delivered of drinks
+			from the crowd throughout and only did a Dooj on my FX pedals once. Hey, it was his birthday. Once he has the paperwork
+			for. We got away with two brand new tunes. Good old crowd, good old night, way beyond our expectations. And those of Pete
+			the Landlord, I would imagine. He must have made a pile of money on the bar. Many of the people in his bar were Quite Drunk
+			at the end of the evening.
+			<p>
+			We headed back to Shakespeare Villas, currently more like Shakespeare International House Of Leaves, where a party
+			developed involving the band, plus members of Saab 77 and The Echo Chamber down from Leeds, P-Hex (Stevie G's enormous funk
+			band), The Sheep Thieves and Hinterhoff Records. Becks and Budvar were drunk, as was Scott the boy detective. We closed at
+			about 4:30 am. Not bad for a Sunday night at the local. Not bad at all.
+			<p>
+			Seriously, Dave, we rocked the joint.
+			<p>
+			Wilson Headstone technical update:
+			Now deploying a Hughes and Kettner Tour Reverb combo, a solid state job with a tube-in-a-box on the way in. Tube in a box.
+			Watch it glow in the dark. This also is the work of Mr. Hughes and Mister Kettner. The amp offers me three channels, and
+			the tube thingie effectively offers two more variations. With the Burns guitar that I picked up earlier this summer it
+			makes a mortal racket.
+			Also deploying a Boss phaser and an Ibanez delay. Mind your heads, boys and girls.
+			<p>
+			Botty: "We're called Wilson...because we make a racket."
+			<p>
+			Roadmender next, a nice big room where we shall have films as well as lights. The day after that we play a party in Wales.
+			In October, God help us, we're playing at somebody's wedding. But then it's time to go to London.
+		)},
+	)}
+
+#define	Sep20.html()
+	${gigHeader(
+		cost=&pound;3:00,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Headlining a 6 band bill - &pound;3:00 - Open late
+		)},
+		pat=${literalizeCommas(
+			<h1>Friday 20th September 2002 - NORTHAMPTON</h1>
+			So today is the day that Wilson break out of the pubs and make their debut on a full sized stage in a "proper" venue, to wit Northampton's own Roadmender Centre. This fairly charmless council-sponsored venue has played host to the likes of Paul Weller, The Manic Street Preachers, Primal Scream and The Damned. Back in the day it was the local port of call for Spacemen 3, the Perfect Disaster and, yes, the JBC. More recently, after a multi-million pound facelift, it has been the venue for some top performances from Culture, Ernest Ranglin, Julian Cope and the mighty Tuvan ensemble Yat-Kha. Gregory Isaacs was here too recently, but I wasn't na&iuml;ve enough to think that my promise of a place on the  guest list would work, so I missed that one.
+			<p>
+			Our date is not being promoted by the club itself. It is the work of an organisation called "The Voice", which appears to be a faintly educational affair, run by an amiable Scouse hobbit called Bill. This shameless optimist has booked no fewer than six acts for this evening's entertainment. Wilson are to headline on the main stage. The other groups are largely unknown to our posse. Some of them are made up entirely of early teens, so we assume that these must represent Bill's educational constituency.
+			<p>
+			Whatever, this marks a definite "step up" in Wilson's local profile, and we have been working hard to make it a good one. 
+			<p>
+			First, however, there is the small matter of retrieving Kathy Schaer from the United States, where she has been visiting her family. At about one o'clock I receive a phone call from Kath. She is back in the country (hooray!), but there is a snag. Somebody has just thrown himself onto the railway line and all the trains back to Northampton have stopped. Honestly, it's just self-self-self for some people, isn't it?
+			<p>
+			Fortunately enough, the railways sort themselves out for once and by five o'clock Kath is back in NN1 and ready to rumble. 
+			<p>
+			Stevie G and I are the first to arrive at the venue, where we meet James, our soundman for the night. As I go to shake his hand, he declares: "You're famous!"
+			It turns out that he has heard endless reports about Stranger Tractors from the old Tractors didgeridoo player, Bolly, who went on to work as the bar manager at the venue. James also tells us to expect no more than a line-check before playing. Gently, calmly, firmly I explain to him that if he wants a full bill tonight, Wilson will be doing a full sound check. The message is received and, it would appear, understood.
+			<p>
+			No sooner have we established this than Kath arrives at the venue, closely followed by Agent Cooper. While James organises a soundcheck for a band called Sophomore (who have a rather more...uh...traditional line-up than Wilson), we head for the car park to enjoy the balmy evening with some special cigarettes. We have not been there long before our attention is drawn to a car on the busy main road beneath us, which is emitting odd electronic squawks and bleeps. Somebody in the car has some kind of gimmicky loud-hailer device, which they are using to full effect down there in the Friday evening traffic. "Nutter", we conclude.
+			<p>
+			A few moments later we hear the strange noises again. They turn out to be issuing from MC Bot, who is hanging out of the window of Curtis' car clutching a brightly coloured bullhorn. The party is about to kick off.
+			<p>
+			In the corner of the car park we gather around Russ' motor, skinning up, hanging out and playing The Streets at maximum volume: as intimidating a gang of middle-aged sociopaths as you could hope to avoid. The other groups are arriving by now. Some of them are so young that they are being delivered in cars by fond fathers, who actually look about the right age to join Wilson. There is much amusement as one of the dads manhandles a huge speaker cabinet across the car park while The Streets chant "Let's push things forward!"
+			<p>
+			A soundcheck is arranged and runs smoothly enough. I find myself more or less alone stage right. This gives me two major advantages: (i) I have plenty of space in which to operate, and (ii) I can crank my amp as loud as I want without putting anybody off their stroke. 
+			<p>
+			Soundcheck completed, MC Bot and Russ set out to find the dressing room, returning minutes later to advise us that there are to be no dressing rooms tonight. Given that the contract for tonight offers no rider, no guest list, no guaranteed wages and no dressing room, I wonder what exactly was the point of asking me to sign it. It's not as though there was anything on offer to sign for, after all. Still, we are not despondent. We smoke up and split up, heading off to feed.
+			<p>
+			It is about half past seven as I leave the venue. I am astonished to see dozens and dozens of teens flooding into the front bar. Later, my pal's daughter will ask me "What are all these children doing here?" Right now, though, I am just glad to see that there is going to be an audience. (It later turns out that there were about 280 paying punters.)
+			<p>
+			On my return from having a little dinner in The Fish, I am unable to find any of the band at the venue. Eventually I find Curtis and Stevie G. They have simply gone ahead and commandeered a dressing room regardless. Also in the dressing room is a harassed-looking gentleman in a suit, who, Curt tells me, is here to film the show. After a brief consultation with the venue staff he is allowed access to the balcony, where he spends the rest of the evening with his fingers in his ears.
+			<p>
+			Also in the area are Jonny Mattock from Lupine Howl and Mark Refoy, freshly returned from his world tour playing guitar for the Pet Shop Boys. It's his first chance to catch Wilson live and we are pleased to see him.
+			<p>
+			I watch a little bit of Sophomore; very strong traditional British "indie" played very loud indeed, with much head-shaking down in the front row of the punters. Very much Not My Thing, but expertly delivered and rightly popular with the youngsters. Passing into the front bar I see another band, a kind of rustic Oasis, fronted by a strangely-shaped young singer with even stranger sideburns. I have no idea what they were called, but they were quite entertaining all the same.
+			<p>
+			Then it is time for the Bad Muthafuckas. After a brief introduction from Bill we go full-tilt into "Quality People" and boy, is it loud! There is a young man down the front lying flat-out on the floor. James the soundman sees him and comes rushing over, alarmed and ready to help. As he reaches the casualty, the boy just gets up, shrugs and walks away. Weird. 
+			<p>
+			The set rumbles on. We play well and make maximum use of the available space. At one point I look up to see Curtis, miles away from his instrument and his microphone, just leaping about in the middle of the stage. Bot is switching between his mic and his bullhorn according to some strange inner Bot Logic. Despite being jet-lagged to the point of utter bewilderment, Kath lays down huge basslines that enter your body through your feet. After the show Stevie G and I agree that we have never cranked our amps so loud.
+			<p>
+			The set runs: Quality People; Yellow Pages; Burn Hollywood Burn; Hippy Shit (particularly rocking version tonight); Istanbul Connection; Play It All Night Long; Every Saturday Night; Critters; Dark Agenda. It is well received and, according to Kath McGinty, about the same volume as a jumbo jet taking off indoors. We have taken on the Roadmender and pulled it off.
+			<p>
+			After the show a member of the Roadmender staff approaches us and asks us to support a band called Skindread on Saturday 12th October. Seeing this as our "wages" for the night, we say yes. So that was all worthwhile, then.
+			<p>
+			On the other hand, as we leave the stage we discover that the bar has closed. This after we had been told that it would stay open until at least one o'clock. We resolve to pack up and head for the nearby Charles Bradlaugh, which stays open until one and which has recently taken to serving Pilsner Urquell. 
+			<p>
+			On the way out I find Bill being menaced by some tiny youths. Despite presumably having had the same mealy-mouthed contract as ourselves, they are demanding to be paid. Things turn comically ugly as one tiny youth advises Bill that he is going to set the "Music Union" (sic) onto poor Bill. This does seem a touch unlikely. If this tiny youth is in the Musicians' Union, then I am Marie of Romania. 
+			<p>
+			We pass a pleasant hour or so in the Bradlaugh before taking off. Kath is going home for some long-overdue rest. Russ and Curt also head for home. The rest of us have a brief after-show back at Shakespeare Mansions. Mindful of our gig tomorrow, we turn in around four o'clock.
+		)},
+	)}
+
+#define	Sep21.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+			P-Hex
+		)},
+		notes=${literalizeCommas(
+			We didn't advertise it coz it was essentially a birthday party for an expat Northamptonian.
+		)},
+		pat=${literalizeCommas(
+				Well, the weekend was mental. As you know, we did the Roadmender on Friday night.
+				What you probably didn't know about was the Wilson Vietnam trip
+				to Wales yesterday. We didn't advertise it coz it was essentially a
+				birthday party for an expat Northamptonian. Plus nobody would tell us
+				the name of the farm where it was taking place! Still, we found the
+				fecker and rocked the shed fully. Full reports (featuring The Face O' Death) to follow.
+				<h1>Saturday 21st September - BUILTH WELLS </h1>
+	It is eleven thirty on a beautiful, sunny Saturday morning in the car park of the Racehorse. Members of Wilson and P-Hex are gathering, ready for the 150 mile trip to Builth Wells in the heart of Wales. Cars are filled with equipment as people sip odd non-alcoholic drinks. Kathie McGinty and I are travelling in our Fiat Uno with a bunch of equipment. Russ is taking Kath Schaer, Curtis and Bot are travelling with Steve Davies, Lindsay Spence (the singer from P-Hex) and Nathan from Junior Loaded in a car dubbed "The Zoo", and Stevie G is travelling with P-Hex. At about midday the first car of the convoy sets off.
+	<p>
+	We are headed for a farm which Alan Moore bought back in the Nineties, which has been home to his pal Fred Ryan for several years now. Today is the occasion of Fred's fiftieth birthday and a massive party has been planned. Apart from the groups, there are several dozen Northampton people heading west today.
+	<p>
+	Thoughtfully, nobody has been told the name of the farm in question. Our instructions are to find a bar in Builth called The White Hart and ask for "Fred's farm". Fortunately enough, P-Hex have done this gig before, so we still entertain hopes of finding the place.
+	<p>
+	Once we get west of Worcester the roads grow narrow and the houses more ancient and picturesque. Every other village gets me going "Oh, eccentric life here, isn't it?" in the manner of Turkish George. It is barely recognisable as the same country as Northampton. Just west of a place called Kington we pass through an intimidating gorge into Welsh Wales. Well, at least now it really is a different country. 
+	<p>
+	The first thing we see as we cross the River Wye into Builth is Kath and her boyfriend Jay standing outside our hotel. The Lion Hotel boasts a George Best bar and a Lady Diana restaurant, as well as a splendid African Grey parrot who shouts "Wanker!" We check into our rooms, which are much more comfortable than the dilapidated public areas of the hotel would suggest. Ours has a fantasticview out over the river. We stroll up the picturesque main street to the White Hart for directions and a pint, then hit the local supermarket for supplies. On our way out of the supermarket we are passed by The Zoo, with Bot hanging out of the window, making maximum use of his bullhorn: "Wilson in the area! Pat Fish in the area!" he broadcasts as the car disappears up the high street, "Whoop! Squawk! Bleep!"
+	<p>
+	The farm is not easy to find, and we make one or two false landings among bewildered locals before finally locating our objective at the end of an obscure and lengthy country lane. We pull into the parking and camping field just in time to see the local Police helicopter circling overhead, attracting all kinds of 
+	long-distance abuse. 
+	<p>
+	The Zoo is promptly converted into a giant ghetto blaster and The Streets are on once again. People are wandering about grinning and greeting as NN1 comes to the deep countryside. Tents are going up, dogs are chasing sticks and children are getting dressed up in ludicrous costumes. One small boy of about eight is wearing a push-up bra and make-up. More alarmingly, another tiny is sporting a terrifying skull mask, which leads to his immediately being dubbed The Face Of Death. 
+	<p>
+	Almost immediately The Face Of Death and MC Bot become entangled in a mortal struggle. The tiny demon follows Bot everywhere like some superhero's sidekick gone horribly wrong, and it is not long before things get gnarly. One small child is overheard telling his mother: "This man is chasing us, like, 
+	well badly!" 
+	<p>
+	Later, alarmingly, other, adult Faces Of Death turn up. Fortunately they do not seek retribution from our singer. In addition, there are nuns, pirates, monks and a man in a fez with what I can only describe as two faces. "Now that," I tell him, "Is just plain scary." Though not, perhaps, as scary as the old friend of Curtis who has turned up with a full-size, razor-sharp Samurai sword.
+	<p>
+	Curtis himself rapidly becomes a casualty of the fancy dress tendency. After being on site for only ten minutes he re-appears with his baldy head painted red and blue. Since this has been accomplished using car spray paint, he remains something of an odd apparition for the rest of the weekend. 
+	<p>
+	The farm itself is made up of three buildings: one entirely residential, one devoted to catering and one, a large barn, the music venue. There are Muscovy ducks waddling around the farmyard and many goats in an enclosure just nearby. I strike up what I like to consider a strong and lasting relationship with the Head Goat ("el gran cabro numero uno mas importante", I call him). Somebody then points out that perhaps we should not get too attached. There is a large goat skin hanging up to dry on a metal frame and curried goat on tonight's menu.
+	<p>
+	Later, when I try to get fed, I discover that the choice of dining is restricted to this goat curry and a ferocious chilli con carne. Not fancying a dinner of cold white rice, I take solace in a dinner of liquorice allsorts before taking steps to ensure that I shall not think of food again. Thanks, lads.
+	<p>
+	There is an endless wait for soundchecks, as nobody seems to have any clue as to what is going on. As well as Wilson and P-Hex, two local bands have been booked to play, and neither has been spotted yet. In the end, we settle for just checking the DAT player with the soundman, figuring that as long as this is reliable we can turn in a set. Then we amuse ourselves drinking, smoking and checking out the two large bonfires that have been started.
+	<p>
+	Eventually the first band appears. They are all a little bit older than us, and they are a classic festival jamming band. Although they are not my thing at all, they seem quite well suited to the event. I begin to wonder if we really ought to be playing here, and entertain fantasies of clearing the barn altogether when our turn to play comes around. Not that I am really bothered whether we get to play or not, for I am having a perfectly good time already. 
+	<p>
+	Others do not take so well to Band No. 1. Certain elements of the NN1 posse start popping over to the soundman, telling him to put a stop to this degenerate hippy nonsense. Happily Band No. 1 draws its increasingly tedious set to a close without any coercion. 
+	<p>
+	Band No. 2 are young and have a broken axle from trying to get to the farm. The good news is that this means that they can use the same drum kit as Band No. 1.
+	The bad news is that they play a set made up entirely of old rock covers, Jimi Hendrix and the like. Again, I worry that the Wilson sound might be that little bit...uh...unsuitable for the night. After all, this is a fiftieth birthday party in the middle of nowhere. Stevie G, however, tells me not to worry. "Someone has to get a-hold of this thing and turn the vibe around," he tells me, "I know I can do it..." There is, I feel, a certain ring of desperation about his remark. 
+	<p>
+	The sun is down, the bonfires are raging, people are milling about in mad costumes, fuelled by drink, curry goat and God-knows what else. I think back to Sumosonic's doomed and foolhardy trip to Melchbourne in 1998, a date we dubbed Sumo Vietnam and which turned out to be our last ever gig. Have we been and gone and done it again? Are we facing Wilson Vietnam?
+	<p>
+	Now, as I have come to understand the situation, we shall be taking the Band No. 3 slot, with P-Hex topping the bill. But as the Queens Of The Stone Age do sonic battle with the KLF in the Wilson ghetto, Stevie G arrives to say that 
+	P-Hex are in disarray. Their drummer has taken a dislike to the situation and is agitating to get back to Northampton as quickly as possible. So P-Hex are now going to take the Band No. 3 slot and we are to move to the top of the bill. Oh Christ! At least P-Hex have played here before and gone down well. Whereas we have absolutely no idea what to expect.
+	<p>
+	P-Hex take the stage and are sounding strong. Whatever the emotional state of their drummer, he is playing hard and grinning from ear to ear. The barn is full of punters and the atmosphere really is picking up. The Reverend Lindsay rocks the house in his own special style and new vocalist Fiona is doing well. Stevie G can be seen, stage right, holding his guitar above his head and going mental. 
+	<p>
+	Once P-Hex are done there is a burst of activity as Wilson move their stuff onto the stage. It is now that I make a nasty discovery. The floor of the barn, it turns out, has recently been concreted, and there is still a huge amount of dust everywhere. By the time I am set up, my leads have turned colour from black to white and there is a fine sand all over my guitars. And all over me.
+	<p>
+	As Quality People starts up, MC Bot is nowhere to be seen. In fact, he is standing by one of the bonfires, minding his own business. He suddenly comes barging into the barn, scattering punters, just in time to pick up the first line of the song! Despite the lack of a soundcheck, the band sounds great. Many thanks to Steve Ward for his work at the controls, and to the local soundmen for having such a good rig.
+	<p>
+	There is not a whole lot of space on the stage here and I am under constant threat from our hyperactive lead singer. Imagine, therefore, my disquiet when, two songs into the set, Bot demands: "Where are my dancers?" Before I know it we are joined on stage by three Welsh girls in belly dancers' costumes! My pedals don't stand a chance: by the end of "Burn Hollywood Burn" my phaser is literally standing on its head. But we press on and "Hippy Shit" rocks the shack large-style. The punters are going Edgar Wallace Donuts. All my anxieties have been in vain. The barn is heaving and these fuckers are going for it in a big way.
+	<p>
+	As we move into Critters I find myself standing unsteadily on one of the monitors. Curtis' pal with the sword is now onstage, trying to feed joints to the musicians. Because of the lack of space and the frenetic activity he is surprisingly unsuccessful in this. He resorts to firing off blowbacks, but even this is an inexact science in the onstage chaos. By the fiery ending of Dark Agenda he is simply taking a huge lungful and running up to people and French kissing them. It is, I can honestly say, the first time that I have been French kissed by a man while playing a guitar solo. Anywhere. The general reaction among the NN1 posse, as expressed by Kathie McGinty: "How gay was that?"
+	<p>
+	Dark Agenda goes down in a blaze of noise, which somehow mutates into a spirited acapella "Happy Birthday" for Fred. The vibe is grand. It's time to pack up our filthy equipment and grab another beer. 
+	<p>
+	By the time we have packed up, it turns out that the P-Hex wagon has already set off back to Northampton with the dissident drummer on board, leaving Stevie G stranded without a ride. An hour or two goes by as we try to locate taxis to take us back to the hotel. Despite Fred's assurances that the local firms have been primed for our call, it is by now 3:00 am and we get nowhere. Stevie G curls up and goes to sleep in the back of The Zoo. Eventually, after some fairly agonised soul-searching and a swordsmanship exhibition from Curt's pal, we set off in a very slow convoy through the mist, making it back to the hotel a tense but uneventful fifteen minutes later. Curtis takes his newly colourful head to bed, and Kath, still jet-lagged does the same. For the rest of us it's the usual beer and smoke party at the hotel. Against all the odds we have come and done the shit. We decide two things: (i) we are some bad muthafuckas, and (ii) it has definitely been an away win. 
+	<p>
+	Men Of The Match (so to speak): Kathy Schaer for perseverance beyond the call
+														  of jetlag. Stevie G for organising the Wales trip
+														  and playing 2 sets in a single night.
+		)},
+		photosets= /images/20020921/GroupPic.jpg;;${literalizeCommas(
+			Left to right: ${kathie}; Nathan Harris; Pete Heyworth,
+			landlord of the Racehorse; Fiona from P-Hex; me, on the floor already; Ian
+			Anderson [P-Hex, Slipstream]; Caroline and Steve Ward [who does the sound];
+			${steve_gordon} [Wilson, P-Hex, instigator of the whole enterprise];
+			${botty} posing; ${anita_allbright}; Fred Ryan [back turned]; ${kathy} [aka Misery Wilson];
+			Jason Kells [Sheep Thieves]
+			)}$$
+			/images/20020921/NoMates.jpg;;${literalizeCommas(No Mates)}$$
+			/images/20020921/SteveFred.jpg;;${literalizeCommas(${steve_gordon} and Fred)}$$
+			/images/20020921/CurtHeid.jpg;;${literalizeCommas(${curt}'s painted head)}$$
+	)}
+
+#define	Oct12.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+			Skindred
+		)},
+		notes=${literalizeCommas(
+			As a result of the mmmm...severity of our <a href="${jbc_gigs}/2002/Sep20.html">Roadmender engagement</a>
+			we managed to pick up another date there.
+			We are opening for Skindred (uh-huh...) on Saturday 12th October.
+		)},
+		pat=${literalizeCommas(
+			Well, how things change! The first thing we notice on arriving at the Roadmender is that we now have a dressing room, with our name on the door and a crate of beers inside it. When Brian, our social secretary, appears we have all we need in this small and airless HQ of ours. Steve Ward is here to mix us tonight, and that means that we have a fine and easy soundcheck. Wilson in the comfort zone.
+			Stepping out to the bar I find Simon Mawby (Woodentops guitarist) and June Miles-Kingston (drummer to Fun Boy Three and other gentry). Pleased as I am to see them here, I can't help wondering what the man once known as Cardinal Mawb will make of all this.
+			<p>
+			I am still in the bar when I hear the sounds of The Streets. Time to head for the dressing room and get ready, then...
+			<p>
+			We go on at about 8:30. The main hall of the Roadmender is about two thirds full. The vast majority of the audience is staggeringly young. Well, stand by to be screamed at by people the age of your parents, The Kids...
+			<p>
+			Curtis is in Amsterdam for his brother's stag night, the lucky dog, so it falls to me to do a bit of avant-gardening with my delay pedal. Swooshie-wooshie it goes as Quality People stutters into life. Bang thump crunch goes the group as MC Bot emerges, statuesque, all in red, still clutching that bloody bullhorn thing and looking for a rumble. We go tearing through our first tune as the room fills up. They're hanging over the barriers at the front and the heads are beginning to shake.
+			<p>
+			Yellow Pages (as we're still calling it) is feeling fully-formed now and with a superb sound onstage and off we are able to deliver it in fine style. Then a fiery Burn Hollywood Burn (well, it would be, wouldn't it?) gets things really going.
+			<p>
+			Hippy Shit next, with Bot and me working overtime in the vocal department. Russell's solo spot is swamped in white noise, which may have something to do with me. Whatever, the house is rocked. A little chill with Istanbul Connection, then Every Saturday Night, another new song that's found its feet. I find myself wondering what Simon must be thinking. It can't possibly be what he was expecting.
+			<p>
+			We rip up Play It All Night Long, then throw Critters at them. It's explosive. People are standing on the PA columns. Critters crashes into great wall of controlled feedback before the nagging Dark Agenda riff emerges. Another top version: the end section sees everybody going Edgar Wallace mental, Bot booming out New Order lyrics over the chaos. The punters erupt and I leave the stage to the sound of Bot haranguing them about I know not what. And it's no good asking him what he was on about, coz he can't remember! Truly the best set we have yet delivered: totally convincing sound, furious performance, baying punters. Just what you want.
+			<p>
+			After a few minutes chilling back in the dressing room we check Skindred. Boy, are they loud! It's the rock/dub thing, as you might expect from a band that was formed from the ashes of Dub War. Rage Against The Machine might be a suitable point of reference. They are a top live band and go down well, teasing the audience before returning for a well-earned encore. Nice geezers too. They're Welsh, you know.
+			<p>
+			We pack up our kit and have another brief chat with Simon and June before it is time for another Wilson novelty - getting paid! With the paper stuff securely stuffed into our pockets we head for Stevie G's new house for a buffalo vodka knees-up.
+			<p>
+			Dark Agenda - do you need an explanation?
+		)},
+	)}
+
+#define	Oct26.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+			We didn't advertise it, for it was a private party. The stage was
+			profoundly dark, which resulted in my playing like a blinking rhinoceros, but it didn't seem to
+			matter, as it all went down well anyway. We kicked, I was told afterwards, ass.
+		)},
+	)}
+
+#define	Dec8.html()
+	${gigHeader(
+		cost=free,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Dec27.html()
+	${gigHeader(
+		cost=,
+		blurb=Love Music\, Hate Racism Charity Event,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+			Eaglehead, P-Hex
+		)},
+		notes=${literalizeCommas(
+			This gig is a benefit for the ${linkExternal(http://www.lmhr.org, Love Music, Hate Racism organisation..)}
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

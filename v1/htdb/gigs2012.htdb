@@ -1,0 +1,281 @@
+#define	Mar6.html()
+	${gigHeader(
+		pat=${literalizeCommas(
+			Initially I had the gig listed on my calendar for
+			the following week. Things went a bit peculiar and
+			suddenly it had lurched forward by seven days, leaving
+			me with about one evening and a morning in which
+			to practice. So I thought, for some reason which
+			escapes me now, that I'd play Sex & Travel in it
+			entirety. Solo. Acoustic. As Mitch Jenkins would
+			surely have said, were he on the spot, "What a maroon!"
+			<p>
+			Lucky to be alive, really.
+			<p>
+			Pat x
+		)},
+		photosets= /images/20120306/20120306_snow_pat.jpg$$
+			Philip Snow
+		,reviews=${literalizeCommas(
+			As promised a week or so ago, I have uploaded all the videos from the night in London when Pat Fish played "Sex and Travel" at The Constitution, London 6 March 2012. It's missing two songs, "Holiday" and "What's The Matter Boy". "Holiday" I was watching intently camera off, because in 1995 I had travelled from Hong Kong to London over land on the Trans Siberian Express, and listened a lot to that song and corresponded with Pat on the journey. He invited me out one evening shortly after returning and expressly asked me to bring all my photos from the trip. Over several Pilsners he wanted to know the story behind every one, another unforgettable evening with him. The latter is missing for the boring reason of almost no battery left and decided to save it for the last two songs. I hope you enjoy watching.)}$$
+		Raj Patel;;https://www.youtube.com/channel/UCFz9THd8yqQCBmPU8AyUm1Q;;2021-11-13 13:11:11$$
+	)}
+
+#define	Apr22_1930.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Solo acoustic, supporting the very excellent Micky Greaney and his new band.
+			Amazing venue: it's like the Garden of Eden with a bar.
+			Admission £10.00 - Starts 7:30pm.
+		)},
+		pat=${literalizeCommas(
+			a super night at the kitchen garden cafe. micky greaney and his band were simply awesome, as good a live performance as i
+			have ever seen. everyone was very nice to me and the beer was quality. special thanks to johnny p. purcell for logistics
+			and righteousness beyond the call thereof.
+		)}
+	)}
+
+#define	May7_2200.html()
+	${gigHeader(
+		blurb=Games For May,
+		with=${literalizeCommas(
+			Mike Absalom, Easter Sun, George Frakes, Gabby G, Victoria Major, Marcia Mello, Louiza Kilcawley, ROSCO, Sterling Roswell, The Bare Nodes, Dee Jay\'s, Vinita Rocket Girl, DJ Dirty Water
+		)},
+		notes=${literalizeCommas(
+			Solo acoustic, taking part in a 14 hour festival of poetry, music and art involving Pete Bassman (the Darkside), Sterling Rosco  
+			(Spacemen 3) and the legendary Mike Absalom, among others.
+			I'm on at around ten o'clock in the evening.
+			Admission free. Starts midday.
+		)},
+		pat=${literalizeCommas(
+			The Games for May thing in London turned out to be very enjoyable. Rosco and his pals did a 3 song set of songs from Syd Barrett's Pink
+			Floyd, including See Emily Play, of course. Mindblowing. I did a sit-down loud acoustic set.
+		)},
+	)}
+
+#define	May26.html()
+	${gigHeader(
+		blurb=Masters of Budvar,
+		notes=${literalizeCommas(
+			Masters of Budvar are at it again!  
+			<p>
+			Saturday 26th May 2012  
+			The Labour Club, Earl & Charles, Northampton NN1
+			<p>
+			Masters of Budvar present THREE MINUTE TEASE with support from PAT FISH.
+			<p>
+			Admission -L-3.00 
+			<p>
+			Three Minute Tease, featuring Anton Barbeau, together with Andy Metcalfe
+			and Morris Windsor of the Soft Boys/Robyn Hitchcock & the Egyptians, 
+			present their brand new self-titled album live at Northampton's finest  
+			venue, with support from Pat Fish (the Jazz Butcher). 
+			<p>
+			Three Minute Tease is Three Minute Tease's debut album - and Three Minute 
+			Tease is An...ton Barbeau, Andy Metcalfe, and Morris Windsor, joined on 
+			this recording by special guests Stornoway and Nick Saloman (Bevis Frond).
+			<p>
+			The inexhaustible Californian psychedelic cult hero Barbeau has been a  
+			lifelong fan of Metcalfe and Windsor for their work with Robyn Hitchcock
+			in the Soft Boys and Egyptians, and first met them in 1988 at the Fillmore
+			in San Francisco at an Egyptians gig, giving them each a copy of his tape 
+			Back to Balmain. Decades later, after several chance meetings in the UK,
+			Barbeau approached each of them separately. "The idea of the band really
+			took shape in Berlin in May 2010 when Morris and I met to record, " says
+			Barbeau, "but I'd asked them each at different times, and both seemed
+			keen."
+			<p>
+			Barbeau began writing songs specifically for TMT in June 2010, soon after
+			the group's debut gig at the Wheatsheaf pub in Oxford. The final product, 
+			much of it recorded at Kimberley Rew's Remote Farm studio in
+			Cambridgeshire, sounds slightly more pared down compared to Barbeau's
+			recent work, partly due to Metcalfe's influence as co-producer.
+			<p>
+			"I've had many bands, but this the most a part of something I've ever
+			felt," says Barbeau. "The fact that it's with Andy and Morris is amazing
+			for me. I'm proud of how the album reflects the intense effort and
+			enthusiasm we all shared from the start, shaping the unique sound you hear
+			now." 
+			<p>
+			${g_artistweb(g=http://www.threeminutetease.com)}
+			<p>
+			PS - Keep an eye on the Youtube channel. I have footage from 2 recent
+			London gigs. 
+		)},
+		photosets= /images/20120526/budvar1.jpg$$
+			/images/20120526/budvar2.jpg$$
+			Matt Sewell
+	)}
+
+#define	Jun9_2000.html()
+	${gigHeader(
+		blurb=Twinfest,
+		notes=${literalizeCommas(
+			Twinfest presents:
+			<p>
+			THE VENUS FLY TRAP (Northampton)<br/>
+			YET (Poitiers)<br/>
+			BAPTISTE PIZON (Poitiers)<br/>
+			PAT FISH (Northampton)
+			<p>
+			FREE ADMISSION<br/>
+			Doors open 8:00pm
+			<p>
+			Seeing as I am on first, I shall probably opt for an acoustic set.
+		)},
+	)}
+
+#define	Aug18.html()
+	${gigHeader(
+		pat=${literalizeCommas(
+			The picture shows me playing at Northampton's rather wonderful Umbrella Fair last Saturday. Taken by my pal, popular TV archaeologist and long-suffering Liverpool fan, Paul Blinkhorn.
+		)},
+		photosets= /images/20120818/umbrella2012.jpg$$
+			Paul Blinkhorn
+	)}
+
+#define	Aug24.html()
+	${gigHeader(
+		pat=${literalizeCommas(
+			I was playing at a birthday bash for a chap who had pledged for a house concert.
+			I had the most appalling backache, the result of being abandoned in a massive warehouse with the Wilson drummers and their 146
+			tonnes of "instruments".
+		)}
+	)}
+
+#define	Sep7_1930.html()
+	${gigHeader(
+		cost=&pound;2:50,
+		notes=${literalizeCommas(
+			The Wilson DVD, entitled No Known Predators, is to be released on Friday 7th September 2012.     
+			<p>
+			To celebrate, Wilson will be reforming for a special one-off show at The Picturedrome, Kettering Road, Northampton NN1 on Friday 7th September 2012.
+			<p>
+			Tickets for the event cost £2:50, exactly the same as at Wilson's very first show in March 2001.
+			<p>
+			The DVD will be available to buy at the Picturedrome show.
+			<p>
+		)},
+		reviews=${literalizeCommas(
+			Northampton supergroup Wilson (inc' members of: The Jazz Butcher, Stranger Tractors, Sumosonic and others) reformed for the first time in 3 years to play the Picturedrome on Friday, launching their long-anticipated live DVD 'No Known Predators'.
+		<p>
+			${linkExternal(https://youtube.com/watch?v=lvEN14PM_5M)}<p>
+			${linkExternal(http://www.wilsondub.com/htdb/audio)}<p>
+			(note couple of demos produced by DRS)
+		<p>
+			The live DVD is a film of the bands farewell gig at the Picturedrome. A film that was then premiered on the cinema screen of the Picturedrome and there's a possibility that only a technical hitch prevented them performing in front of it at the same venue ... which might have been pushing the fabric of spatial and temporal reality a little too far.
+		<p>
+			The launch concert was outstanding. The DVD is pretty much the only record of the groups music apart from the mp3's on the website.
+			Should be available to order online soon.
+		<p>
+			I got chatting to Pat Fish after the gig. He and his missus insisted that Sangelus and I come back to theirs with some other members of the band and their partners for a small after show party, where he treated us to a listen of a mix of a track from the impending new Jazz Butcher album which he'd only received earlier that day ... [fast show voice] which was nice. 
+		<p>
+			We went home a little after 2am ... happily, not in a taxi or disgrace.
+		)}$$
+		Pursued By Trees;;https://www.headheritage.co.uk/headtohead/unsung/topic/66532/;;2012-09-09 21:57:00$$
+	)}
+
+#define	Nov3_1930.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Nearest tube station: Farringdon
+			<p>
+			Pat Fish<br>
+			Joe Woolley<br>
+			Neil Robert Herd<br>
+			Fawn<br>
+			<p>
+			Tickets: £6:00 <br>
+			Doors open: 7:30 pm
+			<p>
+			I should be on at around ten o'clock.
+		)},
+	)}
+
+#define	Nov16.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			DAVID J + LIAM DULLAGHAN + PAT FISH
+			<p>
+			Tickets £7:00 in advance.
+			<p>
+			Tickets strictly limited in number. Buy now...
+		)},
+	)}
+
+#define	Dec1_1800.html()
+	${gigHeader(
+		pat=${literalizeCommas(
+			Saturday night: Basement Bar, Shimokitizawa. Eider stuns audience and rhythm guitarist by jabbering at length in        
+			Japanese. Rhythm guitarist experiences spectacular jet-lag cramp in all four limbs during performance, leading to       
+			some interesting guitar maneouvres. Audience painfully hip. ambience deliciously warm. Total buzz. Taxis.
+			For encores we played      
+			"Soul Happy Hour" and then "Girls Who Keep Goldfish" and "Sweet Jane" (the way we used to do in about 1983).
+			<p>
+			Ayuko Koyabashi made a poster with a rather flattering depiction of the performers.
+		)},
+		photosets= /images/20121201/20121201_opal_krusch_flier.jpg$$
+			/images/20121201/20121201_opal_krusch_pat.jpg$$
+			/images/20121201/20121201_opal_krusch_patsmiles.jpg;;${literalizeCommas(
+				It was a very cold day for early December. 
+				Pat often got cramps in the arm and fingers during the shows, saying "I'm 54!" 
+				His guitar playing was perfect, though.)}$$
+			/images/20121201/20121201_opal_krusch_max.jpg$$
+			/images/20121201/20121201_opal_krusch_eider.jpg$$
+			/images/20121201/20121201_opal_krusch_maxsmiles.jpg;;${literalizeCommas(
+				Max learnt some Japanese and he tried to do MC in Japanese as much as possible.
+			)}$$
+			/images/20121201/20121201_opal_krusch_bigfoot.jpg;;${literalizeCommas(
+				Pat & Max, playing "Bigfoot Motel"
+			)}$$
+			/images/20121201/20121201_opal_krusch_curtaincall.jpg;;${literalizeCommas(
+				Curtain call.
+			)}$$
+			opal_krusch;;http://www.flickr.com/photos/opal_krusch/8238260404/
+		,
+		setlists=
+			/images/20121201/20121201_setlist.jpg$$
+	)}
+
+#define	Dec2_1800.html()
+	${gigHeader(
+		pat=${literalizeCommas(
+			Sunday night: Anti-Knock, Shinjuku. Downtown rock bar on a sunday night. Significant number of punters coming for       
+			the second night in a row. Lovely, beaming sound engineer. No cramps! Completely deranged version of Bigfoot Motel.     
+			Another lovely audience. Rhythm guitarist bordering on discombobulated at points.
+		)},
+		photosets= /images/20121202/20121202_1.jpg;;
+			${literalizeCommas(Butcher's live jazz was great. Max Eider's guitar tone was good feeling)}
+			$$
+			/images/20121202/20121202_2.jpg;;
+			${literalizeCommas(Mr. Pat Fish's band of treasure JAZZ BUTCHER guitar pop / indie in the UK. Early classics has given us a lot to show off)}$$
+			electrosummer;;http://scandi-electro.com/;;2012-12-03
+			---
+			/images/20121202/20121202_emireply.jpg$$
+			emireply;;https://www.instagram.com/emireply/;;2017-04-07
+			---
+			/images/20121202/20121202_bela_duo1.jpg$$
+			/images/20121202/20121202_bela_duo2.jpg$$
+			/images/20121202/20121202_bela_withpat.jpg$$
+			bela;;;;2022-01-30
+	)}
+
+#define	Dec18.html()
+	${gigHeader(
+		photosets= /images/20121218/20121218_brum.jpg
+	)}
+
+#define	Dec21.html()
+	${gigHeader(
+		phone=071 607 1818,
+		cost=&pound;5,
+		blurb=Christmas Party,
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

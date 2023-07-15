@@ -1,0 +1,429 @@
+#define	Mar11.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${simon})},
+		venue=The Charles Bradlaugh,
+		city=Northampton,
+		with=${literalizeCommas(
+			The Vincent Vega Band
+		)},
+		photosets=
+		/images/20170408/BradJazwinski.jpg$$
+		/images/20170408/BradJazwinski2.jpg$$
+		Mandy Jazwinski
+	)}
+
+#define	Apr8_2000.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${stevenew}, ${simon}, Joel Harries )},
+		notes=${literalizeCommas(
+			Last Day Deaf is more than proud to announce that is Media Partner for the 8th April double bill (The Jasmine Minks, The Jazz Butcher Quartet) that will take place at The Continental, South Meadow Lane.Preston, UK.
+			<p>
+			The event is co-organised by  Tuff Life Boogie & They Eat Culture.
+			<p>
+			Press release
+			<p>
+			The Jasmine Minks
+			<p>
+			Formed in Aberdeen in 1983 before quickly re-locating to London, The Jasmine Minks were initially a quartet of Jim Shepherd (guitar/vocals), Adam Sanderson (vocals/guitar), Martin Keenan (bass guitar), and Tom Reid (drums/vocals). Alan McGee picked up on the band early on, and their first single, “Think!” (CRE 004) was in the second batch of releases on McGee’s fledgling Creation label in 1984. An amazing blast of fresh air and optimism, it was recorded for the princely sum of £50 at Alaska Studios, Waterloo. Another superb single, ‘Where The Traffic Goes’, and 18 minute mini-LP ‘One Two Three Four Five Six Seven, All Good Preachers Go To Heaven’ followed in quick succession before the end of 1984. All these records had a fetching, moddish art-pop slant and received outstanding reviews, with the Minks being nominated by NME as one of the best new acts in Britain.
+			<p>
+			Following a European tour, supported by McGee’s new protoges The Jesus and Mary Chain, The Jasmine Minks put out a punkier, Buzzcocks inspired, single, ‘What’s Happening’ in 1985 before embarking on recording their debut full length album, set to be named ‘Everybody’s Got to Grow Up Sometime’. This eventually emerged 18 months later, self-titled and patched together from a variety of different sessions after the original tapes were abandoned.
+			In-between times in 1986, the band released ‘Cold Heart’, a song that McGee had originally cut from ‘Preachers’ but which turned out to be their biggest selling single, single of the week in NME, and it also secured them a John Peel session. At this point Sanderson left the band and it took some time for Shepherd to take up the reins and carve out a new future for the Minks.
+			Jasmine Minks returned in 1988 with a new line-up, helmed by Shepherd (now on lead vocals and also sole songwriter) and their best album ‘Another Age’. This was an altogether more accomplished effort with a reflective mood, including the stand-out track ‘Cut Me Deep’, which also featured on Creation’s ‘Doing It For The Kids’ compilation the following year. Sadly, The Minks new crafted and considered approach was out of touch with the baggy loved-up zeitgeist and they managed just one more album , 1989’s ‘Scratch The Surface’ before they drifted apart in the early 90s.
+			However, Jim Shepherd’s restless muse has led him to reconvene the Jasmine Minks several times since then, and McGee also never forgot his “amazing, unknown gem of a band” either, funding another album ‘Popartglory’ in 2001 on Poptones, the label he started after Creation’s demise. One of the tracks on that record, ‘Daddy Dog’, attracted an unprecedented period of notoriety for the band in Scotland, helped by featuring firebrand socialist politician Tommy Sheridan.
+			It is now 5 years since their last shows, and Jasmine Minks will be returning in 2017 playing their classic album ‘Another Age’ in full at their comeback show at The Continental.
+			<p>
+			The Jazz Butcher Quartet
+			<p>
+			“The Jazz Butcher is one of the most brilliant incisive pop writers that Britain has produced since the glory days of Ray Davies and Pete Townsend. Criminally overlooked by a media obsessed with the next big thing instead of what is actually good. A truly great songwriter” Alan McGee, president , Creation Records
+			<p>
+			The Jazz Butcher is the nom de guerre of Northampton’s Pat Fish, who over the years has masterminded various Groups, Conspiracies, Sikkorskis from Hell and, latterly, a Quartet.
+			<p>
+			A cult figure right from the start, The Jazz Butcher developed a not altogether serious sozzled Brit pop aristocrat persona, a million years before Brit Pop, with musical nods to Jonathan Richman (‘Roadrunner’ was memorably covered by the Butcher early on), Robyn Hitchcock and Lou Reed.
+			<p>
+			Pat formed the band in Oxford in 1982 (after he had previously been a member of Wow Federation while at university in the city) with Max Eider, who proved to be the Butcher’s most loyal co-conspirator. Max has now retired, but features on most of The Butcher’s 15 or so albums released since then, beginning in 1983 with ‘Bath of Bacon’, on Glass Records, alongside fantastic debut single ‘Southern Mark Smith’, regarded by absolutely everyone who’s heard it as one of the best songs of the eighties. Further albums on Glass, ‘A Scandal in Bohemia’ and ‘Sex and Travel’ featured guest appearances from David J and Kevin Haskins of Bauhaus.
+			<p>
+			In 1988 The Jazz Butcher instigated a transfer to Creation Records, where he became one of the label’s best loved acts, releasing seven albums for the label starting with ‘Fishcotheque’ in 1988 and ending with ‘Illuminate’ in 1995, with loads of drunken touring in-between, establishing enclaves of Butcher fanatics all over Europe and the States.
+			<p>
+			Thereafter, Butchery continued, but very much underground, with only occasional peeks over the parapet such as the ‘Glorious and Idiotic’ album on Roir in 2000, until the Butcher’s legion of followers worldwide crowd-funded the ‘Last of the Gentleman Adventurers’ album in 2012.
+			<p>
+			Renowned archive trawlers Fire Records, have recently started up a Jazz Butcher reissue campaign, beginning in Feb 2016 with the long sold out ‘Adventurers’ album, and Pat is also back with a new band, the Jazz Butcher Quartet. Whilst Pat is often out and about solo in Northampton and the South, full Quartet shows are pretty rare, and he’s also not played in the North for a long time, so don’t miss this opportunity to see the legendary Jazz Butcher and his band at The Continental.
+		)}
+		,
+		photosets=
+			/images/20170408/20170408_preseton_heathcote.jpg$$
+			Paul Heathcote
+		---
+		/images/20170408/preston_lastdaydeaf_1.jpg$$
+		/images/20170408/preston_lastdaydeaf_2.jpg$$
+		/images/20170408/preston_lastdaydeaf_3.jpg$$
+		/images/20170408/preston_lastdaydeaf_4.jpg$$
+		/images/20170408/preston_lastdaydeaf_5.jpg$$
+		Feng Wang;;http://lastdaydeaf.com/photo-tribute-the-jasmine-minksthe-jazz-butcher-quartet-8-april-the-continental-south-meadow-lane-preston-u-k/;;2017-04-11
+		,
+		pat=${literalizeCommas(
+			Preston went really well, with a really warm, responsive audience and a very kind host in Rico la
+			Rocca, who put the show on. The venue was in a lovely corner of town by the river, the weather was
+			beautiful. People came from Hamburg, Munich and South Herefordshire, which, in its own way, is perhaps
+			most impressive of all.
+			<p>
+			The Quartet went out for the first time with electric instruments and drum sticks in place of brushes.
+			To be honest, we didn't think that our sound had particularly changed: we knew that it was more
+			dynamic, with a bit more support for Simon as he wigged out, but we still pretty much figured that we
+			were identifiable as the Quartet. The audience, on the other hand, felt differently. They seemed to
+			think that we had rocked things up significantly. Nobody, of course, was ready for Simon Taylor. Words
+			like "Jesus", Davis", "Miles", "Mary" and "Chain" were used later.
+			<p>
+			We had a wonderful evening. Many thanks to Paul Williams for his driving skills and his essential
+			medical interventions.
+		)}
+	)}
+
+#define	Apr15.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${stevenew}, ${simon}, Dave Morgan )}
+		,
+		photosets=
+		/images/20170415/arash_lex.jpg$$
+		Arash Torabi
+		---
+		/images/20170415/heeson_lex.jpg$$
+		Mick Heeson
+		---
+		/images/20170415/jimdavies_lex_1.jpg$$
+		/images/20170415/jimdavies_lex_2.jpg$$
+		/images/20170415/jimdavies_lex_3_group.jpg$$
+		Jim Davies
+		---
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040651.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040665.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040667.jpg;;Steve New$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040675.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040681.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040684.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040685.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040691.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040703.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040709.jpg;;Dave Morgan$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040710.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040711.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040716.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040721.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040723.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040725.jpg;;Simon Taylor$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040727.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040744.jpg;;Steve New$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040754.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040765.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040774.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040781.jpg;;Pat Fish$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040790.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040792.jpg;;Simon Taylor$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040796.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040804.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040805.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040819.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040831.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040848.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040853.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040857.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040861.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040867.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040871.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040877.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040878.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040894.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040898.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040900.jpg$$
+		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040910.jpg$$
+		\@PlanetruthPictures
+		---
+		/images/20170415/kevmatthews_lex.jpg$$
+		Kev Matthews
+		---
+		/images/20170415/20170415_countrymile_1.jpg$$
+		/images/20170415/20170415_countrymile_2.jpg$$
+		/images/20170415/20170415_countrymile_handbill.jpg$$
+		\@country_mile;;http://countrymile.org;;2017-04-16
+		---
+		/images/20170415/20170415_popnews1.jpg$$
+		/images/20170415/20170415_popnews2.jpg$$
+		/images/20170415/20170415_popnews5.jpg$$
+		/images/20170415/20170415_popnews6.jpg$$
+		Pop News;;http://www.popnews.com/popnews/the-jazz-butcher-the-jasmine-minks-the-lexington-londres-15-avril-2017;;2017-05-03
+		,
+		pat=${literalizeCommas( 
+			Morgan was splendid on drums. The whole thing is accelerating wildly into full-on electric rock.           
+			With a trumpet.                                                                                            
+			A trumpet that sounds like the heat death of the universe.                                                 
+			<p>
+			Well, life is full of surprises.                                                                           
+			<p>
+			Special thanks to the people who travelled tonight from Paris, Glasgow and Minneapolis* to join the        
+			twisted fun.                                                                                               
+			<p>
+			Fishy out xxx                                                                                              
+			<p>
+			* - Brian Kelly! xxx  
+		)}
+	)}
+
+#define	Apr27_1930.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			<blockquote class="annotation">
+			<i>"Along with Alan Moore and Rockingham Castle, Pat Fish remains a Northamptonshire institution. Boozer, intellectual and troubadour, Fish has released an entire canon of Jazz Butcher albums since the early eighties and has intermittently reformed the JBC to critical plaudits.”</i>
+			</blockquote>
+			<p>
+			Erik Morse, Spacemen 3 & the Birth of Spiritualized
+			<p>
+			<blockquote class="annotation">
+			<i>“Pat Fish, the Jazz Butcher, is one of the most brilliant incisive pop writers that Britain has produced since the glory days of Ray Davies and Pete Townshend.”</i>
+			</blockquote>
+			<p>
+			Alan McGee, Creation Records
+			<p>
+			<hr>
+			Born in West London at a time that left him just too young to be a hippie and just a little too old to be a punk, Pat Fish grew up in an era where the Bonzo Dog Band appeared on children’s television, Syd Barrett was on Top of the Pops and the Adult World was represented in shows like The Avengers and The Prisoner. Disappointment was an inevitability.
+			<p>
+			Fish failed to “get” the glam rock thing (probably too much of an excitable wee football fan) and found that the seventies drove him down some fairly obscure musical paths before punk rock came along to save the day. By then, however, all those mad little songs by Eno, Syd Barrett, Kevin Ayers, Daevid Allen, John Cale, Peter Blegvad and Tony Moore were already locked up in his head.
+			<p>
+			Fish started making records under the name of the Jazz Butcher in 1983 and nobody has quite succeeded in putting a stop to this yet. He has recorded for Glass Records, Creation Records, ROIR of New York and Vinyl Japan of Tokyo. Overall he has written and released fifteen albums of original music, three live albums and innumerable singles and compilations.
+			<p>
+			In 2016 Fire Records issued the album Last of the Gentleman Adventurers, originally released as a fan-funded project in 2012. In 2017 Fire will be undertaking a major re-issue programme, making several Jazz Butcher albums available once again on vinyl, CD and digital formats.
+			<p>
+			With the Jazz Butcher, Fish has toured worldwide. As a solo artist, recent shows include Hamburg, Dortmund, New York City, Tokyo, Brussels and London, as well as his adopted home town of Northampton where he still regularly turns out with his acoustic guitar to support visiting artists.
+			<p>
+			He likes collaborations, too. Apart from his lengthy association with Northampton-based digital hooligans Wilson over the years 2001-2009, Fish has recorded and appeared on stage with David J, Spacemen 3, Bristol’s The Blue Aeroplanes, German band M Walking On The Water, French indie art rock band Chelsea Paris and acclaimed Los Angeles shoegazers, The Black Watch.
+			<p>
+			The thing about Pat Fish is that he is not tribal about music. Some people know him from his friendship with Spacemen 3, others for his fondness for Nikki Sudden and Dave Kusworth; some know him because he has worked with members of Bauhaus, others regard him as a “classic” independent songwriter in the vein of Pete Astor or Dan Treacy. Fishy just fetches his acoustic guitar and his notebook and heads for the railway station.
+			<p>
+			His current inspirations: as always, the Velvet Underground, Alex Chilton, Peter Laughner, Bob Dylan, Patti Smith, Kevin Ayers, John Martyn, Davy Graham and many, many more.
+			<p>
+			Do you like your melodies sweet and your humour as black as pitch? Would you take a chance on something simple, intimate and direct from an artist who is on record as saying “What I do is not entertainment” but who regularly induces little bursts of outraged laughter from the audience? Do you want to see the real thing? You should maybe go and see Pat Fish.
+			<p>
+			<b>Plus</b>
+			<p>
+			SHORT STORIES: Formed in 2007 in Bristol, England by Tim Rippington and Stephen Miles. Tim and Stephen were at school together, a year apart but sharing the same musical values that made them firm friends. After school, the two went their separate ways – Tim spent the next twenty years playing in various indie bands such as the Flatmates, the Five Year Plan and later the Beatnik Filmstars. He also ran his own recording studio for five years, and produced records for, amongst others, the now legendary indie label Sarah Records. In 2003 Tim formed a new band Forest Giants, who made four great LPs before folding in 2007. In the meantime, Steve became a school teacher, dabbling only briefly in music with a spell as drummer for Bristol indie band Modesty Blaise.
+			<p>
+			In 2007 the two met for the first time in 20 years, and discovered that they still had much in common and The Short Stories were born. Since then several albums and singles have been released which can be heard here, 
+			${linkExternal(https://theshortstories.bandcamp.com/)}
+		)},
+		photosets=
+			/images/20170427/20170427_russpearson.jpg$$
+			Russ Pearson
+			---
+			/images/20170427/20170427_janebarnes_1.jpg$$
+			/images/20170427/20170427_janebarnes_2.jpg$$
+			Jane Barnes;;https://www.youtube.com/channel/UCkwNb500dnNugMJUiq7IvBg
+		,
+		pat=${literalizeCommas(
+		A very pleasant evening, much enhanced by Chef Watson and his most excellent rice, peas and plantain.
+		)}
+	)}
+
+#define	May25_1900.html()
+	${gigHeader(
+		venue=The Labour Club,
+		city=Northampton,
+		country=England,
+		cost=free,
+		who=${literalizeCommas(
+			${pat}, ${stevenew}, ${simon}, ${joel_harries}
+		)},
+		notes=${literalizeCommas(
+			Labour Party social event featuring the Labour Party Candidate Kevin McKeever
+			with a live set by the Jazz Butcher Quartet. Seven to nine, so come early.
+		)},
+		photosets=
+			/images/20170525/20170525_rachel_1.jpg$$
+			/images/20170525/20170525_rachel_2.jpg$$
+			/images/20170525/20170525_rachel_band.jpg$$
+			/images/20170525/20170525_rachel_psych.jpg$$
+			Rachel McGrath
+	)}
+
+#define	May28_1630.html()
+	${gigHeader(
+		cost=&pound;20,
+		ticketweb=http://www.wegottickets.com/event/392341,
+		eventweb=http://thiscornerofengland.com/,
+		address=369-370 Helmsley Pl,
+		city=London,
+		postalcode=E8 3SB,
+		with=${literalizeCommas(
+			The Bevis Frond, Wreckless Eric, Jowe Head And His Infernal Contraption
+		)},
+		notes=${literalizeCommas(
+		<b>JBQ on stage 4:30pm</b>
+		<p>
+		This Corner of England celebrates 30 Years of the legendary, and incredibly influential, English psychedelic outfit “The Bevis Frond” with a whole day of music at the London Fields Brewery on Sunday May 28th
+<p>
+		Just added: Wreckless Eric, The Jazz Butcher, Jowe Head (of Television Personalities, Swell Maps)
+<p>
+		The Bevis Frond have ultimately become the UK’s leading underground psychedelic rock band with supporters such as comedian Stewart Lee, Dinosaur Jr, Evan Dando, David Tibet, Teenage Fanclub and more. Live, the line-up today includes: Paul Simmons (guitar), Adrian Shaw (bass, vocals), Dave Pearce (drums) and Nick Saloman (vocals, guitar and sitar).
+<p>
+		“Nick Saloman is my choice for king of the 60s psychedelic revival” Pitchfork
+<p>
+		The event will have a series of very special guests from all corners of the musical spectrum and will run from 4pm until 11pm. Live feed projections provided by Innerstrings
+		)},
+		pat=${literalizeCommas(
+		A most agreeable afternoon at the fire Records event, This Corner of England. Dave Barker, Glass           
+		Records Supremo, was in attendance in the capacity of DJ and Rolo came to hang out as well. It was all     
+		a bit hectic and the weather was positively histrionic, but we played well, the set went down well and     
+		all had a nice time.
+		)},
+		photosets=
+			/images/20170528/20170528_barker.jpg;;${literalizeCommas(${pat}, ${rolo}, ${barker})}$$
+			/images/20170528/20170528_barker_rolo.jpg;;${rolo}$$
+			${barker}
+			---
+			/images/20170528/20170528_roswell.jpg$$
+			Sterling Roswell
+		---
+			/images/20170528/20170528_firerecords_simon.jpg;;${simon}$$
+			Fire Records
+		---
+			/images/20170528/20170528_sydmeats.jpg;;$$
+			Sydney Meats
+	)}
+
+#define	Jul2_1800.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${stevenew}, ${simon}, ${joel_harries}
+		)},
+		cost=free,
+		blurb=Northampton Town Festival,
+		venue=The Racecoure,
+		city=Northampton,
+		postalcode=NN2,
+		with=${literalizeCommas(
+		)},
+		photosets=
+			/images/20170702/20170702_jah_1.jpg;;${simon}$$
+			/images/20170702/20170702_jah_2.jpg;;${simon}$$
+			/images/20170702/20170702_jah_3.jpg$$
+			/images/20170702/20170702_jah_4.jpg;;${stevenew}$$
+			/images/20170702/20170702_jah_5.jpg$$
+			/images/20170702/20170702_jah_6.jpg;;${joel_harries}$$
+			Jasmine Aleesha Hale
+			---
+			/images/20170702/20170702_newboots.jpg$$
+			New Boots Mag;;https://newbootsnorthants.wordpress.com;;2017-07-02 10:58:00
+	)}
+
+#define	Oct20_1900.html()
+	${gigHeader(
+		cost=&pound;12:10,
+		ticketweb=http://www.seetickets.com/event/jasmine-minks/broadcast/1104748,
+		venue=Broadcast,
+		address=427 Sauchiehall Street,
+		city=Glasgow,
+		country=Scotland,
+		postalcode=G2 3LG,
+		with=${literalizeCommas(
+			The Jasmine Minks
+		)},
+		notes=${literalizeCommas(
+			7:00 to 10:30 pm
+		)},
+		setlists=
+		/images/20171022/20171022_brooksbank_setlist.jpg$$
+		Andrew Brooksbank
+		,
+		photosets=
+		/images/20171020/20171020_markgallacher.jpg$$
+		Mark Gallacher
+	)}
+
+#define	Oct21_1930.html()
+	${gigHeader(
+		cost=&pound;9:00,
+		ticketweb=https://www.skiddle.com/whats-on/Aberdeen/Krakatoa/the-jasmine-minks--jazz-butcher-quarte/12895927/,
+		venue=Krakatoa,
+		address=2 Trinity Quay,
+		city=Aberdeen,
+		country=Scotland,
+		postalcode=AB11 5AA,
+		with=${literalizeCommas(
+			The Jasmine Minks
+		)},
+		notes=${literalizeCommas(
+			7:30pm to 3:00am
+		)},
+		photosets=
+		/images/20171021/20171021_mattjolly_1.jpg$$
+		/images/20171021/20171021_mattjolly_2.jpg$$
+		/images/20171021/20171021_mattjolly_3.jpg$$
+		/images/20171021/20171021_mattjolly_4.jpg$$
+		Matt Jolly
+		---
+		/images/20171021/20171021_petepunk73_pat.jpg$$
+		petepunk73;;https://instagram.com/petepunk73
+	)}
+
+#define	Oct22_1900.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			The Jazz Butcher Quartet.. special living room set... Sunday 22nd October. Free entry & everybody welcome.
+		)},
+		setlists=
+		/images/20171022/20171022_brooksbank_setlist.jpg$$
+		Andrew Brooksbank
+		,
+		photosets=
+		/images/20171022/20171022_brooksbank_408.jpg$$
+		/images/20171022/20171022_brooksbank_409.jpg$$
+		Andrew Brooksbank
+		---
+		/images/20171022/20171022_benlewis.jpg$$
+		Ben Lewis
+	)}
+
+#define	Sep22.html()
+	${gigHeader(
+		with=${literalizeCommas(
+			${dj}
+		)},
+		ticketweb=http://www.seetickets.com/event/david-j/the-islington-london/1131210
+		,
+		photosets=
+		/images/20170922/20170922_suebennett_1.jpg;;${literalizeCommas(Me joining ${dj} and Fiona Brice for the encore of Knocking On Heaven's Door)}$$
+		/images/20170922/20170922_suebennett_2.jpg$$
+		Sue Bennett
+		---
+		/images/20170922/20170922_joeturner.jpg$$
+		Joe Turner
+		---
+		/images/20170922/20170922_barker.jpg;;${literalizeCommas(Me trying to do a soundcheck while ${barker} and ${dj} take the piss)}$$
+		Mrs. ${barker}
+		---
+		/images/20170922/20170922_201504.jpg$$
+		/images/20170922/20170922_203342.jpg$$
+		/images/20170922/20170922_203403.jpg$$
+		/images/20170922/20170922_205700.jpg$$
+		/images/20170922/20170922_231447.jpg;;Malcom and Pat$$
+		/images/20170922/20170923_001825.jpg;;Malcom and Pat$$
+		Malcolm Black
+	)}
+
+#define	Nov3.html()
+	${gigHeader(
+		with=${literalizeCommas(
+			Slipstream
+		)},
+		cost=free,
+		notes=                                                   
+		${literalizeCommas(
+		I shall be doing an acoustic set, opening for Slipstream.)}
+	)}
+
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

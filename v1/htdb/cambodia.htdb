@@ -1,0 +1,12 @@
+#define	index.html
+	${mkHeader(section=Cambodia)}
+	${beg_tabs}
+	${begTab(About)}
+	<div class="annotation">
+	Cambodia was a brief collaboration with Cole Coonce of Braindead Sound Machine that took place over
+	the summer of 1991 while I was living on Cole's living room couch in LA. Sumosonic recorded a version
+	of the Cambodia tune We Are the Traffic, but it was never released.
+	</div>
+	${endTab}
+	${end_tabs}
+	${jbc_footer}

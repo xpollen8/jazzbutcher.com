@@ -1,0 +1,349 @@
+#define	Apr5.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Pat Fish solo acoustic, opening for The Lords of Thyme<br/>
+			Also on the bill: Son of Kirk.
+		)},
+	)}
+
+#define	Apr11.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Pat Fish solo and acoustic opening for the Lords of Thyme<br/>
+			Special guest DJs and lights
+		)},
+	)}
+
+#define	May25_2000.html()
+	${gigHeader(
+	)}
+
+#define	Jun27_2000.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		notes=${literalizeCommas(
+			In the Upstairs Bar
+			<p>
+			THE JAZZ BUTCHER LOUNGE QUARTET
+		)},
+		pat=${literalizeCommas(
+			This new rhythm section that I accidentally acquired earlier in the year is really starting to click. Loungecore drums by Steve Garofalo and
+			stand-up bass by Steve New, both of whom used to back Tom Hall, among many other things. There is also a very cool trumpet player called Simon, whose
+			other name I don't even yet know! The deal with this line-up is that we intend, wherever possible, to play entirely acoustic! (It sounds fabulous.) We
+			play almost all the "Gent Advent" album along with a few JB oldies like Shirley Maclaine, a few new originals and a few old-time loungecore classics
+			like Slim Gaillard's "Dunking Bagels" for instance.
+		)},
+		photosets= /images/20140627/20140627_ectomort_loungequartet.jpg$$
+				brendan mccarthy;;https://twitter.com/ectomort
+		---
+				/images/20140627/20140627_thelamplighter1_warmup.jpg$$
+				\@theLampLighter1;;https://twitter.com/theLampLighter1
+	)}
+
+#define	Jul12.html()
+	${gigHeader(
+		with=${literalizeCommas(
+			The Rev. D. Wayne Love & Larry Love (Alabama 3), Curtis E. Johnson & Escalation, Real Live Owls, DJ Porky Israel, DJ Bomber Harris
+		)},
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)}
+	)}
+
+#define	Jul19.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		notes=${literalizeCommas(
+			The Jazz Butcher Quartet
+		)},
+		photosets= /images/20140719/20140719_group1.jpg$$
+			/images/20140719/20140719_group2.jpg$$
+			/images/20140719/20140719_group3.jpg
+	)}
+
+#define	Aug20_2000.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, ${garofalo}, ${stevenew}
+		)},
+		with=${literalizeCommas(
+			Joe Woolley
+		)},
+		photosets= /images/20140820/20140820_guynewton_duo.jpg$$
+			Guy Newton
+		---
+		/images/20140820/20140820_foodiecraftbeerlife.jpg$$
+			FoodieCraftBeerLife;;https://www.instagram.com/foodiecraftbeerlife/
+	)}
+
+
+#define	Aug21.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, ${garofalo}, ${stevenew}
+		)},
+		pat=${literalizeCommas(
+			The Jazz Butcher Conspiracy (Featuring Max Eider on the Electric Guitar)
+			<p>
+			We are hoping to have vinyl copies of "Last of the Gentleman Adventurers" on sale at the Windmill.
+			<p>
+			We also plan to add at least one more show to the August dates with Max.
+			<p>
+			<b>After this gig, ${max} announced his intention to no longer play live.</b>
+		)},
+		photosets= /images/20140821/20140821_gillianbarclay_group1.jpg$$
+			/images/20140821/20140821_gillianbarclay_group2.jpg$$
+			Gillian Barclay
+	---
+			/images/20140821/20140821_philipthain_trio.jpg$$
+			Phillip Thain
+	---
+			/images/20140821/20140821_michaelwhitworth_1.jpg$$
+			/images/20140821/20140821_michaelwhitworth_2.jpg$$
+			/images/20140821/20140821_michaelwhitworth_3.jpg$$
+			/images/20140821/20140821_michaelwhitworth_4.jpg$$
+			Michael Whitworth;;https://www.flickr.com/photos/antisyzygy
+	)}
+
+
+#define	Aug22_2000.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}
+		)},
+		photosets= /images/20140822/20140822_johncannon_pat.jpg$$
+			/images/20140822/20140822_johncannon_drums.jpg$$
+			/images/20140822/20140822_johncannon_bass.jpg$$
+			John Cannon
+		,
+		setlists=
+			/images/20140822/20140822_stevegarofalo_setlist.jpg$$
+			${garofalo}
+	)}
+
+#define	Sep20_2000.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20140920/20140920_brendanquinn_patjoe.jpg$$
+			Brendan Quinn
+	---
+			/images/20140920/20140920_anchor_kerryharris.jpg$$
+			Kerry Harris
+	---
+			/images/20140920/20140920_claireharrison_1.jpg$$
+			/images/20140920/20140920_claireharrison_2.jpg$$
+			Claire Harrison
+	---
+			/images/20140920/20140920_mattsewell_1.jpg$$
+			/images/20140920/20140920_mattsewell_2.jpg$$
+			/images/20140920/20140920_mattsewell_3.jpg$$
+			Matt Sewell
+	---
+			/images/20140920/20140920_michaelwhitworth_1.jpg$$
+			/images/20140920/20140920_michaelwhitworth_2.jpg$$
+			/images/20140920/20140920_michaelwhitworth_3.jpg$$
+			/images/20140920/20140920_michaelwhitworth_4.jpg$$
+			/images/20140920/20140920_michaelwhitworth_5.jpg$$
+			Michael Whitworth;;https://www.flickr.com/photos/antisyzygy
+		,
+	)}
+
+#define	Sep27.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+	)}
+
+#define	Sep28_1900.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		pat=${literalizeCommas(
+			The gig at Come Down and Meet the Folks was just lovely. Beautiful venue in a beautiful, unspoilt corner of
+			London, beautiful people and even beautiful weather. As far as the band is concerned, this has been the
+			best one yet for any number of reasons and we are grateful.
+		)}
+	)}
+
+#define	Oct3.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20141003/20141003_cunningham_1.jpg$$
+			/images/20141003/20141003_cunningham_2.jpg$$
+			/images/20141003/20141003_cunningham_3.jpg$$
+			Sean Michael Cunningham
+	)}
+
+
+#define	Oct4.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		notes=${literalizeCommas(
+			Charity gig for Lovelight Romania Project
+		)},
+		with=${literalizeCommas(
+			Escalation (Curtis E. Johnson), The Very Reverend D. Wayne Love, P-Hex, Scrumpy Bastards
+		)},
+		photosets= /images/20141004/20141004_paulblinkhorn_1.jpg$$
+			/images/20141004/20141004_paulblinkhorn_2.jpg$$
+			/images/20141004/20141004_paulblinkhorn_3.jpg$$
+			Paul Blinkhorn
+	)}
+
+
+#define	Oct24_1800.html()
+	${gigHeader(
+		photosets= /images/20141024/20141024_izuminakatani_riverboatgamblers.jpg;;
+				${literalizeCommas(Here is a lovely picture of me, Bid and Pete Astor, taken by Izumi Nakatani just after we arrived in       
+				Tokyo. We are sitting in a joint called Mister Donut. We think we look like three riverboat gamblers       
+				trying to look as though we had never, ever played poker before, no sir.)}
+				$$
+			Izumi Nakatani
+	---
+			/images/20141024/20141024_JazzButcher_keiko.jpg$$
+			Keiko
+	---
+			/images/20141024/20141024_JazzButcher_kenkinoshita.jpg;;
+			${literalizeCommas("Pat was good today. Short, 40 minutes. I wanted to hear the song of the Jazz Butcher more.")}
+			$$
+			ken kinoshita;;https://twitter.com/prettypopmusic
+	---
+			/images/20141024/20141024_zher1.jpg$$
+			/images/20141024/20141024_zher2.jpg$$
+			/images/20141024/20141024_zher3.jpg$$
+	)}
+
+
+#define	Oct25_1800.html()
+	${gigHeader(
+		photosets= /images/20141025/20141025_yuko_pat.jpg$$
+			Yuko
+	---
+			/images/20141025/20141025_pat1.jpg$$
+			/images/20141025/20141025_pat2.jpg;;
+			${literalizeCommas(
+			As you see, the riverboat gamblers have dropped all pretence of being anything other than crazed           
+			hooligans aflame with the urge to filthy lucre.
+			)}
+			$$
+			/images/20141025/20141025_mental.jpg;;
+			${literalizeCommas(
+			They also appear to have kidnapped Izumi and force-fed her a decent chunk of Stockholm Syndrome Cake.
+			)}
+			$$
+			/images/20141025/20141025_peteandme.jpg;;
+			${literalizeCommas(
+			Me and Pete Astor photographed in the street by a Pete Astor fan     
+			who was literally shaking with excitement, bless him. - I think he thought I was Pete's bodyguard!
+			)}
+			$$
+			/images/20141025/20141025_dinner.jpg$$
+			/images/20141025/20141025_keiko_5.jpg$$
+			/images/20141025/20141025_keiko_6.jpg$$
+			/images/20141025/20141025_keiko_8.jpg;;
+			${literalizeCommas(
+			A couple of shots of Bid from the Monochrome Set having a wee jam with me at the soundcheck at Club 251.
+			For what it's worth, he pays lead rather like a certain Max Eider...                         
+			)}
+			$$
+			Keiko
+	)}
+
+
+#define	Nov1.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+	)}
+
+#define	Nov12_1800.html()
+	${gigHeader(
+		photosets= /images/20141112/20141112_JazzButcher_madrid_radio1.jpg$$
+			/images/20141112/20141112_JazzButcher_madrid_radio2.jpg$$
+			/images/20141112/20141112_JazzButcher_madrid_radio3.jpg$$
+			/images/20141112/20141112_JazzButcher_madrid_radio4.jpg
+		,
+		pat=${literalizeCommas(
+			Live on the air with Julio Ruiz, the "Espanish John Peel". National radio, six in the evening. He          
+			played lots of tunes from Gentleman Adventurers. I played "Melanie Hargreaves' Father's Jaguar" and        
+			"Girlfriend". For the interview I had an interpreter. At one point she failed to translate whatever        
+			Julio said but it involved the words "Kevin Ayers, Lou Reed, Bob Dylan..." I enjoyed that bit, though,     
+			now I come to think about it, he was probably saying "This bloke is not as good as..." 
+		)}
+	)}
+
+
+#define	Nov12_2100.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20141112/20141112_JazzButcher_anidelrio_madrid.jpg$$
+			Ani Del Rio
+		---
+			/images/20141112/20141112_JazzButcher_madrid.jpg$$
+			/images/20141112/20141112_JazzButcher_madrid2.jpg$$
+			/images/20141112/20141112_JazzButcher_madrid_cool.jpg$$
+			/images/20141112/20141112_JazzButcher_stevieg.jpg
+	)}
+
+
+#define	Nov13.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		pat=${literalizeCommas(
+			An utterly splendid evening in all respects, this one. Perhaps our favourite of all the ones that we       
+			have done with the new band...and we've enjoyed an awful lot of them an awful lot.
+		)},
+		photosets= /images/20141113/20141113_hat.jpg$$
+			/images/20141113/20141113_hatbar2.jpg$$
+			/images/20141113/20141113_hatbar7.jpg$$
+			/images/20141113/20141113_hatbar8.jpg$$
+			/images/20141113/20141113_hatbar10.jpg$$
+			/images/20141113/20141113_hatbar11.jpg$$
+			/images/20141113/20141113_hatbar12.jpg$$
+			/images/20141113/20141113_hatbar13.jpg$$
+			/images/20141113/20141113_hatbar15.jpg
+	)}
+
+#define	Nov27_2000.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Half-hour solo performance to open the Labour Club's 30th birthday celebrations. Onstage eight o'clock.
+		)},
+		photosets= /images/20141127/20141127_JazzButcher_LabourClub1.jpg$$
+			/images/20141127/20141127_JazzButcher_LabourClub2.jpg
+	)}
+
+#define	Dec19.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${joe_woolley} (special guest on the electric guitar)
+		)},
+		notes=${literalizeCommas(
+			The Jazz Butcher and his Gentleman Adventurers
+		)},
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

@@ -1,0 +1,17 @@
+#define	index.html
+	${mkHeader(section=SonicTonix)}
+	<img src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_Logo.gif" />
+	${beg_tabs}
+	${begTab(About)}
+	<div class="annotation">
+	</div>
+	${endTab}
+    ${begTab(Live)}
+    ${doGigSearch(f=extras, q=sonic)}
+    ${endTab}
+    ${begTab(Released)}
+    <div class="annotation">
+    </div>
+    ${endTab}
+	${end_tabs}
+	${jbc_footer}

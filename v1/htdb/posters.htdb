@@ -1,0 +1,18 @@
+#define	mkPoster(ts)
+	<a href="${jbc_gigs}/${ts2URI(${ts})}"><img src="${ts2Poster(ts=${ts})}"></a><br/>${substr(0, 10, ${ts})}
+#define	index.html
+	${mkHeader(section=Posters)}
+</style>
+#live	if (sql(p:select datetime from gig where extra like '%%poster%%' order by datetime desc))
+<div class="ml3">
+#live	while (x = p[*]->datetime)
+<div class="ml-panel">
+	<div class="ml-pnl">
+		${mkPoster(${p[${x}]->datetime})}
+	</div>
+</div>
+#live	endwhile
+</div>
+#live	else
+#live	endif
+	${jbc_footer}

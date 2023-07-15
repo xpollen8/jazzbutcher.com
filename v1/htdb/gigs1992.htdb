@@ -1,0 +1,685 @@
+#define	Mar18.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+
+	)}
+
+#define	Apr11.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	Apr18.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	Apr24.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(9)}, ${p(C)}, ${i(C)}, ${mt}, ${DAT}, ${PZM})},
+	who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+	notes=${literalizeCommas( First night out - a little rough)},
+
+	)}
+
+#define	Apr25_1200.html()
+	${gigHeader(
+
+	recording=${literalizeCommas( ${r}, ${g(1)}, ${q(8)}, ${p(B)}, ${i(B)}, ${g_details(20 minutes.)})},
+		who=${literalizeCommas( ${pat} )},
+
+	)}
+
+#define	Apr25_1600.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(7)}, ${p(C)}, ${i(C)}, ${mt}, ${DAT}, ${g_details(g=bad mix after ${angels})})},
+		who=${literalizeCommas( ${pat}, ${pete} )},
+		photosets= /images/19920425/19920425_del_pat.jpg$$
+			/images/19920425/19920425_del_pete.jpg$$
+			${del}
+
+	)}
+
+#define	Apr25_2000.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		photosets= /images/pat_plays.jpg$$
+			${del}
+
+	)}
+
+#define	Apr26_1200.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT}, ${g_details(30 minutes.)})},
+		who=${literalizeCommas( ${pat}, ${dooj} )},
+	notes=${literalizeCommas( in-studio. basic college radio interview.
+	)},
+
+	)}
+
+#define	Apr26_2000.html()
+	${gigHeader(
+
+	cost=$6,
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(9)}, ${p(B)}, ${i(A)}, ${mt}, ${DAT}, ${PZM}, ${g_details(good mix, good bass.)})},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+	notes=${literalizeCommas( sombre, intimate show.  beautiful sounding desk+room mix.
+	)},
+		photosets= /images/19920426/M31-01.jpg;;${dooj}$$
+			/images/19920426/M31-02.jpg$$
+			/images/19920426/M31-03.jpg$$
+			/images/19920426/M31-05.jpg$$
+			/images/19920426/M31-07.jpg$$
+			/images/19920426/M31-08.jpg$$
+			/images/19920426/M31-09.jpg;;${nick}$$
+			/images/19920426/M31-10.jpg;;${pete}$$
+			/images/19920426/M31-11.jpg$$
+			Steve Bingham;;http://www.flickr.com/photos/subpopstar/sets/72157626195728476
+		,
+		tickets=
+			/images/19920426/19920426_ticket.jpg$$
+			${del}
+	)}
+
+#define	Apr28.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(9)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}.)},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+	notes=${literalizeCommas( crowd really into it. nice stereo separation and mix.
+	gets very good after the bad live mix on ${still} and ${tues}.
+	bad mix on ${odd}
+	)},
+
+	)}
+
+#define	Apr29.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(8)}, ${p(C)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}, ${d}, ${g_details(out-of-tune on last songs. one channel mono. one channel live room. clear vocals.)})},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+	notes=${literalizeCommas( decent tape.
+	)},
+
+	)}
+
+#define	Apr30.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May1.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	with=${literalizeCommas(The Eggs)},
+	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		photosets= /images/19920501/19920501_del_crouch.jpg;;${literalizeCommas(${pete})}$$
+			${del}
+			---
+			/images/19920501/19920501_lillyblad_band.jpg$$
+			/images/19920501/19920501_lillyblad_pat.jpg$$
+			/images/19920501/19920501_lillyblad_friends.jpg;;Robert Lanza\, Pat Kelly$$
+			Eric R Lillyblad
+	)}
+
+#define	May2_2030.html()
+	${gigHeader(
+
+		cost=$12,
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		notes=${literalizeCommas( 8:30pm show)},
+		with=${literalizeCommas(Jeff Buckley, Gary Lucas)},
+		photosets= /images/19920502/19920502_genesolomon_tablecloth.jpg;;${literalizeCommas(Pat had decorated the tables in the club)}$$
+			Gene Solomon
+
+	)}
+
+#define	May2_2330.html()
+	${gigHeader(
+
+		cost=$12,
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		notes=${literalizeCommas( 11:30pm show)},
+		with=${literalizeCommas(Jeff Buckley, Gary Lucas)},
+		photosets= /images/19920502/19920502_genesolomon_tablecloth.jpg;;${literalizeCommas(Pat had decorated the tables in the club)}$$
+			Gene Solomon
+
+	)}
+
+#define	May3.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(6)}, ${p(C)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+	notes=${literalizeCommas( dank
+	)},
+		photosets= /images/19920503/19920503_del_techno.jpg;;${literalizeCommas(${pat})}$$
+			${del}
+
+	)}
+
+#define	May5.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(B+)}, ${mt}, ${DAT}, ${PZM}.)},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+	setlists=
+		/images/19920505/19920505_setlist.jpg$$
+	,
+	notes=${literalizeCommas( vocals buried. poor bass.  geetars in yer face. good show, though.
+	)},
+
+	)}
+
+#define	May6_1200.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(1)}0, ${p(A+)}, ${i(A+)}, ${mt}, ${DAT} ${g_details(30 minutes.)})},
+		who=${literalizeCommas( ${pat} )},
+	notes=${literalizeCommas( in-studio
+	Excellent in-studio professional interview for CBC's "Brave New Waves" program.
+	Interviewer: Brent Brambury.
+	VERY RECOMMENDED!
+	)},
+
+	)}
+
+#define	May6_2000.html()
+	${gigHeader(
+
+	cost=$13.50,
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}.)},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		with=${literalizeCommas( Lowest Of The Low )},
+	notes=${literalizeCommas( weak vocals in the otherwise excellent mix. brilliant ${capt}.
+	)},
+
+	)}
+
+#define	May7.html()
+	${gigHeader(
+
+	cost=$8,
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May8.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May9.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(8)}, ${p(A)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}. ${g_details(out-of-phase. stereo geetar mix, excellent drums, tight bass.)})},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+	notes=${literalizeCommas( great show. drunk girl rips down my mics during ${party}.
+	${rainbow} is audience sing-along.
+	)},
+
+	)}
+
+#define	May10.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		photosets= /images/19920510/19920510_del_ohiggins.jpg;;${literalizeCommas(${iain})}$$
+			${del}
+
+	)}
+
+#define	May12.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May13.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}, ${g_details(some microphone overload. buzzing in monitors.)})},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May14.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May15.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(7)}, ${p(A)}, ${i(B)}, ${mt}, ${DAT}, ${PZM},)},
+	${g_details(microphone overload. nice stereo separation and mix. great crowd banter. snow white hair is ad-lib.)}
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May16_1200.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(7)}, ${p(A)}, ${i(A)}, ${mt}, ${DAT}, ${g_details(Core Sound mics)})},
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+	notes=${literalizeCommas( in-store at ${TOWER}
+	)},
+
+	)}
+
+#define	May16_1600.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(B+)}, ${mt}, ${DAT}, ${g_details(recorded slightly hot. 45 minutes.)})},
+		who=${literalizeCommas( ${pat}, ${pete} )},
+	notes=${literalizeCommas( in-studio
+	)},
+
+	)}
+
+#define	May16_2000.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+	recording=${literalizeCommas( ${q(7)}, ${p(A)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}, ${g_details(Core Sound binaural mics distort nearly everywhere..)})},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+	notes=${literalizeCommas( crowd really into it.
+	)},
+
+	)}
+
+#define	May18.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May20.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May21.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May23.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		,
+		tickets=
+			/images/19920523/19920523_ticket.jpg$$
+			Greg Pohl
+
+	)}
+
+#define	May24.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		photosets=
+			/images/19920524/19920524_wem_hmv_01_40162413563_o.jpg$$
+			/images/19920524/19920524_wem_hmv_02_47075010332_o.jpg$$
+			/images/19920524/19920524_wem_hmv_03_40162412283_o.jpg$$
+			/images/19920524/19920524_wem_hmv_04_47075009242_o.jpg$$
+			/images/19920524/19920524_wem_hmv_05_47075008582_o.jpg$$
+			/images/19920524/19920524_wem_hmv_06_40162410483_o.jpg$$
+			/images/19920524/19920524_wem_hmv_07_47075007002_o.jpg$$
+			/images/19920524/19920524_wem_hmv_08_46403739234_o.jpg$$
+			/images/19920524/19920524_wem_hmv_09_47075005742_o.jpg$$
+			/images/19920524/19920524_wem_hmv_10_40162408333_o.jpg$$
+			/images/19920524/19920524_wem_hmv_11_47075005062_o.jpg$$
+			/images/19920524/19920524_wem_hmv_12_47075004432_o.jpg$$
+			/images/19920524/19920524_wem_hmv_13_47075003762_o.jpg$$
+			/images/19920524/19920524_wem_hmv_14_47075003092_o.jpg$$
+			/images/19920524/19920524_wem_hmv_15_47075002442_o.jpg$$
+			/images/19920524/19920524_wem_hmv_16_47075001912_o.jpg$$
+			/images/19920524/19920524_wem_hmv_17_47075001382_o.jpg$$
+			/images/19920524/19920524_wem_hmv_18_47075000702_o.jpg$$
+			/images/19920524/19920524_wem_hmv_19_47075000102_o.jpg$$
+			/images/19920524/19920524_wem_hmv_20_47074999542_o.jpg$$
+			/images/19920524/19920524_wem_hmv_21_47074998982_o.jpg$$
+			/images/19920524/19920524_wem_hmv_22_47074998652_o.jpg$$
+			/images/19920524/19920524_wem_hmv_23_47074998332_o.jpg$$
+			/images/19920524/19920524_wem_hmv_24_47074997992_o.jpg$$
+			/images/19920524/19920524_wem_hmv_25_47074997552_o.jpg$$
+			/images/19920524/19920524_wem_hmv_26_47074997062_o.jpg$$
+			/images/19920524/19920524_wem_hmv_27_47074996432_o.jpg$$
+			/images/19920524/19920524_wem_hmv_28_47074995782_o.jpg$$
+			/images/19920524/19920524_wem_hmv_29_47127345911_o.jpg$$
+			/images/19920524/19920524_wem_hmv_30_47074995212_o.jpg$$
+			/images/19920524/19920524_wem_hmv_31_47127345271_o.jpg$$
+			/images/19920524/19920524_wem_hmv_32_47074994712_o.jpg$$
+			https://www.flickr.com/photos/164658904\@N04/albums/72157706909453154
+
+	)}
+
+#define	May26.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May27.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	May29.html()
+	${gigHeader(
+
+		cost=$10.00,
+		address=22nd NW S NW Market,
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		tickets=
+			/images/19920529/19920529_ticket.jpg$$
+
+	)}
+
+#define	May30.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	Jun1.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		reviews=
+		${literalizeCommas(
+			I thought the set was really good,
+			nice an mellow as promised.  I was very pleased when they played
+			${gf} and ${fall}, and of course, ${angels}, I was disappointed with
+			the club, Slim's, because i would have rather been able to sit
+			back and relax and enjoy the show than have to fight fucked up
+			people with too much energy for how mellow the show was  just
+			to be able to see.
+			<p>
+			Butch was in fine form though.  eg: "Who's mooing at me?  Raise
+			your hand if you're mooing at me.  (As he tunes his Tele)
+			I've got a good idea.  Why don't you fuck off?"  and similarly:
+			(I didn't catch what the person said, but he replied)
+			"Does that mean fuck off and go home?  Because you can, you
+			know, it's a free country." Pete was sweet on ${party}.
+			I was sorta lookin' forward to some more of his own solo's...
+			but i never mind hearing ${max}'s.  The banter was really good with
+			the audience, I guess that's what i'm trying to say.
+			<p>
+			The set was excellent.  A good mix of older and new songs,
+			and interesting e...  encore covers: ${rainbow} and ${skins}.
+			not to mention the treat: Thing per request of one of those
+			people in the front.  "You want me to play Thing in front of
+			people," Pat asked in disbelief.  But then he did.
+		)}$$
+			frendli@cats.UCSC.EDU
+
+	)}
+
+#define	Jun2.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		reviews=
+		${literalizeCommas(
+			The conspiracy seemed rather subdued and it took a
+			couple of songs for Pat to get in the groove. It was interesting
+			watching Dooj transform from shy and laid back to Townsend-style
+			licks. It got the feeling Pete would've been happier playing
+			behind a curtain off stage, and we wouldn't have missed him.
+			He certainly lent nothing to the visual aspect of the show.
+			<p>
+			By the middle of the set, we were down to about 50-60 people
+			in the club, most up front. We were quite enthusiastic, though.
+			Best quote of the evening:
+			"I love you guys. You're small but perfectly formed."
+		)}$$
+			Greg Dykema;;Greg.Dykema@Eng.Sun.COM
+	)}
+
+#define	Jun3.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		pat=${literalizeCommas(<a href="${jbc_letters}/93Aug30/intro.html">${butch} requests help!</a>
+		)},
+
+	)}
+
+#define	Jun5.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick},
+	Charlie Raldonado (Guitar on ${gf}),
+	J'anna Jacobi (Violin on ${rachel}) )},
+		with=${literalizeCommas( The Black Watch )},
+
+	)}
+
+#define	Jun6.html()
+	${gigHeader(
+
+		address=5880 El Cajon Blvd,
+		cost=$6.00,
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		tickets=
+			/images/19920606/19920606_ticket.jpg$$
+
+	)}
+
+#define	Jun7.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		with=Lovingkindness,
+
+	)}
+
+#define	Jun10.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	Jun12.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		reviews=
+		${literalizeCommas(
+			Saw the JBC last night at Club Clearview in Dallas, which is
+			a kind of mini-Medusa's (for Chicago types) except with alcohol
+			and no sailors.  This means that the JBC's sound was fighting
+			against the sound of the two adjacent rooms (both playing disco).
+			Nonetheless, it was a good show.
+			<p>
+			For trivia hounds, it may behoove one to know that Pat runs
+			his Telecaster through a Marshall Guv'nor pedal and a "Stage
+			Tuner" pedal.  ${dooj} is the only one who uses a
+			wireless setup.
+			<p>
+			Shirt prices: $14 for the two white T-shirts, $17 (I think) for the
+			black long-sleeve thing.
+		)}$$
+			John Davison
+
+	)}
+
+#define	Jun13.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		pat=${literalizeCommas(<a href="${jbc_letters}/93Aug30/intro.html">${butch} requests help!</a>)}
+
+	)}
+
+#define	Jun14.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	Jun15.html()
+	${gigHeader(
+
+	recording=${literalizeCommas( ${d}, ${q(6)}, ${p(A)})},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		photosets= /images/19920615/19920615_lis_pat_pete.jpg$$
+			/images/19920615/19920615_lis_pat.jpg$$
+			/images/19920615/19920615_lis_roll.jpg$$
+			Suzanne Lis
+
+	)}
+
+#define	Jun17.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		reviews=
+		${literalizeCommas(
+			in birmingham, after the show, a redneck-looking 40 year-old
+			from the audience came up to pete and drawled "son, you're too
+			talkative, and y'all're too flamboyant up on stage".  if you
+			had seen this tour, you know that pete never moved, never spoke,
+			and stared intently at his frets the whole show.
+		)}$$
+			${del}
+		,
+		photosets= /images/19920617/19920617_lis_pete.jpg$$
+			Suzanne Lis
+	)}
+
+#define	Jun26.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${killer})},
+	recording=${literalizeCommas( ${q(8)}, ${p(A+)}, ${i(A+)}, ${g(1)}, ${DAT}, ${g_details(45 minutes.)})},
+		who=${literalizeCommas( ${eg} - Karel and Otto ${damm} )},
+	notes=${literalizeCommas(
+	<b>hilights</b> :
+	Ils arrivent, Welcome, Is no "Black Eg", Where Is Emil,
+	Is too much this Creation Records, The evil Hass Buoucher,
+	Vodka? We drink?, Emil is pig!, Beautiful folk dances,
+	We make him squeak like the pig, Pussy police,
+	We are wish to make sportif official music,
+	Hovel re-instates the dinosaurs,
+	I am excited about Jesus right now, WHPK promo,
+	Cottie's radio request (my grandmother is also a cake),
+	America you are welcome, Filthy so-called Alex Paterson,
+	Indy 500 time trial/the Heep,
+	It is a beautiful day in the neighbourhood, Win a date!,
+	We are U-B-Q-U-I-T-O-U-S, WHPK promo,
+	Furthermore known as the Hams, What is Phil Collins really like,
+	Can I marry one of you?, You must be all girl,
+	We love to make the modern sound, You know this Joe Bob Briggs,
+	You make only one time mock,
+	It is not easy today to travel the world,
+	Vietnamese twist movement, Extreme East,
+	Multi-media toilet water, We send you back to Russia,
+	Keep it up Canada
+	)},
+
+	)}
+
+#define	Aug28.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		with=${literalizeCommas( Shrike)},
+
+	)}
+
+#define	Sep9.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	Sep15.html()
+	${gigHeader(
+
+	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(B)}, ${g(1)})},
+		who=${literalizeCommas( ${eg} - Karel and Otto ${damm} )},
+		photosets=
+			/images/19920915/19920915_blackeg_cover.jpg$$
+			/images/19920915/19920915_blackeg_inside.jpg$$
+			/images/19920915/19920915_blackeg_a.jpg$$
+			${del}
+
+	)}
+
+#define	Dec22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

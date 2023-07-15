@@ -1,0 +1,16 @@
+#define	index.html
+	${mkHeader(section=DronesClub)}
+	${beg_tabs}
+	${begTab(About)}
+	<div class="annotation">
+	</div>
+	${endTab}
+    ${begTab(Live)}
+    ${doGigSearch(f=extras, q=drones)}
+    ${endTab}
+    ${begTab(Released)}
+    <div class="annotation">
+    </div>
+    ${endTab}
+	${end_tabs}
+	${jbc_footer}

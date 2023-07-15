@@ -1,0 +1,891 @@
+#define	Jan5.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Jan6.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+
+	)}
+
+#define	Jan17.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Jan30.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Jan31.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Feb1.html()
+	${gigHeader(
+
+	cost=&pound;1:50,
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Feb2.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Feb8.html()
+	${gigHeader(
+
+	pat=${literalizeCommas(
+		${dj}'s last show for a while.
+		<p>
+		${pat} plays sax on "Jazz Butcher -V- Count Dracula"
+	)},
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+		photosets= /images/19850208/19850208_jbc.jpg$$
+		,
+	setlists=
+		/images/19850208/19850208_setlist.jpg$$
+		Andrew Brooksbank
+
+	)}
+
+#define	Feb24.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Mar1.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Mar7.html()
+	${gigHeader(
+
+	cost=&pound;4:00,
+	address=King St,
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Fall, Khmer Rouge)},
+		photosets= /images/19850307/19850307_cosmictigger_group.jpg$$
+			cosmictigger
+		---
+		/images/19850307/19850307_lochgirl_pat.jpg$$
+			lochgirl,
+
+	)}
+
+#define	Mar9.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Mar14.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Mar16.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Monochrome Set
+	)},
+
+	)}
+
+#define	Mar22.html()
+	${gigHeader(
+
+	recording=${literalizeCommas( ${w}, ${q(5)}, ${p(C)})},
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Mar23.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Mar24.html()
+	${gigHeader(
+
+	recording=${literalizeCommas(${g(2)}, ${q(5)}, ${i(7)})},
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	)}
+
+#define	Mar26.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Mar27.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Mar31.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Sound
+	)},
+
+	)}
+
+#define	Apr2.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr2_2000.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr3.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr4.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr5.html()
+	${gigHeader(
+
+	address=Via Puccini 20,
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Violent Femmes
+	)},
+	tickets=
+			/images/19850405/19850405_ticket.jpg$$
+			Roberto Grassilli;;http://www.flickr.com/photos/robertograssilli/1443654121
+
+	)}
+
+#define	Apr6.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr7.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr9.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr10.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr11.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr12.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr13.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr14.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr15.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr17.html()
+	${gigHeader(
+
+	recording=${literalizeCommas( ${r}/${d}, ${q(6)}, ${p(B)})},
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	pat=${literalizeCommas(
+		The "official" ${HAM} show of the tour
+	)},
+	setlists=
+		/images/19850417/19850417_setlist.jpg$$
+		Andrew Brooksbank
+
+	)}
+
+#define	Apr19.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Apr23.html()
+	${gigHeader(
+
+	recording=${literalizeCommas(
+	${w}, ${q(6)}, ${p(B)}
+	)},
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	pat=A drunken marathon "secret" gig,
+	notes=A fun show. Human Jungle is not in the recording,
+
+	)}
+
+#define	Apr25.html()
+	${gigHeader(
+
+	recording=${literalizeCommas(
+	${w}, ${q(7)}, ${p(B)}
+	)},
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	pat=${literalizeCommas(
+	The soft songs come out best.  Notable for diseased reading on ${knock}.
+	<p>
+	Recorded by RVZ Radio, Amsterdam on the last night of the Butcher Over Europe Tour.
+	<p>
+	${may} released from this recording.
+	)}
+		,photosets=
+			/images/19850425/19850425_cassette_1.jpg$$
+			/images/19850425/19850425_cassette_2.jpg$$
+			Will Nerini;;;;2021-12-07
+
+	)}
+
+#define	May3.html()
+	${gigHeader(
+
+	recording=${literalizeCommas(
+	${d}, ${q(5)}, ${p(B)}
+	)},
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	May11.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	May23.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	May24.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	May25.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Triffids
+	)},
+
+	)}
+
+#define	May28.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Jun8.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Jun17.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Jun22.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( King
+	)},
+
+	)}
+
+#define	Jun27.html()
+	${gigHeader(
+
+	cost=&pound;3:00,
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( REM, Jonathan Richman, Green On Red, Desmond Dekker,
+	3 Mustaphas 3
+	)},
+
+	)}
+
+#define	Jun28.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Jun28_2000.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Jun29.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Beat Farmers
+	)},
+
+	)}
+
+#define	Jul5.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Jul6.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Jul7.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Jul20.html()
+	${gigHeader(
+
+	recording=${literalizeCommas(${w}, ${q(5)}, ${p(B)}, ${mono})},
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	pat=${literalizeCommas(
+		features ${owen} drumming standing-up with one broken foot
+	)},
+	with=${literalizeCommas( The Go-Betweens
+	)},
+
+	)}
+
+#define	Jul27.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+		photosets= /images/19850727/JbJL001.jpg$$
+			/images/19850727/JbJL003.jpg$$
+			/images/19850727/JbJL004.jpg$$
+			/images/19850727/JbJL005.jpg$$
+			ruse@cableinet.co.uk
+
+	)}
+
+#define	Jul29.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Aug16.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Aug17.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Aug18.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Aug23.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Aug25.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Aug25_2000.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Sep5.html()
+	${gigHeader(
+
+	recording=${literalizeCommas( ${w}, ${q(4)}, ${p(C)})},
+	who=${literalizeCommas( ${pat}, ${max} )},
+
+	)}
+
+#define	Sep7.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	notes=${literalizeCommas(
+	Mentioned in the liner notes for ${cake}.
+	)}
+
+	)}
+
+#define	Sep15.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Sep19.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Sep20.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Sep27.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Oct12.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Oct14.html()
+	${gigHeader(
+
+	recording=${literalizeCommas( ${w}, ${q(5)}, ${p(B)} ${mono} )},
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Rain Parade
+	)},
+
+	)}
+
+#define	Oct17.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Rain Parade
+	)},
+
+	)}
+
+#define	Oct18.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Rain Parade
+	)},
+
+	)}
+
+#define	Oct21.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Rain Parade)},
+
+	)}
+
+#define	Oct24.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( The Rain Parade)},
+
+	)}
+
+#define	Oct26.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Oct26_2000.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( Curiosity Killed The Cat
+	)},
+
+	)}
+
+#define	Oct29.html()
+	${gigHeader(
+
+	cost=&pound;5:00,
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas(
+	REM
+	)},
+	tickets=
+		/images/19851029/19851029_ticket.jpg$$
+		/images/19851029/19851029_poster_2.jpg$$
+	)}
+
+#define	Nov1.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov6.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov7.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov8.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov9.html()
+	${gigHeader(
+
+	recording=${literalizeCommas(${w}, ${q(5)}, ${p(A)} )},
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	pat=${literalizeCommas(Joined by support group The Outskirts at the end
+	)},
+	with=${literalizeCommas( The Outskirts
+	)},
+
+	)}
+
+#define	Nov11.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov13.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov14.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov15.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov16.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov17.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov18.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov19.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov20.html()
+	${gigHeader(
+
+	recording=${literalizeCommas(${d}, ${q(5)}, ${p(A)} )},
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov22.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov23.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( Billy Bragg
+	)},
+
+	)}
+
+#define	Nov28.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov29.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Nov30.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec1.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec2.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec4.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec5.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec7.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	with=${literalizeCommas( Nikki Sudden
+	)},
+
+	)}
+
+#define	Dec10.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec11.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	pat=Very appropriate club name!,
+
+	)}
+
+#define	Dec12.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec13.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec14.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec15.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec17.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	Dec21.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

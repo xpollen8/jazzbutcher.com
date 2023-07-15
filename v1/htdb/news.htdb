@@ -1,0 +1,9 @@
+#include	newsItems
+
+#define	index.html
+	${mkHeader(section=News)}
+	${tag_beg}
+	News Archives
+	${tag_end}
+	${showNews(limit=${newsItem->numResults}, showYear=yes)}
+	${jbc_footer}

@@ -1,0 +1,424 @@
+#define headerLetters19Oct93(title)
+	${mkHeader(section=Letters,
+		passthru=<a href="${jbc_letters}/93Oct19"><b>19Oct93</b></a>,
+		title=${title})}
+
+#define	index.html
+#live	if (getval(page) = index.html)
+	${mkHeader(section=Letters, title=19Oct93)}
+
+	<center>
+	DUCK EVERYBODY!  THE OLD FOOL's COMING IN LINE AGAIN...</b>
+	<p>
+		<a href="${jbc_letters}/93Oct19/intro.html">
+		Introduction</a>
+		<br><a href="${jbc_letters}/93Oct19/eider.html">
+		Where Is Eider Man?</a>
+#		<br><a href="${jbc_letters}/93Oct19/starpoint.html">
+#		Starpoint Studio</a>
+		<br><a href="${jbc_letters}/93Oct19/college.html">
+		College</a>
+		<br><a href="${jbc_letters}/93Oct19/fall.html">
+		JBC -vs- The Fall</a>
+		<br><a href="${jbc_letters}/93Oct19/post_eider.html">
+		More Maximiliana</a>
+		<br><a href="${jbc_letters}/93Oct19/rockuptibles.html">
+		Les Rockuptibles</a>
+		<br><a href="${jbc_letters}/93Oct19/chang.html">
+		President Chang</a>
+		<br><a href="${jbc_letters}/93Oct19/news.html">
+		News</a>
+		<p><img width=351 height=163 alt="[signature]"
+		src="${jbc_images}/19931019/93Oct19_sig.gif">
+	</center>
+
+	${jbc_footer}
+#live	endif
+
+#define	chang.html
+#live	if (getval(page) = chang.html)
+	${headerLetters19Oct93(title=PRESIDENT CHANG)}
+
+	<b>PRESIDENT CHANG</b>
+	<p>
+	<tt>
+	  &gt; Thu, 2 Sep 93<br>
+	  &gt; 6500nag@ucsbuxa.ucsb.edu (Naggi Asmar)<br>
+	  &gt; Truly aweful, and racist as well.  This is where it starts to<br>
+	  &gt; fall apart for me.<br>
+	</tt>
+	<p>
+	Naggi, Naggi, Naggi.  I'm sorry it's got to you this
+	way...but...  ${chang}? Racist? I've spent most of this
+	afternoon wondering what you were thinking of.  Is it
+	the name Chang?  I hope so, coz at least that way I can
+	offer a defence.  You see, "Chang" or "Changa" is currently
+	a London street term for my very least favourite pharmaceutical,
+	cocaine.  Figure that the <i>President Chang</i> character
+	in the tune is, like, King Coke or something, and it
+	will probably all start to make a lot more sense.
+	<p>
+	The Jazz Butcher Conspiracy do not tolerate racism, or
+	those who practice it.  We are, however, almost as intolerant
+	of Political Correctness.
+	<p>
+	Just be glad that we didn't start putting in the football
+	results, like "Chelsea thrashed by Reds"...  Sorry to
+	have offended, Naggi.  It's not you that we seek to offend.
+	I hope it's a misunderstanding.  If not, be specific
+	and we'll have a look at ourselves.
+	<p>
+	As for the music... NO APOLOGIES.  We jammed this fucker
+	live in the studio, and we're all stupidly proud of it.
+	I think ${richard}'s rhythm guitar is fucking wonderful.
+	Hey - I like a lot of different music, you know?  Sorry
+	we missed you in Los Osos.  It was an incredible night,
+	one of my favourite nights out that year.  There was
+	a bush outside the venue with new-born kittens in it,
+	a large fridge and lots of JAEGERMEISTER.
+
+	${jbc_footer}
+#live	endif
+
+#define	college.html
+#live	if (getval(page) = college.html)
+	${headerLetters19Oct93(title=COLLEGE)}
+
+	<b>COLLEGE</b>
+	<p>
+	<tt>
+	&gt; Mon, 21 Jun 1993<br>
+	&gt; Rick.G.Karr@gagme.chi.il.us (Rick G. Karr)<br>
+	&gt; Is it true that Pat, while studying classics at Oxford,<br>
+	&gt; frequently used to busk at sunrise in his college Quad?<br>
+	&gt; And which college was it?
+	</tt>
+	<p>
+	I went to Merton College, Oxford, but it's not true about
+	the busking.  I never do anything at sunrise.
+
+	${jbc_footer}
+#live	endif
+
+#define	eider.html
+#live	if (getval(page) = eider.html)
+	${headerLetters19Oct93(title=EIDER)}
+
+	<b>WHERE IS EIDER MAN?</b>
+	<p>
+	<tt>
+	  &gt; Tue, 23 Mar 1993<br>
+	  &gt; Rick.G.Karr@gagme.chi.il.us (Rick G. Karr)<br>
+	  &gt; What's become of our Maximillian Theodore, where is he now<br>
+	  &gt; and is he still playing?
+	</tt>
+	<p>
+	${max} is, of course, a member of the ongoing ${dj} collective.
+	He's also been working as an editor on TV scripts, including
+	one about an "up and coming indie band", which must have
+	caused him considerable mirth.  I see virtually nothing
+	of him, as he's London based and I tend to spend most
+	of my time here in the Bad Neighborhood, but I saw him
+	briefly at the ${vu} looking as dapper as any man possibly could.
+	Stupidy, the D.J. ensemble currently find themselves without a
+	record deal.  Any constructive suggestions can be passed on via me.
+
+	${jbc_footer}
+#live	endif
+
+#define	fall.html
+#live	if (getval(page) = fall.html)
+	${headerLetters19Oct93(title=THE FALL)}
+
+	<b>JBC -vs-
+	<a href="http://baldrick.cecer.army.mil/~burnett/MDB/Fall,_The/">
+	THE FALL</a></b>
+	<p>
+	<tt>
+	  &gt; Mon, 21 Jun 1993<br>
+	  &gt; Rick.G.Karr@gagme.chi.il.us (Rick G. Karr)<br>
+	  &gt; JBC-Fall coincidences never fail to impress. Start with<br>
+	  &gt; their mutual use of Mr Legras' artwork. Then go back to,<br>
+	  &gt; uhn, 1985, is it? "McGinty thought he could fool the Fall<br>
+	  &gt; with his imitation speeds but he could not know the psychic<br>
+	  &gt; nose...." (--Pat-Trip Dispenser M.E.  Smith, et al)<br>
+	  &gt; Pat? Trip dispenser? Surely he couldn't mean...  ? I asked<br>
+	  &gt; Pat last time he was in town: "Is Pat-Trip Dispenser about<br>
+	  &gt; you?" The cryptic response: "Well, Smith does shout 'McGinty!'<br>
+	  &gt; at the end.  And ${smiff} was released the week<br>
+	  &gt; before." (Or was it the week after? I can't remember.)<br>
+	  &gt; So: What's this "McGinty" stuff? Was this two bands slaggign<br>
+	  &gt; each other off on vinyl? Was Pat bonking Brixie? (After all,<br>
+	  &gt; we all know how much he likes American women.) Were he and<br>
+	  &gt; Smith just havin' fun? There's something here.  I know it.
+	</tt>
+	<p>
+	We put out the single ${smith} in the autumn of 1983.  The
+	Fall's <b>C.R.E.E.P.</b>, with <i>Pat, Trip Dispenser</i>
+	on the b-side, came out about the same time.  Therefore,
+	I feel that it must have been recorded some time BEFORE
+	the Fall could have heard our single.  Our bassist at
+	the time (and on the single) was none other than ${rolo}
+	(${tops}).  Accordingly, the combination of the Fall title
+	and Smith's strangled cries of "McGinty!" on the record
+	did make for rather spooky listening, but I believe it's
+	just a co-incidence.  A little later we received a letter
+	from The Fall, from which we gathered that they dug our
+	record, and later we did quite a few dates supporting
+	them.  No one ever had sex with Brix (honest!), but she
+	did punch Mr Jones in the head once.  Coming off stage
+	at a show in <a href="${jbc_gigs}/1985/Mar7.html"><b>Hammersmith
+	Town Hall</b> in March '85</a>, ${owen} was a touch peeved
+	about the fact that he'd just had to play for forty five
+	minutes with no monitor mix worthy of the name, and,
+	in disgust, KICKED open the door to what he thought was
+	OUR dressing room.  Of course, it wasn't, and THAT is
+	how Owen got a smack in the mush from an astonished and
+	alarmed Brixie.  After she realised what had happened,
+	though, she chilled right out and gave him a BIG KISS.
+	<p>
+	Pascal has always been a Fall fan (well, you DO, don't
+	you?) and was very happy to start working with them a
+	couple of years ago, but I don't actually know how this
+	came to pass.  We're not really in touch with The Fall right now.
+	<p>
+	Incidentally, the last Fall l.p. not only has cover by
+	Pascal, it was also produced by Rex Sergent, who has
+	worked with the JBC as a live sound engineer on tours
+	in the UK and Spain.  He's ALSO the house sound engineer
+	for the Love Kittens.  But they've split up now.
+
+	${jbc_footer}
+#live	endif
+
+#define	intro.html
+#live	if (getval(page) = intro.html)
+	${headerLetters19Oct93(title=Introduction)}
+
+	I'm sending this as fast as I can, for, as you will see,
+	there is news which you might wish to impart to the slavering
+	e-hordes.  As sure as egs is egs, I have also been compelled
+	to come on line here and there to sort out one or two
+	of the more inquisitive and/or misguided participants.  Oh-hoh!
+	<p>
+	I am broke, but excited about <a href="${jbc_gigs}/1993/Oct28.html">
+	the Cale concert</a>, the return of
+	<a href="${jbc_people}/richard_formby.html">Lenin</a> and the
+	man who will be dropping round this afternoon to take
+	&#163;15 off me.  <a href="${jbc_people}/martin_stebbing.html">Martin</a>
+	is here and there is a rave-up in London tomorrow,
+	so I shall be going to that, and, with any luck, shall
+	survive long enough to let you know what's going on at further length soon.
+	<center>
+	<br><img width=351 height=163 alt="[signature]"
+	src="${jbc_images}/19931019/93Oct19_sig.gif">
+	</center>
+
+	${jbc_footer}
+#live	endif
+
+#define	news.html
+#live	if (getval(page) = news.html)
+	${headerLetters19Oct93(title=NEWS)}
+
+	<b>NEWS</b>
+	(I know you want it)
+	<p>
+	I have recorded two tracks with Alan Moore, the comics
+	writer.  One is called <i>Trampling Tokyo</i> with music
+	by ${richard} and words by Alan.  It is a pacific little
+	number about how Godzilla is sick of his job and would
+	like to retire to Monster Island.  The other is called
+	<i>London</i>.  It has music by me and lyrics by Alan
+	and is DEEPLY GRIM but ROCKING.  I'm mixing them on saturday.
+	I don't know what will happen to them.  Alan is also
+	planning sessions with ${dj} and others.
+	<p>
+	I have a solo gig on <a href="${jbc_gigs}/1993/Oct28.html">28th
+	October at <b>The Forum</b></a> (formerly the <b>Town
+	& Country Club</b>) in London.  I'm opening for ${cale}.
+	I'm on at eight o'clock.  I'm very afraid.  Please come
+	and help me out.  Help!
+	<p>
+	STOP PRESS -  ${green} secured for sax and moral support!
+	<p>
+	The JBC (currently standing at Fish, ${dooj}, ${paul} and
+	${richard} as ${lix} has returned to his Real Group, ${strange})
+	have two gigs in October.
+	We will be at <b>The Racehorse</b> in Northampton on
+	<a href="${jbc_gigs}/1993/Oct22.html">Friday 22nd October</a>.
+	Support act is Spittle Rattle, and extraordinary folk-goth-blues
+	outfit.  Then we will be playing at the festival in <b>St.
+	Quentin</b> in Northen France on
+	<a href="${jbc_gigs}/1993/Oct30.html">Saturday 30th October</a>.
+	In November we will be playing dates in
+	<a href="${jbc_gigs}/1993/Nov19.html">Paris</a>,
+	<a href="${jbc_gigs}/1993/Nov13.html">Colmar</a>
+	and elsewhere in France.
+	<p>
+	Touring in central Europe has been put back to January/February.
+	The Germans have, however, now issued ${sweet} as a single,
+	and we await radio reports.
+	<p>
+	I have no money, so if anyone has just won a million
+	dollars or anything, please send large sums of cash for
+	immediate bootleg cassette deluge.
+	<p>
+	Somebody said something about a second <a
+	href="${jbc_gigs}/bootlegs.html#petermurphy">Black Eg</a> album.
+	If you send enough money NOW I may still be in a position
+	to do something about preventing this AWFUL THING from
+	happening.
+	<p>
+	Survive and thrive, take no truck from the passengers,
+	<p>
+	<img width=351 height=163 alt="[signature]"
+	src="${jbc_images}/19931019/93Oct19_sig.gif">
+
+	${jbc_footer}
+#live	endif
+
+#define	post_eider.html
+#live	if (getval(page) = post_eider.html)
+	${headerLetters19Oct93(title=MAXIMILIANA)}
+
+	<b>MORE MAXIMILIANA</b>
+	<p>
+	<tt>
+	  &gt; Wed, 24 Mar 93<br>
+	  &gt; frendli${cats}.UCSC.EDU<br>
+	  &gt; since at least a year ago there was a twin bill on dollar<br>
+	  &gt; night at the local venue (The Catalyst) of The Best Kissers<br>
+	  &gt; in the World along with The Butchers.
+	</tt>
+	<p>
+	Yes, I've wondered about The Best Kissers In The World,
+	too.  Arik, I even saw an advert for that double bill
+	with the Butchers (in San Francisco, I think), which
+	set me wondering harder than ever.  I've not been able
+	to find out anything about either band, however.
+	Perhaps one of the American correspondents has an idea
+	what's going on.
+	<p>
+	<tt>
+	  &gt; Mon, 21 Jun 1993<br>
+	  &gt; Rick.G.Karr@gagme.chi.il.us (Rick G. Karr)<br>
+	  &gt; I held the belief for a long time that<br>
+	  &gt; Distressed Gentlefolk was the zenith of the _original_ JBC (I know<br>
+	  &gt; there were lineup changes in there, but the main strength<br>
+	  &gt; of the band seemed to me to be the interplay between Max and<br>
+	  &gt; Pat). After the split, I was thoroughly impressed by The<br>
+	  &gt; Best Kisser.
+	</tt>
+	<p>
+	Post-<a href="${jbc_people}/max_eider.html">Eider</a>
+	Revisionism?  Whoa!  It's true that over the years since
+	he left the group I've been practising really hard on
+	the guitar, to the point where I've just about reached
+	the general sort of standard that Max displayed back
+	on ${bacon}.  You know, you discover things on a guitar
+	and you sort of think "Oh, YEAAAH - I see what he was
+	up to..."  So now and again (check the intro to ${ben},
+	for example) I do "impressions".
+	<p>
+	But, yeh, obviously that kind of guitar playing was kinda
+	special to the JBC, so if we can still have a bit of
+	that sort of thing on our discs, even though Max isn't
+	there to do it, well, of course that's nice.  (Check ${pete}'s
+	solo on ${girls}, for another example I've just thought of.)
+	And it...well...it hardly suggests that I want to bury
+	or disavow the Eider sound, and I certainly wouldn't
+	slag it off.  So I'd argue that post-Eider Revisionism
+	(or PER, as we call it here at the Submarine Sound Facility)
+	was hardly a factor in the band's scheme of things.  Perhaps
+	it was more a perceived thing among listeners.
+	<p>
+	I shan't expect ever to master Max's jazzy style of playing,
+	though.  His playing became so good that I felt his pop
+	sensibilities were getting kinda buried in the jazz thing.
+	It was leading him to write and play a different, more
+	sophisticated kind of music than I'm comfortable with.
+	I like listening to it, but it's not for me to make.
+	And that, of course, is how we came to stop doing it.
+	But, as a writer, I was never really interested in pursuing
+	too jazzy a line, so it's not suprising that that element
+	of things came to a halt with Max's leaving.  There was
+	a bit of friction/ugliness during Max's last few months
+	in the band, most of it related to stupid things like
+	paying van drivers, and hardly interesting to discuss.
+	Max was smart enough to move before things became impossible
+	and get on with his own thing.  It's only bad luck in
+	business that his record didn't do better.  He was sunk
+	by a crooked Californian Record Company run by a crooked
+	Australian.  The JBC were actually
+	about three hours from signing with the same people at
+	that time.  We never signed, and escaped to ${creat}.
+	It's a lottery, this game.
+	<p>
+	There are no huge great dark lurking things about the
+	Butcher/Eider collaboration.  We did it for fun (often
+	probably having too much fun at the expense of the paying
+	public - I was there) and when it looked like it wasn't
+	going to be fun anymore we stopped.
+
+	${jbc_footer}
+#live	endif
+
+#define	rockuptibles.html
+#live	if (getval(page) = rockuptibles.html)
+	${headerLetters19Oct93(title=LES ROCKUPTIBLES)}
+
+	<b>LES ROCKUPTIBLES</b>
+	<p>
+	<tt>
+	  &gt; Wed, 2 Jun 93<br>
+	  &gt; joe@cetia.fr (Joe Nicholson)<br>
+	  &gt; Here is the translation of the review of the JBC<br>
+	  &gt; Waiting for the love bus album. <a href="${jbc_press}/93inrockuptible.html">Taken from Les Inrockuptibles,</a><br>
+	  &gt; June 1993:
+	</tt>
+	<p>
+	<i>.."where even the guitars end up sounding like a harpsichord.."</i>
+	<p>
+	IT IS A FUCKING HARPSICHORD, YOU GALLIC DOLT!
+	<p>
+	(No, Joe, not you, the Gallic Dolt who wrote it in the
+	first place! Good translation, too.  Allez!  Salut maintenant.)
+
+	${jbc_footer}
+#live	endif
+
+# #define	starpoint.html
+# #live	if (getval(page) = starpoint.html)
+# 	${headerLetters19Oct93(title=STARPOINT STUDIO)}
+# 
+# 	<b>&quot;STARPOINT STUDIO&quot;</b>
+# 	<p>
+# 	<tt>
+# 	  &gt; Mon, 21 Jun 1993<br>
+# 	  &gt; Rick.G.Karr@gagme.chi.il.us (Rick G. Karr)<br>
+# 	  &gt; Does anybody know if "Starpoint Studios in Beautiful<br>
+# 	  &gt; Downtown Clapham" (From the opening cut of ${bacon})<br>
+# 	  &gt; is the same as "ReMaximum" studios there?
+# 	</tt>
+# 	<p>
+# 	In fact, the place was called STARFORCE Studio, and it
+# 	was on St.  John's Hill just by Clapham Junction Station
+# 	("Welcome to Britain's busiest railway station!"), more
+# 	or less next door to the venue now called The Grand.
+# 	It was very very cheap and slightly dodgy, an 8-track.
+# 	It was run by a gentleman called Martin K. Daley, the Prime
+# 	Minister Of Funk.  Other records made there in the early
+# 	eighties include many of the TV
+# 	Personalities' early discs and a solo l.p. by a chap called 
+# 	Jedrech Dmokowski, who - oddly enough - is the brother
+# 	of the sweaty dancer chap in the ${aero}.  Jed does a mean <a
+# 	href="http://isvpc146.isv.uit.no/html/person/m.html#marcbolan">Marc
+# 	Bolan</a> impression, and can be heard singing the chorus
+# 	on the Aeroplanes song <i>Tolerance</i>.  I really don't
+# 	know if Starforce was at any time known as "ReMaximum",
+# 	but i sort of doubt it.
+# 
+# 	${jbc_footer}
+# #live	endif
+

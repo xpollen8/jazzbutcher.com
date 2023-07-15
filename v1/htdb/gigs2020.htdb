@@ -1,0 +1,77 @@
+#define	Jun14.html()
+	${gigHeader(
+		eventweb=https://facebook.com/pat.fish.7,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+	)}
+
+#define	Jul12.html()
+	${gigHeader(
+		eventweb=https://www.facebook.com/pat.fish.7/videos/10214163350756122/,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+	)}
+
+#define	Sep27_2200.html()
+	${gigHeader(
+		eventweb=https://www.facebook.com/rock.music.fan2/videos/1024675418375453,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+	)}
+
+#define	Oct10.html()
+	${gigHeader(
+		eventweb=https://www.youtube.com/c/FrancoisSky,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+	)}
+
+#define	Dec6.html()
+	${gigHeader(
+		eventweb=https://www.facebook.com/pat.fish.7/videos/10215055466938469,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+	)}
+
+#define	Dec31.html()
+	${gigHeader(
+		eventweb=https://www.facebook.com/pat.fish.7/videos/10215197012997032,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		pat=${literalizeCommas(
+		Somebody suggested that we should do a New Year's Eve "broadcast" from Fishy Mansions. My ego rather likes the idea of rescuing you all from Jools Holland and his plinky-plonk totalitarianism, but at the same time I'm aware that scarcity is value, and I don't want to do so many of these things that you all get bored. So I'm putting it out there: if anybody fancies watching an elderly beatnik slowly disintegrating as he boozes and smokes his way through a pack of covers and originals and into the new year, let us know with a "like", or whatever. We'll see how it goes.
+		${g_credit(g=${pat}, u=https://github.com/xpollen8/jazzbutcher.com/issues/url, d=2020-12-17)}
+		)},
+		photosets=
+			/images/20201231/20201231_livestream.jpg$$
+			${del}
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

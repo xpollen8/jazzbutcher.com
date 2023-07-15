@@ -1,0 +1,360 @@
+#define	Jan11.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20150111/20150111_JazzButcher_kyokosato_lolopat.jpg$$
+			Kyoko Sato
+		---
+			/images/20150111/20150111_JazzButcher_stevegarofalo_chop.jpg$$
+			${garofalo}
+		---
+			/images/20150111/20150111_JazzButcher_tomdelrio_jbq.jpg$$
+			Tom del Rio
+	)}
+
+#define	Feb20_2100.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${solo}
+		)},
+		notes=${literalizeCommas(
+			Got a little solo gig on Friday. I'm playing at a party for a photo exhibition by my pal ${indge},       
+			which is happening in a shop called Vinyl Deptford, 4 Tanners Hill, Deptford, London SE8 4PJ this Friday at    
+			9:00 o'clock in the evening. I'm supporting an act called Sheepy, which Alastair tells me is really good.      
+			It's a free show.
+		)}
+	)}
+
+#define	Mar21_2000.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		notes=${literalizeCommas(
+			THE JAZZ BUTCHER AND HIS GENTLEMAN ADVENTURERS 
+		)}
+	)}
+
+#define	Mar27_2000.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		notes=${literalizeCommas(
+			THE JAZZ BUTCHER AND HIS GENTLEMAN ADVENTURERS 
+			<p>
+			Tickets strictly limited in number, so please move quickly to ensure a seat.
+			<p>
+			Licensed Bar.
+			<p>
+			Doors open: 7:00pm
+			<p>
+			Liam Dullaghan onstage around 7:45pm
+			<p>
+			The JBQ onstage around 8:45pm
+			<p>
+			Closing time 10:30pm
+			<p>
+			A night not to be missed.
+		)},
+		photosets= /images/20150327/20150327_gig_2.jpg$$
+			/images/20150327/20150327_gig_6.jpg$$
+			/images/20150327/20150327_gig_from_back.jpg$$
+			/images/20150327/20150327_gig_pat_steve_1.jpg$$
+			/images/20150327/20150327_gig_pat_steve_2.jpg$$
+			/images/20150327/20150327_stage_ready.jpg$$
+			/images/20150327/20150327_theatre.jpg$$
+			${literalizeCommas(${garofalo} and Leighton Bobby Cousins)}
+		---
+			/images/20150327/20150327_theatre_1.jpg$$
+			/images/20150327/20150327_theatre_2_taches.jpg$$
+			/images/20150327/20150327_vulpe_port1.jpg$$
+			/images/20150327/20150327_vulpe_port2.jpg$$
+			/images/20150327/20150327_vulpe_port3.jpg$$
+			Anna Vulpe
+	)}
+
+#define	Apr17_1200.html()
+	${gigHeader(
+		phone=963 48 39 65,
+		who=${literalizeCommas(
+			${pat}, ${simon}
+		)},
+		notes=${literalizeCommas(
+			A little in-store at a local record shop on record store day for me and Simon.
+		)}
+	)}
+
+#define	Apr17_2330.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		notes=${literalizeCommas(
+			THE JAZZ BUTCHER AND HIS GENTLEMAN ADVENTURERS
+		)},
+		pat=${literalizeCommas(
+			Yeh. We played for about two hours. Really, really enjoyed it.
+			All thanks to Juan Martinez Munoz, who organised it all brilliantly.
+		)},
+		reviews=
+			${literalizeCommas(
+				<b>Vencia, 16 Tons, April 17, 2015</b>
+				<blockquote>
+				With the stigma of being a musician considered eccentric, ${pat} has been involved in the project Jazz Butcher from early 80s to be, though, a rarity in that generation, because of the obvious influences of Velvet Underground , Modern Lovers or Dylan . That alleged eccentricity is but a form of escapism from the sound currents that marked those years and Pat slipped gracefully.
+				<p>
+				As restless musician has managed to establish parameters walking over the years, changing his youthful aggression for more sedate countenance, with the use of bass and brass section, drums and brushes in a relaxed tone in his interpretations.
+				<p>
+				His last concert in our country there was celebrating the 25th anniversary of the radio program I present and direct, The 39 sounds, available in www.juanvitoria.com , why was a performance designed to go with a little audience, but expectant and willing to connect with this new format. Some propositions extracted from his latest album, "Last Of The Gentlemen Adventurers" and drops of past performance, the combination of trumpet, effects pedals, acoustic guitar and vocal simplicity that characterizes him, Pat brought us a bluesy "Southen Mark Smith "radically opposed to the original nerve of the subject, although it showed impeccable songs that were treated almost like thirty years ago, if" Partytime ". Francophone high points like "Tomb&eacute; dans les pommes" and surprising versions of "All Along The Watch Tower" dylaniana, fused with "Free Money" Patti Smith or contagious "Gloria" Them, constataban wisdom on stage has this man, hardened thousand nights face disparate gatherings to which he has never feared.
+				<p>
+				Jazz Butcher say that is a misunderstood genius is not an easy remedy; It compared with the likes of Kevin Ayers and Syd Barrett is not a truism; what is clear is that it is a creator with a crushing versatility, moving on all fronts with determination and without hesitation, engaging from the first note and that brings the audience with unusual speed. We all know that missed some songs that were emblematic of those "other 80's", but is not noticed at all, since the chosen compositions drove us along the paths that he had prepared and constataban the brightness in the composition of a character charmingly fucking British pop, with many nuances loureedianos.
+				<p>
+				The next day, to mark the day discs specialty stores worldwide, Pat took his guitar and his beloved trumpet player and a mini concert discs marked in Amsterdam, with some other unexpected adaptation, like "Take The Skinheads Bowling" Camper Van Beethoven.
+				<p>
+				A Pat Fish must love him so his music has meaning, the freedom not to give in to fads or conditions, wasted talent whenever contact with the strings of a guitar or even when he sighs. And sighs of wonder, is what they have geniuses.
+				<p>
+				Juan Vitoria
+				</blockquote>
+			)}$$
+			dirtyrock.info (Spanish);;http://www.dirtyrock.info/2015/04/the-jazz-butcher-pat-fish-en-el-25-aniversario-del-programa-de-radio-los-39-sonidos-en-el-16-toneladas-de-valencia;;2015-04-17,
+		photosets= /images/20150417/20150417_band_by_nite.jpg$$
+				/images/20150417/20150417_clubbed.jpg$$
+				/images/20150417/20150417_door.jpg$$
+				/images/20150417/20150417_steve_g_brilliant.jpg$$
+				/images/20150417/20150417_steve_salud.jpg$$
+				/images/20150417/20150417_beach.jpg$$
+				/images/20150417/20150417_fab.jpg$$
+				/images/20150417/20150417_lunch.jpg$$
+				/images/20150417/20150417_steve_n_simon.jpg$$
+				/images/20150417/20150417_thursday_club_south.jpg$$
+				Leighton Bobby Cousins
+			---
+				/images/20150417/20150417_anniejackson_1.jpg$$
+				/images/20150417/20150417_anniejackson_2.jpg$$
+				/images/20150417/20150417_anniejackson_3.jpg$$
+				Annie Jackson
+			---
+				/images/20150417/20150417_pestano_Pat-Fish-en-el-16-Toneladas-de-Valencia.jpg$$
+				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-16-Toneladas-de-Valencia.jpg$$
+				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas-de-Valencia-2015.jpg$$
+				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas-de-Valencia.jpg$$
+				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas.jpg$$
+				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-Valencia.jpg$$
+				de Juan Carlos Pestano;;http://www.litelestudio.com
+	)}
+
+
+#define	May1.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${solo}
+		)},
+		photosets= /images/20150501/20150501_vulpe_truax_gig.jpg$$
+			Anna Vulpe
+	)}
+
+#define	May9.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${joe_woolley} (electric guitar)
+		)},
+	)}
+
+#define	Jun12.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${joe_woolley} (electric guitar)
+		)},
+		photosets= /images/20150612/20150612_cunningham_gig1.jpg$$
+			/images/20150612/20150612_cunningham_gig2.jpg$$
+			Sean Michael Cunningham
+	)}
+
+#define	Jun19.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20150619/20150619_leighton_gig.jpg$$
+			Leighton Bobby Cousins
+		,posters=/images/20150619/20150619_poster2.jpg$$
+	)}
+
+#define	Jun20.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20150620/20150620_leighton_1.jpg$$
+			/images/20150620/20150620_leighton_2.jpg$$
+			/images/20150620/20150620_leighton_3.jpg$$
+			Leighton Bobby Cousins
+		---
+			/images/20150620/20150620_steve_1.jpg$$
+			${garofalo}
+	)}
+
+#define	Jun21.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20150621/20150621_leighton_gig.jpg$$
+			Leighton Bobby Cousins
+	)}
+
+#define	Jun23.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20150623/20150623_leighton_gig.jpg$$
+			Leighton Bobby Cousins
+	)}
+
+#define	Jun26.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+	)}
+
+#define	Jun27.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets=
+			/images/20150627/20150627_place.jpg$$
+		,
+		setlists=
+			/images/20150627/20150627_vulpe.jpg$$
+			Anne Vulpe
+	)}
+
+#define	Jun28.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20150628/20150628_wallis_pat.jpg$$
+			/images/20150628/20150628_wallis_group.jpg$$
+			Mat Wallis
+		---
+			/images/20150628/20150628_puydebois_1.jpg$$
+			/images/20150628/20150628_puydebois_2.jpg$$
+			/images/20150628/20150628_puydebois_gig.jpg$$
+			Francis Puydebois
+	)}
+
+#define	Aug29.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20150829/20150829_lekeux_one.jpg$$
+			/images/20150829/20150829_lekeux_two.jpg$$
+			Paul Le Keux
+		---
+			/images/20150829/20150829_playing.jpg$$
+			\@DGee3;;https://twitter.com/DGee3
+	)}
+
+#define	Sep22_2000.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${solo}
+		)},
+		photosets= /images/20150922/20150922_nicholls_pat_martin.jpg$$
+			James Nicholls
+		---
+			/images/20150922/20150922_hornsby_intro.jpg$$
+			/images/20150922/20150922_hornsby_preshow.jpg$$
+			/images/20150922/20150922_hornsby_one.jpg$$
+			/images/20150922/20150922_hornsby_two.jpg$$
+			/images/20150922/20150922_hornsby_three.jpg$$
+			Alex Hornsby
+		---
+			/images/20150922/20150922_firerecords_preshow.jpg$$
+			/images/20150922/20150922_firerecords_onstage.jpg$$
+			Fire Records;;https://instagram.com/fire_records/
+		---
+			/images/20150922/20150922_dianaverdu_onstage.jpg$$
+			\@dianaverdu;;https://twitter.com/dianaverdu
+	)}
+
+#define	Oct10_2000.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${solo}
+		)},
+	)}
+
+#define	Dec11_1900.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets=
+		 /images/20151211/20151211_smith_pat.jpg$$
+		 Patrick Smith
+		---
+		 /images/20151211/20151211_heimo_group.jpg$$
+		 /images/20151211/20151211_heimo_steve.jpg;;Steve$$
+		/images/20151211/20151211_reifetshammer_group.jpg$$
+			Heimo Reifetshammer
+		---
+			/images/20151211/20151211_kuenzler_group.jpg$$
+			\@HPKuenzler;;https://twitter.com/HPKuenzler
+	)}
+
+#define	Dec12.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		notes=${literalizeCommas(
+			Tickets are also available at:
+			Hervey Street Barbers,
+			Spiral Archive Records,
+			St. Giles Cheese 
+		)},
+		photosets=
+			/images/20151212/20151212_street_1.jpg$$
+			/images/20151212/20151212_street_2.jpg$$
+			/images/20151212/20151212_street_3.jpg$$
+			/images/20151212/20151212_street_4.jpg$$
+			Michael Street
+	)}
+
+#define	Dec13.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${garofalo}, ${stevenew}, ${simon}
+		)},
+		photosets= /images/20151213/20151213_group.jpg$$
+			Heimo Reifetshammer
+			---
+		 /images/20151213/20151213_gray_group.jpg$$
+		 /images/20151213/20151213_gray_pat.jpg$$
+			/images/20151213/20151213_gray.jpg$$
+			/images/20151213/20151213_gray_simon.jpg;;Simon$$
+			/images/20151213/20151213_gray_steve.jpg;;Steve$$
+			Carolyn Gray
+	)}
+
+#define	Dec26.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${solo}
+		)},
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

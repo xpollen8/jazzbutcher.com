@@ -1,0 +1,12 @@
+#define	index.html
+	${mkHeader(section=MrBlagdon)}
+	${beg_tabs}
+	${begTab(About)}
+	<div class="annotation">
+	Mister Blagdon just manifested one afternoon through a Casio keyboard that I was borrowing. Banged out
+	4 tunes and was never heard of again. Local history had it that Mister Blagdon had been murdered and
+	walled-up inside the house where I used to live in Shutlanger. 
+	</div>
+	${endTab}
+	${end_tabs}
+	${jbc_footer}

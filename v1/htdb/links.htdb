@@ -1,0 +1,210 @@
+#define	index.html
+	${mkHeader(section=Links)}
+
+	<b>${linkExternal(http://www.maxeider.com, Max Eider)}</b>
+	<blockquote>
+	${max}'s website.  sick and fun and completely necessary.
+	<p>
+	${linkExternal(http://www.maxeider.com)}
+	</blockquote>
+
+	<b>${linkExternal(cellartime.info@virgin.net, Cellartime)}</b>
+	<blockquote class="annotation">
+		${pete} has now finished his solo album.
+		The act is called Cellartime and the album is called "As It Went Down".
+		Right now folks can get a copy of the CD by sending Crouchy $10:00. Bargain!
+		Find out exactly how to pull off this feat of impeccable taste by contacting Pete.
+		<p>
+		${linkExternal(cellartime.info@virgin.net)}
+	</blockquote>
+
+	<b>${davidj}</b>
+	<blockquote>
+	The official website for ${davidj}.
+	<p>
+	${linkExternal(http://www.davidjonline.com)}
+	</blockquote>
+
+	<b>${linkExternal(http://www.wolfgangtschegg.de, Wolfgang Tschegg)}</b>
+	<blockquote>
+		Wolfgang has wandered online...
+		<p>
+		Bug him for a copy of any of his records - they are inventive and beautiful.
+	<p>
+	${linkExternal(http://www.wolfgangtschegg.de)}
+	</blockquote>
+
+#	<b>${linkExternal(http://www.tomhall.org.uk, Tom Hall)}</b>
+#	<blockquote class="annotation">
+#		Got this from Di Hall,
+#		${linkExternal(http://www.tomhall.org.uk)}
+#	</blockquote>
+
+	<b>${mercer}</b>
+	<blockquote class="annotation">
+		One of The Butcher's favourite journalists and all-round gentleman adventurers
+		is flogging all manner of priceless pop pictures for the discerning at<p>
+		${linkExternal(http://www.mickmercer.com)}
+	</blockquote>
+
+	<b>${bwatch}</b>
+	<blockquote class="annotation">
+		I first encountered The Black Watch at the end of the eighties in Los
+		Angeles, where they live.
+		I can't recall the connection, though it may have been that very, very,
+		very, very, very bad man O'Higgins,
+		who has been working with them for a long time now. Bless their whimsical
+		souls, they call him "Higgledy".
+		<p>
+		I got to know the band better during my self-imposed LA exile in 1991. John
+		is an astonishingly erudite geezer With A Past, J'Anna is sweet and
+		brilliant, and - for one night in September '91 at least - bassist Roger and
+		I were going to get married. (This is probably O'Higgins' fault. Suffice to
+		say that Roger left the band shortly thereafter and has not been heard from
+		again...)
+		<p>
+		When we played The Roxy in 1992 the Black Watch opened for us, and J'Anna
+		joined the JBC with her violin for a version of Racheland. So now you know
+		the best musician we ever worked with.
+		<p>
+		John and J'Anna were in at the death of NN1's Interwaffle Cafe (home of the
+		club that Curtis and I used to run, "Escalation")
+		on New Year's Eve '98/'99. Despite being assailed by wreathes of smoke and
+		menaced by strange natives on every side, they coped bravely and a good time
+		was had by all.
+		<p>
+		The Black Watch keep producing lovely, melodic records and you can find out
+		more about these - and even download a copy of John's novel.
+	<p>
+	${linkExternal(http://www.theblackwatchmusic.com)}
+	</blockquote>
+
+	<b>${linkExternal(http://www.thepurelove.de/, The Purelove)}</b>
+	<blockquote class="annotation">
+		From Hamburg, Germany -
+		Their work found it's peak in the recordings of
+		their debut album "King Pop" in 1996
+		supported by their friend and idol Pat Fish aka
+		The Jazz Butcher (guitars).
+	<p>
+	${linkExternal(http://www.thepurelove.de/)}
+	</blockquote>
+
+	<b>${linkExternal(http://www.hobbu.com, Desmond Hobbubu)}</b>
+	<blockquote>
+		Hello, I do not understand.  It must be mistake.
+		You have missed my VERY IMPORTANT website.
+	<p>
+	${linkExternal(http://www.hobbu.com)}
+	</blockquote>
+
+	<b>${linkExternal(http://www.lmhr.org.uk, Love Music, Hate Racism)}</b>
+	<blockquote>
+	${linkExternal(http://www.lmhr.org.uk)}
+	</blockquote>
+
+	<b>${linkExternal(http://www.thewarlocks.com, The Warlocks)}</b>
+	<blockquote>
+	Good new rock band alert!
+	<p>
+	The Warlocks are a fine bunch of drone-rockers from Los Angeles. (The NME thinks they come from San
+	Francisco. They do not.)
+	They actually <a href="${jbc_gigs}/1999/Sep9.html">opened for the JBC at the Troubadour on 9/9/99</a>,
+	but we didn't get to see much of them that night.
+	Last week they came to NN1 and Sonic Boom and I went to see them. They have really come on, and
+	anybody who likes Spacemen 3 is going to dig this band. Sonic even joined them for a couple of
+	numbers, doing his feedback thing.
+	<p>
+	The Warlocks are currently touring the USA with Interpol. Tour dates and a whole lot more at:
+	www.thewarlocks.com .
+	UK listeners will have to wait until they come back over here in April.
+	<p>
+	<i>Mon Feb 24 09:12:15 PST 2003</i>
+	<p>
+	${linkExternal(http://www.thewarlocks.com)}
+	</blockquote>
+
+#	<strike>
+#
+#	<b>${tractors}</b>
+#	<blockquote>
+#	The band of ${curt}.
+#	<p>
+#	${linkExternal(http://www.geocities.com/Nashville/Stage/8818/favorite.htm)}
+#	</blockquote>
+#
+#	<b>${linkExternal(http://www.onkel-jose.de, Owen Jones)}</b>
+#	<blockquote>
+#	${owen}'s new website.
+#	<p>
+#	${linkExternal(http://www.onkel-jose.de)}
+#	</blockquote>
+#
+#	<b>${linkExternal(http://www.badapplesmusic.com, Bad Apples)}</b>
+#	<blockquote>
+#	${rolo}'s new band - drums, double bass,
+#		piano and two guitars.
+#	<p>
+#	${linkExternal(http://www.badapplesmusic.com)}
+#	</blockquote>
+#
+#	<b>${linkExternal(http://www.tobermoryweb.co.uk, Tobermory)}</b>
+#	<blockquote class="annotation">
+#		${gab}'s new band, Tobermory, are doing good things, heading out
+#		into Germany every once in a while.
+#	<p>
+#	${linkExternal(http://www.tobermoryweb.co.uk)}
+#	</blockquote>
+#
+#	<b>${linkExternal(http://www.thesummersite.org/, Songs For Summer)}</b>
+#	<blockquote class="annotation">
+#		A young man from
+#		California asked me to contribute to a charity compilation album in memory
+#		<a href="http://mill.net/dumyhead">of his unfortunate girlfriend</a>
+#		who died real young. The money goes to help disadvantaged and abused kids with art projects.
+#		<p>
+#		I contributed a track, recorded on Curtis' computer.
+#		It's a version of "Indian Summer" as written by the Beat Happening, and
+#		recorded by Luna and Spectrum.
+#		The record also features Jonathan Richman, B-52s, Pansy Division, G-Love and
+#		a bunch of others.  At your favourite online store now!
+#	<p>
+#	${linkExternal(http://www.thesummersite.org)}
+#	</blockquote>
+#
+#	<b>${linkExternal(http://www.nmp-online.co.uk, NMP Online)}</b>
+#	<blockquote class="annotation">
+#		The dope on what's going on in the NN1 music scene...and the rest
+#	<p>
+#	${linkExternal(http://www.nmp-online.co.uk)}
+#	</blockquote>
+#
+#	<b>${linkExternal(http://www.willcarruthers.co.uk, Will Curruthers)}</b>
+#	<blockquote class="annotation">
+#		Homepage of the one-time ${space} and Spiritualised bassist with new music to download
+#	<p>
+#	${linkExternal(http://www.willcarruthers.co.uk)}
+#	</blockquote>
+#
+#	<b>${linkExternal(http://www.racehorse.moonfruit.com, The Racehorse)}</b>
+#	<blockquote>
+#	${linkExternal(http://www.racehorse.moonfruit.com)}
+#	</blockquote>
+#
+#	<b>${linkExternal(http://www.slipstreamweb.co.uk, Slipstream)}</b>
+#	<blockquote>
+#	Slipstream have a website going. It is possibly the only place in the world where you can find Wilson
+#	listed next door to the Pet Shop Boys.
+#	<p>
+#	${linkExternal(http://slipstreamweb.co.uk)}
+#	</blockquote>
+#
+#	<b>${linkExternal(http://www.joewoolley.com, Joe Woolley)}</b>
+#	<blockquote>
+#	${joe_woolley}'s new website.
+#	<p>
+#	${linkExternal(http://www.joewoolley.com)}
+#	</blockquote>
+#	</strike>
+
+	${jbc_footer}

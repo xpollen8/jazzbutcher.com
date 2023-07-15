@@ -1,0 +1,1211 @@
+#define headerLetters30Aug93(title)
+	${mkHeader(section=Letters,
+		passthru=<a href="${jbc_letters}/93Aug30"><b>30Aug93</b></a>,
+		title=${title})}
+
+#define	index.html
+#live	if (getval(page) = index.html)
+	${mkHeader(section=Letters, title=30Aug93)}
+
+	<center>
+		<a href="${jbc_letters}/93Aug30/intro.html"> Introduction</a>
+		<br><a href="${jbc_letters}/93Aug30/albums.html"> The Albums</a>
+		<br><a href="${jbc_letters}/93Aug30/band.html"> Where Is Butcher
+		Band?</a>
+		<br><a href="${jbc_letters}/93Aug30/fiddler.html"> ${FIDDLER}
+		gig, London</a>
+		<br><a href="${jbc_letters}/93Aug30/love.html"> Waiting For
+		The Love Bus</a>
+		<br><a href="${jbc_letters}/93Aug30/messages.html"> Individual
+		Messages</a>
+		<br><a href="${jbc_letters}/93Aug30/tour.html"> 1993 European
+		Tour Report</a>
+		<p><img width=243 height=111 alt="[signature]"
+		src="${jbc_images}/19930830/93Aug30_sig.gif">
+	</center>
+
+	${jbc_footer}
+#live	endif
+
+#define	albums.html
+#live	if (getval(page) = albums.html)
+	${headerLetters30Aug93(title=The Albums)}
+
+	<div class="annotation">
+	<b>THE CHURCH OF LOVE IS A BROAD CHURCH:
+	Varying impressions on different JBC discs</b>
+	<p>
+	This is in no way a "defence" of any JBC product.  I
+	don't feel that I need to defend the stuff.  There are
+	bits and pieces that make me cringe now and again, but
+	I'm quite happy to say so.  For the most part I like
+	my stuff, which is why I made it.  I don't understand
+	musicians who don't listen to their stuff.  If they don't
+	think it's worth playing, why did they spend all those
+	thousands of bucks on making rubbish?  No.  Once JBC
+	stuff is out there in the commercial arena then it belongs
+	to the people who've paid for it, and they are (as I
+	understand it) free to think what they like of our efforts.
+	So I'm not after convincing anybody of anything, I'm
+	just coming on line with a few random observations.  As
+	soon as I've rolled This...
+	</div>
+	<p>
+	<a name="bath"></a>
+	${bacon}
+	<blockquote>
+		<a href="${jbc_images}/bath.jpg" style="float: left; margin-right: 10px;">
+			<img src="${jbc_images}/bath_250.jpg"></a>
+		The one nobody ever talks about, even though a surprising
+		number of you seem to have it.  Recorded for just &#163;300
+		(Kevin Shields please take note...), it's really just
+		the sound of a few mates failing to take seriously the
+		fact they they've got an l.p. to make.  ${gloop} and the
+		unfinished ${engine} make me squirm a fair bit, but ${zombie},
+		${gold} and ${party} have all been good friends.  It seems
+		VERY early eighties now, but you must remember that there
+		was a LOT of crap for us to clear out of the way in those days.
+	</blockquote>
+	<br clear=all><br>
+	<a name="scandal"></a>
+	${scandal}
+	<blockquote>
+		<a href="${jbc_images}/scandal_front.jpg" style="float: left; margin-right: 10px;">
+			<img src="${jbc_images}/scandal_front_250.jpg"></a>
+		The Albatross.  Since the recording of ${bacon} (almost
+		two years before this one) we had become a "proper"
+		group.  For all that, we still pooled our skills in
+		the studio, and this isn't a bad two weeks' work.  I
+		think that, lyrically, a lot of the songs are a bit
+		trite and immature, and our inability to take ourselves
+		seriously is much in evidence.  A record, I feel, of
+		its time.  We were young(ish) and cocky and I think
+		it shows.  I still haven't learned to sing on this one,
+		which bugs me too.  Still, it was cheap and cheerful,
+		and it helped us to meet an awful lot of people.  I
+		was told, incidentally, that if we released this on
+		Glass we could expect a top global sale of 2,000.  We
+		released it on Glass and sold about 25,000 copies.
+	</blockquote>
+	<br clear=all><br>
+	<a name="sex"></a>
+	${sex}
+	<blockquote>
+		<a href="${jbc_images}/releases/sex_front.jpg" style="float: left; margin-right: 10px;">
+			<img src="${jbc_images}/releases/sex_front_250.jpg"></a>
+		One day's rehearsal in ${hask}'s living room, five days'
+		recording and two days' mixing was all it took for us
+		to make my favourite of the Glass records.  Now that
+		the band had done a few dates with decent p.a. systems
+		and stuff, I was beginning to have some sort of a bead
+		on this singing business.  Also, having exhausted the
+		initial stick of JB songs (several of the ${scandal} tunes
+		had actually been written at the time of ${bacon}, but
+		were rejected back then as needing further development),
+		I was obliged for the first time to write about my life
+		as it was at the time, which was very different to the
+		way I lived when writing the first two records.  Now
+		I was "in a band", had left my day job, had been to
+		Europe... I even started to write songs that were not
+		self-consciously deferential and mocking.  Hence, I
+		guess, the arrival of the first recorded "big ballad"
+		in ${rumour}, where ${dj}'s harmonies at the end STILL give
+		me the shivers.  I think that now we had started to
+		learn about actually creating recordings rather than
+		just recording the sound of a bunch of pals fooling
+		around, and the disc does have a nice, unified feel.
+		Credit ${rivers} for his high-speed mixing job.  When
+		I think about it, this l.p. doesn't really have any
+		"great" tunes, in the sense of numbers that people request
+		or whatever, but it has a nice totality, a good, atmospheric
+		vibe.  This one I'd actually defend at length if I had
+		to.
+	</blockquote>
+	<br clear=all><br>
+	<a name="dist"></a>
+	${dist}
+	<blockquote>
+		<a href="${jbc_images}/gentle.jpg" style="float: left; margin-right: 10px;">
+			<img src="${jbc_images}/gentle_250.jpg"></a>
+		A Sri Lankan gentleman once sat down beside me in a
+		bar in Bremen, asked me to sign his copy of this record,
+		and then, even as I wrote messages of good luck and global
+		harmony, announced sternly "This is a very...bad record."
+		He was a berk, but he had a point.  Alan McGee and a
+		number of people in France, America and The Music Business
+		have called this one a "classic album".  People do,
+		of course, say much the same about <b>Dark Side Of The
+		Moon</b>.  Can you hear my flesh creeping?  Germans,
+		on the other hand, despise it almost universally.
+		We were deeply confused young men when we made this
+		record.  ${max}, ${owen} and I had all been drinking dangerously
+		for over a year now, and the poor bass player who replaced
+		${dj} was finding it almost impossible to keep up with
+		our twisted thought patterns.  Do you like my bass playing?
+		That's me on ${shame}, ${sa} and a couple of others.  By
+		now, effectively, Max and I had totally lost any sense
+		of quality control on my writing.  Tragic and sincere
+		or glib and ludicrous, we recorded EVERYTHING.  Sent
+		in to make demos for this l.p.  Max and I came out with
+		${conspir}, where we squandered a couple of great ideas
+		that this l.p. so badly needs.  ${rivers}, you'll notice,
+		has bought a new reverb unit, a Lexicon, in fact.  He's
+		also taken to recording digitally.  The ensuing absurd
+		gloss, matched with an absence of native intelligence
+		around the bottom end, gives a lot of the songs a sound
+		that I dislike.  ON THE OTHER HAND, there's ${angels},
+		there's ${fall}, there's ${world}.  Still, in 1986 the best
+		plan would be to but the <a href="${jbc_albums}/angels.html"><b>12"
+		single</b></a> and go see the band in concert.
+		Generally, we had it down in concert.  In just about
+		every other department, however, we were coming to bits,
+		individually and collectively, and to me this record
+		actually shows the morbid state of things at the time.
+		Not, of course, that we really noticed any of this until
+		months later, when, confronted by the realitied of having
+		been on an accidental two-year intercontinental binge,
+		we retired damaged, leaving the group in pieces.  Oh,
+		and another thing about <b>"Gentlefolk"</b>...  it's
+		pretentious too.
+	</blockquote>
+	<br clear=all><br>
+	<a name="fishco"></a>
+	${fishco}
+	<blockquote>
+		<a href="${jbc_images}/fishco.jpg" style="float: left; margin-right: 10px;">
+			<img src="${jbc_images}/fishco_250.jpg"></a>
+	<p>
+		Having ended up on ${creat}, which I took as a bit of
+		a validation, I was keen to get as far away from all
+		those "w" words that had followed my group around, and
+		to make it as clear as I could that this was a rock
+		& roll thing, not some "eccentricity".  I had my shades
+		and I had my fringed suede jacket and I had the ${weather}
+		rhythm section.  In the last flickering days before
+		Marriage and Acid House would change the world ${kizzy}
+		and I hung out in his dealer's flat in Islington and
+		WALKED to the studio in Waterloo everyday.  The sessions
+		were chaotic and funny.  At one stage Kizzy arrived
+		56 hours late for a mix, having been held by the Police
+		under the Prevention of Terrorism Act.
+		<a href="${jbc_people}/david_whittemore.html">David</a> has
+		this down right as a sort of self-justificatory thing.
+		What disappoints me is that it came out sounding so
+		SMOOTH and tidy.  I'd hoped it would be more harsh and
+		mad.  I guess perhaps it's the saxes, which, I recall,
+		enraged some reviewers.  ${sonic} does good things on
+		${sue} (that's 4 of them big ballads at least, now), that
+		was more the idea.  Still, not to slag ${iain} who began
+		a lengthy association with the JBC on this recording.
+		This sold rather well, which was pleasing, and seems
+		widely liked.  I can't fuck with that, but I had hoped
+		that it would be more a "change of direction" than it
+		was.  But I like <b>Fishcotheque</b>; I wish there more
+		records as good as it.
+	</blockquote>
+	<br clear=all><br>
+	<a name="planet"></a>
+	${planet}
+	<blockquote>
+		<a href="${jbc_images}/planet.jpg" style="float: left; margin-right: 10px;">
+			<img src="${jbc_images}/planet_250.jpg"></a>
+	<p>
+		This record gives me the pip.  I think that the blame
+		can be laid at my door and on the neatly-polished doorstep
+		of ${rivers}.  This was a real "band" album by a touring
+		unit which had become really quite ferocious.  In choosing
+		to work with John again we felt that we were sufficiently
+		noisy and fierce to cope with any over-tidy production
+		strokes he might pull.  "Clean *that* up, then, ya bastard"
+		was out declared policy in the group.  Of course, we
+		under-rated him.  My share of the blame lies, I feel,
+		in the rather hectoring tone of the lyrics.  Early 1989
+		was, indeed a strange and desperate time; London, our
+		base, really was beginning to seize up and malfunction
+		after all that triumphalist Tory looting that had been
+		going on.  We listened to a lot of hip-hop and soul
+		music at the time, and I think that we considered ourselves
+		sufficiently HARD to take the whole fucker on in an
+		l.p.  Well, that was our idea - a surrealist broadside
+		on EVERYTHING.  The "We're-mad-as-hell-and-we're-not-going-
+		to-take-it-any-more" album.  Also, I wanted to start
+		to mess with the pretty traditional song structures
+		we were using.  We were all aware that music was changing,
+		and, more out of interest than out of any spurious "career"
+		concern, we wanted to see where we could take our pop
+		songs using things like breakdowns, the mixing in of
+		"found" voices (which we first heard NOT from Steinski
+		or the Bryne/${eno} collaboration, but from John Stapleton,
+		a DJ who scratched things in at early ${aero} concerts),
+		radical and unexpected changes of sounds - a series
+		of sonic events rather than plain old verse/chorus structure.
+		I probably did too much pre-production on my (new) 4-track
+		at home, and the whole thing sounds a bit stillborn.
+		Possibly with a more "clued-in" producer and a bit more
+		self-discipline we could have come up with something
+		like what we were looking for.  Instead, with the exception
+		of ${good} (another one - Hi, Stuart) and maybe ${lineo},
+		it all comes out sounding kinda..."wrong".  A curious
+		record.  If you actually put it on and play it then
+		it's pretty smart; it's just that I never really seem
+		to WANT to put it on.  A record out of time and place.
+		A bit of a missed opportunity, I guess.
+	</blockquote>
+	<br clear=all><br>
+	<a name="cult"></a>
+	${cult}
+	<blockquote>
+		<a href="${jbc_images}/cult.jpg" style="float: left; margin-right: 10px;">
+		<img src="${jbc_images}/cult_250.jpg"></a>
+	<p>
+		Well, if things seemed weird back in February 1989,
+		by January 1990, when we made this baby, the Weird were
+		going shopping on bikes.  With ${kizzy} sick and unable
+		to tour, ${richard} had joined and, during a long US/Canadian
+		tour has turned us all on to Can
+		and a lot of other weird things.  In a farmhouse in
+		the dead of winter, in personal circumstances too bizarre
+		and complex to relate, we set about making our "commercial
+		suicide" album.  When we delivered it to ${creat} they
+		did their nuts and said it was the best thing we'd done
+		in years.  It took me a while to figure it out, but
+		then I agreed with them.  For the first time, I felt,
+		we had made an album that really sounded like us.  In
+		retrospect, one or two of the tunes are a touch throwaway,
+		and EVERYBODY hates poor ol' ${bait}, but you get ${go},
+		${drugs} AND ${sis} AND ${odd} all on one record! Goodness!
+		This record does have personality.  It also has ${lix}
+		on guitar, the start of another beautiful friendship.
+		One of my favourites, this.
+	</blockquote>
+	<br clear=all><br>
+	<a name="blue"></a>
+	${blue}
+	<blockquote>
+		<a href="${jbc_images}/releases/blue_front.jpg" style="float: left; margin-right: 10px;">
+			<img src="${jbc_images}/releases/blue_front_250.jpg"></a>
+	<p>
+		Four desperate men, all too desperate to notice how
+		desperate the others are, gather in a farmhouse with
+		a queue of lead guitarists stretching round the block.
+		For all the pain and crap from which this record was
+		made, the actual sessions were a gigantic and wonderful
+		party.  The songs are all long because we (${paul}, ${joea},
+		${lix} & I) just enjoyed the playing on the "to-be-faded"
+		bits so much that it seemed a shame not to let everyone
+		hear them.  This was warmly received by The Outside
+		World, less popular among those who counted themselves
+		JBC afficionados.  Well, I couldn't have written it
+		any other way, and I love that everyone plays on it,
+		so I'm not in much of a position to know why you don't
+		care for it.  All I can say is that I'm still well pleased
+		with it as a recording, and as a piece of writing about
+		a tough subject.  I mean, *I* hate "divorce rock" too.
+		It wuz a tough assignment.  Go on, give the fucker another
+		listen.  The songs may not make you laugh, but the playing
+		ought to give you a few thrills.  And, after all, I'm
+		not in a band to make money, or be a "professional entertainer"
+		- I'm in a band because I like to play very loud electric
+		guitar.  This IS the sound of me having fun, and getting
+		me to do that in those dark days of mid-1991 was no
+		small job.  (Can anyone tell me how I *knew* that the
+		French were going to like ${girls}?)
+	</blockquote>
+	<br clear=all><br>
+	<a name="bus"></a>
+	${bus}
+	<blockquote>
+		<a href="${jbc_images}/lovebus.jpg" style="float: left; margin-right: 10px;">
+			<img src="${jbc_images}/lovebus_250.jpg"></a>
+	<p>
+		Too early for me to say, but there's a clean, simple
+		sound to a lot of this that ${blue} detractors might
+		appreciate.  It's not a deliberate change of musical
+		policy, just a gradual personal evolution thing.  I'm
+		ten years older now than when I made ${bacon}, and right
+		now, after all that morbid stuff, it only really feels
+		like about three.  There's rockin' shit and there's
+		a big ballad or two and some weird little pop songs
+		and a nice family sing-along about penguins.  I hope
+		you like it.
+	</blockquote>
+	<br clear=all><br>
+	<a name="hamburg"></a>
+	${hamburg}
+	<blockquote>
+		<a href="${jbc_images}/releases/hamburg_front.jpg" style="float: left; margin-right: 10px;">
+			<img src="${jbc_images}/releases/hamburg_front_250.jpg"></a>
+		We were all disappointed at the way this came out.  The
+		concert was great, but logistics prevented us from making
+		anything much more than a glorified bootleg.  Still,
+		live albums are best as souvenirs anyway, so I guess
+		some people regard it fondly.  Lots of entertaining
+		photos to look at anyway...
+	</blockquote>
+	<br clear=all><br>
+	<a name="family"></a>
+	${family}
+	<blockquote>
+		<a href="${jbc_images}/western.jpg" style="float: left; margin-right: 10px;">
+			<img src="${jbc_images}/western_250.jpg"></a>
+		Yes, I believe something horrible DID happen to the
+		tapes somewhere.  The first time that ${richard} and I
+		played this CD we sat there laughing.  Still, Bootleg
+		No.2 is easier to get used to than the first one, so
+		again, it's a souvenir.  After all, if you were there,
+		you can remember what it really sounded like.  For loonie
+		completists only, for sure, though, if you listen through
+		the muck, you'll see that we did our bit.
+	</blockquote>
+	<br clear=all>
+
+	${jbc_footer}
+#live	endif
+
+#define	band.html
+#live	if (getval(page) = band.html)
+	${headerLetters30Aug93(title=WHERE IS BUTCHER BAND?)}
+
+	<center>
+	<b>WHERE IS BUTCHER BAND?</b>
+	<br><b>Soap opera details and untruths for those who
+	insist upon them.</b>
+	</center>
+	<hr>
+	<a name="pete">
+	<b>${pete}</b></a> has disappeared and, to everybody's surprise,
+	bitterly from the group.  We think he was worried about
+	his job.  We think it's a shame, he's an extremely good
+	player.  He did a lot to make the morose stuff sound
+	workable to my ears.  With his departure, things have
+	already started to get a lot less morose, but it's rockin',
+	i guess.  Watch for Pete on short haul European British
+	Airline flights.  Like he says, that Richard Branson's
+	a wanker anyway.  What's wrong with you that you have
+	to drink like that?
+	<p>
+	<a name="nick">
+	<b>${nick}</b></a> aka Nicky Le Singe(*) has taken up residence
+	in Toronto, where he is married and blissful.  It's the
+	plan that he should play on the European and U.S. tours
+	that should begin around September.
+	<p>
+	<a name="dooj">
+	<b>${dooj}</b></a> is in London, as always.  He took his Easter
+	holidays in Salzburg, and who can blame him?  He remains,
+	in the core line-up as well.
+	<p>
+	<a name="lix">
+	<b>${lix}</b></a> has his band ${strange}, also
+	involving <a name="julian"> <b>${jules}</b></a> (guitarist
+	JBC US90), <b>${joe}</b> (bass, ex-${levit}, JBC ${blue} recordings).
+	John Langley (drums, ex ${aero} and an insane singer called
+	variously Pat, Pad and Patrick.  Food Records recording
+	artistes.  Dark and a bit like 
+	Television.  If the JBC get any summer dates in the
+	UK, he may well be involved.  Core Mafioso.
+	<p>
+	<a name="paul">
+	<b>${paul}</b></a> remains the drummer with ${aero}.  Has
+	been recording (and writing) some 20 tunes with them.
+	For two days in June the BA recording line-up was the
+	same as that for ${blue} with the addition of ${rodney} Alex
+	and Gerard Langley, i.e. Paul, Lix, Joe Allen and me.
+	We did about half a dozen things which may or may not
+	come out later.  Paul also did a tour of France playing with
+	${astor} during which he succeeded in macing HIMSELF.
+	Again, if dates in the UK arise before Nick has been
+	re-imported for the European tour Paul will most likely
+	be playing the drums.
+	<p>
+	<a name="joe">
+	<b>${joea}</b></a> well, you can pretty much figure out
+	what Joe has been doing by seeing what Lix and Paul have
+	been up to.  I love Joe.  He is the best bass player
+	ever to rob helpless off-licenses for cider.
+	<p>
+	<a name="alex">
+	<b>${green}</b></a> appeared from nowhere over Easter.
+	He's living in Cambridge, playing some Jazz and doing
+	a music theory course.  As his owner, Jasmine, runs a
+	club he is also in a position to say that he considers
+	the Stereo
+	MCs to be very impressive, but all style and no real
+	content, whereas the Disposable
+	Heroes Of Hiphoprisy are, as far as he's concerned,
+	high on content but low on form and presentation.  Right.
+	Alex has done some recording recently with someone we
+	know, but I can't remember who it is.  Damn.
+	<p>
+	<a name="richard">
+	<b>${richard}</b></a> produced ${bus} and plays guitar on
+	it, alongside me and ${pete}.  I had a vague dream of putting
+	him and Pete onstage together, but that can't really
+	happen now.  Still, I've seen Richard and Lix playing
+	together (at the sessions for ${cult} and ${blue}), and the
+	way things are going these days I might yet see it again.
+	Richard has been in the studio all year, working with
+	his flatmate Mike Stout, and occasionally tinkering with
+	the tapes that he and I have made.  We haven't done any
+	serious work on these for months, but he's got people
+	smashing his house to bits around him ("renovation")
+	so he can't really entertain just now.  I'd like to see
+	him do more dates with the JBC, and I think he will.
+	<p>
+	<a name="laurence">
+	<b>${larry}</b></a> is still in ${levit}, with all the lunacy
+	that that entails.
+	<p>
+	<a name="david">
+	<b>${dj}</b></a> has just returned from a lengthy personal
+	odyssey around the USA.  He is looking for some new business
+	deals, writing and recording and he took me to see the
+	${vu} and when he dies I want to be buried right there
+	in the same coffin with him, for they were wonderful
+	beyond expression.
+	<p>
+	<a name="max">
+	<b>${max}</b></a> is working on scripts for television
+	shows.  I saw him for about a minute at the Velvets show
+	and he looked unbelievably dapper in a white linen jacket
+	and the best pair of sunglasses ever.  Hey - it was that
+	kind of evening.
+	<p>
+	<a name="owen">
+	<b>${owen}</b></a> still lives in Hamburg, and this very
+	fact shows that he is by far the most intelligent person
+	ever to play in the JBC.  No, I mean, we've had some
+	smart cookies and everything, but really.  He is expected
+	to show his well chiselled celtic features over here
+	some time soon, says <a href="${jbc_people}/david_j.html">David</a>.
+	<p>
+	I've been recording with ${sonic}.  We did a cover of <i>Indian
+	Summer</i> by Beat Happening-via-Dean Wareham, which
+	is on an e.p. that is just being released.  I've also
+	played on about eight ${aero} studio recordings, some of
+	which will appear on some kind of new l.p. some time
+	soon.  The sessions were splendid, very relaxed, but
+	I don't think any of the players had a clue as to what
+	was going on with the music they were recording.  We'll see.
+	I'm playing guitar for the Aeroplanes at some gigs in
+	Portugal this summer.
+	<p>
+	(*) From Joe Foster's school French book: <b>Ou est Nicky
+	Le Singe?</b> <i>Nicky Le Singe est dans l'arbre.</i>
+
+	${jbc_footer}
+#live	endif
+
+#define	fiddler.html
+#live	if (getval(page) = fiddler.html)
+	${headerLetters30Aug93(title=Mean Fiddler)}
+
+	<center>
+	<b>THAT MEAN <a href="${jbc_gigs}/1993/May15.html">FIDDLER
+	SET</a> LIST IN FULL...</b>
+	</center>
+	<hr>
+	<dl>
+	<dd>${sue} (<i>Susie</i>, you fool, it was <i>Susie</i>!
+	Did I make THAT much of a mess of it?)</dd>
+	<dd>${sweet} (Yes, from the new l.p.)</dd>
+	<dd>${davis} (Yes again)</dd>
+	<dd>${go}</dd>
+	<dd><i>September Gurls</i> (Alex Chilton)</dd>
+	<dd><i>Waiting For The Love Bus</i> (A one-off.  It went
+	through the mincer and now it's a ${aero} album track or
+	something.)</dd>
+	<dd>${whad} (New l.p again.  Only a BIT morose)</dd>
+	<dd>${sis} (Yeeeaaaaah)</dd>
+	<dd>${odd}</dd>
+	<dd>${ben} (New lp stuff.  A ballad about being eaten by
+	lions; "It's a family affair")</dd>
+	<dd>${ghost} (Yes, new lp again.  They really went for
+	this one, you know.  It was scary.)</dd>
+	<dd>${drugs} (Now they're rockin')</dd>
+	<dd>${angels} (Ha ha ha ha ha!  You Fools!  HA HA HA!!
+	HAHAHAHAHAHAHAHAHAHA!!!!!)</dd>
+	<dd><i>Goodnight Irene</i> (By 
+	Leadbelly, as covered by The Great 
+	Mo Tucker. Cf. Paris 15.2.93)</dd>
+	</dl>
+	<p>
+	They were making a terrible fuss and I knew they all
+	really wanted me to grin and sing about getting pissed
+	and that, and been SO patient, so I did
+	<dl>
+	<dd>${hour}</dd>
+	and
+	<dd><i>Skinheads</i></dd>
+	</dl>
+	<p>
+	Then I fucked off but they kept on making an impressive
+	old din, so eventually, not to seem cocky or anything,
+	I went and got up there again.  Some bloke shouts out
+	for ${chick} and I think "Uh-oh" so I ask him if he means
+	that load of old bollocks about chickens in the bathroom,
+	chickens on a stick sorta thing and he goes "NAAAH, you
+	PILLOCK! ${chick}, the song." and I go "Wot? That miserable
+	fucker?" and he goes "Yeh." and so I think "Fuckin' right
+	John" and I play the fucker.  Rather well, i thought.
+	I hit the A-minor at the end, and I thought "This is
+	great, this, I want to do another rockin' number, one
+	that starts on A-minor, and I want to do the fucker RIGHT
+	NOW, but the only tune I could think of in that nanosecond
+	was ${walk}, so I thought "You can't play that, you haven't
+	played that fucker in four years, you won't remember
+	it and you'll fuck up the words and it'll be slow and
+	crap and you'll end up stabbing the whole lovely evening
+	in the back of the legs", but, of course, it was too
+	late by then to anything but start, so I said to myself
+	Fuck It and I gave it some, and I don't think I played
+	any wrong chords or notes, and I resisted the temptation
+	to whistle in the middle-8 (which sounds like a good
+	idea, but isn't because the mic always make your whistling
+	sound like that) and I made it to the end and they clapped, phew!
+	<p>
+	What made me do that?
+	<p>
+	Yeh, so
+	<p>
+	<dl>
+	<dd>${chick}</dd>
+	<dd>${walk}</dd>
+	</dl>
+
+	${jbc_footer}
+#live	endif
+
+#define	intro.html
+#live	if (getval(page) = intro.html)
+	${headerLetters30Aug93(title=Introduction)}
+
+	<center>
+	A scan of this letter is <a href="${jbc_images}/advert.gif">here</a>..
+	</center>
+	<hr>
+	I have <a href="${jbc_letters}/94Jun24/all_the_gigs.html">
+	tapes of all manner of JBC live</a>, tapes and recordings
+	of radio sessions, all line-ups, all periods, all qualities
+	of sound and performance.  I'll glady trade what you want,
+	but I ONLY WANT the following recordings:
+	<p>
+	<ul>
+	<li><a href="${jbc_gigs}/1993/Mar11.html"><b>Szene Wien</b>,
+	Vienna${AU} - March 1993</a>
+	</li>
+	<li><a href="${jbc_gigs}/1992/Jun5.html"><b>Roxy Theatre</b>,
+	Hollywood, California - June 1992</a>
+	</li>
+	<li><a href="${jbc_gigs}/1992/Jun13.html"><b>Liberty Lunch</b>,
+	Austin, Texas - June 1992</a>
+	</li>
+	<li><a href="${jbc_gigs}/1993/May15.html">${FIDDLER}
+	Acoustic Room, London - May 1993</a>
+	</li>
+	<li><a href="${jbc_gigs}/1992/Jun26.html"><b>Black Eg, Chicago
+	Radio Session</b> - June 1992</a>
+	</li>
+	<li><a href="${jbc_gigs}/1992/Jun3.html"><b>Sweetwater Saloon</b>,
+	Los Osos, California - June 1992</a>
+	</li>
+	</ul>
+	<p>
+	If you can help, let me know what you want.
+	<p>
+	<center>
+	<img width=243 height=111 alt="[signature]"
+	src="${jbc_images}/19930830/93Aug30_sig.gif">
+	</center>
+
+	${jbc_footer}
+#live	endif
+
+#define	love.html
+#live	if (getval(page) = love.html)
+	${headerLetters30Aug93(title=WAITING FOR THE LOVE BUS)}
+
+	<center>
+	<a href="${jbc_images}/lovebus.jpg">
+	<img width=145 height=145 align=left src="${jbc_images}/slovebus.gif"></a>
+	<b>WAITING FOR THE LOVE BUS</b>
+	<p>
+	<b>Cultural guidance notes issued to the U.K. press</b>
+	</center>
+	<br clear=all>
+	<hr>
+	<a name="davis">
+	${davis}</a>
+	<blockquote>
+		Rosemary Davis, actress, writer and producer,
+		edited the original BBC Sound Effects records.  Today
+		these sounds, assiduously recorded in the early sixties,
+		seem to come from another world.
+	</blockquote>
+	<a name="baker">
+	${bake}</a>
+	<blockquote>
+		Bakersfield is a place a couple of hours north of Los
+		Angeles where seekers after Purity Of Tone stand in
+		the desert and watch drag racing before cruising the
+		bars of this fine and patriotic borough, and maybe stopping
+		by at one of its lifestyle motel complexes.  This particular
+		tune was inspired by a conversation in Boardner's Bar,
+		Hollywood, with ${iain} and ${coonce} of the ${braind},
+		whose subsequent attempts to lend decency to the whole
+		concept are never going to wash with this writer.
+	</blockquote>
+	<a name="kids">
+	${mall}</a>
+	<blockquote>
+		The JBC spent New Year's Eve 1992 in Kaliningrad, a
+		rocking city of the old U.S.S.R., largely populated
+		by recent unemployed Red Army personnel, for whom we
+		wrote this tune.  The Mall is, of course, somewhere
+		else altogether.
+	</blockquote>
+	<a name="whad">
+	${whad}</a>
+	<blockquote>
+		A true story.  Whaddya want?  A diagram?
+	</blockquote>
+	<a name="sweet">
+	${sweet}</a>
+	<blockquote>
+		Inspired by and dedicated - in part - to the Sweetwater
+		Springs Saloon in Los Osos, California, a splendid rockin'
+		redneck shed, which we heartily recommend to all pompous
+		English whiteboy groups trying to "crack the market
+		Stateside".  If you're going to play <a
+		href="http://isvpc146.isv.uit.no/html/person/n.html#nickcave">
+		Nick Cave</a>, sooner or later you're going to hurt
+		yourself; far better to stand in a giant refrigerator
+		with six bottles of Jaegermeister and your crew.
+	</blockquote>
+	<a name="ghosts">
+	${ghost}</a>
+	<blockquote>
+		Why does the modern simpleton assume that he's causing
+		you a problem by killing you?  Inter mortuos nil nisi
+		bonum.
+	</blockquote>
+	<a name="baltic">
+	${baltic}</a>
+	<blockquote>
+		I'm not sure where this came from, and I'm vaguely resentful
+		of the fact.  I suppose it imagines itself to well fin-de-siecle.
+		Hey! We're so doomed we've learned to love it.
+	</blockquote>
+	<a name="kill">
+	${kill}</a>
+	<blockquote>
+		Imagine how RUDE it would be to die in someone else's
+		apartment.  Imagine how much BOTHER it could cause them.
+		Imagine how much you'd CARE.
+	</blockquote>
+	<a name="ben">
+	${ben}</a>
+	<blockquote>
+		Written in January, after hearing some extraordinary
+		remarks from ordinarily decent people concerning a character
+		in a news story who seemed to me - in quite black and
+		white terms - the victim.  Full of good intentions and
+		bruised sensitivities I tried to write a tune about
+		it.  I tried to stay respectful and clear.  In the time
+		between the recording and the release of this tune a
+		similar incident occurred in New York.  I didn't catch
+		the name this time.
+	</blockquote>
+	<p>
+	<a name="penguins">
+	${penguin}</a>
+	<img ALIGN=MIDDLE height=59 width=52 src="${images}/penguin.gif">
+	<img ALIGN=MIDDLE height=59 width=52 src="${images}/penguin.gif">
+	<img ALIGN=MIDDLE height=59 width=52 src="${images}/penguin.gif">
+	<blockquote>
+		In the most desolate place in the world they are standing
+		in large numbers.  They are out there doing it now.
+		As far as we can tell they have always been out there,
+		miles from anywhere, in conditions that would hospitalise
+		you or me in the course of an afternoon.
+	</blockquote>
+	<a name="chang">
+	${chang}</a>
+	<blockquote>
+		Wrestling with life in Post-Historical Universe, we
+		cast around awhile among some of the more extreme options
+		open to the modern voter.  A photo appears in a magazine
+		in Florida showing the Grand Wizard of the local chapter
+		of the KKK in full drag: he is eighteen.  A drawing
+		appears in a British newspaper depicting John Major
+		strangling Norman Lamont with his underpants.  Can being
+		The President's man help your self-esteem?  Your sex
+		life?  Why worry about Home Affairs when you will have
+		No Home?  Why vote for the Lesser Evil?
+	</blockquote>
+	<a name="station">
+	${stat}</a>
+	<blockquote>
+		The inevitable and inglorious consequences of ill-conceived
+		short firm triumphalist capitalism considered at some
+		length, and with no small amount of melancholy whining,
+		as an enormous submarine beast humming a twelve bar
+		and taking its time about it.  Sincerity quotient high,
+		reverbs lengthy.
+	</blockquote>
+	${davis} (Slight Return)
+	<blockquote>
+		We can go out the way we came in, but we had best go
+		a bit more quietly.  I think that chap in the baseball
+		hat has nodded out.
+	</blockquote>
+	<hr>
+	<b>L.P. LINE-UP: Who did what</b>
+	<ul>
+	${richard}: Fender Jaguar, Gibson Firebird, Burns XII String,
+	Tapes and effects, engineering, production.
+	<p>
+	${pat}: Fender Telecaster, Fender Jaguar, Yamaha SF800,
+	Keyboards, Percussion, programming, voice, engineering.
+	<p>
+	${pete}: Fender Stratocaster, Yamaha SF800, Burns XII String.
+	<p>
+	${dooj}: Wal Bass Guitar, Voice.
+	<p>
+	${nick}: The Drums.
+	<p>
+	</ul>
+
+	${jbc_footer}
+#live	endif
+
+#define	messages.html
+#live	if (getval(page) = messages.html)
+	${headerLetters30Aug93(title=INDIVIDUAL MESSAGES)}
+
+	<center>
+	<b>INDIVIDUAL MESSAGES:</b>
+	</center>
+	<p>
+	${ed}
+		- I'm afraid your "virtual clippings" collection is
+		indeed incomplete and inaccurate.
+	<p>
+		You're spot on about the Robin Gibson thing.
+		In fact he has now carried the JBC crusade right home
+		to bed, having recently had affairs with two of my recent
+		ex-lovers.  Hmmm.  Sometime I ask him how the book is
+		going, but he's always pissed so he just mumbles and
+		looks worried.  His verdict on ${family}, which I think
+		might amuse you "Well, there's nothing wrong with the
+		songs or the performances...but...you sound a bit...TINNY,
+		man."
+	<p>
+		The 1990 "Live review of something else" was, actually,
+		a 1988 live review of the <a href="${jbc_gigs}/1988/Aug7_2200.html">
+		Doing For The Kids concert in London.</a>
+		Barbara Ellen quite rightly hated The House
+		Of Love and that boring old pervert ${momus}, slept through
+		${mbv}, ignored 
+		Felt (who were good that day) and was personally
+		abusive to just about everyone else in the building,
+		ranting nobly - but in this case a little misguidedly
+		- about students, sad indie scum and the like.  The
+		only band of the day that got a good review from her
+		was the JBC.  She concluded by asking - "<b>NME</b>
+		cover stars in my lifetime?  It's not impossible." The
+		JBC, like Diana Ross, are Still Waiting.  Dame!
+	<p>
+		The <b>NME</b> review of ${cult} was a bit more than 5
+		lines.  It called me a "master fetishist" (how do he
+		KNOW?) and gave the record eight out of ten, a score
+		that would have won a more fashionable act a great deal
+		of space, I suspect.  They did print a small photo, though.
+	<p>
+		The <a href="${jbc_press}/90melody.html"><b>MM</b> also gave
+		a positive review,</a> and their Chris Roberts wrote
+		a half-page feature, with photo, talking about things
+		like "maverick genius".  <a href="${jbc_press}/91select.html"><b>
+		Select magazine</b> also printed a lengthy review with
+		a photo</a>.
+		${blue} did not get reviewed in the weeklies, as far as
+		I know, though I did see a quota from the <b>NME</b>'s
+		Simon Williams from the summer of 1991 that called me
+		"one of the country's most talented and personable story
+		tellers" (aaaaaah) which suggest that there might have
+		been a review there.  I was in L.A. all summer so i
+		can't say.
+	<p>
+		The l.p. certainly attracted good reviews in <b>Select</b>
+		(Dave Kavanagh, who later told me "${blue} is the first
+		JBLP that I really LOVE") and <b>Vox</b> (Keith Cameron,
+		winning my Writer Of The Year Award for "his trademark
+		spooked misappropriation of classic guitar rock"), who
+		also printed a photo.  All I'm really saying is that
+		you shouldn't appoint yourself some kind of international
+		press monitor simply on the strength of things that
+		your pals might have chanced upon in the weeklies.  I
+		feel that the monthly press in Britain is aimed at the
+		older audience, so it doesn't surprise me if that's
+		where our stuff gets the attention.  The weeklies, surely,
+		are for students, and, being 35, I don't really have
+		much to say to British students except "Get a fucking
+		haircut!"  By the way, both <b>Select</b> and <b>Q Magazine</b>
+		have published positive reviews of ${family} too.
+	<p>
+		I'll tell you what, though, Ed.  If you send me some
+		wedge to cover the photocopying, I'll send you a wad
+		of US and European press that will keep you occupied
+		for a long, long time.  We don't have a press agent
+		(apart from some harassed youth at ${creat}, who is
+		probably kept busy all day sending out photos of Ride),
+		so the lack of UK press is hardly suprising.  But then,
+		hey, we don't even have a manager...
+	<p>
+		Your remark about headlining at the <b>Dingwalls</b>
+		thing doesn't have much substance.  In
+		<a href="${jbc_gigs}/1988/index.html">1988</a> we played
+		37 shows in the UK and Ireland (including one at
+		<a href="${jbc_gigs}/1988/Feb27.html"><b>The Venue</b>,
+		Edinburgh</a>), which, I suspect, were more the result
+		of efforts made by our agent than the desire of one
+		crazed news editor from Paisely.  Train-spotters will
+		need to know that we also played 30 dates in Continental
+		Europe, 14 in the USA and 15 in Canada.
+		In fact, those who need to know could conceivably get
+		<a href="${jbc_letters}/94Jun24/all_the_gigs.html">a list
+		of every live JBC manifestation ever</a> from this very
+		writer... if they really want it.
+	<p>
+		I enjoyed your remarks about the K.D. Land (fuck it,
+		start again; kd lang) photo.
+		<br><a href="${jbc_images}/pat_plays.jpg">
+		<img width=214 height=160 align=left
+		hspace=5 src="${jbc_images}/spat_plays.gif"></a>
+		<br>I *know* this photograph!  The best lookalike story
+		I know concern the ${aero} when they supported
+		<a href="http://www.halcyon.com/rem/index.html">REM</a>
+		on the Green tour of the UK in 1989.  At the Birmingham
+		NEC Peter Buck joined the Blue Aeroplanes guitar-army
+		on the closing version of Tom
+		Verlaine's <i>Breaking In My Heart</i>.  Two punters
+		were overheard in conversation: "Who's that other geezer
+		on the guitar?"  "Oh, that'll be the Jazz Butcher".
+		I told Peter this story later, and it appealed to his
+		sense of having a drink.
+
+	${jbc_footer}
+#live	endif
+
+#define	tour.html
+#live	if (getval(page) = tour.html)
+	${headerLetters30Aug93(title=1993 EUROPEAN TOUR REPORT)}
+
+	<center>
+	<b>1993 EUROPEAN TOUR REPORT</b>
+	</center>
+	<hr>
+	<ul>
+	<p>
+	<li><b>15.2</b>
+		JBC gets on the bus at 5am Pete is roaring drunk.  Tony
+		Foster considers bashing him.  Drive and float to Paris.
+		French tour promoter is young and practically monolingual.
+		Tony considers belting him.  JBC play four live songs
+		and executes
+		<a href="${jbc_gigs}/1993/Feb15.html">lengthy interview
+		all live on Bernard Lenoir, national radio</a>.
+		Dooj falls asleep.  JBC buy beers and
+		rehearse in a garage until two or three in the morning,
+		with friends who skin up.  Tony considers marrying them.
+		A long day.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb16.html"><b>16.2</b>
+		Paris - <b>Theatre L'European</b></a>
+		Seated; 300 people, some drunks.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb17.html"><b>17.2</b>
+		Bordeaux - <b>Le Jimmy</b></a> 650km.  drive to Bordeaux.
+		Wake up at the back, you're on tour.  Joe Foster gets
+		in massive ruck with everyone in the restaurant at dinner.
+		Tony considers judging him.  <b>Le Jimmy</b> (yes!)
+		is a punky club with about 200 souls.  We rock.  Many
+		drunks.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb18.html"><b>18.2</b>
+		Nates - <b>Floride</b></a> Tiny club, fragile heads.
+		Lead singer buys cakes for all.  What a swell guy.  Pete
+		makes the first of many doomed sexual overtures, later
+		asks promoter for girl's address.  Pat, Kathie, Joe
+		and Dooj stay at the Holiday Inn.  Tony, Nick and Pete
+		stay in small concentration camp above the club, which
+		was severely overloaded at 150 people.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb19.html"><b>19.2</b>
+		Rennes - <b>Ubu</b></a> Short drive today, which is
+		fortunate as Tony succeeds in running out of petrol
+		today.  Tony considers bashing everybody.  T.V. Smith
+		of the Adverts opens, solo and acoustic.  He is great.
+		Some 150 customers, the show a little dull, but a great
+		party afterwards.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb20.html"><b>20.2</b>
+		Lorient - <b>Le Manege Enchante</b></a> (that's the
+		"Magic Roundabout", you Brits).  Beer for breakfast.
+		Beer for lunch.  This is more like it.  Joe fails to
+		get delays moving at soundcheck.  Pat considers having
+		him sent to Siberia.  Pretentious Mexican dinner.  Everyone
+		considers dropping everybody else.  Dooj terrorised
+		in dressing room by enormous dog called "The Head".
+		Pat and Tony shamelessly collaborate with the beast,
+		which Joe insists is a bear.  Staggeringly pretentious
+		support group.  JBC deliver first really hot show of
+		the tour. Only partially morose.  250 in the house.
+		Some drunks, chief among them Tony and Pat.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb21.html"><b>21.2</b>
+		Morlaix - <b>Le Coatelan</b></a> Onstage at 8:00 pm
+		on a sunday in an ART SHED near a village in French
+		Wales.  50 punters.  Brilliant. Dinner of the tour follows.
+	</li>
+	<p>
+	<li><b>22.2</b>	Drive back to Paris.  See Pascal.  Get
+	paid.
+	</li>
+	<p>
+	<li><b>23.2</b>	Drive out of France very fast, as well
+		have all had enough.  Got to Breda in Holland.  Tony
+		wants us all to feel the same.  It's carnival night
+		in Breda.  <a href="${jbc_images}/19930223/euro93.jpg"><img 
+		align=left src="${jbc_images}/19930223/euro93_250.jpg"></a>
+		Photo, taken by Kathie, who was smart enough to figure this out,
+		attached.
+	<br clear=all>
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb24.html"><b>24.2</b>
+		Breda - <b>Zanetti</b></a> Nick has a snare drum and
+		some brushes.  The other three have guitars.  Everyone
+		sings as we play in a small stone bar with psychadelic
+		lights for about 25 people.  We're supposed to be in
+		Rotterdam, but someone fucked up.  This is great fun
+		anyway.  We play <i>King Of Joy</i> and <i>Bad Moon
+		Rising</i>, but Kathie prevents us from rendering the
+		classic Red River Dave song the California Hippy Murders.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb25.html"><b>25.2</b>
+		Amsterdam - <b>Kremlin</b></a> A hipster hangout in
+		a scary and squalid part of town.  Small and full (100?150?)
+		and quite cheerful.  French drunks.  Drive back to Breda
+		cursing the gas stations that only work on credit cards.
+		Tony gets breath tested by The Man and comes up negative.
+		We all applaud as we drive away from the bewildered cops.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb26_2000.html"><b>26.2</b>
+		Breda - <b>Para</b></a> and <a href="${jbc_gigs}/1993/Feb26_2300.html">
+		Breda - <b>Zanetti</b></a> A double header.  We were
+		booked for Para (100 people.  Loud and vicious) but
+		we went on to <b>Zanetti</b> again to play in the basement,
+		a fabulous drugs cavern where we played not-really-acoustic
+		at-all for extra money and laffs.  Many drunks.  Deep joy.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb27.html"><b>27.2</b>
+		Hamburg - <b>Logo</b></a> The first of four German dates
+		supporting <a
+		href="http://isvpc146.isv.uit.no/html/group/belly.html#belly">
+		Belly.</a>
+		Nobody in Hamburg seems to know who they are.  350 people
+		in a smallish club.  We and they are great.  Quite forget
+		about Old Belly, who come on later and are not very
+		interested in a typically <a
+		href="http://isvpc146.isv.uit.no/eyesore.html">4AD</a> way.
+		Many drunks.  Some narcotics abuse.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Feb28.html"><b>28.2</b>
+		Berlin - <b>Loft</b></a> Great journey to Berlin, wherein
+		Tony Pat and Kathie form <b>The New Government Of Russia</b>
+		(policies on application - $5,799.99).  Shoddy show
+		from the JBC but <a
+		href="http://isvpc146.isv.uit.no/html/group/belly.html#belly">
+		Belly</a> are more interesting tonight.  We like Gail
+		the bass player.  If anyone's worried about the two
+		singers they're being very adult about it.  400 people
+		in the house.  East German drunks.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar1.html"><b>1.3</b>
+		Munich - <b>Charterhalle</b></a> Bus refuses to start.
+		Pete and Pat abandon rest of party in Berlin, get in
+		German tour manager's car and play Munich <b>Charterhalle</b>
+		as a duo.  The "club" is the hall of Munich's only-just-disused
+		airport.  Intimate it isn't especially with only 200
+		people in this huge barn.  We all have fun, though,
+		and loot Belly's booze n stuff ruthlessly.
+		Meanwhile, in Berlin, Joe fails to find the way to Cologne
+		for four hours.  Everyone, I'm told, considers stabbing him.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar2.html"><b>2.3</b>
+		Cologne - <b>Luxor</b></a> We arrive to find that Belly's
+		van has broken down.  We laugh and <a
+		href="${jbc_press}/94takeover.html"> send Tony in The Love
+		Bus to rescue them</a>.  400 people, a really good show.
+		Many drunks, some violent.
+	</li>
+	<p>
+	<li><b>3.3</b>
+		We drive to Freiburg.  On the way, entirely by chance,
+		we pull in at what must be the only vegetarian motorway
+		restaurant in Europe.  Deep joy, snow, vodka, Freiburg,
+		pizza, bliss.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar4.html"><b>4.3</b>
+		Valenza Po - <b>Circolo Palomar</b></a> Long scary drive
+		over the Alps to Italy.  50 people watch us play for
+		over two hours at a wonderful club.  The chap on stage
+		doing the handstands and shit is the promoter.  The
+		hotel has llamas.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar5.html"><b>5.3</b>
+		Florence - <b>Auditorium Flog</b></a> (No, honest!).
+		800 in a huge discotheque and a rider that would embarrass
+		the support group at the Rock Garden.  No wonder the
+		singer punched out the toilet doors in the dressing
+		room.  This offers the cue for the release of general
+		mayhem, not helped by the Hotel Putana where we have
+		been put.  Great concert, insulting promoters, bloody night.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar6.html"><b>6.3</b>
+		Forli - <b>Ex Macchina</b></a> Small, communist-run
+		club, the opposite of last night, and all the more pleasing.
+		150 people, many drunks, and a support group something
+		like ${haus}.  More drunks.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar7.html"><b>7.3</b>
+		Salzburg - <b>Nonntal</b></a> Pete, acting on an internal
+		agenda that has led him to drink solidly for 72 hours,
+		disappears in the middle of the night to devote his
+		time to serving drinks on British Airways.  "A little
+		twist with that?" JBC are expected in Salzburg, so we
+		drive.  It also appears that the Love Bus is ready to
+		expire at any moment, so will fill the tank with the
+		engine running.  Somewhere on the way I am seized of
+		a powerful idea and make a phone call.  Salzburg -
+		<b>Nonntal</b>.  We arrive after hours of anxious bus
+		stuff and full scale Alpine blizzard.  There isn't much
+		time for a soundcheck.  I just turn up the Telecaster
+		and hope for the best.  200 people, a nervy beginning.
+		It ended up well.  "You don't need another guitarist"
+		says the promoter.  Smiling, I make another phone call.
+		Promoter buys us all an elaborate dinner.  Tony considers
+		sloshing him.
+	</li>
+	<p>
+	<li><b>8.3</b>
+		We have a day off in Salzburg, which is all it takes.
+		I stay in bed till five, have a meal in the Styrian
+		bar, pick up our secret weapon and go back to the Styrian
+		bar, where I meet the group and introduce them to ${lix}.
+		Jagermeister.  Drunks.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar9.html"><b>9.3</b>
+		Lienz - <b>Glocklturm</b></a> This is where it gets
+		Really Weird.  The Love Bus finally clocks out at lunchtime,
+		and we travel the last 80km to the show on the back
+		of a tow-truck.  In the dark.  Through Alps.  The show
+		is somebody's 40th birthday surprise.  He has one leg.
+		Whoooa.  Lix makes his live JBC debut.  Very loud.  Very
+		exciting.  All drunk.  The whole town.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar10.html"><b>10.3</b>
+		Innsbruck - <b>Utopia</b></a> 200 people.  Back in the
+		hotel where we were previously narrowly prevented from
+		stealing the ducks.  No sign of any ducks this time.
+		Dinner in the rudest restaurant in the world.  All think
+		about biffing the propriator, but don't because he's
+		Turkish and it wouldn't do to be misunderstood.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar11.html"><b>11.3</b>
+		Vienna - <b>Szene Wien</b></a> 300 people (more?)  Opening
+		act is one "Jac", a lone 19 year old Austrian who is
+		brilliant.  JBC follow him on and open with ${girls}, which
+		Lix has just remembered a few minutes ago.  It, and
+		all that follows it, walks a charmed route through chaos,
+		and by the end of the night I am fairly sure that this
+		was the best JBC show ever.  Many drunks, nightclubs.
+		Kathie, Lix and I end up in the hotel manager's apartment.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar12.html"><b>12.3</b>
+		Ebensee - <b>Kino</b></a> Ebensee is reached down a
+		lakeside road with bizarre gothic tunnels cut through
+		forbidding rock faces, all decorated with ancient coats
+		of arms.  "Castle?  There is no castle HERE..."  Dooj
+		cracks two ribs cannoning into a p.a. stack.  We seize
+		Gerard Langley's silly mic-stand, which he left here.
+		We still have it and taunt him with it at regular intervals.
+		Thousands of drunks.
+	</li>
+	<p>
+	<li><a href="${jbc_gigs}/1993/Mar13.html"><b>13.3</b>
+		Dornbirn - <b>Spielboden</b></a> We close the tour in
+		one of our favourite venues.  Two guitars and one amplifier
+		loaded on the Love Bus in urgent need of some professional
+		maintenance.  Notable for acapella rendition of <i>Winter
+		Wonderland</i> enlivened by guitar roadie's fetching
+		alto harmony.  She is not, however, yet expected to
+		appear onstage with a lot of keyboards.  Drunks.
+	</li>
+	<p>
+	<li><b>14.3</b>	GREAT ROAD JOURNEYS OF HISTORY: We leave
+		Dornbirn, on the Austro/Swiss border after a lengthly
+		lunchtime beer session, during which it is agreed the
+		We Still Love The Old World.  We arrive in Breda on
+		the Dutch/Belgian border at midnight and go to <b>Zanetti's</b>
+		to get irredeemably twisted.  We even stop for a proper
+		dinner on the way.  This is not possible, but we did
+		it anyway.
+	</li>
+	<p>
+	<li><b>15.3</b>	Go to Belgium, but a lot of cheap beer,
+		miss two boats, go to the pub, get on the boat, get
+		drunk, get paid (I got &#163;27!), go home.
+	</li>
+	</ul>
+	VERDICT: Best European tour since <a href="${jbc_gigs}/1988/index.html">1988.</a>
+		Not as violent
+		or drunk, but more mental and musical.  I felt that
+		we really did a lot to remind people how good this thing
+		can be, and the dates with Lix were Something Else.
+		Funny how things turn out.
+	<hr>
+	<br><b>Tony Foster:</b> First Driver, Justice and Security
+	<br><b>${kathie}:</b> Relief driver, guitars and
+	backline tech
+	<br><b>Joe Foster:</b> Sound tech
+	<br><b>${nick}:</b> Drums, voice
+	<br><b>${dooj}:</b> Bass, guitar, voice
+	<br><b>${pat}:</b> Guitars, voice
+	<br><b>${pete}:</b></a> Guitars (France${HO}${DE} Italy)
+	<br><b>${lix}:</b></a> Guitars (Austria)
+
+	${jbc_footer}
+#live	endif
+

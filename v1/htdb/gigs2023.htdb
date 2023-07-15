@@ -1,0 +1,47 @@
+#define	Apr2_1900.html()
+	${gigHeader(
+		cost=£12,
+		with=${literalizeCommas(
+			Piss Shivers, Venus Flytrap, Woodentops, Tim Keegan
+		)},
+		notes=${literalizeCommas(
+		<p>
+		We are pleased to announce that the Jazz Butcher tribute date, originally planned for London on  Sunday 2nd April, will now
+		go ahead, on the same date, shifting venue to The Labour Club, Northampton, NN1.  Featuring a host of former conspirators
+		and friends of Pat, including musicians who have played with him from the 1970s, right up to ‘The Highest in the Land’.
+		</p>
+
+		<p>
+		<b>Tickets are limited to 100</b>, due to the size of venue, so get them while they’re hot.  Purchase via Philip Snow –
+		philipsnow77\@yahoo.com – who will explain how to secure your name on the list.
+		</p>
+
+		<p>
+		We are also exploring the possibility of a global webcast.  More details on that to follow.
+		</p>
+		<p>
+		Poster by Patrik.
+		</p>
+
+		)},
+		photosets=
+			/images/20230402/20230402_Tribute.jpg;;Pre-shot crowd$$
+			Andrea;;https://twitter.com/parramaterial;;2023-04-02
+			---
+			/images/20230402/20230402_Woodentops_practice.jpg;;The Woodentops practice session "Reunited"$$
+			The Woodentops;;https://twitter.com/woodentopsmusic;;2023-04-02
+			---
+			/images/20230402/20230402_JohnnyMattock.jpg;;${literalizeCommas(Piss Shivers [Johnny Mattock] in Northampton for Pat's gig. Enjoying his new tracks, anticipating their release! 💛)}$$
+			Mark Cotton;;https://twitter.com/mcfontaine;;2023-04-02
+			---
+			/images/20230402/20230402_TimKeegan.jpg;;${literalizeCommas(Celebrating Pat Fish at The Lab tonight. Great vibes 😊 [Tim Keegan on stage])}$$
+			Mike Kenny;;https://twitter.com/mikeyblag;;2023-04-02
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

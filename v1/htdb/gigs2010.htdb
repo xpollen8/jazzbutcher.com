@@ -1,0 +1,301 @@
+#define	Jan22_2000.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${joe_woolley}
+		)},
+		notes=${literalizeCommas(
+			The Boiler Club presents a Beat Evening: tribute to Ginsberg, Gysin, Burroughs, Corso, Kerouac & Ferlinghetti featuring<p>
+			Pat Fish - and- Joe Woolley<p>
+			Plus Charlie Barnard reading William S. Burroughs<p>
+			Plus beat generation films, music and poetry.<p>
+			Admission free.
+		)},
+	)}
+
+#define	Jan29.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			Rolo: Guitar and voice, Mal Darwen: Double bass
+		)},
+		notes=${literalizeCommas(
+			Fri 29th January 2010<br/>
+			Masters of Budvar present<br/>
+			THE WOODENTOPS - ACOUSTIC<br/>
+			Rolo: Guitar and voice - Mal Darwen: Double bass and voice plus support plus superstar DJ Joe Woolley<br/>
+			Free admission<br/>
+			Late bar
+		)},
+	)}
+
+#define	Feb19.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${solo} (electric)
+		)},
+		notes=${literalizeCommas(
+			${solo} (electric)
+			<p>
+			I may well be joined by one or two guests this evening...
+		)},
+	)}
+
+#define	Mar9.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Cost: £6:00 adv./£8:00 on the door<p>
+			Solo electric show. I shall be on stage about half past nine.
+		)},
+		pat=${literalizeCommas(
+			London went well. Fantastic sound man and - consequently - appreciative punters. A nice night out.
+		)},
+		photosets= /images/20100309/20100309_pat.jpg
+	)}
+
+#define	Mar18.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Voodoo Amplifier
+			<p>
+			Opening night of a new regular club hosted by Alex Novak of Venus Fly Trap/Spiral Archive Records.
+			<p>
+			Live: Pat Fish - aka the Jazz Butcher -Acoustic and electric sets
+			<p>
+			DJ Alex Novak (Spiral Archive)
+			<p>
+			Admission free 
+		)},
+	)}
+
+#define	Jun26.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			One solo gig you oughtta know about...
+			Acoustic and electric sets
+			Admission free.
+		)},
+	)}
+
+#define	Jul15.html()
+	${gigHeader(
+		with=Spacemen 3,
+		notes=${literalizeCommas(
+			A partial and unofficial 'reunion' of Spacemen 3 occurred on 15 July 2010 at a benefit gig dubbed 'A Reunion of Friends', organised for former Spacemen 3 drummer Natty Brooker (diagnosed with terminal cancer) at the Hoxton Bar and Grill in London where there was a retrospective exhibition of his artwork. Will Carruthers said of the event, "This is as close as you'll get to a Spacemen 3 reunion, trust me." The participants were: Peter Kember (keyboard/guitar/vocals); Will Carruthers (bass); Jonny Mattock (drums); Mark Refoy (guitar); Jason Holt (guitarist from Kember's touring Spectrum band); and guest appearances from Pat Fish (vocals), and Kevin Shields (guitar) of My Bloody Valentine. They played a 45-minute set comprising the songs 'Walkin' with Jesus', 'Revolution' and 'Suicide'.
+		)},
+		photosets=
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20100715/20100715_SpacemenReunion_Pat1.jpg;;Solo set$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20100715/20100715_SpacemenReunion_Pat2.jpg;;Solo set$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20100715/20100715_SpacemenReunion_Pat3.jpg;;Walking with Jesus$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20100715/20100715_SpacemenReunion_Pat4.jpg;;Walking with Jesus$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20100715/20100715_SpacemenReunion1.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20100715/20100715_SpacemenReunion2.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20100715/20100715_SpacemenReunion3.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20100715/20100715_SpacemenReunion4.jpg$$
+			Spacemen Pod;;https://twitter.com/SpacemenP/status/1647850749466951680;;2023-04-17
+	)}
+
+#define	Jul17.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			Shakespeare And The Bible
+		)},
+		notes=${literalizeCommas(
+			Sat 17th July<p>
+			The Lamplighter, Overstone road, Northampton NN1<p>
+			SHAKESPEARE AND THE BIBLE<p>
+			From Hamburg, featuring Owen Jones of the JBC.<p>
+			Free admission! 
+		)},
+	)}
+
+#define	Jul30.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Fri 30th July<br/>
+			The Labour Club, Corner of Earl & Charles, Northampton NN1<br/>
+			Masters of Budvar present<p>
+			THE SECOND FLOOR<br/>
+			ONE UNIQUE SIGNAL<br/>
+			THE URGZ<br/>
+			Free admission!<br/>
+			<br/>
+			THE SECOND FLOOR (Manchester)<br/>
+			Swaggering psychedelic rock with proper Manc attitude. Led by Nolan, who also plays in Sonic<br/>
+			Boom's Spectrum, this band seems to draw a lot of comparisons with the Jesus and Mary Chain<br/>
+			and the Black Rebel Motorcycle Club. Fortunately, they have settled on a snappier name.<br/>
+			"One of my favourite bands around at the moment" - Mani (Primal Scream)<br/>
+			"One of the best unsigned bands in Manchester" - Clint Boon, XFM<br/>
+			<br/>
+			ONE UNIQUE SIGNAL (London)<br/>
+			Upwardly-mobile drone-rockers, comparable to The Flowers of Hell or the Kool-Aid Electric<br/>
+			Company. This is their first Northampton show.<br/>
+			"One Unique Signal play with the ferocious detachment of men so far gone in possession that<br/>
+			everything else is irrelevant" - Drowned in Sound<br/>
+			<br/>
+			THE URGZ (Rugby)<br/>
+			True garage psychedelics from the endlessly creative Pete Baine. From the Push, through<br/>
+			Spacemen 3, the Dark Side and Alphastone to this current outfit, his work speaks for itself.<br/>
+			Not to be missed.<br/>
+			<br/>
+			So you remember how this works. Doors are open from eight or so. If you're unfamiliar with<br/>
+			the Labour Club, don't let the odd little door buzzer thing put you off. Somebody will let<br/>
+			you in eventually. It just adds to the speakeasy vibration, dig? Friendly people, good beer<br/>
+			and wine at Socialist prices, smoking garden, pretty lights and the best little sound system<br/>
+			in town.<br/>
+		)},
+	)}
+
+#define	Aug3.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			PAT FISH - ACOUSTIC SET<p>
+			Headline acoustic set at Joe Woolley's regular London club night, The Bard, The Beat & The Blues.<p>
+			Full supporting cast of bohemian talent.<p>
+			Admission £5:00 or £3:00 concessions  <p>
+		)},
+	)}
+
+#define	Aug12.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			PAT FISH - ELECTRIC SET<p>
+			I shall be playing a half-hour electric set. Also on the bill is the very wonderful Kevin Hewick and many other
+			artists. This is a charity event in support of LOROS hospices for the terminally ill. It's part of the Summer Sundae Fringe Festival.
+		)},
+	)}
+
+#define	Sep17_1930.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Grass Roots Records and Richardsons Events present:
+			<p>
+			NOW THAT'S WHAT I CALL NORTHAMPTON
+			<p>
+			Album launch party and revue.
+			<br>
+			Free admission.
+			<br>
+			Doors open 7:30pm
+			<p>
+			Featured artists, in order of appearance:
+			<p>
+			CURTIS e JOHNSON
+			<br>
+			JOE WOOLLEY
+			<br>
+			ANDY HARWOOD
+			<br>
+			SUSANA FIGUEIRA
+			<br>
+			PAT FISH
+			<br>
+			EAGLEHEAD
+			<br>
+			CURTIS e JOHNSON AND THE STEVIE GDS
+			<p>
+			Plus films and records. The Picturedrome is a lovely beerhall in an old nineteen twenties cinema with two bars,
+			easy, spacious parking and a good smoking terrace. Come and join in an entirely positive celebration of
+			Northampton's underground music scene.
+		)},
+		photosets= /images/20100917/Famp1.jpg$$
+			/images/20100917/Famp2.jpg$$
+			/images/20100917/Famp3.jpg$$
+			/images/20100917/Famp4.jpg$$
+			/images/20100917/Famp6.jpg$$
+			/images/20100917/Famp7.jpg$$
+			/images/20100917/Famp8.jpg$$
+			/images/20100917/Famp11.jpg$$
+			/images/20100917/Famp12.jpg$$
+			Popular TV Archaeologist Paul Blinkhorn
+	)}
+
+#define	Oct15.html()
+	${gigHeader(
+		with=${literalizeCommas(
+			The Urgz (Pete Baine)
+		)},
+		notes=${literalizeCommas(
+			Free admission - Acoustic set, supporting Pete Baine's band The Urgz.
+		)},
+	)}
+
+#define	Oct22.html()
+	${gigHeader(
+		with=${literalizeCommas(
+			Escalation featuring Curtis E. Johnson, Andy Harwood & Friends, Big Tim Sansom
+		)},
+		notes=${literalizeCommas(
+			In support of the "Now, That's What I Call Northampton - Vol. 1" album
+			<p>
+			I'm playing this night of the NTWICN two-nighter. Electric set.
+		)},
+		photosets= /images/20101022/labour1.jpg$$
+			/images/20101022/labour2.jpg$$
+			/images/20101022/labour3.jpg$$
+			Paul Blinkhorn
+	)}
+
+#define	Dec4_2000.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			8:00pm <p>
+			"Now That's What I Call Northampton"<p>
+			Grass Roots Records presents<p>
+			ANDY HARWOOD (electric set - full band)<p>
+			PAT FISH<p>
+			CURTIS E. JOHNSON<p>
+			Admission free<p>
+			The album is still available at ${linkExternal(http://www.nowthatswhaticallnorthampton.com)}
+		)},
+		pat=${literalizeCommas(
+			Super night at the Racehorse on Saturday.
+			<p>
+			I opened things up with an acoustic set that verged on the
+			boisterous (for me) and concluded with a certain amount of breakage. Curtis appeared with the full
+			Escalation/StevieGeeDees band and they were on great form, having played the previous night at the Lovelight
+			Romania benefit up in Kingsthorpe.
+			<p>
+			The Rev. D. Wayne Love (for it was he) joined them for a rendition of
+			Warren Zevon's Werewolves of London which had all the Usual Suspects howling and bellowing like good 'uns
+			before the Sensational Andy Harwood Band (as I now insist on calling them) banged out a rousing set of
+			originals and well-chosen sixties cover tunes, ably assisted by Susana Figueira singing her heart out.
+			Splendid stuff, all magisterially (if abusively) compered by the Reverend Love.
+			<p>
+			Special credit to Curtis and
+			Steves Gordon and Davies for the ridiculous amount of work they put in to make the event happen.
+			<p>
+			If you still don't have a copy of the album that this night was supporting, waste no time in logging on at
+			www.nowthatswhaticallnorthampton.com to secure your copy. Hand-tooled in selected petrolium by-products,
+			these handsome volumes of 21st century provincial beat music make an ideal festive gift for your loved ones
+			at this special time of year.
+		)},
+		photosets= /images/20101204/horse1.jpg$$
+			/images/20101204/horse2.jpg$$
+			/images/20101204/horse3.jpg$$
+			/images/20101204/horse4.jpg$$
+			/images/20101204/horse5.jpg;;${literalizeCommas(
+				The Rev. D. Wayne Love doing his MC thing.
+			)}$$
+			/images/20101204/horse6.jpg;;${literalizeCommas(
+				Curtis and Escalation
+			)}$$
+			/images/20101204/horse7.jpg;;${literalizeCommas(
+				Sensational Andy Harwood Band - Andy on guitar, stage left
+			)}$$
+			Paul Blinkhorn
+	)}
+
+#define	Dec10.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			£4:00 - Electric set, 4 other acts on the bill.
+			At the BFI London Film Festival.
+		)},
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

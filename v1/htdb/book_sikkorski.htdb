@@ -1,0 +1,18 @@
+#define	book_sikkorski
+	<div class="release">
+	<div class="album_details">
+		<span class="album_title">${linkExternal(https://www.paypal.com/instantcommerce/checkout/B9R9UNV97A754, Earl Sikkorski’s Golden Treasury)}</span>
+	<div class="album_blurb">
+		‘Earl Sikkorski’s Golden Treasury’, a facsimile of the Jazz Butcher fan club scrapbook, pinned out, examined under the microscope and
+		expanded upon, by Philip Snow.  Hardback book out now.
+	</div>
+	<div class="album_purchase">
+		${linkExternal(https://www.paypal.com/instantcommerce/checkout/B9R9UNV97A754, Order direct from the author)}
+		<br/><span class="smalltext">at a discounted costof 15GBP, which includes delivery to anywhere on the planet.</span>
+#		<br/><span class="smalltext">(Via <b>Paypal</b>, includes shipping, literally anywhere)</span>
+	</div>
+</div>
+<div style="max-width: 350px; flex: 1">
+	<a href="/images/book_sikkorski.jpg"><img src="/images/book_sikkorski_500.jpg"/></a>
+</div>
+	</div>

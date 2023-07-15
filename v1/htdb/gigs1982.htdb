@@ -1,0 +1,154 @@
+#define	Feb20.html()
+	${gigHeader(
+		eventweb=,
+		cost=,
+		who=${literalizeCommas(
+			${pat}, The Antichrist (Ramon Destine), ${at}, Chris "Snogger" Rudd, ${owen}
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+			The first show to be advertised as "The Jazz Butcher".
+			It was perceived as a one-off laugh.
+		)},
+	)}
+
+#define	Jun.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, ${ll}
+		)}
+	)}
+
+#define	Jun12.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, ${ll}
+		)},
+		with=${literalizeCommas(
+			Where's Lisse?
+		)},
+		notes=${literalizeCommas(
+			Pat made the poster for this gig
+		)}
+	)}
+
+#define	Jul4.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${ll}
+		)},
+		notes=${literalizeCommas(
+		)}
+	)}
+
+#define	Aug1.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${at}
+		)},
+		notes=${literalizeCommas(
+		)}
+	)}
+
+#define	Aug17.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, ${at}
+		)},
+		notes=${literalizeCommas(
+		)}
+	)}
+
+#define	Nov1.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Bauhaus
+		)},
+		who=${literalizeCommas(
+			${pat}, ${max}, ${at}, ${ll}, ${rolo}
+		)},
+		notes=${literalizeCommas(
+			Opened for ${haus}
+		)},
+		pat=${literalizeCommas(
+			Excerpt from <a href="${jbc_press}/milwaukee89.html">1989 Milwaukee Interview</a>
+			<p><b>INTERVIEWER</b>: Now David J (Bass), he had joined up
+			post-Bauhaus, right?
+
+			<p><b>PAT FISH</b>: Yeah, just about the time that "Ziggy
+			Stardust" hit the top 10, they were doing some shows at
+			Hammersmith Pallais, which is kind of a big venue.
+			<p>
+			Now, I knew
+			Kevin (Haskins-Drummer for Bauhaus and Love & Rockets) and we had
+			a phone call when I was at work. I got home and Alice said, 'Pat,
+			they want us to support Bauhaus at Hammersmith Pallais." I
+			thought, 'FREAK OUT! GET A BAND!"
+			<p>
+			So we rounded up a few
+			people, we got Rolo (McGinty, guitarist-The Woodentops) and Alice
+			and Max and me and this sax player we used to know.
+			<p>
+			We went up
+			there and they hated us, it was brilliant. There was 2,000 people
+			going, "FUCK OFF! FUCK OFF AND DIE!" We'd never been on
+			a stage where there'd been guerrillas to protect us from the
+			audience, but this time there was, so we thought, 'Great! Now
+			we'll do 'Partytime'. Now we'll do 'Love Kittens'', and we just
+			played all these ballads at these rabid gothics, it was great.
+			<p>
+			And they hated us. After the show, I said to Kevin, 'Well, thanks
+			for asking us to do it, mate. It was quite an experience.' And he
+			said, 'It wasn't me.' And it turned out it was his big brother,
+			Dave, who I'd never met at that stage.
+			<p>
+			We just got on really
+			well. We all sort of started hanging out. When he joined the
+			band, we knew he was going to leave again. He joined officially
+			for six months, but he ended up doing about ten.
+		)},
+	)}
+
+#define	Dec17.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${max}, ${ll}
+		)},
+		notes=${literalizeCommas(
+		)}
+	)}
+
+#define	Dec18.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${max}, ${ll}, ${at}, ${lb}, ${is}
+		)},
+		bootleg=${literalizeCommas(
+			${w} ${q(2)}, ${p(D)}
+		)},
+		photosets=
+		   https://s3.amazonaws.com/assets.jazzbutcher.com/images/19821218/19821218_barker.jpg$$
+		   David E. Barker;;https://soundcloud.com/user-46834996/the-jazz-butcher-his-big-soppy-pussycats-zombie-love-love-kittens-roadrunner/s-VbAeD7eLGQi;;2023-04-14
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

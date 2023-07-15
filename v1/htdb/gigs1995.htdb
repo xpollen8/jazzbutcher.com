@@ -1,0 +1,252 @@
+#define	Mar11.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${hend}, ${pat}, ${dooj}, ${gab}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Apr1.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
+#define	Apr4.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${hend}, ${pat}, ${dooj}, ${gab}, ${green}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+			The French schoolkids' gig!
+		)}
+	)}
+
+#define	Jul11.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Ubu Swirl
+		)},
+		who=${literalizeCommas(
+			${pat}, ${dooj}, ${max}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)}
+		,
+		reviews=
+			${literalizeCommas(
+			A quick report on last night's jazz butcher show for you....
+			<p>
+			I arrived in time for the last 15 minutes of max eider's set - he
+			came on at 8.30, finshed just after 9. Finished with "It had to
+			be you" and "Drink," looked cool in shades, backed by a girl
+			singer and man in cardigan playing harmonica.
+			<p>
+			Middle band, Ubu Swirl, bass, cello acc & elc gtrs, drony &
+			velvety, Ok for 10 minutes, kinda dull for 40.
+			<p>
+			Jazz Butcher Conspiracy were HOT to match the conditions.
+			Pat & his bass player were dumb enough to wear 3-piece suits
+			but managed to survive.I didn't recognise much of what they
+			played (new stuff, I guess, plus one cover of a Strange Attractors
+			song who Pat apparently place drums for, and one song by some
+			guy that lives in the Alps).
+			<p>
+			Got called back for one encore, where Pat called Max up on stage
+			(back from propping up the corner of the bar) where after a little
+			on-stage cuddle he got to play guitar on a rocking "Zombie Love."
+			Then it was curfew and we had to go home. The JBC hadn't played
+			for a while, but that only showed in enthusiasm and not sloppiness.
+			<p>
+			Good fun, very hot.
+			<p>
+			Ciao,
+		)}$$
+			Jonathan;;jturner@rpms.ac.uk
+	---
+		${literalizeCommas(
+			Mike Kelly and myself made it to the gig. We missed both the support,
+			so no comment there. The band looked very smart - apparently because
+			Pat has to dress up when he plays drums for the Strange Attractors!
+			<p>
+			Mostly new stuff from Illuminate. Opened with Rosemary Davis (one of
+			my favourites). Played Cute Submarines, When Eno Sings amongst others
+			- a pen would have come in handy.
+			<p>
+			Overall they were pretty hot - the best I have seem them, but they
+			only played for an hour which was a bit disappointing. Crowd was
+			biggish, enthausiastic and there was even dancing!
+			<p>
+			Later,
+		)}$$
+			Joe;;joen@sco.com
+	---
+		${literalizeCommas(
+			Just to add a few details: Max Eider was *excellent* - I'd never seen him
+			live before, and the songs from Distressed Gentlefolk and Best Kisser
+			worked better, to my mind, in these reduced versions than they do on the
+			albums.  Can't remember what he opened with, but shortly afterwards he
+			jeopardised his indie cred by playing a Don Henley song.  He did a version
+			("a song from Pat's 'cute' period") of Girls Who Keep Goldfish; also
+			Raking up the Leaves, and Who Loves You Now.   The backing vocalist and
+			harmonica player looked like they were having a lot of fun: jazz dancing
+			behind Max's back.
+			<p>
+			Completely agree with Jonathan about Ubu Swirl - very Velvets, very
+			Spacemen 3 - I was on the verge of shouting out for Transparent Radiation.
+			<p>
+			The JBC:  They were a little constrained by the size of the stage: they
+			didn't rock out as they did at last summer's Borderline gig.  Pat looked
+			good in his suit, but got lost behind his shades (a bad decision), and the
+			whole gig felt slightly hurried (Blues For Dead Dean Reed at what seemed
+			like double tempo) and slightly impersonal: he didn't talk between songs
+			as much as at last year's Acoustic Conspiracy gigs, though there was a
+			good story about Pete Astor, a capo, and an adventurous german woman.
+			Dooj was more restrained than usual.
+			<p>
+			They opened with Rosemary Davis, the only song from Love Bus.  Of the new
+			stuff they did: Cute Submarines, Scarlet, Ugliest Song in the World, When
+			Eno Sings, Blues for Dead Dean Reed.  The song by the Austrian who lives
+			in the mountains was Stereo Queen by ${wolfi}, which Pat has been
+			doing in his solo gigs for a while: it's sounding better every time: he
+			should record it sometime.
+		)}$$
+			Michael Whitworth;;els043@bangor.ac.uk
+	)}
+
+#define	Sep13_2000.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${dooj}, ${dj}
+		)},
+		notes=${literalizeCommas(
+		)},
+		tickets=
+			/images/19950913/19950913_ticket.jpg$$
+			Guillaume
+	)}
+
+#define	Dec20.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${hend}, ${pat}, ${dooj}, ${gab}, ${green}
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		When asked: <i>One of your notebooks shows (*) Video beside "Caroline Wheeler", "Angels", and "Lot 49". What's that about?</i>
+		<p>
+		<div class="annotate">
+			"I remember being asked if they could film. Never saw the footage. No idea what became of it."
+			<p>
+			2017-03-28
+		</div>
+		)}
+	)}
+
+#define	Dec21.html()
+	${gigHeader(
+		cost=,
+		with=${literalizeCommas(
+			Stranger Tractors
+		)},
+		who=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Just thought you'd like to know that the gig at the Garage
+			on the 21st of December is
+			<p>
+			****** THE LAST JAZZ BUTCHER SHOW EVER ******
+			<p>
+			And then, the JBC will be no more than a figment of our diseased
+			imagination (we believe in collective, partial solipsism, us).
+			<p>
+			Oh, one more thing. McGee has asked for a valedictory Greatest
+			Hits (sic) package, summarising the Creation years, and a track
+			listing is currently under consideration.
+			Any suggestions from you lot would be gratefully ridiculed
+			(we're looking at around twenty tracks, I believe).
+			<p>
+			See you at the Garage,
+			${g_credit(g=${gab}, d=1995-12-01 12:43:15)}
+		)},
+		pat=${literalizeCommas(
+		)}
+	,
+	reviews=
+		${literalizeCommas(
+			Sitting as I am in an 'Internet Cafe', there's not a lot of time
+			and I'm not really composed enough to offer a detailed description
+			of events. However, I will say that it was a rocking show.
+			<p>
+			Set List: First off, Stranger Tractors. Loads of S/T songs, none of
+			which I'd never heard before because I've never seen them play.
+			Good band, actually. Pat looked cool on drums.
+			<p>
+			Then teeny tiny micro-mini set of Pat'n'Max. Three songs: Partytime,
+			Drink (Max on vocals) and Girls who keep goldfish.
+			<p>
+			At this point, I crossed the thin line between sobriety and sheer
+			intoxication [a line crossed some hours before by other members of the
+			jbc-list by the looks of things] [and for which I owe Joe some beer if
+			he ever wants to claim]. Fortunately, I managed to snarf the set list
+			so I can tell you what they played: ODR [no idea], Mr Odd,
+			Bakersfield, Our Friends the Filth, Old Snakey, Harlan, She's a yoyo,
+			Scarlett, She's on Drugs, Sister Death.
+			<p>
+			Applause, disappearing band, more applause, reappearing band, encore:
+			Take the skinheads bowling, Angels.
+			<p>
+			Angels was a stormer: everyone who has ever played guitar for the JBC
+			on stage strumming away like they were going out of fashion (whoops,
+			which they are).  so much so that they omitted the listed second
+			encore: Caroline Wheeler.  Good job too, actually. No fitter ending
+			than Angels, IMHO.
+			<p>
+			Pat has a copy of the show, which (when I get to send him a tape and
+			some stamps) he'll duplicate on to me and David. Copies can no doubt
+			filter out from these.
+			<p>
+			Took loads of photies. Enjoyed myself. Did not cry. Web site in memoriam
+			when film is developed and I get somewhere other than this stinking caff
+			to sit.
+			<p>
+			Baubles,
+		)}$$
+			Ed Carter
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

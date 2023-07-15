@@ -1,0 +1,144 @@
+#define	Feb28.html()
+	${gigHeader(
+		eventweb=https://www.facebook.com/pat.fish.7/videos/10215577990601234/,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+		   /images/20210228/20210228_paypal.jpg$$
+		   /images/20210228/20210228_LittleMu.jpg$$
+		   /images/20210228/20210228_CatCard1.jpg$$
+		   /images/20210228/20210228_CatCard2.jpg$$
+		   ${del}
+		,setlists=
+			/images/20210228/20210228_setlist.jpg$$
+			${del}
+	)}
+
+#define	Apr18_2200.html()
+	${gigHeader(
+		eventweb=https://www.facebook.com/pat.fish.7,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+		   /images/20210418/20210418_davies.jpg$$
+		   Jim Davies
+		,setlists=
+	)}
+
+#define	Jun6_2200.html()
+	${gigHeader(
+		eventweb=https://www.facebook.com/pat.fish.7,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+		,setlists=
+	)}
+
+#define	Jul25_2200.html()
+	${gigHeader(
+		eventweb=https://www.facebook.com/pat.fish.7,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+		,setlists=
+	)}
+
+#define	Aug20_1800.html()
+	${gigHeader(
+#		eventweb=https://www.skiddle.com/whats-on/Preston/The-Continental/Preston-Pop-Fest-/35794204/,
+		who=${literalizeCommas(
+			${pat}, Joe Woolley
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+		   /images/20210820/20210820_duo.jpg;;w/Joe Woolley$$
+		   Manuel Soleado;;https://twitter.com/manuelsoleado
+		   ---
+		   /images/20210820/20210820_cath.jpg;;$$
+		   Cath Aubergin
+		,setlists=
+	)}
+
+#define	Aug21_1900.html()
+	${gigHeader(
+#		eventweb=https://www.skiddle.com/whats-on/Preston/The-Continental/Preston-Pop-Fest-/35794204/,
+		cost=free,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+		Blow-Up, Bedside Manners
+		)},
+		photosets=
+		,setlists=
+	)}
+
+# CANCELLED#define	Oct3_2100.html()
+# CANCELLED	${gigHeader(
+# CANCELLED		who=${literalizeCommas(
+# CANCELLED			${pat}
+# CANCELLED		)},
+# CANCELLED		notes=${literalizeCommas(
+# CANCELLED		We realised at the end of the last Fishy Mansions broadcast that we had played 90 different songs over 9 shows. So it was        
+# CANCELLED		obvious that we had to do another one and reach 100 songs. I mean, ten gigs of ten songs each and every one different -          
+# CANCELLED		that's something to go for, right? 
+# CANCELLED		)},
+# CANCELLED		with=${literalizeCommas(
+# CANCELLED		)},
+# CANCELLED		photosets=
+# CANCELLED		,setlists=
+# CANCELLED	)}
+
+# RIP#define	Oct7_1930.html()
+# RIP	${gigHeader(
+# RIP		eventweb=https://wegottickets.com/event/514053,
+# RIP		cost=£10:00,
+# RIP		who=${literalizeCommas(
+# RIP			${pat}
+# RIP		)},
+# RIP		with=${literalizeCommas(
+# RIP		Bush & Fey
+# RIP		)},
+# RIP		photosets=
+# RIP		,setlists=
+# RIP	)}
+
+#define	Nov27_1930.html()
+	${gigHeader(
+		eventweb=https://wegottickets.com/event/5147127,
+		cost=£12:00,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		photosets=
+		   /images/20211127/20211127_mccookerybook.jpg;;Helen McCookerybook$$
+		   /images/20211127/20211127_sumishaheidi.jpg;;${sumishta} and Heidi Berry$$
+		   Planet Ruth;;https://twitter.com/Planetruth_;;2021-11-27
+		   ---
+		   /images/20211127/20211127_heidiberry.jpg;;${pete}\, ${sumishta}\, Tim Keegan\, Heidi Berry\, John Silver\, Simon Mawby$$
+		   ${sumishta};;2021-11-28
+		,setlists=
+			/images/20211127/20211127_setlist.jpg$$
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

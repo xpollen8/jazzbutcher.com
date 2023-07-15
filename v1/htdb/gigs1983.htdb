@@ -1,0 +1,181 @@
+#define	Jan.html()
+	${gigHeader(
+
+	who=${literalizeCommas( [[person:Pat_Fish]], ${at}, ${rolo} )},
+
+	)}
+
+#define	Feb17.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${at}, ${ll} )},
+
+	)}
+
+#define	Mar10.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${at}, ${ll}, ${max}, ${rolo} )},
+
+	)}
+
+#define	Mar19.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${at}, ${ll}, ${max}, ${rolo} )},
+
+	)}
+
+#define	Apr19_2030.html()
+	${gigHeader(
+
+	cost=&pound;1:50,
+	with=Design For Living,
+	who=${literalizeCommas( ${pat}, ${at}, ${ll}, ${max}, ${rolo} )},
+	setlists=
+		/images/19830419/19830419_setlist.jpg$$
+		Neil Cooper;;https://twitter.com/NeilCooper1;;2018-04-01 16:00:00
+
+	)}
+
+#define	May7.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${at}, ${ll}, ${max}, ${rolo} )},
+
+	)}
+
+#define	May17.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${at}, ${ll}, ${max}, ${rolo} )},
+
+	)}
+
+#define	May18.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${at}, ${ll}, ${max}, ${rolo}, ${hook} )},
+
+	)}
+
+#define	Jun4.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${at}, ${ll}, ${max}, ${rolo}, ${hook} )},
+
+	)}
+
+#define	Jun25.html()
+	${gigHeader(
+
+	recording=${literalizeCommas( ${w}, ${q(5)}, ${p(C)} )},
+	who=${literalizeCommas( ${pat}, ${at}, ${ll}, ${max}, ${rolo}, ${hook} )},
+
+	)}
+
+#define	Jul25.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${at}, ${rolo}, ${hask} )},
+
+	)}
+
+#define	Aug21.html()
+	${gigHeader(
+
+	ootleg=${literalizeCommas( ${w}, ${q(4)}, ${p(D)} )},
+	who=${literalizeCommas( ${pat}, ${at}, ${rolo}, ${max} )},
+
+	)}
+
+#define	Sep24.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${at}, ${rolo}, ${max} )},
+		photosets=
+			/images/19830924/19830924_jazzbutcher_derngate.jpg$$
+			Kevin Barron
+			---
+			/images/19830924/19830924_group.jpg$$
+	)}
+
+#define	Sep25.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${rolo} )},
+		photosets= /images/19830925/19830925_wiggingout.jpg$$
+
+	)}
+
+#define	Oct20.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${mick} )},
+
+	)}
+
+#define	Oct1.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+
+	)}
+
+#define	Oct22.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+
+	)}
+
+#define	Nov18.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+	with=${literalizeCommas(David J.
+	)},
+
+	)}
+
+#define	Nov23.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+	with=${literalizeCommas(David J.
+	)},
+
+	)}
+
+#define	Nov24.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+	with=${literalizeCommas(David J.
+	)},
+
+	)}
+
+#define	Nov25.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${sm} )},
+	with=${literalizeCommas(David J.
+	)},
+
+	)}
+
+#define	Dec2.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${sm} )},
+
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

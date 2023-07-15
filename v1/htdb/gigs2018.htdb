@@ -1,0 +1,253 @@
+#define	Mar1_1930.html()
+	${gigHeader(
+		cost=&pound;12.50,
+		with=Tim Keegan,
+		ticketweb=https://www.ticketweb.uk/event/the-jazz-butcher-100-club-tickets/7768855,
+		notes=${literalizeCommas(
+		The Jazz Butcher are releasing a 4CD box set 'The Wasted Years' compiling their first four albums - ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’ - which originally came out on Glass Records between 1983-1986.
+		<p>
+		Formed in 1982 by songwriter/vocalist Pat Fish, The Jazz Butcher released their debut single "Southern Mark Smith" in 1983 followed by a frantic version of Jonathan Richman's "Roadrunner" the following year. The Glass Records catalogue is being re-released by Fire Records to co-incide with this concert. In 1988 the band signed to Alan McGee's Creation Records releasing an album a year with them until 1995.
+		<p>
+		Tonight is a rare chance to catch this English Cult Phenomenon in concert.
+		)},
+		pat=${literalizeCommas(
+		<p>Here's the dope on last night.</p>
+		<p>Conditions: Arctic</p>
+		<p>Punters lost to ruined travel plans: multiple</p>
+		<p>Punters who came anyway: a lot. really a lot.</p>
+		<p>Reaction of punters: enthusiastic. really enthusiastic.</p>
+		<p>Journey home: uneventful, safe.</p>
+		<p>
+		Really, really enjoyable night.
+		</p>
+		)},
+		who=${literalizeCommas(
+		${pat}, ${stevenew}, ${simon}, Nick Bandy, Lee Brooks
+		)},
+		reviews=${literalizeCommas(
+		<b>
+		LIVE
+		The Jazz Butcher \@ 100 Club (London, England) - 3/1/2018
+		</b>
+		<p>
+		The Jazz Butcher has made some of the most incisive indie pop of the last three-and-a-half decades, but despite a strong cult following and critical acclaim, the band has remained criminally underappreciated by the wider world. From the release of the band’s first album Bath of Bacon on Glass Records in 1983 up to their crowd-funded and self-released most recent album Last of the Gentleman Adventurers from 2012 (reissued by Fire Records in 2016), frontman Pat Fish (the Jazz Butcher himself) has led various incarnations of the group through a consistent (if somewhat sporadic in recent times) catalog of music to rival that any band out there. But much of the band’s music has been out of print for years, the victim of labels going out of business or being bought up, and of general bad luck. Fire Records has undertaken a project to right these wrongs, releasing a series of box sets collecting the band’s work. The first of these, The Wasted Years, came out last fall and collects the band’s four Glass Records-era albums. The second, The Violent Years, came out on Friday and collects the band’s first four albums (out of six total) for Creation Records. In honor of these releases, the current line-up held a performance last week at the storied 100 Club in the heart of London.
+		</p><p>
+		What might have been somewhat surprising, for a show meant to celebrate the reissue of such a storied back catalog, was how much of the night (a full half of the set) concentrated on the latest album, Last of the Gentleman Adventurers. After an introductory variant on the “Jazz Butcher Theme” from In Bath of Bacon, Fish and his band went directly to four songs from that record, “Animals,” “Tombé dans les pommes,” the title track, and “Black Raoul.” The record appeared two more times later in the set, with “Shakey” and “Solar Core.” Possibly an indication that Fish is more interested in the present than in dwelling too much in the past, but the songs are still very much classic Jazz Butcher material. Certainly no one in the audience seemed to mind.
+		</p><p>
+		But Fish and his current band (which has not yet appeared on any recordings) did make several nods back to the “classic” Butcher, with “Living In a Village” from 1988’s Fishcotheque, “Mr. Odd” from 1990’s Cult of the Basement, and “Shirley Maclaine” from 1991’s Condition Blue representing The Violent Years set, and “Party Time” from In Bath of Bacon. The arrangements of the songs were updated to fit with the latest line-up (particularly the impressive trumpet and flugelhorn playing of Simon Taylor, which added a unique tone to the music) but were still instantly recognizable.
+		</p><p>
+		The biggest surprise of the night for many was the inclusion of a new song, “Melanie Hargreaves’ Father’s Jaguar.” The band has been performing the track the track for a couple of years now, but it has yet to appear in recorded form. “You can’t buy this one anywhere. I guess that means it’s time for a new album,” teased Fish, to a roar of approval from the audience. Hopefully with the renewed interest that the box sets are generating, it won’t be too long until that becomes a reality.
+		</p><p>
+		The band closed out the evening with an encore of “Southern Mark Smith” from 1984’s A scandal in Bohemia. The enthusiasm of the audience even seemed to take Fish and the band by surprise, so they added one more song that wasn’t on the setlist, a cover of The Modern Lovers’ “Roadrunner” (which the Jazz Butcher released as a single in 1984). “That’s all the songs we know!” Fish said, promising that the band would be back soon. True to his word, another set at the 100 Club, opening for The Bevis Frond, has already been announced for the end of May.
+		</p><p>
+		Singer-songwriter Tim Keegan opened the show, performing songs from his most recent album The Long Game, self-released in 2015. A long-time cohort of performers including Robyn Hitchcock and The Blue Aeroplanes, Keegan had made a mark in the early-to-mid 2000s with his band Departure Lounge, but disappeared from the scene for several years. He says that he’s ready to stage a return, with a “proper” release of The Long Game followed by new material coming soon.
+		</p>
+		)}$$
+		 Matt Condon;;http://www.chunkyglasses.com/content/the-jazz-butcher-100-club-london-312018;;2018-03-10
+		,
+		photosets=
+		/images/20180301/20180301_100club.jpg$$
+		/images/20180301/20180301_unknown.jpg$$
+		---
+		/images/20180301/20180301_cannon.jpg$$
+		John Cannon
+		---
+		/images/20180301/20180301_dufour1.jpg;;Nick$$
+		/images/20180301/20180301_dufour2.jpg$$
+		Jean-Michel Dufour
+		---
+		/images/20180301/20180301_harris.jpg$$
+		Kelly Harris
+		---
+		/images/20180301/20180301_sewell1.jpg$$
+		/images/20180301/20180301_sewell2.jpg$$
+		Matt Sewell
+		---
+		/images/20180301/20180301_whitworth.jpg$$
+		Michael Whitworth,
+		---
+		/images/20180301/20180301_NNNPackdrill_band.jpg;;Jazz Butcher pouring it on at the hundred$$
+		\@NNNPackdrill;;https://twitter.com/NNNPackdrill
+		---
+		/images/20180301/20180301_condon.jpg$$
+		/images/20180301/20180301_arcane93_1.jpg$$
+		/images/20180301/20180301_arcane93_2.jpg;;${simon}$$
+		/images/20180301/20180301_arcane93_3.jpg$$
+		/images/20180301/20180301_arcane93_4.jpg;;${stevenew}$$
+		/images/20180301/20180301_arcane93_5.jpg$$
+		/images/20180301/20180301_arcane93_6.jpg$$
+		/images/20180301/20180301_arcane93_7.jpg;;Lee Brooks$$
+		/images/20180301/20180301_arcane93_8.jpg$$
+		/images/20180301/20180301_arcane93_9.jpg$$
+		/images/20180301/20180301_arcane93_10.jpg$$
+		/images/20180301/20180301_arcane93_11.jpg$$
+		/images/20180301/20180301_arcane93_12.jpg;;Nick Bandy$$
+		/images/20180301/20180301_arcane93_13.jpg$$
+		/images/20180301/20180301_arcane93_14.jpg$$
+		Matt Condon;;https://twitter.com/arcane93
+	)}
+
+#define	May24_2000.html()
+	${gigHeader(
+		cost=&pound;5.50,
+		with=${literalizeCommas(John Hegley)},
+		ticketweb=https://www.wegottickets.com/event/436057,
+		notes=${literalizeCommas(
+			CND 60th Anniversary celebration.
+			<p>
+			Should be a good night. Hegley is brilliant.
+		)},
+		who=${literalizeCommas(
+		${pat}, ${stevenew}, ${simon}, Nick Bandy, Lee Brooks
+		)},
+		photosets=
+		/images/20180524/20180524_mcgrath_cnd1.jpg$$
+		/images/20180524/20180524_mcgrath_cnd2.jpg$$
+		/images/20180524/20180524_mcgrath_cnd3.jpg$$
+		/images/20180524/20180524_mcgrath_cnd4.jpg$$
+		/images/20180524/20180524_mcgrath_cnd5.jpg$$
+		/images/20180524/20180524_mcgrath_cnd6.jpg$$
+		Rachel McGrath
+	)}
+
+#define	May5_1930.html()
+	${gigHeader(
+		cost=&pound;22.00,
+		with=${literalizeCommas(Luke Haines)},
+		ticketweb=https://www.seetickets.com/event/luke-haines/the-lexington-london/1204840,
+		notes=${literalizeCommas(
+			Supporting Luke Haines
+		)},
+		who=${literalizeCommas(
+		${pat}
+		)},
+		photosets=
+		/images/20180505/20180505_matwallis.jpg$$
+		Mat Wallis
+	)}
+
+#define	May27_1930.html()
+	${gigHeader(
+		cost=&pound;22.00,
+		with=${literalizeCommas(The Bevis Frond, Jowe Head)},
+		ticketweb=https://www.seetickets.com/event/the-bevis-frond/100-club/1206772,
+		notes=${literalizeCommas(
+			This Corner of England #2
+		)},
+		who=${literalizeCommas(
+		${pat}, ${stevenew}, ${simon}, Nick Bandy, Lee Brooks
+		)},
+		photosets=
+		/images/20180527/20180527_heeson_1.jpg$$
+		/images/20180527/20180527_heeson_2.jpg$$
+		/images/20180527/20180527_heeson_3.jpg$$
+		Mick Heeson
+		---
+		/images/20180527/20180527_turner_1.jpg$$
+		/images/20180527/20180527_turner_2.jpg$$
+		/images/20180527/20180527_turner_3.jpg$$
+		/images/20180527/20180527_turner_4.jpg$$
+		/images/20180527/20180527_turner_5.jpg$$
+		/images/20180527/20180527_turner_6.jpg$$
+		/images/20180527/20180527_turner_7.jpg$$
+		/images/20180527/20180527_turner_8.jpg$$
+		/images/20180527/20180527_turner_9.jpg$$
+		/images/20180527/20180527_turner_10.jpg$$
+		Joe Turner
+		---
+		/images/20180527/20180527_delrio_1.jpg$$
+		Tom Del Rio
+		---
+		/images/20180527/20180527_arcane93_pat.jpg$$
+		Matt Condon;;https://twitter.com/arcane93
+	)}
+
+#define	Apr14_2000.html()
+	${gigHeader(
+		eventweb=http://thelabnorthampton.club/,
+		with=${literalizeCommas(Thomas Truax)},
+		who=${literalizeCommas( ${pat})},
+		photosets=
+		/images/20180414/20180414_cunninham.jpg$$
+		Sean Michael Cunningham
+	)}
+
+#define	Jul28_1930.html()
+	${gigHeader(
+		cost=&pound;10.50,
+		ticketweb=https://www.bristolticketshop.co.uk/eventdetails.aspx?e=18056,
+		eventweb=https://thethunderbolt.net,
+		who=${literalizeCommas(
+		${pat}, ${stevenew}, ${simon}, Nick Bandy, Lee Brooks,
+		)},
+		with=${literalizeCommas(The Would-be-goods Two, Short Stories)},
+	)}
+
+#define	Aug4_2100.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat})},
+		with=${literalizeCommas(Alex Novak)},
+		photosets=
+		https://s3.amazonaws.com/assets.jazzbutcher.com/images/20180804/20180804_tobyrose_pat.jpg$$
+		toby rose;;https://www.flickr.com/photos/129025072\@N04/43150287664
+	)}
+
+#define	Aug25_1900.html()
+	${gigHeader(
+		cost=£14.85,
+		ticketweb=https://www.seetickets.com/event/david-j/the-islington/1230762,
+		who=${literalizeCommas( ${pat})},
+		with=${literalizeCommas(${dj}, Mickey Greaney)},
+		notes=${literalizeCommas(Ex Bauhaus/ Love & Rockets star David J returns to London’s The Islington in August. Support from The Jazz Butcher and Micky Greaney at this lovely little London venue soon.)},
+		photosets=
+		/images/20180825/20180825_barker_group.jpg;;${literalizeCommas(${max}, ${barker}, ${dj})}$$
+		${barker}
+	)}
+
+#define	Nov8_1930.html()
+	${gigHeader(
+		cost=&pound;19.25,
+		eventweb=https://www.the100club.co.uk/,
+		ticketweb=https://agmp.ticketabc.com/events/daniel-treacy/,
+		who=${literalizeCommas( ${pat})},
+		with=${literalizeCommas(
+			EVAN DANDO (The Lemonheads),
+			GINA DAVIDSON (Marine Girls),
+			FAT WHITE FAMILY feat. Pat Lyons,
+			THE DOCTOR (Doctor and the Medics),
+			ROLO McGINTY (The Woodentops),
+			ROSE McDOWALL (Strawberry Switchblade),
+			CRE001: THE LEGEND!,
+			THE VESSEL (David Devant and his Spirit Wife),
+			support: MICKO AND THE MELLOTRONICS,
+			DJ: ALAN McGEE (Creation Records),
+			DJ: STEVE PROCTOR (Better Days)
+		)},
+		notes=${literalizeCommas(
+			Though never a great commercial success, The Television Personalities, and their leading light Daniel Treacy are spoken of in reverential tones by all of those familiar with their work. The term genius is bandied around all too casually in the wacky world of pop, but in this case it barely does this band's simple but beautiful songs, sometimes deeply poignant, occasionally angry, from time to time hilarious and always truthful, justice.
+			<p>
+			The Television Personalities were Kurt Cobain's favourite band,  MGMT wrote 'A Song For Dan Treacy' for their 2010 album "Congratulations", and Alan McGee, who joins us as our DJ for the night and to whom we are indebted to for his support of this gig, once described him as "the poet laureate of working-class London". He credits the Television Personalities for inspiring him to start Creation Records. Their fingerprints are all over the work of every indie outfit to have followed them.
+			<p>
+			Many special guests will be invited to join musicians from the numerous and varied line-ups over the years of the TVPs. Some will be announced as we have further details, others will be surprises on the night. What we can promise you is a unique, one time only celebration of some of the most perfectly crafted and influential music of the last 40 years.
+			<p>
+			Daniel sustained a serious brain injury in 2011 and is for now receiving full time residential care. All proceeds from tonight's show will go directly to help him and his family to maintain for him the best possible quality of life. Though unlikely to be up to performing, we very much hope he will be joining us, to accept a salute from his friends and admirers to his extraordinary body of work. 
+		)},
+		photosets=
+		/images/20181108/20181108_keikorockpile_Pat.jpg$$
+		\@keikorockpile;;https://twitter.com/keikorockpile
+		---
+		/images/20181108/20181108_SpiderPixie73_Pat.jpg$$
+		/images/20181108/20181108_SpiderPixie73_PatRose.jpg;;${literalizeCommas(${pat} and Rose McDowall)}$$
+		\@SpiderPixie73;;https://twitter.com/SpiderPixie73
+		---
+		/images/20181108/20181108_WraggStephan_pat.jpg$$
+		\@WraggStephan;;https://twitter.com/WraggStephan
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

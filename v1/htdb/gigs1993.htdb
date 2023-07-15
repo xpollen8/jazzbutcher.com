@@ -1,0 +1,678 @@
+#define	Feb15.html()
+	${gigHeader(
+		recording=${literalizeCommas(${q(7)}, ${p(B)}, ${i(B)} ${g(1)})},
+		who=${literalizeCommas(
+			${pat}, ${pete}
+		)},
+		pat=${literalizeCommas(
+			The guy hosting the event was Bernard
+			Lenoir, easily France's most famous rock DJ. The word is (and I believe it)
+			that Jim Morrison actually died in his house, and had to be moved back
+			across town into his own shower...
+		)}
+	)}
+
+#define	Feb16.html()
+	${gigHeader(
+		soundman=${literalizeCommas(${joe})},
+		address=5 rue Boit,
+		cost=100&#8355;,
+		postalcode=75017,
+		who=${literalizeCommas(
+			${pat}, ${dooj}, ${pete}, ${nick}
+		)},
+		pat=${literalizeCommas(
+			<a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a>
+			<p>
+			Seated; 300 people, some drunks.
+		)},
+		tickets=
+			/images/19930216/19930216_ticket.jpg$$
+			Pierre Guillaume
+		,
+		photosets= /images/19930216/19930216_paris.jpg$$
+		,
+	)}
+
+#define	Feb17.html()
+	${gigHeader(
+		soundman=${literalizeCommas(${joe})},
+		who=${literalizeCommas(
+			${pat}, ${dooj}, ${pete}, ${nick}
+		)},
+		pat=${literalizeCommas(
+			<a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+			650km.  drive to Bordeaux.  Wake up at the back, you're on tour.
+			Joe Foster gets in massive ruck with everyone in the restaurant
+			at dinner.  Tony considers judging him.  Le Jimmy (yes!) is a punky
+			club with about 200 souls.  We rock.  Many drunks.
+		)}
+	)}
+
+#define	Feb18.html()
+	${gigHeader(
+		soundman=${literalizeCommas(${joe})},
+		who=${literalizeCommas(
+			${pat}, ${dooj}, ${pete}, ${nick}
+		)},
+		pat=${literalizeCommas(
+			<a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+			Tiny club, fragile heads.  Lead singer buys cakes
+			for all.  What a swell guy.  Pete makes the first of many doomed
+			sexual overtures, later asks promoter for girl's address.
+			Pat, Kathie, Joe and Dooj stay at the Holiday Inn.
+			Tony, Nick and Pete stay in small concentration camp above the club,
+			which was severely overloaded at 150 people.
+		)}
+	)}
+
+#define	Feb19.html()
+	${gigHeader(
+		soundman=${literalizeCommas(${joe})},
+		who=${literalizeCommas(
+			${pat}, ${dooj}, ${pete}, ${nick}
+		)},
+		pat=${literalizeCommas(
+			<a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+			Short drive today, which is fortunate as Tony succeeds
+			in running out of petrol today.  Tony considers bashing everybody.
+			T.V. Smith of the Adverts opens, solo and acoustic.  He is great.
+			Some 150 customers, the show a little dull, but a great party
+			afterwards.
+		)}
+	)}
+
+#define	Feb20.html()
+	${gigHeader(
+		soundman=${literalizeCommas(${joe})},
+		who=${literalizeCommas(
+			${pat}, ${dooj}, ${pete}, ${nick}
+		)},
+		pat=${literalizeCommas(
+			<a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+			Beer for breakfast.  Beer for lunch.  This is more like it.
+			Joe fails to get delays moving at soundcheck.  Pat considers
+			having him sent to Siberia.  Pretentious Mexican dinner.
+			Everyone considers dropping everybody else.
+			Dooj terrorised in dressing room by enormous dog called "The Head".
+			Pat and Tony shamelessly collaborate with the beast,
+			which Joe insists is a bear.  Staggeringly pretentious support group.
+			JBC deliver first really hot show of the tour. Only partially morose.
+			250 in the house.  Some drunks, chief among them Tony and Pat.
+		)}
+	)}
+
+#define	Feb21_2000.html()
+	${gigHeader(
+		soundman=${literalizeCommas(${joe})},
+		who=${literalizeCommas(
+			${pat}, ${dooj}, ${pete}, ${nick}
+		)},
+		pat=${literalizeCommas(
+			<a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+			Onstage at 8:00 pm on a sunday in
+			an ART SHED near a village in French Wales.  50 punters.
+			Brilliant. Dinner of the tour follows.
+		)}
+		,
+	)}
+
+#define	Feb24.html()
+	${gigHeader(
+		soundman=${literalizeCommas(${joe})},
+		who=${literalizeCommas(
+			${pat}, ${dooj}, ${pete}, ${nick}
+		)},
+		pat=${literalizeCommas(
+			<a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+			Nick has a snare drum and some brushes.  The other
+			three have guitars.  Everyone sings as we play in a small stone bar
+			with psychadelic lights for about 25 people.  We're supposed to be in
+			Rotterdam, but someone fucked up.  This is great fun anyway.  We play
+			${king} and Bad Moon Rising, but Kathie prevents us from
+			rendering the classic Red River Dave song the California Hippy
+			Murders.
+		)},
+		photosets= /images/19930223/euro93.jpg$$
+			${kathie}
+	)}
+
+#define	Feb25.html()
+	${gigHeader(
+		soundman=${literalizeCommas(${joe})},
+		who=${literalizeCommas(
+			${pat}, ${dooj}, ${pete}, ${nick}
+		)},
+		pat=${literalizeCommas(
+			<a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+			A hipster hangout in a scary and squalid
+			part of town.  Small and full (100?150?) and quite cheerful.
+			French drunks.  Drive back to Breda cursing the gas stations that
+			only work on credit cards.  Tony gets breath tested by The Man and
+			comes up negative.
+			We all applaud as we drive away from the bewildered cops.
+		)}
+	)}
+
+#define	Feb26_2000.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	A double header.
+	We were booked for Para (100 people.  Loud and vicious)
+	)},
+
+	)}
+
+#define	Feb26_2300.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	A double header. we went on to Zanetti
+	again to play in the basement, a
+	fabulous drugs cavern where we played not-really-acoustic-at-all for
+	extra money and laffs.  Many drunks.  Deep joy.
+	)},
+
+	)}
+
+#define	Feb27.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	The first of four German dates supporting ${belly}.
+	Nobody in Hamburg seems to know who they are.  350 people in a
+	smallish club.  We and they are great.
+	Quite forget about Old Belly, who come on later and are not
+	very interested in a typically
+	${4AD} way.
+	Many drunks.  Some narcotics abuse.
+	)},
+	with=${literalizeCommas( Belly
+	)},
+
+	)}
+
+#define	Feb28.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	Great journey to Berlin, wherein Tony Pat and Kathie
+	form The New Government Of Russia
+	(policies on application - $5,799.99).  Shoddy show from the JBC but
+	${belly} are more interesting tonight.  We like Gail the bass player.
+	If anyone's worried about the two singers they're being very adult
+	about it.  400 people in the house.
+	East German drunks.
+	)},
+	with=${literalizeCommas( Belly
+	)},
+
+	)}
+
+#define	Mar1.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	Bus refuses to start.  Pete and Pat abandon rest of party in Berlin,
+	get in German tour manager's car and play Munich Charterhalle
+	as a
+	duo.  The "club" is the hall of Munich's only-just-disused airport.
+	Intimate it isn't especially with only 200 people in this huge barn.
+	We all have fun, though, and loot Belly's booze n stuff ruthlessly.
+	Meanwhile, in Berlin, Joe fails to find the way to Cologne for four
+	hours.  Everyone, I'm told, considers stabbing him.
+	)},
+	with=${literalizeCommas( Belly
+	)},
+
+	)}
+
+#define	Mar2.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	We arrive to find that Belly's van has broken down.
+	We laugh and <a href="${jbc_press}/94takeover.html">
+	send Tony in The Love Bus to rescue them</a>.  400 people,
+	a really good show.  Many drunks, some violent.
+	)},
+	with=${literalizeCommas( Belly
+	)},
+
+	)}
+
+#define	Mar4.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	Long scary drive over the Alps to
+	Italy.  50 people watch us play for over two hours at a wonderful
+	club.  The chap on stage doing the handstands and shit is the
+	promoter.  The hotel has llamas.
+	)},
+
+	)}
+
+#define	Mar5.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	800 in a huge discotheque
+	and a rider that would embarrass the support group at the Rock
+	Garden.  No wonder the singer punched out the toilet doors in the
+	dressing room.  This offers the cue for the release of general
+	mayhem, not helped by the Hotel Putana where we have been put.
+	Great concert, insulting promoters, bloody night.
+	)},
+
+	)}
+
+#define	Mar6.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	Small, communist-run club, the opposite of last
+	night, and all the more pleasing.  150 people, many drunks, and a
+	support group something like ${haus} More drunks.
+	)},
+
+	)}
+
+#define	Mar7.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${nick} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	Pete, acting on an internal agenda that has led him to drink solidly
+	for 72 hours, disappears in the middle of the night to devote his
+	time to serving drinks on British Airways.
+	"A little twist with that?" JBC are expected in Salzburg,
+	so we drive.  It also appears that the love bus is ready to expire
+	at any moment, so will fill the tank with the engine running.
+	Somewhere on the way I am seized of a powerful idea and make a
+	phone call.
+	We arrive after hours of anxious
+	bus stuff and full scale Alpine blizzard.
+	There isn't much time for a soundcheck.  I just turn up the
+	Telecaster and hope for the best.  200 people, a nervy beginning.
+	It ended up well.  "You don't need another guitarist" says the
+	promoter.  Smiling, I make another phone call. Promoter buys us all
+	an elaborate dinner.  Tony considers sloshing him.
+	)},
+
+	)}
+
+#define	Mar9.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${nick}, ${lix} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	We have a day off in Salzburg, which is all it takes.  I stay in bed
+	till five, have a meal in the Styrian bar, pick up our secret weapon
+	and go back to the Styrian bar, where I meet the group and introduce
+	them to ${lix}. Jagermeister. Drunks.
+	This is where it gets Really Weird.
+	The Love Bus finally clocks out at lunchtime, and we travel the
+	last 80km to the show on the back of a tow-truck.  In the dark.
+	Through Alps.  The show is somebody's 40th birthday surprise.
+	He has one leg.  Whoooa.  Lix makes his live JBC debut.  Very loud.
+	Very exciting.  All drunk.
+	The whole town.
+	)},
+
+	)}
+
+#define	Mar10.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${nick}, ${lix} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	200 people.  Back in the hotel where we were
+	previously narrowly prevented from stealing the ducks.  No sign of
+	any ducks this time.  Dinner in the rudest restaurant in the world.
+	All think about biffing the propriator, but don't because hs's
+	Turkish and it wouldn't do to be misunderstood.
+	)},
+
+	)}
+
+#define	Mar11.html()
+	${gigHeader(
+
+		with=${literalizeCommas( ${wolfi} )},
+		who=${literalizeCommas( ${pat}, ${dooj}, ${nick}, ${lix} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	<a href="${jbc_letters}/93Aug30/intro.html">${butch} requests help!</a><p>
+	300 people (more?)  Opening act is one
+	"Jac" (${wolfi}), a lone 19 year old Austrian who is brilliant.
+	JBC follow him on and open with ${girls}, which Lix has
+	just remembered a few minutes ago.  It, and all that follows it,
+	walks a charmed route through chaos, and by the end of the night
+	I am fairly sure that this was the best JBC show ever.
+	Many drunks, nightclubs.  Kathie, Lix and I end up in the
+	hotel manager's apartment.
+	)},
+
+	)}
+
+#define	Mar12.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${nick}, ${lix} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	Ebensee is reached down a lakeside road with bizarre
+	gothic tunnels cut through forbidding rock faces, all decorated with
+	ancient coats of arms.  "Castle?  There is no castle HERE..."  Dooj
+	cracks two ribs cannoning into a p.a. stack.  We seize Gerard
+	Langley's silly mic-stand, which he left here.
+	We still have it and taunt him with it at regular intervals.
+	Thousands of drunks.
+	)},
+
+	)}
+
+#define	Mar13.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${nick}, ${lix} )},
+		pat=${literalizeCommas( <a href="${jbc_letters}/93Aug30/tour.html">${butch} reviews the tour.</a><p>
+	We close the tour in one of our favourite
+	venues.  Two guitars and one amplifier loaded on the love bus in
+	urgent need of some professional maintenance.
+	Notable for acapella rendition of Winter Wonderland enlivened
+	by guitar roadie's fetching alto harmony.  She is not, however,
+	yet expected to appear onstage with a lot of keyboards.  Drunks.
+	)},
+
+	)}
+
+#define	Apr7.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+
+	)}
+
+#define	Apr21.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+
+	)}
+
+#define	May15.html()
+	${gigHeader(
+		recording=${literalizeCommas(${q(7)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT})},
+		bootlegger=${literalizeCommas(${matt})},
+		who=${literalizeCommas(
+			${solo}
+		)},
+		notes=${literalizeCommas(
+			Small, enthusiastic crowd, nervous performer, intimate show.
+			<p>
+			About Matt Cockerill's recording: tech - mono, lapel microphone.
+		)},
+		reviews=${literalizeCommas(
+				<p>It was just him! besides, there wouldn’t have been room for anybody else.
+				<p>Pat was wandering around the bar during the support acts, muttering "Christ, I’m nervous. I haven’t done this in years."
+				<p>The audience were mostly seated (as was he) around him, looking agog, like he was some guru.
+			)}$$
+			Matt Cockerill,
+		pat=${literalizeCommas(
+			<h3>THAT MEAN <a href="${jbc_gigs}/1993/May15.html">FIDDLER
+			SET</a> LIST IN FULL...</h3>
+			<dl>
+			<dd>${sue} (<i>Susie</i>, you fool, it was <i>Susie</i>!
+			Did I make THAT much of a mess of it?)</dd>
+			<dd>${sweet} (Yes, from the new l.p.)</dd>
+			<dd>${davis} (Yes again)</dd>
+			<dd>${go}</dd>
+			<dd><i>September Gurls</i> (Alex Chilton)</dd>
+			<dd><i>Waiting For The Love Bus</i> (A one-off.  It went
+			through the mincer and now it's a ${aero} album track or
+			something.)</dd>
+			<dd>${whad} (New l.p again.  Only a BIT morose)</dd>
+			<dd>${sis} (Yeeeaaaaah)</dd>
+			<dd>${odd}</dd>
+			<dd>${ben} (New lp stuff.  A ballad about being eaten by
+			lions; "It's a family affair")</dd>
+			<dd>${ghost} (Yes, new lp again.  They really went for
+			this one, you know.  It was scary.)</dd>
+			<dd>${drugs} (Now they're rockin')</dd>
+			<dd>${angels} (Ha ha ha ha ha!  You Fools!  HA HA HA!!
+			HAHAHAHAHAHAHAHAHAHA!!!!!)</dd>
+			<dd><i>Goodnight Irene</i> (By 
+			Leadbelly, as covered by The Great 
+			Mo Tucker. Cf. Paris 15.2.93)</dd>
+			</dl>
+			<p>
+			They were making a terrible fuss and I knew they all
+			really wanted me to grin and sing about getting pissed
+			and that, and been SO patient, so I did
+			<dl>
+			<dd>${hour}</dd>
+			and
+			<dd><i>Skinheads</i></dd>
+			</dl>
+			<p>
+			Then I fucked off but they kept on making an impressive
+			old din, so eventually, not to seem cocky or anything,
+			I went and got up there again.  Some bloke shouts out
+			for ${chick} and I think "Uh-oh" so I ask him if he means
+			that load of old bollocks about chickens in the bathroom,
+			chickens on a stick sorta thing and he goes "NAAAH, you
+			PILLOCK! ${chick}, the song." and I go "Wot? That miserable
+			fucker?" and he goes "Yeh." and so I think "Fuckin' right
+			John" and I play the fucker.  Rather well, i thought.
+			I hit the A-minor at the end, and I thought "This is
+			great, this, I want to do another rockin' number, one
+			that starts on A-minor, and I want to do the fucker RIGHT
+			NOW, but the only tune I could think of in that nanosecond
+			was ${walk}, so I thought "You can't play that, you haven't
+			played that fucker in four years, you won't remember
+			it and you'll fuck up the words and it'll be slow and
+			crap and you'll end up stabbing the whole lovely evening
+			in the back of the legs", but, of course, it was too
+			late by then to anything but start, so I said to myself
+			Fuck It and I gave it some, and I don't think I played
+			any wrong chords or notes, and I resisted the temptation
+			to whistle in the middle-8 (which sounds like a good
+			idea, but isn't because the mic always make your whistling
+			sound like that) and I made it to the end and they clapped, phew!
+			<p>
+			What made me do that?
+			<p>
+			Yeh, so
+			<p>
+			<dl>
+			<dd>${chick}</dd>
+			<dd>${walk}</dd>
+			</dl>
+			${g_source(g=Pat Letter: 1993-08-30, u=${jbc_letters}/93Aug30/fiddler.html, d=1993-08-30)}
+		)}
+	)}
+
+#define	Aug11.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj} )},
+
+	)}
+
+#define	Aug20.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${eg} - Karel and Otto ${damm}
+		)},
+		recording=${literalizeCommas(${q(9)}, ${p(A)}, ${i(A)} ${g(1)})},
+		reviews=highly recommended!$$
+			${del}
+		,
+		photosets=
+			/images/19930820/19930820_blackeg_cover.jpg$$
+			/images/19930820/19930820_blackeg_a.jpg$$
+			/images/19930820/19930820_blackeg_b.jpg$$
+			${del}
+	)}
+
+#define	Aug27.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+
+	)}
+
+#define	Aug29_1200.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+
+	)}
+
+#define	Aug29_2000.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+	setlists=
+		/images/19930829/19930829_setlist.jpg$$
+
+	)}
+
+#define	Sep3.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+
+	)}
+
+#define	Sep9.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${lix}, ${paul} )},
+
+	)}
+
+#define	Sep15.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj} )},
+
+	)}
+
+#define	Oct20.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${richard} )},
+
+	)}
+
+#define	Oct22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${richard}, ${dooj}, ${paul} )},
+		with=${literalizeCommas( Spittle Rattle)},
+
+	)}
+
+#define	Oct28.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${rev})},
+	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(A)}, ${mt})},
+		who=${literalizeCommas( ${pat}, ${paul}, ${green} )},
+		with=${literalizeCommas( ${cale} )},
+	notes=${literalizeCommas(opening for ${cale}. never so nervous.)},
+		photosets= /images/19931028/pass_28Oct93.jpg;;All-Access Pass$$
+			${del},
+		tickets=/images/19931028/19931028_ticket.jpg$$
+			Alexander Vrchoticky
+	)}
+
+#define	Oct30.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${paul}, ${dooj}, ${richard} )},
+	setlists=
+		/images/19931030/19931030_notebook_setlist.jpg$$
+			Pat's notebooks.
+
+	)}
+
+#define	Nov12.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${richard} )},
+
+	)}
+
+#define	Nov13.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${richard} )},
+
+	)}
+
+#define	Nov15.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${richard} )},
+
+	)}
+
+#define	Nov17.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${richard} )},
+
+	)}
+
+#define	Nov19.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${richard} )},
+
+	)}
+
+#define	Nov27.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj}, ${richard} )},
+
+	)}
+
+#define	Dec22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${dooj} )},
+
+	)}
+
+#define	Dec23.html()
+	${gigHeader(
+		recording=${literalizeCommas(${q(9)}, ${p(A)}, ${i(A)}, ${mt})},
+		bootlegger=${literalizeCommas(${del})},
+		who=${literalizeCommas(
+			${pat}, ${dj}
+		)},
+		notes=${literalizeCommas(
+			Christmas gig. Pat is joined by David J.
+		)},
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

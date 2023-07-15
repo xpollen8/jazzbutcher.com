@@ -1,0 +1,921 @@
+#define	Feb26.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
+
+	)}
+
+#define	Mar2.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar3.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+		tickets=
+			/images/19900303/19900303_ticket.jpg$$
+
+	)}
+
+#define	Mar4.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar7.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar8.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar9.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar10.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar13.html()
+	${gigHeader(
+
+		cost=90&#8355;,
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+		tickets=
+			/images/19900313/19900313_ticket.jpg$$
+			Pierre Guillaume
+
+	)}
+
+#define	Mar14.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar15.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar16.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar17.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar30.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Mar31.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr1.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr4.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr5.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr6.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr7.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr8.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr11.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr13.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+		with=${literalizeCommas( Tav Falco )},
+
+	)}
+
+#define	Apr15.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr17.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr18.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr19.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr20.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr21.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr23.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr24.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr25.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr26.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr27.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr28.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+		setlists=
+		/images/19900428/19900428_setlist.jpg$$
+
+	)}
+
+#define	Apr29.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Apr30.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	May1.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	May23.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${green} )},
+
+	)}
+
+#define	Jun16.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Jul4.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Aug21.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+
+	)}
+
+#define	Aug25.html()
+	${gigHeader(
+
+		recording=${literalizeCommas( ${w}, ${q(5)}, ${p(B)})},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} (his last show), ${green} )},
+		pat=${literalizeCommas( odd sounds from the rented guitar amps!
+		)},
+
+	)}
+
+#define	Sep13.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+
+	)}
+
+#define	Sep14.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+
+	)}
+
+#define	Sep15.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+
+	)}
+
+#define	Oct22.html()
+	${gigHeader(
+
+		cost=$8,
+		with=${literalizeCommas( Big House)},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		setlists=
+		/images/19901022/19901022_eddietrojan_setlist.jpg$$
+			Eddie Trojan
+
+	)}
+
+#define	Oct23.html()
+	${gigHeader(
+
+		cost=$10.00,
+		address=22nd NW & NW Market,
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		tickets=
+			/images/19901023/19901023_ticket.jpg$$
+
+	)}
+
+#define	Oct26.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+
+	)}
+
+#define	Oct29.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+
+	)}
+
+#define	Oct30.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+
+	)}
+
+#define	Oct31.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+
+	)}
+
+#define	Nov1.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+
+	)}
+
+#define	Nov3.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+
+	)}
+
+#define	Nov5.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${nancy})},
+		recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(B)}, ${g(1)}, ${VHS}, ${g_details(good sound. a little far away.)})},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			this was my 1st stop and where the
+			${aero} joined the JBC who
+			had just come across from western canada.
+			both bands were on particularly
+			good behaviour in front of each other.
+		)}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes, Jellyfish )},
+	)}
+
+#define	Nov6.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			one of the best turnouts of the tour.  except through canada, where
+			the JBC are better known, the bands will take turns headlining.
+			this pisses off the BA managers a bit, since they are on a major
+			label (chrysalis).  whereas the JBC tool around in a Dodge van
+			("note the pedestrian advisory on the front of the bus" pat quips),
+			the BA have a classic rock-n-roll touring coach with TV and bar.
+			however, the bands themselves just seem to enjoy
+			being able to tour together.
+		)}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+		tickets=
+			/images/19901106/19901106_ticket.jpg$$
+			Kevin Carroll
+		,
+
+	)}
+
+#define	Nov7.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			the bands drink more beers (93) than people turn out (92).
+			wojtek, the BA dancer takes the opportunity to jump on the sparcely
+			populated bar at the edge of the stage and dances above speechless
+			drinkers.  a 6 guitar strong version of ${jane} as the JBC
+			join the ${aero} on stage for the last song.
+		)}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov8.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+	days on tour work into a simple regime: up around 8, sample
+	the hotels coffee and on the road by 8h30 for a 5 hour drive.
+	unload the bus, soundcheck for about an hour, peruse the local
+	eateries and relax until the show begins.  whereas the JBC stay
+	in hotel and drive during the day, the BA drive directly
+	through the night in the rock-n-roll chicken (the damned thing
+	has huge flying eagles painted all over it much to the JBC
+	bemusement!) and wake up in the next town.
+	the hotel was full of teenagers with black tee-shirts waiting
+	to get a glimpse of
+	AC/DC who
+	were staying a few floors up.  laurence (the stubborn
+	JBC bass player) managed to sleep in too late and the hotel management
+	insisted that we pay for another day.
+	"they check in... but they cant check out!"
+	the JBC do not particularly like canada.
+	it takes $23 to fill the car with gas.
+	*i* do not particularly like canada.
+		)}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov9.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			a show to live in JBC memory.  the venue was in the guelph
+			university union where, apparently, there was some sort of
+			rule prohibiting alcohol to be in the hallways.  well, a hallway
+			separated the dressing room and the venue.  during the JBC set,
+			the nazi youth door checkers in matching shirts, haircuts and
+			walky-talkies, mistake the BA drummer for a bum and pummel him
+			during his cross from the dressing room to the venue.  ${party} contains
+			the great line "give em a walkie-talkie and they think theyre
+			adolph hitler".
+		)}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov10.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			the show is sponsored by a local brewery, st ambroise of which
+			the JBC entire approve.  pat plays ${mer} for the french as well
+			as ${dj} ${over}.  it is generally known that it
+			is not a good idea to fall asleep in the presence of the JBC.
+			during pack-up, i nod off and awaken to martin hovering above
+			me with a sharpie (TM).  bastards!
+		)}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov11.html()
+	${gigHeader(
+
+		recording=${literalizeCommas( ${q(9)}, ${p(B+)}, ${i(A)}, ${g(1)}, ${VHS})},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			the best gig i saw.  the room was full of video equipment from
+			rough trade who tape both shows.  i begin filming for the ${tues}
+			video.  pat agrees with my assessment that it is a traffic tune.
+			by now, the JBC/BA (or JBAC as pat calls it) join each other on
+			stage for their last tunes.  ${wheel} turns into a giant frenzy
+			with ${lix} and angelo from
+			the BA on guitars and pat dancing
+			around like a las vegas entertainer with his
+			microphone.  this *is* what he lives for.
+		)}$$
+			${del}
+		,
+		photosets= /images/19901111/1990Nov11_pat.jpg$$
+			/images/19901111/1990Nov11_alex.jpg$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov12.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${woj})},
+		recording=${literalizeCommas( ${w}, ${g(1)}, ${q(4)}, ${i(D)})},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			maxwells, the traditional 1st stop on the JBC tour and the 1st
+			place they ever played.  whatta shithole! (sorry).  a dank room
+			with a poor sounding pa and not enough room for the guitar army.
+			they should have seen it coming.  after two night of intense success,
+			they bomb.  the small crowd is apathetic and most leave after the
+			${aero} open.
+		)}$$
+			${del}
+		,
+		tickets=
+			/images/19901112/19901112_ticket.jpg$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov12_1200.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			before the Maxwell's show, rich hall of the comedy channel show "the
+			onion world" has the JBC on to play ${consp} and ${odd} to video cameras
+			in a speaker shop.  it seems that this rich hall guy plays JBC
+			material quite often on his TV show.  pat says that when he gets
+			royalty sheets there are things like "${odd}, 1 play, madrid";
+			"${jungle}, 1 play, chicago"; and then a whole page of stuff from
+			being played on the comedy channel.
+		)}$$
+			${del}
+		,
+		photosets= /images/19901112/19901112_del_comedy1.jpg$$
+			/images/19901112/19901112_del_comedy2.jpg$$
+			/images/19901112/19901112_del_comedy3.jpg$$
+			${del}
+
+	)}
+
+#define	Nov13_1200.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat} )},
+		reviews=
+		${literalizeCommas(
+			we go to rough trade where pat does an interview and we watch
+			a bit of the boston show video. (interview is cut short on DAT)
+		)}$$
+			${del}
+
+	)}
+
+#define	Nov13.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			this is the 1st time i ever put any of my stuff
+			onto the bus so that i can ride into manhattan with them.
+			we go to rough trade where pat does an interview and we watch
+			a bit of the boston show video.  while martin and i walk around
+			manhattan before the soundcheck, phil drives around doing errands.
+			the burglar of loves cousin breaks into the van and offs with
+			my 16mm movie camera and all the ${tues} footage, and EVERY SINGLE
+			JBC TAPE I EVER HAD.  bottom line: i lost my ass.  being on
+			the JBC bus, it was not insured.  julians hollow body guitar
+			is taken too.  he has to borrow angelos for the rest of the tour.
+		)}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov14.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+			${literalizeCommas(
+				washington consists of big polished mercedes and back alleys
+				of rats.  i slip the new JBC single into the dance mix before
+				the set and only the band notices!  laurence is overheard using
+				the pickup line "its your loss, not mine".  JBC fans from new
+				jersey fill a hotel bathtub with booze and proceed to feed them
+				to the band.  for a group one would image to be total alcoholics,
+				the JBC were surprisingly sober, i found out.  realistically,
+				with only a few hours to sleep each night, it doesnt make sense
+				to drink heavily.  BUT!  the shades *are* for real.  the JBC
+				always leave the hotel
+				in the morning wearing sunglasses as a hangover deterrent.
+			)}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+		tickets=
+			/images/19901114/19901114_ticket.jpg$$
+			Eric R Lillyblad
+	)}
+
+#define	Nov15.html()
+	${gigHeader(
+
+		bootlegger=${literalizeCommas(${del})},
+		recording=${literalizeCommas( ${d}, ${q(8)}, ${p(A)} ${mt}, ${g_details(nice sound. hot in right channel.)})},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+				${jules}'s 1st time ever playing ${angels}. ${pat} is heard coaching.
+			warm weather finally and the land of jesse helms.  they groove
+			to the cheap smokes and buy cartons of camels and marlboros.
+			the songlist through canada was mellower.  now it starts off
+			with rapidfire ${consp}, ${49}, ${marn} sorts of songs which dont
+			work as well.  the ${aero} set never changes.  the
+			"this is just work" side of things is becoming apparent.
+			since the crowds are small, the bands just play for themselves
+			and seem to look forward to the last songs when they can cut loose.
+			${jane} has become a regular set-ender.  it is approaching glam
+			rock self indulgence.
+			i have to run the lights as the club is understaffed.
+		)}$$
+			${del}
+		,
+		photosets= /images/19901115/19901115_del_alex.jpg;;${literalizeCommas(${green})}$$
+			/images/19901115/19901115_del_julian.jpg;;${literalizeCommas(${jules})}$$
+			/images/19901115/19901115_del_lix.jpg;;${literalizeCommas(${aero})}$$
+			/images/19901115/19901115_del_rodney.jpg;;${literalizeCommas(${rodney})}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov16.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+		recording=${literalizeCommas( ${d}, ${q(8)}, ${p(A)} ${mt}, ${g_details(slight distortion in right channel on high frequencies.)})},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(good crowd banter. the only time they played
+			${zeppo} on the US tour - afterwards, the <a
+			${aero} can be heard in the background howling their approval.
+			the masquerade was easily the most interesting venue. it is
+			a huge converted textile mill with great grooved oak floor
+			and the old machinery still in place.  pathetic turnout.
+			mark feels that his crewcut has grown out too much and
+			has martin completely shave his head.  the pseudo nazi
+			black-jackboot clad poseur club workers dont know what to make of it.
+		)}$$
+		${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov17.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+		recording=${literalizeCommas( ${d}, ${q(7)}, ${p(C)}, ${i(D)}, ${mt} ${g_details(half the songs cut in and out due to dodgy cabling.)})},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			new orleans, the town that just *is* what montreal so dearly
+			wants to be! the pinball machine at the bar next door to the
+			club gets a workout.  the club management doesnt seem to want
+			to hear ${jane} and unplug the JBAC who are sent into the night
+			looking for entertainment.  pat and gerard langley, the BA
+			singer end up getting blitzed in the french quarter until the dawn.
+			by the way, all of the ${aero} hate the band portrait
+			on the new BA album, except gerard, who looks much better than
+			real life.  gerard wears his
+			shades even more than pat does if you can believe it.
+		)}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+		posters=
+			/images/19901117/19901117_poster.jpg$$
+			Kevin Carroll
+		,
+
+	)}
+
+#define	Nov19.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${rob})},
+		recording=${literalizeCommas( ${q(7)}, ${p(C)}, ${i(C)}, ${g(1)})},
+		who=${literalizeCommas( ${pat} )},
+
+	)}
+
+#define	Nov19_2000.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+		recording=${literalizeCommas( ${d}, ${q(7)}, ${p(B)}, ${i(B)}, ${mono} ${mt} ${g_details(some low frequency distortion. excellent crowd banter. very good show.)})},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		reviews=
+		${literalizeCommas(
+			pat hates texas.  everyone else wonders "whats his problem?"
+			the food is the best of the tour and the weather is nice and warm.
+			the liberty lunch is a dusty open warehouse with an amateur
+			soundman.  typically, martin runs the big soundboard in the
+			back of a club, and one of the club members runs the monitor
+			board which is by the stage.  this particular soundman had the
+			attitude but totally sucked as a technician.  martin and the
+			JBC loose their patience as the guy keep causing horrendous
+			feedback.  halfway through the set, he simply walks up and
+			places a photograph on the board in front of martin:  he wears
+			fatigues, and army hat and a grin.  he holds a sub machine
+			gun.  ${green} notes after the show "an admission of guilt, dont
+			you think?" good food though..
+		)}$$
+			${del}
+	,
+		photosets= /images/suave.jpg;;${literalizeCommas(${larry} and ${paul})}$$
+				${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov20.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+		recording=${literalizeCommas( ${d}, ${mt})},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		photosets= /images/19901120/19901120_del_group1.jpg$$
+			/images/19901120/19901120_del_group2.jpg;;${literalizeCommas( Photos from the next morning.)}$$
+			${del}
+		,
+		reviews=
+		${literalizeCommas(
+			this is it for me.  easily the best sounding system.
+			unfortunately, across the street is a 10-band gig which draws
+			most of the people in town.  pat teaches ${angels} to julian
+			and plays it for the only time this tour.  the mellower
+			songlist is back.
+		)}$$
+			${del}
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov23.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(${del})},
+		recording=${literalizeCommas( ${d}, ${q(10)}, ${p(B+)}, ${i(A+)}, ${mt}, ${DAT})},
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+	reviews=
+	${literalizeCommas(
+		Well, I made it to the JBC concert last night at the Roxy in LA!
+		It was fantastic!!  First of all, ${green} did put me on the guest
+		list-- that was really sweet, I wasn't sure if he would remember
+		or not.  It was great to be right in front in the middle the whole
+		night, even if we thought we might get killed a few times by
+		flying musicians! Anyway, I guess Pat Fish found a new fetish--
+		he went to a novelty store and purchased several "Flat Cats"!
+		They're great -- they're cardboard cats that stand up -- he
+		put them all over the back of the stage! The ${aero}
+		were really good, although the lead mike kept going out.  They
+		seemed a little bit reserved compared to Boston -- that is,
+		the dancer stayed on stage.  For their last song, some of the
+		JBC joined them -- I thought that
+		was neat considering they hadn't even played yet.
+		<p>
+		Okay, JBC was incredible -- they really seemed to enjoy themselves.
+		They were set up a little differently than in Boston.  Instead
+		of having the sax.  and bass? ( or was it guitar) in back,
+		all members were in front -- I liked it.
+		They all seemed to have more of the spotlight, whereas before
+		Pat and the long-hair on top guitarist seemed to have most of
+		the limelight.  Well, I was able to get a song list -- this
+		guy next to me actually fought to get it and gave it to me!
+		<p>
+		${wheel} was with members of the ${aero} plus someone
+		from the audience.  Oh, towards the end they brought out a
+		stuffed crocodile that waved its tail and bit at the air.  Also,
+		someone was blowing bubbles and at a crucial moment
+		in a song, Pat broke a big bubble when the music stopped --
+		it was great! There was a heavy metal concert in a theater next
+		door -- Pat was making jokes about playing there.  (It was a
+		real trip when we left the theater -- all of
+		these people with long hair, boots, spurs, chains -- I felt short!)
+	)}$$
+	davis@pollux.geog.ucsb.edu
+	,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov24_1600.html()
+	${gigHeader(
+
+		recording=${literalizeCommas( ${r})},
+		who=${literalizeCommas( ${pat}, ${green}, ${gerard} )},
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov24_2000.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Nov25.html()
+	${gigHeader(
+
+		cost=$11.00,
+		address=333 11th Street,
+		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		setlists=
+		/images/19901125/19901125_setlist.jpg$$
+		,
+		tickets=
+			/images/19901125/19901125_ticket.jpg$$
+		,
+		with=${literalizeCommas( The Blue Aeroplanes )},
+
+	)}
+
+#define	Dec12.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${sonic} )},
+
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

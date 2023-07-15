@@ -1,0 +1,1062 @@
+#define Feb13_2000.html()
+	${gigHeader(
+		cost=&pound;5:00,
+		with=${literalizeCommas(
+			A Fat Dog Sound, Good Cop Bad Cop, P-Hex
+		)},
+		notes=${literalizeCommas(
+			8:00pm - The doors open and the Electric Gypsyland album goes on the stereo.<br>
+			9:00pm - A Fat Dog Sound<br>
+			9:45pm - Wilson<br>
+			10:30pm - Good Cop Bad Cop<br>
+			11:15pm - P-Hex<br>
+			12:00 midnight - The Skank Sound System<br>
+			1:00am - The bar is closing. Go home, you've had as much as you can handle.
+			<p>
+			The bands: P-Hex - Wilson - Good Cop Bad Cop - A Fat Dog Sound<br>
+			Plus DJ: Skank Sound System<br>
+			Doors: 8:00pm<br>
+			Admission: &pound;5:00
+			<p>
+			A couple of positive developments on the Romanian benefit at the Rockin' Horse.
+			First off, the bar will be open late. (Notice how this is becoming something of a trend
+			at Wilson's Northampton performances? This town is on the move, subtly shapeshifting
+			into the new Barcelona. Oi, New Yorkers - you can smoke in the pubs here. Ha! Ha! Ha!
+			#	Ha! Ha! Oh, and from next week you can smoke a joint too. Aaaaaah Ha! Ha! Ha! Ha! Ha!
+			Ha! Ha! Ha! Ooooh-Ho! Ho! Ho! Security!)
+			<p>
+			Second off, because there is more time, we're adding another band to the bill, namely
+			the very fine young band called
+			A Fat Dog Sound.
+			<p>
+			So for your fiver you now get 4 top groups, a magisterial DJ and a late bar.
+			Beats Live Aid.
+		)},
+		photosets=
+			/images/20040213/fundraiser001.jpg$$
+			/images/20040213/fundraiser015.jpg$$
+			/images/20040213/fundraiser049.jpg$$
+			/images/20040213/fundraiser067.jpg$$
+			/images/20040213/fundraiser033.jpg$$
+			/images/20040213/fundraiser011.jpg$$
+			/images/20040213/fundraiser051.jpg$$
+			/images/20040213/romaniacs001.jpg$$
+			/images/20040213/romaniacs002.jpg$$
+			/images/20040213/romaniacs003.jpg$$
+			Paul Blinkhorn;;paul.blinkhorn@ntlworld.com
+			---
+			/images/20040213/fundraiser059.jpg$$
+			/images/20040213/fundraiser013.jpg$$
+			/images/20040213/fundraiser065.jpg$$
+			/images/20040213/fundraiser007.jpg$$
+			/images/20040213/fundraiser053.jpg$$
+			/images/20040213/fundraiser025.jpg$$
+			/images/20040213/fundraiser037.jpg$$
+			John Gilfillan
+		,
+		pat=${literalizeCommas(
+			Well, the Romanian benefit at the Racehorse passed off well. It was a warm and friendly night out, with
+			an awful lot of faces rallying round to raise money for the Fred Ryan's guerilla hospice-building
+			operation and the Lovelight Romanian Children's Project. There was even a raffle!
+			<p>
+			(Prizes included
+			quality cigars from Switzerland airport.) All the bands played well, with Good Cop Bad Cop being
+			particularly fantastic, like an enormous truck coming at you at about thirty million miles an hour.
+			Awesome shit. After P-Hex's riotous set, Andy Skank rocked the house until the small hours. The night
+			raised something in the region of &pound;800 for the hospice. We await the second leg, at the Wyeside Centre
+			in Builth Wells, with keen anticipation.
+			<p>
+			(There is film of this shit, as, indeed, there is of a lot of Wilson performances. We're going to try
+			and get some of this to the site before too long. But this one is particularly scary, coz E-Man
+			is centre stage. Eek! How did that occur?)
+		)}
+	)}
+
+#define Feb26.html()
+	${gigHeader(
+		with=${literalizeCommas(
+			Eftus Septun, Milf, Applecraft
+		)},
+		notes=${literalizeCommas(
+			Mike Mooney and Jon Mattock from Lupine Howl have another band, called Applecraft.
+			Having just put out their debut album , "The Happiest Man Alive" (Ochre Records - OCHO43LCD), they are going
+			out to play a few dates. Wilson will be opening.
+		)},
+		pat=${literalizeCommas(
+			With Mr. E. Wilson officially retired from active service and Agent
+			Cooper inescapably embroiled in a nationwide roll-out of new, improved
+			agricultural software, the remaining Wilson Four resolve to travel in
+			style for this trip to the West Country. Since we are all set to borrow
+			back line amps from Applecraft, we really have very little luggage, so
+			we ask to rent a car, rather than our usual van. What we end up with is
+			a magnificent new Chrysler MPV with automatically retracting wing
+			mirrors. For MC Bot this is love at first sight.
+			<p>
+			We set off mid-afternoon in bright sunshine and reach Oxford
+			effortlessly. Somewhere on the road to Swindon Bot and I discover the
+			under-seat heating and laugh like delighted infants as our bums grow
+			ever toastier. Then, just as we hit the M4 south of Swindon, it begins
+			to snow. "Are people driving like c****s yet?" inquires Stevie G from
+			the back seat.
+			<p>
+			From the centre of NN1 to the edge of Bath takes us two hours. >From
+			the edge of Bath to Moles Club takes us another hour. People are indeed
+			driving like c***s: when, that is, they bother to drive at all. We
+			eventually arrive at the club to find a bemused member of staff milling
+			about on her own. She tells us that there is no promoter, no soundman,
+			no Applecraft. They are all Out There somewhere, lost in the snow. A
+			phone call to Jon Mattock reveals that the Applecraft bus is trapped in
+			a tragi-comic ballet of incompetent school-run drivers, sliding around
+			on the many and fearsome hills of Bristol. There is nothing for it. We
+			head for the pub.
+			<p>
+			We grab a beer and a bite to eat. Meanwhile, down in the club, the
+			sound man has arrived. To my delight I spend ten whole minutes alone
+			with him, making alliances for the future. We check out our backing
+			tracks on the PA, just in case there isn't time for a sound check. Good
+			thinking, as it will turn out.
+			<p>
+			I am milling about in the street outside the club, talking to Dave
+			Francolini on the phone. There is a very young guy with some kind of
+			orthopaedic stick, hanging around by the club door. As I head back into
+			the club, he stops me at the steps. "Could you catch me if I fall?" he
+			asks. No problem; I wait as he negotiates the steep little stone steps
+			into the club. "Thanks," he says, "I'm Greg, the promoter." Just as
+			well that I was in a helpful mood, then.
+			<p>
+			A local support band appears. They are called Eftus Septun (I think)
+			and they are total rustic mental headcases. They tell us that, if
+			Applecraft fail to make it, we can use their backline. One of their
+			guitar amps is so old that it looks like they found it in a barn. It is
+			but a small comfort.
+			<p>
+			We repair to the Chrysler to smoke and play Black Sabbath 4. What an
+			extraordinary mix of great musicianship and utter ineptitude it truly
+			is! There's one little break where the guitarist doesn't even attempt
+			to get his part right - in fact, it sounds to me as if he doesn't even
+			know what notes he is trying to play; he just wants this bit over with.
+			So he piles on through, hopelessly splashing a few notes around and
+			hoping for the best. But - hey! - it's all right. The rest of the band
+			are so monged out on red wine and shit that they don't even notice.
+			Incredible!
+			<p>
+			Somewhere the wrong side of 8:00 o'clock, Applecraft finally appear.
+			Jon and Mike Mooney have spent more than six hours trying to drive the
+			15 miles from Bristol to Bath. We are awful pleased to see them and
+			hang around while they set up and soundcheck. There's no time for us to
+			check too, but at least I get to spend five minutes checking out the
+			guitar amp that I shall be using for the next two days.
+			<p>
+			Things are set and ready to go. We pile back into the Chrysler and
+			listen to Evil Heat as we watch the punters filing down to the club. To
+			reach the door they have to pass down a flight of stone steps. Of
+			course, these steps are covered in snow and well slippy. One by one we
+			watch the punters trying to negotiate these stairs, and it is
+			entertainment of the highest class. Within minutes we are all trying to
+			predict the next one to take a tumble...and when the next one duly
+			does, hilarity erupts. It must be a bit of a shock for John Punter to
+			hear a sudden burst of savage and triumphant laughter from what only
+			moments ago appeared to be a parked and empty vehicle across the
+			street. This, of course, just makes us laugh even harder. Later, as we
+			take the stage, Bot will tell them: "You're already the most
+			entertaining audience we've ever had."
+			<p>
+			We catch the end of Eftus Septun, or whatever they're called. It is
+			utterly mental. Mad, discordant, scuttling crab-dancing music,
+			delivered in unbelievably short bursts. All three of the rustic
+			headcases can really play, but they are freely squandering their
+			talents on playing this itchy-scratchy Frank Zappa garbage. Bot later
+			raises the possibility that maybe they were "trying to do a US Maple
+			sort of thing." Well, perhaps they were. I always found US Maple
+			unlistenable too. Still, they are all very nice, friendly, helpful
+			blokes, who trim their guitar strings in a neat and tidy fashion.
+			Weird. Must be a village thing.
+			<p>
+			The next band, Milf, are much more of a mainstream operation;
+			standard-issue sub-Radiohead indie angst, with really, really horrid
+			singing. I hide in the dungeon-like dressing room (ambient temperature
+			Ten Below) and smoke frenziedly.
+			<p>
+			The next thing you know, the opening drones of Police Chief are ringing
+			across the dancefloor. As the beats kick in, dancing breaks out. Fists
+			punch the air. Bot and I start shouting. The Wilson Four are in effect.
+			Half way through the set my guitar loses all power. Figuring that it
+			must be something along the line of effects that has gone down, I pull
+			my lead out and plug directly into the amp. For the rest of the set I
+			am obliged constantly to zip over to the amp to change the settings.
+			It's busy work, and I make the occasional rather loud mistake with the
+			amp, but quite quickly this leads to a somewhat carefree attitude with
+			the feedback and I am soon having a bit of a night. Steve responds to
+			this and we become a sort of scary goth funk band for twenty minutes.
+			<p>
+			The moment that we finish Buffalo Sniper, we are packing up and making
+			room for Applecraft. As soon as all my kit is safely back in the
+			oubliette - sorry, "dressing room" - I am in motion again. I seek out
+			the promoter, who is beaming and saying things like "Groovy!" I'm
+			pleased about this, but what I need to know is where I can find a cash
+			machine. He sets me on the path and out of the club I go; out onto the
+			street, round the corner, down the hill, turn right, hit the machine,
+			back up the hill and into the club. I find my way to the quiet upstairs
+			bar, order a drink and ask where I can find a cigarette machine. I get
+			the right change from the bartender. I find and negotiate the cigarette
+			machine. Then, as Applecraft start up, I sit down next to Misery and -
+			fifteen minutes after coming off stage - finally light my fag. It is
+			one of The Great Cigarettes of the Modern Age.
+			<p>
+			So - Applecraft. Here is a band that epitomises the strange but
+			enduring relationship between the musicians of Northampton and Bristol.
+			Jon Mattock, the drummer, and bassist Adrian Utley are both Northampton
+			born and raised. The others are Bristol-based: Mike Mooney (guitarist,
+			singer), Mike Crawford (guitarist), Sean Cook (harmonica) and Don
+			Miranda (the singer). The musicians have a ridiculous pedigree
+			involving Julian Cope, Echo & The Bunnymen, Spacemen 3, The Perfect
+			Disaster, Spiritualised, Portishead and Goldfrapp. Not to mention the
+			fact that Adrian used to play in celebrated NN1 soul band The Army
+			(alongside a youthful Alex Green, as it goes). Applecraft have 2 albums
+			out on Ochre Records: "The Shining City On The Hill" and "The Happiest
+			Man Alive", which is newly released and the hook on which they are
+			hanging these shows.
+			<p>
+			Their confident, professional musicianship is immediately apparent,
+			even though this is their first show together. Jon, of course, is such
+			an inspirational drummer that he lifts any group with which he plays.
+			Mooney is certainly responding, and although Adrian doesn't always seem
+			to know quite where the song is going next, his rich and powerful bass
+			still does just what it's supposed to do. The sound is rich and
+			melodic, but it has a sort of seventies quality that makes me think of
+			Badfinger or Free. Not what I was expecting, but fine anyway.
+			<p>
+			I have a very pleasant conversation with a nice man from Ochre Records
+			and two disctinctly odd conversations with two different young men, one
+			of whom thinks I look like Brian Ferry, the other of whom appears to
+			belive that I am Brian Ferry. As the club closes up we grab a bunch of
+			beer and jump into the Chrysler for the drive to Bristol, which, I am
+			happy to report, took nothing like six hours. We head back to Mike
+			Mooney's place and pass a very agreeable few hours drinking and smoking
+			there before rolling up in our bedding and going to sleep.
+		)}
+	)}
+
+
+#define Feb27.html()
+	${gigHeader(
+		eventweb=thefolkhouse.co.uk ,
+		phone=0117 9262987,
+		pat=${literalizeCommas(
+			There is still snow on the ground when we awake, but this doesn't
+			prevent us from going out and enjoying an al fresco brunch with Dave
+			Francolini and another Northamptonian expat, Transambient Tony Tomblin.
+			The two of them are working in their own studio on a project which they
+			call "Dragons". It, by all Dave's account, a dark and emotionally
+			harrowing affair. Not many pretty tunes, like. Dave has been listening
+			to a lot of Joy Division. And you can tell how much time that he and
+			Tony have spent working together in the studio. They practically finish
+			each other's sentences. We eat ludicrous, fashionable food in the
+			restaurant courtyard until incipent frostbite sends us scurrying back
+			to the Chrysler's heated seats. Despite Tony's excellent cartography,
+			we still get lost on Mooney's street, so we ring Jonny and get him to
+			"talk us down". Bot quickly notes the differences in our navigational
+			styles: "Jon does cake shops for landmarks - Pat does pubs!"
+			<p>
+			Safely back at Mooney's, we relax. Then comes a moment of disbelieving
+			panic when Jon rings to say that his van has died. Two or three phone
+			calls later, it turns out that the consummate professional has just let
+			his bus run out of gas. Relieved, Bot and Mooney take him petrol, while
+			we get the kit together for sound check.
+			<p>
+			Getting your equipment into Bristol's Folk House involves climbing
+			about thirty steep concrete steps, making a U-turn and going back along
+			a balcony some fifteen yards to the stage door. I do not envy
+			Applecraft as they tote their enormous bass wardrobe up the stairs.
+			Inside there is a big, wooden room with a very small vocal PA. On the
+			walls are posters for a forthcoming show by Julie Felix. The big,
+			wooden room is strewn with tastefully arranged chairs and tables. It
+			makes me nervous. Bot is travelling down with Mooney. Steve, Kath and I
+			load our stuff in, then, while The Craft essay a soundcheck, we head
+			for the Hatchet Inn.
+			<p>
+			The Hatchet Inn claims to be one of the oldest surviving pubs in
+			England, dating back to fifteen-something. It is certainly one of the
+			hardest pubs to get into. We skirt around its exterior for some time
+			without finding any door; then, as we round the beer garden (protected
+			by hefty wrought iron railings), we find ourselves in a small urban
+			wind tunnel. A short struggle up here and we gain entrance. We sit down
+			to a peaceful bite to eat and a drink.
+			<p>
+			Back at the Folk House, the Craft are struggling with the classic "Big
+			Room - Little PA" interface. Mike Crawford goes whizzing around Bristol
+			at dizzying speeds to lay his hands on various items of kit. We mill
+			about, quietly wondering whether we will even be able to attempt a set
+			through the system that they have here. Eventually we get a soundcheck
+			and eventually we even have a reasonable sound. Much patience all round
+			and eventual satisfaction. Midway through our check the Langley
+			brothers show up, but by the time we have got things right they are
+			gone again. I set out towards the street to see if I can find them, but
+			instead I run into Syd and Anna Meats up from Romsey, so then it's back
+			to the bar for draft Budvar and pancake recipes (this last bit really
+			floats MC Bot's boat).
+			<p>
+			Gerard Langley reappears, minus John, who's gone home for a nice night
+			in. "He's not that sociable really," offers Gerard, not entirely
+			convincingly. Gerard reveals to us that our soundman is his current
+			bass player. Oh yes, and the bartender is his guitarist. Truly, we are
+			all Gerard's ducks. The great Joe Allen stumbles by, bent on
+			poetry-related mayhem. Gabriel and Joe (no relation) are up from
+			Exeter. It's a nice vibration.
+			<p>
+			After a set of gospel dementia from a man whom I only know as Jesse (he
+			is, to be fair, a rightly celebrated fixture on the Bristol scene and a
+			phenomenally gifted guitar player), we get onstage at about a quarter
+			to ten. The room is hardly heaving, but all the chairs are taken up and
+			there is a reasonable crowd. The fact that they are sitting down in
+			this nice, big wooden room is pretty disconcerting, mind. Stevie G
+			later declares this the weirdest gig that he has ever done. "They just
+			sort of sat there and looked at you." He's right. There's hardly a
+			rocking atmosphere, and the lighting is pretty funny too. My equipment
+			is working properly tonight, at least. We deliver our set (the same as
+			last night) to a reasonable response, but nothing really catches fire.
+			In a situation like this we miss Agent Wilson and his percussion. The
+			set is all quite competent, but we can't really get any vibrations
+			going, making our little noise in this big, wooden room. Still, I can't
+			say that I didn't enjoy it, honking and blatting away up there. In some
+			ways it was an improvement on Bath, but we missed having the people
+			near us, leaping about.
+			<p>
+			By the way, while we're on the subject of weird gigs, might I just
+			point out that it was Steve Gordon who, a few short years ago, booked
+			us into a gig at a roller skating rink, where the audience came at you
+			downhill at about fifteen miles per hour in an endless stream?
+			<p>
+			Once our kit is offstage and out of the way, a very portentous
+			gentleman comes onstage and tells us all to shut up because now there's
+			going to be a poet and she's going to be very good. I pack my kit bag
+			in nervous silence, occasionally looking up to see if MC Bot has
+			succumbed to the giggles yet. Kit safely stowed, we leave the punters
+			to their culture and make a bee-line for the bar.
+			<p>
+			By now the place is filling up, and there are lots of good old faces to
+			be seen. Angelo Bruschini is in the house; Paul Wigens (who plays in a
+			band called Grand Drive with two Wilson brothers!) is here; Franco and
+			Tony have turned up, saying nice things about our band; Pat Duff, late
+			of Strangelove, is here, looking fantastic. Apparently he's been making
+			a record with Alex Lee. Well, as ideas go, I'd say that was a good one.
+			To be honest, there's that much of a party feeling going off that I
+			don't see too much of Applecraft's set. What I do see sounds
+			surprisingly good, given the technical situation, and goes down well.
+			An easy home win for The Craft. "Wait till we get you at home," we
+			taunt them.
+			<p>
+			At closing time we board the Chrysler. We have decided to head for NN1
+			directly tonight and wake up in our own beds. We navigate our way out
+			of Bristol without any difficulty, and as we hit the M32 out of town, I
+			notice that it is just past one in the morning. To the sounds of the
+			Fun Loving Criminals and The Stranglers we speed effortlessly through
+			the night, arriving back at my front door at a scarcely credible
+			half-past-two. A quick bevvy and we're off to bed ready for tomorrow's
+			gig.
+		)},
+		with=${literalizeCommas(
+			Applecraft
+		)},
+		notes=${literalizeCommas(
+			Mike Mooney and Jon Mattock from Lupine Howl have another band, called Applecraft.
+			Having just put out their debut album , "The Happiest Man Alive" (Ochre Records - OCHO43LCD), they are going
+			out to play a few dates. Wilson will be opening.
+		)},
+	)}
+
+#define Feb28.html()
+	${gigHeader(
+		cost=free,
+		pat=${literalizeCommas(
+			The first "consummate professional" moment of our day comes at about
+			four o'clock this afternoon, when Mike Mooney rings to say that the
+			hire company which had promised them a van had shut up shop before they
+			even got there! We make arrangements for Applecraft to use our backline
+			kit and decide that, if they are going to be late, we might as well
+			soundcheck first. This we duly do, and we are just finishing up when
+			the Bristol massive arrives.
+			<p>
+			I'm talking to Adrian Utley about Northampton, explaining that I live
+			just around the corner from the club, near Colwyn Road. He says that he
+			used to live on Colwyn road, in one of those big old houses that back
+			onto the Racecourse. "Oh yes," I say, "They're nice houses, those." He
+			looks at me as though I have taken final leave of my senses. Of course,
+			he knew Colwyn Road years ago, before the property developers and kids
+			with sports cars moved in, back when it was the P.I. capital of
+			Northamptonshire. I feel forced to tell him that we shan't be much
+			older before the first pavement cafe appears on Colwyn Road.
+			<p>
+			By the time that The Craft have acquainted themselves with our kit and
+			come to terms with the "Little Room - Big PA" interface, the room is
+			already filling with punters. Somebody says to me "I thought you were
+			going to play first." Max Eider (for it is he), MC Bot and I take off
+			for a quick veggie burger and a smoke round at Shakespeare Villas.
+			<p>
+			We return to find the room chock full of people, with a faintly
+			agitated DJ Andy keen for us to get on and get started. With unnerving
+			speed we do exactly that. We have the Agent back tonight, and any swing
+			that was missing in Bristol is back with a vengeance. We start with
+			Quality People and Critters. The sound is good and strong and we're
+			playing well. I am, I must confess, having one of my Loud Nights. The
+			audience are really warm and responsive (what else can they honestly do
+			with us crammed in their faces like this?) and we race through the best
+			set of the three, finishing with Dark Agenda. The set has been a
+			success. Andy Skank does something that nobody has ever done before. He
+			calls our sound "sexy"!
+			<p>
+			Upstairs in the Keir Hardie Room, which has been temporarily
+			re-assigned the Dressing Room, I meet Olga. Olga comes from the Czech
+			Republic and would appear to be some kind of music journalist. She has
+			bravely travelled up from London on her own to see Applecraft, and now
+			she wants to know what I do in the band. I have to explain that she has
+			just missed the chance to see what it is I do.
+			<p>
+			Olga is concerned about the security of her bag. I assure her that it
+			will be fine up here, out of the way.
+			"Put it under a coat or something, if you want, love."
+			"Yes...that is what I did in Sheffield and they stole my bag there."
+			I try to explain that people in Sheffield are dangerous desperados and
+			that NN1 is altogether more chilled, but she is having none of it. She
+			removes a cassette tape, on which she has recorded an interview with
+			the Undertones, and puts it in her pocket. Then she scoops up a box of
+			Applecraft records and heads downstairs into the throng, bent on sales.
+			I pack up and rejoin Max and Kathie in the hot and crowded bar just as
+			The Craft are kicking off. This time I get to see pretty much the whole
+			of their set, and very fine it is too, a quantum leap from the previous
+			two (just like us, I suppose). The core of Jonny, Adrian and Mooney is
+			raging. Having had trouble making himself heard at the soundcheck,
+			Mooney employs the Turn-It-Up-To-Eleven approach and sprays the bar
+			with wild psychedelic lead guitar. Jonny goes mental. This in turn
+			inspires Mooney to do something even more ludicrous. And so it goes on
+			for forty-five minutes until they drive the truck into the wall on a
+			little thing called "Quo Country"! Mooney is standing on an amp,
+			grinning like a maniac and playing the bass for reasons known only to
+			him. Adrian Utley is attacking his guitar in a profoundly un-Portishead
+			sort of a way. The sound is phenomenal, as loud as the building can
+			stand, and the players are making it only too clear how and why they
+			acquired that ludicrous pedigree. It's a bravura display of lush,
+			muscular psychedelic rock and roll, which leaves everybody in the house
+			soaking wet and grinning like a fool.
+			<p>
+			Most of the Craft are heading back to Bristol. Jonny is coming to the
+			Wilson party at Misery's place just up the road. So, it turns out, is
+			Olga, for it is late now and Misery has offered her a room for the
+			night. The trouble lies in actually getting Olga from the Labour Club
+			to Misery's yard. "Go with Pat," Mooney urges her, "He'll see you all
+			right." Olga looks at Mooney. She looks at me. Then she looks at Mooney
+			again. Her brow is troubled. "I don't which one is scarier - you or
+			him," she says.
+			<p>
+			Eventually, with a lot of help from Kathie McGinty, we convince Olga
+			that she is not about to be sold into the white slave trade, and she
+			and her bag finally follow us back to a splendid party, where her
+			diffidence vanishes upon contact with Misery's record collection. As
+			Brian said when I saw him a day or so later: "That was a good old
+			night. I don't remember how I got home."
+			<p>
+			We still don't know for sure whether MC Bot ever gave them back their
+			Chrysler.
+		)},
+		with=${literalizeCommas(
+			Applecraft
+		)},
+		notes=${literalizeCommas(
+			Mike Mooney and Jon Mattock from Lupine Howl have another band, called Applecraft.
+			Having just put out their debut album , "The Happiest Man Alive" (Ochre Records - OCHO43LCD), they are going
+			out to play a few dates. Wilson will be opening.
+			<p>
+			FREE to get in.
+			Let's hear it for the Labour Club.
+		)},
+		photosets=
+			/images/20040228/LabourClub.jpg$$
+			/images/20040228/LabourClub3.jpg$$
+			/images/20040228/PatL-Club.jpg$$
+		,
+	)}
+
+#define Apr17.html()
+	${gigHeader(
+		cost=free,
+		pat=${literalizeCommas(
+			Oh, it's getting dark in here.
+			<p>
+			This was a real strange one, with an audience made up largely of other musicians, most of whom had
+			probably seen Wilson play about twenty times already. Well, be fair. Still they come. Thanks,
+			guys.
+			<p>
+			There were two separate vibrations going on at the same time, and I'm not just thinking of the
+			band's pharmaceutical intake.
+			<p>
+			No, the audience were quiet and subdued. Maybe, I reckon, they were just plain oppressed by the
+			sheer volume and darkness of the alleged entertainment. Everybody I spoke to after the show seemed
+			well taken with the set; they just weren't about to let us know while it was going on. Or
+			something. A lot of people didn't realise that we had finished either. They thought that maybe we
+			would be going on for a second set. Well, I must admit that the majority of us do look like we
+			belong in a a pub band, but really. No, folks, if you wanted more you should have done the old
+			ritual thing and shouted and shit. Oh, hang on, that's right. I hate the rock concert ritual. Oh,
+			this was a confusing one.
+			<p>
+			Meanwhile, back in the delusion jungle...
+			<p>
+			Onstage Wilson are having the night of their lives. The track is crisp and bright and brutal, the
+			bass is heavy, the guitarists have only ever heard Arc and Weld in their lives. As far as we are
+			concerned, we are a heaving black crater of evil doom and justice. Botman Bot doesn't even turn up
+			for the first two verses. You can see people wondering and worrying. Are we going to watch this
+			band fall to pieces right in front of our eyes on an innocent Saturday night out? First no Curtis,
+			now no Bot...what can it all mean? Botman Bot arrives via the front door, bang on time to deliver
+			Curtis' crime rap on God's Green One. Headstone is yelling "rip up the phone boxes!" It's all
+			edgy, sparky, exciting. To us anyway. Maybe it looks unprofessional or something. We know that the
+			sound is good. Andy's magic PA strikes again.
+			<p>
+			It's into a new tune next. I wrote the words to the chorus the morning after the gig. Well, it'll
+			be an excuse to come down to the next one, won't it? Then we're off into a run of 3 rockers.
+			Somewhere in the midst thereof, we achieve Our Perfect Sound. It's evil and fizzing and swinging
+			its massive great ass all over the place. There's singing - harmonies even - and shouting and
+			banging and wailing and squawking and Stephen Fecking Hawking. We do the best version ever of
+			Buffalo Sniper. Yes, I was compelled to sing large chunks of "Rocking in the Free World" at the
+			same time as Bot was doing the proper lyric. Do you want to make something of it?
+			<p>
+			After a sneaky little Secret Government we descend into a swaggering and hostile version of Play
+			It All Night Long. Every Saturday Night does nothing to lighten the mood. Critters is chiefly
+			about shouting and violence and war and hate and the Loch Ness Monster and it's over in a second
+			and then it's all aboard the Taliban Jeep for a swift and sweaty-palmed review of Wilson's Dark
+			Agenda.
+			<p>
+			It kicks off. Botman Bot is giving it "Bitter & twisted! Go ballistic!" from Fat Controller. The
+			kick drum is a truck. The bass is a huge big tanker full of something with a specific gravity far
+			in excess of its half-life. The guitars are fizzing like nasty little cluster bombs. Inevitably,
+			there is a hideous and protracted pile-up. The poor bloody audience are witnessing something that
+			has nothing to do with either entertainment or anger management. Fuck, it feels good.
+			<p>
+			And that's it. Lord, it's quiet. Me, I just reckon people were shell-shocked.
+			<p>
+			You know, maybe we just weren't entertaining. Maybe we've become so dark and demented that it's
+			just no fun to be around us any more. Maybe we've just got old and crass and boring.
+			<p>
+			But from where we're sitting, the band is moving up to another dimension. We're into one of our
+			phases right now, and, if it be the Will of God, the next few shows could see Wilson mutating into
+			something even more mental. Given that the next gig is in Builth, I'd be prepared to take a punt
+			on that.
+			<p>
+			Fishboy
+			05:34 am 19/4/2004
+		)},
+		with=${literalizeCommas(
+			Applecraft
+		)},
+		notes=${literalizeCommas(
+			Another Wilson gig for the calendar. The gig with Applecraft went so well for us that the Labour Club have
+			asked us to return and play for them again. Happy to oblige...
+		)},
+	)}
+
+#define Apr30_1800.html()
+	${gigHeader(
+		cost=&pound;5:00,
+		pat=${literalizeCommas(
+			With New Order and the KLF to speed us on our way, Misery, Bot, Kathie & I have an easy
+			time of the 135 mile drive to Builth. On the way we pass the roadside Army Surplus
+			store with the armoured car for sale on the forecourt. We notice that Jamie Jab's new
+			motor is parked up there. Later in the evening he will appear, sporting a magnificent
+			pair of paramilitary chrome goggles. At this stage, Jamie Jab has been up for 24 hours
+			and counting.
+			<p>
+			We check ourselves into the excellent Edan House B&B, where Wilson, like all the
+			greats, have an entire floor to themselves.It's not that big a house. In my room, on
+			the windowsill, in a strange pentagonal case of wood and glass, displayed on tiny,
+			custom-made wooden stands are two eggs. Two eggs with lovely miniature paintings on
+			them. What on Earth can that be about?
+			<p>
+			The Strand Hall stands all of seventy yards away from the front door of the hotel. No
+			promoter worthy of the name would ever book a band into a hotel so convenient for the
+			venue. The venue itself is a big old hall belonging to the Council. The organisers of
+			the gig tell me that a lot of municipal arms have been twisted for us to be doing this
+			here tonight. Ticket sales, we are told, have been good, and there is evidence of a
+			massive and elaborate lightshow being set up on the large stage. There is a PA standing
+			up there too, but there is nobody to wire it up. A man is on his way from Bristol, we
+			are told.
+			<p>
+			Now, one thing that we have grown used to in Builth is waiting. Without so much as a
+			discussion, we acknowledge that there is going to be no point in our milling about here
+			for some considerable time. Kit is parked in strategic positions backstage, ready for a
+			swift set-up immediately prior to playing. The dressing room receives its customary
+			Awesome Baptism of Smoke. Within fifteen minutes we have washed our hands of the Strand
+			Hall and we're back on the charming streets of Builth, bent on hot food.
+			<p>
+			After a brief period in the Zone we are welcomed at the Barley Mow for wholesome dining
+			and beer. Convinced that this is, in fact, a Saturday (dammit - it's always been
+			Saturday in Builth before...) I spend a moment fretting about the football results.
+			There are, of course, none. Fed and watered, we engage in a little light shopping for
+			late night beer, then return to base to watch Pobol Y Cum on the telly.
+			<p>
+			Some of our number stop by at a little funfair which has set up beside the river in the
+			park. There is a thing there called Monkey Kingdom. Thanos is with us. There are a
+			number of odd little machines there whose primary purpose would appear to be the
+			piecemeal but dogged pollution of the otherwise unfeasibly wholesome Welsh air. Stevie
+			Ward from Good Cop Bad Cop is profoundly irritated by the presence of this fair. He was
+			planning on a quiet night's kip in the van beside the river. No chance of that now.
+			<p>
+			Later, when Jamie and Yvette decide to stroll down and visit the funfair, it shuts
+			down.
+			<p>
+			We return to the venue to hear the last strains of Brown Thunder covering Cum On Feel
+			The Noize. It's their first gig. They're schoolboys. They haven't played Glastonbury.
+			We know this, for this is their first gig. (For a few moments overheard an hour or two
+			later in the carpark, it appears that it may also turn out to be their last.) They may
+			be named after a Roy Chubby Brown video. Their bass player later lends us his amplifier
+			after negotiations so complex that several UN staff had to be called in. At the end of
+			the night he is to be seen sitting on the bottom of the steps outside the venue,
+			barfing like a professional.
+			"Has he lost his lunch?" I ask one of his pals.
+			"Oh, he lost that a long time ago."
+			<p>
+			A Fat Dog Sound get themselves onstage with commendable speed, then stay up there for
+			about thirty six hours. They have a new, improved drummer and I still think their
+			bassist is great. They are moving into a pretty strange place at the moment. Their
+			opening number has shades of the Velvet Underground's "Ocean".
+			<p>
+			Fat Dog are followed by Good Cop Bad Cop, with MC Bot at the controls. Strangely,
+			things appear to have taken a turn for the loud. I actually manage to spend all the
+			Good Cop set outside the building, but this in no impedes my capacity for hearing and
+			enjoying the music to the full. Ears must be bleeding in there.
+			<p>
+			As the next band gears up to go onstage we take ourselves back stage to put the drums
+			and stuff together. As we pass across the stage, Russ spots the pianist having A Right
+			Artistic. Whatever is eating him soon gets sorted, for the band are up and playing...a
+			James Brown number! "Bloody hell, Steve - we've got to follow Tom Jones!" Sadly, that's
+			about as much fun as we have with them. Well, apart from being stimulated to re-open
+			that well-loved Crap Sax Players Of The Eighties debate.
+			<p>
+			And then the desperate minutes as we step out onto the stage to see if there is anybody
+			out there to help us get plugged up. On asking one bloke for the sound man, I'm told
+			"There isn't one." Well, at least we've got that cleared up, then. Eventually the man
+			from Bristol appears. He hasn't much of a clue what is going on, keeps saying he's on
+			holiday, thinks he's in a place called "Blythe". Somehow he helps us get plugged up
+			while at the front of the stage Fred Ryan has his eyebrows waxed off for charity.
+			&pound;138:00 the pair, since you ask.
+			<p>
+			Once Fred has been sufficiently tortured, we turn on the DAT and hope for the best. The
+			backing track comes crashing back at us at about 60 billion decibels and we're off.
+			Starting with Police Chief, it's a high energy set and soon there is action on the
+			dance floor. We steam through a short and furious set, stopping only now and again when
+			Stevie G - for reasons that he is still unable to clarify - insists on stopping the
+			backing track. Not during the tunes themselves, you understand. He's not that gone,
+			Jackson. Stevie Ward is at the controls now, doing a grand job. We deliver phatness and
+			shouting in extra-large portions, blow up Dark Agenda and leave. As we go, two people
+			shake my hand: one, a gnarly old rock dude in his forties, proper rock handshakes and
+			everything; the other, a 17-year old Welsh chick in high street chic who thinks "That
+			was bloody excellent, that!"
+			Wilson - Bridging the Generation Gap. With shouting.
+			<p>
+			P-Hex come to deliver the coup de grace to an audience fast falling to the effects of
+			hard liquor and evil dub. The Rev. Lindsay does not disappoint and the funk machine
+			rolls out, with the added firepower of Andy Fruish's trumpet combining with Ben's
+			saxophones. Now that, boys and girls, is a horn section. At some stage MC Bot wanders
+			onto the stage, apparently squeezing a version of Sumosonic's "Business and work" into
+			the P-Hex repertoire. An encore is demanded and a strange jam ensues, a cool sort of
+			major/minor thing, where I am surprised to hear Lindsay singing the oddly romantic line
+			"Such a smile!" Your correspondent has since been set straight. The lyric is, of
+			course: "Such a slag!"
+			<p>
+			By the time that P-Hex are done with them, the punters are looking profoundly damaged.
+			The lad from Brown Thunder is not alone. People are heaving and a-weaving. Outside the
+			front doors, people are lying helpless in the road.
+			<p>
+			The night has raised well over a thousand pounds for the Romanian hospice project. We
+			retire to the tranquility of Edan House for a late night Budvar and a smoke. Mission
+			accomplished. Photographic evidence to follow.
+		)},
+		with=${literalizeCommas(
+			P-Hex, Good Cop Bad Cop, A Fat Dog Sound, Brown Thunder, Doctor Rhythm Method
+		)},
+		notes=${literalizeCommas(
+			It's a big production: Wilson, P-Hex, Good Cop Bad Cop, A Fat Dog Sound and two Welsh bands!
+			The night will run from 6:00pm to 1:00am.
+			Truly, as Stevie G said, we are in the hands of madmen.
+			<p>
+			The 2 Welsh bands on the bill are: Brown Thunder - and - Doctor Rhythm Method, featuring the Cross Your Heart Horns.
+			<p>
+			Tickets are &pound;5:00 and are on sale in advance.
+			Either e-mail Fred at fredryan@hotmail.com or call in and get your tickets from either of The White Horse or the White Hart pubs in
+			Builth Wells itself.
+		)},
+		photosets=
+			/images/20040430/Builth1.jpg$$
+			/images/20040430/Builth2.jpg$$
+			/images/20040430/Builth3.jpg$$
+			/images/20040430/Builth4.jpg$$
+			/images/20040430/Builth5.jpg$$
+			/images/20040430/BuilthRuss.jpg$$
+			/images/20040430/BuilthPatIan.jpg$$
+			/images/20040430/BuilthPatMiz.jpg$$
+			/images/20040430/BuilthMiz.jpg$$
+			/images/20040430/stevebacon2.jpg$$
+		,
+	)}
+
+
+#define May4.html()
+	${gigHeader(
+		cost=free,
+		pat=${literalizeCommas(
+			So with a lot of help from our friends, we managed to stage the second annual tribute
+			to all things Outer Space.
+			Many thanks to Andy Skank for the kind loan of the Labour Club sound system, to Uncle
+			Curt for patiently helping us out with transportation and emergency capo cover, and, of
+			course, to the mighty Johnny P for lights which were even more spectacular than last
+			year's outrage. We have the footage, which we can't stop watching it - just for the
+			lights, you understand. One day we'll post some of it. Planets float by and explode;
+			spacemen hover overhead before suddenly spinning off into the cosmos at enormous speed;
+			rockets and space stations cruise elegantly out over the auience; and at the beginning
+			of Quality People an enormous alien plant reaches down from the screen and snaps off
+			Russell's head.
+			<p>
+			It being a Tuesday night immediately after a bank holiday, the place was hardly heaving
+			with punters, but there were enough of the hardcore in the house, as well as a pleasing
+			sprinkling of newcomers. We ought really to have played at the weekend, but Russ was
+			insistent on purity of tone in the calendar department. Being as Tuesday was also the
+			night of the full moon, we could hardly argue with that.
+			<p>
+			The band, all robed up, except for 18th Century renegade grenadier guardsman Bot, eased
+			in with a rather tentative God's Green Earth and a crack at the new tune before hitting
+			our stride with the Police Chief song. >From there on in it was sweet, in a rowdy sort
+			of way. Mind you, those robes are awful sweaty.
+		)},
+		notes=${literalizeCommas(
+			Long ago, in a pub very far away, they did occasionally have a band on in the Racehorse bar of a Tuesday
+			night. I can just about recall seeing quite a tidy band there, named Skuravi after the stylish Czech
+			striker of the day. That would have been about 1992. But for years now it's been the same: you just don't
+			get bands on in the Racehorse bar of a tuesday night.
+			<p>
+			Until, that is, now.
+			<p>
+			This year May the Fourth falls on a Tuesday, and there will be a band on in the Racehorse bar, and that
+			band will be Wilson.
+			Johnny P will be along to do the lighting and there have been sinister mutterings about...um...robes. For
+			Northampton's breakbeat goth-prog dub desperados will be making their annual tribute to Outer Space. As is
+			fitting, it will be free to all earthlings and others.
+			<p>
+			So May the Fourth be with you.
+			<p>
+			Sincerely,
+			Emperor Headstone
+		)},
+		photosets=
+			/images/20040504/4maygroup.jpg$$
+			/images/20040504/4mayShouting.jpg$$
+			/images/20040504/4mayRock.jpg$$
+			/images/20040504/4maySunburst.jpg$$
+			/images/20040504/May4Band.jpg$$
+			/images/20040504/May4pub.jpg$$
+			/images/20040504/May4Bot.jpg$$
+		,
+	)}
+
+#define Jun6_1245.html()
+	${gigHeader(
+		blurb=Twinfest,
+		with=${literalizeCommas(
+			Good Cop Bad Cop
+		)},
+		pat=${literalizeCommas(
+			It's the first weekend of June 2004 and all over the UK people are getting themselves overexcited commemorating
+			the D-Day invasions. And what is happening in Northampton? Why it's overrun with Germans - I love this town!
+			<p>
+			For this weekend it is Twinfest, where the bands from town get together with bands from our twin towns of
+			Poitiers and Marburg with a view to putting on three days of loved-up rocking festivity, drunkenness and random
+			acts of international kindness. Except that the poor old French people, struggling against government cutbacks
+			at home, can't come this year. So it's just us and the Germans. I feel sorry for the French guys - mais
+			naturellement - but I can't help feeling how appropriate it is that Brits and Germans should be putting
+			together this good natured international hoedown at a time when far too many people are reviving far too many
+			painful memories.
+			<p>
+			There are, of course, matters of physical endurance to consider at such affairs. After Masters of Budvar on
+			Friday night and the ensuing suicide mission - sorry, party - Russ and I felt that, if Wilson were ever going
+			to make it onstage for their appointed hour of Sunday lunchtime, we had better devise a Plan. We found
+			ourselves obliged to pick up our passes for the festival at a Twinfest gig in the Racehorse garden on Saturday.
+			Knowing that we needed an early night before our set, we planned to nip down early in the evening, grab the
+			passes, get blind drunk by half-past-eight and hit the sack around nine or ten.
+			<p>
+			Half past eight arrives and the Plan is working perfectly. Various members of Wilson are strewn around the pub
+			garden, passes safely secured, roaring drunkenly at the mighty Shiga Wire, Marburg's very own answer to
+			Metallica. Only with Josh Homme for a lead singer. Yes, real good.
+			<p>
+			But, reader, I am sure that by now you have spotted the Flaw in the Plan.
+			<p>
+			Severely damaged and dressed in our best (just to show it off to maximum effect) we arrive at the pub. It is
+			11:00am and the sun is shining down like you wouldn't believe. It is a glorious morning in NN1 and we are in no
+			state to appreciate it.
+			One of us has not even slept at all.
+			<p>
+			We make our way to the gates of Becket's Park, where a kindly soul in a yellow "events" tee shirt tells us that
+			we can't bring our cars onto the festival site. Somewhere deep, deep inside me lurks a thought that (perhaps
+			happily) I cannot physically articulate: we've only got ourselves into this lamentable state by making an
+			ill-advised trip to the pub to pick up these STUPID GREAT CAR PASSES THAT YOU SEE BEFORE YOU ON OUR
+			WINDSCREENS, MISTER C***Y. Patiently, and without making any panic calls on his Walky-Talky (it's the fecking
+			Digital Revolution and these prats still have the same walky fecking talkies as they used to have in 1978.
+			Probably handed down lovingly from father to son along with all those useless fecking post-punk Rough Trade
+			records, then, eh?) he explains to us: "She said no cars on site after eleven thirty."
+			It is exactly eleven thirty two AM.
+			<p>
+			Russ disappears into the park to find the great "She" while Kathy and I mill about, trying to stay alive and
+			watching despondently as some shaven-headed buffoons hack down trees in order to facilitate the building of
+			more flats for more vain and helpless Hollyoaks beings. Eventually Russ returns with a lady from the council,
+			who graciously "walks" the car into the park. That's it. That's absolutely right. She walks along in front of
+			the car, just to let people know that it's on its way. "If she really wants to recreate the golden early days
+			of motoring," I ask Russ, "Shouldn't she at least have the decency to carry a red flag?"
+			<p>
+			Nobody dies and we make it to the backstage area. We unload our shit and listen to the first band of the day
+			soundchecking. We try hard to get warmed up. This involves opening suicidal cans of beer, smoking everything to
+			hand and hoping for the best.
+			<p>
+			When we come on there is an audience of perhaps forty people, sitting in the bright sunshine on a big old hill
+			in front of us. You could have fitted them all right there on the stage with us. If they had been up there,
+			perhaps they would have heard the beats, because, if SPT (Subsequent Punter Testimony) is anything to go by,
+			they never heard them out the front.
+			<p>
+			So, yes, we banged away as best we could, and I guess we played all right; but it's all rather pointless if
+			people out the front can't hear the drums. I must admit, I was quite flattered at the idea that a few of our
+			mates thought us capable of deliberately playing without our beats...but, I mean, why would we?  Stevie Ward
+			tried his best to explain shit to the sound man, but he got nowhere. Well, we only submitted our tech-spec six
+			weeks in advance. What the feck were we thinking?
+			<p>
+			Of course, we only found all this out later. On stage we had the beats loud and clear (mostly) and we did our
+			best to hang on tight and play in tune. Russ ran out the front with his djembe on Hippy Shit. I tried to dance
+			with him, but apparently I came across as a dancing bear in a suit. I have no problem with this, as it goes.
+			Only the day before, Ben from The Echo Chamber and I had been discussing how you never get to see a good
+			dancing bear these days. Well out of breath from my dancing bear exertions, I realised that I then had five
+			consecutive vocal choruses to take care of. At various octaves. Ooh, my little head was pounding
+			boom-boom-boom, and I thought I was up for the kind of stroke that turns you into Evil Harold. Stevie Ward's
+			little girl, Holly, came up me afterwards and went "Oy, Ted!" (Yes. I know.) "You were a bit lazy on that
+			song!"
+			<p>
+			We got through our set, packed up and wandered out onto the hillside to watch Hotel Stern from Marburg. An
+			acoustic trio, they distinguished themselves by sending their percussionist out into the crowd to distribute
+			free beer. The sun was shining as hot as you like. Curtis stopped by, looking like Babe Ruth. Hotel Stern
+			played a song that reminded us of The Murder Mystery by the Velvet Underground. They were unbelievably friendly
+			and seemed genuinely glad to be in Northampton. Ambassadors for the sport, God bless 'em.
+			<p>
+			At which point we got clearance to be - that's right - walked out of the park, so that we could ditch our kit.
+			Russ and I did exactly that, rolled a few cigs for the afternoon to come and slipped down a couple of medicinal
+			vodkas. It was at about this time that the suspicion began to dawn on us: perhaps nobody at Twinfest ever
+			really believed that we would turn up at a time like that. Perhaps we had, in fact, been allotted that very
+			time slot in the fairly sure and certain hope that we wouldn't turn up? Too bad. We'd done our bit for
+			Twinfest. Now, suitably warmed up, we were going to have some back.
+			<p>
+			We headed back to the site, where by now a reasonable wee crowd had gathered. We watched Good Cop Bad Cop, who
+			played a blistering set in blistering sunshine. MC Bot seized the controls from the soundman. Ooh, he's found
+			the bass! Awesome. Council lady saying time to stop. Baying punters, howling guitars. Steve on top of the drum
+			kit. Council lady incensed. Audience applauding like the rabid rock dogs of Planet Hoggoth. Best set of the day
+			by a mile. Trebles all round.
+			<p>
+			Then it all goes a bit blinking Seurat. Insanely hot sunshine. Unbelievably friendly atmosphere. Really nice
+			people working on the beer wagon. Music and Germans and that all over the place. For an hour or two on Sunday
+			afternoon, Becket's Park is a wonderful place to be. We catch Hotel Stern again in the acoustic tent. We watch
+			Hindsight playing covers. We go to the pub.
+			<p>
+			This means that we miss the final moments of the festival. Thanks to Andy Skank for this report:
+			In-Vocal are headlining in the acoustic tent. A fairly large crowd has gathered, but the PA is not equal to the
+			task (why does that sound familiar?), and the band are barely audible. Except, that is, for the last word of
+			the last song.
+			It is, in fact, the last word of a three day, three venue international festival of friendship and truly good
+			vibrations.
+			It comes through loud and clear.
+			And that last word is: "TWAT!"
+			<p>
+			Ah well. It was such a pleasant event. The bands (none of whom were paid) were sweet, co-operative, friendly
+			and devoid of any kind of ego nonsense. It's only a shame that thanks to the lackadaisical attitude of some of
+			the sound engineers (who were paid), the one thing that those bands and their audiences really, really wanted
+			out this event - the chance to play their shit and be heard doing it - was in many cases denied them.
+		)},
+		notes=${literalizeCommas(
+			Wilson Involved in Festival with Hard-to-Understand Name
+			<p>
+			As part of the Twinfest cultural exchange knees-up, where bands from our twin towns of
+			Poitiers and Marburg come to play in Northampton, Wilson will be playing at an event
+			called SPONGE.
+			Wilson remain unclear as to the exact nature of SPONGE at this stage, but we believe it
+			to be an open-air event taking place in Becket's Park in Central Northampton on the
+			afternoon of Sunday 6th June.
+			<p>
+			<b>Update</b><br>
+			We have the timing for our set at SPONGE.
+			Alarmingly, we shall be on stage at a quarter to one in the afternoon.
+			That is...in daylight...
+		)},
+	)}
+
+#define Jul25.html()
+	${gigHeader(
+		cost=free,
+	)}
+
+#define Sep12_1600.html()
+	${gigHeader(
+		cost=free,
+		pat=${literalizeCommas(
+			Wilson meet The Police
+			<p>
+			It's an overcast Sunday afternoon in Northampton. At the Cricket Club they are staging the first Tom
+			Hall Memorial Cricket-for-All Challenge Tournament. In Abington Park there is a Gay Pride knees-up with
+			bands and stuff. I am sitting in an otherwise empty Racehorse bar, my Burns in my lap, struggling to free
+			the ball end of a broken 10 string from the body of the guitar. Normally this is a process for which I
+			would employ the tiny allen-key in my gig bag, but right now my gig bag is at the Cricket club, helping to
+			set up the PA. So, in need of some other slender but purposeful pokey item, I seize a 46 string and start
+			to push away with that. Ninety seconds later, the 46 is trapped in the hole every bit as irredeemably as
+			the 10. I'm sitting in the middle of a pub at two o'clock in the afterbloodynoon with this guitar in
+			my lap, with wayward bits of wire poking out of it in all directions. Looks like it's going to be one
+			of those days.
+			<p>
+			Misery collects me and my kit from the pub and we drive up to the Cricket Club. Inside Bot and Jamie Jab
+			have made a marvellous job of setting up the PA. Everything is in readiness. But where are the drums? With
+			Agent Cooper on holiday in Turkey, we had understood that Mr. Fletcher was keen to seize his opportunity to
+			play with Wilson. We'd been a bit nonplussed when he didn't show for rehearsal on Friday night.
+			"A bit cocky" was the general verdict at the time; but Mr. Fletcher is a proper musician, and we figured
+			that as long as we were ready, he would hardly mess things up that much.
+			<p>
+			We hadn't figured on a no-show. "A bit cocky" is swiftly revised to read "Bottled it." Stevie G makes
+			threats of violence, as is his way. I'm left pondering the point of saying "yes" to something when
+			what you really mean is "I can't." I don't think I'll ever get my head round it.
+			<p>
+			No. N-O. Only got two letters, only takes a second to say it.
+			<p>
+			Thanks, Chuck D, for putting it quite so well.
+			<p>
+			So we have a large, empty space in the middle of the stage area. This corresponds in a rather sublime
+			manner with the vast empty space that is the rest of the room. Outside a game of cricket is taking place.
+			Occasionally a voice breaks out of the PA system - commentating!
+			<p>
+			Something else we hadn't figured on. The man who invited us to play said that we could play any time
+			that suited us. We had figured on 4 o'clock as being as good a time as any. The event is supposed to
+			stop at 6 o'clock, so that seemed to be pitched about right. Gratifyingly, as 4 o'clock nears,
+			a small crowd gathers in the room.
+			<p>
+			Trouble is this: it has become clear that there is to be no noisy old music while the cricket is being
+			played. Can't be distracting the players, you see, even if we are about a hundred and fifty yards
+			away from them, inside a building. So we are going to have to wait until the cricket is done. The final
+			doesn't finish until six o'clock. When I finally do enter the room to see about playing, I see
+			that 90% of that small crowd has given up in despair and gone away again.
+			<p>
+			Never mind. At the last the cricket players will be there, keen to celebrate their winning the final,
+			right? Well, yes. The trouble is this: the team that has just won the Tom Hall Memorial Cricket For All
+			Challenge Tournament is a team from the Police. (Yes, indeed, that does explain why Curtis was out there on
+			the rainy terraces, cheering desperately for the other side.) So we have perhaps twenty-five people here to
+			see the band and perhaps potentially as many Police. And we have been waiting hours. We've waited in
+			the toilets, we've waited in Curtis' car, listening to - uh - opera, we've
+			waited in the special "Umpires Only" room (backstage dumper! "Hey, Bot - we should do a gig here some
+			time!"), we've waited like proper waiters. Nuff waiting already, let us play.
+			<p>
+			The backing track begins to roll, with - appropriately enough - snatches of Police radio. I'm
+			wondering if anybody here recognises his voice. I'm wondering if we're all going to Guantanamo.
+			We start with Play It All Night Long, and there is venom. The programmed beats are coming back at us so
+			hard that my monitor is cracking up. It's a good, solid start. Critters is introduced as a song about
+			nature. I'm sure that no animal noises of any kind were made by anybody. At this point.
+			<p>
+			We bash our way through Quality People, then Curtis runs on to join in with Istanbul Connection. He's
+			brought his own beer crate with him so that he can reach up to share my microphone, and makes a point of
+			getting down off it between lines, then getting back up again for the next one. He's a proper
+			nuisance, but he's a lovely set of pipeys on him. By now there is a small posse of cricket police
+			sitting at a table at the back, about as far away from the band as you can go, looking well miserable. I
+			have no idea what they can be making of the ensuing Secret Government (you ain't seen me, right?),
+			but then comes the time to play Police Chief.
+			<p>
+			We set off at a fair old clip, guitars fizzing as MC Bot delivers our touching tribute to the boys who
+			protect and serve. As things warm up, the proud new father takes to the keys on his bullhorn and - behold!
+			- the thing can make police car noises! Naturally enthused, Bot continues to nee-naw his way through the
+			entirety of the tune. As we are happily shouting "You've got it. We want it. What? Your currency", a
+			small crocodile of victorious and yet somehow strangely subdued officers make their way out of the room.
+			One of them, noting with his eagle-eyed detective skills that MC Bot might conceivably be taking something
+			resembling the piss, mutters something along the lines of "cults" as he leaves. Mind how you go, now.
+			<p>
+			Wilson rattle on through Buffalo Sniper and Dark Agenda. Just to make a point, like.
+			<p>
+			With those who are there at the death, it goes down great. Lusty cries of "You whores!" greet the intrepid
+			Wilson Four as they slink away from their amplifiers.
+			<p>
+			Andy Shaw, The Man from CAN, loved it, I'm told. He is a very nice man. He bought me a bottle of Pils
+			and let me shout at the Police at some length and at considerable volume. He also gave us a lovely big
+			bottle of Scotch with our wages. CAN is a charity dealing with drug and alcohol addiction issues.
+			<p>
+			Yeah, I know.
+			<p>
+			Thanks to Andy, though, and thanks to Jamie Jab for all his help, and thanks to those who came out to one
+			of the weirdest gigs we've done in a while.
+			<p>
+			So, chop-chop, ladies n gents - what's next?
+			<p>
+			Aaaargh! BUILTH!
+		)},
+		press=${literalizeCommas(
+			<a href="/images/20040912/cricketpress.jpg"><img
+				src="/images/20040912/cricketpress_500.jpg"></a>
+		)},
+		notes=${literalizeCommas(
+			1:00 'til 6:00 in the afternoon
+			CAN / Tom Hall Memorial
+			<p>Cricket for all knockout trophy 2004
+			Wilson will be playing in The Ken Turner Room.
+		)},
+	)}
+
+#define Sep25.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			In the immortal words of Chuck D, here we go again. On Saturday 25th September the entire NN1 underground
+			packs up and heads west, for it's time for one of Fred's mighty parties. All manner of sporting and
+			cultural events and curry goat too, if I'm getting the hang of it.
+			<p>
+			Entertainment subject to change at this point, but liable to involve P-Hex, Wilson and Good Cop Bad Cop.
+			Plus local acts and DJs.
+			Bring camping stuff and supplies!
+			<p>
+			Cheers,
+			<br>Pat
+			<br>xxx
+		)}
+	)}
+
+#define Dec5.html()
+	${gigHeader(
+		pat=${literalizeCommas(
+			Yeah, well the drummer works.
+			<p>
+			Pat<br>
+			xxx
+			<p>
+			PS - Actually, we are excited as fuck. Last night was almost certainly the best gig we've
+			ever done. People who have seen us two dozen times were slack-jawed with happy disbelief.
+			The support band were giving it "we're not worthy" in the corridor outside the gents
+			lavatory. Bless 'em. They're called Aktual Size. I don't know if they'll appreciate this,
+			but a lot of folks thought they were a bit like Busted. I don't know about that. They
+			sounded like punk to me. Very nice blokes, anyway. Easy to work with, friendly...oh, and
+			they do that "we're not worthy" thing in the corridor outside the gents lavatory
+			afterwards...which is always nice...
+		)},
+	)}
+
+#define Dec11.html()
+	${gigHeader(
+		pat=${literalizeCommas(
+			After working with a mountain of sound and light equipment at the Racehorse gig last week, this was the time to see
+			if the new, dense Wilson could cut it in a more conventional small club setting. The verdict appears to have been a
+			resounding "not half!". The mighty little Labour Club PA punched above its weight once again, the band squeezed
+			itself into the stage area (which we were sharing with a large Christmas Tree!) and we even managed to draft in the
+			celebrated oil wheel in an effort to vibe up the room. Of course, what you really need to vibe up the place is a pack
+			of raving punters, up on their hind legs and baying for dub mayhem, and happily, with tonight seeing the birthday
+			celebrations of both the Great Yvette Bailey and Public Enemy Number One, the right reverend Lindsay Spence, a crowd
+			was soon assembled. A few "faces" in there, too, including Mark Refoy, Big Tim Sansom and none other than Laurence
+			O'Keefe, who has been in town working on the feature film "Kinky Boots", shortly to put Northampton NN1 on the silver
+			screen, thereby boosting our New Barcelona status to almost painful levels. (Actually, there have been two feature
+			films shooting in town this month, so let's make that really full-on painful, shall we? Lovely!) We played The
+			Temptaions, The Streets and The Kills and Joe Woolley delivered a strong opening set, much to Big Tim's fascination.
+			The Wilson sirens started up with MC Bot nowhere to be seen, but we've got used to this at the Labour Club. He soon
+			turned up to wreak shouty havoc on the assembled as the rest of us cowered up against the walls, fearing for our
+			effects pedals' immediate security. Altogether a lovely night, well-received. Thanks, everybody.
+			<p>
+			Cheers now,<br>
+			Pat<br>
+			xxx
+		)},
+	)}

@@ -1,0 +1,708 @@
+#define	Mar1_2115.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, Agent Cooper, Special K.
+		)},
+		notes=${literalizeCommas(
+			<b>WILSON</b> will be supporting Hane-Pesodi.
+			<p>
+			<b>WILSON</b> are Pat Fish, Agent Cooper and Special K.
+			<p>
+			<b>WILSON</b> play 21st Century Dub.
+			<p>
+			<b>WILSON</b> will be onstage at 9:15 pm and admission is two of your English Pounds.
+		)},
+		pat=${literalizeCommas(
+			We experienced two of the most unexpected technical problems that I have ever
+			faced!
+			<p>
+			1. We came on stage, all neatly soundchecked, only to discover that the pad
+			on the CD backing track was a whole semitone out with all the guitars! Now,
+			I had just tuned the guitars (4 of 'em!), so I knew it wasn't that. What it
+			was was that the house CD player was one of those DJ jobs with varispeed.
+			Some prannet had obviously leaned on the varispeed button at some point,
+			thrusting Wilson into the Omniverse. A quick appeal from the stage brought
+			the house soundman hurtling across the dancefloor to "reset devices" and we
+			carried on happily.
+			<p>
+			2. Having broken a string on my telecaster, I was delighted to see it
+			reappear, fully strung-up, on my guitar stand. I picked it up for the start
+			of "Secret Government" only to discover that it was in regular EADGBE
+			tuning...which was odd, as it was supposed to be in an open D tuning. I had
+			to spend the first verse of the sing dragging the tuning back. Thank God for
+			silent tuners! Anyway, it all went smoothly enough and we carried on without
+			incident. It was only about 3 songs later that I became aware that it wasn't
+			my telecaster at all, but a look-alike kindly loaned by the other group!
+			Doh!
+			<p>
+			I tell ya - we thought we were SO well prepared!
+			<p>
+			Still, for all those little irritations the set went down well.
+			The audience was a fairly imposing bunch, about 100 strong, with pretty much
+			every pro musician in town, along with various representatives from the
+			Spacemen/Spiritualized axis, so it was quite a relief to hear people saying
+			nice things about us.
+			<p>
+			(It was even more fun to overhear bona-fide punters shouting "brilliant" at
+			each other at the bar.)
+			<p>
+			After the show we retired to Shakespeare Villas for a knees-up.
+			Imagine our surprise when the entire staff of the club, promoter, manager,
+			soundman and even a couple of barmaids showed up toting a crate of beer!
+			I think we might be "in there".
+			<p>
+			We all enjoyed ourselves (in a scary kinda way) and will definitely be doing
+			more shows wherever we can.
+			I think we're going to play The Packhorse in Leeds on 14th April, and we
+			could well be back at the Soundhaus on 19th April, but neither date is rock
+			solid yet.
+			<p>
+			Music? Wot's it like?
+			A sort of small and moody ${sumosonic}, but with more emphasis on dub and
+			general phatness (phatitude?)
+			<p>
+			We've started recording a demo with Ian the Sumo vocalist/producer.
+			<p>
+			<img   alt="[signature]" src="${jbc_images}/pat_sig.gif">
+		)},
+	)}
+
+#define	Apr1_2200.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			Wilson Headstone - guitar,
+			Misery Wilson - bass,
+			Agent Wilson - percussion
+		)},
+	)}
+
+#define	Apr14_2130.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			Wilson Headstone - guitar,
+			Misery Wilson - bass,
+			Agent Wilson - percussion
+		)},
+		with=${literalizeCommas(
+			Saab 77
+		)},
+		notes=${literalizeCommas(
+			The plucky dub situationists will be playing at The Packhorse, Leeds,
+			UK on Saturday 14th April, opening for Saab 77.
+			Wilson will be onstage at 9:30 pm.
+			<p>
+			Special navigational note: There are TWO Packhorses in Leeds!
+			This one is the one near the University.
+		)},
+	)}
+
+#define	May24_2100.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			Wilson Headstone - guitar,
+			Misery Wilson - bass,
+			Agent Wilson - percussion,
+			Steve Gordon (from P. Hex) - guitar,
+			Ian Botterill (from Fat Controller) - extra vocals,
+			E-Man - Theremin-like machine
+		)},
+		with=${literalizeCommas(
+			Not By Choice
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+			Well, against all the odds Wilson pulled off something of an away win last night.
+			Even if it was in our own home town.
+			<p>
+			After a week of frenzied - if accidental - recruiting, the Wilson line-up emerged onstage last night looking
+			something like:
+			<p>
+			Wilson Headstone - Telecaster, Singer<br>
+			Misery Wilson - Bass vibrations<br>
+			Agent Wilson - Percussion<br>
+			G-Man - Stratocaster<br>
+			B-Man - MC<br>
+			E-Man - Theremin-like machine that goes Pffffffffttthhhhweeeeeeeoooop.
+			<p>
+			The set was the usual current one:
+			Critters - God's Green Earth - Secret Government - Sweet Home Alabama - Burn, Hollywood, Burn - Dark Agenda.
+			<p>
+			The Wilson auxiliaries, E-Man (Curtis E. Johnson), B-Man (Ian Botterill, of ${sumosonic} and Fat Controller) and
+			G-Man (Steve Gordon of NN1 Tarantino Funk kingpins P-Hex) all distinguished themselves very well indeed.
+			Only B-Man fell over. Conceivably he was doing this on purpose, but it rather depends on who you're talking to.
+			E-Man, being The Bald One, got to do Eno and G-Man added chunk funk and razzle in a fine demonstration of
+			What To Do With A Fender Twin.
+			<p>
+			We were supposed to be playing around 9:00 pm, but early in the evening it transpired that, in fact, we were to
+			headline a four band bill (it was easier on the drum kit situation, and all the other groups, being properly
+			youthful, probably found us faintly intimidating anyway). Accordingly, Wilson took the stage about ten minutes
+			before our ludicrous UK licensing laws closed the bar and about ten minutes mafter a steaming performance from the
+			young and very talented Capdown. Capdown (short for "Capitalist Downfall", I'm told) are a rocking skatepunk n ska
+			outfit who got the large and predominantly youthful crowd going something fierce. (You can catch them at this
+			year's Reading Festival - Capdown, not the large and predominantly youthful lot.)
+			<p>
+			Accordingly, we had a bit of a tough act to follow and very little time to get people over.
+			And we only went and pulled it off.
+			A lot of the younger punters began to mumble disconsolately at the sight of a bunch of grizzled pensioners
+			starting up, and some wandered out into the warm night and the beer garden. By half way through the set, though,
+			the mumblers were starting to dance and the gardeners began to return.
+			<p>
+			With B-Man on fine form, having just received a spectacular and well-deserved kicking from one of the town's
+			leading songwriters in the front bar, and with a powerful live sound from Geoff Kirk, our shit was truly swinging.
+			Hollywood was duly incinerated
+			(the sound of 10,000 enraged LA Korean store owners marching on the Mondrian Hotel) before Wilson laid their Dark
+			Agenda upon the assembled and hideous guitar noise was the outcome.
+			Thence to an old school Sumo party at the Agent's yard and a beastly hangover this morning.
+			Nice one.
+		)},
+	)}
+
+#define	Jul7.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${solo}
+		)},
+		notes=${literalizeCommas(
+			I shall be doing a DJ set at Radio 4 at The Knitting Factory, LA on Saturday 7th July.
+		)},
+	)}
+
+#define	Jul8.html()
+	${gigHeader(
+		cost=$12.50,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${steve}, ${hask}, ${owen}
+		)},
+		notes=${literalizeCommas(
+			with Very Special Surprise Guest opener, and with Kevin Haskins on Drums for the JBC
+			<p>
+			Ticket Price: $12.50, go on sale June 14th
+		)},
+		photosets=
+			/images/20010708/20010708_troubadour1.jpg$$
+			/images/20010708/20010708_troubadour2.jpg$$
+	)}
+
+#define	Jul11_1900.html()
+	${gigHeader(
+		cost=$14,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${steve}, ${owen}
+		)},
+	)}
+
+#define	Jul11_2200.html()
+	${gigHeader(
+		cost=$14,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${steve}, ${owen}
+		)},
+	)}
+
+#define	Jul14.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, ${steve}, ${owen}
+		)},
+		notes=${literalizeCommas(
+			Wedding gig.
+		)},
+		photosets=
+			/images/20010714/20010714_arianaM12_hanging.jpg$$
+			/images/20010714/20010714_arianaM12_playing.jpg;;${literalizeCommas(Here he was in potato quality in summer 2001 in Monterey CA where I sat next to him and the band at the wedding and told him over and over he wasn’t Pat Fish because I couldn’t believe it . The groom surprised me and my brother . It was amazing)}$$
+			ArianneM12;;https://twitter.com/ArianneM12;;2021-10-06
+	)}
+
+#define	Aug4.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${steve}, ${owen}
+		)},
+		with=${literalizeCommas(
+			Curtis E. Johnson, The Moths
+		)},
+	)}
+
+#define	Aug6.html()
+	${gigHeader(
+		cost=,
+		eventweb=http://www.thesoundhaus.com,
+		phone=01604 520898,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${steve}, ${owen}
+		)},
+		with=${literalizeCommas(
+			Curtis E. Johnson, Saab 77
+		)},
+		notes=${literalizeCommas(
+			It's a newish venue and very nice. It holds about 400, so come on down,
+			you JBC lovers, on yer bikes!
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Aug8.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, ${steve}, ${owen}
+		)},
+		with=${literalizeCommas(
+			Curtis E. Johnson
+		)},
+		notes=${literalizeCommas(
+			This is Alan McGee's club. Come watch the JBC annoy the glitterati!
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Aug9.html()
+	${gigHeader(
+		phone=0207 344 0044,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${steve}, ${owen}
+		)},
+		with=${literalizeCommas(
+			Curtis E. Johnson, Saab 77
+		)},
+		notes=${literalizeCommas(
+			The scene of many previous JBC soirees.
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Aug12.html()
+	${gigHeader(
+		eventweb=http://www.rockspektakel.de,
+		who=${literalizeCommas(
+			${pat}, ${max}, ${steve}, ${owen}
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Aug18.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, ${steve}, ${owen}
+		)},
+		photosets=/images/20010818/20010818_map.jpg$$
+	)}
+
+#define	Oct7.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			Wilson Headstone - Telecaster Singer,
+			Misery Wilson - Bass vibrations,
+			Agent Wilson - Percussion,
+			G-Man - Stratocaster,
+			B-Man - MC,
+			E-Man - Theremin-like machine that goes Pffffffffttthhhhweeeeeeeoooop.
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Wilson appear to be holding steady at a 6 piece line-up and are adding
+			some new tunes for these dates.
+			One of them is a version of a Frank Zappa tune. Christ!
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Oct17_2100.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			${solo}
+		)},
+		with=${literalizeCommas(
+			Gerard Langley
+		)},
+		notes=${literalizeCommas(
+			I'm doing a solo show, opening for Gerard Langley (!) at The 12-Bar Club, Denmark Street, London
+			on Wednesday 17th October 2001. Expect me onstage around 9:00pm.
+			Advance bookings: 0207 209 2248
+			Copies of the re-issues will be available at the show, fight fans!
+			<p>
+			No Max this time - he won't be available for this one. No big deal - just that his diary was already
+			full for that night...
+			so conspiracy theorists needn't fret...Max and I will probably be doing a headliner at the same club
+			over the next few months
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Oct19.html()
+	${gigHeader(
+		cost=,
+		who=${literalizeCommas(
+			Wilson Headstone - Telecaster Singer,
+			Misery Wilson - Bass vibrations,
+			Agent Wilson - Percussion,
+			G-Man - Stratocaster,
+			B-Man - MC,
+			E-Man - Theremin-like machine that goes Pffffffffttthhhhweeeeeeeoooop.
+		)},
+		with=${literalizeCommas(
+			Curtis E. Johnson, Saab 77, Mrs. Pilgrim
+		)},
+		notes=${literalizeCommas(
+			Wilson appear to be holding steady at a 6 piece line-up and are adding
+			some new tunes for these dates.
+			One of them is a version of a Frank Zappa tune. Christ!
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Oct20.html()
+	${gigHeader(
+		cost=&pound;2:00,
+		who=${literalizeCommas(
+			${solo}
+		)},
+		with=${literalizeCommas(
+			Mrs. Pilgrim, Curtis E. Johnson
+		)},
+		notes=${literalizeCommas(
+			I'll be doing a solo show on Saturday 20th October at The Cardigan Arms in Leeds.
+			It's &pound;2:00 to get in.
+			You get: me solo, Mrs. Pilgrimm, and Curtis E. Johnson, in that order.
+			The paper says: "All will perform acoustically in a lovely function room containing a bar".
+			That sounds all right, then.
+			<p>
+			(It's the work of Team Borscht, the Saab 77 guys' little organisation. They're putting on the Wilson
+			gig the night before, so here I am roped in again the next night. That's two unsolicited solo jobs
+			in a week out of nowhere. Purely accidental, I assure you. Like, there won't be any more of this
+			sort of thing for a good while. And what the heck am I going to play? I know! Art Misery.  No,
+			probably not, actually. I dunno. People can turn up and find out. I'll take requests if I can play
+			them, but I'm not doing bloomin' Merry Christmas Everybody, all right?)
+		)},
+		reviews=${literalizeCommas(
+		Wilson had played The Brudenell the night before, I filmed the entire show and gave a VHS to Pat the following         
+		evening at The Cardigan. There was a fire alarm alert mid set (Cardigan) so everyone had to converge in the retail     
+		park opposite. Pat played (guaranteed) Vienna Song (that was played as a dedication for me) he also played Nature      
+		Boy...I remember that as David J had covered it and it was also part of the Moulin Rouge film OST that Bowie had       
+		done around that time...that's about all I can remember though!
+		)}$$
+		Andrew Brooksbank,
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Dec2.html()
+	${gigHeader(
+		cost=free,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Dec24.html()
+	${gigHeader(
+		cost=&pound;2:50,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			There will be deejays and
+			lights and all that festive shit and it only costs &pound;2:50 to get in. Blindin'!
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Dec31.html()
+	${gigHeader(
+		cost=&pound45:00,
+		phone=01603 279332,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			The Riverie at Buxton Mill<br>
+			Mill Street<br>
+			Buxton<br>
+			Norwich NR10 5JS
+			<p>
+			Phone number is 01603 279332.
+			<p>
+			Tickets are a positively Japanese &pound;45:00.
+			For this, however, you get dinner, champagne and the JBC in full, hideous
+			festive effect.
+			<p>
+			All the rooms at the hotel are booked now but it's possible that they
+			might be able to suggest other accommodation in the area. Close personal
+			friends of the band may be able to blag floor space with someone.
+			<p>
+			This bizarre event has not been advertised before, as the band thought
+			it was a private party!!!
+			<p>
+			Max Eider, the man who got us into this pickle, writes:
+			<p>
+			"It is unquestionably an ill-conceived event, as was clear from the start: I suppose I was naive to think
+			that we would be immune to the consequences. However, let's just have a larf: I think it has a lot of comic
+			potential."
+			<p>
+			He knows a thing or two, that Eider...
+			<p>
+			Best festiff regards to one and all,
+			Pat<br>
+			xxx
+		)},
+		pat=${literalizeCommas(
+			<b>
+			NEW YEAR'S EVE - JBC GO UP-COUNTRY
+			</b>
+			<p>
+			On the afternoon of 31st December 2001 I learn something that
+			I didn't know before. Owen is explaining to Steve about today's
+			JBC destination, Norfolk. The natives, he tells us, were only
+			converted to Christianity in the 17th Century. To Steve, just
+			off the plane from Downtown LA, this may be interesting cultural
+			background. To me it is one more in a concatenation of signs
+			that maybe this time the JBC have got themselves into something
+			just a little bit too deep.
+			<p>
+			It all started a few weeks back when The Talented One suggested
+			that we might care to do a show on New Year's Eve at a smart people's
+			country house hotel in deepest Norfolk that had somehow fallen
+			into the hands of an old school pal of his. A hefty fee was on
+			the cards, with hotel rooms and all our worldly demands fulfilled.
+			Unsurprisingly, this struck your correspondent as being one of
+			those Good Ideas. 
+			<p>
+			It also reminded me of a classic remark made by my good friend,
+			George, a fifty year old shamanically-inclined Turkish aristocrat
+			who has somehow managed to end up living over the fire station
+			in Northampton NN1. During one of our habitual fireside conversations
+			George had advised me that the citizens of Sheringham in Norfolk
+			lived life in the "classic, old-fashioned and normal style."
+			It struck me that George would love to spend his New Year's Eve
+			in a Norfolk country house hotel.
+			<p>
+			Assuming, then, that we had lucked out getting booked by a load
+			of mad rich rustics for their private New Year celebrations,
+			the JBC said.
+			<p>
+			It was only just before Christmas that it was revealed to us
+			that this show was actually open to the public and that we were
+			allowed, nay encouraged,  to advertise it. At the same time we
+			discovered that tickets were a positively Japanese 
+			&pound;45:00 a head and, perhaps unsurprisingly, they had not been selling
+			that well. That big fat fee suddenly started to look a touch
+			more theoretical. Nonetheless, by this stage we had all made
+			our travel arrangements and booked some other UK shows besides,
+			so we decided to go ahead with this mental scheme and have as
+			many laughs as possible from the whole weird experience. 
+			<p>
+			In which, the reader will be glad to hear, we were in no wise
+			disappointed.
+			<p>
+			While the majority of the posse travel up from London by train,
+			the hardcore rhythm section boys and gals drive with the equipment
+			from NN1.
+			<p>
+			Steve is at the wheel, superb in his handling of the ubiquitous
+			"roundabouts"
+			that plague the English roads. I navigate and Lynda sits between
+			us, trying to get a glimpse of the English countryside as it
+			flashes by. Kathie, Owen and George are in the back with the
+			kit. Arranged on a big pile of cushions they cope well with life
+			as freight until, somewhere east of Newmarket, the sun goes down.
+			Then they go very quiet.
+			<p>
+			About ten miles outside Norwich - perhaps twenty miles from our destination -
+			there is a faintly desperate rapping on the wall that divides the freight from the front. 
+			<p>
+			"Where are we?" cries an audibly anxious Owen.
+			<p>
+			I reassure him that we are not far from our target, and indeed
+			soon we are pulling up in the snow-covered yard of an enormous
+			old wooden mill perched over a river in a remote Norfolk backwater,
+			which turns out, as fate would have it, to be only three or four
+			miles from the place where in another life I recorded 
+			"Cult of the Basement"
+			and "Condition Blue".
+			<p>
+			The freight is released gratefully from the back of the Transit
+			and we all waddle into the hotel's smart and attractive bar to warm up. 
+			<p>
+			We are greeted warmly and hospitably by the gentleman who booked
+			us, but there is a detectable note of - shall we say - flakiness
+			in the air. When the hard-bitten touring engine meets the well-intentioned
+			but inexperienced amateur odd little things like securing one's
+			room or a mat for the drum kit can become the source of unexpected
+			dilemmas, which can lead to confusion, even frustration. Nonetheless,
+			with the invaluable help of our support band, Tumbling Dice,
+			we get everything sorted and zip through an encouraging soundcheck,
+			which we complete just in time for dinner.
+			<p>
+			Our table is huge and round. Somebody remarks that it's all a bit Arthurian.
+			"Yes,"
+			says Owen, 
+			"And I know who King Arthur is."
+			<p>
+			He is looking across the table directly at George.
+			<p>
+			A top dinner ensues. The hotel clearly has a fine chef and we
+			dine on all manner of good things, including the quite possibly
+			the best chips to be had outside of Belgium. As we finish up,
+			the dining room begins to fill with wholesome-looking families
+			gathered in their best togs for a festive blow-out. It occurs
+			to me that this might be a good time for
+			the scary musicians to make themselves scarce, so I leg it up
+			to my room and set about devising a list of tunes for tonight's show. 
+			<p>
+			It soon dawns on me that it would be stupid for me to try and
+			assemble a set list without consultation with the rest of the
+			band, so I find myself obliged to go looking for them back down
+			in the dining room. As I arrive I find Steve, Lynda, Anne and
+			Baerbel sitting at a beautifully set table with George and bottle
+			of Champagne. It immediately becomes clear that it is George
+			who has ordered the Champagne. 
+			<p>
+			Max and I slip away for a moment and construct a set list, which,
+			we imagine fondly, will cause all manner of consternation among
+			the rest of the band. We are wrong. They all think it's fine, the mad bastards.
+			<p>
+			Here it is:<br>
+			${odd}<br>
+			${drugs}<br>
+			${jane}<br>
+			${who}<br>
+			${comeon}<br>
+			${morphine}<br>
+			${rain}<br>
+			${hour}<br>
+			${wheel}<p>
+			midnight Champagne, snogging and shouting break<p>
+			${friendly}<br>
+			${skins}<br>
+			${niagara}<br>
+			${sis}<br>
+			${gf}<br>
+			${party}<br>
+			${zombie}
+			<p>
+			Now, the sensitive reader will have noticed that we are talking
+			about a New Year's Eve gig here, and it is fair to say that there was some considerable
+			debate about whether the band should include the Twin Towers
+			Of Misery And Despair (${morphine} and ${sis}) in the set tonight.
+			<p>
+			This debate ended up with everyone in the band saying 
+			"Naaah".. fuck..
+			<p>
+			At about 10:00pm Tumbling Dice take the stage. A duo with backing
+			tracks of their own devising, they play a brilliant party set
+			of covers from the songbooks of The Beatles and The Stones, with
+			tunes by The Kinks and The Small Faces thrown in for good measure.
+			They even do a Status Quo number! During this last I catch Claire
+			out doing That Seventies Dance: you know, the one with the hands
+			on the hips and the weird rhythmic spastic twitching at the waist.
+			<p>
+			"I bet they still dance like that round here,"
+			I tell her.
+			Then I turn around and see a local couple about ten feet away - doing exactly that!
+			<p>
+			While the dice are tumbling I also note that George, who generally
+			never drinks, is well on his way. He is shaking his head to the
+			sixties sounds like there is no tomorrow. I have never seen George
+			rock so hard.
+			<p>
+			Our set list is planned to break for the midnight shenanigans.
+			We refuse to learn "Auld Lang Syne"
+			and we don't want to ruin people's New Year party, so we have resolved to stop awhile for kissing
+			and shouting at the auspicious hour. This entails our starting
+			at exactly 11:10pm. We finally make it onstage to start at 11:18pm,
+			but no matter 
+			we have found a clock that can be seen from the stage, so we
+			fondly imagine that we are in control.
+			<p>
+			As we take the stage I essay a short speech to explain to the
+			few natives gathered what exactly the fuck is liable to be going
+			on. As you probably know, the JBC only generally play in places
+			where people want to see them. (It makes life so much more pleasant
+			for band and punters alike, we feel.)
+			<p>
+			This is clearly not the case tonight, so I give a little spiel
+			about how..  well, you know how all the bands say they're different..
+			well, we really are different because different.
+			<p>
+			Yeah, nice one, Pat.
+			<p>
+			From the first number it's clear that the improvised sound system and the under-rehearsed
+			JBC are both working as well as they possibly could. Within a
+			couple of tunes dancing has broken out. A couple of tunes later
+			I look up to see George leaping two-footed into the air. A few
+			songs down the road and Owen's floor tom-tom collapses on top of his pint, shattering the
+			glass and scattering beer everywhere. He mends the drum, sorts
+			out a new pint and puts it back down. A few minutes later the
+			drum collapses again, with more shattered glass and squandered
+			beer. But we are having fun.
+			<p>
+			We arrive at the first Tower Of Misery And Despair.
+			<p>
+			Diamorphine goes off like a big mental bomb.
+			<p>
+			We cruise through some pop songs and a particularly sociopathic
+			Wheeler and make it to the midnight break without problems.
+			<p>
+			Champagne is opened. Hugs and kisses all round. Everybody has
+			made it into 2002. 
+			<p>
+			We pick up again some ten minutes down the road with a nicely
+			paced Spacemen
+			and reel on through the rest of our show. People, God bless
+			them, are going mental. Not even Sister Death can stop them.
+			(My excuse goes along the lines of: 
+			"Well, you can't have a dance without a waltz, boys and girls, now can you?"
+			To my astonishment, I get away with it.)
+			<p>
+			We finish with a typically vile rendition of 
+			Zombie Love, then encore with Roadrunner.
+			By the end of it I am barking like a big stupid dog.
+			<p>
+			Everyone is astoundingly kind about our show. While Tumbling
+			Dice return to play a couple more top party tunes we chill the
+			fuck out with bottles of Champagne and the rest. A top soul DJ
+			takes over and the party goes on until about 4:00am, by which
+			time, thoroughly mashed, Kathie, George and I retire to our room
+			with one final bottle of Champagne and a bunch of Rizlas.
+			<p>
+			We awake the following day to beautiful winter sun on the river
+			beneath our window. Somehow, for God is great, we have survived
+			JBC Vietnam.
+			<p>
+			${max} a.k.a. The Talented One - Instigator,
+			${steve} - Operator,
+			${pat} - Navigator,
+			${Beirne} - Arpeggiator,
+			${owen} - Refrigerator,
+			The Posse - Kathie, Tamaki, Baerbel, Lynda, Claire, Billy, Anne, George
+		)},
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

@@ -1,0 +1,390 @@
+#define	Jan26_2000.html()
+	${gigHeader(
+		photosets= /images/20130126/20130126_pat1.jpg$$
+			/images/20130126/20130126_pat2.jpg
+	)}
+
+#define	Feb14_2030.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			I will be one of four artists collaborating on an evening called "Small Beast". The others are New Yorker Thomas Truax,               
+			Markus-Maria Jansen of German band M. Walking on the Water and Paul Wallfisch, another New Yorker who is currently the director of    
+			music at the theatre in Dortmund. Each of us will play a short solo set before joining up to play a full set together. It will        
+			be...different... 
+		)},
+		photosets= /images/20130214/20130214_pat.jpg$$
+	)}
+
+#define	Feb15_2200.html()
+	${gigHeader(
+	)}
+
+#define	Apr12_2100.html()
+	${gigHeader(
+	)}
+
+#define	Apr20_1500.html()
+	${gigHeader(
+		cost=free,
+	)}
+
+#define	Apr20_2100.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, Jonny Mattock, Tim Harries
+		)},
+	)}
+
+#define	Jun13.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, Tim Harries, Jonny Mattock
+		)},
+		notes=${literalizeCommas(
+			We have booked a "warm up" date for the New York shows at the Labour Club in NN1.
+			The NYC gigs will be duo shows, so we will mostly be performing as a duo on this occasion too.
+			Since, however, we are in Northampton, it would be beyond stupid to miss out on involving Jonny and Tim, who played on the album,
+			so they will be joining us for a bit of rocking out towards the end of the evening.
+			<p>
+			Admission tbc but no more than two or three quid.
+			<p>
+			Set 1: ${duo}
+			Set 2: ${pat}, ${max}, Tim Harries, Jonny Mattock
+		)}
+	)}
+
+#define	Jun15.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${duo}
+		)},
+		notes=${literalizeCommas(
+			THE JAZZ BUTCHER DUO (Pat Fish & Max Eider)
+			<p>
+			21+ show
+			<p>
+			For the Jazz Butchers
+			<p>
+			(Both of them)
+		)},
+	photosets= /images/20130615/20130615_brianchistian_max.jpg$$
+			Brian Christian III
+	 ---
+			/images/20130615/20130615_arcane93_soundcheck_pat.jpg$$
+			/images/20130615/20130615_arcane93_soundcheck_max.jpg$$
+			/images/20130615/20130615_arcane93_pat2.jpg$$
+			/images/20130615/20130615_arcane93_max1.jpg$$
+			/images/20130615/20130615_arcane93_max2.jpg$$
+			/images/20130615/20130615_arcane93_pat1.jpg$$
+			Matt Condon;;http://twitter.com/arcane93
+	---
+			/images/20130615/20130615_TheMickLewis_duo.jpg$$
+			\@TheMickLewis;;http://twitter.com/TheMickLewis
+	---
+			/images/20130615/20130615_soundbitesnyc_duo.jpg$$
+			\@soundbitesnyc;;http://twitter.com/soundbitesnyc
+	---
+			/images/20130615/20130615_brooklynvegan_pat.jpg$$
+			\@brooklynvegan;;http://twitter.com/brooklynvegan
+	---
+			/images/20130615/20130615_knight_duo.jpg$$
+			Knight Berman\, Jr\, (\@marbletea);;http://twitter.com/marbletea
+	 ---
+			/images/20130615/20130615_uncletoe_duo2.jpg$$
+			/images/20130615/20130615_uncletoe_pat2.jpg$$
+			/images/20130615/20130615_uncletoe_pat3.jpg$$
+			/images/20130615/20130615_uncletoe_pat4.jpg$$
+			/images/20130615/20130615_uncletoe_duo1.jpg$$
+			/images/20130615/20130615_uncletoe_duo3.jpg$$
+			/images/20130615/20130615_uncletoe_duo4.jpg$$
+			/images/20130615/20130615_uncletoe_max1.jpg$$
+			/images/20130615/20130615_uncletoe_max2.jpg$$
+			/images/20130615/20130615_uncletoe_pat1.jpg$$
+			uncletoe;;http://www.flickr.com/photos/uncletoe
+	---
+			/images/20130615/20130615_ruiz_duo.jpg$$
+			/images/20130615/20130615_ruiz_max.jpg$$
+			/images/20130615/20130615_ruiz_gretsch.jpg$$
+			Jim Ruiz;;http://chickfactor.com/2013/06/the-jazz-butcher-live-by-jim-ruiz/
+	---
+			/images/20130615/20130615_thelmagazine_JazzButcherJazzButcher02.jpg$$
+			/images/20130615/20130615_thelmagazine_JazzButcherJazzButcher03.jpg$$
+			/images/20130615/20130615_thelmagazine_JazzButcherJazzButcher11.jpg$$
+			/images/20130615/20130615_thelmagazine_JazzButcherJazzButcher19.jpg$$
+			/images/20130615/20130615_donyc_max.jpg$$
+			/images/20130615/20130615_donyc_pat.jpg$$
+			Beowulf Sheehan/The L Magazine;;http://www.thelmagazine.com
+	,
+	setlists=
+			/images/20130615/20130615_ruiz_setlist.jpg$$
+			Jim Ruiz;;http://chickfactor.com/2013/06/the-jazz-butcher-live-by-jim-ruiz/
+	---
+			/images/20130615/20130615_arcane93_setlist.jpg$$
+				Matt Condon;;http://twitter.com/arcane93
+	,
+	)}
+
+#define	Jun17.html()
+	${gigHeader(
+		photosets=
+		/images/20130617/20130617_cakeshop_pat.jpg$$
+			Cake Shop;;https://www.instagram.com/cakeshopusa/
+		---
+		/images/20130617/20130617_gregbetza_sketch.jpg$$
+			Greg Betza;;http://www.gregbetza.com/the-jazz-butcher-at-the-cake-shop
+	---
+			/images/20130617/20130617_arcane93_pat.jpg$$
+			/images/20130617/20130617_arcane93_max.jpg$$
+			/images/20130617/20130617_arcane93_max2.jpg$$
+			/images/20130617/20130617_arcane93_pat2.jpg$$
+			Matt Condon;;http://twitter.com/arcane93
+	---
+			/images/20130617/20130617_foonon_duo1.jpg$$
+			/images/20130617/20130617_foonon_max_outside.jpg$$
+			/images/20130617/20130617_foonon_pat_plays.jpg$$
+			/images/20130617/20130617_foonon_pat_outside.jpg$$
+			/images/20130617/20130617_foonon_patmax_outside.jpg$$
+			/images/20130617/20130617_foonon_duo2.jpg$$
+			Foonon;;http://thefoonon.tumblr.com
+	---
+			/images/20130617/20130617_uncletoe_group.jpg$$
+			/images/20130617/20130617_uncletoe_guitar.jpg$$
+			/images/20130617/20130617_uncletoe_hug.jpg$$
+			/images/20130617/20130617_uncletoe_max1.jpg$$
+			/images/20130617/20130617_uncletoe_max2.jpg$$
+			/images/20130617/20130617_uncletoe_max3.jpg$$
+			/images/20130617/20130617_uncletoe_max4.jpg$$
+			/images/20130617/20130617_uncletoe_maxsigns.jpg$$
+			/images/20130617/20130617_uncletoe_pat1.jpg$$
+			/images/20130617/20130617_uncletoe_pat2.jpg$$
+			/images/20130617/20130617_uncletoe_pat3.jpg$$
+			/images/20130617/20130617_uncletoe_pat4.jpg$$
+			/images/20130617/20130617_uncletoe_pat5.jpg$$
+			/images/20130617/20130617_uncletoe_pat6.jpg$$
+			Lito Vales;;http://www.flickr.com/photos/uncletoe
+		,
+	reviews=${literalizeCommas(
+			<h2>Jazz Butcher 6/17/2013</h2>
+			I went to see the Jazz Butcher last night and it was very good.<br>
+		<br>
+			The venue was a little place called The Cake Shop and it’s a wonderful combination cafe/record shop/music venue.  <br>
+		<br>
+			When I arrived, Pat’n’Max were outside chatting with folks.<br>
+		<br>
+		<a href="/images/20130617/20130617_foonon_max_outside.jpg"><img  
+			src="/images/20130617/20130617_foonon_max_outside_500.jpg"></a>
+		<br>
+			Max:<br>
+		<br>
+		<a href="/images/20130617/20130617_foonon_pat_outside.jpg"><img  
+			src="/images/20130617/20130617_foonon_pat_outside_500.jpg"></a>
+		<br>
+			Fish:<br>
+		<br>
+		<a href="/images/20130617/20130617_foonon_maxfish.jpg"><img  
+			src="/images/20130617/20130617_foonon_maxfish_500.jpg"></a>
+		<br>
+			Max Fish:<br>
+		<br>
+			Sorry! wrong picture. That’s a little place up the street from the Cake Shop (funny name though, innit?)<br>
+		<br>
+			Here they are, looking mighty hungry and quite possibly eyeing your humble photographer with culinary intent. Good thing meat has not been on Pat’s menu since the mid-80’s (though my wife sometimes thinks me a potato)!<br>
+		<br>
+		<a href="/images/20130617/20130617_foonon_patmax_outside.jpg"><img  
+			src="/images/20130617/20130617_foonon_patmax_outside_500.jpg"></a>
+		<br>
+			There were two opening acts. The first was an excellent gentleman named Paul Wallfisch (of Botanica). A very entertaining set played to a generous crowd:<br>
+		<br>
+		<a href="/images/20130617/20130617_foonon_wallfisch.jpg"><img  
+			src="/images/20130617/20130617_foonon_wallfisch_500.jpg"></a>
+		<br>
+			Admiring onlookers:<br>
+		<br>
+		<a href="/images/20130617/20130617_foonon_crowd.jpg"><img  
+			src="/images/20130617/20130617_foonon_crowd_500.jpg"></a>
+		<br>
+			(where have I seen them before?)<br>
+		<br>
+			Second up was a nice little combo called “Sapphire Mansions”  I thought them very interesting and I would definitely enjoy seeing them again:<br>
+		<br>
+		<a href="/images/20130617/20130617_foonon_sapphire.jpg"><img  
+			src="/images/20130617/20130617_foonon_sapphire_500.jpg"></a>
+		<br>
+			The amp silver amp behind the guitar player caused no end of trouble throughout the set with was most unfortunate, not just for them but for poor Max as well, but I get ahead of myself.<br>
+		<br>
+			By the time the SM’s cleared the stage it was about 11:15 and time for the main event. The Jazz Butcher! <br>
+		<br>
+		<a href="/images/20130617/20130617_foonon_duo1.jpg"><img  
+			src="/images/20130617/20130617_foonon_duo1_500.jpg"></a>
+		<br>
+		<a href="/images/20130617/20130617_foonon_pat_plays.jpg"><img  
+			src="/images/20130617/20130617_foonon_pat_plays_500.jpg"></a>
+		<br>
+		<a href="/images/20130617/20130617_foonon_duo2.jpg"><img  
+			src="/images/20130617/20130617_foonon_duo2_500.jpg"></a>
+		<br>
+			Max was plugged into the evil silver guitar amp and could only make the horrible humming stop while turned almost completely away from the audience.  Still, they carried on like the seasoned professionals they are and played  a very satisfying set, indeed:<br>
+		<br>
+			Big Saturday<br>
+			Holiday<br>
+			Mercy<br>
+			Southern Mark Smith<br>
+			Baby It’s You<br>
+			Girlfriend <br>
+			Betty Page<br>
+			Shame About You<br>
+			Animals<br>
+			Last of the Gentlemen Adventurers<br>
+			Tomb&eacute; dans les pommes<br>
+			Black Raoul<br>
+			Shakey<br>
+			Party Time<br>
+			Shirley MacLaine<br>
+		<br>
+			====<br>
+		<br>
+			Who Loves You Now?<br>
+			Soul Happy Hour<br>
+		<br>
+			It was 12:30 by the time it was over.<br>
+		)}$$
+			Foonon;;http://thefoonon.tumblr.com/post/53322568826/jazz-butcher-6-17-2013
+		,
+		recording=${literalizeCommas(
+			${linkPDF(title=PDF suitable for CD, pdf=/images/20130617/20130617_JBC_Manhattan_CakeShop.pdf)}
+			${g_credit(g=Lito Vale, u=http://www.flickr.com/photos/uncletoe/)}
+		)}
+	)}
+
+#define	Jun21_2000.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			White Elephant Records presents
+		)},
+	)}
+
+#define	Sep6_2000.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Biography
+			Georges staggered out of the dimly lit doorway. Dazed from the explosion, his eyes smarting in the early dawn light he stumbled into a narrow sidestreet.
+			Pausing
+			for a moment, back up against a wall, ever conscious of being recognised he put on his dark glasses and fumbled for a cigarette. Lighting it, he gazed up for a
+			moment at the stars dimly gleaming in the narrow shard of sky cut from between… the silhouetted buildings. It hadn’t always been like this, this name, this
+			life,
+			always having to be running from he knew not what. He straightened, and headed off into the twisting maze of city streets. The fire and noise in his head made
+			finding his way difficult, and for a while he wandered unsteadily through the city, eerily deserted at that early hour. ‘You’d better get going’ a voice
+			suddenly
+			whispered softly behind his left ear. Georges stiffened, and, whirling round, saw nothing but the steam gently rising from a street vent. He set off at a
+			sprint,
+			making his way to the river winding its sinuous route through the city’s heart. This time he had guessed right, the tide was still out and, clambering down the
+			steps to the bank he found his car still parked where he had left it. Igniting, tyres screeched as the old Ford spluttered into motion. Georges was soon at the
+			city
+			limits, the car careered out onto the main road out of town and he headed east into the slowly rising sun. Later, driving fast out on the freeway, the wind
+			whistling on the shield, he took the rise and, looking down over the vast expanse now spread before him he remembered the song that had stayed with him
+			through everything else. The music remained, a piano and saxophone was all he needed. The haze had now lifted, he now knew what he had to do…
+			${g_artistweb(g=Georges Kaplan Presents, u=http://www.georgeskaplanpresents.com)}
+			<p>
+			plus……
+			<p>
+			JB NEWMAN & THE BLACK LETTER BAND JB Newman & The Black Letter Band bring you a shot of single malt rock ‘n roll with a shade of Noir style and a
+			poetic twist.
+			${g_artistweb(g=Facebook, u=http://www.facebook.com/jbnewmanmusic)}
+			<p>
+			+ Pat Fish ( The Jazz Butcher )
+			${g_artistweb(g=Facebook, u=https://www.facebook.com/groups/6182296219)}
+		)},
+	)}
+
+#define	Sep14_2100.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, Tim Harries, Jonny Mattock
+		)},
+	)}
+
+#define	Oct10.html()
+	${gigHeader(
+		photosets= /images/20131010/20131010_martinreed_1.jpg$$
+			/images/20131010/20131010_martinreed_2.jpg$$
+			Martin Reed
+	)}
+
+#define	Oct11_2000.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Yeah, ${joe_woolley}'s launching his EP record with his band. How extremely good!
+		)},
+	)}
+
+#define	Dec4.html()
+	${gigHeader(
+	)}
+
+#define	Dec6.html()
+	${gigHeader(
+	)}
+
+#define	Dec9_1930.html()
+	${gigHeader(
+	)}
+
+#define	Dec12_2000.html()
+	${gigHeader(
+		pat=${literalizeCommas(
+	So this is where it has all been leading. The road that started at the Black Lion on St Giles Street, NN1 some thirty-odd years ago, the road that led some dozen times around the globe, ends here; perhaps only forty miles from where it began. I stand on the corner of a little dogleg street just off Leicester’s Humberstone Road, smoking my hashish in the fog and the drizzle as the law demands. A solitary car comes sailing through the mist. Perhaps it is headed for the club where I’m playing? There is, after all, nothing else down here except for an empty municipal car park and me. As it reaches the corner, the car slows. I wonder if perhaps it is the chap who e-mailed me to say that he hoped to sneak out of his works knees-up in time to catch my set. It is not. The car is full of young Asian lads. They are laughing as they take the corner and speed away into the dirty night.
+	<p>
+	It’s almost Christmas. In function rooms across the nation bosses are leering at their employees’ wives. Identikit shopping centres across the land are open late to squeeze the last few drops of disposable from the desperate. This Christmas it’s gonna be different. This Christmas it’s gonna be OK. Oh, Frankie, Frankie.
+	<p>
+	I have flu; proper chest-full-of- immovable-green-filth flu. I have had flu for the past three gigs and I have it now. For my dinner tonight I have enjoyed a bag of Mini-Cheddars and some Guinness flavoured potato crisps. I have a pint of Amstel, the remains of my spliff, three cigarettes and one pound seventy pence in change. Inside the club Kevin Hewick, barefoot and resplendent in his immaculate Nehru suit, is delivering a series of songs of astonishing intensity to an audience of about ten people.
+	<i>
+	<p>
+	Time’s running out. The money’s running out.
+	<br/>
+	You had a good time, now the money’s running out.
+	</i>
+	<p>
+	This is where it has all been leading. Let’s hit it.
+	</i>
+	<p>
+	The Musician in Leicester is a lovely venue. A proper, open-every-night live music venue that hosts acts from the West Coast of America as easily as it hosts local talent. Managed by the charming Chris with the indomitable Malcolm at the controls, it is clean, professional and altogether lovely. Chairs and tables, complete with candles. Excellent, professional PA system. Nice dressing room. Soap in the bathrooms. It’s a class joint. 
+	<p>
+	To be honest, the only reason they are entertaining me and my pals the Venus Fly Trap is because Leicester legend Kevin Hewick has asked them to, but such is the pleasant vibe about the place that this is clearly good enough for Malcolm and everybody else and they treat us very kindly indeed. Malcolm later tells me that, back in his Leicester days, Liam Dullaghan of “New Barcelona” fame was a regular, yea even unto the point of spending the occasional night sleeping on the stage.
+	<p>
+	Beautiful, purpose-built music club though it be, nobody could mistake the Musician for a place that benefits from a bustling central location. As Alex from the Fly Trap put it, it’s a “destination venue”. You’re not getting any casual walk-up here. This particular Thursday, two grim weeks before Christmas, people have not chosen to make the Musician their destination.
+	<p>
+	None of this bothers Kevin. Airily pointing out to the few brave listeners that “I haven’t been here for...oooooh...two or three days”, he sets off into an astonishing set of tunes. At one point, as this huge, imposing presence intones a dark and rumbling “Yeeeeeeeeah!” a phrase forms spontaneous and uninvited in my mind: “Folk Clubs of the Cretaceous.” It does not feel like taking the piss. In fact, it feels entirely correct and slightly awesome.
+	<p>
+	He might be on home turf. He might be going on first on a slow Thursday night in his local hang-out. It doesn’t matter. Kevin gives it everything, burns like Alan Vega and ends up, a fifty-something man with an acoustic guitar, sounding a lot like Nirvana at the top of their game. Follow that!
+	<p>
+	Tonight I have come with my electric Gretsch and my home-cooked beats. After witnessing Micky Greaney’s astonishing solo acoustic performance on Friday night in Birmingham, I cannot bring myself even to attempt anything in the singer-songwriter line tonight. It’s all been done, better than I could have ever imagined. You should try to hear Micky’s new song “Playlist”, you really should. 
+	<p>
+	There was a moment back at the Oxford gig where, at the bilious conclusion of “Shirley Maclaine”, the poor, overloaded speakers started to vibrate in a rhythm quite different to that which I was generating with my right hand. It sounded like some absurd “acoustic” version of Suicide. Tonight I have a version of their song “Che” on my set list. I have the use of Andy Denton’s Marshall combo and (thanks to the generosity of Tim Harries) a bunch of analogue pedals that go one, two, three louder. Tonight I want to give it some; go down in flames and shit. Yeah.
+	<p>
+	It doesn’t really happen that way. With some mumbled remarks about the Heat Death of the Universe, I set the little MP3 player off and we’re into a fairly competent but hardly inspiring “Shame About You”.  The perverse disco beat of “Che” starts up and I get to mess with the Bigsby a little bit but, with the best will in the world, it all comes out a bit Dave Gilmour down the pub of a Sunday lunchtime. 
+	<p>
+	It’s dark up here. I can’t see the audience. For reasons which seem opaque even at only a few days’ distance I choose to continue with “Wildlife”, a six minute, three chord dirge about dead people. Conceived in the aftermath of seeing John Cale perform “Paris 1919” with an orchestra, it aspires to a certain detatched stateliness; though, to be fair, it would also be possible to see it as a giant waste of everybody’s time. It goes all right, though and now I’m firing up for the Turkish remix of Buffalo Sniper. This gives me the opportunity to explore how Andy’s Marshall  responds to demands for feedback and I am delighted to discover that it responds very nicely indeed. Well, I say “nicely”...
+	<p>
+	As the feedback dies away, the familiar, shuffling beat of “Shakey” starts to run and I manage a half-decent version of that particular six minute, three chord dirge as well. Next, I’m expecting the intro to Southern Mark Smith (complete with sampled Max Eider). Instead I listen, appalled, as the sound of a wheezing Casio issues from the PA. It is the sound of Mister Blagdon!
+	<p>
+	Mister Blagdon, so local legend has it, was murdered and “walled-up” about a hundred and fifty years ago in the house where I used to live. One day in the nineteen-nineties he manifested via the medium of the Casio keyboard in my living room and committed to tape four small and diseased musical offerings, one of which, his...uh...<i>personal take on</i> Beethoven’s “death march” , is currently dripping like sonic mucus from the PA system. I turn to the MP3 player to discover that I have somehow programmed this into my set list. I have, in fact, somehow confused it with a ten second silence.
+	<p>
+	Mister Blagdon duly evicted, I perform a fairly undistinguished version of “Southern Mark Smith”. And there it is. We are on the very precipice: just one more song to go. It is, as The King liked to say, now or never. The voice of William Burroughs croaks ominously over a fat, syrupy synthesiser pad, the Indian wedding tabla loops fall into place and here we go into “Solar Core”. If I have anything left to offer, here comes my last chance. It goes all right, as it happens, sparky and vicious, with plenty of that there feedback. For the first time I actually start to make the kind of noise I had been wanting to make all night. Let’s face it, I should really have started here. 
+	<p>
+	I’ve not gone down in flames but I’ve not disgraced myself either. As I’m packing away my kit, Malcolm the sound man tells me that I have “some good material”.
+	<p>
+	In due course the Fly Trap take to the stage. I don’t think I’ve ever seen them quite this good before. Very tough, very crunchy; and I can’t help but notice that Andy has eagerly taken up the Feedback Challenge. 
+	<p>
+	The evening winds down very pleasantly. A kind man buys me a pint. We make an uneventful journey back to NN1, where I am deposited upon my doorstep.
+	<p>
+	My engagement book is completely empty. So is my bank account. I’m 55 years old and I have no more idea of what my immediate future might hold than a teenager who’s just walked out of school for the last time. Where, oh where, do we go from here?
+		)}
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

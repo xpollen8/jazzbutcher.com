@@ -1,0 +1,21 @@
+#define	songbook
+	<div class="release">
+	<div class="album_details">
+<span class="album_title">${linkExternal(https://www.paypal.com/instantcommerce/checkout/HRQWCR4BWWF5W, Miracles and Wonders)}</span>
+<div class="album_blurb">
+	<i>A Meandering, Cacophonous Concordance of The Jazz Butcher Songbook</i>, by Pat Fish & Philip Snow, will be officially published on the first day of May, 2022.
+	<p>
+	A 400 page volume with hundreds of illustrations, many uniquely sourced from the Fishy Mansions Archives and friends worldwide.
+		Big Answers, finally.
+	</p>
+	</div>
+#		Worldwide orders from Philip:
+	<div class="album_purchase">
+		${linkExternal(https://www.paypal.com/instantcommerce/checkout/HRQWCR4BWWF5W, Purchase Now)}
+		<br/><span class="smalltext">(Via <b>Paypal</b>, includes shipping, literally anywhere)</span>
+	</div>
+</div>
+<div style="max-width: 350px; flex: 1">
+	<a href="/images/songbook/cover.jpg"><img src="/images/songbook/cover_500.jpg"/></a>
+</div>
+	</div>

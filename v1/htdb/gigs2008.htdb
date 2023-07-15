@@ -1,0 +1,622 @@
+#define	Jan4.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Masters of Budvar present<br>
+			at<br>
+			The Labour Club, Corner of Earl & Charles, Northampton NN1<br>
+			on<br>
+			Friday 4th January 2008<br>
+			<p>
+			THE PEPPER BOX<br>
+			Dark and dangerous glam rock from this exciting young Northampton act, to put you in mind of early David Bowie or "For Your Pleasure" era Roxy Music, featuring two of the best guitarists in town.
+			${g_artistweb(g=http://www.myspace.com/thepepperbox)}
+			<p>
+			CHARLIE BARNARD<br>
+			London-based Charlie is the leader of psychonauts Nazca Plain. Tonight he appears in singer-songwriter mode with a bunch of brand new, pleasingly twisted tunes. Reminiscent of Peter Perrett, Vic Godard or Syd Barrett, Charlie is a brilliant solo performer.
+			${g_artistweb(g=http://www.myspace.com/nazcaplain)}
+			<p>
+			And here's a funny thing...despite all the sixties and seventies references here, none of the performers tonight is over 23 years old...
+			<p>
+			Masters of Budvar DJs will be on hand to spin tunes for your edification and delight. The lights are pretty, the punters friendly and admission is entirely free of charge. So please do come on down, we'd love to see you.
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Feb1_2000.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Masters of Budvar present
+			<br>
+			The Labour Club, Corner of Earl & Charles, Northampton NN1
+			<br>
+			Friday 1st February 2008
+			<p>
+			SLIPSTREAM
+			<p>
+			Slipstream, as all Masters of Budvar regulars surely already know, are Mark Refoy and Jon Mattock. With their guitars, their sequencers, their keyboards and their drums these two charmers constitute one of the finest bands in the county, if not the nation.
+			<p>
+			Between them, Mark and Jon have credits with such distinguished bands as Spacemen 3, Spiritualised, The Breeders, The Perfect Disaster, The Flies, Massive Attack and the Pet Shop Boys. With two albums for Che Records and one for Enraptured behind them, they have a whole new album in the can, produced and mastered by Pet Shop Boys producer Pete Gledhill.
+			<p>
+			Expect powerful electro grooves, potent songwriting and wild psychedelic guitars.
+			<p>
+			Praise for the recent Slipstream single A-E-I-O-U:
+			<p>
+			Frankly f***in' stunning, alarmingly addictive" - Losing Today
+			<p>
+			"Psych-disco.It'll easily be a crowd grabber in the hippest night clubs around. When the guitar comes in it adds a new dimension to the sound, building to an anthemic climax where if you weren't nodding to the music before - you will be by now" - Velvet Grooves
+			<p>
+			"Kraftwerk eat ya hearts out" - Losing Today
+			<p>
+			"Utterly addictive. swinging harder then King Kong's balls. A.E. I. O. U. is truly speaker shattering space rock from another galaxy" - Rant
+			${g_artistweb(g=http://www.myspace.com/slipstream1)}
+			<p>
+			BIG TIM SANSOM
+			<p>
+			A solo performer of rare wit, energy and passion; a truly heavyweight songwriter in the classic style; a writer of poetry and wry short stories: all of this and more, Big Tim Sansom is the Roy Orbison of Northampton Town. 
+			<p>
+			On the scene for twenty years now, Big Tim worked alongside Mark Refoy in the eighties before taking off as a singer songwriter. His recordings, many produced by Refoy, exhibit an astonishing clarity and are a perennial favourite on the BBC Weekender music show. This represents an all-too-rare opportunity to catch up with this fascinating, always evolving artist.
+			${g_artistweb(g=http://www.myspace.com/bigtimsansommusic)}
+			<p>
+			Plus Masters of Budvar DJs, pretty lights, friendly punters and a heated smoking area.
+			<p>
+			Doors: 8:00pm
+			<br>
+			Big Tim: 9:15pm
+			<br>
+			Slipstream: 10:15 pm
+			<br>
+			Bar and dancing until midnight.
+			<br>
+			Admission free
+		)},
+	)}
+
+#define	Feb26.html()
+	${gigHeader(
+		cost=&pound;6:00,
+		with=Dragons,
+		notes=${literalizeCommas(
+			Dragons + Wilson + The Pepper Box &pound;6:00 - A Spiral Archive production.  
+			<p>
+			Dragons is the new band of Dave Francolini (Levitation/Dark Star)
+		)}
+	)}
+
+#define	Mar7_2000.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Friday 7th March<br>
+			The Labour Club, Earl Street, Northampton NN1<br>
+			Masters of Budvar present<br>
+			<p>
+			Love Minus Zero<br>
+			${g_artistweb(g=http://www.myspace.com/loveminuszerouk)}
+			<p>
+			At the beginning of 2004, Peter J Perrett was asked by Pete Doherty to be the Babyshambles bass player. By April Peter, with his teenage brother Jamie on Guitar (both sons of the ex Only Ones singer Peter Perrett) were invited to a recording session in Bethnal Green where they began work on the original recording of the Killamangiro single, which also included Seb Roachford (Acoustic Ladyland, Polar Bear) on drums. <br>
+			Within a week Doherty had moved into the Perrett household and they started touring around the country as Babyshambles. By June, Doherty had ended up in Thailand via The Priory and they saw less of him in person and more of him in headlines. For their 1st experience as professional musicians they were left some what disillusioned. <br>
+			<br>
+			At the beginning of 2005 with a renewed thirst for playing music again, Peter and Jamie began looking for musicians to form a band. Recruiting their friend Eliot Vernon whom they met the previous year on a sound engineering D.S.S course, they played gigs like the Barfly, ULU, Rhythm Factory & Nambucca, ranging from a 4-6 piece under the working name The Cuts. Their then drummer James Kirkbright eventually had to leave due to medical reasons and the strains of commuting between Leeds and London. <br>
+			<br>
+			Whilst discussing the need for a replacement in their local hostelry in Kensington they were overheard by an eccentric Polish drummer, who introduced himself as their future! After an impromptu audition of table tapping and beer bottle bashing they were left convinced that the line-up was complete as the eventual 4 piece. <br>
+			<br>
+			With Oskar Starski now in place and only in the band for a week, they were asked to appear at the Glastonbury Festival 2005 (in the medical tent!) where they were rewarded with free passes for the festival. At this time they did their 1st home recordings which included Psychobaby, Watery Eyes and Ten Watt Town. <br>
+			<br>
+			They continued playing gigs along the way supporting Babyshambles, The Paddingtons, Cazals, The Maccabees, Selfish Cunt ... <br>
+			<br>
+			Never satisfied with their band name, in January 2006 Jamie was inspired to come up with the name Love Minus Zero, not as a homage to Bob Dylan but more of a statement of intent. They set up a Myspace site and continued to gig under the new nom de guerre. <br>
+			<br>
+			Spring saw a flurry of gigs and a growing fan base, with a gig in Glastonbury in May being described by Jamie as "The best reaction I've ever witnessed at a gig, even when I was in Babyshambles. An amazing show!" <br>
+			<br>
+			Their 1st home recorded single "Psychobaby" was released last September on their own label and distributed through Cadiz/Pinnacle. <br>
+			<br>
+			Reviews of Love Minus Zero:<br>
+			<br>
+			"A caustic riff-laden psychedelic maelstrom, the three track 'Psychobaby' single is the calling card of intent of Love Minus Zero. Immediate yet timeless, Love Minus Zero overthrow outmoded rock cliches with a gratifying urgency, splicing punk malice, psychedelic ska and searing guitars, as the 'Psychobaby' single attests." - Nina Antonia (Author and Music Journalist for Uncut and Mojo) <br>
+			<br>
+			"I was seriously impressed by this group, so much so that I went to see them again the following night when they played my local! When I later discovered that Jamie and Peter are in fact the sons of the Only Ones singer/guitarist Peter Perrett, this was understandable, although there is plenty more going on in their sound to ensure that they are not living in the shadow of their father" - John Higgins, BBC Somerset <br>
+			<br>
+			"Love Minus Zero. What the... They actually look like your parents would disapprove if you took any of them home. And they are really good. Like instrumentalist mentalists. It's 21st century newer wave of the check this out kind." - Caffy at Music Tourist Board <br>
+			<br>
+			"Ramshackle rock with strung out wasted poet vocals" - The Guardian<br>
+			<br>
+			The most recent gigs Love Minus Zero have done:<p>
+			Carling Islington Academy, London, January 07 <br>
+			Harrods Rocks \@ Harrods, London - February 07 <br>
+			La Reservoir, Paris - April 07 <br>
+			La Triptique, Paris - May 07 <br>
+			O-Baren, Stockholm - June 07 <br>
+			Shepherds Bush Empire, London - June 07 - LMZ supporting The Only Ones <br>
+			Glastonbury Festival 2007 <br>
+			Mosebacke, Stockholm - September 07 <br>
+			In The City festival 07 Manchester <br>
+			That Manchester Festival 07 <br>
+			Bang Bang Club, Berlin - November 07 <br>
+			Keller Club, Stuttgart - November 07 <br>
+			Logo, Hamburg - November 07 <br>
+			Kulturfabrik Moabit, Berlin - November 07 <br>
+			Kulturrampe, Krefeld - November 07 <br>
+			<br>
+			<br>
+			JUST FONTAINE<br>
+			${g_artistweb(g=http://www.myspace.com/thebandfontaine)}
+			<br>
+			<br>
+			Formed in the Summer of 2006 by Tony Mead and MC Fontaine, this Northampton band deal in elegant melancholy, and their widescreen sonic rush, so much in evidence when last they played at Masters of Budvar supporting Ray, should only be magnified by the recent addition of a keyboard player. Fans of Leonard Cohen, Nick Cave, the Go-Betweens or Tindersticks will lap this up. A powerful, affecting combo.<br>
+			<br>
+			<br>
+			SUPERSTAR DJ JOHN PURCELL<br>
+			<br>
+			<br>
+			>From Rugby Town we bring one of the coolest DJs in the Midlands. From the Staple Singers to Suicide, from Leadbelly to Clinic, Johnny P brings a world of wonder to your grateful earholes.<br>
+			<br>
+			<br>
+			The whole thing kicks off at around eight o'clock. <br>
+			<br>
+			Just Fontaine onstage at 9:30<br>
+			Love Minus Zero onstage at 10:30<br>
+			Bar and dancing until midnight<br>
+			Friendly punters, pretty lights, heated smoking area.<br>
+			<br>
+			<br>
+			Admission is absolutely free.<br>
+			<br>
+			<br>
+			So we hope...no, expect to see you there...<br>
+		)},
+	)}
+
+#define	Mar22.html()
+	${gigHeader(
+		cost=free,
+		who=${literalizeCommas(
+		)},
+	)}
+
+#define	Apr4.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			The Labour Club,<br>
+			Earl & Charles, Northampton NN1<br>
+			Friday 4th April 2008<br>
+			<br>
+			Masters of Budvar present<br>
+			<br>
+			PHIL WILSON<br>
+			CHIMPANMAN<br>
+			Masters of Budvar DJs<br>
+			<br>
+			Phil Wilson was the front man and writer for The June Brides, a London band often associated with the C86 scene and NME cover stars of the day. In 1987 he left the band and recorded a couple of very lovely singles and an album for Creation Records before becoming disillusioned with the music game and disappearing from public view. Now, all of a sudden he's back playing music and we at Masters of Budvar are delighted. Check out his skills at:
+			${g_artistweb(g=http://www.myspace.com/philwilsonjunebride)}
+			<br>
+			Chimpanman are a charming and idiosyncratic ensemble based around the Northampton/Milton Keynes area. Featuring three brothers among their line-up they have, as you might expect, a great musical understanding and some great original songs. Seen last summer acting as backing band for an enra[tured Jim Shepherd of the Jasmine Minks, they may well add another Creation scalp to their list of celebrity front-man this evening.
+			${g_artistweb(g=http://www.myspace.com/chimpanman)}
+			<br>
+			Between the live music sets the Masters of Budvar DJ team will be pulling out all those nostalgic old Creation singles alongside the best guitar sounds of today.<br>
+			<br>
+			And, as usual, this is all entirely free of charge.
+		)},
+	)}
+
+#define	Apr10.html()
+	${gigHeader(
+		ticketweb=http://www.wegottickets.com/event/23264,
+		cost=&pound;12:50,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+			Jim Bob (Carter USM)
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Apr27.html()
+	${gigHeader(
+		cost=free,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	May1.html()
+	${gigHeader(
+	)}
+
+#define	May2.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Masters of Budvar present - at the Labour Club, on the corner of Earl & Charles, Northampton NN1 - on Friday 2nd May 2008<br>
+			<br>
+			ESCALATION - CHARLIE BARNARD - DJ THE NOTORIOUS B.E.Z.<br>
+			<br>
+			This month Masters of Budvar find themselves embedded within Northampton's first Middle of Nowhere Festival. We're not crazy about the name, but there are good people behind it and if they find it necessary to fall back 'pon irony to promote the seething cauldron of talent and creativity here in the new Barcelona, let us not carp, for their intentions are good.<br>
+			<br>
+			But what, you want to know, is on offer at NN1's original and best casbah of live music and mayhem? Stick with us, friends, for it is good.<br>
+			<br>
+			ESCALATION are our headliners. We felt that, since MoN is all about promoting talent from Northampton, we should feature a Northampton act as our headliner. And it's a first as well, for ESCALATION is a brand new electric band formed by Nene Delta blues legend Curtis E. Johnson. The mad genius behind Strange Tales, Stranger Tractors and the glorious Bean King album has built himself a band of Steves: Garofalo (Bareback Riders) on the drums, Gordon (P-Hex) on the bass and Davies (Fat Controller) on the guitar. Gambit! Supergroup! When we asked about the music, we were told to expect "acid ceilidh". Other reports say to expect a grinding, ruthless saturated beauty larded with electronics. Why would you think that this was not for you?
+			${g_artistweb(g=http://www.myspace.com/curtis_e_johnson)}
+			<br>
+			CHARLIE BARNARD is our opening act. Charlie, 23, is based in East London, where he grooves 'pon sixties psychedelia, psychogeography, East Village Dylan and the ballad of the band. Last seen fronting Nazca Plain, Charlie Duke has returned to following his own dark Brit-psych muse, soon to be unleashed on his new album "Ivory Serpents and the Starving Tree" on Skyeyesea Records.
+			${g_artistweb(g=http://www.myspace.com/charliebarnardmusic)}
+			<br>
+			Our superstar DJ is The Notorious B.E.Z., leisure lounge leviathan and world's third greatest barman. Uplifting stupidities and beautiful absurdities to stroke your mind inappropriately in the sweetest possible way.
+			${g_artistweb(g=http://www.myspace.com/onetruebez)}
+			<br>
+			It's all free and it's on Friday 2nd May. The Labour Club is friendly, reasonably priced and offers good facilities for smokers. Masters of Budvar. We do it because we love it.<br>
+		)},
+	)}
+
+#define	May31.html()
+	${gigHeader(
+	)}
+
+#define	Jun5.html()
+	${gigHeader(
+		photosets= /images/20080605/20080605_brooksbank_pat1.jpg$$
+			/images/20080605/20080605_brooksbank_pat2.jpg$$
+			Andrew Brooksbank
+	)}
+
+#define	Jun6.html()
+	${gigHeader(
+		cost=free,
+		notes=${literalizeCommas(
+			We're presenting "an evening with Wilson" on our own turf at our own night with our favourite PA and a supertanker full of Ceske Budejovice's finest.
+			Full electric set - Wilson Son Et Lumiere - Wilson DJs - Acoustic support sets from various members of the band. Rumours that MC Bottman Bott will be performing balloon animal-related entertainments can neither be confirmed, nor yet plausibly denied.
+		)}
+	)}
+
+#define	Jun13.html()
+	${gigHeader(
+		cost=&pound;3:00,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+			Good Cop Bad Cop
+		)},
+		notes=${literalizeCommas(
+			Fri 13th June<br>
+			WILSON + Good Cop Bad Cop + support<br>
+			Bibliotek, Castilian Street, Northampton NN1<br>
+			3:00 admission
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+#define	Jul4.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Friday 4th July 2008<br>
+			<br>
+			The Labour Club, Earl & Charles, Northampton NN1<br>
+			<br>
+			Masters of Budvar present an Evening of Acoustic Loveliness<br>
+			<br>
+			-featuring-<br>
+			<br>
+			THIS IS THE KIT (PARIS)<br>
+			<br>
+			JESSE D. VERNON<br>
+			<br>
+			JOE WOOLLEY<br>
+			<br>
+			Superstar DJ Liam Dullaghan<br>
+			<br>
+			THIS IS THE KIT<br>
+			<br>
+			Kate Stables and Jesse D. Vernon are This Is The Kit, an acoustic duo based in Paris.<br>
+			<br>
+			Kate writes the simple, hypnotic songs and Jesse is on hand to decorate them with anything from bongo drums to violin. Together they make a sort of charmed surrealist modern folk, as demonstrated on their new album "Krulle Bol" (Microbe Records), produced by PJ Harvey collaborator John Parish. Tonight at Masters of Budvar is the first date of their UK tour to promote the new LP.<br>
+			<br>
+			Kate and Jesse last performed at Masters of Budvar in February 2005. 40 shows on, Kate still holds the record for the best pair of shoes ever worn at the club.<br>
+			<br>
+			"Kate Stables debuted her This Is The Kit incarnation back in 2002, but it's since moving to Paris that her star has really begun to rise. Rob da Bank sessioned her on Radio 1 and released a single on his Sunday Best label, while low-key busking sessions have been interspersed by gigs with The National, Jeffrey Lewis and Jose Gonzales.<br>
+			<br>
+			Now she's UK-bound once again, armed with vinyl copies of 'Krulle Bol', the John<br>
+			<br>
+			Parish-produced album just released by French imprint, Microbe. Paris' temporary<br>
+			<br>
+			loss is our all-too-brief gain." - Venue Magazine, Bristol<br>
+			${g_artistweb(g=http://www.myspace.com/thisisthekit)}
+			<br>
+			JESSE D. VERNON - aka - MORNINGSTAR<br>
+			<br>
+			The looks of Buddy Holly, the voice of John Lennon, the charm of Jonathan Richman and the attitude of some extremely strange but highly intelligent primate recently discovered deep in the Amazonian jungle to the astonishment of a generation: Jesse D. Vernon (also known around these parts as Morningstar) is a multi-talented musician and writer who will take on anything from gospel to psychedelia and make it ring like a bell. Currently his interests lie in Afrobeat, so let's see how he translates that into his solo acoustic performance!<br>
+			<br>
+			Highly recommended.<br>
+			<br>
+			${g_artistweb(g=http://www.myspace.com/jessedvernon)}
+			<br>
+			JOE WOOLLEY<br>
+			<br>
+			Northampton's 21st Century Troubadour has been making some friends in high places on his recent inroads into London and now he plays Davy Graham's old guitar. Joe's playing is going from strength to strength at the moment and it's getting him noticed. Come see for yourself.<br>
+			<br>
+			${g_artistweb(g=http://www.myspace.com/joewoolley)}
+			<br>
+			<br>
+			Superstar DJ Liam Dullaghan<br>
+			<br>
+			The songwriter's songwriter gingerly opens up his crate of inspirational records and plays lots of very sad songs very quietly.<br>
+			<br>
+			${g_artistweb(g=http://www.myspace.com/liamdullaghan)}
+			<br>
+			<br>
+			Admission is, as always, free.<br>
+			<br>
+			There are pretty lights, friendly people and good vibrations radiating indiscriminately around the Labour Club. There are good facilities for smokers and now there is Budvar on draught. The music starts at around nine o'clock and the bar is open until midnight. You should most probably come down and have a really good time.<br>
+		)},
+	)}
+
+#define	Jul19_2030.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Saturday 19th July 2008<p>
+			The Troubadour, 263-267 Old Brompton Rd, London SW5<p>
+			37:50 before 10:00 o'clock - 10:00 after<p>
+			Nearest tube: Earls Court<p>
+			Joe Woolley<p>
+			First London headline show for sharp-suited young guitarist Woolley, who
+			spans classic jazz, folk and blues influences in his own contemporary
+			finger-picking style.<p>
+			In his hometown of Northampton and in London Joe has played shows with
+			old masters of the acoustic scene like Wizz Jones, Barry "The Fish"
+			Melton and Davy Graham. As well as playing in his own right across the
+			UK and Germany, for the past year Joe has toured the UK with Will
+			Carruthers' Freelovebabies.<p>
+			From influences including Ray Charles, The Kinks, Slim Gaillard,
+			Mississippi John Hurt and Bert Jansch, Joe has fashioned a personal
+			style where the English charm and wit of Kevin Ayers comes backed up
+			with the guitar chops of a modern day Lightning Hopkins. He mixes
+			original numbers with covers of tunes from all across the twentieth
+			century.and beyond.<p>
+			${g_artistweb(g=http://www.myspace.com/joewoolley)}
+			<p>
+			With support from Jonathan Forbes. This solo fingerstyle guitarist from
+			Notting Hill intersperses Irish ballads and home-spun compositions with
+			classic American folk tunes.<p>
+			${g_artistweb(g=http://www.myspace.com/jonathanforbes)}
+			<p>
+			Also a brief acoustic set from Pat Fish, songwriter from the Jazz
+			Butcher Conspiracy.<p>
+			${g_artistweb(g=http://www.myspace.com/patfish77)}
+			<p>
+			Special secret guest DJs will take care of the intermissions before
+			taking over the venue at around midnight.<p>
+			Doors open 8:30pm<p>
+		)},
+	)}
+
+#define	Jul26.html()
+	${gigHeader(
+		cost=free,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Saturday 26th July 2008<br>
+			The Picturedrome, Kettering Road, Northampton NN1<br>
+			Free<p>
+			A return to the Picturedrome, where we had such a good time back in March. We'll be making maximum use of their
+			state-of-the-art lighting arrangements and doing our best to rock everybody in the kitchens of the Star of India, which
+			turn out to be right next door to the stage. We'll almost certainly do two sets here.
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+#define	Aug1_2030.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Friday 1st August <br>
+			The Labour Club, Earl & Charles, Northampton NN1 <br>
+			<br>
+			Masters of Budvar 5:6 <br>
+			<br>
+			From Birmingham, Rock City... <br>
+			THE DAVE KUSWORTH GROUP <br>
+			${g_artistweb(g=http://www.myspace.com/davekusworthgroup)}
+			<p>
+			Dave Kusworth is one of the greatest, most affecting UK rock songwriters of the past twenty years. Who says so? Alan McGee, Bobby <br>
+			Gillespie, Slaughter Joe Foster and me, for a start. <br>
+			<br>
+			A Creation Records stalwart, Dave began his globetrotting career as a founder member of Duran Duran (!) before going on to work with the <br>
+			legendary Subterranean Hawks, the Dogs D'Amour and, of course, the late, great Nikki Sudden, with whom he crafted a series of classic <br>
+			albums under the name of The Jacobites. <br>
+			<br>
+			Possessed of a perfectly-pitched lyrical touch and a seemingly endlessly inventive way with a three chord trick, Kusworth occupies a <br>
+			territory somewhere between Johnny Thunders and the Only Ones' Peter Perrett, with perhaps a touch of the Captain Jack Sparrow there in the <br>
+			mix. <br>
+			<br>
+			Expect classic glam/punk rock and heart-shredding ballads when Dave and his mighty electric band take to the stage. <br>
+			<br>
+			<br>
+			From London... <br>
+			CHARLIE BARNARD & THE NEON POP ORCHESTRA <br>
+			${g_artistweb(g=http://www.myspace.com/charliebarnardmusic)}
+			<br>
+			<br>
+			Charlie actually made his Masters of Budvar debut opening for Kusworth when he first played the club a couple of years ago. Now he brings <br>
+			an electric band to showcase songs from his new album Ivory Serpents & the Starving Tree, which is about to be released on Northampton's <br>
+			sterling SkyEyeSea Records label. <br>
+			<br>
+			The darkly playful UK psychedelia has been touched and leavened with the influence of Bob Dylan, and more recently, certifiable Birmingham <br>
+			indie legends, Felt. <br>
+			<br>
+			I shall be hosting and playing the records, with a bias towards glam and punk anthems of the seventies. <br>
+			<br>
+			The whole thing is free to all, so it would be nice to see a few friendly faces there. <br>
+			<br>
+			Doors: 8:00pm <br>
+			DJ from 8:30pm <br>
+			Charlie: 9:15pm <br>
+			Kusworth: 10:15pm <br>
+			Bar open until midnight <br>
+			Garden for smokers - but don't miss the bands... <br>
+		)},
+	)}
+
+#define	Aug9_1900.html()
+	${gigHeader(
+		cost=free,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Wilson play live at the All-Dayer at the Charles Bradlaugh pub, Upper Mounts, Northampton NN1 on Saturday 9th August 2008.
+			<p>Wilson will be on at 7:00pm. As far as we know, admission is free. Lots of other cool bands and DJs.
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Aug31.html()
+	${gigHeader(
+		cost=free,
+		blurb=The Umbrella Fair,
+		address=Abington Park,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+		)},
+		notes=${literalizeCommas(
+			Sunday 31st August 2008<br>
+			The Umbrella Fair, Abington Park, Northampton NN1<br>
+			Free - Afternoon Event<br>
+			Last year's Umbrella Fair was a great success, the finest "green" festival that the town has seen in years. This year,
+			however, we shall be there to spoil it for everyone.
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define	Sep5.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Friday 5th September at The Labour Club, Earl & Charles, Northampton NN1<br/>
+			<br/>
+			Masters of Budvar present<br/>
+			<br/>
+			SATURATION POINT<br/>
+			<br/>
+			Mighty Bristol instrumental trio, whose pedigree includes Strangelove, The Blue Aeroplanes, Witness and...uh...Groove Armada, making their third appearance at the club.<br/>
+			<br/>
+			The Fly reckons they're "captivating and engaging", while the NME hails their "enjoyably dirty brand of post rock". Clash Magazine wrote of their last album: "Mile-high amp debauchery - a new must-have album."<br/>
+			<br/>
+			"Led by John Langley's ridiculously powerhouse drumming (slapping the skins with stick, tambourine and maraca) this is pure freakout- a psychedelic overload of noise and texture with acid fried guitar and rhythmic melodic bass- Faust as I live and breathe and we want more more more." Gigwise<br/>
+			<br/>
+			With a new album, Mechanisms, poised for release on Massive Attack's Invada label, the band have moved away from their powerful post-rock noise instrumentals to embrace a shamelessly kraut-rock motorik style. Check out their latest recordings at <br/>
+			${g_artistweb(g=http://www.myspace.com/thesaturationpoint)}
+			<p>
+			THIS UNIQUE MUSEUM<br/>
+			<br/>
+			Also with a new album on the starting blocks is Milton Keynes based Ben Fitton, aka This Unique Museum, making his debut at Masters of Budvar. Exquisite, dreamy songs reminiscent of nothing less than Big Star's "Sister Lovers". Hear him at <br/>
+			${g_artistweb(g=http://www.myspace.com/thisuniquemuseummusic)}
+			<p>
+			GERARD STARKIE<br/>
+			<br/>
+			A rare solo set from the leader of the band Witness. <br/>
+			<br/>
+			"Starkie's vocals are imbued with that nebulous quality of soul: fragile, sensitive and exuding a dignified stoicism doubtless born of experience." - The Times<br/>
+			<br/>
+			"Next up is Wigan's own Gerard Starkie with a short classy acoustic set. This is a real counterpoint to the previous noise and transports in a different way, intimate and with real distinction." - Gigwise<br/>
+			${g_artistweb(g=http://www.myspace.com/gerardstarkie)}
+			<p>
+			As usual, admission is entirely free. 
+		)},
+	)}
+
+#define	Sep26.html()
+	${gigHeader(
+		cost=&pound;3:00,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+			Dirty Sweet
+		)},
+		notes=${literalizeCommas(
+			The Racehorse, Abington Square, Northampton NN1<p>
+			Launch of Dirty Sweet's record label and club night.
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+#define	Oct2_1900.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			I'm doing a solo show, supporting the Television Personalities:<p>
+			Thursday 2nd October<p>
+			The 100 Club<br>
+			100 Oxford Street, London W1 1DL - tube: Tottenham Court Road (Northern Line)
+			<p>
+			THE TELEVISION PERSONALITIES + PAT FISH + THE MOODS
+			<p>
+			Doors open 7:00pm<br>
+			Admission 7:50 in advance<br>
+			A Complete Control production.
+		)},
+		photosets= /images/20081002/20081002_jazzbutcher_100club.jpg$$
+			${sumishta}
+			---
+			/images/20081002/20081002_ladyalcohol_pat.jpg$$
+			Lady Alcohol
+	)}
+
+#define	Oct24.html()
+	${gigHeader(
+		cost=&pound;8:00,
+		ticketweb=http://www.ticketweb.co.uk/user/?region=gb_london&query=schedule&venue=jamm&month=9&day=24&year=108,
+		who=${literalizeCommas(
+		)},
+		with=${literalizeCommas(
+			Alabama 3
+		)},
+		notes=${literalizeCommas(
+			Friday 24th October - JAMM, 261 Brixton Road, London SW9 6LH - Wilson supporting Alabama 3.
+			Tickets can be purchased for a very reasonable 8:00 from:
+			<p>
+			The Dream Machine,<br/>
+			89 Lordship Lane,<br/>
+			East Dulwich,<br/>
+			London SE22 8EP.<br/>
+			Tel. 0208 699 6088.
+		)},
+		pat=${literalizeCommas(
+		)},
+	)}
+
+#define Nov16.html()
+	${gigHeader(
+	)}
+
+#define Nov29.html()
+	${gigHeader(
+		cost=&pound;5:00,
+		notes=${literalizeCommas(
+			Wilson have a gig at The Roadmender in Northampton NN1 on Saturday 29th November.
+			Tickets are 3:00 in advance or 5:00 on the door.
+		)}
+	)}
+
+#define	Dec18.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			As far as I am aware, admission is free. Lovely venue, by the way.
+		)},
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

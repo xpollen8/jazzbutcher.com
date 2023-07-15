@@ -1,0 +1,266 @@
+#define	Jan21.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Jan22.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Jan26.html()
+	${gigHeader(
+		recording=${literalizeCommas(${w}, ${q(6)}, ${p(beyond catagorisation)} )},
+		who=${literalizeCommas(
+			${pat}, ${green}
+		)},
+		notes=${literalizeCommas(
+			lasts 140+ minutes
+		)},
+	)}
+
+#define	Jan27.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Jan31.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Feb2.html()
+	${gigHeader(
+		address=22 rue de Bouxwiller,
+		phone=88 22 32 10,
+		postalcode=67000,
+		cost=50&#8355;,
+		who=${literalizeCommas( ${pat}, ${green} )},
+		tickets=
+			/images/19870202/19870202_ticket.jpg$$
+			Pierre Guillaume
+	)}
+
+#define	Feb3.html()
+	${gigHeader(
+		recording=${literalizeCommas( ${w}, ${g(2)}, ${q(4)}, ${i(B)})},
+		reviews=${literalizeCommas(
+		My goodness, what a weird show.
+		About halfway through, Pat and Alex turn against the audience.
+		${g_credit(g=${del}, d=2017-11-05)}
+		)},
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Feb4.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${green} )},
+
+	)}
+
+#define	Feb5.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Feb6.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Feb7.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+		pat=${literalizeCommas(
+			A weird tape of snatches of songs and interviews.
+			Not very good at all
+		)},
+	)}
+
+#define	Feb8.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Feb10.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+		reviews=${literalizeCommas(
+			I found The Jazz Butcher on 10 February 1987 for a duo concert with Alex at the Rex Club where I accompanied Alan McGee. That evening, they actually played Chinese envoy, but Sweet Jane, Roadrunner and my favorite of the Butcher Water and The Sea. As Pat Fish confirmed in a <a href="${jbc_press}/2002_apollox.html">hilarious interview Apollox Magazine in 2000</a> , the sole purpose of Alan throughout the evening, which continued at the restaurant and in some deserted little locomotive which still hung out Philippe maneuver and Martin Gore was to convince Pat to record for Creation. Apparently successfully, since a few months later came out Fishcotheque Creation, my favorite of The Jazz Butcher album, even if Creation has not been for the success of the wonders Butcher expected.
+			)}$$
+		Vivonzeureux!;;http://vivonzeureux.blogspot.com/2009/09/what-nice-way-to-turn-seventeen-2.html
+		,
+	)}
+
+#define	Feb11.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Feb12_1700.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Feb13.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Mar7.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+		with=Robyn Hitchcock,
+	)}
+
+#define	Mar20.html()
+	${gigHeader(
+		recording=${literalizeCommas(${w}, ${q(7)}, ${p(A)})},
+		pat=${literalizeCommas(
+			I really enjoyed myself this evening.
+		)},
+		who=${literalizeCommas(
+			${pat}, ${green}
+		)},
+		with=Biff Bang Pow!,
+	)}
+
+#define	Mar28.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green})}, 
+	)}
+
+#define	Apr14.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green})}, 
+	)}
+
+#define	Apr15.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green})},
+		pat=NOT PAID!,
+	)}
+
+#define	Apr16.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green})}, 
+	)}
+
+#define	May3.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${richard}, ${green} )},
+		with=${literalizeCommas(
+			The Flying Scientists
+		)},
+	)}
+
+#define	May8.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat} )},
+		with=${literalizeCommas(
+		)},
+	)}
+
+#define	May16.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${kizzy} )},
+		with=${literalizeCommas(
+			Spacemen 3, Midnight Choir, Inspiral Carpets
+		)},
+	)}
+
+#define	May21.html()
+	${gigHeader(
+
+		address=Charing Cross Rd,
+		who=${literalizeCommas( ${pat}, ${green}, ${kizzy} )},
+		with=${literalizeCommas(
+			The Bodines
+		)},
+	)}
+
+#define	May27.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green}, ${kizzy} )},
+	)}
+
+#define	May29.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${green}, ${kizzy} )},
+		with=${literalizeCommas(
+			The Woodentops
+		)},
+		pat=${literalizeCommas(
+			Sonic Spaceman Pete gave us a lift. We gave him this ice lolly.
+			<p>
+			Rolo took all his clothes off.
+		)}
+	)}
+
+#define	Jul28.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${erol}, ${blair} )},
+		pat=${literalizeCommas( 
+			Notebook: "Kite Farm (so where's the KITES?)"
+		)}
+	)}
+
+#define	Aug2.html()
+	${gigHeader(
+		cost=120&#8355;,
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${erol}, ${blair} )},
+		with=${literalizeCommas(Passion Fodder, Mac And The Boys)},
+		pat=${literalizeCommas(
+			Notebook shows (*) Video beside "Caroline Wheeler", "Angels", and "Lot 49".
+			<p>
+			Notebook: "Total Metal Domination with Special Shabby Magnificence Quotient. Zoom!"
+		)},
+		tickets=
+			/images/19870802/19870802_ticket.jpg$$
+			Pierre Guillaume
+		,photosets=
+			/images/19870802/19870802_FranckYeznikian_pat.jpg$$
+				Franck Yeznikian
+	)}
+
+#define	Aug21.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${erol}, ${blair} )},
+	)}
+
+#define	Sep18.html()
+	${gigHeader(
+		cost=&pound;1:50,
+		recording=${literalizeCommas(${d}, ${q(6)}, ${p(g=C (except for ${wheel}, which is an A))})},
+		with=${literalizeCommas(
+			Spacemen 3, Indian Summer
+		)},
+		who=${literalizeCommas(
+			${pat} (with a cold)
+		)},
+	)}
+
+#define	Oct20.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, Buj )},
+	)}
+
+#define	Dec8.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${green} )},
+	)}
+
+#define	Dec19.html()
+	${gigHeader(
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

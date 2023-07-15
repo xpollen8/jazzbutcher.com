@@ -1,0 +1,182 @@
+#define	gameName	Jazz Butcher Conspiracy Trivia Game (<i>V1.1</i>)
+#define	noHint	${jbc_trivia}/nohint.html?${encrypt(_thisq=${_thisq}&_score=${_score})}
+
+#define	1_Question
+	The first JBC album was released in
+#define	1_Answer_1	1983
+#define	1_Answer_2	1984
+#define	1_AnswerCorrect	${1_Answer_1}
+#define	1_Hint		${jbc_albums}/bath.html
+
+#define	2_Question
+	Maximillian Eider has released this many solo records
+#define	2_Answer_1	1
+#define	2_Answer_2	3
+#define	2_Answer_3	4
+#define	2_Answer_4	>4
+#define	2_AnswerCorrect	${2_Answer_4}
+#define	2_Hint		http://maxeider.com
+
+#define	3_Question
+	This band lent its rhythm section for the <b>Fishcotheque</b> session
+#define	3_Answer_1	The Blue Aeroplanes
+#define	3_Answer_2	The Weather Prophets
+#define	3_AnswerCorrect	${3_Answer_2}
+#define	3_Hint		${jbc_albums}/fishcotheque.html
+
+#define	4_Question
+	The JBC played this many live shows in 1985
+#define	4_Answer_1	93
+#define	4_Answer_2	110
+#define	4_AnswerCorrect	${4_Answer_2}
+#define	4_Hint		${jbc_gigs}/1985
+
+#define	5_Question
+	Which album contains the word <i>ludicrous</i> in two consecutive songs
+#define	5_Answer_1	Fishcotheque
+#define	5_Answer_2	Condition Blue
+#define	5_AnswerCorrect	${5_Answer_1}
+#define	5_Hint		${jbc_articles}/1994/0011.html
+
+#define	6_Question
+	This song was recorded with lyrics, but was released as an instrumental
+#define	6_Answer_1	The Onion Field
+#define	6_Answer_2	Fertiliser
+#define	6_AnswerCorrect	${6_Answer_2}
+#define	6_Hint		${jbc_lyrics}/fertiliser.html
+
+#define	7_Question
+	Have the JBC ever played the Royal Albert Hall
+#define	7_Answer_1	no
+#define	7_Answer_2	yes
+#define	7_AnswerCorrect	${7_Answer_2}
+#define	7_Hint		${jbc_gigs}
+
+#define	8_Question
+	In what city was "Vienna Song" written
+#define	8_Answer_1	Vienna
+#define	8_Answer_2	Cleveland
+#define	8_AnswerCorrect	${8_Answer_1}
+#define	8_Hint		${noHint}
+
+#define	9_Question
+	What is Wilson
+#define	9_Answer_1	A sports equipment manufacturer
+#define	9_Answer_2	A group of aged psychopaths
+#define	9_AnswerCorrect	${9_Answer_2}
+#define	9_Hint		${noHint}
+
+#define	10_Question
+	Emil is
+#define	10_Answer_1	Pig!
+#define	10_Answer_2	No more pig
+#define	10_AnswerCorrect	${10_Answer_2}
+#define	10_Hint		${jbc_press}/94eg.html
+
+#define	lastQuestion	10
+
+#define	_nextq	${eval(${_thisq} + 1)}
+
+#define	_newscore
+#live	if (getval(_answer) == ${${_thisq}_AnswerCorrect})
+	${eval(${_score} + 1)}
+#live	else
+	${_score}
+#live	endif
+
+#define	showQuestion
+#live	if (getnum(_thisq) >= ${lastQuestion})
+		<br><br>
+		<b>You got ${_newscore} out of ${lastQuestion}..<br>
+#live		if (getnum(_newscore) < 3)
+		Better lay off the Nirvana, dude.
+#live		elseif (getnum(_newscore) < 6)
+		You should have done better just by guessing, you know?
+#live		elseif (getnum(_newscore) < 8)
+		Better than a cold bath..
+#live		elseif (getnum(_newscore) == ${lastQuestion})
+		What are you, god?
+#live		elseif (getnum(_newscore) > ${lastQuestion})
+		You cheating bastard!
+#live		else
+		Bet you amaze your friends with party tricks, too.
+#live		endif
+		</b>
+		<br><br><br><br>
+		Hope you had fun.
+		Feel free to <a href="mailto:triviaJBC@xpollen8.com">send your own
+		trivia</a> for future versions of the game.
+#live	else
+		<font size=+1><b>Question #${_nextq} of ${lastQuestion}</b></font>
+		<form action="${base_url}/${db}/${page}" method="post">
+		<input type="hidden" name="_thisq" value="${_nextq}">
+		<input type="hidden" name="_score" value="${_newscore}">
+		<b>${${_nextq}_Question}</b><p>
+		<blockquote>
+#live	loop(x, 1, 5)
+#live	if (defined(${_nextq}_Answer_${x}))
+		<input type="radio" name="_answer" value="${${_nextq}_Answer_${x}}"> ${${_nextq}_Answer_${x}}<br>
+#live	endif
+#live	endloop
+		</blockquote>
+		<input type="submit" name="_submit" value="Answer">
+		</form>
+		<p>
+		<a href="${${_nextq}_Hint}">Weenie Hint</a>
+#live		endif
+#live	endif
+
+#define	nohint.html
+	${mkHeader(section=Trivia, title=No Hint Available)}
+	<b>The ${gameName}</b>
+	<blockquote>
+	<font size=+1><b>No hint - you have to guess on this one!</b></font>
+	<p>
+	<a href="${jbc_trivia}/index.html?${encrypt(_thisq=${_thisq}&_score=${_score}&_enter=yup)}">
+		Back to the game</a>
+	</blockquote>
+	${jbc_footer}
+
+#define	index.html
+	${mkHeader(section=Trivia)}
+	${tag_beg}
+	The ${gameName}
+	${tag_end}
+	<blockquote>
+#live	if ((getval(_submit)))
+#live	if (getval(_answer))
+#live		if (getval(_answer) == ${${_thisq}_AnswerCorrect})
+			<b>Correct!</b>
+			<blockquote>
+			<p>${${_thisq}_Question}: <i>${${_thisq}_AnswerCorrect}</i></font>
+			</blockquote>
+			<p>
+			${showQuestion}
+#live		else
+			<b>Nope..</b>
+			<blockquote>
+			<p>${${_thisq}_Question}: <i>${${_thisq}_AnswerCorrect}</i></font>
+			</blockquote>
+			<p>
+			${showQuestion}
+#live		endif
+#live	else
+	You didn't give an answer for question #${_thisq}!
+	<p>
+	${showQuestion}
+#live	endif
+#live	elseif (getval(_enter))
+		${showQuestion}
+#live	else
+	This game consists of ${lastQuestion} Jazz Butcher-related questions,
+	all of which have answers buried throughout this website.
+	<p>
+	Most questions have <i>Weenie Hints</i> for those who need them..
+	<p>
+	No prizes, just praise or ridicule at the end.
+	<p>
+	<a href="${jbc_trivia}/index.html?${encrypt(_enter=yup&_thisq=0&_score=0)}">
+		Start the game!</a>
+#live	endif
+	</blockquote>
+	${jbc_footer}

@@ -1,0 +1,17 @@
+#define	index.html
+	${mkHeader(section=Nightshift)}
+	<img src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/Nightshift_Logo.gif" />
+	${beg_tabs}
+	${begTab(About)}
+	<div class="annotation">
+	</div>
+	${endTab}
+    ${begTab(Live)}
+    ${doGigSearch(f=extras, q=nightshift)}
+    ${endTab}
+    ${begTab(Released)}
+    <div class="annotation">
+    </div>
+    ${endTab}
+	${end_tabs}
+	${jbc_footer}

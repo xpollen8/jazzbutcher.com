@@ -1,0 +1,66 @@
+#define	Jun3.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${stevenew}, ${simon}
+		)},
+		pat=${literalizeCommas(
+			We're back!
+		)},
+		reviews=${literalizeCommas(
+		I've just found this, unfortunately, the hum from the PA and the loud television downstairs, don't help the audio. The stereo on a stick that was serving as a PA was woefully inadequate, however. its yours to do with as you wish. This was a very low key gig with a new drummer. I recorded it on a Zoom H2 and i was a little too close to simon, oh well.
+		)}
+		${curt};;;;2021-12-17
+	)}
+
+#define	Jul13.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${stevenew}, ${simon}, Pat Kenneally
+		)},
+		pat=${literalizeCommas(
+		)},
+		photosets=
+			/images/20160713/20160713_bott.jpg$$
+			/images/20160713/20160713_chateaufort.jpg$$
+	)}
+
+#define	Nov12_2000.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			BLITZ Festival
+		)}
+	)}
+
+#define	Nov13_2000.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			SBD Promotions
+		)}
+	)}
+
+#define	Dec18_1700.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			Unstoppable Achievers present their 'A Bit of a Christmas Do'.
+			<p>
+			14:30 Unstoppable Achievers 15.30 Gardyloo Spew 17:00 Pat Fish (aka The Jazz Butcher)
+			<p>
+			Art exhibition from Matthew James Saw
+			<p>
+			Dj - Silly Boy Blue
+			<p>
+			all ages - all welcome - free
+		)},
+		pat=${literalizeCommas(
+			All delivered without the aid of a PA system or any other amplification at all, but with the aid of a
+			warm, supportive audience. 
+		)}
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

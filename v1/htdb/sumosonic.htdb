@@ -1,0 +1,17 @@
+#define	index.html
+	${mkHeader(section=Sumosonic)}
+	<img src="https://jazzbutcher.com/images/sumosonic_logo_50.png"/>
+	${beg_tabs}
+	${begTab(About)}
+	<div class="annotation">
+	</div>
+	${endTab}
+    ${begTab(Live)}
+    ${doGigSearch(f=extras, q=sumo)}
+    ${endTab}
+    ${begTab(Released)}
+    <div class="annotation">
+    </div>
+    ${endTab}
+	${end_tabs}
+	${jbc_footer}

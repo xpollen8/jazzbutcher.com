@@ -1,0 +1,306 @@
+#define	Apr25.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Jun11.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${green}, ${pete} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Jun18.html()
+	${gigHeader(
+
+		recording=${literalizeCommas(${w}, ${q(6)}, ${p(B)})},
+		who=${literalizeCommas( ${pat}, ${green}, ${pete} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Jul.html()
+	${gigHeader(
+		recording=${literalizeCommas( ${q(8)}, ${p(A)}, ${i(B)}, ${g(1)}, ${DAT})},
+		bootlegger=${literalizeCommas(${del})},
+		pat=${literalizeCommas(
+			The Vaguely Familiar was a July 1991 project, put together at Richard
+			Formby's Woodhouse Studio in Leeds. The line-up was myself, Richard and
+			Sumishta Brahm (13 Frightened Girls).
+			<p>
+			Basically, I did the drum programming, bass and large electric guitars (note
+			how I "invented" Slowdive on Pedby's Grace), Richard did the mad ethnic
+			instruments and a bit of bass and guitar, Sumishta sang, played the lap
+			steel guitar and did a bit of electric 12-string. Any glockenspiels are
+			probably down to me.
+			<p>
+			Richard and I went on to try and rub the project up into a finished album
+			with a big session at Woodhouse in November 92 (during which Richard also
+			got into glockenspiel action, as I recall), but although we committed a
+			further ten or so backing tracks (including the truly awesome "My Milkfloat"
+			featuring a casio playing "My Desert" to itself under a barrage of early
+			sixties electric milkfloat noises, which Richard insisted sounded just like
+			Jimi Hendrix), we never finished them off. I still have the instrumental
+			roughs at home. Richard and I often talked of finishing it all off, but
+			neither of us likes the phone very much and it never got done.
+			<p>
+			I have spotted bits     
+			and pieces from some of those aborted tracks showing up on Richard's Triumph 2000 LP.
+			<p>
+			According to my cassette, we recorded five numbers:
+			<ol>
+				<li>A Matter of Time (which was a 13FG number)</li>
+				<li>Bombed               (by Richard, which was featured on
+											   the Autumn 93 jbc European tour)</li>
+				<li>Pedby's Grace    (by me and Sumishta)</li>
+				<li>Colour Waltz        (by me and  Richard)</li>
+				<li>Elwood                 (by Sumishta and me)</li>
+			</ol>
+		)},
+		who=${literalizeCommas(
+			${pat}, ${richard}, ${sumishta}
+		)},
+		photosets=
+			/images/199107/199107_VaguelyFamiliar_Master1.jpg$$
+			/images/199107/199107_VaguelyFamiliar_Master2.jpg$$
+			${richard};;;;2021-12-10
+	)}
+
+#define	Aug27.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat},Charlie Baldonado, ${hask} )},
+
+	)}
+
+#define	Sep4.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+		with=${literalizeCommas( Robyn Hitchcock
+		)},
+
+	)}
+
+#define	Aug.html()
+	${gigHeader(
+		recording=${literalizeCommas(
+			${q(8)}, ${p(A)}, ${i(B)}, ${g(1)}, ${DAT}
+		)},
+		bootlegger=${literalizeCommas(${del})},
+		who=${literalizeCommas(
+			${pat}, ${coonce}
+		)},
+		pat=${literalizeCommas(
+			This version was recorded by Cole Coonce (Braindead Sound Machine)
+			and myself at the Nitronic
+			Research Wind Tunnels, Silverlake, California in August1991 when I was
+			hiding out in L.A. We had just been to see the L.A. Dodgers, who at the time
+			had Darryl Strawberry on their team. Darryl had fled New York after cynical
+			home fans had started chanting "Oh Daaaaaryl..." at him when he was off form
+			(most of the time, as it goes). Imagine our delight when the L.A. crowd
+			started doing exactly the same thing! In addition, Darryl had recently
+			become a follower of The Lord, a piety that did not seem to do anything very
+			much for his game. Hence the "put that Bible back!" line.
+			The original version of "Traffic" was credited to "Cambodia", which was also
+			the working name for Sumosonic throughout much of 1996. You can probably
+			guess why we never ended up going public with that name.
+			<ol>
+				<li>We Are The Traffic #1</li>
+				<li>We Are The Traffic #2</li>
+			</ol>
+		)},
+	)}
+
+#define	Oct12.html()
+	${gigHeader(
+		address=3-5 rue Boit,
+		postalcode=75017,
+		cost=110&#8355;,
+		who=${literalizeCommas(
+			${pat}, ${pete}, ${dooj}
+		)},
+		pat=${literalizeCommas(
+		)},
+		photosets= /images/19911012/19911012_creation_paris.jpg;;${literalizeCommas(Nikki Sudden & Pat Fish, Paris 1991)}$$
+			Creation Flickr;;http://www.flickr.com/photos/creation-records/5400636977/
+		,
+		tickets=
+			/images/19911012/19911012_ticket.jpg$$
+			Pierre Guillaume
+	)}
+
+#define	Oct14.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+
+	)}
+
+#define	Oct16.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+
+	)}
+
+#define	Oct17.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+
+	)}
+
+#define	Oct21.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+
+	)}
+
+#define	Oct22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+
+	)}
+
+#define	Oct26.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+
+	)}
+
+#define	Oct27.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+
+	)}
+
+#define	Oct28.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+
+	)}
+
+#define	Nov3.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Nov4.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Nov5.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Nov6.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Nov7.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Nov8.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${pete}, ${dooj}
+		)},
+		with=${literalizeCommas(
+			Peter Astor
+		)},
+	)}
+
+#define	Nov9.html()
+	${gigHeader(
+		recording=${literalizeCommas(
+			${d}, ${q(7)}, ${p(B)}
+		)},
+		who=${literalizeCommas(
+			${pat}, ${pete}, ${dooj}
+		)},
+		with=${literalizeCommas(
+			Peter Astor
+		)},
+	)}
+
+#define	Nov11.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Nov13.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Nov14.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	Nov15.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
+		with=${literalizeCommas( Peter Astor
+		)},
+
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

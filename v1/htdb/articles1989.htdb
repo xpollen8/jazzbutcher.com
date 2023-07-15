@@ -1,0 +1,807 @@
+#define	header ${mkHeader(section=Articles)}
+#define	0001.html
+#live	if (getval(page) = 0001.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0002.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 11 Oct 89 14:32:49
+	<br><b>From:</b> sco!stewarte@ucscc.UCSC.EDU
+	<br><b>Subject:</b> jazz butcher
+	<p>
+	quoth del Amitri:<br>
+	<br>
+	&gt;jazz butcher:           _big planet scarey planet_      genius genicd008<br>
+	&gt;        my fave is opting for the way of jonathan richman, it seems.<br>
+	&gt;        doing the same ole thang.<br>
+	<br>
+	'Course, Butch always did have a thing for Jonathan (remember the cover<br>
+	of Roadrunner)...yeah, both of them have failed to fully live up to <br>
+	their potential lately, but I think this album has its strong points.<br>
+	<br>
+	&gt;        his previous release _fiscotheque_ showed promise &amp; growth which<br>
+	&gt;        _big planet_ fails to continue.  back is the john rivers production<br>
+	&gt;        and reverb which looses mr fishes witty lyrics in the mix.  <br>
+	&gt;        some good tunz, but no gems as in his previous few lackluster albums.<br>
+	&gt;        (well mebbe _bad dream lover_)<br>
+	<br>
+	Mr. Rivers may be sort of a one trick pony, but he was responsible for the<br>
+	masterpiece &quot;A Scandal In Bohemia&quot;...BPSP is a bit of a disappointment<br>
+	after Fishcotheque, but then that was so welcome partly because it followed<br>
+	the wretched Distressed Gentlefolk.  I think &quot;Bicycle Kid&quot; and &quot;Line of<br>
+	Death&quot; may qualify as gems, but only continued listening will tell.<br>
+	<br>
+	<kbd>
+<br>
+	</kbd>
+	${jbc_footer}
+#live	endif
+
+#define	0002.html
+#live	if (getval(page) = 0002.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0001.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0003.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 22 Nov 89 01:18:30 -0500
+	<br><b>From:</b> del@ab.ecn.purdue.edu (del Amitri)
+	<br><b>Subject:</b> jazz butcher
+	<p>
+	just off of a three-day tour with the butcher<br>
+	(chicago, madison, milwaukee), i have some<br>
+	excellent bootleg material, and a 1.5 hour taped<br>
+	interview which i might be willing to provide<br>
+	copies to interested parties.<br>
+	<br>
+	the band is heading west and into canada right now.<br>
+	go see them if you have the chance.<br>
+	buy his new record, buy him a drink.<br>
+	you will not be disappointed.<br>
+	<br>
+	cheers<br>
+	<br>
+	-del<br>
+	${jbc_footer}
+#live	endif
+
+#define	0003.html
+#live	if (getval(page) = 0003.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0002.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0004.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 23 Nov 89 13:37:13 EST
+	<br><b>From:</b> Gary Smith &lt;gksmith@lion.waterloo.edu&gt;
+	<br><b>Subject:</b> jazz butcher
+	<p>
+	I missed my chance to see the Butcher in Toronto a few weeks back and<br>
+	I am really kicking myself.<br>
+	<br>
+	Gary.<br>
+	gksmith@watlion.waterloo.edu<br>
+	${jbc_footer}
+#live	endif
+
+#define	0004.html
+#live	if (getval(page) = 0004.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0003.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0005.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Fri, 24 Nov 89  16:25:17 EST
+	<br><b>From:</b> (The lights are out and no one's home.) Mitch@UMass
+	<br><b>Subject:</b> Yow!!
+	<p>
+	You toured with Butch? Tell me all about it! I haven't heard of him<br>
+	coming out the Boston way yet, but I'll keep my eyes peeled!<br>
+	Oh, btw, I finally found 'Scarey Planet' on disc in Boston, and the more<br>
+	I listen to it, the more I think it's his best work in years! It's CERTAINLY<br>
+	better than 'Fishcoteque', (which I think sucks, actually), and is better<br>
+	than 'Distressed Gentlefolk', I think.<br>
+	<br>
+	Anyway, if you got bootleg material, you bet your ass I'd like a copy!<br>
+	Send me an address and I'll send you a couple of 100 minute tapes. That<br>
+	interview must be a scream...<br>
+	<br>
+	${icon_blank}                                  Mitch<br>
+	${jbc_footer}
+#live	endif
+
+#define	0005.html
+#live	if (getval(page) = 0005.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0004.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0006.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sun, 26 Nov 89 19:46:49 EST
+	<br><b>From:</b> Nancy Everson &lt;everson@BBN.COM&gt;
+	<br><b>Subject:</b> jazz butcher
+	<p>
+	Hi Del,<br>
+	<br>
+	I'd love to get any rare and unusual Jazz Butcher things you have.  In<br>
+	exchange, I can offer 75 minutes of an almost-excellent audience<br>
+	recording from a small club in Cambridge (Jonathan Swifts') from 1986<br>
+	(I didn't record it, but got it from the person who did).  Tell me<br>
+	what I need to do to get your goodies.  (Other boots I have include<br>
+	Legendary Pink Dots, Echo and the Bunnymen, Siouxsie and the Banshees,<br>
+	Bauhaus, Sugarcubes, Cocteau Twins, and dozens and dozens of Cure<br>
+	boots -- if you're interested in any of those, perhaps we could do an<br>
+	even tape trade....)<br>
+	<br>
+	I went to the concert here in Boston on the 8th, and it was really a<br>
+	great show.  Only about 200 people showed up, since the Buzzcocks were<br>
+	playing the same night.  I managed to get a play list again this year,<br>
+	and we were right in front of Patrick, but our only &quot;conversation&quot;<br>
+	consisted of yelling things at him and once in awhile he'd respond.<br>
+	<br>
+	I'm babbling, so I better go.<br>
+	<br>
+	Thanks for offering your tapes!<br>
+	<br>
+	-nancy<br>
+	${jbc_footer}
+#live	endif
+
+#define	0006.html
+#live	if (getval(page) = 0006.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0005.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0007.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sun, 26 Nov 89 19:54:17 EST
+	<br><b>From:</b> Nancy Everson &lt;everson@BBN.COM&gt;
+	<br><b>Subject:</b> jazz butcher
+	<p>
+	Hi again,<br>
+	<br>
+	I've been gone for five days, and I'm plowing through my e-mail one<br>
+	message at a time (100 new messages), and the letter I just sent you<br>
+	was a response to your nm-list posting!  Thanks for remembering to<br>
+	e-mail me personally!  I guess there aren't that many JBC fans on the<br>
+	net....<br>
+	<br>
+	My sister just got back from Germany a week ago, and while she was<br>
+	there, she managed to pick up a copy of the JB &quot;Live in Hamburg&quot;<br>
+	album for me.  I'm anxiously awaiting that!  (I gave my sister<br>
+	a special request for this album, and when she got back, she said,<br>
+	&quot;Um, those bands you wanted the CDs for aren't very popular in Germany,<br>
+	so I couldn't get the CDs.  But, I did get you the albums.  I hate to tell<br>
+	you this, but the Jazz Butcher was filed under the 'Pop' section....&quot;<br>
+	I guess she thought I'd be ashamed of liking something considered &quot;pop&quot;.)<br>
+	<br>
+	Babbling again,<br>
+	-nancy<br>
+	<br>
+	(must be the tea and cognac I had to combat this sore throat....)<br>
+	${jbc_footer}
+#live	endif
+
+#define	0007.html
+#live	if (getval(page) = 0007.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0006.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0008.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 27 Nov 89 12:02:56 -0500
+	<br><b>From:</b> del (del Amitri)
+	<br><b>Subject:</b> jazz butcher
+	<p>
+	yeah during the interview on tape,<br>
+	pat says that he is &quot;liked eveywhere but in england&quot;.<br>
+	strange, huh?  he also says of _hamburg_ album<br>
+	&quot;shows that a great night live isnt necessarily a great album&quot;.<br>
+	i tend to agree.  aside from my faves _only a rumour_ and _girlfriend_<br>
+	the rest just dont come off that well on vinyl.<br>
+	<br>
+	babble.<br>
+	burble.<br>
+	bru-ha-ha<br>
+	<br>
+	-del<br>
+	weird things and were wandering around<br>
+	${jbc_footer}
+#live	endif
+
+#define	0008.html
+#live	if (getval(page) = 0008.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0007.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0009.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sun, 3 Dec 89 17:03:45 -0500
+	<br><b>From:</b> del (del Amitri)
+	<br><b>Subject:</b> trading
+	<p>
+	my boots are pretty good, i guess, based upon you descriptions;<br>
+	i was right on the stage, holding my recorder over the butchers<br>
+	monitor (under his nose) so that the vocals come out extra good.<br>
+	the chicago show recorded especially well. ex++<br>
+	<br>
+	he played _the devil is my friend_ at all 3 shows,<br>
+	as well as at least 3 new tunes: _mr odd_ (GREAT!), _moscow drug club_<br>
+	and something he dedicated to mr bill wyman (manager for tear drop explodes).<br>
+	<br>
+	-del<br>
+	${jbc_footer}
+#live	endif
+
+#define	0009.html
+#live	if (getval(page) = 0009.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0008.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0010.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 4 Dec 89 13:35:48 -0500
+	<br><b>From:</b> del (del Amitri)
+	<br><b>Subject:</b> trading
+	<p>
+	a clarification:<br>
+	i have the spooky cd, which has the canadian studio material.<br>
+	<br>
+	in fact, in talking with th butcher before the madison (2nd) show,<br>
+	i was showing pat the cd, and they were freaking &quot;ah, weve never<br>
+	seen the cd of this&quot; and he asked me if i wanted to hear them do<br>
+	anything off of it well i am thinking to myself &quot;he just saying that&quot;,<br>
+	but i request _girl-go_ and they played it not only that night,<br>
+	but the next too!<br>
+	so, it is on the tapes due to an effort of mine.  coooool<br>
+	<br>
+	-del<br>
+	${jbc_footer}
+#live	endif
+
+#define	0010.html
+#live	if (getval(page) = 0010.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0009.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0011.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 4 Dec 89 13:42:09
+	<br><b>From:</b> sco!stewarte@ucscc.UCSC.EDU
+	<br><b>Subject:</b> jazz butcher
+	<p>
+	So, you met the Butcher?  Always seemed like a fine fellow to me.<br>
+	I met him when the Conspiracy played an acoustic set at Reckless Records<br>
+	in San Francisco.  Asked him to sign my copy of &quot;Hamburg&quot; (that I'd<br>
+	just bought) while mentioning that I'd had lots of trouble finding that<br>
+	album.  He wrote &quot;Stewart -- this is a bootleg&quot; on it, then grinned as<br>
+	I read it and said with pride, &quot;we spent three days mixing this to make<br>
+	it sound like a boot.&quot;  I joked with Felix about being mistaken for <br>
+	a more famous bass player, and he obligingly signed the album &quot;David J&quot;.<br>
+	Fine bunch o' guys, too bad they didn't stay together longer.<br>
+	<br>
+	Anyway, I'm looking forward to seeing Butch again, it's been a few<br>
+	years since last time.<br>
+	<br>
+	<kbd>
+<br>
+	</kbd>
+	${jbc_footer}
+#live	endif
+
+#define	0011.html
+#live	if (getval(page) = 0011.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0010.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0012.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 12 Dec 89 15:24:15 -0500
+	<br><b>From:</b> del (del Amitri)
+	<br><b>Subject:</b> tapes
+	<p>
+	i am planning on seeing the JBC in new orleans on the 18th<br>
+	and staying with a friend who goes to school there.<br>
+	<br>
+	well, it seems that this friend of mine has a hand in at<br>
+	the radio station which is sponsoring the JBC there.  he<br>
+	in essence, talked the station manager into allowing *me*<br>
+	a three hour time slot with mr fish the day before the show.<br>
+	<br>
+	this outta the blue.  watta way to start the day, huh?<br>
+	<br>
+	so... have any questions that i can pass on to the man.<br>
+	i would be more than happy to fence your questions.<br>
+	maybe i will even have a coupa a drinks with the butcher<br>
+	to your name :-)<br>
+	<br>
+	i really wish that i had a video outfit; my pixel video<br>
+	camera really isnt the most versitile, and i would just<br>
+	love to document this upcoming trip.<br>
+	<br>
+	god! what a month.<br>
+	and i still am not sick of this band.<br>
+	<br>
+	-del<br>
+	${jbc_footer}
+#live	endif
+
+#define	0012.html
+#live	if (getval(page) = 0012.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0011.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0013.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 13 Dec 89 13:49:23 EST
+	<br><b>From:</b> Nancy Everson &lt;everson@BBN.COM&gt;
+	<br><b>Subject:</b> tapes
+	<p>
+	Hi del,<br>
+	<br>
+	We're trying to come up with a bunch of questions for you to<br>
+	ask Mr. Fish.  If nothing else, you have to ask him why he's<br>
+	so anemic....  <br>
+	<br>
+	Tell him that thanks to me, &quot;Bicycle Kid&quot; gets played a lot at the<br>
+	Boston College radio station.  (I kept requesting it before they got<br>
+	the album, then two DJs that I talk to a lot started playing it when<br>
+	the album came in, and other DJs started following their lead.)<br>
+	<br>
+	Of course you're going to tape this!  I'll send you a couple<br>
+	more tapes to get copies, *please*please*please*<br>
+	<br>
+	Anyway, you'll hear from me before Friday!<br>
+	<br>
+	-nancy<br>
+	${jbc_footer}
+#live	endif
+
+#define	0013.html
+#live	if (getval(page) = 0013.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0012.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0014.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Fri, 15 Dec 89 21:41:39 EST
+	<br><b>From:</b> Nancy Everson &lt;everson@BBN.COM&gt;
+	<br><b>Subject:</b> tapes
+	<p>
+	oh yeah!<br>
+	<br>
+	Questions.  Hmmm.<br>
+	<br>
+	- If living in England leads to anemia, to what does living in America<br>
+	lead?  If Mr. Fish doesn't know, perhaps you should ask the bass<br>
+	player...<br>
+	<br>
+	- Is it true you're the Captain and Tenille in cognito?  When will you<br>
+	start playing &quot;Muskrat Love&quot; again?<br>
+	<br>
+	- How are the cats?<br>
+	<br>
+	- Do you base your songs on personal experience, or on things you<br>
+	see/hear/read about?  (Both, most likely - a stupid question.)<br>
+	<br>
+	- Is it true that the band is just a corporate tool, and has been<br>
+	bought out by Red Stripe and so JBC stands for Jamacian Beer<br>
+	Conglomerate?<br>
+	<br>
+	- How do you explain that you are more popular in Canada than the US<br>
+	or England?<br>
+	<br>
+	- If you happen to hit the American mainstream tastes, do you see<br>
+	yourself playing at large venues?  (I don't see that you can make this<br>
+	leap without transforming the band into something it isn't, and<br>
+	shouldn't be.)<br>
+	<br>
+	- What's the real story behind you and Max not playing together<br>
+	anymore?<br>
+	<br>
+	- Why haven't you been playing &quot;The Word I Was Looking For&quot; live?<br>
+	<br>
+	- What people have been your biggest influence musically?<br>
+	<br>
+	- What sort of music do you listen to?<br>
+	<br>
+	- What's your favorite movie?<br>
+	<br>
+	- How much wood could a woodchuck chuck if a woodchuck could chuck wood?<br>
+	<br>
+	- What sort of reading do you do?  Informational?  Pleasure?<br>
+	- Who are some of your favorite authors?<br>
+	<br>
+	That's about all the silliness we can come up with right now.  I hope<br>
+	you have a great time!  Buy Patrick and the rest of the band a beer<br>
+	for us, and tell him we're the two obnoxious people right in front of<br>
+	him in Boston, requesting old songs and holwing to add atmosphere to<br>
+	Zombie Love.<br>
+	<br>
+	I'm looking forward to getting the tapes!<br>
+	<br>
+	Talk to you next week,<br>
+	nancy (&amp; craig)<br>
+	${jbc_footer}
+#live	endif
+
+#define	0014.html
+#live	if (getval(page) = 0014.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0013.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0015.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Fri, 22 Dec 89 23:58:53 EST
+	<br><b>From:</b> Nancy Everson &lt;everson@BBN.COM&gt;
+	<br><b>Subject:</b> tapes!
+	<p>
+	Hi del!<br>
+	<br>
+	Your tapes arrived earlier this week.  Thank you thank you thank you!!!!<br>
+	<br>
+	They're wonderful, especially the interview tape.  Sorry the questions<br>
+	we sent to you were so silly, but it was all we could come up with on<br>
+	the spur of the moment.  Are you the person asking the questions (I've<br>
+	been assuming it is you)?  I'm from Minnesota originally too -- where<br>
+	are you from?  I lived in Wadena, New Brighton, North Oaks, Mendota<br>
+	Heights, St. Paul, Roseville, and Minneapolis.  My dad lives outside<br>
+	Hudson WI these days, and my big brother lives in Maple Grove, so I<br>
+	get back there once in awhile.  It would be great seeing the JBC at<br>
+	Seventh Street Entry.  Then again, TT the Bears Place is about the<br>
+	same size...<br>
+	<br>
+	I laughed out loud repeatedly while listening to the interview, as is<br>
+	my boyfriend (I'm playing the tapes for him right now).  Patrick's<br>
+	such a good and engaging story-teller.  It must have been fun!<br>
+	<br>
+	How was the trip to Louisiana?  Did you tape anything?  Can I get<br>
+	copies?  Please?<br>
+	<br>
+	Talk to you later,<br>
+	nancy<br>
+	${jbc_footer}
+#live	endif
+
+#define	0015.html
+#live	if (getval(page) = 0015.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1989/0014.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1989/0016.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sun, 31 Dec 89 15:46:04 -0500
+	<br><b>From:</b> del (del Amitri)
+	<br><b>Subject:</b> trading
+	<p>
+	i dont remember if you are the person who used to have the .signiture<br>
+	which attributed the sampled chicken ad at the beginning of _the best way_<br>
+	to ronald reagan... but i think that it was.<br>
+	<br>
+	anyway.<br>
+	i asked pat about where ever he dug up the reagan tapes<br>
+	and he told me that it *wasnt* reagan.  seems that a friend<br>
+	of his supplies him with absurd tapes for use in songs, and<br>
+	the reagan sound-alike is actually just some radio personality<br>
+	from california...  pat couldnt remember his name though.<br>
+	<br>
+	.... to clear up the confusion...<br>
+	(as if it really mattered)<br>
+	<br>
+	looking forward to the second decade of th e butcher:<br>
+	-del<br>
+	&quot;jesus loves the spacemen 3.  jesus, i love you&quot; - pat fish<br>
+	${jbc_footer}
+#live	endif
+
+
+#define	index.html
+#live	if (getval(page) = index.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+<hr noshade size=1>
+	<ol>
+	<li>
+	<i><a href="${base_url}/articles/1989/0001.html">11 Oct, 1989</a></i>
+	jazz butcher (24)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0002.html">22 Nov, 1989</a></i>
+	jazz butcher (15)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0003.html">23 Nov, 1989</a></i>
+	jazz butcher (6)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0004.html">24 Nov, 1989</a></i>
+	Yow!! (13)
+	</li>
+	<li>
+	<i>26 Nov, 1989</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1989/0005.html">jazz butcher</a> (24)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0006.html">jazz butcher</a> (22)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0007.html">27 Nov, 1989</a></i>
+	jazz butcher (14)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0008.html">3 Dec, 1989</a></i>
+	trading (11)
+	</li>
+	<li>
+	<i>4 Dec, 1989</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1989/0009.html">trading</a> (13)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0010.html">jazz butcher</a> (15)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0011.html">12 Dec, 1989</a></i>
+	tapes (24)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0012.html">13 Dec, 1989</a></i>
+	tapes (18)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0013.html">15 Dec, 1989</a></i>
+	tapes (55)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0014.html">22 Dec, 1989</a></i>
+	tapes! (25)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0015.html">31 Dec, 1989</a></i>
+	trading (18)
+	</li>
+	</ol>
+	${jbc_footer}
+#live	endif
+
+#define	from.html
+#live	if (getval(page) = from.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+<hr noshade size=1>
+	<ol>
+	<li>
+	<i>sco!stewarte@ucscc.UCSC.EDU</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1989/0001.html">jazz butcher</a> (24)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0010.html">jazz butcher</a> (15)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0002.html">del@ab.ecn.purdue.edu (del Amitri)</a></i>
+	jazz butcher (15)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0003.html">Gary Smith &lt;gksmith@lion.waterloo.edu&gt;</a></i>
+	jazz butcher (6)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0004.html">(The lights are out and no one's home.) Mitch@UMass</a></i>
+	Yow!! (13)
+	</li>
+	<li>
+	<i>Nancy Everson <everson@BBN.COM></i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1989/0005.html">jazz butcher</a> (24)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0006.html">jazz butcher</a> (22)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0012.html">tapes</a> (18)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0013.html">tapes</a> (55)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0014.html">tapes!</a> (25)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>del (del Amitri)</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1989/0007.html">jazz butcher</a> (14)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0008.html">trading</a> (11)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0009.html">trading</a> (13)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0011.html">tapes</a> (24)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0015.html">trading</a> (18)
+	</li>
+	</ol>
+	</li>
+	</ol>
+	${jbc_footer}
+#live	endif
+
+#define	subject.html
+#live	if (getval(page) = subject.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1989</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1989/index.html">1989</a></b><br>
+	<a href="${jbc_root}/articles/1989/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1989/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1989/from.html">[By Sender]</a>
+<hr noshade size=1>
+	<ol>
+	<li>
+	<i>jazz butcher</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1989/0001.html">sco!stewarte@ucscc.UCSC.EDU</a> (24)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0002.html">del@ab.ecn.purdue.edu (del Amitri)</a> (15)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0003.html">Gary Smith <gksmith@lion.waterloo.edu></a> (6)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0005.html">Nancy Everson <everson@BBN.COM></a> (24)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0006.html">Nancy Everson <everson@BBN.COM></a> (22)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0007.html">del (del Amitri)</a> (14)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0010.html">sco!stewarte@ucscc.UCSC.EDU</a> (15)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0004.html">Yow!!</a></i>
+	(The lights are out and no one's home.) Mitch@UMass (13)
+	</li>
+	<li>
+	<i>trading</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1989/0008.html">del (del Amitri)</a> (11)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0009.html">del (del Amitri)</a> (13)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0015.html">del (del Amitri)</a> (18)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>tapes</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1989/0011.html">del (del Amitri)</a> (24)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0012.html">Nancy Everson <everson@BBN.COM></a> (18)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1989/0013.html">Nancy Everson <everson@BBN.COM></a> (55)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1989/0014.html">tapes!</a></i>
+	Nancy Everson &lt;everson@BBN.COM&gt; (25)
+	</li>
+	</ol>
+	${jbc_footer}
+#live	endif

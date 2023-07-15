@@ -1,0 +1,808 @@
+#define	Jan11.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas( The Jasmine Minks, Biff Bang Pow )},
+
+	)}
+
+#define	Jan30.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Feb12.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Feb13.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Feb18.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Feb19.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Feb22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Feb23.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		photosets=
+			/images/19880223/19880223_asako80s.jpg$$
+			asako80s;;https://twitter.com/asakopastelism;;2021-11-14
+
+	)}
+
+#define	Feb24.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		photosets=
+			/images/19880224/19880224_lovebucket_1.jpg$$
+			/images/19880224/19880224_lovebucket_2.jpg$$
+			/images/19880224/19880224_lovebucket_3.jpg$$
+			Lisa Lovebucket;;https://twitter.com/Lisa_Lovebucket/status/1445863117951545344
+
+	)}
+
+#define	Feb25.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Feb26.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Feb27.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Feb28.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Feb29.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		cost=&pound;1.50,
+		with=${literalizeCommas( The Jasmine Minks, Disco )},
+		tickets=
+			/images/19880229/19880229_ticket.jpg$$
+			Andrew Brooksbank
+		,posters=
+			/images/19880229/19880229_poster2.jpg$$
+			/images/19880229/19880229_poster3.jpg$$
+			Andrew Brooksbank
+
+	)}
+
+#define	Jun5.html()
+	${gigHeader(
+		recording=${literalizeCommas(${r})},
+		notes=${literalizeCommas(
+			Material from this session was released on ${spook},
+			and on ${brave}.
+		)},
+	)}
+
+#define	Mar2.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar3.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar4.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar5.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar8.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		with=${literalizeCommas( Tuxedomoon
+		)},
+
+	)}
+
+#define	Mar9.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar10.html()
+	${gigHeader(
+
+		recording=${literalizeCommas( ${w}, ${q(5)}, ${p(B)})},
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar11.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar14.html()
+	${gigHeader(
+
+		cost=DM18,
+		recording=${literalizeCommas( ${w}, ${q(5)}, ${p(C)})},
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar15.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+	)}
+
+#define	Mar16.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+	)}
+
+#define	Mar17.html()
+	${gigHeader(
+
+		recording=${literalizeCommas( ${w}, ${q(5)}, ${p(B)})},
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+	)}
+
+#define	Mar18.html()
+	${gigHeader(
+
+		recording=${literalizeCommas( ${w}, ${g(2)}, ${q(4)}, ${i(D)})},
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+	)}
+
+#define	Mar19.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+	)}
+
+#define	Mar20.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+	)}
+
+#define	Mar21.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+	)}
+
+#define	Mar22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar23.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		with=${literalizeCommas(
+	M. Walking On The Water
+		)},
+
+	)}
+
+#define	Mar24.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar25.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+	)}
+
+#define	Mar27.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar28.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Mar31.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Apr1.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Apr2.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Apr3.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Apr7.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Apr8.html()
+	${gigHeader(
+
+		cost=70&#8355;,
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		with=${literalizeCommas(Marc Minelli)},
+		tickets=
+			/images/19880408/19880408_ticket.jpg$$
+			Pierre Guillaume
+
+	)}
+
+#define	Apr9.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Apr11.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Apr13.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Apr14.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Apr15.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		reviews=${literalizeCommas(
+				<b>About The Experience:</b>
+		<blockquote>
+		<p>
+		I was actually the promoter's rep for the German shows in 1988 and travelled 
+		with the band in their splitter. I wasn't a fan of the music but those two 
+		weeks were two of the best weeks of my life, I had so much fun with the guys.
+		Never got to meet any of them again unfortunately, they went with a different 
+		agency afterwards, but it's still one of my favourite touring memories, and 
+		I've been on the road for 35 years.
+		Somewhere there must be footage of me with them fooling around on the stage 
+		of Live from the Alabama TV show in Munich....
+		Actually I'm pretty sure the "Wolfgang" they thank in the credits of "Big 
+		Planet Scarey Planet" is me 😊
+		</p>
+		</blockquote>
+		)}$$
+			Wolf;;;;2021-10-13
+
+	)}
+
+#define	Apr16.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	May2.html()
+	${gigHeader(
+
+		recording=${literalizeCommas( ${room}, ${q(5)}, ${p(B)})},
+		who=${literalizeCommas(
+	${pat}, ${kizzy}, ${larry}, ${paul}, ${green}
+	)},
+
+	)}
+
+#define	May11.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+
+		with=${literalizeCommas(
+	The Blue Aeroplanes
+		)},
+
+	)}
+
+#define	May19.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	May22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun2.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun3.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun4.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun6.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun7.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun8.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun9.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun10.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun11.html()
+	${gigHeader(
+		cost=$9,
+		with=${literalizeCommas(
+		)},
+		who=${literalizeCommas(
+			${pat}, ${kizzy}, ${larry}, ${paul}
+		)},
+		pat=${literalizeCommas(
+		)},
+		photosets= /images/19880611/19880611_del_cubbybear_01.jpg$$
+			/images/19880611/19880611_del_cubbybear_02.jpg$$
+			/images/19880611/19880611_del_cubbybear_03.jpg$$
+			/images/19880611/19880611_del_cubbybear_04.jpg$$
+			/images/19880611/19880611_del_cubbybear_05.jpg$$
+			/images/19880611/19880611_del_cubbybear_06.jpg$$
+			/images/19880611/19880611_del_cubbybear_07.jpg$$
+			/images/19880611/19880611_del_cubbybear_08.jpg$$
+			/images/19880611/19880611_del_cubbybear_09.jpg$$
+			/images/19880611/19880611_del_cubbybear_10.jpg$$
+			/images/19880611/19880611_del_cubbybear_11.jpg$$
+			/images/19880611/19880611_del_cubbybear_12.jpg$$
+			/images/19880611/19880611_del_cubbybear_13.jpg$$
+			/images/19880611/19880611_del_cubbybear_14.jpg$$
+			/images/19880611/19880611_del_cubbybear_15.jpg$$
+			/images/19880611/19880611_del_cubbybear_16.jpg$$
+			/images/19880611/19880611_del_cubbybear_17.jpg$$
+			/images/19880611/19880611_del_cubbybear_18.jpg$$
+			/images/19880611/19880611_del_cubbybear_19.jpg$$
+			/images/19880611/19880611_del_cubbybear_20.jpg$$
+			/images/19880611/19880611_del_cubbybear_21.jpg$$
+			/images/19880611/19880611_del_cubbybear_22.jpg$$
+			/images/19880611/19880611_del_cubbybear_23.jpg$$
+			${del}
+	)}
+
+#define	Jun12.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=The Chesterfields,
+
+	)}
+
+#define	Jun13.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun15.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun16.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun17.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun18.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun19.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun21.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun23.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun24.html()
+	${gigHeader(
+
+		cost=$7.95,
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		tickets=
+			/images/19880624/19880624_ticket.jpg
+	)}
+
+#define	Jun25.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun27.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas( Alex Chilton
+		)},
+
+	)}
+
+#define	Jun28.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas( Alex Chilton
+		)},
+
+	)}
+
+#define	Jun30.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas( Alex Chilton
+		)},
+		photosets=
+			/images/19880630/19880630_RareVicRec_Roxy_PatKizzy.jpg$$
+			RareVicRe;;https://twitter.com/RareVicRec;;2023-07-03
+	)}
+
+#define	Jul1.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas( Alex Chilton
+		)},
+
+	)}
+
+#define	Aug7_2200.html()
+	${gigHeader(
+
+		with=${literalizeCommas(Biff Bang Pow!, Heidi Berry, Felt, The House Of Love, Primal Scream, My Bloody Valentine, The Jasmine Minks)},
+		cost=&pound;3:50,
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		blurb=Doing It For The Kids,
+		tickets=
+			/images/19880807/19880807_ticket.jpg$$
+		,photosets=
+			/images/19880807/19880807_andybcfc2015_lineup.jpg$$
+			andybcfc2015;;https://www.instagram.com/andybcfc2015/
+
+	)}
+
+#define	Aug22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+
+	)}
+
+#define	Sep8.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+		with=${literalizeCommas( Biff Bang Pow
+		)},
+		photosets=
+			/images/19880908/19880908_shintomo_1.jpg$$
+			/images/19880908/19880908_shintomo_2.jpg;;w/Alan McGee$$
+			/images/19880908/19880908_shintomo_3.jpg;;w/Alan McGee$$
+			/images/19880908/19880908_shintomo_4.jpg$$
+			/images/19880908/19880908_shintomo_5.jpg$$
+			/images/19880908/19880908_shintomo_6.jpg$$
+			/images/19880908/19880908_shintomo_7.jpg$$
+			/images/19880908/19880908_shintomo_8.jpg;;w/Alan McGee$$
+			shintomo;;https://twitter.com/tomokos88/status/1429987603340697629
+		,reviews=${literalizeCommas(
+		During my first stay in London I saw the Jazz Butcher twice. I don’t remember the first one because I lost in London all night long after the live, so my memory was this episode.
+		)}$$
+			${g_credit(g=shintomo, u=https://twitter.com/tomokos88, d=2021-10-13)}
+	)}
+
+#define	Sep14.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+
+	)}
+
+#define	Oct5.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Oct6.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas( Robyn Hitchcock
+		)},
+
+	)}
+
+#define	Oct21.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Oct22.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Oct23.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Nov1.html()
+	${gigHeader(
+
+		cost=&pound;3,
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(
+			Spacemen 3, The Sun Carriage
+		)},
+
+	)}
+
+#define	Nov2.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Nov4.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+
+	)}
+
+#define	Nov10.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${solo} )},
+
+	)}
+
+#define	Nov12.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Nov30.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Dec14.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Dec16.html()
+	${gigHeader(
+
+		cost=&pound;4:50,
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(
+			Deaf Heights, Cajun Aces, The Thenes
+		)},
+
+	)}
+
+#define	Dec21.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, Ed Ball )},
+		setlists=
+			/images/19881221/19881221_notebook_setlist.jpg$$
+			Pat's notebooks
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

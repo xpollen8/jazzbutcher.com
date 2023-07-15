@@ -1,0 +1,370 @@
+#define	etcVideo[1]->mediaurl	https://www.youtube.com/embed/sVRitMHK4rg
+#define	etcVideo[1]->date	2017-07-10
+#define	etcVideo[1]->name	The Jazz Butcher In Japan
+#define	etcVideo[1]->credit	${g_credit(g=23 ears, u=https://www.youtube.com/channel/UCJYL-nO2qAgD9fC-Ux7aOeQ, d=2017-07-10)}
+
+#define	etcVideo[2]->mediaurl	https://www.youtube.com/embed/i0D4NMo7S8w
+#define	etcVideo[2]->date	2017-07-10
+#define	etcVideo[2]->name	The Jazz Butcher On Creation
+#define	etcVideo[2]->credit	${g_credit(g=23 ears, u=https://www.youtube.com/channel/UCJYL-nO2qAgD9fC-Ux7aOeQ, d=2017-07-10)}
+
+#define	etcVideo[3]->mediaurl	https://www.youtube.com/embed/Aue3VZH3euk
+#define	etcVideo[3]->date	2017-07-10
+#define	etcVideo[3]->name	The Jazz Butcher On Glass
+#define	etcVideo[3]->credit	${g_credit(g=23 ears, u=https://www.youtube.com/channel/UCJYL-nO2qAgD9fC-Ux7aOeQ, d=2017-07-10)}
+
+#define	etcVideo[4]->mediaurl	https://www.youtube.com/embed/NI0QBCSsVGk
+#define	etcVideo[4]->date	2017-07-10
+#define	etcVideo[4]->name	The Jazz Butcher Appeal
+#define	etcVideo[4]->credit	${g_credit(g=23 ears, u=https://www.youtube.com/channel/UCJYL-nO2qAgD9fC-Ux7aOeQ, d=2017-07-10)}
+
+#define	officialVideo[1]->mediaurl	https://www.youtube.com/embed/rZAAcye5TDo
+#define	officialVideo[1]->name	Black Raoul
+#define	officialVideo[1]->blurb
+	June 2017 recording by the Jazz Butcher Quartet
+#define	officialVideo[2]->mediaurl	https://www.youtube.com/embed/dpk0cMvRJf8
+#define	officialVideo[2]->name	Jazz Butcher -v- Count Dracula 
+#define	officialVideo[2]->blurb
+	The Blood on the Cats video compilation (by an English company called
+	Jettisoundz) featured a video of "JB Meets Count Dracula" made in my living
+	room at a total cost to the band of 50p. (for blood red plastic bin liners).
+	The best bits (where Dave J ties the Goth chick to the chair) got left out,
+	but it's still quite a laugh, and features Fantastic Orange Cat Sterling.
+	${g_credit(g=Pat, d=2000-01-10)}
+#define	officialVideo[3]->mediaurl	https://www.youtube.com/embed/wFielGAVxUk
+#define	officialVideo[3]->name	Spooky
+#define	officialVideo[4]->mediaurl	https://www.youtube.com/embed/YhpMSXo-kzM
+#define	officialVideo[4]->name	Girl-Go
+#define	officialVideo[5]->mediaurl	https://www.youtube.com/embed/y0e6IZXGSCw
+#define	officialVideo[5]->name	Angels
+#define	officialVideo[6]->mediaurl	https://www.youtube.com/embed/JlF_ytUD-yM
+#define	officialVideo[6]->name	Roadrunner
+#define	officialVideo[6]->blurb
+	The "lost" home movie video, lovingly recovered and restored by experts.
+	Original footage from 1983-84 by Harvey Megabuck Jr. Featuring brief
+	cameos from the late great Leo Casey and the King of Rock and Roll
+	Many thanks to A.J. Brooksbank.
+	${g_credit(g=Pat, d=2011-12-27)}
+#define	officialVideo[7]->mediaurl	https://www.youtube.com/embed/8KnBitnz7PY
+#define	officialVideo[7]->name	All The Saints
+#define	officialVideo[7]->blurb
+	${g_credit(g=Scott Deschaine, d=2015-04-05)}
+
+#define	officialVideo[8]->mediaurl	https://www.youtube.com/embed/tW2hsJNGIvI
+#define	officialVideo[8]->name	Saints Prayer
+#define	officialVideo[8]->blurb
+	A companion piece / making of video for the original "All the Saints" video
+	${g_credit(g=Scott Deschaine, d=2021-02-23)}
+
+#define	officialVideo[9]->mediaurl	https://www.youtube.com/embed/lvn8dkdYQzs
+#define	officialVideo[9]->name	Never Give Up
+#define	officialVideo[9]->blurb
+	Thanks ${jimmy} for this lovely memorial to Pat Fish.
+	${g_credit(g=Glass Modern, d=2022-10-05)}
+
+#define	fetchGigSongSummary(datetime)
+#
+#	noun:gigsong_with_media_by_date
+#
+#live	if (sql(gs:select * from gigsong where datetime='${datetime}' and mediaurl IS NOT NULL group by song order by ordinal, gigsong_id))
+#live	if (getint(gs->numResults) > 0)
+	<br/>
+	<blockquote>
+#live	while (i = gs[*]->gigsong_id)
+#live	if (getint(i) > 1)
+	-
+#live	endif
+	${songLinkMapped(title=${literalizeCommas(${gs[${i}]->song})})}
+#live	endwhile
+	</blockquote>
+#live	endif
+#live	endif
+
+#define	fetchGigThingSummary(p)
+	<a href="${jbc_gigs}/${ts2URI(${${p}->datetime})}"><b>${substr(0, 10, ${${p}->datetime})}</b></a> ${replace(${${p}->venue}, @, at)}, ${${p}->city} ${${p}->country}
+
+#define	Wilson_BackingTracks[1]->title	${wilson_battle_time}
+#define	Wilson_BackingTracks[1]->aws	Wilson_BackingTracks_BattleTime
+#define	Wilson_BackingTracks[1]->hasMP3	yes
+#define	Wilson_BackingTracks[2]->title	${wilson_buffalo_sniper}
+#define	Wilson_BackingTracks[2]->aws	Wilson_BackingTracks_BuffaloSniper
+#define	Wilson_BackingTracks[2]->hasMP3	yes
+#define	Wilson_BackingTracks[3]->title	${wilson_critters}
+#define	Wilson_BackingTracks[3]->aws	Wilson_BackingTracks_Critters
+#define	Wilson_BackingTracks[3]->hasMP3	yes
+#define	Wilson_BackingTracks[4]->title	${wilson_dark_agenda}
+#define	Wilson_BackingTracks[4]->aws	Wilson_BackingTracks_DarkAgenda
+#define	Wilson_BackingTracks[4]->hasMP3	yes
+#define	Wilson_BackingTracks[5]->title	${wilson_filter_kings}
+#define	Wilson_BackingTracks[5]->aws	Wilson_BackingTracks_FilterKings
+#define	Wilson_BackingTracks[6]->title	${wilson_hippy_shit}
+#define	Wilson_BackingTracks[6]->aws	Wilson_BackingTracks_HippyShit
+#define	Wilson_BackingTracks[6]->hasMP3	yes
+#define	Wilson_BackingTracks[7]->title	${wilson_istanbul_connection}
+#define	Wilson_BackingTracks[7]->aws	Wilson_BackingTracks_IstanbulConnection
+#define	Wilson_BackingTracks[7]->hasMP3	yes
+#define	Wilson_BackingTracks[8]->title	${wilson_no_winners}
+#define	Wilson_BackingTracks[8]->aws	Wilson_BackingTracks_NoWinners
+#define	Wilson_BackingTracks[8]->hasMP3	yes
+#define	Wilson_BackingTracks[9]->title	${wilson_play_it_all_night_long}
+#define	Wilson_BackingTracks[9]->aws	Wilson_BackingTracks_PlayItAllNightLong
+#define	Wilson_BackingTracks[9]->hasMP3	yes
+#define	Wilson_BackingTracks[10]->title	${wilson_police_chief}
+#define	Wilson_BackingTracks[10]->aws	Wilson_BackingTracks_PoliceChief
+#define	Wilson_BackingTracks[10]->hasMP3	yes
+#define	Wilson_BackingTracks[11]->title	${wilson_quality_people}
+#define	Wilson_BackingTracks[11]->aws	Wilson_BackingTracks_QualityPeople
+#define	Wilson_BackingTracks[11]->hasMP3	yes
+#define	Wilson_BackingTracks[12]->title	${wilson_saturday_night}
+#define	Wilson_BackingTracks[12]->aws	Wilson_BackingTracks_SaturdayNight
+#define	Wilson_BackingTracks[12]->hasMP3	yes
+#define	Wilson_BackingTracks[13]->title	${wilson_secret_government}
+#define	Wilson_BackingTracks[13]->aws	Wilson_BackingTracks_SecretGovernment
+#define	Wilson_BackingTracks[13]->hasMP3	yes
+#define	Wilson_BackingTracks[14]->title	${wilson_two_dragons}
+#define	Wilson_BackingTracks[14]->aws	Wilson_BackingTracks_TwoDragons
+#define	Wilson_BackingTracks[14]->hasMP3	yes
+
+#define	index.html
+#live	if (getval(page) = index.html)
+	${mkHeader(section=Video)}
+	${beg_tabs}
+	${begTab(Music Videos)}
+#live	while (i = officialVideo[*]->mediaurl)
+	${tag_beg}${songLinkMapped(${officialVideo[${i}]->name})}${tag_end}
+	<div class="listenItem">
+	${embedVideo(url=${officialVideo[${i}]->mediaurl}, anno=officialVideo[${i}]->blurb)}
+	</div>
+#live	endwhile
+
+	${endTab}
+	${begTab(Gigs w/Video)}
+	${tag_beg}
+	<a href="${jbc_help}">Help us</a> find more!
+	${tag_end}
+
+#
+#	noun:gigs_with_video
+#
+#live   if (sql(v:select g.* from gig g, gigsong gs where find_in_set('video', g.extra) and g.datetime=gs.datetime and gs.mediaurl is not NULL group by g.datetime order by g.datetime desc))
+#live   while (i = v[*]->gig_id)
+
+#live	if (define(currentYear, ${substr(0, 4, ${v[${i}]->datetime})}))
+#live	endif
+#live	if (getval(currentYear) != ${previousYear})
+	${tag_beg}
+	${currentYear}
+	${tag_end}
+#live	endif
+#live	if (define(previousYear, ${currentYear}))
+#live	endif
+
+		<div class="listenItem">
+			${fetchGigThingSummary(v[${i}])}
+			${fetchGigSongSummary(${v[${i}]->datetime})}
+		</div>
+#live	endwhile
+#live	endif
+
+	${endTab}
+
+	${begTab(Sumosonic)}
+	<a href="${jbc_search}?f=extras&q=sumo"> <div class="gig_sumo"> </div> </a>
+	${define(ano, C. 1996)}
+	${tag_beg}
+	<a href="${jbc_lyrics}/sumosonic_monks_of_kung_fu.html">Monks Of Kung Fu</a>
+	${tag_end}
+	<div class="listenItem">
+	${embedVideo(url=/video/sumosonic/sumosonic_monks_of_kung_fu, anno=ano)}
+	</div>
+	${tag_beg}
+	<a href="${jbc_lyrics}/sumosonic_gods_green_earth.html">God's Green Earth</a>
+	${tag_end}
+	<div class="listenItem">
+	${embedVideo(url=/video/sumosonic/sumosonic_gods_green_earth, anno=ano)}
+	</div>
+	${tag_beg}
+	<a href="${jbc_lyrics}/sumosonic_sputnik.html">Sputnik</a>
+	${tag_end}
+	<div class="listenItem">
+	${embedVideo(url=/video/sumosonic/sumosonic_sputnik, anno=ano)}
+	</div>
+	${endTab}
+
+	${begTab(Wilson)}
+	<a href="${jbc_search}?f=extras&q=wilson"> <div class="gig_wilson"> </div> </a>
+	${tag_beg}
+	${curt}'s live performance backing videos.
+	${tag_end}
+	<div class="annotation">
+	These are the backing tracks for the wilson live shows, along with the videos I fashioned to run behind us.
+	${g_credit(g=${curt}, d=2021-12-13)}
+	</div>
+	<b>Note:</b> some of these include full (vocal-less) audio, others are just video. Enjoy!
+#live	while (x = Wilson_BackingTracks[*]->title)
+	<div class="listenItem">
+		<div>
+		${linkSong(title=${Wilson_BackingTracks[${x}]->title})}
+		</div>
+#live	if (getval(Wilson_BackingTracks[${x}]->comment))
+			(${Wilson_BackingTracks[${x}]->comment})
+#live	endif
+#live	if (getval(Wilson_BackingTracks[${x}]->hasMP3))
+			${linkAudio(mp3=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws}.mp3)}
+#live	else
+#live	endif
+		${embedVideo(url=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws})}
+	</div>
+#live	endwhile
+	${tag_beg}
+	<a href="${jbc_lyrics}/wilson_police_chief.html">Police Chief</a>
+	${tag_end}
+	<div class="listenItem">
+	${define(ano, Excerpt from <i>No known Predators</i> DVD, filmed <a href="${jbc_gigs}/2009/Aug15.html">2009-08-15</a>.)}
+	${embedVideo(url=https://www.youtube.com/embed/lvEN14PM_5M, anno=ano)}
+	</div>
+	${tag_beg}
+	<a href="${jbc_lyrics}/wilson_quality_people.html">Quality People</a>
+	${tag_end}
+	<div class="listenItem">
+	${define(ano, Excerpt from <i>No known Predators</i> DVD, filmed <a href="${jbc_gigs}/2009/Aug15.html">2009-08-15</a>.)}
+	${embedVideo(url=https://www.youtube.com/embed/Hic-yax9asQ, anno=ano)}
+	</div>
+	${tag_beg}
+	<a href="${jbc_lyrics}/wilson_istanbul_connection.html">Istanbul Connection</a>
+	${tag_end}
+	<div class="listenItem">
+	${embedVideo(url=https://www.youtube.com/embed/r074mp41514)}
+	</div>
+	${endTab}
+
+	${begTab(Etc)}
+#live	while (i = etcVideo[*]->mediaurl)
+	${tag_beg}${etcVideo[${i}]->name}${tag_end}
+	<div class="listenItem">
+	${define(ano, ${literalizeCommas(
+		${etcVideo[${i}]->credit}
+		)}
+	)}
+	${embedVideo(url=${etcVideo[${i}]->mediaurl}, anno=ano)}
+	</div>
+#live	endwhile
+	${tag_beg}
+	Playhouse Theatre Documentary
+	${tag_end}
+	${define(ano, A lovely mini-documentary filmed <a href="${jbc_gigs}/2015/Mar27_2000.html">2015-03-27</a>
+		${g_credit(g=Sonic Barometer, u=https://www.youtube.com/channel/UCX5AXudBBClmjCATNl1KnKA, d=2015-03-27)}
+		)}
+	<div class="listenItem">
+	${embedVideo(url=https://www.youtube.com/embed/UzPvd21Ujmw, anno=ano)}
+	</div>
+
+	${tag_beg}
+	Ex-Spacemen 3: Walking with Jesus
+	${tag_end}
+	${define(ano, ${literalizeCommas(The original line up of Spacemen 3 (minus Jason Pierce) + Jason from Spectrum & Kevin Shields + Pat Fish on vox.
+	This was a special one off gig in London as a benefit for the artist & musician & original Spacemen drummer Natty Brooker.
+			)}
+		${g_credit(g=Neil Rudd, u=http://www.myspace.com/eatlightsbecomelights, d=2010-07-31)}
+		)}
+	<div class="listenItem">
+	${embedVideo(url=https://www.youtube.com/embed/mTR-fbcoQFw, anno=ano)}
+	</div>
+
+	${define(ano, From the successful 2012 effort to crowd-fund the ${adventurers} record.)}
+	${tag_beg}
+	Pledgemusic Video
+	${tag_end}
+	<div class="listenItem">
+	${embedVideo(url=/video/adventurers_pledge, anno=ano)}
+	</div>
+	${define(ano, Source of sample for ${excel})}
+	${tag_beg}
+	Excellent!
+	${tag_end}
+	<div class="listenItem">
+	${embedVideo(url=/video/Excellent, anno=ano)}
+	</div>
+
+	${tag_beg}
+	"Transmission", 1989-1990
+	${tag_end}
+	<div class="annotation">
+	In the eighties, on the back of the arrival of MTV, there was a bit of a surge in pop music telly. A little company in London called Music Box used to make dirt-cheap music programming and sell it to 
+	TV stations around the world. In 1988 they had an "indie" music programme led by Rachel Davis, who had been a researcher for the relatively hip BBC DJ Janis Long, and in due course I, newly signed to Creation and sporting my best green paisley shirt, went along to be interviewed by Rachel for the show.
+	<p>
+	<p>They were supposed to use one little twenty minute reel of videotape and edit the interview down from that. They ended up with three reels of this shit. For some reason, things just got really funny with the sound and light blokes and everyone was just falling about with mirth. It was very enjoyable, for a telly experience, and I left and went about my business.
+	<p>
+	<p>Around this time Alan McGee started saying things like "Pat Fish should be on the telly."
+	<p>I figured that he had plans to retire me and get me a job as a Tony Wilson impersonator. Of course, Alan was still on the drugs back then. I paid it no mind.
+	<p>
+	A couple of months later, Music Box got in touch and said that they wanted me to do a screen test for a presenter's gig on Rachel's show. This I duly did, thinking that no more would come of it. Then they offered me the job. I asked my new boss what they were proposing to pay me. He told me and I can still remember my reply: "Wow! You really are all overpaid in telly, aren't you?"
+	<p>
+	<p>Actually, in telly terms, it was an absolute pittance. For me, however, it represented a three figure sum, every fortnight, just for standing around saying "Here's My Bloody Valentine."
+	<p>
+	<p>So from about February 1989 to the end of 1990 I had a covert telly career, co-presenting this show, which they called "Transmission" (yup), with Rachel and some other telly bod whom I very rarely saw as we alternated, for the most part. The show aired on various regional independent TV stations around Britain. My regional station didn't get it, but they did get it up the road in Rugby, where the telly came from Birmingham. It was very odd to hear people from Rugby saying "I saw you on telly" when you didn't even realise that the show was going out. You know, I just used to make 'em and forget 'em for the most part. I didn't really understand that there were places where real people were actually watching this shit.
+	<p>
+	<p>It was on the national telly NHK in Japan. National telly. In Japan. Just consider that a moment. Yeah, I know. Momus probably wants to kill me. He befriended me on Facebook the other day. I should probably reinforce my security arrangements.
+	<p>
+	<p>Once a team from NHK came to our show's London offices to interview us about the programme. When my turn came I went into the little interview room and found myself answering thirty minutes' worth of questions about the Jazz Butcher. Not a word about the telly programme. I came out smirking. Like a fucking expert.
+	<p>
+	<p>It was on national telly in Portugal as well. At seven thirty on a Friday evening. The Pastels. Joe Foster. Dave Kusworth. On national telly. At half past seven on a Friday evening. They put on a Creation night in Lisbon and they filled a huge theatre two nights running. I didn't get invited. Nikki Sudden got invited. Nikki Sudden got stabbed. Life, eh?
+	<p>
+	<p>Transmission also went out on some long-gone pan-European cable channel, which, given that most people in Britain hadn't got their heads around all these new channels yet, meant that I was forever being asked if I was working for Rupert Murdoch's loathsome Sky TV. It was the only non-terrestrial channel that most people had heard of, you see. And it was annoying.
+	<p>
+	<p>I had the pleasure of interviewing loads of my mates for the show: Sudden, Kusworth, Alex Novak, Pete Astor, the Blue Aeroplanes and so on. I got to interview one or two people I didn't know, as well, the most memorable of which has to be Lydia Lunch. 
+	<p>
+	<p>The programme filled a bit of a void and a lot of people, it turns out, were quite grateful for it when they were youngsters at the time. But you couldn't help but see trouble coming. The commercial breaks would be filled with averts for nice teen grooming products. Then you would cut back to some bunch of whey-faced, lank-haired skinny drop-outs in scuffed leather jackets, doing stuff with fuzz pedals. Sooner or later, somebody was actually going to watch this show and spot what I had spotted. Major subcultural demographic fail. 
+	<p>
+	<p>At the start of 1991 I was told that the show was being cancelled "because of the recession". I breathed a small sigh of relief and put in my final invoice.
+${shh(
+	<p>Then I went to the pub with the sound guy and the cameraman. It was lunch time in the West End, just off Tottenham Court Road.
+	<p>
+	<p>I awoke to find myself in a strange room full of strangers. It was dark outside and the lights were on. I had the impression that I was in a bar overlooking the Thames near London Bridge, though how I had arrived here was a complete mystery. A cursory check revealed that I still had my money and I still had my hash. So I did what any rational sentient being would do under the circumstances. I sat up and rolled a joint.
+	<p>
+	<p>It wasn't much of a joint, it has to be said. In this dream-like situation I found that my body wasn't working quite as smoothly as I would normally have expected. Still, I got the thing rolled in the end and lit it.
+	<p>
+	<p>Ah, smoking! The thing that separates us from the mediaeval. The greatest aid to calm, considered ratiocination known to humankind. I sat and puffed on this loose, stinking spliff of mine, gazing at the strangers all around me and considering my position. To my astonishment, the time turned out to be about half past five in the afternoon. This was a blow. I had imagined that it must be late at night. Why else should I find myself in this oddly enfeebled condition?
+	<p>
+	<p>Arriving at the conclusion that I should probably leave this place, I rose and, since I was leaving, offered the vile, smouldering, soggy spliff to a nearby stranger. He seemed surprisingly uninterested, as did all his friends. Very odd. Retaining the heinous, unravelling stogie, I set off, out of the room and down a flight of stairs...only to find myself miraculously returned to the pub where I had been drinking with my old mates from the crew!
+	<p>
+	<p>The wily old buggers must have drunk me under the table and then dumped me in the upstairs room to sleep it off. Presumably they figured that I would awake and be gone before the after-work yuppie tide filled the pub. They didn't know that I had once slept through a fucking earthquake.
+)}
+	<p>
+	<p>I could write so much about music and telly, but I shall leave with you with one Top Telly Tip:
+	<p>
+	<p>Saying "Here's the Primitives" into a microphone while walking down a street is much, much harder than you think.
+	<p>
+	${g_credit(g=Pat x, d=2016-02-15 09:19:49)}
+	</div>
+	<div class="listenItem">
+	${embedVideo(url=https://www.youtube.com/embed/Dha_-B9grlc)}
+	Pat introducing a Close Lobsters segment: "If you're not actually in jail, or dead.."
+<p>
+	${embedVideo(url=https://www.youtube.com/embed/dNuzCDxzBlk)}
+	Pat introducing and interviewing ${rodney}
+<p>
+	${embedVideo(url=https://www.youtube.com/embed/s8Zhj5TtruA)}
+	Pat introducing A House of Love segment
+<p>
+	${embedVideo(url=https://www.youtube.com/embed/8J4IL_E1vnw)}
+	Pat introduces a Pastels video
+<p>
+	${embedVideo(url=https://www.youtube.com/embed/yWg1SUJZGf4)}
+	Pat introduces an Ed Ball interview
+<p>
+	${embedVideo(url=https://www.youtube.com/embed/cj5cLyg52-A)}
+	Pat interviews ${sumishta} of 13 Frightened Girls
+<p>
+	${embedVideo(url=https://www.youtube.com/embed/kJeW2B9Mmk4)}
+	Pat introduces a Nikki Sudden interview (Japanese overdubbed)
+<p>
+	${embedVideo(url=https://www.youtube.com/embed/2Kqbwz51wG4)}
+	Interview with Philip Parfitt and Josephine Wiggs of The Perfect Disaster conducted by Pat Fish (the Jazz Butcher) on Brighton beach.
+	</div>
+
+	${endTab}
+
+	${end_tabs}
+	${jbc_footer}
+#live	endif

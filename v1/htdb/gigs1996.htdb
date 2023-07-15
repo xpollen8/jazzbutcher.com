@@ -1,0 +1,42 @@
+#define	Aug20.html()
+	${gigHeader(
+		cost=,
+		pat=${literalizeCommas(
+				Rather beautiful two colour card poster for the concert
+					in Sa Pobla, Mallorca in August 1996 after the band has split up!
+					<p>
+				See the J.B.C. receive sponsorship from Air Iberia, Beck's Beer and the local government,
+				among others.  40 x 34 cm.  Pristine condition.
+		)},
+		who=${literalizeCommas(
+			[[person:Pat_Fish]], [[person:Max_Eider]], [[person:Kathie_McGinty]], ${dooj}, ${gab}
+		)},
+		photosets= /images/19960820/live_20Aug96.jpg$$
+			/images/19960820/live_20Aug96_2.jpg$$
+			Jimmy Duval;;https://twitter.com/jimmyduval
+		,
+	)}
+
+#define	Dec31.html()
+	${gigHeader(
+		phone=01604 604313,
+		notes=${literalizeCommas(
+			Live debut of Sumosonic
+		)},
+		pat=${literalizeCommas(
+			"Lots of girls on stage. That's what I want"
+		)},
+		reviews=
+			${literalizeCommas(
+			Three girls on stage ("The Brides of Sumo"). Five gentlemen. Six tunes (Hey, Star; Business and Work; God's Green Earth; Monks of Kung-Fu; Radio Saigon; Come, Friendly Spacemen). Mild success. Oh, and it was on New Year's Eve, and I know that whoever called N'pton "sunny" was being intentionally ironic, but you have no idea to what degree.
+			)}$$
+				Gabriel Turner;;http://jazzbutcher.com/articles/1997/1542.html;;1997-01-16 03:34:34
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

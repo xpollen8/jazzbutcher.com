@@ -1,0 +1,297 @@
+#define	index.html
+	${mkHeader(section=Wilson)}
+	${beg_tabs}
+	${begTab(About)}
+	${endTab}
+	${end_tabs}
+	<center>
+	<img
+	    border=0 width=252 height=72 src="${images}/wilson/warfare/image002.jpg">
+	<br>
+	(see also: <a href="${jbc_root}/wilson/warfare.html">Warfare</a>)
+	<img src="/images/20020131/20020131_wilson_boatrace_500.jpg">
+#	<p>
+#	<a href="${images}/wilson/Boatrace.jpg"><img
+#		src="${images}/wilson/Boatrace_250.jpg" width=250 height=166 alt="big-ass image" border=1></a>
+	<br>
+	(Wilson at the <a href="${jbc_gigs}/2002/Jan31.html">Boatrace in Cambridge, 31Jan2002</a>)
+	</center>
+	<p>I started the Wilson project fondly imagining that it would be
+	a solo thing.
+	<p>I figured that I could use my computer to make backing tracks
+	for me to play along with, and thus get around the stunted expectations
+	and inexorable tedium which normally attend the appearance of
+	a man in his forties sitting on a stool with a guitar in his
+	lap.
+	<p>Largely taking the Great ${wolfi} my example, I thought
+	that I might be able to present my songs in an interesting fashion,
+	one which might afford me the opportunity to sit back and really
+	play, rather than just holding down the basic tune with endless
+	rhythm guitar strumming. I committed myself to doing a gig (in
+	order to have a deadline) and set to cooking up some groovy backing
+	tracks. 
+	<p>A month or so later I had the bones of a set. I had built nice
+	easy tunes, which would afford me a bit of space to stretch out
+	and do something, and I had begun to figure out a few nice ideas
+	for songs. 
+	<p>Somewhere around this point, my pal ${russ}, who played percussion
+	for ${sumosonic} and on ${rotten}, decided that he would help out at the gig. I agonized for a
+	while before I decided that in that case we might as well get
+	a bassist too. One night I was in a bar, looking for Aggi, who
+	played the bass for Sumosonic. He seemed like a pretty obvious
+	choice. I never did find Aggi, but I did run into Russ, who was
+	with our friend Kathy Schaer a.k.a. Special K, one time Sumo
+	vocalist. Rather to my astonishment it was announced to me that
+	Kath was to be our bass player.
+	<p>I had seen Kath hold her own on bass alongside Jonny Mattock
+	and Mark Refoy, so I knew that she was good enough for the job.
+	The three of us decided to style ourselves a "low power trio",
+	and it was as such that we rehearsed and performed our first
+	show at The Soundhaus in Northampton on <a href="${jbc_gigs}/2001/Mar1_2115.html">
+	1st March 2001</a>. Along
+	the way we tried to work up a sort of ascetic dub sound, with
+	grungey loops, phat bass and sparse, loud guitar, largely tuned
+	to a single chord for maximum drone simplicity. 
+	<p>There were definite advantages in being in band where all the
+	members lived within five minutes
+	walk of each others
+	front doors. Everyone had an income and two of the three of
+	us had cars. Logistically it was already the best group I had
+	ever been in. After the Soundhaus gig we played at
+	<a href="${jbc_gigs}/2001/Apr1_2200.html">The Racehorse</a>
+	in Northampton and then went on the road to play
+	<a href="${jbc_gigs}/2001/Apr14_2130.html">in Leeds</a> for
+	Team Borscht. Each time we played we enjoyed ourselves more and
+	people were responding well.
+	<p>As we entered May 2001 events came to pass which caused me to
+	suspect that perhaps people were responding a little too well.
+	My good friend Ian Botterill, the singer from Sumo and Fat Controller,
+	came asking to join the band, bringing with him another guitarist,
+	Steve Gordon, from the gargantuan Northampton funk collective
+	P-Hex. Bearing in mind that I had just found out how much fun
+	it can be to be the only guitarist in a band, I was a touch uncertain
+	as to how all this would work out. Matters were further complicated
+	within the week. Sitting in my back yard one day, ${curt}
+	asked me: 
+	"Can anyone be in your band? Can I be in your band?"
+	"Of course you can be in my band, Curt,"
+	I replied, 
+	"Just as long as you play the Theremin!"
+	<p>I figured that this was just the sort of reply the facetious
+	old bastard was expecting.
+	<p>It certainly was not what I was expecting when Curtis turned
+	up a few days later with something that, while not technically
+	a Theremin, was nonetheless quite clearly a Theremin! The 
+	"Air-FX"
+	is a device made for DJs. By moving one's hand over a series of invisible
+	beams emanating from the Air-FX
+	one can manipulate a whole rake of mad synthesised sounds, and
+	even start to affect the final mix, dropping filters and all
+	manner of other tricks. In our pal's music shop they are advertised thus: 
+	"QUICK! BUY ONE OF THESE! THEY'RE MENTAL!"
+	<p>I had to admit it. In the course of one week our band had doubled
+	in size.
+	<p>Our first date as a sextet came at the end of May. We found ourselves
+	headlining a four band bill
+	<a href="${jbc_gigs}/2001/May24_2100.html">at The Racehorse</a>. Immediately before
+	us came Capdown (short for "Capitalist Downfall", fact fans!),
+	a profoundly talented and effective ska/punk band
+	with a new album and a slot at Reading Festival. It looked as
+	though it would be a fairly pointless exercise trying to follow
+	something like that, but we went ahead with it and it all went
+	off very well. Capdown certainly seemed to enjoy it. So one after-show
+	party later there we were, a fully functioning six-piece. And
+	I had to admit that Steve's guitar really did bring something to the sound. As readers
+	of this will probably know, I've been lucky enough to have worked with
+	some really fine guitarists
+	over the years, so I'm not being idle when I say that Steve is one of the most intuitive
+	and sensitive players I have worked with. He is not flash or
+	fancy, but he always seems to know exactly what will work in
+	a situation.
+	<p>Wilson was quiet over the Summer while I travelled with the JBC,
+	but we picked up again in September. We played another
+	<a href="${jbc_gigs}/2001/Oct19.html">show in Leeds</a>,
+	picking up a nice bit of press in the northern edition
+	of The Big Issue. We did a
+	<a href="${jbc_gigs}/2001/Oct7.html">series of shows</a> at
+	<a href="${jbc_gigs}/2001/Dec2.html">The Racehorse</a> in
+	Northampton, drawing larger audiences each time we played out.
+	Given that almost everyone in the band has another band, it took
+	quite a while for people to realise exactly what was going on.
+	By the time that we played our
+	<a href="${jbc_gigs}/2001/Dec24.html">Christmas Eve show</a> it seemed that
+	we had established ourselves an identity locally. 
+	<p>The autumn also saw Ian, Curtis and me getting seriously into
+	the business of writing and assembling our music in our own studio.
+	Over a few months we developed a massive library of sounds and
+	samples and worked it into some half a dozen new tunes. In January
+	Ian moved his computer equipment into the studio, which now operates
+	like a small factory, with three men working six hours a day
+	most every day. I can honestly say that I have not worked in
+	a more exciting and creative environment.
+	<p><a href="${jbc_gigs}/2002/Jan31.html">In January</a> Wilson played
+	with ${gab}'s band, Tobermory, in Cambridge.
+	<p>Up until this night I was very happy with the band's music, but I was concerned
+	that maybe we were a bit disorganised
+	and unimpressive vocally. This was the night that the singing
+	and shouting caught up with the playing. Curtis, Ian and I travelled
+	the 50-odd miles to the gig in a car together, screaming our
+	heads off and singing like lunatics the whole way. There is no
+	doubt in my mind that this had something to do with our performance
+	that evening. Wilson entered 2002... more confident and intimidating than ever before.
+	<p>Wilson's next shows will be at The Racehorse, Northampton on Good Friday
+	<a href="${jbc_gigs}/2002/Mar29.html">29th March</a>
+	and The Packhorse, Leeds on Saturday
+	<a href="${jbc_gigs}/2002/Mar30.html">30th March</a>. Support on both 
+	dates is the excellent Saab 77.
+
+	<p>
+	<b>WILSON LINE-UP</b>
+	<ul>
+	<li>Wilson Headstone (that's me) - Guitars, Voice, Programming
+	<li>Misery Wilson (${kathy}) - Bass
+	<li>Agent ${russ} - Percussion
+	<li>G- Man (${steve_gordon}) - Guitar
+	<li>E-Man (${curt}) - Air-FX, Voice, Programming
+	<li>B-Man (${botty}) - MC, Programming
+	</ul>
+
+	<p>
+	<b>WILSON TUNES	</b>
+	<ul>
+	<li>Critters</li>
+	<li>God's Green Earth</li>
+	<li>Secret Government</li>
+	<li>Sweet Home Alabama (words by Warren Zevon)</li>
+	<li>Burn, Hollywood, Burn</li>
+	<li>Dark Agenda</li>
+	<li>Hippy Shit</li>
+	<li>Alligator</li>
+	<li>Somali Buttkick</li>
+	<li>Istanbul Connection</li>
+	<li>Quality People</li>
+	<li>Trouble Every Day (by Frank Zappa).</li>
+	</ul>
+
+	<p>
+	<b>WILSON THINGS</b>
+	<ul>
+	<li>Cypress Hill</li>
+	<li>Triumph 2000</li>
+	<li>Can</li>
+	<li>New Order</li>
+	<li>Lee Perry</li>
+	<li>The Clash</li>
+	<li>Computers</li>
+	<li>Lavazza</li>
+	<li>Marijuana</li>
+	<li>Dread</li>
+	<li>Fear</li>
+	<li>Piss</li>
+	<li>Blood</li>
+	<li>40,000 enraged Korean shopkeepers from South Central marching on the Mondrian Hotel</li>
+	</ul>
+
+	${jbc_footer}
+
+#define	warfare.html
+	${mkHeader(section=Wilson, title=Warfare)}
+
+	<center>
+
+   <a href="${jbc_root}/wilson"><img
+   	border=0 width=252 height=72 src="${images}/wilson/warfare/image002.jpg"></a>
+	<p>
+#	+44 (0)1604 620294
+#	<p>
+#	headstone@sumo77.freeserve.co.uk
+	<p>
+	<img width=44 height=44 src="${images}/wilson/warfare/image003.gif">
+	<h2>RETURN TO THE ARK</h2>
+
+	<b> BEHOLD, LITTLE WARFARE PUNTERS.
+	THEY COME IN BLACK TO MESS WITH YOUR HEADS.</b>
+	<p>
+	It's like being
+	screamed at by your parents if they were, like, on PCP
+	or something.
+	<p>
+
+	&gt;&gt;Heresy, Mystery, Controversy, Philosophy &amp; Extreme Tourism&lt;&lt;
+	<p>
+
+	<b><u>DARK, GROOVY AND INCONTROVERTIBLY SOCIOPATHIC.</u></b>
+	<br>
+
+	<b>WE PRESENT THE 21<sup>ST</sup> CENTURY DUB SOUNDS OF WILSON</b>
+	<p>
+
+	People have compared them to Primal Scream and "Happy Mondays when they were good."
+	<p>
+	<p>
+	INSPIRATION COMES FROM LEE PERRY, THE CLASH, ULTRAMAGNETIC MCs AND SPACEMEN 3.
+	THE PLAYERS COME FROM AROUND THE GLOBE, BUT THEY ALL MAKE THEIR HOMES IN
+	NORTHAMPTON NN1.
+
+	 <table cellpadding=0 cellspacing=0>
+	  <tr>
+	   <td align=left valign=top><a href="${images}/wilson/warfare/misery.jpg"><img
+	   	width=108 height=155 border=0 src="${images}/wilson/warfare/thumb_misery.jpg"></a></td>
+	   <td align=left valign=top><a href="${images}/wilson/warfare/eman.jpg"><img
+	   	width=120 height=143 border=0 src="${images}/wilson/warfare/thumb_eman.jpg"></a></td>
+	   <td align=left valign=top><a href="${images}/wilson/warfare/bottie.jpg"><img
+	   	width=142 height=143 border=0 src="${images}/wilson/warfare/thumb_bottie.jpg"></a></td>
+	   <td align=left valign=top><a href="${images}/wilson/warfare/russ.jpg"><img
+		width=120 height=143 border=0 src="${images}/wilson/warfare/thumb_russ.jpg"></a></td>
+	   <td align=left valign=top><a href="${images}/wilson/warfare/stevieg.jpg"><img
+		width=107 height=143 border=0 src="${images}/wilson/warfare/thumb_stevieg.jpg"></a></td>
+	   <td align=left valign=top><a href="${images}/wilson/warfare/headstone.jpg"><img
+	   	width=103 height=155 border=0 src="${images}/wilson/warfare/thumb_headstone.jpg"></a></td>
+	  </tr>
+	 </table>
+	<p>
+
+	Experienced professional musicians, the lot of them, with <br>
+	more records under their belts than most people own.
+	<p>
+
+	<b>WILSON COOK THEIR OWN BACKING TRACKS IN THEIR OWN STUDIO.</b>
+	<p>
+
+	theirs is a dark agenda
+	<p>
+
+	<b>
+	<b>Misery Wilson plays the bass. She's barely moving.<br>
+	E-Man operates a mass of arcane electronics while shouting his head off.<br>
+	The Bot! is producer, vocalist and MC. <br>
+	Russ Cooper plays a battery of Eastern and Latin percussion.<br>
+	Stevie G plays his guitar.  Headstone will break yours.
+	</b>
+	<p>
+	 <table cellpadding=0 cellspacing=0>
+	  <tr>
+	   <td align=left valign=top><img width=125 height=128
+		src="${images}/wilson/warfare/image019.jpg"></td>
+	   <td align=left valign=top><img width=134 height=127
+		src="${images}/wilson/warfare/image018.jpg"></td>
+	   <td align=left valign=top><img width=125 height=128
+		src="${images}/wilson/warfare/image019.jpg"></td>
+	  </tr>
+	 </table>
+
+	<p>
+
+	&gt;&gt;now is time of the
+	mother and the father of a great big battle in the time of the end time&lt;&lt;
+	<p>
+
+	Wilson sing of the Secret Wars of the Secret Government, the Ottoman Empire
+	and the Taliban Jeep. Wilson help themselves to other people's lyrics as
+	freely as they plunder other people's drum beats. Wilson work six hours
+	a day every day to bring you the music. Always read the small print. Your
+	home is at risk.
+
+	</center>
+
+	${jbc_footer}

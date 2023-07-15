@@ -1,0 +1,175 @@
+#define	Image_1		Nbrody
+#define	Caption_1	Mad Brody Culpepper
+#define	Description_1
+	Most probably taken in the Neveda desert during
+	the burningman festival.
+
+#define	Image_2		Onariver
+#define	Caption_2	Mad Terence Walpole
+#define	Description_2
+	Discoverer of &quot;Moscow Drug Club&quot;
+	and Black Eg recording artist.
+
+#define	Email_3		syd@lamneth.com
+#define	Image_3		kazoo
+#define	Caption_3	Steven J Hall
+#define	Description_3
+	Unfortunately, I don't have any JBCwear (but I want some - give me a
+	source!), but here I am playing the kazoo to the D.R.I.N.K. trombone
+	solo, while driving from New Orleans to Atlanta for the <a href="${jbc_gigs}/1998/May1.html">5/1/98 Pat&Max show.</a>
+	I was annoying the hell out of the passenger/photographer.
+
+#define	Email_4		ed@dowcarter.com
+#define	Image_4		fullhorror
+#define	Caption_4	Dr Edward Carter
+#define	Description_4
+	enclosed, one scan of me wearing a jazz-butcher (actually chris' 
+	jbc-list) t-shirt on "Fifteen to One", a nationally-broadcast daytime 
+	quiz show.
+	This is the "souvenir" print they kindly send after your humiliation.
+	Even if this borders on the tragic rather than the mad, I would like
+	to point out that I qualify by virtue of being surrounded by the insane,
+	the old and the unemployable (who, together, constitute the entire 
+	audience and competitor pool).
+
+#define	Email_5		uncletoe@mindspring.com
+#define	Image_5		lito
+#define	Caption_5	Lito Vales
+#define	Description_5
+	Here's a pic i found of me sporting the good ol' "condition blue"
+	t-shirt in my old painting studio.
+
+#define	Email_6		mercy@mail1.halcyon.com
+#define	Image_6		roger_t
+#define	Caption_6	Roger Pace
+#define	Description_6
+	Still doesn't understand why British cats don't like good 
+	'ol american catnip, but believes if more muscicians were named fish 
+	the world would be a better place for cats.
+
+#define	Email_7		mercy@mail1.halcyon.com
+#define	Image_7		Fern_T
+#define	Caption_7	Fern Frangooles
+#define	Description_7
+	A young puppy still finding her music, and due to 
+	indoctrination attempts by her people is considering the merits of JBC 
+	records as chew toys.
+
+#define	Email_8		KENbmiller@aol.com
+#define	Image_8		ken_m
+#define	Caption_8	Ken Miller
+#define	Description_8
+	After being off from work for 9 days straight and not shaving,
+	generally being nutty with a cardboard box. There are some other ones
+	involving a goat grazing on some trash, but you can't really see
+	the JB shirt in those, so I didn't send them.
+
+#define	Email_9		monkeeman@msn.com
+#define	Image_9		MadRob
+#define	Caption_9	Robert Ferin
+#define	Description_9
+	This picture depicts the very start of my maddening as I attempt
+	to play my JBC vinyl in my CD player in my home-made JBC shirt.
+	You don't want to know what happened next, it is much too disturbing.
+	Please make a special note of my madness in that I am wearing vintage
+	1970 "high fidelity" headphones.  I want my JBC!
+
+#define	Email_10		tdestes@ix.netcom.com
+#define	Image_10		467photo
+#define	Caption_10	David Estes
+#define	Description_10
+	My JBC leisure-wear once included a Condition Blue and a Big Planet Scary 
+	Planet shirt but my equally 
+	mad wife had a bad habit of maintaining her "natural" red hair while wearing 
+	the above mentioned shirts.  
+	This led to some anger on my part and the demise of the leisure wear.  The 
+	photo attached was in the 
+	press recently. If they only knew who the driver was the article would have 
+	said: &quot;DO NOT ride this train, 
+	DRIVER IS MAD!&quot;
+
+#define	Email_11		LoveDesign@excite.com
+#define	Image_11		madJoe2
+#define	Caption_11	Joseph Tampieri
+#define	Description_11
+	This is a picture of my son Joseph, he is 11 months old and a great Jazz
+	Butcher Fan. As you can see he is not wearing a JBC shirt because  they
+	don't make them in his size, but we can honestly say we are enticing him out
+	of his favourite hiding place (the laundry basket) with a copy of our
+	"Waiting for the love bus" CD in one hand and the cry of "Pat Fish is coming
+	to get you!" It always works. 
+
+#define	index.html
+	${mkHeader(section=MAD)}
+
+	${tag_beg}
+	Contest Invocation
+	${tag_end}
+	<div class="annotation">
+	Sitting around the house with Curtis and Terry 
+	Walpole a week or so ago - we came up with a plot.
+	<p>
+	It occurred to us that we could liven up the site and have 
+	ourselves a deep larrrf if we were to entice those who use the
+	site to join in a little competition entitled
+	<p>
+	<b>&quot;HOW MAD ARE YOU?&quot;</b>
+	<p>
+	Folks send in photos of themselves, their loved ones, their family
+	pets, whatever...being MAD in jbc leisurewear. The maddest ones
+	win prizes, which we have prepared over here (home-made CDs of
+	Jazz Butcher-type slush produced in the living room on a commission
+	basis, basically).
+	<p>
+	It may be, of course, that Mad Brody Culpepper 
+	and Mad Terence Walpole have already got this thing sown up.
+	<p>
+	Love, Pat,
+	${g_datediff(d=1998-11-20 15:58:55)}
+	</div>
+
+	${tag_beg}
+	The deranged
+	${tag_end}
+	<div style="text-align: center;">
+#live	while (row = Image_*)
+	<a href="${jbc_mad_images}/${Image_${row}}.jpg"><img
+		src="${jbc_mad_images}/${Image_${row}}_500.jpg"
+		alt="${Caption_${row}}"></a>
+	<br/>
+	<b>${Caption_${row}}</b>
+	<br/>
+	${Description_${row}}
+	<br/>
+	<br/>
+#live	endwhile
+	</div>
+
+	${tag_beg}
+	Contest Results
+	${tag_end}
+	<div class="annotation">
+		Here, as promised, are the results of the Icelandic Jury.
+	<p>
+		Winners: Mad Brody Culpepper (it wuz always gonna happen...)
+		<br>
+		Mad Doctor Ed (I often watch that show myself, Ed...)
+		<br>
+		Mad Roger "The Cat" Pace (even if he cheated, any cat that work
+		Adobe Photoshop all by himself deserves a prize!)
+		<p>Each of the above should send in a mailing address. They will then receive
+		a CD of soppy shite from the archives of NN1.
+		<p>Honorable mentions to
+		: Nearly-Mad Ken Miller (we love the old carboard-box-on-the-head
+		routine round these parts) and Dave Estes, mad enough to travel from
+		Olympia to Hamburg to see a bunch of old boys getting drunk and
+		giggling. These gentlemen receive nothing until we get into the same
+		room as them. We shall then buy them a beer and mock them ruthlessly
+		(for that is the kind of guys we are).   Thanks to one and all who
+		entered the competition and livened up our long winter evenings
+		through the Magic Of The Internet.
+		<p>Later. Love, Pat    xxx
+		<br>
+		${g_datediff(d=1999-03-03 19:16:16)}
+	</div>
+	${jbc_footer}

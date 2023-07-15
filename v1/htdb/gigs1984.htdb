@@ -1,0 +1,302 @@
+#define	Jan8.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max},Ady Tilley,Tim )},
+	with=David J.
+	)}
+
+#define	Jan27.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, The Antichrist (Ramon Destine) )},
+
+	)}
+
+#define	Feb3.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${ll} )},
+
+	)}
+
+#define	Feb27.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+
+	)}
+
+#define	Mar3.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${sm} )},
+
+	)}
+
+#define	Mar10.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${sm} )},
+
+	)}
+
+#define	Mar15.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${sm} )},
+	with=King,
+
+	)}
+
+#define	Mar31.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${sm} )},
+
+	)}
+
+#define	Apr21.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Apr24.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+
+	)}
+
+#define	Apr29.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	May6.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	May12.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${solo} )},
+	with=David J.
+
+	)}
+
+#define	May22.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+
+	)}
+
+#define	May25.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	May26.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	photosets= https://s3.amazonaws.com/assets.jazzbutcher.com/images/19840526/19840526_pat_davidj.jpg$$
+		Philip Snow;;;;2022-05-17
+
+	)}
+
+#define	Jun2.html()
+	${gigHeader(
+
+	cost=&pound;2,
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	with=${literalizeCommas( Another Time)},
+
+	)}
+
+#define	Jun11.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Jun27.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	with=The Fall,
+
+	)}
+
+#define	Jun29.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+
+	)}
+
+#define	Jun29_2000.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max} )},
+
+	)}
+
+#define	Jul20.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+		reviews=${literalizeCommas(
+			It is at the very end of my stay in London, July 20, 1984, I finally saw The Jazz Butcher at the Living Room, with Spit Like Paint and Vee VV in the first part.  I do not think they played that night the resumption of Chinese envoy , one of the best songs from one of my favorite albums of John Cale, Music for a new society. Bizarrement, cette chanson n'a jamais été reprise sur aucune compilation de Pat Fish (alias The Jazz Butcher). Oddly, this song has never been taken on any compilation of Pat Fish (aka The Jazz Butcher).
+		)}$$
+			Vivonzeureux!;;http://vivonzeureux.blogspot.com/2009/09/what-nice-way-to-turn-seventeen-2.html
+		,
+		photosets= /images/19840720/19840720_vivonzeureux_band1.jpg$$
+			/images/19840720/19840720_vivonzeureux_band2.jpg$$
+			Vivonzeureux!;;http://vivonzeureux.blogspot.com/2009/09/what-nice-way-to-turn-seventeen-2.html
+	)}
+
+#define	Aug4.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Sep1_1800.html()
+	${gigHeader(
+
+	cost=&pound;1:50,
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	with=${literalizeCommas(
+		Daniel Ash, Terry Walpole, Csawza Cinema, Harry Isles, Graham Trott, Alex Novak, MJ Harvey, David Haslam, Ian Blackmore, David J., Mitch Jenkins, Kevin Haskins, Tim Perkins
+	)}
+	)}
+
+#define	Oct29.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	with=The Fall,
+	)}
+
+#define	Nov9.html()
+	${gigHeader(
+
+	cost=&pound;2.50,
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	with=Micro Disney,
+	)}
+
+#define	Nov16.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Nov17.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Nov29.html()
+	${gigHeader(
+
+	cost=&pound;2.50,
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	with=And The Doctores Children
+
+	)}
+
+#define	Dec1.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Dec7.html()
+	${gigHeader(
+
+	recording=${literalizeCommas(
+		${d}, ${q(6)}, ${p(C)}
+	)},
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	pat=${literalizeCommas(First European Concert)},
+
+	)}
+
+#define	Dec8.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	pat=${literalizeCommas(First time playing Onkel Pö
+		<p>
+		Interesting Max solo and amusement during "Partytime". ${pat} plays sax on "Count Dracula".
+	)},
+	recording=${literalizeCommas(
+		${w}, ${q(7)}, ${p(B)}
+	)},
+		photosets= /images/19841208/19841208_indge_trio.jpg;;${literalizeCommas(Pat, me and Max at the wonderful Onkel Pö club in Hamburg - which is where, as it it happens, I met the love of my life Bärbel, 37 years ago today.. Not 100 percent certain, but I think the photo was taken by ${indge})}$$
+			${owen};;;;2021-12-08
+	)}
+
+#define	Dec9.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Dec10.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+
+	)}
+
+#define	Dec22.html()
+	${gigHeader(
+
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+		photosets= /images/19841222/19841222_jazzbutcher_rockgarden_1.jpg$$
+			/images/19841222/19841222_jazzbutcher_rockgarden_2.jpg$$
+	)}
+
+#define	Dec30.html()
+	${gigHeader(
+
+	recording=${literalizeCommas(
+		${w}, ${q(1)}, ${p(B)}
+	)},
+	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	pat=${literalizeCommas(
+		Commentary by Rolo.
+		<p>
+		Total overload of mic coz Rolo is down the front!
+	)},
+		photosets= /images/19841230/19841230_pat.jpg$$
+
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

@@ -1,0 +1,22 @@
+#define	index.html
+	${mkHeader(section=Letters, title=14Feb90)}
+
+	The <a href="${jbc_albums}/cult.html">new l.p.</a>
+	is every bit as strange and twisted as I thought it might
+	be.  We may yet have to make a couple of minor adjustments,
+	I think, but it's just about ready.  God only knows what
+	the record company are going to make of it.  When I told
+	Dick that we were making a deeply twisted cover version
+	of the ${star} Third that would sell about eight copies
+	worldwide he sounded dead sarcastic and said "Thanks."
+	Ha!  That's what record companies are for, right?  Make
+	'em sweat...  I guess we're aiming to get it out May
+	or June, so that we can come back and harrass you people
+	a bit more in the summer.
+	<center>
+	<br><img width=397 height=219 alt="[signature]"
+	src="${jbc_images}/19900214/90Feb14_sig.gif">
+	</center>
+
+	${jbc_footer}
+

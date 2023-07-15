@@ -1,0 +1,418 @@
+#define	Mar30_1930.html()
+	${gigHeader(
+		phone=01273687171,
+		eventweb=http://www.atestmusicbar.co.uk/,
+		cost=&pound;9.35,
+		with=${literalizeCommas(Asbo Derek, Helen McCookerybook)},
+		ticketweb=https://www.wegottickets.com/event/447944,
+		notes=${literalizeCommas(
+		Pat Fish
+		<p>
+		Fish started making records under the name of the Jazz Butcher in 1983 and nobody has quite succeeded in putting a stop to this yet. He has recorded for Glass Records, Creation Records, ROIR of New York and Vinyl Japan of Tokyo. Overall he has written and released fifteen albums of original music, three live albums and innumerable singles and compilations.
+		<p>
+		The thing about Pat Fish is that he is not tribal about music. Some people know him from his friendship with Spacemen 3, others for his fondness for Nikki Sudden and Dave Kusworth; some know him because he has worked with members of Bauhaus, others regard him as a “classic” independent songwriter in the vein of Pete Astor or Dan Treacy. Fishy just fetches his acoustic guitar and his notebook and heads for the railway station.
+		<p>
+		His current inspirations: as always, the Velvet Underground, Alex Chilton, Peter Laughner, Bob Dylan, Patti Smith, Kevin Ayers, John Martyn, Davy Graham and many, many more.
+		<p>
+		Asbo Derek
+		<p>
+		Asbo Derek's sound is classic garage punk rock and they have a lot of (important) message songs but all have great choruses to join in with and many come with a running gag and punchline. There are songs about demanding outmoded hairstyles, going to see shit bands when you’re stoned (the bouncy ‘On The Night That James Were Excellent’) and odious middle-class couples slumming it on a bendy bus around town.
+		<p>
+		Helen McCookerybook
+		<p>
+		Helen McCookerybook was a John Peel favourite through the '80s and '90s, singing and playing bass in Brighton outsider indiepop/punk bands Jody and the Hooligans, The Smartees and The Chefs before forming her own sumptuous, country-inflected Helen and the Horns. She has more recently helped write women back into the official history of punk with her book 'The Lost Women Of Rock: Female Musicians Of The Punk Era', which has interviews with The Mo-dettes, The Slits and Dolly Mixture amongst others. Helen's songs are beacons of outside of everything lyricism, and her set shall consist of songs from her new LP 'The Sea' and classics of yore.
+		)},
+		who=${literalizeCommas(
+		${pat}
+		)},
+	)}
+
+#define	Feb21_2100.html()
+	${gigHeader(
+		eventweb=https://facebook.com/colinhennymusic,
+		notes=${literalizeCommas(
+			Facebook Live broadcast
+		)},
+		who=${literalizeCommas(
+			${pat}, Colin Henney
+		)},
+	)}
+
+#define	Apr6_2230.html()
+	${gigHeader(
+		phone=34 963 49 45 84,
+		eventweb=https://www.16toneladas.com,
+		ticketweb=https://movingtickets.com/detalle/Entradas-The-Jazz-Butcher-UVPOP-en-concierto-en-Valencia/,
+		notes=${literalizeCommas(
+		La banda británica the Jazz Butcher aterriza en Valencia en formato dúo electroacústico donde repasará sus más de 35 años de carrera artística con grandes obras maestras como “A Scandal in Bohemia” “Fishcotheque” o” In Bath of Bacon” aparte de alguna versión de grupos que le influenciaron como Syd Barret o Velvet Underground. Vienen acompañados de UV PØP los creadores de canciones míticas en las salas valencianas como “Serious” o “No songs tomorrow”, el broche a la noche lo pondrá el Dj Juan Vitoria en lo que lo convierte en una cita ineludible..
+		<p>
+		The Jazz Butcher és una banda oblidada de la història del rock. Formada a finals dels anys 80 a Oxford, és completament desconeguda per a la gran majoria, però per a uns altres pocs és una banda de culte. Ha tingut diferents noms i ha canviat constantment de membres, però l’excèntric Pat Fish, compositor artesà de cançons pop atípiques, molt personals i originals, sempre ha estat al capdavant. Han tocat gran diversitat d’estils, sempre amb lletres iròniques, irreverents i cíniques, plenes del característic humor anglès obscur. Estranya banda amb més de quaranta anys d’experiència a la que tindrem oportunitat de recordar o descobrir al 16 Toneladas. XIMO MARQUÉS 
+		)},
+		who=${literalizeCommas(
+			${pat}, Dhiren Basu (lead guitar)
+		)},
+		with=${literalizeCommas(
+			UV P0P
+		)},
+		photosets=
+			/images/20190406/20190406_basu_1.jpg$$
+			/images/20190406/20190406_basu_2.jpg$$
+			Dhiren Basu,
+	)}
+
+#define	Apr13.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+		<p>
+		This is a video from one of the best nights of my life...the night I met my idol, Pat. It is likely my most prized
+		possession and it cost me nothing. They say meeting your idols can be dangerous as they may not live up to your idea of
+		them. More on that later...and sorry (not sorry) for the long post.
+		</p><p>
+		The Jazz Butcher has been the soundtrack of my life, from 1986 to present. Just like Thomas Peterson, Bloody Nonsense was
+		my first album, though the Canadian version differed a bit from the U.S. I never stopped listening to Pat. I loved and
+		love his music dearly. Like many of you have said, it got me through good times and bad and - I cry as I write this - I
+		owe him a lot.
+		</p><p>
+		I'm glad I got to convey my gratitude to him over the years (many have used the word fandom in their posts) - Facebook
+		Messenger is great that way for being able to reach out to people, even people you don't really know. And, as my wife
+		Kathleen and I planned a UK trip for April 2019 (remember travel?), I reached out to Pat and said we'd be coming up to
+		Northampton and I'd love to buy him a beer or five to show my appreciation for how much his music has meant to me.
+		</p><p>
+		Much to my elation, Pat was game. We arrived in Northampton - couldn't get there any quicker, really, as we landed in
+		London and pretty much took a train there immediately. And, after an initial scare where I didn't quite have his right
+		phone number, Pat and I connected on Messenger again and agreed to meet at The Lamplighter for 7 pm. As our cab
+		approached, I saw this tall, harrowing figure walking into the pub and I knew it was him. This was happening - so many
+		feelings were swirling about inside me.
+		</p><p>
+		We introduced ourselves, grabbed pints and sat. And then - acutely starstruck - I pretty much forgot how to speak for
+		about 45 minutes. Luckily this rarely happens to my wife, so she held the fort during that time. I eventually came out of
+		my shell and...it was just wonderful. 
+		</p><p>
+		(BTW friends had asked me, before our trip, "what will you ask him?", and I purposely had no questions prepared. I didn't
+		want this to be an interview and I didn't want it to be all about me. I just wanted to hang out with Pat and get to know
+		him a little bit.)
+		</p><p>
+		He was so gracious and generous. Beer and conversation flowed freely. He was kind and interested in us. We were then
+		joined by his good friend Rachel McGrath, who got me to express my fandom by asking me, at some point, what my top 5 JBC
+		songs were. I rhymed them off easily, with the top one being, since forever, Big Saturday (as I'm crying again).
+		</p><p>
+		Imagine how over the moon I was when Pat invited us back to Fishy Mansions for a nightcap. How I held my cool, I've no
+		idea - maybe the drink, or maybe by that time it was clear how genuine Pat was. And, around 1 am, Pat grabbed a guitar,
+		and then my wife - I will forever be indebted to her - asked Pat to "play Jean's favourite song, Big Saturday". He
+		obliged, and as I sob now, that's also me sobbing in the video at the beginning. I just lost it. I literally pinched
+		myself, couldn't believe this was actually happening.
+		</p><p>
+		What a perfect evening getting to know a lovely human being, if only a bit. Meeting my idol exceeded my expectations and
+		by far.
+		</p><p>
+		It is also incredible to have read your posts and know that this kind of interaction with Pat was commonplace. He made so
+		many people so happy by being so generous.
+		</p><p>
+		Finally, as all of you, I am heartbroken today. My heart goes out especially to those who knew him much more so than I
+		did, his friends and loved ones. I am so sorry for your loss. It seems Pat was every bit as good to his loved ones that
+		he was to simple fans like me.
+		</p><p>
+		I treasure the memory of having met Pat and am so grateful to him, and for the fact that we still have his music. JBC
+		forever, folks. Much love to all, Jean xoxo
+		</p>
+		${g_credit(g=Jean Lazure, d=2022-10-06)}
+		)},
+		who=${literalizeCommas(
+		${pat}
+		)},
+	)}
+
+#define	Jun22.html()
+	${gigHeader(
+		cost=&pound;10,
+		who=${literalizeCommas(
+			Jon Mattock (drums), Tim Harries (bass), Mark Refoy (guitar), Joe Woolley (guitar), Andrea Parra (tambourine), ${pat} (singing, guitar), Will Carruthers (finger-pointing)
+		)},
+		photosets=
+			/images/20190622/20190622_johnnyp_pat_kusworth.jpg;;Dave Kusworth\, ${pat}$$
+			Johnny P;;https://twitter.com/johnnyp_p
+	)}
+
+#define	Jul13_2000.html()
+	${gigHeader(
+		cost=free,
+		phone=+44 1604 631752,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+			DJ Alex Novak
+		)}
+	)}
+
+#define	Aug3_2100.html()
+	${gigHeader(
+		cost=&pound;5,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+			Micky Greaney
+		)},
+		photosets=
+			/images/20190803/20190803_brooksbank_pat1.jpg$$
+			/images/20190803/20190803_brooksbank_pat2.jpg$$
+			/images/20190803/20190803_brooksbank_pat3.jpg$$
+			Andrew Brooksbank,
+		setlists=
+			/images/20190803/20190803_setlist.jpg$$
+			Andrew Brooksbank
+	)}
+
+#define	Aug4.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+			Micky Greaney
+		)},
+	)}
+
+#define	Aug17.html()
+	${gigHeader(
+		blurb=King Genius Festival,
+		eventweb=https://pomfretarms.co.uk,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+			Micky Greaney
+		)},
+		photosets=
+			/images/20190817/20190817_cousins.jpg$$
+			Graham Cousins,
+	)}
+
+#define	Sep28_1900.html()
+	${gigHeader(
+		cost=15 Euro,
+		ticketweb=https://www.billetweb.fr/pat-fish-tim-keegan,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+			Tim Keegan
+		)},
+		pat=${literalizeCommas(
+			Well, that went rather well, I think. Tim was brilliant, of course. He and I were royally entertained
+			by Jean-michel Dufour, fed, watered and chauffered around by Betty Dufour, while Philippe Dufour
+			documented everything in suitably European monochrome. As far as I can see, they made this whole thing
+			come to pass, so my gratitude goes out to them by the van-load. By "showtime" I was unfeasibly high,
+			which is how I like to be when I'm playing guitar. Don't know how the French People felt about it but I
+			enjoyed myself no end. Actually, some of the French People - and they were there in pleasing numbers -
+			seemed to like it a lot. Which was nice. Played half a dozen numbers together with Tim at the end,
+			including the Great Ill-Advised Cover. Saw some good old friends and made some good new ones. An away
+			win, I fancy.
+		)},
+		photosets=
+			/images/20190928/20190928_blackbird_paris1.jpg$$
+			Mathieu David Blackbird
+			---
+			/images/20190928/20190928_cathimini_paris13.jpg;;Tim\, Cathimini\, Pat\, Mathieu David Blackbird$$
+			/images/20190928/20190928_cathimini_paris6.jpg$$
+			/images/20190928/20190928_cathimini_paris7.jpg$$
+			/images/20190928/20190928_cathimini_paris8.jpg$$
+			/images/20190928/20190928_cathimini_paris9.jpg$$
+			Cathimini (Abus Dangereux)
+			---
+			/images/20190928/20190928_pierre_P1480744.jpg$$
+			/images/20190928/20190928_pierre_P1480743.jpg$$
+			/images/20190928/20190928_pierre_P1480742.jpg$$
+			/images/20190928/20190928_pierre_P1480741.jpg$$
+			/images/20190928/20190928_pierre_P1480740.jpg$$
+			/images/20190928/20190928_pierre_P1480739.jpg$$
+			/images/20190928/20190928_pierre_P1480738.jpg$$
+			/images/20190928/20190928_pierre_P1480737.jpg$$
+			/images/20190928/20190928_pierre_P1480736.jpg$$
+			/images/20190928/20190928_pierre_P1480735.jpg$$
+			/images/20190928/20190928_pierre_P1480734.jpg$$
+			/images/20190928/20190928_pierre_P1480733.jpg$$
+			/images/20190928/20190928_pierre_P1480732.jpg$$
+			/images/20190928/20190928_pierre_P1480731.jpg$$
+			/images/20190928/20190928_pierre_P1480730.jpg$$
+			/images/20190928/20190928_pierre_P1480729.jpg$$
+			/images/20190928/20190928_pierre_P1480728.jpg$$
+			/images/20190928/20190928_pierre_P1480727.jpg$$
+			/images/20190928/20190928_pierre_P1480726.jpg$$
+			Pierre Guillaume
+			---
+			/images/20190928/20190928_dufour_garedunord1.jpg$$
+			/images/20190928/20190928_dufour_garedunord2.jpg$$
+			/images/20190928/20190928_dufour_paris2.jpg$$
+			/images/20190928/20190928_dufour_paris3.jpg$$
+			/images/20190928/20190928_dufour_paris4.jpg$$
+			/images/20190928/20190928_dufour_paris.jpg$$
+			Philippe Dufour
+			---
+			/images/20190928/20190928_lucien_paris12.jpg$$
+			/images/20190928/20190928_lucien_paris5.jpg$$
+			/images/20190928/20190928_lucien_paris.jpg$$
+			Lucien Borderline
+			---
+			/images/20190928/20190928_tremolo_paris11.jpg$$
+			/images/20190928/20190928_tremolo_paris_1.jpg$$
+			Tremolo Lelaboratoire
+			---
+			/images/20190928/20190928_arquilliere_1.jpg$$
+			/images/20190928/20190928_arquilliere_2.jpg$$
+			/images/20190928/20190928_arquilliere_3.jpg$$
+			/images/20190928/20190928_arquilliere_4.jpg$$
+			/images/20190928/20190928_arquilliere_5.jpg$$
+			Vincent Arquilliere
+			---
+			/images/20190928/20190928_magicrpm_pat.jpg;;"Yes I’m pretty high"$$
+			magicrpm;;https://twitter.com/magicrpm/status/1178050161983021067
+	)}
+
+#define	Oct11_1930.html()
+	${gigHeader(
+		cost=&pound;9,
+		ticketweb=https://www.wegottickets.com/event/478651,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		pat=${literalizeCommas(
+			This gig reminded me very much of my very first proper solo shows, ${linkInternal(http://jazzbutcher.com/gigs/1989/Apr6.html, thirty years ago at Le Troupeau in
+			Paris)}, not least because of the always reassuring presence of Simon Phillips, who took these
+			photographs. A tiny subterranean vault, stuffed with people of all nations, pressed up inches from the
+			little stage; it was quite intimidating. The place was so full that a few pals who came down never even
+			managed to penetrate the room where I was playing. Things veered alarmingly off-set at one point and I
+			found myself singing about talking elephants and doing the Bo-Diddley in the middle of a set that was
+			supposed to be calm and restrained. These things do, of course, happen. Saw lots of lovely friends,
+			drank beer, got paid and had a delightful sandwich.. I think we'll call that another three points. 
+		)},
+		with=${literalizeCommas(
+			Matthew Edwards, Dave Sutherland
+		)},
+		photosets=
+			/images/20191011/20191011_simon_1.jpg$$
+			/images/20191011/20191011_simon_2.jpg$$
+			Simon Phillips
+	)}
+
+#define	Oct24_1930.html()
+	${gigHeader(
+		cost=&pound;18.50,
+		phone=0161 275 2930,
+		venueweb=http://www.manchesteracademy.net,
+		ticketweb=https://www.ticketline.co.uk/david-j#bio,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+			${dj}
+		)},
+		photosets=
+			/images/20191024/20191024_brooksbank_pat.jpg$$
+			/images/20191024/20191024_brooksbank_pat2.jpg$$
+			Andrew Brooksbank
+			---
+			/images/20191024/20191024_loynes_1.jpg$$
+			/images/20191024/20191024_loynes_1.jpg$$
+			Andy Loynes
+			---
+			/images/20191024/20191024_rice_1.jpg$$
+			/images/20191024/20191024_rice_2.jpg$$
+			Lynda Rice
+			---
+			/images/20191024/20191024_corbridge_1.jpg$$
+			/images/20191024/20191024_corbridge_2.jpg$$
+			/images/20191024/20191024_corbridge_3.jpg$$
+			/images/20191024/20191024_corbridge_4.jpg$$
+			/images/20191024/20191024_corbridge_5.jpg$$
+			Ian Corbridge
+	)}
+
+#define	Oct26_1830.html()
+	${gigHeader(
+		cost=&pound;22,
+		venueweb=http://www.manchesteracademy.net,
+		ticketweb=https://dice.fm/event/kwy89-david-j-haskins-missives-and-miles-tour-2019-26th-oct-moth-club-london-tickets,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+			${dj}
+		)},
+		photosets=
+			/images/20191026/20191026_pat.jpg$$
+		---
+			/images/20191026/20191026_phillips_MClubSimon1.jpg$$
+			/images/20191026/20191026_phillips_MClubSimon2.jpg$$
+			/images/20191026/20191026_phillips_MClubSimon3.jpg$$
+			Simon Phillips
+		---
+			/images/20191026/20191026_forrest_MClubVDForrestFishy.jpg$$
+			/images/20191026/20191026_forrest_VDForrestDaveband.jpg$$
+			/images/20191026/20191026_forrest_VDForrest.jpg$$
+			Vincent Damian Forrest
+		---
+			/images/20191026/20191026_barker_MClubDBChurchill.jpg$$
+			/images/20191026/20191026_barker_MClubDBEiderFish.jpg;;${literalizeCommas(${max},${barker},${pat})}$$
+			${barker}
+	)}
+
+#define	Nov9_1930.html()
+	${gigHeader(
+		phone=+44 20 7837 5371,
+		eventweb=https://www.thelexington.co.uk,
+		ticketweb=https://www.seetickets.com/event/the-woodentops/the-lexington/1360970,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+			The Woodentops, Theatre Royal
+		)},
+		photosets=
+			/images/20191109/20191109_dufour_1.jpg$$
+			Philippe Dufour
+			---
+			/images/20191109/20191109_dufour_2.jpg$$
+			Jean-michel Dufour
+			---
+			/images/20191109/20191109_jenkins_1.jpg$$
+			/images/20191109/20191109_jenkins_2.jpg$$
+			/images/20191109/20191109_jenkins_3.jpg$$
+			Tony Jenkins
+			---
+			/images/20191109/20191109_russell_1.jpg$$
+			Claire Russell
+			---
+			/images/20191109/20191109_turner_1.jpg$$
+			/images/20191109/20191109_turner_2.jpg$$
+			Joe Turner
+			---
+			/images/20191109/20191109_uncredited_pat_sato.jpg;;${literalizeCommas(${pat}, Kyoko Sato)}$$
+			/images/20191109/20191109_uncredited_rolo_proctor.jpg;;${literalizeCommas(${rolo}, ${proctor})}$$
+	)}
+
+#define	Nov30_1900.html()
+	${gigHeader(
+		cost=&pound;7.5,
+		ticketweb=https://www.seetickets.com/event/attrition-the-venus-fly-trap-pat-fish/hope-anchor-upper-st/1393466,
+		who=${literalizeCommas(
+			${pat}
+		)},
+		with=${literalizeCommas(
+			Attrition,Venus Fly Trap
+		)},
+		pat=${literalizeCommas(
+		This one is a special organised by the resurgent Glass Records. Attrition are headlining. Venus Fly
+		Trap are also on the bill and a "special guest" is promised. I strongly suspect that I will be opening
+		this show, so come early and buy me drinks after I'm done until it's time to go home. Sorted. 
+		)}
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

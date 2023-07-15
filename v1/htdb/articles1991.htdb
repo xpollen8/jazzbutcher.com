@@ -1,0 +1,3650 @@
+#define	header ${mkHeader(section=Articles)}
+#define	0001.html
+#live	if (getval(page) = 0001.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0002.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sat, 12 Jan 91 14:31:33 -0500
+	<br><b>From:</b> del (de l`abattoir)
+	<br><b>Subject:</b> Music Express interview
+	<p>
+	&lt;a href=&quot;${jbc_press}/91musicexpress.html&quot;&gt;Music Express interview&lt;/a&gt;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0002.html
+#live	if (getval(page) = 0002.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0001.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0003.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 17 Jan 91 14:54:14 -0800
+	<br><b>From:</b> mantis@ucscb.UCSC.EDU (NOT spiggy)
+	<br><b>Subject:</b> 1985 interview
+	<p>
+	&lt;a href=&quot;${jbc_press}/85abstract.html&quot;&gt;1985 interview&lt;/a&gt;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0003.html
+#live	if (getval(page) = 0003.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0002.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0004.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 18 Feb 91 17:19:16 -0500
+	<br><b>From:</b> del (de l`abattoir)
+	<br><b>Subject:</b> recent recordings
+	<p>
+	the new perfect disaster album _heaven scent_ is out on fire<br>
+	records (fire US6-2).  while there *may* be dissenters in the crowd<br>
+	(hi alex! :-), i feel it has loads of integrity and like it alot.<br>
+	obvious Velvet Underground influence, but,<br>
+	who can help it that plays feedback guitar? :-)<br>
+	<br>
+	the song _father_ contains some lyrics found in the JBC tune _girl-go_.<br>
+	_lee_ is an anti-war song dead on mark.  it was recorded before the war shit<br>
+	began.  overall, the album is in the mellow guitar vein.  josephine wiggs<br>
+	*does* play bass &amp; cello on this one - she has since gone on to be in the<br>
+	4AD group the breeders.<br>
+	<br>
+	<kbd>
+<br>
+	<br>
+	a 1991 creation records &quot;dance compilation&quot; entitled _keeping the faith_<br>
+	includes the JBC (thats J.B.C., *not* Jazz Butcher Conspiracy - please make the<br>
+	distinction :-) house tune _we love you_, as well as some excellent stuff<br>
+	from the likes of hypnotone, primal scream, and crazy eddie.<br>
+	80 minutes - good buy.<br>
+	<br>
+	<kbd>
+<br>
+	<br>
+	the tribute album to the Velvet Underground _heaven &amp; hell, vol 1_ has<br>
+	a track done by the the telescopes - one of richard formbys bands..<br>
+	<br>
+	thats it fer now.<br>
+	<br>
+	-david<br>
+	&quot;DJs the man ya love the most... love the most... love the most&quot; - we love you<br>
+	</kbd>
+	${jbc_footer}
+#live	endif
+
+#define	0004.html
+#live	if (getval(page) = 0004.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0003.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0005.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 20 Feb 91 18:59:13 -0500
+	<br><b>From:</b> del (de l`abattoir)
+	<br><b>Subject:</b> letter from cornelious trout
+	<p>
+	da rekkid: spacemen 3 -v- the beach boys, on the mark, the part about<br>
+	charles manson we will all have to wait and see...<br>
+	the solo/due tour, i would image, would be with alex.  he claims it would<br>
+	be to test morale.  i doubt he would make any money onnit, seeings how he<br>
+	lost $$ last time.  the 16 guitarist thing: well, you *saw* how much he<br>
+	enjoyed the group thrashes at the end of the live sets... well, he has<br>
+	*lots* of guitar-playing friends, right?   its only a logical thing.<br>
+	i, for one, am looking forward to it.  i might have to buy myself a<br>
+	DAT recorder for the next tour :-)  am i insane?  yup.<br>
+	<br>
+	i read in the most recent alternative press that the new spin single<br>
+	is to be produced by the jazz butcher.  that man gets around..<br>
+	he apparently also has his hand in on production work with a band<br>
+	from vienna called the black egg.  our friend alex, however, has nevere<br>
+	heard of em.<br>
+	<br>
+	c'est tout.<br>
+	<br>
+	-david<br>
+	&quot;whos that scarey man?&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0005.html
+#live	if (getval(page) = 0005.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0004.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0006.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 4 Mar 91 14:10:32 -0500
+	<br><b>From:</b> del (de l`abattoir)
+	<br><b>Subject:</b> new JBC release
+	<p>
+	due out on creation soon is a new compilation of JBC material<br>
+	(seems to be stuff from 1986 -&gt; 1991) entitled:<br>
+	_edwards cupboard_.  i saw a blurb about in one of the english trade mags.<br>
+	<br>
+	it had most of the singles you would expect from fischotheque through cult:<br>
+	best way<br>
+	girl go<br>
+	shes on drugs<br>
+	<br>
+	hmmm suspiciously similar to the tour playlist 1990..<br>
+	didnt mention anything new, though.<br>
+	<br>
+	they did mention extensive liner notes (&quot;is there intelligence here?&quot;)<br>
+	and that it was &quot;better than any single by the farm&quot;<br>
+	<br>
+	-david<br>
+	&quot;we once had a horse, but it went, to visit an aunt in Kent&quot; - mick sibley<br>
+	${jbc_footer}
+#live	endif
+
+#define	0006.html
+#live	if (getval(page) = 0006.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0005.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0007.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 4 Mar 91 14:29:22 EST
+	<br><b>From:</b> Nancy Everson &lt;everson@BBN.COM&gt;
+	<br><b>Subject:</b> new JBC release
+	<p>
+	I actually held a copy of &quot;edwards cupboard&quot; in my hands on Feb. 13th,<br>
+	but it belonged to the guy at the store, so it wasn't for sale.  He<br>
+	didn't think I'd be able to find it easily.  He was playing it when we<br>
+	went into the store (Mystery Train in Boston).<br>
+	<br>
+	And yes, I'm still here.  Just busier than I used to be, what with<br>
+	moving to a new project and all (I'll get to do *real* programming<br>
+	for a change!  yay!).<br>
+	<br>
+	-nancy<br>
+	${jbc_footer}
+#live	endif
+
+#define	0007.html
+#live	if (getval(page) = 0007.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0006.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0008.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 6 Mar 91 19:21:48 -0500
+	<br><b>From:</b> Mitchell.R.Dickerman@ucs.umass.edu
+	<br><b>Subject:</b> Edwards Closet
+	<p>
+	Hello fellow Butchie fans! Well, I was going to be the first to report<br>
+	seeing 'Edwards Closet', but I didn't get the address right in time.<br>
+	Anyway, my first impression of it was that it was a live set? Too bad<br>
+	it appears it's not. Also, our very own David W. is again credited for<br>
+	pictures. There are quite a few on the back...which ones are your David?<br>
+	<br>
+	On 'Bloody Nonsense': nope, definitely not on CD. My impression was that<br>
+	most (if not all) of it wound up on the only Butcher CD I don't own,<br>
+	'Big Questions (Gift of Music II)'. If anyone sees this for sale, LET ME <br>
+	KNOW! We can work something out. When I went to England this summer, this<br>
+	disc was my #1 priority, and I searched high and low with no luck.<br>
+	<br>
+	He lives next door,<br>
+	Mr. Mitch<br>
+	${jbc_footer}
+#live	endif
+
+#define	0008.html
+#live	if (getval(page) = 0008.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0007.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0009.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 06 Mar 91 19:27:07 EST
+	<br><b>From:</b> del@ecn.purdue.edu (David A Whittemore)
+	<br><b>Subject:</b> Edwards Closet
+	<p>
+	&gt; Hello fellow Butchie fans! Well, I was going to be the first to report<br>
+	&gt; seeing 'Edwards Closet', but I didn't get the address right in time.<br>
+	&gt; Anyway, my first impression of it was that it was a live set? Too bad<br>
+	&gt; it appears it's not. Also, our very own David W. is again credited for<br>
+	&gt; pictures. There are quite a few on the back...which ones are your David?<br>
+	<br>
+	ARE YOU KIDDING!?!  i dont even have the CD yet.<br>
+	<br>
+	they used more of my pix?  wow.  i feel... strange.<br>
+	hard to tell you which ones they are...  cause usually,<br>
+	i only do B&amp;W, but i *did* take a few colour this time round.<br>
+	<br>
+	wow.  i can hardly wait to see em!<br>
+	<br>
+	thanks for the news!<br>
+	<br>
+	-david<br>
+	&quot;in the camera i'm a clown, and every move you make i write it down&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0009.html
+#live	if (getval(page) = 0009.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0008.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0010.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 27 Mar 91 16:54 EST
+	<br><b>From:</b> * &lt;GU090SLB%ITHACA@VM.CC.PURDUE.EDU&gt;
+	<br><b>Subject:</b> A new David J lp
+	<p>
+	Hello. I just got news of David J working on a new record. He says a demo<br>
+	is in process and the actual recording may happen in the U.S.<br>
+	I'm quite happy to hear this, I'm not up for a new Love and Rockets record.<br>
+	There was no mention of whether or not Max and Owen will be working with him.<br>
+	<br>
+	Is anyone else surprised with how &quot;Edward's Closet&quot; sounds? It seems to be<br>
+	in direct contradiction with the lively live shows from last fall.<br>
+	<kbd>
+<br>
+	</kbd>
+	${jbc_footer}
+#live	endif
+
+#define	0010.html
+#live	if (getval(page) = 0010.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0009.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0011.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 28 Mar 91 18:36:00 MET DST
+	<br><b>From:</b> Alexander Vrchoticky &lt;alex@miles.vmars.tuwien.ac.at&gt;
+	<br><b>Subject:</b> an oooooold single review ...
+	<p>
+	&lt;a href=&quot;${jbc_press}/87spex.html&quot;&gt;an oooooold single review ...&lt;/a&gt;<br>
+	<br>
+	-alex<br>
+	&quot;as you poison the earth you poison our lifes&quot; (james)<br>
+	${jbc_footer}
+#live	endif
+
+#define	0011.html
+#live	if (getval(page) = 0011.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0010.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0012.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 8 Apr 91 11:58:34 -0500
+	<br><b>From:</b> del@ecn.purdue.edu (de l`abattoir)
+	<br><b>Subject:</b> martins wedding &amp; more
+	<p>
+	hello all!<br>
+	<br>
+	i was in chicago this weekend for the occasion of martin stebbings wedding.<br>
+	martin was the producer of _cult of the basement_ and was the soundman<br>
+	for the past two tours.<br>
+	<br>
+	in no particular order:<br>
+	<br>
+	the only conspirator present was paul mulreany, who was the best man.<br>
+	i met a couple more zanies like myself who met the guys on tour -<br>
+	and so i have more bootlegs to offer soon.  in particular is a 1986<br>
+	chicago soundboard tape - from the master!  i heard it and it sounds great!<br>
+	i should be receiving mine next week.<br>
+	<br>
+	i have just bought a DAT recorder, and martin has promised me possession<br>
+	of the 1990 california DATs.  he will be on tour with KMFDM for the next<br>
+	month or so.  after *that*, i hope to have them in my hands to make tapes<br>
+	from..  martin on tour as soundman for KMFDM.  hmmm.  he said that ian<br>
+	ohiggins (the engineer of _fishcotheque_) will also be on tour.  ian,<br>
+	apparently a leach of life, a totally disgusting fellow, will hopefully<br>
+	will lose an eyebrow to martins razor the last night on tour.<br>
+	<br>
+	i also met martins younger brother francis, who is (was) the drummer<br>
+	for the group the wolfhounds, who are well worth checking out, by the way.<br>
+	unfortunately, they have recently broken up.  their catalogue is available on<br>
+	midnight records.<br>
+	<br>
+	paul, even though he is officially the blue aeroplanes drummer, is<br>
+	not sure yet if he wants the job.  something about not wanting to be on the<br>
+	road forever - the BA begin a worldwide tour within months.<br>
+	the new BA album is completed and paul had a tape of it in chicago.<br>
+	<br>
+	pat was in the states with the BA for awhile but is back home where,<br>
+	it is said, life is not treating him very nicely.  the home front is<br>
+	very shakey and he no longer has a band.  mr congeniality in depression.<br>
+	yikes!  lets hope he weathers this one as well as he did in 86-87...<br>
+	<br>
+	a new creation records video compliation has the vid for _spooky_.<br>
+	available at reckless records in chicago.  pricey though, ($26), so<br>
+	i passed on it.<br>
+	<br>
+	i picked up the new JBC compilation, _edwards closet_.  non-essential<br>
+	stuff here folks.  all 10 tracks are available elsewhere:<br>
+	mr odd, the best way, spooky, pineapple tuesday, keeping the curtains closed,<br>
+	shes on drugs, line of death, girl-go, susie, the good ones.<br>
+	the photos on the back are basically one per of the JBC since fishcotheque.<br>
+	i took the one of paul at top.  the dominant picture of kizzie holding a<br>
+	bottle of champagne and staring at the camera, paired with the last tune<br>
+	on the disc - _the good ones_ - paint a very sobering end to this JBC disc.<br>
+	<br>
+	a small pause for kizzie here..<br>
+	<br>
+	-david<br>
+	&quot;man and machine in the night keep driving<br>
+	man and machine never might arrive&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0012.html
+#live	if (getval(page) = 0012.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0011.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0013.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 8 Apr 91 23:25:18 -0400
+	<br><b>From:</b> Mitchell.R.Dickerman@ucs.umass.edu
+	<br><b>Subject:</b> JB history?
+	<p>
+	As I was listening to some fine Jazz Butcher material today, I realized<br>
+	that I know nothing about the man himself, or the history of the band. <br>
+	Could someone who knows post some info on Pat Fish, Max Eider, etc. as<br>
+	well as some info about lineups and such? I mean, in David's recent<br>
+	posting he mentioned trouble for Pat in 86-87, what was all that about?<br>
+	Thanks...<br>
+	${icon_blank}   Mitch<br>
+	${jbc_footer}
+#live	endif
+
+#define	0013.html
+#live	if (getval(page) = 0013.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0012.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0014.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 16 Apr 91 22:04:38 -0500
+	<br><b>From:</b> del@ecn.purdue.edu (de l`abattoir)
+	<br><b>Subject:</b> news on the mental state of mr fish
+	<p>
+	from sonia (GU090SLB@ITHACA.BITNET),<br>
+	our lovely correspondent in ithaca new york:<br>
+	<br>
+	+-------<br>
+	| I knew I wouldn't make it back to campus last week. Christmas with the pigmies<br>
+	| is on Glass and is &quot;HMMM 001.&quot; Lost in France is on the Situation Two comp.<br>
+	| &quot;Gunfire and Pianos&quot; and is SITU 017.<br>
+	| <br>
+	| I got a letter from Mark, who had just been to visit Pat. David J was there<br>
+	| and played a demo of a new song called &quot;(the future perceived as a) big white<br>
+	| bus&quot; which he said has Pat &quot;joining in harmonizing and banging tea-trays.&quot;<br>
+	| He also adds, &quot;Pat's new one is gonna be SOMETHING GREAT. It's called<br>
+	| `thirteen' at the moment.<br>
+	| He's not had a very good winter and it shows in his music.&quot;<br>
+	+-------<br>
+	<br>
+	-david<br>
+	&quot;you make me want to carry on&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0014.html
+#live	if (getval(page) = 0014.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0013.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0015.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Fri, 19 Apr 91 10:22 EDT
+	<br><b>From:</b> * &lt;GU090SLB%ITHACA@VM.CC.PURDUE.EDU&gt;
+	<br><b>Subject:</b> soundtrack jbc
+	<p>
+	Several years ago I saw a movie called &quot;Space Rage&quot; or &quot;Space Race&quot; which<br>
+	had &quot;Death Dentist&quot; and &quot;President Regean's Birthday Present&quot; in the soundtrack.<br>
+	Has any one else seen or heard it?<br>
+	<kbd>
+<br>
+	</kbd>
+	${jbc_footer}
+#live	endif
+
+#define	0015.html
+#live	if (getval(page) = 0015.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0014.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0016.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Fri, 19 Apr 91 10:44:19 EDT
+	<br><b>From:</b> Nancy Everson &lt;everson@BBN.COM&gt;
+	<br><b>Subject:</b> soundtrack jbc
+	<p>
+	&quot;Space Rage&quot; -- a C-grade space western.<br>
+	<br>
+	Yeah!  I saw &quot;Space Rage&quot; in November '87.  I was visiting my sister,<br>
+	and we rented it since it looked like a good junky movie.  I was<br>
+	flabbergasted when I heard the JBC songs.  <br>
+	<br>
+	It was especially remarkable for me because I had spent the weekend<br>
+	before with my then-new boyfriend (hi Craig!), and he had given me a<br>
+	complete introduction to the JBC that weekend (I think Angels and<br>
+	Human Jungle were the only two JBC songs I had known before I met Craig).<br>
+	I don't think I would have remembered that movie if I had seen it a<br>
+	month earlier....<br>
+	<br>
+	-nancy<br>
+	${jbc_footer}
+#live	endif
+
+#define	0016.html
+#live	if (getval(page) = 0016.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0015.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0017.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sun, 12 May 91 22:31:05 -0500
+	<br><b>From:</b> del@ecn.purdue.edu (de l`abattoir)
+	<br><b>Subject:</b> whats the proverbial up?
+	<p>
+	hello everyone.  been pretty quiet out there.<br>
+	pretty quiet here too...<br>
+	<br>
+	whats (kinda) new:<br>
+	<br>
+	i picked up the 1990 creation video comp a couple of weekends ago.<br>
+	it has the video for _spooky_ on it.  geez.  maybe the JBC could<br>
+	have a higher profile if they actually *spent* something on their videos.<br>
+	this one is pretty much a &quot;stand in front of viedo camera and do our song&quot;<br>
+	type of vid, with a low-tech 16 hue separation overall.  ick!  the<br>
+	my bloody valentine video is good though.<br>
+	<br>
+	um..  creation has been putting out a slew of comps recently.  the latest<br>
+	is entitled _a palace in the sun_ which contains _shes on drugs_.<br>
+	i still recommend the dance music compilation - it has some good and<br>
+	obscure bands worth tracking down.  richard formbys telescopes have<br>
+	been prolific this last year - about 5 eps they have released.<br>
+	<br>
+	on pat:  word out is that he *is* recording new stuff with (at least) paul.<br>
+	Nth-hand news says that a latest song(?) is entitled _thirteen_.<br>
+	no new info of his &quot;solo US tour&quot; though..<br>
+	<br>
+	mr fish shows up on (the latest?) release, _pluto_, from the german crazoid<br>
+	band named m walking on the water, on a song called _love_.  oh my god is<br>
+	this a great tune.  the credit claims &quot;written with jazz butcher and nikki<br>
+	sudden&quot; - a collaboration of which i entirely approve.  two nice drinking<br>
+	woman-are-bad-news song writers :-) (thanks alex!)  this tune is in your<br>
+	face rock-n-roll, full of emotion: &quot;i dont love her i dont care i dont love<br>
+	her i dont care i dont love her i dont care...&quot;.<br>
+	<br>
+	-david<br>
+	${jbc_footer}
+#live	endif
+
+#define	0017.html
+#live	if (getval(page) = 0017.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0016.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0018.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 13 May 91 10:40:45 MET DST
+	<br><b>From:</b> Alexander Vrchoticky &lt;alex@miles.vmars.tuwien.ac.at&gt;
+	<br><b>Subject:</b> m. walking ...
+	<p>
+	our beloved revolutionary sweetheart wrote:<br>
+	&gt; <br>
+	&gt; mr fish shows up on (the latest?) release, _pluto_, from the german crazoid<br>
+	&gt; band named m walking on the water, on a song called _love_.  oh my god is<br>
+	&gt; this a great tune.  the credit claims &quot;written with jazz butcher and nikki<br>
+	&gt; sudden&quot; - a collaboration of which i entirely approve.  two nice drinking<br>
+	&gt; woman-are-bad-news song writers :-) (thanks alex!)  this tune is in your<br>
+	&gt; face rock-n-roll, full of emotion: &quot;i dont love her i dont care i dont love<br>
+	&gt; her i dont care i dont love her i dont care...&quot;.  words is that barbara<br>
+	&gt; has left pat.  i wonder how close to the recording of this song the end<br>
+	&gt; occurred..<br>
+	<br>
+	nope. not the lastest release. the first album was self-titled,<br>
+	`pluto' was the 2nd album.<br>
+	after that came `the waltz', a 6-track mini-lp with nothing but waltzes <br>
+	on it, and `elysian', which came out this year. <br>
+	*all* of them are chock-full with weirdness, great tunes and crazy <br>
+	instrumentation.  all of them are on fuego, distributed by rough trade,<br>
+	with the exception of the last, which came out on polygram. <br>
+	i don't know whether the non-europeans on this list (all except me?) will<br>
+	get ahold of this stuff ... if you can, do.<br>
+	<br>
+	i saw them live twice in the last few weeks, once in munich and once in vienna.<br>
+	*fun* time for all the family. i would forward the review i sent to david<br>
+	after i saw them, but the disk that file is on was fried in a *really* <br>
+	bad crash ... did any of the unix-hackers among <br>
+	you ever see the kernel error message `panic: init died'? well, i did. <br>
+	i taped the vienna show, but the batteries ran out after slightly<br>
+	over an hour. wellwell. don't trust electronic equipment :-|.<br>
+	<br>
+	-alex<br>
+	&quot;party in the cemetery, dancing with a ghost&quot; (m. walking on the water)<br>
+	${jbc_footer}
+#live	endif
+
+#define	0018.html
+#live	if (getval(page) = 0018.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0017.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0019.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 14 May 91 08:09:43 EDT
+	<br><b>From:</b> uc112_424960@emunix.emich.edu (Void where prohibited by law.)
+	<br><b>Subject:</b> Hairbrush?  Tank?
+	<p>
+	Grrrrrr . . . stupid site administrator is right!  I've been trying to post<br>
+	this to the list for the past week or so and now it turns out I was sending<br>
+	to the wrong address?  Thanks, David, for setting me straight . . . <br>
+	<br>
+	I was re-listening to Big Questions the other night when a thought struck me<br>
+	(No, it didn't hurt.  I'm used to it.  One of the hazards of modern<br>
+	living . . . ): the song, &quot;The Hairbrush And The Tank.&quot;  There's a song<br>
+	on David J's album, Crocodile Tears And The Velvet Cosh, called &quot;The<br>
+	Vandal And The Saint&quot; that's got the same identical music and rhyme<br>
+	scheme.  Now I know that David was with the Butcher for the first album<br>
+	or so but still . . . what's the deal here?  What's the story behind<br>
+	these two songs?  Which came first (I suspect David's came first but<br>
+	I don't know the release date of the single that &quot;Hairbrush&quot; appeared<br>
+	on)?  Does anyone even care?<br>
+	<br>
+	Just wondering . . .<br>
+	${jbc_footer}
+#live	endif
+
+#define	0019.html
+#live	if (getval(page) = 0019.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0018.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0020.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 14 May 91 12:33:28 EST
+	<br><b>From:</b> del@ecn.purdue.edu (David A Whittemore)
+	<br><b>Subject:</b> Hairbrush? Tank?
+	<p>
+	you guessed it right.  _the vandal and the saint_ was<br>
+	the original.  i asked pat about the obvious rip-off once<br>
+	and he said that he was just listening to _vandal_ and he<br>
+	heard the line: &quot;sharing a room with the butcher&quot; hmmmmm...<br>
+	it inspired him to poke fun at david j, who is his good friend.<br>
+	he said that he had written an earlier version which more<br>
+	closely parodied the _vandal_ lyrics, but he lost them.<br>
+	<br>
+	this conversation is on a 90minute interview tape from<br>
+	milwaukee 1989,  but i dont have a copy right now. (nancy? :-)<br>
+	<br>
+	during the same inquisition, mr fish also was telling about<br>
+	the song _the partys over_ from the david j 1985 album _on glass_.<br>
+	they both had to get fall-down drunk to do it right.<br>
+	i asked him whether he thought david j wanted to do that<br>
+	duet as a sort of good-bye-to-the-JBC tribute.  pat, speechless<br>
+	(for once) paused and then said &quot;my god, i hadnt thought of that&quot;<br>
+	<br>
+	it is still a little strange to listen to the newest david j<br>
+	album and hear, basically, the jbc lineup from 1985 minus pat.<br>
+	<br>
+	has anyone noticed how much early woodentops sound like<br>
+	early jazz butcher?  rolo mcginty *was* in the JBC once,<br>
+	i guess, but come on!  must be something in the northampton water.<br>
+	<br>
+	-david<br>
+	${jbc_footer}
+#live	endif
+
+#define	0020.html
+#live	if (getval(page) = 0020.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0019.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0021.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 14 May 91 12:17:44 MDT
+	<br><b>From:</b> James Anderson &lt;jamesa@cae.wisc.edu&gt;
+	<br><b>Subject:</b> Hairbrush?  Tank?
+	<p>
+	&gt; <br>
+	&gt; <br>
+	&gt; you guessed it right.  _the vandal and the saint_ was<br>
+	&gt; the original.  i asked pat about the obvious rip-off once<br>
+	&gt; and he said that he was just listening to _vandal_ and he<br>
+	&gt; heard the line: &quot;sharing a room with the butcher&quot; hmmmmm...<br>
+	&gt; it inspired him to poke fun at david j, who is his good friend.<br>
+	&gt; he said that he had written an earlier version which more<br>
+	&gt; closely parodied the _vandal_ lyrics, but he lost them.<br>
+	&gt; <br>
+	&gt; -david<br>
+	&gt; <br>
+	Just to add a little more history to this song, the tune was actually<br>
+	lifted from a B. Dylan tune.  The song is &quot;Shelter From the Storm&quot; on <br>
+	the _Blood on the Tracks_ album.  (I pretty sure it's that song, I haven't<br>
+	listened to either in a while, but I'm sure that there is a dylan rip-off<br>
+	on that album _Big Questions_)<br>
+	<br>
+	jim anderson <br>
+	soon to be a Colorado resident!!!!!<br>
+	${jbc_footer}
+#live	endif
+
+#define	0021.html
+#live	if (getval(page) = 0021.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0020.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0022.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 14 May 1991 11:32:22 -0700 (PDT)
+	<br><b>From:</b> or a reasonable facsimile &lt;stewarte@sco.com&gt;
+	<br><b>Subject:</b> Woodentops
+	<p>
+	&gt; From: del@ecn.purdue.edu (David A Whittemore)<br>
+	<br>
+	${icon_blank}    &gt; has anyone noticed how much early woodentops sound like<br>
+	${icon_blank}    &gt; early jazz butcher?  rolo mcginty *was* in the JBC once,<br>
+	${icon_blank}    &gt; i guess, but come on!  must be something in the northampton water.<br>
+	<br>
+	I don't see that strong a resemblance...I guess there's a noticeable <br>
+	similarity in Rolo's singing and songwriting, but their <br>
+	manic-depressive &quot;hypno-beat&quot; sound doesn't remind me of the <br>
+	Butcher at all, nor does their cheesy Casio keyboard sound.  <br>
+	<br>
+	Pity about the Woodentops, actually...I think their first few singles <br>
+	were fabulous, but they were already past their peak by the time they <br>
+	put out their first album.<br>
+	<br>
+	<kbd>
+<br>
+	</kbd>
+	${jbc_footer}
+#live	endif
+
+#define	0022.html
+#live	if (getval(page) = 0022.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0021.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0023.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 14 May 91 13:44:25 -0500
+	<br><b>From:</b> del@ecn.purdue.edu (de l`abattoir)
+	<br><b>Subject:</b> Woodentops
+	<p>
+	one song i think in particular sounds very woodentopsesque is<br>
+	_i need meat_.<br>
+	<br>
+	a friend was playing me some old woodentops and it had that same<br>
+	driving but loose (&quot;hypno-beat&quot; *is* a good description)<br>
+	drum beat and walking bass.  i think i noticed some stolen lyrics<br>
+	on that tune, too, but i dont know the titles of any woodentops tunes.<br>
+	<br>
+	-david<br>
+	&quot;i dont want to be a road statistic&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0023.html
+#live	if (getval(page) = 0023.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0022.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0024.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 15 May 91 16:30:26 CDT
+	<br><b>From:</b> beaulieu@chsun1.uchicago.edu (Falls on Floor)
+	<br><b>Subject:</b> The Scary Powers of &quot;BOB&quot;
+	<p>
+	Dear Abby,<br>
+	<br>
+	I am a healthy, attractive 35 year old housewife.  Until about two weeks ago<br>
+	my life was happy and normal.  Now, frankly, it is a living hell.  I can't sleet<br>
+	(that's sleep), I can't eat, and I can barely function in my day-to-day duties.<br>
+	<br>
+	The problem started when I was looking through my son Biff's desk.  I found all <br>
+	these computer printouts about something called the JBC.  In one of those print-<br>
+	outs was a listing of JBC songs, and two of these songs (City of Night and It<br>
+	Has to Be You) are listed as being on the Glass Compilation &quot;5000 Glass Fans<br>
+	Can't Be Wrong&quot;.  Now I distinctly remember a Jazz Butcher cover of the Johnath-<br>
+	an Richman song &quot;Affection&quot; being on that album.  I told my husband about it,<br>
+	and he said that, no, the Jazz Butcher never covered that song.  I insisted that<br>
+	I was right, but he continued to argue with me.  Finally, I got so flustered<br>
+	with him that I stabbed him through the back of his skull with one of those<br>
+	wonder-ful Ginsu Knives that my Aunt Flo got me for our wedding.  (Incidentally,<br>
+	I really could slice a tomato razor thin afterwards.)<br>
+	<br>
+	So Abby, could you please tell me 1) Did the Jazz Butcher really cover &quot;Affec-<br>
+	tion, and if so where I can find it, and   2) can you reccomend a good lawyer<br>
+	who specializes in the Prozac defense I have read so much about?<br>
+	<br>
+	<br>
+	Puzzled in Provo<br>
+	${jbc_footer}
+#live	endif
+
+#define	0024.html
+#live	if (getval(page) = 0024.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0023.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0025.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 16 May 91 13:15:19 EST
+	<br><b>From:</b> del@ecn.purdue.edu (David A Whittemore)
+	<br><b>Subject:</b> The Scary Powers of &quot;BOB&quot;
+	<p>
+	dear provo puzzled.<br>
+	<br>
+	was that a ginsu II or ginsu III knife you used on your husband?<br>
+	i ask, because the ginsu IV model is now available and it would<br>
+	be embarrassing to have to explain to the police why you used<br>
+	such a primative, brutal device to resolve your problems<br>
+	of affection.  onto your more piercing questions:<br>
+	<br>
+	1) yes, indeedily, mr fish has covered and recorded _affection_.<br>
+	${icon_blank}   being the square that i am, i do not know where the song can<br>
+	${icon_blank}   be found.  <br>
+	2) i recommend listening to AM670, WMAQ in your own windy city.<br>
+	${icon_blank}   every 4 minutes or so (usually right after the foot pain<br>
+	${icon_blank}   specialist adverts), there is some lawyer starving for your<br>
+	${icon_blank}   business.  if i recall correctly, you are the same &quot;puzzled<br>
+	${icon_blank}   in provo&quot; who last year asked if the insanity plea for a<br>
+	${icon_blank}   parking ticket would work.  having this experience and background<br>
+	${icon_blank}   of instabilty might work to your advantage.  good luck.<br>
+	<br>
+	-david<br>
+	&quot;people all over the world are starving for affection&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0025.html
+#live	if (getval(page) = 0025.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0024.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0026.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 21 May 91 12:55 EDT
+	<br><b>From:</b> * &lt;GU090SLB%ITHACA@VM.CC.PURDUE.EDU&gt;
+	<br><b>Subject:</b> a new contingent
+	<p>
+	Hello. I just got new mail from David J - seems he's joined a new band called<br>
+	(to the best of my handwriting deciphering abilities) Rose Meddow. The rose bit<br>
+	is certain but it could be mildew for all I could tell. He didn't mention who<br>
+	else is in the band, but said it was spiritual, uplifting kind of stuff. He adde<br>
+	${icon_blank}   d that Love and Rockets are still an existing thing and that they're thinking<br>
+	about recording in the not too distant future. So get those antenni going and<br>
+	lets see who else might be in this band. I think he would have said if it were<br>
+	max. Maybe it will be Spacement 3 type folk. Y'never know with those damn<br>
+	Northamptonites.<br>
+	<br>
+	Has anyone else noticed an increase in bicycle kids in their neighborhoods<br>
+	recently. They come out like the mosquitos I think.<br>
+	<br>
+	Ta for now - - Sonia<br>
+	${jbc_footer}
+#live	endif
+
+#define	0026.html
+#live	if (getval(page) = 0026.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0025.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0027.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 21 May 91 17:07:51 CDT
+	<br><b>From:</b> beaulieu@chsun1.uchicago.edu (Falls on Floor)
+	<br><b>Subject:</b> Old Jazz Butcher interviews: 1986 Non*Stop Banter
+	<p>
+	&lt;a href=&quot;${jbc_press}/86nsb.html&quot;&gt;Old Jazz Butcher interviews: 1986 Non*Stop Banter&lt;/a&gt;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0027.html
+#live	if (getval(page) = 0027.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0026.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0028.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 21 May 91 17:07:51 CDT
+	<br><b>From:</b> beaulieu@chsun1.uchicago.edu (Falls on Floor)
+	<br><b>Subject:</b> Old Jazz Butcher interviews: 1990 (unknown)
+	<p>
+	&lt;a href=&quot;${jbc_press}/90unknown.html&quot;&gt;Old Jazz Butcher interviews: 1990 (unknown)&lt;/a&gt;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0028.html
+#live	if (getval(page) = 0028.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0027.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0029.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 27 May 91 02:17:39 -0500
+	<br><b>From:</b> del@ecn.purdue.edu (de l`abattoir)
+	<br><b>Subject:</b> hollywood DAT
+	<p>
+	finally!  i got the goods.  the hollywood 1990 DAT tape.<br>
+	<br>
+	isnt this the way it always is?  the best performances<br>
+	are captured by an audience recording and the soundboard<br>
+	tapes are dry and lifeless?  well, this one is a draw.<br>
+	<br>
+	right.  perfect digital reproduction of a mix that is bass<br>
+	and guitar shy.  vocals and drums up front.  with some<br>
+	smancy EQ, i think this tape can be pretty good though.<br>
+	<br>
+	this is a long show with a killer _caroline wheeler_.<br>
+	_sister death_ is in there, _angels_ too.<br>
+	<br>
+	anyone interested in copies?<br>
+	<br>
+	joel!  its looking like your FM capture of the 1989 KCRW interview<br>
+	is our only source - martin has some other KCRW stuff, but<br>
+	not that one.  too bad, there is lots of good material there.<br>
+	grrrrr.<br>
+	<br>
+	-david<br>
+	&quot;hold your nose - its mr odd&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0029.html
+#live	if (getval(page) = 0029.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0028.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0030.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 29 May 91 10:51:31 EDT
+	<br><b>From:</b> Nancy Everson &lt;everson@BBN.COM&gt;
+	<br><b>Subject:</b> upcoming release?
+	<p>
+	&gt; From: David A Whittemore &lt;del@ecn.purdue.edu&gt;<br>
+	&gt; Date: Tue, 14 May 91 12:33:28 EST<br>
+	&gt; this conversation is on a 90minute interview tape from<br>
+	&gt; milwaukee 1989,  but i dont have a copy right now. (nancy? :-)<br>
+	<br>
+	Sorry to take so long to respond, but Craig and I have been &quot;on<br>
+	holiday&quot;, as they say.  Yes, I indeed have the aforementioned<br>
+	interview on tape, thanks to David.  Tell you guys what -- within<br>
+	the next month, I hope to get completely caught up on my tape<br>
+	trading activities, and update my bootleg lists (I'm over a year<br>
+	behind on that).  When I do that, I'll post the list, and start<br>
+	actively trading JBC tapes.<br>
+	<br>
+	In the meantime, I actually have some JBC news!<br>
+	<br>
+	Craig and I recently discovered we like The Wedding Present, and as we were<br>
+	heading over to Paris and England for a well-deserved 18 day vacation, Craig<br>
+	said, &quot;Wouldn't it be great if we could see the Wedding Present?&quot;  I agreed.<br>
+	<br>
+	Turns out they were doing a small tour, and we got to see them last Saturday<br>
+	at the Brixton Academy in London (Buffalo Tom opened).  It was a really good<br>
+	show, though a bit short - 50 minutes, no encore.  I had brought my Cult<br>
+	of the Basement tour shirt on the trip, and wore it that night.  After the<br>
+	show, a guy came up to me and asked me if I liked the Jazz Butcher.  He was<br>
+	astounded that he found someone in England who did, but then he found out<br>
+	we're Americans, and wasn't so surprised.  Anyway, it turns out this guy<br>
+	does graphic art stuff for Creation Records, and he said that he'd just<br>
+	finished up some stuff for a new record.  He told us the title, but I didn't<br>
+	quite hear it, and can't remember now.  The only thing I really remember is<br>
+	something about some weird German stuff on the liner notes, and something<br>
+	being attributed to &quot;von Butcher&quot;.  He said it should be available within<br>
+	the next two months. <br>
+	<br>
+	Sorry for the lack of details, but after two pints of cider and being bounced<br>
+	around in the pit for three or four songs, I wasn't in complete possession<br>
+	of my faculties at the time.<br>
+	<br>
+	The guy (Pete Mays, I think) promised to send me some information about a <br>
+	fan club, and remarked that he has some &quot;really good&quot; bootlegs, so I'll let<br>
+	you know more when I hear from him.<br>
+	<br>
+	So Craig, if you can fill in any details, please do so!<br>
+	<br>
+	-nancy<br>
+	${jbc_footer}
+#live	endif
+
+#define	0030.html
+#live	if (getval(page) = 0030.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0029.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0031.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 29 May 91 21:36:13 -0400
+	<br><b>From:</b> Craig Kolb &lt;craig@weedeater.math.yale.edu&gt;
+	<br><b>Subject:</b> upcoming release
+	<p>
+	&gt; Anyway, it turns out this guy<br>
+	&gt; does graphic art stuff for Creation Records, and he said that he'd just<br>
+	&gt; finished up some stuff for a new record.  He told us the title, but I didn't<br>
+	&gt; quite hear it, and can't remember now.  The only thing I really remember is<br>
+	&gt; something about some weird German stuff on the liner notes, and something<br>
+	&gt; being attributed to &quot;von Butcher&quot;.  He said it should be available within<br>
+	&gt; the next two months. <br>
+	<br>
+	He said the title was &quot;The Black Egg&quot;, and that the cover art consisted<br>
+	of a bowl of caviar and a sticker saying something like, &quot;Written by<br>
+	von Butcher&quot;.  He said that he couldn't figure out why there were<br>
+	obviously veiled references to Pat's True Identity on at least the<br>
+	cover of the record.<br>
+	<br>
+	He also said that the album was full of songs with strange titles,<br>
+	including one that had something to do with British Petroleum (or<br>
+	was it just &quot;British oil&quot;?  It was hard to hear...)<br>
+	<br>
+	Craig<br>
+	${jbc_footer}
+#live	endif
+
+#define	0031.html
+#live	if (getval(page) = 0031.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0030.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0032.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 30 May 91 10:57:39 CDT
+	<br><b>From:</b> beaulieu@chsun1.uchicago.edu (Falls on Floor)
+	<br><b>Subject:</b> &quot;The Black Egg&quot;?
+	<p>
+	A couple of weeks ago I sent you all those two JB interviews, and<br>
+	in the one from 1990 Pat talks about the Von D&amp;auml;mmerung brothers'<br>
+	band &quot;The Black Eg&quot; (one &quot;G&quot;).   Says Pat, &quot;It's just heinous.&quot;<br>
+	<br>
+	&quot;Food, food, food, and sex, and sex and food and food and sex and<br>
+	food and sex and drunken sex and laughs and sex&quot;<br>
+	<br>
+	Deerkiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0032.html
+#live	if (getval(page) = 0032.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0031.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0033.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 30 May 91 11:33:55 CDT
+	<br><b>From:</b> beaulieu@chsun1.uchicago.edu (Falls on Floor)
+	<br><b>Subject:</b> The Wedding Present
+	<p>
+	Anyone else besides Craig and Nancy and me like the Wedding<br>
+	Present?  I have many excellent quality tapes of Wedding Present<br>
+	shows.  The best is probably from Lounge Ax in Chicago last<br>
+	February.  Their new single is pretty good, and if the material<br>
+	they played at their last Chicago show is any indication of<br>
+	the quality of their new album (due to be out this week, I hear)<br>
+	it probably won't leave my turntable until &quot;The Black Egg&quot;<br>
+	comes out.<br>
+	<br>
+	Speaking of Von Butcher...<br>
+	<br>
+	Reverend Botus just gave me yet another KCRW tape with <br>
+	a sort of mix of JBC, Blue Aeroplanes, and various combinations<br>
+	of the two.  It was recorded the day that Thatcher resigned,<br>
+	and contains the one JBC hardcore song entitled &quot;You Cunt&quot;, andf<br>
+	dedicated to Mrs. Thatcher.  Pat did not want it recorded, and<br>
+	Martin assured him that the tape player was off.  It also has a <br>
+	n acoustic &quot;Sweet Jane&quot; with Pat and Gerard, three or four attempts<br>
+	at &quot;Crocodile Tears&quot; with just Pat and Alex Green, and lots of<br>
+	very short covers of really bad 70's songs.  For me, the highlight<br>
+	is when they are attempting a cover of a song called &quot;If&quot;(?) and<br>
+	pat sings &quot;If a face can launch a thousand ships, then why can't<br>
+	I launch you...&quot;  I vaguely remember the song, but I don't think<br>
+	that that is the line.  Pretty sick stuff.<br>
+	<br>
+	Deerkiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0033.html
+#live	if (getval(page) = 0033.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0032.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0034.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 30 May 91 11:43:58 EST
+	<br><b>From:</b> del@ecn.purdue.edu (David A Whittemore)
+	<br><b>Subject:</b> upcoming release
+	<p>
+	well, well.<br>
+	<br>
+	the Black EG is, as was pointed out in a previous interview<br>
+	posting, the band of the von d&amp;auml;mmerung brothers from<br>
+	vienna (hi alex!) which pat has been producing.<br>
+	<br>
+	last time over pat was saying how, unlike other bands might<br>
+	sample a nice james brown drum beat, the black eg would<br>
+	sample the spacemen 3.  all these guys *must* sleep<br>
+	together.  that, or UK/Europe is about the size of one<br>
+	city block!<br>
+	<br>
+	speaking of the spacemen 3... joe, i found a copy of<br>
+	the new sonic boom 7&quot;er.  very tasteful clear mixed with<br>
+	yellow and blue vinyl.  the label is: sympathy for the record<br>
+	industry, and the label says &quot;play at any speed&quot;.<br>
+	its a geetar drone-thang.  would sound good with a nice<br>
+	beat mixed over the of of it :-)<br>
+	<br>
+	anyway.  good work commrades!<br>
+	<br>
+	-david<br>
+	${jbc_footer}
+#live	endif
+
+#define	0034.html
+#live	if (getval(page) = 0034.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0033.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0035.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sat, 1 Jun 91 16:33:28 CDT
+	<br><b>From:</b> beaulieu@chsun1.uchicago.edu (Falls on Floor)
+	<br><b>Subject:</b> The JBC 1990 San Francisco Show
+	<p>
+	A fragment of the above mentioned show has found it's way<br>
+	from the collection of the Reverend Botus Whiteblood Flemming<br>
+	(a.k.a. Martin Stebbing) into my greedy little paws.  The high-<br>
+	lights are some good audience banter, a version of &quot;Caroline<br>
+	Wheeler&quot; with five guitars, and an acoustic rendidtion of Bob<br>
+	Dylans &quot;Crocodile Tears&quot;.  Pat says that he wants to live<br>
+	somewhere where he can wear a cowboy hat, and asks for some-<br>
+	one to volunteer their apartment.  Lawrence bemoans the loss<br>
+	(theft) of his lobster.  Actually, he says &quot;I lost my lobster<br>
+	in San Francisco&quot;  (&quot;I left my heart in San Francisco&quot;)  I'll<br>
+	see if I can dig up the rest of the show from Martin' tape<br>
+	case.  It's probably there somewhere.<br>
+	<br>
+	Deerkiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0035.html
+#live	if (getval(page) = 0035.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0034.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0036.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sat, 1 Jun 91 15:10:03 -0700
+	<br><b>From:</b> mantis@ucscb.UCSC.EDU (NOT spiggy)
+	<br><b>Subject:</b> JBC s.f. 1990
+	<p>
+	hey!!!!<br>
+	i was at that show, and i was told that the sound guy forgot to press <br>
+	${icon_blank} record onthe deck...<br>
+	<br>
+	a wonderful show...<br>
+	<br>
+	during that version of crocodile tears, which was intro'ed as &quot;i think this<br>
+	${icon_blank} a bob dylan song&quot; (and no-one recognized it 'cept me, it seemed :) ) pat<br>
+	${icon_blank} had a garbage can lowered onto his head by the rest of the guys. most amusing<br>
+	<br>
+	and caroline wheelers was *incredible* (and it was 6 guitarist, as<br>
+	${icon_blank} i recall)... sweet jane was done with 7 or so...)<br>
+	<br>
+	if you can get this on tape, talk to me. i want it for the memories! :)<br>
+	<br>
+	-joel<br>
+	${jbc_footer}
+#live	endif
+
+#define	0036.html
+#live	if (getval(page) = 0036.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0035.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0037.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 3 Jun 91 10:19:06 PDT
+	<br><b>From:</b> drew@tortuga.sandiego.ncr.com
+	<br><b>Subject:</b> Bill Drummund (the man)
+	<p>
+	I noticed yesterday on the liner notes of Echo and the Bunnymen's<br>
+	${icon_blank}     _Crocodile_ album that the producer was Bill Drummund.  Is that<br>
+	${icon_blank}     the same Bill Drummund of _King of Joy_ fame?<br>
+	<br>
+	${icon_blank}     -drew (drew@tortuga.sandiego.ncr.com)<br>
+	${jbc_footer}
+#live	endif
+
+#define	0037.html
+#live	if (getval(page) = 0037.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0036.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0038.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 03 Jun 91 15:13:02 EST
+	<br><b>From:</b> del@ecn.purdue.edu (David A Whittemore)
+	<br><b>Subject:</b> Bill Drummund (the man)
+	<p>
+	yes!  mr drummond gets around, doesnt he?<br>
+	one of the recent mixes of the KLF hit _what time is love_<br>
+	has an &quot;echo&amp;bunneymen remix&quot; which, i guess, the bunneymen<br>
+	reciprocated on.<br>
+	<br>
+	_the man_ is a must have album, as is _chill out_ as is...<br>
+	<br>
+	-david<br>
+	justified ancients of mu mu<br>
+	${jbc_footer}
+#live	endif
+
+#define	0038.html
+#live	if (getval(page) = 0038.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0037.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0039.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sat, 8 Jun 91 21:00:33 CDT
+	<br><b>From:</b> beaulieu@chsun1.uchicago.edu (Falls on Floor)
+	<br><b>Subject:</b> JBC Alumni Report
+	<p>
+	I was looking through the new releases bin at my favorite<br>
+	&quot;alternative&quot; record store, and I noticed that Paul Mulreany<br>
+	shows up on the new Biff Bang Pow record.  <br>
+	<br>
+	Anyone know if the new Fall record sucks or not?  Or should I<br>
+	say, &quot;Anyone know how badly the new Fall record sucks?  I am<br>
+	being kind of harsh, but they just aren't up to the standards<br>
+	they set for themselves.<br>
+	<br>
+	Deerkiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0039.html
+#live	if (getval(page) = 0039.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0038.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0040.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 11 Jun 91 20:24:13 -0700
+	<br><b>From:</b> mantis@ucscb.UCSC.EDU (NOT spiggy)
+	<br><b>Subject:</b> jbc tape 10.23.90 the ritz hollywood
+	<p>
+	just got a tape of this show from david...<br>
+	<br>
+	it's from a re-equalized DAT taken from the soundboard...<br>
+	<br>
+	the most *incredible* recording i have heard to date. sounds like<br>
+	${icon_blank} a studio album in recording quality, but with the banter and <br>
+	${icon_blank} energy of a live show, and crowd noise in between tracks. next<br>
+	${icon_blank} to no tape hiss. without question the finest boot i have ever <br>
+	${icon_blank} come in contact wwith, as far as recording quality goes. the <br>
+	${icon_blank} performance itself is great as well, and reminds me a lot of the <br>
+	${icon_blank} show i saw two days later in s.f...<br>
+	<br>
+	the master is prolly of good enough quality to cut an official live<br>
+	${icon_blank} album off of... :) <br>
+	<br>
+	anyhow, talk to david. you *need* this tape :)<br>
+	<br>
+	-joel<br>
+	${jbc_footer}
+#live	endif
+
+#define	0040.html
+#live	if (getval(page) = 0040.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0039.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0041.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 11 Jun 91 22:37:01 -0500
+	<br><b>From:</b> del@ecn.purdue.edu (de l`abattoir)
+	<br><b>Subject:</b> interviewing mr fish
+	<p>
+	ok poppettes, its springtime, the flounders are floundering,<br>
+	the tenches are learning to walk and the dace are laying low.<br>
+	so is mr cornelious trout.  i wonder what he is up to...<br>
+	<br>
+	tell you what.  with some help from my friends i think a proper<br>
+	interview of the jazz butcher is in order.<br>
+	<br>
+	what do YOU want to know?  i will try to bait it out of him.<br>
+	<br>
+	we have heard talk of his work with some wacky weiners (hi alex!),<br>
+	new recordings, associations with the spacemen, m walking on the water..<br>
+	then there was that tease of the solo US tour.<br>
+	<br>
+	but whats he REALLY doing?<br>
+	what inspired that particular lyric?<br>
+	_sister death_?  one can only speculate...<br>
+	how does he see his work progressing?<br>
+	what turns him on nowadays?<br>
+	does he think iceT is better than ice cube?<br>
+	what drugs *does* he take, anyway? :-)<br>
+	<br>
+	we could probably come up with a nice variety of things<br>
+	to embarrass him about.<br>
+	<br>
+	what do ya think?<br>
+	<br>
+	-david<br>
+	&quot;the world is actually quite large&quot; - pat fish<br>
+	${jbc_footer}
+#live	endif
+
+#define	0041.html
+#live	if (getval(page) = 0041.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0040.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0042.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 12 Jun 91 15:24:27 CDT
+	<br><b>From:</b> beaulieu@chsun1.uchicago.edu (Falls on Floor)
+	<br><b>Subject:</b> Interview with Mr. Fish
+	<p>
+	On Saturday, David and I are going to call up Pat and grill<br>
+	him about various topics such as:<br>
+	<br>
+	Whats the deal with the new album?<br>
+	Who's on it?<br>
+	What's it about?<br>
+	When is he going to tour?<br>
+	With whom will he tour?<br>
+	What other projects has he been working on?<br>
+	<br>
+	And lots of other things along those lines.<br>
+	<br>
+	Any suggestions as to lines of questioning would be<br>
+	greatly appreciated.<br>
+	<br>
+	Deerkiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0042.html
+#live	if (getval(page) = 0042.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0041.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0043.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sun, 23 Jun 91 14:37:39 -0500
+	<br><b>From:</b> del@ecn.purdue.edu (de l`abattoir)
+	<br><b>Subject:</b> Quality in sound
+	<p>
+	oh my god is this good!<br>
+	<br>
+	i just picked up and am listening to the Black Eg CD.<br>
+	<br>
+	from the liner notes:<br>
+	&quot;... this brief and fascinating glimpse into the world<br>
+	of three foolish central europeans who thought they<br>
+	were making dance music&quot;<br>
+	<br>
+	no mention of mr fish anywhere, although the i just heard<br>
+	&quot;been there done that&quot; from _pineapple tuesday_ in the mix.<br>
+	<br>
+	what can i say?<br>
+	perfect hangover material.<br>
+	<br>
+	-david<br>
+	&quot;g-g-good cheesecake&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0043.html
+#live	if (getval(page) = 0043.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0042.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0044.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 3 Jul 91 11:12:30 CDT
+	<br><b>From:</b> beaulieu@chsun1.uchicago.edu (Falls on Floor)
+	<br><b>Subject:</b> New JBC album
+	<p>
+	I just talked to Martin who just got a message from Pat.  I guess<br>
+	that the new JBC album is ready for shipment, since Julian just<br>
+	sent Martin a cd of it.  I guess the incarnation of the JBC from the<br>
+	last tour is still intact, since Julian and Paul both play on it.<br>
+	<br>
+	I don't think that it is called &quot;The Black Eg&quot; though.  I think that<br>
+	maybe the guy that Nancy talked to in England got the band<br>
+	&quot;The Black Eg&quot; which is produced by Pat confused with the new<br>
+	JBC album.  I mean the album by &quot;The Black Eg&quot; has a black cover<br>
+	and makes veiled references to the Jazz Butcher.  But there <br>
+	definitely is a new JBC album, and for all I know it could be out<br>
+	right now.  I'm tempted to make a call to Creation to find out the<br>
+	release date.<br>
+	<br>
+	Deerkiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0044.html
+#live	if (getval(page) = 0044.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0043.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0045.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Fri, 5 Jul 91 11:41:24 -0500
+	<br><b>From:</b> del@ecn.purdue.edu (de l`abattoir)
+	<br><b>Subject:</b> chat with pat
+	<p>
+	i spoke with pat over the weekend and the butcher man hasnt<br>
+	been doing too well.  i may transcribe highlights of our conversation,<br>
+	but in summary:<br>
+	<br>
+	o	yes!  the new album has been completed, and it is &quot;cult of<br>
+	${icon_blank}	the basement 2.&quot;  julian, alex lee (of the aeroplanes) and<br>
+	${icon_blank}	laurence (!) play guitar.  paul is still playing drums<br>
+	${icon_blank}	(at least in the studio).  about a dozen musicians showed up on it<br>
+	${icon_blank}	and he was fretting over the credits when we talked.<br>
+	<br>
+	o	pat has been playing small shows in london which he describes as<br>
+	${icon_blank}	being &quot;very spacemen&quot;.  lots and lots of delay and very little<br>
+	${icon_blank}	beat.  he is very proud of this latest sound, but has yet to<br>
+	${icon_blank}	record it for release.<br>
+	<br>
+	o	next week he will be recording an EP with richard formby.<br>
+	${icon_blank}	so perhaps he *is* about to record the new sound, as richard<br>
+	${icon_blank}	has been producing the telescopes and other grunge bands.<br>
+	<br>
+	o	the tour.  nothing definite, but possibly before december.<br>
+	${icon_blank}	even then, he is not sure what he wants to perform - the traditional<br>
+	${icon_blank}	new cult material or the new stuff he has been doing.<br>
+	${icon_blank}	he is going to be over in the states visiting in august.<br>
+	<br>
+	o	pat had just returned from the west coast where he did some<br>
+	${icon_blank}	vocal work with the blue aeroplanes.  he is almost certain,<br>
+	${icon_blank}	however that all his stuff will be cut.<br>
+	<br>
+	o	the Black Eg.  all the delay effects on the Black Eg record are pats<br>
+	${icon_blank}	guitar delay pedal before it blew up upon his return to england<br>
+	${icon_blank}	in january.  so he calls the Black Eg alum the &quot;solo record for<br>
+	${icon_blank}	my guitar pedal&quot;.  apparently, the guitar pedal wasnt the only<br>
+	${icon_blank}	thing to go to pieces in january.  he laughed manically at the thought<br>
+	${icon_blank}	that he recorded during this time.  in england, the Black Eg<br>
+	${icon_blank}	record is plastered with &quot;Von Jazz Butcher&quot; stickers.  pat wanted<br>
+	${icon_blank}	his involvement not to be known, so the stickers pissed him off.<br>
+	${icon_blank}	the A C Lionheart (ha!) who wrote the liner notes is, of course, pat.<br>
+	<br>
+	<br>
+	thats all i can remember right now.<br>
+	off on a road trip to philadelphia in about an hour, i will<br>
+	see if there is anything i forgot when i get back.<br>
+	<br>
+	happy 5th of july.<br>
+	<br>
+	-david<br>
+	&quot;a girl is an animal with long pointy horns&quot; - vergiftung<br>
+	${jbc_footer}
+#live	endif
+
+#define	0045.html
+#live	if (getval(page) = 0045.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0044.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0046.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 29 Jul 91 14:45:51 CDT
+	<br><b>From:</b> Falls on Floor &lt;beaulieu@chsun1.spc.uchicago.edu&gt;
+	<br><b>Subject:</b> Pee Wee Herman
+	<p>
+	I was just listening to the news, and it seems that Pee Wee Herman<br>
+	was just arrested in Florida for &quot;exposing himself in an adult<br>
+	movie theatre&quot;.  Whatever network Pee Wee's Playhouse is on is<br>
+	considering whether or not they should scrap the show.  Too bad.<br>
+	It is probably the funniest thing on saturday mornings.<br>
+	<br>
+	Deerkiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0046.html
+#live	if (getval(page) = 0046.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0045.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0047.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 14 Aug 91 12:41:52 CST
+	<br><b>From:</b> BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt;
+	<br><b>Subject:</b> Spacemen 3 Record
+	<p>
+	I was just in my local hip record store, and they had a really cool<br>
+	new Spacemen 3 record.  It is a single album with lots of rare b<br>
+	sides and demos and stuff.  Its packaged in a double album package,<br>
+	and in the fold out area there is a complete discography, including<br>
+	common bootlegs.  (It even lists the &quot;Taking Drugs to Make Music to<br>
+	Take Drugs To&quot; bootleg!)  It also has an essay by some music critic<br>
+	guy about the Spacemen.  The front and back covers are made up of a<br>
+	sort of collage of all of the Spacemen 3 album covers.  Inside is this<br>
+	little fold out thing with the song list and all these pictures of<br>
+	the band.  It was made in Belgium, but it doesn't say who put it out.<br>
+	Its called &quot;Losing Touch With Your Mind&quot;.  The thing is that only 1500<br>
+	were pressed, and only 500 were imported.<br>
+	${jbc_footer}
+#live	endif
+
+#define	0047.html
+#live	if (getval(page) = 0047.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0046.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0048.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Sat, 17 Aug 91 14:45:16 WST
+	<br><b>From:</b> davidc@cs.uwa.oz.au (David CAKE)
+	<br><b>Subject:</b> hellos
+	<p>
+	I have been asked to introduce myself and say a bit about the Jazz Butcher in<br>
+	Australia. My name is David Cake, I'm a cognitive science student, and I also<br>
+	am an announcer for the local public radio station 6RTR. The Jazz Butcher in<br>
+	Australia is easy - hes never been here, and no one has eever heard of him.<br>
+	${icon_blank}	The alternative music shows on public radio were the only place he was<br>
+	ever heard until recently. Just recently the government funded national youth<br>
+	broadcaster JJJ (who are amazingly cool for a government body, we are real <br>
+	strange over here) have picked up 'shes on drugs` 'girl go` etc. so he gets<br>
+	vastly more exposure here now, but all the older stuff is virtually unknown.<br>
+	${icon_blank}	Jazz Butcher records have always been quite hard to get here. That has<br>
+	improved a bit since hes been on Creation, and a lot since Creation got a good<br>
+	australian distributor (Shock Records).<br>
+	${icon_blank}	To summarise, JBC have always been very little known here until the<br>
+	last six months. They are now reasonably well known.<br>
+	<br>
+	David Cake<br>
+	<br>
+	P.S. I'd love some back posts.<br>
+	${jbc_footer}
+#live	endif
+
+#define	0048.html
+#live	if (getval(page) = 0048.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0047.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0049.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 29 Aug 91 12:20:22 -0500
+	<br><b>From:</b> del@ecn.purdue.edu
+	<br><b>Subject:</b> where can I get the &quot;spooky&quot; cd-single?
+	<p>
+	stewart asks:<br>
+	&gt; ...anybody have any idea where I might<br>
+	&gt; lay my hands on the &quot;Spooky&quot; Canadian CD-single (or equivalent 12&quot;, if<br>
+	&gt; there is one...I think I remember del saying there was).  I tried <br>
+	&gt; ordering it from a local store about a year or so ago, but no luck...<br>
+	<br>
+	i havent seen many in *my* part of the world (midwest USofA) in awhile,<br>
+	but that particular release, being canadian, is pretty easy to get<br>
+	in the toronto area.  can anyone help stewart out with this one?<br>
+	<br>
+	a note about the spooky 12&quot; - it does NOT include all the tastey<br>
+	&quot;brave new waves&quot; studio session songs that the CD does.  plus,<br>
+	and this is uncommon - the 12er sounds worse than the CD.  usually,<br>
+	the vinyl version of creation releases have a better dynamic range<br>
+	than their shaving mirror counterparts.<br>
+	<br>
+	dangerous rumour:  deerkiller reports that a friend in NYC has spotted<br>
+	a &quot;new&quot; JBC release.  its possible that she just saw _edwards closet_,<br>
+	but everyone should be on the lookout anyway.<br>
+	<br>
+	since speaking with mr fish over a month ago, i have heard not a peep.<br>
+	martin reports as of two weeks ago that pat was in ireland.<br>
+	its getting to be that time of year again.  i hope the JBC wheels<br>
+	roll soon.<br>
+	<br>
+	how has everyone been?  gagged?<br>
+	<br>
+	-david<br>
+	&quot;you tie me up and i dont want to disengage&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0049.html
+#live	if (getval(page) = 0049.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0048.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0050.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 17 Sep 91 9:59:19 EDT
+	<br><b>From:</b> Nancy Everson &lt;everson@BBN.COM&gt;
+	<br><b>Subject:</b> Condition Blue review and Levitation
+	<p>
+	Hey gang,<br>
+	<br>
+	&lt;a href=&quot;${jbc_press}/91rage.html&quot;&gt; Here's a review&lt;/a&gt;<br>
+	of &quot;Condition Blue&quot; from some British magazine<br>
+	(a friend of mine sent me the clipping):<br>
+	<br>
+	She also sent me a clipping about a band called Levitation that features <br>
+	their &quot;bass maestro Laurence&quot;.  And yes, it's the same Laurence...  The <br>
+	article is one in a series -- &quot;Each week a member of leading Daisy Age <br>
+	pomp-rockers Levitation offers our reader some handy hints from their<br>
+	lexicon of country lore.  This week, bass maestro Laurence shows us how<br>
+	to achieve onenss with nature while simultaneously protecting valuable<br>
+	seedlings.&quot;<br>
+	<br>
+	Anyone heard anything by Levitation?  Can't say I'm too attracted by the<br>
+	&quot;Daisy Age pomp-rock&quot; description....<br>
+	<br>
+	-nancy<br>
+	${jbc_footer}
+#live	endif
+
+#define	0050.html
+#live	if (getval(page) = 0050.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0049.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0051.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 17 Sep 91 12:15:10 -0500
+	<br><b>From:</b> del@ecn.purdue.edu
+	<br><b>Subject:</b> Condition Blue and Levitation
+	<p>
+	i havent heard anything by the Levitation, but last weekend i picked up the<br>
+	new pete astor album, which laurence also plays bass on.<br>
+	ian keary (ex-blue aeroplane) also appears.<br>
+	<br>
+	when i spoke with pat a couple of months ago, he mentioned<br>
+	that before he came over to the US, he would be touring<br>
+	europe with pete astor.<br>
+	<br>
+	sounds like he is going through hell, though.<br>
+	<br>
+	i hope he keeps that minimum balance.  :-|<br>
+	<br>
+	-david<br>
+	${jbc_footer}
+#live	endif
+
+#define	0051.html
+#live	if (getval(page) = 0051.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0050.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0052.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 18 Sep 91 16:46:48 MET DST
+	<br><b>From:</b> Alexander Vrchoticky &lt;alex@miles.vmars.tuwien.ac.at&gt;
+	<br><b>Subject:</b> fishcotheque ...
+	<p>
+	taking the 168 bus from hampstead heath to waterloo station (we're talking<br>
+	london buses here, poppets), and looking out the left window, there it is: <br>
+	tucked underneath a railway bridge at waterloo station, greasy<br>
+	as a can of lard, is the fish+chips takeaway that's on the cover <br>
+	of that album.<br>
+	<br>
+	just another bit of utterly useless trivia for the jbc-heads out there :-)<br>
+	<br>
+	-alex<br>
+	&quot;it's never enough to see how others fall in love&quot; (the blue aeroplanes)<br>
+	${jbc_footer}
+#live	endif
+
+#define	0052.html
+#live	if (getval(page) = 0052.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0051.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0053.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 19 Sep 91 17:21:03 -0500
+	<br><b>From:</b> del@ecn.purdue.edu (de l`abattoir)
+	<br><b>Subject:</b> news from the front room
+	<p>
+	i just talked with my friend scott in new jersey.<br>
+	over the weekend, scott called pat and discussed things.  in summary:<br>
+	<br>
+	pat just came back from the west coast where he<br>
+	OPENED FOR ROBYN HITCHCOCK.<br>
+	ok, ladies and gents - why wasnt this general knowledge?  back from the<br>
+	land of bliss, scott said pat seemed in a really good mood.<br>
+	<br>
+	the new album was expected to be released in the UK in about<br>
+	*3 weeks*, which doesnt not jibe with the Reckless Records Chicago story.<br>
+	he didnt even know what the cover would look like.  it seems things were<br>
+	held up because they had to call him to check the song credits..<br>
+	&quot;WHO else would get credit for this?&quot;  expect a record full of long<br>
+	_pineapple tuesday_-esqueness.  fine with *me*.<br>
+	richard formby appears on guitar again, alex green on sax.<br>
+	<br>
+	upcoming for the poppets in france:  pat will be touring there around the<br>
+	20th of october.  i may try to get european tour dates out of him myself<br>
+	so that the '91 tour is documented (right, joe?)<br>
+	bad news for the rest of us - he does NOT have a US tour planned as of last<br>
+	weekend.  he said that he may hold out until next summer.<br>
+	<br>
+	other things..  he loves the new primal scream album (on creation, naturally).<br>
+	paul mulreany is playing drums for the blue aeroplanes.  richard formby<br>
+	is still working with sonic from the spacemen 3.<br>
+	<br>
+	second hand news, i know, but news nonetheless..<br>
+	<br>
+	-david<br>
+	&quot;keeping curtains closed&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0053.html
+#live	if (getval(page) = 0053.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0052.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0054.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 19 Sep 91 18:41:41 EDT
+	<br><b>From:</b> woj@remus.rutgers.edu (woj)
+	<br><b>Subject:</b> let's try this again...
+	<p>
+	forgot about the pasture bit the first time through with this...<br>
+	<br>
+	del@ecn.purdue.edu (de l`abattoir) sez:<br>
+	&gt;pat just came back from the west coast where he OPENED FOR ROBYN HITCHCOCK.<br>
+	<br>
+	neat. that is a good thing (tm) cos that show that robyn did on the west<br>
+	coast was a promotional type of show, where the majority of the audience<br>
+	(if not all of it) was record and radio industry people (robyn is trying<br>
+	to push the new record on aor if he can - or a&amp;m is - or both of them are).<br>
+	<br>
+	presently have a copy of the &quot;spooky&quot; cd in my possesion - i have to return<br>
+	it to the rightful owner eventually, but the one quick listen i've had<br>
+	so far (finally!) was promising...and the sessions from brave new waves<br>
+	are great. <br>
+	<br>
+	so that is what brant bambury looks like. and he sings too? wow...never<br>
+	would have thought that after listening faithfully for three years when i<br>
+	lived nigh to the great white north.<br>
+	<br>
+	woj@remus.rutgers.edu - smou/dj-for-hire - cutting out a silouette of dreams<br>
+	${jbc_footer}
+#live	endif
+
+#define	0054.html
+#live	if (getval(page) = 0054.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0053.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0055.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 26 Sep 91 19:32:34 EDT
+	<br><b>From:</b> woj@remus.rutgers.edu (woj)
+	<br><b>Subject:</b> jb and rh in la
+	<p>
+	the show was arranged by robyn as a promotional thing for his new record,<br>
+	_perspex island_. i guess he invited pat to open for him (bianca &quot;bob&quot;<br>
+	miller opened for the nyc promotional show) and pat obliged (knowing that<br>
+	the two hobnob a lot over in old blighty, this isn't really surprising).<br>
+	i don't know anyone who got in though - all the tickets that were avail-<br>
+	able to the public were snarfed up by a&amp;m records. bastards.<br>
+	<br>
+	woj@remus.rutgers.edu - smou/dj-for-hire - cutting out a silouette of dreams<br>
+	${jbc_footer}
+#live	endif
+
+#define	0055.html
+#live	if (getval(page) = 0055.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0054.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0056.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 30 Sep 91 10:59:43 CST
+	<br><b>From:</b> BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt;
+	<br><b>Subject:</b> Confirmation of bad news
+	<p>
+	I just spoke with the Reverend Botus.  While in Germany producing the new<br>
+	KMFDM album, he spoke with Pat.  Pat will definitely not be touring the US<br>
+	until next summer.  The problem is that since Rough Trade has ceased to exist<br>
+	there is no one to put up the money for the tour.  He said that he thinks that<br>
+	he has found someone to take care of the distribution of &quot;Condition Blue&quot;.<br>
+	<br>
+	Deerkiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0056.html
+#live	if (getval(page) = 0056.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0055.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0057.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 22 Oct 91 19:06:16 -0700
+	<br><b>From:</b> frendli@cats.UCSC.EDU
+	<br><b>Subject:</b> jbc fanclub
+	<p>
+	My name is Arik Florimonte, i've been a fan since about summer '88... and<br>
+	fortuneately there was a large backlog of jbc music to keep myself amused,<br>
+	bnut lately i have felt a loss of good things to come from the man...<br>
+	I have all the import and domestic albums, except bathofbacon, which i will very<br>
+	shortly be able to tape, i'm set there.  I don't have any of his singles, but<br>
+	if i'm not mistaken, many of those songs have been on complilations.(?)<br>
+	my favourite album would have to be DistressedGF.  I missed a chance to see the<br>
+	jbc on their fishcotheque tour, but saw them on their bpsp tour, and passed on<br>
+	the cult of the b. tour, although i had originally planned to follow them around<br>
+	california. it just fell through.<br>
+	When i saw them at the Roxy in hollywood on the bpsp tour, my friends and i<br>
+	managed to hang around and meet Lawrence O'Keefe and get on the guest list the<br>
+	following night.  That was certainly a high point, although a lot of it has<br>
+	faded from memory.  I remember him being fascinated by the Lakers and saying<br>
+	that the next album was going to be the really good, one, no, not the next one<br>
+	but the one after that.  I hope he didn't mean Edward's closet (what a ripoff.)<br>
+	We realized later that we came very close to being invited to stay at their<br>
+	hotel with them.  We told Lawrence that we had driven down from Santa Cruz to<br>
+	see them and LA and he was concerned that we didn't have a place to stay. we of<br>
+	course didn't think to say no, and told him we were sleeping in the car.<br>
+	I always wondered what would have happened.<br>
+	<br>
+	Thanks, <br>
+	Arik<br>
+	${jbc_footer}
+#live	endif
+
+#define	0057.html
+#live	if (getval(page) = 0057.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0056.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0058.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Fri, 01 Nov 91 14:54:06 CST
+	<br><b>From:</b> BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt;
+	<br><b>Subject:</b> The Fish
+	<p>
+	I just spoke with Herr Fish.  According to him, the new album should be <br>
+	available here within days as an import, and by January as a domestic<br>
+	release.  Two american record companies are fighting over the rights to<br>
+	it, I guess.  He has been away working with a band called The Love Kittens.<br>
+	They do a cover of Angels.  While they were doing the cover of Angels,<br>
+	the singer fell ill, and Pat was forced to finish the vocals.<br>
+	<br>
+	The new type of music that he has been performing in France, and will be<br>
+	performing in Spain and Germany in the next few months is called<br>
+	&quot;Gothic Techno-folk&quot; and consists of him and a guitar player and a <br>
+	saxophonist (i.e. Alex).  Oh yeah, and a drum machine.  He said he was really<br>
+	pleased because they could just get on a train and ride around and not have<br>
+	to worry about a drum kit.  Speaking of drummers, both Paul and Mr. Jones<br>
+	play on the new album.  <br>
+	<br>
+	15 people played on the new album, and he said that he was considering calling<br>
+	the band &quot;The Jazz Butcher Anti-Sonic Tabernacle&quot;.<br>
+	<br>
+	The new album has a picture of &quot;naked french people&quot; on the sleeve.  Another<br>
+	Jean Paul Looney creation, I guess.<br>
+	<br>
+	By the way, Devoid, Pat said to tell you &quot;try to remember that the LEFT<br>
+	pedal is the brake&quot;.  <br>
+	<br>
+	Later, y'all!<br>
+	<br>
+	DEERKILLER<br>
+	${jbc_footer}
+#live	endif
+
+#define	0058.html
+#live	if (getval(page) = 0058.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0057.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0059.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 4 Nov 91 21:51:25 -0800
+	<br><b>From:</b> frendli@cats.UCSC.EDU
+	<br><b>Subject:</b> hello and stuff.
+	<p>
+	I was thinking, the most exciting mail i get are the ones from the jbcfanclub,<br>
+	so i thought i'd add my two bits to the discussion.<br>
+	<br>
+	first, you all probably have access to this, but I have a tape of David J., Max,<br>
+	&amp; op jones on &lt;snap&gt; KCRW Los Angelese from two summers ago.  It's taped off<br>
+	the air and not necessarily that interesting, but it is MORE STUFF.<br>
+	I think they do 'fingers in the grease', 'the grass is always greener' and (i<br>
+	think) a (john cale?) cover-- 'antarctica starts here'.<br>
+	<br>
+	Also, i've got a friend in my dorm who's convinced that he's going to be the<br>
+	next guitar player for the JBC.  He wants me to send notice along to butch of<br>
+	that.  I used to think i was going to be their next bass player...<br>
+	And that got me to thinking, that probably a lot of us have musical talents.  I<br>
+	realize that with our small number that you aren't likely to live around here,<br>
+	but i'm just itchin' to play some tunes since my old band just broke up.<br>
+	unlikely, but if in Santa Cruz, CA area, email frendli@cats.ucsc.edu.<br>
+	<br>
+	I've taken up enough bytes, methinks.<br>
+	And be sure to pass it along to Pat if you see him that there is a guitarist<br>
+	(and a bassist) here that would do nicely.<br>
+	<br>
+	Arik<br>
+	${jbc_footer}
+#live	endif
+
+#define	0059.html
+#live	if (getval(page) = 0059.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0058.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0060.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 11 Nov 91 11:18:00 CST
+	<br><b>From:</b> BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt;
+	<br><b>Subject:</b> Got it
+	<p>
+	Well, I just picked up &quot;Condition Blue&quot; this weekend.  Nine songs, 55 minutes.<br>
+	Those of you with calculators can average it out.  But anyway, the songs are <br>
+	looooooooong.  I am going to reserve judgement on it until later in the week,<br>
+	as is our gracious host Devoid (who zipped up here from Purdue when he heard<br>
+	that I had found it).  My reason is that JBC albums usually take a while to <br>
+	grow on me.  There are three songs on the new album that totally blew me away,<br>
+	and there is only one that I can say that I really don't like, and there are <br>
+	some tracks that are difficult at first listen.  But then again, I was really<br>
+	ambivalent about Distressed Gentlefolk, Fishcotecqhe, BigScarey, and Cult O'<br>
+	the Basement the first time I heard them as well.  So both Devoid and I are <br>
+	going to give it several more listens before we actually post a real review.<br>
+	I'd really like to hear what anyone else who manages to stumble onto it has<br>
+	to say about it.  But it is definitely worth getting, even if it is just for<br>
+	&quot;Racheland&quot;.  Later, y'all.<br>
+	<br>
+	Der Deerkiller<br>
+	<br>
+	&quot;I think the man next door is having a nervous breakdown<br>
+	${icon_blank} Sounds like he's me in there<br>
+	${icon_blank} Don't know if I believe you care&quot;<br>
+	<br>
+	-from &quot;Racheland&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0060.html
+#live	if (getval(page) = 0060.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0059.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0061.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Fri, 22 Nov 91 17:08:35 -0800
+	<br><b>From:</b> frendli@cats.UCSC.EDU
+	<br><b>Subject:</b> cd catalog
+	<p>
+	ok. the name of the catalog that i saw the older jbc cd's listed in is<br>
+	C<br>
+	oops.<br>
+	CD International<br>
+	<kbd>
+<br>
+	CDI Publishing Corp.<br>
+	PO Box 22014<br>
+	Milwaukie, OR  97222<br>
+	USA<br>
+	(503) 652-1291 editorials<br>
+	(503) 652-1291 subscriptions<br>
+	(503) 654-1132 distribution only<br>
+	<br>
+	when i looked last they had everything in it, but Big Questions was *'ed,<br>
+	meaning that it probably isn't available.  Didn't see spooky either, come to<br>
+	think of it/<br>
+	good luck.<br>
+	-arik<br>
+	</kbd>
+	${jbc_footer}
+#live	endif
+
+#define	0061.html
+#live	if (getval(page) = 0061.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0060.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0062.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 25 Nov 91 14:02:33 MET
+	<br><b>From:</b> Alexander Vrchoticky &lt;alex@miles.vmars.tuwien.ac.at&gt;
+	<br><b>Subject:</b> the man comes around
+	<p>
+	my place, though, not yours :-)<br>
+	<br>
+	there is a date scheduled for december 14th here, vienna, austria.<br>
+	`an evening of fine pop music: the jazz butcher and peter astor'.<br>
+	<br>
+	more of that as the time arrives.<br>
+	<br>
+	-alex<br>
+	${jbc_footer}
+#live	endif
+
+#define	0062.html
+#live	if (getval(page) = 0062.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0061.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0063.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 02 Dec 91 06:11:08 CST
+	<br><b>From:</b> BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt;
+	<br><b>Subject:</b> JBC Retrospective Radio Show
+	<p>
+	Yeah, I pretty much agree with you about the old stuff.  Girlfriend, Next Move,<br>
+	Angels, Southern Mark Smith (both versions), and Olof Palme all make my list<br>
+	of the songs to put on the show.  The one thing that I have not yet decided is<br>
+	if I should play the record versions or live versions of the songs in question.<br>
+	If I play the live version of Angels, I will play the one on the 1989 Chicago<br>
+	tape.  (Did David get that one to you?)  But, I also have a 1986 version with<br>
+	Max on guitar and a 1990 version with Julian on guitar.  The same goes for <br>
+	Southern Mark Smith and Girlfriend (but I don't think that they did it on the <br>
+	1989 tour).  The first thing that I am going to have to do is play all of the<br>
+	JBC tapes that I have and write down set lists, and then pick the songs that I<br>
+	want to play and then listen to each version and decide which one I like best at<br>
+	that particular moment.<br>
+	<br>
+	Now, about Condition Blue...<br>
+	<br>
+	Racheland is the Butcher at his best.  The rest of the album I have some (minor)<br>
+	problems with.  In general, the songwriting is top notch (with the exception of<br>
+	Honey, which I cannot stand).  But some of it is just too produced(?), maybe.<br>
+	Case in point - the background vocals at the end of Harlan.  And the background<br>
+	vocals in Girls Say Yes, which is a terrific song otherwise (and maybe despite<br>
+	the background vocals).  Shirley is really cool.  Monkeyface I can take or leave<br>
+	.  I don't think I like She's a Yo-Yo.  The song with the weird sax bit at the<br>
+	beginning would have been a lot better if it had been less produced.<br>
+	<br>
+	So all-in-all, I would have to give the album as a whole an extremely reluctant<br>
+	thumb down.  I mean, I would definitely reccommend it to anyone familiar with<br>
+	with JBC if only on the merits of Racheland, Girls Say Yes, and Harlan.  But I<br>
+	think that this would be a poor introduction to the JBC.<br>
+	<br>
+	But I think that the stuff on this record is going to be really amazing live, <br>
+	when the songs are going to be really stripped down and concentrate on the<br>
+	songwriting and the melodies and all of the things that I love the most about<br>
+	Pat's songs.  But the truth is that for the last two albums (BigScarey, <br>
+	Basement, and this one) I have not been that particularly fond of a lot of the<br>
+	songs until I heard them live.<br>
+	<br>
+	Now I feel kind of bad because I feel like I am being over-critical.  I guess<br>
+	what I am trying to get at is this:  the songs are definitely there, but it<br>
+	seems like he is having trouble getting them from the instruments and onto the<br>
+	medium without the production getting in the way.  One really notable exception<br>
+	to this is &quot;Onion Field&quot; off of Basement.  That is a really terrific song, and<br>
+	the production is so tastefully done that you don't even notice it.  Compare <br>
+	that to the song on &quot;C.B.&quot; with the sax thing at the beginning whose name I can<br>
+	never remember (you know, the one that goes &quot;did you think you were doing me a<br>
+	favor...&quot;).  On that one, the production is just too overdone for my taste.<br>
+	<br>
+	But, I definitely agree with you about the songs themselves.  For me, though,<br>
+	the entire record revolves around Racheland, Girls Say Yes, and Harlan.<br>
+	<br>
+	So, am I being too harsh and over-critical?  I would definitely like to hear<br>
+	what other people think about this.<br>
+	<br>
+	-Deerkiller<br>
+	<br>
+	&quot;Food food food and sex and sex and food and food and sex and food and sex and<br>
+	drink and sex and laughs and sex&quot; -the jazz butcher (from Cowgirl Fever)<br>
+	${jbc_footer}
+#live	endif
+
+#define	0063.html
+#live	if (getval(page) = 0063.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0062.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0064.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 2 Dec 91 13:00:05 -0800
+	<br><b>From:</b> frendli@cats.UCSC.EDU
+	<br><b>Subject:</b> oka, forthose...
+	<p>
+	of you lucky enought to hear the record, i have some q's.<br>
+	Are there any really good guitar solos on it?<br>
+	any potential classics that groups of drunk people will howl together at parties<br>
+	while desparately hanging on one another?<br>
+	<br>
+	is anyone else a fan of Nikki Sudden's Robespierre's Velvet basement album?<br>
+	He also has another good one...  this was early Glass..<br>
+	it's quite good once you get past the Dylanesque vocal style.<br>
+	<br>
+	&quot;The conversation's limited to say the very least&quot;<br>
+	<br>
+	-arik<br>
+	${jbc_footer}
+#live	endif
+
+#define	0064.html
+#live	if (getval(page) = 0064.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0063.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0065.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Mon, 2 Dec 91 16:16:35 -0500
+	<br><b>From:</b> del@ecn.purdue.edu (de l`abattoir)
+	<br><b>Subject:</b> burning blue heart
+	<p>
+	&gt; <br>
+	&gt; Are there any really good guitar solos on it?<br>
+	<br>
+	in the sense that a spacemen 3 record would have a really good guitar solo.<br>
+	as deerkiller pointed out, the songs are rather _onion field_-ish in feel,<br>
+	with a guitar &quot;presence&quot; more than a guitar lead.  _shes a yo-yo_ (which is<br>
+	my least fave track) is traditional staight up no chaser rock ala<br>
+	_line o death_.<br>
+	<br>
+	i *like* the over-production, especially on _filth_ with female backup<br>
+	and crowd screams mixed in.  pat is experimenting and even if the results<br>
+	are not perfect, they are listenable and a new approach to the 'D' chord.<br>
+	he has grown musically since _big planet_.  isnt that what its about?<br>
+	<br>
+	deeklicker is right.  _racheland_ is a fabulous &quot;my cat was just squashed<br>
+	by a car right in front of me&quot; song of lost lurve and desparation and<br>
+	determination.  emotionally complex as _angels_.<br>
+	<br>
+	&gt; any potential classics that groups of drunk people will howl together<br>
+	&gt; at parties while desparately hanging on one another?<br>
+	<br>
+	the entire album.  honestly.  i find that i can put it on and let it<br>
+	work into my brain where it finds a nice niche that says &quot;lets get drunk<br>
+	and cry some, if theres a shoulder i will take, if not, fuck off&quot;.<br>
+	the album has a mood unlike any of the other recent albums.<br>
+	i recommend it soley on that fact.<br>
+	did that answer your question?<br>
+	<br>
+	&gt; <br>
+	&gt; is anyone else a fan of Nikki Sudden's Robespierre's Velvet basement album?<br>
+	&gt; He also has another good one...  this was early Glass..<br>
+	<br>
+	i have a bit of nikki suddens work which i like alot.  even more upfront<br>
+	drinking sorrow music.  reaching for a jbc tie-in,<br>
+	the german band M Walking On The Water has a tune called _love_<br>
+	on which both pat fish and nikki sudden sit in.<br>
+	jbc-list alex can answer questions about M...<br>
+	<br>
+	-david<br>
+	&quot;its almost brooklyn&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0065.html
+#live	if (getval(page) = 0065.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0064.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0066.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 04 Dec 91 14:39:48 CST
+	<br><b>From:</b> BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt;
+	<br><b>Subject:</b> Pus Filled Blue Heart
+	<p>
+	Yeah, that's kind of gross, but that is what it looks like at 4 AM after too<br>
+	much vodka.  But, to the point...<br>
+	<br>
+	Maybe I was a little to harsh on the production of Condition Blue, but I still<br>
+	think that some of my criticism is warrented.  Those last 10 seconds of Harlan,<br>
+	with the loud echoy sighing background vocals really bugs me.  A friend of mine<br>
+	put it best when she said, &quot;what's this? fuckin' Christmas music?&quot;.  But it is<br>
+	still a great tune, and I can't seem to get it out of my head today, esp. the<br>
+	part where he keeps singing &quot;you know all about it, you know all about it...&quot;.<br>
+	<br>
+	I think that I am going to call pat this weekend and try to set up a time to<br>
+	do the phone interview thing for the radio show.  Between now and the time I<br>
+	do the interview I have to decide what I am going to play so I can ask him about<br>
+	the specific songs.  In the interview I am going to concentrate on old songs and<br>
+	on his future plans.  I will try to avoid talking about the songs on this record<br>
+	.  I can see it now:<br>
+	<br>
+	Q- So, what insprired you to write Racheland?<br>
+	A- Well, I got divorced, had a nervous breakdown, and I was contemplating<br>
+	${icon_blank}   death.<br>
+	<br>
+	Q- And what inspired you to write &quot;Still and All&quot;?<br>
+	A- Well, I got divorced, had a nervous breakdown, and I was contemplating<br>
+	${icon_blank}   death.<br>
+	<br>
+	Q- And what about &quot;Harlan&quot;<br>
+	<br>
+	...and so on.<br>
+	<br>
+	<br>
+	On my radio show this week, I played something off of Asylum Road by the<br>
+	Perfect Disaster.  It completely blew away anything I had heard by them<br>
+	before, and the song I played sounded like a blueprint for Girl Go.<br>
+	<br>
+	And speaking of Girl Go, I guess there won't be a single this time around.<br>
+	But if there was 1) what would it be, and 2) what SHOULD it be.  The only<br>
+	reason I ask is that I remember David saying that Pineapple Tuesday should have<br>
+	been the single off of Basement.  I think it should have been Sister Death.<br>
+	<br>
+	Later...<br>
+	<br>
+	BeerSwiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0066.html
+#live	if (getval(page) = 0066.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0065.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0067.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 5 Dec 91 16:29:26 -0800
+	<br><b>From:</b> frendli@cats.UCSC.EDU
+	<br><b>Subject:</b> since i haven't heard
+	<p>
+	the new album yet  (i've only seen it on vinyl and my turntable's been broken<br>
+	for years), i can't really say what i think the single should (have) be(en).<br>
+	<br>
+	but i can talk about C.oftheB.  The best songs on which were (imho) Girl go<br>
+	(because of that great sax part at the beginning), Mr. Odd (because of the<br>
+	backup vocal on the line &quot;from Winnipeg&quot;) and my Zepplin, for the guitar solo<br>
+	and throwback country and western style.  The rest is pretty good, except for<br>
+	Turtle Bait  (aeck!)... Panic is predictable.  so's sisterdeath.<br>
+	ohyeah, i liked daycare nation too.<br>
+	but all in all i thought girlgo was the best choice for a single.<br>
+	I hated the cover, but i like the cover on the new one.<br>
+	<br>
+	my two cents.<br>
+	-arik<br>
+	${jbc_footer}
+#live	endif
+
+#define	0067.html
+#live	if (getval(page) = 0067.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0066.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0068.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Thu, 5 Dec 91 17:37:18 GMT
+	<br><b>From:</b> Joe Nicholson &lt;joe@csv3.cetia.com&gt;
+	<br><b>Subject:</b> Since I have heard it
+	<p>
+	I have heard the new album and I don't think it is good as the<br>
+	previous albums. People may agree that:<br>
+	<br>
+	- the songs will probably be brilliant live<br>
+	- the guy has gone through a hard time, and<br>
+	- we will all be looking forward to the new (i.e., the one after<br>
+	${icon_blank}  Condition Blue) album<br>
+	<br>
+	I'll double your two cents.....<br>
+	<br>
+	Joe<br>
+	${jbc_footer}
+#live	endif
+
+#define	0068.html
+#live	if (getval(page) = 0068.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0067.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0069.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Fri, 06 Dec 91 11:09:58 CST
+	<br><b>From:</b> BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt;
+	<br><b>Subject:</b> Let's be fair
+	<p>
+	Alright folks,<br>
+	<br>
+	I think that I have been harping just a little too much on what I don't like<br>
+	about condition blue.  Now, for the people who haven't heard it yet, this kind<br>
+	of sucks because when they listen to it for the first time they will listen for<br>
+	all the bad stuff that people have been telling them about.  So today, I am<br>
+	to post an incomplete list of things that I love about the rekkerd.<br>
+	<br>
+	1)  The beautiful guitar line on &quot;Girls Say Yes&quot;.  Especially on the part where<br>
+	he is singing &quot;She takes you to the movies/she knows that you never ever go&quot;.<br>
+	Perfect.<br>
+	<br>
+	2)  The lyrics on the serious songs.  I think that I would toss &quot;Shirley&quot;<br>
+	and &quot;She's a Yo-Yo&quot; in the same bin as &quot;Line of Death&quot; and &quot;Panic in Room 109&quot;.<br>
+	Except that I do kind of like &quot;Shirley&quot;.  But the lyrics on &quot;Still and All&quot;,<br>
+	&quot;Racheland&quot; (worship! worship!), &quot;Harlan&quot;, and &quot;Gorrilas Say Yes&quot; really do<br>
+	blow me away.<br>
+	<br>
+	3)  Even the two techno-sampling tunes &quot;Monkeyface&quot; and &quot;Our Friends the Filth&quot;<br>
+	have a lot going for them.  Monkeyface is obviously a continuation of &quot;Basement&quot;<br>
+	and would do really well as the theme music for a cheesy cold-war spy thriller<br>
+	set in some third-world country.  Our Friends the Filth is like the Black Eg<br>
+	with a big budget and taken to its logical conclusion.  I am starting to really<br>
+	like some of the tracks on Black Eg, by the way.<br>
+	<br>
+	4) The music on most of the songs is really good as well.  Examples:<br>
+	When the distorted guitar on &quot;Racheland&quot; kicks in, I get serious chills.  And<br>
+	how at the end the tempo picks up and it turns into a big distorted mess.<br>
+	<br>
+	And the guitars on &quot;Shirley&quot; are really cool when you are in that kind of mood.<br>
+	And the more I listen to it, the more I appreciate &quot;Harlan&quot; and the less the<br>
+	background vocals annoy me.<br>
+	So what I would suggest is that you buy it, tape the songs that you like, and<br>
+	then pretend that it is a really awesome ep.  And wait for the next one.<br>
+	<br>
+	BeerSwiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0069.html
+#live	if (getval(page) = 0069.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0068.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0070.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Fri, 6 Dec 91 15:49:29 -0800
+	<br><b>From:</b> frendli@cats.UCSC.EDU
+	<br><b>Subject:</b> coupla things...
+	<p>
+	it seems that since bpsp i've been saying oh well, wait for the next one.  NO.<br>
+	i am determined to like this one.  I have noticed something about record buying,<br>
+	and that's that if you are anticipating a new album, it never lives up to your<br>
+	expectations.  The best ones are the ones that you hear here and there until<br>
+	they grow on you, even if it's a band you already love.<br>
+	${icon_blank}  Sooo.... i'm not going to buy it anytime soon  (i have no choice, i can't<br>
+	FIND it anywhere), and when i do, i'll be really nice to it, maybe chat with it<br>
+	over a cold one, pass no judgements.. etc.<br>
+	<br>
+	The other thing... I'm here in the SantaCruz area, and last night at a local<br>
+	21and over place there were two bands (neither headlining) playing.<br>
+	They were called 'The Butchers' and 'The Best Kissers in the World'.  I think<br>
+	the other band was called 'urj'.  Anyone ever hear of them before? I didn't get<br>
+	down to see the show, though i was very curious.<br>
+	<br>
+	YA KNOW?<br>
+	<br>
+	-arik<br>
+	&quot;don't smoke no reefer, don't take no pills...&quot;<br>
+	${jbc_footer}
+#live	endif
+
+#define	0070.html
+#live	if (getval(page) = 0070.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0069.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0071.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Wed, 11 Dec 91 14:17:13 CST
+	<br><b>From:</b> BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt;
+	<br><b>Subject:</b> Trivia
+	<p>
+	Just had breakfast with the Reverend Botus Whiteblood Fleming (or, as he now<br>
+	calls himself, Reg Bogus or Vlad the Inhaler, Infamous Boozehound of the East).<br>
+	He is leaving for Germany on Friday to record KMFDM.  And he just recorded<br>
+	GERARDO!  Not Geraldo, GERARDO!  You know &quot;RICO SUAVE&quot;!  And he left the<br>
+	master tapes in my apartment for about an hour.  I feel so proud.<br>
+	<br>
+	And I jokingly asked him if GERARDO left his shirt on while he was recording<br>
+	(in his crappy videos he never wears a shirt).  And the answer was no!  Martin<br>
+	said that it was 50 degrees in the studio, and everyone else was wearing their<br>
+	coats, and this bozo refused to put his shirt on.<br>
+	<br>
+	Help me with this logical progression-<br>
+	<br>
+	&gt;From the JBC to KMFDM to GERARDO to ?<br>
+	<br>
+	Debbie Gibson?<br>
+	The New Kids on the Block?<br>
+	Menudo?<br>
+	<br>
+	Actually, I shouldn't make fun of Martin.  It's not like he sought out<br>
+	GERARDO.  Some cool bands also record at his studio.  One of these is<br>
+	&quot;A Tribe Called Quest&quot;.  Sonic Boom also records with them.  But then, so<br>
+	do Samantha Fox and D.J. Jazzy Jeff and the Fresh Prince.  Strange world we<br>
+	live in.<br>
+	<br>
+	Beer Swilling Sexist Pig Oprah-Watching Meat-Eating DeerKiller<br>
+	${jbc_footer}
+#live	endif
+
+#define	0071.html
+#live	if (getval(page) = 0071.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+	<a href="${jbc_root}/articles/1991/0070.html">[Prev]</a>
+	<a href="${jbc_root}/articles/1991/0072.html">[Next]</a>
+<hr noshade size=1>
+	<b>Date:</b> Tue, 17 Dec 91 8:26:11 EST
+	<br><b>From:</b> Nancy Everson &lt;everson@BBN.COM&gt;
+	<br><b>Subject:</b> levitation
+	<p>
+	So has anyone bought anything by Levitation yet?  The DJ this morning on<br>
+	WZBC played a track called &quot;Squirrel&quot;, which I liked, but he said something<br>
+	that surprised me -- 3 of the 5 band members are former JBC members.  I<br>
+	was only aware of Laurence's presence (Cure pun, sorry) in the band.  Who<br>
+	are the other two?<br>
+	<br>
+	still waiting for condition blue,<br>
+	nancy<br>
+	${jbc_footer}
+#live	endif
+
+
+#define	index.html
+#live	if (getval(page) = index.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+<hr noshade size=1>
+	<ol>
+	<li>
+	<i><a href="${base_url}/articles/1991/0001.html">12 Jan, 1991</a></i>
+	Music Express interview (2)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0002.html">17 Jan, 1991</a></i>
+	1985 interview (2)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0003.html">18 Feb, 1991</a></i>
+	recent recordings (30)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0004.html">20 Feb, 1991</a></i>
+	letter from cornelious trout (21)
+	</li>
+	<li>
+	<i>4 Mar, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0005.html">new JBC release</a> (18)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0006.html">new JBC release</a> (11)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>6 Mar, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0007.html">Edwards Closet</a> (15)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0008.html">Edwards Closet</a> (19)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0009.html">27 Mar, 1991</a></i>
+	A new David J lp (9)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0010.html">28 Mar, 1991</a></i>
+	an oooooold single review ... (5)
+	</li>
+	<li>
+	<i>8 Apr, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0011.html">martins wedding & more</a> (56)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0012.html">JB history?</a> (8)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0013.html">16 Apr, 1991</a></i>
+	news on the mental state of mr fish (19)
+	</li>
+	<li>
+	<i>19 Apr, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0014.html">soundtrack jbc</a> (5)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0015.html">soundtrack jbc</a> (15)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0016.html">12 May, 1991</a></i>
+	whats the proverbial up? (32)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0017.html">13 May, 1991</a></i>
+	m. walking ... (33)
+	</li>
+	<li>
+	<i>14 May, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0018.html">Hairbrush?  Tank?</a> (17)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0019.html">Hairbrush? Tank?</a> (27)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0020.html">Hairbrush?  Tank?</a> (21)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0021.html">Woodentops</a> (17)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0022.html">Woodentops</a> (11)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0023.html">15 May, 1991</a></i>
+	The Scary Powers of "BOB" (25)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0024.html">16 May, 1991</a></i>
+	The Scary Powers of "BOB" (22)
+	</li>
+	<li>
+	<i>21 May, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0025.html">a new contingent</a> (15)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0026.html">Old Jazz Butcher interviews: 1986 Non*Stop Banter</a> (2)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0027.html">Old Jazz Butcher interviews: 1990 (unknown)</a> (2)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0028.html">27 May, 1991</a></i>
+	hollywood DAT (23)
+	</li>
+	<li>
+	<i>29 May, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0029.html">upcoming release?</a> (45)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0030.html">upcoming release</a> (20)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>30 May, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0031.html">"The Black Egg"?</a> (9)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0032.html">The Wedding Present</a> (27)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0033.html">upcoming release</a> (23)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>1 Jun, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0034.html">The JBC 1990 San Francisco Show</a> (15)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0035.html">JBC s.f. 1990</a> (17)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>3 Jun, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0036.html">Bill Drummund (the man)</a> (6)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0037.html">Bill Drummund (the man)</a> (10)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0038.html">8 Jun, 1991</a></i>
+	JBC Alumni Report (11)
+	</li>
+	<li>
+	<i>11 Jun, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0039.html">jbc tape 10.23.90 the ritz hollywood</a> (19)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0040.html">interviewing mr fish</a> (29)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0041.html">12 Jun, 1991</a></i>
+	Interview with Mr. Fish (17)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0042.html">23 Jun, 1991</a></i>
+	Quality in sound (18)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0043.html">3 Jul, 1991</a></i>
+	New JBC album (16)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0044.html">5 Jul, 1991</a></i>
+	chat with pat (48)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0045.html">29 Jul, 1991</a></i>
+	Pee Wee Herman (8)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0046.html">14 Aug, 1991</a></i>
+	Spacemen 3 Record (13)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0047.html">17 Aug, 1991</a></i>
+	hellos (19)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0048.html">29 Aug, 1991</a></i>
+	where can I get the "spooky" cd-single? (30)
+	</li>
+	<li>
+	<i>17 Sep, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0049.html">Condition Blue review and Levitation</a> (19)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0050.html">Condition Blue and Levitation</a> (14)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0051.html">18 Sep, 1991</a></i>
+	fishcotheque ... (11)
+	</li>
+	<li>
+	<i>19 Sep, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0052.html">news from the front room</a> (31)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0053.html">let's try this again...</a> (21)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0054.html">26 Sep, 1991</a></i>
+	jb and rh in la (9)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0055.html">30 Sep, 1991</a></i>
+	Confirmation of bad news (8)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0056.html">22 Oct, 1991</a></i>
+	jbc fanclub (25)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0057.html">1 Nov, 1991</a></i>
+	The Fish (28)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0058.html">4 Nov, 1991</a></i>
+	hello and stuff. (23)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0059.html">11 Nov, 1991</a></i>
+	Got it (23)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0060.html">22 Nov, 1991</a></i>
+	cd catalog (19)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0061.html">25 Nov, 1991</a></i>
+	the man comes around (9)
+	</li>
+	<li>
+	<i>2 Dec, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0062.html">JBC Retrospective Radio Show</a> (57)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0063.html">oka, forthose...</a> (13)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0064.html">burning blue heart</a> (41)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0065.html">4 Dec, 1991</a></i>
+	Pus Filled Blue Heart (43)
+	</li>
+	<li>
+	<i>5 Dec, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0066.html">since i haven't heard</a> (15)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0067.html">Since I have heard it</a> (12)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>6 Dec, 1991</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0068.html">Let's be fair</a> (37)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0069.html">coupla things...</a> (20)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0070.html">11 Dec, 1991</a></i>
+	Trivia (27)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0071.html">17 Dec, 1991</a></i>
+	levitation (9)
+	</li>
+	</ol>
+	${jbc_footer}
+#live	endif
+
+#define	from.html
+#live	if (getval(page) = from.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+<hr noshade size=1>
+	<ol>
+	<li>
+	<i>del (de l`abattoir)</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0001.html">Music Express interview</a> (2)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0003.html">recent recordings</a> (30)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0004.html">letter from cornelious trout</a> (21)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0005.html">new JBC release</a> (18)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>mantis@ucscb.UCSC.EDU (NOT spiggy)</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0002.html">1985 interview</a> (2)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0035.html">JBC s.f. 1990</a> (17)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0039.html">jbc tape 10.23.90 the ritz hollywood</a> (19)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>Nancy Everson <everson@BBN.COM></i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0006.html">new JBC release</a> (11)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0015.html">soundtrack jbc</a> (15)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0029.html">upcoming release?</a> (45)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0049.html">Condition Blue review and Levitation</a> (19)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0071.html">levitation</a> (9)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>Mitchell.R.Dickerman@ucs.umass.edu</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0007.html">Edwards Closet</a> (15)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0012.html">JB history?</a> (8)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>del@ecn.purdue.edu (David A Whittemore)</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0008.html">Edwards Closet</a> (19)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0019.html">Hairbrush? Tank?</a> (27)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0024.html">The Scary Powers of "BOB"</a> (22)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0033.html">upcoming release</a> (23)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0037.html">Bill Drummund (the man)</a> (10)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>* <GU090SLB%ITHACA@VM.CC.PURDUE.EDU></i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0009.html">A new David J lp</a> (9)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0014.html">soundtrack jbc</a> (5)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0025.html">a new contingent</a> (15)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>Alexander Vrchoticky <alex@miles.vmars.tuwien.ac.at></i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0010.html">an oooooold single review ...</a> (5)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0017.html">m. walking ...</a> (33)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0051.html">fishcotheque ...</a> (11)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0061.html">the man comes around</a> (9)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>del@ecn.purdue.edu (de l`abattoir)</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0011.html">martins wedding & more</a> (56)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0013.html">news on the mental state of mr fish</a> (19)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0016.html">whats the proverbial up?</a> (32)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0022.html">Woodentops</a> (11)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0028.html">hollywood DAT</a> (23)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0040.html">interviewing mr fish</a> (29)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0042.html">Quality in sound</a> (18)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0044.html">chat with pat</a> (48)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0052.html">news from the front room</a> (31)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0064.html">burning blue heart</a> (41)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0018.html">uc112_424960@emunix.emich.edu (Void where prohibited by law.)</a></i>
+	Hairbrush?  Tank? (17)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0020.html">James Anderson &lt;jamesa@cae.wisc.edu&gt;</a></i>
+	Hairbrush?  Tank? (21)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0021.html">or a reasonable facsimile &lt;stewarte@sco.com&gt;</a></i>
+	Woodentops (17)
+	</li>
+	<li>
+	<i>beaulieu@chsun1.uchicago.edu (Falls on Floor)</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0023.html">The Scary Powers of "BOB"</a> (25)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0026.html">Old Jazz Butcher interviews: 1986 Non*Stop Banter</a> (2)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0027.html">Old Jazz Butcher interviews: 1990 (unknown)</a> (2)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0031.html">"The Black Egg"?</a> (9)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0032.html">The Wedding Present</a> (27)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0034.html">The JBC 1990 San Francisco Show</a> (15)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0038.html">JBC Alumni Report</a> (11)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0041.html">Interview with Mr. Fish</a> (17)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0043.html">New JBC album</a> (16)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0030.html">Craig Kolb &lt;craig@weedeater.math.yale.edu&gt;</a></i>
+	upcoming release (20)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0036.html">drew@tortuga.sandiego.ncr.com</a></i>
+	Bill Drummund (the man) (6)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0045.html">Falls on Floor &lt;beaulieu@chsun1.spc.uchicago.edu&gt;</a></i>
+	Pee Wee Herman (8)
+	</li>
+	<li>
+	<i>BEAULIEU-JOE <beaulieu@norcmail.uchicago.edu></i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0046.html">Spacemen 3 Record</a> (13)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0055.html">Confirmation of bad news</a> (8)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0057.html">The Fish</a> (28)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0059.html">Got it</a> (23)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0062.html">JBC Retrospective Radio Show</a> (57)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0065.html">Pus Filled Blue Heart</a> (43)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0068.html">Let's be fair</a> (37)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0070.html">Trivia</a> (27)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0047.html">davidc@cs.uwa.oz.au (David CAKE)</a></i>
+	hellos (19)
+	</li>
+	<li>
+	<i>del@ecn.purdue.edu</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0048.html">where can I get the "spooky" cd-single?</a> (30)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0050.html">Condition Blue and Levitation</a> (14)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>woj@remus.rutgers.edu (woj)</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0053.html">let's try this again...</a> (21)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0054.html">jb and rh in la</a> (9)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>frendli@cats.UCSC.EDU</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0056.html">jbc fanclub</a> (25)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0058.html">hello and stuff.</a> (23)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0060.html">cd catalog</a> (19)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0063.html">oka, forthose...</a> (13)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0066.html">since i haven't heard</a> (15)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0069.html">coupla things...</a> (20)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0067.html">Joe Nicholson &lt;joe@csv3.cetia.com&gt;</a></i>
+	Since I have heard it (12)
+	</li>
+	</ol>
+	${jbc_footer}
+#live	endif
+
+#define	subject.html
+#live	if (getval(page) = subject.html)
+	<head><title>The Jazz Butcher Conspiracy Mailing List : 1991</title></head>
+	${header}
+	${headerJBC} :
+	<b><a href="${jbc_root}/articles/index.html">Mailing List</a> : <a href="${jbc_root}/articles/1991/index.html">1991</a></b><br>
+	<a href="${jbc_root}/articles/1991/subject.html">[By Subject]</a>
+	<a href="${jbc_root}/articles/1991/index.html">[By Date]</a>
+	<a href="${jbc_root}/articles/1991/from.html">[By Sender]</a>
+<hr noshade size=1>
+	<ol>
+	<li>
+	<i><a href="${base_url}/articles/1991/0001.html">Music Express interview</a></i>
+	del (de l`abattoir) (2)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0002.html">1985 interview</a></i>
+	mantis@ucscb.UCSC.EDU (NOT spiggy) (2)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0003.html">recent recordings</a></i>
+	del (de l`abattoir) (30)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0004.html">letter from cornelious trout</a></i>
+	del (de l`abattoir) (21)
+	</li>
+	<li>
+	<i>new JBC release</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0005.html">del (de l`abattoir)</a> (18)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0006.html">Nancy Everson <everson@BBN.COM></a> (11)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>Edwards Closet</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0007.html">Mitchell.R.Dickerman@ucs.umass.edu</a> (15)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0008.html">del@ecn.purdue.edu (David A Whittemore)</a> (19)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0009.html">A new David J lp</a></i>
+	* &lt;GU090SLB%ITHACA@VM.CC.PURDUE.EDU&gt; (9)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0010.html">an oooooold single review ...</a></i>
+	Alexander Vrchoticky &lt;alex@miles.vmars.tuwien.ac.at&gt; (5)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0011.html">martins wedding & more</a></i>
+	del@ecn.purdue.edu (de l`abattoir) (56)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0012.html">JB history?</a></i>
+	Mitchell.R.Dickerman@ucs.umass.edu (8)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0013.html">news on the mental state of mr fish</a></i>
+	del@ecn.purdue.edu (de l`abattoir) (19)
+	</li>
+	<li>
+	<i>soundtrack jbc</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0014.html">* <GU090SLB%ITHACA@VM.CC.PURDUE.EDU></a> (5)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0015.html">Nancy Everson <everson@BBN.COM></a> (15)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0016.html">whats the proverbial up?</a></i>
+	del@ecn.purdue.edu (de l`abattoir) (32)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0017.html">m. walking ...</a></i>
+	Alexander Vrchoticky &lt;alex@miles.vmars.tuwien.ac.at&gt; (33)
+	</li>
+	<li>
+	<i>Hairbrush?  Tank?</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0018.html">uc112_424960@emunix.emich.edu (Void where prohibited by law.)</a> (17)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0020.html">James Anderson <jamesa@cae.wisc.edu></a> (21)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0019.html">Hairbrush? Tank?</a></i>
+	del@ecn.purdue.edu (David A Whittemore) (27)
+	</li>
+	<li>
+	<i>Woodentops</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0021.html">or a reasonable facsimile <stewarte@sco.com></a> (17)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0022.html">del@ecn.purdue.edu (de l`abattoir)</a> (11)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i>The Scary Powers of "BOB"</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0023.html">beaulieu@chsun1.uchicago.edu (Falls on Floor)</a> (25)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0024.html">del@ecn.purdue.edu (David A Whittemore)</a> (22)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0025.html">a new contingent</a></i>
+	* &lt;GU090SLB%ITHACA@VM.CC.PURDUE.EDU&gt; (15)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0026.html">Old Jazz Butcher interviews: 1986 Non*Stop Banter</a></i>
+	beaulieu@chsun1.uchicago.edu (Falls on Floor) (2)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0027.html">Old Jazz Butcher interviews: 1990 (unknown)</a></i>
+	beaulieu@chsun1.uchicago.edu (Falls on Floor) (2)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0028.html">hollywood DAT</a></i>
+	del@ecn.purdue.edu (de l`abattoir) (23)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0029.html">upcoming release?</a></i>
+	Nancy Everson &lt;everson@BBN.COM&gt; (45)
+	</li>
+	<li>
+	<i>upcoming release</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0030.html">Craig Kolb <craig@weedeater.math.yale.edu></a> (20)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0033.html">del@ecn.purdue.edu (David A Whittemore)</a> (23)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0031.html">"The Black Egg"?</a></i>
+	beaulieu@chsun1.uchicago.edu (Falls on Floor) (9)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0032.html">The Wedding Present</a></i>
+	beaulieu@chsun1.uchicago.edu (Falls on Floor) (27)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0034.html">The JBC 1990 San Francisco Show</a></i>
+	beaulieu@chsun1.uchicago.edu (Falls on Floor) (15)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0035.html">JBC s.f. 1990</a></i>
+	mantis@ucscb.UCSC.EDU (NOT spiggy) (17)
+	</li>
+	<li>
+	<i>Bill Drummund (the man)</i>
+	<ol>
+	<li>
+	<a href="${base_url}/articles/1991/0036.html">drew@tortuga.sandiego.ncr.com</a> (6)
+	</li>
+	<li>
+	<a href="${base_url}/articles/1991/0037.html">del@ecn.purdue.edu (David A Whittemore)</a> (10)
+	</li>
+	</ol>
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0038.html">JBC Alumni Report</a></i>
+	beaulieu@chsun1.uchicago.edu (Falls on Floor) (11)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0039.html">jbc tape 10.23.90 the ritz hollywood</a></i>
+	mantis@ucscb.UCSC.EDU (NOT spiggy) (19)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0040.html">interviewing mr fish</a></i>
+	del@ecn.purdue.edu (de l`abattoir) (29)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0041.html">Interview with Mr. Fish</a></i>
+	beaulieu@chsun1.uchicago.edu (Falls on Floor) (17)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0042.html">Quality in sound</a></i>
+	del@ecn.purdue.edu (de l`abattoir) (18)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0043.html">New JBC album</a></i>
+	beaulieu@chsun1.uchicago.edu (Falls on Floor) (16)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0044.html">chat with pat</a></i>
+	del@ecn.purdue.edu (de l`abattoir) (48)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0045.html">Pee Wee Herman</a></i>
+	Falls on Floor &lt;beaulieu@chsun1.spc.uchicago.edu&gt; (8)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0046.html">Spacemen 3 Record</a></i>
+	BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt; (13)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0047.html">hellos</a></i>
+	davidc@cs.uwa.oz.au (David CAKE) (19)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0048.html">where can I get the "spooky" cd-single?</a></i>
+	del@ecn.purdue.edu (30)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0049.html">Condition Blue review and Levitation</a></i>
+	Nancy Everson &lt;everson@BBN.COM&gt; (19)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0050.html">Condition Blue and Levitation</a></i>
+	del@ecn.purdue.edu (14)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0051.html">fishcotheque ...</a></i>
+	Alexander Vrchoticky &lt;alex@miles.vmars.tuwien.ac.at&gt; (11)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0052.html">news from the front room</a></i>
+	del@ecn.purdue.edu (de l`abattoir) (31)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0053.html">let's try this again...</a></i>
+	woj@remus.rutgers.edu (woj) (21)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0054.html">jb and rh in la</a></i>
+	woj@remus.rutgers.edu (woj) (9)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0055.html">Confirmation of bad news</a></i>
+	BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt; (8)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0056.html">jbc fanclub</a></i>
+	frendli@cats.UCSC.EDU (25)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0057.html">The Fish</a></i>
+	BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt; (28)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0058.html">hello and stuff.</a></i>
+	frendli@cats.UCSC.EDU (23)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0059.html">Got it</a></i>
+	BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt; (23)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0060.html">cd catalog</a></i>
+	frendli@cats.UCSC.EDU (19)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0061.html">the man comes around</a></i>
+	Alexander Vrchoticky &lt;alex@miles.vmars.tuwien.ac.at&gt; (9)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0062.html">JBC Retrospective Radio Show</a></i>
+	BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt; (57)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0063.html">oka, forthose...</a></i>
+	frendli@cats.UCSC.EDU (13)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0064.html">burning blue heart</a></i>
+	del@ecn.purdue.edu (de l`abattoir) (41)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0065.html">Pus Filled Blue Heart</a></i>
+	BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt; (43)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0066.html">since i haven't heard</a></i>
+	frendli@cats.UCSC.EDU (15)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0067.html">Since I have heard it</a></i>
+	Joe Nicholson &lt;joe@csv3.cetia.com&gt; (12)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0068.html">Let's be fair</a></i>
+	BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt; (37)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0069.html">coupla things...</a></i>
+	frendli@cats.UCSC.EDU (20)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0070.html">Trivia</a></i>
+	BEAULIEU-JOE &lt;beaulieu@norcmail.uchicago.edu&gt; (27)
+	</li>
+	<li>
+	<i><a href="${base_url}/articles/1991/0071.html">levitation</a></i>
+	Nancy Everson &lt;everson@BBN.COM&gt; (9)
+	</li>
+	</ol>
+	${jbc_footer}
+#live	endif

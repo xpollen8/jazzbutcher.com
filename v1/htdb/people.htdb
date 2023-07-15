@@ -1,0 +1,1736 @@
+#define	fetchPerformerRole(person, extra_roles)
+#live	if (define(roles->numResults, 0))
+#live	endif
+#live	if ((sql(r:select distinct(instruments) as instr from performance where (performer = "[[person:${space2underscore(${person})}]]" or aka = "[[person:${space2underscore(${person})}]]") and instruments is not null)) && (getnum(r->numResults) > 0))
+	${begTab(Roles)}
+	${tag_beg}Roles${tag_end}
+	<blockquote>
+	${makeArray(roles, [comma], ${prettify(r)})}
+#live	endif
+#live	if (defined(extra_roles))
+	${define(roles->numResults, ${eval(${roles->numResults} + 1)})}
+	${define(roles[${roles->numResults}], ${extra_roles})}
+#live	endif
+#live	if (getnum(roles->numResults) > 0)
+#live	if (define(ruls, ${uniqify(roles)}))
+	${substr(0, ${eval(${strlen(${ruls})} - 1)}, ${ruls})}
+#live	endif
+	</blockquote>
+	${endTab}
+#live	endif
+
+#define	projectsTab_beg
+	${begTab(Projects)}
+	${projects_beg}
+
+#define	projectsTab_end
+	${projects_end}
+	${endTab}
+
+#define	linksTab_beg
+	${begTab(Links)}
+	${links_beg}
+
+#define	linksTab_end
+	${links_end}
+	${endTab}
+
+#define	patTab_beg
+	${begTab(Pat Says)}
+	${patsays_beg}
+
+#define	patTab_end
+	${patsays_end}
+	${endTab}
+
+#define	mkPeopleHeader(title, bio, roles)
+	${mkHeader(section=People, title=${title})}
+	${tag_beg} ${title} ${tag_end}
+	${beg_tabs}
+
+#live	if (defined(bio))
+	${begTab(Profile)}
+	<blockquote>
+	${bio}
+	</blockquote>
+	${endTab}
+#live	endif
+
+#live	if (!(getval(_global_title) = Pat Fish))
+	${fetchPerformerRole(person=${_global_title}, extra_roles=${roles})}
+#live	endif
+
+#define	doPersonPress(person=pat_fish)
+#live	if ((sql(iv:select * from press where type like '%%interview%%' and person='${space2underscore(${person})}' order by dtpublished desc)) && (getnum(iv->numResults) > 0))
+	${begTab(Interviews)}
+	${tag_beg}
+	Interviews
+	${tag_end}
+	<blockquote>
+#live	while (ivi = iv[*]->press_id)
+	<div class="listItem">
+#live	if (defined(iv[${ivi}]->publication))
+		<a href="${iv[${ivi}]->url}">
+			<b>${iv[${ivi}]->publication}</b>
+		</a>
+#live	endif
+#live	if (defined(iv[${ivi}]->title))
+		<a href="${iv[${ivi}]->url}"><i>${iv[${ivi}]->title}</i></a>
+#live	endif
+		<br/>${mkPressDate(${iv[${ivi}]->dtpublished})}
+	</div>
+#live	endwhile
+	</blockquote>
+	${endTab}
+#live	endif
+
+#define	detBeg(a, roles)
+#live	if (getval(a) != Pat Fish)
+#	<blockquote>
+#	${fetchPerformerRole(person=${_global_title}, extra_roles=${roles})}
+#	${albumCredits(person=${a})}
+#	${doGigPerformer(person=${a}, inline=no)}
+#live	endif
+#define	detEnd()
+#	</blockquote>
+
+#define	numArtist	0
+#define	newEntry(prefix)
+	${define(numArtist, ${eval(1 + ${numArtist})})}
+	${define(currentArtist, artist[${numArtist}])}
+	${define(${currentArtist}->performer, ${${prefix}->performer})}
+
+#define	addEntry(prefix)
+#live	if (defined(${currentArtist}->years))
+	${define(${currentArtist}->years, ${${currentArtist}->years},${${prefix}->year})}
+#live	else
+	${define(${currentArtist}->years, ${${prefix}->year})}
+#live	endif
+
+#define	listOfYears2ranges(y)
+	${define(numRange, 1)}
+#live	if (makeArray(yy, [comma], ${y}))
+	${define(range[1]->start, ${yy[1]})}
+	${define(range[1]->end, ${yy[1]})}
+#	<br>start: ${range[1]->start}
+#live	loop(yyi, 1, ${yy->numResults})
+	${define(thisY, ${yy[${yyi}]})}
+	${define(range[${numRange}]->end, ${thisY})}
+	${define(testY, ${eval(1 + ${thisY})})}
+#live	if (defined(yy[${eval(1 + ${yyi})}]))
+	${define(nextY, ${yy[${eval(1 + ${yyi})}]})}
+#	have another..
+#live	if (getnum(nextY) = ${testY})
+#	hump..
+#live	else
+#	<br>end: ${range[${numRange}]->end}
+#	<br>new range
+	${define(numRange, ${eval(1 + ${numRange})})}
+	${define(range[${numRange}]->start, ${nextY})}
+	${define(range[${numRange}]->end, ${nextY})}
+#	<br>start: ${range[${numRange}]->start}
+#live	endif
+#live	else
+#	<br>end: ${range[${numRange}]->end}
+#live	endif
+#live	endloop
+#	<hr>
+#	${numRange} ranges:
+	${define(rtx,)}
+#live	loop(ri, 1, ${numRange})
+#live	if (getnum(range[${ri}]->start) != ${range[${ri}]->end})
+	${define(rix, ${range[${ri}]->start}-${range[${ri}]->end})}
+#live	else
+	${define(rix, ${range[${ri}]->start})}
+#live	endif
+#live	if (getnum(ri) < ${numRange})
+	${define(rtx, ${rtx} ${rix},)}
+#live	else
+	${define(rtx, ${rtx} ${rix})}
+#live	endif
+#live	endloop
+#live	endif
+#live	loop(z, 1, 50)
+${define(yy[${z}],)}
+${define(range[${z}]->start,)}
+${define(range[${z}]->end,)}
+#live	endloop
+	${rtx}
+
+#define	index.html
+#live	if (getval(page) = index.html)
+	${mkHeader(section=People)}
+
+	<style type="text/css">
+		#conspirators {
+			float: right;
+		}
+		\@media all and (max-width: 540px) {
+			#conspirators {
+				display: none;
+			}
+		}
+	</style>
+
+	${beg_tabs}
+	${begTab(Jazz Butcher)}
+#		<img id="conspirators" alt="The Conspirators" src="${jbc_images}/conspirators.gif">
+			${tag_beg}
+			Personnel
+			${tag_end}
+		<blockquote>
+			<span style="font-size: 1.5em;">${pat} (${butch})</span>
+		</blockquote>
+
+			<p>
+
+			${tag_beg}
+			Conspirators from the recent past
+			${tag_end}
+		<blockquote>
+			${morgan} ${doGigPerformer(person=Dave Morgan)}<br/>
+			${joel_harries} ${doGigPerformer(person=Joel Harries)}<br/>
+			${stevenew} ${doGigPerformer(person=Steve New)}<br/>
+			${simon} ${doGigPerformer(person=Simon Taylor)}<br/>
+			${garofalo} ${doGigPerformer(person=Steve Garofalo)}<br/>
+			${joe_woolley} ${doGigPerformer(person=Joe Woolley)}<br/>
+			${max} ${doGigPerformer(person=Max Eider)}<br/>
+			${tim_harries} ${doGigPerformer(person=Tim Harries)}<br/>
+			${jonny_mattock} ${doGigPerformer(person=Jonny Mattock)}<br/>
+			${hask} ${doGigPerformer(person=Kevin Haskins)}<br/>
+			${steve} ${doGigPerformer(person=Steve Valentine)}<br/>
+			${owen} ${doGigPerformer(person=Owen Jones)}<br/>
+			${dj} ${doGigPerformer(person=David J.)}
+		</blockquote>
+
+			<p>
+
+			${tag_beg}
+			Conspirators from the not so recent past/Studio musicians
+			${tag_end}
+		<blockquote>
+			${kathy} ${doGigPerformer(person=Kathy Schaer)}<br/>
+			${russ} ${doGigPerformer(person=Russell Cooper)}<br/>
+			${richard} ${doGigPerformer(person=Richard Formby)}<br/>
+			${paul} ${doGigPerformer(person=Paul Mulreany)}<br/>
+			${beirne} ${doGigPerformer(person=Pat Beirne)}<br/>
+			${curt} ${doGigPerformer(person=Curtis E. Johnson)}<br/>
+			${gab} ${doGigPerformer(person=Gabriel Turner)}<br/>
+			${hend} ${doGigPerformer(person=Dave Henderson)}<br/>
+			${green} ${doGigPerformer(person=Alex Green)}<br/>
+			${indge} ${doGigPerformer(person=Alastair Indge)}<br/>
+			${dooj} ${doGigPerformer(person=Dooj Wilkinson)}<br/>
+			${pete} ${doGigPerformer(person=Peter Crouch)}<br/>
+			${nick} ${doGigPerformer(person=Nick Burson)}<br/>
+			${kizzy} ${doGigPerformer(person=Kizzy O'Callaghan)}<br/>
+			${larry} ${doGigPerformer(person=Laurence O'Keefe)}<br/>
+			${lix} ${doGigPerformer(person=Alex Lee)}<br/>
+			${felix} ${doGigPerformer(person=Felix Ray)}<br/>
+			${jules} ${doGigPerformer(person=Julian Poole)}<br/>
+			${rolo} ${doGigPerformer(person=Rolo McGinty)}<br/>
+			${at} ${doGigPerformer(person=Alice Thompson)}<br/>
+			${sumishta} ${doGigPerformer(person=Sumishta Brahm)}<br/>
+#			Marc Hadleigh<br>
+			${lb} ${doGigPerformer(person=Lionel Brando)}<br/>
+			${sonic} ${doGigPerformer(person=Sonic Boom)}<br/>
+			${astor}<br>
+			${joea}<br>
+		</blockquote>
+
+#			${rodney}<br>
+	${endTab}
+	${begTab(Wilson)}
+	<a href="${jbc_search}?f=extras&q=wilson"> <div class="gig_wilson"> </div> </a>
+		${tag_beg}Side Project, 2001-2012${tag_end}
+		<blockquote>
+			${pat_headstone}<br>
+			${russ_agent} ${doGigPerformer(person=Russell Cooper)}<br>
+			${kathy_misery} ${doGigPerformer(person=Kathy Schaer)}<br>
+			${botty_bman} ${doGigPerformer(person=Ian Botterill)}<br>
+			${curt_eman} ${doGigPerformer(person=Curtis E. Johnson)}<br>
+			${steve_gordon_gman} ${doGigPerformer(person=Steve Gordon)}<br>
+			${steve_beswick} ${doGigPerformer(person=Steve Beswick)}<br>
+		</blockquote>
+	${endTab}
+	${begTab(Sumosonic)}
+	<a href="${jbc_search}?f=extras&q=sumo"> <div class="gig_sumo"> </div> </a>
+		${tag_beg}Side Project, 1996-1998${tag_end}
+		<blockquote>
+			${sumo_pat}<br>
+			${sumo_botty} ${doGigPerformer(person=Ian Botterill)}<br>
+			${sumo_kathie} ${doGigPerformer(person=Kathie McGinty)}<br>
+			${sumo_kathy} ${doGigPerformer(person=Kathy Schaer)}<br>
+			${anita_allbright} ${doGigPerformer(person=Anita Allbright)}<br>
+			${gab} ${doGigPerformer(person=Gabriel Turner)}<br>
+			<p>
+			${hend} ${doGigPerformer(person=Dave Henderson)}<br>
+			${jonny_mattock} ${doGigPerformer(person=Jonny Mattock)}<br>
+			${curt} ${doGigPerformer(person=Curtis E. Johnson)}<br>
+			${russ} ${doGigPerformer(person=Russell Cooper)}<br>
+			${mark_refoy} ${doGigPerformer(person=Mark Refoy)}<br>
+#			Steve Davies ${doGigPerformer(person=Steve Davies)}<br>
+			${max_read} ${doGigPerformer(person=Max Read)}<br>
+		</blockquote>
+	${endTab}
+	${begTab(Black Eg)}
+	<a href="${jbc_search}?f=extras&q=eg"> <div class="gig_eg"> </div> </a>
+		${tag_beg}Side Project, 1992-1999${tag_end}
+		<blockquote>
+			${damm}<br>
+			${colin}<br>
+		</blockquote>
+	${endTab}
+	${begTab(Etc)}
+		${tag_beg}Producers/Engineers${tag_end}
+		<blockquote>
+			${rev}<br>
+			${iain}<br>
+			${barker}<br>
+			${rivers}<br>
+			${richard}<br>
+		</blockquote>
+
+		${tag_beg}Artwork/Photography${tag_end}
+		<blockquote>
+			${mitch}<br>
+			${loony}<br>
+			${indge}<br>
+			${del}
+			<p>
+			<a href="${jbc_people}/gallery.html">A Photo Gallery</a>
+		</blockquote>
+
+	${endTab}
+	${end_tabs}
+
+	${jbc_footer}
+#live	endif
+
+#define	colin.html
+#live	if (getval(page) = colin.html)
+	${mkPeopleHeader(title=Colin Harris,
+		roles=Drums on misc European and English live dates,
+		bio=${literalizeCommas(
+
+			<a href="${jbc_images}/egdebut.jpg">
+			<img alt="[image]"
+			SRC="${jbc_images}/egdebut_250.jpg"></a>
+			<br/>
+			Colin being abused by Karel.
+			<p>
+			${w_where} With ${dooj}.
+	)})}
+	${begTab(Projects)}
+	${projectsTab_beg}
+	Drums for ${eg}
+	${projectsTab_end}
+	${endTab}
+
+	${people_footer}
+#live	endif
+
+#define	alex_green.html
+#live	if (getval(page) = alex_green.html)
+	${mkPeopleHeader(title=Alex Green, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/alex.jpg">
+		<img alt="[image]"
+		SRC="${jbc_images}/alex_250.jpg"></a>
+		<a href="${jbc_images}/19901111/1990Nov11_alex.jpg"><img
+			src="${jbc_images}/19901111/1990Nov11_alex_250.jpg"></a>
+		<p>
+		Alex has been a side-man since the very beginning,
+		providing saxophone for both albums and live performances.
+		${w_where} Cambridge, England with his cats and family.
+	)})}
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#alex">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	alastair_indge.html
+#live	if (getval(page) = alastair_indge.html)
+	${mkPeopleHeader(title=Alastair Indge, roles=Vocals on ${monkey})}
+
+	${linksTab_beg}
+	${linkExternal(https://alastairindge.com/, Alastair Indge)}
+	${linksTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	alex_lee.html
+#live	if (getval(page) = alex_lee.html)
+	${mkPeopleHeader(title=Alex Lee, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/lix.jpg">
+		<img alt="[image]"
+		SRC="${jbc_images}/lix_250.jpg"></a>
+		<a href="${jbc_images}/alex_lee_plays.jpg">
+		<img alt="[image]"
+		SRC="${jbc_images}/alex_lee_plays_250.jpg"></a>
+	)})}
+	${projectsTab_beg}
+	${aero} .. ${strange}
+	(with ${jules}, John Langley, and ${joea})
+	${projectsTab_end}
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#lix">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	alice_thompson.html
+#live	if (getval(page) = alice_thompson.html)
+	${mkPeopleHeader(title=Alice Thompson)}
+
+	${people_footer}
+#live	endif
+
+#define	dave_henderson.html
+#live	if (getval(page) = dave_henderson.html)
+	${mkPeopleHeader(title=Dave Henderson, bio=${literalizeCommas(
+		<a href="/images/people/20180220_Barker_DaveHenderson.jpg"><img src="/images/people/20180220_Barker_DaveHenderson_500.jpg"></a>
+		<br/>
+		${hend} (left) with ${barker}.
+		${g_credit(g=${barker}, d=2018-02-20 10:53:00)}
+	)})}
+
+	${people_footer}
+#live	endif
+
+#define	david_j.html
+#live	if (getval(page) = david_j.html)
+	${mkPeopleHeader(title=David J.)}
+
+	${credits_end}
+	${projectsTab_beg}
+	${davidj} (his band), ${rocket}
+	${projectsTab_end}
+	${linksTab_beg}
+	${haus}..
+	${davidj}
+	${linksTab_end}
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#david">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	david_whittemore.html
+#live	if (getval(page) = david_whittemore.html)
+	${mkPeopleHeader(title=David Whittemore, bio=${literalizeCommas(
+
+		<a href="${del_images}/mr2_big.gif"><img
+			alt="[image]"
+			src="${del_images}/domesticity/250/outside.jpg"></a>
+		${w_role} Photographer, Web-host & Archivist, Pseudo-engineer.
+	)})}
+
+	${projectsTab_beg}
+	<a href="${vergiftung}">Vergiftung</a>
+	..
+	<a href="http://www.adjective.com/htdb/volsteadact">The Volstead Act</a>
+	${projectsTab_end}
+	${linksTab_beg}
+	<a href="${del_root}">My Home Page</a>
+	${linksTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	dooj_wilkinson.html
+#live	if (getval(page) = dooj_wilkinson.html)
+	${mkPeopleHeader(title=Dooj Wilkinson, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/19920426/M31-01_500.jpg"> <img alt="[image]" src="${jbc_images}/19920426/M31-01_500.jpg"></a>
+		${g_credit(g=Steve Bingham, u=http://www.flickr.com/photos/subpopstar/sets/72157626195728476)}
+		<p>
+		<a href="${jbc_images}/dooj.jpg"> <img alt="[image]" src="${jbc_images}/dooj_500.jpg"></a>
+		${g_credit(g=${del})}
+		${w_RIP} 2017-05-18
+	)})}
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#dooj">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	felix_ray.html
+#live	if (getval(page) = felix_ray.html)
+	${mkPeopleHeader(title=Felix Ray, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/felix_contrast1.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/felix_contrast1_250.jpg"></a>
+		<a href="${jbc_images}/felix_contrast2.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/felix_contrast2_250.jpg"></a>
+	)})}
+
+	${linksTab_beg}
+	${linkExternal(http://www.hrc.wmin.ac.uk/studentbios/graham_fudger.html, Westminster Student Page)}
+	..
+	${linkExternal(http://www.grahamfudger.co.uk/, Graham Fudger's Website)}
+	${linksTab_end}
+	${people_footer}
+#live	endif
+
+#define	gabriel_turner.html
+#live	if (getval(page) = gabriel_turner.html)
+	${mkPeopleHeader(title=Gabriel Turner, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/20000101/1Jan2000_bishop.jpg"><img
+			src="${jbc_images}/20000101/1Jan2000_bishop_250.jpg" 
+			alt="[shakespeare road NN1, new years evening]"></a>
+		${g_credit(g=${del}, d=2000-01-01)}
+		<p>
+		The only regular patron of the Love Bus under thirty (like by ten
+		years, as it goes). Joined J.B.C. through pure serendipity in spring
+		1994 (The story briefly: Gabriel is JBC fan. Gabriel goes to see JBC
+		perform in London - New Cross Venue,
+		<a href="${jbc_gigs}/1993/Nov27.html">November 27th 1993.</a>
+		Gabriel notices that JBC are drumless.
+		Gabriel remembers that he can play drums. Gabriel
+		makes mental note to speak to Butcher post gig. Butcher plays gig.
+		Butcher breaks guitar. Gabriel decides this not right time to speak
+		to Butcher. Gabriel goes home and writes Butcher letter. Butcher
+		calls Gabriel. "Fancy playing drums for us," asks Butcher. "Yowsa,"
+		replies Gabriel. And the rest is disturbingly extensively documented
+		elsewhere in technoland).
+		Turner keywords: Jagermeister, Maxwin, Yokel.
+	)})}
+
+	${people_footer}
+#live	endif
+
+#define	iain_ohiggins.html
+#live	if (getval(page) = iain_ohiggins.html)
+	${mkPeopleHeader(title=Iain O'Higgins, bio=${literalizeCommas(
+
+	<a href="${jbc_images}/19920510/19920510_del_ohiggins.jpg">
+	<img src="${jbc_images}/19920510/19920510_del_ohiggins_500.jpg"></a>
+		${g_credit(g=${del})}
+		Taken <a href="${jbc_gigs}/1992/May10.html">10May1992, Ontario, Canada</a>
+	${w_role} Studio Engineer, Live sound North America 1992
+	)})}
+
+	${people_footer}
+#live	endif
+
+#define	joe_allen.html
+#live	if (getval(page) = joe_allen.html)
+	${mkPeopleHeader(title=Joe Allen)}
+
+	${projectsTab_beg}
+	${strange}
+	${projectsTab_end}
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#joe">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	john_rivers.html
+#live	if (getval(page) = john_rivers.html)
+	${mkPeopleHeader(title=John A. Rivers)}
+
+	${people_footer}
+#live	endif
+
+#define	david_barker.html
+#live	if (getval(page) = david_barker.html)
+	${mkPeopleHeader(title=David E. Barker, bio=${literalizeCommas(
+
+		${w_role} Producer (Glass Records)
+		<a href="/images/20170528/20170528_barker.jpg"><img src="/images/20170528/20170528_barker_500.jpg"></a>
+		<br/>
+		${barker} (right), with ${pat} & ${rolo}.
+		${g_credit(g=${barker}, u=${jbc_gigs}/20170528_1630.html, d=2017-05-28 16:30:00)}
+		${embedVideo(url=https://www.youtube.com/embed/clP-oyGk73s)}
+		Glass Records Story - Dave Barker - Interview by Iain McNay - 2009
+		${aka_beg}
+		Lionel Brando
+		${aka_end}
+	)})}
+
+	${people_footer}
+#live	endif
+
+#define	julian_poole.html
+#live	if (getval(page) = julian_poole.html)
+	${mkPeopleHeader(title=Julian Poole, bio=${literalizeCommas(
+
+		${w_role} Guitarist North America Tour, 1990
+		<p>
+		<a href="${jbc_images}/julian.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/julian_250.jpg"></a>
+		<a href="${jbc_images}/1990_julian_poole_car.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/1990_julian_poole_car_250.jpg"></a>
+		<a href="${jbc_images}/julian_poole_plays.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/julian_poole_plays_250.jpg"></a>
+		${g_credit(g=${del})}
+	)})}
+	${projectsTab_beg}
+	${strange}
+	${projectsTab_end}
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#julian">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	kevin_haskins.html
+#live	if (getval(page) = kevin_haskins.html)
+	${mkPeopleHeader(title=Kevin Haskins)}
+
+	${linksTab_beg}
+	${haus}
+	..
+	Love And Rockets .. Messy .. Tones On Tail
+	${linksTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	kizzy_ocallaghan.html
+#live	if (getval(page) = kizzy_ocallaghan.html)
+	${mkPeopleHeader(title=Kizzy O'Callaghan, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/KizzyOCallaghan.jpg"><img src="${jbc_images}/KizzyOCallaghan_250.jpg"></a>
+		<p>
+		Kizzy died from a brain tumor in 1990.
+		His last words were "Bollocks!"
+	)})}
+
+	${people_footer}
+#live	endif
+
+#define	laurence_okeefe.html
+#live	if (getval(page) = laurence_okeefe.html)
+	${mkPeopleHeader(title=Laurence O'Keefe, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/laurence.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/laurence_250.jpg"></a>
+		<a href="${jbc_images}/suave.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/suave_250.jpg"></a>
+		(Laurence on left)
+		${g_credit(g=${del})}
+	)})}
+	${projectsTab_beg}
+	Bass for ${levit}
+	${projectsTab_end}
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#laurence">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	martin_stebbing.html
+#live	if (getval(page) = martin_stebbing.html)
+	${mkPeopleHeader(title=Martin Stebbing, bio=${literalizeCommas(
+
+		${w_role} Producer/Engineer, Live sound North America Tours, 1989, 1990
+		<p>
+		<a href="${jbc_images}/20020722_MartinStebbing.jpg"><img
+			alt="[image]"
+			src="${jbc_images}/20020722_MartinStebbing_250.jpg"></a>
+		${g_credit(g=${del}, d=2002-07-22)}
+		<a href="${jbc_images}/martin4.jpg"><img
+			alt="[image]"
+			src="${jbc_images}/martin4_250.jpg"></a>
+		<a href="${jbc_images}/martin.jpg"><img
+			alt="[image]"
+			src="${jbc_images}/martin_250.jpg"></a>
+		<a href="${jbc_images}/martin2.jpg"><img
+			alt="[image]"
+			src="${jbc_images}/martin2_250.jpg"></a>
+		<a href="${jbc_images}/stebbing_doorway_1993.jpg"><img
+			alt="[image]"
+			src="${jbc_images}/stebbing_doorway_1993_250.jpg"></a>
+		${g_credit(g=${del})}
+
+		<a href="/images/people/20220714_WonderBat9_Photobook_MartinStebbing.jpg"><img src="/images/people/20220714_WonderBat9_Photobook_MartinStebbing_500.jpg" alt="Botus"></a>
+		${g_credit(g=wonderbat9 , u=https://youtu.be/a6SzTBA7WG8?t=182, d=2022-07-14)}
+		${w_where} Chicago, Illinios.
+		Martin works freelance as a studio recording
+		engineer.  He has worked with ${scream},
+		The Fresh Prince,
+		${kmfdm}, ${poi}, and lots and lots of bad "Do Me Baby" style R&B.
+	)})}
+
+	${projectsTab_beg}
+	Bass, Guitars for <a href="${vergiftung}">Vergiftung</a>
+	${projectsTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	max_eider.html
+#live	if (getval(page) = max_eider.html)
+	${mkPeopleHeader(title=Max Eider, bio=${literalizeCommas(
+
+		<img alt="[signature]" src="${jbc_images}/max_sig.gif">
+		See also - <a href="http://www.maxeider.com">maxeider.com</a>
+		<p>
+		${w_role} Lead Guitar, Voice, until
+		<a href="${jbc_gigs}/1986/Nov27.html">27Nov1986</a>
+		(his last live show with the Jazz Butcher Group of that era).
+		To many fans who got into the Jazz Butcher early,
+		the entire charm of the group was the interplay between
+		${pat} and Max.  Live, they were a force to contend with.
+		<p>
+		<b>Addendum</b> ... and a force they continue to be. Since about 1996,
+		Max has been playing irregularly with the band again.  If anything, his skills
+		has become decidely better with the years.  In the words of most, even casual,
+		bystanders: &quot;F**k, he's good.&quot;
+		<p>
+		<b>Hotel Figueroa</b>
+		<p>
+		A mere 15 years after his first solo venture, Eider decided he had enough
+		material to release a follow-up. <i>'Picks up right where the brilliant
+		<b>Best Kisser</b> left off,'</i> enthuses the critic J Eric Smith, <i>'with
+		10 killer jazz-pop cuts ... a worthy distillation of a talented and
+		under-appreciated player's very best work'.</i> But don't let that put you off.
+	)})}
+
+	${projectsTab_beg}
+	<a href="${jbc_images}/eider_front.jpg"><img src="${jbc_images}/seider_front.gif"></a>
+	<a href="${jbc_images}/eider_back.jpg"><img src="${jbc_images}/seider_back.gif"></a>
+	<a href="${jbc_images}/eider_inside.jpg"><img src="${jbc_images}/seider_inside.gif"></a>
+	<p>
+	Max released a solo LP (The Best Kisser In The
+	World) in 1987, and then worked with ex-JBC members
+	in the ${davidj} group.
+	${tag_beg}
+	See also
+	${tag_end}
+	<blockquote>
+	<a href="http://www.maxeider.com">maxeider.com</a>
+	<p><a href="${max_abc}">A Drug-awareness pamphlet authored by our hero for Channel 4 (UK)</a>
+	</blockquote>
+	${projectsTab_end}
+
+	${patTab_beg}
+	<a href="${jbc_letters}/93Oct19/eider.html">"Where is Eider Man?"</a> (circa 1993)
+	<br><a href="${jbc_letters}/93Aug30/band.html#max">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${begTab(Gallery)}
+
+#	<a href="${jbc_images}/max_contrast.jpg"><img
+#		src="${jbc_images}/thumb_max_contrast.gif"></a>
+	<a href="${jbc_images}/19990911/11Sep1999_max_sings.jpg"><img
+		src="${jbc_images}/19990911/11Sep1999_max_sings_250.jpg"></a>
+	<a href="${jbc_images}/19970919/19Sep97_6.jpg"><img
+		src="${jbc_images}/19970919/19Sep97_6_250.jpg"></a>
+	<a href="${jbc_images}/19970922/22Sep97_2.jpg"><img
+		src="${jbc_images}/19970922/22Sep97_2_250.jpg"></a>
+	<a href="${jbc_images}/19970922/22Sep97_5.jpg"><img
+		src="${jbc_images}/19970922/22Sep97_5_250.jpg"></a>
+	<a href="${jbc_images}/19970917/17Sep97_2.jpg"><img
+		src="${jbc_images}/19970917/17Sep97_2_250.jpg"></a>
+
+	${endTab}
+
+	${people_footer}
+#live	endif
+
+#define	mitch_jenkins.html
+#live	if (getval(page) = mitch_jenkins.html)
+	${mkPeopleHeader(title=Mitch Jenkins, roles=Photographer: since 1983
+	)}
+
+	${people_footer}
+#live	endif
+
+#define	nick_burson.html
+#live	if (getval(page) = nick_burson.html)
+	${mkPeopleHeader(title=Nick Burson, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/nick.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/nick_250.jpg"></a>
+		<p>
+		${w_where} Toronto
+	)})}
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#nick">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	owen_jones.html
+#live	if (getval(page) = owen_jones.html)
+	${mkPeopleHeader(title=Owen Jones, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/owen_contrast.jpg"><img
+			alt="[image]"
+			src="${jbc_images}/owen_contrast_250.jpg"></a>
+		<a href="${jbc_images}/19990913/13Sep1999_owen_octadrum.jpg"><img
+			alt="[image]"
+			src="${jbc_images}/19990913/13Sep1999_owen_octadrum_250.jpg"></a>
+		<p>
+		${w_where} Hamburg
+	)})}
+	${projectsTab_beg}
+	${linkExternal(http://www.shakespeareandthebible.de, SHAKESPEARE & THE BIBLE)}
+	${projectsTab_end}
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#owen">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	pat.html
+#live	if (getval(page) = pat.html)
+
+	${mkPeopleHeader(title=Pat Fish, bio=${literalizeCommas(
+
+		<div style="text-align: center;">
+			<a href="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807.jpg">
+			<img src="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807_500.jpg"></a>
+			${g_credit(g=\@PlanetruthPictures)}
+		</div>
+		<div class="listItem">
+		Born in West London at a time that left him just too young to be a hippie and just a little too old to be a punk, Pat Fish grew up in an era where the Bonzo Dog Band appeared on children’s television, Syd Barrett was on Top of the Pops and the Adult World was represented in shows like The Avengers and The Prisoner. Disappointment was an inevitability.
+		Fish failed to “get” the glam rock thing (probably too much of an excitable wee football fan) and found that the seventies drove him down some fairly obscure musical paths before punk rock came along to save the day. By then, however, all those mad little songs by Eno, Syd Barrett, Kevin Ayers, Daevid Allen, John Cale, Peter Blegvad and Tony Moore were already locked up in his head.
+		<p>
+		Fish started making records under the name of the Jazz Butcher in 1983 and nobody has quite succeeded in putting a stop to this yet. He has recorded for Glass Records, Creation Records, ROIR of New York and Vinyl Japan of Tokyo. Overall he has written and released fifteen albums of original music, three live albums and innumerable singles and compilations.
+		<p>
+		In 2016 Fire Records issued the album Last of the Gentleman Adventurers, originally released as a fan-funded project in 2012. In 2017 Fire will be undertaking a major re-issue programme, making several Jazz Butcher albums available once again on vinyl, CD and digital formats.
+		<p>
+		With the Jazz Butcher, Fish has toured worldwide. As a solo artist, recent shows include Hamburg, Dortmund, New York City, Tokyo, Brussels and London, as well as his adopted home town of Northampton where he still regularly turns out with his acoustic guitar to support visiting artists.
+		<p>
+		He likes collaborations, too. Apart from his lengthy association with Northampton-based digital hooligans Wilson over the years 2001-2009, Fish has recorded and appeared on stage with David J, Spacemen 3, Bristol’s The Blue Aeroplanes, German band M Walking On The Water, French indie art rock band Chelsea Paris and acclaimed Los Angeles shoegazers, The Black Watch.
+		<p>
+		The thing about Pat Fish is that he is not tribal about music. Some people know him from his friendship with Spacemen 3, others for his fondness for Nikki Sudden and Dave Kusworth; some know him because he has worked with members of Bauhaus, others regard him as a “classic” independent songwriter in the vein of Pete Astor or Dan Treacy. Fishy just fetches his acoustic guitar and his notebook and heads for the railway station.
+		<p>
+		His current inspirations: as always, the Velvet Underground, Alex Chilton, Peter Laughner, Bob Dylan, Patti Smith, Kevin Ayers, John Martyn, Davy Graham and many, many more.
+		<p>
+		Do you like your melodies sweet and your humour as black as pitch? Would you take a chance on something simple, intimate and direct from an artist who is on record as saying “What I do is not entertainment” but who regularly induces little bursts of outraged laughter from the audience? Do you want to see the real thing? You should maybe go and see Pat Fish.
+		<div style="margin-left: 10px; margin-top: 10px">
+		<img alt="[signature]" src="${jbc_images}/pat_sig.gif">
+		</div>
+
+		</div>
+	)})}
+
+	${begTab(Gallery)}
+	<div style="text-align: center;">
+		<a href="/images/20211006_portrait.jpg"> <img src="/images/20211006_portrait_500.jpg" alt="portrait"></a>
+			${g_credit(g=Dave E. Barker)}
+		<br/>
+		<br/>
+		<a href="/images/20171021/20171021_mattjolly_1_500.jpg">
+			<img src="/images/20171021/20171021_mattjolly_1_500.jpg"></a>
+			${g_credit(g=Matt Jolly)}
+		<br/>
+		<br/>
+		<a href="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807.jpg">
+			<img src="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807_500.jpg"></a>
+			${g_credit(g=\@PlanetruthPictures\, 2017)}
+		<br/>
+		<br/>
+		<a href="/images/20150501/20150501_vulpe_truax_gig.jpg">
+			<img src="/images/20150501/20150501_vulpe_truax_gig_500.jpg"></a>
+			${g_credit(g=Anne Vulpe\, 2015)}
+		<br/>
+		<br/>
+		<a href="/images/2015_annavulpe_pat.jpg">
+			<img src="/images/2015_annavulpe_pat_500.jpg"></a>
+			${g_credit(g=Anne Vulpe\, 2015)}
+		<br/>
+		<br/>
+		<a href="/images/20140822/20140822_johncannon_pat.jpg">
+			<img src="/images/20140822/20140822_johncannon_pat_500.jpg"></a>
+			${g_credit(g=John Cannon\, 2014)}
+		<br/>
+		<br/>
+		<a href="/images/20121201/20121201_opal_krusch_patsmiles.jpg">
+			<img src="/images/20121201/20121201_opal_krusch_patsmiles_500.jpg"></a>
+			${g_credit(g=opal_krusch\, 2012)}
+		<br/>
+		<br/>
+		<a href="http://davidwhittemore.com/images/gallery/1Jan2000_pat.jpg"><img
+			src="http://davidwhittemore.com/images/gallery/thumb/500/1Jan2000_pat.jpg"></a>
+			${g_credit(g=${del}\, 2000)}
+		<br/>
+		<br/>
+		<a href="${jbc_images}/19920425/19920425_del_pat.jpg"><img
+			src="${jbc_images}/19920425/19920425_del_pat_500.jpg"></a>
+			${g_credit(g=${del}\, 1992)}
+		<br/>
+		<br/>
+		<a href="http://davidwhittemore.com/images/gallery/thumb/750/19901105_PatFirstAvenue.jpg">
+			<img src="http://davidwhittemore.com/images/gallery/thumb/500/19901105_PatFirstAvenue.jpg"></a>
+			${g_credit(g=${del}\, 1990)}
+		<br/>
+		<br/>
+		<a href="${jbc_images}/comedy3.jpg">
+			<img src="${jbc_images}/comedy3_500.jpg"></a>
+			${g_credit(g=${del}\, 1990)}
+		<br/>
+		<br/>
+		<a href="${jbc_images}/19891119/19891119_del_patsat_500.jpg">
+			<img src="${jbc_images}/19891119/19891119_del_patsat_500.jpg"></a>
+			${g_credit(g=${del}\, 1989)}
+		<br/>
+		<br/>
+		<a href="/images/19880611/19880611_del_cubbybear_11.jpg">
+			<img src="/images/19880611/19880611_del_cubbybear_11_500.jpg"></a>
+			${g_credit(g=${del}\, 1988)}
+		<br/>
+		<br/>
+		<a href="/images/1985/1985_mitch_jenkins_hamburg_pat_fish.jpg">
+			<img src="/images/1985/1985_mitch_jenkins_hamburg_pat_fish_500.jpg"></a>
+			${g_credit(g=${mitch}\, 1988\, Hamburg)}
+		<br/>
+		<br/>
+		<a href="/images/1981/1981_barker_tonix_1.jpg">
+			<img src="/images/1981/1981_barker_tonix_1_500.jpg"></a>
+			<p>
+The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hammersmith, London in 1981 by myself. They opened for a group called English Subtitles, who I’d just done a single with. This was the first time I met Pat. I asked them if they’d do a track for a compilation LP I was working on, ‘The Wonderful World of Glass Volume 1’ and they did. My friend and former bandmate Ciaran Harte, who was kind of a house producer for the label at that time, had a Teac four track in his flat in a tower block in Plaistow, East London and they recorded it there on the 12th floor or something.
+			</p>
+			${g_credit(g=${barker}\, 1981\, London)}
+	</div>
+	${endTab}
+
+	${begTab(Credits)}
+	${credits_beg}
+	In 38 years, Pat Fish brought a dozen
+	<b><a href="${jbc_albums}">full-length records</a></b> into the world.
+	<p>
+	He collaborated with a number of other artists:
+	<p>
+	<h3>Productions</h3>
+	<ul>
+	<li>Love Ambassadeux - Black Mischief (single, Rumpo Records, 1985)</li>
+	<li>13 Frightened Girls - Lost at Sea (3 track 12", Foundation, 1991)</li>
+	<li>Venus Fly Trap - Pandora's Box (LP, Danceteria 1992)</li>
+	<li>Chelsea Paris - Tramway (LP, Virgin France, 1992)</li>
+	</ul>
+	<h3>Contributions</h3>
+	<ul>
+	<li>David J - Crocodile Tears & The Velvet Cosh (LP, 1985) - Flute</li>
+	<li>Blue Moods turning Tail (EP 1986) - glockenspiel</li>
+	<li>On Glass (LP 1986) - Glockenspiel, vocals</li>
+	<li>Venus Fly Trap - Rocket USA (single, 1989) - Tenor sax</li>
+	<li>M Walking on the Water - Pluto (LP, 1989) - Vocals</li>
+	<li>Blue Aeroplanes - Beatsongs (LP 1991) - Vocals</li>
+	<li>Up in a Down World (EP 1993) - Vocals, co-writing credit on "Meantime"</li>
+	<li>Rough Music (LP 1994) - Guitar, organ, co-writing credit on "Whatever Happened to our Golden Birds?"</li>
+	<li>Spacemen 3 - Recurring (LP 1990) - Tenor sax, flute</li>
+	<li>Sonic Boom - Spectrum (LP 1989) - Finger pops, vocals</li>
+	<li>Spectrum - Soul Kiss (Glide Divine) (LP, 1992) - Tenor sax</li>
+	<li>Indian Summer (single, 1993) - Electric guitar</li>
+	<li>Dave Kusworth & The Bounty Hunters - All the Heartbreak Stories (LP, 1991) - Flute, tenor sax</li>
+	<li>Chelsea Paris - Tramway (LP 1992) - Guitar, vocals</li>
+	<li>The Field Trip - Take to the Streets (EP, 1993) - Tenor sax</li>
+	<li>The Black Watch - Jiggery-Pokery (LP, 2002) - Vocals (${linkExternal(https://www.youtube.com/watch?v=aO_7I-QWzp0, listen\@youtube)})</li>
+	<li>The Four One And Only's - Holy (LP, 1996) - Vocals</li>
+	<li>Stranger Tractors - Vibration (CD single, 1995) - Drums, vocals</li>
+	<li>The Purelove - King Pop (Marsh Marigold Records, 1997) - Guitar</li>
+	<li>The Purelove - Live (1997 tour of Germany): Guitar</li>
+	</ul>
+	...Maybe one or two other bits. 
+	${credits_end}
+	${endTab}
+#	${begTab(Writings)}
+#	${detBeg(a=Some news and observations Pat has written)}
+##
+##	noun:album_press
+##
+##live	if ((sql(a:select * from press where type like '%%pat%%' order by dtpublished desc)) && (getint(a->numResults) > 0))
+#	<div class="listItem">
+##live	while (aa = a[*]->press_id)
+#	<b><a href="${a[${aa}]->url}">${a[${aa}]->title}</a></b>
+##live	if (defined(a[${aa}]->location))
+#	(${a[${aa}]->location}),
+##live	endif
+#	${mkGigDatetime(${a[${aa}]->dtpublished})}<br/>
+##live	endwhile
+#	</div>
+##live	endif
+#	${endTab}
+
+	${projectsTab_beg}
+	<div class="listItem">
+	In the early to mid 1990's Pat Fish was exploring what was to be the
+	vehicle for his compositions after the assumed retiring of the moniker "Jazz Butcher".
+	<p>
+	An early sample-collage effort, <b>The Black Eg</b>, produced an unlikely
+	${linkInternal(${jbc_albums}/blackeg.html, release)}
+	on Creation Records and a handful of chaotic absurdist gigs.
+	<p>
+	Also around this time were the <b><a href="${jbc_gigs}/1991/Aug.html">Cambodia</a></b>
+	and <b><a href="${jbc_gigs}/1991/Jul.html">The Vaguely Familiar</a></b>
+	collaborations. Demo tapes from these sessions show Fish's openness to
+	utilizing sequencers and collaboration with other songwriters.
+	<p>
+	The <b>Black Eg</b> sequencer-backed approach was made more accessible
+	in <b>Sumosonic</b> which featured several vocalists and percussion
+	in traditional pop arrangements. There were three <b>Sumosonic</b> releases,
+	which were Pat Fish's final releases on Creation Records.
+	<p>
+	Formed as the house band of Slurp's Bar, Northampton,
+	<b>The Undertakers</b> feature ${pat}, ${mark_refoy} and ${jonny_mattock} (${space},
+	Spiritualized), and Tim Harris (Everything But The Girl, Doctor Didg).
+	They don't rehearse, they only play covers (Can, Velvets, Creedence, Kraftwerk, Plastic Ono Band, etc),
+	and a total of about 43 people have ever seen them play live.
+	<p>
+	In the early aughts, Pat inadvertently assembled a supergroup - <b>Wilson</b> -
+	with ex-Sumosonic members and well known Northampton musicians.
+	<b>Wilson</b> layered guitar-riffs and shouty-pop over solid
+	sequencing and live percussion. Nearly 100 live shows were played, and a live DVD was
+	self-released at the end of a decade-long run.
+	<p>
+	<b>${dronesclub}</b> started in 2014 in a medieval pub in Northampton.
+	${pat} joining on bass resulted in what’s been described as a Medieval Drum
+	and Bass sound combined with Hendrix style Bagpipes.
+	<p>
+	While not all side projects produced published material, demos
+	from most may be <a href="${jbc_audio}">heard in the listening room</a>.
+	</div>
+	${projectsTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	paul_mulreany.html
+#live	if (getval(page) = paul_mulreany.html)
+	${mkPeopleHeader(title=Paul Mulreany, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/paul.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/paul_250.jpg"></a>
+		<a href="${jbc_images}/paul2.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/paul2_250.jpg"></a>
+		<a href="${jbc_images}/suave.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/suave_250.jpg"></a>
+		(Paul on right)
+		<p>
+		${w_where} In London, England
+	)})}
+
+	${projectsTab_beg}
+	Drummer for the ${aero}
+	${projectsTab_end}
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#paul">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	peter_astor.html
+#live	if (getval(page) = peter_astor.html)
+	${mkPeopleHeader(title=Peter Astor, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/people/peter_astor.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/people/peter_astor_500.jpg"></a>
+	)})}
+	${projectsTab_beg}
+	${weather}
+	${projectsTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	peter_crouch.html
+#live	if (getval(page) = peter_crouch.html)
+	${mkPeopleHeader(title=Peter Crouch, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/19920501/19920501_del_crouch.jpg"><img src="${jbc_images}/19920501/19920501_del_crouch_250.jpg"></a>
+		${g_credit(g=${del})}
+		<p>
+		<a href="${jbc_images}/19920425/19920425_del_pete.jpg"><img src="${jbc_images}/19920425/19920425_del_pete_250.jpg"></a>
+		${g_credit(g=${del})}
+		<p>
+	)})}
+
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#pete">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	richard_formby.html
+#live	if (getval(page) = richard_formby.html)
+	${mkPeopleHeader(title=Richard Formby, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/richard.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/richard_250.jpg"></a>
+		<a href="${jbc_images}/richard2.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/richard2_250.jpg"></a>
+		<a href="${jbc_images}/richard3.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/richard3_250.jpg"></a>
+		<a href="${jbc_images}/richard4.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/richard4_250.jpg"></a>
+		${g_credit(g=${del})}
+	)})}
+
+	${projectsTab_beg}
+	Religious Overdose ..
+	${spect} ..
+	<a href="${jbc_gigs}/1991/Jul.html">The Vaguely Familiar</a>
+	${projectsTab_end}
+
+	${patTab_beg}
+	<a href="${jbc_letters}/93Aug30/band.html#richard">"Where is Butcher Band?"</a> (circa 1993)
+	${patTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	rodney_allen.html
+#live	if (getval(page) = rodney_allen.html)
+	${mkPeopleHeader(title=Rodney Allen, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/rodney.jpg">
+		<img alt="[image]"
+			src="${jbc_images}/rodney_250.jpg"></a>
+		${g_credit(g=${del})}
+		${w_role} Guitar
+	)})}
+
+	${projectsTab_beg}
+	${aero}
+	${projectsTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	rolo_mcginty.html
+#live	if (getval(page) = rolo_mcginty.html)
+	${mkPeopleHeader(title=Rolo McGinty, bio=${literalizeCommas(
+
+		<a href="/images/20060910/rolo_241487377_o.jpg"><img src="/images/20060910/rolo_241487377_o_250.jpg"></a>
+		<br/>
+		${g_credit(g=antisyzygy, u=${jbc_gigs}/2006/Sep10_2000.html, d=2006-09-10)}
+		<br/>
+		<a href="/images/20060913/rolo_242988391_o.jpg"><img src="/images/20060913/rolo_242988391_o_250.jpg"></a>
+		<br/>
+		${g_credit(g=antisyzygy, u=${jbc_gigs}/2006/Sep13_2030.html, d=2006-09-13)}
+		<br/>
+		<a href="/images/20170528/20170528_barker_rolo.jpg"><img src="/images/20170528/20170528_barker_rolo_250.jpg"></a>
+		<br/>
+		${g_credit(g=${barker}, u=${jbc_gigs}/20170528_1630.html, d=2017-05-28 16:30:00)}
+	)})}
+
+	${projectsTab_beg}
+	${tops}
+	${projectsTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	sonic_boom.html
+#live	if (getval(page) = sonic_boom.html)
+	${mkPeopleHeader(title=Sonic Boom)}
+
+	${projectsTab_beg}
+	${space} .. ${spect}
+	${projectsTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	von_dammerung.html
+#live	if (getval(page) = von_dammerung.html)
+	${mkPeopleHeader(title=Von Daemmerung, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/egdebut.jpg">
+		<img alt="[image]"
+			SRC="${jbc_images}/egdebut_250.jpg"></a>
+		<a href="${jbc_images}/thumbs.jpg">
+		<img alt="[image]"
+			SRC="${jbc_images}/thumbs_250.jpg"></a>
+		${g_credit(g=${del})}
+		<p>
+		${w_role} Loonies, Liner Notes
+	)})}
+	${begTab(Credits)}
+	${credits_beg}
+	${nons} (liner notes) .. ${cult} (liner notes) .. ${damn}
+	${credits_end}
+	${endTab}
+
+	${projectsTab_beg}
+	${eg}
+	${projectsTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	gallery.html
+#live	if (getval(page) = gallery.html)
+	${mkHeader(section=People, title=Photo Gallery)}
+
+	<style class="text/css">
+		dl {
+			text-align: center;
+		}
+		dd {
+			width: 100%;
+			border: solid 1px gray;
+			padding: 10px;
+			margin: 10px;
+		}
+	</style>
+
+	${beg_tabs}
+
+	${begTab(The Butcher)}
+	<h2>The Jazz Butcher</h2>
+	<dl>
+	<dd><a href="${jbc_images}/19920425/19920425_del_pat.jpg"><img
+		src="${jbc_images}/19920425/19920425_del_pat_500.jpg"></a>
+		<br/>
+		1992-04-25, Atlanta (${del})
+	</dd>
+	<dd><a href="${jbc_images}/xmas.jpg">
+		<img src="${jbc_images}/xmas_500.jpg"></a><br>
+		19Dec89 Days Inn Hotel, Atlanta (${del})
+	</dd>
+	<dd>
+	<a href="${jbc_images}/comedy3.jpg">
+		<img src="${jbc_images}/comedy3_500.jpg"></a><br>
+		12Nov90, Hoboken NJ (${del})
+	</dd>
+	<dd><a href="${jbc_images}/19891119/19891119_del_patsat_500.jpg">
+		<img src="${jbc_images}/19891119/19891119_del_patsat_500.jpg"></a><br>
+		<a href="${jbc_gigs}/1989/Nov19_1600.html">19Nov1989, Milwaukee</a> (${del})
+	</dd>
+	<dd><a href="${jbc_images}/pat_sings.jpg">
+		<img src="${jbc_images}/pat_sings_500.jpg"></a><br>
+		<a href="${jbc_gigs}/1992/May1.html">1May1992, D.C.</a> (${del})
+	</dd>
+	<dd><a href="${jbc_images}/pat_plays.jpg">
+		<img src="${jbc_images}/pat_plays_500.jpg"></a><br>
+		<a href="${jbc_gigs}/1992/Apr25_1600.html">25Apr1992, Atlanta</a> (${del})
+	</dd>
+	<dd><a href="${jbc_images}/pat_party.jpg">
+		<img src="${jbc_images}/pat_party_500.jpg"></a><br>
+		18Dec89, Atlanta (32nd b-day party) (${del})
+	</dd>
+	<dd><a href="${jbc_images}/techno.jpg">
+		<img src="${jbc_images}/techno_500.jpg"></a><br>
+		<a href="${jbc_gigs}/1992/May3.html">3May1992, Providence, RI</a> (${del})
+	</dd>
+	<dd><a href="${jbc_images}/music_express.jpg">
+		<img src="${jbc_images}/music_express_500.jpg"></a><br>
+		<a href="${jbc_press}/91musicexpress.html">
+		Music Express Magazine, January 1991</a> (${indge})
+	</dd>
+	</dl>
+	${endTab}
+
+	${begTab(Group Photos)}
+	<h2>Group photos</h2>
+	<dl>
+	
+	<dd><a href="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040651.jpg">
+		<img src="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040651_250.jpg"></a>
+		${g_credit(g=\@PlanetruthPictures\, 2017, u=${jbc_gigs}/2017/Apr15.html)}
+	</dd>
+	<dd><a href="${jbc_images}/20170406/20170406_group.jpg">
+		<img src="${jbc_images}/20170406/20170406_group_250.jpg"></a>
+		${g_credit(g=Mat Wallis\, 2015)}
+	</dd>
+	<dd><a href="${jbc_images}/19960820/live_20Aug96.jpg">
+		<img src="${jbc_images}/19960820/live_20Aug96_250.jpg"></a>
+		${g_credit(g=Jimmy Duval\, 1996, u=${jbc_gigs}/1996/Aug20.html)}
+	</dd>
+	<dd><a href="http://davidwhittemore.com/images/gallery/cult_photo.jpg">
+		<img src="http://davidwhittemore.com/images/gallery/thumb/500/cult_photo.jpg"></a>
+		<br/>
+		${cult} inner sleeve.
+		<a href="${jbc_gigs}/1989/Nov19_2000.html">19Nov1989, Milwaukee</a> (${del})
+	</dd>
+	<dd><a href="${jbc_images}/western2.jpg">
+		<img src="${jbc_images}/western2_500.jpg"></a>
+		<br/>
+		<a href="${jbc_albums}/western.html"><b>Western Family</b></a>
+		(uncredited)
+	</dd>
+	<dd><a href="${jbc_images}/paris.jpg">
+		<img src="${jbc_images}/paris_250.jpg"></a>
+		<br/>
+		<a href="${jbc_gigs}/1994/Feb17.html">17Feb1994, Paris</a>
+		(Lucien Borderline)
+	</dd>
+	<dd><a href="${jbc_images}/jbc92.jpg">
+		<img src="${jbc_images}/jbc92_500.jpg"></a><br>
+		1992 promo (uncredited)
+	</dd>
+	<dd><a href="${jbc_images}/19930223/euro93.jpg">
+		<img alt="[image]" src="${jbc_images}/19930223/euro93_250.jpg"></a>
+		<br/>
+		<a href="${jbc_gigs}/1993/Feb24.html">24Feb1993, Breda, Holland</a>
+		(${kathie})
+	</dd>
+	<dd><a href="${jbc_images}/90tour2.jpg">
+		<img src="${jbc_images}/90tour2_500.jpg"></a><br>
+		20Nov90, Dallas TX (${del})
+	</dd>
+	</dl>
+	
+	${endTab}
+
+	${end_tabs}
+
+	${jbc_footer}
+#live	endif
+
+#define	copyright.html
+#live	if (getval(page) = copyright.html)
+	${mkHeader(section=People, title=Copyright Information)}
+
+	All photographical content Copyright &copy;
+	1994-${_current_year}
+	<br>unless otherwise noted.
+	Permission is granted for personal use in the form of copying and
+	viewing the electronic text and images. Commercial use without explicit
+	written consent of the author is prohibited. Re-distribution is
+	permitted, provided such re-distribution includes this Copyright notice.
+	<p>
+	${del}
+
+	${jbc_footer}
+#live	endif
+
+#define	marc_hadley.html
+#live	if (getval(page) = marc_hadley.html)
+	${mkPeopleHeader(title=Marc Hadley, bio=${literalizeCommas(
+
+		${aka_beg}
+		Louis Leroi
+		${aka_end}
+		${w_role} Saxophone
+	)})}
+	${people_footer}
+#live	endif
+
+#define	curtis_johnson.html
+#live	if (getval(page) = curtis_johnson.html)
+	${mkPeopleHeader(title=Curtis E. Johnson, bio=${literalizeCommas(
+
+		<img src="${jbc_images}/people_curtis_johnson.jpg">
+		<p>
+		<a href="/images/20040213/romaniacs001.jpg"><img src="/images/20040213/romaniacs001_250.jpg"></a>
+		<p>
+		${aka_beg}
+		E-Man (${wilson})
+		${aka_end}
+		${w_role} Guitar, Air-FX, Voice, Programming
+	)})}
+
+	${projectsTab_beg}
+	${wilson}
+	${tractors}
+	${projectsTab_end}
+
+	${patTab_beg}
+	I first met Curtis when I was called upon to help out in the studio with a 
+	Northampton band called The Venus Fly Trap. He had always led his own 
+	groups around Northampton, so it surprised me a little that he should have 
+	joined somebody else's band. The aura of mutual suspicion when we first 
+	met in some damp basement rehearsal space lasted for all of three minutes, 
+	and the friendship that followed has lasted a good ten years and counting.
+	<p>
+	Curtis became involved with the JBC via a series of happy mishaps. Curt 
+	was a tower of support for me over the difficult days in 1991. Just as things 
+	were turning nasty for him, we found ourselves in possession of an extra air 
+	ticket for a Spanish tour, so Curt came too, ostensibly as "guitar tech", but 
+	effectively as vibemeister, bald-headed rapper and instigator of the "Ola 
+	Que?" Incident.
+	In early 1994 Curtis joined a <a href="${jbc_letters}/94Apr13/tour.html">JBC European tour</a> as Emergency Lead 
+	Guitarist. I taught him the tunes on the boat over, with a little extra coaching 
+	in a front room in Breda. By Dortmund he had gone critical. Nobody got to 
+	go home until the spaceships came. In Rotterdam he turned into Eddie Van 
+	Halen right before our eyes.
+	<p>
+	Having spent much of the eighties experimenting with the squawky 
+	computers of the day, loud electric guitar noises and elaborate op-art 
+	lightshows, Curtis decided in the early nineties that he should go acoustic. 
+	He had a clutch of songs that were a more than convincing argument in his 
+	support. And so, along with ${russ} and Matt Tractor he began 
+	Stranger Tractors. By the end of 1994 I had joined them on primitive stand-
+	up drums. 1995 saw the Tractors playing all over the UK and making a 
+	disturbing number of startlingly inappropriate TV appearances. Alan McGee 
+	at Creation helped to finance a single, ${linkSingle(title=Vibration)}, and there also exists a 
+	compilation of material from the time, including tunes produced by David J., 
+	who used to turn up at Tractors shows and act like a proper hooligan.
+	<p>
+	As 1996 began the Tractors were threatening to "go electric", a pretty 
+	terrifying prospect, and one that didn't have much to do with Curt's initial 
+	conception of what the group should be. Curtis took to playing solo acoustic 
+	shows, teaming up with Martin Stephenson (as in "and The Daintees"), 
+	which is how he got to meet a couple of influential people and start himself a 
+	proper solo career.
+	<p>
+	Curtis has a smashing album called ${linkAlbum(title=The Bean King)} out now.
+	You can order a copy, and find out all the details, by visiting:
+	${tractors}
+	${patTab_end}
+	${people_footer}
+#live	endif
+
+#define	wolfgang_tschegg.html
+#live	if (getval(page) = wolfgang_tschegg.html)
+	${mkPeopleHeader(title=Wolfgang Tschegg, bio=${literalizeCommas(
+
+		<h2>WOLFGANG TSCHEGG</h2>
+		<div align=right>
+		<b>The Electric Alpine Country Boy</b>
+		</div>
+		<p>
+		<a href="${jbc_images}/20000101/1Jan2000_wolfgang.jpg"><img
+			src="${jbc_images}/20000101/1Jan2000_wolfgang_250.jpg" 
+			alt="[shakespeare road NN1, new years evening]"></a>
+		${g_credit(g=${del}, d=2000-01-01)}
+		<p>
+		Born
+		${eval(${_current_year} - 2000 + 30)}
+		years ago in the Alpine village of Goetzis in Austria,
+		Wolfgang Tschegg moved to Vienna to study singing at the 
+		world-famous Conservatory. Going by the evidence  of his first album, he must have been 
+		studying some pretty strange things.
+		<p>
+		Wolfgang made his debut as a singer and guitarist at the Flex Club in Vienna in 1991. By 
+		1993 he was a favourite on the local scene, often opening for touring British and American 
+		bands, and it was then that he released that extraordinary first album.
+		<p>
+		Recorded in a Vienna church, ${linkAlbum(title=Wolfgang Tschegg)} is a record of astonishing simplicity, 
+		<img src="${images}/tschegg/tschegg_album3.jpg" width=150 height=150
+			align=right alt='[wolfgang]'>
+		elegance and seductive power. Instrumentation is kept to an essential minimum: a fat 
+		Gibson 335, a harmonium, even a bassoon, used to devastating effect on ${linkSong(title=Dig)}.
+		The songs are spare and beautiful, the lyrics in English, the voice rich and confidential. 
+		${linkSong(title=Stereoqueen)} has all the grace of 
+		a Central European Jeff Buckley, or even Leonard Cohen.
+		${linkSong(title=Hey Star)} is simply a classic. Despite its unlikely title,
+		${linkSong(title=Abdominal Fire)} has made regular 
+		appearances on the DJ's set list at the Viper Room in Los Angeles.
+		<p>
+		In 1996 Wolfgang moved to Berlin to study music therapy. At the same time he teamed up 
+		with Viennese programmer/producer Gernot Ebenlechner to form the band wir (not to be 
+		confused with the offshoot of the British band Wire). Gernot is also involved with the 
+		Vienna Scientists group of DJs and producers who recently rocked The Limelight in New 
+		York.
+		<img src="${images}/tschegg/tschegg_album1.jpg" width=150 height=150
+			align=left alt='[wolfgang]'>
+		<p>
+		Gernot brought his skills to Wolfgang's songs, resulting in what the duo called <i>Klare 
+		Tanzrock Loesungen</i> - Clear Dance Rock Solutions..
+		That's 'solutions' in the ... uh ... chemical sense.
+		<p>
+		The new project once again made its debut at Vienna's Flex Club before going on to play 
+		all over Germany and Austria. Apart from playing on a ship in Rostock harbour and at the 
+		prestigious Volksbuhne in Berlin, Wolfgang also got to perform at the Viennese Psychiatric 
+		Clinic.
+		<p>
+		In April of this year wir released their album, ${linkAlbum(title=gigolo jet)}.
+		Wolfgang's tunes ride on slinky loops and beats, the guitar complemented by imaginative 
+		Viennese techno squiggles and bleeps. This time the songs are in German (although a few 
+		words of English and French drift through here and there).
+		A release on London's Octopus Record label is being discussed.
+		<p>
+		<img src="${images}/tschegg/tschegg_album2.jpg" width=150 height=150
+			align=right alt='[wolfgang]'>
+		Through the arrangements the songs still shine simple, direct and affecting.  ${linkSong(title=Winter 
+		Kompakt)}, for which the duo have made a video, is as romantic a tune as Wolfgang has yet 
+		recorded. He might have a big city sound on his new album, but the heart of the Electric 
+		Alpine Country Boy is still beating on ${linkSong(title=Weil ich die Alpen Mag)}, a tune which brings to 
+		mind classic New Order.
+		<p>
+		<b>Gig Review</b>
+		<blockquote>
+			<a href="${jbc_gigs}/2002/Jan15.html">The 12-Bar Club, 15Jan2002</a>
+		</blockquote>
+	)})}
+	${linksTab_beg}
+		${linkExternal(http://www.wolfgangtschegg.de)}
+	${linksTab_end}
+	${people_footer}
+#live	endif
+
+#define	steve_valentine.html
+#live	if (getval(page) = steve_valentine.html)
+	${mkPeopleHeader(title=Steve Valentine, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/19990911/11Sep1999_steve.jpg"><img
+			alt="[image]" align=middle
+			src="${jbc_images}/19990911/11Sep1999_steve_250.jpg"></a>
+		<a href="${jbc_images}/19990911/11Sep1999_steve_pat.jpg"><img
+			alt="[image]" align=middle
+			src="${jbc_images}/19990911/11Sep1999_steve_pat_250.jpg"></a>
+		${g_credit(g=${del}, d=1999-09-11)}
+	)})}
+	${people_footer}
+#live	endif
+
+#define	pat_beirne.html
+#live	if (getval(page) = pat_beirne.html)
+	${mkPeopleHeader(title=Pat Beirne, bio=${literalizeCommas(
+
+		<a href="${jbc_images}/19990226/Bierne.jpg"><img
+			alt="XXX" src="${jbc_images}/19990226/Bierne_500.jpg"></a>
+	)})}
+	${people_footer}
+#live	endif
+
+#define	steve_garofalo.html
+#live	if (getval(page) = steve_garofalo.html)
+	${mkPeopleHeader(title=Steve Garofalo, bio=${literalizeCommas(
+
+		<a href="/images/20140822/20140822_johncannon_drums.jpg"><img
+			src="/images/20140822/20140822_johncannon_drums_500.jpg"></a>
+		${g_credit(g=John Cannon)}
+		<a href="/images/people/SteveGarofalo.jpg"><img
+			src="/images/people/SteveGarofalo_500.jpg"></a>
+		${w_role} Drummer, The Jazz Butcher Quartet
+	)})}
+	${people_footer}
+#live	endif
+
+#define	steve_new.html
+#live	if (getval(page) = steve_new.html)
+	${mkPeopleHeader(title=Steve New, bio=${literalizeCommas(
+
+		<a href="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040744.jpg"><img
+			src="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040744_500.jpg"></a>
+		${g_credit(g=\@PlanetruthPictures)}
+		<p>
+		<a href="/images/20140822/20140822_johncannon_bass.jpg"><img
+			src="/images/20140822/20140822_johncannon_bass_500.jpg"></a>
+		${g_credit(g=John Cannon)}
+		${w_role} Bass, The Jazz Butcher Quartet
+	)})}
+	${people_footer}
+#live	endif
+
+#define	simon_taylor.html
+#live	if (getval(page) = simon_taylor.html)
+	${mkPeopleHeader(title=Simon Taylor, bio=${literalizeCommas(
+
+		<a href="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040792.jpg"><img
+			src="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040792_500.jpg"></a>
+		${g_credit(g=\@PlanetruthPictures)}
+		${w_role} Trumpet, The Jazz Butcher Quartet
+	)})}
+	${people_footer}
+#live	endif
+
+#define	ian_botterill.html
+#live	if (getval(page) = ian_botterill.html)
+	${mkPeopleHeader(title=Ian Botterill, bio=${literalizeCommas(
+
+		<img src="http://wilsondub.com/images/bot.jpg">
+		<p>
+		<a href="/images/20040504/May4Bot.jpg"><img src="/images/20040504/May4Bot_250.jpg"></a>
+		<p>
+		${w_role} Voice, Programming
+		${aka_beg}
+		MC Bot, B-Man (${wilson})
+		${aka_end}
+	)})}
+	${projectsTab_beg}
+	${sumosonic} ..
+	${wilson}
+	${projectsTab_end}
+	${patTab_beg}
+	Fat Controller are mental, wrote Kerrang! Magazine. MC Bot was the singer. Has also sung with President Bush (really), Sumosonic and the Rocking Turks. With Wilson he does so much more, writing, programming and producing. Has been known to get beaten up by members of the audience before going onstage.
+	${patTab_end}
+	${people_footer}
+#live	endif
+
+#define	kathie_mcginty.html
+#live	if (getval(page) = kathie_mcginty.html)
+	${mkPeopleHeader(title=Kathie McGinty)}
+
+	${projectsTab_beg}
+	${sumosonic}
+	${projectsTab_end}
+	${people_footer}
+#live	endif
+
+#define	kathy_schaer.html
+#live	if (getval(page) = kathy_schaer.html)
+	${mkPeopleHeader(title=Kathy Schaer, bio=${literalizeCommas(
+
+		<img src="/images/wilson/warfare/misery.jpg">
+		${w_role} Bass, Voice
+		${aka_beg}
+		Misery (${wilson})
+		${aka_end}
+	)})}
+	${projectsTab_beg}
+	${sumosonic} ..
+	${wilson}
+	${projectsTab_end}
+	${patTab_beg}
+	Third original founder member and officially The Quiet One. Fender Precision with Marshall amplification. This is her first serious group, although she used to jam with members of Spacemen 3. Also worked as a studio engineer. Without Misery we would be nothing.
+	${patTab_end}
+	${people_footer}
+#live	endif
+
+#define	russell_cooper.html
+#live	if (getval(page) = russell_cooper.html)
+	${mkPeopleHeader(title=Russell Cooper, bio=${literalizeCommas(
+
+		<img src="/images/wilson/warfare/russ.jpg">
+		<a href src="/images/20040430/BuilthRuss.jpg"><img src="/images/20040430/BuilthRuss_250.jpg"></a>
+		${w_role} Percussion
+		${aka_beg}
+		Agent Wilson (${wilson})
+		${aka_end}
+	)})}
+	${projectsTab_beg}
+	${sumosonic} ..
+#	${rotten} ..
+	${wilson}
+	${projectsTab_end}
+	${patTab_beg}
+	Timbales, congas, bongos, daraboukas, blocks and bells, all piled into the back of a silver Peugeot station wagon and ready to go. Formerly with Mystic Crew, Stranger Tractors, Sumosonic and WARM. Has lived his entire life within the NN1 postal area.
+	${patTab_end}
+	${people_footer}
+#live	endif
+
+#define	steve_gordon.html
+#live	if (getval(page) = steve_gordon.html)
+	${mkPeopleHeader(title=Steve Gordon, bio=${literalizeCommas(
+
+		<img src="/images/wilson/warfare/stevieg.jpg">
+		<img src="http://wilsondub.com/images/thanos.jpg">
+		${w_role} Guitar
+		${aka_beg}
+		G-Man (${wilson})
+		${aka_end}
+	)})}
+	${projectsTab_beg}
+	${wilson}
+	${projectsTab_end}
+	${patTab_beg}
+	Telecaster troublemaker and ambassador for the sport. Also leads his own band, P-Hex, a gargantuan funk machine and possibly the only Northampton band ever to play Washington DC go-go music. Easily the most even-tempered member of the band, Steve has, nonetheless, been known to manifest as Thanos The Monkey God.
+	${patTab_end}
+	${people_footer}
+#live	endif
+
+#define	mark_refoy.html
+#live	if (getval(page) = mark_refoy.html)
+	${mkPeopleHeader(title=Mark Refoy)}
+	${projectsTab_beg}
+	${sumosonic}, ${undertakers}
+	${projectsTab_end}
+	${linksTab_beg}
+	${linkExternal(https://soundcloud.com/slipstreamuk, Slipstream)}
+	${linksTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	jonny_mattock.html
+#live	if (getval(page) = jonny_mattock.html)
+	${mkPeopleHeader(title=Jonny Mattock)}
+	${projectsTab_beg}
+	${sumosonic}, ${undertakers}
+	${projectsTab_end}
+	${linksTab_beg}
+	${linkExternal(https://soundcloud.com/slipstreamuk, Slipstream)}
+	${linksTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	steve_beswick.html
+#live	if (getval(page) = steve_beswick.html)
+	${mkPeopleHeader(title=Steve Beswick)}
+
+	${people_footer}
+#live	endif
+
+#define	joel_harries.html
+#live	if (getval(page) = joel_harries.html)
+	${mkPeopleHeader(title=Joel Harries, bio=${literalizeCommas(
+		${w_role} Drums
+	)})}
+
+	${people_footer}
+#live	endif
+
+#define	tim_harries.html
+#live	if (getval(page) = tim_harries.html)
+	${mkPeopleHeader(title=Tim Harries)}
+
+	${people_footer}
+#live	endif
+
+#define	dave_morgan.html
+#live	if (getval(page) = dave_morgan.html)
+	${mkPeopleHeader(title=Dave Morgan, bio=${literalizeCommas(
+		<a href="/images/2017_DaveMorgan.jpg"><img src="/images/2017_DaveMorgan_500.jpg"></a> ${g_credit(g=\@PlanetruthPictures)}
+		(2017)
+	)}
+	)}
+
+	${people_footer}
+#live	endif
+
+#define	sumishta_brahm.html
+#live	if (getval(page) = sumishta_brahm.html)
+	${mkPeopleHeader(title=Sumishta Brahm)}
+
+	${projectsTab_beg}
+	13 Frightened Girls ..
+	<a href="${jbc_gigs}/1991/Jul.html">The Vaguely Familiar</a>
+	${projectsTab_end}
+
+	${people_footer}
+#live	endif
+
+#define	query	${mapStr(_,  , ${truncAt(., ${page})})}
+
+#define	people_footer
+##live	if (strlen(${query}) > 6)
+#	${tag_beg}
+#	The Web
+#	${tag_end}
+#	<blockquote>
+#	Google Search for <i>${linkGoogleSearch(query=${literalizeCommas(${pretty(${query})})})}</i>
+#	</blockquote>
+##live	endif
+
+#live	if (!(getval(_global_title) = Pat Fish))
+	${albumCredits(person=${_global_title}, tab=yes)}
+	${doGigPerformer(person=${_global_title}, inline=no, tab=yes)}
+#live	endif
+	${doPersonPress(${_global_title})}
+
+	${end_tabs}
+
+	${jbc_footer}

@@ -1,0 +1,451 @@
+#define	mkTributeTrack(title, artist, url, pat, dl=1-01_SisterDeathPt2.mp3)
+	${linkAudio(mp3=${audio}/tribute/${dl}, title=${title})}
+	by <b>${linkExternal(${url}, ${artist})}</b>
+	<div class="lyric_annotation">
+	${pat}
+	</div>
+
+#define	index.html
+	${mkHeader(section=Tribute)}
+
+<h2>
+<h2>THAT TRIBUTE ALBUM IN FULL</h2>
+</h2>
+
+<b>The Butcher writes</b>
+<div class="lyric_annotation">
+  <img src="${images}/tribute_notes.jpg" width=301 height=328 align="right">
+ Living - as you do - with a Nameless Dread, I was anticipating the arrival of the JBC tribute
+ record with some considerable furrowing of brow. It was surely going to be the Mother Of
+ All Embarrassing Things. A number of good old pals were there for the losing. Just for
+ afters, the last fifty people on Earth not to consider me a terminal wanker were about to have
+ their minds changed for good. Walls would collapse as the Big Tanks rolled. Guatemalan
+ rough-riders would pick off the stragglers in scenes of terrible
+ peyote-crazed carnage. Frankly speaking, the whole project just seemed to
+ ooze foreboding.
+<p>
+ And so it rushed forward, chirping aggressively, with mandibles spread and antennae
+ lashing.
+<p>
+ Dave Coverly brought the record over on his visit here last weekend.
+ When I asked him what he thought about it he gave his magic dry smile and said that he
+ didn't want to say anything before I heard it. Fair enough, I thought, here goes..
+<p>
+ And you know what?
+ I really had a great time listening to it.
+ Nobody got the words wrong (except those of you who got them all wrong on purpose),
+ there's some great playing and, best of all, some wicked ideas. 
+<p>
+ Personally, the first time I played it, I started with Disc Two (Yeh, I know..) and I'm glad I
+ did, if only for the extraordinary kick-off that it gave to what was threatening to be a scary
+ experience. For the purposes of my wee review, however, I shall start where I should, at the
+ beginning. I should also point out that, when I first heard the record, I had (with one or two
+ exceptions) no idea who any of the recording artists were. I only looked up the track listing
+ on the internet today when I went to put this piece together.
+</div>
+
+<h2>Conspiracy One</h2>
+<p>
+
+<ol>
+<li> ${mkTributeTrack(title=Sister Death Pt 2.,
+	dl=1-01_SisterDeathPt2.mp3,
+	artist=The Purelove,
+	url=www.thepurelove.de,
+	pat=${literalizeCommas(
+ So the first noise you hear on the JBC tribute record is me, feeding back. Don't let anybody
+ tell you that the Germans don't have a sense of humour. I love the Purelove long time. I
+ played on their record. I played on their tour. They sneaked this mix onto the tail end of their
+ album just to please me. What can I say?
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Mr. Odd,
+	dl=1-02_MrOdd.mp3,
+	artist=Syd Meats & Johnny Jet,
+	url=syd@meats7.freeserve.co.uk,
+	pat=${literalizeCommas(
+ Syd Meats is another old mate. We met in The Wold, but now he trades as Southampton's
+ Leading Weird Bloke. I do believe that Syd and Johnny have distinguished themselves big
+ style with this version. Beautiful fuzz harmonics, soulful harmonica, extra verse nice! 
+ You know, I'm sure that you can buy Syd's recordings of his own songs too. I once saw him
+ hold a room full of people in Lincoln absolutely spellbound.
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Sex Engine,
+	dl=1-03_SexEngine.mp3,
+	artist=Sin Dex Industries,
+	url=kenbmiller@aol.com,
+	pat=${literalizeCommas(
+ This one could have been a nightmare. As it is, it sneaks up in a naughty way and the next
+ thing you know I'm having a right good time. What is it? Oh my GOD!!!
+ Dirty lickle drum machine, lovely little organ-thingie hook and a great fuzztone surge. 
+ Top wildlife samples, plus namechecks for Manuel Noriega and Chairman Mao. What more
+ do you want? I may be wrong, but this sounds like a great illustration of how inventive you
+ can be with a 4-track. Cardboard box on the head, anyone?
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Zombie Love,
+	dl=1-04_ZombieLove.mp3,
+	artist=The Jung Generation,
+	url=thejunggeneration@yahoo.com,
+	pat=${literalizeCommas(
+ I've seen these live. They played with us in Atlanta, and they were terrific. It's a big sound.
+ Garrick learned the bassline to this tune when he played a wedding with Eider and me back
+ in 1998. He has a Spacemen 3 sticker on his truck. Geezer!
+ Here we find the band hurtling through the JBC tune in a wild punk rock style, with their
+ influences on their sleeves and their amps on eleven. Good to see how the guitarist has nailed
+ the patent proto-Verve one-finger freak-out towards the end. 
+ Actually, he's really good. See this band.
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Nothing Special,
+	dl=1-05_NothingSpecial.mp3,
+	artist=Fat Little Demons,
+	url=http://fatlittledemons.tripod.com,
+	pat=${literalizeCommas(
+ Whoa! Huge big dumb roaring sound! Fat guitars! Cheesy organ! Surely these guys are
+ Americans? Guys, if you're British or something, you listen to too much Foo-Fighters.
+ Which is no bad thing. I wish our version of this song sounded so good. You've done a
+ fantastic job on it.
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Harlan,
+	dl=1-06_Harlan.mp3,
+	artist=The Limit Club,
+   url=crupi2000@aol.com,
+	pat=${literalizeCommas(
+ I started off with this wondering "Is that it?"
+ Oh my, was that dumb..
+ When that first verse ends and the band comes crashing in over the feedback..Whoa!
+ Yea verily, two "Whoa"s in two versions.
+ I really, really like this version. Another huge great American rock sound and a great vocal.
+ It sounds to me like this is a real gigging band who'd be well worth seeing.
+ And I love the "So tough" at the very end.
+ <br>
+ (By the way, does anyone know - does this have anything to do with The Limit nightclub in
+ Sheffield? I'll never forget David J's face when two young girls after a Sheffield gig offered
+ to take him to The Limit.)
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Down The Drain,
+	dl=1-07_DownTheDrain.mp3,
+	artist=Marko Van Haddock,
+   url=markg@vanhaddock.fsnet.co.uk,
+	pat=${literalizeCommas(
+ Mad as a sack of Teletubbies. Eider's poisoned folk song reborn as a KLF demo with 
+ MC Shadow. There is no way that I was not going to love this, and 'deed I do. Westside!
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=The Good Ones,
+	dl=1-08_TheGoodOnes.mp3,
+	artist=Purple Fish,
+   url=tontodisco@marlintexas.com,
+	pat=${literalizeCommas(
+ Still in no-fi land, though there's absolutely no shame in that. You should have heard some
+ of the early JBC demos..
+ This is one of those tunes, like Harlan, that it's great to hear performed by some real North
+ American-style rock musicians. No fancy shit, no gimmicks: bass, drums and two guitars.
+ I wrote this for my pal Stuart Kay after he had died at 28. I wonder what he'd say about all
+ this.
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Sister Death Pt. 1,
+	dl=1-09_SisterDeathPt1.mp3,
+	artist=The Purelove,
+   url=www.thepurelove.de,
+	pat=${literalizeCommas(
+ Well, again I play on this, so I can't really comment, except perhaps to grass Fidel up for
+ programming the whole thing in 4/4, which made crossing the spooky bridge immensely
+ difficult but rather a laugh. I love the vocal and the big Hammond swoops. Who says
+ Germans don't have a sense of humour - have a laugh with The Purelove and buy their album.
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Still and All (Strangest Kind of Flavor Remix),
+	dl=1-10_StillAndAll.mp3,
+	artist=Books On Tape,
+   url=ksmith@lerningkerv.com,
+	pat=${literalizeCommas(
+ Out come the samplers! Almost more of a remix than a cover, which is cool by me.
+ A serious Formby Feedback Fest, which does slightly resemble his own excellent Triumph
+ 2000. Grim, lush, theoretical and more than faintly horny. These are words which I never
+ envisaged myself typing about "Still and All". Goes to show the value of schemes like this
+ one, I suppose.
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=The Human Jungle,
+	dl=1-11_TheHumanJungle.mp3,
+	artist=Jennifer & Al,
+   url=mail@alavery.net,
+	pat=${literalizeCommas(
+ Yo, Jennifer and Al, are you expected somewhere else? 
+ Bright and sprightly, but coming after what has gone before it sounds a touch over-eager.
+ Tuneful, professional and that, but for me it doesn't bring a lot to the tune that wasn't there
+ already. Sorry team, but you sound quite good enough to get along without my 
+ say-so anyway. 
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Girlfriend,
+	dl=1-12_Girlfriend.mp3,
+	artist=Once In The Sun,
+	url=onceinthesun@aol.com,
+	pat=${literalizeCommas(
+ My initial thought was "Wow! Are these Japanese?"
+ Then, in short order: Italians, Dave Kusworth and Nikki Sudden, Swedes, Dean Wareham  or
+ a long-lost Felt rehearsal tape. Then I got it - come on out, Peter Perrett, and keep your hands
+ where I can see 'em.. Classic no-fi recording values and one evil punk rock vocal. My God,
+ this takes me back to the eighties, and I don't mean Dire Straits or Bauhaus.
+ Love that last line..
+	)})}
+<p>
+
+</ol>
+
+<h2>Conspiracy Two</h2>
+
+
+<ol>
+<li> ${mkTributeTrack(title=Chinatown (Sly Wong Mix),
+	dl=2-01_Chinatown.mp3,
+	artist=The Gong Factor,
+   url=info@plasticcastle.com,
+	pat=${literalizeCommas(
+ All right, it was written in all innocence, but I probably had a slap coming over this one.
+ Thing is - I love it.
+ I love having my bass playing sampled. I love the mental-olliental noises. I love the kung-fu
+ fighting break in between verses. This tune had jaws dropping and toes tapping at the JBC
+ ranch. We hear Sumo, we hear Black Eg, we hear Screaming Jay Hawkins. We hear healthy
+ disrespect, serious sampling espionage and a rampant imagination. We hear all the stuff we
+ love to hear. Eastside!
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Partytime,
+	dl=2-02_Partytime.mp3,
+	artist=Muppet Ranch,
+	url=briandmage@aol.com,
+	pat=${literalizeCommas(
+ Sly name, Young Team! Trouble is - you're not muppets at all, but clearly ladies and
+ gentlemen of the world and Deep Loungecore Warriors. Beautiful vocals, lovely
+ groove.. absolutely gorgeous version -  absinthe all round!
+ (If that weren't enough, I happen to know that these are some of the nicest people in
+ Minneapolis.)
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Angels,
+	dl=2-03_Angels.mp3,
+	artist=Patrick Kinney,
+	url=peejays@grafike.com,
+	pat=${literalizeCommas(
+ Classic American stylings here - eggshell fragile and as delicious as anything, with a riveting
+ androgynous vocal. It took us ages to work out if that were a boy or a gurl, Leroy. I'm on
+ record as saying it would be better if it was a boy, by the way: I remember David Surkamp.
+ He does clever things with the guitars as well, adding neat passing chords and some lovely
+ electric lines. Another top version, bedad!
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Filth,
+	dl=2-04_Filth.mp3,
+	artist=Vergiftung,
+   url=www.adjective.com/vergiftung,
+	pat=${literalizeCommas(
+ These men are seditious deviant oddballs who should be pursued by The Authorities, yea
+ even unto Florida. Not content with re-writing the riff, the bassline and the arrangement,
+ these insatiable thrill-seekers then turn on the Poor Bloody Lyrics as a scary (and probably
+ bald) loner mumbles in a minatory fashion about waitresses. Genuinely unnerving depravity
+ involving The Jacksons, The Rev. Botus Whiteblood-Fleming and some seriously
+ underground sampling. Dangerous, evil and mad. 
+ On the bright side, it does mention a stegosaurus..
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Southern Mark Smith,
+	dl=2-05_SouthernMarkSmith.mp3,
+	artist=The Marble Tea,
+   url=www.marbletea.com,
+	pat=${literalizeCommas(
+ Resurgens..
+ Busting out of the South come The Marble Tea with a super-urbane reworking of the tune
+ that mildly annoyed a generation. Drop-dead cool singing and some excellent mental
+ squeaky noises going off in the background grace an otherwise surprisingly faithful version.
+ For what it's worth, this sounds just as odd now as when it came out back in the 17th
+ Century. Wild Casio-Fu in the hood. Southside!
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Mind Like A Play Group,
+	dl=2-06_MindLikeAPlaygroup.mp3,
+	artist=The Zamboni's,
+    url=www.thezambonis.com,
+	pat=${literalizeCommas(
+ ${mark_refoy} returned from a Slipstream show in Philadelphia or somewhere like that with
+ unlikely stories of meeting a band who dug the JBC and played ice-hockey anthems. Here is
+ the living proof! A really neat version of a song that I thought I was happy to have forgotten.
+ I like the ice rink noises and the way it all picks up and gets "proper" at the end. Wish we'd
+ thought of that..
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=D.R.I.N.K.,
+	dl=2-07_DRINK.mp3,
+	artist=Half Assed Snackers,
+ url=irmss@aol.com,
+	pat=${literalizeCommas(
+ I know these men..which is a bit of a shame, because before I found out who they were, I was
+ looking forward to saying how much I had enjoyed the Alien Sex Fiend version of Max's
+ theme tune. I still do enjoy it, though, as I think of these shadowy and 
+ ill-intentioned individuals lurking deep in their secret Manhattan headquarters, guzzling
+ Power-Martinis and flying the flag for middle-aged sociopaths WORLDWIDE.
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Forever,
+	dl=2-08_Forever.mp3,
+	artist=Gin Boy & the Whiskey Kid,
+	url=nsatkinson@aol.com,
+	pat=${literalizeCommas(
+ Nice, spooky intro followed by abrupt tape edit and suspiciously louche rendition of JBC
+ paean to global promiscuity with disturbed vibraphone solo. Having just seen "The Crow"
+ with Brandon Lee, I liked the encouragement to arson, though I thought the "copulation" bit
+ was a touch heavy-handed, gents.. had we possibly had a drink?
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Girls Say Yes,
+	dl=2-09_GirlsSayYes.mp3,
+	artist=Darling Clementines,
+	url=misterscout@hotmail.com,
+	pat=${literalizeCommas(
+ This is absolutely drop-dead gorgeous. It's one of a very small number of my tunes that I
+ think might be any good anyway, and this version is just swell. It sounds almost like
+ "Workingman's Dead" or "American Beauty", and - astonishingly - I mean this as a
+ recommendation. Perhaps Camper Van Beethoven or The Blacks might be more
+ contemporary references. The Southern-Gothic stylings really suit the song. If you knew the
+ JBC and were thinking about getting this record, this would be the track that I would play
+ you first. Pristine and lovely.
+ I could talk for half an hour about the snare drum sound for Heavens' sakes.
+ Yeah, colour me thrilled, flustered and flattered to shit. I would love to hear more of this
+ band..
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Whaddya,
+	dl=2-10_Whaddya.mp3,
+	artist=Fuel Burning Oracle,
+   url=tom69@metro.quik.com,
+	pat=${literalizeCommas(
+ Sweet and moody from the East Coast monk of kung-fu. Elegantly simple programming,
+ plenty of gratuitous dinosaur stuff, and some of the most spectacularly erratic rhythm guitar
+ known to man. Top one, Tom! Thank you for the music! 
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Only A Rumour,
+	dl=2-11_OnlyARumour.mp3,
+	artist=Green Fiend,
+   url=madgdv@yahoo.com,
+	pat=${literalizeCommas(
+ A brave choice of tune for the psychedelic warriors of LA, and a wholesome edifice of tape
+ hiss on which to build it: my kind of people, having my kind of fun. A sweet and largely
+ faithful version, in which Gloria drops a magnificent bass slide into Verse Two and Mark
+ actually succeeds (more or less) in playing two different guitar parts simultaneously at the
+ end. Parched, cool and beautiful, just like the people who made it.
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Nightmare Being,
+	dl=2-12_NightmareBeing.mp3,
+	artist=Pandas Relax,
+    url=relaxpanda@aol.com,
+	pat=${literalizeCommas(
+ This tune was originally conceived around Laurence O'Keefe's bass part, which is totally
+ absent from this version. In fact there's no bass at all, which is a bit weird. Surely no panda
+ can truly relax without a thick old bottom end to rest on?
+ Nor do I quite understand what the singer is up to. Does he really know Kizzy? Why is he
+ quoting Alex Green at the start? Is Peter Lorre really dead or not?
+ Top Jack Kennedy sample towards the end, but I'm afraid that I just don't get it. Sorry.
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Big Saturday,
+	dl=2-13_BigSaturday.mp3,
+	artist=uncletoe's portasound,
+	url=uncletoe@mindspring.com,
+	pat=${literalizeCommas(
+ This gave me the fright of my life when a friend played it to me down the phone, but it's
+ much sweeter and lovelier in real life, as it were. That's a neat tremolo on the electric guitar,
+ and I like the way that the bass takes one of the lead guitar parts in the middle. This actually
+ sounds a lot like the original JBC demo.
+ Except for singing, which is much nicer. It reminds me a little bit of Angel Corpus Christi,
+ which - in my book - is No Bad Thing. 
+ JBC music from New York City- if you'd told me this would happen back in '83,  I'd have
+ freaked right out!
+	)})}
+<p>
+
+<li> ${mkTributeTrack(title=Penguins,
+	dl=2-14_Penguins.mp3,
+	artist=Heuristics Inc.,
+    url=http://www.heuristicsinc.com,
+	pat=${literalizeCommas(
+ Now this here is mental. Bringing the sensibility of the Von Daemmerung Brothers to the
+ Great Antarctic Twelve-Bar, Heuristics Inc. baffle your correspondent with flappy drums
+ and far-off, grumbly singing. At first I couldn't see the virtue in this - now I'm not so sure.
+ The penguin sample at the end may have had something to do with that. Skin up..
+	)})}
+<p>
+
+</ol>
+
+ <div class="lyric_annotation">
+ And that's it, except to say that it was all so very much more pleasurable an experience than I
+ had feared, with lots of laffs, thrills and shivers along the way. Some of it really blew me
+ away. Special Awards go to Darling Clementines, The Limit Club, The Gong Factor,
+ Muppet Ranch, Marko Van Haddock and Southampton's Leading Weird Bloke, but most
+ everything here has rocked JBC Mansions after its own special fashion. Last, but not least,
+ I'm flattered - yea, even unto touched - that you guys all thought it was worth the time and
+ trouble.
+<p>
+ Hearty congratulations and thanks to all involved!
+ You'll be hearing from my Solicitors shortly.
+<p>
+ Pat Fish<br>
+ NN1 6th December2000
+<p>
+ PS - Have a rockin' good Christmas!
+<p>
+ * UK Reader ~ Coverly and the JBC had their photo on the front page of the Guardian.    We
+  happened to be riding in the London Eye when the Christmas fireworks went off. We're up
+ there at the top of it in the sky. Thank you.
+ </div>
+
+<i>
+<h3>This is the DISCLAIMER.  Please read it.  Thanks!</h3>
+<p>
+              Pat, and his legal counsel, have been kind enough to give us the thumbs up on this fun little list project.  He could have
+               easily said no, so let's all raise our glass of whatever and toast to his health and kindness and well-groomed hair.  
+<p>
+              Of course, there are several conditions we must abide under.  Firstly, we all understand that the sole owner of any of
+              these works, whether you are singing them or not, is the JBC.  Just because you are doing the cover version does not
+             give you any rights toward it's ownership.  This means, you cannot put your JBC tribute song on your own band's cd and
+              sell it for money (not unless you go through the proper channels and arrange for royalties to be paid.)  This also means
+              that you may not sell your JBC Tribute cd (no, not even on E-bay... leave Ebay for those who know how to use it, like
+                             David J.)  All in all, don't do anything that's gonna piss Pat off...
+<p>
+                 The JBC Tribute cd is for the list only.  It is for fun.  Failure to have fun with it is a horrible crime.  Horrible...
+<p>
+                                   Sorry about the lecture, but I had to do it.
+</i>
+	${jbc_footer}

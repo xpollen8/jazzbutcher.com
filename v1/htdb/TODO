@@ -1,0 +1,697 @@
+* move Wilson Demos into proper albums for smoother integration
+
+* should be able to search press articles by "credit",
+  as well as mediacredit
+
+* album track schema:
+	album
+	track #
+	side
+	title
+	variation
+	runtime
+	comments
+
+* need to be able to play album tracks directly from the release
+  page when audio is available (Christmas w/the Pygmies, etc)
+
+* good Eider anthology here
+	https://saltyka.blogspot.com/2009/05/max-eider-ex-jazz-butcher.html
+
+* need way to link/find all 3rd party contributions
+  (Andrew Brooksbank, etc)
+
+* need to accurately show stats for when a song is embedded w/in
+  an instance of "The Entire Show". eg
+  http://jazzbutcher.com/lyrics/shes_on_drugs.html
+
+* https://www.discogs.com/Jazz-Butcher-Condition-Blue/master/35105
+  how to update site w/all these different versions?
+
+* longrunning JBC forum: https://www.ilxor.com/ILX/ThreadSelectedControllerServlet?boardid=41&threadid=13089
+
+* steal people band list from: http://saltyka.blogspot.com/2009/05/jazz-butcher.html
+
+* upload Dooj/Nick pix from "JBC Scans" folder
+
+* upload the "JBC Scans/2000tour_promo.jpg", create an album entry for it
+  and upload the tracks
+
+* pix of spookycd for spooky.html
+
+* pix of conspiracy LP for conspiracy.html
+
+* sumosonic performance search should look at both 'performer' and 'aka' fields
+  perhaps the search interface should allow q=A..B..C to search on several things
+  at once
+
+* extend gigsong to include "source media", "source generation", "bootlegger"
+
+* extend gig to include "setComments" to replace those "gsExtra" fields from audio.htdb
+
+* "songs not on albums" and "songs never performed"
+  would be cool data explorations
+
+* add song credits/dates to all lyrics pages
+
+* once albums have pub dates, and lyrics have written dates,
+  we'll be able to allow navigation/sorting of lyrics by those dates
+
+* add Conspiracy "pix" tab to show diff incarnations of the JBC
+
+* figure out the damned photo gallery
+
+* http://www.jazzbutcher.com/htdb/lyrics/sumosonic_we_are_the_traffic.html link to 1991 Cambodia page
+
+* inline the "jbc-list" links in "Pat Says" in lyrics
+
+* put album covers into images/covers
+
+* put people pictures into images/people
+
+* get albums/releases into the db BEFORE attempting to
+  complete "project" htdb files.
+
+* add the Jughead's Basement podcast to interviews
+	https://www.podomatic.com/podcasts/jugheadsbasementtnh/episodes/2013-11-06T16_20_32-08_00
+
+geocoding:
+	https://maps.googleapis.com/maps/api/geocode/json?address=77+shakespeare+rd+northampton+england
+
+USEFUL SQL
+	to detect mismatch between gigs dates and gigsong dates:
+		select distinct(datetime) from gigsong where datetime not in (select distinct(datetime) from gig);
+
+	update gig set extra='with..' where alsowith<>'' and extra not like 'with,'
+
+	gigs w/o players
+	 select g.* from gig g where extra not like '%players%' and extra not like '%solo%' and extra not like '%duo%' and extra not like '%sumo%' and extra not like '%wilson%' and extra not like '%nopat%' and datetime not in(select distinct datetime from performance where category='event');
+
+--------------------------------------------------------------------------------
+
+* ephemera table to hold all digital media:
+	posters
+	published announcements
+	published reviews
+	photosets
+	announcement
+	press
+	review
+
+	fields:
+		type
+		tags (to hold info about persons references in the media)
+			// [[person:XX_YY]] | gallery:[[person:XX_YY]]
+		url
+		source
+		sourceurl
+		credit
+		crediturl
+		dtadded
+		dtreference	// gig date
+		dtpublished
+		publication
+		pubtitle
+
+wilson:
+  * put various wilson .doc into Bio section
+|	http://wilsondub.com/htdb/about
+|  	http://wilsondub.com/htdb/people
+|	http://wilsondub.com/htdb/about/communique1.html
+|	http://wilsondub.com/htdb/about/communique2.html
+	http://wilsondub.com/htdb/about/bang.html
+	http://wilsondub.com/htdb/about/speedbump.html
+  * add Wilson newsItems
+  	http://wilsondub.com/htdb/news
+
+  	http://wilsondub.com/htdb/news
+
+* maybe a special flag to group gigs together as "tours"
+
+* added "Projects" section in which to list Wilson/Sumo/Eg/Unreleased/Collaboration, etc
+  * each project should contains a good write-up and pat's thoughts, etc
+
+* have the other domains redirect into those sections
+
+* goal: get all JBC data into json-ld format so that an API-based
+  website can be built.
+
+* make sure that 'extra==with' matches 'alsowith', and then do away with the extra field
+
+* go through emails from pat and fill in what's missing (songlists, other details)
+
+* cvs->git
+
+* allow public annotations
+
+* rework the gallery
+
+* rescan/repost higher res images
+
+* move media/images to archive.org
+
+* get rid of "teaser" extra - it is really the same things as "notes" (which is same as "announcement")
+
+* set extra=solo where "who" only contains pat
+
+* add botus/o'higgins as soundmen to US tours
+
+* ask Curtis for a bio, esp side projects (eg, sumo, wilson)
+
+* ask Gabriel for a bio, esp around Sumo time
+
+* need to uniquely sort instruments from performance:
+  http://www.jazzbutcher.com/htdb/gigs/1999/Feb26.html
+
+* develop markdown editor and tagged/categoried way to store in db
+  shoud handle: news announcements, interviews, gig announcements, etc
+
+* lyrics section needs help
+
+* in gig notes, use class=annotation where something is quoted in the announcement
+
+* since adding _HHMM.html to gigs, there may now be orphan links on the site
+  to the old _1.html format that need to be updated
+  make sure all gigs have correct page URL (make sure DB and gigs*/pages.html match)
+
+* linkSong() needs 'source' and 'credit' for cases where they are not album tracks
+
+* go through posters and address address/time/cost/with if missing
+  update gig datetime/hit/feedback for gigs where the start time is given in poster/notes
+
+* use a calendar layout for gig listings pages, with poster as background
+
+* use SVG icons
+
+|* "Near Perfect Pitch" needs a real gig page so as to streamline the
+|  picking up of the "Interview" audio
+
+|* http://www.jazzbutcher.com/htdb/gigs/2009/Aug16_2000.html
+| http://www.jazzbutcher.com/htdb/gigs/2010/Jan29.html
+|  move Shakespear from "performer" to "act"
+|  (promoted events should always be 'with', not 'who')
+
+| * be consistent about <b>, especially in the /audio section
+
+|* http://www.jazzbutcher.com/htdb/gigs/2001/Dec31.html
+|  need to attribute instruments to players
+
+|+  * bring over press items:
+|+    http://wilsondub.com/htdb/press/2003Sep16.html
+|+    http://wilsondub.com/htdb/press/2004Sep12.html
+
+| + populate the wilson/sumo/eg tabs in people.htdb
+
+|+ set 'aka' for Wilson gigs
+
+|+ http://www.jazzbutcher.com/htdb/gigs/2013/Jun13.html
+|  have infor for performers on set1 versus set2
+|+ Wilson lineup cleanup
+|  eg http://www.jazzbutcher.com/htdb/gigs/2001/Oct19.html
+|  http://www.jazzbutcher.com/htdb/gigs/2006/May28.html
+
+|+ http://www.jazzbutcher.com/htdb/gigs/1997/Sep16.html
+|  http://www.jazzbutcher.com/htdb/gigs/2014/Dec19.html
+|  http://www.jazzbutcher.com/htdb/gigs/2015/May9.html
+|  http://www.jazzbutcher.com/htdb/gigs/2015/Jun12.html
+
+| http://www.jazzbutcher.com/htdb/gigs/1988/Dec16.html
+|  ticket is showing as poster
+
+|+ make sure that gig-wide 'instrumets' show up when set in performance table
+|  Date: Sunday, 1st of April 2001 10:00pm (15 years 345 days ago)
+|  Venue: The Racehorse
+|  Location: 15 Abington Square Northampton England NN1
+|  Telephone: 01604 604313
+|  With: Curtis E. Johnson
+|  Performers: Wilson Headstone - guitar, Misery Wilson - bass, Agent Wilson - percussion
+
+|+ need pseud-markdown language for converting db-stored data into values
+|  which expand:
+|  [[[caption:=][person:=][person:=First_Last]]]
+|  [[[credit;;caption;;dt][photo::URL]]]
+|  .. generally..
+|  [[credit;;caption;;dt](<type>::<key>)]
+|  .. or ..
+|  [(<type>::<key>)]
+|+ add "Near Perfect Pitch" interview to press page.
+
+|+ all interviews should use iview_q/iview_a classes
+
+|+ add field to gigsong for "composer" in the case of cover tunes.
+|  this will make searching easier, and will allow us to exclude
+|  those tunes from auto-searching
+
+|+ need a mapping from "Lyric Title" to lyric_url.html
+
+|+ need gigsong_performer table to hold gig "who" values
+
+|+ Paradise http://www.jazzbutcher.com/htdb/gigs/1990/Nov11.html
+|  needs full songlist
+
+|+ map existing gig /audio recordings into the gig listings from which they originate.
+
+|+ show gigs for each song
+
+|+ list wilson and sumosonic lyrics
+
+|+ in /people - should eventually show the # of gigs played, etc
+
+|* identify and update all "nopat" gigs
+
+|+ merge wilsondub.com database of shows (none are in a db!)
+|  grep \#define /var/www/vhosts/wilsondub.com/htdb/gigs*|grep -v index.html|grep -v fliers.html
+
+|+ merge sumosonic shows
+
+|* update sumosonic details from
+|  mail/old_mail/1997
+
+  Somehow neglected to mention this before, but I make a cameo appearance on the new album from estimable Silverlake
+  Bohemian combo, The Black Watch. The album is called Jiggery-Pokery and is out now on Stonegarden Records. I sing on
+  two numbers. See www.stonegarden.com [www.stonegarden.com] for more details.
+
+  Sat, 16 Nov 2002 14:16:08 -0000
+    Also planning on entering a studio in December with Donald Ross Skinner (of Copey infamy) producing.    
+
+  -----Original Message-----
+  From: TBWatch@aol.com <TBWatch@aol.com>
+  To: distro@parasol.com <distro@parasol.com>
+  Date: 31 May 2002 20:56
+  Subject: Re: the black watch "jiggery-pokery"
+
+
+  >the black watch
+  >jiggery-pokery
+  >stonegarden records  cat # SGN-963
+  >
+  >This, the seventh CD from gloriously dreamy LA popsters the black watch, is
+  >undoubtedly their masterpiece--a beautiful portrait of the intense melody
+  and
+  >mezmerising mood that this long-standing violin/guitar-attack, boy/girl
+  indie
+  >band is so well known for (their press kit is a phone book for a small
+  >town!).  Think along the lines of a sad Beatles leavened by an insouciance
+  >worthy of vintage New Order, sprinkled with tinkling touches of XTC's more
+  >pastoral moments, and seasoned with lyrics as poetic and smile-inducing as
+  >any written by Mr Andy Partridge himself.  And speaking of witty Brits, Pat
+  >Fish, aka. The Jazz Butcher, guest croons on "What is the Color of
+  >Happiness?"--a track that might easily have fit among those found on the
+  >JBC's classic Cult of the Basment LP on Creation/Rough Trade.
+  >
+  >"This is as memorable as any Kinks klassic"--Magnet
+  >"Another beguiling release from these underrated overachievers, typically
+  >splendid and honey-dipped"--The Big Takeover
+  >"We love the black watch.  They remind us that jangly pop doesn't have to
+  be
+  >so icky sweet it makes you want to wash your hands."--Time Out NY
+  >"Like a sad Beatles or the best of the Cure, the black watch's sense of
+  >heartbreak is as complex as their music is simple in its unmitigated
+  >beauty"--LA New Times
+  >
+  >List Price:  $13.98
+  >
+
+  2003-05-18
+    http://www.thehotplaceband.com/about/
+  There's a new web magazine called Unminded. They have got interviews with Dave J and myself (it would appear to date      
+  from the tour in 2000 AD) as well as lots of other interesting shit at: www.unminded.com 
+
+SONIC TONIX
+  pat
+  max
+  Simon Mawby there. The man we used to call Cardinal Mawb
+
+
+|2003-06-17
+|  In other news, Eider and I have been secured to play a wedding...in Northampton! (Wot? No flights?)                       
+|  It's Mitch Kenkins' brother-in-law who's getting married, and we shall be doing our acoustic sit-down diddly-diddly       
+|  thing for the lucky friends and relations invited on 5th July.
+
+2003-07-17
+  The Tom Hall memorial gig will take place at northamptonshire County Cricket Club, Wantage Road, Northampton              
+  on Saturday 6th September 2003.
+  http://www.jazzbutcher.com/images/tom_hall_flyer.gif (Pete Watkins)
+  Well, Tom Hall's memorial event went off massive style. Estimates of the numbers range from 300 to 500. I reckon it       
+  was nearer the latter. It was a big room and it was heaving. It was so crowded that we spent a considerable amount of     
+  time out on the terrace, watching through the huge cricket pavilion windows.The evening started with an oration from      
+  Alan Moore before settling into an unending parade of talent, including Curtis, Sue Figueroa, Accrington Stanley,         
+  assorted Bareback Ryders and Ratcliffe Stouts, the Strung Out Sisters and Tom's son Will, who turned in some great        
+  versions. I got to sing John The Road and Kissing & Killing, the latter a right royal rave-up. When there were no more    
+  songs to sing Stevie Ward let the tape player rip so that we could all do stoopit wee dances to Tom and Guy's deranged    
+  live version of Volga Olga. We signed the guest book and headed off to party all night. On the way home I ran into a      
+  man who had come from Australia!    
+
+2003-12-30
+  Well, it's finally come to pass. Wilson's "Quality People" appears on the latest compilation from California's Heyday     
+  Records, "Straight Through the Sound Barrier", alongside Marty Willson-Piper, Longwave, one David J. and many others.     
+  It's out now. Want one? Try www.heyday.com [www.heyday.com] . Or get one off us at one of our gigs. Cheers.   
+
+| ASK PAT
+| 
+| Sales
+| 
+|   Do you have a preference as to what online merchant the
+|   "Purchase Here" links go to?
+|   http://www.jazzbutcher.com/htdb/albums
+| 
+| Master Of Budvar
+| 
+|   known gigs here:
+|   http://www.jazzbutcher.com/htdb/gigs/search.html?f=extras&q=nopat
+| 
+|   Would you consider "Acoustic Allstars" to be distinct from "Masters Of Budvar",
+|   or was it simply the initial naming of that spate of events?
+| 
+|   Can you think of a better description than my "Pat Fish Promotes"
+|   for that collection of "Masters Of Budvar"+other shows (that you
+|   didn't play at, but promoted)?
+|   I'd call them ALL "Masters Of Budvar", except..
+|     1) No one knows what the heck that means (but you & yours)
+|     2) Some of them were under a different banner, yet highlighted or
+|     recommended by you (Tschegg, etc).
+|   Sure, I could drop them from the site, but there's an awful lot of
+|   neat information in your write-ups for those shows, and they help
+|   paint a fuller picture of what you were up to in the aughts.
+| 
+|   Also, I SWEAR that somewhere I saw that you stated exactly how
+|   many Budvar shows there were, and I don't think it was "52" - which
+|   is how many are documented on the site - but I can't find the
+|   reference. meh - it doesn't matter, I guess.
+| 
+| SUMO
+| 
+|   known gigs here:
+|   http://www.jazzbutcher.com/htdb/gigs/search.html?f=extras&q=sumo
+| 
+|   Is this one a sumo gig? (the people in the pix suggest it is)
+|     http://www.jazzbutcher.com/htdb/gigs/1997/Mar11.html
+| 
+|   1) There is zero "setlist in full" and next to zero "who played"
+|   info for the sumo gigs.  Does this info exist? Can it be shared?
+| 
+|   2) Ed Carter asks: sumosonic debut? (this date is not documented)
+| 
+|     Date: Tue, 07 Jan 1997 13:55:36 +0000
+|     From: Ed Carter <ed@cybersurf.co.uk>
+|     To: jbc-list@ecn.purdue.edu
+|     Subject: Sumosonic
+| 
+|     Micro-mini news from the fish frontier:
+| 
+|     Apparently, Sumosonic had their live debut ("lots of girls on stage.
+|     that's what I want") on or about the New Year, in sunny Northampton.
+| 
+|     Does anyone know any more than that?
+| 
+|ed, puzzling
+|
+|The gig was on New Year's Eve at the Rocking Horse (the music venue bit at
+|the back of the Racehorse pub, Abington Square, Northampton). But sadly
+|neither I nor Musical Dave (ex of Northampton combo Hobo Swill/Ubu Swirl
+|and my beau of the mo) could be there. So we don't know what it was like.
+|
+|Anyone know how it went?
+|	
+|Alice <alice@dirigible.idiscover.co.uk> 
+| 
+| WILSON
+| 
+|   known gigs here:
+|   http://www.jazzbutcher.com/htdb/gigs/search.html?f=extras&q=wilson
+|   (88 of 'em, that's practically a real band!)
+| 
+|   It would be great if the line-ups were as simple as:
+|     from dates A->B, it was ...
+|     from dates C->D, it was ...
+|   But it probably ain't that simple.
+|   I didn't want to assume that everybody played all the time,
+|   so most Wilson gigs are currently "player-less".  Help a brother out.
+|   Here's some info from email:
+|     2001-09-22: "Wilson appear to be holding steady at a 6 piece line-up"
+|     2004-02-13: "With Mr. E. Wilson officially retired from active service.."
+| 
+|   Also:
+|   2003-02-15, you said
+|     "(There is film of this shit, as, indeed, there is of a lot of Wilson performances. We're going to try and get some of
+|     this to you for the site before too long. But this one is particularly scary, coz E-Man is centre stage. Eek! How did
+|     that occur?)"
+|   Might these films still exist.. and be shared?
+| 
+| BLACK EG
+| 
+|   known gigs here:
+|   http://www.jazzbutcher.com/htdb/gigs/search.html?f=extras&q=eg
+| 
+|   Which brothers played which gigs?
+| 
+|   Also - shall this one be construed as an actual black eg gig?
+| 
+|     http://www.jazzbutcher.com/htdb/gigs/1999/Jun2.html
+| 
+|     (it is listed soley upon an email comment - and it seems odd
+| 	that this was 5 years after the brothers' previous outing.)
+|     if valid, what was the venue/other details?
+| 
+| STRANGER TRACTORS, others
+| 
+|   There are a couple ST gigs here and there. Do they/should they count?
+|   http://www.geocities.ws/Nashville/Stage/8818/strangertractors.html
+| 
+|   You've had your hand in quite a few things at different levels of
+|   involvement.  From player to composer to simply liner-note writer.
+|   The major projects (eg/sumo/wilson) are fairly well documented.
+|   There's some info for a couple stillborn efforts (Vaguely Familiar/Coonce),
+|   that could use fleshing out.  (and if there's more Eg material, hey, buddy,
+|   that'll always be welcome, 'cuz that shit's good).  Mr Blagdon? I only know
+|   about it because Horton Jupiter had some (which I didn't copy in '94
+|   when I had the chance).
+| 
+|   I'm thinking a more proper side-section of the site dedicated to
+|   "other projects".  (Currently, you have to hunt around in the
+|   lyrics/audio tabs to find it)
+|   I imagine the projects section would have explainers for the major ones
+|   and a few words about the others.  If you think there's enough 3rd party
+|   "played on", etc material, those items could be listed.
+| 
+|   discogs, for instance, has a (really incomplete/inaccurate) version
+|   of what i'm talking about:
+|   https://www.discogs.com/artist/961367-The-Jazz-Butcher-2?noanv=1
+|   https://www.discogs.com/artist/378507-Pat-Fish
+| 
+| JBC
+| 
+|   2003-06-17 email:
+| 
+|     "Also in the air is the possibility of a gig in Rugby in
+|     September with Max and I opening for Stephen Duffy. That one will be open to the paying public, and may turn out to be
+|     the only JBC action this year. Details when I have them, sir."
+| 
+|     Q: did this ever occur?
+| 
+|   The 2016 gigs - anything you'd like to say about them/songlists?
+| 
+|   Was the 1998 "Sundaze Festival" held the same place as in 1997?
+|   (I ask, 'coz I don't have a venue listed for '98)
+|     http://www.jazzbutcher.com/htdb/gigs/1998/Aug1.html
+|     http://www.jazzbutcher.com/htdb/gigs/1997/Aug3.html
+| 
+|   Some shows don't have "players".  These fell into the cracks between
+|   your final typed "all the gigs" lists, and the never-forgetful
+|   epoch of The Internet.
+| 
+|     http://www.jazzbutcher.com/htdb/gigs/1994/Jun24.html
+|     http://www.jazzbutcher.com/htdb/gigs/1994/Oct12.html
+|     http://www.jazzbutcher.com/htdb/gigs/1995/Mar11.html
+|     http://www.jazzbutcher.com/htdb/gigs/1995/Apr1.html
+|     http://www.jazzbutcher.com/htdb/gigs/1995/Apr4.html
+|     http://www.jazzbutcher.com/htdb/gigs/1995/Dec20.html
+| 
+|   One of your notebooks shows (*) Video beside "Caroline Wheeler",
+|     "Angels", and "Lot 49".  What's that about?
+|     http://jazzbutcher.com/htdb/gigs/1987/Aug2.html
+| 
+|   What's "The Short Wave Band"? It almost sounds like an Eg mutation.
+|     http://www.jazzbutcher.com/htdb/gigs/2004/Dec3.html
+| 
+|   Who played drums for the JBC "we're back" gig?
+|     http://www.jazzbutcher.com/htdb/gigs/2016/Jun3.html
+| 
+| All in all, things are in a pretty good state of completeness.
+| Thanks for moving stuff my way over the years.
+| 
+| Let me know if I've got any names/nicknames of people wrong in the
+| conspirator's section. "felix graham fudger ray" in particular has
+| always been confusing.  "Dave Henderson"? "D.T. Henderson"? That
+| sort of thing..  Don't fret about people like Rodney Allen
+| being in there.. Eventually, all players credited on albums will
+| also show up.  So as to, you know, fully populate the regiment
+| you have at your command.
+| Your funeral's going to be one hell of a party.
+| 
+| ANd, finally, here is something that's not yet exposed on the
+| site - you can search through the gigs by various data types:
+| 
+|   http://www.jazzbutcher.com/htdb/gigs/search.html
+| 
+
+|ASK PAT
+|
+|	notebook questions:
+|
+|		"Richard" has been either "Lohan" or "Formby".
+|		Is there an easy date-range to differentiate them,
+|		or did their timelines cross?  I ask, because I may
+|		have a small number of gigs mis-attributed.
+|
+|		a few mystery tunes:
+|
+|			"Baby Sister"/"Little Sister"
+|				played around '89. covers?
+|
+|			"Man Sized Bite"
+|				is played at several 1987 gigs.
+|				is this a codename for a different song,
+|				or just one that i've never heard before?
+|
+|			"Drag Queen"
+|				http://www.jazzbutcher.com/htdb/gigs/1987/Apr14.html
+|
+|			"Publicity"
+|				http://www.jazzbutcher.com/htdb/gigs/1987/May27.html
+|
+|			"Mandrax Inferno"
+|				http://www.jazzbutcher.com/htdb/gigs/1987/Aug2.html
+|				http://www.jazzbutcher.com/htdb/gigs/1987/Jul28.html
+|
+|			"Lisa Says"
+|				is shown a couple times in 1987, but once is crossed
+|				out and "Mind Like A Playgroup" is overwritten.
+|				so.. does lisa==playgroup?
+|
+|		date confusion:
+|
+|			1) "JBC Concert Chart 1989"
+|				13 May - St. Edmunds Hall, Oxford
+|				23 May - Zap Club, Brighton
+|			Notebook says the above. The website has these two dates swapped -
+|			and was sourced from your 1994-06 "All The Gigs" typewritten list.
+|			Which version of you is right, 1989, or 1994?
+|
+|				this youtube video https://www.youtube.com/watch?v=HWminqZ3O_k
+|				say the date is "1987-03-20".
+|				notebook says "Front Door To Babylon", 1987-03-21
+|			Do two rights override the notebook, or is the notebook right
+|			and the youtube guy maybe got the wrong date from the website?
+|
+|* add gig page for Russ Cooper (sumo, Rotten Soul, Wilson)
+
+| ASK PAT
+| 	Johnny P took this:
+| 	https://pbs.twimg.com/media/C8bRuVBXcAYWZEC.jpg
+| 	Is this 89, 86, or 85?
+| 	http://jazzbutcher.com/htdb/gigs/search.html?f=venue&q=rock+garden
+| 
+| 	During the Near Perfect Pitch #35 interview, you mentioned that you have played
+| 	"the night before w/simon".. so 2017-03-19?
+| 
+|* insert wildibdub_com feedback into jbc feedback
+
+|* make sure all the ~/antisyg* photo sets for 2006 are there
+
+|antisyg pix:
+|	https://secure.flickr.com/photos/antisyzygy/sets/72157594280938638/
+|	for
+|	http://jazzbutcher.com/htdb/gigs/2006/Sep10_2000.html
+|
+|	http://www.flickr.com/photos/antisyzygy/sets/72157594243333081/
+|	for
+|	http://jazzbutcher.com/htdb/gigs/2006/Aug19_1900.html
+|
+|	http://www.flickr.com/photos/antisyzygy/sets/72157594169314474/
+|	for
+|	http://jazzbutcher.com/htdb/gigs/2006/Jun17.html
+| * have an 'alsowith' lookup table for guys like "Joe Woolley" -> "${joe_woolley}"
+
+| * add Sumosonic releases to releases.htdb
+
+| * add Cambodia/Eg/VF demos to /audio
+
+| * add Wilson demos and covers to /audio
+
+| * add Eg cassette covers scans to /audio
+
+|* populate Wilson performance table
+|
+|	2001-09-22: "Wilson appear to be holding steady at a 6 piece line-up"
+|	2004-02-13: "With Mr. E. Wilson officially retired from active service.."
+|	Is that to say that all 6 played all shows between those two dates?
+|
+|	More or less...I can recall having to do a gig without Stevie Gordon because he was in Budapest. Curtis
+|	would come and go a bit. He was certainly back in the core line-up for the last year or so. Steve
+|	Beswick joined on drum kit from autumn 2004. Jonny Mattock would occasionally join us on percussion as
+|	well.
+| * link songs and make note of Cambodia/Sumo tune overlap
+
+| * Alex Lee - what did he play on Cult?
+
+| * add Alastair Indge/other photographers, artists to performance table
+
+| * add producers to performance
+
+| * lyrics for Mersy (if pat's) ** IT AIN'T
+
+| * in lyrics, wrap in div class, not blockquote
+
+| * instead of linking to "Pat Says" articles in lyrics, just paste the damned text in
+
+| * add /audio/cult tracks to lyrics pages as mp3= embeds
+
+| * take tabulature for Nothing Special from feedback and put into page
+
+| * add 'tabulature' tab to song pages that have them
+
+| * add Pat "pix" tab to his bio
+
+| * import the image from this interview: http://www.jazzbutcher.com/htdb/press/20170406_lastdaydeaf.html
+
+| * change people "Credits On" to use nifty db_albums lookup
+
+| * automatically populate the "Press" tab of gigs from the press data!
+
+| * if a gig has a photoset, show that instead of the map
+|   basically, try to show the more engaging content on
+|   the landing tab for a gig
+
+| * Wilson/Sumo/Eg players into performance table
+
+| HTML entities in searchable terms fail (&eacute;, etc)
+
+| * press table needs both "publication" and "article title" fields.
+
+| * link in all the namechecked band members in http://www.jazzbutcher.com/htdb/lyrics/gloop_jiving.html
+
+| * sort this Cak Bag shit out: http://www.jazzbutcher.com/htdb/albums/affection.html
+
+| * upload 19911114_JazzButcher_Vienna_Gen1_Flat.mp3 from Desktop
+
+| * "Elephant Man" on this ancient rare Pulp cassette
+| 	http://mail.pulp.ws/Pulp/OozingThroughTheOzoneLayer
+
+| * combine albums/comps.html -> into the albums/Comps. tab
+
+| * add Desktop BigTime variants to releases
+
+| * julian poole interview: http://www.witness.uk.com/julian_interview.htm
+
+| * eider interview: http://stereoembersmagazine.com/breathing-statues-interview-max-eider/
+
+| * which will require figuring out people TABS
+
+| * weirdness Active - http://jazzbutcher.com/people/steve_beswick.html
+
+| * link to gig pages in kelly's 20th anniv article
+| 	http://jazzbutcher.com/press/kelly_20th_tour.html
+
+| * upload un-"done" press items from "JBC Scans"
+

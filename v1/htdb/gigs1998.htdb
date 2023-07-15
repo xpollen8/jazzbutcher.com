@@ -1,0 +1,112 @@
+#define	Jan17.html()
+	${gigHeader(
+		phone=01225333447,
+	)}
+
+#define	Jan20_2200.html()
+	${gigHeader(
+	)}
+
+#define	Jan28.html()
+	${gigHeader(
+	)}
+
+#define	Jan30.html()
+	${gigHeader(
+	)}
+
+#define	Jan31.html()
+	${gigHeader(
+	)}
+
+#define	Feb4.html()
+	${gigHeader(
+		with=${literalizeCommas(
+			D.J. Johnny Octopus
+		)}
+	)}
+
+#define	Apr14.html()
+	${gigHeader(
+	)}
+
+#define	Apr18.html()
+	${gigHeader(
+	)}
+
+#define	May8.html()
+	${gigHeader(
+	)}
+
+#define	Aug1.html()
+	${gigHeader(
+		venue=Rushton Hall,
+	)}
+
+#define	Sep8.html()
+	${gigHeader(
+		pat=${literalizeCommas(
+			Brighton went rather well.
+			<p>Joe Foster came down and declared himself outraged that Sumo wasn't making any money.
+			<p>
+			From one Creation loony to another...howdy ho!!
+		)}
+	)}
+
+#define	Sep8.html()
+	${gigHeader(
+	)}
+
+#define	Sep19.html()
+	${gigHeader(
+		notes=${literalizeCommas(
+			19Sep1998 - APOCALYPSE SUMO
+			<p>
+			All-night up-country old skool rave up.
+			Sumosonic, 2 other live bands and DJs
+			Outdoor concert space, with large pub attached.
+			Lots of easy parking.
+			Camping.
+			Pub has no clock! (That is to say, it's a Late One)
+			<p>
+			Saint John Arms, Melchbourne
+			<p>
+			Melchbourne is near Rushden in the Northamptonshire/Cambridgeshire 
+			badlands. Take a car. From Northampton (M1 junction 15) take the A-45
+			direction Wellingborough. Go on past Wellingborough to Higham Ferrers.
+			<p>
+			At Higham Ferrers (Chowns Hill Roundabout) take the A-6 direction 
+			Bedford. After a couple of hundred yards, turn left onto Kimbolton Road.
+			Follow signs on local roads for Newton Bromswold, then Yielden.
+			<p>
+			Follow the road through Yielden and on through open country for two or three 
+			miles. The Saint John Arms stands alone in the middle of nowhere at a 
+			crossroads. You'll be glad you made the trip, chaps. 
+		)}
+	)}
+
+#define	Apr5.html()
+	${gigHeader(
+	)}
+
+#define	May1.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, Garrick Simmons (bass), Erich Hubner (Number One Family Mover), Ani Cordero (Number One Family Mover)
+		)},
+	)}
+
+#define	May2.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}, ${max}, Garrick Simmons (bass), Erich Hubner (Number One Family Mover), Ani Cordero (Number One Family Mover)
+		)},
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

@@ -18,3 +18,13 @@ This is the first step to formalize a public/participatory framework for maintai
 # *I hope you'll join us*
 
 [Here is how you can participate](https://github.com/xpollen8/jazzbutcher.com/blob/main/PARTICIPATE.md) 
+
+# *Repository Layout*
+
+## v1
+
+The `v1` directory contains (most) of the .htdb files which drive the HTDB version of the jazzbutcher.com website
+
+## v2
+
+The `v2` directory contains the Work In Progress which is the conversion of the `v1` site into a nextjs/React application.

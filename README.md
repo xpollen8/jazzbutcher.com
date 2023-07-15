@@ -28,3 +28,5 @@ The `v1` directory contains (most) of the .htdb files which drive the HTDB versi
 ## v2
 
 The `v2` directory contains the Work In Progress which is the conversion of the `v1` site into a nextjs/React application.
+
+Changes made here will be deployed within a minute to [https://jazzbutcher-com.vercel.app/}(https://jazzbutcher-com.vercel.app/)

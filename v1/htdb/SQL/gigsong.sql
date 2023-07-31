@@ -346,6 +346,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',1,1,'Love Kittens
 
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-28 00:00:00','set',1,0,'The Entire Performance',NULL,NULL,NULL,'https://www.youtube.com/embed/fNm2sNDmwuc','Gazely Gaze','https://www.youtube.com/channel/UCnKqqqJcsl-kb_caJvrBWrQ');
 
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-11 00:00:00','set',1,0,'The Entire Performance',NULL,NULL,NULL,'https://www.youtube.com/embed/bPwISvRlXfw',"James Duval","https://www.youtube.com/@BigquestionsInc");
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-11 00:00:00','set',1,1,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-11 00:00:00','set',1,2,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-11 00:00:00','set',1,3,'The Human Jungle',NULL,NULL,NULL,'https://www.youtube.com/embed/HWN6iyJGaus',NULL,NULL);

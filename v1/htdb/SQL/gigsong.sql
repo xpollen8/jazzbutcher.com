@@ -356,6 +356,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-11-11 00:00:00','set',1,6,'Marnie',NULL
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-11 00:00:00','set',1,7,'Death Dentist',NULL,NULL,NULL,'https://www.youtube.com/embed/SsveB9VpivY',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-11 00:00:00','set',1,8,'Still in the Kitchen',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-11 00:00:00','set',1,9,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-11 00:00:00','set',1,10,'Speedy Gonzalez','Hess, Kaye, Lee',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,1,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,2,'Marnie',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,3,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL);

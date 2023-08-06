@@ -51,7 +51,7 @@ const BookSikkorski = () =>
 	<FeaturedItem
 		link={`https://www.paypal.com/instantcommerce/checkout/B9R9UNV97A754`}
 		title={`Earl Sikkorski’s Golden Treasury`}
-		text={`&quot;Earl Sikkorski’s Golden Treasury&quot;, a facsimile of the Jazz Butcher fan club scrapbook, pinned out, examined under the microscope and expanded upon, by Philip Snow.  Hardback book out now.`}
+		text={`"Earl Sikkorski’s Golden Treasury", a facsimile of the Jazz Butcher fan club scrapbook, pinned out, examined under the microscope and expanded upon, by Philip Snow.  Hardback book out now.`}
 		image={`https://jazzbutcher.com/images/book_sikkorski.jpg`}
 		thumb={`https://jazzbutcher.com/images/book_sikkorski_500.jpg`}
 		alt={`book cover`}
@@ -66,7 +66,7 @@ const	ReleaseNeverGiveUp = () =>
 		link={`https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7`}
 		title={`Cargo Records UK | The Jazz Butcher 'Never Give Up (Glass Version)'`}
 		text=<>
-			&quot;Order this now and let’s do a “Pastels/Sonic Youth” and get it in the charts!&quot; -
+			Order this now and let’s do a “Pastels/Sonic Youth” and get it in the charts! -
 			{linkExternal(`https://twitter.com/chrisseventeen`, `Chris Coleman`)}
 			</>
 		image={`https://jazzbutcher.com/images/releases/nevergiveup_poster.jpg`}

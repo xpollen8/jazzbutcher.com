@@ -16,15 +16,6 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 /// HOME
 .container {
@@ -73,8 +64,8 @@ body {
 /// GLOBAL
 body {
 	margin-top: 5px;
-	font-family: sans-serif;
-	font-size: 2.0em;
+	font-family: Titillium-Regular, sans-serif;
+	font-size: 1.0em;
 }
 .hiddendate {
 	display: none;
@@ -170,9 +161,6 @@ body {
 }
 .gigTS {
 	display: none;
-}
-.fonts-loaded body {
-	font-family: Titillium-Regular, sans-serif;
 }
 img {
 	max-width: 100%;

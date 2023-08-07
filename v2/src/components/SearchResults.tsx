@@ -1,8 +1,11 @@
+import { searchOptions } from '../lib/macros';
+
 type ResultRecord = {
 	[key: string]: any;
 }
 
 type ResultType = {
+	type?: string;
 	noun?: string;
 	numResults?: number;
 	key?: string;
@@ -10,27 +13,28 @@ type ResultType = {
 	results?: ResultRecord[];
 }
 
-const SearchResults = ({ results: nyResults }: { results: ResultType }): React.ReactNode => {
-	const { noun, numResults, key, value, results } = nyResults;
-	//console.log("POP", { nyResults, results });
+const layoutNone = (results: ResultType, index: number) => {
+	const { noun, numResults, key, value } = results;
+	return (
+		<>
+		<h1>
+		(no layout implemented)
+		</h1>
+		</>
+	)
+}
+
+const SearchResults = ({ results }: { results: ResultType }): React.ReactNode => {
+	const { type, noun, numResults, key, value } = results;
+	const layout = searchOptions.find(so => so.noun === type)?.layout || layoutNone;
+	console.log("POP", { results });
+
 	return results && (
 		<>
 		<h1>
 			{numResults} {noun} matching <i>{value}</i> were found
 		</h1>
-		{results?.map((res: ResultRecord, key) => {
-			return <div key={key}>
-				<label>Venue</label>
-				{res?.venue}
-				<label>Date</label>
-				{res?.datetime}
-				<label>Location</label>
-				{res?.city}
-				{res?.state}
-				{res?.country}
-				{res?.postalcode}
-			</div>
-		})}
+		{results?.results?.map(layout)}
 	</>)
 }
 

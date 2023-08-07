@@ -70,23 +70,78 @@ const gigPage2Datetime = (year: string, url: string): string => gigURI2ts(year, 
 
 const Nobr = ({ children }: { children: React.ReactNode }) => <span style={{ whiteSpace: 'nowrap' }}>{children}</span>
 
+const layoutGigs = (res: any, key: number) => {
+	return <div key={key}>
+		<label>Venue</label>
+		{res?.venue}
+		<label>Date</label>
+		{res?.datetime}
+		<label>Location</label>
+		{res?.city}
+		{res?.state}
+		{res?.country}
+		{res?.postalcode}
+	</div>
+}
+
 // TODO - set up api routes on data.jbc.com for all search types
+const cache: {
+  [key: string]: any;
+} = {}
+
+const filterNone = (res: any, query: null | string) => res;
+
+const filterGigsByField = (res: any, query: null | string, field: string) => {
+	const filtered = res.results?.filter((r: any) => r[field]?.toLowerCase().includes(query?.toLowerCase()));
+	return {
+		...res,
+		numResults: filtered.length,
+		results: filtered,
+	}
+}
+
+const filterGigsByVenue = (res: any, query: null | string) => filterGigsByField(res, query, 'venue');
+const filterGigsByCity = (res: any, query: null | string) => filterGigsByField(res, query, 'city');
+const filterGigsByCountry = (res: any, query: null | string) => filterGigsByField(res, query, 'country');
+
 const searchOptions = [
-	{ noun: 'venue', text: 'venue', route: 'gigs_by_venue' },
-	{ noun: 'city', text: 'city' },
-	{ noun: 'country', text: 'country' },
-	{ noun: 'act', text: 'shared the bill with JBC..' },
-	{ noun: 'performer', text: 'this band member performed..' },
-	{ noun: 'song', text: 'played this song..' },
+	{ noun: 'venue', text: 'venue', route: 'gigs', layout: layoutGigs, filter: filterGigsByVenue },
+	{ noun: 'city', text: 'city', route: 'gigs', layout: layoutGigs, filter: filterGigsByCity },
+	{ noun: 'country', text: 'country', route: 'gigs', layout: layoutGigs, filter: filterGigsByCountry },
+	{ noun: 'act', text: 'shared the bill with JBC..', route: 'performances' },
+	{ noun: 'performer', text: 'this band member performed..', route: 'performances' },
+	{ noun: 'song', text: 'played this song..', route: 'gigsongs' },
 ]
 
 const doSearch = (type: string, query: null | string, settor: any): void => {
 	if (!type) return;
-	const route = searchOptions.find(o => o.noun === type)?.route;
+	const option = searchOptions.find(o => o.noun === type);
+	const route = option?.route;
+	const filter = option?.filter || filterNone;
 	if (!route) {
 		alert(`search by ${type} not yet implemented`);
 		return;
 	}
+	if (cache[route]) {
+		// filter by query
+		//console.log("HIT CACHE");
+		settor(filter({ ...cache[route], type }, query));
+		return;
+	}
+	const action = `/api/${route}`;
+	console.log("SEARCH1", { type, query, action, ENV: process.env });
+	fetch(action)
+		.then(e => e.json())
+		.then(res => {
+			cache[route] = res;
+			settor(filter({ ...res, type }, query))
+			console.log("RES", res);
+		})
+		.catch((e) => {
+			alert('FAILED');
+			console.log("ERR", e);
+		});
+	/*
 	const action = `/api/${route}/${query}`;
 	console.log("SEARCH1", { type, query, action, ENV: process.env });
 	fetch(action)
@@ -96,6 +151,7 @@ const doSearch = (type: string, query: null | string, settor: any): void => {
 			alert('FAILED');
 			console.log("ERR", e);
 		});
+		*/
 }
 
 export { doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }

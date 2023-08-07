@@ -1,4 +1,4 @@
-"use client"
+"use client"	// to enable blurb rotations
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -135,9 +135,9 @@ const DateInHistory = () => {
 */
 }
 
-const Home = () => (
+const Home = (): React.ReactNode => (
 	<>
-		<Header title={homeBlurb[Math.floor(Math.random() * homeBlurb.length)]} />
+		<Header section='eg' title={homeBlurb[Math.floor(Math.random() * homeBlurb.length)]} />
 		<div className="container">
 			<div className="right">
 				<BookSikkorski />

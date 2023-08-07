@@ -31,9 +31,9 @@ const SearchResults = ({ results }: { results: ResultType }): React.ReactNode =>
 
 	return results && (
 		<>
-		<h1>
-			{numResults} {noun} matched <i>{searchTerms}</i>
-		</h1>
+		{(noun) && <h1>
+			{numResults} {noun} matched <i>&quot;{searchTerms}&quot;</i>
+		</h1>}
 		{results?.results?.map(layout)}
 	</>)
 }

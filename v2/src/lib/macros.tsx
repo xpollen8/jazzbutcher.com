@@ -1,5 +1,12 @@
 import Link from 'next/link';
 
+type RecordType = {
+	[key: string]: any;
+	matchedTerms?: string[];
+}
+
+type QueryType = null | string;
+
 const linkExternal = (url: string, text: string) : React.ReactNode => <Link target="_new" href={url}>{text || url}</Link>
 
 const parseYear = (datetime: string) => datetime.substr(0, 4);
@@ -70,17 +77,22 @@ const gigPage2Datetime = (year: string, url: string): string => gigURI2ts(year, 
 
 const Nobr = ({ children }: { children: React.ReactNode }) => <span style={{ whiteSpace: 'nowrap' }}>{children}</span>
 
-const layoutGigs = (res: any, key: number) => {
+const layoutGigs = (record: RecordType, key: number) => {
 	return <div key={key}>
+		{(record?.matchedTerms) &&
+			<>
+				<label>Matched Terms</label> <i>&quot;{record?.matchedTerms.join('", "')}&quot;</i><br/>
+			</>
+		}
 		<label>Venue</label>
-		{res?.venue}
+		{record?.venue}
 		<label>Date</label>
-		{res?.datetime}
+		{record?.datetime}
 		<label>Location</label>
-		{res?.city}
-		{res?.state}
-		{res?.country}
-		{res?.postalcode}
+		{record?.city}
+		{record?.state}
+		{record?.country}
+		{record?.postalcode}
 	</div>
 }
 
@@ -89,9 +101,9 @@ const cache: {
   [key: string]: any;
 } = {}
 
-const filterNone = (res: any, query: null | string) => res;
+const filterNone = (res: any, query: QueryType) => res;
 
-const filterGigsByField = (res: any, query: null | string, field: string) => {
+const filterGigsByField = (res: any, query: QueryType, field: string) => {
 	const filtered = res.results?.filter((r: any) => r[field]?.toLowerCase().includes(query?.toLowerCase()));
 	return {
 		...res,
@@ -100,20 +112,66 @@ const filterGigsByField = (res: any, query: null | string, field: string) => {
 	}
 }
 
-const filterGigsByVenue = (res: any, query: null | string) => filterGigsByField(res, query, 'venue');
-const filterGigsByCity = (res: any, query: null | string) => filterGigsByField(res, query, 'city');
-const filterGigsByCountry = (res: any, query: null | string) => filterGigsByField(res, query, 'country');
+const filterGigsByVenue = (res: any, query: QueryType) => filterGigsByField(res, query, 'venue');
+const filterGigsByCity = (res: any, query: QueryType) => filterGigsByField(res, query, 'city');
+const filterGigsByCountry = (res: any, query: QueryType) => filterGigsByField(res, query, 'country');
+
+const searchRegex = /[^a-z0-9 ]/gi;
+
+// convert incoming query string into reasonable search terms
+const searchTerms = (query: QueryType): string[] => {
+	const terms = query?.split(searchRegex)	// split query into alnum
+		.map(term => term.trim().toLowerCase())	// normilize
+		.filter(term => term)	// remove blanks
+		.map(term => term.split(' '))	// convert multi-word terms into array
+		.flat()	// and flatten to a single array of terms
+	 || [];
+	const deduped: string[] = [];
+	terms.forEach((t: string) => {
+		if (!deduped.includes(t)) deduped.push(t);
+	})
+
+	return deduped;	// dedupe
+}
+
+// create a searchable string from record object
+const searchTarget = (record: RecordType) => JSON.stringify(
+	Object.keys(record)
+		.filter(k => !k.endsWith('_id'))	// ignore database id fields
+		.map(k => String(record[k]).replace(searchRegex, '').trim())
+		.join(' ')
+	).toLowerCase();
+
+const searchRecord = (record: RecordType, terms: string[]) => (
+	{ ...record,
+		matchedTerms: terms.filter(term => searchTarget(record).includes(term))
+	}
+)
+
+const filterGigsByAnything = (res: RecordType, query: QueryType) => {
+	const filtered = res.results
+		?.map((record: RecordType) => searchRecord(record, searchTerms(query)))	// add 'matchedTerms' to object
+		.filter((r: RecordType) => r?.matchedTerms?.length)	// filter out non-matches
+		.sort((a: any, b: any) => (b?.matchedTerms?.length || 0) - (b?.matchedTerms?.length || 0));	// sort by relevance
+
+	return {
+		...res,
+		numResults: filtered.length,
+		results: filtered,
+	}
+}
 
 const searchOptions = [
-	{ noun: 'venue', text: 'venue', route: 'gigs', layout: layoutGigs, filter: filterGigsByVenue },
-	{ noun: 'city', text: 'city', route: 'gigs', layout: layoutGigs, filter: filterGigsByCity },
-	{ noun: 'country', text: 'country', route: 'gigs', layout: layoutGigs, filter: filterGigsByCountry },
-	{ noun: 'act', text: 'shared the bill with JBC..', route: 'performances' },
-	{ noun: 'performer', text: 'this band member performed..', route: 'performances' },
-	{ noun: 'song', text: 'played this song..', route: 'gigsongs' },
+	{ noun: 'venue', text: 'Venue', route: 'gigs', layout: layoutGigs, filter: filterGigsByVenue },
+	{ noun: 'city', text: 'City', route: 'gigs', layout: layoutGigs, filter: filterGigsByCity },
+	{ noun: 'country', text: 'Country', route: 'gigs', layout: layoutGigs, filter: filterGigsByCountry },
+	{ noun: 'anything', text: 'Anywhere in gig details', route: 'gigs', layout: layoutGigs, filter: filterGigsByAnything },
+	//{ noun: 'act', text: 'shared the bill with JBC..', route: 'performances' },
+	//{ noun: 'performer', text: 'this band member performed..', route: 'performances' },
+	//{ noun: 'song', text: 'played this song..', route: 'gigsongs' },
 ]
 
-const doSearch = (type: string, query: null | string, settor: any): void => {
+const doSearch = (type: string, query: QueryType, settor: any): void => {
 	if (!type) return;
 	const option = searchOptions.find(o => o.noun === type);
 	const route = option?.route;
@@ -123,25 +181,23 @@ const doSearch = (type: string, query: null | string, settor: any): void => {
 		return;
 	}
 	if (cache[route]) {
-		// filter by query
-		//console.log("HIT CACHE");
+		// cache hit, yay
 		settor(filter({ ...cache[route], type }, query));
 		return;
 	}
 	const action = `/api/${route}`;
-	console.log("SEARCH1", { type, query, action, ENV: process.env });
 	fetch(action)
 		.then(e => e.json())
 		.then(res => {
 			cache[route] = res;
 			settor(filter({ ...res, type }, query))
-			console.log("RES", res);
 		})
 		.catch((e) => {
 			alert('FAILED');
 			console.log("ERR", e);
 		});
 	/*
+	api-side filtering method
 	const action = `/api/${route}/${query}`;
 	console.log("SEARCH1", { type, query, action, ENV: process.env });
 	fetch(action)

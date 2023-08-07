@@ -27,12 +27,11 @@ const layoutNone = (results: ResultType, index: number) => {
 const SearchResults = ({ results }: { results: ResultType }): React.ReactNode => {
 	const { type, noun, numResults, key, value } = results;
 	const layout = searchOptions.find(so => so.noun === type)?.layout || layoutNone;
-	console.log("POP", { results });
 
 	return results && (
 		<>
 		<h1>
-			{numResults} {noun} matching <i>{value}</i> were found
+			{numResults} {noun} matched <i>{value}</i>
 		</h1>
 		{results?.results?.map(layout)}
 	</>)

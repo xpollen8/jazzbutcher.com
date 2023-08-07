@@ -11,6 +11,7 @@ type ResultType = {
 	key?: string;
 	value?: string;
 	results?: ResultRecord[];
+	searchTerms?: string[];
 }
 
 const layoutNone = (results: ResultType, index: number) => {
@@ -25,13 +26,13 @@ const layoutNone = (results: ResultType, index: number) => {
 }
 
 const SearchResults = ({ results }: { results: ResultType }): React.ReactNode => {
-	const { type, noun, numResults, key, value } = results;
+	const { type, noun, numResults, key, searchTerms } = results;
 	const layout = searchOptions.find(so => so.noun === type)?.layout || layoutNone;
 
 	return results && (
 		<>
 		<h1>
-			{numResults} {noun} matched <i>{value}</i>
+			{numResults} {noun} matched <i>{searchTerms}</i>
 		</h1>
 		{results?.results?.map(layout)}
 	</>)

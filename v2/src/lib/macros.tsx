@@ -5,7 +5,7 @@ type RecordType = {
 	matchedTerms?: string[];
 }
 
-type QueryType = null | string;
+type QueryType = string;
 
 const linkExternal = (url: string, text: string) : React.ReactNode => <Link target="_new" href={url}>{text || url}</Link>
 
@@ -117,13 +117,15 @@ const filterGigsByCity = (res: any, query: QueryType) => filterGigsByField(res, 
 const filterGigsByCountry = (res: any, query: QueryType) => filterGigsByField(res, query, 'country');
 
 const searchRegex = /[^a-z0-9 ]/gi;
+const searchSplit = /(?<=^| )("[^"]*"|[^ ]+)(?= |$)/g;
 
 // convert incoming query string into reasonable search terms
 const searchTerms = (query: QueryType): string[] => {
-	const terms = query?.split(searchRegex)	// split query into alnum
-		.map(term => term.trim().toLowerCase())	// normilize
+	const terms = query
+		?.match(searchSplit)
+		?.map((t: string) => t.replace(/"/g, '').replace(/\s+/g, ' ').replace(searchRegex, ''))	// clean up quoted terms
+		.map(term => term.trim().toLowerCase())	// normalize
 		.filter(term => term)	// remove blanks
-		.map(term => term.split(' '))	// convert multi-word terms into array
 		.flat()	// and flatten to a single array of terms
 	 || [];
 	const deduped: string[] = [];
@@ -149,8 +151,9 @@ const searchRecord = (record: RecordType, terms: string[]) => (
 )
 
 const filterGigsByAnything = (res: RecordType, query: QueryType) => {
+	const terms = searchTerms(query);
 	const filtered = res.results
-		?.map((record: RecordType) => searchRecord(record, searchTerms(query)))	// add 'matchedTerms' to object
+		?.map((record: RecordType) => searchRecord(record, terms))	// add 'matchedTerms' to object
 		.filter((r: RecordType) => r?.matchedTerms?.length)	// filter out non-matches
 		.sort((a: any, b: any) => (b?.matchedTerms?.length || 0) - (b?.matchedTerms?.length || 0));	// sort by relevance
 
@@ -158,6 +161,7 @@ const filterGigsByAnything = (res: RecordType, query: QueryType) => {
 		...res,
 		numResults: filtered.length,
 		results: filtered,
+		searchTerms: terms.join('" OR "'),
 	}
 }
 
@@ -166,9 +170,9 @@ const searchOptions = [
 	{ noun: 'city', text: 'City', route: 'gigs', layout: layoutGigs, filter: filterGigsByCity },
 	{ noun: 'country', text: 'Country', route: 'gigs', layout: layoutGigs, filter: filterGigsByCountry },
 	{ noun: 'anything', text: 'Anywhere in gig details', route: 'gigs', layout: layoutGigs, filter: filterGigsByAnything },
-	//{ noun: 'act', text: 'shared the bill with JBC..', route: 'performances' },
-	//{ noun: 'performer', text: 'this band member performed..', route: 'performances' },
-	//{ noun: 'song', text: 'played this song..', route: 'gigsongs' },
+	{ noun: 'act', text: 'shared the bill with JBC..', route: 'performances', layout: layoutGigs, filter: filterGigsByAnything },
+	{ noun: 'performer', text: 'this band member performed..', route: 'performances', layout: layoutGigs, filter: filterGigsByAnything },
+	{ noun: 'song', text: 'played this song..', route: 'gigsongs', layout: layoutGigs, filter: filterGigsByAnything },
 ]
 
 const doSearch = (type: string, query: QueryType, settor: any): void => {
@@ -181,10 +185,11 @@ const doSearch = (type: string, query: QueryType, settor: any): void => {
 		return;
 	}
 	if (cache[route]) {
-		// cache hit, yay
+		// in-browser cache hit, yay
 		settor(filter({ ...cache[route], type }, query));
 		return;
 	}
+	// else hit the api for data
 	const action = `/api/${route}`;
 	fetch(action)
 		.then(e => e.json())

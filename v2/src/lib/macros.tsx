@@ -87,9 +87,8 @@ const doSearch = (type: string, query: null | string, settor: any): void => {
 		alert(`search by ${type} not yet implemented`);
 		return;
 	}
-	//const action = `https://data.jazzbutcher.com/api/${route}/${query}`;
-	const action = `http://localhost:3000/api/${route}/${query}`;
-	//console.log("SEARCH1", { type, query, action });
+	const action = `/api/${route}/${query}`;
+	console.log("SEARCH1", { type, query, action, ENV: process.env });
 	fetch(action)
 		.then(e => e.json())
 		.then(res => settor(res))

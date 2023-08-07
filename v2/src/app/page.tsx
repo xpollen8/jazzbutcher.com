@@ -137,7 +137,7 @@ const DateInHistory = () => {
 
 const Home = (): React.ReactNode => (
 	<>
-		<Header section='eg' title={homeBlurb[Math.floor(Math.random() * homeBlurb.length)]} />
+		<Header title={homeBlurb[Math.floor(Math.random() * homeBlurb.length)]} />
 		<div className="container">
 			<div className="right">
 				<BookSikkorski />

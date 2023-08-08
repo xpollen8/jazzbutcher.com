@@ -50,8 +50,8 @@ const IntroPat = ({ heading }: { heading: string }) =>
 		</p>
 
 		<p>
-		You'll shortly be receiving the JBC top ten fiascos, a series of short stories by
-		Max, Owen and me about some of our most memorable fuck-ups. Eider's idea. Of course.
+		You&apos;ll shortly be receiving the JBC top ten fiascos, a series of short stories by
+		Max, Owen and me about some of our most memorable fuck-ups. Eider&apos;s idea. Of course.
 		</p>
 
 		<p>
@@ -79,21 +79,21 @@ const Fiasco1 = ({ heading }: { heading: string }) =>
 	</p>
 
 	<p>
-		<Link href="http://jazzbutcher.com/gigs/2001/Dec31.html">(See also: Pat's contempory account of the gig in question)</Link>
+		<Link href="http://jazzbutcher.com/gigs/2001/Dec31.html">(See also: Pat&apos;s contempory account of the gig in question)</Link>
 	</p>
 
 	<p>
 		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/20011231_1.jpg" width={1000} height={1000} alt={`An amusing image`}/>
-		<br/>"They didn’t let the dog in free did they? Eider is told total receipts for the evening"
+		<br/>&quot;They didn’t let the dog in free did they? Eider is told total receipts for the evening&quot;
 	</p>
 
 	<p>
 		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/20011231_2.jpg" width={1000} height={1000} alt={`An amusing image`}/>
-		<br/>"The audience sings along to Tumbling Dice"
+		<br/>&quot;The audience sings along to Tumbling Dice&quot;
 	</p>
 
 	<p>
-	<h3>Max's Story</h3>
+	<h3>Max&apos;s Story</h3>
 	</p>
 	<div className="fiascoBox">
 	<p>
@@ -145,7 +145,7 @@ const Fiasco1 = ({ heading }: { heading: string }) =>
 	</p>
 	</div>
 
-	<h3>Owen's Story</h3>
+	<h3>Owen&apos;s Story</h3>
 
 	<div className="fiascoBox">
 	<p>
@@ -217,7 +217,7 @@ const Fiasco1 = ({ heading }: { heading: string }) =>
 	</p>
 	</div>
 
-	<h3>Pat's Story</h3>
+	<h3>Pat&apos;s Story</h3>
 	<div className="fiascoBox">
 	<p>
 	Bloody artists. Nothing but whining. And this one was the drummer! He’s lucky we let him in the back of van.  — The management
@@ -237,7 +237,7 @@ const Fiasco2 = ({ heading }: { heading: string }) =>
 				For Dave Kusworth with all the love
 			</p>
 
-			<h3>Pat's Story</h3>
+			<h3>Pat&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>
@@ -337,7 +337,7 @@ const Fiasco2 = ({ heading }: { heading: string }) =>
 			</p>
 			</div>
 
-			<h3>Max's Story</h3>
+			<h3>Max&apos;s Story</h3>
 
 			<div className="fiascoBox">
 		Tejero, Pat tells me, was the name of the Francoist general who led an armed assault on the Espanish Parliament in the early days of democracy. Pretty inflammatory stuff, especially in Valencia, where the fascists had tanks on the streets that night, before the King got on the blower and told them to stop fucking about. — Ed.
@@ -350,16 +350,16 @@ const Fiasco3 = ({ heading }: { heading: string }) =>
 		Ice Stadium, Groeningen, The Netherlands, <span className="release_title"><Link href="/gigs/1985/Aug25.html">25 August 1985</Link></span>
 			</p>
 
-			<h3>Owen's Story</h3>
+			<h3>Owen&apos;s Story</h3>
 
 			<div className="fiascoBox">
 
 			<p>
-		I don't remember much about Groeningen. I remember that several buildings still had cannonballs lodged in their walls, dating back god knows how many centuries. My wife recalls that we all ate pancakes on a boat. And that's about it ... apart from the baby.
+		I don&apos;t remember much about Groeningen. I remember that several buildings still had cannonballs lodged in their walls, dating back god knows how many centuries. My wife recalls that we all ate pancakes on a boat. And that&apos;s about it ... apart from the baby.
 			</p>
 
 			<p>
-		Christ, I'll never forget the baby.
+		Christ, I&apos;ll never forget the baby.
 			</p>
 
 			<p>
@@ -367,7 +367,7 @@ const Fiasco3 = ({ heading }: { heading: string }) =>
 			</p>
 
 			<p>
-		The main reason for my perceiving it thus was the fact that I was seriously stoned – I mean, really quite seriously indeed. It was by no means the first time that I'd gone onstage after a couple of pulls on a joint, but it did turn out to be the last. A bit of 'loosener-upper' spliff before a show was pretty much de rigueur in the mid 80s Jazz Butcher Conspiracy. Failure to participate may not have been a sackable offence, but neither was it deemed an attitude to be encouraged.
+		The main reason for my perceiving it thus was the fact that I was seriously stoned – I mean, really quite seriously indeed. It was by no means the first time that I&apos;d gone onstage after a couple of pulls on a joint, but it did turn out to be the last. A bit of &apos;loosener-upper&apos; spliff before a show was pretty much de rigueur in the mid 80s Jazz Butcher Conspiracy. Failure to participate may not have been a sackable offence, but neither was it deemed an attitude to be encouraged.
 			</p>
 
 			<p>
@@ -375,7 +375,7 @@ const Fiasco3 = ({ heading }: { heading: string }) =>
 			</p>
 
 			<p>
-		In addition, we'd been smoking it for some time. Due to the last-minute decamping of the venue, the schedule was running late. We had time to kill and, apparently, no other way of killing it occurred to us. We just kept on toking.
+		In addition, we&apos;d been smoking it for some time. Due to the last-minute decamping of the venue, the schedule was running late. We had time to kill and, apparently, no other way of killing it occurred to us. We just kept on toking.
 			</p>
 
 			<p>
@@ -383,15 +383,15 @@ const Fiasco3 = ({ heading }: { heading: string }) =>
 			</p>
 
 			<p>
-		Soundchecks at small European festivals in the 80s were generally both brief and chaotic, and almost invariably ... well, let's just say less than satisfactory. Pressure of time meant that this one was unsurpassed in its brevity. Check the lines; make a pretence of asking what the singer and lead guitarist want in their monitors; ignore the drummer, he's most likely deaf as a post anyway. Off you go, lads. One, two, three, four ...
+		Soundchecks at small European festivals in the 80s were generally both brief and chaotic, and almost invariably ... well, let&apos;s just say less than satisfactory. Pressure of time meant that this one was unsurpassed in its brevity. Check the lines; make a pretence of asking what the singer and lead guitarist want in their monitors; ignore the drummer, he&apos;s most likely deaf as a post anyway. Off you go, lads. One, two, three, four ...
 			</p>
 
 			<p>
-		So not only did the physical distance between myself and the others feel like Saskatchewan, but I could hear them about as clearly as if they'd been in ... um ... Manitoba. And I mean the other end of Manitoba, not the one that borders Saskatchewan.
+		So not only did the physical distance between myself and the others feel like Saskatchewan, but I could hear them about as clearly as if they&apos;d been in ... um ... Manitoba. And I mean the other end of Manitoba, not the one that borders Saskatchewan.
 			</p>
 
 			<p>
-		Panic duly set in. Sensing, rather than hearing Pat's count-ins, I simply started playing when I thought it was about the right moment. I doubt that it ever was. I just told myself to hold a straight beat, no breaks, no fancy stuff, no nothing. Let's just please get this over with. As all I could hear was my own drums, finding the pitch for a vocal harmony was pretty much impossible and I soon stopped trying – an uncharacteristically sensible decision at that point.
+		Panic duly set in. Sensing, rather than hearing Pat&apos;s count-ins, I simply started playing when I thought it was about the right moment. I doubt that it ever was. I just told myself to hold a straight beat, no breaks, no fancy stuff, no nothing. Let&apos;s just please get this over with. As all I could hear was my own drums, finding the pitch for a vocal harmony was pretty much impossible and I soon stopped trying – an uncharacteristically sensible decision at that point.
 			</p>
 
 			<p>
@@ -399,19 +399,19 @@ const Fiasco3 = ({ heading }: { heading: string }) =>
 			</p>
 
 			<p>
-		I guess it wasn't actually a baby, strictly speaking. 'Toddler' is probably more accurate (the finer points of distinction concerning early infancy are not really my forte). Anyway, it was toddling – and it was toddling straight towards me. It seems that it had expressed a wish to join the band onstage, and its stupid, evil, wicked hippie parents (who were probably just as stoned as me) had cheerily complied. Wisely, it didn't spend much time hanging out with the lead singer; what it had its nasty, beady little eyes on was the drumkit. With increasing horror, I tracked its slow, but relentlessly determined approach across the acres of stage ...
+		I guess it wasn&apos;t actually a baby, strictly speaking. &apos;Toddler&apos; is probably more accurate (the finer points of distinction concerning early infancy are not really my forte). Anyway, it was toddling – and it was toddling straight towards me. It seems that it had expressed a wish to join the band onstage, and its stupid, evil, wicked hippie parents (who were probably just as stoned as me) had cheerily complied. Wisely, it didn&apos;t spend much time hanging out with the lead singer; what it had its nasty, beady little eyes on was the drumkit. With increasing horror, I tracked its slow, but relentlessly determined approach across the acres of stage ...
 			</p>
 
 			<p>
-		Forget 'baby' or 'toddler': on reflection, I think that the nature of the beast is best captured by the word 'imp' – in the truly satanic sense, that is. With its idiot progenitors smiling, clapping and urging it on, it successfully negotiated the ascent of the drum-riser.
+		Forget &apos;baby&apos; or &apos;toddler&apos;: on reflection, I think that the nature of the beast is best captured by the word &apos;imp&apos; – in the truly satanic sense, that is. With its idiot progenitors smiling, clapping and urging it on, it successfully negotiated the ascent of the drum-riser.
 			</p>
 
 			<p>
-		My panic level was shooting up by now. In desperation I looked around for a member of the stage crew who might (hope against hope) be clear-headed enough to see that this was a crisis situation. Assistance came there none. I tried to pull myself together as I realised that I was going to have to handle this alone. By this point, my dope paranoia had bestowed upon the creature an unmistakably demonic appearance. Summoning my inner Van Helsing, I tried to look the miniscule monster straight in the eyes. “Go away!”, I said, as firmly and clearly as possible. No – actually I didn't say that. I screamed it. Bear in mind, I was still thrashing out “The Jazz Butcher Meets Count Dracula”, or some such ditty, while all this was going on (and praying inwardly that the rest of the band were playing the same song).
+		My panic level was shooting up by now. In desperation I looked around for a member of the stage crew who might (hope against hope) be clear-headed enough to see that this was a crisis situation. Assistance came there none. I tried to pull myself together as I realised that I was going to have to handle this alone. By this point, my dope paranoia had bestowed upon the creature an unmistakably demonic appearance. Summoning my inner Van Helsing, I tried to look the miniscule monster straight in the eyes. “Go away!”, I said, as firmly and clearly as possible. No – actually I didn&apos;t say that. I screamed it. Bear in mind, I was still thrashing out “The Jazz Butcher Meets Count Dracula”, or some such ditty, while all this was going on (and praying inwardly that the rest of the band were playing the same song).
 			</p>
 
 			<p>
-		It stared back at me with a blood-freezing grin. I repeated the command several times, each time more desperately high-pitched than the last. I wished I knew the Dutch for “go away”, or indeed for “f*ck off”. I considered holding my sticks aloft in the form of a crucifix, but somewhere in my addled brain the “hold the beat” mantra was still operating. I didn't actually try to hit the little darling with the drumsticks, though I do recall that its attention was turned to the hi-hat during “The Human Jungle” (which has a busy hi-hat), and it occurred to me that if it trapped its tiny fingers in a closing hat, the whole terrifying incident might come to an abrupt and welcome end . But oh no, it was far too canny for that: it managed to slap at the cymbals just enough to screw up the rhythm but not enough to hurt itself. Truly diabolical.
+		It stared back at me with a blood-freezing grin. I repeated the command several times, each time more desperately high-pitched than the last. I wished I knew the Dutch for “go away”, or indeed for “f*ck off”. I considered holding my sticks aloft in the form of a crucifix, but somewhere in my addled brain the “hold the beat” mantra was still operating. I didn&apos;t actually try to hit the little darling with the drumsticks, though I do recall that its attention was turned to the hi-hat during “The Human Jungle” (which has a busy hi-hat), and it occurred to me that if it trapped its tiny fingers in a closing hat, the whole terrifying incident might come to an abrupt and welcome end . But oh no, it was far too canny for that: it managed to slap at the cymbals just enough to screw up the rhythm but not enough to hurt itself. Truly diabolical.
 			</p>
 
 			<p>
@@ -419,11 +419,11 @@ const Fiasco3 = ({ heading }: { heading: string }) =>
 			</p>
 
 			<p>
-		The set seemed to go on for ever, until at long last, somewhere across the rolling plains Pat was introducing the last song: “Zombie Love”. “My baby's been down under the ground...” I started to feel faint.
+		The set seemed to go on for ever, until at long last, somewhere across the rolling plains Pat was introducing the last song: “Zombie Love”. “My baby&apos;s been down under the ground...” I started to feel faint.
 			</p>
 
 			<p>
-		I've no memory of how the whole traumatic episode ended. Possibly Pat or Max could cast some light upon it, but I doubt it, seeing as they were on the other side of Canada at the time. When I dream about the event (as I do with alarming frequency), that's the point where I always wake up – in a cold sweat, needless to say. I seem to have buried the dénouement somewhere deep in my subconscious, and it's probably best if it stays that way. Maybe the thing transformed itself into a bat or a banshee or a bolt of lightning and skipped off through a black magic wormhole into another dimension. Maybe one of the roadies finally woke up and manhandled it away (not too gently, I hope). Maybe it just got bored and toddled off back to whence it came. Anyway ... eventually it was all over – both the baby assault and the gig. I don't know whether we did an encore. Somehow I doubt it.
+		I&apos;ve no memory of how the whole traumatic episode ended. Possibly Pat or Max could cast some light upon it, but I doubt it, seeing as they were on the other side of Canada at the time. When I dream about the event (as I do with alarming frequency), that&apos;s the point where I always wake up – in a cold sweat, needless to say. I seem to have buried the dénouement somewhere deep in my subconscious, and it&apos;s probably best if it stays that way. Maybe the thing transformed itself into a bat or a banshee or a bolt of lightning and skipped off through a black magic wormhole into another dimension. Maybe one of the roadies finally woke up and manhandled it away (not too gently, I hope). Maybe it just got bored and toddled off back to whence it came. Anyway ... eventually it was all over – both the baby assault and the gig. I don&apos;t know whether we did an encore. Somehow I doubt it.
 			</p>
 
 			<p>
@@ -431,7 +431,7 @@ const Fiasco3 = ({ heading }: { heading: string }) =>
 			</p>
 		</div>
 
-			<h3>Pat's Story</h3>
+			<h3>Pat&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>
@@ -455,7 +455,7 @@ const Fiasco3 = ({ heading }: { heading: string }) =>
 			</p>
 			</div>
 
-			<h3>Max's Story</h3>
+			<h3>Max&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>
@@ -474,7 +474,7 @@ const Fiasco4 = ({ heading }: { heading: string }) =>
 		Middle of nowhere, Yorkshire, 22 July 2006
 			</p>
 
-			<h3>Max's Story</h3>
+			<h3>Max&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>
@@ -508,7 +508,7 @@ const Fiasco5 = ({ heading }: { heading: string }) =>
 <p>
 		The Venue, Victoria, London, <span className="release_title"><Link href="/gigs/1983/Oct20.html">20 October 1983</Link></span>
 			</p>
-			<h3>Pat's Story</h3>
+			<h3>Pat&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>
@@ -558,7 +558,7 @@ const Fiasco5 = ({ heading }: { heading: string }) =>
 			</p>
 			</div>
 
-			<h3>Max's Story</h3>
+			<h3>Max&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>
@@ -572,10 +572,10 @@ const Fiasco5 = ({ heading }: { heading: string }) =>
 			</p>
 			</div>
 
-			<h3>Owen's Story</h3>
+			<h3>Owen&apos;s Story</h3>
 
 			<div className="fiascoBox">
-		Owen adds: I saw this one from a different perspective. I was in the audience that night, and recall very clearly the rabbit-in-the-headlights expression on poor Pat's face as the curtains of doom made their inexorable approach.
+		Owen adds: I saw this one from a different perspective. I was in the audience that night, and recall very clearly the rabbit-in-the-headlights expression on poor Pat&apos;s face as the curtains of doom made their inexorable approach.
 		</div>
 </Fiasco>
 
@@ -585,7 +585,7 @@ const Fiasco6 = ({ heading }: { heading: string }) =>
 		Hammersmith Town Hall, London, <span className="release_title"><Link href="/gigs/1985/Mar7.html">7 March 1985</Link></span>
 			</p>
 
-			<h3>Owen's Story</h3>
+			<h3>Owen&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>
@@ -723,39 +723,39 @@ const Fiasco7 = ({ heading }: { heading: string }) =>
 			<p>
 			<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/19850907_1.jpg" width={1000} height={1000} alt={`An amusing image`}/>
 			</p>
-			<br/>"The calm before the storm"
+			<br/>&quot;The calm before the storm&quot;
 			<p>
 			<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/19850907_2.jpg" width={1000} height={1000} alt={`An amusing image`}/>
 			</p>
-			<br/>"The promoter practises shafting the artist"
+			<br/>&quot;The promoter practises shafting the artist&quot;
 			<p>
 			<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/19850907_3.jpg" width={1000} height={1000} alt={`An amusing image`}/>
 			</p>
-			<br/>"Aw Kizzy, we miss you"
+			<br/>&quot;Aw Kizzy, we miss you&quot;
 			<p>
 			<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/19850907_4.jpg" width={1000} height={1000} alt={`An amusing image`}/>
 			</p>
-			<br/>"Good grief"
+			<br/>&quot;Good grief&quot;
 			<p>
 			<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/19850907_5.jpg" width={1000} height={1000} alt={`An amusing image`}/>
 			</p>
-			<br/>"So that’s where all the money went"
+			<br/>&quot;So that’s where all the money went&quot;
 
 
-			<h3>Pats's Story</h3>
+			<h3>Pats&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>
 		In March 1985, when David J. joined Love & Rockets, the Jazz Butcher Group introduced their new bassist Felix Ray to a hundred or so unconcerned punters in a conference suite in a Northampton basement. 
 			</p>
 			<p>
-		Soon after that night, promoted by ace photographer Mitch Jenkins (who also happened to be the Butcher's flatmate at the time), the Hand Of Hinc intervened, with the result that the band swiftly grew accustomed to ceaseless touring, stumbling and shouting their way across England, Germany, Holland, Sweden, Norway, Italy, Austria, Switzerland and Spain. 
+		Soon after that night, promoted by ace photographer Mitch Jenkins (who also happened to be the Butcher&apos;s flatmate at the time), the Hand Of Hinc intervened, with the result that the band swiftly grew accustomed to ceaseless touring, stumbling and shouting their way across England, Germany, Holland, Sweden, Norway, Italy, Austria, Switzerland and Spain. 
 			</p>
 			<p>
-		Sometimes they would play two shows in the same evening. Sometimes there was trouble "Is he always like that?" was becoming something of a catch phrase. It had reached the point where, if he wasn't actually playing a show or making a record, the Butcher would spend his time shouting at his long-suffering agent down the phone because, frankly, having "gone professional", he no longer had anything else to do. 
+		Sometimes they would play two shows in the same evening. Sometimes there was trouble &quot;Is he always like that?&quot; was becoming something of a catch phrase. It had reached the point where, if he wasn&apos;t actually playing a show or making a record, the Butcher would spend his time shouting at his long-suffering agent down the phone because, frankly, having &quot;gone professional&quot;, he no longer had anything else to do. 
 			</p>
 			<p>
-		But the summer of 1985 was good to the JBC in a violent sort of way. Despite the many injuries sustained during the band's first brush with Spain, they were in high spirits. Possibly they thought they were indestructible. (Given that at the time of writing they have just completed their seventh US tour and their first club dates in Japan, perhaps they are. We may never know). 
+		But the summer of 1985 was good to the JBC in a violent sort of way. Despite the many injuries sustained during the band&apos;s first brush with Spain, they were in high spirits. Possibly they thought they were indestructible. (Given that at the time of writing they have just completed their seventh US tour and their first club dates in Japan, perhaps they are. We may never know). 
 			</p>
 			<p>
 		So let us join our ungainly crew as they jet off one September Friday with a view to playing a festival date in the south of Germany the following night. Having been met by their promoter, a very small man in a very large Mercedes, the band are delighted to discover that the festival is in a tiny Alpine village rejoicing in the locally typical but nonetheless laughably quaint name of Trochtelfingen. They drink like sailors and demand money with menaces from the promoter (successfully, as it goes, poor man!) before retiring in a polite and orderly fashion to their small, charming, family-run village hotel. Friday night in Schwaben. No problem at all. 
@@ -764,10 +764,10 @@ const Fiasco7 = ({ heading }: { heading: string }) =>
 		Saturday dawns bright and lovely. The hotel is all abuzz, for there is to be a wedding. The JBC nod and beam sweetly at the natives before leaving to do a lunchtime soundcheck in a massive candy-striped tent in an Alpine meadow. It is a fine, professional soundcheck and it goes on for a while, during which the band do not waste the opportunity to renew their still fresh and passionate affair with German beer. 
 			</p>
 			<p>
-		In the afternoon the band's German agent, Joachim, takes the JBC to the extraordinary Schloss Liechtenstein nearby. As they explore the mad fairy-tale castle perched high on a cliff above the village, The Butcher and Eider are faintly spooked while Felix beams, resplendent in grey leather trousers, black shirt open to the waist and fake leopard skin jacket. Owen is nowhere to be seen, but those who are curious about his movements are advised to check out his recordings with his band Shakespeare and the Bible. The posse sits and smokes thoughtfully under a huge and ancient tree outside the castle. It is a peaceful and idyllic afternoon. With beer. 
+		In the afternoon the band&apos;s German agent, Joachim, takes the JBC to the extraordinary Schloss Liechtenstein nearby. As they explore the mad fairy-tale castle perched high on a cliff above the village, The Butcher and Eider are faintly spooked while Felix beams, resplendent in grey leather trousers, black shirt open to the waist and fake leopard skin jacket. Owen is nowhere to be seen, but those who are curious about his movements are advised to check out his recordings with his band Shakespeare and the Bible. The posse sits and smokes thoughtfully under a huge and ancient tree outside the castle. It is a peaceful and idyllic afternoon. With beer. 
 			</p>
 			<p>
-		In a disturbingly prophetic photograph, the JBC can be seen posing at the castle gates. The Butcher is good-naturedly throttling his German agent, while Kizzy O’Callaghan is taking the opportunity to thrust his half-eaten Mars Bar into the singer's ear. 
+		In a disturbingly prophetic photograph, the JBC can be seen posing at the castle gates. The Butcher is good-naturedly throttling his German agent, while Kizzy O’Callaghan is taking the opportunity to thrust his half-eaten Mars Bar into the singer&apos;s ear. 
 			</p>
 			<p>
 		It is around teatime that the cracks begin to show. Returning to the hotel, the JBC discover a number of things and the number is four: 
@@ -780,13 +780,13 @@ const Fiasco7 = ({ heading }: { heading: string }) =>
 		<li>Nobody is paying any attention to the JBC</li>
 		</ol>
 			<p>
-		Felix is straight into action. Seeing that many of the cakes have already been partially eaten, he figures that nobody is going to miss them now. With commendable foresight he decides to liberate a few of them for later in the evening, in case anyone feels a bit peckish, like. It is while stealthily concealing the cakes in Room 27 that he and the Butcher find the happy couple's door open. Within minutes their bathroom is entirely stuffed with the hotel's extensive collection of massive pot plants, with a large and elaborate model boat awaiting any intrepid explorer who makes it as far as the bathtub. 
+		Felix is straight into action. Seeing that many of the cakes have already been partially eaten, he figures that nobody is going to miss them now. With commendable foresight he decides to liberate a few of them for later in the evening, in case anyone feels a bit peckish, like. It is while stealthily concealing the cakes in Room 27 that he and the Butcher find the happy couple&apos;s door open. Within minutes their bathroom is entirely stuffed with the hotel&apos;s extensive collection of massive pot plants, with a large and elaborate model boat awaiting any intrepid explorer who makes it as far as the bathtub. 
 			</p>
 			<p>
-		As the sun goes down, the JBC slip discreetly from the hotel and up to the massive candy-striped tent. Here all is rock and roll, although, with hindsight, the photographs do indicate that the stage lights might have tended towards a possibly unnecessary shade of hot pink. Still, the JBC rock the tent, take the cash money and continue their research into the amount of vodka that can be poured down the singer's throat. 
+		As the sun goes down, the JBC slip discreetly from the hotel and up to the massive candy-striped tent. Here all is rock and roll, although, with hindsight, the photographs do indicate that the stage lights might have tended towards a possibly unnecessary shade of hot pink. Still, the JBC rock the tent, take the cash money and continue their research into the amount of vodka that can be poured down the singer&apos;s throat. 
 			</p>
 			<p>
-		The Butcher doesn't know it yet, but he has already eaten the last meat that will ever pass his lips. As the band troop into a local restaurant for a well-earned dinner the excitable singer spots a tank full of live crayfish. "Uh-oh" he thinks, "Its' a Which-One-Would-You-Like-Murdered-And-Delivered-To-Your-Plate Sir Scenario". 
+		The Butcher doesn&apos;t know it yet, but he has already eaten the last meat that will ever pass his lips. As the band troop into a local restaurant for a well-earned dinner the excitable singer spots a tank full of live crayfish. &quot;Uh-oh&quot; he thinks, &quot;Its&apos; a Which-One-Would-You-Like-Murdered-And-Delivered-To-Your-Plate Sir Scenario&quot;. 
 			</p>
 			<p>
 		In a fit of well-meaning but spurious solidarity The Butcher joins Messrs Eider and Jones on the vegetarian tip. It later transpires that the crayfish are, in fact, house pets. By such misunderstandings do we change our lives. 
@@ -795,10 +795,10 @@ const Fiasco7 = ({ heading }: { heading: string }) =>
 		Back at the hotel, all is quiet. Sadly, it appears that the band has missed the shrieking from the bridal suite. The JBC gather for vodka and cake in Room 27. The mood is satisfied, peaceful. There is happy, animated conversation and none of it is about trashing hotel rooms. Drinks and cakes are passed around. 
 			</p>
 			<p>
-		There is no way of predicting the moment. The Butcher is sitting on the floor, leaning against Felix's bed enjoying a massive and particularly well-preserved chocolate cake when, in a moment of festal stupidity, he makes the fatal mistake of taking a tiny lump of chocolate and flicking it towards the lead guitarist. In seconds Eider is upon him, seizing the cake and grinding it in its entirety into the hapless Butcher's face forever. It all goes off. 
+		There is no way of predicting the moment. The Butcher is sitting on the floor, leaning against Felix&apos;s bed enjoying a massive and particularly well-preserved chocolate cake when, in a moment of festal stupidity, he makes the fatal mistake of taking a tiny lump of chocolate and flicking it towards the lead guitarist. In seconds Eider is upon him, seizing the cake and grinding it in its entirety into the hapless Butcher&apos;s face forever. It all goes off. 
 			</p>
 			<p>
-		Remember: these are men who have lived their whole lives in the shadow of the Cold War Bomb. They understand concepts like "escalation" and "massive pre-emptive strike". Within minutes large areas of Room 27 are chocolate-plastered no-go zones and Eider finds himself forcibly imprisoned in the bathroom, a wardrobe pushed up against the door for added security. He responds as any reasonable man would under the circumstances. He riots. 
+		Remember: these are men who have lived their whole lives in the shadow of the Cold War Bomb. They understand concepts like &quot;escalation&quot; and &quot;massive pre-emptive strike&quot;. Within minutes large areas of Room 27 are chocolate-plastered no-go zones and Eider finds himself forcibly imprisoned in the bathroom, a wardrobe pushed up against the door for added security. He responds as any reasonable man would under the circumstances. He riots. 
 			</p>
 			<p>
 		Negotiations go on for some time before The Talented One succeeds in arguing his way to freedom. Sadly, not for the first time, a European treaty is soon betrayed and once again appalling cake abuse breaks out. By now there is not a white surface in the room. Eventually the Konditoreisturmtruppe runs out of vodka and curls up in the wreckage to sleep. 
@@ -807,7 +807,7 @@ const Fiasco7 = ({ heading }: { heading: string }) =>
 		At an unusually early hour on Sunday morning the JBC are in the car park, loading into the back of the van. They move surprisingly quickly and silently for men in their condition. Kizzy and Mister Jones have spent the last half hour desperately stuffing slick brown bedclothes into the wardrobe of Room 27. As they make their final exit from the hotel, they pass a pair of young chamber maids heading in the opposite direction. Just as they gain the lobby, they hear a great and deeply comical shriek from upstairs. 
 			</p>
 			<p>
-		The JBC bus goes tearing out of the car park, headed for Stuttgart Airport at some speed. After some five or ten miles the band spot a German Police car on the road behind them. Giggling hysteria is not far away as the tour manager puts on his best German accent to announce: "Ja... we would like to have a word with you about some... cakes." 
+		The JBC bus goes tearing out of the car park, headed for Stuttgart Airport at some speed. After some five or ten miles the band spot a German Police car on the road behind them. Giggling hysteria is not far away as the tour manager puts on his best German accent to announce: &quot;Ja... we would like to have a word with you about some... cakes.&quot; 
 			</p>
 			<p>
 		Pat Fish, NN1, 2001.
@@ -821,7 +821,7 @@ const Fiasco8 = ({ heading }: { heading: string }) =>
 		Ullapool, <span className="release_title"><Link href="/gigs/1999/May21_2030.html">21 May 1999</Link></span>
 			</p>
 
-			<h3>Max's Story</h3>
+			<h3>Max&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>
@@ -849,7 +849,7 @@ const Fiasco8 = ({ heading }: { heading: string }) =>
 			</p>
 
 			<p>
-		The next night, back in Inverness, we did a poorly attended gig in a pub and fetched up at a local nightclub. Alcohol will help me forget, I thought. I was right. Emerging a couple of hours later, I tripped over a sleeping policeman and broke the fall with my head. I was bleeding profusely and an ambulance was called. When I’d been loaded in and they’d staunched the flow a bit, a weary looking paramedic did a quick concussion check. ‘What’s your name, fella?’ said he. I considered the matter. ‘Well, give me a minute,’ said I, 'I think I must know the answer to that one.’ But I had not the foggiest idea.
+		The next night, back in Inverness, we did a poorly attended gig in a pub and fetched up at a local nightclub. Alcohol will help me forget, I thought. I was right. Emerging a couple of hours later, I tripped over a sleeping policeman and broke the fall with my head. I was bleeding profusely and an ambulance was called. When I’d been loaded in and they’d staunched the flow a bit, a weary looking paramedic did a quick concussion check. ‘What’s your name, fella?’ said he. I considered the matter. ‘Well, give me a minute,’ said I, &apos;I think I must know the answer to that one.’ But I had not the foggiest idea.
 			</p>
 
 			<p>
@@ -864,7 +864,7 @@ const Fiasco9 = ({ heading }: { heading: string }) =>
 		Teatro Greco, Syracusa – <span className="release_title"><Link href="/gigs/1985/Sep15.html">15 September 1985</Link></span>
 			</p>
 
-			<h3>Pat's Story</h3>
+			<h3>Pat&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>
@@ -981,7 +981,7 @@ const Fiasco10 = ({ heading }: { heading: string }) =>
 			</p>
 
 		<p>
-			<h3>Max's Story</h3>
+			<h3>Max&apos;s Story</h3>
 		</p>
 
 			<div className="fiascoBox">
@@ -1053,14 +1053,14 @@ const Epilogue = ({ heading }: { heading: string }) =>
 			</p>
 
 			<p>
-		<b>Odeon, Münster, <span className="release_title"><Link href="/gigs/1985/Apr13.html">13 April 1985</Link></span> (Owen)</b>: Mid-concert, Pat seemed to be having a bit of a chat with the audience, so I thought I had a moment to light a rollie. But he caught me out: he broke off mid-waffle and suddenly launched into the intro to ‘Girlfriend’. I'd just lit my fag and didn't have time to remove it from my mouth before coming in on the drums. I only used to play the rather fast (and risky) drum break following the second chorus about 20% of the time, but the show was going well so I decided to go for it tonight. As the moment approached I took in a deep breath – and promptly swallowed my cigarette.
+		<b>Odeon, Münster, <span className="release_title"><Link href="/gigs/1985/Apr13.html">13 April 1985</Link></span> (Owen)</b>: Mid-concert, Pat seemed to be having a bit of a chat with the audience, so I thought I had a moment to light a rollie. But he caught me out: he broke off mid-waffle and suddenly launched into the intro to ‘Girlfriend’. I&apos;d just lit my fag and didn&apos;t have time to remove it from my mouth before coming in on the drums. I only used to play the rather fast (and risky) drum break following the second chorus about 20% of the time, but the show was going well so I decided to go for it tonight. As the moment approached I took in a deep breath – and promptly swallowed my cigarette.
 			</p>
 
 			<p>
 		<b>Mont Blanc, December 1985</b>: There was an extended period when it seemed we couldn’t enter or leave France without the accursed douaniers demanding that we dropped our trousers before taking unspeakable liberties with our persons. We were once even intercepted a long way from the border and taken to an interrogation centre where they gutted the van and subjected us to the usual procedure. But we always had the last laugh. This occasion was particularly gratifying because, when his turn came, our old friend and crew member Tommy walked up to the Funny Room, calmly deposited his hash and pipe on the floor beside the door, went in, took it like a man, then picked up his stash on the way out. We were in awe.
 			</p>
 			<p>
-		<b>Owen adds</b>: When I was gleefully recounting to Bärbel this tale of her ex-boyfriend's super-cool (to our minds) performance in the Alpine Customs Shed, she seemed singularly unimpressed. ‘Oh yes’, she replied drily, ‘we did that every few weeks for a couple of years in the late 70s, when we were smuggling hash from The Netherlands.’  
+		<b>Owen adds</b>: When I was gleefully recounting to Bärbel this tale of her ex-boyfriend&apos;s super-cool (to our minds) performance in the Alpine Customs Shed, she seemed singularly unimpressed. ‘Oh yes’, she replied drily, ‘we did that every few weeks for a couple of years in the late 70s, when we were smuggling hash from The Netherlands.’  
 			</p>
 
 			<p>
@@ -1093,22 +1093,22 @@ const Fiascos = (): React.ReactNode =>
 			</video>
 		</div>
 
-		<IntroMax heading={`Max's Introduction`} />
-		<IntroPat heading={`Pat's Introduction`} />
+		<IntroMax heading="Max&apos;s Introduction" />
+		<IntroPat heading="Pat&apos;s Introduction" />
 		<h3>The Fiascos</h3>
 		<div className="fiascoItem">
-			<Fiasco1 heading={`The Fatwa`}/>
-			<Fiasco2 heading={`Marginal Europe – First Explorations on Planet Spain`}/>
-			<Fiasco3 heading={`The Imp of Groeningen – a cautionary tale`}/>
-			<Fiasco4 heading={`The hog roast`}/>
-			<Fiasco5 heading={`Curtains for Butchie`}/>
-			<Fiasco6 heading={`Pride comes before The Fall`}/>
-			<Fiasco7 heading={`Cake City`}/>
-			<Fiasco8 heading={`Two Go To The Highlands`}/>
-			<Fiasco9 heading={`Teatro Greco`}/>
-			<Fiasco10 heading={`Parting of the ways`}/>
+			<Fiasco1 heading="The Fatwa"/>
+			<Fiasco2 heading="Marginal Europe – First Explorations on Planet Spain"/>
+			<Fiasco3 heading="The Imp of Groeningen – a cautionary tale"/>
+			<Fiasco4 heading="The hog roast"/>
+			<Fiasco5 heading="Curtains for Butchie"/>
+			<Fiasco6 heading="Pride comes before The Fall"/>
+			<Fiasco7 heading="Cake City"/>
+			<Fiasco8 heading="Two Go To The Highlands"/>
+			<Fiasco9 heading="Teatro Greco"/>
+			<Fiasco10 heading="Parting of the ways"/>
 		</div>
-		<Epilogue heading={`Epilogue`} />
+		<Epilogue heading="Epilogue" />
 	</>
 
 export default Fiascos;

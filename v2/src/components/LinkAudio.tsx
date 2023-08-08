@@ -29,7 +29,7 @@ const LinkAudio = ({ title, comment, mp3, url, author, autolink = true }: {
 		{(comment) && <span className="smalltext"> <i>{comment}</i> </span>}
 		{(title) && <br/>}
 		{(mp3) &&
-		<audio controls="controls" title={title} preload="none" className="audio_player">
+		<audio controls title={title} preload="none" className="audio_player">
 			<source src={mp3} type="audio/mpeg" />
 			Your browser does not support the audio element.
 		</audio>

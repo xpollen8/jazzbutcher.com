@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import moment from 'moment';
 
 type RecordType = {
 	[key: string]: any;
@@ -7,7 +8,8 @@ type RecordType = {
 
 type QueryType = string;
 
-const linkExternal = (url: string, text: string) : React.ReactNode => <Link target="_new" href={url}>{text || url}</Link>
+const linkExternal = (url: string, text?: string): React.ReactNode => <Link target="_new" href={url}>{text || url}</Link>
+const linkInternal = (url: string, text?: string): React.ReactNode => <Link href={url}>{text || url}</Link>
 
 const parseYear = (datetime: string) => datetime.substr(0, 4);
 
@@ -217,4 +219,12 @@ const doSearch = (type: string, query: QueryType, settor: any): void => {
 
 const autoLink = (str: string) => <>**AUTOLINK {str}**</>
 
-export { autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }
+const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
+
+const dateDiff = (d: string) =>
+<>
+	<span className="hiddendate">{d}</span>
+	<span className="date">{moment(d).format("dddd, MMM Do YYYY")} - {moment(d).startOf('hour').fromNow()} </span>
+</>
+
+export { parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }

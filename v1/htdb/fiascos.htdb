@@ -628,7 +628,7 @@ Owen adds: I saw this one from a different perspective. I was in the audience th
 <li class="clickable" onClick=display('fiasco_6')>Pride comes before The Fall</li>
 <div class="fiascoBox" style="display: none" id="fiasco_6" onClick=display('fiasco_6')>
 	<p>
-Hammersmith Town Hall, London, <span class="release_title"><a href="/gigs/1985/Mar7.html">7 March 1985</a><span>
+Hammersmith Town Hall, London, <span class="release_title"><a href="/gigs/1985/Mar7.html">7 March 1985</a></span>
 	</p>
 
 	<b>Owen's Story</b>

@@ -43,27 +43,27 @@ export default function RootLayout({
 					<Link className="horn" href="/">
 						<Image alt="The Jazz Butcher" width={114} height={80} src="https://jazzbutcher.com/images/knife_logo_80.png" />
 					</Link>
-					<MakeSimpleURI uri={`https://patfish.com`} text={`Pat`} />
-					<MakeSimpleURI uri={`${jbc_memoriam}`} text={`In Memoriam`} />
-					<MakeSimpleURI uri={`${jbc_fishy_mansions}`} text={`Fishy Mansions`} />
-					<MakeSimpleURI uri={`${jbc_fiascos}`} text={`The Fiascos`} />
-					<MakeSimpleURI uri={`${jbc_lyrics}`} text={`The Songs`} />
-					<MakeSimpleURI uri={`${jbc_albums}`} text={`The Releases`} />
-					<MakeSimpleURI uri={`${jbc_gigs}`} text={`The Gigs`} />
-					<MakeSimpleURI uri={`${jbc_audio}`} text={`Some Audio`} />
-					<MakeSimpleURI uri={`${jbc_video}`} text={`Some Video`} />
-					<MakeSimpleURI uri={`${jbc_people}`} text={`Conspirators`} />
-					<MakeSimpleURI uri={`${jbc_press}`} text={`Press`} />
-					<MakeSimpleURI uri={`${jbc_news}`} text={`News`} />
-					<MakeSimpleURI uri={`${jbc_help}`} text={`Contribute!`} />
-					<MakeSimpleURI uri={`${jbc_etc}`} text={`etc..`} />
+					<MakeSimpleURI uri="https://patfish.com" text="Pat" />
+					<MakeSimpleURI uri={jbc_memoriam} text="In Memoriam" />
+					<MakeSimpleURI uri={jbc_fishy_mansions} text="Fishy Mansions" />
+					<MakeSimpleURI uri={jbc_fiascos} text="The Fiascos" />
+					<MakeSimpleURI uri={jbc_lyrics} text="The Songs" />
+					<MakeSimpleURI uri={jbc_albums} text="The Releases" />
+					<MakeSimpleURI uri={jbc_gigs} text="The Gigs" />
+					<MakeSimpleURI uri={jbc_audio} text="Some Audio" />
+					<MakeSimpleURI uri={jbc_video} text="Some Video" />
+					<MakeSimpleURI uri={jbc_people} text="Conspirators" />
+					<MakeSimpleURI uri={jbc_press} text="Press" />
+					<MakeSimpleURI uri={jbc_news} text="News" />
+					<MakeSimpleURI uri={jbc_help} text="Contribute!" />
+					<MakeSimpleURI uri={jbc_etc} text="etc.." />
 					<div className="nav_heading">Projects</div>
-					<MakeSimpleURI uri={`${jbc_search}?f=extras&q=eg`} text={`Black Eg`} />
-					<MakeSimpleURI uri={`${jbc_search}?f=extras&q=sumo`} text={`Sumosonic`} />
-					<MakeSimpleURI uri={`${jbc_search}?f=extras&q=wilson`} text={`Wilson`} />
+					<MakeSimpleURI uri={`${jbc_search}?f=extras&q=eg`} text="Black Eg" />
+					<MakeSimpleURI uri={`${jbc_search}?f=extras&q=sumo`} text="Sumosonic" />
+					<MakeSimpleURI uri={`${jbc_search}?f=extras&q=wilson`} text="Wilson" />
 					<div className="nav_heading">Pre-JBC</div>
-					<MakeSimpleURI text={`Nightshift`} />
-					<MakeSimpleURI text={`Institution`} />
+					<MakeSimpleURI text="Nightshift" />
+					<MakeSimpleURI text="Institution" />
 				</div>
 				<div className="main">
 					<Link href="#" className="menuButton">

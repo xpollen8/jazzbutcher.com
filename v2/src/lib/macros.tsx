@@ -215,4 +215,6 @@ const doSearch = (type: string, query: QueryType, settor: any): void => {
 		*/
 }
 
-export { doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }
+const autoLink = (str: string) => <>**AUTOLINK {str}**</>
+
+export { autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }

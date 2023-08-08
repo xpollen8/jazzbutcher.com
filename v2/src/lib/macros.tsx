@@ -139,7 +139,7 @@ const searchTerms = (query: QueryType): string[] => {
 // create a searchable string from record object
 const searchTarget = (record: RecordType) => JSON.stringify(
 	Object.keys(record)
-		.filter(k => !k.endsWith('_id'))	// ignore database id fields
+		.filter(k => !k.endsWith('_id'))	// ignore database id fields	// TODO - support `excludeFields` param
 		.map(k => String(record[k]).replace(searchRegex, '').trim())
 		.join(' ')
 	).toLowerCase();

@@ -8,8 +8,8 @@ type RecordType = {
 
 type QueryType = string;
 
-const linkExternal = (url: string, text?: string): React.ReactNode => <Link target="_new" href={url}>{text || url}</Link>
-const linkInternal = (url: string, text?: string): React.ReactNode => <Link href={url}>{text || url}</Link>
+const linkExternal = (url: string, text?: string): React.ReactNode => <Link target="_new" href={url}>{' '}{text || url}</Link>
+const linkInternal = (url: string, text?: string): React.ReactNode => <Link href={url}>{' '}{text || url}</Link>
 
 const parseYear = (datetime: string) => datetime.substr(0, 4);
 

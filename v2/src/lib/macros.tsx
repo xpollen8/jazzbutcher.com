@@ -105,14 +105,14 @@ const cache: {
 
 const filterNone = (res: any, query: QueryType) => res;
 
-const searchRegex = /[^a-z0-9 ]/gi;
+const searchRegex = /[^a-z0-9'_ ]/gi;
 const searchSplit = /(?<=^| )("[^"]*"|[^ ]+)(?= |$)/g;
 
 // convert incoming query string into reasonable search terms
 const searchTerms = (query: QueryType): string[] => {
 	const terms = query
 		?.match(searchSplit)
-		?.map((t: string) => t.replace(/"/g, '').replace(/\s+/g, ' ').replace(searchRegex, ''))	// clean up quoted terms
+		?.map((t: string) => t.replace(/"/g, ''))	// clean up quoted terms
 		.map(term => term.trim().toLowerCase())	// normalize
 		.filter(term => term)	// remove blanks
 		.flat()	// and flatten to a single array of terms
@@ -128,10 +128,12 @@ const searchTerms = (query: QueryType): string[] => {
 const searchRecord = (record: RecordType, target: string, terms: string[]) => (
 	{
 		...record,
-		matchedTerms: terms.filter(term =>
+		matchedTerms: terms.filter(term => {
 			// need to remove quote/space from possibly quoted search terms
 			// in order to match the already cleaned-up target string
-			target?.includes(term.replace(searchRegex, '').replace(/[" ]/g, '').trim())
+			const X = term.replace(searchRegex, '').replace(/["]/g, '').trim();
+			return target?.includes(X)
+			}
 		)
 	}
 )
@@ -166,7 +168,7 @@ const filterGigsByAnything = (res: RecordType, query: QueryType) => {
 	const searchTarget = (record: RecordType) => JSON.stringify(
 		Object.keys(record)
 			.filter(k => !k.endsWith('_id'))	// ignore database id fields	// TODO - support `excludeFields` param
-			.map(k => String(record[k]).replace(searchRegex, '').trim())
+			.map(k => String(record[k]).replace(searchRegex, '').replace(/_/g, ' ').trim())
 			.join(' ')
 		).toLowerCase();
 

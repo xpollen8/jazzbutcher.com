@@ -62,11 +62,6 @@
 }
 
 /// GLOBAL
-body {
-	margin-top: 5px;
-	font-family: Titillium-Regular, sans-serif;
-	font-size: 1.25em;
-}
 .hiddendate {
 	display: none;
 }
@@ -359,6 +354,8 @@ body {
 	background-attachment: fixed;
 	letter-spacing: 0.01em;
 	color: #444;
+	margin: 4px;
+	font-size: 1em;
 }
 .nav { 
 	width: 130px;

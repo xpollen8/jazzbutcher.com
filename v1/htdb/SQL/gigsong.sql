@@ -4591,6 +4591,10 @@ INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',2, 5, "Nothing S
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',2, 0, "Pale Blue Eyes", "Lou Reed", NULL,NULL,'https://www.youtube.com/embed/s4MJEmH7KpI','Catherine Viale', 'https://www.youtube.com/channel/UCYKVWoD_73O1FCkY7QU1aMA');
 
 INSERT INTO `gigsong` VALUES (NULL,'2019-10-11 19:30:00', 'set', 1, 1, "The Highest in the Land", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2019-10-05 00:00:00','set',1,1,'The Interview',NULL,"The late Pat Fish in conversation with me on 5th October 2019.  Much of this would become the 'Fishcotheque' chapter of 'Miracles and Wonders', the book Pat and I wrote, which I finished and published after he shuffled off on 5th October 2021.  
+It was a lovely, if emotional day.  We ate bagels and smoked cheese at my house, watched the Tottenham game (they lost 3-0 to Brighton), aborted an intended trip to Uppingham, before arriving at the Plough, Shutlanger.  After the recording we went on a little pub crawl, witnessed a skein of geese fly noisily overhead (\"I don't think I've ever seen that before\", said Pat), and consumed a takeaway back at Fishy Mansions.",NULL,'https://www.youtube.com//embed/zYpruNL9Rr0','Philip Snow','https://www.youtube.com/@philipsnow6393');
+
+INSERT INTO `gigsong` VALUES (NULL,'2019-10-11 19:30:00', 'set', 1, 1, "The Highest in the Land", NULL,NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-10-11 19:30:00', 'set', 1, 2, "Black Raoul", NULL,NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-10-11 19:30:00', 'set', 1, 3, "Gold", "Peter Blegvad",NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-10-11 19:30:00', 'set', 1, 4, "Keeping the Curtains Closed", NULL,NULL,NULL,NULL,NULL, NULL);

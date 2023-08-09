@@ -4,15 +4,7 @@ import Image from 'next/image';
 import './globals.css'
 
 import Tag from '../components/Tag';
-
-const MakeSimpleURI = ({ uri, text }: {
-	uri?: string,
-	text: string,
-}): React.ReactNode  => (
-	<div className="menuDiv">
-		{uri ? <Link href={uri}>{text}</Link> : <div>{text}</div>}
-	</div>
-)
+import MakeSimpleURI from '../components/MakeSimpleURI';
 
 const jbc_memoriam = `/memoriam`;
 const jbc_fishy_mansions = `/fishy_mansions`;

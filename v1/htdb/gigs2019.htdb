@@ -270,6 +270,16 @@
 			magicrpm;;https://twitter.com/magicrpm/status/1178050161983021067
 	)}
 
+#define	Oct5.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}
+		)},
+		photosets=
+			/images/20191005/20191005_PhilipSnow_Pat.jpg$$
+			Philip Snow
+	)}
+
 #define	Oct11_1930.html()
 	${gigHeader(
 		cost=&pound;9,

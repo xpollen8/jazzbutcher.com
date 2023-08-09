@@ -9,13 +9,12 @@ type ResultType = {
 	noun?: string;
 	numResults?: number;
 	key?: string;
-	value?: string;
 	results?: ResultRecord[];
 	searchTerms?: string[];
 }
 
 const layoutNone = (results: ResultType, index: number) => {
-	const { noun, numResults, key, value } = results;
+	const { noun, numResults, key } = results;
 	return (
 		<>
 		<h1>

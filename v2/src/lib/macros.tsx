@@ -105,19 +105,6 @@ const cache: {
 
 const filterNone = (res: any, query: QueryType) => res;
 
-const filterGigsByField = (res: any, query: QueryType, field: string) => {
-	const filtered = res.results?.filter((r: any) => r[field]?.toLowerCase().includes(query?.toLowerCase()));
-	return {
-		...res,
-		numResults: filtered.length,
-		results: filtered,
-	}
-}
-
-const filterGigsByVenue = (res: any, query: QueryType) => filterGigsByField(res, query, 'venue');
-const filterGigsByCity = (res: any, query: QueryType) => filterGigsByField(res, query, 'city');
-const filterGigsByCountry = (res: any, query: QueryType) => filterGigsByField(res, query, 'country');
-
 const searchRegex = /[^a-z0-9 ]/gi;
 const searchSplit = /(?<=^| )("[^"]*"|[^ ]+)(?= |$)/g;
 
@@ -138,24 +125,21 @@ const searchTerms = (query: QueryType): string[] => {
 	return deduped;	// dedupe
 }
 
-// create a searchable string from record object
-const searchTarget = (record: RecordType) => JSON.stringify(
-	Object.keys(record)
-		.filter(k => !k.endsWith('_id'))	// ignore database id fields	// TODO - support `excludeFields` param
-		.map(k => String(record[k]).replace(searchRegex, '').trim())
-		.join(' ')
-	).toLowerCase();
-
-const searchRecord = (record: RecordType, terms: string[]) => (
-	{ ...record,
-		matchedTerms: terms.filter(term => searchTarget(record).includes(term))
+const searchRecord = (record: RecordType, target: string, terms: string[]) => (
+	{
+		...record,
+		matchedTerms: terms.filter(term =>
+			// need to remove quote/space from possibly quoted search terms
+			// in order to match the already cleaned-up target string
+			target?.includes(term.replace(searchRegex, '').replace(/[" ]/g, '').trim())
+		)
 	}
 )
 
-const filterGigsByAnything = (res: RecordType, query: QueryType) => {
+const filterBy = (res: RecordType, query: QueryType, target: any) => {
 	const terms = searchTerms(query);
 	const filtered = res.results
-		?.map((record: RecordType) => searchRecord(record, terms))	// add 'matchedTerms' to object
+		?.map((record: RecordType) => searchRecord(record, target(record), terms))	// add 'matchedTerms' to object
 		.filter((r: RecordType) => r?.matchedTerms?.length)	// filter out non-matches
 		.sort((a: any, b: any) => (b?.matchedTerms?.length || 0) - (b?.matchedTerms?.length || 0));	// sort by relevance
 
@@ -167,27 +151,67 @@ const filterGigsByAnything = (res: RecordType, query: QueryType) => {
 	}
 }
 
+const filterGigsByField = (res: any, query: QueryType, field: string) => {
+	const target = ((record: RecordType) => record[field]?.toLowerCase());
+	return filterBy(res, query, target);
+}
+
+const filterGigsByVenue = (res: any, query: QueryType) => filterGigsByField(res, query, 'venue');
+const filterGigsByCity = (res: any, query: QueryType) => filterGigsByField(res, query, 'city');
+const filterGigsByCountry = (res: any, query: QueryType) => filterGigsByField(res, query, 'country');
+const filterGigsBySupport = (res: any, query: QueryType) => filterGigsByField(res, query, 'alsowith');
+
+const filterGigsByAnything = (res: RecordType, query: QueryType) => {
+	// create a searchable string from record object
+	const searchTarget = (record: RecordType) => JSON.stringify(
+		Object.keys(record)
+			.filter(k => !k.endsWith('_id'))	// ignore database id fields	// TODO - support `excludeFields` param
+			.map(k => String(record[k]).replace(searchRegex, '').trim())
+			.join(' ')
+		).toLowerCase();
+
+	return filterBy(res, query, (searchTarget));
+}
+
+const gigSearchOptions = (noun: string, text: string, route: string) => ({
+	noun,
+	text, route,
+	layout: layoutGigs,
+	filter: (res: RecordType, query: string) => filterGigsByField(res, query, noun)
+});
+
 const searchOptions = [
-	{ noun: 'venue', text: 'Venue', route: 'gigs', layout: layoutGigs, filter: filterGigsByVenue },
-	{ noun: 'city', text: 'City', route: 'gigs', layout: layoutGigs, filter: filterGigsByCity },
-	{ noun: 'country', text: 'Country', route: 'gigs', layout: layoutGigs, filter: filterGigsByCountry },
-	{ noun: 'anything', text: 'Anywhere in gig details', route: 'gigs', layout: layoutGigs, filter: filterGigsByAnything },
-	{ noun: 'act', text: 'shared the bill with JBC..', route: 'performances', layout: layoutGigs, filter: filterGigsByAnything },
-	{ noun: 'performer', text: 'this band member performed..', route: 'performances', layout: layoutGigs, filter: filterGigsByAnything },
-	{ noun: 'song', text: 'played this song..', route: 'gigsongs', layout: layoutGigs, filter: filterGigsByAnything },
+	{ ...gigSearchOptions('venue', 'Venue', 'gigs') },
+	{ ...gigSearchOptions('city', 'City', 'gigs') },
+	{ noun: 'anything', text: 'Anywhere in gig details', route: 'gigs',
+		layout: layoutGigs,
+		filter: filterGigsByAnything
+	},
+	{ ...gigSearchOptions('country', 'Country', 'gigs') },
+	{ noun: 'song', text: 'Played this song..', route: 'gigsongs',
+		layout: layoutGigs,
+		filter: filterGigsByAnything
+	},
+	{ noun: 'performer', text: 'This band member performed..', route: 'performances',
+		layout: layoutGigs,
+		filter: filterGigsByAnything
+	},
+	{ ...gigSearchOptions('alsowith', 'Shared the bill with JBC..', 'gigs') },
 ]
 
-const doSearch = (type: string, query: QueryType, settor: any): void => {
+const doSearch = (type: string, query: QueryType, settor: any, error: any): void => {
 	if (!type) return;
 	const option = searchOptions.find(o => o.noun === type);
 	const route = option?.route;
 	const filter = option?.filter || filterNone;
+	settor([]);
 	if (!route) {
-		alert(`search by ${type} not yet implemented`);
+		error(`search by ${type} not yet implemented`);
 		return;
 	}
 	if (cache[route]) {
 		// in-browser cache hit, yay
+		error();
 		settor(filter({ ...cache[route], type }, query));
 		return;
 	}
@@ -197,10 +221,11 @@ const doSearch = (type: string, query: QueryType, settor: any): void => {
 		.then(e => e.json())
 		.then(res => {
 			cache[route] = res;
+			error();
 			settor(filter({ ...res, type }, query))
 		})
 		.catch((e) => {
-			alert('FAILED');
+			error(`search by ${type} failed`);
 			console.log("ERR", e);
 		});
 	/*

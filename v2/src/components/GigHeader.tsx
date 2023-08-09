@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { doSearch, searchOptions, Nobr } from '../lib/macros';
 
-const GigHeader = (props : { section: string | null, f: string, q: string, setResults: any }) => {
+const GigHeader = (props : { section: string | null, f: string, q: string, setResults: any, setError: any }) => {
 	const [f, setF] = useState(props?.f);
 	const [q, setQ] = useState(props?.q);
 
@@ -11,7 +11,7 @@ const GigHeader = (props : { section: string | null, f: string, q: string, setRe
 		<>
 		<form onSubmit={async (ev) => {
 			ev.preventDefault();
-			doSearch(f, q, props?.setResults);
+			doSearch(f, q, props?.setResults, props?.setError);
 		}}
 		>
 		<div style={{ padding: '5px', background: '#eee' }}>

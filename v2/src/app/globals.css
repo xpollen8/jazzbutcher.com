@@ -65,7 +65,7 @@
 body {
 	margin-top: 5px;
 	font-family: Titillium-Regular, sans-serif;
-	font-size: 1.0em;
+	font-size: 1.25em;
 }
 .hiddendate {
 	display: none;
@@ -260,6 +260,7 @@ textplus1 {
 	border: 1px solid green;
 }
 .homeContainer {
+	margin: 4px 4px;
 	padding: 10px;
 	margin-bottom: 5px;
 	background-color: #AFF1E4;

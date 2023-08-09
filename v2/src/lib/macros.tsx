@@ -8,8 +8,8 @@ type RecordType = {
 
 type QueryType = string;
 
-const linkExternal = (url: string, text?: string): React.ReactNode => <Link target="_new" href={url}>{' '}{text || url}</Link>
-const linkInternal = (url: string, text?: string): React.ReactNode => <Link href={url}>{' '}{text || url}</Link>
+const linkExternal = (href: string, text?: string): React.ReactNode => <Link target="_new" href={href}>{' '}{text || href}</Link>
+const linkInternal = (href: string, text?: string): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
 const parseYear = (datetime: string) => datetime.substr(0, 4);
 
@@ -75,7 +75,7 @@ const gigURI2ts = (y: string, u: string): string => {
 	gigPage2Datetime
 		inverse of ts2URI()
  */
-const gigPage2Datetime = (year: string, url: string): string => gigURI2ts(year, url);
+const gigPage2Datetime = (year: string, href: string): string => gigURI2ts(year, href);
 
 const Nobr = ({ children }: { children: React.ReactNode }) => <span style={{ whiteSpace: 'nowrap' }}>{children}</span>
 

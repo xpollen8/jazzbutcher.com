@@ -1,4 +1,4 @@
-const songMap = {
+const songMap: { [key: string]: any } = {
 	"diamorphone": "diamorphone.html",
 	"all_the_saints": "all_the_saints.html",
 	"almost_brooklyn": "almost_brooklyn.html",
@@ -200,7 +200,6 @@ const songMap = {
 	"radio_saigon": "sumosonic_radio_saigon.html",
 	"hey,_star": "sumosonic_hey_star.html",
 
-	"melanie_hargreaves'_father's_jaguar": "melanie_hargreave.html",
 	"time": "time.html",
 	"sea_madness": "sea_madness.html",
 	"never_give_up": "never_give_up.html",

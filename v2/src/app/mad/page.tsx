@@ -170,12 +170,13 @@ const Mad = () => <>
 	</Tag>
 
 	<div>
-		{madness.map(({ email, image, caption, description }, key): {
+		{madness.map(({ email, image, caption, description } :
+		{
 			email?: string
-			image?: string
-			caption?: string
-			description?: description
-		} => {
+			image: string
+			caption: string
+			description: React.ReactElement
+		}, key: number): React.ReactNode => {
 			const img = `images/mad/${image}`;
 			return (
 			<div key={key} className="grid justify-items-center">

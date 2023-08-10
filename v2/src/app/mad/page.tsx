@@ -210,7 +210,7 @@ const Mad = () => <>
 			<br/>
 			Mad Doctor Ed (I often watch that show myself, Ed...)
 			<br/>
-			Mad Roger "The Cat" Pace (even if he cheated, any cat that work
+			Mad Roger &quot;The Cat&quot; Pace (even if he cheated, any cat that work
 			Adobe Photoshop all by himself deserves a prize!)
 		</p>
 		<p>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import moment from 'moment';
+import songMap from './songMap';
 
 type RecordType = {
 	[key: string]: any;
@@ -8,7 +9,7 @@ type RecordType = {
 
 type QueryType = string;
 
-const linkExternal = (href: string, text?: string): React.ReactNode => <Link target="_new" href={href}>{' '}{text || href}</Link>
+const linkExternal = (href: string, text?: string): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
 const linkInternal = (href: string, text?: string): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
 const parseYear = (datetime: string) => datetime.substr(0, 4);
@@ -244,14 +245,65 @@ const doSearch = (type: string, query: QueryType, settor: any, error: any): void
 		*/
 }
 
-const autoLink = (str: string) => <>**AUTOLINK {str}**</>
+const autoHREF = (href: string) => {
+	if (href?.includes('@')) {	// email address
+		return `mailto:${href}`;
+	} else {
+		if (href?.includes('htt')) {	// full url
+			return href;
+		} else {
+			if (href.startsWith('/')) {	// local link
+				return href;
+			} else {	// was just a domain
+				return `https://${href}`;
+			}
+		}
+	}
+}
+
+const linkSong = ({ title, href, audio, mp3, author, pdf }: {
+	title?: string
+	href?: string
+	audio?: string
+	mp3?: string
+	author?: string
+	pdf?: string
+}) =>
+<span class='song'>
+	{(() => {
+		if (mp3?.length && href?.length) {
+			return <i><a href={autoHREF(href)}>{title}</a></i>
+		} else if (mp3?.length && title?.length) {
+			return <i><a href={autoHREF(href)}>{title}</a></i>
+		} else if (href?.length && title?.length) {
+			return <i><a href={autoHREF(href)}>{title}</a></i>
+		} else {
+			return <i>{title}</i>
+		}
+	})()}
+
+	{(author) && <span class="song_author">({author})</span>}
+</span>
+
+const songLinkMapped = (title: string) => {
+	const tit = title?.replace(/ /g, '_').toLowerCase();
+	const songMapped = songMap[tit];
+	if (songMapped) {
+		return linkSong({ title, href: `/lyrics/${songMapped}` });
+	} else {
+		return linkSong({ title, href: `/search?f=song&q=${title}` });
+	}
+}
+
+const autoLink = songLinkMapped;
 
 const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
 
 const dateDiff = (d: string) =>
 <>
-	<span className="hiddendate">{d}</span>
-	<span className="date">{moment(d).format("dddd, MMM Do YYYY")} - {moment(d).startOf('hour').fromNow()} </span>
+	{' '}
+	<span className="hidden">{d}</span>
+	<span className="date">{moment(d).format("dddd, MMM Do YYYY")}</span> <span className="date">( {moment(d).startOf('hour').fromNow()} )</span>
 </>
 
-export { parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }
+export { songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }

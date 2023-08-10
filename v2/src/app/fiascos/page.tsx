@@ -6,16 +6,15 @@ import Image from 'next/image';
 import Header from '../../components/Header';
 import Tag from '../../components/Tag';
 
-const Fiasco = ({ heading, children }: { heading: string, children: React.ReactNode }) => <details>
+const Fiasco = ({ heading, children }: { heading: string, children: React.ReactNode }) =>
+<details>
 	<summary className="fiascoHeader">{heading}</summary>
-	<div className="fiascoBox">
-		{children}
-	</div>
+	{children}
 </details>
 
 const IntroMax = ({ heading }: { heading: string }) =>
 <Fiasco heading={heading}>
-	<div className="fiascoFixed">
+	<div className='fiascoFixed'>
 		Date: Sun, 20 Sep 2020 16:06:12 +0100
 		<p>
 		----------------------------------------                                                                             
@@ -1091,8 +1090,8 @@ const Fiascos = (): React.ReactNode =>
 			</video>
 		</div>
 
-		<IntroMax heading="Max&apos;s Introduction" />
-		<IntroPat heading="Pat&apos;s Introduction" />
+		<IntroMax heading="Max&apos;s Introduction" className="py-4" />
+		<IntroPat heading="Pat&apos;s Introduction" className="py-4" />
 		<h3>The Fiascos</h3>
 		<div className="fiascoItem">
 			<Fiasco1 heading="The Fatwa"/>

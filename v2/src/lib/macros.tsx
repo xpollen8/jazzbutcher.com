@@ -262,14 +262,14 @@ const autoHREF = (href: string) => {
 }
 
 const linkSong = ({ title, href, audio, mp3, author, pdf }: {
-	title?: string
-	href?: string
+	title: string
+	href: string
 	audio?: string
 	mp3?: string
 	author?: string
 	pdf?: string
 }) =>
-<span class='song'>
+<span className='song'>
 	{(() => {
 		if (mp3?.length && href?.length) {
 			return <i><a href={autoHREF(href)}>{title}</a></i>
@@ -282,7 +282,7 @@ const linkSong = ({ title, href, audio, mp3, author, pdf }: {
 		}
 	})()}
 
-	{(author) && <span class="song_author">({author})</span>}
+	{(author) && <span className="song_author">({author})</span>}
 </span>
 
 const songLinkMapped = (title: string) => {

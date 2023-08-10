@@ -306,4 +306,4 @@ const dateDiff = (d: string) =>
 	<span className="date">{moment(d).format("dddd, MMM Do YYYY")}</span> <span className="date">( {moment(d).startOf('hour').fromNow()} )</span>
 </>
 
-export { songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }
+export { linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }

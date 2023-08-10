@@ -50,6 +50,11 @@
 	}
 }
 
+.date {
+	font-size: .9em;
+	color: #bbb;
+}
+
 /// GALLERY
 .gallery	dl {
 	text-align: center;
@@ -345,6 +350,7 @@ blockquote {
 }
 a {
 	text-decoration: none;
+	color: blue;
 }
 .leading {
 	line-height: 1.5;

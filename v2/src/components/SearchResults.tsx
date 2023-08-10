@@ -1,16 +1,16 @@
 import { searchOptions } from '../lib/macros';
 
 type ResultRecord = {
-	[key: string]: any;
+	[key: string]: any
 }
 
 type ResultType = {
-	type?: string;
-	noun?: string;
-	numResults?: number;
-	key?: string;
-	results?: ResultRecord[];
-	searchTerms?: string[];
+	type?: string
+	noun?: string
+	numResults?: number
+	key?: string
+	results?: ResultRecord[]
+	searchTerms?: string[]
 }
 
 const layoutNone = (results: ResultType, index: number) => {

@@ -1090,8 +1090,8 @@ const Fiascos = (): React.ReactNode =>
 			</video>
 		</div>
 
-		<IntroMax heading="Max&apos;s Introduction" className="py-4" />
-		<IntroPat heading="Pat&apos;s Introduction" className="py-4" />
+		<IntroMax heading="Max&apos;s Introduction" />
+		<IntroPat heading="Pat&apos;s Introduction" />
 		<h3>The Fiascos</h3>
 		<div className="fiascoItem">
 			<Fiasco1 heading="The Fatwa"/>

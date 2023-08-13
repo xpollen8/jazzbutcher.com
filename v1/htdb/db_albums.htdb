@@ -1053,7 +1053,7 @@ show.
 #define	albums[91]->title	VA: Now That's What I Call Northampton Vol #1
 #define	albums[91]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum
 #define	albums[91]->year	2007-12
-#define	albums[91]->ontribution ${afterhours}
+#define	albums[91]->ontribution afterhours
 #define	albums[91]->blurb
 <p>
 Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers.
@@ -1089,6 +1089,5 @@ albums[${li}]
 
 #define	data.json
 #live if (getval(page) = data.json)
-### almost works, chops strings at ","
 ${objectToJSON(albums)}
 #live	endif

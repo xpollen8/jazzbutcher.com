@@ -625,6 +625,23 @@
 
 	)}
 
+#define	Jul27.html()
+	${gigHeader(
+		cost=,
+		blurb=A rave,
+		venue=The Fortress,
+		address=King's Cross,
+		city=London,
+		country=England,
+		who=${literalizeCommas(
+				${eg} - Karel and Otto ${damm}
+		)},
+		pat=${literalizeCommas(
+				The Eg are also playing a rave in London on 22nd July at The Fortress,
+				King's Cross, and they have been invited to Ibiza too!  Vibornye!
+		)}
+	)}
+
 #define	Aug3.html()
 	${gigHeader(
 

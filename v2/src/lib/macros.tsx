@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import moment from 'moment';
 import songMap from './songMap';
+import apiData from './apiData';
+
 
 type RecordType = {
 	[key: string]: any;
@@ -219,18 +221,16 @@ const doSearch = (type: string, query: QueryType, settor: any, error: any): void
 		return;
 	}
 	// else hit the api for data
-	const action = `/api/${route}`;
-	fetch(action)
-		.then(e => e.json())
+	apiData(route)
 		.then(res => {
 			cache[route] = res;
 			error();
 			settor(filter({ ...res, type }, query))
 		})
-		.catch((e) => {
+		.catch(e => {
 			error(`search by ${type} failed`);
 			console.log("ERR", e);
-		});
+		})
 	/*
 	api-side filtering method
 	const action = `/api/${route}/${query}`;
@@ -306,4 +306,9 @@ const dateDiff = (d: string) =>
 	<span className="date">{moment(d).format("dddd, MMM Do YYYY")}</span> <span className="date">( {moment(d).startOf('hour').fromNow()} )</span>
 </>
 
-export { linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }
+const releaseByLookup = async (lookup: string) => {
+	const releases = await apiData('releases');
+	return releases?.albums?.find((r: any) => r?.lookup === lookup);
+}
+
+export { releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }

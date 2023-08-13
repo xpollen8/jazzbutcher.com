@@ -26,16 +26,16 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, chi
 	return (
 		<div className="release">
 			<div className="album_details">
-				{(link?.length) && (
-					<span className="album_title">
-						{(link?.startsWith('http'))
-							?
-							<>{linkExternal(link, title)}</>
-							:
-							<>{linkInternal(link, title)}</>
-						}
-					</span>
-				)}
+				<span className="album_title">
+					{(link?.length) ? (<>
+							{(link?.startsWith('http'))
+								?
+								<>{linkExternal(link, title)}</>
+								:
+								<>{linkInternal(link, title)}</>
+							}
+					</>) : <>{title}</>}
+				</span>
 				<div className="album_blurb">
 					{children}
 				</div>

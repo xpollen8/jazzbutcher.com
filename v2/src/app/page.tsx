@@ -17,7 +17,7 @@ const BookSikkorski = () =>
 	<FeaturedItem
 		link={`https://www.paypal.com/instantcommerce/checkout/B9R9UNV97A754`}
 		title={`Earl Sikkorski’s Golden Treasury`}
-		image={`https://jazzbutcher.com/images/book_sikkorski.jpg`}
+		image={`https://jazzbutcher.com/images/book_sikkorski`}
 		alt={`book cover`}
 		buy_title="Order direct from the author"
 	>
@@ -29,7 +29,7 @@ const BookMiraclesAndWonders = () =>
 		link={`https://www.paypal.com/instantcommerce/checkout/HRQWCR4BWWF5W`}
 		buy={`https://www.paypal.com/instantcommerce/checkout/HRQWCR4BWWF5W`}
 		title={`Miracles and Wonders`}
-		image={`https://jazzbutcher.com/images/songbook/cover.jpg`}
+		image={`https://jazzbutcher.com/images/songbook/cover`}
 		alt={`book cover`}
 	>
 		<>

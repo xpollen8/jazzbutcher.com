@@ -49,7 +49,7 @@
 	<div id="right">
 		${mkAlbumBlurb(prefix=albums[92], details=no)}
 		${book_sikkorski}
-		${newsNeverGiveUp}
+#		${newsNeverGiveUp}
 		${songbook}
 		${mkAlbumBlurb(prefix=albums[87], details=no)}
 		${mkAlbumBlurb(prefix=albums[88], details=no)}

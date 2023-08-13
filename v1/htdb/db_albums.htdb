@@ -1062,6 +1062,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[92]->thumb	/images/releases/never7_A
 #define	albums[92]->media	7"
 #define	albums[92]->year	2022
+#define	albums[92]->buy	https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7
 #define	albums[92]->blurb
 	In loving memory. Patrick Huntrods (AKA Pat Fish). (20 December 1957 - 5 October 2021)
 

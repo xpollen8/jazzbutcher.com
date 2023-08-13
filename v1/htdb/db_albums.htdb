@@ -1,4 +1,4 @@
-#define	albums->numFields	13
+#define	albums->numFields	16
 #define	albums->field[1]	type
 #define	albums->field[2]	href
 #define	albums->field[3]	title
@@ -12,6 +12,9 @@
 #define	albums->field[11]	catalog
 #define	albums->field[12]	media
 #define	albums->field[13]	country
+#define	albums->field[14]	blurb_credit_g
+#define	albums->field[15]	blurb_credit_u
+#define	albums->field[16]	blurb_credit_d
 
 #define	albums[1]->type	album
 #define	albums[1]->lookup	bacon
@@ -473,6 +476,9 @@
 #		The cover version can also be found on the ${affect} 12".
 		</p>
 		${g_credit(g=Perfection As A Hipster, u=Andreas.Hering@stud.uni-hannover.de, d=2000-10-10)}
+#define	albums[54]->blurb_credit_g	Perfection As A Hipster
+#define	albums[54]->blurb_credit_u	Andreas.Hering@stud.uni-hannover.de
+#define	albums[54]->blurb_credit_d	2000-10-10
 
 #define	albums[55]->type	single
 #define	albums[55]->lookup	single_saints
@@ -511,6 +517,9 @@
 		after split single came with a fanzine.
 		</p>
 		${g_credit(g=Perfection As A Hipster, u=Andreas.Hering@stud.uni-hannover.de, d=2000-10-10)}
+#define	albums[57]->blurb_credit_g	Perfection As A Hipster
+#define	albums[57]->blurb_credit_u	Andreas.Hering@stud.uni-hannover.de
+#define	albums[57]->blurb_credit_d	2000-10-10
 
 #define	albums[58]->type	various
 #define	albums[58]->lookup	va_abigail
@@ -534,6 +543,9 @@
 		The Jazz Butcher contribution subsequently appeared as an additional track on ${gift1}. 
 		</p>
 		${g_credit(g=Perfection As A Hipster, u=Andreas.Hering@stud.uni-hannover.de, d=2000-10-10)}
+#define	albums[59]->blurb_credit_g	Perfection As A Hipster
+#define	albums[59]->blurb_credit_u	Andreas.Hering@stud.uni-hannover.de
+#define	albums[59]->blurb_credit_d	2000-10-10
 
 #define	albums[60]->type	various
 #define	albums[60]->lookup	va_50k
@@ -554,6 +566,9 @@
 		version of &quot;2:35&quot; by Spacemen 3 amongst others.
 		</p>
 		${g_credit(g=Perfection As A Hipster, u=Andreas.Hering@stud.uni-hannover.de, d=2000-10-10)}
+#define	albums[60]->blurb_credit_g	Perfection As A Hipster
+#define	albums[60]->blurb_credit_u	Andreas.Hering@stud.uni-hannover.de
+#define	albums[60]->blurb_credit_d	2000-10-10
 
 
 #define	albums[61]->type	various

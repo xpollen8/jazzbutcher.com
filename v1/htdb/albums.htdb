@@ -8557,3 +8557,41 @@ ${49} (Live KCRW Session 1989)
 
 	${jbc_footer}
 #live	endif
+
+#define	never_give_up.html
+#live	if (getval(page) = never_give_up.html)
+	${mkHeader(section=albums, title=Never Give Up (7"))}
+
+	${mkPurchase()}
+	${det_beg}
+	<a href="${jbc_images}/releases/never7_A.jpg"><img alt="[album cover]"
+		src="${jbc_images}/releases/never7_A_500.jpg"></a>
+	<a href="${jbc_images}/releases/never7_B.jpg"><img alt="[album cover]"
+		src="${jbc_images}/releases/never7_B_250.jpg"></a>
+	${a_class} single
+	${a_label} Glass Modern
+	${a_cat} GLAMS004
+	${a_date} 2022
+#	${addAlbumPerf(release=never7, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar, song="Never Give Up")}
+#	${addAlbumPerf(release=never7, person=[[person:David_J.]], instruments=Bass\, Backing Vocals\, Produced, song="Never Give Up")}
+#	${addAlbumPerf(release=never7, person=[[person:Victor DeLorenzo]], instruments=Drums, song="Never Give Up")}
+#	${addAlbumPerf(release=never7, person=[[person:Janet Schiff]], instruments=Cello, song="Never Give Up")}
+#	${addAlbumPerf(release=never7, person=[[person:Fiona_Brice]], instruments=Violin, song="Never Give Up")}
+#	${addAlbumPerf(release=never7, person=[[person:Tony_Green]], instruments=engineer, song="Never Give Up")}
+
+#	${addAlbumPerf(release=never7, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Produced, song="Silver Street Up")}
+#	${addAlbumPerf(release=never7, person=[[person:Sophie_Joiner]], instruments=Sleeve Paintings)}
+#	${addAlbumPerf(release=never7, person=[[person:Lionel_Brando]], instruments=Label Photos)}
+	${det_end}
+	${a-side_beg}
+	${never} (Glass Version)
+	${a-side_end}
+	${b-side_beg}
+	${silver_street}
+	${b-side_end}
+	${players_beg}
+	${fetchAlbumPersonnel(release=never7)}
+	${players_end}
+	${jbc_footer}
+#live	endif
+

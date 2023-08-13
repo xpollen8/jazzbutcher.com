@@ -47,6 +47,7 @@
 #	${showNews(limit=2, showMore=no)}
 	<div id="container">
 	<div id="right">
+		${mkAlbumBlurb(prefix=albums[92], details=no)}
 		${book_sikkorski}
 		${newsNeverGiveUp}
 		${songbook}

@@ -1053,7 +1053,19 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
   ${linkAudio(title=${literalizeCommas(${afterhours})}, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3, comment=${literalizeCommas(Recorded in December 2007 at Greenway Studio by Andy Clarke)})}
 </p>
 
-#define	albums->numResults	91
+#define	albums[92]->type	single
+#define	albums[92]->lookup	never7
+#define	albums[92]->href	${jbc_albums}/never_give_up.html
+#define	albums[92]->title	Never Give Up
+#define	albums[92]->label	Glass Modern
+#define	albums[92]->catalog	GLAMS004
+#define	albums[92]->thumb	/images/releases/never7_A
+#define	albums[92]->media	7"
+#define	albums[92]->year	2022
+#define	albums[92]->blurb
+	In loving memory. Patrick Huntrods (AKA Pat Fish). (20 December 1957 - 5 October 2021)
+
+#define	albums->numResults	92
 
 #define	lookupAlbumBy(l, f=lookup)
 #live	loop(li, 1, ${albums->numResults})

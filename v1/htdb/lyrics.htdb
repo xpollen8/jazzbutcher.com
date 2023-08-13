@@ -9079,7 +9079,7 @@ Break out and find out tonight.
 	Oh, Mercy, there's no beauty without cruelty.
 
 	${lyricsFooter(onlist=
-		va_nm_vol1,
+		va_nm_vol1 ..
 		adventurers
 		,credits=${literalizeCommas(
 	&copy; ${pat} 2006
@@ -9446,7 +9446,7 @@ Break out and find out tonight.
 	Never Give up<br/>
 	'Till you want to<br/>
 
-	${lyricsFooter(onlist=highest
+	${lyricsFooter(onlist=highest .. never7
 	)}
 #live	endif
 

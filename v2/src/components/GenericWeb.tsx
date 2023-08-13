@@ -8,7 +8,7 @@ const	genericWeb = ({ x, g, u, t, s, d }: {
 	s?: string
 	d?: string
 }) => (
-	<div className={s}>
+	(x || g || u || d) && <div className={s}>
 		{(t) && <><b>{t}</b>:{' '}</>}
 		{(x) && <>x</>}
 		{(() => {
@@ -74,3 +74,7 @@ export const Credit = ({ g, u, d }: {
 	u?: string
 	d?: string
 }) => genericWeb({ g, u, t: "Credit", s: "credit", d })
+
+export const Contribution = ({ titles }: {
+	titles?: string
+}) => (titles) && genericWeb({ g: titles, t: "Contribution", s: "credit" })

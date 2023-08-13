@@ -76,5 +76,5 @@ export const Credit = ({ g, u, d }: {
 }) => genericWeb({ g, u, t: "Credit", s: "credit", d })
 
 export const Contribution = ({ titles }: {
-	titles?: string | string[]
+	titles?: string
 }) => (titles) && genericWeb({ g: titles, t: "Contribution", s: "credit" })

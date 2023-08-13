@@ -16,6 +16,7 @@ const homeBlurb = [
 const BookSikkorski = () =>
 	<FeaturedItem
 		link={`https://www.paypal.com/instantcommerce/checkout/B9R9UNV97A754`}
+		buy={`https://www.paypal.com/instantcommerce/checkout/B9R9UNV97A754`}
 		title={`Earl Sikkorski’s Golden Treasury`}
 		image={`https://jazzbutcher.com/images/book_sikkorski`}
 		alt={`book cover`}
@@ -82,6 +83,7 @@ const HomeBooks = () =>
 
 const HomeReleases = () =>
 <>
+		<Release lookup='va_andy_2007' />
 		<Release lookup='highest' />
 		<Release lookup='fire_cholmondley' />
 		<Release lookup='fire_violent' />

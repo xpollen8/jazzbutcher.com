@@ -72,7 +72,7 @@
 #define	albums[7]->label	Another Spark
 #define	albums[7]->catalog	001
 #define	albums[7]->thumb	/images/releases/va_anotherspark2
-#define	albums[7]->contribution	${inside_heart}
+#define	albums[7]->contribution	inside_heart
 #define	albums[7]->year	1984
 #define	albums[8]->type	album
 #define	albums[8]->lookup	sex
@@ -129,7 +129,7 @@
 #define	albums[14]->catalog	SAM 005
 #define	albums[14]->title	VA: Abstract #5
 #define	albums[14]->thumb	/images/releases/abstract5
-#define	albums[14]->contribution ${uptoyou}
+#define	albums[14]->contribution uptoyou
 #define	albums[14]->year	1985
 #define	albums[15]->type	album
 #define	albums[15]->lookup	dist
@@ -325,7 +325,7 @@
 #define	albums[38]->thumb	/images/releases/vodka
 #define	albums[38]->year	1994
 #define	albums[38]->media	mini CD
-#define	albums[38]->contribution ${vodka}
+#define	albums[38]->contribution vodka
 
 #define	albums[39]->type	single
 #define	albums[39]->lookup	16yr
@@ -469,7 +469,7 @@
 #define	albums[54]->year	1984
 #define	albums[54]->label	Glass
 #define	albums[54]->catalog	GLALP 007
-#define	albums[54]->contribution ${aff}
+#define	albums[54]->contribution aff
 #define	albums[54]->blurb
 		<p>
 		A lovely interpretation of the Jonathan Richman classic which was originally
@@ -477,7 +477,6 @@
 		Modern Lovers.
 #		The cover version can also be found on the ${affect} 12".
 		</p>
-		${g_credit(g=Perfection As A Hipster, u=Andreas.Hering@stud.uni-hannover.de, d=2000-10-10)}
 #define	albums[54]->credit_g	Perfection As A Hipster
 #define	albums[54]->credit_u	Andreas.Hering@stud.uni-hannover.de
 #define	albums[54]->credit_d	2000-10-10
@@ -495,7 +494,7 @@
 #define	albums[56]->href
 #define	albums[56]->title	VA: The BigTime Syndrome
 #define	albums[56]->thumb	/images/releases/va_bigtimesyndrome
-#define	albums[56]->contribution ${becky}
+#define	albums[56]->contribution becky
 #define	albums[56]->year	1987
 
 #define	albums[57]->type	various
@@ -506,7 +505,7 @@
 #define	albums[57]->title	VA: What A Nice Way To Turn Seventeen # 2
 #define	albums[57]->thumb	/images/releases/va_seventeen_2_back
 #define	albums[57]->year	1984
-#define	albums[57]->contribution ${envoy}
+#define	albums[57]->contribution envoy
 #define	albums[57]->blurb
 		<p>
 		The Jazz Butcher cover version is unavailable elsewhere. Interestingly
@@ -519,7 +518,6 @@
 		Swell Maps (!) in disguise. Obviously essential, this highly sought
 		after split single came with a fanzine.
 		</p>
-		${g_credit(g=Perfection As A Hipster, u=Andreas.Hering@stud.uni-hannover.de, d=2000-10-10)}
 #define	albums[57]->credit_g	Perfection As A Hipster
 #define	albums[57]->credit_u	Andreas.Hering@stud.uni-hannover.de
 #define	albums[57]->credit_d	2000-10-10
@@ -541,12 +539,11 @@
 #define	albums[59]->label	Situation Two
 #define	albums[59]->catalog	SITU 17
 #define	albums[59]->year	1986
-#define	albums[59]->contribution ${lost}
+#define	albums[59]->contribution lost
 #define	albums[59]->blurb
 		<p>
 		The Jazz Butcher contribution subsequently appeared as an additional track on ${gift1}. 
 		</p>
-		${g_credit(g=Perfection As A Hipster, u=Andreas.Hering@stud.uni-hannover.de, d=2000-10-10)}
 #define	albums[59]->credit_g	Perfection As A Hipster
 #define	albums[59]->credit_u	Andreas.Hering@stud.uni-hannover.de
 #define	albums[59]->credit_d	2000-10-10
@@ -559,7 +556,7 @@
 #define	albums[60]->label	Glass
 #define	albums[60]->catalog	GLALP 019
 #define	albums[60]->year	1986
-#define	albums[60]->contribution ${city}
+#define	albums[60]->contribution city
 #define	albums[60]->blurb
 		<p>
 		Note: Limited edition on clear vinyl.
@@ -570,7 +567,6 @@
 		${dj} and a different
 		version of &quot;2:35&quot; by Spacemen 3 amongst others.
 		</p>
-		${g_credit(g=Perfection As A Hipster, u=Andreas.Hering@stud.uni-hannover.de, d=2000-10-10)}
 #define	albums[60]->credit_g	Perfection As A Hipster
 #define	albums[60]->credit_u	Andreas.Hering@stud.uni-hannover.de
 #define	albums[60]->credit_d	2000-10-10
@@ -584,7 +580,7 @@
 #define	albums[61]->label	Creation
 #define	albums[61]->catalog	CRELP 037
 #define	albums[61]->year	1988
-#define	albums[61]->contribution ${49}
+#define	albums[61]->contribution 49
 
 #define	albums[62]->type	various
 #define	albums[62]->lookup	va_pensioners90
@@ -594,7 +590,7 @@
 #define	albums[62]->label	Creation
 #define	albums[62]->catalog	CRELP 082
 #define	albums[62]->year	1990
-#define	albums[62]->contribution ${odd}
+#define	albums[62]->contribution odd
 
 #define	albums[63]->type	various
 #define	albums[63]->lookup	va_pensioners91
@@ -604,7 +600,7 @@
 #define	albums[63]->label	Creation
 #define	albums[63]->catalog	CRELP 095
 #define	albums[63]->year	1991
-#define	albums[63]->contribution ${go}
+#define	albums[63]->contribution go
 #define	albums[63]->blurb
 		<p class="annotation">
 		Another track from that L.A. babe, ${deirdre}'s radio show.
@@ -618,7 +614,7 @@
 #define	albums[64]->title	VA: What A Nice Way To Turn Seventeen # 3
 #define	albums[64]->thumb	/images/releases/va_seventeen_3_front
 #define	albums[64]->year	1984
-#define	albums[64]->contribution ${h2o}
+#define	albums[64]->contribution h2o
 
 
 #define	albums[65]->type	various
@@ -629,7 +625,7 @@
 #define	albums[65]->title	VA: Songs For Summer
 #define	albums[65]->thumb	/images/releases/va_summer
 #define	albums[65]->year	2000
-#define	albums[65]->contribution ${indian_summer}
+#define	albums[65]->contribution indian_summer
 #define	albums[65]->blurb
 		<p class="annotation">
 		Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects.
@@ -646,7 +642,7 @@
 #define	albums[66]->country	France
 #define	albums[66]->thumb	/images/releases/va_abus_126
 #define	albums[66]->year	2016
-#define	albums[66]->contribution ${animals}
+#define	albums[66]->contribution animals
 
 #define	albums[67]->type	various
 #define	albums[67]->lookup	va_nh_underglass
@@ -654,7 +650,7 @@
 #define	albums[67]->title	VA: Northampton Under Glass II
 #define	albums[67]->thumb	/images/releases/va_nh_underglass
 #define	albums[67]->year	2013
-#define	albums[67]->contribution ${shame_about_you}
+#define	albums[67]->contribution shame_about_you
 
 #define	albums[68]->type	various
 #define	albums[68]->lookup	va_1000songs
@@ -664,7 +660,7 @@
 #define	albums[68]->title	VA: 1000 Songs
 #define	albums[68]->thumb	/images/releases/va_1000songs
 #define	albums[68]->year	1985
-#define	albums[68]->contribution ${holiday}
+#define	albums[68]->contribution holiday
 #define	albums[68]->blurb
 <p>
 This release by the German newspaper "Süddeutsche Zeitung" combines a book and a CD.
@@ -679,7 +675,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[6]->media	cassette
 #define	albums[6]->thumb	/images/releases/va_pulp
 #define	albums[6]->year	1987-12-01
-#define	albums[6]->contribution ${elephant_man}
+#define	albums[6]->contribution elephant_man
 #define	albums[6]->blurb
 	<p>
 	This very rare cassette was compiled by Mark Webber and released on his bedroom-based label.
@@ -726,7 +722,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[71]->thumb	/images/releases/bigtime_sampler
 #define	albums[71]->year	1986
 #define	albums[71]->media	7"
-#define	albums[71]->contribution ${bigbad}
+#define	albums[71]->contribution bigbad
 #define	albums[71]->blurb
 	<p>
 	Also includes tracks from Love Tractor, The Pastels, and The Lucy Show
@@ -781,7 +777,7 @@ Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ 
 #define	albums[75]->thumb	/images/releases/va_creation_unreleased
 #define	albums[75]->media	CD
 #define	albums[75]->year	1995
-#define	albums[75]->contribution ${chang} (remix)
+#define	albums[75]->contribution chang
 #define	albums[75]->blurb
 	<p>
 	Note: The back cover mistakenly lists the Jazz Butcher track as &quot;President Gang&quot;.
@@ -851,7 +847,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[79]->thumb	/images/releases/va_nationofsaints_front
 #define	albums[79]->year	2009-11
 #define	albums[79]->media	CD
-#define	albums[79]->contribution ${drugs}
+#define	albums[79]->contribution drugs
 #define	albums[79]->blurb
 	<p>
 	50 Years Of Northampton Music
@@ -868,7 +864,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[80]->thumb	/images/releases/va_creation_price_front
 #define	albums[80]->year	1996
 #define	albums[80]->media	CD
-#define	albums[80]->contribution ${girls}
+#define	albums[80]->contribution girls
 #define	albums[80]->blurb
 	<p>
 	The Creation Records Promotion Sampler, Distribution Sony Music
@@ -885,7 +881,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[81]->thumb	/images/releases/va_unautomne93_front
 #define	albums[81]->year	1993
 #define	albums[81]->media	CD
-#define	albums[81]->contribution ${davis}
+#define	albums[81]->contribution davis
 #define	albums[81]->blurb
 	<p>
 	French Various Artists Compilation.
@@ -903,7 +899,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[82]->thumb	/images/releases/va_wilson_heyday_front
 #define	albums[82]->year	2004
 #define	albums[82]->media	CD
-#define	albums[82]->contribution ${wilson_quality_people}
+#define	albums[82]->contribution wilson_quality_people
 #define	albums[82]->blurb
 	<p>
 	A Sampler CD
@@ -1043,7 +1039,7 @@ show.
 #define	albums[90]->title	VA: Now That's What I Call Northampton Vol #1
 #define	albums[90]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/2010_NowThatsWhatICallNorthamptonVol1
 #define	albums[90]->year	2010
-#define	albums[90]->contribution [ ${mercy}, ${wildlife} ]
+#define	albums[90]->contribution [ mercy, wildlife ]
 #define	albums[90]->blurb
   <p>
   ${linkAudio(title=${literalizeCommas(${mercy})}, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3, comment=${literalizeCommas(Recorded by ${curt})})}
@@ -1057,7 +1053,7 @@ show.
 #define	albums[91]->title	VA: Now That's What I Call Northampton Vol #1
 #define	albums[91]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum
 #define	albums[91]->year	2007-12
-#define	albums[91]->ontribution ${afterhours}
+#define	albums[91]->ontribution afterhours
 #define	albums[91]->blurb
 <p>
 Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers.
@@ -1093,6 +1089,5 @@ albums[${li}]
 
 #define	data.json
 #live if (getval(page) = data.json)
-### almost works, chops strings at ","
 ${objectToJSON(albums)}
 #live	endif

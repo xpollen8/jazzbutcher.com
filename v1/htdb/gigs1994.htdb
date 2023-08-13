@@ -634,11 +634,11 @@
 		city=London,
 		country=England,
 		who=${literalizeCommas(
-			${eg} - Karel and Otto ${damm}
+				${eg} - Karel and Otto ${damm}
 		)},
 		pat=${literalizeCommas(
-			The Eg are also playing a rave in London on 22nd July at The Fortress,
-			King's Cross, and they have been invited to Ibiza too!  Vibornye!
+				The Eg are also playing a rave in London on 22nd July at The Fortress,
+				King's Cross, and they have been invited to Ibiza too!  Vibornye!
 		)}
 	)}
 

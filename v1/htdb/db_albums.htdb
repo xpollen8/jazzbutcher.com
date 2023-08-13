@@ -1064,5 +1064,6 @@ albums[${li}]
 
 #define	data.json
 #live if (getval(page) = data.json)
+### almost works, chops strings at ","
 ${objectToJSON(albums)}
 #live	endif

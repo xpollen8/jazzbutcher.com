@@ -20,7 +20,7 @@ const Gigs = () => {
 			})();
 		}
 		return () => {}
-	}, []);
+	}, [ results ]);
 
 	return (<>
 		<Header section={`Gigs`} navType={`Gig`} navPrev={{ datetime: '2020-10-11' }} navNext={{ datetime: '2020-10-13' }}>

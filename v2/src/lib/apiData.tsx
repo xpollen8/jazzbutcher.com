@@ -1,4 +1,13 @@
 import { RecordType } from './macros';
+
+/*
+	TODO
+	we can automatically build up complex searchable
+	structures right here.
+	see how "gig" is attached to "performer" and "gigsong"
+	search results.
+	no reason this cannot be extended to press, etc.
+ */
 const apiDataFromHTDBServer = async (path: string) => {
 	return await fetch(`https://jazzbutcher.com/htdb/${path}`,
 		{
@@ -24,17 +33,28 @@ const apiData = async (path: string) => {
 	switch (path) {
 		case 'gigs':
 		case 'presses':
-		case 'performances':
 			return await apiDataFromDataServer(path);
-		case 'gigsongs':
+		case 'performances': {
+			const performances =  await apiDataFromDataServer(path);
+			const gigs = await apiDataFromDataServer('gigs');
+			// add gig data to performance records
+			const results = performances?.results?.map((performance: RecordType) => {
+				const gig = gigs?.results.find((gig: RecordType) => gig?.datetime === performance?.datetime);
+				return { ...performance, gig }
+			});
+			return { ...performances, results }
+		}
+		case 'gigsongs': {
 			const songs = await apiDataFromDataServer(path);
 			const gigs = await apiDataFromDataServer('gigs');
 			// add gig data to song records
 			const results = songs?.results?.map((song: RecordType) => {
 				const gig = gigs?.results.find((gig: RecordType) => gig?.datetime === song?.datetime);
+				console.log("GIG", gig);
 				return { ...song, gig }
 			});
 			return { ...songs, results }
+		}
 		case 'releases':
 			return await apiDataFromHTDBServer('db_albums/data.json');
 	}

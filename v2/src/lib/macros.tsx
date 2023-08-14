@@ -88,6 +88,23 @@ const gigPage2Datetime = (year: string, href: string): string => gigURI2ts(year,
 
 const Nobr = ({ children }: { children: React.ReactNode }) => <span style={{ whiteSpace: 'nowrap' }}>{children}</span>
 
+const layoutPerformer = (record: RecordType, key: number) => {
+	const { gig } = record;
+	return <div key={key}>
+		<label>Played</label>
+		{record?.performer}
+		<label>Venue</label>
+		{gig?.venue}
+		<label>Date</label>
+		{record?.datetime}
+		<label>Location</label>
+		{gig?.city}
+		{gig?.state}
+		{gig?.country}
+		{gig?.postalcode}
+	</div>
+}
+
 const layoutSongs = (record: RecordType, key: number) => {
 	const { gig } = record;
 	return <div key={key}>
@@ -159,10 +176,10 @@ const searchRecord = (record: RecordType, target: string, terms: string[]) => (
 	}
 )
 
-const filterBy = (res: RecordType, query: QueryType, target: any) => {
+const filterBy = (res: RecordType, query: QueryType, recordFilter: any) => {
 	const terms = searchTerms(query);
 	const filtered = res.results
-		?.map((record: RecordType) => searchRecord(record, target(record), terms))	// add 'matchedTerms' to object
+		?.map((record: RecordType) => searchRecord(record, recordFilter(record), terms))	// add 'matchedTerms' to object
 		.filter((r: RecordType) => r?.matchedTerms?.length)	// filter out non-matches
 		.sort((a: any, b: any) => (b?.matchedTerms?.length || 0) - (b?.matchedTerms?.length || 0));	// sort by relevance
 
@@ -175,8 +192,8 @@ const filterBy = (res: RecordType, query: QueryType, target: any) => {
 }
 
 const filterGigsByField = (res: any, query: QueryType, field: string) => {
-	const target = ((record: RecordType) => record[field]?.toLowerCase());
-	return filterBy(res, query, target);
+	const recordFilter = ((record: RecordType) => record[field]?.toLowerCase());
+	return filterBy(res, query, recordFilter);
 }
 
 const filterGigsByVenue = (res: any, query: QueryType) => filterGigsByField(res, query, 'venue');
@@ -184,6 +201,15 @@ const filterGigsByCity = (res: any, query: QueryType) => filterGigsByField(res, 
 const filterGigsByCountry = (res: any, query: QueryType) => filterGigsByField(res, query, 'country');
 const filterGigsBySupport = (res: any, query: QueryType) => filterGigsByField(res, query, 'alsowith');
 const filterGigsBySong = (res: any, query: QueryType) => filterGigsByField(res, query, 'song');
+const filterGigsByPerformer = (res: any, query: QueryType) => {
+	const recordFilter = ((record: RecordType) => {
+		const field = 'performer';
+		if (record[field]?.startsWith('[[person:')) {
+			return record[field]?.toLowerCase();
+		}
+	});
+	return filterBy(res, query, recordFilter);
+}
 
 const filterGigsByAnything = (res: RecordType, query: QueryType) => {
 	// create a searchable string from record object
@@ -255,11 +281,15 @@ const searchOptions = [
 	{ ...gigSearchOptions(true, 'venue', 'Venue', 'gigs') },
 	{ ...gigSearchOptions(true, 'city', 'City', 'gigs') },
 	{ ...gigSearchOptions(true, 'anything', 'Anywhere in gig details', 'gigs'),
-		filter: filterGigsByAnything },
+		filter: filterGigsByAnything,
+	},
 	{ ...gigSearchOptions(true, 'song', 'Played this song..', 'gigsongs'),
-		layout: layoutSongs },
+		layout: layoutSongs,
+	},
 	{ ...gigSearchOptions(true, 'performer', 'This band member performed..', 'performances'),
-		filter: filterGigsByAnything },
+		filter: filterGigsByPerformer,
+		layout: layoutPerformer
+	},
 	{ ...gigSearchOptions(true, 'alsowith', 'Shared the bill with JBC..', 'gigs') },
 ]
 

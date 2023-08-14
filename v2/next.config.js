@@ -17,6 +17,12 @@ const nextConfig = {
 					destination: '/releases',
 					permanent: false,
 				},
+				// remove ".html" from all URLs
+				{
+					source: '/:path*.html',
+					destination: '/:path*',
+					permanent: false,
+				},
 				{
 					source: '/audio/:path*',
 					destination: 'https://jazzbutcher.com/audio/:path*',

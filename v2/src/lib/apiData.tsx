@@ -1,3 +1,4 @@
+import { RecordType } from './macros';
 const apiDataFromHTDBServer = async (path: string) => {
 	return await fetch(`https://jazzbutcher.com/htdb/${path}`,
 		{
@@ -24,9 +25,18 @@ const apiData = async (path: string) => {
 		case 'gigs':
 		case 'presses':
 		case 'performances':
-			return apiDataFromDataServer(path);
+			return await apiDataFromDataServer(path);
+		case 'gigsongs':
+			const songs = await apiDataFromDataServer(path);
+			const gigs = await apiDataFromDataServer('gigs');
+			// add gig data to song records
+			const results = songs?.results?.map((song: RecordType) => {
+				const gig = gigs?.results.find((gig: RecordType) => gig?.datetime === song?.datetime);
+				return { ...song, gig }
+			});
+			return { ...songs, results }
 		case 'releases':
-			return apiDataFromHTDBServer('db_albums/data.json');
+			return await apiDataFromHTDBServer('db_albums/data.json');
 	}
 }
 

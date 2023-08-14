@@ -2,11 +2,15 @@ import Link from 'next/link';
 import moment from 'moment';
 import songMap from './songMap';
 import apiData from './apiData';
+import Tag from '../components/Tag';
 
-
-type RecordType = {
+export type RecordType = {
 	[key: string]: any;
 	matchedTerms?: string[];
+}
+
+export type Hashed = {
+	[key: string]: any;
 }
 
 type QueryType = string;
@@ -14,7 +18,8 @@ type QueryType = string;
 const linkExternal = (href: string, text?: string): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
 const linkInternal = (href: string, text?: string): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
-const parseYear = (datetime: string) => datetime.substr(0, 4);
+const parseYear = (datetime: string): number => parseInt(datetime.substr(0, 4), 10);
+const parseMonth = (datetime: string): number => parseInt(datetime.substr(5, 2), 10);
 
 const padZero = (s: any): string => {
 	const str = String(s);
@@ -82,13 +87,25 @@ const gigPage2Datetime = (year: string, href: string): string => gigURI2ts(year,
 
 const Nobr = ({ children }: { children: React.ReactNode }) => <span style={{ whiteSpace: 'nowrap' }}>{children}</span>
 
+const layoutSongs = (record: RecordType, key: number) => {
+	const { gig } = record;
+	return <div key={key}>
+		<label>Played</label>
+		{record?.song}
+		<label>Venue</label>
+		{gig?.venue}
+		<label>Date</label>
+		{record?.datetime}
+		<label>Location</label>
+		{gig?.city}
+		{gig?.state}
+		{gig?.country}
+		{gig?.postalcode}
+	</div>
+}
+
 const layoutGigs = (record: RecordType, key: number) => {
 	return <div key={key}>
-		{(record?.matchedTerms) &&
-			<>
-				<label>Matched Terms</label> <i>&quot;{record?.matchedTerms.join('", "')}&quot;</i><br/>
-			</>
-		}
 		<label>Venue</label>
 		{record?.venue}
 		<label>Date</label>
@@ -165,6 +182,7 @@ const filterGigsByVenue = (res: any, query: QueryType) => filterGigsByField(res,
 const filterGigsByCity = (res: any, query: QueryType) => filterGigsByField(res, query, 'city');
 const filterGigsByCountry = (res: any, query: QueryType) => filterGigsByField(res, query, 'country');
 const filterGigsBySupport = (res: any, query: QueryType) => filterGigsByField(res, query, 'alsowith');
+const filterGigsBySong = (res: any, query: QueryType) => filterGigsByField(res, query, 'song');
 
 const filterGigsByAnything = (res: RecordType, query: QueryType) => {
 	// create a searchable string from record object
@@ -178,30 +196,72 @@ const filterGigsByAnything = (res: RecordType, query: QueryType) => {
 	return filterBy(res, query, (searchTarget));
 }
 
-const gigSearchOptions = (noun: string, text: string, route: string) => ({
+const templateGigs = (results: RecordType, layout: any) => {
+	const years: Hashed = {};
+	results?.results?.forEach((r: RecordType) => {
+		const year = parseYear(r.datetime);
+		if (!years[year]) years[year] = [];
+		years[year].push(r)
+	});
+	const makeGigMonth = (month: number, gigs: RecordType[]) => {
+		return <blockquote>
+			{/*<details key={month}>*/}
+			{/*<summary>*/}
+				<Tag>
+					{num2mon(month - 1)} : {gigs.length} gigs
+				</Tag>
+			{/*</summary>*/}
+			{gigs?.map(layout)}
+		{/*</details>*/}
+		</blockquote>
+	}
+	const makeGigYear = (year: number, gigs: RecordType[]) => {
+		const months: Hashed = {};
+		gigs.forEach(g => {
+			const month = parseMonth(g.datetime);
+			if (!months[month]) months[month] = [];
+			months[month].push(g);
+		});
+		return <details key={year} className="group cursor-pointer">
+			<summary className="p-2 font-bold flex items-center group-open:text-primary-red">
+				<Tag>
+					{year} : {gigs.length} gigs
+				</Tag>
+			</summary>
+			{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(m, months[m]))}
+		</details>
+	}
+	return <>
+		{(results?.results && results?.results[0]?.matchedTerms) &&
+			<>
+				<label>{results?.results?.length} gigs matched Terms</label> <i>&quot;{results?.results[0]?.matchedTerms.join('", "')}&quot;</i><br/>
+			</>
+		}
+		{Object.keys(years).sort((a: any, b: any) => b - a).map((y: any) => makeGigYear(y, years[y]))}
+	</>
+}
+
+const gigSearchOptions = (menu: boolean, noun: string, text: string, route: string) =>
+({
+	menu: true,
 	noun,
 	text, route,
 	layout: layoutGigs,
+	template: templateGigs,
 	filter: (res: RecordType, query: string) => filterGigsByField(res, query, noun)
 });
 
 const searchOptions = [
-	{ ...gigSearchOptions('venue', 'Venue', 'gigs') },
-	{ ...gigSearchOptions('city', 'City', 'gigs') },
-	{ noun: 'anything', text: 'Anywhere in gig details', route: 'gigs',
-		layout: layoutGigs,
-		filter: filterGigsByAnything
-	},
-	{ ...gigSearchOptions('country', 'Country', 'gigs') },
-	{ noun: 'song', text: 'Played this song..', route: 'gigsongs',
-		layout: layoutGigs,
-		filter: filterGigsByAnything
-	},
-	{ noun: 'performer', text: 'This band member performed..', route: 'performances',
-		layout: layoutGigs,
-		filter: filterGigsByAnything
-	},
-	{ ...gigSearchOptions('alsowith', 'Shared the bill with JBC..', 'gigs') },
+	{ ...gigSearchOptions(false, 'archive', 'All Gigs', 'gigs') },
+	{ ...gigSearchOptions(true, 'venue', 'Venue', 'gigs') },
+	{ ...gigSearchOptions(true, 'city', 'City', 'gigs') },
+	{ ...gigSearchOptions(true, 'anything', 'Anywhere in gig details', 'gigs'),
+		filter: filterGigsByAnything },
+	{ ...gigSearchOptions(true, 'song', 'Played this song..', 'gigsongs'),
+		layout: layoutSongs },
+	{ ...gigSearchOptions(true, 'performer', 'This band member performed..', 'performances'),
+		filter: filterGigsByAnything },
+	{ ...gigSearchOptions(true, 'alsowith', 'Shared the bill with JBC..', 'gigs') },
 ]
 
 const doSearch = (type: string, query: QueryType, settor: any, error: any): void => {

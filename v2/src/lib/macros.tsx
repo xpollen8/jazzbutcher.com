@@ -308,7 +308,11 @@ const dateDiff = (d: string) =>
 
 const releaseByLookup = async (lookup: string) => {
 	const releases = await apiData('releases');
-	return releases?.albums?.find((r: any) => r?.lookup === lookup);
+	const release = releases?.albums?.find((r: any) => r?.lookup === lookup);
+	if (release) return release;
+	// try to find by other means
+	const releaseByHREF = releases?.albums?.find((r: any) => r?.href?.includes(lookup));
+	if (releaseByHREF) return releaseByHREF;
 }
 
 export { releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }

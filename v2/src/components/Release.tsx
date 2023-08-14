@@ -23,7 +23,6 @@ export type ReleaseType =  {
 
 export type ReleaseTypeWithChildren = ReleaseType & { children?: string | React.ReactElement }
 
-
 const Release = async ({ lookup }: { lookup: string }) => <MakeAlbumBlurb {...(await releaseByLookup(lookup))} />
 
 export default Release;

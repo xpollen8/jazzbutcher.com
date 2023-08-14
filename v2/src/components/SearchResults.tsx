@@ -27,10 +27,13 @@ const layoutNone = (results: ResultType, index: number) => {
 const SearchResults = ({ results }: { results: ResultType }): React.ReactNode => {
 	const { type, noun, numResults, key, searchTerms } = results;
 	const layout = searchOptions.find(so => so.noun === type)?.layout || layoutNone;
+	const template = searchOptions.find(so => so.noun === type)?.template;
 
+	if (template) return template(results, layout);
 	return <>
 		{(noun) && <h1>
-			{numResults} {noun} matched <i>&quot;{searchTerms}&quot;</i>
+			{numResults} {noun}
+			{(searchTerms) && <>matched <i>&quot;{searchTerms}&quot;</i></>}
 		</h1>}
 		{results?.results?.map(layout)}
 		</>

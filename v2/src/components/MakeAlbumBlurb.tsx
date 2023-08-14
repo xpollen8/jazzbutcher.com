@@ -1,6 +1,8 @@
 import { Credit, Contribution } from './GenericWeb';
 import FeaturedItem from './FeaturedItem';
+import { ReleaseType, ReleaseTypeWithChildren } from './Release';
 
+// TODO - make use of more of these fields!
 const MakeAlbumBlurb = ({
 	type,
 	href,
@@ -20,29 +22,10 @@ const MakeAlbumBlurb = ({
 	credit_d,
 	contribution,
 	children,
-}: {
-	type?: string
-	href?: string
-	title?: string
-	thumb?: string
-	blurb?: string
-	year?: string
-	buy?: string
-	project?: string
-	lookup?: string
-	label?: string
-	catalog?: string
-	media?: string
-	country?: string
-	credit_g?: string
-	credit_u?: string
-	credit_d?: string
-	contribution?: string
-	children?: string | React.ReactElement
-}) => {
+}: ReleaseTypeWithChildren, key: number | undefined) => {
 	if (!title) return <></>;
 	return (
-		<>
+		<div key={key || 0}>
 			<FeaturedItem
 				link={href}
 				buy={buy}
@@ -57,7 +40,7 @@ const MakeAlbumBlurb = ({
 					{children}
 				</>
 			</FeaturedItem>
-		</>
+		</div>
 	)
 }
 

@@ -18,7 +18,7 @@ const GigHeader = (props : { section: string | null, f: string, q: string, setRe
 			<Nobr>
 				<label htmlFor="f">Find:</label>
 				<select value={f} onChange={(e) => setF(e.target.value)}>
-					{searchOptions.map((o, key) => <option key={key} value={o.noun}>{o.text}</option>)}
+					{searchOptions.filter(o => o.menu).map((o, key) => <option key={key} value={o.noun}>{o.text}</option>)}
 				</select>
 				<label htmlFor="q">Containing:</label>
 				<input type="text" value={q} onChange={(e) => setQ(e.target.value)} />

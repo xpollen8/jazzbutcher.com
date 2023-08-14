@@ -5,7 +5,6 @@ import Header from '../../components/Header';
 import MakeAlbumBlurb from '../../components/MakeAlbumBlurb';
 import { ReleaseType } from '../../components/Release';
 
-
 const Releases = async () => {
 	const releases = await apiData('releases');
 	return <>

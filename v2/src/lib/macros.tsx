@@ -3,6 +3,7 @@ import moment from 'moment';
 import songMap from './songMap';
 import apiData from './apiData';
 import Tag from '../components/Tag';
+import GigGraph from '../components/GigGraph';
 
 export type RecordType = {
 	[key: string]: any;
@@ -222,11 +223,9 @@ const templateGigs = (results: RecordType, layout: any) => {
 			if (!months[month]) months[month] = [];
 			months[month].push(g);
 		});
-		return <details key={year} className="group cursor-pointer">
+		return <details key={year} className="group cursor-pointer border">
 			<summary className="p-2 font-bold flex items-center group-open:text-primary-red">
-				<Tag>
-					{year} : {gigs.length} gigs
-				</Tag>
+				<GigGraph year={year} gigs={gigs} />
 			</summary>
 			{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(m, months[m]))}
 		</details>

@@ -100,7 +100,7 @@
 	background-color: rgba(248,248,248,0.8);
 	background-position: left top;
 	background-repeat: no-repeat;
-	background-image: url(/assets/quote.png);
+	background-image: url(https://jazzbutcher.com/assets/quote.png);
 }
 .iview_a:before {
 }
@@ -190,24 +190,32 @@ textplus1 {
 .gig_sumo a {
 	color: #fff;
 }
+.gig_sumo a {
+	color: #fff;
+}
 .gig_sumo:before {
 	content: url(https://jazzbutcher.com/images/sumo/sumo_logo_50.jpg);
 }
-.gig_sumo {
-	background-color: #000000;
-	padding: 5px;
-	margin-bottom: 5px;
+.gig_jbc:before {
+	content: url(https://jazzbutcher.com/images/knife_logo_80.png);
 }
 .gig_eg:before {
 	content: url(https://jazzbutcher.com/images/blackeg_logo_50.png);
 }
-.gig_eg {
-	background-color: #eeeeee;
-	padding: 5px;
-	margin-bottom: 5px;
-}
 .gig_wilson:before {
 	content: url(https://jazzbutcher.com/images/wilson_logo_50.png);
+}
+.gig_duo:before {
+	content: url(https://jazzbutcher.com/images/iconDuo.gif);
+}
+.gig_interview:before {
+	content: "Interview";
+}
+.gig_solo:before {
+	content: url(https://jazzbutcher.com/images/iconPat.gif);
+}
+.gig_tribute:before {
+	content: "Memorial gig";
 }
 .gig_wilson {
 	background-color: #ee0000;
@@ -220,12 +228,9 @@ textplus1 {
 	margin-bottom: 5px;
 }
 .gig_nopat:before {
-	content: "Masters Of Budvar (Pat promoted this event; didn't perform)";
+	content: "Masters Of Budvar (Pat promoted this event)";
 }
 .gig_nopat {
-	background-color: #999;
-	padding: 5px;
-	color: #fff;
 }
 .gig_listing_poster {
 	text-align: center;
@@ -320,8 +325,7 @@ dd {
 }
 blockquote {
 	margin: 10px;
-	margin-left: 15px;
-	margin-right: 10px;
+	margin-left: 25px;
 }
 .li-date {
 	font-weight: bold;
@@ -689,4 +693,23 @@ p::first-letter {
 .album_purchase {
 	font-size: 1.2em;
 	margin-top: 10px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 320px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
 }

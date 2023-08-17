@@ -50,7 +50,6 @@ const apiData = async (path: string) => {
 			// add gig data to song records
 			const results = songs?.results?.map((song: RecordType) => {
 				const gig = gigs?.results.find((gig: RecordType) => gig?.datetime === song?.datetime);
-				console.log("GIG", gig);
 				return { ...song, gig }
 			});
 			return { ...songs, results }

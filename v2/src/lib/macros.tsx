@@ -1,9 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import moment from 'moment';
 import songMap from './songMap';
 import apiData from './apiData';
-import Tag from '../components/Tag';
-import GigGraph from '../components/GigGraph';
+import GigGraph, { types } from '../components/GigGraph';
+
+//import * as Accordion from '@radix-ui/react-accordion';
+//import { ChevronDownIcon } from '@radix-ui/react-icons';
 
 export type RecordType = {
 	[key: string]: any;
@@ -21,6 +24,8 @@ const linkInternal = (href: string, text?: string): React.ReactNode => <Link hre
 
 const parseYear = (datetime: string): number => parseInt(datetime.substr(0, 4), 10);
 const parseMonth = (datetime: string): number => parseInt(datetime.substr(5, 2), 10);
+const parseDay = (datetime: string): number => parseInt(datetime.substr(8, 2), 10);
+const parseHour = (datetime: string): number => parseInt(datetime.substr(11, 2), 10);
 
 const padZero = (s: any): string => {
 	const str = String(s);
@@ -28,7 +33,7 @@ const padZero = (s: any): string => {
 }
 
 const monthNames = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', ];
-const num2mon = (num: any): string => monthNames[num] || '';
+const num2mon = (num: any): string => monthNames[num - 1] || '';
 const mon2num = (month: any): number => monthNames.indexOf(String(month)) + 1;
 
 /*
@@ -88,51 +93,68 @@ const gigPage2Datetime = (year: string, href: string): string => gigURI2ts(year,
 
 const Nobr = ({ children }: { children: React.ReactNode }) => <span style={{ whiteSpace: 'nowrap' }}>{children}</span>
 
+const Venue = ({ record }: { record: RecordType }) =>
+<>
+		<hr/>
+		<div dangerouslySetInnerHTML={{__html: record?.venue}} style={{ fontWeight: '900', fontSize: '1.5em' }} />
+		{record?.city}
+		{' '}
+		{record?.state}
+		{' '}
+		{record?.country}
+		{' '}
+		{record?.postalcode}
+</>
+
 const layoutPerformer = (record: RecordType, key: number) => {
 	const { gig } = record;
 	return <div key={key}>
-		<label>Played</label>
-		{record?.performer}
-		<label>Venue</label>
-		{gig?.venue}
-		<label>Date</label>
-		{record?.datetime}
-		<label>Location</label>
-		{gig?.city}
-		{gig?.state}
-		{gig?.country}
-		{gig?.postalcode}
+		<Venue record={...gig} />
+		<label>Musician</label>
+		<div>
+			{record?.performer}
+		</div>
 	</div>
 }
 
 const layoutSongs = (record: RecordType, key: number) => {
 	const { gig } = record;
 	return <div key={key}>
-		<label>Played</label>
-		{record?.song}
-		<label>Venue</label>
-		{gig?.venue}
-		<label>Date</label>
-		{record?.datetime}
-		<label>Location</label>
-		{gig?.city}
-		{gig?.state}
-		{gig?.country}
-		{gig?.postalcode}
+		<Venue record={...gig} />
+		<div>Played:{' '}
+		<i>
+			&quot;{record?.song}&quot;
+		</i>
+		</div>
 	</div>
+}
+
+const extras: string[] = Object.keys(types);
+
+const determineStyles = (gig: RecordType) => {
+	let ret: any;
+	const useG = (gig?.gig) ? gig.gig : gig;
+	//const extras = useG.extra?.split(',');
+	extras.forEach((e: string) => {
+		if (useG?.extra?.includes(e)) {
+			ret = { type: e, ...types[e] };
+		}
+	})
+	if (!ret) return { type: 'jbc', ...types['other'], extras: useG?.extra };
+	return { type: ret.type, background: ret.background, color: ret.color, extras: useG?.extra }
 }
 
 const layoutGigs = (record: RecordType, key: number) => {
 	return <div key={key}>
-		<label>Venue</label>
-		{record?.venue}
-		<label>Date</label>
-		{record?.datetime}
-		<label>Location</label>
-		{record?.city}
-		{record?.state}
-		{record?.country}
-		{record?.postalcode}
+		<Venue record={record} />
+		<div>
+			<i>
+				<div dangerouslySetInnerHTML={{__html: record?.blurb }}  style={{ background: 'lightGray', color: '#333', margin: '2px' }}/>
+			</i>
+			<i>
+			<div dangerouslySetInnerHTML={{__html: record?.alsowith }} style={{ background: 'white', color: '#333', margin: '2px' }}/>
+			</i>
+		</div>
 	</div>
 }
 
@@ -230,17 +252,91 @@ const templateGigs = (results: RecordType, layout: any) => {
 		if (!years[year]) years[year] = [];
 		years[year].push(r)
 	});
-	const makeGigMonth = (month: number, gigs: RecordType[]) => {
-		return <blockquote>
-			{/*<details key={month}>*/}
-			{/*<summary>*/}
-				<Tag>
-					{num2mon(month - 1)} : {gigs.length} gigs
-				</Tag>
-			{/*</summary>*/}
-			{gigs?.map(layout)}
-		{/*</details>*/}
-		</blockquote>
+	let scaling = 0;
+	Object.keys(years).forEach(y => {
+		if (years[y].length > scaling) {
+			scaling = years[y].length
+		}
+	})
+	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => {
+		return (<div key={year+month}>
+			<div  style={{ background: '#ededed', fontSize: '1.5em', paddingTop: '2px', paddingLeft: '5px', marginLeft: '3px', marginRight: '2px', border: '1px solid #666' }}>
+				<span>{num2mon(month)}, {year}</span>
+				{(gigs.length > 1) && <>
+					{': '}
+					<span>{gigs.length} gigs</span>
+				</>}
+			</div>
+			<div className="flex flex-row gap-2 flex-wrap justify-center">
+				{gigs?.sort((a: any, b: any) => parseDay(a.datetime) - parseDay(b.datetime)).map((record: RecordType, key: number) => {
+					const useG = (record?.gig) ? record.gig : record;
+					const styles = determineStyles(record);
+					const datetime = record?.datetime.substring(0, 10).replace(/-/g, '');
+					let poster = (useG?.extra?.includes('poster')) ? `https://jazzbutcher.com/images/${datetime}/${datetime}_poster.jpg` : null;
+					if (!poster) {
+						if  (useG?.extra?.includes('ticket')) {
+							poster = `https://jazzbutcher.com/images/${datetime}/${datetime}_ticket.jpg`;
+						}
+					}
+					if (!poster) {
+						if  (useG?.extra?.includes('setlist')) {
+							poster = `https://jazzbutcher.com/images/${datetime}/${datetime}_setlist.jpg`;
+						}
+					}
+					if (!poster) {
+						if  (useG?.extra?.includes('pix')) {
+							poster = `https://jazzbutcher.com/images/iconPhoto.gif`;
+						}
+					}
+					if (!poster) {
+						if  (useG?.extra?.includes('recording')) {
+							poster = `https://jazzbutcher.com/images/cassettes.gif`;
+						}
+					}
+					if (!poster) {
+						if  (useG?.extra?.includes('video')) {
+							poster = `https://jazzbutcher.com/images/iconVideo.gif`;
+						}
+					}
+					const cls = "gig_" + styles?.type;
+					 return (<div
+					 	key={key}
+						style={{ ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '2px solid #777'}}
+						className={`flex flex-wrap border justify-center card`}
+					 	>
+					<div
+						className={`${cls}`}
+						style={{  width: `320px` }}
+					>
+						<hr/>
+						<div>
+							{num2mon(parseMonth(record?.datetime))} {moment.localeData().ordinal(parseDay(record?.datetime))}
+							{' '}
+							{(parseHour(record?.datetime) > 0) && <>{moment.utc(record?.datetime).format('LT')}</>}
+							{', '}{year}
+						</div>
+						<div>
+								{layout(record, record?.datetime)}
+								<br/>
+						</div>
+							{/*
+							{(useG?.extra?.includes('ticket')) && <li>[ticket stub]</li>}
+							{(useG?.extra?.includes('review')) && <li>[fan reviews]</li>}
+							{(useG?.extra?.includes('pat')) && <li>[pat reviews]</li>}
+							{(useG?.extra?.includes('setlist')) && <li>[setlist]</li>}
+							{(useG?.extra?.includes('songlist')) && <li>[songlist]</li>}
+							{(useG?.extra?.includes('recording')) && <li>[audio recording]</li>}
+							{(useG?.extra?.includes('video')) && <li>[video recording]</li>}
+							{(useG?.extra?.includes('pix')) && <li>[photographs]</li>}
+							*/}
+						</div>
+							{(poster) &&
+								<Image alt='poster' width={320} height={320} src={poster} style={{ height: 'auto' }}/>
+							}
+					</div>)
+				})}
+			</div>
+		</div>)
 	}
 	const makeGigYear = (year: number, gigs: RecordType[]) => {
 		const months: Hashed = {};
@@ -249,17 +345,19 @@ const templateGigs = (results: RecordType, layout: any) => {
 			if (!months[month]) months[month] = [];
 			months[month].push(g);
 		});
-		return <details key={year} className="group cursor-pointer border">
+		return <details key={year} className="group cursor-pointer">
 			<summary className="p-2 font-bold flex items-center group-open:text-primary-red">
-				<GigGraph year={year} gigs={gigs} />
+				<GigGraph scaling={scaling} year={year} gigs={gigs} />
 			</summary>
-			{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(m, months[m]))}
+			<div className="border py-2 bg-white">
+			{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(year, m, months[m]))}
+			</div>
 		</details>
 	}
 	return <>
 		{(results?.results && results?.results[0]?.matchedTerms) &&
 			<>
-				<label>{results?.results?.length} gigs matched Terms</label> <i>&quot;{results?.results[0]?.matchedTerms.join('", "')}&quot;</i><br/>
+				<label>{results?.results?.length} gigs matched {searchOptions.find(so => so.noun === results?.type)?.text}</label> <i>&quot;{results?.results[0]?.matchedTerms.join('", "')}&quot;</i><br/>
 			</>
 		}
 		{Object.keys(years).sort((a: any, b: any) => b - a).map((y: any) => makeGigYear(y, years[y]))}
@@ -277,20 +375,20 @@ const gigSearchOptions = (menu: boolean, noun: string, text: string, route: stri
 });
 
 const searchOptions = [
-	{ ...gigSearchOptions(false, 'archive', 'All Gigs', 'gigs') },
+	{ ...gigSearchOptions(false, 'archive', 'All Gigs', 'gigs'), menu: false },
 	{ ...gigSearchOptions(true, 'venue', 'Venue', 'gigs') },
 	{ ...gigSearchOptions(true, 'city', 'City', 'gigs') },
-	{ ...gigSearchOptions(true, 'anything', 'Anywhere in gig details', 'gigs'),
+	{ ...gigSearchOptions(true, 'anything', 'Anywhere in details', 'gigs'),
 		filter: filterGigsByAnything,
 	},
 	{ ...gigSearchOptions(true, 'song', 'Played this song..', 'gigsongs'),
 		layout: layoutSongs,
 	},
-	{ ...gigSearchOptions(true, 'performer', 'This band member performed..', 'performances'),
+	{ ...gigSearchOptions(true, 'performer', 'Musician performed..', 'performances'),
 		filter: filterGigsByPerformer,
 		layout: layoutPerformer
 	},
-	{ ...gigSearchOptions(true, 'alsowith', 'Shared the bill with JBC..', 'gigs') },
+	{ ...gigSearchOptions(true, 'alsowith', 'Shared the bill..', 'gigs') },
 ]
 
 const doSearch = (type: string, query: QueryType, settor: any, error: any): void => {
@@ -314,7 +412,11 @@ const doSearch = (type: string, query: QueryType, settor: any, error: any): void
 		.then(res => {
 			cache[route] = res;
 			error();
-			settor(filter({ ...res, type }, query))
+			const filtered = filter({ ...res, type }, query);
+			if (!filtered?.results?.length) {
+				error(`Nothing found for "${searchOptions.find(so => so.noun === type)?.text}: ${query}"`);
+			}
+			settor(filtered)
 		})
 		.catch(e => {
 			error(`search by ${type} failed`);

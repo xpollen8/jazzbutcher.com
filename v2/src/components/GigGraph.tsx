@@ -1,7 +1,56 @@
 import { RecordType} from '../lib/macros';
 
-const DoGraph = ({ year, gigs=[], section='main', inpage=false, skip0=false, href }:
+export const types: RecordType = {
+	other: {
+		title: 'JBC',
+		color: '#333',
+		background: 'oldlace',
+	},
+	solo: {
+		title: 'Pat Solo',
+		color: '#eee',
+		background: '#383',
+	},
+	wilson: {
+		title: 'Wilson',
+		color: '#eee',
+		background: '#e00',
+	},
+	sumo: {
+		title: 'Sumosonic',
+		color: '#eee',
+		background: '#020887',
+	},
+	nopat: {
+		title: 'Hosted..',
+		color: '#333',
+		background: '#aae',
+	},
+	eg: {
+		title: 'Black Eg',
+		color: '#000',
+		background: '#ee9',
+	},
+	tribute: {
+		title: 'Tribute',
+		color: '#eee',
+		background: '#000',
+	},
+	duo: {
+		title: 'Pat + Max',
+		color: '#eee',
+		background: '#333',
+	},
+	interview: {
+		title: 'Interview',
+		color: '#000',
+		background: '#a9e',
+	},
+}
+
+const DoGraph = ({ scaling, year, gigs=[], section='main', inpage=false, skip0=false, href }:
 {
+	scaling: number
 	year: number
 	gigs: RecordType[]
 	section?: string
@@ -12,53 +61,23 @@ const DoGraph = ({ year, gigs=[], section='main', inpage=false, skip0=false, hre
 
 	if (!(gigs.length || !skip0)) return <></>;	// no data
 
-	const scaling = 110;	// max # of gigs in a year
-	const types: RecordType = {
-		eg: {
-			title: 'Black Eg',
-			color: '#fff',
-			background: '#666',
-		},
-		wilson: {
-			title: 'Wilson',
-			color: '#fff',
-			background: '#e00',
-		},
-		sumo: {
-			title: 'Sumosonic',
-			color: '#fff',
-			background: '#00e',
-		},
-		nopat: {
-			title: 'Presents',
-			color: '#fff',
-			background: '#555',
-		},
-		tribute: {
-			title: 'Tribute',
-			color: '#fff',
-			background: '#000',
-		},
-		solo: {
-			title: 'Pat Solo',
-			color: '#333',
-			background: '#0d0',
-		},
-		other: {
-			title: 'JBC',
-			color: '#333',
-			background: '#ee0',
-		},
-	}
+	//const totalColar = '#ededed';
+	const totalColar = '#ee0';
 	const extras: string[] = Object.keys(types);
 	const sums: RecordType = {};
 	extras.forEach((e: string) => { sums[e] = 0 });
 
 	let attributed = 0;
 	gigs.forEach((g: RecordType) => {
+		const useG = (g?.gig) ? g.gig : g;
+		//console.log(useG);
 		extras.forEach((e) => {
-			if (g?.extra?.includes(e)) attributed++;
-			sums[e] += g?.extra?.includes(e) || 0;
+			// hack - if !players, turn into 'solo'
+			//if (useG?.extra && !useG?.extra?.includes('players')) {
+				//useG.extra += ',solo';
+			//}
+			if (useG?.extra?.includes(e)) attributed++;
+			sums[e] += useG?.extra?.includes(e) || 0;
 		});
 	});
 	sums['other'] = gigs.length - attributed;	// JBC gigs are default
@@ -68,31 +87,37 @@ const DoGraph = ({ year, gigs=[], section='main', inpage=false, skip0=false, hre
 	})
 
 	const link = (inpage) ? `#${year}_${section}` : ((href) ?  href : `/gigs/${year}`);
-	const calcWidth = (num: number, max: number) => `${(1 + (100 * num / (scaling * 1.2)))}%`;
+	const calcWidth = (num: number, max: number) => `${(1 + (100 * num / (scaling * 1.1)))}%`;
 
-	const Bar = ({ color, background, width, num }: { color: string, background: string, width: string, num: number }) => <div style={{ borderRadius: '10px', background, height: '15px', marginRight: '5px', width, color, textAlign: 'right', paddingRight: '3px', paddingTop: '1px' }} >{num}</div>
+	const Bar = ({ color, background, width, num }: { color: string, background: string, width: string, num: number }) => <div className="drop-shadow-md border" style={{ borderRadius: '10px', background, height: '15px', marginRight: '5px', width, color, textAlign: 'right', paddingRight: '3px', paddingTop: '1px' }} >{num}</div>
+
+	const mainColor = 'whitesmoke';
 
 	return (<>
 		<table style={{
 			width: '100%',
-			backgroundColor: 'rgba(245,245,245,0.7)',
+			backgroundColor: mainColor,
+			margin: '2px',
+			borderRadius: '10px',
 		}}>
+		<tbody>
 			<tr>
-			<td style={{ padding: '3px' }}>
-				<a href={link}>{year}</a>
+			<td style={{ padding: '3px', border: '1px solid #999' }}>
+				<a style={{ fontSize: '2.2em'}} href={link}>{year}</a>
 			</td>
 
 			{(gigs.length) &&
 				<td style={{
 						width: '100%',
 						lineHeight: '15px',
+						border: '1px solid #999'
 					}} >
 
 					{(() => {
 						return (<>
 							{(maxGigs !== gigs.length) &&
 								<div className="flex m-1">
-									<Bar color="#000" background='#dedede' width={calcWidth(gigs.length, maxGigs)} num={gigs.length} />
+									<Bar color="#000" background={totalColar} width={calcWidth(gigs.length, maxGigs)} num={gigs.length} />
 									<b style={{ color: 'blue' }}>Total</b>
 								</div>
 							}
@@ -124,18 +149,19 @@ const DoGraph = ({ year, gigs=[], section='main', inpage=false, skip0=false, hre
 						width: '100%',
 						lineHeight: '15px',
 					}} >
-						<Bar color="#000" background='#dedede' width={calcWidth(0, maxGigs)} num={0} />
+						<Bar color="#000" background={totalColar} width={calcWidth(0, maxGigs)} num={0} />
 					0
 				</td>
 			}
 			</tr>
+		</tbody>
 		</table>
 	</>)
 }
 
-const GigGraph = ({ year, gigs }: { year: number, gigs: RecordType[] }) => {
+const GigGraph = ({ year, gigs, scaling=110 }: { year: number, gigs: RecordType[], scaling: number }) => {
 	if (!gigs) return <></>;
-	return <DoGraph year={year} gigs={gigs} section='main' inpage={false} skip0={false} />
+	return <DoGraph scaling={scaling} year={year} gigs={gigs} section='main' inpage={false} skip0={false} />
 }
 
 export default GigGraph;

@@ -267,8 +267,15 @@ const templateGigs = (results: RecordType, layout: any) => {
 					<span>{gigs.length} gigs</span>
 				</>}
 			</div>
-			<div className="flex flex-row gap-2 flex-wrap justify-center">
-				{gigs?.sort((a: any, b: any) => parseDay(a.datetime) - parseDay(b.datetime)).map((record: RecordType, key: number) => {
+			<div
+				className="justify-center"
+				style={{
+					        display: 'flex',
+									        'flex-wrap': 'wrap'
+					}}
+				>
+				{gigs?.sort((a: any, b: any) => parseDay(a.datetime) - parseDay(b.datetime))
+					.map((record: RecordType, key: number) => {
 					const useG = (record?.gig) ? record.gig : record;
 					const styles = determineStyles(record);
 					const datetime = record?.datetime.substring(0, 10).replace(/-/g, '');
@@ -299,41 +306,37 @@ const templateGigs = (results: RecordType, layout: any) => {
 						}
 					}
 					const cls = "gig_" + styles?.type;
-					 return (<div
-					 	key={key}
-						style={{ ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '2px solid #777'}}
-						className={`flex flex-wrap border justify-center card`}
-					 	>
-					<div
-						className={`${cls}`}
-						style={{  width: `320px` }}
-					>
-						<hr/>
-						<div>
-							{num2mon(parseMonth(record?.datetime))} {moment.localeData().ordinal(parseDay(record?.datetime))}
-							{' '}
-							{(parseHour(record?.datetime) > 0) && <>{moment.utc(record?.datetime).format('LT')}</>}
-							{', '}{year}
-						</div>
-						<div>
+					return (
+						<div key={key}
+								style={{ textAlign: 'center', width: '280px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '2px solid #777'}}
+								className={`${cls}`}
+							>
+							<hr/>
+							<div>
+								{num2mon(parseMonth(record?.datetime))} {moment.localeData().ordinal(parseDay(record?.datetime))}
+								{' '}
+								{(parseHour(record?.datetime) > 0) && <>{moment.utc(record?.datetime).format('LT')}</>}
+								{', '}{year}
+							</div>
+							<div>
 								{layout(record, record?.datetime)}
 								<br/>
+							</div>
+								{/*
+								{(useG?.extra?.includes('ticket')) && <li>[ticket stub]</li>}
+								{(useG?.extra?.includes('review')) && <li>[fan reviews]</li>}
+								{(useG?.extra?.includes('pat')) && <li>[pat reviews]</li>}
+								{(useG?.extra?.includes('setlist')) && <li>[setlist]</li>}
+								{(useG?.extra?.includes('songlist')) && <li>[songlist]</li>}
+								{(useG?.extra?.includes('recording')) && <li>[audio recording]</li>}
+								{(useG?.extra?.includes('video')) && <li>[video recording]</li>}
+								{(useG?.extra?.includes('pix')) && <li>[photographs]</li>}
+								*/}
+						{(poster) &&
+							<Image alt='poster' width={280} height={280} src={poster} style={{ height: 'auto' }}/>
+						}
 						</div>
-							{/*
-							{(useG?.extra?.includes('ticket')) && <li>[ticket stub]</li>}
-							{(useG?.extra?.includes('review')) && <li>[fan reviews]</li>}
-							{(useG?.extra?.includes('pat')) && <li>[pat reviews]</li>}
-							{(useG?.extra?.includes('setlist')) && <li>[setlist]</li>}
-							{(useG?.extra?.includes('songlist')) && <li>[songlist]</li>}
-							{(useG?.extra?.includes('recording')) && <li>[audio recording]</li>}
-							{(useG?.extra?.includes('video')) && <li>[video recording]</li>}
-							{(useG?.extra?.includes('pix')) && <li>[photographs]</li>}
-							*/}
-						</div>
-							{(poster) &&
-								<Image alt='poster' width={320} height={320} src={poster} style={{ height: 'auto' }}/>
-							}
-					</div>)
+					)
 				})}
 			</div>
 		</div>)

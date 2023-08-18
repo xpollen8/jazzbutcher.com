@@ -106,7 +106,7 @@ const gigPage2Datetime = (year: string, href: string): string => gigURI2ts(year,
 const Nobr = ({ children }: { children: React.ReactNode }) => <span style={{ whiteSpace: 'nowrap' }}>{children}</span>
 
 const Venue = ({ record }: { record: RecordType }) =>
-<>
+<div style={{ paddingTop: '4px', paddingBottom: '6px' }}>
 		<div dangerouslySetInnerHTML={{__html: record?.venue}} style={{ fontWeight: '900', fontSize: '1.5em' }} />
 		{record?.city}
 		{' '}
@@ -115,7 +115,7 @@ const Venue = ({ record }: { record: RecordType }) =>
 		{record?.country}
 		{' '}
 		{record?.postalcode}
-</>
+</div>
 
 const layoutPerformer = (record: RecordType, key: number) => {
 	const { gig } = record;
@@ -271,10 +271,10 @@ const templateGigs = (results: RecordType, layout: any) => {
 				</>}
 			</div>
 			<div
-				className="justify-center"
 				style={{
 					display: 'flex',
 					flexWrap: 'wrap',
+					justifyContent: 'center',
 					}}
 				>
 				{gigs?.sort((a: any, b: any) => parseDay(a.datetime) - parseDay(b.datetime))
@@ -301,26 +301,24 @@ const templateGigs = (results: RecordType, layout: any) => {
 
 					return (
 						<div key={key}
-								style={{ textAlign: 'center', width: '320px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '2px solid #777'}}
+								style={{ textAlign: 'center', width: '320px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '1px solid #555'}}
 								className={`${cls} drop-shadow-md`}
 							>
-							<div style={{ background: 'white', color: '#333', borderRadius: '5px' }} className="drop-shadow-md">
+							<div style={{ color: '#333', borderRadius: '5px' }} className="drop-shadow-md bg-white">
 								{num2mon(parseMonth(record?.datetime))} {moment.localeData().ordinal(parseDay(record?.datetime))}
 								{' '}
 								{(parseHour(record?.datetime) > 0) && <>{moment.utc(record?.datetime).format('LT')}</>}
 								{', '}{year}
-			<i>
-				<div dangerouslySetInnerHTML={{__html: record?.blurb }}/>
-			</i>
-			<i>
-			<div dangerouslySetInnerHTML={{__html: record?.alsowith }}/>
-			</i>
+								<b>
+									<div dangerouslySetInnerHTML={{__html: record?.blurb }}/>
+								</b>
+								<i>
+								<div dangerouslySetInnerHTML={{__html: record?.alsowith }}/>
+								</i>
 							</div>
-							<div>
-								{layout(record, record?.datetime)}
-							</div>
+							{layout(record, record?.datetime)}
 							{!!(icons?.length) && (
-								<div className="flex flex-wrap justify-center drop-shadow-md" style={{ background: 'white', padding: '5px', width: '100%' }}>
+								<div className="flex flex-wrap drop-shadow-md bg-white" style={{ padding: '5px', justifyContent: 'center', }}>
 
 									{/*(icons.includes('setlist')) && <IconSetlist height={25} width={25} style={{ padding: '3px' }} />*/}
 									{/*(icons.includes('pat')) && <IconPat height={25} width={25} style={{ padding: '3px' }} />*/}

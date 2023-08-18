@@ -23,12 +23,12 @@ const GigHeader = (props : { section: string | null, f: string | null, q: string
 		<div style={{ padding: '5px', background: '#eee' }}>
 			<Nobr>
 				<label htmlFor="f">Find:</label>
-				<select value={f as string} onChange={(e) => setF(e.target.value)}>
+				<select value={f as string || ''} onChange={(e) => setF(e.target.value)}>
 					<option key={'blank'}>Choose</option>
 					{searchOptions.filter(o => o.menu).map((o, key) => <option key={key} value={o.noun}>{o.text}</option>)}
 				</select>
 				<label htmlFor="q">Containing:</label>
-				<input type="text" value={q as string} onChange={(e) => setQ(e.target.value)} />
+				<input type="text" value={q as string || ''} onChange={(e) => setQ(e.target.value)} />
 				<button type="submit">Search!</button>
 			</Nobr>
 		</div>

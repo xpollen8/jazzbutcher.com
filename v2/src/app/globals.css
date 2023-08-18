@@ -212,7 +212,7 @@ textplus1 {
 	content: "Interview";
 }
 .gig_solo:before {
-	content: url(https://jazzbutcher.com/images/iconPat.gif);
+	content: url(https://jazzbutcher.com/images/pat_sig.gif);
 }
 .gig_tribute:before {
 	content: "Memorial gig";

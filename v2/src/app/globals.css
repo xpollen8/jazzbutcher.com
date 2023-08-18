@@ -420,14 +420,14 @@ img_img {
 }
 @supports (display: grid) {
 }
-@supports (initial-letter: 1.5) or
-(-webkit-initial-letter: 1.5) {
+@supports (initial-letter: 1.5em) or
+(-webkit-initial-letter: 1.5em) {
 p::first-letter {
 	color: rgba(255,190,150,0.9);
 	font-weight: bold;
-	margin-right: 0.5em;
-	-webkit-initial-letter: 1.5;
-	initial-letter: 1.5;
+	margin-right: 0.0em;
+	-webkit-initial-letter: 1.5em;
+	initial-letter: 1.5em;
 }
 }
 

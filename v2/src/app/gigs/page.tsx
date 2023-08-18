@@ -23,8 +23,7 @@ const GigBlurb = () =>
 		<p>
 		These shows, which were almost entirely acoustic also
 		featured the shadowy figure of The Antichrist, who performed
-		as Ramon Destine (with {max}
-		on guitar; it was Ramon who first uttered the words &quot;Take
+		as Ramon Destine (with {max} on guitar; it was Ramon who first uttered the words &quot;Take
 		it, Max... &quot;), the Rockin&apos; Belgians and Terence Walpole,
 		a deranged poet later to find recording fame with {eg}.
 		The shows were at Merton College Oxford; Chez Louis,

@@ -263,13 +263,20 @@ const templateGigs = (results: RecordType, layout: any) => {
 	})
 	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => {
 		return (<div key={year+month}>
-			<div  style={{ textAlign: 'center', background: '#ededed', fontSize: '1.5em', paddingTop: '2px', paddingLeft: '5px', marginLeft: '3px', marginRight: '2px', border: '1px solid #666' }} className="drop-shadow-md">
+		 {/*
+			<details key={year+month}>
+			<summary className="flex">
+		*/}
+			<div style={{ textAlign: 'center', background: '#ededed', fontSize: '1.5em', paddingTop: '2px', paddingLeft: '5px', marginLeft: '3px', marginRight: '2px', border: '1px solid #666', width: '100%' }} className="drop-shadow-md">
 				{num2mon(month)}, {year}
 				{(gigs.length > 1) && <>
 					{': '}
 					{gigs.length} gigs
 				</>}
 			</div>
+		{/*
+			</summary>
+		*/}
 			<div
 				style={{
 					display: 'flex',
@@ -342,6 +349,9 @@ const templateGigs = (results: RecordType, layout: any) => {
 					)
 				})}
 			</div>
+			{/*
+			</details>
+			*/}
 		</div>)
 	}
 	const makeGigYear = (year: number, gigs: RecordType[]) => {

@@ -5,6 +5,17 @@ import songMap from './songMap';
 import apiData from './apiData';
 import GigGraph, { types } from '../components/GigGraph';
 
+import IconSonglist from '../svg/IconSonglist';
+import IconPix from '../svg/IconPix';
+import IconVideo from '../svg/IconVideo';
+import IconRecording from '../svg/IconRecording';
+//import IconSetlist from '../svg/IconSetlist';
+import IconReview from '../svg/IconReview';
+import IconTicket from '../svg/IconTicket';
+import IconPress from '../svg/IconPress';
+import IconInterview from '../svg/IconInterview';
+//import IconPat from '../svg/IconPat';
+
 //import * as Accordion from '@radix-ui/react-accordion';
 //import { ChevronDownIcon } from '@radix-ui/react-icons';
 
@@ -270,8 +281,8 @@ const templateGigs = (results: RecordType, layout: any) => {
 			<div
 				className="justify-center"
 				style={{
-					        display: 'flex',
-									        'flex-wrap': 'wrap'
+					display: 'flex',
+					flexWrap: 'wrap',
 					}}
 				>
 				{gigs?.sort((a: any, b: any) => parseDay(a.datetime) - parseDay(b.datetime))
@@ -290,22 +301,12 @@ const templateGigs = (results: RecordType, layout: any) => {
 							poster = `https://jazzbutcher.com/images/${datetime}/${datetime}_setlist.jpg`;
 						}
 					}
-					if (!poster) {
-						if  (useG?.extra?.includes('pix')) {
-							poster = `https://jazzbutcher.com/images/iconPhoto.gif`;
-						}
-					}
-					if (!poster) {
-						if  (useG?.extra?.includes('recording')) {
-							poster = `https://jazzbutcher.com/images/cassettes.gif`;
-						}
-					}
-					if (!poster) {
-						if  (useG?.extra?.includes('video')) {
-							poster = `https://jazzbutcher.com/images/iconVideo.gif`;
-						}
-					}
 					const cls = "gig_" + styles?.type;
+					const icons = ['ticket', 'interview', 'press', 'review', 'setlist', 'songlist', 'recording', 'video', 'pix',
+						// 'pat', 'setlist', 'self'
+						]
+						.filter((type: string) => useG?.extra?.includes(type));
+
 					return (
 						<div key={key}
 								style={{ textAlign: 'center', width: '280px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '2px solid #777'}}
@@ -320,18 +321,24 @@ const templateGigs = (results: RecordType, layout: any) => {
 							</div>
 							<div>
 								{layout(record, record?.datetime)}
-								<br/>
 							</div>
-								{/*
-								{(useG?.extra?.includes('ticket')) && <li>[ticket stub]</li>}
-								{(useG?.extra?.includes('review')) && <li>[fan reviews]</li>}
-								{(useG?.extra?.includes('pat')) && <li>[pat reviews]</li>}
-								{(useG?.extra?.includes('setlist')) && <li>[setlist]</li>}
-								{(useG?.extra?.includes('songlist')) && <li>[songlist]</li>}
-								{(useG?.extra?.includes('recording')) && <li>[audio recording]</li>}
-								{(useG?.extra?.includes('video')) && <li>[video recording]</li>}
-								{(useG?.extra?.includes('pix')) && <li>[photographs]</li>}
-								*/}
+							{!!(icons?.length) && (
+								<div className="flex flex-wrap justify-center" style={{ background: 'white', padding: '5px', width: '100%' }}>
+
+									{/*(icons.includes('setlist')) && <IconSetlist height={25} width={25} style={{ padding: '2px' }} />*/}
+									{/*(icons.includes('pat')) && <IconPat height={25} width={25} style={{ padding: '2px' }} />*/}
+									{/*(icons.includes('self')) && <IconPatReview height={25} width={25} style={{ padding: '2px' }} />*/}
+
+									{(icons.includes('songlist')) && <IconSonglist height={25} width={25} style={{ padding: '2px' }} />}
+									{(icons.includes('pix')) && <IconPix height={25} width={25} style={{ padding: '2px' }} />}
+									{(icons.includes('video')) && <IconVideo height={25} width={25} style={{ padding: '2px' }} />}
+									{(icons.includes('recording')) && <IconRecording height={25} width={25} style={{ padding: '2px' }} />}
+									{(icons.includes('review')) && <IconReview height={25} width={25} style={{ padding: '2px' }} />}
+									{(icons.includes('ticket')) && <IconTicket height={25} width={25} style={{ padding: '2px' }} />}
+									{(icons.includes('interview')) && <IconInterview height={25} width={25} style={{ padding: '2px' }} />}
+									{(icons.includes('press')) && <IconPress height={25} width={25} style={{ padding: '2px' }} />}
+								</div>
+							)}
 						{(poster) &&
 							<Image alt='poster' width={280} height={280} src={poster} style={{ height: 'auto' }}/>
 						}

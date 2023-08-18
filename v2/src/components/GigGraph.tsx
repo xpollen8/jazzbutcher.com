@@ -9,7 +9,7 @@ export const types: RecordType = {
 	solo: {
 		title: 'Pat Solo',
 		color: '#eee',
-		background: '#383',
+		background: '#888',
 	},
 	wilson: {
 		title: 'Wilson',

@@ -9,6 +9,7 @@ import IconSonglist from '../svg/IconSonglist';
 import IconPix from '../svg/IconPix';
 import IconVideo from '../svg/IconVideo';
 import IconRecording from '../svg/IconRecording';
+import IconPlayers from '../svg/IconPlayers';
 //import IconSetlist from '../svg/IconSetlist';
 import IconReview from '../svg/IconReview';
 import IconTicket from '../svg/IconTicket';
@@ -106,7 +107,6 @@ const Nobr = ({ children }: { children: React.ReactNode }) => <span style={{ whi
 
 const Venue = ({ record }: { record: RecordType }) =>
 <>
-		<hr/>
 		<div dangerouslySetInnerHTML={{__html: record?.venue}} style={{ fontWeight: '900', fontSize: '1.5em' }} />
 		{record?.city}
 		{' '}
@@ -158,14 +158,6 @@ const determineStyles = (gig: RecordType) => {
 const layoutGigs = (record: RecordType, key: number) => {
 	return <div key={key}>
 		<Venue record={record} />
-		<div>
-			<i>
-				<div dangerouslySetInnerHTML={{__html: record?.blurb }}  style={{ background: 'lightGray', color: '#333', margin: '2px' }}/>
-			</i>
-			<i>
-			<div dangerouslySetInnerHTML={{__html: record?.alsowith }} style={{ background: 'white', color: '#333', margin: '2px' }}/>
-			</i>
-		</div>
 	</div>
 }
 
@@ -271,11 +263,11 @@ const templateGigs = (results: RecordType, layout: any) => {
 	})
 	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => {
 		return (<div key={year+month}>
-			<div  style={{ background: '#ededed', fontSize: '1.5em', paddingTop: '2px', paddingLeft: '5px', marginLeft: '3px', marginRight: '2px', border: '1px solid #666' }}>
-				<span>{num2mon(month)}, {year}</span>
+			<div  style={{ textAlign: 'center', background: '#ededed', fontSize: '1.5em', paddingTop: '2px', paddingLeft: '5px', marginLeft: '3px', marginRight: '2px', border: '1px solid #666' }} className="drop-shadow-md">
+				{num2mon(month)}, {year}
 				{(gigs.length > 1) && <>
 					{': '}
-					<span>{gigs.length} gigs</span>
+					{gigs.length} gigs
 				</>}
 			</div>
 			<div
@@ -302,45 +294,51 @@ const templateGigs = (results: RecordType, layout: any) => {
 						}
 					}
 					const cls = "gig_" + styles?.type;
-					const icons = ['ticket', 'interview', 'press', 'review', 'setlist', 'songlist', 'recording', 'video', 'pix',
+					const icons = ['ticket', 'interview', 'players', 'press', 'review', 'setlist', 'songlist', 'recording', 'video', 'pix',
 						// 'pat', 'setlist', 'self'
 						]
 						.filter((type: string) => useG?.extra?.includes(type));
 
 					return (
 						<div key={key}
-								style={{ textAlign: 'center', width: '280px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '2px solid #777'}}
-								className={`${cls}`}
+								style={{ textAlign: 'center', width: '320px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '2px solid #777'}}
+								className={`${cls} drop-shadow-md`}
 							>
-							<hr/>
-							<div>
+							<div style={{ background: 'white', color: '#333', borderRadius: '5px' }} className="drop-shadow-md">
 								{num2mon(parseMonth(record?.datetime))} {moment.localeData().ordinal(parseDay(record?.datetime))}
 								{' '}
 								{(parseHour(record?.datetime) > 0) && <>{moment.utc(record?.datetime).format('LT')}</>}
 								{', '}{year}
+			<i>
+				<div dangerouslySetInnerHTML={{__html: record?.blurb }}/>
+			</i>
+			<i>
+			<div dangerouslySetInnerHTML={{__html: record?.alsowith }}/>
+			</i>
 							</div>
 							<div>
 								{layout(record, record?.datetime)}
 							</div>
 							{!!(icons?.length) && (
-								<div className="flex flex-wrap justify-center" style={{ background: 'white', padding: '5px', width: '100%' }}>
+								<div className="flex flex-wrap justify-center drop-shadow-md" style={{ background: 'white', padding: '5px', width: '100%' }}>
 
-									{/*(icons.includes('setlist')) && <IconSetlist height={25} width={25} style={{ padding: '2px' }} />*/}
-									{/*(icons.includes('pat')) && <IconPat height={25} width={25} style={{ padding: '2px' }} />*/}
-									{/*(icons.includes('self')) && <IconPatReview height={25} width={25} style={{ padding: '2px' }} />*/}
+									{/*(icons.includes('setlist')) && <IconSetlist height={25} width={25} style={{ padding: '3px' }} />*/}
+									{/*(icons.includes('pat')) && <IconPat height={25} width={25} style={{ padding: '3px' }} />*/}
+									{/*(icons.includes('self')) && <IconPatReview height={25} width={25} style={{ padding: '3px' }} />*/}
 
-									{(icons.includes('songlist')) && <IconSonglist height={25} width={25} style={{ padding: '2px' }} />}
-									{(icons.includes('pix')) && <IconPix height={25} width={25} style={{ padding: '2px' }} />}
-									{(icons.includes('video')) && <IconVideo height={25} width={25} style={{ padding: '2px' }} />}
-									{(icons.includes('recording')) && <IconRecording height={25} width={25} style={{ padding: '2px' }} />}
-									{(icons.includes('review')) && <IconReview height={25} width={25} style={{ padding: '2px' }} />}
-									{(icons.includes('ticket')) && <IconTicket height={25} width={25} style={{ padding: '2px' }} />}
-									{(icons.includes('interview')) && <IconInterview height={25} width={25} style={{ padding: '2px' }} />}
-									{(icons.includes('press')) && <IconPress height={25} width={25} style={{ padding: '2px' }} />}
+									{(icons.includes('songlist')) && <IconSonglist height={25} width={25} style={{ padding: '3px' }} />}
+									{(icons.includes('pix')) && <IconPix height={25} width={25} style={{ padding: '3px' }} />}
+									{(icons.includes('video')) && <IconVideo height={25} width={25} style={{ padding: '3px' }} />}
+									{(icons.includes('recording')) && <IconRecording height={25} width={25} style={{ padding: '3px' }} />}
+									{(icons.includes('review')) && <IconReview height={25} width={25} style={{ padding: '3px' }} />}
+									{(icons.includes('ticket')) && <IconTicket height={25} width={25} style={{ padding: '3px' }} />}
+									{(icons.includes('interview')) && <IconInterview height={25} width={25} style={{ padding: '3px' }} />}
+									{(icons.includes('press')) && <IconPress height={25} width={25} style={{ padding: '3px' }} />}
+									{(icons.includes('players')) && <IconPlayers height={25} width={25} style={{ padding: '3px' }} />}
 								</div>
 							)}
 						{(poster) &&
-							<Image alt='poster' width={280} height={280} src={poster} style={{ height: 'auto' }}/>
+							<Image alt='poster' width={320} height={320} src={poster} style={{ height: 'auto' }}/>
 						}
 						</div>
 					)

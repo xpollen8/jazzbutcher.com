@@ -304,7 +304,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 								style={{ textAlign: 'center', width: '320px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '1px solid #555'}}
 								className={`${cls} drop-shadow-md`}
 							>
-							<div style={{ color: '#333', borderRadius: '5px' }} className="drop-shadow-md bg-white">
+							<div style={{ background: 'white', color: '#333', borderRadius: '5px' }} className="drop-shadow-md">
 								{num2mon(parseMonth(record?.datetime))} {moment.localeData().ordinal(parseDay(record?.datetime))}
 								{' '}
 								{(parseHour(record?.datetime) > 0) && <>{moment.utc(record?.datetime).format('LT')}</>}
@@ -318,7 +318,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 							</div>
 							{layout(record, record?.datetime)}
 							{!!(icons?.length) && (
-								<div className="flex flex-wrap drop-shadow-md bg-white" style={{ padding: '5px', justifyContent: 'center', }}>
+								<div className="flex flex-wrap drop-shadow-md" style={{ padding: '5px', justifyContent: 'center', background: 'white'}}>
 
 									{/*(icons.includes('setlist')) && <IconSetlist height={25} width={25} style={{ padding: '3px' }} />*/}
 									{/*(icons.includes('pat')) && <IconPat height={25} width={25} style={{ padding: '3px' }} />*/}
@@ -351,12 +351,12 @@ const templateGigs = (results: RecordType, layout: any) => {
 			if (!months[month]) months[month] = [];
 			months[month].push(g);
 		});
-		return <details key={year} className="group cursor-pointer">
-			<summary className="p-2 font-bold flex items-center group-open:text-primary-red">
+		return <details key={year}>
+			<summary className="flex">
 				<GigGraph scaling={scaling} year={year} gigs={gigs} />
 			</summary>
-			<div className="border py-2 bg-white">
-			{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(year, m, months[m]))}
+			<div style={{ background: 'white', paddingTop: '2px', paddingBottom: '2px', border: '2px solid #ddd' }}>
+				{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(year, m, months[m]))}
 			</div>
 		</details>
 	}

@@ -1,4 +1,4 @@
-import { dateDiff, parseDomain, linkInternal, linkExternal } from '../lib/macros';
+import { dateDiff, parseDomain, linkInternal, linkExternal } from '@/lib/macros';
 
 const	genericWeb = ({ x, g, u, t, s, d }: {
 	x?: string

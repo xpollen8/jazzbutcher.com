@@ -1,3 +1,5 @@
+"use server"
+
 import { RecordType } from './macros';
 
 /*
@@ -20,8 +22,9 @@ const apiDataFromHTDBServer = async (path: string) => {
 		});
 }
 
-const apiDataFromDataServer = async (path: string) => {
-	return await fetch(`/api/v2/${path}`)	// next.config routes "v2" to JBC_DATA_SERVER
+const apiDataFromDataServer = async (path: string, args?: string) => {
+	//console.log("apiDataFromDataServer", { path, args }, `/api/v2/${path}${args}`);
+	return await fetch(`https://data.jazzbutcher.com/api/${path}${args || ''}`)	// next.config routes "v2" to JBC_DATA_SERVER
 		.then(e => e.json())
 		.catch((e) => {
 			console.log("ERR", e);
@@ -29,13 +32,18 @@ const apiDataFromDataServer = async (path: string) => {
 		});
 }
 
-const apiData = async (path: string) => {
+const apiData = async (path: string, args?: string) => {
+	//console.log("apiData", { path, args });
 	switch (path) {
 		case 'gigs':
 		case 'presses':
-			return await apiDataFromDataServer(path);
+		case 'gigmedias':
+		case 'gigtexts':
+		case 'feedback':
+			//console.log("apiData", { path, args });
+			return await apiDataFromDataServer(path, args);
 		case 'performances': {
-			const performances =  await apiDataFromDataServer(path);
+			const performances =  await apiDataFromDataServer(path, args);
 			const gigs = await apiDataFromDataServer('gigs');
 			// add gig data to performance records
 			const results = performances?.results?.map((performance: RecordType) => {
@@ -45,8 +53,8 @@ const apiData = async (path: string) => {
 			return { ...performances, results }
 		}
 		case 'gigsongs': {
-			const songs = await apiDataFromDataServer(path);
-			const gigs = await apiDataFromDataServer('gigs');
+			const songs = await apiDataFromDataServer(path, args);
+			const gigs = await apiDataFromDataServer('gigs', args);
 			// add gig data to song records
 			const results = songs?.results?.map((song: RecordType) => {
 				const gig = gigs?.results.find((gig: RecordType) => gig?.datetime === song?.datetime);

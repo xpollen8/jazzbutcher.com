@@ -1,17 +1,8 @@
-//"use client"	// to enable blurb rotations
-
-import Header from '../components/Header';
-import Tag from '../components/Tag';
-import Release from '../components/Release';
-import FeaturedItem from '../components/FeaturedItem';
-
-const homeBlurb = [
-	`Being brilliant since before you were born`,
-	`Better than a cold bath`,
-	`"Boozer, intellectual and troubadour.."`,
-	`Not eating meat, not playing jazz`,
-	`"What I do is not entertainment"`,
-];
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Tag from '@/components/Tag';
+import Release from '@/components/Release';
+import FeaturedItem from '@/components/FeaturedItem';
 
 const BookSikkorski = () =>
 	<FeaturedItem
@@ -91,19 +82,20 @@ const HomeReleases = () =>
 		<Release lookup='adventurers' />
 </>
 
-const Home = (): React.ReactNode => (
-	<>
-		<Header title={homeBlurb[Math.floor(Math.random() * homeBlurb.length)]} />
-		<div className="container">
-			<div className="right">
-				<Release lookup='never7' />
-				<HomeBooks />
-				<HomeReleases />
-				<RandomLiveVideo />
-				<DateInHistory />
-			</div>
+const Home = (): React.ReactNode =>
+<>
+	<Header section='jbc' />
+		<div>
+		GIGS
 		</div>
-	</>
-)
+		<div>
+			<Release lookup='never7' />
+			<HomeBooks />
+			<HomeReleases />
+			<RandomLiveVideo />
+			<DateInHistory />
+		</div>
+	<Footer />
+</>
 
 export default Home;

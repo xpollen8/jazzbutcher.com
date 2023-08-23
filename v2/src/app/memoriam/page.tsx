@@ -3,12 +3,13 @@ import Image from 'next/image';
 
 import './page.css'
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import { linkInternal } from '../../lib/macros';
 import { Credit } from '../../components/GenericWeb';
 
 const Memoriam = () =>
 <>
-	<Header title="In Memoriam" />
+	<Header section='jbc' title="In Memoriam" />
 	<div className="w-full flex">
 		<div className="text-center w-1/2">
 			<br/> <br/> <br/>
@@ -27,6 +28,7 @@ const Memoriam = () =>
 			<Credit g="Jooles Joyce" />
 		</div>
 	</div>
+	<Footer />
 </>
 
 export default Memoriam;

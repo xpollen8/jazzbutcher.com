@@ -1,4 +1,5 @@
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Tag from '../../components/Tag';
 import MakeSimpleURI from '../../components/MakeSimpleURI';
 
@@ -109,6 +110,7 @@ const ETC = () => <>
 			Pat included - to pen heartfelt memorials.
 			</blockquote>
 		</div>
+		<Footer />
 </>
 
 export default ETC;

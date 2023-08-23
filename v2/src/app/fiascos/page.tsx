@@ -3,8 +3,9 @@ import './page.css'
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Header from '../../components/Header';
-import Tag from '../../components/Tag';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Tag from '@/components/Tag';
 
 const Fiasco = ({ heading, children }: { heading: string, children: React.ReactNode }) =>
 <details>
@@ -1106,6 +1107,7 @@ const Fiascos = (): React.ReactNode =>
 			<Fiasco10 heading="Parting of the ways"/>
 		</div>
 		<Epilogue heading="Epilogue" />
+		<Footer />
 	</>
 
 export default Fiascos;

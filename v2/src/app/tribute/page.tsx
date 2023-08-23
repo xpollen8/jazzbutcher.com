@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import './page.css';
-import { autoLink, linkExternal } from '../../lib/macros';
-import Header from '../../components/Header';
-import LinkAudio from '../../components/LinkAudio';
+import { autoLink, linkExternal } from '@/lib/macros';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import LinkAudio from '@/components/LinkAudio';
 
 const TributeTrack = ({ title, artist, url, dl, children }: {
 	title: string,
@@ -521,6 +522,7 @@ const Tribute = () =>
 		</p>
 		</i>
 	</div>
+	<Footer />
 </>
 
 export default Tribute;

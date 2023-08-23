@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Header from '../../components/Header';
-import Tag from '../../components/Tag';
-import { dateDiff } from '../../lib/macros';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Tag from '@/components/Tag';
+import { dateDiff } from '@/lib/macros';
 
 const madness = [
 	{
@@ -131,7 +132,7 @@ const madness = [
 ]
 
 const Mad = () => <>
-	<Header section='MAD' />
+	<Header section='mad' />
 	<Tag>
 		Contest Invocation
 	</Tag>
@@ -235,6 +236,7 @@ const Mad = () => <>
 			{dateDiff('1999-03-03 19:16:16')}
 		</p>
 	</div>
+	<Footer />
 </>
 
 export default Mad;

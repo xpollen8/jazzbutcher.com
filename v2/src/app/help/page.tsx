@@ -1,7 +1,8 @@
 import './page.css';
-import Header from '../../components/Header';
-import Tag from '../../components/Tag';
-import { linkExternal, linkInternal } from '../../lib/macros';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Tag from '@/components/Tag';
+import { linkExternal, linkInternal } from '@/lib/macros';
 
 const Help = () => <>
 	<Header section='help' />
@@ -140,6 +141,7 @@ const Help = () => <>
 			</li>
 		</ul>
 	</div>
+	<Footer />
 </>
 
 export default Help;

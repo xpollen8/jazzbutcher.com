@@ -1,4 +1,4 @@
-import { autoLink, linkExternal } from '../lib/macros';
+import { autoLink, linkExternal } from '@/lib/macros';
 
 const LinkAudio = ({ title, comment, mp3, url, author, autolink = true }: {
 	title: string

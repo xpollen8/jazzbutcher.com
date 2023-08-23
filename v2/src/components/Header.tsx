@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next'
-import { Nobr, parseYear, ts2URI } from '../lib/macros';
+import { Nobr, parseYear, ts2URI } from '@/lib/macros';
  
 type Props = {
   params: {

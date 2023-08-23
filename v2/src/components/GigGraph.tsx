@@ -1,50 +1,59 @@
-import { RecordType} from '../lib/macros';
+import { RecordType} from '@/lib/macros';
 
 export const types: RecordType = {
 	other: {
 		title: 'JBC',
 		color: '#333',
 		background: 'oldlace',
+		icon: '/images/performance_jbc.png',
 	},
 	solo: {
 		title: 'Pat Solo',
-		color: '#eee',
-		background: '#888',
+		color: '#555',
+		background: '#aba',
+		icon: '/images/performance_solo.png',
 	},
 	wilson: {
 		title: 'Wilson',
 		color: '#eee',
 		background: '#e00',
+		icon: '/images/performance_wilson.png',
 	},
 	sumo: {
 		title: 'Sumosonic',
 		color: '#eee',
-		background: '#020887',
+		background: '#000',
+		icon: '/images/performance_sumo.png',
 	},
 	nopat: {
 		title: 'Hosted..',
-		color: '#333',
-		background: '#aae',
+		color: '#f6eaea',
+		background: '#77c',
+		icon: '/images/performance_nopat.png',
 	},
 	eg: {
 		title: 'Black Eg',
 		color: '#000',
 		background: '#ee9',
+		icon: '/images/performance_eg.png',
 	},
 	tribute: {
 		title: 'Tribute',
 		color: '#eee',
 		background: '#000',
+		icon: '/images/performance_other.png',
 	},
 	duo: {
 		title: 'Pat + Max',
 		color: '#eee',
-		background: '#333',
+		background: '#0258bc',
+		icon: '/images/performance_duo.png',
 	},
 	interview: {
 		title: 'Interview',
 		color: '#000',
-		background: '#a9e',
+		background: '#9e9',
+		icon: '/images/performance_other.png',
 	},
 }
 

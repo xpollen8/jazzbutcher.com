@@ -1,4 +1,4 @@
-import { releaseByLookup } from '../lib/macros';
+import { releaseByLookup } from '@/lib/macros';
 import MakeAlbumBlurb from './MakeAlbumBlurb';
 
 export type ReleaseType =  {
@@ -23,6 +23,6 @@ export type ReleaseType =  {
 
 export type ReleaseTypeWithChildren = ReleaseType & { children?: string | React.ReactElement }
 
-const Release = async ({ lookup }: { lookup: string }) => <MakeAlbumBlurb {...(await releaseByLookup(lookup))} />
+const Release = async ({ lookup }: { lookup: string }, key: number) => <div key={key}><MakeAlbumBlurb {...(await releaseByLookup(lookup))} /></div>
 
 export default Release;

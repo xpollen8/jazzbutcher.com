@@ -3,7 +3,7 @@ import * as Select from '@radix-ui/react-select';
 import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 
 import { useState } from 'react';
-import { doSearch, searchOptions, Nobr } from '../lib/macros';
+import { doSearch, searchOptions, Nobr } from '@/lib/macros';
 
 const GigHeader = (props : { navPrev?: string, navNext?: string, f: string | null, q: string | null, setResults: any, setError: any }) => {
 	const [f, setF] = useState(props?.f);

@@ -1,9 +1,9 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import Tag from '../../components/Tag';
-import MakeSimpleURI from '../../components/MakeSimpleURI';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Tag from '@/components/Tag';
+import MakeSimpleURI from '@/components/MakeSimpleURI';
 
-import { max, del } from '../../lib/defines';
+import { max, del } from '@/lib/defines';
 
 const ETC = () => <>
 	<Header section='Etc' />

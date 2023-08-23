@@ -1,7 +1,7 @@
 import './page.css';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import Tag from '../../components/Tag';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Tag from '@/components/Tag';
 
 const Eulogy = () =>
 <>

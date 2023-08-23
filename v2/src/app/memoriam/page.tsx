@@ -2,10 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import './page.css'
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { linkInternal } from '../../lib/macros';
-import { Credit } from '../../components/GenericWeb';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { linkInternal } from '@/lib/macros';
+import { Credit } from '@/components/GenericWeb';
 
 const Memoriam = () =>
 <>

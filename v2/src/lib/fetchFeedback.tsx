@@ -21,7 +21,7 @@ const pathname2feedbackURI = (pathname: string) => {
 	}
 	const usePath = (fullpath(pathname) ?? pathname + '/index.html').substr(1);
 	const ret = `/exact/${usePath}`;
-	console.log("pathname2feedbackURI", { pathname, usePath, ret });
+	//console.log("pathname2feedbackURI", { pathname, usePath, ret });
 	return ret;
 }
 

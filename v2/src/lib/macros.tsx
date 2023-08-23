@@ -94,7 +94,7 @@ const gigURI2ts = (y: string, u: string): string => {
 			return `${yy}-${padZero(mm)}-${padZero(dd)} ${hh}:${padZero(min)}:00`;
 		}
 	}).filter(f => f)[0] || '';
-	return res;
+	return res.replace('_0000.html', '.html');
 }
 
 /*
@@ -306,6 +306,9 @@ const templateGigs = (results: RecordType, layout: any) => {
 						]
 						.filter((type: string) => useG?.extra?.includes(type));
 
+					if (icons.includes('pix')) {
+						//console.log(record);
+					}
 					return (
 						<div key={key}
 								style={{ textAlign: 'center', width: '320px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '1px solid #555'}}

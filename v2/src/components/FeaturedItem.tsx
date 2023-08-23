@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { parseDomain, linkInternal, linkExternal } from '../lib/macros';
+import { parseDomain, linkInternal, linkExternal } from '@/lib/macros';
 
 const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, children }: {
 	link?: string

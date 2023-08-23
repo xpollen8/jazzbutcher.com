@@ -194,25 +194,25 @@ textplus1 {
 	color: #fff;
 }
 .gig_sumo:before {
-	content: url(https://jazzbutcher.com/images/sumo/sumo_logo_50.jpg);
+	content: url(https://jazzbutcher.com/images/performance_sumo.png);
 }
 .gig_jbc:before {
-	content: url(https://jazzbutcher.com/images/knife_logo_80.png);
+	content: url(https://jazzbutcher.com/images/performance_jbc.png);
 }
 .gig_eg:before {
-	content: url(https://jazzbutcher.com/images/blackeg_logo_50.png);
+	content: url(https://jazzbutcher.com/images/performance_eg.png);
 }
 .gig_wilson:before {
-	content: url(https://jazzbutcher.com/images/wilson_logo_50.png);
+	content: url(https://jazzbutcher.com/images/performance_wilson.png);
 }
 .gig_duo:before {
-	content: url(https://jazzbutcher.com/images/iconDuo.gif);
+	content: url(https://jazzbutcher.com/images/performance_duo.png);
 }
 .gig_interview:before {
 	content: "Interview";
 }
 .gig_solo:before {
-	content: url(https://jazzbutcher.com/images/pat_sig.gif);
+	content: url(https://jazzbutcher.com/images/performance_solo.png);
 }
 .gig_tribute:before {
 	content: "Memorial gig";
@@ -228,7 +228,7 @@ textplus1 {
 	margin-bottom: 5px;
 }
 .gig_nopat:before {
-	content: "Masters Of Budvar (Pat promoted this event)";
+	content: url(https://jazzbutcher.com/images/performance_nopat.png);
 }
 .gig_nopat {
 }

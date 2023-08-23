@@ -17,6 +17,11 @@ const nextConfig = {
 					destination: '/releases',
 					permanent: false,
 				},
+				{
+					source: '/people',
+					destination: '/conspirators',
+					permanent: false,
+				},
 				// remove ".html" from all URLs
 				{
 					source: '/:path*.html',
@@ -55,6 +60,9 @@ const nextConfig = {
 					pathname: '**',
 				},
 			],
+		},
+		experimental: {
+			serverActions: true,
 		},
 }
 

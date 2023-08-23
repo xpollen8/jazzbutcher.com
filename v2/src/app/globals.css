@@ -284,7 +284,7 @@ textplus1 {
 	padding-top: 5px;
 	padding-left: 10px;
 	max-width: 100%;
-	margin-bottom: 5px;
+	margin: 4px;
 	font-weight: bold;
 	font-size: 1.2em;
 }
@@ -420,12 +420,9 @@ img_img {
 }
 @supports (display: grid) {
 }
-@supports (initial-letter: 2) or
-(-webkit-initial-letter: 2) {
+@supports (initial-letter: 1.1) or
+(-webkit-initial-letter: 1.1) {
 p::first-letter {
-	font-weight: bold;
-	-webkit-initial-letter: 2;
-	initial-letter: 2;
 }
 }
 
@@ -710,4 +707,14 @@ p::first-letter {
 .card:active {
   color: #0070f3;
   border-color: #0070f3;
+}
+
+.roundedFull {
+	none: 0;
+	sm: 0.125rem;
+	default: 0.25rem;
+	md: 0.375rem;
+	lg: 0.5rem;
+	full: 9999px;
+	large: 12px;
 }

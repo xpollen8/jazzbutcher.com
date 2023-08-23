@@ -105,8 +105,8 @@ const Section = (props: { section?: string, title?: string, children?: React.Rea
 	const nav = makeBreadcrumb(section, title) ?? [];
 	return (<>
 		{nav.map((obj: any, key: number) => {
-			if (obj?.href) return <div key={key}><Link href={obj.href}>{obj.title}</Link><span className="navsep"/></div>
-			return (<div key={key}>{obj.title}</div>)
+			if (obj?.href) return <span key={key}><Link href={obj.href}>{obj.title}</Link><span className="navsep"/></span>
+			return (<span key={key}>{obj.title}</span>)
 		})}
 		{children}
 	</>)

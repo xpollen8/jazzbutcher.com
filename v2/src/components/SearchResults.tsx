@@ -1,4 +1,4 @@
-import { searchOptions } from '../lib/macros';
+import { searchOptions } from '@/lib/macros';
 
 type ResultRecord = {
 	[key: string]: any

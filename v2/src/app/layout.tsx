@@ -3,8 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import './globals.css'
 
-import Tag from '../components/Tag';
-import MakeSimpleURI from '../components/MakeSimpleURI';
+import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const jbc_memoriam = `/memoriam`;
 const jbc_fishy_mansions = `/fishy_mansions`;
@@ -14,7 +13,7 @@ const jbc_albums = `/releases`;
 const jbc_gigs = `/gigs`;
 const jbc_audio = `/audio`;
 const jbc_video = `/video`;
-const jbc_people = `/people`;
+const jbc_people = `/conspirators`;
 const jbc_press = `/press`;
 const jbc_news = `/news`;
 const jbc_help = `/help`;
@@ -63,10 +62,6 @@ export default function RootLayout({
 					</Link>
 					<div style={{ maxWidth: '100%', textAlign: 'left' }}>
 						{children}
-					  <Tag>
-							Visitor Feedback
-						</Tag>
-						{/*${fetchComments(res=${db}/${res}, face=Titillium-Regular, limit=200)}*/}
 					</div>
 				</div>
 			</body>

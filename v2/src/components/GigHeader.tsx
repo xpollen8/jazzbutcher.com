@@ -88,7 +88,7 @@ const GigHeader = (props : { navPrev?: string, navNext?: string, f: string | nul
 		<div style={{
 			padding: '3px',
 			background: '#eee',
-			margin: '5px',
+			margin: '4px',
 			}}
 			className="flex flex-wrap justify-center space-x-10"
 		>

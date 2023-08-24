@@ -162,7 +162,6 @@ const layoutGigs = (record: RecordType, key: number) => {
 	</div>
 }
 
-// TODO - set up api routes on data.jbc.com for all search types
 const cache: {
   [key: string]: any;
 } = {}
@@ -262,13 +261,10 @@ const templateGigs = (results: RecordType, layout: any) => {
 			scaling = years[y].length
 		}
 	})
-	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => {
-		return (<div key={year+month}>
-		 {/*
-			<details key={year+month}>
-			<summary className="flex">
-		*/}
-			<div style={{ textAlign: 'center', background: '#ededed', fontSize: '1.5em', paddingTop: '2px', paddingLeft: '5px', marginLeft: '3px', marginRight: '2px', border: '1px solid #666', width: '100%' }} className="drop-shadow-md">
+
+	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => (
+		<div key={year+month}>
+			<div style={{ textAlign: 'center', background: '#ededed', fontSize: '1.5em', paddingTop: '2px', paddingLeft: '5px', margin: '5px', border: '1px solid #666'}} className="drop-shadow-md">
 				{num2mon(month)}, {year}
 				{(gigs.length > 1) && <>
 					{': '}
@@ -353,11 +349,9 @@ const templateGigs = (results: RecordType, layout: any) => {
 					)
 				})}
 			</div>
-			{/*
-			</details>
-			*/}
-		</div>)
-	}
+		</div>
+	)
+
 	const makeGigYear = (year: number, gigs: RecordType[]) => {
 		const months: Hashed = {};
 		gigs.forEach(g => {
@@ -369,20 +363,20 @@ const templateGigs = (results: RecordType, layout: any) => {
 			<summary className="flex hover:outline">
 				<GigGraph scaling={scaling} year={year} gigs={gigs} />
 			</summary>
-			<div style={{ background: 'white', paddingTop: '2px', paddingBottom: '2px', border: '2px solid #ddd' }}>
+			<div style={{ background: 'white', padding: '5px', border: '1px solid #ddd', marginTop: '5px' }}>
 				{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(year, m, months[m]))}
 			</div>
 		</details>
 	}
 	const numMatched = results?.results?.length;
-	return <>
+	return <div style={{ margin: '5px' }}>
 		{(results?.results && results?.results[0]?.matchedTerms) &&
 			<div style={{ textAlign: 'center', fontSize: '2em' }}>
-				{numMatched} gig{(numMatched === 1) ? '' : 's'} matched <i style={{ background: '#eee' }}>{searchOptions.find(so => so.noun === results?.type)?.text} &quot;{results?.results[0]?.matchedTerms.join('", "')}&quot;</i><br/>
+				{numMatched} gig{(numMatched === 1) ? '' : 's'} matched <span style={{ background: '#eee' }}>{searchOptions.find(so => so.noun === results?.type)?.text} <i>&quot;{results?.results[0]?.matchedTerms.join('", "')}&quot;</i></span>
 			</div>
 		}
 		{Object.keys(years).sort((a: any, b: any) => b - a).map((y: any) => makeGigYear(y, years[y]))}
-	</>
+	</div>
 }
 
 const gigSearchOptions = (menu: boolean, noun: string, text: string, route: string) =>

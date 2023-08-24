@@ -53,9 +53,8 @@ const ResultNavigator = (props: Props_MakeHeader): React.ReactNode => {
 	)
 }
 
-const Gigs = (props) => {
+const Gigs = (props: any) => {
 	const year = props?.params?.year;
-	const datetime = props?.params?.datetime;
 	const searchParams = useSearchParams();
 	const [f, setF] = useState(searchParams.get('f'));
 	const [q, setQ] = useState(searchParams.get('q'));
@@ -78,17 +77,12 @@ const Gigs = (props) => {
 				});
 				*/
 				setResults({ type: "archive", noun: "archive", ...gigs });
+				gigs.results = gigs?.results?.filter((g: any) => g.datetime.startsWith(year));
+				setFilteredResults({ type: "archive", noun: "archive", ...gigs });
 			}
 		})();
 		return () => {}
 	}, [ f, q ]);
-
-	useEffect(() => {
-		if (results && results.results) {
-			results.results = results?.results?.filter(g => { console.log("C", year, g.datetime); return g.datetime.startsWith(year) });
-			setFilteredResults(results);
-		}
-	}, [ results ]);
 
 	const extraNav = <ResultNavigator navType='Gig' navPrev={{ datetime: '2020-10-11' }} navNext={{ datetime: '2020-10-13' }} />;
 	return (<>

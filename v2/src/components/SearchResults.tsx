@@ -30,7 +30,6 @@ const SearchResults = ({ results }: { results: ResultType }): React.ReactNode =>
 	const template = searchOptions.find(so => so.noun === type)?.template;
 
 	if (template) return template(results, layout);
-	return <>No template for {noun} results yet</>
 }
 
 export default SearchResults;

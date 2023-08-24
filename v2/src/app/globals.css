@@ -276,17 +276,18 @@ textplus1 {
 	display: flex;
 	align-items: center;
 }
-.headingItem {
+.headingItem, .headingItemClickable {
 	color: #222;
 	border-radius: 4px;
 	background-color: #BCF1AF;
-	padding: 3px;
+	margin: 5px;
 	padding-top: 5px;
 	padding-left: 10px;
-	max-width: 100%;
-	margin: 4px;
 	font-weight: bold;
 	font-size: 1.2em;
+}
+.headingItemClickable:hover {
+	outline: 2px solid;
 }
 .homeFeature {
 	color: #222;

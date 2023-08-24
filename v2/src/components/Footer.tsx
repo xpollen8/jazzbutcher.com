@@ -1,13 +1,14 @@
 import Feedback from './Feedback';
 import Tag from './Tag';
  
-const Footer = (): React.ReactNode  => {
-	return (<>
+const Footer = (): React.ReactNode  =>
+<details>
+	<summary className="grid hover:outline">
 		<Tag>
-			Visitor Feedback
+			Comments for this page..
 		</Tag>
-		<Feedback />
-	</>)
-}
+	</summary>
+	<Feedback />
+</details>
 
 export default Footer;

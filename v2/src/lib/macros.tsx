@@ -121,9 +121,10 @@ const layoutPerformer = (record: RecordType, key: number) => {
 	const { gig } = record;
 	return <div key={key}>
 		<Venue record={...gig} />
-		<label>Musician</label>
-		<div>
+		<div style={{ marginBottom: '15px' }}>Musician:{' '}
+		<i>
 			{record?.performer}
+		</i>
 		</div>
 	</div>
 }
@@ -132,7 +133,7 @@ const layoutSongs = (record: RecordType, key: number) => {
 	const { gig } = record;
 	return <div key={key}>
 		<Venue record={...gig} />
-		<div>Played:{' '}
+		<div style={{ marginBottom: '15px' }}>Played:{' '}
 		<i>
 			&quot;{record?.song}&quot;
 		</i>
@@ -312,7 +313,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 					return (
 						<div key={key}
 								style={{ textAlign: 'center', width: '320px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '1px solid #555'}}
-								className={`${cls} drop-shadow-md`}
+								className={`${cls} drop-shadow-md hover:outline`}
 							>
 							<div style={{ background: 'white', color: '#333', borderRadius: '5px' }} className="drop-shadow-md">
 								{num2mon(parseMonth(record?.datetime))} {moment.localeData().ordinal(parseDay(record?.datetime))}
@@ -365,7 +366,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 			months[month].push(g);
 		});
 		return <details key={year}>
-			<summary className="flex">
+			<summary className="flex hover:outline">
 				<GigGraph scaling={scaling} year={year} gigs={gigs} />
 			</summary>
 			<div style={{ background: 'white', paddingTop: '2px', paddingBottom: '2px', border: '2px solid #ddd' }}>
@@ -373,11 +374,12 @@ const templateGigs = (results: RecordType, layout: any) => {
 			</div>
 		</details>
 	}
+	const numMatched = results?.results?.length;
 	return <>
 		{(results?.results && results?.results[0]?.matchedTerms) &&
-			<>
-				<label>{results?.results?.length} gigs matched {searchOptions.find(so => so.noun === results?.type)?.text}</label> <i>&quot;{results?.results[0]?.matchedTerms.join('", "')}&quot;</i><br/>
-			</>
+			<div style={{ textAlign: 'center', fontSize: '2em' }}>
+				{numMatched} gig{(numMatched === 1) ? '' : 's'} matched <i style={{ background: '#eee' }}>{searchOptions.find(so => so.noun === results?.type)?.text} &quot;{results?.results[0]?.matchedTerms.join('", "')}&quot;</i><br/>
+			</div>
 		}
 		{Object.keys(years).sort((a: any, b: any) => b - a).map((y: any) => makeGigYear(y, years[y]))}
 	</>

@@ -155,7 +155,7 @@ const Feedback = () => {
 		getData();
 	}, [pathname]);
 
-	return <><Comments comments={comments} /></>
+	return <Comments comments={comments} />
 
 //	/*
 //		<Page link="/feedback">

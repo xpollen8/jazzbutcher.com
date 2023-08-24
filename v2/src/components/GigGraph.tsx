@@ -106,7 +106,6 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', inpage=false, skip0=f
 		<table style={{
 			width: '100%',
 			backgroundColor: mainColor,
-			margin: '2px',
 			borderRadius: '10px',
 		}}>
 		<tbody>

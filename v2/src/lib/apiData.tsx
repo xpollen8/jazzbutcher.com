@@ -8,7 +8,6 @@ const cache: Hashed = {};
 [ 'gigs', 'presses', 'gigmedias', 'gigtexts', 'feedbacks', 'performances', 'gigsongs', 'releases' ]
 	.forEach(async (e: string) => {
 		cache[e] = require(`/public/data/${e}.json`);
-		console.log(e, Object.keys(cache[e]));
 		/*
 		const filePath = `./public/data/${e}.json`;
 		const jsonData = fs.readFileSync(filePath, 'utf-8');

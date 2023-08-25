@@ -6,10 +6,19 @@ import fs from 'fs';
 const cache: Hashed = {};
 
 [ 'gigs', 'presses', 'gigmedias', 'gigtexts', 'feedbacks', 'performances', 'gigsongs', 'releases' ]
-	.forEach((e: string) => {
+	.forEach(async (e: string) => {
+		cache[e] = require(`/public/data/${e}.json`);
+		console.log(e, Object.keys(cache[e]));
+		/*
 		const filePath = `./public/data/${e}.json`;
 		const jsonData = fs.readFileSync(filePath, 'utf-8');
 		cache[e] = JSON.parse(jsonData);
+		*/
+		/*
+		cache[e] = await fetch(`/data/${e}.json`)
+			.then(e => e.json())
+			.catch(e => { console.log("BOOM", e) })
+			*/
 	});
 
 /*

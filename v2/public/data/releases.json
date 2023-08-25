@@ -1,0 +1,3316 @@
+{
+	"albums": [
+	{
+		"type": "album",
+
+		"href": "/albums/bath.html",
+
+		"title": "Bath Of Bacon",
+
+		"thumb": "/images/bath",
+
+		"blurb": "<div class='annotation'>It's really just the sound of a few mates failing to take seriously the fact they they've got an l.p. to make. It seems VERY early eighties now, but you must remember that there was a LOT of crap for us to clear out of the way in those days.</div>",
+
+		"year": "1983-03-01",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "bacon",
+
+		"label": "Glass",
+
+		"catalog": "GLALP002;GLACD002",
+
+		"media": "LP;CD",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/smith.html",
+
+		"title": "Southern Mark Smith",
+
+		"thumb": "/images/cover_smith_front",
+
+		"blurb": "Recorded in the summer of 1983 in a place called Wellingborough, a small town in the middle of England where even the children are scarey!",
+
+		"year": "1983-09-01",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "smith",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/scandal.html",
+
+		"title": "A Scandal In Bohemia",
+
+		"thumb": "/images/scandal_front",
+
+		"blurb": "<div class='annotation'>The Albatross. A record, I feel, of its time. We were young(ish) and cocky and I think it shows. I still haven't learned to sing on this one, which bugs me too. Still, it was cheap and cheerful, and it helped us to meet an awful lot of people.</div>",
+
+		"year": "1984",
+
+		"buy": "https://www.amazon.com/Scandal-Bohemia-Jazz-Butcher-Conspiracy/dp/B00005NORT",
+
+		"project": 	"",
+
+		"lookup": "scandal",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/marnie.html",
+
+		"title": "Marnie",
+
+		"thumb": "/images/releases/marnie_front",
+
+		"blurb": "An attempt to force a meeting between the steaming tropical jungles of Bangladesh (where the tigers live) and the frozen stepps of Siberia (where the Siberian tigers live).",
+
+		"year": "1984",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "marnie",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/roadrunner.html",
+
+		"title": "Roadrunner",
+
+		"thumb": "/images/releases/roadrunner_front",
+
+		"blurb": 	"",
+
+		"year": "1984",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "runner",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: Oozing Through the Ozone Layer",
+
+		"thumb": "/images/releases/va_pulp",
+
+		"blurb": "<p> This very rare cassette was compiled by Mark Webber and released on his bedroom-based label. The sleeve features artwork by Natty Brooker of Spacemen 3 (who are featured on the cassette) and Spiritualized. The drawing is also titled Oozing Through the Ozone Layer. </p> <div class='source'> <b>Source</b>: <a href='https://pulpwiki.net/Pulp/OozingThroughTheOzoneLayer' target='new'>Pulp Wiki</a> </div><!-- source -->",
+
+		"year": "1987-12-01",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_pulp",
+
+		"label": "Globe of Bulbs",
+
+		"catalog": "LSD5",
+
+		"media": "cassette",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "elephant_man"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_another_spark.html",
+
+		"title": "VA: Another Spark",
+
+		"thumb": "/images/releases/va_anotherspark2",
+
+		"blurb": 	"",
+
+		"year": "1984",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_spark",
+
+		"label": "Another Spark",
+
+		"catalog": "001",
+
+		"media": "cassette",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "inside_heart"
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/sex.html",
+
+		"title": "Sex And Travel",
+
+		"thumb": "/images/releases/sex_front",
+
+		"blurb": "<div class='annotation'>Having exhausted the initial stick of JB songs, I was obliged for the first time to write about my life as it was at the time. I think that now we had started to learn about actually creating recordings rather than just recording the sound of a bunch of pals fooling around. This one I'd actually defend at length if I had to.</div>",
+
+		"year": "1985",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "sex",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "live",
+
+		"href": "/albums/hamburg.html",
+
+		"title": "Hamburg",
+
+		"thumb": "/images/releases/hamburg_front",
+
+		"blurb": "<div class='annotation'>We were all disappointed at the way this came out. The concert was great, but logistics prevented us from making anything much more than a glorified bootleg. Still, live albums are best as souvenirs anyway, so I guess some people regard it fondly. Lots of entertaining photos to look at anyway...</div>",
+
+		"year": "1985-11",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "hamburg",
+
+		"label": "Glass/Rebel",
+
+		"catalog": "SPV081443",
+
+		"media": "LP",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/gift1.html",
+
+		"title": "The Gift Of Music",
+
+		"thumb": "/images/gift",
+
+		"blurb": "This record collects together the various singles that have been issued in England to date under the much-abused name of the Jazz Butcher, to wit: me. I rather like having them all in one place like this - it makes for a nice, noisey muck-it-up sort of disc that is ideal for leisure time at home, on the beach, in you local club.... hell, ANYWHERE!!!",
+
+		"year": "1985",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "gift1",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/men.html",
+
+		"title": "Real Men",
+
+		"thumb": "/images/releases/realmen_front",
+
+		"blurb": "Real Men, the kind who never sit together on buses in case they get their medallions tangled.",
+
+		"year": "1985",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "rmen",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/jungle.html",
+
+		"title": "The Human Jungle",
+
+		"thumb": "/images/junglefront",
+
+		"blurb": "<div class='annotation'>The title comes from a rather noir little TV series from the early Sixties wherein the great Herbert Lom played the extremely sexy and not entirely unbrilliant Dr. Alexander Kordu, a psychiatrist with the handy ability to sort out even the most appalling cases within sixty minutes.</div>",
+
+		"year": "1985",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "human",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/pygmies.html",
+
+		"title": "Christmas With The Pygmies",
+
+		"thumb": "/images/cover_pygmies_front",
+
+		"blurb": 	"",
+
+		"year": "1985",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "swingin",
+
+		"label": "Glass",
+
+		"catalog": "HMMM001",
+
+		"media": "7'",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_abstract_5.html",
+
+		"title": "VA: Abstract #5",
+
+		"thumb": "/images/releases/abstract5",
+
+		"blurb": 	"",
+
+		"year": "1985",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "uptoyou",
+
+		"label": "Sweatbox",
+
+		"catalog": "SAM 005",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "uptoyou"
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/distressed.html",
+
+		"title": "Distressed Gentlefolk",
+
+		"thumb": "/images/gentle",
+
+		"blurb": "<div class='annotation'>We were deeply confused young men when we made this record. Max, Jones and I had all been drinking dangerously for over a year now. Generally, we had it down in concert. In just about every other department, however, we were coming to bits, individually and collectively, and to me this record actually shows the morbid state of things at the time.</div>",
+
+		"year": "1986",
+
+		"buy": "https://www.amazon.com/Distressed-Gentlefolk-Jazz-Butcher-Conspiracy/dp/B00005O14D",
+
+		"project": 	"",
+
+		"lookup": "dist",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/nonsense.html",
+
+		"title": "Bloody Nonsense",
+
+		"thumb": "/images/releases/nonsense_front",
+
+		"blurb": "The Jazz Butcher and his group are not in the business of belonging; they are too old and too obstreperous to conform to some attention-seeking image or commercially viable formula. Rather, they bring their not inconsiderable talents to bear on whatever happens to be in the way at the time. The results can only be described as essential.",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "nons",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/hard.html",
+
+		"title": "Hard",
+
+		"thumb": "/images/hardfront",
+
+		"blurb": "<div class='annotation'>This record is all about love. Don't let the psychic molestation syndrome get to you. This is our loudest record to date, which is something to do with the elephants.</div>",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "hard",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/conspiracy.html",
+
+		"title": "Conspiracy",
+
+		"thumb": "/images/releases/conspiracy_front",
+
+		"blurb": "<div class='annotation'>Ever wondered what Max and I get up to away from the glamour of the modern stage? No, probably not, but let me tell you that there is nothing we like better that to get our teeth into those Big Questions.</div>",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "conspir",
+
+		"label": "Glass",
+
+		"catalog": "GLALP 104",
+
+		"media": "LP",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/angels.html",
+
+		"title": "Angels",
+
+		"thumb": "/images/releases/angels_front",
+
+		"blurb": 	"",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "angel",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/gift2.html",
+
+		"title": "Big Questions (Gift Of Music Volume II)",
+
+		"thumb": "/images/releases/gift2_front",
+
+		"blurb": 	"",
+
+		"year": "1987",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "gift2",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/mayi.html",
+
+		"title": "Speedy Gonzalez",
+
+		"thumb": "/images/releases/mayi_a",
+
+		"blurb": "Chock full of acoustically and lively delivered cover tunes. Essential.",
+
+		"year": "1987",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "may",
+
+		"label": "Glass",
+
+		"catalog": "HMMM002",
+
+		"media": "7'",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/fishcotheque.html",
+
+		"title": "Fishcotheque",
+
+		"thumb": "/images/fishco",
+
+		"blurb": "<div class='annotation'>Having ended up on <a href='http://www.creation-records.com' target='new'>Creation Records</a>, which I took as a bit of a validation, I was keen to get as far away from all those 'w' words that had followed my group around. The sessions were chaotic and funny. What disappoints me is that it came out sounding so SMOOTH and tidy. But I like Fishcotheque; I wish there more records as good as it.</div>",
+
+		"year": "1988",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "fishco",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "EP",
+
+		"href": "/albums/spooky.html",
+
+		"title": "Spooky EP",
+
+		"thumb": "/images/releases/spooky_12_front",
+
+		"blurb": "<div class='annotation'>Thanks for the money. We'll be spending it on weapons and drugs. The first thing that you have to understand about this disc is that it is not an L.P.: it is a single and a radio session nailed together for your amusement.</div>",
+
+		"year": "1988",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "spook",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/planet.html",
+
+		"title": "Big Planet, Scarey Planet",
+
+		"thumb": "/images/planet",
+
+		"blurb": "<div class='annotation'>Early 1989 was, indeed a strange and desperate time after all that triumphalist Tory looting that had been going on. We listened to a lot of hip-hop and soul music at the time, and I think that we considered ourselves sufficiently HARD to take the whole fucker on in an l.p. Possibly with a more 'clued-in' producer and a bit more self-discipline we could have come up with something like what we were looking for.</div>",
+
+		"year": "1989",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "planet",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/invention.html",
+
+		"title": "New Invention",
+
+		"thumb": "/images/invention_front",
+
+		"blurb": "We trust that you will get off on it.",
+
+		"year": "1989",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "newinv",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/cult.html",
+
+		"title": "Cult Of The Basement",
+
+		"thumb": "/images/cult",
+
+		"blurb": "<div class='annotation'>If things seemed weird back in February 1989, when we made this baby, the Weird were going shopping on bikes. In a farmhouse in the dead of winter, in personal circumstances too bizarre and complex to relate, we set about making our 'commercial suicide' album. For the first time, I felt, we had made an album that really sounded like us. This record does have personality. One of my favourites, this.</div>",
+
+		"year": "1990",
+
+		"buy": "https://www.amazon.com/Cult-Basement-Jazz-Butcher/dp/B000S17E8W",
+
+		"project": 	"",
+
+		"lookup": "cult",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/girl.html",
+
+		"title": "Girl-Go",
+
+		"thumb": "/images/girl",
+
+		"blurb": 	"",
+
+		"year": "1990",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "girlgo",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/weloveyou.html",
+
+		"title": "We Love You",
+
+		"thumb": "/images/releases/weloveyou_front",
+
+		"blurb": 	"",
+
+		"year": "1990",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "welove",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/blue.html",
+
+		"title": "Condition Blue",
+
+		"thumb": "/images/releases/blue_front",
+
+		"blurb": "<div class='annotation'>For all the pain and crap from which this record was made, the actual sessions were a gigantic and wonderful party. This was warmly received by The Outside World, less popular among those who counted themselves JBC afficionados. This IS the sound of me having fun, and getting me to do that in those dark days of mid-1991 was no small job.</div>",
+
+		"year": "1991",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "blue",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/closet.html",
+
+		"title": "Edward's Closet",
+
+		"thumb": "/images/closet",
+
+		"blurb": "<div class='annotation'>So you've got a CD player, have you? I've got a headache and an abiding dislike of expensive food crews in dumb baseball hats. I've been in Edward's Closet and he wasnt't in. 'That JBC', they mutter at the bus-stop, 'turned left at the light a Long Time Ago'.</div>",
+
+		"year": "1991",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "closet",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/yo_yo.html",
+
+		"title": "She's A Yo-Yo",
+
+		"thumb": "/images/yo_yo",
+
+		"blurb": 	"",
+
+		"year": "1991",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "yoyo",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/shirley.html",
+
+		"title": "Shirley Maclaine",
+
+		"thumb": "/images/shirley",
+
+		"blurb": 	"",
+
+		"year": "1991",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "shir",
+
+		"label": "Shock",
+
+		"catalog": "SHOCK CD 4010",
+
+		"media": 	"",
+
+		"country": "Australia",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "project=The Black Eg",
+
+		"href": "/albums/blackeg.html",
+
+		"title": "The Black Eg",
+
+		"thumb": "/images/blackeg",
+
+		"blurb": "<a href='/people/von_dammerung.html'>Karel</a>'s two brothers, Otto and Emil, arrived in Vienna, having taken advantage of the new freedoms introduced by the enlightened government of Vaclav Havel, and Karel obtained in a second hand store and ancient sequential circuits drum machine and a primitive sampler. The Black Eg was born.",
+
+		"year": "1991",
+
+		"buy": 	"",
+
+		"project": "<a href='/gigs/search.html?f=extras&amp;q=eg'> <div class='gig_eg'> </div> </a>",
+
+		"lookup": "damn",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "CD;LP",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/unconditional.html",
+
+		"title": "Unconditional",
+
+		"thumb": "/images/uncond",
+
+		"blurb": "One of the better Creation-era compilations. Canadian release.",
+
+		"year": "1992",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "uncond",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/sweet_water.html",
+
+		"title": "Sweet Water",
+
+		"thumb": "/images/sweetwater_front",
+
+		"blurb": 	"",
+
+		"year": "1993-09-13",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "water",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/bus.html",
+
+		"title": "Waiting For The Love Bus",
+
+		"thumb": "/images/lovebus",
+
+		"blurb": "<div class='annotation'>There's a clean, simple sound to a lot of this that <a         href='/albums/blue.html'><b>Condition Blue</b></a> detractors might         appreciate.  I'm ten years older now than when         I made <a href='/albums/bath.html'><b>Bath</b></a>, and right now,         after all that morbid stuff, it only         really feels like about three.  There's rockin' shit and there's a big         ballad or two and some weird little pop songs and a nice family         sing-along about penguins.  I hope you like it.</div>",
+
+		"year": "1993",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "bus",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "live",
+
+		"href": "/albums/western.html",
+
+		"title": "Western Family",
+
+		"thumb": "/images/western",
+
+		"blurb": "<div class='annotation'>For loonie completists only, for sure, though, if you listen through the muck, you'll see that we did our bit.</div>",
+
+		"year": "1993",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "family",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "CD",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_abus_dangereux_21.html",
+
+		"title": "VA: Abus Dangereux #21",
+
+		"thumb": "/images/releases/vodka",
+
+		"blurb": 	"",
+
+		"year": "1994",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_abus_21",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "mini CD",
+
+		"country": "France",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "vodka"
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/sixteen_years.html",
+
+		"title": "Sixteen Years",
+
+		"thumb": "/images/releases/sixteenyears_front",
+
+		"blurb": "At a time when there would appear to be no need for it, here they come again. That Purveyor of some of the most heavenly and enduring pop non-hits you're ever likely to hear has regrouped his gang of aging sociopaths and built himself, in the barns and sheds of Northamptonshire, a band.",
+
+		"year": "1995-03-06",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "16yr",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/illuminate.html",
+
+		"title": "Illuminate",
+
+		"thumb": "/images/releases/illuminate_front",
+
+		"blurb": "<div class='annotation'>1994 live line-up stumbled through a series of tunes and such under Butcher's direction, aided and abetted by a number of the usual suspects; <a href='/people/alex_lee.html'>Alex Lee</a> on guitar, <a href='/people/alex_green.html'>Alex Green</a> on saxes, that sort of thing.</div>",
+
+		"year": "1995-04-03",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "ill",
+
+		"label": "Creation",
+
+		"catalog": "CRECD182",
+
+		"media": "LP;CD",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/drainglass.html",
+
+		"title": "Draining The Glass",
+
+		"thumb": "/images/drainglass",
+
+		"blurb": "Glass Records era compilation.",
+
+		"year": "1996",
+
+		"buy": "https://www.amazon.com/Draining-Glass-Jazz-Butcher-Conspiracy/dp/B000063VDK",
+
+		"project": 	"",
+
+		"lookup": "drainglass",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/violent.html",
+
+		"title": "&amp;iexcl;Excellent! The Violent Years",
+
+		"thumb": "/images/violent",
+
+		"blurb": "<div class='annotation'>Millions of years ago, dinosaurs ruled the Earth. Today the Galileo Space Probe orbits mighty planet Jupiter. The Jazz Butcher Conspiracy first appeared in June 1982 <a href='/gigs/1982/Jun12.html'>in the back room of the Black Lion in Northampton</a>. They finally drank the bar dry in a small town in <a href='/gigs/1996/Aug20.html'>in Mallorca on the 20th August 1996</a></div>",
+
+		"year": "1997",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "violent",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "live",
+
+		"href": "/albums/glorious.html",
+
+		"title": "Glorious And Idiotic",
+
+		"thumb": "/images/glorious_front",
+
+		"blurb": "<div class='annotation'>The last thing anybody expected was a new Jazz Butcher album in the year 2000. But there is one, and it's just the sort of thing that you hardcore JBC listeners are going to enjoy. The record is called 'Glorious and Idiotic' and it is released on 26th January 2000 on ROIR.</div>",
+
+		"year": "2000",
+
+		"buy": "https://www.amazon.com/Glorious-Idiotic-Jazz-Butcher-Conspiracy/dp/B00004GJWC",
+
+		"project": 	"",
+
+		"lookup": "glorious",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/rotten.html",
+
+		"title": "Rotten Soul",
+
+		"thumb": "/images/front_rotten_soul",
+
+		"blurb": "<div class='annotation'>Well, I'm back from America. We had a good old time of it, and by the end of the tour we had worked 5 songs off the new record into our live set. The title of the new waxing, incidentally, is Rotten Soul.</div>",
+
+		"year": "2000",
+
+		"buy": "https://www.amazon.com/Rotten-Soul-Jazz-Butcher-Conspiracy/dp/B00004U689",
+
+		"project": 	"",
+
+		"lookup": "rotten",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/cake_city.html",
+
+		"title": "Cake City",
+
+		"thumb": "/images/cake_front",
+
+		"blurb": "Glass-era compilation.",
+
+		"year": "2001",
+
+		"buy": "https://www.amazon.com/Cake-City-Jazz-Butcher-Conspiracy/dp/B00005NE0Y",
+
+		"project": 	"",
+
+		"lookup": "cake",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/free_lunch.html",
+
+		"title": "The Jazz Butcher's Free Lunch",
+
+		"thumb": "/images/lunch_front",
+
+		"blurb": "<div class='annotation'>'You're not a band. You're a crack team of international restaurant critics' - <span class='person'> <a href='/people/curtis_johnson.html'>Curtis E. Johnson</a> </span><!-- person --></div>",
+
+		"year": "2003-10-20",
+
+		"buy": "https://www.amazon.com/Jazz-Butchers-Lunch-BUTCHER-CONSPIRACY/dp/B0000CESU6",
+
+		"project": 	"",
+
+		"lookup": "lunch",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/last_of_the_gentlemen_adventurers.html",
+
+		"title": "Last of the Gentleman Adventurers",
+
+		"thumb": "/images/adventurers_front",
+
+		"blurb": "Crowd-funded in under 12 hours, recorded on 2' tape, lush and warm..",
+
+		"year": "2012-10-18",
+
+		"buy": "https://thejazzbutcher.bandcamp.com/album/last-of-the-gentleman-adventurers",
+
+		"project": 	"",
+
+		"lookup": "adventurers",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "project=Sumosonic",
+
+		"href": "/albums/sumosonic_this_is_sumo.html",
+
+		"title": "This Is Sumo",
+
+		"thumb": "/images/sumo/sumosonic_this_is_sumo_front",
+
+		"blurb": "This inaugural disk is decidedly un-Butcheresque, with a keyboard-heavy attack of quasi-techno rhythms. Pat was known to dabble in reverb and noise, but the results were moody, melancholy textures, quite unlike the flash of This is Sumo.",
+
+		"year": "1998-01-26",
+
+		"buy": 	"",
+
+		"project": "<a href='/gigs/search.html?f=extras&amp;q=sumo'> <div class='gig_sumo'> </div> </a>",
+
+		"lookup": "thisissumo",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single,project=Sumosonic",
+
+		"href": "/albums/sumosonic_spacemen.html",
+
+		"title": "Come, Friendly Spacemen",
+
+		"thumb": "/images/sumo/sumosonic_spacemen_front",
+
+		"blurb": "The single features: Come, Friendly Spacemen, Monks Of Kung Fu, and Come, Friendly Spacemen (version)",
+
+		"year": "1996-12-05",
+
+		"buy": 	"",
+
+		"project": "<a href='/gigs/search.html?f=extras&amp;q=sumo'> <div class='gig_sumo'> </div> </a>",
+
+		"lookup": "spacemen",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single,project=Sumosonic",
+
+		"href": "/albums/sumosonic_spacemen_12.html",
+
+		"title": "Come, Friendly Spacemen (Club)",
+
+		"thumb": "/images/sumo/sumosonic_spacemen_a",
+
+		"blurb": "<div class='annotation'>There is a limited-edition vinyl 12' single in the clubs, featuring the long version of Come, Friendly Spacemen alongside re-mixed by Tom Withers of drum n bass combo Override and Johnny Octopus of Octopus Records. The 'Sushi' mix is a full on, dark-hearted progressive house tune with an evil bass; the 'Jackson Hole' Mix is an insane collision between stadium pop and drum &amp; bass which has to be heard to be believed. The 12' will also feature Monks Of Kung Fu. Any DJ is urged to get in touch with Creation to get a copy.</div>",
+
+		"year": "1996-12-05",
+
+		"buy": 	"",
+
+		"project": "<a href='/gigs/search.html?f=extras&amp;q=sumo'> <div class='gig_sumo'> </div> </a>",
+
+		"lookup": "spacemen12",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "12'",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "dvd,live,project=Wilson",
+
+		"href": 	"",
+
+		"title": "No Known Predators",
+
+		"thumb": 	"",
+
+		"blurb": "The Wilson DVD, entitled No Known Predators, is to be released on Friday 7th September 2012.",
+
+		"year": "2012-09-07",
+
+		"buy": 	"",
+
+		"project": "<a href='/gigs/search.html?f=extras&amp;q=wilson'> <div class='gig_wilson'> </div> </a>",
+
+		"lookup": 	"",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "EP",
+
+		"href": "/albums/conspiracy12.html",
+
+		"title": "Conspiracy",
+
+		"thumb": "/images/releases/conspiracy_front",
+
+		"blurb": "<div class='annotation'>Ever wondered what Max and I get up to away from the glamour of the modern stage? No, probably not, but let me tell you that there is nothing we like better that to get our teeth into those Big Questions.</div>",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "conspir12",
+
+		"label": "Glass",
+
+		"catalog": "GLAEP 104",
+
+		"media": "LP",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/spooky12.html",
+
+		"title": "Spooky 12'",
+
+		"thumb": "/images/releases/spooky_12_front",
+
+		"blurb": 	"",
+
+		"year": "1988",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "spook12",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "12'",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_shadow_and_substance.html",
+
+		"title": "VA: Shadow and Substance",
+
+		"thumb": "/images/releases/va_shadow1",
+
+		"blurb": "<p> A lovely interpretation of the Jonathan Richman classic which was originally released in 1979 on the <b>Back In Your Life</b> LP by Jonathan Richman And The Modern Lovers. </p>",
+
+		"year": "1984",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_shadow_and_substance",
+
+		"label": "Glass",
+
+		"catalog": "GLALP 007",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": "Perfection As A Hipster",
+
+		"credit_u": "Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de",
+
+		"credit_d": "2000-10-10",
+
+		"contribution": "aff"
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/all_the_saints.html",
+
+		"title": "All The Saints",
+
+		"thumb": "/images/releases/saints_front",
+
+		"blurb": 	"",
+
+		"year": "2015",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "single_saints",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: The BigTime Syndrome",
+
+		"thumb": "/images/releases/va_bigtimesyndrome",
+
+		"blurb": 	"",
+
+		"year": "1987",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_bigtime_syndrome",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "becky"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: What A Nice Way To Turn Seventeen # 2",
+
+		"thumb": "/images/releases/va_seventeen_2_back",
+
+		"blurb": "<p> The Jazz Butcher cover version is unavailable elsewhere. Interestingly enough, the same must be said about the other contributions ... The Rag Dolls were an early and short-living band of Dave Kusworth (Jacobites), <i>Missionary Boy</i> features Nikki Sudden himself on vocals (and is therefore better than the version that appears on <b>The Bible Belt</b> LP with Lizard on vocals) while Sad Go Round was The Swell Maps (!) in disguise. Obviously essential, this highly sought after split single came with a fanzine. </p>",
+
+		"year": "1984",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_seventeen_2",
+
+		"label": "Rather Records",
+
+		"catalog": "GEAR 17",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": "Perfection As A Hipster",
+
+		"credit_u": "Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de",
+
+		"credit_d": "2000-10-10",
+
+		"contribution": "envoy"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_abigail.html",
+
+		"title": "VA: Abigail's Birthday Party",
+
+		"thumb": "/images/releases/va_abigail",
+
+		"blurb": 	"",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_abigail",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "cassette",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: Gunfire &amp; Pianos",
+
+		"thumb": "/images/releases/va_gunfire_front",
+
+		"blurb": "<p> The Jazz Butcher contribution subsequently appeared as an additional track on <span class='release_title'><b><a href='/albums/gift1.html'>The Gift of Music</a></b></span>.  </p>",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_gunfire",
+
+		"label": "Situation Two",
+
+		"catalog": "SITU 17",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": "Perfection As A Hipster",
+
+		"credit_u": "Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de",
+
+		"credit_d": "2000-10-10",
+
+		"contribution": "lost"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: 50,000 Glass Fans Can't Be Wrong",
+
+		"thumb": "/images/releases/va_50k_front",
+
+		"blurb": "<p> Note: Limited edition on clear vinyl. The Jazz Butcher contribution subsequently appeared on the <span class='release_title'><b><a href='/albums/gift2.html'>Big Questions</a></b></span> LP/CD. Having said that, this album also includes an early studio version of &amp;quot;<span class='song'> <i>Leaving It Up To You</i> <span class='song_author'>(John Cale)</span> </span>&amp;quot; by <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span><!-- person --> with <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span><!-- person --> on guitar as well as &amp;quot;Fear (Is A Man's Best Friend)&amp;quot; by <span class='person'> <a href='/people/david_j.html'>David J.</a> </span><!-- person --> and a different version of &amp;quot;2:35&amp;quot; by Spacemen 3 amongst others. </p>",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_50k",
+
+		"label": "Glass",
+
+		"catalog": "GLALP 019",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": "Perfection As A Hipster",
+
+		"credit_u": "Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de",
+
+		"credit_d": "2000-10-10",
+
+		"contribution": "city"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: Doing It For The Kids",
+
+		"thumb": "/images/releases/va_kids_front",
+
+		"blurb": 	"",
+
+		"year": "1988",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_kids",
+
+		"label": "Creation",
+
+		"catalog": "CRELP 037",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "49"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: Pensioners On Ecstasy",
+
+		"thumb": "/images/releases/va_pensioners90",
+
+		"blurb": 	"",
+
+		"year": "1990",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_pensioners90",
+
+		"label": "Creation",
+
+		"catalog": "CRELP 082",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "odd"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: American Pensioners On Ecstasy",
+
+		"thumb": "/images/releases/va_pensioners91",
+
+		"blurb": "<p class='annotation'> Another track from that L.A. babe, <a href='/gigs/search.html?f=performer&amp;q=Deirdre+O%27Donoghue'>Deirdre O'Donoghue</a>'s radio show. </p>",
+
+		"year": "1991",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_pensioners91",
+
+		"label": "Creation",
+
+		"catalog": "CRELP 095",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "go"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: What A Nice Way To Turn Seventeen # 3",
+
+		"thumb": "/images/releases/va_seventeen_3_front",
+
+		"blurb": 	"",
+
+		"year": "1984",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_seventeen_3",
+
+		"label": "Rather Records",
+
+		"catalog": "RATHER 13",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "h2o"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: Songs For Summer",
+
+		"thumb": "/images/releases/va_summer",
+
+		"blurb": "<p class='annotation'> Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects. <br/> <br/> I contributed a track, recorded on Curtis' computer. It's a version of 'Indian Summer' as written by the Beat Happening, and recorded by Luna and Spectrum. </p>",
+
+		"year": "2000",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_summer",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "indian_summer"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: Abus Dangereux #126",
+
+		"thumb": "/images/releases/va_abus_126",
+
+		"blurb": 	"",
+
+		"year": "2016",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_abus_126",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "CD",
+
+		"country": "France",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "animals"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: Northampton Under Glass II",
+
+		"thumb": "/images/releases/va_nh_underglass",
+
+		"blurb": 	"",
+
+		"year": "2013",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_nh_underglass",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "shame_about_you"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: 1000 Songs",
+
+		"thumb": "/images/releases/va_1000songs",
+
+		"blurb": "<p> This release by the German newspaper 'Süddeutsche Zeitung' combines a book and a CD. </p>",
+
+		"year": "1985",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_1000songs",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "CD/booklet",
+
+		"country": "Germany",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "holiday"
+
+	} ,
+	{
+		"type": "single",
+
+		"href": 	"",
+
+		"title": "She's On Drugs",
+
+		"thumb": "/images/releases/shock_drugs_A",
+
+		"blurb": "<p> Double A sided single for the Australian market. </p>",
+
+		"year": "1990",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "shock_drugs",
+
+		"label": "Shock",
+
+		"catalog": "SHOCK 4007",
+
+		"media": "7'",
+
+		"country": "Australia",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/bigtime_jungle_smith.html",
+
+		"title": "The Human Jungle",
+
+		"thumb": "/images/releases/bigtime_jungle_A",
+
+		"blurb": "B/W <span class='song'> <i><a href='/lyrics/smith.html'>Southern Mark Smith</a></i> </span>",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "bigtime_jungle",
+
+		"label": "BigTime",
+
+		"catalog": "BTS 1806",
+
+		"media": "7'",
+
+		"country": "Australia",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: A Big Time Sampler",
+
+		"thumb": "/images/releases/bigtime_sampler",
+
+		"blurb": "<p> Also includes tracks from Love Tractor, The Pastels, and The Lucy Show </p>",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "bigtime_sampler",
+
+		"label": "BigTime",
+
+		"catalog": "BIGT 1",
+
+		"media": "7'",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "bigbad"
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/bigtime_angels_kitchen.html",
+
+		"title": "Angels",
+
+		"thumb": "/images/releases/bigtime_angels_A",
+
+		"blurb": "B/W <span class='song'> <i><a href='/lyrics/still_in_the_kitchen.html'>Still In The Kitchen</a></i> </span>",
+
+		"year": "1986",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "bigtime_angels",
+
+		"label": "BigTime",
+
+		"catalog": "BTS 11",
+
+		"media": "7'",
+
+		"country": "Australia",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/fire_wasted.html",
+
+		"title": "The Wasted Years",
+
+		"thumb": "/images/releases/fire_wasted",
+
+		"blurb": "<p> Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’. <p>",
+
+		"year": "2017-10-20",
+
+		"buy": "https://thejazzbutcher.bandcamp.com/album/the-wasted-years",
+
+		"project": 	"",
+
+		"lookup": "fire_wasted",
+
+		"label": "Fire Records",
+
+		"catalog": 	"",
+
+		"media": "4xCD",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/spooky7.html",
+
+		"title": "Spooky 7'",
+
+		"thumb": "/images/releases/spooky7_A",
+
+		"blurb": "B/W <span class='song'> <i><a href='/lyrics/blame.html'>Blame</a></i> </span>",
+
+		"year": "1988",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "spook7",
+
+		"label": "Creation",
+
+		"catalog": "CRE 059",
+
+		"media": "7'",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: Creation Unreleased",
+
+		"thumb": "/images/releases/va_creation_unreleased",
+
+		"blurb": "<p> Note: The back cover mistakenly lists the Jazz Butcher track as &amp;quot;President Gang&amp;quot;. The information printed on the CD itself is correct. This CD was a &amp;quot;promotional only&amp;quot; issue.",
+
+		"year": "1995",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_creation_unreleased",
+
+		"label": "Creation",
+
+		"catalog": "SAMP 2821",
+
+		"media": "CD",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "chang"
+
+	} ,
+	{
+		"type": "live",
+
+		"href": "/albums/brave.html",
+
+		"title": "Brave New Waves Session",
+
+		"thumb": "/images/releases/brave",
+
+		"blurb": "<p> The Jazz Butcher’s Brave New Waves session was recorded on <a href='/gigs/1988/Jun5.html'>June 5th, 1988</a> in CBC Studio 13 in Montreal.  The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman. </p>",
+
+		"year": "2018-01-19",
+
+		"buy": "http://www.stormingthebase.com/the-jazz-butcher-brave-new-waves-session-blue-vinyl/",
+
+		"project": 	"",
+
+		"lookup": "brave",
+
+		"label": "Artoffact Records",
+
+		"catalog": "AOF311B",
+
+		"media": "LP,CD",
+
+		"country": "CA",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_canyoutalktothedude_1.html",
+
+		"title": "VA: Can You Talk To The Dude #1",
+
+		"thumb": "/images/releases/va_canyoutalktothedude_1_front",
+
+		"blurb": "<p> Tribute To Jonathan Richman &amp; The Modern Lovers Volume 2 </p>",
+
+		"year": "1994",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_canyoutalktothedude_1",
+
+		"label": "Ali&amp;eacute;nor Records",
+
+		"catalog": "Alien 1",
+
+		"media": "CD",
+
+		"country": "FR",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "<i>The U.F.O. Man</i>"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_canyoutalktothedude_2.html",
+
+		"title": "VA: Can You Talk To The Dude #2",
+
+		"thumb": "/images/releases/va_canyoutalktothedude_2_front",
+
+		"blurb": "<p> Tribute To Jonathan Richman &amp; The Modern Lovers Volume 2 </p>",
+
+		"year": "1996",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_canyoutalktothedude_2",
+
+		"label": "Ali&amp;eacute;nor Records",
+
+		"catalog": "Alien 2",
+
+		"media": "CD",
+
+		"country": "FR",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "<i>The U.F.O. Man</i>"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_nationofsaints.html",
+
+		"title": "VA: Nation Of Saints",
+
+		"thumb": "/images/releases/va_nationofsaints_front",
+
+		"blurb": "<p> 50 Years Of Northampton Music </p>",
+
+		"year": "2009-11",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_nationofsaints",
+
+		"label": "Dodgem Logic",
+
+		"catalog": "DODGEMLOGIC001C",
+
+		"media": "CD",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "drugs"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_creation_price.html",
+
+		"title": "VA: Creation Price",
+
+		"thumb": "/images/releases/va_creation_price_front",
+
+		"blurb": "<p> The Creation Records Promotion Sampler, Distribution Sony Music </p>",
+
+		"year": "1996",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_creation_price",
+
+		"label": "Creation/Sony",
+
+		"catalog": "COLPROCD 3411 2",
+
+		"media": "CD",
+
+		"country": "DE",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "girls"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_unautomne93.html",
+
+		"title": "VA: Un Automne '93",
+
+		"thumb": "/images/releases/va_unautomne93_front",
+
+		"blurb": "<p> French Various Artists Compilation. </p>",
+
+		"year": "1993",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_unautomne93",
+
+		"label": "Virgin",
+
+		"catalog": "Visa 3334",
+
+		"media": "CD",
+
+		"country": "FR",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "davis"
+
+	} ,
+	{
+		"type": "various,project=Wilson",
+
+		"href": "/albums/va_wilson_heyday.html",
+
+		"title": "VA: Straight Through The Sound Barrier",
+
+		"thumb": "/images/releases/va_wilson_heyday_front",
+
+		"blurb": "<p> A Sampler CD </p>",
+
+		"year": "2004",
+
+		"buy": 	"",
+
+		"project": "<a href='/gigs/search.html?f=extras&amp;q=wilson'> <div class='gig_wilson'> </div> </a>",
+
+		"lookup": "va_wilson_heyday",
+
+		"label": "Heyday Records",
+
+		"catalog": 	"",
+
+		"media": "CD",
+
+		"country": "US",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "wilson_quality_people"
+
+	} ,
+	{
+		"type": "project=Wilson",
+
+		"href": "/albums/wilson_demo_2005.html",
+
+		"title": "November, 2005 Demo",
+
+		"thumb": "/images/wilson/200511_wilson_cd",
+
+		"blurb": "<p> Two song demo. </p>",
+
+		"year": "2005-11",
+
+		"buy": 	"",
+
+		"project": "<a href='/gigs/search.html?f=extras&amp;q=wilson'> <div class='gig_wilson'> </div> </a>",
+
+		"lookup": "wilson_demo_2005",
+
+		"label": "Premier Studios",
+
+		"catalog": 	"",
+
+		"media": "CDR",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "project=Wilson",
+
+		"href": "/albums/wilson_demo_2003.html",
+
+		"title": "April, 2003 Demo",
+
+		"thumb": "/images/wilson/200304_wilson_front",
+
+		"blurb": "<p> Two song demo. </p>",
+
+		"year": "2003-04",
+
+		"buy": 	"",
+
+		"project": "<a href='/gigs/search.html?f=extras&amp;q=wilson'> <div class='gig_wilson'> </div> </a>",
+
+		"lookup": "wilson_demo_2003",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "CDR",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "project=Wilson",
+
+		"href": "/albums/wilson_demo_2002.html",
+
+		"title": "2002 Demo",
+
+		"thumb": "/images/wilson/2002_wilson_front",
+
+		"blurb": "<p> Six song demo. </p>",
+
+		"year": "2002",
+
+		"buy": 	"",
+
+		"project": "<a href='/gigs/search.html?f=extras&amp;q=wilson'> <div class='gig_wilson'> </div> </a>",
+
+		"lookup": "wilson_demo_2002",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "CDR",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/fire_violent.html",
+
+		"title": "The Violent Years",
+
+		"thumb": "/images/releases/fire_violent",
+
+		"blurb": "<p> Expansive book-styled package of the first four albums from The Jazz Butcher’s early Creation Records’ years – 1988-1991. </p> <p> Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, ‘Cult Of The Basement’ and ‘Condition Blue”.  <p>",
+
+		"year": "2018-03-09",
+
+		"buy": "https://thejazzbutcher.bandcamp.com/album/the-violent-years",
+
+		"project": 	"",
+
+		"lookup": "fire_violent",
+
+		"label": "Fire Records",
+
+		"catalog": 	"",
+
+		"media": "4xCD",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "album",
+
+		"href": "/albums/highest_in_the_land.html",
+
+		"title": "The Highest in the Land",
+
+		"thumb": "/images/releases/highest",
+
+		"blurb": "It's not often that an artist gets to do a Bowie by consciously carving their personal epitaph into the grooves of their final LP. The Highest in the Land is that rarity of an album, and it could not have been made by a more brilliantly poetic and fearlessly sarcastic writer than Pat Fish, also known as The Jazz Butcher.",
+
+		"year": "2022-02-04",
+
+		"buy": "https://www.tapeterecords.de/artists/the-jazz-butcher/",
+
+		"project": 	"",
+
+		"lookup": "highest",
+
+		"label": "Tapete Records",
+
+		"catalog": 	"",
+
+		"media": "CD/LP/digital",
+
+		"country": "DE",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "compilation",
+
+		"href": "/albums/fire_cholmondley.html",
+
+		"title": "Dr Cholmondley Repents: A​-​sides, B​-​Sides and Seasides",
+
+		"thumb": "/images/releases/fire_cholmondley",
+
+		"blurb": "<p> Four CD box set gathering A-sides, the would-be hits along with B-sides, tangential 12-inch tracks (the C-sides), and an excellent session for Los Angeles radio station KCRW from 1989. </p> <p> Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘Girl Go’, ‘The Human Jungle’, ‘16 Years’ plus a host of truly eclectic Butcher tunes from his early Glass recordings through his time at Creation.  </p>",
+
+		"year": "2021-11-12",
+
+		"buy": "https://thejazzbutcher.bandcamp.com/album/dr-cholmondley-repents-a-sides-b-sides-and-seasides",
+
+		"project": 	"",
+
+		"lookup": "fire_cholmondley",
+
+		"label": "Fire Records",
+
+		"catalog": 	"",
+
+		"media": "4xCD",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "CDR",
+
+		"href": "/albums/cdr_guestpass2000.html",
+
+		"title": "Guest Pass Disc",
+
+		"thumb": 	"",
+
+		"blurb": "<p> This was a limited edition CD made available to help fund the JBC tour across the US. </p> <p> Along with the CD you got an autographed photo and tickets to the JBC show of your choice. </p> <p> Although it is a 'home made' CDR, it was officially released by the JBC and would be pre-paid for pick-up at the show. </p>",
+
+		"year": "2000-01-01",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "cdr_guestpass2000",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "CDR",
+
+		"country": "UK",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: Now That's What I Call Northampton Vol #1",
+
+		"thumb": "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/2010_NowThatsWhatICallNorthamptonVol1",
+
+		"blurb": "<p>   <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/lyrics/mercy.html'>Mercy</a></i> </span> </i> </span> <span class='smalltext'> <i>Recorded by <span class='person'> <a href='/people/curtis_johnson.html'>Curtis E. Johnson</a> </span><!-- person --></i> </span> <br/> <audio controls='controls' title=' Mercy ' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>   <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/lyrics/wildlife.html'>Wildlife</a></i> </span> </i> </span> <span class='smalltext'> <i>Recorded by <span class='person'> <a href='/people/curtis_johnson.html'>Curtis E. Johnson</a> </span><!-- person --></i> </span> <br/> <audio controls='controls' title=' Wildlife ' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/WIldlife.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>   </p>",
+
+		"year": "2010",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_nm_vol1",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "CD",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": "[ mercy, wildlife ]"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": 	"",
+
+		"title": "VA: Now That's What I Call Northampton Vol #1",
+
+		"thumb": "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum",
+
+		"blurb": "<p> Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers. </p> <p> In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album. </p> <p>   <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>Recorded in December 2007 at Greenway Studio by Andy Clarke</i> </span> <br/> <audio controls='controls' title=' After Hours (Velvet Underground) ' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> </p>",
+
+		"year": "2007-12",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_andy_2007",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "CD",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/never_give_up.html",
+
+		"title": "Never Give Up",
+
+		"thumb": "/images/releases/never7_A",
+
+		"blurb": "In loving memory. Patrick Huntrods (AKA Pat Fish). (20 December 1957 - 5 October 2021)",
+
+		"year": "2022",
+
+		"buy": "https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7",
+
+		"project": 	"",
+
+		"lookup": "never7",
+
+		"label": "Glass Modern",
+
+		"catalog": "GLAMS004",
+
+		"media": "7'",
+
+		"country": 	"",
+
+		"credit_g": 	"",
+
+		"credit_u": 	"",
+
+		"credit_d": 	"",
+
+		"contribution": 	""
+
+	} 
+	]
+}

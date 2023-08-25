@@ -2,10 +2,17 @@ import * as Dialog from '@radix-ui/react-dialog';
 import * as Select from '@radix-ui/react-select';
 import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 
-import { useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import { useState, useEffect, useTransition } from 'react';
 import { doSearch, searchOptions, Nobr } from '@/lib/macros';
 
-const GigHeader = (props : { navPrev?: string, navNext?: string, f: string | null, q: string | null, setResults: any, setError: any }) => {
+const SearchDialog = (props : { year?: number, navPrev?: string, navNext?: string, f: string | null, q: string | null, setResults: any, setError: any }) => {
+	const router = useRouter();
+	const pathname = usePathname();
+
+	const [isPending, startTransition] = useTransition();
+
+	const year = props?.year;
 	const [f, setF] = useState(props?.f);
 	const [q, setQ] = useState(props?.q);
 
@@ -73,40 +80,75 @@ const GigHeader = (props : { navPrev?: string, navNext?: string, f: string | nul
 //		</Dialog.Root>
 //	);
 //*/
+	const setNavigation = (f: string | null, q: string | null) => {
+		const searchParams = new URLSearchParams();
+		if (f) searchParams.set('f', f);
+		if (q) searchParams.set('q', q);
+		startTransition(() => {
+			router.replace(`${pathname}?${searchParams.toString()}`)
+		});
+	}
+	const debounce = (func: any) => {
+		const timeout = 500;
+		let timer: any;
+		return (...args: any) => {
+			if (timer) {
+				clearTimeout(timer);
+			}
+			timer = setTimeout(() => {
+				func.apply(this, args);
+			}, timeout);
+		}
+	}
 	return (props?.setResults &&
 		<form onSubmit={async (ev) => {
 			ev.preventDefault();
 			props?.setError();
 			if (f && q) {
-				props?.setResults();
-				doSearch(f, q, props?.setResults, props?.setError);
+				///props?.setResults();
+				///doSearch(f, q, props?.setResults, props?.setError);
+				setNavigation(f, q);
 			} else {
-				props?.setError("Please choose a type and a search value");
+				//props?.setError("Please choose a type and a search value");
+				doSearch({ year }, props?.setResults, props?.setError);
+				///props?.setResults();
 			}
 		}}
 		>
 		<div style={{
 			padding: '3px',
 			background: '#eee',
-			margin: '4px',
+			margin: '5px',
 			}}
-			className="flex flex-wrap justify-center space-x-10"
+			className="flex flex-wrap justify-center space-x-5"
 		>
-				<div className="p-1">
-					<select value={f as string || ''} onChange={(e) => setF(e.target.value)}>
-						<option key={'blank'} className="p-1">Find..</option>
+				<div className="m-1">
+					<select className="p-2" value={f as string || ''} onChange={(e) => {
+						setF(e.target.value)
+						if (e.target.value && q) debounce(setNavigation(e.target.value, q));
+						}}>
+						<option key={'blank'} className="-1">Find..</option>
 						{searchOptions.filter(o => o.menu).map((o, key) => <option key={key} value={o.noun}>{o.text}</option>)}
 					</select>
 				</div>
 				<div className="p-1">
-					<input type="text" value={q as string || ''} placeholder="contains.." onChange={(e) => setQ(e.target.value)} className="p-1" />
+					<input type="text" value={q as string || ''} placeholder="contains.." onChange={(e) => {
+						setQ(e.target.value)
+						if (f && e.target.value) debounce(setNavigation(f, e.target.value));
+					}} className="p-1" />
 				</div>
-				<div className="w-1/4">
-					<button type="submit" className="rounded-full border bg-slate-300 hover:border-black hover:bg-slate-100 w-1/2">Go!</button>
-				</div>
+				<span className="w-1/4">
+					<button type="submit" className="rounded-full m-2 border bg-slate-300 hover:border-black hover:bg-slate-100 w-1/4">Go!</button>
+					{(f && q) && <button onClick={(ev) => {
+						ev.preventDefault();
+						setF(null);
+						setQ(null);
+						setNavigation(null, null);
+						}} type="submit" className="rounded-full m-2 border bg-slate-300 hover:border-black hover:bg-slate-100 w-1/4">Clear!</button>}
+				</span>
 		</div>
 		</form>
 	)
 }
 
-export default GigHeader;
+export default SearchDialog;

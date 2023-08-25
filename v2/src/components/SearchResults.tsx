@@ -13,23 +13,18 @@ type ResultType = {
 	searchTerms?: string[]
 }
 
-const layoutNone = (results: ResultType, index: number) => {
-	const { noun, numResults, key } = results;
+const SearchResults = ({ results, banner }: { results: ResultType, banner?: any }): React.ReactNode => {
+	const { type } = results;
+	const options = searchOptions.find(so => so.noun === type);
+	const layout = options?.layout;
+	const template = options?.template;
+
 	return (
 		<>
-		<h1>
-		(no layout implemented)
-		</h1>
+			{(banner) && banner(results)}
+			{(template) && template(results, layout)}
 		</>
 	)
-}
-
-const SearchResults = ({ results }: { results: ResultType }): React.ReactNode => {
-	const { type, noun, numResults, key, searchTerms } = results;
-	const layout = searchOptions.find(so => so.noun === type)?.layout || layoutNone;
-	const template = searchOptions.find(so => so.noun === type)?.template;
-
-	if (template) return template(results, layout);
 }
 
 export default SearchResults;

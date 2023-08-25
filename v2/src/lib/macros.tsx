@@ -248,6 +248,22 @@ const filterGigsByAnything = (res: RecordType, query: QueryType) => {
 	return filterBy(res, query, (searchTarget));
 }
 
+const bannerGigs = (results: Hashed, searchYear?: number) => {
+		if (!results) return <></>;
+		const type = searchOptions.find(so => so.noun === results?.type)?.text;
+		const numMatched = results?.numResults ?? 0;
+		const bannerYear = (searchYear) ? `In ${searchYear}, ` : '';
+		const bannerTerms = results?.searchTerms;
+		const bannerClass = (numMatched) ? 'search found' : 'search notfound';
+		const bannerText = `${bannerYear}${numMatched} gig${(numMatched === 1) ? '' : 's'} matched`;
+
+		return (
+			<div style={{ textAlign: 'center', fontSize: '2em' }}>
+				{bannerText} {(bannerTerms) && <span className={bannerClass}>{bannerTerms}</span>}
+			</div>
+		)
+}
+
 const templateGigs = (results: RecordType, layout: any) => {
 	const years: Hashed = {};
 	results?.results?.forEach((r: RecordType) => {
@@ -303,9 +319,6 @@ const templateGigs = (results: RecordType, layout: any) => {
 						]
 						.filter((type: string) => useG?.extra?.includes(type));
 
-					if (icons.includes('pix')) {
-						//console.log(record);
-					}
 					return (
 						<div key={key}
 								style={{ textAlign: 'center', width: '320px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '1px solid #555'}}
@@ -368,13 +381,9 @@ const templateGigs = (results: RecordType, layout: any) => {
 			</div>
 		</details>
 	}
+
 	const numMatched = results?.results?.length;
 	return <div style={{ margin: '5px' }}>
-		{(results?.results && results?.results[0]?.matchedTerms) &&
-			<div style={{ textAlign: 'center', fontSize: '2em' }}>
-				{numMatched} gig{(numMatched === 1) ? '' : 's'} matched <span style={{ background: '#eee' }}>{searchOptions.find(so => so.noun === results?.type)?.text} <i>&quot;{results?.results[0]?.matchedTerms.join('", "')}&quot;</i></span>
-			</div>
-		}
 		{Object.keys(years).sort((a: any, b: any) => b - a).map((y: any) => makeGigYear(y, years[y]))}
 	</div>
 }
@@ -406,7 +415,10 @@ const searchOptions = [
 	{ ...gigSearchOptions(true, 'alsowith', 'Shared the bill..', 'gigs') },
 ]
 
-const doSearch = (type: string, query: QueryType, settor: any, error: any): void => {
+const doSearch = (options: any, settor: any, error: any): void => {
+	const year = options.year;
+	const type = options?.f;
+	const query = options?.q;
 	if (!type) return;
 	const option = searchOptions.find(o => o.noun === type);
 	const route = option?.route;
@@ -521,4 +533,4 @@ const releaseByLookup = async (lookup: string) => {
 	if (releaseByHREF) return releaseByHREF;
 }
 
-export { releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear }
+export { bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear, parseDay, parseMonth }

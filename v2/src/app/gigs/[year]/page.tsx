@@ -1,72 +1,33 @@
 "use client"
 
-import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation'
-import { pat, max, owen, eg, at } from '@/lib/defines';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import SearchDialog from '@/components/GigHeader';
+import SearchDialog from '@/components/SearchDialog';
 import SearchResults from '@/components/SearchResults';
 import apiData from '@/lib/apiData';
-import { Source } from '@/components/GenericWeb';
-import { parseYear, ts2URI, doSearch, searchOptions } from '@/lib/macros';
-
-type GigResults = {
-	[key: string]: any;
-	datetime?: string;
-}
-
-type Props_MakeHeader = {
-	project?: string
-	section?: string
-	title?: string
-	passthru?: string
-	navType?: 'Gig' | 'Year'
-	navPrev?: GigResults
-	navNext?: GigResults
-	children?: React.ReactNode
-}
-
-const ResultNavigator = (props: Props_MakeHeader): React.ReactNode => {
-	if (!props?.navType) return <></>;
-	const setGUI = (type: string, chr: React.ReactNode, cls: string, datetime?: string) => {
-		if (!datetime) return;
-		const uri = (type === 'Gig') ? ts2URI(datetime) : parseYear(datetime);
-		if (!uri) return;
-		return (
-			<Link href={`/gigs/${uri}`}>
-				<div className={cls}>
-					{chr}
-				</div>
-			</Link>
-		)
-	}
-	const prev = setGUI(props.navType, <>&lt;</>, 'left-arrow', props?.navPrev?.datetime);
-	const next = setGUI(props.navType, <>&gt;</>, 'right-arrow', props?.navNext?.datetime);
-	return (
-		<span className="smalltext" style={{ padding: '40px' }}>
-				{prev}
-				{next}
-		</span>
-	)
-}
+import ResultNavigator from '@/components/ResultNavigator';
+import { Hashed, bannerGigs, parseYear, doSearch, searchOptions } from '@/lib/macros';
 
 const Gigs = (props: any) => {
-	const year = props?.params?.year;
-	const searchParams = useSearchParams();
-	const [f, setF] = useState(searchParams.get('f'));
-	const [q, setQ] = useState(searchParams.get('q'));
-	const [results, setResults] = useState();
+	const { params = {}, searchParams = {} } = props;
+	const year = params?.year;
+	const f = searchParams?.f;
+	const q = searchParams?.q;
+	const queryString = new URLSearchParams(searchParams).toString();
+	const [results, setResults] = useState<Hashed>({});
 	const [error, setError] = useState();
-	const [filteredResults, setFilteredResults] = useState();
+	const [filteredResults, setFilteredResults] = useState<Hashed>({});
+	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
 		(async () => {
 			// set initial results
+			setLoading(true);
 			if (f && q) {
-				doSearch(f, q, setResults, setError);
+				setError(undefined);
+				doSearch({ year, f, q }, setResults, setError);
 			} else {
 				//const pix = (await apiData('gigmedias'))?.results.filter(r => r.type === 'pix');
 				const gigs = await apiData('gigs');
@@ -77,19 +38,29 @@ const Gigs = (props: any) => {
 				});
 				*/
 				setResults({ type: "archive", noun: "archive", ...gigs });
-				gigs.results = gigs?.results?.filter((g: any) => g.datetime.startsWith(year));
-				setFilteredResults({ type: "archive", noun: "archive", ...gigs });
 			}
 		})();
-		return () => {}
-	}, [ f, q ]);
+	}, [ year, f, q ]);
 
-	const extraNav = <ResultNavigator navType='Gig' navPrev={{ datetime: '2020-10-11' }} navNext={{ datetime: '2020-10-13' }} />;
+	useEffect(() => {
+		if (results?.numResults) {
+				results.results = results.results?.filter((g: any) => g.datetime.startsWith(year));
+				results.numResults = results.results.length;
+				setFilteredResults({ type: "archive", noun: "archive", ...results });
+		}
+		setLoading(false);
+	}, [ year, results ]);
+
+	const prevYear = (year > 1982) ? { datetime: `${(parseInt(year, 10) - 1)}-00-00` } : undefined;
+	const nextYear = (year < 2023) ? { datetime: `${(parseInt(year, 10) + 1)}-00-00` } : undefined;
+	const extraNav = <ResultNavigator searchParams={queryString} uriPrefix='/gigs' navPrev={prevYear} navNext={nextYear} />;
+
 	return (<>
-		<Header section='gigs' extraNav={extraNav} />
-		<SearchDialog f={f} q={q} setResults={setResults} setError={setError} />
+		<Header section='gigs' title={year} extraNav={extraNav} />
+		<SearchDialog year={year} f={f} q={q} setResults={setResults} setError={setError} />
 		{(error) && <h1 style={{ color: 'red' }}>{error}</h1>}
-		{(filteredResults) && <SearchResults results={filteredResults || {}} />}
+		{(!loading) && <SearchResults results={filteredResults || {}} banner={() => bannerGigs(results, year) } />}
+		{(loading) && <>Loading..</>}
 		<Footer />
 	</>)
 }

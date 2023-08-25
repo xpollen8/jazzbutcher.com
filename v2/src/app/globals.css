@@ -719,3 +719,15 @@ p::first-letter {
 	full: 9999px;
 	large: 12px;
 }
+
+.search.found {
+	padding: 5px;
+	background-color: #BCF1AF;
+	font-style: italic;
+}
+
+.search.notfound {
+	padding: 5px;
+	background-color: #FFA500;
+	font-style: italic;
+}

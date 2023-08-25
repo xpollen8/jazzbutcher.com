@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "fetch_data": "(cd scripts && /bin/bash dbs2json.sh)",
     "lint": "next lint"
   },
   "dependencies": {

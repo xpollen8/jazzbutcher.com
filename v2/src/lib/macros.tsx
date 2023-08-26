@@ -34,10 +34,13 @@ type QueryType = string;
 const linkExternal = (href: string, text?: string): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
 const linkInternal = (href: string, text?: string): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
-const parseYear = (datetime: string): number => parseInt(datetime.substr(0, 4), 10);
-const parseMonth = (datetime: string): number => parseInt(datetime.substr(5, 2), 10);
-const parseDay = (datetime: string): number => parseInt(datetime.substr(8, 2), 10);
-const parseHour = (datetime: string): number => parseInt(datetime.substr(11, 2), 10);
+const parseYear = (datetime: string): number => parseInt(localDate(datetime).substr(0, 4), 10);
+const parseMonth = (datetime: string): number => parseInt(localDate(datetime).substr(5, 2), 10);
+const parseDay = (datetime: string): number => parseInt(localDate(datetime).substr(8, 2), 10);
+const parseHour = (datetime: string): number => parseInt(localDate(datetime).substr(11, 2), 10);
+
+const localDate = (ts: string): string => moment.utc(ts).format('YYYY-MM-DD HH:mm:ss');
+const datesEqual = (ts1: string, ts2: string) => localDate(ts1) === localDate(ts2);
 
 const padZero = (s: any): string => {
 	const str = String(s);
@@ -71,10 +74,14 @@ const ts2URI = (ts: string): string => {
 	if (!month) return `${year}.html`;
 	if (!day) return `${year}/${monthName}.html`;
 	if (!hour) return `${year}/${monthName}${day}.html`;
-	return `${year}/${monthName}${day}_${hour}${min}.html`;
+	return `${year}/${monthName}${day}_${hour}${min}.html`.replace('_0000.html', '.html');
 }
 
-const gigURI2ts = (y: string, u: string): string => {
+/*
+	gigPage2Datetime
+		inverse of ts2URI()
+ */
+const gigPage2Datetime = (href: string): string => {
 	const regs = [
 		/(\d{4})\/([A-Za-z]{3})(\d{1,2})_(\d{2})(\d{2}).html/,
 		/(\d{4})\/([A-Za-z]{3})(\d{1,2})_(\d{2}).html/,
@@ -84,7 +91,7 @@ const gigURI2ts = (y: string, u: string): string => {
 	];
 		
 	const res = regs.map(regex => {
-		const match = u.match(regex);
+		const match = href.match(regex);
 		if (match) {
 			let yy = match[1];
 			let mm = mon2num(match[2] || 0);
@@ -96,12 +103,6 @@ const gigURI2ts = (y: string, u: string): string => {
 	}).filter(f => f)[0] || '';
 	return res.replace('_0000.html', '.html');
 }
-
-/*
-	gigPage2Datetime
-		inverse of ts2URI()
- */
-const gigPage2Datetime = (year: string, href: string): string => gigURI2ts(year, href);
 
 const Nobr = ({ children }: { children: React.ReactNode }) => <span style={{ whiteSpace: 'nowrap' }}>{children}</span>
 
@@ -318,16 +319,18 @@ const templateGigs = (results: RecordType, layout: any) => {
 						// 'pat', 'setlist', 'self'
 						]
 						.filter((type: string) => useG?.extra?.includes(type));
+					const gigLink = `/gigs/` + ts2URI(record?.datetime);
 
 					return (
-						<div key={key}
+						<Link key={key}
+								href={gigLink}
 								style={{ textAlign: 'center', width: '320px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '1px solid #555'}}
 								className={`${cls} drop-shadow-md hover:outline`}
 							>
 							<div style={{ background: 'white', color: '#333', borderRadius: '5px' }} className="drop-shadow-md">
 								{num2mon(parseMonth(record?.datetime))} {moment.localeData().ordinal(parseDay(record?.datetime))}
 								{' '}
-								{(parseHour(record?.datetime) > 0) && <>{moment.utc(record?.datetime).format('LT')}</>}
+								{(parseHour(record?.datetime) > 0) && <>{moment(localDate(record?.datetime)).format('LT')}</>}
 								{', '}{year}
 								<b>
 									<div dangerouslySetInnerHTML={{__html: record?.blurb }}/>
@@ -355,10 +358,10 @@ const templateGigs = (results: RecordType, layout: any) => {
 									{(icons.includes('players')) && <IconPlayers height={25} width={25} style={{ padding: '3px' }} />}
 								</div>
 							)}
-						{(poster) &&
-							<Image alt='poster' width={320} height={320} src={poster} style={{ height: 'auto' }}/>
-						}
-						</div>
+							{(poster) &&
+								<Image alt='poster' width={320} height={320} src={poster} style={{ height: 'auto' }}/>
+							}
+						</Link>
 					)
 				})}
 			</div>
@@ -521,7 +524,7 @@ const dateDiff = (d: string) =>
 <>
 	{' '}
 	<span className="hidden">{d}</span>
-	<span className="date">{moment(d).format("dddd, MMM Do YYYY")}</span> <span className="date">( {moment(d).startOf('hour').fromNow()} )</span>
+	<span className="date">{moment(localDate(d)).format("dddd, MMM Do YYYY")}</span> <span className="date">( {moment(localDate(d)).startOf('hour').fromNow()} )</span>
 </>
 
 const releaseByLookup = async (lookup: string) => {
@@ -533,4 +536,4 @@ const releaseByLookup = async (lookup: string) => {
 	if (releaseByHREF) return releaseByHREF;
 }
 
-export { bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigURI2ts, gigPage2Datetime, parseYear, parseDay, parseMonth }
+export { localDate, datesEqual, bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

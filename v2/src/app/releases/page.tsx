@@ -10,7 +10,7 @@ const Releases = async () => {
 	const releases = await apiData('releases');
 	return <>
 		<Header section="releases" />
-		{releases?.albums?.sort((a: ReleaseType, b: ReleaseType) => moment(b.year).diff(moment(a.year))).map(MakeAlbumBlurb)}
+		{releases?.albums?.sort((a: ReleaseType, b: ReleaseType) => moment.utc(b.year).diff(moment.utc(a.year))).map(MakeAlbumBlurb)}
 		<Footer />
 	</>
 }

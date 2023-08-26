@@ -1,24 +1,19 @@
 "use server"
 
-import { Hashed, RecordType } from './macros';
+import { datesEqual, Hashed, RecordType } from './macros';
 import fs from 'fs';
 
 const cache: Hashed = {};
 
+/* doesn't seem to work
 [ 'gigs', 'presses', 'gigmedias', 'gigtexts', 'feedbacks', 'performances', 'gigsongs', 'releases' ]
 	.forEach(async (e: string) => {
-		cache[e] = require(`/public/data/${e}.json`);
-		/*
-		const filePath = `./public/data/${e}.json`;
-		const jsonData = fs.readFileSync(filePath, 'utf-8');
-		cache[e] = JSON.parse(jsonData);
-		*/
-		/*
-		cache[e] = await fetch(`/data/${e}.json`)
-			.then(e => e.json())
-			.catch(e => { console.log("BOOM", e) })
-			*/
+		if (!cache[e]) {
+			console.log("FETCH", e);
+			cache[e] = require(`/public/data/${e}.json`);
+		}
 	});
+	*/
 
 /*
 	TODO
@@ -29,11 +24,15 @@ const cache: Hashed = {};
 	no reason this cannot be extended to press, etc.
  */
 const apiDataFromHTDBServer = async (path: string) => {
-	if (cache[path]) return cache[path];
-	return await fetch(`https://jazzbutcher.com/htdb/${path}`,
+	if (cache[path]) {
+		console.log("CACHE HIT", path);
+		return cache[path];
+	}
+	return await fetch(`${process.env.JBC_HTDB_SERVER}/htdb/${path}`,
 		{
+			next: { revalidate: 300 },
 			mode: 'no-cors'
-		})	// next.config routes "v1" to JBC_HTDB_SERVER
+		})
 		.then(e => e.json())
 		.then(e => { cache[path] = e; return e })
 		.catch((e) => {
@@ -44,8 +43,14 @@ const apiDataFromHTDBServer = async (path: string) => {
 
 const apiDataFromDataServer = async (path: string, args?: string) => {
 	if (!args) {
-		if (cache[path]) return cache[path];
-		return await fetch(`https://data.jazzbutcher.com/api/${path}`)
+		if (cache[path]) {
+			console.log("CACHE HIT", path);
+			return cache[path];
+		}
+		return await fetch(`${process.env.JBC_DATA_SERVER}/api/${path}`,
+			{
+				next: { revalidate: 300 }
+			})
 			.then(e => e.json())
 			.then(e => { cache[path] = e; return e })
 			.catch((e) => {
@@ -53,7 +58,11 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 				return { error: `search by ${path} failed` };
 			});
 	}
-	return await fetch(`https://data.jazzbutcher.com/api/${path}${args || ''}`)
+	//console.log("FETCHING", { path, args }, `${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
+	return await fetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`,
+		{
+			next: { revalidate: 300 }
+		})
 		.then(e => e.json())
 		.catch((e) => {
 			console.log("ERR", e);
@@ -63,12 +72,14 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 
 const apiData = async (path: string, args?: string) => {
 	//console.log("apiData", { path, args });
+
 	switch (path) {
 		case 'gigs':
 		case 'presses':
 		case 'gigmedias':
 		case 'gigtexts':
 		case 'feedbacks':
+		case 'gig_by_datetime':
 		case 'feedback':
 			//console.log("apiData", { path, args });
 			return await apiDataFromDataServer(path, args);
@@ -83,14 +94,14 @@ const apiData = async (path: string, args?: string) => {
 			return { ...performances, results }
 		}
 		case 'gigsongs': {
-			const songs = await apiDataFromDataServer(path, args);
+			const gigsongs = await apiDataFromDataServer(path, args);
 			const gigs = await apiDataFromDataServer('gigs', args);
 			// join gig data to song records
-			const results = songs?.results?.map((song: RecordType) => {
+			const results = gigsongs?.results?.map((song: RecordType) => {
 				const gig = gigs?.results.find((gig: RecordType) => gig?.datetime === song?.datetime);
 				return { ...song, gig }
 			});
-			return { ...songs, results }
+			return { ...gigsongs, results }
 		}
 		case 'releases':
 			return await apiDataFromHTDBServer('db_albums/data.json');

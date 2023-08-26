@@ -20,7 +20,7 @@ const pathname2feedbackURI = (pathname: string) => {
 		//return uri;
 	}
 	const usePath = (fullpath(pathname) ?? pathname + '/index.html').substr(1);
-	const ret = `/exact/${usePath}`;
+	const ret = `exact/${usePath}`;
 	//console.log("pathname2feedbackURI", { pathname, usePath, ret });
 	return ret;
 }

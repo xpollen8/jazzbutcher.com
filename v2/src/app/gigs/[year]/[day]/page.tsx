@@ -43,7 +43,7 @@ const GigTicket = ({ data }: any) => {
 		</div>
 	)
 }
-const GigTickets = (data: any) => <> {Iterator(data, GigTicket)} </>
+const GigTickets = (data: any) => Iterator(data, GigTicket)
 
 const GigSetlist = ({ data }: any) => {
 	return (
@@ -52,7 +52,7 @@ const GigSetlist = ({ data }: any) => {
 		</div>
 	)
 }
-const GigSetlists = (data: any) => <> {Iterator(data, GigSetlist)} </>
+const GigSetlists = (data: any) => Iterator(data, GigSetlist)
 
 const GigPoster = ({ data }: any) => GigPhoto({ data });
 /*{
@@ -63,7 +63,7 @@ const GigPoster = ({ data }: any) => GigPhoto({ data });
 		</div>
 	)
 }*/
-const GigPosters = (data: any) => <> {Iterator(data, GigPoster)} </>
+const GigPosters = (data: any) => Iterator(data, GigPoster)
 
 const Caption = (caption?: string) => caption &&  <><br/><div className="caption">{caption}</div></>
 
@@ -73,14 +73,14 @@ const removeHTML = (str?: string) => {
 		?.replace(/<p([^>]+)>/ig, '<br/>')  // <p.....> => <br/>
 		?.replace(/<\/p>/ig, '<br/>') // </p> => <br/>
 		?.trim();
-	/* need to leave <br/ tags intact
+	// need to leave <br/ tags intact
 	const unlinked = deParagraphed
-		?.replace(/(<([^>]+)>)/ig, '')?.trim();
-	*/
-	return deParagraphed;
+		?.replace(/(<(?!br\/)([^>]+)>)/ig, '')?.trim();
+		//?.replace(/(<([^>]+)>)/ig, '')?.trim();
+	return unlinked;
 }
 
-const renderHTML = (str?: string) => str && <div dangerouslySetInnerHTML={{ __html: str }} />
+const RenderHTML = ({ body }: { body?: string}) => body && <div dangerouslySetInnerHTML={{ __html: body }} />
 
 const parseCaption = (str?: string) => removeHTML(str);
 
@@ -111,9 +111,9 @@ const GigPhoto = ({ data }: any) => {
 		{Caption(caption)}
 	</>)
 }
-const GigPhotos = (data: any) => <> {Iterator(data, GigPhoto)} </>
+const GigPhotos = (data: any) => Iterator(data, GigPhoto)
 
-const GigNote = ({ data }: any) => renderHTML(data?.body);
+const GigNote = ({ data }: any) => <RenderHTML body={data?.body} />
 /*
 {
 	return (
@@ -124,7 +124,7 @@ const GigNote = ({ data }: any) => renderHTML(data?.body);
 	)
 }
 */
-const GigNotes = (data: any) => <>{Iterator(data, GigNote)}</>
+const GigNotes = (data: any) => Iterator(data, GigNote)
 
 const GigPlay = ({ data }: any) => {
 	return (
@@ -134,7 +134,7 @@ const GigPlay = ({ data }: any) => {
 		</div>
 	)
 }
-const GigPlayed = (data: any) => <> {Iterator(data, GigPlay)} </>
+const GigPlayed = (data: any) => Iterator(data, GigPlay)
 
 const GigWit = ({ data }: any) => {
 	return (
@@ -143,7 +143,7 @@ const GigWit = ({ data }: any) => {
 		</div>
 	)
 }
-const GigWith = (data: any) => <> {Iterator(data, GigWith)} </>
+const GigWith = (data: any) => Iterator(data, GigWit)
 
 const GigPlayer = ({ data }: any) => {
 	return (
@@ -153,9 +153,9 @@ const GigPlayer = ({ data }: any) => {
 		</div>
 	)
 }
-const GigPlayers = (data: any) => <> {Iterator(data, GigPlayer)} </>
+const GigPlayers = (data: any) => Iterator(data, GigPlayer)
 
-const GigReview = ({ data }: any) => renderHTML(data?.body);
+const GigReview = ({ data }: any) => <RenderHTML body={data?.body} />
 /*
 {
 	return (
@@ -166,7 +166,7 @@ const GigReview = ({ data }: any) => renderHTML(data?.body);
 	)
 }
 */
-const GigReviews = (data: any) => <> {Iterator(data, GigReview)} </>
+const GigReviews = (data: any) => Iterator(data, GigReview)
 
 const GigDetails = (data: any) => {
 	return (<>

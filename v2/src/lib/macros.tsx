@@ -36,7 +36,7 @@ const linkInternal = (href: string, text?: string): React.ReactNode => <Link hre
 
 const parseYear = (datetime: string): number => parseInt(localDate(datetime).substr(0, 4), 10);
 const parseMonth = (datetime: string): number => parseInt(localDate(datetime).substr(5, 2), 10);
-export const parseMonthName = (datetime: string): number => num2mon(parseMonth(datetime));
+export const parseMonthName = (datetime: string) => num2mon(parseMonth(datetime));
 const parseDay = (datetime: string): number => parseInt(localDate(datetime).substr(8, 2), 10);
 const parseHour = (datetime: string): number => parseInt(localDate(datetime).substr(11, 2), 10);
 export const parseHourAMPM = (datetime: string) => moment(localDate(datetime)).format('LT')

@@ -67,9 +67,9 @@ const headerText : { [key: string]: BreadCrumb } = {
 	misc:  { parent: 'jbc', title: 'Misc.' },
 }
 
-const makeBreadcrumb = (name: string, aux?: string | React.ReactNode) => {
+const makeBreadcrumb = (name: string, aux?: any) => {
 	if (!name) return;
-	const recurseNavObjects = ({ name, aux, root=false }: { name?: string, aux?: string | React.ReactNode, root?: boolean | undefined }): any => {
+	const recurseNavObjects = ({ name, aux, root=false }: { name?: string, aux?: any, root?: boolean | undefined }): any => {
 		const lowerName = name?.toLowerCase();
 		if (!lowerName) return;
 		const obj = headerText[lowerName];
@@ -98,7 +98,7 @@ const makeBreadcrumb = (name: string, aux?: string | React.ReactNode) => {
 	return nav;
 }
 
-const Section = (props: { section?: string, title?: string | React.ReactNode, children?: React.ReactNode }): React.ReactNode  => {
+const Section = (props: { section?: string, title?: any, children?: React.ReactNode }): React.ReactNode  => {
 	const { section, title, children } = props;
 
 	if (!section) return;
@@ -119,7 +119,7 @@ type GigResults = {
 
 type Props_MakeHeader = {
 	section?: string
-	title?: string | React.ReactNode
+	title?: any
 	passthru?: string
 	navType?: 'Gig' | 'Year'
 	extraNav?: React.ReactNode

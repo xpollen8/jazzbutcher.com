@@ -36,8 +36,11 @@ const linkInternal = (href: string, text?: string): React.ReactNode => <Link hre
 
 const parseYear = (datetime: string): number => parseInt(localDate(datetime).substr(0, 4), 10);
 const parseMonth = (datetime: string): number => parseInt(localDate(datetime).substr(5, 2), 10);
+export const parseMonthName = (datetime: string): number => num2mon(parseMonth(datetime));
 const parseDay = (datetime: string): number => parseInt(localDate(datetime).substr(8, 2), 10);
 const parseHour = (datetime: string): number => parseInt(localDate(datetime).substr(11, 2), 10);
+export const parseHourAMPM = (datetime: string) => moment(localDate(datetime)).format('LT')
+export const parseDayOrdinal = (datetime: string) => moment.localeData().ordinal(parseDay(datetime))
 
 const localDate = (ts: string): string => moment.utc(ts).format('YYYY-MM-DD HH:mm:ss');
 const datesEqual = (ts1: string, ts2: string) => localDate(ts1) === localDate(ts2);
@@ -328,9 +331,9 @@ const templateGigs = (results: RecordType, layout: any) => {
 								className={`${cls} drop-shadow-md hover:outline`}
 							>
 							<div style={{ background: 'white', color: '#333', borderRadius: '5px' }} className="drop-shadow-md">
-								{num2mon(parseMonth(record?.datetime))} {moment.localeData().ordinal(parseDay(record?.datetime))}
+								{num2mon(parseMonth(record?.datetime))} {parseDayOrdinal(record?.datetime)}
 								{' '}
-								{(parseHour(record?.datetime) > 0) && <>{moment(localDate(record?.datetime)).format('LT')}</>}
+								{(parseHour(record?.datetime) > 0) && <>{parseHourAMPM(record?.datetime)}</>}
 								{', '}{year}
 								<b>
 									<div dangerouslySetInnerHTML={{__html: record?.blurb }}/>

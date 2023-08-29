@@ -1,8 +1,8 @@
 ####include	db_albums
 
 #define	lyricsFooter(mp3, mp4, url, title, onlist, patsez, others, credits)
+		${parseCredit(${filterProgramArguments(${credits})})}
 	</blockquote>
-	${credits}
 #live	if (defined(onlist))
 	${endTab}
 	${begTab(Found On)}
@@ -18,7 +18,7 @@
 
 #live	if (defined(patsez))
 	${endTab}
-	${begTab(Insight)}
+	${begTab(Pat Says)}
 	${patsays_beg}
 #live	if (makeArray(_qt, --NEXT--, ${patsez}))
 #live	loop (_qti, 1, ${_qt->numResults})
@@ -26,7 +26,21 @@
 	</div>
 	<div class="annotation">
 #live	endif
-	${_qt[${_qti}]}
+#live	if (define(_pth[1],))
+#live	endif
+#live	if (define(_pth[2],))
+#live	endif
+#live	if (define(_pth[3],))
+#live	endif
+#live	if (define(_pth[4],))
+#live	endif
+#live	if (makeArray(_pth, ${EOI}, ${unfilter(${_qt[${_qti}]})}))
+	${_pth[1]}
+#live	if ((defined(_pth[2])) || (defined(_pth[3])) || (defined(_pth[4])))
+	${g_source(g=${_pth[2]}, u=${_pth[3]}, d=${_pth[4]})}
+#live	endif
+#live	endif
+# old	${_qt[${_qti}]}
 #live	endloop
 #live	endif
 	${patsays_end}
@@ -34,13 +48,16 @@
 
 #live	if (defined(others))
 	${endTab}
-	${begTab(Insight)}
+	${begTab(Others Say)}
 	${tag_beg}
 	Others Say..
 	${tag_end}
+#live	if (makeArray(_oth, ${EOI}, ${unfilter(${others})}))
 	<div class="annotation">
-	${others}
+	${_oth[1]}
+	${g_source(g=${_oth[2]}, u=${_oth[3]}, d=${_oth[4]})}
 	</div>
+#live	endif
 #live	endif
 
 ${endTab}
@@ -449,8 +466,8 @@ ${jbc_footer}
 	Hobbu Hobbu Hobbu Hobbu<br/>
 	Hobbu Hobbu Hobbu<br/>
 
-	${g_credit(g=Robert Goodman)}
 	${lyricsFooter(onlist=cdr_guestpass2000,
+		credits=Robert Goodman,
 		title=The Hobbu Song,
 		mp3=/audio/tunes/hobbu.mp3
 	)}
@@ -503,7 +520,7 @@ ${jbc_footer}
 		Top Bobby Gillespie impression, though.
 		--NEXT--
 		The inevitable and inglorious consequences of ill-conceived short firm triumphalist capitalism considered at some length, and with no small amount of melancholy whining, as an enormous submarine beast humming a twelve bar and taking its time about it. Sincerity quotient high, reverbs lengthy.
-		${g_source(u=${jbc_letters}/93Aug30/love.html#station, g=Pat Letter: 1993-08-30)}
+		;;Pat Letter: 1993-08-30;;/letters/93Aug30/love.html#station;;1993-08-30
 	)}
 
 	,mp3=${jbc_mp3}/angelstn.mp3)}
@@ -559,7 +576,7 @@ ${jbc_footer}
 		Reagan's bombing of Tripoli.
 		--NEXT--
 		This is still one of my favourites. I wrote it in 1986 (the day they bombed Tripoli, in fact) about things that would only come to pass three years later. Or something. Oh God, I never make any sense when I start to talk about this tune. The lyrics just showed up, like automatic writing or something. I love it anyway, and I hope you love it too.
-		${g_source(u=${jbc_albums}/unconditional.html#angels, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#angels;;
 	)}
 
 	,mp3=${jbc_mp3}/angels.mp3, url=http://www.youtube.com/embed/Cj6lU1ykzsA)}
@@ -653,7 +670,7 @@ ${jbc_footer}
 		bus .. lunch
 	, patsez=${literalizeCommas(
 		Bakersfield is a place a couple of hours north of Los Angeles where seekers after Purity Of Tone stand in the desert and watch drag racing before cruising the bars of this fine and patriotic borough, and maybe stopping by at one of its lifestyle motel complexes. This particular tune was inspired by a conversation in Boardner's Bar, Hollywood, with Iain O'Higgins and Cole Coonce of the Braindead Soundmachine, whose subsequent attempts to lend decency to the whole concept are never going to wash with this writer.
-		${g_source(u=${jbc_letters}/93Aug30/love.html#baker, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#baker;;
 	)}
 	)}
 #live	endif
@@ -717,7 +734,7 @@ ${jbc_footer}
 			bus
 	, patsez=${literalizeCommas(
 		I'm not sure where this came from, and I'm vaguely resentful of the fact. I suppose it imagines itself to well fin-de-siecle. Hey! We're so doomed we've learned to love it.
-		${g_source(u=${jbc_letters}/93Aug30/love.html#baltic, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#baltic;;
 	)}
 	)}
 #live	endif
@@ -837,7 +854,7 @@ ${jbc_footer}
 		in London Zoo, Christmas 1992.
 		--NEXT--
 		Written in January, after hearing some extraordinary remarks from ordinarily decent people concerning a character in a news story who seemed to me - in quite black and white terms - the victim. Full of good intentions and bruised sensitivities I tried to write a tune about it. I tried to stay respectful and clear. In the time between the recording and the release of this tune a similar incident occurred in New York. I didn't catch the name this time.
-		${g_source(u=${jbc_letters}/93Aug30/love.html#ben, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#ben;;1993-08-30
 	)}
 	)}
 #live	endif
@@ -958,38 +975,43 @@ ${jbc_footer}
 The voice at the beginning of “The Best Way” has
 bothered me for years. It seemed naggingly familiar, but I couldn’t
 place it.
+</p>
 <p>
 It turns out it’s Bob Steele, and he’s familiar because when I was a
 kid, it was his voice I’d be listening to for school closing
 announcements.
+</p>
 <p>
 Furthermore, Waybest Foods was located pretty much spitting distance
 from my house. And “the philosopher, Ken Morgester” who Steele mentions
 is the father of my high school classmate, Candice Morgester, who
 confirmed with her mother that Steele knew him.  Trying to find some
 info about her father...
+</p>
 <p>
 I finally took the radical action of asking friends if they recognized
 the voice. After that, it took only about a couple hours for the info to
 come out of the woodwork.
+</p>
 <p>
 Bob Steele dominated morning radio in southern New England for decades,
 most of it on WTIC in Hartford. As a kid, I didn’t listen to much news
 radio, but he’s the one we’d tune into for snow day information. He
 semi-retired in 1991, but continued hosting a Saturday morning show
 until he died.
+</p>
 <p>
 ${linkExternal(https://en.m.wikipedia.org/wiki/Bob_Steele_(broadcaster))}
 <p>
 The town in question is South Windsor, CT.
-${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter, d=2018-05-17)}
-	)}
+</p>
+	)};;William R. Dickson;;https://twitter.com/WilliamRDickson;;2018-05-17
 	, patsez=${literalizeCommas(
 		"Edgar Wallace" means "serious" in surrealist rhyming slang, which is a good way to describe the toothache I had when O'Higgins and I did this mix. Odd barnyard noises may be blamed on the aforementioned The Perfect Disaster, who got in there somewhere.
-		${g_source(u=${jbc_albums}/unconditional.html#best, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner note;;/albums/unconditional.html#best;;
 		--NEXT--
 		 A rap which originally appeared on the indisposible Fishcotheque L.P. This version, specifically aimed at Italian discotheques, was set down through a haze of paracetemol, codeine & Red Stripe Lager in defiance of the most apalling toothache known to mankind, May '88 model. My thanks to the revolting O'Higgins for some serious mix magick. Linguistic note: "Edgar Wallace" is surrealist rhyming slang for "serious."
-		${g_source(u=${jbc_albums}/spooky.html#best, g=<b>Spooky</b> liner notes)}
+		;;<b>Spooky</b> liner notes;;/albums/spooky.html#best;;
 	)}
 	,mp3=${jbc_mp3}/bestway.mp3)}
 #live	endif
@@ -1098,7 +1120,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		Easter Saturday 1983, fact fans.
 		--NEXT--
 		The climactic opposite of Pineapple Tuesday , definitely a Nordic vibe to this one. Except for the middle instrumental, which always makes me think of people hang-gliding in the Alps: I think it may have been a Martini commercial that I once saw on TV.
-		${g_source(u=${jbc_albums}/unconditional.html#satday, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#satday;;
 	)}
 	)}
 #live	endif
@@ -1180,7 +1202,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		spook .. spook12 .. spook7 .. brave .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		And, well I never, here's another version of Blame . Without the civilising influence of Alex "Savage But Reasonable" Green (already suitably humiliated for absence on Canadian dates during the previous summer) or the supertechnopower hot Casio SK-1, this really does start to get ugly. Which is just as it should be, really. Did you ask your mum yet? No, well, it's a bit of a problem, I agree. Why not just fucking educate yourself instead?
-		${g_source(u=${jbc_albums}/spooky.html#blame, g=<b>Spooky</b> liner notes)}
+		;;<b>Spooky</b> liner notes;;/albums/spooky.html#blame;;
 	)}
 	)}
 #live	endif
@@ -1395,7 +1417,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		smith .. gift1 .. nons .. hamburg .. drainglass .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		Southern Mark Smith and Jazz Butcher -v- Count Dracula were recorded in the summer of 1983 in a place called Wellingborough, a small town in the middle of England where even the children are scarey! "Hey, mister, can you SEE in them glasses?" I get to sing and play things like guitar, sax and piano. Max does the electric guitar. On bass is Rolo McGinty, and Princess Alice Thompson plays the organ. They're both in the The Woodentops now, a group internationally recognised as being the shortest collection of pop musicians in the world. Playing the drums is Kevin Haskins, a charming neighbour of mine, and veteran of the Bauhaus conspiracy. Miaowula!
-		${g_source(u=${jbc_albums}/gift1.html#dracula, g=<b>The Gift Of Music</b> liner notes)}
+		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#dracula;;
 	)}
 	,url=https://www.youtube.com/embed/dpk0cMvRJf8)}
 #live	endif
@@ -1716,9 +1738,13 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 	${lyricsFooter(onlist=
 		blue .. uncond .. violent .. fire_violent
 	, patsez=${literalizeCommas(
+		<p>
 		Uh... in the Sixties Beirut was a real playground for the rich, like Cannes or Ibiza or something. A nice place to visit. Sometimes things really do just slide right out of control, don't they? Lexicographical note: to anyone who finds the juxtaposition of the words "Beirut" and "filth" a tad obvious, I would just say that "filth" is an agreeable little lowlife term that one uses in London to describe our wonderful police force. I trust that clears things up a little.
-		${g_source(u=${jbc_albums}/unconditional.html#filth, g=<b>Unconditional</b> liner notes)}
+		</p>
+		<p>
 		${notes} swiped from ${eg} song Filth
+		</p>
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#filth;;
 	)}
 	)}
 #live	endif
@@ -1849,7 +1875,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		bus .. violent
 	, patsez=${literalizeCommas(
 		Why does the modern simpleton assume that he's causing you a problem by killing you? Inter mortuos nil nisi bonum.
-		${g_source(u=${jbc_letters}/93Aug30/love.html#ghosts, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#ghosts;;1993-08-30
 	)}
 	,mp3=${jbc_mp3}/ghosts.mp3)}
 #live	endif
@@ -1904,10 +1930,10 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		spook .. cult .. girlgo .. closet .. uncond .. family .. violent .. lunch .. va_pensioners91 .. shock_drugs .. brave .. fire_violent .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		Tu as vu toutes les étoiles? The JBC lush out in tribute to the (sadly departed) The Perfect Disaster, featuring a superlative example of the Richard Formby guitar assult. The lead vocal was recorded in the studio garden at one in the morning in mid-January. The reasoning escapes me now. Probably, I had been very bad.
-		${g_source(u=${jbc_albums}/unconditional.html#girl, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#girl;;
 		--NEXT--
 		Girl-Go is for my friend Phil (ip of Walshingham) Parfitt, singer & writer with The Perfect Disaster and class A-! human being. It is about a number of things, with special emphasis on the popular chord "E". Listen and pass out.
-		${g_source(u=${jbc_albums}/spooky.html#girl, g=<b>Spooky</b> liner notes)}
+		;;<b>Spooky</b> liner notes;;/albums/spooky.html#girl;;
 	)}
 	,mp3=${jbc_audio}/cult/girl.mp3, title=Rough studio mix, url=http://www.youtube.com/embed/YhpMSXo-kzM)}
 #live	endif
@@ -1947,7 +1973,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		hamburg .. scandal .. drainglass ..cake .. fire_wasted
 	, patsez=${literalizeCommas(
 		Concerns a number of conflicting feelings (yes, we do have them) about the strangest summer I ever spent. Yes, it is a shame, and yes, I do miss them all. Dedicated to the free dinner circuit, and may it never ever happen again.
-		${g_source(u=${jbc_albums}/scandal.html#girlfriend, g=<b>A Scandal In Bohemia</b> liner notes)}
+		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#girlfriend;;
 	)}
 	)}
 #live	endif
@@ -2147,7 +2173,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		bacon .. spook .. fire_wasted .. brave
 	, patsez=${literalizeCommas(
 		Just don't forget to come round for Grey Flannelette . This is my favourite recording on this side, owing partly to Paul & Laurence's zoom groove. (That's Laurence on ash-trays, train-spotters.) What started out as an innocent-enough Mary Perry joke on Bath Of Bacon (the "real" first L.P.) took an ugly turn when somebody wrote in and told me that it had actually happened to a friend of his. So then it went like this. Yuk. Grrrr.
-		${g_source(u=${jbc_albums}/spooky.html#flan, g=<b>Spooky</b> liner notes)}
+		;;<b>Spooky</b> liner notes;;/albums/spooky.html#flan;;
 	)}
 	)}
 #live	endif
@@ -2233,7 +2259,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		Ellison, of course.
 		--NEXT--
 		If you let me out on my own in that condition, what do you think is going to happen? Butcher and Twilight Zone collide on the streets of Hollywood, resulting in ongoing art-misery attack and some deeply aquamarine guitar from that nice Peter Astor.
-		${g_source(u=${jbc_albums}/unconditional.html#harlan, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#harlan;;
 		--NEXT--
 		"Jefy Is Five" is one of a number of Harlan Ellison story-titles that litter the lyrics to the song that bears his name. Like:
 		<p>
@@ -2245,10 +2271,11 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		It's what I call a T-Rex Letter. You know, where fans of a group write a letter about that group, quoting all their song titles? One of those. In an introduction to one of his collections, Mr. Ellison writes that he tells these stories to tell people that "You Are Not Alone"... because we're ALL IN THE SHIT TOGETHER!
 		What a dude!
 		<p>
-		(He does, incidentally, keep his number in the L.A. phone book. That line is true. So, I should warn you, is the one about his not suffering fools. He is an impatient man, and should not be approached for quotable quotes on the subject of the JBC by those who could do without being told to... uh... go someplace else.
-		${g_source(u=${jbc_letters}/94Sep13/harlan.html, g=Pat Letter: 1994-09-13)}
+		He does, incidentally, keep his number in the L.A. phone book. That line is true. So, I should warn you, is the one about his not suffering fools. He is an impatient man, and should not be approached for quotable quotes on the subject of the JBC by those who could do without being told to... uh... go someplace else.
+		;;Pat Letter: 1994-09-13;;/letters/94Sep13/harlan.html;;1994-09-13
 	)}
-	,mp3=${jbc_mp3}/harlan.mp3)}
+	,mp3=${jbc_mp3}/harlan.mp3
+	)}
 #live	endif
 
 #define	hysteria.html
@@ -2353,7 +2380,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		A song about arms dealing
 		--NEXT--
 		The JBC spent New Year's Eve 1992 in Kaliningrad, a rocking city of the old U.S.S.R., largely populated by recent unemployed Red Army personnel, for whom we wrote this tune. The Mall is, of course, somewhere else altogether.
-		${g_source(u=${jbc_letters}/93Aug30/love.html#kids, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#kids;;1993-08-30
 	)}
 	)}
 #live	endif
@@ -2418,7 +2445,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		bus
 	, patsez=${literalizeCommas(
 		Imagine how RUDE it would be to die in someone else's apartment. Imagine how much BOTHER it could cause them. Imagine how much you'd CARE.
-		${g_source(u=${jbc_letters}/93Aug30/love.html#kill, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#kill;;1993-08-30
 	)}
 	)}
 #live	endif
@@ -2532,8 +2559,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 			${mkPatSez(
 			November 26, 2018, via messenger: “I like the idea of your column and I would be happy to say something about the origins of La Mer . I happen to remember the Sunday afternoon I wrote it vividly. I was coming out of a good big meal washed down with wine at my parents' house. With nothing else to do, I returned home and started playing a chord suite used in Stairway to Heaven . For three or four hours, I worked on this damn thing, to conclude, at tea time, that it was really young music, useless and pretentious, and that it was better that I pass to something else. Released, I started to strum the A minor and the MI, in the very basic way of Patrick Fitzgerald, a punk songwriter, quite popular at the time. At that time, I was also listening to Charles Trenet and Jean Sablon a lot , and, for some reason, La mer came to me. Suddenly, I remembered all those crazy little songs we were taught at school, to make us learn French. Most of these songs were about elephants in one way or another. I started with this crazy literal translation of The sea comes in, the sea goes out . I stopped for a moment and laughed, “You can't do that!”, a usual thing in my writing process. And, in a few minutes, in a very strange way, the whole scene went by, in French in the text. After having struggled for hours, the sea was writing itself, in ten minutes. To be honest, I didn't think anyone, after that lonely Sunday afternoon, would ever hear this song, and certainly not in France! When we first performed there in 1986, the band asked me if we were going to play La Mer . “ Are you crazy? We're going to get killed! ” . This shows how wrong we can be. Best regards, Pat x ”.
 			)}
-			${g_source(g=Renaud Sachet, d=2021-10-09, u=https://section-26.fr/pat-fish-1957-2021/)}
-		)}
+		)};;Renaud Sachet;;https://section-26.fr/pat-fish-1957-2021/;;2021-10-09
 	)}
 #live	endif
 
@@ -2768,10 +2794,10 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		marnie .. scandal .. gift1 .. drainglass .. fire_wasted .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		Marnie is an attempt to force a meeting between the steaming tropical jungles of Bangladesh (where the tigers live) and the frozen stepps of Siberia (where the Siberian tigers live).
-		${g_source(u=${jbc_albums}/gift1.html#marnie, g=<b>The Gift Of Music</b> liner notes)}
+		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#marnie;;
 		--NEXT--
 		Across the steepes the rumour runs : she's still at it, and she must be stopped!
-		${g_source(u=${jbc_albums}/scandal.html#marnie, g=<b>A Scandal In Bohemia</b> liner notes)}
+		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#marnie;;
 	)}
 	,mp3=${jbc_mp3}/marnie.mp3)}
 #live	endif
@@ -3057,7 +3083,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		cult .. shir .. uncond .. fire_violent
 	, patsez=${literalizeCommas(
 		The desk clerk couldn't believe it. This drunk comes staggering into the lobby in the middle of a thunderstorm and starts wittering in bad German. To keep him from dripping all over the place the clerk hands him a room key. "Excellent!" burbles the drunk, "Room 109!" The scarey stuff kicked in the bathroom. You know, I once spent an evening indulging heart attacks in a Vancouver hotel room by pinching my toe.
-		${g_source(u=${jbc_albums}/unconditional.html#panic, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#panic;;
 	)}
 	)}
 #live	endif
@@ -3111,7 +3137,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		bacon .. gift1 .. nons .. uncond .. drainglass .. glorious .. fire_wasted .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		 I guess you could say that this was the first jazz butcher song ever written. This recording is almost ten years old now. I find it staggering, but there are hundreds of people out there (I've seen them) on whom the irony has yet to take effect. Perhaps it would help them to know that the events described in this song ended up with the writer in hospital. We all like a laugh, though, don't we?
-		${g_source(u=${jbc_albums}/unconditional.html#ptime, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#ptime;;
 	)}
 	)}
 #live	endif
@@ -3157,7 +3183,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		<img src="${images}/penguin.gif">
 		<img src="${images}/penguin.gif">
 		In the most desolate place in the world they are standing in large numbers. They are out there doing it now. As far as we can tell they have always been out there, miles from anywhere, in conditions that would hospitalise you or me in the course of an afternoon.
-		${g_source(u=${jbc_letters}/93Aug30/love.html#penguins, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#penguins;;
 	)}
 	,mp3=${jbc_mp3}/penguins.mp3)}
 #live	endif
@@ -3222,7 +3248,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		conspir .. conspir12 .. gift2 .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		He looks really cool. I was not fully sober when I first had the idea of writing about him. It's an imaginative thing; yeah, he was the bad guy, but imagine some scary-intrigue-casbah type picture where he was your pal. Yeah?
-		${g_source(u=${jbc_letters}/94Sep13/lorre.html, g=Pat Letter: 1994-09-13)}
+		;;Pat Letter: 1994-09-13;;/letters/94Sep13/lorre.html;;1994-09-13
 	)}
 	,mp3=${jbc_mp3}/ptrlorre.mp3)}
 #live	endif
@@ -3261,10 +3287,10 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 	${lyricsFooter(onlist=
 		cult .. closet .. uncond .. family .. violent .. fire_violent
 	, patsez=${literalizeCommas(
-		<a href="${jbc_gigs}/1989/Dec11.html">11th December 1989</a>
+		;;Inspired On This Day;;/gigs/1989/Dec11.html;;1989-12-11
 		--NEXT--
 		Is it a road song? Is it a love song? Is it a mushy title or what? I'm sorry, Jesus, every line is true. I never enjoyed vanilla as much in all my life. Watch carefully: Californian brainfried road-accident-from-outer-space guitar in the area!
-		${g_source(u=${jbc_albums}/unconditional.html#tues, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#tues;;
 	)}
 	,mp3=${jbc_audio}/cult/pineapple.mp3, title=Rough studio mix)}
 #live	endif
@@ -3375,10 +3401,10 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		bus .. lunch .. va_creation_unreleased .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		 "Chang" is London slang for Columbia's No. 1 Export. As far as that song goes, I reckon things couldn't be clearer. If the line "He never smokes, but he sure inhales" reminds anyone of a contemporary politician... well, hey, it's topical, and it also says exactly what I want to say.
-		${g_source(u=${jbc_letters}/94Sep13/politics.html#Chang, g=Pat Letter: 1994-09-13)}
+		;;Pat Letter: 1994-09-13;;/letters/94Sep13/politics.html#Chang;;1994-09-13
 		--NEXT--
 		Wrestling with life in Post-Historical Universe, we cast around awhile among some of the more extreme options open to the modern voter. A photo appears in a magazine in Florida showing the Grand Wizard of the local chapter of the KKK in full drag: he is eighteen. A drawing appears in a British newspaper depicting John Major strangling Norman Lamont with his underpants. Can being The President's man help your self-esteem? Your sex life? Why worry about Home Affairs when you will have No Home? Why vote for the Lesser Evil?
-		${g_source(u=${jbc_letters}/93Aug30/love.html#chang, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#chang;;1993-08-30
 	)}
 	,mp3=${jbc_mp3}/prschang.mp3)}
 #live	endif
@@ -3510,10 +3536,10 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		rmen .. scandal .. gift1 .. nons .. hamburg .. drainglass .. fire_wasted .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		 Real Men, the kind who never sit together on buses in case they get their medallions tangled.
-		${g_source(u=${jbc_albums}/gift1.html#men, g=<b>The Gift Of Music</b> liner notes)}
+		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#men;;
 		--NEXT--
 		 Some things never change. Notice how they never sit together on buses?
-		${g_source(u=${jbc_albums}/scandal.html#men, g=<b>A Scandal In Bohemia</b> liner notes)}
+		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#men;;
 	)}
 	,mp3=${jbc_mp3}/realmen.mp3)}
 #live	endif
@@ -3560,7 +3586,7 @@ ${g_source(u=https://twitter.com/WilliamRDickson, g=William R. Dickson's twitter
 		Rosemary Davis, actress, writer and producer, edited the original BBC Sound Effects records. Today these sounds, assiduously recorded in the early sixties, seem to come from another world.
 		<p>
 		We can go out the way we came in, but we had best go a bit more quietly. I think that chap in the baseball hat has nodded out.
-		${g_source(u=${jbc_letters}/93Aug30/love.html#david, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#david;;1993-08-30
 	)}
 	,mp3=${jbc_mp3}/rdavis.mp3)}
 #live	endif
@@ -3790,11 +3816,11 @@ fade
 		cult .. closet .. shir .. uncond .. family .. violent .. lunch .. shock_drugs .. va_nationofsaints .. fire_violent
 	, patsez=${literalizeCommas(
 		We were halfway across the rockies in supernatural British Columbia when I realised that I had never come across a song with this title before. Obviously something had to be done. Dave Francolini (a wonderful man who should not be allowed to drive) contributed some of the most hyperactive handclaps that I have ever experienced. Then we tied him up and put him with the others.
-		${g_source(u=${jbc_albums}/unconditional.html#drugs, g=<b>Unconditional</b> liner notes)}
-		<p>
-		As discussed during ${linkInternal(http://jazzbutcher.com/gigs/1993/Aug29_1200.html, the 1993 Snap Judgements)} interview, <i>She's On Drugs</i> appears on the soundtrack to the 1992 film
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#drugs;;
+		--NEXT--
+		<i>She's On Drugs</i> appears on the soundtrack to the 1992 film
 		${linkExternal(http://www.imdb.com/title/tt0104428/soundtrack, Hold Me Thrill Me Kiss Me)}
-		</p>
+		;;1993 Snap Judgements Interview;;/gigs/1993/Aug29_1200.html;;1993-08-29 12:00:00
 	)}
 	)}
 #live	endif
@@ -3856,7 +3882,7 @@ fade
 		blue .. shir .. uncond .. family .. violent .. lunch .. fire_violent
 	, patsez=${literalizeCommas(
 		Not, obviously enough, about the dear lady herself, more about a miserable rainy night in Camden and the extraordinary things that some people read these days. Remember, when somebody writes a "self-help" book that's exactly what they are doing: helping themselves. Flipper says "hi", by the way.
-		${g_source(u=${jbc_albums}/unconditional.html#shirley, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#shirley;;
 	)}
 	,mp3=${jbc_mp3}/shirleym.mp3)}
 #live	endif
@@ -3928,7 +3954,7 @@ fade
 		There you go. Beyond that, the lyric was written very quickly and without much conscious thought, which means that it's The Real Stuff (as it were). It also, however, means that - since I was listening to Big Star's 3rd LP an awful lot round that time (Dec. '89) - I nicked the "get me out of here" line wholesale from Night Time.
 		<p>
 		St. Francis, Alex Chilton and Yer Actual Life - those are the main constituents. I've never seen Sandman. I did read a little Anne Rice, but I thought it was a tad... muddled, if you like. She seems to make the rules of Being Undead up as she goes along. Having been raised on Uncle Terry's vampire pictures since the age of about six, I feel that i know the rules, and cling to what I learned as a youth. Don't forget, folks - after you stake 'em, you got to CHOP OFF THE HEAD, or it ain't nothing but a sequel in the works.
-		${g_source(u=${jbc_letters}/94Sep13/sis.html, g=Pat Letter: 1994-09-13)}
+		;;Pat Letter: 1994-09-13;;/letters/94Sep13/sis.html;;1994-09-13
 	)}
 	,mp3=${jbc_audio}/cult/sister.mp3, title=Rough studio mix)}
 #live	endif
@@ -3989,13 +4015,13 @@ fade
 		scandal .. smith .. rmen .. gift1 .. nons .. uncond .. family .. drainglass .. bigtime_jungle .. fire_wasted .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		Southern Mark Smith and Jazz Butcher -v- Count Dracula were recorded in the summer of 1983 in a place called Wellingborough, a small town in the middle of England where even the children are scarey! "Hey, mister, can you SEE in them glasses?" I get to sing and play things like guitar, sax and piano. Max does the electric guitar. On bass is Rolo McGinty, and Princess Alice Thompson plays the organ. They're both in the The Woodentops now, a group internationally recognised as being the shortest collection of pop musicians in the world. Playing the drums is Kevin Haskins, a charming neighbour of mine, and veteran of the Bauhaus conspiracy. Miaowula!
-		${g_source(u=${jbc_albums}/gift1.html#smith, g=<b>The Gift Of Music</b> liner notes)}
+		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#smith;;
 		--NEXT--
 		Soft white underbelly = Saturday Scene.
-		${g_source(u=${jbc_albums}/scandal.html#smith, g=<b>A Scandal In Bohemia</b> liner notes)}
+		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#smith;;
 		--NEXT--
 		Well, the JBC really did get a big return off this one. It opened a lot of doors for us in Europe and America, and listening back now I think I can see why. No, I mean that Hammond...
-		${g_source(u=${jbc_albums}/unconditional.html#smith, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#smith;;
 		--NEXT--
 		All right, here's the thing. The phrase came up some time in conversation
 		and was duly seized upon. I think that it may well have been some
@@ -4047,7 +4073,7 @@ fade
 		<p>
 		So there you have it. Not the JBC, but some dodgy Mancunian c***.
 		Hope that clears things up.
-		${g_source(g=Pat Fish email, d=2003-02-24 08:45:31)}
+		;;Pat Fish email;;;;2003-02-24 08:45:31
 	)}
 		,mp3=${jbc_mp3}/sms.mp3)}
 #live	endif
@@ -4089,7 +4115,7 @@ fade
 		scandal .. hamburg ..cake .. fire_wasted
 	, patsez=${literalizeCommas(
 		 An important personal statement.
-		${g_source(u=${jbc_albums}/scandal.html#hour, g=<b>A Scandal In Bohemia</b> liner notes)}
+		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#hour;;
 	)}
 	)}
 #live	endif
@@ -4184,7 +4210,7 @@ fade
 		bus .. violent .. water .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		Inspired by and dedicated - in part - to the Sweetwater Springs Saloon in Los Osos, California, a splendid rockin' redneck shed, which we heartily recommend to all pompous English whiteboy groups trying to "crack the market Stateside". If you're going to play Nick Cave, sooner or later you're going to hurt yourself; far better to stand in a giant refrigerator with six bottles of Jaegermeister and your crew.
-		${g_source(u=${jbc_letters}/93Aug30/love.html#sweet, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#sweet;;
 	)}
 	,mp3=${jbc_mp3}/sweetwtr.mp3)}
 #live	endif
@@ -4440,7 +4466,7 @@ fade
 		bus .. violent
 	, patsez=${literalizeCommas(
 		A true story. Whaddya want? A diagram?
-		${g_source(u=${jbc_letters}/93Aug30/love.html#whad, g=Pat Letter 1993-08-30)}
+		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#whad;;1993-08-30
 	)}
 	,mp3=${jbc_mp3}/whaddya.mp3)}
 #live	endif
@@ -4498,7 +4524,7 @@ fade
 		I used to live in Birchfield Road
 		--NEXT--
 		Mulreany soirs me up, giggles, and points out that the chords to Whitfield, Sarah & The Birchfield Road Affair would be quite at home in the epicene Steve Miller's Take The Money And Run. He's right, of course, but then we never get to hear records like that in my town. As it goes, neither Whitfield or Sarah ever lived in Birchfield Road, but I did, so I know what I'm talking about. Those upset by Sarah's gratuitous demise towards the end of this unpleasant little narrative will be relieved to learn that she re-appears, alive & well, albeit with a change of name, in the story An Idea Of Europe, gathering dust in a bookstore near you some time in the next ten years. (The white shirt is important.)
-		${g_source(u=${jbc_albums}/spooky.html#whitfield, g=<b>Spooky</b> liner notes)}
+		;;<b>Spooky</b> liner notes;;/albums/spooky.html#whitfield;;
 	)}
 	)}
 #live	endif
@@ -4585,7 +4611,7 @@ fade
 		bacon .. marnie .. gift1 .. drainglass .. fire_wasted
 	, patsez=${literalizeCommas(
 		 Zombie Love is just sick. Max and Rolo and me again, with Jody Palmer on drums, bongoes and "Oi'm jest a rual boy on a day out in London, guvnor".
-		${g_source(u=${jbc_albums}/gift1.html#zombie, g=<b>The Gift Of Music</b> liner notes)}
+		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#zombie;;
 	)}
 	)}
 #live	endif
@@ -5273,7 +5299,7 @@ ${g_credit(g=Keith Morris, d=2010-01-08)}
 		human .. gift2 .. nons .. uncond .. drainglass .. glorious ..cake .. bigtime_jungle .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		The title comes from a rather noir little TV series from the early Sixties wherein the great Herbert Lom played the extremely sexy and not entirely unbrilliant Dr. Alexander Kordu, a psychiatrist with the handy ability to sort out even the most appalling cases within sixty minutes. I love that show, but I love touring better. By the way, anyone who makes suggestions about sex and travel is being extremely rude.
-		${g_source(u=${jbc_albums}/unconditional.html#jungle, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#jungle;;
 	)}
 	,mp3=${jbc_mp3}/hjungle.mp3)}
 #live	endif
@@ -5464,7 +5490,7 @@ ${g_credit(g=Keith Morris, d=2010-01-08)}
 		bacon .. spook .. fire_wasted .. brave
 	, patsez=${literalizeCommas(
 		Sex Engine is a slice of insulting cak with an interesting ending. The tall, dark & easily-blackmailed ${brent} appears on backing vocals. Skinny Puppy fans get writing. And thanks for the liquor, guys... We don't really think you have anything at all in common with Bruno Gerussi...
-		${g_source(u=${jbc_albums}/spooky.html#sex, g=<b>Spooky</b> liner notes)}
+		;;<b>Spooky</b> liner notes;;/albums/spooky.html#sex;;
 	)}
 	)}
 #live	endif
@@ -5608,7 +5634,7 @@ ${g_credit(g=Keith Morris, d=2010-01-08)}
 		scandal .. fire_wasted
 	, patsez=${literalizeCommas(
 		Could refer to a number of things. Can it really be about road accidents? Oblique.
-		${g_source(u=${jbc_albums}/scandal.html#meat, g=<b>A Scandal In Bohemia</b> liner notes)}
+		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#meat;;
 	)}
 	)}
 #live	endif
@@ -5671,7 +5697,7 @@ ${g_credit(g=Keith Morris, d=2010-01-08)}
 		scandal .. drainglass .. glorious .. fire_wasted
 	, patsez=${literalizeCommas(
 		Is this the sort of tune you can play to your mother?
-		${g_source(u=${jbc_albums}/scandal.html#betty, g=<b>A Scandal In Bohemia</b> liner notes)}
+		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#betty;;
 	)}
 	)}
 #live	endif
@@ -5769,7 +5795,7 @@ I haven't got a mind at all.
 		scandal .. fire_wasted
 	, patsez=${literalizeCommas(
 		Warp factor 10. A perfectly reasonable argument in my opinion.
-		${g_source(u=${jbc_albums}/scandal.html#playgroup, g=<b>A Scandal In Bohemia</b> liner notes)}
+		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#playgroup;;
 	)}
 	)}
 #live	endif
@@ -5818,7 +5844,7 @@ I haven't got a mind at all.
 		scandal .. fire_wasted
 	, patsez=${literalizeCommas(
 		Not a joke. It is there, and it is waiting.
-		${g_source(u=${jbc_albums}/scandal.html#desert, g=<b>A Scandal In Bohemia</b> liner notes)}
+		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#desert;;
 	)}
 	)}
 #live	endif
@@ -5885,7 +5911,7 @@ I haven't got a mind at all.
 		marnie .. scandal .. nons .. drainglass .. glorious .. cake .. fire_wasted .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		Do you know what happens if you leave a fish too long in an elevator? Educations.
-		${g_source(u=${jbc_albums}/scandal.html#wheely, g=<b>A Scandal In Bohemia</b> liner notes)}
+		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#wheely;;
 	)}
 	)}
 #live	endif
@@ -6565,7 +6591,7 @@ I haven't got a mind at all.
 		runner .. gift1 .. hamburg .. nons .. glorious .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		You've heard of the Bermuda Triangle? Well, Max has shares in it. Rain , recorded at the same session, concerns sex and the weather and the undoubted connection between the two. Incidentally, it didn't rain once during the three days we were in the studio!
-		${g_source(u=${jbc_albums}/gift1.html#rain, g=<b>The Gift Of Music</b> liner notes)}
+		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#rain;;
 	)}
 	,mp3=${jbc_mp3}/rain.mp3)}
 #live	endif
@@ -6699,7 +6725,7 @@ I haven't got a mind at all.
 		gift1 .. cake .. va_seventeen_3 .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		Lastly, from the same summer sessions, comes Water Max and I, late at night, contemplating the curious tale of the talking elephants, and the endless search for supplies of free drink...
-		${g_source(u=${jbc_albums}/gift1.html#water, g=<b>The Gift Of Music</b> liner notes)}
+		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#water;;
 	)}
 	)}
 #live	endif
@@ -7385,7 +7411,7 @@ I haven't got a mind at all.
 		yoyo .. blue .. family .. uncond .. violent .. lunch .. fire_violent
 	, patsez=${literalizeCommas(
 		A sorry tale of bad people on bad diets doing bad things. Alex Lee gets to do his impressions of "Desert Storm" while Richard Formby goes backwards. Joe makes motorcycle and I still feel like the Elephant Man.
-		${g_source(u=${jbc_albums}/unconditional.html#yo, g=<b>Unconditional</b> liner notes)}
+		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#yo;;
 	)}
 	,mp3=${jbc_mp3}/yoyo.mp3)}
 #live	endif
@@ -7471,7 +7497,7 @@ I haven't got a mind at all.
 #	... <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 	"Gee Flip! Will you really let me hold it?"... Dolphins descended from cows... enraged Italian motorists... New Age psychobabble. All in 3 minutes 45 seconds.
-	${g_source(u=${jbc_press}/95promo_illuminate.html#cute, g=Creation Promo Summary)}
+	;;Creation Promo Summary;;/press/95promo_illuminate.html#cute;;
 	)}
 	,mp3=${jbc_mp3}/cutesub.mp3)}
 #live	endif
@@ -7547,7 +7573,7 @@ I haven't got a mind at all.
 #	... <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 	Defly manoeuvring their way around a Leveller's song title, the JBC show up mob handed and do their collective nut on behalf of Clause Four. Nasty, Brutish & Short... The single.
-	${g_source(u=${jbc_press}/95promo_illuminate.html#16, g=Creation Promo Summary)}
+	;;Creation Promo Summary;;/press/95promo_illuminate.html#16;;
 	)}
 	,mp3=${jbc_mp3}/16years.mp3)}
 #live	endif
@@ -7564,7 +7590,7 @@ I haven't got a mind at all.
 #		<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #		<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		Bolly saw the sharp end of the action in a number of recent conflicts while he was serving in the R.A.F. Now he runs a pub in a remote Northamptonshire village. Welcome to the Difficult Tenth Album.
-		${g_source(u=${jbc_press}/95promo_illuminate.html#eleph, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#eleph;;
 	)}
 	)}
 #live	endif
@@ -7635,7 +7661,7 @@ I haven't got a mind at all.
 #		<br/><b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #		<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		It's always difficult to sing about real people, especially when they're famous. But fan records are cool.
-		${g_source(u=${jbc_press}/95promo_illuminate.html#eno, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#eno;;
 	)}
 	,mp3=${jbc_mp3}/enosings.mp3)}
 #live	endif
@@ -7679,7 +7705,7 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		The cannabis/adrenalin combo comes good again. A song about a horrendous motion picture featuring, unbelievably, Bob Dylan.
-		${g_source(u=${jbc_press}/95promo_illuminate.html#ugly, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#ugly;;
 	)}
 	)}
 #live	endif
@@ -7749,7 +7775,7 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		 "I've found it sir, this'll be the non-specific situationaist art-misery ballad."
-		${g_source(u=${jbc_press}/95promo_illuminate.html#scarlett, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#scarlett;;
 	)}
 	)}
 #live	endif
@@ -7766,7 +7792,7 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		 The JBC celebrate the lusty talent of Mr ${hend}.
-		${g_source(u=${jbc_press}/95promo_illuminate.html#beetle, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#beetle;;
 	)}
 	)}
 #live	endif
@@ -7823,7 +7849,7 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		Your kids are all evil. Your mother's a crook - do you believe what they're telling you yet?"
-		${g_source(u=${jbc_press}/95promo_illuminate.html#cops, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#cops;;
 	)}
 	)}
 #live	endif
@@ -7866,7 +7892,7 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		"When the doomed go shopping, boy, there ain't no stopping: we're just happy to be here."
-		${g_source(u=${jbc_press}/95promo_illuminate.html#truck, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#truck;;
 	)}
 	)}
 #live	endif
@@ -7915,7 +7941,7 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		Dean Read was the American folk singer who contrived, staggeringly, to become the biggest pop star in East Germany. They're both gone now, forever.
-		${g_source(u=${jbc_press}/95promo_illuminate.html#blue, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#blue;;
 	)}
 	)}
 #live	endif
@@ -7958,12 +7984,11 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		A surprisingly tranquil song about a rottweiller.
-		${g_source(u=${jbc_press}/95promo_illuminate.html#sumo, g=Creation Promo Summary)}
+		;;/=Creation Promo Summary;;/press/95promo_illuminate.html#sumo;;
 		)},
 		others=${literalizeCommas(
 		"No, really Sumo is a dog (rottweiler, I think) owned by a close friend of Pats."
-		${g_credit(g=M.G.J.Jenkins@exeter.ac.uk, d=1995-11-01 10:07:31)}
-	)}
+		)};;M.G.J.Jenkins@exeter.ac.uk;;;;1995-11-01 10:07:31
 	)}
 #live	endif
 
@@ -8010,7 +8035,7 @@ I haven't got a mind at all.
 #	<br/><b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		Years of incarceration in the asylum, years of desperate scrabbling in ancient texts, and then one night - heads off!
-		${g_source(u=${jbc_press}/95promo_illuminate.html#snakey, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#snakey;;
 	)}
 	)}
 #live	endif
@@ -8081,7 +8106,7 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		"One day Osiris will come & show a world of two legged apes what they can do: but they will never belong here. And they're gonna make a thousand points of light upon the earth, but you know the only light comes from the stars."
-		${g_source(u=${jbc_press}/95promo_illuminate.html#land, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#land;;
 	)}
 	,mp3=${jbc_mp3}/land.mp3)}
 #live	endif
@@ -8140,7 +8165,7 @@ I haven't got a mind at all.
 		ill
 	, patsez=${literalizeCommas(
 		 A simple narrative tale of human endurance: "Cigarettes, Beer, Ticket Money... What could possibly go wrong?"
-		${g_source(u=${jbc_press}/95promo_illuminate.html#lulu, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#lulu;;
 		)},
 		others=${literalizeCommas(
 		Lulu, if you were wondering is the jbc's french connection.<br/>
@@ -8154,10 +8179,9 @@ I haven't got a mind at all.
 		about, apparently. Both Pat and Lulu were ever so slightly drunk for
 		the ceremony, which happened the next day to finishing a tour in the
 		states!)
-		${g_credit(g=M.G.J.Jenkins@exeter.ac.uk, d=1995-11-01 10:07:31)}
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
-	)}
+	)};;M.G.J.Jenkins@exeter.ac.uk;;;;1995-11-01 10:07:31
 	,mp3=${jbc_mp3}/lulu.mp3)}
 #live	endif
 
@@ -8246,7 +8270,7 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		The JBC continue in pissy mood, trying to sneak up on a few seedy wankers from the religious & nationalist right.
-		${g_source(u=${jbc_press}/95promo_illuminate.html#surf, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#surf;;
 	)}
 	)}
 #live	endif
@@ -8271,7 +8295,7 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		"What you want... what you want is miracles and wonders, and aeroplane, a special view. True stories will have to do.
-		${g_source(u=${jbc_press}/95promo_illuminate.html#true, g=Creation Promo Summary)}
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#true;;
 	)}
 	)}
 #live	endif
@@ -8787,8 +8811,7 @@ I haven't got a mind at all.
 
 	${lyricsFooter(onlist=
 		rotten
-		,
-		credits=${max}
+		,credits=${max}
 	)}
 #live	endif
 
@@ -8834,10 +8857,7 @@ Everyone pretend...
 
 	${lyricsFooter(onlist=
 		adventurers .. va_abus_126
-		,
-		credits=${literalizeCommas(
-&copy; ${pat} 2011
-)}
+		,credits=${pat};;;;2011
 	)}
 #live	endif
 
@@ -8873,9 +8893,7 @@ Everyone pretend...
 
 	${lyricsFooter(onlist=
 		adventurers .. va_nh_underglass
-		,
-		credits=${literalizeCommas(
-	&copy; ${pat} 2005
+		,credits=${pat};;;;&copy; 2005
 	)}
 	)}
 #live	endif
@@ -8919,9 +8937,7 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=
 		single_saints .. adventurers
-		,
-		credits=${literalizeCommas(
-&copy; ${pat} 2012
+		,credits=${pat};;;;&copy; 2012
 )}
 	)}
 #live	endif
@@ -8967,9 +8983,7 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=
 		adventurers
-		,credits=${literalizeCommas(
-	&copy; ${pat} 2011
-	)}
+		,credits=${pat};;;;&copy; 2011
 	)}
 #live	endif
 
@@ -9008,9 +9022,7 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=
 		adventurers
-		,credits=${literalizeCommas(
-	&copy; Max Eider 2012
-	)}
+		,credits=${max};;;;2012
 	)}
 #live	endif
 
@@ -9050,9 +9062,7 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=
 		single_saints .. adventurers
-		,credits=${literalizeCommas(
-	&copy; ${pat} 2010
-	)}
+		,credits=${pat};;;;2010
 	)}
 #live	endif
 
@@ -9081,9 +9091,7 @@ Break out and find out tonight.
 	${lyricsFooter(onlist=
 		va_nm_vol1 ..
 		adventurers
-		,credits=${literalizeCommas(
-	&copy; ${pat} 2006
-	)}
+		,credits=${pat};;;;2006
 		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3,
 		title=Mercy (${va_nm_vol1} version)
 	)}
@@ -9112,9 +9120,7 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=
 		adventurers
-		,credits=${literalizeCommas(
-	&copy; ${pat} 2011
-	)}
+		,credits=${pat};;;;2011
 	)}
 #live	endif
 
@@ -9153,9 +9159,7 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=
 		adventurers
-		,credits=${literalizeCommas(
-	&copy; ${pat} 2004
-	)}
+		,credits=${pat};;;;2004
 	)}
 #live	endif
 
@@ -9202,9 +9206,7 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=
 		adventurers
-		,credits=${literalizeCommas(
-	&copy; ${pat} 2011
-	)}
+		,credits=${pat};;;;2011
 	)}
 #live	endif
 
@@ -9229,9 +9231,7 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=
 		adventurers
-		,credits=${literalizeCommas(
-	&copy; ${pat} 2012
-	)}
+		,credits=${pat};;;;2012
 	)}
 #live	endif
 
@@ -9679,11 +9679,9 @@ Break out and find out tonight.
 	Hit him again, he's not quite done yet.
 
 	${lyricsFooter(mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3, title=2005 demo,
-		onlist=wilson_demo_2005,
-		credits=${literalizeCommas(
-	&copy; ${pat}, ${botty}, ${curt}
-	Feb. 2003
-		)})}
+		onlist=wilson_demo_2005
+		,credits=${literalizeCommas(${pat}, ${botty}, ${curt})};;;;&copy; Feb. 2003
+		)}
 #live	endif
 
 #define	wilson_police_chief.html
@@ -9731,10 +9729,7 @@ Break out and find out tonight.
 
 	${lyricsFooter(mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3, title=2005 demo,
 		onlist=wilson_demo_2005,
-		credits=${literalizeCommas(
-	&copy; ${pat}, ${botty}
-	Feb. 2003
-	)}
+		,credits=${literalizeCommas(${pat}, ${botty})};;;;&copy; Feb. 2003
 	)}
 #live	endif
 
@@ -9784,8 +9779,7 @@ Break out and find out tonight.
 
  
 	${lyricsFooter(
-		credits=${literalizeCommas(
-	&copy; ${botty}/${pat} July 2002
+		credits=${literalizeCommas(${pat}, ${botty})};;;;&copy; July 2002
 	)}
 #live	endif
 
@@ -9847,9 +9841,7 @@ Break out and find out tonight.
 	)}
 
 	${lyricsFooter(
-		credits=${literalizeCommas(
-	&copy; ${botty}/${pat} - July 2002
-	)}
+		credits=${literalizeCommas(${pat}, ${botty})};;;;&copy; July 2002
 	)}
 #live	endif
 
@@ -9884,9 +9876,7 @@ Break out and find out tonight.
 
 	${lyricsFooter(mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3, title=2002 demo,
 		onlist=wilson_demo_2002,
-		credits=${literalizeCommas(
-	&copy; The entire population of the world, with a chorus by Bot.
-	)}
+		credits=${literalizeCommas(&copy; The entire population of the world with a chorus by Bot)}
 	)}
 #live	endif
 
@@ -9916,9 +9906,8 @@ Break out and find out tonight.
 	I come to destroy.
 
 	${lyricsFooter(
-		credits=${literalizeCommas(
-	&copy; ${pat}, ${botty}, King Horror
-	)})}
+		credits=${literalizeCommas(&copy; ${pat}, ${botty}, King Horror)}
+		)}
 #live	endif
 
 #define	wilson_secret_government.html
@@ -9946,9 +9935,8 @@ Break out and find out tonight.
 	Secret Government underground.
 
 	${lyricsFooter(
-		credits=${literalizeCommas(
-	&copy; ${pat}
-	)})}
+		credits=${pat}
+	)}
 #live	endif
 
 #define	wilson_burn_hollywood_burn.html
@@ -9988,9 +9976,8 @@ Break out and find out tonight.
 
 	${lyricsFooter(mp3=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3, title=2002 demo,
 		onlist=wilson_demo_2002,
-		credits=${literalizeCommas(
-	&copy; ${pat}/${botty}
-	)})}
+		credits=${literalizeCommas( &copy; ${pat}/${botty})}
+	)}
 #live	endif
 
 #define	wilson_quality_people.html
@@ -10034,9 +10021,8 @@ Break out and find out tonight.
 #		${linkAudio(title=Quality People (2002 demo), mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3, autolink=no)}
 	${lyricsFooter(mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3, title=2003 demo,
 		onlist=va_wilson_heyday ..  wilson_demo_2003 .. wilson_demo_2002,
-		credits=${literalizeCommas(
-	&copy; ${botty}, ${pat}, Soybaz
-	)})}
+		credits=${literalizeCommas( &copy; ${botty}, ${pat}, Soybaz)}
+	)}
 #live	endif
 
 #define	wilson_istanbul_connection.html
@@ -10089,17 +10075,16 @@ Break out and find out tonight.
 
 	${lyricsFooter(mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3, title=2003 demo, url=https://www.youtube.com/embed/r074mp41514,
 		onlist=wilson_demo_2003 .. wilson_demo_2002,
-		credits=${literalizeCommas(
-	&copy; ${pat}, ${curt}, ${botty}, Traditional, Burroughs, Perry
-	)})}
+		credits=${literalizeCommas( &copy; ${pat}, ${curt}, ${botty}, Traditional, Burroughs, Perry)}
+	)}
 #live	endif
 
 #define	wilson_dark_agenda.html
 #live	if (getval(page) = wilson_dark_agenda.html)
 	${mkHeader(project=wilson, section=Lyrics, title=Dark Agenda)}
 
-	<h1><font color="#ff0000">Censored for your protection</font></h1>
-	${shh(
+#	<h1><font color="#ff0000">Censored for your protection</font></h1>
+#	${shh(
 	Eat! Sleep! Drink! Rock!<br/>
 	Eat! Sleep...Don't Sleep! Rock!<br/>
 	<br/>
@@ -10133,19 +10118,22 @@ Break out and find out tonight.
 	Leon Trotsky! <br/>
 	Fidel Castro! <br/>
 	Sam and Dave!
-	)}
+#	)}
 
 
-	${shh(
-	<p>
 
+	${lyricsFooter(mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, title=2002 Demo,
+		onlist=wilson_demo_2002,
+		credits=${literalizeCommas( &copy; ${pat}/${botty})};;;;2001,
+	patsez=${literalizeCommas(
 	<b>Concerning the ridiculous need for self-censorship..</b> (fat tips to Mr Poindexter and Ashcroft!)
-	<blockquote>
+	<p>
 	You see what I mean. Ah well. You and I know that the Taliban Jeep/New York
 	stuff is about that time that the JBC got a taxi back from the Spin offices
 	down Broadway to our secret Downtown Headquarters. The young taxi driver
 	with the huge beard and the black turban kept plying us with questions about
 	every aspect of Western celebrity stupidity from Michael Jackson to Lady Diana.
+	</p>
 	<p>
 	He couldn't say "musician" - he kept calling us "magicians". Later that
 	day, I overheard Owen saying to somebody - "Oh yeah, we had a taxi ride
@@ -10154,18 +10142,15 @@ Break out and find out tonight.
 	"penetrated" Taliban-run Afghanistan with his secret camera, and we heard
 	him saying repeatedly (and endearingly nervously) "Taliban Jeep", we thought
 	of that New York experience and we thought of our backing track and so on...
+	</p>
 	<p>
 	It was March 2001...
+	</p>
 	<p>
 	The Stone
-	</blockquote>
+	</p>
 	)}
-
-	${lyricsFooter(mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, title=2002 Demo,
-		onlist=wilson_demo_2002,
-		credits=${literalizeCommas(
-	&copy; ${pat}/${botty} 2001
-	)})}
+	)}
 #live	endif
 
 #define	wilson_no_winners.html
@@ -10207,9 +10192,7 @@ Break out and find out tonight.
 		like it.
 	)}
 		,
-		credits=${literalizeCommas(
-	&copy; ${pat}/${botty} April 2005
-	)}
+		credits=${literalizeCommas( &copy; ${pat}/${botty})};;;;2005-04
 	)}
 #live	endif
 
@@ -10252,9 +10235,8 @@ Break out and find out tonight.
 	Fear the madness generator.
 
 	${lyricsFooter(
-		credits=${literalizeCommas(
-	&copy; ${pat}/${botty} April 2005
-	)})}
+		credits=${literalizeCommas( &copy; ${pat}/${botty})};;;;2005-04
+	)}
 #live	endif
 
 #define	sumosonic_come_friendly_spacemen.html
@@ -10311,9 +10293,8 @@ Break out and find out tonight.
 	Come, friendly spacemen, come on down.
 
 	${lyricsFooter(onlist=thisissumo..spacemen..spacemen12,mp3=http://sumosonic.com/audio/come_friendly_spacemen.mp3, title=Demo Version,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1995
-	)})}
+		credits=${literalizeCommas(&copy; ${pat})};;;;1995
+	)}
 #live	endif
 
 #define	sumosonic_gods_green_earth.html
@@ -10349,9 +10330,8 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=thisissumo,title=Demo Version, mp3=http://sumosonic.com/audio/gods_green_earth.mp3,
 		url=/video/sumosonic/sumosonic_gods_green_earth,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1995
-	)})}
+		credits=${literalizeCommas( &copy; ${pat})};;;;1995
+	)}
 #live	endif
 
 #define	sumosonic_monks_of_kung_fu.html
@@ -10370,9 +10350,8 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=thisissumo..spacemen..spacemen12,title=Demo Version, mp3=http://sumosonic.com/audio/monks_of_kung_fu.mp3,
 		url=/video/sumosonic/sumosonic_monks_of_kung_fu,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1996
-	)})}
+		credits=${literalizeCommas(&copy; ${pat})};;;;1996
+	)}
 #live	endif
 
 #define	sumosonic_business_and_work.html
@@ -10429,9 +10408,8 @@ Break out and find out tonight.
 	<br/><b>Chorus</b>
 
 	${lyricsFooter(onlist=thisissumo,title=Demo Version, mp3=http://sumosonic.com/audio/business_and_work.mp3,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1996
-	)})}
+		credits=${literalizeCommas( &copy; ${pat})};;;;1996
+	)}
 #live	endif
 
 #define	sumosonic_destroy_all_monsters.html
@@ -10506,9 +10484,8 @@ Break out and find out tonight.
 	<br/>Nothing much has changed.
 
 	${lyricsFooter(onlist=thisissumo,title=Demo Version, mp3=http://sumosonic.com/audio/destroy_all_monsters.mp3,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1995
-	)})}
+		credits=${literalizeCommas( &copy; ${pat})};;;;1995
+	)}
 #live	endif
 
 #define	sumosonic_stupid.html
@@ -10573,9 +10550,8 @@ Break out and find out tonight.
 	<br/>Hey, stupid!
 
 	${lyricsFooter(onlist=thisissumo,title=Demo Version, mp3=http://sumosonic.com/audio/hey_stoopid.mp3,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1996
-	)})}
+		credits=${literalizeCommas( &copy; ${pat})};;;;1996
+	)}
 #live	endif
 
 #define	sumosonic_everything_is_wonderful.html
@@ -10605,9 +10581,8 @@ Break out and find out tonight.
 	<br/>Everything is wonderful!
 
 	${lyricsFooter(onlist=thisissumo,title=Demo Version, mp3=http://sumosonic.com/audio/everything_is_wonderful.mp3,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1995
-	)})}
+		credits=${literalizeCommas( &copy; ${pat})};;;;1995
+	)}
 #live	endif
 
 #define	sumosonic_fern_schnell_gut.html
@@ -10670,9 +10645,8 @@ Break out and find out tonight.
 	<br/>Fern, schnell, gut - let the people be free.
 
 	${lyricsFooter(onlist=thisissumo,title=Demo Version, mp3=http://sumosonic.com/audio/fern_schnell_gut.mp3,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1995
-	)})}
+		credits=${literalizeCommas( &copy; ${pat})};;;;1995
+	)}
 #live	endif
 
 #define	sumosonic_cats_life.html
@@ -10725,9 +10699,8 @@ Break out and find out tonight.
 	<br/>Ah, look at you - what did you expect but a cat's life?
 
 	${lyricsFooter(onlist=thisissumo,title=Demo Version, mp3=http://sumosonic.com/audio/cats_life.mp3,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1996
-	)})}
+		credits=${literalizeCommas( &copy; ${pat})};;;;1996
+	)}
 #live	endif
 
 #define	sumosonic_my_ultimate_baby.html
@@ -10766,9 +10739,8 @@ Break out and find out tonight.
 	Thank you.  Thank you very much.
 
 	${lyricsFooter(title=Demo Version, mp3=http://sumosonic.com/audio/my_ultimate_baby.mp3,
-		credits=${literalizeCommas(
-	arranged by ${pat} words by 'Daniel Fantasy'
-	)})}
+		credits=${literalizeCommas( arranged by ${pat} words by 'Daniel Fantasy')}
+	)}
 #live	endif
 
 #define	sumosonic_we_are_the_traffic.html
@@ -10818,14 +10790,13 @@ Break out and find out tonight.
 	<br/><b>Chorus</b>	
 
 	${lyricsFooter(title=Demo Version, mp3=http://sumosonic.com/audio/we_are_the_traffic.mp3,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1991
-	)},
-	patsez=${literalizeCommas(
-	Initially written at the
-	<b>Nitronic Research</b>
-	Wind Tunnels, Los Angeles, California.
-	)})}
+		credits=${literalizeCommas( &copy; ${pat})};;;;1991 ,
+		patsez=${literalizeCommas(
+			Initially written at the
+			<b>Nitronic Research</b>
+			Wind Tunnels, Los Angeles, California.
+		)}
+	)}
 #live	endif
 
 #define	sumosonic_sputnik.html
@@ -10872,9 +10843,8 @@ Break out and find out tonight.
 
 	${lyricsFooter(onlist=thisissumo,title=Demo Version, mp3=http://sumosonic.com/audio/sputnik.mp3,
 		url=/video/sumosonic/sumosonic_sputnik,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1996
-	)})}
+		credits=${literalizeCommas( &copy; ${pat})};;;;1996
+	)}
 #live	endif
 
 #define	sumosonic_radio_saigon.html
@@ -10893,9 +10863,8 @@ Break out and find out tonight.
 	<br/>Radio Saigon
 
 	${lyricsFooter(onlist=thisissumo,
-		credits=${literalizeCommas(
-	&copy; ${pat} 1996
-	)})}
+		credits=${literalizeCommas( &copy; ${pat})};;;;1996
+	)}
 #live	endif
 
 #define	sumosonic_hey_star.html
@@ -10922,9 +10891,8 @@ Break out and find out tonight.
 	<br/>Your blurring star.
 
 	${lyricsFooter(
-		credits=${literalizeCommas(
-	&copy; ${wolfi} 1993, arranged by Sumosonic
-	)})}
+		credits=${literalizeCommas(&copy; ${wolfi} arranged by Sumosonic)};;;;1993
+	)}
 #live	endif
 
 #define	wildlife.html

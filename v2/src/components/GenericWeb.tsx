@@ -8,7 +8,7 @@ const	genericWeb = ({ x, g, u, t, s, d }: {
 	s?: string
 	d?: string
 }) => (
-	(x || g || u || parseDate(d)) && <div className={s}>
+	(x || g || u || parseDate(d)) && <span className={s}>
 		{(t) && <><b>{t}</b>:{' '}</>}
 		{(x) && <>x</>}
 		{(() => {
@@ -31,7 +31,7 @@ const	genericWeb = ({ x, g, u, t, s, d }: {
 			}
 		})()}
 		{(parseDate(d)) && <>{' '}{dateDiff(d)}</>}
-	</div>
+	</span>
 )
 
 export const Source = ({ g, u, d }: {

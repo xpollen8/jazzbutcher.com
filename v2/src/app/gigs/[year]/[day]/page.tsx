@@ -58,7 +58,7 @@ const Act = (str?: string) => {
 	return str;
 }
 
-const Caption = ({ caption, className="caption" }: { caption?: string, className: string }) => caption && <div className={className}>{caption}</div>
+const Caption = ({ caption, className="caption" }: { caption?: string, className?: string }) => caption && <div className={className}>{caption}</div>
 
 const removeHTML = (str?: string) => {
 	const deParagraphed = str

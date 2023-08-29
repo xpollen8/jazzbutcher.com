@@ -9,6 +9,7 @@ import './styles.css';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Tag from '@/components/Tag';
 import { Credit } from '@/components/GenericWeb';
 //import { mapActs, mapPerformers } from '@/lib/defines';
 
@@ -156,7 +157,7 @@ const GigPosters = (data: any) => <><Iterator data={data} func={GigPoster} class
 
 const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
 
-const GigPhotos = (data: any) => <><Iterator data={data} func={GigPhoto} className="flex flex-row flex-wrap gap-5 justify-center" /></>
+const GigPhotos = (data: any) => <><Tag>Photos</Tag><Iterator data={data} func={GigPhoto} className="flex flex-row flex-wrap gap-5 justify-center" /></>
 
 const GigNote = (data: any, key: number) => <GigText {...data} />
 
@@ -186,14 +187,15 @@ const GigPlayer = ({ data }: any) => {
 	return (
 		<span style={{ whiteSpace: 'nowrap' }}>
 			{Player(data?.performer)}
-			{' '}<span className="smalltext">({data?.instruments?.split(',').join(', ')})</span>
+			{(data?.instruments?.length) && <>{' '}<span className="smalltext">({data?.instruments?.split(',').join(', ')})</span></>}
 		</span>
 	)
 }
 const GigPlayers = (data: any) => (
 	<>
+			<Tag>Performers</Tag>
 		<div className="g_who">
-			<><Iterator data={data} func={GigPlayer} className="flex flex-wrap space-x-5" /></>
+			<Iterator data={data} func={GigPlayer} className="flex flex-wrap space-x-5" />
 		</div>
 	</>
 )
@@ -206,11 +208,10 @@ const GigReview = ({ data }: any) => {
 }
 const GigReviews = (data: any) => <><Iterator data={data} func={GigReview} /></>
 
-const GigDetails = ({ data }: any) => {
+const GigDetails = ({ data, extra }: any) => {
 	return (<>
-		Details
-		{GigPlayers(data?.players_JBC)}
-		{GigWith(data?.players_with)}
+		{GigPlayers(extra?.players_JBC)}
+		{GigWith(extra?.players_with)}
 	</>)
 }
 
@@ -318,14 +319,8 @@ const Content = ({ datetime }: { datetime: string }) => {
 		}
 	})
 
-	// clean up detail object
-	//delete details['played'];
-	//delete details['media'];
-	//delete details['text'];
-	//delete details['players'];
-	//delete details['press'];
-
 	const extras = [
+		//{ label: 'Details', func: (GigDetails },
 		{ label: 'Photos', lookup: 'media_pix', func: GigPhotos },
 		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
 		{ label: 'Tickets', lookup: 'media_ticket', func: GigTickets },
@@ -338,13 +333,13 @@ const Content = ({ datetime }: { datetime: string }) => {
 	]
 
 	return <div className={`(isLoading) ? 'blur-sm' : '' w-full`}>
-		<GigDetails data={{...gig,
-			players_JBC: extra['players_JBC'],
-			players_with: extra['players_with']
-		}} />
-		<Tabs.Root className="TabsRoot" defaultValue="tab0">
+		<Tag>Live Performance</Tag>
+		<Tabs.Root className="TabsRoot mx-2" defaultValue="details">
 			<Tabs.List className="TabsList" aria-label="Available gig details">
-				{extras.map(({ label, lookup }: any, key: number) => {
+				<Tabs.Trigger key='details' className="TabsTrigger" value='details'>
+					Details
+				</Tabs.Trigger>
+				{extras?.map(({ label, lookup }: any, key: number) => {
 					if (extra[lookup]?.length) {
 						return (
 							<Tabs.Trigger key={key} className="TabsTrigger" value={`tab${key}`}>
@@ -354,11 +349,13 @@ const Content = ({ datetime }: { datetime: string }) => {
 					}
 				})}
 			</Tabs.List>
-			{extras.map(({ label, lookup, func }: any, key: number) => (
-					<Tabs.Content key={key} className="TabsContent -mx-5" value={`tab${key}`}>
-						<div className="bg-slate-100 px-5 py-3">{func(extra[lookup])}</div>
-					</Tabs.Content>
-					)
+			<Tabs.Content key='details' className="TabsContent -mx-4" value='details'>
+				<div className="bg-slate-100"><GigDetails data={gig} extra={extra} /></div>
+			</Tabs.Content>
+			{extras?.map(({ label, lookup, func }: any, key: number) =>
+				<Tabs.Content key={key} className="TabsContent -mx-4" value={`tab${key}`}>
+					<div className="bg-slate-100">{func(extra[lookup])}</div>
+				</Tabs.Content>
 			)}
 		</Tabs.Root>
 	</div>

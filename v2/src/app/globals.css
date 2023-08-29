@@ -81,8 +81,26 @@
 .source, .credit, .reviewer {
 	margin-top: .5em;
 	margin-bottom: .5em;
+	padding: 2px;
 	color: #666;
 	font-size: .9em;
+	background-color: #ddddee;
+}
+.image {
+	border: 1px solid #333;
+	background-color: 'white';
+	padding: 4px;
+	border-radius: 5px;
+}
+.image:hover {
+	outline: 2px solid;
+}
+.caption {
+	padding: 3px;
+}
+.credits {
+	height: 100%;
+	text-align: center;
 }
 .song {
 }

@@ -58,7 +58,7 @@ const Act = (str?: string) => {
 	return str;
 }
 
-const Caption = (caption?: string) => caption &&  <div className="caption">{caption}</div>
+const Caption = ({ caption, className="caption" }: { caption?: string, className: string }) => caption && <div className={className}>{caption}</div>
 
 const removeHTML = (str?: string) => {
 	const deParagraphed = str
@@ -114,15 +114,15 @@ const GigMedia = ({ data }: any) => {
 	const caption = parseCaption(data?.image_caption);
 	const alt = caption || `Gig ${data?.type}`;
 
-	return (<>
-		<span className="image">
-			<Link href={`${image}`}>
-				<Image src={thumb} width={500} height={500} alt={alt} />
-			</Link>
-		</span>
-		{Caption(caption)}
-		<Credit g={data?.credit} u={data?.credit_url} d={data?.credit_date} />
-	</>)
+	return (<div className="image drop-shadow-md" style={{ width: width / 1.45 }}>
+		<Link href={`${image}`}>
+			<Image src={thumb} width={width / 1.5} height={height / 1.5} alt={alt} className="max-w-md" />
+		</Link>
+		<div className="credits">
+			<Caption caption={caption} />
+			<Credit g={removeHTML(data?.credit)} u={data?.credit_url} d={data?.credit_date} />
+		</div>
+	</div>)
 }
 
 const GigText = ({ data }: any) => {
@@ -144,19 +144,19 @@ const Iterator = ({ data, func, className }: any) => (
 
 const GigTicket = (data: any, key: number) => <GigMedia {...data} />
 
-const GigTickets = (data: any) => <><Iterator data={data} func={GigTicket} /></>
+const GigTickets = (data: any) => <><Iterator data={data} func={GigTicket} className="flex flex-row flex-wrap gap-5 justify-center" /></>
 
 const GigSetlist = (data: any, key: number) => <GigMedia {...data} />
 
-const GigSetlists = (data: any) => <><Iterator data={data} func={GigSetlist} /></>
+const GigSetlists = (data: any) => <><Iterator data={data} func={GigSetlist} className="flex flex-row flex-wrap gap-5 justify-center" /></>
 
 const GigPoster = (data: any, key: number) => <GigMedia {...data} />
 
-const GigPosters = (data: any) => <><Iterator data={data} func={GigPoster} /></>
+const GigPosters = (data: any) => <><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center" /></>
 
 const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
 
-const GigPhotos = (data: any) => <><Iterator data={data} func={GigPhoto} /></>
+const GigPhotos = (data: any) => <><Iterator data={data} func={GigPhoto} className="flex flex-row flex-wrap gap-5 justify-center" /></>
 
 const GigNote = (data: any, key: number) => <GigText {...data} />
 
@@ -209,6 +209,8 @@ const GigReviews = (data: any) => <><Iterator data={data} func={GigReview} /></>
 const GigDetails = ({ data }: any) => {
 	return (<>
 		Details
+		{GigPlayers(data?.players_JBC)}
+		{GigWith(data?.players_with)}
 	</>)
 }
 
@@ -324,19 +326,22 @@ const Content = ({ datetime }: { datetime: string }) => {
 	//delete details['press'];
 
 	const extras = [
-		{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
-		{ label: 'With', lookup: 'players_with', func: GigWith },
 		{ label: 'Photos', lookup: 'media_pix', func: GigPhotos },
 		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
-		{ label: 'Setlists', lookup: 'media_setlist', func: GigSetlists },
 		{ label: 'Tickets', lookup: 'media_ticket', func: GigTickets },
+		{ label: 'Setlists', lookup: 'media_setlist', func: GigSetlists },
+		{ label: 'Played', lookup: 'played', func: GigPlayed },
+		//{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
+		//{ label: 'With', lookup: 'players_with', func: GigWith },
 		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
 		{ label: 'Reviews', lookup: 'text_review', func: GigReviews },
-		{ label: 'Played', lookup: 'played', func: GigPlayed },
 	]
 
 	return <div className={`(isLoading) ? 'blur-sm' : '' w-full`}>
-		<GigDetails gig={gig} />
+		<GigDetails data={{...gig,
+			players_JBC: extra['players_JBC'],
+			players_with: extra['players_with']
+		}} />
 		<Tabs.Root className="TabsRoot" defaultValue="tab0">
 			<Tabs.List className="TabsList" aria-label="Available gig details">
 				{extras.map(({ label, lookup }: any, key: number) => {
@@ -350,8 +355,8 @@ const Content = ({ datetime }: { datetime: string }) => {
 				})}
 			</Tabs.List>
 			{extras.map(({ label, lookup, func }: any, key: number) => (
-					<Tabs.Content key={key} className="TabsContent" value={`tab${key}`}>
-						<div className="bg-slate-100 px-3 py-3">{func(extra[lookup])}</div>
+					<Tabs.Content key={key} className="TabsContent -mx-5" value={`tab${key}`}>
+						<div className="bg-slate-100 px-5 py-3">{func(extra[lookup])}</div>
 					</Tabs.Content>
 					)
 			)}

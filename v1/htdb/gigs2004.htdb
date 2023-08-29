@@ -1126,7 +1126,6 @@
 		)},
 		posters=
 			/images/20040606/20040606_poster.jpg$$
-			/images/20040606/20040606_poster2.jpg$$
 		,
 		pat=${literalizeCommas(
 			It's the first weekend of June 2004 and all over the UK people are getting themselves overexcited commemorating

@@ -9,7 +9,9 @@ import './styles.css';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-//import * as Gig from '@/components/GigProfile';
+import Tag from '@/components/Tag';
+import { Credit } from '@/components/GenericWeb';
+//import { mapActs, mapPerformers } from '@/lib/defines';
 
 import { parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime } from '@/lib/macros';
 import apiData from '@/lib/apiData';
@@ -25,58 +27,51 @@ const useGig = (datetime: string) => {
 	}
 }
 
-const Iterator = (data: any, func: any) => {
-	if (!(data && data.length)) return <></>;
-	return (<div className="bg-slate-300">
-		<ol>
-		{data.map((d: any, key: number) => {
-			return (<li key={key}>{func({ data: d })}</li>)
-		})}
-		</ol>
-	</div>)
+const Player = (str?: string) => {
+  if (!str?.length) return;
+	const pattern = /\[\[person:(.*?)\]\]/;
+	const match = str.match(pattern);
+	if (match) {
+		const lookup = match[1].replace("'", '');
+		return lookup?.replace(/_/g, ' ');
+		/*
+		const found = mapPerformers[lookup];
+		if (!found) return lookup;
+		return mapPerformers[lookup];
+		*/
+	}
+	return str;
 }
 
-const GigTicket = ({ data }: any) => {
-	return (
-		<div>
-			{/*console.log("Ticket", data)*/}
-		</div>
-	)
+const Act = (str?: string) => {
+  if (!str?.length) return;
+	const pattern = /\[\[act:(.*?)\]\]/;
+	const match = str.match(pattern);
+	if (match) {
+		const lookup = match[1].replace("'", '');
+		return lookup?.replace(/_/g, ' ');
+		/*
+		const found = mapAct[lookup];
+		if (!found) return lookup;
+		return mapPerformers[lookup];
+		*/
+	}
+	return str;
 }
-const GigTickets = (data: any) => Iterator(data, GigTicket)
 
-const GigSetlist = ({ data }: any) => {
-	return (
-		<div>
-			{/*console.log("Setlist", data)*/}
-		</div>
-	)
-}
-const GigSetlists = (data: any) => Iterator(data, GigSetlist)
-
-const GigPoster = ({ data }: any) => GigPhoto({ data });
-/*{
-	return (
-		<div>
-			{console.log("Poster", data)}
-			{data?.image}
-		</div>
-	)
-}*/
-const GigPosters = (data: any) => Iterator(data, GigPoster)
-
-const Caption = (caption?: string) => caption &&  <><br/><div className="caption">{caption}</div></>
+const Caption = ({ caption, className="caption" }: { caption?: string, className?: string }) => caption && <div className={className}>{caption}</div>
 
 const removeHTML = (str?: string) => {
 	const deParagraphed = str
+		?.replace(/<BR>/ig, '<br/>') // <BR> => <br/>
 		?.replace(/<p>/ig, '<br/>') // <p> => <br/>
 		?.replace(/<p([^>]+)>/ig, '<br/>')  // <p.....> => <br/>
 		?.replace(/<\/p>/ig, '<br/>') // </p> => <br/>
 		?.trim();
 	// need to leave <br/ tags intact
 	const unlinked = deParagraphed
-		?.replace(/(<(?!br\/)([^>]+)>)/ig, '')?.trim();
-		//?.replace(/(<([^>]+)>)/ig, '')?.trim();
+		?.replace(/(<(?!br\/)([^>]+)>)/ig, '')?.trim()
+		//?.replace(/(<([^>]+)>)/ig, '')?.trim()
 	return unlinked;
 }
 
@@ -84,47 +79,89 @@ const RenderHTML = ({ body }: { body?: string}) => body && <div dangerouslySetIn
 
 const parseCaption = (str?: string) => removeHTML(str);
 
-const parsePhotoData = (str: string) => {
+const parsePhoto = (str: string) => {
 	if (!str) return {};
-	const [ image, raw_caption ] = str.split(';;');
-	//console.log("parsePhotoData", { image, raw_caption });
-	const [ orig, base, ext ] = image?.match(/([^.]+)\.([^.]+)?$/) || [];
-	//console.log("parsePhotoData", { image, raw_caption, orig, base, ext });
-	if (!base) return {};
-	const caption = parseCaption(raw_caption);
 
-	return { base, image, ext, caption, server: image.includes('http') ? '' : 'https://jazzbutcher.com' }
+	const parseImageURL = (str: string) => {
+		const regex = /^(https?:\/\/)?([^\/]+)(.*?)(\.[^.]*$|$)/;
+		const match = str.match(regex);
+
+		if (match) {
+			const protocol = match[1] || 'https://';
+			const server = `${protocol}${match[2]}`;
+			const base = match[3];
+			const ext = match[4]?.replace('.','');
+			return { server, base, ext };
+		} else {
+			const [ base, ext ] = str.split('.');
+			return { server: 'https://jazzbutcher.com', base, ext };
+		}
+	}
+
+	const { server, base, ext } = parseImageURL(str.trim());
+
+	if (!base) return {};
+	const width = 500;
+	const height = 500;
+	const thumb = `${server}${base}_${width}.${ext}`;
+	const image = `${server}${base}.${ext}`;
+
+	return { thumb, width, height, image, ext, server }
 }
 
-const GigPhoto = ({ data }: any) => {
-	const { base, image, ext, server, caption } = parsePhotoData(data?.image);
+const GigMedia = ({ data }: any) => {
+	const { thumb, width, height, image, ext, server } = parsePhoto(data?.image);
 	if (!image) return <></>;
+	const caption = parseCaption(data?.image_caption);
+	const alt = caption || `Gig ${data?.type}`;
 
-	const alt = caption || 'Gig Photo';
-	//console.log("GOT", { base, image, ext, server, caption });
+	return (<div className="image drop-shadow-md" style={{ width: width / 1.45 }}>
+		<Link href={`${image}`}>
+			<Image src={thumb} width={width / 1.5} height={height / 1.5} alt={alt} className="max-w-md" />
+		</Link>
+		<div className="credits">
+			<Caption caption={caption} />
+			<Credit g={removeHTML(data?.credit)} u={data?.credit_url} d={data?.credit_date} />
+		</div>
+	</div>)
+}
+
+const GigText = ({ data }: any) => {
 	return (<>
-		<span className="image">
-			<Link href={`${server}${image}`}>
-				<Image src={`${server}${base}_500.${ext}`} width={500} height={500} alt={alt} />
-			</Link>
-		</span>
-		{Caption(caption)}
+		<RenderHTML body={data?.body} />
+		<Credit g={removeHTML(data?.credit)} u={data?.credit_url} d={data?.credit_date} />
 	</>)
 }
-const GigPhotos = (data: any) => Iterator(data, GigPhoto)
 
-const GigNote = ({ data }: any) => <RenderHTML body={data?.body} />
-/*
-{
-	return (
-		<div>
-			{console.log("Note", data)}
-			{data?.body}
-		</div>
-	)
-}
-*/
-const GigNotes = (data: any) => Iterator(data, GigNote)
+const Iterator = ({ data, func, className }: any) => (
+	<>
+		{(data && data?.length) && (
+			<div className={className} >
+				{data.map((d: any, key: number) => <div key={key}>{func({ data: d })}</div> )}
+			</div>
+		)}
+	</>
+)
+
+const GigTicket = (data: any, key: number) => <GigMedia {...data} />
+
+const GigTickets = (data: any) => <><Iterator data={data} func={GigTicket} className="flex flex-row flex-wrap gap-5 justify-center" /></>
+
+const GigSetlist = (data: any, key: number) => <GigMedia {...data} />
+
+const GigSetlists = (data: any) => <><Iterator data={data} func={GigSetlist} className="flex flex-row flex-wrap gap-5 justify-center" /></>
+
+const GigPoster = (data: any, key: number) => <GigMedia {...data} />
+
+const GigPosters = (data: any) => <><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center" /></>
+
+const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
+
+const GigPhotos = (data: any) => <><Tag>Photos</Tag><Iterator data={data} func={GigPhoto} className="flex flex-row flex-wrap gap-5 justify-center" /></>
+
+const GigNote = (data: any, key: number) => <GigText {...data} />
+
+const GigNotes = (data: any) => <><Iterator data={data} func={GigNote} /></>
 
 const GigPlay = ({ data }: any) => {
 	return (
@@ -134,47 +171,51 @@ const GigPlay = ({ data }: any) => {
 		</div>
 	)
 }
-const GigPlayed = (data: any) => Iterator(data, GigPlay)
+const GigPlayed = (data: any) => <><Iterator data={data} func={GigPlay} /></>
 
 const GigWit = ({ data }: any) => {
 	return (
 		<div>
 			{/*console.log("Wit", data)*/}
+			{Act(data?.performer)}
 		</div>
 	)
 }
-const GigWith = (data: any) => Iterator(data, GigWit)
+const GigWith = (data: any) => <><Iterator data={data} func={GigWit} /></>
 
 const GigPlayer = ({ data }: any) => {
 	return (
-		<div>
-			{/*console.log("Player", data)*/}
-			{data?.performer}
-		</div>
+		<span style={{ whiteSpace: 'nowrap' }}>
+			{Player(data?.performer)}
+			{(data?.instruments?.length) && <>{' '}<span className="smalltext">({data?.instruments?.split(',').join(', ')})</span></>}
+		</span>
 	)
 }
-const GigPlayers = (data: any) => Iterator(data, GigPlayer)
-
-const GigReview = ({ data }: any) => <RenderHTML body={data?.body} />
-/*
-{
-	return (
-		<div>
-			{console.log("Review", data)}
-			{data?.body}
+const GigPlayers = (data: any) => (
+	<>
+			<Tag>Performers</Tag>
+		<div className="g_who">
+			<Iterator data={data} func={GigPlayer} className="flex flex-wrap space-x-5" />
 		</div>
-	)
-}
-*/
-const GigReviews = (data: any) => Iterator(data, GigReview)
+	</>
+)
 
-const GigDetails = (data: any) => {
+const GigReview = ({ data }: any) => {
 	return (<>
-		Details
+		<RenderHTML body={data?.body} />
+		<Credit g={removeHTML(data?.credit)} u={data?.credit_url} d={data?.credit_date} />
+	</>)
+}
+const GigReviews = (data: any) => <><Iterator data={data} func={GigReview} /></>
+
+const GigDetails = ({ data, extra }: any) => {
+	return (<>
+		{GigPlayers(extra?.players_JBC)}
+		{GigWith(extra?.players_with)}
 	</>)
 }
 
-const GigMap = (data: any) => {
+const GigMap = ({ data }: any) => {
 	return (<>
 	</>)
 }
@@ -278,30 +319,27 @@ const Content = ({ datetime }: { datetime: string }) => {
 		}
 	})
 
-	// clean up detail object
-	//delete details['played'];
-	//delete details['media'];
-	//delete details['text'];
-	//delete details['players'];
-	//delete details['press'];
-
 	const extras = [
-		{ label: 'Players', lookup: 'players_JBC'  },
-		{ label: 'With', lookup: 'players_with'  },
-		{ label: 'Photos', lookup: 'media_pix'  },
-		{ label: 'Posters', lookup: 'media_poster'  },
-		{ label: 'Setlists', lookup: 'media_setlist'  },
-		{ label: 'Tickets', lookup: 'media_ticket'  },
-		{ label: 'Notes', lookup: 'text_notes'  },
-		{ label: 'Reviews', lookup: 'text_review'  },
-		{ label: 'Played', lookup: 'played'  },
+		//{ label: 'Details', func: (GigDetails },
+		{ label: 'Photos', lookup: 'media_pix', func: GigPhotos },
+		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
+		{ label: 'Tickets', lookup: 'media_ticket', func: GigTickets },
+		{ label: 'Setlists', lookup: 'media_setlist', func: GigSetlists },
+		{ label: 'Played', lookup: 'played', func: GigPlayed },
+		//{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
+		//{ label: 'With', lookup: 'players_with', func: GigWith },
+		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
+		{ label: 'Reviews', lookup: 'text_review', func: GigReviews },
 	]
 
 	return <div className={`(isLoading) ? 'blur-sm' : '' w-full`}>
-		<GigDetails gig={gig} />
-		<Tabs.Root className="TabsRoot" defaultValue="tab0">
+		<Tag>Live Performance</Tag>
+		<Tabs.Root className="TabsRoot mx-2" defaultValue="details">
 			<Tabs.List className="TabsList" aria-label="Available gig details">
-				{extras.map(({ label, lookup, func }: any, key: number) => {
+				<Tabs.Trigger key='details' className="TabsTrigger" value='details'>
+					Details
+				</Tabs.Trigger>
+				{extras?.map(({ label, lookup }: any, key: number) => {
 					if (extra[lookup]?.length) {
 						return (
 							<Tabs.Trigger key={key} className="TabsTrigger" value={`tab${key}`}>
@@ -311,11 +349,13 @@ const Content = ({ datetime }: { datetime: string }) => {
 					}
 				})}
 			</Tabs.List>
-			{extras.map(({ label, lookup, func }: any, key: number) => (
-					<Tabs.Content key={key} className="TabsContent bg-slate-400" value={`tab${key}`}>
-						{eval(`Gig${label}`)(extra[lookup])}
-					</Tabs.Content>
-					)
+			<Tabs.Content key='details' className="TabsContent -mx-4" value='details'>
+				<div className="bg-slate-100"><GigDetails data={gig} extra={extra} /></div>
+			</Tabs.Content>
+			{extras?.map(({ label, lookup, func }: any, key: number) =>
+				<Tabs.Content key={key} className="TabsContent -mx-4" value={`tab${key}`}>
+					<div className="bg-slate-100">{func(extra[lookup])}</div>
+				</Tabs.Content>
 			)}
 		</Tabs.Root>
 	</div>

@@ -1,4 +1,4 @@
-import { dateDiff, parseDomain, linkInternal, linkExternal } from '@/lib/macros';
+import { dateDiff, parseDate, parseDomain, linkInternal, linkExternal } from '@/lib/macros';
 
 const	genericWeb = ({ x, g, u, t, s, d }: {
 	x?: string
@@ -8,7 +8,7 @@ const	genericWeb = ({ x, g, u, t, s, d }: {
 	s?: string
 	d?: string
 }) => (
-	(x || g || u || d) && <div className={s}>
+	(x || g || u || parseDate(d)) && <span className={s}>
 		{(t) && <><b>{t}</b>:{' '}</>}
 		{(x) && <>x</>}
 		{(() => {
@@ -30,8 +30,8 @@ const	genericWeb = ({ x, g, u, t, s, d }: {
 				}
 			}
 		})()}
-		{(d) && <>{' '}{dateDiff(d)}</>}
-	</div>
+		{(parseDate(d)) && <>{' '}{dateDiff(d)}</>}
+	</span>
 )
 
 export const Source = ({ g, u, d }: {

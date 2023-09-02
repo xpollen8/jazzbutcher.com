@@ -55,6 +55,55 @@ const num2mon = (num: any): string => monthNames[num - 1] || '';
 const mon2num = (month: any): number => monthNames.indexOf(String(month)) + 1;
 
 /*
+	accept:
+		YYYY
+		YYYY-MM
+		YYYY-MM-DD
+		YYYY-MM-DD HH:MM:SS
+		YYYY-MM-DD[T]HH:MM:SS.XXXX[Z]
+ */
+export const parseDate = (str?: string) => {
+	if (str?.length) {
+		const patterns = [
+			/^(\d\d\d\d)-(\d\d)-(\d\d)T(\d\d):(\d\d):(\d\d).(\d\d\d)Z/,
+			/^(\d\d\d\d)-(\d\d)-(\d\d) (\d\d):(\d\d):(\d\d)/,
+			/^(\d\d\d\d)-(\d\d)-(\d\d)/,
+			/^(\d\d\d\d)-(\d\d)/,
+			/^(\d\d\d\d)/,
+		]
+		const xx = patterns.map(p => {
+			const matched = str?.match(p);
+			return matched;
+		}).find(f => f && f[1]);
+		if (xx) {
+			const [ orig, y, m, d, hh, mm, ss ] = xx;
+			const [ iy, im, id, ihh, imm, iss ] = [y, m, d, hh, mm, ss ].map(f => (f && parseInt(f, 10)) || 0);
+			if (!iy) return;
+			return [orig,iy,im,id,ihh,imm,iss];
+		}
+		return;
+	}
+}
+
+const dateDiff = (dt?: string) => {
+	const [orig, iy,im,id,ihh,imm,iss]: any = parseDate(dt) || [];
+	if (iy) {
+		const padDate = (dt: number[]) => {
+			const [iy,im,id,ihh,imm,iss] = dt || [];
+			return localDate(`${iy}-${padZero(im)}-${padZero(id)} ${padZero(ihh)}:${padZero(imm)}:${padZero(iss)}`);
+		}
+		const display = (orig?.length < 10) ? orig : padDate([iy,im,id,ihh,imm,iss]);
+		const compare = padDate([iy,im || 1,id || 1,ihh,imm,iss]);
+		const prettyDate = moment(display).format("ddd, MMM Do YYYY");
+		const prettyAgo = moment(compare).startOf('hour').fromNow();
+		return (<>
+			{' '}
+			<span className="date">{prettyDate}</span> <span className="date">( {prettyAgo} )</span>
+		</>)
+	}
+}
+
+/*
 	ts2URI
 	
 		inverse of gigPage2Datetime()
@@ -522,13 +571,6 @@ const songLinkMapped = (title: string) => {
 const autoLink = songLinkMapped;
 
 const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
-
-const dateDiff = (d: string) =>
-<>
-	{' '}
-	<span className="hidden">{d}</span>
-	<span className="date">{moment(localDate(d)).format("dddd, MMM Do YYYY")}</span> <span className="date">( {moment(localDate(d)).startOf('hour').fromNow()} )</span>
-</>
 
 const releaseByLookup = async (lookup: string) => {
 	const releases = await apiData('releases');

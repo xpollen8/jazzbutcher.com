@@ -270,13 +270,13 @@
 #define	albums[32]->catalog	SHOCK CD 4010
 #define	albums[32]->country	Australia
 
-#define	albums[33]->type	project=The Black Eg
+#define	albums[33]->type	album,project
 #define	albums[33]->lookup	damn
 #define	albums[33]->media	CD;LP
 #define	albums[33]->href	${jbc_albums}/blackeg.html
 #define	albums[33]->title	The Black Eg
 #define	albums[33]->thumb	/images/blackeg
-#define	albums[33]->project <a href="${jbc_search}?f=extras&q=eg"> <div class="gig_eg"> </div> </a>
+#define	albums[33]->project eg
 #define	albums[33]->blurb <a href="${jbc_people}/von_dammerung.html">Karel</a>'s two brothers, Otto and Emil, arrived in Vienna, having taken advantage of the new freedoms introduced by the enlightened government of Vaclav Havel, and Karel obtained in a second hand store and ancient sequential circuits drum machine and a primitive sampler. The Black Eg was born.
 #define	albums[33]->year	1991
 #define	albums[34]->type	compilation
@@ -406,38 +406,38 @@
 #define	albums[47]->year	2012-10-18
 #define	albums[48]->buy
 #define	albums[48]->lookup	thisissumo
-#define	albums[48]->type	project=Sumosonic
+#define	albums[48]->type	album,project
 #define	albums[48]->href	${jbc_albums}/sumosonic_this_is_sumo.html
 #define	albums[48]->title	This Is Sumo
 #define	albums[48]->thumb	/images/sumo/sumosonic_this_is_sumo_front
-#define	albums[48]->project <a href="${jbc_search}?f=extras&q=sumo"> <div class="gig_sumo"> </div> </a>
+#define	albums[48]->project sumo
 #define	albums[48]->blurb This inaugural disk is decidedly un-Butcheresque, with a keyboard-heavy attack of quasi-techno rhythms. Pat was known to dabble in reverb and noise, but the results were moody, melancholy textures, quite unlike the flash of This is Sumo.
 #define	albums[48]->year	1998-01-26
 #define	albums[49]->buy
 #define	albums[49]->lookup	spacemen
-#define	albums[49]->type	single,project=Sumosonic
+#define	albums[49]->type	single,project
 #define	albums[49]->href	${jbc_albums}/sumosonic_spacemen.html
 #define	albums[49]->title	Come, Friendly Spacemen
 #define	albums[49]->thumb	/images/sumo/sumosonic_spacemen_front
-#define	albums[49]->project <a href="${jbc_search}?f=extras&q=sumo"> <div class="gig_sumo"> </div> </a>
+#define	albums[49]->project sumo
 #define	albums[49]->blurb The single features: Come, Friendly Spacemen, Monks Of Kung Fu, and Come, Friendly Spacemen (version)
 #define	albums[49]->year	1996-12-05
 #define	albums[50]->buy
 #define	albums[50]->lookup	spacemen12
-#define	albums[50]->type	single,project=Sumosonic
+#define	albums[50]->type	single,project
 #define	albums[50]->href	${jbc_albums}/sumosonic_spacemen_12.html
 #define	albums[50]->media	12"
 #define	albums[50]->title	Come, Friendly Spacemen (Club)
 #define	albums[50]->thumb	/images/sumo/sumosonic_spacemen_a
-#define	albums[50]->project <a href="${jbc_search}?f=extras&q=sumo"> <div class="gig_sumo"> </div> </a>
+#define	albums[50]->project sumo
 #define	albums[50]->blurb	<div class="annotation">There is a limited-edition vinyl 12" single in the clubs, featuring the long version of Come, Friendly Spacemen alongside re-mixed by Tom Withers of drum n bass combo Override and Johnny Octopus of Octopus Records. The "Sushi" mix is a full on, dark-hearted progressive house tune with an evil bass; the "Jackson Hole" Mix is an insane collision between stadium pop and drum & bass which has to be heard to be believed. The 12" will also feature Monks Of Kung Fu. Any DJ is urged to get in touch with Creation to get a copy.</div>
 #define	albums[50]->year	1996-12-05
 #define	albums[51]->buy
-#define	albums[51]->type	dvd,live,project=Wilson
+#define	albums[51]->type	dvd,live,project
 #define	albums[51]->href
 #define	albums[51]->title	No Known Predators
 #define	albums[51]->thumb
-#define	albums[51]->project <a href="${jbc_search}?f=extras&q=wilson"> <div class="gig_wilson"> </div> </a>
+#define	albums[51]->project wilson
 #define	albums[51]->blurb The Wilson DVD, entitled No Known Predators, is to be released on Friday 7th September 2012.
 #define	albums[51]->year	2012-09-07
 #define	albums[52]->type	EP
@@ -888,8 +888,8 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 	</p>
 
 #define	albums[82]->buy
-#define	albums[82]->type	various,project=Wilson
-#define	albums[82]->project <a href="${jbc_search}?f=extras&q=wilson"> <div class="gig_wilson"> </div> </a>
+#define	albums[82]->type	various,project
+#define	albums[82]->project wilson
 #define	albums[82]->lookup	va_wilson_heyday
 #define	albums[82]->href	${jbc_albums}/va_wilson_heyday.html
 #define	albums[82]->label	Heyday Records
@@ -906,8 +906,8 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 	</p>
 
 #define	albums[83]->buy
-#define	albums[83]->type	project=Wilson
-#define	albums[83]->project <a href="${jbc_search}?f=extras&q=wilson"> <div class="gig_wilson"> </div> </a>
+#define	albums[83]->type	project
+#define	albums[83]->project wilson
 #define	albums[83]->lookup	wilson_demo_2005
 #define	albums[83]->href	${jbc_albums}/wilson_demo_2005.html
 #define	albums[83]->label	Premier Studios
@@ -923,8 +923,8 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 	</p>
 
 #define	albums[84]->buy
-#define	albums[84]->type	project=Wilson
-#define	albums[84]->project <a href="${jbc_search}?f=extras&q=wilson"> <div class="gig_wilson"> </div> </a>
+#define	albums[84]->type	project
+#define	albums[84]->project wilson
 #define	albums[84]->lookup	wilson_demo_2003
 #define	albums[84]->href	${jbc_albums}/wilson_demo_2003.html
 #define	albums[84]->label
@@ -940,8 +940,8 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 	</p>
 
 #define	albums[85]->buy
-#define	albums[85]->type	project=Wilson
-#define	albums[85]->project <a href="${jbc_search}?f=extras&q=wilson"> <div class="gig_wilson"> </div> </a>
+#define	albums[85]->type	project
+#define	albums[85]->project wilson
 #define	albums[85]->lookup	wilson_demo_2002
 #define	albums[85]->href	${jbc_albums}/wilson_demo_2002.html
 #define	albums[85]->label

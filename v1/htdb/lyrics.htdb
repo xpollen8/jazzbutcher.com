@@ -10014,8 +10014,6 @@ Break out and find out tonight.
 #live	if (getval(page) = wilson_yellow_pages.html)
 	${lyricsHeader(project=wilson, title=Yellow Pages, lyrics=${literalizeCommas(
 
-	<h1><font color="#ff0000">Censored for your protection</font></h1>
-	${shh(
 	Yellow pages. This moves in stages,<br/>
 	Developing the works of the ancient sages.<br/>
 	Clone me, coz my work is lonely.<br/>
@@ -10047,7 +10045,6 @@ Break out and find out tonight.
 	Muthafucka run along.<br/>
 	Wilson in the area - load up the Big Bong.<br/>
 	Where do you want to go today?
-	)}
 
 	)},
 		
@@ -10244,9 +10241,6 @@ Break out and find out tonight.
 #live	if (getval(page) = wilson_istanbul_connection.html)
 	${lyricsHeader(project=wilson, title=Istanbul Connection, lyrics=${literalizeCommas(
 
-	<h1><font color="#ff0000">Censored for your protection</font></h1>
-	${shh(
-
 	Light your pipe, smoke your pipe.<br/>
 	The Almighty will give you peace.<br/>
 	Smoke and drink small sips of tea.<br/>
@@ -10286,8 +10280,6 @@ Break out and find out tonight.
 	Out in the desert with a loaf of bread.<br/>
 	Out in the desert with a nameless dread.<br/>
 	If you want to get ahead in the desert get ahead.
-	)}
-
 	)},
 		mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3, caption=2003 demo, embed_link=https://youtube.com/embed/r074mp41514,
 		onlist=wilson_demo_2003 .. wilson_demo_2002,
@@ -10299,8 +10291,6 @@ Break out and find out tonight.
 #live	if (getval(page) = wilson_dark_agenda.html)
 	${lyricsHeader(project=wilson, title=Dark Agenda, lyrics=${literalizeCommas(
 
-#	<h1><font color="#ff0000">Censored for your protection</font></h1>
-#	${shh(
 	Eat! Sleep! Drink! Rock!<br/>
 	Eat! Sleep...Don't Sleep! Rock!<br/>
 	<br/>
@@ -10334,9 +10324,6 @@ Break out and find out tonight.
 	Leon Trotsky! <br/>
 	Fidel Castro! <br/>
 	Sam and Dave!
-#	)}
-
-
 
 	)},
 		mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, caption=2002 Demo,

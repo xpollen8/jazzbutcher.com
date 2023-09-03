@@ -81,6 +81,8 @@ const apiData = async (path: string, args?: string) => {
 		case 'feedbacks':
 		case 'gig_by_datetime':
 		case 'feedback':
+		case 'songs_by_release':
+		case 'lyric':
 			//console.log("apiData", { path, args });
 			return await apiDataFromDataServer(path, args);
 		case 'performances': {

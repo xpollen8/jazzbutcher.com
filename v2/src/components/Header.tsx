@@ -118,6 +118,7 @@ type GigResults = {
 }
 
 type Props_MakeHeader = {
+	project?: string
 	section?: string
 	title?: any
 	passthru?: string

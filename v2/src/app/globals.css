@@ -640,7 +640,6 @@ p::first-letter {
 	flex-basis: 25%;
 }
 .lyrics {
-	margin-top: -20px;
 	font-style: normal;
 	white-space: pre-line;
 }

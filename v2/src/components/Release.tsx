@@ -1,5 +1,7 @@
-import { releaseByLookup } from '@/lib/macros';
+"use client"
+
 import MakeAlbumBlurb from './MakeAlbumBlurb';
+import useRelease from '@/components/useRelease';
 
 export type ReleaseType =  {
 	type?: string
@@ -23,6 +25,17 @@ export type ReleaseType =  {
 
 export type ReleaseTypeWithChildren = ReleaseType & { children?: string | React.ReactElement }
 
-const Release = async ({ lookup }: { lookup: string }, key: number) => <div key={key}><MakeAlbumBlurb {...(await releaseByLookup(lookup))} /></div>
+const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number) => {
+	const lookup = release?.lookup ?? '';
+	const { data, isLoading, error } = useRelease(lookup);
+	const songs = data?.results;
+	if (isLoading) return <></>;
+	return (<>
+		<div key={key}><MakeAlbumBlurb {...release} /></div>
+		<blockquote>
+			{songs?.map((song: any, key: number) => <div key={key}>{song.title}</div>)}
+		</blockquote>
+	</>)
+}
 
 export default Release;

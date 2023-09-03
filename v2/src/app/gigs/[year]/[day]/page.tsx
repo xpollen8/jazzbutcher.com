@@ -1,31 +1,17 @@
 "use client"
 
-import useSWR from 'swr';
-import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as Tabs from '@radix-ui/react-tabs';
 import './styles.css';
 
+//import { mapActs, mapPerformers } from '@/lib/defines';
+import { parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime } from '@/lib/macros';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import { Credit } from '@/components/GenericWeb';
-//import { mapActs, mapPerformers } from '@/lib/defines';
-
-import { parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime } from '@/lib/macros';
-import apiData from '@/lib/apiData';
-
-const useGig = (datetime: string) => {
-	// TODO have fetchGig add .prevGig & .nextGig to object
-	const fetcher = (url: string) => fetch(url).then((res) => res.json());
-	const { data, error, isLoading } = useSWR(`https://data.jazzbutcher.com/api/gig_by_datetime/${datetime}`, fetcher);
-	return {
-		gig: data,
-		error,
-		isLoading,
-	}
-}
+import useGig from '@/components/useGig';
 
 const Player = (str?: string) => {
   if (!str?.length) return;

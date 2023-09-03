@@ -1,5 +1,4 @@
 import moment from 'moment';
-import { releaseByLookup } from '@/lib/macros';
 import apiData from '@/lib/apiData';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';

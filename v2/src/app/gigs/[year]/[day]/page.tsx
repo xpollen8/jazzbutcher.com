@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useSuspense } from 'react';
+import React, { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as Tabs from '@radix-ui/react-tabs';

@@ -1,6 +1,6 @@
 "use server"
 
-import { datesEqual, HashedType, RecordType } from './macros';
+import { localDate, HashedType, RecordType } from './macros';
 import fs from 'fs';
 
 const cache: HashedType = {};
@@ -93,7 +93,8 @@ const apiData = async (path: string, args?: string) => {
 			const gigs = await apiDataFromDataServer('gigs');
 			// join gig data to performance records
 			const results = performances?.results?.map((performance: RecordType) => {
-				const gig = gigs?.results.find((gig: RecordType) => gig?.datetime === performance?.datetime);
+				const datetime = localDate(performance?.datetime)
+				const gig = gigs?.results.find((gig: RecordType) => localDate(gig?.datetime) === datetime);
 				return { ...performance, gig }
 			});
 			return { ...performances, results }
@@ -103,7 +104,8 @@ const apiData = async (path: string, args?: string) => {
 			const gigs = await apiDataFromDataServer('gigs', args);
 			// join gig data to song records
 			const results = gigsongs?.results?.map((song: RecordType) => {
-				const gig = gigs?.results.find((gig: RecordType) => gig?.datetime === song?.datetime);
+				const datetime = localDate(song?.datetime)
+				const gig = gigs?.results.find((gig: RecordType) => localDate(gig?.datetime) === datetime);
 				return { ...song, gig }
 			});
 			return { ...gigsongs, results }

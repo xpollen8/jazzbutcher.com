@@ -2,13 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { parseDomain, linkInternal, linkExternal } from '@/lib/macros';
 
-const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, children }: {
+const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, className, children }: {
 	link?: string
 	image?: string
 	alt?: string
 	title?: string
 	buy?: string
 	buy_title?: string
+	className?: string
 	children?: string | React.ReactElement
 }): React.ReactNode => {
 	if (!title) return <></>;
@@ -26,6 +27,7 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, chi
 	return (
 		<div className="release">
 			<div className="album_details">
+				<div className={className} />
 				<span className="album_title">
 					{(link?.length) ? (<>
 							{(link?.startsWith('http'))

@@ -9,7 +9,7 @@ const Page = async ({ params }: { params?: any }) => {
 	return (
 	<>
 		<Header section="releases" title={release?.title} />
-		<Release lookup={params?.id} />
+		<Release release={release} />
 		<Footer />
 	</>
 	)

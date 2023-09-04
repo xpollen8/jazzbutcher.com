@@ -118,6 +118,7 @@ type GigResults = {
 }
 
 type Props_MakeHeader = {
+	project?: string
 	section?: string
 	title?: any
 	passthru?: string
@@ -256,6 +257,7 @@ const ListItem = React.forwardRef(({ className, children, title, ...props }, for
 const MakeHeader = (props: Props_MakeHeader): React.ReactNode  => {
 
 	return (
+		<>
 		<div className="homeContainer">
 			<div className="homeHeader">
 				{/*<Nav />*/}
@@ -266,6 +268,8 @@ const MakeHeader = (props: Props_MakeHeader): React.ReactNode  => {
 			</div>
 			{props?.children}
 		</div>
+		{(props?.project) && <div className={`gig_${props.project}`} ></div>}
+		</>
 	)
 }
 

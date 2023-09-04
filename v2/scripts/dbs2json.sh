@@ -28,7 +28,7 @@ function _fetch () {
 		echo "--- NEW ---"
 		/bin/ls -latr $TEMP_DIR/$file
 		echo "--- COPY/PASTE ---"
-		echo "(cp -p  $TEMP_DIR/$file $OUTPUT_DIR/$file && git commit -m \"updated from $remote\")"
+		echo "(cp -p  $TEMP_DIR/$file $OUTPUT_DIR/$file && git commit -m \"updated from $remote\" $OUTPUT_DIR/$file)"
 		echo
 		echo
 	else

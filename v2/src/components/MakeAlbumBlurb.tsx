@@ -27,18 +27,19 @@ const MakeAlbumBlurb = ({
 	return (
 		<div key={key || 0}>
 			<FeaturedItem
+				className={`w-full gig_${project}`}
 				link={href}
 				buy={buy}
 				title={title}
 				image={thumb}
 				alt={`${title} cover`}
 			>
-				<>
+					<>
 					<Contribution titles={contribution} />
 					{(blurb) && <div dangerouslySetInnerHTML={{__html: blurb }} />}
 					<Credit g={credit_g} u={credit_u} d={credit_d} />
 					{children}
-				</>
+					</>
 			</FeaturedItem>
 		</div>
 	)

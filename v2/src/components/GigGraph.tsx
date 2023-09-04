@@ -57,20 +57,17 @@ export const types: RecordType = {
 	},
 }
 
-const DoGraph = ({ scaling, year, gigs=[], section='main', inpage=false, skip0=false, href }:
+const DoGraph = ({ scaling, year, gigs=[], section='main', queryString='' }:
 {
 	scaling: number
 	year: number
 	gigs: RecordType[]
 	section?: string
-	inpage?: boolean
-	skip0?: boolean
-	href?: string
+	queryString?: string
 }) => {
 
-	if (!(gigs.length || !skip0)) return <></>;	// no data
+	if (!(gigs.length)) return <></>;	// no data
 
-	//const totalColar = '#ededed';
 	const totalColar = '#ee0';
 	const extras: string[] = Object.keys(types);
 	const sums: RecordType = {};
@@ -95,7 +92,6 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', inpage=false, skip0=f
 		if (sums[e] > maxGigs) maxGigs = sums[e];
 	})
 
-	const link = (inpage) ? `#${year}_${section}` : ((href) ?  href : `/gigs/${year}`);
 	const calcWidth = (num: number, max: number) => `${(1 + (100 * num / (scaling * 1.1)))}%`;
 
 	const Bar = ({ color, background, width, num }: { color: string, background: string, width: string, num: number }) => <div className="drop-shadow-md border" style={{ borderRadius: '10px', background, height: '15px', marginRight: '5px', width, color, textAlign: 'right', paddingRight: '3px', paddingTop: '1px' }} >{num}</div>
@@ -111,7 +107,7 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', inpage=false, skip0=f
 		<tbody>
 			<tr>
 			<td style={{ padding: '3px', border: '1px solid #999' }}>
-				<a style={{ fontSize: '2.2em'}} href={link}>{year}</a>
+				<a style={{ fontSize: '2.2em'}} href={`/gigs/${year}${queryString}`}>{year}</a>
 			</td>
 
 			{(gigs.length) &&
@@ -167,9 +163,9 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', inpage=false, skip0=f
 	</>)
 }
 
-const GigGraph = ({ year, gigs, scaling=110 }: { year: number, gigs: RecordType[], scaling: number }) => {
-	if (!gigs) return <></>;
-	return <DoGraph scaling={scaling} year={year} gigs={gigs} section='main' inpage={false} skip0={false} />
+const GigGraph = (props: { year: number, gigs: RecordType[], scaling: number, queryString?: string }) => {
+	if (!props?.gigs) return <></>;
+	return <DoGraph {...props} />
 }
 
 export default GigGraph;

@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
-import Release from '@/components/Release';
+import ReleaseBlurb from '@/components/ReleaseBlurb';
 import FeaturedItem from '@/components/FeaturedItem';
 
 const BookSikkorski = () =>
@@ -74,12 +74,12 @@ const HomeBooks = () =>
 
 const HomeReleases = () =>
 <>
-		<Release lookup='va_andy_2007' />
-		<Release lookup='highest' />
-		<Release lookup='fire_cholmondley' />
-		<Release lookup='fire_violent' />
-		<Release lookup='fire_wasted' />
-		<Release lookup='adventurers' />
+		<ReleaseBlurb lookup='va_andy_2007' />
+		<ReleaseBlurb lookup='highest' />
+		<ReleaseBlurb lookup='fire_cholmondley' />
+		<ReleaseBlurb lookup='fire_violent' />
+		<ReleaseBlurb lookup='fire_wasted' />
+		<ReleaseBlurb lookup='adventurers' />
 </>
 
 const Home = (): React.ReactNode =>
@@ -89,7 +89,7 @@ const Home = (): React.ReactNode =>
 		GIGS
 		</div>
 		<div>
-			<Release lookup='never7' />
+			<ReleaseBlurb lookup='never7' />
 			<HomeBooks />
 			<HomeReleases />
 			<RandomLiveVideo />

@@ -1,3 +1,4 @@
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import moment from 'moment';
@@ -25,11 +26,9 @@ export type RecordType = {
 	matchedTerms?: string[];
 }
 
-export type Hashed = {
+export type HashedType = {
 	[key: string]: any;
 }
-
-type QueryType = string;
 
 const linkExternal = (href: string, text?: string): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
 const linkInternal = (href: string, text?: string): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
@@ -219,13 +218,11 @@ const cache: {
   [key: string]: any;
 } = {}
 
-const filterNone = (res: any, query: QueryType) => res;
-
 const searchRegex = /[^a-z0-9'_ ]/gi;
 const searchSplit = /(?<=^| )("[^"]*"|[^ ]+)(?= |$)/g;
 
 // convert incoming query string into reasonable search terms
-const searchTerms = (query: QueryType): string[] => {
+const searchTerms = (query: string): string[] => {
 	const terms = query
 		?.match(searchSplit)
 		?.map((t: string) => t.replace(/"/g, ''))	// clean up quoted terms
@@ -254,7 +251,7 @@ const searchRecord = (record: RecordType, target: string, terms: string[]) => (
 	}
 )
 
-const filterBy = (res: RecordType, query: QueryType, recordFilter: any) => {
+const filterBy = (res: RecordType, query: string, recordFilter: any) => {
 	const terms = searchTerms(query);
 	const filtered = res.results
 		?.map((record: RecordType) => searchRecord(record, recordFilter(record), terms))	// add 'matchedTerms' to object
@@ -265,21 +262,22 @@ const filterBy = (res: RecordType, query: QueryType, recordFilter: any) => {
 		...res,
 		numResults: filtered.length,
 		results: filtered,
-		searchTerms: terms.join('" OR "'),
+		searchTerms: terms.join('" AND "'),
 	}
 }
 
-const filterGigsByField = (res: any, query: QueryType, field: string) => {
+const filterGigsByField = (res: any, query: string, field: string) => {
 	const recordFilter = ((record: RecordType) => record[field]?.toLowerCase());
+	console.log("FILTER", query, field);
 	return filterBy(res, query, recordFilter);
 }
 
-const filterGigsByVenue = (res: any, query: QueryType) => filterGigsByField(res, query, 'venue');
-const filterGigsByCity = (res: any, query: QueryType) => filterGigsByField(res, query, 'city');
-const filterGigsByCountry = (res: any, query: QueryType) => filterGigsByField(res, query, 'country');
-const filterGigsBySupport = (res: any, query: QueryType) => filterGigsByField(res, query, 'alsowith');
-const filterGigsBySong = (res: any, query: QueryType) => filterGigsByField(res, query, 'song');
-const filterGigsByPerformer = (res: any, query: QueryType) => {
+const filterGigsByVenue = (res: any, query: string) => filterGigsByField(res, query, 'venue');
+const filterGigsByCity = (res: any, query: string) => filterGigsByField(res, query, 'city');
+const filterGigsByCountry = (res: any, query: string) => filterGigsByField(res, query, 'country');
+const filterGigsBySupport = (res: any, query: string) => filterGigsByField(res, query, 'alsowith');
+const filterGigsBySong = (res: any, query: string) => filterGigsByField(res, query, 'song');
+const filterGigsByPerformer = (res: any, query: string) => {
 	const recordFilter = ((record: RecordType) => {
 		const field = 'performer';
 		if (record[field]?.startsWith('[[person:')) {
@@ -289,7 +287,7 @@ const filterGigsByPerformer = (res: any, query: QueryType) => {
 	return filterBy(res, query, recordFilter);
 }
 
-const filterGigsByAnything = (res: RecordType, query: QueryType) => {
+const filterGigsByAnything = (res: RecordType, query: string) => {
 	// create a searchable string from record object
 	const searchTarget = (record: RecordType) => JSON.stringify(
 		Object.keys(record)
@@ -301,12 +299,12 @@ const filterGigsByAnything = (res: RecordType, query: QueryType) => {
 	return filterBy(res, query, (searchTarget));
 }
 
-const bannerGigs = (results: Hashed, searchYear?: number) => {
+const bannerGigs = (results: HashedType, searchYear?: number) => {
 		if (!results) return <></>;
-		const type = searchOptions.find(so => so.noun === results?.type)?.text;
+		const searchType = getOptions(results?.type).text;
 		const numMatched = results?.numResults ?? 0;
 		const bannerYear = (searchYear) ? `In ${searchYear}, ` : '';
-		const bannerTerms = results?.searchTerms;
+		const bannerTerms = (searchType && results?.searchTerms) ? `${searchType}: ${results?.searchTerms}` : '';
 		const bannerClass = (numMatched) ? 'search found' : 'search notfound';
 		const bannerText = `${bannerYear}${numMatched} gig${(numMatched === 1) ? '' : 's'} matched`;
 
@@ -318,7 +316,7 @@ const bannerGigs = (results: Hashed, searchYear?: number) => {
 }
 
 const templateGigs = (results: RecordType, layout: any) => {
-	const years: Hashed = {};
+	const years: HashedType = {};
 	results?.results?.forEach((r: RecordType) => {
 		const year = parseYear(r.datetime);
 		if (!years[year]) years[year] = [];
@@ -330,6 +328,13 @@ const templateGigs = (results: RecordType, layout: any) => {
 			scaling = years[y].length
 		}
 	})
+
+	const gigsType = results?.type;
+	const gigsQuery = results?.query;
+	const queryParams = new URLSearchParams();
+	if (gigsType) queryParams.set('f', gigsType);
+	if (gigsQuery) queryParams.set('q', gigsQuery);
+	const queryString = (gigsType && gigsQuery) ? `?${queryParams.toString()}` : '';
 
 	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => (
 		<div key={year+month}>
@@ -371,7 +376,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 						// 'pat', 'setlist', 'self'
 						]
 						.filter((type: string) => useG?.extra?.includes(type));
-					const gigLink = `/gigs/` + ts2URI(record?.datetime);
+					const gigLink = `/gigs/${ts2URI(record?.datetime)}`;
 
 					return (
 						<Link key={key}
@@ -420,8 +425,8 @@ const templateGigs = (results: RecordType, layout: any) => {
 		</div>
 	)
 
-	const makeGigYear = (year: number, gigs: RecordType[]) => {
-		const months: Hashed = {};
+	const makeGigYear = (queryString: string, year: number, gigs: RecordType[]) => {
+		const months: HashedType = {};
 		gigs.forEach(g => {
 			const month = parseMonth(g.datetime);
 			if (!months[month]) months[month] = [];
@@ -429,7 +434,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 		});
 		return <details key={year}>
 			<summary className="flex hover:outline">
-				<GigGraph scaling={scaling} year={year} gigs={gigs} />
+				<GigGraph scaling={scaling} year={year} gigs={gigs} queryString={queryString} />
 			</summary>
 			<div style={{ background: 'white', padding: '5px', border: '1px solid #ddd', marginTop: '5px' }}>
 				{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(year, m, months[m]))}
@@ -437,9 +442,8 @@ const templateGigs = (results: RecordType, layout: any) => {
 		</details>
 	}
 
-	const numMatched = results?.results?.length;
 	return <div style={{ margin: '5px' }}>
-		{Object.keys(years).sort((a: any, b: any) => b - a).map((y: any) => makeGigYear(y, years[y]))}
+		{Object.keys(years).sort((a: any, b: any) => b - a).map((y: any) => makeGigYear(queryString, y, years[y]))}
 	</div>
 }
 
@@ -453,70 +457,24 @@ const gigSearchOptions = (menu: boolean, noun: string, text: string, route: stri
 	filter: (res: RecordType, query: string) => filterGigsByField(res, query, noun)
 });
 
-const searchOptions = [
-	{ ...gigSearchOptions(false, 'archive', 'All Gigs', 'gigs'), menu: false },
+const searchOptions: HashedType[] = [
+	{ ...gigSearchOptions(false, 'all', 'All Gigs', 'gigs'), menu: false },
 	{ ...gigSearchOptions(true, 'venue', 'Venue', 'gigs') },
 	{ ...gigSearchOptions(true, 'city', 'City', 'gigs') },
 	{ ...gigSearchOptions(true, 'anything', 'Anywhere in details', 'gigs'),
 		filter: filterGigsByAnything,
 	},
-	{ ...gigSearchOptions(true, 'song', 'Played this song..', 'gigsongs'),
+	{ ...gigSearchOptions(true, 'song', 'Played this song..', 'gigs_by_song'),
 		layout: layoutSongs,
 	},
-	{ ...gigSearchOptions(true, 'performer', 'Musician performed..', 'performances'),
+	{ ...gigSearchOptions(true, 'performer', 'Musician performed..', 'gigs_by_musician'),
 		filter: filterGigsByPerformer,
 		layout: layoutPerformer
 	},
 	{ ...gigSearchOptions(true, 'alsowith', 'Shared the bill..', 'gigs') },
 ]
 
-const doSearch = (options: any, settor: any, error: any): void => {
-	const year = options.year;
-	const type = options?.f;
-	const query = options?.q;
-	if (!type) return;
-	const option = searchOptions.find(o => o.noun === type);
-	const route = option?.route;
-	const filter = option?.filter || filterNone;
-	settor([]);
-	if (!route) {
-		error(`search by ${type} not yet implemented`);
-		return;
-	}
-	if (cache[route]) {
-		// in-browser cache hit, yay
-		error();
-		settor(filter({ ...cache[route], type }, query));
-		return;
-	}
-	// else hit the api for data
-	apiData(route)
-		.then(res => {
-			cache[route] = res;
-			error();
-			const filtered = filter({ ...res, type }, query);
-			if (!filtered?.results?.length) {
-				error(`Nothing found for "${searchOptions.find(so => so.noun === type)?.text}: ${query}"`);
-			}
-			settor(filtered)
-		})
-		.catch(e => {
-			error(`search by ${type} failed`);
-			console.log("ERR", e);
-		})
-	/*
-	api-side filtering method
-	const action = `/api/${route}/${query}`;
-	console.log("SEARCH1", { type, query, action, ENV: process.env });
-	fetch(action)
-		.then(e => e.json())
-		.then(res => settor(res))
-		.catch((e) => {
-			alert('FAILED');
-			console.log("ERR", e);
-		});
-		*/
-}
+export const getOptions = (noun: string | undefined): HashedType => (noun && searchOptions.find(o => o.noun === noun)) || searchOptions[0];
 
 const autoHREF = (href: string) => {
 	if (href?.includes('@')) {	// email address
@@ -581,4 +539,4 @@ const releaseByLookup = async (lookup: string) => {
 	if (releaseByHREF) return releaseByHREF;
 }
 
-export { localDate, datesEqual, bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, doSearch, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }
+export { localDate, datesEqual, bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

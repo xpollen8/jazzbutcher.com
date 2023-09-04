@@ -1,9 +1,9 @@
 "use server"
 
-import { datesEqual, Hashed, RecordType } from './macros';
+import { datesEqual, HashedType, RecordType } from './macros';
 import fs from 'fs';
 
-const cache: Hashed = {};
+const cache: HashedType = {};
 
 /* doesn't seem to work
 [ 'gigs', 'presses', 'gigmedias', 'gigtexts', 'feedbacks', 'performances', 'gigsongs', 'releases' ]
@@ -25,7 +25,7 @@ const cache: Hashed = {};
  */
 const apiDataFromHTDBServer = async (path: string) => {
 	if (cache[path]) {
-		console.log("CACHE HIT", path);
+		//console.log("CACHE HIT", path);
 		return cache[path];
 	}
 	return await fetch(`${process.env.JBC_HTDB_SERVER}/htdb/${path}`,
@@ -45,7 +45,7 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 	if (!args) {
 		if (cache[path]) {
 			console.log("CACHE HIT", path);
-			return cache[path];
+			//return cache[path];
 		}
 		return await fetch(`${process.env.JBC_DATA_SERVER}/api/${path}`,
 			{
@@ -58,7 +58,6 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 				return { error: `search by ${path} failed` };
 			});
 	}
-	//console.log("FETCHING", { path, args }, `${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
 	return await fetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`,
 		{
 			next: { revalidate: 300 }
@@ -74,18 +73,22 @@ const apiData = async (path: string, args?: string) => {
 	//console.log("apiData", { path, args });
 
 	switch (path) {
-		case 'gigs':
-		case 'presses':
-		case 'gigmedias':
-		case 'gigtexts':
-		case 'feedbacks':
-		case 'gig_by_datetime':
 		case 'feedback':
+		case 'feedbacks':
+		case 'feedback_by_page':
+		case 'gig_by_datetime':
+		case 'gigmedias':
+		case 'gigs':
+		case 'gigtexts':
+		case 'gigsongs':
+		case 'performances':
+		case 'presses':
 		case 'songs_by_release':
-		case 'lyric':
-			//console.log("apiData", { path, args });
+		case 'lyrics':
+		case 'lyric_by_href':
+			console.log("apiData", { path, args });
 			return await apiDataFromDataServer(path, args);
-		case 'performances': {
+		case 'gigs_by_musician': {
 			const performances =  await apiDataFromDataServer(path, args);
 			const gigs = await apiDataFromDataServer('gigs');
 			// join gig data to performance records
@@ -95,7 +98,7 @@ const apiData = async (path: string, args?: string) => {
 			});
 			return { ...performances, results }
 		}
-		case 'gigsongs': {
+		case 'gigs_by_song': {
 			const gigsongs = await apiDataFromDataServer(path, args);
 			const gigs = await apiDataFromDataServer('gigs', args);
 			// join gig data to song records

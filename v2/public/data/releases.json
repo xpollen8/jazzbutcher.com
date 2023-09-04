@@ -1153,7 +1153,7 @@
 
 	} ,
 	{
-		"type": "project=The Black Eg",
+		"type": "album,project",
 
 		"href": "/albums/blackeg.html",
 
@@ -1167,7 +1167,7 @@
 
 		"buy": 	"",
 
-		"project": "<a href='/gigs/search.html?f=extras&amp;q=eg'> <div class='gig_eg'> </div> </a>",
+		"project": "eg",
 
 		"lookup": "damn",
 
@@ -1693,7 +1693,7 @@
 
 	} ,
 	{
-		"type": "project=Sumosonic",
+		"type": "album,project",
 
 		"href": "/albums/sumosonic_this_is_sumo.html",
 
@@ -1707,7 +1707,7 @@
 
 		"buy": 	"",
 
-		"project": "<a href='/gigs/search.html?f=extras&amp;q=sumo'> <div class='gig_sumo'> </div> </a>",
+		"project": "sumo",
 
 		"lookup": "thisissumo",
 
@@ -1729,7 +1729,7 @@
 
 	} ,
 	{
-		"type": "single,project=Sumosonic",
+		"type": "single,project",
 
 		"href": "/albums/sumosonic_spacemen.html",
 
@@ -1743,7 +1743,7 @@
 
 		"buy": 	"",
 
-		"project": "<a href='/gigs/search.html?f=extras&amp;q=sumo'> <div class='gig_sumo'> </div> </a>",
+		"project": "sumo",
 
 		"lookup": "spacemen",
 
@@ -1765,7 +1765,7 @@
 
 	} ,
 	{
-		"type": "single,project=Sumosonic",
+		"type": "single,project",
 
 		"href": "/albums/sumosonic_spacemen_12.html",
 
@@ -1779,7 +1779,7 @@
 
 		"buy": 	"",
 
-		"project": "<a href='/gigs/search.html?f=extras&amp;q=sumo'> <div class='gig_sumo'> </div> </a>",
+		"project": "sumo",
 
 		"lookup": "spacemen12",
 
@@ -1801,7 +1801,7 @@
 
 	} ,
 	{
-		"type": "dvd,live,project=Wilson",
+		"type": "dvd,live,project",
 
 		"href": 	"",
 
@@ -1815,7 +1815,7 @@
 
 		"buy": 	"",
 
-		"project": "<a href='/gigs/search.html?f=extras&amp;q=wilson'> <div class='gig_wilson'> </div> </a>",
+		"project": "wilson",
 
 		"lookup": 	"",
 
@@ -2917,7 +2917,7 @@
 
 	} ,
 	{
-		"type": "various,project=Wilson",
+		"type": "various,project",
 
 		"href": "/albums/va_wilson_heyday.html",
 
@@ -2931,7 +2931,7 @@
 
 		"buy": 	"",
 
-		"project": "<a href='/gigs/search.html?f=extras&amp;q=wilson'> <div class='gig_wilson'> </div> </a>",
+		"project": "wilson",
 
 		"lookup": "va_wilson_heyday",
 
@@ -2953,7 +2953,7 @@
 
 	} ,
 	{
-		"type": "project=Wilson",
+		"type": "project",
 
 		"href": "/albums/wilson_demo_2005.html",
 
@@ -2967,7 +2967,7 @@
 
 		"buy": 	"",
 
-		"project": "<a href='/gigs/search.html?f=extras&amp;q=wilson'> <div class='gig_wilson'> </div> </a>",
+		"project": "wilson",
 
 		"lookup": "wilson_demo_2005",
 
@@ -2989,7 +2989,7 @@
 
 	} ,
 	{
-		"type": "project=Wilson",
+		"type": "project",
 
 		"href": "/albums/wilson_demo_2003.html",
 
@@ -3003,7 +3003,7 @@
 
 		"buy": 	"",
 
-		"project": "<a href='/gigs/search.html?f=extras&amp;q=wilson'> <div class='gig_wilson'> </div> </a>",
+		"project": "wilson",
 
 		"lookup": "wilson_demo_2003",
 
@@ -3025,7 +3025,7 @@
 
 	} ,
 	{
-		"type": "project=Wilson",
+		"type": "project",
 
 		"href": "/albums/wilson_demo_2002.html",
 
@@ -3039,7 +3039,7 @@
 
 		"buy": 	"",
 
-		"project": "<a href='/gigs/search.html?f=extras&amp;q=wilson'> <div class='gig_wilson'> </div> </a>",
+		"project": "wilson",
 
 		"lookup": "wilson_demo_2002",
 

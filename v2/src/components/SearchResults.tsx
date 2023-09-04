@@ -1,4 +1,4 @@
-import { searchOptions } from '@/lib/macros';
+import { getOptions } from '@/lib/macros';
 
 type ResultRecord = {
 	[key: string]: any
@@ -13,10 +13,9 @@ type ResultType = {
 	searchTerms?: string[]
 }
 
-const SearchResults = ({ results, banner }: { results: ResultType, banner?: any }): React.ReactNode => {
-	const { type } = results;
-	const options = searchOptions.find(so => so.noun === type);
-	const layout = options?.layout;
+const SearchResults = ({ results={}, banner }: { results: ResultType, banner?: any }): React.ReactNode => {
+	const options = getOptions(results?.type);
+	const layout = options.layout;
 	const template = options?.template;
 
 	return (

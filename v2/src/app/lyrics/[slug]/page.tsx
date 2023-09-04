@@ -90,8 +90,10 @@ const Media = async (props: any) => {
 
 
 const Lyric = async ({ params }: { params?: any }) => {
-	const data = await apiData('lyric', params?.slug)
-		.then(res => res?.results[0]);
+	const href = `${params?.slug}.html`;
+		const data = await apiData('lyric_by_href', href)
+			.then(res => res?.results[0])
+			.catch(res => {});
 
 	if (!data) return <>404</>
 	const tabs = [

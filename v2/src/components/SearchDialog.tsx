@@ -2,19 +2,19 @@ import * as Dialog from '@radix-ui/react-dialog';
 import * as Select from '@radix-ui/react-select';
 import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 
-import { usePathname, useRouter } from 'next/navigation';
-import { useState, useEffect, useTransition } from 'react';
-import { doSearch, searchOptions, Nobr } from '@/lib/macros';
+import { useSearchParams, usePathname, useRouter } from 'next/navigation';
+import { useState, useTransition } from 'react';
+import { searchOptions } from '@/lib/macros';
 
-const SearchDialog = (props : { year?: number, navPrev?: string, navNext?: string, f: string | null, q: string | null, setResults: any, setError: any }) => {
+const SearchDialog = () => {
 	const router = useRouter();
 	const pathname = usePathname();
+	const searchParams = useSearchParams();
 
 	const [isPending, startTransition] = useTransition();
 
-	const year = props?.year;
-	const [f, setF] = useState(props?.f);
-	const [q, setQ] = useState(props?.q);
+	const [f, setF] = useState(searchParams.get('f'));
+	const [q, setQ] = useState(searchParams.get('q'));
 
 ///*
 //	const SearchDialog = () => (
@@ -100,19 +100,10 @@ const SearchDialog = (props : { year?: number, navPrev?: string, navNext?: strin
 			}, timeout);
 		}
 	}
-	return (props?.setResults &&
+	return (<>
 		<form onSubmit={async (ev) => {
 			ev.preventDefault();
-			props?.setError();
-			if (f && q) {
-				///props?.setResults();
-				///doSearch(f, q, props?.setResults, props?.setError);
-				setNavigation(f, q);
-			} else {
-				//props?.setError("Please choose a type and a search value");
-				doSearch({ year }, props?.setResults, props?.setError);
-				///props?.setResults();
-			}
+			setNavigation(f, q);
 		}}
 		>
 		<div style={{
@@ -123,7 +114,7 @@ const SearchDialog = (props : { year?: number, navPrev?: string, navNext?: strin
 			className="flex flex-wrap justify-center space-x-5"
 		>
 				<div className="m-1">
-					<select className="p-2" value={f as string || ''} onChange={(e) => {
+					<select className="p-2" value={f as string || 'all'} onChange={(e) => {
 						setF(e.target.value)
 						if (e.target.value && q) debounce(setNavigation(e.target.value, q));
 						}}>
@@ -148,6 +139,7 @@ const SearchDialog = (props : { year?: number, navPrev?: string, navNext?: strin
 				</span>
 		</div>
 		</form>
+		</>
 	)
 }
 

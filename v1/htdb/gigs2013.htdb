@@ -12,6 +12,11 @@
 			music at the theatre in Dortmund. Each of us will play a short solo set before joining up to play a full set together. It will        
 			be...different... 
 		)},
+		reviews=${literalizeCommas(
+			The Jazz Butcher, Markus Maria Jansen (M. Walking on the Water), Thomas Truax together with Paul Wallfish. It was kind of supergroup just coming together for one night called:&nbsp;The Almost Has Beens on 14. February 2013.
+		)}$$
+		Heimo Reifetshammer;;heimoreifetshammer\@web.de;;2021-11-15
+		,
 		photosets= /images/20130214/20130214_pat.jpg$$
 	)}
 

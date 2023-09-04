@@ -28,6 +28,7 @@ const nextConfig = {
 					destination: '/:path*',
 					permanent: false,
 				},
+				/*
 				{
 					source: '/audio/:path*',
 					destination: 'https://jazzbutcher.com/audio/:path*',
@@ -38,6 +39,7 @@ const nextConfig = {
 					destination: 'https://jazzbutcher.com/images/:path*',
 					permanent: false,
 				},
+				*/
 				{
 					source: '/api/v2/:path*',
 					destination: `${process.env.JBC_DATA_SERVER}/api/:path*`,

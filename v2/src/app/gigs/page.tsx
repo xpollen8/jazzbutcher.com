@@ -1,15 +1,15 @@
 "use client"
 
-import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation'
 import { pat, max, owen, eg, at } from '@/lib/defines';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SearchDialog from '@/components/SearchDialog';
 import SearchResults from '@/components/SearchResults';
-import apiData from '@/lib/apiData';
+import useGigs from '@/components/useGigs';
 import { Source } from '@/components/GenericWeb';
-import { Hashed, bannerGigs, doSearch, searchOptions } from '@/lib/macros';
+import { bannerGigs } from '@/lib/macros';
 
 const GigBlurb = () =>
 <>
@@ -53,45 +53,21 @@ const GigBlurb = () =>
 	</div>
 </>
 
-const Gigs = (props: any) => {
-	const { searchParams = {} } = props;
-	const f = searchParams?.f;
-	const q = searchParams?.q;
-	const [results, setResults] = useState<Hashed>({});
-	const [error, setError] = useState();
-	const [loading, setLoading] = useState(false);
-
-	useEffect(() => {
-		(async () => {
-			// set initial results
-			setLoading(true);
-			if (f && q) {
-				doSearch({ f, q }, setResults, setError);
-			} else {
-				//const pix = (await apiData('gigmedias'))?.results.filter(r => r.type === 'pix');
-				const gigs = await apiData('gigs');
-				/*
-				gigs.results?.forEach((g, idx) => {
-					gigs.results[idx].pix = pix?.filter(p => p.datetime == g.datetime);
-					console.log("PIX", gigs.results[idx].pix);
-				});
-				*/
-				setResults({ type: "archive", noun: "archive", ...gigs });
-			}
-		})();
-	}, [f, q]);
-
-	useEffect(() => {
-		setLoading(false);
-	}, [ results ]);
+const Gigs = () => {
+	const searchParams = useSearchParams();
+	const type = searchParams.get('f') as string;
+	const query = searchParams.get('q') as string;
+	const { data, isLoading, error } = useGigs({ type, query });
 
 	return (<>
 		<Header section='gigs' />
-		<SearchDialog f={f} q={q} setResults={setResults} setError={setError} />
-		{(error) && <h1 style={{ color: 'red' }}>{error}</h1>}
-		{!(f && q) && <GigBlurb />}
-		{(!loading) && <SearchResults results={results || {}} banner={() => bannerGigs(results) }/>}
-		{(loading) && <>Loading..</>}
+		<SearchDialog />
+		{(data?.error) && <h1 style={{ color: 'red' }}>{data.error}</h1>}
+		{(!(type && query)) && <GigBlurb />}
+		{(isLoading) ?
+			<>Loading..</>
+			: <SearchResults results={data} banner={() => bannerGigs(data) }/>
+		}
 		<Footer />
 	</>)
 }

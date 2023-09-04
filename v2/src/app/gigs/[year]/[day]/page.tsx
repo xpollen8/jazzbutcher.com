@@ -1,5 +1,6 @@
 "use client"
 
+import React, { useSuspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as Tabs from '@radix-ui/react-tabs';
@@ -208,7 +209,6 @@ const GigMap = ({ data }: any) => {
 
 const ExtraNav = ({ datetime }: { datetime: string }) => {
 	const { gig, isLoading, error } = useGig(datetime)
-	if (isLoading) return <></>;
 	return <>
 		- NAV -
 	</>
@@ -354,7 +354,9 @@ const GigProfile = (props: any) => {
 
 	return <>
 		<Nav year={year} datetime={datetime} />
-		<Content datetime={datetime} />
+		<Suspense fallback={<>Loading...</>}>
+			<Content datetime={datetime} />
+		</Suspense>
 		<Footer />
 	</>
 }

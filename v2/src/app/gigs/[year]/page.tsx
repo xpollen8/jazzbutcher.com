@@ -1,5 +1,6 @@
 "use client"
 
+import React, { Suspense } from 'react';
 import { useParams, useSearchParams } from 'next/navigation';
 
 import Header from '@/components/Header';
@@ -29,13 +30,9 @@ const Gigs = () => {
 		<Header section='gigs' title={year} extraNav={extraNav} />
 		<SearchDialog />
 		{(data?.error) && <h1 style={{ color: 'red' }}>{data?.error}</h1>}
-		{(isLoading) ?
-			<>Loading..</>
-			:
-			<>
+		<Suspense fallback={<>Loading...</>}>
 			<SearchResults results={data} banner={() => bannerGigs(data, iyear) } />
-			</>
-		}
+		</Suspense>
 		<Footer />
 	</>)
 }

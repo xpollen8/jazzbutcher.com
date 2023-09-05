@@ -8,18 +8,53 @@ const nextConfig = {
 	async redirects() {
 			return [
 				{
+					source: '/letters/90Feb14/:path*',
+					destination: '/letters/19900214/:path*',
+					permanent: false,
+				},
+				{
+					source: '/letters/91Feb01/:path*',
+					destination: '/letters/19910201/:path*',
+					permanent: false,
+				},
+				{
+					source: '/letters/93Aug30/:path*',
+					destination: '/letters/19930830/:path*',
+					permanent: false,
+				},
+				{
+					source: '/letters/93Oct19/:path*',
+					destination: '/letters/19931019/:path*',
+					permanent: false,
+				},
+				{
+					source: '/letters/94Apr13/:path*',
+					destination: '/letters/19940413/:path*',
+					permanent: false,
+				},
+				{
+					source: '/press/94stop_press.html',
+					destination: '/letters/19940520',
+					permanent: false,
+				},
+				{
+					source: '/letters/94Jun24/:path*',
+					destination: '/letters/19940624/:path*',
+					permanent: false,
+				},
+				{
+					source: '/letters/94Sep13/:path*',
+					destination: '/letters/19940813/:path*',
+					permanent: false,
+				},
+				{
 					source: '/albums/:path*',
 					destination: '/releases/:path*',
 					permanent: false,
 				},
 				{
-					source: '/albums',
-					destination: '/releases',
-					permanent: false,
-				},
-				{
-					source: '/people',
-					destination: '/conspirators',
+					source: '/people/:path*',
+					destination: '/conspirators/:path*',
 					permanent: false,
 				},
 				// remove ".html" from all URLs
@@ -50,6 +85,12 @@ const nextConfig = {
 				{
 					protocol: 'https',
 					hostname: 's3.amazonaws.com',
+					port: '',
+					pathname: '**',
+				},
+				{
+					protocol: 'https',
+					hostname: 'adjective.com',
 					port: '',
 					pathname: '**',
 				},

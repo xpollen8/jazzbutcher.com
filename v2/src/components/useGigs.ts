@@ -25,25 +25,26 @@ const useGigs = ({ type, query, year }: any) => {
 	// TODO have fetchGig add .prevGig & .nextGig to object
 	// NOTE: array to bust SWR cache
 	const options = getOptions(type);
-	const fetcher = ([ url, { year, type, query } ]: any) => {
-		const localValue = localStorage.getItem(type);
-		//console.log("localValue", localValue);
+	const fetcher = async ([ url, { year, type, query } ]: any) => {
+		const localValue = await localStorage.getItem('gigs');
 		if (localValue) {
 				//console.log("FROM LOCAL", localValue.length);
 				return filterGigs(JSON.parse(localValue), query, year, type, options);
 		}
-		fetch(url)
+		return fetch(url)
 			.then((res) => res.json())
 			.then(gigs => {
 
 				//console.log("SET LOCAL");
-				localStorage.setItem(type, JSON.stringify(gigs));
+				localStorage.setItem('gigs', JSON.stringify(gigs));
 
 				return filterGigs(gigs, query, year, type, options);
 			});
 		}
 
-	const { data, error, isLoading } = useSWR([ `/api/${options.route}/${query}`, { year, type, query }], fetcher);
+	const route = (year?.length) ? `/api/${options.route}/${year}` : `/api/${options.route}`;
+
+	const { data, error, isLoading } = useSWR([ route, { year, type, query }], fetcher);
 
 	//console.log("RET", data);
 	return {

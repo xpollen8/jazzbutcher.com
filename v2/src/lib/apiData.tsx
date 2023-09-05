@@ -1,7 +1,6 @@
 "use server"
 
 import { localDate, HashedType, RecordType } from './macros';
-import fs from 'fs';
 
 const cache: HashedType = {};
 
@@ -23,50 +22,31 @@ const cache: HashedType = {};
 	search results.
 	no reason this cannot be extended to press, etc.
  */
-const apiDataFromHTDBServer = async (path: string) => {
-	if (cache[path]) {
-		//console.log("CACHE HIT", path);
-		return cache[path];
+const doFetch = async (url: string) => {
+	if (cache[url]) {
+		console.log("CACHE HIT", url);
+		return cache[url];
 	}
-	return await fetch(`${process.env.JBC_HTDB_SERVER}/htdb/${path}`,
+	return await fetch(url,
 		{
 			next: { revalidate: 300 },
 			mode: 'no-cors'
 		})
 		.then(e => e.json())
-		.then(e => { cache[path] = e; return e })
+		.then(e => { cache[url] = e; console.log("CACHE", url); return e })
 		.catch((e) => {
 			console.log("ERR", e);
-			return { error: `search by ${path} failed` };
+			return { error: `search by ${url} failed` };
 		});
 }
 
+const apiDataFromHTDBServer = async (path: string) => await doFetch(`${process.env.JBC_HTDB_SERVER}/htdb/${path}`);
+
 const apiDataFromDataServer = async (path: string, args?: string) => {
 	if (!args) {
-		if (cache[path]) {
-			console.log("CACHE HIT", path);
-			//return cache[path];
-		}
-		return await fetch(`${process.env.JBC_DATA_SERVER}/api/${path}`,
-			{
-				next: { revalidate: 300 }
-			})
-			.then(e => e.json())
-			.then(e => { cache[path] = e; return e })
-			.catch((e) => {
-				console.log("ERR", e);
-				return { error: `search by ${path} failed` };
-			});
+		return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}`);
 	}
-	return await fetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`,
-		{
-			next: { revalidate: 300 }
-		})
-		.then(e => e.json())
-		.catch((e) => {
-			console.log("ERR", e);
-			return { error: `search by ${path} failed` };
-		});
+	return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
 }
 
 const apiData = async (path: string, args?: string) => {
@@ -86,7 +66,6 @@ const apiData = async (path: string, args?: string) => {
 		case 'songs_by_release':
 		case 'lyrics':
 		case 'lyric_by_href':
-			console.log("apiData", { path, args });
 			return await apiDataFromDataServer(path, args);
 		case 'gigs_by_musician': {
 			const performances =  await apiDataFromDataServer(path, args);

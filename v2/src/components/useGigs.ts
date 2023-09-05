@@ -35,6 +35,7 @@ const useGigs = ({ type, query, year }: any) => {
 			.then((res) => res.json())
 			.then(gigs => {
 
+				// TODO - have a time-based cache invalidation
 				//console.log("SET LOCAL");
 				localStorage.setItem('gigs', JSON.stringify(gigs));
 

@@ -10,8 +10,8 @@ const linkSearch = ({ name, text, act }:
 }) =>
 <>
 	{(() => {
-	if (act) return <Link href={`/search?f=act&q={name}`}>{(text) ? text : name}</Link>
-	return <Link href={`/search?f=performer&q={name}`}>{(text) ? text : name}</Link>
+	if (act) return <Link href={`/gigs?f=alsowith&q=${name}`}>{(text) ? text : name}</Link>
+	return <Link href={`/gigs?f=performer&q=${name}`}>{(text) ? text : name}</Link>
 	})()}
 </>
 
@@ -85,6 +85,7 @@ export const indge = linkPerson({ href: "/conspirators/alastair_indge.html", nam
 export const is = linkSearch({ name: "Ian Sturgess" });
 export const jody = linkSearch({ name: "Jody Palmer" });
 export const joe = 	linkSearch({ name: "Joe Foster" });
+export const tony = 	linkSearch({ name: "Tony Foster" });
 export const joe_woolley = linkSearch({ name: "Joe Woolley", act: "yes" });
 export const joea = linkPerson({ href: "/conspirators/joe_allen.html", name: "Joe Allen" });
 export const joel_harries = linkPerson({ href: "/conspirators/joel_harries.html", name: "Joel Harries" });
@@ -636,6 +637,7 @@ export const friendly = linkSong({ title: "Come, Friendly Spacemen" });
 export const lunch = linkAlbum({ href: "/releases/free_lunch.html", title: "The Jazz Butcher's Free Lunch" });
 export const cake = linkAlbum({ href: "/releases/cake_city.html", title: "Cake City" });
 
+export const NME = <b>NME</b>;	// TODO - should search /press, eventually
 //
 //	places
 //

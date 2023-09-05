@@ -15,7 +15,7 @@ const linkSearch = ({ name, text, act }:
 	})()}
 </>
 
-const linkPerson = (props: { href: string, name: string }) => <span className="person">{linkInternal(props?.href, props?.name)}</span>
+const linkPerson = (props: { href: string, name: string }) => <span className="person">{linkInternal(props?.href, props?.name)}{' '}</span>
 const linkAlbum = (props: { title: string, href?: string }) =>
 <>
 {(props?.href) ?
@@ -85,13 +85,13 @@ export const indge = linkPerson({ href: "/conspirators/alastair_indge.html", nam
 export const is = linkSearch({ name: "Ian Sturgess" });
 export const jody = linkSearch({ name: "Jody Palmer" });
 export const joe = 	linkSearch({ name: "Joe Foster" });
-export const joe_woolley = linkSearch({ name: "Joe Woolley', act: 'yes" });
+export const joe_woolley = linkSearch({ name: "Joe Woolley", act: "yes" });
 export const joea = linkPerson({ href: "/conspirators/joe_allen.html", name: "Joe Allen" });
 export const joel_harries = linkPerson({ href: "/conspirators/joel_harries.html", name: "Joel Harries" });
 export const john_silver = 'John Silver';
 export const jonny_mattock = linkPerson({ href: "/conspirators/jonny_mattock.html", name: "Jonny Mattock" });
 export const jules = linkPerson({ href: "/conspirators/julian_poole.html", name: "Julian Poole" });
-export const karel = linkPerson({ href: "/conspirator/von_dammerung.html", name: "Karel Von D&auml;mmerung" });
+export const karel = linkPerson({ href: "/conspirator/von_dammerung.html", name: 'Karel Von Dämmerung' });
 export const kathie = linkPerson({ href: "/conspirators/kathie_mcginty.html", name: "Kathie McGinty" });
 export const kathy = linkPerson({ href: "/conspirators/kathy_schaer.html", name: "Kathy Schaer" });
 export const kathy_misery = linkPerson({ href: "/conspirators/kathy_schaer.html", name: "Misery Wilson" });
@@ -157,7 +157,7 @@ export const vu = linkExternal("http://www.rocknroll.net/loureed/", "Velvet Unde
 export const richman = linkExternal("http://www.base.com/jonathan/jonathan.html", "Jonathan Richman");
 export const dronesclub = linkExternal("https://thedronesclub.co.uk/", "The Drones Club");
 export const space = linkExternal("http://www.spiritualized.com/", "Spacemen 3");
-export const aero = linkSearch({ name: "The Blue Aeroplanes', act: 'yes" });
+export const aero = linkSearch({ name: "The Blue Aeroplanes", act: "yes" });
 export const haus = linkExternal("http://www.partium.com/~andrewb/bauhaus/", "Bauhaus");
 export const tractors = linkExternal("http://www.geocities.com/Nashville/Stage/8818/favorite.htm", "Stranger Tractors");
 export const poi = linkExternal("http://www.poidogpondering.com/", "Poi Dog Pondering");
@@ -169,8 +169,8 @@ export const vergift = <Link href="https://adjective.com/vergiftung/site">Vergif
 export const cave = linkSearch({ name: "Nick Cave", act: "yes" });
 export const cvb = "Camper Van Beethoven";
 export const mbv = "My Bloody Valentine";
-export const 	tvamp = linkSearch({ name: "Transvision Vamp', act: 'yes" });
-export const swynn = linkSearch({ name: "Steve Wynn', act: 'yes" });
+export const 	tvamp = linkSearch({ name: "Transvision Vamp", act: "yes" });
+export const swynn = linkSearch({ name: "Steve Wynn", act: "yes" });
 export const bangles = linkSearch({ name: "The Bangles", act: "yes" });
 export const cale = linkExternal("http://john-cale.com", "John Cale");
 export const braind = linkSearch({ name: "Braindead Soundmachine", act: "yes" });

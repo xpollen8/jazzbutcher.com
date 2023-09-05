@@ -24,8 +24,8 @@ const cache: HashedType = {};
  */
 const doFetch = async (url: string) => {
 	if (cache[url]) {
-		console.log("CACHE HIT", url);
-		return cache[url];
+		//console.log("CACHE HIT", url);
+		//return cache[url];
 	}
 	return await fetch(url,
 		{

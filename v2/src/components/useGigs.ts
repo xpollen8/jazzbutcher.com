@@ -26,18 +26,20 @@ const useGigs = ({ type, query, year }: any) => {
 	// NOTE: array to bust SWR cache
 	const options = getOptions(type);
 	const fetcher = async ([ url, { year, type, query } ]: any) => {
+		/*
 		const localValue = await localStorage.getItem('gigs');
 		if (localValue) {
 				//console.log("FROM LOCAL", localValue.length);
 				return filterGigs(JSON.parse(localValue), query, year, type, options);
 		}
+		*/
 		return fetch(url)
 			.then((res) => res.json())
 			.then(gigs => {
 
 				// TODO - have a time-based cache invalidation
 				//console.log("SET LOCAL");
-				localStorage.setItem('gigs', JSON.stringify(gigs));
+				//localStorage.setItem('gigs', JSON.stringify(gigs));
 
 				return filterGigs(gigs, query, year, type, options);
 			});

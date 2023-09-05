@@ -1,7 +1,7 @@
 import useSWR from 'swr';
 import { getOptions } from '@/lib/macros';
 
-const filterGigs = (gigs, query, year, type, options) => {
+const filterGigs = (gigs: any, query: any, year: any, type: any, options: any) => {
 	gigs.query = query;
 	gigs.year = year;
 	gigs.type = type;

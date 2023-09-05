@@ -749,3 +749,9 @@ p::first-letter {
 	background-color: #FFA500;
 	font-style: italic;
 }
+.letter {
+	outline: solid;
+	outline-width: 1px;
+	margin: 5px;
+	padding: 5px;
+}

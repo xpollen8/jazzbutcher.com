@@ -299,7 +299,7 @@ textplus1 {
 	color: #222;
 	border-radius: 4px;
 	background-color: #BCF1AF;
-	margin: 5px;
+	margin: 3px;
 	padding-top: 5px;
 	padding-left: 10px;
 	font-weight: bold;
@@ -753,5 +753,6 @@ p::first-letter {
 	outline: solid;
 	outline-width: 1px;
 	margin: 5px;
+	margin-top: 6px;
 	padding: 5px;
 }

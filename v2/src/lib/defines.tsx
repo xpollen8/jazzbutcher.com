@@ -33,21 +33,17 @@ const linkSingle = (props: { title: string, href?: string }) =>
 }
 </>
 
-const linkSong = (props: { title?: string, href?: string, audio?: string, mp3?: string, author?: string, pdf?: string}) =>
+const linkSong = (props: { title?: string, href?: string, author?: string | React.ReactNode }) =>
 <>
   <span className='song'>
 	{(() => {
-	if (props?.mp3 && props?.href) {
-	return <i><Link href={props?.href}>{props?.title}</Link></i>
-	} else if (props?.mp3 && props?.title) {
-	return <i><Link href={props?.href}>{props?.title}</Link></i>
-	} else if (props?.href && props?.title) {
-	return <i><Link href={props?.href}>{props?.title}</Link></i>
-	} else {
-	return <i>{props?.title}</i>
-	}
+		if (props?.title && props?.href) {
+			return <i><Link href={props.href}>{props.title}</Link></i>
+		} else if (props?.title) {
+			return <i>{props.title}</i>
+		}
 	})()}
-	{(props?.author) && <span className="song_author">({props?.author})</span>}
+	{(props?.author) && <span className="song_author">({props.author})</span>}
   </span>
 </>
 
@@ -95,7 +91,7 @@ export const joel_harries = linkPerson({ href: "/conspirators/joel_harries.html"
 export const john_silver = 'John Silver';
 export const jonny_mattock = linkPerson({ href: "/conspirators/jonny_mattock.html", name: "Jonny Mattock" });
 export const jules = linkPerson({ href: "/conspirators/julian_poole.html", name: "Julian Poole" });
-export const karel = linkPerson('/conspirator/von_dammerung.html', 'Karel Von D&auml;mmerung');
+export const karel = linkPerson({ href: "/conspirator/von_dammerung.html", name: "Karel Von D&auml;mmerung" });
 export const kathie = linkPerson({ href: "/conspirators/kathie_mcginty.html", name: "Kathie McGinty" });
 export const kathy = linkPerson({ href: "/conspirators/kathy_schaer.html", name: "Kathy Schaer" });
 export const kathy_misery = linkPerson({ href: "/conspirators/kathy_schaer.html", name: "Misery Wilson" });
@@ -415,7 +411,8 @@ export const stat = linkSong({ href: "/lyrics/angel_station.html", title: "Angel
 export const drainglass = linkAlbum({ href: "/releases/drainglass.html", title: "Draining The Glass 1982 - 86" });
 export const best_kisser = linkAlbum({ title: "The Best Kisser In The World" });
 export const glorious = linkAlbum({ href: "/releases/glorious.html", title: "Glorious And Idiotic" });
-export const glass = <b>Glass Records</b>
+export const glass = <b>Glass Records</b>;
+export const creat = <b>Creation Records</b>;
 //
 //	Sumosonic
 //

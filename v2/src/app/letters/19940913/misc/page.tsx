@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	aero, bwatch, haus, joea, jules, levit, lix, paul, rachel, strange, vu,
 } from '@/lib/defines';
@@ -9,9 +10,8 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940913'>13Sep94</Link> | Odds N Ends</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
-			<b>GROLSCH</b>
-			<p />
+		<div className="etc">
+			<LetterHeader title='GROLSCH' />
 			<samp>
 			&gt; Date: Mon, 6 Jun 94 11:34:19 BST<br />
 			&gt; From: smeats@lincoln.gpsemi.COM (Sad Git on the Internet)<br />
@@ -27,9 +27,7 @@ const Letter = () =>  {
 			brewing obsessives.  Well, it&apos;s not.  It&apos;s Dutch and
 			it will make your Head Hurt.
 			</blockquote>
-			<p />
-			<b>RIDE</b>
-			<p />
+			<LetterHeader title="RIDE" />
 			<samp>
 			&gt; Date: Wed, 8 Jun 94 11:26:10 BS<br />
 			&gt; From: joe@anvil.co.uk (Joe Nicholson)<br />
@@ -48,9 +46,7 @@ const Letter = () =>  {
 			You Very Much&quot; Bell.  Good old Andy.  It was like watching
 			Free!  Rock shat.
 			</blockquote>
-			<p />
-			<b>HELLO MISTER MITCHELL R. DICKERMAN : THIS ONE&apos;S FOR YOU</b>
-			<p />
+			<LetterHeader title="HELLO MISTER MITCHELL R. DICKERMAN : THIS ONE'S FOR YOU" />
 			<samp>
 			&gt; Date: Sun, 14 Aug 1994 11:52:04 -0400 (EDT)<br />
 			&gt; From: mrd@world.std.com (Mitchell R Dickerman)<br />

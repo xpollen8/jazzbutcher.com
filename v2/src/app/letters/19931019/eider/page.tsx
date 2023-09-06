@@ -7,7 +7,7 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19931019'>19Oct93</Link> | EIDER</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			<b>WHERE IS EIDER MAN?</b>
 			<p />
 			<samp>
@@ -17,15 +17,17 @@ const Letter = () =>  {
 				&gt; and is he still playing?
 			</samp>
 			<p />
-			{max} is, of course, a member of the ongoing {dj} collective.
-			He&apos;s also been working as an editor on TV scripts, including
-			one about an &quot;up and coming indie band&quot;, which must have
-			caused him considerable mirth.  I see virtually nothing
-			of him, as he&apos;s London based and I tend to spend most
-			of my time here in the Bad Neighborhood, but I saw him
-			briefly at the {vu} looking as dapper as any man possibly could.
-			Stupidy, the D.J. ensemble currently find themselves without a
-			record deal.  Any constructive suggestions can be passed on via me.
+			<blockquote className="annotation">
+				{max} is, of course, a member of the ongoing {dj} collective.
+				He&apos;s also been working as an editor on TV scripts, including
+				one about an &quot;up and coming indie band&quot;, which must have
+				caused him considerable mirth.  I see virtually nothing
+				of him, as he&apos;s London based and I tend to spend most
+				of my time here in the Bad Neighborhood, but I saw him
+				briefly at the {vu} looking as dapper as any man possibly could.
+				Stupidy, the D.J. ensemble currently find themselves without a
+				record deal.  Any constructive suggestions can be passed on via me.
+			</blockquote>
 		</div>
 		<Footer />
 	</>)

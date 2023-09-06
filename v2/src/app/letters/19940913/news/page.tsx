@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	creat, bus, fishco, dj,
 } from '@/lib/defines';
@@ -9,8 +10,8 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940913'>13Sep94</Link> | News</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
-			<b>THE BAD NEWS</b>
+		<div className="etc">
+			<LetterHeader title='THE BAD NEWS' />
 			<p />
 			<blockquote>
 			We shall not be coming to America or Canada in 1994.
@@ -46,7 +47,7 @@ const Letter = () =>  {
 			shan&apos;t waste so much time.
 			</blockquote>
 			<p />
-			<b>THE GOOD NEWS</b>
+			<LetterHeader title='THE GOOD NEWS' />
 			<p />
 			<blockquote>
 			It&apos;s been a long time since {bus} came out here.  If we can&apos;t take it round North
@@ -64,7 +65,7 @@ const Letter = () =>  {
 			to me; mixing will be done by {dj}.
 			</blockquote>
 			<p />
-			<b>THE ORDINARY NEWS</b>
+			<LetterHeader title='THE ORDINARY NEWS' />
 			<p />
 			<blockquote>
 			We shall be playing at <b>The Boat Race</b>, Cambridge,

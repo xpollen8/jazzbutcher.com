@@ -6,7 +6,7 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19931019'>19Oct93</Link> | PRESIDENT CHANG</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			<b>LES ROCKUPTIBLES</b>
 			<p />
 			<samp>
@@ -19,10 +19,12 @@ const Letter = () =>  {
 			<p />
 			<i>..&quot;where even the guitars end up sounding like a harpsichord..&quot;</i>
 			<p />
-			IT IS A FUCKING HARPSICHORD, YOU GALLIC DOLT!
-			<p />
-			(No, Joe, not you, the Gallic Dolt who wrote it in the
-			first place! Good translation, too.  Allez!  Salut maintenant.)
+			<blockquote className="annotation">
+				IT IS A FUCKING HARPSICHORD, YOU GALLIC DOLT!
+				<p />
+				(No, Joe, not you, the Gallic Dolt who wrote it in the
+				first place! Good translation, too.  Allez!  Salut maintenant.)
+			</blockquote>
 		</div>
 		<Footer />
 	</>)

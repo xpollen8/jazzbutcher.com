@@ -10,10 +10,12 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940413'>13Apr94</Link> | XXX</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
+			<p />
 			<center>
-			<b>JBC TOUR REPORT : EUROPE 1994</b>
+			<b className="text-2xl">JBC TOUR REPORT : EUROPE 1994</b>
 			</center>
+			<p />
 			<hr />
 			<b>The players this time:</b>
 			<ul>
@@ -342,8 +344,8 @@ const Letter = () =>  {
 			<Link href="/gigs/1994/Feb17.html">Day 18 : Paris - <b>Arapaho</b></Link>
 			<blockquote>
 			<Link href="https://jazzbutcher.com/images/paris.jpg">
-				<Image style={{ float: 'left', margin: '5px' }} width={163} height={108} alt="[image]"
-				src="https://jazzbutcher.com/images/sparis.gif" /></Link>
+				<Image className="float-right m-3" width={250} height={250} alt="[image]"
+				src="https://jazzbutcher.com/images/paris.jpg" /></Link>
 			{loony} has been busy; as
 			soon as we arrive in the venue he is on the phone: &quot;I&apos;ve
 			made you a backdrop - can you pick it up?&quot;  It&apos;s huge,
@@ -354,8 +356,8 @@ const Letter = () =>  {
 			for years.  The Love Bus throws an after-gig tantrum,
 			but is soon re-animated.  Perhaps an hour later we finally
 			find the hotel - very nice, but a little discreet, non?
+			<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
 			<Link href="/gigs/1994/Feb18.html">Day 19 : Dordrecht -
 			<b>Odd Balls</b></Link>
 			<blockquote>
@@ -402,7 +404,7 @@ const Letter = () =>  {
 			drive home, got to bed for ever.
 			</blockquote>
 			<hr />
-			<b>JBC TOUR AWARDS : JAN/FEB 1994</b>
+			<b className="text-2xl">JBC TOUR AWARDS : JAN/FEB 1994</b>
 			<ul>
 			<li>Best Show :
 				<Link href="/gigs/1994/Feb16.html">
@@ -437,7 +439,7 @@ const Letter = () =>  {
 			deranged human being : Razorface, Clermont-Ferrand</li>
 			</ul>
 			<hr />
-			<b>THE SET</b>
+			<b className="text-2xl">THE SET</b>
 			<dl>
 			<dd>{sweet}</dd>
 			<dd>{party}</dd>

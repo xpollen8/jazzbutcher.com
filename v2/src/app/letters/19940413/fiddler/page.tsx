@@ -7,7 +7,7 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940413'>13Apr94</Link> | Mean Fiddler gig</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			<b>That {FIDDLER} Set List In Full - <Link href="/gigs/1994/Apr8.html">8th April 1994</Link></b>
 			<p />
 			<dl>
@@ -37,15 +37,16 @@ const Letter = () =>  {
 			<p />The supports: Spittle Rattle (Michael, Catherine,
 			Sophie) and Nick &quot;Gilbert O&apos;Sullivan Green&quot;
 			<p />
-			There were rather more than three in attendance, weren&apos;t
-			there, Matt? (Why didn&apos;t you say hello?) who seemed to
-			like it a lot.  Both new players did very well, and are
-			most likely here to stay, despite {pete}&apos;s recent disconcerting
-			habits of buying us all hundreds of beers and trying
-			to rejoin the band (bless &apos;im...)  There was much consumption
-			of the Great God Jaegermeister and then we went home,
-			satisfied.
-
+			<blockquote className="annotation">
+				There were rather more than three in attendance, weren&apos;t
+				there, Matt? (Why didn&apos;t you say hello?) who seemed to
+				like it a lot.  Both new players did very well, and are
+				most likely here to stay, despite {pete}&apos;s recent disconcerting
+				habits of buying us all hundreds of beers and trying
+				to rejoin the band (bless &apos;im...)  There was much consumption
+				of the Great God Jaegermeister and then we went home,
+				satisfied.
+			</blockquote>
 		</div>
 		<Footer />
 	</>)

@@ -7,11 +7,11 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19930830'>30Aug93</Link> | WHERE IS BUTCHER BAND?</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			<center>
-			<b>WHERE IS BUTCHER BAND?</b>
-			<br/><b>Soap opera details and untruths for those who
-			insist upon them.</b>
+			<b className="text-2xl">WHERE IS BUTCHER BAND?</b>
+			<br/><b>Soap opera details and untruths for those who insist upon them.</b>
+			<p />
 			</center>
 			<hr/>
 			<a id="pete" />

@@ -8,7 +8,7 @@ import { karel, larry, aero, astor, swynn, tvamp } from '@/lib/defines';
 const Letter = () => 
 <>
 	<Header section='letters' title='1Feb91'/>
-	<div className="letter">
+	<div className="etc">
 		<b>FROM THE SPORTS DESK OF THE WIGMORE SOCIETY (founded 1982)</b>
 		<br/>
 		<b>DROP A TOWELHEAD - WIN A PICK-UP TRUCK!</b>

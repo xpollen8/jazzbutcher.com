@@ -6,8 +6,13 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940913'>13Sep94</Link> | Peter Lorre</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
-			<Link href="/lyrics/peter_lorre.html"><b>PETER LORRE</b></Link>
+		<div className="etc">
+			<p />
+			<center>
+			<Link href="/lyrics/peter_lorre.html"><b className="text-2xl">PETER LORRE</b></Link>
+			</center>
+			<p />
+			<hr />
 			<p />
 			<samp>
 			&gt; Date: Fri, 29 Jul 1994 19:09:53 -0400<br />

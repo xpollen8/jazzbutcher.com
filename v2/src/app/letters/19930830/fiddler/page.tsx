@@ -7,10 +7,11 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19930830'>30Aug93</Link> | Mean Fiddler</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			<center>
-				<b>THAT MEAN <Link href="/gigs/1993/May15.html">FIDDLER SET</Link> LIST IN FULL...</b>
+				<b className="text-2xl">THAT MEAN <Link href="/gigs/1993/May15.html">FIDDLER SET</Link> LIST IN FULL...</b>
 			</center>
+			<p />
 			<hr/>
 			<dl>
 				<dd>{sue} (<i>Susie</i>, you fool, it was <i>Susie</i>!  Did I make THAT much of a mess of it?)</dd>

@@ -127,8 +127,7 @@
 .clear_float {
 	clear: both;
 }
-.annotation img {
-	border: 1px solid black;
+.annotation .release {
 	border-radius: 5px;
 	margin-right: 5px;
 }

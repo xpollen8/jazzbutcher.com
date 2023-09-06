@@ -3,34 +3,39 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
+import MakeSimpleURI from '@/components/MakeSimpleURI';
+
+const letters = [
+	{ uri: "/letters/90Feb14", text: "1990-02-14", aux: "Cult Of The Basement" },
+	{ uri: "/letters/91Feb01", text: "1991-02-01", aux: "the &quot;Hunter S. Thompson&quot; letter" },
+	{ uri: "/letters/93Aug30", text: "1993-08-30", aux: "The Albums, The Bands, LoveBus, 93 Euro Tour" },
+	{ uri: "/letters/93Oct19", text: "1993-10-19", aux: "Eider, The Fall, News" },
+	{ uri: "/letters/94Apr13", text: "1994-04-13", aux: "94 Euro Tour, Two Gigs, News, 93/94 Tours" },
+	{ uri: "/press/94stop_press.html", text: "1994-05-20", aux: "Press Release" },
+	{ uri: "/letters/94Jun24", text: "1994-06-24", aux: "All the gigs, Pat&apos;s Top 20 Gigs (circa)" },
+	{ uri: "/letters/94Sep13", text: "1994-09-13", aux: "Gig reviews, jbc-list rebuttals, etc" },
+	{ uri: "/letters/artwork.html", text: "1994", aux: "Sketches culled from the above letters" },
+	{ uri: "/press/20020709_starindia.html", text: "2002-07", aux: "The Star Of India: Pat reviews his favorite Restaurant" },
+];
 
 const Letters = () => 
 <>
 	<Header section='letters' />
 	<Tag>
-	Pat responds to questions posed by fans of the band (historical).
+		Pat responds to questions posed by fans of the band (historical).
 	</Tag>
-	<div className="letter">
-		<div className="flex flex-wrap">
-			<div className="w-3/4">
-				<ul>
-					<li><Link href="/letters/90Feb14">1990-02-14</Link> - <b>Cult Of The Basement</b> </li>
-					<li><Link href="/letters/91Feb01">1991-02-01</Link> - the &quot;Hunter S. Thompson&quot; letter </li>
-					<li><Link href="/letters/93Aug30">1993-08-30</Link> - The Albums, The Bands, <b>LoveBus</b>, 93 Euro Tour </li>
-					<li><Link href="/letters/93Oct19">1993-10-19</Link> - Eider, The Fall, News </li>
-					<li><Link href="/letters/94Apr13">1994-04-13</Link> - 94 Euro Tour, Two Gigs, News, 93/94 Tours </li>
-					<li><Link href="/press/94stop_press.html">1994-05-20</Link> - Press Release </li>
-					<li><Link href="/letters/94Jun24">1994-06-24</Link> - All the gigs, Pat&apos;s Top 20 Gigs (circa) </li>
-					<li><Link href="/letters/94Sep13">1994-09-13</Link> - Gig reviews, <Link href="/mailinglist">jbc-list</Link> rebuttals, etc </li>
-					<li><Link href="/letters/artwork.html">1994</Link> - Sketches culled from the above letters </li>
-					<li><Link href="/press/20020709_starindia.html">2002-07</Link> - The Star Of India: Pat reviews his favorite Restaurant </li>
-				</ul>
+	<div className="etc">
+		<div className="flex flex-wrap justify-around">
+			<div className="min-w-[50%]">
+				{letters.map(MakeSimpleURI)}
 			</div>
-			<div className="w-1/4">
+			<div className="m-1">
+				<center>
 				<Link href="https://jazzbutcher.com/images/pat_party.jpg">
-					<Image alt="[photo]" width={195} height={145} src="https://jazzbutcher.com/images/spat_party.gif" />
+					<Image alt="[photo]" width={400} height={400} src="https://jazzbutcher.com/images/pat_party.jpg" />
 				</Link>
 				<Image alt="[PatFishInfo]" width={289} height={139} src="https://jazzbutcher.com/images/pat_sig.gif" />
+				</center>
 			</div>
 		</div>
 	</div>

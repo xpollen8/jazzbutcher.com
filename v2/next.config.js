@@ -39,7 +39,7 @@ const nextConfig = {
 				},
 				{
 					source: '/letters/94Sep13/:path*',
-					destination: '/letters/19940813/:path*',
+					destination: '/letters/19940913/:path*',
 					permanent: false,
 				},
 				{

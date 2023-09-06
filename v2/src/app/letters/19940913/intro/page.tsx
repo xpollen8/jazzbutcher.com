@@ -10,7 +10,7 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940913'>13Sep94</Link> | Intro</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			Hello, Boss.
 			<p />
 			Thanks for writing and keeping me up to date with Internet
@@ -47,15 +47,14 @@ const Letter = () =>  {
 			and Sophie are headlong into the Ubu Swirl (Hobo Swill)
 			thing.  They&apos;ve made a demo and seem quite positive.
 			<p />
+			<Image className="float-right" width={176} height={176} alt="[signature]" src="https://jazzbutcher.com/images/19940913/94Sep13_sig.gif" />
 			(Jake has just caught the Biggest Dragonfly in Europe.)
 			<p />
 			(And eaten it.)
 			<p />
 			Kathie sez &quot;Hi&quot;, so do I.
 			Hope all is rockin&apos;
-			<center>
-			<br /><Image width={176} height={176} alt="[signature]" src="https://jazzbutcher.com/images/19940913/94Sep13_sig.gif" />
-			</center>
+			<p className="clear_float" />
 		</div>
 		<Footer />
 	</>)

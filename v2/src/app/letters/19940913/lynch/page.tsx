@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	angels, dooj, honey, blue
 } from '@/lib/defines';
@@ -9,9 +10,8 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940913'>13Sep94</Link> | David Lynch</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
-			<b>DAVID LYNCH AND <Link href="/lyrics/angels.html">ANGELS</Link></b>
-			<p />
+		<div className="etc">
+			<LetterHeader title=<>DAVID LYNCH AND <Link href="/lyrics/angels.html">ANGELS</Link></> />
 			<samp>
 			&gt; Date: Sat, 30 Jul 94 15:17:26 EST<br />
 			&gt; From: George Heard<br />

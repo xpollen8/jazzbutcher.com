@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 } from '@/lib/defines';
 
@@ -9,13 +10,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<p />
-			<center>
-			<b className="text-2xl">THE <Link href="/lyrics/harlan.html"> HARLAN</Link> THING</b>
-			</center>
-			<p />
-			<hr />
-			<p />
+			<LetterHeader title=<>THE <Link href="/lyrics/harlan.html"> HARLAN</Link> THING</> />
 			<samp>
 			&gt; Date: Thu, 14 Jul 1994 23:18:05 -0400<br />
 			&gt; From: Christopher Camfield (ccamfiel@undergrad.math.uwaterloo.ca)<br />

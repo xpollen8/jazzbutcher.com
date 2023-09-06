@@ -1,19 +1,14 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 
 const Letter = () =>  {
 	const title = <><Link href='/letters/19940913'>13Sep94</Link> | Peter Lorre</>
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<p />
-			<center>
-			<Link href="/lyrics/peter_lorre.html"><b className="text-2xl">PETER LORRE</b></Link>
-			</center>
-			<p />
-			<hr />
-			<p />
+			<LetterHeader title=<Link href="/lyrics/peter_lorre.html">PETER LORRE</Link> />
 			<samp>
 			&gt; Date: Fri, 29 Jul 1994 19:09:53 -0400<br />
 			&gt; From: Christopher Camfield (ccamfiel@undergrad.math.uwaterloo.ca)<br />

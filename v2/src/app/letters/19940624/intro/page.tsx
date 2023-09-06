@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -8,8 +9,8 @@ import {
 const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title='6Jun94' />
-		<div className="letter">
-			I have passed the time since [4Jun94] ruthlessly instilling
+		<div className="etc">
+			I have passed the time since <Link href="/letters/19940604">[4Jun94]</Link> ruthlessly instilling
 			an iron discipline within the ranks, and things are starting
 			to happen.  Like - would you believe?  - a live version of
 			{filth}!
@@ -53,6 +54,7 @@ const Letter = () =>  {
 			JBC date that I can recall.  I think I missed one in
 			June 1985 at a teacher-training college in London, the
 			night before we flew to Rome for the Foro Tevere.  Also
+				<Image className="float-right" width={270} height={122} alt="[signature]" src="https://jazzbutcher.com/images/19940624/94Jun24_sig.gif" />
 			I&apos;ve neglected to put in all the in-store type things
 			and the legendary Clare&apos;s Party, Hammersmith in the fall
 			of 1985.  Apart from these errors, which I spotted too
@@ -63,10 +65,7 @@ const Letter = () =>  {
 			<p />
 			Hope that all is groovy out west and that you are having
 			as much fun with the World Cup as I currently am.
-			<center>
-				<p /><Image width={270} height={122} alt="[signature]" src="https://jazzbutcher.com/images/19940624/94Jun24_sig.gif" />
-			</center>
-
+			<p className="clear_float" />
 		</div>
 		<Footer />
 	</>)

@@ -20,7 +20,7 @@ const features = [
 		An enjoyable read.
 		</>
 	},
-	{ uri: '/mad', text: "Are You Mad?", aux: '(1998)',
+	{ uri: '/mad', text: "How MAD Are You?", aux: '(1998)',
 		children: <>
 		Pat was in posession of a ridiculous photo of a fan doing a ridiculous thing
 		- while wearing a JBC t-shirt. He mused that others in compomising attair

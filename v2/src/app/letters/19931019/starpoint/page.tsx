@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import { bacon, aero } from '@/lib/defines';
 
 const Letter = () =>  {
@@ -8,8 +9,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<b>&quot;STARPOINT STUDIO&quot;</b>
-			<p />
+			<LetterHeader title="STARPOINT STUDIO" />
 			<samp>
 				&gt; Mon, 21 Jun 1993<br />
 				&gt; Rick.G.Karr@gagme.chi.il.us (Rick G. Karr)<br />
@@ -18,7 +18,7 @@ const Letter = () =>  {
 				&gt; is the same as &quot;ReMaximum&quot; studios there?
 			</samp>
 			<p />
-			<blockquote classsName="annotation">
+			<blockquote className="annotation">
 				In fact, the place was called STARFORCE Studio, and it
 				was on St.  John&apos;s Hill just by Clapham Junction Station
 				(&quot;Welcome to Britain&apos;s busiest railway station!&quot;), more

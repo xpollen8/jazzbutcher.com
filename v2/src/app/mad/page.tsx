@@ -169,7 +169,7 @@ const Mad = () => <>
 				description: React.ReactElement
 			}, key: number): React.ReactNode => {
 				const img = `images/mad/${image}`;
-				return <LetterHeader title={caption}
+				return <LetterHeader key={key} title={caption}
 					subhead=<>
 						<Image
 							className="border rounded-lg"

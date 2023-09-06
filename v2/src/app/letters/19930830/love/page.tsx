@@ -8,22 +8,26 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19930830'>30Aug93</Link> | WAITING FOR THE LOVE BUS</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
-			<div className="flex flex-wrap p-10">
-				<Link href="https://jazzbutcher.com/images/lovebus.jpg">
-					<Image alt="album cover" width={145} height={145} src="https://jazzbutcher.com/images/slovebus.gif" />
-				</Link>
-				<center className="w-3/4 py-10">
-				<b>WAITING FOR THE LOVE BUS</b>
-				<br/>
-				<b>Cultural guidance notes issued to the U.K. press</b>
-				</center>
+		<div className="etc">
+			<div className="border">
+				<div className="flex flex-wrap justify-around">
+					<div className="m-1">
+						<Link href="https://jazzbutcher.com/images/lovebus.jpg">
+							<Image alt="album cover" width={250} height={250} src="https://jazzbutcher.com/images/lovebus.jpg" />
+						</Link>
+					</div>
+					<div className="min-w-[50%] p-10">
+						<center>
+							<b className="text-2xl">WAITING FOR THE LOVE BUS</b>
+							<p />
+							<b>Cultural guidance notes issued to the U.K. press</b>
+						</center>
+					</div>
+				</div>
 			</div>
-			<div className="clear-both" />
-			<hr/>
 			<a id="davis" />
 			{davis}
-			<blockquote>
+			<blockquote className="annotation">
 				Rosemary Davis, actress, writer and producer,
 				edited the original BBC Sound Effects records.  Today
 				these sounds, assiduously recorded in the early sixties,
@@ -31,7 +35,7 @@ const Letter = () =>  {
 			</blockquote>
 			<a id="baker" />
 			{bake}
-			<blockquote>
+			<blockquote className="annotation">
 				Bakersfield is a place a couple of hours north of Los
 				Angeles where seekers after Purity Of Tone stand in
 				the desert and watch drag racing before cruising the
@@ -44,7 +48,7 @@ const Letter = () =>  {
 			</blockquote>
 			<a id="kids" />
 			{mall}
-			<blockquote>
+			<blockquote className="annotation">
 				The JBC spent New Year&apos;s Eve 1992 in Kaliningrad, a
 				rocking city of the old U.S.S.R., largely populated
 				by recent unemployed Red Army personnel, for whom we
@@ -53,12 +57,12 @@ const Letter = () =>  {
 			</blockquote>
 			<a id="whad" />
 			{whad}
-			<blockquote>
+			<blockquote className="annotation">
 				A true story.  Whaddya want?  A diagram?
 			</blockquote>
 			<a id="sweet" />
 			{sweet}
-			<blockquote>
+			<blockquote className="annotation">
 				Inspired by and dedicated - in part - to the Sweetwater
 				Springs Saloon in Los Osos, California, a splendid rockin&apos;
 				redneck shed, which we heartily recommend to all pompous
@@ -70,28 +74,28 @@ const Letter = () =>  {
 			</blockquote>
 			<a id="ghosts" />
 			{ghost}
-			<blockquote>
+			<blockquote className="annotation">
 				Why does the modern simpleton assume that he&apos;s causing
 				you a problem by killing you?  Inter mortuos nil nisi
 				bonum.
 			</blockquote>
 			<a id="baltic" />
 			{baltic}
-			<blockquote>
+			<blockquote className="annotation">
 				I&apos;m not sure where this came from, and I&apos;m vaguely resentful
 				of the fact.  I suppose it imagines itself to well fin-de-siecle.
 				Hey! We&apos;re so doomed we&apos;ve learned to love it.
 			</blockquote>
 			<a id="kill" />
 			{kill}
-			<blockquote>
+			<blockquote className="annotation">
 				Imagine how RUDE it would be to die in someone else&apos;s
 				apartment.  Imagine how much BOTHER it could cause them.
 				Imagine how much you&apos;d CARE.
 			</blockquote>
 			<a id="ben" />
 			{ben}
-			<blockquote>
+			<blockquote className="annotation">
 				Written in January, after hearing some extraordinary
 				remarks from ordinarily decent people concerning a character
 				in a news story who seemed to me - in quite black and
@@ -109,17 +113,17 @@ const Letter = () =>  {
 				<Image alt="a penguin" height={59} width={52} src="https://jazzbutcher.com/images/penguin.gif" />
 				<Image alt="a penguin" height={59} width={52} src="https://jazzbutcher.com/images/penguin.gif" />
 			</div>
-			<blockquote>
+			<blockquote className="annotation">
 				In the most desolate place in the world they are standing
 				in large numbers.  They are out there doing it now.
 				As far as we can tell they have always been out there,
 				miles from anywhere, in conditions that would hospitalise
 				you or me in the course of an afternoon.
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p className="clear_float" />
 			<a id="chang" />
 			{chang}
-			<blockquote>
+			<blockquote className="annotation">
 				Wrestling with life in Post-Historical Universe, we
 				cast around awhile among some of the more extreme options
 				open to the modern voter.  A photo appears in a magazine
@@ -133,7 +137,7 @@ const Letter = () =>  {
 			</blockquote>
 			<a id="station" />
 			{stat}
-			<blockquote>
+			<blockquote className="annotation">
 				The inevitable and inglorious consequences of ill-conceived
 				short firm triumphalist capitalism considered at some
 				length, and with no small amount of melancholy whining,
@@ -142,13 +146,15 @@ const Letter = () =>  {
 				reverbs lengthy.
 			</blockquote>
 			{davis} (Slight Return)
-			<blockquote>
+			<blockquote className="annotation">
 				We can go out the way we came in, but we had best go
 				a bit more quietly.  I think that chap in the baseball
 				hat has nodded out.
 			</blockquote>
-			<hr/>
-			<b>L.P. LINE-UP: Who did what</b>
+			<div className="border">
+			<center>
+				<b className="text-2xl">L.P. LINE-UP: Who did what</b>
+			</center>
 			<blockquote>
 				<p>
 					{richard}: Fender Jaguar, Gibson Firebird, Burns XII String,
@@ -168,6 +174,7 @@ const Letter = () =>  {
 					{nick}: The Drums.
 				</p>
 			</blockquote>
+			</div>
 		</div>
 		<Footer />
 	</>)

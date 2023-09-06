@@ -38,9 +38,9 @@ const linkSong = (props: { title?: string, href?: string, author?: string | Reac
   <span className='song'>
 	{(() => {
 		if (props?.title && props?.href) {
-			return <i><Link href={props.href}>{props.title}</Link></i>
+			return <i>{' '}<Link href={props.href}>{props.title}</Link>{' '}</i>
 		} else if (props?.title) {
-			return <i>{props.title}</i>
+			return <i>{' '}{props.title}{' '}</i>
 		}
 	})()}
 	{(props?.author) && <span className="song_author">({props.author})</span>}
@@ -414,6 +414,7 @@ export const best_kisser = linkAlbum({ title: "The Best Kisser In The World" });
 export const glorious = linkAlbum({ href: "/releases/glorious.html", title: "Glorious And Idiotic" });
 export const glass = <b>Glass Records</b>;
 export const creat = <b>Creation Records</b>;
+export const fire_records = <b>Fire Records</b>;
 //
 //	Sumosonic
 //

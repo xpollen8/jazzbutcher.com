@@ -8,12 +8,12 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19930830'>30Aug93</Link> | 1993 EUROPEAN TOUR REPORT</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			<center>
-				<b>1993 EUROPEAN TOUR REPORT</b>
+				<b className="text-2xl">1993 EUROPEAN TOUR REPORT</b>
 			</center>
 			<b>15.2</b>
-			<blockquote>
+			<blockquote className="annotation">
 				JBC gets on the bus at 5am {pete} is roaring drunk.  {tony} considers bashing him.  Drive and float to Paris.
 				French tour promoter is young and practically monolingual.
 				Tony considers belting him.  JBC play four live songs
@@ -25,11 +25,11 @@ const Letter = () =>  {
 				A long day.
 			</blockquote>
 			<Link href="/gigs/1993/Feb16.html"><b>16.2</b> Paris : <b>Theatre L&apos;European</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Seated; 300 people, some drunks.
 			</blockquote>
 			<Link href="/gigs/1993/Feb17.html"><b>17.2</b> Bordeaux : <b>Le Jimmy</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				650km.  drive to Bordeaux.
 				Wake up at the back, you&apos;re on tour.  {joe} gets
 				in massive ruck with everyone in the restaurant at dinner.
@@ -38,7 +38,7 @@ const Letter = () =>  {
 				drunks.
 			</blockquote>
 			<Link href="/gigs/1993/Feb18.html"><b>18.2</b> Nates : <b>Floride</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Tiny club, fragile heads.
 				Lead singer buys cakes for all.  What a swell guy.  Pete
 				makes the first of many doomed sexual overtures, later
@@ -48,7 +48,7 @@ const Letter = () =>  {
 				was severely overloaded at 150 people.
 			</blockquote>
 			<Link href="/gigs/1993/Feb19.html"><b>19.2</b> Rennes : <b>Ubu</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Short drive today, which is
 				fortunate as Tony succeeds in running out of petrol
 				today.  Tony considers bashing everybody.  T.V. Smith
@@ -57,7 +57,7 @@ const Letter = () =>  {
 				party afterwards.
 			</blockquote>
 			<Link href="/gigs/1993/Feb20.html"><b>20.2</b> Lorient : <b>Le Manege Enchante</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				(that&apos;s the
 				&quot;Magic Roundabout&quot;, you Brits).  Beer for breakfast.
 				Beer for lunch.  This is more like it.  Joe fails to
@@ -72,30 +72,29 @@ const Letter = () =>  {
 				Some drunks, chief among them Tony and Pat.
 			</blockquote>
 			<Link href="/gigs/1993/Feb21.html"><b>21.2</b> Morlaix : <b>Le Coatelan</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Onstage at 8:00 pm
 				on a sunday in an ART SHED near a village in French
 				Wales.  50 punters.  Brilliant. Dinner of the tour follows.
 			</blockquote>
 			<b>22.2</b>
-			<blockquote>
+			<blockquote className="annotation">
 				Drive back to Paris.  See Pascal.  Get paid.
 			</blockquote>
-			<blockquote className="flex flex wrap">
-			<div className="w-1/2">
-			<b>23.2</b>	Drive out of France very fast, as well
+			<b>23.2</b>
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/19930223/euro93.jpg">
+					<Image className="float-right ml-3" width={300} height={300} alt="a pic" src="https://jazzbutcher.com/images/19930223/euro93_250.jpg" />
+				</Link>
+				Drive out of France very fast, as well
 				have all had enough.  Got to Breda in Holland.  Tony
 				wants us all to feel the same.  It&apos;s carnival night
 				in Breda.
 				Photo, taken by Kathie, who was smart enough to figure this out, attached.
-			</div>
-			<div className="w-1/2">
-				<Link href="https://jazzbutcher.com/images/19930223/euro93.jpg">
-					<Image style={{ float: 'right' }} width={500} height={500} alt="a pic" src="https://jazzbutcher.com/images/19930223/euro93_250.jpg" /></Link>
-			</div>
+				<p className="clear_float" />
 			</blockquote>
 			<Link href="/gigs/1993/Feb24.html"><b>24.2</b> Breda : <b>Zanetti</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Nick has a snare drum and
 				some brushes.  The other three have guitars.  Everyone
 				sings as we play in a small stone bar with psychadelic
@@ -106,7 +105,7 @@ const Letter = () =>  {
 				classic Red River Dave song the California Hippy Murders.
 			</blockquote>
 			<Link href="/gigs/1993/Feb25.html"><b>25.2</b> Amsterdam : <b>Kremlin</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				A hipster hangout in
 				a scary and squalid part of town.  Small and full (100?150?)
 				and quite cheerful.  French drunks.  Drive back to Breda
@@ -116,7 +115,7 @@ const Letter = () =>  {
 			</blockquote>
 			<Link href="/gigs/1993/Feb26_2000.html"><b>26.2</b> Breda : <b>Para</b></Link> and <Link href="/gigs/1993/Feb26_2300.html">
 				Breda : <b>Zanetti</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				A double header.  We were
 				booked for Para (100 people.  Loud and vicious) but
 				we went on to <b>Zanetti</b> again to play in the basement,
@@ -124,7 +123,7 @@ const Letter = () =>  {
 				at-all for extra money and laffs.  Many drunks.  Deep joy.
 			</blockquote>
 			<Link href="/gigs/1993/Feb27.html"><b>27.2</b> Hamburg : <b>Logo</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				The first of four German dates
 				supporting {belly}.
 				Nobody in Hamburg seems to know who they are.  350 people
@@ -134,7 +133,7 @@ const Letter = () =>  {
 				Many drunks.  Some narcotics abuse.
 			</blockquote>
 			<Link href="/gigs/1993/Feb28.html"><b>28.2</b> Berlin : <b>Loft</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Great journey to Berlin, wherein
 				Tony Pat and Kathie form <b>The New Government Of Russia</b>{' '}
 				(policies on application - $5,799.99).  Shoddy show
@@ -144,7 +143,7 @@ const Letter = () =>  {
 				in the house.  East German drunks.
 			</blockquote>
 			<Link href="/gigs/1993/Mar1.html"><b>1.3</b> Munich : <b>Charterhalle</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Bus refuses to start.
 				Pete and Pat abandon rest of party in Berlin, get in
 				German tour manager&apos;s car and play Munich <b>Charterhalle</b>
@@ -156,7 +155,7 @@ const Letter = () =>  {
 				for four hours.  Everyone, I&apos;m told, considers stabbing him.
 			</blockquote>
 			<Link href="/gigs/1993/Mar2.html"><b>2.3</b> Cologne : <b>Luxor</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				We arrive to find that {belly}&apos;s
 				van has broken down.  We laugh and <Link
 				href="/press/94takeover.html"> send Tony in The Love
@@ -165,14 +164,14 @@ const Letter = () =>  {
 				Many drunks, some violent.
 			</blockquote>
 			<b>3.3</b>
-			<blockquote>
+			<blockquote className="annotation">
 				We drive to Freiburg.  On the way, entirely by chance,
 				we pull in at what must be the only vegetarian motorway
 				restaurant in Europe.  Deep joy, snow, vodka, Freiburg,
 				pizza, bliss.
 			</blockquote>
 			<Link href="/gigs/1993/Mar4.html"><b>4.3</b> Valenza Po : <b>Circolo Palomar</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Long scary drive
 				over the Alps to Italy.  50 people watch us play for
 				over two hours at a wonderful club.  The chap on stage
@@ -180,7 +179,7 @@ const Letter = () =>  {
 				hotel has llamas.
 			</blockquote>
 			<Link href="/gigs/1993/Mar5.html"><b>5.3</b> Florence : <b>Auditorium Flog</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				(No, honest!).
 				800 in a huge discotheque and a rider that would embarrass
 				the support group at the Rock Garden.  No wonder the
@@ -190,14 +189,14 @@ const Letter = () =>  {
 				been put.  Great concert, insulting promoters, bloody night.
 			</blockquote>
 			<Link href="/gigs/1993/Mar6.html"><b>6.3</b> Forli : <b>Ex Macchina</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Small, communist-run
 				club, the opposite of last night, and all the more pleasing.
 				150 people, many drunks, and a support group something
 				like {haus}.  More drunks.
 			</blockquote>
 			<Link href="/gigs/1993/Mar7.html"><b>7.3</b> Salzburg : <b>Nonntal</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Pete, acting on an internal
 				agenda that has led him to drink solidly for 72 hours,
 				disappears in the middle of the night to devote his
@@ -217,7 +216,7 @@ const Letter = () =>  {
 				sloshing him.
 			</blockquote>
 			<b>8.3</b>
-			<blockquote>
+			<blockquote className="annotation">
 				We have a day off in Salzburg, which is all it takes.
 				I stay in bed till five, have a meal in the Styrian
 				bar, pick up our secret weapon and go back to the Styrian
@@ -225,7 +224,7 @@ const Letter = () =>  {
 				Jagermeister.  Drunks.
 			</blockquote>
 			<Link href="/gigs/1993/Mar9.html"><b>9.3</b> Lienz : <b>Glocklturm</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				This is where it gets
 				Really Weird.  The Love Bus finally clocks out at lunchtime,
 				and we travel the last 80km to the show on the back
@@ -235,7 +234,7 @@ const Letter = () =>  {
 				exciting.  All drunk.  The whole town.
 			</blockquote>
 			<Link href="/gigs/1993/Mar10.html"><b>10.3</b> Innsbruck : <b>Utopia</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				200 people.  Back in the
 				hotel where we were previously narrowly prevented from
 				stealing the ducks.  No sign of any ducks this time.
@@ -244,7 +243,7 @@ const Letter = () =>  {
 				Turkish and it wouldn&apos;t do to be misunderstood.
 			</blockquote>
 			<Link href="/gigs/1993/Mar11.html"><b>11.3</b> Vienna : <b>Szene Wien</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				300 people (more?)  Opening
 				act is one &quot;Jac&quot;, a lone 19 year old Austrian who is
 				brilliant.  JBC follow him on and open with {girls}, which
@@ -255,7 +254,7 @@ const Letter = () =>  {
 				Kathie, Lix and I end up in the hotel manager&apos;s apartment.
 			</blockquote>
 			<Link href="/gigs/1993/Mar12.html"><b>12.3</b> Ebensee : <b>Kino</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				Ebensee is reached down a
 				lakeside road with bizarre gothic tunnels cut through
 				forbidding rock faces, all decorated with ancient coats
@@ -266,7 +265,7 @@ const Letter = () =>  {
 				Thousands of drunks.
 			</blockquote>
 			<Link href="/gigs/1993/Mar13.html"><b>13.3</b> Dornbirn : <b>Spielboden</b></Link>
-			<blockquote>
+			<blockquote className="annotation">
 				We close the tour in
 				one of our favourite venues.  Two guitars and one amplifier
 				loaded on the Love Bus in urgent need of some professional
@@ -276,7 +275,7 @@ const Letter = () =>  {
 				appear onstage with a lot of keyboards.  Drunks.
 			</blockquote>
 			<b>14.3</b>
-			<blockquote>
+			<blockquote className="annotation">
 				GREAT ROAD JOURNEYS OF HISTORY: We leave
 				Dornbirn, on the Austro/Swiss border after a lengthly
 				lunchtime beer session, during which it is agreed the
@@ -287,7 +286,7 @@ const Letter = () =>  {
 				it anyway.
 			</blockquote>
 			<b>15.3</b>
-			<blockquote>
+			<blockquote className="annotation">
 				Go to Belgium, but a lot of cheap beer,
 				miss two boats, go to the pub, get on the boat, get
 				drunk, get paid (I got &#163;27!), go home.

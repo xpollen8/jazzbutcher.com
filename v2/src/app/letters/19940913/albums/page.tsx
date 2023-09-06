@@ -9,8 +9,13 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940913'>13Sep94</Link> | Re-Issues</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
-			<b>RE-ISSUES</b>
+		<div className="etc">
+			<p />
+			<center>
+			<b className="text-2xl">RE-ISSUES</b>
+			</center>
+			<p />
+			<hr />
 			<p />
 			{bacon}!
 			{scandal}!

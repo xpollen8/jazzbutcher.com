@@ -151,11 +151,12 @@ const Letter = () =>  {
 				a bit more quietly.  I think that chap in the baseball
 				hat has nodded out.
 			</blockquote>
-			<div className="border">
+			<p />
 			<center>
 				<b className="text-2xl">L.P. LINE-UP: Who did what</b>
 			</center>
-			<blockquote>
+			<p />
+			<blockquote className="border p-5">
 				<p>
 					{richard}: Fender Jaguar, Gibson Firebird, Burns XII String,
 					Tapes and effects, engineering, production.
@@ -174,7 +175,6 @@ const Letter = () =>  {
 					{nick}: The Drums.
 				</p>
 			</blockquote>
-			</div>
 		</div>
 		<Footer />
 	</>)

@@ -52,7 +52,7 @@
 
 .date {
 	font-size: .9em;
-	color: #bbb;
+	color: #777;
 }
 
 /// GALLERY
@@ -115,11 +115,22 @@
 	letter-spacing: 0.01em;
 	word-spacing: 0.12em;
 	padding: 10px;
-	padding-left: 40px;
+	padding-left: 30px;
 	background-color: rgba(248,248,248,0.8);
 	background-position: left top;
 	background-repeat: no-repeat;
-	background-image: url(https://jazzbutcher.com/assets/quote.png);
+	content: open-quote;
+	background-image: url(https://jazzbutcher.com/assets/small_quote.png);
+}
+.annotation {
+}
+.clear_float {
+	clear: both;
+}
+.annotation img {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-right: 5px;
 }
 .iview_a:before {
 }
@@ -282,6 +293,13 @@ textplus1 {
 	padding: 3px;
 	margin: 3px;
 	border: 1px solid green;
+}
+.clickDiv {
+	padding: 3px;
+	margin: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #696;
 }
 .homeContainer {
 	margin: 4px 4px;
@@ -750,12 +768,14 @@ p::first-letter {
 	background-color: #FFA500;
 	font-style: italic;
 }
-.letter {
-	outline: solid;
+.etc {
+	filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.05));
+	background-color: rgba(0,0,0,.02);
+	outline: dashed;
 	outline-width: 1px;
-	margin: 5px;
-	margin-top: 6px;
-	padding: 5px;
+	margin: 6px;
+	margin-top: 7px;
+	padding: 10px;
 }
 
 samp {

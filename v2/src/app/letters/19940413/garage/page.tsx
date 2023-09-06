@@ -9,11 +9,12 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940413'>13Apr94</Link> | Garage gig</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
+			<p />
 			<center>
-			<b>UPSTAIRS AT THE GARAGE, LONDON -
-				<Link href="/gigs/1994/Mar10.html">10th MARCH 1994</Link></b>
-				</center>
+			<b className="text-2xl">UPSTAIRS AT THE GARAGE, LONDON - <Link href="/gigs/1994/Mar10.html">10th MARCH 1994</Link></b>
+			</center>
+			<p />
 			<hr/>
 			A new &quot;acoustic&quot; venue in the heart of fashionable Islington
 			plays host to something which my agent calls THE JAZZ
@@ -48,15 +49,17 @@ const Letter = () =>  {
 			<dd>{road}</dd>
 			</dl>
 			<p />
-			The support came from Spittle Rattle (in their normal
-			three piece line-up), the trucking was by Kathie and
-			the beer on the rider was Oranjeboom.  Lots of people
-			came and applauded, and - best of all - {gerard}
-			had to pay to get in!!!
-			<p />
-			The next manifestation of the Jazz Butcher Acoustic Conspiracy
-			will be at The {FIDDLER} Acoustic Room in London
-			on <Link href="/gigs/1994/Apr8.html">Friday 8th April 1994.</Link>
+			<blockquote className="annotation">
+				The support came from Spittle Rattle (in their normal
+				three piece line-up), the trucking was by Kathie and
+				the beer on the rider was Oranjeboom.  Lots of people
+				came and applauded, and - best of all - {gerard}
+				had to pay to get in!!!
+				<p />
+				The next manifestation of the Jazz Butcher Acoustic Conspiracy
+				will be at The {FIDDLER} Acoustic Room in London
+				on <Link href="/gigs/1994/Apr8.html">Friday 8th April 1994.</Link>
+			</blockquote>
 		</div>
 		<Footer />
 	</>)

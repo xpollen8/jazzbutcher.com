@@ -10,8 +10,13 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940413'>13Apr94</Link> | Introduction</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
-			<b>13Apr94</b>
+		<div className="etc">
+			<p />
+			<center>
+			<b className="text-2xl">13Apr94</b>
+			</center>
+			<p />
+			<hr />
 			<p />
 			Checking in once again, to say hello and keep your crew
 			of computer-abusers up to date with our latest peregrinations
@@ -42,16 +47,15 @@ const Letter = () =>  {
 			<p />
 			Plans for the next few weeks involve trying to get this
 			US trip moving, paying some attention to the long-neglected
+			<Image className="float-right" width={250} height={250} alt="[signature]"
+				src="https://jazzbutcher.com/images/19940413/94Apr13_sig.gif" />
 			Pat n Richard album, doing a couple of gigs in London
 			and Belgium (the country, not the club!), and assembling
 			demo tapes for the next LP.  Also, both my guitarists
 			need medical attention.  Can&apos;t imaging why...  Spoke
 			to the <Link href="/conspirators/martin_stebbing.html">Rev. Botus</Link>,
 			who indicated a desire to do some JBC touring action.
-			<center>
-			<p /><Image width={353} height={105} alt="[signature]"
-				src="https://jazzbutcher.com/images/19940413/94Apr13_sig.gif" />
-			</center>
+			<p className="clear_float" />
 		</div>
 		<Footer />
 	</>)

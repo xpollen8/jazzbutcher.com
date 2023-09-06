@@ -6,8 +6,8 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19931019'>19Oct93</Link> | COLLEGE</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
-		  <b>COLLEGE</b>
+		<div className="etc">
+		  <b className="text-2xl">COLLEGE</b>
 			<p /> 
 			<samp>
 			&gt; Mon, 21 Jun 1993<br />
@@ -16,9 +16,10 @@ const Letter = () =>  {
 			&gt; frequently used to busk at sunrise in his college Quad?<br />
 			&gt; And which college was it?
 			</samp>
-			<p />
-			I went to Merton College, Oxford, but it&apos;s not true about
-			the busking.  I never do anything at sunrise.
+			<blockquote className="annotation">
+				I went to Merton College, Oxford, but it&apos;s not true about
+				the busking.  I never do anything at sunrise.
+			</blockquote>
 		</div>
 		<Footer />
 	</>)

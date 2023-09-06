@@ -93,7 +93,7 @@ export const removeHTML = (str?: string) => {
 	return unlinked;
 }
 
-export const ParsedCaption = (props: { credit?: string, url?: string, credit_url?: string, credit_date?: string, caption?: string, image_caption?: string }) => {
+export const ParsedCaption = (props: { credit?: string, url?: string, credit_url?: string, credit_date?: string, caption?: string | React.ReactNode, image_caption?: string | React.ReactNode }) => {
 	return (<>
 		{(props?.caption || props?.image_caption) && <>{props?.caption} {props?.image_caption}</>}
 		<br />

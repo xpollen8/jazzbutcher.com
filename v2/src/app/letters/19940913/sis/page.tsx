@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	star
 } from '@/lib/defines';
@@ -10,8 +11,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="letter">
-			<b>THE <Link href="/lyrics/sister_death.html">SISTER DEATH</Link> THING</b>
-			<p />
+			<LetterHeader title=<>THE <Link href="/lyrics/sister_death.html">SISTER DEATH</Link> THING</> />
 			<samp>
 			&gt; Date: Mon, 15 Aug 1994 15:51:08 -0500<br />
 			&gt; From: rstill@utdallas.edu<br />
@@ -41,31 +41,31 @@ const Letter = () =>  {
 			&gt; names), you guessed it, Sister Death.
 			</samp>
 			<blockquote className="annotation">
-			Inspiration?
-			<br />Explication!
-			<p />
-			The inspiration for this tune, initially, came from St. Francis of
-			Assisi.  You know the chap - &quot;Hello, brother donkey.  Hello, Sister
-			Milkfloat...&quot;  Big in the world of Poor-But-Honest Christianity.  Got
-			made a saint...
-			<p />
-			Well, according to some source or other to which I was exposed under
-			education, his last words were &quot;Come, Sister Death...&quot;
-			<p />
-			There you go.  Beyond that, the lyric was written very quickly and
-			without much conscious thought, which means that it&apos;s The Real Stuff
-			(as it were).  It also, however, means that - since I was listening to {star}&apos;s
-			3rd LP an awful lot round that time (Dec. &apos;89) - I nicked
-			the &quot;get me out of here&quot; line wholesale from <i>Night Time</i>.
-			<p />
-			St. Francis, Alex Chilton and Yer Actual Life - those are the main
-			constituents.  I&apos;ve never seen <b>Sandman</b>.  I did read a little
-			Anne Rice, but I thought it was a tad... muddled, if you like.  She
-			seems to make the rules of Being Undead up as she goes along.  Having
-			been raised on Uncle Terry&apos;s vampire pictures since the age of about
-			six, I feel that i <b>know</b> the rules, and cling to what I learned
-			as a youth.  Don&apos;t forget, folks - after you stake &apos;em, you got to
-			CHOP OFF THE HEAD, or it ain&apos;t nothing but a sequel in the works.
+				Inspiration?
+				<br />Explication!
+				<p />
+				The inspiration for this tune, initially, came from St. Francis of
+				Assisi.  You know the chap - &quot;Hello, brother donkey.  Hello, Sister
+				Milkfloat...&quot;  Big in the world of Poor-But-Honest Christianity.  Got
+				made a saint...
+				<p />
+				Well, according to some source or other to which I was exposed under
+				education, his last words were &quot;Come, Sister Death...&quot;
+				<p />
+				There you go.  Beyond that, the lyric was written very quickly and
+				without much conscious thought, which means that it&apos;s The Real Stuff
+				(as it were).  It also, however, means that - since I was listening to {star}&apos;s
+				3rd LP an awful lot round that time (Dec. &apos;89) - I nicked
+				the &quot;get me out of here&quot; line wholesale from <i>Night Time</i>.
+				<p />
+				St. Francis, Alex Chilton and Yer Actual Life - those are the main
+				constituents.  I&apos;ve never seen <b>Sandman</b>.  I did read a little
+				Anne Rice, but I thought it was a tad... muddled, if you like.  She
+				seems to make the rules of Being Undead up as she goes along.  Having
+				been raised on Uncle Terry&apos;s vampire pictures since the age of about
+				six, I feel that i <b>know</b> the rules, and cling to what I learned
+				as a youth.  Don&apos;t forget, folks - after you stake &apos;em, you got to
+				CHOP OFF THE HEAD, or it ain&apos;t nothing but a sequel in the works.
 			</blockquote>
 		</div>
 		<Footer />

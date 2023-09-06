@@ -9,7 +9,7 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940413'>13Apr94</Link> | News</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			<b>Those Old Records</b>
 			<p />
 			It now looks more likely than ever that {scandal} and

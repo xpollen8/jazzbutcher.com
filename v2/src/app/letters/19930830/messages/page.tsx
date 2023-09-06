@@ -8,9 +8,9 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19930830'>30Aug93</Link> | INDIVIDUAL MESSAGES</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			<center>
-				<b>INDIVIDUAL MESSAGES:</b>
+				<b className="text-2xl">INDIVIDUAL MESSAGES:</b>
 			</center>
 			<p>
 			{ed}
@@ -110,27 +110,25 @@ const Letter = () =>  {
 				of every live JBC manifestation ever</Link> from this very
 				writer... if they really want it.
 			</p>
-			<p>
+			<p />
 				I enjoyed your remarks about the K.D. Land (fuck it,
 				start again; kd lang) photo.
-				<br/>
+			<p />
 				<Link href="https://jazzbutcher.com/images/pat_plays.jpg">
-					<Image alt="not kd lang" width={214} height={160} style={{ float: 'left', padding: '5px' }}
-						src="https://jazzbutcher.com/images/spat_plays.gif" />
+					<Image className="float-right" alt="not kd lang" width={300} height={300}
+						src="https://jazzbutcher.com/images/pat_plays.jpg" />
 				</Link>
-				<br/>
-				I *know* this photograph!  The best lookalike story
-				I know concern the {aero} when they supported
-				REM on the Green tour of the UK in 1989.  At the Birmingham
-				NEC Peter Buck joined the {blue} guitar-army
-				on the closing version of Tom
-				Verlaine&apos;s <i>Breaking In My Heart</i>.  Two punters
-				were overheard in conversation: &quot;Who&apos;s that other geezer
-				on the guitar?&quot;  &quot;Oh, that&apos;ll be the Jazz Butcher&quot;.
-				I told Peter this story later, and it appealed to his
-				sense of having a drink.
-			</p>
-			<div className="clear-both" />
+			I *know* this photograph!  The best lookalike story
+			I know concern the {aero} when they supported
+			REM on the Green tour of the UK in 1989.  At the Birmingham
+			NEC Peter Buck joined the {blue} guitar-army
+			on the closing version of Tom
+			Verlaine&apos;s <i>Breaking In My Heart</i>.  Two punters
+			were overheard in conversation: &quot;Who&apos;s that other geezer
+			on the guitar?&quot;  &quot;Oh, that&apos;ll be the Jazz Butcher&quot;.
+			I told Peter this story later, and it appealed to his
+			sense of having a drink.
+			<p className="clear_float" />
 		</div>
 		<Footer />
 	</>)

@@ -9,7 +9,7 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940913'>13Sep94</Link> | Gigs</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			{green} now fully re-assimilated into live line-up, alongside
 			{dooj}, {gab}, {hend} and myself.  Since when we have played:
 			<p />

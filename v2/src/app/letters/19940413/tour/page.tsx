@@ -421,7 +421,7 @@ const Letter = () =>  {
 			<li>Best Club : Livestation, Dortmund</li>
 			<li>Worst Club : Roemer, Bremen</li>
 			<li>Loonie Of The Tour : Gerti The Brontosaurus</li>
-			<li>Word Of The Tour : "Fill your boots, son!"</li>
+			<li>Word Of The Tour : &quot;Fill your boots, son!&quot;</li>
 			<li>Fashion Item : Sony Swiss key ring</li>
 			<li>Wind-Up : Nick&apos;s Sony key ring</li>
 			<li>Escalation : The lynching of Curtis&apos; squeaky dinosaur, Paris</li>

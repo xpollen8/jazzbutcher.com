@@ -33,11 +33,6 @@ const nextConfig = {
 					permanent: false,
 				},
 				{
-					source: '/press/94stop_press.html',
-					destination: '/letters/19940520',
-					permanent: false,
-				},
-				{
 					source: '/letters/94Jun24/:path*',
 					destination: '/letters/19940624/:path*',
 					permanent: false,

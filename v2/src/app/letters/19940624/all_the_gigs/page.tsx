@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	AMST, AU, AX, BELG, CA, CAN, CBC, CHI, CUBBY, DE, ES, FIDDLER, FR, FRANK, HAM, HO, ITALIA, KCRW, LA,
 	LO, METRO, NH, NOR, NYC, ONT, PAR, PO, SW, TOR, UK, USA, WNUR, WXYC, at, curt, dj, dooj, eg, erol, felix,
@@ -12,15 +13,8 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<center>
-				<br />
-				<b className="text-2xl">THE JAZZ BUTCHER CONSPIRACY THE WHOLE STORY</b>
-				<p />
-				<i>Up-to-date information is available <Link href="/gigs"> in greatly expanded database format</Link></i>
-			</center>
-			<p />
-			<hr />
-			<p />
+			<LetterHeader title="THE JAZZ BUTCHER CONSPIRACY THE WHOLE STORY"
+				subhead=<><i>Up-to-date information is available <Link href="/gigs"> in greatly expanded database format</Link></i></> />
 			The first JBC dates are shrouded in confusion.
 			{max}, {pat} and Louis played three very small shows under
 			the umbrella of &quot;Cabaret Cent-Neuf&quot; during November and

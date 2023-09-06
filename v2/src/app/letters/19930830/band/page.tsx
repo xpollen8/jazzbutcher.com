@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import { aero, astor, blue, bus, cult, dj, dooj, green, joe, joea, jules, larry, levit, lix, max, nick, owen, paul, pete, richard, rodney, sonic, strange, vu, } from '@/lib/defines';
 
 const Letter = () =>  {
@@ -8,12 +9,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<center>
-			<b className="text-2xl">WHERE IS BUTCHER BAND?</b>
-			<br/><b>Soap opera details and untruths for those who insist upon them.</b>
-			<p />
-			</center>
-			<hr/>
+			<LetterHeader title="WHERE IS BUTCHER BAND?" subhead="Soap opera details and untruths for those who insist upon them." />
 			<a id="pete" />
 			<b>{pete}</b> has disappeared and, to everybody&apos;s surprise,
 			bitterly from the group.  We think he was worried about

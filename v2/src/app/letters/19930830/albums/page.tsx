@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	del, gloop, engine, zombie, gold, party, scandal, dist, sex, hask, rumour,
 	AU, DE, FIDDLER, HO, aero, angels, astor, bacon, bait, bake, baltic, ben, blue,
@@ -17,12 +18,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<center>
-				<b className="text-2xl">THE CHURCH OF LOVE IS A BROAD CHURCH:</b>
-				<br/>
-				<b>Varying impressions on different JBC discs</b>
-			</center>
-			<p />
+			<LetterHeader title="THE CHURCH OF LOVE IS A BROAD CHURCH:" subhead="Varying impressions on different JBC discs" />
 			<div className="annotation">
 				This is in no way a &quot;defence&quot; of any JBC product.  I
 				don&apos;t feel that I need to defend the stuff.  There are

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import { chang, richard } from '@/lib/defines';
 
 const Letter = () =>  {
@@ -8,8 +9,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<b className="text-2xl">PRESIDENT CHANG</b>
-			<p />
+			<LetterHeader title="PRESIDENT CHANG" />
 			<samp>
 				&gt; Thu, 2 Sep 93<br />
 				&gt; 6500nag@ucsbuxa.ucsb.edu (Naggi Asmar)<br />

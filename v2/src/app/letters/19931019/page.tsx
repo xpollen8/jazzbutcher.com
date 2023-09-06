@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const topics = [
@@ -19,9 +20,7 @@ const Letter = () =>
 <>
 	<Header section='letters' title='19Oct93'/>
 	<div className="etc">
-		<center className="p-5">
-		<b className="text-2xl">DUCK EVERYBODY!  THE OLD FOOL&apos;s COMING IN LINE AGAIN...</b>
-		</center>
+		<LetterHeader title="DUCK EVERYBODY!  THE OLD FOOL's COMING IN LINE AGAIN..." />
 		<div className="flex flex-wrap justify-around">
 			<div className="min-w-[50%]">
 				{topics.map(MakeSimpleURI)}

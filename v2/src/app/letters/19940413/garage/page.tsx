@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 		gerard, pat, dooj, paul, walk, boy, sweet, davis, odd, jungle, monkey, ghost, party, sis, angels, hour, road, FIDDLER,
 } from '@/lib/defines';
@@ -10,12 +11,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<p />
-			<center>
-			<b className="text-2xl">UPSTAIRS AT THE GARAGE, LONDON - <Link href="/gigs/1994/Mar10.html">10th MARCH 1994</Link></b>
-			</center>
-			<p />
-			<hr/>
+			<LetterHeader title="UPSTAIRS AT THE GARAGE, LONDON" subhead=<Link href="/gigs/1994/Mar10.html">10th MARCH 1994</Link> />
 			A new &quot;acoustic&quot; venue in the heart of fashionable Islington
 			plays host to something which my agent calls THE JAZZ
 			BUTCHER ACOUSTIC CONSPIRACY... the wag!

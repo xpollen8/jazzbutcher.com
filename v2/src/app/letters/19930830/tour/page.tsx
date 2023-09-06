@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import { AU, FR, HO, DE, _4AD, belly, dooj, girls, haus, kathie, lix, nick, pat, pete, joe, tony } from '@/lib/defines';
 
 const Letter = () =>  {
@@ -9,9 +10,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<center>
-				<b className="text-2xl">1993 EUROPEAN TOUR REPORT</b>
-			</center>
+			<LetterHeader title="1993 EUROPEAN TOUR REPORT" />
 			<b>15.2</b>
 			<blockquote className="annotation">
 				JBC gets on the bus at 5am {pete} is roaring drunk.  {tony} considers bashing him.  Drive and float to Paris.
@@ -291,9 +290,7 @@ const Letter = () =>  {
 				miss two boats, go to the pub, get on the boat, get
 				drunk, get paid (I got &#163;27!), go home.
 			</blockquote>
-			<hr />
-			<blockquote>
-			VERDICT: Best European tour since <Link href="/gigs/1988/index.html">1988.</Link>
+			<LetterHeader title="VERDICT" subhead=<>Best European tour since <Link href="/gigs/1988/index.html">1988</Link></> />
 				Not as violent
 				or drunk, but more mental and musical.  I felt that
 				we really did a lot to remind people how good this thing
@@ -307,7 +304,6 @@ const Letter = () =>  {
 			<br/><b>{pat}:</b> Guitars, voice
 			<br/><b>{pete}:</b> Guitars ({FR}, {HO}, {DE}, Italy)
 			<br/><b>{lix}:</b> Guitars ({AU})
-			</blockquote>
 		</div>
 		<Footer />
 	</>)

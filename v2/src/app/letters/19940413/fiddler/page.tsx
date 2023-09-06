@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	FIDDLER, davis, boy, angels, monkey, sweet, odd, sis, party, drugs, ghost, rain, hour, skins, road, dooj, pat, hend, gab, pete,
 	kathie, curt
@@ -11,13 +12,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<center>
-			<p />
-			<b className="text-2xl">That {FIDDLER} Set List In Full - <Link href="/gigs/1994/Apr8.html">8th April 1994</Link></b>
-			<p />
-			</center>
-			<hr />
-			<p />
+			<LetterHeader title=<>That {FIDDLER} Set List In Full</> subhead=<Link href="/gigs/1994/Apr8.html">8th April 1994</Link> />
 			<dl>
 			<dd>{davis}</dd>
 			<dd>{boy}</dd>

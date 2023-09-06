@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	FIDDLER, dj, dooj, green, lix, nick, pat, paul, richard,
 } from '@/lib/defines';
@@ -9,10 +10,9 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940413'>13Apr94</Link> | JBC DATES</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
-			After the <Link href="/letters/19930830/tour.html">European
-			tour of early 1993</Link>, listed last time, we did this...
-			<hr />
+		<div className="etc">
+			<LetterHeader title=<>After the <Link href="/letters/19930830/tour.html">European tour of early 1993</Link></>
+				subhead="listed last time, we did this..." />
 			<samp>
 			<h2>1993</h2>
 			<b>May</b>

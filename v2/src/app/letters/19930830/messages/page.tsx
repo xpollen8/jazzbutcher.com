@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import { NME, aero, blue, creat, cult, ed, family, mbv, momus, } from '@/lib/defines';
 
 const Letter = () =>  {
@@ -9,15 +10,11 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<center>
-				<b className="text-2xl">INDIVIDUAL MESSAGES:</b>
-			</center>
-			<p>
+			<LetterHeader title="INDIVIDUAL MESSAGES:" />
 			{ed}
 				- I&apos;m afraid your &quot;virtual clippings&quot; collection is
 				indeed incomplete and inaccurate.
-			</p>
-			<p>
+			<p />
 				You&apos;re spot on about the Robin Gibson thing.
 				In fact he has now carried the JBC crusade right home
 				to bed, having recently had affairs with two of my recent
@@ -27,8 +24,7 @@ const Letter = () =>  {
 				might amuse you &quot;Well, there&apos;s nothing wrong with the
 				songs or the performances...but...you sound a bit...TINNY,
 				man.&quot;
-			</p>
-			<p>
+			<p />
 				The 1990 &quot;Live review of something else&quot; was, actually,
 				a 1988 live review of the <Link href="/gigs/1988/Aug7_2200.html">
 				Doing For The Kids concert in London.</Link>
@@ -43,15 +39,13 @@ const Letter = () =>  {
 				was the JBC.  She concluded by asking - &quot;<b>NME</b>
 				cover stars in my lifetime?  It&apos;s not impossible.&quot; The
 				JBC, like Diana Ross, are Still Waiting.  Dame!
-			</p>
-			<p>
+			<p />
 				The <b>NME</b> review of {cult} was a bit more than 5
 				lines.  It called me a &quot;master fetishist&quot; (how do he
 				KNOW?) and gave the record eight out of ten, a score
 				that would have won a more fashionable act a great deal
 				of space, I suspect.  They did print a small photo, though.
-			</p>
-			<p>
+			<p />
 				The <Link href="/press/90melody.html"><b>MM</b> also gave
 				a positive review,</Link> and their Chris Roberts wrote
 				a half-page feature, with photo, talking about things
@@ -65,8 +59,7 @@ const Letter = () =>  {
 				tellers&quot; (aaaaaah) which suggest that there might have
 				been a review there.  I was in L.A. all summer so i
 				can&apos;t say.
-			</p>
-			<p>
+			<p />
 				The l.p. certainly attracted good reviews in <b>Select</b>
 				(Dave Kavanagh, who later told me &quot;{blue} is the first
 				JBLP that I really LOVE&quot;) and <b>Vox</b> (Keith Cameron,
@@ -83,8 +76,7 @@ const Letter = () =>  {
 				much to say to British students except &quot;Get a fucking
 				haircut!&quot;  By the way, both <b>Select</b> and <b>Q Magazine</b>
 				have published positive reviews of {family} too.
-			</p>
-			<p>
+			<p />
 				I&apos;ll tell you what, though, Ed.  If you send me some
 				wedge to cover the photocopying, I&apos;ll send you a wad
 				of US and European press that will keep you occupied
@@ -93,8 +85,7 @@ const Letter = () =>  {
 				probably kept busy all day sending out photos of Ride),
 				so the lack of UK press is hardly suprising.  But then,
 				hey, we don&apos;t even have a manager...
-			</p>
-			<p>
+			<p />
 				Your remark about headlining at the <b>Dingwalls</b>
 				thing doesn&apos;t have much substance.  In
 				<Link href="/gigs/1988/index.html">1988</Link> we played
@@ -109,7 +100,6 @@ const Letter = () =>  {
 				<Link href="/letters/94Jun24/all_the_gigs.html">a list
 				of every live JBC manifestation ever</Link> from this very
 				writer... if they really want it.
-			</p>
 			<p />
 				I enjoyed your remarks about the K.D. Land (fuck it,
 				start again; kd lang) photo.

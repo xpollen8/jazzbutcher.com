@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const Artwork = () => 
@@ -15,7 +16,7 @@ const Artwork = () =>
 				</Link>
 			</div>
 			<div className="min-w-[50%]">
-				<b className="text-2xl">Extracted Images:</b>
+				<LetterHeader title="Extracted Images:" />
 				<MakeSimpleURI uri="https://jazzbutcher.com/images//notes.gif" text="Happy Notes" />
 				<MakeSimpleURI uri="https://jazzbutcher.com/images//HappyNotes.gif" text="Happy Notes (processed)" />
 				<MakeSimpleURI uri="https://jazzbutcher.com/images//sky.gif" text="Happy Clouds" />
@@ -32,7 +33,7 @@ const Artwork = () =>
 				</Link>
 			</div>
 			<div className="min-w-[50%]">
-				<b className="text-2xl">Extracted Images:</b>
+				<LetterHeader title="Extracted Images:" />
 				<MakeSimpleURI uri="https://adjective.com/images/eg/eg.gif" text="Happy Eg(g)" />
 				<MakeSimpleURI uri="https://adjective.com/images/eg/flag_bw.gif" text="Tutto Possibile Flag" />
 				<MakeSimpleURI uri="https://adjective.com/images/eg/flag.gif" text="Tutto Possibile Flag (color)" />

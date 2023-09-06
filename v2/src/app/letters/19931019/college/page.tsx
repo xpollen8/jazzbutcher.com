@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 
 const Letter = () =>  {
 	const title = <><Link href='/letters/19931019'>19Oct93</Link> | COLLEGE</>
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-		  <b className="text-2xl">COLLEGE</b>
-			<p /> 
+		  <LetterHeader title="COLLEGE" />
 			<samp>
 			&gt; Mon, 21 Jun 1993<br />
 			&gt; Rick.G.Karr@gagme.chi.il.us (Rick G. Karr)<br />

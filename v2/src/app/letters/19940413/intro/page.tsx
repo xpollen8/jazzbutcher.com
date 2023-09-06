@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	hend
 } from '@/lib/defines';
@@ -11,13 +12,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<p />
-			<center>
-			<b className="text-2xl">13Apr94</b>
-			</center>
-			<p />
-			<hr />
-			<p />
+			<LetterHeader title="13Apr94" />
 			Checking in once again, to say hello and keep your crew
 			of computer-abusers up to date with our latest peregrinations
 			across the nations.  This is tax hell week, so any other
@@ -47,7 +42,7 @@ const Letter = () =>  {
 			<p />
 			Plans for the next few weeks involve trying to get this
 			US trip moving, paying some attention to the long-neglected
-			<Image className="float-right" width={250} height={250} alt="[signature]"
+			<Image className="float-right" width={300} height={300} alt="[signature]"
 				src="https://jazzbutcher.com/images/19940413/94Apr13_sig.gif" />
 			Pat n Richard album, doing a couple of gigs in London
 			and Belgium (the country, not the club!), and assembling

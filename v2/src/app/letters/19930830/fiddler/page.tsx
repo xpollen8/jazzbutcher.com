@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import { aero, angels, ben, chick, davis, drugs, ghost, go, hour, odd, sis, sue, sweet, walk, whad } from '@/lib/defines';
 
 const Letter = () =>  {
@@ -8,11 +9,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<center>
-				<b className="text-2xl">THAT MEAN <Link href="/gigs/1993/May15.html">FIDDLER SET</Link> LIST IN FULL...</b>
-			</center>
-			<p />
-			<hr/>
+			<LetterHeader title=<>THAT MEAN <Link href="/gigs/1993/May15.html">FIDDLER SET</Link> LIST IN FULL...</> />
 			<dl>
 				<dd>{sue} (<i>Susie</i>, you fool, it was <i>Susie</i>!  Did I make THAT much of a mess of it?)</dd>
 				<dd>{sweet} (Yes, from the new l.p.)</dd>

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import { cave, bake, baltic, ben, braind, chang, coonce, davis, dooj, ghost, iain, kill, mall, nick, pat, penguin, pete, richard, stat, sweet, whad, } from '@/lib/defines';
 
 const Letter = () =>  {
@@ -17,11 +18,7 @@ const Letter = () =>  {
 						</Link>
 					</div>
 					<div className="min-w-[50%] p-10">
-						<center>
-							<b className="text-2xl">WAITING FOR THE LOVE BUS</b>
-							<p />
-							<b>Cultural guidance notes issued to the U.K. press</b>
-						</center>
+						<LetterHeader title="WAITING FOR THE LOVE BUS" subhead="Cultural guidance notes issued to the U.K. press" />
 					</div>
 				</div>
 			</div>
@@ -151,12 +148,7 @@ const Letter = () =>  {
 				a bit more quietly.  I think that chap in the baseball
 				hat has nodded out.
 			</blockquote>
-			<p />
-			<center>
-				<b className="text-2xl">L.P. LINE-UP: Who did what</b>
-			</center>
-			<p />
-			<blockquote className="border p-5">
+			<LetterHeader title="L.P. LINE-UP:" subhead="Who did what" />
 				<p>
 					{richard}: Fender Jaguar, Gibson Firebird, Burns XII String,
 					Tapes and effects, engineering, production.
@@ -174,7 +166,6 @@ const Letter = () =>  {
 				<p>
 					{nick}: The Drums.
 				</p>
-			</blockquote>
 		</div>
 		<Footer />
 	</>)

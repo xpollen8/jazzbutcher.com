@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	_49, FR, angels, bake, boy, chang, curt, cvb, desert, dooj, drugs, ghost, go, h2o, hour, jungle, kathie, king, loony, mer, nick, odd, owen, party, pat, penguin, punks, rain, richman, road, rodney, sat, shirl, sis, skins, space, sweet, wheel, yo, zombie,
 } from '@/lib/defines';
@@ -11,12 +12,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<p />
-			<center>
-			<b className="text-2xl">JBC TOUR REPORT : EUROPE 1994</b>
-			</center>
-			<p />
-			<hr />
+			<LetterHeader title="JBC TOUR REPORT : EUROPE 1994" />
 			<b>The players this time:</b>
 			<ul>
 			<li>{nick} - Drums</li>
@@ -403,8 +399,8 @@ const Letter = () =>  {
 			Catch the boat, sort out the money, do the tour awards,
 			drive home, got to bed for ever.
 			</blockquote>
-			<hr />
-			<b className="text-2xl">JBC TOUR AWARDS : JAN/FEB 1994</b>
+			<LetterHeader title="JBC TOUR AWARDS" subhead="JAN/FEB 1994" />
+			<blockquote>
 			<ul>
 			<li>Best Show :
 				<Link href="/gigs/1994/Feb16.html">
@@ -438,8 +434,8 @@ const Letter = () =>  {
 			<li>The Joseph James Foster Award for the most brutally
 			deranged human being : Razorface, Clermont-Ferrand</li>
 			</ul>
-			<hr />
-			<b className="text-2xl">THE SET</b>
+			</blockquote>
+			<LetterHeader title="THE SET" />
 			<dl>
 			<dd>{sweet}</dd>
 			<dd>{party}</dd>

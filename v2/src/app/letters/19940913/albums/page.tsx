@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	bacon, scandal, sex, dist, blue,
 } from '@/lib/defines';
@@ -10,18 +11,9 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<p />
-			<center>
-			<b className="text-2xl">RE-ISSUES</b>
-			</center>
-			<p />
-			<hr />
-			<p />
-			{bacon}!
-			{scandal}!
-			{sex}!
-			{dist}!
-			<p />
+			<LetterHeader title="RE-ISSUES"
+				subhead=<> {bacon}!  {scandal}!  {sex}!</>
+			/>
 			<blockquote className="annotation">
 			We are continuing our negotiations over the re-releases
 			of these fairly amusing recordings.  Fire Records have

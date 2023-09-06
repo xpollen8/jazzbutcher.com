@@ -757,3 +757,7 @@ p::first-letter {
 	margin-top: 6px;
 	padding: 5px;
 }
+
+samp {
+	font-size: 0.75em;
+}

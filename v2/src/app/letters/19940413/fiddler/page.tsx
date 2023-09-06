@@ -1,14 +1,22 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { FIDDLER, davis, boy, angels, monkey, sweet, odd, sis, party, drugs, ghost, rain, hour, skins, road, dooj, pat, hend, gab, pete, } from '@/lib/defines';
+import {
+	FIDDLER, davis, boy, angels, monkey, sweet, odd, sis, party, drugs, ghost, rain, hour, skins, road, dooj, pat, hend, gab, pete,
+	kathie, curt
+} from '@/lib/defines';
 
 const Letter = () =>  {
 	const title = <><Link href='/letters/19940413'>13Apr94</Link> | Mean Fiddler gig</>
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<b>That {FIDDLER} Set List In Full - <Link href="/gigs/1994/Apr8.html">8th April 1994</Link></b>
+			<center>
+			<p />
+			<b className="text-2xl">That {FIDDLER} Set List In Full - <Link href="/gigs/1994/Apr8.html">8th April 1994</Link></b>
+			<p />
+			</center>
+			<hr />
 			<p />
 			<dl>
 			<dd>{davis}</dd>
@@ -32,7 +40,7 @@ const Letter = () =>  {
 			<p />{hend} : Electric Guitar
 			<p />{gab} : Drum, Cymbal
 			<p />
-			<p />The possee : Kathie, Pete, Curtis, Tony, Raj, Erika,
+			<p />The possee : {kathie}, {pete}, {curt}, Tony, Raj, Erika,
 			Carlos (one is from Northampton)
 			<p />The supports: Spittle Rattle (Michael, Catherine,
 			Sophie) and Nick &quot;Gilbert O&apos;Sullivan Green&quot;

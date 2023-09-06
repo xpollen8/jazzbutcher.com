@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import { bacon, ben, pete, girls, creat } from '@/lib/defines';
 
 const Letter = () =>  {
@@ -8,8 +9,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<b>MORE MAXIMILIANA</b>
-			<p />
+			<LetterHeader title="MORE MAXIMILIANA" />
 			<samp>
 				&gt; Wed, 24 Mar 93<br />
 				&gt; frendlicats.UCSC.EDU<br />

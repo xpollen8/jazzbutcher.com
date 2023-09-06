@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 
 const Letter = () =>  {
 	const title = <><Link href='/letters/19931019'>19Oct93</Link> | PRESIDENT CHANG</>
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<b>LES ROCKUPTIBLES</b>
-			<p />
+			<LetterHeader title="LES ROCKUPTIBLES" />
 			<samp>
 				&gt; Wed, 2 Jun 93<br />
 				&gt; joe@cetia.fr (Joe Nicholson)<br />

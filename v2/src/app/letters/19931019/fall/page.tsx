@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import { loony, smiff, smith, rolo, tops, owen } from '@/lib/defines';
 
 const Letter = () =>  {
@@ -8,8 +9,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={title} />
 		<div className="etc">
-			<b>JBC -vs- The Fall</b>
-			<p />
+			<LetterHeader title="JBC -vs- The Fall" />
 			<samp>
 				&gt; Mon, 21 Jun 1993<br />
 				&gt; Rick.G.Karr@gagme.chi.il.us (Rick G. Karr)<br />

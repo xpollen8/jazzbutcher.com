@@ -16,10 +16,14 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19930830'>30Aug93</Link> | The Albums</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
+			<center>
+				<b className="text-2xl">THE CHURCH OF LOVE IS A BROAD CHURCH:</b>
+				<br/>
+				<b>Varying impressions on different JBC discs</b>
+			</center>
+			<p />
 			<div className="annotation">
-				<b>THE CHURCH OF LOVE IS A BROAD CHURCH: Varying impressions on different JBC discs</b>
-				<p>
 				This is in no way a &quot;defence&quot; of any JBC product.  I
 				don&apos;t feel that I need to defend the stuff.  There are
 				bits and pieces that make me cringe now and again, but
@@ -34,16 +38,15 @@ const Letter = () =>  {
 				So I&apos;m not after convincing anybody of anything, I&apos;m
 				just coming on line with a few random observations.  As
 				soon as I&apos;ve rolled This...
-				</p>
 			</div>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="bath" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/bath.jpg" style={{ float: "left", marginRight: "10px" }}>
-					<Image src="https://jazzbutcher.com/images/bath_250.jpg" width={250} height={250} alt="album cover" />
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/bath.jpg" >
+					<Image className="float-left release"  src="https://jazzbutcher.com/images/bath_250.jpg" width={250} height={250} alt="album cover" />
 				</Link>
 			{bacon}
-				<p>
+				<p />
 				The one nobody ever talks about, even though a surprising
 				number of you seem to have it.  Recorded for just &#163;300
 				(Kevin Shields please take note...), it&apos;s really just
@@ -53,16 +56,16 @@ const Letter = () =>  {
 				{gold} and {party} have all been good friends.  It seems
 				VERY early eighties now, but you must remember that there
 				was a LOT of crap for us to clear out of the way in those days.
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="scandal" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/scandal_front.jpg" style={{ float: "left", marginRight: "10px" }}>
-					<Image src="https://jazzbutcher.com/images/scandal_front_250.jpg" width={250} height={250} alt="album cover" />
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/scandal_front.jpg" >
+					<Image className="float-left release"  src="https://jazzbutcher.com/images/scandal_front_250.jpg" width={250} height={250} alt="album cover" />
 				</Link>
 			{scandal}
-				<p>
+				<p />
 				The Albatross.  Since the recording of {bacon} (almost
 				two years before this one) we had become a &quot;proper&quot;
 				group.  For all that, we still pooled our skills in
@@ -77,15 +80,15 @@ const Letter = () =>  {
 				was told, incidentally, that if we released this on
 				Glass we could expect a top global sale of 2,000.  We
 				released it on Glass and sold about 25,000 copies.
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="sex" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/releases/sex_front.jpg" style={{ float: "left", marginRight: "10px" }}>
-					<Image src="https://jazzbutcher.com/images/releases/sex_front_250.jpg" width={250} height={250} alt="album cover" /></Link>
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/releases/sex_front.jpg" >
+					<Image className="float-left release"  src="https://jazzbutcher.com/images/releases/sex_front_250.jpg" width={250} height={250} alt="album cover" /></Link>
 			{sex}
-				<p>
+				<p />
 				One day&apos;s rehearsal in {hask}&apos;s living room, five days&apos;
 				recording and two days&apos; mixing was all it took for us
 				to make my favourite of the Glass records.  Now that
@@ -112,15 +115,15 @@ const Letter = () =>  {
 				&quot;great&quot; tunes, in the sense of numbers that people request
 				or whatever, but it has a nice totality, a good, atmospheric
 				vibe.  This one I&apos;d actually defend at length if I had to.
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="dist" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/gentle.jpg" style={{ float: "left", marginRight: "10px" }}>
-					<Image src="https://jazzbutcher.com/images/gentle_250.jpg" width={250} height={250} alt="album cover" /></Link>
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/gentle.jpg" >
+					<Image className="float-left release"  src="https://jazzbutcher.com/images/gentle_250.jpg" width={250} height={250} alt="album cover" /></Link>
 			{dist}
-				<p>
+				<p />
 				A Sri Lankan gentleman once sat down beside me in a
 				bar in Bremen, asked me to sign his copy of this record,
 				and then, even as I wrote messages of good luck and global
@@ -161,15 +164,15 @@ const Letter = () =>  {
 				we retired damaged, leaving the group in pieces.  Oh,
 				and another thing about <b>&quot;Gentlefolk&quot;</b>...  it&apos;s
 				pretentious too.
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="fishco" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/fishco.jpg" style={{ float: "left", marginRight: "10px" }}>
-					<Image src="https://jazzbutcher.com/images/fishco_250.jpg" width={250} height={250} alt="album cover" /></Link>
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/fishco.jpg" >
+					<Image className="float-left release"  src="https://jazzbutcher.com/images/fishco_250.jpg" width={250} height={250} alt="album cover" /></Link>
 			{fishco}
-				<p>
+				<p />
 				Having ended up on {creat}, which I took as a bit of
 				a validation, I was keen to get as far away from all
 				those &quot;w&quot; words that had followed my group around, and
@@ -197,15 +200,15 @@ const Letter = () =>  {
 				that it would be more a &quot;change of direction&quot; than it
 				was.  But I like <b>Fishcotheque</b>; I wish there more
 				records as good as it.
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="planet" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/planet.jpg" style={{ float: "left", marginRight: "10px" }}>
-					<Image src="https://jazzbutcher.com/images/planet_250.jpg" width={250} height={250} alt="album cover" /></Link>
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/planet.jpg" >
+					<Image className="float-left release"  src="https://jazzbutcher.com/images/planet_250.jpg" width={250} height={250} alt="album cover" /></Link>
 			{planet}
-				<p>
+				<p />
 				This record gives me the pip.  I think that the blame
 				can be laid at my door and on the neatly-polished doorstep
 				of {rivers}.  This was a real &quot;band&quot; album by a touring
@@ -246,15 +249,15 @@ const Letter = () =>  {
 				it&apos;s pretty smart; it&apos;s just that I never really seem
 				to WANT to put it on.  A record out of time and place.
 				A bit of a missed opportunity, I guess.
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="cult" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/cult.jpg" style={{ float: "left", marginRight: "10px" }}>
-				<Image src="https://jazzbutcher.com/images/cult_250.jpg" width={250} height={250} alt="album cover" /></Link>
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/cult.jpg" >
+				<Image className="float-left release"  src="https://jazzbutcher.com/images/cult_250.jpg" width={250} height={250} alt="album cover" /></Link>
 			{cult}
-				<p>
+				<p />
 				Well, if things seemed weird back in February 1989,
 				by January 1990, when we made this baby, the Weird were
 				going shopping on bikes.  With {kizzy} sick and unable
@@ -274,15 +277,15 @@ const Letter = () =>  {
 				This record does have personality.  It also has {lix}
 				on guitar, the start of another beautiful friendship.
 				One of my favourites, this.
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="blue" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/releases/blue_front.jpg" style={{ float: "left", marginRight: "10px" }}>
-					<Image src="https://jazzbutcher.com/images/releases/blue_front_250.jpg" width={250} height={250} alt="album cover" /></Link>
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/releases/blue_front.jpg" >
+					<Image className="float-left release"  src="https://jazzbutcher.com/images/releases/blue_front_250.jpg" width={250} height={250} alt="album cover" /></Link>
 			{blue}
-				<p>
+				<p />
 				Four desperate men, all too desperate to notice how
 				desperate the others are, gather in a farmhouse with
 				a queue of lead guitarists stretching round the block.
@@ -308,15 +311,15 @@ const Letter = () =>  {
 				me to do that in those dark days of mid-1991 was no
 				small job.  (Can anyone tell me how I *knew* that the
 				French were going to like {girls}?)
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="bus" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/lovebus.jpg" style={{ float: "left", marginRight: "10px" }}>
-					<Image src="https://jazzbutcher.com/images/lovebus_250.jpg" width={250} height={250} alt="album cover" /></Link>
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/lovebus.jpg" >
+					<Image className="float-left release"  src="https://jazzbutcher.com/images/lovebus_250.jpg" width={250} height={250} alt="album cover" /></Link>
 			{bus}
-				<p>
+				<p />
 				Too early for me to say, but there&apos;s a clean, simple
 				sound to a lot of this that {blue} detractors might
 				appreciate.  It&apos;s not a deliberate change of musical
@@ -327,30 +330,30 @@ const Letter = () =>  {
 				a big ballad or two and some weird little pop songs
 				and a nice family sing-along about penguins.  I hope
 				you like it.
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="hamburg" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/releases/hamburg_front.jpg" style={{ float: "left", marginRight: "10px" }}>
-					<Image src="https://jazzbutcher.com/images/releases/hamburg_front_250.jpg" width={250} height={250} alt="album cover" /></Link>
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/releases/hamburg_front.jpg" >
+					<Image className="float-left release"  src="https://jazzbutcher.com/images/releases/hamburg_front_250.jpg" width={250} height={250} alt="album cover" /></Link>
 			{hamburg}
-				<p>
+				<p />
 				We were all disappointed at the way this came out.  The
 				concert was great, but logistics prevented us from making
 				anything much more than a glorified bootleg.  Still,
 				live albums are best as souvenirs anyway, so I guess
 				some people regard it fondly.  Lots of entertaining
 				photos to look at anyway...
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 			<a id="family" />
-			<blockquote>
-				<Link href="https://jazzbutcher.com/images/western.jpg" style={{ float: "left", marginRight: "10px" }}>
-					<Image src="https://jazzbutcher.com/images/western_250.jpg" width={250} height={250} alt="album cover" /></Link>
+			<blockquote className="annotation">
+				<Link href="https://jazzbutcher.com/images/western.jpg" >
+					<Image className="float-left release"  src="https://jazzbutcher.com/images/western_250.jpg" width={250} height={250} alt="album cover" /></Link>
 			{family}
-				<p>
+				<p />
 				Yes, I believe something horrible DID happen to the
 				tapes somewhere.  The first time that {richard} and I
 				played this CD we sat there laughing.  Still, Bootleg
@@ -359,9 +362,9 @@ const Letter = () =>  {
 				you can remember what it really sounded like.  For loonie
 				completists only, for sure, though, if you listen through
 				the muck, you&apos;ll see that we did our bit.
-				</p>
+				<p className="clear_float" />
 			</blockquote>
-			<p className="clear-both py-3" />
+			<p />
 		</div>
 		<Footer />
 	</>)

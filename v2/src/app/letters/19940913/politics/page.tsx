@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LetterHeader from '@/components/LetterHeader';
 import {
 	del
 } from '@/lib/defines';
@@ -9,12 +10,9 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19940913'>13Sep94</Link> | Politics</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			<div id="chang" />
-			How can you tell when a politician is lying?
-			<br />Their lips move.
-			<p />
-			<blockquote>
+			<LetterHeader title="How can you tell when a politician is lying?" subhead="Their lips move" />
 			<samp>
 			&gt; Date: Mon, 01 Aug 94 09:42:10 EDT<br />
 			&gt; From: BertieV@aol.com  (John Ford)<br />
@@ -24,7 +22,7 @@ const Letter = () =>  {
 			&gt; rather even-handedly to the U.S. as &apos;the most evil regime the world<br />
 			&gt; has ever created&apos;
 			</samp>
-			</blockquote>
+			<blockquote className="annotation">
 			As {del}
 			pointed out &quot;Why Vote For The Lesser Evil?&quot; is a slogan
 			from a crazed bunch of Americans who set up their own
@@ -49,37 +47,38 @@ const Letter = () =>  {
 			<p />
 			Two things about interviews and the mid-eighties:
 			<blockquote>
-			1)
-			Before we first visited America (which was the summer of &apos;86, not
-			long after the &quot;still-hasn&apos;t-been-justified&quot; bombing of Tripoli in
-			Libya) we saw things from the typical young European viewpoint.  A
-			distant, probably hostile land gave us an easy focus; it&apos;s easy to
-			blame all of the world&apos;s evils on the mechinations of a sinister,
-			powerful, far-away state of which one knows very little.  (Remember,
-			&quot;The Evil Empire&quot; and all that cak about Moscow?)  Hanging out, as we
-			were, with young, idealistic Europeans, whose countries had twice been
-			racked with war in the last sixty years, and who were clearly worried
-			about a Superpower confrontation taking place on their turf, it was
-			easy for us to build up a bad view of America.  Eventually, continued
-			exposure to Real Life in the US caused us to change our views a bit.
-			So did historical developments.  Not before &apos;88 at the earliest,
-			though.  These things take time.
+				1)
+				Before we first visited America (which was the summer of &apos;86, not
+				long after the &quot;still-hasn&apos;t-been-justified&quot; bombing of Tripoli in
+				Libya) we saw things from the typical young European viewpoint.  A
+				distant, probably hostile land gave us an easy focus; it&apos;s easy to
+				blame all of the world&apos;s evils on the mechinations of a sinister,
+				powerful, far-away state of which one knows very little.  (Remember,
+				&quot;The Evil Empire&quot; and all that cak about Moscow?)  Hanging out, as we
+				were, with young, idealistic Europeans, whose countries had twice been
+				racked with war in the last sixty years, and who were clearly worried
+				about a Superpower confrontation taking place on their turf, it was
+				easy for us to build up a bad view of America.  Eventually, continued
+				exposure to Real Life in the US caused us to change our views a bit.
+				So did historical developments.  Not before &apos;88 at the earliest,
+				though.  These things take time.
 			</blockquote>
 			<blockquote>
-			2) In the mid-eighties there were still a lot of people who would want
-			to meet us or interview us because we seemed like a new group to them,
-			and we might perhaps be famous, or something.  Thus we got interviewed
-			by a lot of people who weren&apos;t really interested in the JBC or what it
-			thought.  People who wouldn&apos;t necessarily understand our experiences
-			(in terms of &quot;where we were coming from&quot;), wouldn&apos;t be sufficiently
-			interested to cop for anything more than the usual &quot;lefty band&quot;
-			schtick, and who - in an inevitable few cases - wouldn&apos;t actually be
-			that bright!  Even a really enjoyable interview comes out with things
-			in it that are hard to recognise as your own opinions or remarks.  A
-			mediocre interview, carried out with a dull and disinterested person
-			by a bored and unsympathetic band, can come out making Ronald
-			MacDonald looking like Geoffrey Dahlmer (in fact, now I come to
-			mention it, they do have a couple of points in common, don&apos;t they?).
+				2) In the mid-eighties there were still a lot of people who would want
+				to meet us or interview us because we seemed like a new group to them,
+				and we might perhaps be famous, or something.  Thus we got interviewed
+				by a lot of people who weren&apos;t really interested in the JBC or what it
+				thought.  People who wouldn&apos;t necessarily understand our experiences
+				(in terms of &quot;where we were coming from&quot;), wouldn&apos;t be sufficiently
+				interested to cop for anything more than the usual &quot;lefty band&quot;
+				schtick, and who - in an inevitable few cases - wouldn&apos;t actually be
+				that bright!  Even a really enjoyable interview comes out with things
+				in it that are hard to recognise as your own opinions or remarks.  A
+				mediocre interview, carried out with a dull and disinterested person
+				by a bored and unsympathetic band, can come out making Ronald
+				MacDonald looking like Geoffrey Dahlmer (in fact, now I come to
+				mention it, they do have a couple of points in common, don&apos;t they?).
+				</blockquote>
 			</blockquote>
 		</div>
 		<Footer />

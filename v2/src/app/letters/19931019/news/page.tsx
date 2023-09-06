@@ -8,7 +8,7 @@ const Letter = () =>  {
 	const title = <><Link href='/letters/19931019'>19Oct93</Link> | NEWS</>
 	return ( <>
 		<Header section='letters' title={title} />
-		<div className="letter">
+		<div className="etc">
 			<b>NEWS</b> (I know you want it)
 			<p />
 			I have recorded two tracks with Alan Moore, the comics
@@ -47,6 +47,7 @@ const Letter = () =>  {
 			dollars or anything, please send large sums of cash for
 			immediate bootleg cassette deluge.
 			<p />
+			<Image className="float-right" width={250} height={250} alt="[signature]" src="https://jazzbutcher.com/images/19931019/93Oct19_sig.gif" />
 			Somebody said something about a second <Link
 			href="/gigs/bootlegs.html#petermurphy">Black Eg</Link> album.
 			If you send enough money NOW I may still be in a position
@@ -55,7 +56,7 @@ const Letter = () =>  {
 			<p />
 			Survive and thrive, take no truck from the passengers,
 			<p />
-			<Image width={351} height={163} alt="[signature]" src="https://jazzbutcher.com/images/19931019/93Oct19_sig.gif" />
+			<p className="clear_float" />
 		</div>
 		<Footer />
 	</>)

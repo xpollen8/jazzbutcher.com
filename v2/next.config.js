@@ -8,6 +8,16 @@ const nextConfig = {
 	async redirects() {
 			return [
 				{
+					source: '/conspirators/pat',
+					destination: '/pat',
+					permanent: false,
+				},
+				{
+					source: '/conspirators/gallery',
+					destination: '/gallery',
+					permanent: false,
+				},
+				{
 					source: '/letters/90Feb14/:path*',
 					destination: '/letters/19900214/:path*',
 					permanent: false,

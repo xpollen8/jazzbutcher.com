@@ -27,45 +27,66 @@ export async function generateMetadata(
 }
 
 type BreadCrumb = {
-	title: string | []
+	title: string | string[]
 	href?: string
+	parent: string | string[]
+	summary: string
 	parent?: string
 }
 
 const headerText : { [key: string]: BreadCrumb } = {
 	jbc: { href: '/', title: 'The Jazz Butcher' },
-	gigs:  { parent: 'jbc', title: 'Gigs' },
-	conspirators:  { parent: 'jbc', title: 'Conspirators' },
-	help:  { parent: 'jbc', title: 'Help Us' },
-	press:  { parent: 'jbc', title: 'Press' },
-	lyrics:  { parent: 'jbc', title: 'Lyrics' },
-	news:  { parent: 'jbc', title: 'News' },
-	audio:  { parent: 'jbc', title: 'Audio' },
-	posters:  { parent: 'jbc', title: 'Posters' },
-	video:  { parent: 'jbc', title: 'Video' },
-	releases:  { parent: 'jbc', title: 'Releases' },
-	etc:  { parent: 'jbc', title: 'Etc' },
-	prehistory:  { parent: 'jbc', title: 'Pre-JBC' },
-	project:  { parent: 'jbc', title: 'Projects' },
-	mailinglist:  { parent: 'etc', title: 'Mailing List' },
-	abcs_of_drugs:  { parent: 'etc', title: "Eider's ABC's of Drugs" },
-	mad:  { parent: 'etc', title: 'How MAD Are You?' },
-	links:  { parent: 'etc', title: 'Pat&quot;s Recommended Links' },
-	letters:  { parent: 'etc', title: 'Letters From Pat' },
-	nightshift:  { parent: 'prehistory', title: 'Nightshift' },
-	institution:  { parent: 'prehistory', title: 'Institution' },
-	sonictonix:  { parent: 'prehistory', title: 'Sonic Tonix' },
-	thetonix:  { parent: 'prehistory', title: 'The Tonix' },
-	vaguelyfamiliar:  { parent: 'projects', title: 'The Vaguely Familiar' },
-	cambodia:  { parent: 'projects', title: 'Cambodia' },
-	mrblagdon:  { parent: 'projects', title: 'Mr. Blagdon' },
-	sumosonic:  { parent: 'projects', title: 'Sumosonic' },
-	wilson:  { parent: 'projects', title: 'Wilson' },
-	eg:  { parent: 'projects', title: 'The Black Eg' },
-	dronesclub:  { parent: 'projects', title: 'The Drones Club' },
-	trivia:  { parent: 'etc', title: 'Trivia' },
-	tribute:  { parent: 'etc', title: 'Fan Tribute Project' },
-	misc:  { parent: 'jbc', title: 'Misc.' },
+
+	pat: { parent: 'jbc', title: 'Pat', summary: 'The Butcher' },
+	releases: { parent: 'jbc', title: 'Releases', summary: 'Recorded output' },
+	gigs: { parent: 'jbc', title: 'Gigs', summary: 'The exhaustive live performance archives' },
+	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The arrmy of JBC musicians' },
+	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
+	fiascos: { parent: 'jbc', title: 'The Fiascos', summary: 'Tales of disastrous outings' },
+	prejbc: { parent: 'jbc', title: 'Pre-JBC', summary: 'Before there was The JBC' },
+	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content' },
+	help: { parent: 'jbc', title: 'Get Involved!', summary: "Let's do this, together" },
+
+	media: { parent: 'jbc', title: 'Media', summary: "Listen! Watch! Read!" },
+	audio: { parent: 'media', title: 'Audio', summary: "Bootlegs and the like" },
+	audio_interviews: { parent: [ 'audio', 'pat' ], title: 'Recorded Interviews', summary: "Radio and online interviews" },
+	audio_bootlegs: { parent: 'audio', title: 'Recorded performances', summary: "Non-official audio recordings" },
+	homage: { parent: 'audio', title: 'Musical Tributes', summary: "Songs in praise of The Butcher" },
+	video: { parent: 'media', title: 'Video', summary: "Official and bootleg live videos" },
+	press: { parent: 'media', title: 'Press', summary: "In print (and online)" },
+	print_interviews: { parent: [ 'press', 'pat' ], title: 'Printed Interviews', summary: "Mags, newsprint, and online" },
+	posters: { parent: 'media', title: 'Posters', summary: 'Gig Ephemera' },
+	news: { parent: 'media', title: 'News', summary: "Website updates and announcements" },
+
+	interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
+
+	project: { parent: 'pat', title: 'Side Projects', summary: "Pat was a busy butcher" },
+	gallery: { parent: 'pat', title: 'Gallery', summary: "Photography from all eras"  },
+	memoriam: { parent: 'pat', title: 'In Memoriam', summary: "Too soon" },
+	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "Final years' live performances from his home" },
+	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
+
+	letters: { parent: 'etc', title: 'Letters From Pat' },
+	mailinglist: { parent: 'etc', title: 'Mailing List' },
+	tribute: { parent: 'etc', title: 'Fan Tribute Project' },
+	abcs_of_drugs: { parent: 'etc', title: "Eider's ABC's of Drugs" },
+	mad: { parent: 'etc', title: 'How MAD Are You?' },
+	links: { parent: 'etc', title: "Pat's Recommended Links" },
+	trivia: { parent: 'etc', title: 'Trivia' },
+	tomhall: { parent: 'etc', title: 'Tom Hall Meorial' },
+
+	nightshift: { parent: 'prejbc', title: 'Nightshift' },
+	institution: { parent: 'prejbc', title: 'Institution' },
+	sonictonix: { parent: 'prejbc', title: 'Sonic Tonix' },
+	thetonix: { parent: 'prejbc', title: 'The Tonix' },
+
+	cambodia: { parent: 'projects', title: 'Cambodia' },
+	mrblagdon: { parent: 'projects', title: 'Mr. Blagdon' },
+	vaguelyfamiliar: { parent: 'projects', title: 'The Vaguely Familiar' },
+	eg: { parent: 'projects', title: 'The Black Eg' },
+	sumosonic: { parent: 'projects', title: 'Sumosonic' },
+	wilson: { parent: 'projects', title: 'Wilson' },
+	dronesclub: { parent: 'projects', title: 'The Drones Club' },
 }
 
 const makeBreadcrumb = (name: string, aux?: any) => {
@@ -101,7 +122,7 @@ const makeBreadcrumb = (name: string, aux?: any) => {
 
 const parseTitle = (title: string | string[], key0: number) => {
 	if (typeof title === 'string') return <li key={key0}><span aria-current="page">{title}</span></li>;
-	if (title.constructor === Array && title[0]?.constructor === String) {
+	if (title?.constructor === Array && title[0]?.constructor === String) {
 		return title?.map((t: string, key: number) => {
 			const [ text, href ] = t.split(';;');
 			if (href) return <li key={key0+key}><Link href={href}>{text}</Link></li>;
@@ -119,6 +140,10 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 	return (<nav aria-label="Breadcrumb" className="breadcrumb">
 		<ul>
 		{nav.map((obj: any, key: number) => {
+			const children = Object.keys(headerText).filter((h: BreadCrumb) => {
+				return headerText[h]?.parent?.includes(section?.toLowerCase());
+			}).map((h: string) => ({ link: h, ...headerText[h] }));
+		//console.log("MEN", { section, children });
 			if (obj?.href) return <li key={key}><Link href={obj.href}>{obj.title}</Link></li>
 			return parseTitle(obj.title, key);
 		})}

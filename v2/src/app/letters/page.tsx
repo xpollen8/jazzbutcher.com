@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
+import LetterHeader from '@/components/LetterHeader';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const letters = [
@@ -21,10 +22,8 @@ const letters = [
 const Letters = () => 
 <>
 	<Header section='letters' />
-	<Tag>
-		Pat responds to questions posed by fans of the band (historical).
-	</Tag>
 	<div className="etc">
+		<LetterHeader title="Pat responds to questions posed by fans of the band (historical)" />
 		<div className="flex flex-wrap justify-around">
 			<div className="min-w-[50%]">
 				{letters.map(MakeSimpleURI)}

@@ -1,13 +1,11 @@
-import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
 import { aero, astor, blue, bus, cult, dj, dooj, green, joe, joea, jules, larry, levit, lix, max, nick, owen, paul, pete, richard, rodney, sonic, strange, vu, } from '@/lib/defines';
 
 const Letter = () =>  {
-	const title = <><Link href='/letters/19930830'>30Aug93</Link> | WHERE IS BUTCHER BAND?</>
 	return ( <>
-		<Header section='letters' title={title} />
+		<Header section='letters' title={ [ '30Aug93;;/letters/19930830', 'WHERE IS BUTCHER BAND?'] } />
 		<div className="etc">
 			<LetterHeader title="WHERE IS BUTCHER BAND?" subhead="Soap opera details and untruths for those who insist upon them." />
 			<a id="pete" />

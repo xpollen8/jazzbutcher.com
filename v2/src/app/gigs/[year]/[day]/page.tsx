@@ -196,11 +196,9 @@ const ExtraNav = ({ datetime }: { datetime: string }) => {
 const Nav = ({ year, datetime }: { year: number, datetime: string }) => {
 	const hasHour = !(datetime.includes('00:00:00'));
 
-	const title = <span>
-		<Link href={`/gigs/${year}`}>{year}</Link> | {parseMonthName(datetime)} {parseDayOrdinal(datetime)} {hasHour && parseHourAMPM(datetime)}
-	</span>
+	const display = `${parseMonthName(datetime)} ${parseDayOrdinal(datetime)} ${(hasHour) ? parseHourAMPM(datetime) : ''}`;
 
-	return <Header section='gigs' title={title} extraNav=<ExtraNav datetime={datetime} /> />
+	return <Header section='gigs' title={ [ `${year};;/gigs/${year}`, display ] } extraNav=<ExtraNav datetime={datetime} /> />
 }
 
 const Content = ({ datetime }: { datetime: string }) => {

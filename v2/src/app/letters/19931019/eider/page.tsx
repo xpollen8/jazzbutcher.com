@@ -1,14 +1,12 @@
-import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
 import { max, dj, vu } from '@/lib/defines';
 
-const Letter = () =>  {
-	const title = <><Link href='/letters/19931019'>19Oct93</Link> | EIDER</>
-	return ( <>
-		<Header section='letters' title={title} />
-		<div className="etc">
+const Letter = () =>
+<>
+	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'Eider' ] } />
+	<div className="etc">
 		<LetterHeader title="WHERE IS EIDER MAN?" />
 		<samp>
 			&gt; Tue, 23 Mar 1993<br />
@@ -30,7 +28,6 @@ const Letter = () =>  {
 		</blockquote>
 	</div>
 	<Footer />
-</>)
-}
+</>
 
 export default Letter;

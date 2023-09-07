@@ -14,9 +14,8 @@ import {
 } from '@/lib/defines';
 
 const Letter = () =>  {
-	const title = <><Link href='/letters/19930830'>30Aug93</Link> | The Albums</>
 	return ( <>
-		<Header section='letters' title={title} />
+		<Header section='letters' title={[ '30Aug93;;/letters/19930830', 'The Albums' ]} />
 		<div className="etc">
 			<LetterHeader title="THE CHURCH OF LOVE IS A BROAD CHURCH:" subhead="Varying impressions on different JBC discs" />
 			<div className="annotation">

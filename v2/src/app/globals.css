@@ -780,3 +780,33 @@ p::first-letter {
 samp {
 	font-size: 0.75em;
 }
+
+
+
+
+
+
+.breadcrumb {
+    padding: 0 .3rem;
+}
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .15rem;
+    content: "→";
+}
+
+.breadcrumb li:last-child {
+	font-style: italic;
+background: lightyellow;
+	color: #777;
+}
+

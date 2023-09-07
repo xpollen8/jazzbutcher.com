@@ -27,7 +27,7 @@ export async function generateMetadata(
 }
 
 type BreadCrumb = {
-	title: string
+	title: string | []
 	href?: string
 	parent?: string
 }
@@ -99,18 +99,32 @@ const makeBreadcrumb = (name: string, aux?: any) => {
 	return nav;
 }
 
+const parseTitle = (title: string | string[], key0: number) => {
+	if (typeof title === 'string') return <li key={key0}><span aria-current="page">{title}</span></li>;
+	if (title.constructor === Array && title[0]?.constructor === String) {
+		return title?.map((t: string, key: number) => {
+			const [ text, href ] = t.split(';;');
+			if (href) return <li key={key0+key}><Link href={href}>{text}</Link></li>;
+			return <li key={key0+key}><span aria-current="page">{text}</span></li>;
+		});
+	}
+	return <li key={key0}><span aria-current="page">{title}</span></li>;
+}
+
 const Section = (props: { section?: string, title?: any, children?: React.ReactNode }): React.ReactNode  => {
 	const { section, title, children } = props;
 
 	if (!section) return;
 	const nav = makeBreadcrumb(section, title) ?? [];
-	return (<>
+	return (<nav aria-label="Breadcrumb" className="breadcrumb">
+		<ul>
 		{nav.map((obj: any, key: number) => {
-			if (obj?.href) return <span key={key}><Link href={obj.href}>{obj.title}</Link><span className="navsep"/></span>
-			return (<span key={key}>{obj.title}</span>)
+			if (obj?.href) return <li key={key}><Link href={obj.href}>{obj.title}</Link></li>
+			return parseTitle(obj.title, key);
 		})}
+		</ul>
 		{children}
-	</>)
+	</nav>)
 }
 
 type GigResults = {
@@ -255,23 +269,24 @@ const ListItem = React.forwardRef(({ className, children, title, ...props }, for
 ));
 */
 
-const MakeHeader = (props: Props_MakeHeader): React.ReactNode  => {
-
-	return (
-		<>
-		<div className="homeContainer">
-			<div className="homeHeader">
-				{/*<Nav />*/}
-				<Nobr>
-					<Section {...props} />
-					{props?.extraNav}
-				</Nobr>
-			</div>
-			{props?.children}
-		</div>
-		{(props?.project) && <div className={`gig_${props.project}`} ></div>}
-		</>
-	)
+/*
+TODO - convert from |section|title| to |section{}|array[{}]
+where {
+	text,
+	options: [{}]
 }
+ */
+const MakeHeader = (props: Props_MakeHeader): React.ReactNode  =>
+<>
+	<div className="homeContainer">
+		<div className="homeHeader">
+			{/*<Nav />*/}
+			<Section {...props} />
+			{props?.extraNav}
+		</div>
+		{props?.children}
+	</div>
+	{(props?.project) && <div className={`gig_${props.project}`} ></div>}
+</>
 
 export default MakeHeader;

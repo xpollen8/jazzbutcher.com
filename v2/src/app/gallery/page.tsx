@@ -3,8 +3,10 @@ import Footer from '@/components/Footer';
 
 const Missing = () => 
 <>
-	<Header section='pat' title="Fishy Mansions" />
-	<h1>This section is not yet ported from old JBC site</h1>
+	<Header section="gallery" />
+	<div className="etc">
+		<h1>This section is not yet ported from old JBC site</h1>
+	</div>
 	<Footer />
 </>
 

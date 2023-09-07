@@ -5,7 +5,7 @@ import Tag from '@/components/Tag';
 
 const Eulogy = () =>
 <>
-	<Header section='jbc' title="Eulogy" />
+	<Header section='memoriam' title="Eulogy" />
 	<Tag>
 		Eulogy
 	</Tag>

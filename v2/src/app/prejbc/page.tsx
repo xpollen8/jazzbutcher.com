@@ -3,15 +3,15 @@ import Footer from '@/components/Footer';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const projects = [
-	{ uri: '/projects/black_eg', text: 'The Black Eg' },
-	{ uri: '/projects/drones_club', text: 'Drones Club' },
-	{ uri: '/projects/sumosonic', text: 'Sumosonic' },
-	{ uri: '/projects/wilson', text: 'Wilson' },
+	{ uri: '/prejbc/institution', text: 'The Institution' },
+	{ uri: '/prejbc/nightshift', text: 'Nightshift' },
+	{ uri: '/prejbc/sonc_tonix', text: 'Sonic Tonix' },
+	{ uri: '/prejbc/the_tonix', text: 'The Tonix' },
 ];
 
 const Missing = () => 
 <>
-	<Header section="project" />
+	<Header section="prejbc" />
 		{projects.map(MakeSimpleURI)}
 	<Footer />
 </>

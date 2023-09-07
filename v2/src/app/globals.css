@@ -781,32 +781,35 @@ samp {
 	font-size: 0.75em;
 }
 
-
-
-
-
-
 .breadcrumb {
-    padding: 0 .3rem;
 }
 
 .breadcrumb ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
     
-.breadcrumb li:not(:last-child)::after {
-    display: inline-block;
-    margin: 0 .15rem;
-    content: "→";
+.breadcrumb li:not(:first-child)::before {
+	display: inline-block;
+	margin: 0 .10rem;
+	color: #666;
+	font-weight: bold;
+	content: "→";
+}
+.breadcrumb li:hover a{
+	color: #333;
+	background: lightyellow;
 }
 
-.breadcrumb li:last-child {
-	font-style: italic;
-background: lightyellow;
+.breadcrumb li:last-child span{
+	background: lightyellow;
+	padding: 3px;
 	color: #777;
 }
 
+.breadcrumb a{
+	padding: 3px;
+}

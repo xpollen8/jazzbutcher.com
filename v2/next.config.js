@@ -43,6 +43,11 @@ const nextConfig = {
 					permanent: false,
 				},
 				{
+					source: '/articles/:path*',
+					destination: '/mailinglist/:path*',
+					permanent: false,
+				},
+				{
 					source: '/albums/:path*',
 					destination: '/releases/:path*',
 					permanent: false,

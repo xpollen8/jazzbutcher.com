@@ -14,11 +14,11 @@ const Missing = () =>
 				{[...Array(15)].map((x: any, idx: number) => { 
 					const year = 1989 + idx;
 					if (year === 2000) return <>-- {year} ARCHIVES LOST --</>;
-					return <MakeSimpleURI key={idx} uri={`/mailinglist/${year}`} text={year} />
+					return <MakeSimpleURI key={idx} uri={`/mailinglist/${year}`} text={year + ''} />
 				})}
 			</div>
 			<div style={{ maxWidth: '50%' }}>
-				<strike>
+				<div style={{ textDecoration: 'line-through' }}>
 				The Jazz Butcher Conspiracy mailing list has been in existence
 				since October 1989 and has a few hundred subscribers.  Several
 				subscribers are in contact with the band, and report here.
@@ -26,7 +26,7 @@ const Missing = () =>
 				This is the place for up-to-date information.
 				For your convenience, the archives are here in their entirety,
 				although they can lag several months depending on how busy I am :-|
-				</strike>
+				</div>
 			</div>
 		</div>
 	</div>

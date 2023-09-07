@@ -3,8 +3,8 @@ import Footer from '@/components/Footer';
 
 const Missing = () => 
 <>
-	<Header />
-	<h1>This section is not yet implemented</h1>
+	<Header section="press" title="<<ARTICLE>>" />
+		<h1>This section is not yet implemented</h1>
 	<Footer />
 </>
 

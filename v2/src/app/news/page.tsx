@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 const Missing = () => 
 <>
 	<Header />
-	<h1>This section is not yet implemented</h1>
+	<h1>This section is not yet ported from old JBC site</h1>
 	<Footer />
 </>
 

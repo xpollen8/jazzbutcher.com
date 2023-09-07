@@ -29,9 +29,8 @@ export async function generateMetadata(
 type BreadCrumb = {
 	title: string | string[]
 	href?: string
-	parent: string | string[]
-	summary: string
-	parent?: string
+	parent?: string | string[]
+	summary?: string
 }
 
 const headerText : { [key: string]: BreadCrumb } = {
@@ -98,7 +97,11 @@ const makeBreadcrumb = (name: string, aux?: any) => {
 		if (!obj) return;
 		let parent;
 		if (obj?.parent) {
-			parent = recurseNavObjects({ name: obj.parent });
+			if (typeof obj.parent === 'string') {
+				parent = recurseNavObjects({ name: obj.parent });
+			} else {
+				parent = obj.parent.map((name: string) => recurseNavObjects({ name }));
+			}
 		}
 		let href = obj?.href || `/${lowerName}`;
 		if (root) {
@@ -140,7 +143,7 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 	return (<nav aria-label="Breadcrumb" className="breadcrumb">
 		<ul>
 		{nav.map((obj: any, key: number) => {
-			const children = Object.keys(headerText).filter((h: BreadCrumb) => {
+			const children = Object.keys(headerText).filter((h: string) => {
 				return headerText[h]?.parent?.includes(section?.toLowerCase());
 			}).map((h: string) => ({ link: h, ...headerText[h] }));
 		//console.log("MEN", { section, children });

@@ -34,7 +34,7 @@ export default function RootLayout({
 					<Link className="horn" href="/">
 						<Image alt="The Jazz Butcher" width={114} height={80} src="https://jazzbutcher.com/images/knife_logo_80.png" />
 					</Link>
-					<NavItem uri="https://patfish.com" text="Pat" />
+					<NavItem uri="/pat" text="Pat" />
 					<NavItem uri={jbc_memoriam} text="In Memoriam" />
 					<NavItem uri={jbc_fishy_mansions} text="Fishy Mansions" />
 					<NavItem uri={jbc_fiascos} text="The Fiascos" />

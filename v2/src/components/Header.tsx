@@ -48,6 +48,7 @@ const headerText : { [key: string]: BreadCrumb } = {
 	prehistory:  { parent: 'jbc', title: 'Pre-JBC' },
 	project:  { parent: 'jbc', title: 'Projects' },
 	mailinglist:  { parent: 'etc', title: 'Mailing List' },
+	abcs_of_drugs:  { parent: 'etc', title: "Eider's ABC's of Drugs" },
 	mad:  { parent: 'etc', title: 'How MAD Are You?' },
 	links:  { parent: 'etc', title: 'Pat&quot;s Recommended Links' },
 	letters:  { parent: 'etc', title: 'Letters From Pat' },

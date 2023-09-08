@@ -12,7 +12,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import { Credit, ParsedCaption, removeHTML, RenderHTML } from '@/components/GenericWeb';
-import useGig from '@/components/useGig';
+import useGig from '@/lib/useGig';
 
 const Player = (str?: string) => {
   if (!str?.length) return;

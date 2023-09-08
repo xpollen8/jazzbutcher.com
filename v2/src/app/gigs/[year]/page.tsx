@@ -9,7 +9,7 @@ import SearchDialog from '@/components/SearchDialog';
 import SearchResults from '@/components/SearchResults';
 import ResultNavigator from '@/components/ResultNavigator';
 import { bannerGigs } from '@/lib/macros';
-import useGigs from '@/components/useGigs';
+import useGigs from '@/lib/useGigs';
 
 const Gigs = () => {
 	const params = useParams();
@@ -19,7 +19,7 @@ const Gigs = () => {
 	const type = searchParams.get('f') as string;
 	const query = searchParams.get('q') as string;
 	const queryString = searchParams.toString();
-	console.log("CALLING", { year, type, query });
+	//console.log("CALLING", { year, type, query });
 	const { data, isLoading, error } = useGigs({ year, type, query });
 
 	const prevYear = (iyear > 1982) ? { datetime: `${iyear - 1}-00-00` } : undefined;

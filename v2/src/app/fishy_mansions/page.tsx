@@ -68,7 +68,7 @@ const FishyMansions = () =>
 				<p />
 				Enjoy
 			</blockquote>
-			<AwesomeSlider organicArrows={false} style={{  height: '680px', marginBottom: '100px', border: '1px solid black' }}>
+			<AwesomeSlider organicArrows={false} style={{  height: '680px', marginBottom: '70px', border: '1px solid black' }}>
 				{sessions.map((session: any, key: number) => (
 					<div key={key} className="flex flex-wrap justify-center bg-slate-200 py-5" style={{ background: '#e2e8f0', display: 'inline-block', overflow: 'scroll' }}>
 						<video

@@ -92,7 +92,7 @@ export const parseDate = (str?: string) => {
 	}
 }
 
-export const prettyDate = (dt: str) => moment(dt).format("ddd, MMM Do YYYY");
+export const prettyDate = (dt: string) => moment(dt).format("ddd, MMM Do YYYY");
 
 const dateDiff = (dt?: string) => {
 	const [orig, iy,im,id,ihh,imm,iss]: any = parseDate(dt) || [];

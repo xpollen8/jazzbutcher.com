@@ -104,7 +104,7 @@
 
 #define	gigs.html
 #live	if (getval(page) = gigs.html)
-	${headerLetters13Sep94(title=Re-Gigs)}
+	${headerLetters13Sep94(title=Gigs)}
 
 	${green} now fully re-assimilated into live line-up, alongside
 	${dooj}, ${gab}, ${hend} and myself.  Since when we have played:
@@ -378,7 +378,7 @@
 
 #define	misc.html
 #live	if (getval(page) = misc.html)
-	${headerLetters13Sep94(title=Odd N Ends)}
+	${headerLetters13Sep94(title=Odds N Ends)}
 
 	<b>GROLSCH</b>
 	<p>
@@ -517,7 +517,7 @@
 	16th October.  Release is planned for the end of January.
 	We should be moving into Europe around March '95, and
 	then go on more or less directly to North America.  (Pretty
-	much a copy of the schedule for "${fishco})  The live
+	much a copy of the schedule for ${fishco})  The live
 	band will do the "core" of the LP, with help from the
 	Provisional Members.  Musical Direction will be down
 	to me; mixing will be done by ${dj}.

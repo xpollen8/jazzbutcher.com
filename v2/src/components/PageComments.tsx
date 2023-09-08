@@ -4,10 +4,10 @@ import { Suspense } from 'react';
 
 import { usePathname } from 'next/navigation';
 
-import usePageComments from '@/lib/usePageComments';
+import usePageComments, { CommentType } from '@/lib/usePageComments';
 import Tag from '@/components/Tag';
 
-const Comment = ({ subject, dtcreated, who, whence, comments }: Comments, key: number) => (
+const Comment = ({ subject, dtcreated, who, whence, comments }: CommentType, key: number) => (
 	<div key={key}>
 		<label>Subject</label>{subject} info={<> {whence} - {who} </>}
 		<div className="annotation">{comments}</div>
@@ -15,7 +15,7 @@ const Comment = ({ subject, dtcreated, who, whence, comments }: Comments, key: n
 	</div>
 )
 
-const Comments = ({ comments = [] }: { comments: Comments[] }) => <>{comments?.map(Comment)}</>
+const Comments = ({ comments = [] }: { comments: CommentType[] }) => <>{comments?.map(Comment)}</>
 
 const PageComments = () => {
 	const pathname = usePathname();

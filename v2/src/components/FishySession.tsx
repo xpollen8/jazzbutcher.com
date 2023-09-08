@@ -9,7 +9,7 @@ const FishySession = (session: any, key: number) => {
 	return (<>
 		<LetterHeader title={`Fishy Mansions #${key + 1}`} subhead={session.date} />
 			<ol>
-			{songs?.filter((song: any) => !song.song.includes('Entire')).map((song: any, key) => (
+			{songs?.filter((song: any) => !song.song.includes('Entire')).map((song: any, key: number) => (
 				<li key={key}>
 					<LinkAudio title={song?.song} author={song?.author} comment={song?.comment} />
 				</li>

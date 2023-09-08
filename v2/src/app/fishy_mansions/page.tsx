@@ -64,8 +64,8 @@ const FishyMansions = () =>
 			<blockquote>
 				During the COVID era, Pat streamed 9 from-home performances.
 				<p />
-				We were able to liberate these shows from <strike>Face***k</strike> Meta.
-				<br/><br/>
+				We were able to liberate these shows from, er, Meta.
+				<p />
 				Enjoy
 			</blockquote>
 			<AwesomeSlider style={{  height: '780px', marginBottom: '100px', border: '1px solid black' }}>

@@ -46,7 +46,7 @@ const pathname2feedbackURI = (pathname: string) => {
 	return ret;
 }
 
-type Comment = {
+export type CommentType = {
 	subject: string
 	dtcreated?: string
 	who: string
@@ -58,7 +58,7 @@ const cleanContact = (str: string) => str && str.replace(/\[remove\].*/, '@...')
 
 const cleanValue = (v: string) => v.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<br/>');
 
-const filterComments = (res: Comment[]) => res.map((c: Comment) => ({
+const filterComments = (res: CommentType[]) => res.map((c: CommentType) => ({
 	...c,
 	who: cleanContact(c?.who),
 	comments: cleanValue(c?.comments),

@@ -1,14 +1,5 @@
-import Feedback from './Feedback';
-import Tag from './Tag';
- 
-const Footer = (): React.ReactNode  =>
-<details>
-	<summary className="grid">
-		<Tag className='headingItemClickable'>
-			Comments for this page..
-		</Tag>
-	</summary>
-	<Feedback />
-</details>
+import PageComments from './PageComments';
+
+const Footer = (): React.ReactNode  => <PageComments />
 
 export default Footer;

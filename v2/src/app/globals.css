@@ -17,6 +17,10 @@
 }
 
 
+/// below-nav content
+.layout {
+}
+
 /// HOME
 .container {
 	 height: auto;
@@ -301,8 +305,7 @@ textplus1 {
 	border: 1px solid #696;
 }
 .homeContainer {
-	margin: 4px 4px;
-	padding: 10px;
+	margin: 0px 0px;
 	margin-bottom: 5px;
 	background-color: #AFF1E4;
 	font-size: 1.1em;
@@ -310,19 +313,20 @@ textplus1 {
 }
 .homeHeader {
 	display: flex;
+	padding: 6px;
 	align-items: center;
 }
-.headingItem, .headingItemClickable {
+.tag, .tagClickable {
 	color: #222;
-	border-radius: 4px;
 	background-color: #BCF1AF;
-	margin: 3px;
-	padding-top: 5px;
+	margin-top: 3px;
+	padding: 3px;
 	padding-left: 10px;
+	border: 1px solid #999;
 	font-weight: bold;
 	font-size: 1.2em;
 }
-.headingItemClickable:hover {
+.tagClickable:hover {
 	outline: 2px solid;
 }
 .homeFeature {
@@ -417,7 +421,7 @@ body {
 	background-color: #f6f6f6;
 }
 .nav a {
-	margin:3px;
+	margin: 2px;
 }
 .horn {
 }
@@ -772,6 +776,16 @@ p::first-letter {
 	background-color: rgba(0,0,0,.02);
 	outline: dashed;
 	outline-width: 1px;
+	margin: 2px;
+	margin-top: 7px;
+	padding: 10px;
+}
+
+.layout {
+	filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.02)) drop-shadow(0 5px 3px rgb(0 0 0 / 0.02));
+	background-color: rgba(0,0,0,.02);
+	outline: solid #aaa;
+	outline-width: 1px;
 	margin: 6px;
 	margin-top: 7px;
 	padding: 10px;
@@ -792,6 +806,8 @@ samp {
 	padding: 0px;
 }
     
+.breadcrumb li {
+}
 .breadcrumb li:not(:first-child)::before {
 	display: inline-block;
 	margin: 0 .10rem;

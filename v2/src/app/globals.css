@@ -829,3 +829,21 @@ samp {
 .breadcrumb a{
 	padding: 3px;
 }
+
+.comment {
+	outline: 1px solid #999;
+	background: white;
+	margin: 5px;
+	padding: 5px;
+}
+.comment #subject {
+	font-weight: bold;
+}
+.comment #date {
+	font-weight: bold;
+}
+.comment #who {
+}
+.comment #comments {
+	font-style: italics;
+}

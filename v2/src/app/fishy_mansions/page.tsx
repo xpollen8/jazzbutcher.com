@@ -62,7 +62,7 @@ const FishyMansions = () =>
 		<LetterHeader title="The Fishy Mansions Sessions" subhead="2020-2021" />
 		<center>
 			<blockquote>
-				During the COVID era, Pat streamed 9 from-home performances.
+				During the COVID era, Pat streamed 9 performances from his home in Northampton..
 				<p />
 				We were able to liberate these shows from, er, Meta.
 				<p />

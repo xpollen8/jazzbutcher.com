@@ -30,6 +30,14 @@ export type HashedType = {
 	[key: string]: any;
 }
 
+export type CommentType = {
+	subject: string
+	dtcreated?: string
+	who: string
+	whence: string
+	comments: string
+}
+
 const linkExternal = (href: string, text?: string | React.ReactNode): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
 const linkInternal = (href: string, text?: string): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
@@ -84,6 +92,8 @@ export const parseDate = (str?: string) => {
 	}
 }
 
+export const prettyDate = (dt: str) => moment(dt).format("ddd, MMM Do YYYY");
+
 const dateDiff = (dt?: string) => {
 	const [orig, iy,im,id,ihh,imm,iss]: any = parseDate(dt) || [];
 	if (iy) {
@@ -93,11 +103,11 @@ const dateDiff = (dt?: string) => {
 		}
 		const display = (orig?.length < 10) ? orig : padDate([iy,im,id,ihh,imm,iss]);
 		const compare = padDate([iy,im || 1,id || 1,ihh,imm,iss]);
-		const prettyDate = moment(display).format("ddd, MMM Do YYYY");
+		//const prettyDate = moment(display).format("ddd, MMM Do YYYY");
 		const prettyAgo = moment(compare).startOf('hour').fromNow();
 		return (<>
 			{' '}
-			<span className="date">{prettyDate}</span> <span className="date">( {prettyAgo} )</span>
+			<span className="date">{prettyDate(display)}</span> <span className="date">( {prettyAgo} )</span>
 		</>)
 	}
 }
@@ -538,5 +548,14 @@ const releaseByLookup = async (lookup: string) => {
 	const releaseByHREF = releases?.albums?.find((r: any) => r?.href?.includes(lookup));
 	if (releaseByHREF) return releaseByHREF;
 }
+
+export const censorEmail = (str: string) => {
+	const deHTDB = str?.replace(/\[remove\].*/, '@');
+	const len = deHTDB.length;
+	const idx = deHTDB.indexOf('@') + 1;
+	return deHTDB[0] + deHTDB.substr(1, idx - 1) + Array(len - idx - 1).join('.') + deHTDB[len - 1];
+}
+
+export const deHTDBifyText = (v: string) => v.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<br/>');
 
 export { localDate, datesEqual, bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

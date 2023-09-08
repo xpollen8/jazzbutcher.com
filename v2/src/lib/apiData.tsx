@@ -1,6 +1,6 @@
 "use server"
 
-import { localDate, HashedType, RecordType } from './macros';
+import { localDate, censorEmail, deHTDBifyText, HashedType, CommentType, RecordType } from './macros';
 
 const cache: HashedType = {};
 
@@ -49,11 +49,17 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 	return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
 }
 
+const filterComments = (res: CommentType[]) => res?.map((c: CommentType) => ({
+	...c,
+	subject: deHTDBifyText(c?.subject),
+	who: censorEmail(c?.who),
+	comments: deHTDBifyText(c?.comments),
+}));
+
 const apiData = async (path: string, args?: string) => {
 	//console.log("apiData", { path, args });
 
 	switch (path) {
-		case 'feedback':
 		case 'feedbacks':
 		case 'feedback_by_page':
 		case 'gig_by_datetime':
@@ -68,6 +74,11 @@ const apiData = async (path: string, args?: string) => {
 		case 'lyric_by_href':
 		case 'songs_by_datetime':
 			return await apiDataFromDataServer(path, args);
+		case 'feedback':
+			// clean up server-side
+			const data = await apiDataFromDataServer(path, args);
+			data.results = filterComments(data.results);
+			return data;
 		case 'gigs_by_musician': {
 			const performances =  await apiDataFromDataServer(path, args);
 			const gigs = await apiDataFromDataServer('gigs');

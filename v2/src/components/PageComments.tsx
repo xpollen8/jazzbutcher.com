@@ -4,13 +4,16 @@ import { Suspense } from 'react';
 
 import { usePathname } from 'next/navigation';
 
-import usePageComments, { CommentType } from '@/lib/usePageComments';
+import usePageComments from '@/lib/usePageComments';
+import { CommentType, dateDiff } from '@/lib/macros';
 import Tag from '@/components/Tag';
 
 const Comment = ({ subject, dtcreated, who, whence, comments }: CommentType, key: number) => (
-	<div key={key}>
-		<label>Subject</label>{subject} info={<> {whence} - {who} </>}
-		<div className="annotation" dangerouslySetInnerHTML={{__html: comments }} />
+	<div key={key} className="comment">
+		<div id="subject">{subject}</div>
+		<div id="who">{<> {whence} - {who} </>}</div>
+		<div id="date">{dateDiff(dtcreated)}</div>
+		<div id="comments" className="annotation" dangerouslySetInnerHTML={{__html: comments }} />
 	</div>
 )
 

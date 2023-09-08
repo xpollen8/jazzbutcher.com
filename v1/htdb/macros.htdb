@@ -1316,6 +1316,7 @@ font.load().then(function () {
 #
 #	artwork
 #
+#define	dave_coverly	${linkExternal(https://www.speedbump.com, Dave Coverly)}
 #define	lucien		${linkSearch(query=Lucien Borderline)}
 #define	bd			${linkSearch(query=Ben Davis)}
 #define	novak		${linkSearch(query=Alex Novak)}

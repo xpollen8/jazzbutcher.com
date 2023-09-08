@@ -62,9 +62,7 @@ export default function RootLayout({
 					<Link href="#" className="menuButton">
 						<Image alt="The Jazz Butcher" width={114} height={80} src="https://jazzbutcher.com/images/knife_logo_80.png" />
 					</Link>
-					<div style={{ maxWidth: '100%', textAlign: 'left' }}>
 						{children}
-					</div>
 				</div>
 			</body>
     </html>

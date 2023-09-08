@@ -1,0 +1,4793 @@
+# 1957-12-20
+# 2021-10-05
+# 23,300 days
+
+#define	isNew(dt)
+#live	if (parseUnix(${dt}) > ${eval(${parseUnix(${_db_timestamp})} - (60 * 60 * 24 * 30))})
+	<img src="/images/new.jpg">
+#live	endif
+
+#define	deparse(datetime, category, type, list)
+#<pre>
+#${stripTags(${list})}
+#</pre>
+#live	if (getval(cgi->http_x_real_ip) = X192.184.195.208)
+#live	if (makeArray(deparse_list, \[comma], ${stripTags(${list})}))
+#**${deparse_list->numResults}**
+#live		loop(l, 1, ${deparse_list->numResults})
+#live			if (getval(deparse_list[${l}]) == "person")
+#live				if (define(use_type, person))
+#live				endif
+#live			else
+#live				if (define(use_type, ${type}))
+#live				endif
+#live			endif
+#live			if (getval(deparse_list[${l}]) == [[)
+#live				if (define(thing, ${deparse_list[${l}]}))
+#live				endif
+#live			else
+#live				if (define(thing, [[${use_type}:${space2underscore(${stripWhitespace(${stripTags(${deparse_list[${l}]})})})}]]))
+#live				endif
+#live			endif
+#<br/>
+#**${thing}**
+#live			if (sql(z:select performance_id from performance where datetime="${datetime}" and category="${category}" and performer="${thing}"))
+#live				if (getnum(z->numResults) = 0)
+#live					if (sql(y:insert into performance set datetime="${datetime}", category="${category}", performer="${thing}"))
+#live					endif
+#live				else
+#live				endif
+#live			endif
+#live		endloop
+#live	endif
+#live	endif
+
+#define	embedVideo(url, anno=)
+#live	if (substr(0, 6, ${url}) = /video)
+		<video controls preload="none" style="max-width: 100%;" poster="${url}_thumbnail.jpg" >
+			<source src="${url}.mp4" type="video/mp4">
+		</video>
+#live	else if (getval(url) == assets.jazzbutcher.com)
+		<video controls preload="none" style="max-width: 100%;" poster="${url}_thumbnail.jpg">
+			<source src="${url}.mp4" type="video/mp4">
+		</video>
+#live	else if (define(urlClean, ${replace(${url}, https://vimeo.com/, https://assets.jazzbutcher.com/video/)}))
+		<div class="js-video [vimeo, widescreen]">
+			<iframe width="560" height="315" src="${urlClean}?showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+#live	endif
+#live	if ((getval(anno)) && (getval(${anno})))
+		<div class="annotation"> ${${anno}} </div>
+#live	endif
+
+#define	JBC_CSS
+<style type="text/css">
+	\@font-face {
+	    font-family: Titillium-Regular;
+		src: url("/fonts/Titillium-Regular.otf") format("opentype");
+	}
+	body {
+		margin-top: 5px;
+		font-family: sans-serif;
+		font-size: 1.0em;
+	}
+	.hiddendate {
+		display: none;
+	}
+	.audioPlayer {
+	}
+	.audio_player {
+		padding-left: 10px;
+		width: 100%;
+	}
+	.audio_title {
+	}
+	.source, .credit, .reviewer {
+		margin-top: 1em;
+		color: #6666;
+		font-size: .9em;
+	}
+	.song {
+	}
+	.g_details, .g_bootleg, .g_with, .g_who, .g_soundman {
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+	.iview_a, .lyric_annotation, .annotation {
+		border-radius: 10px;
+#		margin-left: 15px;
+#		margin-right: 10px;
+#		margin-bottom: 5px;
+		margin: 10px;
+		color: #555;
+		letter-spacing: 0.01em;
+		word-spacing: 0.12em;
+		padding: 10px;
+		padding-left: 40px;
+		background-color: rgba(248,248,248,0.8);
+		background-position: left top;
+		background-repeat: no-repeat;
+		#background-image: url(https://assets.dangerousminds.net/images/site_elements/quote.png);
+		background-image: url(/assets/quote.png);
+	}
+	.iview_a:before {
+	}
+	.iview_q:before {
+		content: "";
+	}
+	.iview_q {
+		font-weight: bold;
+		font-size: 1.05em;
+		margin: 10px;
+#		margin-bottom: 10px;
+#		margin-left: 15px;
+#		margin-right: 10px;
+	}
+	.iview_title {
+		font-size: 1.5em;
+		background-color: #AFF1C3;
+		padding: 5px;
+	}
+	.iview_title a {
+		white-space: nowrap;
+	}
+	.iview_intro, .iview_outro {
+#		text-indent: 20px;
+		border: 2px solid #aaa;
+		margin-bottom: 20px;
+		background-color: rgba(243,243,243,0.5);
+		padding: 10px;
+	}
+	/* video handling */
+	.js-video {
+	  height: 0;
+	  padding-top: 25px;
+	  padding-bottom: 67.5%;
+	  margin-bottom: 5px;
+	  position: relative;
+	  overflow: hidden;
+	}
+	.js-video.widescreen {
+	  padding-bottom: 56.34%;
+	}
+	.js-video.vimeo {
+	  padding-top: 0;
+	}
+	.js-video embed, .js-video iframe, .js-video object, .js-video video {
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	}
+	.nav_heading {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-weight: bold;
+		font-size: 1em;
+	}
+	.navsep:before {
+		color: black;
+		content: "|";
+		padding: 5px;
+	}
+	#gigTS {
+		display: none;
+	}
+	.fonts-loaded body {
+		font-family: Titillium-Regular, sans-serif;
+	}
+	img {
+		max-width: 100%;
+	}
+	textplus1 {
+		font-size: 1.5em;
+	}
+	.review {
+		padding: 5px;
+		margin-bottom: 20px;
+		background-color: rgba(243,243,243,0.5);
+	}
+	.gig_soon:before {
+	}
+	.gig_soon {
+		background-color: #66ff66;
+		padding: 5px;
+	}
+	.gig_future {
+		background-color: #aaddaa;
+		padding: 5px;
+	}
+	.gig_past {
+		background-color: #ddddee;
+		padding: 5px;
+	}
+	.gig_sumo a {
+		color: #fff;
+	}
+	.gig_sumo:before {
+		content: url(https://jazzbutcher.com/images/sumo/sumo_logo_50.jpg);
+#		content: url(https://jazzbutcher.com/images/sumosonic_logo_50.png);
+	}
+	.gig_sumo {
+		background-color: #000000;
+#		background-color: #000084;
+		padding: 5px;
+		margin-bottom: 5px;
+	}
+	.gig_eg:before {
+		content: url(https://jazzbutcher.com/images/blackeg_logo_50.png);
+	}
+	.gig_eg {
+		background-color: #eeeeee;
+		padding: 5px;
+		margin-bottom: 5px;
+	}
+	.gig_wilson:before {
+		content: url(https://jazzbutcher.com/images/wilson_logo_50.png);
+	}
+	.gig_wilson {
+		background-color: #ee0000;
+		padding: 5px;
+		margin-bottom: 5px;
+	}
+	.gig_pane {
+		border: 1px solid #aaa;
+		border-radius: 3px;
+		margin-bottom: 5px;
+	}
+	.gig_nopat:before {
+		content: "Masters Of Budvar (Pat promoted this event; didn't perform)";
+	}
+	.gig_nopat {
+		background-color: #999;
+		padding: 5px;
+		color: #fff;
+	}
+	.gig_listing_poster {
+		text-align: center;
+		max-width: 100%;
+	}
+	.gig_listing_date {
+		max-width: 100%;
+		font-size: .85em;
+		color: #333;
+	}
+	.gig_listing_details {
+		background-color: #cceeff;
+		padding: 5px;
+	}
+	.gig_listing_extras {
+		text-align: right;
+	}
+	.smalltext, .press_tags, .song_author {
+		font-size: 80%;
+		color: #666;
+	}
+	.press_tags {
+		margin-bottom: 10px;
+	}
+	.smallertext {
+		color: #666;
+		font-size: 60%;
+	}
+	.menuDiv {
+		padding: 3px;
+		margin: 3px;
+		border: 1px solid green;
+	}
+	.homeContainer {
+		padding: 10px;
+		margin-bottom: 5px;
+		background-color: #AFF1E4;
+		font-size: 1.1em;
+		border: 1px solid #666;
+	}
+	.homeHeader {
+		display: flex;
+		align-items: center;
+	}
+	.headingItem {
+		color: #222;
+		border-radius: 4px;
+		background-color: #BCF1AF;
+		padding: 3px;
+		padding-top: 5px;
+		padding-left: 10px;
+		max-width: 100%;
+#		margin-top: 5px;
+		margin-bottom: 5px;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	.homeFeature {
+		color: #222;
+		border-radius: 4px;
+		background-color: rgba(175,241,228,0.5);
+		padding: 5px;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.listItem, .album_press {
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		margin-bottom: 10px;
+		color: #444;
+		padding: 5px;
+		background-color: rgba(250,250,250,0.6);
+	}
+	.listItem b {
+		color: #000;
+		background-color: #AFF1C3;
+		padding: 2px;
+	}
+	.album_press li {
+		margin-top: .35em;
+	}
+	.album_press a {
+		font-weight: bold;
+		color: #00c;
+		background-color: #AFF1C3;
+		padding: .15em;
+		margin-top: 2px;
+	}
+	dd {
+	  margin-left: 15px;
+	  margin-right: 10px;
+	}
+	blockquote {
+	  margin: 10px;
+	  margin-left: 15px;
+	  margin-right: 10px;
+	}
+	.li-date {
+		font-weight: bold;
+		color: #000;
+		background-color: #AFF1C3;
+		padding: 3px;
+	}
+	.li-location {
+		color: #666;
+	}
+	.li-blurb {
+		color: #666;
+	}
+	.listenItem {
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		color: #444;
+		background-color: rgba(250,250,250,0.8);
+		padding: 5px;
+		margin-bottom: 3px;
+	}
+	.listenItem b {
+		color: #000;
+		background-color: #AFF1C3;
+		padding: 3px;
+	}
+	a {
+		text-decoration: none;
+	}
+	.leading {
+		line-height: 1.5;
+	}
+	body {
+		background-image: url(${jbc_images}/jbcback2.gif);
+		background-attachment: fixed;
+		letter-spacing: 0.01em;
+#		word-spacing: 0.1em;
+		color: #444;
+	}
+	#nav { 
+	  width: 130px;
+	  height: 100%;
+	  border-left: 1px solid #ccc; 
+	  position: fixed;
+	  top: 0px; 
+      right: 0px;
+	  z-index: 1000; 
+	  padding-left: 1px;
+	  background-color: #f6f6f6;
+	}
+	#nav a {
+		margin:3px;
+	}
+	#horn {
+	}
+
+	#main { 
+	  margin-right: 130px; 
+	  margin-top: 0px;
+	  padding: 0px;  
+	  height: 100%;  
+	}
+	.saveSpace { 
+	  padding-top: 2px;
+	}
+	#menuButton { 
+	  position: fixed;
+	  top: 0px; 
+	  right: 0px; 
+	  display: none; 
+	  margin: 0px;
+	}
+	p {
+		text-align: left;
+		margin-top: 1em;
+		margin-bottom: 0px;
+	}
+	img_main {
+		display: grid;
+		grid-template-columns:
+			repeat(auto-fit, minmax(250px, 1fr));
+	}
+	img_figure {
+		margin: 0;
+	}
+	img_img {
+		display: block;
+		width: 100%;
+		box-shadow: -1px 0px 0px rgba(0,0,0,0.06);
+	}
+#	grid-auto-flow: dense;  <--- COOL
+#	<main role="main">
+#		<figure><img src...></figure>
+#		<figure><img src...></figure>
+#		<figure><img src...></figure>
+#	</main>
+	@supports (display: grid) {
+		// use modern grid layout
+	}
+	@supports (initial-letter: 4) or
+	(-webkit-initial-letter: 4) {
+	p::first-letter {
+		color: rgba(255,190,150,0.9);
+		font-weight: bold;
+		margin-right: 0.5em;
+		-webkit-initial-letter: 4;
+		initial-letter: 4;
+	}
+	}
+
+	\@media all and (max-width: 700px) {
+	  #nav {
+		position: fixed; 
+		width: 130px;
+		border: 1px solid #666; 
+		top: 0px; 
+		left: calc(100% - 135px);
+	  }
+	  #horn {
+#	  	display: none;
+	  }
+	  #main { 
+		margin-right: 0px; 
+	  }
+	  .saveSpace { 
+		display: none; 
+	  }
+	  #menuButton { 
+		display: inline; 
+	  }
+	}
+	/* arrows */
+	.right-arrow {
+		display: inline-block;
+		position: relative;
+		background: orange;
+		padding: 0px;
+	}
+	.right-arrow:after {
+		content: '';
+		display: block;  
+		position: absolute;
+		left: 100%;
+		top: 50%;
+		margin-top: -10px;
+		width: 0;
+		height: 0;
+		border-top: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 10px solid orange;
+	}
+	.left-arrow {
+		margin-left: 5px;
+		display: inline-block;
+		position: relative;
+		background: lightgrey;
+		padding: 0px;
+	}
+	.left-arrow:after {
+		content: '';
+		display: block;  
+		position: absolute;
+		right: 100%;
+		top: 50%;
+		margin-top: -10px;
+		width: 0;
+		height: 0;
+		border-top: 10px solid transparent;
+		border-right: 10px solid lightgrey;
+		border-bottom: 10px solid transparent;
+		border-left: 10px solid transparent;
+	}
+	/* masonry */
+	/* https://medium.com/@_jh3y/how-to-pure-css-masonry-layouts-a8ede07ba31a#.27486l1i1 */
+	.ml1 {
+	  -webkit-box-sizing: border-box;
+			  box-sizing: border-box;
+	  -webkit-column-count: 1;
+		 -moz-column-count: 1;
+			  column-count: 1;
+	  -webkit-column-gap: 0;
+		 -moz-column-gap: 0;
+			  column-gap: 0;
+	  position: relative;
+	}
+	.ml1 * {
+	  -webkit-box-sizing: border-box;
+			  box-sizing: border-box;
+	}
+	.ml2 {
+	  -webkit-box-sizing: border-box;
+			  box-sizing: border-box;
+	  -webkit-column-count: 2;
+		 -moz-column-count: 2;
+			  column-count: 2;
+	  -webkit-column-gap: 0;
+		 -moz-column-gap: 0;
+			  column-gap: 0;
+	  position: relative;
+	}
+	.ml2 * {
+	  -webkit-box-sizing: border-box;
+			  box-sizing: border-box;
+	}
+	.ml3 {
+	  -webkit-box-sizing: border-box;
+			  box-sizing: border-box;
+	  -webkit-column-count: 3;
+		 -moz-column-count: 3;
+			  column-count: 3;
+	  -webkit-column-gap: 0;
+		 -moz-column-gap: 0;
+			  column-gap: 0;
+	  position: relative;
+	}
+	.ml3 * {
+	  -webkit-box-sizing: border-box;
+			  box-sizing: border-box;
+	}
+
+	.ml-panel {
+	  margin: 0;
+	  padding: 5px;
+	}
+
+	.ml-pnl {
+	  -webkit-column-break-inside: avoid;
+	  page-break-inside: avoid;
+	  break-inside: avoid;
+	}
+
+	.ml-pnl__cntnt {
+	  border-radius: 10px;
+	  overflow: hidden;
+	  padding: 10px;
+	  width: 100%;
+	}
+	.ml-pnl__cntnt--img {
+	  max-width: 100%;
+	  padding: 0;
+	}
+
+	.ml-clstr {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  padding: 0;
+	}
+	.ml-clstr--vrt {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -webkit-flex-direction: row;
+		  -ms-flex-direction: row;
+			  flex-direction: row;
+	}
+
+	.ml-clstr--hrz {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -webkit-flex-direction: column;
+		  -ms-flex-direction: column;
+			  flex-direction: column;
+	}
+	.ml-clstr__sgmnt {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-flex: 1;
+	  -webkit-flex: 1 1 auto;
+		  -ms-flex: 1 1 auto;
+			  flex: 1 1 auto;
+	}
+	.ml-clstr__sgmnt--rw {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -webkit-flex-direction: row;
+		  -ms-flex-direction: row;
+			  flex-direction: row;
+	}
+	.ml-clstr__sgmnt--clmn {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -webkit-flex-direction: column;
+		  -ms-flex-direction: column;
+			  flex-direction: column;
+	}
+
+	.ml-clstr__sgmnt--hlf {
+	  -webkit-flex-basis: 50%;
+	  -ms-flex-preferred-size: 50%;
+	  flex-basis: 50%;
+	}
+	.ml-clstr__sgmnt--qrt {
+	  -webkit-flex-basis: 25%;
+	  -ms-flex-preferred-size: 25%;
+	  flex-basis: 25%;
+	}
+	.lyrics {
+		margin-top: -20px;
+		font-style: normal;
+		white-space: pre-line;
+	}
+	.lyrics_tablature {
+		margin-top: -20px;
+		font-family: Courier, monospace;
+		white-space: pre-wrap;
+	}
+	.lyrics_verse {
+		margin-top: -20px;
+	}
+	.lyrics_chorus:before {
+		font-weight: bold;
+		font-style: normal;
+		content: "Chorus";
+	}
+	.lyrics_chorus_define {
+		margin-left: 20px;
+		font-style: italic;
+	}
+	.lyrics_chorus_define:before {
+		margin-left: -20px;
+		font-weight: bold;
+		font-style: normal;
+		content: "Chorus:";
+	}
+	/* album stylings */
+	.release {
+		border: 1px solid #aaa;
+		border-radius: 3px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin-bottom: 5px;
+		padding: 5px;
+		background-color: rgba(175,241,228,0.5);
+	}
+	.album_thumb {
+		max-width: 150px;
+		flex: 1;
+	}
+	.release_title {
+		font-weight: bold;
+	}
+	.release_title a, .album_title a {
+		color: #00d;
+		background-color: #AFF1C3;
+		padding: 3px;
+	}
+	.album_title {
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	.album_details {
+		padding-right: 5px;
+		flex: 2;
+	}
+	.album_type {
+		font-size: .9em;
+		color: #666;
+	}
+	.album_blurb {
+		margin-top: 10px;
+	}
+	.album_purchase {
+		font-size: 1.2em;
+		margin-top: 10px;
+	}
+</style>
+
+#define	linkAudio(title, comment, mp3, url, author, autolink=yes)
+#<pre>
+#</pre>
+##live	if (sql(insert IGNORE into media set type="audio", name="${literalizeQuotes(${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}"))
+##live	endif
+	<span class="audioPlayer">
+		<span class="audio_title">
+		<i>
+#live	if (defined(url))
+			<a href="${url}">${title}</a>
+#live	else
+#live	if ((getval(title) == .html) || (getval(title) == :))
+		${title}
+#live	elseif (getval(autolink) = yes)
+		${songLinkMapped(${title})}
+#live	else
+	${title}
+#live	endif
+#live	endif
+		</i>
+		</span>
+#live	if (defined(author))
+	<span class="smalltext"> (${author}) </span>
+#live	endif
+#live	if (defined(comment))
+	<span class="smalltext"> <i>${comment}</i> </span>
+#live	endif
+#live	if (defined(title))
+		<br/>
+#live	endif
+#live if (defined(mp3))
+		<audio controls="controls" title="${stripTags(${title})}" preload="none" class="audio_player">
+			<source src="${mp3}" type="audio/mpeg" />
+			Your browser does not support the audio element.
+		</audio>
+#live	endif
+	</span>
+
+#define	linkPDF(title, pdf)
+##live	if (sql(insert IGNORE into media set type="pdf", name="${title}", href="${pdf}", author="${author}"))
+##live	endif
+	<a href="${pdf}">${makePDFIcon(title=${literalizeCommas(${title})})}</a> <i>${title}</i>
+
+#define	linkSQL(type, name, href)
+##live	if (sql(insert IGNORE into links set type="${type}", name="${name}", href="${href}"))
+##live	endif
+
+#define	linkSong(title, href, audio, mp3, author, pdf)
+##live	if (sql(insert IGNORE into song set name="${literalizeQuotes(${literalizeCommas(${title})})}", href="${href}", audio="${audio}", mp3="${mp3}", author="${author}"))
+##live	endif
+	<span class='song'>
+#live	if ((defined(mp3)) && (defined(href)))
+		<i><a href="${href}">${title}</a></i>
+#live	else if ((defined(mp3)) && (defined(title)))
+		<i><a href="${href}">${title}</a></i>
+#live	else if ((defined(href)) && (defined(title)))
+	<i><a href="${href}">${title}</a></i>
+#live	else
+	<i>${title}</i>
+#live	endif
+#live	if (defined(author))
+	<span class="song_author">(${author})</span>
+#live	endif
+	</span>
+
+#define	linkSingle(title, href)
+#${linkSQL(single, ${title}, ${href})}
+#live	if (defined(href))
+	<span class="release_title"><b><a href="${href}">${title}</a></b></span>
+#live	else
+	<b>${title}</b>
+#live	endif
+
+#define	linkAlbum(title, href)
+#${linkSQL(album, ${title}, ${href})}
+#live	if (defined(href))
+	<span class="release_title"><b><a href="${href}">${title}</a></b></span>
+#live	else
+	<span class="release_title"><b>${title}</b></span>
+#live	endif
+
+#define	linkPerson(href, name, lookup=no)
+#${linkSQL(person, ${name}, ${href})}
+	<span class="person">
+#live	if (getval(lookup) = yes)
+	${name}
+#live	else
+	<a href="${href}">${name}</a>
+#live	endif
+	</span><!-- person -->
+
+#define	linkGoogleSearch(query, text)
+#	<a href="${jbc_search}?f=performer&q=${encode(${query})}">${ternary((defined(text)), ${text}, ${query})}</a>
+	<a href="https://www.google.com/search?q=%22${encode(${query})}%22" target="new">${ternary((defined(text)), ${text}, ${query})}</a>
+
+#define	linkSearch(query, text, act=no)
+#live	if (getval(act) = yes)
+	<a href="${jbc_search}?f=act&q=${encode(${query})}">${ternary((defined(text)), ${text}, ${query})}</a>
+#live	else
+	<a href="${jbc_search}?f=performer&q=${encode(${query})}">${ternary((defined(text)), ${text}, ${query})}</a>
+#live	endif
+#	<a href="https://www.google.com/search?q=%22${encode(${query})}%22" target="new">${ternary((defined(text)), ${text}, ${query})}</a>
+
+#
+#	paths to the HTDB databases for things found on this site.
+#	values are relative to DOCUMENT_ROOT
+#
+#define	audio			/audio
+#define	images			/images
+#define	jbc_images		/images
+#define	jbc_mad_images	/images/mad
+#define	jbc_mp3			${jbc_audio}/mp3
+#define	jbc_root		
+#define	jbc_video		${jbc_root}/video
+#define	jbc_audio		${jbc_root}/audio
+#define	jbc_mad			${jbc_root}/mad
+#define	jbc_trivia		${jbc_root}/trivia
+#define	jbc_help		${jbc_root}/help
+#define	jbc_etc			${jbc_root}/etc
+#define	jbc_tribute		${jbc_root}/tribute
+#define	jbc_albums		${jbc_root}/albums
+#define	jbc_lyrics		${jbc_root}/lyrics
+#define	jbc_news		${jbc_root}/news
+#define	jbc_posters		${jbc_root}/posters
+#define	jbc_press		${jbc_root}/press
+#define	jbc_people		${jbc_root}/people
+#define	jbc_tomhall		${jbc_root}/tomhall
+#define	max_abc			${jbc_root}/abcs_of_drugs
+#define	articles/1989		articles1989
+#define	articles/1990		articles1990
+#define	articles/1991		articles1991
+#define	articles/1992		articles1992
+#define	articles/1993		articles1993
+#define	articles/1994		articles1994
+#define	articles/1995		articles1995
+#define	articles/1996		articles1996
+#define	articles/1997		articles1997
+#define	articles/1998		articles1998
+#define	articles/1999		articles1999
+#define	articles/2000		articles2000
+#define	articles/2001		articles2001
+#define	articles/2002		articles2002
+#define	articles/2003		articles2003
+#define	articles/2004		articles2004
+#define	jbc_articles		${jbc_root}/articles
+#define	letters/90Feb14		letters90Feb14
+#define	letters/91Feb01		letters91Feb01
+#define	letters/93Aug30		letters93Aug30
+#define	letters/93Oct19		letters93Oct19
+#define	letters/94Apr13		letters94Apr13
+#define	letters/94Jun24		letters94Jun24
+#define	letters/94Sep13		letters94Sep13
+#define	jbc_letters		${jbc_root}/letters
+#define	gigs/1982		gigs1982
+#define	gigs/1983		gigs1983
+#define	gigs/1984		gigs1984
+#define	gigs/1985		gigs1985
+#define	gigs/1986		gigs1986
+#define	gigs/1987		gigs1987
+#define	gigs/1988		gigs1988
+#define	gigs/1989		gigs1989
+#define	gigs/1990		gigs1990
+#define	gigs/1991		gigs1991
+#define	gigs/1992		gigs1992
+#define	gigs/1993		gigs1993
+#define	gigs/1994		gigs1994
+#define	gigs/1995		gigs1995
+#define	gigs/1996		gigs1996
+#define	gigs/1997		gigs1997
+#define	gigs/1998		gigs1998
+#define	gigs/1999		gigs1999
+#define	gigs/2000		gigs2000
+#define	gigs/2001		gigs2001
+#define	gigs/2002		gigs2002
+#define	gigs/2003		gigs2003
+#define	gigs/2004		gigs2004
+#define	gigs/2005		gigs2005
+#define	gigs/2006		gigs2006
+#define	gigs/2007		gigs2007
+#define	gigs/2008		gigs2008
+#define	gigs/2009		gigs2009
+#define	gigs/2010		gigs2010
+#define	gigs/2011		gigs2011
+#define	gigs/2012		gigs2012
+#define	gigs/2013		gigs2013
+#define	gigs/2014		gigs2014
+#define	gigs/2015		gigs2015
+#define	gigs/2016		gigs2016
+#define	gigs/2017		gigs2017
+#define	gigs/2018		gigs2018
+#define	gigs/2019		gigs2019
+#define	gigs/2020		gigs2020
+#define	gigs/2021		gigs2021
+#define	gigs/2022		gigs2022
+#define	gigs/2023		gigs2023
+#define	prejbc/nightshift	nightshift
+#define	prejbc/institution	institution
+#define	prejbc/sonic_tonix	sonic_tonix
+#define	prejbc/the_tonix	the_tonix
+#define	projects/drones_club	drones_club
+#define	projects/sumosonic	sumosonic
+#define	projects/black_eg	black_eg
+#define	projects/wilson	wilson
+#define	projects/cambodia	cambodia
+#define	projects/vaguely_familiar	vaguely_familiar
+#define	jbc_gigs		${jbc_root}/gigs
+#define	jbc_memoriam	${jbc_root}/memoriam
+#define	jbc_fishy_mansions	${jbc_root}/fishy_mansions
+#define	jbc_fiascos	${jbc_root}/fiascos
+#define	jbc_search		${jbc_gigs}/search.html
+#define	wilson_gigs		https://wilsondub.com/htdb/gigs
+#define	del_htdb		https://davidwhittemore.com/htdb
+#define	del_images		https://davidwhittemore.com/images
+#define	del_audio		https://davidwhittemore.com/audio
+#define	del_video		https://davidwhittemore.com/video
+#define	del				${del_htdb}/site
+#define	del_root		https://davidwhittemore.com/htdb
+#define	del_gallery		${del_root}/gallery
+#define	del_galpix		https://davidwhittemore.com/images/gallery
+#define	v_htdb			https://adjective.com/vergiftung/htdb
+#define	vergiftung		https://adjective.com/htdb/vergiftung
+#define	v_root			https://adjective.com/htdb/vergiftung
+#define	eg_htdb			https://adjective.com/eg/htdb
+#define	eg_images		https://adjective.com/images/eg
+#define	eg_audio		https://adjective.com/audio/eg
+#define	eg				${eg_htdb}/site
+#define	eg_root			https://adjective.com/htdb/eg
+#define	eg_lyrics		${eg_root}/lyrics
+#define	eg_gigs			${eg_root}/gigs
+#define	eg_people		${eg_root}/people
+#define	eg_stats		${eg_root}/stats
+#
+#	site-wide definitions
+#
+#define	makePDFIcon(title) <img height="9" width="19" alt="[download ${title}]" src="${images}/iconPDF.gif">
+#define	makeMP3Icon(title) <img height="9" width="19" src="${images}/iconMP3.gif"> ${title}
+#define	icon_audio ${makeMP3Icon(title=download MP3)}
+#define	icon_feedback	<img height="19" width="19" alt="[extra shit]" src="${images}/iconFeedback2.gif">
+
+#define	footer
+</div>
+<script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script src="/fontfaceobserver.js"></script>
+<script type="text/javascript"> 
+var font = new FontFaceObserver('Titillium-Regular', {
+});
+
+font.load().then(function () {
+	document.documentElement.className += " fonts-loaded";
+  //alert('Font is available');
+}, function () {
+  //alert('Font is not available');
+});
+  $(document).ready(function() {
+    $("#menuButton").toggle(function(){ 
+         $("#nav").removeClass("saveSpace"); 
+      },function(){
+         $("#nav").addClass("saveSpace"); 
+    });
+   });
+</script>
+
+#define	icon_blank
+	<img src="${images}/para.gif" alt="*" width=25 height=10>
+#define	para	<p><img src="${images}/para.gif" alt=" " width=25 height=10>
+
+#define	linkFeedback	${base_url}/feedback
+
+#define	header()
+	<body>
+	<div id="nav" class="saveSpace">
+#	<a id="horn" href="/"><img alt="The Jazz Butcher" src="${jbc_images}/horn_40.png"></a>
+	<a id="horn" href="/"><img alt="The Jazz Butcher" height="80" src="${jbc_images}/knife_logo_80.png"></a>
+	${mkSimpleURI(uri=https://patfish.com, text=Pat)}
+	${mkSimpleURI(uri=${jbc_memoriam}, text=In Memoriam)}
+	${mkSimpleURI(uri=${jbc_fishy_mansions}, text=Fishy Mansions)}
+	${mkSimpleURI(uri=${jbc_fiascos}, text=The Fiascos)}
+	${mkSimpleURI(uri=${jbc_lyrics}, text=The Songs)}
+	${mkSimpleURI(uri=${jbc_albums}, text=The Releases)}
+	${mkSimpleURI(uri=${jbc_gigs}, text=The Gigs)}
+	${mkSimpleURI(uri=${jbc_audio}, text=Some Audio)}
+	${mkSimpleURI(uri=${jbc_video}, text=Some Video)}
+	${mkSimpleURI(uri=${jbc_people}, text=Conspirators)}
+	${mkSimpleURI(uri=${jbc_press}, text=Press)}
+	${mkSimpleURI(uri=${jbc_news}, text=News)}
+	${mkSimpleURI(uri=${jbc_help}, text=Contribute!)}
+	${mkSimpleURI(uri=${jbc_etc}, text=etc..)}
+	<div class="nav_heading">Projects</div>
+	${mkSimpleURI(uri=${jbc_search}?f=extras&q=eg, text=Black Eg)}
+	${mkSimpleURI(uri=${jbc_search}?f=extras&q=sumo, text=Sumosonic)}
+	${mkSimpleURI(uri=${jbc_search}?f=extras&q=wilson, text=Wilson)}
+	<div class="nav_heading">Pre-JBC</div>
+	${mkSimpleURI(text=Nightshift)}
+	${mkSimpleURI(text=Institution)}
+# Jonathan Stephenson - https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw
+#
+#	https://www.discogs.com/release/5338218-The-Institution-Jane-And-Jon
+#	7"er:
+#	A. https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JaneAndJon.mp3
+#	B. https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_Stephanie.mp3
+#	Label:	Industrial Accident – SGS-112
+#	Format:	
+#	Vinyl, 7", 45 RPM, White Label
+#	Country:	UK
+#	Released:	1979
+#	Genre:	Rock, Reggae
+#	Style:	Post-Punk, Dub
+#	
+#	Credits
+#	Bass – Rolo (3)
+#	Drums – Rob Wilford
+#	Guitar – Max Eider
+#	Vocals, Saxophone – Pat Fish
+#	
+#	Issued on a hand-stamped white label in a plain white sleeve.
+#	
+#	Other original members included Johnathan Stephenson on Synthesizers and John Duvall on Drums.
+#	Both left before the record was cut.
+#
+#	youtube:
+#	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_InnocentsAndEnglishmen.mp3
+#	https://www.youtube.com/watch?v=PdvFEe55_i0
+#	Nov 4, 2021  Probably our masterpiece!  Words of course, Patrick, sax Patrick, and I think the music was a joint effort.
+#
+#	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_JaneAndJon.mp3
+#	https://www.youtube.com/watch?v=omFadRK4O4Q
+#	Oct 14, 2021  The Institution.  About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall. This track by Pete.
+#
+#	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_JeremyAiroplane.mp3
+#	https://www.youtube.com/watch?v=xoDh_HYROWs
+#	Oct 14, 2021  The Institution. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall. This track by Rolo.
+#
+#	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_LoveAndARecordContract.mp3
+#	https://www.youtube.com/watch?v=CHwt3C4MkDQ
+#	Oct 14, 2021  The Institution. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.  This track by Rolo
+#
+#	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_Stephanie.mp3
+#	https://www.youtube.com/watch?v=umKEN-VcAsI
+#	Oct 14, 2021  The Institution. About 1978. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.   This track:  Pat
+#
+#	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_Vampire.mp3
+#
+#	internet:
+#	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_Unknown_InnocentsAndEnglishman.mp3
+	${mkSimpleURI(text=Sonic Tonix)}
+#	https://www.discogs.com/release/2078217-Sonic-Tonix-Dont-Go-Away-Telepathy
+#	Label:	Industrial Accident –  SGS-114
+#	Format:	
+#	Vinyl, 7", Single, Test Pressing
+#	Country:	UK
+#	Released:	1980
+#	Genre:	Rock
+#	Style:	Power Pop, New Wave
+#	A		Don't Go Away
+#	Vocals – John Silver (4)
+#	B		Telepathy
+#	Vocals – Dave Goldie
+#	Bass, Vocals – John Silver (4)
+#	Drums, Vocals – Owen Jones
+#	Guitar, Vocals – Dave Goldie, Simon Mawby
+#	Photography By – Crispin Plaskitt
+#	Producer – Fish*, Tonix*
+#	Recorded at DUFFY'S.
+#	This was an Oxford-based outfit (ft. former members of INSTITUTION) who's sole release comes with rubber-stamped white labels (500 copies made). Members resurfaced in THE JAZZ BUTCHER and THE WOODENTOPS.
+#
+#	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_DontGoAway.mp3
+#	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_Telepathy.mp3
+
+	${mkSimpleURI(text=The Tonix)}
+#	https://www.discogs.com/release/2270038-The-Tonix-Strangers
+#	Label:	109 Product – STEG 002
+#	Format:	
+#	Vinyl, 7"
+#	Country:	UK
+#	Released:	1981
+#	Genre:	Rock
+#	Style:	New Wave
+#	A		Strangers
+#	B		Talk To Me
+#	Recorded At – Foel Studio
+#	Phonographic Copyright ℗ – Cherry Red Music Ltd.
+#	Pressed By – SNA
+#	Cover [Design] – Crispin Plaskitt
+#	Guitar, Backing Vocals – Max Eider
+#	Lacquer Cut By – Porky (5)
+#	Lead Vocals, Saxophone – Pat Fish
+#	Producer – Dave Anderson (3)
+#	Written-By, Recorded By, Producer – The Tonix
+#	Matrix / Runout (Side A runout etched): STEG 002 A1 SNA A PORKY PRIME CUT.
+#	Matrix / Runout (Side B runout etched): STEG 002 B1 SNA WELSHPOOL ... WOW HELLO K.B.
+#
+#	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_TalkToMe.mp3
+
+	</div>
+	<!-- end the left-side navigation-->
+	<!-- begin the content for this page -->
+	<div id="main">
+#		<a href="#" id="menuButton"><img alt="Menu" src="${jbc_images}/horn_40.png"></a>
+		<a href="#" id="menuButton"><img alt="The Jazz Butcher" height="80" src="${jbc_images}/knife_logo_80.png"></a>
+		<div style="max-width: 100%; text-align: left;">
+		<!--- CONTENT -->
+
+#define	header
+#live	if (getval(db) = feedback)
+	${mkHeader(section=Feedback)}
+#live	else
+	${header()}
+#live	endif
+
+#define	mkSimpleURI(uri, text, len=15)
+<div class="menuDiv">
+#live	if ((getval(uri) == index.html) || (getval(text) == index.html))
+	<a href="${uri}">homepage</a><br/>
+#live	else if ((getval(uri) == /index.html) || (getval(text) == /index.html))
+#live		if (getval(text))
+				<a href="${uri}">${truncAt(/index.html, ${text})}</a><br/>
+#live		else
+				<a href="${uri}">${truncAt(/index.html, ${substr(6, 99, ${uri})})}</a><br/>
+#live		endif
+#live	elseif (getval(text))
+#live		if (defined(uri))
+				<a href="${uri}">${trunc(${len}, ${text})}</a><br/>
+#live		else
+				&nbsp;${trunc(${len}, ${text})}<br/>
+#live		endif
+#live	else
+	<a href="${uri}">${trunc(${len}, ${substr(6, 99, ${uri})})}</a><br/>
+#live	endif
+</div>
+
+#define	queryLatestFeedback
+	select uri as uri, dtcreated
+		from feedback
+		where domain_id=${_domain_id}
+		order by dtcreated desc
+
+#define	queryMostPopular
+	select resource as uri
+		from hit
+		where domain_id=${_domain_id}
+		order by num desc
+
+#define	queryMostRecent
+	select distinct(resource) as uri
+		from pageview
+		where domain_id=${_domain_id}
+		order by pageview_id desc
+
+#define	queryYourMostRecent
+	select distinct(resource) as uri
+		from pageview
+		where domain_id=${_domain_id}
+		and session_id=${_session_int}
+		order by pageview_id desc
+
+#
+#       conspirators
+#
+#define	butch	The Butcher
+#define	pat		${linkPerson(href=https://patfish.com, name=Pat Fish)}
+#define	solo	${pat}
+#define	duo		${pat}, ${max}
+#define	steve_beswick		${linkPerson(href=${jbc_people}/steve_beswick.html, name=Steve Beswick)}
+#define	steve_gordon		${linkPerson(href=${jbc_people}/steve_gordon.html, name=Steve Gordon)}
+#define	steve_gordon_gman		${linkPerson(href=${jbc_people}/steve_gordon.html, name=G-Man)}
+#define	garofalo		${linkPerson(href=${jbc_people}/steve_garofalo.html, name=Steve Garofalo)}
+#define	stevenew		${linkPerson(href=${jbc_people}/steve_new.html, name=Steve New)}
+#define	simon		${linkPerson(href=${jbc_people}/simon_taylor.html, name=Simon Taylor)}
+#define	max		${linkPerson(href=${jbc_people}/max_eider.html, name=Max Eider)}
+#define	steve	${linkPerson(href=${jbc_people}/steve_valentine.html, name=Steve Valentine)}
+#define	beirne	${linkPerson(href=${jbc_people}/pat_beirne.html, name=Pat Beirne)}
+#define	at		${linkPerson(href=${jbc_people}/alice_thompson.html, name=Alice Thompson)}
+#define	dj		${linkPerson(href=${jbc_people}/david_j.html, name=David J.)}
+#define	rolo	${linkPerson(href=${jbc_people}/rolo_mcginty.html, name=Rolo McGinty)}
+#define	hask	${linkPerson(href=${jbc_people}/kevin_haskins.html, name=Kevin Haskins)}
+#define	felix	${linkPerson(href=${jbc_people}/felix_ray.html, name=Felix Ray)}
+#define	owen	${linkPerson(href=${jbc_people}/owen_jones.html, name=Owen Jones)}
+#define	wolfi	${linkPerson(href=${jbc_people}/wolfgang_tschegg.html, name=Wolfgang Tschegg)}
+#define	green	${linkPerson(href=${jbc_people}/alex_green.html, name=Alex Green)}
+#define	paul	${linkPerson(href=${jbc_people}/paul_mulreany.html, name=Paul Mulreany)}
+#define	larry	${linkPerson(href=${jbc_people}/laurence_okeefe.html, name=Laurence O'Keefe)}
+#define	kizzy	${linkPerson(href=${jbc_people}/kizzy_ocallaghan.html, name=Kizzy O'Callaghan)}
+#define	richard	${linkPerson(href=${jbc_people}/richard_formby.html, name=Richard Formby)}
+#define	pete	${linkPerson(href=${jbc_people}/peter_crouch.html, name=Peter Crouch)}
+#define	dooj	${linkPerson(href=${jbc_people}/dooj_wilkinson.html, name=Dooj Wilkinson)}
+#define	nick	${linkPerson(href=${jbc_people}/nick_burson.html, name=Nick Burson)}
+#define	lix		${linkPerson(href=${jbc_people}/alex_lee.html, name=Alex Lee)}
+#define	jules	${linkPerson(href=${jbc_people}/julian_poole.html, name=Julian Poole)}
+#define	sonic	${linkPerson(href=${jbc_people}/sonic_boom.html, name=Sonic Boom)}
+#define	astor	${linkPerson(href=${jbc_people}/peter_astor.html, name=Peter Astor)}
+#define	rivers	${linkPerson(href=${jbc_people}/john_rivers.html, name=John A. Rivers)}
+#define	barker	${linkPerson(href=${jbc_people}/david_barker.html, name=David E. Barker)}
+#define	rev		${linkPerson(href=${jbc_people}/martin_stebbing.html, name=Martin Stebbing (Rev. Botus Whiteblood Fleming))}
+#define	iain	${linkPerson(href=${jbc_people}/iain_ohiggins.html, name=Iain O'Higgins)}
+#define	hend	${linkPerson(href=${jbc_people}/dave_henderson.html, name=Dave Henderson)}
+#define	gab		${linkPerson(href=${jbc_people}/gabriel_turner.html, name=Gabriel Turner)}
+#define	damm	${linkPerson(href=${jbc_people}/von_dammerung.html, name=Von D&auml;mmerung)}
+#define	karel	${linkPerson(href=${jbc_people}/von_dammerung.html, name=Karel Von D&auml;mmerung)}
+#define	joea	${linkPerson(href=${jbc_people}/joe_allen.html, name=Joe Allen)}
+#define	rodney	${linkPerson(href=${jbc_people}/rodney_allen.html, name=Rodney Allen)}
+#define	colin	${linkPerson(href=${jbc_people}/colin.html, name=Colin Harris)}
+#define	indge	${linkPerson(href=${jbc_people}/alastair_indge.html, name=Alastair Indge)}
+#define	curt	${linkPerson(href=${jbc_people}/curtis_johnson.html, name=Curtis E. Johnson)}
+#define	curt_eman	${linkPerson(href=${jbc_people}/curtis_johnson.html, name=E-Man)}
+#define	sumo_botty	${linkPerson(href=${jbc_people}/ian_botterill.html, name=Mister B)}
+#define	botty	${linkPerson(href=${jbc_people}/ian_botterill.html, name=Ian Botterill)}
+#define	botty_bman	${linkPerson(href=${jbc_people}/ian_botterill.html, name=B-Man)}
+#define	mitch	${linkPerson(href=${jbc_people}/mitch_jenkins.html, name=Mitch Jenkins)}
+#define	sumishta	${linkPerson(href=${jbc_people}/sumishta_brahm.html, name=Sumishta Brahm)}
+#define	del		${linkPerson(href=${jbc_people}/david_whittemore.html, name=David Whittemore)}
+#define	mike_novakovic		${linkSearch(query=Mike Novakovic)}
+#define	lb		${linkPerson(href=${jbc_people}/david_barker.html, name=Lionel Brando)}
+#define	ll		Louis Leroi
+#define	mark_hadley		${linkPerson(href=${jbc_people}/marc_hadley.html, name=Mark Hadley)}
+#define	is		${linkSearch(query=Ian Sturgess)}
+#define	hook	${linkSearch(query=Paul Hookham)}
+#define	john_silver	John Silver
+#define	simon_mawby	Simon Mawby
+#define	sm		${linkSearch(query=Steve Musgrove)}
+#define	mick	${linkSearch(query=Mick Packwood)}
+#define	blair	${linkSearch(query=Blair MacDonald)}
+#define	erol	${linkSearch(query=Erol Suleyman)}
+#define	jody	${linkSearch(query=Jody Palmer)}
+#define	lohan	${linkSearch(query=Richard Lohan)}
+#define	gerard	${linkSearch(query=Gerard Langley)}
+#define	gould	${linkSearch(query=Greenwood Goulding)}
+#define	morgan	${linkPerson(href=${jbc_people}/dave_morgan.html, name=Dave Morgan)}
+#define	burrell	${linkSearch(query=Tim Burrell)}
+#define	deirdre	${linkSearch(query=Deirdre O'Donoghue)}
+#define	brent	${linkSearch(query=Brent Bambury)}
+#define	kevin	${linkSearch(query=Kevin Komoda)}
+#define	max_read		${linkSearch(query=Max Read)}
+#define	anita_allbright		${linkSearch(query=Anita Allbright)}
+#define	mark_refoy		${linkPerson(href=${jbc_people}/mark_refoy.html, name=Mark Refoy)}
+#define	sumo_russ	${linkPerson(href=${jbc_people}/russell_cooper.html, name=Agent Russell Cooper)}
+#define	russ	${linkPerson(href=${jbc_people}/russell_cooper.html, name=Russell Cooper)}
+#define	russ_agent	${linkPerson(href=${jbc_people}/russell_cooper.html, name=Agent Wilson)}
+#define	tim_harries	${linkPerson(href=${jbc_people}/tim_harries.html, name=Tim Harries)}
+#define	joel_harries	${linkPerson(href=${jbc_people}/joel_harries.html, name=Joel Harries)}
+#define	jonny_mattock	${linkPerson(href=${jbc_people}/jonny_mattock.html, name=Jonny Mattock)}
+#define	sumo_kathy	${linkPerson(href=${jbc_people}/kathy_schaer.html, name=Special K)}
+#define	kathy	${linkPerson(href=${jbc_people}/kathy_schaer.html, name=Kathy Schaer)}
+#define	kathy_misery	${linkPerson(href=${jbc_people}/kathy_schaer.html, name=Misery Wilson)}
+#define	sumo_pat		${linkPerson(href=https://patfish.com, name=Headstone)}
+#define	pat_headstone	${linkPerson(href=https://patfish.com, name=Wilson Headstone)}
+#define	felce	${linkSearch(query=Dave Felce)}
+#define	mercer	${linkExternal(https://www.mickmercer.com, Mick Mercer)}
+#define	joe_woolley	${linkSearch(query=Joe Woolley, act=yes)}
+#define	kathie	${linkPerson(href=${jbc_people}/kathie_mcginty.html, name=Kathie McGinty)}
+#define	sumo_kathie	${linkPerson(href=${jbc_people}/kathie_mcginty.html, name=Kathie M)}
+#define	joe		${linkSearch(query=Joe Foster)}
+#define	wilson	${linkExternal(https://wilsondub.com, Wilson)}
+#define	undertakers	<b>The Undertakers</b>
+
+#
+#	producers/engineers/soundmen/other
+#	TODO: all these need to be linkSearch(.., act=yes)
+#
+#define	proctor		${linkSearch(query=Steve Proctor)}
+#define	howy		${linkExternal(http://www.studiowizard.com/ht.html, Howard Turner)}
+#define	momus		${linkExternal(http://www.demon.co.uk/momus/, Momus)}
+#define	4AD			${linkExternal(http://www.evo.org/eyesore.html, 4AD)}
+#define	coonce		Cole Coonce
+#define	vu			${linkExternal(http://www.rocknroll.net/loureed/, Velvet Underground)}
+#define	richman		${linkExternal(http://www.base.com/jonathan/jonathan.html, Jonathan Richman)}
+#define	dronesclub		${linkExternal(https://thedronesclub.co.uk/, The Drones Club)}
+#define	space		${linkExternal(http://www.spiritualized.com/, Spacemen 3)}
+#define	aero		${linkSearch(query=The Blue Aeroplanes, act=yes)}
+#define	haus		${linkExternal(http://www.partium.com/~andrewb/bauhaus/, Bauhaus)}
+#define	tractors	${linkExternal(http://www.geocities.com/Nashville/Stage/8818/favorite.htm, Stranger Tractors)}
+#define	poi			${linkExternal(http://www.poidogpondering.com/, Poi Dog Pondering)}
+#define	davidj		${linkExternal(http://www.davidjonline.com, David J)}
+#define	bwatch		${linkExternal(http://www.theblackwatchmusic.com, The Black Watch)}
+#define	purelove	${linkExternal(http://ourworld.compuserve.com/homepages/RobertFliegel/purelove.htm, Purelove)}
+#define	eg			<a href="${eg_root}">The Black Eg</a>
+#define	vergift		<a href="${v_root}">Vergiftung</a>
+#define	cave		${linkSearch(query=Nick Cave, act=yes)}
+#define	cvb			Camper Van Beethoven
+#define	mbv			My Bloody Valentine
+#define	tvamp		${linkSearch(query=Transvision Vamp, act=yes)}
+#define	swynn		${linkSearch(query=Steve Wynn, act=yes)}
+#define	bangles		${linkSearch(query=The Bangles, act=yes)}
+#define	cale		${linkExternal(http://john-cale.com/, John Cale)}
+#define	braind		${linkSearch(query=Braindead Soundmachine, act=yes)}
+#define	eno			${linkSearch(query=Brian Eno, act=yes)}
+#define	weather		${linkSearch(query=Weather Prophets, act=yes)}
+#define	hitch		${linkSearch(query=Robyn Hitchcock, act=yes)}
+#define	perfect		${linkSearch(query=The Perfect Disaster, act=yes)}
+#define	spect		${linkSearch(query=Spectrum, act=yes)}
+#define	belly		${linkSearch(query=Belly, act=yes)}
+#define	tops		${linkSearch(query=The Woodentops, act=yes)}
+#define	rocket		${linkSearch(query=Love And Rockets, act=yes)}
+#define	scream		${linkSearch(query=Primal Scream, act=yes)}
+#define	strange		${linkSearch(query=Strangelove, act=yes)}
+#define	levit		${linkSearch(query=Levitation, act=yes)}
+#define	kmfdm		${linkSearch(query=KMFDM, act=yes)}
+#define	mildew		${linkSearch(query=Downey Mildew, act=yes)}
+#define	star		${linkSearch(query=Big Star, act=yes)}
+#
+#	artwork
+#
+#define	lucien		${linkSearch(query=Lucien Borderline)}
+#define	bd			${linkSearch(query=Ben Davis)}
+#define	novak		${linkSearch(query=Alex Novak)}
+#define	loony		${linkSearch(query=Pascal Legras)}
+#
+#	jbc-list people
+#
+#define	killer		${linkSearch(query=Joe Beaulieu)}
+#define	nancy		${linkSearch(query=Nancy Everson)}
+#define	woj			${linkSearch(query=The Woj)}
+#define	matt		Matt Cockerill
+#define	rob			${linkSearch(query=Robert Jacob)}
+#define	ed			${linkSearch(query=Ed Carter)}
+#define	coop		${linkSearch(query=John Cooper)}
+#define	frang		${linkSearch(query=Robert Frangooles)}
+#define	syd			${linkExternal(http://www.sydmeats.co.uk, Sydney Meats)}
+#define	davison		${linkSearch(query=John Michael Davison)}
+#define	camf		${linkSearch(query=Chris Camfield)}
+#define	jdavies		${linkSearch(query=Jim Davies)}
+#define	knight		${linkSearch(query=Knight Berman)}
+#define	jimmy		${linkExternal(https://twitter.com/RealJamesDuval, James Duval)}
+
+#
+#	useful defines
+#
+#define	instr	<center><b>This song is an instrumental</b></center>
+#
+#	Bath Of Bacon
+#
+#define	bacon		${linkAlbum(href=${jbc_albums}/bath.html, title=Bath Of Bacon)}
+#define	gloop		${linkSong(title=Gloop Jiving, href=${jbc_lyrics}/gloop_jiving.html)}
+#define	jbtheme		${linkSong(href=${jbc_lyrics}/jb_theme.html, title=Jazz Butcher Theme)}
+#define	party		${linkSong(title=Partytime, href=${jbc_lyrics}/partytime.html)}
+#define	foot		${linkSong(href=${jbc_lyrics}/bigfoot.html, title=Bigfoot Motel)}
+#define	engine		${linkSong(href=${jbc_lyrics}/sex_engine.html, title=Sex Engine)}
+#define	china		${linkSong(href=${jbc_lyrics}/chinatown.html, title=Chinatown)}
+#define	zombie		${linkSong(href=${jbc_lyrics}/zombie_love.html, title=Zombie Love)}
+#define	flan		${linkSong(href=${jbc_lyrics}/grey_flannelette.html, title=Grey Flannelette)}
+#define	mer			${linkSong(href=${jbc_lyrics}/la_mer.html, title=La Mer)}
+#define	poison		${linkSong(href=${jbc_lyrics}/poisoned_by_food.html, title=Poisoned By Food)}
+#define	kitten		${linkSong(href=${jbc_lyrics}/love_kittens.html, title=Love Kittens)}
+#define	bath		${linkSong(href=${jbc_lyrics}/bath.html, title=Bath Of Bacon)}
+#define	gold		${linkSong(title=Girls Who Keep Goldfish, href=${jbc_lyrics}/goldfish.html)}
+#
+#
+#	wilson
+#
+#define wilson_play_it_all_night_long  ${linkSong(title=Play It All Night Long, author=Warren Zevon)}
+#define	wilson_quality_people		${linkSong(href=${jbc_lyrics}/wilson_quality_people.html, title=Quality People, author=Wilson)}
+#define	wilson_buffalo_sniper		${linkSong(href=${jbc_lyrics}/wilson_buffalo_sniper.html, title=Buffalo Sniper, author=Wilson)}
+#define	wilson_police_chief		${linkSong(href=${jbc_lyrics}/wilson_police_chief.html, title=Police Chief, author=Wilson)}
+#define	wilson_istanbul_connection		${linkSong(href=${jbc_lyrics}/wilson_istanbul_connection.html, title=Istanbul Connection, author=Wilson)}
+#define	wilson_hippy_shit		${linkSong(href=${jbc_lyrics}/wilson_hippy_shit.html, title=Hippy Shit, author=Wilson)}
+#define	wilson_burn_hollywood_burn		${linkSong(href=${jbc_lyrics}/wilson_burn_hollywood_burn.html, title=Burn\, Hollywood\, Burn, author=Wilson)}
+#define	wilson_dark_agenda		${linkSong(href=${jbc_lyrics}/wilson_dark_agenda.html, title=Dark Agenda, author=Wilson)}
+#define	wilson_battle_time		${linkSong(title=Battle Time Now, author=Wilson, href=${jbc_lyrics}/wilson_battle_time_now.html)}
+#define	wilson_critters		${linkSong(title=Critters, author=Wilson, href=${jbc_lyrics}/wilson_critters.html)}
+#define	wilson_filter_kings		${linkSong(title=Filter Kings, author=Wilson, href=${jbc_lyrics}/wilson_filter_kings.html)}
+#define	wilson_no_winners		${linkSong(title=No Winners, author=Wilson, href=${jbc_lyrics}/wilson_no_winners.html)}
+#define	wilson_saturday_night		${linkSong(title=Every Saturday Night, author=Wilson, href=${jbc_lyrics}/wilson_every_saturday_bnight.html)}
+#define	wilson_secret_government		${linkSong(title=Secret Government, author=Wilson, href=${jbc_lyrics}/wilson_secret_government.html)}
+#define	wilson_two_dragons		${linkSong(title=Two Dragons, author=Wilson, href=${jbc_lyrics}/wilson_two_dragons.html)}
+#
+#	A Scandal In Bohemia
+#
+#define	scandal		${linkAlbum(href=${jbc_albums}/scandal.html, title=A Scandal In Bohemia)}
+#define	smiff		${linkSong(title=Southern Mark Smith, href=${jbc_lyrics}/smith.html)}
+#define	men			${linkSong(title=Real Men, href=${jbc_lyrics}/real_men.html)}
+#define	hour		${linkSong(href=${jbc_lyrics}/soul_happy_hour.html, title=Soul Happy Hour)}
+#define	meat		${linkSong(href=${jbc_lyrics}/i_need_meat.html, title=I Need Meat)}
+#define	betty		${linkSong(href=${jbc_lyrics}/betty_page.html, title=Just Like Betty Page)}
+#define	marn		${linkSong(title=Marnie, href=${jbc_lyrics}/marnie.html)}
+#define	wheel		${linkSong(title=Caroline Wheeler's Birthday Present, href=${jbc_lyrics}/caroline_wheeler.html)}
+#define	mind		${linkSong(href=${jbc_lyrics}/mind_like_a_playgroup.html, title=Mind Like A Playgroup)}
+#define	gf			${linkSong(href=${jbc_lyrics}/girlfriend.html, title=Girlfriend)}
+#define	desert		${linkSong(href=${jbc_lyrics}/my_desert.html, title=My Desert)}
+#
+#	Sex And Travel
+#
+#define	sex			${linkAlbum(href=${jbc_albums}/sex.html, title=Sex And Travel)}
+#define	sat			${linkSong(href=${jbc_lyrics}/big_saturday.html, title=Big Saturday)}
+#define	holiday		${linkSong(href=${jbc_lyrics}/holiday.html, title=Holiday)}
+#define	pets		${linkSong(href=${jbc_lyrics}/red_pets.html, title=Red Pets)}
+#define	rumour		${linkSong(href=${jbc_lyrics}/rumour.html, title=Only A Rumour)}
+#define	reagan		${linkSong(href=${jbc_lyrics}/president_reagan.html, title=President Reagan's Birthday Present)}
+#define	boy			${linkSong(href=${jbc_lyrics}/whats_the_matter_boy.html, title=What's The Matter\, Boy?)}
+#define	walk		${linkSong(href=${jbc_lyrics}/walk_with_the_devil.html, title=Walk With The Devil)}
+#define	drain		${linkSong(href=${jbc_lyrics}/down_the_drain.html, title=Down The Drain)}
+#
+#	Conspiracy
+#
+#define	conspir		${linkAlbum(href=${jbc_albums}/conspiracy.html, title=Conspiracy)}
+#define	conspir12	${linkAlbum(href=${jbc_albums}/conspiracy12.html, title=Conspiracy (single))}
+#define	lorre		${linkSong(title=Peter Lorre, href=${jbc_lyrics}/peter_lorre.html)}
+#define	wind		${linkSong(href=${jbc_lyrics}/big_old_wind.html, title=Big Old Wind)}
+#define	consp		${linkSong(href=${jbc_lyrics}/conspiracy.html, title=Conspiracy)}
+#define	becky		${linkSong(href=${jbc_lyrics}/rebecca.html, title=Rebecca Wants Her Bike Back)}
+#define	vienna		${linkSong(href=${jbc_lyrics}/vienna_song.html, title=Vienna Song)}
+#define	groove		${linkSong(href=${jbc_lyrics}/grooving_in_the_bus_lane.html, title=Grooving In The Bus Lane)}
+#define	you			${linkSong(href=${jbc_lyrics}/it_has_to_be_you.html, title=It Has To Be You)}
+#define	thing		${linkSong(title=Thing, href=${jbc_lyrics}/thing.html)}
+#
+#	Hamburg
+#
+#define	hamburg		${linkAlbum(href=${jbc_albums}/hamburg.html, title=Hamburg)}
+#define	dentist		${linkSong(href=${jbc_lyrics}/death_dentist.html, title=Death Dentist)}
+#define	rain		${linkSong(href=${jbc_lyrics}/rain.html, title=Rain)}
+#define	count		${linkSong(href=${jbc_lyrics}/count_dracula.html, title=Jazz Butcher -v- Count Dracula)}
+#
+#	 Distressed Gentlefolk
+#
+#define	dist		${linkAlbum(href=${jbc_albums}/distressed.html, title=Distressed Gentlefolk)}
+#define	fall		${linkSong(href=${jbc_lyrics}/falling_in_love.html, title=Falling In Love)}
+#define	bigbad		${linkSong(href=${jbc_lyrics}/big_bad_thing.html, title=Big Bad Thing)}
+#define	kitch		${linkSong(href=${jbc_lyrics}/still_in_the_kitchen.html, title=Still In The Kitchen)}
+#define	hung		${linkSong(href=${jbc_lyrics}/hungarian_love_song.html, title=Hungarian Love Song)}
+#define	world		${linkSong(href=${jbc_lyrics}/the_new_world.html, title=The New World)}
+#define	who			${linkSong(href=${jbc_lyrics}/who_loves_you_now.html, title=Who Loves You Now?)}
+#define	domest		${linkSong(href=${jbc_lyrics}/domestic_animal.html, title=Domestic Animal)}
+#define	shame		${linkSong(href=${jbc_lyrics}/buffalo_shame.html, title=Buffalo Shame)}
+#define	nada		${linkSong(href=${jbc_lyrics}/nothing_special.html, title=Nothing Special)}
+#define	angels		${linkSong(href=${jbc_lyrics}/angels.html, title=Angels)}
+#define	sa			${linkSong(href=${jbc_lyrics}/south_america.html, title=South America)}
+#
+#	Spooky
+#
+#define	brave		${linkAlbum(href=${jbc_albums}/brave.html, title=Brave New Waves Session)}
+#define	spook		${linkSingle(href=${jbc_albums}/spooky.html, title=Spooky (EP))}
+#define	spook12		${linkSingle(href=${jbc_albums}/spooky12.html, title=Spooky (12"))}
+#define	spook7		${linkSingle(href=${jbc_albums}/spooky7.html, title=Spooky (7"))}
+#define	spooky		${linkSong(title=Spooky)}
+#define	go			${linkSong(href=${jbc_lyrics}/girl_go.html, title=Girl-Go)}
+#define	blame		${linkSong(href=${jbc_lyrics}/blame.html, title=Blame)}
+#define	sarah		${linkSong(href=${jbc_lyrics}/whitfield.html, title=Whitfield\, Sarah & The Birchfield Road Affair)}
+#
+#	Fishcotheque
+#
+#define	fishco		${linkAlbum(href=${jbc_albums}/fishcotheque.html, title=Fishcotheque)}
+#define	next		${linkSong(href=${jbc_lyrics}/next_move_sideways.html, title=Next Move Sideways)}
+#define	touch		${linkSong(href=${jbc_lyrics}/out_of_touch.html, title=Out Of Touch)}
+#define	wrong		${linkSong(href=${jbc_lyrics}/get_it_wrong.html, title=Get It Wrong)}
+#define	village		${linkSong(href=${jbc_lyrics}/living_in_a_village.html, title=Living In A Village)}
+#define	swell		${linkSong(href=${jbc_lyrics}/swell.html, title=Swell)}
+#define	49			${linkSong(href=${jbc_lyrics}/lot_49.html, title=Looking For Lot 49)}
+#define	best		${linkSong(href=${jbc_lyrics}/best_way.html, title=The Best Way)}
+#define	chick		${linkSong(href=${jbc_lyrics}/chickentown.html, title=Chickentown)}
+#define	sue			${linkSong(title=Susie, href=${jbc_lyrics}/susie.html)}
+#define	keep		${linkSong(href=${jbc_lyrics}/curtains.html, title=Keeping The Curtains Closed)}
+#
+#	Big Planet, Scarey Planet
+#
+#define	planet		${linkAlbum(href=${jbc_albums}/planet.html, title=Big Planet\, Scarey Planet)}
+#define	newinv		${linkSingle(href=${jbc_albums}/invention.html, title=New Invention)}
+#define	invent		${linkSong(href=${jbc_lyrics}/new_invention.html, title=New Invention)}
+#define	lineo		${linkSong(href=${jbc_lyrics}/line_of_death.html, title=Line Of Death)}
+#define	hyst		${linkSong(href=${jbc_lyrics}/hysteria.html, title=Hysteria)}
+#define	word		${linkSong(href=${jbc_lyrics}/word_i_was_looking_for.html, title=The Word I Was Looking For)}
+#define	kid			${linkSong(href=${jbc_lyrics}/bicycle_kid.html, title=Bicycle Kid)}
+#define	burg		${linkSong(href=${jbc_lyrics}/burglar_of_love.html, title=Burglar Of Love)}
+#define	being		${linkSong(href=${jbc_lyrics}/nightmare_being.html, title=Nightmare Being)}
+#define	plague		${linkSong(href=${jbc_lyrics}/bubonic_plague.html, title=Do The Bubonic Plague)}
+#define	dream		${linkSong(href=${jbc_lyrics}/bad_dream_lover.html, title=Bad Dream Lover)}
+#define	good		${linkSong(href=${jbc_lyrics}/the_good_ones.html, title=The Good Ones)}
+#
+#	Cult Of The Basement
+#
+#define	cult		${linkAlbum(href=${jbc_albums}/cult.html, title=Cult Of The Basement)}
+#define	baset		${linkSong(href=${jbc_lyrics}/basement_theme.html, title=The Basement)}
+#define	drugs		${linkSong(href=${jbc_lyrics}/shes_on_drugs.html, title=She's On Drugs)}
+#define	tues		${linkSong(href=${jbc_lyrics}/pineapple_tuesday.html, title=Pineapple Tuesday)}
+#define	onion		${linkSong(href=${jbc_lyrics}/the_onion_field.html, title=The Onion Field)}
+#define	daycare		${linkSong(href=${jbc_lyrics}/daycare_nation.html, title=Daycare Nation)}
+#define	zeppo		${linkSong(href=${jbc_lyrics}/my_zeppelin.html, title=My Zeppelin)}
+#define	fert		${linkSong(href=${jbc_lyrics}/fertiliser.html, title=Fertiliser)}
+#define	odd			${linkSong(href=${jbc_lyrics}/mr_odd.html, title=Mr. Odd)}
+#define	euph		${linkSong(href=${jbc_lyrics}/euphrates.html, title=After The Great Euphrates)}
+#define	panic		${linkSong(href=${jbc_lyrics}/panic.html, title=Panic In Room 109)}
+#define	bait		${linkSong(href=${jbc_lyrics}/turtlebait.html, title=Turtle Bait)}
+#define	sis			${linkSong(href=${jbc_lyrics}/sister_death.html, title=Sister Death)}
+#
+#	Condition Blue
+#
+#define	blue		${linkAlbum(href=${jbc_albums}/blue.html, title=Condition Blue)}
+#define	girls		${linkSong(href=${jbc_lyrics}/girls_say_yes.html, title=Girls Say Yes)}
+#define	filth		${linkSong(href=${jbc_lyrics}/filth.html, title=Our Friends The Filth)}
+#define	harlan		${linkSong(href=${jbc_lyrics}/harlan.html, title=Harlan)}
+#define	still		${linkSong(href=${jbc_lyrics}/still_and_all.html, title=Still & All)}
+#define	monkey		${linkSong(href=${jbc_lyrics}/monkeyface.html, title=Monkeyface)}
+#define	yoyo		${linkSingle(href=${jbc_albums}/yo_yo.html, title=She's A Yo-Yo)}
+#define	yo			${linkSong(href=${jbc_lyrics}/shes_a_yo_yo.html, title=She's A Yo-Yo)}
+#define	honey		${linkSong(href=${jbc_lyrics}/honey.html, title=Honey)}
+#define	shirl		${linkSong(href=${jbc_lyrics}/shirley.html, title=Shirley Maclaine)}
+#define	rachel		${linkSong(href=${jbc_lyrics}/racheland.html, title=Racheland)}
+#
+#	Western Family
+#
+#define	family		${linkAlbum(href=${jbc_albums}/western.html, title=Western Family)}
+#define	snowy		${linkSong(href=${jbc_lyrics}/snowy.html, title=Beautiful Snow-White Hair)}
+#
+#	Waiting For The Love Bus
+#
+#define	bus			${linkAlbum(href=${jbc_albums}/bus.html, title=Waiting For The Love Bus)}
+#define	davis		${linkSong(href=${jbc_lyrics}/rosemary_davis.html, title=Rosemary Davis' World Of Sound)}
+#define	bake		${linkSong(href=${jbc_lyrics}/bakersfield.html, title=Bakersfield)}
+#define	mall		${linkSong(href=${jbc_lyrics}/kids_in_the_mall.html, title=Kids In The Mall/Kaliningrad)}
+#define	whad		${linkSong(href=${jbc_lyrics}/whaddya.html, title=Whaddya?)}
+#define	sweet		${linkSong(href=${jbc_lyrics}/sweet_water.html, title=Sweetwater)}
+#define	ghost		${linkSong(href=${jbc_lyrics}/ghosts.html, title=Ghosts)}
+#define	baltic		${linkSong(href=${jbc_lyrics}/baltic.html, title=Baltic)}
+#define	kill		${linkSong(href=${jbc_lyrics}/killed_out.html, title=Killed Out)}
+#define	ben			${linkSong(href=${jbc_lyrics}/ben.html, title=Ben)}
+#define	penguin		${linkSong(href=${jbc_lyrics}/penguins.html, title=Penguins)}
+#define	chang		${linkSong(href=${jbc_lyrics}/president_chang.html, title=President Chang)}
+#define	stat		${linkSong(href=${jbc_lyrics}/angel_station.html, title=Angel Station)}
+#
+#	Draining The Glass
+#
+#define	drainglass		${linkAlbum(href=${jbc_albums}/drainglass.html, title=Draining The Glass 1982 - 86)}
+#define	best_kisser		${linkAlbum(title=The Best Kisser In The World)}
+#define	glorious		${linkAlbum(href=${jbc_albums}/glorious.html, title=Glorious And Idiotic)}
+#define	glass			<b>Glass Records</b>
+#
+#	Sumosonic
+#
+#define	thisissumo		${linkAlbum(title=This Is Sumo, href=${jbc_albums}/sumosonic_this_is_sumo.html)}
+#define	sumo_spacemen		${linkSong(title=Come\, Friendly Spacemen, href=${jbc_lyrics}/sumosonic_come_friendly_spacemen.html)}
+#define	sumo_earth		${linkSong(title=God's Green Earth, href=${jbc_lyrics}/sumosonic_gods_green_earth.html)}
+#define	sumo_fern		${linkSong(title=Fern Schnell Gut, href=${jbc_lyrics}/sumosonic_fern_schnell_gut.html)}
+#define	sumo_cats		${linkSong(title=Cat's Life, href=${jbc_lyrics}/sumosonic_cats_life.html)}
+#define	sumo_wonderful		${linkSong(title=Everything Is Wonderful, href=${jbc_lyrics}/sumosonic_everything_is_wonderful.html)}
+#define	sumo_stupid		${linkSong(title=Stupid, href=${jbc_lyrics}/sumosonic_stupid.html)}
+#define	sumo_monsters		${linkSong(title=Destroy All Monsters, href=${jbc_lyrics}/sumosonic_destroy_all_monsters.html)}
+#define	sumo_radio		${linkSong(title=Radio Saigon, href=${jbc_lyrics}/sumosonic_radio_saigon.html)}
+#define	sumo_business		${linkSong(title=Business And Work, href=${jbc_lyrics}/sumosonic_business_and_work.html)}
+#define	sumo_monks		${linkSong(title=Monks Of Kung Fu, href=${jbc_lyrics}/sumosonic_monks_of_kung_fu.html)}
+#define	sumo_sputnik		${linkSong(title=Sputnik, href=${jbc_lyrics}/sumosonic_sputnik.html)}
+
+#
+#	b-sides
+#
+#define	devil			${linkSong(href=${jbc_lyrics}/devil_is_my_friend.html, title=The Devil Is My Friend)}
+#define	swingin			${linkSingle(href=${jbc_albums}/pygmies.html, title=Christmas With The Pygmies)}
+#define	pygmie			${linkSong(href=${jbc_lyrics}/xmas_with_the_pygmies.html, title=Christmas With The Pygmies)}
+#define	drink			${linkSong(href=${jbc_lyrics}/drink.html, title=D.R.I.N.K.)}
+#define	h2o				${linkSong(href=${jbc_lyrics}/water.html, title=Water)}
+#define	fever			${linkSong(title=Cowgirl Fever, href=${jbc_lyrics}/cowgirl_fever.html)}
+#define	ever			${linkSong(href=${jbc_lyrics}/forever.html, title=Forever)}
+#define	jungle			${linkSong(href=${jbc_lyrics}/human_jungle.html, title=The Human Jungle)}
+#define	olof			${linkSong(href=${jbc_lyrics}/olof_palme.html, title=Olof Palme)}
+#define	city			${linkSong(href=${jbc_lyrics}/city_of_night.html, title=City Of Night)}
+#define	jbpm			${linkSong(href=${jbc_lyrics}/jb_v_pm.html, title=The Jazz Butcher Meets the Prime Minister)}
+#define	hair			${linkSong(href=${jbc_lyrics}/hairbrush_and_tank.html, title=The Hairbrush And The Tank)}
+#define	almost			${linkSong(href=${jbc_lyrics}/almost_brooklyn.html, title=Almost Brooklyn)}
+#define	welove			${linkSingle(href=${jbc_albums}/weloveyou.html, title=We Love You)}
+#define	weloveyou		${welove}
+#define	excel			${linkSong(href=${jbc_lyrics}/excellent.html, title=Excellent!)}
+#define	vodka			${linkSong(href=${jbc_lyrics}/vodka_girls.html, title=Vodka Girls)}
+#define	va_abus_21		${linkSingle(href=${jbc_albums}/va_abus_dangereux_21.html, title=VA: Abus Dangereux #21)}
+#define	va_canyoutalktothedude_1		${linkSingle(href=${jbc_albums}/va_canyoutalktothedude_1.html, title=VA: Can You Talk To The Dude #1)}
+#define	va_canyoutalktothedude_2		${linkSingle(href=${jbc_albums}/va_canyoutalktothedude_2.html, title=VA: Can You Talk To The Dude #2)}
+#define	va_creation_unreleased		${linkSingle(title=VA: Creation Unreleased)}
+#define	va_shadow		${linkSingle(title=VA: Shadow And Light, href=${jbc_albums}/va_shadow_and_substance.html)}
+#define	va_nationofsaints		${linkSingle(title=VA: Nation Of Saints, href=${jbc_albums}/va_nationofsaints.html)}
+#define	va_creation_price		${linkSingle(title=VA: Creation Price, href=${jbc_albums}/va_creation_price.html)}
+#define	va_unautomne93		${linkSingle(title=VA: Un Automne '93, href=${jbc_albums}/va_unautomne93.html)}
+#define	va_wilson_heyday		${linkSingle(title=VA: Straight Through The Sound Barrier, href=${jbc_albums}/va_wilson_heyday.html)}
+#define	va_spark		${linkSingle(title=VA: Another Spark, href=${jbc_albums}/va_another_spark.html)}
+#define	shock_drugs		${linkSingle(title=She's On Drugs)}
+#define	va_seventeen_2	${linkSingle(title=VA: What A Nice Way To Turn Seventeen #2)}
+#define	va_seventeen_3	${linkSingle(title=VA: What A Nice Way To Turn Seventeen #3)}
+#define	bigtime_sampler	${linkSingle(title=Big Bad Thing)}
+#define	bigtime_jungle	${linkSingle(href=${jbc_albums}/bigtime_jungle_smith,html, title=The Human Jungle/Southern Mark Smith)}
+#define	bigtime_angels	${linkSingle(href=${jbc_albums}/bigtime_angels_kitchen,html, title=Angels/Still In The Kitchen)}
+#define	va_nm_vol1		${linkSingle(title=VA: Now That's What I Call Northampton Vol #1)}
+#define	va_andy_2007	${linkSingle(title=VA: Uncle Andy's 2007 Christmas Album)}
+
+#
+#	recorded covers
+#
+#define	aff				${linkSong(title=Affection, author=Jonathan Richman)}
+#define	capt		${linkSong(title=Tugboat Captain, author=Dean Wareham)}
+#define	dance		${linkSong(title=Do You Wanna Dance, author=Bobby Freeman)}
+#define	envoy			${linkSong(title=The Chinese Envoy, author=John Cale)}
+#define	indian_summer	${linkSong(title=Indian Summer, author=Beats Happening)}
+#define	jane		${linkSong(title=Sweet Jane, author=Lou Reed)}
+#define	king			${linkSong(title=King Of Joy, author=Bill Drummond)}
+#define	knock			${linkSong(title=Knocking On Heaven's Door, author=Bob Dylan)}
+#define	leaves			${linkSong(title=Raking Up the Leaves, author=${max})}
+#define	lost			${linkSong(href=${jbc_lyrics}/lost_in_france.html, title=Lost In France, author=Scott/Wolfe)}
+#define	mersey			${linkSong(title=Mersey, author=David Surkamp)}
+#define	moscow			${linkSong(title=Moscow Drug Club, author=B. B. Gabor)}
+#define	night			${linkSong(title=The Long Night Starts, author=${max})}
+#define	over			${linkSong(title=Over You, author=Lou Reed)}
+#define	rainbow		${linkSong(title=Over The Rainbow, author=Arlen/Hamburg)}
+#define	road		${linkSong(title=Roadrunner, author=Richman)}
+#define	speed			${linkSong(title=Speedy Gonzalez, author=Hess\, Kaye\, Lee)}
+#define	talk		${linkSong(title=Everybody's Talkin', author=F. Neil)}
+#define	uptoyou			${linkSong(title=Leaving It Up To You, author=John Cale)}
+#define	weluv			${linkSong(title=We Love You, author=Mick Jagger)}
+#
+#	guest pass 2000
+#
+#define	cdr_guestpass2000		${linkAlbum(href=${jbc_albums}/cdr_guestpass2000.html, title=Guest Pass 2000)}
+#define	anthrax		${linkSong(title=Doktor Anthrax, href=${jbc_lyrics}/doktor_anthrax.html)}
+#define	dont		${linkSong(title=Don't Let Me Keep You, author=${owen})}
+#define	arse		${linkSong(title=Hey Now Baby (My Arse Is On Fire), author=${max})}
+#define	hobbu		${linkSong(title=The Hobbu Song, href=${jbc_lyrics}/hobbu.html, author=Robert Goodman)}
+#
+#	live covers
+#
+#define	afterhours	${linkSong(title=After Hours, author=Velvet Underground)}
+#define	rosemary		${linkSong(title=Rosemarie, author=Max Eider)}
+#define	steph			${linkSong(title=Stephanie Says, author=Lou Reed)}
+#define	pover			${linkSong(title=The Party's Over, author=David J.)}
+#define	skins			${linkSong(title=Take The Skinheads Bowling (Camper Van Beethoven))}
+#define	punks			${linkSong(title=Part Time Punks, author=The Television Personalities)}
+#define	biggy			${linkSong(title=Biggest Loudest Hairiest Group Of All, author=John Cale)}
+#define	inside_heart	${linkSong(title=Inside Your Heart, author=Velvet Underground)}
+#define	ache			${linkSong(title=Heartache Following Me, author=Jim Reeves)}
+#define	nature_boy	${linkSong(title=Nature Boy, author=Eden Ahbez)}
+#define	hey_star	${linkSong(title=Hey\, Star, author=${wolfi})}
+#define	satellite_of_love	${linkSong(title=Satellite Of Love, author=Lou Reed)}
+#define	rocking_in_the_free_world	${linkSong(title=Rocking In The Free World, author=Neil Young)}
+#define	september_gurls	${linkSong(title=September Gurls, author=Alex Chilton)}
+#define	Radio_Saigon	${linkSong(title=Radio Saigon, author=Sumosonic)}
+#define	Stop_This_City	${linkSong(title=Stop This City, author=David J.)}
+#define	Tread_Water		${linkSong(title=Tread Water, author=De La Soul)}
+#define	Just_One_Victory		${linkSong(title=Just One Victory, author=Todd)}
+#
+#	unreleased tracks
+#
+#define	wildlife	${linkSong(title=Wildlife, href=${jbc_lyrics}/wildlife.html)}
+#
+#	albums
+#
+#define	nons			${linkAlbum(href=${jbc_albums}/nonsense.html, title=Bloody Nonsense)}
+#define	closet			${linkAlbum(href=${jbc_albums}/closet.html, title=Edward's Closet)}
+#define	gift1			${linkAlbum(href=${jbc_albums}/gift1.html, title=The Gift of Music)}
+#define	gift2			${linkAlbum(href=${jbc_albums}/gift2.html, title=Big Questions)}
+#define	uncond			${linkAlbum(href=${jbc_albums}/unconditional.html, title=Unconditional)}
+#define	damn			${linkAlbum(href=${jbc_albums}/blackeg.html, title=The Black Eg)}
+
+#define	human			${linkSingle(href=${jbc_albums}/jungle.html, title=The Human Jungle)}
+#define	girlgo			${linkSingle(href=${jbc_albums}/girl.html, title=Girl-Go)}
+#define	rmen			${linkSingle(href=${jbc_albums}/men.html, title=Real Men)}
+#define	smith			${linkSingle(href=${jbc_albums}/smith.html, title=Southern Mark Smith)}
+#define	runner			${linkSingle(href=${jbc_albums}/roadrunner.html, title=Roadrunner)}
+#define	hard			${linkSingle(href=${jbc_albums}/hard.html, title=Hard)}
+#define	may				${linkSingle(href=${jbc_albums}/mayi.html, title=Speedy Gonzalez)}
+#define	angel			${linkSingle(href=${jbc_albums}/angels.html, title=Angels)}
+#define	zomby			${linkSingle(href=${jbc_albums}/zombie.html, title=Zombie Love)}
+#define	affect			${linkSingle(href=${jbc_albums}/va_another_spark.html, title=Affection)}
+#define	shir			${linkSingle(href=${jbc_albums}/shirley.html, title=Shirley Maclaine)}
+#define	marnie			${linkSingle(href=${jbc_albums}/marnie.html, title=Marnie)}
+#define	water			${linkSingle(href=${jbc_albums}/sweet_water.html, title=Sweetwater)}
+
+#define	thought			${linkSong(title=Thought for the Day)}
+#define	hardy			${linkSong(href=${jbc_lyrics}/hard.html, title=Hard)}
+#define	mayi			${linkSong(title=May I, author=Ayers)}
+
+#
+#	illuminate
+#
+#define	ill				${linkAlbum(href=${jbc_albums}/illuminate.html, title=Illuminate)}
+#define	violent			${linkSingle(href=${jbc_albums}/violent.html, title=&#161;Excellent! The Violent Years)}
+#define	16yr			${linkSingle(href=${jbc_albums}/sixteen_years.html, title=Sixteen Years)}
+#define	cute			${linkSong(href=${jbc_lyrics}/cute_submarines.html, title=Cute Submarines)}
+#define	16				${linkSong(href=${jbc_lyrics}/sixteen_years.html, title=Sixteen Years)}
+#define	elephant_man	${linkSong(title=Elephant Man)}
+#define	eleph			${linkSong(href=${jbc_lyrics}/great_elephants.html, title=A Great Visitation Of Elephants)}
+#define	enos			${linkSong(href=${jbc_lyrics}/when_eno_sings.html, title=When Eno Sings)}
+#define	ugly			${linkSong(href=${jbc_lyrics}/ugly_song.html, title=The Ugliest Song In The World)}
+#define	scarlet			${linkSong(href=${jbc_lyrics}/scarlett.html, title=Scarlett)}
+#define	beetle			${linkSong(href=${jbc_lyrics}/beetle_george.html, title=Beetle George)}
+#define	cops			${linkSong(href=${jbc_lyrics}/cops_and_hospitals.html, title=Cops And Hospitals)}
+#define	truck			${linkSong(href=${jbc_lyrics}/truck_o_fear.html, title=Truck Of Fear)}
+#define	dean			${linkSong(href=${jbc_lyrics}/blues_for_dean_read.html, title=Blues For Dean Read)}
+#define	sumo			${linkSong(href=${jbc_lyrics}/waiting_for_sumo.html, title=Waiting For Sumo)}
+#define	snakey			${linkSong(href=${jbc_lyrics}/old_snakey.html, title=Old Snakey)}
+#define	land			${linkSong(href=${jbc_lyrics}/land.html, title=Land)}
+#define	lulu			${linkSong(href=${jbc_lyrics}/lulus_nightmare.html, title=Lulu's Nightmare)}
+#define	surf			${linkSong(href=${jbc_lyrics}/surf_gear_in_idaho.html, title=Surf Gear In Idaho)}
+#define	true			${linkSong(href=${jbc_lyrics}/true_stories.html, title=True Stories)}
+
+#
+#	rotten soul
+#
+#define	rotten			${linkAlbum(href=${jbc_albums}/rotten.html, title=Rotten Soul)}
+#define	bigcats			${linkSong(href=${jbc_lyrics}/big_cats.html, title=Big Cats)}
+#define	comeon			${linkSong(href=${jbc_lyrics}/come_on_marie.html, title=${literalizeCommas(Come On, Marie)})}
+#define	baby			${linkSong(href=${jbc_lyrics}/baby_its_you.html, title=${literalizeCommas(Baby, It's You)})}
+#define	siberia			${linkSong(href=${jbc_lyrics}/mister_siberia.html, title=Mister Siberia)}
+#define	tough			${linkSong(href=${jbc_lyrics}/tough_priest.html, title=Tough Priest)}
+#define	sleepwalking	${linkSong(href=${jbc_lyrics}/sleepwalking.html, title=Sleepwalking)}
+#define	niagara			${linkSong(href=${jbc_lyrics}/niagara.html, title=Niagara)}
+#define	adore			${linkSong(href=${jbc_lyrics}/the_one_you_adore.html, title=The One You Adore)}
+#define	clyde			${linkSong(href=${jbc_lyrics}/the_ballad_of_tiny_and_clyde.html, title=The Ballad Of Tiny And Clyde)}
+#define	hatelove		${linkSong(href=${jbc_lyrics}/i_hate_love.html, title=I Hate Love)}
+#define	callme			${linkSong(href=${jbc_lyrics}/call_me.html, title=Call Me)}
+#define	morphine		${linkSong(href=${jbc_lyrics}/diamorphine.html, title=Diamorphine)}
+#
+#	gentlemen adventurers
+#
+#define	adventurers	${linkAlbum(href=${jbc_albums}/last_of_the_gentlemen_adventurers.html, title=Last of the Gentleman Adventurers)}
+#define	animals	${linkSong(href=${jbc_lyrics}/animals.html, title=Animals)}
+#define	shame_about_you	${linkSong(href=${jbc_lyrics}/shame_about_you.html, title=Shame About You)}
+#define	last_of_the_gentlemen_adventurers	${linkSong(href=${jbc_lyrics}/last_of_the_gentleman_adventurers.html, title=Last of the Gentleman Adventurers)}
+#define	tombe	${linkSong(href=${jbc_lyrics}/tombe_dans_les_pomes.html, title=Tomb&eacute; dans les pommes)}
+#define	count_me_out	${linkSong(href=${jbc_lyrics}/count_me_out.html, title=Count Me Out)}
+#define	single_saints	${linkSingle(href=${jbc_albums}/all_the_saints.html, title=All the Saints)}
+#define	all_the_saints	${linkSong(href=${jbc_lyrics}/all_the_saints.html, title=All the Saints)}
+#define	mercy	${linkSong(href=${jbc_lyrics}/mercy.html, title=Mercy)}
+#define	black_raoul	${linkSong(href=${jbc_lyrics}/black_raoul.html, title=Black Raoul)}
+#define	shakey	${linkSong(href=${jbc_lyrics}/shakey.html, title=Shakey)}
+#define	solar_core	${linkSong(href=${jbc_lyrics}/solar_core.html, title=Solar Core)}
+#define	saints_prayer	${linkSong(href=${jbc_lyrics}/saints_prayer.html, title=Saints Prayer)}
+#
+#	Highest In The Land
+#
+#define	highest		${linkAlbum(href=${jbc_albums}/highest_in_the_land.html, title=Highest in the Land)}
+#define	melanie		${linkSong(title=Melanie Hargreaves' Father's Jaguar, href=${jbc_lyrics}/melanie_hargreave.html)}
+#define	time		${linkSong(href=${jbc_lyrics}/time.html, title=Time)}
+#define	madness		${linkSong(title=Sea Madness, href=${jbc_lyrics}/sea_madness.html)}
+#define	never		${linkSong(title=Never Give Up, href=${jbc_lyrics}/never_give_up.html)}
+#define	amalfi		${linkSong(title=Amalfi Coast May 1963, href=${jbc_lyrics}/amalfi_coast.html)}
+#define	fumes		${linkSong(title=Running on Fumes, href=${jbc_lyrics}/running_on_fumes.html)}
+#define	thehighest	${linkSong(title=The Highest in the Land, href=${jbc_lyrics}/highest_in_the_land.html)}
+#define	sebastian	${linkSong(title=Sebastian's Medication, href=${jbc_lyrics}/sebastians_medication.html)}
+#define	goodnight	${linkSong(title=Goodnight Sweetheart, href=${jbc_lyrics}/goodnight_sweetheart.html)}
+#
+#	Fire Records box-sets
+#
+#define	fire_wasted	${linkAlbum(href=${jbc_albums}/fire_wasted.html, title=The Wasted Years)}
+#define	fire_violent	${linkAlbum(href=${jbc_albums}/fire_violent.html, title=The Violent Years)}
+#define	fire_cholmondley	${linkAlbum(href=${jbc_albums}/fire_cholmondley.html, title=Dr Cholmondley Repents)}
+#
+#	sumo
+#
+#define	sumosonic	${linkExternal(https://www.sumosonic.com, Sumosonic)}
+#define	friendly		${linkSong(title=${literalizeCommas(Come, Friendly Spacemen)})}
+
+#define	lunch			${linkAlbum(href=${jbc_albums}/free_lunch.html, title=The Jazz Butcher's Free Lunch)}
+#define	cake			${linkAlbum(href=${jbc_albums}/cake_city.html, title=Cake City)}
+
+#
+#	places
+#
+#define	USA	USA
+#define	DE	Germany
+#define	SW	Switzerland
+#define	HO	Holland
+#define	ITALIA	Italy
+#define	NOR	Norway
+#define	FR	France
+#define	CA	California
+#define	UK	UK
+#define	AU	Austria
+#define	ES	Spain
+#define	CAN	Canada
+#define	ONT	Ontario
+#define	NYC	New York
+#define	NH	Northampton
+#define	BELG	It's Got To Be Belgium (Slurp's Wino Bar)
+#define	HAM	Hamburg
+#define	FRANK	Frankfurt
+#define	PO	Onkel P&ouml;
+#define	LO	London
+#define	TOR	Toronto
+#define	AMST	Amsterdam
+#define	PAR	Paris
+#define	CHI	Chicago
+#define	LA	Los Angeles
+#define	SF	San Francisco
+#define	WA	Washington
+#define	FIDDLER			Mean Fiddler
+#define	AX				Lounge Ax
+#define	METRO			Cabaret Metro
+#define	CUBBY			Cubby Bear
+#define	TOWER			Tower Records
+						<img width=126 height=57 alt="[image]" src="${jbc_images}/tower.gif">
+#define	KCRW			${linkExternal(https://www.kcrw.org, KCRW)}
+#define	KTBS			${linkExternal(http://www.utexas.edu/students/kvrx, KTBS)}
+#define	WNUR			${linkExternal(http://www.wnur.org, WNUR)}
+						<img width=114 height=77 alt="[image]" src="${jbc_images}/wnur.gif">
+#define	WHPK			${linkExternal(http://whpk.uchicago.edu, WHPK)}
+#define	WXYC			${linkExternal(http://www.wxyc.org, WXYC)}
+#						<img width=129 height=56 alt="[image]" src="${jbc_images}/wxyc.gif">
+#define	CBC				<img alt="[CBC]" src="${jbc_images}/cbc.gif">
+#
+#	bootlegging codes
+#
+#define	code	(out of 10)
+#define	room	<span class="recording_source">Room</span>
+#define	d	<span class="recording_source">Soundboard</span>
+#define	r	<span class="recording_source">Radio Recording</span>
+#define	w	<span class="recording_media">Walkman</span>
+#define	DAT	<span class="recording_media">DAT</span>
+#define	VHS	<span class="recording_media">NTSC VHS</span>
+#define	PZM	<span class="recording_tech">PZM mics + soundboard mixed live</span>
+#define	mono	<span class="recording_channels">mono</span>
+#define	q(g)	Quality: <span class="recording_quality">${g}</span> ${code}
+#define	p(g)	Performance: <span class="recording_peformance">${g}</span>
+#define	g(g)	Generation: <span class="recording_generation">${g}</span>
+#define	i(g)	Interest: <span class="recording_interest">${g}</span> ${code}
+#define	g_details(g)	Details: <span class="recording_details">${g}</span>
+#define	yuck	<span class="recording_quality">Not so good quality...</span>
+#define	mt	<span class="recording_generation">Master Copy</span>
+#
+#	lyrics file macros
+#
+#define	t_beg	
+		<!-- begin the mini-table -->
+		<p>
+		<div>
+#define	t_end	
+		</div>
+		<!-- end the mini-table -->
+#define	found_beg
+		${tag_beg}
+		Found On
+		${tag_end}
+		<blockquote>
+#define	found_end
+		</blockquote>
+#define	audio_beg
+		<blockquote>
+#define	audio_end
+		</blockquote>
+#define	mkPatSez(txt) ${patsays_beg}${txt}${patsays_end}
+#define	mkMaxSez(txt) ${maxsays_beg}${txt}${maxsays_end}
+
+#define	notes	<br/><b>Notes</b>:
+#
+#	press file macros
+#
+#define	v_beg	<center><b>Interviewer</b>:
+#define	v_end	</center>
+#
+#	album file macros
+#
+#define	ALBUM	Album
+#define	SINGLE	Single
+#define	LP	LP
+#define	EP	EP
+#define	CD	Compact Disc
+#define	CDR	CDR
+#define	VAR	Various
+#define	COMP	Compilation
+#define	CAS	Cassette
+#define	12	12"
+#define	7	7"
+#define	LIVE	Live
+#define	a_class	<br/><b>Classification</b>:
+#define	a_label	<br/><b>Label</b>:
+#define	a_date	<br/><b>Date</b>:
+#define	a_cat	<br/><b>Catalogue</b>:
+#define	a_rec	<br/><b>Recorded</b>:
+#define	a_eng	<br/><b>Engineered</b>:
+#define	a_comp	<br/><b>Compiled By</b>:
+#define	a_where	<br/><b>Country</b>:
+#define	a_prod	<br/><b>Production</b>:
+#define	a_mix	<br/><b>Mixed</b>:
+#define	a_note	<br/><b>Note</b>:
+#define	a_sleev	<br/><b>Sleeve</b>:
+#define	a_photo	<br/><b>Photography</b>:
+#define	a_grv_a	<br/><b>A-Groove</b>:
+#define	a_grv_b	<br/><b>B-Groove</b>:
+#define	a_groov	<br/><b>Groove</b>:
+#define	a_ring	<br/><b>Ring</b>:
+#define	a_notes	<br/><b>Notes</b>:
+#define	anno_beg	<div class="lyric_annotation">
+#define	anno_end	</div>
+#
+#	tags
+#
+#define	tag_beg	<div class="headingItem">
+#define	tag_end	</div>
+#define	tag_pat	${tag_beg} The Butcher Says..  ${tag_end}
+#define	tag_max	${tag_beg} Max Eider Says..  ${tag_end}
+#define	tag_bishop		<a href="${jbc_people}/gabriel_turner.html">${tag_beg}The Bishop Says${tag_end}</a>
+#define	tag_credits		${tag_beg}Credits On${tag_end}
+#define	tag_liner		${tag_beg}Liner Notes${tag_end}
+#define	tag_links		${tag_beg}Links${tag_end}
+#define	tag_thanks		${tag_beg}Thanks${tag_end}
+#define	tag_players		${tag_beg}Credits${tag_end}
+#define	tag_songs		${tag_beg}The Songs${tag_end}
+#define	tag_words		${tag_beg}The Words${tag_end}
+#define	tag_reviews		${tag_beg}Reviews${tag_end}
+#define	tag_press		${tag_beg}Press${tag_end}
+#define	tag_details		${tag_beg}Details${tag_end}
+#define	tag_a-side		${tag_beg}A-Side${tag_end}
+#define	tag_b-side		${tag_beg}B-Side${tag_end}
+#define	tag_projects	${tag_beg}Other Projects${tag_end}
+#define	tag_studio		${tag_beg}Studio${tag_end}
+#define	tag_art			${tag_beg}Artwork${tag_end}
+#define	tag_production	${tag_beg}Production${tag_end}
+#define	tag_historical	${tag_beg}Historical Notes${tag_end}
+#define	bishop_beg	<p>${tag_bishop}<blockquote class="annotation">
+#define	bishop_end	</blockquote>
+#define	links_beg	${tag_links}<blockquote class="listItem">
+#define	links_end	</blockquote>
+#define	thx_beg		${tag_thanks}<blockquote class="listItem">
+#define	thx_end		</blockquote>
+#define	lin_beg		${tag_liner}<blockquote class="listItem">
+#define	lin_end		</blockquote>
+#define	credits_beg	${tag_credits}<blockquote class="listItem">
+#define	credits_end	</blockquote>
+#define	patsays_beg		${tag_pat} <div class="annotation">
+#define	patsays_end		</div>
+#define	news_beg		${tag_beg} <a href="${jbc_news}">News Items</a>  ${tag_end}
+#define	news_end
+#define	maxsays_beg		${tag_max}
+#define	maxsays_end		
+#define	press_beg		${tag_press}<blockquote>
+#define	press_end		</blockquote>
+#define	rev_beg		${tag_reviews}<blockquote>
+#define	rev_end		</blockquote>
+#define	historical_beg		${tag_historical}<blockquote>
+#define	historical_end		</blockquote>
+#define	a-side_beg	${tag_a-side}<blockquote>
+#define	a-side_end	</blockquote>
+#define	b-side_beg	${tag_b-side}<blockquote>
+#define	b-side_end	</blockquote>
+#define	projects_beg	${tag_projects}<blockquote>
+#define	projects_end	</blockquote>
+#define	production_beg	${tag_production}<blockquote>
+#define	production_end	</blockquote>
+#define	artist_beg	${tag_art}<blockquote>
+#define	artist_end	</blockquote>
+#define	studio_beg	${tag_studio}<blockquote>
+#define	studio_end	</blockquote>
+#define	det_beg		${tag_details}<blockquote>
+#define	det_end		</blockquote>
+#define	aka_beg		${tag_beg}AKA${tag_end}<blockquote>
+#define	aka_end		</blockquote>
+#define	players_beg		<p>${tag_players}<blockquote>
+#define	players_end		</blockquote>
+#define	words_beg	${tag_words}<blockquote>
+#define	words_end	</blockquote>
+#define	tun_beg		${tag_songs}<blockquote>
+#define	tun_end		</blockquote>
+#define	tunes_beg		${tag_beg}Played${tag_end}<blockquote>
+#define	tunes_end		</blockquote>
+#
+#	people file macros
+#
+#define	w_RIP	<br/><b>R.I.P.</b>:
+#define	w_role	<br/><b>Role</b>:
+#define	w_next	<br/><b>The Future</b>:
+#define	w_where	<br/><b>Resides</b>:
+#define	parseDomain(u)
+#live	if ((makeArray(_d, /, ${u})) && (defined(_d[3])))
+${_d[3]}
+#live	endif
+#
+#	gig file macros
+#
+#define	g_venue	<br/><b>Venue</b>:
+#define	g_blurb	<br/><b>Event</b>:
+#define	g_with(g)	${tag_beg}With${tag_end} <span class="g_with">${unfilter(${g})}</span>
+#define	g_who(g)	${tag_beg}Performers${tag_end} <span class="g_who">${unfilter(${g})}</span>
+#define	g_phone(g)	<br/><b>Telephone</b>: <span class="g_phone">${g}</span>
+#define	g_cost(g)	<br/><b>Admission</b>: <span class="g_cost">${g}</span>
+
+#define	g_datediff(d)
+	<span class="hiddendate">${d}</span>
+	<span class="date">(${date(l\, jS \o\f F Y, ${d})} -
+	${prettySecondsTerse(${eval(${_db_timestamp} - ${parseUnix(${d})})})} ago)
+	</span><!-- date -->
+
+#define	g_genericweb(x, g, u, t, s, d, xd)
+<div class='${s}'>
+<b>${t}</b>:
+#live	if (defined(x))
+	${x}
+#live	else
+#live		if (getval(g) == http)
+#live			if (defined(u))
+					${linkExternal(${u}, ${g})}
+#live			else
+					${linkExternal(${g}, ${parseDomain(u=${g})})}
+#live			endif
+#live		else
+#live			if (defined(u))
+#live				if (getval(u) == http)
+						${linkExternal(${u}, ${g})}
+#live				else
+						${linkInternal(${u}, ${g})}
+#live				endif
+#live			else
+					${replace(${replace(${g}, </p> ,)}, <p>, <br/><br/>)}
+#live			endif
+#live		endif
+#live	endif
+#live	if (defined(d))
+	${g_datediff(d=${d})}
+#live	endif
+#live	if (defined(xd))
+	${xd}
+#live	endif
+</div><!-- ${s} -->
+
+#define	g_web(g, u)			${g_genericweb(g=${g}, u=${u}, t=Website, s=venue_website)}
+#define	g_ticketweb(g, u)	${g_genericweb(g=${g}, u=${u}, t=Tickets, s=ticket_website)}
+#define	g_artistweb(g, u)	${g_genericweb(g=${g}, u=${u}, t=Artist Website, s=artist_website)}
+#define	g_eventweb(g, u)	${g_genericweb(g=${g}, u=${u}, t=Event Website, s=event_website)}
+#define	g_source(g, u, d)	${g_genericweb(g=${g}, u=${u}, t=Source, s=source, d=${d})}
+#define	g_credit(g, u, d)	${g_genericweb(g=${g}, u=${u}, t=Credit, s=credit, d=${d})}
+#define	g_reviewer(g, u, x)	${g_genericweb(x=${x}, g=${g}, u=${u}, t=Reviewer, s=reviewer)}
+#define	g_stat(g)	<br/><b>Radio Station</b>: <span class="radio_station">${g}</span>
+#define	g_contribution(g)
+#live	if (defined(${g}))
+	${g_genericweb(g=${${g}}, t=Contribution, s=credit)}
+#live	else
+	${g_genericweb(g=${g}, t=Contribution, s=credit)}
+#live	endif
+#define	g_postal	<br/><b>Postalcode</b>:
+#define	g_location	<br/><b>Location</b>:
+#define	g_etype	<br/><b>Event Type</b>:
+#define	g_town	<br/><b>Town</b>:
+#define	g_date	<b>Date</b>:
+#define	g_cas(g)	<br/><b>Cassette Cover</b>: <span class="g_cassette_cover">${linkInternal(${g})}</span>
+#define	g_dat(g)	<br/><b>DAT Cover</b>: <span class="g_dat_cover">${linkInternal(${g})}</span>
+#define	g_boot(g)	<br/><b>Bootlegger</b>: <span class="g_bootlegger">${g}</span>
+#define	g_support(g)	<br/><b>Support Act</b>: <span class="g_support_artist">${g}</span>
+#define	g_avail(g)	<br/><b>Contact</b>: <span class="g_bootleg_contact">${g}</span>
+#define	g_sound(g)	${tag_beg}Soundman${tag_end} <span class="g_soundman">${g}</span>
+#define	g_tech	${tag_beg}Recording${tag_end}
+#define	g_qual	${g_tech}
+#define	g_tunes	${tag_beg}Played${tag_end}<p>
+#define	g_caption(g) <br/><div class="caption">${unfilter(${g})}</div><!-- caption -->
+#
+#	mailing list macros
+#
+#define	creat	${linkExternal(http://www.creation-records.com, Creation Records)}
+
+#define	egli	<a href="mailto:megli@ici.net">Mike Egli</a>
+#define	tony	<a href="mailto:tonyli@microsoft.com">Tony Liano</a>
+#
+#	headers & such
+#
+#define	headerFeedback	<b>Feedback</b>
+#define	headerPreHistory	<b>Pre-JBC</b>
+#define	headerProject	<b>Projects</b>
+#define	header_jbc
+#define	header_wilson <b>Wilson</b>
+#define	header_eg <b>The Black Eg</b>
+#define	header_sumosonic <b>Sumosonic</b>
+#define	header_mr_blagdon <b>Mr. Blagdon</b>
+#define	header_cambodia <b>Cambodia</b>
+#define	header_vaguely_familiar <b>The Vaguely Familiar</b>
+#define	header_nightshift	<b>Nightshift</b>
+#define	header_institution <b>Institution</b>
+#define	header_sonic_tonix <b>Sonic Tonix</b>
+#define	header_the_tonix <b>The Tonix</b>
+#define	headerJBC
+	<a href="/"><b>The Jazz Butcher Conspiracy</b></a>
+#define	headerGigs
+	<a href="${jbc_gigs}"><b>Gigs</b></a>
+#define	headerGigYear(y)
+	<a href="${jbc_gigs}/${y}"><b>${y}</b></a>
+#define	headerPeople
+	<a href="${jbc_people}"><b>Conspirators</b></a>
+#define	headerHelp
+	<b>Help Us</b>
+#define	headerPress
+	<a href="${jbc_press}"><b>Press</b></a>
+#define	headerLyrics
+	<a href="${jbc_lyrics}"><b>Lyrics</b></a>
+#define	headerNews
+	<b>News</b>
+#define	headerAudio
+	<b>Audio</b>
+#define	headerPosters
+	<a href="${jbc_posters}"><b>Posters</b></a>
+#define	headerVideo
+	<b>Video</b>
+#define	headerReleases
+	<a href="${jbc_albums}"><b>Releases</b></a>
+#define	headerAlbums	${headerReleases}
+#define	headerEtc
+	<a href="${jbc_etc}"><b>Etc</b></a>
+#define	headerArticles
+	${headerEtc} | <b>Mailing List</b>
+#define	headerMAD
+	${headerEtc} | <b>How MAD Are You?</b>
+#define	headerLinks
+	${headerEtc} | <b>Pat's Recommended Links</b>
+#define	headerLetters
+	${headerEtc} | <a href="${jbc_letters}"><b>Letters From Pat</b></a>
+#define	headerNightshift
+	${headerPreHistory} | ${header_nightshift}
+#define	headerInstitution
+	${headerPreHistory} | ${header_institution}
+#define	headerSonicTonix
+	${headerPreHistory} | ${header_sonic_tonix}
+#define	headerTheTonix
+	${headerPreHistory} | ${header_the_tonix}
+#define	headerVaguelyFamiliar
+	${headerProject} | ${header_vaguely_familiar}
+#define	headerCambodia
+	${headerProject} | ${header_cambodia}
+#define	headerMrBlagdon
+	${headerProject} | ${header_mr_blagdon}
+#define	headerSumosonic
+	${headerProject} | ${header_sumosonic}
+#define	headerWilson
+	${headerProject} | ${header_wilson}
+#define	headerEg
+	${headerProject} | ${header_eg}
+#define	headerTrivia
+	${headerEtc} | <b>Trivia</b>
+#define	headerTribute
+	${headerEtc} | <b>Fan Tribute Project</b>
+#define	headerMax
+	${headerPeople} : ${max}
+#define	headerDronesClub
+	${headerProject} | ${header_drones_club}
+#define	headerMailingList
+	${headerEtc} | <a href="${jbc_articles}"><b>Mailing List</b></a>
+#define	headerMisc
+	<b>Misc.</b>
+
+#define	jbc_footer(res=${page})
+	<!--- CONTENT -->
+	${tag_beg}
+	Visitor Feedback
+	${tag_end}
+	${fetchComments(res=${db}/${res}, face=Titillium-Regular, limit=200)}
+	</div>
+	${footer}
+
+#define InMemoriam
+	<table width="100%">
+	<tr>
+	<td width="50%">
+	<center>
+	<h2>Patrick Guy Sibley Huntrods</h2>
+	<h3>AKA: Pat Fish - The Jazz Butcher</h3>
+	<b> 1957-12-20 .. 2021-10-05</b>
+#live	if (getval(page) != memoriam)
+	<br/> <br/> <br/>
+	<center>
+	<b>${linkInternal(/memoriam, Memoriam is here..)}</b>
+	</center>
+	<br/> <br/>
+	<center>
+	<b>${linkInternal(/fishy_mansions, The 9 "Fishy Mansions" livestreams are here..)}</b>
+	</center>
+#live	else
+	<br/> <br/> <br/>
+	<center>
+	<b>${linkInternal(/eulogy, Alan Moore's eulogy is here..)}</b>
+	</center>
+#live	endif
+	<br/> <br/> <br/> <br/>
+	${linkInternal(/help, Help enrich the JBC archives!)}
+	</center>
+	</td>
+	<td width="50%" valign="top">
+		<a href="/images/20211008_joolesjoyce_tribute.jpg"> <img src="/images/20211008_joolesjoyce_tribute_500.jpg" alt="tribute" style="border: 1px; border-radius: 10px;"></a>
+		${g_credit(g=Jooles Joyce)}
+	</td>
+	</tr>
+	</table>
+#	<a href="/images/20211006_portrait.jpg"><img src="/images/20211006_portrait_500.jpg" style="border-radius: 10px;"></a>
+#	${g_credit(g=Dave E. Barker)}
+#	${jbc_footer(memoriam.html)}
+
+#define	jbc_footer
+	<!--- CONTENT -->
+	${tag_beg}
+	Visitor Feedback
+	${tag_end}
+	${fetchComments(res=${db}/${page}, face=Titillium-Regular, limit=100)}
+	</div>
+	${footer}
+
+#define	doMediaEmbed(pr)
+#live	if (defined(${pr}->mediaurl))
+#live		if (getval(${pr}->mediaurl) == mp3)
+				<div class="listenItem">
+					<blockquote>
+						<span class="listenItemOrdinal">${${pr}->ordinal}.</span>
+						${linkAudio(title=${literalizeCommas(${${pr}->song})}, mp3=${${pr}->mediaurl}, author=${${pr}->author}, comment=${literalizeCommas(${${pr}->comment})})}
+#live			if (getval(${pr}->mediacredit))
+					${g_credit(g=${${pr}->mediacredit}, u=${${pr}->mediacrediturl})}
+#live			endif
+					</blockquote>
+				</div>
+#live		else
+				<span class="listenItemOrdinal">${${pr}->ordinal}.</span>
+				${songLinkMapped(${literalizeCommas(${${pr}->song})})}
+#live			if (getval(${pr}->author))
+					<span class="smalltext">(${${pr}->author})</span>
+#live			endif
+#live			if (getval(${pr}->comment))
+					<span class="smalltext"> (${${pr}->comment}) </span>
+#live			endif
+				<div class="listenItem">
+#live			if (getval(${pr}->mediaurl) == .mp4)
+					${embedVideo(url=${replace(${${pr}->mediaurl}, .mp4,)})}
+#live			else
+					${embedVideo(url=${${pr}->mediaurl})}
+#live			endif
+#live			if (getval(${pr}->mediacredit))
+					${g_credit(g=${${pr}->mediacredit}, u=${${pr}->mediacrediturl})}
+#live			endif
+				</div>
+#live		endif
+#live	else
+			<span class="listenItemOrdinal">${${pr}->ordinal}.</span>
+			${songLinkMapped(${literalizeCommas(${${pr}->song})})}
+#live		if (getval(${pr}->author))
+				<span class="smalltext"> (${${pr}->author}) </span>
+#live		endif
+#live		if (getval(${pr}->comment))
+				<span class="smalltext"> (${${pr}->comment}) </span>
+#live		endif
+#live	endif
+#live	if (getval(${pr}->performers))
+			<div class="smalltext"> ${${pr}->performers} </div>
+#live	endif
+#live	if ((sql(pe:select * from performance where datetime='${datetime}' and category='event' and type='${${pr}->type}' and setnum='${${pr}->setnum}' and ordinal='${${pr}->ordinal}')) && (getnum(pe->numResults) > 0))
+			<span class="smalltext">
+#live		while (pei = pe[*]->performer)
+				- ${parse(para=pe[${pei}]->performer)}
+#live			if (defined(pe[${pei}]->instruments))
+					: ${pe[${pei}]->instruments}
+#live			elseif (getnum(pe->numResults) = 1)
+					Solo
+#live			endif
+#live		endwhile
+			</span>
+#live	endif
+
+#define	fetchGigSongContent(datetime)
+#live	if (!defined(datetime))
+			${define(datetime, ${gigPage2Datetime()})}
+#live	endif
+#live	if (getval(datetime) != INVALID)
+#select * from gigsong where datetime='${datetime}' order by type, setnum, ordinal, gigsong_id
+#live	if ((sql(gs:select * from gigsong where datetime='${datetime}' order by type, setnum, ordinal, gigsong_id)) && (getval(gs->numResults) > 0))
+	${begTab(🎼 Played)}
+#live	while (idx = gs[*]->gigsong_id)
+#live		if ((getint(idx) == 1) || (getint(gs[${idx}]->setnum) != ${gs[${eval(${idx} - 1)}]->setnum}) || (getval(gs[${idx}]->type) != ${gs[${eval(${idx} - 1)}]->type}))
+#live			if (getint(idx) > 1)
+					</dl>
+#live			endif
+				${tag_beg}
+				${pretty(${gs[${idx}]->type})} ${gs[${idx}]->setnum}
+				${tag_end}
+				<dl>
+#live		endif
+			<dd>
+				${doMediaEmbed(pr=gs[${idx}])}
+			</dd>
+#live	endwhile
+	</dl>
+	${endTab}
+#live	endif
+#live	endif
+
+#define	navGig(x, icon, txt)
+#live	if (define(gUI, ${ts2URI(${${x}->datetime})}))
+	<a href="/gigs/${gUI}">
+<div class="${icon}">
+	${txt}
+</div>
+	</a>
+#live	endif
+
+#define	navYear(x, icon, txt)
+#live	if (define(gUI, ${parseYear(${${x}->datetime})}))
+	<a href="/gigs/${gUI}">
+<div class="${icon}">
+	${txt}
+</div>
+	</a>
+#live	endif
+
+#include	db_albums
+
+#define	albumCredits(person, short=yes, tab=no)
+#live	if ((sql(ac:select distinct(lookup) as lookup from performance where category='release' and (performer="[[person:${space2underscore(${unfilter(${person})})}]]" or aka="[[person:${space2underscore(${unfilter(${person})})}]]") order by datetime desc, lookup)) && (getnum(ac->numResults) > 0))
+#live	if (getval(tab) = yes)
+		${begTab(Credits)}
+#live	endif
+		${tag_beg}
+		<i>${person}</i> has ${ac->numResults} album credits
+		${tag_end}
+#live	if (getval(short) = yes)
+			<blockquote class="listItem">
+#live	endif
+#live	if (define(lastLookup, XXX))
+#live	endif
+#live	while (aci = ac[*]->lookup)
+#live	if (getval(lastLookup) != ${ac[${aci}]->lookup})
+#live		if (getval(short) = yes)
+#live			if (getnum(aci) > 1)
+					..
+#live			endif
+				${${ac[${aci}]->lookup}}
+#live		else
+				<div class="listItem">
+					${mkAlbumBlurb(prefix=${lookupAlbumBy(l=${ac[${aci}]->lookup})})}
+#live				if ((sql(siq:select instruments, performer, song from performance where length(instruments) > 0 && category='release' and lookup='${ac[${aci}]->lookup}' and (performer="[[person:${space2underscore(${unfilter(${person})})}]]" or aka="[[person:${space2underscore(${unfilter(${person})})}]]"))) && (getnum(siq->numResults) > 0))
+						<b>${parse(para=siq->performer, act=no)}</b>:
+#live					while (siqi = siq[*]->instruments)
+#live						if (getnum(siqi) > 1)
+								,
+#live						endif
+							${pretty(${siq[${siqi}]->instruments})}
+#live						if (defined(siq[${siqi}]->song))
+#								on ${songLinkMapped(title=${literalizeCOmmas(${siq[${siqi}]->song})})}
+
+on
+#live	if (makeArray(_as, [comma], ${siq[${siqi}]->song}))
+#live	while (_asi = _as[*]))
+#live	if (getnum(_asi) > 1)
+	,
+#live	endif
+	${songLinkMapped(title=${_as[${_asi}]})}
+#live	endwhile
+#live	endif
+
+#live						endif
+#live					endwhile
+#live				endif
+				</div>
+#live		endif
+#live	endif
+#live	if (define(lastLookup, ${ac[${aci}]->lookup}))
+#live	endif
+#live	endwhile
+#live	if (getval(short) = yes)
+			</blockquote>
+#live	endif
+#live	if (getval(tab) = yes)
+		${endTab}
+#live	endif
+#live	endif
+
+#define	mkHeader(project=jbc, section, title, passthru, navType, navPrev, navNext, home)
+#
+#	hack alert
+#	"_global_title" is used by peopleFooter
+#	to gain knowledge of what page it is on
+#
+#live	if (define(_global_title, ${title}))
+#live	endif
+	<head>
+	<title>
+	The Jazz Butcher Conspiracy
+#live	if (defined(section))
+	: ${section}
+#live	endif
+#live	if (defined(title))
+	: ${title}
+#live	endif
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/htdb/site/responsive-tabs.css">
+#	<script src="https://hypothes.is/embed.js" async></script>
+	${JBC_CSS}
+	</head>
+
+#live	if (getval(section) = Feedback)
+#live	else
+	${header}
+#live	endif
+
+	<div class="homeContainer">
+	<div class="homeHeader">
+
+#live		if (getval(project) != jbc)
+		${header_${project}} <span class="navsep"/>
+#live		else
+		<a href="/">The Jazz Butcher</a> <span class="navsep"/>
+#live		endif
+
+		<nobr>
+
+#live	if (defined(section))
+			${header${section}}
+#live	if (defined(title))
+				<span class="navsep"/>
+#live	endif
+#live	endif
+
+#live	if (defined(passthru))
+			${passthru}
+#live	endif
+
+#live	if (defined(title))
+			<i>${title}</i>
+#live	endif
+
+#live	if (defined(home))
+			<span style="margin-left: 50px;"/>${home}
+#live	endif
+
+#live	if (defined(navType))
+			<span class="smalltext" style="padding: 40px;">
+#live	if ((defined(navPrev)) && (getnum(${navPrev}->numResults) > 0))
+				${nav${navType}(x=${navPrev}, icon=left-arrow, txt=&lt;)}
+#live	endif
+#live	if ((defined(navNext)) && (getnum(${navNext}->numResults) > 0))
+				${nav${navType}(x=${navNext}, icon=right-arrow, txt=&gt;)}
+#live	endif
+			</span>
+#live	endif
+
+		</nobr>
+
+		</div>
+
+#live	if (getval(section) = Gigs)
+#live	if (!(defined(y)))
+	<div style="padding: 5px; background: #eee;">
+	<form action="${jbc_search}">
+		<nobr>
+	Find:
+		<select name="f">
+			<option value="venue" ${ternary((getval(f) = venue), selected)}>venue</option>
+			<option value="city" ${ternary((getval(f) = city), selected)}>city</option>
+			<option value="country" ${ternary((getval(f) = country), selected)}>country</option>
+			<option value="act" ${ternary((getval(f) = act), selected)}>shared the bill with JBC..</option>
+			<option value="performer" ${ternary((getval(f) = performer), selected)}>this band member performed..</option>
+			<option value="song" ${ternary((getval(f) = song), selected)}>played this song..</option>
+		</select>
+		</nobr>
+		<nobr>
+		Containing: <input type="text" name="q"
+#live	if ((defined(q)) && !(getval(f) = extras))
+			value="${q}"
+#live	else
+			value=""
+#live	endif
+		></input>
+		</nobr>
+		<input type="submit">
+	</form>
+#live	endif
+	</div>
+#live	endif
+	</div>
+#live	if ((getval(section) = Lyrics) && defined(title))
+#live	if (getval(project) != jbc)
+#live		if (getval(project) == eg)
+	<a href="${jbc_search}?f=extras&q=eg">
+	<div class="gig_eg"> ${define(_set,true)} </div>
+	</a>
+#live		endif
+#live		if (getval(project) == sumo)
+	<a href="${jbc_search}?f=extras&q=sumo">
+	<div class="gig_sumo"> ${define(_set,true)} </div>
+	</a>
+#live		endif
+#live		if (getval(project) == wilson)
+	<a href="${jbc_search}?f=extras&q=wilson">
+	<div class="gig_wilson"> ${define(_set,true)} </div>
+	</a>
+#live		endif
+#live	endif
+#live	if (getval(${prefix}->extra) == store)
+	${tag_beg}
+	In-Store
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+#live	if (getval(${prefix}->extra) == session)
+	${tag_beg}
+	Recording Session
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+#live	if (getval(${prefix}->extra) == interview)
+	${tag_beg}
+	<a href="${jbc_search}?f=extras&q=interview">Interview</a>
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+#live	if (getval(${prefix}->extra) == duo)
+	${tag_beg}
+	<a href="${jbc_search}?f=extras&q=duo"><img src="/images/iconPat.gif">Pat <img src="/images/iconMax.gif"> Max Duo</a>
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+#live	if (getval(${prefix}->extra) == solo)
+	${tag_beg}
+	<a href="${jbc_search}?f=extras&q=solo">${iconSolo} Pat Fish Solo</a>
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+	${beg_tabs}
+	${begTab(Lyrics)}
+	${tag_beg}
+	${title}
+	${tag_end}
+	<blockquote>
+#live	else if ((getval(section) = People) && (defined(title)) && !(getval(title) = Pat Fish))
+#	${tag_beg}
+#	${title}
+#	${tag_end}
+#	${albumCredits(person=${title})}
+#	${doGigPerformer(person=${title}, inline=no)}
+#live	endif
+
+#define	doGigSongVideo(title)
+#live	if ((sql(dgp:select * from gigsong gs, gig g where gs.song = "${title}" and (gs.mediaurl like "%%youtube%%" || gs.mediaurl like "%%vimeo%%" || gs.mediaurl like '/video/%') and gs.datetime=g.datetime and g.isdeleted is NULL order by gs.datetime desc)) && (getint(dgp->numResults) > 0))
+#live	while (dgpi = dgp[*]->song)
+#live		if (define(dgpTitle,))
+#live		endif
+#live		if (defined(dgp[${dgpi}]->title))
+#live			if (define(dgpTitle, ${dgp[${dgpi}]->title} version from <a href="${jbc_gigs}/${ts2URI(${dgp[${dgpi}]->datetime})}">${substr(0, 10, ${dgp[${dgpi}]->datetime})}</a>))
+#live			endif
+#live		else
+#live			if (define(dgpTitle, <b><a href="${jbc_gigs}/${ts2URI(${dgp[${dgpi}]->datetime})}">${substr(0, 10, ${dgp[${dgpi}]->datetime})}</a></b> ${dgp[${dgpi}]->venue} - ${dgp[${dgpi}]->city}\, ${dgp[${dgpi}]->country}))
+#live			endif
+#live		endif
+			<div class="listenItem">
+				${dgpTitle}
+				${embedVideo(url=${dgp[${dgpi}]->mediaurl}, anno=dgp[${dgpi}]->comment)}
+#live			if (getval(dgp[${dgpi}]->mediacredit))
+					${g_credit(g=${dgp[${dgpi}]->mediacredit}, u=${dgp[${dgpi}]->mediacrediturl})}
+#live			endif
+			</div>
+#live	endwhile
+#live	endif
+
+#define	doGigSongAudio(title)
+#live	if ((sql(dgp:select * from gigsong gs, gig g where gs.song = "${title}" and gs.mediaurl like "%%mp3" and gs.datetime=g.datetime and g.isdeleted is NULL order by gs.datetime desc)) && (getint(dgp->numResults) > 0))
+#live	while (dgpi = dgp[*]->song)
+#live		if (define(dgpTitle,))
+#live		endif
+#live		if (defined(dgp[${dgpi}]->title))
+#live			if (define(dgpTitle, ${dgp[${dgpi}]->title} version from <a href="${jbc_gigs}/${ts2URI(${dgp[${dgpi}]->datetime})}">${substr(0, 10, ${dgp[${dgpi}]->datetime})}</a>))
+#live			endif
+#live		else
+#live			if (define(dgpTitle, <b><a href="${jbc_gigs}/${ts2URI(${dgp[${dgpi}]->datetime})}">${substr(0, 10, ${dgp[${dgpi}]->datetime})}</a></b> ${dgp[${dgpi}]->venue} - ${dgp[${dgpi}]->city}\, ${dgp[${dgpi}]->country}))
+#live			endif
+#live		endif
+			<div class="listenItem">
+				<blockquote>
+				${linkAudio(autolink=no, title=${dgpTitle}, mp3=${dgp[${dgpi}]->mediaurl}, comment=${literalizeCommas(${dgp[${dgpi}]->comment})})}
+#live			if (getval(dgp[${dgpi}]->mediacredit))
+					${g_credit(g=${dgp[${dgpi}]->mediacredit}, u=${dgp[${dgpi}]->mediacrediturl})}
+#live			endif
+				</blockquote>
+			</div>
+#live	endwhile
+#live	endif
+
+#define	doGigSong(title)
+#live	if ((sql(dgs:select year(gs.datetime) as year, g.extra from gigsong gs, gig g where gs.song = "${title}" and gs.datetime=g.datetime and g.isdeleted is NULL order by gs.datetime)) && (getnum(dgs->numResults) > 0))
+	${tag_beg}
+		${dgs->numResults} documented performances <a class="smalltext" href="${jbc_search}?f=song&q=${encode(${title})}">(click to explore)</a>
+	${tag_end}
+	${doGraph(prefix=dgs, section=performed, inpage=no, skip0=yes, href=${jbc_search}?f=song&q=${encode(${title})})}
+#live	endif
+
+#define	showGigListing(prefix)
+	${mkGigLink(ts=${${prefix}->datetime}, venue=${literalizeCommas(${${prefix}->venue})}, eventweb=${literalizeCommas(${${prefix}->eventweb})}, phone=${literalizeCommas(${${prefix}->phone})}, cost=${literalizeCommas(${${prefix}->cost})}, ticketweb=${literalizeCommas(${${prefix}->ticketweb})}, with=${literalizeCommas(${${prefix}->alsowith})}, address=${literalizeCommas(${${prefix}->address})}, city=${literalizeCommas(${${prefix}->city})}, state=${literalizeCommas(${${prefix}->state})}, postalcode=${${prefix}->postalcode}, country=${literalizeCommas(${${prefix}->country})}, blurb=${literalizeCommas(${${prefix}->blurb})}, extra=${replace(${literalizeCommas(${${prefix}->extra})}, \,, -)}, what=${literalizeCommas(${${prefix}->title})})}
+
+#define	doGigsListing(date)
+#live   if (sql(g:select gig_id, datetime, year(datetime) as year, month(datetime) as mon, day(datetime) as day, hour(datetime) as hour, minute(datetime) as minute, venue, eventweb, phone, cost, ticketweb, alsowith, address, city, state, postalcode, country, extra, blurb, title from jazzbutcher_com.gig where year(datetime)=year('${date}') and isdeleted is NULL order by datetime))
+#live	if (sql(_prevyr:select datetime, venue from gig where year(datetime)<'${g->year}' and isdeleted is NULL  order by datetime desc limit 1))
+#live	endif
+#live	if (sql(_nextyr:select datetime, venue from gig where year(datetime)>'${g->year}' and isdeleted is NULL  order by datetime limit 1))
+#live	endif
+	${mkHeader(section=Gigs, title=${g[1]->year}, navType=Year, navPrev=_prevyr, navNext=_nextyr)}
+#live	while (x = g[*]->gig_id)
+#live	if (getval(g[${x}]->mon) != ${g[${eval(${x} - 1)}]->mon})
+	${mkGigMonth(m=${num2month(${g[${x}]->mon})})}
+#live	endif
+	${showGigListing(prefix=g[${x}])}
+#live	endwhile
+	${jbc_footer}
+#live	endif
+
+#define	ts2Thing(thing=poster, width, type=standard, ts)
+#live	if (getval(type) = link)
+/images/${substr(0, 4, ${ts})}${substr(5, 2, ${ts})}${substr(8, 2, ${ts})}/${substr(0, 4, ${ts})}${substr(5, 2, ${ts})}${substr(8, 2, ${ts})}_${thing}.jpg
+#live	else
+/images/${substr(0, 4, ${ts})}${substr(5, 2, ${ts})}${substr(8, 2, ${ts})}/${substr(0, 4, ${ts})}${substr(5, 2, ${ts})}${substr(8, 2, ${ts})}_${thing}_${width}.jpg
+#live	endif
+
+#define	ts2SetlistLink(ts)	${ts2Thing(thing=setlist, type=link, ts=${ts})}
+#define	ts2Setlist(ts, width=250)	${ts2Thing(thing=setlist, ts=${ts}, width=${width})}
+#define	ts2PosterLink(ts)	${ts2Thing(thing=poster, type=link, ts=${ts})}
+#define	ts2Poster(ts, width=250)	${ts2Thing(thing=poster, ts=${ts}, width=${width})}
+#define	ts2TicketLink(ts)	${ts2Thing(thing=ticket, type=link, ts=${ts})}
+#define	ts2Ticket(ts, width=250)	${ts2Thing(thing=ticket, ts=${ts}, width=${width})}
+
+#define	mkGigDatetime(ts)
+#live	if (int(${substr(11, 2, ${ts})}) > 0)
+	${date(D\, M jS Y g:ia, ${ts})}
+#live	else if (int(${substr(8, 2, ${ts})}) > 0)
+	${date(D\, M jS Y, ${ts})}
+#live	else if (int(${substr(6, 2, ${ts})}) > 0)
+	${date(F Y, ${ts})}
+#live	else
+	${substr(0, 4, ${ts})}
+#live	endif
+
+#define	mkGigLink(ts, venue, eventweb, phone, cost, ticketweb, with, address, city, state, postalcode, country, blurb, extra, what, sidebar=false)
+#live	if (define(gigBase, ${jbc_gigs}))
+#live	endif
+#live	if (define(year,))
+#live	endif
+#live	if (define(mon,))
+#live	endif
+#live	if (define(monName,))
+#live	endif
+#live	if (define(day,))
+#live	endif
+#live	if (define(gigURI,))
+#live	endif
+#live	if (strlen(ts))
+#live		if (define(year, ${substr(0, 4, ${ts})}))
+#live		endif
+#live		if (define(mon, ${substr(5, 2, ${ts})}))
+#live		endif
+#live		if (define(monName, ${num2mon(${int(${mon})})}))
+#live		endif
+#live		if (define(day, ${substr(8, 2, ${ts})}))
+#live		endif
+#live		if (define(gigURI, ${ts2URI(${ts})}))
+#live		endif
+#live	endif
+#
+#	only insert if called from homepage
+#
+#live	if (getval(sidebar)=true)
+#live		if (sql(insert ignore into gig set datetime='${ts}', venue='${replace(${venue}, ', '')}', eventweb='${replace(${eventweb}, ', '')}', phone='${replace(${phone}, ', '')}', cost='${replace(${cost}, ', '')}', ticketweb='${replace(${ticketweb}, ', '')}', alsowith='${replace(${with}, ', '')}', address='${replace(${address}, ', '')}', city='${replace(${city}, ', '')}', state='${state}', country='${country}', postalcode='${postalcode}', blurb='${replace(${blurb}, ', '')}', title='${replace(${what}, ', '')}', extra='${replace(${extra},-,\,)}'))
+#live		endif
+#live	endif
+	<a href="${gigBase}/${gigURI}">
+	<div class='gig_pane'>
+#live	if (getval(extra) == nopat)
+	<div class="gig_nopat"></div>
+#live	elseif (getval(extra) == eg)
+	<div class="gig_eg"></div>
+#live	elseif (getval(extra) == sumo)
+	<div class="gig_sumo"></div>
+#live	elseif (getval(extra) == wilson)
+	<div class="gig_wilson"></div>
+#live	endif
+	<div class="gig_listing_date">
+		<div
+#live	if (getnum(year) == ${_current_year})
+#live		if (getnum(mon) > ${_current_monthnum})
+		class="gig_future"
+#live		else if ((getnum(mon) = ${_current_monthnum}) && (getnum(day) > ${_current_day}))
+		class="gig_soon"
+#live		else
+		class="gig_future"
+#live		endif
+#live	else
+		class="gig_past"
+#live	endif
+		>
+		${mkGigDatetime(${ts})}
+		${ternary((defined(blurb)), <div class="textplus1"><i>${replace(${blurb}, @, \@)}</i></div>,)}
+	</div>
+	<div class="gig_listing_details">
+		${ternary((defined(venue)), \@ ${replace(${literalizeCommas(${venue})}, @, \@)}<br/>,)}
+		${ternary((defined(what)), <b>${what}</b>,)}
+		${ternary((defined(address)), ${address}<br/>,)}
+		${ternary((defined(city)), ${city},)}
+		${ternary((defined(state)), ${state}\,,)}
+		${ternary((defined(country)), ${country},)}
+		${ternary((defined(postalcode)), ${postalcode},)}
+		<div class="gig_listing_extras">
+#live	if ((sql(ac:select count(*) as cnt from feedback where uri='gigs/${gigURI}')) && (getnum(ac->cnt) > 0))
+			${iconFeedback}
+#live	endif
+#live	if (getval(extra) == players)
+			${iconPlayers}
+#live	endif
+#live	if (getval(extra) == review)
+			${iconReview}
+#live	endif
+#live	if (getval(extra) == pix)
+			${iconPix}
+#live	endif
+#live	if (getval(extra) == recording)
+			${iconRecording}
+#live	endif
+#live	if (getval(extra) == video)
+			${iconVideo}
+#live	endif
+#live	if ((getval(extra) == with) || (defined(with)))
+			${iconWith}
+#live	endif
+#live	if (getval(extra) == self)
+			${iconSelf}
+#live	endif
+#live	if (getval(extra) == pat)
+			<img src="${images}/iconPat.gif" width=17 height=16 alt="[pat notes]">
+#live	endif
+#live	if (getval(extra) == duo)
+			[pat&max]
+#live	endif
+#live	if (getval(extra) == solo)
+			${iconSolo}
+#live	endif
+#live	if (getval(extra) == interview)
+			[interview]
+#live	endif
+##live	if (getval(extra) == wilson)
+#			[Wilson]
+##live	endif
+##live	if (getval(extra) == eg)
+#			[Black Eg]
+##live	endif
+#live	if (getval(extra) == max)
+			[max says..]
+#live	endif
+#live	if (getval(extra) == ticket)
+			[ticket stub]
+#live	endif
+##live	if (getval(extra) == teaser)
+#			[show teaser]
+##live	endif
+#live	if (getval(extra) == bishop)
+			[Gabriel Turner reviews]
+#live	endif
+#live	if (getval(extra) == press)
+			${iconPress}
+#live	endif
+#live	if (getval(extra) == setlist)
+			[setlist]
+#live	endif
+#live	if (getval(extra) == songlist)
+			${iconSonglist}
+#live	endif
+#live	if (getval(extra) == tribute)
+	[Tribute]
+#live	endif
+##live	if ((sql(_ht:select num from hit where domain_id=${_domain_id} and resource='gigs/${gigURI}')) && (getnum(_ht->num) > 0))
+#	(${prettyNumber(${_ht->num})} viewings)
+##live	endif
+	</div>
+#live	if (getval(extra) == poster)
+		<div class="gig_listing_poster">
+#live		if (getval(sidebar) = true)
+				<img style="border: 1px solid;" alt="[poster for ${gigURI}]" src="${ts2Poster(ts=${ts}, width=500)}">
+#live		else
+				<img style="border: 1px solid;" alt="[poster for ${gigURI}]" src="${ts2Poster(ts=${ts})}">
+#live		endif
+		</div>
+#live	else if (getval(extra) == ticket)
+		<div class="gig_listing_poster">
+			<img style="border: 1px solid;" alt="[ticket for ${gigURI}]" src="${ts2Ticket(ts=${ts})}">
+		</div>
+#live	endif
+	</div>
+	</div>
+	</div>
+	</a>
+
+#define mkGigYear(y, section=main)
+	<a name="${y}_${section}">
+	${tag_beg}
+	${y}
+	${tag_end}
+	</a>
+
+#define mkGigMonth(m)
+	${tag_beg}
+	${m}
+	${tag_end}
+
+#
+#	inverse of gigPage2Datetime()
+#
+#define	ts2URI(ts)
+#live	if (define(_base, ${substr(0, 4, ${ts})}/${num2mon(${int(${substr(5, 2, ${ts})})})}))
+#live	endif
+#live	if (define(_dd, ${substr(8, 2, ${ts})}))
+#live	endif
+#live	if (int(${_dd}) > 0)
+#
+#	have a day
+#
+#live		if (int(${substr(11, 2, ${ts})}) > 0)
+#
+#	have an hour
+#
+${_base}${int(${_dd})}_${substr(11, 2, ${ts})}${substr(14, 2, ${ts})}.html
+#live		else
+#
+#	no hour
+#
+${_base}${int(${_dd})}.html
+#live		endif
+#live	else
+#
+#	no day
+#
+${_base}.html
+#live	endif
+
+#define	gigURI2ts(y, u)
+	${define(hh, 00)}
+	${define(min, 00)}
+	${define(dd, 00)}
+	${define(mm, 00)}
+	${define(yy, 0000)}
+#live	if (getval(u) == _)
+#
+#	1983/Nov24_20.html
+#
+#live		if (makeArray(xx, _, ${u}))
+	${define(hh, ${substr(0, 2, ${xx[2]})})}
+	${define(min, ${substr(2, 4, ${xx[2]})})}
+#live		endif
+#live		if (define(dd, ${padZero(${int(${substr(3, 2, ${u})})})}))
+	${define(mm, ${month2num(${substr(0, 3, ${u})})})}
+	${define(yy, ${substr(5, 4, ${y})})}
+#live		endif
+#live	else
+#
+#	1983/Nov24.html
+#
+#live		if (define(dd, ${padZero(${int(${substr(3, 2, ${u})})})}))
+	${define(mm, ${month2num(${substr(0, 3, ${u})})})}
+	${define(yy, ${substr(5, 4, ${y})})}
+#live		endif
+#live	endif
+	${yy}-${padZero(${mm})}-${dd} ${hh}:${padZero(${min})}:00
+
+#
+#	inverse of ts2URI()
+#
+#define	gigPage2Datetime()
+	${gigURI2ts(y=${db}, u=${page})}
+
+#define	mkGigDate(ts)
+#live	if (!defined(ts))
+	${define(_ts, ${gigPage2Datetime()})}
+#live	else
+	${define(_ts, ${ts})}
+#live	endif
+	${define(yy, ${substr(0, 4, ${_ts})})}
+	${define(dd, ${substr(8, 2, ${_ts})})}
+	${define(hh, ${int(${substr(11, 2, ${_ts})})})}
+#live	if (getnum(dd) > 0)
+	${date(l\, F jS, ${_ts})}
+	<a href="${jbc_gigs}/${yy}"><b>${yy}</b></a>
+#live	else
+	${date(F, ${_ts})}
+	<a href="${jbc_gigs}/${yy}"><b>${yy}</b></a>
+#live	endif
+#live	if (getnum(hh) > 0)
+	${date(g:ia, ${_ts})}
+#live	endif
+
+#define	upcomingGigs(sidebar=true)
+#	${tag_beg}
+##live	if (getval(sidebar) = true)
+#	<a href="${jbc_gigs}">Next Up..</a>
+##live	else
+#	Upcoming Events
+##live	endif
+#	${tag_end}
+
+#${mkGigLink(ts=1994-07-27 00:00:00, venue=The Fortress, address=King's Cross, city=London, country=England, sidebar=${sidebar}, extra=eg, blurb=A rave)}
+#${mkGigLink(ts=2010-07-15 00:00:00, venue=Hoxton Bar and Grill, address=81 Great Eastern Street, city=London, country=England, postalcode=EC2A 3HU, sidebar=${sidebar}, extra=with-solo, blurb=Spacemen 3: A Reunion of Friends, with=Spacemen 3)}
+#${mkGigLink(ts=2023-04-02 19:00:00, venue=The Labour Club, address=95-97 Charles St, city=Northampton, country=England, postalcode=NN1 3, sidebar=${sidebar}, extra=tribute-poster, blurb=Masters of Budvar Presents: The Ship of Fools)}
+#${mkGigLink(ts=2001-07-14, venue=A Wedding, city=Monterey, state=California, country=USA, sidebar=${sidebar}, extra=players-pix)}
+#${mkGigLink(ts=2022-12-18 19:30:00, venue=The Lexington, address=96-98 Pentonville Road, city=London, country=England, postalcode=N1 9JB, cost=£13.80, eventweb=https://www.wegottickets.com/event/559152, sidebar=${sidebar}, extra=tribute)}
+# RIP	${mkGigLink(ts=2021-10-07 19:30:00, venue=The Thunderbolt, address=124 Bath Road, city=Bristol, country=England, postalcode=BS4 3ED, cost=£10.00, eventweb=https://wegottickets.com/event/514053, sidebar=${sidebar}, extra=solo-poster-with)}
+# RIP	${mkGigLink(ts=2021-11-27 19:30:00, venue=The Dublin Castle, address=94 Parkway, city=London, country=England, postalcode=NW1 7AN, cost=£12.00, eventweb=https://wegottickets.com/event/5147127, sidebar=${sidebar}, extra=poster-with)}
+#	${mkGigLink(ts=2021-08-21 19:00:00, venue=The Ferret, address=55 Fylde Rd, city=Preston, country=England, postalcode=PR1 2XQ, cost=£44.00, price=free, eventweb=https://theferret.live, sidebar=${sidebar}, extra=solo-poster)}
+#	${mkGigLink(ts=2021-08-20 18:00:00, venue=The Continental, address=South Meadow Lane, city=Preston, country=England, postalcode=PR1 8JP, cost=£44.00, eventweb=https://newcontinental.net/, ticketweb=https://www.skiddle.com/whats-on/Preston/The-Continental/Preston-Pop-Fest-/35794204/, sidebar=${sidebar}, extra=solo-poster)}
+#	${mkGigLink(ts=2020-09-28 22:00:00, venue=Fishy Mansions, address=, city=Northampton, country=England, postalcode=NN1, sidebar=${sidebar}, extra=solo)}
+#	${mkGigLink(ts=2021-07-25 22:00:00, venue=Fishy Mansions, address=, city=Northampton, country=England, postalcode=NN1, sidebar=${sidebar}, extra=solo-poster)}
+#	${mkGigLink(ts=2021-06-06 22:00:00, venue=Fishy Mansions, address=, city=Northampton, country=England, postalcode=NN1, sidebar=${sidebar}, extra=solo-poster)}
+#	${mkGigLink(ts=2021-04-18 22:00:00, venue=Fishy Mansions, address=, city=Northampton, country=England, postalcode=NN1, sidebar=${sidebar}, extra=solo-poster)}
+#	${mkGigLink(ts=2021-02-28, venue=Fishy Mansions, address=, city=Northampton, country=England, postalcode=NN1, sidebar=${sidebar}, extra=solo-poster)}
+#	${mkGigLink(ts=2020-12-31, venue=Fishy Mansions, address=, city=Northampton, country=England, postalcode=NN1, sidebar=${sidebar}, extra=solo-poster)}
+#	${mkGigLink(ts=2020-10-10, venue=Online: 'You Got Good Taste', address=, city=, country=, postalcode=, sidebar=${sidebar}, extra=solo)}
+#	${mkGigLink(ts=2020-12-06, venue=Fishy Mansions, address=, city=Northampton, country=England, postalcode=NN1, sidebar=${sidebar}, extra=solo-poster)}
+#	${mkGigLink(ts=2020-07-12, venue=Fishy Mansions, address=, city=Northampton, country=England, postalcode=NN1, sidebar=${sidebar}, extra=solo-poster)}
+#	${mkGigLink(ts=2020-06-14, venue=Fishy Mansion, address=, city=Northampton, country=England, postalcode=NN1, sidebar=${sidebar}, extra=solo)}
+#	${mkGigLink(ts=2019-10-11 19:30:00, venue=The Betsey Trotwood, address=56 Farrington Road, city=London, country=England, postalcode=EC1R 3BL, sidebar=${sidebar}, extra=with-solo-poster)}
+#	${mkGigLink(ts=2019-10-24 19:30:00, venue=Club Academy\, Manchester University Union, address=Oxford Road, city=Manchester, country=England, postalcode=M13 9PR, sidebar=${sidebar}, extra=with-solo)}
+#	${mkGigLink(ts=2019-10-26 18:30:00, venue=The MOTH Club, address=Old Trades Hall\, Valette Street, city=Hackney\, London, country=England, postalcode=E9 6NU, sidebar=${sidebar}, extra=with-solo-poster)}
+
+#	${mkGigLink(ts=2019-11-09 19:30:00, venue=The Lexington, address=96-98 Pentonville Rd\, Islington, city=London, country=England, postalcode=N1 9JB, sidebar=${sidebar}, extra=with-solo-poster)}
+#	${mkGigLink(ts=2019-11-30 19:00:00, venue=The Hope & Anchor, address=207 Upper Street, city=London, country=England, postalcode=N1 1RL, sidebar=${sidebar}, extra=with-solo-poster)}
+#	${mkGigLink(ts=2019-08-17 00:00:00, venue=Pomfret Arms, address=10 Cotton End, city=Nothampton, country=England, postalcode=NN4 8BS, sidebar=${sidebar}, blurb=King Genius Festival, extra=pix-solo)}
+#	${mkGigLink(ts=2019-03-30 19:30:00, venue=Latest Music Bar, address=14-17 Manchester Street, city=Brighton, country=England, postalcode=BN2 1TF, sidebar=${sidebar}, extra=with-solo-poster)}
+#	${mkGigLink(ts=2019-04-06 22:30:00, venue=16 Toneladas, address=Calle Ricardo Micó\, 3, city=Valencia, country=Spain, postalcode=46009, sidebar=${sidebar}, extra=with-solo-poster)}
+#	${mkGigLink(ts=2012-12-21 00:00:00, venue=Upstairs at The Garage, address=20-22 Highbury Corner, city=London, country=England, postalcode=N5, sidebar=${sidebar}, extra=with-solo-poster)}
+#	${mkGigLink(ts=2018-08-04 21:00:00, venue=Albion Brewery Bar, address=54 Kingswell St, city=Northampton, country=England, postalcode=NN1 1PR, sidebar=${sidebar}, extra=with-solo-poster)}
+#	${mkGigLink(ts=2018-05-05 19:30:00, ticketweb=https://www.seetickets.com/event/luke-haines/the-lexington-london/1204840, venue=The Lexington, address=96-98 Pentonville Road, city=London, country=England, postalcode=N1 9JB, sidebar=${sidebar}, extra=with-solo)}
+#	${mkGigLink(ts=2018-05-24 20:00:00, ticketweb=https://www.wegottickets.com/event/436057, venue=The Labour Club, address=95-97 Charles St, city=Northampton, country=England, postalcode=NN1 3, sidebar=${sidebar}, extra=with-poster)}
+#	${mkGigLink(ts=2018-05-27 19:30:00, ticketweb=https://www.seetickets.com/event/the-bevis-frond/100-club/1206772, venue=100 Club, address=100 Oxford Street, city=London, country=England, postalcode=W1D 1LL, sidebar=${sidebar}, extra=with-poster)}
+#	${mkGigLink(ts=2018-07-28 19:30:00, venue=The Thunderbolt, address=124 Bath Road, city=Totterdown\, Bristol, postalcode=BS4 3ED, country=England, sidebar=${sidebar}, extra)}
+#	${mkGigLink(ts=1983-04-19 20:30:00, venue=The Steam Heat Room\, The Old White Horse, address=, city=Brixton\, London, country=England, postalcode=SW2 5BZ, sidebar=${sidebar}, extra=with-review)}
+#	${mkGigLink(ts=2017-10-20 19:00:00, ticketweb=http://www.seetickets.com/event/jasmine-minks/broadcast/1104748, venue=Broadcast, address=427 Sauchiehall Street, city=Glasgow, country=Scotland, postalcode=G2 3LG, extra=with, sidebar=${sidebar})}
+#	${mkGigLink(ts=2017-10-21 19:30:00, sidebar=${sidebar}, extra=with, cost=&pound;9:00, ticketweb=https://www.skiddle.com/whats-on/Aberdeen/Krakatoa/the-jasmine-minks--jazz-butcher-quarte/12895927/, venue=Krakatoa, address=2 Trinity Quay, city=Aberdeen, country=Scotland, postalcode=AB11 5AA)}
+#	${mkGigLink(ts=2017-10-22 19:00:00, sidebar=${sidebar}, cost=free, venue=Outlaws Yacht Club, address=38 New York Street, city=Leeds, country=England, postalcode=LS2 7DY)}
+#	${mkGigLink(ts=2018-03-01 19:30:00, ticketweb=https://www.ticketweb.uk/event/the-jazz-butcher-100-club-tickets/7768855, venue=100 Club, address=100 Oxford Street, city=London, country=England, postalcode=W1D 1LL, sidebar=${sidebar}, extra=poster-pix)}
+#	${mkGigLink(ts=2017-11-03, venue=The Lamplighter, eventweb=, phone=, cost=free, ticketweb=, with=Slipstream, address=Overstone Road, city=Northampton, country=England, postalcode=NN1, extra=solo, sidebar=${sidebar})}
+#live	if (sql(pg:select * from gig where unix_timestamp(datetime) < ${_db_timestamp} and isdeleted is NULL  order by datetime desc limit 5))
+#	${tag_beg}
+#	Previously..
+#	${tag_end}
+#live	while (pgi = pg[*]->datetime)
+	${showGigListing(prefix=pg[${pgi}])}
+#live	endwhile
+#live	endif
+
+#define	beg_tabs
+	<!-- (beg_tabs -->
+	<div class="responsive-tabs">
+	<!-- beg_tabs) -->
+#define	end_tabs
+	<!-- (end_tabs -->
+	</div>
+	<script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script src="/htdb/site/responsiveTabs.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			RESPONSIVEUI.responsiveTabs();
+		})
+
+		var gigTS = document.getElementById('gigTS')?.innerHTML;
+		var fromnow = document.getElementById('fromnow');
+
+		function calcGigTimer(fromnow) {
+			var now = ((new Date).getTime()) / 1000;
+			var diff = gigTS - now - (9 * 60 * 60);  // FAKE TZOFFSET
+			if (diff < 0) {	// past
+				if (diff < (-1 * 60 * 60 * 24)) {
+					fromnow.innerHTML = "(" + prettySecondsTerse(0 - diff) + " ago)";
+				}
+			} else { // future
+				fromnow.innerHTML = "(in ~ " + prettySecondsTerse(diff) +")";
+			}
+		}
+
+		if (fromnow && gigTS > 0) {
+			calcGigTimer(fromnow);	// initial
+			setInterval(function(){ calcGigTimer(fromnow); }, 30000);	// every 30 second
+		}
+
+		function plurize(v, s) { return v + " " + s + (v > 1 ? "s" : ""); }
+
+		function prettySecondsTerse(tmi) {
+			var tm = Math.floor(tmi);
+			var	secs = tm % 60,
+				mins = Math.floor(tm / 60) % 60,
+				hours = Math.floor(tm / 3600) % 24,
+				days = Math.floor((tm / 3600) / 24) % 365,
+				years = Math.floor(tm / 31536000);
+			var out = "";
+			var	buf = " ";
+			console.log(years, days, hours, mins, secs);
+
+			if (years > 0) {
+				out = plurize(years, "year");
+				if (days > 0) { buf += plurize(days, "day"); }
+				else if (hours > 0) { buf += plurize(hours, "hour"); }
+				else if (mins > 0) { buf += plurize(mins, "minute"); }
+				else if (secs > 0) { buf += plurize(secs + "second"); }
+				else { buf = ""; }
+			} else if (days > 0) {
+				out = plurize(days, "day");
+				if (hours > 0) { buf += plurize(hours, "hour"); }
+				else if (mins > 0) { buf += plurize(mins, "minute"); }
+				else if (secs > 0) { buf += plurize(secs, "second"); }
+				else { buf = ""; }
+			} else if (hours > 0) {
+				out += plurize(hours, "hour");
+				if (mins > 0) { buf += plurize(mins, "minute"); }
+				else if (secs > 0) { buf += plurize(secs, "second"); }
+				else { buf = ""; }
+			} else if (mins > 0) {
+				out += plurize(mins, "minute");
+				if (secs > 0) { buf += plurize(secs, "second"); }
+				else { buf = ""; }
+			} else if (secs > 0) {
+				out += plurize(secs, "second");
+			} else {
+				buf = "now";
+			}
+			return out + buf;
+		}
+	</script>
+	<!-- end_tabs) -->
+
+#define	begTab(title)
+	<h2>${title}</h2>
+	<div id="${space2underscore(${title})}" style="margin-top: 5px;">
+
+#define	endTab
+	</div>
+
+#define	gigSearch(f, v)
+	<a href="${jbc_search}?f=${f}&q=${v}">${v}</a>
+
+#define	gigLocale(prefix, search)
+#live	if (defined(search))
+	${${prefix}->address}
+	${gigSearch(f=city, v=${${prefix}->city})}
+	${${prefix}->state}
+	${gigSearch(f=country, v=${${prefix}->country})}
+	${${prefix}->postalcode}
+#live	else
+	${${prefix}->address} ${${prefix}->city} ${${prefix}->state} ${${prefix}->country} ${${prefix}->postalcode}
+#live	endif
+
+#define	gigType(prefix)
+${define(_set, false)}
+#live	if (defined(${prefix}->title))
+	${tag_beg}
+	Side Project - <b>${${prefix}->title}</b>
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+#live	if (getval(${prefix}->extra) == eg)
+	<a href="${jbc_search}?f=extras&q=eg">
+	<div class="gig_eg"> ${define(_set,true)} </div>
+	</a>
+#live	endif
+#live	if (getval(${prefix}->extra) == sumo)
+	<a href="${jbc_search}?f=extras&q=sumo">
+	<div class="gig_sumo"> ${define(_set,true)} </div>
+	</a>
+#live	endif
+#live	if (getval(${prefix}->extra) == nopat)
+	<a href="${jbc_search}?f=extras&q=nopat">
+	<div class="gig_nopat"> ${define(_set,true)} </div>
+	</a>
+#live	endif
+#live	if (getval(${prefix}->extra) == wilson)
+	<a href="${jbc_search}?f=extras&q=wilson">
+	<div class="gig_wilson"> ${define(_set,true)} </div>
+	</a>
+#live	endif
+#live	if (getval(${prefix}->extra) == store)
+	${tag_beg}
+	In-Store
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+#live	if (getval(${prefix}->extra) == session)
+	${tag_beg}
+	Recording Session
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+#live	if (getval(${prefix}->extra) == interview)
+	${tag_beg}
+	<a href="${jbc_search}?f=extras&q=interview">Interview</a>
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+#live	if (getval(${prefix}->extra) == duo)
+	${tag_beg}
+	<a href="${jbc_search}?f=extras&q=duo"><img src="/images/iconPat.gif">Pat <img src="/images/iconMax.gif"> Max Duo</a>
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+#live	if (getval(${prefix}->extra) == solo)
+	${tag_beg}
+	<a href="${jbc_search}?f=extras&q=solo">☠Pat Fish Solo</a>
+	${define(_set,true)}
+	${tag_end}
+#live	endif
+#live	if (getval(_set) = false)
+	${tag_beg}
+	Live Performance
+	${tag_end}
+#live	endif
+
+#define	headerGigDay(ts)
+	${truncAt(_, ${truncAt(.html, ${substr(5, 100, ${ts2URI(${ts})})})})}
+
+#define	lc(x)	${literalizeCommas(${x})}
+#define	EOI	;;
+#define	EOS	---
+#define	EOD	$$
+
+#define	makePhotoLink(p, width=250)
+#live	if (define(base, ${truncAt(.jpg, ${p})}))
+	<span class="image">
+		<a href="${base}.jpg"><img src="${base}_${width}.jpg" alt="${reverse(${truncAt(/, ${reverse(${base})})})}"></a>
+	</span>
+#live	endif
+
+#define	parsePhoto(p, width=250)
+#live	if (define(up, ${unfilter(${p})}))
+	${makePhotoLink(p=${truncAt(${EOI}, ${up})}, width=${width})}
+#live	if (getval(up) == ${EOI})
+	${g_caption(g=${reverse(${truncAt(${EOI}, ${reverse(${up})})})})}
+#live	endif
+#live	endif
+
+#define	parseCredit(c)
+#live	if (define(_rdate,))
+#live	endif
+#live	if (define(_rlink,))
+#live	endif
+#live	if (define(_rtext,))
+#live	endif
+#live	if (makeArray(_r, ${EOI}, ${unfilter(${c})}))
+#live		if (defined(_r[3]))
+				${define(_rdate, ${_r[3]})}
+#live		endif
+#live		if (defined(_r[2]))
+				${define(_rlink, ${_r[2]})}
+				${define(_rtext, ${_r[1]})}
+#live		else
+				${define(_rtext, ${_r[1]})}
+#live		endif
+#live		if (getval(_rtext) == href)
+	${g_genericweb(s=credit, t=Credit, x=${_rtext}, xd=${_rdate})}
+#live		else
+	${g_credit(g=${filterProgramArguments(${_rtext})}, u=${_rlink}, d=${_rdate})}
+#live		endif
+#live	endif
+
+#define	colorSet[0]	#fe9933
+#define	colorSet[1]	lightgreen
+#define	colorSet[2]	lightgray
+#define	colorSet[3]	limegreen
+#define	colorSet[4]	pink
+#define	colorSet[5]	lightblue
+#define	colorSet[6]	salmon
+#define	colorSet(idx)
+	text-align: center; background: ${colorSet[${eval(${idx} % 6)}]}
+
+## # ---- BEGIN extract ;; fields ---
+
+#define	extractSemi(item, num)
+#live	if (makeArray(ep${item}${num}, ${EOI}, ${${item}}))
+#live		if (defined(ep${item}${num}[${num}]))
+				${ep${item}${num}[${num}]}
+#live		endif
+#live	endif
+
+#define	extractPhoto(item) ${stripWhitespace(${extractSemi(${${item}}, 1)})}
+#define	extractPhotoCaption(item) ${stripWhitespace(${extractSemi(${item}, 2)})}
+
+#define	extractCredit(item) ${stripWhitespace(${extractSemi(${item}, 1)})}
+#define	extractCreditURL(item) ${stripWhitespace(${extractSemi(${item}, 2)})}
+#define	extractCreditDate(item) ${stripWhitespace(${extractSemi(${item}, 3)})}
+
+#define	photo2SQL(item)
+#
+#	clear
+#
+#live	loop(cx, 1, ${ep->numResults})
+#live	if (define(ep[${cx}], ))
+#live	endif
+#live	endloop
+#
+#	populate
+#
+#live	if (makeArray(ep, ${EOI}, ${${item}}))
+#live		if (defined(ep[1]))
+				image="${truncAt(${EOD}, ${literalizeQuotes(${ep[1]})})}",
+#live		endif
+#live		if (defined(ep[2]))
+				image_caption="${literalizeQuotes(${ep[2]})}",
+#live		endif
+#live	endif
+
+#define	credit2SQL(item)
+#live	if (getval(item))
+#
+#	clear
+#
+#live	loop(cx, 1, ${ep->numResults})
+#live	if (define(ep[${cx}], ))
+#live	endif
+#live	endloop
+#live	if (makeArray(ep, ${EOI}, ${${item}}))
+#live		if ((defined(ep[1])) && (getval(ep[1]) != ;;))
+				credit="${literalizeQuotes(${ep[1]})}",
+#live		endif
+#live		if (defined(ep[2]))
+				credit_url="${literalizeQuotes(${ep[2]})}",
+#live		endif
+#live		if (defined(ep[3]))
+				credit_date="${literalizeQuotes(${ep[3]})}",
+#live		endif
+#live	endif
+#live	else
+#		no credit
+#live	endif
+
+## # ---- END extract ;; fields ---
+
+#define	parsePhotoset(datetime, photoset, idx=1, width=250, type=pix)
+#live	if (makeArray(p_${idx}, ${EOD}, ${unfilter(${photoset})}))
+    <div class="ml-pnl">
+#live	loop(y, 1, ${p_${idx}->numResults})
+#live	if (define(pix_current, ${p_${idx}[${y}]}))
+#live	endif
+#live	if (getval(p_${idx}[${p_${idx}->numResults}]) == ${EOI})
+#live		if (define(pix_credits, ${p_${idx}[${p_${idx}->numResults}]}))
+#live		endif
+#live	else if (define(pix_credits,))
+# 			no credit
+#live	endif
+#live	if (getval(pix_current) == .jpg)
+
+##live	if (sql(insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}"))
+##live	endif
+
+		${parsePhoto(p=${pix_current}, width=${width})}
+#live	else
+		${parseCredit(${filterProgramArguments(${pix_current})})}
+#live	endif
+#live	endloop
+	</div>
+#live	else
+#live	endif
+
+#define	parseReview(datetime, idx, review)
+#live	if (makeArray(p_${idx}, ${EOd}, ${unfilter(${review})}))
+	<div class="review">
+#live	loop(y, 1, ${p_${idx}->numResults})
+#live	if (define(review_current, ${p_${idx}[${y}]}))
+#live	endif
+#live	if (define(review_credits, ${p_${idx}[${p_${idx}->numResults}]}))
+#live	endif
+#live	if (getnum(y) = ${p_${idx}->numResults})
+	${parseCredit(${filterProgramArguments(${p_${idx}[${y}]})})}
+#live	else
+	<br/>
+	<blockquote> ${truncAt(${EOD}, ${p_${idx}[${y}]})} </blockquote>
+##live	if (sql(insert IGNORE into gigtext set datetime="${datetime}", type="review", ${credit2SQL(review_credits)}  body="${stripWhitespace(${literalizeQuotes(${truncAt(${EOD}, ${p_${idx}[${y}]})})})}"))
+##live	endif
+#live	endif
+#live	endloop
+	</div>
+#live	endif
+
+#define	updateExtra(field, prefix)
+#live	if (sql(update gig set extra='${field},${${prefix}->extra}' where gig_id=${${prefix}->gig_id}))
+#live	endif
+
+#define	country2offset(c)
+#live	if (getval(c) = England)
+	9
+#live	else
+	0
+#live	endif
+
+#define	tzOffset(prefix)
+	${define(tzHours, ${country2offset(c=${${prefix}->country})})}
+	${eval(${tzHours} * 60 * 60)}
+
+#define	doPhotos(prefix, photosets)
+#live		if (makeArray(s, ${EOS}, ${unfilter(${photosets})}))
+				${makeArray(pxc, .jpg, ${photosets})}
+#live			if (getnum(pxc->numResults) > 12)
+					${define(mlclass, ml3)}
+					${define(width, 250)}
+#live			elseif (getnum(pxc->numResults) > 2)
+					${define(mlclass, ml2)}
+					${define(width, 500)}
+#live			else
+					${define(mlclass, ml1)}
+					${define(width, 500)}
+#live			endif
+#				<div class="${mlclass}">
+#live			loop(x, 1, ${s->numResults})
+					<div class="ml-panel" style="${colorSet(${x})}; border: 1px solid; margin: 5px; border-radius:10px;">
+						${parsePhotoset(datetime=${${prefix}->datetime}, idx=${x}, photoset=${s[${x}]}, width=${width}, type=pix)}
+					</div>
+#live			endloop
+#live		endif
+
+#define	doPoster(prefix)
+	<a href="${ts2PosterLink(${${prefix}->datetime})}"><img alt="[poster for XX]" src="${ts2Poster(ts=${${prefix}->datetime}, width=500)}"></a>
+#live	if (defined(${prefix}->postercredit))
+		${parseCredit(${${prefix}->postercredit})}
+#live	endif
+
+#define	doPosterSQL(prefix)
+##live	if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", image="${stripWhitespace(${ts2PosterLink(${${prefix}->datetime})})}", ${credit2SQL(${prefix}->postercredit)} type="poster"))
+##live	endif
+
+#define	doPostersSQL(prefix, posters)
+#live		if (makeArray(s, ${EOS}, ${unfilter(${posters})}))
+#live			loop(x, 1, ${s->numResults})
+
+#live				if (makeArray(p, ${EOD}, ${unfilter(${s[${x}]})}))
+#live				if (getval(p[${p->numResults}]) == $EOI)
+#live				if (define(_credits, \, ${credit2SQL(p[${p->numResults}])}))
+#live				endif
+#live				else
+#live				if (define(_credits,)
+#live				endif
+#live				endif
+#live				loop(y, 1, ${p->numResults})
+#live				if ((getval(p[${y}]) == .jpg))
+##live				if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", type='poster', image="${truncAt(${EOI}, ${stripWhitespace(${literalizeQuotes(${p[${y}]})})})}" ${_credits}))
+##live				endif
+#live				endif
+#live				endloop
+#live				endif
+
+#live			endloop
+#live		endif
+
+#define	doSetlist(prefix, setlists)
+#live	if (defined(setlists))
+#live		if (makeArray(s, ${EOS}, ${unfilter(${setlists})}))
+				<div class="ml1">
+#live			loop(x, 1, ${s->numResults})
+					<div class="ml-panel" style="${colorSet(${x})};">
+						${parsePhotoset(datetime=${${prefix}->datetime}, idx=${x}, photoset=${s[${x}]}, width=500, type=setlist)}
+					</div>
+#live			endloop
+				</div>
+#live		endif
+#live		else
+		<div class="ml1">
+##live	if (sql(insert IGNORE into gigmedia set type='setlist', datetime="${${prefix}->datetime}", image="${ts2SetlistLink(${${prefix}->datetime})}"))
+##live	endif
+			<div class="ml-panel" style="${colorSet(1)};">
+				<a href="${ts2SetlistLink(ts=${_gig->datetime})}"><img alt="[setlist]" src="${ts2Setlist(ts=${_gig->datetime}, width=500)}"></a>
+			</div>
+		</div>
+#live		endif
+
+#define	doTicket(prefix, tickets)
+#live	if (defined(tickets))
+#live		if (makeArray(s, ${EOS}, ${unfilter(${tickets})}))
+				<div class="ml1">
+#live			loop(x, 1, ${s->numResults})
+					<div class="ml-panel" style="${colorSet(${x})};">
+						${parsePhotoset(datetime=${${prefix}->datetime}, idx=${x}, photoset=${s[${x}]}, width=500, type=ticket)}
+					</div>
+#live			endloop
+				</div>
+#live		endif
+#live		else
+		<div class="ml1">
+##live	if (sql(insert IGNORE into gigmedia set type='ticket', datetime="${${prefix}->datetime}", image="${ts2TicketLink(${${prefix}->datetime})}"))
+##live	endif
+			<div class="ml-panel" style="${colorSet(1)};">
+				<a href="${ts2TicketLink(ts=${_gig->datetime})}"><img alt="[ticket]" src="${ts2Ticket(ts=${_gig->datetime}, width=500)}"></a>
+			</div>
+		</div>
+#live		endif
+
+#define	doMap(prefix)
+#live	if (defined(${prefix}->address))
+	<style type="text/css">
+		.iframe-rwd  {
+			position: relative;
+			padding-bottom: 65.25%;
+			margin-top: 10px;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+		}
+		.iframe-rwd iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+#live	if (define(mapData, ${replace(${${prefix}->venue}, &, %26)},${gigLocale(prefix=${prefix})}))
+	<div class="iframe-rwd">
+	<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=${mapData}&amp;ie=UTF8&amp;&amp;output=embed"></iframe>
+	</div>
+#live	endif
+#live	endif
+
+#define	gigHeader(extra, who, pat, with, eventweb, cost, ticketweb, notes, phone, photosets, reviews, setlists, recording, soundman, bootlegger, nopat, blurb, tickets, address, postalcode, posters)
+#live	if (sql(_gig:select *, unix_timestamp(datetime) as ts, year(datetime) as year, month(datetime) as month, day(datetime) as day from gig where datetime='${gigPage2Datetime()}' and isdeleted is NULL limit 1))
+#live		if (sql(_prevgig:select datetime, venue from gig where datetime<'${_gig->datetime}' and isdeleted is NULL order by datetime desc limit 1))
+#live		endif
+#live		if (sql(_nextgig:select datetime, venue from gig where datetime>'${_gig->datetime}' and isdeleted is NULL order by datetime limit 1))
+#live		endif
+	${mkHeader(section=Gigs, passthru=${headerGigYear(y=${_gig->year})} <span class="navsep"/>, title=${headerGigDay(${_gig->datetime})}, navType=Gig, navPrev=_prevgig, navNext=_nextgig)}
+	${gigType(prefix=_gig)}
+	${beg_tabs}
+	${begTab(Details)}
+	<div class="g_details">
+##live	if (defined(nopat))
+#			${updateExtra(field=nopat, prefix=_gig)}
+##live	endif
+	${g_date}
+	<span class="g_date">
+		${mkGigDate(ts=${_gig->datetime})}
+		<span id="gigTS">${_gig->ts}</span>
+		<span id="fromnow">
+#live	if (getnum(_gig->ts) > 0)
+#live		if (eval(${_gig->ts} - ${_db_timestamp}) < 0)
+#
+#	if there's no hour, then it we risk
+#	claiming in the past when it isn't.
+#	so.. don't show "ago" if < 1 day
+#
+#live			if (eval(${_gig->ts} - ${_db_timestamp}) < ${eval(-1 * 60 * 60 * 24)})
+					(${prettySecondsTerse(${eval(${_db_timestamp} - ${_gig->ts})})} ago)
+#live			endif
+#live		else
+				(in ~ ${prettySecondsTerse(${eval(${_gig->ts} - ${_db_timestamp} - ${tzOffset(prefix=_gig)})})})
+#live		endif
+#live	endif
+		</span>
+	</span>
+	${define(c_eventweb,)}
+#live	if (defined(_gig->eventweb))
+	${define(c_eventweb, ${_gig->eventweb})}
+#live	elseif (defined(eventweb))
+	${define(c_eventweb, ${eventweb})}
+#live		if (sql(update gig set eventweb='${eventweb}' where gig_id=${_gig->gig_id}))
+#live		endif
+#live	endif
+	${g_venue}
+	<span class="g_venue">
+		${gigSearch(f=venue, v=${_gig->venue})} ${ternary((defined(c_eventweb)), ${linkExternal(${c_eventweb}, (Website))},)}
+	</span>
+	${define(c_blurb,)}
+#live	if (defined(_gig->blurb))
+	${define(c_blurb, ${_gig->blurb})}
+#live	elseif (defined(blurb))
+	${define(c_blurb, ${blurb})}
+#live		if (sql(update gig set blurb='${blurb}' where gig_id=${_gig->gig_id}))
+#live		endif
+#live	endif
+#live	if (defined(c_blurb)}
+	${g_blurb}
+	<span class="g_blurb">
+		<span class="g_blurb"><a href="${jbc_search}?f=blurb&q=${c_blurb}">${c_blurb}</a></span>
+	</span>
+#live	endif
+	${g_location}
+	<span class="g_location">
+		${gigLocale(prefix=_gig, search=true)}
+	</span>
+
+	${define(c_phone,)}
+#live	if (defined(_gig->phone))
+	${define(c_phone, ${_gig->phone})}
+#live	elseif (defined(phone))
+	${define(c_phone, ${phone})}
+#live		if (sql(update gig set phone='${phone}' where gig_id=${_gig->gig_id}))
+#live		endif
+#live	endif
+#live	if (defined(c_phone))
+	${g_phone(g=${c_phone})}
+#live	endif
+
+	${define(c_cost,)}
+#live	if (defined(_gig->cost))
+			${define(c_cost, ${_gig->cost})}
+#live	elseif (defined(cost))
+			${define(c_cost, ${cost})}
+#live		if (sql(update gig set cost='${cost}' where gig_id=${_gig->gig_id}))
+#live		endif
+#live	endif
+#live	if (defined(c_cost))
+			${g_cost(g=${c_cost})}
+#live	endif
+
+	${define(c_ticketweb,)}
+#live	if (defined(_gig->ticketweb))
+			${define(c_ticketweb, ${_gig->ticketweb})}
+#live	elseif (defined(ticketweb))
+			${define(c_ticketweb, ${ticketweb})}
+#live		if (sql(update gig set ticketweb='${ticketweb}' where gig_id=${_gig->gig_id}))
+#live		endif
+#live	endif
+#live	if (!(getval(c_cost) == free)
+#live		if ((eval(${_gig->ts} - ${_db_timestamp}) > 0) && (getval(_gig->datetime) !== 00:00:00))
+				${ternary((defined(c_ticketweb)), ${linkExternal(${c_ticketweb}, (Purchase))},)}
+#live		endif
+#live	endif
+
+#live	if (getval(_gig->extra) == tribute)
+	<br/><b>This is a tribute gig</b>
+#live	endif
+	</div>
+
+	${define(c_with,)}
+#live	if (defined(_gig->alsowith))
+			${define(c_with, ${_gig->alsowith})}
+#live	elseif (defined(with))
+			${define(c_with, ${with})}
+#live		if (sql(update gig set alsowith='${c_with}' where gig_id=${_gig->gig_id}))
+#live		endif
+#live	endif
+
+#live	if ((sql(wh:select distinct(performer), aka from performance where  datetime='${_gig->datetime}' and category='with' order by ordinal, performer)) && (getnum(wh->numResults) > 0))
+	${tag_beg}
+	${iconWith} With
+	${tag_end}
+	<div class="g_with">
+#live		while (whi = wh[*]->performer)
+				${parse(para=wh[${whi}]->performer, act=yes)}
+#live	if (defined(wh[${whi}]->aka))
+			<i>(${parse(para=wh[${whi}]->aka, act=yes)})</i>
+#live	endif
+#live			if (getnum(whi) < ${wh->numResults})
+					,
+#live			endif
+#live		endwhile
+	</div>
+#live	elseif (defined(c_with))
+		${g_with(${c_with})}
+		${deparse(datetime=${_gig->datetime}, category=with, type=act, list=${c_with})}
+#live	endif
+
+#live	if ((sql(wh:select distinct(performer), aka from performance where  datetime='${_gig->datetime}' and category='event')) && (getnum(wh->numResults) > 0))
+			${tag_beg}
+			Performers
+			${tag_end}
+			<div class="g_who">
+#live		while (whi = wh[*]->performer)
+			<span style="white-space: nowrap;">
+				${parse(para=wh[${whi}]->performer)}
+#live			if (defined(wh[${whi}]->aka))
+					<i>(${parse(para=wh[${whi}]->aka)})</i>
+#live			endif
+#live			if ((getnum(wh->numResults) = 1) && (getval(wh[1]->performer) == person))
+					Solo
+#live			endif
+#live			if ((sql(whi:select distinct(instruments) from performance where datetime='${_gig->datetime}' and category='event' and performer="${wh[${whi}]->performer}" and instruments is not NULL)) && (getnum(whi->numResults) > 0))
+				<span class="smalltext">(
+#live			while (whii = whi[*]->instruments)
+					${whi[${whii}]->instruments}
+#live				if (getnum(whii) < ${whi->numResults})
+						,
+#live				endif
+#live			endwhile
+				)</span>
+#live			endif
+#live			if (getnum(whi) < ${wh->numResults})
+					,
+#live			endif
+			</span>
+#live		endwhile
+			</div>
+#live	else
+#live		if (getval(_gig->extra) == solo)
+				${g_who(${filterProgramArguments(${solo})})}
+				${deparse(datetime=${_gig->datetime}, category=event, type=person, list=Pat Fish)}
+#live		elseif (getval(_gig->extra) == duo)
+				${g_who(${filterProgramArguments(${duo})})}
+				${deparse(datetime=${_gig->datetime}, category=event, type=person, list=Pat Fish)}
+				${deparse(datetime=${_gig->datetime}, category=event, type=person, list=Max Eider)}
+#live		else if (defined(who))
+				${define(hwo_x, ${who})}
+				${g_who(${filterProgramArguments(${parse(para=hwo_x)})})}
+				${deparse(datetime=${_gig->datetime}, category=event, type=person, list=${hwo_x})}
+#live		endif
+#live	endif
+
+#live	if (defined(soundman))
+	${g_sound(g=${soundman})}
+##live	if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="soundman", credit='', body="${stripWhitespace(${literalizeQuotes(${soundman})})}"))
+##live	endif
+#live	endif
+
+#live	if (defined(recording))
+##live	if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="recording", credit='', body="${stripWhitespace(${literalizeQuotes(${recording})})}"))
+##live	endif
+	${g_tech}
+	<div class="g_bootleg">
+		${recording}
+	</div>
+#live	endif
+
+#live	if (defined(bootlegger))
+##live	if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="bootlegger", credit='', body="${stripWhitespace(${literalizeQuotes(${bootlegger})})}"))
+##live	endif
+	${g_boot(g=${bootlegger})}
+#live	endif
+
+	${define(c_address,)}
+#live	if (defined(_gig->address))
+	${define(c_address, ${_gig->address})}
+#live	elseif (defined(address))
+	${define(c_address, ${address})}
+#live		if (sql(update gig set address='${address}' where gig_id=${_gig->gig_id}))
+#live		endif
+#live	endif
+
+	${define(c_postalcode,)}
+#live	if (defined(_gig->postalcode))
+	${define(c_postalcode, ${_gig->postalcode})}
+#live	elseif (defined(postalcode))
+	${define(c_postalcode, ${postalcode})}
+#live		if (sql(update gig set postalcode='${postalcode}' where gig_id=${_gig->gig_id}))
+#live		endif
+#live	endif
+
+#live	if (getnum(_gig->year) == ${_current_year})
+#live		if (getnum(_gig->month) > ${_current_monthnum})
+#live			if (define(temporalTyle, gig_future))
+#live			endif
+#live		else if ((getnum(_gig->month) = ${_current_monthnum}) && (getnum(_gig->day) > ${_current_day}))
+#live			if (define(temporalTyle, gig_soon))
+#live			endif
+#live		else
+#live			if (define(temporalTyle, gig_past))
+#live			endif
+#live		endif
+#live	else
+#live		if (define(temporalTyle, gig_past))
+#live		endif
+#live	endif
+
+#live	if (defined(_gig->address))
+#live		if (define(hasMap, yes))
+#live		endif
+#live	endif
+#live	if (defined(posters))
+#live		if (define(hasPoster, yes))
+#live		endif
+#		${doPostersSQL(prefix=_gig, posters=${unfilter(${posters})})}
+#live	else if (getval(_gig->extra) == poster)
+#live		if (define(hasPoster, yes))
+#		${doPosterSQL(prefix=_gig)}
+#live		endif
+#live	endif
+#live	if ((getval(_gig->extra) == ticket) || (defined(tickets)))
+#live		if (define(hasTicket, yes))
+#live		endif
+#live	endif
+#live	if (defined(photosets))
+#live		if (define(hasPix, yes))
+#live		endif
+#live	endif
+#live	if (defined(setlists))
+#live		if (define(hasSetlist, yes))
+#live		endif
+#live	endif
+
+#live	if (getval(temporalTyle) = gig_past)
+#
+#	gig was in the past
+#
+#live		if (defined(hasPix))
+#live			if (define(hasPix, no))
+#live			endif
+			${tag_beg}
+			${iconPix} Photos
+			${tag_end}
+			<blockquote style="text-align: center;">
+	${doPhotos(prefix=_gig, photosets=${photosets})}
+			</blockquote>
+#live		else if (defined(hasPoster))
+#live			if (define(hasPoster, no))
+#live			endif
+			${tag_beg}
+			Poster
+			${tag_end}
+			<blockquote style="text-align: center;">
+			${doPoster(prefix=_gig)}
+			</blockquote>
+#live		else if (defined(hasSetlist))
+#live			if (define(hasSetlist, no))
+#live			endif
+			${tag_beg}
+			Setlist
+			${tag_end}
+			<blockquote style="text-align: center;">
+			${doSetlist(prefix=_gig, setlists=${unfilter(${setlists})})}
+			</blockquote>
+#live		else if (defined(hasTicket))
+#live			if (define(hasTicket, no))
+#live			endif
+			${tag_beg}
+			Ticket
+			${tag_end}
+			<blockquote style="text-align: center;">
+			${doTicket(prefix=_gig, tickets=${unfilter(${tickets})})}
+			</blockquote>
+#live		else if (defined(hasMap))
+#live			if (define(hasMap, no))
+#live			endif
+			${tag_beg}
+			Map
+			${tag_end}
+	${doMap(prefix=_gig)}
+#live		endif
+#live	else
+#
+#	gig is in the future
+#
+#live		if (defined(hasMap))
+#live			if (define(hasMap, no))
+#live			endif
+			${tag_beg}
+			Map
+			${tag_end}
+	${doMap(prefix=_gig)}
+#live		else if (defined(hasPoster))
+#live			if (define(hasPoster, no))
+#live			endif
+			<br/>
+			${doPoster(prefix=_gig)}
+#live		endif
+#live	endif
+
+	${endTab}
+
+
+#
+#	hasMap
+#	hasPoster
+#	hasPix
+#	isPast
+#
+# OLD	${doMap(prefix=_gig)}
+# OLD#	${doPoster(prefix=_gig)}
+# OLD#live	if (getval(_gig->extra) == poster)
+# OLD#live		if (defined(c_address))
+# OLD			${endTab}
+# OLD			${begTab(Poster)}
+# OLD#live		else
+# OLD			<br/>
+# OLD#live		endif
+# OLD			<a href="${ts2PosterLink(${_gig->datetime})}"><img alt="[poster for XX]" src="${ts2Poster(ts=${_gig->datetime}, width=500)}"></a>
+# OLD#live		if (defined(_gig->postercredit))
+# OLD				${parseCredit(${_gig->postercredit})}
+# OLD#live		endif
+# OLD#live	endif
+# OLD		${endTab}
+
+#live	if (getval(hasMap) = yes)
+	${begTab(Map)}
+	${doMap(prefix=_gig)}
+	${endTab}
+#live	endif
+#live	if (getval(hasPoster) = yes)
+	${begTab(Poster)}
+	${doPoster(prefix=_gig)}
+	${endTab}
+#live	endif
+	${mkGigPress(dt=${_gig->datetime})}
+
+#live	if (defined(notes))
+	${begTab(Notes)} <div class="listItem">${notes}</div> ${endTab}
+##live	if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="notes", credit='pat', body="${stripWhitespace(${literalizeQuotes(${notes})})}"))
+##live	endif
+#live	endif
+
+
+#live	if (defined(pat))
+	${begTab(${iconSelf} Pat Says)} <div class="annotation">${pat}</div> ${endTab}
+##live	if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="selfreview", credit='pat', body="${stripWhitespace(${literalizeQuotes(${pat}))}}"))
+##live	endif
+#live	endif
+
+#live	if (getval(hasPix) = yes)
+	${begTab(${iconPix} Photos)}
+	${doPhotos(prefix=_gig, photosets=${photosets})}
+	${endTab}
+#live	endif
+
+#live	if (getval(hasTicket) = yes)
+	${begTab(Ticket)}
+	${doTicket(prefix=_gig, tickets=${unfilter(${tickets})})}
+	${endTab}
+#live	endif
+
+#live	if (getval(hasSetlist) = yes)
+	${begTab(Setlist)}
+	${doSetlist(prefix=_gig, setlists=${unfilter(${setlists})})}
+	${endTab}
+#live	endif
+
+	${define(_havereview,)}
+	${define(gigURI, ${ts2URI(${_gig->datetime})})}
+#live	if ((sql(_fb:select * from feedback where uri='gigs/${gigURI}')) && (getnum(_fb->numResults) > 0))
+		${define(_havereview, true)}
+#live	endif
+#live	if ((defined(reviews)) || (defined(_havereview)))
+		${begTab(${iconReview} Reviews)}
+#live		if ((defined(reviews)) && (makeArray(s, ${EOS}, ${unfilter(${reviews})})))
+#live			loop(x, 1, ${s->numResults})
+					${parseReview(${_gig->datetime}, ${x}, ${filterProgramArguments(${s[${x}]})})}
+#live			endloop
+#live		endif
+#live		if (defined(_havereview))
+#live			loop(x, 1, ${_fb->numResults})
+				<div class="review">
+					<b>${_fb[${x}]->subject}</b>
+					<blockquote>
+					${replace(${literalizeCommas(${newline2br(${_fb[${x}]->comments})})}, <BR>, <p>)}
+					</blockquote>
+					${parseCredit(${literalizeCommas(${_fb[${x}]->whence};;${_fb[${x}]->who})};;${_fb[${x}]->dtcreated})}
+				</div>
+#live			endloop
+#live		endif
+		${endTab}
+#live	endif
+#live	endif
+
+##live	if (getval(cgi->http_x_real_ip) = 50.1.9.2)
+#	${begTab(Admin)}
+#	edit shit here
+#	${endTab}
+##live	endif
+	${fetchGigSongContent(${_gig->datetime})}
+	${end_tabs}
+	<!--- CONTENT -->
+	${tag_beg}
+	<b>Visitor Feedback</b>
+	${tag_end}
+	${fetchComments(res=${db}/${page})}
+	</div>
+	${footer}
+
+#define	mkAlbumBlurb(prefix, details=yes, size=250)
+	<div class="release">
+	<div class="album_details">
+#live	if (defined(${prefix}->project))
+	<div class="gig_${${prefix}->project}"></div>
+#live	endif
+		<span class="album_title">
+#live	if (defined(${prefix}->href))
+			<a class="album_href" href="${${prefix}->href}">${${prefix}->title}</a>
+#live	else
+			${${prefix}->title}
+#live	endif
+		</span>
+#<span class="album_type">
+#		${ternary((getval(${prefix}->type) != album))}
+#</span>
+	<div class="album_blurb">
+#live	if (defined(${prefix}->contribution))
+		${g_contribution(g=${literalizeCommas(${${prefix}->contribution})})}
+#live	endif
+		${${prefix}->blurb}
+#live	if (defined(${prefix}->credit_g))
+		${g_credit(g=${${prefix}->credit_g}, u=${${prefix}->credit_u}, d=${${prefix}->credit_d})}
+#live	endif
+	</div>
+#live	if (defined(${prefix}->buy))
+	<div class="album_purchase">
+		${linkExternal(${${prefix}->buy}, Purchase Now)}<br/><span class="smalltext">( ${parseDomain(u=${${prefix}->buy})})</span>
+	</div>
+#live	endif
+	</div>
+	<div class="album_thumb">
+#live	if (defined(${prefix}->thumb))
+#live		if (defined(${prefix}->href))
+	<a href="${${prefix}->href}"><img style="border: 1px solid;" alt="[${${prefix}->title} cover thumbnail]" src="${${prefix}->thumb}_${size}.jpg"></a>
+#live		else
+	<a target="_new" href="${${prefix}->thumb}.jpg"><img alt="[${${prefix}->title} cover thumbnail]" src="${${prefix}->thumb}_${size}.jpg"></a>
+#live		endif
+#live	else
+	<img src="${images}/spacer.gif" width="145" height="145">
+#live	endif
+#live	if ((getval(details) = yes) && ((defined(${prefix}->label)) || (defined(${prefix}->media))))
+	<br/>
+#	${${prefix}->year}
+#	${${prefix}->label} ${${prefix}->catalog}
+#live	if (defined(${prefix}->label))
+		${${prefix}->label}
+#live	endif
+#live	if (defined(${prefix}->media))
+		${${prefix}->media}
+#live	endif
+#		<span class="album_type">
+#		${ternary((getval(${prefix}->type) != album),
+#			${literalizeCommas(${${prefix}->type})}
+#		)}
+#		</span>
+##live	if (defined(${prefix}->country))
+#		${${prefix}->country}
+##live	endif
+#live	endif
+	</div>
+	</div>
+
+#define	showNewsCategory(category, limit, showYear, showMore)
+#live	if (define(prevYr, XXX))
+#live	endif
+#live	if (define(cnt, 0))
+#live	endif
+#live	while (n = newsItem[*]->dt)
+##live	if ((getval(newsItem[${n}]->category) == ${category}) || ((getval(category) = rest) && (!defined(newsItem[${n}]->category))) || ((getval(category) = rest) && (getval(newsItem[${n}]->category) == pinned)))
+#live	if (define(cnt, ${eval(1 + ${cnt})}))
+#live	endif
+#live	if (getnum(cnt) < ${limit})
+
+#live		if (define(thisYr, ${parseYear(${newsItem[${n}]->dt})}))
+#live		endif
+#live		if ((getval(showYear) = yes) && (getval(prevYr) != ${thisYr}))
+				${tag_beg}
+				${thisYr}
+				${tag_end}
+#live		endif
+#live		if (define(prevYr, ${thisYr}))
+#live		endif
+
+	<div class="listItem"
+#live	if (getval(newsItem[${n}]->category) == pinned)
+		style="background-color: #ccffff;"
+#live	endif
+	>
+	${isNew(${newsItem[${n}]->dt})}
+		<b>
+#live	if (define(_nsub,))
+#live	endif
+#live	if (defined(newsItem[${n}]->subject))
+#live		if (define(_nsub, ${newsItem[${n}]->subject}))
+#live		endif
+#live	else
+#live		if (define(_nsub, News Item!))
+#live		endif
+#live	endif
+#live	if (getval(newsItem[${n}]->link) == http)
+		${linkExternal(${newsItem[${n}]->link}, ${_nsub})}
+#live	elseif (defined(newsItem[${n}]->link))
+		${linkInternal(${newsItem[${n}]->link}, ${_nsub})}
+#live	else
+		${_nsub}
+#live	endif
+		</b>
+		<blockquote>${newsItem[${n}]->body}</blockquote>
+		<p class="smalltext">
+			${date(Y-m-d, ${newsItem[${n}]->dt})}
+		</p>
+	</div>
+#live	endif
+##live	endif
+#live	endwhile
+#live	if ((getnum(cnt) >= ${limit}) && (getval(showMore) = yes))
+	${tag_beg}
+	<a href="${jbc_news}">Load more news</a>
+	${tag_end}
+#live	endif
+
+#define	showNews(limit=10, showYear=no, showMore=yes)
+#live	if (sort(-newsItem, dt))
+#	${beg_tabs}
+#	${begTab(Announcements)}
+	${showNewsCategory(category=rest, limit=${limit}, showYear=${showYear})}
+#	${endTab}
+#	${begTab(Uploads)}
+#	${tag_beg}
+#	<a href="${jbc_help}">Fan-contributed</a> media
+#	${tag_end}
+#	${showNewsCategory(category=media, limit=${limit}, showYear=${showYear})}
+#	${endTab}
+#	${end_tabs}
+#live	endif
+
+#define	typeLookup[solo]	Pat Solo
+#define	typeLookup[wilson]	Wilson
+#define	typeLookup[sumo]	Sumosonic
+#define	typeLookup[eg]		Black Eg
+#define	typeLookup[nopat]	Presents
+#define	typeLookup[tribute]	Tribute
+#define	typeLookup[other]	JBC
+
+#define	doBarType(type, num, max, color=gray)
+#live	if (getnum(num) > 0)
+		<img style="border-radius: 10px;" src="/images/gig_spacer_${type}.gif" width="${int(${eval(1 + (100 * ${num} / ${max}))})}%"> <span class="smalltext"><span style="color: ${color};">${num}</span> (${typeLookup[${type}]})</span>
+		<br>
+#live	endif
+
+#define	multiBars(prefix)
+#live	if (define(${prefix}->numBars, 0))
+#live	if (getnum(${prefix}->solo) > 0)
+#live	if (define(${prefix}->numBars, ${eval(1 + ${${prefix}->numBars})}))
+#live	endif
+#live	endif
+#live	if (getnum(${prefix}->wilson) > 0)
+#live	if (define(${prefix}->numBars, ${eval(1 + ${${prefix}->numBars})}))
+#live	endif
+#live	endif
+#live	if (getnum(${prefix}->sumo) > 0)
+#live	if (define(${prefix}->numBars, ${eval(1 + ${${prefix}->numBars})}))
+#live	endif
+#live	endif
+#live	if (getnum(${prefix}->eg) > 0)
+#live	if (define(${prefix}->numBars, ${eval(1 + ${${prefix}->numBars})}))
+#live	endif
+#live	endif
+#live	if (getnum(${prefix}->nopat) > 0)
+#live	if (define(${prefix}->numBars, ${eval(1 + ${${prefix}->numBars})}))
+#live	endif
+#live	endif
+#live	if (getnum(${prefix}->other) > 0)
+#live	if (define(${prefix}->numBars, ${eval(1 + ${${prefix}->numBars})}))
+#live	endif
+#live	endif
+#live	if (getnum(${prefix}->numBars) > 1)
+	${${prefix}->numBars}
+#live	endif
+#live	endif
+
+#define	doGraph(prefix, section=main, inpage=no, skip0=no, href)
+#live	if (define(minYear, 9999))
+#live	endif
+#live	if (define(maxYear, 0))
+#live	endif
+#live	if (define(_py, NULL))
+#live	endif
+#live	loop(z, 1982, 2050)
+#live	if (define(_graphG[${z}], 0))
+#live	endif
+#live	if (define(_graphG[${z}]->eg, 0))
+#live	endif
+#live	if (define(_graphG[${z}]->wilson, 0))
+#live	endif
+#live	if (define(_graphG[${z}]->sumo, 0))
+#live	endif
+#live	if (define(_graphG[${z}]->nopat, 0))
+#live	endif
+#live	if (define(_graphG[${z}]->tribute, 0))
+#live	endif
+#live	if (define(_graphG[${z}]->solo, 0))
+#live	endif
+#live	if (define(_graphG[${z}]->other, 0))
+#live	endif
+#live	endloop
+#live	if (define(numTypes, 0)
+#live	endif
+#live	while (_i = ${prefix}[*]->year)
+#live	if (define(_cy, ${${prefix}[${_i}]->year}))
+#live	endif
+#live	if (getnum(_cy) = ${_py})
+#live		if (getval(${prefix}[${_i}]->extra) == eg)
+#live			if (define(_graphG[${_cy}]->eg, ${eval(1 + ${_graphG[${_cy}]->eg})}))
+#live			endif
+#live		elseif (getval(${prefix}[${_i}]->extra) == solo)
+#live			if (define(_graphG[${_cy}]->solo, ${eval(1 + ${_graphG[${_cy}]->solo})}))
+#live			endif
+#live		elseif (getval(${prefix}[${_i}]->extra) == wilson)
+#live			if (define(_graphG[${_cy}]->wilson, ${eval(1 + ${_graphG[${_cy}]->wilson})}))
+#live			endif
+#live		elseif (getval(${prefix}[${_i}]->extra) == sumo)
+#live			if (define(_graphG[${_cy}]->sumo, ${eval(1 + ${_graphG[${_cy}]->sumo})}))
+#live			endif
+#live		elseif (getval(${prefix}[${_i}]->extra) == tribute)
+#live			if (define(_graphG[${_cy}]->tribute, ${eval(1 + ${_graphG[${_cy}]->tribute})}))
+#live			endif
+#live		elseif (getval(${prefix}[${_i}]->extra) == nopat)
+#live			if (define(_graphG[${_cy}]->nopat, ${eval(1 + ${_graphG[${_cy}]->nopat})}))
+#live			endif
+#live		else
+#live			if (define(_graphG[${_cy}]->other, ${eval(1 + ${_graphG[${_cy}]->other})}))
+#live			endif
+#live		endif
+#live		if (define(_graphG[${_cy}], ${eval(1 + ${_graphG[${_cy}]})}))
+#live		endif
+#live	else
+#live		if (getval(${prefix}[${_i}]->extra) == eg)
+#live			if (define(_graphG[${_cy}]->eg, 1))
+#live			endif
+#live		elseif (getval(${prefix}[${_i}]->extra) == wilson)
+#live			if (define(_graphG[${_cy}]->wilson, 1))
+#live			endif
+#live		elseif (getval(${prefix}[${_i}]->extra) == sumo)
+#live			if (define(_graphG[${_cy}]->sumo, 1))
+#live			endif
+#live		elseif (getval(${prefix}[${_i}]->extra) == nopat)
+#live			if (define(_graphG[${_cy}]->nopat, 1))
+#live			endif
+#live		elseif (getval(${prefix}[${_i}]->extra) == solo)
+#live			if (define(_graphG[${_cy}]->solo, 1))
+#live			endif
+#live		elseif (getval(${prefix}[${_i}]->extra) == tribute)
+#live			if (define(_graphG[${_cy}]->tribute, 1))
+#live			endif
+#live		else
+#live			if (define(_graphG[${_cy}]->other, 1))
+#live			endif
+#live		endif
+#live		if (define(_graphG[${_cy}], 1))
+#live		endif
+#live	endif
+#live	if (getnum(_cy) > ${maxYear})
+#live	if (define(maxYear, ${_cy}))
+#live	endif
+#live	endif
+#live	if (getnum(_cy) < ${minYear})
+#live	if (define(minYear, ${_cy}))
+#live	endif
+#live	endif
+#live	if (define(_py, ${_cy}))
+#live	endif
+#live	endwhile
+#live	if (define(maxGigs, 1))
+#live	endif
+#live	loop (i, ${minYear}, ${maxYear})
+#live	if (getnum(_graphG[${i}]) > ${maxGigs})
+#live	if (define(maxGigs, ${_graphG[${i}]}))
+#live	endif
+#live	endif
+#live	endloop
+#live	if (define(maxGigs, ${eval(${maxGigs} * 1.3)}))
+#live	endif
+	<style type="text/css">
+		.bargraph {
+			list-style: none;
+			padding-top: 10px;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.data {
+			background-color: rgba(245,245,245,0.7);
+			width: 100%;
+			height: 15px;
+			color: black;
+			line-height: 15px;
+			padding: 0px 5px;
+			margin-bottom: 1px;
+		}
+		.data img {
+			background: #dedede;
+#			margin-right: 5px;
+			height: 15px;
+		}
+	</style>
+	<table class="bargraph">
+#live	loop (i, ${minYear}, ${maxYear})
+#live	if ((getnum(_graphG[${i}]) > 0) || (getval(skip0) = no))
+		<tr>
+		<td>
+#live	if (define(link, ${ternary((getval(inpage) = yes), #${i}_${section}, ${ternary((defined(href)), ${href}, ${jbc_gigs}/${i})})}))
+		<a href="${link}">${i}</a>
+#live	endif
+		</td>
+#live	if (getnum(_graphG[${i}]) > 0)
+		<td class="data"><a href="${link}">
+#live		if (define(useColor, gray))
+#live		endif
+#live		if (multiBars(prefix=_graphG[${i}]))
+				<img style="border-radius: 10px;" src="/images/spacer.gif" width="${int(${eval(1 + (100 * ${_graphG[${i}]} / ${maxGigs}))})}%"> <b>${_graphG[${i}]}</b>
+				<br/>
+#live		else
+#live			if (define(useColor, blue))
+#live			endif
+#live		endif
+			${doBarType(type=solo, num=${_graphG[${i}]->solo}, max=${maxGigs}, color=${useColor})}
+			${doBarType(type=wilson, num=${_graphG[${i}]->wilson}, max=${maxGigs}, color=${useColor})}
+			${doBarType(type=sumo, num=${_graphG[${i}]->sumo}, max=${maxGigs}, color=${useColor})}
+			${doBarType(type=eg, num=${_graphG[${i}]->eg}, max=${maxGigs}, color=${useColor})}
+			${doBarType(type=nopat, num=${_graphG[${i}]->nopat}, max=${maxGigs}, color=${useColor})}
+			${doBarType(type=other, num=${_graphG[${i}]->other}, max=${maxGigs}, color=${useColor})}
+			${doBarType(type=tribute, num=${_graphG[${i}]->tribute}, max=${maxGigs}, color=${useColor})}
+			</a>
+			</td>
+#live	else
+		<td class="data"><a href="${link}"><img src="/images/spacer.gif" width="${int(${eval(1 + (100 * 0 / ${maxGigs}))})}%"></a>0</td>
+#live	endif
+		</tr>
+#live	endif
+#live	endloop
+	</table>
+
+#define	doListings(prefix, section=main)
+#live	if (getnum(${prefix}->numResults) > 1)
+	${doGraph(prefix=${prefix}, section=${section}, inpage=yes)}
+#live	endif
+#live	while (gl = ${prefix}[*]->datetime)
+#live		if (getval(doMonth) = yes)
+#live			if ((getval(${prefix}[${gl}]->mon) != ${${prefix}[${eval(${gl} - 1)}]->mon}))
+					${mkGigMonth(m=${num2month(${${prefix}[${gl}]->mon})})}
+#live			endif
+#live		else
+#live			if ((getval(${prefix}[${gl}]->year) != ${${prefix}[${eval(${gl} - 1)}]->year}))
+					${mkGigYear(y=${${prefix}[${gl}]->year}, section=${section})}
+#live			endif
+#live		endif
+			${showGigListing(prefix=${prefix}[${gl}])}
+#live	endwhile
+
+#define	songLinkMapped(title)
+#live	if (define(tit, ${lower(${space2underscore(${title})})}))
+#live	endif
+#live	if (defined(songMap[${tit}]))
+	${linkSong(title=${title}, href=${jbc_lyrics}/${songMap[${tit}]})}
+#live	else
+	${linkSong(title=${title}, href=${jbc_search}?f=song&q=${encode(${title})})}
+#live	endif
+
+
+#define	songMap[diamorphone]	diamorphone.html
+#define	songMap[all_the_saints]	all_the_saints.html
+#define	songMap[almost_brooklyn]	almost_brooklyn.html
+#define	songMap[angels]	angels.html
+#define	songMap[angel_station]	angel_station.html
+#define	songMap[animals]	animals.html
+#define	songMap[bad_dream_lover]	bad_dream_lover.html
+#define	songMap[bakersfield]	bakersfield.html
+#define	songMap[baltic]	baltic.html
+#define	songMap[beetle_george]	beetle_george.html
+#define	songMap[ben]	ben.html
+#define	songMap[bicycle_kid]	bicycle_kid.html
+#define	songMap[big_bad_thing]	big_bad_thing.html
+#define	songMap[big_cats]	big_cats.html
+#define	songMap[bigfoot_motel]	bigfoot.html
+#define	songMap[big_old_wind]	big_old_wind.html
+#define	songMap[big_saturday]	big_saturday.html
+#define	songMap[black_raoul]	black_raoul.html
+#define	songMap[blame]	blame.html
+#define	songMap[blues_for_dean_read]	blues_for_dean_read.html
+#define	songMap[buffalo_shame]	buffalo_shame.html
+#define	songMap[burglar_of_love]	burglar_of_love.html
+#define	songMap[call_me]	call_me.html
+#define	songMap[caroline_wheeler's_birthday_present]	caroline_wheeler.html
+#define	songMap[melanie_hargreaves'_father's_jaguar]	melanie_hargreave.html
+#define	songMap[amalfi_coast_may_1963]	amalfi_coast.html
+#define	songMap[chickentown]	chickentown.html
+#define	songMap[chinatown]	chinatown.html
+#define	songMap[city_of_night]	city_of_night.html
+#define	songMap[come_on\,_marie]	come_on_marie.html
+#define	songMap[conspiracy]	conspiracy.html
+#define	songMap[cops_and_hospitals]	cops_and_hospitals.html
+#define	songMap[count_me_out]	count_me_out.html
+#define	songMap[cowgirl_fever]	cowgirl_fever.html
+#define	songMap[cute_submarines]	cute_submarines.html
+#define	songMap[daycare_nation]	daycare_nation.html
+#define	songMap[death_dentist]	death_dentist.html
+#define	songMap[the_devil_is_my_friend]	devil_is_my_friend.html
+#define	songMap[diamorphine]	diamorphine.html
+#define	songMap[domestic_animal]	domestic_animal.html
+#define	songMap[down_the_drain]	down_the_drain.html
+#define	songMap[d.r.i.n.k.]	drink.html
+#define	songMap[after_the_greeat_euphrates]	euphrates.html
+#define	songMap[excellent!]	excellent.html
+#define	songMap[falling_in_love]	falling_in_love.html
+#define	songMap[fertiliser]	fertiliser.html
+#define	songMap[our_friends_the_filth]	filth.html
+#define	songMap[forever]	forever.html
+#define	songMap[get_it_wrong]	get_it_wrong.html
+#define	songMap[ghosts]	ghosts.html
+#define	songMap[girlfriend]	girlfriend.html
+#define	songMap[girl-go]	girl_go.html
+#define	songMap[girls_say_yes]	girls_say_yes.html
+#define	songMap[gloop_jiving]	gloop_jiving.html
+#define	songMap[girls_who_keep_goldfish]	goldfish.html
+#define	songMap[great_elephants]	great_elephants.html
+#define	songMap[a_great_visitation_of_elephants]	great_elephants.html
+#define	songMap[grey_flannelette]	grey_flannelette.html
+#define	songMap[grooving_in_the_bus_lane]	grooving_in_the_bus_lane.html
+#define	songMap[hairbrush_and_tank]	hairbrush_and_tank.html
+#define	songMap[hard]	hard.html
+#define	songMap[harlan]	harlan.html
+#define	songMap[holiday]	holiday.html
+#define	songMap[honey]	honey.html
+#define	songMap[the_human_jungle]	human_jungle.html
+#define	songMap[hungarian_love_song]	hungarian_love_song.html
+#define	songMap[hysteria]	hysteria.html
+#define	songMap[i_hate_love]	i_hate_love.html
+#define	songMap[i_need_meat]	i_need_meat.html
+#define	songMap[it_has_to_be_you]	it_has_to_be_you.html
+#define	songMap[jazz_butcher_-v-_count_dracula]	count_dracula.html
+#define	songMap[jazz_butcher_theme]	jb_theme.html
+#define	songMap[jazz_butcher_-v-_prime_minister]	jb_v_pm.html
+#define	songMap[just_like_bettie_page]	betty_page.html
+#define	songMap[keeping_the_curtains_closed]	curtains.html
+#define	songMap[kids_in_the_mall]	kids_in_the_mall.html
+#define	songMap[killed_out]	killed_out.html
+#define	songMap[la_mer]	la_mer.html
+#define	songMap[land]	land.html
+#define	songMap[last_of_the_gentleman_adventurers]	last_of_the_gentleman_adventurers.html
+#define	songMap[line_of_death]	line_of_death.html
+#define	songMap[living_in_a_village]	living_in_a_village.html
+#define	songMap[looking_for_lot_49]	lot_49.html
+#define	songMap[lost_in_france]	lost_in_france.html
+#define	songMap[love_kittens]	love_kittens.html
+#define	songMap[lulu's_nightmare]	lulus_nightmare.html
+#define	songMap[marnie]	marnie.html
+#define	songMap[mercy]	mercy.html
+#define	songMap[mind_like_a_playgroup]	mind_like_a_playgroup.html
+#define	songMap[mister_siberia]	mister_siberia.html
+#define	songMap[monkeyface]	monkeyface.html
+#define	songMap[mr._odd]	mr_odd.html
+#define	songMap[mister_odd]	mr_odd.html
+#define	songMap[my_desert]	my_desert.html
+#define	songMap[my_zeppelin]	my_zeppelin.html
+#define	songMap[new_invention]	new_invention.html
+#define	songMap[next_move_sideways]	next_move_sideways.html
+#define	songMap[niagara]	niagara.html
+#define	songMap[nightmare_being]	nightmare_being.html
+#define	songMap[nothing_special]	nothing_special.html
+#define	songMap[old_snakey]	old_snakey.html
+#define	songMap[olof_palme]	olof_palme.html
+#define	songMap[out_of_touch]	out_of_touch.html
+#define	songMap[panic_in_room_109]	panic.html
+#define	songMap[partytime]	partytime.html
+#define	songMap[penguins]	penguins.html
+#define	songMap[peter_lorre]	peter_lorre.html
+#define	songMap[pineapple_tuesday]	pineapple_tuesday.html
+#define	songMap[poisoned_by_food]	poisoned_by_food.html
+#define	songMap[president_chang]	president_chang.html
+#define	songMap[president_reagan's_birthday_present]	president_reagan.html
+#define	songMap[racheland]	racheland.html
+#define	songMap[rain]	rain.html
+#define	songMap[real_men]	real_men.html
+#define	songMap[rebecca_wants_her_bike_back]	rebecca.html
+#define	songMap[red_pets]	red_pets.html
+#define	songMap[rosemary_davis'_world_of_sound]	rosemary_davis.html
+#define	songMap[only_a_rumour]	rumour.html
+#define	songMap[saints_prayer]	saints_prayer.html
+#define	songMap[scarlett]	scarlett.html
+#define	songMap[sex_engine]	sex_engine.html
+#define	songMap[shame_about_you]	shame_about_you.html
+#define	songMap[she's_a_yo-yo]	shes_a_yo_yo.html
+#define	songMap[she's_on_drugs]	shes_on_drugs.html
+#define	songMap[shirley_maclaine]	shirley.html
+#define	songMap[sister_death]	sister_death.html
+#define	songMap[sixteen_years]	sixteen_years.html
+#define	songMap[sleepwalking]	sleepwalking.html
+#define	songMap[southern_mark_smith]	smith.html
+#define	songMap[beautiful_snow-white_hair]	snowy.html
+#define	songMap[solar_core]	solar_core.html
+#define	songMap[soul_happy_hour]	soul_happy_hour.html
+#define	songMap[south_america]	south_america.html
+#define	songMap[still_&_all]	still_and_all.html
+#define	songMap[still_in_the_kitchen]	still_in_the_kitchen.html
+#define	songMap[surf_gear_in_idaho]	surf_gear_in_idaho.html
+#define	songMap[susie]	susie.html
+#define	songMap[sweetwater]	sweet_water.html
+#define	songMap[swell]	swell.html
+#define	songMap[the_ballad_of_tiny_and_clyde]	the_ballad_of_tiny_and_clyde.html
+#define	songMap[the_best_way]	best_way.html
+#define	songMap[the_good_ones]	the_good_ones.html
+#define	songMap[the_new_world]	the_new_world.html
+#define	songMap[the_one_you_adore]	the_one_you_adore.html
+#define	songMap[the_onion_field]	the_onion_field.html
+#define	songMap[thing]	thing.html
+#define	songMap[tomb&eacute;_dans_les_pommes]	tombe_dans_les_pomes.html
+#define	songMap[tough_priest]	tough_priest.html
+#define	songMap[truck_o_fear]	truck_o_fear.html
+#define	songMap[true_stories]	true_stories.html
+#define	songMap[turtlebait]	turtlebait.html
+#define	songMap[the_ugliest_song_in_the_world]	ugly_song.html
+#define	songMap[vienna_song]	vienna_song.html
+#define	songMap[vodka_girls]	vodka_girls.html
+#define	songMap[waiting_for_sumo]	waiting_for_sumo.html
+#define	songMap[walk_with_the_devil]	walk_with_the_devil.html
+#define	songMap[water]	water.html
+#define	songMap[whaddya?]	whaddya.html
+#define	songMap[what's_the_matter\,_boy?]	whats_the_matter_boy.html
+#define	songMap[when_eno_sings]	when_eno_sings.html
+#define	songMap[whitfield]	whitfield.html
+#define	songMap[who_loves_you_now?]	who_loves_you_now.html
+#define	songMap[word_i_was_looking_for]	word_i_was_looking_for.html
+#define	songMap[christmas_with_the_pygmies]	xmas_with_the_pygmies.html
+#define	songMap[baby\,_it's_you]	baby_its_you.html
+#define	songMap[the_basement]	basement_theme.html
+#define	songMap[bath_of_bacon]	bath.html
+#define	songMap[bubonic_plague]	bubonic_plague.html
+#define	songMap[zombie_love]	zombie_love.html
+#define	songMap[brian_wilson]	shakey.html
+#define	songMap[shakey]	shakey.html
+
+#define	songMap[battle_time_now]	wilson_battle_time_now.html
+#define	songMap[buffalo_sniper]	wilson_buffalo_sniper.html
+#define	songMap[burn\,_hollywood_burn]	wilson_burn_hollywood_burn.html
+#define	songMap[critters]	wilson_critters.html
+#define	songMap[dark_agenda]	wilson_dark_agenda.html
+#define	songMap[every_saturday_night]	wilson_every_saturday_night.html
+#define	songMap[hippy_shit]	wilson_hippy_shit.html
+#define	songMap[istanbul_connection]	wilson_istanbul_connection.html
+#define	songMap[no_winners]	wilson_no_winners.html
+#define	songMap[police_chief]	wilson_police_chief.html
+#define	songMap[quality_people]	wilson_quality_people.html
+#define	songMap[secret_government]	wilson_secret_government.html
+#define	songMap[yellow_pages]	wilson_yellow_pages.html
+
+#define	songMap[come\,_friendly_spacemen]	sumosonic_come_friendly_spacemen.html
+#define	songMap[god's_green_earth]	sumosonic_gods_green_earth.html
+#define	songMap[monks_of_kung_fu]	sumosonic_monks_of_kung_fu.html
+#define	songMap[business_and_work]	sumosonic_business_and_work.html
+#define	songMap[destroy_all_monsters]	sumosonic_destroy_all_monsters.html
+#define	songMap[stupid]	sumosonic_stupid.html
+#define	songMap[everything_is_wonderful]	sumosonic_everything_is_wonderful.html
+#define	songMap[fern_schnell_gut]	sumosonic_fern_schnell_gut.html
+#define	songMap[cat's_life]	sumosonic_cats_life.html
+#define	songMap[my_ultimate_baby]	sumosonic_my_ultimate_baby.html
+#define	songMap[we_are_the_traffic]	sumosonic_we_are_the_traffic.html
+#define	songMap[sputnik]	sumosonic_sputnik.html
+#define	songMap[radio_saigon]	sumosonic_radio_saigon.html
+#define	songMap[hey\,_star]	sumosonic_hey_star.html
+
+
+#define	songMap[Melanie_Hargreaves'_Father's_Jaguar]	melanie_hargreave.html
+#define	songMap[time]	time.html
+#define	songMap[sea_madness]	sea_madness.html
+#define	songMap[never_give_up]	never_give_up.html
+#define	songMap[amalfi_coast]	amalfi_coast.html
+#define	songMap[running_on_fumes]	running_on_fumes.html
+#define	songMap[the_highest_in_the_land]	highest_in_the_land.html
+#define	songMap[sebastian's_medication]	sebastians_medication.html
+#define	songMap[goodnight_sweetheart]	goodnight_sweetheart.html
+#define	songMap[wildlife]	wildlife.html
+
+#define	append(x, y)
+	${define(${x}, ${${x}} ${${y}})}
+
+#define	splitPara(p, sep)
+	${makeArray(${p}, ${sep}, ${${p}})}
+
+#define	parseCleanupUnknown(x, act)
+#live	if ((getval(${x}) == act:) || (getval(act) = yes))
+	${define(px, ${cleanLines(${underscore2space(${replace(${${x}}, act:, )})})})}
+	<a href="${jbc_search}?f=act&q=${encode(${px})}">${px}</a>
+#live	else
+	${define(px, ${cleanLines(${underscore2space(${replace(${${x}}, person:, )})})})}
+	<a href="${jbc_search}?f=performer&q=${encode(${px})}">${px}</a>
+#live	endif
+
+#define	parse(para, act=no)
+#live	if (getval(${para}) == ]])
+			${splitPara(p=${para}, sep=]])}
+#live		if (define(new_para,))
+#live			loop(l, 1, ${${para}->numResults})
+					${splitPara(p=${para}[${l}], sep=[[)}
+#live				loop(m, 1, ${${para}[${l}]->numResults})
+#live					if (defined(${${para}[${l}][${m}]}))
+						${append(new_para, ${${para}[${l}][${m}]})}
+#live					else
+							${append(new_para, ${para}[${l}][${m}])}
+#live					endif
+#live				endloop
+#live			endloop
+#live			if (getval(new_para) == /)
+					${new_para}
+#live			else
+					${parseCleanupUnknown(x=new_para, act=${act})}
+#live			endif
+#	${new_para}
+#live		endif
+#live	else
+			${${para}}
+#live	endif
+
+#define	act:Curtis_E._Johnson	${curt}
+#define	act:David_J.	${dj}
+#define	act:E-Man	${curt_eman}
+#define	act:Joe_Woolley	${joe_woolley}
+#define	act:Owen_Jones	${owen}
+#define	act:Peter_Astor	${astor}
+#define	act:Peter_Crouch	${pete}
+#define	act:Robyn_Hitchcock	${hitch}
+#define	act:Spectrum	${spect}
+#define	act:Syd_Meats	${syd}
+#define	act:Sydney_Meats	${syd}
+#define	act:The_Black_Watch	${bwatch}
+#define	act:The_Blue_Aeroplanes	${aero}
+#define	act:The_Woodentops	${tops}
+#define	act:Wolfgang_Tschegg	${wolfi}
+
+#define	person:Agent_Wilson	${russ_agent}
+#define	person:Alex_Green	${green}
+#define	person:Alex_Lee	${lix}
+#define	person:Alice_Thompson	${at}
+#define	person:Blair_MacDonald	${blair}
+#define	person:B-Man	${botty_bman}
+#define	person:Cole_Coonce	${coonce}
+#define	person:Colin_Harris	${colin}
+#define	person:Curtis_E._Johnson	${curt}
+#define	person:Dave_Henderson	${hend}
+#define	person:Dave_Morgan	Dave Morgan
+#define	person:David_J.	${dj}
+#define	person:Dooj_Wilkinson	${dooj}
+#define	person:Erol_Suleyman	${erol}
+#define	person:Felix_Ray	${felix}
+#define	person:Gabriel_Turner	${gab}
+#define	person:Gerard_Langley	${gerard}
+#define	person:G-Man	${steve_gordon_gman}
+#define	person:Ian_Botterill	${botty}
+#define	person:MC_Bott	${botty}
+#define	person:Mister_B	${sumo_botty}
+#define	person:Ian_Sturgess	${is}
+#define	person:Joel_Harries	${joel_harries}
+#define	person:Joe_Woolley	${joe_woolley}
+#define	person:David_E._Barker	${barker}
+#define	person:John_A._Rivers	${rivers}
+#define	person:Martin_Stebbing	${rev}
+#define	person:Iain_O'Higgins	${iain}
+#define	person:Jonny_Mattock	 ${jonny_mattock}
+#define	person:Julian_Poole	${jules}
+#define	person:Kathie_McGinty	${kathie}
+#define	person:Kathie_M	${sumo_kathie}
+#define	person:Kathy_Schaer	${kathy}
+#define	person:Special_K	${sumo_kathy}
+#define	person:Kevin_Haskins	${hask}
+#define	person:Kizzy_O'Callaghan	${kizzy}
+#define	person:Laurence_O'Keefe	${larry}
+#define	person:Lionel_Brando	${lb}
+#define	person:Mike_Novakovic	${mike_novakovic}
+#define	person:Louis_Leroi	${ll}
+#define	person:Marc_Hadley	${mark_hadley}
+#define	person:Max_Eider	${max}
+#define	person:Mick_Packwood	${mick}
+#define	person:Misery_Wilson	${kathy_misery}
+#define	person:Nick_Burson	${nick}
+#define	person:Owen_Jones	${owen}
+#define	person:Pat_Beirne	${beirne}
+#define	person:Pat_Fish	${pat}
+#define	person:Deirdre_O'Donoghue	${deirdre}
+#define	person:Brent_Bambury	${brent}
+#define	person:Paul_Hookham	${hook}
+#define	person:Paul_Mulreany	${paul}
+#define	person:Peter_Astor	${astor}
+#define	person:Peter_Crouch	${pete}
+#define	person:Richard_Formby	${richard}
+#define	person:Richard_Lohan	${lohan}
+#define	person:Rolo_McGinty	${rolo}
+#define	person:Agent_Cooper	${sumo_russ}
+#define	person:Agent_Russell_Cooper	${sumo_russ}
+#define	person:Russell_Cooper	${russ}
+#define	person:Simon_Taylor	${simon}
+#define	person:Sonic_Boom	${sonic}
+#define	person:Steve_Beswick	${steve_beswick}
+#define	person:Steve_Garofalo	${garofalo}
+#define	person:Steve_Gordon	${steve_gordon}
+#define	person:Steve_Musgrove	${sm}
+#define	person:Steve_New	${stevenew}
+#define	person:Steve_Valentine	${steve}
+#define	person:Sumishta_Brahm	${sumishta}
+#define	person:Tim_Harries	 ${tim_harries}
+#define	person:Headstone	${sumo_pat}
+#define	person:Wilson_Headstone	${pat_headstone}
+#define	person:Wolfgang_Tschegg	${wolfi}
+#define	person:Max_Read	${max_read}
+#define	person:Anita_Allbright	${anita_allbright}
+#define	person:Mark_Refoy	${mark_refoy}
+
+#define	uniqify(lookup)
+#live	while (ri = ${lookup}[*])
+#live	if (defined(already->${${lookup}[${ri}]}))
+#live	else
+	${${lookup}[${ri}]},
+#live	if (define(already->${${lookup}[${ri}]}, YES))
+#live	endif
+#live	endif
+#live	endwhile
+
+#define	prettify(lookup)
+#live	while (ri = ${lookup}[*]->instr)
+	${pretty(${${lookup}[${ri}]->instr})},
+#live	endwhile
+
+#define	doGigPerformer(person, inline=yes, tab=no)
+#live	if (define(numArtist, 0))
+#live	endif
+#live	if ((sql(p:select if (aka is not NULL, aka, performer) as performer ,year(datetime) as year from performance where category='event' and (performer = "[[person:${space2underscore(${person})}]]" or aka = "[[person:${space2underscore(${person})}]]") group by 1,2 order by 1,2)) && (getnum(p->numResults) > 0))
+#live	if (getval(tab) = yes)
+		${begTab(Active)}
+#live	endif
+#live	if (defined(performerLast, XXX))
+#live	endif
+#live	while (pi = p[*]->performer)
+#live	if (getval(p[${pi}]->performer) != ${performerLast})
+	${newEntry(prefix=p[${pi}])}
+#live	endif
+	${addEntry(prefix=p[${pi}])}
+#live	if (define(performerLast, ${p[${pi}]->performer}))
+#live	endif
+#live	endwhile
+#live	loop(z, 1, ${numArtist})
+#live	if (getval(inline) = no)
+	${tag_beg}
+	Years Active
+	${tag_end}
+	<blockquote>
+	Active:
+	${cleanLines(${listOfYears2ranges(y=${artist[${z}]->years})})}
+#live	else
+	<span class="smalltext">
+	-
+	${cleanLines(${listOfYears2ranges(y=${artist[${z}]->years})})}
+	</span>
+#live	endif
+#live	if (!(getval(person) == fish))
+	<span class="smalltext">(<a href="${jbc_search}?f=performer&q=${encode(${person})}">click to explore</a>)</span>
+#live	endif
+#live	if (getval(inline) = no)
+	</blockquote>
+#live	endif
+#live	endif
+#live	endloop
+#live	loop(xc, 1, 50)
+#live	if (define(artist[${xc}]->years,))
+#live	endif
+#live	if (define(artist[${xc}],))
+#live	endif
+#live	endloop
+#live	if (getval(tab) = yes)
+		${endTab}
+#live	endif
+#live	endif
+
+#define	gigExtras	recording,interview,poster,pix,self,review,video,songlist,setlist,wilson,sumo,eg,solo,nopat,ticket,press
+#define	gigExtra[press]	have published press articles
+#define	gigExtra[ticket]	have scanned ticket stubs
+#define	gigExtra[poster]	have posters
+#define	gigExtra[pix]	were photographed
+#define	gigExtra[self]	were self-reviewed by the Butcher
+#define	gigExtra[interview]	are interviews
+#define	gigExtra[recording]	were recorded
+#define	gigExtra[review]	have fan reviews
+#define	gigExtra[video]	have videos
+#define	gigExtra[songlist]	have song lists
+#define	gigExtra[setlist]	have scanned set lists
+#define	gigExtra[wilson]	are for Pat's project Wilson
+#define	gigExtra[sumo]	are for Pat's project Sumosonic
+#define	gigExtra[eg]	are for Pat's project The Black Eg
+#define	gigExtra[solo]	are just Pat Solo
+#define	gigExtra[nopat]	events tagged as <i>Masters Of Budvar</i>
+
+#define	doGigSearch(f, q)
+#live	if ((defined(f)) && (defined(q)) && (inList(${f}, song))
+#live		if (sql(g:select g.*, year(g.datetime) as year, month(g.datetime) as mon from gig g, gigsong gs where gs.song like "%%${unfilter(${q})}%%" and g.datetime=gs.datetime and g.isdeleted is NULL order by g.datetime desc))
+				${tag_beg}
+				${g->numResults} documented performances of <i>${unfilter(${q})}</i>
+				${tag_end}
+				${doListings(prefix=g, section=${f})}
+#live		endif
+#**${g->query}**
+#live	elseif ((defined(f)) && (defined(q)) && (inList(${f}, act))
+#live		if (sql(g:select g.*, year(g.datetime) as year, month(g.datetime) as mon from gig g, performance p where (p.performer like "[[act:%%${unfilter(${space2underscore(${q})})}%%]]" || p.aka like "[[act:%%${unfilter(${space2underscore(${q})})}%%]]") and g.datetime=p.datetime and g.isdeleted is NULL order by g.datetime desc))
+				${tag_beg}
+				${g->numResults} documented events where <i>${q}</i> was on the bill
+				${tag_end}
+				${doListings(prefix=g, section=${f})}
+#live		endif
+#live	elseif ((defined(f)) && (defined(q)) && (inList(${f}, performer))
+	${albumCredits(person=${q}, short=no)}
+#live		if (sql(g:select g.*, year(g.datetime) as year, month(g.datetime) as mon from gig g, performance p where (p.performer like "[[person%%:${unfilter(${space2underscore(${q})})}%%]]" or p.aka like "[[person%%:${unfilter(${space2underscore(${q})})}%%]]") and g.datetime=p.datetime and g.isdeleted is NULL order by g.datetime desc))
+				${tag_beg}
+				${g->numResults} documented events where <i>${q}</i> performed
+				${tag_end}
+				${doListings(prefix=g, section=${f})}
+#live		endif
+#live	elseif ((defined(f)) && (defined(q)) && (inList(${f}, city, state, venue, country, year, with, blurb, extras)))
+#live		if (getval(f) = extras)
+					${define(query, find_in_set("${q}", extra))}
+					${define(doMonth, no)}
+#live			if (defined(gigExtra[${q}]))
+					${define(title, ${gigExtra[${q}]})}
+#live			else
+					${define(title, - No such "extra" ${q})}
+#live			endif
+#live		elseif (getval(f) = year)
+				${define(query, year(datetime) = "${q}")}
+				${define(doMonth, yes)}
+				${define(title, for the ${f} <i>${q}</i>)}
+#live		elseif (getval(f) = blurb)
+				${define(query, blurb like "%%${unfilter(${q})}%%")}
+				${define(title, where description contains <i>${q}</i>)}
+#live		elseif (getval(f) = with)
+				${define(query, alsowith like "%%${unfilter(${q})}%%")}
+				${define(title, where <i>${q}</i> shared the bill)}
+#live		else
+				${define(query, ${f} like "%%${unfilter(${q})}%%")}
+				${define(doMonth, no)}
+				${define(title, for the ${f} containing <i>${q}</i>)}
+#live		endif
+#live		if (sql(g:select *, year(datetime) as year, month(datetime) as mon from gig where ${query} and isdeleted is NULL order by datetime desc))
+				${tag_beg}
+				${g->numResults} documented events ${title}
+				${tag_end}
+				${doListings(prefix=g, section=${f})}
+#live		endif
+
+#define	mkGigPress(dt)
+#
+#	noun:gig_press
+#
+#live	if ((sql(gp:select * from press where dtgig='${dt}' and url not like '%%mp3')) && (getint(gp->numResults) > 0))
+#live	if (getval(gp->type) == interview)
+	${begTab(Interview)}
+#live	else
+	${begTab(Press)}
+#live	endif
+	<div class="listItem">
+#live	while (gpi = gp[*]->press_id)
+#live	if (getval(gp[${gpi}]->url) == .mp3)
+		<blockquote>
+		${linkAudio(title=${literalizeCommas(${gp[${gpi}]->title})}, mp3=${gp[${gpi}]->url}, autolink=no)}
+		</blockquote>
+#live	else
+#live		if (defined(gp[${gpi}]->publication))
+				<b><a href="${gp[${gpi}]->url}">${gp[${gpi}]->publication}</a></b>
+#live			if (defined(gp[${gpi}]->title))
+					<i><a href="${gp[${gpi}]->url}">${gp[${gpi}]->title}</a></i>
+#live			endif
+#live		else
+				<b><a href="${gp[${gpi}]->url}">${gp[${gpi}]->title}</a></b>
+#live		endif
+#live	endif
+#live	if (defined(gp[${gpi}]->location))
+	(${gp[${gpi}]->location}),
+#live	endif
+	${mkGigDatetime(${gp[${gpi}]->dtpublished})}<br/>
+#live	endwhile
+	</div>
+	${endTab}
+#live	endif
+
+#define	404
+	${mkHeader()}
+	The words you were looking for.. went!
+	${jbc_footer}
+
+#define	mkPressDate(ts)
+#live	if (define(pd, ${substr(0, 10, ${ts})}))
+#live	if (int(${substr(8, 2, ${pd})}) > 0)
+	${num2month(${int(${substr(5, 2, ${pd})})})} ${substr(8, 2, ${pd})}, ${substr(0, 4, ${pd})}
+#live	else if (int(${substr(5, 2, ${pd})}) > 0)
+	${num2month(${int(${substr(5, 2, ${pd})})})}, ${substr(0, 4, ${pd})}
+#live	else
+	${substr(0, 4, ${pd})}
+#live	endif
+#live	endif
+
+#define	iconFeedback 💬
+##define	iconPlayers 👨‍👨‍👧
+#define	iconPlayers
+#define	iconReview ♥
+#define	iconPix 📷
+#define	iconRecording 🎵
+#define	iconVideo 📹
+#define	iconWith ⭐
+#define	iconSelf 📝
+#define	iconSolo ☠
+#define	iconPress 📰
+#define	iconSonglist 🎼
+
+
+#
+#	whole lotta crap to:
+#	* get rid of newlines (prettyWrap)
+#	* get rid of double quotes (replace)
+#	* get of extra spaces and newlines (cleanLines)
+#	* get rid of tabs (codify+replace)
+#
+#define	cleanJSONData(x, comma)
+#live	if (getval(${x}))
+"${deLiteralizeCommas(${replace(${codeify(${cleanLines(${prettyWrap(99999, ${replace(${literalizeCommas(${${x}})}, ", ')})})})}, &nbsp;, )})}"${comma}
+#"${replace(${codeify(${cleanLines(
+#	${deLiteralizeCommas(${prettyWrap(99999, ${replace(${literalizeCommas(${${x}})}, ", ')})})})})}, &nbsp;, )}"${comma}
+#live	else
+	""${comma}
+#live	endif
+
+#define	objectToJSON(obj)
+{
+	"${obj}": [
+#live	loop(x, 1, ${${obj}->numResults})
+#albums->numFields
+	{
+#live	loop(field, 1, ${${obj}->numFields})
+		"${${obj}->field[${field}]}": ${cleanJSONData(${literalizeCommas(${obj}[${x}]->${${obj}->field[${field}]})}, ${ternary((getint(field) < ${${obj}->numFields}), \,,\ )})}
+#live	endloop
+	} ${ternary((getint(x) < ${${obj}->numResults}), \,, \ )}
+#live	endloop
+	]
+}
+

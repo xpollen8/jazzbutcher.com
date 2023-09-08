@@ -10,8 +10,7 @@ import Tag from '@/components/Tag';
 const Comment = ({ subject, dtcreated, who, whence, comments }: CommentType, key: number) => (
 	<div key={key}>
 		<label>Subject</label>{subject} info={<> {whence} - {who} </>}
-		<div className="annotation">{comments}</div>
-		<div dangerouslySetInnerHTML={{__html: comments }} />
+		<div className="annotation" dangerouslySetInnerHTML={{__html: comments }} />
 	</div>
 )
 

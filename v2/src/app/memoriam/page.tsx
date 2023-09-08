@@ -9,7 +9,7 @@ import { Credit } from '@/components/GenericWeb';
 
 const Memoriam = () =>
 <>
-	<Header section='jbc' title="In Memoriam" />
+	<Header section='pat' title="In Memoriam" />
 	<div className="w-full flex">
 		<div className="text-center w-1/2">
 			<br/> <br/> <br/>

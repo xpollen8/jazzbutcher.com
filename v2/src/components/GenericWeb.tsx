@@ -78,3 +78,27 @@ export const Credit = ({ g, u, d }: {
 export const Contribution = ({ titles }: {
 	titles?: string
 }) => (titles) && genericWeb({ g: titles, t: "Contribution", s: "credit" })
+
+export const removeHTML = (str?: string) => {
+	const deParagraphed = str
+		?.replace(/<BR>/ig, '<br/>') // <BR> => <br/>
+		?.replace(/<p>/ig, '<br/>') // <p> => <br/>
+		?.replace(/<p([^>]+)>/ig, '<br/>')  // <p.....> => <br/>
+		?.replace(/<\/p>/ig, '<br/>') // </p> => <br/>
+		?.trim();
+	// need to leave <br/ tags intact
+	const unlinked = deParagraphed
+		?.replace(/(<(?!br\/)([^>]+)>)/ig, '')?.trim()
+		//?.replace(/(<([^>]+)>)/ig, '')?.trim()
+	return unlinked;
+}
+
+export const ParsedCaption = (props: { credit?: string, url?: string, credit_url?: string, credit_date?: string, caption?: string | React.ReactNode, image_caption?: string | React.ReactNode }) => {
+	return (<>
+		{(props?.caption || props?.image_caption) && <>{props?.caption} {props?.image_caption}</>}
+		<br />
+		<Credit g={removeHTML(props?.credit)} u={props?.credit_url} d={props?.credit_date} />
+	</>)
+}
+
+export const RenderHTML = ({ body }: { body?: string}) => body && <div dangerouslySetInnerHTML={{ __html: body }} />

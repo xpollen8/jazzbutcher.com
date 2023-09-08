@@ -11,7 +11,7 @@ import { parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Dat
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
-import { Credit } from '@/components/GenericWeb';
+import { Credit, ParsedCaption, removeHTML, RenderHTML } from '@/components/GenericWeb';
 import useGig from '@/components/useGig';
 
 const Player = (str?: string) => {
@@ -46,26 +46,6 @@ const Act = (str?: string) => {
 	return str;
 }
 
-const Caption = ({ caption, className="caption" }: { caption?: string, className?: string }) => caption && <div className={className}>{caption}</div>
-
-const removeHTML = (str?: string) => {
-	const deParagraphed = str
-		?.replace(/<BR>/ig, '<br/>') // <BR> => <br/>
-		?.replace(/<p>/ig, '<br/>') // <p> => <br/>
-		?.replace(/<p([^>]+)>/ig, '<br/>')  // <p.....> => <br/>
-		?.replace(/<\/p>/ig, '<br/>') // </p> => <br/>
-		?.trim();
-	// need to leave <br/ tags intact
-	const unlinked = deParagraphed
-		?.replace(/(<(?!br\/)([^>]+)>)/ig, '')?.trim()
-		//?.replace(/(<([^>]+)>)/ig, '')?.trim()
-	return unlinked;
-}
-
-const RenderHTML = ({ body }: { body?: string}) => body && <div dangerouslySetInnerHTML={{ __html: body }} />
-
-const parseCaption = (str?: string) => removeHTML(str);
-
 const parsePhoto = (str: string) => {
 	if (!str) return {};
 
@@ -99,7 +79,7 @@ const parsePhoto = (str: string) => {
 const GigMedia = ({ data }: any) => {
 	const { thumb, width, height, image, ext, server } = parsePhoto(data?.image);
 	if (!image) return <></>;
-	const caption = parseCaption(data?.image_caption);
+	const caption = removeHTML(data?.image_caption?.image_caption);
 	const alt = caption || `Gig ${data?.type}`;
 
 	return (<div className="image drop-shadow-md" style={{ width: width / 1.45 }}>
@@ -107,8 +87,7 @@ const GigMedia = ({ data }: any) => {
 			<Image src={thumb} width={width / 1.5} height={height / 1.5} alt={alt} className="max-w-md" />
 		</Link>
 		<div className="credits">
-			<Caption caption={caption} />
-			<Credit g={removeHTML(data?.credit)} u={data?.credit_url} d={data?.credit_date} />
+			<ParsedCaption {...data} />
 		</div>
 	</div>)
 }
@@ -217,11 +196,9 @@ const ExtraNav = ({ datetime }: { datetime: string }) => {
 const Nav = ({ year, datetime }: { year: number, datetime: string }) => {
 	const hasHour = !(datetime.includes('00:00:00'));
 
-	const title = <span>
-		<Link href={`/gigs/${year}`}>{year}</Link> | {parseMonthName(datetime)} {parseDayOrdinal(datetime)} {hasHour && parseHourAMPM(datetime)}
-	</span>
+	const display = `${parseMonthName(datetime)} ${parseDayOrdinal(datetime)} ${(hasHour) ? parseHourAMPM(datetime) : ''}`;
 
-	return <Header section='gigs' title={title} extraNav=<ExtraNav datetime={datetime} /> />
+	return <Header section='gigs' title={ [ `${year};;/gigs/${year}`, display ] } extraNav=<ExtraNav datetime={datetime} /> />
 }
 
 const Content = ({ datetime }: { datetime: string }) => {

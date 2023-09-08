@@ -30,7 +30,7 @@ export type HashedType = {
 	[key: string]: any;
 }
 
-const linkExternal = (href: string, text?: string): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
+const linkExternal = (href: string, text?: string | React.ReactNode): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
 const linkInternal = (href: string, text?: string): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
 const parseYear = (datetime: string): number => parseInt(localDate(datetime).substr(0, 4), 10);

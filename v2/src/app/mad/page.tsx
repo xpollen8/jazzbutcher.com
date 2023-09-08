@@ -2,8 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Tag from '@/components/Tag';
+import LetterHeader from '@/components/LetterHeader';
 import { dateDiff } from '@/lib/macros';
+import { curt, terry } from '@/lib/defines';
 
 const madness = [
 	{
@@ -133,93 +134,69 @@ const madness = [
 
 const Mad = () => <>
 	<Header section='mad' />
-	<Tag>
-		Contest Invocation
-	</Tag>
-	<div className="annotation">
-	<p>
-	Sitting around the house with Curtis and Terry 
-	Walpole a week or so ago - we came up with a plot.
-	</p>
-	<p>
-	It occurred to us that we could liven up the site and have 
-	ourselves a deep larrrf if we were to entice those who use the
-	site to join in a little competition entitled
-	</p>
-	<p>
-	<b>&quot;HOW MAD ARE YOU?&quot;</b>
-	</p>
-	<p>
-	Folks send in photos of themselves, their loved ones, their family
-	pets, whatever...being MAD in jbc leisurewear. The maddest ones
-	win prizes, which we have prepared over here (home-made CDs of
-	Jazz Butcher-type slush produced in the living room on a commission
-	basis, basically).
-	</p>
-	<p>
-	It may be, of course, that Mad Brody Culpepper 
-	and Mad Terence Walpole have already got this thing sown up.
-	</p>
-	<p>
-	Love, Pat,
-	{dateDiff('1998-11-20 15:58:55')}
-	</p>
-	</div>
+	<div className="etc">
+		<LetterHeader title="Contest Invocation" />
+		<blockquote className="annotation">
+			Sitting around the house with {curt} and {terry} a week or so ago - we came up with a plot.
+			<p />
+			It occurred to us that we could liven up the site and have 
+			ourselves a deep larrrf if we were to entice those who use the
+			site to join in a little competition entitled
+			<p />
+			<b>&quot;HOW MAD ARE YOU?&quot;</b>
+			<p />
+			Folks send in photos of themselves, their loved ones, their family
+			pets, whatever...being MAD in jbc leisurewear. The maddest ones
+			win prizes, which we have prepared over here (home-made CDs of
+			Jazz Butcher-type slush produced in the living room on a commission
+			basis, basically).
+			<p />
+			It may be, of course, that Mad Brody Culpepper 
+			and Mad Terence Walpole have already got this thing sown up.
+			<p />
+			Love, Pat,
+			{dateDiff('1998-11-20 15:58:55')}
+		</blockquote>
 
-	<Tag>
-	The deranged
-	</Tag>
+		<LetterHeader title="-- The Deranged --" />
 
-	<div>
-		{madness.map(({ email, image, caption, description } :
-		{
-			email?: string
-			image: string
-			caption: string
-			description: React.ReactElement
-		}, key: number): React.ReactNode => {
-			const img = `images/mad/${image}`;
-			return (
-			<div key={key} className="grid justify-items-center">
-				<Link href={`https://jazzbutcher.com/${img}.jpg`}>
-					<Image
-						className="border rounded-lg"
-						src={`https://jazzbutcher.com/${img}_500.jpg`}
-						height='500'
-						width='500'
-						alt={caption} />
-				</Link>
-				<p>
-					<b>{caption}</b>
-				</p>
-				<p className="w-3/4 text-justify">
-					{description}
-				</p>
-			</div>
-			)
-		})}
-	</div>
+		<div>
+			{madness.map(({ email, image, caption, description } :
+			{
+				email?: string
+				image: string
+				caption: string
+				description: React.ReactElement
+			}, key: number): React.ReactNode => {
+				const img = `images/mad/${image}`;
+				return <LetterHeader key={key} title={caption}
+					subhead=<>
+						<Image
+							className="border rounded-lg"
+							src={`https://jazzbutcher.com/${img}_500.jpg`}
+							height='500'
+							width='500'
+							alt={caption} />
+						{description}
+					</>
+				/>
+			})}
+		</div>
 
-	<Tag>
-	Contest Results
-	</Tag>
-	<div className="annotation">
-		<p>
+		<LetterHeader title="Contest Results" />
+		<blockquote className="annotation">
 			Here, as promised, are the results of the Icelandic Jury.
-		</p>
-		<p>
+			<p />
 			Winners: Mad Brody Culpepper (it wuz always gonna happen...)
 			<br/>
 			Mad Doctor Ed (I often watch that show myself, Ed...)
 			<br/>
 			Mad Roger &quot;The Cat&quot; Pace (even if he cheated, any cat that work
 			Adobe Photoshop all by himself deserves a prize!)
-		</p>
-		<p>
+			<p />
 			Each of the above should send in a mailing address. They will then receive
 			a CD of soppy shite from the archives of NN1.
-		</p>
-		<p>
+			<p />
 			Honorable mentions to
 			: Nearly-Mad Ken Miller (we love the old carboard-box-on-the-head
 			routine round these parts) and Dave Estes, mad enough to travel from
@@ -229,12 +206,11 @@ const Mad = () => <>
 			(for that is the kind of guys we are).   Thanks to one and all who
 			entered the competition and livened up our long winter evenings
 			through the Magic Of The Internet.
-		</p>
-		<p>
+			<p />
 			Later. Love, Pat    xxx
 			<br/>
 			{dateDiff('1999-03-03 19:16:16')}
-		</p>
+		</blockquote>
 	</div>
 	<Footer />
 </>

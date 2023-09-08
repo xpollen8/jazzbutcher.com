@@ -52,7 +52,7 @@
 
 .date {
 	font-size: .9em;
-	color: #bbb;
+	color: #777;
 }
 
 /// GALLERY
@@ -115,11 +115,21 @@
 	letter-spacing: 0.01em;
 	word-spacing: 0.12em;
 	padding: 10px;
-	padding-left: 40px;
+	padding-left: 30px;
 	background-color: rgba(248,248,248,0.8);
 	background-position: left top;
 	background-repeat: no-repeat;
-	background-image: url(https://jazzbutcher.com/assets/quote.png);
+	content: open-quote;
+	background-image: url(https://jazzbutcher.com/assets/small_quote.png);
+}
+.annotation {
+}
+.clear_float {
+	clear: both;
+}
+.annotation .release {
+	border-radius: 5px;
+	margin-right: 5px;
 }
 .iview_a:before {
 }
@@ -283,6 +293,13 @@ textplus1 {
 	margin: 3px;
 	border: 1px solid green;
 }
+.clickDiv {
+	padding: 3px;
+	margin: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #696;
+}
 .homeContainer {
 	margin: 4px 4px;
 	padding: 10px;
@@ -299,7 +316,7 @@ textplus1 {
 	color: #222;
 	border-radius: 4px;
 	background-color: #BCF1AF;
-	margin: 5px;
+	margin: 3px;
 	padding-top: 5px;
 	padding-left: 10px;
 	font-weight: bold;
@@ -375,6 +392,7 @@ blockquote {
 a {
 	text-decoration: none;
 	color: blue;
+	margin-right: .15em;
 }
 .leading {
 	line-height: 1.5;
@@ -748,4 +766,50 @@ p::first-letter {
 	padding: 5px;
 	background-color: #FFA500;
 	font-style: italic;
+}
+.etc {
+	filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.05));
+	background-color: rgba(0,0,0,.02);
+	outline: dashed;
+	outline-width: 1px;
+	margin: 6px;
+	margin-top: 7px;
+	padding: 10px;
+}
+
+samp {
+	font-size: 0.75em;
+}
+
+.breadcrumb {
+}
+
+.breadcrumb ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+    
+.breadcrumb li:not(:first-child)::before {
+	display: inline-block;
+	margin: 0 .10rem;
+	color: #666;
+	font-weight: bold;
+	content: "→";
+}
+.breadcrumb li:hover a{
+	color: #333;
+	background: lightyellow;
+}
+
+.breadcrumb li:last-child span{
+	background: lightyellow;
+	padding: 3px;
+	color: #777;
+}
+
+.breadcrumb a{
+	padding: 3px;
 }

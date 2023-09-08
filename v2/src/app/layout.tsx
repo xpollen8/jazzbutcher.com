@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import './globals.css'
 
-import MakeSimpleURI from '@/components/MakeSimpleURI';
+import NavItem from '@/components/NavItem';
 
 const jbc_memoriam = `/memoriam`;
 const jbc_fishy_mansions = `/fishy_mansions`;
@@ -34,27 +34,29 @@ export default function RootLayout({
 					<Link className="horn" href="/">
 						<Image alt="The Jazz Butcher" width={114} height={80} src="https://jazzbutcher.com/images/knife_logo_80.png" />
 					</Link>
-					<MakeSimpleURI uri="https://patfish.com" text="Pat" />
-					<MakeSimpleURI uri={jbc_memoriam} text="In Memoriam" />
-					<MakeSimpleURI uri={jbc_fishy_mansions} text="Fishy Mansions" />
-					<MakeSimpleURI uri={jbc_fiascos} text="The Fiascos" />
-					<MakeSimpleURI uri={jbc_lyrics} text="The Songs" />
-					<MakeSimpleURI uri={jbc_albums} text="The Releases" />
-					<MakeSimpleURI uri={jbc_gigs} text="The Gigs" />
-					<MakeSimpleURI uri={jbc_audio} text="Some Audio" />
-					<MakeSimpleURI uri={jbc_video} text="Some Video" />
-					<MakeSimpleURI uri={jbc_people} text="Conspirators" />
-					<MakeSimpleURI uri={jbc_press} text="Press" />
-					<MakeSimpleURI uri={jbc_news} text="News" />
-					<MakeSimpleURI uri={jbc_help} text="Contribute!" />
-					<MakeSimpleURI uri={jbc_etc} text="etc.." />
+					<NavItem uri="/pat" text="Pat" />
+					<NavItem uri={jbc_memoriam} text="In Memoriam" />
+					<NavItem uri={jbc_fishy_mansions} text="Fishy Mansions" />
+					<NavItem uri={jbc_fiascos} text="The Fiascos" />
+					<NavItem uri={jbc_lyrics} text="The Songs" />
+					<NavItem uri={jbc_albums} text="The Releases" />
+					<NavItem uri={jbc_gigs} text="The Gigs" />
+					<NavItem uri={jbc_audio} text="Some Audio" />
+					<NavItem uri={jbc_video} text="Some Video" />
+					<NavItem uri={jbc_people} text="Conspirators" />
+					<NavItem uri={jbc_press} text="Press" />
+					<NavItem uri={jbc_news} text="News" />
+					<NavItem uri={jbc_help} text="Contribute!" />
+					<NavItem uri={jbc_etc} text="etc.." />
 					<div className="nav_heading">Projects</div>
-					<MakeSimpleURI uri={`${jbc_search}?f=extras&q=eg`} text="Black Eg" />
-					<MakeSimpleURI uri={`${jbc_search}?f=extras&q=sumo`} text="Sumosonic" />
-					<MakeSimpleURI uri={`${jbc_search}?f=extras&q=wilson`} text="Wilson" />
+					<NavItem uri={`${jbc_search}?f=extras&q=eg`} text="Black Eg" />
+					<NavItem uri={`${jbc_search}?f=extras&q=sumo`} text="Sumosonic" />
+					<NavItem uri={`${jbc_search}?f=extras&q=wilson`} text="Wilson" />
 					<div className="nav_heading">Pre-JBC</div>
-					<MakeSimpleURI text="Nightshift" />
-					<MakeSimpleURI text="Institution" />
+					<NavItem text="Nightshift" />
+					<NavItem text="Institution" />
+					<NavItem text="Sonic Tonix" />
+					<NavItem text="Tonix" />
 				</div>
 				<div className="main">
 					<Link href="#" className="menuButton">

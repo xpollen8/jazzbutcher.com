@@ -86,9 +86,6 @@ const Home = (): React.ReactNode =>
 <>
 	<Header section='jbc' />
 		<div>
-		GIGS
-		</div>
-		<div>
 			<ReleaseBlurb lookup='never7' />
 			<HomeBooks />
 			<HomeReleases />

@@ -54,13 +54,21 @@ export type CommentType = {
 	comments: string
 }
 
-const cleanContact = (str: string) => str && str.replace(/\[remove\].*/, '@...');
+const censorEmail = (str: string) => {
+	console.log("censorEmail", str);
+	const deHTDB = str?.replace(/\[remove\].*/, '@');
+	const len = deHTDB.length;
+	const idx = deHTDB.indexOf('@') + 1;
+	console.log("censorEmail", { deHTDB, len, idx });
+	return deHTDB[0] + deHTDB.substr(1, idx) + Array(len - idx - 1).join('.') + deHTDB[len - 1];
+}
 
 const cleanValue = (v: string) => v.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<br/>');
 
 const filterComments = (res: CommentType[]) => res.map((c: CommentType) => ({
 	...c,
-	who: cleanContact(c?.who),
+	subject: cleanValue(c?.subject),
+	who: censorEmail(c?.who),
 	comments: cleanValue(c?.comments),
 }));
 

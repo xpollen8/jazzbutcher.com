@@ -5,7 +5,8 @@ drop table if exists press;
 create table press (
 	press_id mediumint unsigned NOT NULL auto_increment,
 	url varchar(200) NOT NULL,
-	type set('gig','interview','kit','album','pat','eg','wilson','sumo'),
+#	type set('gig','interview','kit','album','pat','eg','wilson','sumo'),
+	type varchar(200),
 	person varchar(200) NOT NULL,
 	dtpublished datetime NOT NULL,
 	dtgig datetime NOT NULL,

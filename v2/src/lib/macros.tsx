@@ -532,7 +532,7 @@ const songLinkMapped = (title: string) => {
 	if (songMapped) {
 		return linkSong({ title, href: `/lyrics/${songMapped}` });
 	} else {
-		return linkSong({ title, href: `/search?f=song&q=${title}` });
+		return linkSong({ title, href: `/gigs?f=song&q=${title}` });
 	}
 }
 

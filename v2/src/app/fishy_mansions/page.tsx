@@ -1,11 +1,89 @@
+"use client"
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FishySession from '@/components/FishySession';
+import LetterHeader from '@/components/LetterHeader';
 
-const Missing = () => 
+import { Navigation, Scrollbar } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
+
+const sessions = [
+	{
+		date: "2020-06-14",
+		poster: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200614/20200614_PatFish_FishyMansions_thumbnail.jpg",
+		mp4: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200614/20200614_PatFish_FishyMansions.mp4",
+	},
+	{
+		date: "2020-07-12",
+		poster: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200712/20200712_PatFish_FishyMansions_thumbnail.jpg",
+		mp4: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200712/20200712_PatFish_FishyMansions.mp4",
+	},
+	{
+		date: "2020-09-27",
+		poster: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200927/20200927_PatFish_FishyMansions_thumbnail.jpg",
+		mp4: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200927/20200927_PatFish_FishyMansions.mp4",
+	},
+	{
+		date: "2020-12-06",
+		poster: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20201206/20201206_PatFish_FishyMansions_thumbnail.jpg",
+		mp4: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20201206/20201206_PatFish_FishyMansions.mp4",
+	},
+	{
+		date: "2020-12-31",
+		poster: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20201231/20201231_PatFish_FishyMansions_thumbnail.jpg",
+		mp4: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20201231/20201231_PatFish_FishyMansions.mp4",
+	},
+	{
+		date: "2021-02-28",
+		poster: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210228/20210228_PatFish_FishyMansions_thumbnail.jpg",
+		mp4: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210228/20210228_PatFish_FishyMansions.mp4",
+	},
+	{
+		date: "2021-04-18",
+		poster: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210418/20210418_PatFish_FishyMansions_thumbnail.jpg",
+		mp4: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210418/20210418_PatFish_FishyMansions.mp4",
+	},
+	{
+		date: "2021-06-06",
+		poster: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210606/20210606_PatFish_FishyMansions_thumbnail.jpg",
+		mp4: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210606/20210606_PatFish_FishyMansions.mp4",
+	},
+	{
+		date: "2021-07-25",
+		poster: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210725/20210725_PatFish_FishyMansions_thumbnail.jpg",
+		mp4: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210725/20210725_PatFish_FishyMansions.mp4",
+	},
+];
+
+const FishyMansions = () =>
 <>
 	<Header section='pat' title="Fishy Mansions" />
-	<h1>This section is not yet ported from old JBC site</h1>
-	<Footer />
+	<div className="layout">
+		<LetterHeader title="The Fishy Mansions Sessions" subhead="2020-2021" />
+    <Swiper
+				style={{  height: '720px', border: '1px solid black', overflow: 'scroll' }}
+			modules={[Navigation, Scrollbar, ]}
+			navigation
+			scrollbar={{ draggable: true }}
+			pagination={{ clickable: true }}
+      spaceBetween={50}
+      slidesPerView={1}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+			{sessions.map(( session: any, ordinal: number ) =>
+				<SwiperSlide key={ordinal}>
+					<FishySession session={{...session, ordinal}} />
+				</SwiperSlide>
+			)}
+		</Swiper>
+		<p />
+		<Footer />
+	</div>
 </>
 
-export default Missing;
+export default FishyMansions;

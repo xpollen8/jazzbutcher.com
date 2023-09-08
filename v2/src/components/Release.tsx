@@ -1,7 +1,7 @@
 "use client"
 
 import MakeAlbumBlurb from './MakeAlbumBlurb';
-import useRelease from '@/components/useRelease';
+import useRelease from '@/lib/useRelease';
 
 export type ReleaseType =  {
 	type?: string

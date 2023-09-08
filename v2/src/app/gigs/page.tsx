@@ -7,7 +7,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SearchDialog from '@/components/SearchDialog';
 import SearchResults from '@/components/SearchResults';
-import useGigs from '@/components/useGigs';
+import useGigs from '@/lib/useGigs';
 import { Source } from '@/components/GenericWeb';
 import { bannerGigs } from '@/lib/macros';
 

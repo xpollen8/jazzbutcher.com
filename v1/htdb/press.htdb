@@ -11989,8 +11989,7 @@ Thanks, Harlan Ellison! x
 
 #define	20030916_wilson_bbci.html
 #live	if (getval(page) = 20030916_wilson_bbci.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 <div class="iview_intro">
 <img src="http://wilsondub.com/images/logo_bbci.gif"></a>
 Tuesday, 16th September, 2003<br />
@@ -12064,16 +12063,14 @@ Tuesday, 16th September, 2003<br />
 
 #define	20040912_wilson_cricketpress.html
 #live	if (getval(page) = 20040912_wilson_cricketpress.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 	<img src="http://wilsondub.com/images/2004Sep12/cricketpress.jpg">
 	${jbc_footer}
 #live	endif
 
 #define	19870210_press_BestOfRockNRollFolkMagazine.html
 #live	if (getval(page) = 19870210_press_BestOfRockNRollFolkMagazine.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 <a href="/images/19870210/19870210_press_BestOfRockNRollFolkMagazine.jpg">
 <img src="/images/19870210/19870210_press_BestOfRockNRollFolkMagazine_500.jpg"></a>
 	${jbc_footer}
@@ -12081,8 +12078,7 @@ Tuesday, 16th September, 2003<br />
 
 #define	19930221_press_BestOfRockNRollFolkMagazine.html
 #live	if (getval(page) = 19930221_press_BestOfRockNRollFolkMagazine.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 <a href="/images/19930221/19930221_press_BestOfRockNRollFolkMagazine.jpg">
 <img src="/images/19930221/19930221_press_BestOfRockNRollFolkMagazine_500.jpg"></a>
 	${jbc_footer}
@@ -12090,8 +12086,7 @@ Tuesday, 16th September, 2003<br />
 
 #define	19930216_press_LiberationNewspaper.html
 #live	if (getval(page) = 19930216_press_LiberationNewspaper.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 <a href="/images/19930216/19930216_press_LiberationNewspaper.jpg">
 <img src="/images/19930216/19930216_press_LiberationNewspaper_500.jpg"></a>
 	${jbc_footer}
@@ -12099,8 +12094,7 @@ Tuesday, 16th September, 2003<br />
 
 #define	19931115_press_lEstRepublicainNewspaper.html
 #live	if (getval(page) = 19931115_press_lEstRepublicainNewspaper.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 <a href="/images/19931115/19931115_press_lEstRepublicainNewspaper.jpg">
 <img src="/images/19931115/19931115_press_lEstRepublicainNewspaper_500.jpg"></a>
 	${jbc_footer}
@@ -12108,8 +12102,7 @@ Tuesday, 16th September, 2003<br />
 
 #define	198703_press_rockdelux.html
 #live	if (getval(page) = 198703_press_rockdelux.html)
-	${mkPressHeader(
-		)}
+	${mkPressHeader()}
 	<a href="/images/198703/198703_press_rockdelux.jpg"><img src="/images/198703/198703_press_rockdelux_100.jpg"></a>
 	<p />
 	Since 1983 The Jazz Butcher has shown an undeniable skill in distilling the gist  out  of the most diverse styles, and a great songwriting productivity, as evidenced by the six LPs and ten singles they have released in the last four years. We are also getting used to being surprised by Butch, as he  jumps in different directions on each of his albums, although always with the same drive. The two twelve-inches released in 1986, "Hard" and "Conspiracy", were very different, and "Distressed Gentle-folk"  once again goes  on a different tangent. The common denominator is Butch's warm voice, which makes even the least inspired songs stand out. 
@@ -12270,8 +12263,7 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 
 #define	19900308_press.html
 #live	if (getval(page) = 19900308_press.html)
-	${mkPressHeader(
-		)}
+	${mkPressHeader()}
 	<a href="/images/19900308/19900308_poster.jpg"><img src="/images/19900308/19900308_poster_500.jpg"></a>
 	<p />
 	<a href="/images/19900308/19900308_press.jpg"><img src="/images/19900308/19900308_press_500.jpg"></a>
@@ -12286,8 +12278,7 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 
 #define	19990923_press_villagevoice.html
 #live	if (getval(page) = 19990923_press_villagevoice.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 <a href="/images/19990923/19990923_press_villagevoice.jpg">
 <img src="/images/19990923/19990923_press_villagevoice_500.jpg"></a>
 	${jbc_footer}
@@ -12295,8 +12286,7 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 
 #define	19990916_press_seattle_rocket.html
 #live	if (getval(page) = 19990916_press_seattle_rocket.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 <a href="/images/19990916/19990916_press_seattle_rocket.jpg">
 <img src="/images/19990916/19990916_press_seattle_rocket_500.jpg"></a>
 	${jbc_footer}
@@ -12304,8 +12294,7 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 
 #define	19990916_press_seattle.html
 #live	if (getval(page) = 19990916_press_seattle.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 <a href="/images/19990916/19990916_press_seattle.jpg">
 <img src="/images/19990916/19990916_press_seattle_500.jpg"></a>
 	${jbc_footer}
@@ -12787,8 +12776,7 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 
 #define	20120907_wilson_northamptonchron.html
 #live	if (getval(page) = 20120907_wilson_northamptonchron.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 	Psychedelic dub rock act Wilson celebrate the launch of their live DVD with a headline show The Picturedrome in Northampton tonight.
 	<p />
 	Wilson started off as the brainchild of local songwriter / recording artist Pat Fish - aka The Jazz Butcher.
@@ -13549,8 +13537,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 #define	200002_julian_poole.html
 #live	if (getval(page) = 200002_julian_poole.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 
 	<div class="iview_intro">
 	Interview with Julian
@@ -14027,8 +14014,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 #define	20081120_stereoembers_max_eider.html
 #live	if (getval(page) = 20081120_stereoembers_max_eider.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 
 	<h2 class="entry-title">The Breathing of Statues: An Interview With Max Eider</h2>
 
@@ -14249,8 +14235,7 @@ As you can see, I have my finger very much on the pulse.
 
 #define	1995_apollox_alex_green.html
 #live	if (getval(page) = 1995_apollox_alex_green.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 
 <h2>
 ALEX GREEN & THE SINISTER DUCKS – AN INTERVIEW
@@ -14428,8 +14413,7 @@ Special thanks to Pat Fish
 
 #define	20081120_caughtinthecarousel.html
 #live	if (getval(page) = 20081120_caughtinthecarousel.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 
 	<div class="iview_intro">
 	When writing about The Jazz Butcher (a.k.a. Pat Fish) I’m always tempted to lapse into the kind of adorational hyperbole and literary invention normally reserved for epic novels where a charismatic and mysterious character arrives out of nowhere and changes the course of events. But that’s what did happen, I tell you—suddenly when I was sixteen I was holding a copy of the Jazz Butcher Conspiracy’s Distressed Gentlefolk and life would never really be the same. The songs had a swing and a sway and they had heart and a sense of humor and they were literate and romantic and smart and cheeky and I could go on for hours about what they meant to me at that point (and still mean to me now), but I shall do my best to avoid that kind of gushing. Often when one is talking about someone else’s biography they’re really talking about their own and that’s the last thing I want to do. And because I wasn’t there and have no idea as to what the facts are about his adolescent beginnings, for the ancillary and decidedly expurgated biographical information, let’s go to the man himself. On his MySpace page, Pat Fish writes of his origins: “I come from the 20th Century. I was born in West London at the end of the fifties, and I swear that things really were in black and white back then. As a small boy with a love for Johnny Kidd and the Pirates, I remember seeing Doctor Who and the Beatles for the first time the same rainy Saturday afternoon in 1963. I remember getting into a terrible tangle trying to sing along with "Good Morning Tokyo", the deceptively simple-sounding theme tune to the 1964 Olympics. As I grew a little older I was exposed to the full impact of the Beatles, the Pink Floyd, the Avengers and the Prisoner. I was also introduced to the work of my softly-spoken, charming "Uncle" Terry. He turned out to be Terence Fisher, director of Hammer studio horror pictures. Listen, pal. I was a goth before you were a goth. Believe me...After a series of largely unsuitable educational entanglements I moved to Northampton NN1 and took a job working as a legal secretary. In 1983, thanks to the kindness and reckless A&R policies of Dave and Julia Barker at Glass Records, I issued my first album. Like a big idiot I called it "The Jazz Butcher in Bath of Bacon". For over 20 years now I have been saying "We don't play jazz and we don't eat meat". Over and over again like a flapping zombie. Well, you get what you deserve…”
@@ -14832,8 +14816,7 @@ Special thanks to Pat Fish
 
 #define	20080219_mickmercer_max_eider.html
 #live	if (getval(page) = 20080219_mickmercer_max_eider.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 
 	<div class="iview_q">
 	Your label boss says the most appalling things about you in the press release. I don’t know if you’ve seen it? Maybe you could go on one of those team-building exercises at an executive retreat, paint-balling, something like that? He even paid the illustrator to turn you into Ray Davies, styled after Aerosmith. You must have been livid!
@@ -15090,8 +15073,7 @@ Special thanks to Pat Fish
 
 #define	20170824_soulkitchen.html
 #live	if (getval(page) = 20170824_soulkitchen.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 	<div class="iview_q">
 	How did you meet Dave Barker from Glass Records ?
 	</div>
@@ -15307,8 +15289,7 @@ Special thanks to Pat Fish
 
 #define	20110311_jimruiz_max_eider.html
 #live	if (getval(page) = 20110311_jimruiz_max_eider.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 	<h2>Jim remembers Max, Max remembers Wes</h2>
 	<div class="iview_intro">
 	<p />
@@ -15584,8 +15565,7 @@ The Wasted Years is out now as a four CD box set (plus booklet with an essay by 
 
 #define	20180109_pitchfork.html
 #live	if (getval(page) = 20180109_pitchfork.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 <b>A new box set, collecting four albums released between 1983 and 1986, is a fascinating look at the early stages of an underrated UK post-punk act.</b>
 	<p />
 Glass Records, the London-based label created in 1981 by musician Dave Barker, was home to an unusually motley collection of pop and rock acts. Some were castaways from defunct bands (David J. of goth originators Bauhaus and Nikki Sudden of cheeky experimentalists Swell Maps signed to the imprint after their respective projects crumbled in the early ’80s), others were new artists like synthpop outfit In Embrace and the psychedelic preachers Spacemen 3. No one artist sounded much like the rest of the roster; what seemed to connect them was a cavalier indifference to their potential commercial prospects.
@@ -15623,8 +15603,7 @@ The Wasted Years, despite its sardonic title, is a worthwhile look back at the p
 
 #define	19860902_press_bellringer.html
 #live	if (getval(page) = 19860902_press_bellringer.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 Nonsense The Jazz Butcher is truly unique group.
 <p />
 They claim to be punk, because they do what they want to. Some songs from Bloody Nonsense seem to support this claim. “Caroline Wheeler’s Birthday Present” is combine grinding guitars with equally harsh vocals. The lyrics are strange: “Caroline Wheeler’s Birthday Present” “was made entirely from the skins of dead Jim Morrisons . . .” “Drink” is a Beatles-sounding tune which extols the enjoyment of imbibing. Vocalist Max Eider proclaims to all: “I hope 1 never get dry before I get old.” “Partytime” and “The Devil is my Friend” are two other ‘party songs’ on the album. President Reagan’s Birthday Present” and “Jazz Butcher-V-Prime Minister” demonstrate that The Jazz Butcher do something besides getting drunk. Other songs like “The Human Jungle” and “Big Saturday” show the band has vocal maturity. These songs sound like The Smiths meet The Dream Academy. Finally, the album portrays the group’s songwriting lunacy. “Death Dentist” and “Grooving in the Bus Lane” are two strange ones. This album may sound really awful. Actually. this album is great for anyone with a sense of humour who appreciates ‘unique’ music.
@@ -15742,8 +15721,7 @@ Kate Flaherty reviews new alternative music from the record library of WWPV-FM.
 
 #define	20200504_press_popnews.html
 #live	if (getval(page) = 20200504_press_popnews.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 	<p />
 (Translated using https://www.deepl.com/)
 <hr/>
@@ -15902,8 +15880,7 @@ Photos : Vincent Arquillière (Londres, 2016, et Fontenay-aux-Roses, 2019).	<p /
 
 #define	20211127_press_tribute.html
 #live	if (getval(page) = 20211127_press_tribute.html)
-	${mkPressHeader(
-	)}
+	${mkPressHeader()}
 	<p />
 						This memorial celebration of the life and music of Pat Fish took place at the Dublin Castle instead of the intended actual gig by Pat Fish who sadly passed away before the gig could take place, but as we all know how much Pat hated cancelling any live gigs, So Promoter Jane Barnes and Dave Morgan decided that rather than cancelling the show that Dave was meant to be putting a band together for, he would instead expand the band and hold this wonderful tribute night, for that, all who took part or attended or watched it on the livestream are hopefully as grateful as I am for a wonderful celebration in the spirit Pat has embodied throughout his life and career. The cast included members of among other bands The Jazz Butcher, The Weather Prophets, The Loft, The Jasmine Minks, Scarlets Well, The Monochrome set, The Woodentops, 13 Frightened Girls, Helen and The Horns, Heidi Berry, Blurt, The June Brides, The Wolfhounds etc.
 	<p />

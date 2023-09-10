@@ -56,7 +56,7 @@ ${define(lastPer, ${ap[${api}]->performer})}
 #live	while (aa = a[*]->press_id)
 	<div class="listItem">
 #live	 if (defined(a[${aa}]->thumb))
-<a href="${a[${aa}]->url}"><img style="max-width: 100px; max-height: 100px;" src="${a[${aa}]->thumb}_100.jpg"></a><br/>
+<a href="${a[${aa}]->url}"><img style="max-width: 100px; max-height: 100px;" src="${truncAt(;;, ${a[${aa}]->thumb})}_100.jpg"></a><br/>
 #live               endif
 #live		if (defined(a[${aa}]->publication))
 	<b><a href="${a[${aa}]->url}">${a[${aa}]->publication}</a></b>
@@ -2646,6 +2646,7 @@ Previously available on the ${fishco} LP/CD.
 	days.
 	${g_source(u=${jbc_letters}/93Aug30/albums.html#bath, g=Pat Letter: 1993-08-30)}
 	${patsays_end}
+	${mkAlbumPress(album=bacon)}
 
 	${jbc_footer}
 #live	endif
@@ -2756,7 +2757,6 @@ Previously available on the ${fishco} LP/CD.
 	Burrell and ${sumishta}, without all of whom God Only
 	Knows...
 	${thx_end}
-	${mkAlbumPress(album=blue)}
 	${patsays_beg}
 	Four desperate men, all too desperate to notice how desperate
 	the others are, gather in a farmhouse with a queue of
@@ -2787,6 +2787,7 @@ Previously available on the ${fishco} LP/CD.
 	to like "${girls}"?)
 	${g_source(u=${jbc_letters}/93Aug30/albums.html#blue, g=Pat Letter: 1993-08-30)}
 	${patsays_end}
+	${mkAlbumPress(album=blue)}
 
 	${jbc_footer}
 #live	endif
@@ -2868,7 +2869,6 @@ Previously available on the ${fishco} LP/CD.
 	and joseph james foster for continued faith and support :
 	and kathie mcginty for watching over.
 	${thx_end}
-	${mkAlbumPress(album=bus)}
 	${patsays_beg}
 	Too early for me to say, but there's a clean, simple
 	sound to a lot of this that ${blue} detractors might appreciate.
@@ -2881,6 +2881,7 @@ Previously available on the ${fishco} LP/CD.
 	penguins.  I hope you like it.
 	${g_source(u=${jbc_letters}/93Aug30/albums.html#bus, g=Pat Letter: 1993-08-30)}
 	${patsays_end}
+	${mkAlbumPress(album=bus)}
 
 	${jbc_footer}
 #live	endif
@@ -3485,7 +3486,6 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_people}/von_dammerung.html">
 	Karel Von D&auml;mmerung</a>, Wien 1990.
 	${lin_end}
-	${mkAlbumPress(album=cult)}
 	${patsays_beg}
 	Well, if things seemed weird back in February 1989, by
 	January 1990, when we made this baby, the Weird were
@@ -3510,6 +3510,7 @@ Previously available on the ${fishco} LP/CD.
 	beautiful friendship. One of my favourites, this.
 	${g_source(u=${jbc_letters}/93Aug30/albums.html#cult, g=Pat Letter: 1993-08-30)}
 	${patsays_end}
+	${mkAlbumPress(album=cult)}
 
 	${jbc_footer}
 #live	endif
@@ -3572,7 +3573,6 @@ Previously available on the ${fishco} LP/CD.
 	Francisco, Brian at The George, Eric and Julian, Philip and
 	Eleanor and ${space}.
 	${thx_end}
-	${mkAlbumPress(album=dist)}
 	${patsays_beg}
 	A Sri Lankan gentleman once sat down beside me in a bar
 	in Bremen, asked me to sign his copy of this record,
@@ -3618,6 +3618,7 @@ Previously available on the ${fishco} LP/CD.
 	pretentious too.
 	${g_source(u=${jbc_letters}/93Aug30/albums.html#dist, g=Pat Letter: 1993-08-30)}
 	${patsays_end}
+	${mkAlbumPress(album=dist)}
 
 	${jbc_footer}
 #live	endif
@@ -3697,7 +3698,6 @@ Previously available on the ${fishco} LP/CD.
 	Jeff, all at ${creat}, and especially to Frank from Hamburg,
 	for taking me out one crucial Wednesday night.
 	${thx_end}
-	${mkAlbumPress(album=fishco)}
 	${patsays_beg}
 	Having ended up on ${creat}, which I took as a bit of
 	a validation, I was keen to get as far away from all
@@ -3732,6 +3732,7 @@ Previously available on the ${fishco} LP/CD.
 	I wish there more records as good as it.
 	${g_source(u=${jbc_letters}/93Aug30/albums.html#fishco, g=Pat Letter: 1993-08-30)}
 	${patsays_end}
+	${mkAlbumPress(album=fishco)}
 
 	${jbc_footer}
 #live	endif
@@ -4652,6 +4653,7 @@ Previously available on the ${fishco} LP/CD.
 	<b>A message from the Jazz Butcher:</b>
 	Hey, America, I Slept With Your Wife
 	${lin_end}
+	${mkAlbumPress(album=nons)}
 
 	${jbc_footer}
 #live	endif
@@ -4721,7 +4723,6 @@ Previously available on the ${fishco} LP/CD.
 	Mark, Dee, Eleanor, Jasmine, ${wolfi}, Karen, Gareth,
 	Frank Riley, <a href="http://www.nitronic.com/research/cole.html" ${inviteByeBye}>Cole</a>, Nigel and the Wal Guitar Company.
 	${thx_end}
-	${mkAlbumPress(album=planet)}
 	${patsays_beg}
 	This was a real &quot;band&quot; album by a touring unit which
 	had become really quite ferocious.  In choosing to work
@@ -4745,6 +4746,7 @@ Previously available on the ${fishco} LP/CD.
 	thing sounds a bit stillborn.
 	${g_source(u=${jbc_letters}/93Aug30/albums.html#planet, g=Pat Letter: 1993-08-30)}
 	${patsays_end}
+	${mkAlbumPress(album=planet)}
 
 	${jbc_footer}
 #live	endif
@@ -4976,6 +4978,7 @@ Previously available on the ${fishco} LP/CD.
 	released it on Glass and sold about 25,000 copies.
 	${g_source(u=${jbc_letters}/93Aug30/albums.html#scandal, g=Pat Letter: 1993-08-30)}
 	${patsays_end}
+	${mkAlbumPress(album=scandal)}
 
 	${jbc_footer}
 #live	endif
@@ -5032,7 +5035,6 @@ Previously available on the ${fishco} LP/CD.
 	${lin_beg}
 	For absent friends
 	${lin_end}
-	${mkAlbumPress(album=sex)}
 	${patsays_beg}
 	One day's rehearsal in Kevin Haskin's living room, five
 	days' recording and two days' mixing was all it took
@@ -5066,6 +5068,7 @@ Previously available on the ${fishco} LP/CD.
 	This one I'd actually defend at length if I had to.
 	${g_source(u=${jbc_letters}/93Aug30/albums.html#sex, g=Pat Letter: 1993-08-30)}
 	${patsays_end}
+	${mkAlbumPress(album=sex)}
 
 	${jbc_footer}
 #live	endif
@@ -6163,7 +6166,6 @@ Previously available on the ${fishco} LP/CD.
 #	Paper-generated enquiries are welcome via ${creat}
 #	Limited,<br>10 Westgate Street, London, E8 3RN
 	${thx_end}
-	${mkAlbumPress(album=ill)}
 	${patsays_beg}
 	New JBC lp duly completed in secure Northampton location.
 	1994 live line-up stumbled through a series of tunes and such under
@@ -6219,6 +6221,7 @@ Previously available on the ${fishco} LP/CD.
 	said to me on the telephone only the other day, it's right up the
 	Jazz Butcher fan's STUPID street).
 	${bishop_end}
+	${mkAlbumPress(album=ill)}
 
 	${jbc_footer}
 #live	endif
@@ -6265,7 +6268,6 @@ Previously available on the ${fishco} LP/CD.
 #	<br>${gab}
 #	<br>${hend}
 	${players_end}
-	${mkAlbumPress(album=16yr)}
 	${bishop_beg}
 	&quot;Privatised businesses have shareholders who expect to make
 	financial gain from their stake in essential public services infested
@@ -6273,6 +6275,7 @@ Previously available on the ${fishco} LP/CD.
 	MONEY'S GONE.&quot; Whoever compared it to &quot;${excel}&quot;
 	wasn't far from the mark, except it's markedly less polite.
 	${bishop_end}
+	${mkAlbumPress(album=16yr)}
 
 	${jbc_footer}
 #live	endif
@@ -6702,6 +6705,7 @@ Previously available on the ${fishco} LP/CD.
 	<p>
 	A.C Lionheart.  London 1991.
 	${lin_end}
+	${mkAlbumPress(album=damn)}
 
 	${jbc_footer}
 #live	endif
@@ -6929,6 +6933,7 @@ Previously available on the ${fishco} LP/CD.
 #	Tel:  +44 (0) 20 7284 0359<br>
 #	Fax:  +44 (0) 20 7267 5186
 #	</blockquote>
+	${mkAlbumPress(album=rotten)}
 
 	${jbc_footer}
 #live	endif
@@ -7520,8 +7525,6 @@ Previously available on the ${fishco} LP/CD.
 	${goodnight}</br>
 	${tun_end}
 
-	${mkAlbumPress(album=highest)}
-
 	${endTab}
 
 	${begTab(Gallery)}
@@ -7533,6 +7536,8 @@ Previously available on the ${fishco} LP/CD.
 	${endTab}
 
 	${end_tabs}
+
+	${mkAlbumPress(album=highest)}
 
 	${jbc_footer}
 #live	endif
@@ -7762,6 +7767,7 @@ Previously available on the ${fishco} LP/CD.
 	Tan and the 212 collective. Emad Salama. Ted and Wendy. Duncan, Dick and Viv. Rob Coles. Tourtech. Big Mick and Roy. Cole Coonce. Steve Waring. ${deirdre}. Patrick at Space Travel Agency, HH. Shutlanger Dave. Alastair lndge. Alan, Patricia and Kevin McGinty. Barry V. Mr Parkin. James Duval. Alan Moore. Lisa Lovebucket. Don Chow. Clemens Kinder. Terry Razor. Donald John Lewis. Rachel Woodhouse. Lottie and Mark Fisher. The Jersey Posse. Kim Deal. Rob Goodman. Oliver Sacks. Ken. Dave Kirk and the Rockin' Turks. Fat Controller cellar. Richard Feynneman. Mark Webber. Slipstream. Primal Scream. Junior Loaded Posse. P Hex. JBC. Angelo and Massive. Strangelove. Gerard, Musical and the Bristol Beats. Transambient Communications (What Is Muzik?). Override. Pluto. Eno. Wolfgang Tschegg. The Purelove. The Black Eg. King Horror. Phill Lynott. lce-T and the Syndicate. Cypress Hill. Spacemen 3. Chris Morris. Toho Studios, Tokyo. De La Soul. The K Foundation. Nitronic Research Wind Tunnels, Silverlake, California. Tha Judge and all at Fatty's Bar and Grill. Yoshi and all at Mugi. Jaegermeister. Stolichnaya. Palm Leaf Technology. Shamrat Balti House. The Star Of India. The World Famous Ski Room. Urquell, Budvar and Guinness Breweries. Luka. Little Jake, Thumper and Hobbes. The Shaolin Temple and of course Sumo. 
 
 	${thx_end}
+	${mkAlbumPress(album=thisissumo)}
 
 	${jbc_footer}
 #live	endif
@@ -7790,7 +7796,6 @@ Previously available on the ${fishco} LP/CD.
 #	${players_beg}
 #	${fetchAlbumPersonnel(release=fire_wasted)}
 #	${players_end}
-	${mkAlbumPress(album=fire_wasted)}
 	${tun_beg}
 	<ol>
 	<li>
@@ -7893,6 +7898,7 @@ Previously available on the ${fishco} LP/CD.
 	<p>
 	Four albums, then. The '80s recast at an ironic party of malcontents. Indie pop as a soundtrack. Songs that shouldn't fit together - but do. 'Wasted Years'? Yeah, really.
 	${lin_end}
+	${mkAlbumPress(album=fire_wasted)}
 
 	${jbc_footer}
 #live	endif
@@ -7927,7 +7933,6 @@ Previously available on the ${fishco} LP/CD.
 #	${players_beg}
 #	${fetchAlbumPersonnel(release=fire_violent)}
 #	${players_end}
-	${mkAlbumPress(album=fire_violent)}
 	${tun_beg}
 	<ol>
 	<li>
@@ -8020,6 +8025,7 @@ Previously available on the ${fishco} LP/CD.
 
 #	${lin_beg}
 #	${lin_end}
+	${mkAlbumPress(album=fire_violent)}
 
 	${jbc_footer}
 #live	endif
@@ -8048,7 +8054,6 @@ Previously available on the ${fishco} LP/CD.
 #	${players_beg}
 #	${fetchAlbumPersonnel(release=fire_cholmondley)}
 #	${players_end}
-	${mkAlbumPress(album=fire_cholmondley)}
 	${tun_beg}
 <ol>
 		<li>
@@ -8231,6 +8236,7 @@ ${49} (Live KCRW Session 1989)
 #	${lin_beg}
 #	${lin_end}
 
+	${mkAlbumPress(album=fire_cholmondley)}
 	${jbc_footer}
 #live	endif
 
@@ -8262,7 +8268,6 @@ ${49} (Live KCRW Session 1989)
 	${players_beg}
 	${fetchAlbumPersonnel(release=brave)}
 	${players_end}
-	${mkAlbumPress(album=brave)}
 	${tun_beg}
 	${sarah}
 	<br/>${engine}
@@ -8271,7 +8276,7 @@ ${49} (Live KCRW Session 1989)
 	<br/>${flan}
 	<br/>${pover}
 	${tun_end}
-
+	${mkAlbumPress(album=brave)}
 
 	${jbc_footer}
 #live	endif

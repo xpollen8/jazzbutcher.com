@@ -340,6 +340,30 @@ ${d}
 #live	endwhile
 #live	endif
 
+#define	addPatLiveGigs()
+#live	if (sql(g:select extra, venue, city, country, datetime from gig where extra like '%%self%%'))
+#live	while (z = g[*]->datetime)
+#live		if (define(extra,))
+#live		endif
+#live		if (getval(g[${z}]->extra) == eg)
+#live			if (define(extra, ${extra};eg))
+#live			endif
+#live		endif
+#live		if (getval(g[${z}]->extra) == wilson)
+#live			if (define(extra, ${extra};wilson))
+#live			endif
+#live		endif
+#live		if (getval(g[${z}]->extra) == sumo)
+#live			if (define(extra, ${extra};sumo))
+#live			endif
+#live		endif
+	${addPress(type=pat;gig${extra},
+		url=${jbc_gigs}/${ts2URI(${g[${z}]->datetime})},
+		title=<i>Pat's Gig Review - ${literalizeCommas(${g[${z}]->venue}, ${g[${z}]->city}, ${g[${z}]->country})}</i>,
+		datetime=${g[${z}]->datetime},
+		dt=${g[${z}]->datetime})}
+#live	endwhile
+#live	endif
 #define	definePressItems()
 
 	${addPress(type=gig;review,
@@ -500,10 +524,11 @@ ${d}
 	${addPress(type=gig,
 		url=${jbc_press}/20170503_popnews.html,
 		publication=Pop News,
-		title=The Jazz Butcher and The Jasmine Minks,
 		thumb=/images/20170415/20170415_popnews1,
 		images=/images/20170415/20170415_popnews2$$/images/20170415/20170415_popnews3$$/images/20170415/20170415_popnews4$$/images/20170415/20170415_popnews5$$/images/20170415/20170415_popnews6$$/images/20170415/20170415_popnews7$$/images/20170415/20170415_popnews8$$/images/20170415/20170415_popnews9,
+		title=The Jazz Butcher and The Jasmine Minks,
 		headline=The Lexington,
+		subhead=London\, April 15\, 201,
 		credit=Vincent Arquilli&eacute;re,
 		location=France,
 		source=http://www.popnews.com/popnews/the-jazz-butcher-the-jasmine-minks-the-lexington-londres-15-avril-2017,
@@ -513,13 +538,11 @@ ${d}
 	${addPress(type=pat;wilson,
 		url=${jbc_press}/20040512_wilson_warfare.html,
 		title=Wilson Warfare,
-		creditPat Fish Jackson,
 		dt=2004-05-12)}
 
 	${addPress(type=pat;wilson,
 		url=${jbc_press}/20040512_wilson_about.html,
 		title=About Wilson,
-		creditPat Fish Jackson,
 		dt=2004-05-12)}
 
 	${addPress(type=interview;album, album=human,
@@ -1638,7 +1661,8 @@ ${d}
 		url=${jbc_press}/kelly_20th_tour.html,
 		title=Brian Kelly reports,
 		headline=the 20th anniversary tour,
-		images=/images/20020611/2002Jun11_JBC;;Brian Kelly$$/images/20020613/2002Jun13_JBC1;;Brian Kelly,
+		thumb=/images/20020613/2002Jun13_JBC1;;Brian Kelly,
+		images=/images/20020611/2002Jun11_JBC;;Brian Kelly,
 		subhead=June 8-19\, 2002,
 		dt=2002-06-20)}
 
@@ -2063,8 +2087,10 @@ ${d}
 	${definePressItems()}
 	${mkHeader(section=Press)}
 
-#	${addLiveInterviews()}
-#	${addLiveGigs()}
+	${addLiveInterviews()}
+	${addPatLiveGigs()}
+	${addLiveGigs()}
+
 #live	if (sort(-pressItems, dt))
 #live	endif
 	${beg_tabs}
@@ -13163,7 +13189,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	${extractPress(
 		body=${literalizeCommas(
 		<h3>CAUTION - This is a robotic translation of the original French publication</h3>
-	<h3>The Jazz Butcher, The Jasmine Minks - The Lexington, London, April 15, 2017</h3>
 	It is the kind of evening that could hardly take place in France: two bands that made the Creation label's best hours in the 80s and 90s, who never sold a lot of records but left songs to posterity memorable. Although they are much less active than at the time, the Jazz Butcher and the Jasmine Minks have recorded a few tracks in recent years and are not only playing nostalgia for their fans.
 	<p />
 	On this Easter weekend, we have to be about 80 (including at least four French) to have traveled to the Lexington, a large pub on Pentonville Road, in a fairly deserted area of ​​London at nightfall. The room is upstairs. A glance at the programming of the month, aligning some beautiful names of the indie pop of yesterday and today, makes us say that we would probably spend our evenings often if we lived in the city.

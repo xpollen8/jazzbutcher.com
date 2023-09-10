@@ -33,7 +33,7 @@ type BreadCrumb = {
 	summary?: string
 }
 
-const headerText : { [key: string]: BreadCrumb } = {
+const sections : { [key: string]: BreadCrumb } = {
 	jbc: { href: '/', title: 'The Jazz Butcher' },
 
 	pat: { parent: 'jbc', title: 'Pat', summary: 'The Butcher' },
@@ -93,7 +93,7 @@ const makeBreadcrumb = (name: string, aux?: any) => {
 	const recurseNavObjects = ({ name, aux, root=false }: { name?: string, aux?: any, root?: boolean | undefined }): any => {
 		const lowerName = name?.toLowerCase();
 		if (!lowerName) return;
-		const obj = headerText[lowerName];
+		const obj = sections[lowerName];
 		if (!obj) return;
 		let parent;
 		if (obj?.parent) {
@@ -128,7 +128,20 @@ const parseTitle = (title: string | string[], key0: number) => {
 	if (title?.constructor === Array && title[0]?.constructor === String) {
 		return title?.map((t: string, key: number) => {
 			const [ text, href ] = t.split(';;');
-			if (href) return <li key={key0+key}><Link href={href}>{text}</Link></li>;
+			/* WIP
+			if (href) {
+				const menu = <>
+				<ul className="dropdown-menu">
+					<li className="dropdown-item">
+						<Link className="menu-link dropdown-link" href="/"> howdy </Link>
+						<Link className="menu-link dropdown-link" href="/"> noy </Link>
+						<Link className="menu-link dropdown-link" href="/"> boyo </Link>
+					</li>
+				</ul>
+				</>;
+				return <li className="menu-item dropdown" key={key0+key}><Link className="menu-link" href={href}>{text}</Link>{menu}</li>;
+			}
+			*/
 			return <li key={key0+key}><span aria-current="page">{text}</span></li>;
 		});
 	}
@@ -143,10 +156,9 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 	return (<nav aria-label="Breadcrumb" className="breadcrumb">
 		<ul>
 		{nav.map((obj: any, key: number) => {
-			const children = Object.keys(headerText).filter((h: string) => {
-				return headerText[h]?.parent?.includes(section?.toLowerCase());
-			}).map((h: string) => ({ link: h, ...headerText[h] }));
-		//console.log("MEN", { section, children });
+			const children = Object.keys(sections).filter((h: string) => {
+				return sections[h]?.parent?.includes(section?.toLowerCase());
+			}).map((h: string) => ({ link: h, ...sections[h] }));
 			if (obj?.href) return <li key={key}><Link href={obj.href}>{obj.title}</Link></li>
 			return parseTitle(obj.title, key);
 		})}

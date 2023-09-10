@@ -167,6 +167,7 @@ const gigPage2Datetime = (href: string): string => {
 
 const Venue = ({ record }: { record: RecordType }) =>
 <div style={{ paddingTop: '4px', paddingBottom: '6px' }}>
+		{(record?.title) && <div className="gig_project">"{record?.title}"</div>}
 		<div dangerouslySetInnerHTML={{__html: record?.venue}} style={{ fontWeight: '900', fontSize: '1.5em' }} />
 		{record?.city}
 		{' '}

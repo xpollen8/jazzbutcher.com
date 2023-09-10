@@ -69,6 +69,16 @@ export default Missing;
 #	internet:
 #	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_Unknown_InnocentsAndEnglishman.mp3
 	${mkSimpleURI(text=Sonic Tonix)}
+
+	On Mon, 4 Sep 2023, Tom Peterson wrote:
+
+	“More grainy images from the distant past courtesy of my carpet-trousered friend Mr Warphole. This time the Sonic Tonix at
+	the Oranges & Lemons in St Clements, Oxford, plus some unusual dancing and a musical trio under plastic. Oh, and a
+	contemporaneous photographical artwork from the man himself.”
+
+	files: ~/Desktop/Jazz Butcher (unsorted)/2023-09-04-TomPeterson_SonicTonix
+
+
 #	https://www.discogs.com/release/2078217-Sonic-Tonix-Dont-Go-Away-Telepathy
 #	Label:	Industrial Accident –  SGS-114
 #	Format:	
@@ -116,4 +126,13 @@ export default Missing;
 #	Matrix / Runout (Side B runout etched): STEG 002 B1 SNA WELSHPOOL ... WOW HELLO K.B.
 #
 #	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_TalkToMe.mp3
+
+
+BLACK EG
+	files: ~/Desktop/Jazz Butcher (unsorted)/2018-08-31 - JBC - Kevin Carroll
+		unique black eg tracks
+			JBCBE00_Song Of The Homeland.mp3
+			JBCBE00_Ostrava Girls.mp3
+			JBCBE00_Indianapolis 500.mp3
+			JBCBE00_Yokohama.mp3
 */

@@ -165,8 +165,6 @@ const gigPage2Datetime = (href: string): string => {
 	return res.replace('_0000.html', '.html');
 }
 
-const Nobr = ({ children }: { children: React.ReactNode }) => <span style={{ whiteSpace: 'nowrap' }}>{children}</span>
-
 const Venue = ({ record }: { record: RecordType }) =>
 <div style={{ paddingTop: '4px', paddingBottom: '6px' }}>
 		<div dangerouslySetInnerHTML={{__html: record?.venue}} style={{ fontWeight: '900', fontSize: '1.5em' }} />
@@ -278,7 +276,7 @@ const filterBy = (res: RecordType, query: string, recordFilter: any) => {
 
 const filterGigsByField = (res: any, query: string, field: string) => {
 	const recordFilter = ((record: RecordType) => record[field]?.toLowerCase());
-	console.log("FILTER", query, field);
+	//console.log("FILTER", query, field);
 	return filterBy(res, query, recordFilter);
 }
 
@@ -558,4 +556,4 @@ export const censorEmail = (str: string) => {
 
 export const deHTDBifyText = (v: string) => v.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<br/>');
 
-export { localDate, datesEqual, bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, searchOptions, Nobr, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }
+export { localDate, datesEqual, bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

@@ -4,8 +4,8 @@ import Footer from '@/components/Footer';
 
 const BlackEg = () => 
 <>
-	<Header section="prejbc" title="Nightshift"/>
-	<div className="gig_nightshift">
+	<Header section="project" title="The Black Eg"/>
+	<div className="gig_eg">
 <code>
 <br />unique black eg tracks
 <br />https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheBlackEg/BlackEg_KevinCarroll__Yokohama.mp3

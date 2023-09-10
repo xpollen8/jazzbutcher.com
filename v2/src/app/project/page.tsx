@@ -3,17 +3,17 @@ import Footer from '@/components/Footer';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const projects = [
-	{ uri: '/projects/black_eg', text: 'The Black Eg' },
-	{ uri: '/projects/drones_club', text: 'Drones Club' },
-	{ uri: '/projects/sumosonic', text: 'Sumosonic' },
-	{ uri: '/projects/wilson', text: 'Wilson' },
+	{ uri: '/project/black_eg', text: 'The Black Eg' },
+	{ uri: '/project/drones_club', text: 'Drones Club' },
+	{ uri: '/project/sumosonic', text: 'Sumosonic' },
+	{ uri: '/project/wilson', text: 'Wilson' },
 ];
 
-const Missing = () => 
+const Project = () => 
 <>
 	<Header section="project" />
 		{projects.map(MakeSimpleURI)}
 	<Footer />
 </>
 
-export default Missing;
+export default Project;

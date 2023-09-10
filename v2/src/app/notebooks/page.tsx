@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 
 const Notebooks = () => 
 <>
-	<Header section='pat' title="Excerpts from Pat's Notebooks" />
+	<Header section="pat" title="Excerpts from Pat's Notebooks" />
 		TODO
 	<Header />
 </>

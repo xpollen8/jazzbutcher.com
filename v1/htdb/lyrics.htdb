@@ -485,7 +485,8 @@ ${jbc_footer}
 
 	onlist=cdr_guestpass2000,
 		credits=Robert Goodman,
-		mp3=/audio/tunes/hobbu.mp3
+		mp3=/audio/tunes/hobbu.mp3,
+		caption=The Hobbu Song
 	)}
 #live	endif
 

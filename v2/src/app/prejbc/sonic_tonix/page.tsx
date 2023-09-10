@@ -12,19 +12,19 @@ const SonicTonix = () =>
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_IMG_0177.jpg" width={500} height={500} alt="live" />
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_IMG_0178.jpg" width={500} height={500} alt="live" />
   On Mon, 4 Sep 2023, Tom Peterson wrote:
-  “More grainy images from the distant past courtesy of my carpet-trousered friend Mr Warphole. This time the Sonic Tonix at
+  &quote;More grainy images from the distant past courtesy of my carpet-trousered friend Mr Warphole. This time the Sonic Tonix at
   the Oranges & Lemons in St Clements, Oxford, plus some unusual dancing and a musical trio under plastic. Oh, and a
-  contemporaneous photographical artwork from the man himself.”
+  contemporaneous photographical artwork from the man himself.&quote;
 
 <br/> https://www.discogs.com/release/2078217-Sonic-Tonix-Dont-Go-Away-Telepathy
 <br/> Label:  Industrial Accident –  SGS-114
 <br/> Format:
-<br/> Vinyl, 7", Single, Test Pressing
+<br/> Vinyl, 7, Single, Test Pressing
 <br/> Country:  UK
 <br/> Released: 1980
 <br/> Genre:  Rock
 <br/> Style:  Power Pop, New Wave
-<br/> A   Don't Go Away
+<br/> A   Dont Go Away
 <br/> Vocals – John Silver (4)
 <br/> B   Telepathy
 <br/> Vocals – Dave Goldie
@@ -33,8 +33,8 @@ const SonicTonix = () =>
 <br/> Guitar, Vocals – Dave Goldie, Simon Mawby
 <br/> Photography By – Crispin Plaskitt
 <br/> Producer – Fish*, Tonix*
-<br/> Recorded at DUFFY'S.
-<br/> This was an Oxford-based outfit (ft. former members of INSTITUTION) who's sole release comes with rubber-stamped white labels (500 copies made). Members resurfaced in THE JAZZ BUTCHER and THE WOODENTOPS.
+<br/> Recorded at DUFFYS.
+<br/> This was an Oxford-based outfit (ft. former members of INSTITUTION) whos sole release comes with rubber-stamped white labels (500 copies made). Members resurfaced in THE JAZZ BUTCHER and THE WOODENTOPS.
 <br/>
 <br/> https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_DontGoAway.mp3
 <br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_Telepathy.mp3

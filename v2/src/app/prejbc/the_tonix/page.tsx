@@ -23,7 +23,7 @@ const TheTonix = () =>
 <br />	https://www.discogs.com/release/2270038-The-Tonix-Strangers
 <br />	Label:	109 Product – STEG 002
 <br />	Format:	
-<br />	Vinyl, 7"
+<br />	Vinyl, 7
 <br />	Country:	UK
 <br />	Released:	1981
 <br />	Genre:	Rock

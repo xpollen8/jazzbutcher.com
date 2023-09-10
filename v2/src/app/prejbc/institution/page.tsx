@@ -14,12 +14,12 @@ const Institution = () =>
 <br /> Jonathan Stephenson - https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw
 <br />
 <br />	https://www.discogs.com/release/5338218-The-Institution-Jane-And-Jon
-<br />	7"er:
+<br />	7er:
 <br />	A. https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JaneAndJon.mp3
 <br />	B. https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_Stephanie.mp3
 <br />	Label:	Industrial Accident – SGS-112
 <br />	Format:	
-<br />	Vinyl, 7", 45 RPM, White Label
+<br />	Vinyl, 7, 45 RPM, White Label
 <br />	Country:	UK
 <br />	Released:	1979
 <br />	Genre:	Rock, Reggae

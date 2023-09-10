@@ -49,14 +49,14 @@ export default function RootLayout({
 					<NavItem uri={jbc_help} text="Contribute!" />
 					<NavItem uri={jbc_etc} text="etc.." />
 					<div className="nav_heading">Projects</div>
-					<NavItem uri={`${jbc_search}?f=extras&q=eg`} text="Black Eg" />
-					<NavItem uri={`${jbc_search}?f=extras&q=sumo`} text="Sumosonic" />
-					<NavItem uri={`${jbc_search}?f=extras&q=wilson`} text="Wilson" />
+					<NavItem uri="/project/black_eg" text="Black Eg" />
+					<NavItem uri="/project/sumosonic" text="Sumosonic" />
+					<NavItem uri="/project/wilson" text="Wilson" />
 					<div className="nav_heading">Pre-JBC</div>
-					<NavItem text="Nightshift" />
-					<NavItem text="Institution" />
-					<NavItem text="Sonic Tonix" />
-					<NavItem text="Tonix" />
+					<NavItem uri="/prejbc/nightshift" text="Nightshift" />
+					<NavItem uri="/prejbc/institution" text="Institution" />
+					<NavItem uri="/prejbc/sonic_tonix" text="Sonic Tonix" />
+					<NavItem uri="/prejbc/the_tonix" text="Tonix" />
 				</div>
 				<div className="main">
 					<Link href="#" className="menuButton">

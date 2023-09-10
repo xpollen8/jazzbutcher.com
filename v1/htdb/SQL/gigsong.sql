@@ -392,6 +392,29 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,17,'Roadrunner'
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,18,'Mind Like A Playgroup',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,19,'I\'m Waiting For My Man','Velvet Underground',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-02-14 00:00:00','set',1,1,'Hard',NULL,NULL,NULL,'https://www.youtube.com/embed/UOdLYoPOAkc',NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',1,0,'The Entire Performance',NULL,"Pat Fish solo set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_PatFish_Hamburg.mp3','Owen Jones',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',2,0,'The Entire Performance',NULL,"Max Eider set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_MaxEider_Hamburg.mp3','Owen Jones',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',3,0,'The Entire Performance',NULL,"Owen Jones set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_PeterCrouch_Hamburg.mp3','Owen Jones',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',4,0,'The Entire Performance',NULL,"Joe Woolley set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_JoeWoolley_Hamburg.mp3','Owen Jones',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,0,'The Entire Performance',NULL,"Full band",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_JazzButcher_Hamburg.mp3','Owen Jones',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,1,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,2,'It Has To Be You',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,3,'La Mer',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,4,'Who Loves You Now?',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,5,'Whaddya',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,6,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,7,'Girls Who Keep Goldfish',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,8,'Shame About You',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,9,'My Desert',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,10,"Caroline Wheeler's Birthday Present",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,11,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',5,12,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','encore',1,1,'I Wish I Could Sprechen Sie Deutsch',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','encore',1,2,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','encore',1,3,'Take The Skinheads Bowling',"Camper Van Beethoven",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','encore',1,4,'Sweet Jane',"Lou Reed",NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-24 00:00:00','set',1,0,'The Entire Performance',NULL,"Radio broadcast, from 1st generation cassette",NULL,'http://jazzbutcher.com/audio/19860724/19860724_JazzButcher_Toronto_Gen1.mp3','David Whittemore','http://davidwhittemore.com');
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-24 00:00:00','set',1,1,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-24 00:00:00','set',1,2,'Grooving in the Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL);

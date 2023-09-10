@@ -1,8 +1,5 @@
-#define	Jan.html()
+#define	Jan21.html()
 	${gigHeader(
-
-	who=${literalizeCommas( [[person:Pat_Fish]], ${at}, ${rolo} )},
-
 	)}
 
 #define	Feb17.html()

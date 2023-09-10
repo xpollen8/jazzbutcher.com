@@ -1,0 +1,19 @@
+#define	Nov1.html()
+	${gigHeader(
+	)}
+
+#define	Dec01.html()
+	${gigHeader(
+	)}
+
+#define	Dec31.html()
+	${gigHeader(
+	)}
+
+#define	page_requested	${${page}()}
+#define	index.html
+#live	if (getval(page_requested) == Date)
+	${page_requested}
+#live	else
+	${doGigsListing(${gigPage2Datetime()})}
+#live	endif

@@ -81,7 +81,7 @@
 ##	'images' format: url;;caption;;credit$$url;;caption;;credit$$, etc
 ##
 #define	extractPress(aux, body)
-	${mkPressHeader(${literalizeCommas()})}
+	${mkPressHeader()}
 	<p />
 	${body}
 #live	if ((getval(types[${t}]) == album) && (defined(${prefix}->album)))
@@ -104,6 +104,7 @@
 #define	mkPressHeader()
 ## TODO - fetch from database here to populate "prefix"
 	${definePressItems()}
+#
 
 #live	if (define(prefix, pressItems[${page}]))
 #live	endif
@@ -364,21 +365,32 @@ ${d}
 		dt=${g[${z}]->datetime})}
 #live	endwhile
 #live	endif
+
 #define	definePressItems()
 
-	${addPress(type=gig;review,
-		url=${jbc_press}/19891128_press_gateway.html,
-		publication=Gateway,
-		thumb=/images/19891125/19891128_press_gateway;;David Whittemore,
-		location=University of Alberta\, Canada,
-		title=Butcher in creative trouble,
-		headline=The Jazz Butcher Dinwoodie Lounge,
-		subhead=Saturday\, November 25\, 1989,
-		credit=Greg Pohl,
-		source=https://ia601008.us.archive.org/3/items/GAT_1989112801/GAT_1989112801.pdf,
-		datetime=1989-11-25 00:00:00,
-		dt=1989-11-28,
-		added=2023-09-08)}
+	${addPress(type=album, album=bacon,
+		url=${jbc_press}/19820905_press_mercutyandherald.html,
+		publication=Mercury And Herald,
+		thumb=/images/19820905/19820905_press_mercutyandherald;;Philip Snow;;;;2022-06-02,
+		todo=OCR,
+		location=Northampton\, UK,
+		credit=Alex Dawson,
+		title=Jazz Butcher set for a debut,
+		headline=The choice cuts sound 'very promising',
+		subhead=and different,
+		dt=1982-09-05,
+		added=2023-09-10)}
+
+	${addPress(type=gig,
+		url=${jbc_press}/19831008_press_mercutyandherald.html,
+		publication=Mercury And Herald,
+		thumb=/images/19831008/19831008_press_mercutyandherald;;Philip Snow;;;;2022-06-02,
+		todo=OCR,
+		location=Northampton\, UK,
+		title=The gift of music,
+		datetime=1983-09-24,
+		dt=1983-10-08,
+		added=2023-09-10)}
 
 	${addPress(type=gig;review,
 		url=${jbc_press}/20140920__press_quartet.html,
@@ -2158,7 +2170,7 @@ ${d}
 
 #define	85abstract.html
 #live	if (getval(page) = 85abstract.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<div class="iview_intro">
@@ -2612,7 +2624,7 @@ ${d}
 
 #define	87spex.html
 #live	if (getval(page) = 87spex.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	The mechanisms for self-identification of that band have
@@ -3823,7 +3835,7 @@ ${d}
 
 #define	91inrockuptible.html
 #live	if (getval(page) = 91inrockuptible.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	(Top half: B/W photo of the man in front of some garages.
@@ -4005,7 +4017,7 @@ ${d}
 #define	91estweb.html
 #live	if (getval(page) = 91estweb.html)
 #added	Fri Jan 24 15:21:13 PST 1997
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	The ludicrous sleevenotes suggest that this record is the work
@@ -4028,7 +4040,7 @@ ${d}
 
 #define	91rage.html
 #live	if (getval(page) = 91rage.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	Earlier this year, The Jazz Butcher discreetly slipped out an
@@ -4194,7 +4206,7 @@ ${d}
 
 #define	92details.html
 #live	if (getval(page) = 92details.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	It is only fate, and perhaps the Jazz Butcher's daft name (he
@@ -4998,7 +5010,7 @@ ${d}
 
 #define	93cdconnection.html
 #live	if (getval(page) = 93cdconnection.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	${pat}, better known as British thinking-person's popster
@@ -5029,7 +5041,7 @@ ${d}
 
 #define	93inrockuptible.html
 #live	if (getval(page) = 93inrockuptible.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	The Jazz Butcher seems to belong to another distant era,
@@ -5205,7 +5217,7 @@ ${d}
 
 #define	94ie.html
 #live	if (getval(page) = 94ie.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	From the start, waiting for the love bus mires itself in a steamy
@@ -5241,7 +5253,7 @@ ${d}
 
 #define	94splatter.html
 #live	if (getval(page) = 94splatter.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<div class="iview_intro">
@@ -6139,7 +6151,7 @@ ${d}
 
 #define	95creation.html
 #live	if (getval(page) = 95creation.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	The Jazz Butcher Conspiracy, also known as Pat Fish, purveyor of some
@@ -6181,7 +6193,7 @@ ${d}
 
 #define	95promo_illuminate.html
 #live	if (getval(page) = 95promo_illuminate.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<div class="annotation">
@@ -6300,7 +6312,7 @@ ${d}
 
 #define	95promo_16years.html
 #live	if (getval(page) = 95promo_16years.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	Release Date: March 6th 1995
@@ -6487,7 +6499,7 @@ ${d}
 
 #define	95scots.html
 #live	if (getval(page) = 95scots.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	The difficult tenth album from one of British pop's great
@@ -6626,7 +6638,7 @@ ${d}
 
 #define	87option.html
 #live	if (getval(page) = 87option.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	Earlier Jazz Butcher LPs showed our hero to be the
@@ -6654,7 +6666,7 @@ ${d}
 
 #define	92option.html
 #live	if (getval(page) = 92option.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	Relying on a shimmering crush of Beatles/Byrds
@@ -6684,7 +6696,7 @@ ${d}
 
 #define	90option.html
 #live	if (getval(page) = 90option.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	This disc opens with "${baset}," a bit of
@@ -6720,7 +6732,7 @@ ${d}
 
 #define	94option.html
 #live	if (getval(page) = 94option.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	The Jazz Butcher--which for about a decade, has
@@ -6756,7 +6768,7 @@ ${d}
 
 #define	95nme.html
 #live	if (getval(page) = 95nme.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	Coming as he did in the wake of the post-punk world and
@@ -6800,7 +6812,7 @@ ${d}
 
 #define	1997_sumosonic_smith.html
 #live	if (getval(page) = 1997_sumosonic_smith.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	Sumosonic
 	<b>This is Sumo</b>
@@ -6849,7 +6861,7 @@ ${d}
 
 #define	97drainglass.html
 #live	if (getval(page) = 97drainglass.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	&nbsp;&nbsp;&nbsp;&nbsp;Underground rock's greatest shame, and
@@ -6932,7 +6944,7 @@ ${d}
 
 #define	97violent.html
 #live	if (getval(page) = 97violent.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	To call the Jazz Butcher, a.k.a. ${pat}, the best pop
@@ -6982,7 +6994,7 @@ ${d}
 
 #define	2000glorious.html
 #live	if (getval(page) = 2000glorious.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	All these years, I've thought the Jazz Butcher
@@ -7010,7 +7022,7 @@ ${d}
 
 #define	97q.html
 #live	if (getval(page) = 97q.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	Falling off stages and learning to live with obscurity have been
@@ -8015,7 +8027,7 @@ Ottawa for a show the following Monday at Barrymores
 
 #define	92creem.html
 #live	if (getval(page) = 92creem.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	I must confess to taking a complete sabbatical from the Jazz Butcher's
@@ -8235,7 +8247,7 @@ Ottawa for a show the following Monday at Barrymores
 
 #define	2017biography.html
 #live	if (getval(page) = 2017biography.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 		<blockquote class="annotation">
 		"Along with Alan Moore and Rockingham Castle, Pat Fish remains a Northamptonshire institution. Boozer, intellectual and troubadour, Fish has released an entire canon of Jazz Butcher albums since the early eighties and has intermittently reformed the JBC to critical plaudits.”
@@ -8273,7 +8285,7 @@ Ottawa for a show the following Monday at Barrymores
 
 #define	2012biography.html
 #live	if (getval(page) = 2012biography.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<blockquote class="annotation">
@@ -9075,7 +9087,7 @@ much less money. :
 
 #define	preshow_23Apr2000.html
 #live	if (getval(page) = preshow_23Apr2000.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 There's no such thing as "Alternative Radio" anymore. I see and hear
@@ -9369,7 +9381,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 
 #define	vermontreview.html
 #live	if (getval(page) = vermontreview.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	If you analyze this disc but just looking at the name, one would think that this band is either some
@@ -9482,7 +9494,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 
 #define	disclaimerband.html
 #live	if (getval(page) = disclaimerband.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<div class="iview_intro">
@@ -9831,7 +9843,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 
 #define	blue_evans.html
 #live	if (getval(page) = blue_evans.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	I'm a longtime fan of the Jazz Butcher. I've enjoyed his sensitive-
@@ -11451,7 +11463,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 
 #define	2005_Nightshift.html
 #live	if (getval(page) = 2005_Nightshift.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	The New Moon are a familiar-looking local duo. Their lively, pacey songs
@@ -11557,7 +11569,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 
 #define	2013_chickfactor.html
 #live	if (getval(page) = 2013_chickfactor.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 ultimate jazz butcher fan jim ruiz happened to be in new york city when the jazz butcher played at spike hill, brooklyn, on sunday, <a href="${jbc_gigs}/2013/Jun15.html">june 15, 2013</a>! here is his review of the show.	<p />
@@ -11844,7 +11856,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 
 #define	20160315_popmatters.html
 #live	if (getval(page) = 20160315_popmatters.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	 <p />Pat Fish has no use for modernity. The singer/songwriter and leader of the Jazz Butcher Conspiracy (or Jazz Butcher, depending on the album) is doggedly idiosyncratic in his approach to music, following his own path and no one else’s. After a long career that has seen varying degrees of success and a few masterpieces, one could forgive Fish if he were to get a bit sardonic in his old age. Yet, <i>The Last of the Gentleman Adventurers</i> is not as cynical as that. The album, now released to the public after a fan-funded limited pressing, casts Fish as a weary-yet-amicable traveler, a man who has seen it all and is more than happy to tell you what he’s learned.	<p />
 	<p />The dynamism of past releases like the brilliant <i>A Scandal in Bohemia</i> is nowhere to be found on <i>The Last of the Gentleman Adventurers</i>, but that’s probably for the best. Fish is too wise of a songwriter to try and recapture past glories. Instead, his songs here are more meditative than one would expect. Even more rollicking tracks like “Shame About You” have a fairly easygoing bent. Aside from “Solar Core,” which is the closest Fish has come to writing a straightforward rock song, the Jazz Butcher remains a mostly subdued ensemble throughout.	<p />
@@ -11859,7 +11871,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 
 #define	20160203_festivalpeak.html
 #live	if (getval(page) = 20160203_festivalpeak.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<p />
 	Last of the Gentleman Adventurers
@@ -11882,7 +11894,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 
 #define	20221005_ink19_jazz_butcher_society.html
 #live	if (getval(page) = 20221005_ink19_jazz_butcher_society.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<p />Pat Fish, only somewhat more famously known as The Jazz Butcher, passed away a year ago today, October 5, 2021, peacefully in his sleep by all accounts. This was the day I learned I belonged to a secret society, one so obscure and scattered that it kept my own membership in its ranks a hidden fact for over 30 years.	<p />
 	<p />Truth be told, I was not alone. All around me, people were realizing that this inexplicable, even solipsistic, obsession with an English musician whose heyday has long passed (“wow, that’s some ’80s shit, no?” exclaimed a friend) was in fact shared by many others. I would always be quick to profess my love for the Butcher, but I’d never done a full accounting of his music’s constant presence in my life, from the near-daily playing of classics like “D.R.I.N.K.” and “Just Like Betty Page” on my ukulele with morning coffee to the occasional urge to listen to something very specific like “Bicycle Kid” or <em>A Scandal In Bohemia</em> from start to finish. In the last few years, there was also Pat’s own presence in my social media, which we’ll get to in a bit.	<p />
@@ -11901,7 +11913,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 
 #define	20030313_ink19.html
 #live	if (getval(page) = 20030313_ink19.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<p />If there's one bad thing I can say about the Internet, it's that it seems to have eliminated the curious joy of shopping a record store in a new town for the rare appearance of a vinyl import of that Jazz Butcher single. If there's one good thing I can say is that now you can own whichever Jazz Butcher album you want, as long as you're willing to put down the cash.	<p />
 	<p />But if you're new to the Jazz Butcher and unwilling to pay for that rare first pressing of <I>Fishcotheque</I>, <I>Draining The Glass</I> is a good place to start. This anthology collects tracks from the Jazz Butchers' earlier incarnation, which in retrospective features the clever arrangements of '80s Britpop acts like the Smiths with the psychedelic dark humor of Robyn Hitchcock. Still, the band was its own complex beast, with Pat Fish (aka the Jazz Butcher) and his strong croon easily recognizable features.	<p />
@@ -12058,7 +12070,7 @@ Thanks, Harlan Ellison! x
 
 #define	20180308_press_apessimistisneverdisappointed_violent.html
 #live	if (getval(page) = 20180308_press_apessimistisneverdisappointed_violent.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	It hasn't even been a half-year since the folks at dropped the first superb box-set from The Jazz Butcher, and now they are at it again. The Violent Years is out tomorrow and it collects 4 separate mid-Eighties and early-Nineties records from the band, from the near-perfect Fishcoteque (1988) and on to 1991's odd Condition BlueFire Records. The music here is, unsurprisingly, largely essential. And for every bizarre turn that Pat Fish drives the band into near the end of this set, there are loads more up-front that should still thoroughly charm and delight fans of mid-Eighties British indie.<br/>
 	<br/>
@@ -12080,7 +12092,7 @@ Thanks, Harlan Ellison! x
 
 #define	20160219_press_apessimistisneverdisappointed_adventurers.html
 #live	if (getval(page) = 20160219_press_apessimistisneverdisappointed_adventurers.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	England's The Jazz Butcher were one of those bands who got lumped in with the C86 explosion, the flowering of Creation Records talent -- (the first or second ones, at least) -- and who knows what other wave of another set of bands. Despite that hard to pin down-ness, The Jazz Butcher make witty, heartfelt indie of the sort that has rewarded listeners for 30 years so far. The esteemed Fire Records outfit has now begun an impressive Jazz Butcher re-issue project with the first release being 2012's The Last of the Gentleman Adventurers.
@@ -12097,7 +12109,7 @@ Thanks, Harlan Ellison! x
 
 #define	20141112_julioruiz.html
 #live	if (getval(page) = 20141112_julioruiz.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<p class="iview_q">
@@ -12331,7 +12343,7 @@ Thanks, Harlan Ellison! x
 
 #define	20030916_wilson_bbci.html
 #live	if (getval(page) = 20030916_wilson_bbci.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 <div class="iview_intro">
 <img src="http://wilsondub.com/images/logo_bbci.gif"></a>
@@ -12408,7 +12420,7 @@ Tuesday, 16th September, 2003<br />
 
 #define	20040912_wilson_cricketpress.html
 #live	if (getval(page) = 20040912_wilson_cricketpress.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<img src="http://wilsondub.com/images/2004Sep12/cricketpress.jpg">
 	)})}
@@ -12418,7 +12430,7 @@ Tuesday, 16th September, 2003<br />
 
 #define	19870210_press_BestOfRockNRollFolkMagazine.html
 #live	if (getval(page) = 19870210_press_BestOfRockNRollFolkMagazine.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 <a href="/images/19870210/19870210_press_BestOfRockNRollFolkMagazine.jpg">
 <img src="/images/19870210/19870210_press_BestOfRockNRollFolkMagazine_500.jpg"></a>
@@ -12429,7 +12441,7 @@ Tuesday, 16th September, 2003<br />
 
 #define	19930221_press_BestOfRockNRollFolkMagazine.html
 #live	if (getval(page) = 19930221_press_BestOfRockNRollFolkMagazine.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 <a href="/images/19930221/19930221_press_BestOfRockNRollFolkMagazine.jpg">
 <img src="/images/19930221/19930221_press_BestOfRockNRollFolkMagazine_500.jpg"></a>
@@ -12440,7 +12452,7 @@ Tuesday, 16th September, 2003<br />
 
 #define	19930216_press_LiberationNewspaper.html
 #live	if (getval(page) = 19930216_press_LiberationNewspaper.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 <a href="/images/19930216/19930216_press_LiberationNewspaper.jpg">
 <img src="/images/19930216/19930216_press_LiberationNewspaper_500.jpg"></a>
@@ -12451,7 +12463,7 @@ Tuesday, 16th September, 2003<br />
 
 #define	19931115_press_lEstRepublicainNewspaper.html
 #live	if (getval(page) = 19931115_press_lEstRepublicainNewspaper.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 <a href="/images/19931115/19931115_press_lEstRepublicainNewspaper.jpg">
 <img src="/images/19931115/19931115_press_lEstRepublicainNewspaper_500.jpg"></a>
@@ -12462,7 +12474,7 @@ Tuesday, 16th September, 2003<br />
 
 #define	198703_press_rockdelux.html
 #live	if (getval(page) = 198703_press_rockdelux.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<a href="/images/198703/198703_press_rockdelux.jpg"><img src="/images/198703/198703_press_rockdelux_100.jpg"></a>
 	<p />
@@ -12626,7 +12638,7 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 
 #define	19900308_press.html
 #live	if (getval(page) = 19900308_press.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<a href="/images/19900308/19900308_poster.jpg"><img src="/images/19900308/19900308_poster_500.jpg"></a>
 	<p />
@@ -12644,7 +12656,7 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 
 #define	19990923_press_villagevoice.html
 #live	if (getval(page) = 19990923_press_villagevoice.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 <a href="/images/19990923/19990923_press_villagevoice.jpg">
 <img src="/images/19990923/19990923_press_villagevoice_500.jpg"></a>
@@ -12655,7 +12667,7 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 
 #define	19990916_press_seattle_rocket.html
 #live	if (getval(page) = 19990916_press_seattle_rocket.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 <a href="/images/19990916/19990916_press_seattle_rocket.jpg">
 <img src="/images/19990916/19990916_press_seattle_rocket_500.jpg"></a>
@@ -12666,7 +12678,7 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 
 #define	19990916_press_seattle.html
 #live	if (getval(page) = 19990916_press_seattle.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 <a href="/images/19990916/19990916_press_seattle.jpg">
 <img src="/images/19990916/19990916_press_seattle_500.jpg"></a>
@@ -12793,7 +12805,7 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 
 #define	20160218_press_bigtakeover.html
 #live	if (getval(page) = 20160218_press_bigtakeover.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	Northampton based artist The Jazz Butcher, aka Pat Fish, is at his laid back best on this reissued collection of songs. The record was originally available in 2012 as a pledge item in a limited run of 1000. But now we have this reissue, which includes Pat Fish (guitar, organ and vocals), Max Eider (guitar and vocals), Tim Harries (bass), Jonny Mattock (drums and percussion), Rich Formby (guitar and harmonium), Owen Jones (accordion) and Sonic Boom (ghost chorus and drones on “Saints Prayer”). If you know Pat’s work, then you know that styles can be all over the place, but here they mostly center around quietly expressed sentiments with elements of jazz, folk, and low key rock and roll. It is a sleepy, nighttime album, with peaceful tracks like “Count Me Out” and opening track “Animals”. “Shame About You” amps up the energy a bit, bringing to mind uptempo Velvets or maybe even Jonathan Richman. The title track is somnolent, jazz-inflected pop, the perfect slow dance for a cold winter’s night. Part of me also imagines a musical line drawn between Pat and Robyn Hitchcock, as much for the vibe as the eccentric nature of it all. “Tombé Dans Les Pommes” is French cafe music, perfect for settling into after a long stroll along the Seine. “All The Saints” ups the energy a little, and is more typical of Pat’s work from the mid to late 80s. Lovely indeed! “Mercy” is heavily reminiscent of late period Velvets, and this is never a bad thing in my mind. “Black Raoul” has a bit of an R&B feel and mines the standard three chord blues riffs heard often in the 50s and 60s. “Shakey” is atmospheric and sentimental, and Pat dedicated the song to Brian Wilson. “Solar Core” kicks it up a bit, but is standard Butcher fare. “Saint’s Prayer” has ghostly voices and is openly psychedelic, even approaching dream pop territory. It is my favorite song here, not only because of the nods to the aforementioned genres, but also because it is stylistically different from the rest of the album. In summary, Last of the Gentleman Adventurers won’t rock you like a hurricane, but its unhurried way of enchanting you with its cool, mellow vibes might just suck you in. Recommended highly by this long time fan.
 	)})}
@@ -13140,7 +13152,7 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 
 #define	20120907_wilson_northamptonchron.html
 #live	if (getval(page) = 20120907_wilson_northamptonchron.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	Psychedelic dub rock act Wilson celebrate the launch of their live DVD with a headline show The Picturedrome in Northampton tonight.
 	<p />
@@ -13215,7 +13227,7 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 
 #define	20040512_wilson_about.html
 #live	if (getval(page) = 20040512_wilson_about.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<div style="text-align: center;">
 	<img
@@ -13410,7 +13422,7 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 
 #define	20040512_wilson_warfare.html
 #live	if (getval(page) = 20040512_wilson_warfare.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<center>
@@ -13652,7 +13664,7 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 
 #define	19920501_washingtonpost.html
 #live	if (getval(page) = 19920501_washingtonpost.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<p />THOSE conversant with the sprightly guitar-based pop-rock produced around the British Commonwealth over the last decade -- whether by the Jazz Butcher or such stylistic familiars as the Smiths, Robyn Hitchcock or the Church -- will not be surprised by the Butcher's latest, "Condition Blue." They should, however, be pleased. "Blue" is not especially distinctive, but it has charm to burn.	<p />
 
@@ -13666,7 +13678,7 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 
 #define	20000503_themadcapspeaks.html
 #live	if (getval(page) = 20000503_themadcapspeaks.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<p class="iview_intro">
 		May 3rd, 2000 Backstage at the Echo Lounge in Atlanta, Georgia. (and Max Eider was present off and on)
@@ -13892,7 +13904,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 #define	200002_julian_poole.html
 #live	if (getval(page) = 200002_julian_poole.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<div class="iview_intro">
@@ -14372,7 +14384,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 #define	20081120_stereoembers_max_eider.html
 #live	if (getval(page) = 20081120_stereoembers_max_eider.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<h2 class="entry-title">The Breathing of Statues: An Interview With Max Eider</h2>
@@ -14596,7 +14608,7 @@ As you can see, I have my finger very much on the pulse.
 
 #define	1995_apollox_alex_green.html
 #live	if (getval(page) = 1995_apollox_alex_green.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 <h2>
@@ -14685,7 +14697,7 @@ David J
 
 #define	200505_apollox.html
 #live	if (getval(page) = 200505_apollox.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 <h2>Fish heads (& tales)</h2>
@@ -14780,7 +14792,7 @@ Special thanks to Pat Fish
 
 #define	20081120_caughtinthecarousel.html
 #live	if (getval(page) = 20081120_caughtinthecarousel.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<div class="iview_intro">
@@ -15186,7 +15198,7 @@ Special thanks to Pat Fish
 
 #define	20080219_mickmercer_max_eider.html
 #live	if (getval(page) = 20080219_mickmercer_max_eider.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<div class="iview_q">
@@ -15446,7 +15458,7 @@ Special thanks to Pat Fish
 
 #define	20170824_soulkitchen.html
 #live	if (getval(page) = 20170824_soulkitchen.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<div class="iview_q">
 	How did you meet Dave Barker from Glass Records ?
@@ -15546,7 +15558,7 @@ Special thanks to Pat Fish
 
 #define	20171002_bandcamp.html
 #live	if (getval(page) = 20171002_bandcamp.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 <h2 class="entry-title">The Jazz Butcher&#8217;s Indie Pop&nbsp;Genesis</h2>
 
@@ -15666,7 +15678,7 @@ Special thanks to Pat Fish
 
 #define	20110311_jimruiz_max_eider.html
 #live	if (getval(page) = 20110311_jimruiz_max_eider.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<h2>Jim remembers Max, Max remembers Wes</h2>
 	<div class="iview_intro">
@@ -15704,7 +15716,7 @@ Special thanks to Pat Fish
 
 #define	20171012_louderthanwar.html
 #live	if (getval(page) = 20171012_louderthanwar.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<h2>4CD retrospective from those witty purveyors of indie rock, The Jazz Butcher. Mark Ray reviews for LTW</h2>
 	<p />
@@ -15732,7 +15744,7 @@ The Jazz Butcher existed in that part of our lives which was always student digs
 
 #define	20171015_press_apessimistisneverdisappointed_wasted.html
 #live	if (getval(page) = 20171015_press_apessimistisneverdisappointed_wasted.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<div style="text-align: center;">
 	<a href="/images/releases/fire_wasted/JazzButcherGroupBW1.jpg"><img src="/images/releases/fire_wasted/JazzButcherGroupBW1_500.jpg"></a>
@@ -15768,7 +15780,7 @@ The Jazz Butcher existed in that part of our lives which was always student digs
 
 #define	20171020_popmatters.html
 #live	if (getval(page) = 20171020_popmatters.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 	<p />&#8220;Don&#8217;t you know they only make those pop records out of plastic?&#8221; Pat Fish asks on &#8220;Southern Mark Smith&#8221;, a signature early single from his band the Jazz Butcher. The implication is clear: Pop is disposable, and there is no need to take it so seriously and be so smug about it. Indeed, if the cliché about hurting the ones you love the most is true, Fish has an extra special fondness for pop. Over the course of the four albums and 41 tracks collected on <i>The Wasted Years</i>, he skewers pop in every which way&#8212;from the left, from the right, lyrically, musically, conceptually. And he shows his love by doing so with great care, meticulous wit, and, well, some great pop music. 	<p />
@@ -15833,7 +15845,7 @@ Travel, Distressed Gentlefolk) are here recorded. The time (1983-86) when the bi
 
 #define	20171101_thevinyldistrict.html
 #live	if (getval(page) = 20171101_thevinyldistrict.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 
 <div class="iview_intro">
@@ -15885,7 +15897,7 @@ Rebounding nicely is the organ-laced pop-rock of “Nothing Special” followed 
 
 #define	20171101_allmusic.html
 #live	if (getval(page) = 20171101_allmusic.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 Between 1983 and 1986, the Jazz Butcher were responsible for four albums' worth of confounding pop music, and The Wasted Years collects them all. Starting off as a solo vehicle for the offbeat musings of Pat Fish, with the addition of ace guitarist Max Eider and more friends (including David J. of Bauhaus), they grew into something interesting and strange. 1983's Bath of Bacon was the result of Fish's experiments with tape deck recording and it has lo-fi charm. Fish sounds like he's trying to figure out what the Jazz Butcher are exactly -- a wacky jazz band, a goofy pop group, or a cabaret experience -- while delivering a handful of wonderful songs, especially "Partytime," which features some skilled fretwork from Eider. By 1984's Scandal in Bohemia, the group had solidified and moved to a real studio to work with producer John Rivers. Not surprisingly, the sound is bigger and some of the weird edges are sawed down. In exchange for that, Fish turns in a bracingly hooky set of songs that the bands deliver with panache. Kicking off with "Just Like a Southern Mark Smith," which sounds like an actual radio hit, they then take a left turn into some tropical weirdness ("Real Men"), bebop rockabilly ("I Need Meat"), what sounds like a song from a European stage musical ("Marnie"), and acoustic children's folk ("Mind Like a Playgroup"). It's still a scattershot approach to making an album style-wise, but it sounds great thanks to the band's deft handling of the material and Fish's new level of craft and confidence. Their next album, 1985's Sex and Travel, came together in a week's time, and as a result, is the most focused album of their early days. The songs sound big and bright with huge drums, and the guitars have a widescreen jangle that fills the mix with warmth. "Big Saturday" is their poppiest moment yet, "Red Pets" works up an impressive head of steam, "Holiday" is a lovely oddball ballad complete with typewriter sounds, and the rest is delightfully fun, if a bit brief. It definitely showed the band becoming more assured and maybe even narrowing their focus a little in favor of a less wacky approach. 1986's Distressed Gentlefolk was the result. Their aim was to make the "Greatest Album Ever," and while they don't quite pull that off, it is their greatest album yet. It's a mix of big bad rockers ("Big Bad World"), country-rock road songs ("Falling in Love"), late-night jazz, and loads of their usual happy weirdness played with brio and sung by Fish like he's the cat who just caught the mouse. Add in a couple truly heartbreaking ballads -- "Still in the Kitchen" and "Angels" -- that show a surprising amount of emotional depth and it's a done deal. Fish went on to record more albums as the Jazz Butcher, but this is where it all began, and The Wasted Years is a fine collection of works by an overlooked and sometimes underestimated band.
 	<p />
@@ -15899,7 +15911,7 @@ Between 1983 and 1986, the Jazz Butcher were responsible for four albums' worth 
 
 #define	20171103_whenyoumotoraway.html
 #live	if (getval(page) = 20171103_whenyoumotoraway.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<p />
 At least on the surface, it may seem perverse to reissue music by an artist that noted that pop music was a disposable product.  But appreciation of art is a matter of emotions, not logic, so when The Wasted Years reached our ears, we felt like we hit the lottery.  The four CD collection (plus booklet) is assembled from four records -- Bath Of Bacon, A Scandal In Bohemia, Sex And Travel, and Distressed Gentlefolk -- by The Jazz Butcher.  The project, also known as the Jazz Butcher Conspiracy and other, similar, names, was founded in the late '70s by Oxford student Pat Fish (Patrick Huntrods).  Fish, often with a rotating cast of collaborators has been prolific over the years, creating music that reflects melody, wit, and an incredible genius for expressing pop music in just about every format possible.  Lo-fi indie pop? Of course. Soft rock with tones of jazz? Got it covered.  A bit of country? You don't need to ask.  Alternative folk?  Plenty of the best.  Rockabilly? Dance away! Oddball pop? See stage left. Cabaret?  Have a seat, your waiter will be along momentarily.
@@ -15919,7 +15931,7 @@ The Wasted Years is out now as a four CD box set (plus booklet with an essay by 
 
 #define	20171208_undertheradar.html
 #live	if (getval(page) = 20171208_undertheradar.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	Sneaking into Austin's Liberty Lunch in 1990 was one of my high points during the twilight of my teen years. Being 18 years old and broke during my first year of college made an instant miscreant out of me. Regardless of my amoral decision, I was willing to be physically thrown out of a club and into jail to see The Jazz Butcher Conspiracy (aka The Jazz Butcher).
 	<p />
@@ -15966,7 +15978,7 @@ The Wasted Years is out now as a four CD box set (plus booklet with an essay by 
 
 #define	20180109_pitchfork.html
 #live	if (getval(page) = 20180109_pitchfork.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 <b>A new box set, collecting four albums released between 1983 and 1986, is a fascinating look at the early stages of an underrated UK post-punk act.</b>
 	<p />
@@ -16007,7 +16019,7 @@ The Wasted Years, despite its sardonic title, is a worthwhile look back at the p
 
 #define	19860902_press_bellringer.html
 #live	if (getval(page) = 19860902_press_bellringer.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 Nonsense The Jazz Butcher is truly unique group.
 <p />
@@ -16124,7 +16136,7 @@ Kate Flaherty reviews new alternative music from the record library of WWPV-FM.
 
 #define	20200504_press_popnews.html
 #live	if (getval(page) = 20200504_press_popnews.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<p />
 (Translated using https://www.deepl.com/)
@@ -16286,7 +16298,7 @@ Photos : Vincent Arquillière (Londres, 2016, et Fontenay-aux-Roses, 2019).	<p /
 
 #define	20211127_press_tribute.html
 #live	if (getval(page) = 20211127_press_tribute.html)
-	${extractPress(,
+	${extractPress(
 		body=${literalizeCommas(
 	<p />
 						This memorial celebration of the life and music of Pat Fish took place at the Dublin Castle instead of the intended actual gig by Pat Fish who sadly passed away before the gig could take place, but as we all know how much Pat hated cancelling any live gigs, So Promoter Jane Barnes and Dave Morgan decided that rather than cancelling the show that Dave was meant to be putting a band together for, he would instead expand the band and hold this wonderful tribute night, for that, all who took part or attended or watched it on the livestream are hopefully as grateful as I am for a wonderful celebration in the spirit Pat has embodied throughout his life and career. The cast included members of among other bands The Jazz Butcher, The Weather Prophets, The Loft, The Jasmine Minks, Scarlets Well, The Monochrome set, The Woodentops, 13 Frightened Girls, Helen and The Horns, Heidi Berry, Blurt, The June Brides, The Wolfhounds etc.
@@ -16341,6 +16353,21 @@ All that left time for was one last big sing along to one of Pat's favourite son
 	${jbc_footer}
 #live	endif
 
+#define	19831008_press_mercutyandherald.html
+#live	if (getval(page) = 19831008_press_mercutyandherald.html)
+	${extractPress(
+		body=${literalizeCommas(
+	)})}
+	${jbc_footer}
+#live	endif
+
+#define	19820905_press_mercutyandherald.html
+#live	if (getval(page) = 19820905_press_mercutyandherald.html)
+	${extractPress(
+		body=${literalizeCommas(
+	)})}
+	${jbc_footer}
+#live	endif
 
 #define data.json
 #live if (getval(page) = data.json)

@@ -872,6 +872,11 @@ samp {
 	padding: 3px;
 }
 
+.gig_project {
+	background: #000;
+color: white;
+}
+
 .comment {
 	outline: 1px solid #999;
 	background: white;

@@ -15,13 +15,6 @@
 		)},
 	)}
 
-#define	Jun.html()
-	${gigHeader(
-		who=${literalizeCommas(
-			${pat}, ${max}, ${ll}
-		)}
-	)}
-
 #define	Jun12.html()
 	${gigHeader(
 		who=${literalizeCommas(

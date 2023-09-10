@@ -665,7 +665,7 @@ ${define(gsExtra[${dt}], ${summary})}
 		The Vaguely Familiar
 		${tag_end}
 		<div class="listenItem">
-		Demo tracks from the ${linkInternal(${jbc_gigs}/1991/Jul.html, July 1991)} ${pat}, ${richard}, and ${sumishta} collaboration.
+		Demo tracks from the ${linkInternal(${jbc_gigs}/1991/Jul1.html, July 1991)} ${pat}, ${richard}, and ${sumishta} collaboration.
 		<blockquote>
 		${linkAudio(title=A Matter Of Time), mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_AMatterOfTime.mp3)}
 		${linkAudio(title=Bombed, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Bombed.mp3)}
@@ -679,7 +679,7 @@ ${define(gsExtra[${dt}], ${summary})}
 		Cambodia
 		${tag_end}
 		<div class="listenItem">
-		Demo tracks from the ${linkInternal(${jbc_gigs}/1991/Aug.html, August 1991)} ${pat} and ${coonce} collaboration.
+		Demo tracks from the ${linkInternal(${jbc_gigs}/1991/Aug1.html, August 1991)} ${pat} and ${coonce} collaboration.
 		<blockquote>
 		${linkAudio(title=We Are The Traffic, comment=#1, mp3=${jbc_audio}/Cambodia/199108_Cambodia_WeAreTheTraffic_No1.mp3)}
 		${linkAudio(title=We Are The Traffic, comment=#2, mp3=${jbc_audio}/Cambodia/199108_Cambodia_WeAreTheTraffic_No2.mp3)}

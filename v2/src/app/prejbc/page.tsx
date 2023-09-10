@@ -5,7 +5,7 @@ import MakeSimpleURI from '@/components/MakeSimpleURI';
 const projects = [
 	{ uri: '/prejbc/institution', text: 'The Institution' },
 	{ uri: '/prejbc/nightshift', text: 'Nightshift' },
-	{ uri: '/prejbc/soncc_tonix', text: 'Sonic Tonix' },
+	{ uri: '/prejbc/sonic_tonix', text: 'Sonic Tonix' },
 	{ uri: '/prejbc/the_tonix', text: 'The Tonix' },
 ];
 

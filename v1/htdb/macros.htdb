@@ -3,8 +3,10 @@
 # 23,300 days
 
 #define	isNew(dt)
-#live	if (parseUnix(${dt}) > ${eval(${parseUnix(${_db_timestamp})} - (60 * 60 * 24 * 30))})
+#live	if (getval(dt))
+#live	if (parseUnix(${dt}) > ${eval(${parseUnix(${_db_timestamp})} - (60 * 60 * 24 * 90))})
 	<img src="/images/new.jpg">
+#live	endif
 #live	endif
 
 #define	deparse(datetime, category, type, list)
@@ -1174,6 +1176,8 @@ font.load().then(function () {
 #       conspirators
 #
 #define	butch	The Butcher
+#define	terry	Terry Walpole
+#define	brooksbank	Andrew J. Brooksbank
 #define	pat		${linkPerson(href=https://patfish.com, name=Pat Fish)}
 #define	solo	${pat}
 #define	duo		${pat}, ${max}

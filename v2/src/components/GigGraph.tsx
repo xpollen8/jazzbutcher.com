@@ -7,6 +7,11 @@ export const types: RecordType = {
 		background: 'oldlace',
 		icon: '/images/performance_jbc.png',
 	},
+	project: {
+		title: 'Side Project',
+		color: '#fff',
+		background: '#55e',
+	},
 	solo: {
 		title: 'Pat Solo',
 		color: '#555',

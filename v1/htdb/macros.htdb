@@ -870,6 +870,7 @@
 #define	letters/94Jun24		letters94Jun24
 #define	letters/94Sep13		letters94Sep13
 #define	jbc_letters		${jbc_root}/letters
+#define	gigs/1981		gigs1981
 #define	gigs/1982		gigs1982
 #define	gigs/1983		gigs1983
 #define	gigs/1984		gigs1984
@@ -2890,6 +2891,11 @@ ${_base}.html
 #	Upcoming Events
 ##live	endif
 #	${tag_end}
+
+#${mkGigLink(ts=1984-03-13 00:00:00, venue=Magee's Bistro, city=Wellingborough, state=Northamptonshire, country=England, sidebar=${sidebar}, extra=solo)}
+#${mkGigLink(ts=1981-12-01 00:00:00, venue=Chez Louis, city=Wimbledon\, London, country=England, sidebar=${sidebar}, blurb=Exact date in December is unknown)}
+#${mkGigLink(ts=1982-06-27 00:00:00, venue=Richard Fordham's Party, city=Oxford, country=England, sidebar=${sidebar})}
+#${mkGigLink(ts=1982-01-21 00:00:00, venue=The Tunnel Club, city=Greenwich\, London, postalcode=E14, country=England, sidebar=${sidebar}, blurb=Exact date in January is unknown)}
 
 #${mkGigLink(ts=1994-07-27 00:00:00, venue=The Fortress, address=King's Cross, city=London, country=England, sidebar=${sidebar}, extra=eg, blurb=A rave)}
 #${mkGigLink(ts=2010-07-15 00:00:00, venue=Hoxton Bar and Grill, address=81 Great Eastern Street, city=London, country=England, postalcode=EC2A 3HU, sidebar=${sidebar}, extra=with-solo, blurb=Spacemen 3: A Reunion of Friends, with=Spacemen 3)}

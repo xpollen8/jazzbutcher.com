@@ -61,8 +61,9 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	project: { parent: 'pat', title: 'Side Projects', summary: "Pat was a busy butcher" },
 	gallery: { parent: 'pat', title: 'Gallery', summary: "Photography from all eras"  },
-	memoriam: { parent: 'pat', title: 'In Memoriam', summary: "Too soon" },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "Final years' live performances from his home" },
+	notebooks: { parent: 'pat', title: 'Notebook Excerpts', summary: "Throughout his life, Pat kept journals in which he documented his gigs, tours, general observations, drew sketches, and jotted down lyrics. They are utterly fascinating.  In 2012, Pat auctioned off many of his older notebooks to raise funds for Last of the Gentlemen Adventurers" },
+	memoriam: { parent: 'pat', title: 'In Memoriam', summary: "Too soon" },
 	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
 
 	letters: { parent: 'etc', title: 'Letters From Pat' },
@@ -128,8 +129,8 @@ const parseTitle = (title: string | string[], key0: number) => {
 	if (title?.constructor === Array && title[0]?.constructor === String) {
 		return title?.map((t: string, key: number) => {
 			const [ text, href ] = t.split(';;');
-			/* WIP
 			if (href) {
+			/* WIP
 				const menu = <>
 				<ul className="dropdown-menu">
 					<li className="dropdown-item">
@@ -140,8 +141,9 @@ const parseTitle = (title: string | string[], key0: number) => {
 				</ul>
 				</>;
 				return <li className="menu-item dropdown" key={key0+key}><Link className="menu-link" href={href}>{text}</Link>{menu}</li>;
-			}
 			*/
+				return <li key={key0+key}><Link  href={href}>{text}</Link></li>;
+			}
 			return <li key={key0+key}><span aria-current="page">{text}</span></li>;
 		});
 	}

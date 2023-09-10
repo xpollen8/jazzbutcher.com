@@ -193,6 +193,7 @@ export const star = linkSearch({ name: "Big Star", act: "yes" });
 //
 //	artwork
 //
+export const dave_coverly = linkExternal("https://www.speedbump.com/", "Dave Coverly");
 export const lucien = linkSearch({ name: "Lucien Borderline" });
 export const bd = linkSearch({ name: "Ben Davis" });
 export const novak = linkSearch({ name: "Alex Novak" });

@@ -220,8 +220,10 @@ textplus1 {
 	background-color: #ddddee;
 	padding: 5px;
 }
-.gig_sumo a {
-	color: #fff;
+.gig_sumo {
+	background-color: #000000;
+	padding: 5px;
+	margin-bottom: 5px;
 }
 .gig_sumo a {
 	color: #fff;
@@ -231,6 +233,11 @@ textplus1 {
 }
 .gig_jbc:before {
 	content: url(https://jazzbutcher.com/images/performance_jbc.png);
+}
+.gig_eg {
+	background-color: #ddd;
+	padding: 5px;
+	margin-bottom: 5px;
 }
 .gig_eg:before {
 	content: url(https://jazzbutcher.com/images/performance_eg.png);
@@ -264,6 +271,38 @@ textplus1 {
 	content: url(https://jazzbutcher.com/images/performance_nopat.png);
 }
 .gig_nopat {
+}
+.gig_institution {
+	background-color: #eeffee;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.gig_institution:before {
+	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/TheInstitution_logo.jpg);
+}
+.gig_nightshift {
+	background-color: #d7d7d7;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.gig_nightshift:before {
+	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/Nightshift_Logo.gif);
+}
+.gig_thetonix {
+	background-color: #000;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.gig_thetonix:before {
+	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_Logo.gif);
+}
+.gig_sonictonix {
+	background-color: #ff0101;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.gig_sonictonix:before {
+	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_Logo.gif);
 }
 .gig_listing_poster {
 	text-align: center;
@@ -819,7 +858,10 @@ samp {
 	color: #333;
 	background: lightyellow;
 }
-
+.breadcrumb li:hover a{
+	color: #333;
+	background: lightyellow;
+}
 .breadcrumb li:last-child span{
 	background: lightyellow;
 	padding: 3px;
@@ -829,6 +871,7 @@ samp {
 .breadcrumb a{
 	padding: 3px;
 }
+
 
 .comment {
 	outline: 1px solid #999;

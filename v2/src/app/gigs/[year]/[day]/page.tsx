@@ -133,7 +133,8 @@ const GigPlay = ({ data }: any) => {
 	return (
 		<div>
 			{/*console.log("Play", data)*/}
-			{data?.song}
+			{data?.song} {data?.author}
+			{data?.comment}
 		</div>
 	)
 }

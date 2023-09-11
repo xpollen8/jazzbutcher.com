@@ -31,3 +31,8 @@
 
 # /project/sumo|wilson|vaguely familiar|black_eg
 	* gotta bunch of old material to rework
+
+# complete the population of the 'entity' database table
+
+---
+https://web.dev/virtualize-long-lists-react-window/

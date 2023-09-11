@@ -68,7 +68,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	memoriam: { parent: 'pat', title: 'In Memoriam', summary: "Too soon" },
 	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
 
-	letters: { parent: 'etc', title: 'Letters From Pat' },
+	letters: { parent: 'pat', title: 'Letters From Pat' },
 	mailinglist: { parent: 'etc', title: 'Mailing List' },
 	tribute: { parent: 'etc', title: 'Fan Tribute Project' },
 	abcs_of_drugs: { parent: 'etc', title: "Eider's ABC's of Drugs" },

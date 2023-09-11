@@ -16,6 +16,12 @@ const SonicTonix = () =>
   the Oranges & Lemons in St Clements, Oxford, plus some unusual dancing and a musical trio under plastic. Oh, and a
   contemporaneous photographical artwork from the man himself.&quote;
 
+<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_A.jpg" width={500} height={500} alt="A" />
+<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_B.jpg" width={500} height={500} alt="B" />
+<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/sonic_tonix.jpg" width={500} height={500} alt="cover" />
+<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/sonic_tonix_back.jpg" width={500} height={500} alt="back" />
+
+
 <br/> https://www.discogs.com/release/2078217-Sonic-Tonix-Dont-Go-Away-Telepathy
 <br/> Label:  Industrial Accident –  SGS-114
 <br/> Format:

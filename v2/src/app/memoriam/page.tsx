@@ -18,6 +18,8 @@ const Memoriam = () =>
 			<b> 1957-12-20 .. 2021-10-05</b>
 			<br/> <br/> <br/>
 			<b>{linkInternal("/eulogy", "Alan Moore's eulogy is here..")}</b>
+			<br/> <br/> <br/>
+			<b>{linkInternal("/rememberences/david_jackson", "David Jackson reflects")}</b>
 			<br/> <br/> <br/> <br/>
 			{linkInternal("/help", "Help enrich the JBC archives!")}
 		</div>

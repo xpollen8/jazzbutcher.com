@@ -1,13 +1,22 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import MakeSimpleURI from '@/components/MakeSimpleURI';
 
-const Missing = () => 
+const sections = [
+	{ uri: '/first_gig', text: "Pat's first gig - 1974" },
+	{ uri: '/project', text: "Side projects during JBC years" },
+	{ uri: '/fishy_masions', text: "The 2020-2021 Fishy Mansions livestreams" },
+	{ uri: '/letters', text: "Mail from Pat, 1990-1994" },
+	{ uri: '/notebooks', text: "Excerpts from Pat's notebooks" },
+	{ uri: '/memoriam', text: "RIP" },
+	{ uri: '/rememberences', text: "Remeberences and tributes" },
+];
+
+const Pat = () => 
 <>
 	<Header section="pat" />
-	<div className="etc">
-		<h1>This section is not yet ported from old JBC site</h1>
-	</div>
+		{sections.map(MakeSimpleURI)}
 	<Footer />
 </>
 
-export default Missing;
+export default Pat;

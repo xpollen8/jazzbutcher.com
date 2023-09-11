@@ -14,10 +14,10 @@ const Nightshift = () =>
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/Nightshift_20220516_Facebook_JohnSilver.png" width={500} height={500} alt="facebook scan" />
 </code>
 <hr/>
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/N2.jpg" width={500} height={500} alt="inst 1" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/N13.jpg" width={500} height={500} alt="inst 2" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/N54.jpg" width={500} height={500} alt="inst 3" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/N55.jpg" width={500} height={500} alt="inst 4" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/N2.jpg" width={500} height={500} alt="inst 1" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/N13.jpg" width={500} height={500} alt="inst 2" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/N54.jpg" width={500} height={500} alt="inst 3" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/N55.jpg" width={500} height={500} alt="inst 4" />
 	<Footer />
 </>
 

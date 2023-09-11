@@ -47,6 +47,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	help: { parent: 'jbc', title: 'Get Involved!', summary: "Let's do this, together" },
 
 	media: { parent: 'jbc', title: 'Media', summary: "Listen! Watch! Read!" },
+	fanclub: { parent: 'jbc', title: 'Fan Club', summary: "Early Fan Club issues" },
 	audio: { parent: 'media', title: 'Audio', summary: "Bootlegs and the like" },
 	audio_interviews: { parent: [ 'audio', 'pat' ], title: 'Recorded Interviews', summary: "Radio and online interviews" },
 	audio_bootlegs: { parent: 'audio', title: 'Recorded performances', summary: "Non-official audio recordings" },
@@ -62,7 +63,8 @@ const sections : { [key: string]: BreadCrumb } = {
 	project: { parent: 'pat', title: 'Side Projects', summary: "Pat was a busy butcher" },
 	gallery: { parent: 'pat', title: 'Gallery', summary: "Photography from all eras"  },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "Final years' live performances from his home" },
-	notebooks: { parent: 'pat', title: 'Notebook Excerpts', summary: "Throughout his life, Pat kept journals in which he documented his gigs, tours, general observations, drew sketches, and jotted down lyrics. They are utterly fascinating.  In 2012, Pat auctioned off many of his older notebooks to raise funds for Last of the Gentlemen Adventurers" },
+	rememberences: { parent: 'pat', title: 'Rememberences', summary: "Rememberences and tributes" },
+	notebooks: { parent: 'pat', title: 'Notebooks', summary: "Throughout his life, Pat kept journals in which he documented his gigs, tours, general observations, drew sketches, and jotted down lyrics. They are utterly fascinating.  In 2012, Pat auctioned off many of his older notebooks to raise funds for Last of the Gentlemen Adventurers" },
 	memoriam: { parent: 'pat', title: 'In Memoriam', summary: "Too soon" },
 	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
 

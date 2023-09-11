@@ -538,7 +538,7 @@
 			/images/19990913/13Sep1999_pat_sat_down.jpg$$
 			/images/19990913/13Sep1999_pat_sat_phones.jpg$$
 			/images/19990913/13Sep1999_steve_stands.jpg;;${steve}$$
-			${del}
+			person_david_whittemore
 	)}
 
 #define	Sep14.html()

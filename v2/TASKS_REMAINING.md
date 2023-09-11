@@ -1,5 +1,5 @@
 # port all of /articles
-	* will no be /mailinglist
+	* will now be /mailinglist
 	* the year 2000 does appear to be in my old "strangle" mail folder
 	* use hypermail to generate 2000 and/or modify to dump all to database
 
@@ -15,19 +15,19 @@
 # /press
 	* need to extend the database table to hold everything.
 
-* what should be on the home page?
+# what should be on the home page?
 
-* /gallery
+# /gallery
 	* needs complete build out
 
-* /gigs
+# /gigs
 	* finish the templating
 
-* /feedback
+# /feedback
 	* need to re-implement in React
 
-* /prejbc
+# /prejbc
 	* clean it all up after finding a common templating
 
-* /project/sumo|wilson|vaguely familiar|black_eg
+# /project/sumo|wilson|vaguely familiar|black_eg
 	* gotta bunch of old material to rework

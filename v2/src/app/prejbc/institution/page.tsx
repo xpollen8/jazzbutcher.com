@@ -14,6 +14,10 @@ const Institution = () =>
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Shirt_2.jpg" width={500} height={500} alt="shirt 2" />
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Shirt_3.jpg" width={500} height={500} alt="shirt 3" />
 	Images from Philip Snow.
+<hr />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 2.jpg" width={500} height={500} alt="inst 5" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 29b.jpg" width={500} height={500} alt="inst 6" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 30a.jpg" width={500} height={500} alt="inst 7" />
 <code>
 <br /> Jonathan Stephenson - https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw
 <br />

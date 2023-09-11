@@ -385,8 +385,16 @@ ${define(range[${z}]->end,)}
 
 #define	alice_thompson.html
 #live	if (getval(page) = alice_thompson.html)
-	${mkPeopleHeader(title=Alice Thompson)}
-
+	${mkPeopleHeader(title=Alice Thompson, , bio=${literalizeCommas(
+		<img src="/images/alice_thompson_2000.jpg" />
+		BIOGRAPHY
+		<p />
+		Alice Thompson grew up in Edinburgh and read English at Oxford University. She played keyboard with the band, The Woodentops, and is the author of four novels: Justine (1996), winner of the James Tait Black Memorial Prize (for fiction); Pandora's Box (1998); Pharos (2002): and The Falconer (2008).
+		<p />
+		She was formerly Writer in Residence for Shetland and in 2000, won a Creative Scotland Award. She teaches creative writing at the Arvon Foundation.
+		<p />
+		${g_source(g=UK Web Archive, u=https://www.webarchive.org.uk/wayback/archive/20100531232914/http://www.contemporarywriters.com/authors/?p=auth02D8K303612627402, d=2023-09-11)}
+	)})}
 	${people_footer}
 #live	endif
 

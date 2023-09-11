@@ -25,7 +25,7 @@ const Letters = () =>
 	<div className="etc">
 		<LetterHeader title="Pat responds to mailinglist questions posted by fans"
 			subhead=<>
-		Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.
+		Just prior to gaining Internet access for himself, Pat would update the website&apos;s maintainer the old-fashioned way: through type-written correspondence.
 		<p />
 		&quot;Letters From Pat&quot; covers news and answers to fan questions in 9 lengthy letters.
 			</>

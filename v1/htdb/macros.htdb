@@ -4711,7 +4711,7 @@ ${define(_set, false)}
 #
 #	noun:gig_press
 #
-#live	if ((sql(gp:select * from press where dtgig='${dt}' and url not like '%%mp3')) && (getint(gp->numResults) > 0))
+#live	if ((sql(gp:select * from press where dtgig='${dt}' and type not like '%pat% and url not like '%%mp3')) && (getint(gp->numResults) > 0))
 #live	if (getval(gp->type) == interview)
 	${begTab(Interview)}
 #live	else

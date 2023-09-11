@@ -2927,6 +2927,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-11-19 20:00:00','set',1,17,'Panic In Ro
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-19 20:00:00','set',1,18,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-19 20:00:00','set',1,19,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'1990-11-23 00:00:00','set',1,0,'The Entire Performance',NULL,"Soundboard - unknown generation Maxell XLII-90 > Denon DRW-850 > wavelab 6 > TLH > Make Torrent 2 > dime Azimuth calibrated and SBE corrected.  Received in trade a long time ago",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19901123/19901123_JazzButcher_LosAngeles_Roxy.mp3',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-23 00:00:00','set',1,1,'Conspiracy',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-23 00:00:00','set',1,2,'She\'s On Drugs',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-23 00:00:00','set',1,3,'Pineapple Tuesday',NULL,NULL,NULL,NULL,NULL,NULL);

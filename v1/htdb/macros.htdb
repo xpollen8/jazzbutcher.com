@@ -1193,7 +1193,15 @@ font.load().then(function () {
 #live				endif
 #live			endif
 #live		endwhile
-#live		if (define(${_use}, ${g_genericweb(g=${${_use}->name}, u=${${_use}->internal}, s=${${_use}->type})}))
+#live		if (defined(${_use}->internal))
+#live			if (define(${_use}, ${g_genericweb(g=${${_use}->name}, u=${${_use}->internal}, s=${${_use}->type})}))
+#live			endif
+#live		else if (defined(${_use}->external))
+#live			if (define(${_use}, ${g_genericweb(g=${${_use}->name}, u=${${_use}->external}, s=${${_use}->type})}))
+#live			endif
+#live		else
+#live			if (define(${_use}, ${g_genericweb(g=${${_use}->name}, s=${${_use}->type})}))
+#live			endif
 #live		endif
 ##live		if (define(${_use}->name, ${entity[${_e}]->name}))
 ##live		endif

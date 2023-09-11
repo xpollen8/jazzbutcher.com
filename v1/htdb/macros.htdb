@@ -84,7 +84,7 @@
 	}
 	.audio_title {
 	}
-	.source, .credit, .reviewer {
+	.person, .source, .credit, .reviewer {
 		margin-top: 1em;
 		color: #6666;
 		font-size: .9em;
@@ -933,7 +933,6 @@
 #define	del_images		https://davidwhittemore.com/images
 #define	del_audio		https://davidwhittemore.com/audio
 #define	del_video		https://davidwhittemore.com/video
-#define	del				${del_htdb}/site
 #define	del_root		https://davidwhittemore.com/htdb
 #define	del_gallery		${del_root}/gallery
 #define	del_galpix		https://davidwhittemore.com/images/gallery
@@ -991,6 +990,7 @@ font.load().then(function () {
 	<div id="nav" class="saveSpace">
 #	<a id="horn" href="/"><img alt="The Jazz Butcher" src="${jbc_images}/horn_40.png"></a>
 	<a id="horn" href="/"><img alt="The Jazz Butcher" height="80" src="${jbc_images}/knife_logo_80.png"></a>
+	${populateEntities()}
 	${mkSimpleURI(uri=https://patfish.com, text=Pat)}
 	${mkSimpleURI(uri=${jbc_memoriam}, text=In Memoriam)}
 	${mkSimpleURI(uri=${jbc_fishy_mansions}, text=Fishy Mansions)}
@@ -1174,8 +1174,39 @@ font.load().then(function () {
 		order by pageview_id desc
 
 #
+#	convert:
+#
+#	entity[*].type =	blah
+#	entity[*].lookup = foo
+#	entity[*].name = bar
+#
+#	into blah_lookup->name = bar
+#
+#define	populateEntities()
+#live	if (sql(entity:select * from entity))
+#live	while (_e = entity[*]->type)
+#live		if (define(_use, ${entity[${_e}]->type}_${entity[${_e}]->lookup}))
+#live		endif
+#live		while (_f = entity->field[*])
+#live			if (define(_use_f, ${entity->field[${_f}]}))
+#live				if (define(${_use}->${_use_f}, ${entity[${_e}]->${_use_f}}))
+#live				endif
+#live			endif
+#live		endwhile
+#live		if (define(${_use}, ${g_genericweb(g=${${_use}->name}, u=${${_use}->internal}, s=${${_use}->type})}))
+#live		endif
+##live		if (define(${_use}->name, ${entity[${_e}]->name}))
+##live		endif
+#live	endwhile
+#live	endif
+
+#
 #       conspirators
 #
+#define	person_andrew_j_brooksbank	${brooksbank}
+#define	person_terry_walpole	${terry}
+#define	person_steve_beswick	Steve Beswick;;/people/steve_beswick.html
+
 #define	butch	The Butcher
 #define	terry	Terry Walpole
 #define	brooksbank	Andrew J. Brooksbank
@@ -1229,7 +1260,7 @@ font.load().then(function () {
 #define	botty_bman	${linkPerson(href=${jbc_people}/ian_botterill.html, name=B-Man)}
 #define	mitch	${linkPerson(href=${jbc_people}/mitch_jenkins.html, name=Mitch Jenkins)}
 #define	sumishta	${linkPerson(href=${jbc_people}/sumishta_brahm.html, name=Sumishta Brahm)}
-#define	del		${linkPerson(href=${jbc_people}/david_whittemore.html, name=David Whittemore)}
+#define	del		${person_david_whittemore}
 #define	mike_novakovic		${linkSearch(query=Mike Novakovic)}
 #define	lb		${linkPerson(href=${jbc_people}/david_barker.html, name=Lionel Brando)}
 #define	ll		Louis Leroi
@@ -1993,8 +2024,10 @@ ${_d[3]}
 	</span><!-- date -->
 
 #define	g_genericweb(x, g, u, t, s, d, xd)
-<div class='${s}'>
-<b>${t}</b>:
+#live	if (defined(t))
+	<span class="${s}">
+	<b>${t}</b>:
+#live	endif
 #live	if (defined(x))
 	${x}
 #live	else
@@ -2022,7 +2055,9 @@ ${_d[3]}
 #live	if (defined(xd))
 	${xd}
 #live	endif
-</div><!-- ${s} -->
+#live	if (defined(t))
+	</span><!-- ${s} -->
+#live	endif
 
 #define	g_web(g, u)			${g_genericweb(g=${g}, u=${u}, t=Website, s=venue_website)}
 #define	g_ticketweb(g, u)	${g_genericweb(g=${g}, u=${u}, t=Tickets, s=ticket_website)}
@@ -3146,8 +3181,23 @@ ${define(_set, false)}
 #live		endif
 #live		if (defined(_r[2]))
 				${define(_rlink, ${_r[2]})}
-				${define(_rtext, ${_r[1]})}
+#live		endif
+#live		if (getval(_r[1]) == person_)
+#
+#	1st arg format is: person_XXX;;link
+#
+#live			if (define(_plookup, ${${_r[1]}}))
+#live				if (makeArray(_p, ${EOI}, ${unfilter(${_plookup})}))
+#live					if (defined(_p[2]))
+							${define(_rlink, ${_p[2]})}
+#live					endif
+						${define(_rtext, ${reverse(${truncAt(_nosrep, ${reverse(${_p[1]})})})})}
+#live				endif
+#live			endif
 #live		else
+#
+#	1st arg is a simple name
+#
 				${define(_rtext, ${_r[1]})}
 #live		endif
 #live		if (getval(_rtext) == href)
@@ -3248,7 +3298,7 @@ ${define(_set, false)}
 
 		${parsePhoto(p=${pix_current}, width=${width})}
 #live	else
-		${parseCredit(${filterProgramArguments(${pix_current})})}
+		<br/>${parseCredit(${filterProgramArguments(${pix_current})})}
 #live	endif
 #live	endloop
 	</div>
@@ -3306,7 +3356,11 @@ ${define(_set, false)}
 #				<div class="${mlclass}">
 #live			loop(x, 1, ${s->numResults})
 					<div class="ml-panel" style="${colorSet(${x})}; border: 1px solid; margin: 5px; border-radius:10px;">
+#live	if (defined(prefix))
 						${parsePhotoset(datetime=${${prefix}->datetime}, idx=${x}, photoset=${s[${x}]}, width=${width}, type=pix)}
+#live	else
+						${parsePhotoset(idx=${x}, photoset=${s[${x}]}, width=${width}, type=pix)}
+#live	endig
 					</div>
 #live			endloop
 #live		endif
@@ -4711,7 +4765,7 @@ ${define(_set, false)}
 #
 #	noun:gig_press
 #
-#live	if ((sql(gp:select * from press where dtgig='${dt}' and url not like '%%mp3')) && (getint(gp->numResults) > 0))
+#live	if ((sql(gp:select * from press where dtgig='${dt}' and type not like '%pat% and url not like '%%mp3')) && (getint(gp->numResults) > 0))
 #live	if (getval(gp->type) == interview)
 	${begTab(Interview)}
 #live	else

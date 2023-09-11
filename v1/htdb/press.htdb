@@ -1338,6 +1338,18 @@ ${d}
 		dt=1987-05)}
 
 	${addPress(type=album, album=nons,
+		url=${jbc_press}/19860902_press_mcgilldaily.html,
+		credit=Jenn Allen,
+		source=https://archive.org/details/McGillLibrary-mcgill-daily-v76-september-02-1986-12971/page/n7/mode/2up,
+		publication=The McGill Daily #76,
+		title=The Jazz Butcher,
+		headline=Bloody Nonsense,
+		subhead=(Polygram),
+		location=Montreal\, Quebec\, Canada,
+		dt=1986-09-02,
+		added=2023-09-10)}
+
+	${addPress(type=album, album=nons,
 		url=${jbc_press}/19860902_press_bellringer.html,
 		credit=Rob Baker,
 		source=https://archive.org/details/90286pdf/page/n5/mode/2up?q=%22Jazz+Butcher%22,
@@ -16365,6 +16377,17 @@ All that left time for was one last big sing along to one of Pat's favourite son
 #live	if (getval(page) = 19820905_press_mercutyandherald.html)
 	${extractPress(
 		body=${literalizeCommas(
+	)})}
+	${jbc_footer}
+#live	endif
+
+#define	19860902_press_mcgilldaily.html
+#live	if (getval(page) = 19860902_press_mcgilldaily.html)
+	${extractPress(
+		body=${literalizeCommas(
+Bloody Nonsense (Polygram)
+
+The first domestic release from four deranged Britons contains tracks previously available only on imports ova’ here, in addition to some brand now stuff. C.C. Dflmmorung of Slntul Boat described them as, "a seml-llterato pub crawl through the swamps of rock’s rich tapestry, laced with self-destructive recreational pursuits and maddened by the buzzing of 1000 punk guitars." The Jazz Butcher grinds through thirteen tracks that range from a fuzzed-out 'Caroline Wheoler's Birthday Present' ("do you know what happens when you leave a tlsh In an e/ova for?.../ ’ll give you a hlnt...lt’s biodegradable"), to the beer-hall thumper 'The Devil Is My Friend'. Music to turn your mind into a playground.
 	)})}
 	${jbc_footer}
 #live	endif

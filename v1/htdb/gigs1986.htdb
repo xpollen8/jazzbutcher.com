@@ -393,6 +393,7 @@
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 	notes=${literalizeCommas(Nice audience recording.
 	)},
+		with=${literalizeCommas( Christmas)},
 
 	)}
 

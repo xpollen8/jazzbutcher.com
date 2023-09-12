@@ -43,6 +43,11 @@ const TheTonix = () =>
 <br />	Matrix / Runout (Side B runout etched): STEG 002 B1 SNA WELSHPOOL ... WOW HELLO K.B.
 <br />
 <br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_TalkToMe.mp3
+<hr />
+<br />https://drive.google.com/drive/folders/1Ks_WWEwUVJwOfDIHInCyMXOgIyd3Sw9-
+<br />Sex Junk.wav
+<br />Talk To Me.wav
+<br />Strangers.wav
 </code>
 	<Footer />
 </>

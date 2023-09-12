@@ -768,10 +768,22 @@ ${d}
 		added=2017-10-22,
 		dt=2017-10-20)}
 
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20230202_press_apessimistisneverdisappointed_highest.html,
+		thumb=/images/2021_PressRelease_PatFish2_RuthTidmarsh,
+		title=Running On Fumes,
+		headline=A Brief Review Of The New Album From The Jazz Butcher,
+		publication=A Pessimist Is Never Disappointed,
+		source=http://www.apessimistisneverdisappointed.com/2022/02/running-on-fumes-brief-review-of-new.html,
+		credit=Glenn Griffith,
+		added=2023-09-12,
+		dt=2023-02-02)}
+
 	${addPress(type=album, album=fire_violent,
 		url=${jbc_press}/20180308_press_apessimistisneverdisappointed_violent.html,
 		thumb=/images/releases/fire_wasted/JazzButcherGroupBW1,
-		title=Next Move Sideways: A Few Words About The New Jazz Butcher Box From Fire Records,
+		title=Next Move Sideways,
+		headline=A Few Words About The New Jazz Butcher Box From Fire Records,
 		publication=A Pessimist Is Never Disappointed,
 		source=http://www.apessimistisneverdisappointed.com/2018/03/next-move-sideways-few-words-about-new.html,
 		credit=Glenn Griffith,
@@ -780,7 +792,8 @@ ${d}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171015_press_apessimistisneverdisappointed_wasted.html,
-		title=Big Bad Thing: A Few Words About The Fine New Jazz Butcher Box From Fire Records,
+		title=Big Bad Thing,
+		headline=A Few Words About The Fine New Jazz Butcher Box From Fire Records,
 		publication=A Pessimist Is Never Disappointed,
 		source=http://www.apessimistisneverdisappointed.com/2017/10/big-bad-thing-few-words-about-fine-new.html,
 		credit=Glenn Griffith,
@@ -1922,8 +1935,8 @@ ${d}
 		location=France,
 		dt=2017-08-24)}
 
-#define	pressHeading[retrospective]->tab	Retrospectives
-#define	pressHeading[retrospective]->blurb	${tag_beg}Post-career publications ${tag_end}
+#define	pressHeading[retrospective]->tab	Rememberences
+#define	pressHeading[retrospective]->blurb
 #define	pressHeading[interview]->tab	Interviews
 #define	pressHeading[interview]->blurb	${tag_beg}Published Interviews ${tag_end}
 #define	pressHeading[kit]->tab	Bios
@@ -12077,6 +12090,24 @@ Thanks, Harlan Ellison! x
 	General Listenability: 7 out of 10
 	)})}
 
+	${jbc_footer}
+#live	endif
+
+#define	20230202_press_apessimistisneverdisappointed_highest.html
+#live	if (getval(page) = 20230202_press_apessimistisneverdisappointed_highest.html)
+	${extractPress(
+		body=${literalizeCommas(
+The death last year of Pat Fish caught so many of us off-guard. Only 63, the legendary front-man of The Jazz Butcher, was taken far too early, with so much yet to do. In recent years, with a slate of reissues, the profile of The Jazz Butcher had only grown. The act that seemed utterly unlike lots of their peers on Creation Records was finally getting the sort of attention that they'd always deserved. And the material was getting treated with respect by Fire Records as the albums were re-released.
+<p />
+And while all of us were looking backwards, mourning the loss of Fish and playing that music again, the folks at Tapete were prepping a new Jazz Butcher album. The Highest in the Land, out tomorrow, was recorded over the last few years of Pat Fish's life, but it crackles with a playfulness and wit that makes it feel as if the songwriter is still alive. It's a vibrant record, but a poignant listen, obviously. Still, for fans of the Pat Fish, this is a sort of modest classic.
+<p />
+Relatively simple in style, and intimate in execution, The Highest in the Land finds Fish and crew addressing the malaise of England in a post-Brexit, Boris Johnson era. What could be dreadfully morose, is funny and spry. "Running on Fumes" bounces forward, with lyrics as sharp as ever for Fish, while the broader "Melanie Hargreaves' Father's Jaguar" uses a jazz vibe to riff on class in England, with Fish sounding a tiny bit like mid-era Momus briefly. Elsewhere, "Sebastian's Medication" looks again at the current woes of the U.K., while the peppy "Time" mourns the passing of time with an urgency that suggests Fish was likely to have had a longer spell of creativity had he lived. The absolutely heartbreaking "Goodnight Sweetheart" closes the album with a directness and sweetness that's just wonderful. For those who grew up on the wry wit of early Jazz Butcher sides, this heart-on-the-sleeve thing suits Fish so well that a listener just feels so cheated by Pat's early death. I know my friend of more than three decades and site contributor Stan Cierlitsky felt the same way, if not more so.
+<p />
+And that makes reviewing The Highest in the Land a hard thing to do. One imagines if Pat Fish was alive, how much fun he'd have with the attention this is surely going to get, and how he'd have enjoyed playfully running through these songs in concerts, or doing interviews with a dash of wit perpetually. This is a really fine final chapter in the life of one of the best songwriters of the last four decades.
+<p />
+The Highest in the Land is out on Friday via Tapete.
+		)}
+	)}
 	${jbc_footer}
 #live	endif
 

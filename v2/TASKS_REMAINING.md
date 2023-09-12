@@ -34,6 +34,10 @@
 
 # complete the population of the 'entity' database table
 
+# add authz step - an admin whitelist for people who do login via github
+	* will probably require database table to hold permissions
+	* better control this way versus locking it into github roles
+
 ---
 https://web.dev/virtualize-long-lists-react-window/
 

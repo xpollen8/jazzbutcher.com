@@ -4,7 +4,7 @@ import { Attribution } from '@/components/GenericWeb';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const options = [
-	{ uri: '/admin/press', text: 'Manage Press', aux: 'possible backed tool for edit form data: https://github.com/vantezzen/auto-form' },
+	{ uri: '/admin/press', text: 'Manage Press', children: 'possible back-end tool for editing form data: https://github.com/vantezzen/auto-form' },
 	{ uri: '/admin/entity', text: 'Manage Entities' },
 	{ uri: '/admin/conspirator', text: 'Manage Conspirators' },
 	{ uri: '/admin/gig', text: 'Manage Gigs' },
@@ -12,7 +12,7 @@ const options = [
 	{ uri: '/admin/performance', text: 'Manage Performances' },
 	{ uri: '/admin/song', text: 'Manage Songs' },
 	{ uri: '/admin/defines', text: 'Manage Global defines' },
-	{ uri: '/admin/s3', text: 'Manage AWS S3 file storage', aux: "(Need to incoprorate https://www.npmjs.com/package/react-aws-s3)"  },
+	{ uri: '/admin/s3', text: 'Manage AWS S3 file storage', children: <>(Need to incoprorate https://www.npmjs.com/package/react-aws-s3)<p />nice example here: https://blog.devgenius.io/upload-files-to-amazon-s3-from-a-react-frontend-fbd8f0b26f5<p />https://chonky.io looks great but is unsupported/</>  },
 ]
 
 const Admin = () => {

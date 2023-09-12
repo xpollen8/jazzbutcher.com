@@ -2395,6 +2395,64 @@ Previously available on the ${fishco} LP/CD.
 	${jbc_footer}
 #live	endif
 
+#define	va_seventeen_2.html
+#live	if (getval(page) = va_seventeen_2.html)
+	${mkHeader(section=albums, title=VA: What A Nice Way To Turn Seventeen #2)}
+
+	${mkPurchase()}
+	${det_beg}
+	<a href="${jbc_images}/releases/va_seventeen_2_front.jpg"><img src="${jbc_images}/releases/va_seventeen_2_front_500.jpg"></a>
+	<a href="${jbc_images}/releases/va_seventeen_2_back.jpg"><img src="${jbc_images}/releases/va_seventeen_2_back_500.jpg"></a>
+	${a_class} ${LP}
+	${a_date} 1983
+	${a_label} Rather Records
+	${a_cat} Gear 17
+	${det_end}
+	${a-side_beg}
+	${envoy}
+	${a-side_end}
+	${fetchAlbumPersonnel(release=va_seventeen_3)}
+	${players_end}
+	<p>
+	The Jazz Butcher cover version is unavailable elsewhere. Interestingly
+	enough, the same must be said about the other contributions ... The
+	Rag Dolls were an early and short-living band of Dave Kusworth
+	(Jacobites), <i>Missionary Boy</i> features Nikki Sudden
+	himself on vocals
+	(and is therefore better than the version that appears on <b>The
+	Bible Belt</b> LP with Lizard on vocals) while Sad Go Round was The
+	Swell Maps (!) in disguise. Obviously essential, this highly sought
+	after split single came with a fanzine.
+	</p>
+
+	${jbc_footer}
+#live	endif
+
+#define	va_seventeen_3.html
+#live	if (getval(page) = va_seventeen_3.html)
+	${mkHeader(section=albums, title=VA: What A Nice Way To Turn Seventeen #3)}
+
+	${mkPurchase()}
+	${det_beg}
+	<a href="${jbc_images}/releases/va_seventeen_3_front.jpg"><img src="${jbc_images}/releases/va_seventeen_3_front_500.jpg"></a>
+	<a href="${jbc_images}/releases/va_seventeen_3_back.jpg"><img src="${jbc_images}/releases/va_seventeen_3_back_500.jpg"></a>
+	<a href="${jbc_images}/releases/va_seventeen_3_A.jpg"><img src="${jbc_images}/releases/va_seventeen_3_A_500.jpg"></a>
+	<a href="${jbc_images}/releases/va_seventeen_3_B.jpg"><img src="${jbc_images}/releases/va_seventeen_3_B_500.jpg"></a>
+	${a_class} ${LP}
+	${a_date} 1984
+	${a_label} Rather Records
+	${a_rec} Woodbine Studios
+	${a_cat} Rather 13
+	${det_end}
+	${a-side_beg}
+	${h2o}
+	${a-side_end}
+	${fetchAlbumPersonnel(release=va_seventeen_3)}
+	${players_end}
+
+	${jbc_footer}
+#live	endif
+
 #define	va_another_spark.html
 #live	if (getval(page) = va_another_spark.html)
 	${mkHeader(section=albums, title=VA: Another Spark)}

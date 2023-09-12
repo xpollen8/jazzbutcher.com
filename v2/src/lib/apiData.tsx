@@ -4,15 +4,25 @@ import { localDate, censorEmail, deHTDBifyText, HashedType, CommentType, RecordT
 
 const cache: HashedType = {};
 
-/* doesn't seem to work
-[ 'gigs', 'presses', 'gigmedias', 'gigtexts', 'feedbacks', 'performances', 'gigsongs', 'releases' ]
-	.forEach(async (e: string) => {
-		if (!cache[e]) {
-			console.log("FETCH", e);
-			cache[e] = require(`/public/data/${e}.json`);
-		}
-	});
-	*/
+/*
+import gigs from '@/../public/data/gigs.json';
+import presses from '@/../public/data/presses.json';
+import gigmedias from '@/../public/data/gigmedias.json';
+import gigtexts from '@/../public/data/gigtexts.json';
+import feedbacks from '@/../public/data/feedbacks.json';
+import performances from '@/../public/data/performances.json';
+import gigsongs from '@/../public/data/gigsongs.json';
+import releases from '@/../public/data/releases.json';
+
+cache['gigs'] = gigs;
+cache['presses'] = presses;
+cache['gigmedias'] = gigmedias;
+cache['gigtexts'] = gigtexts;
+cache['feedbacks'] = feedbacks;
+cache['performances'] = performances;
+cache['gigsongs'] = gigsongs;
+cache['releases'] = releases;
+*/
 
 /*
 	TODO
@@ -23,9 +33,10 @@ const cache: HashedType = {};
 	no reason this cannot be extended to press, etc.
  */
 const doFetch = async (url: string) => {
+	//console.log("FETCH", url);
 	if (cache[url]) {
 		//console.log("CACHE HIT", url);
-		//return cache[url];
+		return cache[url];
 	}
 	return await fetch(url,
 		{
@@ -33,7 +44,7 @@ const doFetch = async (url: string) => {
 			mode: 'no-cors'
 		})
 		.then(e => e.json())
-		.then(e => { cache[url] = e; console.log("CACHE", url); return e })
+		.then(e => { cache[url] = e; return e })
 		.catch((e) => {
 			console.log("ERR", e);
 			return { error: `search by ${url} failed` };

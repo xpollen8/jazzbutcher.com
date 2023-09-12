@@ -499,15 +499,15 @@
 
 #define	albums[57]->type	various
 #define	albums[57]->lookup	va_seventeen_2
-#define	albums[57]->href
+#define	albums[57]->href	${jbc_albums}/va_seventeen_2.html
 #define	albums[57]->label	Rather Records
 #define	albums[57]->catalog	GEAR 17
 #define	albums[57]->title	VA: What A Nice Way To Turn Seventeen # 2
 #define	albums[57]->thumb	/images/releases/va_seventeen_2_back
-#define	albums[57]->year	1984
+#define	albums[57]->year	1983
 #define	albums[57]->contribution envoy
 #define	albums[57]->blurb
-		<p>
+		<p />
 		The Jazz Butcher cover version is unavailable elsewhere. Interestingly
 		enough, the same must be said about the other contributions ... The
 		Rag Dolls were an early and short-living band of Dave Kusworth
@@ -517,7 +517,6 @@
 		Bible Belt</b> LP with Lizard on vocals) while Sad Go Round was The
 		Swell Maps (!) in disguise. Obviously essential, this highly sought
 		after split single came with a fanzine.
-		</p>
 #define	albums[57]->credit_g	Perfection As A Hipster
 #define	albums[57]->credit_u	Andreas.Hering@stud.uni-hannover.de
 #define	albums[57]->credit_d	2000-10-10
@@ -608,14 +607,18 @@
 
 #define	albums[64]->type	various
 #define	albums[64]->lookup	va_seventeen_3
-#define	albums[64]->href
+#define	albums[64]->href	${jbc_albums}/va_seventeen_3.html
 #define	albums[64]->label	Rather Records
 #define	albums[64]->catalog	RATHER 13
 #define	albums[64]->title	VA: What A Nice Way To Turn Seventeen # 3
 #define	albums[64]->thumb	/images/releases/va_seventeen_3_front
 #define	albums[64]->year	1984
 #define	albums[64]->contribution h2o
-
+#define	albums[64]->blurb
+	<p />
+	Originally issued with the magazine 'What A Nice Way To Turn Seventeen' Issue 3.
+	Publishing details, credits and brief biographies contained in the magazine.
+	Assembled at Woodbine St. Recording Studios, Leamington Spa with thanks to John A. Rivers.
 
 #define	albums[65]->type	various
 #define	albums[65]->lookup	va_summer

@@ -704,6 +704,29 @@ ${d}
 		added=2017-07-30,
 		dt=2000-02)}
 
+	${addPress(type=retrospective,
+		url=${jbc_press}/20220405_press_monolithcocktail.html,
+		title=Kalporz X Monolith Cocktail,
+		thumb=/images/releases/nonsense_front,
+		headline=Celebrating The Legacy Of Pat Fish,
+		subhead=A Special by Matteo Maioli,
+		publication=Monolith Cocktail,
+		source=https://monolithcocktail.com/2022/04/05/kalporz-x-monolith-cocktail-celebrating-the-legacy-of-pat-fish/,
+		credit=Matteo Maioli,
+		added=2023-09-12,
+		dt=2022-04-05)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220210_pitchfork.html,
+		title=The Highest in the Land,
+		headline=The Jazz Butcher,
+		subhead=The final album from the mercurial post-punk project offers a wellspring of quotable surrealism\, showing the substance and self-definition of the late Pat Fish,
+		publication=Pitchfork,
+		source=https://pitchfork.com/reviews/albums/the-jazz-butcher-the-highest-in-the-land,
+		credit=Brian Howe,
+		added=2023-09-12,
+		dt=2022-02-10)}
+
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20180109_pitchfork.html,
 		title=The Jazz Butcher - The Wasted Years,
@@ -767,6 +790,17 @@ ${d}
 		credit=John Bergstrom,
 		added=2017-10-22,
 		dt=2017-10-20)}
+
+	${addPress(type=retrospective,
+		url=${jbc_press}/20211012_press_northantstelegraph_davidjackson.html,
+		title=Tributes paid to Northampton musician Pat Fish\, The Jazz Butcher,
+		headline=It was an honour and privilege to play with someone with so much talent,
+		publication=Northants Telegraph,
+		location=Northamptonshire\, UK,
+		source=https://www.northantstelegraph.co.uk/whats-on/arts-and-entertainment/tributes-paid-to-northampton-musician-pat-fish-the-jazz-butcher-3415330,
+		credit=David Jackson,
+		added=2023-09-12,
+		dt=2021-10-12)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20230202_press_apessimistisneverdisappointed_highest.html,
@@ -16423,6 +16457,131 @@ The first domestic release from four deranged Britons contains tracks previously
 	${jbc_footer}
 #live	endif
 
+#define	20211012_press_northantstelegraph_davidjackson.html
+#live	if (getval(page) = 20211012_press_northantstelegraph_davidjackson.html)
+	${extractPress(
+		body=${literalizeCommas(
+		Friends and musicians have paid tribute to Pat Fish who sadly died last week, describing him as “a true artist” and “great songwriter”.
+		<p />
+		One of Northampton’s most influential figures during the 1980s, Pat formed and was also best known as The Jazz Butcher.
+		<p />
+		Born in London, Patrick Huntrods moved to Northampton after studying in Oxford, forming The Jazz Butcher in the early 1980s with Max Eider.
+		<p />
+		While he would continue to play under that moniker, it was Pat’s willingness to write, record and perform with others which meant the band’s line up featured dozens of musicians over the years.
+		<p />
+		The Jazz Butcher released a series of albums on Glass Records in the first half of the 1980s before they signed with Alan McGee’s Creation Records.
+		<p />
+		In a recent tribute to Fish on Instagram, label boss McGee said: “(Pat was) one of the first people who believed in Creation.
+		<p />
+		“At that point, 1986/1987, when we signed Pat, no one would come on Creation except unknown bands and he was a big deal.
+		<p />
+		“Him and Lawrence Hayward (Felt) - we got these guys and we could do international licensing deals and although he didn’t go on and sell millions, and he should have, he was part of the reason that we actually did well.”
+		<p />
+		Sometimes also known as The Jazz Butcher Conspiracy or The Jazz Butcher And His Sikkorskis From Hell, the band’s sound was rooted in indie and alternative.
+		<p />
+		The Jazz Butcher’s first album on Creation was 1988’s Fishcotheque and they went onto release numerous albums on the label.
+		<p />
+		McGee added: “You need these artists to build labels, and there were these guys, especially Pat, who were never about the money it was just about wanting to put his records out.
+		<p />
+		“I’m gutted for Pat. Such a good human being, such a true artist, such a great songwriter and such a nice bloke. Rest in peace.”
+		<p />
+		Aside from The Jazz Butcher, Pat also featured in bands such as Wilson, Black Eg, Sumosonic, Spacemen 3 and more recently The Drones Club.
+		<p />
+		Alex Novak, who runs Spiral Archive record shop, has played in numerous bands in Northampton over the past 30 years, including the Venus Fly Trap, Religious Overdose and Tempest.
+		<p />
+		He said musicians like Pat played a crucial part in the “cross fertilisation,” of acts in Northampton, which at the time included Bauhaus.
+		<p />
+		He said: “It was when Pat moved to Northampton that the genesis of The Jazz Butcher properly began.
+		<p />
+		“We were on the same label, I was in Religious Overdose and then Tempest and that’s where the whole connection started
+		<p />
+		“There was also the links with David J and Kevin Haskins from Bauhaus, there was a lot of cross fertilisation in the Northampton music scene at the time with Glass Records in the middle of it.
+		<p />
+		“As Tempest, we did quite a few gigs with The Jazz Butcher and then later on Pat played saxophone on one of the Venus Fly Trap records and produced Pandoras Box which we recorded in France.”
+		<p />
+		Mr Novak explained while some bands and musicians don’t work with others, it was the opposite for Pat, adding, “He didn’t have any siblings or children and I think other musicians became part of his close family.
+		<p />
+		“I think people get complacent and think people will be around for ever, it’s important we appreciate people while they&apos;re around.”
+		<p />
+		While Pat would continue to play as The Jazz Butcher, one of his more recent projects was as bassist in The Drones Club.
+		<p />
+		The Drones Club, which has its roots in the folk scene and play ancestral and improvised music, came together in 2014 and were formed by Ian Clabburn and Russell Cooper - the latter who Pat had previously played with in both Wilson and Sumosonic. Pat replaced the band&apos;s first bassist and they were later joined by guitarist Steve Gordon on guitar.
+		<p />
+		Mr Clabburn said “Pat was very generous with his expertise.
+		<p />
+		“It’s a great loss. There was no pretention, he took you at face value and there was never a subtext. “You can&apos;t say that about many people.
+		<p />
+		“It was Pat who took a disparate group of musicians and with good humour moulded them into a cohesive band with its own sound.
+		<p />
+		“I learned so much and feel that I am a better musician, for which I will be forever grateful.”
+		<p />
+		The Drones Club continued to meet weekly until Pat’s recent death, to rehearse, with Mr Clabburn admitting it was “often more of a social get together, peppered with Pat&apos;s apparently endless supply of anecdotes”.
+		<p />
+		“It was an honour and privilege to play with someone with so much talent, so much drive and so much determination. We will miss him deeply,” he added.
+		<p />
+		Besides performing music, Pat also hosted indie music show Transmission which was broadcast on ITV at the end of the 1980s.
+		<p />
+		In recent years, Fire Records had started an extensive series of Jazz Butcher reissues from his time on Glass and Creation records.
+		<p />
+		Pat had also become a regular performer online, hosting numerous gigs from ‘Fishy Mansions’.
+		<p />
+		It’s understood that Pat had also been working on a new album which is expected to be released in the future.
+		<p />
+	)})}
+	${jbc_footer}
+#live	endif
+
+#define	20220210_pitchfork.html
+#live	if (getval(page) = 20220210_pitchfork.html)
+	${extractPress(
+		body=${literalizeCommas(
+While he was making his final album as the Jazz Butcher, Pat Fish knew he was going to die. According to people close to him, he’d managed to outrace cancer, but decades of pint-hoisting good times were catching up with him. He passed away last October at age 64. But one remarkable thing about The Highest in the Land is how little morbidity encumbers it. On the contrary, it positively brims with life. Even when Fish stares down death in the dub-rock countdown “Time,” it’s with the same old gleam in his eye and dodge in his step.
+<p />
+“Fishy go to Heaven, get along, get along,” he drawls, rakish and sarcastic, rushing toward “a pit of Council lime.” But most of the other lyrics are acid pronouncements tangled in exuberant wordplay. The verses excoriate lithium mining and privatized jails, but the pre-choruses are stuffed with nearly nonsense lists of shapely words: luminous, leguminous, salubrious, lugubrious. Part giddy fuck-you-I’m-out to an England he’d suffered from Thatcher to Brexit, part psychedelic experience with a rhyming dictionary, “Time” is all Fish. In other words, this cockeyed memento mori is just another great Butch tune on another great Butch record: irascible, inscrutable, delectable, irreducible.
+<p />
+Irreducible, yes, but to start somewhere: What if the punk-folk protester Billy Bragg fell under the nihilistic spell of the Velvet Underground instead of the messianic one of the Clash? Fish—who was born on the same day in 1957 as Bragg, also less than 100 miles from London—was the living answer to this hypothetical question and many others. His was a cold-war leftist politics through a glass darkly, a Philip K. Dick allusion he probably would have liked, as someone who paid homage to Thomas Pynchon and Harlan Ellison and was admired by the occult comics guru Alan Moore. Even his most comical, outrageous songs were drawn with fine lines of wealth and class, and his most polemical moments were obscured by non sequiturs of incomparable chewiness. Most of all, he thrived on bloodletting observations of the human dramedy in all its vapid cupidity and ordinary beauty.
+<p />
+A native of Northampton, in the East Midlands, Fish either formed or became the Jazz Butcher, depending on how you look at it, while studying philosophy at Oxford. It started as a persona for his precocious, playful adventures in home-recording, and it retained that conceptual flavor as it flourished into a band with a revolving moniker (The Jazz Butcher Conspiracy, The Jazz Butcher and His Sikkorskis from Hell) and lineup, which was rooted by members like guitarist Max Eider but also berthed Spacemen 3’s Sonic Boom and the bassist David J, when he was between Bauhaus and Love and Rockets.
+<p />
+In the ’80s and early ’90s, the Jazz Butcher’s many albums for the British indies Glass and Creation Records (recommended entry points are Sex and Travel or Big Planet Scarey Planet) displayed a variety that’s bewildering even by UK post-punk standards: twee jangle-pop, Dixieland jazz, arch agit-punk, romantic new wave, country blues, surf-rock, Merseybeat, sophisti-pop, lounge music, Mediterranean wedding songs, on and on. Fish loved soul, Syd Barrett, Bob Dylan, and above all, John Cale—sturdy, classic ’60s things. The surplus he extrapolated from them indicates a true eccentric original. Yet he makes it all whole by sheer force of songcraft, flaunting an innate gift for drizzling charismatic melodies on spare, resourceful arrangements in any style.
+<p />
+The Jazz Butcher’s recordings thinned away after 1995, and were mostly out of print and forgotten until Fire Records began a series of reissues about seven years ago. It was around then that Fish, Eider, and other trusted bandmates began working on The Highest in the Land, where they sound startlingly fresh after a decade away. Though done up in the usual power-clashing genres, the songs are mainly either ballads that spill into rants (“Never Give Up,” with very different production and the end lopped off, could pass for a minor Coldplay hit) or vice versa. They call to mind a pleasure dome of fetching, unrelated references: the demotic prowess of Jens Lekman, the melodic immediacy of the Lucksmiths, the wry dandyism of XTC, the dialectical swoon of Stars, and of course, the curdled cool of Cale.
+<p />
+Whether the style is antic, enervated country-and-western (“Running on Fumes”) or dreamy electric soul (“Goodnight Sweetheart”), the music is kept clean and spacious so Fish can fit all his wonderful words inside. He is a wellspring of quotable surrealism. Taste an impenetrable couplet like “The black-crested ape of Boo Yang Shang, sing like a theremin, walk like a man.” Feel the cryptic gut-punch of a question like “Tiny cans of Coke for free—is that what you chose over me?” Another song begins, “I got this fish from Genghis Khan,” which has to rival “Fat Charlie the Archangel sloped into the room” in the pantheon of perfectly weird opening lines.
+<p />
+Fish never had qualms about referencing people we couldn’t possibly be expected to know about, and he preserved this intimate, local aesthetic to the end. It starts immediately with “Melanie Hargreaves’ Father’s Jaguar,” a slinky jazz-cat number in which a tale of young love divided by wealth ends in merry anti-capitalist flames. An additional layer of mystery exists for the non-British listener, who easily infers that Formby must be posh and an East Midlands accent must not be, but who might need to look up things like gammons and Children of the Stones. But no amount of googling can pierce “The Highest in the Land,” a portentous desert blues about Genghis Khan and apes and whatever Boo Yang Shang is, although apparently the “Black Raoul” who Fish chants about is known to hardcore fans as his cat. The song is vividly personal to a riddling degree, and it seems significant that it, rather than one of the more outspoken tracks, provided the album’s title.
+<p />
+As densely English as Fish’s music is, he had an anti-isolationist vision of the country, with a sensibility that spanned Europe and profound musical influence from North America. “Sea Madness,” a pastoral folk tune with warm, tired horns, is a tribute to a legendary figure on the local Northampton music scene, an immigrant from Istanbul called Turkish George. “Sebastian’s Medication” seems to have Brexiters in its sights when Fish dresses down the gammons “pining for some ill-defined imaginary nation, antecedents they would struggle to name.”
+<p />
+As soon as this clear statement comes into view, Fish dances away from it, invoking the right’s favorite shibboleth of “political correctness gone mad.” He liked to keep himself just out of frame, unpinned to any didactic point of view. Inasmuch as The Highest in the Land is a winning globalist view from the provinces, it is not concerned with progressive lip service. “Any moment now, somebody’s going to say ‘toxic,’ that’s assured,” Fish sings on “Running on Fumes.” “Yes, ’cause people love to talk that way, but people only ever made me bored.” His misanthropy is comprehensive, unmalicious, and countered by empathy and sentimentality. “I never really identified with the ‘social commentator’ thing, any more than I did with the asinine ‘Monty Python of rock’ label with which some deaf people tried to saddle us back in the ’80,” he said in a 2020 interview. But The Highest in the Land, a just and honest headstone, captures the substance and self-definition of a singular songwriter where words and labels fail.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220405_press_monolithcocktail.html
+#live	if (getval(page) = 20220405_press_monolithcocktail.html)
+	${extractPress(
+		body=${literalizeCommas(
+Over the last few years the Monolith Cocktail has been sharing a post each month with the leading Italian culture/music site Kalporz. This month Matteo Maioli celebrates the late enigmatic Pat Fish, aka The Jazz Butcher.
+<p />
+How many times does it happen that the legacy of a band becomes important after they break up, or if the artist leaves us prematurely? Pat Fish, a London-based singer-songwriter based in Oxford known to all as The Jazz Butcher, passed away on October 5th at the age of 63.
+<p />
+As soon as he graduated, he devoted himself unconditionally to music with Sonic Tonix by releasing a single on Cherry Red, just before coining (in ‘82) the name of the project for which he will always be remembered – since the other aliases The Jazz Butcher Conspiracy and The Jazz Butcher And His Sikkorskis From Hell are already more difficult. In the first records for the Glass label he played with David J and Kevin Haskins of Bauhaus, while Max Eiderhe will remain Pat Fish’s main collaborator until the last days: a four-year period, that of 1983-1986, best covered by the vinyl of ‘Bloody Nonsense’ that I found years ago at a flea market for two coins but which today is a level artistic testimony and harbinger of jewels such as ‘Big Saturday’, ‘The Human Jungle’ and ‘The Devil Is My Friend’: A mix of worker folk, Velvet Underground and soul music.
+<p />
+The ball then passes to Alan McGee, who with Creation released eight The Jazz Butcher albums, up until 1995. Fish becomes a sparring partner here, as the budget is oriented towards other bands (House Of Love, Primal Scream), amazed at the disorganization and the coarseness of an indie without any connection with the American market: therefore tracks like ‘Next Move Sideways’ and the psychedelic ‘Girl Go’, from ‘Cult Of The Basement’ slide without leaving a trace.
+<p />
+The only exploit comes in spite of himself from the acid-house style cover of ‘We Love You’, the Rolling Stones hit in 1967, which would guarantee him participation on Top Of The Pops; to understand the integrity of the artist Pat Fish it is enough to read the exchange of views he had with McGee in this regard: “Pat, You won’t believe it – 400 kids on the floor punching the air to your record!” “Yeah, right.” Yet even looking at Upside Down: The Creation Records Story we note the pride of Fish in having lived that fundamental period for English music, albeit as a gregarious but with personality, loved and respected by all.
+<p />
+<p />
+For about ten years there was no news of The Jazz Butcher, when in 2012 he returned with Last of the Gentleman Adventurers, proudly self-produced. His work is characterized by a fervent passion for literature and cinema and social commitment, elements that also permeate the last album released by Tapete on February 4, 2022. The Highest Of The Land joins epitaphs such as Blackstar by David Bowie and Rowland S. Howard’s Pop Crimes, similarly recorded in the last days of life and who do everything not to be: we fight against the end, taking talent over the obstacle.
+<p />
+Between poetry and jazz settings, reverence for Bob Dylan and the new-wave, Pat Fish puts together a collection of splendid songs, including sarcasm (“My hair’s all wrong / My time ain’t long / Fishy go to Heaven, get along, get along” on ‘Time’) and urgency (“I said I would break my stupid life in two / For half an hour alone with you” on ‘Never Give Up’) with a cosmopolitan touch for ‘Sea Madness’. The album produced by Lee Russell (formerly with The Moons and Nada Surf) is the ideal starting point to discover this great songwriter, man of the world bringer of peace.
+		)}
+	)}
+${jbc_footer}
+
+export default DavidJackson;
 #define data.json
 #live if (getval(page) = data.json)
 	${definePressItems()}

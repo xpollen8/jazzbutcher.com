@@ -704,6 +704,18 @@ ${d}
 		added=2017-07-30,
 		dt=2000-02)}
 
+	${addPress(type=retrospective,
+		url=${jbc_press}/20220405_press_monolithcocktail.html,
+		title=Kalporz X Monolith Cocktail,
+		thumb=/images/releases/nonsense_front,
+		headline=Celebrating The Legacy Of Pat Fish,
+		subhead=A Special by Matteo Maioli,
+		publication=Monolith Cocktail,
+		source=https://monolithcocktail.com/2022/04/05/kalporz-x-monolith-cocktail-celebrating-the-legacy-of-pat-fish/,
+		credit=Matteo Maioli,
+		added=2023-09-12,
+		dt=2022-04-05)}
+
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220210_pitchfork.html,
 		title=The Highest in the Land,
@@ -16546,6 +16558,28 @@ As soon as this clear statement comes into view, Fish dances away from it, invok
 	)}
 	${jbc_footer}
 #live	endif
+
+#define	20220405_press_monolithcocktail.html
+#live	if (getval(page) = 20220405_press_monolithcocktail.html)
+	${extractPress(
+		body=${literalizeCommas(
+Over the last few years the Monolith Cocktail has been sharing a post each month with the leading Italian culture/music site Kalporz. This month Matteo Maioli celebrates the late enigmatic Pat Fish, aka The Jazz Butcher.
+<p />
+How many times does it happen that the legacy of a band becomes important after they break up, or if the artist leaves us prematurely? Pat Fish, a London-based singer-songwriter based in Oxford known to all as The Jazz Butcher, passed away on October 5th at the age of 63.
+<p />
+As soon as he graduated, he devoted himself unconditionally to music with Sonic Tonix by releasing a single on Cherry Red, just before coining (in ‘82) the name of the project for which he will always be remembered – since the other aliases The Jazz Butcher Conspiracy and The Jazz Butcher And His Sikkorskis From Hell are already more difficult. In the first records for the Glass label he played with David J and Kevin Haskins of Bauhaus, while Max Eiderhe will remain Pat Fish’s main collaborator until the last days: a four-year period, that of 1983-1986, best covered by the vinyl of ‘Bloody Nonsense’ that I found years ago at a flea market for two coins but which today is a level artistic testimony and harbinger of jewels such as ‘Big Saturday’, ‘The Human Jungle’ and ‘The Devil Is My Friend’: A mix of worker folk, Velvet Underground and soul music.
+<p />
+The ball then passes to Alan McGee, who with Creation released eight The Jazz Butcher albums, up until 1995. Fish becomes a sparring partner here, as the budget is oriented towards other bands (House Of Love, Primal Scream), amazed at the disorganization and the coarseness of an indie without any connection with the American market: therefore tracks like ‘Next Move Sideways’ and the psychedelic ‘Girl Go’, from ‘Cult Of The Basement’ slide without leaving a trace.
+<p />
+The only exploit comes in spite of himself from the acid-house style cover of ‘We Love You’, the Rolling Stones hit in 1967, which would guarantee him participation on Top Of The Pops; to understand the integrity of the artist Pat Fish it is enough to read the exchange of views he had with McGee in this regard: “Pat, You won’t believe it – 400 kids on the floor punching the air to your record!” “Yeah, right.” Yet even looking at Upside Down: The Creation Records Story we note the pride of Fish in having lived that fundamental period for English music, albeit as a gregarious but with personality, loved and respected by all.
+<p />
+<p />
+For about ten years there was no news of The Jazz Butcher, when in 2012 he returned with Last of the Gentleman Adventurers, proudly self-produced. His work is characterized by a fervent passion for literature and cinema and social commitment, elements that also permeate the last album released by Tapete on February 4, 2022. The Highest Of The Land joins epitaphs such as Blackstar by David Bowie and Rowland S. Howard’s Pop Crimes, similarly recorded in the last days of life and who do everything not to be: we fight against the end, taking talent over the obstacle.
+<p />
+Between poetry and jazz settings, reverence for Bob Dylan and the new-wave, Pat Fish puts together a collection of splendid songs, including sarcasm (“My hair’s all wrong / My time ain’t long / Fishy go to Heaven, get along, get along” on ‘Time’) and urgency (“I said I would break my stupid life in two / For half an hour alone with you” on ‘Never Give Up’) with a cosmopolitan touch for ‘Sea Madness’. The album produced by Lee Russell (formerly with The Moons and Nada Surf) is the ideal starting point to discover this great songwriter, man of the world bringer of peace.
+		)}
+	)}
+${jbc_footer}
 
 export default DavidJackson;
 #define data.json

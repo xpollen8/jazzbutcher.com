@@ -5,8 +5,8 @@ const MakeSimpleURI = ({ uri='', text, aux, children }: {
 	text: string
 	aux?: string
 	children?: React.ReactNode
-}): React.ReactNode  => (
-	<div style={{ marginBottom: '-20px', marginRight: '10px' }}>
+}, key: number): React.ReactNode  => (
+	<div key={key} style={{ marginBottom: '-20px', marginRight: '10px' }}>
 	<Link href={uri}>
 		<div className="clickDiv hover:outline bg-white">
 			{text}

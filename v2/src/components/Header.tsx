@@ -89,6 +89,8 @@ const sections : { [key: string]: BreadCrumb } = {
 	sumosonic: { parent: 'projects', title: 'Sumosonic' },
 	wilson: { parent: 'projects', title: 'Wilson' },
 	dronesclub: { parent: 'projects', title: 'The Drones Club' },
+
+	admin: { parent: 'jbc', title: "Website Management" },
 }
 
 const makeBreadcrumb = (name: string, aux?: any) => {

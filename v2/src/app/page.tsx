@@ -1,8 +1,19 @@
+//"use client"
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Tag from '@/components/Tag';
 import ReleaseBlurb from '@/components/ReleaseBlurb';
 import FeaturedItem from '@/components/FeaturedItem';
+import DayInHistory from '@/components/DayInHistory';
+import RandomLiveVideo from '@/components/RandomLiveVideo';
+
+/*
+import { Navigation, Scrollbar } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
+*/
 
 const BookSikkorski = () =>
 	<FeaturedItem
@@ -34,38 +45,6 @@ const BookMiraclesAndWonders = () =>
 		</>
 	</FeaturedItem>
 
-const RandomLiveVideo = () => {
-//#live	if ((sql(ev:select g.*, gs.* from gigsong gs, gig g where gs.datetime=g.datetime and gs.mediaurl like "%%youtube%%" order by rand() limit 1)) && (getnum(ev->numResults) = 1))
-	return (<>
-		<Tag>
-			Random Forced Viewing
-		</Tag>
-	<div className="listenItem">
-	</div>
-	</>)
-//		<b>${songLinkMapped(${ev->song})}</b>
-//		- <a href="${jbc_gigs}/${ts2URI(${ev->datetime})}">${substr(0, 10, ${ev->datetime})}</a> \@ ${ev->venue}, ${ev->city}
-//		${embedVideo(url=${ev->mediaurl})}
-//#live	if (getval(ev->mediacredit))
-//		${g_credit(g=${ev->mediacredit}, u=${ev->mediacrediturl})}
-//#live	endif
-}
-
-const DateInHistory = () => {
-//#live	if ((sql(dih:select * from gig where month(datetime)=month(now()) and day(datetime)=day(now()) order by datetime)) && (getnum(dih->numResults) > 0))
-	return (
-		<Tag>
-			On This Date In History..
-		</Tag>
-	)
-/*
-#live	while (d = dih[*]->datetime)
-	${showGigListing(prefix=dih[${d}])}
-#live	endwhile
-#live	endif
-*/
-}
-
 const HomeBooks = () =>
 <>
 	<BookSikkorski />
@@ -74,7 +53,7 @@ const HomeBooks = () =>
 
 const HomeReleases = () =>
 <>
-		<ReleaseBlurb lookup='va_andy_2007' />
+		<ReleaseBlurb lookup='never7' />
 		<ReleaseBlurb lookup='highest' />
 		<ReleaseBlurb lookup='fire_cholmondley' />
 		<ReleaseBlurb lookup='fire_violent' />
@@ -82,15 +61,41 @@ const HomeReleases = () =>
 		<ReleaseBlurb lookup='adventurers' />
 </>
 
+/*
+const homeItems = [
+		<HomeBooks />,
+		<HomeReleases />,
+		<BookSikkorski />,
+		<BookMiraclesAndWonders />,
+];
+		*/
+
 const Home = (): React.ReactNode =>
 <>
 	<Header section='jbc' />
 		<div>
+    {/*<Swiper
+				style={{  padding: '40px', border: '1px solid black' }}
+			modules={[Navigation, Scrollbar, ]}
+			navigation
+			scrollbar={{ draggable: true }}
+			pagination={{ clickable: true }}
+      spaceBetween={50}
+      slidesPerView={1}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+			{homeItems.map((item: any, key: number) =>
+				<SwiperSlide key={key}>
+					{item}
+				</SwiperSlide>
+			)}
+		</Swiper>*/}
 			<ReleaseBlurb lookup='never7' />
 			<HomeBooks />
 			<HomeReleases />
 			<RandomLiveVideo />
-			<DateInHistory />
+			<DayInHistory />
 		</div>
 	<Footer />
 </>

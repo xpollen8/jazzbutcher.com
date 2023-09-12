@@ -732,6 +732,18 @@ ${d}
 		added=2023-09-12,
 		dt=2021-10-07)}
 
+	${addPress(type=album, album=smith,
+		url=${jbc_press}/20130330_press_mojo.html,
+		thumb=/images/20130330/20130330_press_mojo,
+		title=The UK Indie Top 100 Records,
+		headline=The Jazz Butcher,
+		subhead=Southern Mark Smith,
+		publication=Mojo,
+		source=https://pbs.twimg.com/media/FrXi4OOWIAEoYHp?format=jpg&name=large,
+		credit="AP",
+		added=2023-09-12,
+		dt=2013-03-30)}
+
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211112_press_mojo.html,
 		thumb=/images/20211112/20211112_press_mojo;;Glass Modern;;https://twitter.com/glassmodern1/status/1459187934049947650,
@@ -16625,6 +16637,20 @@ The only exploit comes in spite of himself from the acid-house style cover of �
 For about ten years there was no news of The Jazz Butcher, when in 2012 he returned with Last of the Gentleman Adventurers, proudly self-produced. His work is characterized by a fervent passion for literature and cinema and social commitment, elements that also permeate the last album released by Tapete on February 4, 2022. The Highest Of The Land joins epitaphs such as Blackstar by David Bowie and Rowland S. Howard’s Pop Crimes, similarly recorded in the last days of life and who do everything not to be: we fight against the end, taking talent over the obstacle.
 <p />
 Between poetry and jazz settings, reverence for Bob Dylan and the new-wave, Pat Fish puts together a collection of splendid songs, including sarcasm (“My hair’s all wrong / My time ain’t long / Fishy go to Heaven, get along, get along” on ‘Time’) and urgency (“I said I would break my stupid life in two / For half an hour alone with you” on ‘Never Give Up’) with a cosmopolitan touch for ‘Sea Madness’. The album produced by Lee Russell (formerly with The Moons and Nada Surf) is the ideal starting point to discover this great songwriter, man of the world bringer of peace.
+		)}
+	)}
+${jbc_footer}
+
+#define	20130330_press_mojo.html
+#live	if (getval(page) = 20130330_press_mojo.html)
+	${extractPress(
+		body=${literalizeCommas(
+The Fall's gnarly ideologue was, circa '83, post-Hex Enduction Hour, one of indie-rock's true underground icons.
+<p />
+According to The Jazz Butcher, aka Pat Fish, an Oxford graduate with literary ambitions heavily factored into his musicality,
+the "Southern Mark Smith" idea was thieved from a ${aero} review, where singer ${gerard} was thus summarised.  He took is
+as an intriguing paradox, "like a lush Sahara", and turned it into a rambling debut single, which
+duly set him up for an under-achieving career ate ${creat}.
 		)}
 	)}
 ${jbc_footer}

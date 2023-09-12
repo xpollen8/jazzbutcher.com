@@ -444,6 +444,16 @@ ${d}
 		dt=2017-04-06)}
 
 	${addPress(type=album, album=welove,
+		url=${jbc_press}/19901013_press_nme.html,
+		thumb=/images/19901013/19901013_press_nme;;David Whittemore,
+		todo=OCR,
+		publication=New Music Express,
+		credit=HM The Queen,
+		dt=1990-10-13,
+		source=https://pbs.twimg.com/media/FXpoGiuUUAAdQlo?format=jpg&name=large,
+		added=2023-09-12)}
+
+	${addPress(type=album, album=welove,
 		url=${jbc_press}/19900919_press_nme.html,
 		thumb=/images/19900919/19900919_press_nme;;David Whittemore,
 		publication=New Music Express,
@@ -703,6 +713,36 @@ ${d}
 		credit=Dylan Harris,
 		added=2017-07-30,
 		dt=2000-02)}
+
+	${addPress(type=retrospective,
+		url=${jbc_press}/20211007_press_illlive.html,
+		thumb=/images/20211007/20211007_press_illlive_6;;Sandra Boynton;;;;;;Sandra\, I promise\, I will absolutely try. But it will take a while to get over this one. Rest well\, Pat,
+		images=${literalizeCommas(
+		/images/20211007/20211007_press_illlive_1;;Deborah Wassertzug;;$$
+		/images/20211007/20211007_press_illlive_2;;Deborah Wassertzug;;;;;;Commenting on the song “Hysteria“$$
+		/images/20211007/20211007_press_illlive_3;;Deborah Wassertzug;;;;;;Commenting on an article I’d posted about Uber, with a fantastic anecdote$$
+		/images/20211007/20211007_press_illlive_4;;Deborah Wassertzug;;;;;;Attempting to resolve my debate about a word to use in a translation$$
+		/images/20211007/20211007_press_illlive_5;;Deborah Wassertzug;;;;;;Joining a debate about Velvet Underground lyrics$$
+)},
+		title=Making Me Understand,
+		headline=Pat Fish of the Jazz Butcher Conspiracy,
+		publication=I'll Live,
+		source=https://ill-live.com/2021/10/07/making-me-understand-pat-fish-of-the-jazz-butcher-conspiracy/,
+		credit=Deborah Wassertzug,
+		added=2023-09-12,
+		dt=2021-10-07)}
+
+	${addPress(type=retrospective,
+		url=${jbc_press}/20211112_press_mojo.html,
+		thumb=/images/20211112/20211112_press_mojo;;Glass Modern;;https://twitter.com/glassmodern1/status/1459187934049947650,
+		title=The Jazz Butcher,
+		headline=Gentleman adventurer,
+		subhead=Born 1957,
+		publication=Mojo,
+		source=https://twitter.com/glassmodern1/status/1459187934049947650,
+		credit=Andy Cowan,
+		added=2023-09-12,
+		dt=2021-11-12)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20220405_press_monolithcocktail.html,
@@ -12565,6 +12605,14 @@ Tuesday, 16th September, 2003<br />
 	${jbc_footer}
 #live	endif
 
+#define	19901013_press_nme.html
+#live	if (getval(page) = 19901013_press_nme.html)
+	${extractPress(
+		body=${literalizeCommas(
+	)})}
+	${jbc_footer}
+#live	endif
+
 #define	19900919_press_nme.html
 #live	if (getval(page) = 19900919_press_nme.html)
 	${extractPress(
@@ -16577,6 +16625,54 @@ The only exploit comes in spite of himself from the acid-house style cover of �
 For about ten years there was no news of The Jazz Butcher, when in 2012 he returned with Last of the Gentleman Adventurers, proudly self-produced. His work is characterized by a fervent passion for literature and cinema and social commitment, elements that also permeate the last album released by Tapete on February 4, 2022. The Highest Of The Land joins epitaphs such as Blackstar by David Bowie and Rowland S. Howard’s Pop Crimes, similarly recorded in the last days of life and who do everything not to be: we fight against the end, taking talent over the obstacle.
 <p />
 Between poetry and jazz settings, reverence for Bob Dylan and the new-wave, Pat Fish puts together a collection of splendid songs, including sarcasm (“My hair’s all wrong / My time ain’t long / Fishy go to Heaven, get along, get along” on ‘Time’) and urgency (“I said I would break my stupid life in two / For half an hour alone with you” on ‘Never Give Up’) with a cosmopolitan touch for ‘Sea Madness’. The album produced by Lee Russell (formerly with The Moons and Nada Surf) is the ideal starting point to discover this great songwriter, man of the world bringer of peace.
+		)}
+	)}
+${jbc_footer}
+
+#define	20211112_press_mojo.html
+#live	if (getval(page) = 20211112_press_mojo.html)
+	${extractPress(
+		body=${literalizeCommas(
+Pat Fish announced himself as a singular talent with 1983 debut In Bath Of Bacon, summoning zombies, sasquatches and "sex engines" over outrageous lifts from Wilson Pickett, The Bar-Kays and The Normal.The Londoner proved a fiercely literate talent over three more albums partly defined by the Wes Montgomery filigree of guitarist Max Eider. Four years of heavy touring (and drinking) made them US college radio favourites. But when Eider split in 1987, Fish went deeper, issuing intricately layered, sample-detailed LPs for Creation that revealed a one-off animist songwriter, capable of gentle mirth and gut-wrenching sadness. A committed prole and erudite raconteur, Fish had just completed 13th LP The Highest In The Land when he died peacefully at home, two days after ill health forced the cancellation of a live Facebook show.
+		)}
+	)}
+${jbc_footer}
+
+#define	20211007_press_illlive.html
+#live	if (getval(page) = 20211007_press_illlive.html)
+	${extractPress(
+		body=${literalizeCommas(
+This certainly seems to be the week for it, so I’m going to blame Mark Zuckerberg for the way I’m feeling right now. No, the Facebook outage did not depress me (in fact, it prompted a friend and I to commit to “Zuckerberg-free Mondays,” which start next week). Nor did news of the evil behind the scenes at Facebook particularly surprise me.
+<p />
+Instead, I am laid low because a musician whose work I have loved for most of my life died suddenly this week. That news alone would have been enough to put me in the dumps. But because of Zuckerberg’s infernal machine, I not only heard about his death — I had been able to connect with him as a Facebook friend a few years ago. I only managed to see his band perform live once. But suddenly, Pat Fish was among my friends on Facebook, right there alongside my mother and my preschool classmates and my online pals.
+<p />
+This was exciting, because now I could tag him whenever I posted a song of his that I appreciated. So I did, not expecting much response, but often being pleasantly surprised to get one:
+<p />
+I’d loved the different iterations of Pat’s band, which was called the Jazz Butcher or the Jazz Butcher Conspiracy, depending on the release, since hearing a song of theirs on the radio in high school. The track, “Hungarian Love Song,” made you want to dance, but not the way people danced in clubs. It made you want to learn a form of dance you’d never even seen before. The lyrics cheekily described a love affair leading to cannibalism. My teen self, ever alert to quirkiness, responded immediately, and I set out in search of the album the song appeared on. It was never easy to find Jazz Butcher releases, and that’s the only one I have on vinyl.
+<p />
+As I delved deeper into the Jazz Butcher’s oeuvre, I found a band with multiple personalities, my favorite kind. They could rock hard but also were liable to charm the pants off you. There was a good deal of saxophone, but it wasn’t deployed in a cringey 1980s way. In college, finding out that someone I was interested in owned a Jazz Butcher cassette raised my interest in them immeasurably (whether deserved or not). There seemed to be a Jazz Butcher song for every mood I had. Like one, simple on its surface, sung from the perspective of penguins (“We are penguins./Only penguins./We are flightless./We are standing in the snow/Without food./`Coz we’re penguins/It’s what we do./On the ice floe of unknowing./And it’s freezing…”) that disarms you with its poignancy. Danceable numbers like “She’s On Drugs,” narrating a woman in the midst of collapse with ranginess and humor — but remaining ever the gentleman. There are lots of angels in the songs. And there is Shirley MacLaine. This music has accompanied me through adolescence, college, and my first experiences with independent living, heartbreak, ambition, relationships… all of it.
+<p />
+J. recently got us a turntable, after many years of living without one, and I cued my one Jazz Butcher album up just the other day. As I just wrote to a friend who is also mourning Pat, “I miss all of it. I miss the world how it was, where you would put a record on and just sit there listening to it. It wasn’t a backdrop. It is astonishingly hard to find the time for that now.”
+<p />
+<p />
+I forgot the quirk of this album: the labels were put on reversed. So I started listening with Side 2.
+The same weekend that I listened to this album for the first time in ages, Pat was to planning to play a live set on Facebook from his living room, which he dubbed Fishy Mansions. I’d put it on my calendar, and planned to tune in to hear him for the first time since he’d done a similar gig during early pandemic times. I knew the band had recently recorded an album and was hoping he might preview a track from it. Instead, Pat came on to say he hadn’t slept the night before, that he’d had sleep apnea, and he was sorry, but he wouldn’t be able to play for us. He was sipping a pint, as always, and cuddling his black cat, Raoul, as always. He seemed to be in some respiratory distress, though. I was unnerved, because a couple of years ago, he’d been treated for cancer. I identified with him on that level, as well — we’d both emerged from cancer.
+<p />
+Since I added Pat as a friend on Facebook, I got to know him a little bit. The first thing to know was that he was a huge fan of cats. In reading posthumous tributes, I’ve lost count of the number of people who have mentioned that he wrote them to wish their cat a happy birthday, or commented on a cat photo they’d posted.
+<p />
+I didn’t post any cat photos. All the same, I unexpectedly found myself on the receiving end of unsolicited reactions and comments on my posts from Pat. Supportive ones when I posted about being a cancer survivor. But other things too:
+<p />
+<p />
+<p />
+All of a sudden, Pat was not just the source of music that had formed the soundtrack of my adult life. He felt more like a friend, one who knew how to contribute in just the right ways on social media. And Tuesday morning, I opened up Facebook to learn he was gone — suddenly, peacefully, but gone. I won’t have any more opportunities to convey my appreciation for what his music meant. I won’t get to watch him play another live gig from his living room, cat jumping in and out of frame.
+<p />
+A close friend of his posted to a forum today:
+<blockquote class="annotation">
+He was very happy over the last few months of his life, probably more so than I’d seen him in a long time, and it was mainly down to you lot. He was absolutely knocked out by your response to the “Live At Fishy Mansions” sessions. He was pretty much broke before he started doing them but everyone’s generosity with the tip jar meant that his financial problems were solved – the money from it kept him in food (not that he ate much!), beer, smokables, and beefy biscuits for Raoul.
+</blockquote>
+So there is that: We, his fans, had helped him to not die destitute or in despair. It should feel like enough, to know that an artist who gave you so much felt acknowledged and tangibly appreciated at the end. But — all because of Zuckerberg — he was not just an artist to me. He was MY FRIEND. And he is gone when he should be here to receive the torrents of adulation that a dead artist gets.
+<p />
+Another celebrity I follow on Facebook (but who is not a friend), legendary illustrator Sandra Boynton, posted this photo yesterday, which she took in her office as the sun set:
 		)}
 	)}
 ${jbc_footer}

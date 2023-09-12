@@ -12,11 +12,11 @@ const features = [
 		thousands of email messages.
 		</>
 	},
-	{ uri: '/letters', text: "Post From Pat", aux: '(1991-1994)',
+	{ uri: '/letters', text: "Letters From Pat", aux: '(1991-1994)',
 		children: <>
 		Just prior to gaining Internet access for himself, Pat would update the
 		website&apos;s maintainer the old-fashioned way: through type-written correspondence.
-		<i>Post From Pat</i> covers news and answers to fan questions in 9 lengthy letters.
+		<i>Letters From Pat</i> covers news and answers to fan questions in 9 lengthy letters.
 		An enjoyable read.
 		</>
 	},
@@ -41,7 +41,7 @@ const features = [
 		The outcome is surprisingly not as cringe-worthy as it could have been.
 		</>
 	},
-	{ uri: '/press/20040512_wilson_about.html', text: "Wilson Explainer", aux: '(2002)',
+	{ uri: '/press/20040512_wilson_about.html?section=etc', text: "Wilson Explainer", aux: '(2002)',
 		children: <>
 		Pat provides an early history for his side-project Wilson.
 		</>

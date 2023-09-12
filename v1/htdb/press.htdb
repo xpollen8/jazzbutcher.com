@@ -16581,7 +16581,6 @@ Between poetry and jazz settings, reverence for Bob Dylan and the new-wave, Pat 
 	)}
 ${jbc_footer}
 
-export default DavidJackson;
 #define data.json
 #live if (getval(page) = data.json)
 	${definePressItems()}

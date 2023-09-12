@@ -189,7 +189,7 @@
 
 		"thumb": "/images/releases/va_pulp",
 
-		"blurb": "<p> This very rare cassette was compiled by Mark Webber and released on his bedroom-based label. The sleeve features artwork by Natty Brooker of Spacemen 3 (who are featured on the cassette) and Spiritualized. The drawing is also titled Oozing Through the Ozone Layer. </p> <div class='source'> <b>Source</b>: <a href='https://pulpwiki.net/Pulp/OozingThroughTheOzoneLayer' target='new'>Pulp Wiki</a> </div><!-- source -->",
+		"blurb": "<p> This very rare cassette was compiled by Mark Webber and released on his bedroom-based label. The sleeve features artwork by Natty Brooker of Spacemen 3 (who are featured on the cassette) and Spiritualized. The drawing is also titled Oozing Through the Ozone Layer. </p> <span class='source'> <b>Source</b>: <a href='https://pulpwiki.net/Pulp/OozingThroughTheOzoneLayer' target='new'>Pulp Wiki</a> </span><!-- source -->",
 
 		"year": "1987-12-01",
 

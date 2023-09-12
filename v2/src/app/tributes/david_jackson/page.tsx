@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 
 const DavidJackson = () =>
 <>
-	<Header section='rememberences' title="David Jackson" />
+	<Header section='tributes' title="David Jackson" />
 		&quot;It was an honour and privilege to play with someone with so much talent.&quot;
 		<p />
 		By David Jackson

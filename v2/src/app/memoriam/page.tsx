@@ -19,7 +19,7 @@ const Memoriam = () =>
 			<br/> <br/> <br/>
 			<b>{linkInternal("/eulogy", "Alan Moore's eulogy is here..")}</b>
 			<br/> <br/> <br/>
-			<b>{linkInternal("/rememberences/david_jackson", "David Jackson reflects")}</b>
+			<b>{linkInternal("/tributes/david_jackson", "David Jackson reflects")}</b>
 			<br/> <br/> <br/> <br/>
 			{linkInternal("/help", "Help enrich the JBC archives!")}
 		</div>

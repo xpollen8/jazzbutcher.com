@@ -63,12 +63,14 @@ const sections : { [key: string]: BreadCrumb } = {
 	project: { parent: 'pat', title: 'Side Projects', summary: "Pat was a busy butcher" },
 	gallery: { parent: 'pat', title: 'Gallery', summary: "Photography from all eras"  },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "Final years' live performances from his home" },
-	rememberences: { parent: 'pat', title: 'Rememberences', summary: "Rememberences and tributes" },
 	notebooks: { parent: 'pat', title: 'Notebooks', summary: "Throughout his life, Pat kept journals in which he documented his gigs, tours, general observations, drew sketches, and jotted down lyrics. They are utterly fascinating.  In 2012, Pat auctioned off many of his older notebooks to raise funds for Last of the Gentlemen Adventurers" },
+
 	memoriam: { parent: 'pat', title: 'In Memoriam', summary: "Too soon" },
+	tributes: { parent: 'memoriam', title: 'Tributes', summary: "Rememberences and tributes" },
 	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
 
 	letters: { parent: 'pat', title: 'Letters From Pat' },
+
 	mailinglist: { parent: 'etc', title: 'Mailing List' },
 	tribute: { parent: 'etc', title: 'Fan Tribute Project' },
 	abcs_of_drugs: { parent: 'etc', title: "Eider's ABC's of Drugs" },

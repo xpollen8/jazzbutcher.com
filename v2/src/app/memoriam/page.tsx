@@ -1,27 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import './page.css'
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { linkInternal } from '@/lib/macros';
 import { Credit } from '@/components/GenericWeb';
+import Tributes from '@/components/Tributes';
 
 const Memoriam = () =>
 <>
-	<Header section='pat' title="In Memoriam" />
+	<Header section='memoriam' />
 	<div className="w-full flex">
 		<div className="text-center w-1/2">
-			<br/> <br/> <br/>
+			<p />
 			<h2>Patrick Guy Sibley Huntrods</h2>
 			<h3>AKA: Pat Fish - The Jazz Butcher</h3>
 			<b> 1957-12-20 .. 2021-10-05</b>
-			<br/> <br/> <br/>
-			<b>{linkInternal("/eulogy", "Alan Moore's eulogy is here..")}</b>
-			<br/> <br/> <br/>
-			<b>{linkInternal("/rememberences/david_jackson", "David Jackson reflects")}</b>
-			<br/> <br/> <br/> <br/>
-			{linkInternal("/help", "Help enrich the JBC archives!")}
+			<p />
+			<Tributes />
+			<p />
 		</div>
 		<div className="w-1/2">
 			<Link href="https://jazzbutcher.com/images/20211008_joolesjoyce_tribute.jpg">
@@ -34,3 +30,4 @@ const Memoriam = () =>
 </>
 
 export default Memoriam;
+

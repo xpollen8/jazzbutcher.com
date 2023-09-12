@@ -56,7 +56,7 @@ export default function RootLayout({
 					<NavItem uri="/prejbc/nightshift" text="Nightshift" />
 					<NavItem uri="/prejbc/institution" text="Institution" />
 					<NavItem uri="/prejbc/sonic_tonix" text="Sonic Tonix" />
-					<NavItem uri="/prejbc/the_tonix" text="Tonix" />
+					<NavItem uri="/prejbc/the_tonix" text="The Tonix" />
 				</div>
 				<div className="main">
 					<Link href="#" className="menuButton">

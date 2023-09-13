@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import * as Tabs from '@radix-ui/react-tabs';
 import './styles.css';
+import EmbedMedia from '@/components/EmbedMedia';
 
 //import { mapActs, mapPerformers } from '@/lib/defines';
 import { parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime } from '@/lib/macros';
@@ -131,14 +132,28 @@ const GigNotes = (data: any) => <><Iterator data={data} func={GigNote} /></>
 
 const GigPlay = ({ data }: any) => {
 	return (
-		<div>
+		<div style={{ marginLeft: '10px' }}>
 			{/*console.log("Play", data)*/}
-			{data?.song} {data?.author}
+			{/*data?.song} {data?.author*/}
+			<EmbedMedia data={data} />
 			{data?.comment}
 		</div>
 	)
 }
-const GigPlayed = (data: any) => <><Iterator data={data} func={GigPlay} /></>
+const GigPlayed = (data: any) => {
+	let set = '';
+	let type = '';
+	const updateSet = (newSet: string) => set=newSet;
+	return <Iterator data={data} func={(({ data }: any) => {
+		let banner;
+		if (data.type !== type || data.setnum !== set) {
+			type = data.type;
+			set = data.setnum;
+			banner = <Tag>{type} {set}</Tag>;
+		}
+		return <>{banner}<GigPlay data={data}/></>
+		})} />
+}
 
 const GigWit = ({ data }: any) => {
 	return (

@@ -78,7 +78,7 @@
 }
 .audio_player {
 	padding-left: 10px;
-	width: 100%;
+	width: 100%
 }
 .audio_title {
 }
@@ -305,6 +305,9 @@ textplus1 {
 .smalltext, .press_tags, .song_author {
 	font-size: 80%;
 	color: #666;
+}
+.smalltext a{
+	color: #669;
 }
 .press_tags {
 	margin-bottom: 10px;
@@ -749,6 +752,7 @@ p::first-letter {
 }
 .album_purchase {
 	font-size: 1.2em;
+	padding-left: 3px;
 }
 
 .card {

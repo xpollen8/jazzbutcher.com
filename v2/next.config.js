@@ -8,6 +8,16 @@ const nextConfig = {
 	async redirects() {
 			return [
 				{
+					source: '/albums/last_of_the_gentlemen_adventurers.html',
+					destination: '/albums/last_of_the_gentleman_adventurers.html',
+					permanent: false,
+				},
+				{
+					source: '/lyrics/last_of_the_gentlemen_adventurers.html',
+					destination: '/lyrics/last_of_the_gentleman_adventurers.html',
+					permanent: false,
+				},
+				{
 					source: '/conspirators/pat',
 					destination: '/pat',
 					permanent: false,

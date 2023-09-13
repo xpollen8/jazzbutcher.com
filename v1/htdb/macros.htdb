@@ -1762,12 +1762,12 @@ font.load().then(function () {
 #define	callme			${linkSong(href=${jbc_lyrics}/call_me.html, title=Call Me)}
 #define	morphine		${linkSong(href=${jbc_lyrics}/diamorphine.html, title=Diamorphine)}
 #
-#	gentlemen adventurers
+#	gentleman adventurers
 #
-#define	adventurers	${linkAlbum(href=${jbc_albums}/last_of_the_gentlemen_adventurers.html, title=Last of the Gentleman Adventurers)}
+#define	adventurers	${linkAlbum(href=${jbc_albums}/last_of_the_gentleman_adventurers.html, title=Last of the Gentleman Adventurers)}
 #define	animals	${linkSong(href=${jbc_lyrics}/animals.html, title=Animals)}
 #define	shame_about_you	${linkSong(href=${jbc_lyrics}/shame_about_you.html, title=Shame About You)}
-#define	last_of_the_gentlemen_adventurers	${linkSong(href=${jbc_lyrics}/last_of_the_gentleman_adventurers.html, title=Last of the Gentleman Adventurers)}
+#define	last_of_the_gentleman_adventurers	${linkSong(href=${jbc_lyrics}/last_of_the_gentleman_adventurers.html, title=Last of the Gentleman Adventurers)}
 #define	tombe	${linkSong(href=${jbc_lyrics}/tombe_dans_les_pomes.html, title=Tomb&eacute; dans les pommes)}
 #define	count_me_out	${linkSong(href=${jbc_lyrics}/count_me_out.html, title=Count Me Out)}
 #define	single_saints	${linkSingle(href=${jbc_albums}/all_the_saints.html, title=All the Saints)}

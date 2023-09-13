@@ -399,7 +399,7 @@
 #define	albums[47]->buy		https://thejazzbutcher.bandcamp.com/album/last-of-the-gentleman-adventurers
 #define	albums[47]->type	album
 #define	albums[47]->lookup	adventurers
-#define	albums[47]->href	${jbc_albums}/last_of_the_gentlemen_adventurers.html
+#define	albums[47]->href	${jbc_albums}/last_of_the_gentleman_adventurers.html
 #define	albums[47]->title	Last of the Gentleman Adventurers
 #define	albums[47]->thumb	/images/adventurers_front
 #define	albums[47]->blurb	Crowd-funded in under 12 hours, recorded on 2" tape, lush and warm..

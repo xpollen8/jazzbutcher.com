@@ -1837,7 +1837,7 @@ normal">: Quality People </i><span style="mso-spacerun:yes">&nbsp;</span>(www.wi
                 <p><i style="mso-bidi-font-style:normal">Pat Fish: All The
                     Saints 3:14&nbsp; </i><i style="mso-bidi-font-style:normal"><i
                       style="mso-bidi-font-style:normal"><span style="color:maroon">(Same
-                        version as "Last of the Gentlemen Adventurers")<br>
+                        version as "Last of the Gentleman Adventurers")<br>
                       </span></i>Andy Harwood: She Won't Get Me 3:26<br>
                     Curtis &amp; The Stevie GDs: Evening Shadows 3:46<br>
                     Joe Wooley: A Pocket Full of Sand 3:01<br>
@@ -1864,11 +1864,11 @@ normal">: Quality People </i><span style="mso-spacerun:yes">&nbsp;</span>(www.wi
                       </span></i>Curtis E Johnson: Improbably Northampton 4:47<br>
                   </i></p>
                 <p><br>
-                  <b><span style="color:navy">Last of the Gentlemen Adventurers
+                  <b><span style="color:navy">Last of the Gentleman Adventurers
                       (CD, 2010)</span></b> </p>
                 <p><i>Animals 4:35<br>
                     Shame About You 3:32<br>
-                    Last of the Gentlemen Adventurers 4:57<br>
+                    Last of the Gentleman Adventurers 4:57<br>
                     Tombe dans les Pommes 3:24<br>
                     Count Me Out 3:54<br>
                     All The Saints 3:10<br>
@@ -1881,7 +1881,7 @@ normal">: Quality People </i><span style="mso-spacerun:yes">&nbsp;</span>(www.wi
                   <b><span style="color:navy">All The Saints (CD Single, Fire
                       Records, 2015)</span></b> </p>
                 <p><i>All The Saints 3:10<br>
-                    Last of the Gentlemen Adventurers 4:57<br>
+                    Last of the Gentleman Adventurers 4:57<br>
                   </i></p>
                 <p><b><span style="color:navy">The Wasted Years (CD Box Set,
                       2017-10)</span></b> </p>
@@ -2503,7 +2503,7 @@ Previously available on the ${fishco} LP/CD.
 	${all_the_saints}
 	${a-side_end}
 	${b-side_beg}
-	${last_of_the_gentlemen_adventurers}
+	${last_of_the_gentleman_adventurers}
 	${b-side_end}
 	${players_beg}
 	${fetchAlbumPersonnel(release=single_saints)}
@@ -7600,8 +7600,8 @@ Previously available on the ${fishco} LP/CD.
 	${jbc_footer}
 #live	endif
 
-#define	last_of_the_gentlemen_adventurers.html
-#live	if (getval(page) = last_of_the_gentlemen_adventurers.html)
+#define	last_of_the_gentleman_adventurers.html
+#live	if (getval(page) = last_of_the_gentleman_adventurers.html)
 	${mkHeader(section=albums, title=Last of the Gentleman Adventurers)}
 
 	${mkPurchase()}
@@ -7617,7 +7617,7 @@ Previously available on the ${fishco} LP/CD.
 	${tun_beg}
 	${animals}<br>
 	${shame_about_you}<br>
-	${last_of_the_gentlemen_adventurers}<br>
+	${last_of_the_gentleman_adventurers}<br>
 	${tombe}<br>
 	${count_me_out} (Eider)<br>
 	${all_the_saints}<br>

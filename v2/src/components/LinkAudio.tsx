@@ -5,7 +5,7 @@ const LinkAudio = ({ title, comment, mp3, url, author, autolink = true }: {
 	comment?: string
 	mp3?: string
 	url?: string
-	author?: string
+	author?: string | React.ReactNode
 	autolink?: boolean
 }) => (
 <>

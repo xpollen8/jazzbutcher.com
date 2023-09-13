@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LinkAudio from '@/components/LinkAudio';
 
 const SonicTonix = () => 
 <>
@@ -16,11 +17,18 @@ const SonicTonix = () =>
   the Oranges & Lemons in St Clements, Oxford, plus some unusual dancing and a musical trio under plastic. Oh, and a
   contemporaneous photographical artwork from the man himself.&quote;
 
+<p />
+<hr />
+<p />
+
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_A.jpg" width={500} height={500} alt="A" />
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_B.jpg" width={500} height={500} alt="B" />
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/sonic_tonix.jpg" width={500} height={500} alt="cover" />
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/sonic_tonix_back.jpg" width={500} height={500} alt="back" />
 
+<p />
+<hr />
+<p />
 
 <br/> https://www.discogs.com/release/2078217-Sonic-Tonix-Dont-Go-Away-Telepathy
 <br/> Label:  Industrial Accident –  SGS-114
@@ -41,11 +49,9 @@ const SonicTonix = () =>
 <br/> Producer – Fish*, Tonix*
 <br/> Recorded at DUFFYS.
 <br/> This was an Oxford-based outfit (ft. former members of INSTITUTION) whos sole release comes with rubber-stamped white labels (500 copies made). Members resurfaced in THE JAZZ BUTCHER and THE WOODENTOPS.
-<br/>
-<br/> https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_DontGoAway.mp3
-<br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_Telepathy.mp3
-
 </code>
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_DontGoAway.mp3" title="Don't Go Away" comment="A side" />
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_Telepathy.mp3" title="Telepathy" comment="B side" />
 	<Footer />
 </>
 

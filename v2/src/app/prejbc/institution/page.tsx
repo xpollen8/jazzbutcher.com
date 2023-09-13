@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LinkAudio from '@/components/LinkAudio';
 
 const Institution = () => 
 <>
@@ -21,13 +22,17 @@ const Institution = () =>
 
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/TheInstitution_signed.jpg" width={500} height={500} alt="signed1" />
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/TheInstitution_vinyl.jpg" width={500} height={500} alt="signed1" />
+
+<p />
+<hr />
+<p />
+
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JaneAndJon.mp3" title="Jane And Jon" comment="A side" />
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_Stephanie.mp3" title="Stephanie" comment="B side" />
 <code>
-<br /> Jonathan Stephenson - https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw
 <br />
 <br />	https://www.discogs.com/release/5338218-The-Institution-Jane-And-Jon
 <br />	7er:
-<br />	A. https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JaneAndJon.mp3
-<br />	B. https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_Stephanie.mp3
 <br />	Label:	Industrial Accident – SGS-112
 <br />	Format:	
 <br />	Vinyl, 7, 45 RPM, White Label
@@ -46,33 +51,57 @@ const Institution = () =>
 <br />	
 <br />	Other original members included Johnathan Stephenson on Synthesizers and John Duvall on Drums.
 <br />	Both left before the record was cut.
-<br />
-<br />	youtube:
-<br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_InnocentsAndEnglishmen.mp3
-<br />	https://www.youtube.com/watch?v=PdvFEe55_i0
-<br />	Nov 4, 2021  Probably our masterpiece!  Words of course, Patrick, sax Patrick, and I think the music was a joint effort.
-<br />
-<br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_JaneAndJon.mp3
-<br />	https://www.youtube.com/watch?v=omFadRK4O4Q
-<br />	Oct 14, 2021  The Institution.  About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall. This track by Pete.
-<br />
-<br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_JeremyAiroplane.mp3
-<br />	https://www.youtube.com/watch?v=xoDh_HYROWs
-<br />	Oct 14, 2021  The Institution. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall. This track by Rolo.
-<br />
-<br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_LoveAndARecordContract.mp3
-<br />	https://www.youtube.com/watch?v=CHwt3C4MkDQ
-<br />	Oct 14, 2021  The Institution. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.  This track by Rolo
-<br />
-<br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_Stephanie.mp3
-<br />	https://www.youtube.com/watch?v=umKEN-VcAsI
-<br />	Oct 14, 2021  The Institution. About 1978. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.   This track:  Pat
-<br />
-<br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_Vampire.mp3
-<br />
-<br />	internet:
-<br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_Unknown_InnocentsAndEnglishman.mp3
 </code>
+
+<p />
+<hr />
+<p />
+
+<b>Unknown provenance for these two tracks</b>
+<p />
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_Vampire.mp3" title="Vampire"/>
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_Unknown_InnocentsAndEnglishmen.mp3" title="Innocents And Englishman"/>
+<p />
+<hr />
+<p />
+
+<b>Final selections are from Jonathan Stephenson - https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw</b>
+<p />
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_InnocentsAndEnglishmen.mp3" title="Innocents And Englishmen">
+	<blockquote>
+	Nov 4, 2021  Probably our masterpiece!  Words of course, Patrick, sax Patrick, and I think the music was a joint effort.
+	<p />	source: https://www.youtube.com/watch?v=PdvFEe55_i0
+	</blockquote>
+</LinkAudio>
+
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_JaneAndJon.mp3" title="Jane And Jon" comment="different version from single">
+	<blockquote>
+		Oct 14, 2021  The Institution.  About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall. This track by Pete.
+		<p />	source: https://www.youtube.com/watch?v=omFadRK4O4Q
+	</blockquote>
+</LinkAudio>
+
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_JeremyAiroplane.mp3" title="Jeremy Airoplane" >
+	<blockquote>
+		Oct 14, 2021  The Institution. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall. This track by Rolo.
+		<p />	source: https://www.youtube.com/watch?v=xoDh_HYROWs
+	</blockquote>
+</LinkAudio>
+
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_LoveAndARecordContract.mp3" title="Lave And A Record Contract" >
+	<blockquote>
+		Oct 14, 2021  The Institution. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.  This track by Rolo
+		<p />	source: https://www.youtube.com/watch?v=CHwt3C4MkDQ
+	</blockquote>
+</LinkAudio>
+
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_Stephanie.mp3" title="Stephanie" comment="different version from single">
+	<blockquote>
+		Oct 14, 2021  The Institution. About 1978. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.   This track:  Pat
+		<p />	source: https://www.youtube.com/watch?v=umKEN-VcAsI
+	</blockquote>
+</LinkAudio>
+
 	<Footer />
 </>
 

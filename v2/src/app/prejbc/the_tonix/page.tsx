@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LinkAudio from '@/components/LinkAudio';
 
 const TheTonix = () => 
 <>
@@ -42,8 +43,16 @@ const TheTonix = () =>
 <br />	Matrix / Runout (Side A runout etched): STEG 002 A1 SNA A PORKY PRIME CUT.
 <br />	Matrix / Runout (Side B runout etched): STEG 002 B1 SNA WELSHPOOL ... WOW HELLO K.B.
 <br />
-<br />	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_TalkToMe.mp3
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_Strangers.mp3" title="Strangers" comment="A side"/>
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_TalkToMe.mp3" title="Talk To Me" comment="B side"/>
+
+<p />
 <hr />
+<p />
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_SexJunk.mp3" title="Sex Junk" />
+
+<p />
+
 <br />https://drive.google.com/drive/folders/1Ks_WWEwUVJwOfDIHInCyMXOgIyd3Sw9-
 <br />Sex Junk.wav
 <br />Talk To Me.wav

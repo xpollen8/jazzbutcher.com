@@ -88,7 +88,7 @@ const Institution = () =>
 	</blockquote>
 </LinkAudio>
 
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_LoveAndARecordContract.mp3" title="Lave And A Record Contract" >
+<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_LoveAndARecordContract.mp3" title="Love And A Record Contract" >
 	<blockquote>
 		Oct 14, 2021  The Institution. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.  This track by Rolo
 		<p />	source: https://www.youtube.com/watch?v=CHwt3C4MkDQ

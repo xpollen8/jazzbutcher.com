@@ -9,7 +9,7 @@ const LinkAudio = ({ title, comment, mp3, url, author, autolink = true }: {
 	autolink?: boolean
 }) => (
 <>
-	<span className="audioPlayer">
+	<div className="audioPlayer">
 		<span className="audio_title">
 		<i>
 			{(() => {
@@ -25,7 +25,7 @@ const LinkAudio = ({ title, comment, mp3, url, author, autolink = true }: {
 			})()}
 		</i>
 		</span>
-		{(author) && <span className="smalltext"> ({author}) </span>}
+		{(author) && <span className="smalltext pl-3"> ({author}) </span>}
 		{(comment) && <span className="smalltext"> <i>{comment}</i> </span>}
 		{(title) && <br/>}
 		{(mp3) &&
@@ -34,7 +34,7 @@ const LinkAudio = ({ title, comment, mp3, url, author, autolink = true }: {
 			Your browser does not support the audio element.
 		</audio>
 		}
-	</span>
+	</div>
 </>
 )
 

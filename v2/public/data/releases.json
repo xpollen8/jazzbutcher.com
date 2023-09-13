@@ -189,7 +189,7 @@
 
 		"thumb": "/images/releases/va_pulp",
 
-		"blurb": "<p> This very rare cassette was compiled by Mark Webber and released on his bedroom-based label. The sleeve features artwork by Natty Brooker of Spacemen 3 (who are featured on the cassette) and Spiritualized. The drawing is also titled Oozing Through the Ozone Layer. </p> <span class='source'> <b>Source</b>: <a href='https://pulpwiki.net/Pulp/OozingThroughTheOzoneLayer' target='new'>Pulp Wiki</a> </span><!-- source -->",
+		"blurb": "This very rare cassette was compiled by Mark Webber and released on his bedroom-based label. The sleeve features artwork by Natty Brooker of Spacemen 3 (who are featured on the cassette) and Spiritualized. The drawing is also titled Oozing Through the Ozone Layer. <p /> <span class='source'> <b>Source</b>: <a href='https://pulpwiki.net/Pulp/OozingThroughTheOzoneLayer' target='new'>Pulp Wiki</a> </span><!-- source -->",
 
 		"year": "1987-12-01",
 
@@ -1917,7 +1917,7 @@
 
 		"thumb": "/images/releases/va_shadow1",
 
-		"blurb": "<p> A lovely interpretation of the Jonathan Richman classic which was originally released in 1979 on the <b>Back In Your Life</b> LP by Jonathan Richman And The Modern Lovers. </p>",
+		"blurb": "A lovely interpretation of the Jonathan Richman classic which was originally released in 1979 on the <b>Back In Your Life</b> LP by Jonathan Richman And The Modern Lovers.",
 
 		"year": "1984",
 
@@ -2097,7 +2097,7 @@
 
 		"thumb": "/images/releases/va_gunfire_front",
 
-		"blurb": "<p> The Jazz Butcher contribution subsequently appeared as an additional track on <span class='release_title'><b><a href='/albums/gift1.html'>The Gift of Music</a></b></span>.  </p>",
+		"blurb": "The Jazz Butcher contribution subsequently appeared as an additional track on <span class='release_title'><b><a href='/albums/gift1.html'>The Gift of Music</a></b></span>.",
 
 		"year": "1986",
 
@@ -2133,7 +2133,7 @@
 
 		"thumb": "/images/releases/va_50k_front",
 
-		"blurb": "<p> Note: Limited edition on clear vinyl. The Jazz Butcher contribution subsequently appeared on the <span class='release_title'><b><a href='/albums/gift2.html'>Big Questions</a></b></span> LP/CD. Having said that, this album also includes an early studio version of &amp;quot;<span class='song'> <i>Leaving It Up To You</i> <span class='song_author'>(John Cale)</span> </span>&amp;quot; by <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span><!-- person --> with <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span><!-- person --> on guitar as well as &amp;quot;Fear (Is A Man's Best Friend)&amp;quot; by <span class='person'> <a href='/people/david_j.html'>David J.</a> </span><!-- person --> and a different version of &amp;quot;2:35&amp;quot; by Spacemen 3 amongst others. </p>",
+		"blurb": "Note: Limited edition on clear vinyl. The Jazz Butcher contribution subsequently appeared on the <span class='release_title'><b><a href='/albums/gift2.html'>Big Questions</a></b></span> LP/CD. Having said that, this album also includes an early studio version of &amp;quot;<span class='song'> <i>Leaving It Up To You</i> <span class='song_author'>(John Cale)</span> </span>&amp;quot; by <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span><!-- person --> with <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span><!-- person --> on guitar as well as &amp;quot;Fear (Is A Man's Best Friend)&amp;quot; by <span class='person'> <a href='/people/david_j.html'>David J.</a> </span><!-- person --> and a different version of &amp;quot;2:35&amp;quot; by Spacemen 3 amongst others.",
 
 		"year": "1986",
 
@@ -2241,7 +2241,7 @@
 
 		"thumb": "/images/releases/va_pensioners91",
 
-		"blurb": "<p class='annotation'> Another track from that L.A. babe, <a href='/gigs/search.html?f=performer&amp;q=Deirdre+O%27Donoghue'>Deirdre O'Donoghue</a>'s radio show. </p>",
+		"blurb": "<div class='annotation'> Another track from that L.A. babe, <a href='/gigs/search.html?f=performer&amp;q=Deirdre+O%27Donoghue'>Deirdre O'Donoghue</a>'s radio show. </div>",
 
 		"year": "1991",
 
@@ -2277,7 +2277,7 @@
 
 		"thumb": "/images/releases/va_seventeen_3_front",
 
-		"blurb": "<p /> Originally issued with the magazine 'What A Nice Way To Turn Seventeen' Issue 3. Publishing details, credits and brief biographies contained in the magazine. Assembled at Woodbine St. Recording Studios, Leamington Spa with thanks to John A. Rivers.",
+		"blurb": "Originally issued with the magazine 'What A Nice Way To Turn Seventeen' Issue 3. Publishing details, credits and brief biographies contained in the magazine. Assembled at Woodbine St. Recording Studios, Leamington Spa with thanks to John A. Rivers.",
 
 		"year": "1984",
 
@@ -2313,7 +2313,7 @@
 
 		"thumb": "/images/releases/va_summer",
 
-		"blurb": "<p class='annotation'> Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects. <br/> <br/> I contributed a track, recorded on Curtis' computer. It's a version of 'Indian Summer' as written by the Beat Happening, and recorded by Luna and Spectrum. </p>",
+		"blurb": "<div class='annotation'> Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects. <p /> I contributed a track, recorded on Curtis' computer. It's a version of 'Indian Summer' as written by the Beat Happening, and recorded by Luna and Spectrum. </div>",
 
 		"year": "2000",
 
@@ -2421,7 +2421,7 @@
 
 		"thumb": "/images/releases/va_1000songs",
 
-		"blurb": "<p> This release by the German newspaper 'Süddeutsche Zeitung' combines a book and a CD. </p>",
+		"blurb": "This release by the German newspaper 'Süddeutsche Zeitung' combines a book and a CD.",
 
 		"year": "1985",
 
@@ -2457,7 +2457,7 @@
 
 		"thumb": "/images/releases/shock_drugs_A",
 
-		"blurb": "<p> Double A sided single for the Australian market. </p>",
+		"blurb": "Double A sided single for the Australian market.",
 
 		"year": "1990",
 
@@ -2529,7 +2529,7 @@
 
 		"thumb": "/images/releases/bigtime_sampler",
 
-		"blurb": "<p> Also includes tracks from Love Tractor, The Pastels, and The Lucy Show </p>",
+		"blurb": "Also includes tracks from Love Tractor, The Pastels, and The Lucy Show",
 
 		"year": "1986",
 
@@ -2601,7 +2601,7 @@
 
 		"thumb": "/images/releases/fire_wasted",
 
-		"blurb": "<p> Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’. <p>",
+		"blurb": "Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’.",
 
 		"year": "2017-10-20",
 
@@ -2673,7 +2673,7 @@
 
 		"thumb": "/images/releases/va_creation_unreleased",
 
-		"blurb": "<p> Note: The back cover mistakenly lists the Jazz Butcher track as &amp;quot;President Gang&amp;quot;. The information printed on the CD itself is correct. This CD was a &amp;quot;promotional only&amp;quot; issue.",
+		"blurb": "Note: The back cover mistakenly lists the Jazz Butcher track as &amp;quot;President Gang&amp;quot;. The information printed on the CD itself is correct. This CD was a &amp;quot;promotional only&amp;quot; issue.",
 
 		"year": "1995",
 
@@ -2709,7 +2709,7 @@
 
 		"thumb": "/images/releases/brave",
 
-		"blurb": "<p> The Jazz Butcher’s Brave New Waves session was recorded on <a href='/gigs/1988/Jun5.html'>June 5th, 1988</a> in CBC Studio 13 in Montreal.  The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman. </p>",
+		"blurb": "The Jazz Butcher’s Brave New Waves session was recorded on <a href='/gigs/1988/Jun5.html'>June 5th, 1988</a> in CBC Studio 13 in Montreal.  The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.",
 
 		"year": "2018-01-19",
 
@@ -2745,7 +2745,7 @@
 
 		"thumb": "/images/releases/va_canyoutalktothedude_1_front",
 
-		"blurb": "<p> Tribute To Jonathan Richman &amp; The Modern Lovers Volume 2 </p>",
+		"blurb": "Tribute To Jonathan Richman &amp; The Modern Lovers Volume 2",
 
 		"year": "1994",
 
@@ -2781,7 +2781,7 @@
 
 		"thumb": "/images/releases/va_canyoutalktothedude_2_front",
 
-		"blurb": "<p> Tribute To Jonathan Richman &amp; The Modern Lovers Volume 2 </p>",
+		"blurb": "Tribute To Jonathan Richman &amp; The Modern Lovers Volume 2",
 
 		"year": "1996",
 
@@ -2817,7 +2817,7 @@
 
 		"thumb": "/images/releases/va_nationofsaints_front",
 
-		"blurb": "<p> 50 Years Of Northampton Music </p>",
+		"blurb": "50 Years Of Northampton Music",
 
 		"year": "2009-11",
 
@@ -2853,7 +2853,7 @@
 
 		"thumb": "/images/releases/va_creation_price_front",
 
-		"blurb": "<p> The Creation Records Promotion Sampler, Distribution Sony Music </p>",
+		"blurb": "The Creation Records Promotion Sampler, Distribution Sony Music",
 
 		"year": "1996",
 
@@ -2889,7 +2889,7 @@
 
 		"thumb": "/images/releases/va_unautomne93_front",
 
-		"blurb": "<p> French Various Artists Compilation. </p>",
+		"blurb": "French Various Artists Compilation.",
 
 		"year": "1993",
 
@@ -2925,7 +2925,7 @@
 
 		"thumb": "/images/releases/va_wilson_heyday_front",
 
-		"blurb": "<p> A Sampler CD </p>",
+		"blurb": "A Sampler CD",
 
 		"year": "2004",
 
@@ -2961,7 +2961,7 @@
 
 		"thumb": "/images/wilson/200511_wilson_cd",
 
-		"blurb": "<p> Two song demo. </p>",
+		"blurb": "Two song demo.",
 
 		"year": "2005-11",
 
@@ -2997,7 +2997,7 @@
 
 		"thumb": "/images/wilson/200304_wilson_front",
 
-		"blurb": "<p> Two song demo. </p>",
+		"blurb": "Two song demo.",
 
 		"year": "2003-04",
 
@@ -3033,7 +3033,7 @@
 
 		"thumb": "/images/wilson/2002_wilson_front",
 
-		"blurb": "<p> Six song demo. </p>",
+		"blurb": "Six song demo.",
 
 		"year": "2002",
 
@@ -3069,7 +3069,7 @@
 
 		"thumb": "/images/releases/fire_violent",
 
-		"blurb": "<p> Expansive book-styled package of the first four albums from The Jazz Butcher’s early Creation Records’ years – 1988-1991. </p> <p> Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, ‘Cult Of The Basement’ and ‘Condition Blue”.  <p>",
+		"blurb": "Expansive book-styled package of the first four albums from The Jazz Butcher’s early Creation Records’ years – 1988-1991. <p /> Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, ‘Cult Of The Basement’ and ‘Condition Blue”.",
 
 		"year": "2018-03-09",
 
@@ -3141,7 +3141,7 @@
 
 		"thumb": "/images/releases/fire_cholmondley",
 
-		"blurb": "<p> Four CD box set gathering A-sides, the would-be hits along with B-sides, tangential 12-inch tracks (the C-sides), and an excellent session for Los Angeles radio station KCRW from 1989. </p> <p> Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘Girl Go’, ‘The Human Jungle’, ‘16 Years’ plus a host of truly eclectic Butcher tunes from his early Glass recordings through his time at Creation.  </p>",
+		"blurb": "Four CD box set gathering A-sides, the would-be hits along with B-sides, tangential 12-inch tracks (the C-sides), and an excellent session for Los Angeles radio station KCRW from 1989. <p /> Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘Girl Go’, ‘The Human Jungle’, ‘16 Years’ plus a host of truly eclectic Butcher tunes from his early Glass recordings through his time at Creation.",
 
 		"year": "2021-11-12",
 
@@ -3177,7 +3177,7 @@
 
 		"thumb": 	"",
 
-		"blurb": "<p> This was a limited edition CD made available to help fund the JBC tour across the US. </p> <p> Along with the CD you got an autographed photo and tickets to the JBC show of your choice. </p> <p> Although it is a 'home made' CDR, it was officially released by the JBC and would be pre-paid for pick-up at the show. </p>",
+		"blurb": "This was a limited edition CD made available to help fund the JBC tour across the US. <p /> Along with the CD you got an autographed photo and tickets to the JBC show of your choice. <p /> Although it is a 'home made' CDR, it was officially released by the JBC and would be pre-paid for pick-up at the show.",
 
 		"year": "2000-01-01",
 
@@ -3213,7 +3213,7 @@
 
 		"thumb": "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/2010_NowThatsWhatICallNorthamptonVol1",
 
-		"blurb": "<p>   <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/lyrics/mercy.html'>Mercy</a></i> </span> </i> </span> <span class='smalltext'> <i>Recorded by <span class='person'> <a href='/people/curtis_johnson.html'>Curtis E. Johnson</a> </span><!-- person --></i> </span> <br/> <audio controls='controls' title=' Mercy ' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>   <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/lyrics/wildlife.html'>Wildlife</a></i> </span> </i> </span> <span class='smalltext'> <i>Recorded by <span class='person'> <a href='/people/curtis_johnson.html'>Curtis E. Johnson</a> </span><!-- person --></i> </span> <br/> <audio controls='controls' title=' Wildlife ' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/WIldlife.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>   </p>",
+		"blurb": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/lyrics/mercy.html'>Mercy</a></i> </span> </i> </span> <span class='smalltext'> <i>Recorded by <span class='person'> <a href='/people/curtis_johnson.html'>Curtis E. Johnson</a> </span><!-- person --></i> </span> <br/> <audio controls='controls' title=' Mercy ' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>   <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/lyrics/wildlife.html'>Wildlife</a></i> </span> </i> </span> <span class='smalltext'> <i>Recorded by <span class='person'> <a href='/people/curtis_johnson.html'>Curtis E. Johnson</a> </span><!-- person --></i> </span> <br/> <audio controls='controls' title=' Wildlife ' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/WIldlife.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>",
 
 		"year": "2010",
 
@@ -3249,7 +3249,7 @@
 
 		"thumb": "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum",
 
-		"blurb": "<p> Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers. </p> <p> In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album. </p> <p>   <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>Recorded in December 2007 at Greenway Studio by Andy Clarke</i> </span> <br/> <audio controls='controls' title=' After Hours (Velvet Underground) ' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> </p>",
+		"blurb": "Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers. <p /> In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album. <p />   <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>Recorded in December 2007 at Greenway Studio by Andy Clarke</i> </span> <br/> <audio controls='controls' title=' After Hours (Velvet Underground) ' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>",
 
 		"year": "2007-12",
 

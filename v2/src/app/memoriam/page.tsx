@@ -9,23 +9,26 @@ import Tributes from '@/components/Tributes';
 const Memoriam = () =>
 <>
 	<Header section='memoriam' />
-	<div className="w-full flex">
-		<div className="text-center w-1/2">
 			<p />
-			<h2>Patrick Guy Sibley Huntrods</h2>
-			<h3>AKA: Pat Fish - The Jazz Butcher</h3>
+	<center>
+	<div className="flex flex-wrap">
+		<div className="text-center grow">
+			<div className="text-2xl">Patrick Guy Sibley Huntrods</div>
+			<div>AKA: Pat Fish - The Jazz Butcher</div>
 			<b> 1957-12-20 .. 2021-10-05</b>
 			<p />
-			<Tributes />
-			<p />
-		</div>
-		<div className="w-1/2">
+			<center>
 			<Link href="https://jazzbutcher.com/images/20211008_joolesjoyce_tribute.jpg">
-				<Image src="https://jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={500} height={500} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} />
+				<Image src="https://jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={450} height={450} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} />
 			</Link>
+			</center>
 			<Credit g="Jooles Joyce" />
 		</div>
+		<div className="w-1/3 grow">
+			<Tributes />
+		</div>
 	</div>
+	</center>
 	<Footer />
 </>
 

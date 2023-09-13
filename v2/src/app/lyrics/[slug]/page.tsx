@@ -1,9 +1,13 @@
+"use client"
+
+import { Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import apiData from '@/lib/apiData';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import { releaseByLookup } from '@/lib/macros';
+import useLyric from '@/lib/useLyric';
 
 /*
       project: '',
@@ -89,13 +93,17 @@ const Media = async (props: any) => {
 }
 
 
-const Lyric = async ({ params }: { params?: any }) => {
+const Lyric = ({ params }: { params?: any }) => {
 	const href = `${params?.slug}.html`;
+		/*
 		const data = await apiData('lyric_by_href', href)
 			.then(res => res?.results[0])
 			.catch(res => {});
+			*/
+	const { lyric, isLoading, error } = useLyric(href);
 
-	if (!data) return <>404</>
+	if (!lyric) return <>404</>
+	console.log("LYRIC", lyric, href);
 	const tabs = [
 			{ label: 'Lyrics', lookup: (data: any) => { return data?.lyrics }, func: Lyrics },
 			{ label: 'Found On', lookup: (data: any) => (data?.found_on), func: FoundOn },
@@ -107,12 +115,12 @@ const Lyric = async ({ params }: { params?: any }) => {
 	];
 
 	return (
-		<>
-			<Header project={data?.project} section="lyrics" title={data?.title} />
-			<Tag>{data?.title}</Tag>
-			{tabs.filter(t => t.lookup(data))?.map(async (t: any, key: number) => await t?.func(data, key))}
+		<Suspense fallback=<>Loading...</> >
+			<Header project={lyric?.project} section="lyrics" title={lyric?.title} />
+			<Tag>{lyric?.title}</Tag>
+			{tabs.filter(t => t.lookup(lyric))?.map(async (t: any, key: number) => await t?.func(lyric, key))}
 			<Footer />
-		</>
+		</Suspense>
 	)
 }
 

@@ -29,6 +29,8 @@ const MakeAlbumBlurb = ({
 			<FeaturedItem
 				className={`w-full gig_${project}`}
 				link={href}
+				media={media}
+				label={label}
 				buy={buy}
 				title={title}
 				image={thumb}

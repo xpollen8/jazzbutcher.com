@@ -2,9 +2,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { parseDomain, linkInternal, linkExternal } from '@/lib/macros';
 
-const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, className, children }: {
+const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, label, media, className, children }: {
 	link?: string
 	image?: string
+	label?: string
+	media?: string
 	alt?: string
 	title?: string
 	buy?: string
@@ -29,9 +31,12 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, cla
 			<div className="album_details">
 				<div className={className} />
 				{!!(useImage?.length && useThumb?.length) &&
+					<div className="float-right text-center" style={{ width: '182px' }}>
 					<Link href={link || useImage}>
-						<Image className="float-right border border-slate-600 ml-2 rounded-md" src={useThumb} width={175} height={175} alt={alt} />
+						<Image className="border border-slate-600 ml-2 rounded-md" src={useThumb} width={175} height={175} alt={alt} />
 					</Link>
+					{label} {media}
+					</div>
 				}
 				<span className="album_title">
 					{(link?.length) ? (<>

@@ -31,12 +31,10 @@ const music = [
 ];
 
 const Tributes = () => <>
-	<p className="text-center text-2xl">Tributes</p>
-	<hr />
-	<p className="text-center text-xl">In Words</p>
+	<p className="text-center text-xl">Tributes In Words</p>
 	{texts.map(MakeSimpleURI)}
 	<hr />
-	<p className="text-center text-xl">In Music</p>
+	<p className="text-center text-xl">Tributes In Music</p>
 	{music.map(MakeSimpleURI)}
 </>;
 

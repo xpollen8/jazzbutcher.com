@@ -1,12 +1,14 @@
 import { autoLink, linkExternal } from '@/lib/macros';
 
-const LinkAudio = ({ title, comment, mp3, url, author, autolink = true }: {
+const LinkAudio = ({ title, comment, wav, mp3, url, author, autolink = true, children }: {
 	title: string
 	comment?: string
 	mp3?: string
+	wav?: string
 	url?: string
 	author?: string | React.ReactNode
 	autolink?: boolean
+	children?: React.ReactNode
 }) => (
 <>
 	<div className="audioPlayer">
@@ -34,6 +36,13 @@ const LinkAudio = ({ title, comment, mp3, url, author, autolink = true }: {
 			Your browser does not support the audio element.
 		</audio>
 		}
+		{(wav) &&
+		<audio controls title={title} preload="none" className="audio_player">
+			<source src={wav} type="audio/wav" />
+			Your browser does not support the audio element.
+		</audio>
+		}
+		{children}
 	</div>
 </>
 )

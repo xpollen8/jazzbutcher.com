@@ -38,6 +38,8 @@
 	* will probably require database table to hold permissions
 	* better control this way versus locking it into github roles
 
+# add 'featureat' column to feedback table to "lift up" particularly good comments.
+
 ---
 https://web.dev/virtualize-long-lists-react-window/
 

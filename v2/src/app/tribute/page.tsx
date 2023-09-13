@@ -14,8 +14,7 @@ const TributeTrack = ({ title, artist, url, dl, children }: {
 	children: React.ReactNode
 }) => (
 <>
-	<LinkAudio mp3={`/audio/tribute/${dl}`} title={title} />
-	by <b>{linkExternal(url, artist)}</b>
+	<LinkAudio mp3={`/audio/tribute/${dl}`} title={title} author={linkExternal(url, artist)}/>
 	<div className="lyric_annotation">
 		{children}
 	</div>

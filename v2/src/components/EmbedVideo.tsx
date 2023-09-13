@@ -29,7 +29,7 @@ const EmbedVideo = ({ data = {} }: any) => {
 				const urlClean = mediaurl.replace('https://vimeo.com/', 'https://assets.jazzbutcher.com/video/');
 				return (
 					<div className="js-video [vimeo, widescreen]">
-						<iframe width={560} height={315} src={`${urlClean}?showinfo=0`} frameborder={0} allowfullscreen></iframe>
+						<iframe width={560} height={315} src={`${urlClean}?showinfo=0`} frameBorder={0} allowFullScreen></iframe>
 					</div>
 				);
 			}

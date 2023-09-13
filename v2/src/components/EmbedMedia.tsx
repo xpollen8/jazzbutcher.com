@@ -3,7 +3,7 @@ import EmbedVideo from '@/components/EmbedVideo';
 import { autoLink } from '@/lib/macros';
 import { Credit } from '@/components/GenericWeb';
 
-const Performers = ({ datetime }: string) => {
+const Performers = ({ datetime }: { datetime: string }) => {
 	return (<>
 	</>);
 /*

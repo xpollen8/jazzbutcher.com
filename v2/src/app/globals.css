@@ -75,6 +75,8 @@
 	display: none;
 }
 .audioPlayer {
+	display: inline-block;
+	width: 100%;
 }
 .audio_player {
 	padding-left: 10px;

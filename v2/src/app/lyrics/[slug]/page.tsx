@@ -41,7 +41,7 @@ const FoundOn = async (props: any) => {
 	const releases = props.found_on?.split("..");	// sex .. bath .. blue, etc
 	return (
 		<div key={props?.key}>
-			<Tag>Buy These Records</Tag>
+			<Tag>Found On</Tag>
 			<blockquote>
 			{releases.map(async (lookup: string, key: number) => {
 				const album = await releaseByLookup(lookup?.trim());

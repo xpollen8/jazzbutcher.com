@@ -11,7 +11,7 @@ const texts = [
 		aux: 'Monolith Cocktail' },
 	{ uri: '/press/20211007_press_illlive.html', text: 'Deborah Wassertzug',
 		aux: "I'll Live",
-		children: <blockquote className="text-xs">A heartfelt posting with screenshots of a couple of Pat's Facebook interactions</blockquote>
+		children: <blockquote className="text-xs">A heartfelt posting with screenshots of a couple of Pat&apos;s Facebook interactions</blockquote>
 		},
 ];
 

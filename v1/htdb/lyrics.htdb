@@ -9081,7 +9081,6 @@ Everyone pretend...
 		adventurers .. va_nh_underglass
 		,credits=${pat};;;;&copy; 2005
 	)}
-	)}
 #live	endif
 
 #define	last_of_the_gentleman_adventurers.html
@@ -9125,7 +9124,6 @@ Break out and find out tonight.
 		onlist=
 		single_saints .. adventurers
 		,credits=${pat};;;;&copy; 2012
-)}
 	)}
 #live	endif
 

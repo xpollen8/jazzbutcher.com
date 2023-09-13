@@ -732,6 +732,94 @@ ${d}
 		added=2023-09-12,
 		dt=2021-10-07)}
 
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220210_press_spillmagazine.html,
+		title=SPILL ALBUM REVIEW,
+		headline=The Jazz Butcher,
+		subhead=The Highest In The Land,
+		publication=Spill Magazine,
+		credit=Aaron Badgley,
+		source=https://spillmagazine.com/spill-album-review-the-jazz-butcher-the-highest-in-the-land/,
+		added=2023-09-12,
+		dt=2022-02-10)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220204_press_bigtakeover.html,
+		title=The Jazz Butcher,
+		headline=The Highest In The Land (Tapete),
+		publication=The Big Takeover,
+		credit=Michael Tolard,
+		source=https://bigtakeover.com/recordings/TheJazzButcherTheHighestintheLandTapete,
+		added=2023-09-12,
+		dt=2022-02-04)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220210_press_bucketfullofbrains.html,
+		thumb=/images/2021_PressRelease_PatFish2_RuthTidmarsh;;Ruth Tidmarsh,
+		title=The Jazz Butcher,
+		headline=The Highest In The Land,
+		publication=Bucketfuill of Brains,
+		source=https://nickbob.com/2022/02/10/the-jazz-butcher-the-highest-in-the-land/,
+		added=2023-09-12,
+		dt=2022-02-10)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220131_press_backseatmafia.html,
+		title=ALBUM REVIEW,
+		headline=The Jazz Butcher - The Highest In The Land,
+		subhead=ONE FINAL POP POSTCARD FROM NORTHAMPTON’S FOREMOST GENT,
+		publication=Backseat Mafia,
+		source=https://www.backseatmafia.com/album-review-the-jazz-butcher-the-highest-in-the-land-one-final-pop-postcard-from-northamptons-foremost-gent-kickers/,
+		credit=CHRIS SAWLE,
+		added=2023-09-12,
+		dt=2022-01-31)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220204_press_whisperinandhollerin.html,
+		title=Review,
+		headline=The Jazz Butcher,
+		subhead=The Highest In The Land,
+		publication=Whisperin And Hollerin,
+		source=http://www.whisperinandhollerin.com/reviews/review.asp?id=15828&fbclid=IwAR0oJ7sCEhcA70iP4_Ll348kYFrVuMq6q7B4c4GLLN--JCG69w59u5OPWgA,
+		credit=simonovitch,
+		added=2023-09-12,
+		dt=2022-02-04)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220204_press_ghettoblaster.html,
+		title=New Music,
+		headline=Friday Rollout,
+		subhead=The Jazz Butcher,
+		publication=Ghettoblaster,
+		source=https://ghettoblastermagazine.com/features/album-reviews/new-music-friday-roll-out-02-04-22/,
+		credit=EDDIE UGARTE,
+		added=2023-09-12,
+		dt=2022-02-04)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220121_press_mancreview.html,
+		title=ALBUM OF THE MONTH,
+		headline=“THE HIGHEST IN THE LAND”,
+		subhead=by The Jazz Butcher,
+		location=Manchester\, UK,
+		publication=The Manc Review,
+		source=https://www.mancreview.com/2022/01/album-of-the-month-the-highest-in-the-land-by-jazz-butcher/,
+		credit=Dave Morgan,
+		added=2023-09-12,
+		dt=2022-01-21)}
+
+	${addPress(type=album, album=smith,
+		url=${jbc_press}/20130330_press_mojo.html,
+		thumb=/images/20130330/20130330_press_mojo,
+		title=The UK Indie Top 100 Records,
+		headline=The Jazz Butcher,
+		subhead=Southern Mark Smith,
+		publication=Mojo,
+		source=https://pbs.twimg.com/media/FrXi4OOWIAEoYHp?format=jpg&name=large,
+		credit="AP",
+		added=2023-09-12,
+		dt=2013-03-30)}
+
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211112_press_mojo.html,
 		thumb=/images/20211112/20211112_press_mojo;;Glass Modern;;https://twitter.com/glassmodern1/status/1459187934049947650,
@@ -844,7 +932,7 @@ ${d}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20230202_press_apessimistisneverdisappointed_highest.html,
-		thumb=/images/2021_PressRelease_PatFish2_RuthTidmarsh,
+		thumb=/images/2021_PressRelease_PatFish2_RuthTidmarsh;;Ruth Tidmarsh,
 		title=Running On Fumes,
 		headline=A Brief Review Of The New Album From The Jazz Butcher,
 		publication=A Pessimist Is Never Disappointed,
@@ -882,9 +970,45 @@ ${d}
 		credit=Michael White,
 		dt=2017-10-02)}
 
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220210_louderthanwar.html,
+		title=The Jazz Butcher,
+		headline=The Highest in the Land,
+		subhead=album review,
+		publication=Louder Than War,
+		source=https://louderthanwar.com/the-jazz-butcher-the-highest-in-the-land-album-review/,
+		credit=Neil Hodge,
+		added=2023-09-12,
+		dt=2022-02-10)}
+
+	${addPress(type=retrospective,
+		url=${jbc_press}/20211017_magnetmagazine.html,
+		title=KEEPING THE CURTAINS CLOSED,
+		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
+		headline=R.I.P,
+		subhead=The Jazz Butcher,
+		publication=Magnet Magazine,
+		source=https://magnetmagazine.com/2021/10/17/keeping-the-curtains-closed-r-i-p-the-jazz-butcher/,
+		credit=Matt Hickey,
+		added=2023-09-12,
+		dt=2021-10-17)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220216_magnetmagazine.html,
+		title=ESSENTIAL NEW MUSIC,
+		headline=The Jazz Butcher's,
+		subhead=The Highest in the Land,
+		publication=Magnet Magazine,
+		source=https://magnetmagazine.com/2022/02/16/essential-new-music-the-jazz-butchers-the-highest-in-the-land/,
+		credit=Matt Hickey,
+		added=2023-09-12,
+		dt=2022-02-16)}
+
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171012_louderthanwar.html,
-		title=The Jazz Butcher: The Wasted Years – album review,
+		title=The Jazz Butcher,
+		headline=The Wasted Years,
+		subhead=album review,
 		publication=Louder Than War,
 		source=http://louderthanwar.com/the-jazz-butcher-the-wasted-years-album-review/,
 		credit=Mark Ray,
@@ -966,6 +1090,18 @@ ${d}
 		dt=1992-05-01,
 		datetime=1992-05-01,
 		source=https://www.washingtonpost.com/archive/lifestyle/1992/05/01/charming-chiming-of-jazz-butcher/7e29a9b9-b46f-4589-853b-c9aa0dbc3830/)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220208_press_popmatters.html,
+		credit=John Bergstrom,
+		thumb=/images/2021_PressRelease_PatFish2_RuthTidmarsh;;Ruth Tidmarsh,
+		title=THE JAZZ BUTCHER’S FINAL ALBUM IS ‘THE HIGHEST IN THE LAND’,
+		headline=The final\, sadly posthumous album from the great Pat Fish (aka the Jazz Butcher) shows the British indie-pop legend was taken much too soon.,
+		publication=Pop Matters,
+		location=Queens\, NY\, USA,
+		dt=2022-02-08,
+		source=https://www.popmatters.com/jazz-butcher-highest-land-review,
+		added=2023-09-12)}
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/20160315_popmatters.html,
@@ -2263,7 +2399,6 @@ ${d}
 	G&uuml;nter Grass's gardner.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -2471,7 +2606,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -2717,7 +2851,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -2740,7 +2873,6 @@ ${d}
 	<p />
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -2779,7 +2911,6 @@ ${d}
 	<p />
 	SHARON O'CONNELL.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -2788,7 +2919,6 @@ ${d}
 	${extractPress(
 		body=${literalizeCommas(
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -2797,7 +2927,6 @@ ${d}
 	${extractPress(
 		body=${literalizeCommas(
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -2888,7 +3017,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -3156,7 +3284,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -3182,7 +3309,6 @@ ${d}
 	3.5/5 stars
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -3248,7 +3374,6 @@ ${d}
 	some of us would say they've always been serious...
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -3294,7 +3419,6 @@ ${d}
 	Long Live The Jazz Butcher.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -3513,7 +3637,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -3597,7 +3720,6 @@ ${d}
 	Ignore the herd; step into the basement.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -3824,7 +3946,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -3928,7 +4049,6 @@ ${d}
 	God only knows what they'll be up to after.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4015,7 +4135,6 @@ ${d}
 	translation by: joe@cetia.fr (Joe Nicholson)
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4109,7 +4228,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4133,7 +4251,6 @@ ${d}
 	realised work. Ultimately, it is all just very dull.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4160,7 +4277,6 @@ ${d}
 	Andy Cowan (Rage Sept '91)
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4196,7 +4312,6 @@ ${d}
 	4/5 stars.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4299,7 +4414,6 @@ ${d}
 	Fax (404) 263 8491
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4321,7 +4435,6 @@ ${d}
 	captivatingly soft and wet.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4490,7 +4603,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4590,7 +4702,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4680,7 +4791,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4705,7 +4815,6 @@ ${d}
 	BOSTON ROCK #91
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4807,7 +4916,6 @@ ${d}
 	Not Kenny G.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -4990,7 +5098,6 @@ ${d}
 	life. It's a great memory.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5103,7 +5210,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5132,9 +5238,7 @@ ${d}
 	melodies, seemingly in calm control but always bordering
 	the precipice that gapes just below the surface.
 	${g_source(g=Compact Disc Connection, u=http://cdconnection.com)}
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5180,9 +5284,7 @@ ${d}
 	continue and finish in comfortable indifference, these fours
 	songs will have been enough satisfy you.
 	<center>translation by: joe@cetia.fr (Joe Nicholson)</center>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5206,9 +5308,7 @@ ${d}
 	going to play anywhere that Eric Clapton had played if they
 	said there was no space for us".
 	</div>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5226,9 +5326,7 @@ ${d}
 	see his slightly warped, mostly beautiful visions of
 	turmoil-driven life as nothing more than great pop music. And
 	he's got a point. Only openminded listeners need board this bus.
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5308,9 +5406,7 @@ ${d}
 	<br />emil is no pig.
 	<p />
 	<img width=73 height=87 alt="[image]" src="${eg_images}/eg.gif">
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5344,9 +5440,7 @@ ${d}
 	As a special treat (oh, please!), The Jazz Butcher closes the album
 	with rousing covers of Everybody's Talking and Do You Wanna
 	Dance? But don't worry - you'll be asleep by then.
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5768,9 +5862,7 @@ ${d}
 	matches up with the sound and yeah I think I'm quite pleased
 	about that as it shows I'm not just a fuckin' musical impressionist.
 	</div>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5831,9 +5923,7 @@ ${d}
 	<a href="${eg_root}/index.html"><b>The Black Eg</b></a>
 	<p />
 	<a href="${jbc_gigs}/1994/Jun1.html">Wed 1 June London Soundshaft</a>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5853,9 +5943,7 @@ ${d}
 	Germany, The Jazz Butcher sent their van to pick us up on the
 	highway and then they let us use their equipment."
 	</div>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -5978,9 +6066,7 @@ ${d}
 	edition of <b>The Trouser Press Record Guide</b> by ${ed}.
 	<p />
 	Used with permission of the authors.
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6242,9 +6328,7 @@ ${d}
 	mind having their minds overthrown.) Next step in the
 	Conspiracy master plan: ${dist}, the just unleashed album.
 	</div>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6262,7 +6346,6 @@ ${d}
 	<b><br />Released: March 6th 1995</b></I>.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6284,9 +6367,7 @@ ${d}
 				<b>Sixteen Years</b></a> (The Single)
 		</dd>
 	</dl>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6405,7 +6486,6 @@ ${d}
 	have to do.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6439,7 +6519,6 @@ ${d}
 	</blockquote>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6592,7 +6671,6 @@ ${d}
 	</blockquote>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6621,7 +6699,6 @@ ${d}
 	<p />***(Okay) Tom Lappin.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6731,7 +6808,6 @@ ${d}
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6759,7 +6835,6 @@ ${d}
 	is a lesser effort. (Big Time/RCA)
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6789,7 +6864,6 @@ ${d}
 	#220, Norcross, GA 30071)
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6825,7 +6899,6 @@ ${d}
 	(Rough Trade, 611 Broadway #311, NYC 10012)
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6861,7 +6934,6 @@ ${d}
 	direction. (TriStar/Sony)
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6905,7 +6977,6 @@ ${d}
 	(5/10) Neil Spence.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -6954,7 +7025,6 @@ ${d}
 	<p />
 	- copyright 1997 patrick smith
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -7037,7 +7107,6 @@ ${d}
 	<br />(used with author's permission)
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -7087,7 +7156,6 @@ ${d}
 	<br />(used with author's permission)
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -7115,7 +7183,6 @@ ${d}
 	merits, thank you.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -7143,7 +7210,6 @@ ${d}
 	Paul Davies
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -7277,7 +7343,6 @@ ${d}
 	that's both imploring and imposing.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -7589,7 +7654,6 @@ ${d}
 	it that way.
 	</div>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -7662,9 +7726,7 @@ new music from Montreal,
 Pat Fish and his four musicians will be at Les Foufounes Electriques on Saturday November 11, then will go to
 Ottawa for a show the following Monday at Barrymores
 </div>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8120,7 +8182,6 @@ Ottawa for a show the following Monday at Barrymores
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8162,7 +8223,6 @@ Ottawa for a show the following Monday at Barrymores
 	of feedback. This--and the rest of the CD--is the kind of blue
 	condition one sees in the high intensity of a fire.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8171,7 +8231,6 @@ Ottawa for a show the following Monday at Barrymores
 	${extractPress(
 		body=${literalizeCommas(
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8230,9 +8289,7 @@ Ottawa for a show the following Monday at Barrymores
 	Interloper - Dependency Coulture EP (Octopus)<br />
 	Sumosonic - This Is Sumo (Creation)
 	<p />
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8340,7 +8397,6 @@ Ottawa for a show the following Monday at Barrymores
 	to hearing a <a href="${jbc_albums}/rotten.html">fresh album of all
 	new material by year's end</a>.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8378,7 +8434,6 @@ Ottawa for a show the following Monday at Barrymores
 		<p />
 		Do you like your melodies sweet and your humour as black as pitch? Would you take a chance on something simple, intimate and direct from an artist who is on record as saying “What I do is not entertainment” but who regularly induces little bursts of outraged laughter from the audience? Do you want to see the real thing? You should maybe go and see Pat Fish.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8428,7 +8483,6 @@ Ottawa for a show the following Monday at Barrymores
 	<a href="/2012biography.doc">Also available as Word .doc download</a>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8840,7 +8894,6 @@ Ottawa for a show the following Monday at Barrymores
 	 Stick</a>
 	</div>
 )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8868,7 +8921,6 @@ A project with Dark Flowers’ Paul Statham (B Movie, 100 Men) has spawned <i>Th
 	<p />
 	<b>© ${brooksbank}</b>	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8906,7 +8958,6 @@ The next song to go all Jazzy for us was the Rave rock classic Quality People th
 	<p />
 London has one more chance to See the JBQ at Come Down Meet the Folks in Clerkenwell next Sunday afternoon before they go off to Japan for a short tour.<br />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8952,7 +9003,6 @@ They then closed with a great version of his old Love And Rockets classic Dog En
 	<p />
 Of course they came back out and while David could have brought up several ex-band members for the encore we stayed with the trio to ask us Who Killed Mr Moonlight that I hope David will also be singing on Bauhaus' upcoming shows it was darkly magisterial and with the room glittering  it felt like the moonlight was in the room with us.  David then  put his guitar back down and they closed with It Was A Very Good Year that allowed David to give us his best Sinatra croon as Karel and Robert made it sound like your sitting in a restaurant in Prague as the house band effortlessly play the classics to entertain everyone. A great way to end a really good show.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -8998,7 +9048,6 @@ Of course they came back out and while David could have brought up several ex-ba
 	<p />
 	Pat wasn't getting away with just one encore and soon had to come back for a second one that again got us all singing along this time to She's On Drugs and well these days who can blame her. Still no one wanted to leave and Pat had to play a third encore and finally gave into audience demand as two songs had been requested consistently through the set and no he didn't play Diamorphine but he did make sure lots of people were very happy to hear Love Kittens that had almost a choir like feel to the chorus as so many people joined in it was a great way to close another great solo set.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -9090,7 +9139,6 @@ fun, but Dinwoodie gets better shows for
 much less money. : 
 
 )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -9180,7 +9228,6 @@ much less money. :
 	 C-Pop will also exhibit drawings by Coverly based upon and accompanied by the lyrics to the Jazz Butcher song "Buffalo Shame," from a collaborative children's book-in-progress. –CH
 	</div>
 )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -9279,7 +9326,6 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
  are $7.00 in advance, and $9.00 at the door.
  </div>
 )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -9303,7 +9349,6 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	11802 Detroit Ave., Lakewood, at 9.
 	Cover is $10. Call (216) 228-6300.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -9474,7 +9519,6 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -9518,9 +9562,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	alternative, jam band or hip-hop circles. The Jazz Butcher Conspiracy keeps a dying genre alive
 	and well ... the singer songwriter with a pop flare. If Chris Isaak can use the same formula and be
 	popular, then these guys deserve even greater respect.
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -9587,7 +9629,6 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	you'll probably agree that a live appearance is not to be missed.
 	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -9936,7 +9977,6 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	I'm afraid. It's a disappointing comeback. <B>Grade: C</B>
 	</div>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -9974,7 +10014,6 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	this is a curiously affecting album, and my favorite from the Butcher
 	since "Fishcotheque".
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -10809,7 +10848,6 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	ASKCD134SG
 	</div>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -11350,9 +11388,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	 from me, I will be a great deal closer to you. And, you'll see
 	 me coming a mile off, because I almost certainly will be beaming
 	 for weeks to come.
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -11556,7 +11592,6 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	A tip of the hat to Pat Fish for sharing his Free Lunch.
 	</div>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -11603,9 +11638,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	Tonight's theme has been well-crafted pop with elaborate, imaginative
 	lyrics. Throw in the free black watch single and you've got the bargain of
 	the month.
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -11662,7 +11695,6 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	Oh yes, and The Saw Doctors man enjoyed it in the end, too.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -11687,7 +11719,6 @@ like love, perhaps musical collaborations are lovelier the second time around. I
 postscript – for guitar players (nerds) only after the show I asked max way too many questions the first one being, naturally, what kind of guitar were you playing? “a gretsch” was his answer. when pressed for a little more information he told me it was a “double” anniversary. favored more by country players than jazzbos. the “double” anniversary features hi-lo-tron single coil pickups.	<p />
 as I was standing near the stage I can attest to the fact that max plugged directly into a fender deville 4 x 10 amp. fiddling with a couple of the knobs during the show. the chorus effect made no appearance, apparently banished to a bygone era.	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -11748,7 +11779,6 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	The Jazz Butcher Quartet makes its London debut at the Hope & Anchor, Islington, London N1 on <a href="${jbc_gigs}/2014/Sep20_2000.html">Saturday 20th September</a> with special guest supports Elia and the Low Tears and Texasbob.
 	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -11949,7 +11979,6 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	We ended up in a transvestite Cowboy bar. Who would have thought that such a place even existed?
 	</div>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -11964,7 +11993,6 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<p /><i>The Last of the Gentleman Adventurers</i> doesn’t aim to please everyone, and it’s arguable that Pat Fish doesn’t have much left to prove in music. Rumors are that this will be the last Jazz Butcher album, though that&#8212;like everything to do with the band&#8212;is subject to Fish’s whims. If this is to be the final bow of the Jazz Butcher, it’s a fittingly dignified exit. Its pleasures slowly unfold with repeated listens as you catch previously unheard licks or mis-remembered turns of phrase. In short, it’s the Jazz Butcher doing what they do best, and that’s almost certainly worth giving a try.	<p />
 <b>7/10</b>
    )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -11987,7 +12015,6 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<p />
 	<b>Rating: 6 / 10</b>
    )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12006,7 +12033,6 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<p />We manage to catch up with the Butcher himself and some of the band before the show, purely by happenstance, and the next thing we know, we are all partaking in drinks, conversation, and some of that jazz lettuce. The show that night is amazing, we’re standing a couple of rows back from the stage and they’re playing all my favorites. Pat deals with some equipment mishap with wit and panache before diving right back into the thick of it. The stage is swirling with noise and mayhem when I feel an elbow gently nudging my ribs. It’s Pat, a pint glass in each hand. He hands one over to me, and we wordlessly toast. He looks around at the crowd approvingly, before catching his own eye on stage and receiving a broad wink in return. The band starts rolling through the chords of the closing encore, and as we hear “Every day, I get up and pray to Jah…” from the stage, Pat laughs and melts away into the crowd. It was the best show.	<p />
 	<p /><em>The Jazz Butcher’s final album, “The Highest In The Land,” was released posthumously in February 2022.</em>	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12020,7 +12046,6 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<p />Perhaps that's the reason that the Jazz Butcher seems to be largely neglected by most, and largely appreciated by a small but fervent fan base. The all-over-the-place nature of the music on here is somewhat unsettling at first (later output was a bit more musically consistent, if just as twisted) but the style is clearly unique to the Jazz Butcher. Together with <i>excellent!</i> (which contains latter-day material), it's a virtual roadmap of a long-time favorite.	<p />
 	<p />Fire Records: <a href="http://www.firerecords.com/">http://www.firerecords.com/</a> &bull; The Jazz Butcher: <a href="http://www.jazzbutcher.com/">http://www.jazzbutcher.com/</a>	<p />
    )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12140,7 +12165,6 @@ A quick shout out to some of my other favourite artists who are still out there 
 Thanks, Harlan Ellison! x
 	</div>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12163,7 +12187,6 @@ Thanks, Harlan Ellison! x
 	Difficulty to Locate: 9 out of 10
 	General Listenability: 7 out of 10
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12203,7 +12226,6 @@ The Highest in the Land is out on Friday via Tapete.
 	<br/>
 	The Violent Years is out tomorrow via Fire Records. More details on The Jazz Butcher via the band's official Facebook page, or the band's official website.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12220,7 +12242,6 @@ The Highest in the Land is out on Friday via Tapete.
 	<p />
 	Look, despite being a fan of this band from nearly 30 years ago, and being on the 'Net as it were, I somehow didn't know about this record until fairly recently and that's sad. This is a beautiful album that should reward long-time fans of The Jazz Butcher, or simply new fans who appreciate an expert blending of chamber pop and indie rock.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12338,7 +12359,6 @@ The Highest in the Land is out on Friday via Tapete.
 	(laughing) Yeah, yeah.  They quite like us in Northampton, now.  But that's a small town.
 	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12419,7 +12439,6 @@ The Highest in the Land is out on Friday via Tapete.
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12443,9 +12462,7 @@ The Highest in the Land is out on Friday via Tapete.
 	Otherwise, "Last Of The Gentleman Adventurers" originally published in 2012, published by the band via Pledge Music campaign, and how to mark the 30th anniversary of the band. All 1,000 copies was quickly sold, but they decided this signature to Fire records closer to your music and a broader range of listeners. In this connection, in addition to this re-release, this year plans to publish two box sets, which called "the Glass Era" and "The Creation Era". The first will be "And Bath Of Bacon ',' A Scandal in Bohemia," "Sex & Travel 'and' Distressed gentlefolk 'while others will include the albums' Fishcoteque ',' Big Planet Scary Planet ',' Condition Blue 'and' Cult Of The Basement '. We look forward to and how!
 	<p />
 	9/10
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12454,7 +12471,6 @@ The Highest in the Land is out on Friday via Tapete.
 	${extractPress(
 		body=${literalizeCommas(
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12531,7 +12547,6 @@ Tuesday, 16th September, 2003<br />
 			  Bullhorn Champagne VST.
 	</div>
   )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12541,7 +12556,6 @@ Tuesday, 16th September, 2003<br />
 		body=${literalizeCommas(
 	<img src="http://wilsondub.com/images/2004Sep12/cricketpress.jpg">
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12552,7 +12566,6 @@ Tuesday, 16th September, 2003<br />
 <a href="/images/19870210/19870210_press_BestOfRockNRollFolkMagazine.jpg">
 <img src="/images/19870210/19870210_press_BestOfRockNRollFolkMagazine_500.jpg"></a>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12563,7 +12576,6 @@ Tuesday, 16th September, 2003<br />
 <a href="/images/19930221/19930221_press_BestOfRockNRollFolkMagazine.jpg">
 <img src="/images/19930221/19930221_press_BestOfRockNRollFolkMagazine_500.jpg"></a>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12574,7 +12586,6 @@ Tuesday, 16th September, 2003<br />
 <a href="/images/19930216/19930216_press_LiberationNewspaper.jpg">
 <img src="/images/19930216/19930216_press_LiberationNewspaper_500.jpg"></a>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12585,7 +12596,6 @@ Tuesday, 16th September, 2003<br />
 <a href="/images/19931115/19931115_press_lEstRepublicainNewspaper.jpg">
 <img src="/images/19931115/19931115_press_lEstRepublicainNewspaper_500.jpg"></a>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12601,7 +12611,6 @@ Tuesday, 16th September, 2003<br />
 	<p />
 	Translation ${g_credit(g=Romà Ferre, u=https://twitter.com/romaferre)}
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12620,7 +12629,6 @@ Tuesday, 16th September, 2003<br />
 	<p />
 	Starting with the slam of a prison door (Check the original - Ed) and that incredible churning piano riff JBC (two Jazz Butchers and DJ Steve Proctor) welcome back The Rolling Stones to the Balearic dancefloor. Originally written as a thank you to the fans for supporting Mick Jagger and Keith Richards through a drugs and gaol escapade, JBC's version is even more likely to blank your thought processes than the original with its seering guitars, stamp on it drums, free form rap and, how should I put it, feeling of euphoria? Undoubtedly a miracle of stereophonic sound.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12739,7 +12747,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 "Oh God. I've got so bound up in conspiracy theories I've forgotten about the pop group! Sometimes it does feel there's a conspiracy theory just to trivialise us. Someone might ask. Why is he so keen not to be so belittled? It's not a career thing. I suppose it's 'Dignity Of Labour' or something pathetic." 
 </div>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12757,7 +12764,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 	<p />
 	One more tap from this rich, whimsical vein - <i>"they were communists . . . hicks in MIGs/Red Russians shot my rocket down"</i> ('President Reagan's Birthday Present'). Ahhh, yes . . . The Jazz Butcher — bit of a slow dazzle, what? 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12775,7 +12781,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 	<p />
 	Cierta similitud de concepto hace del nuevo disco de The Jazz Butcher un equivalence, menos onirico, a las animas grabaciones de Robyn Hitchcock, otra de las figuras britanicas que en los altimos tiempos aportan ingenio at pop ingles. "The Fishcotheque" tiene los elementos necesarios de agresividad y dulzura para sobresalir por encima de los estereotipos actuates, donde lo anico que prevalece son las aparatosas , producciones. 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12786,7 +12791,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 <a href="/images/19990923/19990923_press_villagevoice.jpg">
 <img src="/images/19990923/19990923_press_villagevoice_500.jpg"></a>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12797,7 +12801,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 <a href="/images/19990916/19990916_press_seattle_rocket.jpg">
 <img src="/images/19990916/19990916_press_seattle_rocket_500.jpg"></a>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12808,7 +12811,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 <a href="/images/19990916/19990916_press_seattle.jpg">
 <img src="/images/19990916/19990916_press_seattle_500.jpg"></a>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12817,7 +12819,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 	${extractPress(
 		body=${literalizeCommas(
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12876,7 +12877,6 @@ It was not uncommon in the 1980s to find the discs of the Jazz Butcher in the "g
 	<p />
 The eight titles of Sex & Travel were recorded (in five days!) In Leamington in February 1985 and produced by John A. Rivers, as had been Scandal in Bohemia and as Distressed Gentlefolk . The Jazz Butcher Conspiracy was above all a story of elective affinities and if the band's line-up has moved a bit over the albums, the spirit has remained unchanged. And oh miracle, many people who once had access to this music have become members of this conspiracy. Few have departed ...
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12885,7 +12885,6 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 	${extractPress(
 		body=${literalizeCommas(
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12894,7 +12893,6 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 	${extractPress(
 		body=${literalizeCommas(
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12913,7 +12911,6 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 	<p />
 	(7/10)
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -12923,9 +12920,7 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 		body=${literalizeCommas(
 	I've always been a fan of these Brits. Founded by Pat Fish With endless restructurings of members, The Jazz Butcher has always proved entertaining and challenging. ${adventurers} is a reissue of a limited 2012 album that was self-released for the 30-year anniver-sary, now paving the way for a new journey through this musical mindscape, with liner notes by ALAN MOORE and an appearance from SONIC Boom. It's simultaneously a flashback and a step forward, smooth and cool, and full of a sweet sense of humor - a little Britpop, a little jangle, some sadness, some feeling good, and a little French - but it's definitely Jazz Butcher, and I like it.
 	)})}
-
 	${jbc_footer}
-
 #live	endif
 
 #define	20160218_press_bigtakeover.html
@@ -12934,7 +12929,6 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 		body=${literalizeCommas(
 	Northampton based artist The Jazz Butcher, aka Pat Fish, is at his laid back best on this reissued collection of songs. The record was originally available in 2012 as a pledge item in a limited run of 1000. But now we have this reissue, which includes Pat Fish (guitar, organ and vocals), Max Eider (guitar and vocals), Tim Harries (bass), Jonny Mattock (drums and percussion), Rich Formby (guitar and harmonium), Owen Jones (accordion) and Sonic Boom (ghost chorus and drones on “Saints Prayer”). If you know Pat’s work, then you know that styles can be all over the place, but here they mostly center around quietly expressed sentiments with elements of jazz, folk, and low key rock and roll. It is a sleepy, nighttime album, with peaceful tracks like “Count Me Out” and opening track “Animals”. “Shame About You” amps up the energy a bit, bringing to mind uptempo Velvets or maybe even Jonathan Richman. The title track is somnolent, jazz-inflected pop, the perfect slow dance for a cold winter’s night. Part of me also imagines a musical line drawn between Pat and Robyn Hitchcock, as much for the vibe as the eccentric nature of it all. “Tombé Dans Les Pommes” is French cafe music, perfect for settling into after a long stroll along the Seine. “All The Saints” ups the energy a little, and is more typical of Pat’s work from the mid to late 80s. Lovely indeed! “Mercy” is heavily reminiscent of late period Velvets, and this is never a bad thing in my mind. “Black Raoul” has a bit of an R&B feel and mines the standard three chord blues riffs heard often in the 50s and 60s. “Shakey” is atmospheric and sentimental, and Pat dedicated the song to Brian Wilson. “Solar Core” kicks it up a bit, but is standard Butcher fare. “Saint’s Prayer” has ghostly voices and is openly psychedelic, even approaching dream pop territory. It is my favorite song here, not only because of the nods to the aforementioned genres, but also because it is stylistically different from the rest of the album. In summary, Last of the Gentleman Adventurers won’t rock you like a hurricane, but its unhurried way of enchanting you with its cool, mellow vibes might just suck you in. Recommended highly by this long time fan.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13026,7 +13020,6 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 	Are you going to write a book? 
 	</div>
 	)})}
-
 	${jbc_footer}
 
 #live	endif
@@ -13040,7 +13033,6 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 		<h3>CAUTION - This is a robotic translation of the original German publication</h3>
 		The 1980s were also famous as the time when one could get far as a musician if one had the right taste. In the quotationpop counted above all, which plates one found good. The British guitars band The Jazz Butcher, unlike their name suggested, especially the heart-warming pop of the late Velvet Underground well or the then still young Jonathan Richman. Bands, who were warming themselves by the fire of their heathen, there were many, and today one wonders: What has become of them all? The Jazz Butcher have just kept going. Last year, they released an album in small editions themselves. Now, "Last of the Gentlemen Adventurers" by the indie label Fire Records has been reissued, and you have to say that such an exquisite suite of sun-drenched pop pieces has not been heard for a long time, THOMAS BÄRNTHALER
 	)})}
-
 	${jbc_footer}
 
 #live	endif
@@ -13248,9 +13240,7 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 	Crown deserved, just listen to songs like "Party Time", "Mr Odd" or "Get It Wrong" to convince yourself ...
 	</div>
 	)})}
-
 	${jbc_footer}
-
 #live	endif
 
 #define	2016_press_rollingstone_germany.html
@@ -13271,7 +13261,6 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 	<p />
 	3 1/2
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13295,7 +13284,6 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 	<p />
 	Tickets cost £2.50 and doors open at 7.30pm.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13319,7 +13307,6 @@ In April 2017, we finally discovered him on stage in London , during a too brief
 This will be the first of the meetings offered this season at the Barbusse neighborhood center (MQB) in Malakoff by Artsolis. Until June, at the rate of almost one per month, will alternate concerts labeled pop and folk (with the idea of bringing together musicians with similar aspirations to have them play together) and meetings devoted to chamber music, baroque, tango, traditional Scottish songs, etc. We will therefore have the opportunity to come back to it.
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13346,7 +13333,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	<p />
 	Thanks to Alice at Fire records.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13539,9 +13525,7 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	<li>40,000 enraged Korean shopkeepers from South Central marching on the Mondrian Hotel</li>
 	</ul>
 	</div>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13644,11 +13628,8 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	freely as they plunder other people's drum beats. Wilson work six hours
 	a day every day to bring you the music. Always read the small print. Your
 	home is at risk.
-
 	</center>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13783,7 +13764,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	${g_credit(g=Pat Fish\, NN1, d=2002-07-09)}
 	</div>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13797,7 +13777,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 
 	<p class="iview_outro">THE JAZZ BUTCHER -- "Condition Blue" (Sky). Appearing Friday with the Eggs <a href="${jbc_gigs}/1992/May1.html">at the 9:30 club</a>. To hear a Sound Bite from this album, call 202/334-9000 and press 8124.	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13870,7 +13849,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	<p />
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13923,7 +13901,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	However the situation is that we behave like little children in a toyshop. We are playing with something and running away to try something else. Because there is something new in every corner."
 	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -13957,7 +13934,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	"People falling over In the street!" 
 	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -14023,7 +13999,6 @@ So, while most independent records are about as joyful as having a nail banged s
 Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -14501,9 +14476,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	you get harmonic overtones. Other than that I don't know what to say - let the
 	spirit of Chan enter your fingers !!
 	</div>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -14724,9 +14697,7 @@ As you can see, I have my finger very much on the pulse.
 <div class="iview_q">SE: And lastly, if you had to choose a line from a poem or a song that best sums up the way you feel about the world, what might that be?</div>
 <div class="iview_a"><p /> This is from a novel, Beckett's <em>Molloy</em>, but it kind of hits the spot: “And as for myself, that unfailing pastime, I must say it was far now from my thoughts. But there were moments when it did not seem so far from me, when I seemed to be drawing towards it as the sands towards the wave, when it crests and whitens, though I must say this image hardly fitted my situation, which was rather that of the turd waiting for the flush.”	<p />
 </div>
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -14813,10 +14784,7 @@ Contrary to the above statement, I first met Alan two days after that fateful re
 David J
 (Former 'Emperor of Ice Cream')
 </div>
-
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -14911,7 +14879,6 @@ Special thanks to Pat Fish
 </div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15317,7 +15284,6 @@ Special thanks to Pat Fish
 	<div class="iview_a"> Man walks into a bar…</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15577,7 +15543,6 @@ Special thanks to Pat Fish
 	</div>
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15677,7 +15642,6 @@ Special thanks to Pat Fish
 	There are things that I don’t like about Distressed Gentlefolk, though when I listen to it I am usually pleasantly surprised. I think that it could have used a couple more decent songs, to be honest, and a bit less digital reverb. Then again, that squeaky plastic crocodile at the end of Domestic Animal still blows my mind and breaks my heart, all at the same time.
 	</div>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15719,7 +15683,6 @@ Special thanks to Pat Fish
 <p class="p1">“We never felt the urge to sound fashionable, which is probably why most of those old records still sound enjoyable today,” he says. “We were young and full of enthusiasm and weird, dogmatic ideas, and more than half the time we had no idea what we were doing. We were learning on the job and sometimes falling down in public. It beat the hell out of working in an office.”	<p />
 <p class="p4">—<em>Michael White </em>	<p />
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15745,7 +15708,6 @@ Special thanks to Pat Fish
 	<p />
 	-- <i>Bruce Dessau</i>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15797,7 +15759,6 @@ Special thanks to Pat Fish
 	<p />
 	"The song's not about her, though obviously, one has had a thing about her since one was so high. It's some thing that afflicts the male heterosexual element of society. It's more about that Californication culture, all those rich self-help books. They have a certain [look], the colors: on the paperback cover are always of a certain kind, they always look a bit mescaline-damaged or something." 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15835,7 +15796,6 @@ Special thanks to Pat Fish
 	LJR – Thanks Max, you’ve given me gold.
 	</div>
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15863,7 +15823,6 @@ The final album in this set is Distressed Gentlefolk. Here we find the Butcher p
 The Jazz Butcher existed in that part of our lives which was always student digs, disappointing parties and long nights wondering about the meaning of it all with a wry, quirky sense of humour. The songs are full of nervous love affairs in elevators going nowhere and parties of the mind where everything slips into chaotic reality. They are a band well worth re-visiting or discovering for the first time. A release very much recommended.
 	<p />
 )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15899,7 +15858,6 @@ The Jazz Butcher existed in that part of our lives which was always student digs
 	Perhaps wisely, the folks at Fire Records didn't attempt to compile the "best" Jazz Butcher cuts here on The Wasted Years. Rather, by serving up the first 4 albums, The Wasted Years serves, instead, as 41-track crash-course into one of the best, more underrated, and creative acts from those wilderness years between the first few waves of post-punk and the semi-renaissance of the C86 period and after. Wildly unlike anything else being cranked out in the early Eighties on either side of the Atlantic, the music of The Jazz Butcher was richly lyrical, decidedly melodic, and wholly fresh. And it remains so now, more than 3 decades later. One of the odd side-effects of the fact that The Jazz Butcher have been perpetually underrated is that, finally, they will get some real attention as The Wasted Years is a superb introduction into their music, as well as a remarkably and convenient way to get a lot of great music all at once. 
 	<p />
 )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15916,7 +15874,6 @@ The Jazz Butcher existed in that part of our lives which was always student digs
 	<p />The music is, perhaps not surprisingly, all over the place, but never dull. There is acid garage rock, stomping Antmusic, dub reggae, Bavarian waltzing, and, of course, some jazzy numbers with cool, finessing solos from Eider. All in all, there is an airtight, five-star double-album to be culled from <i>The Wasted Years</i>, but compilation albums are already available, and the full-on Butcher experience is well worth the price of admission. The band would subsequently sign with Creation Records and release even better, more consistent material. Amidst temporary leaves of absence and side-projects, they remain a worthy concern and still perform live. With any luck <i>The Wasted Years</i> is the first salvo in a career appreciation that is long overdue.&nbsp;
 
 )})}
-
 	${jbc_footer}
 #live	endif
 
@@ -15931,9 +15888,7 @@ Fire Records has the knack for exhuming the nan-nan of the 80's British pop. Aft
 Travel, Distressed Gentlefolk) are here recorded. The time (1983-86) when the big brown with a black Telecaster signed at Glass Records (with young shoots named Pastels, Spacemen 3 or Teenage Fanclub - not bad is not it?). We find all the talent of Pat Fish, between Velvet souvenirs, delusions on-realistic free, humor typically English jazzy fantasies, cabaret kink-hers ... And especially a few fucking songs! The fifth LP, Fishcotheque, is also a wonderful album. But this is another story. And another disc. [BL]
 	</div>
 	)})}
-
 	${jbc_footer}
-
 #live	endif
 
 #define	20171020_magic_revue_206.html
@@ -15963,9 +15918,7 @@ Travel, Distressed Gentlefolk) are here recorded. The time (1983-86) when the bi
 	Cédric Rouquette
 	</div>
 	)})}
-
 	${jbc_footer}
-
 #live	endif
 
 #define	20171101_thevinyldistrict.html
@@ -16015,9 +15968,7 @@ Rebounding nicely is the organ-laced pop-rock of “Nothing Special” followed 
 <strong><em>The Wasted Years</em></strong><br />
 <strong>A-</strong>	<p />
 	)})}
-
 	${jbc_footer}
-
 #live	endif
 
 #define	20171101_allmusic.html
@@ -16029,9 +15980,7 @@ Between 1983 and 1986, the Jazz Butcher were responsible for four albums' worth 
 4/5
 	<p />
 	)})}
-
 	${jbc_footer}
-
 #live	endif
 
 #define	20171103_whenyoumotoraway.html
@@ -16049,9 +15998,7 @@ The Wasted Years is out now as a four CD box set (plus booklet with an essay by 
 	<p />
 
 	)})}
-
 	${jbc_footer}
-
 #live	endif
 
 #define	20171208_undertheradar.html
@@ -16074,7 +16021,6 @@ The Wasted Years is out now as a four CD box set (plus booklet with an essay by 
 	<p />
 	 Author rating: 9/10 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -16097,7 +16043,6 @@ The Wasted Years is out now as a four CD box set (plus booklet with an essay by 
 	<p />
 	The fate of Pat Fish shows that not everyone has succeeded but that there are careers more discreet, less linear (and directed to the top) than others that are just as good. The music of the Jazz Butcher has the flavor of early rock, early emotions, teens hugs and first glasses. It is a music of human warmth, of exaltation, a music that goes from laughter to tears, from the muddy joke to the philosophical projection, from the religious pamphlet to the psychedelic intoxication. It takes a lot of talent to go from cock to donkey and conspire thirty years at this level of excellence.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -16135,10 +16080,7 @@ The Wasted Years, despite its sardonic title, is a worthwhile look back at the p
 
 	<p />
 6.7/10
-	<p />
-
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -16150,7 +16092,6 @@ Nonsense The Jazz Butcher is truly unique group.
 <p />
 They claim to be punk, because they do what they want to. Some songs from Bloody Nonsense seem to support this claim. “Caroline Wheeler’s Birthday Present” is combine grinding guitars with equally harsh vocals. The lyrics are strange: “Caroline Wheeler’s Birthday Present” “was made entirely from the skins of dead Jim Morrisons . . .” “Drink” is a Beatles-sounding tune which extols the enjoyment of imbibing. Vocalist Max Eider proclaims to all: “I hope 1 never get dry before I get old.” “Partytime” and “The Devil is my Friend” are two other ‘party songs’ on the album. President Reagan’s Birthday Present” and “Jazz Butcher-V-Prime Minister” demonstrate that The Jazz Butcher do something besides getting drunk. Other songs like “The Human Jungle” and “Big Saturday” show the band has vocal maturity. These songs sound like The Smiths meet The Dream Academy. Finally, the album portrays the group’s songwriting lunacy. “Death Dentist” and “Grooving in the Bus Lane” are two strange ones. This album may sound really awful. Actually. this album is great for anyone with a sense of humour who appreciates ‘unique’ music.
 )})}
-
 	${jbc_footer}
 #luve	endif
 
@@ -16186,7 +16127,6 @@ Pat's taking a breather (how normally can you breathe with a record company rep.
 <p />
 Godsend and godspeed. Look no further, as Pat insists, “the flesh and blood is all there is." Bloodsuckers, Imagemakers, step aside, because the conspiracy is coming to town.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -16201,7 +16141,6 @@ the record.
 <p />
 The Jazz Butcher dishes out no great promises of hope nor does he hold any lofty goals for stardom (he formed The Jazz Butcher while drunk one evening). Nonetheless, lack of professional aspiration and publicity doesn’t make the results of Fishcotaque any less essential.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -16229,7 +16168,6 @@ It’s good for bands to explore new styles of music, but if something doesn’t
 <p />
 Kate Flaherty reviews new alternative music from the record library of WWPV-FM.
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -16255,7 +16193,6 @@ Kate Flaherty reviews new alternative music from the record library of WWPV-FM.
 	<p />
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -16417,7 +16354,6 @@ Il devrait sortir, sur le label Glass qui a été relancé sous le nom Glass Mod
 Photos : Vincent Arquillière (Londres, 2016, et Fontenay-aux-Roses, 2019).	<p />
 
 	)})}
-
 	${jbc_footer}
 #live	endif
 
@@ -16602,6 +16538,8 @@ Fish never had qualms about referencing people we couldn’t possibly be expecte
 As densely English as Fish’s music is, he had an anti-isolationist vision of the country, with a sensibility that spanned Europe and profound musical influence from North America. “Sea Madness,” a pastoral folk tune with warm, tired horns, is a tribute to a legendary figure on the local Northampton music scene, an immigrant from Istanbul called Turkish George. “Sebastian’s Medication” seems to have Brexiters in its sights when Fish dresses down the gammons “pining for some ill-defined imaginary nation, antecedents they would struggle to name.”
 <p />
 As soon as this clear statement comes into view, Fish dances away from it, invoking the right’s favorite shibboleth of “political correctness gone mad.” He liked to keep himself just out of frame, unpinned to any didactic point of view. Inasmuch as The Highest in the Land is a winning globalist view from the provinces, it is not concerned with progressive lip service. “Any moment now, somebody’s going to say ‘toxic,’ that’s assured,” Fish sings on “Running on Fumes.” “Yes, ’cause people love to talk that way, but people only ever made me bored.” His misanthropy is comprehensive, unmalicious, and countered by empathy and sentimentality. “I never really identified with the ‘social commentator’ thing, any more than I did with the asinine ‘Monty Python of rock’ label with which some deaf people tried to saddle us back in the ’80,” he said in a 2020 interview. But The Highest in the Land, a just and honest headstone, captures the substance and self-definition of a singular songwriter where words and labels fail.
+		<p />
+		7.5
 		)}
 	)}
 	${jbc_footer}
@@ -16627,7 +16565,23 @@ For about ten years there was no news of The Jazz Butcher, when in 2012 he retur
 Between poetry and jazz settings, reverence for Bob Dylan and the new-wave, Pat Fish puts together a collection of splendid songs, including sarcasm (“My hair’s all wrong / My time ain’t long / Fishy go to Heaven, get along, get along” on ‘Time’) and urgency (“I said I would break my stupid life in two / For half an hour alone with you” on ‘Never Give Up’) with a cosmopolitan touch for ‘Sea Madness’. The album produced by Lee Russell (formerly with The Moons and Nada Surf) is the ideal starting point to discover this great songwriter, man of the world bringer of peace.
 		)}
 	)}
-${jbc_footer}
+	${jbc_footer}
+#live	endif
+
+#define	20130330_press_mojo.html
+#live	if (getval(page) = 20130330_press_mojo.html)
+	${extractPress(
+		body=${literalizeCommas(
+The Fall's gnarly ideologue was, circa '83, post-Hex Enduction Hour, one of indie-rock's true underground icons.
+<p />
+According to The Jazz Butcher, aka Pat Fish, an Oxford graduate with literary ambitions heavily factored into his musicality,
+the "Southern Mark Smith" idea was thieved from a ${aero} review, where singer ${gerard} was thus summarised.  He took is
+as an intriguing paradox, "like a lush Sahara", and turned it into a rambling debut single, which
+duly set him up for an under-achieving career ate ${creat}.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
 
 #define	20211112_press_mojo.html
 #live	if (getval(page) = 20211112_press_mojo.html)
@@ -16636,7 +16590,8 @@ ${jbc_footer}
 Pat Fish announced himself as a singular talent with 1983 debut In Bath Of Bacon, summoning zombies, sasquatches and "sex engines" over outrageous lifts from Wilson Pickett, The Bar-Kays and The Normal.The Londoner proved a fiercely literate talent over three more albums partly defined by the Wes Montgomery filigree of guitarist Max Eider. Four years of heavy touring (and drinking) made them US college radio favourites. But when Eider split in 1987, Fish went deeper, issuing intricately layered, sample-detailed LPs for Creation that revealed a one-off animist songwriter, capable of gentle mirth and gut-wrenching sadness. A committed prole and erudite raconteur, Fish had just completed 13th LP The Highest In The Land when he died peacefully at home, two days after ill health forced the cancellation of a live Facebook show.
 		)}
 	)}
-${jbc_footer}
+	${jbc_footer}
+#live	endif
 
 #define	20211007_press_illlive.html
 #live	if (getval(page) = 20211007_press_illlive.html)
@@ -16675,7 +16630,287 @@ So there is that: We, his fans, had helped him to not die destitute or in despai
 Another celebrity I follow on Facebook (but who is not a friend), legendary illustrator Sandra Boynton, posted this photo yesterday, which she took in her office as the sun set:
 		)}
 	)}
-${jbc_footer}
+	${jbc_footer}
+#live	endif
+
+#define	20220121_press_mancreview.html
+#live	if (getval(page) = 20220121_press_mancreview.html)
+	${extractPress(
+		body=${literalizeCommas(
+For anyone who isn’t aware or is aware of the late Pat Fish’s back catalogue of work, “The Highest In The Land” is an album which is testament to his talent, charm, spirit and wit. Collaborated with Dave Morgan (The Weather Prophets), the album is a cool breeze of neo-jazz, swing, post-punk, new-wave, neo-psych, neo-blues and alt-rock all meticulously crafted to create a distinctive, sophisticated and foot-tapping album. It’s an album that revisits the classic roots of jazz in an underground of smoky strings, beatnik brass and breezy beats added with a cocktail of jangly reverberation.
+<p />
+Listening to the album is like taking a long road-trip through the avenues of life, reflecting at the crossroads and looking back with warm nostalgia. It’s a melancholic map of love, politics and philosophical musings that is lit up by the sun-drenched spirituality. Along with the earnest lyrics, the album touches the heart and empathises with the soul. It’s through the sheer quality of the songs presented that the album stands out as a timeless work of art, that enjoys the joviality, the low-fi  leanings, with a few belly-laughs along the way. It’s through the on-set chemistry of the band, that the album effortlessly flows, creating a spontaneous stream of subtle musical mutations.
+<p />
+Melanie Hargreaves’ Father’s Jaguar, swings into action in a  breeze of farfisa fog and tepid taps. It’s a cool-cat excursion to neo-jazz, in a sprightly sing-along of warm nostalgia and soul yearnings. Along with the hazy horns and free-styling flickers, Melanie Hargreaves’ Father’s Jaguar ascends from the vaults of New Orleans, whilst intermixed with a backdrop of urban post-punk. It’s a great opening track, which sets the tone for the rest of this splendid album.
+<p />
+Through the spacey-synths and drones, Time captures the existentialistic essence of the track, whilst floating towards the fifth dimension of New-wave. Through the bobbing bass, sophisti-pop jangles, Time travels towards the funked-up realms of Post-punk, whilst creating a backdrop of urban spoken-word.
+<p />
+Through the up-beat drums and jangly riffs, Sea Madness dives into the pools of neo-folk, whilst soaking up the sentiments of the track. Through the elongated vocals and poetic lyrics, Sea Madness floats wistfully aside the farfisa fog, whilst heading towards a neo-psych shore.
+<p />
+Never Give Up swirls and whirls in a repetition of lovelorn lyrics, aside the neo-psych vapour. It’s pensive poetry steeped in dark romanticism and whose ballad-esque reverberation resonates in the shadows of alt-country/blues.
+<p />
+A Coast May 1963 resides in the 60s lounge of bossa-nova jazz, that surfs aside the choppy strums of Spanish shores. It’s an instrumental gem, that farfisa flows towards the baroque-rocks of neo-psychedelia. Along with the cascading sweeps of Orchestral pop, A Coast May 1963 remains in the time-capsule of a golden age.
+<p />
+Running on Fumes pulsates with upbeat drums on the mountain tops of alt-country, beneath the farfisa fog of neo-psychedelica. It’s a fast-moving track, whose thought-provoking lyrics and catchy chorus, head-spins you into a contemplative corner of neo-blues.
+<p />
+The Highest In The Land side-saddles like a cosmic cowboy across an alt-blues highway. It’s a captivating track, whose intriguing lyrics transcend a spiritual awakening in the realms of spoken-word and punk-poetry. Along with the flicker riffs and dusky drones, The Highest In The Land peers from celestial heights, whilst taking a trip to the psychedelic rock era of yesteryear.
+<p />
+Sebastian Medication is a breezy and combatant track that saunters and shouts from its political soapbox. Lyrically astute, Sebastian Medication flies the post-punk flag, whilst reflecting from its beacon of fuzzy, jangly light. It’s an inflamed catharsis, a champion of the underdog, a wilful stance in an age of uncertainty.
+<p />
+Goodnight  Sweetheart is a poignant slow-burner, that quivers and vibrates from every iota of emotion. It’s a track that is steeped in melancholy and whose crestfallen lyrics pull from its neo-blues/psych heart-strings, and lingers in the shadows of time and space.
+<p />
+Listening to the Jazz Butcher’s album ” The Highest In The Land ” is a bittersweet experience. On one hand it’s a sensory pleasure, a real joy to listen to and then on the other hand, it’s so sad to know that this is a posthumous album. For anyone who knew Pat, they all said the same thing – that he was a lovely, intelligent, funny, charismatic and talented person who was taken too soon. However, on a positive note, this album is a celebration of Pat’s life and the music that brought so many people happiness. May his legacy live on.
+<p />
+“The Highest In The Land” is dedicated to Patrick Guy Sibley Huntrods AKA Pat Fish – The Jazz Butcher (20th December 1957 – 5th October 2021)
+<p />
+Credits:
+<p />
+Pat Fish- Vocals/Guitar
+<p />
+Tim Harries on bass
+<p />
+Dave Morgan on drums
+<p />
+(Additional guitars by Joe Woolley, Peter Crouch and Max Eider. Album produced by Lee Russell.) 
+<p />
+“The Highest In The Land’ is released on  5th February 2022 Tapete Recores
+<p />
+<p />
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+
+#define	20220208_press_popmatters.html
+#live	if (getval(page) = 20220208_press_popmatters.html)
+	${extractPress(
+		body=${literalizeCommas(
+The Highest in the Land is the Jazz Butcher‘s (aka Pat Fish, née Patrick Huntrods) first studio album since Last of the Gentleman Adventurers in 2012. Sadly, it is also his last. Fish died at home in October 2021. He was only 63, but on “Time” from the new record, he seems resigned to his fate: “My hair’s all wrong / My time ain’t long / Fishy go to Heaven, get along, get along.” In a recent series of fan Q&A videos, Fish is hardly seen without a cigarette or a pint in hand. He did it his way, playing small club shows and, later, online sessions with his friends, staying classy, with no regrets.
+<p />
+This intimate, comfortable mood translates to The Highest in the Land. The sultry, woozy, 1920s-style shuffle of “Melanie Hargreaves’ Father’s Jaguar” sets the tone, sounding like it is wafting in from the smoky backroom of a bygone speakeasy. The appearance of longtime foil Max Eider on guitar adds to the vintage feel.
+<p />
+Within this cozy milieu, The Highest in the Land is typically eclectic, touching on several styles that Fish is fond of—pop, rock, rockabilly, blues, and, of course, jazz. All of it is grounded in pleasingly jangly hollow body guitar. The one exception to the overall feel, and the one musical surprise, is the instrumental “Amalfi Coast May 1963”. The track sounds exactly like its title, referencing an Italian coastal village. The gently shuffling rhythm and odd time signature lead to swooning, widescreen strings, and a melody that suggests drama, but not enough to disturb the cocktail in one’s hand. It’s a retro easy-listening treat that would be equally at home on Bert Kaempfert or Saint Etienne records, one that reveals a musical sophistication that is easy to overlook given Fish’s pop smarts.
+<p />
+By the time they reach their later careers, some artists reach the point where the music is primarily a means to experience their lyrics, wisdom, and general gravitas. Leonard Cohen, Tom Waits, and Lou Reed come to mind. Is the Butcher worthy of such company? Surely. Although he did not reach the same level of critical attention or even commercial success, Fish was as keen, witty, insightful, and, when necessary, as ruthless.
+<p />
+The Highest in the Land provides plenty of evidence. While the album is missing the manic discontent that often made its way into earlier work, the relative restfulness of the music belies Fish’s disillusion and frustration with the current state of affairs.
+<p />
+When writing about any Jazz Butcher release, the temptation is to list off all the great vignettes, images, and one-liners, and The Highest in the Land is no different. “Lemmy and Bowie and Prince—all gone,” Fish laments on “Running on Fumes”. The lesson? “People like us can’t have nice things.” The track is a takedown of those who instill fear and struggle for their own gain: “Is there anything as cheap as chasing profit from despair?” he asks. Though he leaves the listener to fill in the blanks, it seems he must be speaking of politicians, global elites, and, quite possibly, corporations. “Any moment now somebody’s going to say ‘Toxic’, that’s assured,” he predicts toward the end of the song. He may be older, but Fish is still pretty quick on his feet. The music, too, is jaunty skiffle, an album standout.
+<p />
+That isn’t the only place where Fish offers some vitriol for today’s social media-obsessed, cancel-happy culture. On “Sebastian’s Medication”, he calls it “political correctness gone mad”. His assessment is astute and eloquently worded enough to preclude any suspicion he is acting the curmudgeon: “[Everybody] screaming on the laptop in the basement / Store all the hate up and wait for it to burst out / I can’t believe you’re such an architect of your own destruction.” Again, the Stonesy music follows suit with a drawn-out, multi-tempo, distorted guitar solo. It’s not quite the incendiary noise of some past Butcher tracks, but it is easily the album’s most energized moment.
+<p />
+Those who know Fish’s music will know he was also an unrepentant romantic. Thus, The Highest in the Land features a couple of his earnestly pretty ballads in “Never Give Up” and the poignantly-titled closing track “Goodnight Sweetheart”. Even here, though, the edge remains sharp. “Never give up,” Fish declares on the former, “until you want to.” His way, indeed.
+<p />
+Throughout, Fish’s distinctive tenor is still boyish but also wizened and strangely comforting. Though it is certainly not a major release in what amounts to an incredible, 40-year canon, The Highest in the Land takes on particular importance because of its posthumous nature, rendering its creator’s premature death even more saddening. While the Butcher may have had nothing left to prove, he certainly had much more to say.
+<p />
+RATING 7
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220210_louderthanwar.html
+#live	if (getval(page) = 20220210_louderthanwar.html)
+	${extractPress(
+		body=${literalizeCommas(
+The final, and farewell, album from The Jazz Butcher and its uniquely free spirited and offbeat frontman Pat Fish is a joyous celebration of his music. Trademarked by his wry observational humour, and cutting commentary on life, while at the same time containing a touching and often heartbreaking poignancy as he says goodbye across these nine sublime songs.
+<p />
+Parting Shot
+The Highest in the Land feels like Pat’s version of Bowie’s Blackstar (he makes a nod to Bowie alongside Lennon & Prince in Running on Fumes) or Leonard Cohen’s, You Want it Darker? A confrontation of his, and everyone else’s mortality, almost a knowing nod that this would be his parting shot.
+<p />
+Don’t get me wrong, the album isn’t filled with doom and gloom or a “woe is me” attitude. The album is classic Pat Fish, it is packed with his quirky dry sense of humour and pathos, and filled to bursting with his talent for painting vivid and eccentric imagery in his lyrics.
+<p />
+Sense of Reminiscence
+The album opens with a touching sense of reminiscence on the smoky late night jazz bar feel of Melanie Hargreaves’ Father’s Jaguar. It is a perfect illustration of the points made above without ever sounding dewy-eyed or contrived.
+<p />
+The second song and single, Time, was released around the the same time as Pat’s death, the lyrics really hitting hard then, and they haven’t lost their impact or poignancy over, well, time…
+<p />
+“My hair’s all wrong. My time ain’t long.
+Fishy go to heaven, get along, get along.
+I’m having too much fun to get anything done.
+Leave me be. I’m not hurting anyone.”
+<p />
+Irascible Form
+With the songs on The Highest in the Land, Pat had hit a seam of gold in his songwriting. He was on top irascible form. Only he could come up with a lyric like “Existential threats pile up like mashed potato snow around my door, they say that fears a mans best friends, and every day it seems like I have more” on Running on Fumes. The song sounds like an upbeat caper but in actuality is a tetchy observation of the state of affairs in a post Brexit, COVID hit Britain where we’re all running on fumes.
+<p />
+The penultimate song, Sebastian’s Medication, is a hilarious romp making barbed digs at everything from gammons to political correctness, keyboard warriors and politicians. Still, the lyrics carry a sense of poignancy “you ain’t gonna get me just yet…no”.
+<p />
+Goodnight
+The final song is the utterly beautiful Goodnight Sweetheart. Softly brushed drums and elegantly played guitar soundtrack the poignant nod heartfelt lyric. Pat’s last word on the album is “Goodnight”. It is delivered in such a manner that it leaves you totally bereft and emotionally drained.
+<p />
+This is an undoubtedly beautiful album. Given the lyrics and the circumstances of its release, it is often a difficult listen. Over time though (there is that word again), like the aforementioned Blackstar and You Want it Darker?, I’m sure these songs will be savoured and  this album enjoyed as one of the most special of releases in The Jazz Butcher catalogue.
+<p />
+RIP Pat, I hope you found Lot 49..
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220216_magnetmagazine.html
+#live	if (getval(page) = 20220216_magnetmagazine.html)
+	${extractPress(
+		body=${literalizeCommas(
+For devoted, longtime fans of Pat Fish (a.k.a. the Jazz Butcher), The Highest In The Land could be a difficult listen, as the brilliant, occasionally eccentric but always entertaining British singer/songwriter died of a heart attack in October at 63. It’s a treat to have another Butcher outing—the first since 2012’s The Last Of The Gentlemen Adventurers—but spins of this final LP are almost unbearably sad in spots.
+<p />
+The Highest In The Land’s nine songs were penned over a seven-year period, part of which saw Fish undergo cancer treatment. He was free of the disease during recording, but the subject of mortality permeates the proceedings. Of course, this is said with the knowledge of Fish’s untimely demise; maybe if he were still alive, lyrics like “My time ain’t long/Fishy go to heaven, get along, get along” (from the nearly funky “Time”) would be heard in a different light, as the Butcher addressed death many times over his roughly 40-year career.
+<p />
+Or maybe if this was his latest outing and not his last, the closing, elegiac “Goodnight Sweatheart” wouldn’t hit so hard: “Here we are, where life became impossible/We want to be handled softly, kissed and told that we’re worth something.” (Cue the waterworks when Fish quietly says, “Goodnight,” at the song’s conclusion.) Fairly subdued musically, The Highest In The Land isn’t all doom and gloom. Fish’s always sharp sense of humor remained intact, with funny and insightful moments like “Running On Fumes” and “Sebastian’s Medication” shining just as brightly as the poignant ones.
+<p />
+Most of the aforementioned aficionados will feel that The Highest In The Land stands with the best of the Butcher’s catalog; it may be too soon to fully cop to that, but that’s only because the bar is so damn high. Either way, it serves as a beautiful epitaph for a great, underrated artist gone far too soon, and that’s reason enough to celebrate its existence even as we mourn the passing of its creator.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20211017_magnetmagazine.html
+#live	if (getval(page) = 20211017_magnetmagazine.html)
+	${extractPress(
+		body=${literalizeCommas(
+This is the second appreciation I’ve written about a dead musical hero. The first, for guitar-pop legend Tommy Keene, came easily in some respects. We were friends, and while his 2017 death was a shocking gut punch from which I’ve not fully recovered, it wasn’t difficult to quickly express the depth of that loss.
+<p />
+Patrick Huntrods, a.k.a. Pat Fish—whose rock ’n’ roll nom de plume was the Jazz Butcher—died October 5 at the too-young age of 63 of a heart attack. I’d seen him play three times, twice at the old 9:30 Club in Washington, D.C., where backstage security was nonexistent, but I never did meet him. Who this fabulously talented British singer/songwriter was as a person is beyond me, though given his obvious intelligence and wit, he was a likely a fine chap.
+<p />
+What I can offer about him is that from 1983-2000, the prolific Butcher released 11 LPs (as well as various compilations, live records and numerous singles) and another, The Last Of The Gentlemen Adventurers, in 2012. Describing his sometimes quirky, always distinctive songs—and why they continue to resonate—is tricky. (This is an unfortunate shortcoming for a music writer, so bear with me.)
+<p />
+Much of the Butcher’s early output tended toward silliness like “Love Kittens” (“Love kittens, ’cause kittens aren’t horrible”) from 1983 debut In Bath Of Bacon or absurdist drones like “Caroline Wheeler’s Birthday Present” from 1984’s A Scandal In Bohemia, but all of it was couched in enough melody as to not be completely inscrutable. Even then, and especially later, he was equally adept at heartrending tales of romantic angst (like “Angels,” from 1986’s Distressed Gentlefolk, and pretty much the entirety of 1991’s Condition Blue).
+<p />
+Those first few records are essential, but the Butcher reached his creative peak during the five-album run that started with Distressed Gentlefolk and ended with Condition Blue. 1988’s Fishcotheque, 1989’s Big Planet, Scarey Planet and 1990’s Cult Of The Basement complete the quintet and stand with the best LPs of that era; Fishcotheque, in particular, is possibly the perfect distillation of the Butcher’s brilliance. No one else could write an anti-chicken-consumption rap/rant like “The Best Way” (“There’s chicken on your shirtfront, greasy and thick/Someone tell the manager the chicken is sick/The whole idea’s sick”) and a jangly, melancholic closer like “Keeping The Curtains Closed (“He just stood there at the bus stop at the back of the line/And there were too many people, there was not enough time/And now he’s keeping the curtains closed”).
+<p />
+The Butcher followed those efforts with two underheard and underrated records (which really describes his entire catalog), 1993’s Waiting For The Love Bus and 1995’s Illuminate. 2000’s Rotten Soul found him reunited with drinking partner/guitarist Max Eider, who left the Jazz Butcher Conspiracy after Distressed Gentlefolk; it’s decent, but the aforementioned The Last Of The Gentlemen Adventurers is even better and a welcome return after too long of an absence.
+<p />
+An old pal, one whom I can thank publicly here for introducing me to his music—props, G.W.—asked me in late September if I’d thought about interviewing the Butcher about the upcoming collection, Dr Cholmondley Repents: A​-​Sides, B​-​Sides And Seasides (Fire). I had to admit that the idea of talking to him gave me pause—could I keep it together without fawning?—but I decided I’d do it and made a note to contact his publicist.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220204_press_ghettoblaster.html
+#live	if (getval(page) = 20220204_press_ghettoblaster.html)
+	${extractPress(
+		body=${literalizeCommas(
+After 13 proper albums, 3 EPs, 3 Live albums, and 13 compilation releases, the group’s 14th, and posthumous release after the death of Pat Fish, The Highest In The Land (Tapete Records), closes the history of The Jazz Butcher’s extensive 40-year career. What was with the final opus for the group, leaves a remarkable collection of songs filled with jangly pop numbers, hints of jazzy swing & blues, monosyllabic deliveries, and odd bouncy & see-sawing jaunts, not always at the same time. There’s a great deal of beauty strewn across the release, but it’s the sprawling “Sea Madness,” with horns gently fitted within, and jangly guitars that’s inviting with Pat Fish’s soft voice caressing through these calm waters. It’s easy to fall in love with how masterfully soothing the track is. It’s moments like this, and on “Never Give Up” that are able to cover listeners in a blanket of delightfulness around airy guitars, slides, and delicateness.
+<p />
+The Jazz Butcher is obviously far from being a one-trick pony though, and “Melanie Hargraeves’ Father’s Jaguar” can attest. Here the band takes Squirrel Nut Zippers-like movements while still remaining as Butchery as it ever was. The canned horns, gypsy jazz chords, and backing vocals allow for its 1930’s era moment while keeping a firm footing in the present. The lament of “Goodnight Sweetheart” is something that’s easily felt here with Pat Fish’s soft delivery offering his final fare thee well moment. The soft brush-on-drum is appealing, fitting its theme. It is drenched in melancholia and the emotions are felt with his words.
+<p />
+Music lost a great artist in Pat Fish and while The Highest In The Land marks the band’s finality, we can always refer back to a stunning catalog of music that will live throughout time itself.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220204_press_whisperinandhollerin.html
+#live	if (getval(page) = 20220204_press_whisperinandhollerin.html)
+	${extractPress(
+		body=${literalizeCommas(
+The Highest In The Land is the final album by The Jazz Butcher that was completed just before Pat Fish kept his promise, to never quit anything for another few years in the Sunshine Home, as he left us falling asleep at home at Fishy Mansions while waiting for his coffee to brew. His passing has hit me harder than almost any other musician, mainly as over the years Pat had become a good friend and was always cool to hang out and chat with, both at his own gigs and when I'd run into him at John Cale shows or the Big Star tribute show where he was one row behind me and was totally made up when Ray Davies came on to sing Till The End Of The Night.
+<p />
+Going back to the first time I met and spoke to Pat at Le Troupeau in Paris, at his first four Solo shows, two sets a night the 6th and 7th April in 1989 in a fabulous cellar bar, we got talking between sets and afterwards about music and travel and all sorts of other things. During the chat Pat suggested that I should join his publicity team, also to make sure I kept all the music papers and fliers I was talking about that had to go on some future computer thing, a promise I have more than made good on.
+<p />
+A week later The Jazz Butcher were playing at The Marquee on the 12th and I ran into Pat before he went on, he then introduced me to his label boss at the time Alan McGee, so he could get me onto the Promo team. Well Alan reacted in the same way he has reacted every time since, when any other friends introduce me to him, by replying "It's you, you tried to kill me!" and walking off or closing the conversation. Pat's jaw hit the floor suitably, I didn't quite know how to reply to that, other than saying sorry for the rather scary late night cab ride I had given Alan a few weeks earlier. Taking him back to his swanky Isle Of Dogs apartment, being new to the job I was rushing everywhere full pelt like a speed freak maniac, we had a close shave that Alan couldn't forgive me for, so my job on team Fishy had gone. Still it hasn't stopped me writing reviews and helping promote Pat ever since and I will miss adding more Live reviews of Pat and whoever is in the Jazz Butcher at the time, almost as much as I'll miss getting more albums by him.
+<p />
+The album opens with live favorite Melanie Hargreaves Fathers Jaguar that has a real Slim and Slam style beat and shuffle for this wonderful story of what happened to that car and how it affected Melanie's father, when it went up in smoke, as the tune is adorned with some lovely mute trumpet and a very pretty acoustic guitar part, this is sophisticated and nicely jazzy with the call and response part having the merest echo of Cab Calloway.
+<p />
+Time is Pat's thoughts on his upcoming demise, over a dubby backbeat, as he makes sure we all know he ain't changing and while he's still around he'll have Time for you. Well as he was commenting on my facebook status' two days before he died, I know that's the truth. As Pat freestyles about how kids are working down mines and making Tik Tok videos, as that ever precious commodity Time is running out for him, but not before he completed this album or made sure this song had a great guitar solo.
+<p />
+Sea Madness is Pat's take on the madness of Brexit or wanting to leave the EU and the idiots who made the process as bad as they possibly could, as Pat was always more of a European Bon Viveur than English fop. As the rather redolent trumpet solo keeps things nicely downbeat as Pat has returned on the Eurostar to St Pancras one last time.
+<p />
+Never Give Up opens with some sparkling acoustic guitar before Pat tells us repeatedly to Never Give Up in the same way he never gave up drinking or smoking or any of his other habits just for a few years in some dreadful hospice or care home. Instead, Pat tells us to embrace our dysfunction and be ourselves, it also makes me want to see evidence of Pat driving monster trucks. As Pat mentions it not being Condition Blue a line that caught me out in a live review a couple of years ago when he first played this song live. Thankfully Pat never gave up till the end.
+<p />
+Amalfi Coast May 1963 has a lush summery feel to it, as if it could be Pat's very own Summer Holiday, or could have come from the soundtrack to one of those TV shows that were on in the school holidays it's a rather wonderful instrumental.
+<p />
+Running On Fumes nicely sums up how exhausted everyone has felt in the last few years at how things have been headed that has only become more apparent in the last couple of years as he invited everyone he hates to a party. As he wants to make his own entertainment with Mackie Messer and others as he feels he is distracted as much as everyone else is while trying to avoid all the toxicity.
+<p />
+The albums title track The Highest In The Land is a slow careful song about spirituality and how he has been a Monk since he was 8 years old, like some English Dalai Lama as this slowly unfolds I just want to be sitting in a pub garden with Pat as the smoke is passed around once more and we all try once more to be the Highest In The Land, but really Pat often really did seem to be that high both before and after performances as this becomes a blues shout out to Black Raoul and all sorts of other cats that had crossed Pat's path on his way to The Highest In The Land.
+<p />
+Sebastian's Medication has a distinctly Syd Barrettesque feel to it, even as it switches from being a song of need for medicine, into a bile ridden song of despair at the mess of Brexit, the Gammons in charge of the whole shitshow, with the psych freak out guitars screaming like some troll in his basement, Pat is still riled up about political correctness as he always was from the first time we spoke back in 1989. This is a truly brilliant indictment of our times.
+<p />
+Goodnight Sweetheart is the perfect passing shot and goodbye to all of Pat's friends and family from Pat to all of us who have known him and seen him around for all these magnificent years. This is Pats own eulogy to his life and career and is a real tearjerker, as I have over 35 years of memories and friendship with Pat to recall, as he sings Goodnight Sweetheart over and over like he is saying it to everyone who called him a friend and who he knew by name, when he says good night one last time at the end of the album it really is his last good night to us all and what a shame we won't be able to have any more Good Nights with Pat. But I am thankful for all the wonderful times Pat was a part of.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220131_press_backseatmafia.html
+#live	if (getval(page) = 20220131_press_backseatmafia.html)
+	${extractPress(
+		body=${literalizeCommas(
+Those of us who knew, knew, and there are many of us, scattered the length and breadth of the island and way beyond, for whom The Jazz Butcher has been a bright, sweet, brilliantly acerbic presence many a long year. The Highest In The Land is a fine encomium and - it hurts to write this, a little - epitaph for Northampton's foremost gentleman and indie bard. If you're new to Pat and his work or had a velleity and have never quite scratched the surface, The Highest In The Land is a rather good place to start; no artist in waning tailspin, here, just the man himself on fine form. Cheers Pat. Let's hope you've swapped the bus lane for something deservedly grander, with your chosen deity supplying you with a vintage Gretsch or three and your own personal cloud. You? You were bloody lovely.
+<p />
+8.4
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+
+#define	20220210_press_bucketfullofbrains.html
+#live	if (getval(page) = 20220210_press_bucketfullofbrains.html)
+	${extractPress(
+		body=${literalizeCommas(
+It’s only a matter of months since Pat Fish slipped out of life, and just the idea of that remains difficult to grasp. I’d been about to text my brother about this fellow doing The Thunderbolt on Thursday you should go and see, and suddenly ‘this fellow’ wasn’t here any more. I wondered then about the recordings; having seen Facebook postings about the sessions in the summer; and it seems both a near-miracle and a benison how quickly they’ve arrived with us.
+<p />
+The greater benison though is what an extraordinary record he has left behind. Across nine songs and thirty-five minutes there is so much variety, wit, and invention, together with quite splendid settings and virtuoso contributions. Both a musical and lyrical delight it captivates and entrances; as the songs become more familiar so too do the echoes they contain and the depths of meaning.
+<p />
+The Highest In The Land was recorded at Dulcitone Studios, a converted chapel in rural Northamptonshire. Lee Russell produced and played keyboards, joined by drummer Dave Morgan and bassist Tim Harries, and various guests including Pat’s longtime collaborator Max Eider. Pat had declared this to be his last recording, and some songs definitely confirm that, but this is anything but a quiet goodbye as I would confidently predict this album’s reputation will only gain stature over the coming weeks, months, and years.
+<p />
+Pat was a European – he’s pictured on the album cover having a quick fag outside the Gare du Nord – so it’s entirely fitting the opener, ‘Melanie Hargreaves’ Father’s Jaguar’ initially sets us down in a Parisian dive bar. The jaunty jazz swing however quickly dances us out of time and spins us a tall tale, or recounts a dream, in which a lilac Jaguar, which isn’t really a Jaguar, immolates on Formby Beach. There’s some delightful trumpet courtesy of Simon Taylor, some brief call and response, and an abiding suspicion of this being a shaggy dog story to cover an escape.
+<p />
+In real life that escape is only to one place and ‘Time’ addresses it; there’s auspiciousness in the title and its inevitable echo of the Bowie song. “My hair’s all wrong / My time ain’t long / Fishy go to Heaven, get along, get along” sung to a ticking-clock beat, is as stark as it gets anywhere; haunted, a mite unnerving, relentless yet restrained and a genuine anger – some quite angry guitar – about lithium mining, before the bravado of “one more shot for Davy Jones”.
+<p />
+Then reverie and near-nostalgia; ‘Sea Madness’ is something of a lament for a Turkish friend, to the memory of Ankara girls, to nights in Paris. The trumpet here carries a profound melancholy but it’s clearly not just personal as the title’s doing double-duty with its gentle punning; “sea madness in the middle of England’s sadness”; and is there, on an album not short of resonances, deep-down an emotional kinship to ‘A Song For Europe’? Echoes present too in ‘Never Give Up’; at the least David J and Bob Dylan have cameos in this delightful benediction, full of the questions we go on asking for a lifetime. Until perhaps that morning when it just seems as well to be off, drifting into a dreamy fantasia of an imagined past soundtracked by ‘Amalfi Coast May 1963’.
+<p />
+Except not yet while ‘Running On Fumes’ remains an option. To the tune of ‘Lily Rosemary And The Jack Of Hearts’ comes another lyrical tour de force; Lemmy and Bowie and Prince may all be gone but the Butcher remains and the words cascade brilliantly; “When I said we could be ghosts I didn’t mean for you to disappear on me/well I hope you’re feeling better, that your life is all you wanted it to be”; until they falter because you may be running on fumes but every so often you have to stop and catch your breath.
+<p />
+Fresh wind attained, the title track comes full of slightly detached braggadocio, as Pat becomes the East Midlands equivalent of a Chicago bluesman, delivering boasts, repetitions, and declarations; “Goin’ to read my bible/goin’ to study my Koran”; over a shuffle enhanced by haunting guitar and keyboards. Then ‘Sebastian’s Medication’ takes another turn, back to the seventies, and what suggests a cross between Syd Barrett and Squeeze, invoking Children Of The Stones and ‘Kung Fu Fighting’, but turns into a lambast of Brexiteer gammons and keyboard warriors accompanied by increasingly wild and mighty guitar from Joe Woolley.
+<p />
+“You ain’t goin’ to get me just yet”; but soon enough for he and Little Jake (like Black Raoul a cat) to be making a reckoning and set it down in the beautiful valedictory ‘Goodnight Sweetheart’ where you sense this suave, slightly down-at-heel dandy having one last drag, remembering fondly “Museum Street on Halloween”, and noting finally that life comes down to wanting “to be handled softly, kissed and told we’re worth something”, before he signs off.
+<p />
+It’s sad we’ll now never hear these songs played live – he performs some of them on The Fishy Mansions Sessions viewable at jazzbutcher.com – but across the span of The Highest In The Land he remains so with us, and as these songs unfold, spurring ideas, spinning tangents, and simply delighting, a conversation continues. For any artist that’s no small legacy, and as good a consolation as we get to take.
+<p />
+The Highest In The Land is available now on Tapete Records. The in-studio photo was taken by Ruth Tidmarsh who also created the ‘Running On Fumes’ video.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220204_press_bigtakeover.html
+#live	if (getval(page) = 20220204_press_bigtakeover.html)
+	${extractPress(
+		body=${literalizeCommas(
+Thanks to high profile efforts by Warren Zevon and David Bowie, it’s not unusual to hear records made by artists who know their times are limited. Add to that list The Highest in the Land, the final effort from Pat Fish, AKA the Jazz Butcher. Though he was free of the cancer he’d been fighting for years by that point, Fish knew he was nearing the end as he finished his twelfth studio album, and made sure he left a hell of a legacy behind.
+<p />
+The record begins with “Melanie Hargreaves’ Father’s Jaguar,” the type of perfectly delectable tongue-twisting guitar pop expected from Fish and his cohorts (which include his original axe-slinging sidekick Max Eider). The impressionistic title track continues the streak along the same lines, while the instrumental “Amalfi Coast May 1963” keeps tongue slightly in cheek with its evocation of sixties-style interlude music. Of course, there’s more here than mere whimsy. The folky “Sea Madness” pays loving tribute to a Turkish immigrant, while the rollicking “Sebastian’s Medication” and the countrified “Running On Fumes” turn his sharply observant eye toward Brexit (and finds it wanting).
+<p />
+But where the album really shines is when Fish contemplates the end of the road. “My hair’s all wrong/My time ain’t long/Fishie go to heaven get along get along” he sings with a sardonic joie de vivre on “Time,” refusing to let his sense of humor abandon him. The line “How can anyone ever be ready for years?” indicates the truth wears on him in “Never Give Up,” which also includes the plea “I would tear my stupid life in two/To have an hour alone with you.” A glimmer of hope shines on that couplet, though, as it’s followed by “You said, ‘That might be arranged.’” The melodies refuse to let the light dim.
+<p />
+The record ends with the gorgeous “Goodnight Sweetheart,” which explores the gray area between disappointment and beauty. “We want to be handled softly, kissed, and told that we’re worth something,” Fish sings, before ending with the repeated invocation of the title. It’s impossible not to be moved by this lovely conclusion to the recording career of a remarkable songwriter. You just want to reach out, touch Fish’s shoulder and reassure him that, as made clear by The Highest in the Land, he’s worth everything.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220210_press_spillmagazine.html
+#live	if (getval(page) = 20220210_press_spillmagazine.html)
+	${extractPress(
+		body=${literalizeCommas(
+The Highest In The Land is a difficult album to review. Pat Fish, who started the band and was in essence, The Jazz Butcher, passed away, quite suddenly on October 5, 2021. When an album is released following such a death, it is difficult to listen and assess the album without the shadow of the artist’s passing hanging over the album.
+<p />
+Fish had been working on this album over the past couple of years, and it was his first studio album since 2013’s Last of The Gentlemen Adventurers. It is classic Jazz Butcher. Fish always had a way of turning a phrase and writing remarkably melodic and joyful music. Sometimes the lyrics don’t match the ‘up’ feeling of the music but Fish had the knack for matching poignant lyrics with pop/bouncing music.
+<p />
+Lyrically, this is Fish at his best. HeFish could always write lines that bring a smile and are a bit painful at the same time, such as in  “Running On Fumes” . “When I said we could be ghosts/I didn’t mean for you to disappear on me.” Only Fish could come up with that sentiment.
+<p />
+As good as the lyrics are on the album, the one instrumental is quite impressive as well. “Amalfi Coast, May 1963” tugs at your heartstrings with its utter beauty. It is emotionally expressive without one word being uttered. It also highlights his instrumentation and skill on the guitar and his ability to arrange music.  It is easy to overlook Fish’s musical abilities, which is sad because his musicianship is quite distinct and unique. And although it is a short, it packs a power punch.
+<p />
+The Highest In The Land  ends with the stunning “Goodnight Sweetheart”, a phenomenal song and a moving track. He jams so much into the lyrics that it reads as a standalone poem. Along with “Never Give Up”, it is one of the best songs Fish ever produced.
+<p />
+Reviewing new music by an artist who has passed away is difficult. Pretending that this is not his final statement to the world helps to listen it a little more objectively. Having said that, it isn’t a stretch to say that The Highest in The Land stands as one of the best Jazz Butcher albums. It is a shame that there is an almost 10-year gap between this and the last one, as I would have loved to have more music from Pat Fish and company, but this is what we have and it is wonderful to have it.
+<p />
+9.0
+		)}
+	)}
+	${jbc_footer}
+#live	endif
 
 #define data.json
 #live if (getval(page) = data.json)

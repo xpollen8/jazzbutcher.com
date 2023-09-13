@@ -91,7 +91,6 @@ const Home = (): React.ReactNode =>
 				</SwiperSlide>
 			)}
 		</Swiper>*/}
-			<ReleaseBlurb lookup='never7' />
 			<HomeBooks />
 			<HomeReleases />
 			<RandomLiveVideo />

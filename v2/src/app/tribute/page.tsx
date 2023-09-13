@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import './page.css';
 import { autoLink, linkExternal } from '@/lib/macros';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';

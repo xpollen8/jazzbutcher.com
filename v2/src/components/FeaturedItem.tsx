@@ -28,6 +28,11 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, cla
 		<div className="release">
 			<div className="album_details">
 				<div className={className} />
+				{!!(useImage?.length && useThumb?.length) &&
+					<Link href={link || useImage}>
+						<Image className="float-right border border-slate-600 ml-2 rounded-md" src={useThumb} width={175} height={175} alt={alt} />
+					</Link>
+				}
 				<span className="album_title">
 					{(link?.length) ? (<>
 							{(link?.startsWith('http'))
@@ -50,13 +55,7 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, cla
 					</span>
 				</>)}
 			</div>
-			<div style={{ maxWidth: '350px', flex: 1 }}>
-				{(useImage?.length && useThumb?.length) &&
-					<Link href={useImage}>
-						<Image src={useThumb} width={width} height={width} alt={alt} />
-					</Link>
-				}
-			</div>
+		<p className="clear_float" />
 		</div>
 	)
 }

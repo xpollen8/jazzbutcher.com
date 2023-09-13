@@ -206,24 +206,10 @@ textplus1 {
 	margin-bottom: 20px;
 	background-color: rgba(243,243,243,0.5);
 }
-.gig_soon:before {
-}
-.gig_soon {
-	background-color: #66ff66;
-	padding: 5px;
-}
-.gig_future {
-	background-color: #aaddaa;
-	padding: 5px;
-}
-.gig_past {
-	background-color: #ddddee;
-	padding: 5px;
-}
 .gig_sumo {
 	background-color: #000000;
-	padding: 5px;
 	margin-bottom: 5px;
+	border-radius: 5px;
 }
 .gig_sumo a {
 	color: #fff;
@@ -236,8 +222,8 @@ textplus1 {
 }
 .gig_eg {
 	background-color: #ddd;
-	padding: 5px;
 	margin-bottom: 5px;
+	border-radius: 5px;
 }
 .gig_eg:before {
 	content: url(https://jazzbutcher.com/images/performance_eg.png);
@@ -259,8 +245,8 @@ textplus1 {
 }
 .gig_wilson {
 	background-color: #ee0000;
-	padding: 5px;
 	margin-bottom: 5px;
+	border-radius: 5px;
 }
 .gig_pane {
 	border: 1px solid #aaa;
@@ -274,7 +260,6 @@ textplus1 {
 }
 .gig_institution {
 	background-color: #eeffee;
-	padding: 5px;
 	margin-bottom: 5px;
 }
 .gig_institution:before {
@@ -282,7 +267,6 @@ textplus1 {
 }
 .gig_nightshift {
 	background-color: #d7d7d7;
-	padding: 5px;
 	margin-bottom: 5px;
 }
 .gig_nightshift:before {
@@ -290,7 +274,6 @@ textplus1 {
 }
 .gig_thetonix {
 	background-color: #000;
-	padding: 5px;
 	margin-bottom: 5px;
 }
 .gig_thetonix:before {
@@ -298,7 +281,6 @@ textplus1 {
 }
 .gig_sonictonix {
 	background-color: #ff0101;
-	padding: 5px;
 	margin-bottom: 5px;
 }
 .gig_sonictonix:before {
@@ -734,7 +716,8 @@ p::first-letter {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin-bottom: 5px;
+	margin: 10px;
+	margin: 7px 2px 7px 2px;
 	padding: 5px;
 	background-color: rgba(175,241,228,0.5);
 }
@@ -755,7 +738,6 @@ p::first-letter {
 	font-size: 1.2em;
 }
 .album_details {
-	padding-right: 5px;
 	flex: 2;
 }
 .album_type {
@@ -763,11 +745,10 @@ p::first-letter {
 	color: #666;
 }
 .album_blurb {
-	margin-top: 10px;
+	padding: 10px;
 }
 .album_purchase {
 	font-size: 1.2em;
-	margin-top: 10px;
 }
 
 .card {

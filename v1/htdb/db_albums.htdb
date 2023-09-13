@@ -471,12 +471,10 @@
 #define	albums[54]->catalog	GLALP 007
 #define	albums[54]->contribution aff
 #define	albums[54]->blurb
-		<p>
 		A lovely interpretation of the Jonathan Richman classic which was originally
 		released in 1979 on the <b>Back In Your Life</b> LP by Jonathan Richman And The
 		Modern Lovers.
 #		The cover version can also be found on the ${affect} 12".
-		</p>
 #define	albums[54]->credit_g	Perfection As A Hipster
 #define	albums[54]->credit_u	Andreas.Hering@stud.uni-hannover.de
 #define	albums[54]->credit_d	2000-10-10
@@ -540,9 +538,7 @@
 #define	albums[59]->year	1986
 #define	albums[59]->contribution lost
 #define	albums[59]->blurb
-		<p>
 		The Jazz Butcher contribution subsequently appeared as an additional track on ${gift1}. 
-		</p>
 #define	albums[59]->credit_g	Perfection As A Hipster
 #define	albums[59]->credit_u	Andreas.Hering@stud.uni-hannover.de
 #define	albums[59]->credit_d	2000-10-10
@@ -557,7 +553,6 @@
 #define	albums[60]->year	1986
 #define	albums[60]->contribution city
 #define	albums[60]->blurb
-		<p>
 		Note: Limited edition on clear vinyl.
 		The Jazz Butcher contribution subsequently appeared on the ${gift2}
 		LP/CD. Having said that, this album also includes an early studio
@@ -565,7 +560,6 @@
 		on guitar as well as &quot;Fear (Is A Man's Best Friend)&quot; by
 		${dj} and a different
 		version of &quot;2:35&quot; by Spacemen 3 amongst others.
-		</p>
 #define	albums[60]->credit_g	Perfection As A Hipster
 #define	albums[60]->credit_u	Andreas.Hering@stud.uni-hannover.de
 #define	albums[60]->credit_d	2000-10-10
@@ -601,9 +595,9 @@
 #define	albums[63]->year	1991
 #define	albums[63]->contribution go
 #define	albums[63]->blurb
-		<p class="annotation">
+		<div class="annotation">
 		Another track from that L.A. babe, ${deirdre}'s radio show.
-		</p>
+		</div>
 
 #define	albums[64]->type	various
 #define	albums[64]->lookup	va_seventeen_3
@@ -615,7 +609,6 @@
 #define	albums[64]->year	1984
 #define	albums[64]->contribution h2o
 #define	albums[64]->blurb
-	<p />
 	Originally issued with the magazine 'What A Nice Way To Turn Seventeen' Issue 3.
 	Publishing details, credits and brief biographies contained in the magazine.
 	Assembled at Woodbine St. Recording Studios, Leamington Spa with thanks to John A. Rivers.
@@ -630,12 +623,11 @@
 #define	albums[65]->year	2000
 #define	albums[65]->contribution indian_summer
 #define	albums[65]->blurb
-		<p class="annotation">
+		<div class="annotation">
 		Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects.
-			<br/>
-			<br/>
+			<p />
 				I contributed a track, recorded on Curtis' computer. It's a version of "Indian Summer" as written by the Beat Happening, and recorded by Luna and Spectrum.
-		</p>
+		</div>
 
 #define	albums[66]->type	various
 #define	albums[66]->lookup	va_abus_126
@@ -665,9 +657,7 @@
 #define	albums[68]->year	1985
 #define	albums[68]->contribution holiday
 #define	albums[68]->blurb
-<p>
 This release by the German newspaper "Süddeutsche Zeitung" combines a book and a CD.
-</p>
 
 #define	albums[6]->type	various
 #define	albums[6]->lookup	va_pulp
@@ -680,10 +670,9 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[6]->year	1987-12-01
 #define	albums[6]->contribution elephant_man
 #define	albums[6]->blurb
-	<p>
 	This very rare cassette was compiled by Mark Webber and released on his bedroom-based label.
 	The sleeve features artwork by Natty Brooker of Spacemen 3 (who are featured on the cassette) and Spiritualized. The drawing is also titled Oozing Through the Ozone Layer.
-	</p>
+	<p />
 	${g_source(g=Pulp Wiki, u=https://pulpwiki.net/Pulp/OozingThroughTheOzoneLayer)}
 
 #define	albums[69]->type	single
@@ -697,10 +686,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[69]->year	1990
 #define	albums[69]->media	7"
 #define	albums[69]->blurb
-	<p>
 	Double A sided single for the Australian market.
-	</p>
-
 
 #define	albums[70]->type	single
 #define	albums[70]->lookup	bigtime_jungle
@@ -727,9 +713,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[71]->media	7"
 #define	albums[71]->contribution bigbad
 #define	albums[71]->blurb
-	<p>
 	Also includes tracks from Love Tractor, The Pastels, and The Lucy Show
-	</p>
 
 #define	albums[72]->type	single
 #define	albums[72]->lookup	bigtime_angels
@@ -755,9 +739,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[73]->year	2017-10-20
 #define	albums[73]->media	4xCD
 #define	albums[73]->blurb
-<p>
-Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’.
-<p>
+	Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’.
 
 #define	albums[74]->type	single
 #define	albums[74]->lookup	spook7
@@ -782,7 +764,6 @@ Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ 
 #define	albums[75]->year	1995
 #define	albums[75]->contribution chang
 #define	albums[75]->blurb
-	<p>
 	Note: The back cover mistakenly lists the Jazz Butcher track as &quot;President Gang&quot;.
 	The information printed on the CD itself is correct.
 	This CD was a &quot;promotional only&quot; issue.
@@ -801,9 +782,7 @@ Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ 
 #define	albums[76]->blurb
 #Release date: November 17, 2017 (CD)
 #<br/>Release date: January 19, 2018 (LP)
-<p>
-The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gigs/1988/Jun5.html, June 5th\, 1988)} in CBC Studio 13 in Montreal.  The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
-</p>
+	The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gigs/1988/Jun5.html, June 5th\, 1988)} in CBC Studio 13 in Montreal.  The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
 
 #define	albums[77]->buy
 #define	albums[77]->type	various
@@ -818,9 +797,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[77]->media	CD
 #define	albums[77]->contribution <i>The U.F.O. Man</i>
 #define	albums[77]->blurb
-	<p>
 	Tribute To Jonathan Richman & The Modern Lovers Volume 2
-	</p>
 
 #define	albums[78]->buy
 #define	albums[78]->type	various
@@ -835,9 +812,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[78]->media	CD
 #define	albums[78]->contribution <i>The U.F.O. Man</i>
 #define	albums[78]->blurb
-	<p>
 	Tribute To Jonathan Richman & The Modern Lovers Volume 2
-	</p>
 
 #define	albums[79]->buy
 #define	albums[79]->type	various
@@ -852,9 +827,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[79]->media	CD
 #define	albums[79]->contribution drugs
 #define	albums[79]->blurb
-	<p>
 	50 Years Of Northampton Music
-	</p>
 
 #define	albums[80]->buy
 #define	albums[80]->type	various
@@ -869,9 +842,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[80]->media	CD
 #define	albums[80]->contribution girls
 #define	albums[80]->blurb
-	<p>
 	The Creation Records Promotion Sampler, Distribution Sony Music
-	</p>
 
 #define	albums[81]->buy
 #define	albums[81]->type	various
@@ -886,9 +857,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[81]->media	CD
 #define	albums[81]->contribution davis
 #define	albums[81]->blurb
-	<p>
 	French Various Artists Compilation.
-	</p>
 
 #define	albums[82]->buy
 #define	albums[82]->type	various,project
@@ -904,9 +873,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[82]->media	CD
 #define	albums[82]->contribution wilson_quality_people
 #define	albums[82]->blurb
-	<p>
 	A Sampler CD
-	</p>
 
 #define	albums[83]->buy
 #define	albums[83]->type	project
@@ -921,9 +888,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[83]->year	2005-11
 #define	albums[83]->media	CDR
 #define	albums[83]->blurb
-	<p>
 	Two song demo.
-	</p>
 
 #define	albums[84]->buy
 #define	albums[84]->type	project
@@ -938,9 +903,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[84]->year	2003-04
 #define	albums[84]->media	CDR
 #define	albums[84]->blurb
-	<p>
 	Two song demo.
-	</p>
 
 #define	albums[85]->buy
 #define	albums[85]->type	project
@@ -955,9 +918,7 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[85]->year	2002
 #define	albums[85]->media	CDR
 #define	albums[85]->blurb
-	<p>
 	Six song demo.
-	</p>
 
 #define	albums[86]->buy     https://thejazzbutcher.bandcamp.com/album/the-violent-years
 #define	albums[86]->type	compilation
@@ -971,12 +932,9 @@ The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gig
 #define	albums[86]->year	2018-03-09
 #define	albums[86]->media	4xCD
 #define	albums[86]->blurb
-<p>
-Expansive book-styled package of the first four albums from The Jazz Butcher’s early Creation Records’ years – 1988-1991.
-</p>
-<p>
+	Expansive book-styled package of the first four albums from The Jazz Butcher’s early Creation Records’ years – 1988-1991.
+	<p />
 Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, ‘Cult Of The Basement’ and ‘Condition Blue”. 
-<p>
 
 #define	albums[87]->buy     https://www.tapeterecords.de/artists/the-jazz-butcher/
 #define	albums[87]->type	album
@@ -1004,12 +962,9 @@ Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, 
 #define	albums[88]->year	2021-11-12
 #define	albums[88]->media	4xCD
 #define	albums[88]->blurb
-<p>
 Four CD box set gathering A-sides, the would-be hits along with B-sides, tangential 12-inch tracks (the C-sides), and an excellent session for Los Angeles radio station KCRW from 1989.
-</p>
-<p>
+<p />
 Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘Girl Go’, ‘The Human Jungle’, ‘16 Years’ plus a host of truly eclectic Butcher tunes from his early Glass recordings through his time at Creation. 
-</p>
 
 #define	albums[89]->type	CDR
 #define	albums[89]->lookup	cdr_guestpass2000
@@ -1021,19 +976,15 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[89]->year	2000-01-01
 #define	albums[89]->media	CDR
 #define	albums[89]->blurb
-<p>
 This was a limited edition CD made available to help fund the
 JBC tour across the US.
-</p>
-<p>
+<p />
 Along with the CD you got an autographed photo and tickets to the
 JBC show of your choice.
-</p>
-<p>
+<p />
 Although it is a "home made" CDR, it was officially
 released by the JBC and would be pre-paid for pick-up at the
 show.
-</p>
 
 #define	albums[90]->type	various
 #define	albums[90]->lookup	va_nm_vol1
@@ -1044,10 +995,8 @@ show.
 #define	albums[90]->year	2010
 #define	albums[90]->contribution [ mercy, wildlife ]
 #define	albums[90]->blurb
-  <p>
   ${linkAudio(title=${literalizeCommas(${mercy})}, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3, comment=${literalizeCommas(Recorded by ${curt})})}
   ${linkAudio(title=${literalizeCommas(${wildlife})}, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/WIldlife.mp3, comment=${literalizeCommas(Recorded by ${curt})})}
-  </p>
 
 #define	albums[91]->type	various
 #define	albums[91]->lookup	va_andy_2007
@@ -1058,15 +1007,11 @@ show.
 #define	albums[91]->year	2007-12
 #define	albums[91]->ontribution afterhours
 #define	albums[91]->blurb
-<p>
 Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers.
-</p>
-<p>
+<p />
 In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album.
-</p>
-<p>
+<p />
   ${linkAudio(title=${literalizeCommas(${afterhours})}, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3, comment=${literalizeCommas(Recorded in December 2007 at Greenway Studio by Andy Clarke)})}
-</p>
 
 #define	albums[92]->type	single
 #define	albums[92]->lookup	never7

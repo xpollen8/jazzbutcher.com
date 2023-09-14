@@ -40,7 +40,7 @@ I am *completely* open to collaborating with people with web design and/or UX ex
 * have git installed
 * have nodejs 17+ installed (i use nvm)
 
-`nvm use 17`
+`nvm install 17 && nvm use 17`
 
 * install the code
 

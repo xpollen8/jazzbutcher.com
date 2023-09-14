@@ -1,8 +1,8 @@
 import useSWR from 'swr';
 
-import LinkAudio from '@/components/LinkAudio';
 import LetterHeader from '@/components/LetterHeader';
-import React, { Suspense } from 'react';
+import EmbedMedia from '@/components/EmbedMedia';
+import { Suspense } from 'react';
 
 const FishySession = ({ session }: { session: any }) => {
 	const fetcher = async (uri: string) => await fetch(uri).then(res => res.json());
@@ -21,16 +21,10 @@ const FishySession = ({ session }: { session: any }) => {
 			poster={session.poster} >
 			<source src={session.mp4} type="video/mp4" />
 		</video>
-		<div className="bg-slate-200 p-3">
+		<div className="bg-slate-200 p-3 w-1/2">
 				<LetterHeader title={`Fishy Mansions #${session.ordinal + 1}`} subhead={session.date} />
 				<Suspense fallback={<>Loading...</>}>
-					<ol>
-					{songs?.filter((song: any) => !song.song.includes('Entire')).map((song: any, key: number) => (
-						<li key={key}>
-							{key + 1}. <LinkAudio title={song?.song} author={song?.author} comment={song?.comment} />
-						</li>
-					))}
-					</ol>
+					{songs?.filter((song: any) => !song.song.includes('Entire')).map((data: any, key: number) => <EmbedMedia data={data} />)}
 				</Suspense>
 		</div>
 	</div>);

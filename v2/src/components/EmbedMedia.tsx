@@ -113,12 +113,12 @@ const EmbedMedia = ({ data = {}, children } : any) => {
 					</>);
 				}
 			} else {
-				return (<>
+				return (<div>
 					<span className="listenItemOrdinal">{ordinal}.</span>
 					{autoLink(song)}
 					{(author) && <span className="smalltext"> ({author}) </span>}
 					{(comment) && <span className="smalltext"> ({comment}) </span>}
-				</>);
+				</div>);
 			}
 		})()}
 		{(() => {

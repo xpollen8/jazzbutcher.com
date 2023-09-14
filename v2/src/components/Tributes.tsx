@@ -21,22 +21,21 @@ const music = [
 		aux: 'Another World',
 		children: <><EmbedMedia data={{
 			mediaurl: "https://api.soundcloud.com/tracks/1168933774",
-			title: "Another World",
 			mediacredit: "woodentopian",
 			mediacrediturl: "https://soundcloud.com/woodentopian"
 		}} /></>
 	},
 	{ text: 'David J',
 		aux: 'Quell Tristesse',
-		children: <EmbedMedia data={{ title: "Quell Tristesse", mediaurl: "https://youtube.com/embed/u68NS-_qOOE" }} />
+		children: <EmbedMedia data={{ mediaurl: "https://youtube.com/embed/u68NS-_qOOE" }} />
 	},
 	{ text: 'Peter Astor',
 		aux: 'Fine & Dandy',
-		children: <EmbedMedia data={{ title: "Fine and Dandy", mediaurl: "https://youtube.com/embed/ipbl27KS68M" }} />
+		children: <EmbedMedia data={{ mediaurl: "https://youtube.com/embed/ipbl27KS68M" }} />
 	},
 	{ text: 'Knight Berman',
 		aux: 'Au Revoir et Merci, Monsieur Fish',
-		children: <EmbedMedia data={{ title: "Au Revoir et Merci, Monsieur Fish", mediaurl: "https://youtube.com/embed/gUm7UTBDyYo" }} />
+		children: <EmbedMedia data={{ mediaurl: "https://youtube.com/embed/gUm7UTBDyYo" }} />
 		},
 ];
 

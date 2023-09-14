@@ -1,7 +1,7 @@
 import LinkAudio from '@/components/LinkAudio';
 import EmbedVideo from '@/components/EmbedVideo';
-import { autoLink } from '@/lib/macros';
-import { Credit } from '@/components/GenericWeb';
+import { parseDomain, autoLink } from '@/lib/macros';
+import { Attribution } from '@/components/GenericWeb';
 
 const Performers = ({ datetime }: { datetime: string }) => {
 	return (<>
@@ -89,35 +89,53 @@ const Performers = ({ datetime }: { datetime: string }) => {
 #	<a href="https://www.google.com/search?q=%22{encode({query})}%22" target="new">{ternary((defined(text)), {text}, {query})}</a>
 */
 
+const	EmbedSoundCloud = ({ data }: any) => {
+	const { mediaurl } = data;
+	const useURL = mediaurl?.replace('https:', 'https%3A');
+	return <iframe
+			width="100%"
+			height="300"
+			scrolling="no"
+			frameBorder="no"
+			allow="autoplay"
+			src={`https://w.soundcloud.com/player/?url=${useURL}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`}>
+		</iframe>
+}
+
 const EmbedMedia = ({ data = {}, children } : any) => {
-	const { datetime, type, setnum, ordinal, song, author, comment, performers, mediaurl, mediacredit, mediacrediturl } = data;
+	const { datetime, type, setnum, ordinal, title, song, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
+	const mediaDomain = parseDomain(mediaurl);
+	const creditDomain = parseDomain(mediacrediturl);
 	return (<>
 		{(() => {
 			if (mediaurl) {
-				if (mediaurl?.includes('.mp3')) {
+				if (mediaurl?.includes('soundcloud.com')) {
+					return <EmbedSoundCloud data={data} />
+				} else if (mediaurl?.includes('.mp3')) {
 					return (<blockquote className="listenItem">
-						<span className="listenItemOrdinal">{ordinal}.</span>
-							<LinkAudio title={song} mp3={mediaurl} author={author} comment={comment} />
-							{(mediacredit) && <Credit g={mediacredit} u={mediacrediturl} />}
-						</blockquote>)
+						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
+						<LinkAudio title={song || title} mp3={mediaurl} author={author} comment={comment} />
+						{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} />}
+					</blockquote>)
 				} else {
 					return (<>
 						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
-						{autoLink(song)}
+						{autoLink(song || title)}
 						{(author) && <span className="smalltext">({author})</span>}
 						{(comment) && <span className="smalltext"> ({comment}) </span>}
 						<div className="listenItem">
 							<EmbedVideo data={data} />
-							{(mediacredit) && <Credit g={mediacredit} u={mediacrediturl} />}
+							{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} />}
 						</div>
 					</>);
 				}
 			} else {
 				return (<div>
-					<span className="listenItemOrdinal">{ordinal}.</span>
-					{autoLink(song)}
+					{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
+					{autoLink(song || title)}
 					{(author) && <span className="smalltext"> ({author}) </span>}
 					{(comment) && <span className="smalltext"> ({comment}) </span>}
+					{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} />}
 				</div>);
 			}
 		})()}

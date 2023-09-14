@@ -106,7 +106,7 @@ const dateDiff = (dt?: string) => {
 		//const prettyDate = moment(display).format("ddd, MMM Do YYYY");
 		const prettyAgo = moment(compare).startOf('hour').fromNow();
 		return (<>
-			{' '}
+			{' - '}
 			<span className="date">{prettyDate(display)}</span> <span className="date">( {prettyAgo} )</span>
 		</>)
 	}

@@ -89,7 +89,7 @@ const Performers = ({ datetime }: { datetime: string }) => {
 #	<a href="https://www.google.com/search?q=%22{encode({query})}%22" target="new">{ternary((defined(text)), {text}, {query})}</a>
 */
 
-const EmbedMedia = ({ data = {} } : any) => {
+const EmbedMedia = ({ data = {}, children } : any) => {
 	const { datetime, type, setnum, ordinal, song, author, comment, performers, mediaurl, mediacredit, mediacrediturl } = data;
 	return (<>
 		{(() => {
@@ -102,7 +102,7 @@ const EmbedMedia = ({ data = {} } : any) => {
 						</blockquote>)
 				} else {
 					return (<>
-						<span className="listenItemOrdinal">{ordinal}.</span>
+						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 						{autoLink(song)}
 						{(author) && <span className="smalltext">({author})</span>}
 						{(comment) && <span className="smalltext"> ({comment}) </span>}
@@ -127,6 +127,7 @@ const EmbedMedia = ({ data = {} } : any) => {
 				<Performers datetime={datetime} />
 			</>);
 		})()}
+		{children}
 	</>)
 }
 

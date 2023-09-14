@@ -15,7 +15,7 @@ const MakeSimpleURI = ({ uri='', text, aux, children }: {
 			</div>
 		</Link>
 		:
-		<div className="clickDiv" style={{ marginBottom: '30px' }}>
+		<div className="clickDiv bg-white" style={{ marginBottom: '30px' }}>
 			{text}
 			{' '}<span className="date">{aux}</span>
 		</div>

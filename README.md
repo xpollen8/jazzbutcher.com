@@ -34,3 +34,34 @@ Changes made here will be deployed within a minute to [https://jazzbutcher-com.v
 As of this writing (2023-08-27), the V2 website is fairly faithful to the look and functionalty of V1 version.
 
 I am *completely* open to collaborating with people with web design and/or UX experience.  Let's work on this together.  Hit me up!
+
+## How to run your own local JBC com V2!
+
+* have git installed
+* have nodejs 17+ installed (i use nvm)
+
+`nvm use 17`
+
+* install the code
+
+`git clone git@github.com:xpollen8/jazzbutcher.com.git`
+
+* get in the right directory
+  
+`cd jazzbutcher.com/v2`
+
+* Add this to `.env.local`:
+  
+```
+echo "JBC_HTDB_SERVER=https://jazzbutcher.com" > .env.local
+echo "JBC_DATA_SERVER=https://data.jazzbutcher.com" >> .env.local
+```
+* install dependencies
+
+`npm i`
+
+* and run it!
+
+`npm run dev`
+
+* open `http://localhost:3000` in a browser

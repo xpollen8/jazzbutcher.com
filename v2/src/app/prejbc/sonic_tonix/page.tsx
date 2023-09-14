@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import LinkAudio from '@/components/LinkAudio';
+import EmbedMedia from '@/components/EmbedMedia';
 
 const SonicTonix = () => 
 <>
@@ -50,8 +50,8 @@ const SonicTonix = () =>
 <br/> Recorded at DUFFYS.
 <br/> This was an Oxford-based outfit (ft. former members of INSTITUTION) whos sole release comes with rubber-stamped white labels (500 copies made). Members resurfaced in THE JAZZ BUTCHER and THE WOODENTOPS.
 </code>
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_DontGoAway.mp3" title="Don't Go Away" comment="A side" />
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_Telepathy.mp3" title="Telepathy" comment="B side" />
+<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_DontGoAway.mp3", title: "Don't Go Away", comment: "A side" }} />
+<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_Telepathy.mp3", title: "Telepathy", comment: "B side" }} />
 	<Footer />
 </>
 

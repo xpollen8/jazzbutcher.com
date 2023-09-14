@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import LinkAudio from '@/components/LinkAudio';
+import EmbedMedia from '@/components/EmbedMedia';
 
 const Institution = () => 
 <>
@@ -27,8 +27,10 @@ const Institution = () =>
 <hr />
 <p />
 
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JaneAndJon.mp3" title="Jane And Jon" comment="A side" />
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_Stephanie.mp3" title="Stephanie" comment="B side" />
+	<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_JaneAndJon.mp3", title: "Jane And Jon", comment: "A side" }} />
+
+	<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Stephanie.mp3", title: "Stephanie", comment: "B side" }} />
+
 <code>
 <br />
 <br />	https://www.discogs.com/release/5338218-The-Institution-Jane-And-Jon
@@ -57,50 +59,42 @@ const Institution = () =>
 <hr />
 <p />
 
-<b>Unknown provenance for these two tracks</b>
-<p />
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_Vampire.mp3" title="Vampire"/>
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_Unknown_InnocentsAndEnglishmen.mp3" title="Innocents And Englishman"/>
+	<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_JonathanStephenson_Vampire.mp3", title: "Vampire", comment: "Unknown provenance" }} />
+	<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Unknown_InnocentsAndEnglishmen.mp3", title: "Innocents And Englishman", comment: "Unknown provenance" }} />
+
 <p />
 <hr />
 <p />
 
-<b>Final selections are from Jonathan Stephenson - https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw</b>
-<p />
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_InnocentsAndEnglishmen.mp3" title="Innocents And Englishmen">
-	<blockquote>
-	Nov 4, 2021  Probably our masterpiece!  Words of course, Patrick, sax Patrick, and I think the music was a joint effort.
-	<p />	source: https://www.youtube.com/watch?v=PdvFEe55_i0
-	</blockquote>
-</LinkAudio>
+	<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_JonathanStephenson_InnocentsAndEnglishmen.mp3", title: "Innocents And Englishman", mediacredit: "Jonathan Stephenson", mediacrediturl: "https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw", mediacreditdate: "2021-11-04" }} >
+		<blockquote>
+			Probably our masterpiece!  Words of course, Patrick, sax Patrick, and I think the music was a joint effort.
+		</blockquote>
+	</EmbedMedia>
 
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_JaneAndJon.mp3" title="Jane And Jon" comment="different version from single">
-	<blockquote>
-		Oct 14, 2021  The Institution.  About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall. This track by Pete.
-		<p />	source: https://www.youtube.com/watch?v=omFadRK4O4Q
-	</blockquote>
-</LinkAudio>
+	<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_JonathanStephenson_JaneAndJon.mp3", title: "Jane And Jon", mediacredit: "Jonathan Stephenson", mediacrediturl: "https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw", mediacreditdate: "2021-10-14", comment: "different version from single" }} >
+		<blockquote>
+			About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall. This track by Pete.
+		</blockquote>
+	</EmbedMedia>
 
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_JeremyAiroplane.mp3" title="Jeremy Airoplane" >
-	<blockquote>
-		Oct 14, 2021  The Institution. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall. This track by Rolo.
-		<p />	source: https://www.youtube.com/watch?v=xoDh_HYROWs
-	</blockquote>
-</LinkAudio>
+	<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_JonathanStephenson_JeremyAiroplane.mp3", title: "Jeremy Airoplane", mediacredit: "Jonathan Stephenson", mediacrediturl: "https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw", mediacreditdate: "2021-10-14" }} >
+		<blockquote>
+			About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall. This track by Rolo.
+		</blockquote>
+	</EmbedMedia>
 
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_LoveAndARecordContract.mp3" title="Love And A Record Contract" >
-	<blockquote>
-		Oct 14, 2021  The Institution. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.  This track by Rolo
-		<p />	source: https://www.youtube.com/watch?v=CHwt3C4MkDQ
-	</blockquote>
-</LinkAudio>
+	<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_JonathanStephenson_LoveAndARecordContract.mp3", title: "Love And A Record Contract", mediacredit: "Jonathan Stephenson", mediacrediturl: "https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw", mediacreditdate: "2021-10-14" }} >
+		<blockquote>
+			About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.  This track by Rolo
+		</blockquote>
+	</EmbedMedia>
 
-<LinkAudio mp3="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Institution/Institution_JonathanStephenson_Stephanie.mp3" title="Stephanie" comment="different version from single">
-	<blockquote>
-		Oct 14, 2021  The Institution. About 1978. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.   This track:  Pat
-		<p />	source: https://www.youtube.com/watch?v=umKEN-VcAsI
-	</blockquote>
-</LinkAudio>
+	<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_JonathanStephenson_Stephanie.mp3", title: "Stephanie", mediacredit: "Jonathan Stephenson", mediacrediturl: "https://www.youtube.com/channel/UCKfznmFizRjptR0VAw5Edgw", mediacreditdate: "2021-10-14", comment: "different version from single" }} >
+		<blockquote>
+			About 1978. About 1978. Pat Fish, Rolo McGinty, Pete Millson, Jonathan Stephenson, John Duvall.   This track:  Pat
+		</blockquote>
+	</EmbedMedia>
 
 	<Footer />
 </>

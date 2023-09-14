@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { autoLink, linkExternal } from '@/lib/macros';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import LinkAudio from '@/components/LinkAudio';
 import LetterHeader from '@/components/LetterHeader';
+import EmbedMedia from '@/components/EmbedMedia';
 
 const TributeTrack = ({ title, artist, url, dl, children }: {
 	title: string,
@@ -13,7 +13,7 @@ const TributeTrack = ({ title, artist, url, dl, children }: {
 	children: React.ReactNode
 }) => (
 <>
-	<LinkAudio mp3={`/audio/tribute/${dl}`} title={title} author={linkExternal(url, artist)}/>
+	<EmbedMedia data={{  mediaurl: `/audio/tribute/${dl}`, song: title, mediacredit: artist, mediacrediturl: url }} />
 	<div className="lyric_annotation">
 		{children}
 	</div>

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EmbedMedia from '@/components/EmbedMedia';
 
 const DronesClub = () => 
 <>
@@ -9,8 +10,12 @@ const DronesClub = () =>
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/drones_club_cd.jpg" width={500} height={500} alt="cd cover" />
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/drones-july2021-b.jpg" width={500} height={500} alt="the drones" />
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/cropped-cropped-site-image-bw.jpg" width={500} height={500} alt="more drones" />
+
+	<p />
+	<EmbedMedia data={{ mediaurl: "https://soundcloud.com/the-drones/drones-at-the-bbc-interview-only", }} />
+	<p />
+
 <code>
-BBC INTERVIEW: https://soundcloud.com/the-drones/drones-at-the-bbc-interview-only
 <hr />
 SOUNDCLOUD: https://soundcloud.com/the-drones
 <hr />

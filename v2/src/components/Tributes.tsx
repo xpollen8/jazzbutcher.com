@@ -17,19 +17,19 @@ const texts = [
 ];
 
 const music = [
-	{ uri: '/tributes/rolo_mcginty', text: 'Rolo McGinty',
+	{ text: 'Rolo McGinty',
 		aux: 'Another World',
 		children: <><iframe width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1168933774&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style={{ fontSize: '10px', color: '#cccccc', lineBreak: 'anywhere', wordBreak: 'normal', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', fontFamily: 'Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif', fontWeight: '100' }}><a href="https://soundcloud.com/woodentopian" title="woodentopian" target="_blank" style={{ color: '#cccccc', textDecoration: 'none' }}>woodentopian</a> · <a href="https://soundcloud.com/woodentopian/another-world" title="Another World" target="_blank" style={{ color: '#cccccc', textDecoration: 'none' }}>Another World</a></div></>
 		},
-	{ uri: '/tributes/davidj', text: 'David J',
+	{ text: 'David J',
 		aux: 'Quell Tristesse',
 		children: <EmbedMedia data={{ title: "Quell Tristesse", mediaurl: "https://youtube.com/embed/u68NS-_qOOE" }} />
 	},
-	{ uri: '/tributes/peter_astor', text: 'Peter Astor',
+	{ text: 'Peter Astor',
 		aux: 'Fine & Dandy',
 		children: <EmbedMedia data={{ title: "Fine and Dandy", mediaurl: "https://youtube.com/embed/ipbl27KS68M" }} />
 	},
-	{ uri: '/press/knight_berman', text: 'Knight Berman',
+	{ text: 'Knight Berman',
 		aux: 'Au Revoir et Merci, Monsieur Fish',
 		children: <EmbedMedia data={{ title: "Au Revoir et Merci, Monsieur Fish", mediaurl: "https://youtube.com/embed/gUm7UTBDyYo" }} />
 		},

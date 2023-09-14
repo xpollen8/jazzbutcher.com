@@ -30,7 +30,7 @@ const	genericWeb = ({ x, g, u, t, s, d }: {
 				}
 			}
 		})()}
-		{(parseDate(d)) && <>{' '}{dateDiff(d)}</>}
+		{(parseDate(d)) && dateDiff(d)}
 	</span>
 )
 

@@ -55,6 +55,8 @@ I am *completely* open to collaborating with people with web design and/or UX ex
 ```
 echo "JBC_HTDB_SERVER=https://jazzbutcher.com" > .env.local
 echo "JBC_DATA_SERVER=https://data.jazzbutcher.com" >> .env.local
+echo "## disables auth on /admin" >> .env.local
+echo "LOCAL_DEV=true" >> .env.local
 ```
 * install dependencies
 

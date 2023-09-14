@@ -1,4 +1,4 @@
-const EmbedVideo = ({ data = {} }: any) => {
+const EmbedVideo = ({ data = {}, children }: { data: any, children?: ReactNode }) => {
 	const { datetime, type, setnum, ordinal, song, author, comment, performers, mediaurl, mediacredit, mediacrediturl } = data;
 	return (<>
 		{(() => {
@@ -35,6 +35,7 @@ const EmbedVideo = ({ data = {} }: any) => {
 			}
 		})()}
 		{(comment) && <div className="annotation"> {comment} </div>}
+		{children}
 	</>);
 }
 

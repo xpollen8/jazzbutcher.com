@@ -1,4 +1,4 @@
-const EmbedVideo = ({ data = {}, children }: { data: any, children?: ReactNode }) => {
+const EmbedVideo = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
 	const { datetime, type, setnum, ordinal, song, author, comment, performers, mediaurl, mediacredit, mediacrediturl } = data;
 	return (<>
 		{(() => {

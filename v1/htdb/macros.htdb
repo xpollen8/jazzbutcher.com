@@ -44,7 +44,9 @@
 #live	endif
 #live	endif
 
-#define	embedVideo(url, anno=)
+#define	embedVideo(project, collection, url, anno=)
+##live	if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${${anno}})})})}", href="${url}", collection="${collection}"))
+##live	endif
 #live	if (substr(0, 6, ${url}) = /video)
 		<video controls preload="none" style="max-width: 100%;" poster="${url}_thumbnail.jpg" >
 			<source src="${url}.mp4" type="video/mp4">
@@ -717,10 +719,10 @@
 	}
 </style>
 
-#define	linkAudio(title, comment, mp3, url, author, autolink=yes)
+#define	linkAudio(project=jbc, collection, title, comment, mp3, url, author, autolink=yes)
 #<pre>
 #</pre>
-##live	if (sql(insert IGNORE into media set type="audio", name="${literalizeQuotes(${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}"))
+##live	if (sql(insert IGNORE into media set project="${project}", type="audio", name="${literalizeQuotes(${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}"))
 ##live	endif
 	<span class="audioPlayer">
 		<span class="audio_title">

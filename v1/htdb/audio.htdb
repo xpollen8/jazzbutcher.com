@@ -164,6 +164,30 @@
 #live	endif
 #live	if (define(gigMatch, no))
 #live	endif
+# ++ set project
+#live		if (define(project, jbc))
+#live		endif
+#live		if (getval(${prefix}[${gi}]->extra) == eg)
+#live			if (define(project, eg))
+#live			endif
+#live		endif
+#live		if (getval(${prefix}[${gi}]->extra) == wilson)
+#live			if (define(project, wilson))
+#live			endif
+#live		endif
+#live		if (getval(${prefix}[${gi}]->extra) == tribute)
+#live			if (define(project, tribute))
+#live			endif
+#live		endif
+#live		if (getval(${prefix}[${gi}]->extra) == nopat)
+#live			if (define(project, nopat))
+#live			endif
+#live		endif
+#live		if (getval(${prefix}[${gi}]->extra) == sumo)
+#live			if (define(project, sumo))
+#live			endif
+#live		endif
+# -- set project
 #live	if (defined(type))
 #live		if (getval(${prefix}[${gi}]->extra) == ${type})
 #live			if (define(gigMatch, yes))
@@ -171,6 +195,7 @@
 #live		endif
 #live	else
 #live		if ((getval(${prefix}[${gi}]->extra) == eg) || (getval(${prefix}[${gi}]->extra) == wilson) || (getval(${prefix}[${gi}]->extra) == sumo) || (getval(${prefix}[${gi}]->extra) == interview))
+#live		endif
 #live		else
 #live			if (define(gigMatch, yes))
 #live			endif
@@ -217,7 +242,7 @@
 #live	endif
 	<blockquote class="li-media">
 #live	endif
-	${linkAudio(title=${literalizeCommas(${${prefix}[${gi}]->song})}, mp3=${${prefix}[${gi}]->mediaurl}, author=${${prefix}[${gi}]->author}, comment=${literalizeCommas(${${prefix}[${gi}]->comment})})}
+	${linkAudio(project=${project}, title=${literalizeCommas(${${prefix}[${gi}]->song})}, mp3=${${prefix}[${gi}]->mediaurl}, author=${${prefix}[${gi}]->author}, comment=${literalizeCommas(${${prefix}[${gi}]->comment})})}
 #live	if (getval(cDT) != ${${prefix}[${eval(1 + ${gi})}]->datetime})
 #live		if (define(gsDT, ${space2underscore(${cDT})}))
 #live		endif
@@ -413,8 +438,8 @@ ${define(gsExtra[${dt}], ${summary})}
 		<p>
 		Recorded at ${linkExternal(http://www.premierstudios.co.uk, Premier Studio)}
 		<blockquote>
-		${linkAudio(title=Buffalo Sniper, url=${jbc_lyrics}/wilson_buffalo_sniper.html, mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3)}
-		${linkAudio(title=Police Chief, url=${jbc_lyrics}/wilson_police_chief.html, mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3)}
+		${linkAudio(project=wilson, collection=2005-11 Demo, title=Buffalo Sniper, url=${jbc_lyrics}/wilson_buffalo_sniper.html, mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3)}
+		${linkAudio(project=wilson, collection=2005-11 Demo, title=Police Chief, url=${jbc_lyrics}/wilson_police_chief.html, mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3)}
 		</blockquote>
 	</div>
 
@@ -430,8 +455,8 @@ ${define(gsExtra[${dt}], ${summary})}
 		All tunes conceived, devised & assembled by Wilson.
 		Tracks contain elements of everything.
 		<blockquote>
-		${linkAudio(title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3)}
-		${linkAudio(title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3)}
+		${linkAudio(project=wilson, collection=2003-04 Demo, title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3)}
+		${linkAudio(project=wilson, collection=2003-04 Demo, title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3)}
 		</blockquote>
 	</div>
 
@@ -447,12 +472,12 @@ ${define(gsExtra[${dt}], ${summary})}
 		are by Warren Zevon. Everything else is original pirate material.
 		Increase the peace.
 		<blockquote>
-		${linkAudio(title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3)}
-		${linkAudio(title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3)}
-		${linkAudio(title=Hippy Shit, url=${jbc_lyrics}/wilson_hippy_shit.html, mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3)}
-		${linkAudio(title=Play It All Night Long, mp3=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3)}
-		${linkAudio(title=Burn\, Hollywood\, Burn, url=${jbc_lyrics}/wilson_burn_hollywood_burn.html, mp3=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3)}
-		${linkAudio(title=Dark Agenda, url=${jbc_lyrics}/wilson_dark_agenda.html, mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Hippy Shit, url=${jbc_lyrics}/wilson_hippy_shit.html, mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Play It All Night Long, mp3=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Burn\, Hollywood\, Burn, url=${jbc_lyrics}/wilson_burn_hollywood_burn.html, mp3=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Dark Agenda, url=${jbc_lyrics}/wilson_dark_agenda.html, mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3)}
 		</blockquote>
 	</div>
 	${endTab}
@@ -481,14 +506,14 @@ ${define(gsExtra[${dt}], ${summary})}
 		"Audio Aquatic" was an early working name for Sumosonic. Most tracks from
 		this tape are the same as the later "Demo Cassette".
 		<blockquote>
-		${linkAudio(title=Come\, Friendly Spacemen, mp3=/audio/AudioAquatic/AudioAquatic_01_ComeFriendlySpacemen.mp3)}
+		${linkAudio(project=sumo, collection=Audio Aquatic, title=Come\, Friendly Spacemen, mp3=/audio/AudioAquatic/AudioAquatic_01_ComeFriendlySpacemen.mp3)}
 		<blockquote>
 			This is an "extended" version, with approximately 90 seconds more beat breaks.
 		</blockquote>
-#		${linkAudio(title=God's Green Earth, mp3=/audio/AudioAquatic/AudioAquatic_02_GodsGreenEarth.mp3)}
-#		${linkAudio(title=Fern\, Schnell\, Gut, mp3=/audio/AudioAquatic/AudioAquatic_03_FernSchnellGut.mp3)}
-#		${linkAudio(title=Destroy All Monsters, mp3=/audio/AudioAquatic/AudioAquatic_04_DestroyAllMonsters.mp3)}
-#		${linkAudio(title=She Moved Through The Fair, mp3=/audio/AudioAquatic/AudioAquatic_05_SheMovedThroughTheFair.mp3)}
+#		${linkAudio(project=sumo, collection=Audio Aquatic, title=God's Green Earth, mp3=/audio/AudioAquatic/AudioAquatic_02_GodsGreenEarth.mp3)}
+#		${linkAudio(project=sumo, collection=Audio Aquatic, title=Fern\, Schnell\, Gut, mp3=/audio/AudioAquatic/AudioAquatic_03_FernSchnellGut.mp3)}
+#		${linkAudio(project=sumo, collection=Audio Aquatic, title=Destroy All Monsters, mp3=/audio/AudioAquatic/AudioAquatic_04_DestroyAllMonsters.mp3)}
+#		${linkAudio(project=sumo, collection=Audio Aquatic, title=She Moved Through The Fair, mp3=/audio/AudioAquatic/AudioAquatic_05_SheMovedThroughTheFair.mp3)}
 #		<blockquote>
 #			Traditional Irish tune.
 #			That's Mark Refoy singing on Fair. His voice is blended right in with Kathie McGinty's, the? idea being    
@@ -496,7 +521,7 @@ ${define(gsExtra[${dt}], ${summary})}
 #			if you don't mind
 #			Sat Jun 17 13:21:53 PDT 2017
 #		</blockquote>
-#		${linkAudio(title=We Are The Traffic, mp3=/audio/AudioAquatic/AudioAquatic_06_WeAreTheTraffic.mp3)}
+#		${linkAudio(project=sumo, collection=Audio Aquatic, title=We Are The Traffic, mp3=/audio/AudioAquatic/AudioAquatic_06_WeAreTheTraffic.mp3)}
 		</blockquote>
 	</div>
 
@@ -509,18 +534,18 @@ ${define(gsExtra[${dt}], ${summary})}
 		<p>
 		Unlike the Creation ${linkInternal(${jbc_albums}/sumosonic_this_is_sumo.html, "This Is Sumo")} release, Pat sings lead on all tracks.
 		<blockquote>
-		${linkAudio(title=Come\, Friendly Spacemen, mp3=https://sumosonic.com/audio/come_friendly_spacemen.mp3, url=${jbc_lyrics}/sumosonic_come_friendly_spacemen.html)}
-		${linkAudio(title=Monks Of Kung Fu, mp3=https://sumosonic.com/audio/monks_of_kung_fu.mp3, url=${jbc_lyrics}/sumosonic_monks_of_kung_fu.html)}
-		${linkAudio(title=God's Green Earth, mp3=https://sumosonic.com/audio/gods_green_earth.mp3, url=${jbc_lyrics}/sumosonic_gods_green_earth.html)}
-		${linkAudio(title=Business And Work, mp3=https://sumosonic.com/audio/business_and_work.mp3, url=${jbc_lyrics}/sumosonic_business_and_work.html)}
-		${linkAudio(title=Destroy All Monsters, mp3=https://sumosonic.com/audio/destroy_all_monsters.mp3, url=${jbc_lyrics}/sumosonic_destroy_all_monsters.html)}
-		${linkAudio(title=Stupid, mp3=https://sumosonic.com/audio/hey_stoopid.mp3, url=${jbc_lyrics}/sumosonic_stupid.html)}
-		${linkAudio(title=Everything Is Wonderful, mp3=https://sumosonic.com/audio/everything_is_wonderful.mp3, url=${jbc_lyrics}/sumosonic_everything_is_wonderful.html)}
-		${linkAudio(title=Fern Schnell Gut, mp3=https://sumosonic.com/audio/fern_schnell_gut.mp3, url=${jbc_lyrics}/sumosonic_fern_schnell_gut.html)}
-		${linkAudio(title=Cat's Life, mp3=https://sumosonic.com/audio/cats_life.mp3, url=${jbc_lyrics}/sumosonic_cats_life.html)}
-		${linkAudio(title=My Ultimate Baby, mp3=https://sumosonic.com/audio/my_ultimate_baby.mp3, url=${jbc_lyrics}/sumosonic_my_ultimate_baby.html)}
-		${linkAudio(title=We Are The Traffic, mp3=https://sumosonic.com/audio/we_are_the_traffic.mp3, url=${jbc_lyrics}/sumosonic_we_are_the_traffic.html)}
-		${linkAudio(title=Sputnik, mp3=https://sumosonic.com/audio/sputnik.mp3, url=${jbc_lyrics}/sumosonic_sputnik.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=Come\, Friendly Spacemen, mp3=https://sumosonic.com/audio/come_friendly_spacemen.mp3, url=${jbc_lyrics}/sumosonic_come_friendly_spacemen.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=Monks Of Kung Fu, mp3=https://sumosonic.com/audio/monks_of_kung_fu.mp3, url=${jbc_lyrics}/sumosonic_monks_of_kung_fu.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=God's Green Earth, mp3=https://sumosonic.com/audio/gods_green_earth.mp3, url=${jbc_lyrics}/sumosonic_gods_green_earth.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=Business And Work, mp3=https://sumosonic.com/audio/business_and_work.mp3, url=${jbc_lyrics}/sumosonic_business_and_work.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=Destroy All Monsters, mp3=https://sumosonic.com/audio/destroy_all_monsters.mp3, url=${jbc_lyrics}/sumosonic_destroy_all_monsters.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=Stupid, mp3=https://sumosonic.com/audio/hey_stoopid.mp3, url=${jbc_lyrics}/sumosonic_stupid.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=Everything Is Wonderful, mp3=https://sumosonic.com/audio/everything_is_wonderful.mp3, url=${jbc_lyrics}/sumosonic_everything_is_wonderful.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=Fern Schnell Gut, mp3=https://sumosonic.com/audio/fern_schnell_gut.mp3, url=${jbc_lyrics}/sumosonic_fern_schnell_gut.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=Cat's Life, mp3=https://sumosonic.com/audio/cats_life.mp3, url=${jbc_lyrics}/sumosonic_cats_life.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=My Ultimate Baby, mp3=https://sumosonic.com/audio/my_ultimate_baby.mp3, url=${jbc_lyrics}/sumosonic_my_ultimate_baby.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=We Are The Traffic, mp3=https://sumosonic.com/audio/we_are_the_traffic.mp3, url=${jbc_lyrics}/sumosonic_we_are_the_traffic.html)}
+		${linkAudio(project=sumo, collection=Sumosonic Demo, title=Sputnik, mp3=https://sumosonic.com/audio/sputnik.mp3, url=${jbc_lyrics}/sumosonic_sputnik.html)}
 		</blockquote>
 	</div>
 
@@ -554,7 +579,7 @@ ${define(gsExtra[${dt}], ${summary})}
 		Recorded in December 2007 at Greenway Studio by Andy Clarke 
 		</p>
 		<blockquote>
-		${linkAudio(title=After Hours, comment=2007-12, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3)}
+		${linkAudio(collection=Uncle Andy's 2007 Christmas Album, title=After Hours, comment=2007-12, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3)}
 		</blockquote>
 		</p>
 		${g_credit(g=Mark Cotton, d=2021-11-15)}
@@ -572,7 +597,7 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=When You's A Viper, mp3=${jbc_audio}/JazzButcher_20140715_Viper2.mp3)}
+		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=When You's A Viper, mp3=${jbc_audio}/JazzButcher_20140715_Viper2.mp3)}
 			Unreleased.
 			<br/>Recorded 2014-07-15
 		</blockquote>
@@ -599,7 +624,7 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=La Mer, mp3=/audio/tunes/2012_JBC_LaMer.mp3)}
+		${linkAudio(collection=Jazz Butcher Adventurers Sessions, title=La Mer, mp3=/audio/tunes/2012_JBC_LaMer.mp3)}
 			From the 2012 ${adventurers} recording session (unreleased)
 		</blockquote>
 
@@ -617,7 +642,7 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=${hobbu}, mp3=${jbc_audio}/mp3/hobbu.mp3)}
+		${linkAudio(collection=Guest Pass 2000, title=${hobbu}, mp3=${jbc_audio}/mp3/hobbu.mp3)}
 			${cdr_guestpass2000}
 		</blockquote>
 
@@ -639,14 +664,14 @@ ${define(gsExtra[${dt}], ${summary})}
 		${tag_end}
 		<div class="listenItem">
 		<blockquote>
-			${linkAudio(title=Excellent!, mp3=${jbc_audio}/cult/excellent.mp3)}
+			${linkAudio(collection=Cult Sessions, title=Excellent!, mp3=${jbc_audio}/cult/excellent.mp3)}
 #			<a href="${jbc_video}/Excellent.m4v"><b>Video clip from the Star Trek episode where the final version's intro sample originated</b></a>
-			${linkAudio(title=King Tut, mp3=${jbc_audio}/cult/kingtut.mp3)}
-			${linkAudio(title=Pineapple Tuesday, mp3=${jbc_audio}/cult/pineapple.mp3)}
-			${linkAudio(title=Fertiliser (Yes\, Mantor), mp3=${jbc_audio}/cult/yes_mantor.mp3)}
-			${linkAudio(title=Girl-Go, mp3=${jbc_audio}/cult/girl.mp3)}
-			${linkAudio(title=The Onion Field, mp3=${jbc_audio}/cult/onion.mp3)}
-			${linkAudio(title=Sister Death, mp3=${jbc_audio}/cult/sister.mp3)}
+			${linkAudio(collection=Cult Sessions, title=King Tut, mp3=${jbc_audio}/cult/kingtut.mp3)}
+			${linkAudio(collection=Cult Sessions, title=Pineapple Tuesday, mp3=${jbc_audio}/cult/pineapple.mp3)}
+			${linkAudio(collection=Cult Sessions, title=Fertiliser (Yes\, Mantor), mp3=${jbc_audio}/cult/yes_mantor.mp3)}
+			${linkAudio(collection=Cult Sessions, title=Girl-Go, mp3=${jbc_audio}/cult/girl.mp3)}
+			${linkAudio(collection=Cult Sessions, title=The Onion Field, mp3=${jbc_audio}/cult/onion.mp3)}
+			${linkAudio(collection=Cult Sessions, title=Sister Death, mp3=${jbc_audio}/cult/sister.mp3)}
 		<p>
 		Provided by ${rev}, the session engineer.
 		</blockquote>
@@ -667,11 +692,11 @@ ${define(gsExtra[${dt}], ${summary})}
 		<div class="listenItem">
 		Demo tracks from the ${linkInternal(${jbc_gigs}/1991/Jul1.html, July 1991)} ${pat}, ${richard}, and ${sumishta} collaboration.
 		<blockquote>
-		${linkAudio(title=A Matter Of Time), mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_AMatterOfTime.mp3)}
-		${linkAudio(title=Bombed, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Bombed.mp3)}
-		${linkAudio(title=Pedby's Grace, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_PedbysGrace.mp3)}
-		${linkAudio(title=Colour Waltz, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_ColourWaltz.mp3)}
-		${linkAudio(title=Elwood, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Elwood.mp3)}
+		${linkAudio(project=vaguely, title=A Matter Of Time), mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_AMatterOfTime.mp3)}
+		${linkAudio(project=vaguely, title=Bombed, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Bombed.mp3)}
+		${linkAudio(project=vaguely, title=Pedby's Grace, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_PedbysGrace.mp3)}
+		${linkAudio(project=vaguely, title=Colour Waltz, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_ColourWaltz.mp3)}
+		${linkAudio(project=vaguely, title=Elwood, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Elwood.mp3)}
 		</blockquote>
 		</div>
 
@@ -681,8 +706,8 @@ ${define(gsExtra[${dt}], ${summary})}
 		<div class="listenItem">
 		Demo tracks from the ${linkInternal(${jbc_gigs}/1991/Aug1.html, August 1991)} ${pat} and ${coonce} collaboration.
 		<blockquote>
-		${linkAudio(title=We Are The Traffic, comment=#1, mp3=${jbc_audio}/Cambodia/199108_Cambodia_WeAreTheTraffic_No1.mp3)}
-		${linkAudio(title=We Are The Traffic, comment=#2, mp3=${jbc_audio}/Cambodia/199108_Cambodia_WeAreTheTraffic_No2.mp3)}
+		${linkAudio(project=cambodia, title=We Are The Traffic, comment=#1, mp3=${jbc_audio}/Cambodia/199108_Cambodia_WeAreTheTraffic_No1.mp3)}
+		${linkAudio(project=cambodia, title=We Are The Traffic, comment=#2, mp3=${jbc_audio}/Cambodia/199108_Cambodia_WeAreTheTraffic_No2.mp3)}
 		</blockquote>
 		</div>
 

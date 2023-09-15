@@ -561,7 +561,7 @@ ${define(range[${z}]->end,)}
 		<br/>
 		${barker} (right), with ${pat} & ${rolo}.
 		${g_credit(g=${barker}, u=${jbc_gigs}/20170528_1630.html, d=2017-05-28 16:30:00)}
-		${embedVideo(url=https://www.youtube.com/embed/clP-oyGk73s)}
+		${embedVideo(project=barker, collection=Glass Records Story - Dave Barker - Interview by Iain McNay - 2009, url=https://www.youtube.com/embed/clP-oyGk73s)}
 		Glass Records Story - Dave Barker - Interview by Iain McNay - 2009
 		${aka_beg}
 		Lionel Brando

@@ -133,7 +133,7 @@
 #live	while (i = officialVideo[*]->mediaurl)
 	${tag_beg}${songLinkMapped(${officialVideo[${i}]->name})}${tag_end}
 	<div class="listenItem">
-	${embedVideo(url=${officialVideo[${i}]->mediaurl}, anno=officialVideo[${i}]->blurb)}
+	${embedVideo(collection=Official Music Videos, url=${officialVideo[${i}]->mediaurl}, anno=officialVideo[${i}]->blurb)}
 	</div>
 #live	endwhile
 
@@ -175,19 +175,19 @@
 	<a href="${jbc_lyrics}/sumosonic_monks_of_kung_fu.html">Monks Of Kung Fu</a>
 	${tag_end}
 	<div class="listenItem">
-	${embedVideo(url=/video/sumosonic/sumosonic_monks_of_kung_fu, anno=ano)}
+	${embedVideo(project=sumo, collection=Pat Home Videos, url=/video/sumosonic/sumosonic_monks_of_kung_fu, anno=ano)}
 	</div>
 	${tag_beg}
 	<a href="${jbc_lyrics}/sumosonic_gods_green_earth.html">God's Green Earth</a>
 	${tag_end}
 	<div class="listenItem">
-	${embedVideo(url=/video/sumosonic/sumosonic_gods_green_earth, anno=ano)}
+	${embedVideo(project=sumo, collection=Pat Home Videos, url=/video/sumosonic/sumosonic_gods_green_earth, anno=ano)}
 	</div>
 	${tag_beg}
 	<a href="${jbc_lyrics}/sumosonic_sputnik.html">Sputnik</a>
 	${tag_end}
 	<div class="listenItem">
-	${embedVideo(url=/video/sumosonic/sumosonic_sputnik, anno=ano)}
+	${embedVideo(project=sumo, collection=Pat Home Videos, url=/video/sumosonic/sumosonic_sputnik, anno=ano)}
 	</div>
 	${endTab}
 
@@ -210,10 +210,10 @@
 			(${Wilson_BackingTracks[${x}]->comment})
 #live	endif
 #live	if (getval(Wilson_BackingTracks[${x}]->hasMP3))
-			${linkAudio(mp3=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws}.mp3)}
+			${linkAudio(project=wilson, collection=Curtis' Backing Tracks, mp3=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws}.mp3)}
 #live	else
 #live	endif
-		${embedVideo(url=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws})}
+		${embedVideo(project=wilson, collection=Curtis' Backing Tracks, url=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws})}
 	</div>
 #live	endwhile
 	${tag_beg}
@@ -221,14 +221,14 @@
 	${tag_end}
 	<div class="listenItem">
 	${define(ano, Excerpt from <i>No known Predators</i> DVD, filmed <a href="${jbc_gigs}/2009/Aug15.html">2009-08-15</a>.)}
-	${embedVideo(url=https://www.youtube.com/embed/lvEN14PM_5M, anno=ano)}
+	${embedVideo(project=wilson, collection=No known Predators DVD, url=https://www.youtube.com/embed/lvEN14PM_5M, anno=ano)}
 	</div>
 	${tag_beg}
 	<a href="${jbc_lyrics}/wilson_quality_people.html">Quality People</a>
 	${tag_end}
 	<div class="listenItem">
 	${define(ano, Excerpt from <i>No known Predators</i> DVD, filmed <a href="${jbc_gigs}/2009/Aug15.html">2009-08-15</a>.)}
-	${embedVideo(url=https://www.youtube.com/embed/Hic-yax9asQ, anno=ano)}
+	${embedVideo(project=wilson, collection=No known Predators DVD, url=https://www.youtube.com/embed/Hic-yax9asQ, anno=ano)}
 	</div>
 	${tag_beg}
 	<a href="${jbc_lyrics}/wilson_istanbul_connection.html">Istanbul Connection</a>
@@ -338,28 +338,28 @@ ${shh(
 	${g_credit(g=Pat x, d=2016-02-15 09:19:49)}
 	</div>
 	<div class="listenItem">
-	${embedVideo(url=https://www.youtube.com/embed/Dha_-B9grlc)}
+	${embedVideo(collection=Transmissions TV show, url=https://www.youtube.com/embed/Dha_-B9grlc)}
 	Pat introducing a Close Lobsters segment: "If you're not actually in jail, or dead.."
 <p>
-	${embedVideo(url=https://www.youtube.com/embed/dNuzCDxzBlk)}
+	${embedVideo(collection=Transmissions TV show, url=https://www.youtube.com/embed/dNuzCDxzBlk)}
 	Pat introducing and interviewing ${rodney}
 <p>
-	${embedVideo(url=https://www.youtube.com/embed/s8Zhj5TtruA)}
+	${embedVideo(collection=Transmissions TV show, url=https://www.youtube.com/embed/s8Zhj5TtruA)}
 	Pat introducing A House of Love segment
 <p>
-	${embedVideo(url=https://www.youtube.com/embed/8J4IL_E1vnw)}
+	${embedVideo(collection=Transmissions TV show, url=https://www.youtube.com/embed/8J4IL_E1vnw)}
 	Pat introduces a Pastels video
 <p>
-	${embedVideo(url=https://www.youtube.com/embed/yWg1SUJZGf4)}
+	${embedVideo(collection=Transmissions TV show, url=https://www.youtube.com/embed/yWg1SUJZGf4)}
 	Pat introduces an Ed Ball interview
 <p>
-	${embedVideo(url=https://www.youtube.com/embed/cj5cLyg52-A)}
+	${embedVideo(collection=Transmissions TV show, url=https://www.youtube.com/embed/cj5cLyg52-A)}
 	Pat interviews ${sumishta} of 13 Frightened Girls
 <p>
-	${embedVideo(url=https://www.youtube.com/embed/kJeW2B9Mmk4)}
+	${embedVideo(collection=Transmissions TV show, url=https://www.youtube.com/embed/kJeW2B9Mmk4)}
 	Pat introduces a Nikki Sudden interview (Japanese overdubbed)
 <p>
-	${embedVideo(url=https://www.youtube.com/embed/2Kqbwz51wG4)}
+	${embedVideo(collection=Transmissions TV show, url=https://www.youtube.com/embed/2Kqbwz51wG4)}
 	Interview with Philip Parfitt and Josephine Wiggs of The Perfect Disaster conducted by Pat Fish (the Jazz Butcher) on Brighton beach.
 	</div>
 

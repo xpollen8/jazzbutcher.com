@@ -105,11 +105,11 @@ ${begTab(Media)}
 	Official Video
 	${tag_end}
 	<div class="listenItem">
-	${embedVideo(url=${embed_link}, title=${caption})}
+	${embedVideo(project=${project}, url=${embed_link}, title=${caption})}
 	</div>
 #live	endif
 #live	if (defined(mp4))
-	${embedVideo(url=${mp4}, title=${caption})}
+	${embedVideo(project=${project}, url=${mp4}, title=${caption})}
 #live	endif
 #live	if (defined(mp3))
 	${tag_beg}
@@ -120,7 +120,7 @@ ${begTab(Media)}
 #live	endif
 	${tag_end}
 	<div class="listenItem"><blockquote>
-	${linkAudio(mp3=${mp3})}
+	${linkAudio(project=${project}, mp3=${mp3})}
 	</blockquote></div>
 #live	endif
 #live	if (getnum(lscm->cnt) > 0)
@@ -10228,7 +10228,7 @@ Break out and find out tonight.
 	Quality people with nothing to hide.
 
 
-#		${linkAudio(title=Quality People (2002 demo), mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3, autolink=no)}
+#		${linkAudio(project=wilson, title=Quality People (2002 demo), mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3, autolink=no)}
 	)},
 		mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3, caption=2003 demo,
 		onlist=va_wilson_heyday ..  wilson_demo_2003 .. wilson_demo_2002,

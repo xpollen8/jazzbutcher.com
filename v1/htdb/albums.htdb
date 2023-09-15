@@ -8548,8 +8548,8 @@ ${49} (Live KCRW Session 1989)
 	${a_cat} 
 	${det_end}
 	${tun_beg}
-		${linkAudio(title=Buffalo Sniper, url=${jbc_lyrics}/wilson_buffalo_sniper.html, mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3)}
-		${linkAudio(title=Police Chief, url=${jbc_lyrics}/wilson_police_chief.html, mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3)}
+		${linkAudio(project=wilson, collection=2005-11 Demo, title=Buffalo Sniper, url=${jbc_lyrics}/wilson_buffalo_sniper.html, mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3)}
+		${linkAudio(project=wilson, collection=2005-11 Demo, title=Police Chief, url=${jbc_lyrics}/wilson_police_chief.html, mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3)}
 	${tun_end}
 	${players_beg}
 
@@ -8578,8 +8578,8 @@ ${49} (Live KCRW Session 1989)
 	</p>
 	${det_end}
 	${tun_beg}
-		${linkAudio(title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3)}
-		${linkAudio(title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3)}
+		${linkAudio(project=wilson, collection=2003-04 Demo, title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3)}
+		${linkAudio(project=wilson, collection=2003-04 Demo, title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3)}
 	${tun_end}
 	${players_beg}
 
@@ -8605,12 +8605,12 @@ ${49} (Live KCRW Session 1989)
 	</p>
 	${det_end}
 	${tun_beg}
-		${linkAudio(title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3)}
-		${linkAudio(title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3)}
-		${linkAudio(title=Hippy Shit, url=${jbc_lyrics}/wilson_hippy_shit.html, mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3)}
-		${linkAudio(title=Play It All Night Long, mp3=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3, author=Warren Zevon)}
-		${linkAudio(title=Burn\, Hollywood\, Burn, url=${jbc_lyrics}/wilson_burn_hollywood_burn.html, mp3=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3)}
-		${linkAudio(title=Dark Agenda, url=${jbc_lyrics}/wilson_dark_agenda.html, mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Hippy Shit, url=${jbc_lyrics}/wilson_hippy_shit.html, mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Play It All Night Long, mp3=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3, author=Warren Zevon)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Burn\, Hollywood\, Burn, url=${jbc_lyrics}/wilson_burn_hollywood_burn.html, mp3=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Dark Agenda, url=${jbc_lyrics}/wilson_dark_agenda.html, mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3)}
 	${tun_end}
 	${players_beg}
 

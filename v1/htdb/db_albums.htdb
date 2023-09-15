@@ -16,8 +16,8 @@
 #define	albums->field[15]	contribution
 #define	albums->field[16]	dtrecorded
 #define	albums->field[17]	studio
-#define	albums->field[17]	onalbum
-#define	albums->field[17]	liner
+#define	albums->field[18]	onalbum
+#define	albums->field[19]	liner
 
 #define	albums[1]->type	album
 #define	albums[1]->lookup	bacon

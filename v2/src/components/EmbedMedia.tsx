@@ -110,18 +110,19 @@ const	EmbedSoundCloud = ({ data }: any) => {
 }
 
 const EmbedMedia = ({ data = {}, children } : any) => {
-	const { autolink=true, datetime, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
+	const { autolink=true, parent, datetime, venue, city, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);
+	const useMediaurl = (mediaurl && mediaurl.startsWith('/')) ? `https://jazzbutcher.com${mediaurl}` : mediaurl;
 	return (<>
 		{(() => {
-			if (mediaurl) {
-				if (mediaurl?.includes('soundcloud.com')) {
+			if (useMediaurl) {
+				if (useMediaurl?.includes('soundcloud.com')) {
 					return <EmbedSoundCloud data={data} />
-				} else if (mediaurl?.includes('.mp3')) {
+				} else if (useMediaurl?.includes('.mp3')) {
 					return (<blockquote className="listenItem">
 						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
-						<LinkAudio autolink={autolink} title={song || title} mp3={mediaurl} artist={artist} author={author} comment={comment} />
+						<LinkAudio parent={parent} autolink={autolink} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} />
 						{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} />}
 					</blockquote>)
 				} else {

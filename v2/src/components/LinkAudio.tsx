@@ -1,7 +1,12 @@
+import Link from 'next/link';
 import { autoLink, linkExternal } from '@/lib/macros';
 
-const LinkAudio = ({ title, comment, wav, mp3, url, artist, author, autolink = true, children }: {
+const LinkAudio = ({ parent, datetime, venue, city, title, comment, wav, mp3, url, artist, author, autolink = true, children }: {
 	title: string
+	parent?: string
+	datetime?: string
+	venue?: string
+	city?: string
 	comment?: string
 	artist?: string
 	mp3?: string
@@ -14,6 +19,11 @@ const LinkAudio = ({ title, comment, wav, mp3, url, artist, author, autolink = t
 <>
 	<div className="audioPlayer">
 		<span className="audio_title">
+		{(city?.length && venue?.length && datetime?.length && !datetime.match(/0000-00-00 00:00:00/)) && <>
+			{(parent) && <Link href={parent}><b>{datetime?.substring(0, 10)}</b></Link>}
+			{!(parent) && <b>{datetime?.substring(0, 10)}</b>}
+			{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
+		</>}
 		<i>
 			{(() => {
 				if (url) {
@@ -29,8 +39,7 @@ const LinkAudio = ({ title, comment, wav, mp3, url, artist, author, autolink = t
 		</i>
 		</span>
 		{(artist) && <b>{artist}</b>} {(author) && <span className="smalltext pl-3"> ({author}) </span>}
-		{(comment) && <span className="smalltext"> <i>{comment}</i> </span>}
-		{(title) && <br/>}
+		{(comment) && <span className="smalltext"> <i><div dangerouslySetInnerHTML={{ __html: comment }} /></i> </span>}
 		{(mp3) &&
 		<audio controls title={title} preload="none" className="audio_player">
 			<source src={mp3} type="audio/mpeg" />

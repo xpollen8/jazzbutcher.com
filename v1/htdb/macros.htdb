@@ -3963,9 +3963,14 @@ ${define(_set, false)}
 #live	if (defined(${prefix}->contribution))
 		${g_contribution(g=${literalizeCommas(${${prefix}->contribution})})}
 #live	endif
-		${${prefix}->blurb}
-#live	if (defined(${prefix}->credit))
-		${parseCredit(${${prefix}->credit})}
+#live	if (defined(${prefix}->blurb))
+			<blockquote>
+				${${prefix}->blurb}
+#live		if (defined(${prefix}->credit))
+				<br />
+				${parseCredit(${${prefix}->credit})}
+#live		endif
+			</blockquote>
 #live	endif
 	</div>
 #live	if (defined(${prefix}->buy))

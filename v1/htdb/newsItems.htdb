@@ -40,7 +40,7 @@
 #define	newsItem[4]->subject "Near Perfect Pitch" podcast #1
 #define	newsItem[4]->category	media
 #define	newsItem[4]->body
-	${linkAudio(title=${newsItem[4]->subject}, mp3=${jbc_audio}/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3, autolink=no)}
+	${linkAudio(type=interview, title=${newsItem[4]->subject}, mp3=${jbc_audio}/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3, autolink=no, credit=Dara Mottahed;;http://www.nearperfectpitch.com;;2016-11-15, comment=Dara Mottahed and Pat (via Skype) chat about recent band history. And football.)}
 	Excerpted from ${linkExternal(https://twitter.com/NearPerfPitch, \@NearPerfPitch)}'s inaugural podcast.
 	Dara Mottahed and Pat (via Skype) ${linkExternal(http://www.ckcufm.com/node/700, chat about recent band history. And football)}.
 #define	newsItem[4]->dt	${date(U, 2016-05-09)}
@@ -473,12 +473,12 @@
 #
 #	pat wants this gone Thu Mar 23 16:40:30 PDT 2017
 #
-#define	newsItem[47x]->dt ${date(U, 2017-03-05)}
-#define	newsItem[47x]->subject Black Raoul
-#define	newsItem[47x]->category	media
-#define	newsItem[47x]->body
+#define	newsItem[47]->dt ${date(U, 2017-03-05)}
+#define	newsItem[47]->subject Black Raoul
+#define	newsItem[47]->category	media
+#define	newsItem[47]->body
 	A lovely video for ${black_raoul}, filmed <a href="htdb/gigs/2015/Sep22_2000.html">2015-02-22</a>
-	${embedVideo(url=https://www.youtube.com/embed/ZAnYjrYmF4Q)}
+	${embedVideo(collection=Official Music Videos, name=Black Raoul, url=https://www.youtube.com/embed/ZAnYjrYmF4Q)}
 
 #define	newsItem[48]->dt ${date(U, 2017-03-04)}
 #define	newsItem[48]->subject Andrew Brooksbank photos
@@ -498,7 +498,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 #define	newsItem[49]->subject Besancon, France - 1986-03-04
 #define	newsItem[49]->category	media
 #define	newsItem[49]->body
-	${linkAudio(title=The Entire Show, mp3=http://jazzbutcher.com/audio/19860304/19860304_JazzButcher_Besacon_EQd.mp3)}
+	${linkAudio(title=The Entire Show, mp3=http://jazzbutcher.com/audio/19860304/19860304_JazzButcher_Besacon_EQd.mp3, comment=Besancon\, France, parent=/gigs/1986/Mar4, datetime=1986-03-04, credit=Dom Genot;;https://soundcloud.com/lonesomedog;;2017-03-09)}
 	${g_credit(g=Dom Genot, u=https://soundcloud.com/lonesomedog)}
 
 #define newsItem[50]->dt ${date(U, 2017-03-11)}
@@ -570,7 +570,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 #define	newsItem[53]->subject "Near Perfect Pitch" podcast #35
 #define	newsItem[53]->category	media
 #define	newsItem[53]->body
-	${linkAudio(title=${newsItem[53]->subject}, mp3=${jbc_audio}/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3, autolink=no)}
+	${linkAudio(type=interview, title=${newsItem[53]->subject}, mp3=${jbc_audio}/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3, autolink=no, credit=Dara Mottahed;;http://www.nearperfectpitch.com;;2017-03-20, comment=Dara Mottahed and Pat (via Skype) catch up on happenings since the previous podcast.)}
 	Excerpted from ${linkExternal(https://twitter.com/NearPerfPitch, \@NearPerfPitch)}'s podcast #35.
 	Dara Mottahed and Pat (via Skype) ${linkExternal(http://www.nearperfectpitch.com, catch up on happenings since the previous podcast.)}.
 #define	newsItem[53]->dt	${date(U, 2017-04-02)}

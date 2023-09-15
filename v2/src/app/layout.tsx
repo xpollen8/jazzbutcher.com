@@ -52,6 +52,7 @@ export default function RootLayout({
 					<NavItem uri="/project/black_eg" text="Black Eg" />
 					<NavItem uri="/project/sumosonic" text="Sumosonic" />
 					<NavItem uri="/project/wilson" text="Wilson" />
+					<NavItem uri="/project/drones_club" text="Drones Club" />
 					<div className="nav_heading">Pre-JBC</div>
 					<NavItem uri="/prejbc/nightshift" text="Nightshift" />
 					<NavItem uri="/prejbc/institution" text="Institution" />

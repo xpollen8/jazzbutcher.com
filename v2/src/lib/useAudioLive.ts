@@ -1,6 +1,6 @@
 import useSWR from 'swr';
 
-const useAudioLive = (type: string) => {
+const useAudioLive = () => {
 	const fetcher = async (url: any) => {
 		return fetch(url)
 			.then((res) => res.json())

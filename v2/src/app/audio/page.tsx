@@ -11,24 +11,25 @@ import { parseCredit } from '@/lib/macros';
 const AudioSection = ({ title, project, data }: any) => {
 	return (<div className={`gig_${project}`}>
 		<h1>{title}</h1>
-		{data?.map((d: unknown, key: number) => {
+		{data?.map((d: any, key: number) => {
 			const { credit=d.mediacredit, crediturl=d.mediacrediturl, creditdate, creditcaption } = parseCredit(d.credit);
 			//if (d.credit) console.log("CR", { cr: d.credit, credit, crediturl, creditdate, creditcaption });
 			//if (title === 'Live Shows') console.log("DATA", d);
 			if (title === 'Live Shows' && !d.mediaurl) console.log("DATA", d);
-			return <EmbedMedia data={{
-				datetime: d.datetime,
-				venue: d.venue,
-				city: d.city,
-				mediaurl: d.mp3 || d.mediaurl,
-				title: d.name || d.song || 'XXXXXXX',
-				author: d.collection,
-				comment: d.comment,
-				mediacredit: credit,
-				mediacrediturl: crediturl,
-				mediacreditdate: creditdate,
-				children: creditcaption
-			}} />;
+			return <EmbedMedia key={key}
+				data={{
+					datetime: d.datetime,
+					venue: d.venue,
+					city: d.city,
+					mediaurl: d.mp3 || d.mediaurl,
+					title: d.name || d.song || 'XXXXXXX',
+					author: d.collection,
+					comment: d.comment,
+					mediacredit: credit,
+					mediacrediturl: crediturl,
+					mediacreditdate: creditdate,
+					children: creditcaption
+				}} />;
 		})}
 	</div>)
 }
@@ -42,14 +43,14 @@ const Audio = () => {
 		<h1>This is a W.I.P. - still need to tack the right info onto stuff in the database for this to work programmatically</h1>
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading) && <>
-				<AudioSection title="Black Eg" project="eg" data={data.filter((d: unknown) => d.project === 'eg')} />
-				<AudioSection title="Sumosonic" project="sumo" data={data.filter((d: unknown) => d.project === 'sumo')} />
-				<AudioSection title="Wilson" project="wilson" data={data.filter((d: unknown) => d.project === 'wilson')} />
-				<AudioSection title="Vaguely Familiar" project="vaguely" data={data.filter((d: unknown) => d.project === 'vaguely')} />
-				<AudioSection title="Cambodia" project="cambodia" data={data.filter((d: unknown) => d.project === 'cambodia')} />
-				<AudioSection title="Interviews" project="jbc" data={data.filter((d: unknown) =>
+				<AudioSection title="Black Eg" project="eg" data={data.filter((d: any) => d.project === 'eg')} />
+				<AudioSection title="Sumosonic" project="sumo" data={data.filter((d: any) => d.project === 'sumo')} />
+				<AudioSection title="Wilson" project="wilson" data={data.filter((d: any) => d.project === 'wilson')} />
+				<AudioSection title="Vaguely Familiar" project="vaguely" data={data.filter((d: any) => d.project === 'vaguely')} />
+				<AudioSection title="Cambodia" project="cambodia" data={data.filter((d: any) => d.project === 'cambodia')} />
+				<AudioSection title="Interviews" project="jbc" data={data.filter((d: any) =>
 					(d.project === 'jbc' || d.project.length === 0) && (d.subtype === 'interview' || d.name === 'The Interview'))} />
-				<AudioSection title="Jazz Butcher" project="jbc" data={data.filter((d: unknown) =>
+				<AudioSection title="Jazz Butcher" project="jbc" data={data.filter((d: any) =>
 					(d.project === 'jbc' || d.project.length === 0) && (!d.name.startsWith('The Entire') && d.name !== 'The Interview' && d.subtype !== 'interview'))} />
 			</>}
 		</Suspense>

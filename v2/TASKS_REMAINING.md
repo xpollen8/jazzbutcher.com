@@ -46,3 +46,5 @@ https://web.dev/virtualize-long-lists-react-window/
 SVG graphics: https://www.svgrepo.com/vectors/orchestra/
 cool SVG->React component tool: https://react-svgr.com/playground/
 possible backed tool for edit forms: https://github.com/vantezzen/auto-form
+
+audio player: https://www.npmjs.com/package/react-h5-audio-player

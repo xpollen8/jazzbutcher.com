@@ -539,6 +539,26 @@ const songLinkMapped = (title: string, doit?: boolean) => {
 	}
 }
 
+export const censorEmail = (str: string) => {
+	const deHTDB = str?.replace(/\[remove\].*/, '@');
+	const len = deHTDB.length;
+	const idx = deHTDB.indexOf('@') + 1;
+	return deHTDB[0] + deHTDB.substr(1, idx - 1) + Array(len - idx - 1).join('.') + deHTDB[len - 1];
+}
+
+export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<br/>').replace(/\\,/g, ',');
+
+
+export const parseCredit = (cr: string) => {
+	const [ credit, crediturl, creditdate, creditcaption ] = cr?.split(';;') || '';
+	return {
+		credit,
+		crediturl,
+		creditdate,
+		creditcaption: deHTDBifyText(creditcaption)
+	}
+}
+
 const autoLink = songLinkMapped;
 
 const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
@@ -551,14 +571,4 @@ const releaseByLookup = async (lookup: string) => {
 	const releaseByHREF = releases?.albums?.find((r: any) => r?.href?.includes(lookup));
 	if (releaseByHREF) return releaseByHREF;
 }
-
-export const censorEmail = (str: string) => {
-	const deHTDB = str?.replace(/\[remove\].*/, '@');
-	const len = deHTDB.length;
-	const idx = deHTDB.indexOf('@') + 1;
-	return deHTDB[0] + deHTDB.substr(1, idx - 1) + Array(len - idx - 1).join('.') + deHTDB[len - 1];
-}
-
-export const deHTDBifyText = (v: string) => v.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<br/>');
-
 export { localDate, datesEqual, bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

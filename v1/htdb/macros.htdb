@@ -772,6 +772,7 @@
 ##live	endif
 
 #define	linkSong(title, href, audio, mp3, author, pdf)
+	<!-- BEG:expanded_from:[song:${title}] -->
 ##live	if (sql(insert IGNORE into song set name="${literalizeQuotes(${literalizeCommas(${title})})}", href="${href}", audio="${audio}", mp3="${mp3}", author="${author}"))
 ##live	endif
 	<span class='song'>
@@ -788,32 +789,39 @@
 	<span class="song_author">(${author})</span>
 #live	endif
 	</span>
+	<!-- expanded_from:[song:${title}]:END -->
 
 #define	linkSingle(title, href)
+	<!-- BEG:expanded_from:[single:${title}] -->
 #${linkSQL(single, ${title}, ${href})}
 #live	if (defined(href))
 	<span class="release_title"><b><a href="${href}">${title}</a></b></span>
 #live	else
 	<b>${title}</b>
 #live	endif
+	<!-- expanded_from:[single:${title}]:END -->
 
 #define	linkAlbum(title, href)
 #${linkSQL(album, ${title}, ${href})}
+	<!-- BEG:expanded_from:[album:${title}] -->
 #live	if (defined(href))
 	<span class="release_title"><b><a href="${href}">${title}</a></b></span>
 #live	else
 	<span class="release_title"><b>${title}</b></span>
 #live	endif
+	<!-- expanded_from:[album:${title}]:END -->
 
 #define	linkPerson(href, name, lookup=no)
 #${linkSQL(person, ${name}, ${href})}
+	<!-- BEG:expanded_from:[person:${name}] -->
 	<span class="person">
 #live	if (getval(lookup) = yes)
 	${name}
 #live	else
 	<a href="${href}">${name}</a>
 #live	endif
-	</span><!-- person -->
+	</span>
+	<!-- expanded_from:[person:${name}]:END -->
 
 #define	linkGoogleSearch(query, text)
 #	<a href="${jbc_search}?f=performer&q=${encode(${query})}">${ternary((defined(text)), ${text}, ${query})}</a>
@@ -1800,6 +1808,7 @@ font.load().then(function () {
 #
 #	Fire Records box-sets
 #
+#define	fire_records	Fire Records
 #define	fire_wasted	${linkAlbum(href=${jbc_albums}/fire_wasted.html, title=The Wasted Years)}
 #define	fire_violent	${linkAlbum(href=${jbc_albums}/fire_violent.html, title=The Violent Years)}
 #define	fire_cholmondley	${linkAlbum(href=${jbc_albums}/fire_cholmondley.html, title=Dr Cholmondley Repents)}
@@ -1920,11 +1929,15 @@ font.load().then(function () {
 #define	12	12"
 #define	7	7"
 #define	LIVE	Live
-#define	a_class	<br/><b>Classification</b>:
+#define	a_releasetype	<br/><b>Release Type</b>:
+#define	a_media	<br/><b>Media</b>:
 #define	a_label	<br/><b>Label</b>:
-#define	a_date	<br/><b>Date</b>:
+#define	a_dtreleased	<br/><b>Released</b>:
 #define	a_cat	<br/><b>Catalogue</b>:
 #define	a_rec	<br/><b>Recorded</b>:
+#define	a_dtrecorded	<br/><b>Date Recorded</b>:
+#define	a_studio	<br/><b>Studio</b>:
+#define	a_onalbum	<br/><b>From Album</b>:
 #define	a_eng	<br/><b>Engineered</b>:
 #define	a_comp	<br/><b>Compiled By</b>:
 #define	a_where	<br/><b>Country</b>:
@@ -1940,6 +1953,13 @@ font.load().then(function () {
 #define	a_notes	<br/><b>Notes</b>:
 #define	anno_beg	<div class="lyric_annotation">
 #define	anno_end	</div>
+#define	doObservation(obs)
+#live	if (defined(obs))
+	${tag_beg} Observation ${tag_end}
+	<blockquote>
+		${obs}
+	</blockquote>
+#live	endif
 #
 #	tags
 #
@@ -3923,6 +3943,7 @@ ${define(_set, false)}
 	${footer}
 
 #define	mkAlbumBlurb(prefix, details=yes, size=250)
+	<!-- BEG:expanded_from:[album_blurb:${${prefix}->title}] -->
 	<div class="release">
 	<div class="album_details">
 #live	if (defined(${prefix}->project))
@@ -3943,8 +3964,8 @@ ${define(_set, false)}
 		${g_contribution(g=${literalizeCommas(${${prefix}->contribution})})}
 #live	endif
 		${${prefix}->blurb}
-#live	if (defined(${prefix}->credit_g))
-		${g_credit(g=${${prefix}->credit_g}, u=${${prefix}->credit_u}, d=${${prefix}->credit_d})}
+#live	if (defined(${prefix}->credit))
+		${parseCredit(${${prefix}->credit})}
 #live	endif
 	</div>
 #live	if (defined(${prefix}->buy))
@@ -3984,6 +4005,7 @@ ${define(_set, false)}
 #live	endif
 	</div>
 	</div>
+	<!-- expanded_from:[album_blurb:${${prefix}->title}]:END -->
 
 #define	showNewsCategory(category, limit, showYear, showMore)
 #live	if (define(prevYr, XXX))

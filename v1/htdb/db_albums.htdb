@@ -1,10 +1,10 @@
-#define	albums->numFields	17
+#define	albums->numFields	19
 #define	albums->field[1]	type
 #define	albums->field[2]	href
 #define	albums->field[3]	title
 #define	albums->field[4]	thumb
 #define	albums->field[5]	blurb
-#define	albums->field[6]	year
+#define	albums->field[6]	dtreleased
 #define	albums->field[7]	buy
 #define	albums->field[8]	project
 #define	albums->field[9]	lookup
@@ -12,10 +12,12 @@
 #define	albums->field[11]	catalog
 #define	albums->field[12]	media
 #define	albums->field[13]	country
-#define	albums->field[14]	credit_g
-#define	albums->field[15]	credit_u
-#define	albums->field[16]	credit_d
-#define	albums->field[17]	contribution
+#define	albums->field[14]	credit
+#define	albums->field[15]	contribution
+#define	albums->field[16]	dtrecorded
+#define	albums->field[17]	studio
+#define	albums->field[17]	onalbum
+#define	albums->field[17]	liner
 
 #define	albums[1]->type	album
 #define	albums[1]->lookup	bacon
@@ -27,14 +29,14 @@
 #define	albums[1]->catalog	GLALP002;GLACD002
 #define	albums[1]->thumb	/images/bath
 #define	albums[1]->blurb	<div class="annotation">It's really just the sound of a few mates failing to take seriously the fact they they've got an l.p. to make. It seems VERY early eighties now, but you must remember that there was a LOT of crap for us to clear out of the way in those days.</div>
-#define	albums[1]->year	1983-03-01
+#define	albums[1]->dtreleased	1983-03-01
 #define	albums[2]->type	single
 #define	albums[2]->lookup	smith
 #define	albums[2]->href	${jbc_albums}/smith.html
 #define	albums[2]->title	Southern Mark Smith
 #define	albums[2]->thumb	/images/cover_smith_front
 #define	albums[2]->blurb	Recorded in the summer of 1983 in a place called Wellingborough, a small town in the middle of England where even the children are scarey!
-#define	albums[2]->year	1983-09-01
+#define	albums[2]->dtreleased	1983-09-01
 #define	albums[3]->type	album
 #define	albums[3]->lookup	scandal
 #define	albums[3]->href	${jbc_albums}/scandal.html
@@ -42,28 +44,29 @@
 #define	albums[3]->title	A Scandal In Bohemia
 #define	albums[3]->thumb	/images/scandal_front
 #define	albums[3]->blurb	<div class="annotation">The Albatross. A record, I feel, of its time. We were young(ish) and cocky and I think it shows. I still haven't learned to sing on this one, which bugs me too. Still, it was cheap and cheerful, and it helped us to meet an awful lot of people.</div>
-#define	albums[3]->year	1984
+#define	albums[3]->dtreleased	1984
 #define	albums[4]->type	single
 #define	albums[4]->lookup	marnie
 #define	albums[4]->href	${jbc_albums}/marnie.html
 #define	albums[4]->title	Marnie
 #define	albums[4]->thumb	/images/releases/marnie_front
 #define	albums[4]->blurb	An attempt to force a meeting between the steaming tropical jungles of Bangladesh (where the tigers live) and the frozen stepps of Siberia (where the Siberian tigers live).
-#define	albums[4]->year	1984
+#define	albums[4]->dtreleased	1984
 #define	albums[5]->type	single
 #define	albums[5]->lookup	runner
 #define	albums[5]->href	${jbc_albums}/roadrunner.html
 #define	albums[5]->title	Roadrunner
 #define	albums[5]->thumb	/images/releases/roadrunner_front
 #define	albums[5]->blurb	
-#define	albums[5]->year	1984
+#define	albums[5]->dtreleased	1984
 ##define	albums[6]->type	single
 ##define	albums[6]->lookup	zomby
 ##define	albums[6]->href	${jbc_albums}/zombie.html
 ##define	albums[6]->title	Zombie Love
 ##define	albums[6]->thumb	
 ##define	albums[6]->blurb	Recorded in London one Sunday afternoon in January 1984, Zombie Love is just sick.
-##define	albums[6]->year	1984
+##define	albums[6]->dtreleased	1984
+
 #define	albums[7]->type	various
 #define	albums[7]->lookup	va_spark
 #define	albums[7]->href	${jbc_albums}/va_another_spark.html
@@ -73,14 +76,17 @@
 #define	albums[7]->catalog	001
 #define	albums[7]->thumb	/images/releases/va_anotherspark2
 #define	albums[7]->contribution	inside_heart
-#define	albums[7]->year	1984
+#define	albums[7]->dtreleased	1984
+#define	albums[7]->dtrecorded	1983-05
+#define	albums[7]->studio	Sketch Studio, Northampton (&quot;Cak Bag session&quot;)
+
 #define	albums[8]->type	album
 #define	albums[8]->lookup	sex
 #define	albums[8]->href	${jbc_albums}/sex.html
 #define	albums[8]->title	Sex And Travel
 #define	albums[8]->thumb	/images/releases/sex_front
 #define	albums[8]->blurb	<div class="annotation">Having exhausted the initial stick of JB songs, I was obliged for the first time to write about my life as it was at the time. I think that now we had started to learn about actually creating recordings rather than just recording the sound of a bunch of pals fooling around. This one I'd actually defend at length if I had to.</div>
-#define	albums[8]->year	1985
+#define	albums[8]->dtreleased	1985
 #define	albums[9]->type	live
 #define	albums[9]->lookup	hamburg
 #define	albums[9]->href	${jbc_albums}/hamburg.html
@@ -90,28 +96,28 @@
 #define	albums[9]->media	LP
 #define	albums[9]->thumb	/images/releases/hamburg_front
 #define	albums[9]->blurb	<div class="annotation">We were all disappointed at the way this came out. The concert was great, but logistics prevented us from making anything much more than a glorified bootleg. Still, live albums are best as souvenirs anyway, so I guess some people regard it fondly. Lots of entertaining photos to look at anyway...</div>
-#define	albums[9]->year	1985-11
+#define	albums[9]->dtreleased	1985-11
 #define	albums[10]->type	compilation
 #define	albums[10]->lookup	gift1
 #define	albums[10]->href	${jbc_albums}/gift1.html
 #define	albums[10]->title	The Gift Of Music
 #define	albums[10]->thumb	/images/gift
 #define	albums[10]->blurb	This record collects together the various singles that have been issued in England to date under the much-abused name of the Jazz Butcher, to wit: me. I rather like having them all in one place like this - it makes for a nice, noisey muck-it-up sort of disc that is ideal for leisure time at home, on the beach, in you local club.... hell, ANYWHERE!!!
-#define	albums[10]->year	1985
+#define	albums[10]->dtreleased	1985
 #define	albums[11]->type	single
 #define	albums[11]->lookup	rmen
 #define	albums[11]->href	${jbc_albums}/men.html
 #define	albums[11]->title	Real Men
 #define	albums[11]->thumb	/images/releases/realmen_front
 #define	albums[11]->blurb	Real Men, the kind who never sit together on buses in case they get their medallions tangled.
-#define	albums[11]->year	1985
+#define	albums[11]->dtreleased	1985
 #define	albums[12]->type	single
 #define	albums[12]->lookup	human
 #define	albums[12]->href	${jbc_albums}/jungle.html
 #define	albums[12]->title	The Human Jungle
 #define	albums[12]->thumb	/images/junglefront
 #define	albums[12]->blurb	<div class="annotation">The title comes from a rather noir little TV series from the early Sixties wherein the great Herbert Lom played the extremely sexy and not entirely unbrilliant Dr. Alexander Kordu, a psychiatrist with the handy ability to sort out even the most appalling cases within sixty minutes.</div>
-#define	albums[12]->year	1985
+#define	albums[12]->dtreleased	1985
 #define	albums[13]->type	single
 #define	albums[13]->lookup	swingin
 #define	albums[13]->label	Glass
@@ -121,7 +127,7 @@
 #define	albums[13]->title	Christmas With The Pygmies
 #define	albums[13]->thumb	/images/cover_pygmies_front
 #define	albums[13]->blurb	
-#define	albums[13]->year	1985
+#define	albums[13]->dtreleased	1985
 #define	albums[14]->type	various
 #define	albums[14]->lookup	uptoyou
 #define	albums[14]->href	${jbc_albums}/va_abstract_5.html
@@ -130,7 +136,7 @@
 #define	albums[14]->title	VA: Abstract #5
 #define	albums[14]->thumb	/images/releases/abstract5
 #define	albums[14]->contribution uptoyou
-#define	albums[14]->year	1985
+#define	albums[14]->dtreleased	1985
 #define	albums[15]->type	album
 #define	albums[15]->lookup	dist
 #define	albums[15]->href	${jbc_albums}/distressed.html
@@ -138,21 +144,21 @@
 #define	albums[15]->title	Distressed Gentlefolk
 #define	albums[15]->thumb	/images/gentle
 #define	albums[15]->blurb	<div class="annotation">We were deeply confused young men when we made this record. Max, Jones and I had all been drinking dangerously for over a year now. Generally, we had it down in concert. In just about every other department, however, we were coming to bits, individually and collectively, and to me this record actually shows the morbid state of things at the time.</div>
-#define	albums[15]->year	1986
+#define	albums[15]->dtreleased	1986
 #define	albums[16]->type	compilation
 #define	albums[16]->lookup	nons
 #define	albums[16]->href	${jbc_albums}/nonsense.html
 #define	albums[16]->title	Bloody Nonsense
 #define	albums[16]->thumb	/images/releases/nonsense_front
 #define	albums[16]->blurb	The Jazz Butcher and his group are not in the business of belonging; they are too old and too obstreperous to conform to some attention-seeking image or commercially viable formula. Rather, they bring their not inconsiderable talents to bear on whatever happens to be in the way at the time. The results can only be described as essential.
-#define	albums[16]->year	1986
+#define	albums[16]->dtreleased	1986
 #define	albums[17]->type	single
 #define	albums[17]->lookup	hard
 #define	albums[17]->href	${jbc_albums}/hard.html
 #define	albums[17]->title	Hard
 #define	albums[17]->thumb	/images/hardfront
 #define	albums[17]->blurb	<div class="annotation">This record is all about love. Don't let the psychic molestation syndrome get to you. This is our loudest record to date, which is something to do with the elephants.</div>
-#define	albums[17]->year	1986
+#define	albums[17]->dtreleased	1986
 #define	albums[18]->type	album
 #define	albums[18]->lookup	conspir
 #define	albums[18]->label	Glass
@@ -163,21 +169,29 @@
 #define	albums[18]->media	LP
 #define	albums[18]->thumb	/images/releases/conspiracy_front
 #define	albums[18]->blurb	<div class="annotation">Ever wondered what Max and I get up to away from the glamour of the modern stage? No, probably not, but let me tell you that there is nothing we like better that to get our teeth into those Big Questions.</div>
-#define	albums[18]->year	1986
+#define	albums[18]->dtreleased	1986
+
 #define	albums[19]->type	single
 #define	albums[19]->lookup	angel
+#define	albums[19]->onalbum	dist
+#define	albums[19]->media	${12}
+#define	albums[19]->label	${glass}
+#define	albums[19]->cat		Glass 12049
+#define	albums[19]->studio	Woodbine Recording Studios, Royal Leamington Spa (${angels}, Ace Studio, Bubrooke (${becky} , ${mersey})
 #define	albums[19]->href	${jbc_albums}/angels.html
 #define	albums[19]->title	Angels
+#define	albums[19]->liner	Dedicated to Maureen and the Angels.
 #define	albums[19]->thumb	/images/releases/angels_front
 #define	albums[19]->blurb	
-#define	albums[19]->year	1986
+#define	albums[19]->dtreleased	1986
+
 #define	albums[20]->type	compilation
 #define	albums[20]->lookup	gift2
 #define	albums[20]->href	${jbc_albums}/gift2.html
 #define	albums[20]->title	Big Questions (Gift Of Music Volume II)
 #define	albums[20]->thumb	/images/releases/gift2_front
 #define	albums[20]->blurb	
-#define	albums[20]->year	1987
+#define	albums[20]->dtreleased	1987
 #define	albums[21]->type	single
 #define	albums[21]->lookup	may
 #define	albums[21]->label	Glass
@@ -187,35 +201,35 @@
 #define	albums[21]->title	Speedy Gonzalez
 #define	albums[21]->thumb	/images/releases/mayi_a
 #define	albums[21]->blurb	Chock full of acoustically and lively delivered cover tunes. Essential.
-#define	albums[21]->year	1987
+#define	albums[21]->dtreleased	1987
 #define	albums[22]->type	album
 #define	albums[22]->lookup	fishco
 #define	albums[22]->href	${jbc_albums}/fishcotheque.html
 #define	albums[22]->title	Fishcotheque
 #define	albums[22]->thumb	/images/fishco
 #define	albums[22]->blurb	<div class="annotation">Having ended up on ${creat}, which I took as a bit of a validation, I was keen to get as far away from all those "w" words that had followed my group around. The sessions were chaotic and funny. What disappoints me is that it came out sounding so SMOOTH and tidy. But I like Fishcotheque; I wish there more records as good as it.</div>
-#define	albums[22]->year	1988
+#define	albums[22]->dtreleased	1988
 #define	albums[23]->type	EP
 #define	albums[23]->lookup	spook
 #define	albums[23]->href	${jbc_albums}/spooky.html
 #define	albums[23]->title	Spooky EP
 #define	albums[23]->thumb	/images/releases/spooky_12_front
 #define	albums[23]->blurb	<div class="annotation">Thanks for the money. We'll be spending it on weapons and drugs. The first thing that you have to understand about this disc is that it is not an L.P.: it is a single and a radio session nailed together for your amusement.</div>
-#define	albums[23]->year	1988
+#define	albums[23]->dtreleased	1988
 #define	albums[24]->type	album
 #define	albums[24]->lookup	planet
 #define	albums[24]->href	${jbc_albums}/planet.html
 #define	albums[24]->title	Big Planet, Scarey Planet
 #define	albums[24]->thumb	/images/planet
 #define	albums[24]->blurb	<div class="annotation">Early 1989 was, indeed a strange and desperate time after all that triumphalist Tory looting that had been going on. We listened to a lot of hip-hop and soul music at the time, and I think that we considered ourselves sufficiently HARD to take the whole fucker on in an l.p. Possibly with a more "clued-in" producer and a bit more self-discipline we could have come up with something like what we were looking for.</div>
-#define	albums[24]->year	1989
+#define	albums[24]->dtreleased	1989
 #define	albums[25]->type	single
 #define	albums[25]->lookup	newinv
 #define	albums[25]->href	${jbc_albums}/invention.html
 #define	albums[25]->title	New Invention
 #define	albums[25]->thumb	/images/invention_front
 #define	albums[25]->blurb	We trust that you will get off on it.
-#define	albums[25]->year	1989
+#define	albums[25]->dtreleased	1989
 #define	albums[26]->type	album
 #define	albums[26]->lookup	cult
 #define	albums[26]->href	${jbc_albums}/cult.html
@@ -223,49 +237,49 @@
 #define	albums[26]->title	Cult Of The Basement
 #define	albums[26]->thumb	/images/cult
 #define	albums[26]->blurb	<div class="annotation">If things seemed weird back in February 1989, when we made this baby, the Weird were going shopping on bikes. In a farmhouse in the dead of winter, in personal circumstances too bizarre and complex to relate, we set about making our "commercial suicide" album. For the first time, I felt, we had made an album that really sounded like us. This record does have personality. One of my favourites, this.</div>
-#define	albums[26]->year	1990
+#define	albums[26]->dtreleased	1990
 #define	albums[27]->type	single
 #define	albums[27]->lookup	girlgo
 #define	albums[27]->href	${jbc_albums}/girl.html
 #define	albums[27]->title	Girl-Go
 #define	albums[27]->thumb	/images/girl
 #define	albums[27]->blurb	
-#define	albums[27]->year	1990
+#define	albums[27]->dtreleased	1990
 #define	albums[28]->type	single
 #define	albums[28]->lookup	welove
 #define	albums[28]->href	${jbc_albums}/weloveyou.html
 #define	albums[28]->title	We Love You
 #define	albums[28]->thumb	/images/releases/weloveyou_front
 #define	albums[28]->blurb	
-#define	albums[28]->year	1990
+#define	albums[28]->dtreleased	1990
 #define	albums[29]->type	album
 #define	albums[29]->lookup	blue
 #define	albums[29]->href	${jbc_albums}/blue.html
 #define	albums[29]->title	Condition Blue
 #define	albums[29]->thumb	/images/releases/blue_front
 #define	albums[29]->blurb	<div class="annotation">For all the pain and crap from which this record was made, the actual sessions were a gigantic and wonderful party. This was warmly received by The Outside World, less popular among those who counted themselves JBC afficionados. This IS the sound of me having fun, and getting me to do that in those dark days of mid-1991 was no small job.</div>
-#define	albums[29]->year	1991
+#define	albums[29]->dtreleased	1991
 #define	albums[30]->type	compilation
 #define	albums[30]->lookup	closet
 #define	albums[30]->href	${jbc_albums}/closet.html
 #define	albums[30]->title	Edward's Closet
 #define	albums[30]->thumb	/images/closet
 #define	albums[30]->blurb	<div class="annotation">So you've got a CD player, have you? I've got a headache and an abiding dislike of expensive food crews in dumb baseball hats. I've been in Edward's Closet and he wasnt't in. "That JBC", they mutter at the bus-stop, "turned left at the light a Long Time Ago".</div>
-#define	albums[30]->year	1991
+#define	albums[30]->dtreleased	1991
 #define	albums[31]->type	single
 #define	albums[31]->lookup	yoyo
 #define	albums[31]->href	${jbc_albums}/yo_yo.html
 #define	albums[31]->title	She's A Yo-Yo
 #define	albums[31]->thumb	/images/yo_yo
 #define	albums[31]->blurb	
-#define	albums[31]->year	1991
+#define	albums[31]->dtreleased	1991
 #define	albums[32]->type	single
 #define	albums[32]->lookup	shir
 #define	albums[32]->href	${jbc_albums}/shirley.html
 #define	albums[32]->title	Shirley Maclaine
 #define	albums[32]->thumb	/images/shirley
 #define	albums[32]->blurb	
-#define	albums[32]->year	1991
+#define	albums[32]->dtreleased	1991
 #define	albums[32]->label	Shock
 #define	albums[32]->catalog	SHOCK CD 4010
 #define	albums[32]->country	Australia
@@ -278,21 +292,21 @@
 #define	albums[33]->thumb	/images/blackeg
 #define	albums[33]->project eg
 #define	albums[33]->blurb <a href="${jbc_people}/von_dammerung.html">Karel</a>'s two brothers, Otto and Emil, arrived in Vienna, having taken advantage of the new freedoms introduced by the enlightened government of Vaclav Havel, and Karel obtained in a second hand store and ancient sequential circuits drum machine and a primitive sampler. The Black Eg was born.
-#define	albums[33]->year	1991
+#define	albums[33]->dtreleased	1991
 #define	albums[34]->type	compilation
 #define	albums[34]->lookup	uncond
 #define	albums[34]->href	${jbc_albums}/unconditional.html
 #define	albums[34]->title	Unconditional
 #define	albums[34]->thumb	/images/uncond
 #define	albums[34]->blurb	One of the better Creation-era compilations. Canadian release.
-#define	albums[34]->year	1992
+#define	albums[34]->dtreleased	1992
 #define	albums[35]->type	single
 #define	albums[35]->lookup	water
 #define	albums[35]->href	${jbc_albums}/sweet_water.html
 #define	albums[35]->title	Sweet Water
 #define	albums[35]->thumb	/images/sweetwater_front
 #define	albums[35]->blurb	
-#define	albums[35]->year	1993-09-13
+#define	albums[35]->dtreleased	1993-09-13
 #define	albums[36]->type	album
 #define	albums[36]->lookup	bus
 #define	albums[36]->href	${jbc_albums}/bus.html
@@ -307,7 +321,7 @@
 	        really feels like about three.  There's rockin' shit and there's a big
 	        ballad or two and some weird little pop songs and a nice family
 	        sing-along about penguins.  I hope you like it.</div>
-#define	albums[36]->year	1993
+#define	albums[36]->dtreleased	1993
 #define	albums[37]->type	live
 #define	albums[37]->lookup	family
 #define	albums[37]->href	${jbc_albums}/western.html
@@ -315,7 +329,7 @@
 #define	albums[37]->media	CD
 #define	albums[37]->thumb	/images/western
 #define	albums[37]->blurb	<div class="annotation">For loonie completists only, for sure, though, if you listen through the muck, you'll see that we did our bit.</div>
-#define	albums[37]->year	1993
+#define	albums[37]->dtreleased	1993
 
 #define	albums[38]->type	various
 #define	albums[38]->lookup	va_abus_21
@@ -323,7 +337,7 @@
 #define	albums[38]->title	VA: Abus Dangereux #21
 #define	albums[38]->country	France
 #define	albums[38]->thumb	/images/releases/vodka
-#define	albums[38]->year	1994
+#define	albums[38]->dtreleased	1994
 #define	albums[38]->media	mini CD
 #define	albums[38]->contribution vodka
 
@@ -333,7 +347,7 @@
 #define	albums[39]->title	Sixteen Years
 #define	albums[39]->thumb	/images/releases/sixteenyears_front
 #define	albums[39]->blurb	At a time when there would appear to be no need for it, here they come again. That Purveyor of some of the most heavenly and enduring pop non-hits you're ever likely to hear has regrouped his gang of aging sociopaths and built himself, in the barns and sheds of Northamptonshire, a band.
-#define	albums[39]->year	1995-03-06
+#define	albums[39]->dtreleased	1995-03-06
 #define	albums[40]->type	album
 #define	albums[40]->lookup	ill
 #define	albums[40]->href	${jbc_albums}/illuminate.html
@@ -346,7 +360,7 @@
 #define	albums[40]->blurb	<div class="annotation">1994 live line-up stumbled through a series of tunes and such under Butcher's direction, aided and abetted by a number of the usual suspects;
 			<a href="${jbc_people}/alex_lee.html">Alex Lee</a> on guitar,
 			<a href="${jbc_people}/alex_green.html">Alex Green</a> on saxes, that sort of thing.</div>
-#define	albums[40]->year	1995-04-03
+#define	albums[40]->dtreleased	1995-04-03
 #define	albums[41]->type	compilation
 #define	albums[41]->lookup	drainglass
 #define	albums[41]->href	${jbc_albums}/drainglass.html
@@ -354,14 +368,14 @@
 #define	albums[41]->title	Draining The Glass
 #define	albums[41]->thumb	/images/drainglass
 #define	albums[41]->blurb	Glass Records era compilation.
-#define	albums[41]->year	1996
+#define	albums[41]->dtreleased	1996
 #define	albums[42]->type	compilation
 #define	albums[42]->lookup	violent
 #define	albums[42]->href	${jbc_albums}/violent.html
 #define	albums[42]->title	&iexcl;Excellent! The Violent Years
 #define	albums[42]->thumb	/images/violent
 #define	albums[42]->blurb	<div class="annotation">Millions of years ago, dinosaurs ruled the Earth. Today the Galileo Space Probe orbits mighty planet Jupiter. The Jazz Butcher Conspiracy first appeared in June 1982 <a href="${jbc_gigs}/1982/Jun12.html">in the back room of the Black Lion in Northampton</a>. They finally drank the bar dry in a small town in <a href="${jbc_gigs}/1996/Aug20.html">in Mallorca on the 20th August 1996</a></div>
-#define	albums[42]->year	1997
+#define	albums[42]->dtreleased	1997
 #define	albums[43]->type	live
 #define	albums[43]->lookup	glorious
 #define	albums[43]->href	${jbc_albums}/glorious.html
@@ -369,7 +383,7 @@
 #define	albums[43]->title	Glorious And Idiotic
 #define	albums[43]->thumb	/images/glorious_front
 #define	albums[43]->blurb	<div class="annotation">The last thing anybody expected was a new Jazz Butcher album in the year 2000. But there is one, and it's just the sort of thing that you hardcore JBC listeners are going to enjoy. The record is called "Glorious and Idiotic" and it is released on 26th January 2000 on ROIR.</div>
-#define	albums[43]->year	2000
+#define	albums[43]->dtreleased	2000
 
 #define	albums[44]->type	album
 #define	albums[44]->lookup	rotten
@@ -378,7 +392,7 @@
 #define	albums[44]->title	Rotten Soul
 #define	albums[44]->thumb	/images/front_rotten_soul
 #define	albums[44]->blurb	<div class="annotation">Well, I'm back from America. We had a good old time of it, and by the end of the tour we had worked 5 songs off the new record into our live set. The title of the new waxing, incidentally, is Rotten Soul.</div>
-#define	albums[44]->year	2000
+#define	albums[44]->dtreleased	2000
 
 #define	albums[45]->type	compilation
 #define	albums[45]->lookup	cake
@@ -387,7 +401,7 @@
 #define	albums[45]->title	Cake City
 #define	albums[45]->thumb	/images/cake_front
 #define	albums[45]->blurb	Glass-era compilation.
-#define	albums[45]->year	2001
+#define	albums[45]->dtreleased	2001
 #define	albums[46]->type	compilation
 #define	albums[46]->lookup	lunch
 #define	albums[46]->href	${jbc_albums}/free_lunch.html
@@ -395,7 +409,7 @@
 #define	albums[46]->title	The Jazz Butcher's Free Lunch
 #define	albums[46]->thumb	/images/lunch_front
 #define	albums[46]->blurb	<div class="annotation">"You're not a band. You're a crack team of international restaurant critics" - ${curt}</div>
-#define	albums[46]->year	2003-10-20
+#define	albums[46]->dtreleased	2003-10-20
 #define	albums[47]->buy		https://thejazzbutcher.bandcamp.com/album/last-of-the-gentleman-adventurers
 #define	albums[47]->type	album
 #define	albums[47]->lookup	adventurers
@@ -403,7 +417,7 @@
 #define	albums[47]->title	Last of the Gentleman Adventurers
 #define	albums[47]->thumb	/images/adventurers_front
 #define	albums[47]->blurb	Crowd-funded in under 12 hours, recorded on 2" tape, lush and warm..
-#define	albums[47]->year	2012-10-18
+#define	albums[47]->dtreleased	2012-10-18
 #define	albums[48]->buy
 #define	albums[48]->lookup	thisissumo
 #define	albums[48]->type	album,project
@@ -412,7 +426,7 @@
 #define	albums[48]->thumb	/images/sumo/sumosonic_this_is_sumo_front
 #define	albums[48]->project sumo
 #define	albums[48]->blurb This inaugural disk is decidedly un-Butcheresque, with a keyboard-heavy attack of quasi-techno rhythms. Pat was known to dabble in reverb and noise, but the results were moody, melancholy textures, quite unlike the flash of This is Sumo.
-#define	albums[48]->year	1998-01-26
+#define	albums[48]->dtreleased	1998-01-26
 #define	albums[49]->buy
 #define	albums[49]->lookup	spacemen
 #define	albums[49]->type	single,project
@@ -421,7 +435,7 @@
 #define	albums[49]->thumb	/images/sumo/sumosonic_spacemen_front
 #define	albums[49]->project sumo
 #define	albums[49]->blurb The single features: Come, Friendly Spacemen, Monks Of Kung Fu, and Come, Friendly Spacemen (version)
-#define	albums[49]->year	1996-12-05
+#define	albums[49]->dtreleased	1996-12-05
 #define	albums[50]->buy
 #define	albums[50]->lookup	spacemen12
 #define	albums[50]->type	single,project
@@ -431,7 +445,7 @@
 #define	albums[50]->thumb	/images/sumo/sumosonic_spacemen_a
 #define	albums[50]->project sumo
 #define	albums[50]->blurb	<div class="annotation">There is a limited-edition vinyl 12" single in the clubs, featuring the long version of Come, Friendly Spacemen alongside re-mixed by Tom Withers of drum n bass combo Override and Johnny Octopus of Octopus Records. The "Sushi" mix is a full on, dark-hearted progressive house tune with an evil bass; the "Jackson Hole" Mix is an insane collision between stadium pop and drum & bass which has to be heard to be believed. The 12" will also feature Monks Of Kung Fu. Any DJ is urged to get in touch with Creation to get a copy.</div>
-#define	albums[50]->year	1996-12-05
+#define	albums[50]->dtreleased	1996-12-05
 #define	albums[51]->buy
 #define	albums[51]->type	dvd,live,project
 #define	albums[51]->href
@@ -439,7 +453,7 @@
 #define	albums[51]->thumb
 #define	albums[51]->project wilson
 #define	albums[51]->blurb The Wilson DVD, entitled No Known Predators, is to be released on Friday 7th September 2012.
-#define	albums[51]->year	2012-09-07
+#define	albums[51]->dtreleased	2012-09-07
 #define	albums[52]->type	EP
 #define	albums[52]->lookup	conspir12
 #define	albums[52]->label	Glass
@@ -450,7 +464,7 @@
 #define	albums[52]->media	LP
 #define	albums[52]->thumb	/images/releases/conspiracy_front
 #define	albums[52]->blurb	<div class="annotation">Ever wondered what Max and I get up to away from the glamour of the modern stage? No, probably not, but let me tell you that there is nothing we like better that to get our teeth into those Big Questions.</div>
-#define	albums[52]->year	1986
+#define	albums[52]->dtreleased	1986
 
 #define	albums[53]->type	single
 #define	albums[53]->lookup	spook12
@@ -459,14 +473,17 @@
 #define	albums[53]->thumb	/images/releases/spooky_12_front
 #define	albums[53]->blurb
 #define	albums[53]->media	12"
-#define	albums[53]->year	1988
+#define	albums[53]->dtreleased	1988
 
 #define	albums[54]->type	various
-#define	albums[54]->lookup	va_shadow_and_substance
+#define	albums[54]->lookup	va_shadow
 #define	albums[54]->href	${jbc_albums}/va_shadow_and_substance.html
-#define	albums[54]->title	VA: Shadow and Substance
+#define	albums[54]->title	VA: Shadow and Substance (The Wonderful World Of Glass Volume 2)
 #define	albums[54]->thumb	/images/releases/va_shadow1
-#define	albums[54]->year	1984
+#define	albums[54]->dtreleased	1984
+#define	albums[54]->dtrecorded	1983-05
+#define	albums[54]->studio	Sketch Studio, Northampton (&quot;Cak Bag session&quot;)
+#define	albums[54]->media	LP
 #define	albums[54]->label	Glass
 #define	albums[54]->catalog	GLALP 007
 #define	albums[54]->contribution aff
@@ -475,17 +492,19 @@
 		released in 1979 on the <b>Back In Your Life</b> LP by Jonathan Richman And The
 		Modern Lovers.
 #		The cover version can also be found on the ${affect} 12".
-#define	albums[54]->credit_g	Perfection As A Hipster
-#define	albums[54]->credit_u	Andreas.Hering@stud.uni-hannover.de
-#define	albums[54]->credit_d	2000-10-10
+#define	albums[54]->credit		Perfection As A Hipster;;Andreas.Hering@stud.uni-hannover.de;;2000-10-10
 
 #define	albums[55]->type	single
 #define	albums[55]->lookup	single_saints
+#define	albums[55]->media	CD
+#define	albums[55]->label	${fire_records}
+#define	albums[55]->catalog	PROMO
+#define	albums[55]->onalbum	adventurers
 #define	albums[55]->href	${jbc_albums}/all_the_saints.html
 #define	albums[55]->title	All The Saints
 #define	albums[55]->thumb	/images/releases/saints_front
 #define	albums[55]->blurb	
-#define	albums[55]->year	2015
+#define	albums[55]->dtreleased	2015
 
 #define	albums[56]->type	various
 #define	albums[56]->lookup	va_bigtime_syndrome
@@ -493,16 +512,17 @@
 #define	albums[56]->title	VA: The BigTime Syndrome
 #define	albums[56]->thumb	/images/releases/va_bigtimesyndrome
 #define	albums[56]->contribution becky
-#define	albums[56]->year	1987
+#define	albums[56]->dtreleased	1987
 
 #define	albums[57]->type	various
 #define	albums[57]->lookup	va_seventeen_2
+#define	albums[57]->media	LP
 #define	albums[57]->href	${jbc_albums}/va_seventeen_2.html
 #define	albums[57]->label	Rather Records
 #define	albums[57]->catalog	GEAR 17
 #define	albums[57]->title	VA: What A Nice Way To Turn Seventeen # 2
 #define	albums[57]->thumb	/images/releases/va_seventeen_2_back
-#define	albums[57]->year	1983
+#define	albums[57]->dtreleased	1983
 #define	albums[57]->contribution envoy
 #define	albums[57]->blurb
 		<p />
@@ -515,9 +535,7 @@
 		Bible Belt</b> LP with Lizard on vocals) while Sad Go Round was The
 		Swell Maps (!) in disguise. Obviously essential, this highly sought
 		after split single came with a fanzine.
-#define	albums[57]->credit_g	Perfection As A Hipster
-#define	albums[57]->credit_u	Andreas.Hering@stud.uni-hannover.de
-#define	albums[57]->credit_d	2000-10-10
+#define	albums[57]->credit		Perfection As A Hipster;;Andreas.Hering@stud.uni-hannover.de;;2000-10-10
 
 #define	albums[58]->type	various
 #define	albums[58]->lookup	va_abigail
@@ -526,7 +544,7 @@
 #define	albums[58]->media	cassette
 #define	albums[58]->thumb	/images/releases/va_abigail
 #define	albums[58]->ontribution ${olof}
-#define	albums[58]->year	1986
+#define	albums[58]->dtreleased	1986
 
 #define	albums[59]->type	various
 #define	albums[59]->lookup	va_gunfire
@@ -535,13 +553,11 @@
 #define	albums[59]->thumb	${jbc_images}/releases/va_gunfire_front
 #define	albums[59]->label	Situation Two
 #define	albums[59]->catalog	SITU 17
-#define	albums[59]->year	1986
+#define	albums[59]->dtreleased	1986
 #define	albums[59]->contribution lost
 #define	albums[59]->blurb
 		The Jazz Butcher contribution subsequently appeared as an additional track on ${gift1}. 
-#define	albums[59]->credit_g	Perfection As A Hipster
-#define	albums[59]->credit_u	Andreas.Hering@stud.uni-hannover.de
-#define	albums[59]->credit_d	2000-10-10
+#define	albums[59]->credit		Perfection As A Hipster;;Andreas.Hering@stud.uni-hannover.de;;2000-10-10
 
 #define	albums[60]->type	various
 #define	albums[60]->lookup	va_50k
@@ -550,7 +566,7 @@
 #define	albums[60]->thumb	${jbc_images}/releases/va_50k_front
 #define	albums[60]->label	Glass
 #define	albums[60]->catalog	GLALP 019
-#define	albums[60]->year	1986
+#define	albums[60]->dtreleased	1986
 #define	albums[60]->contribution city
 #define	albums[60]->blurb
 		Note: Limited edition on clear vinyl.
@@ -560,10 +576,7 @@
 		on guitar as well as &quot;Fear (Is A Man's Best Friend)&quot; by
 		${dj} and a different
 		version of &quot;2:35&quot; by Spacemen 3 amongst others.
-#define	albums[60]->credit_g	Perfection As A Hipster
-#define	albums[60]->credit_u	Andreas.Hering@stud.uni-hannover.de
-#define	albums[60]->credit_d	2000-10-10
-
+#define	albums[60]->credit		Perfection As A Hipster;;Andreas.Hering@stud.uni-hannover.de;;2000-10-10
 
 #define	albums[61]->type	various
 #define	albums[61]->lookup	va_kids
@@ -572,7 +585,7 @@
 #define	albums[61]->thumb	${jbc_images}/releases/va_kids_front
 #define	albums[61]->label	Creation
 #define	albums[61]->catalog	CRELP 037
-#define	albums[61]->year	1988
+#define	albums[61]->dtreleased	1988
 #define	albums[61]->contribution 49
 
 #define	albums[62]->type	various
@@ -582,7 +595,7 @@
 #define	albums[62]->thumb	${jbc_images}/releases/va_pensioners90
 #define	albums[62]->label	Creation
 #define	albums[62]->catalog	CRELP 082
-#define	albums[62]->year	1990
+#define	albums[62]->dtreleased	1990
 #define	albums[62]->contribution odd
 
 #define	albums[63]->type	various
@@ -592,7 +605,7 @@
 #define	albums[63]->thumb	${jbc_images}/releases/va_pensioners91
 #define	albums[63]->label	Creation
 #define	albums[63]->catalog	CRELP 095
-#define	albums[63]->year	1991
+#define	albums[63]->dtreleased	1991
 #define	albums[63]->contribution go
 #define	albums[63]->blurb
 		<div class="annotation">
@@ -601,12 +614,14 @@
 
 #define	albums[64]->type	various
 #define	albums[64]->lookup	va_seventeen_3
+#define	albums[64]->media	LP
+#define	albums[64]->studio	Woodbine Studios
 #define	albums[64]->href	${jbc_albums}/va_seventeen_3.html
 #define	albums[64]->label	Rather Records
 #define	albums[64]->catalog	RATHER 13
 #define	albums[64]->title	VA: What A Nice Way To Turn Seventeen # 3
 #define	albums[64]->thumb	/images/releases/va_seventeen_3_front
-#define	albums[64]->year	1984
+#define	albums[64]->dtreleased	1984
 #define	albums[64]->contribution h2o
 #define	albums[64]->blurb
 	Originally issued with the magazine 'What A Nice Way To Turn Seventeen' Issue 3.
@@ -620,7 +635,7 @@
 #define	albums[65]->catalog
 #define	albums[65]->title	VA: Songs For Summer
 #define	albums[65]->thumb	/images/releases/va_summer
-#define	albums[65]->year	2000
+#define	albums[65]->dtreleased	2000
 #define	albums[65]->contribution indian_summer
 #define	albums[65]->blurb
 		<div class="annotation">
@@ -636,7 +651,7 @@
 #define	albums[66]->media	CD
 #define	albums[66]->country	France
 #define	albums[66]->thumb	/images/releases/va_abus_126
-#define	albums[66]->year	2016
+#define	albums[66]->dtreleased	2016
 #define	albums[66]->contribution animals
 
 #define	albums[67]->type	various
@@ -644,7 +659,7 @@
 #define	albums[67]->href
 #define	albums[67]->title	VA: Northampton Under Glass II
 #define	albums[67]->thumb	/images/releases/va_nh_underglass
-#define	albums[67]->year	2013
+#define	albums[67]->dtreleased	2013
 #define	albums[67]->contribution shame_about_you
 
 #define	albums[68]->type	various
@@ -654,7 +669,7 @@
 #define	albums[68]->href
 #define	albums[68]->title	VA: 1000 Songs
 #define	albums[68]->thumb	/images/releases/va_1000songs
-#define	albums[68]->year	1985
+#define	albums[68]->dtreleased	1985
 #define	albums[68]->contribution holiday
 #define	albums[68]->blurb
 This release by the German newspaper "Süddeutsche Zeitung" combines a book and a CD.
@@ -667,7 +682,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[6]->title	VA: Oozing Through the Ozone Layer
 #define	albums[6]->media	cassette
 #define	albums[6]->thumb	/images/releases/va_pulp
-#define	albums[6]->year	1987-12-01
+#define	albums[6]->dtreleased	1987-12-01
 #define	albums[6]->contribution elephant_man
 #define	albums[6]->blurb
 	This very rare cassette was compiled by Mark Webber and released on his bedroom-based label.
@@ -683,7 +698,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[69]->catalog	SHOCK 4007
 #define	albums[69]->title	She's On Drugs
 #define	albums[69]->thumb	/images/releases/shock_drugs_A
-#define	albums[69]->year	1990
+#define	albums[69]->dtreleased	1990
 #define	albums[69]->media	7"
 #define	albums[69]->blurb
 	Double A sided single for the Australian market.
@@ -696,7 +711,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[70]->catalog	BTS 1806
 #define	albums[70]->title	The Human Jungle
 #define	albums[70]->thumb	/images/releases/bigtime_jungle_A
-#define	albums[70]->year	1986
+#define	albums[70]->dtreleased	1986
 #define	albums[70]->media	7"
 #define	albums[70]->blurb
 	B/W ${smiff}
@@ -709,7 +724,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[71]->catalog	BIGT 1
 #define	albums[71]->title	VA: A Big Time Sampler
 #define	albums[71]->thumb	/images/releases/bigtime_sampler
-#define	albums[71]->year	1986
+#define	albums[71]->dtreleased	1986
 #define	albums[71]->media	7"
 #define	albums[71]->contribution bigbad
 #define	albums[71]->blurb
@@ -723,7 +738,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[72]->catalog	BTS 11
 #define	albums[72]->title	Angels
 #define	albums[72]->thumb	/images/releases/bigtime_angels_A
-#define	albums[72]->year	1986
+#define	albums[72]->dtreleased	1986
 #define	albums[72]->media	7"
 #define	albums[72]->blurb	B/W ${kitch}
 
@@ -736,7 +751,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[73]->catalog
 #define	albums[73]->title	The Wasted Years
 #define	albums[73]->thumb	/images/releases/fire_wasted
-#define	albums[73]->year	2017-10-20
+#define	albums[73]->dtreleased	2017-10-20
 #define	albums[73]->media	4xCD
 #define	albums[73]->blurb
 	Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’.
@@ -749,7 +764,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[74]->catalog	CRE 059
 #define	albums[74]->thumb	/images/releases/spooky7_A
 #define	albums[74]->media	7"
-#define	albums[74]->year	1988
+#define	albums[74]->dtreleased	1988
 #define	albums[74]->blurb
 	B/W ${blame}
 
@@ -761,7 +776,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[75]->catalog	SAMP 2821
 #define	albums[75]->thumb	/images/releases/va_creation_unreleased
 #define	albums[75]->media	CD
-#define	albums[75]->year	1995
+#define	albums[75]->dtreleased	1995
 #define	albums[75]->contribution chang
 #define	albums[75]->blurb
 	Note: The back cover mistakenly lists the Jazz Butcher track as &quot;President Gang&quot;.
@@ -777,7 +792,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[76]->catalog	AOF311B
 #define	albums[76]->title	Brave New Waves Session
 #define	albums[76]->thumb	/images/releases/brave
-#define	albums[76]->year	2018-01-19
+#define	albums[76]->dtreleased	2018-01-19
 #define	albums[76]->media	LP,CD
 #define	albums[76]->blurb
 #Release date: November 17, 2017 (CD)
@@ -793,7 +808,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[77]->catalog	Alien 1
 #define	albums[77]->title	VA: Can You Talk To The Dude #1
 #define	albums[77]->thumb	/images/releases/va_canyoutalktothedude_1_front
-#define	albums[77]->year	1994
+#define	albums[77]->dtreleased	1994
 #define	albums[77]->media	CD
 #define	albums[77]->contribution <i>The U.F.O. Man</i>
 #define	albums[77]->blurb
@@ -808,7 +823,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[78]->catalog	Alien 2
 #define	albums[78]->title	VA: Can You Talk To The Dude #2
 #define	albums[78]->thumb	/images/releases/va_canyoutalktothedude_2_front
-#define	albums[78]->year	1996
+#define	albums[78]->dtreleased	1996
 #define	albums[78]->media	CD
 #define	albums[78]->contribution <i>The U.F.O. Man</i>
 #define	albums[78]->blurb
@@ -823,7 +838,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[79]->catalog	DODGEMLOGIC001C
 #define	albums[79]->title	VA: Nation Of Saints
 #define	albums[79]->thumb	/images/releases/va_nationofsaints_front
-#define	albums[79]->year	2009-11
+#define	albums[79]->dtreleased	2009-11
 #define	albums[79]->media	CD
 #define	albums[79]->contribution drugs
 #define	albums[79]->blurb
@@ -838,7 +853,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[80]->catalog	COLPROCD 3411 2
 #define	albums[80]->title	VA: Creation Price
 #define	albums[80]->thumb	/images/releases/va_creation_price_front
-#define	albums[80]->year	1996
+#define	albums[80]->dtreleased	1996
 #define	albums[80]->media	CD
 #define	albums[80]->contribution girls
 #define	albums[80]->blurb
@@ -853,7 +868,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[81]->catalog	Visa 3334
 #define	albums[81]->title	VA: Un Automne '93
 #define	albums[81]->thumb	/images/releases/va_unautomne93_front
-#define	albums[81]->year	1993
+#define	albums[81]->dtreleased	1993
 #define	albums[81]->media	CD
 #define	albums[81]->contribution davis
 #define	albums[81]->blurb
@@ -869,7 +884,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[82]->catalog	
 #define	albums[82]->title	VA: Straight Through The Sound Barrier
 #define	albums[82]->thumb	/images/releases/va_wilson_heyday_front
-#define	albums[82]->year	2004
+#define	albums[82]->dtreleased	2004
 #define	albums[82]->media	CD
 #define	albums[82]->contribution wilson_quality_people
 #define	albums[82]->blurb
@@ -885,7 +900,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[83]->catalog	
 #define	albums[83]->title	November, 2005 Demo
 #define	albums[83]->thumb	/images/wilson/200511_wilson_cd
-#define	albums[83]->year	2005-11
+#define	albums[83]->dtreleased	2005-11
 #define	albums[83]->media	CDR
 #define	albums[83]->blurb
 	Two song demo.
@@ -900,7 +915,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[84]->catalog	
 #define	albums[84]->title	April, 2003 Demo
 #define	albums[84]->thumb	/images/wilson/200304_wilson_front
-#define	albums[84]->year	2003-04
+#define	albums[84]->dtreleased	2003-04
 #define	albums[84]->media	CDR
 #define	albums[84]->blurb
 	Two song demo.
@@ -915,7 +930,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[85]->catalog	
 #define	albums[85]->title	2002 Demo
 #define	albums[85]->thumb	/images/wilson/2002_wilson_front
-#define	albums[85]->year	2002
+#define	albums[85]->dtreleased	2002
 #define	albums[85]->media	CDR
 #define	albums[85]->blurb
 	Six song demo.
@@ -929,7 +944,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[86]->catalog
 #define	albums[86]->title	The Violent Years
 #define	albums[86]->thumb	/images/releases/fire_violent
-#define	albums[86]->year	2018-03-09
+#define	albums[86]->dtreleased	2018-03-09
 #define	albums[86]->media	4xCD
 #define	albums[86]->blurb
 	Expansive book-styled package of the first four albums from The Jazz Butcher’s early Creation Records’ years – 1988-1991.
@@ -945,7 +960,7 @@ Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, 
 ##define	albums[87]->catalog
 #define	albums[87]->title	The Highest in the Land
 #define	albums[87]->thumb	/images/releases/highest
-#define	albums[87]->year	2022-02-04
+#define	albums[87]->dtreleased	2022-02-04
 #define	albums[87]->media	CD/LP/digital
 #define	albums[87]->blurb
 	It's not often that an artist gets to do a Bowie by consciously carving their personal epitaph into the grooves of their final LP. The Highest in the Land is that rarity of an album, and it could not have been made by a more brilliantly poetic and fearlessly sarcastic writer than Pat Fish, also known as The Jazz Butcher.
@@ -959,7 +974,7 @@ Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, 
 #define	albums[88]->catalog
 #define	albums[88]->title	Dr Cholmondley Repents: A​-​sides, B​-​Sides and Seasides 
 #define	albums[88]->thumb	/images/releases/fire_cholmondley
-#define	albums[88]->year	2021-11-12
+#define	albums[88]->dtreleased	2021-11-12
 #define	albums[88]->media	4xCD
 #define	albums[88]->blurb
 Four CD box set gathering A-sides, the would-be hits along with B-sides, tangential 12-inch tracks (the C-sides), and an excellent session for Los Angeles radio station KCRW from 1989.
@@ -973,7 +988,7 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[89]->catalog
 #define	albums[89]->title	Guest Pass Disc
 ##define	albums[89]->thumb	/images/releases/cdr_guestpass2000
-#define	albums[89]->year	2000-01-01
+#define	albums[89]->dtreleased	2000-01-01
 #define	albums[89]->media	CDR
 #define	albums[89]->blurb
 This was a limited edition CD made available to help fund the
@@ -992,7 +1007,7 @@ show.
 #define	albums[90]->media	CD
 #define	albums[90]->title	VA: Now That's What I Call Northampton Vol #1
 #define	albums[90]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/2010_NowThatsWhatICallNorthamptonVol1
-#define	albums[90]->year	2010
+#define	albums[90]->dtreleased	2010
 #define	albums[90]->contribution [ mercy, wildlife ]
 #define	albums[90]->blurb
   ${linkAudio(title=${literalizeCommas(${mercy})}, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3, comment=${literalizeCommas(Recorded by ${curt})})}
@@ -1004,7 +1019,7 @@ show.
 #define	albums[91]->media	CD
 #define	albums[91]->title	VA: Now That's What I Call Northampton Vol #1
 #define	albums[91]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum
-#define	albums[91]->year	2007-12
+#define	albums[91]->dtreleased	2007-12
 #define	albums[91]->ontribution afterhours
 #define	albums[91]->blurb
 Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers.
@@ -1021,7 +1036,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[92]->catalog	GLAMS004
 #define	albums[92]->thumb	/images/releases/never7_A
 #define	albums[92]->media	7"
-#define	albums[92]->year	2022
+#define	albums[92]->dtreleased	2022
 #define	albums[92]->buy	https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7
 #define	albums[92]->blurb
 	In loving memory. Patrick Huntrods (AKA Pat Fish). (20 December 1957 - 5 October 2021)

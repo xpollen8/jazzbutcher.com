@@ -1,7 +1,9 @@
-####include	db_albums
+#define	TEMP()
+#live	while (f = albums->field[*])
+	<br />${albums->field[${f}]}: ${${prefix}->${albums->field[${f}]}}
+#live	endwhile
 
 #define	mkPurchase()
-
 #live	if ((define(prefix, ${lookupAlbumBy(l=/${db}/${page}, f=href)})) && (defined(${prefix}->buy)))
 ${tag_beg}
 Buy This Record
@@ -11,11 +13,69 @@ ${tag_end}
 	</blockquote>
 #live	endif
 
+#define	mkAlbumHeader(lookup, body)
+#live	if (define(prefix, ${lookupAlbumBy(l=${lookup}, f=lookup)}))
+	${mkHeader(section=albums, title=${${prefix}->title}))}
+#live	if (getval(${prefix}->buy))
+	${tag_beg}
+	Buy This Record
+	${tag_end}
+	<blockquote>
+		<b>${linkExternal(${${prefix}->buy}, Purchase Now)}</b> <span class="smalltext">( at ${parseDomain(u=${${prefix}->buy})})</span>
+	</blockquote>
+#live	endif
+	${det_beg}
+#live	if (defined(${prefix}->type))
+	${a_releasetype} ${${prefix}->type}
+#live	endif
+#live	if (defined(${prefix}->onalbum))
+	${a_onalbum} ${${${prefix}->onalbum}}
+#live	endif
+#live	if (defined(${prefix}->media))
+	${a_media} ${${prefix}->media}
+#live	endif
+#live	if (defined(${prefix}->dtreleased))
+	${a_dtreleased} ${${prefix}->dtreleased}
+#live	endif
+#live	if (defined(${prefix}->label))
+	${a_label} ${${prefix}->label}
+#live	endif
+#live	if (defined(${prefix}->dtrecorded))
+	${a_rec} ${${prefix}->dtrecorded}
+#live	endif
+#live	if (defined(${prefix}->studio))
+	${a_studio} ${${prefix}->studio}
+#live	endif
+#live	if (defined(${prefix}->catalog))
+	${a_cat} ${${prefix}->catalog}
+#live	endif
+	${det_end}
+	${fetchAlbumPersonnel(release=${lookup})}
+#live	if (defined(${prefix}->blurb))
+	${doObservation(obs=${literalizeCommas(
+		${${prefix}->blurb}
+#live	if (defined(${prefix}->credit))
+		<br />
+		${parseCredit(${${prefix}->credit})}
+#live	endif
+	)})}
+#live	endif
+#live	if (defined(body))
+	${body}
+#live	endif
+#live	if (defined(${prefix}->liner))
+	${lin_beg}
+		${${prefix}->liner}
+	${lin_end}
+#live	endif
+#live	endif
+
 #define	fetchAlbumPersonnel(release)
 #
 #	noun:album_personnel
 #
-#live	if (sql(ap:select * from performance where lookup="${release}"))
+#live	if ((sql(ap:select * from performance where lookup="${release}")) && (getnum(ap->numResults) > 0))
+	${players_beg}
 ${define(lastPer,XXX)}
 #live	while (api = ap[*]->performer)
 #live	if (getval(lastPer) != ${ap[${api}]->performer})
@@ -40,6 +100,7 @@ ${define(lastPer, ${ap[${api}]->performer})}
 #live	endif
 #live	endif
 #live	endwhile
+	${players_end}
 #live	endif
 
 #define	addAlbumPerf(release, person, aka=NULL, instruments, song=NULL)
@@ -2279,7 +2340,7 @@ Previously available on the ${fishco} LP/CD.
 	${define(maxReleaseYear,0)}
 #live	loop(a, 1, ${albums->numResults})
 #live	if ((getval(type) = all) || (getval(albums[${a}]->type) == ${type}))
-	${define(thisYear, ${substr(0, 4, ${albums[${a}]->year})})}
+	${define(thisYear, ${substr(0, 4, ${albums[${a}]->dtreleased})})}
 #live		if (getnum(thisYear) > ${maxReleaseYear})
 #live			if (define(maxReleaseYear, ${thisYear}))
 #live			endif
@@ -2297,7 +2358,7 @@ Previously available on the ${fishco} LP/CD.
 	${tag_end}
 #live	loop(a, 1, ${albums->numResults})
 #live	if ((getval(type) = all) || (getval(albums[${a}]->type) == ${type}))
-	${define(thisYear, ${substr(0, 4, ${albums[${a}]->year})})}
+	${define(thisYear, ${substr(0, 4, ${albums[${a}]->dtreleased})})}
 #live	if (getval(prevYear) != ${thisYear})
 	${mkAlbumYear(y=${thisYear})}
 #live	endif
@@ -2365,148 +2426,88 @@ Previously available on the ${fishco} LP/CD.
 
 #define	va_shadow_and_substance.html
 #live	if (getval(page) = va_shadow_and_substance.html)
-	${mkHeader(section=albums, title=VA: Shadow and Substance (The Wonderful World Of Glass Volume 2))}
-
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_shadow1.jpg"><img src="${jbc_images}/releases/va_shadow1_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_shadow2.jpg"><img src="${jbc_images}/releases/va_shadow2_250.jpg"></a>
-	<a href="${jbc_images}/releases/va_shadow3.jpg"><img src="${jbc_images}/releases/va_shadow3_250.jpg"></a>
-	<a href="${jbc_images}/releases/va_shadow4.jpg"><img src="${jbc_images}/releases/va_shadow4_250.jpg"></a>
-	${a_class} ${LP}
-	${a_date} 1984
-	${a_label} Glass
-	${a_rec} May 1983, &quot;Cak Bag session&quot;, Sketch Studio, Northampton
-	${a_cat} GLALP 007
-	${det_end}
-	${a-side_beg}
-	${aff}
-	${a-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=va_shadow)}
+	${mkAlbumHeader(lookup=va_shadow, body=${literalizeCommas(
+		<a href="${jbc_images}/releases/va_shadow1.jpg"><img src="${jbc_images}/releases/va_shadow1_500.jpg"></a>
+		<a href="${jbc_images}/releases/va_shadow2.jpg"><img src="${jbc_images}/releases/va_shadow2_250.jpg"></a>
+		<a href="${jbc_images}/releases/va_shadow3.jpg"><img src="${jbc_images}/releases/va_shadow3_250.jpg"></a>
+		<a href="${jbc_images}/releases/va_shadow4.jpg"><img src="${jbc_images}/releases/va_shadow4_250.jpg"></a>
+		${a-side_beg}
+			${aff}
+		${a-side_end}
+	)})}
 
 #${addAlbumPerf(release=va_shadow, person=[[person:Pat_Fish]], song=NULL)}
 #	${addAlbumPerf(release=va_shadow, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
 #	${addAlbumPerf(release=va_shadow, person=[[person:Alice_Thompson]], instruments=Organ)}
 #	${pat} (Rhythm Guitar, Vocals)
 #	<br>${at} (Organ)
-	${players_end}
 
 	${jbc_footer}
 #live	endif
 
 #define	va_seventeen_2.html
 #live	if (getval(page) = va_seventeen_2.html)
-	${mkHeader(section=albums, title=VA: What A Nice Way To Turn Seventeen #2)}
-
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_seventeen_2_front.jpg"><img src="${jbc_images}/releases/va_seventeen_2_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_seventeen_2_back.jpg"><img src="${jbc_images}/releases/va_seventeen_2_back_500.jpg"></a>
-	${a_class} ${LP}
-	${a_date} 1983
-	${a_label} Rather Records
-	${a_cat} Gear 17
-	${det_end}
-	${a-side_beg}
-	${envoy}
-	${a-side_end}
-	${fetchAlbumPersonnel(release=va_seventeen_3)}
-	${players_end}
-	<p>
-	The Jazz Butcher cover version is unavailable elsewhere. Interestingly
-	enough, the same must be said about the other contributions ... The
-	Rag Dolls were an early and short-living band of Dave Kusworth
-	(Jacobites), <i>Missionary Boy</i> features Nikki Sudden
-	himself on vocals
-	(and is therefore better than the version that appears on <b>The
-	Bible Belt</b> LP with Lizard on vocals) while Sad Go Round was The
-	Swell Maps (!) in disguise. Obviously essential, this highly sought
-	after split single came with a fanzine.
-	</p>
-
+	${mkAlbumHeader(lookup=va_seventeen_2, body=${literalizeCommas(
+		<a href="${jbc_images}/releases/va_seventeen_2_front.jpg"><img src="${jbc_images}/releases/va_seventeen_2_front_500.jpg"></a>
+		<a href="${jbc_images}/releases/va_seventeen_2_back.jpg"><img src="${jbc_images}/releases/va_seventeen_2_back_500.jpg"></a>
+		${a-side_beg}
+			${envoy}
+		${a-side_end}
+	)})}
 	${jbc_footer}
 #live	endif
 
 #define	va_seventeen_3.html
 #live	if (getval(page) = va_seventeen_3.html)
-	${mkHeader(section=albums, title=VA: What A Nice Way To Turn Seventeen #3)}
-
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_seventeen_3_front.jpg"><img src="${jbc_images}/releases/va_seventeen_3_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_seventeen_3_back.jpg"><img src="${jbc_images}/releases/va_seventeen_3_back_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_seventeen_3_A.jpg"><img src="${jbc_images}/releases/va_seventeen_3_A_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_seventeen_3_B.jpg"><img src="${jbc_images}/releases/va_seventeen_3_B_500.jpg"></a>
-	${a_class} ${LP}
-	${a_date} 1984
-	${a_label} Rather Records
-	${a_rec} Woodbine Studios
-	${a_cat} Rather 13
-	${det_end}
-	${a-side_beg}
-	${h2o}
-	${a-side_end}
-	${fetchAlbumPersonnel(release=va_seventeen_3)}
-	${players_end}
+	${mkAlbumHeader(lookup=va_seventeen_3, body=${literalizeCommas(
+		<a href="${jbc_images}/releases/va_seventeen_3_front.jpg"><img src="${jbc_images}/releases/va_seventeen_3_front_500.jpg"></a>
+		<a href="${jbc_images}/releases/va_seventeen_3_back.jpg"><img src="${jbc_images}/releases/va_seventeen_3_back_500.jpg"></a>
+		<a href="${jbc_images}/releases/va_seventeen_3_A.jpg"><img src="${jbc_images}/releases/va_seventeen_3_A_500.jpg"></a>
+		<a href="${jbc_images}/releases/va_seventeen_3_B.jpg"><img src="${jbc_images}/releases/va_seventeen_3_B_500.jpg"></a>
+		${a-side_beg}
+		${h2o}
+		${a-side_end}
+	)})}
 
 	${jbc_footer}
 #live	endif
 
 #define	va_another_spark.html
 #live	if (getval(page) = va_another_spark.html)
-	${mkHeader(section=albums, title=VA: Another Spark)}
-
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_anotherspark1.jpg"><img src="${jbc_images}/releases/va_anotherspark1_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_anotherspark2.jpg"><img src="${jbc_images}/releases/va_anotherspark2_250.jpg"></a>
-	<a href="${jbc_images}/releases/va_anotherspark3.jpg"><img src="${jbc_images}/releases/va_anotherspark3_250.jpg"></a>
-	<a href="${jbc_images}/releases/va_anotherspark4.jpg"><img src="${jbc_images}/releases/va_anotherspark4_250.jpg"></a> ${g_credit(g=James Duval, d=2021-12-12)}
-	${a_class} ${CAS}
-	${a_date} 1984
-	${a_label} Another Spark
-	${a_rec} May 1983, &quot;Cak Bag session&quot;, Sketch Studio, Northampton
-	${a_cat} 001
-	${det_end}
-	${a-side_beg}
-	${inside_heart}
-	${a-side_end}
-	${players_beg}
+	${mkAlbumHeader(lookup=va_spark, body=${literalizeCommas(
+		<a href="${jbc_images}/releases/va_anotherspark1.jpg"><img src="${jbc_images}/releases/va_anotherspark1_500.jpg"></a>
+		<a href="${jbc_images}/releases/va_anotherspark2.jpg"><img src="${jbc_images}/releases/va_anotherspark2_250.jpg"></a>
+		<a href="${jbc_images}/releases/va_anotherspark3.jpg"><img src="${jbc_images}/releases/va_anotherspark3_250.jpg"></a>
+		<a href="${jbc_images}/releases/va_anotherspark4.jpg"><img src="${jbc_images}/releases/va_anotherspark4_250.jpg"></a>
+		<br />
+		${g_credit(g=James Duval, d=2021-12-12)}
+		${a-side_beg}
+			${inside_heart}
+		${a-side_end}
+	)})}
 
 #	${addAlbumPerf(release=va_spark, person=[[person:Mike_Novakovic]], instruments=engineer)}
 #	${addAlbumPerf(release=va_spark, person=[[person:Lionel_Brando]], instruments=producer)}
 #	${addAlbumPerf(release=va_spark, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals\, producer)}
 #	${addAlbumPerf(release=va_spark, person=[[person:Alice_Thompson]], instruments=Vocals)}
-	${fetchAlbumPersonnel(release=va_spark)}
-	${players_end}
 
 	${jbc_footer}
 #live	endif
 
 #define	all_the_saints.html
 #live	if (getval(page) = all_the_saints.html)
-	${mkHeader(section=albums, title=All the Saints)}
-
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/saints_front.jpg"><img
-		src="${jbc_images}/releases/saints_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/saints_back.jpg"><img
-		src="${jbc_images}/releases/saints_back_250.jpg"></a>
-	${a_class} ${SINGLE}, from the album ${adventurers}
-	${a_date} 2015
-	${a_label} Fire
-	${a_cat} PROMO
-	${det_end}
-	${a-side_beg}
-	${all_the_saints}
-	${a-side_end}
-	${b-side_beg}
-	${last_of_the_gentleman_adventurers}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=single_saints)}
+	${mkAlbumHeader(lookup=single_saints, body=${literalizeCommas(
+		<a href="${jbc_images}/releases/saints_front.jpg"><img
+			src="${jbc_images}/releases/saints_front_500.jpg"></a>
+		<a href="${jbc_images}/releases/saints_back.jpg"><img
+			src="${jbc_images}/releases/saints_back_250.jpg"></a>
+		${a-side_beg}
+			${all_the_saints}
+		${a-side_end}
+		${b-side_beg}
+			${last_of_the_gentleman_adventurers}
+		${b-side_end}
+	)})}
 
 #${addAlbumPerf(release=angel, person=[[person:Pat_Fish]], song=NULL)}
 #	${addAlbumPerf(release=angel, person=[[person:Pat_Fish]])}
@@ -2524,20 +2525,19 @@ Previously available on the ${fishco} LP/CD.
 
 #define	angels.html
 #live	if (getval(page) = angels.html)
-	${mkHeader(section=albums, title=Angels)}
-
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/angels_front.jpg"><img
-		src="${jbc_images}/releases/angels_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/angels_back.jpg"><img
-		src="${jbc_images}/releases/angels_back_250.jpg"></a>
-	${a_class} ${SINGLE}, ${12} from the album ${dist}
-	${a_date} 1986
-	${a_label} Glass
-	${a_cat} Glass 12049
-	${a_rec} ${angels} : Woodbine Recording Studios, Royal Leamington Spa
-	<br>${becky} &amp; ${mersey} : Ace Studio, Bubrooke
+	${mkAlbumHeader(lookup=angel, body=${literalizeCommas(
+		<a href="${jbc_images}/releases/angels_front.jpg"><img
+			src="${jbc_images}/releases/angels_front_500.jpg"></a>
+		<a href="${jbc_images}/releases/angels_back.jpg"><img
+			src="${jbc_images}/releases/angels_back_250.jpg"></a>
+		${a-side_beg}
+			${angels}
+		${a-side_end}
+		${b-side_beg}
+			${becky}
+			<br>${mersey}
+		${b-side_end}
+	)})}
 #	${a_eng} ${angels} : ${rivers}
 #	<br>${becky} &amp; ${mersey} : Malcolm Rivett-Carnac
 #	${a_prod} ${angels} : ${rivers}
@@ -2550,16 +2550,6 @@ Previously available on the ${fishco} LP/CD.
 #	${addAlbumPerf(release=angel, person=[[person:John_A._Rivers]], instruments=producer, song="Angels")}
 #	${addAlbumPerf(release=angel, person=[[person:Mitch_Jenkins]], instruments=photography)}
 #	${addAlbumPerf(release=angel, person=[[person:Buffalo_Shame]], instruments=sleeve)}
-	${det_end}
-	${a-side_beg}
-	${angels}
-	${a-side_end}
-	${b-side_beg}
-	${becky}
-	<br>${mersey}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=angel)}
 
 #${addAlbumPerf(release=angel, person=[[person:Pat_Fish]], song=NULL)}
 #	${addAlbumPerf(release=angel, person=[[person:Pat_Fish]])}
@@ -2570,10 +2560,6 @@ Previously available on the ${fishco} LP/CD.
 #	<br>${max}
 #	<br>${owen}
 #	<br>${felix}
-	${players_end}
-	${lin_beg}
-	Dedicated to Maureen and the Angels.
-	${lin_end}
 
 	${jbc_footer}
 #live	endif
@@ -2593,10 +2579,10 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_images}/bath_inside.jpg">
 	<img src="${jbc_images}/bath_inside_250.jpg"></a>
 	<br>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} Glass
 	${a_cat} Glass 02 (${CD}: GLACD002)
-	${a_date} Mar1983
+	${a_dtreleased} Mar1983
 	${a_rec} Aug/Sep 1982, Starforce Studio, Clapham
 #	${a_eng} M. K. Daley
 #	${a_prod} ${pat} &amp; Lionel Brando
@@ -2723,10 +2709,10 @@ Previously available on the ${fishco} LP/CD.
 		<img alt="[album cover]" src="${jbc_images}/releases/blue_inside1_250.jpg"></a>
 	<a href="${jbc_images}/releases/blue_inside2.jpg">
 		<img alt="[album cover]" src="${jbc_images}/releases/blue_inside2_250.jpg"></a>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} ${creat}, Sky
 	${a_cat} CRECD110, SKYCLAD 5080
-	${a_date} 1991 (${creat}) 1992 (Sky)
+	${a_dtreleased} 1991 (${creat}) 1992 (Sky)
 	${a_rec} April/May 1991, Raven, Norfolk and Submarine Sound, Northampton
 #${addAlbumPerf(release=blue, person=[[person:Tim_Burrell]], instruments=engineer)}
 #${addAlbumPerf(release=blue, person=[[person:Howard_Turner]], instruments=engineer)}
@@ -2861,10 +2847,10 @@ Previously available on the ${fishco} LP/CD.
 #	<a href="${jbc_images}/kiss.jpg">
 #	<img width=179 height=137 alt="[image]" SRC="${jbc_images}/kiss.gif"></a>
 #	<br clear=all>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} ${creat}, TriStar
 	${a_cat} CRECD156, WK57563
-	${a_date} 1993
+	${a_dtreleased} 1993
 	${a_eng} Woodhouse Studios, Leeds
 	${det_end}
 	${tun_beg}
@@ -2952,10 +2938,10 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/drainglass.jpg">
 	<img alt="[album cover]" src="${jbc_images}/drainglass_500.jpg"></a>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} Fire, Nectar Masters
 	${a_cat} NTMCD529
-	${a_date} 1996
+	${a_dtreleased} 1996
 	${a_rec} England 1982 - 86
 #${addAlbumPerf(release=drainglass, person=[[person:Derek_Tomkins]], instruments=engineer)}
 #${addAlbumPerf(release=drainglass, person=[[person:John_A._Rivers]], instruments=engineer)}
@@ -3216,8 +3202,8 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/closet.jpg">
 	<img alt="[album cover]" src="${jbc_images}/closet_500.jpg"></a>
-	${a_class} ${COMP}
-	${a_date} 1991 (recorded Aug87-Feb90)
+	${a_media} ${COMP}
+	${a_dtreleased} 1991 (recorded Aug87-Feb90)
 	${a_label} ${creat}
 	${a_cat} CRECD078
 #	${a_eng} ${iain}, ${rivers}, ${kevin}, ${burrell},
@@ -3298,10 +3284,10 @@ Previously available on the ${fishco} LP/CD.
 	<img src="${jbc_images}/releases/conspiracy_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/conspiracy_back.jpg">
 	<img src="${jbc_images}/releases/conspiracy_back_250.jpg"></a>
-	${a_class} ${LP}
+	${a_media} ${LP}
 	${a_label} Glass
 	${a_cat} GLALP 104
-	${a_date} 1986-05
+	${a_dtreleased} 1986-05
 	${a_rec} Ace Studio, Bugbrooke, Northants
 #	${addAlbumPerf(release=conspir, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer)}
 #	${addAlbumPerf(release=conspir, person=[[person:Mitch_Jenkins]], instruments=photography)}
@@ -3369,10 +3355,10 @@ Previously available on the ${fishco} LP/CD.
 	<img src="${jbc_images}/releases/conspiracy_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/conspiracy_back.jpg">
 	<img src="${jbc_images}/releases/conspiracy_back_250.jpg"></a>
-	${a_class} ${EP}
+	${a_media} ${EP}
 	${a_label} Glass
 	${a_cat} GLAEP 104
-	${a_date} 1986-05
+	${a_dtreleased} 1986-05
 	${a_rec} Ace Studio, Bugbrooke, Northants
 #	${addAlbumPerf(release=conspir12, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer)}
 #	${addAlbumPerf(release=conspir12, person=[[person:Mitch_Jenkins]], instruments=photography)}
@@ -3438,10 +3424,10 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_images}/19891119/19891119_del_cult.jpg">
 		<img width="250" height="160" alt="[photo]"
 		src="${jbc_images}/19891119/19891119_del_cult_250.jpg"></a>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} ${creat}, Rough Trade
 	${a_cat} CRECD062, RUS 83-2
-	${a_date} 1990
+	${a_dtreleased} 1990
 	${a_rec} Raven, Norfolk
 #${addAlbumPerf(release=cult, person=[[person:Howard_Turner]], instruments=engineer)}
 #${addAlbumPerf(release=cult, person=[[person:Tim_Burrell]], instruments=engineer)}
@@ -3581,10 +3567,10 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/gentle.jpg">
 	<img alt="[album cover]" src="${jbc_images}/gentle_500.jpg"></a>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} Glass, BigTime
 	${a_cat} GLACD020, 6021-2
-	${a_date} 1986-10
+	${a_dtreleased} 1986-10
 	${a_rec} May 1986, Woodbine St. Studios, Royal Leamington Spa
 #${addAlbumPerf(release=dist, person=[[person:John_A._Rivers]], instruments=engineer)}
 #${addAlbumPerf(release=dist, person=[[person:Richard_Dumas]], instruments=photography)}
@@ -3693,10 +3679,10 @@ Previously available on the ${fishco} LP/CD.
 	<img alt="[sleeve photo]" src="${jbc_images}/fishco2_250.jpg"></a>
 	<a href="${jbc_images}/fishco3.jpg">
 	<img alt="[sleeve photo]" src="${jbc_images}/fishco3_250.jpg"></a>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} ${creat}, Relativity
 	${a_cat} CRECD027, 88561-8223-2
-	${a_date} 1988
+	${a_dtreleased} 1988
 	${a_rec} Alaska, Waterloo
 #${addAlbumPerf(release=fishco, person=[[person:Iain_O'Higgins]], instruments=engineer)}
 #${addAlbumPerf(release=fishco, person=[[person:Iain_O'Higgins]], instruments=producer)}
@@ -3803,10 +3789,10 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/gift.jpg">
 	<img alt="[album cover]" src="${jbc_images}/gift_500.jpg"></a>
-	${a_class} ${COMP}
+	${a_media} ${COMP}
 	${a_label} Glass
 	${a_cat} GLEXCD101
-	${a_date} Mar1985
+	${a_dtreleased} Mar1985
 #	${addAlbumPerf(release=gift1, person=[[person:Mitch_Jenkins]], instruments=photography)}
 #	${a_photo} ${mitch}
 	${a_grv_a} they were the most literate band i ever knew-a porky prime cut
@@ -3941,10 +3927,10 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_images}/gift2_inside.jpg">
 	<img src="${jbc_images}/gift2_inside_250.jpg"></a>
 	<br>
-	${a_class} ${COMP}
+	${a_media} ${COMP}
 	${a_label} Glass
 	${a_cat} GLACD023
-	${a_date} 1987
+	${a_dtreleased} 1987
 #	${addAlbumPerf(release=gift2, person=[[person:Alastair_Indge]], instruments=photography)}
 #	${addAlbumPerf(release=gift2, person=[[person:Elvis_Brando]], instruments=sleeve)}
 #	${a_photo} ${indge}
@@ -3988,10 +3974,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/girl_500.jpg"></a>
 	<a href="${jbc_images}/girlgo_back.jpg"><img
 		src="${jbc_images}/girlgo_back_250.jpg"></a>
-	${a_class} ${SINGLE} from ${cult}
+	${a_media} ${SINGLE} from ${cult}
 	${a_label} ${creat}
 	${a_cat} CRESCD077
-	${a_date} 1990
+	${a_dtreleased} 1990
 #${addAlbumPerf(release=girlgo, person=[[person:Martin_Stebbing]], instruments=producer)}
 #${addAlbumPerf(release=girlgo, person=[[person:Pat_Fish]], instruments=producer)}
 #${addAlbumPerf(release=girlgo, person=[[person:Pascal_Legras]], instruments=sleeve)}
@@ -4040,10 +4026,10 @@ Previously available on the ${fishco} LP/CD.
 	<img alt="[album cover]" src="${jbc_images}/releases/hamburg_inside1_250.jpg"></a>
 	<a href="${jbc_images}/releases/hamburg_inside2.jpg">
 	<img alt="[album cover]" src="${jbc_images}/releases/hamburg_inside2_250.jpg"></a>
-	${a_class} ${ALBUM}, ${LIVE}
+	${a_media} ${ALBUM}, ${LIVE}
 	${a_label} Rebel/Glass
 	${a_cat} SPV081443
-	${a_date} Nov1985
+	${a_dtreleased} Nov1985
 	${a_rec} Live, 16Aug1985, ${PO}'s, Lehmweg 44, Hamburg
 #${addAlbumPerf(release=hamburg, person=[[person:Volkspark_Studio_Mobile]], instruments=engineer)}
 #${addAlbumPerf(release=hamburg, person=[[person:Martin_Berschel]], instruments=mixed)}
@@ -4135,10 +4121,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/hardfront_500.jpg"></a>
 	<a href="${jbc_images}/hardback.jpg"><img
 		src="${jbc_images}/hardback_250.jpg"></a>
-	${a_class} ${SINGLE}, ${12}
+	${a_media} ${SINGLE}, ${12}
 	${a_label} Glass
 	${a_cat} Glass 12046
-	${a_date} 1986
+	${a_dtreleased} 1986
 	${a_rec} 8-10 Jan 1986, Livingston, N22,
 	${a_rec} (Sep 1985, Ace Studio, Bugbrooke ${vienna})
 #	${a_eng} Slasher Harris, Andy Butlin,
@@ -4204,10 +4190,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/invention_front_500.jpg"></a>
 	<a href="${jbc_images}/invention_back.jpg"><img
 		src="${jbc_images}/invention_back_250.jpg"></a>
-	${a_class} ${SINGLE} from ${planet}
+	${a_media} ${SINGLE} from ${planet}
 	${a_label} ${creat}
 	${a_cat} CRE069T
-	${a_date} 1989
+	${a_dtreleased} 1989
 	${a_rec} Feb 1989, Woodbine Studio
 #	${a_eng} ${rivers}, ${pat} (${almost})
 #${addAlbumPerf(release=newinv, person=[[person:John_A._Rivers]], instruments=engineer)}
@@ -4252,10 +4238,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/releases/bigtime_jungle_A_500.jpg"></a>
 	<a href="${jbc_images}/releases/bigtime_jungle_B.jpg"><img
 		src="${jbc_images}/releases/bigtime_jungle_B_250.jpg"></a>
-	${a_class} ${SINGLE}, ${7}
+	${a_media} ${SINGLE}, ${7}
 	${a_label} BigTime
 	${a_cat} BTS 1806
-	${a_date} 1986
+	${a_dtreleased} 1986
 #${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
 #${addAlbumPerf(release=human, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
 #${addAlbumPerf(release=human, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
@@ -4287,10 +4273,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/releases/bigtime_angels_A_500.jpg"></a>
 	<a href="${jbc_images}/releases/bigtime_angels_B.jpg"><img
 		src="${jbc_images}/releases/bigtime_angels_B_250.jpg"></a>
-	${a_class} ${SINGLE}, ${7}
+	${a_media} ${SINGLE}, ${7}
 	${a_label} BigTime
 	${a_cat} BTS 11
-	${a_date} 1986
+	${a_dtreleased} 1986
 #${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
 #${addAlbumPerf(release=human, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
 #${addAlbumPerf(release=human, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
@@ -4324,10 +4310,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/jungleback_250.jpg"></a>
 	<a href="${jbc_images}/releases/human_12_back.jpg"><img
 		src="${jbc_images}/releases/human_12_back_250.jpg"></a>
-	${a_class} ${SINGLE}, ${7}, ${12}
+	${a_media} ${SINGLE}, ${7}, ${12}
 	${a_label} Glass
 	${a_cat} Glass 043, 12043
-	${a_date} Sep1985
+	${a_dtreleased} Sep1985
 #${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
 #${addAlbumPerf(release=human, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
 #${addAlbumPerf(release=human, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
@@ -4361,10 +4347,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/releases/marnie_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/marnie_back.jpg"><img
 		src="${jbc_images}/releases/marnie_back_250.jpg"></a>
-	${a_class} ${SINGLE}, ${12} from ${scandal}
+	${a_media} ${SINGLE}, ${12} from ${scandal}
 	${a_label} Glass
 	${a_cat} Glass 12033
-	${a_date} Mar1984
+	${a_dtreleased} Mar1984
 	${a_rec} January 1984
 	${det_end}
 	${a-side_beg}
@@ -4443,10 +4429,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/releases/mayi_a_250.jpg"></a>
 	<a href="${jbc_images}/releases/mayi_b.jpg"><img
 		src="${jbc_images}/releases/mayi_b_250.jpg"></a>
-	${a_class} ${EP}, ${7}
+	${a_media} ${EP}, ${7}
 	${a_label} Glass
 	${a_cat} HMMM002
-	${a_date} 1987
+	${a_dtreleased} 1987
 	${a_rec} Live, <a href="${jbc_gigs}/1985/Apr25.html">1985-04-25, Melkweg, Amsterdam</a> by
 	R.V.Z. Radio, Northampton 1983 (${mayi} &amp; ${over})
 #	${addAlbumPerf(release=may, person=[[person:Mitch_Jenkins]], instruments=photography)}
@@ -4487,10 +4473,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/releases/realmen_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/realmen_back.jpg"><img
 		src="${jbc_images}/releases/realmen_back_250.jpg"></a>
-	${a_class} ${SINGLE}, ${12} from ${scandal}
+	${a_media} ${SINGLE}, ${12} from ${scandal}
 	${a_label} Glass
 	${a_cat} Glass 12041
-	${a_date} Feb1985
+	${a_dtreleased} Feb1985
 #${addAlbumPerf(release=rmen, person=[[person:John_A._Rivers]], instruments=producer)}
 #${addAlbumPerf(release=rmen, person=[[person:David_E._Barker]], instruments=producer)}
 #${addAlbumPerf(release=rmen, person=[[person:Pat_Fish]], instruments=producer)}
@@ -4610,11 +4596,11 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/releases/nonsense_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/nonsense_back.jpg"><img
 		src="${jbc_images}/releases/nonsense_back_250.jpg"></a>
-	${a_class} ${COMP}
+	${a_media} ${COMP}
 	${a_where} USA, Canada, Australia
 	${a_label} BigTime
 	${a_cat} 10014-1
-	${a_date} Apr1986
+	${a_dtreleased} Apr1986
 	${a_rec} in England, Late 1983/Early 1986
 #	${addAlbumPerf(release=nons, person=[[person:John_A._Rivers]], instruments=producer)}
 #	${addAlbumPerf(release=nons, person=[[person:David_E._Barker]], instruments=producer)}
@@ -4724,10 +4710,10 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/planet.jpg"><img
 		src="${jbc_images}/planet_500.jpg"></a>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} ${creat}, Genius
 	${a_cat} GENICD008, GENI-008CD
-	${a_date} 1989
+	${a_dtreleased} 1989
 	${a_rec} Woodbine St. Studio, Leamington Spa
 #${addAlbumPerf(release=planet, person=[[person:John_A._Rivers]], instruments=engineer)}
 #${addAlbumPerf(release=planet, person=[[person:Francisco_Cabeza]], instruments=engineer)}
@@ -4821,8 +4807,8 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_images}/cover_pygmies_back.jpg"><img
 		alt="[album cover]"
 		src="${jbc_images}/cover_pygmies_back_250.jpg"></a>
-	${a_class} ${SINGLE}, ${7}
-	${a_date} 1985
+	${a_media} ${SINGLE}, ${7}
+	${a_dtreleased} 1985
 	${a_label} Glass
 	${a_cat} HMMM001
 	${a_note}
@@ -4851,10 +4837,10 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_images}/releases/roadrunner_back.jpg"><img
 		alt="[album cover]"
 		src="${jbc_images}/releases/roadrunner_back_250.jpg"></a>
-	${a_class} ${SINGLE}, ${12}
+	${a_media} ${SINGLE}, ${12}
 	${a_label} Glass
 	${a_cat} Glass 1204
-	${a_date} Aug1984
+	${a_dtreleased} Aug1984
 	${a_rec} April 1984, Beck, Wellingborough
 #	${addAlbumPerf(release=runner, person=[[person:Derek_Tomkins]], instruments=engineer)}
 #	${addAlbumPerf(release=runner, person=[[person:Mitch_Jenkins]], instruments=photography)}
@@ -4914,10 +4900,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/scandal_front_500.jpg"></a>
 	<a href="${jbc_images}/scandal_back.jpg"><img
 		src="${jbc_images}/scandal_back_250.jpg"></a>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} Glass
 	${a_cat} GLALP009
-	${a_date} Nov1984
+	${a_dtreleased} Nov1984
 	${a_rec} August 1984, Woodbine Studio, Leamington Spa
 #	${addAlbumPerf(release=scandal, person=[[person:John_A._Rivers]], instruments=engineer)}
 #	${addAlbumPerf(release=scandal, person=[[person:Jonathan_Dee]], instruments=engineer)}
@@ -5051,10 +5037,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/releases/sex_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/sex_back.jpg"><img
 		src="${jbc_images}/releases/sex_back_250.jpg"></a>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} Glass
 	${a_cat} MGLALP011
-	${a_date} May1985
+	${a_dtreleased} May1985
 	${a_rec} February 1985, Woodbine Studio, Leamington Spa
 #	${addAlbumPerf(release=sex, person=[[person:John_A._Rivers]], instruments=producer)}
 #	${addAlbumPerf(release=sex, person=[[person:Mitch_Jenkins]], instruments=photography)}
@@ -5143,10 +5129,10 @@ Previously available on the ${fishco} LP/CD.
 		alt="[album cover]" src="${jbc_images}/shirley_back_250.jpg"></a>
 	<a href="${jbc_images}/shirley_cd.jpg"><img
 		alt="[album cover]" src="${jbc_images}/shirley_cd_250.jpg"></a>
-	${a_class} ${SINGLE} from ${blue}
+	${a_media} ${SINGLE} from ${blue}
 	${a_label} Shock
 	${a_cat} SHOCKCD4010
-	${a_date} 1991
+	${a_dtreleased} 1991
 	${a_where} Australia
 	${a_sleev} aQb. SK 1991
 	${det_end}
@@ -5179,10 +5165,10 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_images}/cover_smith_back.jpg"><img
 		src="${jbc_images}/cover_smith_back_250.jpg"></a>
 	<p>
-	${a_class} ${SINGLE}, ${7} (only) from ${scandal}
+	${a_media} ${SINGLE}, ${7} (only) from ${scandal}
 	${a_label} Glass
 	${a_cat} Glass 027
-	${a_date} Sep1983
+	${a_dtreleased} Sep1983
 	${a_rec} Summer 1983, Beck Wellingborough
 #	${addAlbumPerf(release=smith, person=[[person:David_E._Barker]], instruments=producer)}
 #	${addAlbumPerf(release=smith, person=[[person:Pat_Fish]], instruments=producer)}
@@ -5237,10 +5223,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/releases/spooky7_A_500.jpg"></a>
 	<a href="${jbc_images}/releases/spooky7_B.jpg"><img alt="[album cover]"
 		src="${jbc_images}/releases/spooky7_B_250.jpg"></a>
-	${a_class} ${single}
+	${a_media} ${single}
 	${a_label} ${creat}
 	${a_cat} CRE059
-	${a_date} 1988
+	${a_dtreleased} 1988
 #	${addAlbumPerf(release=spook7, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Producer)}
 #	${addAlbumPerf(release=spook7, person=[[person:Paul_Mulreany]], instruments=Drums)}
 #	${addAlbumPerf(release=spook7, person=[[person:Laurence_O'Keefe]], instruments=Bass)}
@@ -5273,10 +5259,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/releases/spooky_12_front_250.jpg"></a>
 	<a href="${jbc_images}/releases/spooky_12_back.jpg"><img alt="[album cover]"
 		src="${jbc_images}/releases/spooky_12_back_250.jpg"></a>
-	${a_class} ${single}
+	${a_media} ${single}
 	${a_label} ${creat}
 	${a_cat} CRE059T
-	${a_date} 1988
+	${a_dtreleased} 1988
 #	${addAlbumPerf(release=spook12, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Producer)}
 #	${addAlbumPerf(release=spook12, person=[[person:Paul_Mulreany]], instruments=Drums)}
 #	${addAlbumPerf(release=spook12, person=[[person:Laurence_O'Keefe]], instruments=Bass)}
@@ -5313,10 +5299,10 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_images}/releases/spooky_12_back.jpg"><img alt="[album cover]"
 		src="${jbc_images}/releases/spooky_12_back_250.jpg"></a>
 	${CBC}
-	${a_class} ${EP}
+	${a_media} ${EP}
 	${a_label} ${creat}
 	${a_cat} 8721832
-	${a_date} 1988
+	${a_dtreleased} 1988
 #	${addAlbumPerf(release=spook, person=[[person:Richard_and_Yves]], instruments=engineer)}
 #	${addAlbumPerf(release=spook, person=[[person:Iain_O'Higgins]], instruments=engineer, song="Spooky")}
 #	${addAlbumPerf(release=spook, person=[[person:Kevin_Komoda]], instruments=producer)}
@@ -5502,10 +5488,10 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/uncond_500.jpg"></a>
 	<a href="${jbc_images}/uncond2.jpg"><img alt="[sleeve photo]"
 		src="${jbc_images}/uncond2_250.jpg"></a>
-	${a_class} ${COMP}
+	${a_media} ${COMP}
 	${a_label} Polygram
 	${a_cat} PCD182
-	${a_date} 1992
+	${a_dtreleased} 1992
 	${a_where} Canada
 #	${addAlbumPerf(release=uncond, person=[[person:John_A._Rivers]], instruments=producer)} 
 #	${addAlbumPerf(release=uncond, person=[[person:Iain_O'Higgins]], instruments=producer)} 
@@ -5745,9 +5731,9 @@ Previously available on the ${fishco} LP/CD.
 		src="${jbc_images}/releases/abstract5_500.jpg"></a>
 	<a href="${jbc_images}/releases/abstract5_booklet.jpg"><img alt="[sleeve photo]"
 		src="${jbc_images}/releases/abstract5_booklet_250.jpg"></a>
-	${a_class} ${VAR}, ${12}
+	${a_media} ${VAR}, ${12}
 	${a_label} Spring 1985 LP Issue 5 Of Abstract Magazine
-	${a_date} Spring 1985
+	${a_dtreleased} Spring 1985
 	${a_rec} Live <a href="${jbc_gigs}/1985/Apr25.html">25Apr85, Melkweg, Amsterdam</a>
 	${det_end}
 	${tun_beg}
@@ -5765,10 +5751,10 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/releases/vodka.jpg"><img alt="[sleeve photo]"
 		src="${jbc_images}/releases/vodka_500.jpg"></a>
-	${a_class} ${VAR}, ${CD}
+	${a_media} ${VAR}, ${CD}
 	${a_label} Abus Dangereux (magazine)
 	${a_cat} Abus21
-	${a_date} 1994
+	${a_dtreleased} 1994
 	${a_where} France
 	${det_end}
 	${tun_beg}
@@ -5799,8 +5785,8 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_images}/releases/weloveyou_back.jpg"><img
 		alt="[sleeve photo]"
 		src="${jbc_images}/releases/weloveyou_back_250.jpg"></a>
-	${a_class} ${SINGLE}, ${12}
-	${a_date} 1990
+	${a_media} ${SINGLE}, ${12}
+	${a_dtreleased} 1990
 	${a_label} ${creat}
 	${a_cat} CRE083T
 	${a_prod} ${proctor}
@@ -5835,10 +5821,10 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_images}/western2.jpg"><img
 		alt="[sleeve photo]"
 		src="${jbc_images}/western2_250.jpg"></a>
-	${a_class} ${ALBUM}, ${LIVE}
+	${a_media} ${ALBUM}, ${LIVE}
 	${a_label} ${creat}
 	${a_cat} CRECD148
-	${a_date} 1993
+	${a_dtreleased} 1993
 #	${addAlbumPerf(release=family, person=[[person:Iain_O'Higgins]], instruments=engineer)}
 #	${addAlbumPerf(release=family, person=[[person:David_Whittemore]], instruments=engineer)}
 #	${addAlbumPerf(release=family, person=[[person:Martin_Stebbing]], instruments=producer)}
@@ -5928,10 +5914,10 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/yo_yo.jpg"><img alt="[album cover]"
 		src="${jbc_images}/yo_yo_500.jpg"></a>
-	${a_class} ${SINGLE} from ${blue}
+	${a_media} ${SINGLE} from ${blue}
 	${a_label} Sky
 	${a_cat} 7-5081-2
-	${a_date} 1991
+	${a_dtreleased} 1991
 	${a_where} USA
 	${det_end}
 	${tun_beg}
@@ -5948,10 +5934,10 @@ Previously available on the ${fishco} LP/CD.
 
 	${mkPurchase()}
 	${det_beg}
-	${a_class} ${SINGLE}, ${12}
+	${a_media} ${SINGLE}, ${12}
 	${a_label} Glass
 	${a_cat} GLASS12033
-	${a_date} 1984
+	${a_dtreleased} 1984
 	${a_grv_a} sound clinic
 	${det_end}
 	${a-side_beg}
@@ -6021,10 +6007,10 @@ Previously available on the ${fishco} LP/CD.
 	<br clear=all>
 	The JBC Analogue Wildlife Sampling Tendency
 	present Illuminate (the difficult tenth)
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} ${creat}
 	${a_cat} CRECD182
-	${a_date} 3Apr1995
+	${a_dtreleased} 3Apr1995
 #	${addAlbumPerf(release=ill, person=[[person:Max_Reed]], instruments=engineer)}
 #	${addAlbumPerf(release=ill, person=[[person:David_J.]], instruments=producer)}
 #	${a_eng} Max Reed
@@ -6298,10 +6284,10 @@ Previously available on the ${fishco} LP/CD.
 		alt="[album cover]" src="${jbc_images}/releases/sixteenyears_a_250.jpg"></a>
 	<a href="${jbc_images}/releases/sixteenyears_b.jpg"><img
 		alt="[album cover]" src="${jbc_images}/releases/sixteenyears_b_250.jpg"></a>
-	${a_class} ${SINGLE}
+	${a_media} ${SINGLE}
 	${a_label} ${creat}
 	${a_cat} CRESCD167
-	${a_date} 6Mar1995
+	${a_dtreleased} 6Mar1995
 	${a_rec} Oct 1994, Northampton, UK
 #	${addAlbumPerf(release=16yr, person=[[person:Max_Reed]], instruments=engineer)}
 #	${addAlbumPerf(release=16yr, person=[[person:David_J.]], instruments=producer)}
@@ -6349,10 +6335,10 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${jbc_images}/violent2.jpg"><img
 		alt="[album cover]" src="${jbc_images}/violent2_250.jpg"></a>
 	<br clear=all>
-	${a_class} ${COMP}
+	${a_media} ${COMP}
 	${a_label} ${creat}
 	${a_cat} NR2002
-	${a_date} 1997
+	${a_dtreleased} 1997
 #	${a_photo} ${del}, others
 #	${addAlbumPerf(release=violent, person=[[person:David_Whittemore]], instruments=photography)}
 #	${a_prod}
@@ -6656,10 +6642,10 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/blackeg.jpg"><img
 		alt="[album cover]" src="${jbc_images}/blackeg_500.jpg"></a>
-	${a_class} ${ALBUM}
+	${a_media} ${ALBUM}
 	${a_label} ${creat}
 	${a_cat} CRECD086
-	${a_date} 1991
+	${a_dtreleased} 1991
 	${a_photo} Richard F. Walker
 	${a_sleev} Amp Art/Fingal, J. Berry
 	${det_end}
@@ -6778,8 +6764,8 @@ Previously available on the ${fishco} LP/CD.
 		alt="[album cover]" src="${jbc_images}/glorious_front_500.jpg"></a>
 	<a href="${jbc_images}/glorious_back.jpg"><img
 		alt="[album cover]" src="${jbc_images}/glorious_back_250.jpg"></a>
-	${a_class} ${ALBUM}, ${CD}, ${LIVE}
-	${a_date} 2000
+	${a_media} ${ALBUM}, ${CD}, ${LIVE}
+	${a_dtreleased} 2000
 	${a_label} ROIR
 	${a_rec} <a href="${jbc_gigs}/1999/Feb26.html">26Feb1999, Logo, ${HAM}</a>
 #	${a_cat} 001
@@ -6844,8 +6830,8 @@ Previously available on the ${fishco} LP/CD.
 	${mkHeader(section=albums, title=Guest Pass 2000)}
 
 	${det_beg}
-	${a_class} ${CDR}
-	${a_date} 2000
+	${a_media} ${CDR}
+	${a_dtreleased} 2000
 	${det_end}
 
 	${tun_beg}
@@ -6875,8 +6861,8 @@ Previously available on the ${fishco} LP/CD.
 		src="${images}/front_rotten_soul_500.jpg"></a>
 	<a href="${images}/back_rotten_soul.jpg"><img
 		src="${images}/back_rotten_soul_250.jpg"></a>
-	${a_class} ${ALBUM}, ${CD}
-	${a_date} June 2000
+	${a_media} ${ALBUM}, ${CD}
+	${a_dtreleased} June 2000
 	${a_label} Vinyl Japan
 	${a_cat} ASKCD114
 #	${addAlbumPerf(release=rotten, person=[[person:Mitch_Jenkins]], instruments=photography)})}
@@ -7008,8 +6994,8 @@ Previously available on the ${fishco} LP/CD.
 		src="${images}/lunch_back_250.jpg"></a>
 	<a href="${images}/lunch_inside.jpg"><img
 		src="${images}/lunch_inside_250.jpg"></a>
-	${a_class} ${ALBUM}, ${CD}
-	${a_date} October 2003
+	${a_media} ${ALBUM}, ${CD}
+	${a_dtreleased} October 2003
 	${a_label} Rev-Ola
 	${a_cat} CRREV54
 #	${addAlbumPerf(release=lunch, person=[[person:David_Whittemore]], instruments=photography)}
@@ -7359,10 +7345,10 @@ Previously available on the ${fishco} LP/CD.
 		alt="[album cover]" src="${jbc_images}/sweetwater_front_500.jpg"></a>
 	<a href="${jbc_images}/sweetwater_back.jpg"><img
 		alt="[album cover]" src="${jbc_images}/sweetwater_back_250.jpg"></a>
-	${a_class} ${SINGLE} from ${bus}
+	${a_media} ${SINGLE} from ${bus}
 	${a_label} ${creat}
 	${a_cat} PROC 1934
-	${a_date} 9 Sep 1993
+	${a_dtreleased} 9 Sep 1993
 	${a_where} Australia
 	${det_end}
 	${tun_beg}
@@ -7392,8 +7378,8 @@ Previously available on the ${fishco} LP/CD.
 		src="${images}/cake_back_250.jpg"></a>
 	<a href="${images}/cake_inside.jpg"><img
 		src="${images}/cake_inside_250.jpg"></a>
-	${a_class} ${COMP}, ${CD}
-	${a_date} 2001
+	${a_media} ${COMP}, ${CD}
+	${a_dtreleased} 2001
 	${a_label} Vinyl Japan
 	${a_cat} ASKCD128
 #	${addAlbumPerf(release=cake, person=[[person:Mitch_Jenkins]], instruments=photography)}
@@ -7566,8 +7552,8 @@ Previously available on the ${fishco} LP/CD.
 	<br/>
 	<a href="/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_dt.pdf">Tapete Press release (DE)</a>
 	<br/>
-	${a_class} ${ALBUM}, ${CD}, ${LP}
-	${a_date} 2022-02-04
+	${a_media} ${ALBUM}, ${CD}, ${LP}
+	${a_dtreleased} 2022-02-04
 	${a_label} Tapete Records
 	${det_end}
 
@@ -7610,8 +7596,8 @@ Previously available on the ${fishco} LP/CD.
 		src="${images}/adventurers_front_500.jpg"></a>
 	<div style="font-weight: bold; font-size: 1.2em;">
 	</div>
-	${a_class} ${ALBUM}, ${CD}, ${LP}
-	${a_date} 2012-10-18
+	${a_media} ${ALBUM}, ${CD}, ${LP}
+	${a_dtreleased} 2012-10-18
 	${a_label} Self published
 	${det_end}
 	${tun_beg}
@@ -7702,8 +7688,8 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${images}/sumo/sumosonic_spacemen_cd.jpg"><img
 		src="${images}/sumo/sumosonic_spacemen_cd_250.jpg"></a>
 	<p>
-	${a_class} ${CD}
-	${a_date} 1996-12-05
+	${a_media} ${CD}
+	${a_dtreleased} 1996-12-05
 	${a_label} Creation Records
 	${a_cat} CRESCD 242
 	${det_end}
@@ -7729,8 +7715,8 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${images}/sumo/sumosonic_spacemen_b.jpg"><img
 		src="${images}/sumo/sumosonic_spacemen_b_250.jpg"></a>
 	<p>
-	${a_class} ${12}
-	${a_date} 1996-12-05
+	${a_media} ${12}
+	${a_dtreleased} 1996-12-05
 	${a_label} Creation Records
 	${a_cat} CRESCD 242
 	${det_end}
@@ -7766,8 +7752,8 @@ Previously available on the ${fishco} LP/CD.
 	<a href="${images}/sumo/sumosonic_this_is_sumo_cd.jpg"><img
 		src="${images}/sumo/sumosonic_this_is_sumo_cd_250.jpg"></a>
 	<p>
-	${a_class} ${LP}
-	${a_date} 1998-01-26
+	${a_media} ${LP}
+	${a_dtreleased} 1998-01-26
 	${a_label} Creation Records
 	${a_cat} CRECD 204
 	${det_end}
@@ -7838,9 +7824,9 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/releases/fire_wasted.jpg"><img
 		src="${jbc_images}/releases/fire_wasted_500.jpg"></a>
-	${a_class} 4CD Bookback Set
+	${a_media} 4CD Bookback Set
 	${a_label} Fire Records
-	${a_date} 2017-10-20
+	${a_dtreleased} 2017-10-20
 	<p>
 	This is a 4 CD boxset/booklet of the first 4 Glass Records Jazz Butcher albums.
 #${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
@@ -7969,9 +7955,9 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/releases/fire_violent.jpg"><img
 		src="${jbc_images}/releases/fire_violent_500.jpg"></a>
-	${a_class} 4CD Bookback Set
+	${a_media} 4CD Bookback Set
 	${a_label} Fire Records
-	${a_date} 2018-03-09
+	${a_dtreleased} 2018-03-09
 	<p>
 	Expansive book-styled package of the first four albums from The Jazz Butcher's early Creation Records' years - 1988-1991.
 	<p>
@@ -8096,9 +8082,9 @@ Previously available on the ${fishco} LP/CD.
 	${det_beg}
 	<a href="${jbc_images}/releases/fire_cholmondley.jpg"><img
 		src="${jbc_images}/releases/fire_cholmondley.jpg"></a>
-	${a_class} 4CD Bookback Set
+	${a_media} 4CD Bookback Set
 	${a_label} Fire Records
-	${a_date} 2021-11-12
+	${a_dtreleased} 2021-11-12
 	<p>
 	This is a 4 CD boxset/booklet of the first 4 Glass Records Jazz Butcher albums.
 #${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
@@ -8306,9 +8292,9 @@ ${49} (Live KCRW Session 1989)
 	${det_beg}
 	<a href="${jbc_images}/releases/brave.jpg"><img
 		src="${jbc_images}/releases/brave_500.jpg"></a>
-	${a_class} CD, LP
+	${a_media} CD, LP
 	${a_label} Artoffact Records
-	${a_date} 2018-01-19
+	${a_dtreleased} 2018-01-19
 	<p>
 	Little known fact! The Jazz Butcher's fabulous Brave New Waves session is one of the only sessions that ever got an official release, as the b-side of an EP called Spooky in the late 80s. Now hopelessly out of print, the session gets new life as part of the Brave New Waves series from Artoffact Records. This release includes a never-heard bonus track, a download card with bonus interviews, and completely updated and revised artwork, partially modified from the original Spooky sleeve art.
 	<p>
@@ -8347,8 +8333,8 @@ ${49} (Live KCRW Session 1989)
 	${det_beg}
 	<a href="${jbc_images}/releases/va_canyoutalktothedude_1_front.jpg"><img src="${jbc_images}/releases/va_canyoutalktothedude_1_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/va_canyoutalktothedude_1_back.jpg"><img src="${jbc_images}/releases/va_canyoutalktothedude_1_back_250.jpg"></a>
-	${a_class} ${CD}
-	${a_date} 1994
+	${a_media} ${CD}
+	${a_dtreleased} 1994
 	${a_label} Ali&eacute;nor Records
 	${a_cat} Alien 1
 	${det_end}
@@ -8372,8 +8358,8 @@ ${49} (Live KCRW Session 1989)
 	${det_beg}
 	<a href="${jbc_images}/releases/va_canyoutalktothedude_2_front.jpg"><img src="${jbc_images}/releases/va_canyoutalktothedude_2_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/va_canyoutalktothedude_2_back.jpg"><img src="${jbc_images}/releases/va_canyoutalktothedude_2_back_250.jpg"></a>
-	${a_class} ${CD}
-	${a_date} 1994
+	${a_media} ${CD}
+	${a_dtreleased} 1994
 	${a_label} Ali&eacute;nor Records
 	${a_cat} Alien 1
 	${det_end}
@@ -8397,8 +8383,8 @@ ${49} (Live KCRW Session 1989)
 	${det_beg}
 	<a href="${jbc_images}/releases/va_nationofsaints_front.jpg"><img src="${jbc_images}/releases/va_nationofsaints_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/va_nationofsaints_back.jpg"><img src="${jbc_images}/releases/va_nationofsaints_back_250.jpg"></a>
-	${a_class} ${CD}
-	${a_date} 2009-11
+	${a_media} ${CD}
+	${a_dtreleased} 2009-11
 	${a_label} Dodgem Logic
 	${a_cat} DODGEMLOGIC001C
 	${det_end}
@@ -8424,8 +8410,8 @@ ${49} (Live KCRW Session 1989)
 	<p>
 	<a href="${jbc_images}/releases/va_abigail2.jpg"><img src="${jbc_images}/releases/va_abigail2_250.jpg"></a>
 	${g_credit(g=\@jo_bartlett, u=https://twitter.com/jo_bartlett, d=2023-07-05)}
-	${a_class} ${CAS}
-	${a_date} 1986
+	${a_media} ${CAS}
+	${a_dtreleased} 1986
 	${a_label} NONE
 	${a_cat} NONE
 	${det_end}
@@ -8468,8 +8454,8 @@ ${49} (Live KCRW Session 1989)
 	${det_beg}
 	<a href="${jbc_images}/releases/va_creation_price_front.jpg"><img src="${jbc_images}/releases/va_creation_price_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/va_creation_price_back.jpg"><img src="${jbc_images}/releases/va_creation_price_back_250.jpg"></a>
-	${a_class} ${CD}
-	${a_date} 1996
+	${a_media} ${CD}
+	${a_dtreleased} 1996
 	${a_label} Sony Music
 	${a_cat} COLPROCD 3411 2
 	${det_end}
@@ -8493,8 +8479,8 @@ ${49} (Live KCRW Session 1989)
 	${det_beg}
 	<a href="${jbc_images}/releases/va_unautomne93_front.jpg"><img src="${jbc_images}/releases/va_unautomne93_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/va_unautomne93_back.jpg"><img src="${jbc_images}/releases/va_unautomne93_back_250.jpg"></a>
-	${a_class} ${CD}
-	${a_date} 1993
+	${a_media} ${CD}
+	${a_dtreleased} 1993
 	${a_label} Virgin, France
 	${a_cat} Visa 3334
 	${det_end}
@@ -8518,8 +8504,8 @@ ${49} (Live KCRW Session 1989)
 	${det_beg}
 	<a href="${jbc_images}/releases/va_wilson_heyday_front.jpg"><img src="${jbc_images}/releases/va_wilson_heyday_front_500.jpg"></a>
 	<a href="${jbc_images}/releases/va_wilson_heyday_back.jpg"><img src="${jbc_images}/releases/va_wilson_heyday_back_250.jpg"></a>
-	${a_class} ${CD}
-	${a_date} 2004
+	${a_media} ${CD}
+	${a_dtreleased} 2004
 	${a_label} Heyday, USA
 	${a_cat} 
 	${det_end}
@@ -8542,8 +8528,8 @@ ${49} (Live KCRW Session 1989)
 	${mkPurchase()}
 	${det_beg}
 	<a href="${jbc_images}/wilson/200511_wilson_cd.jpg"><img src="${jbc_images}/wilson/200511_wilson_cd_500.jpg"></a>
-	${a_class} ${CDR}
-	${a_date} 2005-11
+	${a_media} ${CDR}
+	${a_dtreleased} 2005-11
 	${a_label} Primier Studios
 	${a_cat} 
 	${det_end}
@@ -8568,8 +8554,8 @@ ${49} (Live KCRW Session 1989)
 	${det_beg}
 	<a href="${jbc_images}/wilson/200304_wilson_front.jpg"><img src="${jbc_images}/wilson/200304_wilson_front_500.jpg"></a>
 	<a href="${jbc_images}/wilson/200304_wilson_back.jpg"><img src="${jbc_images}/wilson/200304_wilson_back_250.jpg"></a>
-	${a_class} ${CDR}
-	${a_date} 2003-04
+	${a_media} ${CDR}
+	${a_dtreleased} 2003-04
 	<p>
 	Recorded at Notepad, NW10 by Andy Parker.
 	Produced by Donald Ross Skinner.
@@ -8598,8 +8584,8 @@ ${49} (Live KCRW Session 1989)
 	${det_beg}
 	<a href="${jbc_images}/wilson/2002_wilson_front.jpg"><img src="${jbc_images}/wilson/2002_wilson_front_500.jpg"></a>
 	<a href="${jbc_images}/wilson/2002_wilson_back.jpg"><img src="${jbc_images}/wilson/2002_wilson_back_250.jpg"></a>
-	${a_class} ${CDR}
-	${a_date} 2002
+	${a_media} ${CDR}
+	${a_dtreleased} 2002
 	<p>
 	Recorded by MC Bot on the Roland VS-1800 at Subsound, NN1 during 2001 and 2002. The words to "Play It All Night Long" are by Warren Zevon. Everything else is original pirate material. Increase the peace.
 	</p>
@@ -8631,10 +8617,10 @@ ${49} (Live KCRW Session 1989)
 		src="${jbc_images}/releases/never7_A_500.jpg"></a>
 	<a href="${jbc_images}/releases/never7_B.jpg"><img alt="[album cover]"
 		src="${jbc_images}/releases/never7_B_250.jpg"></a>
-	${a_class} single
+	${a_media} single
 	${a_label} Glass Modern
 	${a_cat} GLAMS004
-	${a_date} 2022
+	${a_dtreleased} 2022
 #	${addAlbumPerf(release=never7, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar, song="Never Give Up")}
 #	${addAlbumPerf(release=never7, person=[[person:David_J.]], instruments=Bass\, Backing Vocals\, Produced, song="Never Give Up")}
 #	${addAlbumPerf(release=never7, person=[[person:Victor DeLorenzo]], instruments=Drums, song="Never Give Up")}

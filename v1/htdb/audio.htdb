@@ -195,7 +195,6 @@
 #live		endif
 #live	else
 #live		if ((getval(${prefix}[${gi}]->extra) == eg) || (getval(${prefix}[${gi}]->extra) == wilson) || (getval(${prefix}[${gi}]->extra) == sumo) || (getval(${prefix}[${gi}]->extra) == interview))
-#live		endif
 #live		else
 #live			if (define(gigMatch, yes))
 #live			endif

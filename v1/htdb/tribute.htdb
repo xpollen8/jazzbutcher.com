@@ -1,5 +1,5 @@
 #define	mkTributeTrack(title, artist, url, pat, dl=1-01_SisterDeathPt2.mp3)
-	${linkAudio(project=tribute, collection=Fan Tribute Album 2000, mp3=${audio}/tribute/${dl}, title=${title})}
+	${linkAudio(project=tribute, collection=Fan Tribute Album 2000, mp3=${audio}/tribute/${dl}, comment=${artist}, title=${title})}
 	by <b>${linkExternal(${url}, ${artist})}</b>
 	<div class="lyric_annotation">
 	${pat}

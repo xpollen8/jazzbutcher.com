@@ -1,109 +1,71 @@
+"use client"
+
+import { Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EmbedMedia from '@/components/EmbedMedia';
+import useMedias from '@/lib/useMedias';
+import useAudioLive from '@/lib/useAudioLive';
+import { parseCredit } from '@/lib/macros';
 
-const Audio = () => 
-<>
-	<Header section="jbc" title="Audio" />
-	<h1>This section is not yet ported from old JBC site</h1>
-	<pre>
-	expose the contents of:
-	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/flac/
-	</pre>
-	<Footer />
-</>
+const AudioSection = ({ title, project, data }: any) => {
+	return (<div className={`gig_${project}`}>
+		<h1>{title}</h1>
+		{data?.map((d: unknown, key: number) => {
+			const { credit=d.mediacredit, crediturl=d.mediacrediturl, creditdate, creditcaption } = parseCredit(d.credit);
+			//if (d.credit) console.log("CR", { cr: d.credit, credit, crediturl, creditdate, creditcaption });
+			//if (title === 'Live Shows') console.log("DATA", d);
+			if (title === 'Live Shows' && !d.mediaurl) console.log("DATA", d);
+			return <EmbedMedia data={{
+				datetime: d.datetime,
+				venue: d.venue,
+				city: d.city,
+				mediaurl: d.mp3 || d.mediaurl,
+				title: d.name || d.song || 'XXXXXXX',
+				author: d.collection,
+				comment: d.comment,
+				mediacredit: credit,
+				mediacrediturl: crediturl,
+				mediacreditdate: creditdate,
+				children: creditcaption
+			}} />;
+		})}
+	</div>)
+}
+
+const Audio = () => {
+	const { data, isLoading, error } = useMedias('audio');
+	const { data: dataLive, isLoading: isLoadingLive, error: errorLive } = useAudioLive();
+	//console.log("DATA", dataLive?.results);
+	return (<>
+		<Header section="jbc" title="Audio" />
+		<h1>This is a W.I.P. - still need to tack the right info onto stuff in the database for this to work programmatically</h1>
+		<Suspense fallback=<>Loading...</>>
+			{(!isLoading) && <>
+				<AudioSection title="Black Eg" project="eg" data={data.filter((d: unknown) => d.project === 'eg')} />
+				<AudioSection title="Sumosonic" project="sumo" data={data.filter((d: unknown) => d.project === 'sumo')} />
+				<AudioSection title="Wilson" project="wilson" data={data.filter((d: unknown) => d.project === 'wilson')} />
+				<AudioSection title="Vaguely Familiar" project="vaguely" data={data.filter((d: unknown) => d.project === 'vaguely')} />
+				<AudioSection title="Cambodia" project="cambodia" data={data.filter((d: unknown) => d.project === 'cambodia')} />
+				<AudioSection title="Interviews" project="jbc" data={data.filter((d: unknown) =>
+					(d.project === 'jbc' || d.project.length === 0) && (d.subtype === 'interview' || d.name === 'The Interview'))} />
+				<AudioSection title="Jazz Butcher" project="jbc" data={data.filter((d: unknown) =>
+					(d.project === 'jbc' || d.project.length === 0) && (!d.name.startsWith('The Entire') && d.name !== 'The Interview' && d.subtype !== 'interview'))} />
+			</>}
+		</Suspense>
+		<Suspense fallback=<>Loading...</>>
+			{(!isLoadingLive) && <AudioSection title="Live Shows" project="jbc" data={dataLive.results} />}
+		</Suspense>
+		<pre>
+		expose the contents of:
+		https://s3.amazonaws.com/assets.jazzbutcher.com/audio/flac/
+		</pre>
+		<Footer />
+	</>)
+}
 
 export default Audio;
 /*
-#define	song30[1]->thing ${shirl}
-#define	song30[1]->tease Up-tempo rocker
-#define	song30[2]->thing ${harlan}
-#define	song30[2]->tease Test your sci-fi references..
-#define	song30[3]->thing ${monkey}
-#define	song30[3]->tease The Ventures play a greek wedding
-#define	song30[4]->thing ${angels}
-#define	song30[4]->tease Big, beautiful powerful art misery tune
-#define	song30[5]->thing ${best}
-#define	song30[5]->tease Someone tell the manager that chicken is sick
-#define	song30[6]->thing ${fever}
-#define	song30[6]->tease Food and sex and sex and food and sex and sex
-#define	song30[7]->thing ${cute}
-#define	song30[7]->tease Light, fun pop. Concerns sea dwellers
-#define	song30[8]->thing ${domest}
-#define	song30[8]->tease Concerns your cat
-#define	song30[9]->thing ${drink}
-#define	song30[9]->tease The classic ${max} tune
-#define	song30[10]->thing ${enos}
-#define	song30[10]->tease Tribute to the great domed one
-#define	song30[11]->thing ${gold}
-#define	song30[11]->tease We wonder, too
-#define	song30[12]->thing ${jungle}
-#define	song30[12]->tease Result of too much television.
-#define	song30[13]->thing ${jbpm}
-#define	song30[13]->tease Suprisingly tastey
-#define	song30[14]->thing ${land}
-#define	song30[14]->tease What was there before there was the JBC?
-#define	song30[15]->thing ${lulu}
-#define	song30[15]->tease Why a nightmare?
-#define	song30[16]->thing ${marn}
-#define	song30[16]->tease All he wants is his girlfriend back!
-#define	song30[17]->thing ${nada}
-#define	song30[17]->tease Lovely, perfect lyrics.  Bring your notebook
-#define	song30[18]->thing ${rain}
-#define	song30[18]->tease Early, fun luv song
-#define	song30[19]->thing ${men}
-#define	song30[19]->tease About those gold chains...
-#define	song30[20]->thing ${16}
-#define	song30[20]->tease Where's the fucking money gone?
-#define	song30[21]->thing ${smiff}
-#define	song30[21]->tease Just like-a..
-#define	song30[22]->thing ${sa}
-#define	song30[22]->tease Muggers, spiders and a latin beat
-#define	song30[23]->thing ${h2o}
-#define	song30[23]->tease Has the elephant had any water? At all?
-#define	song30[24]->thing ${who}
-#define	song30[24]->tease What happens when she leaves, anyway?
-#define	song30[25]->thing ${rachel}
-#define	song30[25]->tease Pain, pain, pain
-#define	song30[26]->thing ${yo}
-#define	song30[26]->tease Up-tempo rocker
-#define	song30[27]->thing ${stat}
-#define	song30[27]->tease The chicken's not coming home
-#define	song30[28]->thing ${ghost}
-#define	song30[28]->tease What if they existed?
-#define	song30[29]->thing ${penguin}
-#define	song30[29]->tease There're out there freezing right now
-#define	song30[30]->thing ${chang}
-#define	song30[30]->tease Fairly correct, in hindsight..
-#define	song30[31]->thing ${davis}
-#define	song30[31]->tease Dreamy and lost in 2 or 3 bowls of reverb
-#define	song30[32]->thing ${sweet}
-#define	song30[32]->tease Pleasant rocker
-#define	song30[33]->thing ${whad}
-#define	song30[33]->tease Need a diagram?
-#define	song30[34]->thing ${girls}
-#define	song30[34]->tease Rocking ballad
-#define	song30[35]->thing ${sis}
-#define	song30[35]->tease Dark, smoky bar.  There she is! Now, what?
-#define	song30[36]->thing ${almost}
-#define	song30[36]->tease Drummachine, deeeeeelay, relationships
-#define	song30[37]->thing ${wind}
-#define	song30[37]->tease Ancient, charming backyard observations
-#define	song30[38]->thing ${excel}
-#define	song30[38]->tease This is a song we could use a case of
-#define	song30[39]->thing ${hair}
-#define	song30[39]->tease Paraody of a ${dj} tune
-#define	song30[40]->thing ${mayi}
-#define	song30[40]->tease Ancient 4-track cover tune, the French parts
-#define	song30[41]->thing ${mersey}
-#define	song30[41]->tease Keyboard &amp; sugar lyrics
-#define	song30[42]->thing ${olof}
-#define	song30[42]->tease He's dead, but the populace is healthy
-#define	song30[43]->thing ${lorre}
-#define	song30[43]->tease He's a brick!
-#define	song30[44]->thing ${vienna}
-#define	song30[44]->tease Lost in luv in a foreign town
-#define	song30[45]->thing ${weluv}
-#define	song30[45]->tease Dance, nothing but.
 
 #define	gsExtra[1989-11-28_00:00:00]
 		From Pat's "West Coast '89" compilation cassette (2nd generation), courtesy Andrew Brooksbank.
@@ -701,20 +663,6 @@ ${define(gsExtra[${dt}], ${summary})}
 		${linkAudio(title=We Are The Traffic, comment=#2, mp3=${jbc_audio}/Cambodia/199108_Cambodia_WeAreTheTraffic_No2.mp3)}
 		</blockquote>
 		</div>
-
-#	${tag_beg}
-#	30 Second Teasers
-#	${tag_end}
-#	<div class="listenItem">
-#	<blockquote>
-##live	while (t = song30[*]->thing)
-#		<p>
-#			${song30[${t}]->thing}
-#			${song30[${t}]->tease}
-#		</p>
-##live	endwhile
-#	</blockquote>
-#	</div>
 
 	${endTab}
 

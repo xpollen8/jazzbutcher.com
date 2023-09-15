@@ -336,7 +336,7 @@ const Tribute = () =>
 			artist="The Zamboni&apos;s"
 				url="www.thezambonis.com"
 			>
-		 {autoLink(`mark_refoy`)} returned from a Slipstream show in Philadelphia or somewhere like that with
+		 {autoLink(`mark_refoy`, true)} returned from a Slipstream show in Philadelphia or somewhere like that with
 		 unlikely stories of meeting a band who dug the JBC and played ice-hockey anthems. Here is
 		 the living proof! A really neat version of a song that I thought I was happy to have forgotten.
 		 I like the ice rink noises and the way it all picks up and gets &quot;proper&quot; at the end. Wish we&apos;d

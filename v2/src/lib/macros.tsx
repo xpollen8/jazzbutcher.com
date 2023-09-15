@@ -525,7 +525,7 @@ const linkSong = ({ title, href, audio, mp3, author, pdf }: {
 	{(author) && <span className="song_author">({author})</span>}
 </span>
 
-const songLinkMapped = (title: string, doit: string) => {
+const songLinkMapped = (title: string, doit?: boolean) => {
 	if (doit) {
 		const tit = title?.replace(/ /g, '_').toLowerCase();
 		const songMapped = songMap[tit];

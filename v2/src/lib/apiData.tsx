@@ -79,7 +79,9 @@ const apiData = async (path: string, args?: string) => {
 		case 'gigtexts':
 		case 'gigsongs':
 		case 'performances':
+		case 'gigs_with_audio':
 		case 'presses':
+		case 'medias':
 		case 'songs_by_release':
 		case 'lyrics':
 		case 'lyric_by_href':

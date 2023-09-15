@@ -33,10 +33,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[1]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[1]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -71,10 +73,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[2]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[2]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -109,10 +113,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[3]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[3]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -147,10 +153,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[4]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[4]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -185,10 +193,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[5]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[5]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -223,10 +233,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[6]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[6]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -261,10 +273,12 @@
 
 		"dtrecorded": "1983-05",
 
-		"liner": 	"",
+		"studio": "Sketch Studio, Northampton (&amp;quot;Cak Bag session&amp;quot;)",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[7]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[7]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -299,10 +313,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[8]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[8]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "live",
@@ -337,10 +353,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[9]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[9]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -375,10 +393,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[10]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[10]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -413,10 +433,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[11]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[11]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -451,10 +473,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[12]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[12]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -489,10 +513,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[13]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[13]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -527,10 +553,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[14]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[14]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -565,10 +593,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[15]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[15]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -603,10 +633,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[16]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[16]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -641,10 +673,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[17]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[17]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -679,10 +713,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[18]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[18]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -717,10 +753,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": "Dedicated to Maureen and the Angels.",
+		"studio": "Woodbine Recording Studios, Royal Leamington Spa (<!-- BEG:expanded_from:[song:Angels] --> <span class='song'> <i><a href='/lyrics/angels.html'>Angels</a></i> </span> <!-- expanded_from:[song:Angels]:END -->, Ace Studio, Bubrooke (<!-- BEG:expanded_from:[song:Rebecca Wants Her Bike Back] --> <span class='song'> <i><a href='/lyrics/rebecca.html'>Rebecca Wants Her Bike Back</a></i> </span> <!-- expanded_from:[song:Rebecca Wants Her Bike Back]:END --> , <!-- BEG:expanded_from:[song:Mersey] --> <span class='song'> <i>Mersey</i> <span class='song_author'>(David Surkamp)</span> </span> <!-- expanded_from:[song:Mersey]:END -->)",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[19]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[19]->${albums->field[19]})}, )}
+		"onalbum": "dist",
+
+		"liner": "Dedicated to Maureen and the Angels."
+
 	} ,
 	{
 		"type": "compilation",
@@ -755,10 +793,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[20]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[20]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -793,10 +833,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[21]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[21]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -831,10 +873,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[22]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[22]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "EP",
@@ -869,10 +913,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[23]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[23]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -907,10 +953,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[24]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[24]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -945,10 +993,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[25]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[25]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -983,10 +1033,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[26]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[26]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -1021,10 +1073,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[27]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[27]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -1059,10 +1113,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[28]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[28]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -1097,10 +1153,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[29]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[29]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -1135,10 +1193,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[30]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[30]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -1173,10 +1233,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[31]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[31]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -1211,10 +1273,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[32]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[32]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album,project",
@@ -1249,10 +1313,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[33]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[33]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -1287,10 +1353,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[34]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[34]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -1325,10 +1393,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[35]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[35]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -1363,10 +1433,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[36]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[36]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "live",
@@ -1401,10 +1473,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[37]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[37]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -1439,10 +1513,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[38]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[38]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -1477,10 +1553,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[39]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[39]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -1515,10 +1593,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[40]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[40]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -1553,10 +1633,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[41]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[41]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -1591,10 +1673,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[42]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[42]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "live",
@@ -1629,10 +1713,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[43]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[43]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -1667,10 +1753,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[44]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[44]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -1705,10 +1793,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[45]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[45]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -1743,10 +1833,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[46]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[46]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -1781,10 +1873,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[47]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[47]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album,project",
@@ -1819,10 +1913,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[48]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[48]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single,project",
@@ -1857,10 +1953,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[49]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[49]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single,project",
@@ -1895,10 +1993,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[50]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[50]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "dvd,live,project",
@@ -1933,10 +2033,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[51]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[51]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "EP",
@@ -1971,10 +2073,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[52]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[52]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -2009,10 +2113,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[53]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[53]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2047,10 +2153,12 @@
 
 		"dtrecorded": "1983-05",
 
-		"liner": 	"",
+		"studio": "Sketch Studio, Northampton (&amp;quot;Cak Bag session&amp;quot;)",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[54]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[54]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -2085,10 +2193,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[55]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[55]->${albums->field[19]})}, )}
+		"onalbum": "adventurers",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2123,10 +2233,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[56]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[56]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2161,10 +2273,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[57]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[57]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2199,10 +2313,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[58]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[58]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2237,10 +2353,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[59]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[59]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2275,10 +2393,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[60]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[60]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2313,10 +2433,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[61]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[61]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2351,10 +2473,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[62]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[62]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2389,10 +2513,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[63]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[63]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2427,10 +2553,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": "Woodbine Studios",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[64]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[64]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2465,10 +2593,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[65]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[65]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2503,10 +2633,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[66]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[66]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2541,10 +2673,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[67]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[67]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2579,10 +2713,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[68]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[68]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -2617,10 +2753,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[69]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[69]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -2655,10 +2793,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[70]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[70]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2693,10 +2833,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[71]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[71]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -2731,10 +2873,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[72]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[72]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -2769,10 +2913,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[73]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[73]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -2807,10 +2953,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[74]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[74]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2845,10 +2993,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[75]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[75]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "live",
@@ -2883,10 +3033,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[76]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[76]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2921,10 +3073,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[77]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[77]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2959,10 +3113,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[78]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[78]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -2997,10 +3153,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[79]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[79]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -3035,10 +3193,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[80]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[80]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -3073,10 +3233,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[81]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[81]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various,project",
@@ -3111,10 +3273,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[82]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[82]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "project",
@@ -3149,10 +3313,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[83]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[83]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "project",
@@ -3187,10 +3353,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[84]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[84]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "project",
@@ -3225,10 +3393,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[85]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[85]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -3263,10 +3433,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[86]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[86]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "album",
@@ -3301,10 +3473,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[87]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[87]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "compilation",
@@ -3339,10 +3513,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[88]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[88]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "CDR",
@@ -3377,10 +3553,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[89]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[89]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -3415,10 +3593,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[90]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[90]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "various",
@@ -3453,10 +3633,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[91]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[91]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} ,
 	{
 		"type": "single",
@@ -3491,10 +3673,12 @@
 
 		"dtrecorded": 	"",
 
-		"liner": 	"",
+		"studio": 	"",
 
-		"${albums->field[18]}": ${cleanJSONData(${literalizeCommas(albums[92]->${albums->field[18]})}, ,)}
-		"${albums->field[19]}": ${cleanJSONData(${literalizeCommas(albums[92]->${albums->field[19]})}, )}
+		"onalbum": 	"",
+
+		"liner": 	""
+
 	} 
 	]
 }

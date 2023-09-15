@@ -6,7 +6,7 @@ import ReleaseBlurb from '@/components/ReleaseBlurb';
 import FeaturedItem from '@/components/FeaturedItem';
 import DayInHistory from '@/components/DayInHistory';
 import RandomLiveVideo from '@/components/RandomLiveVideo';
-import Tributes from '@/components/Tributes';
+import { TributeText, TributeAudio } from '@/components/Tributes';
 import Memorial from '@/components/Memorial';
 
 /*
@@ -93,12 +93,18 @@ const Home = (): React.ReactNode =>
 				</SwiperSlide>
 			)}
 		</Swiper>*/}
-  <div className="flex flex-wrap">
-    <div className="text-center grow border p-3 m-2 bg-slate-100">
+  <div className="flex flex-wrap justify-center">
+		<div className="grow max-w-xl m-1">
+			<div className="border p-3 bg-slate-100">
       <Memorial />
-			<Tributes />
+			</div>
+			<p />
+			<div>
+			<TributeAudio />
     </div>
-		<div className="w-1/3 grow">
+    </div>
+		<div className="w-1/3 max-w-xl grow m-1">
+			<TributeText />
 			<HomeBooks />
 			<HomeReleases />
 		</div>

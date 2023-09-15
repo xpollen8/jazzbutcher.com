@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Credit } from '@/components/GenericWeb';
 
 const Memorial = () => {
-	return (<>
+	return (<center>
 		<div className="text-2xl">Patrick Guy Sibley Huntrods</div>
 		<div>AKA: Pat Fish - The Jazz Butcher</div>
 		<b> 1957-12-20 .. 2021-10-05</b>
@@ -14,7 +14,7 @@ const Memorial = () => {
 			</Link>
 		</center>
 		<Credit g="Jooles Joyce" />
-	</>)
+	</center>)
 }
 
 export default Memorial;

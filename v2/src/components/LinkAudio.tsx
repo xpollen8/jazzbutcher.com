@@ -1,8 +1,9 @@
 import { autoLink, linkExternal } from '@/lib/macros';
 
-const LinkAudio = ({ title, comment, wav, mp3, url, author, autolink = true, children }: {
+const LinkAudio = ({ title, comment, wav, mp3, url, artist, author, autolink = true, children }: {
 	title: string
 	comment?: string
+	artist?: string
 	mp3?: string
 	wav?: string
 	url?: string
@@ -17,17 +18,17 @@ const LinkAudio = ({ title, comment, wav, mp3, url, author, autolink = true, chi
 			{(() => {
 				if (url) {
 					return <a href={url}>{title}</a>
-				} else if (title.endsWith('.html') || title.includes(':')) {
+				} else if (title?.endsWith('.html') || title.includes(':')) {
 					return title
 				} else if (autolink) {
-					return autoLink(title)
+					return autoLink(title, autolink)
 				} else {
 					return title
 				}
 			})()}
 		</i>
 		</span>
-		{(author) && <span className="smalltext pl-3"> ({author}) </span>}
+		{(artist) && <b>{artist}</b>} {(author) && <span className="smalltext pl-3"> ({author}) </span>}
 		{(comment) && <span className="smalltext"> <i>{comment}</i> </span>}
 		{(title) && <br/>}
 		{(mp3) &&

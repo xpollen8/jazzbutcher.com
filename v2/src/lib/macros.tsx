@@ -525,13 +525,17 @@ const linkSong = ({ title, href, audio, mp3, author, pdf }: {
 	{(author) && <span className="song_author">({author})</span>}
 </span>
 
-const songLinkMapped = (title: string) => {
-	const tit = title?.replace(/ /g, '_').toLowerCase();
-	const songMapped = songMap[tit];
-	if (songMapped) {
-		return linkSong({ title, href: `/lyrics/${songMapped}` });
+const songLinkMapped = (title: string, doit: string) => {
+	if (doit) {
+		const tit = title?.replace(/ /g, '_').toLowerCase();
+		const songMapped = songMap[tit];
+		if (songMapped) {
+			return linkSong({ title, href: `/lyrics/${songMapped}` });
+		} else {
+			return linkSong({ title, href: `/gigs?f=song&q=${title}` });
+		}
 	} else {
-		return linkSong({ title, href: `/gigs?f=song&q=${title}` });
+		return title;
 	}
 }
 

@@ -11,10 +11,10 @@ const Memoriam = () =>
 <>
 	<Header section='memoriam' />
 	<div className="flex flex-wrap">
-		<div className="text-center grow border p-3 m-3 bg-slate-100">
+		<div className="text-center grow p-3 m-1 border">
 			<Memorial />
 		</div>
-		<div className="w-1/3 grow border bg-slate-50 pl-4 m-3">
+		<div className="w-1/3 grow m-1">
 			<Tributes />
 		</div>
 	</div>

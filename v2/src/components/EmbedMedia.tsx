@@ -89,6 +89,13 @@ const Performers = ({ datetime }: { datetime: string }) => {
 #	<a href="https://www.google.com/search?q=%22{encode({query})}%22" target="new">{ternary((defined(text)), {text}, {query})}</a>
 */
 
+const	EmbedVimeo = ({ data }: any) => { } // TODO
+const	EmbedArchiveOrg = ({ data }: any) => { } // TODO
+const	EmbedMixCloud = ({ data }: any) => { } // TODO
+const	EmbedYoutube = ({ data }: any) => { } // TODO
+const	EmbedAWSS3 = ({ data }: any) => { } // TODO
+const	EmbedJBC = ({ data }: any) => { } // TODO
+
 const	EmbedSoundCloud = ({ data }: any) => {
 	const { mediaurl } = data;
 	const useURL = mediaurl?.replace('https:', 'https%3A');
@@ -103,9 +110,9 @@ const	EmbedSoundCloud = ({ data }: any) => {
 }
 
 const EmbedMedia = ({ data = {}, children } : any) => {
-	const { datetime, type, setnum, ordinal, title, song, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
-	const mediaDomain = parseDomain(mediaurl);
-	const creditDomain = parseDomain(mediacrediturl);
+	const { autolink=true, datetime, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
+	// const mediaDomain = parseDomain(mediaurl);
+	// const creditDomain = parseDomain(mediacrediturl);
 	return (<>
 		{(() => {
 			if (mediaurl) {
@@ -114,13 +121,13 @@ const EmbedMedia = ({ data = {}, children } : any) => {
 				} else if (mediaurl?.includes('.mp3')) {
 					return (<blockquote className="listenItem">
 						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
-						<LinkAudio title={song || title} mp3={mediaurl} author={author} comment={comment} />
+						<LinkAudio autolink={autolink} title={song || title} mp3={mediaurl} artist={artist} author={author} comment={comment} />
 						{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} />}
 					</blockquote>)
 				} else {
 					return (<>
 						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
-						{autoLink(song || title)}
+						{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
 						{(author) && <span className="smalltext">({author})</span>}
 						{(comment) && <span className="smalltext"> ({comment}) </span>}
 						<div className="listenItem">
@@ -132,7 +139,7 @@ const EmbedMedia = ({ data = {}, children } : any) => {
 			} else {
 				return (<div>
 					{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
-					{autoLink(song || title)}
+					{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
 					{(author) && <span className="smalltext"> ({author}) </span>}
 					{(comment) && <span className="smalltext"> ({comment}) </span>}
 					{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} />}

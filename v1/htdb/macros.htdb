@@ -44,8 +44,13 @@
 #live	endif
 #live	endif
 
-#define	embedVideo(project, collection, url, anno=)
-##live	if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${${anno}})})})}", href="${url}", collection="${collection}"))
+#define	embedVideo(project=jbc, collection, url, anno=, name, comment, credit, images)
+##live	if (defined(anno))
+##live		if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${${anno}})})})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
+##live		endif
+##live	else
+##live		if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${comment})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
+##live		endif
 ##live	endif
 #live	if (substr(0, 6, ${url}) = /video)
 		<video controls preload="none" style="max-width: 100%;" poster="${url}_thumbnail.jpg" >
@@ -719,10 +724,10 @@
 	}
 </style>
 
-#define	linkAudio(project=jbc, collection, title, comment, mp3, url, author, autolink=yes)
+#define	linkAudio(project=jbc, collection, type, title, comment, mp3, url, author, autolink=yes, credit, images, datetime, parent)
 #<pre>
 #</pre>
-##live	if (sql(insert IGNORE into media set project="${project}", type="audio", name="${literalizeQuotes(${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}"))
+##live	if (sql(insert IGNORE into media set project="${project}", type="audio", subtype="${type}", name="${literalizeQuotes(${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}"))
 ##live	endif
 	<span class="audioPlayer">
 		<span class="audio_title">

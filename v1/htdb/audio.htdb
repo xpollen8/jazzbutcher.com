@@ -195,7 +195,6 @@
 #live		endif
 #live	else
 #live		if ((getval(${prefix}[${gi}]->extra) == eg) || (getval(${prefix}[${gi}]->extra) == wilson) || (getval(${prefix}[${gi}]->extra) == sumo) || (getval(${prefix}[${gi}]->extra) == interview))
-#live		endif
 #live		else
 #live			if (define(gigMatch, yes))
 #live			endif
@@ -692,7 +691,7 @@ ${define(gsExtra[${dt}], ${summary})}
 		<div class="listenItem">
 		Demo tracks from the ${linkInternal(${jbc_gigs}/1991/Jul1.html, July 1991)} ${pat}, ${richard}, and ${sumishta} collaboration.
 		<blockquote>
-		${linkAudio(project=vaguely, title=A Matter Of Time), mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_AMatterOfTime.mp3)}
+		${linkAudio(project=vaguely, title=A Matter Of Time, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_AMatterOfTime.mp3)}
 		${linkAudio(project=vaguely, title=Bombed, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Bombed.mp3)}
 		${linkAudio(project=vaguely, title=Pedby's Grace, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_PedbysGrace.mp3)}
 		${linkAudio(project=vaguely, title=Colour Waltz, mp3=${jbc_audio}/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_ColourWaltz.mp3)}

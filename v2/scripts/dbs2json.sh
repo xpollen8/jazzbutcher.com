@@ -53,6 +53,7 @@ fetch gigtexts gigtexts.json
 fetch gigmedias gigmedias.json
 fetch performances performances.json
 fetch presses presses.json
+fetch medias medias.json
 fetch feedbacks feedbacks.json
 
 htdb_fetch db_albums/data.json releases.json

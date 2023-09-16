@@ -84,9 +84,11 @@ export const parseDate = (str?: string) => {
 		}).find(f => f && f[1]);
 		if (xx) {
 			const [ orig, y, m, d, hh, mm, ss ] = xx;
-			const [ iy, im, id, ihh, imm, iss ] = [y, m, d, hh, mm, ss ].map(f => (f && parseInt(f, 10)) || 0);
+			const unknownMonth = (!parseInt(m, 10)) ? 'unknownMonth' : '';
+			const unknownDay = (!parseInt(d, 10)) ? 'unknownDay' : '';
+			const [ iy, im, id, ihh, imm, iss ] = [y, m, d, hh, mm, ss ].map(f => (f && parseInt(f, 10)) || 1);
 			if (!iy) return;
-			return [orig,iy,im,id,ihh,imm,iss];
+			return [orig,iy,im,id,ihh,imm,iss, unknownMonth, unknownDay];
 		}
 		return;
 	}
@@ -94,8 +96,8 @@ export const parseDate = (str?: string) => {
 
 export const prettyDate = (dt: string) => moment(dt).format("ddd, MMM Do YYYY");
 
-const dateDiff = (dt?: string) => {
-	const [orig, iy,im,id,ihh,imm,iss]: any = parseDate(dt) || [];
+const dateDiff = (dt?: string, sep?: string = ' - ') => {
+	const [orig, iy,im,id,ihh,imm,iss, unknownMonth, unknownDay]: any = parseDate(dt) || [];
 	if (iy) {
 		const padDate = (dt: number[]) => {
 			const [iy,im,id,ihh,imm,iss] = dt || [];
@@ -106,8 +108,8 @@ const dateDiff = (dt?: string) => {
 		//const prettyDate = moment(display).format("ddd, MMM Do YYYY");
 		const prettyAgo = moment(compare).startOf('hour').fromNow();
 		return (<>
-			{' - '}
-			<span className="date">{prettyDate(display)}</span> <span className="date">( {prettyAgo} )</span>
+			{sep}
+			<span className="date">{prettyDate(display)}</span> <span className={`date ${unknownMonth} ${unknownDay}`}>( {prettyAgo} )</span>
 		</>)
 	}
 }

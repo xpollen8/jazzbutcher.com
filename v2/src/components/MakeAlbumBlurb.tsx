@@ -1,6 +1,7 @@
 import { Credit, Contribution } from './GenericWeb';
 import FeaturedItem from './FeaturedItem';
 import { ReleaseType, ReleaseTypeWithChildren } from './Release';
+import { parseCredit } from '@/lib/macros';
 
 // TODO - make use of more of these fields!
 const MakeAlbumBlurb = ({
@@ -9,7 +10,9 @@ const MakeAlbumBlurb = ({
 	title,
 	thumb,
 	blurb,
-	year,
+	dtreleased,
+	dtrecorded,
+	studio,
 	buy,
 	project,
 	lookup,
@@ -17,13 +20,12 @@ const MakeAlbumBlurb = ({
 	catalog,
 	media,
 	country,
-	credit_g,
-	credit_u,
-	credit_d,
+	credit: blurb_credit,
 	contribution,
 	children,
 }: ReleaseTypeWithChildren, key: number | undefined) => {
 	if (!title) return <></>;
+	const { credit, crediturl, creditdate, creditcaption } = parseCredit(blurb_credit);
 	return (
 		<div key={key || 0}>
 			<FeaturedItem
@@ -39,7 +41,7 @@ const MakeAlbumBlurb = ({
 					<>
 					<Contribution titles={contribution} />
 					{(blurb) && <div dangerouslySetInnerHTML={{__html: blurb }} />}
-					<Credit g={credit_g} u={credit_u} d={credit_d} />
+					<Credit g={credit} u={crediturl} d={creditdate} />
 					{children}
 					</>
 			</FeaturedItem>

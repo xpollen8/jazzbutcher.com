@@ -18,9 +18,6 @@
 
 
 /// below-nav content
-.layout {
-}
-
 /// HOME
 .container {
 	 height: auto;
@@ -812,11 +809,10 @@ p::first-letter {
 .layout {
 	filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.02)) drop-shadow(0 5px 3px rgb(0 0 0 / 0.02));
 	background-color: rgba(0,0,0,.02);
+	margin: 1px;
 	outline: solid #aaa;
 	outline-width: 1px;
-	margin: 6px;
-	margin-top: 7px;
-	padding: 10px;
+	padding: 5px;
 }
 
 samp {

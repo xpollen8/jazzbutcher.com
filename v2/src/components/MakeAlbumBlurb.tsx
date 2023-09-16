@@ -3,7 +3,6 @@ import FeaturedItem from './FeaturedItem';
 import { ReleaseType, ReleaseTypeWithChildren } from './Release';
 import { parseCredit } from '@/lib/macros';
 
-// TODO - make use of more of these fields!
 const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined) => {
 	const { type, href, title, thumb, blurb, dtreleased, dtrecorded, studio, buy, project, lookup,
 		label, catalog, media, country, contribution, children, } = props; 

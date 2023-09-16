@@ -7,45 +7,13 @@ import * as Tabs from '@radix-ui/react-tabs';
 import './styles.css';
 import EmbedMedia from '@/components/EmbedMedia';
 
-//import { mapActs, mapPerformers } from '@/lib/defines';
+import { AutoLinkPlayer, AutoLinkAct } from '@/lib/defines';
 import { parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime } from '@/lib/macros';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import { Credit, ParsedCaption, removeHTML, RenderHTML } from '@/components/GenericWeb';
 import useGig from '@/lib/useGig';
-
-const Player = (str?: string) => {
-  if (!str?.length) return;
-	const pattern = /\[\[person:(.*?)\]\]/;
-	const match = str.match(pattern);
-	if (match) {
-		const lookup = match[1].replace("'", '');
-		return lookup?.replace(/_/g, ' ');
-		/*
-		const found = mapPerformers[lookup];
-		if (!found) return lookup;
-		return mapPerformers[lookup];
-		*/
-	}
-	return str;
-}
-
-const Act = (str?: string) => {
-  if (!str?.length) return;
-	const pattern = /\[\[act:(.*?)\]\]/;
-	const match = str.match(pattern);
-	if (match) {
-		const lookup = match[1].replace("'", '');
-		return lookup?.replace(/_/g, ' ');
-		/*
-		const found = mapAct[lookup];
-		if (!found) return lookup;
-		return mapPerformers[lookup];
-		*/
-	}
-	return str;
-}
 
 const parsePhoto = (str: string) => {
 	if (!str) return {};
@@ -159,7 +127,7 @@ const GigWit = ({ data }: any) => {
 	return (
 		<div>
 			{/*console.log("Wit", data)*/}
-			{Act(data?.performer)}
+			{AutoLinkAct(data?.performer)}
 		</div>
 	)
 }
@@ -168,7 +136,7 @@ const GigWith = (data: any) => <><Iterator data={data} func={GigWit} /></>
 const GigPlayer = ({ data }: any) => {
 	return (
 		<span style={{ whiteSpace: 'nowrap' }}>
-			{Player(data?.performer)}
+			{AutoLinkPlayer(data?.performer)}
 			{(data?.instruments?.length) && <>{' '}<span className="smalltext">({data?.instruments?.split(',').join(', ')})</span></>}
 		</span>
 	)

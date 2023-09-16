@@ -24,7 +24,7 @@ const FishySession = ({ session }: { session: any }) => {
 		<div className="bg-slate-200 p-3 w-1/2">
 				<LetterHeader title={`Fishy Mansions #${session.ordinal + 1}`} subhead={session.date} />
 				<Suspense fallback={<>Loading...</>}>
-					{songs?.filter((song: any) => !song.song.includes('Entire')).map((data: any, key: number) => <div key={key}><EmbedMedia data={data} /></div>)}
+					{songs?.filter((song: any) => !song.song.includes('Entire')).map((data: any, key: number) => <div key={key}><EmbedMedia data={data} disableVideo={true} /></div>)}
 				</Suspense>
 		</div>
 	</div>);

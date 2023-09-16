@@ -1520,6 +1520,7 @@ font.load().then(function () {
 #define	village		${linkSong(href=${jbc_lyrics}/living_in_a_village.html, title=Living In A Village)}
 #define	swell		${linkSong(href=${jbc_lyrics}/swell.html, title=Swell)}
 #define	49			${linkSong(href=${jbc_lyrics}/lot_49.html, title=Looking For Lot 49)}
+#define	_49			${linkSong(href=${jbc_lyrics}/lot_49.html, title=Looking For Lot 49)}
 #define	best		${linkSong(href=${jbc_lyrics}/best_way.html, title=The Best Way)}
 #define	chick		${linkSong(href=${jbc_lyrics}/chickentown.html, title=Chickentown)}
 #define	sue			${linkSong(title=Susie, href=${jbc_lyrics}/susie.html)}
@@ -1656,6 +1657,7 @@ font.load().then(function () {
 #	recorded covers
 #
 #define	aff				${linkSong(title=Affection, author=Jonathan Richman)}
+#define	ufo_man			${linkSong(title=The U.F.O. Man, author=Jonathan Richman)}
 #define	capt		${linkSong(title=Tugboat Captain, author=Dean Wareham)}
 #define	dance		${linkSong(title=Do You Wanna Dance, author=Bobby Freeman)}
 #define	envoy			${linkSong(title=The Chinese Envoy, author=John Cale)}
@@ -1927,7 +1929,9 @@ font.load().then(function () {
 #define	COMP	Compilation
 #define	CAS	Cassette
 #define	12	12"
+#define	_12	12"
 #define	7	7"
+#define	_7	7"
 #define	LIVE	Live
 #define	a_releasetype	<br/><b>Release Type</b>:
 #define	a_media	<br/><b>Media</b>:

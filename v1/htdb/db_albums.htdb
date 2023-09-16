@@ -586,7 +586,7 @@
 #define	albums[61]->label	Creation
 #define	albums[61]->catalog	CRELP 037
 #define	albums[61]->dtreleased	1988
-#define	albums[61]->contribution 49
+#define	albums[61]->contribution _49
 
 #define	albums[62]->type	various
 #define	albums[62]->lookup	va_pensioners90
@@ -810,7 +810,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[77]->thumb	/images/releases/va_canyoutalktothedude_1_front
 #define	albums[77]->dtreleased	1994
 #define	albums[77]->media	CD
-#define	albums[77]->contribution <i>The U.F.O. Man</i>
+#define	albums[77]->contribution ufo_man
 #define	albums[77]->blurb
 	Tribute To Jonathan Richman & The Modern Lovers Volume 2
 
@@ -825,7 +825,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[78]->thumb	/images/releases/va_canyoutalktothedude_2_front
 #define	albums[78]->dtreleased	1996
 #define	albums[78]->media	CD
-#define	albums[78]->contribution <i>The U.F.O. Man</i>
+#define	albums[78]->contribution ufo_man
 #define	albums[78]->blurb
 	Tribute To Jonathan Richman & The Modern Lovers Volume 2
 

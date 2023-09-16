@@ -82,11 +82,42 @@ const apiData = async (path: string, args?: string) => {
 		case 'gigs_with_audio':
 		case 'presses':
 		case 'medias':
-		case 'songs_by_release':
+		case 'credits_by_release':
 		case 'lyrics':
 		case 'lyric_by_href':
 		case 'songs_by_datetime':
 			return await apiDataFromDataServer(path, args);
+		case 'songs_by_release': {
+			const data = await apiDataFromDataServer(path, args);
+			const crdata = await apiDataFromDataServer('credits_by_release', args);
+			/*
+				detect distinct songs
+				and collect song:instrument credits per person
+			 */
+			const songs = [];
+			const credits = {};
+			crdata?.results.forEach((cr: any) => {
+				if (!credits[cr.performer]) credits[cr.performer] = { album_credits: cr.instruments, song_credits: {} };
+			})
+			data?.results.forEach((song: any) => {
+				if (!songs.includes(song.title)) songs.push(song.title);
+				if (song.performer) {
+					if (!credits[song.performer]) {
+						credits[song.performer] = { song_credits: {} }
+					}
+					if (!credits[song.performer].song_credits[song.title]) {
+						credits[song.performer].song_credits[song.title] = [];
+					}
+					credits[song.performer].song_credits[song.title].push(song.instruments);
+				}
+			});
+			return {
+				...data,
+				numResults: songs.length,
+				results: songs,
+				credits,
+			}
+		}
 		case 'feedback':
 			// clean up server-side
 			const data = await apiDataFromDataServer(path, args);

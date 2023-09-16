@@ -25,7 +25,7 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 				label={expand(label)}
 				buy={buy}
 				title={title}
-				image={truncAt(';;', thumb)}
+				image={truncAt(';;', thumb || '')}
 				alt={`${title} cover`}
 			>
 					<>

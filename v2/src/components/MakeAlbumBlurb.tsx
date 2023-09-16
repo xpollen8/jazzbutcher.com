@@ -4,6 +4,11 @@ import { ReleaseType, ReleaseTypeWithChildren } from './Release';
 import { parseCredit } from '@/lib/macros';
 import { expand } from '@/lib/defines';
 
+const truncAt = (chop: string, str: string) => {
+	const [ ret ] = str?.split(chop);
+	return ret || str;
+}
+
 const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined) => {
 	const { type, href, title, thumb, blurb, dtreleased, dtrecorded, studio, buy, project, lookup,
 		label, catalog, media, country, contribution, children, } = props; 
@@ -20,7 +25,7 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 				label={expand(label)}
 				buy={buy}
 				title={title}
-				image={thumb}
+				image={truncAt(';;', thumb)}
 				alt={`${title} cover`}
 			>
 					<>

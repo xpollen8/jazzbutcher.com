@@ -417,9 +417,11 @@ export const stat = linkSong({ href: "/lyrics/angel_station.html", title: "Angel
 export const drainglass = linkAlbum({ href: "/releases/drainglass.html", title: "Draining The Glass 1982 - 86" });
 export const best_kisser = linkAlbum({ title: "The Best Kisser In The World" });
 export const glorious = linkAlbum({ href: "/releases/glorious.html", title: "Glorious And Idiotic" });
-export const glass = <b>Glass Records</b>;
-export const creat = <b>Creation Records</b>;
-export const fire_records = <b>Fire Records</b>;
+export const glass = <b className="record_label">Glass Records</b>;
+export const glass_records = glass;
+export const creat = <b className="record_label">Creation Records</b>;
+export const creation_records = creat;
+export const fire_records = <b className="record_label">Fire Records</b>;
 //
 //	Sumosonic
 //

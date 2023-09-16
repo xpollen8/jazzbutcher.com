@@ -58,7 +58,7 @@ const ReleaseSongList = ({ songs }: { songs: any[] }) => {
 	</>)
 }
 
-const ReleaseCredits = ({ credits }: { credits: Object }) => {
+const ReleaseCredits = ({ credits }: { credits: {[key: string]: any} }) => {
 	const creds = Object.keys(credits); 
 	if (!creds?.length) return;
 	return (<>
@@ -125,11 +125,8 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		<Tag>Details</Tag>
 		<blockquote>
 			{Object.keys(labels).map((label: string, key: number) => {
-				if (release[label]) {
-					return <div key={key}>
-						{labels[label]}: {release[label]}
-					</div>
-				}
+				// @ts-ignore
+				if (release[label]) { return <div key={key}> {labels[label]}: {release[label]} </div> }
 			})}
 		</blockquote>
 	</div>)

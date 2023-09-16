@@ -109,14 +109,14 @@ const	EmbedSoundCloud = ({ data }: any) => {
 		</iframe>
 }
 
-const EmbedMedia = ({ data = {}, children } : any) => {
+const EmbedMedia = ({ data = {}, children, disableVideo=false } : any) => {
 	const { autolink=true, parent, datetime, venue, city, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);
 	const useMediaurl = (mediaurl && mediaurl.startsWith('/')) ? `https://jazzbutcher.com${mediaurl}` : mediaurl;
 	return (<>
 		{(() => {
-			if (useMediaurl) {
+			if (useMediaurl && !disableVideo) {
 				if (useMediaurl?.includes('soundcloud.com')) {
 					return <EmbedSoundCloud data={data} />
 				} else if (useMediaurl?.includes('.mp3')) {
@@ -143,7 +143,7 @@ const EmbedMedia = ({ data = {}, children } : any) => {
 					{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
 					{(author) && <span className="smalltext"> ({author}) </span>}
 					{(comment) && <span className="smalltext"> ({comment}) </span>}
-					{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
+					{/*(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>*/}
 				</div>);
 			}
 		})()}

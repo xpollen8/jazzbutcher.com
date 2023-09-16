@@ -4,6 +4,7 @@ import { Suspense } from 'react';
 
 import Tag from '@/components/Tag';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
+import MakeReleasePress from '@/components/MakeReleasePress';
 import useRelease from '@/lib/useRelease';
 import { AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
 
@@ -89,9 +90,7 @@ const ReleaseLiner = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.liner) {
 		return (<>
 			<Tag>Liner Notes</Tag>
-			<blockquote>
-				{release?.liner}
-			</blockquote>
+			<blockquote dangerouslySetInnerHTML={{ __html: release?.liner }} />
 		</>)
 	}
 }
@@ -100,9 +99,7 @@ const ReleaseThanks = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.thanks) {
 		return (<>
 			<Tag>Thanks</Tag>
-			<blockquote>
-				{release?.thanks}
-			</blockquote>
+			<blockquote dangerouslySetInnerHTML={{ __html: release?.thanks }} />
 		</>)
 	}
 }
@@ -146,6 +143,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 				<ReleaseCredits credits={credits} />
 				<ReleaseLiner release={release} />
 				<ReleaseThanks release={release} />
+				<MakeReleasePress lookup={lookup} />
 			</>)}
 		</Suspense>
 	</>)

@@ -13,9 +13,9 @@ const Releases = async () => {
 		<Header section="releases" />
 		{(() => {
 			let year = 999;
-			return releases?.albums?.sort((a: ReleaseType, b: ReleaseType) => moment.utc(b.year).diff(moment.utc(a.year)))
+			return releases?.albums?.sort((a: ReleaseType, b: ReleaseType) => moment.utc(b.dtreleased).diff(moment.utc(a.dtreleased)))
 				.map((item: any, key: number) => {
-					const yr = parseYear(item.year);
+					const yr = parseYear(item.dtreleased);
 					let tag = <></>;
 					if (yr !== year) {
 						tag = <Tag>{yr}</Tag>

@@ -29,7 +29,7 @@ export type ReleaseType =  {
 
 export type ReleaseTypeWithChildren = ReleaseType & { children?: string | React.ReactElement }
 
-const PerformanceCredits = ({ who, album_credits, song_credits }: { who: string, album_credits?: string, song_credits?: any[] }) => {
+const PerformanceCredits = ({ who, album_credits, song_credits }: { who: string, album_credits?: any, song_credits?: any }) => {
 	const hasAlbumCredits = (Object.keys(album_credits)?.length > 0);
 	const hasSongCredits = (Object.keys(song_credits)?.length > 0);
 	return (<>
@@ -48,9 +48,9 @@ const PerformanceCredits = ({ who, album_credits, song_credits }: { who: string,
 
 const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number) => {
 	const lookup = release?.lookup ?? '';
-	const { data={}, isLoading, error } = useRelease(lookup);
+	const { data, isLoading, error } = useRelease(lookup);
 	const { results, credits } = data;
-	const songs = results;
+	const songs: any[] = results;
 	return (<>
 		<div key={key}><MakeAlbumBlurb {...release} /></div>
 		<Suspense fallback=<>Loading...</>>
@@ -60,7 +60,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 				</blockquote>
 				<hr />
 				{Object.keys(credits)?.map((who: any, key: number) => {
-					const { album_credits={}, song_credits=[] } = credits[who];
+					const { album_credits={}, song_credits={} } = credits[who];
 					return (<div key={key}>
 						<PerformanceCredits who={who} album_credits={album_credits} song_credits={song_credits} />
 					</div>)

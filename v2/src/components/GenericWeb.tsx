@@ -94,6 +94,7 @@ export const Contribution = ({ titles }: {
 	} 
 	return tunes.map((t: string, key: number) => {
 		const title = t.trim();
+		// @ts-ignore
 		const value = defines[title];
 		return <div key={key}>{genericWeb({ x: value, t: "Contribution", s: "credit" })}</div>;
 	});

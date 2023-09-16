@@ -94,8 +94,8 @@ const apiData = async (path: string, args?: string) => {
 				detect distinct songs
 				and collect song:instrument credits per person
 			 */
-			const songs = [];
-			const credits = {};
+			const songs: any[] = [];
+			const credits: any = {};
 			crdata?.results.forEach((cr: any) => {
 				if (!credits[cr.performer]) credits[cr.performer] = { album_credits: cr.instruments, song_credits: {} };
 			})

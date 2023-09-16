@@ -549,8 +549,8 @@ export const censorEmail = (str: string) => {
 export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<br/>').replace(/\\,/g, ',');
 
 
-export const parseCredit = (cr: string) => {
-	const [ credit, crediturl, creditdate, creditcaption ] = cr?.split(';;') || '';
+export const parseCredit = (cr: string = '') => {
+	const [ credit, crediturl, creditdate, creditcaption ] = cr.split(';;');
 	return {
 		credit,
 		crediturl,

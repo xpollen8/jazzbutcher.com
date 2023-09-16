@@ -8339,7 +8339,7 @@ ${49} (Live KCRW Session 1989)
 	${a_cat} Alien 1
 	${det_end}
 	${tun_beg}
-	Four One And Only's - <i>The U.F.O. Man</i>
+	Four One And Only's - ${ufo_man}
 	${tun_end}
 	${players_beg}
 
@@ -8364,7 +8364,7 @@ ${49} (Live KCRW Session 1989)
 	${a_cat} Alien 1
 	${det_end}
 	${tun_beg}
-	Four One And Only's - <i>The U.F.O. Man</i>
+	Four One And Only's - ${ufo_man}
 	${tun_end}
 	${players_beg}
 

@@ -102,6 +102,8 @@ export const kizzy = linkPerson({ href: "/conspirators/kizzy_ocallaghan.html", n
 export const larry = linkPerson({ href: "/conspirators/laurence_okeefe.html", name: "Laurence O'Keefe" });
 export const lb = linkPerson({ href: "/conspirators/david_barker.html", name: "Lionel Brando" });
 export const lix = linkPerson({ href: "/conspirators/alex_lee.html", name: "Alex Lee" });
+export const martin_k_daley = "Martin K Daley";
+export const mark_hadley = linkPerson({ href: "/conspirators/marc_hadley.html", name: "Mark Hadley" });
 export const ll = linkPerson({ href: "/conspirators/marc_hadley.html", name: "Louis Leroi" });
 export const lohan = linkSearch({ name: "Richard Lohan" });
 export const mark_refoy = linkPerson({ href: "/conspirators/mark_refoy.html", name: "Mark Refoy" });
@@ -111,6 +113,7 @@ export const mercer = linkExternal('https://www.mickmercer.com', 'Mick Mercer');
 export const mick = linkSearch({ name: "Mick Packwood" });
 export const mike_novakovic = linkSearch({ name: "Mike Novakovic" });
 export const mitch = linkPerson({ href: "/conspirators/mitch_jenkins.html", name: "Mitch Jenkins" });
+export const emerson_hunt = linkPerson({ href: "/conspirators/emerson_hunt.html", name: "Emerson Hunt" });
 export const morgan = linkPerson({ href: "/conspirators/dave_morgan.html", name: "Dave Morgan" });
 export const nick = linkPerson({ href: "/conspirators/nick_burson.html", name: "Nick Burson" });
 export const owen = linkPerson({ href: "/conspirators/owen_jones.html", name: "Owen Jones" });
@@ -476,6 +479,7 @@ export const va_andy_2007 = linkSingle({ title: "VA: Uncle Andy's 2007 Christmas
 //	recorded covers
 //
 export const aff = linkSong({ title: "Affection", author: "Jonathan Richman" });
+export const ufe_man = linkSong({ title: "The U.F.O. Man", author: "Jonathan Richman" });
 export const capt = linkSong({ title: "Tugboat Captain", author: "Dean Wareham" });
 export const dance = linkSong({ title: "Do You Wanna Dance", author: "Bobby Freeman" });
 export const envoy = linkSong({ title: "The Chinese Envoy", author: "John Cale" });
@@ -527,7 +531,7 @@ export const Just_One_Victory = linkSong({ title: "Just One Victory", author: "T
 //
 //	unreleased tracks
 //
-//export const wildlife = linkSong({ title: "Wildlife", href: "/lyrics/wildlife.html" });
+export const wildlife = linkSong({ title: "Wildlife", href: "/lyrics/wildlife.html" });
 //
 //	albums
 //
@@ -790,11 +794,51 @@ export const mapPerformers = {
 	'Steve_New': 'stevenew',
 	'Steve_Valentine': 'steve',
 	'Sumishta_Brahm': 'sumishta',
-	'Tim_Harrie': 'tim_harries',
+	'Tim_Harries': 'tim_harries',
 	'Headstone': 'sumo_pat',
 	'Wilson_Headstone': 'pat_headstone',
 	'Wolfgang_Tschegg': 'wolfi',
 	'Max_Read': 'max_read',
 	'Anita_Allbright': 'anita_allbright',
 	'Mark_Refoy': 'mark_refoy',
+	'Mitch_Jenkins': 'mitch',
+	'Emerson_Hunt': 'emerson_hunt',
+	'Martin_K_Daley': 'martin_k_daley',
 };
+
+export const AutoLinkSong = (str?: string) => {
+  if (!str?.length) return;
+	return str;
+	/* NEED A 'mapSongs' structure
+	const lookup = str.replace("'", '').replace('.', '');
+	const found = mapSOngs[lookup];
+	if (!found) return lookup?.replace(/_/g, ' ');
+	return eval(found);
+	*/
+}
+
+export const AutoLinkPlayer = (str?: string) => {
+  if (!str?.length) return;
+	const pattern = /\[\[person:(.*?)\]\]/;
+	const match = str.match(pattern);
+	if (match) {
+		const lookup = match[1].replace("'", '').replace('.', '');
+		const found = mapPerformers[lookup];
+		if (!found) return lookup?.replace(/_/g, ' ');
+		return eval(found);
+	}
+	return str;
+}
+
+export const AutoLinkAct = (str?: string) => {
+  if (!str?.length) return;
+	const pattern = /\[\[act:(.*?)\]\]/;
+	const match = str.match(pattern);
+	if (match) {
+		const lookup = match[1].replace("'", '').replace('.', '');
+		const found = mapAct[lookup];
+		if (!found) return lookup?.replace(/_/g, ' ');
+		return eval(found);
+	}
+	return str;
+}

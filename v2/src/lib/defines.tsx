@@ -846,9 +846,11 @@ export const AutoLinkAct = (str?: string) => {
 }
 
 export const expand = (str?: string) => {
-	try {
-		return eval(str);
-	} catch (e) {
+	if (str) {
+		try {
+			return eval(str);
+		} catch (e) {
+		}
 	}
 	return str;
 }

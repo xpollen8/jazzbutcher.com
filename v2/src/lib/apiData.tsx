@@ -83,6 +83,7 @@ const apiData = async (path: string, args?: string) => {
 		case 'presses':
 		case 'medias':
 		case 'credits_by_release':
+		case 'presses_by_release':
 		case 'lyrics':
 		case 'lyric_by_href':
 		case 'songs_by_datetime':
@@ -97,7 +98,13 @@ const apiData = async (path: string, args?: string) => {
 			const songs: any[] = [];
 			const credits: any = {};
 			crdata?.results.forEach((cr: any) => {
-				if (!credits[cr.performer]) credits[cr.performer] = { album_credits: cr.instruments, song_credits: {} };
+				if (!credits[cr.performer]) {
+					credits[cr.performer] = { album_credits: cr.instruments, song_credits: {} };
+				} else {
+					// multiple rows of album-wide credits for this person.
+					// concatentate the strings
+					credits[cr.performer].album_credits += ', ' + cr.instruments;
+				}
 			})
 			data?.results.forEach((song: any) => {
 				if (!songs.includes(song.title)) songs.push(song.title);

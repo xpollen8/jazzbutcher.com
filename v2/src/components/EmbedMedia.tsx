@@ -123,7 +123,7 @@ const EmbedMedia = ({ data = {}, children } : any) => {
 					return (<blockquote className="listenItem">
 						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 						<LinkAudio parent={parent} autolink={autolink} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} />
-						{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} />}
+						{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 					</blockquote>)
 				} else {
 					return (<>
@@ -133,7 +133,7 @@ const EmbedMedia = ({ data = {}, children } : any) => {
 						{(comment) && <span className="smalltext"> ({comment}) </span>}
 						<div className="listenItem">
 							<EmbedVideo data={data} />
-							{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} />}
+							{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 						</div>
 					</>);
 				}
@@ -143,7 +143,7 @@ const EmbedMedia = ({ data = {}, children } : any) => {
 					{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
 					{(author) && <span className="smalltext"> ({author}) </span>}
 					{(comment) && <span className="smalltext"> ({comment}) </span>}
-					{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} />}
+					{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 				</div>);
 			}
 		})()}

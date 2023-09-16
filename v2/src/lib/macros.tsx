@@ -96,7 +96,7 @@ export const parseDate = (str?: string) => {
 
 export const prettyDate = (dt: string) => moment(dt).format("ddd, MMM Do YYYY");
 
-const dateDiff = (dt?: string, sep?: string = ' - ') => {
+const dateDiff = (dt?: string, sep: string = ' - ') => {
 	const [orig, iy,im,id,ihh,imm,iss, unknownMonth, unknownDay]: any = parseDate(dt) || [];
 	if (iy) {
 		const padDate = (dt: number[]) => {

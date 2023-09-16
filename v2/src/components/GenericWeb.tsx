@@ -1,4 +1,5 @@
 import { dateDiff, parseDate, parseDomain, linkInternal, linkExternal } from '@/lib/macros';
+import * as defines from '@/lib/defines';
 
 const	genericWeb = ({ x, g, u, t, s, d }: {
 	x?: string
@@ -10,7 +11,7 @@ const	genericWeb = ({ x, g, u, t, s, d }: {
 }) => (
 	(x || g || u || parseDate(d)) && <span className={s}>
 		{(t) && <><b>{t}</b>:{' '}</>}
-		{(x) && <>x</>}
+		{(x) && <>{x}</>}
 		{(() => {
 			if (g?.startsWith('http')) {
 				if (u) {
@@ -76,15 +77,27 @@ export const Credit = ({ g, u, d }: {
 }) => genericWeb({ g, u, t: "Credit", s: "credit", d })
 
 // no title
-export const Attribution = ({ g, u, d }: {
+export const Attribution = ({ x, g, u, d }: {
+	x?: string
 	g?: string
 	u?: string
 	d?: string
-}) => genericWeb({ g, u, s: "credit", d })
+}) => genericWeb({ x, g, u, s: "credit", d })
 
 export const Contribution = ({ titles }: {
 	titles?: string
-}) => (titles) && genericWeb({ g: titles, t: "Contribution", s: "credit" })
+}) => {
+	if (!titles) return;
+	let tunes = [ titles ];
+	if (titles.includes('[')) {
+		tunes = titles.replace('[', '').replace(']', '').trim().split(',');
+	} 
+	return tunes.map((t: string, key: number) => {
+		const title = t.trim();
+		const value = defines[title];
+		return <div key={key}>{genericWeb({ x: value, t: "Contribution", s: "credit" })}</div>;
+	});
+}
 
 export const removeHTML = (str?: string) => {
 	const deParagraphed = str

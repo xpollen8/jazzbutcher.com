@@ -4,7 +4,7 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { Credit } from '@/components/GenericWeb';
+import { Source } from '@/components/GenericWeb';
 import Tag from '@/components/Tag';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import MakeReleasePress from '@/components/MakeReleasePress';
@@ -31,6 +31,8 @@ export type ReleaseType =  {
 	media?: string
 	country?: string
 	credit?: string
+	patsez?: string
+	notes?: string
 	contribution?: string
 }
 
@@ -99,6 +101,19 @@ const ReleaseLiner = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	}
 }
 
+const ReleasePatSez = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	if (release?.patsez) {
+		const [ patsez, source, sourceurl, sourcedate ] = release?.patsez.split(';;');
+		return (<>
+			<Tag>Pat Says</Tag>
+			<blockquote>
+				<div dangerouslySetInnerHTML={{ __html: patsez }} />
+				{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
+			</blockquote>
+		</>)
+	}
+}
+
 const ReleaseThanks = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.thanks) {
 		return (<>
@@ -112,8 +127,8 @@ const parseReleaseImages = (str?: string) => {
 	if (!str) return;
 	const chunks = str.split('$$');
 	const images = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
-		const [ image, caption, credit, crediturl, creditdate ] = ch.split(';;');
-		return { image, caption, credit, crediturl, creditdate };
+		const [ image, caption, source, sourceurl, sourcedate ] = ch.split(';;');
+		return { image, caption, source, sourceurl, sourcedate };
 	});
 	return images;
 }
@@ -121,23 +136,26 @@ const parseReleaseImages = (str?: string) => {
 const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.images) {
 		const images = parseReleaseImages(`${release?.thumb}$$${release?.images}`);
-		return (<>
-			<Tag>Images</Tag>
-			<blockquote className="flex flex-wrap flex-grow border bg-slate-50 justify-center">
-			{images.map(({ image, caption, credit, crediturl, creditdate }: any, key: number) =>
-				<Link key={key} href={`https://jazzbutcher.com${image}.jpg`}>
-					<div className="m-2" style={{ maxWidth: '250px' }}>
-						<Image
-							alt={caption | 'album image'}
-							width={250} height={250}
-							src={`https://jazzbutcher.com${image}_250.jpg`}
-						/>
-						{(credit) && <Credit g={credit} u={crediturl} d={creditdate} />}
-					</div>
-				</Link>
-			)}
-			</blockquote>
-		</>)
+		if (images?.length) {
+			return (<>
+				<Tag>Images</Tag>
+				<blockquote className="flex flex-wrap flex-grow border bg-slate-50 justify-center">
+				{images?.map(({ image, caption, source, sourceurl, sourcedate }: any, key: number) =>
+					<Link key={key} href={`https://jazzbutcher.com${image}.jpg`}>
+						<div className="m-2" style={{ maxWidth: '250px' }}>
+							<Image
+								alt={caption || 'album image'}
+								width={250} height={250}
+								src={`https://jazzbutcher.com${image}_250.jpg`}
+							/>
+							{(caption) && <><i>{caption}</i><br/></>}
+							{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
+						</div>
+					</Link>
+				)}
+				</blockquote>
+			</>)
+		}
 	}
 }
 
@@ -153,6 +171,7 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		country: "Country",
 		dtrecorded: "Recorded",
 		studio: "Studio",
+		notes: "Notes",
 	};
 
 	return (<div className={`gig_${release?.project}`}>
@@ -181,6 +200,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 				<ReleaseCredits credits={credits} />
 				<ReleaseLiner release={release} />
 				<ReleaseThanks release={release} />
+				<ReleasePatSez release={release} />
 				<MakeReleasePress lookup={lookup} />
 			</>)}
 		</Suspense>

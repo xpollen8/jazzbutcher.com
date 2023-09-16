@@ -179,7 +179,7 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		<blockquote>
 			{Object.keys(labels).map((label: string, key: number) => {
 				// @ts-ignore
-				if (release[label]) { return <div key={key}> {labels[label]}: {expand(release[label])} </div> }
+				if (release[label]) { return <div key={key}> {labels[label]}: {expand(release[label], true)} </div> }
 			})}
 		</blockquote>
 	</div>)

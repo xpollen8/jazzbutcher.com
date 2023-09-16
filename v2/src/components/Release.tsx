@@ -1,7 +1,10 @@
 "use client"
 
 import { Suspense } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
+import { Credit } from '@/components/GenericWeb';
 import Tag from '@/components/Tag';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import MakeReleasePress from '@/components/MakeReleasePress';
@@ -13,6 +16,7 @@ export type ReleaseType =  {
 	href?: string
 	title?: string
 	thumb?: string
+	images?: string
 	blurb?: string
 	dtreleased?: string
 	dtrecorded?: string
@@ -104,6 +108,39 @@ const ReleaseThanks = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	}
 }
 
+const parseReleaseImages = (str?: string) => {
+	if (!str) return;
+	const chunks = str.split('$$');
+	const images = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
+		const [ image, caption, credit, crediturl, creditdate ] = ch.split(';;');
+		return { image, caption, credit, crediturl, creditdate };
+	});
+	return images;
+}
+
+const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	if (release?.images) {
+		const images = parseReleaseImages(`${release?.thumb}$$${release?.images}`);
+		return (<>
+			<Tag>Images</Tag>
+			<blockquote className="flex flex-wrap flex-grow border bg-slate-50 justify-center">
+			{images.map(({ image, caption, credit, crediturl, creditdate }: any, key: number) =>
+				<Link key={key} href={`https://jazzbutcher.com${image}.jpg`}>
+					<div className="m-2" style={{ maxWidth: '250px' }}>
+						<Image
+							alt={caption | 'album image'}
+							width={250} height={250}
+							src={`https://jazzbutcher.com${image}_250.jpg`}
+						/>
+						{(credit) && <Credit g={credit} u={crediturl} d={creditdate} />}
+					</div>
+				</Link>
+			)}
+			</blockquote>
+		</>)
+	}
+}
+
 const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 
 	const labels = {
@@ -139,6 +176,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading) && (<>
 				<ReleaseDetails release={release} />
+				<ReleaseImages release={release} />
 				{(release?.contribution) ? <ReleaseContribution release={release} /> : <ReleaseSongList songs={songs} />}
 				<ReleaseCredits credits={credits} />
 				<ReleaseLiner release={release} />

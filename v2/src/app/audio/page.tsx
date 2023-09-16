@@ -12,10 +12,10 @@ const AudioSection = ({ title, project, data }: any) => {
 	return (<div className={`gig_${project}`}>
 		<h1>{title}</h1>
 		{data?.map((d: any, key: number) => {
-			const { credit=d.mediacredit, crediturl=d.mediacrediturl, creditdate, creditcaption } = parseCredit(d.credit);
+			const { credit=d.mediacredit, crediturl=d.mediacrediturl, creditdate, creditcaption } = parseCredit(d?.credit || '');
 			//if (d.credit) console.log("CR", { cr: d.credit, credit, crediturl, creditdate, creditcaption });
 			//if (title === 'Live Shows') console.log("DATA", d);
-			if (title === 'Live Shows' && !d.mediaurl) console.log("DATA", d);
+			//if (title === 'Live Shows' && !d.mediaurl) console.log("DATA", d);
 			return <EmbedMedia key={key}
 				data={{
 					datetime: d.datetime,

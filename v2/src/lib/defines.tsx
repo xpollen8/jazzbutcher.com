@@ -845,12 +845,28 @@ export const AutoLinkAct = (str?: string) => {
 	return str;
 }
 
-export const expand = (str?: string) => {
-	if (str) {
-		try {
-			return eval(str);
-		} catch (e) {
+export const expand = (str?: string, treatAsHTML: boolean = false) => {
+	const doIt = (str?: string) => {
+		let expanded = true;
+		const tryExpand = (str?: string) => {
+			if (str) {
+				try {
+					return eval(str);
+				} catch (e) {
+					expanded = false;
+				}
+			}
+			return str;
+		}
+		const expansion = tryExpand(str);
+
+		if (treatAsHTML) {
+			// if expansion worked, then just return the expansion.
+			// otherwise, assume we're passing back something that's already HTML
+			return (expanded) ? expansion : <span dangerouslySetInnerHTML={{ __html: expansion }} />;
+		} else {
+			return (expanded) ? expansion : str;
 		}
 	}
-	return str;
+	return doIt(str);
 }

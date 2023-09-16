@@ -808,10 +808,14 @@ export const mapPerformers: {[key: string]: string} = {
 
 export const AutoLinkSong = (str?: string) => {
   if (!str?.length) return;
-	return str;
+	try {
+		return eval(str) || str;
+	} catch (e) {
+		return str;
+	}
 	/* NEED A 'mapSongs' structure
 	const lookup = str.replace("'", '').replace('.', '');
-	const found = mapSOngs[lookup];
+	const found = mapSongs[lookup];
 	if (!found) return lookup?.replace(/_/g, ' ');
 	return eval(found);
 	*/
@@ -827,7 +831,7 @@ export const AutoLinkPlayer = (str?: string) => {
 		if (!found) return lookup?.replace(/_/g, ' ');
 		return eval(found);
 	}
-	return str;
+	return AutoLinkAct(str);	// maybe it is an Act?
 }
 
 export const AutoLinkAct = (str?: string) => {

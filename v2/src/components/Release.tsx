@@ -49,7 +49,7 @@ const PerformanceCredits = ({ who, album_credits, song_credits }: { who: string,
 const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number) => {
 	const lookup = release?.lookup ?? '';
 	const { data, isLoading, error } = useRelease(lookup);
-	const { results, credits } = data;
+	const { results, credits } = data || {};
 	const songs: any[] = results;
 	return (<>
 		<div key={key}><MakeAlbumBlurb {...release} /></div>

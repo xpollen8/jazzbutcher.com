@@ -815,6 +815,10 @@ p::first-letter {
 	padding: 5px;
 }
 
+.record_label {
+	font-size: 1.05em;
+}
+
 samp {
 	font-size: 0.75em;
 }
@@ -860,6 +864,20 @@ samp {
 .gig_project {
 	background: #000;
 color: white;
+}
+
+.unknownMonth:after {
+	margin-left: 3px;
+	padding: 2px;
+	background: pink;
+	content: 'exact month unknown';
+}
+
+.unknownDay:after {
+	margin-left: 3px;
+	padding: 2px;
+	background: pink;
+	content: 'exact day unknown';
 }
 
 .comment {

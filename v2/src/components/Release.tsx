@@ -6,7 +6,7 @@ import Tag from '@/components/Tag';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import MakeReleasePress from '@/components/MakeReleasePress';
 import useRelease from '@/lib/useRelease';
-import { AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
+import { expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
 
 export type ReleaseType =  {
 	type?: string
@@ -123,7 +123,7 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		<blockquote>
 			{Object.keys(labels).map((label: string, key: number) => {
 				// @ts-ignore
-				if (release[label]) { return <div key={key}> {labels[label]}: {release[label]} </div> }
+				if (release[label]) { return <div key={key}> {labels[label]}: {expand(release[label])} </div> }
 			})}
 		</blockquote>
 	</div>)

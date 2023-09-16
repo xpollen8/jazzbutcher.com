@@ -810,11 +810,7 @@ export const mapPerformers: {[key: string]: string} = {
 
 export const AutoLinkSong = (str?: string) => {
   if (!str?.length) return;
-	try {
-		return eval(str) || str;
-	} catch (e) {
-		return str;
-	}
+	return expand(str);
 	/* NEED A 'mapSongs' structure
 	const lookup = str.replace("'", '').replace('.', '');
 	const found = mapSongs[lookup];
@@ -831,7 +827,7 @@ export const AutoLinkPlayer = (str?: string) => {
 		const lookup = match[1].replace("'", '').replace('.', '');
 		const found = mapPerformers[lookup];
 		if (!found) return lookup?.replace(/_/g, ' ');
-		return eval(found);
+		return expand(found);
 	}
 	return AutoLinkAct(str);	// maybe it is an Act?
 }
@@ -844,7 +840,15 @@ export const AutoLinkAct = (str?: string) => {
 		const lookup = match[1].replace("'", '').replace('.', '');
 		const found = mapActs[lookup];
 		if (!found) return lookup?.replace(/_/g, ' ');
-		return eval(found);
+		return expand(found);
+	}
+	return str;
+}
+
+export const expand = (str?: string) => {
+	try {
+		return eval(str);
+	} catch (e) {
 	}
 	return str;
 }

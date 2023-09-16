@@ -2,12 +2,15 @@ import { Credit, Contribution } from './GenericWeb';
 import FeaturedItem from './FeaturedItem';
 import { ReleaseType, ReleaseTypeWithChildren } from './Release';
 import { parseCredit } from '@/lib/macros';
+import * as defines from '@/lib/defines';
 
 const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined) => {
 	const { type, href, title, thumb, blurb, dtreleased, dtrecorded, studio, buy, project, lookup,
 		label, catalog, media, country, contribution, children, } = props; 
 	const blurb_credit = props?.credit;
 
+	// @ts-ignore
+	const useLabel = (defines[label]) ? defines[label] : label;
 	if (!title) return <></>;
 	const { credit, crediturl, creditdate, creditcaption } = parseCredit(blurb_credit);
 	return (
@@ -16,7 +19,7 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 				className={`w-full gig_${project}`}
 				link={href}
 				media={media}
-				label={label}
+				label={useLabel}
 				buy={buy}
 				title={title}
 				image={thumb}

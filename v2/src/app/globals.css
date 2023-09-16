@@ -76,7 +76,7 @@
 }
 .audioPlayer {
 	display: inline-block;
-	width: 100%;
+	width: 96%;
 }
 .audio_player {
 	padding-left: 10px;
@@ -413,6 +413,9 @@ blockquote {
 	background-color: rgba(250,250,250,0.8);
 	padding: 5px;
 	margin-bottom: 3px;
+}
+.listenItemOrdinal {
+	display: inline-block;
 }
 .listenItem b {
 	color: #000;
@@ -879,88 +882,4 @@ color: white;
 }
 .comment #comments {
 	font-style: italics;
-}
-
-.menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  white-space: nowrap;
-}
-
-.menu .menu-item::before {
-  content: '';
-  position: absolute;
-  left: -20px;
-  top: 50%;
-  margin-top: -6px;
-  width: 1px;
-  height: 12px;
-  background-color: #424242;
-}
-
-.menu .menu-item {
-  display: inline-block;
-  margin: 0 20px 0 20px;
-}
-
-.menu .menu-item .menu-link {
-  display: block;
-  margin: 0 20px;
-  line-height: 40px;
-  color: #b0b0b0;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration :none;
-  -webkit-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
-}
-
-.menu .menu-item .menu-link:hover { 
-  color: #ff6700;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  padding: 7px 0;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  z-index: 999;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: opacity .5s ease;
-  transition: opacity .5s ease;
-  height: 10;
-  opacity: 0;
-}
-
-.dropdown-menu .dropdown-item .dropdown-link {
-  line-height: 30px
-}
-
-.dropdown-menu .dropdown-item:last-child .dropdown-link {
-  margin-bottom: 10px;
-}
-
-.dropdown:hover {
-  background: #fff;
-}
-
-.dropdown:hover .menu-link {
-  color: #ff6700;
-}
-
-.dropdown:hover > .dropdown-menu {
-  display: block;
-  opacity: 1;
-  padding: 7px 0;
-  -webkit-box-shadow: 0 3px 4px rgba(0,0,0,.18);
-  box-shadow: 0 3px 4px rgba(0,0,0,.18);
 }

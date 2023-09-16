@@ -6,24 +6,20 @@ import { linkExternal, linkInternal } from '@/lib/macros';
 
 const Help = () => <>
 	<Header section='help' />
-	<div className="listItem">
 	<Tag>
 	Conspire with us!
 	</Tag>
+	<div className="listItem">
 	<blockquote>
-	<p>
 	The JBC archives are actively seeking assistance to document the band&apos;s history.
-	</p>
-	<p>
+	<p />
 	We have long trawled the underbelly of the Internet looking for JBC memorabilia: gig posters,
 	ticket stubs, setlists, photos from concerts, bootlegs, gig reviews, etc.
 	We know there must be more such material &quot;out there&quot;, hidden away in attics, or
 	already housed on hard drives.
-	</p>
-	<p>
+	<p />
 	Share with us what you have! You&apos;ll receive proper credit and your contribution
 	will live on in infamy.
-	</p>
 	</blockquote>
 	<b>Contact us here:</b>
 	<blockquote>

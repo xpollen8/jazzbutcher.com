@@ -345,7 +345,7 @@ textplus1 {
 .tag, .tagClickable {
 	color: #222;
 	background-color: #BCF1AF;
-	margin-top: 3px;
+	margin: 1px;
 	padding: 3px;
 	padding-left: 10px;
 	border: 1px solid #999;
@@ -366,7 +366,7 @@ textplus1 {
 .listItem, .album_press {
 	border: 1px solid #ccc;
 	border-radius: 3px;
-	margin-bottom: 10px;
+	margin: 5px 0px 5px 0px;
 	color: #444;
 	padding: 5px;
 	background-color: rgba(250,250,250,0.6);
@@ -721,8 +721,7 @@ p::first-letter {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin: 10px;
-	margin: 7px 2px 7px 2px;
+	margin: 6px 0px 7px 0px;
 	padding: 5px;
 	background-color: rgba(175,241,228,0.5);
 }
@@ -880,4 +879,88 @@ color: white;
 }
 .comment #comments {
 	font-style: italics;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.menu .menu-item::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -6px;
+  width: 1px;
+  height: 12px;
+  background-color: #424242;
+}
+
+.menu .menu-item {
+  display: inline-block;
+  margin: 0 20px 0 20px;
+}
+
+.menu .menu-item .menu-link {
+  display: block;
+  margin: 0 20px;
+  line-height: 40px;
+  color: #b0b0b0;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration :none;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.menu .menu-item .menu-link:hover { 
+  color: #ff6700;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 7px 0;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 999;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  height: 10;
+  opacity: 0;
+}
+
+.dropdown-menu .dropdown-item .dropdown-link {
+  line-height: 30px
+}
+
+.dropdown-menu .dropdown-item:last-child .dropdown-link {
+  margin-bottom: 10px;
+}
+
+.dropdown:hover {
+  background: #fff;
+}
+
+.dropdown:hover .menu-link {
+  color: #ff6700;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+  padding: 7px 0;
+  -webkit-box-shadow: 0 3px 4px rgba(0,0,0,.18);
+  box-shadow: 0 3px 4px rgba(0,0,0,.18);
 }

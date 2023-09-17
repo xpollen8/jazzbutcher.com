@@ -84,8 +84,8 @@
 	${mkPressHeader()}
 #live		if (defined(updateArticle))
 <h1>update (pub:${${prefix}->url})</h1>
-#update press set body="${filterProgramArgumets(${body})}" where url="${${prefix}->url}";
-#live	if (sql(z:update press set body="${filterProgramArgumets(${body})}" where url="${${prefix}->url}"))
+#update press set body="${filterProgramArguments(${body})}" where url="${${prefix}->url}";
+#live	if (sql(z:update press set body="${filterProgramArguments(${body})}" where url="${${prefix}->url}"))
 #live	endif
 #live	endif
 	<p />
@@ -443,7 +443,7 @@ ${d}
 		url=${jbc_press}/20170406_lastdaydeaf.html,
 		publication=Last Day Deaf,
 		thumb=/images/20170406/20170406_group;;Mat Wallis,
-		images=/images/20140822/20140822_johncannon_pat;;John Cannon$$ /images/20150417/20150417_clubbed;;Leighton Bobby Cousins,
+		images=/images/20140822/20140822_johncannon_pat;;John Cannon$$/images/20150417/20150417_clubbed;;Leighton Bobby Cousins,
 		credit=Christos Doukakis,
 		source=http://lastdaydeaf.com/the-jazz-butcher-quartet/,
 		datetime=2017-04-08 20:00:00,
@@ -585,6 +585,9 @@ ${d}
 	${addPress(type=album, album=sex,
 		url=${jbc_press}/19850615_press_nme.html,
 		thumb=/images/19850615/19850615_press_nme,
+		title=THE JAZZ BUTCHER,
+		headline=Sex And Travel,
+		subhead=(Glass),
 		publication=New Music Express,
 		credit=David Swift,
 		source=https://twitter.com/nothingelseon/status/1268819255841026048/photo/1,
@@ -655,6 +658,7 @@ ${d}
 	${addPress(type=gig;wilson,
 		url=${jbc_press}/20040912_wilson_cricketpress.html,
 		publication=Cricket Press,
+		todo=OCR,
 		datetime=2004-09-12 16:00:00,
 		dt=2004-09-12)}
 
@@ -1175,7 +1179,8 @@ ${d}
 	${addPress(type=interview,
 		url=${jbc_press}/200505_apollox.html,
 		publication=Apollox Magazine,
-		title=Fish heads (& tales),
+		title=Fish heads,
+		headline=(& tales),
 		media=/images/200505_apollox_PatFishCrocodileTearsInterview.doc;;Andrew's original .doc,
 		location=UK,
 		credit=${brooksbank},
@@ -1185,7 +1190,8 @@ ${d}
 	${addPress(type=interview, person=alex_green,
 		url=${jbc_press}/1995_apollox_alex_green.html,
 		publication=Apollox Magazine,
-		title=Alex Green & The Sinister Ducks – An Interview,
+		title=Alex Green & The Sinister Ducks,
+		headline=An Interview,
 		media=/images/1995_apollox_AlexGreenInterview.doc;;Andrew's original .doc,
 		location=UK,
 		credit=${brooksbank},
@@ -12759,8 +12765,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 #live	if (getval(page) = 19850615_press_nme.html)
 	${extractPress(
 		body=${literalizeCommas(
-	THE JAZZ BUTCHER And Travel (Glass)
-	<p />
 	WHEREIN 'Butch' (as he is known to his circle) reveals that he and his group are more than a one-non-hit wonder ('Southern Mark Smith'). Summery strums prevail on this good-humoured mini-sized collection of the Butcher's observations. The Woodentops are heading up with this sort of formula, so no reason why <i>he</i> couldn't rake in enough cash for a comfy mid-life crisis, judging by the standards set here.
 	<p />
 	'Sex And Travel' isn't 'Important', but it's happy, sharp and witty. Take 'Holiday', where <i>"regular English-speaking gentlemen/on holiday"</i> are recognised by their habits and foibles. They all write home, y'see, and politely: <i>"he will try to give a picture/of life in far-off countries"</i>. Neatly-packed suitcases and all! A typewriter taps out a backing track.
@@ -14797,9 +14801,6 @@ David J
 #live	if (getval(page) = 200505_apollox.html)
 	${extractPress(
 		body=${literalizeCommas(
-
-<h2>Fish heads (& tales)</h2>
-
 <div class="iview_intro">
 To coincide with the re-release of Crocodile Tears and The Velvet Cosh we caught up with David’s former band mate, album session player, sleeve note writer and fellow Northamptonian Pat fish a.k.a The Jazz Butcher to discuss his part in this seminal album…
 </div>

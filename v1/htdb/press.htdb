@@ -726,14 +726,9 @@ ${d}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211007_press_illlive.html,
-		thumb=/images/20211007/20211007_press_illlive_6;;Sandra Boynton;;;;;;Sandra\, I promise\, I will absolutely try. But it will take a while to get over this one. Rest well\, Pat,
-		images=${literalizeCommas(
-		/images/20211007/20211007_press_illlive_1;;Deborah Wassertzug;;$$
-		/images/20211007/20211007_press_illlive_2;;Deborah Wassertzug;;;;;;Commenting on the song “Hysteria“$$
-		/images/20211007/20211007_press_illlive_3;;Deborah Wassertzug;;;;;;Commenting on an article I’d posted about Uber, with a fantastic anecdote$$
-		/images/20211007/20211007_press_illlive_4;;Deborah Wassertzug;;;;;;Attempting to resolve my debate about a word to use in a translation$$
-		/images/20211007/20211007_press_illlive_5;;Deborah Wassertzug;;;;;;Joining a debate about Velvet Underground lyrics$$
-)},
+		thumb=/images/20211007/20211007_press_illlive_6;;Sandra Boynton;;;;;;${literalizeCommas(Sandra, I promise, I will absolutely try. But it will take a while to get over this one. Rest well, Pat)},
+		images=/images/20211007/20211007_press_illlive_1;;Deborah Wassertzug;;$$/images/20211007/20211007_press_illlive_2;;Deborah Wassertzug;;;;;;${literalizeCommas(Commenting on the song “Hysteria“)}$$/images/20211007/20211007_press_illlive_3;;Deborah Wassertzug;;;;;;${literalizeCommas(Commenting on an article I’d posted about Uber, with a fantastic anecdote)}$$/images/20211007/20211007_press_illlive_4;;Deborah Wassertzug;;;;;;${literalizeCommas(Attempting to resolve my debate about a word to use in a translation)}$$/images/20211007/20211007_press_illlive_5;;Deborah Wassertzug;;;;;;${literalizeCommas(Joining a debate about Velvet Underground lyrics)}$$
+		,
 		title=Making Me Understand,
 		headline=Pat Fish of the Jazz Butcher Conspiracy,
 		publication=I'll Live,

@@ -18,7 +18,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 
 	const article = data?.results[0];
 
-	const ArticleInfoBox = ({ article }: Object) => {
+	const ArticleInfoBox = ({ article }: any) => {
 		const types = article?.type?.split(',');	// pat,gig,wilson (etc);
 		const projects = ['wilson','sumo','eg'];
 		const project = (projects.filter((pro: string) => types?.includes(pro)) || [])[0] || '';
@@ -27,7 +27,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 			<div className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>
 				<div style={{ margin: '3px', marginBottom: '10px' }}>
 					{(article?.publication) && <><b>Published:</b> {article.publication}</>}
-					{(article?.location) && <>({article.location})</>} {dateDisplay(article.dtpublished, false)}
+					{(article?.location) && <>({article.location})</>} {dateDisplay(article.dtpublished, '')}
 					{(article?.credit) && <Credit g={article?.credit} u={article?.crediturl} />}
 				</div>
 				{types.map((t: string) => (<>
@@ -55,7 +55,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 		</>)
 	}
 
-	const ArticleTitle = ({ article }: Object) => {
+	const ArticleTitle = ({ article }: any) => {
 		return (<center>
 			{(article?.title || article?.headline || article?.subhead || article?.summary) && (<>
 				{(article?.title) && <><b style={{ fontSize: '2em' }}>{article.title}</b><br /></>}
@@ -77,7 +77,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 		});
 		return images;
 	}
-	const ArticleThumbAndImages = ({ article }: Object) => {
+	const ArticleThumbAndImages = ({ article }: any) => {
 		if (article?.thumb || article?.images) {
 			const images = parseThumbAndImages(`${article?.thumb}$$${article?.images}`);
 			if (images?.length) {
@@ -109,7 +109,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 		});
 		return media;
 	}
-	const ArticleMedia = ({ article }: Object) => {
+	const ArticleMedia = ({ article }: any) => {
 		if (article?.media) {
 			const media = parseMedia(article?.media);
 			if (media?.length) {

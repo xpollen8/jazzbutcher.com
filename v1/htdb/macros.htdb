@@ -1744,8 +1744,10 @@ font.load().then(function () {
 #
 #define	ill				${linkAlbum(href=${jbc_albums}/illuminate.html, title=Illuminate)}
 #define	violent			${linkSingle(href=${jbc_albums}/violent.html, title=&#161;Excellent! The Violent Years)}
+#define	_16yr			${linkSingle(href=${jbc_albums}/sixteen_years.html, title=Sixteen Years)}
 #define	16yr			${linkSingle(href=${jbc_albums}/sixteen_years.html, title=Sixteen Years)}
 #define	cute			${linkSong(href=${jbc_lyrics}/cute_submarines.html, title=Cute Submarines)}
+#define	_16				${linkSong(href=${jbc_lyrics}/sixteen_years.html, title=Sixteen Years)}
 #define	16				${linkSong(href=${jbc_lyrics}/sixteen_years.html, title=Sixteen Years)}
 #define	elephant_man	${linkSong(title=Elephant Man)}
 #define	eleph			${linkSong(href=${jbc_lyrics}/great_elephants.html, title=A Great Visitation Of Elephants)}

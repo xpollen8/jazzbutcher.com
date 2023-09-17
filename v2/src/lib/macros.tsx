@@ -96,6 +96,21 @@ export const parseDate = (str?: string) => {
 
 export const prettyDate = (dt: string) => moment(dt).format("ddd, MMM Do YYYY");
 
+const dateDisplay = (dt?: string, sep: string = ' - ') => {
+	const [orig, iy,im,id,ihh,imm,iss, unknownMonth, unknownDay]: any = parseDate(dt) || [];
+	if (iy) {
+		const padDate = (dt: number[]) => {
+			const [iy,im,id,ihh,imm,iss] = dt || [];
+			return localDate(`${iy}-${padZero(im)}-${padZero(id)} ${padZero(ihh)}:${padZero(imm)}:${padZero(iss)}`);
+		}
+		const display = (orig?.length < 10) ? orig : padDate([iy,im,id,ihh,imm,iss]);
+		return (<>
+			{sep}
+			<span className="date">{prettyDate(display)}</span> <span className={`date ${unknownDay} ${unknownMonth}`} />
+		</>)
+	}
+}
+
 const dateDiff = (dt?: string, sep: string = ' - ') => {
 	const [orig, iy,im,id,ihh,imm,iss, unknownMonth, unknownDay]: any = parseDate(dt) || [];
 	if (iy) {
@@ -548,7 +563,7 @@ export const censorEmail = (str: string) => {
 	return deHTDB[0] + deHTDB.substr(1, idx - 1) + Array(len - idx - 1).join('.') + deHTDB[len - 1];
 }
 
-export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<br/>').replace(/\\,/g, ',');
+export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=');
 
 
 export const parseCredit = (cr: string = '') => {
@@ -574,4 +589,4 @@ const releaseByLookup = async (lookup: string) => {
 	if (releaseByHREF) return releaseByHREF;
 }
 
-export { localDate, datesEqual, bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }
+export { localDate, datesEqual, bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDisplay, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

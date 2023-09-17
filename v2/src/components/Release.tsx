@@ -213,13 +213,15 @@ const parseReleaseDownloads = (str?: string) => {
 
 const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.downloads) {
-		const downloads = parseReleaseDownloads(`${release?.thumb}$$${release?.downloads}`);
+		const downloads = parseReleaseDownloads(release?.downloads);
 		if (downloads?.length) {
 			return (<>
 				<Tag>Downloadable Media</Tag>
 				<blockquote>
-				{downloads?.map(({ file, caption }: any, key: number) =>
-					<Link key={key} href={`https://jazzbutcher.com${file}`}>{caption}</Link>
+				{downloads?.filter((props: any) => props?.file)?.map(({ file, caption }: any, key: number) => (<>
+					<Link key={key} href={`https://jazzbutcher.com${file}`} className="border">{caption}</Link>
+					<br />
+				</>)
 				)}
 				</blockquote>
 			</>)

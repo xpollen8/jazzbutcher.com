@@ -5,7 +5,6 @@ drop table if exists press;
 create table press (
 	press_id mediumint unsigned NOT NULL auto_increment,
 	url varchar(200) NOT NULL,
-#	type set('gig','interview','kit','album','pat','eg','wilson','sumo'),
 	type varchar(20),
 	person varchar(50) NOT NULL,
 	dtadded datetime,
@@ -26,8 +25,8 @@ create table press (
 	credit varchar(200) NOT NULL,
 	body text,
 	INDEX idx0(press_id),
-	UNIQUE INDEX idx1(url)
-	INDEX idx2(type)
-	INDEX idx3(person)
+	UNIQUE INDEX idx1(url),
+	INDEX idx2(type),
+	INDEX idx3(person),
 	INDEX idx4(album)
 );

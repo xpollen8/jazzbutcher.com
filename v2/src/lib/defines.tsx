@@ -434,7 +434,7 @@ export const sumo_cats = linkSong({ title: "Cat's Life", href: "/lyrics/sumosoni
 export const sumo_wonderful = linkSong({ title: "Everything Is Wonderful", href: "/lyrics/sumosonic_everything_is_wonderful.html" });
 export const sumo_stupid = linkSong({ title: "Stupid", href: "/lyrics/sumosonic_stupid.html" });
 export const sumo_monsters = linkSong({ title: "Destroy All Monsters", href: "/lyrics/sumosonic_destroy_all_monsters.html" });
-export const sumo_radio = linkSong({ title: "Radio Saigon", href: "/lyrics/sumosonic_radio_saigon.html" });
+export const sumo_radio = linkSong({ title: "Radio Saigon", href: "/lyrics/sumosonic_radio_saigon.html", author: "sumosonic" });
 export const sumo_business = linkSong({ title: "Business And Work", href: "/lyrics/sumosonic_business_and_work.html" });
 export const sumo_monks = linkSong({ title: "Monks Of Kung Fu", href: "/lyrics/sumosonic_monks_of_kung_fu.html" });
 export const sumo_sputnik = linkSong({ title: "Sputnik", href: "/lyrics/sumosonic_sputnik.html" });
@@ -527,7 +527,6 @@ export const hey_star = linkSong({ title: "Hey, Star", author: wolfi });
 export const satellite_of_love = linkSong({ title: "Satellite Of Love", author: "Lou Reed" });
 export const rocking_in_the_free_world = linkSong({ title: "Rocking In The Free World", author: "Neil Young" });
 export const september_gurls = linkSong({ title: "September Gurls", author: "Alex Chilton" });
-export const Radio_Saigon = linkSong({ title: "Radio Saigon", author: "Sumosonic" });
 export const Stop_This_City = linkSong({ title: "Stop This City", author: "David J." });
 export const Tread_Water = linkSong({ title: "Tread Water", author: "De La Soul" });
 export const Just_One_Victory = linkSong({ title: "Just One Victory", author: "Todd" });
@@ -851,7 +850,6 @@ export const mapSongs: {[key: string]: string} = {
 	"Chinatown": "china",
 	"Christmas_With_The_Pygmies": "pygmie",
 	"City_Of_Night": "city",
-	"Come_Friendly_Spacemen": "friendly",
 	"Come_Friendly_Spacemen": "sumo_spacemen",
 	"Come_On_Marie": "comeon",
 	"Conspiracy": "consp",
@@ -970,7 +968,6 @@ export const mapSongs: {[key: string]: string} = {
 	"President_Reagans_Birthday_Present": "reagan",
 	"Quality_People": "wilson_quality_people",
 	"Racheland": "rachel",
-	"Radio_Saigon": "Radio_Saigon",
 	"Radio_Saigon": "sumo_radio",
 	"Rain": "rain",
 	"Raking_Up_the_Leaves": "leaves",

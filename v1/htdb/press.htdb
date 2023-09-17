@@ -82,6 +82,12 @@
 ##
 #define	extractPress(aux, body)
 	${mkPressHeader()}
+#live		if (defined(updateArticle))
+<h1>update (pub:${${prefix}->url})</h1>
+#update press set body="${filterProgramArgumets(${body})}" where url="${${prefix}->url}";
+#live	if (sql(z:update press set body="${filterProgramArgumets(${body})}" where url="${${prefix}->url}"))
+#live	endif
+#live	endif
 	<p />
 	${body}
 #live	if ((getval(types[${t}]) == album) && (defined(${prefix}->album)))
@@ -246,9 +252,9 @@ ${d}
 
 #live		if (defined(update))
 <h1>update (pub:${dt}) (gig: ${datetime}) (type:${type})</h1>
-#insert into press set type="${replace(${type}, ;,,)}", url="${url}", album="${album}", thumb="${thumb}", publication="${publication}", title="${title}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}";
+#insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}";
 
-#live			if (sql(x:insert into press set type="${replace(${type}, ;,,)}", url="${url}", album="${album}", thumb="${thumb}", publication="${publication}", title="${title}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}"))
+#live			if (sql(x:insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}"))
 #live			endif
 #live				if ((getval(type) == interview) && (defined(datetime)))
 #live					if (sql(x:update gig set extra=concat('interview,',extra) where extra not like '%%interview%%' and datetime='${fixDt(${datetime})}'))
@@ -2360,7 +2366,6 @@ ${d}
 #live	if (getval(page) = 96observer.html)
 	${extractPress(
 		body=${literalizeCommas(
-
 	The promo schedule for Independence Day director Roland Emmerich
 	is unrelenting. After Britain where the film took a record
 	&#163;6824163 in its first weekend, he moved to Barcelona, then Cannes.

@@ -7,7 +7,7 @@
 ## highest
 ## Come, Friendly Spacemen (Club)
 ##
-#define	albums->numFields	28
+#define	albums->numFields	29
 #define	albums->field[1]	type
 #define	albums->field[2]	href
 #define	albums->field[3]	title
@@ -36,6 +36,7 @@
 #define	albums->field[26]	CDring
 #define	albums->field[27]	bishopsez
 #define	albums->field[28]	audio
+#define	albums->field[29]	downloads
 
 #define	albums[1]->type	album
 #define	albums[1]->lookup	bacon
@@ -3387,7 +3388,7 @@ Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, 
 ##define	albums[87]->catalog
 #define	albums[87]->title	The Highest in the Land
 #define	albums[87]->thumb	/images/releases/highest
-#define	albums[87]->images	/images/2021_PressRelease_PatFish_PhilippeDufour;;;;Philippe Dufar$$/images/2021_PressRelease_PatFish1_RuthTidmarsh;;;;PlanetruthPictures$$/images/2021_PressRelease_PatFish2_RuthTidmarsh;;;;PlanetruthPictures
+#define	albums[87]->images	/images/2021_PressRelease_PatFish_PhilippeDufour;;;;Philippe Dufar$$/images/2021_PressRelease_PatFish1_RuthTidmarsh;;;;PlanetruthPictures$$/images/2021_PressRelease_PatFish2_RuthTidmarsh;;;;PlanetruthPictures$$
 #define	albums[87]->downloads	/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_engl.pdf;;Tapete Press release (EN)$$/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_dt.pdf;;Tapete Press release (DE)
 #define	albums[87]->dtreleased	2022-02-04
 #define	albums[87]->media	CD/LP/digital

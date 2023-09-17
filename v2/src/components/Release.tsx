@@ -95,8 +95,8 @@ const ReleaseContribution = ({ release }: { release: ReleaseTypeWithChildren }) 
 }
 
 const ReleaseLiner = ({ release }: { release: ReleaseTypeWithChildren }) => {
-		const [ liner, source, sourceurl, sourcedate ] = release?.liner.split(';;');
 	if (release?.liner) {
+		const [ liner, source, sourceurl, sourcedate ] = release.liner.split(';;');
 		return (<>
 			<Tag>Liner Notes</Tag>
 			<blockquote>

@@ -8,8 +8,9 @@ import { removeHTML, Source } from '@/components/GenericWeb';
 import Tag from '@/components/Tag';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import MakeReleasePress from '@/components/MakeReleasePress';
+import EmbedMedia from '@/components/EmbedMedia';
 import useRelease from '@/lib/useRelease';
-import { expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
+import { gab, expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
 
 export type ReleaseType =  {
 	type?: string
@@ -32,9 +33,12 @@ export type ReleaseType =  {
 	country?: string
 	credit?: string
 	patsez?: string
+	bishopsez?: string
+	downloads?: string
 	notes?: string
 	contribution?: string
 	Agroove?: string
+	CDring?: string
 	Bgroove?: string
 }
 
@@ -94,6 +98,60 @@ const ReleaseContribution = ({ release }: { release: ReleaseTypeWithChildren }) 
 	}
 }
 
+const parseReleaseNotes = (str?: string) => {
+	if (!str) return;
+	const chunks = str.split('$$');
+	const notes = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
+		const [ note, source, sourceurl, sourcedate ] = ch.split(';;');
+		return { note, source, sourceurl, sourcedate };
+	});
+	return notes;
+}
+
+const ReleaseNotes = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	if (release?.notes) {
+		const notes = parseReleaseNotes(release?.notes);
+		if (notes?.length) {
+			return (<>
+				<Tag>Notes</Tag>
+				<blockquote>
+				{notes?.map(({ note, source, sourceurl, sourcedate }: any, key: number) =>
+					<div className="listItem" key={key}>
+						<div dangerouslySetInnerHTML={{ __html: note }} />
+						{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
+					</div>
+				)}
+				</blockquote>
+			</>)
+		}
+	}
+}
+
+const parseReleaseAudio = (str?: string) => {
+	if (!str) return;
+	const chunks = str.split('$$');
+	const audio = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
+		const [ file, title ] = ch.split(';;');
+		return { file, title };
+	});
+	console.log("AUDIO", audio);
+	return audio;
+}
+
+const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	if (release?.audio) {
+		const audio = parseReleaseAudio(release?.audio);
+		if (audio?.length) {
+			return (<>
+				<Tag>Audio</Tag>
+				{audio?.map(({ file, title }: any, key: number) =>
+						<EmbedMedia data={{ song: title, mediaurl: file, parent: release.href, comment: release.title }} />
+				)}
+			</>)
+		}
+	}
+}
+
 const ReleaseLiner = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.liner) {
 		const [ liner, source, sourceurl, sourcedate ] = release.liner.split(';;');
@@ -102,6 +160,19 @@ const ReleaseLiner = ({ release }: { release: ReleaseTypeWithChildren }) => {
 			<blockquote>
 				<div dangerouslySetInnerHTML={{ __html: liner }} />
 				{(source) && <Source g={removeHTML(source)} u={sourceurl} d={sourcedate} />}
+			</blockquote>
+		</>)
+	}
+}
+
+const ReleaseBishopSez = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	if (release?.bishopsez) {
+		const [ bishopsez, source, sourceurl, sourcedate ] = release?.bishopsez.split(';;');
+		return (<>
+			<Tag>{gab} Says</Tag>
+			<blockquote>
+				<div dangerouslySetInnerHTML={{ __html: bishopsez }} />
+				{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
 			</blockquote>
 		</>)
 	}
@@ -126,6 +197,32 @@ const ReleaseThanks = ({ release }: { release: ReleaseTypeWithChildren }) => {
 			<Tag>Thanks</Tag>
 			<blockquote dangerouslySetInnerHTML={{ __html: release?.thanks }} />
 		</>)
+	}
+}
+
+const parseReleaseDownloads = (str?: string) => {
+	if (!str) return;
+	const chunks = str.split('$$');
+	const images = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
+		const [ file, caption ] = ch.split(';;');
+		return { file, caption };
+	});
+	return images;
+}
+
+const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	if (release?.downloads) {
+		const downloads = parseReleaseDownloads(`${release?.thumb}$$${release?.downloads}`);
+		if (downloads?.length) {
+			return (<>
+				<Tag>Downloadable Media</Tag>
+				<blockquote>
+				{downloads?.map(({ file, caption }: any, key: number) =>
+					<Link key={key} href={`https://jazzbutcher.com${file}`}>{caption}</Link>
+				)}
+				</blockquote>
+			</>)
+		}
 	}
 }
 
@@ -180,10 +277,10 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		studio: "Studio",
 		Agroove: "A Groove",
 		Bgroove: "B Groove",
-		notes: "Notes",
+		CDring: "CD Ring Text",
 	};
 
-	return (<div className={`gig_${release?.project}`}>
+	return (<div>
 		<Tag>Details</Tag>
 		<blockquote>
 			{Object.keys(labels).map((label: string, key: number) => {
@@ -204,12 +301,16 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading) && (<>
 				<ReleaseDetails release={release} />
+				<ReleaseDownloads release={release} />
 				<ReleaseImages release={release} />
 				{(release?.contribution) ? <ReleaseContribution release={release} /> : <ReleaseSongList songs={songs} />}
 				<ReleaseCredits credits={credits} />
 				<ReleaseLiner release={release} />
 				<ReleaseThanks release={release} />
+				<ReleaseNotes release={release} />
+				<ReleaseAudio release={release} />
 				<ReleasePatSez release={release} />
+				<ReleaseBishopSez release={release} />
 				<MakeReleasePress lookup={lookup} />
 			</>)}
 		</Suspense>

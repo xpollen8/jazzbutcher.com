@@ -118,6 +118,7 @@ export const morgan = linkPerson({ href: "/conspirators/dave_morgan.html", name:
 export const nick = linkPerson({ href: "/conspirators/nick_burson.html", name: "Nick Burson" });
 export const owen = linkPerson({ href: "/conspirators/owen_jones.html", name: "Owen Jones" });
 export const pat = linkPerson({ href: "https://patfish.com", name: "Pat Fish" });
+export const pat_fish = pat;
 export const duo = <>{pat}, {max}</>
 export const pat_headstone = linkPerson({ href: "https://patfish.com", name: "Wilson Headstone" });
 export const paul = linkPerson({ href: "/conspirators/paul_mulreany.html", name: "Paul Mulreany" });
@@ -1044,6 +1045,7 @@ export const mapSongs: {[key: string]: string} = {
 	"True_Stories": "_true",
 	"Tugboat_Captain": "capt",
 	"Turtle_Bait": "bait",
+	"Turtlebait": "bait",
 	"Two_Dragons": "wilson_two_dragons",
 	"Vienna_Song": "vienna",
 	"Vodka_Girls": "vodka",
@@ -1059,6 +1061,21 @@ export const mapSongs: {[key: string]: string} = {
 	"Wildlife": "wildlife",
 	"Zombie_Love": "zombie",
 };
+
+/*
+	THE BIG IDEA
+	given an input string that contains {{XX}} lookup identifiers, perform
+	direct variable lookup and/or song/performer lookup mappings
+
+	{{Pat Fish}} and {{pat}} should both expand
+
+ 	dumb-case scenario:
+	loop thrugh all map* objects and string match in `str`.
+	if there's a hit, then perform the expansion.
+ */
+export const AutoLink = (str?: string) => {
+	
+}
 
 export const AutoLinkSong = (str?: string) => {
   if (!str?.length) return;

@@ -57,6 +57,11 @@ const features = [
 		Net-side bands and whatnot that Pat wanted to highlight.
 		</>
 	},
+	{ uri: '/western_tape', text: "The Western Family DAT", aux: '(2005-11-15)',
+		children: <>
+		Western Family , the 1992 live album released on Creation Records, is not the record it could have been..
+		</>
+	},
 	{ uri: '/tomhall', text: "Tom Hall Memorial", aux: '(2003)',
 		children: <>
 		The passing of Northampton-based folk music legend Tom Hall prompted many -

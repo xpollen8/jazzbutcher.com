@@ -6813,6 +6813,22 @@ Previously available on the ${fishco} LP/CD.
 	${jbc_footer}
 #live	endif
 
+#define	va_call_northampton_vol1.html
+#live	if (getval(page) = va_call_northampton_vol1.html)
+	${mkHeader(section=albums, title=VA: Now That's What I Call Northampton Vol #1)}
+
+	${det_beg}
+	${a_media} ${CD}
+	${a_dtreleased} 2010
+	${det_end}
+
+	${tun_beg}
+		${mercy}
+		<br />${wildlife}
+	${tun_end}
+	${jbc_footer}
+#live	endif
+
 #define	va_uncle_andy_christmas_2007.html
 #live	if (getval(page) = va_uncle_andy_christmas_2007.html)
 	${mkHeader(section=albums, title=Uncle Andy's Christmas CD (2007))}

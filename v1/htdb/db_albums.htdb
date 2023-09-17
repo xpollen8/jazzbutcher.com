@@ -575,7 +575,7 @@
 #define	albums[14]->thumb	/images/releases/abstract5
 #define	albums[14]->images	/images/releases/abstract5_booklet
 #define	albums[14]->contribution uptoyou
-#define	albums[14]->dtreleased	Spring 1985
+#define	albums[14]->dtreleased	1985 (Spring)
 #define	albums[14]->dtrecorded	1985-04-25
 #define	albums[14]->studio	Live, Melkweg, Amsterdam
 
@@ -3433,30 +3433,30 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 
 #define	albums[90]->type	various
 #define	albums[90]->lookup	va_nm_vol1
-#define	albums[90]->href
+#define	albums[90]->href	${jbc_albums}/va_call_northampton_vol1.html
 #define	albums[90]->media	CD
 #define	albums[90]->title	VA: Now That's What I Call Northampton Vol #1
 #define	albums[90]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/2010_NowThatsWhatICallNorthamptonVol1
 #define	albums[90]->dtreleased	2010
 #define	albums[90]->contribution [ mercy, wildlife ]
 #define	albums[90]->blurb
-  ${linkAudio(title=${literalizeCommas(${mercy})}, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3, comment=${literalizeCommas(Recorded by ${curt})})}
-  ${linkAudio(title=${literalizeCommas(${wildlife})}, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/WIldlife.mp3, comment=${literalizeCommas(Recorded by ${curt})})}
+#define	albums[90]->audio https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3;;Mercy;;Recorded by ${curt}$$https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/WIldlife.mp3;;Wildlife;;Recorded by ${curt}
 
 #define	albums[91]->type	various
 #define	albums[91]->lookup	va_andy_2007
-#define	albums[91]->href
+#define	albums[91]->href	${jbc_albums}/va_uncle_andy_christmas_2007.html
 #define	albums[91]->media	CD
-#define	albums[91]->title	VA: Now That's What I Call Northampton Vol #1
+#define	albums[91]->title	VA: Uncle Andy's Christmas CD (2007)
 #define	albums[91]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum
 #define	albums[91]->dtreleased	2007-12
-#define	albums[91]->ontribution afterhours
+#define	albums[91]->contribution afterhours
 #define	albums[91]->blurb
+	We finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours
+#define	albums[91]->notes
 Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers.
 <p />
 In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album.
-<p />
-  ${linkAudio(title=${literalizeCommas(${afterhours})}, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3, comment=${literalizeCommas(Recorded in December 2007 at Greenway Studio by Andy Clarke)})}
+#define	albums[91]->audio	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3;;After Hours;;Recorded in December 2007 at Greenway Studio by Andy Clarke
 
 #define	albums[92]->type	single
 #define	albums[92]->lookup	never7

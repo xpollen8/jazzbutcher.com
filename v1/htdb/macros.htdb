@@ -1598,6 +1598,7 @@ font.load().then(function () {
 #define	best_kisser		${linkAlbum(title=The Best Kisser In The World)}
 #define	glorious		${linkAlbum(href=${jbc_albums}/glorious.html, title=Glorious And Idiotic)}
 #define	glass			<b>Glass Records</b>
+#define	glass_records	${glass}
 #
 #	Sumosonic
 #
@@ -1810,7 +1811,7 @@ font.load().then(function () {
 #
 #	Fire Records box-sets
 #
-#define	fire_records	Fire Records
+#define	fire_records	<b>Fire Records</b>
 #define	fire_wasted	${linkAlbum(href=${jbc_albums}/fire_wasted.html, title=The Wasted Years)}
 #define	fire_violent	${linkAlbum(href=${jbc_albums}/fire_violent.html, title=The Violent Years)}
 #define	fire_cholmondley	${linkAlbum(href=${jbc_albums}/fire_cholmondley.html, title=Dr Cholmondley Repents)}
@@ -3986,9 +3987,9 @@ ${define(_set, false)}
 	<div class="album_thumb">
 #live	if (defined(${prefix}->thumb))
 #live		if (defined(${prefix}->href))
-	<a href="${${prefix}->href}"><img style="border: 1px solid;" alt="[${${prefix}->title} cover thumbnail]" src="${${prefix}->thumb}_${size}.jpg"></a>
+	<a href="${${prefix}->href}"><img style="border: 1px solid;" alt="[${${prefix}->title} cover thumbnail]" src="${truncAt(;;, ${${prefix}->thumb})}_${size}.jpg"></a>
 #live		else
-	<a target="_new" href="${${prefix}->thumb}.jpg"><img alt="[${${prefix}->title} cover thumbnail]" src="${${prefix}->thumb}_${size}.jpg"></a>
+	<a target="_new" href="${truncAt(;;, ${${prefix}->thumb})}.jpg"><img alt="[${${prefix}->title} cover thumbnail]" src="${truncAt(;;, ${${prefix}->thumb})}_${size}.jpg"></a>
 #live		endif
 #live	else
 	<img src="${images}/spacer.gif" width="145" height="145">
@@ -3998,7 +3999,11 @@ ${define(_set, false)}
 #	${${prefix}->year}
 #	${${prefix}->label} ${${prefix}->catalog}
 #live	if (defined(${prefix}->label))
-		${${prefix}->label}
+#live		if (defined(${${prefix}->label}))
+				${${${prefix}->label}}
+#live		else
+				${${prefix}->label}
+#live		endif
 #live	endif
 #live	if (defined(${prefix}->media))
 		${${prefix}->media}

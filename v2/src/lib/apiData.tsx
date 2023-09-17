@@ -44,7 +44,10 @@ const doFetch = async (url: string) => {
 			mode: 'no-cors'
 		})
 		.then(e => e.json())
-		.then(e => { cache[url] = e; return e })
+		.then(e => {
+			cache[url] = JSON.parse(deHTDBifyText(JSON.stringify(e)));
+			return cache[url];
+		})
 		.catch((e) => {
 			console.log("ERR", e);
 			return { error: `search by ${url} failed` };
@@ -60,12 +63,14 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 	return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
 }
 
+/*
 const filterComments = (res: CommentType[]) => res?.map((c: CommentType) => ({
 	...c,
 	subject: deHTDBifyText(c?.subject),
 	who: censorEmail(c?.who),
 	comments: deHTDBifyText(c?.comments),
 }));
+*/
 
 const apiData = async (path: string, args?: string) => {
 	//console.log("apiData", { path, args });
@@ -84,6 +89,7 @@ const apiData = async (path: string, args?: string) => {
 		case 'medias':
 		case 'credits_by_release':
 		case 'presses_by_release':
+		case 'press_by_href':
 		case 'lyrics':
 		case 'lyric_by_href':
 		case 'songs_by_datetime':
@@ -128,7 +134,7 @@ const apiData = async (path: string, args?: string) => {
 		case 'feedback':
 			// clean up server-side
 			const data = await apiDataFromDataServer(path, args);
-			data.results = filterComments(data.results);
+			//data.results = filterComments(data.results);
 			return data;
 		case 'gigs_by_musician': {
 			const performances =  await apiDataFromDataServer(path, args);

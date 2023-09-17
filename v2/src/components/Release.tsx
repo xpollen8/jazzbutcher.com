@@ -4,7 +4,7 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { Source } from '@/components/GenericWeb';
+import { removeHTML, Source } from '@/components/GenericWeb';
 import Tag from '@/components/Tag';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import MakeReleasePress from '@/components/MakeReleasePress';
@@ -34,6 +34,8 @@ export type ReleaseType =  {
 	patsez?: string
 	notes?: string
 	contribution?: string
+	Agroove?: string
+	Bgroove?: string
 }
 
 export type ReleaseTypeWithChildren = ReleaseType & { children?: string | React.ReactElement }
@@ -42,9 +44,9 @@ const PerformanceCredits = ({ who, album_credits, song_credits }: { who: string,
 	const hasAlbumCredits = (Object.keys(album_credits)?.length > 0);
 	const hasSongCredits = (Object.keys(song_credits)?.length > 0);
 	return (<>
-		{AutoLinkPlayer(who)}{' - '} {(hasAlbumCredits) && <>{album_credits}</>}
-		{(hasAlbumCredits && hasSongCredits) && <>{' - '}</>}
+		{AutoLinkPlayer(who)} {(hasAlbumCredits) && <>{' - '}{album_credits}</>}
 		{(hasSongCredits) && <>
+			{' - '}
 			{Object.keys(song_credits).map((song: string, key: number) => {
 				return <span key={key}>
 					{(key > 0) && <>{' - '}</>}
@@ -93,10 +95,14 @@ const ReleaseContribution = ({ release }: { release: ReleaseTypeWithChildren }) 
 }
 
 const ReleaseLiner = ({ release }: { release: ReleaseTypeWithChildren }) => {
+		const [ liner, source, sourceurl, sourcedate ] = release?.liner.split(';;');
 	if (release?.liner) {
 		return (<>
 			<Tag>Liner Notes</Tag>
-			<blockquote dangerouslySetInnerHTML={{ __html: release?.liner }} />
+			<blockquote>
+				<div dangerouslySetInnerHTML={{ __html: liner }} />
+				{(source) && <Source g={removeHTML(source)} u={sourceurl} d={sourcedate} />}
+			</blockquote>
 		</>)
 	}
 }
@@ -163,6 +169,7 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 
 	const labels = {
 		type: "Release Type",
+		onalbum: "Single From Album",
 		title: "Release Title",
 		dtreleased: "Released",
 		label: "Label",
@@ -171,6 +178,8 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		country: "Country",
 		dtrecorded: "Recorded",
 		studio: "Studio",
+		Agroove: "A Groove",
+		Bgroove: "B Groove",
 		notes: "Notes",
 	};
 

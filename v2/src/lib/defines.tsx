@@ -850,6 +850,11 @@ export const expand = (str?: string, treatAsHTML: boolean = false) => {
 		let expanded = true;
 		const tryExpand = (str?: string) => {
 			if (str) {
+				if (str[0] === '(' || parseInt(str, 10) > 0) {
+					// leave numbers along
+					expanded = false;
+					return str;
+				}
 				try {
 					return eval(str);
 				} catch (e) {
@@ -858,6 +863,7 @@ export const expand = (str?: string, treatAsHTML: boolean = false) => {
 			}
 			return str;
 		}
+
 		const expansion = tryExpand(str);
 
 		if (treatAsHTML) {

@@ -103,7 +103,6 @@ const Lyric = ({ params }: { params?: any }) => {
 	const { lyric, isLoading, error } = useLyric(href);
 
 	if (!lyric) return <>404</>
-	console.log("LYRIC", lyric, href);
 	const tabs = [
 			{ label: 'Lyrics', lookup: (data: any) => { return data?.lyrics }, func: Lyrics },
 			{ label: 'Found On', lookup: (data: any) => (data?.found_on), func: FoundOn },

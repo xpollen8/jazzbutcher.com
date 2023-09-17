@@ -128,31 +128,6 @@ const ReleaseNotes = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	}
 }
 
-const parseReleaseAudio = (str?: string) => {
-	if (!str) return;
-	const chunks = str.split('$$');
-	const audio = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
-		const [ file, title ] = ch.split(';;');
-		return { file, title };
-	});
-	console.log("AUDIO", audio);
-	return audio;
-}
-
-const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
-	if (release?.audio) {
-		const audio = parseReleaseAudio(release?.audio);
-		if (audio?.length) {
-			return (<>
-				<Tag>Audio</Tag>
-				{audio?.map(({ file, title }: any, key: number) =>
-					<EmbedMedia key={key} data={{ song: title, mediaurl: file, parent: release.href, comment: release.title }} />
-				)}
-			</>)
-		}
-	}
-}
-
 const ReleaseLiner = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.liner) {
 		const [ liner, source, sourceurl, sourcedate ] = release.liner.split(';;');
@@ -224,6 +199,30 @@ const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => 
 				</>)
 				)}
 				</blockquote>
+			</>)
+		}
+	}
+}
+
+const parseReleaseAudio = (str?: string) => {
+	if (!str) return;
+	const chunks = str.split('$$');
+	const audio = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
+		const [ file, title ] = ch.split(';;');
+		return { file, title };
+	});
+	return audio;
+}
+
+const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	if (release?.audio) {
+		const audio = parseReleaseAudio(release?.audio);
+		if (audio?.length) {
+			return (<>
+				<Tag>Audio</Tag>
+				{audio?.map(({ file, title }: any, key: number) =>
+					<EmbedMedia key={key} data={{ song: title, mediaurl: file, parent: release.href, comment: release.title }} />
+				)}
 			</>)
 		}
 	}
@@ -315,6 +314,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 				<ReleasePatSez release={release} />
 				<ReleaseBishopSez release={release} />
 				<MakeReleasePress lookup={lookup} />
+				<p />
 			</>)}
 		</Suspense>
 	</>)

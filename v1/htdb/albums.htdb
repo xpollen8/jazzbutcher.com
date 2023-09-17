@@ -6813,6 +6813,27 @@ Previously available on the ${fishco} LP/CD.
 	${jbc_footer}
 #live	endif
 
+#define	va_uncle_andy_christmas_2007.html
+#live	if (getval(page) = va_uncle_andy_christmas_2007.html)
+	${mkHeader(section=albums, title=Uncle Andy's Christmas CD (2007))}
+
+	${det_beg}
+	${a_media} ${CD}
+	${a_dtreleased} 2007
+	${det_end}
+
+	${tun_beg}
+		${afterhours}
+	${tun_end}
+	${tag_beg}Notes${tag_end}
+	<blockquote>
+	Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers.
+	<p />
+	In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album.
+	</blockquote>
+	${jbc_footer}
+#live	endif
+
 #define	cdr_guestpass2000.html
 #live	if (getval(page) = cdr_guestpass2000.html)
 	${mkHeader(section=albums, title=Guest Pass 2000)}

@@ -1,4 +1,13 @@
-#define	albums->numFields	25
+##
+## TODO
+##
+## releases NOT yet in performance (so songs are missing)
+## Black Eg
+## cdr_guestpass2000.html
+## highest
+## Come, Friendly Spacemen (Club)
+##
+#define	albums->numFields	28
 #define	albums->field[1]	type
 #define	albums->field[2]	href
 #define	albums->field[3]	title
@@ -24,6 +33,9 @@
 #define	albums->field[23]	images
 #define	albums->field[24]	notes
 #define	albums->field[25]	patsez
+#define	albums->field[26]	CDring
+#define	albums->field[27]	bishopsez
+#define	albums->field[28]	audio
 
 #define	albums[1]->type	album
 #define	albums[1]->lookup	bacon
@@ -89,19 +101,104 @@
 
 #define	albums[2]->type	single
 #define	albums[2]->lookup	smith
+#define	albums[2]->media	7"
+#define	albums[2]->onalbum	scandal
 #define	albums[2]->href	${jbc_albums}/smith.html
 #define	albums[2]->title	Southern Mark Smith
+#define	albums[2]->label	glass_records
+#define	albums[2]->catalog	Glass 027
 #define	albums[2]->thumb	/images/cover_smith_front
-#define	albums[2]->blurb	Recorded in the summer of 1983 in a place called Wellingborough, a small town in the middle of England where even the children are scarey!
+#define	albums[2]->images	/images/cover_smith_back
+#define	albums[2]->dtrecorded	Summer 1983
+#define	albums[2]->studio	Beck Wellingborough
 #define	albums[2]->dtreleased	1983-09-01
+#define	albums[2]->blurb
+	Recorded in the summer of 1983 in a place called Wellingborough, a small town in the middle of England where even the children are scarey!
+#define	albums[2]->liner
+	Recorded in the summer of 1983 in a place called Wellingborough,
+    a small town in the middle of England where even the
+    children are scarey! "Hey, mister, can you SEE in them
+    glasses?"  I get to sing and play things like guitar, sax and piano.
+    <p />
+    Max does the electric guitar.  On bass is Rolo McGinty,
+    and Princess Alice Thompson plays the organ.  They're
+    both in ${tops} now, a group internationally recognised
+    as being the shortest collection of pop musicians in
+    the world.  Playing the drums is Kevin Haskins, a charming
+    neighbour of mine, and veteran of the ${haus} conspiracy.  Miaowula!
+
 #define	albums[3]->type	album
 #define	albums[3]->lookup	scandal
+#define	albums[3]->label	glass_records
+#define	albums[3]->catalog	GLALP009
 #define	albums[3]->href	${jbc_albums}/scandal.html
 #define	albums[3]->buy		https://www.amazon.com/Scandal-Bohemia-Jazz-Butcher-Conspiracy/dp/B00005NORT
 #define	albums[3]->title	A Scandal In Bohemia
 #define	albums[3]->thumb	/images/scandal_front
-#define	albums[3]->blurb	<div class="annotation">The Albatross. A record, I feel, of its time. We were young(ish) and cocky and I think it shows. I still haven't learned to sing on this one, which bugs me too. Still, it was cheap and cheerful, and it helped us to meet an awful lot of people.</div>
-#define	albums[3]->dtreleased	1984
+#define	albums[3]->images	/images/scandal_back
+#define	albums[3]->dtreleased	1984-11
+#define	albums[3]->dtrecorded	1984-08
+#define	albums[3]->studio	Woodbine Studio, Leamington Spa
+#define	albums[3]->Agroove	would you like to swing on a star?
+#define	albums[3]->Bgroove	or would you rather be a fish?
+#define	albums[3]->blurb
+	<div class="annotation">The Albatross. A record, I feel, of its time. We were young(ish) and cocky and I think it shows. I still haven't learned to sing on this one, which bugs me too. Still, it was cheap and cheerful, and it helped us to meet an awful lot of people.</div>
+#define	albums[3]->thanks
+    Our special thanks go to Danny Hopkins, Eric and Julian
+    at the Grand Union, Chris Seventeen, Earl Sikkorski and,
+    of course, to D. Elvis Barker.  We'd like to take this
+    opportunity to thank all of you who have been in touch
+    with us one way or another over the past few months:
+    you know who you are, and we know where you live.
+    <p />
+    This record is dedicated to Big Basil and Rosemiaowrie.
+    Enjoy it if you can - yours ever, The Butcher X.
+#define	albums[3]->liner
+    <p />${smiff}
+    Soft white underbelly = Saturday Scene.
+    <p />${men}
+    Some things never change.  Notice how they never sit
+    together on buses?
+    <p />${hour}
+    An important personal statement.
+    <p />${meat}
+    Could refer to a number of things.  Can it really
+    be about road accidents?  Oblique.
+    <p />${betty}
+    Is this the sort of tune you can play to your mother?
+    <p />${marn}
+    Across the steepes the rumour runs : she's still at it,
+    and <b>she must be stopped!</b>
+    <p />${wheel}
+    Do you know what happens if you leave a fish too long
+    in an elevator?  Educations.
+    <p />${mind}
+    Warp factor 10.  A perfectly reasonable argument in my opinion.
+    <p />${gf}
+    Concerns a number of conflicting feelings (yes, we do have them)
+    about the strangest summer I ever spent.  Yes, it is a shame,
+    and yes, I do miss them all.  Dedicated to the free dinner circuit,
+    and may it never ever happen again.
+    <p />${desert}
+    Not a joke.  It is there, and it is waiting.
+#define	albums[3]->patsez
+    The Albatross.  Since the recording of ${bacon} (almost
+    two years before this one) we had become a "proper" group.
+    For all that, we still pooled our skills in the studio,
+    and this isn't a bad two weeks' work.
+    <p />
+    I think that, lyrically, a lot of the songs are a bit
+    trite and immature, and our inability to take ourselves
+    seriously is much in evidence.  A record, I feel, of
+    its time.  We were young(ish) and cocky and I think it
+    shows.  I still haven't learned to sing on this one,
+    which bugs me too.  Still, it was cheap and cheerful,
+    and it helped us to meet an awful lot of people.
+    <p />
+    I was told, incidentally, that if we released this on
+    Glass we could expect a top global sale of 2,000.  We
+    released it on Glass and sold about 25,000 copies.
+	;;Pat Letter: 1993-08-30;;/letters/93Aug30/albums.html#scandal;;1993-08-30
 
 #define	albums[4]->type	single
 #define	albums[4]->lookup	marnie
@@ -150,15 +247,35 @@
 #define	albums[5]->lookup	runner
 #define	albums[5]->href	${jbc_albums}/roadrunner.html
 #define	albums[5]->title	Roadrunner
+#define	albums[5]->media	12"
 #define	albums[5]->thumb	/images/releases/roadrunner_front
-#define	albums[5]->blurb	
-#define	albums[5]->dtreleased	1984
+#define	albums[5]->images	/images/releases/roadrunner_back
+#define	albums[5]->label	glass_records
+#define	albums[5]->catalog	Glass 1204
+#define	albums[5]->dtreleased	1984-08
+#define	albums[5]->dtrecorded	1984-04
+#define	albums[5]->studio	Beck, Wellingborough
+#define	albums[5]->Agroove	Bigger than Elvis
+#define	albums[5]->liner
+    I still can't believe we've made this record. Big isn't it?
+    I don't know what the A side is about. ${rain} is
+    about the weather, but not really, and you get a
+    special bonus when Max "Twilight Zone" Eider sings
+    about his hobby. I like it, Dave likes it, Jones likes
+    it, but Max doesn't seem to be around just now.
+    Maybe you could like it for him. Be good now, Your Pal,
+    The Butcher X.
+#define	albums[5]->thanks
+	This record is for Sterling
+
+## REALLY SHOULD BE "marnie12.html"
 ##define	albums[6]->type	single
 ##define	albums[6]->lookup	zomby
 ##define	albums[6]->href	${jbc_albums}/zombie.html
 ##define	albums[6]->title	Zombie Love
 ##define	albums[6]->thumb	
 ##define	albums[6]->blurb	Recorded in London one Sunday afternoon in January 1984, Zombie Love is just sick.
+##define	albums[6]->dtreleased	1984
 ##define	albums[6]->dtreleased	1984
 
 #define	albums[7]->type	various
@@ -179,9 +296,50 @@
 #define	albums[8]->lookup	sex
 #define	albums[8]->href	${jbc_albums}/sex.html
 #define	albums[8]->title	Sex And Travel
+#define	albums[8]->label	glass_records
+#define	albums[8]->catalog	MGLALP011
 #define	albums[8]->thumb	/images/releases/sex_front
-#define	albums[8]->blurb	<div class="annotation">Having exhausted the initial stick of JB songs, I was obliged for the first time to write about my life as it was at the time. I think that now we had started to learn about actually creating recordings rather than just recording the sound of a bunch of pals fooling around. This one I'd actually defend at length if I had to.</div>
-#define	albums[8]->dtreleased	1985
+#define	albums[8]->images	/images/releases/sex_back
+#define	albums[8]->dtreleased	1985-05
+#define	albums[8]->dtrecorded	1985-02
+#define	albums[8]->studio	Woodbine Studio, Leamington Spa
+#define	albums[8]->Agroove	boris is digging the potatoes
+#define	albums[8]->blurb
+	<div class="annotation">Having exhausted the initial stick of JB songs, I was obliged for the first time to write about my life as it was at the time. I think that now we had started to learn about actually creating recordings rather than just recording the sound of a bunch of pals fooling around. This one I'd actually defend at length if I had to.</div>
+#define	albums[8]->liner
+	For absent friends
+#define	albums[8]->patsez
+    One day's rehearsal in Kevin Haskin's living room, five
+    days' recording and two days' mixing was all it took
+    for us to make my favourite of the Glass records.
+    <p />
+    Now that the band had done a few dates with decent p.a.
+    systems and stuff, I was beginning to have some sort
+    of a bead on this singing business.  Also, having exhausted
+    the initial stick of JB songs (several of the ${scandal}
+    tunes had actually been written at the time of ${bacon},
+    but were rejected back then as needing further development),
+    I was obliged for the first time to write about my life
+    as it was at the time, which was very different to the
+    way I lived when writing the first two records.
+    <p />
+    Now I was "in a band", had left my day job, had been
+    to Europe... I even started to write songs that were
+    not self-consciously deferential and mocking.  Hence,
+    I guess, the arrival of the first recorded "big ballad"
+    in ${rumour}, where David J.  harmonies at the end STILL
+    give me the shivers.
+    <p />
+    I think that now we had started to learn about actually
+    creating recordings rather than just recording the sound
+    of a bunch of pals fooling around, and the disc does
+    have a nice, unified feel. Credit ${rivers} for
+    his high-speed mixing job.  When I think about it, this
+    l.p.  doesn't really have any "great" tunes, in the sense
+    of numbers that people request or whatever, but it has
+    a nice totality, a good, atmospheric vibe.
+    This one I'd actually defend at length if I had to.
+	;;Pat Letter: 1993-08-30;;/letters/93Aug30/albums.html#sex;;1993-08-30
 
 #define	albums[9]->type	live
 #define	albums[9]->lookup	hamburg
@@ -280,7 +438,7 @@
     record concerns Max's inability to get from one place
     to another without disappearing for long periods.  You've
     heard of the Bermuda Triangle?  Well, Max has shares
-    in it.  <a name="rain"> ${rain}, recorded at the same session,
+    in it.  <a id="rain"> ${rain}, recorded at the same session,
     concerns sex and the weather and the undoubted connection
     between the two.  Incidentally, it didn't rain once during
     the three days we were in the studio!
@@ -408,13 +566,17 @@
 
 #define	albums[14]->type	various
 #define	albums[14]->lookup	uptoyou
+#define	albums[14]->media	12"
 #define	albums[14]->href	${jbc_albums}/va_abstract_5.html
 #define	albums[14]->label	Sweatbox
 #define	albums[14]->catalog	SAM 005
-#define	albums[14]->title	VA: Abstract #5
+#define	albums[14]->title	VA: Abstract Magazine #5
 #define	albums[14]->thumb	/images/releases/abstract5
+#define	albums[14]->images	/images/releases/abstract5_booklet
 #define	albums[14]->contribution uptoyou
-#define	albums[14]->dtreleased	1985
+#define	albums[14]->dtreleased	Spring 1985
+#define	albums[14]->dtrecorded	1985-04-25
+#define	albums[14]->studio	Live, Melkweg, Amsterdam
 
 #define	albums[15]->type	album
 #define	albums[15]->lookup	dist
@@ -691,10 +853,140 @@
 #define	albums[23]->type	EP
 #define	albums[23]->lookup	spook
 #define	albums[23]->href	${jbc_albums}/spooky.html
+#define	albums[23]->label	creation_records
+#define	albums[23]->catalog	8721832
+#define	albums[23]->dtrecorded	(Spooky: 1988-05) (Rest: 1988-06-05, Studio 13 CBC)
 #define	albums[23]->title	Spooky EP
 #define	albums[23]->thumb	/images/releases/spooky_12_front
-#define	albums[23]->blurb	<div class="annotation">Thanks for the money. We'll be spending it on weapons and drugs. The first thing that you have to understand about this disc is that it is not an L.P.: it is a single and a radio session nailed together for your amusement.</div>
+#define	albums[23]->images	/images/releases/spooky_12_back
 #define	albums[23]->dtreleased	1988
+#define	albums[23]->blurb
+	<div class="annotation">Thanks for the money. We'll be spending it on weapons and drugs. The first thing that you have to understand about this disc is that it is not an L.P.: it is a single and a radio session nailed together for your amusement.</div>
+#define	albums[23]->thanks
+    While I'm here, many thanks to all who came to see us on our
+    visit this summer.  Thanks for making us so welcome.  Our
+    apologies to people in Toronto for the awful sound at the
+    concert there: there really wasn't anything we could do.
+    Sorry!  Oh, and to "The Unnamed Journalist" in Winnipeg we
+    say: if you want to slag off ${hitch}, wait 'till he plays
+    there, meathead!!!  To the rest of you, very best regards
+    'till next time.  Love, The Butcher XX.
+#define	albums[23]->liner
+    Howdy!! Welcome to the J.B.C release.  Thanks for the money.
+    We'll be spending it on weapons and drugs.  The first thing
+    that you have to understand about this disc is that it is
+    <b>not</b> an L.P.: it is a single and a radio session
+    nailed together for your amusement.
+    <p />
+    The single is on side A and was recorded in May 1988 at "The
+    Greenhouse" in London.  It was recorded by ${iain} and
+    features Mulreany on drums, O'keefe on bass, Kizzy on
+    guitar, Alex on sax, and me on the rest.  Except for ${best}
+    which features Bhang &amp; Olafssen on bass &amp; drums
+    respectively.  Confused? You ain't heard nothing yet. (Black
+    betty, bam-ba-lam-ooh-babee a-wop-ba-ba-loo bop-sha-la-la
+    na-na-na-na early-in-the-morning whoa-dubious-lou-etc.)
+    <p />
+    The radio interference may be found on side b, and was
+    manufactured on 5th June/Juin '88.  It was engineered by
+    Richard and Yves, and produced by the very wonderful Kevin
+    Komoda with me breathing hotly down his very patient neck.
+    Mulreany, O'Keefe, Kizzy and I play and sing with a cameo
+    appearance from Kevin on organ on ${go}.
+    <p />
+    I hope you dig the noises on this record.  That is, after
+    all, the reason for our making them.
+    <p />    <a id="spooky">
+        In March &amp; April of '88 the Fishpower J.B.C. was on tour in
+        europe.  One of the great attractions of Eurotrucking is the
+        hour-or-so of dancing to be had between packing up the
+        noise-boxes after the show and driving back to the hotel to
+        get profoundly twisted.  This year, however, we found a
+        severe shortage of suitable frugging material and so, on our
+        return to the green unpleasant land, we set about recording
+        our own "Dance Record."  The result is this, you own J.B.C
+        "Acid Shed" version of Classix Four's ${spooky}.  The
+        idea is that you turn it up very loud indeed and thrash
+        about in a carefree fashion until it stops.  Check it, as
+        they say, out.
+    </a>
+        <p />
+    <a id="best">
+        In a similar vein comes the Edgar Wallace mix of ${best},
+        a rap which originally appeared on the indisposible
+        ${fishco} L.P.
+        This version, specifically aimed at Italian discotheques,
+        was set down through a haze of paracetemol, codeine &amp; Red
+        Stripe Lager in defiance of the most apalling toothache
+        known to mankind, May '88 model.  My thanks to the revolting
+        O'Higgins for some serious mix magick.  Linguistic note:
+        "Edgar Wallace" is surrealist rhyming slang for "serious."
+    </a>
+        <p />
+    <a id="blame">
+        I don't know how it is with you (I lose the capacity to read
+        or write after 16 hours of touring) but one of our "great"
+        British cultural institutions is the vile, gutless, tabloid
+        gutter-press.  Hence ${blame}, a savagely twisted glance
+        in the direction of those idiotic "68-88" retrospectives
+        that were filling up the space between oral-retentive breast
+        displays and vicious anti-homosexual/drug/human dignity
+        tirades this summer.  Oh, ask your mum, then...
+    </a>
+        <p />
+    <a id="whitfield">
+        Mulreany soirs me up, giggles, and points out that the
+        chords to ${sarah} would be quite at home in the epicene
+        Steve Miller's <i>Take The Money And Run</i>.  He's
+        right, of course, but then we never get to hear records
+        like that in my town.  As it goes,
+        neither Whitfield of Sarah ever lived in Birchfield Road,
+        but I did, so I know what I'm talking about.  Those upset by
+        Sarah's gratuitous demise towards the end of this unpleasant
+        little narrative will be relieved to learn that she
+        re-appears, alive &amp; well, albeit with a change of name, in
+        the story <i>An Idea Of Europe</i>, gathering dust in a
+        bookstore near you some time in the next ten years. (The
+        white shirt is important.)
+    </a>
+        <p />
+    <a id="sex">
+        ${engine} is a slice of insulting cak with an
+        interesting ending.  The tall, dark &amp; easily-blackmailed
+        ${brent} appears on backing vocals.
+        <a href="http://www.cecer.army.mil/~burnett/MDB/Skinny_Puppy/">
+        Skinny Puppy</a> fans get writing.  And thanks for the
+        liquor, guys... We don't really think you have anything at
+        all in common with Bruno Gerussi...
+    </a>
+        <p />
+    And, well I never, here's another version of ${blame}.
+    Without the civilising influence of <a href="${jbc_people}/alex_green.html">
+    Alex "Savage But Reasonable" Green</a>
+    (already suitably humiliated for absence
+    on Canadian dates during the previous summer) or the
+    supertechnopower hot Casio SK-1, this really does start to
+    get ugly.  Which is just as it should be, really.  Did you
+    ask your mum yet?  No, well, it's a bit of a problem, I
+    agree.  Why not just fucking educate yourself instead?
+    <a id="girl">
+        ${go} is for my friend Phil (ip of Walshingham)
+        Parfitt, singer &amp; writer with ${perfect} and class A-!
+        human being.  It is about
+        a number of things, with special emphasis on the popular
+        chord "E".  Listen and pass out.
+    </a>
+        <p />
+    <a id="flan">
+        Just don't forget to come round for ${flan}.
+        This is my favourite recording on this side, owing partly to
+        Paul &amp; Laurence's zoom groove.  (That's Laurence on
+        ash-trays, train-spotters.)  What started out as an
+        innocent-enough Mary Perry joke on ${bacon} (the "real"
+        first L.P.) took an ugly turn when somebody wrote in and
+        told me that it had actually happened to a friend of his.
+        So then it went like this.  Yuk.  Grrrr.
+    </a>
 
 #define	albums[24]->type	album
 #define	albums[24]->lookup	planet
@@ -709,8 +1001,8 @@
 #define	albums[24]->blurb
 	<div class="annotation">Early 1989 was, indeed a strange and desperate time after all that triumphalist Tory looting that had been going on. We listened to a lot of hip-hop and soul music at the time, and I think that we considered ourselves sufficiently HARD to take the whole fucker on in an l.p. Possibly with a more "clued-in" producer and a bit more self-discipline we could have come up with something like what we were looking for.</div>
 #define	albums[24]->thanks
-    These lyrics transcribed by the Butcher with an Eddwg
-    1800 Profitpen, because you're always on at me to put
+    These lyrics transcribed by the Butcher with an Edding 1800 Profitpen,
+	because you're always on at me to put
     them on the sleeve! Hope you enjoy this collection.  That
     is, after all, what we made it for.  Best regards, The
     Butcher X.
@@ -860,8 +1152,11 @@
 #define	albums[28]->type	single
 #define	albums[28]->lookup	welove
 #define	albums[28]->href	${jbc_albums}/weloveyou.html
+#define	albums[28]->label	creation_records
+#define	albums[28]->catalog	CRE083T
 #define	albums[28]->title	We Love You
 #define	albums[28]->thumb	/images/releases/weloveyou_front
+#define	albums[28]->images	/images/releases/weloveyou_back
 #define	albums[28]->blurb	
 #define	albums[28]->dtreleased	1990
 
@@ -948,45 +1243,315 @@
 
 #define	albums[31]->type	single
 #define	albums[31]->lookup	yoyo
+#define	albums[31]->onalbum	blue
 #define	albums[31]->href	${jbc_albums}/yo_yo.html
 #define	albums[31]->title	She's A Yo-Yo
+#define	albums[31]->label	Sky Records
+#define	albums[31]->catalog	7-5081-2
+#define	albums[31]->country	USA
 #define	albums[31]->thumb	/images/yo_yo
 #define	albums[31]->blurb	
 #define	albums[31]->dtreleased	1991
+
 #define	albums[32]->type	single
 #define	albums[32]->lookup	shir
+#define	albums[32]->onalbum	blue
 #define	albums[32]->href	${jbc_albums}/shirley.html
 #define	albums[32]->title	Shirley Maclaine
+#define	albums[32]->label	Shock
+#define	albums[32]->catalog	SHOCKCD4010
+#define	albums[32]->country	Australia
 #define	albums[32]->thumb	/images/shirley
+#define	albums[32]->thumb	/images/shirley_back$$/images/shirley_cd
 #define	albums[32]->blurb	
 #define	albums[32]->dtreleased	1991
 #define	albums[32]->label	Shock
 #define	albums[32]->catalog	SHOCK CD 4010
 #define	albums[32]->country	Australia
+#define	albums[32]->liner
+    This EP is dedicated to Maynard F# Crabbes in appreciation
+    of his dedication to advancing the cause of the jazz
+    butcher in australia.
+#define	albums[32]->notes
+    (The liner self-dedication was not approved by Pat!)
 
 #define	albums[33]->type	album,project
 #define	albums[33]->lookup	damn
 #define	albums[33]->media	CD;LP
 #define	albums[33]->href	${jbc_albums}/blackeg.html
 #define	albums[33]->title	The Black Eg
+#define	albums[33]->label	creation_records
+#define	albums[33]->catalog	CRECD086
 #define	albums[33]->thumb	/images/blackeg
 #define	albums[33]->project eg
-#define	albums[33]->blurb <a href="${jbc_people}/von_dammerung.html">Karel</a>'s two brothers, Otto and Emil, arrived in Vienna, having taken advantage of the new freedoms introduced by the enlightened government of Vaclav Havel, and Karel obtained in a second hand store and ancient sequential circuits drum machine and a primitive sampler. The Black Eg was born.
 #define	albums[33]->dtreleased	1991
+#define	albums[33]->blurb
+	<a href="${jbc_people}/von_dammerung.html">Karel</a>'s two brothers, Otto and Emil, arrived in Vienna, having taken advantage of the new freedoms introduced by the enlightened government of Vaclav Havel, and Karel obtained in a second hand store and ancient sequential circuits drum machine and a primitive sampler. The Black Eg was born.
+#define	albums[33]->liner
+    Karel Von D&auml;mmerung, writer, adventurer and self-proclaimed
+    beacon of the bohemian gonzo faction, has long been a legend in
+    the seedier cafes of central Europe.  For many years
+    his extraordinary fanzine <b>Sinful Beat</b> provided
+    a lifeline to those in Czechoslovakia and Hungary who
+    wanted to keep abreast of international music developments,
+    while his own reckless encounters with authority provided
+    both hilarity and inspiration to the inhabitants of grimly
+    over-protective regimes.  Unlikely tales of his personal
+    crusade on the frontiers of modern pharmacology are legion,
+    and there was a time when he said to be known by sight
+    to some two thirds of all the members of the Czechoslovakian
+    secret police.
+    <p />
+    Karel left his native land and settled in Vienna in 1985
+    after being refused re-entry at Prague airport by the
+    authorities.  The word is that, returning from some partially
+    legitimate 'Cultural Exchange' trip to Cuba, he caused
+    havoc at the Customs desk by presenting the official
+    with a large bag of high grade ganja and announcing his
+    intention to import two live Pygmy Crocodiles.  Somehow
+    he succeeded in obtaining Political Refugee status in
+    Austria, where for the first time he was able openly
+    to publish his deranged writings.
+    <p />
+    Early in 1989 two events occured which led to the formation
+    of the combo whose first waxings you are now holding.
+    First, Karel's two brothers, Otto and Emil, arrived in
+    Vienna, having taken advantage of the new freedoms introduced
+    by the enlightened government of Vaclav Havel. Second,
+    Karel obtained in a second hand store and ancient sequential
+    circuits drum machine and a primitive sampler.  ${eg} was born.
+    <p />
+    After travelling to Italy for the World Cup, where they
+    did their best to establishthe hitherto concept of Czech
+    hooliganism, the brothers Von D&auml;mmerung travelled
+    across Europe, arriving in England at the end of July.
+    Whilst there, they circulated copies of a cassette they
+    had made. The general reaction was one of disbelief.
+    Many people were heard to make rather unkind remarks
+    about people who took too many drugs.
+    <p />
+    The record which you now have in your hands has been
+    mastered from that cassette.  Recorded on four-track
+    equipment in bedrooms across central Europe, it makes
+    no claim towards sonic sophistication.  Indeed it makes
+    no real claims of any kind whatsoever.  The Brothers
+    Von D&auml;mmerung are only too proud to retell the story
+    of how, at their first and only public appearance, at
+    a bar in Vienna, the proceedings closed in utter confusion
+    after members of the public, objecting to The Black Eg's
+    relentlessly tedious version of Morricone's theme to
+    <i>The Good, The Bad &amp; The Ugly</i> caused a near riot
+    when they attacked the band with C.S. gas.
+    <p />
+    Nor are the "band" remotely apologetic for their spectacularly
+    odd choice of samples.  It is tempting to speculate that
+    all the loops on this record derive from free review
+    copies sent to <b>Sinful Beat</b> in the hope of publicity.
+    Certainly one can detect the presence of the ansaphone machine
+    on many tracks.
+    <p />
+    Since ${creat} acquired the tapes for this album they
+    have been unable to locate Karel Von D&auml;mmerung or
+    either of his brothers.  There is a rumour that they
+    are currently in Los Angeles engaged on some form of
+    private espionage.  Other sources have them in Vietnam,
+    looking to collaborate with local musicians on a curious
+    hybrid of the native folk music and the American Twist
+    craze which blossomed in the mid-sixties.  Their names
+    have been linked with that of California's ${braind}
+    and east coast legend Meathook Wiliams
+    (Stepfather of the Blues).  It is quite possible that
+    no more will ever be heard from there shadowy degenerates.
+    Meanwhile ${creat} is proud to offer this brief and fascinating
+    glimpse into the world of three foolish central Europeans
+    who thought they were making dance music.
+    ;;A.C Lionheart. London;;;;1991.
+
 #define	albums[34]->type	compilation
 #define	albums[34]->lookup	uncond
 #define	albums[34]->href	${jbc_albums}/unconditional.html
+#define	albums[34]->label	Polygram
+#define	albums[34]->catalog	PCD182
+#define	albums[34]->country	Canada
 #define	albums[34]->title	Unconditional
 #define	albums[34]->thumb	/images/uncond
+#define	albums[34]->images	/images/uncond2
 #define	albums[34]->blurb	One of the better Creation-era compilations. Canadian release.
 #define	albums[34]->dtreleased	1992
+#define	albums[34]->liner
+    <a id="yo">
+        ${yo} (Edit)
+        A sorry tale of bad people on bad diets doing bad
+        things. ${lix} gets
+        to do his impressions of "Desert Storm" while
+        ${richard} goes
+        backwards.  Joe makes motorcycle and I <i>still</i>
+        feel like the Elephant Man.
+    </a>
+        <p />
+    <a id="shirley">
+        ${shirl}
+        Not, obviously enough, about the dear lady herself,
+        more about a miserable rainy night in Camden and the
+        extraordinary things that some people read these
+        days.  Remember, when somebody writes a "self-help"
+        book that's exactly what they are doing: helping
+        themselves.  Flipper says "hi", by the way.
+    </a>
+        <p />
+    <a id="harlan">
+        ${harlan}
+        If you let me out on my own in that condition, what
+        do you think is going to happen?  Butcher and
+        Twilight Zone collide on the streets of Hollywood,
+        resulting in ongoing art-misery attack and some
+        deeply aquamarine guitar from that nice
+        ${astor}.
+    </a>
+        <p />
+    <a id="filth">
+        ${filth}
+        Uh... in the Sixties Beirut was a real playground
+        for the rich, like Cannes or Ibiza or something.  A
+        nice place to visit.  Sometimes things really do
+        just slide right out of control, don't they?
+        Lexicographical note: to anyone who finds the
+        juxtaposition of the words "Beirut" and "filth" a
+        tad obvious, I would just say that "filth" is an
+        agreeable little lowlife term that one uses in
+        London to describe our wonderful police force.  I
+        trust that clears things up a little.
+    </a>
+        <p />
+    <a id="smith">
+        ${smiff} (Big Return)
+        Well, the JBC really did get a big return off this
+        one.  It opened a lot of doors for us in Europe and
+        America, and listening back now I think I can see
+        why.  No, I mean that <i>Hammond</i>...
+    </a>
+        <p />
+    <a id="jungle">
+        ${jungle}
+        The title comes from a rather noir little TV series
+
+        from the early Sixties wherein the great Herbert Lom
+        played the extremely sexy and not entirely
+        unbrilliant Dr. Alexander Kordu, a psychiatrist with
+        the handy ability to sort out even the most
+        appalling cases within sixty minutes. I love that
+        show, but I love touring better.  By the way, anyone
+        who makes suggestions about sex and travel is being
+        extremely rude.
+    </a>
+        <p />
+    <a id="girl">
+        ${go}
+        Tu as vu toutes les &eacute;toiles?  The JBC lush
+        out in tribute to the (sadly departed)
+        ${perfect}, featuring a superlative
+        example of the ${richard} guitar assult.  The lead vocal was
+        recorded in the studio garden at one in the morning
+        in mid-January.  The reasoning escapes me now.
+        Probably, I had been very bad.
+    </a>
+        <p />
+    <a id="best">
+        ${best} (Edgar Wallace Mix)
+        "Edgar Wallace" means "serious" in surrealist
+        rhyming slang, which is a good way to describe the
+        toothache I had when O'Higgins and I did this mix.
+        Odd barnyard noises may be blamed on the
+        aforementioned ${perfect}, who got in there somewhere.
+    </a>
+        <p />
+    <a id="drugs">
+        ${drugs}
+        We were halfway across the rockies in supernatural
+        British Columbia when I realised that I had never
+        come across a song with this title before.
+        Obviously something had to be done.  Dave Francolini
+        (a wonderful man who should not be allowed to drive)
+        contributed some of the most hyperactive handclaps
+        that I have ever experienced.  Then we tied him up
+        and put him with the others.
+    </a>
+        <p />
+    <a id="tues">
+        ${tues}
+        Is it a road song?  Is it a love song?  Is it a
+        mushy title or what?  I'm sorry, Jesus, every line
+        is true.  I never enjoyed vanilla as much in all my
+        life.  Watch carefully: Californian brainfried
+        road-accident-from-outer-space guitar in the area!
+    </a>
+        <p />
+    <a id="satday">
+        ${sat}
+        The climactic opposite of ${tues},
+        definitely a Nordic vibe to this
+        one.  Except for the middle instrumental, which
+        always makes me think of people hang-gliding in the
+        Alps: I think it may have been a Martini commercial
+        that I once saw on TV.
+    </a>
+        <p />
+    <a id="panic">
+        ${panic}
+        The desk clerk couldn't believe it.  This drunk
+        comes staggering into the lobby in the middle of a
+        thunderstorm and starts wittering in bad German.  To
+        keep him from dripping all over the place the clerk
+        hands him a room key.  "Excellent!" burbles the
+        drunk, "Room 109!"  The scarey stuff kicked in the
+        bathroom.  You know, I once spent an evening
+        indulging heart attacks in a Vancouver hotel room by
+        pinching my toe.
+    </a>
+        <p />
+    <a id="ptime">
+        ${party} (Original)
+        I guess you could say that this was the first jazz
+        butcher song ever written.  This recording is almost
+        ten years old now.  I find it staggering, but there
+        are hundreds of people out there (I've seen them) on
+        whom the irony has yet to take effect.  Perhaps it
+        would help them to know that the events described in
+        this song ended up with the writer in hospital.  We
+        all like a laugh, though, don't we?
+    </a>
+        <p />
+    <a id="angels">
+        ${angels}
+        This is still one of my favourites.  I wrote it in
+        1986 (the day they bombed Tripoli, in fact) about
+        things that would only come to pass three years
+        later.  Or something.  Oh God, I never make any
+        sense when I start to talk about this tune.  The
+        lyrics just showed up, like automatic writing or
+        something.  I love it anyway, and I hope you love it
+        too.
+    </a>
+
 #define	albums[35]->type	single
 #define	albums[35]->lookup	water
+#define	albums[35]->onalbum	bus
+#define	albums[35]->label	creation_records
+#define	albums[35]->catalog	PROC 1934
+#define	albums[35]->country	Australia
 #define	albums[35]->href	${jbc_albums}/sweet_water.html
 #define	albums[35]->title	Sweet Water
 #define	albums[35]->thumb	/images/sweetwater_front
-#define	albums[35]->blurb	
+#define	albums[35]->images	/images/sweetwater_back
 #define	albums[35]->dtreleased	1993-09-13
+#define	albums[35]->blurb	
+#define	albums[35]->notes
+    Auf vielfachen Wunsch haben wir uns entschlosses, "Sweet Water" aud dem
+    aktuellem Album ${bus} von The Jazz Butcher Conspiracy auszukoppeln.
+    <p />
+    Die Mannen um Pat Fish, Paradiesvogel der englischen Indie-Szene,
+    prasentieren mit "Sweet Water" einen absolut radiotauglichen Ohrwurm,
+    ganz im Zeichen des Pschedelic-Rock der 60er.  Viel SpaB!
 
 #define	albums[36]->type	album
 #define	albums[36]->lookup	bus
@@ -1031,15 +1596,53 @@
 #define	albums[37]->lookup	family
 #define	albums[37]->href	${jbc_albums}/western.html
 #define	albums[37]->title	Western Family
+#define	albums[37]->label	creation_records
+#define	albums[37]->catalog	CRECD148
 #define	albums[37]->media	CD
+#define	albums[37]->CDring	the floor was slightly wet
 #define	albums[37]->thumb	/images/western
-#define	albums[37]->blurb	<div class="annotation">For loonie completists only, for sure, though, if you listen through the muck, you'll see that we did our bit.</div>
+#define	albums[37]->images	/images/western2
 #define	albums[37]->dtreleased	1993
+#define	albums[37]->blurb
+	<div class="annotation">For loonie completists only, for sure, though, if you listen through the muck, you'll see that we did our bit.</div>
+#define	albums[37]->thanks
+    <b>Thanks and respect</b> are extended to Frank Riley,
+    Peter McCulloch, Jennifer Blair, Jim Parker, Pam Cross,
+    Ellen and Suzanne at In-Press, Gareth Hardman, Steve
+    Cranwell, Sal Garza, J'Anna Jacobi, ${deirdre},
+    Kottie Lurie, <a href="http://davidwhittemore.com/htdb/gallery/joe.html">Roadkill Joe</a>,
+    The Jersey Posse, ${lucien}, Gillian Barclay,
+    Larry Collins, Conrad Sverkersson, Tom Peterson, Don
+    Chow, Douglas Long, Anne Kiener, Liz Garo, ${coonce},
+    Rob Zieger and the Seattle Crew, ${knight} and all
+    in Atlanta, Ligga and Meathook, Tony Brusdeilins, The
+    Elefanthaus Posse, Tony and ${joe}, Rex Sargeant,
+    Judge Curtis, The Walkabouts, LX Chilton, ${mildew}, D.
+    Elvis Parker, and the Scum.
+#define	albums[37]->liner
+    <b>Recorded live</b> by ${del} at Tippitina's, New Orleans;
+    The Cotton Club, Atlanta; El Mocambo, Toronto; The Nick,
+    Birmingham, Alabama and ${AX}, Chicago, Illinois, USA.
+    Mastered by ${rev}.  No overdubs, drop-ins or any of that
+    nonsense.
+#define	albums[37]->patsez
+    Yes, I believe something horrible DID happen to
+    <a href="${jbc_albums}/western_tape.html">the tapes</a>
+    somewhere.  The first time that ${richard} and I played
+    this CD we sat there laughing.  Still, Bootleg No.2 is
+    easier to get used to than <a href="${jbc_albums}/hamburg.html">the
+    first one</a>, so again, it's a souvenir.  After all,
+    if you were there, you can remember what it really sounded
+    like. For loonie completists only, for sure, though,
+    if you listen through the muck, you'll see that we did our bit.
+	;;Pat Letter: 1993-08-30;;/letters/93Aug30/albums.html#family;;1993-08-30
 
 #define	albums[38]->type	various
 #define	albums[38]->lookup	va_abus_21
 #define	albums[38]->href	${jbc_albums}/va_abus_dangereux_21.html
 #define	albums[38]->title	VA: Abus Dangereux #21
+#define	albums[38]->label	Abus Dangereux (magazine)
+#define	albums[38]->catalog	Abus21
 #define	albums[38]->country	France
 #define	albums[38]->thumb	/images/releases/vodka
 #define	albums[38]->dtreleased	1994
@@ -1047,25 +1650,228 @@
 #define	albums[38]->contribution vodka
 
 #define	albums[39]->type	single
-#define	albums[39]->lookup	16yr
+#define	albums[39]->lookup	_16yr
+#define	albums[39]->onalbum	ill
+#define	albums[39]->label	creation_records
+#define	albums[39]->catalog	CRESCD167
 #define	albums[39]->href	${jbc_albums}/sixteen_years.html
 #define	albums[39]->title	Sixteen Years
 #define	albums[39]->thumb	/images/releases/sixteenyears_front
-#define	albums[39]->blurb	At a time when there would appear to be no need for it, here they come again. That Purveyor of some of the most heavenly and enduring pop non-hits you're ever likely to hear has regrouped his gang of aging sociopaths and built himself, in the barns and sheds of Northamptonshire, a band.
+#define	albums[39]->images	/images/releases/sixteenyears_back$$/images/releases/sixteenyears_a$$/images/releases/sixteenyears_b
 #define	albums[39]->dtreleased	1995-03-06
+#define	albums[39]->dtrecorded	1994-10
+#define	albums[39]->studio	Northampton, UK
+#define	albums[39]->blurb
+	At a time when there would appear to be no need for it, here they come again. That Purveyor of some of the most heavenly and enduring pop non-hits you're ever likely to hear has regrouped his gang of aging sociopaths and built himself, in the barns and sheds of Northamptonshire, a band.
+#define	albums[39]->bishopsez
+    "Privatised businesses have shareholders who expect to make
+    financial gain from their stake in essential public services infested
+    with junior rat-management, and PEOPLE WONDER WHERE ALL THE FUCKING
+    MONEY'S GONE." Whoever compared it to "${excel}"
+    wasn't far from the mark, except it's markedly less polite.
+
 #define	albums[40]->type	album
 #define	albums[40]->lookup	ill
 #define	albums[40]->href	${jbc_albums}/illuminate.html
 #define	albums[40]->title	Illuminate
 #define	albums[40]->media	LP;CD
 #define	albums[40]->country	UK
+#define	albums[40]->notes	The JBC Analogue Wildlife Sampling Tendency present Illuminate (the difficult tenth)
 #define	albums[40]->label	creation_records
 #define	albums[40]->catalog	CRECD182
 #define	albums[40]->thumb	/images/releases/illuminate_front
-#define	albums[40]->blurb	<div class="annotation">1994 live line-up stumbled through a series of tunes and such under Butcher's direction, aided and abetted by a number of the usual suspects;
-			<a href="${jbc_people}/alex_lee.html">Alex Lee</a> on guitar,
-			<a href="${jbc_people}/alex_green.html">Alex Green</a> on saxes, that sort of thing.</div>
+#define	albums[40]->images	/images/releases/illuminate_back$$/images/releases/illuminate_inside1$$/images/releases/illuminate_inside2$$/images/releases/illuminate_inside_pic
 #define	albums[40]->dtreleased	1995-04-03
+#define	albums[40]->blurb
+	<div class="annotation">1994 live line-up stumbled through a series of tunes and such under Butcher's direction, aided and abetted by a number of the usual suspects;
+	<a href="${jbc_people}/alex_lee.html">Alex Lee</a> on guitar,
+	<a href="${jbc_people}/alex_green.html">Alex Green</a> on saxes, that sort of thing.</div>
+#define	albums[40]->liner
+	<b>Cars Of Destiny</b> - <i>The view from Abington Square</i>
+    <p />
+    Built on a swamp, the natives will tell you.
+    <br />"The Nene Delta" I've heard it called; or "Murder Mecca
+    of the Midlands"; or "${chick}."
+    <br />Anyone who's ever really thought about the place feels
+    it deep inside; somewhere in Northampton lies the Heart Of
+    Darkness.
+    <p />
+    Abington Square is more of a triangle, a wide and windy
+    expanse where, amid a welter of traffic islands, the
+    Kettering and Wellingborough roads converge.  Marooned on
+    one such islet stands the atheist M.P. Bradlaugh, still
+    wagging an admonitory finger at those who would buy their
+    convictions in bulk.  He was refused his seat in Parliament
+    because he was not prepared to swear an oath on the Holy
+    Bible.  Notwithstanding which, the people of Northampton
+    persisted in electing him over and over again.  Eventually
+    there was a riot in town, and the Army had to be sent for.
+    Recently a sad priest, who had clearly lost his flock to the
+    church of medicine and found the time weighing heavy on his
+    hands, suggested that the statue of Bradlaugh was a godless
+    example to the citizenry and should be pulled down.
+    <br />
+    On high days and holidays members of the Jesus Army sect
+    parade around town in paramilitary garb; some of them could
+    knock poor Bradlaugh down with their breath.
+    <p />
+    Perhaps they might pause to look for their special kind of
+    convert in the War Memorial that looms behind Bradlaugh on
+    the largets of the chain of islands.  Standing long and low
+    on its concrete football feet, it is inhabited largely by
+    advanced cider technologists and those with a nostalgia for
+    the golden days of glue.  Cars, lorries and buses wheel
+    around between the islands in a bewildering fashion; it is
+    possible that some of the denizens of the War Memorial have
+    been trapped there for some time.
+    <p />
+    Across two busy lanes of traffic, at the north-west corner
+    of the square, stands a bright new building.  It has huge
+    glass windows, for it is a motor car showroom.  All the cars
+    in the show room will cost you more than a house round these
+    parts.  The staff inside, as visible to passers-by as the
+    vehicles on display, are well turned out young people, and,
+    in an incongruous effort to bestow a human touch upon their
+    workplace, they have installed there a large toy leopard.
+    Or jaguar.  Cars of destiny - the JBC salutes you.
+    <p />
+    The November light begins to dim.  Soon it will be time to
+    spill out of the Racehorse and thrill to the display of
+    festive lights on the jeweller's shop.  But in an alley
+    around the back, there is work to be done.  A small man with
+    a bald head is standing in the remains of the afternoon sun,
+    holding a ferocious looking whip, the handle of which
+    appears to be the forelimb of some kind of deer.  He is
+    surrounded by microphones and a knot of inquisitive small
+    girls.  A taller man with long hair calls to him from the
+    roof above: "You are making... a film, ja?"
+    <p />
+    For something strange is happening at The Lodge.  An unruly
+    association of aging sociopaths is gathering here to commit
+    their feelings to magnetic tape.  Here, as close to the very
+	Heart Of Darkness as analogue equipment will permit, the JBC
+    squander Kremlin gold on honeyed dum-dum shells and doomed
+    archaeological relics through which to filter their erudite
+    and sickened communiques to the world beyond their most
+    diseased imaginings.
+    <p />
+    And you uncannily, and holding now the results of those
+    strange days on Abington Square.  Beasts and super-beasts,
+    phantom truck rides through East and West, the living and
+    the (jackal-headed) dead, faith and delusion, The Fear Thing
+    and a whole new theory of earthly evolution.  With glass
+    doors.
+    <p />
+    Real stories with real airbrakes - captured on an intrepid
+    expedition which took Herr Doktor and his trusty tape
+    machine deep into the very bowels of the cavernous bus
+    station early one Sunday morning.  (the time at which most
+    people disappear.)
+    <p />
+    Come trawl the zeitgeist with the JBC, where it's
+    one-man-one-stick, and a bed of rice really is a bed of rice.
+    Listen, if you will, to these stories from Abington Square.
+    <p />
+    ${pat}, Northampton '95
+    <br />(Apologies to ${pete} re: the cars.)
+    <p />
+    Recording engineered by Max Read at the Lodge Studio,
+    Northampton (Robert John Godfrey, Chef-Patron), October and
+    November 1994.
+    <p />
+    The songs were written by ${pat}, except ${beetle} written by
+    Pat Fish/${hend} and arranged by the JBC, and are published by
+	${creat} Songs Limited.
+    Produced by ${dj}.
+#define	albums[40]->thanks
+    <b>The JBC extend their thanks and respects to:</b>
+    <p />
+    Kathie, David, Max, Robert, Emad Salama (Patron of the
+    Arts), ${nick}, Eddie the Brick (Opsiag &amp; Distributie), Sue
+    Pearson, Mark Edwards, ${jules} (for brand new AC30), Blind
+    Lemon Johnson and Jane the Pain, Paul Williams, Botty, Sumo,
+    Mister H., Werner and the Fraternity of Saint Hubertus,
+    ${rocket}, ${strange}, Stranger Tractors, President Bush,
+    Diversion, Ubu Swirl, Joe haskins, Tom Hall, Susan, Ariane,
+    Clemence, Adelaide, Michel, Roselyne, Daniel, Simone,
+    Sophie, and the new one, Toby Egelnick (bespoke layouts),
+    Anne Joly, ${paul}, Steve Winkler, ${richard}, Lucien Borderline
+    and Wonderflox, Jasmine, Lisa the
+    <a href="${jbc_people}/von_dammerung.html">Von Daemmerung Brothers</a>,
+    <a href="${jbc_people}/colin.html">Colin</a>, ${del}, the Institute
+    of Snakes, Paul Stanton, Uncle Dave and the Family Shed,
+    Cafe Pacifico, ${wolfi}, Robert Goodman, C.D. Mann,
+    Michael Holloway, Steve Waring, Uli, Michael Horton-Jupiter,
+    ${syd}, Slurps Cafe-Bar, Screaming Mimi, H.H. Munro, Blair
+    MacDonald, the Racehorce, Alex Chilton, Barry Everitt, New
+    Mark, Alan McGee, James Kyllo, Slaughter, and all our
+    guests.
+    <p />
+    <hr>
+    "<i>The adept had to become justified.
+    <br />The justified must then become illuminate.</i>"
+    <p />
+    Hans Stefan Santesson
+    <i>Understanding Mu</i>
+    <hr>
+    If you have access to the internet, you can find out more
+    about the JBC by calling
+    <a href="${jbc_root}">
+    http://purgatory.ecn.purdue.edu:20002/JBC/jbc.html</a>
+#define	albums[40]->patsez
+
+    New JBC lp duly completed in secure Northampton location.
+    1994 live line-up stumbled through a series of tunes and such under
+    Butcher's direction, aided and abetted by a number of the usual
+    suspects; ${lix} on guitar, ${green} on saxes, that sort of thing.
+    Max Read was engineer for the session, and he also
+    contributed a lot of the backing vocals. He is a good looking chap,
+    non-smoker, very able and agreable. Judge Curtis was on hand to play
+    the Hungarian Stock Whip.
+    <p />
+    <i>"Where did you get that?"
+    <br />"I got it from Jane."
+    <br />"Jane who?"
+    <br />"Jane the Pain, who do you think?"</i>
+    <p />
+    A chap from Stranger Tractors called Bolly played dijeridoo on one
+    number. Writer currently unable to establish JBC motives behind this.
+    Musical Dave, of Northampton combo Ubu Swirl (Do they know that the
+    JBC call them "Hobo Swill"?), contributed a spiffy guitar, and there
+    were further vocal contributions by friends and family. The WOLFS,
+    I am assured, are not a sample. The Butcher mixed one or two of the
+    shorter tracks, but the vast majority of the mixing was handled -
+    in his own inimitable style - by producer ${dj}.
+    David gave the impression that he was having a whale of a time.
+    <p />
+    The JBC themselves are agreed that "Man 0f The Match" on this record
+    has to be ${dooj}. Apart from dismissing his bass parts in about 36
+    minutes, he also contributed guitar and some astonishing backing
+    singing....and he plays the SYNTHESISER! Moves instituted by the
+    drummer to entitle the album "DOOJ IS COOL" were, however, swiftly
+    and brutally suppressed by the ruling junta.
+#define	albums[40]->bishopsez
+    The Jazz Butcher Conspiracy's new long player has been titled,
+    mastered, cut, approved, decorated, roached and smoked. After lengthy
+    (like, stupidly lengthy) deliberations, the title finally settled
+    upon is "Illuminate" (which is to be pronounced, in order of
+    preference, i) as an adjective, like "illiterate", ii) as the Italian
+    feminine plural of "Illuminati" or, iii) if you simply must, the
+    obvious way) (see how useful advance information can be.. imagine how
+    you will be able to laugh at your poorly-advised friends when they
+    call the record Illumin8 like the bourgeois proles you most certainly
+    aren't). The discussion was diverted from its original course with
+    the arrival of Jean-Pierre Loonie's artwork, which features (as
+    alluded to in "${cute}") candles-a-gogo, and a religious
+    lunatic from, we are assured, Idaho with rather less sartorial
+    wherewithal than might be considered...erm... decent. It was this
+    latter factor which swayed from our original "final" choice of
+    "Beasts and Superbeasts" for, perhaps a little rarely for the JBC,
+    taste had to prevail. The mastered version sounds markedly better
+    than the original mix, a fact for which we are all grateful, and we
+    now have some hopes for people actually liking this waxing (as Fishy
+    said to me on the telephone only the other day, it's right up the
+    Jazz Butcher fan's STUPID street).
 
 #define	albums[41]->type	compilation
 #define	albums[41]->lookup	drainglass
@@ -1251,81 +2057,742 @@
 
 #define	albums[42]->type	compilation
 #define	albums[42]->lookup	violent
+#define	albums[42]->label	creation_records
+#define	albums[42]->catalog	NR2002
 #define	albums[42]->href	${jbc_albums}/violent.html
-#define	albums[42]->title	&iexcl;Excellent! The Violent Years
+#define	albums[42]->title	¡Excellent! The Violent Years
 #define	albums[42]->thumb	/images/violent
-#define	albums[42]->blurb	<div class="annotation">Millions of years ago, dinosaurs ruled the Earth. Today the Galileo Space Probe orbits mighty planet Jupiter. The Jazz Butcher Conspiracy first appeared in June 1982 <a href="${jbc_gigs}/1982/Jun12.html">in the back room of the Black Lion in Northampton</a>. They finally drank the bar dry in a small town in <a href="${jbc_gigs}/1996/Aug20.html">in Mallorca on the 20th August 1996</a></div>
+#define	albums[42]->images	/images/violent2
 #define	albums[42]->dtreleased	1997
+#define	albums[42]->blurb
+	<div class="annotation">Millions of years ago, dinosaurs ruled the Earth. Today the Galileo Space Probe orbits mighty planet Jupiter. The Jazz Butcher Conspiracy first appeared in June 1982 <a href="${jbc_gigs}/1982/Jun12.html">in the back room of the Black Lion in Northampton</a>. They finally drank the bar dry in a small town in <a href="${jbc_gigs}/1996/Aug20.html">in Mallorca on the 20th August 1996</a></div>
+#define	albums[42]->liner
+   Millions of years ago, dinosaurs ruled the Earth.
+    Today the Galileo Space Probe orbits mighty planet Jupiter.
+    The Jazz Butcher Conspiracy first appeared in June 1982
+    <a href="${jbc_gigs}/1982/Jun12.html">in the back room
+    of the Black Lion in Northampton</a>.
+    They finally drank the bar dry in a small town
+    <a href="${jbc_gigs}/1996/Aug20.html">in Mallorca on
+    the 20th August 1996</a>.
+    On the achievement of this ambition, the most
+    deconstruction-resistant beat group of our times
+    finally has the grace to call it a day.
+    What they leave on this disc is a collection of some
+    of the more popular tunes from their long and chaotic
+    association with the ${creat} label.
+    <p />
+    1. ${yo}
+    <blockquote>
+    The first take of the "${blue}" sessions:
+    four desperate men in a haunted room.
+    ${lix}'s fuel-air blasts and some two-wheeled
+    cornering from Mister ${paul} drive this heads-down squalid
+    tale of bad people doing bad things.
+    </blockquote>
+    2. ${odd}
+    <blockquote>
+    Written at Basement Fish, the JBC's secret
+    central London base, about the man
+    next door.  Neither Mister Odd nor
+    Harry, the proprietor of the basement
+  are with us now.  God rest their souls.
+    </blockquote>
+    3. ${drugs}
+    <blockquote>
+    Inspired by a photo in a sixties college
+    yearbook and written in a Texas motel
+    room, this owes a large musical debt to
+    L.A. band ${mildew}, which the Butcher
+    somehow thought he could
+    make up by shouting, "Hey, Charlie"
+    over the guitar solo.
+    </blockquote>
+    4. ${kid}
+    <blockquote>
+    One will appreciate that a few years have
+    passed since this was written.  He is
+    Bicycle Bloke now.  One day he will
+    hear this tune and the Butcher will be
+    toast: "${kid} - the jumped up
+    B-side that ruined my life."
+    </blockquote>
+    5. ${wrong}
+    <blockquote>
+    In 1987, ${green} and the Bucher <a href="${jbc_gigs}/1987">toured
+    France for a month</a> in a small car with a
+    crazed and almost totally blind Parisian
+    punk rocker and a tour manager called
+    Captain Dogboy.  It is an indication of
+    their state of mind that they actually
+    considered using this title.  Five minutes
+    of squelching noises, basically.
+    </blockquote>
+    6. ${chick}
+    <blockquote>
+    Blind drunk and totally broke, the JBC bite
+    the hand that feeds them.  Careering
+    unsteadily towards thirty, with the
+    Thatcher thing beginning to bite, the
+    Butcher goes into one, and a sinister
+    man called ${iain} commit the
+    resultant din to tape.
+    </blockquote>
+    7. ${sis}
+    <blockquote>
+    One week into the Nineties and the JBC hit a
+    creative peak in a Norfolk farmhouse.
+    Just back from <a href="${jbc_gigs}/1990">a mad American tour</a>,
+    shocked at the seriousness of ${kizzy}'s
+    illness, their personal lives in chaos,
+    they go for commercial suicide and
+    accidentally make their best album
+    in years.  Spooky.
+    </blockquote>
+    8. ${girls}
+    <blockquote>
+    A lunge at the Serge-coloured pervy corner,
+    this may or may not be inspired by an
+    anti-Vietnam War poster.  Features one
+    of the Bucther's more graceful lyrics
+    and the first recorded contribution of
+    dangerously moody guitarist and
+    owner-of-all-the-beer, ${pete}.
+    </blockquote>
+    9. ${filth}
+    <blockquote>
+    Czech underground techno band ${eg}
+    caused something of a fuss when they
+    accused the Butcher of stealing this tune
+    from them, even going so far as to call
+    the JBC and ${creat} "pig"
+    <a href="${jbc_gigs}/1992/Jun26.html">on
+    the radio</a>.  The tousands of AC/DC fans
+    sampled here have also lodged expensive
+    royalty claims, which means thet the
+    Butcher will have to work until he is
+    over a hundred years old just to pay
+    them all off.
+    </blockquote>
+    10. ${sweet}
+    <blockquote>
+    Two snapshots from <a href="${jbc_gigs}/1992">the US tour of 1992</a>,
+    specifically a splendid night at
+    the Sweetwater Springs Saloon, Los Osos,
+    Ca. involving a giant refrigerator full of
+    Jaegermeister, and a twenty-four hour
+    binge in New Orleans.  More romantic
+    than it probably sounds.
+    </blockquote>
+    11. ${whad}
+    <blockquote>
+    The bleached-out sound of a post-hysteric
+    Butcher with real submarine noises
+    from ${davis} resonating in the ${richard} Flotation
+    Tank.  Try to imagine the Sound Of Philadelphia
+    filtered through a
+    schizophrenically diassociative
+    hangover on a freezing morning
+    thousands of miles from home.
+    </blockquote>
+    12. ${ghost}
+    <blockquote>
+    So you're mad.  So you're gonna kill me.
+    So how long do you think I'll care?
+    </blockquote>
+    13. ${tues}
+    <blockquote>
+    December 1989: high in the hills of Southern
+    California a dazed JBC tucks into
+    speciality ice-creams in a cowboy bar.
+    It is Tuesday.  Like elephants, the JBC do
+    not forget.  They agree that this would
+    make a fine soundtrack for a film of
+    their bus driving down a long, straight
+    desert road somewhere in Spain.
+    </blockquote>
+    14. ${shirl}
+    <blockquote>
+    We're right in the middle of the 1991
+    firestorm here.  ${lix} (Gibson 335) and
+    ${richard} (sixties science-fiction Vox affair)
+    do battle in a darkened room full of toxic fumes.
+    Lix is standing on a chair.
+    The rest of the JBC are doing their nuts
+    on the sofa.  This is all that is keeping them going.
+    </blockquote>
+    15. ${go}
+    <blockquote>
+    There is a place outside of space and time,
+    visited by the illuminated and the
+    terminally schizophrenic alike. Here,
+    where all is spread out below, there is a
+    sound at once soothing and disturbing.
+    It is the sound of the inner circles of
+    ${richard}'s mind, and is it
+    captured for you on the closing minute of this, the JBC's
+    own spooked misappropriation of the Petula Clarke
+    classic, <i>"Downtown"</i>.
+    </blockquote>
+    ;;Pat Fish;;;;1996-11
+
 #define	albums[43]->type	live
 #define	albums[43]->lookup	glorious
 #define	albums[43]->href	${jbc_albums}/glorious.html
 #define	albums[43]->buy		https://www.amazon.com/Glorious-Idiotic-Jazz-Butcher-Conspiracy/dp/B00004GJWC
 #define	albums[43]->title	Glorious And Idiotic
+#define	albums[43]->media	CD
+#define	albums[43]->label	ROIR
+#define	albums[43]->catalog	001
 #define	albums[43]->thumb	/images/glorious_front
-#define	albums[43]->blurb	<div class="annotation">The last thing anybody expected was a new Jazz Butcher album in the year 2000. But there is one, and it's just the sort of thing that you hardcore JBC listeners are going to enjoy. The record is called "Glorious and Idiotic" and it is released on 26th January 2000 on ROIR.</div>
+#define	albums[43]->images	/images/glorious_back
 #define	albums[43]->dtreleased	2000
+#define	albums[43]->blurb
+	<div class="annotation">The last thing anybody expected was a new Jazz Butcher album in the year 2000. But there is one, and it's just the sort of thing that you hardcore JBC listeners are going to enjoy. The record is called "Glorious and Idiotic" and it is released on 26th January 2000 on ROIR.</div>
+#define	albums[43]->liner
+    The last thing anybody expected was a new Jazz Butcher album in the
+    year 2000.  But there is one, and it's just the sort of thing that you
+    hardcore JBC listeners are going to enjoy.  Stick with me.
+    The record is called "Glorious and Idiotic" and it is released on 26th
+    January 2000 on ROIR (Reach Out International Records) of New York City.
+    That's right, Virginia, it's a domestic US release.  It is a live recording
+    of the concert which Max and Owen and I played in Hamburg's Logo club
+    in February 1999.  It marks Owen's return to the JBC, and, in retrospect,
+    it marks the return of the JBC itself as some kind of going concern.
+    It has by far the best sound quality of any of the Jazz Butcher live
+    albums or bootlegs currently available.  The performances aren't bad
+    either, for a bunch of old bastards.  It features lots of old favourites
+    and two brand new songs by Max Eider, both performed for the first time
+    ever at this concert.  It also features guest appearances from our Euro-buddies
+    Clemens, Curtis and Pat Beirne, three of the finest human beings you
+    could be lucky enough to meet (by the way).
 
 #define	albums[44]->type	album
 #define	albums[44]->lookup	rotten
 #define	albums[44]->href	${jbc_albums}/rotten.html
 #define	albums[44]->buy		https://www.amazon.com/Rotten-Soul-Jazz-Butcher-Conspiracy/dp/B00004U689
 #define	albums[44]->title	Rotten Soul
+#define	albums[44]->label	Vinyl Japan
+#define	albums[44]->catalog	ASKCD114
 #define	albums[44]->thumb	/images/front_rotten_soul
-#define	albums[44]->blurb	<div class="annotation">Well, I'm back from America. We had a good old time of it, and by the end of the tour we had worked 5 songs off the new record into our live set. The title of the new waxing, incidentally, is Rotten Soul.</div>
-#define	albums[44]->dtreleased	2000
+#define	albums[44]->images	/images/back_rotten_soul
+#define	albums[44]->dtreleased	2000-06
+#define	albums[44]->blurb
+	<div class="annotation">Well, I'm back from America. We had a good old time of it, and by the end of the tour we had worked 5 songs off the new record into our live set. The title of the new waxing, incidentally, is Rotten Soul.</div>
+#define	albums[44]->thanks
+    Recorded by ${pete} at Studio Leviathan, Earth, March-April<br />
+    Programmed and produced by Pat Fish and Max Eider<br />
+    Legal Representation: ${steve}<br />
+    www.jazzbutcher.com (thanks to ${del})
+#define	albums[44]->liner
+    Pat and I go back a long way.  I've always been a Butcher fan, although
+    it's no secret that there was a brief period when I would have liked
+    to have killed him, dismembered his body, buried the parts at the four
+    corners of the earth and visited each in turn to have a bit of a dance.
+    I felt sure he would have done the same for me.  <i>[Actually, I never entertained
+    these kind of thoughts about The Talented One, but now that he comes to
+    mention it, it does sound like a bit of a laugh - Ed.]</i>
+    <p />
+    But that was a long time ago.
+    We never quite cut the knot, and so it is - through a strange mixture of complicity,
+    happenstances, hard liquor and Vinyl Japan - that we cam to make this record.
+    We have nothing but good to say of Vinyl Japan, but I'm sure they won't mind
+    my pointing out that it's been made
+    on the cheap.  This involved Pat in becoming a bass player and virtual
+    drummer, among other things (leave it, Crouchy), and I had many happy visits
+    to Northampton NN1 to pursue conversations such as: 'Barrapadap.' 'What,
+    brapadap?' 'No, barrapadap.' 'Oh, barrapadap ... I see.'
+    <p />
+    Anyway, the main purpose of these notes is to give thanks and thanks are
+    primarily due to co-conspiratorial guitar player ${pete}, who owns the
+    house and a good deal of the queipment and patience that made this record
+    possible.  The other main conspirators are listed elsewhere on this sleeve.  Also
+    conniving were: Agent Russell Cooper; ${gab} (aka Inexxor); Ian Botterill (courtesy
+    of Fat Controller); ${curt} (we are not worthy);
+    Paul Taylor; Tetsuya Nakatani; John Whitfield and all at Vinyl Japan; and, unwittingly
+    but gratefully, the proprietors of the local boozer and off-license.  Little
+    Jake and Hobbu thank Richard Morris.  And then there's you, of course, assuming
+    that you've actually shelled out some of your hard-earned cash to listen to
+    this product of disgusted, disappointed, dissipated and rotten souls.
+    <div align="right">
+    ;;Max Eider;;;;2000-04
 
 #define	albums[45]->type	compilation
 #define	albums[45]->lookup	cake
 #define	albums[45]->href	${jbc_albums}/cake_city.html
 #define	albums[45]->buy		https://www.amazon.com/Cake-City-Jazz-Butcher-Conspiracy/dp/B00005NE0Y
 #define	albums[45]->title	Cake City
+#define	albums[45]->label	Vinyl Japan
+#define	albums[45]->catalog	ASKCD128
 #define	albums[45]->thumb	/images/cake_front
+#define	albums[45]->images	/images/cake_back$$/images/cake_inside
 #define	albums[45]->blurb	Glass-era compilation.
 #define	albums[45]->dtreleased	2001
+#define	albums[45]->liner
+    In March 1985, when ${dj} joind ${rocket}, the Jazz Butcher Group introduced
+    their new bassist ${felix} to a hundred or so unconcerned punters in a conference
+    suite in a Northampton basement.
+    <p />
+    Soon after that night, promoted by ace photographer ${mitch} (who also happened
+    to be the Butcher's flatmate at the time), the Hand Of Hinc intervened, with the
+    result that the band swiftly grew accostomed to ceaseless touring, stumbling and
+    shouting their way across England, Germany, Holland, Sweden, Norway, Italy, Austria,
+    Switzerland and Spain.
+    <p />
+    Sometimes they would play two shows in the same evening.  Sometimes there was trouble
+    "Is he always like that?" was becoming something of a catch phrase.  It had reached the point where,
+    if he wasn't actually playing a show or making a record, the Butcher would spend his time shouting
+    at his long-suffering agent down the phone because, frankly, having "gone professional", he no
+    longer had anything else to do.
+    <p />
+    But the summer of 1985 was good to the JBC in a violent sort of way.  Despite the many injuries
+    sustained during the band's first brush with Spain, they were in high spirits.  Possibly they
+    thought they were indestructible.  (Given that at the time of writing they have just completed
+    their seventh US tour and their first club dates in Japan, perhaps they are.  We may never know).
+    <p />
+    So let us join our ungainly crew as they jet off one September Friday with a view to playing
+    a festival date in the south of Germany <a href="${jbc_gigs}/1985/Sep7.html">the following night.</a>
+    Having been met by their promoter,
+    a very small man in a very large Mercedes, the band are delighted to discover that the
+    festival is in a tiny Alpine village rejoicing in the locally typical but nonetheless
+    laughably quaint name of Trochtelfingen.
+    They drink like sailors and demand money with menaces from the promoter (successfully,
+    as it goes, poor mug!) before retiring in a polite and orderly fashion to their small,
+    charming, family-run village hotel.  Friday night in Schwaben.  No problem at all.
+    <p />
+    Saturday dawns bright and lovely.  The hotel is all abuzz, for there is to be a wedding.
+    The JBC nod and beam sweetly at the natives before leaving to do a lunchtime soundcheck
+    in a massive candy-striped tent in an Alpine meadow.  It is a fine, professional soundcheck,
+    it goes on for awhile, during which the band do not waste the opportunity to renew their
+    still fresh and passionate affair with German beer.
+    <p />
+    In the afternoon the band's German agent, Joachim, takes the JBC to the extraordinary
+    Schloss Liechtenstein nearby.  As they explore the mad fairy-tale castle perched high on a
+    cliff above the village, The Butcher and ${max} are faintly spooked while Felix beams, resplendent
+    in grey leather trousers, black shirt open to the waist and fake leopardskin jacket.
+    ${owen} is nowhere to be seen, but those who are curious about his movements are
+    recommended to check out his recordings with his band Shakespeare And The Bible.
+    The posse sits and smokes thoughtfully under a huge and ancient tree outside the castle.
+    It is a peaceful and idyllic afternoon.  With beer.
+    <p />
+    In a disturbing prophetic photograph the JBC can be seen posing at the castle gates.
+    The Butcher is good-naturedly throttling his German agent, while ${kizzy} is
+    taking the opportunity to thrust his half-eaten Mars Bar into the singer's ear.
+    <p />
+    It is around teatime that the cracks begin to show.  Returning to the hotel, the JBC
+    discover a number of things and the number is four:
+    <br />1. The wedding party is in full swing in the restaurant.
+    <br />2. There is a trolley loaded with all manner of elaborate
+    German cakes just sitting there all on its own in the hall.
+    <br />3. The newlyweds have left their hotel room door open.
+    <br />4. Nobody is paying any attention to the JBC
+    <p />
+    Felix is straight into action.  Seeing that many of the cakes
+    have already been partially eaten, he figures that nobody is going to miss them, now.
+    With commendable foresight he decides to liberate a few of them for later in the evening, in case
+    anyone feels a bit peckish, like.  It is while stealthily concealing the cakes in Room 27 that he and
+    the Butch find the happy couple's door open.  Within minutes their bathroom is entirely stuffed
+    with the hotel's extensive collection of massive pot plants, with a large and elaborate model boat
+    awaiting any intrepid expolorer who makes it as far as the bathtub.
+    <p />
+    As the sun goes down the JBC slip discreetly from the hotel and up to the massive candy-striped tent.
+    Here all is rock and roll, although, with hindsight, the photographs do indicate that the stage
+    lights might have tended towards a possibly unnecessary shade of hot pink.  Still, the JBC
+    rock the tent, take the cash money and continue their research into the amount of
+    vodka that can be poured down the singer's throat.
+    <p />
+    The Butcher doesn't know it yet, but he has already eaten the last meat that will ever
+    pass his lips. As the band troop into a local restaurant for a well-earned dinner
+    the excitable singer spots a tank full of live crayfish.  "Uh-oh" he thinks, "Its' a
+    Which-One-Would-You-Like-Murdered-And-Delivered-To-Your-Plate Sir Scenario".
+    <p />
+    In a fit of well-meaning but spurious solidarity The Butcher joins Messrs Eider and Jones on the
+    vegetarian tip.  It later transpires that the crayfish are, in fact, house pets.  By
+    such misunderstandings do we change our lives.
+    <p />
+    Back at the hotel, all is quiet.  Sadly, it appears that the band has missed the shrieking
+    from the bridal suite.  The JBC gather for vodka and cake in Room 27.  The mood is satisfied,
+    peaceful. There is happy, animated conversation and none of it is about trashing hotel rooms.
+    Drinks and cakes are passed around.
+    <p />
+    There is no way of predicting the moment.  The Butcher is sitting on the floor,
+    leaning against Felix's bed enjoying a massive and particularly well-preserved
+    chocolate cake when in a moment of festal stupidity he makes the fatal mistake
+    of taking a tiny lump of chocolate and flicking it towards the lead guitarist.
+    In seconds Eider is upon him, seizing the cake and grinding it in its entirety into
+    the hapless Butcher's face forever.  It all goes off.
+    <p />
+    Remember: these are men who have had their whole lives in the shadow of the Cold War Bomb.
+    They understood concepts like "escalation" and "massive pre-emptive strike".  Within
+    minutes large areas of Room 27 are chocolate-plastered no-go zones and Eider finds himself
+    forcibly imprisioned in the bathroom, a wardrobe pushed up against the door for
+    added security.  He responds as any reasonable man would under the circumstances.
+    He riots.
+    <p />
+    Negotiations go on for some time before The Talented One succeeds in arguing his
+    way to freedom.  Sadly not for the first time European treaty is soon betrayed
+    and once again appaling cake abuse breaks out.  By now there is not a white surface
+    in the room.  Eventually the Konditoreisturmgruppe runs out of vodka and curls
+    up in the wreckage to sleep.
+    <p />
+    At an unusually early hour on Sunday morning the JBC are in the car park, loading
+    into the back of the van.  They move suprisingly quickly and silently for men in
+    their condition.  Kizzy and Mister Jones have spent the last half hour desperately stuffing
+    slick brown bedclothes into the wardrobe of Room 27.  As they make their final exit from
+    the hotel they pass a pair of young chamber maids heading in the opposite direction.
+    Just as they gain the lobby they hear a great and deeply comical shriek from upstairs.
+    <p />
+    The JBC bus goes tearing out of the car park, headed for Stuttgart Airport at some speed.
+    After some five or ten miles the band spot a German Police car on the road behind them.
+    Giggling hysteria is not far away as the tour manager puts on his best German accent
+    to announce: "Ja... we would like to have a word with you about some... cakes."
+    <p />
+	;;Pat Fish;;;;2001
+
 #define	albums[46]->type	compilation
 #define	albums[46]->lookup	lunch
+#define	albums[46]->media	CD
+#define	albums[46]->lable	Rev-Ola
+#define	albums[46]->catalog	CRREV54
 #define	albums[46]->href	${jbc_albums}/free_lunch.html
 #define	albums[46]->buy		https://www.amazon.com/Jazz-Butchers-Lunch-BUTCHER-CONSPIRACY/dp/B0000CESU6
 #define	albums[46]->title	The Jazz Butcher's Free Lunch
 #define	albums[46]->thumb	/images/lunch_front
-#define	albums[46]->blurb	<div class="annotation">"You're not a band. You're a crack team of international restaurant critics" - ${curt}</div>
+#define	albums[46]->images	/images/lunch_back$$/images/lunch_inside$$/images/star_india/StarScrap;;Paul Mulreany and Laurence O'Keefe riot, The Star of India NN1, September;;Pat Fish;;;;1988
 #define	albums[46]->dtreleased	2003-10-20
+#define	albums[46]->blurb
+	<div class="annotation">"You're not a band. You're a crack team of international restaurant critics" - ${curt}</div>
+#define	albums[46]->thanks
+	Heartfelt and unending thanks to Alan McGee, ${deirdre}, ${del}, and ${burrell}
+#define	albums[46]->liner
+    <b>FREE LUNCH</b>
+    <p />
+    Curtis E. Johnson once said to me about the JBC: "You're not a band. You're
+    a crack team of international restaurant critics." Guilty as charged.
+    Stevie G and I were talking about it just the other day. All over the world
+    you can meet people, who, in a desperate attempt to let you know that
+    they're bang up to date with what's going on out there, will tell you:
+    "There's no such thing as a free lunch"; whereas to us musicians the free
+    lunch is a central shaft of our cosmology.
+    <p />
+    Next time some patronising time-server feels like letting you in on the Big
+    Secret and tells you "there's no such thing as a free lunch", buy him one.
+    Take him to a restaurant, sit him down, wine him and dine him. Then send
+    him on his way with the Star of India's finest dhansak in his belly and a
+    flea in his ear. Who knows? You might just have tweaked his worldview a
+    point or two towards the sunnier side of the street. You'll certainly have
+    shown him that he didn't know what he was talking about.
+    <p />
+    There is the remote possibility that, once the espressos have been drained
+    and it's time for you to shell out, your new companion might try to go for
+    his wallet. "No, no, I couldn't possibly let you pay the bill," he
+    declaims. Waving of hands may be involved. Here is a man in particular need
+    of your immediate and practical help. Here you are, trying to pay for his
+    lunch, but his personal Weltanschauung won't permit it. How far up himself?
+    All the way, I'm afraid, season ticket holder, sits on the board of the
+    Consumers' Action Council, organises the knees-up every Christmas, salt-of-
+    the-earth.
+    Oh, I'm sorry. Remain firm. Pay the bill for both of you.
+    <p />
+    Alan McGee, in his foreword to Jackie Young's book "Backward Glances"
+    (Creation 1995), wrote that whenever one of his deluded pop singers phoned
+    up from abroad to moan about life on the road, he'd remind them that they
+    could always try working down a mine. Right on the money once again, Mister
+    President.
+    <p />
+    A lot of the stuff you read about little rock bands touring the globe is
+    foolish myth. The expected tales of wild excess, for example, perpetuated
+    by writers who could barely handle the lifestyle for more than a couple of
+    days at some cushy location carefully selected by the record company, which
+    is paying their fare and their minibar bill. Then we have to wrestle with
+    the myths of Dreadful Squalor. These tend to be perpetuated by a certain
+    kind of musician, who can't handle the lifestyle either, God bless, but who
+    has sublimated this beneath a preening self-importance which renders
+    perfectly good gigs, hotels, vehicles and restaurants into an unending
+    slough of Things Which Are Not Good Enough For Him. (Or Her, Miss Carey.)
+    For example, has anybody ever read "Nico; Songs They Never Play On The
+    Radio" without having, ever so fleetingly, the feeling that something is
+    up? If things are truly as vile and debased as the author likes to make
+    out, doesn't that make him just a bit of mug for being a part of it? Or is
+    he taking a hypocritical pot-shot at his old touring companions?
+    <p />
+    He does, it must be said, paint a glorious picture of The Great Paolo
+    Bedini.
+    <p />
+    Paolo Bedini is one of the truly wonderful things about touring what the
+    ignorant, the ungrateful and the chemically-dependent like to describe as
+    "the toilets". A chess prodigy, he was thwarted when his mother wouldn't
+    permit him to go to an important championship in the Soviet Union, so
+    somehow he became a music promoter. Paolo stirs two teaspoonfuls of sugar
+    into a small glass of orange juice. For some time the windscreen of his car
+    was held on by gaffa tape.
+    <p />
+    When you work for Paolo you enter a zone of un-knowingness, where matters
+    like time and space are seen from a completely different, serenely detached
+    viewpoint high in the foothills of modern Italian consciousness. If you
+    persist on trying to follow your normal, sadly materialist agenda, you will
+    find yourself growing ever more confused and frustrated, as you try to
+    establish
+    <p />
+    Where you are now;
+    The relationship between where you are now and where you are, in fact,
+    supposed to be now;
+    Where you are supposed to be later on;
+    When that might be;
+          and
+    What you should be doing to ensure that it might be so.
+    <p />
+    It is hot in Italy and if you think this way you will go mad. Your brain
+    will shrivel to the size of a walnut and you will die alone and insane in a
+    sanatorium just outside of Guildford as the crows on the plane tree outside
+    your window say vile things about your evil, useless life.
+    <p />
+    The truth is that there is learning, enlightenment and many free lunches to
+    be had from a Bedini Special. In September 1985 the JBC were flattered to
+    land a show in the ancient Greek ampthitheatre in Syracusa in Sicily. (Call
+    that a toilet, if you dare.) The PA caught fire and the show ended in
+    enthusiastic pointless shouting and the singer getting a visit from Jesus.
+    The following morning all the members of the JBC and their hangovers were
+    told that they could not fly home on the appointed aeroplane, something of
+    a nuisance, which the bass player darkly intimated to be work of the Mafia.
+    "So, if they don't like us.why do they want to keep us here on their
+    manor?" reasoned the marginally more logical players. We sat and drank
+    coffee in the airport while Bedini was sent for.
+    <p />
+    We knew that Paolo would have a scheme. On this occasion it turned out that
+    the first step was to book the entire band onto a flight to Milan. This was
+    achieved without too much difficulty. Arrived at Milan, we watched open-
+    mouthed as a van was rented. We then drove through the gathering twilight
+    across hill roads to Genoa. A plane would take us home from Genoa airport:
+    this was the not-entirely-convincing official line from our promoter. Of
+    course, we arrived to find Genoa's tiny airport closed up for the night. It
+    must have been at least eight thirty in the evening.
+    <p />
+    Entirely unphazed, Paolo had us drive on into Genoa where he booked the
+    whole crew into a downtown hotel before taking us out to dinner. We could
+    not believe our luck. He was acting as though it was the most normal thing
+    in the world.
+    <p />
+    Over dinner, which, being Italian, was exceptionally fine, Plan B was
+    revealed to a shell-shocked and disbelieving band. Pretty self-evidently,
+    all this piling around Italy in various forms of transport had taken
+    something of a toll on the finances, and Paolo explained that it would be a
+    lot easier and cheaper for him to send the band home in separate groups of
+    two or three by train. One or two could go tomorrow, the others a day or
+    two later when Paolo had sorted out the necessary wedge. It was decided
+    that Max and Owen would be the first to set off, the following morning. The
+    rest of us got to stay in the hotel for two or three days, milling around
+    Genoa (which is lovely) and meeting up regularly with Paolo for endless
+    free lunches and dinners. I still can't believe my luck.
+    <p />
+    Later, back in the UK, I found out that the reason that Paolo acted so
+    calmly, as though everything was normal, was that - as far as he was
+    concerned - it was. My pal Rolo had had an almost identical experience with
+    Il Gran Bedini only a few months before. Days of free lunches! What a
+    gentleman! The JBC loved him so much that we named an Award after him,
+    specifically the Award for local promoter of the year, which from 1985 on
+    became known as The Golden Bedini.
+    <p />
+    And while I'm talking about Italy, a big shout must go out to our friends
+    and supporters, Giancarlo Susanna and Leo Mansueto, without whom all our
+    Italian adventures would probably never have come to pass, and I would
+    never have met Paolo Bedini.
+    We love you!
+    <p />
+    The great truth of all this is that life on the road is positively
+    luxurious in comparison to the lives that most musicians live when they are
+    not working. You get to stay in hotels, eat out in restaurants, learn
+    languages, history and politics. You get to show off, you drink stupid
+    quantities of free liquor, you get into nightclubs for free. You get to DJ
+    on foreign radio stations (Once, in Wisconsin, they even let me read the
+    news), the gas stations sell beer, cigarettes are cheap and the drugs are
+    free. Let's face it, the only people you ever meet are the ones that either
+    like your music or have to pretend to as part of their job. (Well, them and
+    The Authorities.) All you have to worry about is where you are supposed to
+    be at six o'clock tomorrow evening.
+    <p />
+    All right: strictly, the touring musician adventurer tends to enjoy a lot
+    more free dinners than lunches, when kindly local promoters try to feed you
+    up in readiness for el gran espectacolo del rock. I once knew a German tour
+    promoter who thought it was a very dubious idea for the drummer to be a
+    vegetarian. And, yes, it's probably true that these luxurious dinners out
+    are accounted for in some contingency fund among the promoter's expertly
+    and cautiously calculated expenses; but it's not as though you, the
+    musician, will ever see any of that paperwork. No, from where you're
+    sitting, that is near enough to a free lunch for jazz. And over the years,
+    the JBC have enjoyed some very good ones.
+    <p />
+    I've heard and read terrible stories about British bands going abroad and
+    complaining incessantly about the absence of good old Kwiksave favourites
+    like Captain Birdseye or canned beans. There are the tales, almost too sad
+    to be told, of allegedly creative people dragging a massive tea urn around
+    with them wherever they play. Just about everybody in the JBC was happy to
+    make do and mend with whatever came along in the way of food and drink,
+    and, having gazed thereupon, I'm not surprised.
+    <p />
+    Years after the event, certain dinners stand out every bit as strongly as
+    certain shows. It is time to give credit where it has been due.
+    <p />
+    <b>Taberna Bar Bajamar, Calle Gorbea, Gasteiz - Spring 88</b>
+    <p />
+    Simple, unpretentious, endless dining delight, served by a telepath.
+    A legendary dining experience, universally agreed by all who were there to
+    be the finest meal that this band has ever been served.
+    <p />
+    <b>Restaurant Kalash, Clermont-Ferrand - Spring 94</b>
+    <p />
+    A Pakistani restaurant of staggering sophistication in a back street in
+    France's answer to Sheffield. An unexpected oasis of calm and civilisation,
+    to be sure, but the food was so delicate, so delicious, so plentiful that
+    it remains unforgettable.
+    <p />
+    <b>The Opera Nutter, Reggio nell' Emilia - December 1986</b>
+    <p />
+    Somewhere in the countryside the Red Bus pulled up at a barn. A barn with
+    flashing disco lights and opera playing at brain-crushing volume. In these
+    unlikely surroundings we were served endless courses of transcendentally
+    good Italian peasant cooking by a dangerous maniac. I can hardly believe it
+    really happened.
+    <p />
+    <b>God-Fearing Erie, Pa. - Spring 2000</b>
+    <p />
+    In a guerilla-booking operation, a pack of JBC lovers invited us to play
+    their local pub, using their flat as a base camp. Here they installed their
+    pal, who just happened to the head chef at the best restaurant in town.
+    Roasted elephant garlic with brie and custom-made quesadillas, all
+    accompanied by beers of the highest quality, Polish vodka and jazz
+    cheroots, while watching Premiership football on TV - in America! Superb!
+    <p />
+    <b>Vereinhaus, Dornbirn - Mar 88</b>
+    <p />
+    When the JBC first stumbled upon this fine Austrian dining room at Easter
+    1985 we discovered that they did a rather wonderful thing with deep-fried
+    mushrooms. We have been going back there ever since. Of course, these days
+    "breaded mushrooms" have come to the pubs and restaurants of the UK. But
+    what a nasty little mess of microwaved cack they truly are when compared
+    with the Real Thing. Available only at the Vereinhaus, a JBC classic!
+    <p />
+    <b>Honorary mentions must surely also go to:</b>
+    <p />
+    <a href="${jbc_etc}/starindia.html">The Star of India</a>, NN1<br />
+    Indian Veg, Chapel Market, Islington (the two great originals for us lot)<br />
+    Scholars Inn, Bloomington, Indiana (well classy)<br />
+    Himalaya, Madrid (our base over three mental days in 1991)<br />
+    Seoul Restaurant, Druselplatz 2, Kassel (surprise fruit a speciality)<br />
+    Weinstein, Aachen (snakes on the piss!)<br />
+    Scenic India, San Francisco (featuring Flying Horse beer)<br />
+    Mr. Jones' & Fraulein Nudow's Kitchen, Hamburg (too right!)<br />
+    Restaurant Tibet, Hamburg (wear clean socks)<br />
+    Elmer's Diner, Portland Oregon  (chilli relleno omelette of the millennium)<br />
+    Black Bear Diner, Eureka, California ("I could handle a logger right now.")<br />
+    Joseph's,Yucca & Ivar, LA, California (breakfasts of genius)<br />
+    Citrouille, Morlaix, Brittany, France (it's all about the pumpkins)<br />
+    Hotel Regina, Vienna (imperial breakfasts)
+    <p />
+    Thank you all. You have made us truly happy and often we did not even pay.
+    We love you!
+    <p />
+    &copy; Pat Fish
+        NN1 2003
+    <p />
+    <b>Written Warning:</b>
+    <p />
+    The next time that I find myself called upon to provide sleeve notes for
+    yet another instalment of the ongoing JBC Pointless Compilation Library, I
+    shall feel myself compelled to relate the story of what happened in the
+    Empire Diner in October 1990. Record companies (especially Chrysalis), BBC
+    employees and former members of the Blue Aeroplanes band should approach
+    their legal representatives now. Not that it will do them any good.  The
+    Red Bus sped on long ago.
+    <p />
+    Designed by Wilson Research Laboratories & ${linkExternal(http://www.boldgraphicdesign.co.uk, Bold London)}
+
 #define	albums[47]->buy		https://thejazzbutcher.bandcamp.com/album/last-of-the-gentleman-adventurers
 #define	albums[47]->type	album
+#define	albums[47]->media	LP;CD
 #define	albums[47]->lookup	adventurers
+#define	albums[47]->label	Tundraducks Records
+#define	albums[47]->catalog	TDKS004CD
 #define	albums[47]->href	${jbc_albums}/last_of_the_gentleman_adventurers.html
 #define	albums[47]->title	Last of the Gentleman Adventurers
 #define	albums[47]->thumb	/images/adventurers_front
 #define	albums[47]->blurb	Crowd-funded in under 12 hours, recorded on 2" tape, lush and warm..
 #define	albums[47]->dtreleased	2012-10-18
+#define	albums[47]->liner
+    <b>LAST OF THE GENTLEMAN ADVENTURERS</b>
+    <p />
+    The Cuban heels are worn down to their cuticle and the spring-loaded derringer has rusted in position up a shiny sleeve. Crows bowl across the Racecourse like black boa tumbleweeds and far too many of the other wanted-poster names are long since taken down: that absent rack of painted clogs in Birchfield Road, an admixture of alcohol and DNA still percolating through Jack Lansbury's spit-trap, Freddy Fingers' glass eye rolling to a standstill on the empty dance-floor, all gone, all auditioned for the Boot Hill Boogie Boys or otherwise dispersed. Inside the legendary saloon, its bar-length mirrors and its framed reclining nudes all plasterboarded now, conviviality swept out through a swing door the moment everybody's cards were on the table. This must be the famous palace that those four-lane highways of excess were always leading to, that makes a body scrape a chair up and take stock.
+    <p />
+    With blood from an interminable improv on his cleaver ... people say he uses every last bit of a slaughtered solo clarinet except its squeal ... the Jazz Butcher, one of this threadbare island's greatest living songwriters, herein purveys his choicest cuts. All left to hang as part of their extensive maturation process, melodies so tender that they're falling off the bone, a gamey sweetness in the lyrics, this sumptuous salmagundi has the flavour of a signature dish, something left till last.
+    <p />
+    A work that speaks from a hard-earned perspective and means every word of it, Last of the Gentleman Adventurers is a delightfully ill-humoured reassessment of contemporary culture and the dwindling amount of room remaining for a gentleman adventurer within it. From the atavistic primate yearnings for a vanished jungle-land in `Animals' to the elegiac message-in-a-bottle bobbing on an eerie Californian surf in `Shakey', what we're offered is a scuffed and well-stamped passport to the gone world, stained with Tokay, singed by oval cigarettes you'll never see again. The fatalistic Gallic shrug of `Tomb&eacute; dans les pommes' lifts a dismissive brow at life's vicissitudes, while `Count Me Out' speaks of the dignified withdrawal from a situation that's no longer either interesting or acceptable.
+    <p />
+    Far from a weary resignation letter, though, the pieces here more accurately represent a flinty and determined manifesto, a defiant staking out of the unsupervised and teeming wasteland to which our illustrious former territory has been reduced, a vital roster of remaining freedoms. Whether that be in appreciating the bohemian elan of next-door's quadruped or instigating a romance we may be hard pressed to survive, these songs are testimonials to life, perhaps especially to life at bay. The bluesy and relentless rocket of `Solar Core' provides a glorious reminder to select our destination carefully, and never be found wanting in ambition. `All the Saints' and its affecting coda spell out the emotionally conservationist agenda, with a spirited dismissal of irrelevant modernity in favour of pursuing vitally important individual dreams.
+    <p />
+    This luminous, enduring truth resides at the collection's beating, beaten heart, reiterated eloquently in the title track itself, curling its lip at those who have mistaken BUPA and increased consumer choice for liberty, inciting us to man up and define that precious resource for ourselves. With Messrs Harries, Eider and Mattock as his bearers, the last of the gentleman adventurers here buckles up his pith-helmet and mounts a reckless foray into the interior, heads in the last remaining unexplored direction, the implicit fifth point on our compass. Follow at your peril, from the trail of snapped conventions left behind him, to a province still outside captivity. I'll see you there.
+    <p />
+    Alan Moore<br />
+    Northampton<br />
+    September, 2012<br />
+#define	albums[47]->thanks
+    Special thanks to: ${del}, Mr Mark Cotton, John Cannon, Gene Solomon, Bruce D. Cummings, R. Darin Brock, Barry (Baz) LaPorte, Greg Higgins, ${linkExternal(http://thegreataukfanciers.org/, The Great Auk Fanciers' Society)}, Canadaloon, Tony Brusdeilins, Graham Crackers Comics, Lito, Nerissa and Ella, Jeremiah `Spassvogel' Rickert, Curly Jefferson and the Milky Drones, Nancy Boston, Philip Woodrow, jbl, Davey Jones, J. Eric Smith, Andreas Ott, Lucas Taieb, John Gilfillan, ${steve} and ${joe_woolley}
+    <p />
+    Thanks to everybody who helped us make this record a reality.
+    <p />
+    Pat & Max
+
 #define	albums[48]->buy
 #define	albums[48]->lookup	thisissumo
 #define	albums[48]->type	album,project
 #define	albums[48]->href	${jbc_albums}/sumosonic_this_is_sumo.html
 #define	albums[48]->title	This Is Sumo
+#define	albums[48]->label	creation_records
+#define	albums[48]->catalog	CRECD 204
 #define	albums[48]->thumb	/images/sumo/sumosonic_this_is_sumo_front
+#define	albums[48]->images	/images/sumo/sumosonic_this_is_sumo_back$$/images/sumo/sumosonic_this_is_sumo_inner$$/images/sumo/sumosonic_this_is_sumo_cd
 #define	albums[48]->project sumo
-#define	albums[48]->blurb This inaugural disk is decidedly un-Butcheresque, with a keyboard-heavy attack of quasi-techno rhythms. Pat was known to dabble in reverb and noise, but the results were moody, melancholy textures, quite unlike the flash of This is Sumo.
 #define	albums[48]->dtreleased	1998-01-26
+#define	albums[48]->blurb
+	This inaugural disk is decidedly un-Butcheresque, with a keyboard-heavy attack of quasi-techno rhythms. Pat was known to dabble in reverb and noise, but the results were moody, melancholy textures, quite unlike the flash of This is Sumo.
+#define	albums[48]->liner
+	Recorded at The Lodge, Northampton and Mixed by Darren Nash at Moles, Bath. Produced by The Lords Of Sumo. Mastered by Mandy Parnell at The Exchange, London. Additional production on Come, Friendly Spacemen (Sushi Mix) by Johnny Octopus and Tom Withers (courtesy of Octopus Records) All words and music by Pat Fish, except for 'Everything Is Wonderful' by Pat Fish/Curtis E Johnson Songs published by Creation songs/Sony Music Ltd.
+	<p />
+    Sumosonic on the internet: http://www.sumosonic.corn
+#define	albums[48]->thanks
+    <b>SUMOSONIC WOULD LIKE TO THANK :</b>
+    Darren Nash. Jan Brown. Max Read. Andrew Web. Dave Kirby. Steve Gordon. Matt Wallis. D.T. Henderson. Mark Refoy. Jon Mattock. Curtis. Jamie Jab. Steve Ward. Mandy Parnell. Daniel Fantasy. John Lovett at Occultique. Mark for Kung Fu Express. Peter Two Litre (Opslag & Distributie). Mitch Jenkins. Johnny Octopus. Tom Withers. Aggi. Ben Greenaway. Paul Slater. Reasonable Ray Kinsey. David Whittemore. Pete Gordelier and all at the Big Noise. Geoff Kirk. The White Lodge. Paul Stanton. John Goulding. Jooles. Joe Peters. James Ferro. Jack Schaer. Francine Schaer. John for Reiki and Reflex. Pete and Yvette at the Racehorse. Colin. All the Herbs and all things Natural. Seb Shelton. Alan McGee. Dick Green. James Kyllo. Slaughter Joe. Kle. Paul Reed. Emma B. Michelle Kerry. Vanessa Cotton. Mark Bowen. David Bagnall. Judge Graham and The Basement. Esther. Shito - Ryo Sensi. God and of course Sumo.
+    <p />
+    <b>SHOUTS AND RESPECT TO:</b>
+    Tan and the 212 collective. Emad Salama. Ted and Wendy. Duncan, Dick and Viv. Rob Coles. Tourtech. Big Mick and Roy. Cole Coonce. Steve Waring. ${deirdre}. Patrick at Space Travel Agency, HH. Shutlanger Dave. Alastair lndge. Alan, Patricia and Kevin McGinty. Barry V. Mr Parkin. James Duval. Alan Moore. Lisa Lovebucket. Don Chow. Clemens Kinder. Terry Razor. Donald John Lewis. Rachel Woodhouse. Lottie and Mark Fisher. The Jersey Posse. Kim Deal. Rob Goodman. Oliver Sacks. Ken. Dave Kirk and the Rockin' Turks. Fat Controller cellar. Richard Feynneman. Mark Webber. Slipstream. Primal Scream. Junior Loaded Posse. P Hex. JBC. Angelo and Massive. Strangelove. Gerard, Musical and the Bristol Beats. Transambient Communications (What Is Muzik?). Override. Pluto. Eno. Wolfgang Tschegg. The Purelove. The Black Eg. King Horror. Phill Lynott. lce-T and the Syndicate. Cypress Hill. Spacemen 3. Chris Morris. Toho Studios, Tokyo. De La Soul. The K Foundation. Nitronic Research Wind Tunnels, Silverlake, California. Tha Judge and all at Fatty's Bar and Grill. Yoshi and all at Mugi. Jaegermeister. Stolichnaya. Palm Leaf Technology. Shamrat Balti House. The Star Of India. The World Famous Ski Room. Urquell, Budvar and Guinness Breweries. Luka. Little Jake, Thumper and Hobbes. The Shaolin Temple and of course Sumo.
+
 #define	albums[49]->buy
 #define	albums[49]->lookup	spacemen
+#define	albums[49]->media	CD
+#define	albums[49]->label	creation_records
+#define	albums[49]->catalog	CRESCD 242
 #define	albums[49]->type	single,project
 #define	albums[49]->href	${jbc_albums}/sumosonic_spacemen.html
 #define	albums[49]->title	Come, Friendly Spacemen
 #define	albums[49]->thumb	/images/sumo/sumosonic_spacemen_front
+#define	albums[49]->images	/images/sumo/sumosonic_spacemen_back$$/images/sumo/sumosonic_spacemen_cd
 #define	albums[49]->project sumo
-#define	albums[49]->blurb The single features: Come, Friendly Spacemen, Monks Of Kung Fu, and Come, Friendly Spacemen (version)
 #define	albums[49]->dtreleased	1996-12-05
+#define	albums[49]->blurb
+	The single features: Come, Friendly Spacemen, Monks Of Kung Fu, and Come, Friendly Spacemen (version)
+
 #define	albums[50]->buy
 #define	albums[50]->lookup	spacemen12
 #define	albums[50]->type	single,project
 #define	albums[50]->href	${jbc_albums}/sumosonic_spacemen_12.html
 #define	albums[50]->media	12"
+#define	albums[50]->label	creation_records
+#define	albums[50]->catalog	CRES 242
 #define	albums[50]->title	Come, Friendly Spacemen (Club)
 #define	albums[50]->thumb	/images/sumo/sumosonic_spacemen_a
 #define	albums[50]->project sumo
 #define	albums[50]->blurb	<div class="annotation">There is a limited-edition vinyl 12" single in the clubs, featuring the long version of Come, Friendly Spacemen alongside re-mixed by Tom Withers of drum n bass combo Override and Johnny Octopus of Octopus Records. The "Sushi" mix is a full on, dark-hearted progressive house tune with an evil bass; the "Jackson Hole" Mix is an insane collision between stadium pop and drum & bass which has to be heard to be believed. The 12" will also feature Monks Of Kung Fu. Any DJ is urged to get in touch with Creation to get a copy.</div>
 #define	albums[50]->dtreleased	1996-12-05
+
 #define	albums[51]->buy
 #define	albums[51]->type	dvd,live,project
 #define	albums[51]->href
@@ -1370,9 +2837,13 @@
 #define	albums[53]->href	${jbc_albums}/spooky12.html
 #define	albums[53]->title	Spooky 12"
 #define	albums[53]->thumb	/images/releases/spooky_12_front
-#define	albums[53]->blurb
+#define	albums[53]->images	/images/releases/spooky_12_back
+#define	albums[53]->label	creation_records
+#define	albums[53]->catalog	CRE059T
 #define	albums[53]->media	12"
 #define	albums[53]->dtreleased	1988
+#define	albums[53]->dtrecorded	1988-05
+#define	albums[53]->studio	Greenhouse
 
 #define	albums[54]->type	various
 #define	albums[54]->lookup	va_shadow
@@ -1445,8 +2916,20 @@
 #define	albums[58]->title	VA: Abigail's Birthday Party
 #define	albums[58]->media	cassette
 #define	albums[58]->thumb	/images/releases/va_abigail
+#define	albums[58]->images	/images/releases/va_abigail2;;;;jo_bartlett;;https://twitter.com/jo_bartlett;;2023-07-05
 #define	albums[58]->ontribution ${olof}
 #define	albums[58]->dtreleased	1986
+#define	albums[58]->notes
+    The Jazz Butcher contribution coincided with the release of ${gift1}.
+    Here again, this compilation-tape came with a fanzine and was
+    also available as a limited package with the "Uncle Arthur's
+    Pop Parlour" compilation-tape in addition.
+	;;Perfection As A Hipster;;https://pressplayandrecord.wordpress.com/2010/02/02/abigails-birthday-party-1987/;;2000-10-10
+	$$
+    1984, my friend Dave Seabright bought the ‘Marnie’ 7” and I bought the 12”. ‘Butch’ became my first musician ‘mate’. I don’t mean we used to hang out and drink together but for a while we corresponded regularly: letters and postcards, long phone calls and we’d swap tapes and suggest bands that each other should listen to.
+    <p />
+    When Dave Driscoll and I decided to put the ‘Abigail’s Birthday Party’ tape together, we approached a number of bands asking for contributions. There were a lot of no replies and a lot of "nothing to spare" messages which put a huge dent in our confidence. Then we received a tape from Pat with about half a dozen songs to choose from! That’s how we ended up with ‘Olof Palme’, an exclusive at that time!
+	;;Tony Jenkins;;https://thenewfools.bandcamp.com/track/something-fishy-going-on;;2021-12-18
 
 #define	albums[59]->type	various
 #define	albums[59]->lookup	va_gunfire
@@ -1660,16 +3143,33 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[73]->media	4xCD
 #define	albums[73]->blurb
 	Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’.
+#define	albums[73]->liner
+    In the early '80s, ${barker} was checking master vinyl copies of classical recordings for glitches - they don't make jobs like that anymore. In his spare time he discovered innovative souls struggling to make music and welcomed them to his Glass Records label. The roll call included Teenage Fanclub, Spacemen 3, The Pastels and The Jazz Butcher.
+    <p />
+    The 'Butcher' delivered a gaggle of albums and many 45s for Glass from 1983 to 1986, the jacket notes on the dusty tome that recalls this period mentions Randall And Hopkirk (Deceased), Thatcher, DIY post-punk, LSD, surrealist cabaret, The Velvet Underground, a bottle of Cointreau or two, the Amstrad 7090 and Ronco's 'Black Magic' compilation. All that led to the 'The Wasted Years': Four albums, many visions...
+    <p />
+    '${bacon}' was an experiment in sound, conjoining that Ronco platter to Todd Rundgren, a guitar from Wes Montgomery's cupboard and mentions of imaginary monsters set to some funky chops. "The sound of a few mates failing to take note that they've an LP to make!" claims the JB site. It's pop meets bluesy scat with plenty of deadpan irony - a theme that will recur.
+    <p />
+    '${scandal}' took a "competent little rock band" with a bassist who'd served time in Bauhaus into a world chorused by multi-track vocals and bathroom ambience. "A top-shelf diamond of a record that is filled with excellent, memorable songs." (All Music).
+    <p />
+    '${sex}' offered a broadening perspective. Competence and European travel beget a narrative akin to an impressionistic cold war spy movie, a "mess of styles" that became coherent. "A great album," muses All Music before comparing JB mainman Pat Fish to Ray Davies circa 1969. It's an "accidental" concept album prone to fleeting melancholy.
+    <p />
+    '${dist}', ahead of the original band's demise through "fatigue and liquor" was the Butcher's stab at making their "greatest album ever". "A beautifully romantic record of soft rock ballads and jazzy torch songs," enthused Trouser Press. There's a folky edge scratching away beside the inevitable romp through pop music's historical lineage.
+    <p />
+    Four albums, then. The '80s recast at an ironic party of malcontents. Indie pop as a soundtrack. Songs that shouldn't fit together - but do. 'Wasted Years'? Yeah, really.
 
 #define	albums[74]->type	single
 #define	albums[74]->lookup	spook7
 #define	albums[74]->href	${jbc_albums}/spooky7.html
 #define	albums[74]->title	Spooky 7"
 #define	albums[74]->label	creation_records
-#define	albums[74]->catalog	CRE 059
+#define	albums[74]->catalog	CRE059
 #define	albums[74]->thumb	/images/releases/spooky7_A
+#define	albums[74]->images	/images/releases/spooky7_B
 #define	albums[74]->media	7"
 #define	albums[74]->dtreleased	1988
+#define	albums[74]->dtrecorded	1988-05
+#define	albums[74]->studio	Greenhouse
 #define	albums[74]->blurb
 	B/W ${blame}
 
@@ -1697,12 +3197,16 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[76]->catalog	AOF311B
 #define	albums[76]->title	Brave New Waves Session
 #define	albums[76]->thumb	/images/releases/brave
-#define	albums[76]->dtreleased	2018-01-19
+#define	albums[76]->dtreleased	2017-11-17 (CD) - 2018-01-19 (LP)
 #define	albums[76]->media	LP,CD
 #define	albums[76]->blurb
-#Release date: November 17, 2017 (CD)
-#<br/>Release date: January 19, 2018 (LP)
 	The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gigs/1988/Jun5.html, June 5th\, 1988)} in CBC Studio 13 in Montreal.  The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
+#define	albums[76]->notes
+    Little known fact! The Jazz Butcher's fabulous Brave New Waves session is one of the only sessions that ever got an official release, as the b-side of an EP called Spooky in the late 80s. Now hopelessly out of print, the session gets new life as part of the Brave New Waves series from Artoffact Records. This release includes a never-heard bonus track, a download card with bonus interviews, and completely updated and revised artwork, partially modified from the original Spooky sleeve art.
+    <p />
+    Led by Oxford philosophy graduate Pat Fish (the Jazz Butcher himself) and featuring a dazzling array of co-conspirators (including David Jay of Love And Rockets and Bauhaus fame), The Jazz Butcher is one of the longest running and most cult pop bands in Britain, having recorded some 15 albums since its founding in 1982. The band was one of the gems on the Creation Records roster, and has recently seen an incredible reissue series on Fire Records.
+    <p />
+    The Jazz Butcher's Brave New Waves session was recorded on ${linkInternal(/gigs/1988/Jun5.html, June 5th\, 1988)} in CBC Studio 13 in Montreal. The recording features cameos by both ${kevin} (Rational Youth) and ${brent} (the Brave New Waves host). An over the top rendition of "Sex Engine" includes a memorable dig at Skinny Puppy, as well as at other Canadian icons. The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
 
 #define	albums[77]->buy
 #define	albums[77]->type	various
@@ -1713,6 +3217,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[77]->catalog	Alien 1
 #define	albums[77]->title	VA: Can You Talk To The Dude #1
 #define	albums[77]->thumb	/images/releases/va_canyoutalktothedude_1_front
+#define	albums[77]->images	/images/releases/va_canyoutalktothedude_1_back
 #define	albums[77]->dtreleased	1994
 #define	albums[77]->media	CD
 #define	albums[77]->contribution ufo_man
@@ -1728,6 +3233,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[78]->catalog	Alien 2
 #define	albums[78]->title	VA: Can You Talk To The Dude #2
 #define	albums[78]->thumb	/images/releases/va_canyoutalktothedude_2_front
+#define	albums[78]->images	/images/releases/va_canyoutalktothedude_2_back
 #define	albums[78]->dtreleased	1996
 #define	albums[78]->media	CD
 #define	albums[78]->contribution ufo_man
@@ -1743,6 +3249,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[79]->catalog	DODGEMLOGIC001C
 #define	albums[79]->title	VA: Nation Of Saints
 #define	albums[79]->thumb	/images/releases/va_nationofsaints_front
+#define	albums[79]->images	/images/releases/va_nationofsaints_back
 #define	albums[79]->dtreleased	2009-11
 #define	albums[79]->media	CD
 #define	albums[79]->contribution drugs
@@ -1758,6 +3265,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[80]->catalog	COLPROCD 3411 2
 #define	albums[80]->title	VA: Creation Price
 #define	albums[80]->thumb	/images/releases/va_creation_price_front
+#define	albums[80]->images	/images/releases/va_creation_price_back
 #define	albums[80]->dtreleased	1996
 #define	albums[80]->media	CD
 #define	albums[80]->contribution girls
@@ -1773,6 +3281,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[81]->catalog	Visa 3334
 #define	albums[81]->title	VA: Un Automne '93
 #define	albums[81]->thumb	/images/releases/va_unautomne93_front
+#define	albums[81]->images	/images/releases/va_unautomne93_back
 #define	albums[81]->dtreleased	1993
 #define	albums[81]->media	CD
 #define	albums[81]->contribution davis
@@ -1789,6 +3298,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[82]->catalog	
 #define	albums[82]->title	VA: Straight Through The Sound Barrier
 #define	albums[82]->thumb	/images/releases/va_wilson_heyday_front
+#define	albums[82]->images	/images/releases/va_wilson_heyday_back
 #define	albums[82]->dtreleased	2004
 #define	albums[82]->media	CD
 #define	albums[82]->contribution wilson_quality_people
@@ -1809,6 +3319,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[83]->media	CDR
 #define	albums[83]->blurb
 	Two song demo.
+#define	albums[83]->audio	/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3;;Buffalo Sniper$$/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3;;Police Chief
 
 #define	albums[84]->buy
 #define	albums[84]->type	project
@@ -1820,10 +3331,17 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[84]->catalog	
 #define	albums[84]->title	April, 2003 Demo
 #define	albums[84]->thumb	/images/wilson/200304_wilson_front
+#define	albums[84]->images	/images/wilson/200304_wilson_back
 #define	albums[84]->dtreleased	2003-04
 #define	albums[84]->media	CDR
+#define	albums[84]->liner
+	Recorded at Notepad, NW10 by Andy Parker.
+    Produced by Donald Ross Skinner.
+    All tunes conceived, devised & assembled by Wilson.
+    Tracks contain elements of everything.
 #define	albums[84]->blurb
 	Two song demo.
+#define	albums[84]->audio	/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3;;Istanbul Connection$$/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3;;Quality People
 
 #define	albums[85]->buy
 #define	albums[85]->type	project
@@ -1835,11 +3353,15 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[85]->catalog	
 #define	albums[85]->title	2002 Demo
 #define	albums[85]->thumb	/images/wilson/2002_wilson_front
+#define	albums[85]->images	/images/wilson/2002_wilson_back
 #define	albums[85]->dtreleased	2002
 #define	albums[85]->media	CDR
 #define	albums[85]->blurb
 	Six song demo.
-
+#define	albums[85]->liner
+    Recorded by MC Bot on the Roland VS-1800 at Subsound, NN1 during 2001 and 2002. The words to "Play It All Night Long" are by Warren Zevon. Everything else is original pirate material. Increase the peace.
+#define	albums[85]->audio	/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3;;=Quality People$$/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3;;Istanbul Connection$$/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3;;Hippy Shit$$/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3;;Play It All Night Long$$/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3;;Burn, Hollywood, Burn$$/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp;;Dark Agenda
+   
 #define	albums[86]->buy     https://thejazzbutcher.bandcamp.com/album/the-violent-years
 #define	albums[86]->type	compilation
 #define	albums[86]->lookup	fire_violent
@@ -1865,6 +3387,8 @@ Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, 
 ##define	albums[87]->catalog
 #define	albums[87]->title	The Highest in the Land
 #define	albums[87]->thumb	/images/releases/highest
+#define	albums[87]->images	/images/2021_PressRelease_PatFish_PhilippeDufour;;;;Philippe Dufar$$/images/2021_PressRelease_PatFish1_RuthTidmarsh;;;;PlanetruthPictures$$/images/2021_PressRelease_PatFish2_RuthTidmarsh;;;;PlanetruthPictures
+#define	albums[87]->downloads	/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_engl.pdf;;Tapete Press release (EN)$$/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_dt.pdf;;Tapete Press release (DE)
 #define	albums[87]->dtreleased	2022-02-04
 #define	albums[87]->media	CD/LP/digital
 #define	albums[87]->blurb
@@ -1892,19 +3416,19 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[89]->country	UK
 #define	albums[89]->catalog
 #define	albums[89]->title	Guest Pass Disc
-##define	albums[89]->thumb	/images/releases/cdr_guestpass2000
+#define	albums[89]->thumb	/images/releases/cdr_guestpass2000
 #define	albums[89]->dtreleased	2000-01-01
 #define	albums[89]->media	CDR
 #define	albums[89]->blurb
-This was a limited edition CD made available to help fund the
-JBC tour across the US.
-<p />
-Along with the CD you got an autographed photo and tickets to the
-JBC show of your choice.
-<p />
-Although it is a "home made" CDR, it was officially
-released by the JBC and would be pre-paid for pick-up at the
-show.
+	This was a limited edition CD made available to help fund the
+	JBC tour across the US.
+	<p />
+	Along with the CD you got an autographed photo and tickets to the
+	JBC show of your choice.
+	<p />
+	Although it is a "home made" CDR, it was officially
+	released by the JBC and would be pre-paid for pick-up at the
+	show.
 
 #define	albums[90]->type	various
 #define	albums[90]->lookup	va_nm_vol1
@@ -1940,6 +3464,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[92]->label	Glass Modern
 #define	albums[92]->catalog	GLAMS004
 #define	albums[92]->thumb	/images/releases/never7_A
+#define	albums[92]->images	/images/releases/never7_B
 #define	albums[92]->media	7"
 #define	albums[92]->dtreleased	2022
 #define	albums[92]->buy	https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7

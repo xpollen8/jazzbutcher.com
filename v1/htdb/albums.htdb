@@ -4745,7 +4745,7 @@ Previously available on the ${fishco} LP/CD.
 #	<br />${green}
 	${players_end}
 	${thx_beg}
-	These lyrics transcribed by the Butcher with an Eddwg
+	These lyrics transcribed by the Butcher with an Edding
 	1800 Profitpen, because you're always on at me to put
 	them on the sleeve! Hope you enjoy this collection.  That
 	is, after all, what we made it for.  Best regards, The
@@ -7586,7 +7586,7 @@ Previously available on the ${fishco} LP/CD.
 	</div>
 	${a_media} ${ALBUM}, ${CD}, ${LP}
 	${a_dtreleased} 2012-10-18
-	${a_label} Self published
+	${a_label} Tundraducks Records
 	${det_end}
 	${tun_beg}
 	${animals}<br />
@@ -8518,7 +8518,7 @@ ${49} (Live KCRW Session 1989)
 	<a href="${jbc_images}/wilson/200511_wilson_cd.jpg"><img src="${jbc_images}/wilson/200511_wilson_cd_500.jpg"></a>
 	${a_media} ${CDR}
 	${a_dtreleased} 2005-11
-	${a_label} Primier Studios
+	${a_label} Premier Studios
 	${a_cat} 
 	${det_end}
 	${tun_beg}
@@ -8631,4 +8631,3 @@ ${49} (Live KCRW Session 1989)
 	${players_end}
 	${jbc_footer}
 #live	endif
-

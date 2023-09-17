@@ -38,8 +38,9 @@ export type ReleaseType =  {
 	notes?: string
 	contribution?: string
 	Agroove?: string
-	CDring?: string
 	Bgroove?: string
+	CDring?: string
+	audio?: string
 }
 
 export type ReleaseTypeWithChildren = ReleaseType & { children?: string | React.ReactElement }
@@ -145,7 +146,7 @@ const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 			return (<>
 				<Tag>Audio</Tag>
 				{audio?.map(({ file, title }: any, key: number) =>
-						<EmbedMedia data={{ song: title, mediaurl: file, parent: release.href, comment: release.title }} />
+					<EmbedMedia key={key} data={{ song: title, mediaurl: file, parent: release.href, comment: release.title }} />
 				)}
 			</>)
 		}

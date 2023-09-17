@@ -3360,7 +3360,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 	Six song demo.
 #define	albums[85]->liner
     Recorded by MC Bot on the Roland VS-1800 at Subsound, NN1 during 2001 and 2002. The words to "Play It All Night Long" are by Warren Zevon. Everything else is original pirate material. Increase the peace.
-#define	albums[85]->audio	/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3;;=Quality People$$/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3;;Istanbul Connection$$/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3;;Hippy Shit$$/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3;;Play It All Night Long$$/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3;;Burn, Hollywood, Burn$$/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp;;Dark Agenda
+#define	albums[85]->audio	/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3;;Quality People$$/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3;;Istanbul Connection$$/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3;;Hippy Shit$$/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3;;Play It All Night Long$$/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3;;Burn, Hollywood, Burn$$/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3;;Dark Agenda
    
 #define	albums[86]->buy     https://thejazzbutcher.bandcamp.com/album/the-violent-years
 #define	albums[86]->type	compilation

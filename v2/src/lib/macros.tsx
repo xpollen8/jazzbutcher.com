@@ -563,7 +563,7 @@ export const censorEmail = (str: string) => {
 	return deHTDB[0] + deHTDB.substr(1, idx - 1) + Array(len - idx - 1).join('.') + deHTDB[len - 1];
 }
 
-export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=');
+export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=');
 
 
 export const parseCredit = (cr: string = '') => {

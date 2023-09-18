@@ -2,6 +2,7 @@
 	* press in /releases
 	* audio in lyrics
 	* audio/video/press/gigs within /project/XXX
+	* nootbook scans to lyrics pages
 
 # ensure ALL releases have correct performance entries for songs
 

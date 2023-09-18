@@ -557,12 +557,16 @@ const songLinkMapped = (title: string, doit?: boolean) => {
 
 export const censorEmail = (str: string) => {
 	const deHTDB = str?.replace(/\[remove\].*/, '@');
-	const len = deHTDB.length;
 	const idx = deHTDB.indexOf('@') + 1;
-	return deHTDB[0] + deHTDB.substr(1, idx - 1) + Array(len - idx - 1).join('.') + deHTDB[len - 1];
+	const len = deHTDB.length;
+		console.log("CENSOR", deHTDB, idx, (len - idx - 1));
+	if (idx >= 0 && (len - idx - 1) >= 0) {
+		return deHTDB[0] + deHTDB.substr(1, idx - 1) + Array(len - idx - 1).join('.') + deHTDB[len - 1];
+	}
+	return str;
 }
 
-export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=');
+export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '[remove]');
 
 
 export const parseCredit = (cr: string = '') => {

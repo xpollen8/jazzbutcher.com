@@ -1,6 +1,6 @@
 "use server"
 
-import { localDate, censorEmail, deHTDBifyText, HashedType, CommentType, RecordType } from './macros';
+import { localDate, censorEmail, deHTDBifyText, HashedType, RecordType, CommentType } from '@/lib/macros';
 
 const cache: HashedType = {};
 
@@ -67,8 +67,6 @@ const apiData = async (path: string, args?: string) => {
 	//console.log("apiData", { path, args });
 
 	switch (path) {
-		case 'feedbacks':
-		case 'feedback_by_page':
 		case 'gig_by_datetime':
 		case 'gigmedias':
 		case 'gigs':
@@ -84,8 +82,15 @@ const apiData = async (path: string, args?: string) => {
 		case 'lyrics':
 		case 'lyric_by_href':
 		case 'songs_by_datetime':
-		case 'feedback':
 			return await apiDataFromDataServer(path, args);
+		case 'feedbacks':
+		case 'feedback_by_page':
+			const data = await apiDataFromDataServer('feedback', args);
+			data.results = data?.results.map((r: CommentType) => ({
+				...r,
+				who: censorEmail(r?.who),
+			}));
+			return data;
 		case 'songs_by_release': {
 			const data = await apiDataFromDataServer(path, args);
 			const crdata = await apiDataFromDataServer('credits_by_release', args);

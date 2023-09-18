@@ -1,3 +1,8 @@
+# ensure ALL releases have correct performance entries for songs
+
+# add audio link to  performance entries for songs
+  * this will take care of accounting for songs without any other association
+
 # port all of /articles
 	* will now be /mailinglist
 	* the year 2000 does appear to be in my old "strangle" mail folder
@@ -10,10 +15,14 @@
 	* need to structure old people.htdb file into form that can dump to db
 
 # /releases
+	<strike>
 	* need to structure old albums.htdb file into form that can dump to db
+	</strike>
 
 # /press
+	<strike>
 	* need to extend the database table to hold everything.
+	</strike>
 
 # what should be on the home page?
 

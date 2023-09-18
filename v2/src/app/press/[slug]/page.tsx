@@ -81,13 +81,13 @@ const PressArticle = ({ params }: { params?: any }) => {
 		if (article?.thumb || article?.images) {
 			const images = parseThumbAndImages(`${article?.thumb}$$${article?.images}`);
 			if (images?.length) {
-				return (<div style={{ width: '250px', float: 'right', margin: '20px', border: '1px solid #666', background: 'white', padding: '5px', paddingBottom: '0px' }}>
+				return (<div style={{ float: 'right', margin: '5px', border: '1px solid #666', background: 'white', padding: '5px', paddingBottom: '0px' }} className=" grow">
 					{images?.map(({ image, source, sourceurl, sourcedate, caption }: any, key: number) =>
 						<Link key={key} href={`https://jazzbutcher.com${image}.jpg`}>
-							<div className="m-2" style={{ maxWidth: '250px' }}>
+							<div className="m-2" style={{ maxWidth: '200px' }}>
 								<Image
 									alt={caption || 'album image'}
-									width={250} height={250}
+									width={200} height={200}
 									src={`https://jazzbutcher.com${image}_250.jpg`}
 								/>
 								{(caption) && <><i>{caption}</i><br/></>}

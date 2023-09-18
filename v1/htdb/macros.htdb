@@ -4897,7 +4897,9 @@ ${define(_set, false)}
 
 #define	objectToJSON(obj)
 {
-	"${obj}": [
+	"noun": "${obj}",
+	"numResults": ${${obj}->numResults},
+	"results": [
 #live	loop(x, 1, ${${obj}->numResults})
 #albums->numFields
 	{

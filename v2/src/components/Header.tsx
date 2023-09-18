@@ -1,6 +1,9 @@
+// "use client"
+
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next'
 import { parseYear, ts2URI } from '@/lib/macros';
+import { useSearchParams } from 'next/navigation';
  
 type Props = {
   params: {
@@ -41,8 +44,9 @@ const sections : { [key: string]: BreadCrumb } = {
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'The exhaustive live performance archives' },
 	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The arrmy of JBC musicians' },
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
-	fiascos: { parent: 'jbc', title: 'The Fiascos', summary: 'Tales of disastrous outings' },
-	prejbc: { parent: 'jbc', title: 'Pre-JBC', summary: 'Before there was The JBC' },
+	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'The man has opinions on things' },
+	fiascos: { parent: 'writings', title: 'The Fiascos', summary: 'Top 10 JBC Fiascos' },
+	prejbc: { parent: 'pat', title: 'Pre-JBC', summary: 'Before there was The JBC' },
 	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content' },
 	help: { parent: 'jbc', title: 'Get Involved!', summary: "Let's do this, together" },
 
@@ -69,7 +73,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	tributes: { parent: 'memoriam', title: 'Tributes', summary: "Rememberences and tributes" },
 	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
 
-	letters: { parent: 'pat', title: 'Letters From Pat' },
+	letters: { parent: 'writings', title: 'Letters From Pat' },
 
 	mailinglist: { parent: 'etc', title: 'Mailing List' },
 	tribute: { parent: 'etc', title: 'Fan Tribute Project' },
@@ -180,7 +184,7 @@ type GigResults = {
 	datetime?: string;
 }
 
-type Props_MakeHeader = {
+type Props_Header = {
 	project?: string
 	section?: string
 	title?: any
@@ -324,17 +328,26 @@ where {
 	options: [{}]
 }
  */
-const MakeHeader = (props: Props_MakeHeader): React.ReactNode  =>
-<>
-	<div className="homeContainer">
-		<div className="homeHeader">
-			{/*<Nav />*/}
-			<Section {...props} />
-			{props?.extraNav}
+const Header = (props: Props_Header): React.ReactNode  => {
+	/* needs work - only works at very top level
+	const searchParams = useSearchParams();
+	const section = searchParams.get('section')
+	console.log("searchParams", searchParams, section, props);
+	if (section) {
+		props.section = section;
+	}
+	*/
+	return ( <>
+		<div className="homeContainer">
+			<div className="homeHeader">
+				{/*<Nav />*/}
+				<Section {...props} />
+				{props?.extraNav}
+			</div>
+			{props?.children}
 		</div>
-		{props?.children}
-	</div>
-	{(props?.project) && <div className={`gig_${props.project}`} ></div>}
-</>
+		{(props?.project) && <div className={`gig_${props.project}`} ></div>}
+	</>)
+}
 
-export default MakeHeader;
+export default Header;

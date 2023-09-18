@@ -2675,7 +2675,7 @@
     <p />
     <b>Honorary mentions must surely also go to:</b>
     <p />
-    <a href="${jbc_etc}/starindia.html">The Star of India</a>, NN1<br />
+    <a href="${jbc_press}/20020709_starindia.html">The Star of India</a>, NN1<br />
     Indian Veg, Chapel Market, Islington (the two great originals for us lot)<br />
     Scholars Inn, Bloomington, Indiana (well classy)<br />
     Himalaya, Madrid (our base over three mental days in 1991)<br />
@@ -3482,13 +3482,13 @@ albums[${li}]
 #live		endif
 #live	endif
 #live	endloop
-#live	if (!(defined(lookupFound)))
+#live	if ((!(defined(lookupFound))))
 #
 #	if not found by 'lookup'
 #	try to find by 'href'
 #
 #live		loop(li, 1, ${albums->numResults})
-#live		if (getval(albums[${li}]->${backupF}) == ${l})
+#live		if (getval(albums[${li}]->${backupF}) == ${l}.html)
 albums[${li}]
 #live		endif
 #live		endloop

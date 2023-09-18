@@ -1263,7 +1263,7 @@
 #define	albums[32]->catalog	SHOCKCD4010
 #define	albums[32]->country	Australia
 #define	albums[32]->thumb	/images/shirley
-#define	albums[32]->thumb	/images/shirley_back$$/images/shirley_cd
+#define	albums[32]->images	/images/shirley_back$$/images/shirley_cd
 #define	albums[32]->blurb	
 #define	albums[32]->dtreleased	1991
 #define	albums[32]->label	Shock

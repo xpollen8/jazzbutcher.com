@@ -55,12 +55,12 @@ const HomeBooks = () =>
 
 const HomeReleases = () =>
 <>
-		<ReleaseBlurb lookup='never7' />
-		<ReleaseBlurb lookup='highest' />
-		<ReleaseBlurb lookup='fire_cholmondley' />
-		<ReleaseBlurb lookup='fire_violent' />
-		<ReleaseBlurb lookup='fire_wasted' />
-		<ReleaseBlurb lookup='adventurers' />
+		<ReleaseBlurb lookup='never7' key={1} />
+		<ReleaseBlurb lookup='highest' key={2} />
+		<ReleaseBlurb lookup='fire_cholmondley' key={3} />
+		<ReleaseBlurb lookup='fire_violent' key={4} />
+		<ReleaseBlurb lookup='fire_wasted' key={5} />
+		<ReleaseBlurb lookup='adventurers' key={6} />
 </>
 
 /*

@@ -50,7 +50,7 @@ const FoundOn = (song: any, key: number, releases: any) => {
 				{/* WHY NOT? foundon.map((props: any) => { console.log("P", props); return ReleaseBlurb(props) }) */}
 				{foundon.map((lookup: string, key: number) => {
 					const release = releases?.find((a: any) => a.lookup === lookup?.trim());
-					return MakeAlbumBlurb({ ...release, key });
+					return MakeAlbumBlurb(release, key);
 				})}
 			</blockquote>
 		</div>

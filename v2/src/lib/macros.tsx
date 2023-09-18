@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import moment from 'moment';
 import songMap from './songMap';
-import apiData from './apiData';
 import GigGraph, { types } from '@/components/GigGraph';
 
 import IconSonglist from '@/svg/IconSonglist';
@@ -580,13 +579,4 @@ const autoLink = songLinkMapped;
 
 const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
 
-const releaseByLookup = async (lookup: string) => {
-	const releases = await apiData('releases');
-	const release = releases?.albums?.find((r: any) => r?.lookup === lookup);
-	if (release) return release;
-	// try to find by other means
-	const releaseByHREF = releases?.albums?.find((r: any) => r?.href?.includes(lookup));
-	if (releaseByHREF) return releaseByHREF;
-}
-
-export { localDate, datesEqual, bannerGigs, releaseByLookup, linkSong, songLinkMapped, parseDomain, dateDisplay, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }
+export { localDate, datesEqual, bannerGigs, linkSong, songLinkMapped, parseDomain, dateDisplay, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

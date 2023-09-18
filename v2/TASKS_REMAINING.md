@@ -1,3 +1,5 @@
+# move apiData ito app/api dir, sinec that's only place used now
+
 # Add components
 	* press in /releases
 	* audio in lyrics

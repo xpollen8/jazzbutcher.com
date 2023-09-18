@@ -9,7 +9,7 @@ import useRelease from '@/lib/useRelease';
 
 const Page = ({ params }: { params?: any }) => {
 	const { data, isLoading, error } = useRelease(params?.id);
-	const release = data;
+	const release = data && data?.results[0];
 	return (<Suspense fallback=<>Loading...</> >
 		{(!isLoading && release) && (<>
 			<Header section="releases" title={release?.title} />

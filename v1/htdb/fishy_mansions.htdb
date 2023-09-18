@@ -322,5 +322,5 @@ ${jbc_footer}
 
 #define	data.json
 #live if (getval(page) = data.json)
-${objectToJSON(fishy)}
+${objectToJSON(obj=fishy)}
 #live	endif

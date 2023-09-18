@@ -40,7 +40,7 @@ export type CommentType = {
 const linkExternal = (href: string, text?: string | React.ReactNode): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
 const linkInternal = (href: string, text?: string): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
-const parseYear = (datetime: string): number => parseInt(datetime.substr(0, 4), 10);
+const parseYear = (datetime?: string): number => (datetime && parseInt(datetime.substr(0, 4), 10)) || 0;
 const parseMonth = (datetime: string): number => parseInt(localDate(datetime).substr(5, 2), 10);
 export const parseMonthName = (datetime: string) => num2mon(parseMonth(datetime));
 const parseDay = (datetime: string): number => parseInt(localDate(datetime).substr(8, 2), 10);

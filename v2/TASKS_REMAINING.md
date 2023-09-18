@@ -1,3 +1,7 @@
+# Add components
+	* press in /releases
+	* audio in lyrics
+
 # ensure ALL releases have correct performance entries for songs
 
 # add audio link to  performance entries for songs

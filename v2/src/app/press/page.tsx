@@ -1,6 +1,12 @@
+"use client"
+
+import Link from 'next/link';
+import { Suspense } from 'react';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
+import usePresses from '@/lib/usePresses';
 
 const sections = [
 	{ uri: '/press/interviews', text: 'Published Interviews' },
@@ -18,11 +24,23 @@ const sections = [
 	{ uri: '/press/sumosonic', text: 'Sumosonic' },
 ];
 
-const Press = () => 
-<>
-	<Header section="press" />
-		{sections.map(MakeSimpleURI)}
-	<Footer />
-</>
+const Press = () => {
+	const { data, isLoading, error } = usePresses();
+	const presses = data?.results;
+	return (<>
+		<Header section="press" />
+			{sections.map(MakeSimpleURI)}
+			<Suspense fallback=<>Loading...</> >
+				{(!isLoading) && (<>
+					{presses.map((p: any, key: number) => {
+						return (<div key={key}>
+							<Link href={p.url}>{p.type} {p.publication} {p.title} {p.headline}</Link>
+						</div>)
+					})}
+				</>)}
+			</Suspense>
+		<Footer />
+	</>)
+}
 
 export default Press;

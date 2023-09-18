@@ -16909,5 +16909,5 @@ Reviewing new music by an artist who has passed away is difficult. Pretending th
 #define data.json
 #live if (getval(page) = data.json)
 	${definePressItems()}
-${objectToJSON(pressItems)}
+${objectToJSON(obj=pressItems)}
 #live   endif

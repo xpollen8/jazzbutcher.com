@@ -860,5 +860,5 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 
 #define	data.json
 #live if (getval(page) = data.json)
-${objectToJSON(newsItem)}
+${objectToJSON(obj=newsItem)}
 #live	endif

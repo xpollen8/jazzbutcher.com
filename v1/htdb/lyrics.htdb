@@ -11181,5 +11181,5 @@ Break out and find out tonight.
 #define	data.json
 #live if (getval(page) = data.json)
 # doesn't yet work
-${objectToJSON(lyrics)}
+${objectToJSON(obj=lyrics)}
 #live	endif

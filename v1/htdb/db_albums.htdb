@@ -3474,14 +3474,53 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 
 #define	albums->numResults	92
 
-#define	lookupAlbumBy(l, f=lookup)
+#define	lookupAlbumBy(l, f=lookup, backupF=href)
 #live	loop(li, 1, ${albums->numResults})
 #live	if (getval(albums[${li}]->${f}) = ${l})
 albums[${li}]
+#live		if (define(lookupFound, yes))
+#live		endif
 #live	endif
+#live	endloop
+#live	if (!(defined(lookupFound)))
+#
+#	if not found by 'lookup'
+#	try to find by 'href'
+#
+#live		loop(li, 1, ${albums->numResults})
+#live		if (getval(albums[${li}]->${backupF}) == ${l})
+albums[${li}]
+#live		endif
+#live		endloop
+#live	endif
+
+#define	cloneAlbum(lookup, newObj)
+#live	if ((define(origObj, ${lookupAlbumBy(l=${lookup})})) && (getval(origObj)))
+RETURN SOMETHING TO SIGNAL THIS CALL WORKED
+#live	endif
+#live	if (define(${newObj}->numFields, ${albums->numFields}))
+#live	endif
+#live	if (define(${newObj}->numResults, 1))
+#live	endif
+#live	loop(ll, 1, ${albums->numFields})
+#live		if (define(${newObj}->field[${ll}], ${albums->field[${ll}]}))
+#live		endif
+#live		if (define(${newObj}[1]->${albums->field[${ll}]}, ${literalizeCommas(${${origObj}->${albums->field[${ll}]}})}))
+#live		endif
 #live	endloop
 
 #define	data.json
-#live if (getval(page) = data.json)
-${objectToJSON(albums)}
+#live	if (getval(page) = data.json)
+#live		if (getval(lookup))
+#live			if (cloneAlbum(lookup=${lookup}, newObj=lookedupAlbum))
+${objectToJSON(obj=lookedupAlbum)}
+#live			else
+{
+	"numResults": 0,
+	"results": []
+}
+#live			endif
+#live		else
+${objectToJSON(obj=albums)}
+#live		endif
 #live	endif

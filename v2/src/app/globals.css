@@ -867,20 +867,24 @@ color: white;
 }
 
 .unknownYear:after {
-	background: pink;
+	background: red;
+	color: white;
 	font-size: .8em;
+	margin-left: 3px;
 	content: ' date unknown';
 }
 
 .unknownMonth:after {
 	background: pink;
 	font-size: .8em;
+	margin-left: 3px;
 	content: ' exact month unknown';
 }
 
 .unknownDay:after {
 	background: pink;
 	font-size: .8em;
+	margin-left: 3px;
 	content: ' exact day unknown';
 }
 

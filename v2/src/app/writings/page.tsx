@@ -7,9 +7,11 @@ import LetterHeader from '@/components/LetterHeader';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const writings = [
-	{ uri: "/press/20020709_starindia.html", text: "The Star Of India - Pat reviews his favorite Restaurant", aux: "2002-07" },
-	{ uri: "/fiascos", text: "Top 10 JBC Fiascos", aux: "2020-09" },
-	{ uri: '/letters', text: "Letters From Pat'", aux: "1990-1994" },
+	{ uri: "/fiascos", text: "Top 10 JBC Fiascos", aux: "(2020-09)" },
+	{ uri: "/press/20020709_starindia.html", text: "The Star Of India - Pat reviews his favorite Restaurant", aux: "(2002-07)" },
+	{	uri: '/press/20040512_wilson_about.html', text: "Wilson Explainer", aux: '(2002)' },
+	{ uri: '/letters', text: "Letters From Pat", aux: "(1990-1994)" },
+	{ uri: '/tomhall', text: "Pat's tribute to musician Tom Hall", aux: "(2003)" },
 ];
 
 const Writings = () => 

@@ -70,10 +70,10 @@ const PressArticle = ({ params }: { params?: any }) => {
 	}
 	const parseThumbAndImages = (str?: string) => {
 		if (!str) return;
-		const chunks = str.replace(/ /g, '').split('$$');
+		const chunks = str.replace(/<p \/>/g, '').split('$$');
 		const images = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
 			const [ image, source, sourceurl, sourcedate, caption ] = ch.split(';;');
-			return { image, source, sourceurl, sourcedate, caption };
+			return { image: image.replace(/ /g, ''), source, sourceurl, sourcedate, caption };
 		});
 		return images;
 	}

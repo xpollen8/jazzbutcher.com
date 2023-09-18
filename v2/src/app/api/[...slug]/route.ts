@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-import apiData from '@/lib/apiData';
+import apiData from './apiData';
  
 export async function GET(request: NextRequest) {
 	//console.log("API", request.url);

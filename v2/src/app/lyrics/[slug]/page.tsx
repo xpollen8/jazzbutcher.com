@@ -98,7 +98,7 @@ const Lyric = ({ params }: { params?: any }) => {
 	const { data: dataX, isLoading: isX, error: errorX } = useReleases();
 
 	const song = data?.results[0];
-	const releases = dataX?.albums;
+	const releases = dataX?.results;
 
 	const tabs = [
 			{ label: 'Lyrics', lookup: (song: any) => { return song?.lyrics }, func: Lyrics },

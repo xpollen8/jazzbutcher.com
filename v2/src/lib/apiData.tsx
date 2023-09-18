@@ -148,13 +148,7 @@ const apiData = async (path: string, args?: string) => {
 		case 'releases':
 			return await apiDataFromHTDBServer('db_albums/data.json');
 		case 'release_by_lookup': {
-			const releases = await apiDataFromHTDBServer('db_albums/data.json');
-			const release = releases?.albums?.find((r: any) => r?.lookup === args);
-			if (release) return release;
-			// try to find by other means
-			const releaseByHREF = releases?.albums?.find((r: any) => r?.href?.includes(args));
-			if (releaseByHREF) return releaseByHREF;
-			break;
+			return await apiDataFromHTDBServer(`db_albums/data.json?lookup=${args}`);
 		}
 	}
 }

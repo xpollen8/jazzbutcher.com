@@ -208,8 +208,8 @@ const parseReleaseAudio = (str?: string) => {
 	if (!str) return;
 	const chunks = str.split('$$');
 	const audio = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
-		const [ file, title ] = ch.split(';;');
-		return { file, title };
+		const [ file, title, source, sourceurl, sourcedate ] = ch.split(';;');
+		return { file, title, source, sourceurl, sourcedate };
 	});
 	return audio;
 }
@@ -220,9 +220,10 @@ const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		if (audio?.length) {
 			return (<>
 				<Tag>Audio</Tag>
-				{audio?.map(({ file, title }: any, key: number) =>
+				{audio?.map(({ file, title, source, sourceurl, sourcedate }: any, key: number) => (<>
 					<EmbedMedia key={key} data={{ song: title, mediaurl: file, parent: release.href, comment: release.title }} />
-				)}
+					{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
+				</>))}
 			</>)
 		}
 	}

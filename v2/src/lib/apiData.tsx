@@ -63,15 +63,6 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 	return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
 }
 
-/*
-const filterComments = (res: CommentType[]) => res?.map((c: CommentType) => ({
-	...c,
-	subject: deHTDBifyText(c?.subject),
-	who: censorEmail(c?.who),
-	comments: deHTDBifyText(c?.comments),
-}));
-*/
-
 const apiData = async (path: string, args?: string) => {
 	//console.log("apiData", { path, args });
 
@@ -93,6 +84,7 @@ const apiData = async (path: string, args?: string) => {
 		case 'lyrics':
 		case 'lyric_by_href':
 		case 'songs_by_datetime':
+		case 'feedback':
 			return await apiDataFromDataServer(path, args);
 		case 'songs_by_release': {
 			const data = await apiDataFromDataServer(path, args);
@@ -131,11 +123,6 @@ const apiData = async (path: string, args?: string) => {
 				credits,
 			}
 		}
-		case 'feedback':
-			// clean up server-side
-			const data = await apiDataFromDataServer(path, args);
-			//data.results = filterComments(data.results);
-			return data;
 		case 'gigs_by_musician': {
 			const performances =  await apiDataFromDataServer(path, args);
 			const gigs = await apiDataFromDataServer('gigs');
@@ -160,6 +147,15 @@ const apiData = async (path: string, args?: string) => {
 		}
 		case 'releases':
 			return await apiDataFromHTDBServer('db_albums/data.json');
+		case 'release_by_lookup': {
+			const releases = await apiDataFromHTDBServer('db_albums/data.json');
+			const release = releases?.albums?.find((r: any) => r?.lookup === args);
+			if (release) return release;
+			// try to find by other means
+			const releaseByHREF = releases?.albums?.find((r: any) => r?.href?.includes(args));
+			if (releaseByHREF) return releaseByHREF;
+			break;
+		}
 	}
 }
 

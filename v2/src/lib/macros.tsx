@@ -559,7 +559,7 @@ export const censorEmail = (str: string) => {
 	const deHTDB = str?.replace(/\[remove\].*/, '@');
 	const idx = deHTDB.indexOf('@') + 1;
 	const len = deHTDB.length;
-		console.log("CENSOR", deHTDB, idx, (len - idx - 1));
+		//console.log("CENSOR", deHTDB, idx, (len - idx - 1));
 	if (idx >= 0 && (len - idx - 1) >= 0) {
 		return deHTDB[0] + deHTDB.substr(1, idx - 1) + Array(len - idx - 1).join('.') + deHTDB[len - 1];
 	}

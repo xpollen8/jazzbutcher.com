@@ -5,8 +5,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
-import { releaseByLookup } from '@/lib/macros';
+//import ReleaseBlurb from '@/components/ReleaseBlurb';
 import useLyric from '@/lib/useLyric';
+import useReleases from '@/lib/useReleases';
 
 /*
       project: '',
@@ -32,7 +33,7 @@ import useLyric from '@/lib/useLyric';
  ${begTab(Media)}
 
 */
-const Lyrics = async (props: any) => {
+const Lyrics = (props: any) => {
 	return (
 		<blockquote key={props?.key}>
 			<div className="lyrics" dangerouslySetInnerHTML={{__html: props?.lyrics?.replace(/<br\/>/g, '') }}/>
@@ -40,51 +41,51 @@ const Lyrics = async (props: any) => {
 	)
 }
 
-const FoundOn = async (props: any) => {
-	const releases = props.found_on?.split("..");	// sex .. bath .. blue, etc
+const FoundOn = (song: any, key: number, releases: any) => {
+	const foundon = song.found_on?.split("..");	// sex .. bath .. blue, etc
 	return (
-		<div key={props?.key}>
+		<div key={key}>
 			<Tag>Found On</Tag>
 			<blockquote>
-			{releases.map(async (lookup: string, key: number) => {
-				const album = await releaseByLookup(lookup?.trim());
-				return album && MakeAlbumBlurb(album, key)
-				}
-			)}
+				{/* WHY NOT? foundon.map((props: any) => { console.log("P", props); return ReleaseBlurb(props) }) */}
+				{foundon.map((lookup: string, key: number) => {
+					const release = releases?.find((a: any) => a.lookup === lookup?.trim());
+					return MakeAlbumBlurb({ ...release, key });
+				})}
 			</blockquote>
 		</div>
 	)
 }
 
-const PatSays = async (props: any) => {
+const PatSays = (props: any) => {
 	return (
 		<div key={props?.key}>
 		</div>
 	)
 }
 
-const OthersSay = async (props: any) => {
+const OthersSay = (props: any) => {
 	return (
 		<div key={props?.key}>
 		</div>
 	)
 }
 
-const Tablature = async (props: any) => {
+const Tablature = (props: any) => {
 	return (
 		<div key={props?.key}>
 		</div>
 	)
 }
 
-const LiveStats = async (props: any) => {
+const LiveStats = (props: any) => {
 	return (
 		<div key={props?.key}>
 		</div>
 	)
 }
 
-const Media = async (props: any) => {
+const Media = (props: any) => {
 	return (
 		<div key={props?.key}>
 		</div>
@@ -94,29 +95,31 @@ const Media = async (props: any) => {
 
 const Lyric = ({ params }: { params?: any }) => {
 	const { data, isLoading, error } = useLyric(params?.slug);
+	const { data: dataX, isLoading: isX, error: errorX } = useReleases();
 
-	const lyric = data?.results[0];
+	const song = data?.results[0];
+	const releases = dataX?.albums;
 
 	const tabs = [
-			{ label: 'Lyrics', lookup: (data: any) => { return data?.lyrics }, func: Lyrics },
-			{ label: 'Found On', lookup: (data: any) => (data?.found_on), func: FoundOn },
-			{ label: 'Pat Says', lookup: (data: any) => (data?.pat_says), func: PatSays },
-			{ label: 'Others Say', lookup: (data: any) => (data?.others_say), func: OthersSay },
-			{ label: 'Tablature', lookup: (data: any) => (data?.tablature), func: Tablature },
-			{ label: 'Live Stats', lookup: (data: any) => ({}), func: LiveStats },
-			{ label: 'Media', lookup: (data: any) => (data?.media), func: Media },
+			{ label: 'Lyrics', lookup: (song: any) => { return song?.lyrics }, func: Lyrics },
+			{ label: 'Found On', lookup: (song: any) => (song?.found_on), func: (song: any, key: number) => FoundOn(song, key, releases) },
+			{ label: 'Pat Says', lookup: (song: any) => (song?.pat_says), func: PatSays },
+			{ label: 'Others Say', lookup: (song: any) => (song?.others_say), func: OthersSay },
+			{ label: 'Tablature', lookup: (song: any) => (song?.tablature), func: Tablature },
+			{ label: 'Live Stats', lookup: (song: any) => ({}), func: LiveStats },
+			{ label: 'Media', lookup: (song: any) => (song?.media), func: Media },
 	];
 
-	return (
-		<Suspense fallback=<>Loading...</> >
-			{(!isLoading) && (<>
-				<Header project={lyric?.project} section="lyrics" title={lyric?.title} />
-				<Tag>{lyric?.title}</Tag>
-				{tabs.filter(t => t.lookup(lyric))?.map(async (t: any, key: number) => await t?.func(lyric, key))}
-			</>)}
-			<Footer />
-		</Suspense>
-	)
+	return (<><Suspense fallback=<>Loading...</> >
+		{(!isLoading && !isX) && (() => {
+			return (<>
+				<Header project={song?.project} section="lyrics" title={song?.title} />
+				<Tag>{song?.title}</Tag>
+				{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => t?.func(song, key))}
+			</>)
+		})()}
+		<Footer />
+	</Suspense></>)
 }
 
 export default Lyric;

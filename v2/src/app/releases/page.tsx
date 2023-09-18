@@ -19,7 +19,7 @@ const Releases = () => {
 		{(!isLoading && releases) && (<>
 			{(() => {
 				let year = 999;
-				return releases?.sort((a: ReleaseType, b: ReleaseType) => moment.utc(b.dtreleased).diff(moment.utc(a.dtreleased)))
+				return releases?.sort((a: ReleaseType, b: ReleaseType) => moment.utc(parseYear(b.dtreleased)).diff(moment.utc(parseYear(a.dtreleased))))
 					.map((item: any, key: number) => {
 						const yr = parseYear(item.dtreleased);
 						let tag = <></>;

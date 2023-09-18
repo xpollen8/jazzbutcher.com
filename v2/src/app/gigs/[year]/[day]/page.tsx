@@ -98,6 +98,10 @@ const GigNote = (data: any, key: number) => <GigText {...data} />
 
 const GigNotes = (data: any) => <><Iterator data={data} func={GigNote} /></>
 
+const GigSelfReview = (data: any, key: number) => <GigText {...data} />
+
+const GigSelfReviews = (data: any) => <><Iterator data={data} func={GigSelfReview} /></>
+
 const GigPlay = ({ data }: any) => {
 	return (
 		<div style={{ marginLeft: '10px' }}>
@@ -276,6 +280,7 @@ const Content = ({ datetime }: { datetime: string }) => {
 		//{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
 		//{ label: 'With', lookup: 'players_with', func: GigWith },
 		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
+		{ label: "Pat's Review", lookup: 'text_selfreview', func: GigSelfReviews },
 		{ label: 'Reviews', lookup: 'text_review', func: GigReviews },
 	]
 

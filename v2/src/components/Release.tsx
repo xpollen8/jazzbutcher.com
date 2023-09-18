@@ -9,7 +9,7 @@ import Tag from '@/components/Tag';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import MakeReleasePress from '@/components/MakeReleasePress';
 import EmbedMedia from '@/components/EmbedMedia';
-import useRelease from '@/lib/useRelease';
+import useReleaseSongs from '@/lib/useReleaseSongs';
 import { gab, expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
 
 export type ReleaseType =  {
@@ -296,17 +296,16 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 
 const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number) => {
 	const lookup = release?.lookup ?? '';
-	const { data, isLoading, error } = useRelease(lookup);
+	const { data, isLoading, error } = useReleaseSongs(lookup);
 	const { results, credits } = data || {};
-	const songs: any[] = results;
-	return (<>
-		<div key={key}><MakeAlbumBlurb {...release} /></div>
+	return (
 		<Suspense fallback=<>Loading...</>>
-			{(!isLoading) && (<>
+			{(!isLoading && release) && (<>
+				<div key={key}><MakeAlbumBlurb {...release} /></div>
 				<ReleaseDetails release={release} />
 				<ReleaseDownloads release={release} />
 				<ReleaseImages release={release} />
-				{(release?.contribution) ? <ReleaseContribution release={release} /> : <ReleaseSongList songs={songs} />}
+				{(release?.contribution) ? <ReleaseContribution release={release} /> : <ReleaseSongList songs={results} />}
 				<ReleaseCredits credits={credits} />
 				<ReleaseLiner release={release} />
 				<ReleaseThanks release={release} />
@@ -318,7 +317,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 				<p />
 			</>)}
 		</Suspense>
-	</>)
+	)
 }
 
 export default Release;

@@ -33,9 +33,10 @@
 #live	endif
 #live	endif
 
+
 ## images=URL;;credit;;credit_url;;credit_date;;caption$$....
-#define	parseThumb(str)
-#live	if (makeArray(chunks, $$, ${str}))
+#define	parseImages(prefix, field)
+#live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
 #live		loop(ci, 1, ${chunks->numResults})
 #live			if (define(parts[3]), )
 #live			endif
@@ -64,7 +65,7 @@
 #live if ((defined(${prefix}->thumb)) || (defined(${prefix}->images)))
 	<div style=" width: 250px; float: right; margin: 20px; border: 1px solid #666; background: white; padding: 5px; padding-bottom: 0px; ">
 #live	if (defined(${prefix}->thumb))
-		${parseThumb(str=${${prefix}->thumb})}
+		${parseImages(prefix=${prefix}, field=thumb)}
 #live	if (defined(${prefix}->todo))
 			<center style="background: red; padding: 5px; margin-bottom: 5px;">
 				<b style="margin: 3px; color: white;">ATTENTTION NEEDED</b>: ${${prefix}->todo}
@@ -72,14 +73,11 @@
 #live	endif
 #live	endif
 #live	if (defined(${prefix}->images))
-		${parseThumb(str=${${prefix}->images})}
+		${parseImages(prefix=${prefix}, field=images)}
 #live	endif
 	</div>
 #live	endif
 
-##
-##	'images' format: url;;caption;;credit$$url;;caption;;credit$$, etc
-##
 #define	extractPress(aux, body)
 	${mkPressHeader()}
 #live		if (defined(updateArticle))
@@ -570,6 +568,7 @@ ${d}
 
 	${addPress(type=pat;wilson,
 		url=${jbc_press}/20040512_wilson_about.html,
+		images=/images/wilson/warfare/image002$$/images/20020131/20020131_wilson_boatrace;;;;;;;;Wilson at the Boatrace in Cambridge\, 31Jan2002,
 		title=About Wilson,
 		dt=2004-05-12)}
 
@@ -2312,7 +2311,7 @@ ${d}
 					<section style="display: flex; flex-direction: row; justify-content: flex-start;">
 #live				if (defined(pressItems[${x}]->thumb))
 						<div style="flex: 1;">
-						<a href="${pressItems[${x}]->url}"><img style="max-width: 100px; max-height: 100px;" src="${extractThumb(${pressItems[${x}]->thumb})}_100.jpg"></a><br/>
+						<a href="${pressItems[${x}]->url}"><img style="max-width: 100px; max-height: 100px;" src="${extractThumb(${literalizeCommas(${pressItems[${x}]->thumb})})}_100.jpg"></a><br/>
 						</div>
 #live				endif
 #live			if (define(pressItems[${x}]->prevAlbum, ${${type}_prevAlbum}))
@@ -13345,12 +13344,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	${extractPress(
 		body=${literalizeCommas(
 	<div style="text-align: center;">
-	<img
-	    border=0 width=252 height=72 src="${images}/wilson/warfare/image002.jpg">
-	<br/>
-	<img src="/images/20020131/20020131_wilson_boatrace_500.jpg">
-	<br/>
-	(Wilson at the <a href="${jbc_gigs}/2002/Jan31.html">Boatrace in Cambridge, 31Jan2002</a>)
 	</div>
 	<div class="annotation">
 	I started the Wilson project fondly imagining that it would be

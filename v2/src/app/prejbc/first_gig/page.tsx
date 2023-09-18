@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 const FirstGig = () => 
 <>
-	<Header section="pat" title="First Gig"/>
+	<Header section="prejbc" title="First Gig"/>
 	<blockquote>
 	This was posted by a gentleman named Chris Zero on The Jazz Butcher Facebook Group.
 	<p />

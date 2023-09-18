@@ -1,19 +1,24 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
+import LetterHeader from '@/components/LetterHeader';
 
 const sections = [
-	{ uri: '/first_gig', text: "Pat's first gig - 1974" },
-	{ uri: '/project', text: "Side projects during JBC years" },
-	{ uri: '/fishy_mansions', text: "The 2020-2021 Fishy Mansions livestreams" },
-	{ uri: '/letters', text: '"Letters From Pat" - 1990-1994' },
-	{ uri: '/notebooks', text: "Excerpts from Pat's notebooks" },
+	{ uri: '/gallery', text: "Photo Gallery" },
+	{ uri: '/project', text: "Other Projects", aux: "During the JBC years" },
+	{ uri: '/facebook', text: "Facebook Activity", aux: "(IDEA: the best of posts from Facebook)" },
+	{ uri: '/fishy_mansions', text: "Fishy Mansions", aux: "2020-2021 livestreams" },
+	{ uri: '/prejbc', text: "Before 'The Jazz Butcher'" },
+	{ uri: '/interviews', text: "Interviews" },
+	{ uri: '/writings', text: "The Butcher Writes", aux: "reviews, comments" },
 	{ uri: '/memoriam', text: "In Memoriam" },
+	{ uri: '/notebooks', text: "Excerpts from Pat's notebooks" },
 ];
 
 const Pat = () => 
 <>
 	<Header section="pat" />
+		<LetterHeader title="Main Sections" />
 		{sections.map(MakeSimpleURI)}
 	<Footer />
 </>

@@ -1080,7 +1080,7 @@ const Epilogue = ({ heading }: { heading: string }) =>
 
 const Fiascos = (): React.ReactNode =>
 <>
-		<Header section='jbc' title={`Top 10 JBC Fiascos`} />
+		<Header section='fiascos' />
 		<Tag>
 			Top 10 JBC Fiascos - Published to Facebook, September, 2020
 		</Tag>

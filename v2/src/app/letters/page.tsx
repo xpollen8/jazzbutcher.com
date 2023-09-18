@@ -16,7 +16,6 @@ const letters = [
 	{ uri: "/letters/94Jun24", text: "1994-06-24", aux: "All the gigs, Pat's Top 20 Gigs (circa)" },
 	{ uri: "/letters/94Sep13", text: "1994-09-13", aux: "Gig reviews, jbc-list rebuttals, etc" },
 	{ uri: "/letters/artwork.html", text: "1994", aux: "Sketches culled from the above letters" },
-	{ uri: "/press/20020709_starindia.html", text: "2002-07", aux: "The Star Of India: Pat reviews his favorite Restaurant" },
 ];
 
 const Letters = () => 

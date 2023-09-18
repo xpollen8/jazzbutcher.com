@@ -1,6 +1,7 @@
 # Add components
 	* press in /releases
 	* audio in lyrics
+	* audio/video/press/gigs within /project/XXX
 
 # ensure ALL releases have correct performance entries for songs
 

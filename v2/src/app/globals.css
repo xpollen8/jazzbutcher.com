@@ -866,16 +866,22 @@ samp {
 color: white;
 }
 
+.unknownYear:after {
+	background: pink;
+	font-size: .8em;
+	content: ' date unknown';
+}
+
 .unknownMonth:after {
 	background: pink;
 	font-size: .8em;
-	content: 'exact month unknown';
+	content: ' exact month unknown';
 }
 
 .unknownDay:after {
 	background: pink;
 	font-size: .8em;
-	content: 'exact day unknown';
+	content: ' exact day unknown';
 }
 
 .comment {

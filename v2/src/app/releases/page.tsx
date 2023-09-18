@@ -13,7 +13,7 @@ import Tag from '@/components/Tag';
 
 const Releases = () => {
 	const { data, isLoading, error } = useReleases();
-	const releases = data?.albums;
+	const releases = data?.results;
 	return <Suspense fallback=<>Loading...</> >
 		<Header section="releases" />
 		{(!isLoading && releases) && (<>

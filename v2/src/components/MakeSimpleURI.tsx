@@ -11,7 +11,7 @@ const MakeSimpleURI = ({ uri='', text, aux, children }: {
 		<Link href={uri} style={{ display: 'inline-block', width: '100%' }}>
 			<div className="clickDiv hover:outline bg-white">
 				{text}
-				{' '}<span className="date">{aux}</span>
+				{(aux) && <>{' - '}<span className="date">{aux}</span></>}
 			</div>
 		</Link>
 		:

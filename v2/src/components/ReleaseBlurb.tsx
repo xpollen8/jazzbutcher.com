@@ -1,10 +1,18 @@
-import { releaseByLookup } from '@/lib/macros';
-import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
-import { ReleaseType } from '@/components/Release';
+"use client"
 
-const ReleaseBlurb = async ({ lookup }: { lookup: string }) => {
-	const release: ReleaseType = await releaseByLookup(lookup);
-	return <div><MakeAlbumBlurb {...release} /></div>
+import { Suspense } from 'react';
+
+import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
+import useRelease from '@/lib/useRelease';
+
+const ReleaseBlurb = ({ lookup, key }: { lookup: string, key: number }) => {
+	const { data, isLoading, error } = useRelease(lookup);
+
+	return (
+		<Suspense fallback=<>Loading...</> >
+		{(!isLoading && data) && <div key={key}><MakeAlbumBlurb {...data} /></div>}
+		</Suspense>
+	)
 }
 
 export default ReleaseBlurb;

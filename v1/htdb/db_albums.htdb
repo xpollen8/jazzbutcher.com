@@ -3482,13 +3482,13 @@ albums[${li}]
 #live		endif
 #live	endif
 #live	endloop
-#live	if (!(defined(lookupFound)))
+#live	if ((!(defined(lookupFound))))
 #
 #	if not found by 'lookup'
 #	try to find by 'href'
 #
 #live		loop(li, 1, ${albums->numResults})
-#live		if (getval(albums[${li}]->${backupF}) == ${l})
+#live		if (getval(albums[${li}]->${backupF}) == ${l}.html)
 albums[${li}]
 #live		endif
 #live		endloop

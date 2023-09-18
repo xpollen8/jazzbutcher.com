@@ -50,7 +50,7 @@ const pathname2feedbackURI = (pathname: string) => {
 const usePageComments = (pathname: string) => {
 	const fetcher = async (url: any) => fetch(url).then((res) => res.json());
 
-	const { data, error, isLoading } = useSWR(`/api/feedback/${pathname2feedbackURI(pathname)}`, fetcher);
+	const { data, error, isLoading } = useSWR(`/api/feedback_by_page/${pathname2feedbackURI(pathname)}`, fetcher);
 
 	return {
 		data,

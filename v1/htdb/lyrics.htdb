@@ -11073,7 +11073,9 @@ Break out and find out tonight.
 
 #define	wildlife.html
 #live	if (getval(page) = wildlife.html)
-	${lyricsHeader(title=Wildlife, lyrics=${literalizeCommas(
+	${lyricsHeader(title=Wildlife,
+		video=https://youtube.com/embed/A8VJM5xxy9E;;Philip Snow;;https://www.youtube.com/channel/UC5w5S_qvu7P12iVFjFQAftw/videos;;2012-08-25,
+		lyrics=${literalizeCommas(
 
 	<br/>Came in from the North
 	<br/>23 below

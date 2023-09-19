@@ -573,7 +573,7 @@ export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&
 
 
 export const parseCredit = (cr: string = '') => {
-	const [ credit, crediturl, creditdate, creditcaption ] = cr.split(';;');
+	const [ credit, crediturl, creditdate, creditcaption ] = parseCaptionSourceEtc(cr);
 	return {
 		credit,
 		crediturl,
@@ -587,11 +587,22 @@ const autoLink = songLinkMapped;
 const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
 
 
-export const parseCaptionSourceEtc = (str?: string) => str?.split(';;');
+export const parseCaptionSourceEtc = (str?: string, captionsLast?: boolean) => {
+	const parts = str?.split(';;')?.map((ch: string) => ch.length ? ch : null)
+	if (!captionsLast) {
+		return parts;
+	}
+	return [ parts[0], parts[4], parts[1], parts[2], parts[3] ];
+}
 
-export const parseCaptionsSourcesEtc = (str?: string) => {
+export const parseCaptionsSourcesEtc = (str?: string, captionsLast?: boolean) => {
 	if (!str) return;
-	return str.split('$$')?.filter((ch: any) => ch.length)?.map(parseCaptionSourceEtc);
+	return str.split('$$')?.filter((ch: any) => ch.length)?.map((ch: string) => parseCaptionSourceEtc(ch, captionsLast));
+}
+
+export const truncAt = (chop: string, str: string) => {
+	const [ ret ] = str?.split(chop);
+	return ret || str;
 }
 
 export { localDate, datesEqual, bannerGigs, linkSong, songLinkMapped, parseDomain, dateDisplay, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

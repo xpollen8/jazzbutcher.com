@@ -268,7 +268,7 @@ export const smiff = linkSong({ title: "Southern Mark Smith", href: "/lyrics/smi
 export const men = linkSong({ title: "Real Men", href: "/lyrics/real_men.html" });
 export const hour = linkSong({ href: "/lyrics/soul_happy_hour.html", title: "Soul Happy Hour" });
 export const meat = linkSong({ href: "/lyrics/i_need_meat.html", title: "I Need Meat" });
-export const betty = linkSong({ href: "/lyrics/betty_page.html", title: "Just Like Betty Page" });
+export const betty = linkSong({ href: "/lyrics/betty_page.html", title: "Just Like Bettie Page" });
 export const marn = linkSong({ title: "Marnie", href: "/lyrics/marnie.html" });
 export const wheel = linkSong({ title: "Caroline Wheeler's Birthday Present", href: "/lyrics/caroline_wheeler.html" });
 export const mind = linkSong({ href: "/lyrics/mind_like_a_playgroup.html", title: "Mind Like A Playgroup" });
@@ -910,6 +910,7 @@ export const mapSongs: {[key: string]: string} = {
 	"Jazz_Butcher_-v-_Count_Dracula": "count",
 	"Jazz_Butcher_Theme": "jbtheme",
 	"Just_Like_Betty_Page": "betty",
+	"Just_Like_Bettie_Page": "betty",
 	"Just_One_Victory": "Just_One_Victory",
 	"Keeping_The_Curtains_Closed": "keep",
 	"Kids_In_The_Mall/Kaliningrad": "mall",

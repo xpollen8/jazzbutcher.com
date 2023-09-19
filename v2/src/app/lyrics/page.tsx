@@ -11,8 +11,9 @@ const Lyrics = () => {
 	const { data, isLoading, error } = useLyrics();
 
 	const lyrics = data?.results;
-	<Header section='lyrics' />
-	return (<Suspense fallback=<>Fallback...</> >
+	return (<>
+		<Header section='lyrics' />
+		<Suspense fallback=<>Fallback...</> >
 		{(!isLoading) && (<>
 			{lyrics.map((lyric: any, key: number) => {
 				return (<div key={key}>
@@ -21,7 +22,8 @@ const Lyrics = () => {
 			})}
 		</>)}
 		<Footer />
-	</Suspense>);
+	</Suspense>
+	</>);
 }
 
 export default Lyrics;

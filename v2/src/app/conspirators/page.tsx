@@ -1,13 +1,14 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const People = () => {
+const Conspirators = () => {
 	return (
 		<>
-		<Header section='Conspirators' />
+		<Header section='conspirators' />
+		<h1> W.I.P. </h1>
 		<Footer />
 		</>
 	)
 }
 
-export default People;
+export default Conspirators;

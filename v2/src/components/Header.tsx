@@ -42,7 +42,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	pat: { parent: 'jbc', title: 'Pat', summary: 'The Butcher' },
 	releases: { parent: 'jbc', title: 'Releases', summary: 'Recorded output' },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'The exhaustive live performance archives' },
-	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The arrmy of JBC musicians' },
+	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The army of JBC musicians' },
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
 	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'The man has opinions on things' },
 	fiascos: { parent: 'writings', title: 'The Fiascos', summary: 'Top 10 JBC Fiascos' },

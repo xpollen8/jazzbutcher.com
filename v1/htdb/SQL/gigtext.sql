@@ -13,5 +13,5 @@ create table gigtext (
 	credit_date datetime NOT NULL,
 	body text,
 	INDEX idx0(gigtext_id),
-	UNIQUE INDEX idx1(type, datetime, credit)
+	UNIQUE INDEX idx1(type, datetime, body(100))
 );

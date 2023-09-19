@@ -10,18 +10,18 @@ import usePresses from '@/lib/usePresses';
 
 const sections = [
 	{ uri: '/press/interviews', text: 'Published Interviews' },
-	{ uri: '/press/promos', text: 'Promotional Material' },
-	{ uri: '/press/albums', text: 'Album Reviews' },
-	{ uri: '/press/albums/pat', text: "Pat's Album Reviews" },
 	{ uri: '/press/reviews/gig', text: 'Published Gig Reviews' },
-	{ uri: '/press/reviews/fan', text: 'Fan Gig Reviews' },
-	{ uri: '/press/reviews/self', text: "Pat's Gig Reviews" },
-	{ uri: '/press/reviews/pat', text: "Pat Reviews Other Things" },
-	{ uri: '/press/obits', text: 'Rememberences' },
-	{ uri: '/press/audio', text: 'Audio Interviews' },
-	{ uri: '/press/black_eg', text: 'Black Eg' },
-	{ uri: '/press/wilson', text: 'Wilson' },
-	{ uri: '/press/sumosonic', text: 'Sumosonic' },
+	{ uri: '/press/albums', text: 'Published Album Reviews' },
+	{ uri: '/press/obits', text: 'Published Rememberences' },
+	{ uri: '/press/promos', text: 'JBC Promotional Material and Bios' },
+	{ uri: '/press/reviews/fan', text: "'I Was There' Gig Reviews" },
+	{ uri: '/writings/albums', text: "Pat Reviews His Albums" },
+	{ uri: '/writings/gigs', text: "Pat Reviews His Gigs" },
+	{ uri: '/writings', text: "Pat Reviews Other Things" },
+	{ uri: '/press/audio', text: 'Audio Interviews', aux: "radio and online" },
+	{ uri: '/press/black_eg', text: 'Press for Black Eg' },
+	{ uri: '/press/wilson', text: 'Press for Wilson' },
+	{ uri: '/press/sumosonic', text: 'Press for Sumosonic' },
 ];
 
 const Press = () => {

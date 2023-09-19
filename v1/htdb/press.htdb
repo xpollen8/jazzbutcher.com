@@ -478,9 +478,9 @@ ${d}
 
 	${addPress(type=gig;kit,
 		url=${jbc_press}/19900308_press.html,
-		thumb=/images/19900308/19900308_poster,
+		thumb=/images/19900308/19900308_poster;;Pierre Guillaume,
+		images=/images/19900308/19900308_press;;Pierre Guillaume,
 		title=Universal Club Postcard,
-		credit=Pierre Guillaume,
 		location=Madrid\, Spain,
 		datetime=1990-03-08,
 		dt=1990-03-08)}
@@ -509,40 +509,36 @@ ${d}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19870210_press_BestOfRockNRollFolkMagazine.html,
-		thumb=/images/19870210/19870210_press_BestOfRockNRollFolkMagazine,
+		thumb=/images/19870210/19870210_press_BestOfRockNRollFolkMagazine;;Pierre Guillaume,
 		publication=Best of Rock n Roll Folk Magazine,
 		title=Gig clipping,
-		credit=Pierre Guillaume,
 		location=France,
 		datetime=1987-02-10,
 		dt=1987-02-10)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19930221_press_BestOfRockNRollFolkMagazine.html,
-		thumb=/images/19930221/19930221_press_BestOfRockNRollFolkMagazine,
+		thumb=/images/19930221/19930221_press_BestOfRockNRollFolkMagazine;;Pierre Guillaume,
 		publication=Best of Rock n Roll Folk Magazine,
 		title=Gig clipping,
-		credit=Pierre Guillaume,
 		location=France,
 		datetime=1993-02-21 20:00:00,
 		dt=1993-02-21 20:00:00)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19930216_press_LiberationNewspaper.html,
-		thumb=/images/19930216/19930216_press_LiberationNewspaper,
+		thumb=/images/19930216/19930216_press_LiberationNewspaper;;Pierre Guillaume,
 		publication=Liberation Newspaper,
 		title=Gig clipping,
-		credit=Pierre Guillaume,
 		location=France,
 		datetime=1993-02-16,
 		dt=1993-02-16)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19931115_press_lEstRepublicainNewspaper.html,
-		thumb=/images/19931115/19931115_press_lEstRepublicainNewspaper,
+		thumb=/images/19931115/19931115_press_lEstRepublicainNewspaper;;Pierre Guillaume,
 		publication=l'Est Republicain Newspaper,
 		title=Gig clipping,
-		credit=Pierre Guillaume,
 		location=France,
 		datetime=1993-11-15,
 		dt=1993-11-15)}
@@ -564,6 +560,10 @@ ${d}
 	${addPress(type=pat;wilson,
 		url=${jbc_press}/20040512_wilson_warfare.html,
 		title=Wilson Warfare,
+		headline=RETURN TO THE ARK,
+		subhead=BEHOLD\, LITTLE WARFARE PUNTERS.  THEY COME IN BLACK TO MESS WITH YOUR HEADS.,
+		thumb=/images/wilson/warfare/image002,
+		images=/images/wilson/warfare/misery$$/images/wilson/warfare/eman$$/images/wilson/warfare/bottie$$/images/wilson/warfare/russ$$/images/wilson/warfare/stevieg$$/images/wilson/warfare/headstone$$,
 		dt=2004-05-12)}
 
 	${addPress(type=pat;wilson,
@@ -959,6 +959,8 @@ ${d}
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171015_press_apessimistisneverdisappointed_wasted.html,
 		title=Big Bad Thing,
+		thumb=/images/releases/fire_wasted/JazzButcherGroupBW1,
+		images=/images/releases/fire_wasted/JazzButcherGroupPatFishBW1$$/images/releases/fire_wasted/JazzButcherGroupBW2,
 		headline=A Few Words About The Fine New Jazz Butcher Box From Fire Records,
 		publication=A Pessimist Is Never Disappointed,
 		source=http://www.apessimistisneverdisappointed.com/2017/10/big-bad-thing-few-words-about-fine-new.html,
@@ -968,6 +970,8 @@ ${d}
 
 	${addPress(type=interview;album, album=fire_wasted,
 		url=${jbc_press}/20171002_bandcamp.html,
+		thumb=/images/releases/fire_wasted/JazzButcherGroupPatFishBW1,
+		images=/images/releases/fire_wasted/JazzButcherGroupBW1$$/images/releases/fire_wasted/JazzButcherGroupBW2$$/images/releases/fire_wasted/jazzbutcher-600$$,
 		title=The Jazz Butcher's Indie Pop Genesis,
 		publication=Bandcamp Daily,
 		source=https://daily.bandcamp.com/2017/10/02/the-jazz-butchers-indie-pop-genesis,
@@ -1410,7 +1414,7 @@ ${d}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19990923_press_villagevoice.html,
-		thumb=/images/19990923/19990923_press_villagevoice,
+		thumb=/images/19990923/19990923_press_villagevoice;;Pat Fish Notebook,
 		credit=Eddy,
 		publication=Village Voice,
 		location=New York\, New York\, USA,
@@ -1419,7 +1423,7 @@ ${d}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19990916_press_seattle_rocket.html,
-		thumb=/images/19990916/19990916_press_seattle_rocket,
+		thumb=/images/19990916/19990916_press_seattle_rocket;;Pat Fish Notebook,
 		credit=Tizzy Asher,
 		publication=The Rocket,
 		location=Seattle\, Washington\, USA,
@@ -1428,7 +1432,7 @@ ${d}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19990916_press_seattle.html,
-		thumb=/images/19990916/19990916_press_seattle,
+		thumb=/images/19990916/19990916_press_seattle;;Pat Fish Notebook,
 		credit=Barara Mitchell,
 		publication=Up & Coming,
 		location=Seattle\, Washington\, USA,
@@ -1897,6 +1901,8 @@ ${d}
 	${addPress(type=pat,
 		url=${jbc_press}/20020709_starindia.html,
 		title=Star of India restaurant review,
+		thumb=/images/star_india/Bodrul,
+		images=/images/star_india/StarScrap;;Pat;;;;2002-07-09;;${literalizeCommas(In 1988 that I managed to take this top snap of Paul Mulreany and Laurence O'Keefe rioting at the table)},
 		summary=${literalizeCommas(Northampton's Star of India restaurant is dearly loved by the artist)},
 		dt=2002-07-09)}
 
@@ -12568,8 +12574,6 @@ Tuesday, 16th September, 2003<br />
 #live	if (getval(page) = 19870210_press_BestOfRockNRollFolkMagazine.html)
 	${extractPress(
 		body=${literalizeCommas(
-<a href="/images/19870210/19870210_press_BestOfRockNRollFolkMagazine.jpg">
-<img src="/images/19870210/19870210_press_BestOfRockNRollFolkMagazine_500.jpg"></a>
 	)})}
 	${jbc_footer}
 #live	endif
@@ -12578,8 +12582,6 @@ Tuesday, 16th September, 2003<br />
 #live	if (getval(page) = 19930221_press_BestOfRockNRollFolkMagazine.html)
 	${extractPress(
 		body=${literalizeCommas(
-<a href="/images/19930221/19930221_press_BestOfRockNRollFolkMagazine.jpg">
-<img src="/images/19930221/19930221_press_BestOfRockNRollFolkMagazine_500.jpg"></a>
 	)})}
 	${jbc_footer}
 #live	endif
@@ -12588,8 +12590,6 @@ Tuesday, 16th September, 2003<br />
 #live	if (getval(page) = 19930216_press_LiberationNewspaper.html)
 	${extractPress(
 		body=${literalizeCommas(
-<a href="/images/19930216/19930216_press_LiberationNewspaper.jpg">
-<img src="/images/19930216/19930216_press_LiberationNewspaper_500.jpg"></a>
 	)})}
 	${jbc_footer}
 #live	endif
@@ -12598,8 +12598,6 @@ Tuesday, 16th September, 2003<br />
 #live	if (getval(page) = 19931115_press_lEstRepublicainNewspaper.html)
 	${extractPress(
 		body=${literalizeCommas(
-<a href="/images/19931115/19931115_press_lEstRepublicainNewspaper.jpg">
-<img src="/images/19931115/19931115_press_lEstRepublicainNewspaper_500.jpg"></a>
 	)})}
 	${jbc_footer}
 #live	endif
@@ -12608,8 +12606,6 @@ Tuesday, 16th September, 2003<br />
 #live	if (getval(page) = 198703_press_rockdelux.html)
 	${extractPress(
 		body=${literalizeCommas(
-	<a href="/images/198703/198703_press_rockdelux.jpg"><img src="/images/198703/198703_press_rockdelux_100.jpg"></a>
-	<p />
 	Since 1983 The Jazz Butcher has shown an undeniable skill in distilling the gist  out  of the most diverse styles, and a great songwriting productivity, as evidenced by the six LPs and ten singles they have released in the last four years. We are also getting used to being surprised by Butch, as he  jumps in different directions on each of his albums, although always with the same drive. The two twelve-inches released in 1986, "Hard" and "Conspiracy", were very different, and "Distressed Gentle-folk"  once again goes  on a different tangent. The common denominator is Butch's warm voice, which makes even the least inspired songs stand out. 
 	<p />
 	"Distressed Gentlefolk” is The Jazz Butcher's most laid-back album. Three impeccable ballads contribute to this: "The New World" (where Butch sounds like a crooner from the 1950s), "Angels," and above all, "Still In The Kitchen". A certain country air that pervades the entire album, as well as the jazz swing that permeates "Domestic Animal” or “Buffalo Shame”. Doo-wop and a nostalgic touch also make an appearance on "Who Loves You". But Jazz Butcher is not the only one who betrays clear influences: "Nothing Special", a simple pop song that totally belies its title, is one of the many examples of where the roots of the Woodentops can be found. (Or perhaps the other way around? Both singers have known each other for years...) The truth is that Butch is a great songwriter who doesn't appear to show any fatigue, but rather a capacity for reinvention  that makes his recycling task completely justified. Without surpassing the brilliant "Sex & Travel", "Distressed Gentlefolk" is also an outstanding album, in which Butch gives greater prominence to his sidekick Max Eider, who is in charge of the composition in "The New World" and "Who Loves You? In England there is a limited edition of the album, with a second 45 r.p.m. freebie LP  that includes the tracks of the maxis "Hard" and "Conspiracy", a new version of "Grooving In The Bus Lane" and a couple of unreleased tracks
@@ -12774,10 +12770,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 #live	if (getval(page) = 19900308_press.html)
 	${extractPress(
 		body=${literalizeCommas(
-	<a href="/images/19900308/19900308_poster.jpg"><img src="/images/19900308/19900308_poster_500.jpg"></a>
-	<p />
-	<a href="/images/19900308/19900308_press.jpg"><img src="/images/19900308/19900308_press_500.jpg"></a>
-	<p />
 	Vuelven a consolidarse las parejas como formacion ideal de conveniencia, A&uacute;n y estando en una discograf&iacute;a llamada "Creation", a THE JAZZ BUTCHER le ha resultado harto dif&iacute;cil encontrar a su otra costilla, por mucho que en su profesi&oacute;n se est&eacute; acostumbrado a partirlas. Keith Jones, el hombre que se parapeta tras la bata de carnicero del jazz, es un tipo m&aacute;s bien dif&iacute;cil. Varios musicos han pasado por su establecimiento desde 1982 en que publica su primer disco, donde incluye una cancion dedicada a su idolo: el actor Peter Lorre. Los instrumentistas parece ser que se cansaban de sus devaneos filosoficos y optaban por emigrar as otras bandas como los Woodentops, Bauhaus y Love and Rockets. El carnicero por fin esta de suerte. Ha encontrado a la persona adecuada para poner el contrapunto sonoro a sus ironicas composiciones. Kizzy Monaghan es un tormentoso guitarrista que a la vez respafida con su voz el contenido de quinto album de The Jazz Butcher, titulado "Fishcotheque".
 	<p />
 	Con una gran carga de sarcasmo, tipicamente britanico, acostumbra presentar a su banda en directo, (incluyendo al chofer de la furgoneta) como la Conspiracion. Se sirve de la herencia vocal de un Lou Reed campestre y jovial, at igual que en su dia to hiciera Lloyd Cole, aunque desde su vertiente mas obscura.
@@ -12791,8 +12783,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 #live	if (getval(page) = 19990923_press_villagevoice.html)
 	${extractPress(
 		body=${literalizeCommas(
-<a href="/images/19990923/19990923_press_villagevoice.jpg">
-<img src="/images/19990923/19990923_press_villagevoice_500.jpg"></a>
 	)})}
 	${jbc_footer}
 #live	endif
@@ -12801,8 +12791,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 #live	if (getval(page) = 19990916_press_seattle_rocket.html)
 	${extractPress(
 		body=${literalizeCommas(
-<a href="/images/19990916/19990916_press_seattle_rocket.jpg">
-<img src="/images/19990916/19990916_press_seattle_rocket_500.jpg"></a>
 	)})}
 	${jbc_footer}
 #live	endif
@@ -12811,8 +12799,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 #live	if (getval(page) = 19990916_press_seattle.html)
 	${extractPress(
 		body=${literalizeCommas(
-<a href="/images/19990916/19990916_press_seattle.jpg">
-<img src="/images/19990916/19990916_press_seattle_500.jpg"></a>
 	)})}
 	${jbc_footer}
 #live	endif
@@ -13531,21 +13517,9 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	${extractPress(
 		body=${literalizeCommas(
 
-	<center>
-
-   <a href="${jbc_root}/wilson"><img
-   	border=0 width=252 height=72 src="${images}/wilson/warfare/image002.jpg"></a>
-	<p />
 #	+44 (0)1604 620294
 #	<p />
 #	headstone@sumo77.freeserve.co.uk
-	<p />
-	<img width=44 height=44 src="${images}/wilson/warfare/image003.gif">
-	<h2>RETURN TO THE ARK</h2>
-
-	<b> BEHOLD, LITTLE WARFARE PUNTERS.
-	THEY COME IN BLACK TO MESS WITH YOUR HEADS.</b>
-	<p />
 	It's like being
 	screamed at by your parents if they were, like, on PCP
 	or something.
@@ -13565,23 +13539,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	INSPIRATION COMES FROM LEE PERRY, THE CLASH, ULTRAMAGNETIC MCs AND SPACEMEN 3.
 	THE PLAYERS COME FROM AROUND THE GLOBE, BUT THEY ALL MAKE THEIR HOMES IN
 	NORTHAMPTON NN1.
-
-	 <table cellpadding=0 cellspacing=0>
-	  <tr>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/misery.jpg"><img
-	   	width=108 height=155 border=0 src="${images}/wilson/warfare/thumb_misery.jpg"></a></td>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/eman.jpg"><img
-	   	width=120 height=143 border=0 src="${images}/wilson/warfare/thumb_eman.jpg"></a></td>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/bottie.jpg"><img
-	   	width=142 height=143 border=0 src="${images}/wilson/warfare/thumb_bottie.jpg"></a></td>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/russ.jpg"><img
-		width=120 height=143 border=0 src="${images}/wilson/warfare/thumb_russ.jpg"></a></td>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/stevieg.jpg"><img
-		width=107 height=143 border=0 src="${images}/wilson/warfare/thumb_stevieg.jpg"></a></td>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/headstone.jpg"><img
-	   	width=103 height=155 border=0 src="${images}/wilson/warfare/thumb_headstone.jpg"></a></td>
-	  </tr>
-	 </table>
 	<p />
 
 	Experienced professional musicians, the lot of them, with more records under their belts than most people own.
@@ -13602,17 +13559,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	Russ Cooper plays a battery of Eastern and Latin percussion.<br />
 	Stevie G plays his guitar.  Headstone will break yours.
 	</b>
-	<p />
-	 <table cellpadding=0 cellspacing=0>
-	  <tr>
-	   <td align=left valign=top><img width=125 height=128
-		src="${images}/wilson/warfare/image019.jpg"></td>
-	   <td align=left valign=top><img width=134 height=127
-		src="${images}/wilson/warfare/image018.jpg"></td>
-	   <td align=left valign=top><img width=125 height=128
-		src="${images}/wilson/warfare/image019.jpg"></td>
-	  </tr>
-	 </table>
 
 	<p />
 
@@ -13625,7 +13571,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	freely as they plunder other people's drum beats. Wilson work six hours
 	a day every day to bring you the music. Always read the small print. Your
 	home is at risk.
-	</center>
 	)})}
 	${jbc_footer}
 #live	endif
@@ -13700,10 +13645,7 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	I never even think about talking music with him. For he knows I am giant fool.
 	When the band was in Northampton we would dine regularly at the Star. It
 	was while we were entertaining Alan McGee there after the video shoot for "${spook}"
-	in 1988 that I managed to take this top snap of ${paul} and ${larry} rioting
-	at the table.
 	<p />
-	<img src="${images}/star_india/StarScrap.jpg" width=447 height=315>	<p />
 	In 1991 a traumatic thing came to pass. During the recording of 
 	"${blue}" there was a Norwich-based misunderstanding involving ${lix}
 	and my cash machine card, which resulted in my getting stuck at the
@@ -13754,11 +13696,9 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	in Peru had asked his parents to bring him a curry from The Star when they
 	came for a visit.
 	<p />
-	<img src="${images}/star_india/Bodrul.jpg" width=380 height=333>
-	<p />
 	This, dear readers, is what The Star is about. I am going there now.
 	<p />
-	${g_credit(g=Pat Fish\, NN1, d=2002-07-09)}
+	${g_credit(g=Pat Fish, NN1, d=2002-07-09)}
 	</div>
 	)})}
 	${jbc_footer}
@@ -15646,17 +15586,11 @@ Special thanks to Pat Fish
 <h2 class="entry-title">The Jazz Butcher&#8217;s Indie Pop&nbsp;Genesis</h2>
 
 				<div>
-<div style="text-align: center;">
-<a href="/images/releases/fire_wasted/JazzButcherGroupPatFishBW1.jpg"><img src="/images/releases/fire_wasted/JazzButcherGroupPatFishBW1_500.jpg"></a>
-</div>
 <p />Very long ago, in the mists of the early 1980s, “indie” and “pop” had not yet conjoined to become a compound word. There was the pop that inhabited the charts, and there was everything else.	<p />
 <p class="p1">But the pop that was created and distributed at the independent level was indeed unlike pop as most people know it, both then and now. Transparently low-budget and conspicuously disheveled, it didn’t sound like punk, but it couldn’t have existed without punk’s ripping up of the musical rulebook and demolishing of the barriers to entry. It tended to be melodic but coarse, unaffiliated with recent technology (if the Top 10 was the sound of penthouses, this was the sound of a cement-walled cellar), and its lyrics usually made plain that these were people who were unafraid to flaunt their own intelligence and feelings.	<p />
 <p class="p1">In 1983, the Smiths would become the standard-bearers of U.K. indie-pop, bringing the (admittedly vague) notion of the genre to an audience of previously unimaginable size and scope. But before them there were the little-known but trailblazing likes of Orange Juice, The Monochrome Set, Marine Girls, and, almost simultaneous to the Smiths, The Jazz Butcher.	<p />
 <p class="p1">The Jazz Butcher, from the town of Northampton, in England’s Midlands, was the brainchild of fellow singer-guitarist-songwriters Pat Fish (aka “the Butcher”) and Max Eider. The purpose of the band, in Fish’s telling, was to “free my mind from the increasingly dank post-punk ghetto that it had been inhabiting.” When a friend lent him a compilation album of 1970s soul hits, he had a vision of a new way forward, and in response, wrote a song called “Partytime” that was a three-and-a-half-minute repudiation of post-punk’s sonic and verbal tendencies toward deadly seriousness. This was bright, wry, happy-to-be-alive music. It was, in its own skewed, understated way, pop.	<p />
 <p class="p1">Throughout the following three years, the Jazz Butcher made four albums for Glass Records, an independent label whose business structure—essentially, one man sitting in a room in London—belied the breadth of its achievements, also releasing classic left-of-center albums from the Pastels, Spacemen 3, Nikki Sudden, and many others. Those Butcher recordings have now been collected together on <em><a href="https://thejazzbutcher.bandcamp.com/" target="_blank" rel="noopener">The Wasted Years</a></em>, a four-CD box set accompanied by a booklet with a fantastically eloquent 5,000-word essay from Fish.	<p />
-<div style="text-align: center;">
-<a href="/images/releases/fire_wasted/JazzButcherGroupBW2.jpg"><img src="/images/releases/fire_wasted/JazzButcherGroupBW2_500.jpg"></a>
-</div>
 <iframe width='100%' height='120' style='position: relative; display: block; width: 100%; height: 120px;' src='//bandcamp.com/EmbeddedPlayer/v=2/track=1095105613/album=4137983860/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/' allowtransparency='true' frameborder='0'></iframe>	<p />
 
 <p class="p1">Above all else, <i>The Wasted Years</i> demonstrates that the Jazz Butcher seemingly existed to throw curveballs. The band’s very name served to confuse and mislead: Max Eider’s stunningly elegant six-string work aside (arguably, only Johnny Marr was a better guitarist at the time), there was nothing explicitly jazz about them. From debut long-player <i>In Bath of Bacon</i> onward, every disc is an exploding confetti bag of styles, moods, and textures, from the Velvet Underground-at-a-sock-hop velocity of “Jazz Butcher Theme,” to the aggressively, hilariously atonal “<a href="https://www.youtube.com/watch?v=e06tr0BGV6k" target="_blank" rel="noopener">Caroline Wheeler’s Birthday Present</a>,” to the conventional melodiousness and sentimentality of “<a href="https://www.youtube.com/watch?v=DVgd7oIHuEI" target="_blank" rel="noopener">Big Saturday</a>” (<i>the</i> great, lost should-have-been indie number one). Their songs’ common denominator was Fish’s and Eider’s vocals, often delivered with the poker-faced poise of a genial game show host.	<p />
@@ -15669,7 +15603,6 @@ Special thanks to Pat Fish
 <p class="p1"><i>A Scandal in Bohemia</i> and its follow-up, the mini-album <i>Sex and Travel</i> (Fish’s personal favorite from this period), attracted enough attention that the Jazz Butcher soon signed on the dotted line with labels around the world, including in the U.S. and Canada. While other U.K. bands, who had received more acclaim and sold more records at home, made few inroads internationally, the Jazz Butcher became favorites of college radio audiences abroad. (<i>Bloody Nonsense</i>, a flawless 1986 compilation made exclusively for North America and Australia, has probably served as an introduction for more people than anything else the band did.)	<p />
 <p class="p1">“The West Coast of the American continent has always been the place where we’ve done the best business, all the way from Vancouver down to San Diego. Hell of a commute, mind,” says Fish. “We’ve also had regional success in Chicago, Toronto, New York, Hamburg, Valencia, Paris, London, Tokyo&#8230; all over the place, really; always at club/small theatre-level, and always economically viable.”	
 	<p />
-<img data-attachment-id="74919" data-permalink="https://daily.bandcamp.com/2017/10/02/the-jazz-butchers-indie-pop-genesis/jazzbutcher-600/" data-orig-file="https://bandcampblog.files.wordpress.com/2017/09/jazzbutcher-600.jpg?w=600&#038;h=400" data-orig-size="600,400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="jazzbutcher-600" data-image-description="" data-medium-file="https://bandcampblog.files.wordpress.com/2017/09/jazzbutcher-600.jpg?w=600&#038;h=400?w=300" data-large-file="https://bandcampblog.files.wordpress.com/2017/09/jazzbutcher-600.jpg?w=600&#038;h=400?w=600" class="alignnone size-full wp-image-74919" src="https://bandcampblog.files.wordpress.com/2017/09/jazzbutcher-600.jpg?w=600&#038;h=400" alt="Jazz Butcher" width="600" height="400"  /><br />
 <iframe width='100%' height='120' style='position: relative; display: block; width: 100%; height: 120px;' src='//bandcamp.com/EmbeddedPlayer/v=2/track=210734432/album=4137983860/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/' allowtransparency='true' frameborder='0'></iframe>	<p />
 <p class="p1">Having received what Fish in his box set notes as “the inspirational crash course in liberal education that is touring,” the band—now minus David J, who departed amicably to launch the soon-to-be chart-topping Love and Rockets with two of his former Bauhaus colleagues—returned to the studio to make “our greatest album ever.” Yet the resulting work, <i>Distressed Gentlefolk</i> (which followed very closely on the heels of <i>Bloody Nonsense</i> in 1986), is something of a misfire in Fish’s estimation, despite it remaining a fan favorite to this day. In retrospect, Fish says, there were several contributing factors: him and Eider going “in different directions” as songwriters, David J’s departure leaving an unfillable void, and “fatigue and liquor.” Although the album’s release was followed by a successful first tour of the U.S., Eider left soon after for a vastly underrated solo career. (His debut, <i>The Best Kisser in the World</i>, deserves a garlanded reissue of its own.)	<p />
 
@@ -15824,30 +15757,16 @@ The Jazz Butcher existed in that part of our lives which was always student digs
 #live	if (getval(page) = 20171015_press_apessimistisneverdisappointed_wasted.html)
 	${extractPress(
 		body=${literalizeCommas(
-	<div style="text-align: center;">
-	<a href="/images/releases/fire_wasted/JazzButcherGroupBW1.jpg"><img src="/images/releases/fire_wasted/JazzButcherGroupBW1_500.jpg"></a>
-	</div>
 	<p />
 	 It's odd now to think that I once thought of The Jazz Butcher as a Creation Records band. Well, they were a Creation Records band for a time but, having given a listen or two (or few dozen) to the new 4-CD box from Fire Records called The Wasted Years, I think it's safe to save that the earlier version of this band were far too iconoclastic and original to be pigeonholed by any easy label, um, label. The music here spans the band's first 4 records -- In Bath Of Bacon (1983), A Scandal in Bohemia (1984), Sex and Travel (1985), and Distressed Gentlefolk (1986) -- and the selections here routinely offer up to an even half-attentive casual listener some of the best UK indie one is likely to encounter from this era. For those of us who knew some of this, or lots of this, and were well-aware of front-man Pat Fish's skills and genius, this set is a gift that reaffirms all that, and serves as an easy way to re-acquaint ourselves with this band's very best material.
 	<p />
-	<p />
 	In Bath Of Bacon (1983) succeeds when it offers up music that largely doesn't give a fig about any trends of the era, like the throwaway "Love Kittens" or the fun "Sex Engine Thing", Fish crafting material that's witty, if not entirely well-considered (the regrettable "Chinatown", for instance). Perhaps the biggest surprise here is that some of this is indeed jazzy in a roundabout way ("Bigfoot Motel", for example). Still, there remain a few genuine nuggets here ("Zombie Love", or the aching "Party Time", perhaps).
-	<p />
 	<p />
 	Album number 2 from The Jazz Butcher is what some might argue, the first real Jazz Butcher record. A Scandal in Bohemia (1984) opens with the big, bright, witty pop of "Southern Mark Smith (Big Return)", a number that sees front-man Fish name-check band-mates Max Eider and David Jones (David J), 2 big factors into why this record is so good and essential. What pleases the ear still is the extent to which A Scandal in Bohemia (1984) reveals how well Fish and his crew were able to deliver such buoyant and lovely music without having a lot at their disposal. The light "Soul Happy Hour" sees Fish and his band serve up something that has echoes of both Brian Wilson and Roy Orbison in it, and yet which remains delightfully light of touch. Given a bigger budget, and a larger studio, one wonders what Fish could have made of the rollicking "Real Men", or the airy "Mind Like A Playgroup", for instance. Still, that's not to knock what's here but, rather, to highlight how much Pat Fish, Max Eider, and David J were able to deliver within the confines of early Eighties indie trappings.
 	<p />
-	<div style="text-align: center;">
-	<a href="/images/releases/fire_wasted/JazzButcherGroupPatFishBW1.jpg"><img src="/images/releases/fire_wasted/JazzButcherGroupPatFishBW1_500.jpg"></a>
-	</div>
-	<p />
 	Sex and Travel from 1985 is a superb record, and it's clearly the highlight of this Fire Records set. Opening with the lyrical "Big Saturday", the album serves up some of Pat Fish's best material. As he straddles territory that's both indie proper, and something a bit more adventurous, Fish seems to have finally found his style here, and so, The Jazz Butcher is a real band here, at least on this record. The spry "What's The Matter Boy?" nods in the direction of the band's earlier records but with far more success and confidence, while the pointed "President Reagan's Birthday Present" reflects the era's very real political concerns, as does "Red Pets" to some extent. And, as others have undoubtedly pointed out, "Holiday" seems Pat Fish's grab at the Ray Davies mantle, even if it sounds a bit like stuff from Robyn Hitchcock in the era.
 	<p />
-	<p />
 	If 1986's Distressed Gentlefolk was anything, it was likely the entry-point into The Jazz Butcher for a lot of Yanks, given the album's release via the BMG-associated Big Time label here in the States. "Big Bad Thing" sounds more robust and it's an indication that this record marked a turning point for the band. As Fish says on the band's official website, the band were drinking a lot at this time, making things a bit wobbly. And, sure there's a slight disconnect between the more routine indie of "Nothing Special" and the lovely and genuinely-jazzy "Who Loves You Now", for example. Still, there's a real breadth of material here and a listener shouldn't gripe too much about the leap from the gently-ramshackle "Domestic Animal" to the lush "Still in the Kitchen" when the difference in material indicates how in command Pat Fish remained in these years. The final record before the band's leap to Creation Records, Distressed Gentlefolk remains an odd collection of suitably odd indie-pop but there is, like elsewhere on The Wasted Years, a lot of heart and insight on offer here.
-	<p />
-	<div style="text-align: center;">
-	<a href="/images/releases/fire_wasted/JazzButcherGroupBW2.jpg"><img src="/images/releases/fire_wasted/JazzButcherGroupBW2_500.jpg"></a>
-	</div>
 	<p />
 	Perhaps wisely, the folks at Fire Records didn't attempt to compile the "best" Jazz Butcher cuts here on The Wasted Years. Rather, by serving up the first 4 albums, The Wasted Years serves, instead, as 41-track crash-course into one of the best, more underrated, and creative acts from those wilderness years between the first few waves of post-punk and the semi-renaissance of the C86 period and after. Wildly unlike anything else being cranked out in the early Eighties on either side of the Atlantic, the music of The Jazz Butcher was richly lyrical, decidedly melodic, and wholly fresh. And it remains so now, more than 3 decades later. One of the odd side-effects of the fact that The Jazz Butcher have been perpetually underrated is that, finally, they will get some real attention as The Wasted Years is a superb introduction into their music, as well as a remarkably and convenient way to get a lot of great music all at once. 
 	<p />

@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ImageStrip from '@/components/ImageStrip';
 import Tag from '@/components/Tag';
 import { Source, Credit } from '@/components/GenericWeb';
 import usePressArticle from '@/lib/usePressArticle';
@@ -70,24 +71,11 @@ const PressArticle = ({ params }: { params?: any }) => {
 	}
 	const ArticleThumbAndImages = ({ article }: any) => {
 		if (article?.thumb || article?.images) {
-			const images = parseCaptionsSourcesEtc(`${article?.thumb}$$${article?.images}`);
-			if (images?.length) {
-				return (<div style={{ float: 'right', margin: '5px', border: '1px solid #666', background: 'white', padding: '5px', paddingBottom: '0px' }} className=" grow">
-					{images?.map(([ image, source, sourceurl, sourcedate, caption ]: any, key: number) =>
-						<Link key={key} href={`https://jazzbutcher.com${image}.jpg`}>
-							<div className="m-2" style={{ maxWidth: '200px' }}>
-								<Image
-									alt={caption || 'album image'}
-									width={200} height={200}
-									src={`https://jazzbutcher.com${image}_250.jpg`}
-								/>
-								{(caption) && <><i>{caption}</i><br/></>}
-								{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
-							</div>
-						</Link>
-					)}
-				</div>)
-			}
+			return <ImageStrip
+				className="imageStrip"
+				width={200}
+				images={parseCaptionsSourcesEtc(`${article?.thumb}$$${article?.images}`, true)}
+			/>
 		}
 	}
 	const ArticleMedia = ({ article }: any) => {

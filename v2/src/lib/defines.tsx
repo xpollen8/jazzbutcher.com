@@ -62,6 +62,7 @@ export const brent = linkSearch({ name: "Brent Bambury" });
 export const burrell = linkSearch({ name: "Tim Burrell" });
 export const butch = 'The Butcher';
 export const terry = 'Terry Walpole';
+export const tom_hall = linkInternal("/tomhall", "Tom Hall");
 export const colin = linkPerson({ href: "/conspirators/colin.html", name: "Colin Harris" });
 export const curt = linkPerson({ href: "/conspirators/curtis_johnson.html", name: "Curtis E. Johnson" });
 export const curt_eman = linkPerson({ href: "/conspirators/curtis_johnson.html", name: "E-Man" });

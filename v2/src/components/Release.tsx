@@ -12,7 +12,7 @@ import MakeReleasePress from '@/components/MakeReleasePress';
 import EmbedMedia from '@/components/EmbedMedia';
 import useReleaseSongs from '@/lib/useReleaseSongs';
 import { gab, expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
-import { parseCaptionsSourcesEtc } from '@/lib/macros';
+import { truncAt, parseCaptionsSourcesEtc } from '@/lib/macros';
 
 export type ReleaseType =  {
 	type?: string
@@ -201,6 +201,28 @@ const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	}
 }
 
+const ReleaseVideos = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	if (release?.video) {
+		const videos = parseCaptionsSourcesEtc(release?.video);
+		if (videos?.length) {
+			return (<>
+				<Tag>Videos</Tag>
+				{videos?.map((v: any, key: number) => {
+					const [ videourl, source, sourceurl, sourcedate, caption ] = v;
+					const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
+					return (<div key={key}>
+						<center>
+							<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate }}>
+								<br />{caption}
+							</EmbedMedia>
+						</center>
+					</div>)
+				})}
+			</>)
+		}
+	}
+}
+
 const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.images) {
 		const images = parseCaptionsSourcesEtc(`${release?.thumb}$$${release?.images}`);
@@ -252,6 +274,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 				<div key={key}><MakeAlbumBlurb {...release} /></div>
 				<ReleaseDetails release={release} />
 				<ReleaseDownloads release={release} />
+				<ReleaseVideos release={release} />
 				<ReleaseImages release={release} />
 				{(release?.contribution) ? <ReleaseContribution release={release} /> : <ReleaseSongList songs={results} />}
 				<ReleaseCredits credits={credits} />

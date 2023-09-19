@@ -26,7 +26,10 @@ const sections = [
 
 const Press = () => {
 	const { data, isLoading, error } = usePresses();
-	const presses = data?.results;
+	const presses = data?.results?.sort((a: any, b: any) => {
+		//console.log("COMP", (new Date(a.dtpublished)).getTime(), b.dtpublished);
+		return (new Date(a.dtpublished).getTime()) - (new Date(b.dtpublished).getTime());
+	});
 	return (<>
 		<Header section="press" />
 			{sections.map(MakeSimpleURI)}
@@ -34,7 +37,7 @@ const Press = () => {
 				{(!isLoading) && (<>
 					{presses.map((p: any, key: number) => {
 						return (<div key={key}>
-							<Link href={p.url}>{p.type} {p.publication} {p.title} {p.headline}</Link>
+							<Link href={p.url}>{p.dtpublished}: {p.type}: {p.publication}: {p.title}: {p.headline}</Link>
 						</div>)
 					})}
 				</>)}

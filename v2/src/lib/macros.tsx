@@ -505,7 +505,7 @@ const searchOptions: HashedType[] = [
 export const getOptions = (noun: string | undefined): HashedType => (noun && searchOptions.find(o => o.noun === noun)) || searchOptions[0];
 
 const autoHREF = (href: string) => {
-	if (href?.includes('@')) {	// email address
+	if (href?.includes('@') && !href?.includes('http')) {	// email address
 		return `mailto:${href}`;
 	} else {
 		if (href?.includes('htt')) {	// full url
@@ -588,7 +588,7 @@ const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\
 
 
 export const parseCaptionSourceEtc = (str?: string, captionsLast?: boolean) => {
-	const parts = str?.split(';;')?.map((ch: string) => ch.length ? ch : null)
+	const parts = str?.split(';;')?.map((ch: string) => ch.length ? ch.replace('[remove]', '@') : null)
 	if (!captionsLast) {
 		return parts;
 	}

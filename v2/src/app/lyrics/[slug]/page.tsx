@@ -38,14 +38,18 @@ import { truncAt, parseCaptionsSourcesEtc } from '@/lib/macros';
 */
 const	LyricVideo = ({ video }: any) => {
 	if (!video) return;
-	const [ videourl, source, sourceurl, sourcedate, caption ] = parseCaptionsSourcesEtc(video)[0];
-	const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
+	const videos = parseCaptionsSourcesEtc(video);
 
-	console.log("LyricVideo", [ videourl, source, sourceurl, sourcedate, caption ]);
 	return <div className="clear_float imageStrip" style={{ width: '263px' }}>
-		<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl }}>
-			{caption}
-		</EmbedMedia>
+		{videos?.map((v: any, key: number) => {
+			const [ videourl, source, sourceurl, sourcedate, caption ] = v;
+			const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
+			return (<div key={key}>
+				<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl }}>
+					{caption}
+				</EmbedMedia>
+			</div>)
+		})}
 	</div>;
 }
 

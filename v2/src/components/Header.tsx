@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next'
-import { parseYear, ts2URI } from '@/lib/macros';
+import { parseCaptionSourceEtc, parseYear, ts2URI } from '@/lib/macros';
 import { useSearchParams } from 'next/navigation';
  
 type Props = {
@@ -138,7 +138,7 @@ const parseTitle = (title: string | string[], key0: number) => {
 	if (typeof title === 'string') return <li key={key0}><span aria-current="page">{title}</span></li>;
 	if (title?.constructor === Array && title[0]?.constructor === String) {
 		return title?.map((t: string, key: number) => {
-			const [ text, href ] = t.split(';;');
+			const [ text, href ] = parseCaptionSourceEtc(t);
 			if (href) {
 			/* WIP
 				const menu = <>

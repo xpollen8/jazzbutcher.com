@@ -45,9 +45,11 @@ const	LyricVideo = ({ video }: any) => {
 			const [ videourl, source, sourceurl, sourcedate, caption ] = v;
 			const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
 			return (<div key={key}>
-				<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl }}>
-					{caption}
-				</EmbedMedia>
+				<center>
+					<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate }}>
+						<br />{caption}
+					</EmbedMedia>
+				</center>
 			</div>)
 		})}
 	</div>;

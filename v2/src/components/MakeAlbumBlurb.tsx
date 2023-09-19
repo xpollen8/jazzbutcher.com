@@ -1,13 +1,8 @@
 import { Credit, Contribution } from './GenericWeb';
 import FeaturedItem from './FeaturedItem';
 import { ReleaseType, ReleaseTypeWithChildren } from './Release';
-import { parseCredit } from '@/lib/macros';
+import { truncAt, parseCredit } from '@/lib/macros';
 import { expand } from '@/lib/defines';
-
-const truncAt = (chop: string, str: string) => {
-	const [ ret ] = str?.split(chop);
-	return ret || str;
-}
 
 const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined) => {
 	const { type, href, title, thumb, blurb, dtreleased, dtrecorded, studio, buy, project, lookup,

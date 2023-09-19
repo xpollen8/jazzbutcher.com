@@ -1270,8 +1270,8 @@ font.load().then(function () {
 #define	iain	${linkPerson(href=${jbc_people}/iain_ohiggins.html, name=Iain O'Higgins)}
 #define	hend	${linkPerson(href=${jbc_people}/dave_henderson.html, name=Dave Henderson)}
 #define	gab		${linkPerson(href=${jbc_people}/gabriel_turner.html, name=Gabriel Turner)}
-#define	damm	${linkPerson(href=${jbc_people}/von_dammerung.html, name=Von D&auml;mmerung)}
-#define	karel	${linkPerson(href=${jbc_people}/von_dammerung.html, name=Karel Von D&auml;mmerung)}
+#define	damm	${linkPerson(href=${jbc_people}/von_dammerung.html, name=Von Dämmerung)}
+#define	karel	${linkPerson(href=${jbc_people}/von_dammerung.html, name=Karel Von Dämmerung)}
 #define	joea	${linkPerson(href=${jbc_people}/joe_allen.html, name=Joe Allen)}
 #define	rodney	${linkPerson(href=${jbc_people}/rodney_allen.html, name=Rodney Allen)}
 #define	colin	${linkPerson(href=${jbc_people}/colin.html, name=Colin Harris)}
@@ -1788,7 +1788,7 @@ font.load().then(function () {
 #define	animals	${linkSong(href=${jbc_lyrics}/animals.html, title=Animals)}
 #define	shame_about_you	${linkSong(href=${jbc_lyrics}/shame_about_you.html, title=Shame About You)}
 #define	last_of_the_gentleman_adventurers	${linkSong(href=${jbc_lyrics}/last_of_the_gentleman_adventurers.html, title=Last of the Gentleman Adventurers)}
-#define	tombe	${linkSong(href=${jbc_lyrics}/tombe_dans_les_pomes.html, title=Tomb&eacute; dans les pommes)}
+#define	tombe	${linkSong(href=${jbc_lyrics}/tombe_dans_les_pomes.html, title=Tombé dans les pommes)}
 #define	count_me_out	${linkSong(href=${jbc_lyrics}/count_me_out.html, title=Count Me Out)}
 #define	single_saints	${linkSingle(href=${jbc_albums}/all_the_saints.html, title=All the Saints)}
 #define	all_the_saints	${linkSong(href=${jbc_lyrics}/all_the_saints.html, title=All the Saints)}
@@ -1847,7 +1847,7 @@ font.load().then(function () {
 #define	BELG	It's Got To Be Belgium (Slurp's Wino Bar)
 #define	HAM	Hamburg
 #define	FRANK	Frankfurt
-#define	PO	Onkel P&ouml;
+#define	PO	Onkel Pö
 #define	LO	London
 #define	TOR	Toronto
 #define	AMST	Amsterdam
@@ -4477,7 +4477,7 @@ ${define(_set, false)}
 #define	songMap[the_one_you_adore]	the_one_you_adore.html
 #define	songMap[the_onion_field]	the_onion_field.html
 #define	songMap[thing]	thing.html
-#define	songMap[tomb&eacute;_dans_les_pommes]	tombe_dans_les_pomes.html
+#define	songMap[tombé_dans_les_pommes]	tombe_dans_les_pomes.html
 #define	songMap[tough_priest]	tough_priest.html
 #define	songMap[truck_o_fear]	truck_o_fear.html
 #define	songMap[true_stories]	true_stories.html

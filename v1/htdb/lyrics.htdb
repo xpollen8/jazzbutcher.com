@@ -1,11 +1,15 @@
-####include	db_albums
-
 #define	beg_tab	<font color="#000099">
 #define	end_tab	</font>
 
 #define	lyricsHeader(project, title, lyrics, tablature, tablature_credit, mp3, mp4, caption, embed_link, onlist, patsez, others, credits)
-##live	if (sql(insert IGNORE into lyrics set href="${page}", project="${project}", title="${literalizeQuotes(${unfilter(${title})})}", tablature="${literalizeQuotes(${unfilter(${tablature})})}", tablature_credit="${literalizeQuotes(${unfilter(${tablature_credit})})}", lyrics="${literalizeQuotes(${unfilter(${lyrics})})}", mp3="${literalizeQuotes(${unfilter(${mp3})})}", mp4="${literalizeQuotes(${unfilter(${mp4})})}", embed_link="${literalizeQuotes(${unfilter(${embed_link})})}", found_on="${literalizeQuotes(${unfilter(${onlist})})}", pat_says="${literalizeQuotes(${unfilter(${patsez})})}", others_say="${literalizeQuotes(${unfilter(${others})})}", caption="${literalizeQuotes(${unfilter(${caption})})}", credits="${literalizeQuotes(${unfilter(${credits})})}"))
-##live	endif
+#live	if (getval(truncate))
+#live		if (sql(truncate table lyrics))
+#live		endif
+#live	endif
+#live	if (getval(update))
+#live		if (sql(insert IGNORE into lyrics set href="${page}", project="${project}", title="${literalizeQuotes(${unfilter(${title})})}", tablature="${literalizeQuotes(${unfilter(${tablature})})}", tablature_credit="${literalizeQuotes(${unfilter(${tablature_credit})})}", lyrics="${literalizeQuotes(${unfilter(${lyrics})})}", mp3="${literalizeQuotes(${unfilter(${mp3})})}", mp4="${literalizeQuotes(${unfilter(${mp4})})}", embed_link="${literalizeQuotes(${unfilter(${embed_link})})}", found_on="${literalizeQuotes(${unfilter(${onlist})})}", pat_says="${literalizeQuotes(${unfilter(${patsez})})}", others_say="${literalizeQuotes(${unfilter(${others})})}", caption="${literalizeQuotes(${unfilter(${caption})})}", credits="${literalizeQuotes(${unfilter(${credits})})}"))
+#live		endif
+#live	endif
 	${mkHeader(project=${project}, section=Lyrics, title=${title})}
 
 	${lyrics}
@@ -531,7 +535,7 @@ ${jbc_footer}
 	onlist=bus
 
 	, patsez=${literalizeCommas(
-		${paul} &amp; I were on the tube.  Angel Station was still closed
+		${paul} & I were on the tube.  Angel Station was still closed
 		for repairs, long after the date for re-opening.
 		<i>Angel Station's still closed...</i> said Mulreany (as you do)
 		and a seed was planted in my brain.
@@ -641,7 +645,7 @@ ${jbc_footer}
 	<br/>And you keep on coming through, thought I'd seen the last of you.
 	<br/>What am I supposed to do?  Bad dream lover go away.
 	<br/><br/>
-	I saw the doctor and the priest and they said &quot;don't waste my time&quot;.
+	I saw the doctor and the priest and they said "don't waste my time".
 	<br/>You've really got me beat, I'm reaching for my heater..
 	<br/><br/>
 	Just then you come walking through the wall.
@@ -777,21 +781,21 @@ ${jbc_footer}
 			The words just came when I opened my mouth
 			The words just came  - guess they came from the South
 			The words just came when I opened my mouth
-			They said &quot;Whoooa!  Bath of bacon!&quot;
+			They said "Whoooa!  Bath of bacon!"
 		</div>
 		<div class="lyrics_verse">
 			The tune just came when I took LSD
 			The tune just came meant nothing to me
 			The tune just came when I took LSD
-			But I knew for sure it was no &quot;A-B-C&quot;
-			It went &quot;Whoooa!  Bath of bacon!&quot;
+			But I knew for sure it was no "A-B-C"
+			It went "Whoooa!  Bath of bacon!"
 		</div>
 		<div class="lyrics_verse">
 			The dance just came to me there in the street
 			The dance just came to me there in the street
 			The dance just came and it looked real neat
 			When the dance just came into my feet
-			It went &quot;Whoooa!  Bath of bacon!&quot;
+			It went "Whoooa!  Bath of bacon!"
 		</div>
 	</div>
 
@@ -803,20 +807,20 @@ ${jbc_footer}
 			The words just came when I opened my mouth
 			The words just came  - guess they came from the South
 			The words just came when I opened my mouth
-			They said &quot;Whoooa!  Bath of bacon!&quot;
+			They said "Whoooa!  Bath of bacon!"
 		</div>
 		<div class="lyrics_verse">
 			The tune just came when I took LSD
 			The tune just came meant nothing to me
 			The tune just came when I took LSD
-			But I knew for sure it was no &quot;A-B-C&quot;
-			It went &quot;Whoooa!  Bath of bacon!&quot;
+			But I knew for sure it was no "A-B-C"
+			It went "Whoooa!  Bath of bacon!"
 		</div>
 		<div class="lyrics_verse">
 			We are the elephant men
 			We are the elephant men
 			We are the elephant men
-			&quot;Whoooa!  Bath of bacon!&quot;
+			"Whoooa!  Bath of bacon!"
 		</div>
 	</div>
 
@@ -877,7 +881,7 @@ ${jbc_footer}
 			bus
 	, patsez=${literalizeCommas(
 		Written about Ben Silcock, who, having failed to get any help
-		from our &quot;national health servive&quot; with his
+		from our "national health servive" with his
 		schizophrenia, tried to feed himself to the lions
 		in London Zoo, Christmas 1992.
 		--NEXT--
@@ -893,7 +897,7 @@ ${jbc_footer}
 
 	<b>sample:</b> [<i>Just keep punching, that's the thing to do.
 	<br/>Remember the words of the philosopher Ken Morgester, who once
-	said &quot;Failure is not falling down, failure is staying down&quot;.
+	said "Failure is not falling down, failure is staying down".
 	And that's a good thought for this day, or any day.  Say, did
 	you ever grab a wishbone and wish that the chicken you had
 	just served had been tastier?  Well that won't happen with
@@ -911,7 +915,7 @@ ${jbc_footer}
 		Put them in the freezer for a couple of weeks
 		And you cook 'em in an oven and you stick 'em on a plate
 		And you slaver and you wriggle and you say
-			&quot;it looks great&quot;
+			"it looks great"
 		You make 'em into gravy, get it on your face
 		It's a shame and it's a disgrace
 		
@@ -984,12 +988,12 @@ ${jbc_footer}
 		Prize turkey's delight! (x2)
 		${anno_beg}
 		Sung to the tune of the 60's/70's TV advert
-		for &quot;Fry's Turkish Delight&quot;, as it goes.
+		for "Fry's Turkish Delight", as it goes.
 		${anno_end}
 		
 		Now this is how you get a chicken hypnotized
 		You look the little motherfucker right in the eyes and say
-		&quot;Chicken, you will obey&quot;
+		"Chicken, you will obey"
 		
 		Ah, they're laughing at the chickens, I can see them
 		
@@ -1080,7 +1084,7 @@ The town in question is South Windsor, CT.
 	Bicycle kid shitting in a greenhouse.
 	<br/>Bicycle kid down at the aquadrome.
 	<br/>Bicycle kid in trouble with a policeman.
-	<br/>Bicycle kid &quot;he's a good boy at home&quot;.
+	<br/>Bicycle kid "he's a good boy at home".
 	<br/>Bicycle kid grow up and get an Escort.
 	${anno_beg}
 	Ford Escort, that is.  Eighties wide-boy motor
@@ -1431,7 +1435,7 @@ The town in question is South Windsor, CT.
 	<br/>I saw a man with red eyes, like he drank too much
 	<br/>And a couple of girls you wouldn't ever want to touch
 	<br/>There's stuff on the wall like what the devil wrote
-	<br/>There's a load of evil mothers yelling &quot;go for the throat&quot;
+	<br/>There's a load of evil mothers yelling "go for the throat"
 	<br/><br/>
 	It was Dracula time
 	<br/>And that's time to go
@@ -1441,12 +1445,12 @@ The town in question is South Windsor, CT.
 	<br/><br/>
 	He looked me up and down and then he showed me his fangs
 	<br/>He was just about to go and then he sang
-	<br/>&quot;I'm at war with this place
+	<br/>"I'm at war with this place
 	<br/>I'm going to blow this place up
 	<br/><br/>
 	I'm at war with my face
 	<br/>I want to blow my face up
-	<br/>I wanna blow my face up...&quot;
+	<br/>I wanna blow my face up..."
 
 	)},
 		onlist=
@@ -1592,7 +1596,7 @@ The town in question is South Windsor, CT.
 	<br/>All: Check-up from the neck up
 	<br/>All: Basement fish can swar you up
 	${anno_beg}
-	swar = &quot;get you high&quot;
+	swar = "get you high"
 	${anno_end}
 	<br/><br/>
 	All: These are the things that we salute
@@ -1621,13 +1625,13 @@ The town in question is South Windsor, CT.
 	<br/>${pat}: Sonic Boom and Woodhouse, Leeds
 	<br/>${larry}: Stolichnaya, Jimmy Greaves
 	${anno_beg}
-	Jimmy &amp; Nobby are sixties footballers.<br/>
-	Moskovskaya &amp; Stolichnaya are Russian vodkas.
+	Jimmy & Nobby are sixties footballers.<br/>
+	Moskovskaya & Stolichnaya are Russian vodkas.
 	${anno_end}
 	<br/>${pat}: The Robot, chip shops girls at bus stops
-	<br/>${paul}: Ray &amp; Moster-Boy Molloy
+	<br/>${paul}: Ray & Moster-Boy Molloy
 	${anno_beg}
-	Roy &amp; Steve Molloy are our pals.
+	Roy & Steve Molloy are our pals.
 	${anno_end}
 	<br/>${larry}: Soap-threat Daleks, Kelly Bundy killer eggs and submarines
 	<br/><br/>
@@ -1878,7 +1882,7 @@ The town in question is South Windsor, CT.
 	<br/>Evolution's getting on my nerves
 	${anno_beg}
 	Top mis-hear by Gerald Langley:
-		&quot;Darwin, evolution's getting on my nerves&quot;
+		"Darwin, evolution's getting on my nerves"
 	${anno_end}
 	<br/>And Darling
 	<br/>I want to know the purpose each thing serves
@@ -1928,9 +1932,9 @@ The town in question is South Windsor, CT.
 #live	if (getval(page) = girl_go.html)
 	${lyricsHeader(title=Girl-Go, lyrics=${literalizeCommas(
 
-	<b>sample:</b> [<i>Tu as vu toutes les &eacute;toiles?</i>]
+	<b>sample:</b> [<i>Tu as vu toutes les étoiles?</i>]
 	${anno_beg}
-	&quot;have you seen all the stars?&quot; -
+	"have you seen all the stars?" -
 	the tune is stolen, of course, from <i>All The Stars</i> by ${perfect}
 	${anno_end}
 	<br/><br/>
@@ -2011,8 +2015,8 @@ The town in question is South Windsor, CT.
 	<br/><br/>
 	Something's got a hold on my heart and it's making me down
 	<br/>You left me singing
-	<br/>&quot;Don't sleep in the subway darling,
-	<br/>Don't standing in the pouring rain, Maureen.&quot;
+	<br/>"Don't sleep in the subway darling,
+	<br/>Don't standing in the pouring rain, Maureen."
 
 	)},
 		onlist=
@@ -2035,7 +2039,7 @@ The town in question is South Windsor, CT.
 	<br/><br/>
 	Abdicating, letting go... consent... success!
 	<br/>I've seen the future and it's birdlike
-	<br/>When girls say &quot;yes&quot;.
+	<br/>When girls say "yes".
 	<br/><br/>
 	Sometimes she walks like she's stepping right off an airplane.
 	<br/>Sometimes she don't walk at all - she just fall down.
@@ -2046,9 +2050,9 @@ The town in question is South Windsor, CT.
 	<br/>She knows you never ever go.
 	<br/>Still everything is copy, yeah every little helps
 	${anno_beg}
-	you know, like newspaper &quot;copy&quot;
+	you know, like newspaper "copy"
 	${anno_end}
-	<br/>When girls say &quot;no&quot;.
+	<br/>When girls say "no".
 	<br/><br/>
 	Now you were so beautiful and mine that I couldn't believe it.
 	<br/>Hey it was almost brooklyn; it was almost impossible, you see?
@@ -2058,7 +2062,7 @@ The town in question is South Windsor, CT.
 	Now my heart don't want to let you go
 	<br/>And the hole in the roof is a mess
 	<br/>You got to watch for the exit wounds
-	<br/>When girls say &quot;yes&quot;.
+	<br/>When girls say "yes".
 	<br/><br/>
 	When girls say yes.
 	<br/>When girls say yes.
@@ -2074,7 +2078,7 @@ The town in question is South Windsor, CT.
 	<br/>It's just one big Saturday in heaven.
 	<br/>And you'll have time enough at last when you're in heaven.
 	${anno_beg}
-	&quot;Time Enough At Last&quot; -
+	"Time Enough At Last" -
 	Harlan Ellison-scripted Twilight Zone episode title
 	<br/>(I know who the director was, too)
 	${anno_end}
@@ -2336,7 +2340,7 @@ The town in question is South Windsor, CT.
 	${lyricsHeader(title=Hysteria, lyrics=${literalizeCommas(
 
 	I wake up, don't know where I am,
-	<br/>The clock says `San Francisco', I say &quot;Hell&quot;!
+	<br/>The clock says `San Francisco', I say "Hell"!
 	<br/>We're getting up, we're holding up,
 	<br/>We're selling out, they say we're doing well.
 	<br/>We slept right though an earthquake -
@@ -2543,13 +2547,13 @@ The town in question is South Windsor, CT.
 	<br/><br/>
 	Comme ca!
 	<br/>Et les elephants ils vont
-	<br/>Ils vont en b&acirc;teau
-	<br/>Le b&acirc;teau ne marche pas
+	<br/>Ils vont en bâteau
+	<br/>Le bâteau ne marche pas
 	<br/>C'est trop petit
 	<br/>Les elephants tombent dans la mer
 	<br/>Mais les elephants, ils nagent jusqu'a la plage
 	<br/>Les elephants ils nagent jusqu'a la plage
-	<br/>Les elephants ils sont sauv&eacute;s
+	<br/>Les elephants ils sont sauvés
 	<br/>Et
 	<br/><br/>
 	<b>Chorus</b>
@@ -2724,7 +2728,7 @@ The town in question is South Windsor, CT.
 	<br/>	You make me want to carry on
 	</i></blockquote>
 	<br/><br/>
-	&quot;The cold light of day&quot; and &quot;the heat of the night&quot;
+	"The cold light of day" and "the heat of the night"
 	<br/>Make me wonder if language has turned out quite right
 	<br/>The scene is quite normal: a Saturday morning,
 	<br/>The breakfast in ruins, the newspaper torn
@@ -2834,7 +2838,7 @@ The town in question is South Windsor, CT.
 	Marnie, understand me
 	<br/>They're not just everyday big moggies.
 	<br/>Marnie, these are big and wild:
-	<br/>They don't go &quot;meow&quot;
+	<br/>They don't go "meow"
 	<br/><br/>
 	<b>Chorus</b>
 	<br/><br/>
@@ -3035,7 +3039,7 @@ The town in question is South Windsor, CT.
 	<br/>I smell the diesel in the air; it lets me know I'm alive.
 	<br/>There goes the busstop, guess everybody's got a motorcar.
 	<br/>There goes the mailman, your letters never arrive.
-	<br/>What do you do when &quot;potential&quot; is your favourite word,
+	<br/>What do you do when "potential" is your favourite word,
 	<br/>And then the bus leaves you at the next move sideways?
 	<br/><br/>
 	I have a new home, I'm getting pushed a thousand different ways.
@@ -3080,7 +3084,7 @@ The town in question is South Windsor, CT.
 	<br/>Milk Bohemian. Devious plant.
 	<br/>I'm sure he'd like to take his place in history
 	<br/>But everyone I know assures me he can't; but I don't know.
-	<br/>I've been out of touch I just dropped by to say &quot;hello&quot;.
+	<br/>I've been out of touch I just dropped by to say "hello".
 	<br/>And all the while, he's looking helpless in his flat in undeniable style.
 	<br/>He's out of touch, looks like he's out of touch now.
 	<br/>Out of touch, looks like he's out of touch now.
@@ -3125,9 +3129,9 @@ The town in question is South Windsor, CT.
 	<br/><br/>
 	You know?
 	<br/>The other day I had a dream 'bout a famous movie star
-	<br/>I was in my room watching &quot;Blind Date&quot; with Cilla,
+	<br/>I was in my room watching "Blind Date" with Cilla,
 	${anno_beg}
-	a celebrated U.K. T.V. version of &quot;Love Connection&quot;
+	a celebrated U.K. T.V. version of "Love Connection"
 	${anno_end}
 	<br/>When the wall caved in
 	<br/>Fuck me!  Godzilla!
@@ -3266,10 +3270,10 @@ The town in question is South Windsor, CT.
 	<br/><br/>
 	Hummer. Hummer. Hummer.
 	${anno_beg}
-	German for &quot;Lobster. Lobster. Lobster.&quot;
+	German for "Lobster. Lobster. Lobster."
 	${anno_end}
 	<br/><br/>
-	${green}: &quot;Peter Lorre isn't really dead&quot;
+	${green}: "Peter Lorre isn't really dead"
 	<br/><br/>
 	Peter Lorre, Peter Lorre He's all right, he's all right
 	<br/>Peter Lorre, Peter Lorre It's all right, he's on your side
@@ -3516,7 +3520,7 @@ The town in question is South Windsor, CT.
 	<br/><br/>
 	It was Chrissie and Ray on a budget that summer,
 	${anno_beg}
-	Hynde &amp; Davies, painfully obviously
+	Hynde & Davies, painfully obviously
 	${anno_end}
 	<br/>Emma defected
 	${anno_beg}
@@ -3541,7 +3545,7 @@ The town in question is South Windsor, CT.
 	<br/>Racheland
 	<br/>Have you got the courage for Racheland?
 	${anno_beg}
-	gonna play my black &amp; white Telecaster now...
+	gonna play my black & white Telecaster now...
 	${anno_end}
 
 	)},
@@ -3710,7 +3714,7 @@ The town in question is South Windsor, CT.
 	<br/>The people round here would never believe me anyway
 	<br/>Life could never be the same...
 	<br/><br/>
-	It's only a rumour - &quot;What's this I hear about you and Susie?&quot;
+	It's only a rumour - "What's this I hear about you and Susie?"
 	<br/>Don't ask
 	<br/>'Coz I don't want to know...
 	<br/>And I don't need to know...
@@ -3903,7 +3907,7 @@ fade
 
 	Put this man on a stand
 	<br/>Just play him to the punters
-	<br/>With a bloody great big card marked &quot;before&quot;.
+	<br/>With a bloody great big card marked "before".
 	<br/>I'm not getting out of here
 	<br/>I'm not getting out even if I have to
 	<br/>Even if it's all I can do.
@@ -3941,7 +3945,7 @@ fade
 	<br/>Continental drift one more crowded elevator
 	<br/>Not another chemical attack from braindead matrons
 	<br/>Shut the door please shut the door
-	<br/>And flipper says &quot;hi&quot;, yeah flipper says &quot;bye-bye&quot;
+	<br/>And flipper says "hi", yeah flipper says "bye-bye"
 	<br/><br/>
 	<b>Chorus</b>
 	<br/><br/>
@@ -3991,9 +3995,9 @@ fade
 	<br/>And sister death is very beautiful
 	<br/>And never very far away
 	<br/><br/>
-	Said: &quot;Get me out of here&quot;
+	Said: "Get me out of here"
 	<br/>Looked across the crowded room
-	<br/>And I said: &quot;get me out of here&quot;
+	<br/>And I said: "get me out of here"
 	<br/>To the girl with the mad eyes and serious earrings
 	<br/><br/>
 	It's hot in here, too hot in here
@@ -4074,7 +4078,7 @@ fade
 	Whooo, ooo, ooo, ooo
 	<br/>You gotta come on out at 1 o'clock and try it out for yourself
 	<br/>Whooo, ooo, ooo, ooo
-	<br/>You gotta walk &amp talk &amp; think &amp; look &amp; act just like a
+	<br/>You gotta walk & talk & think & look & act just like a
 	<br/>Southern Mark Smith
 	<br/><br/>
 	<b>Chorus</b>
@@ -4232,7 +4236,7 @@ fade
 	<br/>Don't ask Susie or me
 	<br/><br/>
 	All these smart teenagers
-	<br/>Say &quot;You just believe your own pubilicity&quot;
+	<br/>Say "You just believe your own pubilicity"
 	<br/>But you have to live somewhere don't you see?
 	<br/>Now I'm falling prey to delusions
 	<br/>Stupid and young with all these confusions
@@ -4327,7 +4331,7 @@ fade
 	<br/>Everybody's at your feet
 	<br/>Everybody thinks you're swell
 	<br/><br/>
-	So now it's &quot;au revoir&quot;
+	So now it's "au revoir"
 	<br/>And a curse on the ocean
 	<br/>Only I got a notion
 	<br/>I'll be with you again
@@ -4453,7 +4457,7 @@ fade
 	<br/>You know that water's looking good
 	<br/><br/>
 	You used to come 'round here with your Poll Tax forms
-	<br/>You used to come 'round here with your brand new &quot;Next&quot; catalogue
+	<br/>You used to come 'round here with your brand new "Next" catalogue
 	<br/>You used to come 'round here with all your C.D.s
 	<br/>You used to come 'round here and think that everything was squalid
 	<br/>Well now you're turtlebait
@@ -4537,10 +4541,10 @@ fade
 	Whaddya think I'm standing here for?
 	<br/><br/>
 	She said:
-	<br/>&quot;No one ever had an angel like you
+	<br/>"No one ever had an angel like you
 	<br/>No one ever had an angel like you
 	<br/>No one ever had an angel like you
-	<br/>No one ever had an angel like you&quot;
+	<br/>No one ever had an angel like you"
 	<br/><br/>
 	Of course you do.
 	<br/><br/>
@@ -4558,7 +4562,7 @@ fade
 	<br/>Whaddya think I'm standing here for?
 	<br/><br/>
 	She said:
-	<br/>&quot;No one&quot;
+	<br/>"No one"
 
 	)},
 		onlist=
@@ -4606,7 +4610,7 @@ fade
 	<br/>Life where we live doesn't ever happen that way
 	<br/>Well guess what?  It was nothing at all
 	<br/>Whitfield asked himself:
-	<br/>&quot;Why couldn't we talk about something important&quot;
+	<br/>"Why couldn't we talk about something important"
 	<br/>But they talked about nothing at all
 	<br/>Sarah got a cab home,
 	<br/>The cab driver got a little lazy and he missed his way
@@ -4704,7 +4708,7 @@ fade
 	<br/>I'll be your dog
 	<br/>Oh I'll be your dog
 	<br/>Oh now baby, baby, I'll be your dog
-	<br/>I said &quot;heel!&quot;
+	<br/>I said "heel!"
 	<br/><br/>
 	Zombie zombie zombie zombie love (x4)
 
@@ -4771,7 +4775,7 @@ fade
 
 	You can try, It's right that you do
 	<br/>In your own way, I'm sure you know that's true
-	<br/>It's not easy, clich&eacute; upon clich&eacute;!
+	<br/>It's not easy, cliché upon cliché!
 	<br/>But so attractive, when everyday is a Sunday
 	<br/>And I truly believed it couldn't happen to me
 	<br/>Yes I truly believed it couldn't happen to me
@@ -5355,7 +5359,7 @@ G - G - C - D
 	<br/>Ask ourselves now, what would Dr. Korda say?
 	${anno_beg}
 	Dr. Korda was the name of the character played by Herbert Lom
-	in the early sixties T.V. series &quot;The Human Jungle&quot;
+	in the early sixties T.V. series "The Human Jungle"
 	${anno_end}
 	<br/>Oh, what'll he say when it comes on down?
 	<br/><br/>
@@ -5540,7 +5544,7 @@ G - G - C - D
 	<br/>Give ya sex engine 'til you can't take any more.
 	<br/><br/>
 	And when you see me walking down the street
-	<br/>You say &quot;There goes the sex engine, he's the guy I wanna meet&quot'.
+	<br/>You say "There goes the sex engine, he's the guy I wanna meet"'.
 	<br/><br/>
 	CLAUDE BIDI... Sex Engine
 	<br/>MAX VILE... Sex Engine
@@ -5568,7 +5572,7 @@ G - G - C - D
 	<br/>Do the sex engine... wanna do that thing with you.
 	<br/><br/>
 	And when you see me walking down the street
-	<br/>You say &quot;There goes the sex engine, he's the guy I wanna meet&quot'.
+	<br/>You say "There goes the sex engine, he's the guy I wanna meet"'.
 	<br/><br/>
 	THE ROCKIN' BELGIANS... Sex Engine
 	<br/>THE SAUSAGE PEOPLE... Sex Engine
@@ -5625,7 +5629,7 @@ G - G - C - D
 	<br/><br/>
 	(Ah so - Detective Sergeant Ho)
 	${anno_beg}
-	From the BBCTV series &quot;The Chinese Detective&quot;,
+	From the BBCTV series "The Chinese Detective",
 	whose braindead tokenism inspired the (rather odd?)
 	lyrical tone.
 	${anno_end}
@@ -5874,7 +5878,7 @@ While they go out drinking and chasing boys.
 	I don't care, even if they do stare
 	<font color="#000099">F               C    G  C</font>
 	I haven't got a mind at all.
-	<font color="#000099">[Drag the F chord up &amp; down the neck]</font>
+	<font color="#000099">[Drag the F chord up & down the neck]</font>
 	(La la la la la la la)
 
 <font color="#000099">[Chords repeat from here on out]</font>
@@ -5995,8 +5999,8 @@ I haven't got a mind at all.
 	<br/>(they check in, but they don't check out) - she was looking for a
 	room where she could sit down and get herself back in order (ORDER!)...
 	<br/>SHEESH!, thought Caroline, What the HELL was that? (Edgar Wallace!)
-	<br/>So she goes to the elevator, she thinks &quot;Well, that'll be pretty
-	straightforward&quot; (Yes, STRAIGHT UP, Caroline...) You know what she finds?
+	<br/>So she goes to the elevator, she thinks "Well, that'll be pretty
+	straightforward" (Yes, STRAIGHT UP, Caroline...) You know what she finds?
 	<br/>The elevator breaks down with Caroline and the fish in it.
 	<br/>(Fish?) (Uh-oh...)
 	<br/>Do you know what happens if you leave a fish too long in an elevator?
@@ -6133,7 +6137,7 @@ I haven't got a mind at all.
 	<br/>Oh, but you're all alone when everybody's leaving in pairs
 	<br/><br/>
 	If you ever stopped a moment and thought about your ears
-	<br/>    (&quot;Big, aren't they?&quot; &quot;I suppose they are&quot;)
+	<br/>    ("Big, aren't they?" "I suppose they are")
 	<br/>Or that noise you make when you've had a bottle of beer
 	<br/>Oh, try to make a mental leap and perhaps it will come clear
 	<br/><br/>
@@ -6457,7 +6461,7 @@ I haven't got a mind at all.
 
 	Early sun on the Main
 	${anno_beg}
-	as in &quot;Frankfurt Am Main&quot; - it's a river
+	as in "Frankfurt Am Main" - it's a river
 	${anno_end}
 	<br/>We're speaking English but the German's the same
 	<br/>It's the same
@@ -6507,7 +6511,7 @@ I haven't got a mind at all.
 	<br/><br/>
 	Yes I have an affair, a squalid affair with a thing
 	<br/><br/>
-	Well the preacher tell me, &quot;Son, to love an object is a sin.&quot;
+	Well the preacher tell me, "Son, to love an object is a sin."
 	<br/><br/>
 	Now I call that thing J. Edgar, though it don't run no F.B.I.
 	<br/>Yeah I call that thing J. Edgar, though it don't run no F.B.I.
@@ -6610,7 +6614,7 @@ I haven't got a mind at all.
 	<br/>And we'll take care of the rest.
 	<br/>Yes, we'll take care of the rest.
 	<br/>Just mark your envelope
-	<br/>&quot;J.B.C.--Charity.&quot;
+	<br/>"J.B.C.--Charity."
 
 	)},
 		onlist=
@@ -6657,8 +6661,8 @@ I haven't got a mind at all.
 	<br/>Oh they don't appreciate the extent of his crimes
 	<br/>But when he gets in at you, you won't have no choice
 	<br/>You know you're a goner when you hear his voice
-	<br/>He leans right up close; you think &quot;this is it&quot;
-	<br/>He looks you in the mouth and says &quot;this won't hurt a bit&quot;
+	<br/>He leans right up close; you think "this is it"
+	<br/>He looks you in the mouth and says "this won't hurt a bit"
 	<br/>Cause he's a
 	<br/>Death dentist
 	<br/>Death dentist
@@ -6738,15 +6742,15 @@ I haven't got a mind at all.
 		family
 	, patsez=${literalizeCommas(
 		There is no lyric as such.
-		&quot;Im Korb&quot; to you it's just GERMAN for
-		&quot;in the basket&quot;, but to ${dooj}, ${pete} and me it
+		"Im Korb" to you it's just GERMAN for
+		"in the basket", but to ${dooj}, ${pete} and me it
 		means A WHOLE LOT MORE.
 		It was performed as a jam on two or three
 		occasions.  This is, of course, about Mister ${iain}, who, as a baby,
 		lived in a basket and had beautiful snow-white hair.  Sometimes we
 		would mutate into A-Men by ${space}.  If it's
 		<a href="${jbc_gigs}/1992/Jun17.html">Birmingham, Alabama</a>,
-		add a chorus of &quot;Alla Akhbar!&quot; (God is great, a Muslim
+		add a chorus of "Alla Akhbar!" (God is great, a Muslim
 		rallying call).  To your surprise, the locals will not shoot you.
 	)}
 	)}
@@ -6876,7 +6880,7 @@ I haven't got a mind at all.
 	</i>
 	</blockquote>
 	<br/><br/>
-	Black lace, S &amp; M, Suicide and Violent Femmes,
+	Black lace, S & M, Suicide and Violent Femmes,
 	<br/>Carlsburg Special Brew, heroin, but mostly YOU.
 	<br/><br/>
 	<b>Chorus</b>
@@ -6892,7 +6896,7 @@ I haven't got a mind at all.
 	<br/>You know it's too much baby, and I just don't understand.
 	<br/>Here's something that I never understand...
 	${anno_beg}
-	this whole bit SHAMELESSLY STOLEN from the ${vu}, &quot;Live '69&quot;
+	this whole bit SHAMELESSLY STOLEN from the ${vu}, "Live '69"
 	${anno_end}
 	<br/><br/>
 	Food, food, food and sex
@@ -6923,7 +6927,7 @@ I haven't got a mind at all.
 	City of night and helter-skelter
 	<br/>Juliet and give me shelter
 	${anno_beg}
-	&quot;Gimme Shelter&quot;... the Stones, like
+	"Gimme Shelter"... the Stones, like
 	${anno_end}
 	<br/>Don't you know that stuff won't help at all?
 	<br/><br/>
@@ -6985,7 +6989,7 @@ I haven't got a mind at all.
 	<br/>Think of all the people locked in prison today
 	<br/>Hindley, Brady, Arding and Hobbes
 	${anno_beg}
-	Arding &amp; Hobbes is an old department store in S. London
+	Arding & Hobbes is an old department store in S. London
 	${anno_end}
 	<br/><br/>
 	Oh think of what would happen if they got free
@@ -7028,7 +7032,7 @@ I haven't got a mind at all.
 	<br/>Hoping someone's looking for a man
 	<br/>Sharing a room with Tufty's replacement
 	${anno_beg}
-	we used to call ${dj} &quot;Tufty&quot; for his habit of sneaking food
+	we used to call ${dj} "Tufty" for his habit of sneaking food
 	off the rider for a solitary midnight feast in the hotel.  Tufty
 	was a squirrel on kids' T.V.
 	${anno_end}
@@ -7115,7 +7119,7 @@ I haven't got a mind at all.
 	I was lost in France, in the streets a band was playing.
 	<br/>I was lost in France, didn't catch what they were saying.
 	<br/>And I reached out for a telephone to say
-	<br/>&quot;Hello, baby, I won't be home&quot;
+	<br/>"Hello, baby, I won't be home"
 	<br/>I was lost in France in love.
 	<br/><br/>
 	Now, now, now, dance.
@@ -7124,7 +7128,7 @@ I haven't got a mind at all.
 	I was lost in France, up above the stars were glowing
 	<br/>I was lost in France, and the vines were overflowing.
 	<br/>I reached out for a telephone to say
-	<br/>&quot;Hello, baby, I won't be home&quot;
+	<br/>"Hello, baby, I won't be home"
 	<br/>I was lost in France in love.
 	<br/><br/>
 	Now, now, now, dance.
@@ -7168,10 +7172,10 @@ I haven't got a mind at all.
 	<br/>She put a fake baked snake in her boyfriend's cake
 	<br/>And when the time came to blow out the candles
 	<br/>She couldn't see it when he flew off the handle
-	<br/>He said &quot;all that time, I've got to get out of here
+	<br/>He said "all that time, I've got to get out of here
 	<br/>Don't need a public service love affair where nothing is clear
 	<br/>I've seen the light and I've got the address
-	<br/>I've got to run run run run run until I'm out of this mess&quot;
+	<br/>I've got to run run run run run until I'm out of this mess"
 	<br/>And it's hard hard hard hard
 	<br/>To get on the train (when you're in love)
 	<br/>Yes it's hard hard hard hard
@@ -7871,8 +7875,8 @@ I haven't got a mind at all.
 	<br/>There are miracles down on the floor
 	<br/>like the message on the ground
 	<br/>just outside the dentist
-	<br/>where someone's written simply &quot;Teeth&quot;
-	<br/>they could have written &quot;Wake Up&quot; on the pavement
+	<br/>where someone's written simply "Teeth"
+	<br/>they could have written "Wake Up" on the pavement
 	<br/>but they wanted us to look underneath
 	<br/><br/>
 	we put all put faith in constructs
@@ -8026,7 +8030,7 @@ I haven't got a mind at all.
 	<br/>Lord, he drove that empty chassis like a man being hounded by his sins
 	<br/><br/>
 	And he was singing
-	<br/>&quot;I drive the roads that are closed by the Ancient Old Ones
+	<br/>"I drive the roads that are closed by the Ancient Old Ones
 	${anno_beg}
 	Scarey H.P. Lovecraft monsters
 	${anno_end}
@@ -8034,13 +8038,13 @@ I haven't got a mind at all.
 	<br/>Shot my boss, killed his dog, left his children in the street
 	<br/>And now I ride, ride, ride the truck of fear
 	<br/>When the doomed go shopping, boy, there ain't no stopping
-	<br/>We're just happy to be here&quot;
+	<br/>We're just happy to be here"
 	<br/><br/>
 	The wolves were howling as he drove up to our side
 	<br/>I felt a chill of terror, a fear I could not hide
 	<br/>I smelled the diesel on his breath as he whispered right into my ear
-	<br/>&quot;Son, you'll never feel so doomed as when you ride the truck of fear
-	<br/>Boy, you'll never feel so doomed as when you ride the truck of fear&quot;
+	<br/>"Son, you'll never feel so doomed as when you ride the truck of fear
+	<br/>Boy, you'll never feel so doomed as when you ride the truck of fear"
 	<br/>We're headed for the rubber room upon the truck of fear
 
 	)},
@@ -8083,10 +8087,10 @@ I haven't got a mind at all.
 	<br/><br/>
 	now never again the aisles of Intershop
 	<br/>never again the tank on a stick
-	<br/>never again to be &quot;Klein Bus&quot;
+	<br/>never again to be "Klein Bus"
 	<br/>the whole damn nation lost to us
 	<br/><br/>
-	Trinken wir doch, meiner Br&uuml;der
+	Trinken wir doch, meiner Brüder
 	<br/>Trinken wir jetztmal zum Rot
 	<br/>Trinken wir alle zusammen
 	<br/>morgen is jedermann tot.
@@ -8128,7 +8132,7 @@ I haven't got a mind at all.
 	<br/><br/>
 	Somebody'd better come see about <a href="${jbc_people}/dooj_wilkinson.html">Dooj</a>
 	<br/>Somebody told him that the beast was huge
-	<br/>Un chien &eacute;norme avec des gros dents rouges...
+	<br/>Un chien énorme avec des gros dents rouges...
 	<br/>Not Sumo.
 	<br/><br/>
 	Waiting for Sumo
@@ -8140,7 +8144,7 @@ I haven't got a mind at all.
 		onlist=
 		ill
 	, patsez=${literalizeCommas(
-		The etymology of &quot;cake&quot;
+		The etymology of "cake"
 		<br/>Le Gateau (French - Cake)
 		<br/>El Gato (Spanish) - Cat...  go figure
 		--NEXT--
@@ -9079,7 +9083,7 @@ Everyone pretend...
 	)},
 		onlist=
 		adventurers .. va_nh_underglass
-		,credits=${pat};;;;&copy; 2005
+		,credits=${pat};;;;© 2005
 	)}
 #live	endif
 
@@ -9123,13 +9127,13 @@ Break out and find out tonight.
 	)},
 		onlist=
 		single_saints .. adventurers
-		,credits=${pat};;;;&copy; 2012
+		,credits=${pat};;;;© 2012
 	)}
 #live	endif
 
 #define	tombe_dans_les_pomes.html
 #live	if (getval(page) = tombe_dans_les_pomes.html)
-	${lyricsHeader(title=Tomb&eacute; dans les pommes, lyrics=${literalizeCommas(
+	${lyricsHeader(title=Tombé dans les pommes, lyrics=${literalizeCommas(
 
 	Je suis tombe dans les pommes.<br/>
 	C'est pas grave, c'est pas grave.<br/>
@@ -9169,7 +9173,7 @@ Break out and find out tonight.
 	)},
 		onlist=
 		adventurers
-		,credits=${pat};;;;&copy; 2011
+		,credits=${pat};;;;© 2011
 	)}
 #live	endif
 
@@ -9883,7 +9887,7 @@ Break out and find out tonight.
 	)},
 		mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3, caption=2005 demo,
 		onlist=wilson_demo_2005
-		,credits=${literalizeCommas(${pat}, ${botty}, ${curt})};;;;&copy; Feb. 2003
+		,credits=${literalizeCommas(${pat}, ${botty}, ${curt})};;;;© Feb. 2003
 		)}
 #live	endif
 
@@ -9933,7 +9937,7 @@ Break out and find out tonight.
 	)},
 		mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3, caption=2005 demo,
 		onlist=wilson_demo_2005,
-		,credits=${literalizeCommas(${pat}, ${botty})};;;;&copy; Feb. 2003
+		,credits=${literalizeCommas(${pat}, ${botty})};;;;© Feb. 2003
 	)}
 #live	endif
 
@@ -9984,7 +9988,7 @@ Break out and find out tonight.
  
 	)},
 		
-		credits=${literalizeCommas(${pat}, ${botty})};;;;&copy; July 2002
+		credits=${literalizeCommas(${pat}, ${botty})};;;;© July 2002
 	)}
 #live	endif
 
@@ -10047,7 +10051,7 @@ Break out and find out tonight.
 
 	)},
 		
-		credits=${literalizeCommas(${pat}, ${botty})};;;;&copy; July 2002
+		credits=${literalizeCommas(${pat}, ${botty})};;;;© July 2002
 	)}
 #live	endif
 
@@ -10083,7 +10087,7 @@ Break out and find out tonight.
 	)},
 		mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3, caption=2002 demo,
 		onlist=wilson_demo_2002,
-		credits=${literalizeCommas(&copy; The entire population of the world with a chorus by Bot)}
+		credits=${literalizeCommas(© The entire population of the world with a chorus by Bot)}
 	)}
 #live	endif
 
@@ -10114,7 +10118,7 @@ Break out and find out tonight.
 
 	)},
 		
-		credits=${literalizeCommas(&copy; ${pat}, ${botty}, King Horror)}
+		credits=${literalizeCommas(© ${pat}, ${botty}, King Horror)}
 		)}
 #live	endif
 
@@ -10186,7 +10190,7 @@ Break out and find out tonight.
 	)},
 		mp3=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3, caption=2002 demo,
 		onlist=wilson_demo_2002,
-		credits=${literalizeCommas( &copy; ${pat}/${botty})}
+		credits=${literalizeCommas( © ${pat}/${botty})}
 	)}
 #live	endif
 
@@ -10232,7 +10236,7 @@ Break out and find out tonight.
 	)},
 		mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3, caption=2003 demo,
 		onlist=va_wilson_heyday ..  wilson_demo_2003 .. wilson_demo_2002,
-		credits=${literalizeCommas( &copy; ${botty}, ${pat}, Soybaz)}
+		credits=${literalizeCommas( © ${botty}, ${pat}, Soybaz)}
 	)}
 #live	endif
 
@@ -10282,7 +10286,7 @@ Break out and find out tonight.
 	)},
 		mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3, caption=2003 demo, embed_link=https://youtube.com/embed/r074mp41514,
 		onlist=wilson_demo_2003 .. wilson_demo_2002,
-		credits=${literalizeCommas( &copy; ${pat}, ${curt}, ${botty}, Traditional, Burroughs, Perry)}
+		credits=${literalizeCommas( © ${pat}, ${curt}, ${botty}, Traditional, Burroughs, Perry)}
 	)}
 #live	endif
 
@@ -10327,7 +10331,7 @@ Break out and find out tonight.
 	)},
 		mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, caption=2002 Demo,
 		onlist=wilson_demo_2002,
-		credits=${literalizeCommas( &copy; ${pat}/${botty})};;;;2001,
+		credits=${literalizeCommas( © ${pat}/${botty})};;;;2001,
 	patsez=${literalizeCommas(
 	<p>
 	<b>Concerning the ridiculous need for self-censorship..</b> (fat tips to Mr Poindexter and Ashcroft!)
@@ -10398,7 +10402,7 @@ Break out and find out tonight.
 		like it.
 	)}
 		,
-		credits=${literalizeCommas( &copy; ${pat}/${botty})};;;;2005-04
+		credits=${literalizeCommas( © ${pat}/${botty})};;;;2005-04
 	)}
 #live	endif
 
@@ -10442,7 +10446,7 @@ Break out and find out tonight.
 
 	)},
 		
-		credits=${literalizeCommas( &copy; ${pat}/${botty})};;;;2005-04
+		credits=${literalizeCommas( © ${pat}/${botty})};;;;2005-04
 	)}
 #live	endif
 
@@ -10455,7 +10459,7 @@ Break out and find out tonight.
 		<div class="lyric_annotation">
 		The <i>dove from above</i> comes down from above on the
 		inexplicable TV quiz entertainment
-		&quot;Shooting Stars&quot;.<br/>
+		"Shooting Stars".<br/>
 		No one in America can ever understand.
 		</div>
 	Those spacemen think the world is a disgrace,
@@ -10501,7 +10505,7 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo..spacemen..spacemen12,mp3=https://sumosonic.com/audio/come_friendly_spacemen.mp3, caption=Demo Version,
-		credits=${literalizeCommas(&copy; ${pat})};;;;1995
+		credits=${literalizeCommas(© ${pat})};;;;1995
 	)}
 #live	endif
 
@@ -10539,7 +10543,7 @@ Break out and find out tonight.
 	)},
 		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/gods_green_earth.mp3,
 		embed_link=/video/sumosonic/sumosonic_gods_green_earth,
-		credits=${literalizeCommas( &copy; ${pat})};;;;1995
+		credits=${literalizeCommas( © ${pat})};;;;1995
 	)}
 #live	endif
 
@@ -10560,7 +10564,7 @@ Break out and find out tonight.
 	)},
 		onlist=thisissumo..spacemen..spacemen12,caption=Demo Version, mp3=https://sumosonic.com/audio/monks_of_kung_fu.mp3,
 		embed_link=/video/sumosonic/sumosonic_monks_of_kung_fu,
-		credits=${literalizeCommas(&copy; ${pat})};;;;1996
+		credits=${literalizeCommas(© ${pat})};;;;1996
 	)}
 #live	endif
 
@@ -10615,7 +10619,7 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/business_and_work.mp3,
-		credits=${literalizeCommas( &copy; ${pat})};;;;1996
+		credits=${literalizeCommas( © ${pat})};;;;1996
 	)}
 #live	endif
 
@@ -10692,7 +10696,7 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/destroy_all_monsters.mp3,
-		credits=${literalizeCommas( &copy; ${pat})};;;;1995
+		credits=${literalizeCommas( © ${pat})};;;;1995
 	)}
 #live	endif
 
@@ -10759,7 +10763,7 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/hey_stoopid.mp3,
-		credits=${literalizeCommas( &copy; ${pat})};;;;1996
+		credits=${literalizeCommas( © ${pat})};;;;1996
 	)}
 #live	endif
 
@@ -10791,7 +10795,7 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/everything_is_wonderful.mp3,
-		credits=${literalizeCommas( &copy; ${pat})};;;;1995
+		credits=${literalizeCommas( © ${pat})};;;;1995
 	)}
 #live	endif
 
@@ -10856,7 +10860,7 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/fern_schnell_gut.mp3,
-		credits=${literalizeCommas( &copy; ${pat})};;;;1995
+		credits=${literalizeCommas( © ${pat})};;;;1995
 	)}
 #live	endif
 
@@ -10911,7 +10915,7 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/cats_life.mp3,
-		credits=${literalizeCommas( &copy; ${pat})};;;;1996
+		credits=${literalizeCommas( © ${pat})};;;;1996
 	)}
 #live	endif
 
@@ -10920,7 +10924,7 @@ Break out and find out tonight.
 	${lyricsHeader(project=sumosonic, title=My Ultimate Baby, lyrics=${literalizeCommas(
 
 	Will you please enjoy
-	&quot;My Ultimate Baby&quot;?
+	"My Ultimate Baby"?
 	<br/>I love you.  I love you.  My ultimate baby.
 	<br/><br/>
 	My ultimate baby.  I love you, baby.
@@ -11002,7 +11006,7 @@ Break out and find out tonight.
 
 	)},
 		caption=Demo Version, mp3=https://sumosonic.com/audio/we_are_the_traffic.mp3,
-		credits=${literalizeCommas( &copy; ${pat})};;;;1991 ,
+		credits=${literalizeCommas( © ${pat})};;;;1991 ,
 		patsez=${literalizeCommas(
 			Initially written at the
 			<b>Nitronic Research</b>
@@ -11056,7 +11060,7 @@ Break out and find out tonight.
 	)},
 		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/sputnik.mp3,
 		embed_link=/video/sumosonic/sumosonic_sputnik,
-		credits=${literalizeCommas( &copy; ${pat})};;;;1996
+		credits=${literalizeCommas( © ${pat})};;;;1996
 	)}
 #live	endif
 
@@ -11077,7 +11081,7 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo,
-		credits=${literalizeCommas( &copy; ${pat})};;;;1996
+		credits=${literalizeCommas( © ${pat})};;;;1996
 	)}
 #live	endif
 
@@ -11106,7 +11110,7 @@ Break out and find out tonight.
 
 	)},
 		
-		credits=${literalizeCommas(&copy; ${wolfi} arranged by Sumosonic)};;;;1993
+		credits=${literalizeCommas(© ${wolfi} arranged by Sumosonic)};;;;1993
 	)}
 #live	endif
 

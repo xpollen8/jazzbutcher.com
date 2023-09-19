@@ -1,10 +1,7 @@
 import useSWR from 'swr';
 
-const useLyrics = ({ type, query, year }: any) => {
-	const fetcher = async (url: any) => {
-		return fetch(url)
-			.then((res) => res.json())
-		}
+const useLyrics = () => {
+	const fetcher = async (url: any) => fetch(url).then((res) => res.json());
 	const { data, error, isLoading } = useSWR(`/api/lyrics`, fetcher);
 
 	//console.log("RET", data);

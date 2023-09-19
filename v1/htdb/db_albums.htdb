@@ -656,7 +656,7 @@
 #define	albums[16]->country	USA, Canada, Australia
 #define	albums[16]->blurb
 	The Jazz Butcher and his group are not in the business of belonging; they are too old and too obstreperous to conform to some attention-seeking image or commercially viable formula. Rather, they bring their not inconsiderable talents to bear on whatever happens to be in the way at the time. The results can only be described as essential.
-#define	albums[16]->line
+#define	albums[16]->liner
     The Jazz Butcher first appeared in Bohemian London in 1983,
     clutching a battered acoustic guitar called Lenin and
     looking for a place to stay.  His origins remain unclear to

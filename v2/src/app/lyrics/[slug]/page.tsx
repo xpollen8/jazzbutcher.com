@@ -71,6 +71,7 @@ const Lyrics = (props: any) => {
 			<LyricImages images={images} />
 			<LyricMedia media={media} />
 			<div className="lyrics" dangerouslySetInnerHTML={{__html: lyrics?.replace(/<br\/>/g, '') }}/>
+			<div className="clear_float" />
 		</blockquote>
 	)
 }

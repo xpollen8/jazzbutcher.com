@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 import { removeHTML, Source } from '@/components/GenericWeb';
 import Tag from '@/components/Tag';
+import ImageStrip from '@/components/ImageStrip';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import MakeReleasePress from '@/components/MakeReleasePress';
 import EmbedMedia from '@/components/EmbedMedia';
@@ -206,21 +207,7 @@ const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		if (images?.length) {
 			return (<>
 				<Tag>Images</Tag>
-				<blockquote className="flex flex-wrap flex-grow border bg-slate-50 justify-center">
-				{images?.map(([ image, caption, source, sourceurl, sourcedate ]: any, key: number) =>
-					<Link key={key} href={`https://jazzbutcher.com${image}.jpg`}>
-						<div className="m-2" style={{ maxWidth: '250px' }}>
-							<Image
-								alt={caption || 'album image'}
-								width={250} height={250}
-								src={`https://jazzbutcher.com${image}_250.jpg`}
-							/>
-							{(caption) && <><i>{caption}</i><br/></>}
-							{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
-						</div>
-					</Link>
-				)}
-				</blockquote>
+				<ImageStrip className="flex flex-wrap flex-grow border bg-slate-50 justify-center p-5" images={images} />
 			</>)
 		}
 	}

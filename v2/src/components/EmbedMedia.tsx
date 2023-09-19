@@ -95,6 +95,7 @@ const	EmbedMixCloud = ({ data }: any) => { } // TODO
 const	EmbedYoutube = ({ data }: any) => { } // TODO
 const	EmbedAWSS3 = ({ data }: any) => { } // TODO
 const	EmbedJBC = ({ data }: any) => { } // TODO
+const	EmbedBandcamp = ({ data }: any) => { } // TODO
 
 const	EmbedSoundCloud = ({ data }: any) => {
 	const { mediaurl } = data;
@@ -117,7 +118,9 @@ const EmbedMedia = ({ data = {}, children, disableVideo=false } : any) => {
 	return (<>
 		{(() => {
 			if (useMediaurl && !disableVideo) {
-				if (useMediaurl?.includes('soundcloud.com')) {
+				if (useMediaurl?.includes('bandcamp.com')) {
+					return <EmbedSoundCloud data={data} />
+				} if (useMediaurl?.includes('soundcloud.com')) {
 					return <EmbedSoundCloud data={data} />
 				} else if (useMediaurl?.includes('.mp3')) {
 					return (<blockquote className="listenItem">

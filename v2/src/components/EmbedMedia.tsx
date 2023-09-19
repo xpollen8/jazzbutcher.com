@@ -89,15 +89,15 @@ const Performers = ({ datetime }: { datetime: string }) => {
 #	<a href="https://www.google.com/search?q=%22{encode({query})}%22" target="new">{ternary((defined(text)), {text}, {query})}</a>
 */
 
-const	EmbedVimeo = ({ data, children }: any) => { } // TODO
-const	EmbedArchiveOrg = ({ data, children }: any) => { } // TODO
-const	EmbedMixCloud = ({ data, children }: any) => { } // TODO
-const	EmbedYoutube = ({ data, children }: any) => { } // TODO
-const	EmbedAWSS3 = ({ data, children }: any) => { } // TODO
-const	EmbedJBC = ({ data, children }: any) => { } // TODO
-const	EmbedBandcamp = ({ data, children }: any) => { } // TODO
+const	EmbedVimeo = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedArchiveOrg = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedMixCloud = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedYoutube = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedAWSS3 = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedJBC = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedBandcamp = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
 
-const	EmbedSoundCloud = ({ data, children }: any) => {
+const	EmbedSoundCloud = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
 	const { mediaurl } = data;
 	const useURL = mediaurl?.replace('https:', 'https%3A');
 	return <iframe
@@ -111,7 +111,7 @@ const	EmbedSoundCloud = ({ data, children }: any) => {
 		</iframe>
 }
 
-const EmbedMedia = ({ data = {}, children, disableVideo=false } : any) => {
+const EmbedMedia = ({ data = {}, children, disableVideo=false } : { data: any, children?: React.ReactNode, disableVideo?: boolean }) => {
 	const { autolink=true, parent, datetime, venue, city, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);

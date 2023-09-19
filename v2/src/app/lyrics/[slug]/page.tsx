@@ -57,7 +57,7 @@ const	LyricVideo = ({ video }: any) => {
 
 const	LyricMedia = ({ media }: any) => {
 	if (!media) return;
-	const [ media_href, media_caption, media_source, media_sourceurl, media_sourcedate ] = parseCaptionsSourcesEtc(media);
+	const [ media_href, media_caption, media_source, media_sourceurl, media_sourcedate ] = parseCaptionsSourcesEtc(media) || [];
 	return <>MEDIA</>;
 }
 

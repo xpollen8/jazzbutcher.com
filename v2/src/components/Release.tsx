@@ -43,6 +43,9 @@ export type ReleaseType =  {
 	Bgroove?: string
 	CDring?: string
 	audio?: string
+	video?: string
+	annotated?: string
+	is_instrumental?: string
 }
 
 export type ReleaseTypeWithChildren = ReleaseType & { children?: string | React.ReactElement }

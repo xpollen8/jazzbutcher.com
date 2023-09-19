@@ -388,7 +388,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 					const useG = (record?.gig) ? record.gig : record;
 					const styles = determineStyles(record);
 					const datetime = record?.datetime.substring(0, 10).replace(/-/g, '');
-					let poster = (useG?.extra?.includes('poster')) ? `https://jazzbutcher.com/images/${datetime}/${datetime}_poster.jpg` : null;
+					let poster = (useG?.extra?.includes('poster')) ? `https://jazzbutcher.com/images/${datetime}/${datetime}_poster.jpg` : undefined;
 					if (!poster) {
 						if  (useG?.extra?.includes('ticket')) {
 							poster = `https://jazzbutcher.com/images/${datetime}/${datetime}_ticket.jpg`;
@@ -569,11 +569,11 @@ export const censorEmail = (str: string) => {
 	return str;
 }
 
-export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '[remove]');
+export const deHTDBifyText = (v?: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '[remove]') || '';
 
 
 export const parseCredit = (cr: string = '') => {
-	const [ credit, crediturl, creditdate, creditcaption ] = parseCaptionSourceEtc(cr);
+	const [ credit, crediturl, creditdate, creditcaption ] = parseCaptionSourceEtc(cr) || [];
 	return {
 		credit,
 		crediturl,
@@ -588,7 +588,7 @@ const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\
 
 
 export const parseCaptionSourceEtc = (str?: string, captionsLast?: boolean) => {
-	const parts = str?.split(';;')?.map((ch: string) => ch.length ? ch.replace('[remove]', '@') : null)
+	const parts = str?.split(';;')?.map((ch: string) => ch.length ? ch.replace('[remove]', '@') : undefined) || []
 	if (!captionsLast) {
 		return parts;
 	}

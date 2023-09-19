@@ -97,8 +97,8 @@ export const parseDate = (str?: string) => {
 export const prettyDate = (dt: string) => moment(dt).format("ddd, MMM Do YYYY");
 
 const dateDisplay = (dt?: string, sep: string = ' - ') => {
-	const [orig, iy,im,id,ihh,imm,iss, unknownMonth, unknownDay]: any = parseDate(dt) || [];
-	if (iy) {
+	const [orig, iy,im,id,ihh,imm,iss, unknownYear, unknownMonth, unknownDay]: any = parseDate(dt) || [];
+	if (!unknownYear) {
 		const padDate = (dt: number[]) => {
 			const [iy,im,id,ihh,imm,iss] = dt || [];
 			return localDate(`${iy}-${padZero(im)}-${padZero(id)} ${padZero(ihh)}:${padZero(imm)}:${padZero(iss)}`);
@@ -109,6 +109,7 @@ const dateDisplay = (dt?: string, sep: string = ' - ') => {
 			<span className="date">{prettyDate(display)}</span> <span className={`date ${unknownDay} ${unknownMonth}`} />
 		</>)
 	}
+	return <span className={`date ${unknownYear}`} />
 }
 
 const dateDiff = (dt?: string, sep: string = ' - ') => {

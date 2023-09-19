@@ -39,7 +39,7 @@ const Audio = () => {
 	const { data: dataLive, isLoading: isLoadingLive, error: errorLive } = useAudioLive();
 	//console.log("DATA", dataLive?.results);
 	return (<>
-		<Header section="jbc" title="Audio" />
+		<Header section="audio" />
 		<h1>This is a W.I.P. - still need to tack the right info onto stuff in the database for this to work programmatically</h1>
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading) && <>

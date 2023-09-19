@@ -5,7 +5,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 
 const Video = () => 
 <>
-	<Header section="jbc" title="Video" />
+	<Header section="video" />
 	<h1>This section is not yet ported from old JBC site</h1>
 	<EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/video/JazzButcherQuartet_NeverGiveUp.mp4', song: 'Never Give Up', datetime: '2020-10-14', mediacredit: 'Simon Taylor' }} >
 		<blockquote>

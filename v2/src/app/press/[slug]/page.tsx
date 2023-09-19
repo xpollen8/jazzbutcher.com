@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import { Source, Credit } from '@/components/GenericWeb';
 import usePressArticle from '@/lib/usePressArticle';
-import { dateDiff, dateDisplay, ts2URI } from '@/lib/macros';
+import { parseCaptionsSourcesEtc, dateDiff, dateDisplay, ts2URI } from '@/lib/macros';
 import { AutoLinkPlayer, expand } from '@/lib/defines';
 
 const PressArticle = ({ params }: { params?: any }) => {
@@ -68,21 +68,12 @@ const PressArticle = ({ params }: { params?: any }) => {
 			</>)}
 		</center>)
 	}
-	const parseThumbAndImages = (str?: string) => {
-		if (!str) return;
-		const chunks = str.split('$$');
-		const images = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
-			const [ image, source, sourceurl, sourcedate, caption ] = ch.split(';;');
-			return { image, source, sourceurl, sourcedate, caption };
-		});
-		return images;
-	}
 	const ArticleThumbAndImages = ({ article }: any) => {
 		if (article?.thumb || article?.images) {
-			const images = parseThumbAndImages(`${article?.thumb}$$${article?.images}`);
+			const images = parseCaptionsSourcesEtc(`${article?.thumb}$$${article?.images}`);
 			if (images?.length) {
 				return (<div style={{ float: 'right', margin: '5px', border: '1px solid #666', background: 'white', padding: '5px', paddingBottom: '0px' }} className=" grow">
-					{images?.map(({ image, source, sourceurl, sourcedate, caption }: any, key: number) =>
+					{images?.map(([ image, source, sourceurl, sourcedate, caption ]: any, key: number) =>
 						<Link key={key} href={`https://jazzbutcher.com${image}.jpg`}>
 							<div className="m-2" style={{ maxWidth: '200px' }}>
 								<Image
@@ -98,24 +89,14 @@ const PressArticle = ({ params }: { params?: any }) => {
 				</div>)
 			}
 		}
-		const images = parseThumbAndImages(`${article?.thumb}\$\$${article?.images}`);
-	}
-	const parseMedia = (str?: string) => {
-		if (!str) return;
-		const chunks = str.split('$$');
-		const media = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
-			const [ file, caption ] = ch.split(';;');
-			return { file, caption };
-		});
-		return media;
 	}
 	const ArticleMedia = ({ article }: any) => {
 		if (article?.media) {
-			const media = parseMedia(article?.media);
+			const media = parseCaptionsSourcesEtc(article?.media);
 			if (media?.length) {
 				return (<>
 					<b >Download:</b>{' '}
-					{media?.filter((props: any) => props?.file)?.map(({ file, caption }: any, key: number) => (<>
+					{media?.filter(([ file, caption ]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>
 						<Link key={key} href={`https://jazzbutcher.com${file}`} className="border">{caption}</Link>
 					</>)
 					)}

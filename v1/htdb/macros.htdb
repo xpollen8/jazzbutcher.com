@@ -3885,9 +3885,9 @@ ${define(_set, false)}
 
 #live	if (defined(pat))
 	${begTab(${iconSelf} Pat Says)} <div class="annotation">${pat}</div> ${endTab}
-#insert IGNORE into gigtext set datetime="${_gig->datetime}", type="selfreview", credit='pat', body="${stripWhitespace(${literalizeQuotes(${pat})})}";
-#live	if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="selfreview", credit='pat', body="${stripWhitespace(${literalizeQuotes(${pat})})}"))
-#live	endif
+##insert IGNORE into gigtext set datetime="${_gig->datetime}", type="selfreview", credit='pat', body="${stripWhitespace(${literalizeQuotes(${pat})})}";
+##live	if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="selfreview", credit='pat', body="${stripWhitespace(${literalizeQuotes(${pat})})}"))
+##live	endif
 #live	endif
 
 #live	if (getval(hasPix) = yes)

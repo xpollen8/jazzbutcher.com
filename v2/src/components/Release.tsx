@@ -11,6 +11,7 @@ import MakeReleasePress from '@/components/MakeReleasePress';
 import EmbedMedia from '@/components/EmbedMedia';
 import useReleaseSongs from '@/lib/useReleaseSongs';
 import { gab, expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
+import { parseCaptionsSourcesEtc } from '@/lib/macros';
 
 export type ReleaseType =  {
 	type?: string
@@ -99,24 +100,14 @@ const ReleaseContribution = ({ release }: { release: ReleaseTypeWithChildren }) 
 	}
 }
 
-const parseReleaseNotes = (str?: string) => {
-	if (!str) return;
-	const chunks = str.split('$$');
-	const notes = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
-		const [ note, source, sourceurl, sourcedate ] = ch.split(';;');
-		return { note, source, sourceurl, sourcedate };
-	});
-	return notes;
-}
-
 const ReleaseNotes = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.notes) {
-		const notes = parseReleaseNotes(release?.notes);
+		const notes = parseCaptionsSourcesEtc(release?.notes);
 		if (notes?.length) {
 			return (<>
 				<Tag>Notes</Tag>
 				<blockquote>
-				{notes?.map(({ note, source, sourceurl, sourcedate }: any, key: number) =>
+				{notes?.map(([ note, source, sourceurl, sourcedate ]: any, key: number) =>
 					<div className="listItem" key={key}>
 						<div dangerouslySetInnerHTML={{ __html: note }} />
 						{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
@@ -176,24 +167,14 @@ const ReleaseThanks = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	}
 }
 
-const parseReleaseDownloads = (str?: string) => {
-	if (!str) return;
-	const chunks = str.split('$$');
-	const images = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
-		const [ file, caption ] = ch.split(';;');
-		return { file, caption };
-	});
-	return images;
-}
-
 const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.downloads) {
-		const downloads = parseReleaseDownloads(release?.downloads);
+		const downloads = parseCaptionsSourcesEtc(release?.downloads);
 		if (downloads?.length) {
 			return (<>
 				<Tag>Downloadable Media</Tag>
 				<blockquote>
-				{downloads?.filter((props: any) => props?.file)?.map(({ file, caption }: any, key: number) => (<>
+				{downloads?.filter(([ file, caption]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>
 					<Link key={key} href={`https://jazzbutcher.com${file}`} className="border">{caption}</Link>
 					<br />
 				</>)
@@ -204,23 +185,13 @@ const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => 
 	}
 }
 
-const parseReleaseAudio = (str?: string) => {
-	if (!str) return;
-	const chunks = str.split('$$');
-	const audio = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
-		const [ file, title, source, sourceurl, sourcedate ] = ch.split(';;');
-		return { file, title, source, sourceurl, sourcedate };
-	});
-	return audio;
-}
-
 const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.audio) {
-		const audio = parseReleaseAudio(release?.audio);
+		const audio = parseCaptionsSourcesEtc(release?.audio);
 		if (audio?.length) {
 			return (<>
 				<Tag>Audio</Tag>
-				{audio?.map(({ file, title, source, sourceurl, sourcedate }: any, key: number) => (<>
+				{audio?.map(([ file, title, source, sourceurl, sourcedate ]: any, key: number) => (<>
 					<EmbedMedia key={key} data={{ song: title, mediaurl: file, parent: release.href, comment: release.title }} />
 					{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
 				</>))}
@@ -229,24 +200,14 @@ const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	}
 }
 
-const parseReleaseImages = (str?: string) => {
-	if (!str) return;
-	const chunks = str.split('$$');
-	const images = chunks?.filter((ch: any) => ch.length)?.map((ch: any) => {
-		const [ image, caption, source, sourceurl, sourcedate ] = ch.split(';;');
-		return { image, caption, source, sourceurl, sourcedate };
-	});
-	return images;
-}
-
 const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.images) {
-		const images = parseReleaseImages(`${release?.thumb}$$${release?.images}`);
+		const images = parseCaptionsSourcesEtc(`${release?.thumb}$$${release?.images}`);
 		if (images?.length) {
 			return (<>
 				<Tag>Images</Tag>
 				<blockquote className="flex flex-wrap flex-grow border bg-slate-50 justify-center">
-				{images?.map(({ image, caption, source, sourceurl, sourcedate }: any, key: number) =>
+				{images?.map(([ image, caption, source, sourceurl, sourcedate ]: any, key: number) =>
 					<Link key={key} href={`https://jazzbutcher.com${image}.jpg`}>
 						<div className="m-2" style={{ maxWidth: '250px' }}>
 							<Image

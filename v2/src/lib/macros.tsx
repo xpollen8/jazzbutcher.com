@@ -586,4 +586,12 @@ const autoLink = songLinkMapped;
 
 const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
 
+
+export const parseCaptionSourceEtc = (str?: string) => str?.split(';;');
+
+export const parseCaptionsSourcesEtc = (str?: string) => {
+	if (!str) return;
+	return str.split('$$')?.filter((ch: any) => ch.length)?.map(parseCaptionSourceEtc);
+}
+
 export { localDate, datesEqual, bannerGigs, linkSong, songLinkMapped, parseDomain, dateDisplay, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

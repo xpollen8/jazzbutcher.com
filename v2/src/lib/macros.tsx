@@ -388,7 +388,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 					const useG = (record?.gig) ? record.gig : record;
 					const styles = determineStyles(record);
 					const datetime = record?.datetime.substring(0, 10).replace(/-/g, '');
-					let poster = (useG?.extra?.includes('poster')) ? `https://jazzbutcher.com/images/${datetime}/${datetime}_poster.jpg` : null;
+					let poster = (useG?.extra?.includes('poster')) ? `https://jazzbutcher.com/images/${datetime}/${datetime}_poster.jpg` : undefined;
 					if (!poster) {
 						if  (useG?.extra?.includes('ticket')) {
 							poster = `https://jazzbutcher.com/images/${datetime}/${datetime}_ticket.jpg`;
@@ -505,7 +505,7 @@ const searchOptions: HashedType[] = [
 export const getOptions = (noun: string | undefined): HashedType => (noun && searchOptions.find(o => o.noun === noun)) || searchOptions[0];
 
 const autoHREF = (href: string) => {
-	if (href?.includes('@')) {	// email address
+	if (href?.includes('@') && !href?.includes('http')) {	// email address
 		return `mailto:${href}`;
 	} else {
 		if (href?.includes('htt')) {	// full url
@@ -569,11 +569,11 @@ export const censorEmail = (str: string) => {
 	return str;
 }
 
-export const deHTDBifyText = (v: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '[remove]');
+export const deHTDBifyText = (v?: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '[remove]') || '';
 
 
 export const parseCredit = (cr: string = '') => {
-	const [ credit, crediturl, creditdate, creditcaption ] = cr.split(';;');
+	const [ credit, crediturl, creditdate, creditcaption ] = parseCaptionSourceEtc(cr) || [];
 	return {
 		credit,
 		crediturl,
@@ -585,5 +585,24 @@ export const parseCredit = (cr: string = '') => {
 const autoLink = songLinkMapped;
 
 const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
+
+
+export const parseCaptionSourceEtc = (str?: string, captionsLast?: boolean) => {
+	const parts = str?.split(';;')?.map((ch: string) => ch.length ? ch.replace('[remove]', '@') : undefined) || []
+	if (!captionsLast) {
+		return parts;
+	}
+	return [ parts[0], parts[4], parts[1], parts[2], parts[3] ];
+}
+
+export const parseCaptionsSourcesEtc = (str?: string, captionsLast?: boolean) => {
+	if (!str) return;
+	return str.split('$$')?.filter((ch: any) => ch.length)?.map((ch: string) => parseCaptionSourceEtc(ch, captionsLast));
+}
+
+export const truncAt = (chop: string, str: string) => {
+	const [ ret ] = str?.split(chop);
+	return ret || str;
+}
 
 export { localDate, datesEqual, bannerGigs, linkSong, songLinkMapped, parseDomain, dateDisplay, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

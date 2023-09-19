@@ -606,10 +606,10 @@ export const morphine = linkSong({ href: "/lyrics/diamorphine.html", title: "Dia
 //
 //	gentlemen adventurers
 //
-export const adventurers = linkAlbum({ href: "/releases/last_of_the_gentlemen_adventurers.html", title: "Last of the Gentleman Adventurers" });
+export const adventurers = linkAlbum({ href: "/releases/last_of_the_gentleman_adventurers.html", title: "Last of the Gentleman Adventurers" });
 export const animals = linkSong({ href: "/lyrics/animals.html", title: "Animals" });
 export const shame_about_you = linkSong({ href: "/lyrics/shame_about_you.html", title: "Shame About You" });
-export const last_of_the_gentlemen_adventurers = linkSong({ href: "/lyrics/last_of_the_gentleman_adventurers.html", title: "Last of the Gentleman Adventurers" });
+export const last_of_the_gentleman_adventurers = linkSong({ href: "/lyrics/last_of_the_gentleman_adventurers.html", title: "Last of the Gentleman Adventurers" });
 export const tombe = linkSong({ href: "/lyrics/tombe_dans_les_pomes.html", title: "Tombé dans les pommes" });
 export const count_me_out = linkSong({ href: "/lyrics/count_me_out.html", title: "Count Me Out" });
 export const single_saints = linkSingle({ href: "/releases/all_the_saints.html", title: "All the Saints" });
@@ -920,7 +920,7 @@ export const mapSongs: {[key: string]: string} = {
 	"Knocking_On_Heavens_Door": "knock",
 	"La_Mer": "mer",
 	"Land": "land",
-	"Last_of_the_Gentleman_Adventurers": "last_of_the_gentlemen_adventurers",
+	"Last_of_the_Gentleman_Adventurers": "last_of_the_gentleman_adventurers",
 	"Leaving_It_Up_To_You": "uptoyou",
 	"Line_Of_Death": "lineo",
 	"Living_In_A_Village": "village",

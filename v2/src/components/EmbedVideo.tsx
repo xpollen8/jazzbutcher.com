@@ -7,8 +7,8 @@ const EmbedVideo = ({ data = {}, children }: { data: any, children?: React.React
 				return (
 					<video controls={true} preload="none"
 						className="video"
-						poster={`${mediaurl}_thumbnail.jpg`} >
-						<source src={`${mediaurl}.mp4`} type="video/mp4" />
+						poster={`https://jazzbutcher.com${mediaurl}_thumbnail.jpg`} >
+						<source src={`https://jazzbutcher.com${mediaurl}.mp4`} type="video/mp4" />
 					</video>
 				);
 			} else if (mediaurl.includes('assets.jazzbutcher.com')) {

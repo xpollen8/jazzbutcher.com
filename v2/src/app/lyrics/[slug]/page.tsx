@@ -4,10 +4,13 @@ import { Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
+import ImageStrip from '@/components/ImageStrip';
+import EmbedMedia from '@/components/EmbedMedia';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 //import ReleaseBlurb from '@/components/ReleaseBlurb';
 import useLyric from '@/lib/useLyric';
 import useReleases from '@/lib/useReleases';
+import { truncAt, parseCaptionsSourcesEtc } from '@/lib/macros';
 
 /*
       project: '',
@@ -33,10 +36,41 @@ import useReleases from '@/lib/useReleases';
  ${begTab(Media)}
 
 */
+const	LyricVideo = ({ video }: any) => {
+	if (!video) return;
+	const videos = parseCaptionsSourcesEtc(video);
+
+	return <div className="clear_float imageStrip" style={{ width: '263px' }}>
+		{videos?.map((v: any, key: number) => {
+			const [ videourl, source, sourceurl, sourcedate, caption ] = v;
+			const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
+			return (<div key={key}>
+				<center>
+					<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate }}>
+						<br />{caption}
+					</EmbedMedia>
+				</center>
+			</div>)
+		})}
+	</div>;
+}
+
+const	LyricMedia = ({ media }: any) => {
+	if (!media) return;
+	const [ media_href, media_caption, media_source, media_sourceurl, media_sourcedate ] = parseCaptionsSourcesEtc(media) || [];
+	return <>MEDIA</>;
+}
+
+const	LyricImages = ({ images }: any) => <ImageStrip className="imageStrip clear_float" images={parseCaptionsSourcesEtc(images, true)} />;
+
 const Lyrics = (props: any) => {
+	const { video, media, images, lyrics, key } = props;
 	return (
-		<blockquote key={props?.key}>
-			<div className="lyrics" dangerouslySetInnerHTML={{__html: props?.lyrics?.replace(/<br\/>/g, '') }}/>
+		<blockquote key={key}>
+			<LyricVideo video={video} />
+			<LyricImages images={images} />
+			<LyricMedia media={media} />
+			<div className="lyrics" dangerouslySetInnerHTML={{__html: lyrics?.replace(/<br\/>/g, '') }}/>
 		</blockquote>
 	)
 }
@@ -58,15 +92,21 @@ const FoundOn = (song: any, key: number, releases: any) => {
 }
 
 const PatSays = (props: any) => {
+	const { pat_says } = props;
 	return (
 		<div key={props?.key}>
+			{pat_says}
 		</div>
 	)
 }
 
+// TODO: 'annotated', 'is_instrumental', 'images'
+
 const OthersSay = (props: any) => {
+	const { others_say } = props;
 	return (
 		<div key={props?.key}>
+			{others_say}
 		</div>
 	)
 }
@@ -86,8 +126,10 @@ const LiveStats = (props: any) => {
 }
 
 const Media = (props: any) => {
+	const { media } = props;
 	return (
 		<div key={props?.key}>
+			{media}
 		</div>
 	)
 }

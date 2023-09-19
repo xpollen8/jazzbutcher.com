@@ -905,3 +905,12 @@ color: white;
 .comment #comments {
 	font-style: italics;
 }
+
+.imageStrip {
+	float: right;
+	margin: 3px;
+	border: 1px solid #666;
+	background: white;
+	padding: 5px;
+	paddingBottom: 0px
+}

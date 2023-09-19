@@ -89,15 +89,15 @@ const Performers = ({ datetime }: { datetime: string }) => {
 #	<a href="https://www.google.com/search?q=%22{encode({query})}%22" target="new">{ternary((defined(text)), {text}, {query})}</a>
 */
 
-const	EmbedVimeo = ({ data }: any) => { } // TODO
-const	EmbedArchiveOrg = ({ data }: any) => { } // TODO
-const	EmbedMixCloud = ({ data }: any) => { } // TODO
-const	EmbedYoutube = ({ data }: any) => { } // TODO
-const	EmbedAWSS3 = ({ data }: any) => { } // TODO
-const	EmbedJBC = ({ data }: any) => { } // TODO
-const	EmbedBandcamp = ({ data }: any) => { } // TODO
+const	EmbedVimeo = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedArchiveOrg = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedMixCloud = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedYoutube = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedAWSS3 = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedJBC = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+const	EmbedBandcamp = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
 
-const	EmbedSoundCloud = ({ data }: any) => {
+const	EmbedSoundCloud = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
 	const { mediaurl } = data;
 	const useURL = mediaurl?.replace('https:', 'https%3A');
 	return <iframe
@@ -107,10 +107,11 @@ const	EmbedSoundCloud = ({ data }: any) => {
 			frameBorder="no"
 			allow="autoplay"
 			src={`https://w.soundcloud.com/player/?url=${useURL}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`}>
+		{children}
 		</iframe>
 }
 
-const EmbedMedia = ({ data = {}, children, disableVideo=false } : any) => {
+const EmbedMedia = ({ data = {}, children, disableVideo=false } : { data: any, children?: React.ReactNode, disableVideo?: boolean }) => {
 	const { autolink=true, parent, datetime, venue, city, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);
@@ -119,14 +120,23 @@ const EmbedMedia = ({ data = {}, children, disableVideo=false } : any) => {
 		{(() => {
 			if (useMediaurl && !disableVideo) {
 				if (useMediaurl?.includes('bandcamp.com')) {
-					return <EmbedSoundCloud data={data} />
+					return <>
+						<EmbedBandcamp data={data}>
+							{children}
+						</EmbedBandcamp>
+					</>
 				} if (useMediaurl?.includes('soundcloud.com')) {
-					return <EmbedSoundCloud data={data} />
+					return <>
+						<EmbedSoundCloud data={data}>
+							{children}
+						</EmbedSoundCloud>
+					</>
 				} else if (useMediaurl?.includes('.mp3')) {
 					return (<blockquote className="listenItem">
 						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 						<LinkAudio parent={parent} autolink={autolink} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} />
 						{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
+						{children}
 					</blockquote>)
 				} else {
 					return (<>
@@ -136,7 +146,8 @@ const EmbedMedia = ({ data = {}, children, disableVideo=false } : any) => {
 						{(comment) && <span className="smalltext"> ({comment}) </span>}
 						<div className="listenItem">
 							<EmbedVideo data={data} />
-							{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
+							{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
+							{children}
 						</div>
 					</>);
 				}
@@ -156,7 +167,6 @@ const EmbedMedia = ({ data = {}, children, disableVideo=false } : any) => {
 				<Performers datetime={datetime} />
 			</>);
 		})()}
-		{children}
 	</>)
 }
 

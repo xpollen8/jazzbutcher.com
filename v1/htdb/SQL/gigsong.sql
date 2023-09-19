@@ -218,7 +218,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2004-07-02 00:00:00','set',1,6,'Tread Water'
 INSERT INTO `gigsong` VALUES (NULL,'2012-12-01 18:00:00','set',1,1,'Holiday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2012-12-01 18:00:00','set',1,2,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2012-12-01 18:00:00','set',1,3,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2012-12-01 18:00:00','set',1,4,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2012-12-01 18:00:00','set',1,4,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2012-12-01 18:00:00','set',1,5,'My Other Life',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2012-12-01 18:00:00','set',1,6,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2012-12-01 18:00:00','set',1,7,'Just Like Bettie Page',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -258,7 +258,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2012-12-02 18:00:00','encore',1,2,'Sweet Jan
 INSERT INTO `gigsong` VALUES (NULL,'2012-11-03 19:30:00','set',1,1,'Mercy',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2012-11-03 19:30:00','set',1,2,'Beautiful Mind',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2012-11-03 19:30:00','set',1,3,'Play It All Night Long','Warren Zevon',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2012-11-03 19:30:00','set',1,4,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2012-11-03 19:30:00','set',1,4,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2012-11-03 19:30:00','set',1,5,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2012-11-03 19:30:00','set',1,6,'Shame About You',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2012-11-03 19:30:00','set',1,7,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -287,7 +287,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2010-06-26 00:00:00','set',2,3,'Mr. Odd',NUL
 INSERT INTO `gigsong` VALUES (NULL,'2010-06-26 00:00:00','set',2,4,'Shame About you',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2010-06-26 00:00:00','set',2,5,'Shakey',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2010-06-26 00:00:00','set',2,6,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2010-06-26 00:00:00','set',2,7,'Tomb&eacute; dans les Pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2010-06-26 00:00:00','set',2,7,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2010-06-26 00:00:00','set',2,8,'Jazz Butcher Theme',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2010-06-26 00:00:00','encore',1,1,'Thoughtless Kind','John Cale',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2009-10-13 20:30:00','set',1,1,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1541,7 +1541,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-11-20 00:00:00','set',1,20,'Soul Happy 
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-20 00:00:00','set',1,21,'Over You','Lou Reed',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-15 00:00:00','set',1,1,'Holiday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-15 00:00:00','set',1,2,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2013-06-15 00:00:00','set',1,3,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2013-06-15 00:00:00','set',1,3,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-15 00:00:00','set',1,4,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-15 00:00:00','set',1,5,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-15 00:00:00','set',1,6,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1564,7 +1564,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2013-06-17 00:00:00','set',1,7,'Just Like Be
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-17 00:00:00','set',1,8,'Shame About You',NULL,NULL,NULL,'https://www.youtube.com/embed/fL-WKwhoH-k','John Leon','https://www.youtube.com/user/foodsteelman/videos');
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-17 00:00:00','set',1,9,'Animals',NULL,NULL,NULL,'https://www.youtube.com/embed/Kk_oa9rdwrU','John Leon','https://www.youtube.com/user/foodsteelman/videos');
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-17 00:00:00','set',1,10,'Last of the Gentleman Adventurers',NULL,NULL,NULL,'https://www.youtube.com/embed/Kk_oa9rdwrU','John Leon','https://www.youtube.com/user/foodsteelman/videos');
-INSERT INTO `gigsong` VALUES (NULL,'2013-06-17 00:00:00','set',1,11,'Tomb&eacute; dans les Pommes',NULL,NULL,NULL,'https://www.youtube.com/embed/-dmEbBTMakQ','John Leon','https://www.youtube.com/user/foodsteelman/videos');
+INSERT INTO `gigsong` VALUES (NULL,'2013-06-17 00:00:00','set',1,11,'Tombé dans les pommes',NULL,NULL,NULL,'https://www.youtube.com/embed/-dmEbBTMakQ','John Leon','https://www.youtube.com/user/foodsteelman/videos');
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-17 00:00:00','set',1,12,'Black Raoul',NULL,NULL,NULL,'https://www.youtube.com/embed/JGW3TxHKf98','John Leon','https://www.youtube.com/user/foodsteelman/videos');
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-17 00:00:00','set',1,13,'Shakey',NULL,NULL,NULL,'https://www.youtube.com/embed/LvVnNy0a_DI','John Leon','https://www.youtube.com/user/foodsteelman/videos');
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-17 00:00:00','set',1,14,'Partytime',NULL,NULL,NULL,'https://www.youtube.com/embed/IZ972ot2-nE','Tom Peterson','http://fuelburningoracle.wix.com/tompeterson2');
@@ -1581,7 +1581,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2013-06-13 00:00:00','set',1,5,'Baby, It\'s 
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-13 00:00:00','set',1,6,'Just Like Bettie Page',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-13 00:00:00','set',1,7,'D.R.I.N.K.',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-13 00:00:00','set',2,1,'Last of the Gentleman Adventurers',NULL,NULL,NULL,'https://www.youtube.com/embed/MnlXmtCqgcA','andyskank64','https://www.youtube.com/user/andyskank64');
-INSERT INTO `gigsong` VALUES (NULL,'2013-06-13 00:00:00','set',2,2,'Tomb&eacute; dans les Pommes',NULL,NULL,NULL,'https://www.youtube.com/embed/ett6Q0RCFgk','andyskank64','https://www.youtube.com/user/andyskank64');
+INSERT INTO `gigsong` VALUES (NULL,'2013-06-13 00:00:00','set',2,2,'Tombé dans les pommes',NULL,NULL,NULL,'https://www.youtube.com/embed/ett6Q0RCFgk','andyskank64','https://www.youtube.com/user/andyskank64');
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-13 00:00:00','set',2,3,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-13 00:00:00','set',2,4,'Shame About You',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-06-13 00:00:00','set',2,5,'Black Raoul',NULL,NULL,NULL,'https://www.youtube.com/embed/1D-klOZUrdk','andyskank64','https://www.youtube.com/user/andyskank64');
@@ -1706,7 +1706,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2013-12-04 00:00:00','set',1,5,'Animals',NUL
 INSERT INTO `gigsong` VALUES (NULL,'2013-12-04 00:00:00','set',1,6,'Quality People','Wilson',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-12-04 00:00:00','encore',1,1,'Singing a Song in the Morning','Kevin Ayers',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-12-06 00:00:00','set',1,1,'Mercy',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2013-12-06 00:00:00','set',1,2,'Tomb&eacute; dans les Pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2013-12-06 00:00:00','set',1,2,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-12-06 00:00:00','set',1,3,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-12-06 00:00:00','set',1,4,'Blue Flower','Slapp Happy',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-12-06 00:00:00','set',1,5,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1738,7 +1738,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2008-06-05 00:00:00','encore',1,2,'Southern 
 INSERT INTO `gigsong` VALUES (NULL,'2014-06-27 20:00:00','set',1,1,'Miles Jam',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-06-27 20:00:00','set',1,2,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-06-27 20:00:00','set',1,3,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-06-27 20:00:00','set',1,4,'Tomb&eacute; dans les Pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-06-27 20:00:00','set',1,4,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-06-27 20:00:00','set',1,5,'When You\'s a Viper','Rosetta Howard',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-06-27 20:00:00','set',1,6,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-06-27 20:00:00','set',1,7,'Count Me Out',"${max}",NULL,NULL,NULL,NULL,NULL);
@@ -1770,7 +1770,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',1,6,'Black Raoul'
 INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',1,7,'Count Me Out',"${max}",NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',1,8,'The Man with the Black Moustache','The Monochrome Set',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',1,9,'Neighbour, Neighbour','Davey Graham',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',1,10,'Tomb&eacute; dans les Pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',1,10,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',2,1,'Woke Up This Morning','Alabama 3',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',2,2,'Help Me','Willie Dixon',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',2,3,'All the Saints',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1779,13 +1779,13 @@ INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',2,5,'Solar Core',
 INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',2,6,'Dunkin\' Beigels','Slim Gaillard',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',2,7,'Quality People','Wilson',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',2,8,'Gloria','Van Morrison',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',1,1,'Tomb&eacute; dans les Pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-07-19 00:00:00','set',1,1,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,1,'Who Loves You Now?',NULL,NULL,NULL,'https://www.youtube.com/embed/u0Wjvw-7fr8','Philip Snow','https://www.youtube.com/channel/UC5w5S_qvu7P12iVFjFQAftw');
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,2,'Animals',NULL,NULL,NULL,'https://www.youtube.com/embed/C8_2BRNqDAM','Tot Barling','https://www.youtube.com/user/totbarling');
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,3,'Shame About You',NULL,NULL,NULL,'https://www.youtube.com/embed/RR69zwv8RJk','Philip Snow','https://www.youtube.com/channel/UC5w5S_qvu7P12iVFjFQAftw');
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,3,'Shame About You',NULL,NULL,NULL,'https://www.youtube.com/embed/VZe2s0GGdKo','Tot Barling','https://www.youtube.com/user/totbarling');
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,4,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,5,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,'https://www.youtube.com/embed/f_RT120j1ps','Philip Snow','https://www.youtube.com/channel/UC5w5S_qvu7P12iVFjFQAftw');
+INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,5,'Tombé dans les pommes',NULL,NULL,NULL,'https://www.youtube.com/embed/f_RT120j1ps','Philip Snow','https://www.youtube.com/channel/UC5w5S_qvu7P12iVFjFQAftw');
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,6,'Count Me Out',"${max}",NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,7,'All The Saints',NULL,NULL,NULL,'https://www.youtube.com/embed/BZiw2_IPVdM','Philip Snow','https://www.youtube.com/channel/UC5w5S_qvu7P12iVFjFQAftw');
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,8,'Mercy',NULL,NULL,NULL,'https://www.youtube.com/embed/XV5n_2gcmZY','Philip Snow','https://www.youtube.com/channel/UC5w5S_qvu7P12iVFjFQAftw');
@@ -1799,7 +1799,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2014-08-20 20:00:00','set',1,14,'Shirley Mac
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-22 20:00:00','set',1,1,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-22 20:00:00','set',1,2,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-22 20:00:00','set',1,3,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-08-22 20:00:00','set',1,4,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-08-22 20:00:00','set',1,4,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-22 20:00:00','set',1,5,'Count Me Out',"${max}",NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-22 20:00:00','set',1,6,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-22 20:00:00','set',1,7,'Shakey',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1811,7 +1811,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2014-08-22 20:00:00','set',1,12,'Dunkin\' Be
 INSERT INTO `gigsong` VALUES (NULL,'2014-08-22 20:00:00','encore',1,1,'D.R.I.N.K.',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-20 20:00:00','set',1,1,'Miles Jam',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-20 20:00:00','set',1,2,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-09-20 20:00:00','set',1,3,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-09-20 20:00:00','set',1,3,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-20 20:00:00','set',1,4,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-20 20:00:00','set',1,5,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-20 20:00:00','set',1,6,'Who\'s That Man?',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1833,7 +1833,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',1,7,'Last of the 
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',1,8,'Solar Core',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',1,9,'Shakey',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',1,10,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',1,11,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',1,11,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',2,1,'Who\'s That Man?',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',2,2,'Woke Up This Morning','Alabama 3',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',2,3,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1845,7 +1845,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',2,8,'Quality Peop
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','set',2,9,'Gloria','Van Morrison',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-27 00:00:00','encore',1,1,'Dunkin\' Beigels','Slim Gaillard',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-28 19:00:00','set',1,1,'D.R.I.N.K.',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-09-28 19:00:00','set',1,2,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-09-28 19:00:00','set',1,2,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-28 19:00:00','set',1,3,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-28 19:00:00','set',1,4,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-28 19:00:00','set',1,5,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1899,7 +1899,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','encore',2,1,'Chickento
 INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','encore',2,2,'Walk With The Devil',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-01 00:00:00','set',1,1,'Miles Jam',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-01 00:00:00','set',1,2,'D.R.I.N.K.',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-11-01 00:00:00','set',1,3,'Tomb&eacute; dans les Pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-11-01 00:00:00','set',1,3,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-01 00:00:00','set',1,4,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-01 00:00:00','set',1,5,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-01 00:00:00','set',1,6,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1913,7 +1913,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2014-11-01 00:00:00','encore',1,1,'Dunkin\' 
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-01 00:00:00','encore',1,2,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',1,1,'Miles Jam',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',1,2,'The Man With the Black Moustache','The Monochrome Set',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',1,3,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',1,3,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',1,4,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',1,5,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',1,6,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1927,7 +1927,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',2,6,'Partytime',N
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',2,7,'Quality People','Wilson',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',2,8,'Gloria','Van Morrison',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',3,1,'The Man with the Black Moustache','The Monochrome Set',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',3,2,'Tomb&eacute; dans les Pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',3,2,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',3,3,'All Along the Watchtower','Bob Dylan',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-11-13 00:00:00','set',3,4,'Free Money',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-10-24 18:00:00','set',1,1,'Last of the Gentleman Adventurers',NULL,NULL,NULL,'https://www.youtube.com/embed/UwtLVLPR7CQ','yucolshire','https://www.youtube.com/channel/UCM_8oEhj46-N9NfsxbuMtHw');
@@ -3371,7 +3371,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',1,2,'Mitropa Expr
 INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',1,3,'Indianapolis 500 Go!',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-06-17 00:00:00','set',1,0,'Banter',NULL,"Between-tunes - talking about the Highlander Hotel in Calgary, Alberta, Canada",NULL,'http://jazzbutcher.com/audio/unrivaled.mp3','David Whittemore','http://davidwhittemore.com');
 INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',1,1,'The Man With the Black Moustache','The Monochrome Set',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',1,2,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',1,2,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',1,3,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',1,4,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',1,5,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3388,7 +3388,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',2,7,'Quality Peop
 INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',2,8,'Gloria','Van Morrison',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',2,9,'Dunkin\' Beigels','Slim Gaillard',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-01-11 00:00:00','set',1,1,'Amalfi Coast May 1963',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-01-11 00:00:00','set',1,2,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-01-11 00:00:00','set',1,2,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-01-11 00:00:00','set',1,3,'Black Raoul',NULL,NULL,NULL,'https://www.youtube.com/embed/9231C3wEhMc','Martina Luisetti','https://www.youtube.com/channel/UCHebCxWdlP6whUSiHG0cEaA');
 INSERT INTO `gigsong` VALUES (NULL,'2015-01-11 00:00:00','set',1,4,'Animals',NULL,NULL,NULL,'https://www.youtube.com/embed/e07pH3gZBm0','Martina Luisetti','https://www.youtube.com/channel/UCHebCxWdlP6whUSiHG0cEaA');
 INSERT INTO `gigsong` VALUES (NULL,'2015-01-11 00:00:00','set',1,5,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3405,7 +3405,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2015-02-20 21:00:00','set',1,1,'Autumn Leave
 INSERT INTO `gigsong` VALUES (NULL,'2015-02-20 21:00:00','set',1,2,'All the Saints',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-02-20 21:00:00','set',1,3,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-02-20 21:00:00','set',1,4,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-02-20 21:00:00','set',1,5,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-02-20 21:00:00','set',1,5,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-02-20 21:00:00','set',1,6,'Gold','Peter Blegvad',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-02-20 21:00:00','set',1,7,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-02-20 21:00:00','set',1,8,'The Ballad of Mr. Snake','Kevin Ayers',NULL,NULL,NULL,NULL,NULL);
@@ -3417,7 +3417,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,0,'The Entire P
 INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,1,'Amalfi Coast May 1963',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,2,'The Man with the Black Moustache','The Monochrome Set',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,3,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,4,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,4,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,5,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,6,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,7,'Living in a Village',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3429,15 +3429,15 @@ INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,12,'Partytime',
 INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,13,'Quality People','Wilson',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','set',1,14,'Gloria','Van Morrison',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-03-27 20:00:00','encore',1,1,'Dunkin\' Beigels','Slim Gaillard',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 12:00:00','set',1,0,'The Entire Performance',NULL,'Tomb&eacute; dans les pommes, Partytime, Take The Skinheads Bowling, Black Raoul',NULL,'https://www.youtube.com/embed/rfNsXVFNf3w','Discos Amsterdam','https://www.youtube.com/channel/UCdQD-CxmXb_NCaddKXGv2xA');
-INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 12:00:00','set',1,1,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 12:00:00','set',1,0,'The Entire Performance',NULL,'Tombé dans les pommes, Partytime, Take The Skinheads Bowling, Black Raoul',NULL,'https://www.youtube.com/embed/rfNsXVFNf3w','Discos Amsterdam','https://www.youtube.com/channel/UCdQD-CxmXb_NCaddKXGv2xA');
+INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 12:00:00','set',1,1,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 12:00:00','set',1,2,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 12:00:00','set',1,3,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 12:00:00','set',1,4,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 23:30:00','set',1,1,'Amalfi Coast May 1963',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 23:30:00','set',1,2,'Who Loves You Now?',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 23:30:00','set',1,3,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 23:30:00','set',1,4,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 23:30:00','set',1,4,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 23:30:00','set',1,5,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 23:30:00','set',1,6,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-04-17 23:30:00','set',1,7,'Living in a Village',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3459,13 +3459,13 @@ INSERT INTO `gigsong` VALUES (NULL,'2015-05-01 00:00:00','set',1,2,'Melanie Harg
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-01 00:00:00','set',1,3,'Shame About You',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-01 00:00:00','set',1,4,'The Ballad of Mr. Snake','Kevin Ayers',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-01 00:00:00','set',1,5,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-05-01 00:00:00','set',1,6,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-05-01 00:00:00','set',1,6,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-01 00:00:00','set',1,7,'Gold','Peter Blegvad',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-01 00:00:00','set',1,8,'Quality People','Wilson',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-09 00:00:00','set',1,1,'Amalfi Coast May 1963',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-09 00:00:00','set',1,2,'Who Loves You Now?',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-09 00:00:00','set',1,3,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-05-09 00:00:00','set',1,4,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-05-09 00:00:00','set',1,4,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-09 00:00:00','set',1,5,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-09 00:00:00','set',1,6,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-05-09 00:00:00','set',1,7,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3485,7 +3485,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2015-05-09 00:00:00','encore',2,1,'Hit the B
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','set',1,1,'The Man with the Black Moustache','The Monochrome Set',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','set',1,2,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','set',1,3,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','set',1,4,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','set',1,4,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','set',1,5,'When You\'s A Viper','Rosetta Howard',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','set',1,6,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','set',1,7,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3496,7 +3496,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','set',1,11,'Gloria','Va
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','set',1,12,'Solar Core',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-12 00:00:00','encore',1,1,'Dunkin\' Beigels','Slim Gaillard',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-28 00:00:00','set',1,1,'The Man with the Black Moustache','The Monochrome Set',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-06-28 00:00:00','set',1,2,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,'https://www.youtube.com/embed/TEYMoCC0iTQ','Butterfly Pop','https://www.youtube.com/channel/UCCOvDj0xnUnMoO7Z9YiikcQ');
+INSERT INTO `gigsong` VALUES (NULL,'2015-06-28 00:00:00','set',1,2,'Tombé dans les pommes',NULL,NULL,NULL,'https://www.youtube.com/embed/TEYMoCC0iTQ','Butterfly Pop','https://www.youtube.com/channel/UCCOvDj0xnUnMoO7Z9YiikcQ');
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-28 00:00:00','set',1,3,'Black Raoul',NULL,NULL,NULL,'https://www.youtube.com/embed/UY-s5e9IVoo','Butterfly Pop','https://www.youtube.com/channel/UCCOvDj0xnUnMoO7Z9YiikcQ');
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-28 00:00:00','set',1,4,'Animals',NULL,NULL,NULL,'https://www.youtube.com/embed/A5quLFRBni4','Butterfly Pop','https://www.youtube.com/channel/UCCOvDj0xnUnMoO7Z9YiikcQ');
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-28 00:00:00','set',1,5,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3510,7 +3510,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2015-06-28 00:00:00','set',1,12,'Solar Core'
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-28 00:00:00','encore',1,1,'La Mer',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-28 00:00:00','encore',1,2,'Gloria','Van Morrison',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-08-29 00:00:00','set',1,1,'The Man With the Black Moustache','The Monochrome Set',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-08-29 00:00:00','set',1,2,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,'https://www.youtube.com/embed/TxXPh3WxWgQ?start=28','Tom Jennings','https://www.youtube.com/channel/UCpu0nuiTf5KVkKlILepzjEw');
+INSERT INTO `gigsong` VALUES (NULL,'2015-08-29 00:00:00','set',1,2,'Tombé dans les pommes',NULL,NULL,NULL,'https://www.youtube.com/embed/TxXPh3WxWgQ?start=28','Tom Jennings','https://www.youtube.com/channel/UCpu0nuiTf5KVkKlILepzjEw');
 INSERT INTO `gigsong` VALUES (NULL,'2015-08-29 00:00:00','set',1,3,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-08-29 00:00:00','set',1,4,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-08-29 00:00:00','set',1,5,'Woke Up This Morning','Alabama 3',NULL,NULL,NULL,NULL,NULL);
@@ -3521,7 +3521,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2015-09-22 20:00:00','set',1,2,'Last of the 
 INSERT INTO `gigsong` VALUES (NULL,'2015-09-22 20:00:00','set',1,3,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-09-22 20:00:00','set',1,4,'All the Saints',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-09-22 20:00:00','set',1,5,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-09-22 20:00:00','set',1,6,'Tomb&eacute; dans les Pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-09-22 20:00:00','set',1,6,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-09-22 20:00:00','set',1,7,'Black Raoul',NULL,NULL,NULL,'https://www.youtube.com/embed/ZAnYjrYmF4Q','fire records','https://www.youtube.com/channel/UC4Gjp9Np8j6qe_2ZSMsfNKg');
 INSERT INTO `gigsong` VALUES (NULL,'2015-09-22 20:00:00','set',1,8,'Soul Happy Hour',NULL,NULL,NULL,'https://www.youtube.com/embed/Nfhz5SeqqvA','fire records','https://www.youtube.com/channel/UC4Gjp9Np8j6qe_2ZSMsfNKg');
 INSERT INTO `gigsong` VALUES (NULL,'2015-09-22 20:00:00','set',1,9,'Nothing Special',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3685,7 +3685,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-12-21 00:00:00','encore',1,5,'Speedy Go
 INSERT INTO `gigsong` VALUES (NULL,'1988-12-21 00:00:00','encore',1,6,'After Hours','Velvet Underground',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-12-12 00:00:00','set',1,0,'The Entire Performance',NULL,'Extracted from youtube video',NULL,'http://jazzbutcher.com/audio/20151212/20151212_JBC_Northampton_Playhouse_EQd.mp3','The Jazz Butcher Quartet','https://www.youtube.com/channel/UC4gKP383a2NwBsyVqGa_lMQ');
 INSERT INTO `gigsong` VALUES (NULL,'2015-12-12 00:00:00','set',1,1,'Amalfi Coast May 1963',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-12-12 00:00:00','set',1,2,'Tomb&eacute; dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-12-12 00:00:00','set',1,2,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-12-12 00:00:00','set',1,3,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-12-12 00:00:00','set',1,4,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-12-12 00:00:00','set',1,5,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -4300,7 +4300,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-12-09','set',1,5, "Girl-Go", NULL,"West
 
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-27','set',1,1,"Animals",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-27','set',1,2,"Last of the Gentleman Adventurers",NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2015-06-27','set',1,3,"Tomb&eacute; dans les Pommes",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2015-06-27','set',1,3,"Tombé dans les pommes",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-27','set',1,4,'When You\'s A Viper','Rosetta Howard',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-27','set',1,5,"Shirley Maclaine",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2015-06-27','set',1,6,'Count Me Out',"${max}",NULL,NULL,NULL,NULL,NULL);
@@ -4438,7 +4438,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-07-06 00:00:00','encore',2,3, 'Sweet Ja
 
 INSERT INTO `gigsong` VALUES (NULL,'2018-03-01 19:30:00','set',1,1, "Jazz Butcher Theme",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2018-03-01 19:30:00','set',1,2, "Animals",NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2018-03-01 19:30:00','set',1,3, "Tomb&eacute; dans les Pommes",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2018-03-01 19:30:00','set',1,3, "Tombé dans les pommes",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2018-03-01 19:30:00','set',1,4, "Last of the Gentleman Adventurers",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2018-03-01 19:30:00','set',1,5, "Black Raoul",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2018-03-01 19:30:00','set',1,6, "Melanie Hargreaves' Father's Jaguar",NULL,NULL,NULL,'https://www.youtube.com/embed/k5wJHRv7Pk4','Joe Turner','https://www.youtube.com/channel/UCiCZlujirZWRQvzXqzw6r1A');
@@ -4496,7 +4496,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2018-05-27 19:30:00','set',1, 6, "Shirley Ma
 INSERT INTO `gigsong` VALUES (NULL,'2018-05-27 19:30:00','set',1, 7, "Solar Core", NULL,NULL, NULL,NULL,NULL,NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'2018-05-24 20:00:00','set',1, 1, "Animals", NULL,NULL, NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2018-05-24 20:00:00','set',1, 2, "Tomb&eacute; dans les Pommes", NULL,NULL, NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2018-05-24 20:00:00','set',1, 2, "Tombé dans les pommes", NULL,NULL, NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2018-05-24 20:00:00','set',1, 3, "Last of the Gentleman Adventurers", NULL,NULL, NULL,'https://www.youtube.com/embed/au9qMQGeCpo','Maat Kheru','https://www.youtube.com/channel/UCX7rVDdKkgDHXQiLT9ySKRQ');
 INSERT INTO `gigsong` VALUES (NULL,'2018-05-24 20:00:00','set',1, 4, "Black Raoul", NULL,NULL, NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2018-05-24 20:00:00','set',1, 5, "Melanie Hargreaves' Father's Jaguar", NULL,NULL, NULL,NULL,NULL,NULL);
@@ -4598,7 +4598,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',1, 2, "Holiday",
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',1, 3, "Black Raoul", NULL,NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',1, 4, "Gold", "Peter Blegvad",NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',1, 5, "La Mer", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',1, 6, "Tomb&eacute; dans les Pommes", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',1, 6, "Tombé dans les pommes", NULL,NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',1, 7, "Last of the Gentleman Adventurers", NULL,NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',1, 8, "Baltic", NULL,NULL,NULL,'https://www.youtube.com/embed/T0LOGAmgodQ','Cathy Viale', 'https://www.youtube.com/channel/UCYKVWoD_73O1FCkY7QU1aMA');
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00', 'set',1, 9, "She's on Drugs", NULL,NULL,NULL,NULL,NULL, NULL);
@@ -4790,7 +4790,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,1, "Girls Who
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,2, "The Highest in the Land", NULL,NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,3, "Ben", NULL,NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,4, "Southern Mark Smith", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,5, "Tomb&eacute; dans les Pommes", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,5, "Tombé dans les pommes", NULL,NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,6, "La Mer", NULL,NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,7, "Baltic", NULL,NULL,NULL,NULL,NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,8, "Aftergirls", NULL,NULL,NULL,NULL,NULL, NULL);

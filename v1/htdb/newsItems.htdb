@@ -775,7 +775,7 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[69]->subject Gig photos from Pierre Guillaume
 #define	newsItem[69]->category	press
 #define	newsItem[69]->body
-	Pierre Guillaume shares his photos from <a href="gigs/2019/Sep28_1900.html">2019-09-28 Paris</a>
+	Pierre Guillaume shares his photos from <a href="/gigs/2019/Sep28_1900.html">2019-09-28 Paris</a>
 
 #define	newsItem[70]->dt	${date(U, 2020-05-04)}
 #define	newsItem[70]->subject "My songs have not always been well understood."

@@ -609,7 +609,7 @@ export const adventurers = linkAlbum({ href: "/releases/last_of_the_gentlemen_ad
 export const animals = linkSong({ href: "/lyrics/animals.html", title: "Animals" });
 export const shame_about_you = linkSong({ href: "/lyrics/shame_about_you.html", title: "Shame About You" });
 export const last_of_the_gentlemen_adventurers = linkSong({ href: "/lyrics/last_of_the_gentleman_adventurers.html", title: "Last of the Gentleman Adventurers" });
-export const tombe = linkSong({ href: "/lyrics/tombe_dans_les_pomes.html", title: "Tomb&eacute; dans les pommes" });
+export const tombe = linkSong({ href: "/lyrics/tombe_dans_les_pomes.html", title: "Tombé dans les pommes" });
 export const count_me_out = linkSong({ href: "/lyrics/count_me_out.html", title: "Count Me Out" });
 export const single_saints = linkSingle({ href: "/releases/all_the_saints.html", title: "All the Saints" });
 export const all_the_saints = linkSong({ href: "/lyrics/all_the_saints.html", title: "All the Saints" });
@@ -1035,7 +1035,7 @@ export const mapSongs: {[key: string]: string} = {
 	"Thing": "thing",
 	"Thought_for_the_Day": "thought",
 	"Time": "time",
-	"Tomb&eacute;_dans_les_pommes": "tombe",
+	"Tombé_dans_les_pommes": "tombe",
 	"Tough_Priest": "tough",
 	"Tread_Water": "Tread_Water",
 	"Truck_Of_Fear": "truck",

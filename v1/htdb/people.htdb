@@ -704,7 +704,7 @@ ${define(range[${z}]->end,)}
 		<b>Addendum</b> ... and a force they continue to be. Since about 1996,
 		Max has been playing irregularly with the band again.  If anything, his skills
 		has become decidely better with the years.  In the words of most, even casual,
-		bystanders: &quot;F**k, he's good.&quot;
+		bystanders: "F**k, he's good."
 		<p>
 		<b>Hotel Figueroa</b>
 		<p>
@@ -1318,7 +1318,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 #live	if (getval(page) = copyright.html)
 	${mkHeader(section=People, title=Copyright Information)}
 
-	All photographical content Copyright &copy;
+	All photographical content Copyright ©
 	1994-${_current_year}
 	<br>unless otherwise noted.
 	Permission is granted for personal use in the form of copying and

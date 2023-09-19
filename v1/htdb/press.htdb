@@ -88,7 +88,7 @@
 #live	endif
 	<p />
 	${body}
-#live	if ((getval(types[${t}]) == album) && (defined(${prefix}->album)))
+#live	if ((getval(types[${t}]) == album) & (defined(${prefix}->album)))
 	<div style="font-size: .85em; margin-top: 10px;">
 		${mkAlbumBlurb(prefix=${lookupAlbumBy(l=${${prefix}->album})})}
 	</div>
@@ -163,13 +163,13 @@
 					${person:${${prefix}->person}}
 #live				endif
 #live			endif
-#live			if ((getval(types[${t}]) == gig) && (defined(${prefix}->datetime)))
+#live			if ((getval(types[${t}]) == gig) & (defined(${prefix}->datetime)))
 				<b style="margin: 3px; ">The associated Gig:</b>
 					<a href="${jbc_gigs}/${ts2URI(${${prefix}->datetime})}">
 						${substr(0, 10, ${${prefix}->datetime})}
 					</a>
 #live			endif
-#live			if ((getval(types[${t}]) == album) && (defined(${prefix}->album)))
+#live			if ((getval(types[${t}]) == album) & (defined(${prefix}->album)))
 				<b style="margin: 3px; ">Album Review:</b> ${${${prefix}->album}}
 #live			endif
 
@@ -254,11 +254,11 @@ ${d}
 
 #live			if (sql(x:insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}"))
 #live			endif
-#live				if ((getval(type) == interview) && (defined(datetime)))
+#live				if ((getval(type) == interview) & (defined(datetime)))
 #live					if (sql(x:update gig set extra=concat('interview,',extra) where extra not like '%%interview%%' and datetime='${fixDt(${datetime})}'))
 #live					endif
 #live				endif
-#live				if ((getval(type) == gig) && (defined(datetime)))
+#live				if ((getval(type) == gig) & (defined(datetime)))
 #live					if (sql(x:update gig set extra=concat('press,',extra) where extra not like '%%press%%' and datetime = '${fixDt(${datetime})}'))
 #live					endif
 #live				endif
@@ -551,7 +551,7 @@ ${d}
 		title=The Jazz Butcher and The Jasmine Minks,
 		headline=The Lexington,
 		subhead=London\, April 15\, 201,
-		credit=Vincent Arquilli&eacute;re,
+		credit=Vincent Arquilliére,
 		location=France,
 		source=http://www.popnews.com/popnews/the-jazz-butcher-the-jasmine-minks-the-lexington-londres-15-avril-2017,
 		datetime=2017-04-15,
@@ -716,7 +716,7 @@ ${d}
 
 	${addPress(type=interview, person=julian_poole,
 		url=${jbc_press}/200002_julian_poole.html,
-		title=Interview with Julian &quot;Jazz&quot; Pransky-Poole,
+		title=Interview with Julian "Jazz" Pransky-Poole,
 		publication=Witness Website,
 		source=http://www.witness.uk.com/julian_interview.htm,
 		credit=Dylan Harris,
@@ -2084,7 +2084,7 @@ ${d}
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/2016_press_germany.html,
 		thumb=/images/2016/2016_press_germany,
-		credit=Thomas B&auml;rnthaler,
+		credit=Thomas Bärnthaler,
 		publication=Unknown Print Review,
 		location=Germany,
 		dt=2016)}
@@ -2374,7 +2374,7 @@ ${d}
 		body=${literalizeCommas(
 	The promo schedule for Independence Day director Roland Emmerich
 	is unrelenting. After Britain where the film took a record
-	&#163;6824163 in its first weekend, he moved to Barcelona, then Cannes.
+	£6824163 in its first weekend, he moved to Barcelona, then Cannes.
 	But on Tuesday, Emmerich will fly to La Puebla, a small town in
 	Majorca, where there are no private screenings of the film (gross
 	US takings $240 million), but there is a
@@ -2407,7 +2407,7 @@ ${d}
 	<p />
 	Still, this is a band used to the inner circles of celebrity.
 	Former drummer ${owen} emigrated and worked for 109 days as
-	G&uuml;nter Grass's gardner.
+	Günter Grass's gardner.
 
 	)})}
 	${jbc_footer}
@@ -3875,7 +3875,7 @@ ${d}
 	${damm}....
 	</div>
 	<div class="iview_a">
-	There are these three Von D&auml;mmerung brothers.
+	There are these three Von Dämmerung brothers.
 	They're from Vienna. They have a fanzine called <b>Sinful
 	Beat</b>. They're completely deranged. Karel wrote the liner
 	notes for ${cult}. He has a band now with his
@@ -5368,19 +5368,19 @@ ${d}
 	MUSIC LOVERS of London/The World
 	<br />about the beautiful new music of the BLACK EG.
 	<p />
-	<a href="${jbc_people}/von_dammerung.html">KAREL VON D&Auml;MMERUNG</a>
+	<a href="${jbc_people}/von_dammerung.html">KAREL VON DÄMMERUNG</a>
 	Leader, dancer, host!
-	<br />OTTO VON D&Auml;MMERUNG Synthesisers and drones!
-	<br />EMIL VON D&Auml;MMERUNG Drum programmes, sampling and drones!
+	<br />OTTO VON DÄMMERUNG Synthesisers and drones!
+	<br />EMIL VON DÄMMERUNG Drum programmes, sampling and drones!
 	<br />and our cousin
-	<br />KURT VON D&Auml;MMERUNG The wild guitar sound
+	<br />KURT VON DÄMMERUNG The wild guitar sound
 	of Bohemian Techno!
 	<p />
-	KAREL VON D&Auml;MMERUNG is the father of BOHEMIAN TECHNO FACTION
+	KAREL VON DÄMMERUNG is the father of BOHEMIAN TECHNO FACTION
 	<br />in Praha 1980. He escape to Wien after difficulties with
 	<br />the current oppression regime and find new freedom for his
 	<br />music.
-	<br />OTTO and EMIL VON D&Auml;MMERUNG are coming to Wien in 1990.
+	<br />OTTO and EMIL VON DÄMMERUNG are coming to Wien in 1990.
 	<br />ITALIA 90 for footballing joy and then the brothers are
 	<br />spending three years travelling the world: Africa, France,
 	<br />California, Vietnam, Kallingrad and now again in Wien.
@@ -7044,7 +7044,7 @@ ${d}
 	${extractPress(
 		body=${literalizeCommas(
 
-	&nbsp;&nbsp;&nbsp;&nbsp;Underground rock's greatest shame, and
+	Underground rock's greatest shame, and
 	there have been a few, remains its neglect of Britain's Jazz
 	Butcher, nee ${pat}, a remarkable songwriter who deserves a much better
 	end than the bargain bin at Tower. To call Fish the best pop songwriter
@@ -7055,22 +7055,22 @@ ${d}
 	thus dooming themselves to obscurity. But such a fate should
 	diminish neither the brilliance nor the scope of their work.
 	<p />
-	&nbsp;&nbsp;&nbsp;&nbsp;At once quirky and sobering, from lounge
+	At once quirky and sobering, from lounge
 	music and drinking songs to feedback-laced explosions and textured
 	ballads, the Butcher defied categorization ever since the quietly
-	acclaimed and long-forgotten &quot;${scandal}&quot; surfaced
+	acclaimed and long-forgotten "${scandal}" surfaced
 	all too briefly in the early 1980s. A batch of gems were to
-	follow - &quot;${dist}&quot;, &quot;${fishco}&quot;,
-	&quot;${planet}&quot; - a vast discography that continued without
+	follow - "${dist}", "${fishco}",
+	"${planet}" - a vast discography that continued without
 	due praise well into the 1990s. In '92 came the last US tour
-	and &quot;${blue},&quot; followed a year later by the ethereal,
-	reverb-rich &quot;${bus}&quot;. Our most recent treat, now
-	two years old, was &quot;${ill}&quot;, which like the others
+	and "${blue}," followed a year later by the ethereal,
+	reverb-rich "${bus}". Our most recent treat, now
+	two years old, was "${ill}", which like the others
 	received minimal exposure on play-lists heavy with big-label
 	attitude rock.
 	<p />
-	&nbsp;&nbsp;&nbsp;&nbsp;Now, Mr. Fish himself has taken the
-	trouble to compile &quot;${drainglass}&quot;, a brave retrospective
+	Now, Mr. Fish himself has taken the
+	trouble to compile "${drainglass}", a brave retrospective
 	culled from his five year span with the UK's Glass Records,
 	a relationship that gave us five full-length albums in the
 	early and mid '80s. Some of this stuff has never been available
@@ -7079,7 +7079,7 @@ ${d}
 	of '${smiff}' and '${betty}' in digital clarity (from the analog,
 	of course) for the first time.
 	<p />
-	&nbsp;&nbsp;&nbsp;&nbsp;The Butcher's essence, at least in
+	The Butcher's essence, at least in
 	these showcased earlier days, is a punky, lighthearted recklessness
 	kept in check by lush, cushiony underpinnings, of which dirty-pop
 	classics '${gf}' and '${sat}' are irresistible examples. And
@@ -7093,7 +7093,7 @@ ${d}
 	him, he was often obsessed not with his native England, but
 	with the colors and moods of America.
 	<p />
-	&nbsp;&nbsp;&nbsp;&nbsp;Don't be distracted by any lyrical
+	Don't be distracted by any lyrical
 	lightheartedness. There's some mighty graceful musicianship
 	under the superficial silliness - an acoustic irony wavering
 	somewhere between beauty and hilarity, and often not afraid
@@ -7101,19 +7101,19 @@ ${d}
 	compare the inebriated fun of '${drink}' with the sad, sparkling
 	power of '${good}.')
 	<p />
-	&nbsp;&nbsp;&nbsp;&nbsp;The Butcher can swing from all-out
+	The Butcher can swing from all-out
 	punk to a dewy ballad without so much as a smirk. Such versatility,
 	without the self-indulgence we see so often, is maybe the true
 	crux of his legacy.
 	<p />
-	&nbsp;&nbsp;&nbsp;&nbsp;For now, the Jazz Butcher sits on the
+	For now, the Jazz Butcher sits on the
 	verge of pop oblivion, much the way a band starring Reed, Cale,
 	Morrison, and Tucker did so many years ago. And we all know
 	what happened to them. Time will tell, but surely this disc
 	is a step in the right direction.
 	<p />
 	<b>
-	copyright &copy; Patrick Smith. PO Box 380406 Cambridge MA 02238
+	copyright © Patrick Smith. PO Box 380406 Cambridge MA 02238
 	</b>
 	<br />(used with author's permission)
 
@@ -7141,7 +7141,7 @@ ${d}
 	Last year's ${drainglass} collection spotlighted the
 	Butcher's best songs from a handful of albums released on the
 	Glass label between 1982 and 1986. Now, ${creat} has
-	done the same with <b>&#161;Excellent!</b>, which culls from a half-dozen
+	done the same with <b>¡Excellent!</b>, which culls from a half-dozen
 	Creation discs that began with 1988's ${fishco} and ended
 	with 1995's ${ill}. While <b>Draining...</b> was a masterful
 	distillation, this new compilation suffers from poor song choices.
@@ -7150,7 +7150,7 @@ ${d}
 	didn't.
 	<p />
 	Some of the original Creation stuff is now out of print,
-	and <b>&#161;Excellent!</b> was a great opportunity to reincarnate some
+	and <b>¡Excellent!</b> was a great opportunity to reincarnate some
 	fantastic music. In this respect it fails, shining only on
 	tracks like the beautiful "${whad}," from 1994's
 	${bus}, and ${cult}'s "${odd}"
@@ -7162,7 +7162,7 @@ ${d}
 	in indie-rock.
 	<p />
 	<b>
-	copyright &copy; Patrick Smith. PO Box 380406 Cambridge MA 02238
+	copyright © Patrick Smith. PO Box 380406 Cambridge MA 02238
 	</b>
 	<br />(used with author's permission)
 
@@ -7232,17 +7232,17 @@ ${d}
 	<P><B>DEFINITIONS OF CULT</B>
 	bands vary, but here's a fairly reliable test: If you ever encounter
 	an inexplicably long line outside a club for a band you've never
-	heard of, just say something like, &quot;Oh yeah, I've
+	heard of, just say something like, "Oh yeah, I've
 	heard of this group. Aren't they some kind of cult
-	band?&quot; The angrier the crowd becomes, the more heated
+	band?" The angrier the crowd becomes, the more heated
 	their denials that their beloved band is at all obscure,
 	the more inventive the epithets they hurl at you as you run
 	away, the more likely it is that you were right after all.
 	<P>That test works in reverse, too, as I found out when I
 	dragged a friend to see the Mekons. I mean, I never thought
 	of the Mekons as anything other than the best band in the
-	world. Who else could introduce a number by saying &quot;Here's a
-	song off our last book&quot; and mean it? Only the wonderful Mekons.
+	world. Who else could introduce a number by saying "Here's a
+	song off our last book" and mean it? Only the wonderful Mekons.
 	<P>This was in September in New York. I had the good fortune to be
 	in town the same night the Mekons were passing through. I was one
 	of many happy drunks in the audience, admiring my luck and loving
@@ -7301,8 +7301,8 @@ ${d}
 	<P>The show devolved into an extended conversation with the
 	audience; whenever they did bother to play another song it was
 	mostly so we would all have something else to talk about when they
-	were done. At one point Sally Timms asked, &quot;I've been
-	wondering. Are any Mekons fans successful?&quot; The ripple of awe,
+	were done. At one point Sally Timms asked, "I've been
+	wondering. Are any Mekons fans successful?" The ripple of awe,
 	mirth, and embarrassment that swept through the crowd when we
 	realized none of us were raising our hands was heady and
 	complicated and unreproducible. For most of us, anyway.
@@ -7749,7 +7749,7 @@ Ottawa for a show the following Monday at Barrymores
 	<div class="iview_intro">
 	It's several hours before showtime. Having finished
 	the soundcheck, Pat Fish, The Jazz Butcher, submits himself to
-	the same &quot;big questions&quot; he's been asked before.
+	the same "big questions" he's been asked before.
 	</div>
 
 	<div class="iview_a"> Sometimes you see a Lou Reed
@@ -7787,7 +7787,7 @@ Ottawa for a show the following Monday at Barrymores
 
 	<div class="iview_q"> You toured rather extensively in support
 	of the previous album, Fishcotheque. The song
-	&quot;Hysteria&quot; off of the new album-a statement about the
+	"Hysteria" off of the new album-a statement about the
 	frustrations of touring?
 	</div>
 
@@ -7906,14 +7906,14 @@ Ottawa for a show the following Monday at Barrymores
 	</div>
 
 	<div class="iview_q"> This seems an appropriate segue into
-	discussing the song &quot;Bicycle Kid&quot;.
+	discussing the song "Bicycle Kid".
 	</div>
 
 	<div class="iview_a"> Ah, yes. Quite so.
 	</div>
 
 	<div class="iview_q"> Is there, in fact, an actual
-	&quot;Bicycle Kid&quot;...?
+	"Bicycle Kid"...?
 	</div>
 
 	<div class="iview_a"> Oh, yes. There are many bicycle kids,
@@ -7926,14 +7926,14 @@ Ottawa for a show the following Monday at Barrymores
 	his hair now.
 	</div>
 
-	<div class="iview_q"> Do &quot;Bicycle Kid's grow up to be
-	&quot;Real Men&quot;?
+	<div class="iview_q"> Do "Bicycle Kid's grow up to be
+	"Real Men"?
 	</div>
 
-	<div class="iview_a"> Yeah, like I say, &quot;Bicycle Kid- grow up
-	and get an escort&quot;. I guess maybe people over here think
+	<div class="iview_a"> Yeah, like I say, "Bicycle Kid- grow up
+	and get an escort". I guess maybe people over here think
 	'what does he mean? He goes out and uses prostitutes?' Escort is
-	just this brand of car that &quot;Real Men&quot; drive, this
+	just this brand of car that "Real Men" drive, this
 	really scaggy, black, cheap car that's done up to look smart.
 	He'll get one.
 	</div>
@@ -7969,19 +7969,19 @@ Ottawa for a show the following Monday at Barrymores
 	people, no...we're nasty. So basically, I went to as cheap a
 	studio as possible. We turned everything up to 11 and went. It
 	was supposed to be a sloppy album. Are you familiar with Bath of
-	Bacon, the very first album? Well, &quot;son of Bath of
-	Bacon&quot; was the idea. When it was proposed that it come out
+	Bacon, the very first album? Well, "son of Bath of
+	Bacon" was the idea. When it was proposed that it come out
 	on CD, I was utterly horrified! I just thought, well...you're
 	just going to hear people falling off of chairs and belching.
 	It's funny, but when it came out, especially the Canadian press
-	were saying, &quot;Oh, he's gone all smooth,&quot; and stuff like
-	this. &quot;He's gone all, sort of 'middle-of-the-road',&quot;
+	were saying, "Oh, he's gone all smooth," and stuff like
+	this. "He's gone all, sort of 'middle-of-the-road',"
 	and I was saying 'what?' You should've been there! It was a filthy
 	racket. With this new one there was a certain element in my head
 	of this as a second album. Rivers is good for second albums. We
 	got in there, we knew he'd try to clean it up too much, so just
 	turned everything up to 11, fed back, snarled about, and at the
-	end of every song said, &quot;Clean that up, baldy!&quot;
+	end of every song said, "Clean that up, baldy!"
 	(Laughs) John is kind of like...every instrument is a lead
 	instrument. Everything's got its own space with a nice little bit
 	of reverb around it to make it clean and bright. Which I find, in
@@ -8036,17 +8036,17 @@ Ottawa for a show the following Monday at Barrymores
 	post-Bauhaus, right?
 	</div>
 
-	<div class="iview_a"> Yeah, just about the time that &quot;Ziggy
-	Stardust&quot; hit the top 10, they were doing some shows at
+	<div class="iview_a"> Yeah, just about the time that "Ziggy
+	Stardust" hit the top 10, they were doing some shows at
 	Hammersmith Pallais, which is kind of a big venue. Now, I knew
 	Kevin (Haskins-Drummer for Bauhaus and Love & Rockets) and we had
 	a phone call when I was at work. I got home and Alice said, 'Pat,
-	they want us to support Bauhaus at Hammersmith Pallais.&quot; I
-	thought, 'FREAK OUT! GET A BAND!&quot; So we rounded up a few
+	they want us to support Bauhaus at Hammersmith Pallais." I
+	thought, 'FREAK OUT! GET A BAND!" So we rounded up a few
 	people, we got Rolo (McGinty, guitarist-The Woodentops) and Alice
 	and Max and me and this sax player we used to know. We went up
 	there and they hated us, it was brilliant. There was 2,000 people
-	going, &quot;FUCK OFF! FUCK OFF AND DIE!&quot; We'd never been on
+	going, "FUCK OFF! FUCK OFF AND DIE!" We'd never been on
 	a stage where there'd been guerrillas to protect us from the
 	audience, but this time there was, so we thought, 'Great! Now
 	we'll do 'Partytime'. Now we'll do 'Love Kittens'', and we just
@@ -8087,7 +8087,7 @@ Ottawa for a show the following Monday at Barrymores
 	in...
 	</div>
 
-	Suddenly, and very coincidentally, &quot;Heaven&quot; by Robyn Hitchcock comes on the stereo.
+	Suddenly, and very coincidentally, "Heaven" by Robyn Hitchcock comes on the stereo.
 
 	${linkAudio(mp3=${jbc_audio}/19891119/19891119_JBC_MilwaukeeInterview_Hitchcock.mp3)}
 
@@ -8122,7 +8122,7 @@ Ottawa for a show the following Monday at Barrymores
 	I was very pleased, the other day I was reading 'Melody Maker,'
 	and Phil Parfitt, who is the songwriter for the Perfect Disaster
 	had been asked to write down his top ten songs. And there it was;
-	Angels. And Phil's words were something like, &quot;It's about
+	Angels. And Phil's words were something like, "It's about
 	having an international telephone line to angels, it's about
 	dying...I don't know what it's about (laughs). I don't always
 	know what the lyrics mean myself until I've been listening to
@@ -8520,7 +8520,7 @@ Ottawa for a show the following Monday at Barrymores
 	we went, "Yep." 
 	</div>
 	<div class="iview_q">
-	Sounds perfect&#133;
+	Sounds perfect...
 	</div>
 	<div class="iview_a">
 	Yeah, unbelievably, here we are making a record in the year 2000. I don't
@@ -8593,7 +8593,7 @@ Ottawa for a show the following Monday at Barrymores
 	we're just going to have to admit that we exist again." 
 	</div>
 	<div class="iview_q">
-	So the Jazz Butcher never really went away&#133;
+	So the Jazz Butcher never really went away...
 	</div>
 	<div class="iview_a">
 	It's funny, because five years ago that brand name was such a millstone
@@ -8637,7 +8637,7 @@ Ottawa for a show the following Monday at Barrymores
 	wrong, you know? I don't know how many drugs they think I take.
 	</div>
 	<div class="iview_q">
-	Let them have their memory, whatever they think it is&#133;
+	Let them have their memory, whatever they think it is...
 	</div>
 	<div class="iview_a">
 	Yeah, but you do get some quite touching ones now and again. When you're
@@ -8677,7 +8677,7 @@ Ottawa for a show the following Monday at Barrymores
 	</div>
 	<div class="iview_a">
 	Oh, god, what a list. Any list that's got Brian Eno and Chuck D.
-	on the same one&#133; Better put KRS-1 on there, too. I've spent
+	on the same one... Better put KRS-1 on there, too. I've spent
 	the last five years barely listening to any white boy music to tell you
 	the truth. Hip-hop, old soul, what they call here "Northern Soul."
 	Northampton's always been a bit of a big town for that kind of thing.
@@ -8693,7 +8693,7 @@ Ottawa for a show the following Monday at Barrymores
 	death for that.
 	</div>
 	<div class="iview_q">
-	I think that'd be endearing. Enough bands from Detroit do it&#133;
+	I think that'd be endearing. Enough bands from Detroit do it...
 	</div>
 	<div class="iview_a">
 	I'll tell you. I've got this friend Ian, and he was the singer
@@ -8705,7 +8705,7 @@ Ottawa for a show the following Monday at Barrymores
 	ugly bastards we all are.
 	</div>
 	<div class="iview_q">
-	You seem so nice and gentle&#133;
+	You seem so nice and gentle...
 	</div>
 	<div class="iview_a">
 	Well, he's been coming around specifically to be my "Rock Doctor"
@@ -8716,7 +8716,7 @@ Ottawa for a show the following Monday at Barrymores
 	songs, though. It's a bit Bob Seger every once and again.
 	<p />
 	But you
-	were asking me who my musical heroes were&#133; Soul music's been
+	were asking me who my musical heroes were... Soul music's been
 	really important. When we started out, what we'd say to people about
 	what we were trying to achieve as English white pussies, what we were
 	trying to prove or investigate, was what would've happened if you
@@ -8733,7 +8733,7 @@ Ottawa for a show the following Monday at Barrymores
 	and all the squeaky vocals, and I'm doing a Smokey on it. I don't
 	know. It's not that accomplished a Smokey, I've got to tell
 	you. But me and Max are just up to our necks in soul music. It's
-	really those twin towers of soul music and punk&#133;
+	really those twin towers of soul music and punk...
 	<p />
 	But like,
 	with Cult of the Basement, what we were into in those days, was what Richard
@@ -8872,7 +8872,7 @@ Ottawa for a show the following Monday at Barrymores
 	I did notice when I went to the pictures in America, I was thrilled, because
 	everyone does just shut up and pay attention. Who says you lot have got
 	short attention spans? The fucking rubbish they talk about America over
-	here sometimes&#133; like the New Musical Express, they're always
+	here sometimes... like the New Musical Express, they're always
 	going on about (affects buffoon voice) "What do stupid Americans
 	know about pop music?" Excuse me! Where did Chuck Berry come from?
 	Where did James Brown come from? Fuck! But it happens all the time, like
@@ -8914,13 +8914,13 @@ Ottawa for a show the following Monday at Barrymores
 		body=${literalizeCommas(
 	Pat Fish is the last of the great British Troubadours, the epitome of ‘Have Guitar, Will Travel’.	
 	<p />
-	He used to have a band and he used to have cancer, he now has neither. Alan McGee once said of Fish “The Jazz Butcher is one of the most brilliant incisive pop writers that Britain has produced since the glory days of Ray Davies and Pete Townsend” and he isn’t wrong, cruelly underrated and too intelligent for his own good. Fish kicks off proceedings with a stripped down <i>Keeping the Curtains Closed</i> from his rather magnificent and aptly named Fishcoteque album. A relatively new song but a set mainstay for a while now is <i>Melanie Hargreaves’ Father’s Jaguar </i>– a tale from the posh side of Liverpool apparently. From here on in though he dips into his mid ‘80’s Glass Records catalogue by dusting down the fabulous <i>Vienna Song </i>dusted down and dedicated to this writer, its my favourite Fish ditty you see and he knows it. Fish, trips and glides through <i>Big Saturday</i> (from the <i>Sex and Travel</i> album, which contained the last Jazz Butcher recordings featuring David J within its ranks – a fond farewell, Sex and Travel &#8211; geddit?). <i>The Human Jungle</i> steals its title from an early sixties TV series starring Herbert Lom, again faithfully reproduced. It’s actually very enjoyable to hear these former full band compositions played as they were originally created, bashed out on a guitar. He closes his all too short set with a relatively new one; <i>Never Give Up</i> “I agree with Dave, Embrace Your Dysfunction” the latest nod to his former JB colleague and current headliner. Actually these little lyrical quips do appear from time to time, they are also reciprocated, you just need to know where to find them….Fish is called back for an encore by the handful of enthusiastic punters, “any requests?” closing the evening’s set with the very song that kick started The Jazz Butcher all those years ago; <i>Southern Mark Smith.</i> Fish, Opting to replicate the arrangement from <i>A Scandal in Bohemia </i>rather than the fast paced 45 version the predated it….	
+	He used to have a band and he used to have cancer, he now has neither. Alan McGee once said of Fish “The Jazz Butcher is one of the most brilliant incisive pop writers that Britain has produced since the glory days of Ray Davies and Pete Townsend” and he isn’t wrong, cruelly underrated and too intelligent for his own good. Fish kicks off proceedings with a stripped down <i>Keeping the Curtains Closed</i> from his rather magnificent and aptly named Fishcoteque album. A relatively new song but a set mainstay for a while now is <i>Melanie Hargreaves’ Father’s Jaguar </i>– a tale from the posh side of Liverpool apparently. From here on in though he dips into his mid ‘80’s Glass Records catalogue by dusting down the fabulous <i>Vienna Song </i>dusted down and dedicated to this writer, its my favourite Fish ditty you see and he knows it. Fish, trips and glides through <i>Big Saturday</i> (from the <i>Sex and Travel</i> album, which contained the last Jazz Butcher recordings featuring David J within its ranks – a fond farewell, Sex and Travel  -  geddit?). <i>The Human Jungle</i> steals its title from an early sixties TV series starring Herbert Lom, again faithfully reproduced. It’s actually very enjoyable to hear these former full band compositions played as they were originally created, bashed out on a guitar. He closes his all too short set with a relatively new one; <i>Never Give Up</i> “I agree with Dave, Embrace Your Dysfunction” the latest nod to his former JB colleague and current headliner. Actually these little lyrical quips do appear from time to time, they are also reciprocated, you just need to know where to find them….Fish is called back for an encore by the handful of enthusiastic punters, “any requests?” closing the evening’s set with the very song that kick started The Jazz Butcher all those years ago; <i>Southern Mark Smith.</i> Fish, Opting to replicate the arrangement from <i>A Scandal in Bohemia </i>rather than the fast paced 45 version the predated it….	
 	<p />
 	David J ambles on with his two band mates, a mini orchestra if you will, for this evening’s performance, pianist Robert Vasicek and violinist Karel Holas both veterans of the recent album sessions. His set is declared open with a faithful reading of <i>Not Long for This World</i> the title track from his 2011 opus. Here to promote his new album <i>Missive to an Angel from the Halls of Infamy and Allure</i> David, Robert and Karel dip heavily into that project tonight. <i>I Hear Only Silence Now</i> is delivered in its new arrangement (sans Emily Jane White’s ethereal vocal), renditions of <i>The Auteur</i>, <i>Blue Eyes in the Green Room, Copper Level Seven </i>and the haunting <i>Clandestine Valentine </i>follow<i>,</i> but its the title track that packs the punch this evening with an astonishing violin played by Holas, a musician who is clearly at the very top of his game. David authentically reproduces the title track from 1985’s <i>Crocodile Tears and The Velvet Cosh </i>a song that has had more lyrical rewrites than…	
 	<p />
 A new jazz tinged arrangement of <i>Candy on the Cross </i>at times bears some slightly off kilter resemblance to The Doors <i>Alabama Song, </i>this once fragile haunting number now takes on a new resonance in this alternative reading. <i>Candy</i> is a sordid tale of teenage prostitution on the Caledonian Road as witnessed first-hand by the song’s writer whilst spending time in London in the early 1990’s. David is an incredible observational writer and lyrically he reached his zenith on this one. <i> </i>	
 	<p />
-	Woven into this evenings set is a pair of hand-picked<i> </i>Love and Rockets numbers. Thrown in for good measure are <i>Dog-End of a Day Gone By</i> from their Psychedelia tinged debut album 1985’s <i>Seventh Dream of Teenage Heaven</i> and <i>Shelf Life (</i>from <i>Sweet F.A). </i>The latter, as David explains, was <i> </i>written directly after its author had received a phone call from a charming MCA representative informing him that no follow up album to <i>Urban Urbane </i>would be required….”How many A&amp;R men does it take to change a light bulb? I’ll get back to you on that…” <i> </i> 	
+	Woven into this evenings set is a pair of hand-picked<i> </i>Love and Rockets numbers. Thrown in for good measure are <i>Dog-End of a Day Gone By</i> from their Psychedelia tinged debut album 1985’s <i>Seventh Dream of Teenage Heaven</i> and <i>Shelf Life (</i>from <i>Sweet F.A). </i>The latter, as David explains, was <i> </i>written directly after its author had received a phone call from a charming MCA representative informing him that no follow up album to <i>Urban Urbane </i>would be required….”How many A&R men does it take to change a light bulb? I’ll get back to you on that…” <i> </i> 	
 	<p />
 	January 10 2016 is a day etched deep into our psyche, it is of course <i>The Day That David Bowie Died</i> where were you asks David before telling his own personal story in song. The sentiments captured within its lyric I’m sure are shared the world over.	
 	<p />
@@ -9170,7 +9170,7 @@ much less money. :
 	is doubly damned.	<p />
 	<p />First off, the cult of the
 	Jazz Butcher and his nebulous group of co-conspirators includes two-thirds
-	of Love &amp; Rockets (or half of Bauhaus, if you prefer), Sonic Boom
+	of Love & Rockets (or half of Bauhaus, if you prefer), Sonic Boom
 	of Spaceman 3, members of the Blue Aeroplanes and countless closet musical
 	romantics around the globe who have been saved by Fish's writerly
 	wit and heartfelt pop music gemstones. Secondly, the bugger can't
@@ -9181,8 +9181,8 @@ much less money. :
 	Conspiracy, the band that first brought Fish's particular musical
 	magic to public light and critical acclaim in the mid-'80s.	<p />
 	<p />Ranging from the first records
-	of folk-infused punk &#150; equally informed by the Velvet Underground,
-	Jonathan Richman and Northern Soul &#150; to dissonant, feedback-enhanced,
+	of folk-infused punk -  equally informed by the Velvet Underground,
+	Jonathan Richman and Northern Soul -  to dissonant, feedback-enhanced,
 	emotionally threadbare rawk, Fish has never left his musical or lyrical
 	wit at the door. In fact, though the cast of characters in his orbit has
 	changed, Butch's alternately heartbreaking and biting portraiture
@@ -9220,7 +9220,7 @@ much less money. :
 	got us back together," says Fish. "The joke is, it's their
 	band, we just play in it."	<p />
 	<p />Now, touring in support of
-	the recently released live album <i>Glorious &amp; Idiotic</i> (on ROIR
+	the recently released live album <i>Glorious & Idiotic</i> (on ROIR
 	records), Fish has to concede, "Well, I guess we're back, then,
 	aren't we?"	<p />
 	<p />But, for a band that, since
@@ -9460,7 +9460,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	"I don't know," says Fish. "I think we get on pretty well."
 	</div>
 	<p />
-	My earlier interview with Max Eider included his memories of a night in Z&uuml;rich, when the
+	My earlier interview with Max Eider included his memories of a night in Zürich, when the
 	guitarist made one of his many spirited, but ill-fated, attempts to leave the band.
 	<div class="iview_a">
 	"Ah," Fish says.
@@ -9490,7 +9490,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	<p />
 	There's been a kind of purity to the career of the Jazz Butcher group: Fish, Owen Jones and Eider
 	have never married. None has children. None has a real job (though Jones, whose girlfriend lives in
-	Hamburg, gardens for the novelist G&uuml;nter Grass). Their healthy contempt for the forces of
+	Hamburg, gardens for the novelist Günter Grass). Their healthy contempt for the forces of
 	conservatism has survived undimmed, and in the studio, as in life, they passionately berate its
 	various incarnations - Thatcher, Blair, Tesco and Railtrack.
 	<p />
@@ -9827,16 +9827,16 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	<p />
 	While this album is
 	not as consistently enjoyable as <I>Fishcotheque </I>or <I>A Scandal in
-	Bohemia</I>, it&#146;s still a lot of fun. Many of the songs are written
+	Bohemia</I>, it's still a lot of fun. Many of the songs are written
 	in a hotel-lounge-bar-blues fashion, which effectively plays against the
-	cynicism of songs like &#147;Domestic Animal&#148; and &#147;Who Loves You
-	Now?&#148; And the songs that rock do so with a very particular, British
-	wit: &#147;Big Bad Thing&#148; is rendered hilarious by its &#147;Vut you
-	vant?&#148; shouts, while &#147;Hungarian Love Song&#148; is an amusing
+	cynicism of songs like “Domestic Animal” and “Who Loves You
+	Now?” And the songs that rock do so with a very particular, British
+	wit: “Big Bad Thing” is rendered hilarious by its “Vut you
+	vant?” shouts, while “Hungarian Love Song” is an amusing
 	cannibalism number in the same vein as that Monty Python sketch where the
 	sailors all insist that they be the ones eaten in case of trouble. Ballads
-	&#147;The New World&#148; and &#147;Angels&#148; really go nowhere, however,
-	and bland sideman Eider shouldn&#146;t be allowed to sing, but the winners
+	“The New World” and “Angels” really go nowhere, however,
+	and bland sideman Eider shouldn't be allowed to sing, but the winners
 	still outnumber the losers. <B>Grade: B</B>
 	</div>
 	<div class="listItem">
@@ -11114,9 +11114,9 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	<p />
 		Everyone was still a bit weary from the night before, not to
 	 mention getting up at an unGodly hour to watch football. The
-	 drive was long, but we reached N&uuml;remberg  in about 6 hours or
+	 drive was long, but we reached Nüremberg  in about 6 hours or
 	 so. The initial plan was to go straight on to Munich, but Pat's
-	 judgment at N&uuml;remberg  (pun intended) was to stay the night and
+	 judgment at Nüremberg  (pun intended) was to stay the night and
 	 pick up the additional two hours or so the next day.
 	<p />
 		The hotel we stayed at was French, and had all of the modern
@@ -11810,7 +11810,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<div class="iview_q">What can you tell me about your time together on that ride?
 	</div>
 	<div class="iview_a">
-	This was at the end of 1984 and what you have to understand about the trip was&mdash;for everyone in the group except David&mdash;it was the first time they'd ever played outside of England. So there we are, steaming into countries that I personally hadn't visited thus far; Holland and Germany. I knew nothing of these places at all. We got there and we were at a stage in what we jokingly call our "career" where we were being treated to hospitality at our English gigs. We very quickly discovered, however, that what we had experienced so far didn't even register on the scale of German hospitality. Obviously, being as it was our first time out there and that the Germans had been extremely nice to us, we went about our work with enthusiasm. Let's say that.
+	This was at the end of 1984 and what you have to understand about the trip was - for everyone in the group except David - it was the first time they'd ever played outside of England. So there we are, steaming into countries that I personally hadn't visited thus far; Holland and Germany. I knew nothing of these places at all. We got there and we were at a stage in what we jokingly call our "career" where we were being treated to hospitality at our English gigs. We very quickly discovered, however, that what we had experienced so far didn't even register on the scale of German hospitality. Obviously, being as it was our first time out there and that the Germans had been extremely nice to us, we went about our work with enthusiasm. Let's say that.
 	</div>
 	<div class="iview_q">What is that like, living the schedule of the traveling musician? Playing a show, drinking all night, getting up, drinking some more? Do you need to prepare for it?
 	</div>
@@ -11820,12 +11820,12 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<div class="iview_q">What are the mistakes that people generally make?
 	</div>
 	<div class="iview_a">
-	Well, they neglect to remember that when one drinks liquor, one is in a small way poisoning one's self. If one goes at it with too much enthusiasm and too much free vodka, over too many weeks&mdash;night, by night, by night&mdash;one will make one's self unwell. And quite possibly a bit paranoid!
+	Well, they neglect to remember that when one drinks liquor, one is in a small way poisoning one's self. If one goes at it with too much enthusiasm and too much free vodka, over too many weeks - night, by night, by night - one will make one's self unwell. And quite possibly a bit paranoid!
 	</div>
 	<div class="iview_q">What was it like for you when you first went out as a band? Did you have people wanting to buy you drinks after the show, or wanting to hang out?
 	</div>
 	<div class="iview_a">
-	Initially there weren't too many people trying to be our friends. On the very first trip to Germany I do remember trying to have my supper while an enthusiastic new admirer&mdash;male&mdash;was kneeling on the restaurant floor at my feet. That was a little tiresome. I said to my manager, "Can we lose this idiot?" He looked at me and said, "I'm having my dinner." And I said, "Yeah, me too. That's the point!" Actually, on that first trip in 1984&mdash;apart from a run-in I had with a bottle of Cointreau on the ferry to Holland, which resulted in my entering Holland completely unaware of that fact&mdash;we were fairly restrained. In later years we got better at it.
+	Initially there weren't too many people trying to be our friends. On the very first trip to Germany I do remember trying to have my supper while an enthusiastic new admirer - male - was kneeling on the restaurant floor at my feet. That was a little tiresome. I said to my manager, "Can we lose this idiot?" He looked at me and said, "I'm having my dinner." And I said, "Yeah, me too. That's the point!" Actually, on that first trip in 1984 - apart from a run-in I had with a bottle of Cointreau on the ferry to Holland, which resulted in my entering Holland completely unaware of that fact - we were fairly restrained. In later years we got better at it.
 	</div>
 	<div class="iview_q">Drinking plays a big part in your songwriting. It's clear when listening to The Jazz Butcher that you haven't had to get off the wagon. You still like to drink.
 	</div>
@@ -11835,12 +11835,12 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<div class="iview_q">Do you see yourself as a professional drinker who happens to play music, or a professional musician who happens to drink?
 	</div>
 	<div class="iview_a">
-	I think of myself as a songwriter/musician who enjoys a drink. I drink every day. At my age&mdash;I'm in my mid-50s&mdash;I've heard enough stories about hardened drinkers who stopped drinking and went into a sort of shock heart attack and died. I would fear to go a day without any beer at all. I'd be frightened.
+	I think of myself as a songwriter/musician who enjoys a drink. I drink every day. At my age - I'm in my mid-50s - I've heard enough stories about hardened drinkers who stopped drinking and went into a sort of shock heart attack and died. I would fear to go a day without any beer at all. I'd be frightened.
 	</div>
 	<div class="iview_q">What are your favorites?
 	</div>
 	<div class="iview_a">
-	My staple&mdash;which I take in large quantities every single day&mdash;would be pilsner. Ideally, actual geographically pilsner beer from the Czech Republic. Generally, I'll enjoy pilsner every evening, but every now and again one does make forays into the darker woods. When we were lads on the road we used to order up or be given loads and loads of quality vodka. But that sort of spirits drinking I'm just not up for anymore. I'm more of an occasional tippler when it come that stuff, but I do get sudden enthusiasms for obscure liqueurs from time to time. I used to drive the landlord of my local bar absolutely mad by insisting that he order them in. 
+	My staple - which I take in large quantities every single day - would be pilsner. Ideally, actual geographically pilsner beer from the Czech Republic. Generally, I'll enjoy pilsner every evening, but every now and again one does make forays into the darker woods. When we were lads on the road we used to order up or be given loads and loads of quality vodka. But that sort of spirits drinking I'm just not up for anymore. I'm more of an occasional tippler when it come that stuff, but I do get sudden enthusiasms for obscure liqueurs from time to time. I used to drive the landlord of my local bar absolutely mad by insisting that he order them in. 
 	</div>
 	<div class="iview_q">I think the more you enjoy drinking, the more curious you eventually get. You hear about something new, you want to try it. That's the nature of drinking for those who really like doing it.
 	</div>
@@ -11860,14 +11860,14 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<div class="iview_q">(laughs) HA! Right, it's basically the same idea, but with sugar.
 	</div>
 	<div class="iview_a">
-	I'm also very fond of the obscure German K&uuml;mmel.
+	I'm also very fond of the obscure German Kümmel.
 	</div>
 	<div class="iview_q">All of these drinks are making a big comeback right now; the amari and herbal liqueurs. Cocktail culture is gobbling them up.
 	</div>
 	<div class="iview_a">
-	Last time I was in Dortmund&mdash;about two years ago&mdash;I went to a bar where they were handing out free glasses of K&uuml;mmel, in these beautiful, 18th century-like tiny glasses. And they were coming around for nothing.
+	Last time I was in Dortmund - about two years ago - I went to a bar where they were handing out free glasses of Kümmel, in these beautiful, 18th century-like tiny glasses. And they were coming around for nothing.
 	<p />
-	That's a style of drinking that has never really caught on in the U.S.&mdash;the whole German thing of mixing beer with various shots of schnapps or digestive liqueurs. It seemed like it might make a run here in the Bay Area with the whole shot and a beer culture&mdash;replacing the whiskey for Fernet Branca&mdash;but that was more about getting fucked up, than adding to the enjoyment of the experience. I think it was more like a dare, rather than something most folks wanted to do. When I lived in Germany it wasn't something competitive. We would mix and match for hours.
+	That's a style of drinking that has never really caught on in the U.S. - the whole German thing of mixing beer with various shots of schnapps or digestive liqueurs. It seemed like it might make a run here in the Bay Area with the whole shot and a beer culture - replacing the whiskey for Fernet Branca - but that was more about getting fucked up, than adding to the enjoyment of the experience. I think it was more like a dare, rather than something most folks wanted to do. When I lived in Germany it wasn't something competitive. We would mix and match for hours.
 	<p />
 	<p />
 	Right, every now and again the barman just comes around with a little free round of something. It's very festive. I'm not really a British style of drinker. I do not believe the purpose of drinking is to get drunk. I see getting drunk as an annoying side effect.
@@ -11881,7 +11881,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<div class="iview_q">That happened to me yesterday. I drank a whole bunch of wine and had reached my limit, but there was still an hour left in the movie I was watching. I was really annoyed because that meant I couldn't continue to drink for the rest of the film.
 	</div>
 	<div class="iview_a">
-	It's a tricky thing sometimes. I think it's the culture of people who <em>don't</em> drink, isn't it? They think that the purpose of drinking is to get drunk. And I think some of it comes from Scandinavia, where they put a heavier tax on alcohol. If you ever visit the town of L&uuml;beck on the Baltic Coast of Germany on a summer's afternoon, you'll find yourself stepping over the bodies of Swedish tourists who got on the boat over and had a run-in with German liquor prices. By the time they hit Germany itself they're unable to fucking walk. Of course they go home, they have the mother of all hangovers, they feel dirty and guilty and grimy, as one does after such an experience, and they conclude, "Ja, drinking is bad." So they stick another ten pounds on the price of a fucking pint, which only makes them go crazier the next time they step on the ferry.
+	It's a tricky thing sometimes. I think it's the culture of people who <em>don't</em> drink, isn't it? They think that the purpose of drinking is to get drunk. And I think some of it comes from Scandinavia, where they put a heavier tax on alcohol. If you ever visit the town of Lübeck on the Baltic Coast of Germany on a summer's afternoon, you'll find yourself stepping over the bodies of Swedish tourists who got on the boat over and had a run-in with German liquor prices. By the time they hit Germany itself they're unable to fucking walk. Of course they go home, they have the mother of all hangovers, they feel dirty and guilty and grimy, as one does after such an experience, and they conclude, "Ja, drinking is bad." So they stick another ten pounds on the price of a fucking pint, which only makes them go crazier the next time they step on the ferry.
 	</div>
 	<div class="iview_q">Yeah, raising prices on alcohol doesn't discourage drinking, in my opinion. You can ask the NFL about that here in America. People just get shit-housed in the parking lot before the game instead of paying for expensive beer in the stadium.
 	</div>
@@ -11901,7 +11901,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<div class="iview_q">Please do!
 	</div>
 	<div class="iview_a">
-	We drank it in the 80s chiefly because we could&mdash;as a band we were getting riders&mdash;and we drank it in part because we were little lefties. We thought vodka was cool, and whiskey wasn't.
+	We drank it in the 80s chiefly because we could - as a band we were getting riders - and we drank it in part because we were little lefties. We thought vodka was cool, and whiskey wasn't.
 	</div>
 	<div class="iview_q">It's amazing how that's flipped around since then!
 	</div>
@@ -11911,12 +11911,12 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<div class="iview_q">What would you say if you were condescended to in a bar when you ordered a vodka drink, though? That's kind of what's happened in California over the last few years.
 	</div>
 	<div class="iview_a">
-	It is a bit like the comedian going into the bar, ordering a pint, and not getting any further. I'm very fond of Stolichnaya&mdash;it was a big part of my youth. For just regular guzzling vodka we would generally stick with Soviet produce, but I grew very fond of Polish vodkas as well&mdash;Wyborowa, particularly. We were once in New Hampshire, in 1986 would you believe, and we found the Wyborowa Black. The motto for New Hampshire is "Live Free or Die", you know, and they've got this massive liquor store right on the freeway with cheap prices, and as you drive on they've got this big billboard that says, "If you see someone drinking and driving call 1-800-HERO!!" We were in this store, however, and it tickled us to death because it resembled nothing more than the stores you would see on the motorway in East Germany. When you had to go to Berlin&mdash;it was an enclave, cut off, and you had to drive through East Germany&mdash;for a gig there you had to get visa-ed up, enter, and then drive on this special motorway. 
+	It is a bit like the comedian going into the bar, ordering a pint, and not getting any further. I'm very fond of Stolichnaya - it was a big part of my youth. For just regular guzzling vodka we would generally stick with Soviet produce, but I grew very fond of Polish vodkas as well - Wyborowa, particularly. We were once in New Hampshire, in 1986 would you believe, and we found the Wyborowa Black. The motto for New Hampshire is "Live Free or Die", you know, and they've got this massive liquor store right on the freeway with cheap prices, and as you drive on they've got this big billboard that says, "If you see someone drinking and driving call 1-800-HERO!!" We were in this store, however, and it tickled us to death because it resembled nothing more than the stores you would see on the motorway in East Germany. When you had to go to Berlin - it was an enclave, cut off, and you had to drive through East Germany - for a gig there you had to get visa-ed up, enter, and then drive on this special motorway. 
 	</div>
 	<div class="iview_q">I've heard stories about that, yes.
 	</div>
 	<div class="iview_a">
-	On the East German leg through Communist World, they had these service stations called Intershop (says with heavy accent). And Intershop was the love of our lives! Not only were we helping to maintain the class struggle, but they were selling Scotch whisky cheaper than anywhere in Scotland, and Marlboro cigarettes for cheaper than you could find them in Virginia. It was a hard currency grab. As long as you paid in Western currency they would sell it to you cheap. So when we saw the shop in New Hampshire we said, "Wow! This is great! They have them in America, too!" So I bought a bottle of this other Polish vodka and brought it back&mdash;because I thought it had this beautiful little box&mdash;and when I got home I pulled the bottle out and looked at the little tag around the neck. On there was a little message that said, "Thank you America for the potato." (says in Polish accent). I thought that was really sweet. Max and I ended up drinking the bottle of Wyborowa Black on the balcony of our hotel in Toronto and it was great.
+	On the East German leg through Communist World, they had these service stations called Intershop (says with heavy accent). And Intershop was the love of our lives! Not only were we helping to maintain the class struggle, but they were selling Scotch whisky cheaper than anywhere in Scotland, and Marlboro cigarettes for cheaper than you could find them in Virginia. It was a hard currency grab. As long as you paid in Western currency they would sell it to you cheap. So when we saw the shop in New Hampshire we said, "Wow! This is great! They have them in America, too!" So I bought a bottle of this other Polish vodka and brought it back - because I thought it had this beautiful little box - and when I got home I pulled the bottle out and looked at the little tag around the neck. On there was a little message that said, "Thank you America for the potato." (says in Polish accent). I thought that was really sweet. Max and I ended up drinking the bottle of Wyborowa Black on the balcony of our hotel in Toronto and it was great.
 	</div>
 	<div class="iview_q">You guys just sipped it straight?
 	</div>
@@ -11926,7 +11926,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<div class="iview_q">So you appreciate the different flavors, textures, and nuances of vodka?
 	</div>
 	<div class="iview_a">
-	Yeah, you get up the Baltic way&mdash;you see it with Absolut&mdash;and the vodka's really syrupy and rich. It's not sweet, but there's a definitely difference in what people call mouthfeel. In our local Ukrainian club they have a Ukrainian cherry-flavored vodka that is absolutely delicious. You cannot have one glass. In fact, you cannot stop at all. But the hangover this bastard produces&mdash;you can feel the gravel in your stomach. I dare say the cherries were grown next to Chernobyl. 
+	Yeah, you get up the Baltic way - you see it with Absolut - and the vodka's really syrupy and rich. It's not sweet, but there's a definitely difference in what people call mouthfeel. In our local Ukrainian club they have a Ukrainian cherry-flavored vodka that is absolutely delicious. You cannot have one glass. In fact, you cannot stop at all. But the hangover this bastard produces - you can feel the gravel in your stomach. I dare say the cherries were grown next to Chernobyl. 
 	</div>
 	<div class="iview_q">You mentioned drinking vodka with Max Eider, your partner in The Jazz Butcher. Who are some other folks you ran into on the road that were as up for the challenge as you?
 	</div>
@@ -11941,12 +11941,12 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<div class="iview_q">What was the drink of choice for that particular challenge? 
 	</div>
 	<div class="iview_a">
-	Stoli. Their representative and ours&mdash;which was me&mdash;had a liter bottle of Stoil each. It was just brutal. There was no sophistication about this. I went into the dressing room after we had done the gig. I must have had about a third of the bottle in one go. I put it down, looking at this Hungarian tour manager&mdash;who was probably only about 24&mdash;and I said, "There you go, son." But I was completely out of my league. He picked up his own bottle of Stoli and did the whole thing without stopping. An entire liter.
+	Stoli. Their representative and ours - which was me - had a liter bottle of Stoil each. It was just brutal. There was no sophistication about this. I went into the dressing room after we had done the gig. I must have had about a third of the bottle in one go. I put it down, looking at this Hungarian tour manager - who was probably only about 24 - and I said, "There you go, son." But I was completely out of my league. He picked up his own bottle of Stoli and did the whole thing without stopping. An entire liter.
 	</div>
 	<div class="iview_q">Jesus, that's like something out of a movie!
 	</div>
 	<div class="iview_a">
-	Our lot, they're all ferocious drinkers, but we were out of our league in Hungary. Other bands who like a drink? There was a terrible cultural collision&mdash;the ripples of which are still being felt around the world&mdash;when we met Camper Van Beethoven in Cleveland many years ago. Ultimate drunkeness. Ultimate "you're bloody family!" (says in loud slurring voice) "I bloody love you! Arghhh&hellip;" Absolutely flapping mental. We got on really well and we knew we would. We liked their music, they liked ours, and so when we met we knew it was going to be a party. My memories from then are like badly-taken 1970s Instamatic photographs. 
+	Our lot, they're all ferocious drinkers, but we were out of our league in Hungary. Other bands who like a drink? There was a terrible cultural collision - the ripples of which are still being felt around the world - when we met Camper Van Beethoven in Cleveland many years ago. Ultimate drunkeness. Ultimate "you're bloody family!" (says in loud slurring voice) "I bloody love you! Arghhh..." Absolutely flapping mental. We got on really well and we knew we would. We liked their music, they liked ours, and so when we met we knew it was going to be a party. My memories from then are like badly-taken 1970s Instamatic photographs. 
 	</div>
 	<div class="iview_q">And those experiences build comradery. That's how you bond, right? You meet up after the show and you make friends over a drink.
 	</div>
@@ -12001,7 +12001,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<p />The dynamism of past releases like the brilliant <i>A Scandal in Bohemia</i> is nowhere to be found on <i>The Last of the Gentleman Adventurers</i>, but that’s probably for the best. Fish is too wise of a songwriter to try and recapture past glories. Instead, his songs here are more meditative than one would expect. Even more rollicking tracks like “Shame About You” have a fairly easygoing bent. Aside from “Solar Core,” which is the closest Fish has come to writing a straightforward rock song, the Jazz Butcher remains a mostly subdued ensemble throughout.	<p />
 	<p />Lyrically, Fish remains focused on the misfits and booze-soaked weirdos that have always popped up in his work over the years, but they appear here with a sense of resignation about them. The speaker of the title track laments a world that seems to have passed him by, yet he refused to give in and get with the times. On “All the Saints", Fish’s venom stings the most as he wonders how the risk-averse self-chronicling Internet generation can ever truly experience life. Rather than try to chase youth, Fish seems quite comfortable with where he is now.	<p />
 	<p />He also sounds more comfortable on a six-string than ever. <i>The Last of the Gentleman Adventurers</i> is, somewhat surprisingly, very much a guitar-focused album. Fish was always an incomparable talent, but he and fellow Jazz Butcher Max Eider put on a show. Their work recalls some elements of Richard Thompson, though Fish is far less influenced by traditional folk. Instead, his languid playing on “Shame About You” could best be characterized as a jazz-rock hybrid with fewer unnecessary fireworks, while his work on “Black Raoul” is almost as threatening and enticing as the title character.	<p />
-	<p /><i>The Last of the Gentleman Adventurers</i> doesn’t aim to please everyone, and it’s arguable that Pat Fish doesn’t have much left to prove in music. Rumors are that this will be the last Jazz Butcher album, though that&#8212;like everything to do with the band&#8212;is subject to Fish’s whims. If this is to be the final bow of the Jazz Butcher, it’s a fittingly dignified exit. Its pleasures slowly unfold with repeated listens as you catch previously unheard licks or mis-remembered turns of phrase. In short, it’s the Jazz Butcher doing what they do best, and that’s almost certainly worth giving a try.	<p />
+	<p /><i>The Last of the Gentleman Adventurers</i> doesn’t aim to please everyone, and it’s arguable that Pat Fish doesn’t have much left to prove in music. Rumors are that this will be the last Jazz Butcher album, though that - like everything to do with the band - is subject to Fish’s whims. If this is to be the final bow of the Jazz Butcher, it’s a fittingly dignified exit. Its pleasures slowly unfold with repeated listens as you catch previously unheard licks or mis-remembered turns of phrase. In short, it’s the Jazz Butcher doing what they do best, and that’s almost certainly worth giving a try.	<p />
 <b>7/10</b>
    )})}
 	${jbc_footer}
@@ -12055,7 +12055,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 	<p />But if you're new to the Jazz Butcher and unwilling to pay for that rare first pressing of <I>Fishcotheque</I>, <I>Draining The Glass</I> is a good place to start. This anthology collects tracks from the Jazz Butchers' earlier incarnation, which in retrospective features the clever arrangements of '80s Britpop acts like the Smiths with the psychedelic dark humor of Robyn Hitchcock. Still, the band was its own complex beast, with Pat Fish (aka the Jazz Butcher) and his strong croon easily recognizable features.	<p />
 	<p />The twenty tracks here highlight the range the band possessed, from the spiky slash of "Marnie" to the Tin Pan Alley-sounding "D.R.I.N.K.". The jazzier moments are clearly audible in the sensible and sardonical "Partytime" ("This is party time / and it's good to drink for free when you haven't any money / This is party time / and it's better than a cold bath with someone you dislike"), or the tiki-twilight tones of "The Human Jungle." The darker moments come in the form of the thrumming "Caroline Wheeler's Birthday Present," apparently made from the skin of dead Jim Morrisons. In between we get moments of genuine British pop, like "Big Saturday," with its chiming guitar line or the reverberation of "Girlfriend." And there are songs like "President Reagan's Birthday Present," with a slow insinuating build-up and a hypnotic "the Russians shot my rocket down" chorus.	<p />
 	<p />Perhaps that's the reason that the Jazz Butcher seems to be largely neglected by most, and largely appreciated by a small but fervent fan base. The all-over-the-place nature of the music on here is somewhat unsettling at first (later output was a bit more musically consistent, if just as twisted) but the style is clearly unique to the Jazz Butcher. Together with <i>excellent!</i> (which contains latter-day material), it's a virtual roadmap of a long-time favorite.	<p />
-	<p />Fire Records: <a href="http://www.firerecords.com/">http://www.firerecords.com/</a> &bull; The Jazz Butcher: <a href="http://www.jazzbutcher.com/">http://www.jazzbutcher.com/</a>	<p />
+	<p />Fire Records: <a href="http://www.firerecords.com/">http://www.firerecords.com/</a> • The Jazz Butcher: <a href="http://www.jazzbutcher.com/">http://www.jazzbutcher.com/</a>	<p />
    )})}
 	${jbc_footer}
 #live	endif
@@ -12283,7 +12283,7 @@ The Highest in the Land is out on Friday via Tapete.
 	You have a French song on the album. Why is that?
 	<p />
 	<p class="iview_a">
-	Ah, well (laughing).  A long, long, long time ago, we wrote a song called La Mer. And that was in French.  And we were talking about the idea of maybe.. re-recording that, and trying to put out a record for French people.  So, I thought "we need a B-side".  And.. I don't know much French.  The only thing I could think of was - my friend has just come from Bordeaux and he said that - when they're in Bordaeux and they've had a few too many, they say 'ah.. Tomb&eacute; dans les pommes" and I thought: "ok! title!"
+	Ah, well (laughing).  A long, long, long time ago, we wrote a song called La Mer. And that was in French.  And we were talking about the idea of maybe.. re-recording that, and trying to put out a record for French people.  So, I thought "we need a B-side".  And.. I don't know much French.  The only thing I could think of was - my friend has just come from Bordeaux and he said that - when they're in Bordaeux and they've had a few too many, they say 'ah.. Tombé dans les pommes" and I thought: "ok! title!"
 	<p />
 	<p class="iview_q">
 	There is also another song written by Max, full of feelings. He's asking if you already miss Max.
@@ -12504,14 +12504,14 @@ Tuesday, 16th September, 2003<br />
 </div>
   <p />
 	  When 
-		six of Northampton&#146;s top musicians gather to form a &#145;super&#146; 
+		six of Northampton's top musicians gather to form a 'super' 
 		group, what do you get? Why Wilson, a dub rock outfit of course!  
 		<p />With 
 		  comparisons ranging from the rocky side of Primal Scream, the bounce 
 		  and beats of the Happy Mondays and elements of Alabama 3 and Stereo 
-		  MCs, Wilson&#146;s sound is rich in depth and diversity.	<p />
+		  MCs, Wilson's sound is rich in depth and diversity.	<p />
 		<p />For 
-		  a project that originally started out as a solo &#145;thing&#146; 
+		  a project that originally started out as a solo 'thing' 
 		  a few years back, the band has certainly developed into a great 
 		  musical outfit.	<p />
 		<p />Formed 
@@ -12528,15 +12528,15 @@ Tuesday, 16th September, 2003<br />
 		  shows and getting their sound produced on CD.	<p />
 		<p />Gigs 
 		  so far have included venues in Leeds and Cambridge alongside their 
-		  most likely local haunt at The Racehorse in Northampton&#146;s Abington 
+		  most likely local haunt at The Racehorse in Northampton's Abington 
 		  Square.	<p />
 		<p />And 
-		  it&#146;s not only the live shows which the band prove to have a 
+		  it's not only the live shows which the band prove to have a 
 		  control over. 	<p />
 		<p />Recent 
 		  workings in the studio saw Juilain Cope guitarist and producer, 
 		  Donald Ross-Skinner at the controls for the production of tracks 
-		  by the band at London&#146;s Notepad studio.	<p />
+		  by the band at London's Notepad studio.	<p />
 		<p />Wilson 
 		  have built up quite a collection of material and recorded a selection. 
 		  They are influenced by a variety of artists, ranging from Cypress 
@@ -12770,7 +12770,7 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 #live	if (getval(page) = 19900308_press.html)
 	${extractPress(
 		body=${literalizeCommas(
-	Vuelven a consolidarse las parejas como formacion ideal de conveniencia, A&uacute;n y estando en una discograf&iacute;a llamada "Creation", a THE JAZZ BUTCHER le ha resultado harto dif&iacute;cil encontrar a su otra costilla, por mucho que en su profesi&oacute;n se est&eacute; acostumbrado a partirlas. Keith Jones, el hombre que se parapeta tras la bata de carnicero del jazz, es un tipo m&aacute;s bien dif&iacute;cil. Varios musicos han pasado por su establecimiento desde 1982 en que publica su primer disco, donde incluye una cancion dedicada a su idolo: el actor Peter Lorre. Los instrumentistas parece ser que se cansaban de sus devaneos filosoficos y optaban por emigrar as otras bandas como los Woodentops, Bauhaus y Love and Rockets. El carnicero por fin esta de suerte. Ha encontrado a la persona adecuada para poner el contrapunto sonoro a sus ironicas composiciones. Kizzy Monaghan es un tormentoso guitarrista que a la vez respafida con su voz el contenido de quinto album de The Jazz Butcher, titulado "Fishcotheque".
+	Vuelven a consolidarse las parejas como formacion ideal de conveniencia, Aún y estando en una discografía llamada "Creation", a THE JAZZ BUTCHER le ha resultado harto difícil encontrar a su otra costilla, por mucho que en su profesión se esté acostumbrado a partirlas. Keith Jones, el hombre que se parapeta tras la bata de carnicero del jazz, es un tipo más bien difícil. Varios musicos han pasado por su establecimiento desde 1982 en que publica su primer disco, donde incluye una cancion dedicada a su idolo: el actor Peter Lorre. Los instrumentistas parece ser que se cansaban de sus devaneos filosoficos y optaban por emigrar as otras bandas como los Woodentops, Bauhaus y Love and Rockets. El carnicero por fin esta de suerte. Ha encontrado a la persona adecuada para poner el contrapunto sonoro a sus ironicas composiciones. Kizzy Monaghan es un tormentoso guitarrista que a la vez respafida con su voz el contenido de quinto album de The Jazz Butcher, titulado "Fishcotheque".
 	<p />
 	Con una gran carga de sarcasmo, tipicamente britanico, acostumbra presentar a su banda en directo, (incluyendo al chofer de la furgoneta) como la Conspiracion. Se sirve de la herencia vocal de un Lou Reed campestre y jovial, at igual que en su dia to hiciera Lloyd Cole, aunque desde su vertiente mas obscura.
 	<p />
@@ -12815,7 +12815,7 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 #live	if (getval(page) = 20170406_lastdaydeaf.html)
 	${extractPress(
 		body=${literalizeCommas(
-	<p class="iview_intro">Formed in Oxford in 1982, The Jazz Butcher Quartet (or The Jazz Butcher, The Jazz Butcher Conspiracy, The Jazz Butcher And His Sikkorskis From Hell) are of those best kept secrets for real fans &amp; followers of underground movement. Alan McGee's Creation, David E. Barker's Glass Records &amp; Vinyl Japan are three of the labels  that have "invested" on this immaculate band, whose founder Pat Fish remains a dedicated music poet totally irrespective to today's music biz. Their comeback album &#8216;Last Of The Gentleman Adventurers' finds the quartet in its best form ready to hit <a href="${jbc_gigs}/2017/Apr8_2000.html">The Continental stage on April 8th, along with The Jasmine Minks</a>...	<p />
+	<p class="iview_intro">Formed in Oxford in 1982, The Jazz Butcher Quartet (or The Jazz Butcher, The Jazz Butcher Conspiracy, The Jazz Butcher And His Sikkorskis From Hell) are of those best kept secrets for real fans & followers of underground movement. Alan McGee's Creation, David E. Barker's Glass Records & Vinyl Japan are three of the labels  that have "invested" on this immaculate band, whose founder Pat Fish remains a dedicated music poet totally irrespective to today's music biz. Their comeback album ‘Last Of The Gentleman Adventurers' finds the quartet in its best form ready to hit <a href="${jbc_gigs}/2017/Apr8_2000.html">The Continental stage on April 8th, along with The Jasmine Minks</a>...	<p />
 	<p class="iview_q">So Pat, feel free to inform us about the latest news about The Jazz Butcher Quartet…	<p />
 	<p class="iview_a">We’re just very happy to be up and playing again. It’s been a year since we lost Steve Garofalo and at times it felt as though the whole beautiful Quartet adventure was over. Everything had been going really well for us, and then it was all shattered by poor Steve’s demise. But we have re-grouped, enlisted a brilliant and conspicuously youthful drummer and we’re coming back out. We are looking forward to playing Preston so much, you would not believe it.	<p />
 	<p class="iview_q">What made you reform the band after a 12-year hiatus (2000-2012)? 	<p />
@@ -12826,11 +12826,11 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 	<p class="iview_q">On April 8<sup>th</sup> you are appearing live at the New Continental along with The Jasmine Minks. What should we expect? Any new tunes?	<p />
 	<p class="iview_a">We’re thoroughly looking forward to it. There will be tunes from ‘Last Of The Gentleman Adventurers’, there will be tunes as yet unrecorded and there will be some old tunes, some of them very old indeed. But you won’t have heard them played this way before.	<p />
 	<p class="iview_q">From Thatcherism to Brexit! What has Jazz Butcher to state about these? Is your art influenced by socio-political change/instability? 	<p />
-	<p class="iview_a">In 1989 ${mercer} wrote in a review of one of our records “Good old Butch – bringing you tomorrow’s shit &#8211; today!” Bless him. The bizarre and incessant spite of the wealthy towards ordinary people has always been a constant irritant. Sometimes we treat the matter lightly, try to mock the mediocre clowns who run our country like a government of occupation. Other times, being reasonable people, we feel obliged to do a bit more screaming and shouting.	<p />
+	<p class="iview_a">In 1989 ${mercer} wrote in a review of one of our records “Good old Butch – bringing you tomorrow’s shit  -  today!” Bless him. The bizarre and incessant spite of the wealthy towards ordinary people has always been a constant irritant. Sometimes we treat the matter lightly, try to mock the mediocre clowns who run our country like a government of occupation. Other times, being reasonable people, we feel obliged to do a bit more screaming and shouting.	<p />
 	<p class="iview_q">Your first two albums were released by the seminal indie label Glass Records. Is there anything special you’d like to share with our readers from this period? How was the relationship with owner David Barker?	<p />
 	<p class="iview_a">Indeed, Dave released our first four LPs. He took us from a shambling mess in the back room of the Black Lion in Northampton all the way to sold-out shows at the Roxy in LA, via a roller coaster of mad European tours, on which he would often join us. He used to feed us cassettes, steering our impressionable young minds in the right direction. He paid for us to muck about in recording studios and brought us the lives that we have had. He is also extremely funny. D. Elvis Barker is a genuine unsung hero of British rock and roll.	<p />
 	<p class="iview_q">Continuing specifically your 1984’s ‘A Scandal In Bohemia’ featured guest appearances from David J and Kevin Haskins of Bauhaus. How was the collaboration like?	<p />
-	<p class="iview_a">Kev didn’t play on ‘A Scandal In Bohemia’, though he did play on a couple of our records. We last played together at some gigs in LA in 2009. He is still very handsome. Vegan diet probably helps. It was Kevin whom I got to know first, just socially in Northampton. Dave was probably checking it all out from his secret Antarctic Headquarters. When we did meet, we both knew that we should do something. The original plan was that he should produce ‘A Scandal In Bohemia’. After a very strange three month period of bass-player rustling too complicated to relate here, he ended up joining the band as our bass player, in which capacity he ended up doing ‘...Scandal..’ and the follow-up ‘Sex &amp; Travel’. After the making of that record he went off to start Love &amp; Rockets, but we have remained good pals and collaborators to this day. I’m hoping to be playing some shows with him in France and perhaps London later this year.	<p />
+	<p class="iview_a">Kev didn’t play on ‘A Scandal In Bohemia’, though he did play on a couple of our records. We last played together at some gigs in LA in 2009. He is still very handsome. Vegan diet probably helps. It was Kevin whom I got to know first, just socially in Northampton. Dave was probably checking it all out from his secret Antarctic Headquarters. When we did meet, we both knew that we should do something. The original plan was that he should produce ‘A Scandal In Bohemia’. After a very strange three month period of bass-player rustling too complicated to relate here, he ended up joining the band as our bass player, in which capacity he ended up doing ‘...Scandal..’ and the follow-up ‘Sex & Travel’. After the making of that record he went off to start Love & Rockets, but we have remained good pals and collaborators to this day. I’m hoping to be playing some shows with him in France and perhaps London later this year.	<p />
 	<p class="iview_q">You have released 7 albums in the row through Alan McGee’s Creation label. What can you recall from this era? Would you collaborate again if there was a possibility?	<p />
 	<p class="iview_a">Recall? From Creation? Have you not read the books? Seen the fillum? No, I jest, obviously. I love Alan McGee. And I remember everything. It was a great time. We assembled a great little band. If we weren’t in the recording studio or the rehearsal room, we were out playing gigs all over the world. Eventually we made a couple of good records, too. ‘Cult Of The Basement’ and ‘Condition Blue’ are two of my favourite Jazz Butcher records. I can’t see much future in Alan and me collaborating on anything serious right now. He’s looking after The Jesus And Mary Chain and Black Grape and plenty besides. That said, I really wouldn’t mind playing that little chapel he’s got down in Wales. We have talked about it. Maybe one day.	<p />
 	<p class="iview_q">Your sound has been tagged under indie pop/jangle pop genre. Would you agree on this? 	<p />
@@ -13018,7 +13018,7 @@ The eight titles of Sex & Travel were recorded (in five days!) In Leamington in 
 	${extractPress(
 		body=${literalizeCommas(
 	<h3>Original German</h3>
-	Ber&uuml;hmt waren die Achtzigerjahre auch als jene Zeit, in der man es als Musiker schon weit bringen konnte, wenn man nur &uuml;ber den richtigen Geschmack verf&uuml;gte. Im Zitatpop z&auml;hlte vor allem, welche Platten man gut fand. Die britische Gitarrenband The Jazz Butcher fand, anders als ihr Name nahelegt, damals vor allem den herzerw&auml;rmenden Pop der sp&auml;ten Velvet Underground gut oder des damals noch jungen Jonathan Richman. Bands, die sich am Feuer ihrer Heiden w&auml;rmten, gab es damals viele, and man fragt sich heute: Was ist nur aus ihnen allen geworden? The Jazz Butcher haben einfach immer weitergemacht. Zuletzt brachten sie 2012 ein Album in kleiner Auflage selbst heraus. Jetzt wurde „Last of the Gentleman Adventurers" vom Indie-Label Fire Records noch einmal neu aufgelegt. Und man muss sagen: So eine exquisite Suite sonnendurchfluteter Popst&uuml;cke hat man lange nicht geh&ouml;rt. THOMAS B&Auml;RNTHALER 
+	Berühmt waren die Achtzigerjahre auch als jene Zeit, in der man es als Musiker schon weit bringen konnte, wenn man nur über den richtigen Geschmack verfügte. Im Zitatpop zählte vor allem, welche Platten man gut fand. Die britische Gitarrenband The Jazz Butcher fand, anders als ihr Name nahelegt, damals vor allem den herzerwärmenden Pop der späten Velvet Underground gut oder des damals noch jungen Jonathan Richman. Bands, die sich am Feuer ihrer Heiden wärmten, gab es damals viele, and man fragt sich heute: Was ist nur aus ihnen allen geworden? The Jazz Butcher haben einfach immer weitergemacht. Zuletzt brachten sie 2012 ein Album in kleiner Auflage selbst heraus. Jetzt wurde „Last of the Gentleman Adventurers" vom Indie-Label Fire Records noch einmal neu aufgelegt. Und man muss sagen: So eine exquisite Suite sonnendurchfluteter Popstücke hat man lange nicht gehört. THOMAS BÄRNTHALER 
 		<h3>CAUTION - This is a robotic translation of the original German publication</h3>
 		The 1980s were also famous as the time when one could get far as a musician if one had the right taste. In the quotationpop counted above all, which plates one found good. The British guitars band The Jazz Butcher, unlike their name suggested, especially the heart-warming pop of the late Velvet Underground well or the then still young Jonathan Richman. Bands, who were warming themselves by the fire of their heathen, there were many, and today one wonders: What has become of them all? The Jazz Butcher have just kept going. Last year, they released an album in small editions themselves. Now, "Last of the Gentleman Adventurers" by the indie label Fire Records has been reissued, and you have to say that such an exquisite suite of sun-drenched pop pieces has not been heard for a long time, THOMAS BÄRNTHALER
 	)})}
@@ -13525,7 +13525,7 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	or something.
 	<p />
 
-	&gt;&gt;Heresy, Mystery, Controversy, Philosophy &amp; Extreme Tourism&lt;&lt;
+	<<Heresy, Mystery, Controversy, Philosophy & Extreme Tourism>>
 	<p />
 
 	<b><u>DARK, GROOVY AND INCONTROVERTIBLY SOCIOPATHIC.</u></b>
@@ -13562,8 +13562,8 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 
 	<p />
 
-	&gt;&gt;now is time of the
-	mother and the father of a great big battle in the time of the end time&lt;&lt;
+	<<now is time of the
+	mother and the father of a great big battle in the time of the end time>>
 	<p />
 
 	Wilson sing of the Secret Wars of the Secret Government, the Ottoman Empire
@@ -13754,7 +13754,7 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	
 	<p class="iview_q">(Innocent bystander walks in room and says:) It's like that song, too much information by the Police.	<p />
 	
-	<p class="iview_a">PAT: By the <em>Police</em>? I like the <em>Backstreet Boys</em> a lot more than <em>Sting</em>. I do man. They've got that do-wop thing going and some proper R &amp; B going on in the bottom end. I know it's tailored for mass consumption, and shit, but they are actually making decent music. Not that good, I mean it ain't going to blow your mind, but when you're comparing them to <em>Boy Zone</em> or <em>West Life</em> or something .. So I don't know what to tell you. Keep on with all that factious <em>Jazz Butcher</em> history? We've only got 'bout another 23 years to go ..  But it kicked off, and we didn't expect shit. But the second album we made got noticed. Possibly because David J was on it, and he had just come out of <em>Bauhaus</em>. It kind of went off and we got into Europe, and the English kind of abandoned us really quick; by 1985 we were all over Europe but we were still playing pubs in Britain. In about May '86, we were playing in a pub in south London, we were getting about 250 quid, about 400 bucks .. not even that, maybe 350 bucks playing in a pub, and that Barker character from Glass Records, he goes, "Would you like to play in the U.S.A.?" We were just like, "Oh leave it." And we bloody did. We bloody did. And we were so ill prepared. Cause we got over here, not knowing what was going on. And it turned out that CMJ and Geffen put out this compilation album of one of our first three records, and it was number 2! Nobody told us! And I just opened the paper one day, and was like "Oh look, The Ramones are on the top of the .. .FUCK!" So we were totally unready for that. And by the end of '86 we were split up. Max was gone. We'd been out about two years, getting lucky in complete chances. Just complete frauds. We'd been out a few years and it was just time to get lives again. I dunno .. I just kept doing it because I didn't think I was good for anything else. I made some more records, and then right about the middle of the '90's Max was hanging around. He'd sometimes open for us. And then we split up at the end of '95, and in '96 some guys in Spain who didn't know us invited us to do a gig. Because they didn't know we had split up. So I called him up, and out we went. Well, we've been around the houses. I'm just trying to get up to date. Between '95 and last year we've popped out and done the odd gigs. We've done weddings .. <a href="${jbc_gigs}/1997/Sep19.html">a wedding on a boat in Seattle</a>. I've got this one song. It goes like this: " This room is swaying like a boat .. " and I thought I can't miss this ..  "because it IS a boat." We had a laugh at that. We just started doing things if it fell into our laps and involved a pleasant trip or something groovy then we'd go and do it. And then last year, come September, we did about five dates up and down the west coast. And they went really, really well. Although we knew it wasn't going to be as strong for us on the East side, but we thought there's no record company behind it, there's no machine behind it, but on the other end we don't want anything out of it except a really good time. We've just been playing around. We played to 11 people in Iowa City. Do you know where that is? Because I'm fucked if I do. The keenest one, the keenest person in Iowa City had driven for something like 300 miles from Kansas City. And he'd been tripping the whole way.	<p />
+	<p class="iview_a">PAT: By the <em>Police</em>? I like the <em>Backstreet Boys</em> a lot more than <em>Sting</em>. I do man. They've got that do-wop thing going and some proper R & B going on in the bottom end. I know it's tailored for mass consumption, and shit, but they are actually making decent music. Not that good, I mean it ain't going to blow your mind, but when you're comparing them to <em>Boy Zone</em> or <em>West Life</em> or something .. So I don't know what to tell you. Keep on with all that factious <em>Jazz Butcher</em> history? We've only got 'bout another 23 years to go ..  But it kicked off, and we didn't expect shit. But the second album we made got noticed. Possibly because David J was on it, and he had just come out of <em>Bauhaus</em>. It kind of went off and we got into Europe, and the English kind of abandoned us really quick; by 1985 we were all over Europe but we were still playing pubs in Britain. In about May '86, we were playing in a pub in south London, we were getting about 250 quid, about 400 bucks .. not even that, maybe 350 bucks playing in a pub, and that Barker character from Glass Records, he goes, "Would you like to play in the U.S.A.?" We were just like, "Oh leave it." And we bloody did. We bloody did. And we were so ill prepared. Cause we got over here, not knowing what was going on. And it turned out that CMJ and Geffen put out this compilation album of one of our first three records, and it was number 2! Nobody told us! And I just opened the paper one day, and was like "Oh look, The Ramones are on the top of the .. .FUCK!" So we were totally unready for that. And by the end of '86 we were split up. Max was gone. We'd been out about two years, getting lucky in complete chances. Just complete frauds. We'd been out a few years and it was just time to get lives again. I dunno .. I just kept doing it because I didn't think I was good for anything else. I made some more records, and then right about the middle of the '90's Max was hanging around. He'd sometimes open for us. And then we split up at the end of '95, and in '96 some guys in Spain who didn't know us invited us to do a gig. Because they didn't know we had split up. So I called him up, and out we went. Well, we've been around the houses. I'm just trying to get up to date. Between '95 and last year we've popped out and done the odd gigs. We've done weddings .. <a href="${jbc_gigs}/1997/Sep19.html">a wedding on a boat in Seattle</a>. I've got this one song. It goes like this: " This room is swaying like a boat .. " and I thought I can't miss this ..  "because it IS a boat." We had a laugh at that. We just started doing things if it fell into our laps and involved a pleasant trip or something groovy then we'd go and do it. And then last year, come September, we did about five dates up and down the west coast. And they went really, really well. Although we knew it wasn't going to be as strong for us on the East side, but we thought there's no record company behind it, there's no machine behind it, but on the other end we don't want anything out of it except a really good time. We've just been playing around. We played to 11 people in Iowa City. Do you know where that is? Because I'm fucked if I do. The keenest one, the keenest person in Iowa City had driven for something like 300 miles from Kansas City. And he'd been tripping the whole way.	<p />
 	
 	<p class="iview_q">LK: Where did you record the new record?	<p />
 	
@@ -13782,7 +13782,7 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	
 
 	<p class="iview_outro">
-	Copyright &copy; 2006, Lisa King.  All rights reserved.
+	Copyright © 2006, Lisa King.  All rights reserved.
 	<p />
 
 	)})}
@@ -13946,20 +13946,20 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<div class="iview_intro">
 	Interview with Julian
-	&quot;Jazz&quot; Pransky-Poole, formerly of Strangelove, and currently
+	"Jazz" Pransky-Poole, formerly of Strangelove, and currently
 	guitarist/keyboardist with Witness.
 	<p />
 	Interviewer: Dylan Harris, February 2000
 	</div>
 
-	<p class="iview_q">&quot;Xylophone tinkler sporting a wild hairdo not seen since
-	Eraserhead&quot; is how the Melody Maker once described you. Fair
+	<p class="iview_q">"Xylophone tinkler sporting a wild hairdo not seen since
+	Eraserhead" is how the Melody Maker once described you. Fair
 	description?;-)
 	<p />
 
 	<div class="iview_a">
-	I suppose its as accurate as me saying &quot;Melody Maker..try's to act cool and
-	independent, but its secretly financed by Homes and Gardens magazine&quot;
+	I suppose its as accurate as me saying "Melody Maker..try's to act cool and
+	independent, but its secretly financed by Homes and Gardens magazine"
 	<p />
 	But yeah I guess it is a fair description !!..I tinkle on the X and I guess my
 	hair is kind of out of control...That's what happens when you watch too much
@@ -13975,9 +13975,9 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	to it all week thinking this is awesome... Then I hadn't spoke to John in ages
 	and I was honestly seconds away from lifting up the phone to say hi and to tell
 	him that I thought Witness were fantastic - BUT the phone rang and it was John
-	saying &quot;you know I said that if we need a pedal steel
-	player&quot;..&quot;well we don't!!, but we need a extra guitar/keyboard
-	player&quot;...
+	saying "you know I said that if we need a pedal steel
+	player".."well we don't!!, but we need a extra guitar/keyboard
+	player"...
 	<p />
 	I was, to coin the phrase - Over the Moon !!
 	<p />
@@ -13987,8 +13987,8 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	offer to..
 	<p />
 	I don't actually know what John had said about me to the rest of the
-	band/management...I imagine it was words along the lines of &quot;he's a tinkler
-	sporting a wild hairdo not seen since Eraserhead&quot; !!!!!
+	band/management...I imagine it was words along the lines of "he's a tinkler
+	sporting a wild hairdo not seen since Eraserhead" !!!!!
 	</div>
 
 	<p class="iview_q">Was the initial plan for you to just help out on a live basis?
@@ -13999,8 +13999,8 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	to an extra member at that point...All they knew is that they were having
 	difficulty in recreating the songs live... I never did see them live as a four
 	piece - but after having to play every instrument except the fluglehorn (there
-	is still a chance !!) in their songs, it dawned on me that &quot;how the hell
-	were you doing this before &quot;....&quot;Very badly&quot; was the usual
+	is still a chance !!) in their songs, it dawned on me that "how the hell
+	were you doing this before "...."Very badly" was the usual
 	reply..
 	<p />
 	Initially I also played on the recorded versions of Heirloom and My Own Old
@@ -14010,17 +14010,17 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	piano on this track they been working on which was Heirloom.
 	<p />
 	I'm sat there with headphones on and Gerard's doing a vocal take at the same
-	time..so I've got this huge piano in front of me and I'm thinking &quot;F#%K!..&quot;should have learned piano..where's C again&quot;..all the while I've got this
+	time..so I've got this huge piano in front of me and I'm thinking "F#%K!.."should have learned piano..where's C again"..all the while I've got this
 	'send shivers down your spine' voice booming in my headphones, it was
 	bizarre...I'd only just met them and didn't even know their names !!!..
 	<p />
 	Furthermore I couldn't understand a word they spoke !!..they said it was in F or
 	C or was that G ??..they sounded so northern I was lost..that's why stop on the
-	F in the chorus piano line - I'm thinking &quot;what did he say ??&quot;
+	F in the chorus piano line - I'm thinking "what did he say ??"
 	</div>
 
-	<p class="iview_q">I notice that you're credited with the co-writing of new track, &quot;Zero
-	Zero&quot;. Do we take from this that you are now a &quot;full time&quot; member
+	<p class="iview_q">I notice that you're credited with the co-writing of new track, "Zero
+	Zero". Do we take from this that you are now a "full time" member
 	of the band?
 	<p />
 
@@ -14040,8 +14040,8 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	stuff to make an album that rivals the Pumpkins Siamese Dream..but that's not
 	Witness.
 	<p />
-	Furthermore I don't want it to be seen as &quot;jeeesus they were great until he
-	got involved&quot;..best to let the great song writing relationships within the
+	Furthermore I don't want it to be seen as "jeeesus they were great until he
+	got involved"..best to let the great song writing relationships within the
 	band continue and grow.
 	<p />
 	I did demo one thing with Dylan and Ray and Gerard and I never heard them
@@ -14055,7 +14055,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	writing in every band that are set from day one and that can never be remoulded.
 	<p />
 	You can pretend they are remoulded but then that's just a pretence before a
-	split...Best to think - &quot;if it aint broke&quot; etc I have never
+	split...Best to think - "if it aint broke" etc I have never
 	enjoyed playing music more in my life than with Dylan Ray John and Gerard..they
 	have something magical between them and I feel privileged to be involved.
 	<p />
@@ -14085,7 +14085,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	</div>
 
 	<p class="iview_q">When did you decide to take up a career in music? Was there one defining moment or was it, like thousands of other teenagers, a childhood
-	&quot;dream&quot; of becoming a &quot;rock star&quot;?
+	"dream" of becoming a "rock star"?
 	<p />
 
 	<div class="iview_a">
@@ -14093,8 +14093,8 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	in Classical guitar magazines around 1988 and represented the county of Avon
 	many times at international classical guitar festivals. I was really going that route - then Strangelove got signed and I thought
 	well you only get one shot at it. No really defining moment - although when I put on Deep Purples 'Child in
-	Time' for the first time and that solo kicks in I'm thinking &quot;man that
-	beats homework&quot;
+	Time' for the first time and that solo kicks in I'm thinking "man that
+	beats homework"
 	</div>
 
 	<p class="iview_q">What was it like and how did things change for you after Strangelove signed for
@@ -14139,12 +14139,12 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<div class="iview_a">
 	No not really - I think its the other way round - most industry types or companies are so naive of how bands work and think. However when Ray said
-	he thought they'd sell 25,000 in the first week I did have to wonder!!!.. he then went on to add - &quot;Isn't it normal to have ringing in your ears
-	??&quot;..
+	he thought they'd sell 25,000 in the first week I did have to wonder!!!.. he then went on to add - "Isn't it normal to have ringing in your ears
+	??"..
 	<p />
 	Anyway they have the best management I have ever witnessed (no pun intended)
-	and the band themselves don't have to debate things like royalty rates if Richard Claderman covers Quarantine or &quot;locating mandolin strings in the
-	middle of the night in Austin&quot; (Spinal Tarp!!)
+	and the band themselves don't have to debate things like royalty rates if Richard Claderman covers Quarantine or "locating mandolin strings in the
+	middle of the night in Austin" (Spinal Tarp!!)
 	</div>
 
 	<p class="iview_q">Apart from the one headlining tour last year, the majority of your gigs have been as the support slot. Is it frustrating to play to a crowd that, in
@@ -14157,7 +14157,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	with someone like Billie Piper then I can see problems even before we've left the gas station.
 	</div>
 
-	<p class="iview_q">During your early gigs, Gerard built up a reputation amongst the music press for his &quot;lack of movement&quot; during live performances. This seemed to be
+	<p class="iview_q">During your early gigs, Gerard built up a reputation amongst the music press for his "lack of movement" during live performances. This seemed to be
 	down to nerves more than anything else. How do you, yourself feel up on stage? You seem to enjoy the experience and don't mind moving around a bit!
 	<p />
 
@@ -14177,8 +14177,8 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<div class="iview_a">
 	I think it has to be Jools Holland - that was the biggest buzz I have ever had...but that wasn't a gig in true definition - so I guess it was the most
-	recent Amsterdam Paridiso show. The gig was so well received - I turned 30 as Heirloom kicked in and I thought &quot;well this beats a cake and
-	candles&quot;...actually maybe just the candles, I'll keep the cake.
+	recent Amsterdam Paridiso show. The gig was so well received - I turned 30 as Heirloom kicked in and I thought "well this beats a cake and
+	candles"...actually maybe just the candles, I'll keep the cake.
 	</div>
 
 	<p class="iview_q">What were the recent Holland gigs like and why did you play just Holland? Anything to do with the countries
@@ -14201,7 +14201,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	Toc Inn and Show Boat Casino down the road !!!
 	</div>
 
-	<p class="iview_q">What is it like being referred to as a &quot;Wigan&quot; band, when in actual
+	<p class="iview_q">What is it like being referred to as a "Wigan" band, when in actual
 	fact, Ray is the only member of the band to come from Wigan?
 	<p />
 
@@ -14213,15 +14213,15 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	<p />
 
 	<div class="iview_a">
-	Yeah I guess it does get annoying but I do find myself saying to people &quot;yeah
-	we're like early REM and the Verve&quot;...
+	Yeah I guess it does get annoying but I do find myself saying to people "yeah
+	we're like early REM and the Verve"...
 	Obviously all bands get compared with something, at least we are being compared to the Verve and not the Dixie Chicks...
 	I feel the Verve comparisons are beginning to fade, I hear the Counting Crows mentioned more now. I don't think any of us feel any pressure to live
 	up to there success - and obviously success is measured in such different
 	ways...I think Witness songs are far more emotional than the Verve and that's success to my ears.
 	</div>
 
-	<p class="iview_q">Was it disappointing, or at least surprising to not gain any nominations in the majority of the &quot;end of year&quot; polls/awards, especially after the
+	<p class="iview_q">Was it disappointing, or at least surprising to not gain any nominations in the majority of the "end of year" polls/awards, especially after the
 	amount of praise heaped on you earlier last year? I suppose it just demonstrates
 	the fickleness of the British press?
 	<p />
@@ -14230,7 +14230,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	I think it demonstrates peoples lack of intelligence to get so worked up over these polls...even the Oscars mean little now - everyone knows its
 	rigged....So what a surprise !! yet another Sony label band win the Brit awards, and the Brits awards is owned by - by - can you guess it - Sony !
 	<p />
-	Its all a bit Blue Peter &quot;Here's one I made earlier&quot;.
+	Its all a bit Blue Peter "Here's one I made earlier".
 	<p />
 	Ignore polls - they count for shit unless Witness win one of course !!
 	</div>
@@ -14242,15 +14242,15 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	Me and John were living in this Travel Inn in Wigan - It was the most depressing time of my life...It was so Alan Partridge...I actually did find
 	myself walking down the dual carriage way to the gas station to buy something useless like windshield wiper fluid - just to kill time ...
 	<p />
-	I remember one week I had the same meal every night from the restaurant - &quot;Yeah I'll have the Fish and Chips again&quot; It was groundhog day - the
+	I remember one week I had the same meal every night from the restaurant - "Yeah I'll have the Fish and Chips again" It was groundhog day - the
 	only variety in the day was whether to have mushy peas or garden peas !!
 	<p />
-	I'd be in rehearsal in the daytime and find myself thinking &quot;tonight I'm going to have the garden peas for a change &quot;...it was so awful - beyond
+	I'd be in rehearsal in the daytime and find myself thinking "tonight I'm going to have the garden peas for a change "...it was so awful - beyond
 	awful....I'd find myself sat in reception talking to the cleaner about UHT milk.... Without doubt the most depressing time in my whole life.
 	<p />
-	Also Wigan is not the place for someone in Bell Bottoms...there must be a Wigan Law that states &quot;if you see someone in Bell Bottoms you must stare at
-	them like a dog that's just been shown a card trick &quot;... To quote Bill Hicks &quot;in some societies, people are shouting for Revolution
-	- In Wigan they are shouting 'EVOLUTION'..&quot;we want our thumbs !!&quot;...the
+	Also Wigan is not the place for someone in Bell Bottoms...there must be a Wigan Law that states "if you see someone in Bell Bottoms you must stare at
+	them like a dog that's just been shown a card trick "... To quote Bill Hicks "in some societies, people are shouting for Revolution
+	- In Wigan they are shouting 'EVOLUTION'.."we want our thumbs !!"...the
 	family tree up there must be a stump !!!! (no offence intended!!)
 	</div>
 
@@ -14323,13 +14323,13 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	As usual I can't recommend anything from the UK other than The Dakota Suite. Awesome band.
 	</div>
 
-	<p class="iview_q">What do you think of the music scene at the moment and so called &quot;lack
-	of new talent&quot;? Does it deserve all the negative publicity that its been getting?
+	<p class="iview_q">What do you think of the music scene at the moment and so called "lack
+	of new talent"? Does it deserve all the negative publicity that its been getting?
 	<p />
 
 	<div class="iview_a">
-	Are you meaning the incessant warblings of Christina Aguilera and the &quot;of course I'm straight&quot; preening of 5IVE ??
-	The &quot;lack of new talent&quot; debate has always been there - I'm sure the
+	Are you meaning the incessant warblings of Christina Aguilera and the "of course I'm straight" preening of 5IVE ??
+	The "lack of new talent" debate has always been there - I'm sure the
 	jury was out on David Cassidy and the Brady Bunch but they both went on to get top ten hits. Teen sensations have always been there - unfortunately they
 	now rule the music scene..
 	<p />
@@ -14441,11 +14441,7 @@ Because there was no Internet to scour, I was left to fend for myself and I didn
 	<p />
 One Spring day in 1987, a promo copy of Max Eider’s debut solo album <em>The Best Kisser In The World</em> arrived at the radio station straight from Big Time Records and I cut the rest of school, went home immediately and listened to it. From the sweeping pop beauty of “My Other Life” and "Rosemary" to the acoustic shuffle “Sensitive Touch,” to the wrenching ballad “It Has To Be You,” <em>The Best Kisser In The World</em> was a quiet and astonishingly gorgeous album. The severed musical alliance of the JBC, heartbreaking as it was, had yielded two separate camps and since they both sounded great, I could live with that.	
 	<p />
-&nbsp;	
-	<p />
 <iframe class='youtube-player' type='text/html' width='700' height='424' src='http://www.youtube.com/embed/kLmMA7VGv9w?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>	
-	<p />
-&nbsp;	
 	<p />
 By 1992, however, I was getting worried. Three years had passed and aside from his appearance on David J.’s wonderful trio of solo albums (<em>Songs From Another Season</em>, <em>Urban Urbane, Crocodile Tears and the Velvet Cosh</em>) Max Eider had all but dropped out of sight. The Butcher was cranking out excellent albums like <em>Big Planet, Scary Planet, </em><em>Cult of the Basement </em>and <em>Condition Blue</em>, but where was Max Eider?	
 	<p />
@@ -14457,7 +14453,7 @@ It was totally worth the wait. Hard to stay mad at the guy.
 	<p />
 Six short years later, the release of <em>Back In The Bedroom</em> finds Eider completing a musical triptych. Recorded in the musician’s bedroom of his London home, the album is loaded with Eider’s effortless gliding cadences. There’s the gently swaying opener “I Want,” the prowling jazz of “Secret Life” and the rolling, graceful pop of “Love’s Blind,” but those don’t even scratch the surface of how deep this album goes. Fueled by Eider’s decidedly brilliant guitar work coupled with his euphonious and warm delivery, <em>Back In The Bedroom</em> is an eleven-song collection of sheer sonic elegance. Pulling out songs as highlights is a necessary, albeit academic exercise, but allow me to continue in this adorational indulgence: “Sweet Nothing” comes with an understated, but undulating rhythm punctuated by a sublime saxophone; “Stupid Heart” is a sweeping wonder and “Kings And Queens” is a silky number about keeping our dreams company in spite of the realities and consequences of normal life.	
 	<p />
-As a songwriter, Eider is sophisticated and intellectual, but he’s able to keep his themes and subjects quite singular and it’s this level of focus that makes his work so appealing. Not only that, he manages in his musical phrasing a vocal precision that imbues every number with a poetic poignancy. But Eider’s greatest strength may very well be his sense of proportion&#8211;a balance between the song, the song’s instrumental composition, lyrical intent and performer’s presence. I know that I didn’t just unearth a never before considered trinity of sonic ingredients, but it’s that last component that can either commandeer the ship anywhere it wants, or sink the bastard to the murky depths of nowhere. And while music critics are quick to talk about composition and lyrical intent, presence has been getting the short shrift for a long time even though it’s of absolute importance. Max Eider is one of the rare musicians working today (Justin Currie, Joe Henry and Mark Knopfler also come to mind) who has a preternatural sense of how to present a pop song—how to measure it, how to embody it, how to live inside of it. Perhaps Orlando Gibbons described it best way back in 1612's <em>The First Set Of Gibbons</em> when he wrote: “It is proportion that beautifies every thing, this whole Universe consists of it, and Musicke is measured by it.”	
+As a songwriter, Eider is sophisticated and intellectual, but he’s able to keep his themes and subjects quite singular and it’s this level of focus that makes his work so appealing. Not only that, he manages in his musical phrasing a vocal precision that imbues every number with a poetic poignancy. But Eider’s greatest strength may very well be his sense of proportion - a balance between the song, the song’s instrumental composition, lyrical intent and performer’s presence. I know that I didn’t just unearth a never before considered trinity of sonic ingredients, but it’s that last component that can either commandeer the ship anywhere it wants, or sink the bastard to the murky depths of nowhere. And while music critics are quick to talk about composition and lyrical intent, presence has been getting the short shrift for a long time even though it’s of absolute importance. Max Eider is one of the rare musicians working today (Justin Currie, Joe Henry and Mark Knopfler also come to mind) who has a preternatural sense of how to present a pop song—how to measure it, how to embody it, how to live inside of it. Perhaps Orlando Gibbons described it best way back in 1612's <em>The First Set Of Gibbons</em> when he wrote: “It is proportion that beautifies every thing, this whole Universe consists of it, and Musicke is measured by it.”	
 	<p />
 And that, my friends, is why Max Eider’s songs are so—I want to say beautiful, but that falls far short of what I mean—<em>vital.</em> He accomplishes in his music what Rilke referred to as “the breathing of statues.”	
 	<p />
@@ -14481,12 +14477,10 @@ Pat and I were both writing the occasional song at this time, but nothing either
 <div class="iview_a"><p /> Well, I suppose I devoted more time to the tedious business of developing a bit of technique, as well as trying to work out how other players did what they did and learning a bit of theory.	<p />
 </div>
 <div class="iview_q">Se: Do you recall your first meeting with Pat Fish? Was there an instant synergy between you guys?</div>
-<p />&nbsp;	
 	<p />
 <iframe class='youtube-player' type='text/html' width='700' height='424' src='http://www.youtube.com/embed/BUAM4s_ODng?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>	
 	<p />
-&nbsp;	<p />
-<div class="iview_a"><p /> I don't remember exactly how we first met, but we had mutual friends and we were both playing in bands so it was bound to happen. Small pond. We got on well from the start. He was charismatic, charming and very sharp. And we had some of the same enthusiasms: for the Velvets, Eno and Television, for example, and we both still liked some of that hippy shit &#8211; Kevin Ayers was and still is a particular favourite for us both, for example. Plus we were both quite keen on getting soused to the gills.	<p />
+<div class="iview_a"><p /> I don't remember exactly how we first met, but we had mutual friends and we were both playing in bands so it was bound to happen. Small pond. We got on well from the start. He was charismatic, charming and very sharp. And we had some of the same enthusiasms: for the Velvets, Eno and Television, for example, and we both still liked some of that hippy shit  -  Kevin Ayers was and still is a particular favourite for us both, for example. Plus we were both quite keen on getting soused to the gills.	<p />
 </div>
 <div class="iview_q">SE: One thing I always liked about the JBC was the way Pat would refer to you in songs—those "take a look at Max" moments were so cool because no one else was doing that. Were those references spontaneous?</div>
 <div class="iview_a"><p /> Yes, originally at least. It was important for Pat that songs and shows weren't the same night after night, and he's good at improvising chat and even lyrics. He was always making me laugh at a crucial moment, either with some unexpected variation, or with an aside on mike or in my ear. There was a lot of laughter on stage in the early JBC—and in the re-formed version, come to that.	<p />
@@ -14494,11 +14488,7 @@ Pat and I were both writing the occasional song at this time, but nothing either
 <div class="iview_q">SE: So after you left the JBC in 1987 where in the devil did you disappear to?</div>
 <div class="iview_a"><p /> In fact I played on three David J records in all: <em>Crocodile Tears and the Velvet Cosh</em>, <em>Songs From Another Season</em>, and <em>Urban Urbane</em>. And we toured the U.S. twice. This was a lot of fun after all the grief of the JBC split and the bankruptcy of the label who put out my first solo album. One particular night in L.A. involving Joe Strummer and industrial quantities of tequila sticks in the mind. In the late 80’s and early 90’s I wrote some songs, and I did a couple of demos, and I did a show or two in London and Hamburg. But really as a solo artist I couldn't get arrested, and having spent a few years banging my head against a brick wall, I just thought: OK, on the whole it's been a blast, but I guess it's time to move on.	
 	<p />
-&nbsp;	
-	<p />
 <iframe class='youtube-player' type='text/html' width='700' height='424' src='http://www.youtube.com/embed/1ZlOErCDwc4?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>	
-	<p />
-&nbsp;	
 	<p />
 Where did I disappear to? Well, apart from a brief sojourn in the wilds of Gloucestershire, working on what I thought would be the follow-up to <em>The Best Kisser</em>, I was in London, living, loving, working, drinking, doing the odd gig or session for friends, writing the occasional song, spending long periods curled up in the fetal position—you know, doing what people do.	<p />
 </div>
@@ -14510,27 +14500,23 @@ Having said that, the split, when it came, was more about personal tensions. I t
 The break was traumatic, for me at least, but I think it was the best thing for both of us. <em>The Best Kisser</em> disappeared more or less without trace, but at least I'd made the damn thing. And my leaving gave Pat something of a fresh start. Certainly he went on to do some of his best stuff without me—if I'm honest, the very best: <em>Cult of the Basement</em> and <em>Condition Blue</em> in particular are stunning albums.	<p />
 </div>
 <div class="iview_q">SE: Can you describe the recording process for Back In The Bedroom— how did it differ from the recording you've done in the past?</div>
-<div class="iview_a"><p /> The whole thing was recorded and mixed on a Mac in my home studio, over a period of two years or more. We'd used a computer for the drum tracks on the re-formed Jazz Butcher album, <em>Rotten Soul</em>, but apart from that all the recording I've been involved in was done in a traditional way, in a studio, with &#8216;live' backing tracks. That wasn't feasible in this case, so before I even started I had to spend ages getting to grips with the software and learning some engineering skills.	
+<div class="iview_a"><p /> The whole thing was recorded and mixed on a Mac in my home studio, over a period of two years or more. We'd used a computer for the drum tracks on the re-formed Jazz Butcher album, <em>Rotten Soul</em>, but apart from that all the recording I've been involved in was done in a traditional way, in a studio, with ‘live' backing tracks. That wasn't feasible in this case, so before I even started I had to spend ages getting to grips with the software and learning some engineering skills.	
 	<p />
 I really didn't want to make an album that sounded like someone sitting in front of a computer, but I did a couple of trials, and the results were encouraging, so I set about it. It's a slow and painstaking business, but in a way working like this suits me, so even if I had an unlimited budget, I'd probably do something similar next time—though I might go into a decent studio with a good drummer to get the basic backing tracks. And I probably wouldn't record the saxophone at home, for the sake of the neighbours.	<p />
 </div>
 <div class="iview_q">SE: Do you find the home recording process more liberating than how it was done in the past? Is this a more intimate way of going about things</em>?	<p />
 <div class="iview_a"><p /> It gives you the time to explore different ideas: to get things wrong and to get things right. And it gives you the chance to try arrangements and instrumentation that were traditionally only possible on a very large budget. And yes, in a way it is more intimate. Of my three solo albums, the new one is definitely the closest to the sound that I had in my head.	
 	<p />
-The disadvantages are that, however good the software—and these days it is very good—recording and mixing music is an art in itself, and takes a lot of learning; there's no one to tell you when you're disappearing up your own fundament; no one to say &#8216;For chrissake Max, that's good enough', or &#8216;Sorry, mate, but you really should do that again', or &#8216;Do you really think that's wise?'; no one to bounce ideas off or provide ideas; no one to have a laugh with or shout at. There isn't the excitement and atmosphere of a fixed period in a studio, when you go in with nothing down and know you have to come out two weeks later or whatever with an album. I'm not complaining: if modern computer-based recording technology weren't available, I wouldn't have a new album, and there wouldn't be any more in the future, and then where would we all be?	<p />
+The disadvantages are that, however good the software—and these days it is very good—recording and mixing music is an art in itself, and takes a lot of learning; there's no one to tell you when you're disappearing up your own fundament; no one to say ‘For chrissake Max, that's good enough', or ‘Sorry, mate, but you really should do that again', or ‘Do you really think that's wise?'; no one to bounce ideas off or provide ideas; no one to have a laugh with or shout at. There isn't the excitement and atmosphere of a fixed period in a studio, when you go in with nothing down and know you have to come out two weeks later or whatever with an album. I'm not complaining: if modern computer-based recording technology weren't available, I wouldn't have a new album, and there wouldn't be any more in the future, and then where would we all be?	<p />
 </div>
 <div class="iview_q">SE: Is it odd to belt out a song across the hall from where you sleep or eat breakfast?</div>
 <div class="iview_a"><p /> Yes—my studio really is in the bedroom, though there's a partition. Poor Tama. I got used to it, but I'm not sure she ever did.	<p />
 </div>
 <div class="iview_q">SE: The sequencing on Back In The Bedroom is just perfect and that it starts with "I Want" and ends with "Kings and Queens" seems, from a thematic perspective, a genius move. What, if you can reveal, is the strategy here?</div>
-<div class="iview_a"><p /> It all just seemed to slot together more or less of its own accord. Of course, these days a lot of people have &#8216;shuffle' switched on permanently, but what can you do? I should point out, in case anyone is considering actually buying the album, that “Kings and Queens” is an extra track on the CD. The download version ends with “It's Come To This”—which is where, originally, I had intended the album to end. “Kings and Queens” just popped out as I was beginning to do the mixing and demanded inclusion.	
-	<p />
-&nbsp;	
+<div class="iview_a"><p /> It all just seemed to slot together more or less of its own accord. Of course, these days a lot of people have ‘shuffle' switched on permanently, but what can you do? I should point out, in case anyone is considering actually buying the album, that “Kings and Queens” is an extra track on the CD. The download version ends with “It's Come To This”—which is where, originally, I had intended the album to end. “Kings and Queens” just popped out as I was beginning to do the mixing and demanded inclusion.	
 	<p />
 <iframe class='youtube-player' type='text/html' width='700' height='424' src='http://www.youtube.com/embed/gs4mUOooWXI?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>	
 	<p />
-&nbsp;	<p />
-</div>
 <div class="iview_q">SE: One of the themes that seems to keep rearing its head is longing and more than a touch of regret. The narrators of "My Dreams" and "Dirty Old Man" seem wistful as much as anything else—was this what you were after? And more importantly, what are we to do with regret in the real world? Should have called her back, should have gone to New Zealand, should have studied for that last exam....</div>
 <div class="iview_a"><p /> There's longing, certainly, and sadness, but regret is not what I had in mind. In “Dirty Old Man”, “every dog among you had his day.” And the narrator of “My Dreams” has left his regret behind, or thinks he has. It's just that however wise and avuncular you may think you have become, most of us, men and women, are still prey to longing and desire—and inappropriate lust, to call a spade a spade—that we can't control. Or is it just me? Of course, you can and usually should refrain from acting on such feelings. Also there's the question of whether or not you really want to be rid of them, and this is one source of the sadness. Because unless you're really capable of spending the rest of your life sitting serenely under a fig tree, you're stuck with it, boyo.	
 	<p />
@@ -14552,19 +14538,15 @@ I suppose one of my main preoccupations is how much time we all spend wanting th
 	<p />
 To be honest I've never really given this much thought before and there's a danger of making it all seem more considered and coherent than it really is. When I'm writing, I'll write about anything I think I can get a song out of, and I'd guess it's the same for pretty much everyone else. Sometimes the spark may just be a person you notice in the street, or something you read, or some trivial incident or remark or thought that stuck in the memory or you put in a notebook. And in many cases, once is definitely enough. You don't want to write more than one song about the death of your mother, for instance. Or at least I don't.	
 	<p />
-&nbsp;	
-	<p />
 <iframe class='youtube-player' type='text/html' width='700' height='424' src='http://www.youtube.com/embed/VqpPuovIHtE?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>	
 	<p />
-&nbsp;	<p />
-</div>
 <div class="iview_q">SE: "Stupid Heart" is a song that seems to insist that we make the same mistakes in love and that we refuse to see the truth even when we know the truth. In other words, the heart does what it wants even when it knows it's entering choppy, inadvisable waters. And yet we still go there!</div>
 <div class="iview_a"><p /> Over the years I have been amazed at my own and others' failure to learn from experience. Actually, as you suggest, it's not so much that you don't learn, it's just very hard to apply the relevant lesson when it counts. But it does get a bit easier as you get older: the heart probably doesn't get much less stupid, but you're less inclined to let it make a complete dick of you yet again. So, on a personal note, although it may not always sound like it from the songs, I am in fact in a stable and happy relationship and have been for many years.	
 	<p />
 As I see it, “Stupid Heart” is essentially about accepting that the heart can be perverse and idiotic without giving up on it altogether, without becoming hardened or bitter. OK, so you can't have what you wanted—why not try to love your stupid/crooked neighbour with your stupid/crooked heart instead? (Incidentally I'd better admit here that I nicked this line from Auden.)	<p />
 </div>
 <div class="iview_q">SE: "It's Come To This" brings to mind similar issues— saw it coming, refused to move—reminds me of Pat's "You can see the cars, you just can't get out of their way...." What did you have in mind here from a lyrical standpoint?</div>
-<div class="iview_a"><p /> Yeah that's a good line of Pat's isn't it? The original idea for this song came from a chance meeting with someone I hadn't seen for maybe 15 years. I noticed him across the room in a pub—unmistakably him—and I was sure he'd spotted me as well, and I thought about going over, but then I thought: what's the point, for the sake of a few minutes' awkward smalltalk and an exchange of phone numbers that neither of us would ever call? And he'd clearly reached the same conclusion, because when I looked up a few minutes later, he'd gone. And I thought: it's come to this. Sad but not sad. The incident stayed with me for some reason, but when I came to write the song, &#8216;he' became &#8216;she', and the friendship became a love affair. It just worked better that way. Yes, the fact that both crossed the road knowing the high risk of being run over became a important element in the song, as well as the fact that, at the time, you can't act on basis that it will probably will "come to this." Or that. But always, of course, the other.	<p />
+<div class="iview_a"><p /> Yeah that's a good line of Pat's isn't it? The original idea for this song came from a chance meeting with someone I hadn't seen for maybe 15 years. I noticed him across the room in a pub—unmistakably him—and I was sure he'd spotted me as well, and I thought about going over, but then I thought: what's the point, for the sake of a few minutes' awkward smalltalk and an exchange of phone numbers that neither of us would ever call? And he'd clearly reached the same conclusion, because when I looked up a few minutes later, he'd gone. And I thought: it's come to this. Sad but not sad. The incident stayed with me for some reason, but when I came to write the song, ‘he' became ‘she', and the friendship became a love affair. It just worked better that way. Yes, the fact that both crossed the road knowing the high risk of being run over became a important element in the song, as well as the fact that, at the time, you can't act on basis that it will probably will "come to this." Or that. But always, of course, the other.	<p />
 </div>
 <div class="iview_q">SE: What challenges continue to present themselves for you when it comes to songwriting? Have you found that it comes easier than it did, say, twenty years ago?</div>
 <div class="iview_a"><p /> It does come more easily now, and that's because I always used to start with the music, but now, more often than not, I start with the words—or at least with some sort of idea for a lyric, however slight. Once I've got that, I usually find the music more or less writes itself. If you do it the other way around you tend to end up with tapes/discs full of musical ideas that never become songs. Or at least I do. Challenges? I just want to do it while I can. My greatest regret, as far as music is concerned, is that I will never know what the album I was planning to make after<em> The Best Kisser</em> would have sounded like, or the album(s) I might have made in the 90’s. I don't plan to feel the same way about the next decade. But I'm not exactly prolific, so don't hold your breath.	<p />
@@ -14582,7 +14564,7 @@ As I see it, “Stupid Heart” is essentially about accepting that the heart ca
 <div class="iview_a"><p /> I've known Dave for years: he was a JBC fan, and also a fan of <em>The Best Kisser</em>, and we became friends. I love his work. He did a caricature of me for <em>Hotel Fig</em>, and when he offered his services again for the new album, I jumped at the chance. The designer Mau Carey also made a big contribution to the artwork.	<p />
 </div>
 <div class="iview_q">SE: A quick question about recurring iconography—Coverly's rendering of the bedroom shows a copy of Hotel and a painting of Best Kisser on the wall—am I nuts or is that correct?</div>
-<div class="iview_a"><p /> Do I have to choose one or the other? You're right anyway. The painting was a painting (by an artist friend called Melanie Toney) before it was an album cover, and it <em>is</em> hung on the wall of my studio. I asked Dave to put in a reference to <em>Hotel Fig</em> as well, because despite the fact that the three albums span almost exactly 20 years, and are certainly not &#8216;concept' albums, let alone a concept triple album, I had a sense that <em>Back in the Bedroom</em> was in a way, as you suggested, the final part of a trilogy—kind of rounding off unfinished business. The <em>Best Kisser</em> painting, of two fish in the sea nose to nose (do fish have noses?), but one in a bowl, would work as a cover for any of the three albums. Incidentally the painting is supposed to act as a kind of ironic comment on the title &#8216;The Best Kisser in the World', though at the time it's true that I was happy to try to demonstrate my claim with suitable applicants.	<p />
+<div class="iview_a"><p /> Do I have to choose one or the other? You're right anyway. The painting was a painting (by an artist friend called Melanie Toney) before it was an album cover, and it <em>is</em> hung on the wall of my studio. I asked Dave to put in a reference to <em>Hotel Fig</em> as well, because despite the fact that the three albums span almost exactly 20 years, and are certainly not ‘concept' albums, let alone a concept triple album, I had a sense that <em>Back in the Bedroom</em> was in a way, as you suggested, the final part of a trilogy—kind of rounding off unfinished business. The <em>Best Kisser</em> painting, of two fish in the sea nose to nose (do fish have noses?), but one in a bowl, would work as a cover for any of the three albums. Incidentally the painting is supposed to act as a kind of ironic comment on the title ‘The Best Kisser in the World', though at the time it's true that I was happy to try to demonstrate my claim with suitable applicants.	<p />
 </div>
 <div class="iview_q">SE: The guitar is so little discussed among my friends—when I was 12 we used to talk about Randy Rhodes and Eddie Van Halen but when I discovered punk and post-punk and new wave and indie rock, I found that very few people talk about individual players and their separate skills.</div>
 <div class="iview_a"><p /> Absolutely: it's one of the most enduring legacies of the punk era that, except in jazz and some sorts of heavy rock, most people aren't much interested in individual musicians, and a lot of musicians feel almost as if they're doing something wrong if anyone notices that they're very skilled, or their playing really stands out.	<p />
@@ -14594,12 +14576,8 @@ I mentioned Kevin Ayers earlier, and two of his guitar players made a big impres
 	<p />
 As you can see, I have my finger very much on the pulse.	
 	<p />
-&nbsp;	
-	<p />
 <iframe class='youtube-player' type='text/html' width='700' height='424' src='http://www.youtube.com/embed/SXVAA-KOGqU?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>	
 	<p />
-&nbsp;	<p />
-</div>
 <div class="iview_q">SE: How many guitars do you own and what, if pressed, is your favorite?</div>
 <div class="iview_a"><p /> I've never been a collector and I currently have only three guitars, all of which are old friends. There's the first half-decent instrument I ever owned—a Japanese classical guitar; there's the first decent electric guitar I ever owned—a Yamaha; and there's a vintage Gretsch Double Anniversary semi-acoustic, which I bought with my first decent royalty cheque. That Gretsch has been everywhere with me and there can't have been many days in the last 25 years when I haven't played it at some point. If I woke to find the building on fire, I'd grab my Gretsch before my trousers.	<p />
 </div>
@@ -14622,11 +14600,8 @@ As you can see, I have my finger very much on the pulse.
 <div class="iview_q">SE: Your music has taken you all over the world—you must have an endless satchel of stories to tell. What was the most bizarre predicament you found yourself in?</div>
 <div class="iview_a"><p /> To give you some idea of how rich a seam you are inviting me to mine, I will simply describe the last gig I did with Pat, in summer 2006. We've always enjoyed doing private functions for fans—weddings and so on—and this one was a big birthday bash, at an isolated house in the middle of a forest in Yorkshire. There were three brothers, and they all loved the Jazz Butcher. The trouble was, it wasn't their party; it was a party they were throwing for their father's 60th birthday. So although the family treated us as honoured guests, the assembled company mainly consisted of their father's friends and business associates, including the local Member of Parliament, none of whom of course had any knowledge of—or interest in—the JBC. We asked what time they'd like us to play and they gave us a copy of the order of events. We were on between the falconry display and the hog roast.	
 	<p />
-&nbsp;	
-	<p />
 <iframe class='youtube-player' type='text/html' width='700' height='424' src='http://www.youtube.com/embed/jpsS2WGW9Is?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>	
 	<p />
-&nbsp;	<p />
 </div>
 <div class="iview_q">SE: Was a career in rock and roll always your goal or did you secretly foster plans to write books or teach university or run for office and rule the world?</div>
 <div class="iview_a"><p /> I've never really wanted to do anything else, but I couldn't strictly speaking be said to have had a career in rock and roll either. I <em>was</em> briefly a teacher, though at a tutorial college not at a university, and for the last 15 years or so I've made a living on and off as a freelance writer and editor. As far as I can remember, at no point, even at my most paranoid and psychotic, have I wanted to run for office and rule the world.	<p />
@@ -15583,7 +15558,7 @@ Special thanks to Pat Fish
 #live	if (getval(page) = 20171002_bandcamp.html)
 	${extractPress(
 		body=${literalizeCommas(
-<h2 class="entry-title">The Jazz Butcher&#8217;s Indie Pop&nbsp;Genesis</h2>
+<h2 class="entry-title">The Jazz Butcher's Indie Pop Genesis</h2>
 
 				<div>
 <p />Very long ago, in the mists of the early 1980s, “indie” and “pop” had not yet conjoined to become a compound word. There was the pop that inhabited the charts, and there was everything else.	<p />
@@ -15601,7 +15576,7 @@ Special thanks to Pat Fish
 <p class="p1">“We found ourselves, rather to our surprise, in the middle of the music game in London at a golden moment where some of the principles of punk had actually become normal business practice,” says Fish. “It didn’t stay that way for long, but for a while there was a genuine feeling that the independent sector was ahead of the major labels. The level of ‘success’ we achieved certainly did surprise us. It completely astonished us. After a year or two, we could no longer cope with it. We were entirely unprepared, which manifests in all sorts of silly ways that you can’t possibly anticipate until you’ve been there. I wouldn’t have missed a second of it.”	<p />
 
 <p class="p1"><i>A Scandal in Bohemia</i> and its follow-up, the mini-album <i>Sex and Travel</i> (Fish’s personal favorite from this period), attracted enough attention that the Jazz Butcher soon signed on the dotted line with labels around the world, including in the U.S. and Canada. While other U.K. bands, who had received more acclaim and sold more records at home, made few inroads internationally, the Jazz Butcher became favorites of college radio audiences abroad. (<i>Bloody Nonsense</i>, a flawless 1986 compilation made exclusively for North America and Australia, has probably served as an introduction for more people than anything else the band did.)	<p />
-<p class="p1">“The West Coast of the American continent has always been the place where we’ve done the best business, all the way from Vancouver down to San Diego. Hell of a commute, mind,” says Fish. “We’ve also had regional success in Chicago, Toronto, New York, Hamburg, Valencia, Paris, London, Tokyo&#8230; all over the place, really; always at club/small theatre-level, and always economically viable.”	
+<p class="p1">“The West Coast of the American continent has always been the place where we’ve done the best business, all the way from Vancouver down to San Diego. Hell of a commute, mind,” says Fish. “We’ve also had regional success in Chicago, Toronto, New York, Hamburg, Valencia, Paris, London, Tokyo... ; all over the place, really; always at club/small theatre-level, and always economically viable.”	
 	<p />
 <iframe width='100%' height='120' style='position: relative; display: block; width: 100%; height: 120px;' src='//bandcamp.com/EmbeddedPlayer/v=2/track=210734432/album=4137983860/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/' allowtransparency='true' frameborder='0'></iframe>	<p />
 <p class="p1">Having received what Fish in his box set notes as “the inspirational crash course in liberal education that is touring,” the band—now minus David J, who departed amicably to launch the soon-to-be chart-topping Love and Rockets with two of his former Bauhaus colleagues—returned to the studio to make “our greatest album ever.” Yet the resulting work, <i>Distressed Gentlefolk</i> (which followed very closely on the heels of <i>Bloody Nonsense</i> in 1986), is something of a misfire in Fish’s estimation, despite it remaining a fan favorite to this day. In retrospect, Fish says, there were several contributing factors: him and Eider going “in different directions” as songwriters, David J’s departure leaving an unfillable void, and “fatigue and liquor.” Although the album’s release was followed by a successful first tour of the U.S., Eider left soon after for a vastly underrated solo career. (His debut, <i>The Best Kisser in the World</i>, deserves a garlanded reissue of its own.)	<p />
@@ -15779,12 +15754,12 @@ The Jazz Butcher existed in that part of our lives which was always student digs
 	${extractPress(
 		body=${literalizeCommas(
 
-	<p />&#8220;Don&#8217;t you know they only make those pop records out of plastic?&#8221; Pat Fish asks on &#8220;Southern Mark Smith&#8221;, a signature early single from his band the Jazz Butcher. The implication is clear: Pop is disposable, and there is no need to take it so seriously and be so smug about it. Indeed, if the cliché about hurting the ones you love the most is true, Fish has an extra special fondness for pop. Over the course of the four albums and 41 tracks collected on <i>The Wasted Years</i>, he skewers pop in every which way&#8212;from the left, from the right, lyrically, musically, conceptually. And he shows his love by doing so with great care, meticulous wit, and, well, some great pop music. 	<p />
-	<p />Fish (nee Patrick Huntrods) formed the Jazz Butcher in Oxford, England, in the midst of a post-punk indie scene that had become almost unbearably self-serious and was starting to be swallowed up by New Romantic synthpop. Fish essentially took the punk rock ideals of irreverence, scathing social commentary, and not necessarily being great at playing instruments, and carried them into the nascent world of guitar-led indie pop. In true punk spirit, he teamed up with a classically-trained, prodigiously-talented guitar player, Max Eider. Along with an unsettled cast that at one point included ex-Bauhaus and future Love &amp; Rockets bassist David J, Fish and Eider went about making the Jazz Butcher the indie successor to the rowdy-but-sharp British pub rock of Dave Edmunds, Nick Lowe, and the like. 	<p />
-	<p />In the process, the Jazz Butcher became one of the most essential, continually interesting indie bands of the 1980s and beyond. They always seemed to be on the verge of completely falling apart, succumbing to drink, going broke, or some combination of the three. How they managed to continue and make some great music in the process was a mystery to them as well as anyone, and <i>The Wasted Years</i> doesn&#8217;t try to solve it. Instead, it simply presents the band&#8217;s first four albums, released one per year between 1983 and 1986 by the tiny Glass label. No bonus tracks, outtakes, live cuts, radio sessions, etc. But that is just as well because every facet of the nascent band is laid out scattershot-style on the albums proper.&nbsp; 	<p />
-	<p />A truly and modestly brilliant lyricist, Fish sings songs about all sorts of things, but mainly food, Russians, women, Russian women, and men. He&#8217;s biting and cynical, but never mean-spirited and also very funny. In one of the early Butcher&#8217;s signature tunes, &#8220;Party Time&#8221;, he turns &#8216;80s hedonism on its head, declaring it no more than &#8220;better than a cold bath with someone you dislike&#8221;. Before <i>The Wasted Years</I> are through, he has skewered macho men (&#8220;They play bad darts and drink bad beer&#8221;), stuffy British tourists (who &#8220;would never dare abuse the hospitality [they&#8217;re] given&#8221;), even love itself (&#8220;It&#8217;s like the bends for a diver, a back seat for the driver&#8221;). Yet Fish never comes across as a smug wiseass who thinks he&#8217;s above it all. When he does talk about women and relationships, it&#8217;s with the awkward self-doubt of a natural born wallflower. &#8220;Hey girl, please don&#8217;t think me rude,&#8221; he says at one point, &#8220;I owe you some kind of gratitude; I don&#8217;t know how these things are done.&#8221; 	<p />
-	<p />Underneath the cunning and mirth is a melancholic, almost defeatist undercurrent, and it lends some of these songs a surprising beauty and gravitas. The debut, <i>Bath of Bacon</i>, goes too heavy on the silliness and novelty, aiming at such esoteric targets as the Normal&#8217;s S&amp;M-flavored underground hit &#8220;Warm Leatherette&#8221;. But starting from sophomore effort <i>A Scandal in Bohemia</i>, Fish and friends become more balanced and focused. On &#8220;President Reagan&#8217;s Birthday Present&#8221;, Fish addresses Cold War tension: &#8220;A squad of Bolsheviks came flying through the air… they were communists and assholes,&#8221; he says, capturing the era&#8217;s zeitgeist more succinctly than a hundred Simple Minds songs. But he also leaves room for sweet, jangly guitar pop like &#8220;Girlfriend&#8221; and &#8220;Only a Rumour&#8221;. By the end of fourth album <i>Distressed Gentlefolk</i>, &#8220;Angel&#8221; is tender and heartfelt enough to put one on the verge of tears. 	<p />
-	<p />The music is, perhaps not surprisingly, all over the place, but never dull. There is acid garage rock, stomping Antmusic, dub reggae, Bavarian waltzing, and, of course, some jazzy numbers with cool, finessing solos from Eider. All in all, there is an airtight, five-star double-album to be culled from <i>The Wasted Years</i>, but compilation albums are already available, and the full-on Butcher experience is well worth the price of admission. The band would subsequently sign with Creation Records and release even better, more consistent material. Amidst temporary leaves of absence and side-projects, they remain a worthy concern and still perform live. With any luck <i>The Wasted Years</i> is the first salvo in a career appreciation that is long overdue.&nbsp;
+	<p />“Don't you know they only make those pop records out of plastic?” Pat Fish asks on “Southern Mark Smith”, a signature early single from his band the Jazz Butcher. The implication is clear: Pop is disposable, and there is no need to take it so seriously and be so smug about it. Indeed, if the cliché about hurting the ones you love the most is true, Fish has an extra special fondness for pop. Over the course of the four albums and 41 tracks collected on <i>The Wasted Years</i>, he skewers pop in every which way - from the left, from the right, lyrically, musically, conceptually. And he shows his love by doing so with great care, meticulous wit, and, well, some great pop music. 	<p />
+	<p />Fish (nee Patrick Huntrods) formed the Jazz Butcher in Oxford, England, in the midst of a post-punk indie scene that had become almost unbearably self-serious and was starting to be swallowed up by New Romantic synthpop. Fish essentially took the punk rock ideals of irreverence, scathing social commentary, and not necessarily being great at playing instruments, and carried them into the nascent world of guitar-led indie pop. In true punk spirit, he teamed up with a classically-trained, prodigiously-talented guitar player, Max Eider. Along with an unsettled cast that at one point included ex-Bauhaus and future Love & Rockets bassist David J, Fish and Eider went about making the Jazz Butcher the indie successor to the rowdy-but-sharp British pub rock of Dave Edmunds, Nick Lowe, and the like. 	<p />
+	<p />In the process, the Jazz Butcher became one of the most essential, continually interesting indie bands of the 1980s and beyond. They always seemed to be on the verge of completely falling apart, succumbing to drink, going broke, or some combination of the three. How they managed to continue and make some great music in the process was a mystery to them as well as anyone, and <i>The Wasted Years</i> doesn't try to solve it. Instead, it simply presents the band's first four albums, released one per year between 1983 and 1986 by the tiny Glass label. No bonus tracks, outtakes, live cuts, radio sessions, etc. But that is just as well because every facet of the nascent band is laid out scattershot-style on the albums proper.
+	<p />A truly and modestly brilliant lyricist, Fish sings songs about all sorts of things, but mainly food, Russians, women, Russian women, and men. He's biting and cynical, but never mean-spirited and also very funny. In one of the early Butcher's signature tunes, “Party Time”, he turns ‘80s hedonism on its head, declaring it no more than “better than a cold bath with someone you dislike”. Before <i>The Wasted Years</I> are through, he has skewered macho men (“They play bad darts and drink bad beer”), stuffy British tourists (who “would never dare abuse the hospitality [they're] given”), even love itself (“It's like the bends for a diver, a back seat for the driver”). Yet Fish never comes across as a smug wiseass who thinks he's above it all. When he does talk about women and relationships, it's with the awkward self-doubt of a natural born wallflower. “Hey girl, please don't think me rude,” he says at one point, “I owe you some kind of gratitude; I don't know how these things are done.” 	<p />
+	<p />Underneath the cunning and mirth is a melancholic, almost defeatist undercurrent, and it lends some of these songs a surprising beauty and gravitas. The debut, <i>Bath of Bacon</i>, goes too heavy on the silliness and novelty, aiming at such esoteric targets as the Normal's S&M-flavored underground hit “Warm Leatherette”. But starting from sophomore effort <i>A Scandal in Bohemia</i>, Fish and friends become more balanced and focused. On “President Reagan's Birthday Present”, Fish addresses Cold War tension: “A squad of Bolsheviks came flying through the air… they were communists and assholes,” he says, capturing the era's zeitgeist more succinctly than a hundred Simple Minds songs. But he also leaves room for sweet, jangly guitar pop like “Girlfriend” and “Only a Rumour”. By the end of fourth album <i>Distressed Gentlefolk</i>, “Angel” is tender and heartfelt enough to put one on the verge of tears. 	<p />
+	<p />The music is, perhaps not surprisingly, all over the place, but never dull. There is acid garage rock, stomping Antmusic, dub reggae, Bavarian waltzing, and, of course, some jazzy numbers with cool, finessing solos from Eider. All in all, there is an airtight, five-star double-album to be culled from <i>The Wasted Years</i>, but compilation albums are already available, and the full-on Butcher experience is well worth the price of admission. The band would subsequently sign with Creation Records and release even better, more consistent material. Amidst temporary leaves of absence and side-projects, they remain a worthy concern and still perform live. With any luck <i>The Wasted Years</i> is the first salvo in a career appreciation that is long overdue.
 
 )})}
 	${jbc_footer}
@@ -15844,21 +15819,21 @@ As the project of Pat Fish, The Jazz Butcher has endured through myriad changes 
 </div>
 <p />The Jazz Butcher has evolved quite a bit over the decades, but right from the beginning, sullen they were not. <em>In Bath of Bacon</em>, which dropped one of its prepositions at some point after its release in 1983, is infused with humor from the start, with “Gloop Jiving” a plunge into faux-cabaret finger-snap tomfoolery. Announcing himself as The Jazz Butcher and coming of like a highball-in-hand smoothie, guitar and sax help set the mood behind him.	
 	<p />
-It leads into an R&amp;B revue styled theme song (think “Land of 1,000 Dances”) that’s somewhat anemic compared to its inspiration. But in large part due to guitarist Max Eider, there’s a musical sharpness that eventually shares the spotlight with said humor (due to the Brit nature of it all, that should be humour, I suppose), a circumstance further aided by Fish’s budding acumen as a songwriter; his strongest are “Playtime,” “Sex Engine Thing,” and “Zombie Love.”	
+It leads into an R&B revue styled theme song (think “Land of 1,000 Dances”) that’s somewhat anemic compared to its inspiration. But in large part due to guitarist Max Eider, there’s a musical sharpness that eventually shares the spotlight with said humor (due to the Brit nature of it all, that should be humour, I suppose), a circumstance further aided by Fish’s budding acumen as a songwriter; his strongest are “Playtime,” “Sex Engine Thing,” and “Zombie Love.”	
 	<p />
 Non-serious subject matter is often indicative of a lack of ambition, but not <em>Bath of Bacon</em>, which as it unwinds sorta connects like post-punk upstarts in an Orange Juice or Style Council mold striving to be the Bonzo Dog Doo-Dah Band of their generation. The sheer range, from French pop imitations (“La Mer”) to pop exotica nods (“Chinatown”) to a Normal nick (“Grey Flannelette”) to an ode to young felines (“Love Kittens”) help counterbalance inconsistency as bold swipes of the Modern Lovers (in “Sex Engine Thing”) and Steppenwolf (in “Poisoned by Food”) reinforce the not-yet-pro nature of it all.	
 	<p />
 The gorgeously infectious guitar-pop of opener “Southern Mark Smith (Big Return)” makes immediately clear that <em>A Scandal in Bohemia</em> was a major stride forward, a scenario only accentuated by a bigger studio and a solid backing band (including Eider, Owen Jones and notably, David J, formerly of Bauhaus), though Fish’s eccentric flourishes and genre hopping continue to formulate the distinctive approach that’s brought the Butcher persevering cult status.	
 	<p />
-However, the differing styles cohere much more effectively, with the pre-Beatle ’60s pop of “Soul Happy Hour” flowing into the neo-rockabilly of “I Need Meat,” which leads into the acoustic Eider highlight “Just Like Bettie Page.” Side two holds the art-funky “Marnie (Muscovite Mix),” the blast of punkish heaviness “Caroline Wheeler&#8217;s Birthday Present,” and an additionally fine slice of guitar pop in “Girlfriend.” Overall, humor is less of a defining trait, with the exceptions being “Mind Like a Playgroup” and more so closer “My Desert.”	
+However, the differing styles cohere much more effectively, with the pre-Beatle ’60s pop of “Soul Happy Hour” flowing into the neo-rockabilly of “I Need Meat,” which leads into the acoustic Eider highlight “Just Like Bettie Page.” Side two holds the art-funky “Marnie (Muscovite Mix),” the blast of punkish heaviness “Caroline Wheeler's Birthday Present,” and an additionally fine slice of guitar pop in “Girlfriend.” Overall, humor is less of a defining trait, with the exceptions being “Mind Like a Playgroup” and more so closer “My Desert.”	
 	<p />
 Fish, or as he was credited on the back cover, Butch, hadn’t scaled back his observations, they just worked better as pop-rock lyrics, especially on the macho pub asshole takedown “Real Men,” and if still not at peak ability as a singer, he’s getting nearer. Horns are still occasionally in evidence, but the cocktail-jazz aura has dissipated, which is a nice turn of events moving forward.	
 	<p />
 <em>Sex and Travel</em> is variously listed as a mini-LP and a full album, but its eight songs total half an hour and deliver a full meal. If elements noticeably came together on <em>A Scandal in Bohemia</em>, here they gel completely, with some important adjustments, primary amongst them Fish graduating from sly joker to even sharper wit as his vocal talents bloom. Furthermore, the Butcher is no longer accurately assessed as genre-jumping, with the songs wide-ranging but unified.	
 	<p />
-It first side opens with consecutive pop gems in the decidedly indie poppish “Big Saturday” and the deftly Ray Davies-ish “Holiday,” tucks in the rollicking shout-along “Red Pets” and closes with a long dose of well-calibrated sophistication “Only a Rumour.” On the flip, “President Reagan’s Birthday Present” builds to a rousing conclusion, “What&#8217;s the Matter, Boy?” lightens the mood, and “Walk with the Devil” takes a cinematic turn. “Down the Drain” might seem a slight bit of fun at first, but it delivers a satisfying conclusion.	
+It first side opens with consecutive pop gems in the decidedly indie poppish “Big Saturday” and the deftly Ray Davies-ish “Holiday,” tucks in the rollicking shout-along “Red Pets” and closes with a long dose of well-calibrated sophistication “Only a Rumour.” On the flip, “President Reagan’s Birthday Present” builds to a rousing conclusion, “What's the Matter, Boy?” lightens the mood, and “Walk with the Devil” takes a cinematic turn. “Down the Drain” might seem a slight bit of fun at first, but it delivers a satisfying conclusion.	
 	<p />
-It also spelled the end David J’s involvement, as he split for Love and Rockets. From there, the group recorded the live <em>Hamburg</em> and the “Hard” EP (neither included here) under the name The Jazz Butcher &amp; the Sikkorskis from Hell, and then again adjusted the moniker to The Jazz Butcher Conspiracy for the ’86 album <em>Distressed Gentlefolk</em>, which rounds out this set as it details Fish’s continued blossoming as a songwriter and vocalist.	
+It also spelled the end David J’s involvement, as he split for Love and Rockets. From there, the group recorded the live <em>Hamburg</em> and the “Hard” EP (neither included here) under the name The Jazz Butcher & the Sikkorskis from Hell, and then again adjusted the moniker to The Jazz Butcher Conspiracy for the ’86 album <em>Distressed Gentlefolk</em>, which rounds out this set as it details Fish’s continued blossoming as a songwriter and vocalist.	
 	<p />
 And the range keeps widening. “Falling in Love” leans into country without faltering into trite mimicry, “Big Bad Thing” is a fun rocker halfway between Robyn Hitchcock and Dave Edmunds, “Still in the Kitchen” dices into ’80s pop-rock with slight hints of third album Velvets, and “Hungarian Love Song” is bouncy guitar-pop. Side one’s closer “The New World” brings back the jazz, this time via balladry triggering thoughts of smoldering ashtrays and two-drink minimums. It borders on the too-sophisto, but that seems deliberate; through Fish’s raised vocal game and Eider’s typically fine execution, it works.	
 	<p />
@@ -16259,10 +16234,10 @@ On ne se voit pas très souvent et on ne communique pas énormément, si ce n’
 <img src="https://popnews.com/wp-content/uploads/2020/05/IMG_3250-1024x683.jpg" alt="" width="1024" height="683"  />	
 	<p />
 <strong>Tu jouais du saxophone quand tu étais plus jeune. C’est un instrument auquel tu restes attché ?</strong><br />
-Oui, et d’ailleurs le Jazz Butcher a longtemps eu un saxophoniste, Alex Green, mais cela fait des années qu’il ne joue plus. Je me souviens d’une interview – d’ailleurs j’ai toujours la cassette, bizarrement – dans laquelle il disait, d’un air très pénétré : « Bien sûr, au tout début de l&rsquo;humanité, on communiquait en soufflant dans une corne. C’est ça qui est venu en premier. » Et la dernière fois que je l’ai vu, il m’a dit qu’il avait mis son saxo au rebut ! Ça n’est plus aussi important pour lui, visiblement. Il était venu me voir chez moi, sans prévenir, on avait discuté. Je lui avais demandé ce qu’il faisait à présent, et il m’avait répondu qu’il travaillait pour la banque Barclays à Jersey. Il avait alors commencé à m’expliquer toutes les opérations un peu louches qu’il faisait, avec l’Iran, des choses comme ça, en me disant que ça restait évidemment entre nous. Et le lendemain, je vais acheter le journal, et je lis « Barclays bank in Jersey, completely corrupt : 10 page special » ! Il est sans doute en prison aujourd’hui. (rires)	
+Oui, et d’ailleurs le Jazz Butcher a longtemps eu un saxophoniste, Alex Green, mais cela fait des années qu’il ne joue plus. Je me souviens d’une interview – d’ailleurs j’ai toujours la cassette, bizarrement – dans laquelle il disait, d’un air très pénétré : « Bien sûr, au tout début de l’humanité, on communiquait en soufflant dans une corne. C’est ça qui est venu en premier. » Et la dernière fois que je l’ai vu, il m’a dit qu’il avait mis son saxo au rebut ! Ça n’est plus aussi important pour lui, visiblement. Il était venu me voir chez moi, sans prévenir, on avait discuté. Je lui avais demandé ce qu’il faisait à présent, et il m’avait répondu qu’il travaillait pour la banque Barclays à Jersey. Il avait alors commencé à m’expliquer toutes les opérations un peu louches qu’il faisait, avec l’Iran, des choses comme ça, en me disant que ça restait évidemment entre nous. Et le lendemain, je vais acheter le journal, et je lis « Barclays bank in Jersey, completely corrupt : 10 page special » ! Il est sans doute en prison aujourd’hui. (rires)	
 	<p />
 <strong>Il y a quelques années, un nouvel album était annoncé, “The Highest in the Land”. Qu’en est-il ?</strong><br />
-Il devrait sortir, sur le label Glass qui a été relancé sous le nom Glass Modern. Ils ont déjà sorti un morceau de Future Pilot AKA avec Robert Wyatt au chant. J’aime bien l’idée de renouer avec mon ancien label même si j’ai de très bons rapports avec Fire records. Pour l’instant, j’en suis au stade des maquettes, je dois avoir 60 ou 70 % des chansons. Parfois, c’est vers la fin de l’enregistrement d’un album qu’une nouvelle émerge, de façon presque inconsciente. Ça a été le cas de “La Mer”, sur le premier album. J’avais passé tout l’après-midi dessus sans en être satisfait. Soudain, j’ai eu l’idée d’écrire un texte en français, et hop, ça fonctionnait. Souvent, le fait d&rsquo;être limité en temps stimule l&rsquo;imagination.	
+Il devrait sortir, sur le label Glass qui a été relancé sous le nom Glass Modern. Ils ont déjà sorti un morceau de Future Pilot AKA avec Robert Wyatt au chant. J’aime bien l’idée de renouer avec mon ancien label même si j’ai de très bons rapports avec Fire records. Pour l’instant, j’en suis au stade des maquettes, je dois avoir 60 ou 70 % des chansons. Parfois, c’est vers la fin de l’enregistrement d’un album qu’une nouvelle émerge, de façon presque inconsciente. Ça a été le cas de “La Mer”, sur le premier album. J’avais passé tout l’après-midi dessus sans en être satisfait. Soudain, j’ai eu l’idée d’écrire un texte en français, et hop, ça fonctionnait. Souvent, le fait d’être limité en temps stimule l’imagination.	
 	<p />
 Photos : Vincent Arquillière (Londres, 2016, et Fontenay-aux-Roses, 2019).	<p />
 
@@ -16398,21 +16373,21 @@ The first domestic release from four deranged Britons contains tracks previously
 		<p />
 		Mr Novak explained while some bands and musicians don’t work with others, it was the opposite for Pat, adding, “He didn’t have any siblings or children and I think other musicians became part of his close family.
 		<p />
-		“I think people get complacent and think people will be around for ever, it’s important we appreciate people while they&apos;re around.”
+		“I think people get complacent and think people will be around for ever, it’s important we appreciate people while they're around.”
 		<p />
 		While Pat would continue to play as The Jazz Butcher, one of his more recent projects was as bassist in The Drones Club.
 		<p />
-		The Drones Club, which has its roots in the folk scene and play ancestral and improvised music, came together in 2014 and were formed by Ian Clabburn and Russell Cooper - the latter who Pat had previously played with in both Wilson and Sumosonic. Pat replaced the band&apos;s first bassist and they were later joined by guitarist Steve Gordon on guitar.
+		The Drones Club, which has its roots in the folk scene and play ancestral and improvised music, came together in 2014 and were formed by Ian Clabburn and Russell Cooper - the latter who Pat had previously played with in both Wilson and Sumosonic. Pat replaced the band's first bassist and they were later joined by guitarist Steve Gordon on guitar.
 		<p />
 		Mr Clabburn said “Pat was very generous with his expertise.
 		<p />
-		“It’s a great loss. There was no pretention, he took you at face value and there was never a subtext. “You can&apos;t say that about many people.
+		“It’s a great loss. There was no pretention, he took you at face value and there was never a subtext. “You can't say that about many people.
 		<p />
 		“It was Pat who took a disparate group of musicians and with good humour moulded them into a cohesive band with its own sound.
 		<p />
 		“I learned so much and feel that I am a better musician, for which I will be forever grateful.”
 		<p />
-		The Drones Club continued to meet weekly until Pat’s recent death, to rehearse, with Mr Clabburn admitting it was “often more of a social get together, peppered with Pat&apos;s apparently endless supply of anecdotes”.
+		The Drones Club continued to meet weekly until Pat’s recent death, to rehearse, with Mr Clabburn admitting it was “often more of a social get together, peppered with Pat's apparently endless supply of anecdotes”.
 		<p />
 		“It was an honour and privilege to play with someone with so much talent, so much drive and so much determination. We will miss him deeply,” he added.
 		<p />

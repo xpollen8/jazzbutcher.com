@@ -7,7 +7,7 @@
 ## highest
 ## Come, Friendly Spacemen (Club)
 ##
-#define	albums->numFields	29
+#define	albums->numFields	30
 #define	albums->field[1]	type
 #define	albums->field[2]	href
 #define	albums->field[3]	title
@@ -37,6 +37,7 @@
 #define	albums->field[27]	bishopsez
 #define	albums->field[28]	audio
 #define	albums->field[29]	downloads
+#define	albums->field[30]	video
 
 #define	albums[1]->type	album
 #define	albums[1]->lookup	bacon
@@ -1602,7 +1603,7 @@
 #define	albums[37]->media	CD
 #define	albums[37]->CDring	the floor was slightly wet
 #define	albums[37]->thumb	/images/western
-#define	albums[37]->images	/images/western2
+#define	albums[37]->images	/images/western2;;Tom Peterson
 #define	albums[37]->dtreleased	1993
 #define	albums[37]->blurb
 	<div class="annotation">For loonie completists only, for sure, though, if you listen through the muck, you'll see that we did our bit.</div>
@@ -2717,6 +2718,8 @@
 #define	albums[47]->href	${jbc_albums}/last_of_the_gentleman_adventurers.html
 #define	albums[47]->title	Last of the Gentleman Adventurers
 #define	albums[47]->thumb	/images/adventurers_front
+##define	albums[47]->video	https://www.youtube.com/embed/NI0QBCSsVGk;;23 ears;;https://www.youtube.com/channel/UCJYL-nO2qAgD9fC-Ux7aOeQ;;2017-07-10;;The Jazz Butcher Appeal
+#define	albums[47]->video	/video/adventurers_pledge.mp4;;Pat & Max;;;;2012-07-01;;The Jazz Butcher Crowdfunding Appeal
 #define	albums[47]->blurb	Crowd-funded in under 12 hours, recorded on 2" tape, lush and warm..
 #define	albums[47]->dtreleased	2012-10-18
 #define	albums[47]->liner
@@ -3436,7 +3439,6 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[90]->href	${jbc_albums}/va_call_northampton_vol1.html
 #define	albums[90]->media	CD
 #define	albums[90]->title	VA: Now That's What I Call Northampton Vol #1
-#define	albums[90]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/2010_NowThatsWhatICallNorthamptonVol1
 #define	albums[90]->dtreleased	2010
 #define	albums[90]->contribution [ mercy, wildlife ]
 #define	albums[90]->blurb

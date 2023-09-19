@@ -3,7 +3,7 @@ import Link from 'next/link';
 const MakeSimpleURI = ({ uri='', text, aux, children }: {
 	uri?: string
 	text: string
-	aux?: string
+	aux?: string | React.ReactNode
 	children?: React.ReactNode
 }, key: number): React.ReactNode  => (
 	<div key={key} className="mt-2 p-1">

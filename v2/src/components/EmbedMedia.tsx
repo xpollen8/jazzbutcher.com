@@ -136,7 +136,7 @@ const EmbedMedia = ({ data = {}, children, disableVideo=false } : any) => {
 						{(comment) && <span className="smalltext"> ({comment}) </span>}
 						<div className="listenItem">
 							<EmbedVideo data={data} />
-							{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
+							{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 						</div>
 					</>);
 				}

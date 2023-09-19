@@ -19,7 +19,6 @@ create table lyrics (
 	annotated varchar(10),
 	is_instrumental varchar(10),
 	images varchar(500),
-	media varchar(500),
 	video varchar(500),
 	dtcreated datetime not null default NOW(),
 	INDEX idx0(lyrics_id),

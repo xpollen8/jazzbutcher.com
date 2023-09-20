@@ -63,15 +63,6 @@ const HomeReleases = () =>
 		<ReleaseBlurb lookup='adventurers' key={6} />
 </>
 
-/*
-const homeItems = [
-		<HomeBooks />,
-		<HomeReleases />,
-		<BookSikkorski />,
-		<BookMiraclesAndWonders />,
-];
-		*/
-
 const Home = (): React.ReactNode =>
 <>
 	<Header section='jbc' />
@@ -95,7 +86,7 @@ const Home = (): React.ReactNode =>
 		</Swiper>*/}
   <div className="flex flex-wrap justify-center">
 		<div className="grow max-w-xl m-1">
-			<div className="border p-3 bg-slate-100">
+			<div className="border p-3 bg-slate-100 drop-shadow-sm">
       <Memorial />
 			</div>
 			<p />

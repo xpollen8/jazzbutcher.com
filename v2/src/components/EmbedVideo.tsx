@@ -1,6 +1,6 @@
-const EmbedVideo = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
+const EmbedVideo = ({ data = {}, className, children }: { data: any, className?: string, children?: React.ReactNode }) => {
 	const { datetime, type, setnum, ordinal, song, author, comment, performers, mediaurl, mediacredit, mediacrediturl } = data;
-	return (<>
+	return (<div className={className}>
 		{(() => {
 			if (mediaurl.startsWith('/video')) {
 				// local video
@@ -36,7 +36,7 @@ const EmbedVideo = ({ data = {}, children }: { data: any, children?: React.React
 		})()}
 		{(comment) && <div className="annotation"> {comment} </div>}
 		{children}
-	</>);
+	</div>);
 }
 
 export default EmbedVideo;

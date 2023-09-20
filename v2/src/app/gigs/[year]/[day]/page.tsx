@@ -51,20 +51,20 @@ const GigMedia = ({ data }: any) => {
 	const caption = removeHTML(data?.image_caption?.image_caption);
 	const alt = caption || `Gig ${data?.type}`;
 
+	const useDate = (data?.credit_date === '0000-00-00 00:00:00') ? '' : data?.credit_date;
 	return (<div className="image drop-shadow-md" style={{ width: width / 1.45 }}>
 		<Link href={`${image}`}>
 			<Image src={thumb} width={width / 1.5} height={height / 1.5} alt={alt} className="max-w-md" />
 		</Link>
-		<div className="credits">
-			<ParsedCaption {...data} />
-		</div>
+		<ParsedCaption {...data} credit_date={useDate} />
 	</div>)
 }
 
 const GigText = ({ data }: any) => {
 	return (<>
-		<RenderHTML body={data?.body} />
-		<Credit g={removeHTML(data?.credit)} u={data?.credit_url} d={data?.credit_date} />
+		<RenderHTML className="listItem" body={data?.body}>
+			<Credit g={data?.credit} u={data?.credit_url} d={data?.credit_date} />
+		</RenderHTML>
 	</>)
 }
 
@@ -135,7 +135,7 @@ const GigWit = ({ data }: any) => {
 		</div>
 	)
 }
-const GigWith = (data: any) => <><Iterator data={data} func={GigWit} /></>
+const GigWith = (data: any) => <><Tag>Also On The Bill</Tag><Iterator data={data} func={GigWit} /></>
 
 const GigPlayer = ({ data }: any) => {
 	return (
@@ -156,13 +156,15 @@ const GigPlayers = (data: any) => (
 
 const GigReview = ({ data }: any) => {
 	return (<>
-		<RenderHTML body={data?.body} />
-		<Credit g={removeHTML(data?.credit)} u={data?.credit_url} d={data?.credit_date} />
+		<RenderHTML className="listItem" body={data?.body} >
+			<Credit g={removeHTML(data?.credit)} u={data?.credit_url} d={data?.credit_date} />
+		</RenderHTML>
 	</>)
 }
 const GigReviews = (data: any) => <><Iterator data={data} func={GigReview} /></>
 
 const GigDetails = ({ data, extra }: any) => {
+	if (!data) return;
 	return (<>
 		{GigPlayers(extra?.players_JBC)}
 		{GigWith(extra?.players_with)}
@@ -284,8 +286,12 @@ const Content = ({ datetime }: { datetime: string }) => {
 		{ label: 'Reviews', lookup: 'text_review', func: GigReviews },
 	]
 
+	console.log("GIG", gig);
+	const det = gig?.results[0];
 	return <div className={`(isLoading) ? 'blur-sm' : '' w-full`}>
-		<Tag>Live Performance</Tag>
+		<Tag>Live Performance -
+		{det?.type} {det?.venue} {det?.city} {det?.country}
+		</Tag>
 		<Tabs.Root className="TabsRoot mx-2" defaultValue="details">
 			<Tabs.List className="TabsList" aria-label="Available gig details">
 				<Tabs.Trigger key='details' className="TabsTrigger" value='details'>

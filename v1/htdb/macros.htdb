@@ -3231,21 +3231,27 @@ ${define(_set, false)}
 #live	loop(y, 1, ${p_${idx}->numResults})
 #live	if (define(pix_current, ${p_${idx}[${y}]}))
 #live	endif
-#live	if (getval(p_${idx}[${p_${idx}->numResults}]) == ${EOI})
+##live	if (getval(p_${idx}[${p_${idx}->numResults}]) == ${EOI})
 #live		if (define(pix_credits, ${p_${idx}[${p_${idx}->numResults}]}))
 #live		endif
-#live	else if (define(pix_credits,))
-# 			no credit
+##live	else if (define(pix_credits,))
+## 			no credit
+##live	endif
+#live	if (getval(pix_credits) == .jpg)
+#live		if (define(pix_credits,))
+#live		endif
 #live	endif
 #live	if (getval(pix_current) == .jpg)
 
-##live	if (sql(insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}"))
-##live	endif
+#insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}";
+#live		if (sql(insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}"))
+#live		endif
 
 		${parsePhoto(p=${pix_current}, width=${width})}
 #live	else
 		<br/>${parseCredit(${filterProgramArguments(${pix_current})})}
 #live	endif
+
 #live	endloop
 	</div>
 #live	else
@@ -3321,8 +3327,8 @@ ${define(_set, false)}
 #live	endif
 
 #define	doPosterSQL(prefix)
-##live	if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", image="${stripWhitespace(${ts2PosterLink(${${prefix}->datetime})})}", ${credit2SQL(${prefix}->postercredit)} type="poster"))
-##live	endif
+#live	if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", image="${stripWhitespace(${ts2PosterLink(${${prefix}->datetime})})}", ${credit2SQL(${prefix}->postercredit)} type="poster"))
+#live	endif
 
 #define	doPostersSQL(prefix, posters)
 #live		if (makeArray(s, ${EOS}, ${unfilter(${posters})}))
@@ -3338,8 +3344,8 @@ ${define(_set, false)}
 #live				endif
 #live				loop(y, 1, ${p->numResults})
 #live				if ((getval(p[${y}]) == .jpg))
-##live				if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", type='poster', image="${truncAt(${EOI}, ${stripWhitespace(${literalizeQuotes(${p[${y}]})})})}" ${_credits}))
-##live				endif
+#live				if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", type='poster', image="${truncAt(${EOI}, ${stripWhitespace(${literalizeQuotes(${p[${y}]})})})}" ${_credits}))
+#live				endif
 #live				endif
 #live				endloop
 #live				endif
@@ -3360,8 +3366,8 @@ ${define(_set, false)}
 #live		endif
 #live		else
 		<div class="ml1">
-##live	if (sql(insert IGNORE into gigmedia set type='setlist', datetime="${${prefix}->datetime}", image="${ts2SetlistLink(${${prefix}->datetime})}"))
-##live	endif
+#live	if (sql(insert IGNORE into gigmedia set type='setlist', datetime="${${prefix}->datetime}", image="${ts2SetlistLink(${${prefix}->datetime})}"))
+#live	endif
 			<div class="ml-panel" style="${colorSet(1)};">
 				<a href="${ts2SetlistLink(ts=${_gig->datetime})}"><img alt="[setlist]" src="${ts2Setlist(ts=${_gig->datetime}, width=500)}"></a>
 			</div>
@@ -3381,8 +3387,8 @@ ${define(_set, false)}
 #live		endif
 #live		else
 		<div class="ml1">
-##live	if (sql(insert IGNORE into gigmedia set type='ticket', datetime="${${prefix}->datetime}", image="${ts2TicketLink(${${prefix}->datetime})}"))
-##live	endif
+#live	if (sql(insert IGNORE into gigmedia set type='ticket', datetime="${${prefix}->datetime}", image="${ts2TicketLink(${${prefix}->datetime})}"))
+#live	endif
 			<div class="ml-panel" style="${colorSet(1)};">
 				<a href="${ts2TicketLink(ts=${_gig->datetime})}"><img alt="[ticket]" src="${ts2Ticket(ts=${_gig->datetime}, width=500)}"></a>
 			</div>

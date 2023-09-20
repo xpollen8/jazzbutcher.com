@@ -100,18 +100,20 @@ const	EmbedBandcamp = ({ data = {}, children }: { data: any, children?: React.Re
 const	EmbedSoundCloud = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
 	const { mediaurl } = data;
 	const useURL = mediaurl?.replace('https:', 'https%3A');
-	return <iframe
+	return <> 
+		<iframe
 			width="100%"
 			height="300"
 			scrolling="no"
 			frameBorder="no"
 			allow="autoplay"
 			src={`https://w.soundcloud.com/player/?url=${useURL}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`}>
-		{children}
 		</iframe>
+		{children}
+		</>
 }
 
-const EmbedMedia = ({ data = {}, children, disableVideo=false } : { data: any, children?: React.ReactNode, disableVideo?: boolean }) => {
+const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { data: any, className?: string, children?: React.ReactNode, disableVideo?: boolean }) => {
 	const { autolink=true, parent, datetime, venue, city, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);
@@ -132,7 +134,7 @@ const EmbedMedia = ({ data = {}, children, disableVideo=false } : { data: any, c
 						</EmbedSoundCloud>
 					</>
 				} else if (useMediaurl?.includes('.mp3')) {
-					return (<blockquote className="listenItem">
+					return (<blockquote className="listenItem drop-shadow-md">
 						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 						<LinkAudio parent={parent} autolink={autolink} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} />
 						{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
@@ -144,8 +146,8 @@ const EmbedMedia = ({ data = {}, children, disableVideo=false } : { data: any, c
 						{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
 						{(author) && <span className="smalltext">({author})</span>}
 						{(comment) && <span className="smalltext"> ({comment}) </span>}
-						<div className="listenItem">
-							<EmbedVideo data={data} />
+						<div>
+							<EmbedVideo className={className} data={data} />
 							{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 							{children}
 						</div>

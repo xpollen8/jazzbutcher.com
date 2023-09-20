@@ -3800,16 +3800,34 @@ ${define(_set, false)}
 	${mkGigPress(dt=${_gig->datetime})}
 
 #live	if (defined(notes))
-	${begTab(Notes)} <div class="listItem">${notes}</div> ${endTab}
+#live	if (makeArray(_nx, ${EOD}, ${unfilter(${notes})}))
+#live		if (define(nx_current, ${_nx[1]}))
+#live		endif
+#live		if (getval(_nx[2]))
+#live			if (define(nx_credits, ${_nx[2]}))
+#live			endif
+#live		else
+#live			if (define(nx_credits, pat))
+#live			endif
+#live		endif
+#live	endif
+	${begTab(Notes)}
+	<div class="listItem">
+		${nx_current}
+		<br/>
+		${parseCredit(${filterProgramArguments(${nx_credits})})}
+	</div>
+	${endTab}
+
 #live	if (getval(update))
-#live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="notes", credit='pat', body="${stripWhitespace(${literalizeQuotes(${notes})})}"))
+##live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="notes", credit='pat', body="${stripWhitespace(${literalizeQuotes(${notes})})}"))
+#live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="notes", ${credit2SQL(nx_credits)}  body="${stripWhitespace(${literalizeQuotes(${truncAt(${EOD}, ${nx_current})})})}"))
 #live		endif
 #live	endif
 #live	endif
 
 
 #live	if (defined(pat))
-#	${begTab(${iconSelf} Pat Says)} <div class="annotation">${pat}</div> ${endTab}
 #live	if (makeArray(_px, ${EOD}, ${unfilter(${pat})}))
 #live		if (define(px_current, ${_px[1]}))
 #live		endif

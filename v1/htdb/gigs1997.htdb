@@ -72,8 +72,7 @@
 		)},
 		pat=${literalizeCommas(
 		From Pat Fish:  This gig is from the 12 Bar Club in London's "Tin Pan Alley", Denmark Street in the West End on Thursday 11th September 1997. Max and I booked it as a warm-up for the trip to Seattle and San Francisco. It was the first time that we had played a set together in public since 1985. You can kind of tell; both players are on their best behaviour. 🙂
-		${g_credit(g=Hale, u=https://www.youtube.com/senorme1001, d=2023-03-01)}
-		)}
+		)}$$Hale;;https://www.youtube.com/senorme1001;;2023-03-01
 	)}
 
 #define	Sep16.html()

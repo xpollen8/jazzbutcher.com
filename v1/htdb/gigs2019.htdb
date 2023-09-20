@@ -115,8 +115,7 @@
 		I treasure the memory of having met Pat and am so grateful to him, and for the fact that we still have his music. JBC
 		forever, folks. Much love to all, Jean xoxo
 		</p>
-		${g_credit(g=Jean Lazure, d=2022-10-06)}
-		)},
+		)}$$Jean Lazure;;;;2022-10-06,
 		who=${literalizeCommas(
 		${pat}
 		)},

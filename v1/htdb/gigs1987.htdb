@@ -47,8 +47,7 @@
 		reviews=${literalizeCommas(
 		My goodness, what a weird show.
 		About halfway through, Pat and Alex turn against the audience.
-		${g_credit(g=${del}, d=2017-11-05)}
-		)},
+		)}$$${del};;;;2017-11-05,
 		who=${literalizeCommas( ${pat}, ${green} )},
 	)}
 

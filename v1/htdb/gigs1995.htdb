@@ -195,8 +195,7 @@
 			(we're looking at around twenty tracks, I believe).
 			<p>
 			See you at the Garage,
-			${g_credit(g=${gab}, d=1995-12-01 12:43:15)}
-		)},
+		)}$$${gab};;;;1995-12-01 12:43:15,
 		pat=${literalizeCommas(
 		)}
 	,

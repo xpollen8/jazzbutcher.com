@@ -678,8 +678,7 @@
 			shintomo;;https://twitter.com/tomokos88/status/1429987603340697629
 		,reviews=${literalizeCommas(
 		During my first stay in London I saw the Jazz Butcher twice. I don’t remember the first one because I lost in London all night long after the live, so my memory was this episode.
-		)}$$
-			${g_credit(g=shintomo, u=https://twitter.com/tomokos88, d=2021-10-13)}
+		)}$$shintomo;;https://twitter.com/tomokos88;;2021-10-13
 	)}
 
 #define	Sep14.html()

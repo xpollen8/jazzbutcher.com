@@ -1042,10 +1042,8 @@
 			Still, he doesn't regret one moment of it, and neither do we as his awesome, and at times ridiculous, gravelly blues and
 			traditional union chants float into the night air, reminding Northampton that there's a vintage you can't buy on Camden
 			High Street. And The Fish has it, down to a T."
-			<p>
-			${g_credit(g=Natasha House, u=Northampton Chronicle & Echo, d=2005-08-05)}
 			</div>
-		)},
+		)}$$Natasha House - Northampton Chronicle & Echo;;;;2005-08-05,
 		pat=${literalizeCommas(
 		)}
 	)}

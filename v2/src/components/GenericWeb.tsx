@@ -8,32 +8,36 @@ const	genericWeb = ({ x, g, u, t, s, d }: {
 	t?: string
 	s?: string
 	d?: string
-}) => (
-	(x || g || u || parseDate(d)) && <span className={s}>
-		{(t) && <><b>{t}</b>:{' '}</>}
-		{(x) && <>{x}</>}
-		{(() => {
-			if (g?.startsWith('http')) {
-				if (u) {
-					return linkExternal(u, g)
-				} else {
-					return linkExternal(g, parseDomain(g))
-				}
-			} else {
-				if (u) {
-					if (u.startsWith('http')) {
+}) => {
+	const cleanG = g?.replace('</p>', '').replace('<p>', '<br/><br/>');
+	const cleanGX = <span dangerouslySetInnerHTML={{ __html: cleanG || '' }} />
+	return (
+		(x || g || u || parseDate(d)) && <span className={s}>
+			{(t) && <><b>{t}</b>:{' '}</>}
+			{(x) && <>{x}</>}
+			{(() => {
+				if (g?.startsWith('http')) {
+					if (u) {
 						return linkExternal(u, g)
 					} else {
-						return linkInternal(u, g)
+						return linkExternal(g, parseDomain(g))
 					}
 				} else {
-					return g?.replace('</p>', '').replace('<p>', '<br/><br/>');
+					if (u) {
+						if (u.startsWith('http')) {
+							return linkExternal(u, g)
+						} else {
+							return linkInternal(u, cleanG)
+						}
+					} else {
+						return cleanGX;
+					}
 				}
-			}
-		})()}
-		{(parseDate(d)) && dateDiff(d)}
-	</span>
-)
+			})()}
+			{(parseDate(d)) && dateDiff(d)}
+		</span>
+	)
+}
 
 export const Source = ({ g, u, d }: {
 	g?: string
@@ -116,10 +120,9 @@ export const removeHTML = (str?: string) => {
 
 export const ParsedCaption = (props: { credit?: string, url?: string, credit_url?: string, credit_date?: string, caption?: string | React.ReactNode, image_caption?: string | React.ReactNode }) => {
 	return (<>
-		{(props?.caption || props?.image_caption) && <>{props?.caption} {props?.image_caption}</>}
-		<br />
+		{(props?.caption || props?.image_caption) && <><div dangerouslySetInnerHTML={{ __html: `${props?.caption || ''} ${props?.image_caption}` }} /></>}
 		<Credit g={removeHTML(props?.credit)} u={props?.credit_url} d={props?.credit_date} />
 	</>)
 }
 
-export const RenderHTML = ({ body }: { body?: string}) => body && <div dangerouslySetInnerHTML={{ __html: body }} />
+export const RenderHTML = ({ body, className, children }: { body?: string, className?: string, children?: React.ReactNode }) => body && <div className={className}><div dangerouslySetInnerHTML={{ __html: body }} />{children}</div>

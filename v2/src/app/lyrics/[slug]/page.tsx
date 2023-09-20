@@ -40,7 +40,7 @@ const	LyricVideo = ({ video }: any) => {
 	if (!video) return;
 	const videos = parseCaptionsSourcesEtc(video);
 
-	return <div className="clear_float imageStrip" style={{ width: '263px' }}>
+	return <div className="clear_float imageStrip drop-shadow-md" style={{ width: '263px' }}>
 		{videos?.map((v: any, key: number) => {
 			const [ videourl, source, sourceurl, sourcedate, caption ] = v;
 			const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
@@ -61,7 +61,7 @@ const	LyricMedia = ({ media }: any) => {
 	return <>MEDIA</>;
 }
 
-const	LyricImages = ({ images }: any) => <ImageStrip className="imageStrip clear_float" images={parseCaptionsSourcesEtc(images, true)} />;
+const	LyricImages = ({ images }: any) => <ImageStrip className="drop-shadow-md imageStrip clear_float text-center" images={parseCaptionsSourcesEtc(images, true)} />;
 
 const Lyrics = (props: any) => {
 	const { video, media, images, lyrics, key } = props;

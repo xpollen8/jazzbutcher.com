@@ -72,7 +72,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 	const ArticleThumbAndImages = ({ article }: any) => {
 		if (article?.thumb || article?.images) {
 			return <ImageStrip
-				className="imageStrip"
+				className="drop-shadow-md imageStrip clear_float text-center"
 				width={200}
 				images={parseCaptionsSourcesEtc(`${article?.thumb}$$${article?.images}`, true)}
 			/>

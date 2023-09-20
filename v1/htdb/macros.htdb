@@ -3428,6 +3428,8 @@ ${define(_set, false)}
 #live		if (sql(_nextgig:select datetime, venue from gig where datetime>'${_gig->datetime}' and isdeleted is NULL order by datetime limit 1))
 #live		endif
 #live	if (getval(truncate))
+#live		if (sql(truncate table gigmedia))
+#live		endif
 #live		if (sql(truncate table gigtext))
 #live		endif
 #live	endif
@@ -3820,7 +3822,6 @@ ${define(_set, false)}
 	${endTab}
 
 #live	if (getval(update))
-##live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="notes", credit='pat', body="${stripWhitespace(${literalizeQuotes(${notes})})}"))
 #live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="notes", ${credit2SQL(nx_credits)}  body="${stripWhitespace(${literalizeQuotes(${truncAt(${EOD}, ${nx_current})})})}"))
 #live		endif
 #live	endif

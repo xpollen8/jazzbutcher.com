@@ -3204,13 +3204,13 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[76]->dtreleased	2017-11-17 (CD) - 2018-01-19 (LP)
 #define	albums[76]->media	LP,CD
 #define	albums[76]->blurb
-	The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gigs/1988/Jun5.html, June 5th\, 1988)} in CBC Studio 13 in Montreal.  The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
+	The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gigs/1988/Jun5.html, June 5th, 1988)} in CBC Studio 13 in Montreal.  The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
 #define	albums[76]->notes
     Little known fact! The Jazz Butcher's fabulous Brave New Waves session is one of the only sessions that ever got an official release, as the b-side of an EP called Spooky in the late 80s. Now hopelessly out of print, the session gets new life as part of the Brave New Waves series from Artoffact Records. This release includes a never-heard bonus track, a download card with bonus interviews, and completely updated and revised artwork, partially modified from the original Spooky sleeve art.
     <p />
     Led by Oxford philosophy graduate Pat Fish (the Jazz Butcher himself) and featuring a dazzling array of co-conspirators (including David Jay of Love And Rockets and Bauhaus fame), The Jazz Butcher is one of the longest running and most cult pop bands in Britain, having recorded some 15 albums since its founding in 1982. The band was one of the gems on the Creation Records roster, and has recently seen an incredible reissue series on Fire Records.
     <p />
-    The Jazz Butcher's Brave New Waves session was recorded on ${linkInternal(/gigs/1988/Jun5.html, June 5th\, 1988)} in CBC Studio 13 in Montreal. The recording features cameos by both ${kevin} (Rational Youth) and ${brent} (the Brave New Waves host). An over the top rendition of "Sex Engine" includes a memorable dig at Skinny Puppy, as well as at other Canadian icons. The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
+    The Jazz Butcher's Brave New Waves session was recorded on ${linkInternal(/gigs/1988/Jun5.html, June 5th, 1988)} in CBC Studio 13 in Montreal. The recording features cameos by both ${kevin} (Rational Youth) and ${brent} (the Brave New Waves host). An over the top rendition of "Sex Engine" includes a memorable dig at Skinny Puppy, as well as at other Canadian icons. The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
 
 #define	albums[77]->buy
 #define	albums[77]->type	various

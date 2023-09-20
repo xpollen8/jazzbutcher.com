@@ -234,7 +234,7 @@
 		pat=${literalizeCommas(
 		)}
 		,
-		photosets= /images/20000415/a.jpg$$
+		photosets=/images/20000415/a.jpg$$
 			/images/20000415/atlarge.jpg$$
 			/images/20000415/babyface.jpg$$
 			/images/20000415/c.jpg$$
@@ -303,7 +303,7 @@
 		pat=${literalizeCommas(
 		)}
 		,
-		photosets= /images/20000416/erie_1.jpg$$
+		photosets=/images/20000416/erie_1.jpg$$
 			/images/20000416/erie_2.jpg$$
 			/images/20000416/erie_3.jpg$$
 			/images/20000416/erie_4.jpg$$
@@ -328,7 +328,7 @@
 			/images/20000417/20000417_setlist.jpg$$
 			Robert Gilroy;;rgilroy@mail.bright.net
 		,
-		photosets= /images/20000417/jbc_pitt1.jpg$$
+		photosets=/images/20000417/jbc_pitt1.jpg$$
 			/images/20000417/max_pitt.jpg$$
 			Robert Gilroy;;rgilroy@mail.bright.net
 	,
@@ -577,7 +577,7 @@
 		)}$$
 			Mary;;mdec@lear.com
 		,
-		tickets= /images/20000419/20000419_ticket.jpg$$
+		tickets=/images/20000419/20000419_ticket.jpg$$
 		songinspace;;https://www.instagram.com/songinspace/
 	)}
 
@@ -713,7 +713,7 @@
 		)},
 		notes=${literalizeCommas(
 		)},
-		photosets= /images/20000423/001_1.jpg$$
+		photosets=/images/20000423/001_1.jpg$$
 			/images/20000423/002_2.jpg$$
 			/images/20000423/003_3.jpg$$
 			/images/20000423/004_4.jpg$$
@@ -796,7 +796,7 @@
 		)}$$
 			${del}
 		,
-		photosets= /images/20000429/jbcwebcast.jpg$$
+		photosets=/images/20000429/jbcwebcast.jpg$$
 			/images/20000429/fishy.jpg$$
 			${del}
 	)}
@@ -891,7 +891,7 @@
 		pat=${literalizeCommas(
 		)}
 		,
-		photosets= /images/20000504/JBC2.jpg$$
+		photosets=/images/20000504/JBC2.jpg$$
 			/images/20000504/JBC3.jpg$$
 			/images/20000504/JBC4.jpg$$
 			/images/20000504/JBC6.jpg$$
@@ -1188,7 +1188,7 @@
 		pat=${literalizeCommas(
 		)}
 		,
-		photosets= /images/20000508/disk3.Untitled1.jpg$$
+		photosets=/images/20000508/disk3.Untitled1.jpg$$
 			/images/20000508/disk3.Untitled3.jpg$$
 			/images/20000508/disk3.Untitled4.jpg$$
 			/images/20000508/disk3.Untitled5.jpg$$
@@ -1356,7 +1356,7 @@
 		pat=${literalizeCommas(
 		)}
 		,
-		photosets= /images/20000511/NYC2000051101.jpg$$
+		photosets=/images/20000511/NYC2000051101.jpg$$
 			/images/20000511/NYC2000051103.jpg$$
 			/images/20000511/NYC2000051104.jpg$$
 			/images/20000511/NYC2000051105.jpg$$
@@ -1504,7 +1504,7 @@
 			<a href="${jbc_root}/japan2000">Pat's Japan 2000 Travelogue</a>
 		)}
 		,
-		photosets= /images/20000617/DCP_1037.jpg$$
+		photosets=/images/20000617/DCP_1037.jpg$$
 			/images/20000617/DCP_1042.jpg$$
 			/images/20000617/DCP_1043.jpg$$
 			/images/20000617/DCP_1044.jpg$$
@@ -1672,7 +1672,7 @@
 			<a href="${jbc_root}/japan2000">Pat's Japan 2000 Travelogue</a>
 		)}
 		,
-		photosets= /images/20000618/DCP_1085.jpg$$
+		photosets=/images/20000618/DCP_1085.jpg$$
 			/images/20000618/DCP_1086.jpg$$
 			/images/20000618/DCP_1088.jpg$$
 			/images/20000618/DCP_1089.jpg$$

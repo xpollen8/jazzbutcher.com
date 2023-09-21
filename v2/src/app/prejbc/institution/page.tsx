@@ -1,27 +1,54 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EmbedMedia from '@/components/EmbedMedia';
 
+const images_PhilipSnow = [
+		{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/6+Sheldonian+1.jpg", alt: "Live Sheldonian #1" },
+		{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/6+Sheldonian+2.jpg", alt: "Live Sheldonian #2" },
+		{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/6+Sheldonian+3.jpg", alt: "Live Sheldonian #3" },
+		{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/6+Sheldonian+4.jpg", alt: "Live Sheldonian #4" },
+		{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Shirt_1.jpg", alt: "shirt 1" },
+		{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Shirt_2.jpg", alt: "shirt 2" },
+		{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Shirt_3.jpg", alt: "shirt 3" },
+];
+
+const Photoset = ({ images, className, title, children }:
+{ images: any[], className?: string, title?: string, children?: React.ReactNode }) => {
+	return (
+		<div className="border p-3 bg-slate-50">
+			{(title) && (
+			<center>
+				<h1>{title}</h1><p />
+			</center>
+			)}
+			<div className="flex flex-wrap grow gap-3 justify-center">
+				{images.map(({ src, alt }: any) => (
+					<div className="border drop-shadow-md outline p-1 bg-green-50">
+						<Link href={src}>
+							<Image src={src} width={250} height={250} alt={alt} />
+							<center><p />{alt}</center>
+						</Link>
+					</div>
+				))}
+		</div>
+		</div>
+	)
+}
+
 const Institution = () => 
 <>
 	<Header section="prejbc" title="The Institution"/>
 	<div className="gig_institution" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/6+Sheldonian+1.jpg" width={500} height={500} alt="Live Sheldonian #1" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/6+Sheldonian+2.jpg" width={500} height={500} alt="Live Sheldonian #2" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/6+Sheldonian+3.jpg" width={500} height={500} alt="Live Sheldonian #3" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/6+Sheldonian+4.jpg" width={500} height={500} alt="Live Sheldonian #4" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Shirt_1.jpg" width={500} height={500} alt="shirt 1" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Shirt_2.jpg" width={500} height={500} alt="shirt 2" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Shirt_3.jpg" width={500} height={500} alt="shirt 3" />
-	Images from Philip Snow.
+	<Photoset images={images_PhilipSnow} title='Images from Philip Snow' />
 <hr />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 2.jpg" width={500} height={500} alt="inst 5" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 29b.jpg" width={500} height={500} alt="inst 6" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 30a.jpg" width={500} height={500} alt="inst 7" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 2.jpg" width={250} height={250} alt="inst 5" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 29b.jpg" width={250} height={250} alt="inst 6" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 30a.jpg" width={250} height={250} alt="inst 7" />
 
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/TheInstitution_signed.jpg" width={500} height={500} alt="signed1" />
-	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/TheInstitution_vinyl.jpg" width={500} height={500} alt="signed1" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/TheInstitution_signed.jpg" width={250} height={250} alt="signed1" />
+	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/TheInstitution_vinyl.jpg" width={250} height={250} alt="signed1" />
 
 <p />
 <hr />

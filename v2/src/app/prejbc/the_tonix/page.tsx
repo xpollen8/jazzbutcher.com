@@ -21,6 +21,20 @@ const TheTonix = () =>
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/7+Tonix+1+(5).jpg" width={500} height={500} alt="live 5" />
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/7+Tonix+1+(6).jpg" width={500} height={500} alt="live 6" />
 
+<blockquote>
+Pat Fish -Vocals<br />
+John Silver - Bass<br />
+Dave Goldie - Guitar<br />
+Pete Millson - Guitar<br />
+Owen Jones - Drums<br />
+<br />
+Tracklist:<br />
+<br />
+01 Sex Junk<br />
+02 Strangers<br />
+03 Talk To me<br />
+</blockquote>
+
 <br />	https://www.discogs.com/release/2270038-The-Tonix-Strangers
 <br />	Label:	109 Product – STEG 002
 <br />	Format:	

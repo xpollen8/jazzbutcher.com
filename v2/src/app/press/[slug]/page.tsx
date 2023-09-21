@@ -37,7 +37,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 						{(t === 'pat') && <b style={{ margin: '3px' }}>The Butcher Writes </b> }
 						{(t === 'interview') && (<>
 							<b style={{ margin: '3px' }}>Interview w/Conspirator</b>
-							{(article?.person) && <>: {expand(article.person)}</>}
+							{(article?.person) && <>: {article.person.split(';').map(expand)}</>}
 						</>)}
 						{(t === 'gig' && article.dtgig) && (<>
 							<b style={{ margin: '3px' }}>The associated Gig:</b>

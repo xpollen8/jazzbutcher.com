@@ -24,8 +24,8 @@ const Photoset = ({ images, className, title, children }:
 			</center>
 			)}
 			<div className="flex flex-wrap grow gap-3 justify-center">
-				{images.map(({ src, alt }: any) => (
-					<div className="border drop-shadow-md outline p-1 bg-green-50">
+				{images.map(({ src, alt }: any, key: number) => (
+					<div key={key} className="border drop-shadow-md outline p-1 bg-green-50">
 						<Link href={src}>
 							<Image src={src} width={250} height={250} alt={alt} />
 							<center><p />{alt}</center>

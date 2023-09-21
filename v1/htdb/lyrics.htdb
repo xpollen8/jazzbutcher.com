@@ -5250,7 +5250,9 @@ G - G - C - D
 
 #define	drink.html
 #live	if (getval(page) = drink.html)
-	${lyricsHeader(title=D.R.I.N.K., lyrics=${literalizeCommas(
+	${lyricsHeader(title=D.R.I.N.K.,
+		images=/images/20211006/20211006_press_jericsmith;;Katelin Smith;;;;2021-10-06;;Max's handwritten DRINK lyrics from the 2012 Adventurer's fundraising,
+	lyrics=${literalizeCommas(
 
 	I'm broken-hearted
 	<br/>With all that this entails

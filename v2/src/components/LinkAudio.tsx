@@ -28,7 +28,7 @@ const LinkAudio = ({ parent, datetime, venue, city, title, comment, wav, mp3, ur
 			{(() => {
 				if (url) {
 					return <a href={url}>{title}</a>
-				} else if (title?.endsWith('.html') || title.includes(':')) {
+				} else if (title?.endsWith('.html') || title?.includes(':')) {
 					return title
 				} else if (autolink) {
 					return autoLink(title, autolink)

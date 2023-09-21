@@ -8,10 +8,11 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ImageStrip from '@/components/ImageStrip';
+import EmbedMedia from '@/components/EmbedMedia';
 import Tag from '@/components/Tag';
 import { Source, Credit } from '@/components/GenericWeb';
 import usePressArticle from '@/lib/usePressArticle';
-import { parseCaptionsSourcesEtc, dateDiff, dateDisplay, ts2URI } from '@/lib/macros';
+import { parseDomain, parseCaptionsSourcesEtc, dateDiff, dateDisplay, ts2URI } from '@/lib/macros';
 import { AutoLinkPlayer, expand } from '@/lib/defines';
 
 const PressArticle = ({ params }: { params?: any }) => {
@@ -30,6 +31,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 					{(article?.publication) && <><b>Published:</b> {article.publication}</>}
 					{(article?.location) && <>({article.location})</>} {dateDisplay(article.dtpublished, '')}
 					{(article?.credit) && <Credit g={article?.credit} u={article?.crediturl} />}
+					{(article?.source) && <span className="m-1"><b>Source:</b> <Link href={article.source}>{parseDomain(article.source)}</Link></span>}
 				</div>
 				{types.map((t: string) => (<>
 						{(t === 'kit') && <b style={{ margin: '3px' }}>Press Kit/Biography</b>}
@@ -37,7 +39,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 						{(t === 'pat') && <b style={{ margin: '3px' }}>The Butcher Writes </b> }
 						{(t === 'interview') && (<>
 							<b style={{ margin: '3px' }}>Interview w/Conspirator</b>
-							{(article?.person) && <>: {expand(article.person)}</>}
+							{(article?.person) && <>: {article.person.split(';').map(expand)}</>}
 						</>)}
 						{(t === 'gig' && article.dtgig) && (<>
 							<b style={{ margin: '3px' }}>The associated Gig:</b>
@@ -78,6 +80,21 @@ const PressArticle = ({ params }: { params?: any }) => {
 			/>
 		}
 	}
+	const ArticleAudio = ({ article }: any) => {
+		if (article?.audio) {
+			const audio = parseCaptionsSourcesEtc(article?.audio);
+			console.log("AUDIO", audio[0]);
+			if (audio?.length) {
+				return (<>
+					{audio?.filter(([ file, caption ]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>
+						<EmbedMedia data={{ mediaurl: file, comment: caption }} />
+					</>)
+					)}
+					<p />
+				</>)
+			}
+		}
+	}
 	const ArticleMedia = ({ article }: any) => {
 		if (article?.media) {
 			const media = parseCaptionsSourcesEtc(article?.media);
@@ -101,6 +118,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 					<ArticleInfoBox article={article} />
 					<div style={{ margin: '5px' }}>
 						<ArticleTitle article={article} />
+						<ArticleAudio article={article} />
 						<ArticleMedia article={article} />
 						<ArticleThumbAndImages article={article} />
 						<div dangerouslySetInnerHTML={{ __html: article?.body }} />

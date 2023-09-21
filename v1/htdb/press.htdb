@@ -160,7 +160,12 @@
 #live			if (getval(types[${t}]) == interview)
 				<b style="margin: 3px; ">Interview w/Conspirator:</b>
 #live				if (defined(${prefix}->person))
-					${person:${${prefix}->person}}
+#live					if (makeArray(itypes, ;, ${${prefix}->person}))
+#live						loop (ip, 1, ${itypes->numResults})
+								${${itypes[${ip}]}}
+#live						endloop
+
+#live					endif
 #live				endif
 #live			endif
 #live			if ((getval(types[${t}]) == gig) & (defined(${prefix}->datetime)))
@@ -245,14 +250,14 @@ ${d}
 #define	pressItems->field[14]	person
 #define	pressItems->field[15]	new
 
-#define	addPress(type, url, dt, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, added, headline, subhead, images, todo, media)
+#define	addPress(type, url, dt, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, added, headline, subhead, images, todo, media, audio)
 #live	if (defined(url))
 
 #live		if (defined(update))
 <h1>update (pub:${dt}) (gig: ${datetime}) (type:${type})</h1>
-#insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}";
+#insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", audio="${audio}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}";
 
-#live			if (sql(x:insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}"))
+#live			if (sql(x:insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", audio="${audio}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}"))
 #live			endif
 #live				if ((getval(type) == interview) & (defined(datetime)))
 #live					if (sql(x:update gig set extra=concat('interview,',extra) where extra not like '%%interview%%' and datetime='${fixDt(${datetime})}'))
@@ -406,17 +411,32 @@ ${d}
 		datetime=2014-09-20 20:00:00,
 		dt=2014-09-20 20:00:00)}
 
-	${addPress(type=gig;review,
+	${addPress(type=retrospective,
 		url=${jbc_press}/20211127_press_tribute.html,
 		publication=Whisperin And Hollerin,
 		title=A Celebration Of Pat Fish,
 		headline=The Jazz Butcher,
 		credit=simonovitch,
 		source=http://www.whisperinandhollerin.com/reviews/review.asp?id=15747,
-		datetime=2021-11-27 19:30:00,
-		dt=2021-11-27 19:30:00)}
+		dt=2021-11-27 19:30:00,
+		added=2023-09-10)}
 
-	${addPress(type=gig;interview,
+	${addPress(type=gig,
+		url=${jbc_press}/20150420_press_dirtyrock.html,
+		thumb=/images/20150417/20150417_pestano_Pat-Fish-en-el-16-Toneladas-de-Valencia;;Juan Carlos Pestano;;https://www.litelestudio.com/$$,
+		images=/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-16-Toneladas-de-Valencia$$/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas-de-Valencia-2015$$/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas-de-Valencia$$/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas$$/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-Valencia$$,
+		publication=Dirty Rock Magazine,
+		title=THE JAZZ BUTCHER (PAT FISH),
+		headline=EN EL 25 ANIVERSARIO DEL PROGRAMA DE RADIO LOS 39 SONIDOS EN EL 16 TONELADAS DE VALENCIA,
+		subhead=Valencia\, 16 Toneladas\, 17 Abril 2015,
+		location=Valencia\, Spain,
+		credit=Juan Vitoria,
+		source=https://www.dirtyrock.info/2015/04/the-jazz-butcher-pat-fish-en-el-25-aniversario-del-programa-de-radio-los-39-sonidos-en-el-16-toneladas-de-valencia/,
+		datetime=2015-04-17,
+		dt=2015-04-20,
+		added=2023-09-20)}
+
+	${addPress(type=interview,
 		url=${jbc_press}/19900411_alterock.html,
 		thumb=/images/19900411/19900411_alterock;;David Whittemore,
 		publication=Alterock,
@@ -426,6 +446,20 @@ ${d}
 		source=http://saltyka.blogspot.com/2009/05/jazz-butcher.html,
 		datetime=1990-04-11 00:00:00,
 		dt=1990-04-11)}
+
+	${addPress(type=interview, person=pat;max,
+		url=${jbc_press}/19860718_press_backgroundmediumproductions.html,
+		thumb=/images/19860718/19860718_press_backgroundmediumproductions_1,
+		images=/images/19860718/19860718_press_backgroundmediumproductions_2,
+		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19860718_JazzButcher_interview_backgroundmediumproductions.mp3;;The Interview,
+		publication=Background Medium Productions,
+		title=Background Noise Productions,
+		headline=Interview #2,
+		subhead=The Jazz Butcher - July 18, 1986,
+		credit=JC,,
+		source=https://happymediumproductions.weebly.com/rain---the-jazz-butcher.html,
+		dt=1986-07-18,
+		added=2023-09-20)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/198306_all_that_thinks_and_moves_2.html,
@@ -840,7 +874,6 @@ ${d}
 		url=${jbc_press}/20220307_press_rockandrollglobe.html,
 		title=The Last Will and Testament of Pat Fish,
 		headline=England’s indie rock icon gave us one final Jazz Butcher classic before departing this astral plane,
-		subhead=Patrick Huntrods\, better known to his legion of fans as Pat Fish\, passed away in October 2021 from a heart attack at the age of 63 years after a career that spanned four decades and resulted in 14 albums.,
 		publication=Rock and Roll Globe,
 		source=https://rockandrollglobe.com/indie-rock/albums-the-last-will-and-testament-of-pat-fish/,
 		credit=Rev. Keith A. Gordon,
@@ -17135,6 +17168,8 @@ All of that said, even as I’m very sad to lose an artist who moved me so deepl
 #live	if (getval(page) = 20220307_press_rockandrollglobe.html)
 	${extractPress(
 		body=${literalizeCommas(
+Patrick Huntrods, better known to his legion of fans as Pat Fish, passed away in October 2021 from a heart attack at the age of 63 years after a career that spanned four decades and resulted in 14 albums.
+<p />
 The very definition of a “cult artist,” Fish comes from a long and revered line of eccentric British musicians that includes Syd Barrett, Vivian Stanshall, Robyn Hitchcock, and John Otway, among many others. After playing in anonymous bands with names like Nightshift and Sonic Tonix, Fish concocted ‘The Jazz Butcher’ persona in 1982 and carried on with it ever since; much like the original Alice Cooper band, Fish was the Jazz Butcher, and The Jazz Butcher was the band. 
 <p />
 Although somewhat enigmatic about his past, no biography could beat that which Fish offers on his website: “Born in West London at a time that left him just too young to be a hippie and just a little too old to be a punk, Pat Fish grew up in an era where the Bonzo Dog Band appeared on children’s television, Syd Barrett was on Top of the Pops and the Adult World was represented in shows like The Avengers and The Prisoner. Disappointment was an inevitability.
@@ -17171,6 +17206,44 @@ Artist: The Jazz Butcher
 <br />Album: The Highest In The Land
 <br />Label: Tapete Records
 <br />★★★★★ (5/5 stars) 
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+
+#define	20150420_press_dirtyrock.html
+#live	if (getval(page) = 20150420_press_dirtyrock.html)
+	${extractPress(
+		body=${literalizeCommas(
+Con el estigma de ser un músico considerado excéntrico, Pat Fish ha estado involucrado en el proyecto de Jazz Butcher desde principios de los 80 siendo, eso sí, una rara avis de aquella generación, por sus evidentes influencias de Velvet Underground, Modern Lovers o Dylan. Esa supuesta excentricidad no es sino una forma de escapismo de las corrientes sonoras que marcaron aquellos años y de las que Pat se escurría con elegancia.
+<p />
+Como músico inquieto ha sabido establecer unos parámetros que caminan con los años, cambiando su agresividad juvenil por un semblante más reposado, con el uso de contrabajo y sección de viento, escobillas en la batería y un tono relajado en sus interpretaciones.
+<p />
+Su último concierto en nuestro país se produjo celebrando los 25 años del programa de radio que presento y dirijo, Los 39 Sonidos, disponible en www.juanvitoria.com, por ello fue una actuación pensada para dejarse llevar por un público poco numeroso, pero expectante y deseoso de conectar con este nuevo formato. Con algunas proposiciones extraídas de su más reciente trabajo, “Last Of The Gentlemen Adventurers” y gotas de su trayectoria pasada, la combinación de trompeta, pedales de efectos, guitarra acústica y la sobriedad vocal que le caracteriza, Pat nos trajo una bluesy “Southen Mark Smith”, radicalmente opuesta al nervio original del tema, aunque sí mostró lo impecable de canciones que fueron tratadas casi al igual que hace treinta años, caso de “Partytime”. Momentos álgidos como la francófona “Tombé dans les pommes” y las sorpresivas versiones del “All Along The Wachtower” dylaniana, fundida con “Free Money” de Patti Smith o una contagiosa “Gloria” de Them, constataban la sabiduría que sobre un escenario tiene este hombre, curtido en mil noches frente a concurrencias dispares a las que nunca ha temido.
+<p />
+Decir que Jazz Butcher es un genio incomprendido no es un recurso fácil; compararlo con personajes como Kevin Ayers o Syd Barrett tampoco es una perogrullada; lo que sí está claro es que es un creador con una versatilidad aplastante, que se mueve en todos los terrenos con brío y sin titubear, que engancha desde la primera nota y que atrapa a la audiencia con una velocidad inusitada. Todos sabemos que faltaron algunas canciones que eran emblema de esos “otros 80’s”, pero no se notó en absoluto, ya que las composiciones elegidas nos manejaban por los caminos que él había preparado y constataban la brillantez en la composición de todo un personaje encantadoramente maldito del pop británico, con muchos matices loureedianos.
+<p />
+Al día siguiente, para celebrar el día de las tiendas de discos especializadas en todo el mundo, Pat tomó su guitarra y a su trompetista y se marcó un mini concierto entrañable en Discos Amsterdam, con alguna otra adaptación inesperada, como “Take The Skinheads Bowling” de Camper Van Beethoven.
+<p />
+A Pat Fish hay que quererle por lo que tiene de significado su música, la libertad de no claudicar ante modas o condicionantes, el talento que derrocha cada vez que contacta con las cuerdas de una guitarra o, incluso, cuando suspira. Y suspira de maravilla, es lo que tienen los genios.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+
+#define	19860718_press_backgroundmediumproductions.html
+#live	if (getval(page) = 19860718_press_backgroundmediumproductions.html)
+	${extractPress(
+		body=${literalizeCommas(
+Another rainy night in Maryland…
+<p />
+The second band to be interviewed by Background Noise Productions back in the mid 80's was The Jazz Butcher; specifically Pat Fish and Max Eider. Mad genius' both, and interestingly, part of the cosmic cat's cradle linking me to another mad genius who's as brilliant with pen and ink as they are with guitars. Eclectic, eccentric, acoustic, electric. The Jazz Butcher never really got their due, but I've had the good fortune of seeing them twice—and both times they were brilliant. The first concert, at the old 9:30 Club, followed a somewhat debauched, Heineken case-long interview in the Background Noise P Street Studios and, if memory serves me right, we ended up in a no-name Chinese restaurant for hours after the show. The second time, was at a much smaller venue in Arlington. Older, wiser, more sophisticated(?) Pat was greeting patrons at the door as if he was welcoming them into his house. 
+<p />
+I wish the Jazz Butcher had cracked it back in the day when they were riding high on that wave of college radio popularity… but I suppose if they had… they wouldn't be one of my favorite bands. The Happy Medium Song of the Day is “Rain.” 
+<p />
+C'mon, it's April. Get over it — or as Pat would say… “pass us another Heineken, mate.”
 		)}
 	)}
 	${jbc_footer}

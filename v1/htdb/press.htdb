@@ -572,6 +572,18 @@ ${d}
 		title=About Wilson,
 		dt=2004-05-12)}
 
+	${addPress(type=interview,
+		url=${jbc_press}/20200925_press_melomania.html,
+		thumb=/images/20200925/20200925_press_melomania,
+		publication=MELOMANIA,
+		title=AN INTERVIEW WITH PAT FISH,
+		headline=The stories he could tell. Mr. Fish will be sorely missed.,
+		credit=tbone@tbonescafe.com,
+		source=https://melomania.substack.com/p/an-archived-interview-with-pat-fish,
+		summary=Lengthy career-spanning questions answered,
+		dt=2020-09-25,
+		added=2023-09-20)}
+
 	${addPress(type=interview;album, album=human,
 		url=${jbc_press}/19851109_press_nme.html,
 		thumb=/images/19851109/19851109_press_nme,
@@ -824,6 +836,28 @@ ${d}
 		added=2023-09-12,
 		dt=2013-03-30)}
 
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220307_press_rockandrollglobe.html,
+		title=The Last Will and Testament of Pat Fish,
+		headline=England’s indie rock icon gave us one final Jazz Butcher classic before departing this astral plane,
+		subhead=Patrick Huntrods\, better known to his legion of fans as Pat Fish\, passed away in October 2021 from a heart attack at the age of 63 years after a career that spanned four decades and resulted in 14 albums.,
+		publication=Rock and Roll Globe,
+		source=https://rockandrollglobe.com/indie-rock/albums-the-last-will-and-testament-of-pat-fish/,
+		credit=Rev. Keith A. Gordon,
+		added=2023-09-20,
+		dt=2022-03-07)}
+
+	${addPress(type=retrospective,
+		url=${jbc_press}/20211006_press_postpunk.html,
+		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
+		title=The Jazz Butcher,
+		headline=Pat Fish Has Passed Away,
+		publication=post-punk.com,
+		source=https://post-punk.com/the-jazz-butcher-pat-fish-has-passed-away/,
+		credit=Alice Temple,
+		added=2023-09-20,
+		dt=2021-10-06)}
+
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211112_press_mojo.html,
 		thumb=/images/20211112/20211112_press_mojo;;Glass Modern;;https://twitter.com/glassmodern1/status/1459187934049947650,
@@ -977,6 +1011,42 @@ ${d}
 		source=https://daily.bandcamp.com/2017/10/02/the-jazz-butchers-indie-pop-genesis,
 		credit=Michael White,
 		dt=2017-10-02)}
+
+	${addPress(type=retrospective,
+		url=${jbc_press}/20211006_press_jericsmith.html,
+		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
+		images=/images/20211006/20211006_press_jericsmith;;Katelin Smith;;;;;; I just told Katelin about Pat’s passing and she sent me a photo of Max’s kind gift,
+		title=Only A Rumour,
+		headline=Pat Fish (The Jazz Butcher),
+subhead=(20 December 1957 – 5 October 2021),
+		publication=J. Eric Smith blog,
+		source=https://jericsmith.com/2021/10/06/only-a-rumour-pat-fish-the-jazz-butcher20-december-1957-5-october-2021/,
+		credit=J. Eric Smith,
+		added=2023-09-20,
+		dt=2021-10-06)}
+
+	${addPress(type=retrospective,
+		url=${jbc_press}/20211007_press_nme.html,
+		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
+		title=Pat Fish, AKA The Jazz Butcher, has died aged 64,
+		headline=The former Creation Records artist died earlier this week,
+		publication=NME,,
+		source=https://www.nme.com/news/music/pat-fish-aka-the-jazz-butcher-has-died-aged-64-3065181,
+		credit=Will Lavin,
+		added=2023-09-20,
+		dt=2021-10-07)}
+
+	${addPress(type=retrospective,
+		url=${jbc_press}/20211007_press_louderthanwar.html,
+		thumb=/images/20211007/20211007_press_louderthatwar;;Matt Condon,
+		title=Pat Fish aka The Jazz Butcher,
+		headline=an appreciation,
+		subhead=Farewell to the Last of the Gentleman Adventurers,
+		publication=Louder Than War,
+		source=https://louderthanwar.com/pat-fish-aka-the-jazz-butcher-rip-an-appreciation-farewell-to-the-last-of-the-gentleman-adventurers/,
+		credit=Alex Maiolo,
+		added=2023-09-20,
+		dt=2021-10-07)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220210_louderthanwar.html,
@@ -16795,6 +16865,312 @@ The Highest In The Land  ends with the stunning “Goodnight Sweetheart”, a ph
 Reviewing new music by an artist who has passed away is difficult. Pretending that this is not his final statement to the world helps to listen it a little more objectively. Having said that, it isn’t a stretch to say that The Highest in The Land stands as one of the best Jazz Butcher albums. It is a shame that there is an almost 10-year gap between this and the last one, as I would have loved to have more music from Pat Fish and company, but this is what we have and it is wonderful to have it.
 <p />
 9.0
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20200925_press_melomania.html
+#live	if (getval(page) = 20200925_press_melomania.html)
+	${extractPress(
+		body=${literalizeCommas(
+<div class="iview_q">
+T-BONES: How did you get started writing songs? Was there a song you heard and thought - “I can do that too!”
+</div>
+<p />
+<div class="iview_a">
+R. FISH: You can be hearing the most wonderful music in your head, but if, like me, you can’t write music, then inevitably you can only write what you can pick out on a guitar or a piano or whatever. I was particularly handicapped in this department as a youth because I could only play the flute and the tenor sax, which are hardly great composing tools. Only one note at a time, you understand.  In the summer of ’81 I heard a surprise 7” release by Velvet Underground drummer Mo Tucker. She had banged out a version of the old classic “Will You Still Love Me Tomorrow?”, using multitrack recording to play everything herself. I thought, “Well, if Mo can make a record all by herself with some pretty rudimentary skills, perhaps I could manage it too one day.”
+<p />
+It was that kind of thinking that led me to learn a bit of guitar, and, from there, the songs came. Because I knew not what I was doing, any riff or chord sequence, however basic, felt like magic to me. I was blessed with a twin deck ghetto blaster which had a wonderful design fault: when you copied a cassette, the internal mics
+remained open. Having discovered this by accident, I realised that I could bounce between two cassettes to build up primitive little arrangements on tape. In a dismal, lonely three-month spell living in a village at the start of ’82, my silly experiments started to turn into the songs that you can hear on our first album, Bath of Bacon.
+So it was a question of process and methodology, rather than any fancy “inspiration.” I followed my nose, made up silly words because I never for a moment thought that anybody other than my closest friends would ever hear this stuff. I kept in mind Eno’s axiom about working within your limitations and I always remembered Mo as well. I
+owe her a lot.
+</div>
+<p />
+<div class="iview_q">
+T-BONES: During the years on Glass Records, you seem to be trying everything you can out. Was songwriting and recording in the beginning this sort of “land of opportunity” for you?
+</div>
+<p />
+<div class="iview_a">
+R. FISH: I think it’s fair to say that, yes. The recording studio was a great adventure, nothing was off-limits. We were lucky enough to be learning on the job, so, of course, we made a few “schoolboy errors” along the way.
+</div>
+<p />
+<div class="iview_q">
+T-BONES: In 1986, your music makes the American transition to Big Time (distributed by the major-label RCA,) how did that feel to suddenly find listeners and even fledgling Alternative and College Radio support over here?
+</div>
+<p />
+<div class="iview_a">
+R. FISH: We spent most of ’85 on the road in Europe, so we were already used to a certain low level of media interest: radio, TV, and so forth. Well into ’86, however, it never crossed our minds that we would ever go and play in America. That seemed unimaginable. When Dave Barker, the boss of Glass Records, told us that we were
+going to play there, we didn’t really believe him.
+<p />
+We arrived in New York in the middle of the CMJ conference. It was only when we got there that we discovered that we were in the top ten on the various independent charts of the time. We were entirely unready. “What’s a station ID?” I would say to the legions of trendy young things with fancy recording gear who seemed to pop up
+everywhere in our path. It got worse in Canada. Nobody had told us, but we were on a major label up there. I found out when somebody handed me a sheet of paper with “Mercury” printed at the top and an interview schedule that began at 9:00 am.
+</div>
+<p />
+<div class="iview_q">
+T-BONES: It all seems to come together when you move to the greener pastures of Creation. “Fishcotheque” builds on “Sex and Travel” while revealing that you are never devoting yourself to one “style” of music.  
+Is it safe to say that the song you wrote was more important than meeting any similarities to the songs of that period?
+</div>
+<p />
+<div class="iview_a">
+R. FISH: Both Dave Barker at Glass and Alan McGee at Creation had sufficient faith in us that there was none of that record company nonsense about trying to make us sound fashionable, or like somebody else successful. They left us to our own devices. There was none of that insidious “You know what we should do?” stuff.
+Dave, Alan, and I are interested in making beautiful records rather than “hits.” And sometimes, of course, as Alan has proved, you can do both at once.  Our band had friendships with other bands, most of whom sounded nothing like us, but who shared a certain aesthetic and perspective. We didn’t identify with any kind of “movement” or anything like that. We weren’t trying to make records to cause a stir that week. We were trying to make records that would last the listener a long time, that would repay his or her investment.
+<p />
+From the second LP on, our production values had as little in common with the rough, cheap, just-learned-to-play “indie” sound as they did with the big, clattery, soulless cocaine sound of the major record company bands. We weren’t fashionable then and we aren’t fashionable now. But you can put just about any of our records on
+today and they’re still listenable, still comprehensible to the modern ear. Unlike, for example, Bogshed. But then, if you want to make a record, it helps if you have an actual song, yeah?
+<p />
+It is possible, of course, to make a classic single more or less by accident in a few frenzied hours in a cheap studio. But something to which people are going to sit down at home and pay attention for half an hour at a time? Give me a break. All the music on Fishcotheque has its roots in Africa. There are obvious things, like
+some of the rhythms and the pretty, chiming guitars. And there is also the fact that all the music that we listen to – on our side of the planet, at least - comes from Africa.
+</div>
+<p />
+<div class="iview_q">
+T-BONES: Where did the idea for samples come in? They really make the songs stand out
+further from the pack?
+</div>
+<p />
+<div class="iview_a">
+MR. FISH: The biggest influence here was a single by Steinski and Mass Media called “The Motorcade Sped On”, a stunning assemblage of radio commentary of the assassination of John F. Kennedy, brilliantly manipulated into something that can only be described as a great pop song. We played that constantly on the tour bus. Long before I even knew that samplers existed, I used to mess about with tape edits.  Late at night in my little music room, I would pull off a particularly nice edit and drunkenly declare myself the Prince of the Pause Button. Out loud.
+<p />
+By 1986, thanks to Big Audio Dynamite, Public Enemy, and the JAMMS (deranged forerunners of the mighty KLF), we knew that samplers were out there, but we didn’t actually encounter one face-to-face until we made Fishcotheque. You only have to listen to “The Best Way” to know how delighted we were about that.
+After that, it was samples all the way. We still used to collect them on cassettes and then feed them into the sampler when we arrived at the studio. By “Condition Blue” I was getting into using musical loops as well, something that developed more and more with Sumosonic and ultimately Wilson. I think that – be they loops or voices – nice, scuzzy samples can add real excitement to a mix. For me, dropping cool samples is as much a part of the recording process as a lead guitar overdub, a backing vocal, or a tambourine, and, well used, it can play just as important a role.
+</div>
+<p />
+<div class="iview_q">
+T-BONES: Now as “Big Planet Scarey Planet” you grab for an intense worldview, the songs all play differently and you draw some great character sketches in your stories like “Bicycle Kid” and “Line of Death”. Was the goal to broaden your horizons and maybe appear more of a storyteller to your new audience?
+</div>
+<p />
+<div class="iview_a">
+MR. FISH: To be honest, I didn’t know that I had a new audience.  We were trying to broaden our horizons, but more in a musical sense. We weren’t very successful, as it goes. The record was made at the start of 1989. We’d been listening to Public Enemy, KRS-1, NWA, DeLa Soul. We were aware of the growing dance scene and not unfamiliar with ecstasy. So we only wanted to make a
+psychedelic hip-hop folk-rock protest album for the dancefloor: nothing fancy!
+<p />
+In the end, we collapsed between a number of stools, so I don’t think the album really works particularly well. The most “old-fashioned” songs came out best, I think; simple pop like Bad Dream Lover or The Good Ones; easy African style tunes like Nightmare Being or, rather more frantically, The Word I was Looking For.  I’ve never really had the knack of story-telling songs. I’ve tried, but it’s usually pretty clunky stuff. I guess Bicycle Kid was a bit of a lucky one-off in that department, but it was based on a real individual, so no imagination was required, happily. I don’t really “do” imagination. I see myself more as a maker of short, noisy documentaries.
+</div>
+<p />
+<div class="iview_q">
+T-BONES: How was that first American tour? Did it influence your writing in ways you could not foresee? Do you still conjure up memories of it when you write today?
+</div>
+<p />
+<div class="iview_a">
+R. FISH: On our first tour in 1986 I think my brain was fully occupied with trying to come to terms with what was happening and cope with the strangeness of it all. We were already familiar with a number of different countries, languages, and cultures, but America and Canada were something entirely new to us. Because we appear to speak the same language (we don’t, of course), a lot of British people think that America is just like a big, hot, prosperous Britain. It’s not. It’s a foreign country and it takes a lot of getting used to. So on that first tour, I wasn’t really up for too much observation; it was more just a question of keeping one’s head above water, getting the job done, and getting out alive.
+<p />
+Then, of course, came all the other tours. I was a bit more comfortable by then, and I had made some friends “on the ground”, as it were. I was a bit more able to open my eyes and take in what was going on around me. As early as 1989 I had already formulated the idea that all I really did was to observe the weirdness of Americans,
+Write it down, set it to music and then sell it back to them. I guess “Hysteria” is a good early example of that. It’s about our experiences on the West Coast on our 1988 tour with Downy Mildew and Alex Chilton. I really did sleep through an earthquake.
+</div>
+<p />
+<div class="iview_q">
+T-BONES: Into the Nineties we go.  What changes from “Scarey” to “Cult of the Basement?” 
+You had done ballads before, but “Basement” is somewhat muted compared to the
+previous albums. “The Onion Field” is just stunning. For all its ease (and familiarity
+with the return of the saxophone) “Daycare Nation” mixes the sardonic with
+wistfulness.
+</div>
+<p />
+<div class="iview_a">
+R. FISH: I could easily write a book about the year between the making of “Planet” and “Basement.” Perhaps one day I might. The Second Generation JBC (Paul Mulreany on drums; Laurence O’Keefe on bass; Alex Green on tenor sax; Kizzy O’Callaghan on guitar; and me) had been together for some time now. Tour-hardened, we had developed our own collective personality and style; in marked contrast to the well-intentioned but aimless thrashing-about of “Big Planet.” We had our own vibe now. We didn’t have to try.
+<p />
+In September ’89, on the way home from a gig in Sheffield, Kizzy went into a fit, which turned out to be a manifestation of a brain tumour! Kiz was hospitalised a week or two before we were due to start a nine-week US/Canadian tour. We were lucky enough to snare our great friend Richard Formby to play guitar on the tour and
+by the time we came home, just before Christmas, we were a tight-knit little group, routinely dangerous on stage and almost entirely impenetrable off it. When we left for America in the autumn, Kizzy had had some surgery and seemed in quite good form. We had no doubt that he would be joining the rest of us in the studio to make the next record in early ’90. When he joined us at the studio it was a terrible shock: he was heavily medicated and obviously struggling badly.  We had all been freaking out since Kizzy’s diagnosis, but we had always had faith that he would survive his ordeal. Here, in the studio, in the middle of the countryside in the middle of the winter, we saw what had become of him. Then we started really freaking out.
+<p />
+So I don’t personally see “Cult of the Basement” as “muted” at all; quite the opposite. For me, it’s a mad, sprawling, scrabbling, desperate thing, simultaneously frightened and belligerent, prone to sudden, unpredictable mood swings. Even the things on it that might normally be expected to pass for humour have a funny eye and a bad attitude.  And, like an old English folk song, things only get worse as it goes along, finishing with Sister Death. What else?
+<p />
+There was a real “us against the world” feel to the recording sessions, which took place almost entirely in the hours of darkness.  The unassuming little tune “Daycare Nation” is actually one of my favourites. It was cooked up in the studio, inspired by Mulreany just hitting that soft little drum pattern. We got it down in one or two takes, Alex added the three tracks of saxophone, and then, finally, I improvised and honed the lyric. Your estimation of the balance between ”sardonic” and “wistful” strikes me as spot-on. Some of the phrases deployed in the lyric may well have begun as hard-hearted, cynical remarks, but I feel that the context, both sonic and lyrical, pushes those phrases to the point of being almost heart-breaking. And it has a Tube train on it. For me, the sound of a London Tube train is one of the most evocative imaginable. Lonely old men in a vast, uncaring city; that was our theme for this one, and I feel that we gave it a decent shot. We should have programmed it after Mister Odd, though. That, if I’m honest, was a schoolboy error. To make matters worse, I didn’t even spot it until almost thirty years after we made the record! Doh!
+<p />
+Not long ago I was rather alarmed to realise that this LP has two songs on it about murder. I had never really considered myself homicidal. The Onion Field is that rare thing, a moment where I exercise the thing that passes for my imagination. Rubbish piano by me, deeply disturbing guitar wailing by Richard. I Came fifth in a Nick Cave impressions contest.
+<p />
+No, but I love “Cult of the Basement”, me. It’s the first record that really captures the sound and spirit of the band at that time. It’s not entertainment; it’s a genuine dispatch from the front line.
+</div>
+<p />
+<div class="iview_q">
+T-BONES: Now we wind up with “Condition Blue” where your whole sound comes full circle. Lyrically, you are putting the pieces back together - which is a beautiful thing. I know there is a lot of emotion wrapped up in this record. Looking back on it now as the end of this sequence, if you will, how do to respond to it today?
+</div>
+<p />
+<div class="iview_a">
+R. FISH: Can I be honest? I think it’s an astonishing record. Everybody thinks their kid is a genius and their cat is the prettiest creature that ever lived, but I genuinely do think this is a proper good record. I still play it in order to try and understand it, and it often catches me out or blows me away, just like a “real” LP by a “real” artist. There are some stellar cameos from the likes of Pete Astor, Peter Crouch, Richard Formby, Joe Allen, Alex Lee, and Sumishta Brahm.
+<p />
+I didn’t see “Condition Blue” as the end of any sequence at the time; more like the end of the entire fucking universe. But making “Waiting for the Love Bus” some nine months later was a very interesting “Where do we go from here?” sort of challenge, so I guess there is some virtue in seeing things that way. Fortunately, I had Richard Formby there as my producer. He and I see eye to eye on so many things. Moving on into the “space beyond” was a pleasure with Richard at the controls.
+</div>
+<p />
+<div class="iview_q">
+T-BONES: What are your plans for the remainder of 2020, could we see some new songs from
+you coming soon?
+</div>
+<p />
+<div class="iview_a">
+R. FISH: My chief objectives for 2020 are to remain alive and solvent. I’ve not really left home since the beginning of March, so I rely on the kindness of strangers to put a dollar or two in the hat when I play one of my little solo sets Live From Fishy Mansions on the Facebook. Those who tune into my little broadcasts will already have heard some new, unrecorded songs. There are more coming along and it’s definitely my intention to make at least one more LP before I hang up my boots. The process is already underway, in fact.
+</div>
+<p />
+<div class="iview_q">
+T-BONES: Will there be more reissues on the way? Maybe a rarities package or live highlights?
+</div>
+<p />
+<div class="iview_a">
+R. FISH: December will see the release of the third Fire Records box set, “Doctor
+Cholmondley Repents”, a 4 CD set featuring singles, b-sides, compilation tracks,
+demos and a really rather fabulous 45 minute live radio session.
+</div>
+<p />
+Fire Recordings will be releasing “Doctor Cholmondley Repents” on November 12th.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+
+#define	20211006_press_postpunk.html
+#live	if (getval(page) = 20211006_press_postpunk.html)
+	${extractPress(
+		body=${literalizeCommas(
+Pat Fish, who performed as The Jazz Butcher for nearly four decades, has died at the age of 64. A post on Pat Fish’s official Facebook page states that the versatile and brilliant musician “died suddenly but peacefully yesterday evening.” On October 3rd, Fish was scheduled to perform a web concert, however at show time, Fish appeared live to inform his audience he was not feeling well and would be re-scheduling the performance for the following week. By means of explanation for his ill health, he offered that he had been suffering from sleep apnea. The cause of death is still unknown, and he had been battling poor health for some time, but his passing has left a major void amongst his friends, loved ones, and the music world.
+<blockquote>
+“Very sad to announce that my old friend Pat Fish died suddenly but peacefully on Tuesday evening,” said friend and longtime collaborator Max Eider in a statement. “Pat rocked my world in every way and his death leaves a big hole in my life and in my memory, much of which was only stored in his outsized brain. Goodbye mate and thanks for everything. I’m going to miss you.”
+</blockquote>
+Contemporaries and colleagues The Monochrome Set also paid tribute to their kindred spirit on their Facebook:
+<blockquote>
+“A wonderful human being…he supported The Monochrome Set at their Tokyo gigs in 2014. He was also due to be a label mate as he’d recently finished recording his first album for Tapete. It’s devastating news.”
+</blockquote>
+Born Patrick Huntrods in West London, Fish was ” too young to be a hippie and just a little too old to be a punk.” Pat Fish reminisced about growing up in an era where “the Bonzo Dog Band appeared on children’s television, Syd Barrett was on Top of the Pops and the Adult World was represented in shows like The Avengers and The Prisoner.” Fish moved early in his life to Northampton; he went on to study Classics at Merton College, Oxford, graduating in 1980. Oxford didn’t fuel his imagination too much, however, and he ended up traveling down a musical path, forming bands like Nightshift,  The Sonic Tonix, and the Institution, which featured Max Eider on guitar, Rolo McGinty (later of The Woodentops), and Jonathan Stephenson.
+<p />
+In North America, records like Bloody Nonsense and Distressed Gentlefolk became college radio staples before releasing a series of albums for Creation Records between 1988-1995.
+<p />
+Taking inspiration less from glam rock and more from Eno, Syd Barrett, John Cale, greaser rock and more obscure 70s artists, The Jazz Butcher debuted in Oxford on 20 February 1982 with Alice Thompson (The Woodentops), Owen Jones, and Max Eider. Fish went on to write and release fifteen albums of original music, three live albums and many singles and compilations, often collaborating with friends. Bauhaus/Love & Rockets bassist David J, members of The Woodentops, Spacemen 3’s Sonic Boom, German band M Walking On The Water, Chelsea Paris, The Black Watch, and Max Eider all lent their talents to his stylings.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20211007_press_louderthanwar.html
+#live	if (getval(page) = 20211007_press_louderthanwar.html)
+	${extractPress(
+		body=${literalizeCommas(
+Sometime around 1987 I walked into a house in Greenville, North Carolina, where a collection of art students and characters bunked. A band I barely knew, called The Birthday Party, was on the stereo making an unholy racket, and I recall seeing a Scratch Acid album at the top of a stack. I gathered my friend who lived there, an absolutely wonderful artist called Paul Friedrich, had cool housemates who were way into noise rock. Scattered amongst the platters was an LP by a band called The Jazz Butcher Conspiracy. “Wow,” I thought, “a band that butchers jazz? What kind of crazy No Wave outfit is that?” We didn’t listen to it, but JBC was officially on my radar.
+<p />
+Weeks later I walked into the local record shop and saw a used copy of Distressed Gentlefolk, by the same band. I bought it, headed home, and immediately put it on the turntable.
+Imagine my surprise when I heard the first song was a country tune. It wasn’t unusual for bands to go there. Punk and country were sometimes bedfellows, but certainly the next number would good n’ butchered.
+Yeah, really butchered, I’ll bet.
+Nope, it was pop. Not noise pop, or art pop, just pop. Then a kind of dream pop thing. Then some sort of hand jive situation. To my horror some of the songs were actually… jazz.
+Seriously, when the fuck was the butchering going to happen?
+<p />
+Sometime in the middle of a song about how pets get horny every spring I realized The JBC was, you know, a clever band. I don’t mean that backhandedly, they were genuinely clever. We Americans are often easily charmed by the mad geniuses of the U.K. Robyn Hitchcock, Kevin Ayers, Andy Partridge, Syd, Copey – we can really fall for that stuff, hard, and JBC leader Pat Fish was clearly one of them. He and his bandmate, the shockingly brilliant guitarist Max Eider, churned out lyrics you actually wanted to quote.
+<p />
+It wasn’t always easy to get Jazz Butcher releases here in the U.S., but luckily I also found a used copy of A Scandal In Bohemia a year later.It marked the first time I’d hear a song living up to the gnarly promise of their name, in “Caroline Wheeler’s Birthday Present.” Bauhaus’ Kevin Haskins and David J. were on this record.
+This seemed impossible to me, but also hinted at future discoveries of hard to believe connections.
+<p />
+I cherished these LPs and listened to them constantly. Through each release, and the personnel changes, I followed what The JBC were doing. I bonded with the person who remains my closest friend, to this day, over Cult of the Basement. I started using “Pat Fish” and “The Jazz Butcher” interchangeably, assuming anyone else playing with him was part of The Conspiracy. I finally got to see the band in Chapel Hill, North Carolina, around the time of Condition Blue. The show was so mind-blowingly good, and it was the first time I had a what-the-fuck-is-wrong-with-people-this-band-should-be-huge reaction. The first of many, really.
+<p />
+As the years rolled on, the legendary status of this man only grew in my mind. He was releasing records on the impossibly cool Creation label. He referenced Pynchon, and obscure films. He wrote a song comparing Mark E. Smith to the pope, and assured us that at least an interminable party is “better than a cold bath with someone you dislike.”  There were the side projects, like arty Black Eg. He was connected to great indie bands like Close Lobsters, The Blue Aeroplanes, and The Woodentops. He hosted TV programs. His band consisted of people with peculiar names like Kizzy, Felix, Pascal, and Dooj. He’d studied at Merton College, Oxford, but also ran around with messy, drugged up miscreants like Spacemen 3, having been an early champion of the band, attending their earliest gigs in the piss-soaked pubs of Rugby. He was good looking, elegant, seemed to be everywhere, and connected to everyone who was cool in indie music. It became clear that Pat Fish was a kind of rock n’ roll Zelig, minus the commonplace part. When Jazz Butcher fans gather, this is often the first thing that comes up. He made smart music that didn’t take itself very seriously, and it was played by the best musicians.
+<p />
+Heads were always keen to have the departed Max Eider return to the fold, and I finally got to see him play with The JBC at the turn of the millennium. The newly formed Death Cab for Cutie supported on that tour. It seemed correct that some kids who’d named their outfit after a Bonzo Dog Doo-Dah Band tune would be on the bill. That night was the first time I met Pat, and he was as charming as a fan of the band could have hoped for.
+<p />
+With the rise of social media The Butcher was able to connect with his admirers in a new way, and it was pretty inspiring to see him out there, doing it, not having gone the way of the rock n’ roll also rans. He was great at sharing remembrances and recounting odd happenings. He did online shows which got a lot of us through the lockdown.
+<p />
+About seven years ago, after a few pleasant exchanges in a music chat, I got a friend request from Pat, because that’s the era we live in. In another exchange, many years later, I shared with him it had just occurred to me that I’d never bought a new JBC record, only used. They weren’t always easy to find, over here, so the bins were the best bet. Nevertheless, it meant I’d never given Pat a dime, beyond concert tickets and merch. Feeling like the shittiest fan in history, I gave thanks for the online tip jar, and vowed to use it during the online performances. To my delight, other people seemed to as well. There would always be some message from Pat about how generous people had been, and then maybe something about his black cat Raoul. These eventually became a regular Sunday occurrence, billed as Live From Fishy Mansions.
+<p />
+This past Sunday Pat went live to tell his viewers that he felt like shit, and he just couldn’t play. He seemed truly bothered that he was letting people down, but assured everyone he’d make the show in Bristol, Thursday.
+<p />
+Two days later he passed.
+<p />
+Max Eider wrote “very sad to announce that my old friend Pat Fish died suddenly but peacefully on Tuesday evening. Pat rocked my world in every way and his death leaves a big hole in my life and in my memory, much of which was only stored in his outsized brain. Goodbye mate and thanks for everything. I’m going to miss you.”
+<p />
+Patrick Guy Sibley Huntrods, aka Pat Fish, aka The Jazz Butcher made a lot of people exceedingly happy with his art. He abhorred the fash as much as he adored his cat, and loathed a bigot as much as he loved a pint. He seemed like the kind of guy who would somehow drink and smoke his way to age 97, rather than leaving us at the way too young age of 64.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20211007_press_nme.html
+#live	if (getval(page) = 20211007_press_nme.html)
+	${extractPress(
+		body=${literalizeCommas(
+Pat Fish, best known for performing under the moniker The Jazz Butcher, has died aged 64.
+<p />
+His death was confirmed by his frequent collaborator and lead guitarist Max Eider, who took to the official Jazz Butcher Facebook page to reveal that Fish died on Tuesday night (October 5). A cause of death has not yet been revealed.
+<p />
+“Very sad to announce that my old friend Pat Fish died suddenly but peacefully on Tuesday evening,” Eider wrote. “Pat rocked my world in every way and his death leaves a big hole in my life and in my memory, much of which was only stored in his outsized brain.
+<p />
+He added: “Goodbye mate and thanks for everything. I’m going to miss you.”
+<p />
+Very sad to announce that my old friend Pat Fish died suddenly but peacefully on Tuesday evening. Pat rocked my world in…
+<p />
+Posted by the Jazz Butcher on Wednesday, October 6, 2021
+<p />
+Born Patrick Huntrods in London in 1957, Fish formed the Jazz Butcher musical project – which has gone under a variation of different names over the years – in 1982 with Eider. His début album, ‘In Bath Of Bacon’, was released by Glass Records in 1983.
+<p />
+From 1988 through 1995, The Jazz Butcher released a series of albums for Creation Records, including ‘Cult Of The Basement’, ‘Condition Blue’, and their final release for the label, ‘Illuminate’. The Jazz Butcher’s last new release was the 2016 single ‘All The Saints’, released via Fire Records.
+<p />
+While much of The Jazz Butcher’s catalogue was out of print in the late ’90s and ’00s, Fire began a reissue campaign a few years ago, including the recently announced ‘Dr Cholmondley Repents: A-Sides, B-Sides and Seasides’, which is expected to arrive November 12.
+<p />
+David Whittemore, who has been running The Jazz Butcher website since the beginning, has set up a memoriam, where fans have been paying tribute to the Fish
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20211006_press_jericsmith.html
+#live	if (getval(page) = 20211006_press_jericsmith.html)
+	${extractPress(
+		body=${literalizeCommas(
+I was deeply saddened this afternoon to learn of the sudden death at the age of 64 of Pat Fish, better known as The Jazz Butcher (“Butch” for short), which was also the name of a band he played in, when they weren’t called The Jazz Butcher Conspiracy or the Sikkorskis from Hell or JBC, and before his later bands Sumosonic and Black Eg and Wilson. The moniker thing was always a tricky bit when discussing the man and his music, especially since even Pat Fish was a pseudonym for the man born Patrick Huntrods in London in 1957. Whatever he was called, and whatever he called whatever he was doing, he was just an absolutely brilliant songwriter, and a charming singer-guitarist with a vast and rewarding studio and live career to his credit.
+<p />
+Pat Fish attended Oxford University in the late 1970s, and began playing with a collection of local musicians thereabouts, while reading Lit. Hum. at Merton College. A couple of his early collaborators (Rolo McGinty and Alice Thompson) went on to fame and acclaim as members of The Woodentops, while a couple of others (singer-guitarist Max Eider and drummer Owen P. Jones) stayed on with Butch to anchor his most impressive creative period in the 1980s, aided and abetted first by David J (former Bauhaus, later Love and Rockets) and then by Felix Ray on bass. (Note that I am pretty sure Jones is the only one of those core Jazz Butcher Conspiracy musicians whose stage name just might be his real name; I do know all the others’ true monikers, but why complicate things further with that, yeah?)
+<p />
+The Jazz Butcher’s 1983 debut album, In Bath of Bacon, found the group’s formative line-up in flux, but Fish’s unique blend of smart-to-silly lyrics, interesting instrumentation, and ear-worming sing-along melodies was already in full and fine effect, as were Eider’s exquisite jazz guitar stylings. By the time the second Jazz Butcher album, A Scandal in Bohemia, was released in 1984, the “Me n’ Max n’ Dave n’ Jones” line-up, as Butch name-checked them in the lyrics to the tremendous single “Southern Mark Smith (Big Return),” had cohered and utter madness and magic then spilled out, frequently and ferociously. This is about the time when I jumped aboard the Butcher bandwagon, having heard their song “Caroline Wheeler’s Birthday Present” on Washington’s (then)-great free-form radio station WHFS, which most thoroughly addled and altered my consciousness, making me realize in less than five minutes that I had a new favorite group, right then, right there, right now, and that I had to rush out post-haste and go into deep credit card debt to acquire their entire catalog at extortionate import-level prices. But it was worth it, and then some. Because do you know what happens if you leave a fish too long in an elevator? You don’t? Well, listen to the song for a clue.
+<p />
+From A Scandal in Bohemia‘s stellar musical platform, the Conspiracy leaped off the high dive and raged on prolifically through a tremendous series of singles, EPs, and albums, culminating with the Distressed Gentlefolk LP in 1986 (Felix had replaced David J on bass by this point) and the related mini-album Conspiracy, credited to The Jazz Butcher vs Max Eider. (In addition to his always scintillating guitar work, Eider generally also wrote and scored a couple of spotlight numbers of his own on each of the Conspiracy’s albums, and they’re often among the group’s finest works). Things seemed to be going swimmingly for the group from the devoted fan’s perspective, and of course that means that the classic Jazz Butcher Conspiracy then immediately blew itself up while on tour supporting Distressed Gentlefolk, with Max Eider departing to pursue a solo career.
+<p />
+Max’s debut album, The Best Kisser In the World, came out in 1987, and it was a joy to hear and behold. He and Jones also played on some David J records of the period. Pat Fish, for his own next move, left his long-time label home (Glass Records) to sign with Alan McGee’s hugely-influential Creation Records. The first fruits of that new partnership emerged in 1988 when The Butcher released Fishcotheque, featuring Herr Huntrods backed with a new crew of collaborators. I liked it a lot, but I did miss the “Butcher vs Max” dynamic, as on this and (most) subsequent records released under the Jazz Butcher rubric, there was definitely more of a “front man” and “supporting band” vibe to the proceedings than had been the case when Max served as a key foil and co-frontman for the group.
+<p />
+Fish remained active under the Jazz Butcher persona with a variety of collaborators through the latter part of the 1990s,  at which point he apparently tired of the constraints evoked by that musical brand’s baked-in associations, opting to form and record with the more electronic Sumosonic as a next step forward. But that was to be a short step, as Creation Records dropped the group after their first album. Phooey! And so, at that point, why, and well, and golly, it sure made perfect sense (no, no it didn’t, not really) for an unexpected Butch and Max and Jones reunion that resulted in the delightful Rotten Soul album in 2000, credited once again to The Jazz Butcher Conspiracy. The ever-volatile Max and Pat pair worked together on and off and on and off again over the years following, while Eider’s solo career built strength upon strength with a series of just soul-crushingly brilliant and beautiful records, one of which, Max Eider III: Back In The Bedroom, I named as my Album of the Year for 2007.
+<p />
+Fish’s post-Conspiracy and post-Sumosonic trajectory then anchored itself around a new band called Wilson, which gigged like champs over the years, and then, time passed, and of course, it once again made perfect sense (no, not really, no it didn’t) for Max and Pat (and Jones on one song) to join forces again for yet another delightfully unexpected album, Last of the Gentlemen Adventurers. That record, released in 2012, was funded through crowd-sourcing, to which I eagerly contributed. As a donor of a certain level, I was offered a meaningful memento from the band, and I asked Max to send a hand-written set of the lyrics to the group’s epic song “D.R.I.N.K.,” personally inscribed to my daughter, Katelin. (Ironically, neither Katelin nor I drink anymore, and the cautionary tale contained in that song is probably as good a reminder as any of why that’s a sound idea. I mean, God forbid we start playing “Sweet Jane” sober, especially with that god-awful “heavenly whine and bullshit” coda that Lou insisted be grafted back onto the song decades after its better original release. Doug Yule was right, in this case, dammit!) (But I digress). Anyway, I just told Katelin about Pat’s passing and she sent me a photo of Max’s kind gift, which I share.
+<p />
+Anyway. I’m very sad that Pat the Butcher of Oxford and Wilson has flown away from us all on short notice. I knew he’d had some health issues in recent years, but I also knew that he was back gigging as long as the damnable virus let him do so, that he was active with online performances after the pandemic shutdown (he had one scheduled for last Sunday night, which he had to cancel because he was not feeling well), and he’d recently announced that recording of a new Conspiracy album was underway, with Max back in the fold once again. Max’s announcement on the Butcher’s official Facebook page noted that Pat “died suddenly but peacefully on Tuesday evening,” so it wasn’t an expected demise, and 64 years is just way too young to be saying farewell for folks of his capabilities and capacities. In thinking about how to title this post, I elected to use “Only A Rumour,” the title of a gorgeously dark song from 1985’s Sex And Travel, which contains these lyrics: “And how I wish I knew for sure how many years I had before this state I’m in will put me under the ground.” I guess we all wish we knew that, but all I know right now is that Pat didn’t get enough of those years on his tally.
+<p />
+All of that said, even as I’m very sad to lose an artist who moved me so deeply over the years, I’m also so very happy to have the catalog he left behind, which always makes me smile, so good is it all, and so smart, and sometimes stupid-smart, and other sometimes stupid-stupid, but in the good sense, always fun, always meaningful, always a pleasure, always a joy. The catalog is rich for exploration, but I’ll end this post by appending a special Jazz Butcher edition of my “Five Songs You Need to Hear” Series, featuring a quintet of my favorite Pat Fish numbers. (I’ve already linked to “Caroline Wheeler” and “Southern Mark Smith” and Max’s “D.R.I.N.K.” above, so I’m kinda sorta gonna ignore them and cheat and include five other songs below; consider those bonus cuts above, all of which you also need to hear). RIP Butch. You were one of the great ones.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220307_press_rockandrollglobe.html
+#live	if (getval(page) = 20220307_press_rockandrollglobe.html)
+	${extractPress(
+		body=${literalizeCommas(
+The very definition of a “cult artist,” Fish comes from a long and revered line of eccentric British musicians that includes Syd Barrett, Vivian Stanshall, Robyn Hitchcock, and John Otway, among many others. After playing in anonymous bands with names like Nightshift and Sonic Tonix, Fish concocted ‘The Jazz Butcher’ persona in 1982 and carried on with it ever since; much like the original Alice Cooper band, Fish was the Jazz Butcher, and The Jazz Butcher was the band. 
+<p />
+Although somewhat enigmatic about his past, no biography could beat that which Fish offers on his website: “Born in West London at a time that left him just too young to be a hippie and just a little too old to be a punk, Pat Fish grew up in an era where the Bonzo Dog Band appeared on children’s television, Syd Barrett was on Top of the Pops and the Adult World was represented in shows like The Avengers and The Prisoner. Disappointment was an inevitability.
+<p />
+Fish failed to ‘get’ the glam rock thing (probably too much of an excitable wee football fan) and found that the seventies drove him down some fairly obscure musical paths before punk rock came along to save the day. By then, however, all those mad little songs by Eno, Syd Barrett, Kevin Ayers, Daevid Allen, John Cale, Peter Blegvad and Tony Moore were already locked up in his head.”
+<p />
+Starting with his 1982 debut, In Birth of Bacon, and right up through his recently released swan song, The Highest In the Land, Fish defied expectations. His band name might change on a whim, from The Jazz Butcher to The Jazz Butcher Conspiracy or The Jazz Butcher and His Sikkorskis From Hell. Fish also fronted bands other bands, outfits like the Black Eg, Sumosonic, and Wilson that all enjoyed various levels of popularity in the U.K. but were virtually ignored stateside. He worked for a while as the host of a music show called Transmission for ITV, dabbled in record production, and collaborated musically with fellow travelers like David J (Love & Rockets), Spacemen 3, David Kusworth (The Jacobites), and The Blue Aeroplanes.
+<p />
+No matter where his creative muse took him, Fish always circled back around to The Jazz Butcher. Inspired by free-thinking, free-wheeling artists like Bob Dylan, the Velvet Underground, Patti Smith, Kevin Ayers and Peter Laughner, Fish’s erudite lyrics always displayed the man’s intelligence and unique view of the world, whether he was quoting novelist Thomas Pynchon or writing a tribute to the master of ‘speculative fiction’, Harlan Ellison. You could never tie Fish down, and JB songs were endlessly complex and brimming over with Fish’s witty lyricism and observational sense of humor, often underwritten by constant stylistic changes. One song might be jangle-pop, another a furious punk-rocker, and a third performed in cabaret style, and often on the same album.
+<p />
+Needless to say, this lack of adherence to a single style or musical direction won Fish few fans in the record biz, and his U.S. audience was never more than a dedicated cult that appreciated his musical risk-taking and high-IQ lyrics. All of which brings us around to the elephant in the room, The Highest In the Land, the final will and testament of Mr. Pat Fish, The Jazz Butcher. A nine-song collection recorded as Fish was undergoing cancer treatment, it was his first album since 2012’s Last of the Gentlemen Adventurers. And sadly, it would be overshadowed by the artist’s own mortality. 
+<p />
+Fish gathered together an all-star roster of longtime Jazz Butcher collaborators to make The Highest In the Land, including original JB guitarist Max Eider and guitarist Peter Crouch, bassist Tim Harries and drummer Dave Morgan. Working out of Lee Russell’s Dulcitone Studios in rural Northamptonshire, Fish assumed that he was recording his final album and was determined that he would not go quietly into that good night but would instead rage against the dying of the light (my apologies to Dylan Thomas…).
+<p />
+In the Tapete Records press release for the album, producer Russell says of Fish, “he was not delusional. We all go through life acting like its going to last forever, but that’s a lie, and Pat was cleverer than the rest of us. He actually was facing it. He was in no mood to compromise his life in any way whatsoever…”
+<p />
+As a result, while the tracklist for The Highest In the Land is, perhaps, a couple of songs too short, it’s also the perfect length for what Fish was trying say with his final musical statement. The album starts with “Melanie Hargreave’s Father’s Jaguar,” a jazzy little stroll through nostalgia that sports wry wordplay and filigree fretwork floating above light-handed brushwork on the cymbals. A muted horn adds to the dreamlike vibe Fish has created with his throwback musical arrangement.
+<p />
+With “Time,” however, Fish gets down to the nitty gritty of life, crooning slick rhymes that other songwriters would build entire songs around: “my hair’s all wrong, my time ain’t long, Fishy go to heaven, get along, get along;” “I took a long weekend in the psychedelic shack, and when you cross that bridge you ain’t never coming back;” “I’ve got scars and stripes and burns, I’ve got the law of diminishing returns.” 
+<p />
+The lyrics of “Time” are delivered over a sparse atmospheric soundtrack, Fish’s breathless vox accompanied by a steady rhythmic drumbeat and wiry guitarplay. It wouldn’t be a Jazz Butcher track if he didn’t poke the bear with bit of political polemic, using one verse to jab a sharp verbal stick at child labor, private prisons, and life in an authoritarian regime, ending his magnificent tirade with the line “time’s running out, the money’s running out, you don’t need me to tell you what it’s all about.” With these words, Pat Fish is finished educating his audience; he’s taught us all he’s going to. By contrast, “Sea Madness” is a whimsical, country-flavored pro-immigrant tune written in honor of Turkish George, a longtime fixture on the Northampton music scene.
+<p />
+The six-string interplay spun from the ether by Eider and Crouch for the highly-personal “Never Give Up” is stunning, matching Fish’s winsome vocals and gentle lyricism, the song’s lilting melody a thing of true beauty. A left-leaning intellectual, Fish began his career in defiance of the Thatcher era and ended it during the despised Boris Johnson years. As such, songs like “Running On Fumes” and “Sebastian’s Medicine” are socially-conscious political diatribes that are both topical and timeless. With a shitkicker country rhythm, the former song delights with lines like “existential threats pile up like mashed potato snow around my door, they say that fear’s a man’s best friend, and every day it seems I have more” as Fish name-checks David Bowie and Motörhead’s Lemmy with his commentary on modern society.
+<p />
+If “Running On Fumes” brings Blood On the Tracks-era Dylan to mind, then “Sebastian’s Medication” is Fish at his most Dylan-esque, his opaque, word-a-minute lyrics delivered talking blues style above a shuffling rhythm. Criticizing England’s “Brexit” from the European Union and the right-wing propaganda that brought it about, the singer sums up his fellow countrymen’s decision singing “the gammons are all whining for some kind of reclamation but they don’t know what they want to reclaim” above a shadowy guitar riff ringing menacingly in the background. Opening with a mesmerizing guitar line, “The Highest In the Land” gently mocks people’s reliance on pseudo-spirituality and demagoguery, often to their own detriment and well-being. Fish sings “I’ve been a monk since I was eight years old, don’t want your money baby, don’t want your gold” while tying the worship of false idols to the isolationism currently embraced by too many Brits.  
+<p />
+Closing out The Highest In the Land, “Goodnight Sweetheart” is another personal ode, a low-key ballad reminiscent of Nick Lowe, with shimmering guitars and sparse percussion, the song instead relying on Fish’s unique, crooning vocals to carry the slight melody. Although it may seem like a downbeat tune to finish the album, it’s actually a lovely reminder of the concepts like love and friendship that fueled Fish’s entire existence.
+<p />
+It may be a somber goodbye, but it’s delivered with the quiet fury of a man that’s said all he’s had to say. As final statements go, The Highest In the Land is right up there with Warren Zevon’s The Wind , Johnny Cash’s American IV, and Bowie’s Blackstar as artistic triumphs.
+<p />
+Mr. Fish will certainly be missed, but he left us one last loving missive in The Highest In the Land.
+<p />
+Artist: The Jazz Butcher 
+<br />Album: The Highest In The Land
+<br />Label: Tapete Records
+<br />★★★★★ (5/5 stars) 
 		)}
 	)}
 	${jbc_footer}

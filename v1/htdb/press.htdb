@@ -522,6 +522,17 @@ ${d}
 		source=https://twitter.com/martin_j_wilson/status/1307237594330288136/photo/1,
 		added=2020-09-19)}
 
+	${addPress(type=album, album=scandal,
+		url=${jbc_press}/20180214_press_wonomagazine.html,
+		credit=woensdag,
+		publication=WoNo Magazine blog,
+		title=A Scandal In Bohemia,
+		headline=The Jazz Butcher,
+		location=Netherlands,
+		dt=2018-02-14,
+		source=https://wonomagazine.blogspot.com/2018/02/a-scandal-in-bohemia-jazz-butcher.html,
+		added=2023-09-20)}
+
 	${addPress(type=album, album=dist,
 		url=${jbc_press}/20130405_press_songwithinasong.html,
 		credit=josanpero,
@@ -17493,6 +17504,36 @@ There's thousands of them.<br/>
 They're bearing you up.<br/>
 They're holding you up.<br/>
 I want to hold you in my arms." <br/>
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20180214_press_wonomagazine.html
+#live	if (getval(page) = 20180214_press_wonomagazine.html)
+	${extractPress(
+		body=${literalizeCommas(
+Within half a year Fire Records releases two box sets with albums by a band that I had never heard of before. It seems the label specialises in doing these sort of thing. E.g. Pere Ubu and The Bevis Frond can be found on these pages. Now The Jazz Butcher follows in their slipstream. Last October Fire Records released 'The Wasted Years' and in March 'The Violent Years' will follow.
+<p />
+I picked out one album to see what I think of the The Jazz Butcher, like I have done with several of the other box sets in the past. Why A Scandal In Bohemia? Simply because it is the first album in the first set? Well not only. The title holds something intriguing as well. It is 1985 in Oxford. Bohemia is still behind the Iron Curtain and not a place to just drive to without real borders and passport controls. So why call an album A Scandal In Bohemia?
+<p />
+What I notice digging into the album is that it goes from dark wave that I hated so much at the time to whatever comes into the mind of Pat Fish and his compadres at the time. Nothing seems too far out it seems. Every idea is explored and worked out in the rehearsal room and brought to the studio. Fish sings some of the songs with that typical voice of the time. All influenced by the master of death Ian Curtis. Luckily it seems he had already discovered another tone as well, often aided by others in the band.
+<p />
+Within 40 minutes The Jazz Butcher leads me into so many different small corners of the pop and rock music that I both like and dislike that it nearly leaves me dazed and confused. No there is no classic rock here. What I have found, is (Irish) folk, new wave, The Velvet Underground, (early 60s) pop, punk, country/surf and all brought like the band does nothing else; per song. In short, the band specialises in all these different influences and sounds in a way I would not have been surprised to have heard a top cover of 'Dancing Queen' on the album. So confusing it will probably have been too much to ask from most listeners who liked to be locked into their little bubble in the 80s. You were in or out at the time. There was little in between.
+<p />
+And here's The Jazz Butcher stepping over all these boundaries and here I am in early 2018. The guy who abhorred most of what went on musically in the decade called the 80s and having a great time, most of the time, with A Scandal In Bohemia.
+<p />
+The start is upbeat, the Cure style with 'Southern Mark Smith (Big Return)'. I suppose the Smith from that 80s exponent The Fall*? The acoustic guitars give the song a pop feel. The lead lines on the electric guitar go back to the early The Cure songs infused with a little Big Country spunk. The Jazz Butcher is just as direct. The richness of the ideas and additions of sounds and the organ give away that this is not just a new wave punky band releasing its first song of the first album. This band has thought had about what it wants. The little bell sounds that opens the second song, 'Real Men', only attest to this idea. The song is as dark as the early Simple Minds songs and Comsat Angels, etc. And there are these little bells the whole time and the soft sounding chorus harmonies singing "real men from hell" as if they are seeing angels instead. The combination works real well.
+<p />
+With this I have found the key to this album. The Jazz Butcher loves to combine influences from different spectra and work them into a new song. Together Pat Fish, Mark Eider, Owen Jones and David J. brew these influences into a unique The Jazz Butcher song. They even do a Stray Cats pastiche, 'I Need Meat', but not without adding something the U.S. band would never have thought of in its wildest. Let alone the title.
+<p />
+A Scandal In Bohemia is an adventure in music where everything is allowed. I read somewhere someone declaring it one of the best albums ever made. I would not want to venture that far, but it certainly has a fair chance entering my list of favourite albums of the 80s. This is an album that lovers of music from the 60s and 70s and 80s should give a chance. There is so much to discover, so many hints of pleasant influences and far beyond the few I have mentioned here, that A Scandal In Bohemia is also a pub music quiz, next to a musical delight.
+<p />
+Except for that question at the beginning I haven't got answered, nothing much remains to be desired.
+<p />
+Wo.
+<p />
+* I wrote this review one day before the demise of Mark E. Smith was announced.
 		)}
 	)}
 	${jbc_footer}

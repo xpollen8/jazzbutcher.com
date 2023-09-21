@@ -436,6 +436,16 @@ ${d}
 		dt=2015-04-20,
 		added=2023-09-20)}
 
+	${addPress(type=,
+		url=${jbc_press}/20190526_press_creationrecords.html,
+		thumb=/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807,
+		publication=Creation Records,
+		title=Pat Fish of The Jazz Butcher ‘has been unwell’,
+		headline=Pat Fish of The Jazz Butcher is currently recovering from an unspecified illness earlier this year\, his recovery has meant that he is unable to work at present.,
+		source=https://creation-records.com/2019/05/26/pat-fish-of-the-jazz-butcher-has-been-unwell/,
+		dt=2019-05-26,
+		added=2023-09-20)}
+
 	${addPress(type=interview,
 		url=${jbc_press}/19900411_alterock.html,
 		thumb=/images/19900411/19900411_alterock;;David Whittemore,
@@ -446,6 +456,18 @@ ${d}
 		source=http://saltyka.blogspot.com/2009/05/jazz-butcher.html,
 		datetime=1990-04-11 00:00:00,
 		dt=1990-04-11)}
+
+	${addPress(type=interview, person=barker,
+		url=${jbc_press}/20220128_interview_50YearsOfFun.html,
+		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20220128_DaveBarker_interview_50YearsOfFun.mp3;;The Interview,
+		publication=50 Years of Fun,
+		title=50 Years of Fun - JAZ001,
+		headline=Pat Fish & The Jazz Butcher Special w/guest David Barker (Glass Records),
+		subhead=(Glass Records),
+		source=https://podcasts.apple.com/us/podcast/jaz001-pat-fish-the-jazz-butcher-special-w-guest/id1542932551?i=1000549279324,
+		credit=patreon.com/fiftyyearsoffun,
+		dt=2022-01-28,
+		added=2023-09-20)}
 
 	${addPress(type=interview, person=pat;max,
 		url=${jbc_press}/19860718_press_backgroundmediumproductions.html,
@@ -499,6 +521,17 @@ ${d}
 		dt=1990-09-19,
 		source=https://twitter.com/martin_j_wilson/status/1307237594330288136/photo/1,
 		added=2020-09-19)}
+
+	${addPress(type=album, album=dist,
+		url=${jbc_press}/20130405_press_songwithinasong.html,
+		credit=josanpero,
+		publication=A song within a song,
+		title=The Jazz Butcher Conspiracy,
+		headline=Nothing special,
+		location=Spain,
+		dt=2013-04-05,
+		source=https://cofrederecuerdosmusicales.blogspot.com/2013/04/the-jazz-butcher-conspiracy-nada.html,
+		added=2023-09-20)}
 
 	${addPress(type=album, album=dist,
 		url=${jbc_press}/198703_press_rockdelux.html,
@@ -17232,7 +17265,6 @@ A Pat Fish hay que quererle por lo que tiene de significado su música, la liber
 	${jbc_footer}
 #live	endif
 
-
 #define	19860718_press_backgroundmediumproductions.html
 #live	if (getval(page) = 19860718_press_backgroundmediumproductions.html)
 	${extractPress(
@@ -17248,6 +17280,224 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	)}
 	${jbc_footer}
 #live	endif
+
+#define	20220128_interview_50YearsOfFun.html
+#live	if (getval(page) = 20220128_interview_50YearsOfFun.html)
+	${extractPress(
+		body=${literalizeCommas(
+Stuff that comes up:
+<p />
+Jazz Butcher
+<br />
+John Cale
+<br />
+Elliot Sharp
+<br />
+Pacific
+<br />
+Lemon Kittens
+<br />
+Danielle Dax
+<br />
+The Tonix
+<br />
+Woodentops
+<br />
+Jacobites
+<br />
+NRBQ
+<br />
+Mekons
+<br />
+Rolo McGinty
+<br />
+John Cale
+<br />
+English Subtitles
+<br />
+Max Eider
+<br />
+Pat Fish
+<br />
+Cherry Red
+<br />
+Glass Records
+<br />
+Elliot Sharp
+<br />
+In Embrace
+<br />
+Bron Area
+<br />
+Rip Rig & Panic
+<br />
+Antena
+<br />
+Everything But the Girl
+<br />
+Bauhaus
+<br />
+Religious Overdose
+<br />
+David J
+<br />
+Kevin Ayers
+<br />
+Syd Barett
+<br />
+Velvet Underground
+<br />
+Lou Reed
+<br />
+John Rivers
+<br />
+Kevin Askins
+<br />
+Swell Maps
+<br />
+Felt
+<br />
+Alan McGee
+<br />
+Roadrunner
+<br />
+Jonathon Richman
+<br />
+Mark E. Smith
+<br />
+Brix Smith
+<br />
+The Fall
+<br />
+KLF
+<br />
+Camper Van Beethoven
+<br />
+Spacemen 3
+<br />
+Sisters of Mercy
+<br />
+Andrew Eldritch
+<br />
+Big Time Records
+<br />
+Go-Betweens
+<br />
+Alex Chilton
+<br />
+Redd Kross
+<br />
+Dream Syndicate
+<br />
+Love & Rockets
+<br />
+REM
+<br />
+Green On Red
+<br />
+Tom Waits
+<br />
+Paperhouse
+<br />
+Teenage Fanclub
+<br />
+The Pastels
+<br />
+Rain Parade
+<br />
+Oasis
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20190526_press_creationrecords.html
+#live	if (getval(page) = 20190526_press_creationrecords.html)
+	${extractPress(
+		body=${literalizeCommas(
+To help his recovery Will Carruthers formerly of Spacemen 3 and Spiritualized has launched a Go Fund Me campaign to help raise funds to cover expenses for his recuperation.
+<p />
+The Go Fund Me page states:
+<div class="annotation">
+“Pat Fish, aka. Mr Jazz Butcher, aka.  The Almost Abstemious Bohemian Godfather of the New Barcelona, NN1 Northampton has been unwell. This will come as a bit of a shock to those of you who may have thought that he was always slightly unwell, which is just a matter of opinion anyway.
+<p />
+“Fishy’s recent bout of unwellness has NOT, unfortunately,  been  a matter of opinion .”
+<p />
+“Despite his recent brush with inconvenient unwellness, Pat  has, unsurprisingly, remained Fishily stoic throughout. Perhaps a little too stoic. He hardly told a soul about it all. But then, as he himself  said, “Sure, what else is there to do of a January and February but go to the radiology department anyway?” 
+<p />
+“I suppose at this point I should start reassuring some of you that Pat does seem to have seen off the reaper this time, and he has been responding well to treatment. He remains “Cautiously optimistic.” “
+<p />
+“Pat is a musician and, consequently he is a little on the light side of comfortably off sometimes. Understandably, this is one of those times. It’s kind of difficult to hit the stage and entertain the people when there are medical necessities that need attending to. “
+<p />
+“Pat has asked me to point out that this fundraiser is not to pay for his actual medical treatment, (though recovery might be said to be a large part pf treatment), because, thankfully, we live in a country in which it is not always necessary to sell one of your kidneys to afford the medicine to make the other kidney better. We have free healthcare, and the very fine people at  Northampton hospital have been doing their utmost to keep the Butcher, butchering, which is how we like him .”
+</div>
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20130405_press_songwithinasong.html
+#live	if (getval(page) = 20130405_press_songwithinasong.html)
+	${extractPress(
+		body=${literalizeCommas(
+I've been trying to write an entry for days, looking for the notes to associate a few words with and there was no way. I didn't notice "Nothing special".  A gap, lack of inspiration. That strange feeling that you notice the day you realize that something ( a hobby, a reading, a song, a person ) that moved you hard, that turned your heart around, it doesn't mean anything anymore.  He was beginning to be worried.
+<p />
+I had a lot of words and songs gathered in skeins, accumulated, but every time I pulled the thread it ran aground... "Nothing special". That's what I thought and it sounded on the iPod "Angels" of the "Jazz Butcher" and I realized that was the entry that was looking for me.
+<p />
+The Jazz Butchers are an English group from the eighties that had limited success. Probably because they never believed their musical line and that lack of self-esteem took away their possibilities. Chances are his style would have fitted better into current "indie" music ( By the way! ¿What style is this? ) than in the postpunk era.
+<p />
+I do not know if my interpretation is true but I have the feeling that they lacked support from all sides: from their audience, from the record companies and of course from themselves. It is even noticeable in the name of the group that has had up to three denominations: "The Jazz Butcher" with dry stick or adding "Conspiracy" or "And His Sikkorskis from Hell" ( Wikipedia dixit ). Their website lacks frills, although they continue to update it and continue to act.
+<p />
+"Disstressed gentlefolk" is the first album ( although it is the fourth ) that was released from them in Spain in 1986, and we bought it immediately. I do not know why. I'm sure he hadn't heard a song. It is possible that this cover with the drawing of a well-dressed man, tied to a beautiful woman in the rump of a horse hoisted by some wicked, riding in the direction of an abyss, it would influence it. That comic image is still very attractive to me and I like to look at it gawking while it sounds on the turntable.
+<p />
+Curious the title of the album that refers to a British NGO from the end of the 19th century and that is still active today. Surely it is a wink from the leader ( Pat Fish, The Butcher ) who, given the humorous tone of one of his lyrics, would say that he is horny.
+<p />
+Production is simple, without fuss, or excesses. Surely for lack of means, but enough to make a glimpse of young people trying to organize their ideas, hesitant, looking for their place in the world, wanting to have fun and have fun. It seems that they did too much because they fought ( "The Zurich Incident" ) and that meant the departure of the guitarist's band, vocalist and composer Max Eider who continued solo with some interesting proposal. It seems that over the years something was arranged and they have collaborated together occasionally.
+<p />
+The group continued with what is probably their best album: "Fishcoteque". A pun with the last name of the main component. Already characterized, by a more defined musical style with clearly pop trends and probably something more commercial.
+<p />
+
+"Falling in love" starts the album. A tune with a folk air. Vocal harmonies to cheer friends, even without music, when they leave. A start to optimistic rhythms although "There's a real bad case of too much falling in love".
+<p />
+It is followed by "Big bad thing" which persists in the rhythmic good humor despite the title, although with a style clearly different from the first, they sound a bit "punk". Those beers must be starting to take effect.
+<p />
+
+In "Still in the kitchen" they find their most characteristic sound and will then explode on their other records. It starts slow, just like a ballad, the guitars sound a little sinister at first and then become thorny with sharp crystal dots. A song that contains references to another song inside ( "The ballad of Lucy Jordan" ).
+<p />
+"Hungarian love song" is not a ballad although it seems from the title, it takes up the optimism of the principle very much in the line of the group. They have just had their identity clear and they will exploit it as soon as they realize it.
+<p />
+
+"The new world" makes them intimate. Percussions recall other musical styles, could be performed by any more classical singer. Provides variety to the disc assembly.
+<p />
+"Who loves you now" delves into that more classic style. They don't look like a group from the eighties, much less pop to use. Vocal harmonies predominate, the "dudua" that he liked so much in previous decades and the keyboards. One of the best on the album to open a monumental "B" face.
+<p />
+
+In "Domestic Animal" they are already released, after several hesitation and tests of various types have taken a run. The album is yours and they will demonstrate it especially in the guitars and the choirs at the end.
+<p />
+
+"Buffalo Shame" I can't find it. Bad luck! It seems that it will be instrumental for its long introduction that reminds us of the soundtrack of some "western". The flute appears for the first time, replaced shortly by absolutely sixties guitars. They chant more than they sing, the voice is one more instrument.
+<p />
+The initial strumming of the guitar announces something exceptional and although it is titled "Nothing Special" it is really special. Youthful, easy, contagious, ironic pop, somewhat presumptuous and cynical ( as befits the early ages ). Spy looks, sitting on a train, with which I totally identify, laughing inside everything and everyone. Now that we are older we already know that we will limit ourselves to repeating, if not the same, similar mistakes.
+<p />
+"The name of this train is the Nothing Special<br/>
+It's just an ordinary train<br/>
+A very ordinary train<br/>
+Just like all the others; just a very ordinary train"
+<p />
+
+No pause compared to the previous one. They have left it for last because they know it is the best, it is the song that will make them last forever. A clearly nocturnal melody in contrast to the daylight that clearly gives off the previous one. The theme grows progressively with those angels dressed in black who are always inside and whom you would like to hug. Increase the number of instruments, the saxophone appears to differentiate it, to make it always mine, always yours ( if you want ). A song that has given me many laps from the first day and that will not let me go. One of those little pieces of soul housed anonymously on the net for anyone who wants to find it. According to Fish: "Written on the morning that news broke about Reagan's bombing of Tripoli."
+<p />
+"I can see them.<br/>
+Here they come now.<br/>
+There's thousands of them.<br/>
+They're bearing you up.<br/>
+They're holding you up.<br/>
+I want to hold you in my arms." <br/>
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
 
 #define data.json
 #live if (getval(page) = data.json)

@@ -221,6 +221,14 @@
 			<p>
 			Line-up: Max Eider, Steve Valentine, Kevin Haskins, Pat Fish
 		)},
+		photosets=
+			/images/20091011/4003723067_0af5927569_o.jpg$$
+			/images/20091011/4003725947_1b54b2952a_o.jpg$$
+			/images/20091011/4004482614_2178d51c00_o.jpg$$
+			/images/20091011/4004486186_25bfbf1fda_o.jpg$$
+			/images/20091011/4004491572_e91b2d5bf2_o.jpg$$
+			Ned Raggett;;https://www.flickr.com/photos/nedraggett/;;
+		,
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${hask}
 		)},

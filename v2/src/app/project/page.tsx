@@ -37,10 +37,10 @@ const collaborations = [
 	{ uri: '/project/trampling_tokyo', text: "With Alan Moore", aux: "The 'Trampling Tokyo' single" },
 	{ uri: '/project/the_undertakers', text: "The Undertakers", aux: "Unrehearsed covers, live",
 		children: <>
-		Formed as the house band of Slurp's Bar, Northampton,
+		Formed as the house band of Slurp&apos;s Bar, Northampton,
 		<b>The Undertakers</b> feature {expand('pat')}, {expand('mark_refoy')} and {expand('jonny_mattock')} ({expand('space')},
 		Spiritualized), and Tim Harris (Everything But The Girl, Doctor Didg).
-		They don't rehearse, they only play covers (Can, Velvets, Creedence, Kraftwerk, Plastic Ono Band, etc),
+		They don&apos;t rehearse, they only play covers (Can, Velvets, Creedence, Kraftwerk, Plastic Ono Band, etc),
 		and a total of about 43 people have ever seen them play live.
 		</>
 	},

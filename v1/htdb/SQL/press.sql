@@ -15,6 +15,7 @@ create table press (
 	thumb varchar(200) NOT NULL,
 	images varchar(1000) NOT NULL,
 	media varchar(1000) NOT NULL,
+	audio varchar(1000) NOT NULL,
 	publication varchar(200) NOT NULL,
 	location varchar(100) NOT NULL,
 	title varchar(200) NOT NULL,

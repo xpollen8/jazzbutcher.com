@@ -83,7 +83,6 @@ const PressArticle = ({ params }: { params?: any }) => {
 	const ArticleAudio = ({ article }: any) => {
 		if (article?.audio) {
 			const audio = parseCaptionsSourcesEtc(article?.audio);
-			console.log("AUDIO", audio[0]);
 			if (audio?.length) {
 				return (<>
 					{audio?.filter(([ file, caption ]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>

@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={myFont.className}>
-				<div className="nav saveSpace">
+				{/*<div className="nav saveSpace">
 					<Link className="horn" href="/">
 						<Image alt="The Jazz Butcher" width={114} height={80} src="https://jazzbutcher.com/images/knife_logo_80.png" />
 					</Link>
@@ -59,12 +59,13 @@ export default function RootLayout({
 					<NavItem uri="/prejbc/sonic_tonix" text="Sonic Tonix" />
 					<NavItem uri="/prejbc/the_tonix" text="The Tonix" />
 				</div>
-				<div className="main">
-					<Link href="#" className="menuButton">
+				*/}
+				{/*<div className="main">*/}
+					{/*<Link href="#" className="menuButton">
 						<Image alt="The Jazz Butcher" width={114} height={80} src="https://jazzbutcher.com/images/knife_logo_80.png" />
-					</Link>
+					</Link>*/}
 						{children}
-				</div>
+				{/*</div>*/}
 			</body>
     </html>
   )

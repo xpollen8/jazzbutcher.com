@@ -18,7 +18,21 @@ const Comment = ({ subject, dtcreated, who, whence, comments }: CommentType, key
 	</div>
 )
 
-const Comments = ({ comments = [], className }: { comments: CommentType[], className?: string }) => <div className={className}>{comments?.map(Comment)}</div>
+const AddComment = () => (
+	<div className="comment">
+		<h1>Add Comments</h1>
+		<div style={{ outline: '1px solid green', width: '100%', height: '250px', background: '#eee', padding: '5px' }}>
+			New comment form will go here
+		</div>
+	</div>
+)
+
+const Comments = ({ comments = [], className }: { comments: CommentType[], className?: string }) => (
+	<div className={className}>
+		<AddComment />
+		{comments?.map(Comment)}
+	</div>
+)
 
 export const CommentBubble = (props: any) => {
 	return (<span className="commentBubble flex">
@@ -74,14 +88,6 @@ const PageComments = () => {
 			</details>
 		</Suspense>
 	</>)
-
-//	/*
-//		<Page link="/feedback">
-//			{/*<AddComment />*/}
-//			<Comments feedback={feedback} />
-//		</Page>
-//	)
-//	*/
 }
 
 export default PageComments;

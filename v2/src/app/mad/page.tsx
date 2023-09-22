@@ -169,8 +169,9 @@ const Mad = () => <>
 				description: React.ReactElement
 			}, key: number): React.ReactNode => {
 				const img = `images/mad/${image}`;
-				return <LetterHeader key={key} title={caption}
-					subhead=<>
+				return <div className="listItem" key={key}>
+					<center>
+					<b>{caption}</b>
 						<Image
 							className="border rounded-lg"
 							src={`https://jazzbutcher.com/${img}_500.jpg`}
@@ -178,8 +179,8 @@ const Mad = () => <>
 							width='500'
 							alt={caption} />
 						{description}
-					</>
-				/>
+					</center>
+				</div>
 			})}
 		</div>
 

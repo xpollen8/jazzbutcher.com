@@ -139,7 +139,7 @@ const parseTitle = (title: string | string[], key0: number) => {
 	if (title?.constructor === Array && title[0]?.constructor === String) {
 		return title?.map((t: string, key: number) => {
 			const [ text, href ] = parseCaptionSourceEtc(t) || [];
-			if (href) return <li key={key0+key}><Link  href={href}>{text}</Link></li>;
+			if (href) return <li key={key0+key}><Link href={href}>{text}</Link></li>;
 			return <li key={key0+key}><span aria-current="page">{text}</span></li>;
 		});
 	}

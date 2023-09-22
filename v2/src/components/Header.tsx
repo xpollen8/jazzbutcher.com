@@ -157,13 +157,11 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 		?.map((href: string, key: number) => {
 			const { title, parent, summary}: BreadCrumb = sections[href];
 			return (
-				<>
-				<div key={key} className={`navItem ${depth === 0 && 'outer'}`}>
-					<Link href={`/${href}`}>{title}</Link>
-					{(summary) && <>{' - '}{summary}</>}
-					{makeMenuOptions(href, depth + 1)}
+				<div key={key} className={`navItem ${(depth === 0) ? 'outer' : ''}`}>
+					<Link style={{ width: '100%' }} href={`/${href}`}>{title}
+					{(summary) && <span className="date">{' - '}{summary}</span>}
+					{makeMenuOptions(href, depth + 1)}</Link>
 				</div>
-				</>
 			)
 		});
 

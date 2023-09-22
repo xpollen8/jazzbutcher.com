@@ -880,21 +880,28 @@ details > summary::-webkit-details-marker {
 details[open] .navTop {
 	background: white;
 	padding: 4px;
+	padding-right: 2px;
 	margin: -4px;
+	margin-right: 0px;
 }
 
 .navTop {
 	color: blue;
+	margin-right: 2px;
 }
 .navTop:hover {
 	background: white;
 	padding: 4px;
+	padding-right: 2px;
 	margin: -4px;
+	margin-right: 0px;
 }
 .navItem {
 	padding: 3px;
 	font-size: .85em;
 	margin-left: 10px;
+}
+.navItem:hover {
 }
 .navItem.outer {
 	border: 1px solid #99e;

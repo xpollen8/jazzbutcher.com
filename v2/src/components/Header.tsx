@@ -33,12 +33,13 @@ type BreadCrumb = {
 	href?: string
 	parent?: string | string[]
 	summary?: string
+	hide?: boolean
 }
 
 const sections : { [key: string]: BreadCrumb } = {
 	jbc: { href: '/', title: 'The Jazz Butcher' },
 
-	pat: { parent: 'jbc', title: 'Pat', summary: 'The Butcher' },
+	pat: { parent: 'jbc', title: 'Pat' },
 	media: { parent: 'jbc', title: 'Media', summary: "Listen! Watch! Read!" },
 	releases: { parent: 'jbc', title: 'Releases', summary: 'The records' },
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
@@ -50,7 +51,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content' },
 	help: { parent: 'jbc', title: 'Get Involved!', summary: "Let's do this, together" },
 
-	fanclub: { parent: 'jbc', title: 'Fan Club', summary: "Early Fan Club issues" },
+	fanclub: { parent: 'writings', title: 'Fan Club', summary: "Early Fan Club issues" },
 	audio: { parent: 'media', title: 'Audio', summary: "Bootlegs and the like" },
 	audio_interviews: { parent: [ 'audio', 'pat' ], title: 'Recorded Interviews', summary: "Radio and online interviews" },
 	audio_bootlegs: { parent: 'audio', title: 'Recorded performances', summary: "Non-official audio recordings" },
@@ -63,12 +64,12 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	//interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
 
-	project: { parent: 'pat', title: 'Side Projects', summary: "Pat was a busy butcher" },
+	project: { parent: 'pat', title: 'Side Projects', summary: "He was a busy butcher" },
 	gallery: { parent: 'pat', title: 'Gallery', summary: "Photography from all eras"  },
-	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "Final years' live performances" },
-	notebooks: { parent: 'pat', title: 'Notebooks', summary: "Pat kept extensive journals" },
+	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "COVID-era livestreams" },
+	notebooks: { parent: 'pat', title: 'Notebooks', summary: "Excerpts from his journals" },
 
-	memoriam: { parent: 'pat', title: 'In Memoriam', summary: "Too soon" },
+	memoriam: { parent: 'pat', title: 'In Memoriam' },
 	tributes: { parent: 'memoriam', title: 'Tributes', summary: "Rememberences and tributes" },
 	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
 
@@ -95,7 +96,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	wilson: { parent: 'projects', title: 'Wilson' },
 	dronesclub: { parent: 'projects', title: 'The Drones Club' },
 
-	admin: { parent: 'jbc', title: "Website Management" },
+	admin: { parent: 'jbc', title: "Website Management", hide: true },
 }
 
 const makeBreadcrumb = (name: string, aux?: any) => {
@@ -152,15 +153,18 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 	const nav = makeBreadcrumb(section, title) ?? [];
 	const makeMenuOptions = (section: string, depth: number) => depth < 2 &&
 		Object.keys(sections)
-		.filter((href: string) => sections[href]?.parent === section)
+		.filter((href: string) => sections[href]?.parent === section && !sections[href]?.hide)
 		?.map((href: string, key: number) => {
 			const { title, parent, summary}: BreadCrumb = sections[href];
 			return (
+				<>
+				{(depth === 0) && <hr className="m-1" />}
 				<div key={key} className="navItem">
-					<Link href={href}>{title}</Link>
+					<Link href={`/${href}`}>{title}</Link>
 					{(summary) && <>{' - '}{summary}</>}
 					{makeMenuOptions(href, depth + 1)}
 				</div>
+				</>
 			)
 		});
 
@@ -178,10 +182,17 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 								<summary>
 									<li className="navTop" key={key}>{obj.title}</li>
 								</summary>
-								<div className="navOverlay">{mainOptions}</div>
+								<div className="navOverlay">
+									<div className="navItem"><Link href='/'>Home</Link></div>
+									{mainOptions}
+								</div>
 							</details>
 						}
-						if (obj?.href) return <li key={key}><Link href={obj.href}>{obj.title}</Link></li>
+						if (obj?.href) {
+							return <>
+								<li key={key}><Link href={obj.href}>{obj.title}</Link></li>
+							</>
+						}
 						return parseTitle(obj.title, key);
 					})}
 					{children}

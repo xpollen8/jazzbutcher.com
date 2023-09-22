@@ -912,14 +912,15 @@ details > summary::-webkit-details-marker {
 }
 
 .navOverlay {
-  position: fixed;
-  left: 0;
+  position: absolute;
   background: white;
   overflow: scroll;
 	color: grey;
   -webkit-box-shadow: 0 3px 4px rgba(0,0,0,.18);
   box-shadow: 0 3px 4px rgba(0,0,0,.18);
 	padding-right: 10px;
+	height: 400px;
+	display: block;
   overflow: scroll;
 }
 

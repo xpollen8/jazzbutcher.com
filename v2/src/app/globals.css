@@ -893,14 +893,18 @@ main {
 }
 
 .commentBubble:hover {
-  fill: green;
+  background: white;
+}
+summary {
+	list-style: none;
 }
 .commentOverlay {
   position: fixed;
+	top: 40px;
   left: 0;
+	right: 0;
   background: gray;
   height: 1000px;
-  width: 100%;
   overflow: scroll;
   padding: 5px;
 }

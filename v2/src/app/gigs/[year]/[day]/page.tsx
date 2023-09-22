@@ -8,7 +8,7 @@ import './styles.css';
 import EmbedMedia from '@/components/EmbedMedia';
 
 import { AutoLinkPlayer, AutoLinkAct } from '@/lib/defines';
-import { parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime } from '@/lib/macros';
+import { parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime } from '@/lib/macros';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
@@ -163,8 +163,9 @@ const GigReview = ({ data }: any) => {
 }
 const GigReviews = (data: any) => <><Iterator data={data} func={GigReview} /></>
 
-const GigDetails = ({ data, extra }: any) => {
-	if (!data) return;
+const GigDetails = ({ gig }: any) => {
+	if (!gig) return;
+	const extra = gig?.extra;
 	return (<>
 		{GigPlayers(extra?.players_JBC)}
 		{GigWith(extra?.players_with)}
@@ -176,33 +177,29 @@ const GigMap = ({ data }: any) => {
 	</>)
 }
 
-const ExtraNav = ({ datetime }: { datetime: string }) => {
-	const { gig, isLoading, error } = useGig(datetime)
+const ExtraNav = ({ datetime, gig }: { datetime: string, gig: any }) => {
 	return <>
 		- NAV -
 	</>
 }
 
-const Nav = ({ year, datetime }: { year: number, datetime: string }) => {
+const Nav = ({ year, datetime, gig }: { year: number, datetime: string, gig: any }) => {
 	const hasHour = !(datetime.includes('00:00:00'));
+	const project = parseProject(gig?.extra);
 
 	const display = `${parseMonthName(datetime)} ${parseDayOrdinal(datetime)} ${(hasHour) ? parseHourAMPM(datetime) : ''}`;
 
-	return <Header section='gigs' title={ [ `${year};;/gigs/${year}`, display ] } extraNav=<ExtraNav datetime={datetime} /> />
+	return <Header project={project} section='gigs' title={ [ `${year};;/gigs/${year}`, display ] } extraNav=<ExtraNav datetime={datetime} gig={gig} /> />
 }
 
-const Content = ({ datetime }: { datetime: string }) => {
-	const { gig, isLoading, error } = useGig(datetime)
-
-	const details = gig?.results[0];	// assumes only one gig per datetime!
-
+const Content = ({ gig }: { gig: any }) => {
 	// extra.played (gigsongs table)
 	const extra:any = {
-		played: details?.played
+		played: gig?.played
 	}
 
 	// extra.media_* (gigmedia table)
-	details?.media?.forEach((t: any) => {
+	gig?.media?.forEach((t: any) => {
 		const nameIt = `media_${t.type}`;
 		switch (t.type) {
 			case 'pix':
@@ -219,7 +216,7 @@ const Content = ({ datetime }: { datetime: string }) => {
 	})
 
 	// extra.players_* (performance table)
-	details?.players?.forEach((t: any) => {
+	gig?.players?.forEach((t: any) => {
 		switch (t.category) {
 			case 'event':
 				if (!extra['players_JBC']) extra['players_JBC'] = [];
@@ -235,7 +232,7 @@ const Content = ({ datetime }: { datetime: string }) => {
 	})
 
 	// extra.press_* (press table)
-	details?.press?.forEach((t: any) => {
+	gig?.press?.forEach((t: any) => {
 		const nameIt = `press_${t.type}`;
 		switch (t.type) {
 			case 'gig':
@@ -254,7 +251,7 @@ const Content = ({ datetime }: { datetime: string }) => {
 	})
 
 	// extra.text_* (gigtext table)
-	details?.text?.forEach((t: any) => {
+	gig?.text?.forEach((t: any) => {
 		const nameIt = `text_${t.type}`;
 		switch (t.type) {
 			case 'bootlegger':
@@ -286,11 +283,9 @@ const Content = ({ datetime }: { datetime: string }) => {
 		{ label: 'Reviews', lookup: 'text_review', func: GigReviews },
 	]
 
-	console.log("GIG", gig);
-	const det = gig?.results[0];
 	return <div className={`(isLoading) ? 'blur-sm' : '' w-full`}>
 		<Tag>Live Performance -
-		{det?.type} {det?.venue} {det?.city} {det?.country}
+		{gig?.type} {gig?.venue} {gig?.city} {gig?.country}
 		</Tag>
 		<Tabs.Root className="TabsRoot mx-2" defaultValue="details">
 			<Tabs.List className="TabsList" aria-label="Available gig details">
@@ -308,7 +303,7 @@ const Content = ({ datetime }: { datetime: string }) => {
 				})}
 			</Tabs.List>
 			<Tabs.Content key='details' className="TabsContent -mx-4" value='details'>
-				<div className="bg-slate-100"><GigDetails data={gig} extra={extra} /></div>
+				<div className="bg-slate-100"><GigDetails gig={gig} /></div>
 			</Tabs.Content>
 			{extras?.map(({ label, lookup, func }: any, key: number) =>
 				<Tabs.Content key={key} className="TabsContent -mx-4" value={`tab${key}`}>
@@ -323,11 +318,15 @@ const GigProfile = (props: any) => {
 	const year = props?.params?.year;
 	const day = props?.params?.day;
 	const datetime = gigPage2Datetime(`/${year}/${day}.html`);
+	const { data, isLoading, error } = useGig(datetime)
+	const gig = data?.results[0];
 
 	return <>
-		<Nav year={year} datetime={datetime} />
 		<Suspense fallback={<>Loading...</>}>
-			<Content datetime={datetime} />
+			{(!isLoading && gig) && (<>
+				<Nav year={year} datetime={datetime} gig={gig} />
+				<Content gig={gig} />
+			</>)}
 		</Suspense>
 		<Footer />
 	</>

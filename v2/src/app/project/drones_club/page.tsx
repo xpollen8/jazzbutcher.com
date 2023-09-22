@@ -12,7 +12,10 @@ const DronesClub = () =>
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/cropped-cropped-site-image-bw.jpg" width={500} height={500} alt="more drones" />
 
 	<p />
-	<EmbedMedia data={{ mediaurl: "https://soundcloud.com/the-drones/drones-at-the-bbc-interview-only", }} />
+	<EmbedMedia data={{ mediaurl: "https://soundcloud.com/the-drones/drones-at-the-bbc-interview-only", }}>
+		The Drones in conversation with Lal Muttock BBC Northampton Introduces..
+		Saturday 28th Feb 2015
+	</EmbedMedia>
 	<p />
 
 <code>

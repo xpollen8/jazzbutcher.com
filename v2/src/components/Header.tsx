@@ -4,6 +4,7 @@ import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next'
 import { parseCaptionSourceEtc, parseYear, ts2URI } from '@/lib/macros';
 import { useSearchParams } from 'next/navigation';
+import PageComments from '@/components/PageComments';
  
 type Props = {
   params: {
@@ -165,18 +166,25 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 
 	if (!section) return;
 	const nav = makeBreadcrumb(section, title) ?? [];
-	return (<nav aria-label="Breadcrumb" className="breadcrumb">
-		<ul>
-		{nav.map((obj: any, key: number) => {
-			const children = Object.keys(sections).filter((h: string) => {
-				return sections[h]?.parent?.includes(section?.toLowerCase());
-			}).map((h: string) => ({ link: h, ...sections[h] }));
-			if (obj?.href) return <li key={key}><Link href={obj.href}>{obj.title}</Link></li>
-			return parseTitle(obj.title, key);
-		})}
-		</ul>
+	return (<div aria-label="Breadcrumb" className="breadcrumb w-full">
+		<div className="flex">
+			<div className="w-full">
+			<ul>
+			{nav.map((obj: any, key: number) => {
+				const children = Object.keys(sections).filter((h: string) => {
+					return sections[h]?.parent?.includes(section?.toLowerCase());
+				}).map((h: string) => ({ link: h, ...sections[h] }));
+				if (obj?.href) return <li key={key}><Link href={obj.href}>{obj.title}</Link></li>
+				return parseTitle(obj.title, key);
+			})}
+			</ul>
+			</div>
+			<div>
+				<PageComments />
+			</div>
+		</div>
 		{children}
-	</nav>)
+	</div>)
 }
 
 type GigResults = {
@@ -337,17 +345,18 @@ const Header = (props: Props_Header): React.ReactNode  => {
 		props.section = section;
 	}
 	*/
-	return ( <>
-		<div className="homeContainer">
-			<div className="homeHeader">
+	return ( <nav>
+		{/*<div className="homeContainer">*/}
+			{/*<div className="homeHeader">*/}
 				{/*<Nav />*/}
-				<Section {...props} />
-				{props?.extraNav}
-			</div>
+				<Section {...props}>
+					{props?.extraNav}
+				</Section>
+			{/*</div>*/}
 			{props?.children}
-		</div>
+		{/*</div>*/}
 		{(props?.project) && <div className={`gig_${props.project}`} ></div>}
-	</>)
+	</nav>)
 }
 
 export default Header;

@@ -605,4 +605,13 @@ export const truncAt = (chop: string, str: string) => {
 	return ret || str;
 }
 
+export const parseProject = (extra?: string) => {
+	if (extra?.includes('wilson')) return 'wilson';
+	if (extra?.includes('sumo')) return 'sumo';
+	if (extra?.includes('eg')) return 'eg';
+	if (extra?.includes('solo')) return 'solo';
+	if (extra?.includes('duo')) return 'duo';
+	if (extra?.includes('nopat')) return 'nopat';
+}
+
 export { localDate, datesEqual, bannerGigs, linkSong, songLinkMapped, parseDomain, dateDisplay, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

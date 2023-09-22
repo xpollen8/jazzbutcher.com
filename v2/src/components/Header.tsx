@@ -158,9 +158,9 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 			const { title, parent, summary}: BreadCrumb = sections[href];
 			return (
 				<div key={key} className={`navItem ${(depth === 0) ? 'outer' : ''}`}>
-					<Link style={{ width: '100%' }} href={`/${href}`}>{title}
+					<Link style={{ width: '100%' }} href={`/${href}`}>{title}</Link>
 					{(summary) && <span className="date">{' - '}{summary}</span>}
-					{makeMenuOptions(href, depth + 1)}</Link>
+					{makeMenuOptions(href, depth + 1)}
 				</div>
 			)
 		});

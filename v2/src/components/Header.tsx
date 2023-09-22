@@ -175,15 +175,15 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 						}).map((h: string) => ({ link: h, ...sections[h] }));
 						if (obj?.href === '/') {
 							const mainOptions = makeMenuOptions('jbc', 0);
-							return <details key={key}>
-								<summary>
-									<li className="navTop" key={key}>{obj.title}</li>
-								</summary>
-								<div className="navOverlay">
+							return <div key={key}>
+								<div id="summary">
+									<li className="navTop" key={key}><Link href='/'>{obj.title}</Link></li>
+								</div>
+								<div className="navOverlay" id="detail">
 									<div className="navItem outer"><Link href='/'>Home</Link></div>
 									{mainOptions}
 								</div>
-							</details>
+							</div>
 						}
 						if (obj?.href) {
 							return <>

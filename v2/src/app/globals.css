@@ -877,6 +877,13 @@ details > summary::-webkit-details-marker {
 	padding-left: 2px;
 }
 
+#summary:hover + #detail, #detail:hover {
+	display: block;
+}
+#detail {
+	display: none;
+}
+
 details[open] .navTop {
 	background: white;
 	padding: 4px;
@@ -889,7 +896,7 @@ details[open] .navTop {
 	color: blue;
 	margin-right: 2px;
 }
-.navTop:hover {
+.navTop:hover, .navTop:focus, .navTop:active {
 	background: white;
 	padding: 4px;
 	padding-right: 2px;
@@ -900,8 +907,6 @@ details[open] .navTop {
 	padding: 3px;
 	font-size: .85em;
 	margin-left: 10px;
-}
-.navItem:hover {
 }
 .navItem.outer {
 	border: 1px solid #99e;

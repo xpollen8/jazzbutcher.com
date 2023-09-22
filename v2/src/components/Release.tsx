@@ -4,7 +4,7 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { removeHTML, Source } from '@/components/GenericWeb';
+import { removeHTML, Attribution, Source } from '@/components/GenericWeb';
 import Tag from '@/components/Tag';
 import ImageStrip from '@/components/ImageStrip';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
@@ -130,7 +130,7 @@ const ReleaseLiner = ({ release }: { release: ReleaseTypeWithChildren }) => {
 			<Tag>Liner Notes</Tag>
 			<blockquote>
 				<div dangerouslySetInnerHTML={{ __html: liner }} />
-				{(source) && <Source g={removeHTML(source)} u={sourceurl} d={sourcedate} />}
+				{(source) && <Attribution g={removeHTML(source)} u={sourceurl} d={sourcedate} />}
 			</blockquote>
 		</>)
 	}

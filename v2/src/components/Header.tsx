@@ -45,7 +45,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives' },
 	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The army of musicians' },
-	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'The man had opinions' },
+	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },
 	fiascos: { parent: 'writings', title: 'The Fiascos', summary: 'Top 10 JBC Fiascos' },
 	prejbc: { parent: 'pat', title: 'Pre-JBC', summary: 'Before there was The JBC' },
 	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content' },
@@ -60,7 +60,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	press: { parent: 'media', title: 'Press', summary: "In print (and online)" },
 	print_interviews: { parent: [ 'press', 'pat' ], title: 'Printed Interviews', summary: "Mags, newsprint, and online" },
 	posters: { parent: 'media', title: 'Posters', summary: 'Gig Ephemera' },
-	news: { parent: 'media', title: 'News', summary: "Website updates and announcements" },
+	news: { parent: 'media', title: 'News', summary: "Website announcements" },
 
 	//interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
 
@@ -96,7 +96,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	wilson: { parent: 'projects', title: 'Wilson' },
 	dronesclub: { parent: 'projects', title: 'The Drones Club' },
 
-	admin: { parent: 'jbc', title: "Website Management", hide: true },
+	admin: { parent: 'jbc', title: "Website Management", hide: false },
 }
 
 const makeBreadcrumb = (name: string, aux?: any) => {
@@ -158,8 +158,7 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 			const { title, parent, summary}: BreadCrumb = sections[href];
 			return (
 				<>
-				{(depth === 0) && <hr className="m-1" />}
-				<div key={key} className="navItem">
+				<div key={key} className={`navItem ${depth === 0 && 'outer'}`}>
 					<Link href={`/${href}`}>{title}</Link>
 					{(summary) && <>{' - '}{summary}</>}
 					{makeMenuOptions(href, depth + 1)}
@@ -183,7 +182,7 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 									<li className="navTop" key={key}>{obj.title}</li>
 								</summary>
 								<div className="navOverlay">
-									<div className="navItem"><Link href='/'>Home</Link></div>
+									<div className="navItem outer"><Link href='/'>Home</Link></div>
 									{mainOptions}
 								</div>
 							</details>

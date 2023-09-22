@@ -906,7 +906,7 @@ details > summary::-webkit-details-marker {
   left: 0;
 	right: 0;
   background: gray;
-  height: 1000px;
+	max-height: 95vh;
   overflow: scroll;
   padding: 5px;
 }
@@ -914,14 +914,14 @@ details > summary::-webkit-details-marker {
 .navOverlay {
   position: absolute;
   background: white;
-  overflow: scroll;
 	color: grey;
   -webkit-box-shadow: 0 3px 4px rgba(0,0,0,.18);
   box-shadow: 0 3px 4px rgba(0,0,0,.18);
-	padding-right: 10px;
-	height: 400px;
-	display: block;
   overflow: scroll;
+	max-height: 90vh;
+	justify-content: center;
+	padding-top: 5px;
+	justify-content: center;
 }
 
 details[open] .navTop {
@@ -935,6 +935,13 @@ details[open] .navTop {
 	background: white;
 }
 .navItem {
+	padding: 3px;
 	font-size: .85em;
 	margin-left: 10px;
+}
+.navItem.outer {
+	border: 1px solid #99e;
+	border-radius: 5px;
+	margin: 3px;
+	font-size: .85em;
 }

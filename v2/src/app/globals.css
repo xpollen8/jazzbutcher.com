@@ -230,6 +230,11 @@ textplus1 {
 .gig_wilson:before {
 	content: url(https://jazzbutcher.com/images/performance_wilson.png);
 }
+.gig_duo {
+	background-color: #0258bc;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
 .gig_duo:before {
 	content: url(https://jazzbutcher.com/images/performance_duo.png);
 }
@@ -326,13 +331,6 @@ textplus1 {
 	padding-left: 10px;
 	padding-right: 10px;
 	border: 1px solid #696;
-}
-.homeContainer {
-	margin: 0px 0px;
-	margin-bottom: 5px;
-	background-color: #AFF1E4;
-	font-size: 1.1em;
-	border: 1px solid #666;
 }
 .homeHeader {
 	display: flex;

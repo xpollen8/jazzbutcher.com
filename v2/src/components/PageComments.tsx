@@ -65,7 +65,7 @@ const PageComments = () => {
 	return (<>
 		<Suspense fallback={<>Loading...</>}>
 			<details>
-				<summary className="grid">
+				<summary>
 					<CommentBubble style={{ width: '25px', fontSize: '.5em' }}>
 						{comments.length}
 					</CommentBubble>

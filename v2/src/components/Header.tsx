@@ -39,17 +39,17 @@ const sections : { [key: string]: BreadCrumb } = {
 	jbc: { href: '/', title: 'The Jazz Butcher' },
 
 	pat: { parent: 'jbc', title: 'Pat', summary: 'The Butcher' },
-	releases: { parent: 'jbc', title: 'Releases', summary: 'Recorded output' },
-	gigs: { parent: 'jbc', title: 'Gigs', summary: 'The exhaustive live performance archives' },
-	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The army of JBC musicians' },
+	media: { parent: 'jbc', title: 'Media', summary: "Listen! Watch! Read!" },
+	releases: { parent: 'jbc', title: 'Releases', summary: 'The records' },
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
-	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'The man has opinions on things' },
+	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives' },
+	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The army of musicians' },
+	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'The man had opinions' },
 	fiascos: { parent: 'writings', title: 'The Fiascos', summary: 'Top 10 JBC Fiascos' },
 	prejbc: { parent: 'pat', title: 'Pre-JBC', summary: 'Before there was The JBC' },
 	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content' },
 	help: { parent: 'jbc', title: 'Get Involved!', summary: "Let's do this, together" },
 
-	media: { parent: 'jbc', title: 'Media', summary: "Listen! Watch! Read!" },
 	fanclub: { parent: 'jbc', title: 'Fan Club', summary: "Early Fan Club issues" },
 	audio: { parent: 'media', title: 'Audio', summary: "Bootlegs and the like" },
 	audio_interviews: { parent: [ 'audio', 'pat' ], title: 'Recorded Interviews', summary: "Radio and online interviews" },
@@ -61,12 +61,12 @@ const sections : { [key: string]: BreadCrumb } = {
 	posters: { parent: 'media', title: 'Posters', summary: 'Gig Ephemera' },
 	news: { parent: 'media', title: 'News', summary: "Website updates and announcements" },
 
-	interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
+	//interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
 
 	project: { parent: 'pat', title: 'Side Projects', summary: "Pat was a busy butcher" },
 	gallery: { parent: 'pat', title: 'Gallery', summary: "Photography from all eras"  },
-	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "Final years' live performances from his home" },
-	notebooks: { parent: 'pat', title: 'Notebooks', summary: "Throughout his life, Pat kept journals in which he documented his gigs, tours, general observations, drew sketches, and jotted down lyrics. They are utterly fascinating.  In 2012, Pat auctioned off many of his older notebooks to raise funds for Last of the Gentlemen Adventurers" },
+	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "Final years' live performances" },
+	notebooks: { parent: 'pat', title: 'Notebooks', summary: "Pat kept extensive journals" },
 
 	memoriam: { parent: 'pat', title: 'In Memoriam', summary: "Too soon" },
 	tributes: { parent: 'memoriam', title: 'Tributes', summary: "Rememberences and tributes" },
@@ -138,21 +138,7 @@ const parseTitle = (title: string | string[], key0: number) => {
 	if (title?.constructor === Array && title[0]?.constructor === String) {
 		return title?.map((t: string, key: number) => {
 			const [ text, href ] = parseCaptionSourceEtc(t) || [];
-			if (href) {
-			/* WIP
-				const menu = <>
-				<ul className="dropdown-menu">
-					<li className="dropdown-item">
-						<Link className="menu-link dropdown-link" href="/"> howdy </Link>
-						<Link className="menu-link dropdown-link" href="/"> noy </Link>
-						<Link className="menu-link dropdown-link" href="/"> boyo </Link>
-					</li>
-				</ul>
-				</>;
-				return <li className="menu-item dropdown" key={key0+key}><Link className="menu-link" href={href}>{text}</Link>{menu}</li>;
-			*/
-				return <li key={key0+key}><Link  href={href}>{text}</Link></li>;
-			}
+			if (href) return <li key={key0+key}><Link  href={href}>{text}</Link></li>;
 			return <li key={key0+key}><span aria-current="page">{text}</span></li>;
 		});
 	}
@@ -164,6 +150,20 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 
 	if (!section) return;
 	const nav = makeBreadcrumb(section, title) ?? [];
+	const makeMenuOptions = (section: string, depth: number) => depth < 2 &&
+		Object.keys(sections)
+		.filter((href: string) => sections[href]?.parent === section)
+		?.map((href: string, key: number) => {
+			const { title, parent, summary}: BreadCrumb = sections[href];
+			return (
+				<div key={key} className="navItem">
+					<Link href={href}>{title}</Link>
+					{(summary) && <>{' - '}{summary}</>}
+					{makeMenuOptions(href, depth + 1)}
+				</div>
+			)
+		});
+
 	return (<div aria-label="Breadcrumb" className="breadcrumb w-full">
 		<div className="flex">
 			<div className="w-full">
@@ -172,6 +172,15 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 						const children = Object.keys(sections).filter((h: string) => {
 							return sections[h]?.parent?.includes(section?.toLowerCase());
 						}).map((h: string) => ({ link: h, ...sections[h] }));
+						if (obj?.href === '/') {
+							const mainOptions = makeMenuOptions('jbc', 0);
+							return <details>
+								<summary>
+									<li className="navTop" key={key}>{obj.title}</li>
+								</summary>
+								<div className="navOverlay">{mainOptions}</div>
+							</details>
+						}
 						if (obj?.href) return <li key={key}><Link href={obj.href}>{obj.title}</Link></li>
 						return parseTitle(obj.title, key);
 					})}

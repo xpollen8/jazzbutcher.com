@@ -4,15 +4,21 @@ import EmbedMedia from '@/components/EmbedMedia';
 const texts = [
 	{ uri: '/eulogy', text: 'Alan Moore',
 		aux: 'Eulogy' },
+	{
+		uri: '/press/20211007_press_louderthanwar',
+		text: 'Alex Maiolo',
+		aux: '[Louder Than War]: An appreciation',
+	},
+	{	uri: '/press/20211127_press_tribute',
+		text: 'simonovitch',
+		aux: '[Whisperin and Hollerin]: A Celebration Of Pat Fish',
+	},
 	{ uri: '/press/20211012_press_northantstelegraph_davidjackson.html', text: 'David Jackson',
-		aux: 'Northants Telegraph' },
+		aux: '[Northants Telegraph]: It was an honour and privilege..' },
 	{ uri: '/press/20221005_ink19_jazz_butcher_society.html', text: 'Julius C. Lacking',
-		aux: 'ink19.com' },
-	{ uri: '/press/20220405_press_monolithcocktail.html', text: 'Matteo Maioli',
-		aux: 'Monolith Cocktail' },
+		aux: '[Ink 19]: Remembering Pat Fish' },
 	{ uri: '/press/20211007_press_illlive.html', text: 'Deborah Wassertzug',
-		aux: "I'll Live",
-		children: <blockquote className="text-xs">A heartfelt posting with screenshots of a couple of Pat&apos;s Facebook interactions</blockquote>
+		aux: "[I'll Live]: Making Me Understand",
 		},
 ];
 
@@ -63,7 +69,7 @@ const music = [
 		},
 ];
 
-export const TributeText = () => <div className="border"><p className="text-center text-xl">Tributes In Words</p> <p /> {texts.map(MakeSimpleURI)}</div>
+export const TributeText = () => <div className="border"><p className="text-center text-xl">Tributes In Words</p> <p /> {texts.map(MakeSimpleURI)}<p /></div>
 export const TributeAudio = ()  => <div className="border"><p className="text-center text-xl">Tributes In Audio</p> <p /> {music.map(MakeSimpleURI)}</div>
 
 const Tributes = () => <>

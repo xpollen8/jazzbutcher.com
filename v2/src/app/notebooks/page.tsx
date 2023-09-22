@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 const Notebooks = () => 
 <>
 	<Header section="notebooks" />
-	<blockquote>
+	Throughout his life, Pat kept journals in which he documented his gigs, tours, general observations, drew sketches, and jotted down lyrics. They are utterly fascinating.  In 2012, Pat auctioned off many of his older notebooks to raise funds for Last of the Gentlemen Adventurers
+	<blockquote className="annotation">
 		I just received these handwritten lyrics from Mr. Curtis E Johnson himself!
 		Bigquestionsinc commented on Aug 20, 2022
 	</blockquote>

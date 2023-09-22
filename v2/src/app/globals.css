@@ -76,7 +76,6 @@
 	width: 96%;
 }
 .audio_player {
-	padding-left: 10px;
 	width: 100%
 }
 .audio_title {
@@ -895,8 +894,11 @@ main {
 .commentBubble:hover {
   background: white;
 }
-summary {
-	list-style: none;
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+	display: none;
 }
 .commentOverlay {
   position: fixed;

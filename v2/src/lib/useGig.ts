@@ -5,7 +5,7 @@ const useGig = (datetime: string) => {
 	const fetcher = (url: string) => fetch(url).then((res) => res.json());
 	const { data, error, isLoading } = useSWR(`/api/gig_by_datetime/${datetime}`, fetcher);
 	return {
-		gig: data,
+		data,
 		isLoading,
 		error,
 	}

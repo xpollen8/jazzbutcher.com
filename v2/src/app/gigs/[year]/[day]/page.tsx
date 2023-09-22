@@ -163,12 +163,11 @@ const GigReview = ({ data }: any) => {
 }
 const GigReviews = (data: any) => <><Iterator data={data} func={GigReview} /></>
 
-const GigDetails = ({ gig }: any) => {
+const GigDetails = ({ gig, joins }: any) => {
 	if (!gig) return;
-	const extra = gig?.extra;
 	return (<>
-		{GigPlayers(extra?.players_JBC)}
-		{GigWith(extra?.players_with)}
+		{GigPlayers(joins?.players_JBC)}
+		{GigWith(joins?.players_with)}
 	</>)
 }
 
@@ -178,9 +177,7 @@ const GigMap = ({ data }: any) => {
 }
 
 const ExtraNav = ({ datetime, gig }: { datetime: string, gig: any }) => {
-	return <>
-		- NAV -
-	</>
+	return <> &lt;- NAV -&gt; </>
 }
 
 const Nav = ({ year, datetime, gig }: { year: number, datetime: string, gig: any }) => {
@@ -193,12 +190,12 @@ const Nav = ({ year, datetime, gig }: { year: number, datetime: string, gig: any
 }
 
 const Content = ({ gig }: { gig: any }) => {
-	// extra.played (gigsongs table)
-	const extra:any = {
+	// joins.played (gigsongs table)
+	const joins:any = {
 		played: gig?.played
 	}
 
-	// extra.media_* (gigmedia table)
+	// joins.media_* (gigmedia table)
 	gig?.media?.forEach((t: any) => {
 		const nameIt = `media_${t.type}`;
 		switch (t.type) {
@@ -206,32 +203,32 @@ const Content = ({ gig }: { gig: any }) => {
 			case 'poster':
 			case 'setlist':
 			case 'ticket':
-				if (!extra[nameIt]) extra[nameIt] = [];
-				extra[nameIt].push(t);
+				if (!joins[nameIt]) joins[nameIt] = [];
+				joins[nameIt].push(t);
 				break;
 			default:
-				if (!extra['media_other']) extra['media_other'] = [];
-				extra['media_other'].push(t);
+				if (!joins['media_other']) joins['media_other'] = [];
+				joins['media_other'].push(t);
 		}
 	})
 
-	// extra.players_* (performance table)
+	// joins.players_* (performance table)
 	gig?.players?.forEach((t: any) => {
-		switch (t.category) {
+		switch (t?.category) {
 			case 'event':
-				if (!extra['players_JBC']) extra['players_JBC'] = [];
-				extra['players_JBC'].push(t);
+				if (!joins['players_JBC']) joins['players_JBC'] = [];
+				joins['players_JBC'].push(t);
 			break;
 			case 'with':
-				if (!extra['players_with']) extra['players_with'] = [];
-				extra['players_with'].push(t);
+				if (!joins['players_with']) joins['players_with'] = [];
+				joins['players_with'].push(t);
 			break;
 			default:
 				// ignore 'event'
 		}
 	})
 
-	// extra.press_* (press table)
+	// joins.press_* (press table)
 	gig?.press?.forEach((t: any) => {
 		const nameIt = `press_${t.type}`;
 		switch (t.type) {
@@ -241,16 +238,16 @@ const Content = ({ gig }: { gig: any }) => {
 			case 'kit':
 			case 'pat':
 			case 'retrospective':
-				if (!extra[nameIt]) extra[nameIt] = [];
-				extra[nameIt].push(t);
+				if (!joins[nameIt]) joins[nameIt] = [];
+				joins[nameIt].push(t);
 				break;
 			default:
-				if (!extra['press_other']) extra['press_other'] = [];
-				extra['press_other'].push(t);
+				if (!joins['press_other']) joins['press_other'] = [];
+				joins['press_other'].push(t);
 		}
 	})
 
-	// extra.text_* (gigtext table)
+	// joins.text_* (gigtext table)
 	gig?.text?.forEach((t: any) => {
 		const nameIt = `text_${t.type}`;
 		switch (t.type) {
@@ -260,12 +257,12 @@ const Content = ({ gig }: { gig: any }) => {
 			case 'review':
 			case 'selfreview':
 			case 'soundman':
-				if (!extra[nameIt]) extra[nameIt] = [];
-				extra[nameIt].push(t);
+				if (!joins[nameIt]) joins[nameIt] = [];
+				joins[nameIt].push(t);
 			break;
 			default:
-				if (!extra['text_other']) extra['text_other'] = [];
-				extra['text_other'].push(t);
+				if (!joins['text_other']) joins['text_other'] = [];
+				joins['text_other'].push(t);
 		}
 	})
 
@@ -293,7 +290,7 @@ const Content = ({ gig }: { gig: any }) => {
 					Details
 				</Tabs.Trigger>
 				{extras?.map(({ label, lookup }: any, key: number) => {
-					if (extra[lookup]?.length) {
+					if (joins[lookup]?.length) {
 						return (
 							<Tabs.Trigger key={key} className="TabsTrigger" value={`tab${key}`}>
 								{label}
@@ -303,11 +300,11 @@ const Content = ({ gig }: { gig: any }) => {
 				})}
 			</Tabs.List>
 			<Tabs.Content key='details' className="TabsContent -mx-4" value='details'>
-				<div className="bg-slate-100"><GigDetails gig={gig} /></div>
+				<div className="bg-slate-100"><GigDetails gig={gig} joins={joins} /></div>
 			</Tabs.Content>
 			{extras?.map(({ label, lookup, func }: any, key: number) =>
 				<Tabs.Content key={key} className="TabsContent -mx-4" value={`tab${key}`}>
-					<div className="bg-slate-100">{func(extra[lookup])}</div>
+					<div className="bg-slate-100">{func(joins[lookup])}</div>
 				</Tabs.Content>
 			)}
 		</Tabs.Root>

@@ -1,21 +1,11 @@
-//"use client"
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ReleaseBlurb from '@/components/ReleaseBlurb';
 import FeaturedItem from '@/components/FeaturedItem';
-import DayInHistory from '@/components/DayInHistory';
-import RandomLiveVideo from '@/components/RandomLiveVideo';
+//import DayInHistory from '@/components/DayInHistory';
+//import RandomLiveVideo from '@/components/RandomLiveVideo';
 import { TributeText, TributeAudio } from '@/components/Tributes';
 import Memorial from '@/components/Memorial';
-
-/*
-import { Navigation, Scrollbar } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/scrollbar';
-*/
 
 const BookSikkorski = () =>
 	<FeaturedItem
@@ -66,43 +56,26 @@ const HomeReleases = () =>
 const Home = (): React.ReactNode =>
 <>
 	<Header section='jbc' />
-		<div>
-    {/*<Swiper
-				style={{  padding: '40px', border: '1px solid black' }}
-			modules={[Navigation, Scrollbar, ]}
-			navigation
-			scrollbar={{ draggable: true }}
-			pagination={{ clickable: true }}
-      spaceBetween={50}
-      slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-			{homeItems.map((item: any, key: number) =>
-				<SwiperSlide key={key}>
-					{item}
-				</SwiperSlide>
-			)}
-		</Swiper>*/}
-  <div className="flex flex-wrap justify-center">
-		<div className="grow max-w-xl m-1">
-			<div className="border p-3 bg-slate-100 drop-shadow-sm">
-      <Memorial />
+	<main>
+		<div className="flex flex-wrap justify-center">
+			<div className="grow max-w-xl m-1">
+				<div className="border p-3 bg-slate-100 drop-shadow-sm">
+				<Memorial />
+				</div>
+				<p />
+				<div>
+				<TributeAudio />
 			</div>
-			<p />
-			<div>
-			<TributeAudio />
-    </div>
-    </div>
-		<div className="w-1/3 max-w-xl grow m-1">
-			<TributeText />
-			<HomeBooks />
-			<HomeReleases />
+			</div>
+			<div className="w-1/3 max-w-xl grow m-1">
+				<TributeText />
+				<HomeBooks />
+				<HomeReleases />
+			</div>
 		</div>
-	</div>
-			<RandomLiveVideo />
-			<DayInHistory />
-	</div>
+		{/*<RandomLiveVideo />
+		<DayInHistory />*/}
+	</main>
 	<Footer />
 </>
 

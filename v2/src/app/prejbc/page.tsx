@@ -13,7 +13,7 @@ const projects = [
 		Guitar – Max Eider<br />
 		Vocals, Saxophone – Pat Fish<br />
 		<hr />
-		Left before the single:
+		Before the single:
 		<p />
 		Synthesizers - Johnathan Stephenson<br />
 		Drums- John Duvall<br />

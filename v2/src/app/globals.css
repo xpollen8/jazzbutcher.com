@@ -801,8 +801,7 @@ p::first-letter {
 	background-color: rgba(0,0,0,.02);
 	outline: dashed;
 	outline-width: 1px;
-	margin: 2px;
-	margin-top: 7px;
+	margin: 5px;
 	padding: 10px;
 }
 
@@ -917,12 +916,14 @@ color: white;
 
 body nav {
   position: sticky;
+	top: 0;
 	z-index: 3;
 	margin: 0px 0px;
 	margin-bottom: 5px;
 	background-color: #AFF1E4;
 	font-size: 1.1em;
-	border: 1px solid #666;
+	border-bottom: 1px solid #666;
+	filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 	display: flex;
 	padding: 4px;
 	align-items: center;
@@ -932,11 +933,40 @@ footer {
   position: sticky;
 	z-index: 3;
 	bottom: 0;
+	margin-top: 50px;
 }
 
 html {
 	scroll-behavior: smooth;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 main {
+}
+
+.commentBubble:hover {
+  fill: green;
+}
+.commentOverlay {
+  position: fixed;
+  left: 0;
+  background: gray;
+  height: 1000px;
+  width: 100%;
+  overflow: scroll;
+  padding: 5px;
+}
+
+.navOverlay {
+  position: fixed;
+  left: 0;
+  background: gray;
+  max-height: 1000px;
+  width: 100%;
+  overflow: scroll;
+  padding: 5px;
 }

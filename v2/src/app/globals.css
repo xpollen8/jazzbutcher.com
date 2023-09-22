@@ -832,9 +832,10 @@ color: white;
 
 .comment {
 	outline: 1px solid #999;
+	border-radius: 5px;
 	background: white;
-	margin: 5px;
-	padding: 5px;
+	margin: 3px;
+  padding: 10px;
 }
 .comment #subject {
 	font-weight: bold;
@@ -902,13 +903,12 @@ details > summary::-webkit-details-marker {
 }
 .commentOverlay {
   position: fixed;
-	top: 40px;
+	top: 35px;
   left: 0;
 	right: 0;
   background: gray;
 	max-height: 95vh;
   overflow: scroll;
-  padding: 5px;
 }
 
 .navOverlay {

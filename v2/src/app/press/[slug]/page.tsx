@@ -86,7 +86,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 			if (audio?.length) {
 				return (<>
 					{audio?.filter(([ file, caption ]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>
-						<EmbedMedia data={{ mediaurl: file, comment: caption }} />
+						<EmbedMedia key={key} data={{ mediaurl: file, comment: article?.publication || caption, datetime: article?.dtpublished }} />
 					</>)
 					)}
 					<p />

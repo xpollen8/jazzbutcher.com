@@ -72,6 +72,23 @@ const Audio = () => {
 			datetime: "2021-11-07" }}
 		>
 		</EmbedMedia>
+
+		<EmbedMedia data={{
+			mediaurl: "https://soundcloud.com/spacemenpod/spacemen-pod-episode-7",
+			title: "Spacemen Pod Episode 7",
+			datetime: "2022-01-11" }}
+		>
+		<p />
+		In this episode, we walk with Jesus as we discuss one of Spacemen 3's most famous songs. Ian and Mark disect the many recorded versions, and are joined by Pat Fish of The Jazz Butcher for a chat about a couple of versions where Pat supplied vocals. Plus contributions from a few other fans for which this is a favourite song.
+		</EmbedMedia>
+		<EmbedMedia data={{
+			mediaurl: "https://soundcloud.com/spacemenpod/spacemen-pod-episode-8",
+			title: "Spacemen Pod Episode 8",
+			datetime: "2021-12-30" }}
+		>
+		<p />
+		We take a look back at Spacemen 3's performance at Watermans Arts Centre from 19 August 1988, the gig everyone now calls Dreamweapon. With contributions from Spaceman for the night Steve Evans, bassist Will Carruthers, taper Andy Jackson, Vinita Joshi of Rocket Girl Records, Steve Mitchell of Fierce Recordings, attendees Col Todd and Paul Thorpe from the band The Loveblobs, latter-day Spaceman Mark Refoy, and the late, great, Pat Fish.
+		</EmbedMedia>
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading) && <>
 				<AudioSection title="Black Eg" project="eg" data={data.filter((d: any) => d.project === 'eg')} />

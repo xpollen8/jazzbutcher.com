@@ -43,6 +43,15 @@ const Audio = () => {
 		<Header section="audio" />
 		<main>
 		<h1>This is a W.I.P. - still need to tack the right info onto stuff in the database for this to work programmatically</h1>
+		<EmbedMedia data={{
+			mediaurl: "https://soundcloud.com/user-871949376/the-paine-full-podcast-with-pat-fish",
+			title: "The Paine Full Podcast... with Pat Fish",
+			datetime: "2018" }}
+		>
+		In this second episode, Andrew unearths an interview with musician, Pat Fish of The Jazz Butcher.
+		<p />
+		Dating from 2018 and recorded at 'Fishy Mansions' in Northampton... Pat talks about academic life in Oxford, his friendship with Rolo McGinty, The Sonic Tonix, The Jazz Butcher's first album, 'In Bath Of Bacon', life on the road and the recording of 'Cult Of The Basement'.
+		</EmbedMedia>
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading) && <>
 				<AudioSection title="Black Eg" project="eg" data={data.filter((d: any) => d.project === 'eg')} />

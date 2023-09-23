@@ -91,11 +91,26 @@ const Performers = ({ datetime }: { datetime: string }) => {
 
 const	EmbedVimeo = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
 const	EmbedArchiveOrg = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
-const	EmbedMixCloud = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
 const	EmbedYoutube = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
 const	EmbedAWSS3 = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
 const	EmbedJBC = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
 const	EmbedBandcamp = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => <>TODO</> // TODO
+
+const	EmbedMixCloud = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
+	const { mediaurl } = data;
+	const [ channel, item ] = mediaurl?.replace('https://www.mixcloud.com/', '')?.split('/');
+
+	console.log("XX", [ channel, item ]);
+	return <> 
+		<iframe
+			width="100%"
+			height="60"
+			src={`https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2F${channel}%2F${item}%2F`}
+			frameborder="0"
+		></iframe>
+		{children}
+	</>
+}
 
 const	EmbedSoundCloud = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
 	const { mediaurl } = data;
@@ -110,7 +125,7 @@ const	EmbedSoundCloud = ({ data = {}, children }: { data: any, children?: React.
 			src={`https://w.soundcloud.com/player/?url=${useURL}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`}>
 		</iframe>
 		{children}
-		</>
+	</>
 }
 
 const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { data: any, className?: string, children?: React.ReactNode, disableVideo?: boolean }) => {
@@ -121,13 +136,19 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 	return (<>
 		{(() => {
 			if (useMediaurl && !disableVideo) {
-				if (useMediaurl?.includes('bandcamp.com')) {
+				if (useMediaurl?.includes('mixcloud.com')) {
+					return <>
+						<EmbedMixCloud data={data}>
+							{children}
+						</EmbedMixCloud>
+					</>
+				} else if (useMediaurl?.includes('bandcamp.com')) {
 					return <>
 						<EmbedBandcamp data={data}>
 							{children}
 						</EmbedBandcamp>
 					</>
-				} if (useMediaurl?.includes('soundcloud.com')) {
+				} else if (useMediaurl?.includes('soundcloud.com')) {
 					return <>
 						<EmbedSoundCloud data={data}>
 							{children}

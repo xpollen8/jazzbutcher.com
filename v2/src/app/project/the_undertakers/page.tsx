@@ -2,30 +2,32 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Source } from '@/components/GenericWeb';
+import { Source, Attribution } from '@/components/GenericWeb';
 import { expand } from '@/lib/defines';
 
 const TheUndertakers = () => 
 <>
 	<Header section="the_undertakers" />
 	<main>
-		<blockquote className="annotation listItem">
-			In 1995 a friend with a bar made me form a supergroup to keep him entertained on a slow Wednesday night. We had me, Mark Refoy (Guitarist: Spacemen 3, Spiritualised, Slipstream, Pet Shop Boys); Tim Harries (Bassist: Eno, Steeleye Span, David Holmes, Katie Melua!) and Jon Mattock (Drummer: Spacemen 3, Spiritualised. Slipstream, Perfect Disaster, The Breeders, Massive Attack). The set was all covers. I remember we did the Velvets’ “Foggy Notion,” Can’s “Mother Sky,” some Plastic Ono Band stuff, “Suzie Q,” “Roadrunner” and a few others. We called ourselves The Undertakers. We only ever did it twice. In a sort of KLF moment, I sold the only cassette of the show for £80.
-			<p />
-			<Source g="Pat Fish" u="/press/20081120_caughtinthecarousel.html" p="Caught in the Carousel" d="2008-11-20" />
-		</blockquote>
-		<blockquote className="listItem">
-			<center>
+		<div className="listItem">
+			<div className="flex flex-wrap justify-center">
 			<Link href="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers.jpg"><Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers.jpg" width={500} height={500} alt="The Undertakers" /></Link>
-			</center>
-
-			<div className="annotation">
+			<Link href="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers.jpg"><Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers2.jpg" width={500} height={500} alt="The Undertakers 2" /></Link>
+			</div>
+			<blockquote className="annotation">
 				My dear old friend, mentor and all round genius Pat Fish aka Jazz Butcher has passed on. Heartbreaking. Here he is after a gig with our ramshackle knockabout beat combo The Undertakers in the 90s. Rest easy Pat mate
 				<p />
-				<Source g="Mark Refoy" u="https://twitter.com/slipmark/status/1445992873946714114" p="Twitter" d="2021-10-06" />
-			</div>
-		</blockquote>
-		<blockquote className="listItem">
+			</blockquote>
+			<Source g="Mark Refoy" u="https://twitter.com/slipmark/status/1445992873946714114" p="Twitter" d="2021-10-06" />
+		</div>
+		<div className="listItem">
+			<blockquote className="annotation">
+				In 1995 a friend with a bar made me form a supergroup to keep him entertained on a slow Wednesday night. We had me, Mark Refoy (Guitarist: Spacemen 3, Spiritualised, Slipstream, Pet Shop Boys); Tim Harries (Bassist: Eno, Steeleye Span, David Holmes, Katie Melua!) and Jon Mattock (Drummer: Spacemen 3, Spiritualised. Slipstream, Perfect Disaster, The Breeders, Massive Attack). The set was all covers. I remember we did the Velvets’ “Foggy Notion,” Can’s “Mother Sky,” some Plastic Ono Band stuff, “Suzie Q,” “Roadrunner” and a few others. We called ourselves The Undertakers. We only ever did it twice. In a sort of KLF moment, I sold the only cassette of the show for £80.
+				<p />
+			</blockquote>
+			<Source g="Pat Fish" u="/press/20081120_caughtinthecarousel#undertakers" p="Caught in the Carousel" d="2008-11-20" />
+		</div>
+		<div className="listItem">
 			<b>Tape:</b> T017<br />
 			<b>Title:</b> The Undertakers : Keep Music Dead<br />
 			<b>Auction Price:</b> $45<br />
@@ -43,7 +45,19 @@ const TheUndertakers = () =>
 					Covers by: Can, Velvets, Creedence, Kraftwerk, Plastic Ono Band, etc.
 				</blockquote>
 			<Source g="David Whittemore" p="early Jazz Butcher Website Auction" d="1997-10-30 01:45:39" />
-		</blockquote>
+		</div>
+		<div className="listItem">
+			<blockquote className="annotation">
+				In 1997, Pat had a few things he wanted auctioned off on the JBC website,
+				and sent me a load of stuff (posters, cassettes, etc).
+				In the end, we were able to send Pat a nice wad of cash.
+				<p />
+				Some of those tapes, I did tape copies of before sending the orignals onto
+				the auction winners.  I will need to go through my stored pile to see if
+				The Undertakers tape was one of those.  If not.. well, Jay, you're the keeper of something pretty rare.
+			</blockquote>
+			<Attribution g="David Whittemore" d="2023-09-22" />
+		</div>
 	</main>
 	<Footer />
 </>

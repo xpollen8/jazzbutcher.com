@@ -52,6 +52,15 @@ const Audio = () => {
 		<p />
 		Dating from 2018 and recorded at 'Fishy Mansions' in Northampton... Pat talks about academic life in Oxford, his friendship with Rolo McGinty, The Sonic Tonix, The Jazz Butcher's first album, 'In Bath Of Bacon', life on the road and the recording of 'Cult Of The Basement'.
 		</EmbedMedia>
+
+		<EmbedMedia data={{
+			mediaurl: "https://www.mixcloud.com/FrenchSpurs1/retropopic-632-pat-fish-1957-2021-a-story-of-my-life/",
+			title: "RETROPOPIC 632 - PAT FISH (1957-2021): 'A STORY OF MY LIFE....'",
+			datetime: "2021-10-10" }}
+		>
+			The Jazz Butcher Conspiracy, over two hours Pat Fish tells The Saint of RETROPOPIC RADIO his life's story....
+
+		</EmbedMedia>
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading) && <>
 				<AudioSection title="Black Eg" project="eg" data={data.filter((d: any) => d.project === 'eg')} />

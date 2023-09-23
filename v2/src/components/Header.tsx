@@ -161,20 +161,25 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 
 	if (!section) return;
 	const nav = makeBreadcrumb(section, title) ?? [];
-	const makeMenuOptions = (section: string, depth: number) => depth < 2 &&
-		Object.keys(sections)
-		.filter((href: string) => sections[href]?.parent === section && !sections[href]?.hide)
-		?.map((href: string, key: number) => {
-			const { title, parent, summary, inParentDirectory }: BreadCrumb = sections[href];
-			const useHref = (inParentDirectory) ? `${parent}/${href}` : href;
-			return (
-				<div key={key} className={`navItem ${(depth === 0) ? 'outer' : ''}`}>
-					<Link style={{ width: '100%' }} href={`/${useHref}`}>{title}</Link>
-					{(summary) && <span className="date">{' - '}{summary}</span>}
-					{makeMenuOptions(href, depth + 1)}
-				</div>
-			)
-		});
+	const makeMenuOptions = (section: string, depth: number) => {
+		if (depth < 2) {
+			return Object.keys(sections)
+				.filter((href: string) => sections[href]?.parent === section && !sections[href]?.hide)
+				?.map((href: string, key: number) => {
+					const { title, parent, summary, inParentDirectory }: BreadCrumb = sections[href];
+					const useHref = (inParentDirectory) ? `${parent}/${href}` : href;
+					return (
+						<div key={key} className={`navItem ${(depth === 0) ? 'outer' : ''}`}>
+							<Link style={{ width: '100%' }} href={`/${useHref}`}>{title}</Link>
+							{(summary) && <span className="date">{' - '}{summary}</span>}
+							{makeMenuOptions(href, depth + 1)}
+						</div>
+					)
+				});
+		} else {
+			return [];
+		}
+	}
 
 	return (<div aria-label="Breadcrumb" className="breadcrumb w-full">
 		<div className="flex">
@@ -186,7 +191,7 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 							return (
 								<li key={key} className="navTop">
 									<Link id="summary" href={obj.href}>{obj.title}</Link>
-									{(!!mainOptions?.length) && <div className="navOverlay" id="detail"> {mainOptions} </div>}
+									{!!(mainOptions?.length) && <div className="navOverlay" id="detail"> {mainOptions} </div>}
 								</li>
 							)
 						}

@@ -1,11 +1,12 @@
 import { dateDiff, parseDate, parseDomain, linkInternal, linkExternal } from '@/lib/macros';
 import * as defines from '@/lib/defines';
 
-const	genericWeb = ({ x, g, u, t, s, d }: {
+const	genericWeb = ({ x, g, u, t, s, d, p }: {
 	x?: string
 	g?: string
 	u?: string
 	t?: string
+	p?: string	// "publication"
 	s?: string
 	d?: string
 }) => {
@@ -34,16 +35,18 @@ const	genericWeb = ({ x, g, u, t, s, d }: {
 					}
 				}
 			})()}
+			{(p) && <>{' - '}({p})</>}
 			{(parseDate(d)) && dateDiff(d)}
 		</span>
 	)
 }
 
-export const Source = ({ g, u, d }: {
+export const Source = ({ g, u, p, d }: {
 	g?: string
 	u?: string
 	d?: string
-}) =>	genericWeb({ g, u, t: "Source", s: "source", d });
+	p?: string
+}) =>	genericWeb({ g, u, t: "Source", s: "source", d, p });
 
 export const Bootleg = ({ g, u, d }: {
 	g?: string

@@ -1052,9 +1052,9 @@ font.load().then(function () {
 	${mkSimpleURI(uri=${jbc_search}?f=extras&q=wilson, text=Wilson)}
 	<div class="nav_heading">Pre-JBC</div>
 	${mkSimpleURI(text=Nightshift)}
-	${mkSimpleURI(text=Institution)}
+	${mkSimpleURI(text=The Institution)}
 	${mkSimpleURI(text=Sonic Tonix)}
-	${mkSimpleURI(text=The Tonix)}
+#	${mkSimpleURI(text=The Tonix)}
 	</div>
 	<!-- end the left-side navigation-->
 	<!-- begin the content for this page -->
@@ -3271,8 +3271,10 @@ ${define(_set, false)}
 #live	if (getval(pix_current) == .jpg)
 
 #insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}";
+#live	if (defined(update))
 #live		if (sql(insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}"))
 #live		endif
+#live	endif
 
 		${parsePhoto(p=${pix_current}, width=${width})}
 #live	else

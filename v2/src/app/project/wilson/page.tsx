@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 const Wilson = () => 
 <>
-	<Header section="project" title="Wilson"/>
+	<Header section="wilson" />
 	<div className="gig_wilson">
 <code>
 </code>

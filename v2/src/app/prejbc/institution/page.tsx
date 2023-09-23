@@ -39,7 +39,7 @@ const Photoset = ({ images, className, title, children }:
 
 const Institution = () => 
 <>
-	<Header section="prejbc" title="The Institution"/>
+	<Header section="the_institution" />
 	<div className="gig_institution" />
 	<Photoset images={images_PhilipSnow} title='Images from Philip Snow' />
 <hr />

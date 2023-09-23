@@ -5,7 +5,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 
 const DronesClub = () => 
 <>
-	<Header section="project" title="The Drones Club"/>
+	<Header section="drones_club" />
 	<div className="gig_drones">
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/drones_club_cd.jpg" width={500} height={500} alt="cd cover" />
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/drones-july2021-b.jpg" width={500} height={500} alt="the drones" />

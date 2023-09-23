@@ -5,7 +5,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 
 const BlackEg = () => 
 <>
-	<Header section="project" title="The Black Eg"/>
+	<Header section="black_eg" />
 	<div className="gig_eg" />
 <b>Unique black eg tracks</b>
 <EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheBlackEg/BlackEg_KevinCarroll_Yokohama.mp3", song: "Yokohama", mediacredit: "Kevin Carroll", mediacreditdate: "2018-08-31" }} />

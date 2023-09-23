@@ -33,6 +33,7 @@ type BreadCrumb = {
 	href?: string
 	parent?: string | string[]
 	summary?: string
+	inParentDirectory?: boolean
 	hide?: boolean
 }
 
@@ -53,18 +54,35 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "Early Fan Club issues" },
 	audio: { parent: 'media', title: 'Audio', summary: "Bootlegs and the like" },
-	audio_interviews: { parent: [ 'audio', 'pat' ], title: 'Recorded Interviews', summary: "Radio and online interviews" },
-	audio_bootlegs: { parent: 'audio', title: 'Recorded performances', summary: "Non-official audio recordings" },
-	homage: { parent: 'audio', title: 'Musical Tributes', summary: "Songs in praise of The Butcher" },
+	interviews: { parent: [ 'audio', 'pat' ], title: 'Recorded Interviews', summary: "Radio and online interviews", inParentDirectory: true },
+	live: { parent: 'audio', title: 'Recorded performances', summary: "Non-official audio recordings", inParentDirectory: true },
+	homage: { parent: 'audio', title: 'Musical Tributes', summary: "Songs in praise of The Butcher", inParentDirectory: true },
 	video: { parent: 'media', title: 'Video', summary: "Official and bootleg live videos" },
 	press: { parent: 'media', title: 'Press', summary: "In print (and online)" },
-	print_interviews: { parent: [ 'press', 'pat' ], title: 'Printed Interviews', summary: "Mags, newsprint, and online" },
+	print_interviews: { parent: [ 'press', 'pat' ], title: 'Printed Interviews', summary: "Mags, newsprint, and online", inParentDirectory: true },
 	posters: { parent: 'media', title: 'Posters', summary: 'Gig Ephemera' },
 	news: { parent: 'media', title: 'News', summary: "Website announcements" },
 
 	//interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
 
 	project: { parent: 'pat', title: 'Side Projects', summary: "He was a busy butcher" },
+	black_eg: { parent: 'project', title: 'The Black Eg', inParentDirectory: true },
+	wilson: { parent: 'project', title: 'Wilson', inParentDirectory: true },
+	sumosonic: { parent: 'project', title: 'Sumosonic', inParentDirectory: true },
+	drones_club: { parent: 'project', title: 'Drones Club', inParentDirectory: true },
+	stranger_tractors: { parent: 'project', title: 'Stranger Tractors', inParentDirectory: true },
+	cambodia: { parent: 'project', title: 'Cambodia', inParentDirectory: true },
+	vaguely_familiar: { parent: 'project', title: 'Vaguely Familiar', inParentDirectory: true },
+	trampling_tokyo: { parent: 'project', title: 'With Alan Moore', inParentDirectory: true },
+	the_undertakers: { parent: 'project', title: 'The Undertakers', inParentDirectory: true },
+	prime_evils: { parent: 'project', title: 'Prime Evils', inParentDirectory: true },
+	masters_of_budvar: { parent: 'project', title: 'The Masters of Budvar', inParentDirectory: true },
+	bookstore: { parent: 'project', title: "Pat's Bookstore", inParentDirectory: true },
+
+	/*
+	mrblagdon: { parent: 'projects', title: 'Mr. Blagdon', inParentDirectory: true },
+	*/
+
 	gallery: { parent: 'pat', title: 'Gallery', summary: "Photography from all eras"  },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "COVID-era livestreams" },
 	notebooks: { parent: 'pat', title: 'Notebooks', summary: "Excerpts from his journals" },
@@ -83,18 +101,10 @@ const sections : { [key: string]: BreadCrumb } = {
 	trivia: { parent: 'etc', title: 'Trivia' },
 	tomhall: { parent: 'etc', title: 'Tom Hall Meorial' },
 
-	nightshift: { parent: 'prejbc', title: 'Nightshift' },
-	institution: { parent: 'prejbc', title: 'Institution' },
-	sonictonix: { parent: 'prejbc', title: 'Sonic Tonix' },
-	thetonix: { parent: 'prejbc', title: 'The Tonix' },
-
-	cambodia: { parent: 'projects', title: 'Cambodia' },
-	mrblagdon: { parent: 'projects', title: 'Mr. Blagdon' },
-	vaguelyfamiliar: { parent: 'projects', title: 'The Vaguely Familiar' },
-	eg: { parent: 'projects', title: 'The Black Eg' },
-	sumosonic: { parent: 'projects', title: 'Sumosonic' },
-	wilson: { parent: 'projects', title: 'Wilson' },
-	dronesclub: { parent: 'projects', title: 'The Drones Club' },
+	nightshift: { parent: 'prejbc', title: 'Nightshift', inParentDirectory: true },
+	institution: { parent: 'prejbc', title: 'Institution', inParentDirectory: true },
+	sonic_tonix: { parent: 'prejbc', title: 'Sonic Tonix', inParentDirectory: true },
+	the_tonix: { parent: 'prejbc', title: 'The Tonix', inParentDirectory: true },
 
 	admin: { parent: 'jbc', title: "Website Management", hide: false },
 }
@@ -155,10 +165,11 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 		Object.keys(sections)
 		.filter((href: string) => sections[href]?.parent === section && !sections[href]?.hide)
 		?.map((href: string, key: number) => {
-			const { title, parent, summary}: BreadCrumb = sections[href];
+			const { title, parent, summary, inParentDirectory }: BreadCrumb = sections[href];
+			const useHref = (inParentDirectory) ? `${parent}/${href}` : href;
 			return (
 				<div key={key} className={`navItem ${(depth === 0) ? 'outer' : ''}`}>
-					<Link style={{ width: '100%' }} href={`/${href}`}>{title}</Link>
+					<Link style={{ width: '100%' }} href={`/${useHref}`}>{title}</Link>
 					{(summary) && <span className="date">{' - '}{summary}</span>}
 					{makeMenuOptions(href, depth + 1)}
 				</div>
@@ -170,25 +181,14 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 			<div className="w-full">
 				<ul>
 					{nav.map((obj: any, key: number) => {
-						const children = Object.keys(sections).filter((h: string) => {
-							return sections[h]?.parent?.includes(section?.toLowerCase());
-						}).map((h: string) => ({ link: h, ...sections[h] }));
-						if (obj?.href === '/') {
-							const mainOptions = makeMenuOptions('jbc', 0);
-							return <div key={key}>
-								<div id="summary">
-									<li className="navTop" key={key}><Link href='/'>{obj.title}</Link></li>
-								</div>
-								<div className="navOverlay" id="detail">
-									<div className="navItem outer"><Link href='/'>Home</Link></div>
-									{mainOptions}
-								</div>
-							</div>
-						}
 						if (obj?.href) {
-							return <>
-								<li key={key}><Link href={obj.href}>{obj.title}</Link></li>
-							</>
+							const mainOptions = makeMenuOptions((obj?.href === '/') ? 'jbc' : obj?.href.substr(1), 0);
+							return (
+								<li key={key} className="navTop">
+									<Link id="summary" href={obj.href}>{obj.title}</Link>
+									{(!!mainOptions?.length) && <div className="navOverlay" id="detail"> {mainOptions} </div>}
+								</li>
+							)
 						}
 						return parseTitle(obj.title, key);
 					})}

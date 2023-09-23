@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 const Nightshift = () => 
 <>
-	<Header section="prejbc" title="Nightshift"/>
+	<Header section="nightshift" />
 	<div className="gig_nightshift" />
 	<b>Nightshift Art + Pat pics circa 1976-1978</b> James Duval - 2021-05-17
 <code>

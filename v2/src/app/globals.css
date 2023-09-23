@@ -729,24 +729,20 @@ samp {
     
 .breadcrumb li {
 }
-.breadcrumb li:not(:first-child)::before {
+.breadcrumb li:not(:last-child)::after {
 	display: inline-block;
 	margin: 0 .10rem;
 	color: #666;
 	font-weight: bold;
 	content: "→";
 }
-.breadcrumb li:hover a{
+.breadcrumb li:hover, summary a{
 	color: #333;
-	background: lightyellow;
-}
-.breadcrumb li:hover a{
-	color: #333;
-	background: lightyellow;
+	background: white;
 }
 .breadcrumb li:last-child span{
 	background: lightyellow;
-	padding: 3px;
+	padding: 9px;
 	color: #777;
 }
 
@@ -756,7 +752,7 @@ samp {
 
 .gig_project {
 	background: #000;
-color: white;
+	color: white;
 }
 
 .unknownYear:after {
@@ -840,6 +836,7 @@ body {
 }
 
 main {
+	margin: 5px;
 }
 
 .commentBubble:hover {
@@ -872,7 +869,7 @@ details > summary::-webkit-details-marker {
 	justify-content: center;
 	padding-top: 5px;
 	justify-content: center;
-	margin-top: 4px;
+	margin-top: -2px;
 	margin-left: -4px;
 	padding-left: 2px;
 }
@@ -884,20 +881,11 @@ details > summary::-webkit-details-marker {
 	display: none;
 }
 
-details[open] .navTop {
-	background: white;
-	padding: 4px;
-	padding-right: 2px;
-	margin: -4px;
-	margin-right: 0px;
-}
-
 .navTop {
 	color: blue;
 	margin-right: 2px;
 }
 .navTop:hover, .navTop:focus, .navTop:active {
-	background: white;
 	padding: 4px;
 	padding-right: 2px;
 	margin: -4px;

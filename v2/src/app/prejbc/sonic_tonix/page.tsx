@@ -5,7 +5,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 
 const SonicTonix = () => 
 <>
-	<Header section="prejbc" title="Sonic Tonix"/>
+	<Header section="sonic_tonix" />
 	<div className="gig_sonictonix" />
 <code>
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_IMG_0175.jpg" width={500} height={500} alt="live" />

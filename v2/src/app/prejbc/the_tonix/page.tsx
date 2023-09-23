@@ -5,7 +5,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 
 const TheTonix = () => 
 <>
-	<Header section="prejbc" title="The Tonix"/>
+	<Header section="the_tonix" />
 	<div className="gig_thetonix" />
 <code>
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_front.jpg" width={500} height={500} alt="sleev front" />

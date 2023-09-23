@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 const Sumosonic = () => 
 <>
-	<Header section="project" title="Sumosonic"/>
+	<Header section="sumosonic" />
 	<div className="gig_sumo">
 <code>
 </code>

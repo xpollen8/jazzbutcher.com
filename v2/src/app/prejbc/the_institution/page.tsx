@@ -14,6 +14,15 @@ const images_PhilipSnow = [
 		{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/Institution_Shirt_3.jpg", alt: "shirt 3" },
 ];
 
+const images_rolo = [
+		{ src: "https://jazzbutcher.com/images/20220517/20220517_fb_rolo_institution1.jpg", alt: "Rolo FB comments #1" },
+		{ src: "https://jazzbutcher.com/images/20220517/20220517_fb_rolo_institution2.jpg", alt: "Rolo FB comments #2" },
+		{ src: "https://jazzbutcher.com/images/20220517/20220517_fb_rolo_institution3.jpg", alt: "Rolo FB comments #3" },
+		{ src: "https://jazzbutcher.com/images/20220517/20220517_fb_rolo_institution4.jpg", alt: "Rolo FB comments #4" },
+		{ src: "https://jazzbutcher.com/images/20220517/20220517_fb_rolo_institution5.jpg", alt: "Rolo FB comments #5" },
+		{ src: "https://jazzbutcher.com/images/20220517/20220517_fb_rolo_institution6.jpg", alt: "Rolo FB comments #6" },
+];
+
 const Photoset = ({ images, className, title, children }:
 { images: any[], className?: string, title?: string, children?: React.ReactNode }) => {
 	return (
@@ -42,6 +51,7 @@ const Institution = () =>
 	<Header section="the_institution" />
 	<div className="gig_institution" />
 	<Photoset images={images_PhilipSnow} title='Images from Philip Snow' />
+	<Photoset images={images_rolo} title='Rolo McGinty conversations from Facebook (2022-05-17)' />
 <hr />
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 2.jpg" width={250} height={250} alt="inst 5" />
 	<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/SB2 29b.jpg" width={250} height={250} alt="inst 6" />

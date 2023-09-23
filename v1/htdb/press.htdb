@@ -714,6 +714,17 @@ ${d}
 		dt=1985-01-12,
 		added=2020-04-22)}
 
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220215_press_popnews.html,
+		title=Jazz Butcher,
+		headline=The Highest in the Land,
+		publication=Pop News,
+		location=France,
+		credit=Vincent Arquillière,
+		source=https://www.popnews.com/2022/02/15/the-jazz-butcher-the-highest-in-the-land/,
+		dt=2022-02-15,
+		added=2023-09-22)}
+
 	${addPress(type=gig,
 		url=${jbc_press}/20190918_press_popnews.html,
 		title=Visiting Jazz Butcher,
@@ -17533,6 +17544,27 @@ Except for that question at the beginning I haven't got answered, nothing much r
 Wo.
 <p />
 * I wrote this review one day before the demise of Mark E. Smith was announced.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220215_press_popnews.html
+#live	if (getval(page) = 20220215_press_popnews.html)
+	${extractPress(
+		body=${literalizeCommas(
+On retrouve sur l’ultime album du regretté Pat Fish tout ce qu’on a aimé sur ses disques précédents : le mélange d’excentricité, de lucidité et de vulnérabilité, les mélodies tranquillement parfaites et cette impression d’entendre chanter – pour la dernière fois – un vieil ami.
+<p />
+Bien sûr, on aurait préféré ne pas avoir à écrire que “The Highest in the Land” sera le dernier album du Jazz Butcher, Pat Fish nous ayant quittés en octobre dernier. Au moins peut-on préciser que ce disque est bien, a priori, celui que son auteur voulait sortir, ce qui n’est pas toujours le cas avec les œuvres posthumes. A l’évidence, ce recueil de neuf chansons – dont certaines écrites il y a plusieurs années et souvent jouées sur scène – était bouclé avant que l’Anglais ne passe l’arme à gauche. Le dandy de Northampton l’a sans doute enregistré en sachant que le fil fragile de sa vie pouvait rompre à tout moment. Pourtant, “The Highest in the Land” n’a rien d’une rumination morbide, pas plus qu’il ne se veut un monument à laisser à la postérité. C’est juste un ultime très bon disque du Jazz Butcher, à peu près dans la lignée des précédents.
+<p />
+
+Certes, sur “Time”, le premier extrait dévoilé, notre cher disparu évoque sans détour le (peu de) temps qu’il reste. Mais si “Fishy” reconnaît dans ce memento mori qu’il n’en a plus pour longtemps (“Time’s running out. The money’s running out. You don’t need me to tell you what it’s all about”), il ne faut pas compter sur lui pour se lamenter sur son sort. Scandé sur une sorte d’instrumental blues-dub monté en boucle, le texte passe d’un fatalisme amusé à des énumérations absurdes (“Luminous. Leguminous. Salubrious. Lugubrious”, “Respectable. Bespectacled. Electable. Detestable”) et à la description implacable d’un monde qui ne tourne pas rond (“A small boy who just watched his cousin being shot / Is being pushed down a mine coz we’ve got to have the lithium. Forced labour, privatised jails. Yeah – and all that that entails”). Du pur Pat.
+<p />
+
+Ce mélange, lettré mais sans prétention, de fantaisie et de gravité qui a fait de l’auteur l’égal pas assez reconnu des plus fines plumes d’outre-Manche accompagne sur le reste de l’album une écriture plus mélodique, d’une belle variété. “Melanie Hargreaves’ Father’s Jaguar” suit le sillon Hot Club de France de l’album précédent et c’est d’une délicieuse désuétude, tandis que “Running on Fumes” semble convoquer Jonathan Richman (“Abominable Snowman in the Market”) et surtout Bob Dylan (“Lily, Rosemary and the Jack of Hearts”), avec une grosse pincée de country, pour délivrer un état des lieux rageur du Royaume-Uni brexité. Enluminée de ce qui pourrait être une trompette à sourdine, “Sea Madness” – hommage à un certain Turkish George, personnalité légendaire de la scène musicale de Northampton – a la clarté d’un ciel d’été et la légèreté d’un nuage : une chanson proche de la perfection et pourtant déroulée sans effort, tout à fait représentative de l’art faussement nonchalant de Pat Fish.
+<p />
+
+Mais c’est sans doute sur les pures ballades que le Jazz Butcher brille le plus : la clôture “Goodnight Sweetheart”, extinction des feux d’une classe absolue, et surtout “Never Give Up” qui nous avait déjà fait forte impression sur scène (notamment lors d’un concert à Malakoff en septembre 2019, escapade francilienne dont témoigne la photo de pochette prise devant la gare du Nord par Philippe Dufour). On la classe d’emblée parmi ses chansons les plus bouleversantes, en gardant le titre comme épitaphe et conseil de vie. Merci pour tout, mister Fish.
 		)}
 	)}
 	${jbc_footer}

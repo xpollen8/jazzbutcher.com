@@ -106,16 +106,15 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
-
+	photosets=
+		/images/19840525/19840525_pat_dj.jpg;;Pat and David J.$$
+		Philip Snow;;;;2022-05-17
 	)}
 
 #define	May26.html()
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
-	photosets= https://s3.amazonaws.com/assets.jazzbutcher.com/images/19840526/19840526_pat_davidj.jpg$$
-		Philip Snow;;;;2022-05-17
-
 	)}
 
 #define	Jun2.html()

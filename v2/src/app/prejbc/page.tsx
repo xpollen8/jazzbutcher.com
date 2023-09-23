@@ -4,7 +4,7 @@ import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const projects = [
 	{ uri: '/prejbc/first_gig', text: "Pat's first gig", aux: "allegedly" },
-	{ uri: '/prejbc/institution', text: 'The Institution',
+	{ uri: '/prejbc/the_institution', text: 'The Institution',
 		children: <>
 		Credited on the single:
 		<p />

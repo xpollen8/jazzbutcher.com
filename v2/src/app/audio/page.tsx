@@ -38,8 +38,10 @@ const Audio = () => {
 	const { data, isLoading, error } = useMedias('audio');
 	const { data: dataLive, isLoading: isLoadingLive, error: errorLive } = useAudioLive();
 	//console.log("DATA", dataLive?.results);
+
 	return (<>
 		<Header section="audio" />
+		<main>
 		<h1>This is a W.I.P. - still need to tack the right info onto stuff in the database for this to work programmatically</h1>
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading) && <>
@@ -61,6 +63,7 @@ const Audio = () => {
 		expose the contents of:
 		https://s3.amazonaws.com/assets.jazzbutcher.com/audio/flac/
 		</pre>
+		</main>
 		<Footer />
 	</>)
 }

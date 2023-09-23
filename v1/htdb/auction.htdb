@@ -1,0 +1,1159 @@
+#	OLD	#define	itemOpen	<font color="#009900">OPEN</font>
+#	OLD	#define	itemSold	<font color="#990000">SOLD</font>
+#	OLD	#define	itemHold	<font color="#990000">HOLD</font>
+#	OLD	#define	patPick		<br><font size=1 color=#990000>Pat's<br>Pick</font>
+#	OLD	#define	bidAddress	del@adjective.com
+#	OLD	#define	statusLine
+#	OLD		<tr><td><b><nobr>Item #</nobr></b></td><td><b>Bid</b></td><td><b>Status</b></td><td><b>Description</b></td></tr>
+#	OLD	
+#	OLD	#define	auctionRecords
+#	OLD		<tr>
+#	OLD		<td bgcolor=#dadada colspan=4><img src="${jbc_images}/trumpet.gif" width=49 height=23 align=top hspace=10>${tag_beg}Vinyl Department${tag_end}</td>
+#	OLD		</tr>
+#	OLD		<tr><td colspan=4>
+#	OLD		<i>Let's just get this quite clear - test pressings do NOT have
+#	OLD		sleeves - instead all test pressings come in their white paper
+#	OLD		&quot;bags&quot;</i>
+#	OLD		</td></tr>
+#	OLD		${statusLine}
+#	OLD		<tr>
+#	OLD	#	$14	tgatah@nervm.nerdc.ufl.edu	Wed, 29 Oct 1997 19:46:03 -0500
+#	OLD	#	$20	n3xye@velocity.net	Mon, 03 Nov 1997 16:03:49 -0500
+#	OLD	#	$25	ivan@gunnison.com	Mon, 17 Nov 1997 10:32:29 -0800
+#	OLD	#	$30	tfrazer@dmfg.com	Fri, 21 Nov 1997 16:33:27 -0800
+#	OLD		<td valign=top>V001</td>
+#	OLD		<td valign=top>$30</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		tfrazer @
+#	OLD		</td>
+#	OLD		<td valign=top>${fishco}
+#	OLD		Test pressing white-label album
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	dmartin@phoenix.isn.net	Thu, 30 Oct 1997 02:42:39 -0800
+#	OLD	#	$20	jay@ossuary.com	Thu, 30 Oct 1997 01:46:59 -0800
+#	OLD	#	$40	speedbump@reuben.org	Thu, 30 Oct 1997 11:35:28 -0400
+#	OLD		<td valign=top>V002</td>
+#	OLD		<td valign=top>$40</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		speedbump @
+#	OLD		</td>
+#	OLD		<td valign=top>${bus}
+#	OLD		Test pressing white-label album
+#	OLD		Small drawing of The Love Bus by the Butcher on the bag.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$14	billp@sonic.net	Thu, 30 Oct 1997 17:35:41 -0800
+#	OLD	#	$20	uncletoe@gis.net	Sun, 02 Nov 1997 22:53:59 -0400
+#	OLD		<td valign=top>V003</td>
+#	OLD		<td valign=top>$20</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		uncletoe @
+#	OLD		</td>
+#	OLD		<td valign=top>${ill}
+#	OLD		Test pressing white-label album
+#	OLD		<br>1 of 2
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$10	marc_chernoff@mcgraw-hill.com	Fri, 31 Oct 1997 17:33:05 -0600
+#	OLD	#	$13	jay@ossuary.com	Fri, 31 Oct 1997 15:48:20 -0800
+#	OLD	#	$15	uncletoe@gis.net	Sun, 02 Nov 1997 11:56:26 -0400
+#	OLD	#	$20	billp@sonic.net	Sun, 2 Nov 1997 14:12:32 -0800
+#	OLD		<td valign=top>V004</td>
+#	OLD		<td valign=top>$20</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		billp @
+#	OLD		</td>
+#	OLD		<td valign=top>${ill}
+#	OLD		Test pressing white-label album
+#	OLD		<br>2 of 2
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD	
+#	OLD	#define	auctionSpacemen
+#	OLD		<tr>
+#	OLD		<td bgcolor=#dadada colspan=4><img src="${jbc_images}/pyramid.gif" width=28 height=25 align=top hspace=10>${tag_beg}Spacemen 3 Articles${tag_end}</td>
+#	OLD		</tr>
+#	OLD		<tr><td colspan=4>
+#	OLD		<i>
+#	OLD		All originals.  All perfect condition.
+#	OLD		</i>
+#	OLD		</td></tr>
+#	OLD		${statusLine}
+#	OLD		<tr>
+#	OLD	#	$10	xibalba@no-fi.com	Mon, 1 Dec 97 13:11:16 -0800
+#	OLD	#	$15	anelson@ucolick.org	Thu, 04 Dec 1997 14:11:17 -0800
+#	OLD	#	$16	xibalba@no-fi.com	Fri, 5 Dec 97 13:27:36 -0800
+#	OLD	#	$17	anelson@ucolick.org	Fri, 05 Dec 1997 14:06:00 -0800
+#	OLD	#	$20	wnerini@drf.co	Wed, 10 Dec 1997 16:51:58 -0700
+#	OLD	#	$21	anelson@ucolick.org	Thu, 11 Dec 1997 11:24:14 -0800
+#	OLD	#	$23	xibalba@no-fi.com	Fri, 12 Dec 97 13:53:00 -0800
+#	OLD	#	$24	anelson@ucolick.org	Fri, 12 Dec 1997 14:07:50 -0800
+#	OLD		<td valign=top>S001</td>
+#	OLD		<td valign=top>$24</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		anelson @</td>
+#	OLD		<td valign=top rowspan=2>Original Glass Records A3 two colour poster for the
+#	OLD		Spacemen 3's <b>Transparent Radiation</b> single.  A rather
+#	OLD		beautiful design that will be familiar to Spacemen fans everywhere.
+#	OLD		Good condition.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/poster_spacemen_transparent.jpg"><img border=0
+#	OLD			src="${jbc_images}/poster_spacemen_transparent.gif"
+#	OLD			width=99 height=138></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$10	xibalba@no-fi.com	Mon, 1 Dec 97 13:11:17 -0800
+#	OLD	#	$15	mrnobody@ripco.com	Sat, 06 Dec 1997 22:19:25 -0600
+#	OLD	#	$17	xibalba@no-fi.com	Fri, 12 Dec 97 13:52:58 -0800
+#	OLD		<td valign=top>S002</td>
+#	OLD		<td valign=top>$17</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		xibalba @</td>
+#	OLD		<td valign=top rowspan=2>Original Glass Records A3 poster in black on gold
+#	OLD		promoting the <b>Perfect Prescription</b> album, featuring
+#	OLD		band photo.  Good condition.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/poster_spacemen_perfect.jpg"><img border=0
+#	OLD			src="${jbc_images}/poster_spacemen_perfect.gif"
+#	OLD			width=99 height=139></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$200	cutter@bronze.lcs.mit.edu
+#	OLD		<td valign=top>S003</td>
+#	OLD		<td valign=top>$200</td>
+#	OLD		<td valign=top>${itemHold}<br>
+#	OLD		cutter @</td>
+#	OLD		<td valign=top rowspan=2>Ultra rare and extremely lovely two colour poster
+#	OLD		from Bomp Records to promote the Spacemen's proposed U.S. tour in
+#	OLD		1989.  The tour never took place.  Pyramid design in blue on red with
+#	OLD		excellent band photo.  Numbered print made and signed by the artist
+#	OLD		(Mad Jon!)  and also autographed by Sonic.
+#	OLD		62 x 48 cm.  Very good condition.  #19 of 150.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/poster_spacemen3_tour89.jpg"><img border=0
+#	OLD			src="${jbc_images}/poster_spacemen3_tour89.gif"
+#	OLD			width=99 height=150></a></td>
+#	OLD		</tr>
+#	OLD	
+#	OLD	#define	auctionPosters
+#	OLD		<tr>
+#	OLD		<td bgcolor=#dadada colspan=4>${tag_beg}Art and Posters${tag_end}</td>
+#	OLD		</tr>
+#	OLD		<tr><td colspan=4>
+#	OLD		<i>
+#	OLD		Many of these are one-of-a-kind items, either hand-done or otherwise
+#	OLD		highly obscure.  Impress your friends.  Scare your pets!
+#	OLD		</i>
+#	OLD		</td></tr>
+#	OLD		<tr>
+#	OLD	#	$10	indigo_eyes@hotmail.com	Mon, 01 Dec 1997 16:09:54 GMT
+#	OLD	#	$15	wnerini@drf.com	Mon, 01 Dec 1997 15:43:28 -0700
+#	OLD	#	$20	cek@graphics.stanford.edu	Wed, 3 Dec 1997 18:52:37 -0800 (PST)
+#	OLD	#	$40	gsm1224@ix.netcom.com	Wed, 03 Dec 1997 19:05:59 -0800
+#	OLD	#	$45	cek@graphics.stanford.edu	Fri, 5 Dec 1997 12:46:16 -0800 (PST)
+#	OLD	#	$50	gsm1224@ix.netcom.com	Fri, 05 Dec 1997 17:25:04 -0800
+#	OLD	#	$55	cek@graphics.stanford.edu	Mon, 8 Dec 1997 10:43:20 -0800 (PST)
+#	OLD	#	$75	Nagely@aol.com	Tue, 9 Dec 1997 00:39:06 EST
+#	OLD	#	$100	rlyons@bigfoot.com	Tue, 09 Dec 1997 04:52:39 -0500
+#	OLD		<td valign=top>A001</td>
+#	OLD		<td valign=top>$100</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		rlyons @</td>
+#	OLD		<td valign=top rowspan=2>Original hand-drawn poster for the very first
+#	OLD		Jazz Butcher show, <a href="${jbc_gigs}/1982/Jun12.html">12th
+#	OLD		June 1982</a>.  Later hand spray-painted by the Butcher
+#	OLD		at a party.  36 x 26 cm.  Fairish condition, given the spray job!
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/19820612/19820612_poster.jpg"><img border=0
+#	OLD			src="${jbc_images}/19820612/19820612_poster_250.jpg"></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	rlyons@bigfoot.com	Wed, 29 Oct 1997 21:32:41 -0500
+#	OLD	#	$20	n3xye@velocity.net	Mon, 03 Nov 1997 16:02:59 -0500
+#	OLD	#	$30	speedbump@reuben.org	Tue, 04 Nov 1997 09:47:52 -0400
+#	OLD	#	$50	rlyons@bigfoot.com	Thu, 13 Nov 1997 01:12:09 -0500
+#	OLD		<td valign=top>A002</td>
+#	OLD		<td valign=top>$50</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		rlyons @
+#	OLD		</td>
+#	OLD		<td valign=top rowspan=2>Glossy black and white poster on card for a JBC show
+#	OLD		<a href="${jbc_gigs}/1986/Jul26.html">at The Subway, Windsor,
+#	OLD		Ontario, 26th July 1986</a>. Mad &quotSpy -vs- Spy&quot; illustration,
+#	OLD		signed Martin Stevens.  44 x 28 cm.
+#	OLD		In good condition.
+#	OLD		<br>1 of 4
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/19860726/19860726_poster.jpg"><img border=0
+#	OLD			src="${jbc_images}/19860726/19860726_poster_250.jpg"></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	JV_SEATTLE@compuserve.com	Thu, 30 Oct 1997 02:51:46 -0500
+#	OLD	#	$20	gsm1224@ix.netcom.com	Mon, 3 Nov 1997 15:36:44 -0600 (CST)
+#	OLD	#	$30	lyons@iglou.com	Wed, 05 Nov 1997 03:13:00 -0500
+#	OLD	#	$40	mrnobody@ripco.com	Wed, 12 Nov 1997 22:09:47 -0600
+#	OLD		<td valign=top>A003</td>
+#	OLD		<td valign=top>$40</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		mrnobody @
+#	OLD		</td>
+#	OLD		<td valign=top rowspan=2>Glossy black and white poster on card for a JBC show
+#	OLD		<a href="${jbc_gigs}/1986/Jul26.html">at The Subway, Windsor,
+#	OLD		Ontario, 26th July 1986</a>. Mad &quot;Spy -vs- Spy&quot; illustration,
+#	OLD		signed Martin Stevens.  44 x 28 cm.
+#	OLD		In good condition.
+#	OLD		<br>2 of 4
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/19860726/19860726_poster.jpg"><img border=0
+#	OLD			src="${jbc_images}/19860726/19860726_poster_250"></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	JV_SEATTLE@compuserve.com	Thu, 30 Oct 1997 02:51:46 -0500
+#	OLD	#	$20	rlyons@bigfoot.com	Mon, 03 Nov 1997 19:10:09 -0500
+#	OLD	#	$25	gsm1224@ix.netcom.com	Tue, 4 Nov 1997 18:42:52 -0600 (CST)
+#	OLD	#	$30	cek@graphics.stanford.edu	Thu, 6 Nov 1997 23:00:35 -0800 (PST)
+#	OLD	#	$40	pmb32@columbia.edu	Tue, 11 Nov 1997 09:51:23 -0500 (EST)
+#	OLD	#	$45	cek@graphics.stanford.edu	Fri, 21 Nov 1997 11:10:56 -0800 (PST)
+#	OLD	#	$50	pmb32@columbia.edu	Mon, 1 Dec 1997 01:08:12 -0500 (EST)
+#	OLD		<td valign=top>A004</td>
+#	OLD		<td valign=top>$50</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		pmb32 @
+#	OLD		</td>
+#	OLD		<td valign=top rowspan=2>Glossy black and white poster on card for a JBC show
+#	OLD		<a href="${jbc_gigs}/1986/Jul26.html">at The Subway, Windsor,
+#	OLD		Ontario, 26th July 1986</a>. Mad &quot;Spy -vs- Spy&quot; illustration,
+#	OLD		signed Martin Stevens.  44 x 28 cm.
+#	OLD		In good condition.
+#	OLD		<br>3 of 4
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/19860726/19860726_poster.jpg"><img border=0
+#	OLD			src="${jbc_images}/19860726/19860726_poster_250"></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	dburns2@calstatela.edu	Oct 30, 1997 19:58:33
+#	OLD	#	$18	JReick01@teleweb.net	Thu, 30 Oct 1997 22:13:56 -0500
+#	OLD	#	$20	mrnobody@ripco.com	Sat, 01 Nov 1997 20:15:24 -0600
+#	OLD	#	$25	pmb32@columbia.edu	Wed, 5 Nov 1997 00:50:15 -0500 (EST)
+#	OLD	#	$35	comstock@MIT.EDU	Thu, 06 Nov 1997 20:31:51 -0500
+#	OLD		<td valign=top>A005</td>
+#	OLD		<td valign=top>$35</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		comstock @
+#	OLD		</td>
+#	OLD		<td valign=top rowspan=2>Glossy black and white poster on card for a JBC show
+#	OLD		<a href="${jbc_gigs}/1986/Jul26.html">at The Subway, Windsor,
+#	OLD		Ontario, 26th July 1986</a>. Mad &quot;Spy -vs- Spy&quot; illustration,
+#	OLD		signed Martin Stevens.  44 x 28 cm.
+#	OLD		In good condition.
+#	OLD		<br>4 of 4
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/19860726/19860726_poster.jpg"><img border=0
+#	OLD			src="${jbc_images}/19860726/19860726_poster_250"></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$35	ZineGreen@aol.com	Sat, 29 Nov 1997 19:42:40 -0500 (EST)
+#	OLD		<td valign=top>A006</td>
+#	OLD		<td valign=top>$35</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		ZineGreen @</td>
+#	OLD		<td valign=top>Promotional glossy colour poster for ${blue} album,
+#	OLD		featuring the front cover design.  96 x 48 cm.  Folded, but otherwise
+#	OLD		in immaculate condition.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	fred@toastie.legend.co.uk	Wed, 3 Dec 1997 08:06:08 +0000
+#	OLD	#	$15	wnerini@ww-web.com	Wed, 10 Dec 1997 00:48:58 -0700
+#	OLD	#	$18	fred@toastie.legend.co.uk	Wed, 10 Dec 1997 07:56:21 +0000
+#	OLD	#	$20	dixiecluck@hotmail.com	Sat, 13 Dec 1997 14:51:32 EST
+#	OLD	#	$22	fred@toastie.legend.co.uk	Sun, 14 Dec 1997 13:48:32 +0000
+#	OLD		<td valign=top>A007</td>
+#	OLD		<td valign=top>$22</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		fred @</td>
+#	OLD		<td valign=top rowspan=2>Black and white pencil sketch of The Butcher about
+#	OLD		the time of ${fishco}, by the look of it.  Signed &quot;Russel
+#	OLD		'92&quot; and originating in Canada.  44 x 28 cm.  Good condition.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/poster_pat_russel.jpg"><img border=0
+#	OLD			src="${jbc_images}/poster_pat_russel.gif"
+#	OLD			width=99 height=148></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$10	indigo_eyes@hotmail.com	Mon, 01 Dec 1997 18:17:13 GMT
+#	OLD	#	$20	gsm1224@ix.netcom.com	Wed, 03 Dec 1997 19:07:34 -0800
+#	OLD		<td valign=top>A008</td>
+#	OLD		<td valign=top>$20</td>
+#	OLD		<td valign=top>${itemHold}<br>
+#	OLD		gsm1224 @</td>
+#	OLD		<td valign=top rowspan=2>Black and white poster
+#	OLD		for &quot;The Happening&quot;
+#	OLD		<a href="${jbc_gigs}/1984/Sep1.html">at Northampton Art
+#	OLD		Centre, 1st September 1984</a>, featuring the Butcher, along with
+#	OLD		various local artists, loonies and members of ${haus}.
+#	OLD		40 x 28 cm.  Slightly battered but intact and unblemished,
+#	OLD		so fair condition.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/19840901/19840901_poster.jpg"><img border=0
+#	OLD			src="${jbc_images}/19840901/19840901_poster_250.jpg"></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$25	wnerini@drf.com	Sun, 30 Nov 1997 11:17:10 -0700
+#	OLD	#	$35	mwright@pro-ns.net	Sun, 30 Nov 1997 22:41:18 -0600
+#	OLD	#	$40	wnerini@drf.com	Mon, 01 Dec 1997 12:05:09 -0700
+#	OLD	#	$50	rlyons@bigfoot.com	Mon, 01 Dec 1997 15:59:06 -0500
+#	OLD	#	$55	wnerini@drf.com	Mon, 01 Dec 1997 15:43:47 -0700
+#	OLD	#	$60	rlyons@bigfoot.com	Mon, 01 Dec 1997 20:14:42 -0500
+#	OLD	#	$65	wnerini@drf.com	Tue, 2 Dec 1997 01:05:32 -0700
+#	OLD	#	$75	rlyons@bigfoot.com	Tue, 02 Dec 1997 13:51:36 -0500
+#	OLD	#	$100	gsm1224@ix.netcom.com	Wed, 03 Dec 1997 19:08:11 -0800
+#	OLD	#	$105	cek@graphics.stanford.edu	Tue, 9 Dec 1997 09:32:52 -0800 (PST)
+#	OLD		<td valign=top>A009</td>
+#	OLD		<td valign=top>$105</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		cek @</td>
+#	OLD		<td valign=top rowspan=2>Original black and white Glass Records promotional poster
+#	OLD		for the ${bath} album, featuring the cover photo and the exhortation
+#	OLD		to &quot;Wig Out To The Butcher Beat&quot;.  Rather battered and stained,
+#	OLD		but in one piece and where the hell else will you get your hands on one?
+#	OLD		42 x 30 cm.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/poster_bath.jpg"><img border=0
+#	OLD			src="${jbc_images}/poster_bath.gif"
+#	OLD			width=99 height=142></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$10	dallant@onramp.net	Sun, 30 Nov 1997 22:00:42 -0600
+#	OLD	#	$15	lschupra@erim-int.com	Mon, 01 Dec 1997 17:34:02 -0500
+#	OLD	#	$20	tfrazer@dmfg.com	Tue, 02 Dec 1997 22:40:33 -0800
+#	OLD	#	$25	cek@graphics.stanford.edu	Wed, 3 Dec 1997 18:51:42 -0800 (PST)
+#	OLD	#	$30	tfrazer@dmfg.com	Wed, 03 Dec 1997 20:45:05 -0800
+#	OLD	#	$35	cek@graphics.stanford.edu	Fri, 5 Dec 1997 12:45:30 -0800 (PST)
+#	OLD	#	$40	billp@sonic.net	Sat, 6 Dec 1997 01:53:49 -0800
+#	OLD	#	$45	lschupra@erim-int.com	Tue, 09 Dec 1997 12:56:04 -0500
+#	OLD	#	$50	dallant@onramp.net	Wed, 10 Dec 1997 09:27:03 -0800
+#	OLD		<td valign=top>A010</td>
+#	OLD		<td valign=top>$50</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		dallant @</td>
+#	OLD		<td valign=top rowspan=2>Rather beautiful two colour card poster for the concert
+#	OLD		<a href="${jbc_gigs}/1996/Aug20.html">in Sa Pobla, Mallorca in August
+#	OLD		1996</a> after the band has split up!  See the J.B.C. receive
+#	OLD		sponsorship from Air Iberia, Beck's Beer and the local government,
+#	OLD		among others.  40 x 34 cm.  Pristine condition.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/19960820/19960820_poster.jpg"><img border=0
+#	OLD			src="${jbc_images}/19960820/19960820_poster_250.jpg"></a></td>
+#	OLD		</tr>
+#	OLD	#	<tr>
+#	OLD	#	<td valign=top><a href="mailto:${bidAddress}?subject=Bid on A011">A011</a></td>
+#	OLD	#	<td valign=top>$10</td>
+#	OLD	#	<td valign=top>${itemOpen}</td>
+#	OLD	#	<td valign=top>Rather beautiful two colour card poster for the concert
+#	OLD	#	<a href="${jbc_gigs}/1996/Aug20.html">in Sa Pobla, Mallorca in August
+#	OLD	#	1996</a> after the band has split up!  See the J.B.C. receive
+#	OLD	#	sponsorship from Air Iberia, Beck's Beer and the local government,
+#	OLD	#	among others.  40 x 34 cm.  Pristine condition.
+#	OLD	#	<br>2 of 2.
+#	OLD	#	</td>
+#	OLD	#	</tr>
+#	OLD		<tr>
+#	OLD	#	$10	dallant@onramp.net	Sun, 30 Nov 1997 22:01:43 -0600
+#	OLD	#	$15	wnerini@drf.com	Mon, 01 Dec 1997 12:05:44 -0700
+#	OLD	#	$20	gsm1224@ix.netcom.com	Wed, 03 Dec 1997 19:09:23 -0800
+#	OLD	#	$25	wnerini@drf.com	Thu, 4 Dec 1997 14:01:43 -0700
+#	OLD		<td valign=top>A012</td>
+#	OLD		<td valign=top>$25</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		wnerini @</td>
+#	OLD		<td valign=top>Enormous yellow and blue poster for a season of
+#	OLD		London club bands in Hamburg nightclub &quot;${PO}&quot; in December
+#	OLD		1984.  These were the first two dates that the J.B.C. ever played in
+#	OLD		Germany.  This has been on the Butcher's wall for a long time, and
+#	OLD		shows signs of Blu-Tak damage and a few blemishes, but it
+#	OLD		remains a striking poster.  84 x 60 cm.  Dodgy condition.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$10	gsm1224@ix.netcom.com	Wed, 03 Dec 1997 19:10:33 -0800
+#	OLD		<td valign=top>A013</td>
+#	OLD		<td valign=top>$10</td>
+#	OLD		<td valign=top>${itemHold}<br>
+#	OLD		gsm1224 @</td>
+#	OLD		<td valign=top rowspan=2>A4 black and white poster hand-printed by Sonic of
+#	OLD		Spacemen 3/Spectrum to promote a Butcher
+#	OLD		<a href="${jbc_gigs}/1994/Jun24.html">show at a place in Rugby</a>
+#	OLD		called
+#	OLD		(I shit you not...) The Flying Teapot.  A small and messy poster in
+#	OLD		fair-to-grubby condition, but it is an original.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/19940624/19940624_poster2.jpg"><img border=0
+#	OLD			src="${jbc_images}/19940624/19940624_poster2_250.jpg"></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$10	gsm1224@ix.netcom.com	Wed, 03 Dec 1997 19:10:48 -0800
+#	OLD	#	$15	wnerini@drf.com	Thu, 4 Dec 1997 14:03:04 -0700
+#	OLD	#	$20	Swishmail@aol.com	Tue, 9 Dec 1997 12:20:30 EST
+#	OLD	#	$30	cek@graphics.stanford.edu	Tue, 9 Dec 1997 09:57:12 -0800 (PST)
+#	OLD	#	$32	wnerini@drf.com	Tue, 9 Dec 1997 20:10:26 -0700
+#	OLD	#	$40	Ablueman@aol.com	Wed, 10 Dec 1997 02:15:55 EST
+#	OLD	#	$45	dallant@onramp.net	Wed, 10 Dec 1997 09:26:04 -0800
+#	OLD	#	$50	wnerini@drf.com	Wed, 10 Dec 1997 13:35:29 -0700
+#	OLD	#	$55	Ablueman@aol.com	Wed, 10 Dec 1997 20:07:47 EST
+#	OLD		<td valign=top>A014</td>
+#	OLD		<td valign=top>$55</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		Ablueman @</td>
+#	OLD		<td valign=top rowspan=2>A full colour poster for the same show
+#	OLD		<a href="${jbc_gigs}/1994/Jun24.html">(24th June 1994)</a>
+#	OLD		designed (and you'll think I'm making this up, but it's true...)
+#	OLD		by Spacemen 3/Darkside bassist, Pete Baine.  36 x 40 cm in slightly
+#	OLD		ropey condition.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/19940624/19940624_poster.jpg"><img border=0
+#	OLD			src="${jbc_images}/19940624/19940624_poster_250.jpg"></a></td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$13	mercy_@hotmail.co	Wed, 03 Dec 1997 18:56:08 -0800
+#	OLD	#	$15	gsm1224@ix.netcom.com	Wed, 03 Dec 1997 19:10:14 -0800
+#	OLD		<td valign=top>A015</td>
+#	OLD		<td valign=top>$15</td>
+#	OLD		<td valign=top>${itemHold}<br>
+#	OLD		gsm1224 @</td>
+#	OLD		<td valign=top rowspan=2>Glossy B&amp;W blow-up reprint of an article
+#	OLD		from the 6 November 1982 Mercury And Herald.  Tells the tale
+#	OLD		of the <a href="${jbc_gigs}/1982/Nov1.html">time the Jazz
+#	OLD		Butcher opened for Bauhaus</a>.  Lots of photos on cardstock.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr><td align=right colspan=3>
+#	OLD		<a href="${jbc_images}/19821101/19821101_poster.jpg"><img border=0
+#	OLD			src="${jbc_images}/19821101/19821101_poster_250.jpg"></a></td>
+#	OLD		</tr>
+#	OLD	
+#	OLD	#define	auctionShirts
+#	OLD		<tr>
+#	OLD		<td bgcolor=#dadada colspan=4>${tag_beg}Conspiratorial Leisure Wear${tag_end}</td>
+#	OLD		</tr>
+#	OLD		<tr><td colspan=4>
+#	OLD		<i>
+#	OLD		We only have a very few items here, so be quick and pay plenty.  Ha!
+#	OLD		</i>
+#	OLD		</td></tr>
+#	OLD		${statusLine}
+#	OLD		<tr>
+#	OLD	#	$15	megli@simslevel1.com	Wed, 5 Nov 1997 16:45:36 -0500
+#	OLD	#	$20	a-erinly@microsoft.com	Thu, 6 Nov 1997 16:52:50 -0800
+#	OLD	#	$25	megli@simslevel1.co	Fri, 7 Nov 1997 22:17:25 -0500
+#	OLD	#	NONONONO
+#	OLD	#	$27	megli@simslevel1.com	Wed, 19 Nov 1997 14:12:21 -0500
+#	OLD	#	$29	megli@simslevel1.com	Wed, 19 Nov 1997 14:12:21 -0500
+#	OLD	#	$31	megli@simslevel1.com	Sat, 29 Nov 1997 21:08:07 -0500
+#	OLD		<td valign=top>L001</td>
+#	OLD		<td valign=top>$32</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		tpip @
+#	OLD		</td>
+#	OLD		<td valign=top>Short sleeved t-shirt. ${planet} album cover.
+#	OLD		No official writing on it, but it has been signed by Julie,
+#	OLD		the Bimbo From Hell while the Butcher was wearing it at a gig
+#	OLD		<a href="${jbc_gigs}/1989/Oct14.html">at the Camdem in October 1989</a>.
+#	OLD		<br>Size L
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	billp@sonic.net	Sat, 1 Nov 1997 23:24:14 -0800
+#	OLD		<td valign=top>L002</td>
+#	OLD		<td valign=top>$15</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		billp @
+#	OLD		</td>
+#	OLD		<td valign=top>Short sleeved t-shirt. ${planet} album cover.
+#	OLD		No writing and no autographs.
+#	OLD		<br>Size XL
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$20	nora@toastie.legend.co.uk	Thu, 30 Oct 1997 08:37:50 +0000
+#	OLD	#	$25	cek@graphics.stanford.edu	Thu, 6 Nov 1997 16:44:27 -0800 (PST)
+#	OLD	#	$27	fred@toastie.legend.co.uk	Sat, 8 Nov 1997 21:49:18 +0000
+#	OLD	#	$30	cek@graphics.stanford.edu	Mon, 10 Nov 1997 14:04:28 -0800 (PST)
+#	OLD	#	$32	fred@toastie.legend.co.uk	Tue, 11 Nov 1997 08:16:03 +0000
+#	OLD	#	$35	cek@graphics.stanford.edu	Thu, 13 Nov 1997 15:55:54 -0800 (PST)
+#	OLD	#	$37	fred@toastie.legend.co.uk	Fri, 14 Nov 1997 07:57:02 +0000
+#	OLD	#	$45	mwright@pro-ns.net	Wed, 19 Nov 1997 12:21:29 -0600
+#	OLD	#	$55	ZineGreen@aol.com	Sat, 29 Nov 1997 19:39:17 -0500 (EST)
+#	OLD	#	$65	mwright@pro-ns.net	Sun, 30 Nov 1997 22:48:11 -0600
+#	OLD	#	$70	ZineGreen@aol.com	Sat, 6 Dec 1997 18:08:19 EST
+#	OLD		<td valign=top>L003</td>
+#	OLD		<td valign=top>$70</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		ZineGreen @
+#	OLD		</td>
+#	OLD		<td valign=top>Long sleeved white hooded top featuring the ${newinv}
+#	OLD		trumpet design in yellow and a &quot;hand-written&quot;-style
+#	OLD		Jazz Butcher logo in red.
+#	OLD		<br>1 of 2
+#	OLD		<br>Size XL
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	wnerini@drf.com	Fri, 31 Oct 1997 10:41:05 -0700
+#	OLD	#	$20	JReick01@teleweb.net	Sun, 02 Nov 1997 10:52:21 -0500
+#	OLD		<td valign=top>L004</td>
+#	OLD		<td valign=top>$20</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		JReick01 @
+#	OLD		</td>
+#	OLD		<td valign=top>Long sleeved white hooded top featuring the ${newinv}
+#	OLD		trumpet design in yellow and a &quot;hand-written&quot;-style
+#	OLD		Jazz Butcher logo in red. Slight stain on shoulder.
+#	OLD		<br>2 of 2
+#	OLD		<br>Size XL
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$13	lonestar13@earthlink.net	Fri, 31 Oct 1997 12:22:49 +0000
+#	OLD	#	$14	JOIAIN@aol.com	Sat, 1 Nov 1997 18:40:32 -0500 (EST)
+#	OLD	#	$20	n3xye@velocity.net	Mon, 03 Nov 1997 16:02:23 -0500
+#	OLD	#	$30	albri006@gold.tc.umn.edu	Tue, 4 Nov 1997 11:51:56 -0600
+#	OLD	#	$33	lonestar13@earthlink.net	Rachel & Marco Mire
+#	OLD	#	$35	albri006@gold.tc.umn.edu	Wed, 5 Nov 1997 11:16:43 -0600
+#	OLD		<td valign=top>L005</td>
+#	OLD		<td valign=top>$35</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		albri006 @
+#	OLD		</td>
+#	OLD		<td valign=top>A white short sleeved t-shirt featuring a black and
+#	OLD		white reproduction of the ${mitch} shot of Pat and Kizzy with
+#	OLD		the cars from ${fishco}.  This one of eleven shirts with which
+#	OLD		the Butcher's missus was arrested at the Canadian border in 1988.
+#	OLD		Spookily, it features the legend &quot;Fishpower USA 88&quot;
+#	OLD		<br>Size XL
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	wnerini@drf.com	Fri, 07 Nov 1997 13:40:57 -0700
+#	OLD		<td valign=top>L006</td>
+#	OLD		<td valign=top>$15</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		wnerini @
+#	OLD		</td>
+#	OLD		<td valign=top>An off-white, oft-washed shirt given to the Butcher by
+#	OLD		the Jersey Posse in 1989, short sleeved and featuring the legend
+#	OLD		&quot;From Hoboken To Atlanta&quot; (it should have said &quot;the
+#	OLD		hard way&quot; - ed.) and featuring beautiful decorations on the back,
+#	OLD		including the names of all involved.  Which, in an odd way, is why the
+#	OLD		Butcher is parting with it to the highest bidder.
+#	OLD		<br>Size XL
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD	
+#	OLD	#define	auctionCompilations
+#	OLD		<tr>
+#	OLD		<td bgcolor=#dadada colspan=4><img src="${jbc_images}/cassettes.gif" align=middle hspace=10 width=47 height=40>${tag_beg}Compilation Tapes${tag_end}</td>
+#	OLD		</tr>
+#	OLD		<tr><td colspan=4>
+#	OLD		<i>
+#	OLD		This section features on-demand compilation tapes culled
+#	OLD		from their master copies - sound quality is excellent on all of these.
+#	OLD		The price per tape is a fixed $15US, which includes shipping.
+#	OLD		<b>Place your order, and we make you a copy - got it?</b>
+#	OLD		</i>
+#	OLD		</td></tr>
+#	OLD		<tr>
+#	OLD	#	+ sonia@primenet.com
+#	OLD	#	gsm1224@ix.netcom.com
+#	OLD	#	+ speedbump@reuben.org
+#	OLD	#	jnicpon@juno.com
+#	OLD	#	- mwright@pro-ns.net (Brian Kelly)
+#	OLD	#	+ wnerini@drf.com
+#	OLD	#	+ Relaxpanda@aol.com
+#	OLD	#	+ comstock@MIT.EDU
+#	OLD	#	+ monkeeman@email.msn.com
+#	OLD	#	+ jlehman3@uni-goettingen.de
+#	OLD	#	+ dave_tilley@mac.sas.com
+#	OLD	#	+ Jim.Davies@comlab.ox.ac.uk
+#	OLD		<td valign=top><a href="mailto:${bidAddress}?subject=Purchase a copy of C001 for $15">C001</a></td>
+#	OLD		<td valign=top>$15</td>
+#	OLD		<td>&nbsp;</td>
+#	OLD		<td valign=top><b>Acoustic On The Radio</b>
+#	OLD		<br>Top quality sound on this compilation of three different radio
+#	OLD		sessions:
+#	OLD	# KCRW #	<br><b>1</b>) ${pat} and ${green} live on <a href="${jbc_gigs}/1990/Nov24.html">KCRW 24Nov90</a>
+#	OLD		<br><b>2</b>) ${pat} solo on 91X, <a href="${jbc_gigs}/1993/Aug29_1200.html">San Diego 29Aug93</a>: songs and interview.
+#	OLD		<br><b>3</b>) ${pat} and ${pete} on France <a href="${jbc_gigs}/1993/Feb15.html">Inter, February 93</a>: songs and an interview in French.
+#	OLD		<br>~90 minutes
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	+ sonia@primenet.com
+#	OLD	#	+ uncletoe@gis.net
+#	OLD	#	- mwright@pro-ns.net (Brian Kelly)
+#	OLD	#	+ wnerini@drf.com
+#	OLD	#	+ Relaxpanda@aol.com
+#	OLD	#	istearns@nmcourt.fed.us
+#	OLD	#	+ rlyons@bigfoot.com
+#	OLD	#	+ Leisa.ReFalo@mci.com
+#	OLD	#	+ dave_tilley@mac.sas.com
+#	OLD	#	+ Jim.Davies@comlab.ox.ac.uk
+#	OLD	#	+ monkeeman@email.msn.com
+#	OLD	#	jhg@buffnet.net
+#	OLD		<td valign=top><a href="mailto:${bidAddress}?subject=Purchase a copy of C002 for $15">C002</a>${patPick}</td>
+#	OLD		<td valign=top>$15</td>
+#	OLD		<td>&nbsp;</td>
+#	OLD		<td valign=top><b>This Is Gothic Techno Folk</b>
+#	OLD		<br>Two concerts from 1991, fair sound quality on both sets.
+#	OLD		<br><b>1</b>) ${pat}, ${pete} and ${green} at The Mean Fiddler, London <a href="${jbc_gigs}/1991/Jun18.html">18Jun91</a>.
+#	OLD		<br><b>2</b>) ${pat}, ${pete} and, ${dooj} and a drum machine at Maxim Gorky, Stuttgart <a href="${jbc_gigs}/1991/Dec9.html">10Dec91</a>.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	+ sonia@primenet.com
+#	OLD	#	+ wnerini@drf.com
+#	OLD	#	dburns2@calstatela.edu
+#	OLD	#	JOIAIN@aol.com
+#	OLD	#	+ JReick01@teleweb.net
+#	OLD	#	+ uncletoe@gis.net
+#	OLD	#	seabo002@gold.tc.umn.edu
+#	OLD	#	- gsm1224@ix.netcom.com
+#	OLD	#	pmb32@columbia.edu
+#	OLD	#	+ albri006@gold.tc.umn.edu
+#	OLD	#	jnicpon@juno.com
+#	OLD	#	- mwright@pro-ns.net (Brian Kelly)
+#	OLD	#	+ Relaxpanda@aol.com
+#	OLD	#	istearns@nmcourt.fed.us
+#	OLD	#	+ Ed.Doxtator@ssa.co.uk
+#	OLD	#	+ rlyons@bigfoot.com
+#	OLD	#	+ Leisa.ReFalo@mci.com
+#	OLD	#	+ dave_tilley@mac.sas.com
+#	OLD	#	+ Jim.Davies@comlab.ox.ac.uk
+#	OLD	#	+ jlehman3@uni-goettingen.de
+#	OLD	#	+ monkeeman@email.msn.com
+#	OLD		<td valign=top><a href="mailto:${bidAddress}?subject=Purchase a copy of C003 for $15">C003</a>${patPick}</td>
+#	OLD		<td valign=top>$15</td>
+#	OLD		<td>
+#	OLD		<a href="${jbc_images}/19931028/pass_28Oct93.jpg"><img
+#	OLD			src="${jbc_images}/19931028/pass_28Oct93.gif" 
+#	OLD			border=0 width=75 height=113></a>
+#	OLD		</td>
+#	OLD		<td valign=top><b>Acoustic In The Dark</b>
+#	OLD		<br>A compilation of two shows from the winter of 1993.
+#	OLD		<br><b>1</b>) ${pat}, ${pete} and ${paul} supporting John Cale at The Forum, London <a href="${jbc_gigs}/1993/Oct28.html">28Oct93</a> ~33min
+#	OLD		<br><b>2</b>) ${pat} and ${dj}, performing at a Christmas party in Northampton <a href="${jbc_gigs}/1993/Dec23.html">23Dec93.</a> ~25min
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD	
+#	OLD	#define	auctionConcerts
+#	OLD		<tr>
+#	OLD		<td bgcolor=#dadada align=left colspan=4><img src="${jbc_images}/cassettes.gif" align=middle hspace=10 width=47 height=40>${tag_beg}Concert Tapes${tag_end}</td>
+#	OLD		</tr>
+#	OLD		<tr><td colspan=4>
+#	OLD		<i>
+#	OLD		Unless otherwise noted, cassettes includes Butcher-handlettered
+#	OLD		inserts and are signed. These were Pat's personal copies of these
+#	OLD		shows..
+#	OLD		</i>
+#	OLD		</td></tr>
+#	OLD		${statusLine}
+#	OLD		<tr>
+#	OLD	#	$20	sonia@primenet.com	Wed, 29 Oct 1997 21:01:15 -0500
+#	OLD	#	$25	JReick01@teleweb.net	Sun, 02 Nov 1997 11:19:24 -0500
+#	OLD	#	$40	gsm1224@ix.netcom.com	Mon, 3 Nov 1997 15:32:57 -0600 (CST)
+#	OLD		<td valign=top>T001</td>
+#	OLD		<td valign=top>$40</td>
+#	OLD		<td valign=top>${itemHold}<br>
+#	OLD		gsm1224 @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1984/Dec8.html"><b>${PO} : 8Dec84</b></a>
+#	OLD		<br>Sound Quality: 6 Performance: 7
+#	OLD		<br>${pat}, ${max}, ${dj}, ${owen}
+#	OLD		<br>B/W excerpt from <a href="${jbc_gigs}/1986/Mar7.html">Goldsmith's College : 7Mar86</a>.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$20	dburns2@calstatela.edu	Oct 30, 1997 19:52:55
+#	OLD	#	$25	wnerini@drf.com	Thu, 6 Nov 1997 10:21:44 -0700
+#	OLD	#	$30	dburns2@calstatela.edu	Nov 13, 1997 20:25:05
+#	OLD	#	$35	wnerini@drf.com	Fri, 14 Nov 1997 15:04:59 -0700
+#	OLD	#	$40	indigo_eyes@hotmail.com	Tue, 25 Nov 1997 15:40:11 GMT
+#	OLD	#	$45	wnerini@drf.com	Tue, 25 Nov 1997 10:38:16 -0700
+#	OLD	#	$50	indigo_eyes@hotmail.com	Tue, 25 Nov 1997 18:00:43 GMT
+#	OLD	#	$55	wnerini@drf.com	Tue, 25 Nov 1997 14:41:26 -0700
+#	OLD		<td valign=top>T002</td>
+#	OLD		<td valign=top>$55</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		wnerini @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1985/Apr25.html"><b>Melkweg, Amsterdam : 25Apr85</b></a>
+#	OLD		<br>Sound Quality: 6 Performance: 7
+#	OLD		<br>${pat}, ${max}, ${felix}, ${owen}
+#	OLD		<br>The soft songs come out best. Notable for diseased
+#	OLD		reading on <i>Knocking On Heaven's Door</i>.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	adbell@iname.com	Thu, 30 Oct 1997 11:01:43 +1100
+#	OLD	#	$50	aschi@bronze.lcs.mit.edu	Wed, 29 Oct 1997 19:02:32 -0500
+#	OLD	#	$55	jay@ossuary.com	Thu, 30 Oct 1997 01:42:39 -0800
+#	OLD	#	$75	aschi@bronze.lcs.mit.edu	Thu, 30 Oct 1997 20:00:32 -0500
+#	OLD	#	$80	gsm1224@ix.netcom.com	Mon, 3 Nov 1997 15:34:20 -0600 (CST)
+#	OLD	#	$90	aschi@bronze.lcs.mit.edu	Mon, 3 Nov 1997 18:51:22 -0500 (EST)
+#	OLD	#	$93	gsm1224@ix.netcom.com	Fri, 14 Nov 1997 20:10:26 -0600 (CST)
+#	OLD	#	$95	aschi@bronze.lcs.mit.edu	Sat, 15 Nov 1997 10:16:10 -0500 (EST)
+#	OLD	#	$100	gsm1224@ix.netcom.com	Mon, 17 Nov 1997 19:46:43 -0600 (CST)
+#	OLD	#	$110	aschi@bronze.lcs.mit.edu	Wed, 19 Nov 1997 20:24:47 -0500 (EST)
+#	OLD	#	$120	gsm1224@ix.netcom.com	Wed, 03 Dec 1997 19:04:38 -0800
+#	OLD	#	$130	aschi@bronze.lcs.mit.edu	Sat, 6 Dec 1997 11:23:32 -0500 (EST)
+#	OLD	#	$135	dave_tilley@mac.sas.com	9 Dec 1997 15:23:09 -050
+#	OLD	#	$140	aschi@bronze.lcs.mit.edu	Tue, 9 Dec 1997 20:15:11 -0500 (EST)
+#	OLD	#	$145	dave_tilley@mac.sas.com	10 Dec 1997 11:07:35 -0500
+#	OLD	#	$150	aschi@bronze.lcs.mit.edu	Wed, 10 Dec 1997 19:06:53 -0500 (EST
+#	OLD	#	$155	dave_tilley@mac.sas.com		16 Dec 1997 16:00:25 -0500
+#	OLD		<td valign=top>T003${patPick}</td>
+#	OLD		<td valign=top>$155</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		dave_tilley @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1986/Jul24.html"><b>Club R.P.M., Toronto : 24Jul86</b></a>
+#	OLD		<br>Sound Quality: 8 Performance: 8
+#	OLD		<br>${pat}, ${max}, ${felix}, ${owen}
+#	OLD		<br>Radio broadcast, a little light on Max in the mix here
+#	OLD		and there. Features Max's ${you} with a flute
+#	OLD		solo (!) by Pat. 
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	dburns2@calstatela.edu	Oct 30, 1997 19:54:27
+#	OLD	#	$20	wnerini@drf.com	Wed, 12 Nov 1997 13:27:11 -0700
+#	OLD	#	$25	dburns2@calstatela.edu	Nov 13, 1997 20:29:28
+#	OLD	#	$25	starsail@scruznet.com	Mon Mar 16 14:06:46 PST 1998
+#	OLD		<td valign=top>T004</td>
+#	OLD		<td valign=top>$25</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		starsail @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1986/Nov14.html"><b>Markthalle, Hamburg : 14Nov86</b></a>
+#	OLD		<br>Sound Quality: 5 Performance: 8
+#	OLD		<br>${pat}, ${max}, ${green}, ${lohan}, ${owen}
+#	OLD		<br>Walkman recording struggles to deal with the enormous sound of the
+#	OLD		short-lived quintet. Includes <i>I'm Waiting For My</i> Man with Pat on bass. 
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$20	JV_SEATTLE@compuserve.com	Thu, 30 Oct 1997 02:51:46 -0500
+#	OLD	#	$25	jnicpon@juno.com	Thu, 06 Nov 1997 09:56:25 EST
+#	OLD	#	$30	monkeeman@email.msn.com	Wed, 19 Nov 1997 18:21:09 -0500
+#	OLD	#	$35	Gonzales.Edward@mayo.edu	Wed, 19 Nov 1997 16:51:58
+#	OLD	#	$40	monkeeman@email.msn.com	Thu, 20 Nov 1997 18:08:31 -0500
+#	OLD	#	$45	Gonzales.Edward@mayo.edu	Fri, 21 Nov 1997 17:00:52
+#	OLD	#	$55	monkeeman@email.msn.com	Mon, 1 Dec 1997 18:43:48 -0500
+#	OLD		<td valign=top>T005</td>
+#	OLD		<td valign=top>$55</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		monkeeman @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1986/Dec2.html"><b>Szene Wien, Vienna : 2Dec86</b></a>
+#	OLD		<br>Sound Quality: 8 Performance: 7
+#	OLD		<br>${pat}, ${green}, ${lohan}, ${owen}
+#	OLD		<br>Two nights after Max's mid-tour departure, so lots of sax!
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$20	dburns2@calstatela.edu	Oct 30, 1997 19:55:19
+#	OLD	#	$25	jnicpon@juno.com	Thu, 06 Nov 1997 09:56:25 EST
+#	OLD	#	$30	Jim.Davies@comlab.ox.ac.uk	Fri, 07 Nov 1997 07:43:34 +0000
+#	OLD	#	$35	monkeeman@email.msn.com	Wed, 19 Nov 1997 18:27:05 -0500
+#	OLD	#	$40	Jim.Davies@comlab.ox.ac.uk	Mon, 01 Dec 1997 08:44:20 +0000
+#	OLD		<td valign=top>T006</td>
+#	OLD		<td valign=top>$40</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		Jim.Davies @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1987/Mar20.html"><b>Front Door To Babylon, London : 20Mar87</b></a>
+#	OLD		<br>Sound Quality: 7 Performance: 7
+#	OLD		<br>${pat}, ${green}
+#	OLD		<br>Short but ferociously intense duo set, featuring strong
+#	OLD		language and audience particpation.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$20	dburns2@calstatela.edu	Oct 30, 1997 19:56:31
+#	OLD	#	$25	speedbump@reuben.org	Tue, 04 Nov 1997 09:43:51 -0400
+#	OLD		<td valign=top>T007</td>
+#	OLD		<td valign=top>$25</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		speedbump @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1989/Apr6.html"><b>Le Troupeau, Paris : 6Apr89</b></a>
+#	OLD		<br>Sound Quality: 6 Performance: 6
+#	OLD		<br>${pat}
+#	OLD		<br>Features ${city} and the frankly unbelievable
+#	OLD		<i>Camelot</i>
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$20	dburns2@calstatela.edu	Oct 30, 1997 19:53:41
+#	OLD	#	$25	jnicpon@juno.com	Thu, 06 Nov 1997 09:56:25 EST
+#	OLD	#	$30	dburns2@calstatela.edu	Nov 13, 1997 20:30:05
+#	OLD		<td valign=top>T008</td>
+#	OLD		<td valign=top>$30</td>
+#	OLD		<td valign=top>${itemHold}<br>
+#	OLD		dburns2 @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1989/Jul7.html"><b>Grosse Freiheit 36, Hamburg : 7Jul89</b></a>
+#	OLD		<br>Sound Quality: 5 Performance: 7
+#	OLD		<br>${pat}
+#	OLD		<br>With a little help from Peter Astor on the encores.
+#	OLD		A very long set, with some odd cover versions.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$20	JV_SEATTLE@compuserve.com	Thu, 30 Oct 1997 02:51:46 -0500
+#	OLD	#	$25	JReick01@teleweb.net	Sun, 02 Nov 1997 11:17:40 -0500
+#	OLD		<td valign=top>T009</td>
+#	OLD		<td valign=top>$25</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		JReick01 @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1989/Jul10.html"><b>Cookie's, Frankfurt : 10Jul89</b></a>
+#	OLD		<br>Sound Quality: 8 (soundboard) Performance: 7
+#	OLD		<br>${pat}
+#	OLD		<br>Similar to the above, but featuring a version of
+#	OLD		${spooky} for no good reason.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	andrew.rak@utoronto.ca	Sun, 2 Nov 1997 11:59:13 -0500
+#	OLD	#	$20	CONUNDRUM@sprintmail.com	Mon, 03 Nov 1997 21:15:31 -0700
+#	OLD	#	$25	andrew.rak@utoronto.ca	Tue, 4 Nov 1997 18:45:21 -0500
+#	OLD	#	$30	Jim.Davies@comlab.ox.ac.uk	Fri, 07 Nov 1997 07:44:44 +0000
+#	OLD	#	$35	andrew.rak@utoronto.ca	Thu, 13 Nov 1997 19:14:59 -0500
+#	OLD		<td valign=top>T010</td>
+#	OLD		<td valign=top>$35</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		andrew.rak @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1989/Nov17.html"><b>Lounge Ax, Chicago : 11Nov89</b></a>
+#	OLD		<br>Sound Quality: 6 Performance: 7
+#	OLD		<br>${pat}, ${paul}, ${larry}, ${richard}
+#	OLD		<br>The Big Planet tour, with some amusing covers and encores.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD	# KCRW # 	<tr>
+#	OLD	# KCRW # #	$15	adbell@iname.com		Thu, 30 Oct 1997 11:02:27 +1100
+#	OLD	# KCRW # #	$50	aschi@bronze.lcs.mit.edu	Wed, 29 Oct 1997 19:03:32 -0500
+#	OLD	# KCRW # #	check for $55 received Tue Nov 18 20:08:47 PST 1997
+#	OLD	# KCRW # 	<td valign=top>T011${patPick}</td>
+#	OLD	# KCRW # 	<td valign=top>$50</td>
+#	OLD	# KCRW # 	<td valign=top>${itemSold}<br>
+#	OLD	# KCRW # 	aschi @
+#	OLD	# KCRW # 	</td>
+#	OLD	# KCRW # 	<td valign=top><a href="${jbc_gigs}/1989/Dec6.html"><b>KCRW, Santa Monica : 6Dec89</b></a>
+#	OLD	# KCRW # 	<br>Sound Quality: 9 Performance: 8
+#	OLD	# KCRW # 	<br>${pat}, ${paul}, ${larry}, ${richard}
+#	OLD	# KCRW # 	<br>Live-to-air radio broadcast, featuring lengthy and embarrassing
+#	OLD	# KCRW # 	interview together with 12 tunes, sympathetically recorded.
+#	OLD	# KCRW # 	</td>
+#	OLD	# KCRW # 	</tr>
+#	OLD		<tr>
+#	OLD	#	$10	seabo002@gold.tc.umn.edu	Mon, 03 Nov 1997 12:36:55 CST
+#	OLD	#	$15	n3xye@velocity.net	Mon, 03 Nov 1997 16:01:28 -0500
+#	OLD	#	$17	seabo002@gold.tc.umn.edu	Tue, 04 Nov 1997 08:52:28 CST
+#	OLD	#	$20	Jim.Davies@comlab.ox.ac.uk	Fri, 07 Nov 1997 07:45:46 +0000
+#	OLD	#	$25	seabo002@gold.tc.umn.edu	Fri, 07 Nov 1997 13:18:21 CST
+#	OLD	#	$30	Jim.Davies@comlab.ox.ac.uk	Mon, 17 Nov 1997 08:24:25 +0000
+#	OLD	#	$35	monkeeman@email.msn.com	Thu, 20 Nov 1997 18:19:17 -0500
+#	OLD	#	$45	jharbour@tanknde.com	Tue, 2 Dec 1997 07:03:27 -0800
+#	OLD	#	$55	monkeeman@msn.com	Wed, 3 Dec 1997 18:43:05 -0500
+#	OLD	#	$65	jharbour@tanknde.com	Sun, 7 Dec 1997 16:23:50 -0800
+#	OLD		<td valign=top>T012</td>
+#	OLD		<td valign=top>$65</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		jharbour @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1989/Dec10.html"><b>The Coach House, San Juan Capistrano : 10Dec89</b></a>
+#	OLD		<br>Sound Quality: 7 Performance: 8
+#	OLD		<br>${pat}, ${paul}, ${larry}, ${richard}
+#	OLD		<br>One of the band's Very Fast Nights.  Includes a version of ${engine}.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	wnerini@drf.com	Wed, 29 Oct 1997 21:24:07 -0700
+#	OLD	#	$25	jay@ossuary.com	Thu, 30 Oct 1997 01:44:52 -0800
+#	OLD	#	$30	wnerini@drf.com	Thu, 30 Oct 1997 15:42:48 -0700
+#	OLD	#	$35	speedbump@reuben.org	Tue, 04 Nov 1997 09:42:33 -0400
+#	OLD	#	$50	wnerini@drf.com	Wed, 05 Nov 1997 13:49:17 -0700
+#	OLD		<td valign=top>T013</td>
+#	OLD		<td valign=top>$50</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		wnerini @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1989/Dec18.html"><b>Tipitina's, New Orleans : 18Dec89</b></a>
+#	OLD		<br>Sound Quality: 7 Performance: 8
+#	OLD		<br>${pat}, ${paul}, ${larry}, ${richard}
+#	OLD		<br>Radio broadcast from the concert, clear but a bit heavy on drums
+#	OLD		and vocals. Includes the <u>definitive</u> ${devil}.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$15	krevis@animal.blarg.net	Fri, 31 Oct 1997 17:43:02 +1600 (PST)
+#	OLD	#	$17	rusty@sirius.com	Sat, 01 Nov 1997 21:20:45 -0800
+#	OLD	#	$18	CONUNDRUM@sprintmail.com	Mon, 03 Nov 1997 12:33:58 -0700
+#	OLD	#	$20	rusty@sirius.com	Mon, 03 Nov 1997 20:12:08 -0800
+#	OLD	#	$26	CONUNDRUM@sprintmail.com	Mon, 03 Nov 1997 21:17:21 -0700
+#	OLD	#	$28	rusty@sirius.com	Sat, 08 Nov 1997 07:46:22 -0800
+#	OLD	#	$30	mrnobody@ripco.com	Wed, 12 Nov 1997 22:04:22 -0600
+#	OLD	#	$31	Rusty@sirius.com	Thu, 13 Nov 1997 21:50:53 -0800
+#	OLD	#	$32	mrnobody@ripco.com	Fri, 14 Nov 1997 19:29:36 -0600
+#	OLD	#	$35	Rusty@sirius.com	Sat, 15 Nov 1997 19:54:51 -0800
+#	OLD		<td valign=top>T014</td>
+#	OLD		<td valign=top>$35</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		Rusty @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1992/Jun5.html"><b>The Roxy, Los Angeles : 5Jun92</b></a>
+#	OLD		<br>Sound Quality: 6 Performance: 8
+#	OLD		<br>${pat}, ${pete}, ${dooj}, ${nick}
+#	OLD		<br>Fondly remembered show, featuring cameos from members of
+#	OLD		Downey Mildew and The Black Watch.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$11	mercy@halcyon.com	Thu, 30 Oct 1997 17:42:57 -0800
+#	OLD	#	$15	billp@sonic.net		Thu, 30 Oct 1997 21:37:30 -0800
+#	OLD	#	$17	seabo002@gold.tc.umn.edu	Mon, 03 Nov 1997 12:37:45 CST
+#	OLD	#	$20	Jim.Davies@comlab.ox.ac.uk	Fri, 07 Nov 1997 07:41:06 +0000
+#	OLD	#	$25	seabo002@gold.tc.umn.edu	Fri, 07 Nov 1997 13:18:51 CST
+#	OLD	#	$30	shasson@mcs.ne	Fri, 04 Jan 80 06:06:07 PS
+#	OLD	#	$32	seabo002@gold.tc.umn.edu	Thu, 13 Nov 1997 21:13:19 CST
+#	OLD	#	$35	jhg@buffnet.net	Tue, 14 Oct 1997 23:26:35 -0500
+#	OLD	#	$36	Jim.Davies@comlab.ox.ac.uk	Mon, 17 Nov 1997 08:24:57 +0000
+#	OLD	#	$40	gsm1224@ix.netcom.com	Wed, 19 Nov 1997 13:27:14 -0600 (CST)
+#	OLD	#	$50	indigo_eyes@hotmail.com	Tue, 25 Nov 1997 18:05:43 GMT
+#	OLD	#	$55	Jim.Davies@comlab.ox.ac.uk	Mon, 01 Dec 1997 08:48:43 +0000
+#	OLD	#	$60	gsm1224@ix.netcom.com	Wed, 03 Dec 1997 19:06:26 -0800
+#	OLD		<td valign=top>T015${patPick}</td>
+#	OLD		<td valign=top>$60</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		gsm1224 @
+#	OLD		</td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1994/Feb17.html"><b>Arapaho, Paris : 17Feb94</b></a>
+#	OLD		<br>Sound Quality: 6 Performance: 8
+#	OLD		<br>${pat}, ${dooj}, ${curt}, ${nick}
+#	OLD		<br>Last night of the European &quot;punk rock&quot; tour of 1994,
+#	OLD		featuring the Van Halen guitar sounds of Judge Curtis.  Caution:
+#	OLD		The Butcher speaks French.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$10	mrnobody@ripco.com	Wed, 12 Nov 1997 22:08:32 -0600
+#	OLD		<td valign=top>T016</td>
+#	OLD		<td valign=top>$10</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		mrnobody @
+#	OLD		<br>
+#	OLD		<a href="${jbc_images}/egdebut.jpg"><img
+#	OLD			src="${jbc_images}/thumb_egdebut.gif"
+#	OLD			border=0 width=84 height=84></a></td>
+#	OLD		<td valign=top><a href="${jbc_gigs}/1994/Jun1.html"><b>The Black Eg Live In London : 1Jun94</b></a>
+#	OLD		<br>The ${damm} brothers make their &quot;first and only debut&quot;
+#	OLD		at London's Subliminal Revolutions club in the summer of 1994.
+#	OLD		3 Incredibly long assults, recorded so dubiously that you can't hear
+#	OLD		${karel}'s wheelchair as it trundles past.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		<tr>
+#	OLD	#	$20	sonia@primenet.com	Wed, 29 Oct 1997 20:51:09 -0500
+#	OLD	#	$45	jay@ossuary.com	Thu, 30 Oct 1997 01:45:39 -0800
+#	OLD		<td valign=top>T017</td>
+#	OLD		<td valign=top>$45</td>
+#	OLD		<td valign=top>${itemSold}<br>
+#	OLD		jay @
+#	OLD		</td>
+#	OLD		<td valign=top><b>The Undertakers : Keep Music Dead</b>
+#	OLD		<br>Formed as the house band of Slurp's Bar, Northampton, the
+#	OLD		Undertakers feature ${pat}, Mark Refoy and Jon Mattocks (${space},
+#	OLD		Spiritualized), and Tim Harris (Everything But The Girl, Doctor Didg).
+#	OLD		They don't rehearse, they only play covers, and a total of about 43
+#	OLD		people have ever seen them play live.  How cool is that?
+#	OLD		Sound quality is exactly the same as on the Velvet Underground's
+#	OLD		&quot;Live 69&quot; album (which is to say, pretty crappy).
+#	OLD		So now you know.
+#	OLD		Covers by: Can, Velvets, Creedence, Kraftwerk, Plastic Ono Band, etc.
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD	
+#	OLD	
+#	OLD	#define	bullet
+#	OLD		<img align=middle
+#	OLD			src="/images/del/resume/bullet.gif" height=6 width=6>
+#	OLD	
+#	OLD	#define	auctionSections
+#	OLD		<nobr><font size=+1><b>Items listed by category.</b></font></nobr>
+#	OLD		<table border=0 cellspacing=0 cellpadding=0>
+#	OLD		<tr><td align=center>
+#	OLD		<img src="${jbc_images}/cassettes.gif" align=top width=47 height=40>
+#	OLD		</td><td>
+#	OLD		<a href="${jbc_root}/auction.html?${encrypt(section=auctionConcerts)}">Concert Tapes</a>
+#	OLD		</td></tr>
+#	OLD		<tr><td align=center>
+#	OLD		&nbsp;
+#	OLD		</td><td>
+#	OLD		<a href="${jbc_root}/auction.html?${encrypt(section=auctionCompilations)}">Compilation Tapes</a>
+#	OLD		</td></tr>
+#	OLD		<tr><td align=center>
+#	OLD		<img src="${jbc_images}/pyramid.gif" width=28 height=25 align=top>
+#	OLD		</td><td>
+#	OLD		<a href="${jbc_root}/auction.html?${encrypt(section=auctionSpacemen)}">Spacemen 3 Articles</a>
+#	OLD		</td></tr>
+#	OLD		<tr><td align=center>
+#	OLD		&nbsp;
+#	OLD		</td><td>
+#	OLD		<a href="${jbc_root}/auction.html?${encrypt(section=auctionShirts)}">Leisure Wear</a>
+#	OLD		<tr><td align=center>
+#	OLD		&nbsp;
+#	OLD		</td><td>
+#	OLD		<a href="${jbc_root}/auction.html?${encrypt(section=auctionPosters)}">Art and Posters</a>
+#	OLD		<tr><td align=center>
+#	OLD		<img src="${jbc_images}/trumpet.gif" width=49 height=23 align=middle>
+#	OLD		</td><td>
+#	OLD		<a href="${jbc_root}/auction.html?${encrypt(section=auctionRecords)}">Vinyl Department</a>
+#	OLD		</td></tr>
+#	OLD		<tr><td align=center colspan=2>
+#	OLD		<br>
+#	OLD		<a href="${jbc_root}/auction.html?${encrypt(section=all)}">See it all in one big list!</a>
+#	OLD		</td></tr>
+#	OLD		</table>
+#	OLD	
+#	OLD	#define	auctionFinePrint
+#	OLD		<font size=+1><b>The rules of the game.</b></font>
+#	OLD		<font size=1 face=palatino>
+#	OLD		<ol>
+#	OLD		<li>
+#	OLD		Bids will <b>only</b> be accepted via email to
+#	OLD		<a href="mailto:${bidAddress}">${bidAddress}</a>
+#	OLD		(the above address has been spam-proofed, remove
+#	OLD		the obviously incorrect part to get it to work!)
+#	OLD		<u>The subject line must contain the item number and the body
+#	OLD		of the message must contain the value of your bid</u> -
+#	OLD		click on the item number to send a bid.
+#	OLD		</li>
+#	OLD		<li>
+#	OLD		A bid becomes the winning bid if it is the highest in value
+#	OLD		and a 1 week period (7 days) has passed since that bid was received.
+#	OLD		Winning bidders will be notified regarding the payment protocol.
+#	OLD		</li>
+#	OLD		<li>
+#	OLD		The minimum bid on an item is $10 US.
+#	OLD		</li>
+#	OLD		<li>
+#	OLD		Bid increments shall be in even dollar amounts -
+#	OLD		no nickel-ing &amp; dime-ing items to death!
+#	OLD		</li>
+#	OLD		<li>
+#	OLD		Winning bids need to be paid within 2 weeks or the item
+#	OLD		goes back on the auction block and the bid is dropped back
+#	OLD		down to the previous high bid and the 1 week clock resets.
+#	OLD		</li>
+#	OLD		<li>
+#	OLD		Once payment has been received, items will be shipped from the
+#	OLD		US within 2 weeks.  There is a flat $5 US shipping charge per item.
+#	OLD		</li>
+#	OLD		<li>
+#	OLD		The right is reserved to discontinue the auction at any time.
+#	OLD		</li>
+#	OLD		<li>
+#	OLD		${pat} himself has sanctioned this event.  Duh!
+#	OLD		</li>
+#	OLD		</ol>
+#	OLD		</font>
+#	OLD	
+#	OLD	#define	auction.html
+#	OLD		${mkHeader(title=Auction)}
+#	OLD	
+#	OLD		<table border=0 cellspacing=0 cellpadding=6 width=100% bgcolor=#ffffff>
+#	OLD		<tr><td bgcolor=#dadada align=left>${tag_beg}The Jazz
+#	OLD			Butcher's Virtual Lawn Sale${tag_end}</td></tr>
+#	OLD		</table>
+#	OLD		<table border=0 cellpadding=20 cellspacing=0>
+#	OLD		<tr><td valign=top>
+#	OLD		<font size=+1><b>What's going on here?</b></font>
+#	OLD		<p>
+#	OLD		&nbsp;&nbsp;&nbsp;&nbsp;
+#	OLD		At one time,
+#	OLD		the Butcher had some memorabilia sitting around his home
+#	OLD		which he was sick of tripping over.
+#	OLD		So, we decided to have an auction.
+#	OLD		<p>
+#	OLD		&nbsp;&nbsp;&nbsp;&nbsp;
+#	OLD		These were unique pieces.  Concert tapes were signed.
+#	OLD		Posters and shirts were the last of their kind..
+#	OLD		<p>
+#	OLD		&nbsp;&nbsp;&nbsp;&nbsp;
+#	OLD		But that was then and the auction is now over.
+#	OLD		What remains is simply an accounting of the items and their final bids.
+#	OLD		<p>
+#	OLD		&nbsp;&nbsp;&nbsp;&nbsp;
+#	OLD		Basically, you blew it by not arriving sooner.
+#	OLD		<br>For the record, there were a total of 299 bids over a period
+#	OLD		of one and a half months in late 1997.  The auction ended on
+#	OLD		Tue Dec 23 00:13:07 PST 1997
+#	OLD		</td>
+#	OLD		<td valign=top width=50%>
+#	OLD		${auctionFinePrint}
+#	OLD		<br>
+#	OLD		<br>
+#	OLD		<div align=right>
+#	OLD		<font size=-1 face=palatino color=#3333ff>
+#	OLD		<i>
+#	OLD		&quot;Where the hell else will you get your hands on this stuff?&quot;
+#	OLD		</i>
+#	OLD		</font>
+#	OLD		</div>
+#	OLD		</td>
+#	OLD		</tr>
+#	OLD		</table>
+#	OLD		<p>
+#	OLD		<table border=0 cellspacing=0 cellpadding=6 width=100% bgcolor=#ffffff>
+#	OLD		${auctionCompilations}
+#	OLD		${auctionConcerts}
+#	OLD		${auctionShirts}
+#	OLD		${auctionPosters}
+#	OLD		${auctionSpacemen}
+#	OLD		${auctionRecords}
+#	OLD		</table>
+#	OLD		${jbc_footer}

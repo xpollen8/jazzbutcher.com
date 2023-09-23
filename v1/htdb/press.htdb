@@ -33,7 +33,6 @@
 #live	endif
 #live	endif
 
-
 ## images=URL;;credit;;credit_url;;credit_date;;caption$$....
 #define	parseImages(prefix, field)
 #live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
@@ -15297,12 +15296,12 @@ Special thanks to Pat Fish
 	<div class="iview_q"> I told Jim from the Jasmine Minks that I thought the two of you should from some kind of side project supergroup--ever thought about something along these lines?
 	</div>
 
-	<div class="iview_a"> I’m always up for collaborations with agreeable people. Jim does live quite a long way away from me, though; in another country, in fact. It will be good to see his face when we play together in July.
+	<a name="undertakers"><div id="undertakers" class="iview_a"> I’m always up for collaborations with agreeable people. Jim does live quite a long way away from me, though; in another country, in fact. It will be good to see his face when we play together in July.
 	<p />
 	In 1995 a friend with a bar made me form a supergroup to keep him entertained on a slow Wednesday night. We had me, Mark Refoy (Guitarist: Spacemen 3, Spiritualised, Slipstream, Pet Shop Boys); Tim Harries (Bassist: Eno, Steeleye Span, David Holmes, Katie Melua!) and Jon Mattock (Drummer: Spacemen 3, Spiritualised. Slipstream, Perfect Disaster, The Breeders, Massive Attack). The set was all covers. I remember we did the Velvets’ “Foggy Notion,” Can’s “Mother Sky,” some Plastic Ono Band stuff, “Suzie Q,” “Roadrunner” and a few others. We called ourselves The Undertakers. We only ever did it twice. In a sort of KLF moment, I sold the only cassette of the show for £80.
 	<p />
 	My other band, Wilson, was described by the local radio station as a “Northampton supergroup.” We laughed long and hard. We are, however, a super group, even if I do say it myself.
-	</div>
+	</div></a>
 
 	<div class="iview_q"> "Racheland" is emotionally devastating and contains some of your most frank lyrical confessions ("The man next door is having a nervous breakdown/Sounds like it's me in there"), while the moment in "Angels" when you sing "I wanna hold you in my arms" is true aural longing. Sorry for the preamble, but I'm curious to know if writing about a love gone wrong is something you find therapeutic.
 	</div>

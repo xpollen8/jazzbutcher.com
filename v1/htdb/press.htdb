@@ -446,6 +446,29 @@ ${d}
 		added=2023-09-20)}
 
 	${addPress(type=interview,
+		url=${jbc_press}/20210905_press_funhouse.html,
+		media=/images/20210905/20210905_pat_interview.docx;;Extended text document,
+		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20210905_interview_PaulMcGuire_TheFunhouse88.mp3,
+		publication=The Funhouse #88,
+		title=Pat Fish,
+		headline=Audio interview,
+		credit=Paul McGuire,
+		dt=2021-09-05,
+		added=2023-09-23)}
+
+	${addPress(type=interview,
+		url=${jbc_press}/201812_press_bigstir5.html,
+		thumb=/images/201812/201812_press_bigstir5;;David Whittemore,
+		images=/images/201812/201812_press_bigstir5_inside1$$/images/201812/201812_press_bigstir5_inside2,
+		publication=Big Stir Magazine,
+		title=Steve Wilson talks to PAT FISH,
+		location=Burbank\, CA\, USA,
+		credit=Steve Wilson,
+		todo=OCR,
+		dt=2018-12,
+		added=2023-09-23)}
+
+	${addPress(type=interview,
 		url=${jbc_press}/19900411_alterock.html,
 		thumb=/images/19900411/19900411_alterock;;David Whittemore,
 		publication=Alterock,
@@ -715,6 +738,17 @@ ${d}
 		added=2020-04-22)}
 
 	${addPress(type=album, album=highest,
+		url=${jbc_press}/202201_press_uncut.html,
+		thumb=/images//202201/202201_press_uncut,
+		title=The Jazz Butcher,
+		headline=The Highest in the Land,
+		todo=OCR,
+		publication=Uncut Magazine,
+		credit=Jim Wirth,
+		dt=2022-01,
+		added=2023-09-23)}
+
+	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220215_press_popnews.html,
 		title=Jazz Butcher,
 		headline=The Highest in the Land,
@@ -804,6 +838,16 @@ ${d}
 		credit=Jim Ruiz,
 		added=2017-10-13,
 		dt=2011-03-11 11:07:00)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/202201_press_stereoembers.html,
+		title=Stereo Embers’ TRACK OF THE DAY,
+		headline=The Jazz Butcher’s Time,
+		publication=Stereo Embers,
+		source=https://stereoembersmagazine.com/stereo-embers-track-of-the-day-the-jazz-butchers-time/,
+		credit=Alex Green,
+		added=2023-09-23,
+		dt=2022-01)}
 
 	${addPress(type=interview, person=max_eider,
 		url=${jbc_press}/20081120_stereoembers_max_eider.html,
@@ -1065,6 +1109,17 @@ ${d}
 		credit=Glenn Griffith,
 		added=2023-09-12,
 		dt=2023-02-02)}
+
+	${addPress(type=album, album=fire_violent,
+		url=${jbc_press}/20180316_press_popmatters.html,
+		title=THE JAZZ BUTCHER’S ‘THE VIOLENT YEARS’,
+		headline=COVERS ONE OF THE BEST PERIODS IN BRITISH POP,
+		subhead=The career retrospective of the veritable Pat Fish\, aka the Jazz Butcher\, continues with four (more) albums of crazy/beautiful indie pop. Not your typical Creation Records fare.,
+		publication=Pop Matters,
+		source=https://www.popmatters.com/jazz-butcher-the-violent-years-2544551500.html,
+		credit=John Bergstrom,
+		added=2023-09-23,
+		dt=2018-03-16)}
 
 	${addPress(type=album, album=fire_violent,
 		url=${jbc_press}/20180308_press_apessimistisneverdisappointed_violent.html,
@@ -1983,14 +2038,25 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=USA,
 		dt=1997-05)}
 
+	${addPress(type=retrospective,
+		url=${jbc_press}/20121121_press_psychedelicbabymag.html,
+		credit=Zack Kopp,
+		publication=It's Psychedelic Baby Magazine,
+		title=The Jazz Butcher is Dead!,
+		headline=Long Live the Jazz Butxher!,
+		source=https://www.psychedelicbabymag.com/2021/11/the-jazz-butcher-is-dead-long-live-the-jazz-butxher-by-zack-kopp.html,
+		dt=2021-11-21,
+		added=2023-09-23,
+		)}
+
 	${addPress(type=interview,
 		url=${jbc_press}/20200707_psychedelicbabymag.html,
-		credit=Bill Kopp,
+		credit=Zack Kopp,
 		location=USA,
 		publication=It's Psychedelic Baby Magazine,
 		title=Pretty Tunes With Sour\, Disassociated Lyrics,
 		headline=A conversation with the Jazz Butcher,
-		sourcettps://www.psychedelicbabymag.com/2020/07/pretty-tunes-with-sour-disassociated-lyrics-a-conversation-with-the-jazz-butcher-by-zack-kopp.html,
+		source=https://www.psychedelicbabymag.com/2020/07/pretty-tunes-with-sour-disassociated-lyrics-a-conversation-with-the-jazz-butcher-by-zack-kopp.html,
 		dt=2020-07-07,
 		added=2021-11-22,
 		)}
@@ -12221,8 +12287,6 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 #live	if (getval(page) =  20200707_psychedelicbabymag.html)
 	${extractPress(
 		body=${literalizeCommas(
-
-Pretty Tunes With Sour, Disassociated Lyrics: A conversation with the Jazz Butcher by Zack Kopp
 Gentleman Adventurer Pat Fish (a.k.a. the Jazz Butcher) founded the group by that name (also known as The Jazz Butcher Conspiracy and The Jazz Butcher And His Sikkorskis From Hell) with Max Eiderin in 1982. The band’s debut in Bath of Bacon was released by Glass Records in 1983. A second album A Scandal in Bohemia, also on Glass, featured guest appearances from David J and Kevin Haskins of Bauhaus, old mates of Pat’s. After four albums, and two singles collections for Glass, Fish signed to Creation Records in 1988, releasing eight albums on the label, culminating in 1995’s Illuminate. This was followed by Rotten Soul (Vinyl Japan, 2000) and 2012’s masterful volume, Last of the Gentleman Adventurers, featuring greats like the title track, or Pat’s ode to his cat, “Black Raoul”. Fish recently spoke with Zack Kopp regarding the scope of his career so far, and its likely direction from here.
 	<div class="iview_q">
 First let me say I’ve been a fan since Bloody Nonsense came to my attention as a teenager in 1986. “Caroline Wheeler’s Birthday Present”, in particular, made a huge impression. An album called Big Questions ended up becoming my favorite, and your latest, Last of the Gentleman Adventurers was a real work of art and greatly appreciated by this listener. I don’t know how it did in any charts, but I hope you made millions or broke even.
@@ -17570,7 +17634,177 @@ Mais c’est sans doute sur les pures ballades que le Jazz Butcher brille le plu
 	${jbc_footer}
 #live	endif
 
+#define	201812_press_bigstir5.html
+#live	if (getval(page) = 201812_press_bigstir5.html)
+	${extractPress(
+		body=${literalizeCommas(
+		)}
+	)}
+	${jbc_footer}
+#live	endif
 
+#define	20180316_press_popmatters.html
+#live	if (getval(page) = 20180316_press_popmatters.html)
+	${extractPress(
+		body=${literalizeCommas(
+Creation Records is rightly recognized as one of the prime movers of British independent music. In 1988, though, the label was just starting to hit its stride. That year, it released the debut albums from the House of Love and My Bloody Valentine, two progenitors of the soon-to-be-trendy UK shoegaze scene. It also issued
+Barbed Wire Kisses, a compilation from noise pop groundbreakers the Jesus and Mary Chain, as well as albums of fey indie pop from Felt and the Pastels. This handful of albums pretty much established the aesthetic that would make Creation famous, at least until Oasis came along.
+<p />
+There was an outlier, however. Creation has just signed Pat Fish, the creator and sole remaining member of the British indie group the Jazz Butcher. The Butcher had already released four albums of alternately manic and gorgeous indie music.
+Fishcoteque, their fifth, was their first for Creation. It, too, came out in 1988. It incorporated many of the sounds that could be heard on those other ’88 Creation records. Strangely, though, it had little in common with them. It was outward-looking as much as inward; it was not afraid of humor, wit, or self-deprecation; and it was art masquerading as pop rather than the other way around.
+<p />
+Fishcoteque is one of four Jazz Butcher albums collected on The Violent Years, which also includes Big Planet Scarey Planet, Cult of the Basement, and Condition Blue. The albums were released once-per-year between 1988 and 1991, all on Creation. The Violent Years is the sequel to The Wasted Years (2017), which compiled the Butcher’s first four albums. The Violent Years also represents the heart of what the Jazz Butcher was all about, throwing off most of the throwaway silliness that marred parts of Fish’s early work and getting right down to focusing on what he did best, which is make something out of everything. All of it is worthwhile, and much of it is very, very good. In fact, there isn’t a better run of four albums in the entire history of British indie music.
+<p />
+The Violent Years is an apt title. Fish devours pop culture, pop music, and the human condition with a ferocity and zest that is relentless and sometimes ruthless. The allusions and references come fast. Lionel Richie, Thomas Pynchon, “Dueling Banjos”, science fiction writer Harlan Ellison, Ray Davies, and Madonna’s “You can dance” invocation from “Into the Groove” — all these and more make appearances, cycled through Fish’s psyche and made to work in service of his wit and songwriting skill. The name-dropping isn’t novel, though, in part because much of it is couched in meaningful social commentary, and the rest is couched in lyrics that are worth reading.
+<p />
+Also, there is a funk/rap song about chicken. There is a country-western number about flying around in a Zeppelin, “Over Mexico, where tequila’s not expensive, and the weapons are extensive.” There is a Bo Diddley stomper about an ongoing infatuation with Shirley MacLaine (“This is the last thing that I thought could ever happen”). Original guitarist Max Eider had left, but a stable of talented players is more than capable, even approaching metal-like intensity on apocalyptic grinders “Line of Death” and, erm, “Do the Bubonic Plague”. Furthermore, Fish employs sampled sounds and bits of dialogue for additional color and, often, disorientation.
+<p />
+This barely-controlled chaos isn’t even half the story with
+The Violent Years, though. Within the compilation are at least a half-dozen tracks that could’ve/should’ve been enduring indie pop classics. Why, Cult of the Basement alone boasts the unbeatable one-two punch of the whirlwind powerpop “She’s on Drugs” and the shimmering, heartsick “Pineapple Tuesday”. Not only do such songs temper the Butcher’s inherent near-madness. They also feature some of the most delectable guitar jangling this side of the Smiths. Furthermore, there is what would be Fish’s “secret weapon” if it weren’t in plain earshot. The man can write a devastating, devastatingly beautiful ballad. With judicious programming, The Violent Years is an awesome dream pop album. From the gorgeous “The Good Ones” to the equally gorgeous “Sister Death”, from the plaintive “Racheland” to the wistful “Susie”, these are dead-serious, sincere meditations on tragic, bygone relationships, which seem to be the only kind Fish has ever had.
+<p />
+Even with Fish as the only constant, the playing on
+The Violent Years is of a piece and consistently top-notch, with appearances from then-and-future members of Spacemen 3, the Blue Aeroplanes, Suede, and others. The production has dated fairly well but can not completely escape the tinny confines of the era. Perhaps in an attempt to remedy this, the remastering overplays its hand with reverb and volume, so the hi-hats tend to sound like churning water. Too bad, but not fatal. In true Creation fashion, these albums have long been out of print, so it is great to have them collected and bound and with liner notes from Pat Fish himself, no less.
+<p />
+Certainly, there was nowhere else in the post-synthpop, pre-Britpop morass where you could hear the Velvet Underground, the Clash, Television, Talking Heads and Nick Lowe all coming together in the space of nine or ten songs. In terms of combining melodic gift with intellectual heft, only the Go-Betweens might have been considered Fish’s peers. But even they had two songwriters. There has never been, nor will there ever be, one like the Butcher.
+The Violent Years is essential. And would you believe the best was yet to come?
+<p />
+RATING 9
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+
+#define	20121121_press_psychedelicbabymag.html
+#live	if (getval(page) = 20121121_press_psychedelicbabymag.html)
+	${extractPress(
+		body=${literalizeCommas(
+One night about a month ago, Pat Fish (born Patrick Huntrods on 20 December, 1957), and also known as the Jazz Butcher, was posting a video apologizing for cancelling an upcoming Fishy Mansions show from his living room, saying every time he fell asleep the night before, it had felt like he was about to choke to death. He made a point of describing the horrible feeling that was, if you can imagine it, right when you started to drift off, thinking ah yes, good, it’s over, then arrh, right there you start to choke—it’s like nothing else. But sorry, my friends, I’m very sorry, and no, it’s not the Covid, we’ll be back, thanks for all your good wishes, and the next thing I knew, someone was announcing the Butcher had died in his sleep the night before.
+<p />
+<div class="annotation">
+“Livin forever don’t look so clever to me.” –Pat Fish
+</div>
+<p />
+Despite or more likely because of his lack of processing as popular currency, Pat seemed to me to have made the most of his experience in this world with a life full of friendship and humor and coolness and good feelings. Hs surprise death with its unconscious introduction inspired me to love everyone again, model myself on the template he’d set.
+<p />
+A member of that Invisible College of highly talented musicians to emerge from the UK punk scene never fully falling prey to any excesses of stateside acclaim, at least partly by choice, Pat made everyone feel like a star. I made his acquaintance on Facebook a few years ago as one whose teen years had been colored and influenced by his sound and style, especially the albums ‘Bloody Nonsense’, ‘Fishcotheque’, ‘Distressed Gentlefolk’, and the recently released ‘Last of the Gentleman Adventurers’. His naturally inclusive manner felt complimentary, and never felt condescending, and I interviewed Pat last year several months into Covid lockdown in the U.S.
+<p />
+When asked about performing online, he made a disparaging remark about untalented geezers popping up everywhere with “PayPalMe!” signs at the slightest opportunity, something he considered beneath himself. His resistance softened by the continuing unavailability of public venues to play in, he began to produce sporadic episodes of Live From Fishy Mansions, playing old favorites and new stuff and improvised riffs for his cult of faithful followers and important friendships (among them David J Haskins of Bauhaus, Tones on Tail, and Love and Rockets, graphic art genius Alan Moore, creator of the Watchmen, and the late Mark E. Smith of the Fall, who wrote a song about him.)
+<p />
+Pat read Lit. Hum. At Merton College, Oxford, graduating in 1980. He lived most of his life in Northampton, UK, working at a used bookstore for a time, developing into one of the last couple of century’s more literate songwriters and cultural critics. He is survived by “Raoul” (his cat), and was a great lover of neurotransmitting in the human computer, if you know what I mean by that, as seen here, and here, and in this brand new song called ‘Time’ released one week after his death, which might make you cry.
+<p />
+Musically speaking, the sounds produced by the Pat as the Jazz Butcher, with the Jazz Butcher Conspiracy, Sikorskis From Hell, or any of the other acts he helmed, also featuring talents like Maximillian Eider, ranges from punk to new wave to sounds indescribably brilliantine and unbeatable and cooler-than-most, as here, or here, or here. Some tracks are more to my liking than others, and I can’t think of a single bad album he ever released.
+<p />
+The brand new 4 CD collection, ‘Dr. Cholmondeley Repents: A-sides, B-Sides and Seasides’, will be released on December 10th, 2021. Treat yourselves. Thanks, Pat.
+<p />
+From Wikipedia: According to a post on Fish’s official Facebook page on 6 October 2021, he “died suddenly but peacefully yesterday evening.” On 3 October, Fish was scheduled to perform a web concert, however at show time, Fish appeared live to inform his audience he was not feeling well and would be re-scheduling the performance for the following week. By means of explanation for his ill health, he offered that he had been suffering from sleep apnea. It was later reported that Fish had died of a heart attack.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	202201_press_uncut.html
+#live	if (getval(page) = 202201_press_uncut.html)
+	${extractPress(
+		body=${literalizeCommas(
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	202201_press_stereoembers.html
+#live	if (getval(page) = 202201_press_stereoembers.html)
+	${extractPress(
+		body=${literalizeCommas(
+Arguably one of the finest concept albums ever made, Frank Sinatra’s September Of My Years is a poignant and heartbreaking meditation on getting older.
+<p />
+It’s Sinatra’s own Portrait Of The Artist As A Young Man, as the occasion for this record—Sinatra’s imminent fiftieth birthday—was soon to turn the artist himself into a man that was no longer young. The album is a melancholic and windswept look back at the everclear forever days of careless youth, where one lives unconcerned about time, space and eternity. Filled with equal parts triumph and regret, September Of My Years is bittersweet and woebegone, sure, but it also finds Sinatra pretty uneasy about the notion of growing old.
+<p />
+Putting it simply, he wasn’t into it at all.
+<p />
+Leonard Cohen was four years older than the September-era Sinatra when he wrote “Tower Of Song” and he was far more candid than the Chairman when it came to the changes that were happening both inside and outside of his body:
+<p />
+<div class="annotation">
+Well, my friends are gone and my hair is grey
+I ache in the places where I used to play
+And I’m crazy for love but I’m not coming on
+I’m just paying my rent every day in the Tower of Song
+</div>
+<p />
+In his composition, Cohen was keenly aware that things were not as they used to be and he was settling into middle age with both resignation and acceptance. The ladies’ man still had familiar carnal urges, but little energy for all it entailed. It was a way of life whose death he predicted eleven years earlier on an album coincidentally titled Death Of A Ladies’ Man.
+<p />
+The Jazz Butcher’s new single “Time” has all the weariness and self-awareness of a Septembering Sinatra and a towering Cohen.
+<p />
+Lapping Cohen’s notion that old age was imminent, The Jazz Butcher (the beloved Pat Fish) at sixty-three seemed to feel that what was coming was far more serious than just the uncomfortable press of time. Long past mourning the ubiquity of sensual pleasure, he was aware of something much more acute: human frailty. The ills of the body—its weaknesses and its porous boundaries seemed to be hanging heavy over the Butcher, having beaten cancer a few years earlier.
+<p />
+Unfairly, “Time” has ended up being a posthumous single. That the lovely and charming Fish died before his band’s new album The Highest In The Land is slated to hit shelves in February, strikes deep as one of the crueler plot-twists the universe has delivered lately. Fish intended the record to be his valedictory bow but it seems barbarous to actually not have him here to take that bow in real life.
+<p />
+But here we are and we’re lucky as hell to get one more album from the King of Northampton and heartbreaking as it is to not be able to raise a glass in front of the man himself, a metaphorical glass in this case will have to do.
+<p />
+“Time” is a lyrical suckerpunch given Fish’s recent demise and even a casual attempt at reverse engineering will reveal the lyrics to be decidedly prophetic.
+<p />
+In our last conversation Fish seemed comfortably settled about not being the indie rock gunslinger of yesteryear and instead he came across like a distinguished elder statesman—professorial in the most post-punk of ways: erudite, hilarious, reflective, philosophical and a little bit sad. The sadness was hard to pinpoint, but it hovered over our chat like an uninvited guest he’d grown accustomed to sharing space with.
+<p />
+While Cohen tells us in “Tower of Song” that he hears Hank Williams “…coughing all night long/100 floors above me/In the Tower of Song,” Fish seems to suggest that’s 99 floors higher than how he hears it. Over a syncopated beat he sings:
+<p />
+<div class="annotation">
+My hair’s all wrong. My time ain’t long.<br />
+Fishy go to heaven, get along, get along.
+</div>
+<p />
+Fish’s description of himself will likely send you to a dictionary (“Luminous. Leguminous. Salubrious. Lugubrious.”), but definitions aside, this was a self-portrait fashioned with a sword. It’s a man taking stock and poking fun and wondering what in the devil the appeal could ever have been about living a quiet life.
+<p />
+The thing about being young is that time seems limitless and endless. But as you get older, you feel the exact opposite. And all that limitlessness and endlessness you realize was a youthful illusion and you’ve been sand in a tipped over hourglass all along.
+<p />
+Unapologetically, Fish seems to realize his excesses might very well have hastened the sand’s journey:
+<p />
+<div class="annotation">
+I’ve overdone the underside and now I am undone.
+There’s no one here to see, though, cos I don’t see anyone.<br />
+And if I hadn’t told you that, you never would have known,<br />
+Unless I told you secretly when we were all alone.<br />
+Things are running slow. Things are running low.<br />
+You can have one more but then we gotta go.<br />
+One more before the bottle. One more before the mast.<br />
+One more shot for Davy Jones, better make it fast.
+</div>
+<p />
+When I first read the lyrics to “Time” I guessed the song was a ballad, but it’s not. It’s a mid-tempo number with a trip-hop backbeat, an upbeat chorus and Max Eider’s guitar winding through it all with delicacy and finesse.
+<p />
+Were it a ballad it would be positively wrenching, but Fish’s half rap delivery gives “Time” an unexpected buoyancy. It’s a gleeful look at a life lived exactly the way one wanted it to be lived. And so the repercussions of that life, though unpleasant and unpredictable, were, putting it in transactional terms, well worth it.
+<p />
+And probably not that unpredictable at all.
+<p />
+“Time” skips away like an undulating epitaph, but were Fish alive, I wonder how it would land. It might read more like a man tempting fate rather than a man in its grasp.
+<p />
+Hard to say.
+<p />
+What’s easy to say, however, is that “Time” is a killer track; a sly and slithering number that’s got fancier footwork than perhaps fate knows how to deal with. Fish gets that he’s burned himself down to the wick, but he also gets that if he hadn’t, there wouldn’t have been any point in having a wick in the first place.
+<p />
+Charming as ever, funny as hell and deeply sentimental, in that last chat we had, I caught The Butcher on a Saturday evening in Northampton and we talked well into the night. His puckish good looks were still there, but instead of being a Casanova of Cocktail, his floppy gray hair and warm smile brought to mind something more emeritus than his past iteration. With a drink in his hand and a lit cigarette in the other, he took a long drag, narrowed his eyes into a gunfighter’s scowl and there in a flash was a quick glimpse of mischief and danger.
+<p />
+And then it was gone.
+<p />
+Fish is gone now, too, but in death he seems to have achieved something comfortingly celestial. His melodies soar as mightily as ever and the wit and the wisdom of his lyrics serve as a cosmic roadmap which forges a wild and golden path that runs from London to Hamburg to Japan to California and ends on the rainy doorstep of a metaphorical mansion in Northampton.
+<p />
+And those lyrics tell the story of a man who lived one hell of a life. And that life was raucous, feral, wild, untethered and uncompromising and it was filled with ghosts and angels and penguins and elephants and trains and girls who kept goldfish and falling in love and getting lost in France and burning through the bluest of conditions.
+<p />
+We should all be so lucky.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20210905_press_funhouse.html
+#live	if (getval(page) = 20210905_press_funhouse.html)
+	${extractPress(
+		body=${literalizeCommas(
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define data.json
 #define data.json
 #live if (getval(page) = data.json)
 	${definePressItems()}

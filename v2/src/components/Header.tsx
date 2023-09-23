@@ -105,7 +105,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	nightshift: { parent: 'prejbc', title: 'Nightshift', inParentDirectory: true },
 	the_institution: { parent: 'prejbc', title: 'The Institution', inParentDirectory: true },
 	sonic_tonix: { parent: 'prejbc', title: 'Sonic Tonix', inParentDirectory: true },
-	the_tonix: { parent: 'prejbc', title: 'The Tonix', inParentDirectory: true },
+	//the_tonix: { parent: 'prejbc', title: 'The Tonix', inParentDirectory: true },
 
 	admin: { parent: 'jbc', title: "Website Management", hide: false },
 }

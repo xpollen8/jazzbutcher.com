@@ -20,7 +20,7 @@ const projects = [
 		</>},
 	{ uri: '/prejbc/nightshift', text: 'Nightshift' },
 	{ uri: '/prejbc/sonic_tonix', text: 'Sonic Tonix' },
-	{ uri: '/prejbc/the_tonix', text: 'The Tonix' },
+	//{ uri: '/prejbc/the_tonix', text: 'The Tonix' },
 	{ text: 'Wow Federation', aux: 'w/Max',
 		children: <>
 		Max played guitar with Pat Fish in college in bands such as The Institution, Wow Federation and The Tonix.

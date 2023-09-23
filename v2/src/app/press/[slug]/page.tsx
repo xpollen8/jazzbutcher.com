@@ -101,7 +101,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 				return (<>
 					<b >Download:</b>{' '}
 					{media?.filter(([ file, caption ]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>
-						<Link key={key} href={`https://jazzbutcher.com${file}`} className="border">{caption}</Link>
+						<Link key={key} href={`https://jazzbutcher.com${file}`} className="border">{caption || file}</Link>
 					</>)
 					)}
 					<p />

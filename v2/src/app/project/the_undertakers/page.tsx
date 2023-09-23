@@ -63,23 +63,3 @@ const TheUndertakers = () =>
 </>
 
 export default TheUndertakers;
-/* from V1 auction.htdb file
-#   OLD #   $45 jay@ossuary.com Thu, 30 Oct 1997 01:45:39 -0800
-#   OLD     <td valign=top>T017</td>
-#   OLD     <td valign=top>$45</td>
-#   OLD     <td valign=top>${itemSold}<br>
-#   OLD     jay @
-#   OLD     </td>
-#   OLD     <td valign=top><b>The Undertakers : Keep Music Dead</b>
-#   OLD     <br>Formed as the house band of Slurp's Bar, Northampton, the
-#   OLD     Undertakers feature ${pat}, Mark Refoy and Jon Mattocks (${space},
-#   OLD     Spiritualized), and Tim Harris (Everything But The Girl, Doctor Didg).
-#   OLD     They don't rehearse, they only play covers, and a total of about 43
-#   OLD     people have ever seen them play live.  How cool is that?
-#   OLD     Sound quality is exactly the same as on the Velvet Underground's
-#   OLD     &quot;Live 69&quot; album (which is to say, pretty crappy).
-#   OLD     So now you know.
-#   OLD     Covers by: Can, Velvets, Creedence, Kraftwerk, Plastic Ono Band, etc.
-#   OLD     </td>
-#   OLD     </tr>
-*/

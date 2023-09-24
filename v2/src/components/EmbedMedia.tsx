@@ -100,13 +100,12 @@ const	EmbedMixCloud = ({ data = {}, children }: { data: any, children?: React.Re
 	const { mediaurl } = data;
 	const [ channel, item ] = mediaurl?.replace('https://www.mixcloud.com/', '')?.split('/');
 
-	console.log("XX", [ channel, item ]);
 	return <> 
 		<iframe
 			width="100%"
 			height="60"
 			src={`https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2F${channel}%2F${item}%2F`}
-			frameborder="0"
+			frameBorder="no"
 		></iframe>
 		{children}
 	</>

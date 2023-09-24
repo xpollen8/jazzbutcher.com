@@ -76,7 +76,7 @@ const Institution = () =>
 <br />	Format:	
 <br />	Vinyl, 7, 45 RPM, White Label
 <br />	Country:	UK
-<br />	Released:	1979
+<br />	Released:	1979-12
 <br />	Genre:	Rock, Reggae
 <br />	Style:	Post-Punk, Dub
 <br />	

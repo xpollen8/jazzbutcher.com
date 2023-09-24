@@ -9213,7 +9213,7 @@ Break out and find out tonight.
 
 	)},
 		onlist=
-		single_saints .. adventurers
+		single_saints .. adventurers .. va_nh_vol1
 		,credits=${pat};;;;2010
 	)}
 #live	endif
@@ -9242,11 +9242,11 @@ Break out and find out tonight.
 
 	)},
 		onlist=
-		va_nm_vol1 ..
+		va_nh_vol1 ..
 		adventurers
 		,credits=${pat};;;;2006
 		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3,
-		caption=Mercy (${va_nm_vol1} version)
+		caption=Mercy (${va_nh_vol1} version)
 	)}
 #live	endif
 
@@ -11137,9 +11137,9 @@ Break out and find out tonight.
 	<br/>Today with you.
 	)},
 		onlist=
-		va_nm_vol1
+		va_nh_vol1
 		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Wildlife.mp3,
-		caption=Mercy (${va_nm_vol1} version)
+		caption=Mercy (${va_nh_vol1} version)
 	)}
 #live	endif
 

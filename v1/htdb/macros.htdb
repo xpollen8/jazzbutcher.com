@@ -1577,13 +1577,14 @@ font.load().then(function () {
 #define	va_wilson_heyday		${linkSingle(title=VA: Straight Through The Sound Barrier, href=${jbc_albums}/va_wilson_heyday.html)}
 #define	va_spark		${linkSingle(title=VA: Another Spark, href=${jbc_albums}/va_another_spark.html)}
 #define	shock_drugs		${linkSingle(title=She's On Drugs)}
-#define	va_seventeen_2	${linkSingle(title=VA: What A Nice Way To Turn Seventeen #2)}
-#define	va_seventeen_3	${linkSingle(title=VA: What A Nice Way To Turn Seventeen #3)}
+#define	va_abigail	${linkSingle(href=${jbc_albums}/va_abigail.html, title=VA: Abigail's Birthday Party)}
+#define	va_seventeen_2	${linkSingle(href=${jbc_albums}/va_seventeen_2.html, title=VA: What A Nice Way To Turn Seventeen #2)}
+#define	va_seventeen_3	${linkSingle(href=${jbc_albums}/va_seventeen_3.html, title=VA: What A Nice Way To Turn Seventeen #3)}
 #define	bigtime_sampler	${linkSingle(title=Big Bad Thing)}
 #define	bigtime_jungle	${linkSingle(href=${jbc_albums}/bigtime_jungle_smith,html, title=The Human Jungle/Southern Mark Smith)}
 #define	bigtime_angels	${linkSingle(href=${jbc_albums}/bigtime_angels_kitchen,html, title=Angels/Still In The Kitchen)}
-#define	va_nm_vol1		${linkSingle(title=VA: Now That's What I Call Northampton Vol #1)}
-#define	va_andy_2007	${linkSingle(title=VA: Uncle Andy's 2007 Christmas Album)}
+#define	va_nh_vol1		${linkSingle(href=${jbc_albums}/va_call_northampton_vol1.html, title=VA: Now That's What I Call Northampton Vol #1)}
+#define	va_andy_2007	${linkSingle(href=${jbc_albums}/va_uncle_andy_christmas_2007.html, title=VA: Uncle Andy's 2007 Christmas Album)}
 
 #
 #	recorded covers

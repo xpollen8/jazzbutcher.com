@@ -36,13 +36,13 @@ const VaguelyFamiliar = () => {
 		<Header section="vaguely_familiar" />
 			<main>
 			<LetterHeader
-				title="The Vaguely Familiar"
+				title="The Vaguely Familiar (1991)"
 				subhead=<>
 					Demo tracks from the July 1991 {expand('pat')}, {expand('richard')}, and {expand('sumishta')} collaboration
 					</>
 				/>
 			<div className="listItem">
-			<div className="flex flex-wrap justify-center">
+			<div className="flex flex-wrap justify-center gap-3">
 			<Image src="https://jazzbutcher.com/images/199107/199107_VaguelyFamiliar_Master1.jpg" width={500} height={500} alt={'master tape 1'} />
 			<Image src="https://jazzbutcher.com/images/199107/199107_VaguelyFamiliar_Master2.jpg" width={500} height={500} alt={'master tape 2'} />
 			</div>

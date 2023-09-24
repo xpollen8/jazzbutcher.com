@@ -8,7 +8,7 @@ import { pat, ill, curt } from '@/lib/defines';
 
 const TomHall = () => {
 	return (<>
-		<Header section='etc' title='Tom Hall Tributes' />
+		<Header section='tomhall' />
 		<div className="etc">
 			<LetterHeader title="Tom Hall" subhead="(1944-2003)" />
 			<blockquote className="annotation">

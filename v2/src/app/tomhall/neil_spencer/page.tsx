@@ -7,7 +7,7 @@ import { Credit } from '@/components/GenericWeb';
 
 const NeilSpencer = () => {
 	return (<>
-		<Header section='etc' title={ [ 'Tom Hall Tributes;;/tomhall', 'Neil Spencer' ] } />
+		<Header section='etc' title='Neil Spencer' />
 		<div className="etc">
 			<LetterHeader title="Hey Thom" />
 			<blockquote>

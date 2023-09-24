@@ -37,38 +37,58 @@ type BreadCrumb = {
 	hide?: boolean
 }
 
-const sections : { [key: string]: BreadCrumb } = {
+export const sections : { [key: string]: BreadCrumb } = {
 	jbc: { href: '/', title: 'The Jazz Butcher' },
 
 	pat: { parent: 'jbc', title: 'Pat' },
-	media: { parent: 'jbc', title: 'Media', summary: "Listen! Watch! Read!" },
+	media: { parent: 'jbc', title: 'Media' },
+
 	releases: { parent: 'jbc', title: 'Releases', summary: 'The records' },
+	release_reviews: { parent: 'releases', title: 'Album Reviews', inParentDirectory: true },
+
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives' },
+	gig_reviews: { parent: 'gigs', title: 'Published Reviews', inParentDirectory: true },
+	self_reviews: { parent: 'gigs', title: "Pat's Reviews", inParentDirectory: true },
+	fan_reviews: { parent: 'gigs', title: 'Fan Reviews', inParentDirectory: true },
+	posters: { parent: 'gigs', title: 'Posters', summary: 'Gig Ephemera', inParentDirectory: true },
+	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
+
 	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The army of musicians' },
-	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },
 	fiascos: { parent: 'writings', title: 'The Fiascos', summary: 'Top 10 JBC Fiascos' },
 	prejbc: { parent: 'pat', title: 'Pre-JBC', summary: 'Before there was The JBC' },
-	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content' },
+	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content', rootHideChildren: true },
 	help: { parent: 'jbc', title: 'Get Involved!', summary: "Let's do this, together" },
 
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "Early Fan Club issues" },
-	audio: { parent: 'media', title: 'Audio', summary: "Bootlegs and the like" },
-	interviews: { parent: [ 'audio', 'pat' ], title: 'Recorded Interviews', summary: "Radio and online interviews", inParentDirectory: true },
-	live: { parent: 'audio', title: 'Recorded performances', summary: "Non-official audio recordings", inParentDirectory: true },
-	homage: { parent: 'audio', title: 'Musical Tributes', summary: "Songs in praise of The Butcher", inParentDirectory: true },
-	video: { parent: 'media', title: 'Video', summary: "Official and bootleg live videos" },
-	press: { parent: 'media', title: 'Press', summary: "In print (and online)" },
-	print_interviews: { parent: [ 'press', 'pat' ], title: 'Printed Interviews', summary: "Mags, newsprint, and online", inParentDirectory: true },
-	posters: { parent: 'media', title: 'Posters', summary: 'Gig Ephemera' },
+
+	audio: { parent: 'media', title: 'Audio' },
+	official: { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: true },
+	live: { parent: 'audio', title: 'Recorded performances', summary: "Non-official recordings", inParentDirectory: true },
+	audio_interviews: { parent: 'audio', title: 'Recorded Interviews', summary: "Radio and online interviews", inParentDirectory: true },
+
+	video: { parent: 'media', title: 'Video' },
+
+	press: { parent: 'media', title: 'Press', summary: "Press Articles" },
+	print_interviews: { parent: 'press', title: 'Printed Interviews', inParentDirectory: true },
+	gig_reviews: { parent: 'press', title: 'Gig Reviews', inParentDirectory: true },
+	puff_pieces: { parent: 'press', title: 'Puff Pieces', inParentDirectory: true },
+	announcements: { parent: 'press', title: 'Announcements', inParentDirectory: true },
+
 	news: { parent: 'media', title: 'News', summary: "Website announcements" },
 
 	//interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
 
 	project: { parent: 'pat', title: 'Side Projects', summary: "He was a busy butcher" },
 	black_eg: { parent: 'project', title: 'The Black Eg', inParentDirectory: true },
+	eg_press: { parent: 'black_eg', title: 'Press Articles', inParentDirectory: true },
+	eg_releases: { parent: 'black_eg', title: 'Releases', inParentDirectory: true },
 	wilson: { parent: 'project', title: 'Wilson', inParentDirectory: true },
+	wilson_press: { parent: 'wilson', title: 'Press Articles', inParentDirectory: true },
+	wilson_releases: { parent: 'wilson', title: 'Releases', inParentDirectory: true },
 	sumosonic: { parent: 'project', title: 'Sumosonic', inParentDirectory: true },
+	sumosonic_press: { parent: 'sumosonic', title: 'Press Articles', inParentDirectory: true },
+	sumosonic_releases: { parent: 'sumosonic', title: 'Releases', inParentDirectory: true },
 	vaguely_familiar: { parent: 'project', title: 'Vaguely Familiar', summary: '1991', inParentDirectory: true },
 	cambodia: { parent: 'project', title: 'Cambodia', summary: '1991', inParentDirectory: true },
 	the_undertakers: { parent: 'project', title: 'The Undertakers', summary: '1995', inParentDirectory: true },
@@ -83,16 +103,18 @@ const sections : { [key: string]: BreadCrumb } = {
 	mrblagdon: { parent: 'projects', title: 'Mr. Blagdon', inParentDirectory: true },
 	*/
 
-	gallery: { parent: 'pat', title: 'Gallery', summary: "Photography from all eras"  },
+	gallery: { parent: 'media', title: 'Gallery', summary: "Photography from all eras"  },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "COVID-era livestreams" },
-	notebooks: { parent: 'pat', title: 'Notebooks', summary: "Excerpts from his journals" },
+	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals" },
 
+	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },
 	memoriam: { parent: 'pat', title: 'In Memoriam' },
 	tributes: { parent: 'memoriam', title: 'Tributes', summary: "Rememberences and tributes" },
 	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
+	homage: { parent: 'memoriam', title: 'Musical Tributes', summary: "Songs in praise of The Butcher" },
 
-	letters: { parent: 'writings', title: 'Letters From Pat' },
-	tomhall: { parent: 'writings', title: 'Tom Hall Memorial' },
+	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994" },
+	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003" },
 
 	mailinglist: { parent: 'etc', title: 'Mailing List' },
 	tribute: { parent: 'etc', title: 'Fan Tribute Project' },
@@ -165,7 +187,11 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 	const makeMenuOptions = (section: string, depth: number) => {
 		if (depth < 2) {
 			return Object.keys(sections)
-				.filter((href: string) => sections[href]?.parent === section && !sections[href]?.hide)
+				.filter((href: string) => {
+					const parent = sections[href]?.parent;
+					console.log("SEX", { section, href, parent, hideMe: sections[parent]?.rootHideChildren });
+					return !(sections[parent]?.rootHideChildren && depth === 1) && (parent === section && !sections[href]?.hide)
+				})
 				?.map((href: string, key: number) => {
 					const { title, parent, summary, inParentDirectory }: BreadCrumb = sections[href];
 					const useHref = (inParentDirectory) ? `${parent}/${href}` : href;

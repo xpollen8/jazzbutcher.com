@@ -172,7 +172,7 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 					return (
 						<div key={key} className={`navItem ${(depth === 0) ? 'outer' : ''}`}>
 							<Link style={{ width: '100%' }} href={`/${useHref}`}>{title}</Link>
-							{(summary) && <span className="date">{' - '}{summary}</span>}
+							{(summary) && <div style={{ display: 'inline' }} className="date">{' - '}{summary}</div>}
 							{makeMenuOptions(href, depth + 1)}
 						</div>
 					)

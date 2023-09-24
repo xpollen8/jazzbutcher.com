@@ -6823,7 +6823,8 @@ Previously available on the ${fishco} LP/CD.
 	${det_end}
 
 	${tun_beg}
-		${mercy}
+		${all_the_saints}
+		<br />${mercy}
 		<br />${wildlife}
 	${tun_end}
 	${jbc_footer}

@@ -30,12 +30,12 @@ const Cambodia = () => {
 				Research Wind Tunnels, Silverlake, California in August1991 when I was
 				hiding out in L.A. We had just been to see the L.A. Dodgers, who at the time
 				had Darryl Strawberry on their team. Darryl had fled New York after cynical
-				home fans had started chanting "Oh Daaaaaryl..." at him when he was off form
+				home fans had started chanting &quot;Oh Daaaaaryl...&quot; at him when he was off form
 				(most of the time, as it goes). Imagine our delight when the L.A. crowd
 				started doing exactly the same thing! In addition, Darryl had recently
 				become a follower of The Lord, a piety that did not seem to do anything very
-				much for his game. Hence the "put that Bible back!" line.
-				The original version of "Traffic" was credited to "Cambodia", which was also
+				much for his game. Hence the &quot;put that Bible back!&quot; line.
+				The original version of &quot;Traffic&quot; was credited to &quot;Cambodia&quot;, which was also
 				the working name for Sumosonic throughout much of 1996. You can probably
 				guess why we never ended up going public with that name.
 			</blockquote>

@@ -50,11 +50,11 @@ const VaguelyFamiliar = () => {
 			</div>
 			<blockquote className="annotation">
 				The Vaguely Familiar was a July 1991 project, put together at Richard
-				Formby's Woodhouse Studio in Leeds. The line-up was myself, Richard and
+				Formby&apos;s Woodhouse Studio in Leeds. The line-up was myself, Richard and
 				Sumishta Brahm (13 Frightened Girls).
 				<p />
 				Basically, I did the drum programming, bass and large electric guitars (note
-				how I "invented" Slowdive on Pedby's Grace), Richard did the mad ethnic
+				how I &quot;invented&quot; Slowdive on Pedby&apos;s Grace), Richard did the mad ethnic
 				instruments and a bit of bass and guitar, Sumishta sang, played the lap
 				steel guitar and did a bit of electric 12-string. Any glockenspiels are
 				probably down to me.
@@ -62,15 +62,15 @@ const VaguelyFamiliar = () => {
 				Richard and I went on to try and rub the project up into a finished album
 				with a big session at Woodhouse in November 92 (during which Richard also
 				got into glockenspiel action, as I recall), but although we committed a
-				further ten or so backing tracks (including the truly awesome "My Milkfloat"
-				featuring a casio playing "My Desert" to itself under a barrage of early
+				further ten or so backing tracks (including the truly awesome &quot;My Milkfloat&quot;
+				featuring a casio playing &quot;My Desert&quot; to itself under a barrage of early
 				sixties electric milkfloat noises, which Richard insisted sounded just like
 				Jimi Hendrix), we never finished them off. I still have the instrumental
 				roughs at home. Richard and I often talked of finishing it all off, but
 				neither of us likes the phone very much and it never got done.
 				<p />
 				I have spotted bits     
-				and pieces from some of those aborted tracks showing up on Richard's Triumph 2000 LP.
+				and pieces from some of those aborted tracks showing up on Richard&apos;s Triumph 2000 LP.
 				<p />
 				According to my cassette, we recorded five numbers:
 			</blockquote>

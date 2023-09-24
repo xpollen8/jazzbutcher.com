@@ -18,7 +18,7 @@ const Cambodia = () => {
 		<Header section="cambodia" />
 			<main>
 			<LetterHeader
-				title="Cambodia"
+				title="Cambodia (1991)"
 				subhead=<>
 					Demo tracks from the August 1991 {expand('pat')} and {expand('coonce')} collaboration.
 				</>

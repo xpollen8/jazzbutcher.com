@@ -92,7 +92,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
 
 	letters: { parent: 'writings', title: 'Letters From Pat' },
-	tomhall: { parent: 'writings', title: 'Tom Hall Meorial' },
+	tomhall: { parent: 'writings', title: 'Tom Hall Memorial' },
 
 	mailinglist: { parent: 'etc', title: 'Mailing List' },
 	tribute: { parent: 'etc', title: 'Fan Tribute Project' },
@@ -104,7 +104,7 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	nightshift: { parent: 'prejbc', title: 'Nightshift', inParentDirectory: true },
 	the_institution: { parent: 'prejbc', title: 'The Institution', inParentDirectory: true },
-	sonic_tonix: { parent: 'prejbc', title: 'Sonic Tonix', inParentDirectory: true },
+	sonic_tonix: { parent: 'prejbc', title: 'Sonic Tonix', summary: "AKA 'The Tonix'", inParentDirectory: true },
 	//the_tonix: { parent: 'prejbc', title: 'The Tonix', inParentDirectory: true },
 
 	admin: { parent: 'jbc', title: "Website Management", hide: false },

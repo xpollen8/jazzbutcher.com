@@ -476,7 +476,7 @@ export const va_seventeen_3 = linkSingle({ title: "VA: What A Nice Way To Turn S
 export const bigtime_sampler = linkSingle({ title: "Big Bad Thing" });
 export const bigtime_jungle = linkSingle({ href: "/releases/bigtime_jungle_smith,html", title: "The Human Jungle/Southern Mark Smith" });
 export const bigtime_angels = linkSingle({ href: "/releases/bigtime_angels_kitchen,html", title: "Angels/Still In The Kitchen" });
-export const va_nm_vol1 = linkSingle({ title: "VA: Now That's What I Call Northampton Vol #1" });
+export const va_nh_vol1 = linkSingle({ title: "VA: Now That's What I Call Northampton Vol #1" });
 export const va_andy_2007 = linkSingle({ title: "VA: Uncle Andy's 2007 Christmas Album" });
 
 //

@@ -32,14 +32,14 @@ const TheUndertakers = () =>
 			<b>Title:</b> The Undertakers : Keep Music Dead<br />
 			<b>Auction Price:</b> $45<br />
 			<b>Winner:</b> jay@....ary.com<br />
-			<b>Pat's Description:</b>
+			<b>Pat&apos;s Description:</b>
 				<blockquote>
-					Formed as the house band of Slurp's Bar, Northampton, the
+					Formed as the house band of Slurp&apos;s Bar, Northampton, the
 					Undertakers feature {expand('pat')}, Mark Refoy and Jon Mattocks ({expand('space')},
 					Spiritualized), and Tim Harris (Everything But The Girl, Doctor Didg).
-					They don't rehearse, they only play covers, and a total of about 43
+					They don&apos;t rehearse, they only play covers, and a total of about 43
 					people have ever seen them play live.  How cool is that?
-					Sound quality is exactly the same as on the Velvet Underground's
+					Sound quality is exactly the same as on the Velvet Underground&apos;s
 					&quot;Live 69&quot; album (which is to say, pretty crappy).
 					So now you know.
 					Covers by: Can, Velvets, Creedence, Kraftwerk, Plastic Ono Band, etc.
@@ -54,7 +54,7 @@ const TheUndertakers = () =>
 				<p />
 				Some of those tapes, I did tape copies of before sending the orignals onto
 				the auction winners.  I will need to go through my stored pile to see if
-				The Undertakers tape was one of those.  If not.. well, Jay, you're the keeper of something pretty rare.
+				The Undertakers tape was one of those.  If not.. well, Jay, you&apos;re the keeper of something pretty rare.
 			</blockquote>
 			<Attribution g="David Whittemore" d="2023-09-22" />
 		</div>

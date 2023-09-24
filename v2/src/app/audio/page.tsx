@@ -52,7 +52,7 @@ const Audio = () => {
 		<p />
 		In this second episode, Andrew unearths an interview with musician, Pat Fish of The Jazz Butcher.
 		<p />
-		Dating from 2018 and recorded at 'Fishy Mansions' in Northampton... Pat talks about academic life in Oxford, his friendship with Rolo McGinty, The Sonic Tonix, The Jazz Butcher's first album, 'In Bath Of Bacon', life on the road and the recording of 'Cult Of The Basement'.
+		Dating from 2018 and recorded at &apos;Fishy Mansions&apos; in Northampton... Pat talks about academic life in Oxford, his friendship with Rolo McGinty, The Sonic Tonix, The Jazz Butcher&apos;s first album, &apos;In Bath Of Bacon&apos;, life on the road and the recording of &apos;Cult Of The Basement&apos;.
 		</EmbedMedia>
 
 		<EmbedMedia data={{
@@ -61,7 +61,7 @@ const Audio = () => {
 			datetime: "2021-10-10" }}
 		>
 			<p />
-			The Jazz Butcher Conspiracy, over two hours Pat Fish tells The Saint of RETROPOPIC RADIO his life's story....
+			The Jazz Butcher Conspiracy, over two hours Pat Fish tells The Saint of RETROPOPIC RADIO his life&apos;s story....
 
 		</EmbedMedia>
 
@@ -79,7 +79,7 @@ const Audio = () => {
 			datetime: "2022-01-11" }}
 		>
 		<p />
-		In this episode, we walk with Jesus as we discuss one of Spacemen 3's most famous songs. Ian and Mark disect the many recorded versions, and are joined by Pat Fish of The Jazz Butcher for a chat about a couple of versions where Pat supplied vocals. Plus contributions from a few other fans for which this is a favourite song.
+		In this episode, we walk with Jesus as we discuss one of Spacemen 3&apos;s most famous songs. Ian and Mark disect the many recorded versions, and are joined by Pat Fish of The Jazz Butcher for a chat about a couple of versions where Pat supplied vocals. Plus contributions from a few other fans for which this is a favourite song.
 		</EmbedMedia>
 		<EmbedMedia data={{
 			mediaurl: "https://soundcloud.com/spacemenpod/spacemen-pod-episode-8",
@@ -87,7 +87,7 @@ const Audio = () => {
 			datetime: "2021-12-30" }}
 		>
 		<p />
-		We take a look back at Spacemen 3's performance at Watermans Arts Centre from 19 August 1988, the gig everyone now calls Dreamweapon. With contributions from Spaceman for the night Steve Evans, bassist Will Carruthers, taper Andy Jackson, Vinita Joshi of Rocket Girl Records, Steve Mitchell of Fierce Recordings, attendees Col Todd and Paul Thorpe from the band The Loveblobs, latter-day Spaceman Mark Refoy, and the late, great, Pat Fish.
+		We take a look back at Spacemen 3&apos;s performance at Watermans Arts Centre from 19 August 1988, the gig everyone now calls Dreamweapon. With contributions from Spaceman for the night Steve Evans, bassist Will Carruthers, taper Andy Jackson, Vinita Joshi of Rocket Girl Records, Steve Mitchell of Fierce Recordings, attendees Col Todd and Paul Thorpe from the band The Loveblobs, latter-day Spaceman Mark Refoy, and the late, great, Pat Fish.
 		</EmbedMedia>
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading) && <>

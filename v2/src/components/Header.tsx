@@ -71,6 +71,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	sumosonic: { parent: 'project', title: 'Sumosonic', inParentDirectory: true },
 	drones_club: { parent: 'project', title: 'Drones Club', inParentDirectory: true },
 	stranger_tractors: { parent: 'project', title: 'Stranger Tractors', inParentDirectory: true },
+	alan_moore: { parent: 'project', title: 'Alan Moore (Trampling Tokyo)', inParentDirectory: true },
 	cambodia: { parent: 'project', title: 'Cambodia', inParentDirectory: true },
 	vaguely_familiar: { parent: 'project', title: 'Vaguely Familiar', inParentDirectory: true },
 	trampling_tokyo: { parent: 'project', title: 'With Alan Moore', inParentDirectory: true },

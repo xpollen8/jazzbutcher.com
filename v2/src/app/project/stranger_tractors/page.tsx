@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EmbedMedia from '@/components/EmbedMedia';
@@ -12,7 +13,10 @@ const StrangerTractors = () =>
 <>
 	<Header section="stranger_tractors" />
 	<main>
-		{tracks?.map((mediaurl: string, key: number) => <EmbedMedia key={key} data={{ mediaurl }} />)}
+		<center>
+		<Image src="https://jazzbutcher.com/images/stranger_tractors.jpg" width={250} height={250} alt="album cover" />
+		</center>
+		{tracks?.map((mediaurl: string, key: number) => <EmbedMedia className="listItem" key={key} data={{ mediaurl }} />)}
 	</main>
 	<Footer />
 </>

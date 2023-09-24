@@ -189,7 +189,6 @@ const Section = (props: { section?: string, title?: any, children?: React.ReactN
 			return Object.keys(sections)
 				.filter((href: string) => {
 					const parent = sections[href]?.parent;
-					console.log("SEX", { section, href, parent, hideMe: sections[parent]?.rootHideChildren });
 					return !(sections[parent]?.rootHideChildren && depth === 1) && (parent === section && !sections[href]?.hide)
 				})
 				?.map((href: string, key: number) => {

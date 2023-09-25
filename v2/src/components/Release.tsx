@@ -78,7 +78,7 @@ const ReleaseSongList = ({ songs }: { songs: any[] }) => {
 }
 
 const ReleaseCredits = ({ credits }: { credits: {[key: string]: any} }) => {
-	const creds = Object.keys(credits); 
+	const creds = credits && Object.keys(credits); 
 	if (!creds?.length) return;
 	return (<>
 		<Tag>Credits</Tag>

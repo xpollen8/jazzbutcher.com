@@ -70,13 +70,13 @@
 #live	endif
 #live	endif
 
-#define	embedVideo(project=jbc, collection, url, anno=, name, comment, credit, images)
+#define	embedVideo(project=jbc, collection, url, anno=, name, comment, credit, images, datetime)
 #live	if (defined(update))
 #live		if (defined(anno))
-#live			if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${${anno}})})})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
+#live			if (sql(insert IGNORE into media set project="${project}", datetime="${datetime}",  type="video", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${${anno}})})})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
 #live			endif
 #live		else
-#live			if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${comment})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
+#live			if (sql(insert IGNORE into media set project="${project}", datetime="${datetime}", type="video", comment="${literalizeQuotes(${comment})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
 #live			endif
 #live		endif
 #live	endif

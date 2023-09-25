@@ -3436,6 +3436,8 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 
 #define	albums[90]->type	various
 #define	albums[90]->lookup	va_nh_vol1
+#define	albums[90]->thumb	/images/releases/va_nh_vol1_front
+#define	albums[90]->images	/images/releases/va_nh_vol1_back
 #define	albums[90]->href	${jbc_albums}/va_call_northampton_vol1.html
 #define	albums[90]->media	CD
 #define	albums[90]->title	VA: Now That's What I Call Northampton Vol #1

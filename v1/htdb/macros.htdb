@@ -71,13 +71,16 @@
 #live	endif
 
 #define	embedVideo(project=jbc, collection, url, anno=, name, comment, credit, images)
-##live	if (defined(anno))
-##live		if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${${anno}})})})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
-##live		endif
-##live	else
-##live		if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${comment})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
-##live		endif
-##live	endif
+#live	if (defined(update))
+#live		if (defined(anno))
+#live			if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${${anno}})})})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
+#live			endif
+#live		else
+#live			if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${comment})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
+#live			endif
+#live		endif
+#live	endif
+
 #live	if (substr(0, 6, ${url}) = /video)
 		<video controls preload="none" style="max-width: 100%;" poster="${url}_thumbnail.jpg" >
 			<source src="${url}.mp4" type="video/mp4">
@@ -751,10 +754,10 @@
 </style>
 
 #define	linkAudio(project=jbc, collection, type, title, comment, mp3, url, author, autolink=yes, credit, images, datetime, parent)
-#<pre>
-#</pre>
-##live	if (sql(insert IGNORE into media set project="${project}", type="audio", subtype="${type}", name="${literalizeQuotes(${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}"))
-##live	endif
+#live	if (defined(update))
+#live		if (sql(insert IGNORE into media set project="${project}", type="audio", subtype="${type}", name="${literalizeQuotes(${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}"))
+#live		endif
+#live	endif
 	<span class="audioPlayer">
 		<span class="audio_title">
 		<i>
@@ -789,18 +792,24 @@
 	</span>
 
 #define	linkPDF(title, pdf)
-##live	if (sql(insert IGNORE into media set type="pdf", name="${title}", href="${pdf}", author="${author}"))
-##live	endif
+#live	if (defined(update))
+#live		if (sql(insert IGNORE into media set type="pdf", name="${title}", href="${pdf}", author="${author}"))
+#live		endif
+#live	endif
 	<a href="${pdf}">${makePDFIcon(title=${literalizeCommas(${title})})}</a> <i>${title}</i>
 
 #define	linkSQL(type, name, href)
-##live	if (sql(insert IGNORE into links set type="${type}", name="${name}", href="${href}"))
-##live	endif
+#live	if (defined(update))
+#live		if (sql(insert IGNORE into links set type="${type}", name="${name}", href="${href}"))
+#live		endif
+#live	endif
 
 #define	linkSong(title, href, audio, mp3, author, pdf)
 	<!-- BEG:expanded_from:[song:${title}] -->
-##live	if (sql(insert IGNORE into song set name="${literalizeQuotes(${literalizeCommas(${title})})}", href="${href}", audio="${audio}", mp3="${mp3}", author="${author}"))
-##live	endif
+#live	if (defined(update))
+#live		if (sql(insert IGNORE into song set name="${literalizeQuotes(${literalizeCommas(${title})})}", href="${href}", audio="${audio}", mp3="${mp3}", author="${author}"))
+#live		endif
+#live	endif
 	<span class='song'>
 #live	if ((defined(mp3)) && (defined(href)))
 		<i><a href="${href}">${title}</a></i>
@@ -818,8 +827,8 @@
 	<!-- expanded_from:[song:${title}]:END -->
 
 #define	linkSingle(title, href)
+	${linkSQL(single, ${title}, ${href})}
 	<!-- BEG:expanded_from:[single:${title}] -->
-#${linkSQL(single, ${title}, ${href})}
 #live	if (defined(href))
 	<span class="release_title"><b><a href="${href}">${title}</a></b></span>
 #live	else
@@ -828,7 +837,7 @@
 	<!-- expanded_from:[single:${title}]:END -->
 
 #define	linkAlbum(title, href)
-#${linkSQL(album, ${title}, ${href})}
+	${linkSQL(album, ${title}, ${href})}
 	<!-- BEG:expanded_from:[album:${title}] -->
 #live	if (defined(href))
 	<span class="release_title"><b><a href="${href}">${title}</a></b></span>
@@ -838,7 +847,7 @@
 	<!-- expanded_from:[album:${title}]:END -->
 
 #define	linkPerson(href, name, lookup=no)
-#${linkSQL(person, ${name}, ${href})}
+	${linkSQL(person, ${name}, ${href})}
 	<!-- BEG:expanded_from:[person:${name}] -->
 	<span class="person">
 #live	if (getval(lookup) = yes)
@@ -3271,7 +3280,6 @@ ${define(_set, false)}
 #live	endif
 #live	if (getval(pix_current) == .jpg)
 
-#insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}";
 #live	if (defined(update))
 #live		if (sql(insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}"))
 #live		endif
@@ -3357,10 +3365,13 @@ ${define(_set, false)}
 #live	endif
 
 #define	doPosterSQL(prefix)
-#live	if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", image="${stripWhitespace(${ts2PosterLink(${${prefix}->datetime})})}", ${credit2SQL(${prefix}->postercredit)} type="poster"))
+#live	if (defined(update))
+#live		if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", image="${stripWhitespace(${ts2PosterLink(${${prefix}->datetime})})}", ${credit2SQL(${prefix}->postercredit)} type="poster"))
+#live		endif
 #live	endif
 
 #define	doPostersSQL(prefix, posters)
+#live	if (defined(update))
 #live		if (makeArray(s, ${EOS}, ${unfilter(${posters})}))
 #live			loop(x, 1, ${s->numResults})
 
@@ -3379,8 +3390,8 @@ ${define(_set, false)}
 #live				endif
 #live				endloop
 #live				endif
-
 #live			endloop
+#live		endif
 #live		endif
 
 #define	doSetlist(prefix, setlists)
@@ -3708,10 +3719,10 @@ ${define(_set, false)}
 #live	if (defined(posters))
 #live		if (define(hasPoster, yes))
 #live		endif
-#		${doPostersSQL(prefix=_gig, posters=${unfilter(${posters})})}
+		${doPostersSQL(prefix=_gig, posters=${unfilter(${posters})})}
 #live	else if (getval(_gig->extra) == poster)
 #live		if (define(hasPoster, yes))
-#		${doPosterSQL(prefix=_gig)}
+		${doPosterSQL(prefix=_gig)}
 #live		endif
 #live	endif
 #live	if ((getval(_gig->extra) == ticket) || (defined(tickets)))

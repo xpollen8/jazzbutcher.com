@@ -567,7 +567,7 @@
 	Special 1 Track Fan-Club Only Single given to Members of The Jazz Butcher Big Questions Fan Club as well as friends of the band. Same song on both sides.
 
 #define	albums[14]->type	various
-#define	albums[14]->lookup	uptoyou
+#define	albums[14]->lookup	va_abstract
 #define	albums[14]->media	12"
 #define	albums[14]->href	${jbc_albums}/va_abstract_5.html
 #define	albums[14]->label	Sweatbox
@@ -1652,7 +1652,7 @@
 #define	albums[38]->contribution vodka
 
 #define	albums[39]->type	single
-#define	albums[39]->lookup	_16yr
+#define	albums[39]->lookup	sixteen_years
 #define	albums[39]->onalbum	ill
 #define	albums[39]->label	creation_records
 #define	albums[39]->catalog	CRESCD167
@@ -2799,12 +2799,16 @@
 
 #define	albums[51]->buy
 #define	albums[51]->type	dvd,live,project
-#define	albums[51]->href
+#define	albums[51]->href	/albums/dvd_wilson_no_known_predators.html
 #define	albums[51]->title	No Known Predators
-#define	albums[51]->thumb
+#define	albums[51]->thumb	/images/releases/dvd_wilson_no_known_predators_front
+#define	albums[51]->images	/images/releases/dvd_wilson_no_known_predators_back$$/images/releases/dvd_wilson_no_known_predators_disc
 #define	albums[51]->project wilson
-#define	albums[51]->blurb The Wilson DVD, entitled No Known Predators, is to be released on Friday 7th September 2012.
 #define	albums[51]->dtreleased	2012-09-07
+#define	albums[51]->blurb
+	Recorded live at The Picturedome, Northampton NN1, 15th August 2009.
+	<p />
+	Warning:This film contains strong language, adult themes and scenes of human frailty.
 
 #define	albums[52]->type	EP
 #define	albums[52]->lookup	conspir12
@@ -3310,7 +3314,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 	A Sampler CD
 
 #define	albums[83]->buy
-#define	albums[83]->type	project
+#define	albums[83]->type	project,CDR
 #define	albums[83]->project wilson
 #define	albums[83]->lookup	wilson_demo_2005
 #define	albums[83]->href	${jbc_albums}/wilson_demo_2005.html
@@ -3326,7 +3330,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[83]->audio	/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3;;Buffalo Sniper$$/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3;;Police Chief
 
 #define	albums[84]->buy
-#define	albums[84]->type	project
+#define	albums[84]->type	project,CDR
 #define	albums[84]->project wilson
 #define	albums[84]->lookup	wilson_demo_2003
 #define	albums[84]->href	${jbc_albums}/wilson_demo_2003.html
@@ -3348,7 +3352,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[84]->audio	/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3;;Istanbul Connection$$/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3;;Quality People
 
 #define	albums[85]->buy
-#define	albums[85]->type	project
+#define	albums[85]->type	project,CDR
 #define	albums[85]->project wilson
 #define	albums[85]->lookup	wilson_demo_2002
 #define	albums[85]->href	${jbc_albums}/wilson_demo_2002.html
@@ -3420,7 +3424,8 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[89]->country	UK
 #define	albums[89]->catalog
 #define	albums[89]->title	Guest Pass Disc
-#define	albums[89]->thumb	/images/releases/cdr_guestpass2000
+#define	albums[89]->thumb	/images/releases/cdr_guestpass2000_front
+#define	albums[89]->images	/images/releases/cdr_guestpass2000_back
 #define	albums[89]->dtreleased	2000-01-01
 #define	albums[89]->media	CDR
 #define	albums[89]->blurb
@@ -3435,12 +3440,14 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 	show.
 
 #define	albums[90]->type	various
-#define	albums[90]->lookup	va_nm_vol1
+#define	albums[90]->lookup	va_nh_vol1
+#define	albums[90]->thumb	/images/releases/va_nh_vol1_front
+#define	albums[90]->images	/images/releases/va_nh_vol1_back
 #define	albums[90]->href	${jbc_albums}/va_call_northampton_vol1.html
 #define	albums[90]->media	CD
 #define	albums[90]->title	VA: Now That's What I Call Northampton Vol #1
 #define	albums[90]->dtreleased	2010
-#define	albums[90]->contribution [ mercy, wildlife ]
+#define	albums[90]->contribution [ mercy, all_the_saints, wildlife ]
 #define	albums[90]->blurb
 #define	albums[90]->audio https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3;;Mercy;;Recorded by Curtis E. Johnson$$https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/WIldlife.mp3;;Wildlife;;Recorded by Curtis E. Johnson
 
@@ -3449,7 +3456,8 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[91]->href	${jbc_albums}/va_uncle_andy_christmas_2007.html
 #define	albums[91]->media	CD
 #define	albums[91]->title	VA: Uncle Andy's Christmas CD (2007)
-#define	albums[91]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum
+#define	albums[91]->thumb	/images/releases/va_uncle_andy_front
+#define	albums[91]->images	/images/releases/va_uncle_andy_back
 #define	albums[91]->dtreleased	2007-12
 #define	albums[91]->contribution afterhours
 #define	albums[91]->blurb

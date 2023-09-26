@@ -246,7 +246,7 @@
 		${etcVideo[${i}]->credit}
 		)}
 	)}
-	${embedVideo(url=${etcVideo[${i}]->mediaurl}, anno=ano)}
+	${embedVideo(url=${etcVideo[${i}]->mediaurl}, anno=ano, datetime=${etcVideo[${i}]-date})}
 	</div>
 #live	endwhile
 	${tag_beg}
@@ -256,7 +256,7 @@
 		${g_credit(g=Sonic Barometer, u=https://www.youtube.com/channel/UCX5AXudBBClmjCATNl1KnKA, d=2015-03-27)}
 		)}
 	<div class="listenItem">
-	${embedVideo(url=https://www.youtube.com/embed/UzPvd21Ujmw, anno=ano)}
+	${embedVideo(url=https://www.youtube.com/embed/UzPvd21Ujmw, anno=ano, datetime=2015-03-27)}
 	</div>
 
 	${tag_beg}
@@ -268,7 +268,7 @@
 		${g_credit(g=Neil Rudd, u=http://www.myspace.com/eatlightsbecomelights, d=2010-07-31)}
 		)}
 	<div class="listenItem">
-	${embedVideo(url=https://www.youtube.com/embed/mTR-fbcoQFw, anno=ano)}
+	${embedVideo(url=https://www.youtube.com/embed/mTR-fbcoQFw, anno=ano, datetime=2010-07-31)}
 	</div>
 
 	${define(ano, From the successful 2012 effort to crowd-fund the ${adventurers} record.)}
@@ -276,7 +276,7 @@
 	Pledgemusic Video
 	${tag_end}
 	<div class="listenItem">
-	${embedVideo(url=/video/adventurers_pledge, anno=ano)}
+	${embedVideo(url=/video/adventurers_pledge, anno=ano, datetime=2012-07-01)}
 	</div>
 	${define(ano, Source of sample for ${excel})}
 	${tag_beg}

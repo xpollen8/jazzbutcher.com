@@ -3,7 +3,7 @@ drop table if exists media;
 create table media (
 	media_id mediumint unsigned NOT NULL auto_increment,
 	type varchar(20) NOT NULL,
-	subtype varchar(50),
+	subtype varchar(100),
 	project varchar(20) NOT NULL,
 	collection varchar(200) NOT NULL,
 	name varchar(200) NOT NULL,

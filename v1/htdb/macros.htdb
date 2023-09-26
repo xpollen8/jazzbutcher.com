@@ -70,14 +70,17 @@
 #live	endif
 #live	endif
 
-#define	embedVideo(project=jbc, collection, url, anno=, name, comment, credit, images)
-##live	if (defined(anno))
-##live		if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${${anno}})})})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
-##live		endif
-##live	else
-##live		if (sql(insert IGNORE into media set project="${project}", type="video", comment="${literalizeQuotes(${comment})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
-##live		endif
-##live	endif
+#define	embedVideo(project=jbc, collection, url, anno=, name, comment, credit, images, datetime)
+#live	if (defined(update))
+#live		if (defined(anno))
+#live			if (sql(insert IGNORE into media set project="${project}", datetime="${datetime}",  type="video", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${${anno}})})})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
+#live			endif
+#live		else
+#live			if (sql(insert IGNORE into media set project="${project}", datetime="${datetime}", type="video", comment="${literalizeQuotes(${comment})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
+#live			endif
+#live		endif
+#live	endif
+
 #live	if (substr(0, 6, ${url}) = /video)
 		<video controls preload="none" style="max-width: 100%;" poster="${url}_thumbnail.jpg" >
 			<source src="${url}.mp4" type="video/mp4">
@@ -750,11 +753,11 @@
 	}
 </style>
 
-#define	linkAudio(project=jbc, collection, type, title, comment, mp3, url, author, autolink=yes, credit, images, datetime, parent)
-#<pre>
-#</pre>
-##live	if (sql(insert IGNORE into media set project="${project}", type="audio", subtype="${type}", name="${literalizeQuotes(${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}"))
-##live	endif
+#define	linkAudio(project=jbc, collection, type, title, comment, mp3, url, author, autolink=yes, credit, images, datetime, parent, ordinal)
+#live	if (defined(update))
+#live		if (sql(insert IGNORE into media set project="${project}", type="audio", subtype="${type}", name="${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", ordinal="${ordinal}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}"))
+#live		endif
+#live	endif
 	<span class="audioPlayer">
 		<span class="audio_title">
 		<i>
@@ -789,18 +792,24 @@
 	</span>
 
 #define	linkPDF(title, pdf)
-##live	if (sql(insert IGNORE into media set type="pdf", name="${title}", href="${pdf}", author="${author}"))
-##live	endif
+#live	if (defined(update))
+#live		if (sql(insert IGNORE into media set type="pdf", name="${title}", href="${pdf}", author="${author}"))
+#live		endif
+#live	endif
 	<a href="${pdf}">${makePDFIcon(title=${literalizeCommas(${title})})}</a> <i>${title}</i>
 
 #define	linkSQL(type, name, href)
-##live	if (sql(insert IGNORE into links set type="${type}", name="${name}", href="${href}"))
-##live	endif
+#live	if (defined(update))
+#live		if (sql(insert IGNORE into links set type="${type}", name="${name}", href="${href}"))
+#live		endif
+#live	endif
 
 #define	linkSong(title, href, audio, mp3, author, pdf)
 	<!-- BEG:expanded_from:[song:${title}] -->
-##live	if (sql(insert IGNORE into song set name="${literalizeQuotes(${literalizeCommas(${title})})}", href="${href}", audio="${audio}", mp3="${mp3}", author="${author}"))
-##live	endif
+#live	if (defined(update))
+#live		if (sql(insert IGNORE into song set name="${literalizeQuotes(${literalizeCommas(${title})})}", href="${href}", audio="${audio}", mp3="${mp3}", author="${author}"))
+#live		endif
+#live	endif
 	<span class='song'>
 #live	if ((defined(mp3)) && (defined(href)))
 		<i><a href="${href}">${title}</a></i>
@@ -818,8 +827,8 @@
 	<!-- expanded_from:[song:${title}]:END -->
 
 #define	linkSingle(title, href)
+	${linkSQL(single, ${title}, ${href})}
 	<!-- BEG:expanded_from:[single:${title}] -->
-#${linkSQL(single, ${title}, ${href})}
 #live	if (defined(href))
 	<span class="release_title"><b><a href="${href}">${title}</a></b></span>
 #live	else
@@ -828,7 +837,7 @@
 	<!-- expanded_from:[single:${title}]:END -->
 
 #define	linkAlbum(title, href)
-#${linkSQL(album, ${title}, ${href})}
+	${linkSQL(album, ${title}, ${href})}
 	<!-- BEG:expanded_from:[album:${title}] -->
 #live	if (defined(href))
 	<span class="release_title"><b><a href="${href}">${title}</a></b></span>
@@ -838,7 +847,7 @@
 	<!-- expanded_from:[album:${title}]:END -->
 
 #define	linkPerson(href, name, lookup=no)
-#${linkSQL(person, ${name}, ${href})}
+	${linkSQL(person, ${name}, ${href})}
 	<!-- BEG:expanded_from:[person:${name}] -->
 	<span class="person">
 #live	if (getval(lookup) = yes)
@@ -1174,6 +1183,7 @@ font.load().then(function () {
 #define	stevenew		${linkPerson(href=${jbc_people}/steve_new.html, name=Steve New)}
 #define	simon		${linkPerson(href=${jbc_people}/simon_taylor.html, name=Simon Taylor)}
 #define	max		${linkPerson(href=${jbc_people}/max_eider.html, name=Max Eider)}
+#define	max_eider	${max}
 #define	steve	${linkPerson(href=${jbc_people}/steve_valentine.html, name=Steve Valentine)}
 #define	beirne	${linkPerson(href=${jbc_people}/pat_beirne.html, name=Pat Beirne)}
 #define	at		${linkPerson(href=${jbc_people}/alice_thompson.html, name=Alice Thompson)}
@@ -1577,13 +1587,14 @@ font.load().then(function () {
 #define	va_wilson_heyday		${linkSingle(title=VA: Straight Through The Sound Barrier, href=${jbc_albums}/va_wilson_heyday.html)}
 #define	va_spark		${linkSingle(title=VA: Another Spark, href=${jbc_albums}/va_another_spark.html)}
 #define	shock_drugs		${linkSingle(title=She's On Drugs)}
-#define	va_seventeen_2	${linkSingle(title=VA: What A Nice Way To Turn Seventeen #2)}
-#define	va_seventeen_3	${linkSingle(title=VA: What A Nice Way To Turn Seventeen #3)}
+#define	va_abigail	${linkSingle(href=${jbc_albums}/va_abigail.html, title=VA: Abigail's Birthday Party)}
+#define	va_seventeen_2	${linkSingle(href=${jbc_albums}/va_seventeen_2.html, title=VA: What A Nice Way To Turn Seventeen #2)}
+#define	va_seventeen_3	${linkSingle(href=${jbc_albums}/va_seventeen_3.html, title=VA: What A Nice Way To Turn Seventeen #3)}
 #define	bigtime_sampler	${linkSingle(title=Big Bad Thing)}
 #define	bigtime_jungle	${linkSingle(href=${jbc_albums}/bigtime_jungle_smith,html, title=The Human Jungle/Southern Mark Smith)}
 #define	bigtime_angels	${linkSingle(href=${jbc_albums}/bigtime_angels_kitchen,html, title=Angels/Still In The Kitchen)}
-#define	va_nm_vol1		${linkSingle(title=VA: Now That's What I Call Northampton Vol #1)}
-#define	va_andy_2007	${linkSingle(title=VA: Uncle Andy's 2007 Christmas Album)}
+#define	va_nh_vol1		${linkSingle(href=${jbc_albums}/va_call_northampton_vol1.html, title=VA: Now That's What I Call Northampton Vol #1)}
+#define	va_andy_2007	${linkSingle(href=${jbc_albums}/va_uncle_andy_christmas_2007.html, title=VA: Uncle Andy's 2007 Christmas Album)}
 
 #
 #	recorded covers
@@ -1675,8 +1686,7 @@ font.load().then(function () {
 #
 #define	ill				${linkAlbum(href=${jbc_albums}/illuminate.html, title=Illuminate)}
 #define	violent			${linkSingle(href=${jbc_albums}/violent.html, title=&#161;Excellent! The Violent Years)}
-#define	_16yr			${linkSingle(href=${jbc_albums}/sixteen_years.html, title=Sixteen Years)}
-#define	16yr			${linkSingle(href=${jbc_albums}/sixteen_years.html, title=Sixteen Years)}
+#define	sixteen_years	${linkSingle(href=${jbc_albums}/sixteen_years.html, title=Sixteen Years)}
 #define	cute			${linkSong(href=${jbc_lyrics}/cute_submarines.html, title=Cute Submarines)}
 #define	_16				${linkSong(href=${jbc_lyrics}/sixteen_years.html, title=Sixteen Years)}
 #define	16				${linkSong(href=${jbc_lyrics}/sixteen_years.html, title=Sixteen Years)}
@@ -3270,7 +3280,6 @@ ${define(_set, false)}
 #live	endif
 #live	if (getval(pix_current) == .jpg)
 
-#insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}";
 #live	if (defined(update))
 #live		if (sql(insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}"))
 #live		endif
@@ -3356,10 +3365,13 @@ ${define(_set, false)}
 #live	endif
 
 #define	doPosterSQL(prefix)
-#live	if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", image="${stripWhitespace(${ts2PosterLink(${${prefix}->datetime})})}", ${credit2SQL(${prefix}->postercredit)} type="poster"))
+#live	if (defined(update))
+#live		if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", image="${stripWhitespace(${ts2PosterLink(${${prefix}->datetime})})}", ${credit2SQL(${prefix}->postercredit)} type="poster"))
+#live		endif
 #live	endif
 
 #define	doPostersSQL(prefix, posters)
+#live	if (defined(update))
 #live		if (makeArray(s, ${EOS}, ${unfilter(${posters})}))
 #live			loop(x, 1, ${s->numResults})
 
@@ -3378,8 +3390,8 @@ ${define(_set, false)}
 #live				endif
 #live				endloop
 #live				endif
-
 #live			endloop
+#live		endif
 #live		endif
 
 #define	doSetlist(prefix, setlists)
@@ -3707,10 +3719,10 @@ ${define(_set, false)}
 #live	if (defined(posters))
 #live		if (define(hasPoster, yes))
 #live		endif
-#		${doPostersSQL(prefix=_gig, posters=${unfilter(${posters})})}
+		${doPostersSQL(prefix=_gig, posters=${unfilter(${posters})})}
 #live	else if (getval(_gig->extra) == poster)
 #live		if (define(hasPoster, yes))
-#		${doPosterSQL(prefix=_gig)}
+		${doPosterSQL(prefix=_gig)}
 #live		endif
 #live	endif
 #live	if ((getval(_gig->extra) == ticket) || (defined(tickets)))

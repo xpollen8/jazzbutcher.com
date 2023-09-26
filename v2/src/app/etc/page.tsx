@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import LetterHeader from '@/components/LetterHeader';
 import SectionOptions from '@/components/SectionOptions';
 
-const ETC = (props) => <>
+const ETC = () => <>
 	<Header section="etc" />
 		<main>
 			<div className="etc">

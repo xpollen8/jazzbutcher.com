@@ -1,5 +1,8 @@
+//"use server"
+
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next'
+
 import { parseCaptionSourceEtc } from '@/lib/macros';
 import { useSearchParams } from 'next/navigation';
 import PageComments from '@/components/PageComments';
@@ -37,14 +40,14 @@ type BreadCrumb = {
 	hide?: boolean
 }
 
-export const sections : { [key: string]: BreadCrumb } = {
+const sections : { [key: string]: BreadCrumb } = {
 	jbc: { href: '/', title: 'The Jazz Butcher' },
 
 	pat: { parent: 'jbc', title: 'Pat' },
 	media: { parent: 'jbc', title: 'Media' },
 
 	releases: { parent: 'jbc', title: 'Releases', summary: 'The records' },
-	release_reviews: { parent: 'releases', title: 'Album Reviews', inParentDirectory: true },
+	album_reviews: { parent: 'press', title: 'Album Reviews', inParentDirectory: true },
 
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives' },
@@ -55,7 +58,7 @@ export const sections : { [key: string]: BreadCrumb } = {
 	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
 
 	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The army of musicians' },
-	fiascos: { parent: 'writings', title: 'The Fiascos', summary: 'Top 10 JBC Fiascos' },
+	fiascos: { parent: 'writings', title: 'Top 10 JBC Fiascos', summary: '2020' },
 	prejbc: { parent: 'pat', title: 'Pre-JBC', summary: 'Before there was The JBC' },
 	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content', rootHideChildren: true },
 	help: { parent: 'jbc', title: 'Get Involved!', summary: "Let's do this, together" },
@@ -64,15 +67,17 @@ export const sections : { [key: string]: BreadCrumb } = {
 
 	audio: { parent: 'media', title: 'Audio' },
 	official: { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: true },
-	live: { parent: 'audio', title: 'Recorded performances', summary: "Non-official recordings", inParentDirectory: true },
-	audio_interviews: { parent: 'audio', title: 'Recorded Interviews', summary: "Radio and online interviews", inParentDirectory: true },
+	live: { parent: 'audio', title: 'Live Recordings', summary: "Non-official recordings", inParentDirectory: true },
+	interviews: { parent: 'audio', title: 'Recorded Interviews', summary: "Radio, etc", inParentDirectory: true },
+	demos: { parent: 'audio', title: 'Demo Recordings', inParentDirectory: true },
+	elsewhere: { parent: 'audio', title: 'Audio Elsewhere', summary: "Podcasts, etc", inParentDirectory: true },
 
 	video: { parent: 'media', title: 'Video' },
 
-	press: { parent: 'media', title: 'Press', summary: "Press Articles" },
+	press: { parent: 'media', title: 'Press', summary: "Published Articles" },
 	print_interviews: { parent: 'press', title: 'Printed Interviews', inParentDirectory: true },
 	gig_reviews: { parent: 'press', title: 'Gig Reviews', inParentDirectory: true },
-	puff_pieces: { parent: 'press', title: 'Puff Pieces', inParentDirectory: true },
+	profiles: { parent: 'press', title: 'Profile Pieces', inParentDirectory: true },
 	announcements: { parent: 'press', title: 'Announcements', inParentDirectory: true },
 
 	news: { parent: 'media', title: 'News', summary: "Website announcements" },
@@ -80,19 +85,13 @@ export const sections : { [key: string]: BreadCrumb } = {
 	//interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
 
 	project: { parent: 'pat', title: 'Side Projects', summary: "He was a busy butcher" },
-	black_eg: { parent: 'project', title: 'The Black Eg', inParentDirectory: true },
-	eg_press: { parent: 'black_eg', title: 'Press Articles', inParentDirectory: true },
-	eg_releases: { parent: 'black_eg', title: 'Releases', inParentDirectory: true },
-	wilson: { parent: 'project', title: 'Wilson', inParentDirectory: true },
-	wilson_press: { parent: 'wilson', title: 'Press Articles', inParentDirectory: true },
-	wilson_releases: { parent: 'wilson', title: 'Releases', inParentDirectory: true },
-	sumosonic: { parent: 'project', title: 'Sumosonic', inParentDirectory: true },
-	sumosonic_press: { parent: 'sumosonic', title: 'Press Articles', inParentDirectory: true },
-	sumosonic_releases: { parent: 'sumosonic', title: 'Releases', inParentDirectory: true },
 	vaguely_familiar: { parent: 'project', title: 'Vaguely Familiar', summary: '1991', inParentDirectory: true },
 	cambodia: { parent: 'project', title: 'Cambodia', summary: '1991', inParentDirectory: true },
+	black_eg: { parent: 'project', title: 'The Black Eg', summary: "1991-1994, 1999", inParentDirectory: true },
 	the_undertakers: { parent: 'project', title: 'The Undertakers', summary: '1995', inParentDirectory: true },
-	stranger_tractors: { parent: 'project', title: 'Stranger Tractors', summary: '1995', inParentDirectory: true },
+	stranger_tractors: { parent: 'project', title: 'Stranger Tractors', summary: '1995', inParentDirectory: true, body: "Curtis E. Johnson, Pat Fish (Mr. Nasty)" },
+	sumosonic: { parent: 'project', title: 'Sumosonic', summary: "1996-1998", inParentDirectory: true },
+	wilson: { parent: 'project', title: 'Wilson', summary: "2001-2005, 2012", inParentDirectory: true },
 	alan_moore: { parent: 'project', title: 'Alan Moore', summary: '2011 - Trampling Tokyo', inParentDirectory: true },
 	drones_club: { parent: 'project', title: 'Drones Club', summary: '2014-2021', inParentDirectory: true },
 	prime_evils: { parent: 'project', title: 'Prime Evils', inParentDirectory: true },
@@ -109,24 +108,27 @@ export const sections : { [key: string]: BreadCrumb } = {
 
 	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },
 	memoriam: { parent: 'pat', title: 'In Memoriam' },
-	tributes: { parent: 'memoriam', title: 'Tributes', summary: "Rememberences and tributes" },
 	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
 	homage: { parent: 'memoriam', title: 'Musical Tributes', summary: "Songs in praise of The Butcher" },
 
-	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994" },
-	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003" },
+	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994", body: "Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.  Includes then-current news and answers to fan questions in 9 lengthy letters." },
+	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003", body: "The passing of Northampton-based folk music legend Tom Hall prompted Pat to pen a memorial."},
 
-	mailinglist: { parent: 'etc', title: 'Mailing List' },
-	tribute: { parent: 'etc', title: 'Fan Tribute Project' },
-	abcs_of_drugs: { parent: 'etc', title: "Eider's ABC's of Drugs" },
-	mad: { parent: 'etc', title: 'How MAD Are You?' },
-	links: { parent: 'etc', title: "Pat's Recommended Links" },
-	trivia: { parent: 'etc', title: 'Trivia' },
-	auction: { parent: 'etc', title: '1997 Website Auction' },
+	mailinglist: { parent: 'etc', title: 'Mailing List', summary: '1989-2003', body: "The genesis of this Jazz Butcher website was the mailing list that David Whittemore maintained. During the 15 years it was active, several hundred technically-inclined JBC fans kept in touch and posted thousands of email messages." },
+	auction: { parent: 'etc', title: 'Website Auction', summary: '1997', body: "The Butcher had some memorabilia sitting around his home which he was sick of tripping over. So, we decided to have an auction." },
+	abcs_of_drugs: { parent: 'etc', title: "Eider's ABC's of Drugs", summary: '1998', body: "Max Eider, as a writer for Channel 4, produced a series on mind-altering drugs, which - due to its absolute brilliance - was mirrored here before it left the Channel 4 website." },
+	mad: { parent: 'etc', title: 'How MAD Are You?', summary: '1998', body: "Pat was in posession of a ridiculous photo of a fan doing a ridiculous thing - while wearing a JBC t-shirt. He mused that others in compomising attair might compete to be top loon, if the call were put out on the JBC mailing list. So that's what happened." },
+	tribute: { parent: 'etc', title: 'Fan Tribute Project', summary: '2000', inParentDirectory: false,  body: "Some brainiac on the old JBC mailing list decided that it would be fun to have the many JBC musician fans take a whack at doing a cover tune tribute album. The outcome is surprisingly not as cringe-worthy as it could have been." },
+	trivia: { parent: 'etc', title: 'Trivia', summary: '2002', body: "A multiple-choice JBC trivial test. Take the challenge: is Emil still pig?" },
+	links: { parent: 'etc', title: "Pat's Recommended Links", summary: '2003', body: "Net-side bands and whatnot that Pat wanted to highlight." },
+	western_dat: { parent: 'etc', title: 'The Western Family DAT', summary: '2005', body: "Western Family , the 1992 live album released on Creation Records, is not the record it could have been.."},
 
-	nightshift: { parent: 'prejbc', title: 'Nightshift', inParentDirectory: true },
-	the_institution: { parent: 'prejbc', title: 'The Institution', inParentDirectory: true },
-	sonic_tonix: { parent: 'prejbc', title: 'Sonic Tonix', summary: "AKA 'The Tonix'", inParentDirectory: true },
+	first_gig: { parent: 'prejbc', title: "Pat's first gig", summary: "1974", inParentDirectory: true, body: "Pat Fish, Chris Zero, Rolo, others" },
+	nightshift: { parent: 'prejbc', title: 'Nightshift', summary: "1976-1978", inParentDirectory: true, body: "Pat Fish, John Silver, Colin Henney, Paul Quarry, Chris Clark, Ros Caston, Jon Stephenson" },
+	the_institution: { parent: 'prejbc', title: 'The Institution', summary: "1978-1980", inParentDirectory: true, body: "Rolo, Rob Wilford, Max Eider, Pat Fish, Johnathan Stephenson, John Duval" },
+	sonic_tonix: { parent: 'prejbc', title: 'Sonic Tonix', summary: "1980-1981 (AKA 'The Tonix')", inParentDirectory: true, body: "John Silver, Dave Goldie, Simon Mawby, Owen Jones, Pat Fish, Pete Millson" },
+	wow_federation: { parent: 'prejbc', title: 'Wow Federation', summary: "1981", inParentDirectory: true, body: "Millree Hughes, Brian Warner, Ian Warner, Nick Horton, Andy Love, James Rogers, Carl Fysh, Vicky Richardson, Boz Warnock, Andy Sizer, Liza Widdowson, Deborah Keeping, Paul Conneally, Pat Fish, Max Eider, Will Buchanan, Mark Sinker (https://rateyourmusic.com/artist/wow-federation)" },
+	jazz_insects: { parent: 'prejbc', title: 'Jazz Insects', summary: "1982", inParentDirectory: true, body: "Matt Black, Mark Sinker, Max Eider, Pat Fish" },
 	//the_tonix: { parent: 'prejbc', title: 'The Tonix', inParentDirectory: true },
 
 	admin: { parent: 'jbc', title: "Website Management", hide: false },
@@ -179,8 +181,28 @@ const parseTitle = (title: string | string[], key0: number) => {
 	return <li key={key0}><span aria-current="page">{title}</span></li>;
 }
 
-const Section = (props: { section?: string, title?: any, children?: React.ReactNode }): React.ReactNode  => {
-	const { section, title, children } = props;
+export const sectionOptions = (match: string) => {
+	const options = Object.keys(sections).map((section: string) => {
+		const this_section = sections[section];
+		const parent_section = sections[this_section?.parent];
+		return {
+			uri: (parent_section && this_section?.inParentDirectory) ? `/${this_section?.parent}/${section}` : `/${section}`,
+			...sections[section] }
+		})
+		?.filter((section: string) => section?.parent === match)
+		.map((section: string) => {
+		return {
+			uri: section.uri,
+			text: section.title,
+			aux: section?.summary,
+			children: section?.body,
+		}
+	});
+	return options || [];
+}
+
+const NavSections = (props: { section?: string, title?: any, children?: React.ReactNode }): React.ReactNode  => {
+	const { pathname, section, title, children } = props;
 
 	if (!section) return;
 	const nav = makeBreadcrumb(section, title) ?? [];
@@ -240,6 +262,7 @@ type GigResults = {
 
 type Props_Header = {
 	project?: string
+	pathname?: string
 	section?: string
 	title?: any
 	passthru?: string	// unused - just overload title
@@ -256,6 +279,7 @@ where {
 }
  */
 const Header = (props: Props_Header): React.ReactNode  => {
+	//console.log("PATH", props);
 	/* needs work - only works at very top level
 	const searchParams = useSearchParams();
 	const section = searchParams.get('section')
@@ -266,9 +290,7 @@ const Header = (props: Props_Header): React.ReactNode  => {
 	*/
 	return (<>
 		<nav>
-			<Section {...props}>
-				{props?.extraNav}
-			</Section>
+			<NavSections {...props} > {props?.extraNav} </NavSections>
 			{props?.children}
 		</nav>
 		{(props?.project) && <div className={`gig_${props.project}`} ></div>}

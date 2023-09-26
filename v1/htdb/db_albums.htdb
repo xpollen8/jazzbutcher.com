@@ -567,7 +567,7 @@
 	Special 1 Track Fan-Club Only Single given to Members of The Jazz Butcher Big Questions Fan Club as well as friends of the band. Same song on both sides.
 
 #define	albums[14]->type	various
-#define	albums[14]->lookup	uptoyou
+#define	albums[14]->lookup	va_abstract
 #define	albums[14]->media	12"
 #define	albums[14]->href	${jbc_albums}/va_abstract_5.html
 #define	albums[14]->label	Sweatbox
@@ -3310,7 +3310,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 	A Sampler CD
 
 #define	albums[83]->buy
-#define	albums[83]->type	project
+#define	albums[83]->type	project,CDR
 #define	albums[83]->project wilson
 #define	albums[83]->lookup	wilson_demo_2005
 #define	albums[83]->href	${jbc_albums}/wilson_demo_2005.html
@@ -3326,7 +3326,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[83]->audio	/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3;;Buffalo Sniper$$/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3;;Police Chief
 
 #define	albums[84]->buy
-#define	albums[84]->type	project
+#define	albums[84]->type	project,CDR
 #define	albums[84]->project wilson
 #define	albums[84]->lookup	wilson_demo_2003
 #define	albums[84]->href	${jbc_albums}/wilson_demo_2003.html
@@ -3348,7 +3348,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[84]->audio	/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3;;Istanbul Connection$$/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3;;Quality People
 
 #define	albums[85]->buy
-#define	albums[85]->type	project
+#define	albums[85]->type	project,CDR
 #define	albums[85]->project wilson
 #define	albums[85]->lookup	wilson_demo_2002
 #define	albums[85]->href	${jbc_albums}/wilson_demo_2002.html
@@ -3420,7 +3420,8 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[89]->country	UK
 #define	albums[89]->catalog
 #define	albums[89]->title	Guest Pass Disc
-#define	albums[89]->thumb	/images/releases/cdr_guestpass2000
+#define	albums[89]->thumb	/images/releases/cdr_guestpass2000_front
+#define	albums[89]->images	/images/releases/cdr_guestpass2000_back
 #define	albums[89]->dtreleased	2000-01-01
 #define	albums[89]->media	CDR
 #define	albums[89]->blurb
@@ -3451,7 +3452,8 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[91]->href	${jbc_albums}/va_uncle_andy_christmas_2007.html
 #define	albums[91]->media	CD
 #define	albums[91]->title	VA: Uncle Andy's Christmas CD (2007)
-#define	albums[91]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum
+#define	albums[91]->thumb	/images/releases/va_uncle_andy_front
+#define	albums[91]->images	/images/releases/va_uncle_andy_back
 #define	albums[91]->dtreleased	2007-12
 #define	albums[91]->contribution afterhours
 #define	albums[91]->blurb

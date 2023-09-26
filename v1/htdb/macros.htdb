@@ -753,9 +753,9 @@
 	}
 </style>
 
-#define	linkAudio(project=jbc, collection, type, title, comment, mp3, url, author, autolink=yes, credit, images, datetime, parent)
+#define	linkAudio(project=jbc, collection, type, title, comment, mp3, url, author, autolink=yes, credit, images, datetime, parent, ordinal)
 #live	if (defined(update))
-#live		if (sql(insert IGNORE into media set project="${project}", type="audio", subtype="${type}", name="${literalizeQuotes(${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}"))
+#live		if (sql(insert IGNORE into media set project="${project}", type="audio", subtype="${type}", name="${stripTags(${literalizeCommas(${title})})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", ordinal="${ordinal}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}"))
 #live		endif
 #live	endif
 	<span class="audioPlayer">
@@ -1183,6 +1183,7 @@ font.load().then(function () {
 #define	stevenew		${linkPerson(href=${jbc_people}/steve_new.html, name=Steve New)}
 #define	simon		${linkPerson(href=${jbc_people}/simon_taylor.html, name=Simon Taylor)}
 #define	max		${linkPerson(href=${jbc_people}/max_eider.html, name=Max Eider)}
+#define	max_eider	${max}
 #define	steve	${linkPerson(href=${jbc_people}/steve_valentine.html, name=Steve Valentine)}
 #define	beirne	${linkPerson(href=${jbc_people}/pat_beirne.html, name=Pat Beirne)}
 #define	at		${linkPerson(href=${jbc_people}/alice_thompson.html, name=Alice Thompson)}
@@ -1685,8 +1686,7 @@ font.load().then(function () {
 #
 #define	ill				${linkAlbum(href=${jbc_albums}/illuminate.html, title=Illuminate)}
 #define	violent			${linkSingle(href=${jbc_albums}/violent.html, title=&#161;Excellent! The Violent Years)}
-#define	_16yr			${linkSingle(href=${jbc_albums}/sixteen_years.html, title=Sixteen Years)}
-#define	16yr			${linkSingle(href=${jbc_albums}/sixteen_years.html, title=Sixteen Years)}
+#define	sixteen_years	${linkSingle(href=${jbc_albums}/sixteen_years.html, title=Sixteen Years)}
 #define	cute			${linkSong(href=${jbc_lyrics}/cute_submarines.html, title=Cute Submarines)}
 #define	_16				${linkSong(href=${jbc_lyrics}/sixteen_years.html, title=Sixteen Years)}
 #define	16				${linkSong(href=${jbc_lyrics}/sixteen_years.html, title=Sixteen Years)}

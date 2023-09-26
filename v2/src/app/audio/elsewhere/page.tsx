@@ -43,7 +43,7 @@ const AudioElsewhere = () => {
 		<Header section="elsewhere" />
 		<main>
 			<LetterHeader title="Audio online" subhead="not yet archived here" />
-			{items.map((props: any) => <div className="listItem"><EmbedMedia data={props.data}><blockquote>{props.children}</blockquote></EmbedMedia></div>)}
+			{items.map((props: any, key: number) => <div key={key} className="listItem"><EmbedMedia data={props.data}><blockquote>{props.children}</blockquote></EmbedMedia></div>)}
 		</main>
 		<Footer />
 	</>)

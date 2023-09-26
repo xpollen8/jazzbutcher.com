@@ -1,14 +1,11 @@
-"use client"
-
 import Link from 'next/link';
-import { Suspense } from 'react';
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import MakeSimpleURI from '@/components/MakeSimpleURI';
-import usePresses from '@/lib/usePresses';
+import SectionOptions from '@/components/SectionOptions';
+//import PressItems from '@/components/PressItems';
+//import FilterPresses from '@/components/FilterPresses';
 
-const sections = [
+const Lsections = [
 	{ uri: '/press/interviews', text: 'Published Interviews' },
 	{ uri: '/press/reviews/gig', text: 'Published Gig Reviews' },
 	{ uri: '/press/albums', text: 'Published Album Reviews' },
@@ -24,25 +21,14 @@ const sections = [
 	{ uri: '/press/sumosonic', text: 'Press for Sumosonic' },
 ];
 
-const Press = () => {
-	const { data, isLoading, error } = usePresses();
-	const presses = data?.results?.sort((a: any, b: any) => {
-		//console.log("COMP", (new Date(a.dtpublished)).getTime(), b.dtpublished);
-		return (new Date(a.dtpublished).getTime()) - (new Date(b.dtpublished).getTime());
-	});
+const Press = (props: any) => {
 	return (<>
-		<Header section="press" />
-			{sections.map(MakeSimpleURI)}
-			<Suspense fallback=<>Loading...</> >
-				{(!isLoading) && (<>
-					{presses.map((p: any, key: number) => {
-						return (<div key={key}>
-							<Link href={p.url}>{p.dtpublished}: {p.type}: {p.publication}: {p.title}: {p.headline}</Link>
-						</div>)
-					})}
-				</>)}
-			</Suspense>
-		<Footer />
+		<Header section='press' />
+		<main>
+			<SectionOptions section='press' />
+			{/*<FilterPresses />*/}
+			{/*<PressItems />*/}
+		</main>
 	</>)
 }
 

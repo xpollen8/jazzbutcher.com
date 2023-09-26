@@ -113,15 +113,17 @@ const PressArticle = ({ params }: { params?: any }) => {
 	return (<>
 		<Suspense fallback=<>Loading...</> >
 			{(!isLoading && article) && (<>
-				<Header section="press" title=<>{article?.publication || (article?.type?.includes('pat') && 'The Butcher Writes')} - {article.dtpublished.substr(0, 10).replace(/-00/g, '-01')}</> />
-					<ArticleInfoBox article={article} />
-					<div style={{ margin: '5px' }}>
-						<ArticleTitle article={article} />
-						<ArticleAudio article={article} />
-						<ArticleMedia article={article} />
-						<ArticleThumbAndImages article={article} />
-						<div dangerouslySetInnerHTML={{ __html: article?.body }} />
-					</div>
+					<Header section="press" title={`${article?.publication || (article?.type?.includes('pat') && 'The Butcher Writes')} - ${article.dtpublished.substr(0, 10).replace(/-00/g, '-01')}`} />
+					<main>
+						<ArticleInfoBox article={article} />
+						<div style={{ margin: '5px' }}>
+							<ArticleTitle article={article} />
+							<ArticleAudio article={article} />
+							<ArticleMedia article={article} />
+							<ArticleThumbAndImages article={article} />
+							<div dangerouslySetInnerHTML={{ __html: article?.body }} />
+						</div>
+					</main>
 				<Footer />
 			</>)}
 		</Suspense>

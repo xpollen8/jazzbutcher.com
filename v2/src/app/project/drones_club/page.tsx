@@ -6,18 +6,18 @@ import LetterHeader from '@/components/LetterHeader';
 
 const DronesClub = () => 
 <>
-	<Header section="drones_club" />
-	<div className="gig_drones">
+	<Header project="drones" section="drones_club" />
+	<main>
 	<LetterHeader
 		title="The Drones Club (2014-2021)"
 		subhead="From Northampton. We are The Drones Club"
 		aux="Ian Clabburn – Bagpipes and Dulcimer, Steve Gordon – Guitar, Pat Fish – Bass, Russell Cooper – Drums"
 	/>
 	<div className="flex flex-wrap justify-center gap-5">
+		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/drones_club_cd.jpg" width={500} height={500} alt="cd cover" />
 		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/drones-july2021-b.jpg" width={500} height={200} alt="the drones" />
 		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/cropped-cropped-site-image-bw.jpg" width={500} height={500} alt="more drones" />
 		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/drones-live-2.jpg" width={500} height={500} alt="live" />
-		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheDronesClub/drones_club_cd.jpg" width={500} height={500} alt="cd cover" />
 	</div>
 	<p />
 	<blockquote>
@@ -174,7 +174,7 @@ The Electric Pipes? Well you’ll just have to come see The Drones Club to see h
 For more information about Bagpipes check out The Bagpipe Society
 <p />
 </div>
-	</div>
+	</main>
 	<Footer />
 </>
 export default DronesClub;

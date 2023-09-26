@@ -157,8 +157,7 @@ textplus1 {
 }
 .gig_sumo {
 	background-color: #000000;
-	margin-bottom: 5px;
-	border-radius: 5px;
+	margin-bottom: 3px;
 }
 .gig_sumo a {
 	color: #fff;
@@ -171,8 +170,7 @@ textplus1 {
 }
 .gig_eg {
 	background-color: #ddd;
-	margin-bottom: 5px;
-	border-radius: 5px;
+	margin-bottom: 3px;
 }
 .gig_eg:before {
 	content: url(https://jazzbutcher.com/images/performance_eg.png);
@@ -182,8 +180,7 @@ textplus1 {
 }
 .gig_duo {
 	background-color: #0258bc;
-	margin-bottom: 5px;
-	border-radius: 5px;
+	margin-bottom: 3px;
 }
 .gig_duo:before {
 	content: url(https://jazzbutcher.com/images/performance_duo.png);
@@ -199,8 +196,7 @@ textplus1 {
 }
 .gig_wilson {
 	background-color: #ee0000;
-	margin-bottom: 5px;
-	border-radius: 5px;
+	margin-bottom: 3px;
 }
 .gig_pane {
 	border: 1px solid #aaa;
@@ -214,28 +210,28 @@ textplus1 {
 }
 .gig_institution {
 	background-color: #eeffee;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
 }
 .gig_institution:before {
 	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/TheInstitution_logo.jpg);
 }
 .gig_nightshift {
 	background-color: #d7d7d7;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
 }
 .gig_nightshift:before {
 	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/Nightshift_Logo.gif);
 }
 .gig_thetonix {
 	background-color: #000;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
 }
 .gig_thetonix:before {
 	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_Logo.gif);
 }
 .gig_sonictonix {
 	background-color: #ff0101;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
 }
 .gig_sonictonix:before {
 	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_Logo.gif);
@@ -695,8 +691,7 @@ p::first-letter {
 	background-color: rgba(0,0,0,.02);
 	outline: dashed;
 	outline-width: 1px;
-	margin: 5px;
-	padding: 10px;
+	padding: 5px;
 }
 
 .layout {
@@ -820,10 +815,11 @@ body nav {
 }
 
 footer {
-  position: sticky;
-	z-index: 3;
+	position: sticky;
+	background: #ddf;
+	outline: 1px solid black;
 	bottom: 0;
-	margin-top: 50px;
+	z-index: 3;
 }
 
 html {

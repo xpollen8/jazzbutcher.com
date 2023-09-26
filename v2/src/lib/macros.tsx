@@ -600,8 +600,9 @@ export const parseCaptionsSourcesEtc = (str?: string, captionsLast?: boolean) =>
 	return str.split('$$')?.filter((ch: any) => ch.length)?.map((ch: string) => parseCaptionSourceEtc(ch, captionsLast));
 }
 
-export const truncAt = (chop: string, str: string) => {
-	const [ ret ] = str?.split(chop);
+export const truncAt = (chop: string, str?: string) => {
+	if (!str) return;
+	const [ ret ] = str.split(chop);
 	return ret || str;
 }
 

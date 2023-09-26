@@ -34,7 +34,7 @@ const	FilterPresses = ({ project, type, album }: { project?: string, type?: stri
 						const album = (type === 'album') && releases.find((a: any) => {
 							return a.lookup === item.album
 							});
-						return (<div className="drop-shadow-sm">
+						return (<div key={key} className="drop-shadow-sm">
 							<InfoTag text={`${item.dtpublished?.substr(0, 10)}: ${item.type.replace(project, '').replace(',,', ',').replace(/^,/, '').replace(/,$/, '')}`}/>
 							<div style={{ maxWidth: '250px' }} className="outline outline-slate-300 drop-shadow-sm">
 								<Link key={key} href={item.url}>

@@ -1,5 +1,4 @@
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import ReleaseBlurb from '@/components/ReleaseBlurb';
 import FeaturedItem from '@/components/FeaturedItem';
 //import DayInHistory from '@/components/DayInHistory';
@@ -57,8 +56,8 @@ const Home = (): React.ReactNode =>
 <>
 	<Header section='jbc' />
 	<main>
-		<div className="flex flex-wrap justify-center">
-			<div className="grow max-w-xl m-1">
+		<div className="flex flex-wrap justify-center gap-1">
+			<div className="grow max-w-xl">
 				<div className="border p-3 bg-slate-100 drop-shadow-sm">
 				<Memorial />
 				</div>
@@ -67,7 +66,7 @@ const Home = (): React.ReactNode =>
 				<TributeAudio />
 			</div>
 			</div>
-			<div className="w-1/3 max-w-xl grow m-1">
+			<div className="w-1/3 max-w-xl grow">
 				<TributeText />
 				<HomeBooks />
 				<HomeReleases />
@@ -76,7 +75,6 @@ const Home = (): React.ReactNode =>
 		{/*<RandomLiveVideo />
 		<DayInHistory />*/}
 	</main>
-	<Footer />
 </>
 
 export default Home;

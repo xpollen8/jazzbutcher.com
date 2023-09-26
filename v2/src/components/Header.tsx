@@ -34,9 +34,11 @@ export async function generateMetadata(
 type BreadCrumb = {
 	title: string | string[]
 	href?: string
-	parent?: string | string[]
+	parent?: string
 	summary?: string
 	inParentDirectory?: boolean
+	rootHideChildren?: boolean
+	body?: string
 	hide?: boolean
 }
 
@@ -51,7 +53,7 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives' },
-	gig_reviews: { parent: 'gigs', title: 'Published Reviews', inParentDirectory: true },
+	gig_reviews: { parent: 'press', title: 'Gig Reviews', inParentDirectory: true },
 	self_reviews: { parent: 'gigs', title: "Pat's Reviews", inParentDirectory: true },
 	fan_reviews: { parent: 'gigs', title: 'Fan Reviews', inParentDirectory: true },
 	posters: { parent: 'gigs', title: 'Posters', summary: 'Gig Ephemera', inParentDirectory: true },
@@ -76,7 +78,6 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	press: { parent: 'media', title: 'Press', summary: "Published Articles" },
 	print_interviews: { parent: 'press', title: 'Printed Interviews', inParentDirectory: true },
-	gig_reviews: { parent: 'press', title: 'Gig Reviews', inParentDirectory: true },
 	profiles: { parent: 'press', title: 'Profile Pieces', inParentDirectory: true },
 	announcements: { parent: 'press', title: 'Announcements', inParentDirectory: true },
 
@@ -141,14 +142,7 @@ const makeBreadcrumb = (name: string, aux?: any) => {
 		if (!lowerName) return;
 		const obj = sections[lowerName];
 		if (!obj) return;
-		let parent;
-		if (obj?.parent) {
-			if (typeof obj.parent === 'string') {
-				parent = recurseNavObjects({ name: obj.parent });
-			} else {
-				parent = obj.parent.map((name: string) => recurseNavObjects({ name }));
-			}
-		}
+		const parent = obj.parent && recurseNavObjects({ name: obj.parent });
 		let href = obj?.href || `/${lowerName}`;
 		if (root) {
 			if (aux) {
@@ -184,13 +178,13 @@ const parseTitle = (title: string | string[], key0: number) => {
 export const sectionOptions = (match: string) => {
 	const options = Object.keys(sections).map((section: string) => {
 		const this_section = sections[section];
-		const parent_section = sections[this_section?.parent];
+		const parent_section = this_section?.parent && sections[this_section?.parent];
 		return {
 			uri: (parent_section && this_section?.inParentDirectory) ? `/${this_section?.parent}/${section}` : `/${section}`,
 			...sections[section] }
 		})
-		?.filter((section: string) => section?.parent === match)
-		.map((section: string) => {
+		?.filter((section: any) => section?.parent && (section?.parent === match))
+		.map((section: any) => {
 		return {
 			uri: section.uri,
 			text: section.title,
@@ -202,7 +196,7 @@ export const sectionOptions = (match: string) => {
 }
 
 const NavSections = (props: { section?: string, title?: any, children?: React.ReactNode }): React.ReactNode  => {
-	const { pathname, section, title, children } = props;
+	const { section, title, children } = props;
 
 	if (!section) return;
 	const nav = makeBreadcrumb(section, title) ?? [];
@@ -211,7 +205,7 @@ const NavSections = (props: { section?: string, title?: any, children?: React.Re
 			return Object.keys(sections)
 				.filter((href: string) => {
 					const parent = sections[href]?.parent;
-					return !(sections[parent]?.rootHideChildren && depth === 1) && (parent === section && !sections[href]?.hide)
+					return parent && !(sections[parent]?.rootHideChildren && depth === 1) && (parent === section && !sections[href]?.hide)
 				})
 				?.map((href: string, key: number) => {
 					const { title, parent, summary, inParentDirectory }: BreadCrumb = sections[href];

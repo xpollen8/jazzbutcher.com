@@ -8522,6 +8522,33 @@ ${49} (Live KCRW Session 1989)
 	${jbc_footer}
 #live	endif
 
+#define	dvd_wilson_no_known_predators.html
+#live	if (getval(page) = dvd_wilson_no_known_predators.html)
+	${mkAlbumHeader(lookup=dvd_wilson_no_known_predators, body=${literalizeCommas(
+1		Play It All Night Long Written-By – Warren Zevon
+<br />2		Critters
+<br />3		Filter Kings
+<br />4		Quality People
+<br />5		Police Chief
+<br />6		Buffalo Sniper
+<br />7		Dark Agenda
+<br />8		Two Dragons
+<br />9		No Winners
+<br />10		Hippy Shit
+<br />11		Secret Government
+<br />12		Every Saturday Night
+<br />13		Battle Time Now
+	)})}
+
+#${addAlbumPerf(release=va_shadow, person=[[person:Pat_Fish]], song=NULL)}
+#	${addAlbumPerf(release=va_shadow, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
+#	${addAlbumPerf(release=va_shadow, person=[[person:Alice_Thompson]], instruments=Organ)}
+#	${pat} (Rhythm Guitar, Vocals)
+#	<br />${at} (Organ)
+
+	${jbc_footer}
+#live	endif
+
 #define	va_wilson_heyday.html
 #live	if (getval(page) = va_wilson_heyday.html)
 	${mkHeader(section=albums, title=VA: Straight Through The Sound Barrier)}

@@ -4,7 +4,7 @@ const MakeSimpleURI = ({ uri='', text, aux, children }: {
 	uri?: string
 	text: string
 	aux?: string | React.ReactNode
-	children?: React.ReactNode
+	children?: string | React.ReactNode
 }, key: number): React.ReactNode  => (
 	<div key={key} className="mt-2 p-1">
 	{(uri) ?

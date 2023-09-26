@@ -1,48 +1,22 @@
-"use client"
-
-import { Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EmbedMedia from '@/components/EmbedMedia';
-import useMedias from '@/lib/useMedias';
-import useAudioLive from '@/lib/useAudioLive';
-import { parseCredit } from '@/lib/macros';
+import LetterHeader from '@/components/LetterHeader';
+import SectionOptions from '@/components/SectionOptions';
 
-const AudioSection = ({ title, project, data }: any) => {
-	return (<div className={`gig_${project}`}>
-		<h1>{title}</h1>
-		{data?.map((d: any, key: number) => {
-			const { credit=d.mediacredit, crediturl=d.mediacrediturl, creditdate, creditcaption } = parseCredit(d?.credit || '');
-			//if (d.credit) console.log("CR", { cr: d.credit, credit, crediturl, creditdate, creditcaption });
-			//if (title === 'Live Shows') console.log("DATA", d);
-			//if (title === 'Live Shows' && !d.mediaurl) console.log("DATA", d);
-			return <EmbedMedia key={key}
-				data={{
-					datetime: d.datetime,
-					venue: d.venue,
-					city: d.city,
-					mediaurl: d.mp3 || d.mediaurl,
-					title: d.name || d.song || 'XXXXXXX',
-					author: d.collection,
-					comment: d.comment,
-					mediacredit: credit,
-					mediacrediturl: crediturl,
-					mediacreditdate: creditdate,
-					children: creditcaption
-				}} />;
-		})}
-	</div>)
+const AudioInterviews = () => {
+	return (<>
+		<LetterHeader title="Interviews" />
+	</>);
 }
 
 const Audio = () => {
-	const { data, isLoading, error } = useMedias('audio');
-	const { data: dataLive, isLoading: isLoadingLive, error: errorLive } = useAudioLive();
-	//console.log("DATA", dataLive?.results);
-
 	return (<>
 		<Header section="audio" />
 		<main>
-		<h1>This is a W.I.P. - still need to tack the right info onto stuff in the database for this to work programmatically</h1>
+		<LetterHeader title="Jazz Butcher audio" subhead="(Audio for Wilson, etc is in 'Side Projects')" />
+		<SectionOptions section='audio' />
+		<hr />
 		<EmbedMedia data={{
 			source: "https://soundcloud.com/user-871949376/the-paine-full-podcast-with-pat-fish",
 			mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20200417_2018_The+Paine+Full+Podcast...+with+Pat+Fish.mp3",
@@ -56,16 +30,6 @@ const Audio = () => {
 		</EmbedMedia>
 
 		<EmbedMedia data={{
-			mediaurl: "https://www.mixcloud.com/FrenchSpurs1/retropopic-632-pat-fish-1957-2021-a-story-of-my-life/",
-			title: "RETROPOPIC 632 - PAT FISH (1957-2021): 'A STORY OF MY LIFE....'",
-			datetime: "2021-10-10" }}
-		>
-			<p />
-			The Jazz Butcher Conspiracy, over two hours Pat Fish tells The Saint of RETROPOPIC RADIO his life&apos;s story....
-
-		</EmbedMedia>
-
-		<EmbedMedia data={{
 			source: "https://soundcloud.com/alexgreenonline/stereo-embers-the-podcast-pat-fish-the-jazz-butcher",
 			mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20211007_JazzButcher_interview_stereoembers.mp3",
 			title: "Stereo Embers The Podcast: Pat Fish (The Jazz Butcher)",
@@ -73,29 +37,12 @@ const Audio = () => {
 		>
 		</EmbedMedia>
 
-		<EmbedMedia data={{
-			mediaurl: "https://soundcloud.com/spacemenpod/spacemen-pod-episode-7",
-			title: "Spacemen Pod Episode 7",
-			datetime: "2022-01-11" }}
-		>
-		<p />
-		In this episode, we walk with Jesus as we discuss one of Spacemen 3&apos;s most famous songs. Ian and Mark disect the many recorded versions, and are joined by Pat Fish of The Jazz Butcher for a chat about a couple of versions where Pat supplied vocals. Plus contributions from a few other fans for which this is a favourite song.
-		</EmbedMedia>
-		<EmbedMedia data={{
-			mediaurl: "https://soundcloud.com/spacemenpod/spacemen-pod-episode-8",
-			title: "Spacemen Pod Episode 8",
-			datetime: "2021-12-30" }}
-		>
-		<p />
-		We take a look back at Spacemen 3&apos;s performance at Watermans Arts Centre from 19 August 1988, the gig everyone now calls Dreamweapon. With contributions from Spaceman for the night Steve Evans, bassist Will Carruthers, taper Andy Jackson, Vinita Joshi of Rocket Girl Records, Steve Mitchell of Fierce Recordings, attendees Col Todd and Paul Thorpe from the band The Loveblobs, latter-day Spaceman Mark Refoy, and the late, great, Pat Fish.
-		</EmbedMedia>
+		{/*
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading) && <>
 				<AudioSection title="Black Eg" project="eg" data={data.filter((d: any) => d.project === 'eg')} />
 				<AudioSection title="Sumosonic" project="sumo" data={data.filter((d: any) => d.project === 'sumo')} />
 				<AudioSection title="Wilson" project="wilson" data={data.filter((d: any) => d.project === 'wilson')} />
-				<AudioSection title="Vaguely Familiar" project="vaguely" data={data.filter((d: any) => d.project === 'vaguely')} />
-				<AudioSection title="Cambodia" project="cambodia" data={data.filter((d: any) => d.project === 'cambodia')} />
 				<AudioSection title="Interviews" project="jbc" data={data.filter((d: any) =>
 					(d.project === 'jbc' || d.project.length === 0) && (d.subtype === 'interview' || d.name === 'The Interview'))} />
 				<AudioSection title="Jazz Butcher" project="jbc" data={data.filter((d: any) =>
@@ -105,6 +52,7 @@ const Audio = () => {
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoadingLive) && <AudioSection title="Live Shows" project="jbc" data={dataLive.results} />}
 		</Suspense>
+		*/}
 		<pre>
 		expose the contents of:
 		https://s3.amazonaws.com/assets.jazzbutcher.com/audio/flac/

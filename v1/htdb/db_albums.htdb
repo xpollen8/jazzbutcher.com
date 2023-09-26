@@ -1652,7 +1652,7 @@
 #define	albums[38]->contribution vodka
 
 #define	albums[39]->type	single
-#define	albums[39]->lookup	_16yr
+#define	albums[39]->lookup	sixteen_years
 #define	albums[39]->onalbum	ill
 #define	albums[39]->label	creation_records
 #define	albums[39]->catalog	CRESCD167
@@ -2799,12 +2799,16 @@
 
 #define	albums[51]->buy
 #define	albums[51]->type	dvd,live,project
-#define	albums[51]->href
+#define	albums[51]->href	/albums/dvd_wilson_no_known_predators.html
 #define	albums[51]->title	No Known Predators
-#define	albums[51]->thumb
+#define	albums[51]->thumb	/images/releases/dvd_wilson_no_known_predators_front
+#define	albums[51]->images	/images/releases/dvd_wilson_no_known_predators_back$$/images/releases/dvd_wilson_no_known_predators_disc
 #define	albums[51]->project wilson
-#define	albums[51]->blurb The Wilson DVD, entitled No Known Predators, is to be released on Friday 7th September 2012.
 #define	albums[51]->dtreleased	2012-09-07
+#define	albums[51]->blurb
+	Recorded live at The Picturedome, Northampton NN1, 15th August 2009.
+	<p />
+	Warning:This film contains strong language, adult themes and scenes of human frailty.
 
 #define	albums[52]->type	EP
 #define	albums[52]->lookup	conspir12

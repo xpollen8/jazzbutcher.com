@@ -5,7 +5,7 @@ import { truncAt, parseCredit } from '@/lib/macros';
 import { expand } from '@/lib/defines';
 
 const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined) => {
-	const { type, href, title, thumb, blurb, dtreleased, dtrecorded, studio, buy, project, lookup,
+	const { type, href, title, thumb, blurb, dtreleased, dtrecorded, studio, buy, lookup,
 		label, catalog, media, country, contribution, children, } = props; 
 	const blurb_credit = props?.credit;
 
@@ -14,7 +14,7 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 	return (
 		<div key={key || 0}>
 			<FeaturedItem
-				className={`w-full gig_${project}`}
+				className={`w-full`}
 				link={href}
 				media={media}
 				label={expand(label)}

@@ -1,7 +1,6 @@
 "use client"
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import FishySession from '@/components/FishySession';
 import LetterHeader from '@/components/LetterHeader';
 
@@ -60,30 +59,28 @@ const sessions = [
 ];
 
 const FishyMansions = () =>
-<>
-	<Header section='pat' title="Fishy Mansions" />
-	<div className="layout">
-		<LetterHeader title="The Fishy Mansions Sessions" subhead="2020-2021" />
-    <Swiper
-				style={{  height: '720px', border: '1px solid black', overflow: 'scroll' }}
-			modules={[Navigation, Scrollbar, ]}
-			navigation
-			scrollbar={{ draggable: true }}
-			pagination={{ clickable: true }}
-      spaceBetween={50}
-      slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-			{sessions.map(( session: any, ordinal: number ) =>
-				<SwiperSlide key={ordinal}>
-					<FishySession session={{...session, ordinal}} />
-				</SwiperSlide>
-			)}
-		</Swiper>
-		<p />
-		<Footer />
-	</div>
-</>
+	<>
+		<Header section="fishy_mansions" />
+		<main>
+			<LetterHeader title="The Fishy Mansions Sessions" subhead="2020-2021" />
+			<Swiper
+					style={{  height: '720px', border: '1px solid black', overflow: 'scroll' }}
+				modules={[Navigation, Scrollbar, ]}
+				navigation
+				scrollbar={{ draggable: true }}
+				pagination={{ clickable: true }}
+				spaceBetween={50}
+				slidesPerView={1}
+				onSlideChange={() => console.log('slide change')}
+				onSwiper={(swiper) => console.log(swiper)}
+			>
+				{sessions.map(( session: any, ordinal: number ) =>
+					<SwiperSlide key={ordinal}>
+						<FishySession session={{...session, ordinal}} />
+					</SwiperSlide>
+				)}
+			</Swiper>
+		</main>
+	</>
 
 export default FishyMansions;

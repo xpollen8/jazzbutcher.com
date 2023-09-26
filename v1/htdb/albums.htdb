@@ -6277,8 +6277,8 @@ Previously available on the ${fishco} LP/CD.
 	${a_cat} CRESCD167
 	${a_dtreleased} 6Mar1995
 	${a_rec} Oct 1994, Northampton, UK
-#	${addAlbumPerf(release=16yr, person=[[person:Max_Reed]], instruments=engineer)}
-#	${addAlbumPerf(release=16yr, person=[[person:David_J.]], instruments=producer)}
+#	${addAlbumPerf(release=sixteen_years, person=[[person:Max_Reed]], instruments=engineer)}
+#	${addAlbumPerf(release=sixteen_years, person=[[person:David_J.]], instruments=producer)}
 #	${a_eng} Max Reed
 #	${a_prod} ${dj}
 	${det_end}
@@ -6289,12 +6289,12 @@ Previously available on the ${fishco} LP/CD.
 	<br />${sumo} (CD only)
 	${tun_end}
 	${players_beg}
-	${fetchAlbumPersonnel(release=16yr)}
+	${fetchAlbumPersonnel(release=sixteen_years)}
 
-#${addAlbumPerf(release=16yr, person=[[person:Pat_Fish]], song=NULL)}
-#${addAlbumPerf(release=16yr, person=[[person:Dooj_Wilkinson]], song=NULL)}
-#${addAlbumPerf(release=16yr, person=[[person:Gabriel_Turner]], song=NULL)}
-#${addAlbumPerf(release=16yr, person=[[person:Dave_Henderson]], song=NULL)}
+#${addAlbumPerf(release=sixteen_years, person=[[person:Pat_Fish]], song=NULL)}
+#${addAlbumPerf(release=sixteen_years, person=[[person:Dooj_Wilkinson]], song=NULL)}
+#${addAlbumPerf(release=sixteen_years, person=[[person:Gabriel_Turner]], song=NULL)}
+#${addAlbumPerf(release=sixteen_years, person=[[person:Dave_Henderson]], song=NULL)}
 #	${pat}
 #	<br />${dooj}
 #	<br />${gab}
@@ -6307,7 +6307,7 @@ Previously available on the ${fishco} LP/CD.
 	MONEY'S GONE.&quot; Whoever compared it to &quot;${excel}&quot;
 	wasn't far from the mark, except it's markedly less polite.
 	${bishop_end}
-	${mkAlbumPress(album=16yr)}
+	${mkAlbumPress(album=sixteen_years)}
 
 	${jbc_footer}
 #live	endif

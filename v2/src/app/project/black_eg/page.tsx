@@ -4,12 +4,14 @@ import AudioLive from '@/components/AudioLive';
 import LetterHeader from '@/components/LetterHeader';
 import EmbedMedia from '@/components/EmbedMedia';
 import FilterReleases from '@/components/FilterReleases';
+import FilterPresses from '@/components/FilterPresses';
 
 const EgAudio = () =>
 <>
 	<Header project='eg' section="black_eg" />
 	<main>
 		<FilterReleases project="eg" />
+		<FilterPresses project="eg" />
 		<AudioLive project='eg' />
 		<LetterHeader title="Unique black eg tracks" />
 		<div className="listItem">

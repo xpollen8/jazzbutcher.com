@@ -32,6 +32,16 @@ const with_others = [
 ];
 
 const collaborations = [
+	{ text: "Four One And Only's", aux: "Vocals for 'The U.F.O. Man'",
+		children: <>
+			In 1994, Pat provided voice on a Jonathan Richman track backed by
+			the Dutch group &quot;Four One And Only&apos;s&quot;. This track appeared on two
+			different Jonathan Richman tribute albums:
+			<Link href="/releases/va_canyoutalktothedude_1">Can You Talk To The Dude? #1</Link>
+			and
+			<Link href="/releases/va_canyoutalktothedude_2">Can You Talk To The Dude? #2</Link>
+		</>
+	},
 	{ uri: '/project/cambodia', text: 'Cambodia', aux: "w/Cole Coonce" },
 	{ uri: '/project/vaguely_familiar', text: 'Vaguely Familiar', aux: "w/Richard Formby + Sumishta Brahm"  },
 	{ uri: '/project/trampling_tokyo', text: "With Alan Moore", aux: "The 'Trampling Tokyo' single" },

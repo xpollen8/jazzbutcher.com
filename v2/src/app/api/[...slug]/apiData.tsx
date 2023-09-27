@@ -110,16 +110,16 @@ const apiData = async (path: string, args?: string) => {
 					credits[cr.performer].album_credits += ', ' + cr.instruments;
 				}
 			})
-			data?.results.forEach((song: any) => {
-				if (!songs.includes(song.title)) songs.push(song.title);
+			crdata?.results.filter((song: any) => song?.song)?.forEach((song: any) => {
+				if (!songs.includes(song.song)) songs.push(song.song);
 				if (song.performer) {
 					if (!credits[song.performer]) {
 						credits[song.performer] = { song_credits: {} }
 					}
-					if (!credits[song.performer].song_credits[song.title]) {
-						credits[song.performer].song_credits[song.title] = [];
+					if (!credits[song.performer].song_credits[song.song]) {
+						credits[song.performer].song_credits[song.song] = [];
 					}
-					credits[song.performer].song_credits[song.title].push(song.instruments);
+					credits[song.performer].song_credits[song.song].push(song.instruments);
 				}
 			});
 			return {
@@ -127,6 +127,7 @@ const apiData = async (path: string, args?: string) => {
 				numResults: songs.length,
 				results: songs,
 				credits,
+				songs: data,
 			}
 		}
 		case 'gigs_by_musician': {
@@ -154,6 +155,7 @@ const apiData = async (path: string, args?: string) => {
 		case 'releases':
 			return await apiDataFromHTDBServer('db_albums/data.json');
 		case 'release_by_lookup': {
+			if (args)
 			return await apiDataFromHTDBServer(`db_albums/data.json?lookup=${args}`);
 		}
 	}

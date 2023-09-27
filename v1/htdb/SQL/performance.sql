@@ -5,13 +5,19 @@ CREATE TABLE `performance` (
   `performance_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `datetime` datetime NOT NULL,
   `category` enum('event','release','with') DEFAULT 'event',
+  `lookup` varchar(100),
+  `variant` varchar(20),
   `type` enum('Aside','Bside','warmup','set','encore'),
   `performer` varchar(100) DEFAULT NULL,
+  `aka` varchar(50) DEFAULT NULL,
   `title` varchar(50) DEFAULT NULL,	/* album title, eg */
   `setnum` tinyint(3) unsigned DEFAULT NULL,
   `ordinal` tinyint(3) unsigned DEFAULT NULL,
   `song` varchar(50) DEFAULT NULL,
-  `instruments` varchar(100) DEFAULT NULL,
+  `version` varchar(20),
+  `author` varchar(50) DEFAULT NULL,
+  `instruments` varchar(200) DEFAULT NULL,
+  `media` varchar(100) DEFAULT NULL,
   KEY `idx0` (`performance_id`),
   KEY `idx1` (`datetime`,`category`),
   KEY `idx2` (`category`,`title`),
@@ -135,12 +141,6 @@ insert into performance set category="event", datetime="2000-05-07 00:00:00", ty
 UNLOCK TABLES;
 
 
-# ${addAlbumPerf(release=16yr, person=[[person:Dave_Henderson]])}
-# ${addAlbumPerf(release=16yr, person=[[person:David_J.]], instruments=producer)}
-# ${addAlbumPerf(release=16yr, person=[[person:Dooj_Wilkinson]])}
-# ${addAlbumPerf(release=16yr, person=[[person:Gabriel_Turner]])}
-# ${addAlbumPerf(release=16yr, person=[[person:Max_Reed]], instruments=engineer)}
-# ${addAlbumPerf(release=16yr, person=[[person:Pat_Fish]])}
 # ${addAlbumPerf(release=adventurers, person=[[person:Eric_James]], instruments=mastered)}
 # ${addAlbumPerf(release=adventurers, person=[[person:Jonny_Mattock]], instruments=drums\, percussion)}
 # ${addAlbumPerf(release=adventurers, person=[[person:Max_Eider]], instruments=guitar\, singing)}
@@ -527,6 +527,12 @@ UNLOCK TABLES;
 # ${addAlbumPerf(release=sex, person=[[person:Mitch_Jenkins]], instruments=photography)}
 # ${addAlbumPerf(release=sex, person=[[person:Owen_Jones]])}
 # ${addAlbumPerf(release=sex, person=[[person:Pat_Fish]])}
+# ${addAlbumPerf(release=sixteen_years, person=[[person:Dave_Henderson]])}
+# ${addAlbumPerf(release=sixteen_years, person=[[person:David_J.]], instruments=producer)}
+# ${addAlbumPerf(release=sixteen_years, person=[[person:Dooj_Wilkinson]])}
+# ${addAlbumPerf(release=sixteen_years, person=[[person:Gabriel_Turner]])}
+# ${addAlbumPerf(release=sixteen_years, person=[[person:Max_Reed]], instruments=engineer)}
+# ${addAlbumPerf(release=sixteen_years, person=[[person:Pat_Fish]])}
 # ${addAlbumPerf(release=smith, person=[[person:Alice_Thompson]], instruments=Organ)}
 # ${addAlbumPerf(release=smith, person=[[person:David_E._Barker]], instruments=producer)}
 # ${addAlbumPerf(release=smith, person=[[person:Kevin_Haskins]], instruments=Drums)}

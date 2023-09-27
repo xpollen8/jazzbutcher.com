@@ -2,10 +2,12 @@
 # 2021-10-05
 # 23,300 days
 
-## images=URL;;credit;;credit_url;;credit_date;;caption$$....
-#define	parseImages(prefix, field)
+## images=URL;;caption;;credit;;credit_url;;credit_date$$....
+#define	parseAlbumImages(prefix, field, width=250)
 #live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
 #live		loop(ci, 1, ${chunks->numResults})
+#live			if (define(parts[2]), )
+#live			endif
 #live			if (define(parts[3]), )
 #live			endif
 #live			if (define(parts[4]), )
@@ -14,7 +16,36 @@
 #live			endif
 #live			if (makeArray(parts, ;;, ${chunks[${ci}]}))
 #live				if (defined(parts[1]))
-						<a href="${parts[1]}.jpg"><img src="${parts[1]}_250.jpg" alt="scan" width="250" /></a>
+						<a href="${parts[1]}.jpg"><img src="${parts[1]}_${width}.jpg" alt="scan" width="${width}" /></a>
+#live					if (defined(parts[2]))
+							${g_caption(${parts[2]})}
+#live					endif
+#live				endif
+#live				if (defined(parts[3]))
+						<center style="padding-bottom: 10px;">
+							${parseCredit(${parts[3]};;${parts[4]};;${parts[5]})}
+						</center>
+#live				endif
+					<p />
+#live			endif
+#live		endloop
+#live	endif
+## images=URL;;credit;;credit_url;;credit_date;;caption$$....
+#define	parseImages(prefix, field, width=250)
+#live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
+#live		loop(ci, 1, ${chunks->numResults})
+#live			if (define(parts[2]), )
+#live			endif
+#live			if (define(parts[4]), )
+#live			if (define(parts[3]), )
+#live			endif
+#live			if (define(parts[4]), )
+#live			endif
+#live			if (define(parts[5]), )
+#live			endif
+#live			if (makeArray(parts, ;;, ${chunks[${ci}]}))
+#live				if (defined(parts[1]))
+						<a href="${parts[1]}.jpg"><img src="${parts[1]}_${width}.jpg" alt="scan" width="${width}" /></a>
 #live					if (defined(parts[5]))
 							${g_caption(${parts[5]})}
 #live					endif
@@ -28,6 +59,7 @@
 #live			endif
 #live		endloop
 #live	endif
+
 #define	isNew(dt)
 #live	if (getval(dt))
 #live	if (parseUnix(${dt}) > ${eval(${parseUnix(${_db_timestamp})} - (60 * 60 * 24 * 90))})

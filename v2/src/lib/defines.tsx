@@ -482,8 +482,9 @@ export const va_andy_2007 = linkSingle({ title: "VA: Uncle Andy's 2007 Christmas
 //
 //	recorded covers
 //
+export const silver_street = linkSong({ title: "Silver Street", author: "Nikki Sudden" });
 export const aff = linkSong({ title: "Affection", author: "Jonathan Richman" });
-export const ufe_man = linkSong({ title: "The U.F.O. Man", author: "Jonathan Richman" });
+export const ufo_man = linkSong({ title: "The U.F.O. Man", author: "Jonathan Richman" });
 export const capt = linkSong({ title: "Tugboat Captain", author: "Dean Wareham" });
 export const dance = linkSong({ title: "Do You Wanna Dance", author: "Bobby Freeman" });
 export const envoy = linkSong({ title: "The Chinese Envoy", author: "John Cale" });
@@ -1031,7 +1032,8 @@ export const mapSongs: {[key: string]: string} = {
 	"The_One_You_Adore": "adore",
 	"The_Onion_Field": "onion",
 	"The_Partys_Over": "pover",
-	"The_UFO_Man": "ufe_man",
+	"Silver_Street": "silver_street",
+	"The_UFO_Man": "ufo_man",
 	"The_Ugliest_Song_In_The_World": "ugly",
 	"The_Word_I_Was_Looking_For": "word",
 	"Thing": "thing",

@@ -1165,6 +1165,7 @@
 #define	albums[29]->type	album
 #define	albums[29]->lookup	blue
 #define	albums[29]->label	creation_records, sky_records
+#define	albums[29]->catalog	CRECD110, SKYCLAD 5080
 #define	albums[29]->media	LP;CD
 #define	albums[29]->href	${jbc_albums}/blue.html
 #define	albums[29]->title	Condition Blue
@@ -1174,7 +1175,7 @@
 #define	albums[29]->dtrecorded	1991-04/1991-05
 #define	albums[29]->studio	Raven, Norfolk and Submarine Sound, Northampton
 #define	albums[29]->dtreleased	1991 (${creat}) 1992 (Sky)
-#define	albums[29]->notes	The Sky release has sides A&B switched
+#define	albums[29]->notes	The Sky (CD only) release has sides A&B switched
 #define	albums[29]->thanks
     Thanks to the bureaucratic idiocy on the part of the Butcher
     and his associates the contributions of Alex Lee &
@@ -2798,8 +2799,9 @@
 #define	albums[50]->dtreleased	1996-12-05
 
 #define	albums[51]->buy
+#define	albums[51]->lookup	dvd_wilson_no_known_predators
 #define	albums[51]->type	dvd,live,project
-#define	albums[51]->href	/albums/dvd_wilson_no_known_predators.html
+#define	albums[51]->href	${jbc_albums}/dvd_wilson_no_known_predators.html
 #define	albums[51]->title	No Known Predators
 #define	albums[51]->thumb	/images/releases/dvd_wilson_no_known_predators_front
 #define	albums[51]->images	/images/releases/dvd_wilson_no_known_predators_back$$/images/releases/dvd_wilson_no_known_predators_disc
@@ -2870,7 +2872,7 @@
 		A lovely interpretation of the Jonathan Richman classic which was originally
 		released in 1979 on the <b>Back In Your Life</b> LP by Jonathan Richman And The
 		Modern Lovers.
-#		The cover version can also be found on the ${affect} 12".
+#		The cover version can also be found on the ${va_spark} 12".
 #define	albums[54]->credit		Perfection As A Hipster;;Andreas.Hering@stud.uni-hannover.de;;2000-10-10
 
 #define	albums[55]->type	single
@@ -2888,7 +2890,9 @@
 
 #define	albums[56]->type	various
 #define	albums[56]->lookup	va_bigtime_syndrome
-#define	albums[56]->href
+#define	albums[56]->label	BigTime
+#define	albums[56]->catalog	 6050-1-B
+#define	albums[56]->href	${jbc_albums}/va_bigtime_syndrome.html
 #define	albums[56]->title	VA: The BigTime Syndrome
 #define	albums[56]->thumb	/images/releases/va_bigtimesyndrome
 #define	albums[56]->contribution becky
@@ -2941,12 +2945,12 @@
 
 #define	albums[59]->type	various
 #define	albums[59]->lookup	va_gunfire
-#define	albums[59]->href
+#define	albums[59]->href	${jbc_albums}/va_gunfire.html
 #define	albums[59]->title	VA: Gunfire & Pianos
 #define	albums[59]->thumb	${jbc_images}/releases/va_gunfire_front
 #define	albums[59]->label	Situation Two
 #define	albums[59]->catalog	SITU 17
-#define	albums[59]->dtreleased	1986
+#define	albums[59]->dtreleased	1985
 #define	albums[59]->contribution lost
 #define	albums[59]->blurb
 		The Jazz Butcher contribution subsequently appeared as an additional track on ${gift1}. 
@@ -2954,14 +2958,14 @@
 
 #define	albums[60]->type	various
 #define	albums[60]->lookup	va_50k
-#define	albums[60]->href
+#define	albums[60]->href	${jbc_albums}/va_50k.html
 #define	albums[60]->title	VA: 50,000 Glass Fans Can't Be Wrong
 #define	albums[60]->thumb	${jbc_images}/releases/va_50k_front
 #define	albums[60]->label	glass_records
 #define	albums[60]->catalog	GLALP 019
 #define	albums[60]->dtreleased	1986
 #define	albums[60]->contribution city
-#define	albums[60]->blurb
+#define	albums[60]->notes
 		Note: Limited edition on clear vinyl.
 		The Jazz Butcher contribution subsequently appeared on the ${gift2}
 		LP/CD. Having said that, this album also includes an early studio
@@ -2973,34 +2977,34 @@
 
 #define	albums[61]->type	various
 #define	albums[61]->lookup	va_kids
-#define	albums[61]->href
+#define	albums[61]->href	${jbc_albums}/va_kids.html
 #define	albums[61]->title	VA: Doing It For The Kids
 #define	albums[61]->thumb	${jbc_images}/releases/va_kids_front
 #define	albums[61]->label	creation_records
 #define	albums[61]->catalog	CRELP 037
-#define	albums[61]->dtreleased	1988
+#define	albums[61]->dtreleased	1988-08-08
 #define	albums[61]->contribution _49
 
 #define	albums[62]->type	various
 #define	albums[62]->lookup	va_pensioners90
-#define	albums[62]->href
+#define	albums[62]->href	${jbc_albums}/va_pensioners90.html
 #define	albums[62]->title	VA: Pensioners On Ecstasy
 #define	albums[62]->thumb	${jbc_images}/releases/va_pensioners90
 #define	albums[62]->label	creation_records
 #define	albums[62]->catalog	CRELP 082
-#define	albums[62]->dtreleased	1990
+#define	albums[62]->dtreleased	1990-11
 #define	albums[62]->contribution odd
 
 #define	albums[63]->type	various
 #define	albums[63]->lookup	va_pensioners91
-#define	albums[63]->href
+#define	albums[63]->href	${jbc_albums}/va_pensioners91.html
 #define	albums[63]->title	VA: American Pensioners On Ecstasy
 #define	albums[63]->thumb	${jbc_images}/releases/va_pensioners91
 #define	albums[63]->label	creation_records
 #define	albums[63]->catalog	CRELP 095
-#define	albums[63]->dtreleased	1991
+#define	albums[63]->dtreleased	1991-04
 #define	albums[63]->contribution go
-#define	albums[63]->blurb
+#define	albums[63]->patsez
 		<div class="annotation">
 		Another track from that L.A. babe, ${deirdre}'s radio show.
 		</div>
@@ -3014,7 +3018,7 @@
 #define	albums[64]->catalog	RATHER 13
 #define	albums[64]->title	VA: What A Nice Way To Turn Seventeen # 3
 #define	albums[64]->thumb	/images/releases/va_seventeen_3_front;;Front
-#define	albums[64]->thumb	/images/releases/va_seventeen_3_back;;Back
+#define	albums[64]->images	/images/releases/va_seventeen_3_back;;Back$$/images/releases/va_seventeen_3_A$$/images/releases/va_seventeen_3_B
 #define	albums[64]->dtreleased	1984
 #define	albums[64]->contribution h2o
 #define	albums[64]->blurb
@@ -3024,33 +3028,37 @@
 
 #define	albums[65]->type	various
 #define	albums[65]->lookup	va_summer
-#define	albums[65]->href
-#define	albums[65]->label
-#define	albums[65]->catalog
+#define	albums[65]->href	${jbc_albums}/va_summer.html
+#define	albums[65]->label	Oglio Records
+#define	albums[65]->catalog		OGL86959-2
 #define	albums[65]->title	VA: Songs For Summer
 #define	albums[65]->thumb	/images/releases/va_summer
 #define	albums[65]->dtreleased	2000
 #define	albums[65]->contribution indian_summer
-#define	albums[65]->blurb
-		<div class="annotation">
-		Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects.
-			<p />
-				I contributed a track, recorded on Curtis' computer. It's a version of "Indian Summer" as written by the Beat Happening, and recorded by Luna and Spectrum.
-		</div>
+#define	albums[65]->patsez
+	Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects.
+	<p />
+	I contributed a track, recorded on Curtis' computer. It's a version of "Indian Summer" as written by the Beat Happening, and recorded by Luna and Spectrum.
 
 #define	albums[66]->type	various
 #define	albums[66]->lookup	va_abus_126
-#define	albums[66]->href
+#define	albums[66]->href	${jbc_albums}/va_abus_126.html
 #define	albums[66]->title	VA: Abus Dangereux #126
-#define	albums[66]->media	CD
+#define	albums[66]->label	Abus Dangereux
+#define	albums[66]->catalog	CD Abus 126
+#define	albums[66]->country	France
+#define	albums[66]->media	CDR
 #define	albums[66]->country	France
 #define	albums[66]->thumb	/images/releases/va_abus_126
-#define	albums[66]->dtreleased	2016
+#define	albums[66]->dtreleased	2016-04
 #define	albums[66]->contribution animals
 
 #define	albums[67]->type	various
+#define	albums[67]->media	CD
 #define	albums[67]->lookup	va_nh_underglass
-#define	albums[67]->href
+#define	albums[67]->label	White Elephant Records
+#define	albums[67]->catalog	WER008
+#define	albums[67]->href	${jbc_albums}/va_nh_underglass.html
 #define	albums[67]->title	VA: Northampton Under Glass II
 #define	albums[67]->thumb	/images/releases/va_nh_underglass
 #define	albums[67]->dtreleased	2013
@@ -3060,17 +3068,17 @@
 #define	albums[68]->lookup	va_1000songs
 #define	albums[68]->country	Germany
 #define	albums[68]->media	CD/booklet
-#define	albums[68]->href
+#define	albums[68]->href	${jbc_albums}/va_1000songs.html
 #define	albums[68]->title	VA: 1000 Songs
 #define	albums[68]->thumb	/images/releases/va_1000songs
-#define	albums[68]->dtreleased	1985
+#define	albums[68]->dtreleased	2005
 #define	albums[68]->contribution holiday
 #define	albums[68]->blurb
 This release by the German newspaper "Süddeutsche Zeitung" combines a book and a CD.
 
 #define	albums[6]->type	various
 #define	albums[6]->lookup	va_pulp
-#define	albums[6]->href
+#define	albums[6]->href		${jbc_albums}/va_pulp.html
 #define	albums[6]->label	Globe of Bulbs
 #define	albums[6]->catalog	LSD5
 #define	albums[6]->title	VA: Oozing Through the Ozone Layer
@@ -3086,7 +3094,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 
 #define	albums[69]->type	single
 #define	albums[69]->lookup	shock_drugs
-#define	albums[69]->href
+#define	albums[69]->href	${jbc_albums}/shock_drugs.html
 #define	albums[69]->label	Shock
 #define	albums[69]->country	Australia
 #define	albums[69]->catalog	SHOCK 4007
@@ -3113,7 +3121,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 
 #define	albums[71]->type	various
 #define	albums[71]->lookup	bigtime_sampler
-#define	albums[71]->href
+#define	albums[71]->href	${jbc_albums}/bigtime_sampler.html
 #define	albums[71]->label	BigTime
 #define	albums[71]->country
 #define	albums[71]->catalog	BIGT 1
@@ -3122,8 +3130,10 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[71]->dtreleased	1986
 #define	albums[71]->media	7"
 #define	albums[71]->contribution bigbad
-#define	albums[71]->blurb
-	Also includes tracks from Love Tractor, The Pastels, and The Lucy Show
+#define	albums[71]->notes
+	Promotional 7" EP.
+	Was included free in the initial pressing of 830 947-1, Hoodoo Gurus 'Blow Your Cool' LP.
+	Hence reference to 830 947-1 on centre labels, along with "Side 3-Free" and "Side 4-Free"
 
 #define	albums[72]->type	single
 #define	albums[72]->lookup	bigtime_angels
@@ -3183,7 +3193,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 
 #define	albums[75]->type	various
 #define	albums[75]->lookup	va_creation_unreleased
-#define	albums[75]->href
+#define	albums[75]->href	${jbc_albums}/va_creation_unreleased.html
 #define	albums[75]->title	VA: Creation Unreleased
 #define	albums[75]->label	creation_records
 #define	albums[75]->catalog	SAMP 2821
@@ -3191,10 +3201,10 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[75]->media	CD
 #define	albums[75]->dtreleased	1995
 #define	albums[75]->contribution chang
-#define	albums[75]->blurb
-	Note: The back cover mistakenly lists the Jazz Butcher track as "President Gang".
-	The information printed on the CD itself is correct.
-	This CD was a "promotional only" issue.
+#define	albums[75]->notes
+	The Back Cover Mispells the Artist name on Track 6.
+	It says "THE JAZZ BUTHER". Correctly, it Should say "THE JAZZ BUTCHER"
+	Song "President Gang" (on back cover) instead of "President Chang" (correct title, on CD label)
 
 #define	albums[76]->buy     http://www.stormingthebase.com/the-jazz-butcher-brave-new-waves-session-blue-vinyl/
 #define	albums[76]->type	live
@@ -3482,7 +3492,20 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[92]->blurb
 	In loving memory. Patrick Huntrods (AKA Pat Fish). (20 December 1957 - 5 October 2021)
 
-#define	albums->numResults	92
+#define	albums[93]->type	various
+#define	albums[93]->lookup	va_patron_saints
+#define	albums[93]->href	${jbc_albums}/va_patron_saints.html
+#define	albums[93]->title	The Patron Saints of Teenage
+#define	albums[93]->label	creation_records
+#define	albums[93]->catalog	WK 57562
+#define	albums[93]->thumb	/images/releases/va_patron_saints_front
+#define	albums[93]->images	/images/releases/va_patron_saints_inner
+#define	albums[93]->media	CD
+#define	albums[93]->dtreleased	1994
+#define	albums[93]->buy
+#define	albums[93]->blurb
+
+#define	albums->numResults	93
 
 #define	lookupAlbumBy(l, f=lookup, backupF=href)
 #live	loop(li, 1, ${albums->numResults})

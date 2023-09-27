@@ -13,6 +13,104 @@ ${tag_end}
 	</blockquote>
 #live	endif
 
+#define	Aside	A-Side
+#define	Bside	B-Side
+
+#define	fetchAlbumSongs(release)
+#
+#live	if ((sql(as:select * from performance where lookup="${release}" and performer = '' and song is not null order by type, ordinal)) && (getnum(as->numResults) > 0))
+#live	if (define(_side,))
+#live	endif
+
+#live	if (getval(as[1]->type) != side)
+	${tag_beg}
+	Tracks
+	${tag_end}
+	<blockquote>
+#live	endif
+
+#live	while (i = as[*]->song)
+#live		if (getval(as[${i}]->type) != set)
+#live			if (getval(as[${i}]->type) != ${_side})
+#live				if (define(_side, ${as[${i}]->type}))
+</blockquote>
+${tag_beg}
+#live	if (defined(${_side}))
+${${_side}}
+#live	else
+${_side}
+#live	endif
+${tag_end}
+<blockquote>
+#live				endif
+#live			endif
+#live		endif
+#live		if (defined(as[${i}]->ordinal))
+				${as[${i}]->ordinal}.
+#live		endif
+		${songLinkMapped(title=${literalizeCommas(${as[${i}]->song})})}
+#live		if (getval(as[${i}]->variant) != NULL)
+				<span class="song_author">(${as[${i}]->variant})</span>
+#live		endif
+#live		if (getval(as[${i}]->version) != NULL)
+				<span class="song_author">(${as[${i}]->version})</span>
+#live		endif
+#live		if (getval(as[${i}]->author) != NULL)
+				<span class="song_author">(${as[${i}]->author})</span>
+#live		endif
+#live		if (defined(as[${i}]->media))
+			${linkAudio(title=${literalizeCommas(${as[${i}]->song})}, mp3=${as[${i}]->media})}
+#live		endif
+	<br />
+#live	endwhile
+
+	</blockquote>
+
+#live	endif
+
+#define	fetchAlbumPersonnel(release)
+#
+#	noun:album_personnel
+#
+#live	if ((sql(ap:select * from performance where lookup="${release}" and performer <> '')) && (getnum(ap->numResults) > 0))
+	${players_beg}
+${define(lastPer,XXX)}
+#live	while (api = ap[*]->performer)
+#live	if (getval(lastPer) != ${ap[${api}]->performer})
+#live	if (getval(lastPer) != XXX)}
+	<br/>
+#live	endif
+${parse(para=ap[${api}]->performer, act=no)}
+#live	endif
+#live	if (defined(ap[${api}]->instruments))
+- ${ap[${api}]->instruments}
+#live	endif
+${define(lastPer, ${ap[${api}]->performer})}
+#live	if (defined(ap[${api}]->song))
+	on
+#live	if (makeArray(_as, [comma], ${ap[${api}]->song}))
+#live	while (_asi = _as[*]))
+#live	if (getnum(_asi) > 1)
+	,
+#live	endif
+	${songLinkMapped(title=${_as[${_asi}]})}
+#live	endwhile
+#live	endif
+#live	endif
+#live	endwhile
+	${players_end}
+#live	endif
+
+#define fetchAlbumArt(prefix)
+#live	if ((defined(${prefix}->thumb)) || (defined(${prefix}->images)))
+<center>
+<div style="display:flex; flex: flex-wrap;">
+<div style="width: 500px;">${parseAlbumImages(prefix=${prefix}, field=thumb, width=500)}</div>
+<div style="width: 250px;">${parseAlbumImages(prefix=${prefix}, field=images)}</div>
+</div>
+</center>
+#live	endif
+
 #define	mkAlbumHeader(lookup, body)
 #live	if (define(prefix, ${lookupAlbumBy(l=${lookup}, f=lookup)}))
 	${mkHeader(section=albums, title=${${prefix}->title}))}
@@ -54,7 +152,15 @@ ${tag_end}
 	${a_cat} ${${prefix}->catalog}
 #live	endif
 	${det_end}
+#live	if (defined(${prefix}->notes))
+	${tag_beg}Notes${tag_end}
+	<blockquote>
+		${${prefix}->notes}
+	</blockquote>
+#live	endif
+	${fetchAlbumSongs(release=${lookup})}
 	${fetchAlbumPersonnel(release=${lookup})}
+	${fetchAlbumArt(prefix=${prefix})}
 ##live	if (defined(${prefix}->blurb))
 #	${doObservation(obs=${literalizeCommas(
 #		${${prefix}->blurb}
@@ -67,48 +173,34 @@ ${tag_end}
 #live	if (defined(body))
 	${body}
 #live	endif
+#live	if (defined(${prefix}->thanks))
+	${thx_beg}
+		${${prefix}->thanks}
+	${thx_end}
+#live	endif
 #live	if (defined(${prefix}->liner))
 	${lin_beg}
 		${${prefix}->liner}
 	${lin_end}
 #live	endif
+#live	if (defined(${prefix}->patsez))
+	${patsays_beg}
+		${${prefix}->patsez}
+	${patsays_end}
+#live	endif
+	${mkAlbumPress(album=${lookup})}
 #live	endif
 
-#define	fetchAlbumPersonnel(release)
-#
-#	noun:album_personnel
-#
-#live	if ((sql(ap:select * from performance where lookup="${release}")) && (getnum(ap->numResults) > 0))
-	${players_beg}
-${define(lastPer,XXX)}
-#live	while (api = ap[*]->performer)
-#live	if (getval(lastPer) != ${ap[${api}]->performer})
-#live	if (getval(lastPer) != XXX)}
-	<br/>
-#live	endif
-${parse(para=ap[${api}]->performer, act=no)}
-#live	endif
-#live	if (defined(ap[${api}]->instruments))
-- ${ap[${api}]->instruments}
-#live	endif
-${define(lastPer, ${ap[${api}]->performer})}
-#live	if (defined(ap[${api}]->song))
-	on
-#live	if (makeArray(_as, [comma], ${ap[${api}]->song}))
-#live	while (_asi = _as[*]))
-#live	if (getnum(_asi) > 1)
-	,
-#live	endif
-	${songLinkMapped(title=${_as[${_asi}]})}
-#live	endwhile
-#live	endif
-#live	endif
-#live	endwhile
-	${players_end}
+#define	clearAlbumPerf(release)
+#live	if (defined(updateAlbum))
+#live		if (sql(delete from performance where lookup="${release}"))
+#live		endif
 #live	endif
 
-#define	addAlbumPerf(release, person, aka=NULL, instruments, song=NULL, ordinal, type=set)
-#live	if (sql(insert into performance set lookup="${release}", category="release", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal=${ordinal}, song=${song}))
+#define	addAlbumPerf(release, person, aka=NULL, instruments, song=NULL, ordinal=NULL, type=set, datetime, media=NULL, author=NULL, version, variant)
+#live	if (defined(updateAlbum))
+#live		if (sql(insert into performance set lookup="${release}", category="release", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal=${ordinal}, song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}"))
+#live		endif
 #live	endif
 
 #define	mkAlbumPress(album)
@@ -2301,7 +2393,7 @@ font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">LINKS</span></u><u><span s
 <blockquote>
 A lovely interpretation of the Jonathan Richman classic which was originally
 released in 1979 on the <b>Back In Your Life</b> LP by Jonathan Richman And The
-Modern Lovers. The cover version can also be found on the ${affect} 12".
+Modern Lovers. The cover version can also be found on the ${va_shadow} 12".
 </blockquote>
 
 
@@ -2431,20 +2523,12 @@ Previously available on the ${fishco} LP/CD.
 #define	va_shadow_and_substance.html
 #live	if (getval(page) = va_shadow_and_substance.html)
 	${mkAlbumHeader(lookup=va_shadow, body=${literalizeCommas(
-		<a href="${jbc_images}/releases/va_shadow1.jpg"><img src="${jbc_images}/releases/va_shadow1_500.jpg"></a>
-		<a href="${jbc_images}/releases/va_shadow2.jpg"><img src="${jbc_images}/releases/va_shadow2_250.jpg"></a>
-		<a href="${jbc_images}/releases/va_shadow3.jpg"><img src="${jbc_images}/releases/va_shadow3_250.jpg"></a>
-		<a href="${jbc_images}/releases/va_shadow4.jpg"><img src="${jbc_images}/releases/va_shadow4_250.jpg"></a>
-		${a-side_beg}
-			${aff}
-		${a-side_end}
 	)})}
 
-#${addAlbumPerf(release=va_shadow, person=[[person:Pat_Fish]], song=NULL)}
-#	${addAlbumPerf(release=va_shadow, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#	${addAlbumPerf(release=va_shadow, person=[[person:Alice_Thompson]], instruments=Organ)}
-#	${pat} (Rhythm Guitar, Vocals)
-#	<br />${at} (Organ)
+	${clearAlbumPerf(release=va_shadow)}
+	${addAlbumPerf(release=va_shadow, song="Affection", type=Aside, ordinal=5, author=Jonathan Richman, media=/audio/JazzButcher_Affection.mp3)}
+	${addAlbumPerf(release=va_shadow, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
+	${addAlbumPerf(release=va_shadow, person=[[person:Alice_Thompson]], instruments=Organ)}
 
 	${jbc_footer}
 #live	endif
@@ -2452,26 +2536,21 @@ Previously available on the ${fishco} LP/CD.
 #define	va_seventeen_2.html
 #live	if (getval(page) = va_seventeen_2.html)
 	${mkAlbumHeader(lookup=va_seventeen_2, body=${literalizeCommas(
-		<a href="${jbc_images}/releases/va_seventeen_2_front.jpg"><img src="${jbc_images}/releases/va_seventeen_2_front_500.jpg"></a>
-		<a href="${jbc_images}/releases/va_seventeen_2_back.jpg"><img src="${jbc_images}/releases/va_seventeen_2_back_500.jpg"></a>
-		${a-side_beg}
-			${envoy}
-		${a-side_end}
 	)})}
+
+	${clearAlbumPerf(release=va_seventeen_2)}
+	${addAlbumPerf(release=va_seventeen_2, type=Bside, ordinal=1, song="Chinese Envoy", author=John Cale, media=/jazzbutcher.com/audio/JazzButcher_ChineseEnvoy.mp3)}
+
 	${jbc_footer}
 #live	endif
 
 #define	va_seventeen_3.html
 #live	if (getval(page) = va_seventeen_3.html)
 	${mkAlbumHeader(lookup=va_seventeen_3, body=${literalizeCommas(
-		<a href="${jbc_images}/releases/va_seventeen_3_front.jpg"><img src="${jbc_images}/releases/va_seventeen_3_front_500.jpg"></a>
-		<a href="${jbc_images}/releases/va_seventeen_3_back.jpg"><img src="${jbc_images}/releases/va_seventeen_3_back_500.jpg"></a>
-		<a href="${jbc_images}/releases/va_seventeen_3_A.jpg"><img src="${jbc_images}/releases/va_seventeen_3_A_500.jpg"></a>
-		<a href="${jbc_images}/releases/va_seventeen_3_B.jpg"><img src="${jbc_images}/releases/va_seventeen_3_B_500.jpg"></a>
-		${a-side_beg}
-		${h2o}
-		${a-side_end}
 	)})}
+
+	${clearAlbumPerf(release=va_seventeen_3)}
+	${addAlbumPerf(release=va_seventeen_3, type=Aside, ordinal=9, song="Water")}
 
 	${jbc_footer}
 #live	endif
@@ -2479,21 +2558,14 @@ Previously available on the ${fishco} LP/CD.
 #define	va_another_spark.html
 #live	if (getval(page) = va_another_spark.html)
 	${mkAlbumHeader(lookup=va_spark, body=${literalizeCommas(
-		<a href="${jbc_images}/releases/va_anotherspark1.jpg"><img src="${jbc_images}/releases/va_anotherspark1_500.jpg"></a>
-		<a href="${jbc_images}/releases/va_anotherspark2.jpg"><img src="${jbc_images}/releases/va_anotherspark2_250.jpg"></a>
-		<a href="${jbc_images}/releases/va_anotherspark3.jpg"><img src="${jbc_images}/releases/va_anotherspark3_250.jpg"></a>
-		<a href="${jbc_images}/releases/va_anotherspark4.jpg"><img src="${jbc_images}/releases/va_anotherspark4_250.jpg"></a>
-		<br />
-		${g_credit(g=James Duval, d=2021-12-12)}
-		${a-side_beg}
-			${inside_heart}
-		${a-side_end}
 	)})}
 
-#	${addAlbumPerf(release=va_spark, person=[[person:Mike_Novakovic]], instruments=engineer)}
-#	${addAlbumPerf(release=va_spark, person=[[person:Lionel_Brando]], instruments=producer)}
-#	${addAlbumPerf(release=va_spark, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals\, producer)}
-#	${addAlbumPerf(release=va_spark, person=[[person:Alice_Thompson]], instruments=Vocals)}
+	${clearAlbumPerf(release=va_spark)}
+	${addAlbumPerf(release=va_spark, type=Bside, ordinal=10, song="Inside Your Heart", author=Velvet Underground, media=/audio/JazzButcher_TemptationInsideYourHeart.mp3)}
+	${addAlbumPerf(release=va_spark, person=[[person:Mike_Novakovic]], instruments=engineer)}
+	${addAlbumPerf(release=va_spark, person=[[person:Lionel_Brando]], instruments=producer)}
+	${addAlbumPerf(release=va_spark, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals\, producer)}
+	${addAlbumPerf(release=va_spark, person=[[person:Alice_Thompson]], instruments=Vocals)}
 
 	${jbc_footer}
 #live	endif
@@ -2501,27 +2573,12 @@ Previously available on the ${fishco} LP/CD.
 #define	all_the_saints.html
 #live	if (getval(page) = all_the_saints.html)
 	${mkAlbumHeader(lookup=single_saints, body=${literalizeCommas(
-		<a href="${jbc_images}/releases/saints_front.jpg"><img
-			src="${jbc_images}/releases/saints_front_500.jpg"></a>
-		<a href="${jbc_images}/releases/saints_back.jpg"><img
-			src="${jbc_images}/releases/saints_back_250.jpg"></a>
-		${a-side_beg}
-			${all_the_saints}
-		${a-side_end}
-		${b-side_beg}
-			${last_of_the_gentleman_adventurers}
-		${b-side_end}
 	)})}
 
-#${addAlbumPerf(release=angel, person=[[person:Pat_Fish]], song=NULL)}
-#	${addAlbumPerf(release=angel, person=[[person:Pat_Fish]])}
-#	${addAlbumPerf(release=angel, person=[[person:Max_Eider]])}
-###	${addAlbumPerf(release=angel, person=[[person:Owen_Jones]])}
-#	${addAlbumPerf(release=angel, person=[[person:Felix_Ray]])}
-#	${pat}
-#	<br />${max}
-#	<br />${owen}
-#	<br />${felix}
+	${clearAlbumPerf(release=single_saints)}
+	${addAlbumPerf(release=single_saints, ordinal=1, song="All The Saints")}
+	${addAlbumPerf(release=single_saints, ordinal=2, song="Last of the Gentleman Adventurers")}
+
 	${players_end}
 
 	${jbc_footer}
@@ -2530,40 +2587,27 @@ Previously available on the ${fishco} LP/CD.
 #define	angels.html
 #live	if (getval(page) = angels.html)
 	${mkAlbumHeader(lookup=angel, body=${literalizeCommas(
-		<a href="${jbc_images}/releases/angels_front.jpg"><img
-			src="${jbc_images}/releases/angels_front_500.jpg"></a>
-		<a href="${jbc_images}/releases/angels_back.jpg"><img
-			src="${jbc_images}/releases/angels_back_250.jpg"></a>
-		${a-side_beg}
-			${angels}
-		${a-side_end}
-		${b-side_beg}
-			${becky}
-			<br />${mersey}
-		${b-side_end}
 	)})}
-#	${a_eng} ${angels} : ${rivers}
-#	<br />${becky} &amp; ${mersey} : Malcolm Rivett-Carnac
-#	${a_prod} ${angels} : ${rivers}
-#	<br />${becky} &amp; ${mersey} : ${pat}
-#	${a_photo} ${mitch}
-#	${a_sleev} Buffalo Shame
-#	${addAlbumPerf(release=angel, person=[[person:Pat_Fish]], instruments=producer, song="Rebecca Wants Her Bike Back\, Mersey")}
-#	${addAlbumPerf(release=angel, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer, song="Rebecca Wants Her Bike Back\, Mersey")}
-#	${addAlbumPerf(release=angel, person=[[person:John_A._Rivers]], instruments=engineer, song="Angels")}
-#	${addAlbumPerf(release=angel, person=[[person:John_A._Rivers]], instruments=producer, song="Angels")}
-#	${addAlbumPerf(release=angel, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=angel, person=[[person:Buffalo_Shame]], instruments=sleeve)}
 
-#${addAlbumPerf(release=angel, person=[[person:Pat_Fish]], song=NULL)}
-#	${addAlbumPerf(release=angel, person=[[person:Pat_Fish]])}
-#	${addAlbumPerf(release=angel, person=[[person:Max_Eider]])}
-###	${addAlbumPerf(release=angel, person=[[person:Owen_Jones]])}
-#	${addAlbumPerf(release=angel, person=[[person:Felix_Ray]])}
-#	${pat}
-#	<br />${max}
-#	<br />${owen}
-#	<br />${felix}
+	${clearAlbumPerf(release=angel)}
+
+	${addAlbumPerf(release=angel, type=Aside, ordinal=1,  song="Angels")}
+	${addAlbumPerf(release=angel, type=Bside, ordinal=1,  song="Rebecca Wants Her Bike Back")}
+	${addAlbumPerf(release=angel, type=Bside, ordinal=2,  song="Mersey", author=David Surkamp)}
+
+	${addAlbumPerf(release=angel, person=[[person:Pat_Fish]], instruments=producer, song="Rebecca Wants Her Bike Back")}
+	${addAlbumPerf(release=angel, person=[[person:Pat_Fish]], instruments=producer, song="Mersey")}
+	${addAlbumPerf(release=angel, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer, song="Rebecca Wants Her Bike Back")}
+	${addAlbumPerf(release=angel, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer, song="Mersey")}
+	${addAlbumPerf(release=angel, person=[[person:John_A._Rivers]], instruments=engineer, song="Angels")}
+	${addAlbumPerf(release=angel, person=[[person:John_A._Rivers]], instruments=producer, song="Angels")}
+	${addAlbumPerf(release=angel, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=angel, person=[[person:Buffalo_Shame]], instruments=sleeve)}
+
+	${addAlbumPerf(release=angel, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=angel, person=[[person:Max_Eider]])}
+	${addAlbumPerf(release=angel, person=[[person:Owen_Jones]])}
+	${addAlbumPerf(release=angel, person=[[person:Felix_Ray]])}
 
 	${jbc_footer}
 #live	endif
@@ -2571,247 +2615,93 @@ Previously available on the ${fishco} LP/CD.
 #define	bath.html
 #live	if (getval(page) = bath.html)
 	${mkAlbumHeader(lookup=bacon, body=${literalizeCommas(
-		<a href="${jbc_images}/bath.jpg">
-		<img src="${jbc_images}/bath_500.jpg"></a>
-		<a href="${jbc_images}/bath_back.jpg">
-		<img src="${jbc_images}/bath_back_250.jpg"></a>
-		<a href="${jbc_images}/bath_sleeve.jpg">
-		<img src="${jbc_images}/bath_sleeve_250.jpg"></a>
-		<a href="${jbc_images}/bath_inside.jpg">
-		<img src="${jbc_images}/bath_inside_250.jpg"></a>
 	)})}
-#	${a_eng} M. K. Daley
-#	${a_prod} ${pat} &amp; Lionel Brando
-#	${a_photo} Mr. B (front), ${mitch} (back)
-#${addAlbumPerf(release=bacon, person=[[person:Martin._K._Daley]], instruments=engineer)}
-#${addAlbumPerf(release=bacon, person=[[person:Pat_Fish]], instruments=producer)}
-#${addAlbumPerf(release=bacon, person=[[person:Lionel_Brando]], instruments=producer)}
-#${addAlbumPerf(release=bacon, person=[[person:Mitch_Jenkins]], instruments=photograpy)}
-#${addAlbumPerf(release=bacon, person=[[person:Mr._B]], instruments=photograpy)}
-	${a-side_beg}
-#	${addAlbumPerf(release, person, aka=NULL, instruments, song=NULL, ordinal, type=set)
-	${gloop}
-	<br />${jbtheme}
-	<br />${party}
-	<br />${foot}
-	<br />${engine}
-	<br />${china}
-	${a-side_end}
-	${b-side_beg}
-	${zombie}
-	<br />${flan}
-	<br />${mer}
-	<br />${poison}
-	<br />${kitten}
-	<br />${bath}
-	<br />${gold}
-	${b-side_end}
 
-#${addAlbumPerf(release=bacon, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Bass\, Drums\, Xylophone\, Flute\, Organ, song=NULL)}
-#${addAlbumPerf(release=bacon, person=[[person:Max_Eider]], instruments=Guitar, song=NULL)}
-#${addAlbumPerf(release=bacon, person=[[person:Louis_Leroi]], instruments=Saxophone, song=NULL)}
-#${addAlbumPerf(release=bacon, person=[[person:Lionel_Brando]], instruments=Drums, song=NULL)}
-#${addAlbumPerf(release=bacon, person=[[person:Rolo_McGinty]], instruments=Bass, song='Grey Flannelette')}
-#${addAlbumPerf(release=bacon, person=[[person:Ian_Sturgess]], instruments=Fretless Bass, song='Gloop Jiving')}
-#${addAlbumPerf(release=bacon, person=[[person:Ian_Sturgess]], instruments=Fretless Bass, song='Partytime')}
-#${addAlbumPerf(release=bacon, person=[[person:Martin._K._Daley]], instruments=Thin Bass, song='Zombie Love')}
-#${addAlbumPerf(release=bacon, person=[[person:Martin._K._Daley]], instruments=Guitar, song='Bath Of Bacon')}
-#${addAlbumPerf(release=bacon, person=[[person:John_Silver]], instruments=Mad Guitar, song='Jazz Butcher Theme')}
-#${addAlbumPerf(release=bacon, person=[[person:Alice_Thompson]], instruments=Vocals, song='La Mer')}
-#${addAlbumPerf(release=bacon, person=[[person:The_Undead]], instruments=Vocals, song='Zombie Love')}
-#${addAlbumPerf(release=bacon, person=[[person:The_Sausage_People]], instruments=Vocals, song='Poisoned By Food')}
+	${clearAlbumPerf(release=bacon)}
 
-	${thx_beg}
-	This record is dedicated to Lou and Rachel, Dave, Julia, Gill,
-	Wilfred, Anti, Stuart, Sandra, Hugh and Mo Tucker
-	${thx_end}
-	${lin_beg}
-	Here it is at last!  The hep young sound of todays beat
-	&eacute;lite, direct from the soul kitchen and served, still
-	blazing, to your table!  The release of this, the Jazz
-	Butchers first long play recording, comes after months of
-	rumour and report of a hot new act with a cool new sound
-	that leaves the others way way behind.  Now you too can hear
-	for yourself the new groove that has set the bohemian set
-	alight - in your own home!  Words alone cannot do justice to
-	the cordon-bleu treats of the Butcher Beat - so roll back
-	the carpet and swoop and dive with the fab Butcher Man!
-	<p />
-	<b>A Personal Message From The Jazz Butcher</b>:
-	Well, it's sometime early in the big work ethic on a Friday
-	morning and I'm hours away from the big bastard!  Looks like
-	there's precious little time for me to chuck out that work
-	ethic this weekend.  I've got to be a damned sight sterner
-	than usual in the old quality control with the discipline
-	that M.P.s pay high prices &amp; favour for in those suburban
-	bedrooms, if I'm to make it past the large sheet of paper
-	with <b>NO MORE MONEY</b> writ large upon it.  Bus?  Train?
-	- decisions, decisions!  Do we re-do the glockenspiels or
-	echo the little so and soes out of all recognition - a sound
-	you never heard before?  Which is The Voice to tell you
-	about ${party}?  And will ${zombie} ever
-	sound as good as The Zombies?  We're a long way from the
-	truth yet poppets.  This is my first record all by myself.
-	It's been a pleasure, which is good because that's what they
-	should be isn't it?  It's been a worry to - still is - and
-	loads more besides.... I'll let you know how we get on.
-	${lin_end}
-	${patsays_beg}
-	The one nobody ever talks about, even though a surprising
-	number of you seem to have it.  Recorded for just &#163;300
-	(Kevin Shields please take note...), it's really just the sound
-	of a few mates failing to take seriously the fact they they've
-	got an l.p. to make. ${gloop} and the unfinished ${engine} make me
-	squirm a fair bit, but ${zombie}, ${gold}, and ${party} have all been
-	good friends.
-	<p>
-	It seems VERY early eighties now, but you must remember that
-	there was a LOT of crap for us to clear out of the way in those
-	days.
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#bath, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
-	${mkAlbumPress(album=bacon)}
+	${addAlbumPerf(release=bacon, type=Aside, ordinal=1, song="Jazz Butcher Theme")}
+	${addAlbumPerf(release=bacon, type=Aside, ordinal=2, song="Partytime")}
+	${addAlbumPerf(release=bacon, type=Aside, ordinal=3, song="Bigfoot Motel")}
+	${addAlbumPerf(release=bacon, type=Aside, ordinal=4, song="Sex Engine")}
+	${addAlbumPerf(release=bacon, type=Aside, ordinal=5, song="Chinatown")}
+
+	${addAlbumPerf(release=bacon, type=Bside, ordinal=1, song="Zombie Love")}
+	${addAlbumPerf(release=bacon, type=Bside, ordinal=2, song="Grey Flannelette")}
+	${addAlbumPerf(release=bacon, type=Bside, ordinal=3, song="La Mer")}
+	${addAlbumPerf(release=bacon, type=Bside, ordinal=4, song="Poisoned By Food")}
+	${addAlbumPerf(release=bacon, type=Bside, ordinal=5, song="Love Kittens")}
+	${addAlbumPerf(release=bacon, type=Bside, ordinal=6, song="Bath Of Bacon")}
+	${addAlbumPerf(release=bacon, type=Bside, ordinal=7, song="Girls Who Keep Goldfish")}
+
+	${addAlbumPerf(release=bacon, person=[[person:Martin._K._Daley]], instruments=engineer)}
+	${addAlbumPerf(release=bacon, person=[[person:Pat_Fish]], instruments=producer)}
+	${addAlbumPerf(release=bacon, person=[[person:Lionel_Brando]], instruments=producer)}
+	${addAlbumPerf(release=bacon, person=[[person:Mitch_Jenkins]], instruments=photograpy)}
+	${addAlbumPerf(release=bacon, person=[[person:Mr._B]], instruments=photograpy)}
+
+	${addAlbumPerf(release=bacon, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Bass\, Drums\, Xylophone\, Flute\, Organ)}
+	${addAlbumPerf(release=bacon, person=[[person:Max_Eider]], instruments=Guitar)}
+	${addAlbumPerf(release=bacon, person=[[person:Louis_Leroi]], instruments=Saxophone)}
+	${addAlbumPerf(release=bacon, person=[[person:Lionel_Brando]], instruments=Drums)}
+	${addAlbumPerf(release=bacon, person=[[person:Rolo_McGinty]], instruments=Bass, song='Grey Flannelette')}
+	${addAlbumPerf(release=bacon, person=[[person:Ian_Sturgess]], instruments=Fretless Bass, song='Gloop Jiving')}
+	${addAlbumPerf(release=bacon, person=[[person:Ian_Sturgess]], instruments=Fretless Bass, song='Partytime')}
+	${addAlbumPerf(release=bacon, person=[[person:Martin._K._Daley]], instruments=Thin Bass, song='Zombie Love')}
+	${addAlbumPerf(release=bacon, person=[[person:Martin._K._Daley]], instruments=Guitar, song='Bath Of Bacon')}
+	${addAlbumPerf(release=bacon, person=[[person:John_Silver]], instruments=Mad Guitar, song='Jazz Butcher Theme')}
+	${addAlbumPerf(release=bacon, person=[[person:Alice_Thompson]], instruments=Vocals, song='La Mer')}
+	${addAlbumPerf(release=bacon, person=[[person:The_Undead]], instruments=Vocals, song='Zombie Love')}
+	${addAlbumPerf(release=bacon, person=[[person:The_Sausage_People]], instruments=Vocals, song='Poisoned By Food')}
 
 	${jbc_footer}
 #live	endif
 
 #define	blue.html
 #live	if (getval(page) = blue.html)
-	${mkHeader(section=albums, title=Condition Blue)}
+	${mkAlbumHeader(lookup=blue, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/blue_front.jpg">
-		<img alt="[album cover]" src="${jbc_images}/releases/blue_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/blue_back.jpg">
-		<img alt="[album cover]" src="${jbc_images}/releases/blue_back_250.jpg"></a>
-	<a href="${jbc_images}/releases/blue_inside1.jpg">
-		<img alt="[album cover]" src="${jbc_images}/releases/blue_inside1_250.jpg"></a>
-	<a href="${jbc_images}/releases/blue_inside2.jpg">
-		<img alt="[album cover]" src="${jbc_images}/releases/blue_inside2_250.jpg"></a>
-	${a_media} ${ALBUM}
-	${a_label} ${creat}, Sky
-	${a_cat} CRECD110, SKYCLAD 5080
-	${a_dtreleased} 1991 (${creat}) 1992 (Sky)
-	${a_rec} April/May 1991, Raven, Norfolk and Submarine Sound, Northampton
-#${addAlbumPerf(release=blue, person=[[person:Tim_Burrell]], instruments=engineer)}
-#${addAlbumPerf(release=blue, person=[[person:Howard_Turner]], instruments=engineer)}
-#${addAlbumPerf(release=blue, person=[[person:Andy_Elliot]], instruments=engineer)}
-#${addAlbumPerf(release=blue, person=[[person:Pat_Fish]], instruments=engineer)}
-#${addAlbumPerf(release=blue, person=[[person:Lionel_Cullman]], instruments=photography)}
-#${addAlbumPerf(release=blue, person=[[person:Pascal_Legras]], instruments=sleeve)}
-#	${a_eng} ${burrell}, ${howy}, Andy Elliot, ${pat}
-#	${a_photo} Lionel Cullman
-#	${a_sleev} Pascal Legras
-	${a_note} The Sky release has sides A&B switched
-	${det_end}
-	${a-side_beg}
-	${girls}
-	<br />${filth}
-	<br />${harlan}
-	<br />${still}
-	${a-side_end}
-	${b-side_beg}
-	${monkey}
-	<br />${yo}
-	<br />${honey}
-	<br />${shirl}
-	<br />${rachel}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=blue)}
+	${clearAlbumPerf(release=blue)}
 
-#${addAlbumPerf(release=blue, person=[[person:Paul_Mulreany]], instruments=Drums, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Joe_Allen]], instruments=Bass Guitar, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Alex_Lee]], instruments=Lead Guitar\, Rhythm & Backwards Guitar\, Motorcycle & Fuel Air Explosions\, Lynch-Mob, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Richard_Formby]], instruments=Lead Guitar\, Tremelo & 12 String Guitar\, Infinite Guitar and Feedback, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Alex_Green]], instruments=Tenor and Alto Saxophones\, String Arrangements, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Pat_Fish]], instruments=Lead Guitar\, Rhythm & 12 String Guitar\, Keyboards\, Percussion\, Vocals, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Sumishta_Brahm]], instruments=Singing, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Peter_Crouch]], instruments=Rhythm Guitar, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Peter_Crouch]], instruments=Bird Guitar, song='Girls Say Yes')}
-#${addAlbumPerf(release=blue, person=[[person:Owen_Jones]], instruments=Organ solo, song='Our Friends The Filth')}
-#${addAlbumPerf(release=blue, person=[[person:Owen_Jones]], instruments=Percussion\, Singing)}
-#${addAlbumPerf(release=blue, person=[[person:Laurence_O'Keefe]], instruments=Singing, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Laurence_O'Keefe]], instruments=Lead Guitar, song='Harlan')}
-#${addAlbumPerf(release=blue, person=[[person:Peter_Astor]], instruments=Lead Guitar, song='Honey')}
-#${addAlbumPerf(release=blue, person=[[person:Peter_Astor]], instruments=Aquamarine Guitar, song='Harlan')}
-#${addAlbumPerf(release=blue, person=[[person:Peter_Astor]], instruments=Harmonica\, Singing, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Tim_Burrell]], instruments=Piano, song='Girls Say Yes')}
-#${addAlbumPerf(release=blue, person=[[person:Alastair_Indge]], instruments=Vocals, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:James_Rogers]], instruments=Vocals, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Howard_Turner]], instruments=Vocals, song=NULL)}
-#${addAlbumPerf(release=blue, person=[[person:Colin_Harris]], instruments=Samples, song=NULL)}
+	${addAlbumPerf(release=blue, person=[[person:Tim_Burrell]], instruments=engineer)}
+	${addAlbumPerf(release=blue, person=[[person:Howard_Turner]], instruments=engineer)}
+	${addAlbumPerf(release=blue, person=[[person:Andy_Elliot]], instruments=engineer)}
+	${addAlbumPerf(release=blue, person=[[person:Pat_Fish]], instruments=engineer)}
+	${addAlbumPerf(release=blue, person=[[person:Lionel_Cullman]], instruments=photography)}
+	${addAlbumPerf(release=blue, person=[[person:Pascal_Legras]], instruments=sleeve)}
 
-#	${paul} (Drums)
-#	<br />${joea} (Bass Guitar)
-#	<br />${lix} (Lead Guitar, Rhythm &amp; Backwards Guitar,
-#	<br />Motorcycle &amp; Fuel Air Explosions, Lynch-Mob)
-#	<br />${richard} (Lead Guitar, Tremelo &amp; 12 String Guitar, Infinite
-#	<br />Guitar and Feedback)
-#	<br />${green} (Tenor and Alto Saxophones, String Arrangements)
-#	<br />${pat} (Lead Guitar, Rhythm &amp; 12 String Guitar,
-#	<br />Keyboards, Percussion, Vocals)
-#	<br />${sumishta} (Singing)
-#	<br />${pete} (Rhythm Guitar, Bird Guitar on ${girls})
-#	<br />${owen} (Organ solo on ${filth}), Percussion, Singing)
-#	<br />${larry} (Lead Guitar on ${harlan}, Singing)
-#	<br />${astor} (Lead Guitar on ${honey},
-#	<br />Aquamarine Guitar on ${harlan}, Harmonica, Singing)
-#	<br />${burrell} (Piano on ${girls})
-#	<br />${indge} (Vocals)
-#	<br />James Rogers (Vocals)
-#	<br />${howy} (Vocals)
-#	<br />${colin} Harris (Samples)
-	${players_end}
-	${thx_beg}
-	Thanks to the bureaucratic idiocy on the part of the Butcher
-	and his associates the contributions of Alex Lee &amp;
-	${sumishta} to the previous JBCLP ${cult} have gone uncredited.
-	The Butcher would have you know that they both played leading
-	guitar stuff on that record, as well as on this one.
-	<p>
-	Respect and thanks are extended to the groups who let their
-	musicians out to play on this waxing, specifically: ${aero}
-	${levit}, 13 Frightened Girls and ${spect}.
-	Thanks also to Ensign, Ultimate and Silvertone.
-	<p>
-	Deep gratitude goes out to all involved.  This Butcher owes
-	you one.  Special love and thanks to ${paul}, Tim
-	Burrell and ${sumishta}, without all of whom God Only
-	Knows...
-	${thx_end}
-	${patsays_beg}
-	Four desperate men, all too desperate to notice how desperate
-	the others are, gather in a farmhouse with a queue of
-	lead guitarists stretching round the block.  For all
-	the pain and crap from which this record was made, the
-	actual sessions were a gigantic and wonderful party. 
-	<p>
-	The songs are all long because we (Paul, Joe, Lix &amp; I)
-	just enjoyed the playing on the &quot;to-be-faded&quot; bits so
-	much that it seemed a shame not to let everyone hear
-	them.  This was warmly received by The Outside World,
-	less popular among those who counted themselves JBC afficionados.
-	Well, I couldn't have written it any other way, and I
-	love that everyone plays on it, so I'm not in much of
-	a position to know why you don't care for it. All I can
-	say is that I'm still well pleased with it as a recording,
-	and as a piece of writing about a tough subject. I mean,
-	<b>I</b> hate &quot;divorce rock&quot; too.  It wuz a tough assignment. 
-	<p>
-	Go on, give the fucker another listen.  The songs may
-	not make you laugh, but the playing ought to give you
-	a few thrills. And, after all, I'm not in a band to make
-	money, or be a &quot;professional entertainer&quot; - I'm in a band
-	because I like to play very loud electric guitar.  This
-	IS the sound of me having fun, and getting me to do that
-	in those dark days of mid-1991 was no small job.  (Can
-	anyone tell me how I *knew* that the French were going
-	to like "${girls}"?)
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#blue, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
-	${mkAlbumPress(album=blue)}
+	${addAlbumPerf(release=blue, type=Aside, ordinal=1, song="Girls Say Yes")}
+	${addAlbumPerf(release=blue, type=Aside, ordinal=2, song="Our Friends The Filth")}
+	${addAlbumPerf(release=blue, type=Aside, ordinal=3, song="Harlan")}
+	${addAlbumPerf(release=blue, type=Aside, ordinal=4, song="Still & All")}
+
+	${addAlbumPerf(release=blue, type=Bside, ordinal=1, song="She's A Yo-Yo")}
+	${addAlbumPerf(release=blue, type=Bside, ordinal=2, song="Honey")}
+	${addAlbumPerf(release=blue, type=Bside, ordinal=3, song="Shirley Maclaine")}
+	${addAlbumPerf(release=blue, type=Bside, ordinal=4, song="Racheland")}
+
+	${addAlbumPerf(release=blue, type=Bside, ordinal=9, song="Monkeyface", variant=Sky)}
+
+	${addAlbumPerf(release=blue, person=[[person:Paul_Mulreany]], instruments=Drums)}
+	${addAlbumPerf(release=blue, person=[[person:Joe_Allen]], instruments=Bass Guitar)}
+	${addAlbumPerf(release=blue, person=[[person:Alex_Lee]], instruments=Lead Guitar\, Rhythm & Backwards Guitar\, Motorcycle & Fuel Air Explosions\, Lynch-Mob)}
+	${addAlbumPerf(release=blue, person=[[person:Richard_Formby]], instruments=Lead Guitar\, Tremelo & 12 String Guitar\, Infinite Guitar and Feedback)}
+	${addAlbumPerf(release=blue, person=[[person:Alex_Green]], instruments=Tenor and Alto Saxophones\, String Arrangements)}
+	${addAlbumPerf(release=blue, person=[[person:Pat_Fish]], instruments=Lead Guitar\, Rhythm & 12 String Guitar\, Keyboards\, Percussion\, Vocals)}
+	${addAlbumPerf(release=blue, person=[[person:Sumishta_Brahm]], instruments=Singing)}
+	${addAlbumPerf(release=blue, person=[[person:Peter_Crouch]], instruments=Rhythm Guitar)}
+	${addAlbumPerf(release=blue, person=[[person:Peter_Crouch]], instruments=Bird Guitar, song='Girls Say Yes')}
+	${addAlbumPerf(release=blue, person=[[person:Owen_Jones]], instruments=Organ solo, song='Our Friends The Filth')}
+	${addAlbumPerf(release=blue, person=[[person:Owen_Jones]], instruments=Percussion\, Singing)}
+	${addAlbumPerf(release=blue, person=[[person:Laurence_O'Keefe]], instruments=Singing)}
+	${addAlbumPerf(release=blue, person=[[person:Laurence_O'Keefe]], instruments=Lead Guitar, song="Harlan")}
+	${addAlbumPerf(release=blue, person=[[person:Peter_Astor]], instruments=Lead Guitar, song='Honey')}
+	${addAlbumPerf(release=blue, person=[[person:Peter_Astor]], instruments=Aquamarine Guitar, song='Harlan')}
+	${addAlbumPerf(release=blue, person=[[person:Peter_Astor]], instruments=Harmonica\, Singing)}
+	${addAlbumPerf(release=blue, person=[[person:Tim_Burrell]], instruments=Piano, song='Girls Say Yes')}
+	${addAlbumPerf(release=blue, person=[[person:Alastair_Indge]], instruments=Vocals)}
+	${addAlbumPerf(release=blue, person=[[person:James_Rogers]], instruments=Vocals)}
+	${addAlbumPerf(release=blue, person=[[person:Howard_Turner]], instruments=Vocals)}
+	${addAlbumPerf(release=blue, person=[[person:Colin_Harris]], instruments=Samples)}
 
 	${jbc_footer}
 #live	endif
@@ -8631,68 +8521,253 @@ ${49} (Live KCRW Session 1989)
 
 #define	wilson_demo_2002.html
 #live	if (getval(page) = wilson_demo_2002.html)
-	${mkHeader(section=albums, title=Wilson - 2002 Demo)}
+	${mkAlbumHeader(lookup=wilson_demo_2002, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/wilson/2002_wilson_front.jpg"><img src="${jbc_images}/wilson/2002_wilson_front_500.jpg"></a>
-	<a href="${jbc_images}/wilson/2002_wilson_back.jpg"><img src="${jbc_images}/wilson/2002_wilson_back_250.jpg"></a>
-	${a_media} ${CDR}
-	${a_dtreleased} 2002
-	<p>
-	Recorded by MC Bot on the Roland VS-1800 at Subsound, NN1 during 2001 and 2002. The words to "Play It All Night Long" are by Warren Zevon. Everything else is original pirate material. Increase the peace.
-	</p>
-	${det_end}
-	${tun_beg}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3)}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3)}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Hippy Shit, url=${jbc_lyrics}/wilson_hippy_shit.html, mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3)}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Play It All Night Long, mp3=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3, author=Warren Zevon)}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Burn\, Hollywood\, Burn, url=${jbc_lyrics}/wilson_burn_hollywood_burn.html, mp3=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3)}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Dark Agenda, url=${jbc_lyrics}/wilson_dark_agenda.html, mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3)}
-	${tun_end}
-	${players_beg}
-
-#	${addAlbumPerf(release=va_nationofsaints, person=[[person:Pat_Fish]], instruments=Vocals)}
-#	${fetchAlbumPersonnel(release=va_nationofsaints)}
-	${players_end}
+	${clearAlbumPerf(release=wilson_demo_2002)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Quality People", ordinal=1, media=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Istanbul Connection", ordinal=2, media=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Hippy Shit", ordinal=3, media=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Play It All Night Long", ordinal=4, media=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3, author=Warren Zevon)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Burn\, Hollywood\, Burn", ordinal=5, media=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Dark Agenda", ordinal=6, media=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3)}
 
 	${jbc_footer}
 #live	endif
 
 #define	never_give_up.html
 #live	if (getval(page) = never_give_up.html)
-	${mkHeader(section=albums, title=Never Give Up (7"))}
+	${mkAlbumHeader(lookup=never7, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/never7_A.jpg"><img alt="[album cover]"
-		src="${jbc_images}/releases/never7_A_500.jpg"></a>
-	<a href="${jbc_images}/releases/never7_B.jpg"><img alt="[album cover]"
-		src="${jbc_images}/releases/never7_B_250.jpg"></a>
-	${a_media} single
-	${a_label} Glass Modern
-	${a_cat} GLAMS004
-	${a_dtreleased} 2022
-#	${addAlbumPerf(release=never7, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar, song="Never Give Up")}
-#	${addAlbumPerf(release=never7, person=[[person:David_J.]], instruments=Bass\, Backing Vocals\, Produced, song="Never Give Up")}
-#	${addAlbumPerf(release=never7, person=[[person:Victor DeLorenzo]], instruments=Drums, song="Never Give Up")}
-#	${addAlbumPerf(release=never7, person=[[person:Janet Schiff]], instruments=Cello, song="Never Give Up")}
-#	${addAlbumPerf(release=never7, person=[[person:Fiona_Brice]], instruments=Violin, song="Never Give Up")}
-#	${addAlbumPerf(release=never7, person=[[person:Tony_Green]], instruments=engineer, song="Never Give Up")}
+	${clearAlbumPerf(release=never7)}
+	${addAlbumPerf(release=never7, type=Aside, song="Never Give Up", ordinal=1, version=Glass Version)}
+	${addAlbumPerf(release=never7, type=Bside, song="Silver Street", ordinal=1)}
 
-#	${addAlbumPerf(release=never7, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Produced, song="Silver Street Up")}
-#	${addAlbumPerf(release=never7, person=[[person:Sophie_Joiner]], instruments=Sleeve Paintings)}
-#	${addAlbumPerf(release=never7, person=[[person:Lionel_Brando]], instruments=Label Photos)}
-	${det_end}
-	${a-side_beg}
-	${never} (Glass Version)
-	${a-side_end}
-	${b-side_beg}
-	${silver_street}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=never7)}
-	${players_end}
+	${addAlbumPerf(release=never7, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar, song="Never Give Up", version=Glass Version)}
+	${addAlbumPerf(release=never7, person=[[person:David_J.]], instruments=Bass\, Backing Vocals\, Produced, song="Never Give Up", version=Glass Version)}
+	${addAlbumPerf(release=never7, person=[[person:Victor DeLorenzo]], instruments=Drums, song="Never Give Up", version=Glass Version)}
+	${addAlbumPerf(release=never7, person=[[person:Janet Schiff]], instruments=Cello, song="Never Give Up", version=Glass Version)}
+	${addAlbumPerf(release=never7, person=[[person:Fiona_Brice]], instruments=Violin, song="Never Give Up", version=Glass Version)}
+	${addAlbumPerf(release=never7, person=[[person:Tony_Green]], instruments=engineer, song="Never Give Up", version=Glass Version)}
+
+	${addAlbumPerf(release=never7, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Produced, song="Silver Street")}
+	${addAlbumPerf(release=never7, person=[[person:Sophie_Joiner]], instruments=Sleeve Paintings)}
+	${addAlbumPerf(release=never7, person=[[person:Lionel_Brando]], instruments=Label Photos)}
+
 	${jbc_footer}
 #live	endif
+
+#define	va_pulp.html
+#live	if (getval(page) == va_pulp.html)
+	${mkAlbumHeader(lookup=va_pulp, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_pulp)}
+	${addAlbumPerf(release=va_pulp, type=Aside, ordinal=9, song="Sweet Jane", author=Lou Reed, version=RPM Club\, Toronto\, 1986-07-24)}
+
+	${jbc_footer}
+#live	endif
+
+#define	va_bigtime_syndrome.html
+#live	if (getval(page) == va_bigtime_syndrome.html)
+	${mkAlbumHeader(lookup=va_bigtime_syndrome, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_bigtime_syndrome)}
+	${addAlbumPerf(release=va_bigtime_syndrome, type=Aside, ordinal=5, song="Rebecca Wants Her Bike Back")}
+	${addAlbumPerf(release=va_bigtime_syndrome, person=[[person:Pat_Fish]], instruments=Writer\, Producer)}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	va_gunfire.html
+#live	if (getval(page) == va_gunfire.html)
+	${mkAlbumHeader(lookup=va_gunfire, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_gunfire)}
+	${addAlbumPerf(release=va_gunfire, type=Bside, ordinal=1, song="Lost In France", author=Scott/Wolfe)}
+	${addAlbumPerf(release=va_gunfire, person=[[person:Pat_Fish]], instruments=Producer)}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	va_50k.html
+#live	if (getval(page) == va_50k.html)
+	${mkAlbumHeader(lookup=va_50k, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_50k)}
+	${addAlbumPerf(release=va_50k, type=Aside, ordinal=2, song="City Of Night")}
+	${addAlbumPerf(release=va_50k, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals\, Instruments\, Written-By\, Producer)}
+	${addAlbumPerf(release=va_50k, person=[[person:Malcolm_Rivett-Carnac]], instruments=Engineer)}
+	${addAlbumPerf(release=va_50k, person=[[person:Mith_Jenkins]], instruments=Photography)}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	va_kids.html
+#live	if (getval(page) == va_kids.html)
+	${mkAlbumHeader(lookup=va_kids, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_kids)}
+	${addAlbumPerf(release=va_kids, type=Aside, ordinal=7, song="Looking For Lot 49")}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	va_pensioners90.html
+#live	if (getval(page) == va_pensioners90.html)
+	${mkAlbumHeader(lookup=va_pensioners90, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_pensioners90)}
+	${addAlbumPerf(release=va_pensioners90, type=Aside, ordinal=6, song="Mr. Odd")}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	va_pensioners91.html
+#live	if (getval(page) == va_pensioners91.html)
+	${mkAlbumHeader(lookup=va_pensioners91, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_pensioners91)}
+	${addAlbumPerf(release=va_pensioners91, type=Bside, ordinal=5, song="Girl-Go", version=LA)}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	va_summer.html
+#live	if (getval(page) == va_summer.html)
+	${mkAlbumHeader(lookup=va_summer, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_summer)}
+	${addAlbumPerf(release=va_summer, ordinal=4, song="Indian Summer")}
+	${addAlbumPerf(release=va_summer, person=[[person:Pat_Fish]], instruments=Guitar\, Keyboards\, Vocals)}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	va_abus_126.html
+#live	if (getval(page) == va_abus_126.html)
+	${mkAlbumHeader(lookup=va_abus_126, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_abus_126)}
+	${addAlbumPerf(release=va_abus_126, ordinal=12, song="Animals")}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	va_nh_underglass.html
+#live	if (getval(page) == va_nh_underglass.html)
+	${mkAlbumHeader(lookup=va_nh_underglass, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_nh_underglass)}
+	${addAlbumPerf(release=va_nh_underglass, ordinal=1, song="Shame About You")}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	va_1000songs.html
+#live	if (getval(page) == va_1000songs.html)
+	${mkAlbumHeader(lookup=va_1000songs, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_1000songs)}
+	${addAlbumPerf(release=va_1000songs, ordinal=15, song="Holiday")}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	shock_drugs.html
+#live	if (getval(page) == shock_drugs.html)
+	${mkAlbumHeader(lookup=shock_drugs, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=shock_drugs)}
+	${addAlbumPerf(release=shock_drugs, type=Aside, ordinal=1, song="She's On Drugs")}
+	${addAlbumPerf(release=shock_drugs, type=Bside, ordinal=2, song="Girl-Go")}
+
+	${jbc_footer}
+#live	endif
+
+
+#define	bigtime_sampler.html
+#live	if (getval(page) == bigtime_sampler.html)
+	${mkAlbumHeader(lookup=bigtime_sampler, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=bigtime_sampler)}
+	${addAlbumPerf(release=bigtime_sampler, type=Bside, ordinal=2, song="Big Bad Thing")}
+
+	${jbc_footer}
+#live	endif
+
+#define	va_creation_unreleased.html
+#live	if (getval(page) == va_creation_unreleased.html)
+	${mkAlbumHeader(lookup=va_creation_unreleased, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_creation_unreleased)}
+	${addAlbumPerf(release=va_creation_unreleased, ordinal=6, song="President Chang", version=Remix)}
+
+	${jbc_footer}
+#live	endif
+
+#define	va_patron_saints.html
+#live	if (getval(page) == va_patron_saints.html)
+	${mkAlbumHeader(lookup=va_patron_saints, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_patron_saints)}
+	${addAlbumPerf(release=va_patron_saints,  ordinal=4, song="Everybody's Talkin'")}
+	${addAlbumPerf(release=va_patron_saints, person=[[person:Pat_Fish]], instruments=Guitar\, Keyboards\, Vocals)}
+
+	${jbc_footer}
+#live	endif
+
+
+## NEED SONGS IN PERFORMANCE
+#	bigtime_angels						      <
+#	bigtime_jungle						      <
+#	bigtime_sampler						      <
+#	cdr_guestpass2000					      <
+#	conspir12						      <
+#	damn							      <
+#	dvd_wilson_no_known_predators				      <
+#	fire_cholmondley					      <
+#	fire_violent						      <
+#	fire_wasted						      <
+#	highest							      <
+#	shir							      <
+#	shock_drugs						      <
+#	single_saints						      <
+#	spacemen						      <
+#	spacemen12						      <
+#	swingin							      <
+#	va_1000songs						      <
+#	va_50k							      <
+#	va_abstract						      <
+#	va_abus_126						      <
+#	va_andy_2007						      <
+#	va_bigtime_syndrome					      <
+#	va_creation_price					      <
+#	va_creation_unreleased					      <
+#	va_gunfire						      <
+#	va_kids							      <
+#	va_nationofsaints					      <
+#	va_nh_underglass					      <
+#	va_nh_vol1						      <
+#	va_pensioners90						      <
+#	va_pensioners91						      <
+#	va_pulp							      <
+#	va_seventeen_2						      <
+#	va_seventeen_3						      <
+#	va_summer						      <
+#	va_unautomne93						      <
+#	va_wilson_heyday					      <
+#	water							      <
+#	wilson_demo_2002					      <
+#	wilson_demo_2003					      <
+#	wilson_demo_2005					      <
+#	yoyo							      <
+#	zomby							      <

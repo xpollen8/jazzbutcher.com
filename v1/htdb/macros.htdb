@@ -1599,6 +1599,7 @@ font.load().then(function () {
 #
 #	recorded covers
 #
+#define	silver_street				${linkSong(title=Silver Street, author=Nikki Sudden)}
 #define	aff				${linkSong(title=Affection, author=Jonathan Richman)}
 #define	ufo_man			${linkSong(title=The U.F.O. Man, author=Jonathan Richman)}
 #define	capt		${linkSong(title=Tugboat Captain, author=Dean Wareham)}

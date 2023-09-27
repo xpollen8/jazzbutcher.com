@@ -48,7 +48,9 @@ ${tag_end}
 #live		if (defined(as[${i}]->ordinal))
 				${as[${i}]->ordinal}.
 #live		endif
-		${songLinkMapped(title=${literalizeCommas(${as[${i}]->song})})}
+#live	if (defined(as[${i}]->media) = NULL)
+			${songLinkMapped(title=${literalizeCommas(${as[${i}]->song})})}
+#live	endif
 #live		if (getval(as[${i}]->variant) != NULL)
 				<span class="song_author">(${as[${i}]->variant})</span>
 #live		endif
@@ -58,7 +60,7 @@ ${tag_end}
 #live		if (getval(as[${i}]->author) != NULL)
 				<span class="song_author">(${as[${i}]->author})</span>
 #live		endif
-#live		if (defined(as[${i}]->media))
+#live		if (getval(as[${i}]->media) != NULL)
 			${linkAudio(title=${literalizeCommas(${as[${i}]->song})}, mp3=${as[${i}]->media})}
 #live		endif
 	<br />
@@ -192,14 +194,15 @@ ${define(lastPer, ${ap[${api}]->performer})}
 #live	endif
 
 #define	clearAlbumPerf(release)
-#live	if (defined(updateAlbum))
+#live	if (defined(UA))
 #live		if (sql(delete from performance where lookup="${release}"))
 #live		endif
 #live	endif
 
 #define	addAlbumPerf(release, person, aka=NULL, instruments, song=NULL, ordinal=NULL, type=set, datetime, media=NULL, author=NULL, version, variant)
-#live	if (defined(updateAlbum))
-#live		if (sql(insert into performance set lookup="${release}", category="release", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal=${ordinal}, song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}"))
+#live	if (defined(UA))
+#insert into performance set lookup="${release}", category="release", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal="${ordinal}", song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}";
+#live		if (sql(insert into performance set lookup="${release}", category="release", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal="${ordinal}", song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}"))
 #live		endif
 #live	endif
 
@@ -2743,11 +2746,11 @@ Previously available on the ${fishco} LP/CD.
 	${players_beg}
 	${fetchAlbumPersonnel(release=bus)}
 
-#${addAlbumPerf(release=bus, person=[[person:Pat_Fish]], instruments=Fender Telecaster\, Fender Jaguar\, Yamaha sf-800\, 6 & 12 String Acoustic Guitars\, Keyboards\, Percussion\, Programming\, Vocals, song=NULL)} 
-#${addAlbumPerf(release=bus, person=[[person:Richard_Formby]], instruments=Fender Jaguar\, Gibson Firebird\, Burns Electric X11 String\, Programming\, Tapes, song=NULL)} 
-#${addAlbumPerf(release=bus, person=[[person:Dooj_Wilkinson]], instruments=Wal Bass Guitar\, Voice, song=NULL)} 
-#${addAlbumPerf(release=bus, person=[[person:Nick_Burson]], instruments=Drums, song=NULL)} 
-#${addAlbumPerf(release=bus, person=[[person:Peter_Crouch]], instruments=Fender Stratocaster\, Fender Jaguar\, Yamaha sf-800, song=NULL)}
+#${addAlbumPerf(release=bus, person=[[person:Pat_Fish]], instruments=Fender Telecaster\, Fender Jaguar\, Yamaha sf-800\, 6 & 12 String Acoustic Guitars\, Keyboards\, Percussion\, Programming\, Vocals, song)} 
+#${addAlbumPerf(release=bus, person=[[person:Richard_Formby]], instruments=Fender Jaguar\, Gibson Firebird\, Burns Electric X11 String\, Programming\, Tapes, song)} 
+#${addAlbumPerf(release=bus, person=[[person:Dooj_Wilkinson]], instruments=Wal Bass Guitar\, Voice, song)} 
+#${addAlbumPerf(release=bus, person=[[person:Nick_Burson]], instruments=Drums, song)} 
+#${addAlbumPerf(release=bus, person=[[person:Peter_Crouch]], instruments=Fender Stratocaster\, Fender Jaguar\, Yamaha sf-800, song)}
 
 #	${pat} (Fender Telecaster, Fender Jaguar, Yamaha sf-800,
 #	6 &amp; 12 String Acoustic Guitars, Keyboards,
@@ -3114,7 +3117,7 @@ Previously available on the ${fishco} LP/CD.
 	${players_beg}
 	${fetchAlbumPersonnel(release=closet)}
 
-#${addAlbumPerf(release=closet, person=[[person:Pat_Fish]], song=NULL)}
+#${addAlbumPerf(release=closet, person=[[person:Pat_Fish]])}
 #	${addAlbumPerf(release=closet, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
 #	${addAlbumPerf(release=closet, person=[[person:Paul_Mulreany]], instruments=Drums\, Vocals)}
 #	${addAlbumPerf(release=closet, person=[[person:Laurence_O'Keefe]], instruments=Bass\, Vocals)}
@@ -7504,1017 +7507,416 @@ Previously available on the ${fishco} LP/CD.
 
 #define	last_of_the_gentleman_adventurers.html
 #live	if (getval(page) = last_of_the_gentleman_adventurers.html)
-	${mkHeader(section=albums, title=Last of the Gentleman Adventurers)}
+	${mkAlbumHeader(lookup=adventurers, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${images}/adventurers_front.jpg"><img
-		src="${images}/adventurers_front_500.jpg"></a>
-	<div style="font-weight: bold; font-size: 1.2em;">
-	</div>
-	${a_media} ${ALBUM}, ${CD}, ${LP}
-	${a_dtreleased} 2012-10-18
-	${a_label} Tundraducks Records
-	${det_end}
-	${tun_beg}
-	${animals}<br />
-	${shame_about_you}<br />
-	${last_of_the_gentleman_adventurers}<br />
-	${tombe}<br />
-	${count_me_out} (Eider)<br />
-	${all_the_saints}<br />
-	${mercy}<br />
-	${black_raoul}<br />
-	${shakey}<br />
-	${solar_core}<br />
-	${saints_prayer}<br />
-	${tun_end}
-	${players_beg}
-#	${addAlbumPerf(release=adventurers, person=[[person:Richard_Formby]], instruments=mixed)}
-#	${addAlbumPerf(release=adventurers, person=[[person:Richard_Formby]], instruments=produced)}
-#	${addAlbumPerf(release=adventurers, person=[[person:Eric_James]], instruments=mastered)}
-	${fetchAlbumPersonnel(release=adventurers)}
-#	${addAlbumPerf(release=adventurers, person=[[person:Pat_Fish]], instruments=guitar\, organ\, singing, song=NULL)}
-#	${addAlbumPerf(release=adventurers, person=[[person:Max_Eider]], instruments=guitar\, singing, song=NULL)}
-#	${addAlbumPerf(release=adventurers, person=[[person:Tim_Harries]], instruments=bass guitar, song=NULL)}
-#	${addAlbumPerf(release=adventurers, person=[[person:Jonny_Mattock]], instruments=drums\, percussion, song=NULL)}
-#	${addAlbumPerf(release=adventurers, person=[[person:Richard_Formby]], instruments=guitar\, indian harmonium, song=NULL)}
-#	${addAlbumPerf(release=adventurers, person=[[person:Owen_Jones]], instruments=accordion, song='Tomb&eacute; dans les Pommes')}
-#	${addAlbumPerf(release=adventurers, person=[[person:Sonic_Boom]], instruments=ghost chorus\, drones, song='Saints Prayer')}
-#	<b>${pat}</b> - Guitar, organ and singing <br />
-#	<b>${max}</b> - Guitar and singing<br />
-#	<b>${tim_harries}</b> - Bass Guitar<br />
-#	<b>${jonny_mattock}</b> - Drums and percussion
-#	<p>
-#	with<br />
-#	<b>${richard}</b> - Guitar and Indian harmonium<br />
-#	<b>${owen}</b> - Accordion on ${tombe}<br />
-#	<b>${sonic}</b> - Ghost chorus and drones on ${saints_prayer}<br />
-	<p>
-	Owen's contribution recorded by Oliver Hasse in Hamburg
-	Sonic's contribution recorded at New Atlantis in the UK
-	<p>
-	Mixed at Hall Place Studio by Richard Formby
-	<p>
-	Mastered by Eric James at the Philosophers Barn
-	<p>
-	All songs by Pat Fish except for Count Me Out, by Max Eider
-	<p>
-	Produced by Richard Formby
-	<p>
-	${players_end}
-	${lin_beg}
-	<b>LAST OF THE GENTLEMAN ADVENTURERS</b>
-	<p>
-	The Cuban heels are worn down to their cuticle and the spring-loaded derringer has rusted in position up a shiny sleeve. Crows bowl across the Racecourse like black boa tumbleweeds and far too many of the other wanted-poster names are long since taken down: that absent rack of painted clogs in Birchfield Road, an admixture of alcohol and DNA still percolating through Jack Lansbury's spit-trap, Freddy Fingers' glass eye rolling to a standstill on the empty dance-floor, all gone, all auditioned for the Boot Hill Boogie Boys or otherwise dispersed. Inside the legendary saloon, its bar-length mirrors and its framed reclining nudes all plasterboarded now, conviviality swept out through a swing door the moment everybody's cards were on the table. This must be the famous palace that those four-lane highways of excess were always leading to, that makes a body scrape a chair up and take stock.
-	<p>
-	With blood from an interminable improv on his cleaver ... people say he uses every last bit of a slaughtered solo clarinet except its squeal ... the Jazz Butcher, one of this threadbare island's greatest living songwriters, herein purveys his choicest cuts. All left to hang as part of their extensive maturation process, melodies so tender that they're falling off the bone, a gamey sweetness in the lyrics, this sumptuous salmagundi has the flavour of a signature dish, something left till last.
-	<p>
-	A work that speaks from a hard-earned perspective and means every word of it, Last of the Gentleman Adventurers is a delightfully ill-humoured reassessment of contemporary culture and the dwindling amount of room remaining for a gentleman adventurer within it. From the atavistic primate yearnings for a vanished jungle-land in `Animals' to the elegiac message-in-a-bottle bobbing on an eerie Californian surf in `Shakey', what we're offered is a scuffed and well-stamped passport to the gone world, stained with Tokay, singed by oval cigarettes you'll never see again. The fatalistic Gallic shrug of `Tomb&eacute; dans les pommes' lifts a dismissive brow at life's vicissitudes, while `Count Me Out' speaks of the dignified withdrawal from a situation that's no longer either interesting or acceptable.
-	<p>
-	Far from a weary resignation letter, though, the pieces here more accurately represent a flinty and determined manifesto, a defiant staking out of the unsupervised and teeming wasteland to which our illustrious former territory has been reduced, a vital roster of remaining freedoms. Whether that be in appreciating the bohemian elan of next-door's quadruped or instigating a romance we may be hard pressed to survive, these songs are testimonials to life, perhaps especially to life at bay. The bluesy and relentless rocket of `Solar Core' provides a glorious reminder to select our destination carefully, and never be found wanting in ambition. `All the Saints' and its affecting coda spell out the emotionally conservationist agenda, with a spirited dismissal of irrelevant modernity in favour of pursuing vitally important individual dreams.
-	<p>
-	This luminous, enduring truth resides at the collection's beating, beaten heart, reiterated eloquently in the title track itself, curling its lip at those who have mistaken BUPA and increased consumer choice for liberty, inciting us to man up and define that precious resource for ourselves. With Messrs Harries, Eider and Mattock as his bearers, the last of the gentleman adventurers here buckles up his pith-helmet and mounts a reckless foray into the interior, heads in the last remaining unexplored direction, the implicit fifth point on our compass. Follow at your peril, from the trail of snapped conventions left behind him, to a province still outside captivity. I'll see you there.
-	<p>
-	Alan Moore<br />
-	Northampton<br />
-	September, 2012<br />
-	<p>
-	Special thanks to: ${del}, Mr Mark Cotton, John Cannon, Gene Solomon, Bruce D. Cummings, R. Darin Brock, Barry (Baz) LaPorte, Greg Higgins, ${linkExternal(http://thegreataukfanciers.org/, The Great Auk Fanciers' Society)}, Canadaloon, Tony Brusdeilins, Graham Crackers Comics, Lito, Nerissa and Ella, Jeremiah `Spassvogel' Rickert, Curly Jefferson and the Milky Drones, Nancy Boston, Philip Woodrow, jbl, Davey Jones, J. Eric Smith, Andreas Ott, Lucas Taieb, John Gilfillan, ${steve} and ${joe_woolley}
-	<p>
-	Thanks to everybody who helped us make this record a reality.
-	<p>
-	Pat & Max
-	${lin_end}
-	${mkAlbumPress(album=adventurers)}
+	${clearAlbumPerf(release=adventurers)}
+	${addAlbumPerf(release=adventurers, type=Aside, ordinal=1, song="Animals")}
+	${addAlbumPerf(release=adventurers, type=Aside, ordinal=2, song="Shame About You")}
+	${addAlbumPerf(release=adventurers, type=Aside, ordinal=3, song="Last of the Gentleman Adventurers")}
+	${addAlbumPerf(release=adventurers, type=Aside, ordinal=4, song="Tombé dans les pommes")}
+	${addAlbumPerf(release=adventurers, type=Aside, ordinal=5, song="Count Me Out", author=Eider)}
+	${addAlbumPerf(release=adventurers, type=Bside, ordinal=1, song="All the Saints")}
+	${addAlbumPerf(release=adventurers, type=Bside, ordinal=2, song="Mercy")}
+	${addAlbumPerf(release=adventurers, type=Bside, ordinal=3, song="Black Raoul")}
+	${addAlbumPerf(release=adventurers, type=Bside, ordinal=4, song="Shakey")}
+	${addAlbumPerf(release=adventurers, type=Bside, ordinal=5, song="Solar Core")}
+	${addAlbumPerf(release=adventurers, type=Bside, ordinal=6, song="Saints Prayer")}
+
+	${addAlbumPerf(release=adventurers, person=[[person:Richard_Formby]], instruments=mixed)}
+	${addAlbumPerf(release=adventurers, person=[[person:Richard_Formby]], instruments=recorded)}
+	${addAlbumPerf(release=adventurers, person=[[person:Richard_Formby]], instruments=guitar\, indian harmonium)}
+	${addAlbumPerf(release=adventurers, person=[[person:Owen_Jones]], instruments=accordion, song="Tombé dans les pommes")}
+	${addAlbumPerf(release=adventurers, person=[[person:Tim_Harries]], instruments=bass guitar)}
+	${addAlbumPerf(release=adventurers, person=[[person:Jonny_Mattock]], instruments=drums\, percussion)}
+	${addAlbumPerf(release=adventurers, person=[[person:Max_Eider]], instruments=guitar\, singing)}
+	${addAlbumPerf(release=adventurers, person=[[person:Sonic_Boom]], instruments=ghost chorus\, drones, song="Saints Prayer")}
+	${addAlbumPerf(release=adventurers, person=[[person:Pat_Fish]], instruments=guitar\, organ\, singing)}
+	${addAlbumPerf(release=adventurers, person=[[person:Eric_James]], instruments=mastered)}
+	${addAlbumPerf(release=adventurers, person=[[person:Brian_Pyle]], instruments=remastered)}
+	${addAlbumPerf(release=adventurers, person=[[person:Alan_Moore]], instruments=sleeve notes)}
 
 	${jbc_footer}
 #live	endif
 
 #define	sumosonic_spacemen.html
 #live	if (getval(page) = sumosonic_spacemen.html)
-	${mkHeader(section=albums, title=Come\, Friendly Spacemen)}
+	${mkAlbumHeader(lookup=spacemen, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${images}/sumo/sumosonic_spacemen_front.jpg"><img
-		src="${images}/sumo/sumosonic_spacemen_front_500.jpg"></a>
-	<a href="${images}/sumo/sumosonic_spacemen_back.jpg"><img
-		src="${images}/sumo/sumosonic_spacemen_back_250.jpg"></a>
-	<a href="${images}/sumo/sumosonic_spacemen_cd.jpg"><img
-		src="${images}/sumo/sumosonic_spacemen_cd_250.jpg"></a>
-	<p>
-	${a_media} ${CD}
-	${a_dtreleased} 1996-12-05
-	${a_label} Creation Records
-	${a_cat} CRESCD 242
-	${det_end}
-	${tun_beg}
-	1. ${sumo_spacemen}
-	<br />
-	2. ${sumo_monks}
-	<br />
-	3. ${sumo_spacemen} (version)
-	${tun_end}
+	${clearAlbumPerf(release=spacemen)}
+	${addAlbumPerf(release=spacemen, ordinal=1, song="Come\, Friendly Spacemen")}
+	${addAlbumPerf(release=spacemen, ordinal=2, song="Monks Of Kung Fu")}
+	${addAlbumPerf(release=spacemen, ordinal=3, song="Come\, Friendly Spacemen", version=version)}
 
 	${jbc_footer}
 #live	endif
 
 #define	sumosonic_spacemen_12.html
 #live	if (getval(page) = sumosonic_spacemen_12.html)
-	${mkHeader(section=albums, title=Come\, Friendly Spacemen 12")}
+	${mkAlbumHeader(lookup=spacemen12, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${images}/sumo/sumosonic_spacemen_a.jpg"><img
-		src="${images}/sumo/sumosonic_spacemen_a_500.jpg"></a>
-	<a href="${images}/sumo/sumosonic_spacemen_b.jpg"><img
-		src="${images}/sumo/sumosonic_spacemen_b_250.jpg"></a>
-	<p>
-	${a_media} ${12}
-	${a_dtreleased} 1996-12-05
-	${a_label} Creation Records
-	${a_cat} CRESCD 242
-	${det_end}
-	${tun_beg}
-	A:
-	<br />
-	1. ${sumo_spacemen} (version)
-	<br />
-	2. ${sumo_spacemen} (Jackson Hole Remix)
-	<p>
-	B:
-	<br />
-	1. ${sumo_monks}
-	<br />
-	2. ${sumo_spacemen} (Sushi Remix)
-	${tun_end}
+	${clearAlbumPerf(release=spacemen12)}
+	${addAlbumPerf(release=spacemen12, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", version=version)}
+	${addAlbumPerf(release=spacemen12, type=Aside, ordinal=2, song="Come\, Friendly Spacemen", version=Jackson Hole Remix)}
+	${addAlbumPerf(release=spacemen12, type=Bside, ordinal=1, song="Monks Of Kung Fu")}
+	${addAlbumPerf(release=spacemen12, type=Bside, ordinal=2, song="Come\, Friendly Spacemen", version=Sushi Remix)}
 
 	${jbc_footer}
 #live	endif
 
 #define	sumosonic_this_is_sumo.html
 #live	if (getval(page) = sumosonic_this_is_sumo.html)
-	${mkHeader(section=albums, title=This Is Sumo)}
+	${mkAlbumHeader(lookup=thisissumo, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${images}/sumo/sumosonic_this_is_sumo_front.jpg"><img
-		src="${images}/sumo/sumosonic_this_is_sumo_front_500.jpg"></a>
-	<a href="${images}/sumo/sumosonic_this_is_sumo_back.jpg"><img
-		src="${images}/sumo/sumosonic_this_is_sumo_back_250.jpg"></a>
-	<a href="${images}/sumo/sumosonic_this_is_sumo_inner.jpg"><img
-		src="${images}/sumo/sumosonic_this_is_sumo_inner_250.jpg"></a>
-	<a href="${images}/sumo/sumosonic_this_is_sumo_cd.jpg"><img
-		src="${images}/sumo/sumosonic_this_is_sumo_cd_250.jpg"></a>
-	<p>
-	${a_media} ${LP}
-	${a_dtreleased} 1998-01-26
-	${a_label} Creation Records
-	${a_cat} CRECD 204
-	${det_end}
-	${tun_beg}
-	${sumo_spacemen}<br/>
-	${sumo_earth}<br/>
-	${sumo_fern}<br/>
-	${sumo_cats}<br/>
-	${sumo_wonderful}<br/>
-	${sumo_stupid}<br/>
-	${sumo_monsters}<br/>
-	${sumo_radio}<br/>
-	${sumo_business}<br/>
-	${sumo_monks}<br/>
-	${sumo_sputnik}
-	${tun_end}
+	${clearAlbumPerf(release=thisissumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=1, song="Come\, Friendly Spacemen")}
+	${addAlbumPerf(release=thisissumo, ordinal=2, song="God's Green Earth")}
+	${addAlbumPerf(release=thisissumo, ordinal=3, song="Fern Schnell Gut")}
+	${addAlbumPerf(release=thisissumo, ordinal=4, song="Cat's Life")}
+	${addAlbumPerf(release=thisissumo, ordinal=5, song="Everything Is Wonderful")}
+	${addAlbumPerf(release=thisissumo, ordinal=6, song="Stupid")}
+	${addAlbumPerf(release=thisissumo, ordinal=7, song="Destroy All Monsters")}
+	${addAlbumPerf(release=thisissumo, ordinal=8, song="Radio Saigon")}
+	${addAlbumPerf(release=thisissumo, ordinal=9, song="Business And Work")}
+	${addAlbumPerf(release=thisissumo, ordinal=10, song="Monks Of Kung Fu")}
+	${addAlbumPerf(release=thisissumo, ordinal=11, song="Sputnik")}
 
-	${players_beg}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Mister_B]], aka="[[person:Ian_Botterill]]", instruments=vocalist)}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Kathie_M]], aka="[[person:Kathie_McGinty]]", instruments=vocalist)}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Special_K]], aka="[[person:Kathy_Shaer]]", instruments=vocalist)}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Anita_Allbright]], instruments=vocalist)}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Headstone]], aka="[[person:Pat_Fish]]", instruments=guitars\,keyboards\,bass\,programming\,vocalist)}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Gabriel_Turner]], instruments=drumming\,vocalist)}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Agent_Russell_Cooper]], aka="[[person:Russell_Cooper]]", instruments=percussionist extraordinaire)}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Darren_Nash]], instruments=mixed)}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Mandy_Parnell]], instruments=mastered)}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Johnny_Octopus]], instruments=production, song="Come\, Friendly Spacemen")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Tom_Withers]], instruments=production, song="Come\, Friendly Spacemen")}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Pat_Fish]], instruments=music\,words)}
-##	${addAlbumPerf(release=thisissumo, person=[[person:Curtis_E._Johnson]], instruments=music\,words, song="Everything Is Wonderful")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Dave_Henderson]], instruments=slide and solo guitar, song="Come\, Friendly Spacemen")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Jonny_Mattock]], instruments=singing, song="Come\, Friendly Spacemen")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Max_Read]], instruments=singing, song="Come\, Friendly Spacemen")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Curtis_E._Johnson]], instruments=crime rap, song="God's Green Earth")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Jamie_Jab]], instruments=morricone chorus, song="God's Green Earth")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:John_Langley]], instruments=drum loop, song="Fern Schnell Gut")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Mark_Refoy]], instruments=acoustic guitar, song="Everything Is Wonderful")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Curtis_E._Johnson]], instruments=backing vocal, song="Stupid")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Steve_Davies]], instruments=guitar solo, song="Radio Saigon")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Bolly]], instruments=dijeridoo, song="Monks Of Kung Fu")}
-#	${addAlbumPerf(release=thisissumo, person=[[person:Max_Read]], instruments=slide guitar, song="Sputnik")}
-	${fetchAlbumPersonnel(release=thisissumo)}
-	Recorded at The Lodge, Northampton and Mixed by Darren Nash at Moles, Bath. Produced by The Lords Of Sumo. Mastered by Mandy Parnell at The Exchange, London. Additional production on Come, Friendly Spacemen (Sushi Mix) by Johnny Octopus and Tom Withers (courtesy of Octopus Records) All words and music by Pat Fish, except for 'Everything Is Wonderful' by Pat Fish/Curtis E Johnson Songs published by Creation songs/Sony Music Ltd. 
-
-	Sumosonic on the internet: http://www.sumosonic.corn 
-	${players_end}
-
-	${thx_beg}
-	<b>SUMOSONIC WOULD LIKE TO THANK :</b>
-	Darren Nash. Jan Brown. Max Read. Andrew Web. Dave Kirby. Steve Gordon. Matt Wallis. D.T. Henderson. Mark Refoy. Jon Mattock. Curtis. Jamie Jab. Steve Ward. Mandy Parnell. Daniel Fantasy. John Lovett at Occultique. Mark for Kung Fu Express. Peter Two Litre (Opslag & Distributie). Mitch Jenkins. Johnny Octopus. Tom Withers. Aggi. Ben Greenaway. Paul Slater. Reasonable Ray Kinsey. David Whittemore. Pete Gordelier and all at the Big Noise. Geoff Kirk. The White Lodge. Paul Stanton. John Goulding. Jooles. Joe Peters. James Ferro. Jack Schaer. Francine Schaer. John for Reiki and Reflex. Pete and Yvette at the Racehorse. Colin. All the Herbs and all things Natural. Seb Shelton. Alan McGee. Dick Green. James Kyllo. Slaughter Joe. Kle. Paul Reed. Emma B. Michelle Kerry. Vanessa Cotton. Mark Bowen. David Bagnall. Judge Graham and The Basement. Esther. Shito - Ryo Sensi. God and of course Sumo. 
-	<br/>
-	<br/>
-	<b>SHOUTS AND RESPECT TO:</b>
-	Tan and the 212 collective. Emad Salama. Ted and Wendy. Duncan, Dick and Viv. Rob Coles. Tourtech. Big Mick and Roy. Cole Coonce. Steve Waring. ${deirdre}. Patrick at Space Travel Agency, HH. Shutlanger Dave. Alastair lndge. Alan, Patricia and Kevin McGinty. Barry V. Mr Parkin. James Duval. Alan Moore. Lisa Lovebucket. Don Chow. Clemens Kinder. Terry Razor. Donald John Lewis. Rachel Woodhouse. Lottie and Mark Fisher. The Jersey Posse. Kim Deal. Rob Goodman. Oliver Sacks. Ken. Dave Kirk and the Rockin' Turks. Fat Controller cellar. Richard Feynneman. Mark Webber. Slipstream. Primal Scream. Junior Loaded Posse. P Hex. JBC. Angelo and Massive. Strangelove. Gerard, Musical and the Bristol Beats. Transambient Communications (What Is Muzik?). Override. Pluto. Eno. Wolfgang Tschegg. The Purelove. The Black Eg. King Horror. Phill Lynott. lce-T and the Syndicate. Cypress Hill. Spacemen 3. Chris Morris. Toho Studios, Tokyo. De La Soul. The K Foundation. Nitronic Research Wind Tunnels, Silverlake, California. Tha Judge and all at Fatty's Bar and Grill. Yoshi and all at Mugi. Jaegermeister. Stolichnaya. Palm Leaf Technology. Shamrat Balti House. The Star Of India. The World Famous Ski Room. Urquell, Budvar and Guinness Breweries. Luka. Little Jake, Thumper and Hobbes. The Shaolin Temple and of course Sumo. 
-
-	${thx_end}
-	${mkAlbumPress(album=thisissumo)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Mister_B]], aka="[[person:Ian_Botterill]]", instruments=vocalist)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Kathie_M]], aka="[[person:Kathie_McGinty]]", instruments=vocalist)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Special_K]], aka="[[person:Kathy_Shaer]]", instruments=vocalist)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Anita_Allbright]], instruments=vocalist)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Headstone]], aka="[[person:Pat_Fish]]", instruments=guitars\,keyboards\,bass\,programming\,vocalist)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Gabriel_Turner]], instruments=drumming\,vocalist)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Agent_Russell_Cooper]], aka="[[person:Russell_Cooper]]", instruments=percussionist extraordinaire)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Darren_Nash]], instruments=mixed)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Mandy_Parnell]], instruments=mastered)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Johnny_Octopus]], instruments=production, song="Come\, Friendly Spacemen")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Tom_Withers]], instruments=production, song="Come\, Friendly Spacemen")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Pat_Fish]], instruments=music\,words)}
+	${addAlbumPerf(release=thisissumo, person=[[person:Curtis_E._Johnson]], instruments=music\,words, song="Everything Is Wonderful")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Dave_Henderson]], instruments=slide and solo guitar, song="Come\, Friendly Spacemen")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Jonny_Mattock]], instruments=singing, song="Come\, Friendly Spacemen")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Max_Read]], instruments=singing, song="Come\, Friendly Spacemen")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Curtis_E._Johnson]], instruments=crime rap, song="God's Green Earth")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Jamie_Jab]], instruments=morricone chorus, song="God's Green Earth")}
+	${addAlbumPerf(release=thisissumo, person=[[person:John_Langley]], instruments=drum loop, song="Fern Schnell Gut")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Mark_Refoy]], instruments=acoustic guitar, song="Everything Is Wonderful")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Curtis_E._Johnson]], instruments=backing vocal, song="Stupid")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Steve_Davies]], instruments=guitar solo, song="Radio Saigon")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Bolly]], instruments=dijeridoo, song="Monks Of Kung Fu")}
+	${addAlbumPerf(release=thisissumo, person=[[person:Max_Read]], instruments=slide guitar, song="Sputnik")}
 
 	${jbc_footer}
 #live	endif
 
 #define	fire_wasted.html
 #live	if (getval(page) = fire_wasted.html)
-	${mkHeader(section=albums, title=The Wasted Years)}
+	${mkAlbumHeader(lookup=fire_wasted, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/fire_wasted.jpg"><img
-		src="${jbc_images}/releases/fire_wasted_500.jpg"></a>
-	${a_media} 4CD Bookback Set
-	${a_label} Fire Records
-	${a_dtreleased} 2017-10-20
-	<p>
-	This is a 4 CD boxset/booklet of the first 4 Glass Records Jazz Butcher albums.
-#${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:John_A._Rivers]], instruments=producer)}
-#${addAlbumPerf(release=human, person=[[person:Martin_F._Bedford]], instruments=sleeve)}
-#${addAlbumPerf(release=human, person=[[person:Jak_Munich]], instruments=photography)}
-	${det_end}
-#	${players_beg}
-#	${fetchAlbumPersonnel(release=fire_wasted)}
-#	${players_end}
-	${tun_beg}
-	<ol>
-	<li>
-	${gloop}
-	<li>
-	${jbtheme}
-	<li>
-	${party}
-	<li>
-	${foot}
-	<li>
-	${engine}
-	<li>
-	${china}
-	<li>
-	${zombie}
-	<li>
-	${flan}
-	<li>
-	${mer}
-	<li>
-	${poison}
-	<li>
-	${kitten}
-	<li>
-	${bath}
-	<li>
-	${gold}
-	<li>
-	${smiff}(Big Return)
-	<li>
-	${men}
-	<li>
-	${hour}
-	<li>
-	${meat}
-	<li>
-	${betty}
-	<li>
-	${marn} (Muscovite Mix)
-	<li>
-	${wheel}
-	<li>
-	${mind}
-	<li>
-	${gf}
-	<li>
-	${desert}
-	<li>
-	${sat}
-	<li>
-	${holiday}
-	<li>
-	${pets}
-	<li>
-	${rumour}
-	<li>
-	${reagan}
-	<li>
-	${boy}
-	<li>
-	${walk}
-	<li>
-	${drain}
-	<li>
-	${fall}
-	<li>
-	${bigbad}
-	<li>
-	${kitch}
-	<li>
-	${hung}
-	<li>
-	${world}
-	<li>
-	${who}
-	<li>
-	${domest}
-	<li>
-	${shame}
-	<li>
-	${nada}
-	<li>
-	${angels}
-	</ol>
-	${tun_end}
-
-	${lin_beg}
-	In the early '80s, ${barker} was checking master vinyl copies of classical recordings for glitches - they don't make jobs like that anymore. In his spare time he discovered innovative souls struggling to make music and welcomed them to his Glass Records label. The roll call included Teenage Fanclub, Spacemen 3, The Pastels and The Jazz Butcher. 
-	<p>
-	The 'Butcher' delivered a gaggle of albums and many 45s for Glass from 1983 to 1986, the jacket notes on the dusty tome that recalls this period mentions Randall And Hopkirk (Deceased), Thatcher, DIY post-punk, LSD, surrealist cabaret, The Velvet Underground, a bottle of Cointreau or two, the Amstrad 7090 and Ronco's 'Black Magic' compilation. All that led to the 'The Wasted Years': Four albums, many visions... 
-	<p>
-	'${bacon}' was an experiment in sound, conjoining that Ronco platter to Todd Rundgren, a guitar from Wes Montgomery's cupboard and mentions of imaginary monsters set to some funky chops. "The sound of a few mates failing to take note that they've an LP to make!" claims the JB site. It's pop meets bluesy scat with plenty of deadpan irony - a theme that will recur. 
-	<p>
-	'${scandal}' took a "competent little rock band" with a bassist who'd served time in Bauhaus into a world chorused by multi-track vocals and bathroom ambience. "A top-shelf diamond of a record that is filled with excellent, memorable songs." (All Music). 
-	<p>
-	'${sex}' offered a broadening perspective. Competence and European travel beget a narrative akin to an impressionistic cold war spy movie, a "mess of styles" that became coherent. "A great album," muses All Music before comparing JB mainman Pat Fish to Ray Davies circa 1969. It's an "accidental" concept album prone to fleeting melancholy. 
-	<p>
-	'${dist}', ahead of the original band's demise through "fatigue and liquor" was the Butcher's stab at making their "greatest album ever". "A beautifully romantic record of soft rock ballads and jazzy torch songs," enthused Trouser Press. There's a folky edge scratching away beside the inevitable romp through pop music's historical lineage. 
-	<p>
-	Four albums, then. The '80s recast at an ironic party of malcontents. Indie pop as a soundtrack. Songs that shouldn't fit together - but do. 'Wasted Years'? Yeah, really.
-	${lin_end}
-	${mkAlbumPress(album=fire_wasted)}
+	${clearAlbumPerf(release=fire_wasted)}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=1, song="Gloop Jiving")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=2, song="Jazz Butcher Theme")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=3, song="Partytime")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=4, song="Bigfoot Motel")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=5, song="Sex Engine Thing")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=6, song="Chinatown")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=7, song="Zombie Love")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=8, song="Grey Flannelette")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=9, song="La Mer")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=10, song="Poisoned By Food")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=11, song="Love Kittens")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=12, song="Bath Of Bacon")}
+	${addAlbumPerf(release=fire_wasted, type=CD1, ordinal=13, song="Girls Who Keep Goldfish")}
+	${addAlbumPerf(release=fire_wasted, type=CD2, ordinal=1, song="Southern Mark Smith", version=Big Return))}
+	${addAlbumPerf(release=fire_wasted, type=CD2, ordinal=2, song="Real Men")}
+	${addAlbumPerf(release=fire_wasted, type=CD2, ordinal=3, song="Soul Happy Hour")}
+	${addAlbumPerf(release=fire_wasted, type=CD2, ordinal=4, song="I Need Meat")}
+	${addAlbumPerf(release=fire_wasted, type=CD2, ordinal=5, song="Just Like Betty Page")}
+	${addAlbumPerf(release=fire_wasted, type=CD2, ordinal=6, song="Marnie", version=Muscovite Mix)}
+	${addAlbumPerf(release=fire_wasted, type=CD2, ordinal=7, song="Caroline Wheeler's Birthday Present")}
+	${addAlbumPerf(release=fire_wasted, type=CD2, ordinal=8, song="Mind Like A Playgroup")}
+	${addAlbumPerf(release=fire_wasted, type=CD2, ordinal=9, song="Girlfriend")}
+	${addAlbumPerf(release=fire_wasted, type=CD2, ordinal=10, song="My Desert")}
+	${addAlbumPerf(release=fire_wasted, type=CD3, ordinal=1, song="Big Saturday")}
+	${addAlbumPerf(release=fire_wasted, type=CD3, ordinal=2, song="Holiday")}
+	${addAlbumPerf(release=fire_wasted, type=CD3, ordinal=3, song="Red Pets")}
+	${addAlbumPerf(release=fire_wasted, type=CD3, ordinal=4, song="Only A Rumor")}
+	${addAlbumPerf(release=fire_wasted, type=CD3, ordinal=5, song="President Regan's Birthday Present")}
+	${addAlbumPerf(release=fire_wasted, type=CD3, ordinal=6, song="What's The Matter\, Boy?")}
+	${addAlbumPerf(release=fire_wasted, type=CD3, ordinal=7, song="Walk With The Devil")}
+	${addAlbumPerf(release=fire_wasted, type=CD3, ordinal=8, song="Down The Drain")}
+	${addAlbumPerf(release=fire_wasted, type=CD4, ordinal=1, song="Falling In Love")}
+	${addAlbumPerf(release=fire_wasted, type=CD4, ordinal=2, song="Big Bad Thing")}
+	${addAlbumPerf(release=fire_wasted, type=CD4, ordinal=3, song="Still In The Kitchen")}
+	${addAlbumPerf(release=fire_wasted, type=CD4, ordinal=4, song="Hungarian Love Song")}
+	${addAlbumPerf(release=fire_wasted, type=CD4, ordinal=5, song="The New World")}
+	${addAlbumPerf(release=fire_wasted, type=CD4, ordinal=6, song="Who Loves You Now?")}
+	${addAlbumPerf(release=fire_wasted, type=CD4, ordinal=7, song="Domestic Animal")}
+	${addAlbumPerf(release=fire_wasted, type=CD4, ordinal=8, song="Buffalo Shame")}
+	${addAlbumPerf(release=fire_wasted, type=CD4, ordinal=9, song="Nothing Special")}
+	${addAlbumPerf(release=fire_wasted, type=CD4, ordinal=10, song="Angels")}
 
 	${jbc_footer}
 #live	endif
 
 #define	fire_violent.html
 #live	if (getval(page) = fire_violent.html)
-	${mkHeader(section=albums, title=The Violent Years)}
+	${mkAlbumHeader(lookup=fire_violent, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/fire_violent.jpg"><img
-		src="${jbc_images}/releases/fire_violent_500.jpg"></a>
-	${a_media} 4CD Bookback Set
-	${a_label} Fire Records
-	${a_dtreleased} 2018-03-09
-	<p>
-	Expansive book-styled package of the first four albums from The Jazz Butcher's early Creation Records' years - 1988-1991.
-	<p>
-	Featuring the much praised 'Fishcotheque', 'Big Planet, Scarey Planet', 'Cult Of The Basement' and 'Condition Blue'.
-	<p>
-	A sonic journey that takes The Jazz Butcher from a Weather Prophets-propelled rock 'n' roll visionary through to a lean jazz-tinged pop exponent.
-	<p>
-	Underlining the clever lyrics, witticisms, one-liners, melancholy, irony and conceptualisation of main man Pat Fish that came to maturity across his previous four albums for Glass (collected on Fire and much praised later last year as 'The Wasted Years'). 
-#${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:John_A._Rivers]], instruments=producer)}
-#${addAlbumPerf(release=human, person=[[person:Martin_F._Bedford]], instruments=sleeve)}
-#${addAlbumPerf(release=human, person=[[person:Jak_Munich]], instruments=photography)}
-	${det_end}
-#	${players_beg}
-#	${fetchAlbumPersonnel(release=fire_violent)}
-#	${players_end}
-	${tun_beg}
-	<ol>
-	<li>
-	${next}
-	</li><li>
-	${touch}
-	</li><li>
-	${wrong}
-	</li><li>
-	${village}
-	</li><li>
-	${swell}
-	</li><li>
-	${49}
-	</li><li>
-	${best}
-	</li><li>
-	${chick}
-	</li><li>
-	${sue}
-	</li><li>
-	${keep}
-	</li><li>
-	${invent}
-	</li><li>
-	${lineo}
-	</li><li>
-	${hyst}
-	</li><li>
-	${word}
-	</li><li>
-	${kid}
-	</li><li>
-	${burg}
-	</li><li>
-	${being}
-	</li><li>
-	${plague}
-	</li><li>
-	${dream}
-	</li><li>
-	${good}
-	</li><li>
-	${baset}
-	</li><li>
-	${drugs}
-	</li><li>
-	${tues}
-	</li><li>
-	${onion}
-	</li><li>
-	${daycare}
-	</li><li>
-	${zeppo}
-	</li><li>
-	${fert}
-	</li><li>
-	${odd}
-	</li><li>
-	${euph}
-	</li><li>
-	${panic}
-	</li><li>
-	${go}
-	</li><li>
-	${bait}
-	</li><li>
-	${sis}
-	</li><li>
-	${girls}
-	</li><li>
-	${filth}
-	</li><li>
-	${harlan}
-	</li><li>
-	${still}
-	</li><li>
-	${monkey}
-	</li><li>
-	${yo}
-	</li><li>
-	${honey}
-	</li><li>
-	${shirl}
-	</li><li>
-	${rachel}
-	</li>
-	</ol>
-	${tun_end}
-
-#	${lin_beg}
-#	${lin_end}
-	${mkAlbumPress(album=fire_violent)}
+	${clearAlbumPerf(release=fire_violent)}
+	${addAlbumPerf(release=fire_violent, type=CD1, ordinal=1, song="Next Move Sideways")}
+	${addAlbumPerf(release=fire_violent, type=CD1, ordinal=2, song="Out Of Touch")}
+	${addAlbumPerf(release=fire_violent, type=CD1, ordinal=3, song="Get It Wrong")}
+	${addAlbumPerf(release=fire_violent, type=CD1, ordinal=4, song="Living In A Village")}
+	${addAlbumPerf(release=fire_violent, type=CD1, ordinal=5, song="Swell")}
+	${addAlbumPerf(release=fire_violent, type=CD1, ordinal=6, song="Looking For Lot 49")}
+	${addAlbumPerf(release=fire_violent, type=CD1, ordinal=7, song="The Best Way")}
+	${addAlbumPerf(release=fire_violent, type=CD1, ordinal=8, song="Chickentown")}
+	${addAlbumPerf(release=fire_violent, type=CD1, ordinal=9, song="Susie")}
+	${addAlbumPerf(release=fire_violent, type=CD1, ordinal=10, song="Keeping The Curtains Closed")}
+	${addAlbumPerf(release=fire_violent, type=CD2, ordinal=1, song="New Invention")}
+	${addAlbumPerf(release=fire_violent, type=CD2, ordinal=2, song="Line Of Death")}
+	${addAlbumPerf(release=fire_violent, type=CD2, ordinal=3, song="Hysteria")}
+	${addAlbumPerf(release=fire_violent, type=CD2, ordinal=4, song="The Word I Was Looking For")}
+	${addAlbumPerf(release=fire_violent, type=CD2, ordinal=5, song="Bicycle Kid")}
+	${addAlbumPerf(release=fire_violent, type=CD2, ordinal=6, song="Burglar Of Love")}
+	${addAlbumPerf(release=fire_violent, type=CD2, ordinal=7, song="Nightmare Being")}
+	${addAlbumPerf(release=fire_violent, type=CD2, ordinal=8, song="Do The Bubonic Plague")}
+	${addAlbumPerf(release=fire_violent, type=CD2, ordinal=9, song="Bad Dream Lover")}
+	${addAlbumPerf(release=fire_violent, type=CD2, ordinal=10, song="The Good Ones")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=1, song="The Basement")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=2, song="She's On Drugs")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=3, song="Pineapple Tuesday")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=4, song="The Onion Field")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=5, song="Daycare Nation")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=6, song="My Zeppelin")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=7, song="Fertiliser")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=8, song="Mr. Odd")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=9, song="After The Great Euphrates")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=10, song="Panic In Room 109")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=11, song="Girl Go")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=12, song="Turtle Bait")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=13, song="Sister Death")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=1, song="Girls Say Yes")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=2, song="Our Friends The Filth")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=3, song="Harlan")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=4, song="Still And All")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=5, song="Monkeyface")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=6, song="She's A Yo-Yo")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=7, song="Honey")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=8, song="Shirley MacLaine")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=9, song="Racheland")}
 
 	${jbc_footer}
 #live	endif
 
 #define	fire_cholmondley.html
 #live	if (getval(page) = fire_cholmondley.html)
-	${mkHeader(section=albums, title=     
-	Dr Cholmondley Repents: A-sides, B-Sides and Seasides)} 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/fire_cholmondley.jpg"><img
-		src="${jbc_images}/releases/fire_cholmondley.jpg"></a>
-	${a_media} 4CD Bookback Set
-	${a_label} Fire Records
-	${a_dtreleased} 2021-11-12
-	<p>
-	This is a 4 CD boxset/booklet of the first 4 Glass Records Jazz Butcher albums.
-#${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:John_A._Rivers]], instruments=producer)}
-#${addAlbumPerf(release=human, person=[[person:Martin_F._Bedford]], instruments=sleeve)}
-#${addAlbumPerf(release=human, person=[[person:Jak_Munich]], instruments=photography)}
-	${det_end}
-#	${players_beg}
-#	${fetchAlbumPersonnel(release=fire_cholmondley)}
-#	${players_end}
-	${tun_beg}
-<ol>
-		<li>
-${smiff}(Original 45)
-</li>
-		<li>
-${count}(B-side of Mark Smith)
-</li>
-		<li>
-${marn} (Miaow Mix)
-</li>
-		<li>
-${road} (12" Version)
-</li>
-		<li>
-${men} (12" Version)
-</li>
-		<li>
-${jungle}(12" Extended Mix)
-</li>
-		<li>
-${hardy} (12" Version)
-</li>
-		<li>
-${angels} (12" Version)
-</li>
-		<li>
-${spooky} (12" Extended Mix)
-</li>
-		<li>
-${invent} (12" Version)
-</li>
-		<li>
-${go} (12" Mix)
-</li>
-		<li>
-${weluv} (the Great Awakening) (12" B-side)
-</li>
-		<li>
-${sweet} (Australian 7" single)
-</li>
-		<li>
-${16} (CD single Version) 02:03
-</li>
-		<li>
-${rain} (Roadrunner B-side)
-</li>
-		<li>
-${drink} (Roadrunner B-side)
-</li>
-		<li>
-${h2o} (What A Nice Way To Turn 17 Compilation)
-</li>
-		<li>
-${jbpm}(Real Men 12" B-side)
-</li>
-		<li>
-${dentist} (Human Jungle B-side)
-</li>
-		<li>
-${devil} (Human Jungle 12" B-side)
-</li>
-		<li>
-${sa} (Distressed Gentlefolk CD only track)
-</li>
-		<li>
-${groove}(Hard 12" B-side)
-</li>
-		<li>
-${party} (Hard 12" B-side)
-</li>
-		<li>
-${mersey} (Angels 12" B-side)
-</li>
-		<li>
-${blame} (Spooky 12" B-side)
-</li>
-		<li>
-${excel} (Girl Go 12" Version)
-</li>
-		<li>
-${chang} (Von Daemmerung Remix)
-</li>
-		<li>
-${vodka} (Abus Dangereux magazine compilation)
-</li>
-		<li>
-${truck} (Sixteen Years CD Single Version)
-</li>
-		<li>
-${consp} (12" Version)
-</li>
-		<li>
-${ever} (Conspiracy 12" Version)
-</li>
-		<li>
-${lorre} (Conspiracy 12" B-side)
-</li>
-		<li>
-${wind} (Conspiracy 12" B-side)
-</li>
-		<li>
-${city} (50,000 Glass Fans Can't Be Wrong compilation)
-</li>
-		<li>
-${vienna} (Hard 12" B-side)
-</li>
-		<li>
-${lost} (Gunfire and Pianos Compilation)
-</li>
-		<li>
-${hair}
-</li>
-		<li>
-${thing} (Hard 12" B-side)
-</li>
-		<li>
-${becky} (Angels 12" B-side) 05:09
-</li>
-		<li>
-${almost} (New Invention 12" B-side)
-</li>
-		<li>
-${mayi}(Speedy Gonzalez 12" B-side)
-</li>
-		<li>
-${aff} (12" Version)
-</li>
-		<li>
-${over} (Speedy Gonzalez 12" B-side)
-</li>
-		<li>
-${gold} (Marnie 12" B-side)
-</li>
-		<li>
-${fever} (Marnie 12" B-side)
-</li>
-		<li>
-${knock} (Speedy Gonzalez 12" B-side)
-</li>
-		<li>
-${invent} (Live KCRW Session 1989)
-</li>
-		<li>
-${chick} (Live KCRW Session 1989)
-</li>
-		<li>
-${angels} (Live KCRW Session 1989)
-</li>
-		<li>
-${dream} (Live KCRW Session 1989)
-</li>
-		<li>
-${burg} (Live KCRW Session 1989)
-</li>
-		<li>
-${go} (Live KCRW Session 1989)
-</li>
-		<li>
-${odd} (Live KCRW Session 1989)
-</li>
-		<li>
-${jbpm}(Live KCRW Session 1989)
-</li>
-		<li>
-${moscow} (Live KCRW Session 1989)
-</li>
-		<li>
-${wheel} (Live KCRW Session 1989)
-</li>
-		<li>
-${king} (Live KCRW Session 1989)
-</li>
-		<li>
-${49} (Live KCRW Session 1989) 
-</li>
-</ol>
-	${tun_end}
+	${mkAlbumHeader(lookup=fire_cholmondley, body=${literalizeCommas()})}
 
-#	${lin_beg}
-#	${lin_end}
+	${clearAlbumPerf(release=fire_cholmondley)}
 
-	${mkAlbumPress(album=fire_cholmondley)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=1, song="Southern Mark Smith", version=Original 45)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=2, song="Jazz Butcher -v- Count Dracula", version=B-side of Mark Smith)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=3, song="Marnie", version=Miaow Mix)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=4, song="Roadrunner", author=Jonathan Richman, version=12er Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=5, song="Real Men", version=12er Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=6, song="The Human Jungle", version=12er Extended Mix)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=7, song="Hard", version=12er Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=8, song="Angels", version=12er Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=9, song="Spooky", version=12er Extended Mix)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=10, song="New Invention", version=12er Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=11, song="Girl-Go", version=12er Mix)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=12, song="We Love You", version=The Great Awakening - 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=13, song="Sweetwater", version=Australian 7er single)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=14, song="Sixteen Years", version=CD single Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=1, song="Rain", version=Roadrunner B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=2, song="D.R.I.N.K.", version=Roadrunner B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=3, song="Water", version=What A Nice Way To Turn 17 Compilation)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=4, song="The Jazz Butcher Meets the Prime Minister", version=Real Men 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=5, song="Death Dentist", version=Human Jungle B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=6, song="The Devil Is My Friend", version=Human Jungle 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=7, song="South America", version=Distressed Gentlefolk CD only track)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=8, song="Grooving In The Bus Lane", version=Hard 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=9, song="Partytime", version=Hard 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=10, song="Mersey", version=Angels 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=11, song="Blame", version=Spooky 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=12, song="Excellent!", version=Girl Go 12er Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=13, song="President Chang", version=Von Daemmerung Remix)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=14, song="Vodka Girls", version=Abus Dangereux magazine compilation, media=/audio/mp3/vodkagirls.mp3)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=15, song="Truck Of Fear", version=Sixteen Years CD Single Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=1, song="Conspiracy", version=12er Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=2, song="Forever", version=Conspiracy 12er Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=3, song="Peter Lorre", version=Conspiracy 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=4, song="Big Old Wind", version=Conspiracy 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=5, song="City Of Night", version=50\,000 Glass Fans Can't Be Wrong compilation)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=6, song="Vienna Song", version=Hard 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=7, song="Lost In France", version=Gunfire and Pianos Compilation)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=8, song="The Hairbrush And The Tank")}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=9, song="Thing", version=Hard 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=10, song="Rebecca Wants Her Bike Back", version=Angels 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=11, song="Almost Brooklyn", version=New Invention 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=12, song="May I", version=Speedy Gonzalez 7er B-side, media=/audio/JazzButcher_MayI.mp3)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=13, song="Affection", version=12er Version, media=/audio/JazzButcher_Affection.mp3)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=14, song="Over You", version=Speedy Gonzalez 7er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=15, song="Girls Who Keep Goldfish", version=Marnie 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=16, song="Cowgirl Fever", version=Marnie 12er B-side, media=/audio/mp3/cowgirlfever.mp3)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=17, song="Knocking On Heaven's Door", version=Speedy Gonzalez 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=1, song="New Invention", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=2, song="Chickentown", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=3, song="Angels", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=4, song="Bad Dream Lover", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=5, song="Burglar Of Love", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=6, song="Girl-Go", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=7, song="Mr. Odd", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=8, song="The Jazz Butcher Meets the Prime Minister", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=9, song="Moscow Drug Club", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=10, song="Caroline Wheeler's Birthday Present", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=11, song="King Of Joy", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=12, song="Looking For Lot 49", version=Live KCRW Session 1989)}
+
 	${jbc_footer}
 #live	endif
 
 #define	brave.html
 #live	if (getval(page) = brave.html)
-	${mkHeader(section=albums, title=Brave New Waves Session)}
+	${mkAlbumHeader(lookup=brave, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/brave.jpg"><img
-		src="${jbc_images}/releases/brave_500.jpg"></a>
-	${a_media} CD, LP
-	${a_label} Artoffact Records
-	${a_dtreleased} 2018-01-19
-	<p>
-	Little known fact! The Jazz Butcher's fabulous Brave New Waves session is one of the only sessions that ever got an official release, as the b-side of an EP called Spooky in the late 80s. Now hopelessly out of print, the session gets new life as part of the Brave New Waves series from Artoffact Records. This release includes a never-heard bonus track, a download card with bonus interviews, and completely updated and revised artwork, partially modified from the original Spooky sleeve art.
-	<p>
-	Led by Oxford philosophy graduate Pat Fish (the Jazz Butcher himself) and featuring a dazzling array of co-conspirators (including David Jay of Love And Rockets and Bauhaus fame), The Jazz Butcher is one of the longest running and most cult pop bands in Britain, having recorded some 15 albums since its founding in 1982. The band was one of the gems on the Creation Records roster, and has recently seen an incredible reissue series on Fire Records.
-	<p>
-	The Jazz Butcher's Brave New Waves session was recorded on ${linkInternal(/gigs/1988/Jun5.html, June 5th\, 1988)} in CBC Studio 13 in Montreal. The recording features cameos by both ${kevin} (Rational Youth) and ${brent} (the Brave New Waves host). An over the top rendition of "Sex Engine" includes a memorable dig at Skinny Puppy, as well as at other Canadian icons. The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
-#	${addAlbumPerf(release=brave, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar)}
-#	${addAlbumPerf(release=brave, person=[[person:Paul_Mulreany]], instruments=Drums)}
-#	${addAlbumPerf(release=brave, person=[[person:Laurence_O'Keefe]], instruments=Bass)}
-#	${addAlbumPerf(release=brave, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar)}
-#	${addAlbumPerf(release=brave, person=[[person:Alex_Green]], instruments=Saxophone)}
-#	${addAlbumPerf(release=brave, person=[[person:Kevin_Komoda]], instruments=Organ)}
-#	${addAlbumPerf(release=brave, person=[[person:Brent_Bambury]], instruments=Backing Vocals)}
-	${det_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=brave)}
-	${players_end}
-	${tun_beg}
-	${sarah}
-	<br/>${engine}
-	<br/>${blame}
-	<br/>${go}
-	<br/>${flan}
-	<br/>${pover}
-	${tun_end}
-	${mkAlbumPress(album=brave)}
+	${clearAlbumPerf(release=brave)}
+	${addAlbumPerf(release=brave, type=Aside, ordinal=1,  song="Whitfield\, Sarah & The Birchfield Road Affair")}
+	${addAlbumPerf(release=brave, type=Aside, ordinal=2,  song="Sex Engine")}
+	${addAlbumPerf(release=brave, type=Aside, ordinal=3,  song="Blame")}
+	${addAlbumPerf(release=brave, type=Bside, ordinal=1,  song="Girl-Go")}
+	${addAlbumPerf(release=brave, type=Bside, ordinal=2,  song="Grey Flannelette")}
+	${addAlbumPerf(release=brave, type=Bside, ordinal=3,  song="The Party's Over")}
+
+	${addAlbumPerf(release=brave, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar)}
+	${addAlbumPerf(release=brave, person=[[person:Paul_Mulreany]], instruments=Drums)}
+	${addAlbumPerf(release=brave, person=[[person:Laurence_O'Keefe]], instruments=Bass)}
+	${addAlbumPerf(release=brave, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar)}
+	${addAlbumPerf(release=brave, person=[[person:Alex_Green]], instruments=Saxophone)}
+	${addAlbumPerf(release=brave, person=[[person:Kevin_Komoda]], instruments=Organ)}
+	${addAlbumPerf(release=brave, person=[[person:Brent_Bambury]], instruments=Backing Vocals)}
 
 	${jbc_footer}
 #live	endif
 
 #define	va_canyoutalktothedude_1.html
 #live	if (getval(page) = va_canyoutalktothedude_1.html)
-	${mkHeader(section=albums, title=VA: Can You Talk To The Dude #1)}
+	${mkAlbumHeader(lookup=va_canyoutalktothedude_1, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_canyoutalktothedude_1_front.jpg"><img src="${jbc_images}/releases/va_canyoutalktothedude_1_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_canyoutalktothedude_1_back.jpg"><img src="${jbc_images}/releases/va_canyoutalktothedude_1_back_250.jpg"></a>
-	${a_media} ${CD}
-	${a_dtreleased} 1994
-	${a_label} Ali&eacute;nor Records
-	${a_cat} Alien 1
-	${det_end}
-	${tun_beg}
-	Four One And Only's - ${ufo_man}
-	${tun_end}
-	${players_beg}
-
-#	${addAlbumPerf(release=va_canyoutalktothedude_1, person=[[person:Pat_Fish]], instruments=Vocals)}
-	${fetchAlbumPersonnel(release=va_canyoutalktothedude_1)}
-	${players_end}
+	${clearAlbumPerf(release=va_canyoutalktothedude_1)}
+	${addAlbumPerf(release=va_canyoutalktothedude_1, ordinal=1,  song="The U.F.O. Man", author=Jonathan Richman)}
+	${addAlbumPerf(release=va_canyoutalktothedude_1, person=[[person:Pat_Fish]], instruments=Voice,  song="The U.F.O. Man")}
 
 	${jbc_footer}
 #live	endif
 
 #define	va_canyoutalktothedude_2.html
 #live	if (getval(page) = va_canyoutalktothedude_2.html)
-	${mkHeader(section=albums, title=VA: Can You Talk To The Dude #2)}
+	${mkAlbumHeader(lookup=va_canyoutalktothedude_2, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_canyoutalktothedude_2_front.jpg"><img src="${jbc_images}/releases/va_canyoutalktothedude_2_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_canyoutalktothedude_2_back.jpg"><img src="${jbc_images}/releases/va_canyoutalktothedude_2_back_250.jpg"></a>
-	${a_media} ${CD}
-	${a_dtreleased} 1994
-	${a_label} Ali&eacute;nor Records
-	${a_cat} Alien 1
-	${det_end}
-	${tun_beg}
-	Four One And Only's - ${ufo_man}
-	${tun_end}
-	${players_beg}
-
-#	${addAlbumPerf(release=va_canyoutalktothedude_2, person=[[person:Pat_Fish]], instruments=Vocals)}
-	${fetchAlbumPersonnel(release=va_canyoutalktothedude_2)}
-	${players_end}
+	${clearAlbumPerf(release=va_canyoutalktothedude_2)}
+	${addAlbumPerf(release=va_canyoutalktothedude_2, ordinal=13,  song="The U.F.O. Man", author=Jonathan Richman)}
+	${addAlbumPerf(release=va_canyoutalktothedude_2, person=[[person:Pat_Fish]], instruments=Voice,  song="The U.F.O. Man")}
 
 	${jbc_footer}
 #live	endif
 
 #define	va_nationofsaints.html
 #live	if (getval(page) = va_nationofsaints.html)
-	${mkHeader(section=albums, title=VA: Nation Of Saints)}
+	${mkAlbumHeader(lookup=va_nationofsaints, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_nationofsaints_front.jpg"><img src="${jbc_images}/releases/va_nationofsaints_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_nationofsaints_back.jpg"><img src="${jbc_images}/releases/va_nationofsaints_back_250.jpg"></a>
-	${a_media} ${CD}
-	${a_dtreleased} 2009-11
-	${a_label} Dodgem Logic
-	${a_cat} DODGEMLOGIC001C
-	${det_end}
-	${tun_beg}
-	${drugs}
-	${tun_end}
-	${players_beg}
-
-#	${addAlbumPerf(release=va_nationofsaints, person=[[person:Pat_Fish]], instruments=Vocals)}
-#	${fetchAlbumPersonnel(release=va_nationofsaints)}
-	${players_end}
+	${clearAlbumPerf(release=va_nationofsaints)}
+	${addAlbumPerf(release=va_nationofsaints, ordinal=13,  song="She's On Drugs")}
 
 	${jbc_footer}
 #live	endif
 
 #define	va_abigail.html
 #live	if (getval(page) = va_abigail.html)
-	${mkHeader(section=albums, title=VA: Abigail's Birthday Party)}
+	${mkAlbumHeader(lookup=va_abigail, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_abigail.jpg"><img src="${jbc_images}/releases/va_abigail_250.jpg"></a>
-	<p>
-	<a href="${jbc_images}/releases/va_abigail2.jpg"><img src="${jbc_images}/releases/va_abigail2_250.jpg"></a>
-	${g_credit(g=\@jo_bartlett, u=https://twitter.com/jo_bartlett, d=2023-07-05)}
-	${a_media} ${CAS}
-	${a_dtreleased} 1986
-	${a_label} NONE
-	${a_cat} NONE
-	${det_end}
-	${tun_beg}
-	${olof}
-	${tun_end}
-	${players_beg}
-
-#	${addAlbumPerf(release=va_abigail, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar)}
-	${fetchAlbumPersonnel(release=va_abigail)}
-	${players_end}
-
-	${historical_beg}
-	<p>
-	The Jazz Butcher contribution coincided with the release of ${gift1}.
-	Here again, this compilation-tape came with a fanzine and was
-	also available as a limited package with the &quot;Uncle Arthur's
-	Pop Parlour&quot; compilation-tape in addition.
-	</p>
-	${g_credit(g=Perfection As A Hipster, u=Andreas.Hering@stud.uni-hannover.de, d=2000-10-10)}
-	${g_source(u=https://pressplayandrecord.wordpress.com/2010/02/02/abigails-birthday-party-1987/)}
-	<p>
-	1984, my friend Dave Seabright bought the ‘Marnie’ 7” and I bought the 12”. ‘Butch’ became my first musician ‘mate’. I don’t mean we used to hang out and drink together but for a while we corresponded regularly: letters and postcards, long phone calls and we’d swap tapes and suggest bands that each other should listen to.
-	</p>
-	<p>
-	When Dave Driscoll and I decided to put the ‘Abigail’s Birthday Party’ tape together, we approached a number of bands asking for contributions. There were a lot of no replies and a lot of "nothing to spare" messages which put a huge dent in our confidence. Then we received a tape from Pat with about half a dozen songs to choose from! That’s how we ended up with ‘Olof Palme’, an exclusive at that time!
-	</p>
-	${g_credit(g=Tony Jenkins, d=2021-12-18)}
-	${g_source(u=https://thenewfools.bandcamp.com/track/something-fishy-going-on)}
-	${historical_end}
+	${clearAlbumPerf(release=va_abigail)}
+	${addAlbumPerf(release=va_abigail, type=Bside, ordinal=8,  song="Olof Palme")}
+	${addAlbumPerf(release=va_abigail, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar)}
 
 	${jbc_footer}
 #live	endif
 
 #define	va_creation_price.html
 #live	if (getval(page) = va_creation_price.html)
-	${mkHeader(section=albums, title=VA: Creation Price)}
+	${mkAlbumHeader(lookup=va_creation_price, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_creation_price_front.jpg"><img src="${jbc_images}/releases/va_creation_price_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_creation_price_back.jpg"><img src="${jbc_images}/releases/va_creation_price_back_250.jpg"></a>
-	${a_media} ${CD}
-	${a_dtreleased} 1996
-	${a_label} Sony Music
-	${a_cat} COLPROCD 3411 2
-	${det_end}
-	${tun_beg}
-	${girls}
-	${tun_end}
-	${players_beg}
-
-#	${addAlbumPerf(release=va_nationofsaints, person=[[person:Pat_Fish]], instruments=Vocals)}
-#	${fetchAlbumPersonnel(release=va_nationofsaints)}
-	${players_end}
+	${clearAlbumPerf(release=va_creation_price)}
+	${addAlbumPerf(release=va_creation_price, ordinal=5,  song="Girls Say Yes")}
 
 	${jbc_footer}
 #live	endif
 
 #define	va_unautomne93.html
 #live	if (getval(page) = va_unautomne93.html)
-	${mkHeader(section=albums, title=VA: Un Automne '93)}
+	${mkAlbumHeader(lookup=va_unautomne93, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_unautomne93_front.jpg"><img src="${jbc_images}/releases/va_unautomne93_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_unautomne93_back.jpg"><img src="${jbc_images}/releases/va_unautomne93_back_250.jpg"></a>
-	${a_media} ${CD}
-	${a_dtreleased} 1993
-	${a_label} Virgin, France
-	${a_cat} Visa 3334
-	${det_end}
-	${tun_beg}
-	${davis}
-	${tun_end}
-	${players_beg}
-
-#	${addAlbumPerf(release=va_nationofsaints, person=[[person:Pat_Fish]], instruments=Vocals)}
-#	${fetchAlbumPersonnel(release=va_nationofsaints)}
-	${players_end}
+	${clearAlbumPerf(release=va_unautomne93)}
+	${addAlbumPerf(release=va_unautomne93, ordinal=9,  song="Rosemary Davis' World Of Sound")}
 
 	${jbc_footer}
 #live	endif
 
 #define	dvd_wilson_no_known_predators.html
 #live	if (getval(page) = dvd_wilson_no_known_predators.html)
-	${mkAlbumHeader(lookup=dvd_wilson_no_known_predators, body=${literalizeCommas(
-1		Play It All Night Long Written-By – Warren Zevon
-<br />2		Critters
-<br />3		Filter Kings
-<br />4		Quality People
-<br />5		Police Chief
-<br />6		Buffalo Sniper
-<br />7		Dark Agenda
-<br />8		Two Dragons
-<br />9		No Winners
-<br />10		Hippy Shit
-<br />11		Secret Government
-<br />12		Every Saturday Night
-<br />13		Battle Time Now
-	)})}
+	${mkAlbumHeader(lookup=dvd_wilson_no_known_predators, body=${literalizeCommas()})}
 
-#${addAlbumPerf(release=va_shadow, person=[[person:Pat_Fish]], song=NULL)}
-#	${addAlbumPerf(release=va_shadow, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#	${addAlbumPerf(release=va_shadow, person=[[person:Alice_Thompson]], instruments=Organ)}
-#	${pat} (Rhythm Guitar, Vocals)
-#	<br />${at} (Organ)
+	${clearAlbumPerf(release=dvd_wilson_no_known_predators)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=1,  song="Play It All Night Long", author=Warren Zevon)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=2,  song="Critters")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=3,  song="Filter Kings")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=4,  song="Quality People")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=5,  song="Police Chief")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=6,  song="Buffalo Sniper")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=7,  song="Dark Agenda")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=8,  song="Two Dragons")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=9,  song="No Winners")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=10,  song="Hippy Shit")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=11,  song="Secret Government")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=12,  song="Every Saturday Night")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=13,  song="Battle Time Now")}
 
 	${jbc_footer}
 #live	endif
 
 #define	va_wilson_heyday.html
 #live	if (getval(page) = va_wilson_heyday.html)
-	${mkHeader(section=albums, title=VA: Straight Through The Sound Barrier)}
+	${mkAlbumHeader(lookup=va_wilson_heyday, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/va_wilson_heyday_front.jpg"><img src="${jbc_images}/releases/va_wilson_heyday_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/va_wilson_heyday_back.jpg"><img src="${jbc_images}/releases/va_wilson_heyday_back_250.jpg"></a>
-	${a_media} ${CD}
-	${a_dtreleased} 2004
-	${a_label} Heyday, USA
-	${a_cat} 
-	${det_end}
-	${tun_beg}
-	${wilson_quality_people}
-	${tun_end}
-	${players_beg}
-
-#	${addAlbumPerf(release=va_nationofsaints, person=[[person:Pat_Fish]], instruments=Vocals)}
-#	${fetchAlbumPersonnel(release=va_nationofsaints)}
-	${players_end}
+	${clearAlbumPerf(release=va_wilson_heyday)}
+	${addAlbumPerf(release=va_wilson_heyday, person=[[person:Ian_Botterill]], instruments=Writer)}
+	${addAlbumPerf(release=va_wilson_heyday, person=[[person:Pat_Fish]], instruments=Writer)}
+	${addAlbumPerf(release=va_wilson_heyday, song="Quality People", ordinal=6)}
 
 	${jbc_footer}
 #live	endif
 
 #define	wilson_demo_2005.html
 #live	if (getval(page) = wilson_demo_2005.html)
-	${mkHeader(section=albums, title=Wilson - November\, 2005 Demo)}
+	${mkAlbumHeader(lookup=wilson_demo_2005, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/wilson/200511_wilson_cd.jpg"><img src="${jbc_images}/wilson/200511_wilson_cd_500.jpg"></a>
-	${a_media} ${CDR}
-	${a_dtreleased} 2005-11
-	${a_label} Premier Studios
-	${a_cat} 
-	${det_end}
-	${tun_beg}
-		${linkAudio(project=wilson, collection=2005-11 Demo, title=Buffalo Sniper, url=${jbc_lyrics}/wilson_buffalo_sniper.html, mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3)}
-		${linkAudio(project=wilson, collection=2005-11 Demo, title=Police Chief, url=${jbc_lyrics}/wilson_police_chief.html, mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3)}
-	${tun_end}
-	${players_beg}
-
-#	${addAlbumPerf(release=va_nationofsaints, person=[[person:Pat_Fish]], instruments=Vocals)}
-#	${fetchAlbumPersonnel(release=va_nationofsaints)}
-	${players_end}
+	${clearAlbumPerf(release=wilson_demo_2005)}
+	${addAlbumPerf(release=wilson_demo_2005, song="Buffalo Sniper", ordinal=1, media=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3)}
+	${addAlbumPerf(release=wilson_demo_2005, song="Police Chief", ordinal=2, media=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3)}
 
 	${jbc_footer}
 #live	endif
 
 #define	wilson_demo_2003.html
 #live	if (getval(page) = wilson_demo_2003.html)
-	${mkHeader(section=albums, title=Wilson - April\, 2003 Demo)}
+	${mkAlbumHeader(lookup=wilson_demo_2003, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/wilson/200304_wilson_front.jpg"><img src="${jbc_images}/wilson/200304_wilson_front_500.jpg"></a>
-	<a href="${jbc_images}/wilson/200304_wilson_back.jpg"><img src="${jbc_images}/wilson/200304_wilson_back_250.jpg"></a>
-	${a_media} ${CDR}
-	${a_dtreleased} 2003-04
-	<p>
-	Recorded at Notepad, NW10 by Andy Parker.
-	Produced by Donald Ross Skinner.
-	All tunes conceived, devised & assembled by Wilson.
-	Tracks contain elements of everything.
-	</p>
-	${det_end}
-	${tun_beg}
-		${linkAudio(project=wilson, collection=2003-04 Demo, title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3)}
-		${linkAudio(project=wilson, collection=2003-04 Demo, title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3)}
-	${tun_end}
-	${players_beg}
-
-#	${addAlbumPerf(release=va_nationofsaints, person=[[person:Pat_Fish]], instruments=Vocals)}
-#	${fetchAlbumPersonnel(release=va_nationofsaints)}
-	${players_end}
+	${clearAlbumPerf(release=wilson_demo_2003)}
+	${addAlbumPerf(release=wilson_demo_2003, person=[[person:Andy_Parker]], instruments=Recorded)}
+	${addAlbumPerf(release=wilson_demo_2003, person=[[person:David_Ross_Skinner]], instruments=Produced)}
+	${addAlbumPerf(release=wilson_demo_2003, song="Istanbul Connection", ordinal=1, media=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3)}
+	${addAlbumPerf(release=wilson_demo_2003, song="Quality People", ordinal=2, media=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3)}
 
 	${jbc_footer}
 #live	endif
@@ -8583,7 +7985,7 @@ ${49} (Live KCRW Session 1989)
 	${mkAlbumHeader(lookup=va_gunfire, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=va_gunfire)}
-	${addAlbumPerf(release=va_gunfire, type=Bside, ordinal=1, song="Lost In France", author=Scott/Wolfe)}
+	${addAlbumPerf(release=va_gunfire, type=Bside, ordinal=1, song="Lost In France")}
 	${addAlbumPerf(release=va_gunfire, person=[[person:Pat_Fish]], instruments=Producer)}
 
 	${jbc_footer}
@@ -8724,50 +8126,3 @@ ${49} (Live KCRW Session 1989)
 
 	${jbc_footer}
 #live	endif
-
-
-## NEED SONGS IN PERFORMANCE
-#	bigtime_angels						      <
-#	bigtime_jungle						      <
-#	bigtime_sampler						      <
-#	cdr_guestpass2000					      <
-#	conspir12						      <
-#	damn							      <
-#	dvd_wilson_no_known_predators				      <
-#	fire_cholmondley					      <
-#	fire_violent						      <
-#	fire_wasted						      <
-#	highest							      <
-#	shir							      <
-#	shock_drugs						      <
-#	single_saints						      <
-#	spacemen						      <
-#	spacemen12						      <
-#	swingin							      <
-#	va_1000songs						      <
-#	va_50k							      <
-#	va_abstract						      <
-#	va_abus_126						      <
-#	va_andy_2007						      <
-#	va_bigtime_syndrome					      <
-#	va_creation_price					      <
-#	va_creation_unreleased					      <
-#	va_gunfire						      <
-#	va_kids							      <
-#	va_nationofsaints					      <
-#	va_nh_underglass					      <
-#	va_nh_vol1						      <
-#	va_pensioners90						      <
-#	va_pensioners91						      <
-#	va_pulp							      <
-#	va_seventeen_2						      <
-#	va_seventeen_3						      <
-#	va_summer						      <
-#	va_unautomne93						      <
-#	va_wilson_heyday					      <
-#	water							      <
-#	wilson_demo_2002					      <
-#	wilson_demo_2003					      <
-#	wilson_demo_2005					      <
-#	yoyo							      <
-#	zomby							      <

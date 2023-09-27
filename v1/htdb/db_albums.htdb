@@ -2715,6 +2715,7 @@
 #define	albums[47]->media	LP;CD
 #define	albums[47]->lookup	adventurers
 #define	albums[47]->label	Tundraducks Records
+#define	albums[47]->studio	 Hall Place Studio\, Leeds
 #define	albums[47]->catalog	TDKS004CD
 #define	albums[47]->href	${jbc_albums}/last_of_the_gentleman_adventurers.html
 #define	albums[47]->title	Last of the Gentleman Adventurers
@@ -2745,6 +2746,17 @@
     Thanks to everybody who helped us make this record a reality.
     <p />
     Pat & Max
+#define	albums[47]->notes
+    Owen's contribution recorded by Oliver Hasse in Hamburg
+    Sonic's contribution recorded at New Atlantis in the UK
+    <p />
+    Mixed at Hall Place Studio by Richard Formby
+    <p />
+    Mastered by Eric James at the Philosophers Barn
+    <p />
+    All songs by Pat Fish except for Count Me Out, by Max Eider
+    <p />
+    Produced by Richard Formby
 
 #define	albums[48]->buy
 #define	albums[48]->lookup	thisissumo
@@ -2777,7 +2789,7 @@
 #define	albums[49]->catalog	CRESCD 242
 #define	albums[49]->type	single,project
 #define	albums[49]->href	${jbc_albums}/sumosonic_spacemen.html
-#define	albums[49]->title	Come, Friendly Spacemen
+#define	albums[49]->title	Come\, Friendly Spacemen
 #define	albums[49]->thumb	/images/sumo/sumosonic_spacemen_front
 #define	albums[49]->images	/images/sumo/sumosonic_spacemen_back$$/images/sumo/sumosonic_spacemen_cd
 #define	albums[49]->project sumo
@@ -2790,9 +2802,10 @@
 #define	albums[50]->type	single,project
 #define	albums[50]->href	${jbc_albums}/sumosonic_spacemen_12.html
 #define	albums[50]->media	12"
+#define	albums[50]->dtreleased	1996-12-05
 #define	albums[50]->label	creation_records
-#define	albums[50]->catalog	CRES 242
-#define	albums[50]->title	Come, Friendly Spacemen (Club)
+#define	albums[50]->catalog	CTP242
+#define	albums[50]->title	Come\, Friendly Spacemen (Club)
 #define	albums[50]->thumb	/images/sumo/sumosonic_spacemen_a
 #define	albums[50]->project sumo
 #define	albums[50]->blurb	<div class="annotation">There is a limited-edition vinyl 12" single in the clubs, featuring the long version of Come, Friendly Spacemen alongside re-mixed by Tom Withers of drum n bass combo Override and Johnny Octopus of Octopus Records. The "Sushi" mix is a full on, dark-hearted progressive house tune with an evil bass; the "Jackson Hole" Mix is an insane collision between stadium pop and drum & bass which has to be heard to be believed. The 12" will also feature Monks Of Kung Fu. Any DJ is urged to get in touch with Creation to get a copy.</div>
@@ -2807,7 +2820,7 @@
 #define	albums[51]->images	/images/releases/dvd_wilson_no_known_predators_back$$/images/releases/dvd_wilson_no_known_predators_disc
 #define	albums[51]->project wilson
 #define	albums[51]->dtreleased	2012-09-07
-#define	albums[51]->blurb
+#define	albums[51]->liner
 	Recorded live at The Picturedome, Northampton NN1, 15th August 2009.
 	<p />
 	Warning:This film contains strong language, adult themes and scenes of human frailty.
@@ -3154,7 +3167,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[73]->href	${jbc_albums}/fire_wasted.html
 #define	albums[73]->label	fire_records
 #define	albums[73]->country	UK
-#define	albums[73]->catalog
+#define	albums[73]->catalog	FIRECD460
 #define	albums[73]->title	The Wasted Years
 #define	albums[73]->thumb	/images/releases/fire_wasted
 #define	albums[73]->dtreleased	2017-10-20
@@ -3216,10 +3229,11 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[76]->title	Brave New Waves Session
 #define	albums[76]->thumb	/images/releases/brave
 #define	albums[76]->dtreleased	2017-11-17 (CD) - 2018-01-19 (LP)
+#define	albums[76]->dtrecorded	 1988-06-05
 #define	albums[76]->media	LP,CD
 #define	albums[76]->blurb
 	The Jazz Butcher’s Brave New Waves session was recorded on ${linkInternal(/gigs/1988/Jun5.html, June 5th, 1988)} in CBC Studio 13 in Montreal.  The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
-#define	albums[76]->notes
+#define	albums[76]->liner
     Little known fact! The Jazz Butcher's fabulous Brave New Waves session is one of the only sessions that ever got an official release, as the b-side of an EP called Spooky in the late 80s. Now hopelessly out of print, the session gets new life as part of the Brave New Waves series from Artoffact Records. This release includes a never-heard bonus track, a download card with bonus interviews, and completely updated and revised artwork, partially modified from the original Spooky sleeve art.
     <p />
     Led by Oxford philosophy graduate Pat Fish (the Jazz Butcher himself) and featuring a dazzling array of co-conspirators (including David Jay of Love And Rockets and Bauhaus fame), The Jazz Butcher is one of the longest running and most cult pop bands in Britain, having recorded some 15 albums since its founding in 1982. The band was one of the gems on the Creation Records roster, and has recently seen an incredible reissue series on Fire Records.
@@ -3273,6 +3287,8 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[79]->contribution drugs
 #define	albums[79]->blurb
 	50 Years Of Northampton Music
+#define	albums[79]->notes
+	Not for sale or re sale. Issued only for promotional purposes with Dodgem Logic magazine, 1st issue.
 
 #define	albums[80]->buy
 #define	albums[80]->type	various
@@ -3331,7 +3347,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[83]->label	Premier Studios
 #define	albums[83]->country	UK
 #define	albums[83]->catalog	
-#define	albums[83]->title	November, 2005 Demo
+#define	albums[83]->title	November\, 2005 Demo
 #define	albums[83]->thumb	/images/wilson/200511_wilson_cd
 #define	albums[83]->dtreleased	2005-11
 #define	albums[83]->media	CDR
@@ -3347,7 +3363,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[84]->label
 #define	albums[84]->country	UK
 #define	albums[84]->catalog	
-#define	albums[84]->title	April, 2003 Demo
+#define	albums[84]->title	April\, 2003 Demo
 #define	albums[84]->thumb	/images/wilson/200304_wilson_front
 #define	albums[84]->images	/images/wilson/200304_wilson_back
 #define	albums[84]->dtreleased	2003-04
@@ -3386,15 +3402,19 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[86]->href	${jbc_albums}/fire_violent.html
 #define	albums[86]->label	fire_records
 #define	albums[86]->country	UK
-#define	albums[86]->catalog
+#define	albums[86]->catalog	FIRECD470
 #define	albums[86]->title	The Violent Years
 #define	albums[86]->thumb	/images/releases/fire_violent
 #define	albums[86]->dtreleased	2018-03-09
 #define	albums[86]->media	4xCD
-#define	albums[86]->blurb
-	Expansive book-styled package of the first four albums from The Jazz Butcher’s early Creation Records’ years – 1988-1991.
+#define	albums[86]->liner
+	Expansive book-styled package of the first four albums from The Jazz Butcher's early Creation Records' years - 1988-1991.
 	<p />
-Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, ‘Cult Of The Basement’ and ‘Condition Blue”. 
+	Featuring the much praised 'Fishcotheque', 'Big Planet, Scarey Planet', 'Cult Of The Basement' and 'Condition Blue'.
+	<p />
+	A sonic journey that takes The Jazz Butcher from a Weather Prophets-propelled rock 'n' roll visionary through to a lean jazz-tinged pop exponent.
+	<p />
+	Underlining the clever lyrics, witticisms, one-liners, melancholy, irony and conceptualisation of main man Pat Fish that came to maturity across his previous four albums for Glass (collected on Fire and much praised later last year as 'The Wasted Years').
 
 #define	albums[87]->buy     https://www.tapeterecords.de/artists/the-jazz-butcher/
 #define	albums[87]->type	album
@@ -3418,7 +3438,7 @@ Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, 
 #define	albums[88]->href	${jbc_albums}/fire_cholmondley.html
 #define	albums[88]->label	fire_records
 #define	albums[88]->country	UK
-#define	albums[88]->catalog
+#define	albums[88]->catalog	FIRECD565
 #define	albums[88]->title	Dr Cholmondley Repents: A​-​sides, B​-​Sides and Seasides 
 #define	albums[88]->thumb	/images/releases/fire_cholmondley
 #define	albums[88]->dtreleased	2021-11-12
@@ -3538,7 +3558,7 @@ RETURN SOMETHING TO SIGNAL THIS CALL WORKED
 #live	loop(ll, 1, ${albums->numFields})
 #live		if (define(${newObj}->field[${ll}], ${albums->field[${ll}]}))
 #live		endif
-#live		if (define(${newObj}[1]->${albums->field[${ll}]}, ${literalizeCommas(${${origObj}->${albums->field[${ll}]}})}))
+#live		if (define(${newObj}[1]->${albums->field[${ll}]}, ${unfilter(${${origObj}->${albums->field[${ll}]}})}))
 #live		endif
 #live	endloop
 

@@ -60,7 +60,7 @@ const PerformanceCredits = ({ who, album_credits, song_credits }: { who: string,
 			{Object.keys(song_credits).map((song: string, key: number) => {
 				return <span key={key}>
 					{(key > 0) && <>{' - '}</>}
-					{song_credits[song].join(', ')} on {song}
+					{song_credits[song].join(', ')} on {AutoLinkSong(song)}
 				</span>
 			})}
 		</> }
@@ -72,7 +72,13 @@ const ReleaseSongList = ({ songs }: { songs: any[] }) => {
 	return (<>
 		<Tag>Songs</Tag>
 		<blockquote>
-			{songs?.map((title: any, key: number) => <div key={key}><i>{AutoLinkSong(title)}</i></div>)}
+			{songs?.sort((a: any, b: any) => a.type.localeCompare(b.type))?.map((item: any, key: number) => {
+				return <div key={key}>
+					{(!['set','NULL'].includes(item?.type)) && <>{item.type.replace('side', '.')} - </>}
+					{(item?.ordinal) && <span>{item?.ordinal}.</span>} <i>{AutoLinkSong(item?.title)}</i> {(item?.variant) && <span className="date">({item?.variant})</span>} {(!item?.author?.includes('NULL')) && <span className="date">({item?.author})</span>} {(item?.version && !item?.version?.includes('NULL')) && <span className="date">({item?.version})</span>}  
+					{(!['NULL'].includes(item?.media)) && <EmbedMedia data={{ mediaurl: item.media }} />}
+				</div>
+			})}
 		</blockquote>
 	</>)
 }
@@ -227,7 +233,7 @@ const ReleaseVideos = ({ release }: { release: ReleaseTypeWithChildren }) => {
 }
 
 const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
-	if (release?.images) {
+	if (release?.thumb || release?.images) {
 		const images = parseCaptionsSourcesEtc(`${release?.thumb}$$${release?.images}`);
 		if (images?.length) {
 			return (<>
@@ -270,7 +276,7 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number) => {
 	const lookup = release?.lookup ?? '';
 	const { data, isLoading, error } = useReleaseSongs(lookup);
-	const { results, credits } = data || {};
+	const { songs, results, credits } = data || {};
 	return (
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading && release) && (<>
@@ -279,7 +285,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 				<ReleaseDownloads release={release} />
 				<ReleaseVideos release={release} />
 				<ReleaseImages release={release} />
-				{(release?.contribution) ? <ReleaseContribution release={release} /> : <ReleaseSongList songs={results} />}
+				<ReleaseSongList songs={songs?.results} />
 				<ReleaseCredits credits={credits} />
 				<ReleaseLiner release={release} />
 				<ReleaseThanks release={release} />

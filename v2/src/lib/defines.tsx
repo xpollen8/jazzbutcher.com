@@ -85,7 +85,7 @@ export const hook = linkSearch({ name: "Paul Hookham" });
 export const iain = linkPerson({ href: "/conspirators/iain_ohiggins.html", name: "Iain O'Higgins" });
 export const indge = linkPerson({ href: "/conspirators/alastair_indge.html", name: "Alastair Indge" });
 export const is = linkSearch({ name: "Ian Sturgess" });
-export const jody = linkSearch({ name: "Jody Palmer" });
+export const joby = linkSearch({ name: "Joby Palmer" });
 export const joe = 	linkSearch({ name: "Joe Foster" });
 export const tony = 	linkSearch({ name: "Tony Foster" });
 export const joe_woolley = linkSearch({ name: "Joe Woolley", act: "yes" });
@@ -982,7 +982,7 @@ export const mapSongs: {[key: string]: string} = {
 	"Rocking_In_The_Free_World": "rocking_in_the_free_world",
 	"Rosemarie": "rosemary",
 	"Rosemary_Davis_World_Of_Sound": "davis",
-	"Running_on_Fumes": "fumes",
+	"Running_On_Fumes": "fumes",
 	"Saints_Prayer": "saints_prayer",
 	"Satellite_Of_Love": "satellite_of_love",
 	"Scarlett": "scarlet",

@@ -123,7 +123,8 @@ export const removeHTML = (str?: string) => {
 
 export const ParsedCaption = (props: { credit?: string, url?: string, credit_url?: string, credit_date?: string, caption?: string | React.ReactNode, image_caption?: string | React.ReactNode }) => {
 	return (<>
-		{(props?.caption || props?.image_caption) && <><div dangerouslySetInnerHTML={{ __html: `${props?.caption || ''} ${props?.image_caption}` }} /></>}
+		{(props?.caption || props?.image_caption) && <>{props?.caption || ''} {props?.image_caption}</>}
+		<br />
 		<Credit g={removeHTML(props?.credit)} u={props?.credit_url} d={props?.credit_date} />
 	</>)
 }

@@ -1,12 +1,3 @@
-##
-## TODO
-##
-## releases NOT yet in performance (so songs are missing)
-## Black Eg
-## cdr_guestpass2000.html
-## highest
-## Come, Friendly Spacemen (Club)
-##
 #define	albums->numFields	30
 #define	albums->field[1]	type
 #define	albums->field[2]	href
@@ -204,11 +195,12 @@
 
 #define	albums[4]->type	single
 #define	albums[4]->lookup	marnie
+#define	albums[4]->media	12"
 #define	albums[4]->onalbum	scandal
 #define	albums[4]->label	glass_records
 #define	albums[4]->catalog	Glass 12033
 #define	albums[4]->href	${jbc_albums}/marnie.html
-#define	albums[4]->title	Marnie
+#define	albums[4]->title	Marnie 12"
 #define	albums[4]->thumb	/images/releases/marnie_front
 #define	albums[4]->images	/images/releases/marnie_back
 #define	albums[4]->dtreleased	1984-03
@@ -244,6 +236,9 @@
 	Pix by <b>${mitch}</b>.  Sleeve by <b>Buffalo Shame</b>.
 	<p />
 	Typesetting by <b>Mr. Crush.</b>
+#define	albums[4]->notes
+	Includes 4 tracks not on the 7" version. All 4 tracks on side B recorded live in the studio. This release includes the exlusive 'Cowgirl Fever'. Not on Any Other Jazz Butcher Release.
+	A runs on 45RPM, B on 33RPM
 
 #define	albums[5]->type	single
 #define	albums[5]->lookup	runner
@@ -269,16 +264,6 @@
     The Butcher X.
 #define	albums[5]->thanks
 	This record is for Sterling
-
-## REALLY SHOULD BE "marnie12.html"
-##define	albums[6]->type	single
-##define	albums[6]->lookup	zomby
-##define	albums[6]->href	${jbc_albums}/zombie.html
-##define	albums[6]->title	Zombie Love
-##define	albums[6]->thumb	
-##define	albums[6]->blurb	Recorded in London one Sunday afternoon in January 1984, Zombie Love is just sick.
-##define	albums[6]->dtreleased	1984
-##define	albums[6]->dtreleased	1984
 
 #define	albums[7]->type	various
 #define	albums[7]->lookup	va_spark
@@ -430,7 +415,7 @@
     steaming tropical jungles of Bangladesh (where the tigers
     live) and the frozen stepps of Siberia (where the Siberian
     tigers live).  ${zombie} is just sick. Max and Rolo and
-    me again, with Jody Palmer on drums, bongoes and "Oi'm jest
+    me again, with Joby Palmer on drums, bongoes and "Oi'm jest
     a rual boy on a day out in London, guvnor".
     <p />
     ${road} features me, Max, David J.  on bass, and Mr Jones
@@ -2251,8 +2236,9 @@
 #define	albums[43]->thumb	/images/glorious_front
 #define	albums[43]->images	/images/glorious_back
 #define	albums[43]->dtreleased	2000-01-26
-#define	albums[43]->blurb
-	<div class="annotation">The last thing anybody expected was a new Jazz Butcher album in the year 2000. But there is one, and it's just the sort of thing that you hardcore JBC listeners are going to enjoy. The record is called "Glorious and Idiotic" and it is released on 26th January 2000 on ROIR.</div>
+#define	albums[43]->notes
+	Recorded live at Logo, Grindelallee, Freie and Hansestadt, Hamburg 26.Feb.1999.
+	<a href="${jbc_gigs}/1999/Feb26.html">26Feb1999, Logo, ${HAM}</a>
 #define	albums[43]->liner
     The last thing anybody expected was a new Jazz Butcher album in the
     year 2000.  But there is one, and it's just the sort of thing that you
@@ -3525,7 +3511,22 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[93]->buy
 #define	albums[93]->blurb
 
-#define	albums->numResults	93
+#define	albums[94]->type	single
+#define	albums[94]->lookup	marnie7
+#define	albums[94]->onalbum	scandal
+#define	albums[94]->href	${jbc_albums}/marnie7.html
+#define	albums[94]->title	Marnie 7"
+#define	albums[94]->media	7"
+#define	albums[94]->label	Glass
+#define	albums[94]->catalog	033
+#define	albums[94]->thumb	/images/releases/marnie_front
+#define	albums[94]->blurb
+#define	albums[94]->dtreleased	1984
+#define	albums[94]->dtreleased	1984
+#define	albums[94]->notes
+	Jazz Butcher's 2nd Single with Original versions of Marnie & Caroline Wheeler's Birthday Present. Both of which, later appeared re-recorded on the 'A Scandal & Bohemia' album.
+
+#define	albums->numResults	94
 
 #define	lookupAlbumBy(l, f=lookup, backupF=href)
 #live	loop(li, 1, ${albums->numResults})

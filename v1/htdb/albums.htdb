@@ -3703,7 +3703,7 @@ Previously available on the ${fishco} LP/CD.
 #	${addAlbumPerf(release=gift1, person=[[person:Alice_Thompson]], instruments=Organ)}
 #	${addAlbumPerf(release=gift1, person=[[person:Rolo_McGinty]], instruments=Bass)}
 #	${addAlbumPerf(release=gift1, person=[[person:Kevin_Haskins]], instruments=Drums)}
-#	${addAlbumPerf(release=gift1, person=[[person:Jody_Palmer]], instruments=Drums)}
+#	${addAlbumPerf(release=gift1, person=[[person:Joby_Palmer]], instruments=Drums)}
 #	${addAlbumPerf(release=gift1, person=[[person:David_J.]], instruments=Bass\, Vocals)}
 #	${addAlbumPerf(release=gift1, person=[[person:Owen_Jones]], instruments=Drums)}
 #
@@ -3748,7 +3748,7 @@ Previously available on the ${fishco} LP/CD.
 	steaming tropical jungles of Bangladesh (where the tigers
 	live) and the frozen stepps of Siberia (where the Siberian
 	tigers live).  ${zombie} is just sick. Max and Rolo and
-	me again, with Jody Palmer on drums, bongoes and &quot;Oi'm jest
+	me again, with Joby Palmer on drums, bongoes and &quot;Oi'm jest
 	a rual boy on a day out in London, guvnor&quot;.
 	</a>
 	</a>
@@ -4220,82 +4220,25 @@ Previously available on the ${fishco} LP/CD.
 
 #define	marnie.html
 #live	if (getval(page) = marnie.html)
-	${mkHeader(section=albums, title=Marnie)}
+	${mkAlbumHeader(lookup=marnie, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/marnie_front.jpg"><img
-		src="${jbc_images}/releases/marnie_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/marnie_back.jpg"><img
-		src="${jbc_images}/releases/marnie_back_250.jpg"></a>
-	${a_media} ${SINGLE}, ${12} from ${scandal}
-	${a_label} Glass
-	${a_cat} Glass 12033
-	${a_dtreleased} Mar1984
-	${a_rec} January 1984
-	${det_end}
-	${a-side_beg}
-	${marn} (Miaow Mix)
-	${a-side_end}
-	${b-side_beg}
-	<b>12&quot;er</b><br />
-	${zombie}<br />
-	${gold}<br />
-	${jane}<br />
-	${fever}<p>
-	<b>7&quot;er</b><br />
-	${wheel} (Original)
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=marnie)}
+	${clearAlbumPerf(release=marnie)}
+	${addAlbumPerf(release=marnie, type=Aside, ordinal=1, song="Marnie", version=Miaow Mix)}
+	${addAlbumPerf(release=marnie, type=Bside, ordinal=1, song="Zombie Love")}
+	${addAlbumPerf(release=marnie, type=Bside, ordinal=2, song="Girls Who Keep Goldfish", version=live)}
+	${addAlbumPerf(release=marnie, type=Bside, ordinal=3, song="Sweet Jane", version=live)}
+	${addAlbumPerf(release=marnie, type=Bside, ordinal=4, song="Cowgirl Fever", version=live, media=/audio/mp3/cowgirlfever.mp3)}
 
-#${addAlbumPerf(release=marnie, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#${addAlbumPerf(release=marnie, person=[[person:Buffalo_Shame]], instruments=sleeve)}
-#${addAlbumPerf(release=marnie, person=[[person:Lee_Sanders]], instruments=engineer)}
-#${addAlbumPerf(release=marnie, person=[[person:David_E._Barker]], instruments=producer)}
-#${addAlbumPerf(release=marnie, person=[[person:Lionel_Brando]], instruments=Tambourine)}
-#${addAlbumPerf(release=marnie, person=[[person:Pat_Fish]], song=NULL)}
-#	${addAlbumPerf(release=marnie, person=[[person:Pat_Fish]])}
-#	${addAlbumPerf(release=marnie, person=[[person:Max_Eider]])}
-#	${addAlbumPerf(release=marnie, person=[[person:Rolo_McGinty]], instruments=Bass)}
-#	${addAlbumPerf(release=marnie, person=[[person:Jody_Palmer]], instruments=Drums)}
-#	${pat}
-#	<br />${max}
-#	<br />${rolo} (Bass)
-#	<br />${jody} (Drums)
-	${players_end}
-	${lin_beg}
-	<div align=center>
-	<b>Enter a New Dimension With The Jazz Butcher</b>
-	<p>
-	Dimensions whereof we speak are as follows...
-	<p>
-	<b>MARNIE</b> - 5'11&quot; <b>BEDROOM</b> 24' x 11' <b>LION</b>
-	8' x 3' <b>TIGER</b> 10' x 4'.  See what we're talking about.
-	Marnie <b>THIS WILL NOT DO!!</b> We've got to stop her, and
-	Step One is to <b>buy this record</b>...
-	<br />
-	The more copies of this disc we shift to you adoring fans the more
-	money we can spend on Marnie's treatment.  Meanwhile, it's
-	<b>ZOO TIME</b> for <b>BUTCHIE</b>, with the vivacious <b>MAX</b>
-	on guitar and singing, helped kindly by the fabulous <b>KING ROLO</b>
-	of ${tops} on bass, and the ingenuous bumpkin charm of
-	<b>JOBY [sic] PALMER</b> on drums, courtesy of our dear friends in Embrace.
-	<p>
-	ENGINE: <b>Les Sanders;</b> EARS: <b>David E. Barker;</b>
-	TAMBOURINES by <b>${lb}.</b>  The music on side two of this platter
-	was recorded live in studio, and experience for <b>YOU</b> to share.
-	Hotcha!!
-	<br />
-	All the music on this disc is dedicated to Wild Louis.
-	<br />
-	<b>GRRRRRROW!!</b>
-	<br />
-	Pix by <b>${mitch}</b>.  Sleeve by <b>Buffalo Shame</b>.
-	<br />
-	Typesetting by <b>Mr. Crush.</b>
-	</div>
-	${lin_end}
+	${addAlbumPerf(release=marnie, instruments=engineer, person=[[person:Les_Sanders]])}
+	${addAlbumPerf(release=marnie, instruments=photography, person=[[person:Mitch_Jenkins]])}
+	${addAlbumPerf(release=marnie, instruments=producer, person=[[person:David_E._Barker]])}
+	${addAlbumPerf(release=marnie, instruments=sleeve, person=[[person:Buffalo_Shame]])}
+	${addAlbumPerf(release=marnie, instruments=tambourine, person=[[person:Lionel_Brando]])}
+	${addAlbumPerf(release=marnie, instruments=typography, person=[[person:Mr._Crush]])}
+	${addAlbumPerf(release=marnie, instruments=Bass, person=[[person:Rolo_McGinty]])}
+	${addAlbumPerf(release=marnie, instruments=Drums, person=[[person:Joby_Palmer]])}
+	${addAlbumPerf(release=marnie, instruments=Guitar\, Vocals, person=[[person:Max_Eider]])}
+	${addAlbumPerf(release=marnie, instruments=Vocals\, Guitar, person=[[person:Pat_Fish]])}
 
 	${jbc_footer}
 #live	endif
@@ -5809,29 +5752,28 @@ Previously available on the ${fishco} LP/CD.
 	${jbc_footer}
 #live	endif
 
-#define	zombie.html
-#live	if (getval(page) = zombie.html)
-	${mkHeader(section=albums, title=Zombie Love)}
+#define	marnie7.html
+#live	if ((getval(page) = marnie7.html) || (getval(page) = zombie.html))
+	${mkAlbumHeader(lookup=marnie7, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	${a_media} ${SINGLE}, ${12}
-	${a_label} Glass
-	${a_cat} GLASS12033
-	${a_dtreleased} 1984
-	${a_grv_a} sound clinic
-	${det_end}
-	${a-side_beg}
-	${zombie}
-	<br />${gold}
-	${a-side_end}
-	${b-side_beg}
-	${jane}
-	<br />${fever}
-	${b-side_end}
+	${clearAlbumPerf(release=marnie7)}
+	${addAlbumPerf(release=marnie7, type=Aside, ordinal=1, song="Marnie", version=original)}
+	${addAlbumPerf(release=marnie7, type=Bside, ordinal=1, song="Caroline Wheeler's Birthday Present", version=original)}
 
+	${addAlbumPerf(release=marnie7, instruments=engineer, person=[[person:Les_Sanders]])}
+	${addAlbumPerf(release=marnie7, instruments=photography, person=[[person:Mitch_Jenkins]])}
+	${addAlbumPerf(release=marnie7, instruments=producer, person=[[person:David_E._Barker]])}
+	${addAlbumPerf(release=marnie7, instruments=sleeve, person=[[person:Buffalo_Shame]])}
+	${addAlbumPerf(release=marnie7, instruments=tambourine, person=[[person:Lionel_Brando]])}
+	${addAlbumPerf(release=marnie7, instruments=typography, person=[[person:Mr._Crush]])}
+	${addAlbumPerf(release=marnie7, instruments=Bass, person=[[person:Rolo_McGinty]])}
+	${addAlbumPerf(release=marnie7, instruments=Drums, person=[[person:Joby_Palmer]])}
+	${addAlbumPerf(release=marnie7, instruments=Guitar\, Vocals, person=[[person:Max_Eider]])}
+	${addAlbumPerf(release=marnie7, instruments=Vocals\, Guitar, person=[[person:Pat_Fish]])}
 	${jbc_footer}
 #live	endif
+
+#define	zombie.html	${marnie7.html}
 
 #define	western_tape.html
 #live	if (getval(page) = western_tape.html)
@@ -6224,15 +6166,15 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=highest, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=highest)}
-	${addAlbumPerf(release=highest, type=Aside, ordinal=1, "Melanie Hargreaves' Father's Jaguar")}
-	${addAlbumPerf(release=highest, type=Aside, ordinal=2, "Time")}
-	${addAlbumPerf(release=highest, type=Aside, ordinal=3, "Sea Madness")}
-	${addAlbumPerf(release=highest, type=Aside, ordinal=4, "Never Give Up")}
-	${addAlbumPerf(release=highest, type=Bside, ordinal=1, "Amalfi Coast May 1963")}
-	${addAlbumPerf(release=highest, type=Bside, ordinal=2, "Running On Fumes")}
-	${addAlbumPerf(release=highest, type=Bside, ordinal=3, "The Highest In The Land")}
-	${addAlbumPerf(release=highest, type=Bside, ordinal=4, "Sebastian's Medication")}
-	${addAlbumPerf(release=highest, type=Bside, ordinal=5, "Goodnight Sweetheart")}
+	${addAlbumPerf(release=highest, type=Aside, ordinal=1, song="Melanie Hargreaves' Father's Jaguar")}
+	${addAlbumPerf(release=highest, type=Aside, ordinal=2, song="Time")}
+	${addAlbumPerf(release=highest, type=Aside, ordinal=3, song="Sea Madness")}
+	${addAlbumPerf(release=highest, type=Aside, ordinal=4, song="Never Give Up")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=1, song="Amalfi Coast May 1963")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=2, song="Running On Fumes")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=3, song="The Highest In The Land")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=4, song="Sebastian's Medication")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=5, song="Goodnight Sweetheart")}
 
 	${addAlbumPerf(release=highest, instruments=Bass Guitar\, Keyboards, person=[[person:Tim_Harries]])}
 	${addAlbumPerf(release=highest, instruments=Drums, person=[[person:Dave_Morgan]])}

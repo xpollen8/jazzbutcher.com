@@ -1269,7 +1269,7 @@ font.load().then(function () {
 #define	mick	${linkSearch(query=Mick Packwood)}
 #define	blair	${linkSearch(query=Blair MacDonald)}
 #define	erol	${linkSearch(query=Erol Suleyman)}
-#define	jody	${linkSearch(query=Jody Palmer)}
+#define	joby	${linkSearch(query=Joby Palmer)}
 #define	lohan	${linkSearch(query=Richard Lohan)}
 #define	gerard	${linkSearch(query=Gerard Langley)}
 #define	gould	${linkSearch(query=Greenwood Goulding)}
@@ -1704,7 +1704,7 @@ font.load().then(function () {
 #define	hard			${linkSingle(href=${jbc_albums}/hard.html, title=Hard)}
 #define	may				${linkSingle(href=${jbc_albums}/mayi.html, title=Speedy Gonzalez)}
 #define	angel			${linkSingle(href=${jbc_albums}/angels.html, title=Angels)}
-#define	zomby			${linkSingle(href=${jbc_albums}/zombie.html, title=Zombie Love)}
+#define	marnie7			${linkSingle(href=${jbc_albums}/marnie7.html, title=Marnie 7")}
 #define	affect			${linkSingle(href=${jbc_albums}/va_another_spark.html, title=Affection)}
 #define	shir			${linkSingle(href=${jbc_albums}/shirley.html, title=Shirley Maclaine)}
 #define	marnie			${linkSingle(href=${jbc_albums}/marnie.html, title=Marnie)}

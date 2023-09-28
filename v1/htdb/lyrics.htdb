@@ -8,7 +8,7 @@
 #live	endif
 #live	if (getval(update))
 #insert into lyrics set href="${page}", project="${project}", title="${literalizeQuotes(${unfilter(${title})})}", tablature="${literalizeQuotes(${unfilter(${tablature})})}", tablature_credit="${literalizeQuotes(${unfilter(${tablature_credit})})}", lyrics="${literalizeQuotes(${unfilter(${lyrics})})}", mp3="${literalizeQuotes(${unfilter(${mp3})})}", mp4="${literalizeQuotes(${unfilter(${mp4})})}", embed_link="${literalizeQuotes(${unfilter(${embed_link})})}", found_on="${literalizeQuotes(${unfilter(${onlist})})}", pat_says="${literalizeQuotes(${unfilter(${patsez})})}", others_say="${literalizeQuotes(${unfilter(${others})})}", caption="${literalizeQuotes(${unfilter(${caption})})}", credits="${literalizeQuotes(${unfilter(${credits})})}", annotated="${annotated}", is_instrumental="${is_instrumental}", images="${images}", video="${video}";
-#live		if (sql(insert IGNORE into lyrics set href="${page}", project="${project}", title="${literalizeQuotes(${unfilter(${title})})}", tablature="${literalizeQuotes(${unfilter(${tablature})})}", tablature_credit="${literalizeQuotes(${unfilter(${tablature_credit})})}", lyrics="${literalizeQuotes(${unfilter(${lyrics})})}", mp3="${literalizeQuotes(${unfilter(${mp3})})}", mp4="${literalizeQuotes(${unfilter(${mp4})})}", embed_link="${literalizeQuotes(${unfilter(${embed_link})})}", found_on="${literalizeQuotes(${unfilter(${onlist})})}", pat_says="${literalizeQuotes(${unfilter(${patsez})})}", others_say="${literalizeQuotes(${unfilter(${others})})}", caption="${literalizeQuotes(${unfilter(${caption})})}", credits="${literalizeQuotes(${unfilter(${credits})})}", annotated="${annotated}", is_instrumental="${is_instrumental}", images="${images}", video="${video}"))
+#live		if (sql(insert IGNORE into lyrics set href="${page}", project="${project}", title="${title}", tablature="${literalizeQuotes(${unfilter(${tablature})})}", tablature_credit="${literalizeQuotes(${unfilter(${tablature_credit})})}", lyrics="${literalizeQuotes(${unfilter(${lyrics})})}", mp3="${literalizeQuotes(${unfilter(${mp3})})}", mp4="${literalizeQuotes(${unfilter(${mp4})})}", embed_link="${literalizeQuotes(${unfilter(${embed_link})})}", found_on="${literalizeQuotes(${unfilter(${onlist})})}", pat_says="${literalizeQuotes(${unfilter(${patsez})})}", others_say="${literalizeQuotes(${unfilter(${others})})}", caption="${literalizeQuotes(${unfilter(${caption})})}", credits="${literalizeQuotes(${unfilter(${credits})})}", annotated="${annotated}", is_instrumental="${is_instrumental}", images="${images}", video="${video}"))
 #live		endif
 #live	endif
 	${mkHeader(project=${project}, section=Lyrics, title=${title})}
@@ -2844,7 +2844,7 @@ The town in question is South Windsor, CT.
 
 	)},
 		onlist=
-		marnie .. scandal .. gift1 .. drainglass .. fire_wasted .. fire_cholmondley
+		marnie .. marnie7 .. scandal .. gift1 .. drainglass .. fire_wasted .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		Marnie is an attempt to force a meeting between the steaming tropical jungles of Bangladesh (where the tigers live) and the frozen stepps of Siberia (where the Siberian tigers live).
 		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#marnie;;
@@ -4684,7 +4684,7 @@ fade
 		onlist=
 		bacon .. marnie .. gift1 .. drainglass .. fire_wasted
 	, patsez=${literalizeCommas(
-		 Zombie Love is just sick. Max and Rolo and me again, with Jody Palmer on drums, bongoes and "Oi'm jest a rual boy on a day out in London, guvnor".
+		 Zombie Love is just sick. Max and Rolo and me again, with Joby Palmer on drums, bongoes and "Oi'm jest a rual boy on a day out in London, guvnor".
 		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#zombie;;
 	)}
 	)}
@@ -5990,7 +5990,7 @@ I haven't got a mind at all.
 
 	)},
 		onlist=
-		marnie .. scandal .. nons .. drainglass .. glorious .. cake .. fire_wasted .. fire_cholmondley
+		marnie7 .. scandal .. nons .. drainglass .. glorious .. cake .. fire_wasted .. fire_cholmondley
 	, patsez=${literalizeCommas(
 		Do you know what happens if you leave a fish too long in an elevator? Educations.
 		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#wheely;;
@@ -6090,7 +6090,7 @@ I haven't got a mind at all.
 
 	)},
 		onlist=
-		marnie .. sex .. nons .. drainglass .. fire_wasted
+		sex .. nons .. drainglass .. fire_wasted
 	)}
 #live	endif
 
@@ -9544,7 +9544,7 @@ Break out and find out tonight.
 #define	never_give_up.html
 #live	if (getval(page) = never_give_up.html)
 	${lyricsHeader(title=Never Give Up,
-		video=https://www.youtube.com/embed/lvn8dkdYQzs;;James Duval;;;;2022-10-05;;Official Video,
+		video=https://youtube.com/embed/lvn8dkdYQzs;;James Duval;;;;2022-10-05;;Official Video,
 		lyrics=${literalizeCommas(
 
 	Never Give up<br/>
@@ -9632,7 +9632,9 @@ Break out and find out tonight.
 
 #define	running_on_fumes.html
 #live	if (getval(page) = running_on_fumes.html)
-	${lyricsHeader(title=Running on Fumes, lyrics=${literalizeCommas(
+	${lyricsHeader(title=Running on Fumes,
+		video=https://youtube.com/embed/0Wk4tzKjvJ4;;Ruth Tidmarsh;;;;2022-02-03;;Official Video,
+		lyrics=${literalizeCommas(
 
 	Running on fumes, running on fumes, everybody's running on fumes<br/>
 	Nothing in the tank, nothing in the bank, everybody's running on fumes<br/>

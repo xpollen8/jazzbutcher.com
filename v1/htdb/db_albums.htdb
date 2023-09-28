@@ -2247,10 +2247,10 @@
 #define	albums[43]->title	Glorious And Idiotic
 #define	albums[43]->media	CD
 #define	albums[43]->label	ROIR
-#define	albums[43]->catalog	001
+#define	albums[43]->catalog	RUSCD 8260
 #define	albums[43]->thumb	/images/glorious_front
 #define	albums[43]->images	/images/glorious_back
-#define	albums[43]->dtreleased	2000
+#define	albums[43]->dtreleased	2000-01-26
 #define	albums[43]->blurb
 	<div class="annotation">The last thing anybody expected was a new Jazz Butcher album in the year 2000. But there is one, and it's just the sort of thing that you hardcore JBC listeners are going to enjoy. The record is called "Glorious and Idiotic" and it is released on 26th January 2000 on ROIR.</div>
 #define	albums[43]->liner

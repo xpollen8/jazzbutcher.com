@@ -54,13 +54,15 @@ const PerformanceCredits = ({ who, album_credits, song_credits }: { who: string,
 	const hasAlbumCredits = (Object.keys(album_credits)?.length > 0);
 	const hasSongCredits = (Object.keys(song_credits)?.length > 0);
 	return (<>
-		{AutoLinkPlayer(who)} {(hasAlbumCredits) && <>{' - '}{album_credits}</>}
+		• {AutoLinkPlayer(who)} {(hasAlbumCredits) && <>{' - '}{album_credits}</>}
 		{(hasSongCredits) && <>
 			{' - '}
 			{Object.keys(song_credits).map((song: string, key: number) => {
+				const songs = song.split('$$');
+				const linkedSongs = songs.map((s: string, i: number) => <span key={i}>{AutoLinkSong(s)}</span>);
 				return <span key={key}>
 					{(key > 0) && <>{' - '}</>}
-					{song_credits[song].join(', ')} on {AutoLinkSong(song)}
+					{song_credits[song].join(', ')}: {linkedSongs.map((l: any, i: number) => <span key={i}>{l}{(i < linkedSongs.length - 1) ? ', ' : ''}</span>)}
 				</span>
 			})}
 		</> }
@@ -237,8 +239,7 @@ const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		const images = parseCaptionsSourcesEtc(`${release?.thumb}$$${release?.images}`);
 		if (images?.length) {
 			return (<>
-				<Tag>Images</Tag>
-				<ImageStrip className="flex flex-wrap flex-grow border bg-slate-50 justify-center p-5" images={images} />
+				<ImageStrip className="flex flex-wrap flex-grow border bg-slate-50 gap-3 justify-center p-1" images={images} />
 			</>)
 		}
 	}
@@ -281,10 +282,10 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading && release) && (<>
 				<div key={key}><MakeAlbumBlurb {...release} /></div>
+				<ReleaseImages release={release} />
 				<ReleaseDetails release={release} />
 				<ReleaseDownloads release={release} />
 				<ReleaseVideos release={release} />
-				<ReleaseImages release={release} />
 				<ReleaseSongList songs={songs?.results} />
 				<ReleaseCredits credits={credits} />
 				<ReleaseLiner release={release} />

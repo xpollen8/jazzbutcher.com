@@ -1081,7 +1081,7 @@ export const AutoLink = (str?: string) => {
 
 export const AutoLinkSong = (str?: string) => {
   if (!str?.length) return;
-	const lookup = str.replace("'", '').replace('.', '').replace(',', '').replace('\\', '').replace(/ /g, '_');
+	const lookup = str.replace("'", '').replace(/\./g, '').replace(',', '').replace(/\'/g, '').replace(/ /g, '_');
 	const found = mapSongs[lookup];
 	if (!found) return lookup?.replace(/_/g, ' ');
 	return expand(found);

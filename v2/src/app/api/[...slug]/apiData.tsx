@@ -101,7 +101,7 @@ const apiData = async (path: string, args?: string) => {
 			 */
 			const songs: any[] = [];
 			const credits: any = {};
-			crdata?.results.filter((song: any) => song?.song)?.forEach((song: any) => {
+			crdata?.results.filter((song: any) => song?.song && song?.song !== 'NULL')?.forEach((song: any) => {
 				if (!songs.includes(song.song)) songs.push(song.song);
 				if (song.performer) {
 					if (!credits[song.performer]) {
@@ -113,7 +113,7 @@ const apiData = async (path: string, args?: string) => {
 					credits[song.performer].song_credits[song.song].push(song.instruments);
 				}
 			});
-			crdata?.results.forEach((cr: any) => {
+			crdata?.results?.filter((song: any) => (!song?.song || song?.song === 'NULL'))?.forEach((cr: any) => {
 				if (!credits[cr.performer]) {
 					credits[cr.performer] = { album_credits: cr.instruments, song_credits: {} };
 				} else {

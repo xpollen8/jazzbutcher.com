@@ -6708,65 +6708,39 @@ Previously available on the ${fishco} LP/CD.
 
 #define	va_call_northampton_vol1.html
 #live	if (getval(page) = va_call_northampton_vol1.html)
-	${mkHeader(section=albums, title=VA: Now That's What I Call Northampton Vol #1)}
+	${mkAlbumHeader(lookup=va_nh_vol1, body=${literalizeCommas()})}
 
-	${det_beg}
-	${a_media} ${CD}
-	${a_dtreleased} 2010
-	${det_end}
+	${clearAlbumPerf(release=va_nh_vol1)}
+	${addAlbumPerf(release=va_nh_vol1, ordinal=1, song="All The Saints")}
+	${addAlbumPerf(release=va_nh_vol1, ordinal=12, song="Wildlife", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/WIldlife.mp3)}
+	${addAlbumPerf(release=va_nh_vol1, ordinal=17, song="Mercy", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3)}
 
-	${tun_beg}
-		${all_the_saints}
-		<br />${mercy}
-		<br />${wildlife}
-	${tun_end}
+	${addAlbumPerf(release=va_nh_vol1, person=[[person:Curtis_E._Johnson]], instruments=Producer)}
+	${addAlbumPerf(release=va_nh_vol1, person=[[person:Curtis_E._Johnson]], instruments=Recorded, song="Wildlife")}
+	${addAlbumPerf(release=va_nh_vol1, person=[[person:Curtis_E._Johnson]], instruments=Recorded, song="Mercy")}
+
 	${jbc_footer}
 #live	endif
 
 #define	va_uncle_andy_christmas_2007.html
 #live	if (getval(page) = va_uncle_andy_christmas_2007.html)
-	${mkHeader(section=albums, title=Uncle Andy's Christmas CD (2007))}
+	${mkAlbumHeader(lookup=va_andy_2007, body=${literalizeCommas()})}
 
-	${det_beg}
-	${a_media} ${CD}
-	${a_dtreleased} 2007
-	${det_end}
+	${clearAlbumPerf(release=va_andy_2007)}
+	${addAlbumPerf(release=va_andy_2007, ordinal=5, song="After Hours", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3)}
 
-	${tun_beg}
-		${afterhours}
-	${tun_end}
-	${tag_beg}Notes${tag_end}
-	<blockquote>
-	Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers.
-	<p />
-	In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album.
-	</blockquote>
-	${jbc_footer}
 #live	endif
 
 #define	cdr_guestpass2000.html
 #live	if (getval(page) = cdr_guestpass2000.html)
-	${mkHeader(section=albums, title=Guest Pass 2000)}
+	${mkAlbumHeader(lookup=cdr_guestpass2000, body=${literalizeCommas()})}
 
-	${det_beg}
-	${a_media} ${CDR}
-	${a_dtreleased} 2000
-	${det_end}
+	${clearAlbumPerf(release=cdr_guestpass2000)}
+	${addAlbumPerf(release=cdr_guestpass2000, ordinal=1, song="Doktor Anthrax")}
+	${addAlbumPerf(release=cdr_guestpass2000, ordinal=2, song="Don't Let Me Keep You")}
+	${addAlbumPerf(release=cdr_guestpass2000, ordinal=3, song="Hey Now Baby (My Arse Is On Fire)")}
+	${addAlbumPerf(release=cdr_guestpass2000, ordinal=4, song="The Hobbu Song", media=/audio/tunes/hobbu.mp3)}
 
-	${tun_beg}
-		${anthrax} (8:17)<br/>
-		${dont} (6:13)<br/>
-		${arse} (5:19)<br/>
-		${hobbu} (1:09 )<br/>
-	${tun_end}
-	<p>
-		This was a limited edition CD made available to help fund the
-		JBC tour across the US. Along
-		with the CD you got an autographed photo and tickets to the
-		JBC show of your choice. Although it is a "home made" CDR, it was officially
-		released by the JBC and would be pre-paid for pick-up at the
-		show.
-	</p>
 	${jbc_footer}
 #live	endif
 

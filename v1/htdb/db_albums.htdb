@@ -3355,7 +3355,6 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[83]->media	CDR
 #define	albums[83]->blurb
 	Two song demo.
-#define	albums[83]->audio	/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3;;Buffalo Sniper$$/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3;;Police Chief
 
 #define	albums[84]->buy
 #define	albums[84]->type	project,CDR
@@ -3377,7 +3376,6 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
     Tracks contain elements of everything.
 #define	albums[84]->blurb
 	Two song demo.
-#define	albums[84]->audio	/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3;;Istanbul Connection$$/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3;;Quality People
 
 #define	albums[85]->buy
 #define	albums[85]->type	project,CDR
@@ -3396,8 +3394,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 	Six song demo.
 #define	albums[85]->liner
     Recorded by MC Bot on the Roland VS-1800 at Subsound, NN1 during 2001 and 2002. The words to "Play It All Night Long" are by Warren Zevon. Everything else is original pirate material. Increase the peace.
-#define	albums[85]->audio	/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3;;Quality People$$/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3;;Istanbul Connection$$/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3;;Hippy Shit$$/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3;;Play It All Night Long$$/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3;;Burn, Hollywood, Burn$$/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3;;Dark Agenda
-   
+
 #define	albums[86]->buy     https://thejazzbutcher.bandcamp.com/album/the-violent-years
 #define	albums[86]->type	compilation
 #define	albums[86]->lookup	fire_violent
@@ -3483,7 +3480,7 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[90]->dtreleased	2010
 #define	albums[90]->contribution [ mercy, all_the_saints, wildlife ]
 #define	albums[90]->blurb
-#define	albums[90]->audio https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3;;Mercy;;Recorded by Curtis E. Johnson$$https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/WIldlife.mp3;;Wildlife;;Recorded by Curtis E. Johnson
+#define	albums[90]->notes	CD's Limited to 1000 copies
 
 #define	albums[91]->type	various
 #define	albums[91]->lookup	va_andy_2007
@@ -3500,7 +3497,6 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers.
 <p />
 In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album.
-#define	albums[91]->audio	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3;;After Hours;;Recorded in December 2007 at Greenway Studio by Andy Clarke
 
 #define	albums[92]->type	single
 #define	albums[92]->lookup	never7

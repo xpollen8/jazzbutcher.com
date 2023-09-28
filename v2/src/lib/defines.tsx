@@ -816,6 +816,7 @@ export const mapSongs: {[key: string]: string} = {
 	"After_Hours": "afterhours",
 	"After_The_Great_Euphrates": "euph",
 	"All_the_Saints": "all_the_saints",
+	"All_The_Saints": "all_the_saints",
 	"Almost_Brooklyn": "almost",
 	"Amalfi_Coast_May_1963": "amalfi",
 	"Angel_Station": "stat",

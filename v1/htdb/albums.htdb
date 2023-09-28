@@ -5547,88 +5547,43 @@ Previously available on the ${fishco} LP/CD.
 
 #define	va_abstract_5.html
 #live	if (getval(page) = va_abstract_5.html)
-	${mkHeader(section=albums, title=Abstract #5)}
+	${mkAlbumHeader(lookup=va_abstract, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/abstract5.jpg"><img alt="[sleeve photo]"
-		src="${jbc_images}/releases/abstract5_500.jpg"></a>
-	<a href="${jbc_images}/releases/abstract5_booklet.jpg"><img alt="[sleeve photo]"
-		src="${jbc_images}/releases/abstract5_booklet_250.jpg"></a>
-	${a_media} ${VAR}, ${12}
-	${a_label} Spring 1985 LP Issue 5 Of Abstract Magazine
-	${a_dtreleased} Spring 1985
-	${a_rec} Live <a href="${jbc_gigs}/1985/Apr25.html">25Apr85, Melkweg, Amsterdam</a>
-	${det_end}
-	${tun_beg}
-	${uptoyou}
-	${tun_end}
+	${clearAlbumPerf(release=va_abstract)}
+	${addAlbumPerf(release=va_abstract, type=Bside, ordinal=5, song="Leaving It Up To You")}
 
 	${jbc_footer}
 #live	endif
 
 #define	va_abus_dangereux_21.html
 #live	if (getval(page) = va_abus_dangereux_21.html)
-	${mkHeader(section=albums, title=Abus Dangereux #21)}
+	${mkAlbumHeader(lookup=va_abus_21, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/vodka.jpg"><img alt="[sleeve photo]"
-		src="${jbc_images}/releases/vodka_500.jpg"></a>
-	${a_media} ${VAR}, ${CD}
-	${a_label} Abus Dangereux (magazine)
-	${a_cat} Abus21
-	${a_dtreleased} 1994
-	${a_where} France
-	${det_end}
-	${tun_beg}
-	${vodka}
-	${tun_end}
-#${addAlbumPerf(release=va_abus_21, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals)}
-#${addAlbumPerf(release=va_abus_21, person=[[person:Nick_Burson]], instruments=Drums)}
-#${addAlbumPerf(release=va_abus_21, person=[[person:Dooj_Wilkinson]], instruments=Bass\, Vocals)}
-#${addAlbumPerf(release=va_abus_21, person=[[person:Peter_Crouch]], instruments=Guitar)}
-#${addAlbumPerf(release=va_abus_21, person=[[person:Richard_Formby]], instruments=Guitar)}
-#${addAlbumPerf(release=va_abus_21, person=[[person:Richard_Formby]], instruments=Producer)}
-	${players_beg}
-	${fetchAlbumPersonnel(release=va_abus_21)}
-	${players_end}
+	${clearAlbumPerf(release=va_abus_21)}
+	${addAlbumPerf(release=va_abus_21, ordinal=1, song="Vodka Girls", media=/audio/mp3/vodkagirls.mp3)}
+	${addAlbumPerf(release=va_abus_21, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals)}
+	${addAlbumPerf(release=va_abus_21, person=[[person:Nick_Burson]], instruments=Drums)}
+	${addAlbumPerf(release=va_abus_21, person=[[person:Dooj_Wilkinson]], instruments=Bass\, Vocals)}
+	${addAlbumPerf(release=va_abus_21, person=[[person:Peter_Crouch]], instruments=Guitar)}
+	${addAlbumPerf(release=va_abus_21, person=[[person:Richard_Formby]], instruments=Guitar)}
+	${addAlbumPerf(release=va_abus_21, person=[[person:Richard_Formby]], instruments=Producer)}
 
 	${jbc_footer}
 #live	endif
 
 #define	weloveyou.html
 #live	if (getval(page) = weloveyou.html)
-	${mkHeader(section=albums, title=We Love You)}
+	${mkAlbumHeader(lookup=welove, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/weloveyou_front.jpg"><img
-		alt="[album cover]"
-		src="${jbc_images}/releases/weloveyou_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/weloveyou_back.jpg"><img
-		alt="[sleeve photo]"
-		src="${jbc_images}/releases/weloveyou_back_250.jpg"></a>
-	${a_media} ${SINGLE}, ${12}
-	${a_dtreleased} 1990
-	${a_label} ${creat}
-	${a_cat} CRE083T
-	${a_prod} ${proctor}
-#	${a_photo} Luke Hayes
-	${det_end}
-	${a-side_beg}
-	${welove} (554 Mix)
-	${a-side_end}
-	${b-side_beg}
-	${welove} (One For The Band)
-	<br />${welove} (The Great Awakening)
-	${b-side_end}
-#${addAlbumPerf(release=welove, person=[[person:Steve_Proctor]], instruments=producer)}
-#${addAlbumPerf(release=welove, person=[[person:Luke_Hayes]], instruments=photo)}
-	${players_beg}
-	${fetchAlbumPersonnel(release=welove)}
-	${players_end}
-	${mkAlbumPress(album=welove)}
+	${clearAlbumPerf(release=welove)}
+	${addAlbumPerf(release=welove, type=Aside, ordinal=1, song="We Love You", version=554 Mix)}
+	${addAlbumPerf(release=welove, type=Aside, ordinal=2, song="We Love You", version=One For The Band)}
+	${addAlbumPerf(release=welove, type=Bside, ordinal=1, song="We Love You", version=The Great Awakening)}
+
+	${addAlbumPerf(release=welove, person=[[person:Steve_Proctor]], instruments=producer)}
+	${addAlbumPerf(release=welove, person=[[person:Luke_Hayes]], instruments=photo)}
+	${addAlbumPerf(release=welove, person=[[person:Porky]], instruments=laquer)}
+	${addAlbumPerf(release=welove, person=[[person:Chromatone_Design]], instruments=sleeve)}
 
 	${jbc_footer}
 #live	endif
@@ -5732,22 +5687,11 @@ Previously available on the ${fishco} LP/CD.
 
 #define	yo_yo.html
 #live	if (getval(page) = yo_yo.html)
-	${mkHeader(section=albums, title=She's A Yo-Yo)}
+	${mkAlbumHeader(lookup=yoyo, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/yo_yo.jpg"><img alt="[album cover]"
-		src="${jbc_images}/yo_yo_500.jpg"></a>
-	${a_media} ${SINGLE} from ${blue}
-	${a_label} Sky
-	${a_cat} 7-5081-2
-	${a_dtreleased} 1991
-	${a_where} USA
-	${det_end}
-	${tun_beg}
-	${yo} (Radio Edit) 4:07
-	<br />${yo} (LP Version) 6:13
-	${tun_end}
+	${clearAlbumPerf(release=yoyo)}
+	${addAlbumPerf(release=yoyo, ordinal=1, song="She's A Yo-Yo", version=Radio Edit)}
+	${addAlbumPerf(release=yoyo, ordinal=2, song="She's A Yo-Yo", version=LP Version)}
 
 	${jbc_footer}
 #live	endif
@@ -6064,7 +6008,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=lunch, ordinal=7, song="Still And All")}
 	${addAlbumPerf(release=lunch, ordinal=8, song="Monkeyface")}
 	${addAlbumPerf(release=lunch, ordinal=9, song="Bakersfield")}
-	${addAlbumPerf(release=lunch, ordinal=10, song="Vodka Girls")}
+	${addAlbumPerf(release=lunch, ordinal=10, song="Vodka Girls", media=/audio/mp3/vodkagirls.mp3)}
 	${addAlbumPerf(release=lunch, ordinal=11, song="President Chang")}
 	${addAlbumPerf(release=lunch, ordinal=12, song="Scarlett")}
 	${addAlbumPerf(release=lunch, ordinal=13, song="Cops & Hospitals")}

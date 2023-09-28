@@ -1138,6 +1138,7 @@
 
 #define	albums[28]->type	single
 #define	albums[28]->lookup	welove
+#define	albums[28]->media	12"
 #define	albums[28]->href	${jbc_albums}/weloveyou.html
 #define	albums[28]->label	creation_records
 #define	albums[28]->catalog	CRE083T
@@ -1232,6 +1233,7 @@
 #define	albums[31]->type	single
 #define	albums[31]->lookup	yoyo
 #define	albums[31]->onalbum	blue
+#define	albums[31]->media	CD
 #define	albums[31]->href	${jbc_albums}/yo_yo.html
 #define	albums[31]->title	She's A Yo-Yo
 #define	albums[31]->label	Sky Records

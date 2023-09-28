@@ -982,7 +982,7 @@ export const mapSongs: {[key: string]: string} = {
 	"Rocking_In_The_Free_World": "rocking_in_the_free_world",
 	"Rosemarie": "rosemary",
 	"Rosemary_Davis_World_Of_Sound": "davis",
-	"Running_on_Fumes": "fumes",
+	"Running_On_Fumes": "fumes",
 	"Saints_Prayer": "saints_prayer",
 	"Satellite_Of_Love": "satellite_of_love",
 	"Scarlett": "scarlet",

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import SectionOptions from '@/components/SectionOptions';
 //import PressItems from '@/components/PressItems';
-//import FilterPresses from '@/components/FilterPresses';
+import FilterPresses from '@/components/FilterPresses';
 
 const Lsections = [
 	{ uri: '/press/interviews', text: 'Published Interviews' },
@@ -26,7 +26,7 @@ const Press = (props: any) => {
 		<Header section='press' />
 		<main>
 			<SectionOptions section='press' />
-			{/*<FilterPresses />*/}
+			<FilterPresses />
 			{/*<PressItems />*/}
 		</main>
 	</>)

@@ -5318,7 +5318,9 @@ G - G - C - D
 
 #define	human_jungle.html
 #live	if (getval(page) = human_jungle.html)
-	${lyricsHeader(title=The Human Jungle, annotated=yes, lyrics=${literalizeCommas(
+	${lyricsHeader(title=The Human Jungle,
+		video=https://www.youtube.com/embed/HWN6iyJGaus,
+		annotated=yes, lyrics=${literalizeCommas(
 
 	The Human Jungle starring Herbert Lom was never this much fun
 	<br/>And I'm ready to swear to that
@@ -9010,7 +9012,9 @@ Everyone pretend...
 
 #define	shame_about_you.html
 #live	if (getval(page) = shame_about_you.html)
-	${lyricsHeader(title=Shame About You, lyrics=${literalizeCommas(
+	${lyricsHeader(title=Shame About You,
+		video=https://www.youtube.com/embed/enj2erbAdIM,
+		lyrics=${literalizeCommas(
 
 	Move together; it's been a beautiful day<br/>
 	And we've all been thrilled to see the skills out there upon display.<br/>

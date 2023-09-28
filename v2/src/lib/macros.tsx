@@ -597,7 +597,7 @@ export const parseCaptionSourceEtc = (str?: string, captionsLast?: boolean) => {
 
 export const parseCaptionsSourcesEtc = (str?: string, captionsLast?: boolean) => {
 	if (!str) return;
-	return str.split('$$')?.filter((ch: any) => ch.length)?.map((ch: string) => parseCaptionSourceEtc(ch, captionsLast));
+	return str.split(/\$\$|--NEXT--/)?.filter((ch: any) => ch.length)?.map((ch: string) => parseCaptionSourceEtc(ch, captionsLast));
 }
 
 export const truncAt = (chop: string, str?: string) => {

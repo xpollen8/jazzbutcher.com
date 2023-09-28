@@ -6772,735 +6772,224 @@ Previously available on the ${fishco} LP/CD.
 
 #define	rotten.html
 #live	if (getval(page) = rotten.html)
-	${mkHeader(section=albums, title=Rotten Soul)}
+	${mkAlbumHeader(lookup=rotten, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${images}/front_rotten_soul.jpg"><img
-		src="${images}/front_rotten_soul_500.jpg"></a>
-	<a href="${images}/back_rotten_soul.jpg"><img
-		src="${images}/back_rotten_soul_250.jpg"></a>
-	${a_media} ${ALBUM}, ${CD}
-	${a_dtreleased} June 2000
-	${a_label} Vinyl Japan
-	${a_cat} ASKCD114
-#	${addAlbumPerf(release=rotten, person=[[person:Mitch_Jenkins]], instruments=photography)})}
-#	${addAlbumPerf(release=rotten, person=[[person:Peter_Crouch]], instruments=engineer)})}
-#	${addAlbumPerf(release=rotten, person=[[person:Pat_Fish]], instruments=producer)})}
-#	${addAlbumPerf(release=rotten, person=[[person:Max_Eider]], instruments=producer)})}
-#	${a_photo} ${mitch}
-	${det_end}
-	${tun_beg}
-	${bigcats} (Fish)<br />
-	${comeon} (Fish)<br />
-	${baby} (Eider)<br />
-	${siberia} (Fish)<br />
-	${tough} (Fish)<br />
-	${sleepwalking} (Fish)<br />
-	${niagara} (Fish)<br />
-	${adore} (Eider)<br />
-	${clyde} (Fish)<br />
-	${hatelove} (Eider)<br />
-	${callme} (Fish)<br />
-	${morphine} (Eider)
-	${tun_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=rotten)}
-#${addAlbumPerf(release=rotten, person=[[person:Pat_Fish]],
-#instruments=fender telecaster\, acoustic guitar\, bass\, singing, song=NULL)}
-#${addAlbumPerf(release=rotten, person=[[person:Max_Eider]],
-#instruments=gretsch double anniversary\, singing\, bass, song=NULL)}
-#${addAlbumPerf(release=rotten, person=[[person:Owen_Jones]],
-#instruments=accordian\, percussion\, singing\, catering, song=NULL)}
-#${addAlbumPerf(release=rotten, person=[[person:Peter_Crouch]],
-#instruments=fender stratocaster\, shouting, song=NULL)}
-#${addAlbumPerf(release=rotten, person=[[person:Kathie_McGinty]],
-#instruments=singing\, logistics, song=NULL)}
-#${addAlbumPerf(release=rotten, person=[[person:Pat_Beirne]],
-#instruments=mouth organ, song=NULL)}
-#	<div align="right">
-#	<b>${pat}</b><br />
-#	Fender Telecaster, acoustic guitar, bass, singing<br />
-#	<b>${max}</b><br />
-#	Gretsch Double Anniversary, singing, bass<br />
-#	<b>${owen}</b><br />
-#	accordion, percussion, singing, catering<br />
-#	<b>${pete}</b><br />
-#	Fender Stratocaster, shouting<br />
-#	<b>${kathie}</b><br />
-#	singing, logistics<br />
-#	<b>${beirne}</b><br />
-#	mouth organ
-#	</div>
-	<p>
-	Recorded by ${pete} at Studio Leviathan, Earth, March-April<br />
-	Programmed and produced by Pat Fish and Max Eider<br />
-	Legal Representation: ${steve}<br />
-	www.jazzbutcher.com (thanks to ${del})
-	${players_end}
-	${lin_beg}
-	Pat and I go back a long way.  I've always been a Butcher fan, although
-	it's no secret that there was a brief period when I would have liked
-	to have killed him, dismembered his body, buried the parts at the four
-	corners of the earth and visited each in turn to have a bit of a dance.
-	I felt sure he would have done the same for me.  <i>[Actually, I never entertained
-	these kind of thoughts about The Talented One, but now that he comes to
-	mention it, it does sound like a bit of a laugh - Ed.]</i>
-	<p>
-	But that was a long time ago.
-	We never quite cut the knot, and so it is - through a strange mixture of complicity,
-	happenstances, hard liquor and Vinyl Japan - that we cam to make this record.
-	We have nothing but good to say of Vinyl Japan, but I'm sure they won't mind
-	my pointing out that it's been made
-	on the cheap.  This involved Pat in becoming a bass player and virtual
-	drummer, among other things (leave it, Crouchy), and I had many happy visits
-	to Northampton NN1 to pursue conversations such as: 'Barrapadap.' 'What,
-	brapadap?' 'No, barrapadap.' 'Oh, barrapadap ... I see.'
-	<p>
-	Anyway, the main purpose of these notes is to give thanks and thanks are
-	primarily due to co-conspiratorial guitar player ${pete}, who owns the
-	house and a good deal of the queipment and patience that made this record
-	possible.  The other main conspirators are listed elsewhere on this sleeve.  Also
-	conniving were: Agent Russell Cooper; ${gab} (aka Inexxor); Ian Botterill (courtesy
-	of Fat Controller); ${curt} (we are not worthy);
-	Paul Taylor; Tetsuya Nakatani; John Whitfield and all at Vinyl Japan; and, unwittingly
-	but gratefully, the proprietors of the local boozer and off-license.  Little
-	Jake and Hobbu thank Richard Morris.  And then there's you, of course, assuming
-	that you've actually shelled out some of your hard-earned cash to listen to
-	this product of disgusted, disappointed, dissipated and rotten souls.
-	<div align="right">
-	${max}<br />
-	April 2000
-	</div>
-	${lin_end}
-#	<b>Ordering Information</b>
-#	<blockquote>
-#	The price for one copy of the JBC album, including postage is:
-#	<blockquote>
-#	UK - 12 pounds<br />
-#	Europe - 12 pounds 50 pence<br />
-#	Rest of World - 13 pounds
-#	</blockquote>
-#	<p>
-#	For each additional copy please add 11 pounds 30 pence.
-#	<p>
-#	We can accept payment by Visa, Mastercard, Switch, UK Cheque or Postal
-#	Order, International Postal Order, International Money Order or cash in GB
-#	Pounds Sterling.  Sorry we cannot accept payment in any foreign currency.
-#	<p>
-#	Vinyl Japan<br />
-#	98 Camden Road<br />
-#	London<br />
-#	NW1 9EA<br />
-#	Email:  claire@vinyljapan.com<br />
-#	Tel:  +44 (0) 20 7284 0359<br />
-#	Fax:  +44 (0) 20 7267 5186
-#	</blockquote>
-	${mkAlbumPress(album=rotten)}
+	${clearAlbumPerf(release=rotten)}
+	${addAlbumPerf(release=rotten, ordinal=1, song="Big Cats")}
+	${addAlbumPerf(release=rotten, ordinal=2, song="Come On\, Marie")}
+	${addAlbumPerf(release=rotten, ordinal=3, song="Baby\, It's You")}
+	${addAlbumPerf(release=rotten, ordinal=4, song="Mister Siberia")}
+	${addAlbumPerf(release=rotten, ordinal=5, song="Tough Priest")}
+	${addAlbumPerf(release=rotten, ordinal=6, song="Sleepwalking")}
+	${addAlbumPerf(release=rotten, ordinal=7, song="Niagara")}
+	${addAlbumPerf(release=rotten, ordinal=8, song="The One You Adore")}
+	${addAlbumPerf(release=rotten, ordinal=9, song="The Ballad Of Tiny And Clyde")}
+	${addAlbumPerf(release=rotten, ordinal=10, song="I Hate Love")}
+	${addAlbumPerf(release=rotten, ordinal=11, song="Call Me")}
+	${addAlbumPerf(release=rotten, ordinal=12, song="Diamorphine")}
+
+	${addAlbumPerf(release=rotten, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=rotten, person=[[person:Peter_Crouch]], instruments=engineer)}
+	${addAlbumPerf(release=rotten, person=[[person:Pat_Fish]], instruments=producer)}
+	${addAlbumPerf(release=rotten, person=[[person:Max_Eider]], instruments=producer)}
+
+	${addAlbumPerf(release=rotten, person=[[person:Pat_Fish]], instruments=fender telecaster\, acoustic guitar\, bass\, singing)}
+	${addAlbumPerf(release=rotten, person=[[person:Max_Eider]], instruments=gretsch double anniversary\, singing\, bass)}
+	${addAlbumPerf(release=rotten, person=[[person:Owen_Jones]], instruments=accordian\, percussion\, singing\, catering)}
+	${addAlbumPerf(release=rotten, person=[[person:Peter_Crouch]], instruments=fender stratocaster\, shouting)}
+	${addAlbumPerf(release=rotten, person=[[person:Kathie_McGinty]], instruments=singing\, logistics)}
+	${addAlbumPerf(release=rotten, person=[[person:Pat_Beirne]], instruments=mouth organ)}
 
 	${jbc_footer}
 #live	endif
 
 #define	free_lunch.html
 #live	if (getval(page) = free_lunch.html)
-	${mkHeader(section=albums, title=The Jazz Butcher's Free Lunch)}
+	${mkAlbumHeader(lookup=lunch, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${images}/lunch_front.jpg"><img
-		src="${images}/lunch_front_500.jpg"></a>
-	<a href="${images}/lunch_back.jpg"><img
-		src="${images}/lunch_back_250.jpg"></a>
-	<a href="${images}/lunch_inside.jpg"><img
-		src="${images}/lunch_inside_250.jpg"></a>
-	${a_media} ${ALBUM}, ${CD}
-	${a_dtreleased} October 2003
-	${a_label} Rev-Ola
-	${a_cat} CRREV54
-#	${addAlbumPerf(release=lunch, person=[[person:David_Whittemore]], instruments=photography)}
-#	${addAlbumPerf(release=lunch, person=[[person:L._J._Renfield]], instruments=photography)}
-#	${addAlbumPerf(release=lunch, person=[[person:Mick_Mercer]], instruments=photography)}
-#	${a_photo} ${del}, L. J. Renfield, ${mercer}
-	${det_end}
-	${tun_beg}
-	${odd}<br />
-	${drugs}<br />
-	${go}<br />
-	${49}<br />
-	${yo}<br />
-	${shirl}<br />
-	${still}<br />
-	${monkey}<br />
-	${bake}<br />
-	${vodka}<br />
-	${chang}<br />
-	${scarlet}<br />
-	${cops}<br />
-	${sis}<br />
-	${true}<br />
-	${chang} (Evil Karel Von Daemmerung Remix)
-	${tun_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=lunch)}
+	${clearAlbumPerf(release=lunch)}
 
-#	${addAlbumPerf(release=lunch, person=[[person:Paul_Mulreany]], instruments=drums\, guitar\, vocals, song="Mr. Odd \, She's On Drugs \, Girl-Go \, She's A Yo-Yo \, Shirley Maclaine \, Still & All \, Monkeyface \, Sister Death")}
-#	${addAlbumPerf(release=lunch, person=[[person:Blair_MacDonald]], instruments=drums, song="Looking For Lot 49")}
-#	${addAlbumPerf(release=lunch, person=[[person:Nick_Burson]], instruments=drums, song="Bakersfield \, Vodka Girls \, President Chang")}
-#	${addAlbumPerf(release=lunch, person=[[person:Gabriel_Turner]], instruments=drums\, vocals, song="Scarlett \, Cops And Hospitals")}
-#	${addAlbumPerf(release=lunch, person=[[person:Laurence_O'Keefe]], instruments=bass guitar\, vocals, song="Mr. Odd \, She's On Drugs \, Girl-Go \, Sister Death")}
-#	${addAlbumPerf(release=lunch, person=[[person:Erol_Suleyman]], instruments=bass guitar, song="Looking For Lot 49")}
-#	${addAlbumPerf(release=lunch, person=[[person:Joe_Allen]], instruments=bass guitar, song="She's A Yo-Yo \, Shirley Maclaine \, Still & All \, Monkeyface")}
-#	${addAlbumPerf(release=lunch, person=[[person:Dooj_Wilkinson]], instruments=bass guitar\, vocals, song="Bakersfield \, Vodka Girls \, President Chang \, Scarlett \, Cops And Hospitals \, Sister Death \, True Stories")}
-#	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=guitar, song="Mr. Odd \, Girl-Go \, Shirley Maclaine \, Still & All \, Bakersfield \, Vodka Girls \, President Chang")}
-#	${addAlbumPerf(release=lunch, person=[[person:Alex_Lee]], instruments=guitar, song="She's On Drugs \, She's A Yo-Yo \, Shirley Maclaine \, Monkeyface \, Scarlett \, Sister Death")}
-#	${addAlbumPerf(release=lunch, person=[[person:Kizzy_O'Callaghan]], instruments=guitar, song="Looking For Lot 49")}
-#	${addAlbumPerf(release=lunch, person=[[person:Peter_Crouch]], instruments=guitar, song="Bakersfield \, Vodka Girls \, President Chang")}
-#	${addAlbumPerf(release=lunch, person=[[person:Dave_Henderson]], instruments=guitar, song="Scarlett \, Cops And Hospitals")}
-#	${addAlbumPerf(release=lunch, person=[[person:Dave_Felce]], instruments=guitar, song="True Stories")}
-#	${addAlbumPerf(release=lunch, person=[[person:Alex_Green]], instruments=saxophones)}
-#	${addAlbumPerf(release=lunch, person=[[person:Pat_Fish]], instruments=guitar\, keyboards\, percussion\, vocals)}
-#	${addAlbumPerf(release=lunch, person=[[person:Martin_Stebbing]], instruments=producer, song="Mr. Odd \, She's On Drugs \, Girl-Go \, Sister Death")}
-#	${addAlbumPerf(release=lunch, person=[[person:Iain_O'Higgins]], instruments=producer, song="Looking For Lot 49")}
-#	${addAlbumPerf(release=lunch, person=[[person:Pat_Fish]], instruments=producer, song="She's A Yo-Yo \, Shirley Maclaine \, Still & All \, Monkeyface")}
-#	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=producer, song="Bakersfield \, Vodka Girls \, President Chang")}
-#	${addAlbumPerf(release=lunch, person=[[person:David_J.]], instruments=producer, song="Scarlett \, Cops And Hospitals \, True Stories")}
-#
-#	${paul} - drums, guitar, vocals (${odd}, ${drugs}, ${go}, ${yo}, ${shirl}, ${still}, ${monkey}, ${sis})<br />
-#	${blair} - drums (${49})<br />
-#	${nick} - drums (${bake}, ${vodka}, ${chang})<br />
-#	${gab} - drums, vocals (${scarlet}, ${cops})<br />
-#	${larry} - bass guitar, vocals (${odd}, ${drugs}, ${go}, ${sis})<br />
-#	${erol} - bass guitar (${49})<br />
-#	${joea} - bass guitar (${yo}, ${shirl}, ${still}, ${monkey})<br />
-#	${dooj} - bass guitar, vocals (${bake}, ${vodka}, ${chang}, ${scarlet}, ${cops}, ${sis}, ${true})<br />
-#	${richard} - guitar (${odd}, ${go}, ${shirl}, ${still}, ${bake}, ${vodka}, ${chang})<br />
-#	${lix} - guitar (${drugs}, ${yo}, ${shirl}, ${monkey}, ${scarlet}, ${sis})<br />
-#	${kizzy} - guitar (${49})<br />
-#	${pete} - guitar (${bake}, ${vodka}, ${chang})<br />
-#	${hend} - guitar (${scarlet}, ${cops})<br />
-#	${felce} - guitar (${true})<br />
-#	${green} - saxophones<br />
-#	${pat} - guitar, keyboards, percussion, vocals<p>
-#	${rev} - producer (${odd}, ${drugs}, ${go}, ${sis})<br />
-#	${iain} - producer (${49})<br />
-#	${pat} - producer (${yo}, ${shirl}, ${still}, ${monkey})<br />
-#	${richard} - producer (${bake}, ${vodka}, ${chang})<br />
-#	${dj} - producer (${scarlet}, ${cops}, ${true})
-	${players_end}
-	${lin_beg}
-	<b>FREE LUNCH</b>
-	<p>
+	${addAlbumPerf(release=lunch, ordinal=1, song="Mister Odd")}
+	${addAlbumPerf(release=lunch, ordinal=2, song="She's On Drugs")}
+	${addAlbumPerf(release=lunch, ordinal=3, song="Girl Go")}
+	${addAlbumPerf(release=lunch, ordinal=4, song="Looking For Lot 49")}
+	${addAlbumPerf(release=lunch, ordinal=5, song="She's A Yo-Yo")}
+	${addAlbumPerf(release=lunch, ordinal=6, song="Shirley Maclaine")}
+	${addAlbumPerf(release=lunch, ordinal=7, song="Still And All")}
+	${addAlbumPerf(release=lunch, ordinal=8, song="Monkeyface")}
+	${addAlbumPerf(release=lunch, ordinal=9, song="Bakersfield")}
+	${addAlbumPerf(release=lunch, ordinal=10, song="Vodka Girls")}
+	${addAlbumPerf(release=lunch, ordinal=11, song="President Chang")}
+	${addAlbumPerf(release=lunch, ordinal=12, song="Scarlett")}
+	${addAlbumPerf(release=lunch, ordinal=13, song="Cops & Hospitals")}
+	${addAlbumPerf(release=lunch, ordinal=14, song="Sister Death")}
+	${addAlbumPerf(release=lunch, ordinal=15, song="True Stories")}
+	${addAlbumPerf(release=lunch, ordinal=16, song="President Chang", version=[Evil Karel Von Daemmerung Remix] From The Bad Archives)}
 
-	Curtis E. Johnson once said to me about the JBC: "You're not a band. You're
-	a crack team of international restaurant critics." Guilty as charged.
-	Stevie G and I were talking about it just the other day. All over the world
-	you can meet people, who, in a desperate attempt to let you know that
-	they're bang up to date with what's going on out there, will tell you:
-	"There's no such thing as a free lunch"; whereas to us musicians the free
-	lunch is a central shaft of our cosmology.
-	<p>
-	Next time some patronising time-server feels like letting you in on the Big
-	Secret and tells you "there's no such thing as a free lunch", buy him one.
-	Take him to a restaurant, sit him down, wine him and dine him. Then send
-	him on his way with the Star of India's finest dhansak in his belly and a
-	flea in his ear. Who knows? You might just have tweaked his worldview a
-	point or two towards the sunnier side of the street. You'll certainly have
-	shown him that he didn't know what he was talking about.
-	<p>
-	There is the remote possibility that, once the espressos have been drained
-	and it's time for you to shell out, your new companion might try to go for
-	his wallet. "No, no, I couldn't possibly let you pay the bill," he
-	declaims. Waving of hands may be involved. Here is a man in particular need
-	of your immediate and practical help. Here you are, trying to pay for his
-	lunch, but his personal Weltanschauung won't permit it. How far up himself?
-	All the way, I'm afraid, season ticket holder, sits on the board of the
-	Consumers' Action Council, organises the knees-up every Christmas, salt-of-
-	the-earth.
-	Oh, I'm sorry. Remain firm. Pay the bill for both of you.
-	<p>
-	Alan McGee, in his foreword to Jackie Young's book "Backward Glances"
-	(Creation 1995), wrote that whenever one of his deluded pop singers phoned
-	up from abroad to moan about life on the road, he'd remind them that they
-	could always try working down a mine. Right on the money once again, Mister
-	President.
-	<p>
-	A lot of the stuff you read about little rock bands touring the globe is
-	foolish myth. The expected tales of wild excess, for example, perpetuated
-	by writers who could barely handle the lifestyle for more than a couple of
-	days at some cushy location carefully selected by the record company, which
-	is paying their fare and their minibar bill. Then we have to wrestle with
-	the myths of Dreadful Squalor. These tend to be perpetuated by a certain
-	kind of musician, who can't handle the lifestyle either, God bless, but who
-	has sublimated this beneath a preening self-importance which renders
-	perfectly good gigs, hotels, vehicles and restaurants into an unending
-	slough of Things Which Are Not Good Enough For Him. (Or Her, Miss Carey.)
-	For example, has anybody ever read "Nico; Songs They Never Play On The
-	Radio" without having, ever so fleetingly, the feeling that something is
-	up? If things are truly as vile and debased as the author likes to make
-	out, doesn't that make him just a bit of mug for being a part of it? Or is
-	he taking a hypocritical pot-shot at his old touring companions?
-	<p>
-	He does, it must be said, paint a glorious picture of The Great Paolo
-	Bedini.
-	<p>
-	Paolo Bedini is one of the truly wonderful things about touring what the
-	ignorant, the ungrateful and the chemically-dependent like to describe as
-	"the toilets". A chess prodigy, he was thwarted when his mother wouldn't
-	permit him to go to an important championship in the Soviet Union, so
-	somehow he became a music promoter. Paolo stirs two teaspoonfuls of sugar
-	into a small glass of orange juice. For some time the windscreen of his car
-	was held on by gaffa tape.
-	<p>
-	When you work for Paolo you enter a zone of un-knowingness, where matters
-	like time and space are seen from a completely different, serenely detached
-	viewpoint high in the foothills of modern Italian consciousness. If you
-	persist on trying to follow your normal, sadly materialist agenda, you will
-	find yourself growing ever more confused and frustrated, as you try to
-	establish
-	<p>
-	Where you are now;
-	The relationship between where you are now and where you are, in fact,
-	supposed to be now;
-	Where you are supposed to be later on;
-	When that might be;
-		  and
-	What you should be doing to ensure that it might be so.
-	<p>
-	It is hot in Italy and if you think this way you will go mad. Your brain
-	will shrivel to the size of a walnut and you will die alone and insane in a
-	sanatorium just outside of Guildford as the crows on the plane tree outside
-	your window say vile things about your evil, useless life.
-	<p>
-	The truth is that there is learning, enlightenment and many free lunches to
-	be had from a Bedini Special. In September 1985 the JBC were flattered to
-	land a show in the ancient Greek ampthitheatre in Syracusa in Sicily. (Call
-	that a toilet, if you dare.) The PA caught fire and the show ended in
-	enthusiastic pointless shouting and the singer getting a visit from Jesus.
-	The following morning all the members of the JBC and their hangovers were
-	told that they could not fly home on the appointed aeroplane, something of
-	a nuisance, which the bass player darkly intimated to be work of the Mafia.
-	"So, if they don't like us.why do they want to keep us here on their
-	manor?" reasoned the marginally more logical players. We sat and drank
-	coffee in the airport while Bedini was sent for.
-	<p>
-	We knew that Paolo would have a scheme. On this occasion it turned out that
-	the first step was to book the entire band onto a flight to Milan. This was
-	achieved without too much difficulty. Arrived at Milan, we watched open-
-	mouthed as a van was rented. We then drove through the gathering twilight
-	across hill roads to Genoa. A plane would take us home from Genoa airport:
-	this was the not-entirely-convincing official line from our promoter. Of
-	course, we arrived to find Genoa's tiny airport closed up for the night. It
-	must have been at least eight thirty in the evening.
-	<p>
-	Entirely unphazed, Paolo had us drive on into Genoa where he booked the
-	whole crew into a downtown hotel before taking us out to dinner. We could
-	not believe our luck. He was acting as though it was the most normal thing
-	in the world.
-	<p>
-	Over dinner, which, being Italian, was exceptionally fine, Plan B was
-	revealed to a shell-shocked and disbelieving band. Pretty self-evidently,
-	all this piling around Italy in various forms of transport had taken
-	something of a toll on the finances, and Paolo explained that it would be a
-	lot easier and cheaper for him to send the band home in separate groups of
-	two or three by train. One or two could go tomorrow, the others a day or
-	two later when Paolo had sorted out the necessary wedge. It was decided
-	that Max and Owen would be the first to set off, the following morning. The
-	rest of us got to stay in the hotel for two or three days, milling around
-	Genoa (which is lovely) and meeting up regularly with Paolo for endless
-	free lunches and dinners. I still can't believe my luck.
-	<p>
-	Later, back in the UK, I found out that the reason that Paolo acted so
-	calmly, as though everything was normal, was that - as far as he was
-	concerned - it was. My pal Rolo had had an almost identical experience with
-	Il Gran Bedini only a few months before. Days of free lunches! What a
-	gentleman! The JBC loved him so much that we named an Award after him,
-	specifically the Award for local promoter of the year, which from 1985 on
-	became known as The Golden Bedini.
-	<p>
-	And while I'm talking about Italy, a big shout must go out to our friends
-	and supporters, Giancarlo Susanna and Leo Mansueto, without whom all our
-	Italian adventures would probably never have come to pass, and I would
-	never have met Paolo Bedini.
-	We love you!
-	<p>
-	The great truth of all this is that life on the road is positively
-	luxurious in comparison to the lives that most musicians live when they are
-	not working. You get to stay in hotels, eat out in restaurants, learn
-	languages, history and politics. You get to show off, you drink stupid
-	quantities of free liquor, you get into nightclubs for free. You get to DJ
-	on foreign radio stations (Once, in Wisconsin, they even let me read the
-	news), the gas stations sell beer, cigarettes are cheap and the drugs are
-	free. Let's face it, the only people you ever meet are the ones that either
-	like your music or have to pretend to as part of their job. (Well, them and
-	The Authorities.) All you have to worry about is where you are supposed to
-	be at six o'clock tomorrow evening.
-	<p>
+	${addAlbumPerf(release=lunch, person=[[person:Paul_Mulreany]], instruments=drums\, guitar\, vocals, song="Mr. Odd")}
+	${addAlbumPerf(release=lunch, person=[[person:Paul_Mulreany]], instruments=drums\, guitar\, vocals, song="She's On Drugs")}
+	${addAlbumPerf(release=lunch, person=[[person:Paul_Mulreany]], instruments=drums\, guitar\, vocals, song="Girl-Go")}
+	${addAlbumPerf(release=lunch, person=[[person:Paul_Mulreany]], instruments=drums\, guitar\, vocals, song="She's A Yo-Yo")}
+	${addAlbumPerf(release=lunch, person=[[person:Paul_Mulreany]], instruments=drums\, guitar\, vocals, song="Shirley Maclaine")}
+	${addAlbumPerf(release=lunch, person=[[person:Paul_Mulreany]], instruments=drums\, guitar\, vocals, song="Still & All")}
+	${addAlbumPerf(release=lunch, person=[[person:Paul_Mulreany]], instruments=drums\, guitar\, vocals, song="Monkeyface")}
+	${addAlbumPerf(release=lunch, person=[[person:Paul_Mulreany]], instruments=drums\, guitar\, vocals, song="Sister Death")}
 
-	All right: strictly, the touring musician adventurer tends to enjoy a lot
-	more free dinners than lunches, when kindly local promoters try to feed you
-	up in readiness for el gran espectacolo del rock. I once knew a German tour
-	promoter who thought it was a very dubious idea for the drummer to be a
-	vegetarian. And, yes, it's probably true that these luxurious dinners out
-	are accounted for in some contingency fund among the promoter's expertly
-	and cautiously calculated expenses; but it's not as though you, the
-	musician, will ever see any of that paperwork. No, from where you're
-	sitting, that is near enough to a free lunch for jazz. And over the years,
-	the JBC have enjoyed some very good ones.
-	<p>
-	I've heard and read terrible stories about British bands going abroad and
-	complaining incessantly about the absence of good old Kwiksave favourites
-	like Captain Birdseye or canned beans. There are the tales, almost too sad
-	to be told, of allegedly creative people dragging a massive tea urn around
-	with them wherever they play. Just about everybody in the JBC was happy to
-	make do and mend with whatever came along in the way of food and drink,
-	and, having gazed thereupon, I'm not surprised.
-	<p>
-	Years after the event, certain dinners stand out every bit as strongly as
-	certain shows. It is time to give credit where it has been due.
-	<p>
-	<b>Taberna Bar Bajamar, Calle Gorbea, Gasteiz - Spring 88</b>
-	<p>
-	Simple, unpretentious, endless dining delight, served by a telepath.
-	A legendary dining experience, universally agreed by all who were there to
-	be the finest meal that this band has ever been served.
-	<p>
-	<b>Restaurant Kalash, Clermont-Ferrand - Spring 94</b>
-	<p>
-	A Pakistani restaurant of staggering sophistication in a back street in
-	France's answer to Sheffield. An unexpected oasis of calm and civilisation,
-	to be sure, but the food was so delicate, so delicious, so plentiful that
-	it remains unforgettable.
-	<p>
+	${addAlbumPerf(release=lunch, person=[[person:Blair_MacDonald]], instruments=drums, song="Looking For Lot 49")}
 
-	<b>The Opera Nutter, Reggio nell' Emilia - December 1986</b>
-	<p>
-	Somewhere in the countryside the Red Bus pulled up at a barn. A barn with
-	flashing disco lights and opera playing at brain-crushing volume. In these
-	unlikely surroundings we were served endless courses of transcendentally
-	good Italian peasant cooking by a dangerous maniac. I can hardly believe it
-	really happened.
-	<p>
+	${addAlbumPerf(release=lunch, person=[[person:Nick_Burson]], instruments=drums, song="Bakersfield")}
+	${addAlbumPerf(release=lunch, person=[[person:Nick_Burson]], instruments=drums, song="Vodka Girls")}
+	${addAlbumPerf(release=lunch, person=[[person:Nick_Burson]], instruments=drums, song="President Chang")}
 
-	<b>God-Fearing Erie, Pa. - Spring 2000</b>
-	<p>
+	${addAlbumPerf(release=lunch, person=[[person:Gabriel_Turner]], instruments=drums\, vocals, song="Scarlett")}
+	${addAlbumPerf(release=lunch, person=[[person:Gabriel_Turner]], instruments=drums\, vocals, song="Cops And Hospitals")}
 
-	In a guerilla-booking operation, a pack of JBC lovers invited us to play
-	their local pub, using their flat as a base camp. Here they installed their
-	pal, who just happened to the head chef at the best restaurant in town.
-	Roasted elephant garlic with brie and custom-made quesadillas, all
-	accompanied by beers of the highest quality, Polish vodka and jazz
-	cheroots, while watching Premiership football on TV - in America! Superb!
-	<p>
+	${addAlbumPerf(release=lunch, person=[[person:Laurence_O'Keefe]], instruments=bass guitar\, vocals, song="Mr. Odd")}
+	${addAlbumPerf(release=lunch, person=[[person:Laurence_O'Keefe]], instruments=bass guitar\, vocals, song="She's On Drugs")}
+	${addAlbumPerf(release=lunch, person=[[person:Laurence_O'Keefe]], instruments=bass guitar\, vocals, song="Girl-Go")}
+	${addAlbumPerf(release=lunch, person=[[person:Laurence_O'Keefe]], instruments=bass guitar\, vocals, song="Sister Death")}
 
+	${addAlbumPerf(release=lunch, person=[[person:Erol_Suleyman]], instruments=bass guitar, song="Looking For Lot 49")}
 
-	<b>Vereinhaus, Dornbirn - Mar 88</b>
-	<p>
-	When the JBC first stumbled upon this fine Austrian dining room at Easter
-	1985 we discovered that they did a rather wonderful thing with deep-fried
-	mushrooms. We have been going back there ever since. Of course, these days
-	"breaded mushrooms" have come to the pubs and restaurants of the UK. But
-	what a nasty little mess of microwaved cack they truly are when compared
-	with the Real Thing. Available only at the Vereinhaus, a JBC classic!
+	${addAlbumPerf(release=lunch, person=[[person:Joe_Allen]], instruments=bass guitar, song="She's A Yo-Yo")}
+	${addAlbumPerf(release=lunch, person=[[person:Joe_Allen]], instruments=bass guitar, song="Shirley Maclaine")}
+	${addAlbumPerf(release=lunch, person=[[person:Joe_Allen]], instruments=bass guitar, song="Still & All")}
+	${addAlbumPerf(release=lunch, person=[[person:Joe_Allen]], instruments=bass guitar, song="Monkeyface")}
 
+	${addAlbumPerf(release=lunch, person=[[person:Dooj_Wilkinson]], instruments=bass guitar\, vocals, song="Bakersfield")}
+	${addAlbumPerf(release=lunch, person=[[person:Dooj_Wilkinson]], instruments=bass guitar\, vocals, song="Vodka Girls")}
+	${addAlbumPerf(release=lunch, person=[[person:Dooj_Wilkinson]], instruments=bass guitar\, vocals, song="President Chang")}
+	${addAlbumPerf(release=lunch, person=[[person:Dooj_Wilkinson]], instruments=bass guitar\, vocals, song="Scarlett")}
+	${addAlbumPerf(release=lunch, person=[[person:Dooj_Wilkinson]], instruments=bass guitar\, vocals, song="Cops And Hospitals")}
+	${addAlbumPerf(release=lunch, person=[[person:Dooj_Wilkinson]], instruments=bass guitar\, vocals, song="Sister Death")}
+	${addAlbumPerf(release=lunch, person=[[person:Dooj_Wilkinson]], instruments=bass guitar\, vocals, song="True Stories")}
 
+	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=guitar, song="Mr. Odd")}
+	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=guitar, song="Girl-Go")}
+	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=guitar, song="Shirley Maclaine")}
+	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=guitar, song="Still & All")}
+	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=guitar, song="Bakersfield")}
+	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=guitar, song="Vodka Girls")}
+	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=guitar, song="President Chang")}
 
-	<p>
-	<b>Honorary mentions must surely also go to:</b>
-	<p>
-	<a href="${jbc_etc}/starindia.html">The Star of India</a>, NN1<br />
-	Indian Veg, Chapel Market, Islington (the two great originals for us lot)<br />
-	Scholars Inn, Bloomington, Indiana (well classy)<br />
-	Himalaya, Madrid (our base over three mental days in 1991)<br />
-	Seoul Restaurant, Druselplatz 2, Kassel (surprise fruit a speciality)<br />
-	Weinstein, Aachen (snakes on the piss!)<br />
-	Scenic India, San Francisco (featuring Flying Horse beer)<br />
-	Mr. Jones' & Fraulein Nudow's Kitchen, Hamburg (too right!)<br />
-	Restaurant Tibet, Hamburg (wear clean socks)<br />
-	Elmer's Diner, Portland Oregon  (chilli relleno omelette of the millennium)<br />
-	Black Bear Diner, Eureka, California ("I could handle a logger right now.")<br />
-	Joseph's,Yucca & Ivar, LA, California (breakfasts of genius)<br />
-	Citrouille, Morlaix, Brittany, France (it's all about the pumpkins)<br />
-	Hotel Regina, Vienna (imperial breakfasts)
-	<p>
-	Thank you all. You have made us truly happy and often we did not even pay.
-	We love you!
-	<p>
+	${addAlbumPerf(release=lunch, person=[[person:Alex_Lee]], instruments=guitar, song="She's On Drugs")}
+	${addAlbumPerf(release=lunch, person=[[person:Alex_Lee]], instruments=guitar, song="She's A Yo-Yo")}
+	${addAlbumPerf(release=lunch, person=[[person:Alex_Lee]], instruments=guitar, song="Shirley Maclaine")}
+	${addAlbumPerf(release=lunch, person=[[person:Alex_Lee]], instruments=guitar, song="Monkeyface")}
+	${addAlbumPerf(release=lunch, person=[[person:Alex_Lee]], instruments=guitar, song="Scarlett")}
+	${addAlbumPerf(release=lunch, person=[[person:Alex_Lee]], instruments=guitar, song="Sister Death")}
+	${addAlbumPerf(release=lunch, person=[[person:Kizzy_O'Callaghan]], instruments=guitar, song="Looking For Lot 49")}
 
-	&copy; Pat Fish
-		NN1 2003
-	<p>
-	<b>Written Warning:</b>
-	<p>
-	The next time that I find myself called upon to provide sleeve notes for
-	yet another instalment of the ongoing JBC Pointless Compilation Library, I
-	shall feel myself compelled to relate the story of what happened in the
-	Empire Diner in October 1990. Record companies (especially Chrysalis), BBC
-	employees and former members of the Blue Aeroplanes band should approach
-	their legal representatives now. Not that it will do them any good.  The
-	Red Bus sped on long ago.
-	<p>
+	${addAlbumPerf(release=lunch, person=[[person:Peter_Crouch]], instruments=guitar, song="Bakersfield")}
+	${addAlbumPerf(release=lunch, person=[[person:Peter_Crouch]], instruments=guitar, song="Vodka Girls")}
+	${addAlbumPerf(release=lunch, person=[[person:Peter_Crouch]], instruments=guitar, song="President Chang")}
 
-	<img src="${images}/star_india/StarScrap.jpg" width=447 height=315>
-	<br />
-	Paul Mulreany and Laurence O'Keefe riot, The Star of India NN1, September
-	1988
-	<p>
-	Designed by Wilson Research Laboratories & ${linkExternal(http://www.boldgraphicdesign.co.uk, Bold London)}
-	${lin_end}
-	${thx_beg}
-	Heartfelt and unending thanks to Alan McGee, ${deirdre}, ${del}, and ${burrell}
-	${thx_end}
+	${addAlbumPerf(release=lunch, person=[[person:Dave_Henderson]], instruments=guitar, song="Scarlett")}
+	${addAlbumPerf(release=lunch, person=[[person:Dave_Henderson]], instruments=guitar, song="Cops And Hospitals")}
+
+	${addAlbumPerf(release=lunch, person=[[person:Dave_Felce]], instruments=guitar, song="True Stories")}
+	${addAlbumPerf(release=lunch, person=[[person:Alex_Green]], instruments=saxophones)}
+
+	${addAlbumPerf(release=lunch, person=[[person:Martin_Stebbing]], instruments=producer, song="Mr. Odd")}
+	${addAlbumPerf(release=lunch, person=[[person:Martin_Stebbing]], instruments=producer, song="She's On Drugs")}
+	${addAlbumPerf(release=lunch, person=[[person:Martin_Stebbing]], instruments=producer, song="Girl-Go")}
+	${addAlbumPerf(release=lunch, person=[[person:Martin_Stebbing]], instruments=producer, song="Sister Death")}
+
+	${addAlbumPerf(release=lunch, person=[[person:Iain_O'Higgins]], instruments=producer, song="Looking For Lot 49")}
+
+	${addAlbumPerf(release=lunch, person=[[person:Pat_Fish]], instruments=producer, song="She's A Yo-Yo")}
+	${addAlbumPerf(release=lunch, person=[[person:Pat_Fish]], instruments=producer, song="Shirley Maclaine")}
+	${addAlbumPerf(release=lunch, person=[[person:Pat_Fish]], instruments=producer, song="Still & All")}
+	${addAlbumPerf(release=lunch, person=[[person:Pat_Fish]], instruments=producer, song="Monkeyface")}
+	${addAlbumPerf(release=lunch, person=[[person:Pat_Fish]], instruments=guitar\, keyboards\, percussion\, vocals)}
+
+	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=producer, song="Bakersfield")}
+	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=producer, song="Vodka Girls")}
+	${addAlbumPerf(release=lunch, person=[[person:Richard_Formby]], instruments=producer, song="President Chang")}
+
+	${addAlbumPerf(release=lunch, person=[[person:David_J.]], instruments=producer, song="Scarlett")}
+	${addAlbumPerf(release=lunch, person=[[person:David_J.]], instruments=producer, song="And Hospitals")}
+	${addAlbumPerf(release=lunch, person=[[person:David_J.]], instruments=producer, song="True Stories")}
+
+	${addAlbumPerf(release=lunch, person=[[person:David_Whittemore]], instruments=photography)}
+	${addAlbumPerf(release=lunch, person=[[person:L._J._Renfield]], instruments=photography)}
+	${addAlbumPerf(release=lunch, person=[[person:Mick_Mercer]], instruments=photography)}
 
 	${jbc_footer}
 #live	endif
 
 #define	sweet_water.html
 #live	if (getval(page) = sweet_water.html)
-	${mkHeader(section=albums, title=Sweet Water)}
+	${mkAlbumHeader(lookup=water, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/sweetwater_front.jpg"><img
-		alt="[album cover]" src="${jbc_images}/sweetwater_front_500.jpg"></a>
-	<a href="${jbc_images}/sweetwater_back.jpg"><img
-		alt="[album cover]" src="${jbc_images}/sweetwater_back_250.jpg"></a>
-	${a_media} ${SINGLE} from ${bus}
-	${a_label} ${creat}
-	${a_cat} PROC 1934
-	${a_dtreleased} 9 Sep 1993
-	${a_where} Australia
-	${det_end}
-	${tun_beg}
-	${sweet} (3:44)
-	${tun_end}
-	${lin_beg}
-	Auf vielfachen Wunsch haben wir uns entschlosses, "Sweet Water" aud dem
-	aktuellem Album ${bus} von The Jazz Butcher Conspiracy auszukoppeln.
-	<p>
-	Die Mannen um Pat Fish, Paradiesvogel der englischen Indie-Szene,
-	prasentieren mit "Sweet Water" einen absolut radiotauglichen Ohrwurm,
-	ganz im Zeichen des Pschedelic-Rock der 60er.  Viel SpaB!
-	${lin_end}
+	${clearAlbumPerf(release=water)}
+	${addAlbumPerf(release=water, ordinal=1, song="Sweet Water")}
+
+	${addAlbumPerf(release=water, instruments=Bass\, Voice, person=[[person:Dooj_Wilkinson]])}
+	${addAlbumPerf(release=water, instruments=Drums, person=[[person:Nick_Burson]])}
+	${addAlbumPerf(release=water, instruments=Guitar, person=[[person:Peter_Crouch]])}
+	${addAlbumPerf(release=water, instruments=Written-By\, Recorded By\, Guitar\, Keyboards\, Percussion\, Vocals, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=water, instruments=Guitar\, Producer\, Recorded By, person=[[person:Richard_Formby]])}
 
 	${jbc_footer}
 #live	endif
 
 #define	cake_city.html
 #live	if (getval(page) = cake_city.html)
-	${mkHeader(section=albums, title=Cake City)}
+	${mkAlbumHeader(lookup=cake, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${images}/cake_front.jpg"><img
-		src="${images}/cake_front_500.jpg"></a>
-	<a href="${images}/cake_back.jpg"><img
-		src="${images}/cake_back_250.jpg"></a>
-	<a href="${images}/cake_inside.jpg"><img
-		src="${images}/cake_inside_250.jpg"></a>
-	${a_media} ${COMP}, ${CD}
-	${a_dtreleased} 2001
-	${a_label} Vinyl Japan
-	${a_cat} ASKCD128
-#	${addAlbumPerf(release=cake, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=cake, person=[[person:Alastair_Indge]], instruments=photography)}
-#	${a_photo} ${mitch} ${indge}
-	${det_end}
-	${tun_beg}
-	${gf}<br />
-	${hour}<br />
-	${boy}<br />
-	${jungle}<br />
-	${who}<br />
-	${nada}<br />
-	${wheel}<br />
-	${wind}<br />
-	${kitten}<br />
-	${road}<br />
-	${wind}<br />
-	${city}<br />
-	${jane}<br />
-	${aff}<br />
-	${speed}<br />
-	${knock}<br />
-	${over}<br />
-	${mayi}<br />
-	${h2o}<br />
-	${tun_end}
-
-	${players_beg}
-	${fetchAlbumPersonnel(release=cake)}
-	${players_end}
-
-	${lin_beg}
-	In March 1985, when ${dj} joind ${rocket}, the Jazz Butcher Group introduced
-	their new bassist ${felix} to a hundred or so unconcerned punters in a conference
-	suite in a Northampton basement.
-	<p>
-	Soon after that night, promoted by ace photographer ${mitch} (who also happened
-	to be the Butcher's flatmate at the time), the Hand Of Hinc intervened, with the
-	result that the band swiftly grew accostomed to ceaseless touring, stumbling and
-	shouting their way across England, Germany, Holland, Sweden, Norway, Italy, Austria,
-	Switzerland and Spain.
-	<p>
-	Sometimes they would play two shows in the same evening.  Sometimes there was trouble
-	"Is he always like that?" was becoming something of a catch phrase.  It had reached the point where,
-	if he wasn't actually playing a show or making a record, the Butcher would spend his time shouting
-	at his long-suffering agent down the phone because, frankly, having "gone professional", he no
-	longer had anything else to do.
-	<p>
-	But the summer of 1985 was good to the JBC in a violent sort of way.  Despite the many injuries
-	sustained during the band's first brush with Spain, they were in high spirits.  Possibly they
-	thought they were indestructible.  (Given that at the time of writing they have just completed
-	their seventh US tour and their first club dates in Japan, perhaps they are.  We may never know).
-	<p>
-	So let us join our ungainly crew as they jet off one September Friday with a view to playing
-	a festival date in the south of Germany <a href="${jbc_gigs}/1985/Sep7.html">the following night.</a>
-	Having been met by their promoter,
-	a very small man in a very large Mercedes, the band are delighted to discover that the
-	festival is in a tiny Alpine village rejoicing in the locally typical but nonetheless
-	laughably quaint name of Trochtelfingen.
-	They drink like sailors and demand money with menaces from the promoter (successfully,
-	as it goes, poor mug!) before retiring in a polite and orderly fashion to their small,
-	charming, family-run village hotel.  Friday night in Schwaben.  No problem at all.
-	<p>
-	Saturday dawns bright and lovely.  The hotel is all abuzz, for there is to be a wedding.
-	The JBC nod and beam sweetly at the natives before leaving to do a lunchtime soundcheck
-	in a massive candy-striped tent in an Alpine meadow.  It is a fine, professional soundcheck,
-	it goes on for awhile, during which the band do not waste the opportunity to renew their
-	still fresh and passionate affair with German beer.
-	<p>
-	In the afternoon the band's German agent, Joachim, takes the JBC to the extraordinary
-	Schloss Liechtenstein nearby.  As they explore the mad fairy-tale castle perched high on a
-	cliff above the village, The Butcher and ${max} are faintly spooked while Felix beams, resplendent
-	in grey leather trousers, black shirt open to the waist and fake leopardskin jacket.
-	${owen} is nowhere to be seen, but those who are curious about his movements are
-	recommended to check out his recordings with his band Shakespeare And The Bible.
-	The posse sits and smokes thoughtfully under a huge and ancient tree outside the castle.
-	It is a peaceful and idyllic afternoon.  With beer.
-	<p>
-	In a disturbing prophetic photograph the JBC can be seen posing at the castle gates.
-	The Butcher is good-naturedly throttling his German agent, while ${kizzy} is
-	taking the opportunity to thrust his half-eaten Mars Bar into the singer's ear.
-	<p>
-	It is around teatime that the cracks begin to show.  Returning to the hotel, the JBC
-	discover a number of things and the number is four:
-	<br />1) The wedding party is in full swing in the restaurant.
-	<br />2) There is a trolley loaded with all manner of elaborate
-	German cakes just sitting there all on its own in the hall.
-	<br />3) The newlyweds have left their hotel room door open.
-	<br />4) Nobody is paying any attention to the JBC
-	<p>
-	Felix is straight into action.  Seeing that many of the cakes
-	have already been partially eaten, he figures that nobody is going to miss them, now.
-	With commendable foresight he decides to liberate a few of them for later in the evening, in case
-	anyone feels a bit peckish, like.  It is while stealthily concealing the cakes in Room 27 that he and
-	the Butch find the happy couple's door open.  Within minutes their bathroom is entirely stuffed
-	with the hotel's extensive collection of massive pot plants, with a large and elaborate model boat
-	awaiting any intrepid expolorer who makes it as far as the bathtub.
-	<p>
-	As the sun goes down the JBC slip discreetly from the hotel and up to the massive candy-striped tent.
-	Here all is rock and roll, although, with hindsight, the photographs do indicate that the stage
-	lights might have tended towards a possibly unnecessary shade of hot pink.  Still, the JBC
-	rock the tent, take the cash money and continue their research into the amount of
-	vodka that can be poured down the singer's throat.
-	<p>
-	The Butcher doesn't know it yet, but he has already eaten the last meat that will ever
-	pass his lips. As the band troop into a local restaurant for a well-earned dinner
-	the excitable singer spots a tank full of live crayfish.  "Uh-oh" he thinks, "Its' a
-	Which-One-Would-You-Like-Murdered-And-Delivered-To-Your-Plate Sir Scenario".
-	<p>
-	In a fit of well-meaning but spurious solidarity The Butcher joins Messrs Eider and Jones on the
-	vegetarian tip.  It later transpires that the crayfish are, in fact, house pets.  By
-	such misunderstandings do we change our lives.
-	<p>
-	Back at the hotel, all is quiet.  Sadly, it appears that the band has missed the shrieking
-	from the bridal suite.  The JBC gather for vodka and cake in Room 27.  The mood is satisfied,
-	peaceful. There is happy, animated conversation and none of it is about trashing hotel rooms.
-	Drinks and cakes are passed around.
-	<p>
-	There is no way of predicting the moment.  The Butcher is sitting on the floor,
-	leaning against Felix's bed enjoying a massive and particularly well-preserved
-	chocolate cake when in a moment of festal stupidity he makes the fatal mistake
-	of taking a tiny lump of chocolate and flicking it towards the lead guitarist.
-	In seconds Eider is upon him, seizing the cake and grinding it in its entirety into
-	the hapless Butcher's face forever.  It all goes off.
-	<p>
-	Remember: these are men who have had their whole lives in the shadow of the Cold War Bomb.
-	They understood concepts like "escalation" and "massive pre-emptive strike".  Within
-	minutes large areas of Room 27 are chocolate-plastered no-go zones and Eider finds himself
-	forcibly imprisioned in the bathroom, a wardrobe pushed up against the door for
-	added security.  He responds as any reasonable man would under the circumstances.
-	He riots.
-	<p>
-	Negotiations go on for some time before The Talented One succeeds in arguing his
-	way to freedom.  Sadly not for the first time European treaty is soon betrayed
-	and once again appaling cake abuse breaks out.  By now there is not a white surface
-	in the room.  Eventually the Konditoreisturmgruppe runs out of vodka and curls
-	up in the wreckage to sleep.
-	<p>
-	At an unusually early hour on Sunday morning the JBC are in the car park, loading
-	into the back of the van.  They move suprisingly quickly and silently for men in
-	their condition.  Kizzy and Mister Jones have spent the last half hour desperately stuffing
-	slick brown bedclothes into the wardrobe of Room 27.  As they make their final exit from
-	the hotel they pass a pair of young chamber maids heading in the opposite direction.
-	Just as they gain the lobby they hear a great and deeply comical shriek from upstairs.
-	<p>
-	The JBC bus goes tearing out of the car park, headed for Stuttgart Airport at some speed.
-	After some five or ten miles the band spot a German Police car on the road behind them.
-	Giggling hysteria is not far away as the tour manager puts on his best German accent
-	to announce: "Ja... we would like to have a word with you about some... cakes."
-	<p>
-	&copy;2001 ${pat}
-	${lin_end}
+	${clearAlbumPerf(release=cake)}
+	${addAlbumPerf(release=cake, type=Aside, ordinal=1, song="Girlfriend")}
+	${addAlbumPerf(release=cake, type=Aside, ordinal=2, song="Soul Happy Hour")}
+	${addAlbumPerf(release=cake, type=Aside, ordinal=3, song="What's The Matter Boy?")}
+	${addAlbumPerf(release=cake, type=Aside, ordinal=4, song="The Human Jungle")}
+	${addAlbumPerf(release=cake, type=Aside, ordinal=5, song="Who Loves You Now?")}
+	${addAlbumPerf(release=cake, type=Aside, ordinal=6, song="Nothing Special")}
+	${addAlbumPerf(release=cake, type=Aside, ordinal=7, song="Caroline Wheeler's Birthday Present")}
+	${addAlbumPerf(release=cake, type=Aside, ordinal=8, song="Big Bad Thing")}
+	${addAlbumPerf(release=cake, type=Aside, ordinal=9, song="Love Kittens")}
+	${addAlbumPerf(release=cake, type=Aside, ordinal=10, song="Roadrunner")}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=1, song="Big Old Wind")}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=2, song="City Of Night")}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=3, song="Sweet Jane")}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=4, song="Affection", version=CD only)}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=5, song="Speedy Gonzales", version=CD only)}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=6, song="Knocking On Heaven's Door")}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=7, song="Over You", version=CD only)}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=8, song="May I?", version=CD only)}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=9, song="Water", version=CD only)}
 
 	${jbc_footer}
 #live	endif
 
 #define	highest_in_the_land.html
 #live	if (getval(page) = highest_in_the_land.html)
-	${mkHeader(section=albums, title=The Highest in the Land)}
-	${beg_tabs}
-	${begTab(Details)}
+	${mkAlbumHeader(lookup=highest, body=${literalizeCommas()})}
 
-	${mkPurchase()}
+	${clearAlbumPerf(release=highest)}
+	${addAlbumPerf(release=highest, type=Aside, ordinal=1, "Melanie Hargreaves' Father's Jaguar")}
+	${addAlbumPerf(release=highest, type=Aside, ordinal=2, "Time")}
+	${addAlbumPerf(release=highest, type=Aside, ordinal=3, "Sea Madness")}
+	${addAlbumPerf(release=highest, type=Aside, ordinal=4, "Never Give Up")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=1, "Amalfi Coast May 1963")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=2, "Running On Fumes")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=3, "The Highest In The Land")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=4, "Sebastian's Medication")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=5, "Goodnight Sweetheart")}
 
-	${det_beg}
-	<a href="${jbc_images}/releases/highest.jpg"><img src="${jbc_images}/releases/highest_500.jpg"></a>
-	<br/>
-	<a href="/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_engl.pdf">Tapete Press release (EN)</a>
-	<br/>
-	<a href="/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_dt.pdf">Tapete Press release (DE)</a>
-	<br/>
-	${a_media} ${ALBUM}, ${CD}, ${LP}
-	${a_dtreleased} 2022-02-04
-	${a_label} Tapete Records
-	${det_end}
-
-	${tun_beg}
-	${melanie}</br>
-	${time}</br>
-	${madness}</br>
-	${never}</br>
-	${amalfi}</br>
-	${fumes}</br>
-	${thehighest}</br>
-	${sebastian}</br>
-	${goodnight}</br>
-	${tun_end}
-
-	${endTab}
-
-	${begTab(Gallery)}
-	<a href="${jbc_images}/2021_PressRelease_PatFish_PhilippeDufour.jpg"><img src="${jbc_images}/2021_PressRelease_PatFish_PhilippeDufour_500.jpg"></a> ${g_credit(g=Philippe Dufour)}
-	<br/>
-	<a href="${jbc_images}/2021_PressRelease_PatFish1_RuthTidmarsh.jpg"><img src="${jbc_images}/2021_PressRelease_PatFish1_RuthTidmarsh_500.jpg"></a> ${g_credit(g=\@PlanetruthPictures)}
-	<br/>
-	<a href="${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh.jpg"><img src="${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh_500.jpg"></a> ${g_credit(g=\@PlanetruthPictures)}
-	${endTab}
-
-	${end_tabs}
-
-	${mkAlbumPress(album=highest)}
+	${addAlbumPerf(release=highest, instruments=Bass Guitar\, Keyboards, person=[[person:Tim_Harries]])}
+	${addAlbumPerf(release=highest, instruments=Drums, person=[[person:Dave_Morgan]])}
+	${addAlbumPerf(release=highest, instruments=Electric Guitar, person=[[person:Joe Woolley]])}
+	${addAlbumPerf(release=highest, instruments=Electric Guitar, person=[[person:Max_Eider]])}
+	${addAlbumPerf(release=highest, instruments=Electric Guitar, person=[[person:Peter_Crouch]])}
+	${addAlbumPerf(release=highest, instruments=Electric Guitar, person=[[person:Stevie_Gordon]], song="Time")}
+	${addAlbumPerf(release=highest, instruments=Graphic Design, person=[[person:Kerstin_Holzwarth]])}
+	${addAlbumPerf(release=highest, instruments=Inner Sleeve Photography, person=[[person:Ruth_Tidmarsh]])}
+	${addAlbumPerf(release=highest, instruments=Sleeve Photography, person=[[person:Philippe_Dufour]])}
+	${addAlbumPerf(release=highest, instruments=Recorded By\, Mixed By\, Producer\, Guitar\, Keyboards\, Vibraphone\, Effects [Static], person=[[person:Lee_Russell]])}
+	${addAlbumPerf(release=highest, instruments=Songwriter\, Electric Guitar\, Voice, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=highest, instruments=Trumpet, person=[[person:Simon_Taylor]], song="Running On Fumes")}
+	${addAlbumPerf(release=highest, instruments=Voice, person=[[person:Joel_Harries]])}
 
 	${jbc_footer}
 #live	endif

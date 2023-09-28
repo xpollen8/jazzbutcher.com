@@ -1540,12 +1540,13 @@
 #define	albums[35]->lookup	water
 #define	albums[35]->onalbum	bus
 #define	albums[35]->label	creation_records
-#define	albums[35]->catalog	PROC 1934
-#define	albums[35]->country	Australia
+#define	albums[35]->catalog	PROC 1934 / SAMP 1934
+#define	albums[35]->country	Austria
 #define	albums[35]->href	${jbc_albums}/sweet_water.html
 #define	albums[35]->title	Sweet Water
 #define	albums[35]->thumb	/images/sweetwater_front
 #define	albums[35]->images	/images/sweetwater_back
+#define	albums[35]->studio	Woodhouse Studios\, Leeds
 #define	albums[35]->dtreleased	1993-09-13
 #define	albums[35]->blurb	
 #define	albums[35]->notes
@@ -2319,6 +2320,7 @@
     this product of disgusted, disappointed, dissipated and rotten souls.
     <div align="right">
     ;;Max Eider;;;;2000-04
+	</div>
 
 #define	albums[45]->type	compilation
 #define	albums[45]->lookup	cake
@@ -2326,7 +2328,7 @@
 #define	albums[45]->buy		https://www.amazon.com/Cake-City-Jazz-Butcher-Conspiracy/dp/B00005NE0Y
 #define	albums[45]->title	Cake City
 #define	albums[45]->label	Vinyl Japan
-#define	albums[45]->catalog	ASKCD128
+#define	albums[45]->catalog	ASKCD128/ASKLP128
 #define	albums[45]->thumb	/images/cake_front
 #define	albums[45]->images	/images/cake_back$$/images/cake_inside
 #define	albums[45]->blurb	Glass-era compilation.
@@ -3422,12 +3424,14 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[87]->href	${jbc_albums}/highest_in_the_land.html
 #define	albums[87]->label	Tapete Records
 #define	albums[87]->country	DE
-##define	albums[87]->catalog
+#define	albums[87]->catalog	TR492
 #define	albums[87]->title	The Highest in the Land
 #define	albums[87]->thumb	/images/releases/highest
 #define	albums[87]->images	/images/2021_PressRelease_PatFish_PhilippeDufour;;;;Philippe Dufar$$/images/2021_PressRelease_PatFish1_RuthTidmarsh;;;;PlanetruthPictures$$/images/2021_PressRelease_PatFish2_RuthTidmarsh;;;;PlanetruthPictures$$
 #define	albums[87]->downloads	/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_engl.pdf;;Tapete Press release (EN)$$/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_dt.pdf;;Tapete Press release (DE)
 #define	albums[87]->dtreleased	2022-02-04
+#define	albums[87]->dtrecorded	2021 Summer
+#define	albums[87]->studio	Dulcitone\, England
 #define	albums[87]->media	CD/LP/digital
 #define	albums[87]->blurb
 	It's not often that an artist gets to do a Bowie by consciously carving their personal epitaph into the grooves of their final LP. The Highest in the Land is that rarity of an album, and it could not have been made by a more brilliantly poetic and fearlessly sarcastic writer than Pat Fish, also known as The Jazz Butcher.

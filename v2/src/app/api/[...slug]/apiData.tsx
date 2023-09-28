@@ -119,7 +119,11 @@ const apiData = async (path: string, args?: string) => {
 				} else {
 					// multiple rows of album-wide credits for this person.
 					// concatentate the strings
-					//credits[cr.performer].album_credits += ', ' + cr.instruments;
+					if (credits[cr.performer].album_credits) {
+						credits[cr.performer].album_credits += ', ' + cr.instruments;
+					} else {
+						credits[cr.performer].album_credits = cr.instruments;
+					}
 				}
 			})
 			return {

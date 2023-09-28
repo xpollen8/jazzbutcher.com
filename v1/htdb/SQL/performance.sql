@@ -14,7 +14,7 @@ CREATE TABLE `performance` (
   `setnum` tinyint(3) unsigned DEFAULT NULL,
   `ordinal` tinyint(3) unsigned DEFAULT NULL,
   `song` varchar(50) DEFAULT NULL,
-  `version` varchar(50),
+  `version` varchar(100),
   `author` varchar(50) DEFAULT NULL,
   `instruments` varchar(200) DEFAULT NULL,
   `media` varchar(100) DEFAULT NULL,

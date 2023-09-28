@@ -7,10 +7,11 @@ import Tag from '@/components/Tag';
 import ImageStrip from '@/components/ImageStrip';
 import EmbedMedia from '@/components/EmbedMedia';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
+import { Attribution } from '@/components/GenericWeb';
 //import ReleaseBlurb from '@/components/ReleaseBlurb';
 import useLyric from '@/lib/useLyric';
 import useReleases from '@/lib/useReleases';
-import { truncAt, parseCaptionsSourcesEtc } from '@/lib/macros';
+import { truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/macros';
 
 /*
       project: '',
@@ -94,11 +95,18 @@ const FoundOn = (song: any, key: number, releases: any) => {
 
 const PatSays = (props: any) => {
 	const { pat_says } = props;
-	return (
-		<div key={props?.key}>
-			{pat_says}
-		</div>
-	)
+	const comments = parseCaptionsSourcesEtc(pat_says) || [];
+	return <>
+		<Tag>Pat Says</Tag>
+		{comments?.map((c: any, key: number) => {
+		const [ body, media_source, media_sourceurl, media_sourcedate ] = c;
+		return <blockquote key={key} className="annotation">
+			<div dangerouslySetInnerHTML={{ __html: body }} />
+			<br />
+			<Attribution g={media_source} u={media_sourceurl} d={media_sourcedate} />
+		</blockquote>
+	})}
+	</>
 }
 
 // TODO: 'annotated', 'is_instrumental', 'images'
@@ -145,8 +153,8 @@ const Lyric = ({ params }: { params?: any }) => {
 
 	const tabs = [
 			{ label: 'Lyrics', lookup: (song: any) => { return song?.lyrics }, func: Lyrics },
-			{ label: 'Found On', lookup: (song: any) => (song?.found_on), func: (song: any, key: number) => FoundOn(song, key, releases) },
 			{ label: 'Pat Says', lookup: (song: any) => (song?.pat_says), func: PatSays },
+			{ label: 'Found On', lookup: (song: any) => (song?.found_on), func: (song: any, key: number) => FoundOn(song, key, releases) },
 			{ label: 'Others Say', lookup: (song: any) => (song?.others_say), func: OthersSay },
 			{ label: 'Tablature', lookup: (song: any) => (song?.tablature), func: Tablature },
 			{ label: 'Live Stats', lookup: (song: any) => ({}), func: LiveStats },

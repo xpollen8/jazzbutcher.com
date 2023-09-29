@@ -27,24 +27,24 @@ const	FilterPresses = ({ project, type, album }: { project?: string, type?: stri
 	return <Suspense fallback=<>Loading...</> >
 		{(!isLoading && !releasesIsLoading && presses && releases) && <div className="listItem">
 			<LetterHeader title="Press Articles" />
-			<div className="flex flex-wrap gap-3 justify-center">
+			<div className="columns-2 gap-3 sm:columns-3 md:columns-4 xl:columns-6">
 				{presses
 					.map((item: any, key: number) => {
 						const thumb = truncAt(';;', item.thumb);
 						const album = (type === 'album') && releases.find((a: any) => {
 							return a.lookup === item.album
-							});
-						return (<div key={key} className="drop-shadow-sm">
+						});
+						return (<div key={key} className="group">
 							<InfoTag text={`${item.dtpublished?.substr(0, 10)}: ${item.type.replace(project, '').replace(',,', ',').replace(/^,/, '').replace(/,$/, '')}`}/>
-							<div style={{ maxWidth: '250px' }} className="outline outline-slate-300 drop-shadow-sm">
+							<div className="outline outline-slate-300 drop-shadow-sm">
 								<Link key={key} href={item.url}>
-									{(album) && <Image src={`https://jazzbutcher.com${album.thumb}_250.jpg`} width={250} height={250} alt="album cover" />}
-									{/*(thumb) && <Image src={`https://jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" />*/}
-									<div className="box-border h-4 w-60" />
-									<div className="mt-5 mx-2 p-1">
-										 <div className="font-bold">{item.publication}</div>
-										 <hr />
-										 <div dangerouslySetInnerHTML={{ __html: item.title }} />
+									{(album) && <Image className="w-full" src={`https://jazzbutcher.com${album.thumb}_250.jpg`} width={250} height={250} alt="album cover" />}
+									{(thumb) && <Image className="w-full" src={`https://jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" />}
+									<div className="mx-2">
+										<div className="box-border h-6" />
+										<div className="font-bold">{item.publication}</div>
+										{(item.publication && item.title) && <hr />}
+										<div dangerouslySetInnerHTML={{ __html: item.title }} />
 									</div>
 								</Link>
 							</div>

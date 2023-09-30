@@ -53,7 +53,6 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives' },
-	gig_reviews: { parent: 'press', title: 'Gig Reviews', inParentDirectory: true },
 	self_reviews: { parent: 'gigs', title: "Pat's Reviews", inParentDirectory: true },
 	fan_reviews: { parent: 'gigs', title: 'Fan Reviews', inParentDirectory: true },
 	posters: { parent: 'gigs', title: 'Posters', summary: 'Gig Ephemera', inParentDirectory: true },
@@ -66,6 +65,8 @@ const sections : { [key: string]: BreadCrumb } = {
 	help: { parent: 'jbc', title: 'Get Involved!', summary: "Let's do this, together" },
 
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "Early Fan Club issues" },
+	pat_album_reviews: { parent: 'writings', title: "Pat's albums reviews", summary: "Album opinions" },
+	pat_gig_reviews: { parent: 'writings', title: "Pat's gig reviews", summary: "Tour write-ups" },
 
 	audio: { parent: 'media', title: 'Audio' },
 	official: { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: true },
@@ -77,7 +78,9 @@ const sections : { [key: string]: BreadCrumb } = {
 	video: { parent: 'media', title: 'Video' },
 
 	press: { parent: 'media', title: 'Press', summary: "Published Articles" },
-	print_interviews: { parent: 'press', title: 'Printed Interviews', inParentDirectory: true },
+	printed_interviews: { parent: 'press', title: 'Interviews', inParentDirectory: true },
+	gig_reviews: { parent: 'press', title: 'Gig Reviews', inParentDirectory: true },
+	retrospectives: { parent: 'press', title: 'Retrospectives', inParentDirectory: true },
 	profiles: { parent: 'press', title: 'Profile Pieces', inParentDirectory: true },
 	announcements: { parent: 'press', title: 'Announcements', inParentDirectory: true },
 

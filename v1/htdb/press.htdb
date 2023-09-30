@@ -435,7 +435,7 @@ ${d}
 		dt=2015-04-20,
 		added=2023-09-20)}
 
-	${addPress(type=,
+	${addPress(type=profile,
 		url=${jbc_press}/20190526_press_creationrecords.html,
 		thumb=/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807,
 		publication=Creation Records,
@@ -2178,9 +2178,9 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=2005-05,
 		datetime=2005-04-14)}
 
-	${addPress(type=gig,
+	${addPress(type=gig,profile,
 		url=${jbc_press}/preshow_23Apr2000.html,
-		title=Brian Kelly write-up,
+		title=There's no such thing as 'Alternative Radio' anymore,
 		credit=Brian Kelly,
 		location=Minneapolis\, MN\, USA,
 		dt=2000-04-23,

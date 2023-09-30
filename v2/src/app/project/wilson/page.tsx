@@ -13,7 +13,7 @@ const Wilson = () =>
 			Pat provides an early history for his side-project Wilson
 		</MakeSimpleURI>
 		<FilterReleases project='wilson' />
-		<FilterPresses project='wilson' />
+		<FilterPresses title="Wilson Press" project='wilson' />
 	</main>
 	<Footer />
 </>

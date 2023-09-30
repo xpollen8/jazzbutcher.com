@@ -9,7 +9,7 @@ const Sumosonic = () =>
 	<Header project="sumo" section="sumosonic" />
 	<main>
 		<FilterReleases project="sumo" />
-		<FilterPresses project="sumo" />
+		<FilterPresses title="Sumosonic Press" project="sumo" />
 	</main>
 	<Footer />
 </>

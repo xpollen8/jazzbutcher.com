@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import usePresses from '@/lib/usePresses';
 import useReleases from '@/lib/useReleases';
-import { truncAt, parseYear, parseProject } from '@/lib/macros';
+import { truncAt, parseYear, parseProject, pressFiltersInclude } from '@/lib/macros';
 import InfoTag from '@/components/InfoTag';
 import LetterHeader from '@/components/LetterHeader';
 
@@ -19,14 +19,28 @@ export const filterPressByTypeProfile = (p: any, project?: string) => {
 	const type = 'profile';
 	const base = sortPress(filterPressProject(p, project));
 
-	return base?.filter((item: any) => (type) ? (item?.type?.split(',').includes(type)) : true);
+	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
+}
+
+export const filterPressByTypeBio = (p: any, project?: string) => {
+	const type = 'kit';
+	const base = sortPress(filterPressProject(p, project));
+
+	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
+}
+
+export const filterPressByTypePreshow = (p: any, project?: string) => {
+	const type = 'preshow';
+	const base = sortPress(filterPressProject(p, project));
+
+	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
 }
 
 export const filterPressByTypeXGigReview = (p: any, title: string, project?: string) => {
 	const type = 'gig';
 	const base = sortPress(filterPressProject(p, project));
 
-	return base?.filter((item: any) => (type) ? (item?.type?.split(',').includes(type) && item?.title?.includes(title)) : true);
+	return base?.filter((item: any) => (type) ? (pressFiltersInclude(item?.type, type) && item?.title?.includes(title)) : true);
 }
 
 export const filterPressByTypePatGigReview = (p: any, project?: string) => filterPressByTypeXGigReview(p, "Pat's Gig Review", project);
@@ -39,28 +53,28 @@ export const filterPressByTypeGigReview = (p: any, project?: string) => {
 	const noTitle = 'Punter Gig Review';
 	const base = sortPress(filterPressProject(p, project));
 
-	return base?.filter((item: any) => (type) ? (item?.type?.split(',').includes(type) && !item?.type?.split(',').includes(notType) && !item?.title.includes(noTitle)) : true);
+	return base?.filter((item: any) => (type) ? (pressFiltersInclude(item?.type, type) && !pressFiltersInclude(item?.type, notType) && !item?.title.includes(noTitle)) : true);
 }
 
 export const filterPressByTypeRetrospective = (p: any, project?: string) => {
 	const type = 'retrospective';
 	const base = sortPress(filterPressProject(p, project));
 
-	return base?.filter((item: any) => (type) ? item?.type?.split(',').includes(type) : true);
+	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
 }
 
 export const filterPressByTypeAlbumReview = (p: any, project?: string) => {
 	const type = 'album';
 	const base = sortPress(filterPressProject(p, project));
 
-	return base?.filter((item: any) => (type) ? item?.type?.split(',').includes(type) : true);
+	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
 }
 
 export const filterPressByTypeInterview = (p: any, project?: string) => {
 	const type = 'interview';
 	const base = sortPress(filterPressProject(p, project));
 
-	return base?.filter((item: any) => (type) ? item?.type?.split(',').includes(type) : true);
+	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
 }
 
 const AlbumCover = ({ album }: { album?: string }) => {

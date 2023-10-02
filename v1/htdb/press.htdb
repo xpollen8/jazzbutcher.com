@@ -79,7 +79,7 @@
 
 #define	extractPress(aux, body)
 	${mkPressHeader()}
-#live		if (defined(updateArticle))
+#live		if (defined(UA))
 <h1>update (pub:${${prefix}->url})</h1>
 #update press set body="${filterProgramArguments(${body})}" where url="${${prefix}->url}";
 #live	if (sql(z:update press set body="${filterProgramArguments(${body})}" where url="${${prefix}->url}"))
@@ -167,7 +167,7 @@
 #live					endif
 #live				endif
 #live			endif
-#live			if ((getval(types[${t}]) == gig) & (defined(${prefix}->datetime)))
+#live			if (((getval(types[${t}]) == gig) || (getval(types[${t}]) == preshow)) & (defined(${prefix}->datetime)))
 				<b style="margin: 3px; ">The associated Gig:</b>
 					<a href="${jbc_gigs}/${ts2URI(${${prefix}->datetime})}">
 						${substr(0, 10, ${${prefix}->datetime})}
@@ -262,7 +262,7 @@ ${d}
 #live					if (sql(x:update gig set extra=concat('interview,',extra) where extra not like '%%interview%%' and datetime='${fixDt(${datetime})}'))
 #live					endif
 #live				endif
-#live				if ((getval(type) == gig) & (defined(datetime)))
+#live				if (((getval(type) == gig) || (getval(type) == preshow)) & (defined(datetime)))
 #live					if (sql(x:update gig set extra=concat('press,',extra) where extra not like '%%press%%' and datetime = '${fixDt(${datetime})}'))
 #live					endif
 #live				endif
@@ -515,7 +515,7 @@ ${d}
 		dt=1983-06,
 		added=2018-04-01)}
 
-	${addPress(type=gig;interview,
+	${addPress(type=preshow;interview,
 		url=${jbc_press}/20170406_lastdaydeaf.html,
 		publication=Last Day Deaf,
 		thumb=/images/20170406/20170406_group;;Mat Wallis,
@@ -576,7 +576,7 @@ ${d}
 		source=https://twitter.com/raldarondo/status/1261354575413436423/photo/1,
 		added=2020-05-15)}
 
-	${addPress(type=gig;kit,
+	${addPress(type=preshow;kit,
 		url=${jbc_press}/19900308_press.html,
 		thumb=/images/19900308/19900308_poster;;Pierre Guillaume,
 		images=/images/19900308/19900308_press;;Pierre Guillaume,
@@ -585,7 +585,7 @@ ${d}
 		datetime=1990-03-08,
 		dt=1990-03-08)}
 
-	${addPress(type=gig;interview,
+	${addPress(type=preshow;interview,
 		url=${jbc_press}/19901109_press_guelph.html,
 		thumb=/images/19901109/19901109_press,
 		todo=OCR,
@@ -596,7 +596,7 @@ ${d}
 		datetime=1990-11-09,
 		dt=1990-11-09)}
 
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/19901105_press_minneapolis.html,
 		thumb=/images/19901105/19901105_press,
 		todo=OCR,
@@ -607,7 +607,7 @@ ${d}
 		datetime=1990-11-05,
 		dt=1990-11-05)}
 
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/19870210_press_BestOfRockNRollFolkMagazine.html,
 		thumb=/images/19870210/19870210_press_BestOfRockNRollFolkMagazine;;Pierre Guillaume,
 		publication=Best of Rock n Roll Folk Magazine,
@@ -616,7 +616,7 @@ ${d}
 		datetime=1987-02-10,
 		dt=1987-02-10)}
 
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/19930221_press_BestOfRockNRollFolkMagazine.html,
 		thumb=/images/19930221/19930221_press_BestOfRockNRollFolkMagazine;;Pierre Guillaume,
 		publication=Best of Rock n Roll Folk Magazine,
@@ -625,7 +625,7 @@ ${d}
 		datetime=1993-02-21 20:00:00,
 		dt=1993-02-21 20:00:00)}
 
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/19930216_press_LiberationNewspaper.html,
 		thumb=/images/19930216/19930216_press_LiberationNewspaper;;Pierre Guillaume,
 		publication=Liberation Newspaper,
@@ -634,7 +634,7 @@ ${d}
 		datetime=1993-02-16,
 		dt=1993-02-16)}
 
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/19931115_press_lEstRepublicainNewspaper.html,
 		thumb=/images/19931115/19931115_press_lEstRepublicainNewspaper;;Pierre Guillaume,
 		publication=l'Est Republicain Newspaper,
@@ -759,7 +759,7 @@ ${d}
 		dt=2022-02-15,
 		added=2023-09-22)}
 
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/20190918_press_popnews.html,
 		title=Visiting Jazz Butcher,
 		publication=Pop News,
@@ -780,7 +780,7 @@ ${d}
 		dt=2020-05-04,
 		added=2020-05-04)}
 
-	${addPress(type=gig;wilson,
+	${addPress(type=preshow;wilson,
 		url=${jbc_press}/20120907_wilson_northamptonchron.html,
 		publication=Northampton Chronicle,
 		credit=David Jackson,
@@ -802,7 +802,7 @@ ${d}
 		source=http://www.bbc.co.uk/print/northamptonshire/music/sounds/wilson.shtml,
 		dt=2003-09-16)}
 
-	${addPress(type=gig;kit;eg,
+	${addPress(type=preshow;kit;eg,
 		url=${jbc_press}/94eg.html,
 		thumb=/images/19940601/19940601_flyer,
 		title=A press release received from those slavic sensations BLACK EG,
@@ -1301,7 +1301,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=2000-05-03,
 		source=http://themadcapspeaks.squarespace.com/pat-fish-interview/)}
 
-	${addPress(type=gig;album, album=blue,
+	${addPress(type=preshow;album, album=blue,
 		url=${jbc_press}/19920501_washingtonpost.html,
 		credit=Mark Jenkins,
 		publication=The Washington Post,
@@ -1375,7 +1375,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=David Driscoll,
 		source=http://spiritsjournal.klwines.com/klwinescom-spirits-blog/2015/2/2/d2d-interview-pat-fish.html)}
 
-	${addPress(type=interview;gig,
+	${addPress(type=interview;preshow,
 		url=${jbc_press}/2014_louderthanwar.html,
 		source=http://louderthanwar.com/the-butch-is-back-the-return-of-the-jazz-butcher/,
 		thumb=/images/20140920/20140920_poster,
@@ -1435,7 +1435,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=UK,
 		dt=2001-08-08)}
 
-	${addPress(type=interview,
+	${addPress(type=interview,preshow,
 		url=${jbc_press}/interview_metrotimes_12Apr2000.html,
 		credit=Chris Handyside,
 		thumb=/images/20000412_metrotimes,
@@ -1495,7 +1495,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=UK,
 		dt=1990)}
 
-	${addPress(type=interview;gig,
+	${addPress(type=interview;preshow,
 		source=https://numerique.banq.qc.ca/patrimoine/details/52327/3722981,
 		url=${jbc_press}/19891111_press_latribune.html,
 		thumb=/images/19891111/19891111_press_latribune,
@@ -1510,7 +1510,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		summary=
 			Inconsequential short interview, translated)}
 
-	${addPress(type=interview;gig,
+	${addPress(type=interview;preshow,
 		url=${jbc_press}/milwaukee89.html,
 		publication=Kelly & Whittemore,
 		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
@@ -1556,7 +1556,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=UK,
 		dt=1988-12-03)}
 
-	${addPress(type=interview;gig,
+	${addPress(type=interview;preshow,
 		url=${jbc_press}/88newsletter.html,
 		publication=The Newsletter Vol1 #7,
 		images=/images/fishco2;;;;;;,
@@ -1566,7 +1566,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=1988-06-12,
 		dt=1988-07-16)}
 
-	${addPress(type=interview;gig,
+	${addPress(type=interview;profile,
 		url=${jbc_press}/19840526_nme.html,
 		source=https://perseverancevinylique.wordpress.com/2017/07/24/the-godlike-genius-of-pat-fish-the-jazz-butcher/pat1/,
 		credit=Bruce Dessau,
@@ -1624,7 +1624,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=1988-06-03,
 		dt=1988-06-03)}
 
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/19990923_press_villagevoice.html,
 		thumb=/images/19990923/19990923_press_villagevoice;;Pat Fish Notebook,
 		credit=Eddy,
@@ -1633,7 +1633,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=1999-09-23 20:00:00,
 		dt=1999-09-23)}
 
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/19990916_press_seattle_rocket.html,
 		thumb=/images/19990916/19990916_press_seattle_rocket;;Pat Fish Notebook,
 		credit=Tizzy Asher,
@@ -1642,7 +1642,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=1999-09-16,
 		dt=1999-09-15)}
 
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/19990916_press_seattle.html,
 		thumb=/images/19990916/19990916_press_seattle;;Pat Fish Notebook,
 		credit=Barara Mitchell,
@@ -1651,7 +1651,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=1999-09-16,
 		dt=1999-09-16)}
 
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/19990923_press_timeout.html,
 		thumb=/images/19990923/19990923_press_timeout,
 		todo=OCR,
@@ -1661,7 +1661,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=1999-09-23 20:00:00,
 		dt=1999-09-23)}
 
-	${addPress(type=gig,
+	${addPress(type=profile,
 		url=${jbc_press}/92rider.html,
 		thumb=/images/pat_party;;David Whittemore;;;;1989-12-20,
 		credit=Suzanne Lis,
@@ -1670,7 +1670,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=Bloomington\, IN\, USA,
 		dt=1992-05)}
 
-	${addPress(type=interview;gig,
+	${addPress(type=interview;preshow,
 		url=${jbc_press}/19920422_press_athensflagpole.html,
 		thumb=/images/19920422/19920422_press_athensflagpole,
 		credit=Hillary Meister,
@@ -1689,7 +1689,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=2003-10-16 22:00:00,
 		dt=2003-10-16)}
 
-	${addPress(type=kit,
+	${addPress(type=profile,
 		url=${jbc_press}/trouser.html,
 		credit=Altricia Gethers & Doug Brod,
 		thumb=/images/pat_plays;;DavidWhittemore,
@@ -2134,7 +2134,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Tour Report: Europe 1993,
 		dt=1993-08-30)}
 
-	${addPress(type=gig,
+	${addPress(type=profile,
 		url=${jbc_press}/94takeover.html,
 		publication=The Big Takeover Issue #34,
 		title=Excerpt from interview with the band Belly,
@@ -2154,12 +2154,14 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/2013_chickfactor.html,
 		source=http://www.chickfactor.com/the-jazz-butcher-live-by-jim-ruiz/,
 		publication=Chickfactor Magazine,
+		title=the jazz butcher:,
+		headline=live review by jim ruiz,
 		credit=Jim Ruiz,
 		datetime=2013-06-15,
 		location=Brooklyn\, NY\, USA,
-		dt=2013-06)}
+		dt=2013-06-22)}
 			
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/2005_Nightshift.html,
 		credit=Art Lagun,
 		source=http://nightshift.oxfordmusic.net/2005/may/may.pdf,
@@ -2186,7 +2188,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=2000-04-23,
 		datetime=2000-04-23)}
 			
-	${addPress(type=gig,
+	${addPress(type=preshow,
 		url=${jbc_press}/preshow_18Apr2000.html,
 		credit=John Petkovic,
 		publication=Cleveland Plain Dealer,
@@ -2195,7 +2197,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=2000-04-18,
 		datetime=2000-04-18)}
 			
-	${addPress(type=gig,
+	${addPress(type=preshow,profile,
 		url=${jbc_press}/article_metrotimes_12Apr2000.html,
 		credit=Chris Handyside,
 		thumb=/images/20000412_metrotimes,
@@ -2242,7 +2244,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=2019-10-11 19:30:00,
 		datetime=2019-10-11 19:30:00)}
 			
-	${addPress(type=gig,
+	${addPress(type=gig,profile,
 		url=${jbc_press}/97sfbg.html,
 		credit=Tim Quirk,
 		publication=San Francisco Bay Guardian,
@@ -2320,7 +2322,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=Italy,
 		dt=2016)}
 
-	${addPress(type=interview;gig,
+	${addPress(type=interview;preshow,
 		url=${jbc_press}/92toronto.html,
 		credit=Mike Stennis,
 		thumb=/images/19920509/19920509_press,
@@ -2330,7 +2332,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=1992-05,
 		datetime=1992-05-09)}
 			
-	${addPress(type=gig;interview,
+	${addPress(type=preshow;interview,
 		url=${jbc_press}/19920527_press_vancouverprovince.html,
 		thumb=/images/19920527/19920527_press_vancouverprovince,
 		credit=Tom Harrison,
@@ -2341,7 +2343,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=1992-05-27,
 		datetime=1992-05-27)}
 			
-	${addPress(type=gig;interview,
+	${addPress(type=preshow;interview,
 		url=${jbc_press}/92ottawa.html,
 		credit=Roch Parisien,
 		thumb=/images/19920507/19920507_press,
@@ -2351,7 +2353,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=1992-05-07,
 		datetime=1992-05-07)}
 			
-	${addPress(type=interview;gig, album=blue,
+	${addPress(type=interview;preshow, album=blue,
 		url=${jbc_press}/19920527_press_vancouversun.html,
 		credit=John Mackie,
 		thumb=/images/19920527/19920527_press_vancouversun,
@@ -2361,7 +2363,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=1992-05-27,
 		datetime=1992-05-27)}
 
-	${addPress(type=interview;gig,
+	${addPress(type=interview;preshow,
 		url=${jbc_press}/92montreal.html,
 		credit=Paul Wells,
 		thumb=/images/19920506/19920506_press,
@@ -2390,6 +2392,10 @@ subhead=(20 December 1957 – 5 October 2021),
 #define	pressHeading[album]->blurb	${tag_beg}Published Album Reviews ${tag_end}
 #define	pressHeading[gig]->tab	Gigs
 #define	pressHeading[gig]->blurb	${tag_beg}Published Gig Reviews ${tag_end}
+#define	pressHeading[preshow]->tab	Preshow
+#define	pressHeading[preshow]->blurb	${tag_beg}Pre-show announcements${tag_end}
+#define	pressHeading[profile]->tab	Profiles
+#define	pressHeading[profile]->blurb	${tag_beg}Band Profiles${tag_end}
 #define	pressHeading[pat]->tab	Pat
 #define	pressHeading[pat]->blurb	${tag_beg}The Butcher Writes..  ${tag_end}
 #define	pressHeading[wilson]->tab	Wilson
@@ -2504,6 +2510,9 @@ subhead=(20 December 1957 – 5 October 2021),
 		</blockquote>
 #live	endif
 
+#define	pressTemplate_preshow(prefix)	${pressTemplate_gig(prefix=${prefix})}
+#define	pressTemplate_profile(prefix)	${pressTemplate_gig(prefix=${prefix})}
+
 #define	pressTemplate_pat(prefix)
 	${pressTemplate_gig(${prefix})}
 
@@ -2583,7 +2592,9 @@ subhead=(20 December 1957 – 5 October 2021),
 	${doListPress(type=kit)}
 	${doListPress(type=album)}
 	${doListPress(type=gig)}
-	${doListPress(type=pat)}
+	${doListPress(type=preshow)}
+	${doListPress(type=profile)}
+#	${doListPress(type=pat)}
 	${doListPress(type=wilson)}
 	${doListPress(type=eg)}
 	${doListPress(type=sumo)}
@@ -3117,7 +3128,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	<p />
 	There's a pint-size revolution up there on stage tonight, andThe Jazz Butcher have it by the scruff of its reluctant neckand are shaking the hell out of it.
 	<p />
-	The Butcher himself hos been away for too long, and it's fineto welcome him bock — the original 'Mr Odd' in rose.tinted specs - with his tall tales and true, the stuff of plots hatched overendless cups of tea in shabby kitchens everywhere.
+	The Butcher himself has been away for too long, and it's fineto welcome him bock — the original 'Mr Odd' in rose.tinted specs - with his tall tales and true, the stuff of plots hatched overendless cups of tea in shabby kitchens everywhere.
 	<p />
 	The only others brave enough to milk the mundane
 	and discover those places where the quirks lurk are Momus

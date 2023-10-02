@@ -6,6 +6,7 @@ import { useEffect, useState, useTransition } from 'react';
 import { Suspense } from 'react';
 import Header from '@/components/Header';
 import PressItem from '@/components/PressItem';
+import { parseProject, pressFiltersInclude } from '@/lib/macros';
 
 import usePressesAdmin from '@/lib/usePressesAdmin';
 
@@ -21,13 +22,17 @@ const Press = (props: any) => {
 	const [pressID, setPressID] = useState(searchParams.get('pressID'));
 
 	const filters = [
-		{ name: 'interviews', func: (item: any) => { return item.type.includes('interview') } },
-		{ name: 'retrospectives', func: (item: any) => { return item.type.includes('retrospective') } },
-		{ name: 'album_reviews', func: (item: any) => { return item.type.includes('album') } },
-		{ name: 'gig_reviews', func: (item: any) => { return item.type.includes('gig') } },
-		{ name: 'wilson', func: (item: any) => { return item.type.includes('wilson') } },
-		{ name: 'sumo', func: (item: any) => { return item.type.includes('sumo') } },
-		{ name: 'eg', func: (item: any) => { return item.type.includes('eg') } },
+		{ name: 'interviews', func: (item: any) => filtersInclude(item.type, 'interview') && !item.url.includes('.mp3') },
+		{ name: 'audio_interviews', func: (item: any) => filtersInclude(item.type, 'interview') && item.url.includes('.mp3') },
+		{ name: 'retrospectives', func: (item: any) => filtersInclude(item.type, 'retrospective') },
+		{ name: 'album_reviews', func: (item: any) => filtersInclude(item.type, 'album') },
+		{ name: 'band_profiles', func: (item: any) => filtersInclude(item.type, 'profile') },
+		{ name: 'preshow_press', func: (item: any) => filtersInclude(item.type, 'preshow') },
+		{ name: 'gig_reviews', func: (item: any) => filtersInclude(item.type, 'gig') },
+		{ name: 'official_band_bios', func: (item: any) => filtersInclude(item.type, 'kit') },
+		{ name: 'wilson', func: (item: any) => filtersInclude(item.type, 'wilson') },
+		{ name: 'sumo', func: (item: any) => filtersInclude(item.type, 'sumo') },
+		{ name: 'eg', func: (item: any) => filtersInclude(item.type, 'eg') },
 		];
 
 	const filterRecord = (p: any) => {
@@ -79,7 +84,7 @@ const Press = (props: any) => {
 					{filters.map((f: any, key: number) =>
 						<div key={key}>
 							<label>{f.name}</label>:
-							<input type='checkbox' name={f.name} checked={filtersUsed.includes(f.name)} onChange={changeFilter} />
+							<input type='checkbox' name={f.name} checked={filtersInclude(filtersUsed, f.name)} onChange={changeFilter} />
 						</div>
 					)}
 					<hr />
@@ -93,7 +98,7 @@ const Press = (props: any) => {
 					>
 						<option key={-1} value={''}>-- choose --</option>
 						{presses?.map((p: any, key: number) => {
-							return <option key={key} value={p.press_id}>#{p.press_id} : {p.dtpublished.substr(0, 10)} : {p.title} : {p.publication}</option>
+							return <option key={key} value={p.press_id}>#{p.press_id} : {p.dtpublished.substr(0, 10)} : {parseProject(p.type)} {p.title} : {p.publication}</option>
 						})}
 					</select>
 					{(pressID) && (() => {

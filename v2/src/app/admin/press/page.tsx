@@ -22,17 +22,17 @@ const Press = (props: any) => {
 	const [pressID, setPressID] = useState(searchParams.get('pressID'));
 
 	const filters = [
-		{ name: 'interviews', func: (item: any) => filtersInclude(item.type, 'interview') && !item.url.includes('.mp3') },
-		{ name: 'audio_interviews', func: (item: any) => filtersInclude(item.type, 'interview') && item.url.includes('.mp3') },
-		{ name: 'retrospectives', func: (item: any) => filtersInclude(item.type, 'retrospective') },
-		{ name: 'album_reviews', func: (item: any) => filtersInclude(item.type, 'album') },
-		{ name: 'band_profiles', func: (item: any) => filtersInclude(item.type, 'profile') },
-		{ name: 'preshow_press', func: (item: any) => filtersInclude(item.type, 'preshow') },
-		{ name: 'gig_reviews', func: (item: any) => filtersInclude(item.type, 'gig') },
-		{ name: 'official_band_bios', func: (item: any) => filtersInclude(item.type, 'kit') },
-		{ name: 'wilson', func: (item: any) => filtersInclude(item.type, 'wilson') },
-		{ name: 'sumo', func: (item: any) => filtersInclude(item.type, 'sumo') },
-		{ name: 'eg', func: (item: any) => filtersInclude(item.type, 'eg') },
+		{ name: 'interviews', func: (item: any) => pressFiltersInclude(item.type, 'interview') && !item.url.includes('.mp3') },
+		{ name: 'audio_interviews', func: (item: any) => pressFiltersInclude(item.type, 'interview') && item.url.includes('.mp3') },
+		{ name: 'retrospectives', func: (item: any) => pressFiltersInclude(item.type, 'retrospective') },
+		{ name: 'album_reviews', func: (item: any) => pressFiltersInclude(item.type, 'album') },
+		{ name: 'band_profiles', func: (item: any) => pressFiltersInclude(item.type, 'profile') },
+		{ name: 'preshow_press', func: (item: any) => pressFiltersInclude(item.type, 'preshow') },
+		{ name: 'gig_reviews', func: (item: any) => pressFiltersInclude(item.type, 'gig') },
+		{ name: 'official_band_bios', func: (item: any) => pressFiltersInclude(item.type, 'kit') },
+		{ name: 'wilson', func: (item: any) => pressFiltersInclude(item.type, 'wilson') },
+		{ name: 'sumo', func: (item: any) => pressFiltersInclude(item.type, 'sumo') },
+		{ name: 'eg', func: (item: any) => pressFiltersInclude(item.type, 'eg') },
 		];
 
 	const filterRecord = (p: any) => {
@@ -84,7 +84,7 @@ const Press = (props: any) => {
 					{filters.map((f: any, key: number) =>
 						<div key={key}>
 							<label>{f.name}</label>:
-							<input type='checkbox' name={f.name} checked={filtersInclude(filtersUsed, f.name)} onChange={changeFilter} />
+							<input type='checkbox' name={f.name} checked={!!pressFiltersInclude(filtersUsed, f.name)} onChange={changeFilter} />
 						</div>
 					)}
 					<hr />

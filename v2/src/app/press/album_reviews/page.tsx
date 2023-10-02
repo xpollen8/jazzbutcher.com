@@ -1,13 +1,11 @@
-import Link from 'next/link';
-
 import Header from '@/components/Header';
-import FilterPresses from '@/components/FilterPresses';
+import FilterPresses, { filterPressByTypeAlbumReview } from '@/components/FilterPresses';
 
 const AlbumReviews = (props: any) => {
 	return (<>
 		<Header section='album_reviews' />
 		<main>
-			<FilterPresses type="album" />
+			<FilterPresses title='Album Reviews' showAlbum={true} filter={filterPressByTypeAlbumReview} />
 		</main>
 	</>)
 }

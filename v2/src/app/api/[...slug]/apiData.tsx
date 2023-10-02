@@ -80,6 +80,7 @@ const apiData = async (path: string, args?: string) => {
 		case 'credits_by_release':
 		case 'presses_by_release':
 		case 'press_by_href':
+		case 'presses_for_admin':
 		case 'lyrics':
 		case 'lyric_by_href':
 		case 'songs_by_datetime':

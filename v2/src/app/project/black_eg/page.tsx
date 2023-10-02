@@ -11,7 +11,7 @@ const EgAudio = () =>
 	<Header project='eg' section="black_eg" />
 	<main>
 		<FilterReleases project="eg" />
-		<FilterPresses project="eg" />
+		<FilterPresses title="Black Eg Press" project="eg" />
 		<AudioLive project='eg' />
 		<LetterHeader title="Unique black eg tracks" />
 		<div className="listItem">

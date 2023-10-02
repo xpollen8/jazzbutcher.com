@@ -238,9 +238,7 @@ const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.thumb || release?.images) {
 		const images = parseCaptionsSourcesEtc(`${release?.thumb}$$${release?.images}`);
 		if (images?.length) {
-			return (<>
-				<ImageStrip className="flex flex-wrap flex-grow border bg-slate-50 gap-3 justify-center p-1" images={images} />
-			</>)
+				return <ImageStrip className="flex flex-wrap flex-grow border bg-slate-50 gap-3 justify-center p-1" images={images} />
 		}
 	}
 }

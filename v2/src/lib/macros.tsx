@@ -643,4 +643,6 @@ export const parseGigExtras = (extra?: string) => extra?.split(',') || [];
 
 export const parseProject = (extra: string) => ['wilson','sumo','eg','solo','duo','nopat'].find((e: string) => parseGigExtras(extra).includes(e)) || '';
 
+export const pressFiltersInclude = (filters: string, f: string) => filters.split(',').find((s: string) => s === f);
+
 export { localDate, datesEqual, bannerGigs, linkSong, songLinkMapped, parseDomain, dateDisplay, dateDiff, autoLink, searchOptions, num2mon, mon2num, padZero, linkInternal, linkExternal, ts2URI, gigPage2Datetime, parseYear, parseDay, parseMonth }

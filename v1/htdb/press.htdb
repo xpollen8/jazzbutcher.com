@@ -1999,12 +1999,12 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=UK,
 		dt=1995-04-08)}
 
-	${addPress(type=album, album=sizteen_years,
+	${addPress(type=album, album=sixteen_years,
 		url=${jbc_press}/95creation.html,
 		publication=Creation Records,
 		dt=1995-03)}
 
-	${addPress(type=kit;album, album=sizteen_years,
+	${addPress(type=kit;album, album=sixteen_years,
 		url=${jbc_press}/95promo_16years.html,
 		credit=Vanessa Cotton at Creation,
 		publication=Creation Records,
@@ -6574,7 +6574,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	The Jazz Butcher Conspiracy, also known as Pat Fish, purveyor of some
 	of the most heavenly and enduring pop non-hits returns with a
 	blisteringly great new single available on 7" vinyl and CD. Entitled
-	${sizteen_years}, it finds the Jazz Butcher Conspiracy in fine fettle doing
+	${sixteen_years}, it finds the Jazz Butcher Conspiracy in fine fettle doing
 	their collective nut on behalf of Clause 4. Taken from the forthcoming
 	new album ${ill}.
 	<b><br />Released: March 6th 1995</b></I>.
@@ -6629,7 +6629,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	Alan McGee
 	</div>
 	<hr>
-	To follow up the release of the single ${sizteen_years}, The Jazz
+	To follow up the release of the single ${sixteen_years}, The Jazz
 	Butcher Conspiracy release a whole new album, ${ill}.
 	<p />
 	Release Date: April 3rd 1995

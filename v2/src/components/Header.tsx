@@ -82,7 +82,8 @@ const sections : { [key: string]: BreadCrumb } = {
 	gig_reviews: { parent: 'press', title: 'Gig Reviews', inParentDirectory: true },
 	retrospectives: { parent: 'press', title: 'Retrospectives', inParentDirectory: true },
 	profiles: { parent: 'press', title: 'Profile Pieces', inParentDirectory: true },
-	announcements: { parent: 'press', title: 'Announcements', inParentDirectory: true },
+	preshow: { parent: 'press', title: 'Pre-show Press', inParentDirectory: true },
+	bios: { parent: 'press', title: 'Band Bios', inParentDirectory: true },
 
 	news: { parent: 'media', title: 'News', summary: "Website announcements" },
 
@@ -94,9 +95,10 @@ const sections : { [key: string]: BreadCrumb } = {
 	black_eg: { parent: 'project', title: 'The Black Eg', summary: "1991-1994, 1999", inParentDirectory: true },
 	the_undertakers: { parent: 'project', title: 'The Undertakers', summary: '1995', inParentDirectory: true },
 	stranger_tractors: { parent: 'project', title: 'Stranger Tractors', summary: '1995', inParentDirectory: true, body: "Curtis E. Johnson, Pat Fish (Mr. Nasty)" },
+	'releases/va_canyoutalktothedude_2': { parent: 'project', title: "Four One & Only's", summary: '1996 - U.F.O. Man', inParentDirectory: false, },
 	sumosonic: { parent: 'project', title: 'Sumosonic', summary: "1996-1998", inParentDirectory: true },
 	wilson: { parent: 'project', title: 'Wilson', summary: "2001-2005, 2012", inParentDirectory: true },
-	alan_moore: { parent: 'project', title: 'Alan Moore', summary: '2011 - Trampling Tokyo', inParentDirectory: true },
+	'releases/trampling_tokyo': { parent: 'project', title: 'Alan Moore', summary: '2011 - Trampling Tokyo', inParentDirectory: false },
 	drones_club: { parent: 'project', title: 'Drones Club', summary: '2014-2021', inParentDirectory: true },
 	prime_evils: { parent: 'project', title: 'Prime Evils', inParentDirectory: true },
 	masters_of_budvar: { parent: 'project', title: 'The Masters of Budvar', inParentDirectory: true },

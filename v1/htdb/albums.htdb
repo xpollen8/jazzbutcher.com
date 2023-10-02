@@ -6758,3 +6758,15 @@ Previously available on the ${fishco} LP/CD.
 
 	${jbc_footer}
 #live	endif
+
+#define	trampling_tokyo.html
+#live	if (getval(page) == trampling_tokyo.html)
+	${mkAlbumHeader(lookup=trampling, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=trampling)}
+	${addAlbumPerf(release=trampling,  ordinal=12, song="Trampling Tokyo")}
+	${addAlbumPerf(release=trampling, person=[[person:Pat_Fish]], instruments=Guitar\, Keyboards)}
+	${addAlbumPerf(release=trampling, person=[[person:Alan_Moore]], instruments=Vocals)}
+
+	${jbc_footer}
+#live	endif

@@ -1628,6 +1628,7 @@ font.load().then(function () {
 #define	va_nh_vol1		${linkSingle(href=${jbc_albums}/va_call_northampton_vol1.html, title=VA: Now That's What I Call Northampton Vol #1)}
 #define	va_andy_2007	${linkSingle(href=${jbc_albums}/va_uncle_andy_christmas_2007.html, title=VA: Uncle Andy's 2007 Christmas Album)}
 
+#define	trampling_tokyo				Trampling Tokyo
 #
 #	recorded covers
 #

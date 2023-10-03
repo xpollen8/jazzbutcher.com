@@ -5576,7 +5576,7 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=welove, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=welove)}
-	${addAlbumPerf(release=welove, type=Aside, ordinal=1, song="We Love You", version=554 Mix)}
+	${addAlbumPerf(release=welove, type=Aside, ordinal=1, song="We Love You", version=554 Mix, media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/We_Love_You_554.mp3)}
 	${addAlbumPerf(release=welove, type=Aside, ordinal=2, song="We Love You", version=One For The Band)}
 	${addAlbumPerf(release=welove, type=Bside, ordinal=1, song="We Love You", version=The Great Awakening)}
 
@@ -6386,7 +6386,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=8, song="The Hairbrush And The Tank")}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=9, song="Thing", version=Hard 12er B-side)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=10, song="Rebecca Wants Her Bike Back", version=Angels 12er B-side)}
-	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=11, song="Almost Brooklyn", version=New Invention 12er B-side)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=11, song="Almost Brooklyn", version=New Invention 12er B-side, media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Almost_Brooklyn.mp3)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=12, song="May I", version=Speedy Gonzalez 7er B-side, media=/audio/JazzButcher_MayI.mp3)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=13, song="Affection", version=12er Version, media=/audio/JazzButcher_Affection.mp3)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=14, song="Over You", version=Speedy Gonzalez 7er B-side)}
@@ -6398,7 +6398,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=3, song="Angels", version=Live KCRW Session 1989)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=4, song="Bad Dream Lover", version=Live KCRW Session 1989)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=5, song="Burglar Of Love", version=Live KCRW Session 1989)}
-	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=6, song="Girl-Go", version=Live KCRW Session 1989)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=6, song="Girl-Go", version=Live KCRW Session 1989, media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Girl_Go_LA.mp3)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=7, song="Mr. Odd", version=Live KCRW Session 1989)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=8, song="The Jazz Butcher Meets the Prime Minister", version=Live KCRW Session 1989)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=9, song="Moscow Drug Club", version=Live KCRW Session 1989)}
@@ -6665,7 +6665,7 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=va_pensioners91, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=va_pensioners91)}
-	${addAlbumPerf(release=va_pensioners91, type=Bside, ordinal=5, song="Girl-Go", version=LA)}
+	${addAlbumPerf(release=va_pensioners91, type=Bside, ordinal=5, song="Girl-Go", version=LA, media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Girl_Go_LA.mp3)}
 
 	${jbc_footer}
 #live	endif
@@ -6676,7 +6676,7 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=va_summer, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=va_summer)}
-	${addAlbumPerf(release=va_summer, ordinal=4, song="Indian Summer")}
+	${addAlbumPerf(release=va_summer, ordinal=4, song="Indian Summer", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Indian_Summer.mp3)}
 	${addAlbumPerf(release=va_summer, person=[[person:Pat_Fish]], instruments=Guitar\, Keyboards\, Vocals)}
 
 	${jbc_footer}

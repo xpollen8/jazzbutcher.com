@@ -195,6 +195,14 @@
 		${pat}, ${stevenew}, ${simon}, Nick Bandy, Lee Brooks,
 		)},
 		with=${literalizeCommas(The Would-be-goods Two, Short Stories)},
+		photosets=
+		/images/20180728/20180728_antiJBC.jpg$$
+		/images/20180728/20180728_antiJBC2.jpg$$
+		/images/20180728/20180728_antiJBC5.jpg$$
+		/images/20180728/20180728_antiJBC6.jpg$$
+		/images/20180728/20180728_antiJBC7.jpg$$
+		/images/20180728/20180728_antiJBC8.jpg$$
+		Michael Whitworth;;https://www.flickr.com/photos/antisyzygy,
 	)}
 
 #define	Aug4_2100.html()

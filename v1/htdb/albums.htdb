@@ -6765,8 +6765,12 @@ Previously available on the ${fishco} LP/CD.
 
 	${clearAlbumPerf(release=trampling)}
 	${addAlbumPerf(release=trampling,  ordinal=12, song="Trampling Tokyo")}
-	${addAlbumPerf(release=trampling, person=[[person:Pat_Fish]], instruments=Guitar\, Keyboards)}
-	${addAlbumPerf(release=trampling, person=[[person:Alan_Moore]], instruments=Vocals)}
+	${addAlbumPerf(release=trampling, person=[[person:Alan_Moore]], instruments=Voice\, Words)}
+	${addAlbumPerf(release=trampling, person=[[person:Jill_Partington]], instruments=Drums)}
+	${addAlbumPerf(release=trampling, person=[[person:Michael_Holloway]], instruments=Bass)}
+	${addAlbumPerf(release=trampling, person=[[person:Tony_Tomblin]], instruments=Huge space guitar)}
+	${addAlbumPerf(release=trampling, person=[[person:Pat_Fish]], instruments=Guitar\, Organ\, Programming\, Voice\, Music)}
+	${addAlbumPerf(release=trampling, person=[[person:Kathie_McGinty]], instruments=Voice)}
 
 	${jbc_footer}
 #live	endif

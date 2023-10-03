@@ -1,5 +1,10 @@
 #define	extractThumb(str) ${truncAt(;;, ${str})}
 
+#define	parseAudio(prefix)
+#live	if (defined(${prefix}->audio))
+	${linkAudio(title=${literalizeCommas(${${prefix}->title} - ${mkPressDate(ts=${${prefix}->dt})})}, mp3=${truncAt(;;, ${${prefix}->audio})}, autolink=no)}
+#live	endif
+
 ## media=URL;;description;;credit;;credit_url;;credit_date$$....
 #define	parseMedia(prefix)
 #live	if (defined(${prefix}->media))
@@ -211,6 +216,7 @@
 
 	${parseThumbAndImages(prefix=${prefix})}
 	${parseMedia(prefix=${prefix})}
+	${parseAudio(prefix=${prefix})}
 
 #define	defIt(prefix, url, field, value)
 #live	if (define(${prefix}->${field}, ${value}))
@@ -304,6 +310,8 @@ ${d}
 #live			if (defIt(prefix=${pre}, url=${url}, field=subhead, value=${subhead}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=images, value=${images}))
+#live			endif
+#live			if (defIt(prefix=${pre}, url=${url}, field=audio, value=${audio}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=media, value=${media}))
 #live			endif

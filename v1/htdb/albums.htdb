@@ -2470,7 +2470,7 @@ Previously available on the ${fishco} LP/CD.
 #live	if (getval(page) = index.html)
 	${mkHeader(section=Releases)}
 
-#live	if (sort(-albums, year))
+#live	if (sort(-albums, dtreleased))
 #live	endif
 
 	${beg_tabs}
@@ -4621,30 +4621,11 @@ Previously available on the ${fishco} LP/CD.
 
 #define	pygmies.html
 #live	if (getval(page) = pygmies.html)
-	${mkHeader(section=albums, title=Christmas With The Pygmies)}
+	${mkAlbumHeader(lookup=swingin, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/cover_pygmies_front.jpg"><img
-		alt="[album cover]"
-		src="${jbc_images}/cover_pygmies_front_500.jpg"></a>
-	<a href="${jbc_images}/cover_pygmies_back.jpg"><img
-		alt="[album cover]"
-		src="${jbc_images}/cover_pygmies_back_250.jpg"></a>
-	${a_media} ${SINGLE}, ${7}
-	${a_dtreleased} 1985
-	${a_label} Glass
-	${a_cat} HMMM001
-	${a_note}
-	Special 1 Track Fan-Club Only Single given to Members of The Jazz Butcher Big Questions Fan Club as well as friends of the band. Same song on both sides.
-	${det_end}
-	${a-side_beg}
-	${pygmie}
-	${a-side_end}
-	${b-side_beg}
-	${pygmie}
-	${b-side_end}
-	${tun_end}
+	${clearAlbumPerf(release=swingin)}
+	${addAlbumPerf(release=swingin, type=Aside, ordinal=1, song="Christmas With The Pygmies", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Christmas_with_the_Pygmies.mp3)}
+	${addAlbumPerf(release=swingin, type=Bside, ordinal=1, song="Christmas With The Pygmies", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Christmas_with_the_Pygmies.mp3)}
 
 	${jbc_footer}
 #live	endif

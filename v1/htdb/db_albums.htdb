@@ -3463,6 +3463,8 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[90]->thumb	/images/releases/va_nh_vol1_front
 #define	albums[90]->images	/images/releases/va_nh_vol1_back
 #define	albums[90]->href	${jbc_albums}/va_call_northampton_vol1.html
+#define	albums[90]->label	Grass Roots Records
+#define	albums[90]->catalog	NN1 1AA
 #define	albums[90]->media	CD
 #define	albums[90]->title	VA: Now That's What I Call Northampton Vol #1
 #define	albums[90]->dtreleased	2010
@@ -3539,6 +3541,8 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[95]->contribution	trampling_tokyo
 #define	albums[95]->dtreleased	2011
 #define	albums[95]->video	https://youtube.com/embed/KEUAtWXPstQ
+#define	albums[95]->dtrecorded	1993 (Summer)
+#define	albums[95]->studio	Far Heath\, Northants
 #define	albums[95]->notes
 	The brilliant madness of Alan Moore meets the Sumosonic soul food of the ear courtesy of Pat Fish.  Kaiju Love song at it's best.
 

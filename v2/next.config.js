@@ -96,6 +96,11 @@ const nextConfig = {
 					permanent: false,
 				},
 				{
+					source: '/assets/:path*',
+					destination: 'https://s3.amazonaws.com/assets.jazzbutcher.com/:path*',
+					permanent: false,
+				},
+				{
 					source: '/api/v2/:path*',
 					destination: `${process.env.JBC_DATA_SERVER}/api/:path*`,
 					permanent: false,

@@ -163,33 +163,33 @@ textplus1 {
 	color: #fff;
 }
 .gig_sumo:before {
-	content: url(https://jazzbutcher.com/images/performance_sumo.png);
+	content: url(/images/performance_sumo.png);
 }
 .gig_jbc:before {
-	content: url(https://jazzbutcher.com/images/performance_jbc.png);
+	content: url(/images/performance_jbc.png);
 }
 .gig_eg {
 	background-color: #ddd;
 	margin-bottom: 3px;
 }
 .gig_eg:before {
-	content: url(https://jazzbutcher.com/images/performance_eg.png);
+	content: url(/images/performance_eg.png);
 }
 .gig_wilson:before {
-	content: url(https://jazzbutcher.com/images/performance_wilson.png);
+	content: url(/images/performance_wilson.png);
 }
 .gig_duo {
 	background-color: #0258bc;
 	margin-bottom: 3px;
 }
 .gig_duo:before {
-	content: url(https://jazzbutcher.com/images/performance_duo.png);
+	content: url(/images/performance_duo.png);
 }
 .gig_interview:before {
 	content: "Interview";
 }
 .gig_solo:before {
-	content: url(https://jazzbutcher.com/images/performance_solo.png);
+	content: url(/images/performance_solo.png);
 }
 .gig_tribute:before {
 	content: "Memorial gig";
@@ -204,7 +204,7 @@ textplus1 {
 	margin-bottom: 5px;
 }
 .gig_nopat:before {
-	content: url(https://jazzbutcher.com/images/performance_nopat.png);
+	content: url(/images/performance_nopat.png);
 }
 .gig_nopat {
 }
@@ -213,28 +213,28 @@ textplus1 {
 	margin-bottom: 3px;
 }
 .gig_institution:before {
-	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheInstitution/TheInstitution_logo.jpg);
+	content: url(/assets/projects/TheInstitution/TheInstitution_logo.jpg);
 }
 .gig_nightshift {
 	background-color: #d7d7d7;
 	margin-bottom: 3px;
 }
 .gig_nightshift:before {
-	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/Nightshift_Logo.gif);
+	content: url(/assets/projects/Nightshift/Nightshift_Logo.gif);
 }
 .gig_thetonix {
 	background-color: #000;
 	margin-bottom: 3px;
 }
 .gig_thetonix:before {
-	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheTonix/TheTonix_Logo.gif);
+	content: url(/assets/projects/TheTonix/TheTonix_Logo.gif);
 }
 .gig_sonictonix {
 	background-color: #ff0101;
 	margin-bottom: 3px;
 }
 .gig_sonictonix:before {
-	content: url(https://s3.amazonaws.com/assets.jazzbutcher.com/projects/SonicTonix/SonicTonix_Logo.gif);
+	content: url(/assets/projects/SonicTonix/SonicTonix_Logo.gif);
 }
 .gig_listing_poster {
 	text-align: center;
@@ -372,7 +372,7 @@ a {
 	line-height: 1.5;
 }
 body {
-	background-image: url(https://jazzbutcher.com/images/jbcback2.gif);
+	background-image: url(/images/jbcback2.gif);
 	background-attachment: fixed;
 	letter-spacing: 0.01em;
 	color: #444;

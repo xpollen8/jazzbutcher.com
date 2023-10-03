@@ -108,7 +108,6 @@ const GigPlay = ({ data }: any) => {
 			{/*console.log("Play", data)*/}
 			{/*data?.song} {data?.author*/}
 			<EmbedMedia data={data} />
-			{data?.comment}
 		</div>
 	)
 }

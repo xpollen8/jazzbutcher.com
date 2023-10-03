@@ -117,13 +117,11 @@ ${begTab(Media)}
 	${embedVideo(project=${project}, url=${mp4}, title=${caption})}
 #live	endif
 #live	if (defined(mp3))
-	${tag_beg}
 #live	if (defined(caption))
+	${tag_beg}
 	${caption}
-#live	else
-	30 Second Teaser
-#live	endif
 	${tag_end}
+#live	endif
 	<div class="listenItem"><blockquote>
 	${linkAudio(project=${project}, mp3=${mp3})}
 	</blockquote></div>
@@ -2081,7 +2079,7 @@ The town in question is South Windsor, CT.
 	, patsez=${literalizeCommas(
 		I love this one.  It has TONE.
 	)}
-	,mp3=${jbc_mp3}/girlsyes.mp3)}
+	,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Almost_Brooklyn.mp3)}
 #live	endif
 
 #define	goldfish.html

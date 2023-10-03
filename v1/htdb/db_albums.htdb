@@ -3160,6 +3160,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[73]->catalog	FIRECD460
 #define	albums[73]->title	The Wasted Years
 #define	albums[73]->thumb	/images/releases/fire_wasted
+#define	albums[73]->images /images/releases/fire_wasted/JazzButcherGroupBW1$$/images/releases/fire_wasted/JazzButcherGroupBW2$$/images/releases/fire_wasted/jazzbutcher-600;;The Red Bus$$
 #define	albums[73]->dtreleased	2017-10-20
 #define	albums[73]->media	4xCD
 #define	albums[73]->blurb

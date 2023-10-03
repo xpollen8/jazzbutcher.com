@@ -56,6 +56,11 @@ const	LyricVideo = ({ video }: any) => {
 	</div>;
 }
 
+const	LyricAudio = ({ mp3 }: any) => {
+	if (!mp3) return;
+	return <EmbedMedia data={{ mediaurl: mp3 }} />
+}
+
 const	LyricMedia = ({ media }: any) => {
 	if (!media) return;
 	const [ media_href, media_caption, media_source, media_sourceurl, media_sourcedate ] = parseCaptionsSourcesEtc(media) || [];
@@ -65,12 +70,13 @@ const	LyricMedia = ({ media }: any) => {
 const	LyricImages = ({ images }: any) => <ImageStrip className="drop-shadow-md imageStrip clear_float text-center" images={parseCaptionsSourcesEtc(images, true)} />;
 
 const Lyrics = (props: any) => {
-	const { video, media, images, lyrics, key } = props;
+	const { mp3, video, media, images, lyrics, key } = props;
 	return (
 		<blockquote key={key}>
 			<LyricVideo video={video} />
 			<LyricImages images={images} />
 			<LyricMedia media={media} />
+			<LyricAudio mp3={mp3} />
 			<div className="lyrics" dangerouslySetInnerHTML={{__html: lyrics?.replace(/<br\/>/g, '') }}/>
 			<div className="clear_float" />
 		</blockquote>
@@ -143,6 +149,15 @@ const Media = (props: any) => {
 	)
 }
 
+const Audio = (props: any) => {
+	const { audio } = props;
+	return (
+		<div key={props?.key}>
+			{audio}
+		</div>
+	)
+}
+
 
 const Lyric = ({ params }: { params?: any }) => {
 	const { data, isLoading, error } = useLyric(params?.slug);
@@ -159,6 +174,7 @@ const Lyric = ({ params }: { params?: any }) => {
 			{ label: 'Tablature', lookup: (song: any) => (song?.tablature), func: Tablature },
 			{ label: 'Live Stats', lookup: (song: any) => ({}), func: LiveStats },
 			{ label: 'Media', lookup: (song: any) => (song?.media), func: Media },
+			{ label: 'Audio', lookup: (song: any) => (song?.mp3), func: Audio },
 	];
 
 	return (<><Suspense fallback=<>Loading...</> >

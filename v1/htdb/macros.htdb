@@ -2257,7 +2257,9 @@ ${_d[3]}
 #live		if (getval(${pr}->mediaurl) == mp3)
 				<div class="listenItem">
 					<blockquote>
+#live				if (getnum(${pr}->ordinal) > 0)
 						<span class="listenItemOrdinal">${${pr}->ordinal}.</span>
+#live				endif
 						${linkAudio(title=${literalizeCommas(${${pr}->song})}, mp3=${${pr}->mediaurl}, author=${${pr}->author}, comment=${literalizeCommas(${${pr}->comment})})}
 #live			if (getval(${pr}->mediacredit))
 					${g_credit(g=${${pr}->mediacredit}, u=${${pr}->mediacrediturl})}

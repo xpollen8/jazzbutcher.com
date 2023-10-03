@@ -6783,7 +6783,7 @@ I haven't got a mind at all.
 		onlist=
 		swingin,
 		caption=Christmas With The Pygmies,
-		mp3=${jbc_audio}/JazzButcher_ChristmasWithThePygmies.mp3
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Christmas_with_the_Pygmies.mp3
 	)}
 #live	endif
 

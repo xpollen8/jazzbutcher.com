@@ -1,10 +1,6 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Tag from '@/components/Tag';
-
-import { Credit } from '@/components/GenericWeb';
+import PhotoSet from '@/components/PhotoSet';
 
 const whittemore_setlists = [
 	{ src: "/images/19860724/19860724_notebook_setlist.jpg", alt: "notebook" },
@@ -36,23 +32,6 @@ const whittemore_miracles = [
 const duval = [
 	{ src: "/assets/images/notebooks/notebook_lyrics_sister_death.jpg", alt: "sister death lyrics", credit: 'Jimmy Duval', credit_date: '2022-08-20', body: "I just received these handwritten lyrics from Mr. Curtis E Johnson himself!" }
 ];
-
-const PhotoSet = ({ title, photos }: { title: string, photos: any[] }) => <>
-	<Tag> {title} </Tag>
-	<div className="flex flex-wrap justify-center gap-3 listItem">
-		{photos.map((w: any, key: number) => {
-			const { src, alt, credit, credit_url, credit_date, body } = w;
-			const [ part, ext ] = src.split('.');
-			return <div className="p-1 drop-shadow-sm border border-slate-500 text-center w-64">
-				<Link href={src}><Image key={key} unoptimized src={`${part}_250.${ext}`} width={250} height={250} alt={alt} /></Link>
-				<br/>
-				{alt}
-				{(body) && <><p />&quot;<i>{body}</i>&quot;</>}
-				{(credit) && <><br /><Credit g={credit} u={credit_url} d={credit_date} /></>}
-			</div>
-		})}
-	</div>
-</>
 
 const Notebooks = () => {
 	return (<>

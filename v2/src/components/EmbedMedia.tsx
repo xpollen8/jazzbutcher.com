@@ -154,12 +154,12 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 						</EmbedSoundCloud>
 					</>
 				} else if (useMediaurl?.includes('.mp3')) {
-					return (<blockquote className="listenItem drop-shadow-md">
-						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
+					return (<div className="listenItem drop-shadow-md">
+						{(ordinal > 0) && <span className="listenItemOrdinal">{ordinal}.</span>}
 						<LinkAudio parent={parent} autolink={autolink} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} />
 						{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 						{children}
-					</blockquote>)
+					</div>)
 				} else {
 					return (<>
 						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}

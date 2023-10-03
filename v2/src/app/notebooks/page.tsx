@@ -41,9 +41,9 @@ const Notebooks = () => {
 		<hr />
 		<PhotoSet title='Jimmy Duval' photos={duval} />
 		<hr />
-		<PhotoSet title='Whittemore - setlist scans' photos={whittemore_setlists} />
+		<PhotoSet title='Whittemore - setlist scans' photos={whittemore_setlists} credit="David Whittemore" />
 		<hr />
-		<PhotoSet title='Whittemore  - proposed for use in Miracles and Wonders' photos={whittemore_miracles} />
+		<PhotoSet title='Whittemore  - proposed for use in Miracles and Wonders' photos={whittemore_miracles} credit="David Whittemore" credit_date="2022-02-22" />
 		</main>
 		<Footer />
 	</>)

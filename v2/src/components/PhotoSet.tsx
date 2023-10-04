@@ -5,7 +5,7 @@ import Tag from '@/components/Tag';
 import { Credit } from '@/components/GenericWeb';
 
 const PhotoSet = ({ title, photos, description, credit, credit_url, credit_date }: {
-	title: string, photos: any[], description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string
+	title?: string, photos: any[], description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string
 }) => <>
 	{(title) && <Tag> {title} </Tag>}
 	{(description) && <blockquote>{description}</blockquote>}

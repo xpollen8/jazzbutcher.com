@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import FilterReleases from '@/components/FilterReleases';
 import FilterPresses from '@/components/FilterPresses';
+import AudioReleases from '@/components/AudioReleases';
 
 const Wilson = () => 
 <>
@@ -13,6 +14,7 @@ const Wilson = () =>
 			Pat provides an early history for his side-project Wilson
 		</MakeSimpleURI>
 		<FilterReleases project='wilson' />
+		<AudioReleases project='wilson' />
 		<FilterPresses title="Wilson Press" project='wilson' />
 	</main>
 	<Footer />

@@ -6156,9 +6156,9 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=spacemen, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=spacemen)}
-	${addAlbumPerf(release=spacemen, ordinal=1, song="Come\, Friendly Spacemen", project=sumosonic)}
-	${addAlbumPerf(release=spacemen, ordinal=2, song="Monks Of Kung Fu", project=sumosonic)}
-	${addAlbumPerf(release=spacemen, ordinal=3, song="Come\, Friendly Spacemen", version=version, project=sumosonic)}
+	${addAlbumPerf(release=spacemen, ordinal=1, song="Come\, Friendly Spacemen", project=sumo)}
+	${addAlbumPerf(release=spacemen, ordinal=2, song="Monks Of Kung Fu", project=sumo)}
+	${addAlbumPerf(release=spacemen, ordinal=3, song="Come\, Friendly Spacemen", version=version, project=sumo)}
 
 	${jbc_footer}
 #live	endif
@@ -6168,10 +6168,10 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=spacemen12, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=spacemen12)}
-	${addAlbumPerf(release=spacemen12, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", version=version, project=sumosonic)}
-	${addAlbumPerf(release=spacemen12, type=Aside, ordinal=2, song="Come\, Friendly Spacemen", version=Jackson Hole Remix, project=sumosonic)}
-	${addAlbumPerf(release=spacemen12, type=Bside, ordinal=1, song="Monks Of Kung Fu", project=sumosonic)}
-	${addAlbumPerf(release=spacemen12, type=Bside, ordinal=2, song="Come\, Friendly Spacemen", version=Sushi Remix, project=sumosonic)}
+	${addAlbumPerf(release=spacemen12, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", version=version, project=sumo)}
+	${addAlbumPerf(release=spacemen12, type=Aside, ordinal=2, song="Come\, Friendly Spacemen", version=Jackson Hole Remix, project=sumo)}
+	${addAlbumPerf(release=spacemen12, type=Bside, ordinal=1, song="Monks Of Kung Fu", project=sumo)}
+	${addAlbumPerf(release=spacemen12, type=Bside, ordinal=2, song="Come\, Friendly Spacemen", version=Sushi Remix, project=sumo)}
 
 	${jbc_footer}
 #live	endif
@@ -6181,17 +6181,17 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=thisissumo, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=thisissumo)}
-	${addAlbumPerf(release=thisissumo, ordinal=1, song="Come\, Friendly Spacemen", project=sumosonic)}
-	${addAlbumPerf(release=thisissumo, ordinal=2, song="God's Green Earth", project=sumosonic)}
-	${addAlbumPerf(release=thisissumo, ordinal=3, song="Fern Schnell Gut", project=sumosonic)}
-	${addAlbumPerf(release=thisissumo, ordinal=4, song="Cat's Life", project=sumosonic)}
-	${addAlbumPerf(release=thisissumo, ordinal=5, song="Everything Is Wonderful", project=sumosonic)}
-	${addAlbumPerf(release=thisissumo, ordinal=6, song="Stupid", project=sumosonic)}
-	${addAlbumPerf(release=thisissumo, ordinal=7, song="Destroy All Monsters", project=sumosonic)}
-	${addAlbumPerf(release=thisissumo, ordinal=8, song="Radio Saigon", project=sumosonic)}
-	${addAlbumPerf(release=thisissumo, ordinal=9, song="Business And Work", project=sumosonic)}
-	${addAlbumPerf(release=thisissumo, ordinal=10, song="Monks Of Kung Fu", project=sumosonic)}
-	${addAlbumPerf(release=thisissumo, ordinal=11, song="Sputnik", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=1, song="Come\, Friendly Spacemen", project=sumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=2, song="God's Green Earth", project=sumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=3, song="Fern Schnell Gut", project=sumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=4, song="Cat's Life", project=sumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=5, song="Everything Is Wonderful", project=sumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=6, song="Stupid", project=sumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=7, song="Destroy All Monsters", project=sumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=8, song="Radio Saigon", project=sumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=9, song="Business And Work", project=sumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=10, song="Monks Of Kung Fu", project=sumo)}
+	${addAlbumPerf(release=thisissumo, ordinal=11, song="Sputnik", project=sumo)}
 
 	${addAlbumPerf(release=thisissumo, person=[[person:Mister_B]], aka="[[person:Ian_Botterill]]", instruments=vocalist)}
 	${addAlbumPerf(release=thisissumo, person=[[person:Kathie_M]], aka="[[person:Kathie_McGinty]]", instruments=vocalist)}

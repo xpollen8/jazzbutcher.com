@@ -67,7 +67,7 @@ const Institution = () =>
 		<PhotoSet photos={images_vinyl} title="The 'Jane and Jon'/'Stephanie' single" />
 		<blockquote className="listItem">
 			<blockquote>
-			{single.map((data: any, key: number) => <EmbedMedia key={key} data={data} children=<blockquote>{data?.children}</blockquote> />)}
+			{single.map((data: any, key: number) => <EmbedMedia key={key} data={data} > <blockquote>{data?.children}</blockquote> </EmbedMedia>)}
 			</blockquote>
 			<code>
 			<br />	https://www.discogs.com/release/5338218-The-Institution-Jane-And-Jon
@@ -96,9 +96,9 @@ const Institution = () =>
 		<Tag>Demo Tracks</Tag>
 		<blockquote className="listItem">
 			<blockquote>
-				{unknown_demo_tracks.map((data: any, key: number) => <EmbedMedia key={key} data={data} children=<blockquote>{data?.children}</blockquote> />)}
+				{unknown_demo_tracks.map((data: any, key: number) => <EmbedMedia key={key} data={data} > <blockquote>{data?.children}</blockquote> </EmbedMedia>)}
 				<hr />
-				{stephenson_demo_tracks.map((data: any, key: number) => <EmbedMedia key={key} data={data} children=<blockquote>{data?.children}</blockquote> />)}
+				{stephenson_demo_tracks.map((data: any, key: number) => <EmbedMedia key={key} data={data} > <blockquote>{data?.children}</blockquote> </EmbedMedia>)}
 			</blockquote>
 		</blockquote>
 	</main>

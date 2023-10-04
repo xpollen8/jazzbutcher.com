@@ -9,19 +9,25 @@ const snow1 = [
 	{ src: "/assets/projects/Nightshift/Nightshift_PhilipSnow_Frampton.jpg", alt: "Pat as Frampton", credit: "Philip Snow" },
 ];
 
+const snow2 = [
+	{ src: "/assets/projects/Nightshift/N2.jpg", alt: "inst 1" },
+	{ src: "/assets/projects/Nightshift/N13.jpg", alt: "inst 2" },
+	{ src: "/assets/projects/Nightshift/N54.jpg", alt: "inst 3" },
+	{ src: "/assets/projects/Nightshift/N55.jpg", alt: "inst 4" },
+];
+
+const silver = [
+	{ src: "/assets/projects/Nightshift/Nightshift_20220516_Facebook_JohnSilver.jpg", alt: "facebook scan" },
+];
+
 const Nightshift = () => 
 <>
 	<Header section="nightshift" />
 	<div className="gig_nightshift" />
 	<main>
 		<PhotoSet title="Nightshift Art + Pat pics circa 1976-1978" credit="James Duval" credit_date="2021-05-17" photos={snow1} description="From 'Miracles and Wonders'" />
-		<hr />
-		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/Nightshift_20220516_Facebook_JohnSilver.png" width={500} height={500} alt="facebook scan" />
-		<hr/>
-		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/N2.jpg" width={500} height={500} alt="inst 1" />
-		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/N13.jpg" width={500} height={500} alt="inst 2" />
-		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/N54.jpg" width={500} height={500} alt="inst 3" />
-		<Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Nightshift/N55.jpg" width={500} height={500} alt="inst 4" />
+		<PhotoSet title="Pat's notebooks" credit="Philip Snow" photos={snow2} description="From 'Miracles and Wonders'" />
+		<PhotoSet title="Facebook posting" credit="John Silver" photos={silver} />
 	</main>
 	<Footer />
 </>

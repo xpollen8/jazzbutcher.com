@@ -393,6 +393,24 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,18,'Mind Like A
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,19,'I\'m Waiting For My Man','Velvet Underground',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-02-14 00:00:00','set',1,1,'Hard',NULL,NULL,NULL,'https://www.youtube.com/embed/UOdLYoPOAkc',NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,0,'The Entire Performance',NULL,"Audio recording live concert sourced from the audience. 96kHz FLAC available",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19850705/19850705_JazzButcher_Barcelona_FLAC.mp3','Ramón Piserra',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,1,"Bath Of Bacon",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,2,"Bigfoot Motel",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,3,"Girlfriend",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,4,"Walk With The Devil",NULL,"nice and long jam version",NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,5,"Soul Happy Hour",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,6,"Real Men",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,7,"Only A Rumour",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,8,"Caroline Wheeler's Birthday Present",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,9,"Rain",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,10,"What's The Matter, Boy?",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,11,"I Need Meat",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,12,"Southern Mark Smith",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,13,"Partytime",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,14,"Zombie Love",NULL,"crazy middle section",NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',2,1,"Speedy Gonzales","Hess, Kaye, Lee",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',2,2,"Roadrunner","Jonathan Richman",NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',1,0,'The Entire Performance',NULL,"Pat Fish solo set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_PatFish_Hamburg.mp3','Owen Jones',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',2,0,'The Entire Performance',NULL,"Owen Jones set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_OwenJones_Hamburg.mp3','Owen Jones',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',3,0,'The Entire Performance',NULL,"Max Eider set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_MaxEider_Hamburg.mp3','Owen Jones',NULL);

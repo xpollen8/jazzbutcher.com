@@ -199,10 +199,10 @@ ${define(lastPer, ${ap[${api}]->performer})}
 #live		endif
 #live	endif
 
-#define	addAlbumPerf(release, person, aka=NULL, instruments, song=NULL, ordinal=NULL, type=set, datetime, media=NULL, author=NULL, version, variant)
+#define	addAlbumPerf(release, person, category=release, aka=NULL, instruments, song=NULL, ordinal=NULL, type=set, datetime, media=NULL, author=NULL, version, variant, project)
 #live	if (defined(UA))
-#insert into performance set lookup="${release}", category="release", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal="${ordinal}", song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}";
-#live		if (sql(insert into performance set lookup="${release}", category="release", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal="${ordinal}", song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}"))
+#insert into performance set lookup="${release}", category="${category}", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal="${ordinal}", song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}";
+#live		if (sql(insert into performance set lookup="${release}", category="release", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal="${ordinal}", song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}", project="${project}"))
 #live		endif
 #live	endif
 
@@ -5848,18 +5848,18 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=damn, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=damn)}
-	${addAlbumPerf(release=damn, type=Aside, ordinal=1, song="Just Vincent")}
-	${addAlbumPerf(release=damn, type=Aside, ordinal=2, song="British Gas Makes It Alright")}
-	${addAlbumPerf(release=damn, type=Aside, ordinal=3, song="The Good\, The Bad And The Ugly")}
-	${addAlbumPerf(release=damn, type=Aside, ordinal=4, song="Get A Job")}
-	${addAlbumPerf(release=damn, type=Aside, ordinal=5, song="My Radio")}
-	${addAlbumPerf(release=damn, type=Bside, ordinal=1, song="The Mi-Lai Hotel")}
-	${addAlbumPerf(release=damn, type=Bside, ordinal=2, song="African Disease")}
-	${addAlbumPerf(release=damn, type=Bside, ordinal=3, song="Drugs")}
-	${addAlbumPerf(release=damn, type=Bside, ordinal=4, song="Monster Man")}
-	${addAlbumPerf(release=damn, type=Bside, ordinal=5, song="Jesus Right Now")}
-	${addAlbumPerf(release=damn, type=Bside, ordinal=6, song="The Twilight Zone")}
-	${addAlbumPerf(release=damn, type=Bside, ordinal=7, song="So Easy (No New York)")}
+	${addAlbumPerf(release=damn, type=Aside, ordinal=1, song="Just Vincent", project=eg)}
+	${addAlbumPerf(release=damn, type=Aside, ordinal=2, song="British Gas Makes It Alright", project=eg)}
+	${addAlbumPerf(release=damn, type=Aside, ordinal=3, song="The Good\, The Bad And The Ugly", project=eg)}
+	${addAlbumPerf(release=damn, type=Aside, ordinal=4, song="Get A Job", project=eg)}
+	${addAlbumPerf(release=damn, type=Aside, ordinal=5, song="My Radio", project=eg)}
+	${addAlbumPerf(release=damn, type=Bside, ordinal=1, song="The Mi-Lai Hotel", project=eg)}
+	${addAlbumPerf(release=damn, type=Bside, ordinal=2, song="African Disease", project=eg)}
+	${addAlbumPerf(release=damn, type=Bside, ordinal=3, song="Drugs", project=eg)}
+	${addAlbumPerf(release=damn, type=Bside, ordinal=4, song="Monster Man", project=eg)}
+	${addAlbumPerf(release=damn, type=Bside, ordinal=5, song="Jesus Right Now", project=eg)}
+	${addAlbumPerf(release=damn, type=Bside, ordinal=6, song="The Twilight Zone", project=eg)}
+	${addAlbumPerf(release=damn, type=Bside, ordinal=7, song="So Easy (No New York)", project=eg)}
 
 	${addAlbumPerf(release=damn, instruments=Artwork, person=[[act:AMP_Art]])}
 	${addAlbumPerf(release=damn, instruments=Fish Artwork, person=[[person:J._Berry]])}
@@ -6156,9 +6156,9 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=spacemen, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=spacemen)}
-	${addAlbumPerf(release=spacemen, ordinal=1, song="Come\, Friendly Spacemen")}
-	${addAlbumPerf(release=spacemen, ordinal=2, song="Monks Of Kung Fu")}
-	${addAlbumPerf(release=spacemen, ordinal=3, song="Come\, Friendly Spacemen", version=version)}
+	${addAlbumPerf(release=spacemen, ordinal=1, song="Come\, Friendly Spacemen", project=sumosonic)}
+	${addAlbumPerf(release=spacemen, ordinal=2, song="Monks Of Kung Fu", project=sumosonic)}
+	${addAlbumPerf(release=spacemen, ordinal=3, song="Come\, Friendly Spacemen", version=version, project=sumosonic)}
 
 	${jbc_footer}
 #live	endif
@@ -6168,10 +6168,10 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=spacemen12, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=spacemen12)}
-	${addAlbumPerf(release=spacemen12, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", version=version)}
-	${addAlbumPerf(release=spacemen12, type=Aside, ordinal=2, song="Come\, Friendly Spacemen", version=Jackson Hole Remix)}
-	${addAlbumPerf(release=spacemen12, type=Bside, ordinal=1, song="Monks Of Kung Fu")}
-	${addAlbumPerf(release=spacemen12, type=Bside, ordinal=2, song="Come\, Friendly Spacemen", version=Sushi Remix)}
+	${addAlbumPerf(release=spacemen12, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", version=version, project=sumosonic)}
+	${addAlbumPerf(release=spacemen12, type=Aside, ordinal=2, song="Come\, Friendly Spacemen", version=Jackson Hole Remix, project=sumosonic)}
+	${addAlbumPerf(release=spacemen12, type=Bside, ordinal=1, song="Monks Of Kung Fu", project=sumosonic)}
+	${addAlbumPerf(release=spacemen12, type=Bside, ordinal=2, song="Come\, Friendly Spacemen", version=Sushi Remix, project=sumosonic)}
 
 	${jbc_footer}
 #live	endif
@@ -6181,17 +6181,17 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=thisissumo, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=thisissumo)}
-	${addAlbumPerf(release=thisissumo, ordinal=1, song="Come\, Friendly Spacemen")}
-	${addAlbumPerf(release=thisissumo, ordinal=2, song="God's Green Earth")}
-	${addAlbumPerf(release=thisissumo, ordinal=3, song="Fern Schnell Gut")}
-	${addAlbumPerf(release=thisissumo, ordinal=4, song="Cat's Life")}
-	${addAlbumPerf(release=thisissumo, ordinal=5, song="Everything Is Wonderful")}
-	${addAlbumPerf(release=thisissumo, ordinal=6, song="Stupid")}
-	${addAlbumPerf(release=thisissumo, ordinal=7, song="Destroy All Monsters")}
-	${addAlbumPerf(release=thisissumo, ordinal=8, song="Radio Saigon")}
-	${addAlbumPerf(release=thisissumo, ordinal=9, song="Business And Work")}
-	${addAlbumPerf(release=thisissumo, ordinal=10, song="Monks Of Kung Fu")}
-	${addAlbumPerf(release=thisissumo, ordinal=11, song="Sputnik")}
+	${addAlbumPerf(release=thisissumo, ordinal=1, song="Come\, Friendly Spacemen", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=2, song="God's Green Earth", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=3, song="Fern Schnell Gut", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=4, song="Cat's Life", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=5, song="Everything Is Wonderful", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=6, song="Stupid", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=7, song="Destroy All Monsters", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=8, song="Radio Saigon", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=9, song="Business And Work", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=10, song="Monks Of Kung Fu", project=sumosonic)}
+	${addAlbumPerf(release=thisissumo, ordinal=11, song="Sputnik", project=sumosonic)}
 
 	${addAlbumPerf(release=thisissumo, person=[[person:Mister_B]], aka="[[person:Ian_Botterill]]", instruments=vocalist)}
 	${addAlbumPerf(release=thisissumo, person=[[person:Kathie_M]], aka="[[person:Kathie_McGinty]]", instruments=vocalist)}
@@ -6481,19 +6481,19 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=dvd_wilson_no_known_predators, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=dvd_wilson_no_known_predators)}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=1,  song="Play It All Night Long", author=Warren Zevon)}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=2,  song="Critters")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=3,  song="Filter Kings")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=4,  song="Quality People")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=5,  song="Police Chief")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=6,  song="Buffalo Sniper")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=7,  song="Dark Agenda")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=8,  song="Two Dragons")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=9,  song="No Winners")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=10,  song="Hippy Shit")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=11,  song="Secret Government")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=12,  song="Every Saturday Night")}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=13,  song="Battle Time Now")}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=1,  song="Play It All Night Long", author=Warren Zevon, project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=2,  song="Critters", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=3,  song="Filter Kings", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=4,  song="Quality People", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=5,  song="Police Chief", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=6,  song="Buffalo Sniper", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=7,  song="Dark Agenda", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=8,  song="Two Dragons", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=9,  song="No Winners", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=10,  song="Hippy Shit", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=11,  song="Secret Government", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=12,  song="Every Saturday Night", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=13,  song="Battle Time Now", project=wilson)}
 
 	${jbc_footer}
 #live	endif
@@ -6505,7 +6505,7 @@ Previously available on the ${fishco} LP/CD.
 	${clearAlbumPerf(release=va_wilson_heyday)}
 	${addAlbumPerf(release=va_wilson_heyday, person=[[person:Ian_Botterill]], instruments=Writer)}
 	${addAlbumPerf(release=va_wilson_heyday, person=[[person:Pat_Fish]], instruments=Writer)}
-	${addAlbumPerf(release=va_wilson_heyday, song="Quality People", ordinal=6)}
+	${addAlbumPerf(release=va_wilson_heyday, song="Quality People", ordinal=6, project=wilson)}
 
 	${jbc_footer}
 #live	endif
@@ -6515,8 +6515,8 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=wilson_demo_2005, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=wilson_demo_2005)}
-	${addAlbumPerf(release=wilson_demo_2005, song="Buffalo Sniper", ordinal=1, media=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3)}
-	${addAlbumPerf(release=wilson_demo_2005, song="Police Chief", ordinal=2, media=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3)}
+	${addAlbumPerf(release=wilson_demo_2005, song="Buffalo Sniper", ordinal=1, media=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2005, song="Police Chief", ordinal=2, media=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3, project=wilson, category=demo)}
 
 	${jbc_footer}
 #live	endif
@@ -6528,8 +6528,8 @@ Previously available on the ${fishco} LP/CD.
 	${clearAlbumPerf(release=wilson_demo_2003)}
 	${addAlbumPerf(release=wilson_demo_2003, person=[[person:Andy_Parker]], instruments=Recorded)}
 	${addAlbumPerf(release=wilson_demo_2003, person=[[person:David_Ross_Skinner]], instruments=Produced)}
-	${addAlbumPerf(release=wilson_demo_2003, song="Istanbul Connection", ordinal=1, media=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3)}
-	${addAlbumPerf(release=wilson_demo_2003, song="Quality People", ordinal=2, media=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3)}
+	${addAlbumPerf(release=wilson_demo_2003, song="Istanbul Connection", ordinal=1, media=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2003, song="Quality People", ordinal=2, media=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3, project=wilson, category=demo)}
 
 	${jbc_footer}
 #live	endif
@@ -6539,12 +6539,12 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=wilson_demo_2002, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=wilson_demo_2002)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Quality People", ordinal=1, media=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Istanbul Connection", ordinal=2, media=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Hippy Shit", ordinal=3, media=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Play It All Night Long", ordinal=4, media=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3, author=Warren Zevon)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Burn\, Hollywood\, Burn", ordinal=5, media=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Dark Agenda", ordinal=6, media=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Quality People", ordinal=1, media=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Istanbul Connection", ordinal=2, media=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Hippy Shit", ordinal=3, media=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Play It All Night Long", ordinal=4, media=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3, author=Warren Zevon, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Burn\, Hollywood\, Burn", ordinal=5, media=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Dark Agenda", ordinal=6, media=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, project=wilson, category=demo)}
 
 	${jbc_footer}
 #live	endif

@@ -5,9 +5,9 @@ import Tag from '@/components/Tag';
 import { Credit } from '@/components/GenericWeb';
 
 const PhotoSet = ({ title, photos, description, credit, credit_url, credit_date }: {
-	title: string, photos: any[], description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string
+	title?: string, photos: any[], description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string
 }) => <>
-	<Tag> {title} </Tag>
+	{(title) && <Tag> {title} </Tag>}
 	{(description) && <blockquote>{description}</blockquote>}
 	{(credit) && <blockquote><Credit g={credit} u={credit_url} d={credit_date} /></blockquote>}
 	<div className="flex flex-wrap justify-center gap-3 listItem">

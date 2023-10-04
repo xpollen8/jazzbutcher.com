@@ -5,6 +5,7 @@ CREATE TABLE `performance` (
   `performance_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `datetime` datetime NOT NULL,
   `category` enum('event','release','with') DEFAULT 'event',
+  `project` varchar(20),
   `lookup` varchar(100),
   `variant` varchar(20),
   `type` varchar(20),

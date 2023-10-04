@@ -22,7 +22,8 @@ CREATE TABLE `performance` (
   KEY `idx0` (`performance_id`),
   KEY `idx1` (`datetime`,`category`),
   KEY `idx2` (`category`,`title`),
-  KEY `idx3` (`performer`)
+  KEY `idx3` (`performer`),
+  KEY `idx4` (`project`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6983 DEFAULT CHARSET=latin1;
 
 LOCK TABLES `performance` WRITE;

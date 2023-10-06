@@ -221,12 +221,13 @@ const ReleaseVideos = ({ release }: { release: ReleaseTypeWithChildren }) => {
 				{videos?.map((v: any, key: number) => {
 					const [ videourl, source, sourceurl, sourcedate, caption ] = v;
 					const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
-					return (<div key={key}>
-						<center>
-							<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate }}>
-								<br />{caption}
-							</EmbedMedia>
-						</center>
+					return (<div key={key} className="flex flex-wrap">
+							<div>
+							<div className="w-80 float-right p-1">
+								<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate }} />
+							</div>
+							<blockquote dangerouslySetInnerHTML={{ __html: caption }} />
+							</div>
 					</div>)
 				})}
 			</>)
@@ -283,7 +284,6 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 				<ReleaseImages release={release} />
 				<ReleaseDetails release={release} />
 				<ReleaseDownloads release={release} />
-				<ReleaseVideos release={release} />
 				<ReleaseSongList songs={songs?.results} />
 				<ReleaseCredits credits={credits} />
 				<ReleaseLiner release={release} />
@@ -292,6 +292,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 				<ReleaseAudio release={release} />
 				<ReleasePatSez release={release} />
 				<ReleaseBishopSez release={release} />
+				<ReleaseVideos release={release} />
 				<MakeReleasePress lookup={lookup} />
 				<p />
 			</>)}

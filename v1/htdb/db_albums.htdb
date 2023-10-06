@@ -2711,7 +2711,17 @@
 #define	albums[47]->title	Last of the Gentleman Adventurers
 #define	albums[47]->thumb	/images/adventurers_front
 ##define	albums[47]->video	https://www.youtube.com/embed/NI0QBCSsVGk;;23 ears;;https://www.youtube.com/channel/UCJYL-nO2qAgD9fC-Ux7aOeQ;;2017-07-10;;The Jazz Butcher Appeal
-#define	albums[47]->video	/video/adventurers_pledge.mp4;;Pat & Max;;;;2012-07-01;;The Jazz Butcher Crowdfunding Appeal
+#define	albums[47]->video	/video/adventurers_pledge.mp4;;Pat & Max;;;;2012-07-01;;To mark the 30th anniversary of the Jazz Butcher Conspiracy, Max Eider and Pat Fish are planning to record a new album with producer Richard Formby. After years of wandering, confused, through the digital wreckage of the record business, we have alighted upon this brilliant model for getting our music to those who want it most. So here we are, appealing to you to help us front up the necessary for the recording and manufacturing of that album.
+<p />
+The record will draw on the best of Pat’s compositions since the recording of Rotten Soul back in 2000. Unlike that album, it will be made in a proper studio with the best producer we know.
+<p />
+By pledging here you secure your copy of the album. Think of it as a kind of long-term pre-ordering system. We also have some interesting exclusives to offer, from a signed lyric sheet to Pat’s Fender El Rio guitar. Check out what’s on offer in the sidebar.
+<p />
+If we’re lucky enough to attract more than our target amount, we shall be making a donation to the Citizens’ Advice Bureau. Anything else will go towards the setting up of a celebratory thirtieth anniversary tour.
+<p />
+If we fail to reach our target, everybody gets their money back and we’ll go back to playing cribbage and dribbling into our beer as we struggle to recall our exact whereabouts. But let’s not think about that, eh?
+<p />
+Please give generously.
 #define	albums[47]->blurb	Crowd-funded in under 12 hours, recorded on 2" tape, lush and warm..
 #define	albums[47]->dtreleased	2012-10-18
 #define	albums[47]->liner

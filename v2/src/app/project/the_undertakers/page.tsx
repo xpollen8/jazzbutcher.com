@@ -54,9 +54,9 @@ const TheUndertakers = () =>
 				and sent me a load of stuff (posters, cassettes, etc).
 				In the end, we were able to send Pat a nice wad of cash.
 				<p />
-				Some of those tapes, I did tape copies of before sending the orignals onto
+				Some of those tapes, I did copy before sending the orignals onto
 				the auction winners.  I will need to go through my stored pile to see if
-				The Undertakers tape was one of those.  If not.. well, Jay, you&apos;re the keeper of something pretty rare.
+				The Undertakers tape was one of those copied.  If not.. well, Jay, you&apos;re the keeper of something pretty rare.
 			</blockquote>
 			<Attribution g="David Whittemore" d="2023-09-22" />
 		</div>

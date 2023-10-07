@@ -3906,6 +3906,10 @@ ${define(_set, false)}
 
 
 #live	if (defined(pat))
+#live		if (define(px_current,))
+#live		endif
+#live		if (define(px_credits,))
+#live		endif
 #live	if (makeArray(_px, ${EOD}, ${unfilter(${pat})}))
 #live		if (define(px_current, ${_px[1]}))
 #live		endif

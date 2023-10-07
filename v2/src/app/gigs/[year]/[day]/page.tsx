@@ -231,7 +231,8 @@ const Content = ({ gig }: { gig: any }) => {
 					// only add new instruments to players' object
 					t.instruments.split(',').forEach((i: any) => {
 						if (!player.instruments.includes(i)) {
-							player.instruments.split(',').push(i).join(',');
+							const inst = player.instruments.split(',');
+							inst.push(i);
 						}
 					});
 				}
@@ -304,9 +305,9 @@ const Content = ({ gig }: { gig: any }) => {
 
 	return <>
 		<GigDetails gig={gig} joins={joins} />
-		{extras?.map(({ label, lookup, func }: any, key: number) => <>
-			{!!(joins[lookup]?.length) && <div key={key}><Tag>{label}</Tag><div className="listItem" style={{ paddingLeft: '20px' }}>{func(joins[lookup])}</div></div>}
-		</>)}
+		{extras?.map(({ label, lookup, func }: any, key: number) => <div key={key}>
+			{!!(joins[lookup]?.length) && <><Tag>{label}</Tag><div className="listItem" style={{ paddingLeft: '20px' }}>{func(joins[lookup])}</div></>}
+		</div>)}
 	</>
 }
 

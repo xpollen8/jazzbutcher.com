@@ -374,6 +374,10 @@ ${d}
 #live			if (define(extra, ${extra};sumo))
 #live			endif
 #live		endif
+#live		if (getval(g[${z}]->extra) == nopat)
+#live			if (define(extra, ${extra};nopat))
+#live			endif
+#live		endif
 	${addPress(type=pat;gig${extra},
 		url=${jbc_gigs}/${ts2URI(${g[${z}]->datetime})},
 		title=<i>Pat's Gig Review - ${literalizeCommas(${g[${z}]->venue}, ${g[${z}]->city}, ${g[${z}]->country})}</i>,

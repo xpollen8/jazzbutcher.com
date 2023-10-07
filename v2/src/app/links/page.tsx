@@ -198,10 +198,10 @@ const links = [
 
 const ETC = () => <>
 	<Header section='Etc' title="Pat's Recommended Links" />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="Pat's Recommended Links" subhead="Historical Artifact (c. 2003)" />
 		{links.map(MakeSimpleURI)}
-	</div>
+	</main>
 	<Footer />
 </>
 

@@ -6,7 +6,7 @@ import { chang, richard } from '@/lib/defines';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'President Chang' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="PRESIDENT CHANG" />
 		<samp>
 			&gt; Thu, 2 Sep 93<br />
@@ -45,7 +45,7 @@ const Letter = () =>
 			a bush outside the venue with new-born kittens in it,
 			a large fridge and lots of JAEGERMEISTER.
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

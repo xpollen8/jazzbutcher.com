@@ -5,7 +5,7 @@ import LetterHeader from '@/components/LetterHeader';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'College' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="COLLEGE" />
 		<samp>
 		&gt; Mon, 21 Jun 1993<br />
@@ -18,7 +18,7 @@ const Letter = () =>
 			I went to Merton College, Oxford, but it&apos;s not true about
 			the busking.  I never do anything at sunrise.
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

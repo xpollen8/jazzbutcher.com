@@ -17,7 +17,7 @@ const tapes = [
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '30Aug93;;/letters/19930830', 'Introduction' ] } />
-	<div className="etc">
+	<main className="etc">
 		<blockquote className="annotation">
 			I have <Link href="/letters/19940624/all_the_gigs.html">
 			tapes of all manner of JBC live</Link>, tapes and recordings
@@ -38,7 +38,7 @@ const Letter = () =>
 				</Link>
 			</div>
 		</div>
-	</div>
+	</main>
 	<Footer />
 </>
 

@@ -21,7 +21,7 @@ const letters = [
 const Letters = () => 
 <>
 	<Header section='letters' />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="Pat responds to mailinglist questions posted by fans"
 			subhead=<>
 		Just prior to gaining Internet access for himself, Pat would update the website&apos;s maintainer the old-fashioned way: through type-written correspondence.
@@ -42,7 +42,7 @@ const Letters = () =>
 				</center>
 			</div>
 		</div>
-	</div>
+	</main>
 	<Footer />
 </>
 

@@ -8,7 +8,7 @@ import { cave, bake, baltic, ben, braind, chang, coonce, davis, dooj, ghost, iai
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '30Aug93;;/letters/19930830', 'Love Bus' ]} />
-	<div className="etc">
+	<main className="etc">
 		<div className="border">
 			<div className="flex flex-wrap justify-around">
 				<div className="m-1">
@@ -165,7 +165,7 @@ const Letter = () =>
 			<p>
 				{nick}: The Drums.
 			</p>
-	</div>
+	</main>
 	<Footer />
 </>
 

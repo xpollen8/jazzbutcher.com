@@ -8,7 +8,7 @@ import { Credit } from '@/components/GenericWeb';
 const NeilSpencer = () => {
 	return (<>
 		<Header section='etc' title='Neil Spencer' />
-		<div className="etc">
+		<main className="etc">
 			<LetterHeader title="Hey Thom" />
 			<blockquote>
 			Heard you&apos;d gone. Heard it through the e-mail grapevine, which I
@@ -158,7 +158,7 @@ const NeilSpencer = () => {
 			<Credit g="Neil Spencer, London" d="2003-08-01" />
 			<p className="clear_float" />
 			</blockquote>
-		</div>
+		</main>
 		<Footer />
 	</>);
 }

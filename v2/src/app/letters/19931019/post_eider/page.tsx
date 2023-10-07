@@ -7,7 +7,7 @@ import { bacon, ben, pete, girls, creat } from '@/lib/defines';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'More Eider' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="MORE MAXIMILIANA" />
 		<samp>
 			&gt; Wed, 24 Mar 93<br />
@@ -87,7 +87,7 @@ const Letter = () =>
 			public - I was there) and when it looked like it wasn&apos;t
 			going to be fun anymore we stopped.
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

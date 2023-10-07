@@ -7,7 +7,7 @@ import MakeSimpleURI from '@/components/MakeSimpleURI';
 const Letter = () => 
 <>
 	<Header section='letters' title='30Aug93'/>
-	<div className="etc">
+	<main className="etc">
 		<div className="flex flex-wrap justify-around">
 			<div className="min-w-[50%]">
 				<MakeSimpleURI uri="/letters/93Aug30/intro.html" text="Introduction" />
@@ -22,7 +22,7 @@ const Letter = () =>
 				<Image width={243} height={111} alt="[signature]" src="https://jazzbutcher.com/images/19930830/93Aug30_sig.gif" />
 			</div>
 		</div>
-	</div>
+	</main>
 	<Footer />
 </>
 

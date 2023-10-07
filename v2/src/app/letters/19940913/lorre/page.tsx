@@ -6,7 +6,7 @@ import LetterHeader from '@/components/LetterHeader';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Peter Lorre' ]} />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title=<Link href="/lyrics/peter_lorre.html">PETER LORRE</Link> />
 		<samp>
 		&gt; Date: Fri, 29 Jul 1994 19:09:53 -0400<br />
@@ -29,7 +29,7 @@ const Letter = () =>
 		thing; yeah, he was the bad guy, but imagine some scary-intrigue-casbah
 		type picture where he was your pal.  Yeah?
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

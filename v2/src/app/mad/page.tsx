@@ -134,7 +134,7 @@ const madness = [
 
 const Mad = () => <>
 	<Header section='mad' />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="Contest Invocation" />
 		<blockquote className="annotation">
 			Sitting around the house with {curt} and {terry} a week or so ago - we came up with a plot.
@@ -212,7 +212,7 @@ const Mad = () => <>
 			<br/>
 			{dateDiff('1999-03-03 19:16:16')}
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

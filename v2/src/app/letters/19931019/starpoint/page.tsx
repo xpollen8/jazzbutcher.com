@@ -6,7 +6,7 @@ import { bacon, aero } from '@/lib/defines';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'Starpoint' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="STARPOINT STUDIO" />
 		<samp>
 			&gt; Mon, 21 Jun 1993<br />
@@ -33,7 +33,7 @@ const Letter = () =>
 			know if Starforce was at any time known as &quot;ReMaximum&quot;,
 			but i sort of doubt it.
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

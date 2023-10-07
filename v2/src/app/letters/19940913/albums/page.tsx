@@ -8,7 +8,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Re-issues' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="RE-ISSUES"
 			subhead=<> {bacon}!  {scandal}!  {sex}!</>
 		/>
@@ -63,7 +63,7 @@ const Letter = () =>
 		<p />
 		See Cliff? SOMEONE was nice about the fucker.
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

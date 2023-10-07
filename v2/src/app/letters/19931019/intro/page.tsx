@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'Intro' ] } />
-	<div className="etc">
+	<main className="etc">
 		I&apos;m sending this as fast as I can, for, as you will see,
 		there is news which you might wish to impart to the slavering
 		e-hordes.  As sure as egs is egs, I have also been compelled
@@ -22,7 +22,7 @@ const Letter = () =>
 		so I shall be going to that, and, with any luck, shall
 		survive long enough to let you know what&apos;s going on at further length soon.
 		<p className="clear_float" />
-	</div>
+	</main>
 	<Footer />
 </>
 

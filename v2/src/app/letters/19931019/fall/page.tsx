@@ -7,7 +7,7 @@ import { loony, smiff, smith, rolo, tops, owen } from '@/lib/defines';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'The Fall' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="JBC -vs- The Fall" />
 		<samp>
 			&gt; Mon, 21 Jun 1993<br />
@@ -64,7 +64,7 @@ const Letter = () =>
 			in the UK and Spain.  He&apos;s ALSO the house sound engineer
 			for the Love Kittens.  But they&apos;ve split up now.
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

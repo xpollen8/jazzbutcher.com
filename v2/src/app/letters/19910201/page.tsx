@@ -8,7 +8,7 @@ import { karel, larry, aero, astor, swynn, tvamp } from '@/lib/defines';
 const Letter = () => 
 <>
 	<Header section='letters' title='1Feb91'/>
-	<div className="etc">
+	<main className="etc">
 		<b>FROM THE SPORTS DESK OF THE WIGMORE SOCIETY (founded 1982)</b>
 		<br/>
 		<b>DROP A TOWELHEAD - WIN A PICK-UP TRUCK!</b>
@@ -136,7 +136,7 @@ const Letter = () =>
 		Northampton, finds typewriters DEAD INTERSTING.
 		</p>
 		<Image width={456} height={52} alt="[signature]" src="https://jazzbutcher.com/images/19910201/91Feb1_sig.gif" />
-	</div>
+	</main>
 	<Footer />
 </>
 

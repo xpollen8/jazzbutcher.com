@@ -7,7 +7,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', 'News' ] } />
-	<div className="etc">
+	<main className="etc">
 		<b>Those Old Records</b>
 		<p />
 		It now looks more likely than ever that {scandal} and
@@ -37,7 +37,7 @@ const Letter = () =>
 		<p />
 		{dooj} hacked to death in the streets by crazed Christian
 		fundamentalists? No, actually.  Not yet, anyway.
-	</div>
+	</main>
 	<Footer />
 </>
 

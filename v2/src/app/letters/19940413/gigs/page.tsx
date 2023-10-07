@@ -9,7 +9,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', 'Gigs' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title=<>After the <Link href="/letters/19930830/tour.html">European tour of early 1993</Link></>
 			subhead="listed last time, we did this..." />
 		<samp>
@@ -68,7 +68,7 @@ const Letter = () =>
 		<b>March</b>
 		<br />10 LONDON           Upstairs At The Garage      {pat}, {dooj} {paul}
 		</samp>
-	</div>
+	</main>
 	<Footer />
 </>
 

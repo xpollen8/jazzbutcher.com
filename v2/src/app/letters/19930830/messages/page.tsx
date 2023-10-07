@@ -8,7 +8,7 @@ import { NME, aero, blue, creat, cult, ed, family, mbv, momus, } from '@/lib/def
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '30Aug93;;/letters/19930830', 'Messages' ]} />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="INDIVIDUAL MESSAGES:" />
 		{ed}
 			- I&apos;m afraid your &quot;virtual clippings&quot; collection is
@@ -118,7 +118,7 @@ const Letter = () =>
 		I told Peter this story later, and it appealed to his
 		sense of having a drink.
 		<p className="clear_float" />
-	</div>
+	</main>
 	<Footer />
 </>
 

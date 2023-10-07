@@ -7,7 +7,7 @@ import { sweet, richard, dj, cale, green, dooj, paul, lix, strange } from '@/lib
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'News' ] } />
-	<div className="etc">
+	<main className="etc">
 		<b>NEWS</b> (I know you want it)
 		<p />
 		I have recorded two tracks with Alan Moore, the comics
@@ -56,7 +56,7 @@ const Letter = () =>
 		Survive and thrive, take no truck from the passengers,
 		<p />
 		<p className="clear_float" />
-	</div>
+	</main>
 	<Footer />
 </>
 

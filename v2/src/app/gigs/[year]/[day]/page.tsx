@@ -7,13 +7,14 @@ import './styles.css';
 import EmbedMedia from '@/components/EmbedMedia';
 
 import { AutoLinkPlayer, AutoLinkAct } from '@/lib/defines';
-import { parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, dateDiff } from '@/lib/macros';
+import { parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, ts2URI, dateDiff } from '@/lib/macros';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import { Credit, ParsedCaption, removeHTML, RenderHTML } from '@/components/GenericWeb';
 import useGig from '@/lib/useGig';
 import { PressSummary } from '@/components/MakeReleasePress';
+import { PrevArrow, NextArrow } from '@/components/Arrows';
 
 const parsePhoto = (str: string) => {
 	if (!str) return {};
@@ -68,15 +69,12 @@ const GigText = ({ data }: any) => {
 	</>)
 }
 
-const Iterator = ({ data, func, className }: any) => (
-	<>
-		{(data && data?.length) && (
-			<div className={className} >
-				{data.map((d: any, key: number) => <div key={key}>{func({ data: d })}</div> )}
-			</div>
-		)}
-	</>
-)
+const Iterator = ({ data, func, className }: any) => {
+	return (data && data?.length) &&
+		<div className={className} >
+			{data.map((d: any, key: number) => <div key={key}>{func({ data: d })}</div> )}
+		</div>
+}
 
 const GigTicket = (data: any, key: number) => <GigMedia {...data} />
 
@@ -136,10 +134,10 @@ const GigWith = (data: any) => <><Iterator data={data} func={GigWit} /></>
 
 const GigPlayer = ({ data }: any) => {
 	return (
-		<span style={{ whiteSpace: 'nowrap' }}>
+		<div style={{ whiteSpace: 'nowrap' }}>
 			{AutoLinkPlayer(data?.performer)}
 			{(data?.instruments?.length) && <>{' '}<span className="smalltext">({data?.instruments?.split(',').join(', ')})</span></>}
-		</span>
+		</div>
 	)
 }
 const GigPlayers = (data: any) => (
@@ -167,7 +165,7 @@ const GigDetails = ({ gig, joins }: any) => {
 		<Tag>Live Performance - {gig?.type} {gig?.venue} {gig?.city} {gig?.country} </Tag>
 		<blockquote className="listItem" style={{ paddingLeft: '20px' }}>
 			<label>Date:</label> {dateDiff(gig?.datetime)}<br />
-			{(gig.ticketweb) && <><label>Tickets:</label> {gig.ticketweb}</>}
+			{(gig.ticketweb) && <><label>Tickets:</label> <Link href={gig.ticketweb}>{parseDomain(gig.ticketweb)}</Link><br /></>}
 			<label>Venue:</label> {gig.venue} {(gig.eventweb) && <Link href={gig.eventweb}>(Website)</Link>} <br />
 			{(gig.city) && <><label>Location:</label> {gig?.address} {gig?.city} {gig?.country} {gig?.postalcode}<br /></>}
 			{(gig.phone) && <><label>Telephone:</label> {gig.phone}<br /></>}
@@ -181,8 +179,12 @@ const GigMap = ({ data }: any) => {
 	</>)
 }
 
-const ExtraNav = ({ datetime, gig }: { datetime: string, gig: any }) => {
-	return <> &lt;- NAV -&gt; </>
+const ExtraNav = ({ gig }: { gig: any }) => {
+	const prev = gig?.prev[0]?.datetime;
+	const next = gig?.next[0]?.datetime;
+	const prevGig = <Link href={`/gigs/` + ts2URI(prev)}><PrevArrow className="arrows" style={{ marginLeft: '10px' }} /></Link>;
+	const nextGig = <Link href={`/gigs/` + ts2URI(next)}><NextArrow className="arrows" style={{ marginRight: '100px' }} /></Link>;
+	return <> {prevGig} gig {nextGig} </>
 }
 
 const Nav = ({ year, datetime, gig }: { year: number, datetime: string, gig: any }) => {
@@ -191,7 +193,7 @@ const Nav = ({ year, datetime, gig }: { year: number, datetime: string, gig: any
 
 	const display = `${parseMonthName(datetime)} ${parseDayOrdinal(datetime)} ${(hasHour) ? parseHourAMPM(datetime) : ''}`;
 
-	return <Header project={project} section='gigs' title={ [ `${year};;/gigs/${year}`, display ] } extraNav=<ExtraNav datetime={datetime} gig={gig} /> />
+	return <Header project={project} section='gigs' title={ [ `${year};;/gigs/${year}`, display ] } extraNav=<ExtraNav gig={gig} /> />
 }
 
 const Content = ({ gig }: { gig: any }) => {
@@ -203,7 +205,6 @@ const Content = ({ gig }: { gig: any }) => {
 	// joins.media_* (gigmedia table)
 	gig?.media?.forEach((t: any) => {
 		const nameIt = `media_${t.type}`;
-		console.log("X", t.type);
 		switch (t.type) {
 			case 'pix':
 			case 'poster':
@@ -223,7 +224,17 @@ const Content = ({ gig }: { gig: any }) => {
 		switch (t?.category) {
 			case 'event':
 				if (!joins['players_JBC']) joins['players_JBC'] = [];
-				joins['players_JBC'].push(t);
+				const player = joins['players_JBC'].find((a: any) => a.performer === t.performer);
+				if (!player) {
+					joins['players_JBC'].push(t);
+				} else {
+					// only add new instruments to players' object
+					t.instruments.split(',').forEach((i: any) => {
+						if (!player.instruments.includes(i)) {
+							player.instruments.split(',').push(i).join(',');
+						}
+					});
+				}
 			break;
 			case 'with':
 				if (!joins['players_with']) joins['players_with'] = [];
@@ -291,12 +302,12 @@ const Content = ({ gig }: { gig: any }) => {
 		{ label: 'Press', lookup: 'press_gig', func: GigPresses },
 	]
 
-	return <div className={`(isLoading) ? 'blur-sm' : '' w-full`}>
+	return <>
 		<GigDetails gig={gig} joins={joins} />
 		{extras?.map(({ label, lookup, func }: any, key: number) => <>
-			{!!(joins[lookup]?.length) && <div key={key}><Tag>{label}</Tag><blockquote className="listItem" style={{ paddingLeft: '20px' }}>{func(joins[lookup])}</blockquote></div>}
+			{!!(joins[lookup]?.length) && <div key={key}><Tag>{label}</Tag><div className="listItem" style={{ paddingLeft: '20px' }}>{func(joins[lookup])}</div></div>}
 		</>)}
-	</div>
+	</>
 }
 
 const GigProfile = (props: any) => {
@@ -306,8 +317,8 @@ const GigProfile = (props: any) => {
 	const { data, isLoading, error } = useGig(datetime)
 	const gig = data?.results[0];
 
-	return <>
-		<Suspense fallback={<>Loading...</>}>
+	return <div className={(isLoading) ? 'blur-sm' : ''}>
+		<Suspense fallback=<>Loading...</>>
 			{(!isLoading && gig) && (<>
 				<Nav year={year} datetime={datetime} gig={gig} />
 				<main>
@@ -316,7 +327,7 @@ const GigProfile = (props: any) => {
 			</>)}
 		</Suspense>
 		<Footer />
-	</>
+	</div>
 }
 
 export default GigProfile;

@@ -35,43 +35,43 @@ const Comments = ({ comments = [], className }: { comments: CommentType[], class
 )
 
 export const CommentBubble = (props: any) => {
-	return (<span className="commentBubble flex">
-		{props?.children}
-		<Image src="https://jazzbutcher.com/images/horn_flipped_40.png" width={50} height={50} alt="comments" className="ml-2"/>
-	</span>)
-	/* SVG bubble version
-	return (
-		<span className="flex" >
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				{...props}
-			>
-				<g clipPath="url(#a)">
-					<path
-						className="commentBubble"
-						fill="#fff"
-						stroke="#292929"
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						strokeWidth={2.5}
-						d="M12 21a9 9 0 1 0-9-9c0 1.488.36 2.891 1 4.127L3 21l4.873-1c1.236.64 2.64 1 4.127 1Z"
-					/>
-				</g>
-				<defs>
-					<clipPath id="a">
-						<path fill="#fff" d="M0 0h24v24H0z" />
-					</clipPath>
-				</defs>
-			</svg>
+	if (0) {
+		return (<span className="commentBubble flex">
 			{props?.children}
-		</span>
-	)
-*/
+			<Image src="https://jazzbutcher.com/images/horn_flipped_40.png" width={50} height={50} alt="comments" className="ml-2"/>
+		</span>)
+	} else {
+		return (
+			<span className="flex commentBubble" >
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					{...props}
+				>
+					<g clipPath="url(#a)">
+						<path
+							fill="#fff"
+							stroke="#292929"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							strokeWidth={2.5}
+							d="M12 21a9 9 0 1 0-9-9c0 1.488.36 2.891 1 4.127L3 21l4.873-1c1.236.64 2.64 1 4.127 1Z"
+						/>
+					</g>
+					<defs>
+						<clipPath id="a">
+							<path fill="#fff" d="M0 0h24v24H0z" />
+						</clipPath>
+					</defs>
+				</svg>
+				{props?.children}
+			</span>
+		)
+	}
 }
 
-const PageComments = () => {
+const PageComments = ({ className }: { className?: string }) => {
 	const pathname = usePathname();
 	const { data, isLoading, error } = usePageComments(pathname);
 	const comments = data?.results || [];
@@ -80,8 +80,8 @@ const PageComments = () => {
 		<Suspense fallback={<>Loading...</>}>
 			<details>
 				<summary>
-					<CommentBubble style={{ width: '25px', fontSize: '.5em' }}>
-						{comments.length}
+					<CommentBubble className={className} style={{ height: '21px' }}>
+						<div className="text-sm text-slate-500 ml-1">{comments.length}</div>
 					</CommentBubble>
 				</summary>
 				<Comments comments={comments} className="commentOverlay"/>

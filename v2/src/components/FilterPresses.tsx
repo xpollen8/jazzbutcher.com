@@ -96,8 +96,9 @@ const	FilterPresses = ({ project, title, showAlbum, filter=filterPassThru }: { t
 				{presses
 				.map((item: any, key: number) => {
 					const thumb = truncAt(';;', item.thumb);
+					const info = item.type.replace(project, '').replace('nopat','').replace('wilson','').replace('sumo','').replace('eg','').replace(',,', ',').replace(/^,/, '').replace(/,$/, '');
 					return (<div key={key} className={`w-64`}>
-						<InfoTag text={`${item.dtpublished?.substr(0, 10)}: ${item.type.replace(project, '').replace(',,', ',').replace(/^,/, '').replace(/,$/, '')}`}/>
+						<InfoTag text={`${item.dtpublished?.substr(0, 10)}: ${info}`}/>
 						<div className={`outline outline-slate-300 drop-shadow-sm gig_${parseProject(item.type)}`}>
 							<Link key={key} href={item.url}>
 								{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}

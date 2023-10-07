@@ -32,7 +32,7 @@ const TheUndertakers = () =>
 		<div className="listItem">
 			<b>Tape:</b> T017<br />
 			<b>Title:</b> The Undertakers : Keep Music Dead<br />
-			<b>Auction Price:</b> $45<br />
+			<b>Auction Price:</b> $45 (£74)<br />
 			<b>Winner:</b> jay@....ary.com<br />
 			<b>Pat&apos;s Description:</b>
 				<blockquote>

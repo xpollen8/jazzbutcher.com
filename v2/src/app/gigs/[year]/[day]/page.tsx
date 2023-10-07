@@ -3,17 +3,17 @@
 import React, { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import * as Tabs from '@radix-ui/react-tabs';
 import './styles.css';
 import EmbedMedia from '@/components/EmbedMedia';
 
 import { AutoLinkPlayer, AutoLinkAct } from '@/lib/defines';
-import { parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime } from '@/lib/macros';
+import { parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, dateDiff } from '@/lib/macros';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import { Credit, ParsedCaption, removeHTML, RenderHTML } from '@/components/GenericWeb';
 import useGig from '@/lib/useGig';
+import { PressSummary } from '@/components/MakeReleasePress';
 
 const parsePhoto = (str: string) => {
 	if (!str) return {};
@@ -62,7 +62,7 @@ const GigMedia = ({ data }: any) => {
 
 const GigText = ({ data }: any) => {
 	return (<>
-		<RenderHTML className="listItem" body={data?.body}>
+		<RenderHTML body={data?.body}>
 			<Credit g={data?.credit} u={data?.credit_url} d={data?.credit_date} />
 		</RenderHTML>
 	</>)
@@ -80,19 +80,19 @@ const Iterator = ({ data, func, className }: any) => (
 
 const GigTicket = (data: any, key: number) => <GigMedia {...data} />
 
-const GigTickets = (data: any) => <><Iterator data={data} func={GigTicket} className="flex flex-row flex-wrap gap-5 justify-center" /></>
+const GigTickets = (data: any) => <><Iterator data={data} func={GigTicket} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
 
 const GigSetlist = (data: any, key: number) => <GigMedia {...data} />
 
-const GigSetlists = (data: any) => <><Iterator data={data} func={GigSetlist} className="flex flex-row flex-wrap gap-5 justify-center" /></>
+const GigSetlists = (data: any) => <><Iterator data={data} func={GigSetlist} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
 
 const GigPoster = (data: any, key: number) => <GigMedia {...data} />
 
-const GigPosters = (data: any) => <><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center" /></>
+const GigPosters = (data: any) => <><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
 
 const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
 
-const GigPhotos = (data: any) => <><Tag>Photos</Tag><Iterator data={data} func={GigPhoto} className="flex flex-row flex-wrap gap-5 justify-center" /></>
+const GigPhotos = (data: any) => <><Iterator data={data} func={GigPhoto} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
 
 const GigNote = (data: any, key: number) => <GigText {...data} />
 
@@ -104,10 +104,9 @@ const GigSelfReviews = (data: any) => <><Iterator data={data} func={GigSelfRevie
 
 const GigPlay = ({ data }: any) => {
 	return (
-		<div style={{ marginLeft: '10px' }}>
-			{/*console.log("Play", data)*/}
-			{/*data?.song} {data?.author*/}
+		<div>
 			<EmbedMedia data={data} />
+			{data?.comment}
 		</div>
 	)
 }
@@ -123,18 +122,17 @@ const GigPlayed = (data: any) => {
 			banner = <Tag>{type} {set}</Tag>;
 		}
 		return <>{banner}<GigPlay data={data}/></>
-		})} />
+	})} />
 }
 
 const GigWit = ({ data }: any) => {
 	return (
 		<div>
-			{/*console.log("Wit", data)*/}
 			{AutoLinkAct(data?.performer)}
 		</div>
 	)
 }
-const GigWith = (data: any) => <><Tag>Also On The Bill</Tag><Iterator data={data} func={GigWit} /></>
+const GigWith = (data: any) => <><Iterator data={data} func={GigWit} /></>
 
 const GigPlayer = ({ data }: any) => {
 	return (
@@ -145,12 +143,9 @@ const GigPlayer = ({ data }: any) => {
 	)
 }
 const GigPlayers = (data: any) => (
-	<>
-			<Tag>Performers</Tag>
-		<div className="g_who">
-			<Iterator data={data} func={GigPlayer} className="flex flex-wrap space-x-5" />
-		</div>
-	</>
+	<div className="g_who">
+		<Iterator data={data} func={GigPlayer} className="flex flex-wrap gap-5 -ml-3" />
+	</div>
 )
 
 const GigReview = ({ data }: any) => {
@@ -162,11 +157,22 @@ const GigReview = ({ data }: any) => {
 }
 const GigReviews = (data: any) => <><Iterator data={data} func={GigReview} /></>
 
+const GigPress = ({ data }: any) => PressSummary(data, 1);
+
+const GigPresses = (data: any) => <><Iterator data={data} func={GigPress} /></>
+
 const GigDetails = ({ gig, joins }: any) => {
 	if (!gig) return;
 	return (<>
-		{GigPlayers(joins?.players_JBC)}
-		{GigWith(joins?.players_with)}
+		<Tag>Live Performance - {gig?.type} {gig?.venue} {gig?.city} {gig?.country} </Tag>
+		<blockquote className="listItem" style={{ paddingLeft: '20px' }}>
+			<label>Date:</label> {dateDiff(gig?.datetime)}<br />
+			{(gig.ticketweb) && <><label>Tickets:</label> {gig.ticketweb}</>}
+			<label>Venue:</label> {gig.venue} {(gig.eventweb) && <Link href={gig.eventweb}>(Website)</Link>} <br />
+			{(gig.city) && <><label>Location:</label> {gig?.address} {gig?.city} {gig?.country} {gig?.postalcode}<br /></>}
+			{(gig.phone) && <><label>Telephone:</label> {gig.phone}<br /></>}
+			{(gig.cost) && <><label>Admission:</label> {gig.cost}</>}
+		</blockquote>
 	</>)
 }
 
@@ -197,6 +203,7 @@ const Content = ({ gig }: { gig: any }) => {
 	// joins.media_* (gigmedia table)
 	gig?.media?.forEach((t: any) => {
 		const nameIt = `media_${t.type}`;
+		console.log("X", t.type);
 		switch (t.type) {
 			case 'pix':
 			case 'poster':
@@ -229,20 +236,25 @@ const Content = ({ gig }: { gig: any }) => {
 
 	// joins.press_* (press table)
 	gig?.press?.forEach((t: any) => {
-		const nameIt = `press_${t.type}`;
-		switch (t.type) {
-			case 'gig':
-			case 'album':
-			case 'interview':
-			case 'kit':
-			case 'pat':
-			case 'retrospective':
-				if (!joins[nameIt]) joins[nameIt] = [];
-				joins[nameIt].push(t);
-				break;
-			default:
-				if (!joins['press_other']) joins['press_other'] = [];
-				joins['press_other'].push(t);
+		if (t.url?.includes('/press')) {
+			const types = t.type.split(',');
+			types.forEach((tt: string) => {
+				const nameIt = `press_${tt}`;
+				switch (tt) {
+					case 'gig':
+					case 'album':
+					case 'interview':
+					case 'kit':
+					case 'pat':
+					case 'retrospective':
+						if (!joins[nameIt]) joins[nameIt] = [];
+						joins[nameIt].push(t);
+						break;
+					default:
+						if (!joins['press_other']) joins['press_other'] = [];
+						joins['press_other'].push(t);
+				}
+			})
 		}
 	})
 
@@ -266,47 +278,24 @@ const Content = ({ gig }: { gig: any }) => {
 	})
 
 	const extras = [
-		//{ label: 'Details', func: (GigDetails },
-		{ label: 'Photos', lookup: 'media_pix', func: GigPhotos },
+		{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
+		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
+		{ label: 'Also On The Bill', lookup: 'players_with', func: GigWith },
 		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
 		{ label: 'Tickets', lookup: 'media_ticket', func: GigTickets },
+		{ label: 'Photos', lookup: 'media_pix', func: GigPhotos },
 		{ label: 'Setlists', lookup: 'media_setlist', func: GigSetlists },
 		{ label: 'Played', lookup: 'played', func: GigPlayed },
-		//{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
-		//{ label: 'With', lookup: 'players_with', func: GigWith },
-		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
-		{ label: "Pat's Review", lookup: 'text_selfreview', func: GigSelfReviews },
-		{ label: 'Reviews', lookup: 'text_review', func: GigReviews },
+		{ label: "Pat Says", lookup: 'text_selfreview', func: GigSelfReviews },
+		{ label: 'Fan Reviews', lookup: 'text_review', func: GigReviews },
+		{ label: 'Press', lookup: 'press_gig', func: GigPresses },
 	]
 
 	return <div className={`(isLoading) ? 'blur-sm' : '' w-full`}>
-		<Tag>Live Performance -
-		{gig?.type} {gig?.venue} {gig?.city} {gig?.country}
-		</Tag>
-		<Tabs.Root className="TabsRoot mx-2" defaultValue="details">
-			<Tabs.List className="TabsList" aria-label="Available gig details">
-				<Tabs.Trigger key='details' className="TabsTrigger" value='details'>
-					Details
-				</Tabs.Trigger>
-				{extras?.map(({ label, lookup }: any, key: number) => {
-					if (joins[lookup]?.length) {
-						return (
-							<Tabs.Trigger key={key} className="TabsTrigger" value={`tab${key}`}>
-								{label}
-							</Tabs.Trigger>
-						)
-					}
-				})}
-			</Tabs.List>
-			<Tabs.Content key='details' className="TabsContent -mx-4" value='details'>
-				<div className="bg-slate-100"><GigDetails gig={gig} joins={joins} /></div>
-			</Tabs.Content>
-			{extras?.map(({ label, lookup, func }: any, key: number) =>
-				<Tabs.Content key={key} className="TabsContent -mx-4" value={`tab${key}`}>
-					<div className="bg-slate-100">{func(joins[lookup])}</div>
-				</Tabs.Content>
-			)}
-		</Tabs.Root>
+		<GigDetails gig={gig} joins={joins} />
+		{extras?.map(({ label, lookup, func }: any, key: number) => <>
+			{!!(joins[lookup]?.length) && <div key={key}><Tag>{label}</Tag><blockquote className="listItem" style={{ paddingLeft: '20px' }}>{func(joins[lookup])}</blockquote></div>}
+		</>)}
 	</div>
 }
 
@@ -321,7 +310,9 @@ const GigProfile = (props: any) => {
 		<Suspense fallback={<>Loading...</>}>
 			{(!isLoading && gig) && (<>
 				<Nav year={year} datetime={datetime} gig={gig} />
-				<Content gig={gig} />
+				<main>
+					<Content gig={gig} />
+				</main>
 			</>)}
 		</Suspense>
 		<Footer />

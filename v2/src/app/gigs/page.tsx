@@ -7,6 +7,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SearchDialog from '@/components/SearchDialog';
 import SearchResults from '@/components/SearchResults';
+import SectionOptions from '@/components/SectionOptions';
 import useGigs from '@/lib/useGigs';
 import { bannerGigs } from '@/lib/macros';
 
@@ -20,6 +21,7 @@ const Gigs = () => {
 		<Header section='gigs' />
 		<SearchDialog />
 		{(data?.error) && <h1 style={{ color: 'red' }}>{data.error}</h1>}
+		<SectionOptions section="gigs" />
 		{(isLoading) ?
 			<>Loading..</>
 			: <SearchResults results={data} banner={() => bannerGigs(data) }/>

@@ -1,4 +1,4 @@
-export const PrevArrow = (props) => (
+export const PrevArrow = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="si-glyph si-glyph-two-arrow-left"
@@ -17,7 +17,7 @@ export const PrevArrow = (props) => (
   </svg>
 )
 
-export const NextArrow = (props) => (
+export const NextArrow = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="si-glyph si-glyph-two-arrow-right"

@@ -80,7 +80,7 @@ const PageComments = ({ className }: { className?: string }) => {
 		<Suspense fallback={<>Loading...</>}>
 			<details>
 				<summary>
-					<CommentBubble className={className} style={{ height: '21px' }}>
+					<CommentBubble className={className} style={{ height: '25px' }}>
 						<div className="text-sm text-slate-500 ml-1">{comments.length}</div>
 					</CommentBubble>
 				</summary>

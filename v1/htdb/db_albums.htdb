@@ -94,7 +94,7 @@
 
 #define	albums[2]->type	single
 #define	albums[2]->lookup	smith
-#define	albums[2]->media	7"
+#define	albums[2]->media	7er
 #define	albums[2]->onalbum	scandal
 #define	albums[2]->href	${jbc_albums}/smith.html
 #define	albums[2]->title	Southern Mark Smith
@@ -195,12 +195,12 @@
 
 #define	albums[4]->type	single
 #define	albums[4]->lookup	marnie
-#define	albums[4]->media	12"
+#define	albums[4]->media	12er
 #define	albums[4]->onalbum	scandal
 #define	albums[4]->label	glass_records
 #define	albums[4]->catalog	Glass 12033
 #define	albums[4]->href	${jbc_albums}/marnie.html
-#define	albums[4]->title	Marnie 12"
+#define	albums[4]->title	Marnie 12er
 #define	albums[4]->thumb	/images/releases/marnie_front
 #define	albums[4]->images	/images/releases/marnie_back
 #define	albums[4]->dtreleased	1984-03
@@ -244,7 +244,7 @@
 #define	albums[5]->lookup	runner
 #define	albums[5]->href	${jbc_albums}/roadrunner.html
 #define	albums[5]->title	Roadrunner
-#define	albums[5]->media	12"
+#define	albums[5]->media	12er
 #define	albums[5]->thumb	/images/releases/roadrunner_front
 #define	albums[5]->images	/images/releases/roadrunner_back
 #define	albums[5]->label	glass_records
@@ -448,6 +448,7 @@
 
 #define	albums[11]->type	single
 #define	albums[11]->lookup	rmen
+#define	albums[11]->media	12er
 #define	albums[11]->onalbum	scandal
 #define	albums[11]->href	${jbc_albums}/men.html
 #define	albums[11]->title	Real Men
@@ -526,7 +527,7 @@
 
 #define	albums[12]->type	single
 #define	albums[12]->lookup	human
-#define	albums[12]->media	7", 12"
+#define	albums[12]->media	7er, 12er
 #define	albums[12]->href	${jbc_albums}/jungle.html
 #define	albums[12]->title	The Human Jungle
 #define	albums[12]->label	glass_records
@@ -541,7 +542,7 @@
 #define	albums[13]->lookup	swingin
 #define	albums[13]->label	glass_records
 #define	albums[13]->catalog	HMMM001
-#define	albums[13]->media	7"
+#define	albums[13]->media	7er
 #define	albums[13]->href	${jbc_albums}/pygmies.html
 #define	albums[13]->title	Christmas With The Pygmies
 #define	albums[13]->thumb	/images/cover_pygmies_front
@@ -553,7 +554,7 @@
 
 #define	albums[14]->type	various
 #define	albums[14]->lookup	va_abstract
-#define	albums[14]->media	12"
+#define	albums[14]->media	12er
 #define	albums[14]->href	${jbc_albums}/va_abstract_5.html
 #define	albums[14]->label	Sweatbox
 #define	albums[14]->catalog	SAM 005
@@ -638,7 +639,7 @@
 #define	albums[16]->thumb	/images/releases/nonsense_front
 #define	albums[16]->images	/images/releases/nonsense_back
 #define	albums[16]->dtreleased	1986-04
-#define	albums[16]->dtrecorder	Late 1983 -> Early 1986
+#define	albums[16]->dtrecorded	Late 1983 -> Early 1986
 #define	albums[16]->country	USA, Canada, Australia
 #define	albums[16]->blurb
 	The Jazz Butcher and his group are not in the business of belonging; they are too old and too obstreperous to conform to some attention-seeking image or commercially viable formula. Rather, they bring their not inconsiderable talents to bear on whatever happens to be in the way at the time. The results can only be described as essential.
@@ -760,7 +761,7 @@
 #define	albums[20]->lookup	gift2
 #define	albums[20]->label	glass_records
 #define	albums[20]->catalog		GLACD023
-#define	albums[20]->notes	limited copies contain ${may} 7"
+#define	albums[20]->notes	limited copies contain ${may} 7er
 #define	albums[20]->href	${jbc_albums}/gift2.html
 #define	albums[20]->title	Big Questions (Gift Of Music Volume II)
 #define	albums[20]->thumb	/images/releases/gift2_front
@@ -771,7 +772,7 @@
 #define	albums[21]->type	EP
 #define	albums[21]->lookup	may
 #define	albums[21]->label	glass_records
-#define	albums[21]->media	7"
+#define	albums[21]->media	7er
 #define	albums[21]->catalog	HMMM002
 #define	albums[21]->href	${jbc_albums}/mayi.html
 #define	albums[21]->title	Speedy Gonzalez
@@ -842,7 +843,7 @@
 #define	albums[23]->href	${jbc_albums}/spooky.html
 #define	albums[23]->label	creation_records
 #define	albums[23]->catalog	8721832
-#define	albums[23]->dtrecorded	(Spooky: 1988-05) (Rest: 1988-06-05, Studio 13 CBC)
+#define	albums[23]->dtrecorded	(Spooky: 1988-05, Greenhouse) (Rest: 1988-06-05, Studio 13 CBC)
 #define	albums[23]->title	Spooky EP
 #define	albums[23]->thumb	/images/releases/spooky_12_front
 #define	albums[23]->images	/images/releases/spooky_12_back
@@ -1138,7 +1139,7 @@
 
 #define	albums[28]->type	single
 #define	albums[28]->lookup	welove
-#define	albums[28]->media	12"
+#define	albums[28]->media	12er
 #define	albums[28]->href	${jbc_albums}/weloveyou.html
 #define	albums[28]->label	creation_records
 #define	albums[28]->catalog	CRE083T
@@ -1263,7 +1264,7 @@
     of his dedication to advancing the cause of the jazz
     butcher in australia.
 #define	albums[32]->notes
-    (The liner self-dedication was not approved by Pat!)
+    (The sleeve self-dedication was not approved by Pat!)
 
 #define	albums[33]->type	album,project
 #define	albums[33]->lookup	damn
@@ -2800,7 +2801,7 @@ Please give generously.
 #define	albums[50]->lookup	spacemen12
 #define	albums[50]->type	single,project
 #define	albums[50]->href	${jbc_albums}/sumosonic_spacemen_12.html
-#define	albums[50]->media	12"
+#define	albums[50]->media	12er
 #define	albums[50]->dtreleased	1996-12-05
 #define	albums[50]->label	creation_records
 #define	albums[50]->catalog	CTP242
@@ -2857,12 +2858,12 @@ Please give generously.
 #define	albums[53]->type	single
 #define	albums[53]->lookup	spook12
 #define	albums[53]->href	${jbc_albums}/spooky12.html
-#define	albums[53]->title	Spooky 12"
+#define	albums[53]->title	Spooky 12er
 #define	albums[53]->thumb	/images/releases/spooky_12_front
 #define	albums[53]->images	/images/releases/spooky_12_back
 #define	albums[53]->label	creation_records
 #define	albums[53]->catalog	CRE059T
-#define	albums[53]->media	12"
+#define	albums[53]->media	12er
 #define	albums[53]->dtreleased	1988
 #define	albums[53]->dtrecorded	1988-05
 #define	albums[53]->studio	Greenhouse
@@ -3113,7 +3114,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[69]->title	She's On Drugs
 #define	albums[69]->thumb	/images/releases/shock_drugs_A
 #define	albums[69]->dtreleased	1990
-#define	albums[69]->media	7"
+#define	albums[69]->media	7er
 #define	albums[69]->blurb
 	Double A sided single for the Australian market.
 
@@ -3127,7 +3128,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[70]->thumb	/images/releases/bigtime_jungle_A
 #define	albums[70]->images	/images/releases/bigtime_jungle_B
 #define	albums[70]->dtreleased	1986
-#define	albums[70]->media	7"
+#define	albums[70]->media	7er
 #define	albums[70]->blurb
 	B/W ${smiff}
 
@@ -3140,7 +3141,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[71]->title	VA: A Big Time Sampler
 #define	albums[71]->thumb	/images/releases/bigtime_sampler
 #define	albums[71]->dtreleased	1986
-#define	albums[71]->media	7"
+#define	albums[71]->media	7er
 #define	albums[71]->contribution bigbad
 #define	albums[71]->notes
 	Promotional 7" EP.
@@ -3157,7 +3158,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[72]->thumb	/images/releases/bigtime_angels_A
 #define	albums[72]->images	/images/releases/bigtime_angels_B
 #define	albums[72]->dtreleased	1986
-#define	albums[72]->media	7"
+#define	albums[72]->media	7er
 #define	albums[72]->blurb	B/W ${kitch}
 
 #define	albums[73]->buy     https://thejazzbutcher.bandcamp.com/album/the-wasted-years
@@ -3192,12 +3193,12 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[74]->type	single
 #define	albums[74]->lookup	spook7
 #define	albums[74]->href	${jbc_albums}/spooky7.html
-#define	albums[74]->title	Spooky 7"
+#define	albums[74]->title	Spooky 7er
 #define	albums[74]->label	creation_records
 #define	albums[74]->catalog	CRE059
 #define	albums[74]->thumb	/images/releases/spooky7_A
 #define	albums[74]->images	/images/releases/spooky7_B
-#define	albums[74]->media	7"
+#define	albums[74]->media	7er
 #define	albums[74]->dtreleased	1988
 #define	albums[74]->dtrecorded	1988-05
 #define	albums[74]->studio	Greenhouse
@@ -3506,7 +3507,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[92]->catalog	GLAMS004
 #define	albums[92]->thumb	/images/releases/never7_A
 #define	albums[92]->images	/images/releases/never7_B
-#define	albums[92]->media	7"
+#define	albums[92]->media	7er
 #define	albums[92]->dtreleased	2022
 #define	albums[92]->buy	https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7
 #define	albums[92]->blurb
@@ -3529,8 +3530,8 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[94]->lookup	marnie7
 #define	albums[94]->onalbum	scandal
 #define	albums[94]->href	${jbc_albums}/marnie7.html
-#define	albums[94]->title	Marnie 7"
-#define	albums[94]->media	7"
+#define	albums[94]->title	Marnie 7er
+#define	albums[94]->media	7er
 #define	albums[94]->label	Glass
 #define	albums[94]->catalog	033
 #define	albums[94]->thumb	/images/releases/marnie_front
@@ -3572,7 +3573,7 @@ albums[${li}]
 #	try to find by 'href'
 #
 #live		loop(li, 1, ${albums->numResults})
-#live		if (getval(albums[${li}]->${backupF}) == ${l}.html)
+#live		if (getval(albums[${li}]->${backupF}) = ${jbc_albums}/${l}.html)
 albums[${li}]
 #live		endif
 #live		endloop

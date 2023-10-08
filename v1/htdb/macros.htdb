@@ -4190,7 +4190,7 @@ ${define(_set, false)}
 #live	endif
 #live	if (define(_py, NULL))
 #live	endif
-#live	loop(z, 1982, 2050)
+#live	loop(z, 1981, 2023)
 #live	if (define(_graphG[${z}], 0))
 #live	endif
 #live	if (define(_graphG[${z}]->eg, 0))

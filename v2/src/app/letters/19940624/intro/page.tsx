@@ -9,7 +9,7 @@ import {
 const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title='6Jun94' />
-		<div className="etc">
+		<main className="etc">
 			I have passed the time since <Link href="/letters/19940604">[4Jun94]</Link> ruthlessly instilling
 			an iron discipline within the ranks, and things are starting
 			to happen.  Like - would you believe?  - a live version of
@@ -66,7 +66,7 @@ const Letter = () =>  {
 			Hope that all is groovy out west and that you are having
 			as much fun with the World Cup as I currently am.
 			<p className="clear_float" />
-		</div>
+		</main>
 		<Footer />
 	</>)
 }

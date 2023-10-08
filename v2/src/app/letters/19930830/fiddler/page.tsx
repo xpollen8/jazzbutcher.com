@@ -7,7 +7,7 @@ import { aero, angels, ben, chick, davis, drugs, ghost, go, hour, odd, sis, sue,
 const Letter = () => 
 <>
 	<Header section='letters' title={ [ '30Aug93;;/letters/19930830', 'Mean Fiddler'] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title=<>THAT MEAN <Link href="/gigs/1993/May15.html">FIDDLER SET</Link> LIST IN FULL...</> />
 		<dl>
 			<dd>{sue} (<i>Susie</i>, you fool, it was <i>Susie</i>!  Did I make THAT much of a mess of it?)</dd>
@@ -75,7 +75,7 @@ const Letter = () =>
 				<dd>{walk}</dd>
 			</dl>
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

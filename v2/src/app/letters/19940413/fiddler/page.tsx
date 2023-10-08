@@ -10,7 +10,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', 'Mean Fiddler' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title=<>That {FIDDLER} Set List In Full</> subhead=<Link href="/gigs/1994/Apr8.html">8th April 1994</Link> />
 		<dl>
 		<dd>{davis}</dd>
@@ -49,7 +49,7 @@ const Letter = () =>
 			of the Great God Jaegermeister and then we went home,
 			satisfied.
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

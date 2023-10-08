@@ -8,7 +8,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Gigs' ] } />
-	<div className="etc">
+	<main className="etc">
 		{green} now fully re-assimilated into live line-up, alongside
 		{dooj}, {gab}, {hend} and myself.  Since when we have played:
 		<p />
@@ -94,7 +94,7 @@ const Letter = () =>
 		the Big Z., but went ahead and did it anyway.  Most
 		amusing.
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

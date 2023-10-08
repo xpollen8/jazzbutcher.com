@@ -173,7 +173,7 @@ const parseTitle = (title: string | string[], key0: number) => {
 	if (title?.constructor === Array && title[0]?.constructor === String) {
 		return title?.map((t: string, key: number) => {
 			const [ text, href ] = parseCaptionSourceEtc(t) || [];
-			if (href) return <li key={key0+key}><Link href={href}>{text}</Link></li>;
+			if (href) return <li className="navTop" key={key0+key}><Link href={href}>{text}</Link></li>;
 			return <li key={key0+key}><span aria-current="page">{text}</span></li>;
 		});
 	}
@@ -200,8 +200,8 @@ export const sectionOptions = (match: string) => {
 	return options || [];
 }
 
-const NavSections = (props: { section?: string, title?: any, children?: React.ReactNode }): React.ReactNode  => {
-	const { section, title, children } = props;
+const NavSections = (props: Props_Header): React.ReactNode  => {
+	const { section, title, extraNav } = props;
 
 	if (!section) return;
 	const nav = makeBreadcrumb(section, title) ?? [];
@@ -217,7 +217,7 @@ const NavSections = (props: { section?: string, title?: any, children?: React.Re
 					const useHref = (inParentDirectory) ? `${parent}/${href}` : href;
 					return (
 						<div key={key} className={`navItem ${(depth === 0) ? 'outer' : ''}`}>
-							<Link style={{ width: '100%' }} href={`/${useHref}`}>{title}</Link>
+							<Link href={`/${useHref}`}>{title}</Link>
 							{(summary) && <div style={{ display: 'inline' }} className="date">{' - '}{summary}</div>}
 							{makeMenuOptions(href, depth + 1)}
 						</div>
@@ -230,25 +230,27 @@ const NavSections = (props: { section?: string, title?: any, children?: React.Re
 
 	return (<div aria-label="Breadcrumb" className="breadcrumb w-full">
 		<div className="flex">
-			<div className="w-full">
-				<ul>
-					{nav.map((obj: any, key: number) => {
-						if (obj?.href) {
-							const mainOptions = makeMenuOptions((obj?.href === '/') ? 'jbc' : obj?.href.substr(1), 0);
-							return (
-								<li key={key} className="navTop">
-									<Link id="summary" href={obj.href}>{obj.title}</Link>
-									{!!(mainOptions?.length) && <div className="navOverlay" id="detail"> {mainOptions} </div>}
-								</li>
-							)
-						}
-						return parseTitle(obj.title, key);
-					})}
-					{children}
-				</ul>
-			</div>
-			<div>
-				<PageComments />
+			<ul className="w-full">
+				{nav.map((obj: any, key: number) => {
+					if (obj?.href) {
+						const mainOptions = makeMenuOptions((obj?.href === '/') ? 'jbc' : obj?.href.substr(1), 0);
+						return (
+							<li key={key} className="navTop">
+								<Link id="summary" href={obj.href}>{obj.title}</Link>
+								{!!(mainOptions?.length) && <div className="navOverlay" id="detail"> {mainOptions} </div>}
+							</li>
+						)
+					}
+					return parseTitle(obj.title, key);
+				})}
+			</ul>
+			<div className="flex">
+				<span className="flex">
+					{extraNav}
+				</span>
+				<span className="">
+					<PageComments />
+				</span>
 			</div>
 		</div>
 	</div>)
@@ -278,19 +280,9 @@ where {
 }
  */
 const Header = (props: Props_Header): React.ReactNode  => {
-	//console.log("PATH", props);
-	/* needs work - only works at very top level
-	const searchParams = useSearchParams();
-	const section = searchParams.get('section')
-	console.log("searchParams", searchParams, section, props);
-	if (section) {
-		props.section = section;
-	}
-	*/
 	return (<>
 		<nav>
-			<NavSections {...props} > {props?.extraNav} </NavSections>
-			{props?.children}
+			<NavSections {...props} />
 		</nav>
 		{(props?.project) && <div className={`gig_${props.project}`} ></div>}
 	</>)

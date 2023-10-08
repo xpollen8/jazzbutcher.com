@@ -102,11 +102,11 @@ const Body = () => (<>
 const Auction = () => 
 <>
 	<Header section='auction' />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="Waaaay back in 1997..." subhead="Pat wanted me to auction off a few of his things" />
 		<Body />
 		(the auction results are forthcoming - lotta old HTML to clean up)
-	</div>
+	</main>
 	<Footer />
 </>
 

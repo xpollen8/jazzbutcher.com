@@ -6,7 +6,7 @@ import { max, dj, vu } from '@/lib/defines';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'Eider' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="WHERE IS EIDER MAN?" />
 		<samp>
 			&gt; Tue, 23 Mar 1993<br />
@@ -26,7 +26,7 @@ const Letter = () =>
 			Stupidy, the D.J. ensemble currently find themselves without a
 			record deal.  Any constructive suggestions can be passed on via me.
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

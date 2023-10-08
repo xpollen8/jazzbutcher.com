@@ -9,7 +9,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'News' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title='THE BAD NEWS' />
 		<p />
 		<blockquote>
@@ -77,7 +77,7 @@ const Letter = () =>
 		then, so it will be a full-band-and-guests spectacular.
 		</blockquote>
 
-	</div>
+	</main>
 	<Footer />
 </>
 

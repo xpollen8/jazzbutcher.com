@@ -9,7 +9,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Sister Death' ] } />
-	<div className="letter">
+	<main className="letter">
 		<LetterHeader title=<>THE <Link href="/lyrics/sister_death.html">SISTER DEATH</Link> THING</> />
 		<samp>
 		&gt; Date: Mon, 15 Aug 1994 15:51:08 -0500<br />
@@ -66,7 +66,7 @@ const Letter = () =>
 			as a youth.  Don&apos;t forget, folks - after you stake &apos;em, you got to
 			CHOP OFF THE HEAD, or it ain&apos;t nothing but a sequel in the works.
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

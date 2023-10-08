@@ -8,7 +8,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Politics' ] } />
-	<div className="etc">
+	<main className="etc">
 		<div id="chang" />
 		<LetterHeader title="How can you tell when a politician is lying?" subhead="Their lips move" />
 		<samp>
@@ -77,7 +77,7 @@ const Letter = () =>
 			mention it, they do have a couple of points in common, don&apos;t they?).
 			</blockquote>
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

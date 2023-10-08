@@ -9,7 +9,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Intro' ]} />
-	<div className="etc">
+	<main className="etc">
 		Hello, Boss.
 		<p />
 		Thanks for writing and keeping me up to date with Internet
@@ -54,7 +54,7 @@ const Letter = () =>
 		Kathie sez &quot;Hi&quot;, so do I.
 		Hope all is rockin&apos;
 		<p className="clear_float" />
-	</div>
+	</main>
 	<Footer />
 </>
 

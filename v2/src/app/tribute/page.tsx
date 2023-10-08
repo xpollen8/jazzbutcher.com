@@ -23,7 +23,7 @@ const TributeTrack = ({ title, artist, url, dl, children }: {
 const Tribute = () =>
 <>
 	<Header section="Tribute" />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="THAT TRIBUTE ALBUM IN FULL" subhead="The Butcher writes" />
 		<div className="lyric_annotation">
 			<Image src="https://jazzbutcher.com/images/tribute_notes.jpg" width={301} height={328} alt="Pat&apos;s Tribute Note" style={{ float: "right" }} />
@@ -501,26 +501,21 @@ const Tribute = () =>
 
 			<i>
 			<LetterHeader title="This is the DISCLAIMER." subhead="Please read it.  Thanks!" />
-			<p>
 			Pat, and his legal counsel, have been kind enough to give us the thumbs up on this fun little list project.  He could have
 			easily said no, so let&apos;s all raise our glass of whatever and toast to his health and kindness and well-groomed hair.  
-			</p>
-			<p>
+			<p />
 			Of course, there are several conditions we must abide under.  Firstly, we all understand that the sole owner of any of
 			these works, whether you are singing them or not, is the JBC.  Just because you are doing the cover version does not
 			give you any rights toward it&apos;s ownership.  This means, you cannot put your JBC tribute song on your own band&apos;s cd and
 			sell it for money (not unless you go through the proper channels and arrange for royalties to be paid.)  This also means
 			that you may not sell your JBC Tribute cd (no, not even on E-bay... leave Ebay for those who know how to use it, like
 			David J.)  All in all, don&apos;t do anything that&apos;s gonna piss Pat off...
-			</p>
-			<p>
+			<p />
 			The JBC Tribute cd is for the list only.  It is for fun.  Failure to have fun with it is a horrible crime.  Horrible...
-			</p>
-			<p>
+			<p />
 			Sorry about the lecture, but I had to do it.
-			</p>
 			</i>
-		</div>
+		</main>
 	<Footer />
 </>
 

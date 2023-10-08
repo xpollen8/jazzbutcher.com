@@ -10,7 +10,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', 'Intro' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="13Apr94" />
 		Checking in once again, to say hello and keep your crew
 		of computer-abusers up to date with our latest peregrinations
@@ -50,7 +50,7 @@ const Letter = () =>
 		to the <Link href="/conspirators/martin_stebbing.html">Rev. Botus</Link>,
 		who indicated a desire to do some JBC touring action.
 		<p className="clear_float" />
-	</div>
+	</main>
 	<Footer />
 </>
 

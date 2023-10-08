@@ -16,7 +16,7 @@ import {
 const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={[ '30Aug93;;/letters/19930830', 'The Albums' ]} />
-		<div className="etc">
+		<main className="etc">
 			<LetterHeader title="THE CHURCH OF LOVE IS A BROAD CHURCH:" subhead="Varying impressions on different JBC discs" />
 			<div className="annotation">
 				This is in no way a &quot;defence&quot; of any JBC product.  I
@@ -360,7 +360,7 @@ const Letter = () =>  {
 				<p className="clear_float" />
 			</blockquote>
 			<p />
-		</div>
+		</main>
 		<Footer />
 	</>)
 }

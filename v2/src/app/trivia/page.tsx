@@ -1,13 +1,13 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const Missing = () => 
+const Trivia = () => 
 <>
 	<Header section="trivia" />
-	<div className="etc">
+	<main className="etc">
 		<h1>This section is not yet ported from old JBC site</h1>
-	</div>
+	</main>
 	<Footer />
 </>
 
-export default Missing;
+export default Trivia;

@@ -18,7 +18,7 @@ const topics = [
 const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title='13Apr94' />
-		<div className="etc">
+		<main className="etc">
 			<div className="flex flex-wrap justify-around">
 				<div className="min-w-[50%]">
 					{topics.map(MakeSimpleURI)}
@@ -38,7 +38,7 @@ const Letter = () =>  {
 				</center>
 			</div>
 			</div>
-		</div>
+		</main>
 		<Footer />
 	</>)
 }

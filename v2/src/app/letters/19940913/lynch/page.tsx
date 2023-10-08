@@ -9,7 +9,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'David Lynch' ]} />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title=<>DAVID LYNCH AND <Link href="/lyrics/angels.html">ANGELS</Link></> />
 		<samp>
 		&gt; Date: Sat, 30 Jul 94 15:17:26 EST<br />
@@ -43,7 +43,7 @@ const Letter = () =>
 		and Laurie Anderson use the same pet-psychologist.
 		Dogs on Prozac - it&apos;s already happening!
 		</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

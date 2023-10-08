@@ -9,7 +9,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '6Jun94;;/letters/19940624', 'Top 20 Gigs' ] } />
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="PAT'S THE TOP TWENTY"
 			subhead=<>for any reason
 			<p />
@@ -55,7 +55,7 @@ const Letter = () =>
 			<blockquote>{pat}, {kizzy}, {larry}, {paul}, {green}</blockquote>
 		<Link href="/gigs/1988/Jul1.html">1988-Jul-1</Link>	The Coach House, San Juan Capistrano, {CA}
 			<blockquote>{pat}, {kizzy}, {larry}, {paul}</blockquote>
-	</div>
+	</main>
 	<Footer />
 </>
 

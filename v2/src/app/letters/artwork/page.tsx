@@ -8,7 +8,7 @@ import MakeSimpleURI from '@/components/MakeSimpleURI';
 const Artwork = () => 
 <>
 	<Header section='letters' title='Pat Fish Sketches' />
-	<div className="etc">
+	<main className="etc">
 		<div className="flex flex-wrap justify-around border pt-5">
 			<div className="m-1">
 				<Link href="https://jazzbutcher.com/images/advert.gif">
@@ -42,7 +42,7 @@ const Artwork = () =>
 				<MakeSimpleURI uri="https://adjective.com/images/eg/pmurphy.gif" text="Color Flag &amp; Eg" />
 			</div>
 		</div>
-	</div>
+	</main>
 	<Footer />
 </>
 

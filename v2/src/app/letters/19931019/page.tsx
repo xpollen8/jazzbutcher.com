@@ -19,7 +19,7 @@ const topics = [
 const Letter = () =>
 <>
 	<Header section='letters' title='19Oct93'/>
-	<div className="etc">
+	<main className="etc">
 		<LetterHeader title="DUCK EVERYBODY!  THE OLD FOOL's COMING IN LINE AGAIN..." />
 		<div className="flex flex-wrap justify-around">
 			<div className="min-w-[50%]">
@@ -29,7 +29,7 @@ const Letter = () =>
 				<Image width={351} height={163} alt="[signature]" src="https://jazzbutcher.com/images/19931019/93Oct19_sig.gif" />
 			</div>
 		</div>
-	</div>
+	</main>
 	<Footer />
 </>
 

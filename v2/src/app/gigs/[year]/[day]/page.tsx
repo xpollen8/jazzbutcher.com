@@ -30,7 +30,9 @@ const parsePhoto = (str: string) => {
 			const ext = match[4]?.replace('.','');
 			return { server, base, ext };
 		} else {
-			const [ base, ext ] = str.split('.');
+			const parts = str.split('.');
+			const ext = parts.pop();
+			const base = parts.join('.');
 			return { server: 'https://jazzbutcher.com', base, ext };
 		}
 	}

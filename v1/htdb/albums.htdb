@@ -150,6 +150,15 @@ ${define(lastPer, ${ap[${api}]->performer})}
 #live	if (defined(${prefix}->studio))
 	${a_studio} ${${prefix}->studio}
 #live	endif
+#live	if (defined(${prefix}->Agroove))
+	${a_grv_a} ${${prefix}->Agroove}
+#live	endif
+#live	if (defined(${prefix}->Bgroove))
+	${a_grv_b} ${${prefix}->Bgroove}
+#live	endif
+#live	if (defined(${prefix}->CDring))
+	${a_ring} ${${prefix}->CDring}
+#live	endif
 #live	if (defined(${prefix}->catalog))
 	${a_cat} ${${prefix}->catalog}
 #live	endif

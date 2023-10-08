@@ -22,10 +22,7 @@ const LinkAudio = ({ lookup, parent, datetime, venue, city, title, comment, wav,
 	autolink?: boolean
 	children?: React.ReactNode
 }) => {
-	let rel;
-	if (lookup) {
-		rel = useRelease(lookup);
-	}
+	const rel = useRelease(lookup);
 	const release = rel && rel?.data && rel?.data?.results && rel?.data?.results[0];
 	return <Suspense fallback=<>Loading...</> >
 		<div className="audioPlayer">
@@ -53,7 +50,7 @@ const LinkAudio = ({ lookup, parent, datetime, venue, city, title, comment, wav,
 			{(comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: comment }} /></i>)</span>}
 			{(release?.thumb) && <div className="-mt-1 ml-2 smalltext">From: &quot;{release?.title}&quot; ({release?.type})</div>}
 			<div className="flex">
-				{(!rel?.isLoading && release && release?.thumb) && <>
+				{(lookup && !rel?.isLoading && release && release?.thumb) && <>
 					<Link href={release?.href}>
 						<Image width={60} height={60} alt={lookup} src={`https://jazzbutcher.com${truncAt(';;', release?.thumb)}_250.jpg`} />
 					</Link>

@@ -134,7 +134,7 @@ const GigWith = (data: any) => <><Iterator data={data} func={GigWit} /></>
 
 const GigPlayer = ({ data }: any) => {
 	return (
-		<div style={{ whiteSpace: 'nowrap' }}>
+		<div style={{ whiteSpace: 'nowrap', background: '#fee' }}>
 			{AutoLinkPlayer(data?.performer)}
 			{(data?.instruments?.length) && <>{' '}<span className="smalltext">({data?.instruments?.split(',').join(', ')})</span></>}
 		</div>
@@ -142,7 +142,7 @@ const GigPlayer = ({ data }: any) => {
 }
 const GigPlayers = (data: any) => (
 	<div className="g_who">
-		<Iterator data={data} func={GigPlayer} className="flex flex-wrap gap-5 -ml-3" />
+		<Iterator data={data} func={GigPlayer} className="flex flex-wrap gap-x-5 gap-y-1 -ml-3" />
 	</div>
 )
 
@@ -180,11 +180,13 @@ const GigMap = ({ data }: any) => {
 }
 
 const ExtraNav = ({ gig }: { gig: any }) => {
-	const prev = gig?.prev[0]?.datetime;
-	const next = gig?.next[0]?.datetime;
-	const prevGig = <Link href={`/gigs/` + ts2URI(prev)}><PrevArrow className="arrows" style={{ marginLeft: '10px' }} /></Link>;
-	const nextGig = <Link href={`/gigs/` + ts2URI(next)}><NextArrow className="arrows" style={{ marginRight: '100px' }} /></Link>;
-	return <> {prevGig} gig {nextGig} </>
+	if (gig.prev && gig.next) {
+		const prev = gig?.prev[0]?.datetime;
+		const next = gig?.next[0]?.datetime;
+		const prevGig = <Link href={`/gigs/` + ts2URI(prev)}><PrevArrow className="arrows" style={{ marginLeft: '10px' }} /></Link>;
+		const nextGig = <Link href={`/gigs/` + ts2URI(next)}><NextArrow className="arrows" style={{ marginRight: '100px' }} /></Link>;
+		return <> {prevGig} gig {nextGig} </>
+	}
 }
 
 const Nav = ({ year, datetime, gig }: { year: number, datetime: string, gig: any }) => {

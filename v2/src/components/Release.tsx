@@ -77,7 +77,7 @@ const ReleaseSongList = ({ songs }: { songs: any[] }) => {
 			{songs?.sort((a: any, b: any) => a.type.localeCompare(b.type))?.map((item: any, key: number) => {
 				return <div key={key}>
 					{(!['set','NULL'].includes(item?.type)) && <>{item.type.replace('side', '.')} - </>}
-					{(item?.ordinal) && <span>{item?.ordinal}.</span>} <i>{AutoLinkSong(item?.title)}</i> {(item?.variant) && <span className="date">({item?.variant})</span>} {(!item?.author?.includes('NULL')) && <span className="date">({item?.author})</span>} {(item?.version && !item?.version?.includes('NULL')) && <span className="date">({item?.version})</span>}  
+					{(item?.ordinal) && <span>{item?.ordinal}.</span>} <i>{AutoLinkSong(item?.title)}</i> {(!item?.author?.includes('NULL')) && <span className="date">({item?.author})</span>} {(item?.version && !item?.version?.includes('NULL')) && <span className="date">({item?.version})</span>}  {(item?.variant) && <span className="date">({item?.variant})</span>}
 					{(!['NULL'].includes(item?.media)) && <EmbedMedia data={{ mediaurl: item.media }} />}
 				</div>
 			})}
@@ -122,7 +122,7 @@ const ReleaseNotes = ({ release }: { release: ReleaseTypeWithChildren }) => {
 				{notes?.map(([ note, source, sourceurl, sourcedate ]: any, key: number) =>
 					<div className="listItem" key={key}>
 						<div dangerouslySetInnerHTML={{ __html: note }} />
-						{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
+						{/* NEED TO differentaite between 'notes' and 'announcements' (source) && <Source g={source} u={sourceurl} d={sourcedate} /> */}
 					</div>
 				)}
 				</blockquote>
@@ -276,10 +276,10 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number) => {
 	const lookup = release?.lookup ?? '';
 	const { data, isLoading, error } = useReleaseSongs(lookup);
-	const { songs, results, credits } = data || {};
+	const { songs, credits } = data || {};
 	return (
 		<Suspense fallback=<>Loading...</>>
-			{(!isLoading && release) && (<>
+			{(!isLoading && songs) && (<>
 				<div key={key}><MakeAlbumBlurb {...release} /></div>
 				<ReleaseImages release={release} />
 				<ReleaseDetails release={release} />

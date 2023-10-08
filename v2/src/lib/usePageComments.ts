@@ -41,6 +41,10 @@ const pathname2feedbackURI = (pathname: string) => {
 		if (!uri.endsWith('.html')) return uri + '.html'
 		*/
 		//return uri;
+		const [ section, sub1, sub2 ] = pathname.substr(1).split('/');
+		if (section === 'gigs' && sub2) {
+			return pathname + '.html';
+		}
 	}
 	const usePath = (fullpath(pathname) ?? pathname + '/index.html').substr(1);
 	const ret = `exact/${usePath}`;

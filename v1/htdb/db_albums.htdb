@@ -237,7 +237,7 @@
 	<p />
 	Typesetting by <b>Mr. Crush.</b>
 #define	albums[4]->notes
-	Includes 4 tracks not on the 7" version. All 4 tracks on side B recorded live in the studio. This release includes the exlusive 'Cowgirl Fever'. Not on Any Other Jazz Butcher Release.
+	Includes 4 tracks not on the 7er version. All 4 tracks on side B recorded live in the studio. This release includes the exlusive 'Cowgirl Fever'. Not on Any Other Jazz Butcher Release.
 	A runs on 45RPM, B on 33RPM
 
 #define	albums[5]->type	single
@@ -533,7 +533,7 @@
 #define	albums[12]->label	glass_records
 #define	albums[12]->catalog	Glass 043, 12043
 #define	albums[12]->thumb	/images/junglefront
-#define	albums[12]->images	/images/jungleback;;7" reverse$$/images/releases/human_12_back;;12" reverse
+#define	albums[12]->images	/images/jungleback;;7er reverse$$/images/releases/human_12_back;;12er reverse
 #define	albums[12]->dtreleased	1985-09
 #define	albums[12]->blurb
 	<div class="annotation">The title comes from a rather noir little TV series from the early Sixties wherein the great Herbert Lom played the extremely sexy and not entirely unbrilliant Dr. Alexander Kordu, a psychiatrist with the handy ability to sort out even the most appalling cases within sixty minutes.</div>
@@ -616,7 +616,7 @@
     I dislike.  ON THE OTHER HAND, there's ${angels}, ${fall}, ${world}.
     <p />
     Still, in 1986 the best plan would be to buy the
-    <a href="angels.html">12" single</a> and go see the band
+    <a href="angels.html">12er single</a> and go see the band
     in concert.  Generally, we had it down in concert.  In
     just about every other department, however, we were coming
     to bits, individually and collectively, and to me this
@@ -685,14 +685,15 @@
 
 #define	albums[17]->type	single
 #define	albums[17]->lookup	hard
+#define	albums[17]->media	7er, 12er
 #define	albums[17]->href	${jbc_albums}/hard.html
 #define	albums[17]->title	Hard
 #define	albums[17]->label	glass_records
 #define	albums[17]->catalog		Glass 12046
 #define	albums[17]->dtrecorded	(Hard: 1986-01-08->10, Livingston, N22) (rest: 1985-09 Ace Studio, Bugbrooke)
 #define	albums[17]->thumb	/images/hardfront
-#define	albums[17]->Agroove	(12": roundabout of romance-a porky prime cut) (7": This lobster will run and run...)
-#define	albums[17]->Bgroove	(12": hummer, hummer, hummer, hummer, hummer-a porky prime cut) (7": and run)
+#define	albums[17]->Agroove	(12er: roundabout of romance-a porky prime cut) (7er: This lobster will run and run...)
+#define	albums[17]->Bgroove	(12er: hummer, hummer, hummer, hummer, hummer-a porky prime cut) (7er: and run)
 #define	albums[17]->images	/images/hardback
 #define	albums[17]->dtreleased	1986
 #define	albums[17]->blurb
@@ -778,7 +779,7 @@
 #define	albums[21]->title	Speedy Gonzalez
 #define	albums[21]->thumb	/images/releases/mayi_a
 #define	albums[21]->images	/images/releases/mayi_b
-#define	albums[21]->blurb	Chock full of acoustically and lively delivered cover tunes. Essential.
+#define	albums[21]->blurb	Acoustically and lively delivered cover tunes. Essential.
 #define	albums[21]->dtreleased	1987
 #define	albums[21]->dtrecorded	(A side: 1985-04-25 Melkweg, Amsterdam by R.V.Z. Radio) (B side: 1983, Northampton)
 #define	albums[21]->notes	Included with limited copies of ${gift2}
@@ -1046,6 +1047,8 @@
 #define	albums[26]->href	${jbc_albums}/cult.html
 #define	albums[26]->buy		https://www.amazon.com/Cult-Basement-Jazz-Butcher/dp/B000S17E8W
 #define	albums[26]->title	Cult Of The Basement
+#define	albums[26]->Agroove	boris is still digging the potatoes-a porky prime cut
+#define	albums[26]->Bgroove	egguluos is now digging the potatoes-a porky prime sauteed cut
 #define	albums[26]->thumb	/images/cult
 #define	albums[26]->images	/images/19891119/19891119_del_cult;;Dank;;David Whittemore;;;;1989-11-19$$
 #define	albums[26]->blurb
@@ -2808,7 +2811,7 @@ Please give generously.
 #define	albums[50]->title	Come\, Friendly Spacemen (Club)
 #define	albums[50]->thumb	/images/sumo/sumosonic_spacemen_a
 #define	albums[50]->project sumo
-#define	albums[50]->blurb	<div class="annotation">There is a limited-edition vinyl 12" single in the clubs, featuring the long version of Come, Friendly Spacemen alongside re-mixed by Tom Withers of drum n bass combo Override and Johnny Octopus of Octopus Records. The "Sushi" mix is a full on, dark-hearted progressive house tune with an evil bass; the "Jackson Hole" Mix is an insane collision between stadium pop and drum & bass which has to be heard to be believed. The 12" will also feature Monks Of Kung Fu. Any DJ is urged to get in touch with Creation to get a copy.</div>
+#define	albums[50]->blurb	<div class="annotation">There is a limited-edition vinyl 12er single in the clubs, featuring the long version of Come, Friendly Spacemen alongside re-mixed by Tom Withers of drum n bass combo Override and Johnny Octopus of Octopus Records. The "Sushi" mix is a full on, dark-hearted progressive house tune with an evil bass; the "Jackson Hole" Mix is an insane collision between stadium pop and drum & bass which has to be heard to be believed. The 12er will also feature Monks Of Kung Fu. Any DJ is urged to get in touch with Creation to get a copy.</div>
 #define	albums[50]->dtreleased	1996-12-05
 
 #define	albums[51]->buy
@@ -2835,7 +2838,7 @@ Please give generously.
 #define	albums[52]->country	UK
 #define	albums[52]->href	${jbc_albums}/conspiracy12.html
 #define	albums[52]->title	Conspiracy
-#define	albums[52]->media	LP
+#define	albums[52]->media	12er
 #define	albums[52]->thumb	/images/releases/conspiracy_front
 #define	albums[52]->images	/images/releases/conspiracy_back
 #define	albums[52]->blurb	<div class="annotation">Ever wondered what Max and I get up to away from the glamour of the modern stage? No, probably not, but let me tell you that there is nothing we like better that to get our teeth into those Big Questions.</div>
@@ -2885,7 +2888,7 @@ Please give generously.
 		A lovely interpretation of the Jonathan Richman classic which was originally
 		released in 1979 on the <b>Back In Your Life</b> LP by Jonathan Richman And The
 		Modern Lovers.
-#		The cover version can also be found on the ${va_spark} 12".
+#		The cover version can also be found on the ${va_spark} 12er.
 #define	albums[54]->credit		Perfection As A Hipster;;Andreas.Hering@stud.uni-hannover.de;;2000-10-10
 
 #define	albums[55]->type	single
@@ -3144,12 +3147,13 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[71]->media	7er
 #define	albums[71]->contribution bigbad
 #define	albums[71]->notes
-	Promotional 7" EP.
+	Promotional 7er EP.
 	Was included free in the initial pressing of 830 947-1, Hoodoo Gurus 'Blow Your Cool' LP.
 	Hence reference to 830 947-1 on centre labels, along with "Side 3-Free" and "Side 4-Free"
 
 #define	albums[72]->type	single
 #define	albums[72]->lookup	bigtime_angels
+#define	albums[72]->onalbum	dist
 #define	albums[72]->href	${jbc_albums}/bigtime_angels_kitchen.html
 #define	albums[72]->label	BigTime
 #define	albums[72]->country	Australia

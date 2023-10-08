@@ -150,6 +150,15 @@ ${define(lastPer, ${ap[${api}]->performer})}
 #live	if (defined(${prefix}->studio))
 	${a_studio} ${${prefix}->studio}
 #live	endif
+#live	if (defined(${prefix}->Agroove))
+	${a_grv_a} ${${prefix}->Agroove}
+#live	endif
+#live	if (defined(${prefix}->Bgroove))
+	${a_grv_b} ${${prefix}->Bgroove}
+#live	endif
+#live	if (defined(${prefix}->CDring))
+	${a_ring} ${${prefix}->CDring}
+#live	endif
 #live	if (defined(${prefix}->catalog))
 	${a_cat} ${${prefix}->catalog}
 #live	endif
@@ -3158,7 +3167,7 @@ Previously available on the ${fishco} LP/CD.
 
 	${addAlbumPerf(release=newinv, type=Aside, ordinal=1, song="New Invention")}
 	${addAlbumPerf(release=newinv, type=Bside, ordinal=1, song="Do The Bubonic Plague")}
-	${addAlbumPerf(release=newinv, type=Bside, ordinal=2, song="Almost Brooklyn")}
+	${addAlbumPerf(release=newinv, type=Bside, ordinal=2, song="Almost Brooklyn", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Almost_Brooklyn.mp3)}
 
 	${addAlbumPerf(release=newinv, person=[[person:Pat_Fish]])}
 	${addAlbumPerf(release=newinv, person=[[person:Laurence_O'Keefe]])}
@@ -3260,7 +3269,7 @@ Previously available on the ${fishco} LP/CD.
 
 	${addAlbumPerf(release=may, type=Aside, ordinal=1, song="Speedy Gonzalez")}
 	${addAlbumPerf(release=may, type=Aside, ordinal=2, song="Knocking On Heaven's Door")}
-	${addAlbumPerf(release=may, type=Bside, ordinal=1, song="May I")}
+	${addAlbumPerf(release=may, type=Bside, ordinal=1, song="May I", media=/audio/JazzButcher_MayI.mp3)}
 	${addAlbumPerf(release=may, type=Bside, ordinal=2, song="Over You")}
 
 	${addAlbumPerf(release=may, person=[[person:Pat_Fish]], instruments=guitar\, vocals)}
@@ -4121,11 +4130,11 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=cake, type=Bside, ordinal=1, song="Big Old Wind")}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=2, song="City Of Night")}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=3, song="Sweet Jane")}
-	${addAlbumPerf(release=cake, type=Bside, ordinal=4, song="Affection", version=CD only)}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=4, song="Affection", version=CD only, media=/audio/JazzButcher_Affection.mp3)}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=5, song="Speedy Gonzales", version=CD only)}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=6, song="Knocking On Heaven's Door")}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=7, song="Over You", version=CD only)}
-	${addAlbumPerf(release=cake, type=Bside, ordinal=8, song="May I?", version=CD only)}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=8, song="May I?", version=CD only, media=/audio/JazzButcher_MayI.mp3)}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=9, song="Water", version=CD only)}
 
 	${jbc_footer}

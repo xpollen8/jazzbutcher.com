@@ -3345,7 +3345,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 	A Sampler CD
 
 #define	albums[83]->buy
-#define	albums[83]->type	project,CDR
+#define	albums[83]->type	project,CDR,demo
 #define	albums[83]->project wilson
 #define	albums[83]->lookup	wilson_demo_2005
 #define	albums[83]->href	${jbc_albums}/wilson_demo_2005.html
@@ -3360,7 +3360,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 	Two song demo.
 
 #define	albums[84]->buy
-#define	albums[84]->type	project,CDR
+#define	albums[84]->type	project,CDR,demo
 #define	albums[84]->project wilson
 #define	albums[84]->lookup	wilson_demo_2003
 #define	albums[84]->href	${jbc_albums}/wilson_demo_2003.html
@@ -3381,7 +3381,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 	Two song demo.
 
 #define	albums[85]->buy
-#define	albums[85]->type	project,CDR
+#define	albums[85]->type	project,CDR,demo
 #define	albums[85]->project wilson
 #define	albums[85]->lookup	wilson_demo_2002
 #define	albums[85]->href	${jbc_albums}/wilson_demo_2002.html
@@ -3501,7 +3501,7 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 #define	albums[91]->notes
 Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers.
 <p />
-In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album.
+In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album.;;Mark Cotton;;www.audiowrangler.co.uk;;2021-11-15 01:57:36
 
 #define	albums[92]->type	single
 #define	albums[92]->lookup	never7

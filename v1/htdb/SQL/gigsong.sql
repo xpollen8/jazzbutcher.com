@@ -1970,11 +1970,12 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,14,'Jazz Butche
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,15,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,16,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
 
-INSERT INTO `gigsong` VALUES (NULL,'1990-11-24 16:00:00','set',1,1,'Crocodile Tears And The Velvet Cosh','David J.',NULL,NULL,'http://jazzbutcher.com/audio/1990Nov24/crocodile.mp3',NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1990-11-24 16:00:00','set',1,2,'The Chinese Envoy','John Cale',NULL,NULL,'http://jazzbutcher.com/audio/1990Nov24/chineseenvoy.mp3',NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1990-11-24 16:00:00','set',1,3,'Partytime',NULL,NULL,NULL,'http://jazzbutcher.com/audio/1990Nov24/partytime.mp3',NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1990-11-24 16:00:00','set',1,4,'Pineapple Tuesday',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1990-11-24 16:00:00','set',1,5,'Sweet Jane','Lou Reed',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-11-22 00:00:00','set',1,0,'The Interview',NULL,NULL,NULL,'https://www.kcrw.com/music/shows/bent-by-nature/performance-blue-aeroplanes-jazz-butcher-live-acoustic-1990-live/embed-player',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-11-22 00:00:00','set',1,1,'Crocodile Tears And The Velvet Cosh','David J.',NULL,NULL,'http://jazzbutcher.com/audio/1990Nov24/crocodile.mp3',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-11-22 00:00:00','set',1,2,'The Chinese Envoy','John Cale',NULL,NULL,'http://jazzbutcher.com/audio/1990Nov24/chineseenvoy.mp3',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-11-22 00:00:00','set',1,3,'Partytime',NULL,NULL,NULL,'http://jazzbutcher.com/audio/1990Nov24/partytime.mp3',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-11-22 00:00:00','set',1,4,'Pineapple Tuesday',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-11-22 00:00:00','set',1,5,'Sweet Jane','Lou Reed',NULL,NULL,NULL,NULL,NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-24 20:00:00','set',1,1,"Soul Happy Hour",NULL,"Source: https://www.setlist.fm/setlist/the-jazz-butcher/1990/bogarts-long-beach-ca-23e9e837.html",NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-24 20:00:00','set',1,2,"Caroline Wheeler's Birthday Present",NULL,NULL,NULL,NULL,NULL,NULL);

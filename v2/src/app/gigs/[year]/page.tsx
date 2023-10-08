@@ -25,7 +25,7 @@ const Gigs = () => {
 
 	const ExtraNav = ({ year }: { year: number }) => {
 		const prevGig = (year > 1982) && <Link href={`/gigs/${year - 1}`}><PrevArrow className="arrows" style={{ marginLeft: '10px' }} /></Link>;
-		const nextGig = (year < 2023) && <Link href={`/gigs/${year + 1}`}><NextArrow className="arrows" style={{ marginRight: '100px' }} /></Link>;
+		const nextGig = (year < 2023) && <Link href={`/gigs/${year + 1}`}><NextArrow className="arrows" style={{ marginRight: '30px' }} /></Link>;
 		return <> {prevGig} year {nextGig} </>
 	}
 

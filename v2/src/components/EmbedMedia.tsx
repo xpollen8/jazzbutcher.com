@@ -136,7 +136,8 @@ const	EmbedSoundCloud = ({ data = {}, children }: { data: any, children?: React.
 }
 
 const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { data: any, className?: string, children?: React.ReactNode, disableVideo?: boolean }) => {
-	const { autolink=true, parent, datetime, venue, city, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
+	const { lookup, autolink=true, parent, datetime, venue, city, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate } = data;
+
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);
 	const useMediaurl = (mediaurl && mediaurl.startsWith('/')) ? `https://jazzbutcher.com${mediaurl}` : mediaurl;
@@ -170,7 +171,7 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 				} else if (useMediaurl?.includes('.mp3')) {
 					return (<div className="listenItem drop-shadow-md">
 						{(ordinal > 0) && <span className="listenItemOrdinal">{ordinal}.</span>}
-						<LinkAudio parent={parent} autolink={autolink} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} />
+						<LinkAudio lookup={lookup} parent={parent} autolink={autolink} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} />
 						{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 						{children}
 					</div>)

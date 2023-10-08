@@ -2711,1509 +2711,515 @@ Previously available on the ${fishco} LP/CD.
 
 #define	bus.html
 #live	if (getval(page) = bus.html)
-	${mkHeader(section=albums, title=Waiting For The Love Bus)}
+	${mkAlbumHeader(lookup=bus, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/lovebus.jpg">
-	<img alt="[album cover]" src="${jbc_images}/lovebus_500.jpg"></a>
-#	<a href="${jbc_images}/kiss.jpg">
-#	<img width=179 height=137 alt="[image]" SRC="${jbc_images}/kiss.gif"></a>
-#	<br clear=all>
-	${a_media} ${ALBUM}
-	${a_label} ${creat}, TriStar
-	${a_cat} CRECD156, WK57563
-	${a_dtreleased} 1993
-	${a_eng} Woodhouse Studios, Leeds
-	${det_end}
-	${tun_beg}
-	${davis}
-	<br />${bake}
-	<br />${mall}
-	<br />${whad}
-	<br />${sweet}
-	<br />${ghost}
-	<br />${baltic}
-	<br />${kill}
-	<br />${ben}
-	<br />${penguin}
-	<br />${chang}
-	<br />${stat}
-	<br />${davis} (Reprise ${CD})
-	<br /><${talk} (<b>TriStar Only</b>)
-	<br />${dance} (<b>TriStar Only</b>)
-	${tun_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=bus)}
+	${clearAlbumPerf(release=bus)}
 
-#${addAlbumPerf(release=bus, person=[[person:Pat_Fish]], instruments=Fender Telecaster\, Fender Jaguar\, Yamaha sf-800\, 6 & 12 String Acoustic Guitars\, Keyboards\, Percussion\, Programming\, Vocals, song)} 
-#${addAlbumPerf(release=bus, person=[[person:Richard_Formby]], instruments=Fender Jaguar\, Gibson Firebird\, Burns Electric X11 String\, Programming\, Tapes, song)} 
-#${addAlbumPerf(release=bus, person=[[person:Dooj_Wilkinson]], instruments=Wal Bass Guitar\, Voice, song)} 
-#${addAlbumPerf(release=bus, person=[[person:Nick_Burson]], instruments=Drums, song)} 
-#${addAlbumPerf(release=bus, person=[[person:Peter_Crouch]], instruments=Fender Stratocaster\, Fender Jaguar\, Yamaha sf-800, song)}
+	${addAlbumPerf(release=bus, ordinal=1, song="Rosemary Davis' World Of Sound")}
+	${addAlbumPerf(release=bus, ordinal=2, song="Bakersfield")}
+	${addAlbumPerf(release=bus, ordinal=3, song="Kids In The Mall/Kaliningrad")}
+	${addAlbumPerf(release=bus, ordinal=4, song="Whaddya?")}
+	${addAlbumPerf(release=bus, ordinal=5, song="Sweetwater")}
+	${addAlbumPerf(release=bus, ordinal=6, song="Ghosts")}
+	${addAlbumPerf(release=bus, ordinal=7, song="Baltic")}
+	${addAlbumPerf(release=bus, ordinal=8, song="Killed Out")}
+	${addAlbumPerf(release=bus, ordinal=9, song="Ben")}
+	${addAlbumPerf(release=bus, ordinal=10, song="Penguins")}
+	${addAlbumPerf(release=bus, ordinal=11, song="President Chang")}
+	${addAlbumPerf(release=bus, ordinal=12, song="Angel Station")}
+	${addAlbumPerf(release=bus, ordinal=13, song="Rosemary Davis' World Of Sound", version=Reprise, variant=Compact Disc)}
+	${addAlbumPerf(release=bus, ordinal=14, song="Everybody's Talkin'", variant=Tristar)}
+	${addAlbumPerf(release=bus, ordinal=15, song="Do You Wanna Dance", variant=Tristar)}
 
-#	${pat} (Fender Telecaster, Fender Jaguar, Yamaha sf-800,
-#	6 &amp; 12 String Acoustic Guitars, Keyboards,
-#	Percussion, Programming, Vocals)
-#	<br />${richard} (Fender Jaguar, Gibson Firebird, Burns Electric
-#	<br />X11 String, Programming, Tapes)
-#	<br />${dooj} (Wal Bass Guitar, Voice)
-#	<br />${nick} (Drums)
-#	<br />${pete} (Fender Stratocaster, Fender Jaguar, Yamaha sf-800)
-	${players_end}
-	
-#${addAlbumPerf(release=bus, person=[[person:Richard_Formby]], instruments=producer)} 
-#${addAlbumPerf(release=bus, person=[[person:Richard_Formby]], instruments=engineer)} 
-#${addAlbumPerf(release=bus, person=[[person:Pat_Fish]], instruments=engineer)} 
-#	${production_beg}
-#	Richard Formby
-#	${a_eng}
-#	${richard}, ${pat}
-#	Woodhouse Studios, Leeds
-#	${production_end}
-#	${artist_beg}
-#${addAlbumPerf(release=bus, person=[[person:Pascal_Legras]], instruments=artwork)} 
-#${addAlbumPerf(release=bus, person=[[person:Mark_Brown]], instruments=artwork)} 
-#	Pascal Legras, Mark Brown
-#	${artist_end}
-	${thx_beg}
-	the jbc extend their gratitude to: tony foster for
-	logistics : alaric and rob for amplifiers : ringo's high for
-	acoustics : Mike Stout for dinners, tolerance and `fatback' :
-	the emperors of ice cream for post-historical political
-	orientation (no more years!) : dave and chris of the lyric
-	police for a big saturday and many shed sundays : alan mcgee
-	and joseph james foster for continued faith and support :
-	and kathie mcginty for watching over.
-	${thx_end}
-	${patsays_beg}
-	Too early for me to say, but there's a clean, simple
-	sound to a lot of this that ${blue} detractors might appreciate.
-	It's not a deliberate change of musical policy, just
-	a gradual personal evolution thing.  I'm ten years older
-	now than when I made ${bacon}, and right now, after all that morbid
-	stuff, it only really feels like about three.  There's
-	rockin' shit and there's a big ballad or two and some
-	weird little pop songs and a nice family sing-along about
-	penguins.  I hope you like it.
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#bus, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
-	${mkAlbumPress(album=bus)}
+	${addAlbumPerf(release=bus, person=[[person:Pat_Fish]], instruments=Fender Telecaster\, Fender Jaguar\, Yamaha sf-800\, 6 & 12 String Acoustic Guitars\, Keyboards\, Percussion\, Programming\, Vocals, song)} 
+	${addAlbumPerf(release=bus, person=[[person:Richard_Formby]], instruments=Fender Jaguar\, Gibson Firebird\, Burns Electric X11 String\, Programming\, Tapes, song)} 
+	${addAlbumPerf(release=bus, person=[[person:Dooj_Wilkinson]], instruments=Wal Bass Guitar\, Voice, song)} 
+	${addAlbumPerf(release=bus, person=[[person:Nick_Burson]], instruments=Drums, song)} 
+	${addAlbumPerf(release=bus, person=[[person:Peter_Crouch]], instruments=Fender Stratocaster\, Fender Jaguar\, Yamaha sf-800, song)}
+
+	${addAlbumPerf(release=bus, person=[[person:Richard_Formby]], instruments=producer)} 
+	${addAlbumPerf(release=bus, person=[[person:Richard_Formby]], instruments=engineer)} 
+	${addAlbumPerf(release=bus, person=[[person:Pat_Fish]], instruments=engineer)} 
+	${addAlbumPerf(release=bus, person=[[person:Pascal_Legras]], instruments=artwork)} 
+	${addAlbumPerf(release=bus, person=[[person:Mark_Brown]], instruments=artwork)} 
 
 	${jbc_footer}
 #live	endif
 
 #define	drainglass.html
 #live	if (getval(page) = drainglass.html)
-	${mkHeader(section=albums, title=Draining The Glass 1982 - 86)}
+	${mkAlbumHeader(lookup=drainglass, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/drainglass.jpg">
-	<img alt="[album cover]" src="${jbc_images}/drainglass_500.jpg"></a>
-	${a_media} ${ALBUM}
-	${a_label} Fire, Nectar Masters
-	${a_cat} NTMCD529
-	${a_dtreleased} 1996
-	${a_rec} England 1982 - 86
-#${addAlbumPerf(release=drainglass, person=[[person:Derek_Tomkins]], instruments=engineer)}
-#${addAlbumPerf(release=drainglass, person=[[person:John_A._Rivers]], instruments=engineer)}
-#${addAlbumPerf(release=drainglass, person=[[person:Martin._K._Daley]], instruments=engineer)}
-#${addAlbumPerf(release=drainglass, person=[[person:Tony_Harris]], instruments=engineer)}
-#${addAlbumPerf(release=drainglass, person=[[person:Pat_Fish]], instruments=compiler)}
-#${addAlbumPerf(release=drainglass, person=[[person:Pete_Gardiner]], instruments=compiler)}
-#	${a_eng} Derek Tomkins, ${rivers}, Martin Daley, Tony Harris
-#	${a_comp} ${pat} &amp; Pete Gardiner
-	${det_end}
-	${tun_beg}
-	${smiff}
-	<br />${marn}
-	<br />${jungle}
-	<br />${men}
-	<br />${party}
-	<br />${sat}
-	<br />${reagan}
-	<br />${gf}
-	<br />${count}
-	<br />${wheel}
-	<br />${domest}
-	<br />${zombie}
-	<br />${walk}
-	<br />${gold}
-	<br />${foot}
-	<br />${drink}
-	<br />${nada}
-	<br />${betty}
-	<br />${angels}
-	<br />${drain}
-	${tun_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=drainglass)}
+	${clearAlbumPerf(release=drainglass)}
 
-#${addAlbumPerf(release=drainglass, person=[[person:Owen_Jones]], instruments=drums\, percussion\, organ\, vocals)}
-#${addAlbumPerf(release=drainglass, person=[[person:David_J.]], instruments=bass guitar\, electric guitar\, voice)}
-#${addAlbumPerf(release=drainglass, person=[[person:Max_Eider]], instruments=electric guitar\, acoustic & classical guitars\, voice)}
-#${addAlbumPerf(release=drainglass, person=[[person:Felix_Ray]], instruments=bass guitar\, voice, song="The Human Jungle \, Partytime \, Domestic Animal \, Nothing Special\, Angels")}
-#${addAlbumPerf(release=drainglass, person=[[person:Pat_Fish]], instruments=electric & acoustic guitars\, saxes\, flutes\, organ\, voice)}
-#${addAlbumPerf(release=drainglass, person=[[person:Paul_Taylor]], instruments=trombone, song="D.R.I.N.K.")}
-#${addAlbumPerf(release=drainglass, person=[[person:The_Undead]], instruments=backing vocals, song="Zombie Love")}
-#${addAlbumPerf(release=drainglass, person=[[person:Lionel_Brando]], instruments=drums, song="Zombie Love")}
-#${addAlbumPerf(release=drainglass, person=[[person:Martin_K._Daley]], instruments=bass, song="Zombie Love")}
-#${addAlbumPerf(release=drainglass, person=[[person:Kevin_Haskins]], instruments=drums, song="Jazz Butcher -v- Count Dracula")}
-#${addAlbumPerf(release=drainglass, person=[[person:Rolo_McGinty]], instruments=bass, song="Jazz Butcher -v- Count Dracula")}
-#${addAlbumPerf(release=drainglass, person=[[person:Alice_Thompson]], instruments=organ, song="Jazz Butcher -v- Count Dracula")}
-#
-#	${owen} - drums, percussion, organ, vocals
-#	<br />${dj} - bass guitar, electric guitar, voice
-#	<br />${max} - electric guitar, acoustic &amp; classical guitars, voice
-#	<br />${felix} - bass guitar, voice (${jungle}, ${party}, ${domest}, ${nada} &amp; ${angels})
-#	<br />${pat} - electric &amp; acoustic guitars, saxes, flutes, organ, voice)
-#	<br />With
-#	<br />Paul Taylor - trombone on ${drink}
-#	<br />The Undead - backing vocals on ${zombie}
-#	<br />${lb} - drums on ${zombie}
-#	<br />Martin K. Daley - bass on ${zombie}
-#	<br />${hask} - drums on ${count}
-#	<br />${rolo} - bass on ${count}
-#	<br />${at} - organ on ${count}
-	${players_end}
-	${thx_beg}
-	Special thanks to ${pat} for his co-operation and enthusiasm.
-	${thx_end}
-	${lin_beg}
-	<a href="${jbc_images}/patmax1.jpg"><img width=84 height=84
-		alt="[image]" SRC="${jbc_images}/thumb_patmax1.gif"></a>
-	<b>From The Sports Desk</b>
-	<hr>
-	Those who saw the Jazz Butcher's earliest performances
-	might well be forgiven for entertaining the notion that
-	here were farcial drunks with no drummer, best euphemised
-	as 'eccentric' and kept at a distance.  As the highly
-	excitable Butcher and dapper, unflappable guitarist
-	${max} careered from one ill-advised engagement to the
-	next with a constantly changing band of friends, they
-	delivered a series of wildly erratic shows driven by
-	blind faith and the systematic abuse of cheap liquor. It
-	was hard to tell if these people were for real.  They
-	would roll up in an open-top Triumph Vitesse with bits of
-	drum kit sticking out the back.  Sometimes the Butcher
-	would ride the tube to shows, wearing his sailor hat and
-	carrying his guitar in a cardboard box with a huge
-	drawing of E.T. on it.  Of course, it was the only way
-	they knew how.
-	<p />
-	<a href="${jbc_gigs}/1984/Jan27.html">In January 1984</a>,
-	Max &amp; The Butcher were engaged to appear at a London
-	Polytechnic.  The ensuing debacle, fuelled by Carlsburg
-	Special Brew, saw them both walk offstage at different
-	times, and climaxed with their shadowy friend, The
-	Antchrist, shouting pointlessly from a step ladder.  Word
-	is that they found Mister Jones, the drummer, the
-	following day.  Soon after, ${sm} joined in to play bass
-	and a band existed.
-	<p />
-	Glass Records supremo David E. Barker had built up some
-	curiosity around the Butcher's deceptively professional
-	early singles, and the group now found themselves playing
-	to people who wanted to see them.  Some were disaffected
-	goths, many were Japanese, one of them was ${dj},
-	architect of <i>Bela Lugosi's Dead</i> and eagle-eyed pop
-	detective.  Divid had been watching this nonsense for
-	some time, and soon befriended all the musicians.  With a
-	few dozen beers David signed up 'on loan' to play the
-	bass, and made <a href="${jbc_gigs}/1984/Apr21.html">his
-	debut with the band</a> at Alan McGee's <b>Living Room</b>
-	club in a tiny bar in North London.
-	<p />
-	That was the start of a busy year, from which many of the
-	recordings on this collection come.  David and producer
-	${rivers} taught the band a host of tricks, resulting in
-	the first really professional Jazz Butcher L.P.,
-	${scandal}.  The band also developed an agent and a van.
-	David told the group about The Rider, and they saw that
-	it was good.  In December the group climbed under a duvet
-	on the floor of a Ford Transit and headed for their first
-	European Dates.  They played two <a
-	href="${jbc_gigs}/1984/Dec8.html">magical</a>
-	<a href="${jbc_gigs}/1984/Dec9.html">nights</a> in
-	Hamburg that shaped the lives of many involved.  They
-	drank gluehwein in a lakeside cafe on a Sunday afternoon.
-	The Butcher, whose first reaction to being in Germany had
-	<a href="${jbc_images}/patmax2.jpg"><img width=84 height=84
-		align=left hspace=5
-		alt="[image]" SRC="${jbc_images}/thumb_patmax2.gif"></a>
-	been to hide under a table, had some kind of small
-	epiphany.  They blew all the money in Amsterdam on the
-	way home.
-	<p />
-	Over seven extremely wintry days in January 1985 the band
-	completed another L.P.  ${mercer} (who pointed out that
-	these boys were born the year that Elvis joined the army)
-	had once prophesied that the Butcher's 3rd L.P. would be
-	called 'Doctor Cholmondley Repents'.  But they were
-	young, they were headstrong, they called it ${sex}.  It
-	is the sound of a band at the peak of its creativity, and
-	anyone who saw the group on the ensuing British dates
-	would have a very different opinion to one who had
-	watched the Butcher plummet from the stage of
-	<a href="${jbc_gigs}/1983/Nov23.html">the Embassy
-	back in 1983</a>.
-	<p />
-	Spring 1985 was time for David to go.  The man called
-	${felix} arrived with his big Italian acoustic bass, and
-	the endless touring began.  Between March
-	<a href="${jbc_gigs}/1985/index.html">1985</a> and December
-	<a href="${jbc_gigs}/1986/index.html">1986</a> the
-	Jazz Butcher group played over 200 shows in 12 countries.
-	They took to the life of the amplified itinerant with
-	gusto, even surviving an early setback when the bus
-	seized up in rural Sweden, forcing them to travel in a
-	group with as much equipment as they could carry by train
-	to the next date... <a
-	href="${jbc_gigs}/1985/Mar31.html">in Zurich</a>.  They
-	survived, but only just.  And Felix no longer believes
-	that Switzerland is next door to Sweden.
-	<p />
+	${addAlbumPerf(release=drainglass, person=[[person:Derek_Tomkins]], instruments=engineer)}
+	${addAlbumPerf(release=drainglass, person=[[person:John_A._Rivers]], instruments=engineer)}
+	${addAlbumPerf(release=drainglass, person=[[person:Martin._K._Daley]], instruments=engineer)}
+	${addAlbumPerf(release=drainglass, person=[[person:Tony_Harris]], instruments=engineer)}
+	${addAlbumPerf(release=drainglass, person=[[person:Pat_Fish]], instruments=compiler)}
+	${addAlbumPerf(release=drainglass, person=[[person:Pete_Gardiner]], instruments=compiler)}
 
-	The band took to Europe and vice-versa.  There were
-	festivals in tents with people waving flags, lost
-	weekends in Vienna, mad nights in dimly remembered
-	<a href="${jbc_images}/group1.jpg"><img width=84 height=84
-		align=right hspace=5
-		alt="[image]" SRC="${jbc_images}/thumb_group1.gif"></a>
-	nightclubs, and vodka everywhere.  There was chocolate
-	cake all over Room 27.  '<i>In Europe</i>', beamed The
-	Butcher, '<i>They treat you like a human being instead of
-	a musician</i>'.
-	<p />
+	${addAlbumPerf(release=drainglass, ordinal=1, song="Southern Mark Smith")}
+	${addAlbumPerf(release=drainglass, ordinal=2, song="Marnie")}
+	${addAlbumPerf(release=drainglass, ordinal=3, song="The Human Jungle")}
+	${addAlbumPerf(release=drainglass, ordinal=4, song="Real Men")}
+	${addAlbumPerf(release=drainglass, ordinal=5, song="Partytime")}
+	${addAlbumPerf(release=drainglass, ordinal=6, song="Big Saturday")}
+	${addAlbumPerf(release=drainglass, ordinal=7, song="President Reagan's Birthday Present")}
+	${addAlbumPerf(release=drainglass, ordinal=8, song="Girlfriend")}
+	${addAlbumPerf(release=drainglass, ordinal=9, song="Jazz Butcher -v- Count Dracula")}
+	${addAlbumPerf(release=drainglass, ordinal=10, song="Caroline Wheeler's Birthday Present")}
+	${addAlbumPerf(release=drainglass, ordinal=11, song="Domestic Animal")}
+	${addAlbumPerf(release=drainglass, ordinal=12, song="Zombie Love")}
+	${addAlbumPerf(release=drainglass, ordinal=13, song="Walk With The Devil")}
+	${addAlbumPerf(release=drainglass, ordinal=14, song="Girls Who Keep Goldfish")}
+	${addAlbumPerf(release=drainglass, ordinal=15, song="Bigfoot Motel")}
+	${addAlbumPerf(release=drainglass, ordinal=16, song="D.R.I.N.K.")}
+	${addAlbumPerf(release=drainglass, ordinal=17, song="Nothing Special")}
+	${addAlbumPerf(release=drainglass, ordinal=18, song="Just Like Betty Page")}
+	${addAlbumPerf(release=drainglass, ordinal=19, song="Angels")}
+	${addAlbumPerf(release=drainglass, ordinal=20, song="Down The Drain")}
 
-	They still had their special nights.  A show in Sicily
-	ended with the amplifiers on fire and the Butcher so
-	drunk that he thought he'd got religion.  There was a
-	first, brief foray into Spain that saw three of the group
-	return physically wounded and drained of all bodily
-	fluids.  As they leaned, croaking, on the Heathrow
-	travolator, they were passed by a planeload of Japanese
-	tourists, each one fresh as a daisy and keen to take a
-	look at their first English person.
-	<p />
-	In the summer of 1986 the Jazz Butcher Conspiracy, as
-	they now called themselves, found themselves headlining
-	at a <a href="${jbc_gigs}/1986/Jul3.html">festival of
-	Italian Communist Youth in Naples</a>.  After the show
-	<a href="${jbc_images}/pat1.jpg"><img width=84 height=84
-		align=left hspace=5
-		alt="[image]" SRC="${jbc_images}/thumb_pat1.gif"></a>
-	somebody asked the Butcher '<i>Where are you playing
-	next?</i>' and he found himself having to reply
-	'<i>New York City</i>'.  For Barker had been busy, and
-	unbeknown to the group, <a
-	href="${jbc_albums}/nonsense.html">a compilation of their
-	work</a> was shooting up the American alternative charts.
-	They arrived, bewildered, <a
-	href="${jbc_gigs}/1986/Jul17.html">in New York</a>, to find their
-	album at Number 2, and muddled their way through the
-	North American summer, playing at the top of their form,
-	drinking out of brown paper bags, and striking terror
-	into the Americans by wearing long trousers.
-	<p />
-
-	Felix left to court a lady in Montreal, and was replaced
-	by ${lohan}, while ${green}, an associate of David J.,
-	joined on saxophone.  ${dist} was released in October
-	1986 and the five piece band that toured Britain and
-	Europe in support made a mighty sound; but it was not to
-	last.  <a href="${jbc_gigs}/1986/Nov27.html">On a
-	particularly grim night in Switzerland</a> too much
-	liquor, fatigue, stress and frustration drove Max and the
-	Butcher to engage in a spectacular outbreak of
-	dressing-room-fu, which resulted in Max receding from
-	view on a train the following morn.  The remaining
-	members finished the tour, the last show being in
-	<a href="${jbc_gigs}/1986/Dec20.html">Zaragoza on 20th
-	December 1986</a>
-	<p />
-
-	Mister Jones moved to Germany, where he found new fame
-	gardening for Gunter Grass, playing for the Lost T-Shirts
-	of Atlantis and for his own band, Shakespeare And The
-	Bible.  ${max} released his solo L.P., ${best_kisser} in
-	the summer of 1987, but was ill-served by his record
-	company.  He can still be seen playing live in London and
-	Hamburg.  ${dj} is in ${rocket} and Felix is a
-	photographer.  The Butcher and Alex Green resurfaced
-	about a year down the road on ${creat}.
-	<p />
-
-	In the years they recorded for Glass Records the JBC made
-	four studio albums, <a href="${jbc_albums}/hamburg.html">a
-	live L.P.</a> and eight singles, none of which have been
-	available for almost ten years.  This collection offers
-	<a href="${jbc_images}/group2.jpg"><img width=84 height=84
-		align=right hspace=5
-		alt="[image]" SRC="${jbc_images}/thumb_group2.gif"></a>
-	some of the best moments from that period.  From the
-	primitive early sound of ${foot} (where the Butcher plays
-	drums) to the elaborate soundscapes of ${domest} and
-	${angels} it charts the progress of a gang of friends who
-	stumbled unprepared into a music scene of which they were
-	often deeply suspicious, but which gave them more then
-	they had ever imagined.  Here is music that won the
-	admiration of figures as wildly diverse as Mark E. Smith,
-	Tom Waits, REM, Andrew Eldritch, and Alan McGee.
-	Heartfelt, thoughtless tunes of classic pop, high on
-	hedonism and sharp of tongue: 'eccentric' perhaps by the
-	meretricious standards of the times, but they've nearly
-	all got drums.  Come a little closer, and enjoy.
-	<p />
-
-	<b>Karel ${damm}</b>
-	<br />Ho Chi Mihn City, May 1996
-	${lin_end}
-	${mkAlbumPress(album=drainglass)}
-
+	${addAlbumPerf(release=drainglass, person=[[person:Owen_Jones]], instruments=drums\, percussion\, organ\, vocals)}
+	${addAlbumPerf(release=drainglass, person=[[person:David_J.]], instruments=bass guitar\, electric guitar\, voice)}
+	${addAlbumPerf(release=drainglass, person=[[person:Max_Eider]], instruments=electric guitar\, acoustic & classical guitars\, voice)}
+	${addAlbumPerf(release=drainglass, person=[[person:Felix_Ray]], instruments=bass guitar\, voice, song="The Human Jungle$$Partytime$$Domestic Animal$$Nothing Special$$Angels")}
+	${addAlbumPerf(release=drainglass, person=[[person:Pat_Fish]], instruments=electric & acoustic guitars\, saxes\, flutes\, organ\, voice)}
+	${addAlbumPerf(release=drainglass, person=[[person:Paul_Taylor]], instruments=trombone, song="D.R.I.N.K.")}
+	${addAlbumPerf(release=drainglass, person=[[person:The_Undead]], instruments=backing vocals, song="Zombie Love")}
+	${addAlbumPerf(release=drainglass, person=[[person:Lionel_Brando]], instruments=drums, song="Zombie Love")}
+	${addAlbumPerf(release=drainglass, person=[[person:Martin_K._Daley]], instruments=bass, song="Zombie Love")}
+	${addAlbumPerf(release=drainglass, person=[[person:Kevin_Haskins]], instruments=drums, song="Jazz Butcher -v- Count Dracula")}
+	${addAlbumPerf(release=drainglass, person=[[person:Rolo_McGinty]], instruments=bass, song="Jazz Butcher -v- Count Dracula")}
+	${addAlbumPerf(release=drainglass, person=[[person:Alice_Thompson]], instruments=organ, song="Jazz Butcher -v- Count Dracula")}
 	${jbc_footer}
 #live	endif
 
 #define	closet.html
 #live	if (getval(page) = closet.html)
-	${mkHeader(section=albums, title=Edward's Closet)}
+	${mkAlbumHeader(lookup=closet, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/closet.jpg">
-	<img alt="[album cover]" src="${jbc_images}/closet_500.jpg"></a>
-	${a_media} ${COMP}
-	${a_dtreleased} 1991 (recorded Aug87-Feb90)
-	${a_label} ${creat}
-	${a_cat} CRECD078
-#	${a_eng} ${iain}, ${rivers}, ${kevin}, ${burrell},
-#	${howy}, ${rev}
-#	${addAlbumPerf(release=closet, person=[[person:Iain_O'Higgins]], instruments=engineer)}
-#	${addAlbumPerf(release=closet, person=[[person:John_A._Rivers]], instruments=engineer)}
-#	${addAlbumPerf(release=closet, person=[[person:Kevin_Komoda]], instruments=engineer)}
-#	${addAlbumPerf(release=closet, person=[[person:Tim_Burrell]], instruments=engineer)}
-#	${addAlbumPerf(release=closet, person=[[person:Howard_Turner]], instruments=engineer)}
-#	${addAlbumPerf(release=closet, person=[[person:Martin_Stebbing]], instruments=engineer)}
-#	${addAlbumPerf(release=closet, person=[[person:Lucien_Borderline]], instruments=photography)}
-#	${addAlbumPerf(release=closet, person=[[person:David_Whittemore]], instruments=photography)}
-#	${addAlbumPerf(release=closet, person=[[person:Ben_Davis]], instruments=photography)}
-#	${a_photo} ${lucien}, ${del}, Ben Davis
-#	${addAlbumPerf(release=closet, person=[[person:Alex_Novak]], instruments=sleeve)}
-#	${a_sleev} Alex Novak
-	${det_end}
-	${tun_beg}
-	${odd}
-	<br />${best} (Edgar Wallace Mix)
-	<br />${spooky}
-	<br />${tues}
-	<br />${keep}
-	<br />${drugs}
-	<br />${lineo}
-	<br />${go}
-	<br />${sue}
-	<br />${good}
-	${tun_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=closet)}
+	${clearAlbumPerf(release=closet)}
 
-#${addAlbumPerf(release=closet, person=[[person:Pat_Fish]])}
-#	${addAlbumPerf(release=closet, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#	${addAlbumPerf(release=closet, person=[[person:Paul_Mulreany]], instruments=Drums\, Vocals)}
-#	${addAlbumPerf(release=closet, person=[[person:Laurence_O'Keefe]], instruments=Bass\, Vocals)}
-#	${addAlbumPerf(release=closet, person=[[person:Alex_Green]], instruments=Saxophone)}
-#	${addAlbumPerf(release=closet, person=[[person:Kizzy_O'Callaghan]], instruments=Lead Guitar)}
-#	${addAlbumPerf(release=closet, person=[[person:Richard_Formby]], instruments=Lead Guitar)}
-#	${addAlbumPerf(release=closet, person=[[person:Alex_Lee]], instruments=Lead Guitar)}
-#	${addAlbumPerf(release=closet, person=[[person:Sonic_Boom]], instruments=Guitar)}
-#	${addAlbumPerf(release=closet, person=[[person:Greenwood_Goulding]], instruments=Drums)}
-#	${addAlbumPerf(release=closet, person=[[person:Dave_Morgan]], instruments=Drums)}
-#	${pat} (Rhythm Guitar, Vocals)
-#	<br />${paul} (Drums, Vocals)
-#	<br />${larry} (Bass, Vocals)
-#	<br />${green} (Saxophone)
-#	<br />${kizzy} (Lead Guitar)
-#	<br />${richard} (Lead Guitar)
-#	<br />${lix} (Lead Guitar)
-#	<br />${sonic} (Guitar)
-#	<br />${gould} (Drums)
-#	<br />${morgan} (Drums)
-	${players_end}
-	${lin_beg}
-	So you've got a CD player, have you? I've got a headache
-	and an abiding dislike of expensive food crews in dumb
-	baseball hats.  I've been in Edward's Closet and he wasnt't
-	in.  &quot;That JBC&quot;, they mutter at the bus-stop, &quot;turned
-	left at the light a Long Time Ago&quot;.  Well, there (as
-	the Emperor would have it) it is,
-	<a href="${jbc_people}/von_dammerung.html">Karel</a> always said to
-	me &quot;I think one'll be along in a minute&quot;. <p><img
-	width=289 height=139 src="${jbc_images}/pat_sig.gif">
-	${lin_end}
-	${mkAlbumPress(album=closet)}
+	${addAlbumPerf(release=closet, person=[[person:Iain_O'Higgins]], instruments=engineer)}
+	${addAlbumPerf(release=closet, person=[[person:John_A._Rivers]], instruments=engineer)}
+	${addAlbumPerf(release=closet, person=[[person:Kevin_Komoda]], instruments=engineer)}
+	${addAlbumPerf(release=closet, person=[[person:Tim_Burrell]], instruments=engineer)}
+	${addAlbumPerf(release=closet, person=[[person:Howard_Turner]], instruments=engineer)}
+	${addAlbumPerf(release=closet, person=[[person:Martin_Stebbing]], instruments=engineer)}
+	${addAlbumPerf(release=closet, person=[[person:Lucien_Borderline]], instruments=photography)}
+	${addAlbumPerf(release=closet, person=[[person:David_Whittemore]], instruments=photography)}
+	${addAlbumPerf(release=closet, person=[[person:Ben_Davis]], instruments=photography)}
+	${addAlbumPerf(release=closet, person=[[person:Alex_Novak]], instruments=sleeve)}
+
+	${addAlbumPerf(release=closet, ordinal=1, song="Mr. Odd")}
+	${addAlbumPerf(release=closet, ordinal=2, song="The Best Way", version=Edgar Wallace Mix)}
+	${addAlbumPerf(release=closet, ordinal=3, song="Spooky")}
+	${addAlbumPerf(release=closet, ordinal=4, song="Pineapple Tuesday")}
+	${addAlbumPerf(release=closet, ordinal=5, song="Keeping The Curtains Closed")}
+	${addAlbumPerf(release=closet, ordinal=6, song="She's On Drugs")}
+	${addAlbumPerf(release=closet, ordinal=7, song="Line Of Death")}
+	${addAlbumPerf(release=closet, ordinal=8, song="Girl-Go")}
+	${addAlbumPerf(release=closet, ordinal=9, song="Susie")}
+	${addAlbumPerf(release=closet, ordinal=10, song="The Good Ones")}
+
+	${addAlbumPerf(release=closet, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
+	${addAlbumPerf(release=closet, person=[[person:Paul_Mulreany]], instruments=Drums\, Vocals)}
+	${addAlbumPerf(release=closet, person=[[person:Laurence_O'Keefe]], instruments=Bass\, Vocals)}
+	${addAlbumPerf(release=closet, person=[[person:Alex_Green]], instruments=Saxophone)}
+	${addAlbumPerf(release=closet, person=[[person:Kizzy_O'Callaghan]], instruments=Lead Guitar)}
+	${addAlbumPerf(release=closet, person=[[person:Richard_Formby]], instruments=Lead Guitar)}
+	${addAlbumPerf(release=closet, person=[[person:Alex_Lee]], instruments=Lead Guitar)}
+	${addAlbumPerf(release=closet, person=[[person:Sonic_Boom]], instruments=Guitar)}
+	${addAlbumPerf(release=closet, person=[[person:Greenwood_Goulding]], instruments=Drums)}
+	${addAlbumPerf(release=closet, person=[[person:Dave_Morgan]], instruments=Drums)}
 
 	${jbc_footer}
 #live	endif
 
 #define	conspiracy.html
 #live	if (getval(page) = conspiracy.html)
-	${mkHeader(section=albums, title=Conspiracy)}
+	${mkAlbumHeader(lookup=conspir, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<br /><a href="${jbc_images}/releases/conspiracy_front.jpg">
-	<img src="${jbc_images}/releases/conspiracy_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/conspiracy_back.jpg">
-	<img src="${jbc_images}/releases/conspiracy_back_250.jpg"></a>
-	${a_media} ${LP}
-	${a_label} Glass
-	${a_cat} GLALP 104
-	${a_dtreleased} 1986-05
-	${a_rec} Ace Studio, Bugbrooke, Northants
-#	${addAlbumPerf(release=conspir, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer)}
-#	${addAlbumPerf(release=conspir, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=conspir, person=[[person:Buffalo_Shame]], instruments=sleeve)}
-#	${a_eng} Malcolm Rivett-Carnac
-#	${a_photo} ${mitch}
-#	${a_sleev} Buffalo Shame
-	${a_note} GLALP 104 was included in some copies of ${dist}.
-	${det_end}
-	${a-side_beg}
-	${ever}
-	<br />${lorre}
-	<br />${wind}
-	<br />${consp}
-	${a-side_end}
-	${b-side_beg}
-	${becky}
-	<br />${vienna}
-	<br />${groove} (Original)
-	<br />${you}
-	<br />${thing}
-	${b-side_end}
+	${clearAlbumPerf(release=conspir)}
 
-	${players_beg}
+	${addAlbumPerf(release=conspir, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer)}
+	${addAlbumPerf(release=conspir, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=conspir, person=[[person:Buffalo_Shame]], instruments=sleeve)}
 
-#	${addAlbumPerf(release=conspir, person=[[person:Pat_Fish]])}
-#	${addAlbumPerf(release=conspir, person=[[person:Max_Eider]])}
-#	${addAlbumPerf(release=conspir, person=[[person:Alex_Green]], instruments=Saxophone)}
-	${fetchAlbumPersonnel(release=conspir)}
-#	${pat}
-#	<br />${max}
-#	<br />${green} (Saxophone)
-	${players_end}
-	${thx_beg}
-	This disc is dedicated to the immortal memory of the great
-	Peter Lorre.  You were one of the Big Ones, Peter.
-	${thx_end}
-	${lin_beg}
-	He comes down the platform and talks to you.  &quot;Ever wondered
-	what Max and I get up to away from the glamour of the modern
-	stage?  No, probably not, but let me tell you that there is
-	nothing we like better that to get our teeth into those Big
-	Questions.  In celebration of which, we bring you this
-	collection of tunes, recorded secretly in an obscure rural
-	location, and positively busting with the authentic sound of
-	disco dialectic.&quot;
-	<p>
-	He grinds out a cigarette on Platform 2 of Rugby Railway
-	station and shugs: &quot;You'll be all right&quot;.  Yours ever
-	<p>
-	<img alt="[signature]" width=289 height=139 src="${jbc_images}/pat_sig.gif">
-	<img alt="[signature]" width=312 height=80 src="${jbc_images}/max_sig.gif">
-	${lin_end}
+	${addAlbumPerf(release=conspir, type=Aside, ordinal=1, song="Forever")}
+	${addAlbumPerf(release=conspir, type=Aside, ordinal=2, song="Peter Lorre")}
+	${addAlbumPerf(release=conspir, type=Aside, ordinal=3, song="Big Old Wind")}
+	${addAlbumPerf(release=conspir, type=Aside, ordinal=4, song="Conspiracy")}
+	${addAlbumPerf(release=conspir, type=Bside, ordinal=1, song="Rebecca Wants Her Bike Back")}
+	${addAlbumPerf(release=conspir, type=Bside, ordinal=2, song="Vienna Song")}
+	${addAlbumPerf(release=conspir, type=Bside, ordinal=3, song="Grooving In The Bus Lane", version=Original)}
+	${addAlbumPerf(release=conspir, type=Bside, ordinal=4, song="It Has To Be You")}
+	${addAlbumPerf(release=conspir, type=Bside, ordinal=5, song="Thing")}
+
+	${addAlbumPerf(release=conspir, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=conspir, person=[[person:Max_Eider]])}
+	${addAlbumPerf(release=conspir, person=[[person:Alex_Green]], instruments=Saxophone)}
 
 	${jbc_footer}
 #live	endif
 
 #define	conspiracy12.html
 #live	if (getval(page) = conspiracy12.html)
-	${mkHeader(section=albums, title=Conspiracy (EP))}
+	${mkAlbumHeader(lookup=conspir12, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<br /><a href="${jbc_images}/releases/conspiracy_front.jpg">
-	<img src="${jbc_images}/releases/conspiracy_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/conspiracy_back.jpg">
-	<img src="${jbc_images}/releases/conspiracy_back_250.jpg"></a>
-	${a_media} ${EP}
-	${a_label} Glass
-	${a_cat} GLAEP 104
-	${a_dtreleased} 1986-05
-	${a_rec} Ace Studio, Bugbrooke, Northants
-#	${addAlbumPerf(release=conspir12, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer)}
-#	${addAlbumPerf(release=conspir12, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=conspir12, person=[[person:Buffalo_Shame]], instruments=sleeve)}
-#	${a_eng} Malcolm Rivett-Carnac
-#	${a_photo} ${mitch}
-#	${a_sleev} Buffalo Shame
-	${a_grv_a} we've got a fuzzbox and we jolly well used it
-	${det_end}
-	${a-side_beg}
-	${consp}
-	<br />${ever}
-	${a-side_end}
-	${b-side_beg}
-	${lorre}
-	<br />${wind}
-	${b-side_end}
+	${clearAlbumPerf(release=conspir12)}
 
-	${players_beg}
-	${fetchAlbumPersonnel(release=conspir)}
+	${addAlbumPerf(release=conspir12, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer)}
+	${addAlbumPerf(release=conspir12, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=conspir12, person=[[person:Buffalo_Shame]], instruments=sleeve)}
 
-#	${addAlbumPerf(release=conspir12, person=[[person:Pat_Fish]])}
-#	${addAlbumPerf(release=conspir12, person=[[person:Max_Eider]])}
-#	${addAlbumPerf(release=conspir12, person=[[person:Alex_Green]], instruments=Saxophone)}
-#	${pat}
-#	<br />${max}
-#	<br />${green} (Saxophone)
-	${players_end}
-	${thx_beg}
-	This disc is dedicated to the immortal memory of the great
-	Peter Lorre.  You were one of the Big Ones, Peter.
-	${thx_end}
-	${lin_beg}
-	He comes down the platform and talks to you.  &quot;Ever wondered
-	what Max and I get up to away from the glamour of the modern
-	stage?  No, probably not, but let me tell you that there is
-	nothing we like better that to get our teeth into those Big
-	Questions.  In celebration of which, we bring you this
-	collection of tunes, recorded secretly in an obscure rural
-	location, and positively busting with the authentic sound of
-	disco dialectic.&quot;
-	<p>
-	He grinds out a cigarette on Platform 2 of Rugby Railway
-	station and shugs: &quot;You'll be all right&quot;.  Yours ever
-	<p>
-	<img alt="[signature]" width=289 height=139 src="${jbc_images}/pat_sig.gif">
-	<img alt="[signature]" width=312 height=80 src="${jbc_images}/max_sig.gif">
-	${lin_end}
+	${addAlbumPerf(release=conspir12, type=Aside, ordinal=1, song="Conspiracy")}
+	${addAlbumPerf(release=conspir12, type=Aside, ordinal=2, song="Forever")}
+	${addAlbumPerf(release=conspir12, type=Bside, ordinal=1, song="Peter Lorre")}
+	${addAlbumPerf(release=conspir12, type=Bside, ordinal=2, song="Big Old Wind")}
+
+	${addAlbumPerf(release=conspir12, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=conspir12, person=[[person:Max_Eider]])}
+	${addAlbumPerf(release=conspir12, person=[[person:Alex_Green]], instruments=Saxophone)}
 
 	${jbc_footer}
 #live	endif
 
 #define	cult.html
 #live	if (getval(page) = cult.html)
-	${mkHeader(section=albums, title=Cult Of The Basement)}
+	${mkAlbumHeader(lookup=cult, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/cult.jpg">
-	<img alt="[album cover]" src="${jbc_images}/cult_500.jpg"></a>
-#<a href="http://davidwhittemore.com/images/gallery/cult_photo.jpg">
-#<img alt="[sleeve photo]" width=107 height=82 src="${jbc_images}/scult2.gif"></a>
-	<a href="${jbc_images}/19891119/19891119_del_cult.jpg">
-		<img width="250" height="160" alt="[photo]"
-		src="${jbc_images}/19891119/19891119_del_cult_250.jpg"></a>
-	${a_media} ${ALBUM}
-	${a_label} ${creat}, Rough Trade
-	${a_cat} CRECD062, RUS 83-2
-	${a_dtreleased} 1990
-	${a_rec} Raven, Norfolk
-#${addAlbumPerf(release=cult, person=[[person:Howard_Turner]], instruments=engineer)}
-#${addAlbumPerf(release=cult, person=[[person:Tim_Burrell]], instruments=engineer)}
-#${addAlbumPerf(release=cult, person=[[person:Martin_Stebbing]], instruments=engineer)}
-#${addAlbumPerf(release=cult, person=[[person:Martin_Stebbing]], instruments=producer)}
-#${addAlbumPerf(release=cult, person=[[person:Pat_Fish]], instruments=producer)}
-#${addAlbumPerf(release=cult, person=[[person:Alastair_Indge]], instruments=photography)}
-#${addAlbumPerf(release=cult, person=[[person:David_Whittemore]], instruments=photography)}
-#${addAlbumPerf(release=cult, person=[[person:Pascal_Legras]], instruments=sleeve)}
-#	${a_eng} ${howy}, ${burrell}, ${rev}
-#	${a_prod} ${rev}, ${pat}
-#	${a_photo} ${indge}, ${del}
-#	${a_sleev} Pascal Legras
-	${a_grv_a} boris is still digging the potatoes-a porky prime cut
-	${a_grv_b} egguluos is now digging the potatoes-a porky prime sauteed cut
-	${det_end}
-	${a-side_beg}
-	${baset}
-	<br />${drugs}
-	<br />${tues}
-	<br />${onion}
-	<br />${daycare} (${CD} only)
-	<br />${zeppo}
-	${a-side_end}
-	${b-side_beg}
-	${fert}
-	<br />${odd}
-	<br />${euph}
-	<br />${panic}
-	<br />${go}
-	<br />${bait}
-	<br />${sis}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=cult)}
+	${clearAlbumPerf(release=cult)}
 
-#${addAlbumPerf(release=cult, person=[[person:Paul_Mulreany]], instruments=Drums\, Vocals, song=NULL)}
-#${addAlbumPerf(release=cult, person=[[person:Laurence_O'Keefe]], instruments=Bass\, Vocals, song=NULL)}
-#${addAlbumPerf(release=cult, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar, song=NULL)}
-#${addAlbumPerf(release=cult, person=[[person:Richard_Formby]], instruments=Guitar, song=NULL)}
-#${addAlbumPerf(release=cult, person=[[person:Alex_Green]], instruments=Saxophone, song=NULL)}
-#${addAlbumPerf(release=cult, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals, song=NULL)}
-#${addAlbumPerf(release=cult, person=[[person:Sumishta_Brahm]], instruments=Vocals)}
-#${addAlbumPerf(release=cult, person=[[person:ALex_Lee]], instruments=Lead Guitar)}
+	${addAlbumPerf(release=cult, person=[[person:Howard_Turner]], instruments=engineer)}
+	${addAlbumPerf(release=cult, person=[[person:Tim_Burrell]], instruments=engineer)}
+	${addAlbumPerf(release=cult, person=[[person:Martin_Stebbing]], instruments=engineer)}
+	${addAlbumPerf(release=cult, person=[[person:Martin_Stebbing]], instruments=producer)}
+	${addAlbumPerf(release=cult, person=[[person:Pat_Fish]], instruments=producer)}
+	${addAlbumPerf(release=cult, person=[[person:Alastair_Indge]], instruments=photography)}
+	${addAlbumPerf(release=cult, person=[[person:David_Whittemore]], instruments=photography)}
+	${addAlbumPerf(release=cult, person=[[person:Pascal_Legras]], instruments=sleeve)}
 
-#	${paul} (Drums, Vocals)
-#	<br />${larry} (Bass, Vocals)
-#	<br />${kizzy} (Guitar)
-#	<br />${richard} (Guitar)
-#	<br />${green} (Saxophone)
-#	<br />${pat} (Guitar, Vocals)
-	${players_end}
-	${thx_beg}
-	Editing and Knife Work by Mantor, Cartography by Eggulos,
-	Analogue Provocateurs: Laurence and Mantor, Element of
-	Danger: Dave Francolini, Telecasters and Basement: Harry,
-	Justice and Security: Judge Malloy &amp; Mark Hatt, Agency:
-	Barry Campbell at A.B.S., Management: Philip Thain, The
-	Butcher's Publisher: Complete Music Limited.
-	${thx_end}
-	${lin_beg}
-	"<b>Basement</b>"; the word
-	smacks of oily concrete parking lots, hotel elevators and
-	bulky, bovine [spongiform] laundry baskets.  The
-	Basement; as far down as we go.
-	<p>
-	It oughtn't, by rights, to have had a garden.  Oh, the
-	initial impression was just right!  Seedy London
-	frontage; scrawled cardboard messages by the bell; a
-	dark, intricate descent through too many doors, perfect
-	underground T.V. squalor, beyond the mysteries of Edgar
-	Wallace late at night in black and white and what's that 
-	sudden pain in the small of my back?
-	<p>
-	Once through that final door, things would take an
-	unexpected turn.  I'm entering the chamber now.  Whoa!
-	The jackal-headed dead!  Excellent!  Music and dancing
-	and improbable combinations of Czech beer and
-	Jalape&ntilde;os!  Doors flung open to an ivied yard where
-	the randomly seditious lounge on cushions and hoot at the
-	stars and that singular man next door.  Sometimes friends
-	of friends would come by and take it for a nightclub.
-	But it wasn't a nightclub, it was a basement.
-	<p>
-	The big red bedford mobile nation state rolls on, and,
-	rolling, cannot stop.  Miles in darkness to the appointed
-	spot, deep wold evil dead killers wind shelter: beans,
-	bitburger and no such thing as noise reduction.  Mules in
-	the night, mantor and eggulos tremble at the head of the 
-	board, waiting for the great infector to make with the
-	knife.  Stray Americans, stray steg, nice.
-	<p>
-	Dank!  teeth and hair fall out.  Fingernails keep
-	growing.  The pump is out, the night is dark, we're
-	waiting for Mary.  Don't go out to the beer shack.  Those
-	jackal-headed dead could be on the lurk.  Voluptuously of
-	course, it looked like a farmhouse.  But it wasn't a
-	farmhouse, it was a basement.
-	<p>
-	<a href="${jbc_people}/von_dammerung.html">
-	Karel Von D&auml;mmerung</a>, Wien 1990.
-	${lin_end}
-	${patsays_beg}
-	Well, if things seemed weird back in February 1989, by
-	January 1990, when we made this baby, the Weird were
-	going shopping on bikes.  With Kizzy sick and unable
-	to tour, ${richard} had joined and, during a long
-	US/Canadian tour has turned us all on to Can and a lot
-	of other weird things. 
-	<p>
-	In a farmhouse in the dead of winter, in personal circumstances
-	too bizarre and complex to relate, we set about making
-	our &quot;commercial suicide&quot; album.  When we delivered it
-	to ${creat} they did their nuts and said it was the best
-	thing we'd done in years. It took me a while to figure
-	it out, but then I agreed with them. 
-	<p>
-	For the first time, I felt, we had made an album that
-	really sounded like us.  In retrospect, one or two of
-	the tunes are a touch throwaway, and EVERYBODY hates
-	poor ol' ${bait}, but you get ${go}, ${drugs} AND ${sis} AND
-	${odd} all on one record! Goodness!  This record does have
-	personality.  It also has ${lix} on guitar, the start of another
-	beautiful friendship. One of my favourites, this.
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#cult, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
-	${mkAlbumPress(album=cult)}
+	${addAlbumPerf(release=cult, type=Aside, ordinal=1, song="The Basement")}
+	${addAlbumPerf(release=cult, type=Aside, ordinal=2, song="She's On Drugs")}
+	${addAlbumPerf(release=cult, type=Aside, ordinal=3, song="Pineapple Tuesday")}
+	${addAlbumPerf(release=cult, type=Aside, ordinal=4, song="The Onion Field")}
+	${addAlbumPerf(release=cult, type=Aside, ordinal=5, song="Daycare Nation", variant=Compact Disc only)}
+	${addAlbumPerf(release=cult, type=Aside, ordinal=6, song="My Zeppelin")}
+	${addAlbumPerf(release=cult, type=Bside, ordinal=1, song="Fertiliser")}
+	${addAlbumPerf(release=cult, type=Bside, ordinal=2, song="Mr. Odd")}
+	${addAlbumPerf(release=cult, type=Bside, ordinal=3, song="After The Great Euphrates")}
+	${addAlbumPerf(release=cult, type=Bside, ordinal=4, song="Panic In Room 109")}
+	${addAlbumPerf(release=cult, type=Bside, ordinal=5, song="Girl-Go")}
+	${addAlbumPerf(release=cult, type=Bside, ordinal=6, song="Turtle Bait")}
+	${addAlbumPerf(release=cult, type=Bside, ordinal=7, song="Sister Death")}
+
+	${addAlbumPerf(release=cult, person=[[person:Paul_Mulreany]], instruments=Drums\, Vocals)}
+	${addAlbumPerf(release=cult, person=[[person:Laurence_O'Keefe]], instruments=Bass\, Vocals)}
+	${addAlbumPerf(release=cult, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar)}
+	${addAlbumPerf(release=cult, person=[[person:Richard_Formby]], instruments=Guitar)}
+	${addAlbumPerf(release=cult, person=[[person:Alex_Green]], instruments=Saxophone)}
+	${addAlbumPerf(release=cult, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals)}
+	${addAlbumPerf(release=cult, person=[[person:Sumishta_Brahm]], instruments=Vocals)}
+	${addAlbumPerf(release=cult, person=[[person:ALex_Lee]], instruments=Lead Guitar)}
 
 	${jbc_footer}
 #live	endif
 
 #define	distressed.html
 #live	if (getval(page) = distressed.html)
-	${mkHeader(section=albums, title=Distressed Gentlefolk)}
+	${mkAlbumHeader(lookup=dist, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/gentle.jpg">
-	<img alt="[album cover]" src="${jbc_images}/gentle_500.jpg"></a>
-	${a_media} ${ALBUM}
-	${a_label} Glass, BigTime
-	${a_cat} GLACD020, 6021-2
-	${a_dtreleased} 1986-10
-	${a_rec} May 1986, Woodbine St. Studios, Royal Leamington Spa
-#${addAlbumPerf(release=dist, person=[[person:John_A._Rivers]], instruments=engineer)}
-#${addAlbumPerf(release=dist, person=[[person:Richard_Dumas]], instruments=photography)}
-#${addAlbumPerf(release=dist, person=[[person:Lionel_Brando]], instruments=sleeve)}
-#	${a_eng} ${rivers}
-#	${a_photo} Richard Dumas
-#	${a_sleev} Lionel Brando
-	${a_note} limited BigTime copies contain an extended ${conspir} LP.
-	${det_end}
-	${a-side_beg}
-	${fall}
-	<br />${bigbad}
-	<br />${kitch}
-	<br />${sa} (${CD} only)
-	<br />${hung}
-	<br />${world}
-	${a-side_end}
-	${b-side_beg}
-	${who}
-	<br />${domest}
-	<br />${shame}
-	<br />${nada}
-	<br />${angels}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=dist)}
+	${clearAlbumPerf(release=dist)}
 
-#${addAlbumPerf(release=dist, person=[[person:Pat_Fish]], song=NULL)}
-#${addAlbumPerf(release=dist, person=[[person:Max_Eider]], song=NULL)}
-#${addAlbumPerf(release=dist, person=[[person:Owen_Jones]], song=NULL)}
-#${addAlbumPerf(release=dist, person=[[person:Felix_Ray]], song=NULL)}
-#${addAlbumPerf(release=dist, person=[[person:Mark_Steeds]], instruments=Piano, song='Who Loves You Now?')}
-#${addAlbumPerf(release=dist, person=[[person:John_A._Rivers]], instruments=Backing Vocals, song='Domestic Animal')}
-#${addAlbumPerf(release=dist, person=[[person:John_A._Rivers]], instruments=Backing Vocals, song='Buffalo Shame')}
-#	${pat}
-#	<br />${max}
-#	<br />${owen}
-#	<br />${felix}
-#	<br />Mark Steeds (Piano on ${who})
-#	<br />${rivers} (Backing Vocals on ${domest} and ${shame})
-	${players_end}
-	${thx_beg}
-	Special thanks and regards to John Silver, Barney,
-	Francisco, Brian at The George, Eric and Julian, Philip and
-	Eleanor and ${space}.
-	${thx_end}
-	${patsays_beg}
-	A Sri Lankan gentleman once sat down beside me in a bar
-	in Bremen, asked me to sign his copy of this record,
-	and then, even as I wrote messages of good luck and global
-	harmony, announced sternly &quot;This is a very...bad record.&quot;
-	He was a berk, but he had a point.  Alan McGee and a number
-	of people in France, America and The Music Business have
-	called this one a &quot;classic album&quot;.  People do, of course,
-	say much the same about &quot;Dark Side Of The Moon&quot;.  Can
-	you hear my flesh creeping?  Germans, on the other hand,
-	despise it almost universally. 
-	<p>
-	We were deeply confused young men when we made this record.
-	Max, Jones and I had all been drinking dangerously for
-	over a year now, and the poor bass player who replaced
-	David was finding it almost impossible to keep up with
-	our twisted thought patterns.  Do you like my bass playing?
-	That's me on ${shame}, ${sa} and a couple of others. 
-	<p>
-	By now, effectively, Max and I had totally lost any sense
-	of quality control on my writing.  Tragic and sincere
-	or glib and ludicrous, we recorded EVERYTHING.  Sent
-	in to make demos for this l.p.  Max and I came out with
-	${conspir} where we squandered a couple of great ideas that
-	this l.p. so badly needs.  ${rivers} you'll notice, has
-	bought a new reverb unit, a Lexicon, in fact.  He's also
-	taken to recording digitally.  The ensuing absurd gloss,
-	matched with an absence of native intelligence around
-	the bottom end, gives a lot of the songs a sound that
-	I dislike.  ON THE OTHER HAND, there's ${angels}, ${fall}, ${world}. 
-	<p>
-	Still, in 1986 the best plan would be to buy the
-	<a href="angels.html">12" single</a> and go see the band
-	in concert.  Generally, we had it down in concert.  In
-	just about every other department, however, we were coming
-	to bits, individually and collectively, and to me this
-	record actually shows the morbid state of things at the
-	time.  Not, of course, that we really noticed any of
-	this until months later, when, confronted by the realitied
-	of having been on an accidental two-year intercontinental
-	binge, we retired damaged, leaving the group in pieces.
-	Oh, and another thing about <b>Gentlefolk</b>... it's
-	pretentious too.
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#dist, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
-	${mkAlbumPress(album=dist)}
+	${addAlbumPerf(release=dist, person=[[person:John_A._Rivers]], instruments=engineer)}
+	${addAlbumPerf(release=dist, person=[[person:Richard_Dumas]], instruments=photography)}
+	${addAlbumPerf(release=dist, person=[[person:Lionel_Brando]], instruments=sleeve)}
+
+	${addAlbumPerf(release=dist, type=Aside, ordinal=1, song="Falling In Love")}
+	${addAlbumPerf(release=dist, type=Aside, ordinal=2, song="Big Bad Thing")}
+	${addAlbumPerf(release=dist, type=Aside, ordinal=3, song="Still In The Kitchen")}
+	${addAlbumPerf(release=dist, type=Aside, ordinal=4, song="South America", variant=Compact Disc only)}
+	${addAlbumPerf(release=dist, type=Aside, ordinal=5, song="Hungarian Love Song")}
+	${addAlbumPerf(release=dist, type=Aside, ordinal=6, song="The New World")}
+	${addAlbumPerf(release=dist, type=Bside, ordinal=1, song="Who Loves You Now?")}
+	${addAlbumPerf(release=dist, type=Bside, ordinal=2, song="Domestic Animal")}
+	${addAlbumPerf(release=dist, type=Bside, ordinal=3, song="Buffalo Shame")}
+	${addAlbumPerf(release=dist, type=Bside, ordinal=4, song="Nothing Special")}
+	${addAlbumPerf(release=dist, type=Bside, ordinal=5, song="Angels")}
+
+	${addAlbumPerf(release=dist, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=dist, person=[[person:Max_Eider]])}
+	${addAlbumPerf(release=dist, person=[[person:Owen_Jones]])}
+	${addAlbumPerf(release=dist, person=[[person:Felix_Ray]])}
+	${addAlbumPerf(release=dist, person=[[person:Mark_Steeds]], instruments=Piano, song="Who Loves You Now?")}
+	${addAlbumPerf(release=dist, person=[[person:John_A._Rivers]], instruments=Backing Vocals, song="Domestic Animal")}
+	${addAlbumPerf(release=dist, person=[[person:John_A._Rivers]], instruments=Backing Vocals, song="Buffalo Shame")}
 
 	${jbc_footer}
 #live	endif
 
 #define	fishcotheque.html
 #live	if (getval(page) = fishcotheque.html)
-	${mkHeader(section=albums, title=Fishcotheque)}
+	${mkAlbumHeader(lookup=fishco, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/fishco.jpg">
-	<img alt="[album cover]" src="${jbc_images}/fishco_500.jpg"></a>
-	<a href="${jbc_images}/fishco2.jpg">
-	<img alt="[sleeve photo]" src="${jbc_images}/fishco2_250.jpg"></a>
-	<a href="${jbc_images}/fishco3.jpg">
-	<img alt="[sleeve photo]" src="${jbc_images}/fishco3_250.jpg"></a>
-	${a_media} ${ALBUM}
-	${a_label} ${creat}, Relativity
-	${a_cat} CRECD027, 88561-8223-2
-	${a_dtreleased} 1988
-	${a_rec} Alaska, Waterloo
-#${addAlbumPerf(release=fishco, person=[[person:Iain_O'Higgins]], instruments=engineer)}
-#${addAlbumPerf(release=fishco, person=[[person:Iain_O'Higgins]], instruments=producer)}
-#${addAlbumPerf(release=fishco, person=[[person:Pat_Fish]], instruments=producer)}
-#${addAlbumPerf(release=fishco, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${a_eng} ${iain}
-#	${a_prod} ${pat}, ${iain}
-#	${a_photo} ${mitch}
-#	${a_sleev} by accident
-	${det_end}
-	${a-side_beg}
-	${next}
-	<br />${touch}
-	<br />${wrong}
-	<br />${village}
-	<br />${swell}
-	${a-side_end}
-	${b-side_beg}
-	${49}
-	<br />${best}
-	<br />${chick}
-	<br />${sue}
-	<br />${keep}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=fishco)}
+	${clearAlbumPerf(release=fishco)}
 
-#${addAlbumPerf(release=fishco, person=[[person:Pat_Fish]], instruments=Songs\, Vocals\, Instruments, song=NULL)}
-#${addAlbumPerf(release=fishco, person=[[person:Kizzy_O'Callaghan]], instruments=Guitars\, Vocals, song=NULL)}
-#${addAlbumPerf(release=fishco, person=[[person:Alex_Green]], instruments=Saxophones, song=NULL)}
-#${addAlbumPerf(release=fishco, person=[[person:Greenwood_Goulding]], instruments=Bass Guitar, song=NULL)}
-#${addAlbumPerf(release=fishco, person=[[person:Dave_Morgan]], instruments=Drums, song=NULL)}
-#${addAlbumPerf(release=fishco, person=[[person:Erol_Suleyman]], instruments=Bass, song='Lot 49')}
-#${addAlbumPerf(release=fishco, person=[[person:Blair_MacDonald]], instruments=Drums, song='Lot 49')}
-#${addAlbumPerf(release=fishco, person=[[person:Laurence_O'Keefe]], instruments=Bass, song='Swell')}
-#${addAlbumPerf(release=fishco, person=[[person:Sonic_Boom]], instruments=Feedback, song='Susie')}
-#${addAlbumPerf(release=fishco, person=[[act:The_Perfect_Disaster]], instruments=Backing Vocals, song='The Best Way')}
+	${addAlbumPerf(release=fishco, person=[[person:Iain_O'Higgins]], instruments=engineer)}
+	${addAlbumPerf(release=fishco, person=[[person:Iain_O'Higgins]], instruments=producer)}
+	${addAlbumPerf(release=fishco, person=[[person:Pat_Fish]], instruments=producer)}
+	${addAlbumPerf(release=fishco, person=[[person:Mitch_Jenkins]], instruments=photography)}
 
-#	${pat} (Songs, Vocals, Instruments)
-#	<br />${kizzy} (Guitars, Vocals)
-#	<br />${green} (Saxophones)
-#	<br />${gould} (Bass Guitar)
-#	<br />${morgan} (Drums)
-#	<br />${erol} (Bass on ${49})
-#	<br />${blair} (Drums on ${49})
-#	<br />${larry} (Bass on ${swell})
-#	<br />${sonic} (Feedback on ${sue})
-#	<br />${perfect} (Backing Vocals on ${best})
-	${players_end}
-	${thx_beg}
-	Samples courtesy of Unit Csawza, Northampton and Frank Bruno
-	Family Favourites, Springfield, Mass.
-	Sandwiches by `The Pantry' Waterloo Road, London. SE1,
-	Liquors by `The Wellington Tavern', Waterloo Road, London.
-	SE1, Thanks to: Mark, Dee, Phil, Eleanor, Robin, Barbara,
-	Jaz, Dan, Sonic, Gilles, A Riot of Colour for X11 string,
-	Jeff, all at ${creat}, and especially to Frank from Hamburg,
-	for taking me out one crucial Wednesday night.
-	${thx_end}
-	${patsays_beg}
-	Having ended up on ${creat}, which I took as a bit of
-	a validation, I was keen to get as far away from all
-	those &quot;w&quot; words that had followed my group around, and
-	to make it as clear as I could that this was a rock &
-	roll thing, not some &quot;eccentricity&quot;. I had my shades
-	and I had my fringed suede jacket and I had the
-	${weather} rhythm section.
-	<p>
-	In the last flickering days before Marriage and Acid
-	House would change the world Kizzy and I hung out in
-	his dealer's flat in Islington and WALKED to the studio
-	in Waterloo everyday.  The sessions were chaotic and
-	funny.  At one stage Kizzy arrived 56 hours late for
-	a mix, having been held by the Police under the Prevention
-	of Terrorism Act.
-	<p>
-	<a href="${jbc_people}/david_whittemore.html">David</a> has
-	this down right as a sort of self-justificatory thing.
-	What disappoints me is that it came out sounding so SMOOTH
-	and tidy.  I'd hoped it would be more harsh and mad.
-	I guess perhaps it's the saxes, which, I recall, enraged
-	some reviewers.  ${sonic} does good things on ${sue} (that's
-	4 of them big ballads at least, now), that was more the
-	idea.  Still, not to slag O'Higgins, who began a lengthy
-	association with the JBC on this recording.
-	<p>
-	This sold rather well, which was pleasing, and seems
-	widely liked.  I can't fuck with that, but I had hoped
-	that it would be more a &quot;change of direction&quot; than it
-	was.  But I like <b>Fishcotheque</b>;
-	I wish there more records as good as it.
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#fishco, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
-	${mkAlbumPress(album=fishco)}
+	${addAlbumPerf(release=fishco, type=Aside, ordinal=1, song="Next Move Sideways")}
+	${addAlbumPerf(release=fishco, type=Aside, ordinal=2, song="Out Of Touch")}
+	${addAlbumPerf(release=fishco, type=Aside, ordinal=3, song="Get It Wrong")}
+	${addAlbumPerf(release=fishco, type=Aside, ordinal=4, song="Living In A Village")}
+	${addAlbumPerf(release=fishco, type=Aside, ordinal=5, song="Swell")}
+	${addAlbumPerf(release=fishco, type=Bside, ordinal=1, song="Looking For Lot 49")}
+	${addAlbumPerf(release=fishco, type=Bside, ordinal=2, song="The Best Way")}
+	${addAlbumPerf(release=fishco, type=Bside, ordinal=3, song="Chickentown")}
+	${addAlbumPerf(release=fishco, type=Bside, ordinal=4, song="Susie")}
+	${addAlbumPerf(release=fishco, type=Bside, ordinal=5, song="Keeping The Curtains Closed")}
+
+	${addAlbumPerf(release=fishco, person=[[person:Pat_Fish]], instruments=Songs\, Vocals\, Instruments)}
+	${addAlbumPerf(release=fishco, person=[[person:Kizzy_O'Callaghan]], instruments=Guitars\, Vocals)}
+	${addAlbumPerf(release=fishco, person=[[person:Alex_Green]], instruments=Saxophones)}
+	${addAlbumPerf(release=fishco, person=[[person:Greenwood_Goulding]], instruments=Bass Guitar)}
+	${addAlbumPerf(release=fishco, person=[[person:Dave_Morgan]], instruments=Drums)}
+	${addAlbumPerf(release=fishco, person=[[person:Erol_Suleyman]], instruments=Bass, song='Lot 49')}
+	${addAlbumPerf(release=fishco, person=[[person:Blair_MacDonald]], instruments=Drums, song='Lot 49')}
+	${addAlbumPerf(release=fishco, person=[[person:Laurence_O'Keefe]], instruments=Bass, song='Swell')}
+	${addAlbumPerf(release=fishco, person=[[person:Sonic_Boom]], instruments=Feedback, song='Susie')}
+	${addAlbumPerf(release=fishco, person=[[act:The_Perfect_Disaster]], instruments=Backing Vocals, song='The Best Way')}
 
 	${jbc_footer}
 #live	endif
 
 #define	gift1.html
 #live	if (getval(page) = gift1.html)
-	${mkHeader(section=albums, title=The Gift Of Music)}
+	${mkAlbumHeader(lookup=gift1, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/gift.jpg">
-	<img alt="[album cover]" src="${jbc_images}/gift_500.jpg"></a>
-	${a_media} ${COMP}
-	${a_label} Glass
-	${a_cat} GLEXCD101
-	${a_dtreleased} Mar1985
-#	${addAlbumPerf(release=gift1, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${a_photo} ${mitch}
-	${a_grv_a} they were the most literate band i ever knew-a porky prime cut
-	${a_grv_b} rock and roll phew.....innit!-a porky prime cut
-	${det_end}
-	${tun_beg}
-	${smiff}
-	<br />${marn} (Miaow Mix)
-	<br />${road}
-	<br />${men}
-	<br />${count}
-	<br />${zombie}
-	<br />${gold}
-	<br />${jane}
-	<br />${rain}
-	<br />${jbpm}
-	<br />${h2o}
-	<br />${party}
-	<br />${lost}
-	<br />${drink}
-	${tun_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=gift1)}
+	${clearAlbumPerf(release=gift1)}
 
-#	${addAlbumPerf(release=gift1, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#	${addAlbumPerf(release=gift1, person=[[person:Max_Eider]], instruments=Lead Guitar\, Vocals)}
-#	${addAlbumPerf(release=gift1, person=[[person:Alice_Thompson]], instruments=Organ)}
-#	${addAlbumPerf(release=gift1, person=[[person:Rolo_McGinty]], instruments=Bass)}
-#	${addAlbumPerf(release=gift1, person=[[person:Kevin_Haskins]], instruments=Drums)}
-#	${addAlbumPerf(release=gift1, person=[[person:Joby_Palmer]], instruments=Drums)}
-#	${addAlbumPerf(release=gift1, person=[[person:David_J.]], instruments=Bass\, Vocals)}
-#	${addAlbumPerf(release=gift1, person=[[person:Owen_Jones]], instruments=Drums)}
-#
-#	${pat} (Rhythm Guitar, Vocals)
-#	<br />${max} (Lead Guitar, Vocals)
-#	<br />${at} (Organ)
-#	<br />${rolo} (Bass)
-#	<br />${hask} (Drums)
-#	<br />${jody} (Drums)
-#	<br />${dj} (Bass, Vocals)
-#	<br />${owen} (Drums)
-	${players_end}
-	${lin_beg}
-	This record collects together the various singles that
-	have been issued in England to date under the much-abused
-	name of the Jazz Butcher, to wit: me.
-	<p>
-	I rather like having them all in one place like this
-	- it makes for a nice, noisey muck-it-up sort of disc
-	that is ideal for leisure time at home, on the beach,
-	in you local club.... hell, ANYWHERE!!!  Let me tell you about it.
-	<p>
-	<a name="smith"> ${smiff} <a name="dracula">
-	and ${count} were recorded in the summer
-	of 1983 in a place called Wellingborough, a small town in the
-	middle of England where even the children are scarey!
-	&quot;Hey, mister, can you SEE in them glasses?&quot;  I get to
-	sing and play things like guitar, sax and piano.
-	Max does the electric guitar.  On bass is Rolo McGinty,
-	and Princess Alice Thompson plays the organ.  They're both in
-	the ${tops} now, a group internationally recognised as
-	being the shortest collection of pop musicians in the
-	world.  Playing the drums is Kevin Haskins, a charming
-	neighbour of mine, and veteran of the ${haus} conspiracy.  Miaowula!
-	</a>
-	</a>
-	<p>
-	<a name="marnie"> ${marn} and <a name="zombie"> ${zombie}
-	were the hot spots from my second single,
-	recorded in London one Sunday afternoon in January 1984.
-	${marn} is an attempt to force a meeting between the
-	steaming tropical jungles of Bangladesh (where the tigers
-	live) and the frozen stepps of Siberia (where the Siberian
-	tigers live).  ${zombie} is just sick. Max and Rolo and
-	me again, with Joby Palmer on drums, bongoes and &quot;Oi'm jest
-	a rual boy on a day out in London, guvnor&quot;.
-	</a>
-	</a>
-	<p>
-	<a name="roadrunner">
-	${road} features me, Max, David J.  on bass, and Mr Jones
-	on drums, and was recorded in Wellingborough again in
-	April '84.  The song is by ${richman}, but the sentiments
-	are entirely our own. The &quot;Twilight Zone Mix&quot; on this
-	record concerns Max's inability to get from one place
-	to another without disappearing for long periods.  You've
-	heard of the Bermuda Triangle?  Well, Max has shares
-	in it.  <a name="rain"> ${rain}, recorded at the same session,
-	concerns sex and the weather and the undoubted connection
-	between the two.  Incidentally, it didn't rain once during
-	the three days we were in the studio!
-	</a>
-	<p>
-	<a name="men"> ${men} and ${jbpm} see the Jazz Butcher Group (me and
-	Max and Dave and Jones) in vaguely political mood.  In
-	other words, feisty.  Real Men, the kind who never sit
-	together on buses in case they get their medallions tangled.
-	The Prime Minister, a book-burning lunatic, under whose
-	&quot;leadership&quot; the U.K. has become a police-state satellite
-	of the most evil and morally corrupt regime in the world.
-	Locked in the basement in Leamington Spa in steamy August
-	'84, The Jazz Butcher Group reaches for the cheese wire!
-	Gasp at the awesome sound of a guitar massacre in Parliament!
-	</a>
-	<p>
-	<a name="water">
-	Lastly, from the same summer sessions, comes ${h2o} Max
-	and I, late at night, contemplating the curious tale
-	of the talking elephants, and the endless search for
-	supplies of free drink...
-	</a>
-	<p>
-	<img alt="[signature]" width=289 height=139 src="${jbc_images}/pat_sig.gif">
-	${lin_end}
+	${addAlbumPerf(release=gift1, person=[[person:Mitch_Jenkins]], instruments=photography)}
+
+	${addAlbumPerf(release=gift1, ordinal=1, song="Southern Mark Smith")}
+	${addAlbumPerf(release=gift1, ordinal=2, song="Marnie", version=Miaow Mix)}
+	${addAlbumPerf(release=gift1, ordinal=3, song="Roadrunner")}
+	${addAlbumPerf(release=gift1, ordinal=4, song="Real Men")}
+	${addAlbumPerf(release=gift1, ordinal=5, song="Jazz Butcher -v- Count Dracula")}
+	${addAlbumPerf(release=gift1, ordinal=6, song="Zombie Love")}
+	${addAlbumPerf(release=gift1, ordinal=7, song="Girls Who Keep Goldfish")}
+	${addAlbumPerf(release=gift1, ordinal=8, song="Sweet Jane")}
+	${addAlbumPerf(release=gift1, ordinal=9, song="Rain")}
+	${addAlbumPerf(release=gift1, ordinal=10, song="The Jazz Butcher Meets the Prime Minister")}
+	${addAlbumPerf(release=gift1, ordinal=11, song="Water")}
+	${addAlbumPerf(release=gift1, ordinal=12, song="Partytime")}
+	${addAlbumPerf(release=gift1, ordinal=13, song="Lost In France")}
+	${addAlbumPerf(release=gift1, ordinal=14, song="D.R.I.N.K.")}
+
+	${addAlbumPerf(release=gift1, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
+	${addAlbumPerf(release=gift1, person=[[person:Max_Eider]], instruments=Lead Guitar\, Vocals)}
+	${addAlbumPerf(release=gift1, person=[[person:Alice_Thompson]], instruments=Organ)}
+	${addAlbumPerf(release=gift1, person=[[person:Rolo_McGinty]], instruments=Bass)}
+	${addAlbumPerf(release=gift1, person=[[person:Kevin_Haskins]], instruments=Drums)}
+	${addAlbumPerf(release=gift1, person=[[person:Joby_Palmer]], instruments=Drums)}
+	${addAlbumPerf(release=gift1, person=[[person:David_J.]], instruments=Bass\, Vocals)}
+	${addAlbumPerf(release=gift1, person=[[person:Owen_Jones]], instruments=Drums)}
 
 	${jbc_footer}
 #live	endif
 
 #define	gift2.html
 #live	if (getval(page) = gift2.html)
-	${mkHeader(section=albums, title=Big Questions)}
+	${mkAlbumHeader(lookup=gift2, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<br /><a href="${jbc_images}/releases/gift2_front.jpg">
-	<img src="${jbc_images}/releases/gift2_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/gift2_back.jpg">
-	<img src="${jbc_images}/releases/gift2_back_250.jpg"></a>
-	<a href="${jbc_images}/gift2_back.jpg">
-	<img src="${jbc_images}/gift2_back_250.jpg"></a>
-	<br />
-	<a href="${jbc_images}/gift2_inside.jpg">
-	<img src="${jbc_images}/gift2_inside_250.jpg"></a>
-	<br />
-	${a_media} ${COMP}
-	${a_label} Glass
-	${a_cat} GLACD023
-	${a_dtreleased} 1987
-#	${addAlbumPerf(release=gift2, person=[[person:Alastair_Indge]], instruments=photography)}
-#	${addAlbumPerf(release=gift2, person=[[person:Elvis_Brando]], instruments=sleeve)}
-#	${a_photo} ${indge}
-#	${a_sleev} Elvis Brando
-	${a_note} limited copies contain ${may} 7"
-	${det_end}
-	${a-side_beg}
-	${jungle}
-	<br />${hardy}
-	<br />${dentist}
-	<br />${sa}
-	<br />${groove}
-	<br />${mersey}
-	${a-side_end}
-	${b-side_beg}
-	${lorre}
-	<br />${vienna}
-	<br />${olof}
-	<br />${becky}
-	<br />${city}
-	<br />${hair}
-	<br />${consp} (${CD} only)
-	<br />${thing} (${CD} only)
-	<br />${wind} (${CD} only)
-	<br />${ever} (${CD} only)
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=gift2)}
-	${players_end}
+	${clearAlbumPerf(release=gift2)}
+
+	${addAlbumPerf(release=gift2, person=[[person:Alastair_Indge]], instruments=photography)}
+	${addAlbumPerf(release=gift2, person=[[person:Elvis_Brando]], instruments=sleeve)}
+	${addAlbumPerf(release=gift2, type=Aside, ordinal=1, song="The Human Jungle")}
+	${addAlbumPerf(release=gift2, type=Aside, ordinal=2, song="Hard")}
+	${addAlbumPerf(release=gift2, type=Aside, ordinal=3, song="Death Dentist")}
+	${addAlbumPerf(release=gift2, type=Aside, ordinal=4, song="South America")}
+	${addAlbumPerf(release=gift2, type=Aside, ordinal=5, song="Grooving In The Bus Lane")}
+	${addAlbumPerf(release=gift2, type=Aside, ordinal=6, song="Mersey")}
+	${addAlbumPerf(release=gift2, type=Bside, ordinal=1, song="Peter Lorre")}
+	${addAlbumPerf(release=gift2, type=Bside, ordinal=2, song="Vienna Song")}
+	${addAlbumPerf(release=gift2, type=Bside, ordinal=3, song="Olof Palme")}
+	${addAlbumPerf(release=gift2, type=Bside, ordinal=4, song="Rebecca Wants Her Bike Back")}
+	${addAlbumPerf(release=gift2, type=Bside, ordinal=5, song="City Of Night")}
+	${addAlbumPerf(release=gift2, type=Bside, ordinal=6, song="The Hairbrush And The Tank")}
+	${addAlbumPerf(release=gift2, type=Bside, ordinal=7, song="Conspiracy", variant=Compact Disc only)}
+	${addAlbumPerf(release=gift2, type=Bside, ordinal=8, song="Thing", variant=Compact Disc only)}
+	${addAlbumPerf(release=gift2, type=Bside, ordinal=9, song="Big Old Wind", variant=Compact Disc only)}
+	${addAlbumPerf(release=gift2, type=Bside, ordinal=10, song="Forever", variant=Compact Disc only)}
 
 	${jbc_footer}
 #live	endif
 
 #define	girl.html
 #live	if (getval(page) = girl.html)
-	${mkHeader(section=albums, title=Girl-Go)}
+	${mkAlbumHeader(lookup=girlgo, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/girl.jpg"><img
-		src="${jbc_images}/girl_500.jpg"></a>
-	<a href="${jbc_images}/girlgo_back.jpg"><img
-		src="${jbc_images}/girlgo_back_250.jpg"></a>
-	${a_media} ${SINGLE} from ${cult}
-	${a_label} ${creat}
-	${a_cat} CRESCD077
-	${a_dtreleased} 1990
-#${addAlbumPerf(release=girlgo, person=[[person:Martin_Stebbing]], instruments=producer)}
-#${addAlbumPerf(release=girlgo, person=[[person:Pat_Fish]], instruments=producer)}
-#${addAlbumPerf(release=girlgo, person=[[person:Pascal_Legras]], instruments=sleeve)}
-#	${a_prod} ${rev}, ${pat}
-#	${a_sleev} Pascal Legras
-	${a_grv_a} make mine a prime cut - porky please - ah excellent
-	${a_grv_b} a porky prime chop
-	${det_end}
-	${a-side_beg}
-	${go}
-	<br />${excel}
-	${a-side_end}
-	${b-side_beg}
-	${burg} (Live, Vancouver)
-	<br />${go} (Live, L.A.)
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=girlgo)}
+	${clearAlbumPerf(release=girlgo)}
 
-#${addAlbumPerf(release=girlgo, person=[[person:Pat_Fish]], song=NULL)}
-#${addAlbumPerf(release=girlgo, person=[[person:Paul_Mulreany]], instruments=Drums\, Vocals)}
-#${addAlbumPerf(release=girlgo, person=[[person:Laurence_O'Keefe]], instruments=Bass\, Vocals)}
-#${addAlbumPerf(release=girlgo, person=[[person:Richard_Formby]], instruments=Guitar\, Vocals)}
-#${addAlbumPerf(release=girlgo, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals)}
+	${addAlbumPerf(release=girlgo, person=[[person:Martin_Stebbing]], instruments=producer)}
+	${addAlbumPerf(release=girlgo, person=[[person:Pat_Fish]], instruments=producer)}
+	${addAlbumPerf(release=girlgo, person=[[person:Pascal_Legras]], instruments=sleeve)}
 
-#	${paul} (Drums, Vocals)
-#	<br />${larry} (Bass, Vocals)
-#	<br />${richard} (Guitar, Vocals)
-#	<br />${pat} (Guitar, Vocals)
-	${players_end}
+	${addAlbumPerf(release=girlgo, type=Aside, ordinal=1, song="Girl-Go")}
+	${addAlbumPerf(release=girlgo, type=Aside, ordinal=2, song="Excellent!")}
+	${addAlbumPerf(release=girlgo, type=Bside, ordinal=1, song="Burglar Of Love", version=Live\, Vancouver)}
+	${addAlbumPerf(release=girlgo, type=Bside, ordinal=2, song="Girl-Go", version=Live\, L.A., media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Girl_Go_LA.mp3)}
+
+	${addAlbumPerf(release=girlgo, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=girlgo, person=[[person:Paul_Mulreany]], instruments=Drums\, Vocals)}
+	${addAlbumPerf(release=girlgo, person=[[person:Laurence_O'Keefe]], instruments=Bass\, Vocals)}
+	${addAlbumPerf(release=girlgo, person=[[person:Richard_Formby]], instruments=Guitar\, Vocals)}
+	${addAlbumPerf(release=girlgo, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals)}
 
 	${jbc_footer}
 #live	endif
 
 #define	hamburg.html
 #live	if (getval(page) = hamburg.html)
-	${mkHeader(section=albums, title=Hamburg)}
+	${mkAlbumHeader(lookup=hamburg, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/hamburg_front.jpg">
-	<img alt="[album cover]" src="${jbc_images}/releases/hamburg_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/hamburg_back.jpg">
-	<img alt="[album cover]" src="${jbc_images}/releases/hamburg_back_250.jpg"></a>
-	<a href="${jbc_images}/releases/hamburg_inside1.jpg">
-	<img alt="[album cover]" src="${jbc_images}/releases/hamburg_inside1_250.jpg"></a>
-	<a href="${jbc_images}/releases/hamburg_inside2.jpg">
-	<img alt="[album cover]" src="${jbc_images}/releases/hamburg_inside2_250.jpg"></a>
-	${a_media} ${ALBUM}, ${LIVE}
-	${a_label} Rebel/Glass
-	${a_cat} SPV081443
-	${a_dtreleased} Nov1985
-	${a_rec} Live, 16Aug1985, ${PO}'s, Lehmweg 44, Hamburg
-#${addAlbumPerf(release=hamburg, person=[[person:Volkspark_Studio_Mobile]], instruments=engineer)}
-#${addAlbumPerf(release=hamburg, person=[[person:Martin_Berschel]], instruments=mixed)}
-#${addAlbumPerf(release=hamburg, person=[[person:The_Conspiracy]], instruments=producer)}
-#${addAlbumPerf(release=hamburg, person=[[person:Vaut_Baby]], instruments=photography)}
-#${addAlbumPerf(release=hamburg, person=[[person:Jazz_Kandinsky]], instruments=sleeve)}
-#	${a_eng} Volkspark Studio Mobile
-#	${a_mix} At Volkspark by Martin Berschel
-#	${a_prod} The Conspiracy
-#	${a_photo} Vout Baby
-#	${a_sleev} Jazz Kandinsky
-	${det_end}
-	${a-side_beg}
-	${bath}
-	<br />${hour}
-	<br />${dentist}
-	<br />${walk}
-	<br />${rain}
-	<br />${road}
-	<br />${count}
-	${a-side_end}
-	${b-side_beg}
-	${foot}
-	<br />${men}
-	<br />${rumour}
-	<br />${gf}
-	<br />${jane}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=hamburg)}
+	${clearAlbumPerf(release=hamburg)}
 
-#${addAlbumPerf(release=hamburg, person=[[person:Pat_Fish]], song=NULL)}
-#	${addAlbumPerf(release=hamburg, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals)}
-#	${addAlbumPerf(release=hamburg, person=[[person:Max_Eider]], instruments=Guitar\, Vocals)}
-#	${addAlbumPerf(release=hamburg, person=[[person:Felix_Ray]], instruments=Bass)}
-#	${addAlbumPerf(release=hamburg, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
-#	${pat} (Guitar, Vocals)
-#	<br />${max} (Guitar, Vocals)
-#	<br />${felix} (Bass)
-#	<br />${owen} (Drums, Vocals)
-	${players_end}
-	${thx_beg}
-	Tour promotion - JoJo Concerts, Hamburg
-	<br />A&R - Tommy Weber
-	<br />Sole international booking agents - A.T.B., London U.K.
-	<br />Philip Thain - Tour Co-ordinator
-	<br />Rambo - Minder
-	<br />D. Elvis Barker - Management &amp; Mainman
-	<p>
-	With special thanks to our friends -
-	Tommy!  Barbel! Joachim! Enno, the man from Graz! Holger!
-	(Ciao and thanks for all the Pineau!) Inge! Michael Ruff and
-	his Rough Trade crew! The mysterious <a
-	href="http://www.cm.cf.ac.uk:/Sisters.Of.Mercy/">
-	Von Eldritch</a>!  Renald &
-	Julietta at <b>After Midnight</b>! &Ouml;rbit&ouml;r 1 and all
-	at Volkspark! Ulrike for all those pictures!  Everyone at
-	S.P.V.!  But most of all to all you people who came to make
-	our night out into AN OCCASION!
-	Luv on ya, Butch X.
-	${thx_end}
-	${lin_beg}
-	What you hear on this record is what actually happened.  No
-	artificial sweeteners, colourants or emulsifiers added.
-	Deemed fit for consumption by The Government.
-	<p>
-	Dedicated to the Love Generation.
-	${lin_end}
-	${patsays_beg}
-	We were all disappointed at the way this came out.  The
-	concert was great, but logistics prevented us from making
-	anything much more than a glorified bootleg.  Still,
-	live albums are best as souvenirs anyway, so I guess
-	some people regard it fondly. Lots of entertaining photos
-	to look at anyway...
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#hamburg, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
+	${addAlbumPerf(release=hamburg, person=[[person:Volkspark_Studio_Mobile]], instruments=engineer)}
+	${addAlbumPerf(release=hamburg, person=[[person:Martin_Berschel]], instruments=mixed)}
+	${addAlbumPerf(release=hamburg, person=[[person:The_Conspiracy]], instruments=producer)}
+	${addAlbumPerf(release=hamburg, person=[[person:Vaut_Baby]], instruments=photography)}
+	${addAlbumPerf(release=hamburg, person=[[person:Jazz_Kandinsky]], instruments=sleeve)}
+
+	${addAlbumPerf(release=hamburg, type=Aside, ordinal=1, song="Bath Of Bacon")}
+	${addAlbumPerf(release=hamburg, type=Aside, ordinal=2, song="Soul Happy Hour")}
+	${addAlbumPerf(release=hamburg, type=Aside, ordinal=3, song="Death Dentist")}
+	${addAlbumPerf(release=hamburg, type=Aside, ordinal=4, song="Walk With The Devil")}
+	${addAlbumPerf(release=hamburg, type=Aside, ordinal=5, song="Rain")}
+	${addAlbumPerf(release=hamburg, type=Aside, ordinal=6, song="Roadrunner")}
+	${addAlbumPerf(release=hamburg, type=Aside, ordinal=7, song="Jazz Butcher -v- Count Dracula")}
+	${addAlbumPerf(release=hamburg, type=Bside, ordinal=1, song="Bigfoot Motel")}
+	${addAlbumPerf(release=hamburg, type=Bside, ordinal=2, song="Real Men")}
+	${addAlbumPerf(release=hamburg, type=Bside, ordinal=3, song="Only A Rumour")}
+	${addAlbumPerf(release=hamburg, type=Bside, ordinal=4, song="Girlfriend")}
+	${addAlbumPerf(release=hamburg, type=Bside, ordinal=5, song="Sweet Jane")}
+
+	${addAlbumPerf(release=hamburg, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals)}
+	${addAlbumPerf(release=hamburg, person=[[person:Max_Eider]], instruments=Guitar\, Vocals)}
+	${addAlbumPerf(release=hamburg, person=[[person:Felix_Ray]], instruments=Bass)}
+	${addAlbumPerf(release=hamburg, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
 
 	${jbc_footer}
 #live	endif
 
 #define	hard.html
 #live	if (getval(page) = hard.html)
-	${mkHeader(section=albums, title=Hard)}
+	${mkAlbumHeader(lookup=hard, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/hardfront.jpg"><img
-		src="${jbc_images}/hardfront_500.jpg"></a>
-	<a href="${jbc_images}/hardback.jpg"><img
-		src="${jbc_images}/hardback_250.jpg"></a>
-	${a_media} ${SINGLE}, ${12}
-	${a_label} Glass
-	${a_cat} Glass 12046
-	${a_dtreleased} 1986
-	${a_rec} 8-10 Jan 1986, Livingston, N22,
-	${a_rec} (Sep 1985, Ace Studio, Bugbrooke ${vienna})
-#	${a_eng} Slasher Harris, Andy Butlin,
-#	${a_rec} Malcolm Rivett-Carnac ${vienna})
-#${addAlbumPerf(release=hard, person=[[person:Slasher_Harris]], instruments=engineer)}
-#${addAlbumPerf(release=hard, person=[[person:Andy_Butlin]], instruments=engineer)}
-#${addAlbumPerf(release=hard, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer, song="Vienna Song")}
-#${addAlbumPerf(release=hard, person=[[person:Tony_Harris]], instruments=producer)}
-#${addAlbumPerf(release=hard, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#${addAlbumPerf(release=hard, person=[[person:Prince_Darren]], instruments=sleeve)}
-#	${a_photo} ${mitch}
-#	${a_sleev} Prince Darren
-	${a_grv_a} ${12} roundabout of romance-a porky prime cut
-	${a_grv_b} ${12} hummer, hummer, hummer, hummer, hummer-a porky prime cut
-	${a_grv_a} ${7} This lobster will run and run...
-	${a_grv_b} ${7} and run
-	${det_end}
-	${a-side_beg}
-	${hardy}
-	<br />${groove}
-	${a-side_end}
-	${b-side_beg}
-	${vienna}
-	<br />${thing}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=hard)}
+	${clearAlbumPerf(release=hard)}
 
-#${addAlbumPerf(release=hard, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals)}
-#${addAlbumPerf(release=hard, person=[[person:Max_Eider]], instruments=Guitar\, Vocals)}
-#${addAlbumPerf(release=hard, person=[[person:Felix_Ray]], instruments=Bass)}
-#${addAlbumPerf(release=hard, person=[[person:Owen_Jones]], instruments=Drums)}
-#
-#	${pat} (Guitar, Vocals)
-#	<br />${max} (Guitar, Vocals)
-#	<br />${felix} (Bass)
-#	<br />${owen} (Drums)
-	${players_end}
-	${lin_beg}
-	For Fritzi, Puschi &amp; Sieglande.
-	<p>
-	<dd>&quot;There was a man who had a goat,
-	<dd>He loved that goat, Oh yes he did,
-	<dd>He loved that goat just like a kid&quot;
-	<p>
-	Swap Murders! (it's the new thing)
-	Ester from Leichester made a big mistake.  This record is
-	all about love.  Don't let the psychic molestation syndrome
-	get to you.  This is our loudest record to date, which is
-	something to do with the elephants.  Thank you. Butch X.
-	${lin_end}
+	${addAlbumPerf(release=hard, person=[[person:Slasher_Harris]], instruments=engineer)}
+	${addAlbumPerf(release=hard, person=[[person:Andy_Butlin]], instruments=engineer)}
+	${addAlbumPerf(release=hard, person=[[person:Malcolm_Rivett-Carnac]], instruments=engineer, song="Vienna Song")}
+	${addAlbumPerf(release=hard, person=[[person:Tony_Harris]], instruments=producer)}
+	${addAlbumPerf(release=hard, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=hard, person=[[person:Prince_Darren]], instruments=sleeve)}
+
+	${addAlbumPerf(release=hard, type=Aside, ordinal=1, song="Hard", variant=12er)}
+	${addAlbumPerf(release=hard, type=Aside, ordinal=2, song="Grooving In The Bus Lane", variant=12er)}
+	${addAlbumPerf(release=hard, type=Bside, ordinal=1, song="Vienna Song", variant=12er)}
+	${addAlbumPerf(release=hard, type=Bside, ordinal=2, song="Thing", variant=12er)}
+
+	${addAlbumPerf(release=hard, type=Aside, ordinal=1, song="Hard", variant=7er)}
+	${addAlbumPerf(release=hard, type=Bside, ordinal=1, song="Grooving In The Bus Lane", variant=7er)}
+
+	${addAlbumPerf(release=hard, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals)}
+	${addAlbumPerf(release=hard, person=[[person:Max_Eider]], instruments=Guitar\, Vocals)}
+	${addAlbumPerf(release=hard, person=[[person:Felix_Ray]], instruments=Bass)}
+	${addAlbumPerf(release=hard, person=[[person:Owen_Jones]], instruments=Drums)}
 
 	${jbc_footer}
 #live	endif
 
 #define	invention.html
 #live	if (getval(page) = invention.html)
-	${mkHeader(section=albums, title=New Invention)}
+	${mkAlbumHeader(lookup=newinv, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/invention_front.jpg"><img
-		src="${jbc_images}/invention_front_500.jpg"></a>
-	<a href="${jbc_images}/invention_back.jpg"><img
-		src="${jbc_images}/invention_back_250.jpg"></a>
-	${a_media} ${SINGLE} from ${planet}
-	${a_label} ${creat}
-	${a_cat} CRE069T
-	${a_dtreleased} 1989
-	${a_rec} Feb 1989, Woodbine Studio
-#	${a_eng} ${rivers}, ${pat} (${almost})
-#${addAlbumPerf(release=newinv, person=[[person:John_A._Rivers]], instruments=engineer)}
-#${addAlbumPerf(release=newinv, person=[[person:Pat_Fish]], instruments=engineer, song="Almost Brooklyn")}
-#${addAlbumPerf(release=newinv, person=[[person:Pascal_Legras]], instruments=sleeve)}
-#${addAlbumPerf(release=newinv, person=[[person:Dave_Freak]], instruments=sleeve)}
-#	${a_sleev} Pascal Legras, Dave Freak (VFT)
-	${a_grv_a} a porky prime cut
-	${a_grv_b} porky
-	${det_end}
-	${a-side_beg}
-	${invent}
-	${a-side_end}
-	${b-side_beg}
-	${plague}
-	<br />${almost}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=newinv)}
+	${clearAlbumPerf(release=newinv)}
 
-#${addAlbumPerf(release=newinv, person=[[person:Pat_Fish]])}
-#${addAlbumPerf(release=newinv, person=[[person:Laurence_O'Keefe]])}
-#${addAlbumPerf(release=newinv, person=[[person:Paul_Mulreany]])}
-#	${pat}
-#	<br />${larry}
-#	<br />${paul}
-	${players_end}
-	${lin_beg}
-	We trust that you will get off on it.
-	${lin_end}
+	${addAlbumPerf(release=newinv, person=[[person:John_A._Rivers]], instruments=engineer)}
+	${addAlbumPerf(release=newinv, person=[[person:Pat_Fish]], instruments=engineer, song="Almost Brooklyn")}
+	${addAlbumPerf(release=newinv, person=[[person:Pascal_Legras]], instruments=sleeve)}
+	${addAlbumPerf(release=newinv, person=[[person:Dave_Freak]], instruments=sleeve)}
+
+	${addAlbumPerf(release=newinv, type=Aside, ordinal=1, song="New Invention")}
+	${addAlbumPerf(release=newinv, type=Bside, ordinal=1, song="Do The Bubonic Plague")}
+	${addAlbumPerf(release=newinv, type=Bside, ordinal=2, song="Almost Brooklyn")}
+
+	${addAlbumPerf(release=newinv, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=newinv, person=[[person:Laurence_O'Keefe]])}
+	${addAlbumPerf(release=newinv, person=[[person:Paul_Mulreany]])}
 
 	${jbc_footer}
 #live	endif
 
 #define	bigtime_jungle_smith.html
 #live	if (getval(page) = bigtime_jungle_smith.html)
-	${mkHeader(section=albums, title=The Human Jungle)}
+	${mkAlbumHeader(lookup=bigtime_jungle, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/bigtime_jungle_A.jpg"><img
-		src="${jbc_images}/releases/bigtime_jungle_A_500.jpg"></a>
-	<a href="${jbc_images}/releases/bigtime_jungle_B.jpg"><img
-		src="${jbc_images}/releases/bigtime_jungle_B_250.jpg"></a>
-	${a_media} ${SINGLE}, ${7}
-	${a_label} BigTime
-	${a_cat} BTS 1806
-	${a_dtreleased} 1986
-#${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:John_A._Rivers]], instruments=producer)}
-#${addAlbumPerf(release=human, person=[[person:Martin_F._Bedford]], instruments=sleeve)}
-#${addAlbumPerf(release=human, person=[[person:Jak_Munich]], instruments=photography)}
-	${det_end}
-	${a-side_beg}
-	${jungle}
-	${a-side_end}
-	${b-side_beg}
-	${smiff}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=bigtime_jungle)}
-	${players_end}
+	${clearAlbumPerf(release=bigtime_jungle)}
+
+	${addAlbumPerf(release=bigtime_jungle, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
+	${addAlbumPerf(release=bigtime_jungle, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
+	${addAlbumPerf(release=bigtime_jungle, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
+	${addAlbumPerf(release=bigtime_jungle, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
+	${addAlbumPerf(release=bigtime_jungle, person=[[person:John_A._Rivers]], instruments=producer)}
+
+	${addAlbumPerf(release=bigtime_jungle, type=Aside, ordinal=1, song="The Human Jungle")}
+	${addAlbumPerf(release=bigtime_jungle, type=Bside, ordinal=1, song="Southern Mark Smith")}
 
 	${jbc_footer}
 #live	endif
 
 #define	bigtime_angels_kitchen.html
 #live	if (getval(page) = bigtime_angels_kitchen.html)
-	${mkHeader(section=albums, title=Angels)}
+	${mkAlbumHeader(lookup=bigtime_angels, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/bigtime_angels_A.jpg"><img
-		src="${jbc_images}/releases/bigtime_angels_A_500.jpg"></a>
-	<a href="${jbc_images}/releases/bigtime_angels_B.jpg"><img
-		src="${jbc_images}/releases/bigtime_angels_B_250.jpg"></a>
-	${a_media} ${SINGLE}, ${7}
-	${a_label} BigTime
-	${a_cat} BTS 11
-	${a_dtreleased} 1986
-#${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:John_A._Rivers]], instruments=producer)}
-#${addAlbumPerf(release=human, person=[[person:Martin_F._Bedford]], instruments=sleeve)}
-#${addAlbumPerf(release=human, person=[[person:Jak_Munich]], instruments=photography)}
-	${det_end}
-	${a-side_beg}
-	${angels}
-	${a-side_end}
-	${b-side_beg}
-	${kitch}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=bigtime_angels)}
-	${players_end}
+	${clearAlbumPerf(release=bigtime_angels)}
+
+	${addAlbumPerf(release=bigtime_angels, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
+	${addAlbumPerf(release=bigtime_angels, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
+	${addAlbumPerf(release=bigtime_angels, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
+	${addAlbumPerf(release=bigtime_angels, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
+	${addAlbumPerf(release=bigtime_angels, person=[[person:John_A._Rivers]], instruments=producer)}
+
+	${addAlbumPerf(release=bigtime_angels, type=Aside, ordinal=1, song="Angels")}
+	${addAlbumPerf(release=bigtime_angels, type=Bside, ordinal=1, song="Still In The Kitchen")}
 
 	${jbc_footer}
 #live	endif
 
 #define	jungle.html
 #live	if (getval(page) = jungle.html)
-	${mkHeader(section=albums, title=The Human Jungle)}
+	${mkAlbumHeader(lookup=human, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/junglefront.jpg"><img
-		src="${jbc_images}/junglefront_500.jpg"></a>
-	<a href="${jbc_images}/jungleback.jpg"><img
-		src="${jbc_images}/jungleback_250.jpg"></a>
-	<a href="${jbc_images}/releases/human_12_back.jpg"><img
-		src="${jbc_images}/releases/human_12_back_250.jpg"></a>
-	${a_media} ${SINGLE}, ${7}, ${12}
-	${a_label} Glass
-	${a_cat} Glass 043, 12043
-	${a_dtreleased} Sep1985
-#${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
-#${addAlbumPerf(release=human, person=[[person:John_A._Rivers]], instruments=producer)}
-#${addAlbumPerf(release=human, person=[[person:Martin_F._Bedford]], instruments=sleeve)}
-#${addAlbumPerf(release=human, person=[[person:Jak_Munich]], instruments=photography)}
-	${det_end}
-	${a-side_beg}
-	${jungle}
-	${a-side_end}
-	${b-side_beg}
-	${dentist}
-	<br />${devil} (${12})
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=human)}
-	${players_end}
-	${mkAlbumPress(album=human)}
+	${clearAlbumPerf(release=human)}
+
+	${addAlbumPerf(release=human, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
+	${addAlbumPerf(release=human, person=[[person:Max_Eider]], instruments=Electric Guitar\, Vocals)}
+	${addAlbumPerf(release=human, person=[[person:Felix_Ray]], instruments=Bass Guitar\, Vocals)}
+	${addAlbumPerf(release=human, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
+	${addAlbumPerf(release=human, person=[[person:John_A._Rivers]], instruments=producer)}
+	${addAlbumPerf(release=human, person=[[person:Martin_F._Bedford]], instruments=sleeve)}
+	${addAlbumPerf(release=human, person=[[person:Jak_Munich]], instruments=photography)}
+
+	${addAlbumPerf(release=human, type=Aside, ordinal=1, song="The Human Jungle")}
+	${addAlbumPerf(release=human, type=Bside, ordinal=1, song="Death Dentist")}
+	${addAlbumPerf(release=human, type=Bside, ordinal=2, song="The Devil Is My Friend", version=12)}
 
 	${jbc_footer}
 #live	endif
@@ -4245,376 +3251,127 @@ Previously available on the ${fishco} LP/CD.
 
 #define	mayi.html
 #live	if (getval(page) = mayi.html)
-	${mkHeader(section=albums, title=Speedy Gonzalez)}
+	${mkAlbumHeader(lookup=may, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/mayi_a.jpg"><img
-		src="${jbc_images}/releases/mayi_a_250.jpg"></a>
-	<a href="${jbc_images}/releases/mayi_b.jpg"><img
-		src="${jbc_images}/releases/mayi_b_250.jpg"></a>
-	${a_media} ${EP}, ${7}
-	${a_label} Glass
-	${a_cat} HMMM002
-	${a_dtreleased} 1987
-	${a_rec} Live, <a href="${jbc_gigs}/1985/Apr25.html">1985-04-25, Melkweg, Amsterdam</a> by
-	R.V.Z. Radio, Northampton 1983 (${mayi} &amp; ${over})
-#	${addAlbumPerf(release=may, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=may, person=[[person:Alastair_Indge]], instruments=photography)}
-#	${a_photo} ${mitch}, Northampton 1986, 
-#	${indge}, Cape Cod, July 1986
-	${a_note} Included with limited copies of ${gift2}
-	${det_end}
-	${a-side_beg}
-	${speed} (Live)
-	<br />${knock} (Live)
-	${a-side_end}
-	${b-side_beg}
-	${mayi}
-	<br />${over}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=may)}
+	${clearAlbumPerf(release=may)}
 
-#	${addAlbumPerf(release=may, person=[[person:Pat_Fish]], instruments=guitar\, vocals)}
-#	${addAlbumPerf(release=may, person=[[person:Max_Eider]], instruments=guitar\, vocal)}
-#	${addAlbumPerf(release=may, person=[[person:Owen_Jones]], instruments=drums\, vocal)}
-#	${addAlbumPerf(release=may, person=[[person:Felix_Ray]], instruments=bass)}
+	${addAlbumPerf(release=may, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=may, person=[[person:Alastair_Indge]], instruments=photography)}
 
-	${players_end}
-	${mkAlbumPress(album=may)}
+	${addAlbumPerf(release=may, type=Aside, ordinal=1, song="Speedy Gonzalez")}
+	${addAlbumPerf(release=may, type=Aside, ordinal=2, song="Knocking On Heaven's Door")}
+	${addAlbumPerf(release=may, type=Bside, ordinal=1, song="May I")}
+	${addAlbumPerf(release=may, type=Bside, ordinal=2, song="Over You")}
+
+	${addAlbumPerf(release=may, person=[[person:Pat_Fish]], instruments=guitar\, vocals)}
+	${addAlbumPerf(release=may, person=[[person:Max_Eider]], instruments=guitar\, vocal)}
+	${addAlbumPerf(release=may, person=[[person:Owen_Jones]], instruments=drums\, vocal)}
+	${addAlbumPerf(release=may, person=[[person:Felix_Ray]], instruments=bass)}
 
 	${jbc_footer}
 #live	endif
 
 #define	men.html
 #live	if (getval(page) = men.html)
-	${mkHeader(section=albums, title=Real Men)}
+	${mkAlbumHeader(lookup=rmen, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/realmen_front.jpg"><img
-		src="${jbc_images}/releases/realmen_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/realmen_back.jpg"><img
-		src="${jbc_images}/releases/realmen_back_250.jpg"></a>
-	${a_media} ${SINGLE}, ${12} from ${scandal}
-	${a_label} Glass
-	${a_cat} Glass 12041
-	${a_dtreleased} Feb1985
-#${addAlbumPerf(release=rmen, person=[[person:John_A._Rivers]], instruments=producer)}
-#${addAlbumPerf(release=rmen, person=[[person:David_E._Barker]], instruments=producer)}
-#${addAlbumPerf(release=rmen, person=[[person:Pat_Fish]], instruments=producer)}
-#${addAlbumPerf(release=rmen, person=[[person:Kevin_Haskins]], instruments=producer)}
-#${addAlbumPerf(release=rmen, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#${addAlbumPerf(release=rmen, person=[[person:Iku_Yanatse]], instruments=sleeve)}
-#${addAlbumPerf(release=rmen, person=[[person:Buffalo_Shame]], instruments=sleeve)}
-#	${a_prod} ${rivers}, Barker, ${pat}, ${hask}
-	${a_rec} ${men} and ${jbpm} Woodbine, Leamington Spa,
-	${smiff} Beck, Wellingborough
-#	${a_photo} ${mitch}
-#	${a_sleev} Iku Yanatse, Buffalo Shame
-	${a_grv_a} the human jungle with herbert lom
-	${a_grv_b} ask anybody
-	${det_end}
-	${a-side_beg}
-	${men}
-	${a-side_end}
-	${b-side_beg}
-	${jbpm}
-	<br />${smiff} (Original)
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=rmen)}
+	${clearAlbumPerf(release=rmen)}
+	${addAlbumPerf(release=rmen, person=[[person:John_A._Rivers]], instruments=producer)}
+	${addAlbumPerf(release=rmen, person=[[person:David_E._Barker]], instruments=producer)}
+	${addAlbumPerf(release=rmen, person=[[person:Pat_Fish]], instruments=producer)}
+	${addAlbumPerf(release=rmen, person=[[person:Kevin_Haskins]], instruments=producer)}
+	${addAlbumPerf(release=rmen, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=rmen, person=[[person:Iku_Yanatse]], instruments=sleeve)}
+	${addAlbumPerf(release=rmen, person=[[person:Buffalo_Shame]], instruments=sleeve)}
+	${addAlbumPerf(release=rmen, person=[[person:Mick_Mercer]], instruments=liner)}
 
-#${addAlbumPerf(release=rmen, person=[[person:Pat_Fish]], song=NULL)}
-#${addAlbumPerf(release=rmen, person=[[person:Pat_Fish]])}
-#${addAlbumPerf(release=rmen, person=[[person:Max_Eider]])}
-#${addAlbumPerf(release=rmen, person=[[person:David_J.]])}
-#${addAlbumPerf(release=rmen, person=[[person:Owen_Jones]])}
-#${addAlbumPerf(release=rmen, person=[[person:Alice_Thompson]], instruments=Organ, song='Southern Mark Smith')}
-#${addAlbumPerf(release=rmen, person=[[person:Rolo_McGinty]], instruments=Bass, song='Southern Mark Smith')}
-#${addAlbumPerf(release=rmen, person=[[person:Kevin_Haskins]], instruments=Drums, song='Southern Mark Smith')}
-#
-#	${pat}
-#	<br />${max}
-#	<br />${dj}
-#	<br />${owen}
-#	<br />${at} (Organ, ${smiff})
-#	<br />${rolo} (Bass, ${smiff})
-#	<br />${hask} (Drums, ${smiff})
-	${players_end}
-	${lin_beg}
-	Damn good idea these retrospective re-releases; teach the
-	bawling brats a thing or two about <b>real</b> music.
-	Damn, <b>damn</b> good idea in fact.
-	<p>
-	The Jazz Butcher you say?  Yes, of course I remember them,
-	and mostly fond memories they are too.  It was this very
-	song with its analysis of Adam Faith as Marxist
-	revolutionary that broke the mould and them internationally.
-	Whilst I was roving (as any good reporter must) it was my
-	good fortune to witness this band on the rise, and I learnt
-	many things.
-	<p>
-	The Jazz Butcher boys were born when Elvis Presley joined
-	the army; make of those two facts what you will.
-	<p>
-	After fraught and frugal years as an eager youth hatful of
-	songs this very record, only three million times better than
-	the third Frankie single (an old Queen cast off), signalled
-	a change in peculiarities and the nation's desire to redeem
-	its soild past.  The Jazz Butcher was on everybody's lips.
-	Herpes spread like wildfire.
-	<p>
-	They met and charmed everyone, even in `Hi' society where
-	they would be forced to tell what Boy George was really like
-	(yes he bathed every day and yes he washed his hands before
-	meals) and why pop music no longer meant Doris Day.  Another
-	cigar Gertrude?
-	<p>
-	They wore way out of gear but never fell in love with
-	Russian spies.  They sang of fish (gills will be gills) and
-	most importantly, kept Hazel O'Connor locked in a cellar ten
-	feet down.
-	<p>
-	They were pop pirates in the greatest of British traditions.
-	`Hello there, nightowls, they would say but when the pop
-	concert ended and the disco resumed life was found to be
-	wanting.  The police kept telling the kids to move on.
-	Trouble was brewing; some took umbrage, others `pep' pills
-	whilst some took simply outrageous liberties, controversy
-	fuelling chart success.  Who can forget their third album,
-	`Doctor Chumley Repents' and the questions asked in the
-	house?  A battalion of TV screens were kicked in.  Things
-	had to stop.
-	<p>
-	Finally they went too far, waving their winkles at Her
-	Majesty's Government.  Immediately, and quite
-	domocratically, their royalties were sequestered.
-	<p>
-	Never before in the field of human conflict has so much been
-	owed by so many to so few.
-	<p>
-	The debts linger on, every bit as much as their mass suicide
-	in Trafalgar Square.  <b>Real</b> men.
-	<p>
-	${mercer}
-	<p>
-	Claudi Bidi writes &quot;what a load of codswallop!  It was my
-	great fortune to be intimately acquainted with the Jazz
-	Butcher and I know for a fact that during those last
-	desparate years he fell in love with Russian Spies all the
-	time.&quot;
-	${lin_end}
+	${addAlbumPerf(release=rmen, type=Aside, ordinal=1, song="Real Men")}
+	${addAlbumPerf(release=rmen, type=Bside, ordinal=1, song="The Jazz Butcher Meets the Prime Minister")}
+	${addAlbumPerf(release=rmen, type=Bside, ordinal=2, song="Southern Mark Smith", version=Original)}
+
+	${addAlbumPerf(release=rmen, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=rmen, person=[[person:Max_Eider]])}
+	${addAlbumPerf(release=rmen, person=[[person:David_J.]])}
+	${addAlbumPerf(release=rmen, person=[[person:Owen_Jones]])}
+	${addAlbumPerf(release=rmen, person=[[person:Alice_Thompson]], instruments=Organ, song="Southern Mark Smith")}
+	${addAlbumPerf(release=rmen, person=[[person:Rolo_McGinty]], instruments=Bass, song="Southern Mark Smith")}
+	${addAlbumPerf(release=rmen, person=[[person:Kevin_Haskins]], instruments=Drums, song="Southern Mark Smith")}
 
 	${jbc_footer}
 #live	endif
 
 #define	nonsense.html
 #live	if (getval(page) = nonsense.html)
-	${mkHeader(section=albums, title=Bloody Nonsense)}
+	${mkAlbumHeader(lookup=nons, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/nonsense_front.jpg"><img
-		src="${jbc_images}/releases/nonsense_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/nonsense_back.jpg"><img
-		src="${jbc_images}/releases/nonsense_back_250.jpg"></a>
-	${a_media} ${COMP}
-	${a_where} USA, Canada, Australia
-	${a_label} BigTime
-	${a_cat} 10014-1
-	${a_dtreleased} Apr1986
-	${a_rec} in England, Late 1983/Early 1986
-#	${addAlbumPerf(release=nons, person=[[person:John_A._Rivers]], instruments=producer)}
-#	${addAlbumPerf(release=nons, person=[[person:David_E._Barker]], instruments=producer)}
-#	${addAlbumPerf(release=nons, person=[[person:Tony_Harris]], instruments=producer)}
-#	${addAlbumPerf(release=nons, person=[[person:The_Conspiracy]], instruments=producer)}
-#	${addAlbumPerf(release=nons, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=nons, person=[[person:Alastair_Indge]], instruments=photography)}
-#	${addAlbumPerf(release=nons, person=[[person:Jeff_Price]], instruments=sleeve)}
-#	${addAlbumPerf(release=nons, person=[[person:Lendon_Flanagan]], instruments=sleeve)}
-#	${a_prod} ${rivers}, D. Elvis Barker, Tony Harris, The Conspiracy
-#	${a_photo} ${mitch}, ${indge}
-#	${a_sleev} Jeff Price, Lendon Flanagan
-	${det_end}
-	${a-side_beg}
-	${jungle}
-	<br />${smiff} (Original)
-	<br />${reagan}
-	<br />${jbpm}
-	<br />${party}
-	<br />${count} (${CAS} only)
-	<br />${groove}
-	${a-side_end}
-	${b-side_beg}
-	${dentist}
-	<br />${sat}
-	<br />${wheel}
-	<br />${drink}
-	<br />${rain}
-	<br />${men} (${CAS} only)
-	<br />${devil}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=nons)}
+	${clearAlbumPerf(release=nons)}
+	${addAlbumPerf(release=nons, person=[[person:John_A._Rivers]], instruments=producer)}
+	${addAlbumPerf(release=nons, person=[[person:David_E._Barker]], instruments=producer)}
+	${addAlbumPerf(release=nons, person=[[person:Tony_Harris]], instruments=producer)}
+	${addAlbumPerf(release=nons, person=[[person:The_Conspiracy]], instruments=producer)}
+	${addAlbumPerf(release=nons, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=nons, person=[[person:Alastair_Indge]], instruments=photography)}
+	${addAlbumPerf(release=nons, person=[[person:Jeff_Price]], instruments=sleeve)}
+	${addAlbumPerf(release=nons, person=[[person:Lendon_Flanagan]], instruments=sleeve)}
 
-#	${addAlbumPerf(release=nons, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar)}
-#	${addAlbumPerf(release=nons, person=[[person:Max_Eider]], instruments=Guitar\, Vocals)}
-#	${addAlbumPerf(release=nons, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
-#	${addAlbumPerf(release=nons, person=[[person:Felix_Ray]], instruments=Bass\, Vocals)}
-#	${addAlbumPerf(release=nons, person=[[person:David_J.]], instruments=Bass\, Vocals)}
-#	${addAlbumPerf(release=nons, person=[[person:Rolo_McGinty]], instruments=Bass, song="Southern Mark Smith")}
-#	${addAlbumPerf(release=nons, person=[[person:Kevin_Haskins]], instruments=Drums, song="Southern Mark Smith")}
-#	${addAlbumPerf(release=nons, person=[[person:Alice_Thompson]], instruments=Organ, song="Southern Mark Smith")}
-#	${addAlbumPerf(release=nons, person=[[person:Paul_Taylor]], instruments=Trombone, song="D.R.I.N.K.")}
-#
-#	${pat}(Vocals, Guitar)
-#	<br />${max} (Guitar, Vocals)
-#	<br />${owen} (Drums, Vocals)
-#	<br />${felix} (Bass, Vocals)
-#	<br />${dj} (Bass, Vocals)
-#	<br />${rolo} (Bass ${smiff})
-#	<br />${hask} (Drums ${smiff})
-#	<br />${at} (Organ ${smiff})
-#	<br />Paul of the Hackney Horns (Trombone ${drink})
-	${players_end}
-	${lin_beg}
-	The Jazz Butcher first appeared in Bohemian London in 1983,
-	clutching a battered acoustic guitar called Lenin and
-	looking for a place to stay.  His origins remain unclear to
-	this day.  Some say that he swam to safety from the wreck of
-	doomed Liberian supertanker Gonzolo; others that he had been
-	planted by Speznaz to subject the English legal profession.
-	The most credible theory is that he had formerly been hiding
-	out in darkest rural Northamptonshire.. plotting.  What was
-	in his mind is only too blatantly set forth within the
-	grooves of this disc: A semi-literate pub-crawl through the
-	swamp of rock's rich tapestry, laced with self-destructive
-	recreational pursuits and maddened by the buzzing of a
-	thousand punk rock guitars.
-	Not that the sound of the Jazz Butcher and his Sikkorskis
-	from hell (for it is they that are likely to relate to your
-	scrambled transatlantic notions of what constitutes Le
-	Pernk).  Press him on the subject and he will sputter
-	through the special brew, &quot;of course we're a punk group -
-	because we do what we want to do&quot; fair.  As they say,
-	enough.  To me, though, the Butcher's axe grinds somewhere
-	along the non-existent fusion between soul music and the
-	sort of dirty pop that failed to make the ${vu}
-	famous.  Not that this would take into
-	account the skiffy suicide that constitutes ${reagan},
-	or the bittersweet cushioning
-	that cradels the decidedly neurotic ${sat}.
-	And Max Eider's ${drink} (dedicated to his hobby) is
-	another sack of potatoes altogether.  The Jazz Butcher and
-	his group are not in the business of belonging; they are too
-	old and too obstreperous to conform to some
-	attention-seeking image or commercially viable formula.
-	Rather, they bring their not inconsiderable talents to bear
-	on whatever happens to be in the way at the time.  The
-	results can only be described as essential.
-	<p>
-	<a href="${jbc_people}/von_dammerung.html">C. C. D&auml;mmerung</a>,
-	<b>Sinful Beat Magazine</b>
-	<p>
-	<b>A message from the Jazz Butcher:</b>
-	Hey, America, I Slept With Your Wife
-	${lin_end}
-	${mkAlbumPress(album=nons)}
+	${addAlbumPerf(release=nons, type=Aside, ordinal=1, song="The Human Jungle")}
+	${addAlbumPerf(release=nons, type=Aside, ordinal=2, song="Southern Mark Smith", version=Original)}
+	${addAlbumPerf(release=nons, type=Aside, ordinal=3, song="President Reagan's Birthday Present")}
+	${addAlbumPerf(release=nons, type=Aside, ordinal=4, song="The Jazz Butcher Meets the Prime Minister")}
+	${addAlbumPerf(release=nons, type=Aside, ordinal=5, song="Partytime")}
+	${addAlbumPerf(release=nons, type=Aside, ordinal=6, song="Jazz Butcher -v- Count Dracula", variant=Cassette only)}
+	${addAlbumPerf(release=nons, type=Aside, ordinal=7, song="Grooving In The Bus Lane")}
+
+	${addAlbumPerf(release=nons, type=Bside, ordinal=1, song="Death Dentist")}
+	${addAlbumPerf(release=nons, type=Bside, ordinal=2, song="Big Saturday")}
+	${addAlbumPerf(release=nons, type=Bside, ordinal=3, song="Caroline Wheeler's Birthday Present")}
+	${addAlbumPerf(release=nons, type=Bside, ordinal=4, song="D.R.I.N.K.")}
+	${addAlbumPerf(release=nons, type=Bside, ordinal=5, song="Rain")}
+	${addAlbumPerf(release=nons, type=Bside, ordinal=6, song="Real Men", variant=Cassette only)}
+	${addAlbumPerf(release=nons, type=Bside, ordinal=7, song="The Devil Is My Friend")}
+
+	${addAlbumPerf(release=nons, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar)}
+	${addAlbumPerf(release=nons, person=[[person:Max_Eider]], instruments=Guitar\, Vocals)}
+	${addAlbumPerf(release=nons, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
+	${addAlbumPerf(release=nons, person=[[person:Felix_Ray]], instruments=Bass\, Vocals)}
+	${addAlbumPerf(release=nons, person=[[person:David_J.]], instruments=Bass\, Vocals)}
+	${addAlbumPerf(release=nons, person=[[person:Rolo_McGinty]], instruments=Bass, song="Southern Mark Smith")}
+	${addAlbumPerf(release=nons, person=[[person:Kevin_Haskins]], instruments=Drums, song="Southern Mark Smith")}
+	${addAlbumPerf(release=nons, person=[[person:Alice_Thompson]], instruments=Organ, song="Southern Mark Smith")}
+	${addAlbumPerf(release=nons, person=[[person:Paul_Taylor]], instruments=Trombone, song="D.R.I.N.K.")}
 
 	${jbc_footer}
 #live	endif
 
 #define	planet.html
 #live	if (getval(page) = planet.html)
-	${mkHeader(section=albums, title=Big Planet, Scarey Planet)}
+	${mkAlbumHeader(lookup=planet, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/planet.jpg"><img
-		src="${jbc_images}/planet_500.jpg"></a>
-	${a_media} ${ALBUM}
-	${a_label} ${creat}, Genius
-	${a_cat} GENICD008, GENI-008CD
-	${a_dtreleased} 1989
-	${a_rec} Woodbine St. Studio, Leamington Spa
-#${addAlbumPerf(release=planet, person=[[person:John_A._Rivers]], instruments=engineer)}
-#${addAlbumPerf(release=planet, person=[[person:Francisco_Cabeza]], instruments=engineer)}
-#${addAlbumPerf(release=planet, person=[[person:John_A._Rivers]], instruments=producer)}
-#${addAlbumPerf(release=planet, person=[[person:Pat_Fish]], instruments=producer)}
-#${addAlbumPerf(release=planet, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#${addAlbumPerf(release=planet, person=[[person:David_Jackson]], instruments=photography)}
-#${addAlbumPerf(release=planet, person=[[person:Pascal_legras]], instruments=sleeve)}
-#	${a_eng} ${rivers}, Francisco Cabeza
-#	${a_prod} ${rivers}, ${pat}
-#	${a_photo} ${mitch}, David Jackson
-#	${a_sleev} Pascal Legras
-	${a_grv_a} jbc never scared
-	${det_end}
-	${a-side_beg}
-	${invent}
-	<br />${lineo}
-	<br />${hyst}
-	<br />${word}
-	<br />${kid}
-	${a-side_end}
-	${b-side_beg}
-	${burg}
-	<br />${being}
-	<br />${plague}
-	<br />${dream}
-	<br />${good}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=planet)}
+	${clearAlbumPerf(release=planet)}
+	${addAlbumPerf(release=planet, person=[[person:John_A._Rivers]], instruments=engineer)}
+	${addAlbumPerf(release=planet, person=[[person:Francisco_Cabeza]], instruments=engineer)}
+	${addAlbumPerf(release=planet, person=[[person:John_A._Rivers]], instruments=producer)}
+	${addAlbumPerf(release=planet, person=[[person:Pat_Fish]], instruments=producer)}
+	${addAlbumPerf(release=planet, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=planet, person=[[person:David_Jackson]], instruments=photography)}
+	${addAlbumPerf(release=planet, person=[[person:Pascal_legras]], instruments=sleeve)}
 
-#${addAlbumPerf(release=planet, person=[[person:Pat_Fish]], song=NULL)}
-#${addAlbumPerf(release=planet, person=[[person:Paul_Mulreany]], song=NULL)}
-#${addAlbumPerf(release=planet, person=[[person:Laurence_O'Keefe]], song=NULL)}
-#${addAlbumPerf(release=planet, person=[[person:Kizzy_O'Callaghan]], song=NULL)}
-#${addAlbumPerf(release=planet, person=[[person:Alex_Green]], song=NULL)}
-#	${pat}
-#	<br />${paul}
-#	<br />${larry}
-#	<br />${kizzy}
-#	<br />${green}
-	${players_end}
-	${thx_beg}
-	These lyrics transcribed by the Butcher with an Edding
-	1800 Profitpen, because you're always on at me to put
-	them on the sleeve! Hope you enjoy this collection.  That
-	is, after all, what we made it for.  Best regards, The
-	Butcher X.
-	<p>
-	Serious thanks to: Harry, Barbara, ${rev} and Frankie Stebbing,
-	Mark, Dee, Eleanor, Jasmine, ${wolfi}, Karen, Gareth,
-	Frank Riley, <a href="http://www.nitronic.com/research/cole.html" ${inviteByeBye}>Cole</a>, Nigel and the Wal Guitar Company.
-	${thx_end}
-	${patsays_beg}
-	This was a real &quot;band&quot; album by a touring unit which
-	had become really quite ferocious.  In choosing to work
-	with ${rivers} again we felt that we were sufficiently
-	noisy and fierce to cope with any over- tidy production
-	strokes he might pull.  &quot;Clean *that* up, then, ya bastard&quot;
-	was out declared policy in the group. 
-	<p>
-	Of course, we under-rated him.I wanted to start to mess
-	with the pretty traditional song structures we were using.
-	We were all aware that music was changing, and, more
-	out of interest than out of any spurious &quot;career&quot; concern,
-	we wanted to see where we could take our pop songs using
-	things like breakdowns, the mixing in of &quot;found&quot; voices
-	(which we first heard NOT from Steinski or the Bryne/${eno}
-	collaboration, but from John Stapleton, a DJ who scratched
-	things in at early ${aero}, radical and unexpected changes
-	of sounds - a series of sonic events rather than plain
-	old verse/chorus structure.  I probably did too much
-	pre-production on my (new) 4-track at home, and the whole
-	thing sounds a bit stillborn.
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#planet, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
-	${mkAlbumPress(album=planet)}
+	${addAlbumPerf(release=planet, type=Aside, ordinal=1, song="New Invention")}
+	${addAlbumPerf(release=planet, type=Aside, ordinal=2, song="Line Of Death")}
+	${addAlbumPerf(release=planet, type=Aside, ordinal=3, song="Hysteria")}
+	${addAlbumPerf(release=planet, type=Aside, ordinal=4, song="The Word I Was Looking For")}
+	${addAlbumPerf(release=planet, type=Aside, ordinal=5, song="Bicycle Kid")}
+	${addAlbumPerf(release=planet, type=Bside, ordinal=1, song="Burglar Of Love")}
+	${addAlbumPerf(release=planet, type=Bside, ordinal=2, song="Nightmare Being")}
+	${addAlbumPerf(release=planet, type=Bside, ordinal=3, song="Do The Bubonic Plague")}
+	${addAlbumPerf(release=planet, type=Bside, ordinal=4, song="Bad Dream Lover")}
+	${addAlbumPerf(release=planet, type=Bside, ordinal=5, song="The Good Ones")}
+
+	${addAlbumPerf(release=planet, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=planet, person=[[person:Paul_Mulreany]])}
+	${addAlbumPerf(release=planet, person=[[person:Laurence_O'Keefe]])}
+	${addAlbumPerf(release=planet, person=[[person:Kizzy_O'Callaghan]])}
+	${addAlbumPerf(release=planet, person=[[person:Alex_Green]])}
 
 	${jbc_footer}
 #live	endif
@@ -4632,896 +3389,244 @@ Previously available on the ${fishco} LP/CD.
 
 #define	roadrunner.html
 #live	if (getval(page) = roadrunner.html)
-	${mkHeader(section=albums, title=Roadrunner)}
+	${mkAlbumHeader(lookup=runner, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/roadrunner_front.jpg"><img
-		alt="[album cover]"
-		src="${jbc_images}/releases/roadrunner_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/roadrunner_back.jpg"><img
-		alt="[album cover]"
-		src="${jbc_images}/releases/roadrunner_back_250.jpg"></a>
-	${a_media} ${SINGLE}, ${12}
-	${a_label} Glass
-	${a_cat} Glass 1204
-	${a_dtreleased} Aug1984
-	${a_rec} April 1984, Beck, Wellingborough
-#	${addAlbumPerf(release=runner, person=[[person:Derek_Tomkins]], instruments=engineer)}
-#	${addAlbumPerf(release=runner, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=runner, person=[[person:Buffalo_Shame]], instruments=sleeve)}
-#	${a_eng} Derek &quot;Secret Weapon&quot; Tomkins
-#	${a_photo} ${mitch}
-#	${a_sleev} Buffalo Shame
-	${a_grv_a} Bigger than Elvis
-	${det_end}
-	${a-side_beg}
-	${road}
-	${a-side_end}
-	${b-side_beg}
-	${rain}
-	<br />${drink}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=runner)}
+	${clearAlbumPerf(release=runner)}
+	${addAlbumPerf(release=runner, person=[[person:Derek_Tomkins]], instruments=engineer)}
+	${addAlbumPerf(release=runner, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=runner, person=[[person:Buffalo_Shame]], instruments=sleeve)}
 
-#${addAlbumPerf(release=runner, person=[[person:Pat_Fish]], song=NULL)}
-#	${addAlbumPerf(release=runner, person=[[person:Pat_Fish]], instruments=Guitar\, Organ\, Vocals)}
-#	${addAlbumPerf(release=runner, person=[[person:Max_Eider]], instruments=Electric Guitar\, Organ\, Vocals)}
-#	${addAlbumPerf(release=runner, person=[[person:David_J.]], instruments=Bass Guitar\, Vocals)}
-#	${addAlbumPerf(release=runner, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
-#	${addAlbumPerf(release=runner, person=[[person:Marc and Paul of the Hackney Horns]])}
-#
-#	${pat} (Guitar, Organ, Vocals)
-#	<br />${max} (Electric Guitar, Organ, Vocals)
-#	<br />${dj} (Bass Guitar, Vocals)
-#	<br />${owen} (Drums, Vocals)
-#	<br />With Marc and Paul of the Hackney Horns
-	${players_end}
-	${thx_beg}
-	This record is for Sterling
-	${thx_end}
-	${lin_beg}
-	I still can't believe we've made this record. Big isn't it?
-	I don't know what the A side is about. ${rain} is
-	about the weather, but not really, and you get a
-	special bonus when Max &quot;Twilight Zone&quot; Eider sings
-	about his hobby. I like it, Dave likes it, Jones likes
-	it, but Max doesn't seem to be around just now.
-	Maybe you could like it for him. Be good now, Your Pal,
-	The Butcher X. 
-	${lin_end}
+	${addAlbumPerf(release=runner, type=Aside, ordinal=1, song="Roadrunner")}
+	${addAlbumPerf(release=runner, type=Bside, ordinal=1, song="Rain")}
+	${addAlbumPerf(release=runner, type=Bside, ordinal=2, song="D.R.I.N.K.")}
+
+	${addAlbumPerf(release=runner, person=[[person:Pat_Fish]], instruments=Guitar\, Organ\, Vocals)}
+	${addAlbumPerf(release=runner, person=[[person:Max_Eider]], instruments=Electric Guitar\, Organ\, Vocals)}
+	${addAlbumPerf(release=runner, person=[[person:David_J.]], instruments=Bass Guitar\, Vocals)}
+	${addAlbumPerf(release=runner, person=[[person:Owen_Jones]], instruments=Drums\, Vocals)}
+	${addAlbumPerf(release=runner, person=[[person:Marc and Paul of the Hackney Horns]])}
 
 	${jbc_footer}
 #live	endif
 
 #define	scandal.html
 #live	if (getval(page) = scandal.html)
-	${mkHeader(section=albums, title=A Scandal In Bohemia)}
+	${mkAlbumHeader(lookup=scandal, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/scandal_front.jpg"><img
-		src="${jbc_images}/scandal_front_500.jpg"></a>
-	<a href="${jbc_images}/scandal_back.jpg"><img
-		src="${jbc_images}/scandal_back_250.jpg"></a>
-	${a_media} ${ALBUM}
-	${a_label} Glass
-	${a_cat} GLALP009
-	${a_dtreleased} Nov1984
-	${a_rec} August 1984, Woodbine Studio, Leamington Spa
-#	${addAlbumPerf(release=scandal, person=[[person:John_A._Rivers]], instruments=engineer)}
-#	${addAlbumPerf(release=scandal, person=[[person:Jonathan_Dee]], instruments=engineer)}
-#	${addAlbumPerf(release=scandal, person=[[person:John_A._Rivers]], instruments=producer)}
-#	${addAlbumPerf(release=scandal, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=scandal, person=[[person:Emerson_Hunt]], instruments=sleeve)}
-#	${a_eng} ${rivers}, Jonathan Dee
-#	${a_prod} ${rivers}
-#	${a_photo} ${mitch}
-#	${a_sleev} Hunt Emerson
-	${a_grv_a} would you like to swing on a star?
-	${a_grv_b} or would you rather be a fish?
-	${det_end}
-	${a-side_beg}
-	${smiff}
-	<br />${men}
-	<br />${hour}
-	<br />${meat}
-	<br />${betty}
-	${a-side_end}
-	${b-side_beg}
-	${marn}
-	<br />${wheel}
-	<br />${mind}
-	<br />${gf}
-	<br />${desert}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=scandal)}
+	${clearAlbumPerf(release=scandal)}
+	${addAlbumPerf(release=scandal, person=[[person:John_A._Rivers]], instruments=engineer)}
+	${addAlbumPerf(release=scandal, person=[[person:Jonathan_Dee]], instruments=engineer)}
+	${addAlbumPerf(release=scandal, person=[[person:John_A._Rivers]], instruments=producer)}
+	${addAlbumPerf(release=scandal, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=scandal, person=[[person:Emerson_Hunt]], instruments=sleeve)}
 
-#${addAlbumPerf(release=scandal, person=[[person:Pat_Fish]], song=NULL)}
-#${addAlbumPerf(release=scandal, person=[[person:Max_Eider]], song=NULL)}
-#${addAlbumPerf(release=scandal, person=[[person:Owen_Jones]], song=NULL)}
-#${addAlbumPerf(release=scandal, person=[[person:David_J.]], song=NULL)}
-#	${pat}
-#	<br />${max}
-#	<br />${owen}
-#	<br />${dj}
-	${players_end}
-	${thx_beg}
-	Our special thanks go to Danny Hopkins, Eric and Julian
-	at the Grand Union, Chris Seventeen, Earl Sikkorski and,
-	of course, to D. Elvis Barker.  We'd like to take this
-	opportunity to thank all of you who have been in touch
-	with us one way or another over the past few months:
-	you know who you are, and we know where you live.
-	<p>
-	This record is dedicated to Big Basil and Rosemiaowrie.
-	Enjoy it if you can - yours ever, The Butcher X.
-	${thx_end}
-	${lin_beg}
-	<a name="smith">
-	<p>${smiff}
-	Soft white underbelly = Saturday Scene.
-	</a>
-	<a name="men">
-	<p>${men}
-	Some things never change.  Notice how they never sit
-	together on buses?
-	</a>
-	<a name="hour">
-	<p>${hour}
-	An important personal statement.
-	</a>
-	<a name="meat">
-	<p>${meat}
-	Could refer to a number of things.  Can it really
-	be about road accidents?  Oblique.
-	</a>
-	<a name="betty">
-	<p>${betty}
-	Is this the sort of tune you can play to your mother?
-	</a>
-	<a name="marnie">
-	<p>${marn}
-	Across the steepes the rumour runs : she's still at it,
-	and <b>she must be stopped!</b>
-	</a>
-	<a name="wheely">
-	<p>${wheel}
-	Do you know what happens if you leave a fish too long
-	in an elevator?  Educations.
-	</a>
-	<a name="playgroup">
-	<p>${mind}
-	Warp factor 10.  A perfectly reasonable argument in my opinion.
-	</a>
-	<a name="girlfriend">
-	<p>${gf}
-	Concerns a number of conflicting feelings (yes, we do have them)
-	about the strangest summer I ever spent.  Yes, it is a shame,
-	and yes, I do miss them all.  Dedicated to the free dinner circuit,
-	and may it never ever happen again.
-	</a>
-	<a name="desert">
-	<p>${desert}
-	Not a joke.  It is there, and it is waiting.
-	</a>
-	${lin_end}
-	${patsays_beg}
-	The Albatross.  Since the recording of ${bacon} (almost
-	two years before this one) we had become a &quot;proper&quot; group.
-	For all that, we still pooled our skills in the studio,
-	and this isn't a bad two weeks' work.
-	<p>
-	I think that, lyrically, a lot of the songs are a bit
-	trite and immature, and our inability to take ourselves
-	seriously is much in evidence.  A record, I feel, of
-	its time.  We were young(ish) and cocky and I think it
-	shows.  I still haven't learned to sing on this one,
-	which bugs me too.  Still, it was cheap and cheerful,
-	and it helped us to meet an awful lot of people.
-	<p>
-	I was told, incidentally, that if we released this on
-	Glass we could expect a top global sale of 2,000.  We
-	released it on Glass and sold about 25,000 copies.
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#scandal, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
-	${mkAlbumPress(album=scandal)}
+	${addAlbumPerf(release=scandal, type=Aside, ordinal=1, song="Southern Mark Smith")}
+	${addAlbumPerf(release=scandal, type=Aside, ordinal=2, song="Real Men")}
+	${addAlbumPerf(release=scandal, type=Aside, ordinal=3, song="Soul Happy Hour")}
+	${addAlbumPerf(release=scandal, type=Aside, ordinal=4, song="I Need Meat")}
+	${addAlbumPerf(release=scandal, type=Aside, ordinal=5, song="Just Like Betty Page")}
+	${addAlbumPerf(release=scandal, type=Bside, ordinal=1, song="Marnie")}
+	${addAlbumPerf(release=scandal, type=Bside, ordinal=2, song="Caroline Wheeler's Birthday Present")}
+	${addAlbumPerf(release=scandal, type=Bside, ordinal=3, song="Mind Like A Playgroup")}
+	${addAlbumPerf(release=scandal, type=Bside, ordinal=4, song="Girlfriend")}
+	${addAlbumPerf(release=scandal, type=Bside, ordinal=5, song="My Desert")}
+
+	${addAlbumPerf(release=scandal, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=scandal, person=[[person:Max_Eider]])}
+	${addAlbumPerf(release=scandal, person=[[person:Owen_Jones]])}
+	${addAlbumPerf(release=scandal, person=[[person:David_J.]])}
 
 	${jbc_footer}
 #live	endif
 
 #define	sex.html
 #live	if (getval(page) = sex.html)
-	${mkHeader(section=albums, title=Sex And Travel)}
+	${mkAlbumHeader(lookup=sex, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/sex_front.jpg"><img
-		src="${jbc_images}/releases/sex_front_500.jpg"></a>
-	<a href="${jbc_images}/releases/sex_back.jpg"><img
-		src="${jbc_images}/releases/sex_back_250.jpg"></a>
-	${a_media} ${ALBUM}
-	${a_label} Glass
-	${a_cat} MGLALP011
-	${a_dtreleased} May1985
-	${a_rec} February 1985, Woodbine Studio, Leamington Spa
-#	${addAlbumPerf(release=sex, person=[[person:John_A._Rivers]], instruments=producer)}
-#	${addAlbumPerf(release=sex, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=sex, person=[[person:Buffalo_Shame]], instruments=sleeve)}
-#	${a_prod} ${rivers}
-#	${a_photo} ${mitch}
-#	${a_sleev} Buffalo Shame
-	${a_grv_a} boris is digging the potatoes
-	${det_end}
-	${a-side_beg}
-	${sat}
-	<br />${holiday}
-	<br />${pets}
-	<br />${rumour}
-	${a-side_end}
-	${b-side_beg}
-	${reagan}
-	<br />${boy}
-	<br />${walk}
-	<br />${drain}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=sex)}
+	${clearAlbumPerf(release=sex)}
+	${addAlbumPerf(release=sex, person=[[person:John_A._Rivers]], instruments=producer)}
+	${addAlbumPerf(release=sex, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=sex, person=[[person:Buffalo_Shame]], instruments=sleeve)}
 
-#${addAlbumPerf(release=sex, person=[[person:Pat_Fish]], song=NULL)}
-#${addAlbumPerf(release=sex, person=[[person:Max_Eider]], song=NULL)}
-#${addAlbumPerf(release=sex, person=[[person:Owen_Jones]], song=NULL)}
-#${addAlbumPerf(release=sex, person=[[person:David_J.]], song=NULL)}
-#${addAlbumPerf(release=sex, person=[[person:Felix_Ray]], song=NULL)}
-#	${pat}
-#	<br />${max}
-#	<br />${owen}
-#	<br />${dj}
-#	<br />${felix}
-	${players_end}
-	${lin_beg}
-	For absent friends
-	${lin_end}
-	${patsays_beg}
-	One day's rehearsal in Kevin Haskin's living room, five
-	days' recording and two days' mixing was all it took
-	for us to make my favourite of the Glass records.
-	<p>
-	Now that the band had done a few dates with decent p.a.
-	systems and stuff, I was beginning to have some sort
-	of a bead on this singing business.  Also, having exhausted
-	the initial stick of JB songs (several of the ${scandal}
-	tunes had actually been written at the time of ${bacon},
-	but were rejected back then as needing further development),
-	I was obliged for the first time to write about my life
-	as it was at the time, which was very different to the
-	way I lived when writing the first two records.
-	<p>
-	Now I was &quot;in a band&quot;, had left my day job, had been
-	to Europe... I even started to write songs that were
-	not self-consciously deferential and mocking.  Hence,
-	I guess, the arrival of the first recorded &quot;big ballad&quot;
-	in ${rumour}, where David J.  harmonies at the end STILL
-	give me the shivers.
-	<p>
-	I think that now we had started to learn about actually
-	creating recordings rather than just recording the sound
-	of a bunch of pals fooling around, and the disc does
-	have a nice, unified feel. Credit ${rivers} for
-	his high-speed mixing job.  When I think about it, this
-	l.p.  doesn't really have any &quot;great&quot; tunes, in the sense
-	of numbers that people request or whatever, but it has
-	a nice totality, a good, atmospheric vibe.
-	This one I'd actually defend at length if I had to.
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#sex, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
-	${mkAlbumPress(album=sex)}
+	${addAlbumPerf(release=sex, type=Aside, ordinal=1, song="Big Saturday")}
+	${addAlbumPerf(release=sex, type=Aside, ordinal=2, song="Holiday")}
+	${addAlbumPerf(release=sex, type=Aside, ordinal=3, song="Red Pets")}
+	${addAlbumPerf(release=sex, type=Aside, ordinal=4, song="Only A Rumour")}
+	${addAlbumPerf(release=sex, type=Bside, ordinal=1, song="President Reagan's Birthday Present")}
+	${addAlbumPerf(release=sex, type=Bside, ordinal=2, song="What's The Matter\, Boy?")}
+	${addAlbumPerf(release=sex, type=Bside, ordinal=3, song="Walk With The Devil")}
+	${addAlbumPerf(release=sex, type=Bside, ordinal=4, song="Down The Drain")}
+
+	${addAlbumPerf(release=sex, person=[[person:Pat_Fish]])}
+	${addAlbumPerf(release=sex, person=[[person:Max_Eider]])}
+	${addAlbumPerf(release=sex, person=[[person:Owen_Jones]])}
+	${addAlbumPerf(release=sex, person=[[person:David_J.]])}
+	${addAlbumPerf(release=sex, person=[[person:Felix_Ray]])}
 
 	${jbc_footer}
 #live	endif
 
 #define	shirley.html
 #live	if (getval(page) = shirley.html)
-	${mkHeader(section=albums, title=Shirley Maclaine)}
+	${mkAlbumHeader(lookup=shir, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/shirley_front.jpg"><img
-		alt="[album cover]" src="${jbc_images}/shirley_front_500.jpg"></a>
-	<a href="${jbc_images}/shirley_back.jpg"><img
-		alt="[album cover]" src="${jbc_images}/shirley_back_250.jpg"></a>
-	<a href="${jbc_images}/shirley_cd.jpg"><img
-		alt="[album cover]" src="${jbc_images}/shirley_cd_250.jpg"></a>
-	${a_media} ${SINGLE} from ${blue}
-	${a_label} Shock
-	${a_cat} SHOCKCD4010
-	${a_dtreleased} 1991
-	${a_where} Australia
-	${a_sleev} aQb. SK 1991
-	${det_end}
-	${tun_beg}
-	${shirl} (edit) 3:48
-	<br />${yo} (edit) 4:03
-	<br />${daycare} 3:07
-	<br />${panic} 4:27
-	<br />${drugs} 3:44
-	${tun_end}
-	${lin_beg}
-	This EP is dedicated to Maynard F# Crabbes in appreciation
-	of his dedication to advancing the cause of the jazz
-	butcher in australia.
-	<p>
-	(<b>This self-dedication was not approved by Pat!</b>)
-	${lin_end}
+	${clearAlbumPerf(release=shir)}
+	${addAlbumPerf(release=shir, ordinal=1, song="Shirley Maclaine", version=edit)}
+	${addAlbumPerf(release=shir, ordinal=2, song="She's A Yo-Yo", version=edit)}
+	${addAlbumPerf(release=shir, ordinal=3, song="Daycare Nation")}
+	${addAlbumPerf(release=shir, ordinal=4, song="Panic In Room 109")}
+	${addAlbumPerf(release=shir, ordinal=5, song="She's On Drugs")}
 
 	${jbc_footer}
 #live	endif
 
 #define	smith.html
 #live	if (getval(page) = smith.html)
-	${mkHeader(section=albums, title=Southern Mark Smith)}
+	${mkAlbumHeader(lookup=smith, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/cover_smith_front.jpg"><img
-		src="${jbc_images}/cover_smith_front_500.jpg"></a>
-	<a href="${jbc_images}/cover_smith_back.jpg"><img
-		src="${jbc_images}/cover_smith_back_250.jpg"></a>
-	<p>
-	${a_media} ${SINGLE}, ${7} (only) from ${scandal}
-	${a_label} Glass
-	${a_cat} Glass 027
-	${a_dtreleased} Sep1983
-	${a_rec} Summer 1983, Beck Wellingborough
-#	${addAlbumPerf(release=smith, person=[[person:David_E._Barker]], instruments=producer)}
-#	${addAlbumPerf(release=smith, person=[[person:Pat_Fish]], instruments=producer)}
-#	${addAlbumPerf(release=smith, person=[[person:Kevin_Haskins]], instruments=producer)}
-#	${addAlbumPerf(release=smith, person=[[person:Mitch_Jenkins]], instruments=photography)}
-	${det_end}
-	${a-side_beg}
-	${smiff}
-	${a-side_end}
-	${b-side_beg}
-	${count}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=smith)}
+	${clearAlbumPerf(release=smith)}
+	${addAlbumPerf(release=smith, person=[[person:David_E._Barker]], instruments=producer)}
+	${addAlbumPerf(release=smith, person=[[person:Pat_Fish]], instruments=producer)}
+	${addAlbumPerf(release=smith, person=[[person:Kevin_Haskins]], instruments=producer)}
+	${addAlbumPerf(release=smith, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=smith, type=Aside, ordinal=1, song="Southern Mark Smith")}
+	${addAlbumPerf(release=smith, type=Bside, ordinal=1, song="Jazz Butcher -v- Count Dracula")}
 
-#${addAlbumPerf(release=smith, person=[[person:Pat_Fish]], song=NULL)}
-#	${addAlbumPerf(release=smith, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#	${addAlbumPerf(release=smith, person=[[person:Max_Eider]], instruments=Lead Guitar\, Vocals)}
-#	${addAlbumPerf(release=smith, person=[[person:Alice_Thompson]], instruments=Organ)}
-#	${addAlbumPerf(release=smith, person=[[person:Rolo_McGinty]], instruments=Bass)}
-#	${addAlbumPerf(release=smith, person=[[person:Kevin_Haskins]], instruments=Drums)}
-#	${pat} (Rhythm Guitar, Vocals)
-#	<br />${max} (Lead Guitar, Vocals)
-#	<br />${at} (Organ)
-#	<br />${rolo} (Bass)
-#	<br />${hask} (Drums)
-	${players_end}
-	${lin_beg}
-	Recorded in the summer of 1983 in a place called Wellingborough,
-	a small town in the middle of England where even the
-	children are scarey! &quot;Hey, mister, can you SEE in them
-	glasses?&quot;  I get to sing and play things like guitar, sax and piano.
-	<p>
-	Max does the electric guitar.  On bass is Rolo McGinty,
-	and Princess Alice Thompson plays the organ.  They're
-	both in ${tops} now, a group internationally recognised
-	as being the shortest collection of pop musicians in
-	the world.  Playing the drums is Kevin Haskins, a charming
-	neighbour of mine, and veteran of the ${haus} conspiracy.  Miaowula!
-	${lin_end}
+	${addAlbumPerf(release=smith, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
+	${addAlbumPerf(release=smith, person=[[person:Max_Eider]], instruments=Lead Guitar\, Vocals)}
+	${addAlbumPerf(release=smith, person=[[person:Alice_Thompson]], instruments=Organ)}
+	${addAlbumPerf(release=smith, person=[[person:Rolo_McGinty]], instruments=Bass)}
+	${addAlbumPerf(release=smith, person=[[person:Kevin_Haskins]], instruments=Drums)}
 
 	${jbc_footer}
 #live	endif
 
 #define	spooky7.html
 #live	if (getval(page) = spooky7.html)
-	${mkHeader(section=albums, title=Spooky (7"))}
+	${mkAlbumHeader(lookup=spook7, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/spooky7_A.jpg"><img alt="[album cover]"
-		src="${jbc_images}/releases/spooky7_A_500.jpg"></a>
-	<a href="${jbc_images}/releases/spooky7_B.jpg"><img alt="[album cover]"
-		src="${jbc_images}/releases/spooky7_B_250.jpg"></a>
-	${a_media} ${single}
-	${a_label} ${creat}
-	${a_cat} CRE059
-	${a_dtreleased} 1988
-#	${addAlbumPerf(release=spook7, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Producer)}
-#	${addAlbumPerf(release=spook7, person=[[person:Paul_Mulreany]], instruments=Drums)}
-#	${addAlbumPerf(release=spook7, person=[[person:Laurence_O'Keefe]], instruments=Bass)}
-#	${addAlbumPerf(release=spook7, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar)}
-#	${addAlbumPerf(release=spook7, person=[[person:Alex_Green]], instruments=Saxophone)}
-#	${addAlbumPerf(release=spook7, person=[[person:Iain_O'Higgins]], instruments=engineer, song="Spooky")}
-#	${addAlbumPerf(release=spook7, person=[[person:Iain_O'Higgins]], instruments=producer, song="Spooky")}
-	${a_rec} May 88, Greenhouse
-	${det_end}
-	${a-side_beg}
-	${spooky}
-	${a-side_end}
-	${b-side_beg}
-	${blame}
-	${b-side_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=spook7)}
+	${clearAlbumPerf(release=spook7)}
+	${addAlbumPerf(release=spook7, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Producer)}
+	${addAlbumPerf(release=spook7, person=[[person:Paul_Mulreany]], instruments=Drums)}
+	${addAlbumPerf(release=spook7, person=[[person:Laurence_O'Keefe]], instruments=Bass)}
+	${addAlbumPerf(release=spook7, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar)}
+	${addAlbumPerf(release=spook7, person=[[person:Alex_Green]], instruments=Saxophone)}
+	${addAlbumPerf(release=spook7, person=[[person:Iain_O'Higgins]], instruments=engineer, song="Spooky")}
+	${addAlbumPerf(release=spook7, person=[[person:Iain_O'Higgins]], instruments=producer, song="Spooky")}
 
-	${players_end}
+	${addAlbumPerf(release=spook7, type=Aside, ordinal=1, song="Spooky")}
+	${addAlbumPerf(release=spook7, type=Bside, ordinal=1, song="Spooky")}
+
 	${jbc_footer}
 #live	endif
 
 #define	spooky12.html
 #live	if (getval(page) = spooky12.html)
-	${mkHeader(section=albums, title=Spooky (12"))}
+	${mkAlbumHeader(lookup=spook12, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/spooky_12_front.jpg"><img alt="[album cover]"
-		src="${jbc_images}/releases/spooky_12_front_250.jpg"></a>
-	<a href="${jbc_images}/releases/spooky_12_back.jpg"><img alt="[album cover]"
-		src="${jbc_images}/releases/spooky_12_back_250.jpg"></a>
-	${a_media} ${single}
-	${a_label} ${creat}
-	${a_cat} CRE059T
-	${a_dtreleased} 1988
-#	${addAlbumPerf(release=spook12, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Producer)}
-#	${addAlbumPerf(release=spook12, person=[[person:Paul_Mulreany]], instruments=Drums)}
-#	${addAlbumPerf(release=spook12, person=[[person:Laurence_O'Keefe]], instruments=Bass)}
-#	${addAlbumPerf(release=spook12, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar)}
-#	${addAlbumPerf(release=spook12, person=[[person:Alex_Green]], instruments=Saxophone)}
-#	${addAlbumPerf(release=spook12, person=[[person:Iain_O'Higgins]], instruments=engineer, song="Spooky")}
-#	${addAlbumPerf(release=spook12, person=[[person:Iain_O'Higgins]], instruments=producer, song="Spooky")}
-#	${addAlbumPerf(release=spook12, person=[[person:Alastair_Indge]], instruments=photography)}
-#	${addAlbumPerf(release=spook12, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=spook12, person=[[person:Philip_Thain]], aka="[[person:Crusher]]", instruments=busmaster)}
-#	${addAlbumPerf(release=spook12, person=[[person:Steve_Malloy]], aka="[[person:De_Judge]]", instruments=justice & security)}
-	${a_rec} May 88, Greenhouse
-	${det_end}
-	${tun_beg}
-	${spooky} (Extended Version)
-	<br />${best} (Edgar Wallace Mix)
-	<br />${blame}
-	${tun_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=spook12)}
+	${clearAlbumPerf(release=spook12)}
+	${addAlbumPerf(release=spook12, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar\, Producer)}
+	${addAlbumPerf(release=spook12, person=[[person:Paul_Mulreany]], instruments=Drums)}
+	${addAlbumPerf(release=spook12, person=[[person:Laurence_O'Keefe]], instruments=Bass)}
+	${addAlbumPerf(release=spook12, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar)}
+	${addAlbumPerf(release=spook12, person=[[person:Alex_Green]], instruments=Saxophone)}
+	${addAlbumPerf(release=spook12, person=[[person:Iain_O'Higgins]], instruments=engineer, song="Spooky")}
+	${addAlbumPerf(release=spook12, person=[[person:Iain_O'Higgins]], instruments=producer, song="Spooky")}
+	${addAlbumPerf(release=spook12, person=[[person:Alastair_Indge]], instruments=photography)}
+	${addAlbumPerf(release=spook12, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=spook12, person=[[person:Philip_Thain]], aka="[[person:Crusher]]", instruments=busmaster)}
+	${addAlbumPerf(release=spook12, person=[[person:Steve_Malloy]], aka="[[person:De_Judge]]", instruments=justice & security)}
 
-	${players_end}
+	${addAlbumPerf(release=spook12, type=Aside, ordinal=1, song="Spooky", version=Extended Version)}
+	${addAlbumPerf(release=spook12, type=Bside, ordinal=1, song="The Best Way", version=Edgar Wallace Mix)}
+	${addAlbumPerf(release=spook12, type=Bside, ordinal=2, song="Blame")}
+
 	${jbc_footer}
 #live	endif
 
 #define	spooky.html
 #live	if (getval(page) = spooky.html)
-	${mkHeader(section=albums, title=Spooky)}
+	${mkAlbumHeader(lookup=spook, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/releases/spooky_12_front.jpg"><img alt="[album cover]"
-		src="${jbc_images}/releases/spooky_12_front_250.jpg"></a>
-	<a href="${jbc_images}/releases/spooky_12_back.jpg"><img alt="[album cover]"
-		src="${jbc_images}/releases/spooky_12_back_250.jpg"></a>
-	${CBC}
-	${a_media} ${EP}
-	${a_label} ${creat}
-	${a_cat} 8721832
-	${a_dtreleased} 1988
-#	${addAlbumPerf(release=spook, person=[[person:Richard_and_Yves]], instruments=engineer)}
-#	${addAlbumPerf(release=spook, person=[[person:Iain_O'Higgins]], instruments=engineer, song="Spooky")}
-#	${addAlbumPerf(release=spook, person=[[person:Kevin_Komoda]], instruments=producer)}
-#	${addAlbumPerf(release=spook, person=[[person:Iain_O'Higgins]], instruments=producer, song="Spooky")}
-#	${addAlbumPerf(release=spook, person=[[person:Alastair_Indge]], instruments=photography)}
-#	${addAlbumPerf(release=spook, person=[[person:Mitch_Jenkins]], instruments=photography)}
-#	${addAlbumPerf(release=spook, person=[[person:Barbara_Taylor]], instruments=photography)}
-#	${addAlbumPerf(release=spook, person=[[person:Berry_Carrington]], instruments=photography)}
-	${a_rec} May 88, Greenhouse, (${spooky}); ${linkInternal(/gigs/1988/Jun5.html, 5 Jun 88)}, Studio 13, CBC (rest)
-#	${a_eng} ${iain}, (${spooky}); Richard and Yves (rest)
-#	${a_prod} ${iain}, (${spooky}); ${kevin} (rest)
-#	${a_photo} ${indge}, ${mitch}, Barbara Taylor, Berry Carrington
-	${det_end}
-	${tun_beg}
-	${spooky} (Extended Version)
-	<br />${best} (Edgar Wallace Mix)
-	<br />${blame}
-	<br />${spooky} (Single Version)
-	<br />${sarah}
-	<br />${engine}
-	<br />${blame} (It On The Libyans)
-	<br />${go}
-	<br />${flan}
-	${tun_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=spook)}
+	${clearAlbumPerf(release=spook)}
+	${addAlbumPerf(release=spook, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar)}
+	${addAlbumPerf(release=spook, person=[[person:Paul_Mulreany]], instruments=Drums)}
+	${addAlbumPerf(release=spook, person=[[person:Laurence_O'Keefe]], instruments=Bass)}
+	${addAlbumPerf(release=spook, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar)}
+	${addAlbumPerf(release=spook, person=[[person:Alex_Green]], instruments=Saxophone)}
+	${addAlbumPerf(release=spook, person=[[person:Kevin_Komoda]], instruments=Organ)}
+	${addAlbumPerf(release=spook, person=[[person:Brent_Bambury]], instruments=Backing Vocals)}
 
-#	${addAlbumPerf(release=spook, person=[[person:Pat_Fish]], instruments=Vocals\, Guitar)}
-#	${addAlbumPerf(release=spook, person=[[person:Paul_Mulreany]], instruments=Drums)}
-#	${addAlbumPerf(release=spook, person=[[person:Laurence_O'Keefe]], instruments=Bass)}
-#	${addAlbumPerf(release=spook, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar)}
-#	${addAlbumPerf(release=spook, person=[[person:Alex_Green]], instruments=Saxophone)}
-#	${addAlbumPerf(release=spook, person=[[person:Kevin_Komoda]], instruments=Organ)}
-#	${addAlbumPerf(release=spook, person=[[person:Brent_Bambury]], instruments=Backing Vocals)}
-#
-#	${pat} (Vocals, Guitar)
-#	<br />${paul} (Drums)
-#	<br />${larry} (Bass)
-#	<br />${kizzy} (Guitar)
-#	<br />${green} (Saxophone)
-#	<br />${kevin} (Organ)
-#	<br />Brent Bambury (Backing Vocals)
-	${players_end}
-	${thx_beg}
-	While I'm here, many thanks to all who came to see us on our
-	visit this summer.  Thanks for making us so welcome.  Our
-	apologies to people in Toronto for the awful sound at the
-	concert there: there really wasn't anything we could do.
-	Sorry!  Oh, and to &quot;The Unnamed Journalist&quot; in Winnipeg we
-	say: if you want to slag off ${hitch}, wait 'till he plays
-	there, meathead!!!  To the rest of you, very best regards
-	'till next time.  Love, The Butcher XX.
-	${thx_end}
-	${lin_beg}
-	Howdy!! Welcome to the J.B.C release.  Thanks for the money.
-	We'll be spending it on weapons and drugs.  The first thing
-	that you have to understand about this disc is that it is
-	<b>not</b> an L.P.: it is a single and a radio session
-	nailed together for your amusement.
-	<p>
-	The single is on side A and was recorded in May 1988 at &quot;The
-	Greenhouse&quot; in London.  It was recorded by ${iain} and
-	features Mulreany on drums, O'keefe on bass, Kizzy on
-	guitar, Alex on sax, and me on the rest.  Except for ${best}
-	which features Bhang &amp; Olafssen on bass &amp; drums
-	respectively.  Confused? You ain't heard nothing yet. (Black
-	betty, bam-ba-lam-ooh-babee a-wop-ba-ba-loo bop-sha-la-la
-	na-na-na-na early-in-the-morning whoa-dubious-lou-etc.)
-	<p>
-	The radio interference may be found on side b, and was
-	manufactured on 5th June/Juin '88.  It was engineered by
-	Richard and Yves, and produced by the very wonderful Kevin
-	Komoda with me breathing hotly down his very patient neck.
-	Mulreany, O'Keefe, Kizzy and I play and sing with a cameo
-	appearance from Kevin on organ on ${go}.
-	<p>
-	I hope you dig the noises on this record.  That is, after
-	all, the reason for our making them.
-	<p>
-	<a name="spooky">
-		In March &amp; April of '88 the Fishpower J.B.C. was on tour in
-		europe.  One of the great attractions of Eurotrucking is the
-		hour-or-so of dancing to be had between packing up the
-		noise-boxes after the show and driving back to the hotel to
-		get profoundly twisted.  This year, however, we found a
-		severe shortage of suitable frugging material and so, on our
-		return to the green unpleasant land, we set about recording
-		our own &quot;Dance Record.&quot;  The result is this, you own J.B.C
-		&quot;Acid Shed&quot; version of Classix Four's ${spooky}.  The
-		idea is that you turn it up very loud indeed and thrash
-		about in a carefree fashion until it stops.  Check it, as
-		they say, out.
-	</a>
-		<p>
-	<a name="best">
-		In a similar vein comes the Edgar Wallace mix of ${best},
-		a rap which originally appeared on the indisposible
-		${fishco} L.P.
-		This version, specifically aimed at Italian discotheques,
-		was set down through a haze of paracetemol, codeine &amp; Red
-		Stripe Lager in defiance of the most apalling toothache
-		known to mankind, May '88 model.  My thanks to the revolting
-		O'Higgins for some serious mix magick.  Linguistic note:
-		&quot;Edgar Wallace&quot; is surrealist rhyming slang for &quot;serious.&quot;
-	</a>
-		<p>
-	<a name="blame">
-		I don't know how it is with you (I lose the capacity to read
-		or write after 16 hours of touring) but one of our &quot;great&quot;
-		British cultural institutions is the vile, gutless, tabloid
-		gutter-press.  Hence ${blame}, a savagely twisted glance
-		in the direction of those idiotic "68-88" retrospectives
-		that were filling up the space between oral-retentive breast
-		displays and vicious anti-homosexual/drug/human dignity
-		tirades this summer.  Oh, ask your mum, then...
-	</a>
-		<p>
-	<a name="whitfield">
-		Mulreany soirs me up, giggles, and points out that the
-		chords to ${sarah} would be quite at home in the epicene
-		Steve Miller's <i>Take The Money And Run</i>.  He's
-		right, of course, but then we never get to hear records
-		like that in my town.  As it goes,
-		neither Whitfield of Sarah ever lived in Birchfield Road,
-		but I did, so I know what I'm talking about.  Those upset by
-		Sarah's gratuitous demise towards the end of this unpleasant
-		little narrative will be relieved to learn that she
-		re-appears, alive &amp; well, albeit with a change of name, in
-		the story <i>An Idea Of Europe</i>, gathering dust in a
-		bookstore near you some time in the next ten years. (The
-		white shirt is important.)
-	</a>
-		<p>
-	<a name="sex">
-		${engine} is a slice of insulting cak with an
-		interesting ending.  The tall, dark &amp; easily-blackmailed
-		${brent} appears on backing vocals.
-		<a href="http://www.cecer.army.mil/~burnett/MDB/Skinny_Puppy/">
-		Skinny Puppy</a> fans get writing.  And thanks for the
-		liquor, guys... We don't really think you have anything at
-		all in common with Bruno Gerussi...
-	</a>
-		<p>
-	And, well I never, here's another version of ${blame}.
-	Without the civilising influence of <a href="${jbc_people}/alex_green.html">
-	Alex &quot;Savage But Reasonable&quot; Green</a>
-	(already suitably humiliated for absence
-	on Canadian dates during the previous summer) or the
-	supertechnopower hot Casio SK-1, this really does start to
-	get ugly.  Which is just as it should be, really.  Did you
-	ask your mum yet?  No, well, it's a bit of a problem, I
-	agree.  Why not just fucking educate yourself instead?
-	<a name="girl">
-		${go} is for my friend Phil (ip of Walshingham)
-		Parfitt, singer &amp; writer with ${perfect} and class A-!
-		human being.  It is about
-		a number of things, with special emphasis on the popular
-		chord &quot;E&quot;.  Listen and pass out.
-	</a>
-		<p>
-	<a name="flan">
-		Just don't forget to come round for ${flan}.
-		This is my favourite recording on this side, owing partly to
-		Paul &amp; Laurence's zoom groove.  (That's Laurence on
-		ash-trays, train-spotters.)  What started out as an
-		innocent-enough Mary Perry joke on ${bacon} (the &quot;real&quot;
-		first L.P.) took an ugly turn when somebody wrote in and
-		told me that it had actually happened to a friend of his.
-		So then it went like this.  Yuk.  Grrrr.
-	</a>
-	${lin_end}
+	${addAlbumPerf(release=spook, person=[[person:Richard_and_Yves]], instruments=engineer)}
+	${addAlbumPerf(release=spook, person=[[person:Iain_O'Higgins]], instruments=engineer, song="Spooky")}
+	${addAlbumPerf(release=spook, person=[[person:Kevin_Komoda]], instruments=producer)}
+	${addAlbumPerf(release=spook, person=[[person:Iain_O'Higgins]], instruments=producer, song="Spooky")}
+	${addAlbumPerf(release=spook, person=[[person:Alastair_Indge]], instruments=photography)}
+	${addAlbumPerf(release=spook, person=[[person:Mitch_Jenkins]], instruments=photography)}
+	${addAlbumPerf(release=spook, person=[[person:Barbara_Taylor]], instruments=photography)}
+	${addAlbumPerf(release=spook, person=[[person:Berry_Carrington]], instruments=photography)}
+
+	${addAlbumPerf(release=spook, ordinal=1, song="Spooky", version=Extended Version)}
+	${addAlbumPerf(release=spook, ordinal=2, song="The Best Way", version=Edgar Wallace Mix)}
+	${addAlbumPerf(release=spook, ordinal=3, song="Blame")}
+	${addAlbumPerf(release=spook, ordinal=4, song="Spooky", version=Single Version)}
+	${addAlbumPerf(release=spook, ordinal=5, song="Whitfield, Sarah & The Birchfield Road Affair")}
+	${addAlbumPerf(release=spook, ordinal=6, song="Sex Engine")}
+	${addAlbumPerf(release=spook, ordinal=7, song="Blame", version=It On The Libyans)}
+	${addAlbumPerf(release=spook, ordinal=8, song="Girl-Go")}
+	${addAlbumPerf(release=spook, ordinal=9, song="Grey Flannelette")}
 
 	${jbc_footer}
 #live	endif
 
 #define	unconditional.html
 #live	if (getval(page) = unconditional.html)
-	${mkHeader(section=albums, title=Unconditional)}
+	${mkAlbumHeader(lookup=uncond, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/uncond.jpg"><img alt="[album cover]"
-		src="${jbc_images}/uncond_500.jpg"></a>
-	<a href="${jbc_images}/uncond2.jpg"><img alt="[sleeve photo]"
-		src="${jbc_images}/uncond2_250.jpg"></a>
-	${a_media} ${COMP}
-	${a_label} Polygram
-	${a_cat} PCD182
-	${a_dtreleased} 1992
-	${a_where} Canada
-#	${addAlbumPerf(release=uncond, person=[[person:John_A._Rivers]], instruments=producer)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Iain_O'Higgins]], instruments=producer)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Martin_Stebbing]], instruments=producer)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Pat_Fish]], instruments=producer)} 
-#	${a_prod} ${rivers}, ${iain}, ${rev}, ${pat}
-#	${addAlbumPerf(release=uncond, person=[[person:Francisco_Cabeza]], instruments=engineer)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Tim_Burrell]], instruments=engineer)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Howard_Turner]], instruments=engineer)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Martin_K._Daley]], instruments=engineer)} 
-#	${a_eng} Francisco Cabeza, ${burrell}, ${howy}, Martin K. Daley
-#	${addAlbumPerf(release=uncond, person=[[person:Pascal_Legras]], instruments=sleeve)} 
-#	${a_sleev} Pascal Legras
-	${det_end}
-	${tun_beg}
-	${yo} (Edit) 4:07
-	<br />${shirl} 7:35
-	<br />${harlan} 7:24
-	<br />${filth} 6:46
-	<br />${smiff} (Big Return) 5:19
-	<br />${jungle} 7:21
-	<br />${go} 5:57
-	<br />${best} (Edgar Wallace Mix) 5:40
-	<br />${drugs} 3:54
-	<br />${tues}
-	<br />${sat} 5:22
-	<br />${panic} 4:29
-	<br />${party} (Original) 3:53
-	<br />${angels} 5:18
-	${tun_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=uncond)}
+	${clearAlbumPerf(release=uncond)}
+	${addAlbumPerf(release=uncond, person=[[person:John_A._Rivers]], instruments=producer)} 
+	${addAlbumPerf(release=uncond, person=[[person:Iain_O'Higgins]], instruments=producer)} 
+	${addAlbumPerf(release=uncond, person=[[person:Martin_Stebbing]], instruments=producer)} 
+	${addAlbumPerf(release=uncond, person=[[person:Pat_Fish]], instruments=producer)} 
+	${addAlbumPerf(release=uncond, person=[[person:Francisco_Cabeza]], instruments=engineer)} 
+	${addAlbumPerf(release=uncond, person=[[person:Tim_Burrell]], instruments=engineer)} 
+	${addAlbumPerf(release=uncond, person=[[person:Howard_Turner]], instruments=engineer)} 
+	${addAlbumPerf(release=uncond, person=[[person:Martin_K._Daley]], instruments=engineer)} 
+	${addAlbumPerf(release=uncond, person=[[person:Pascal_Legras]], instruments=sleeve)} 
 
-#	${addAlbumPerf(release=uncond, person=[[person:Pat_Fish]], instruments=Saxophone\, Keyboards\, Guitar\, Vocals)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Owen_Jones]], instruments=Drums\, Keyboards\, Vocals)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Paul_Mulreany]], instruments=Drums\, Vocals)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Dave_Morgan]])}
-#	${addAlbumPerf(release=uncond, person=[[person:David_J.]], instruments=Bass\, Vocals)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Laurence_O'Keefe]], instruments=Bass\, Vocals)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Greenwood_Goulding]], instruments=Bass)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Felix_Ray]], instruments=Bass)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Ian_Sturgess]], instruments=Bass)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Joe_Allen]], instruments=Bass)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Alex_Green]], instruments=Saxophone)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Max_Eider]], instruments=Guitar\, Vocals)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar\, Vocals)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Richard_Formby]], instruments=Guitar)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Peter_Astor]], instruments=Guitar)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Alex_Lee]], instruments=Guitar)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Peter_Crouch]], instruments=Guitar)} 
-#	${addAlbumPerf(release=uncond, person=[[person:Sumishta_Brahm]], instruments=Guitar\, Vocals)}
-#
-#	${pat} (Saxophone, Keyboards, Guitar, Vocals)
-#	<br />${owen} (Drums, Keyboards, Vocals)
-#	<br />${paul} (Drums, Vocals)
-#	<br />${morgan}
-#	<br />${dj} (Bass, Vocals)
-#	<br />${larry} (Bass, Vocals)
-#	<br />${gould} (Bass)
-#	<br />${felix} (Bass)
-#	<br />${is} (Bass)
-#	<br />${joea} (Bass)
-#	<br />${green} (Saxophone)
-#	<br />${max} (Guitar, Vocals)
-#	<br />${kizzy} (Guitar, Vocals)
-#	<br />${richard} (Guitar)
-#	<br />${astor} (Guitar)
-#	<br />${lix} (Guitar)
-#	<br />${pete} (Guitar)
-#	<br />${sumishta} (Guitar, Vocals)
-	${players_end}
-	${lin_beg}
-	<a name="yo">
-		${yo} (Edit)
-		A sorry tale of bad people on bad diets doing bad
-		things. ${lix} gets
-		to do his impressions of &quot;Desert Storm&quot; while
-		${richard} goes
-		backwards.  Joe makes motorcycle and I <i>still</i>
-		feel like the Elephant Man.
-	</a>
-		<p>
-	<a name="shirley">
-		${shirl}
-		Not, obviously enough, about the dear lady herself,
-		more about a miserable rainy night in Camden and the
-		extraordinary things that some people read these
-		days.  Remember, when somebody writes a &quot;self-help&quot;
-		book that's exactly what they are doing: helping
-		themselves.  Flipper says &quot;hi&quot;, by the way.
-	</a>
-		<p>
-	<a name="harlan">
-		${harlan}
-		If you let me out on my own in that condition, what
-		do you think is going to happen?  Butcher and
-		Twilight Zone collide on the streets of Hollywood,
-		resulting in ongoing art-misery attack and some
-		deeply aquamarine guitar from that nice
-		${astor}.
-	</a>
-		<p>
-	<a name="filth">
-		${filth}
-		Uh... in the Sixties Beirut was a real playground
-		for the rich, like Cannes or Ibiza or something.  A
-		nice place to visit.  Sometimes things really do
-		just slide right out of control, don't they?
-		Lexicographical note: to anyone who finds the
-		juxtaposition of the words &quot;Beirut&quot; and &quot;filth&quot; a
-		tad obvious, I would just say that &quot;filth&quot; is an
-		agreeable little lowlife term that one uses in
-		London to describe our wonderful police force.  I
-		trust that clears things up a little.
-	</a>
-		<p>
-	<a name="smith">
-		${smiff} (Big Return)
-		Well, the JBC really did get a big return off this
-		one.  It opened a lot of doors for us in Europe and
-		America, and listening back now I think I can see
-		why.  No, I mean that <i>Hammond</i>...
-	</a>
-		<p>
-	<a name="jungle">
-		${jungle}
-		The title comes from a rather noir little TV series
-		from the early Sixties wherein the great Herbert Lom
-		played the extremely sexy and not entirely
-		unbrilliant Dr. Alexander Kordu, a psychiatrist with
-		the handy ability to sort out even the most
-		appalling cases within sixty minutes. I love that
-		show, but I love touring better.  By the way, anyone
-		who makes suggestions about sex and travel is being
-		extremely rude.
-	</a>
-		<p>
-	<a name="girl">
-		${go}
-		Tu as vu toutes les &eacute;toiles?  The JBC lush
-		out in tribute to the (sadly departed)
-		${perfect}, featuring a superlative
-		example of the ${richard} guitar assult.  The lead vocal was
-		recorded in the studio garden at one in the morning
-		in mid-January.  The reasoning escapes me now.
-		Probably, I had been very bad.
-	</a>
-		<p>
-	<a name="best">
-		${best} (Edgar Wallace Mix)
-		&quot;Edgar Wallace&quot; means &quot;serious&quot; in surrealist
-		rhyming slang, which is a good way to describe the
-		toothache I had when O'Higgins and I did this mix.
-		Odd barnyard noises may be blamed on the
-		aforementioned ${perfect}, who got in there somewhere.
-	</a>
-		<p>
-	<a name="drugs">
-		${drugs}
-		We were halfway across the rockies in supernatural
-		British Columbia when I realised that I had never
-		come across a song with this title before.
-		Obviously something had to be done.  Dave Francolini
-		(a wonderful man who should not be allowed to drive)
-		contributed some of the most hyperactive handclaps
-		that I have ever experienced.  Then we tied him up
-		and put him with the others.
-	</a>
-		<p>
-	<a name="tues">
-		${tues}
-		Is it a road song?  Is it a love song?  Is it a
-		mushy title or what?  I'm sorry, Jesus, every line
-		is true.  I never enjoyed vanilla as much in all my
-		life.  Watch carefully: Californian brainfried
-		road-accident-from-outer-space guitar in the area!
-	</a>
-		<p>
-	<a name="satday">
-		${sat}
-		The climactic opposite of ${tues},
-		definitely a Nordic vibe to this
-		one.  Except for the middle instrumental, which
-		always makes me think of people hang-gliding in the
-		Alps: I think it may have been a Martini commercial
-		that I once saw on TV.
-	</a>
-		<p>
-	<a name="panic">
-		${panic}
-		The desk clerk couldn't believe it.  This drunk
-		comes staggering into the lobby in the middle of a
-		thunderstorm and starts wittering in bad German.  To
-		keep him from dripping all over the place the clerk
-		hands him a room key.  &quot;Excellent!&quot; burbles the
-		drunk, &quot;Room 109!&quot;  The scarey stuff kicked in the
-		bathroom.  You know, I once spent an evening
-		indulging heart attacks in a Vancouver hotel room by
-		pinching my toe.
-	</a>
-		<p>
-	<a name="ptime">
-		${party} (Original)
-		I guess you could say that this was the first jazz
-		butcher song ever written.  This recording is almost
-		ten years old now.  I find it staggering, but there
-		are hundreds of people out there (I've seen them) on
-		whom the irony has yet to take effect.  Perhaps it
-		would help them to know that the events described in
-		this song ended up with the writer in hospital.  We
-		all like a laugh, though, don't we?
-	</a>
-		<p>
-	<a name="angels">
-		${angels}
-		This is still one of my favourites.  I wrote it in
-		1986 (the day they bombed Tripoli, in fact) about
-		things that would only come to pass three years
-		later.  Or something.  Oh God, I never make any
-		sense when I start to talk about this tune.  The
-		lyrics just showed up, like automatic writing or
-		something.  I love it anyway, and I hope you love it
-		too.
-	</a>
-	${lin_end}
+	${addAlbumPerf(release=uncond, ordinal=1, song="She's A Yo-Yo", version=Edit)}
+	${addAlbumPerf(release=uncond, ordinal=2, song="Shirley Maclaine")}
+	${addAlbumPerf(release=uncond, ordinal=3, song="Harlan")}
+	${addAlbumPerf(release=uncond, ordinal=4, song="Our Friends The Filth")}
+	${addAlbumPerf(release=uncond, ordinal=5, song="Southern Mark Smith", version=Big Return)}
+	${addAlbumPerf(release=uncond, ordinal=6, song="The Human Jungle")}
+	${addAlbumPerf(release=uncond, ordinal=7, song="Girl-Go")}
+	${addAlbumPerf(release=uncond, ordinal=8, song="The Best Way", version=Edgar Wallace Mix)}
+	${addAlbumPerf(release=uncond, ordinal=9, song="She's On Drugs")}
+	${addAlbumPerf(release=uncond, ordinal=10, song="Pineapple Tuesday")}
+	${addAlbumPerf(release=uncond, ordinal=11, song="Big Saturday")}
+	${addAlbumPerf(release=uncond, ordinal=12, song="Panic In Room 109")}
+	${addAlbumPerf(release=uncond, ordinal=13, song="Partytime", version=Original)}
+	${addAlbumPerf(release=uncond, ordinal=14, song="Angels")}
+
+	${addAlbumPerf(release=uncond, person=[[person:Pat_Fish]], instruments=Saxophone\, Keyboards\, Guitar\, Vocals)} 
+	${addAlbumPerf(release=uncond, person=[[person:Owen_Jones]], instruments=Drums\, Keyboards\, Vocals)} 
+	${addAlbumPerf(release=uncond, person=[[person:Paul_Mulreany]], instruments=Drums\, Vocals)} 
+	${addAlbumPerf(release=uncond, person=[[person:Dave_Morgan]])}
+	${addAlbumPerf(release=uncond, person=[[person:David_J.]], instruments=Bass\, Vocals)} 
+	${addAlbumPerf(release=uncond, person=[[person:Laurence_O'Keefe]], instruments=Bass\, Vocals)} 
+	${addAlbumPerf(release=uncond, person=[[person:Greenwood_Goulding]], instruments=Bass)} 
+	${addAlbumPerf(release=uncond, person=[[person:Felix_Ray]], instruments=Bass)} 
+	${addAlbumPerf(release=uncond, person=[[person:Ian_Sturgess]], instruments=Bass)} 
+	${addAlbumPerf(release=uncond, person=[[person:Joe_Allen]], instruments=Bass)} 
+	${addAlbumPerf(release=uncond, person=[[person:Alex_Green]], instruments=Saxophone)} 
+	${addAlbumPerf(release=uncond, person=[[person:Max_Eider]], instruments=Guitar\, Vocals)} 
+	${addAlbumPerf(release=uncond, person=[[person:Kizzy_O'Callaghan]], instruments=Guitar\, Vocals)} 
+	${addAlbumPerf(release=uncond, person=[[person:Richard_Formby]], instruments=Guitar)} 
+	${addAlbumPerf(release=uncond, person=[[person:Peter_Astor]], instruments=Guitar)} 
+	${addAlbumPerf(release=uncond, person=[[person:Alex_Lee]], instruments=Guitar)} 
+	${addAlbumPerf(release=uncond, person=[[person:Peter_Crouch]], instruments=Guitar)} 
+	${addAlbumPerf(release=uncond, person=[[person:Sumishta_Brahm]], instruments=Guitar\, Vocals)}
 
 	${jbc_footer}
 #live	endif
@@ -5571,97 +3676,37 @@ Previously available on the ${fishco} LP/CD.
 
 #define	western.html
 #live	if (getval(page) = western.html)
-	${mkHeader(section=albums, title=Western Family)}
+	${mkAlbumHeader(lookup=family, body=${literalizeCommas()})}
 
-	${mkPurchase()}
-	${det_beg}
-	<a href="${jbc_images}/western.jpg"><img
-		alt="[album cover]"
-		src="${jbc_images}/western_500.jpg"></a>
-	<a href="${jbc_images}/western2.jpg"><img
-		alt="[sleeve photo]"
-		src="${jbc_images}/western2_250.jpg"></a>
-	${a_media} ${ALBUM}, ${LIVE}
-	${a_label} ${creat}
-	${a_cat} CRECD148
-	${a_dtreleased} 1993
-#	${addAlbumPerf(release=family, person=[[person:Iain_O'Higgins]], instruments=engineer)}
-#	${addAlbumPerf(release=family, person=[[person:David_Whittemore]], instruments=engineer)}
-#	${addAlbumPerf(release=family, person=[[person:Martin_Stebbing]], instruments=producer)}
-#	${addAlbumPerf(release=family, person=[[person:Pascal_Legras]], instruments=sleeve)}
-#	${addAlbumPerf(release=family, person=[[person:Mark_Brown]], instruments=photography)}
-#	${addAlbumPerf(release=family, person=[[person:Mike_Egli]], instruments=photography)}
-#	${a_eng} ${iain}, ${del}
-#	${a_prod} ${rev}
-#	${a_sleev} Pascal Legras, Mark Brown ${egli} (photography)
-	${a_ring} the floor was slightly wet
-	${det_end}
-	${tun_beg}
-	${smiff}
-	<br />${shirl}
-	<br />${sis}
-	<br />${still}
-	<br />${tues}
-	<br />${angels}
-	<br />${snowy}
-	<br />${drugs}
-	<br />${go}
-	<br />${yo}
-	<br />${rachel}
-	<br />${talk}
-	<br />${capt}
-	<br />${rainbow}
-	${tun_end}
-	${players_beg}
-	${fetchAlbumPersonnel(release=family)}
+	${clearAlbumPerf(release=family)}
+	${addAlbumPerf(release=family, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
+	${addAlbumPerf(release=family, person=[[person:Peter_Crouch]], instruments=Lead Guitar)}
+	${addAlbumPerf(release=family, person=[[person:Dooj_Wilkinson]], instruments=Bass\, Vocals)}
+	${addAlbumPerf(release=family, person=[[person:Nick_Burson]], instruments=Drums)}
 
-#${addAlbumPerf(release=family, person=[[person:Pat_Fish]], song=NULL)}
-#	${addAlbumPerf(release=family, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
-#	${addAlbumPerf(release=family, person=[[person:Peter_Crouch]], instruments=Lead Guitar)}
-#	${addAlbumPerf(release=family, person=[[person:Dooj_Wilkinson]], instruments=Bass\, Vocals)}
-#	${addAlbumPerf(release=family, person=[[person:Nick_Burson]], instruments=Drums)}
-#
-#	${pat} (Rhythm Guitar, Vocals)
-#	<br />${pete} (Lead Guitar)
-#	<br />${dooj} (Bass, Vocals)
-#	<br />${nick} (Drums)
-	<br />${kathie} - mileage and maintenance
-	<br />Karen Shook - tour management and leisurewear
-	${players_end}
-	${thx_beg}
-	<b>Thanks and respect</b> are extended to Frank Riley,
-	Peter McCulloch, Jennifer Blair, Jim Parker, Pam Cross,
-	Ellen and Suzanne at In-Press, Gareth Hardman, Steve
-	Cranwell, Sal Garza, J'Anna Jacobi, ${deirdre},
-	Kottie Lurie, <a href="http://davidwhittemore.com/htdb/gallery/joe.html">Roadkill Joe</a>,
-	The Jersey Posse, ${lucien}, Gillian Barclay,
-	Larry Collins, Conrad Sverkersson, Tom Peterson, Don
-	Chow, Douglas Long, Anne Kiener, Liz Garo, ${coonce},
-	Rob Zieger and the Seattle Crew, ${knight} and all
-	in Atlanta, Ligga and Meathook, Tony Brusdeilins, The
-	Elefanthaus Posse, Tony and ${joe}, Rex Sargeant,
-	Judge Curtis, The Walkabouts, LX Chilton, ${mildew}, D.
-	Elvis Parker, and the Scum.
-	${thx_end}
-	${lin_beg}
-	<b>Recorded live</b> by ${del} at Tippitina's, New Orleans;
-	The Cotton Club, Atlanta; El Mocambo, Toronto; The Nick,
-	Birmingham, Alabama and ${AX}, Chicago, Illinois, USA.
-	Mastered by ${rev}.  No overdubs, drop-ins or any of that
-	nonsense.
-	${lin_end}
-	${patsays_beg}
-	Yes, I believe something horrible DID happen to
-	<a href="${jbc_albums}/western_tape.html">the tapes</a>
-	somewhere.  The first time that ${richard} and I played
-	this CD we sat there laughing.  Still, Bootleg No.2 is
-	easier to get used to than <a href="${jbc_albums}/hamburg.html">the
-	first one</a>, so again, it's a souvenir.  After all,
-	if you were there, you can remember what it really sounded
-	like. For loonie completists only, for sure, though,
-	if you listen through the muck, you'll see that we did our bit.
-	${g_source(u=${jbc_letters}/93Aug30/albums.html#family, g=Pat Letter: 1993-08-30)}
-	${patsays_end}
+	${addAlbumPerf(release=family, person=[[person:Iain_O'Higgins]], instruments=engineer)}
+	${addAlbumPerf(release=family, person=[[person:David_Whittemore]], instruments=engineer)}
+	${addAlbumPerf(release=family, person=[[person:Martin_Stebbing]], instruments=producer)}
+	${addAlbumPerf(release=family, person=[[person:Pascal_Legras]], instruments=sleeve)}
+	${addAlbumPerf(release=family, person=[[person:Mark_Brown]], instruments=photography)}
+	${addAlbumPerf(release=family, person=[[person:Mike_Egli]], instruments=photography)}
+	${addAlbumPerf(release=family, person=[[person:Kathie_McGinty]], instruments=mileage\, maintenance)}
+	${addAlbumPerf(release=family, person=[[person:Karen_Shook]], instruments=tour management\, leisurewear)}
+
+	${addAlbumPerf(release=family, ordinal=1, song="Southern Mark Smith")}
+	${addAlbumPerf(release=family, ordinal=2, song="Shirley Maclaine")}
+	${addAlbumPerf(release=family, ordinal=3, song="Sister Death")}
+	${addAlbumPerf(release=family, ordinal=4, song="Still & All")}
+	${addAlbumPerf(release=family, ordinal=5, song="Pineapple Tuesday")}
+	${addAlbumPerf(release=family, ordinal=6, song="Angels")}
+	${addAlbumPerf(release=family, ordinal=7, song="Beautiful Snow-White Hair")}
+	${addAlbumPerf(release=family, ordinal=8, song="She's On Drugs")}
+	${addAlbumPerf(release=family, ordinal=9, song="Girl-Go")}
+	${addAlbumPerf(release=family, ordinal=10, song="She's A Yo-Yo")}
+	${addAlbumPerf(release=family, ordinal=11, song="Racheland")}
+	${addAlbumPerf(release=family, ordinal=12, song="Everybody's Talkin'")}
+	${addAlbumPerf(release=family, ordinal=13, song="Tugboat Captain")}
+	${addAlbumPerf(release=family, ordinal=14, song="Over The Rainbow")}
 
 	${jbc_footer}
 #live	endif

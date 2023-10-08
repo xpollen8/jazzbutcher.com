@@ -11112,8 +11112,6 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 #live	if (getval(page) = kelly_20th_tour.html)
 	${extractPress(
 		body=${literalizeCommas(
-
-
 	<div class="iview_intro">
 		<b>JBC 20th Anniversary Tour Travelogue - Day One
 		<br />June 8, 2002</b>

@@ -824,6 +824,15 @@
 
 	)}
 
+#define	Nov22.html()
+	${gigHeader(
+
+		recording=${literalizeCommas( ${r})},
+		who=${literalizeCommas( ${pat}, Gerard Langley, Rodney Allen, Angelo Bruschini, Alex Lee )},
+		with=${literalizeCommas( The Blue Aeroplanes )},
+		photosets= /images/19901122/19901122_KCRW_tape.jpg$$,
+	)}
+
 #define	Nov23.html()
 	${gigHeader(
 
@@ -868,15 +877,6 @@
 	)}$$
 	davis@pollux.geog.ucsb.edu
 	,
-		with=${literalizeCommas( The Blue Aeroplanes )},
-
-	)}
-
-#define	Nov24_1600.html()
-	${gigHeader(
-
-		recording=${literalizeCommas( ${r})},
-		who=${literalizeCommas( ${pat}, ${green}, ${gerard} )},
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
 	)}

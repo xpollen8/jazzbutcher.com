@@ -111,6 +111,14 @@ const	EmbedMixCloud = ({ data = {}, children }: { data: any, children?: React.Re
 	</>
 }
 
+const	EmbedKCRW = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
+	const { mediaurl } = data;
+	return <iframe
+			width="100%"
+		src={mediaurl}
+	/>
+}
+
 const	EmbedSoundCloud = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
 	const { mediaurl } = data;
 	const useURL = mediaurl?.replace('https:', 'https%3A');
@@ -146,6 +154,12 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 						<EmbedBandcamp data={data}>
 							{children}
 						</EmbedBandcamp>
+					</>
+				} else if (useMediaurl?.includes('kcrw.com')) {
+					return <>
+						<EmbedKCRW data={data}>
+							{children}
+						</EmbedKCRW>
 					</>
 				} else if (useMediaurl?.includes('soundcloud.com')) {
 					return <>

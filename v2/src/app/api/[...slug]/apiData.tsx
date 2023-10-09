@@ -83,7 +83,6 @@ const apiData = async (path: string, args?: string) => {
 		case 'press_by_href':
 		case 'presses_for_admin':
 		case 'lyrics':
-		case 'lyric_by_href':
 		case 'songs_by_datetime':
 			return await apiDataFromDataServer(path, args);
 		case 'feedbacks':
@@ -94,6 +93,16 @@ const apiData = async (path: string, args?: string) => {
 				who: censorEmail(r?.who),
 			}));
 			return data;
+		case 'lyric_by_href': {
+			const releases = await apiDataFromHTDBServer('db_albums/data.json');
+			const lyrics = await apiDataFromDataServer('lyric_by_href', args);
+			const song = lyrics?.results[0]?.title;
+			const foundList = await apiDataFromDataServer('releases_by_song', song);
+			return {
+				lyrics,
+				foundon: foundList?.results?.map(({ lookup }: any) => releases?.results?.find((r: any) => lookup === r.lookup)),
+			}
+		}
 		case 'songs_by_release': {
 			const data = await apiDataFromDataServer(path, args);
 			const crdata = await apiDataFromDataServer('credits_by_release', args);

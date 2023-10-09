@@ -13963,69 +13963,71 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 #live	if (getval(page) = 20000503_themadcapspeaks.html)
 	${extractPress(
 		body=${literalizeCommas(
-	<p class="iview_intro">
+	<div class="iview_intro">
 		May 3rd, 2000 Backstage at the Echo Lounge in Atlanta, Georgia. (and Max Eider was present off and on)
-	<p />
-	<p class="iview_q">Lisa King: We'll just roll it.	<p />
-	<p />Pat Fish: I'm a bit of a digresser, so that's probably just as well. I'm an old boy you know. 	<p />
-	<p class="iview_q">LK: So how did this whole thing start?	<p />
-	<p class="iview_a">PAT: Coming to America and everything? The whole group started so long ago that I bet only two and a half people can remember. It all began ..  him and me (points to Max Eider) used to play in a band many years ago in the city of Oxford, and it was one of those classic cases, of being on welfare and trying to buy your own P.A. and your own van, and trying to play in other cities, not realizing that there was no point in going to play in another city if nobody knew who the hell you were, and by November of '81 we got really tired of it. And I for one jacked in playing music at the age of 23, in1981. But I moved to the country, and I got really bored and I had nothing to do, so I taught myself how to play guitar. I used to play saxophone, and I taught myself to play guitar a little bit, and started making these little tapes at home. And one of the first things I wrote was a tune called "<em>Zombie Love</em>." Which is exactly that. It's about having sex with the dead. And I wanted to send this tune off to my mates, but I didn't want to put 'Pat Fish' on the cassette, 'cause I didn't really feel that this was exactly me, you know what I'm sayin'? So a friend of mine had come up with this phrase, '<em>Jazz Butcher</em>' for a laugh. We were just making up stupid names for groups one night. And my friend 'The Anti Christ' he came up with '<em>The Jazz Butcher</em>.' He also came up with direct mailing, so he really is The Anti Christ. Big advertising bloke now. Still speaks to me occasionally. Anti had come up with this thing, '<em>Jazz Butcher</em>' and I thought "Yeah that's about right. <em>Zombie Love</em>. I'll put that on the side of the cassette like." I sent to two friends, and to two guys at record labels, basically because I thought it would give them a laugh. But one of them came back, the great Dave Barker, at Glass Records in London. He comes back and goes, "Hmmm. Want to make an album." And I'm like, "Want to make an album? Does the pope shit in the woods? You know?" so, .. yeah allright. Whatever. And so Max and I went touring down to South London, and made this record for about thirty five dollars. And Barker says, "Well, you've got to call it <em>Jazz Butcher</em> now." And so we called it <em>Jazz</em> <em>Butcher</em> and it stuck ever since. And when we made that first record, I had a little day job, and I thought well some people spend a fortnight in Spain or whatever, I'll spend a fortnight in a recording studio, and that's what a terrific holiday. Maybe if we sell a few hundred they'll let me do it again. And they did. We sold a few hundred, and they did let me do it again. But the second one went mental. 
+	</div>
+
+	<div class="iview_q">Lisa King: We'll just roll it.</div>
+
+	<div class="iview_a">Pat Fish: I'm a bit of a digresser, so that's probably just as well. I'm an old boy you know.</div>
+
+	<div class="iview_q">LK: So how did this whole thing start?</div>
+
+	<div class="iview_a">
+	PAT: Coming to America and everything? The whole group started so long ago that I bet only two and a half people can remember. It all began ..  him and me (points to Max Eider) used to play in a band many years ago in the city of Oxford, and it was one of those classic cases, of being on welfare and trying to buy your own P.A. and your own van, and trying to play in other cities, not realizing that there was no point in going to play in another city if nobody knew who the hell you were, and by November of '81 we got really tired of it. And I for one jacked in playing music at the age of 23, in1981. But I moved to the country, and I got really bored and I had nothing to do, so I taught myself how to play guitar. I used to play saxophone, and I taught myself to play guitar a little bit, and started making these little tapes at home. And one of the first things I wrote was a tune called "<em>Zombie Love</em>." Which is exactly that. It's about having sex with the dead. And I wanted to send this tune off to my mates, but I didn't want to put 'Pat Fish' on the cassette, 'cause I didn't really feel that this was exactly me, you know what I'm sayin'? So a friend of mine had come up with this phrase, '<em>Jazz Butcher</em>' for a laugh. We were just making up stupid names for groups one night. And my friend 'The Anti Christ' he came up with '<em>The Jazz Butcher</em>.' He also came up with direct mailing, so he really is The Anti Christ. Big advertising bloke now. Still speaks to me occasionally. Anti had come up with this thing, '<em>Jazz Butcher</em>' and I thought "Yeah that's about right. <em>Zombie Love</em>. I'll put that on the side of the cassette like." I sent to two friends, and to two guys at record labels, basically because I thought it would give them a laugh. But one of them came back, the great Dave Barker, at Glass Records in London. He comes back and goes, "Hmmm. Want to make an album." And I'm like, "Want to make an album? Does the pope shit in the woods? You know?" so, .. yeah allright. Whatever. And so Max and I went touring down to South London, and made this record for about thirty five dollars. And Barker says, "Well, you've got to call it <em>Jazz Butcher</em> now." And so we called it <em>Jazz</em> <em>Butcher</em> and it stuck ever since. And when we made that first record, I had a little day job, and I thought well some people spend a fortnight in Spain or whatever, I'll spend a fortnight in a recording studio, and that's what a terrific holiday. Maybe if we sell a few hundred they'll let me do it again. And they did. We sold a few hundred, and they did let me do it again. But the second one went mental. 
 	<p />
 	You know me and my girlfriend sit around at night listening to music and she goes, "It's the songwriting that counts," and I go "fuck all that, its' the sound that counts." And I'll go "Sound!" and she'll go "Songwriting!" and I'll go, "Sound!" I just met a guy back in Northhampton and he's 22, and he's totally into <em>Can</em>. And his band sounds totally like their into <em>Can</em>. It's wicked isn't it? I mean <em>Can. </em>
 	<p />
-
 	They're like sixty year old German hippies, and still no one has topped it, you know? Still the young people give respect. I always wanted to do "<em>The Hula Dance</em>." There was an incredible remix of that by a couple of kids from like Bonn or Cologne or somewhere. And it was almost like kind of techno bottom end. That marvelous thing where they take the vocals and put them into a sampler, syllable by syllable. I've been wanting to do that tune ever since. 
 	<p />
 	We were doing a tour in '85, I can remember this to the day, it was the tenth of December. <a href="${jbc_gigs}/1985/Dec10.html">And we were in Naples, in Italy</a>. And there is a photograph of Max and I; and there are walking deadmen. And they are in a better state than me. The band's only been going about two years, but a bottle of vodka every night, wheee he he he .. Owen comes up to me in Naples, on the balcony of this hotel, and he goes, "Hey." and I go "What." He goes, "You should join the SMDP." I go, "The SMDP?" and he goes, yeah, "The smoke more dope party." I ended that tour with a bloomin ulcer in my tummy. I was only about 26. 
 	<p />
-	
 	It's not like we're famous. There's no reason at all, I mean like, if you said to someone in my home town, that we go out and play to a crowd in whatever town in the U.S.A., unless they're one of my mates and they got used to the idea, they just laugh at you. And the great thing about my hometown, is that I never, ever get bugged or recognized. I never get any of that until one night. About '92. I went to see <em>Chapterhouse</em> in the venue just down the street. I went into the gentlemen's lavatory, I was just splashing away on it, and this kid comes up to me, (in drunken sailors voice) "Ayy ..  Jazz Butcher .. ayyy .. " 
 	<p />
-
 	And I'm like, "Don't you know what town this is? Leave me alone." But now I've got these twenty something's coming around my house, hanging out. And I really don't know what they want .. well, they want my <em>Can</em> LP's that's what they want. It's good, but in another way it's bad because really the twenty something's would be looking at people like Max and I and going, "Faack off you old fools!" you know? And you see bands today and they're in their twenties, and they are looking to <em>Can.</em>
 	<p />
-	
 	"<em>The Skinheads</em>." We've been playing that so long now. Somebody told me they went to see <em>Cracker</em>. And they shouted out " The Skinheads!" And Dave Lowry goes, "Oh, you gotta' go see <em>The Jazz Butcher</em>." It's a shame that we couldn't bring our mate Curtis with us. Because he's got a big shiny bald head. And the little rap I do in the middle, I do it for him because normally he comes running on and does it himself: "I'm no so big. I'm rather small. I've got a head like a big bowling ball." He's from Edinburough. The black man from Edinburough. There had to be one. But he rules, Curtis. There's something for you to seek out. He's got a wicked little album out. Called '<em>The Bean King</em>.' Curtis E. Johnson. 
 	<p />
-
-	He was mad because for years he worked under pseudonyms. And then he said, "Stuff it. I'm going to come out and just be myself." So he makes his records as Curtis E. Johnson. And within months of its' release, Madonna starts recording a song by a bloke called Curtis Johnson. So I think it's just as well he put that "E" in there. But it also makes me laugh because it makes me think of "White Courtesy Telephone." "White Curtis E. Johnson? I don't think so." But he's really pail skinned, and he did a gig once in Northhampton. He's playing the blues he's doing "Hoochie Coochie Man," you can ask him about this, and he's singing this, and there's these two thirty something white kids, in the back, having a pint and watching him, and the guy is rather showing off to his girlfriend. And at the end of one tune he goes, " Mmmm. He plays the blues allright. For a white bloke." I had to tell him later. He's into making web sites for other people. His brother has a company that does like internet solutions, and so forth. His brother drives two Porches. 	<p />
+	He was mad because for years he worked under pseudonyms. And then he said, "Stuff it. I'm going to come out and just be myself." So he makes his records as Curtis E. Johnson. And within months of its' release, Madonna starts recording a song by a bloke called Curtis Johnson. So I think it's just as well he put that "E" in there. But it also makes me laugh because it makes me think of "White Courtesy Telephone." "White Curtis E. Johnson? I don't think so." But he's really pail skinned, and he did a gig once in Northhampton. He's playing the blues he's doing "Hoochie Coochie Man," you can ask him about this, and he's singing this, and there's these two thirty something white kids, in the back, having a pint and watching him, and the guy is rather showing off to his girlfriend. And at the end of one tune he goes, " Mmmm. He plays the blues allright. For a white bloke." I had to tell him later. He's into making web sites for other people. His brother has a company that does like internet solutions, and so forth. His brother drives two Porches.
+	</div>
 	
-	<p class="iview_q">LK: So I guess that's big everywhere.	<p />
+	<div class="iview_q">LK: So I guess that's big everywhere.	</div>
 	
-	<p class="iview_a">PAT:Well, it's getting that way isn't it? You meet a twenty something that says, "I'm a web site designer." And you think, "Yeah you're unemployable." The mad thing is it's the bosses, isn't it? The bosses, they're so set in their ways. "Oh we've got to get some of these computers, and oh yes twenty grand, that's fine .. etc." You know Curtis'll do it for you for thirty quid and a pint of beer! You just get that thing that the guys at the very top haven't got a clue what's going on. And they're the guys buying new software every year. They are the ones making it impossible for one computer to talk to another one you know. I suppose they keep the software companies afloat. But I'm a big fan of Radium myself. Those naughty Germans. Naughty, naughty, naughty Germans. You didn't hear this from me. Don't put this on the web site. Steinberg will find out and I will be killed. But honestly in our town the idea of paying for software is like, excuse me? Don't you have any friends? You guys are like five years ahead of us anyway. (Americans.) Here you are doing your streaming, and in Britain you're lucky if you can get a photograph up there. "I do not mean to publish any of these pictures if they're not copywrite, please contact me." 	<p />
+	<div class="iview_a">PAT:Well, it's getting that way isn't it? You meet a twenty something that says, "I'm a web site designer." And you think, "Yeah you're unemployable." The mad thing is it's the bosses, isn't it? The bosses, they're so set in their ways. "Oh we've got to get some of these computers, and oh yes twenty grand, that's fine .. etc." You know Curtis'll do it for you for thirty quid and a pint of beer! You just get that thing that the guys at the very top haven't got a clue what's going on. And they're the guys buying new software every year. They are the ones making it impossible for one computer to talk to another one you know. I suppose they keep the software companies afloat. But I'm a big fan of Radium myself. Those naughty Germans. Naughty, naughty, naughty Germans. You didn't hear this from me. Don't put this on the web site. Steinberg will find out and I will be killed. But honestly in our town the idea of paying for software is like, excuse me? Don't you have any friends? You guys are like five years ahead of us anyway. (Americans.) Here you are doing your streaming, and in Britain you're lucky if you can get a photograph up there. "I do not mean to publish any of these pictures if they're not copywrite, please contact me." 	</div>
 	
-	<p class="iview_q">(Innocent bystander walks in room and says:) It's like that song, too much information by the Police.	<p />
+	<div class="iview_q">(Innocent bystander walks in room and says:) It's like that song, too much information by the Police.	</div>
 	
-	<p class="iview_a">PAT: By the <em>Police</em>? I like the <em>Backstreet Boys</em> a lot more than <em>Sting</em>. I do man. They've got that do-wop thing going and some proper R & B going on in the bottom end. I know it's tailored for mass consumption, and shit, but they are actually making decent music. Not that good, I mean it ain't going to blow your mind, but when you're comparing them to <em>Boy Zone</em> or <em>West Life</em> or something .. So I don't know what to tell you. Keep on with all that factious <em>Jazz Butcher</em> history? We've only got 'bout another 23 years to go ..  But it kicked off, and we didn't expect shit. But the second album we made got noticed. Possibly because David J was on it, and he had just come out of <em>Bauhaus</em>. It kind of went off and we got into Europe, and the English kind of abandoned us really quick; by 1985 we were all over Europe but we were still playing pubs in Britain. In about May '86, we were playing in a pub in south London, we were getting about 250 quid, about 400 bucks .. not even that, maybe 350 bucks playing in a pub, and that Barker character from Glass Records, he goes, "Would you like to play in the U.S.A.?" We were just like, "Oh leave it." And we bloody did. We bloody did. And we were so ill prepared. Cause we got over here, not knowing what was going on. And it turned out that CMJ and Geffen put out this compilation album of one of our first three records, and it was number 2! Nobody told us! And I just opened the paper one day, and was like "Oh look, The Ramones are on the top of the .. .FUCK!" So we were totally unready for that. And by the end of '86 we were split up. Max was gone. We'd been out about two years, getting lucky in complete chances. Just complete frauds. We'd been out a few years and it was just time to get lives again. I dunno .. I just kept doing it because I didn't think I was good for anything else. I made some more records, and then right about the middle of the '90's Max was hanging around. He'd sometimes open for us. And then we split up at the end of '95, and in '96 some guys in Spain who didn't know us invited us to do a gig. Because they didn't know we had split up. So I called him up, and out we went. Well, we've been around the houses. I'm just trying to get up to date. Between '95 and last year we've popped out and done the odd gigs. We've done weddings .. <a href="${jbc_gigs}/1997/Sep19.html">a wedding on a boat in Seattle</a>. I've got this one song. It goes like this: " This room is swaying like a boat .. " and I thought I can't miss this ..  "because it IS a boat." We had a laugh at that. We just started doing things if it fell into our laps and involved a pleasant trip or something groovy then we'd go and do it. And then last year, come September, we did about five dates up and down the west coast. And they went really, really well. Although we knew it wasn't going to be as strong for us on the East side, but we thought there's no record company behind it, there's no machine behind it, but on the other end we don't want anything out of it except a really good time. We've just been playing around. We played to 11 people in Iowa City. Do you know where that is? Because I'm fucked if I do. The keenest one, the keenest person in Iowa City had driven for something like 300 miles from Kansas City. And he'd been tripping the whole way.	<p />
+	<div class="iview_a">PAT: By the <em>Police</em>? I like the <em>Backstreet Boys</em> a lot more than <em>Sting</em>. I do man. They've got that do-wop thing going and some proper R & B going on in the bottom end. I know it's tailored for mass consumption, and shit, but they are actually making decent music. Not that good, I mean it ain't going to blow your mind, but when you're comparing them to <em>Boy Zone</em> or <em>West Life</em> or something .. So I don't know what to tell you. Keep on with all that factious <em>Jazz Butcher</em> history? We've only got 'bout another 23 years to go ..  But it kicked off, and we didn't expect shit. But the second album we made got noticed. Possibly because David J was on it, and he had just come out of <em>Bauhaus</em>. It kind of went off and we got into Europe, and the English kind of abandoned us really quick; by 1985 we were all over Europe but we were still playing pubs in Britain. In about May '86, we were playing in a pub in south London, we were getting about 250 quid, about 400 bucks .. not even that, maybe 350 bucks playing in a pub, and that Barker character from Glass Records, he goes, "Would you like to play in the U.S.A.?" We were just like, "Oh leave it." And we bloody did. We bloody did. And we were so ill prepared. Cause we got over here, not knowing what was going on. And it turned out that CMJ and Geffen put out this compilation album of one of our first three records, and it was number 2! Nobody told us! And I just opened the paper one day, and was like "Oh look, The Ramones are on the top of the .. .FUCK!" So we were totally unready for that. And by the end of '86 we were split up. Max was gone. We'd been out about two years, getting lucky in complete chances. Just complete frauds. We'd been out a few years and it was just time to get lives again. I dunno .. I just kept doing it because I didn't think I was good for anything else. I made some more records, and then right about the middle of the '90's Max was hanging around. He'd sometimes open for us. And then we split up at the end of '95, and in '96 some guys in Spain who didn't know us invited us to do a gig. Because they didn't know we had split up. So I called him up, and out we went. Well, we've been around the houses. I'm just trying to get up to date. Between '95 and last year we've popped out and done the odd gigs. We've done weddings .. <a href="${jbc_gigs}/1997/Sep19.html">a wedding on a boat in Seattle</a>. I've got this one song. It goes like this: " This room is swaying like a boat .. " and I thought I can't miss this ..  "because it IS a boat." We had a laugh at that. We just started doing things if it fell into our laps and involved a pleasant trip or something groovy then we'd go and do it. And then last year, come September, we did about five dates up and down the west coast. And they went really, really well. Although we knew it wasn't going to be as strong for us on the East side, but we thought there's no record company behind it, there's no machine behind it, but on the other end we don't want anything out of it except a really good time. We've just been playing around. We played to 11 people in Iowa City. Do you know where that is? Because I'm fucked if I do. The keenest one, the keenest person in Iowa City had driven for something like 300 miles from Kansas City. And he'd been tripping the whole way.	</div>
 	
-	<p class="iview_q">LK: Where did you record the new record?	<p />
+	<div class="iview_q">LK: Where did you record the new record?	</div>
 	
-	<p class="iview_a">PAT: The one we just made? We recorded it in the back bedroom of our ex-guitar player's house. 'Cause we had this guitar player from about '90-'92 time, called Pete Crouch, who ended up leaving the band to become an air hostess. Quite literally, you run the risk, if you fly to London on British Airways, you might just get Crouchy going, "Coffee sir?" Having freaked out, and run away from the group to be an air hostess, he would show up to the gigs and get massively drunk, and go "Take me with you! Take me with you!" So we've stayed good mates, and he's built himself a little home studio. So we made the record. 
+	<div class="iview_a">PAT: The one we just made? We recorded it in the back bedroom of our ex-guitar player's house. 'Cause we had this guitar player from about '90-'92 time, called Pete Crouch, who ended up leaving the band to become an air hostess. Quite literally, you run the risk, if you fly to London on British Airways, you might just get Crouchy going, "Coffee sir?" Having freaked out, and run away from the group to be an air hostess, he would show up to the gigs and get massively drunk, and go "Take me with you! Take me with you!" So we've stayed good mates, and he's built himself a little home studio. So we made the record. 
 	<p />
 	
-	"Walking With Jesus." I sang that once. And I was excited about it all day; I was walking around Northampton, and I was walking around town all day thinking, "Yes, yes. I will sing it tonite like Otis Redding." Yes. Made a rock fool of myself. Do you know Richard who started <em>Spectrum</em> with <em>Sonic Boom</em>? He's got a record out called '<em>Tribe Of Two</em> <em>Thousand</em>.' Have you heard that? Well, the band is called '<em>Tribe Of Two Thousand</em>' and the record is called '<em>Phased and Confused</em>.' And it's wicked. He's got this really got this very good-looking, charismatic, and also thoroughly mad singer. The guy's been like forcibly locked up a few times in his career, which is getting a bit manic. 	<p />
-	
-	<p class="iview_q">LK: So have you done any other things?	<p />
-	
-	<p class="iview_a">PAT: What, other things outside of <em>Jazz Butcher</em>? Yeah, a few things. Produced a few bands. No one really successful. Done a lot of recording with <em>Spaceman</em>, <em>The Blue</em> <em>Aeroplanes</em> .. We toured with the <em>Aeroplanes</em> over here in 1990; they were coming and we were coming. We had done a little tour together around the U.S. in 1990; It was the band that made the album '<em>Swagger</em>'. They really had firepower. Paul who ended up playing drums in the band, he was playing drums with us on that tour. They kind of toppled over, they thought we're not and indie band anymore, and we're gonna be proud of it. They recorded with Larry who produced <em>Los Lobos</em>, engineered <em>Bob</em> <em>Dylan</em>, and what a lovely bloke he was. I thought they were incredible. I saw the <em>Aeroplanes</em> on tour about March 2000, and I was like no, get off. Impossible. But then again, most people that would see <em>Jazz Butcher</em> on tour would think that can't be possible. It's amazing what goes on. I don't want you to think that we're doing like the <em>Eurythmics</em> or something. We just don't feel like that you know. For us it's just this wicked holiday. You wouldn't believe how well we've been eating. If there is a feature of this tour in the United States, it's not thick crowds or devotional goodwill; although there have been elements of all those things. You know the average European will spend four or five weeks in the U.S. and it's like "Ha ha! Burgers! French Fries!" But no .. well, it's like the beer thing when we first came in '86, you were just lucky there was Becks and Heinekin. But like now, the beer thing has kind of like come around. In a few years there's going to be room for Socialism! Well you know sometimes when we're out on the road, and we're getting a breakfast like, we'll go to Bob Evans or something, you can see like 25 waiters and waitresses, and it still takes 20 minutes for your eggs to come. And you're like, "Wow, you have your beaurocracy; all you need are some tanks!" 	<p />
+	"Walking With Jesus." I sang that once. And I was excited about it all day; I was walking around Northampton, and I was walking around town all day thinking, "Yes, yes. I will sing it tonite like Otis Redding." Yes. Made a rock fool of myself. Do you know Richard who started <em>Spectrum</em> with <em>Sonic Boom</em>? He's got a record out called '<em>Tribe Of Two</em> <em>Thousand</em>.' Have you heard that? Well, the band is called '<em>Tribe Of Two Thousand</em>' and the record is called '<em>Phased and Confused</em>.' And it's wicked. He's got this really got this very good-looking, charismatic, and also thoroughly mad singer. The guy's been like forcibly locked up a few times in his career, which is getting a bit manic.
+	</div>
 
-	<p class="iview_a">I think it's good, I dunno, I think it was the eighties, but things got really homogenized here. And now you're into the local thing. Every town's got their local brewery, and their local attitude, and their local paper. I've always liked the place, but now I think it's a little bit more on the go. I'm not a huge fan of Bill Clinton, but I'm not bothered with what he does with his 'willy' like. But he didn't do that much for me. I was happy when he beat Bush. But it just seems that when you get a guy like him hanging around, and also because there were like wars to take your attention away; But it seems like there's just a little more looseness at home. You know it's the redneck with the baseball bat that's got the license to .. well .. with that having been said, JBC and rednecks .. we get right on. Only a couple of nights ago, down in a shed in Birmingham, Alabama, by their own admission, they're own slogan, is "The Neck. Birmingham's Dirty Little Secret." And we got down there, and there was perhaps forty or fifty people into it, and the rest were just disinterested rednecks, and by the end of the night they were all there. The soundman said we were the best band he had seen in five years. While they were making you a cheeseburger, they were making me a cheeseburger. No .. we sound like we're being really horrid to Birmingham, but the people that showed up they were tops, even though they didn't care about the group. They were just top people. I have friends from Montgomery. This isn't like worth putting on the internet is it? "I have mates in Montgomery."	<p />
-	
-	<p class="iview_q">LK: We'll just take your words, and sample each word. And copy and paste them and make our own story. And then sync it to "The Wizard of Oz."	<p />
-	
-	<p class="iview_a">PAT: Oh, what is that thing that went around about five years ago, about Pink Floyd and The Wizard of Oz? What was that about?	<p />
-	
-	<p class="iview_q">LK: Yeah, you start it at the third lion roar, and they supposedly, "Dark Side of The Moon" synched up as a soundtrack.	<p />
-	
-	<p class="iview_a">PAT: This has got to have originated somewhere with long winter evenings. No, you've got to be really bored to come up with that. You've got the '<em>Wizard of Oz</em>' on video, and someone grabs '<em>Dark Side of the Moon</em>,' and it's like, you can't even think of something better to put on than '<em>Dark Side of the Moon</em>.' Bloody Christ, how many people have come out and tried it? Somebody was on some tabs on that one. Yeah, cause things do seem that much more important. Or so I've heard .. One big thing for me was when Eno started making his records when he'd just come out of <em>Roxy Music.</em>
+	<div class="iview_q">LK: So have you done any other things?	</div>
+
+	<div class="iview_a">PAT: What, other things outside of <em>Jazz Butcher</em>? Yeah, a few things. Produced a few bands. No one really successful. Done a lot of recording with <em>Spaceman</em>, <em>The Blue</em> <em>Aeroplanes</em> .. We toured with the <em>Aeroplanes</em> over here in 1990; they were coming and we were coming. We had done a little tour together around the U.S. in 1990; It was the band that made the album '<em>Swagger</em>'. They really had firepower. Paul who ended up playing drums in the band, he was playing drums with us on that tour. They kind of toppled over, they thought we're not and indie band anymore, and we're gonna be proud of it. They recorded with Larry who produced <em>Los Lobos</em>, engineered <em>Bob</em> <em>Dylan</em>, and what a lovely bloke he was. I thought they were incredible. I saw the <em>Aeroplanes</em> on tour about March 2000, and I was like no, get off. Impossible. But then again, most people that would see <em>Jazz Butcher</em> on tour would think that can't be possible. It's amazing what goes on. I don't want you to think that we're doing like the <em>Eurythmics</em> or something. We just don't feel like that you know. For us it's just this wicked holiday. You wouldn't believe how well we've been eating. If there is a feature of this tour in the United States, it's not thick crowds or devotional goodwill; although there have been elements of all those things. You know the average European will spend four or five weeks in the U.S. and it's like "Ha ha! Burgers! French Fries!" But no .. well, it's like the beer thing when we first came in '86, you were just lucky there was Becks and Heinekin. But like now, the beer thing has kind of like come around. In a few years there's going to be room for Socialism! Well you know sometimes when we're out on the road, and we're getting a breakfast like, we'll go to Bob Evans or something, you can see like 25 waiters and waitresses, and it still takes 20 minutes for your eggs to come. And you're like, "Wow, you have your beaurocracy; all you need are some tanks!"
 	<p />
-
-	It's almost like the missing link for me between late sixties and the punk thing. And I love them. But you never hear it anywhere. I've tried to put it in my music, but somehow it always gets smoothed out even though I know it's there. But if my words ever sound mad, it's because like I've always thought the words on those records were great. Because they did mean something. It wasn't really like he was writing in code, you just had to take it totally literally, and then it was like, "Fuck, you know, Brian .. " 	<p />
+	I think it's good, I dunno, I think it was the eighties, but things got really homogenized here. And now you're into the local thing. Every town's got their local brewery, and their local attitude, and their local paper. I've always liked the place, but now I think it's a little bit more on the go. I'm not a huge fan of Bill Clinton, but I'm not bothered with what he does with his 'willy' like. But he didn't do that much for me. I was happy when he beat Bush. But it just seems that when you get a guy like him hanging around, and also because there were like wars to take your attention away; But it seems like there's just a little more looseness at home. You know it's the redneck with the baseball bat that's got the license to .. well .. with that having been said, JBC and rednecks .. we get right on. Only a couple of nights ago, down in a shed in Birmingham, Alabama, by their own admission, they're own slogan, is "The Neck. Birmingham's Dirty Little Secret." And we got down there, and there was perhaps forty or fifty people into it, and the rest were just disinterested rednecks, and by the end of the night they were all there. The soundman said we were the best band he had seen in five years. While they were making you a cheeseburger, they were making me a cheeseburger. No .. we sound like we're being really horrid to Birmingham, but the people that showed up they were tops, even though they didn't care about the group. They were just top people. I have friends from Montgomery. This isn't like worth putting on the internet is it? "I have mates in Montgomery."
+	</div>
+	
+	<div class="iview_q">LK: We'll just take your words, and sample each word. And copy and paste them and make our own story. And then sync it to "The Wizard of Oz."	</div>
+	
+	<div class="iview_a">PAT: Oh, what is that thing that went around about five years ago, about Pink Floyd and The Wizard of Oz? What was that about?	</div>
+	
+	<div class="iview_q">LK: Yeah, you start it at the third lion roar, and they supposedly, "Dark Side of The Moon" synched up as a soundtrack.	</div>
+	
+	<div class="iview_a">PAT: This has got to have originated somewhere with long winter evenings. No, you've got to be really bored to come up with that. You've got the '<em>Wizard of Oz</em>' on video, and someone grabs '<em>Dark Side of the Moon</em>,' and it's like, you can't even think of something better to put on than '<em>Dark Side of the Moon</em>.' Bloody Christ, how many people have come out and tried it? Somebody was on some tabs on that one. Yeah, cause things do seem that much more important. Or so I've heard .. One big thing for me was when Eno started making his records when he'd just come out of <em>Roxy Music.</em>
+	<p />
+	It's almost like the missing link for me between late sixties and the punk thing. And I love them. But you never hear it anywhere. I've tried to put it in my music, but somehow it always gets smoothed out even though I know it's there. But if my words ever sound mad, it's because like I've always thought the words on those records were great. Because they did mean something. It wasn't really like he was writing in code, you just had to take it totally literally, and then it was like, "Fuck, you know, Brian .. " 	</div>
 	
 
-	<p class="iview_outro">
+	<div class="iview_outro">
 	Copyright © 2006, Lisa King.  All rights reserved.
-	<p />
+	</div>
 
 	)})}
 	${jbc_footer}
@@ -14037,28 +14039,28 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 		body=${literalizeCommas(
 	<p class="iview_q">
 	The Jazz Butcher's music includes dreaming psychedelia and folk music. To the question what they have to do with butchers:
-	<p />
+	</p>
 
 	<p class="iview_a">
 	Pat:
 	"As much as to jazz, that means nothing." 
-	<p />
+	</p>
 
 	<p class="iview_q">
 	There is a lot of humour in your songs. Aren't you affraid that the audience find you simple?
 	Once a journalist wrote about you that you are either geniouses or idiots.
-	<p />
+	</p>
 
 	<p class="iview_a">
 	"Absolutely not, these songs are not humorous at all. I still get moved again and again when i come to a beautiful line in the lyrics.
 	But these are very personal and they can arouse different feelings in different people. That's why we are playing pop music. It's good to feel happy and sad at the same time."
 	Once a journalist wrote about you that you are either geniouses or idiots.
-	<p />
+	</p>
 
 	<p class="iview_q">
 	How would you describe your music in only one sentence?
 	Once a journalist wrote about you that you are either geniouses or idiots.
-	<p />
+	</p>
 
 	<p class="iview_a">
 	"How could you describe Lou Reed and Tom waits in a sentence?
@@ -14066,11 +14068,11 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	But we are trying to follow in their footsteps.
 	And back to your question, you have to decide what kind of music we are playing."
 	Once a journalist wrote about you that you are either geniouses or idiots.
-	<p />
+	</p>
 
 	<p class="iview_q">
 	Once a journalist wrote about you that you are either geniouses or idiots.
-	<p />
+	</p>
 
 	<p class="iview_a">
 	"I remember, it's by Helen Mead, but my favourite quotation is from a Canadian magazine:
@@ -14078,7 +14080,7 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	"The Jazz Butcher is gazing at the world, showing it as it is. That's the reason why people think this band is crazy".
 
 	However the situation is that we behave like little children in a toyshop. We are playing with something and running away to try something else. Because there is something new in every corner."
-	<p />
+	</p>
 	)})}
 	${jbc_footer}
 #live	endif
@@ -14091,27 +14093,19 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	<p />
 	There's always been a certain amount of confusion surrounding The Jazz Butcher, and between us we're trying to clear it up. Me and this enigmatic singer, this man who chooses to spend his spare time living in Northampton with his cat. Why 'Jazz Butcher', anyway?
 	<p />
-	<p />
 	"It's part of a caption from a painting, I was walking about with this other bloke who was looking for a name as well, and we came across it simultaneously. I said to him 'I'll take it if you don't want it'. He didn't. So I called myself 'The Jazz Butcher'."
-	<p />
 	<p />
 	The Butcher's been playing gigs, writing songs, changing line-ups for years now, ever since he was a student In the Oxford of the late 70's, the Oxford of bands like the Wow Federation and the Dennis Bovell-produced Jazz Insects. The only constant factor has been guitarist Max, almost like a quiet other-half, Smith to the Butcher's Jones. This is a come-on-in-and-browse-for-a-bit band and David J., ex-Bauhaus, is browsing now too. The albums ('The Jazz Butcher In Bath Of Bacon' (1982) and 'A Scandal In Bohemnia' (1984), both on Glass records), they're unstable, heterogeneous, a confrontation of different approaches. They give you a sense that everything was just slightly haphazard in the studio, that there was no strict division between getting it right and getting it wrong. Very random, very suck-it-and-see, The Jazz Butcher.
 	<p />
-	<p />
 	He enlarges: "Sometimes, making a mistake is an important part of writing a song. It just turns out differently from how you expected, that's all. Maybe it works on a different level. Maybe the mistake helps you to see it differently. It's a case of keeping your options open."
-	<p />
 	<p />
 	'A Scandal In Bohemia' is an album full of surprises, a lucky-dip of a record, a collection of chirpings and carpings, parodies and primal screams. It's got everything from the brittle, pure whimsy of 'Just Like Betty Page' to the beastly, marmalade-in-the-grooves sound of 'Caroline Wheeler's Birthday Present'. "I get In a fu-er-y when I'm not in a brewery'. 'Southern Mark Smith', I tell the Butcher, is the prime cut, a spangled, lumpy song, although it might as well be 'Sullen Mark Smith', or even 'Son Of Mark Smith'.
 	<p />
-	<p />
 	"Right. Do what you want with it. 'Son Of Mark Smith'. Could be, yes. It could make just as much sense that way. A German guy, you know what I mean, the archetypal detail-obsessive, efficient, comic German bloke, interviewed us the other week, asked us what was this great 'scandal', and what did we mean by 'Bohemia'? I told him it was the title of a Sherlock Holmes book, which it is. What does it mean? I dunno what it means. Its up to you."
-	<p />
 	<p />
 	And what does he find funny?
 	<p />
-	<p />
 	"People falling over In the street!" 
-	<p />
 	)})}
 	${jbc_footer}
 #live	endif
@@ -14121,7 +14115,6 @@ This will be the first of the meetings offered this season at the Barbusse neigh
 	${extractPress(
 		body=${literalizeCommas(
 Shutter chop MITCH JENKINS 
-	<p />
 	<p />
 <b>THE PERSONNEL.</b>
 <br/>
@@ -14133,16 +14126,13 @@ ${owen}: drums. hair as long as Oxford Street.
 <br/>
 ${dj}: bass, formerly a member of Bauhaus
 	<p />
-	<p />
 <b>THE PAST.</b>
 <br/>
 The name The Jazz Butcher has existed for a number of years, but the line-up has been unsettled. When they received a scathing review of their <a href="${jbc_gigs}/1984/Feb3.html">Rock Garden performance</a> in this journal, they had been brazening it out with no bass player rather than cancel and upset the tourists. The above line-up is now permanent.
 	<p />
-	<p />
 <b>OUTPUT.</b>
 <br/>
 It was the tale of their debut single which first attracted my attention. but '${smiff}' also had sufficient musical chutzpah to succeed. They saw Mark Smith last week. Pat Fish, creator of The Jazz Butcher and most material, likes The Fall.
-	<p />
 	<p />
 Pat Fish can impersonate a cassette recorder and while he was buying a drink I was told that he once walked through Northampton with no trousers carrying a bass drum. The album released last year is ${bacon}, mostly written by Mr Fish in bursts when he was bored. It featured instant classics such as '${foot}' and '${party}'. Sometimes they are reminiscent of the late lamented Modern Lovers. so I asked Pat Fish about this...
 	<p />
@@ -14152,28 +14142,21 @@ Yes, I think there are lots of dippy college boys all over the world listening t
 	<p />
 Fish has covered Richman's 'Affection'.
 	<p />
-	<p />
 Current single is 'Mamie', which I am told has nothing to do with the Hitchcock film. backed by the epic '${wheel}', a true tale now wearing out my stylus.
-	<p />
 	<p />
 <b>THE PRESENT.</b>
 <br/>
 Playing live a lot as they have not played much, except as duo (Pat 'n' Max). They also drink more than their fair share of beer and occasionally play silly buggers, although tonight they are subdued, neglecting to employ the flashing neon backdrop. Pat Fish has never thought that he was the son of God. 
 	<p />
-	<p />
 Pat Fish loves all creatures (NOT A HIPPIE THOUGH), most of all cats and fish, more specifically, kittens and goldfish. His favourite record at the moment is the sadly unknown Moscow Drug Club' by B.B Gabor. and he informs me that the best music is "a wee bit dumb". He also has an undying affection for the French songster, Charles Renais, and has two cats called Stirling and HRH Lady Wilbur.
 	<p />
-	<p />
 At the moment the group do live covers of 'Roadrunner' and the most understated reading of 'Sweet Jane' since Moot The Hoople.
-	<p />
 	<p />
 <b>THE VERDICT.</b>
 <br/>
 The Jazz Butcher retain the spirit of Punk Rock inside, I am reliably informed, although you will never see them wearing studded leather jackets.
 	<p />
-	<p />
 So, while most independent records are about as joyful as having a nail banged slowly through the back of your hand. the product of The Jazz Butcher although never of the giddy heights of artistic excellence reached by the likes of classic Fall, is more than enough to be going on with.
-	<p />
 	<p />
 Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	<p />
@@ -14197,7 +14180,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	<p class="iview_q">"Xylophone tinkler sporting a wild hairdo not seen since
 	Eraserhead" is how the Melody Maker once described you. Fair
 	description?;-)
-	<p />
+	</p>
 
 	<div class="iview_a">
 	I suppose its as accurate as me saying "Melody Maker..try's to act cool and
@@ -14210,7 +14193,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">So when and how did joining Witness come about? Was it simply a matter of
 	John Langley (also ex Strangelove) recommending you to the rest of the band?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	It was a weird night I got the call as I had just got Quarantine and was listening
@@ -14234,7 +14217,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	</div>
 
 	<p class="iview_q">Was the initial plan for you to just help out on a live basis?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Yeah I think it was - I don't think they had thought about the long term aspect
@@ -14264,7 +14247,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	<p class="iview_q">I notice that you're credited with the co-writing of new track, "Zero
 	Zero". Do we take from this that you are now a "full time" member
 	of the band?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	I wasn't part of the publishing deal - as I obviously didn't know them at the
@@ -14272,7 +14255,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	</div>
 
 	<p class="iview_q">How much input have you had into the writing of the new album?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	I purposely have not been involved in the songs for scratch. The last thing they
@@ -14306,7 +14289,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	</div>
 
 	<p class="iview_q">What music did you listen to as a teenager?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	The first album I ever bought was Never Mind the Bollocks..I had to get my dad to buy it for me as the guy behind the counter refused to sell it to a
@@ -14328,7 +14311,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">When did you decide to take up a career in music? Was there one defining moment or was it, like thousands of other teenagers, a childhood
 	"dream" of becoming a "rock star"?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Yeah I guess it was just a dream that kind of came true..I followed a Degree in Classical music as I was heavily into classical guitar - I was featured
@@ -14341,7 +14324,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">What was it like and how did things change for you after Strangelove signed for
 	Food/Parlophone in 1993?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	It happened very fast for us. We were signed after our second gig. I guess it gave me the opportunity to live in Los Angeles as much as possible. If
@@ -14351,7 +14334,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	</div>
 
 	<p class="iview_q">What were the highlights of your time in Strangelove?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Recording for two weeks at Abbey Road studios, living in Los Angeles, an 8 week tour with Suede in Europe was incredible - an open air gig in an
@@ -14360,14 +14343,14 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">
 	..and the worst bits...?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Writing the best album ever with John that never got sung to, ...filed under dead letter office..
 	</div>
 	
 	<p class="iview_q">What happened after Strangelove? Did you immediately set about getting back into music, or did you consider a career change?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	I realised that the only other thing I could be passionate about was design - I had designed all the sleeves for Strangelove and so I started an HND in
@@ -14377,7 +14360,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	
 	<p class="iview_q">After joining the band did you find there to be an aspect of naivety towards the music industry amongst the members of the band who were experiencing
 	it for the first time?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	No not really - I think its the other way round - most industry types or companies are so naive of how bands work and think. However when Ray said
@@ -14391,7 +14374,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">Apart from the one headlining tour last year, the majority of your gigs have been as the support slot. Is it frustrating to play to a crowd that, in
 	the main, are not familiar with your music?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Supports are far more enjoyable - you get the chance to win over a new audience and leave the show early if you are bored !!...you can soundcheck
@@ -14401,7 +14384,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">During your early gigs, Gerard built up a reputation amongst the music press for his "lack of movement" during live performances. This seemed to be
 	down to nerves more than anything else. How do you, yourself feel up on stage? You seem to enjoy the experience and don't mind moving around a bit!
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Funny people the press aren't they - Me and John were close to the rise of Oasis having gigged with them and I remember they got GREAT press for not
@@ -14415,7 +14398,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	<p class="iview_q">
 	What has been your most memorable live experience with Witness thus far? Surely not the ridiculously early time you had to be on stage at
 	Glastonbury last year?!
-	<p />
+	</p>
 
 	<div class="iview_a">
 	I think it has to be Jools Holland - that was the biggest buzz I have ever had...but that wasn't a gig in true definition - so I guess it was the most
@@ -14425,7 +14408,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">What were the recent Holland gigs like and why did you play just Holland? Anything to do with the countries
 	'relaxed' laws?!
-	<p />
+	</p>
 
 	<div class="iview_a">
 	I guess the previous answer answers this one too - the relaxed laws hardly changed the other 4..can they be more relaxed ???..I don't think so..they
@@ -14436,7 +14419,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	Judging from the feedback I myself have received, you seem to be building up quite a steady fanbase across North America, despite not even having
 	released anything over there yet. Are there high hopes for success after
 	the impending album release and tour over there?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Very high hopes..high apple pie in the sky hopes !!! I just hope Witness end up at the Madison Square Gardens and not at the Tic
@@ -14445,14 +14428,14 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">What is it like being referred to as a "Wigan" band, when in actual
 	fact, Ray is the only member of the band to come from Wigan?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Are you sure that's where he comes from..I think the moon might be a better bet..this guy is so high - he's in orbit...
 	</div>
 
 	<p class="iview_q">Do the constant Verve references tend to get annoying...as though you have to live up to their level of success?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Yeah I guess it does get annoying but I do find myself saying to people "yeah
@@ -14466,7 +14449,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	<p class="iview_q">Was it disappointing, or at least surprising to not gain any nominations in the majority of the "end of year" polls/awards, especially after the
 	amount of praise heaped on you earlier last year? I suppose it just demonstrates
 	the fickleness of the British press?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	I think it demonstrates peoples lack of intelligence to get so worked up over these polls...even the Oscars mean little now - everyone knows its
@@ -14478,7 +14461,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	</div>
 
 	<p class="iview_q">So all the band live in Bristol now? You didn't fancy moving up to Wigan then!
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Me and John were living in this Travel Inn in Wigan - It was the most depressing time of my life...It was so Alan Partridge...I actually did find
@@ -14497,28 +14480,28 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	</div>
 
 	<p class="iview_q">How's the new album coming along?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Its sounding great...I think the right choice in producer will result in a classic.
 	</div>
 
 	<p class="iview_q">Presumably we should expect plenty of new songs about farmers and combine harvesters now you're all West Country inhabitants then!
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Yeah we are having real problems with the roosters laying eggs in the back of the amps...
 	</div>
 
 	<p class="iview_q">Any plans to do the UK festivals again this year?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	I'm sure will we be in a field near you soon - not for festivals though - for the rooster ranch we are going to need...
 	</div>
 
 	<p class="iview_q">Can you see Witness being around for a long time to come?
-	<p />
+	</p>
 	
 	<div class="iview_a">
 	I hope so..I think that over the course of 3 or 4 albums Witness will grow into a very influential band - Problem is these days its hard to find a
@@ -14531,7 +14514,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">What are your main hopes and aims for yourself and the band in the future
 	years?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	I hope that we get to work on a Tarantino kind of movie or something like that...some American small town cult classic film that we can do the
@@ -14541,7 +14524,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">
 	Is Witness your main priority in life at the moment then or do you have time to pursue other interests?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Yes main priority at present..but...I am studying website design HND in Bristol..I did the Witness site and I am currently developing the site for Coalition
@@ -14550,7 +14533,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	</div>
 
 	<p class="iview_q">What music are you listening to at the moment? Any recommendations?
-	<p />
+	</p>
 	
 	<div class="iview_a">
 	Just got the new Pumpkins album which is fantastic !!
@@ -14567,7 +14550,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">What do you think of the music scene at the moment and so called "lack
 	of new talent"? Does it deserve all the negative publicity that its been getting?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	Are you meaning the incessant warblings of Christina Aguilera and the "of course I'm straight" preening of 5IVE ??
@@ -14587,7 +14570,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	</div>
 
 	<p class="iview_q">Is the internet the way forward for music? Will it finally lead to the downfall of the fascist dictators that are the NME and the Melody Maker?
-	<p />
+	</p>
 
 	<div class="iview_a">
 	These publications put together sell less than Beano !!!. Internet is not the way forward to music until a new
@@ -14649,7 +14632,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	</div>
 
 	<p class="iview_q">Any tips on how to play the Audition riff?  (from William Browne)
-	<p />
+	</p>
 
 	<div class="iview_a">Hold the plectrum close to the strings and pinch the string as you pluck so
 	you get harmonic overtones. Other than that I don't know what to say - let the
@@ -14667,7 +14650,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 	<h2 class="entry-title">The Breathing of Statues: An Interview With Max Eider</h2>
 
 <div class="iview_intro">
-<p />In 1987, I heard the news that Max Eider, the guitarist for my beloved heroes The Jazz Butcher Conspiracy had left the band.	
+In 1987, I heard the news that Max Eider, the guitarist for my beloved heroes The Jazz Butcher Conspiracy had left the band.	
 	<p />
 Today this kind of information can be sought out instantaneously, but back then if you wanted to find stuff out, you had to dig.	
 	<p />
@@ -14683,7 +14666,7 @@ Because there was no Internet to scour, I was left to fend for myself and I didn
 	<p />
 One Spring day in 1987, a promo copy of Max Eider’s debut solo album <em>The Best Kisser In The World</em> arrived at the radio station straight from Big Time Records and I cut the rest of school, went home immediately and listened to it. From the sweeping pop beauty of “My Other Life” and "Rosemary" to the acoustic shuffle “Sensitive Touch,” to the wrenching ballad “It Has To Be You,” <em>The Best Kisser In The World</em> was a quiet and astonishingly gorgeous album. The severed musical alliance of the JBC, heartbreaking as it was, had yielded two separate camps and since they both sounded great, I could live with that.	
 	<p />
-<iframe class='youtube-player' type='text/html' width='700' height='424' src='http://www.youtube.com/embed/kLmMA7VGv9w?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>	
+<iframe class='youtube-player' type='text/html' width='700' height='424' src='https://www.youtube.com/embed/kLmMA7VGv9w' allowfullscreen='true' style='border:0;'></iframe>	
 	<p />
 By 1992, however, I was getting worried. Three years had passed and aside from his appearance on David J.’s wonderful trio of solo albums (<em>Songs From Another Season</em>, <em>Urban Urbane, Crocodile Tears and the Velvet Cosh</em>) Max Eider had all but dropped out of sight. The Butcher was cranking out excellent albums like <em>Big Planet, Scary Planet, </em><em>Cult of the Basement </em>and <em>Condition Blue</em>, but where was Max Eider?	
 	<p />

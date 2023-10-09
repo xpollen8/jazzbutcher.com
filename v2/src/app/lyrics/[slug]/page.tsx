@@ -8,35 +8,9 @@ import ImageStrip from '@/components/ImageStrip';
 import EmbedMedia from '@/components/EmbedMedia';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import { Attribution } from '@/components/GenericWeb';
-//import ReleaseBlurb from '@/components/ReleaseBlurb';
 import useLyric from '@/lib/useLyric';
-import useReleases from '@/lib/useReleases';
 import { truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/macros';
 
-/*
-      project: '',
-      href: 'sea_madness.html',
-      title: 'Sea Madness',
-      mp3: '',
-      mp4: '',
-      embed_link: '',
-      caption: '',
-      found_on: 'highest',
-      pat_says: '',
-      others_say: '',
-      credits: '',
-      tablature: '',
-      tablature_credit: '',
-
- ${begTab(Lyrics)}
- ${begTab(Found On)}
- ${begTab(Pat Says)}
- ${begTab(Others Say)}
- ${begTab(Tablature)}
- ${begTab(Live Stats)}
- ${begTab(Media)}
-
-*/
 const	LyricVideo = ({ video }: any) => {
 	if (!video) return;
 	const videos = parseCaptionsSourcesEtc(video);
@@ -83,21 +57,13 @@ const Lyrics = (props: any) => {
 	)
 }
 
-const FoundOn = (song: any, key: number, releases: any) => {
-	const foundon = song.found_on?.split("..");	// sex .. bath .. blue, etc
-	return (
-		<div key={key}>
-			<Tag>Found On</Tag>
-			<blockquote>
-				{/* WHY NOT? foundon.map((props: any) => { console.log("P", props); return ReleaseBlurb(props) }) */}
-				{foundon.map((lookup: string, key: number) => {
-					const release = releases?.find((a: any) => a.lookup === lookup?.trim());
-					return MakeAlbumBlurb(release, key);
-				})}
-			</blockquote>
-		</div>
-	)
-}
+const FoundOn = (song: any, key: number, releases: any) =>
+	<div key={key}>
+		<Tag>Found On</Tag>
+		<blockquote>
+			{releases.map(MakeAlbumBlurb)}
+		</blockquote>
+	</div>
 
 const PatSays = (props: any) => {
 	const { pat_says } = props;
@@ -158,18 +124,14 @@ const Audio = (props: any) => {
 	)
 }
 
-
 const Lyric = ({ params }: { params?: any }) => {
 	const { data, isLoading, error } = useLyric(params?.slug);
-	const { data: dataX, isLoading: isX, error: errorX } = useReleases();
-
-	const song = data?.results[0];
-	const releases = dataX?.results;
+	const { lyrics, foundon } = data || {};
+	const song = lyrics?.results[0];
 
 	const tabs = [
 			{ label: 'Lyrics', lookup: (song: any) => { return song?.lyrics }, func: Lyrics },
 			{ label: 'Pat Says', lookup: (song: any) => (song?.pat_says), func: PatSays },
-			{ label: 'Found On', lookup: (song: any) => (song?.found_on), func: (song: any, key: number) => FoundOn(song, key, releases) },
 			{ label: 'Others Say', lookup: (song: any) => (song?.others_say), func: OthersSay },
 			{ label: 'Tablature', lookup: (song: any) => (song?.tablature), func: Tablature },
 			{ label: 'Live Stats', lookup: (song: any) => ({}), func: LiveStats },
@@ -178,11 +140,12 @@ const Lyric = ({ params }: { params?: any }) => {
 	];
 
 	return (<><Suspense fallback=<>Loading...</> >
-		{(!isLoading && !isX) && (() => {
+		{(!isLoading && song) && (() => {
 			return (<>
 				<Header project={song?.project} section="lyrics" title={song?.title} />
 				<Tag>{song?.title}</Tag>
 				{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => t?.func(song, key))}
+				{FoundOn(song, 999, foundon)}
 			</>)
 		})()}
 		<Footer />

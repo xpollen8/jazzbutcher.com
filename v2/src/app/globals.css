@@ -149,6 +149,16 @@ textplus1 {
 	margin-bottom: 20px;
 	background-color: rgba(243,243,243,0.5);
 }
+.gig_sumosonic {
+	background-color: #000000;
+	margin-bottom: 3px;
+}
+.gig_sumosonic a {
+	color: #fff;
+}
+.gig_sumosonic:before {
+	content: url(/images/performance_sumo.png);
+}
 .gig_sumo {
 	background-color: #000000;
 	margin-bottom: 3px;

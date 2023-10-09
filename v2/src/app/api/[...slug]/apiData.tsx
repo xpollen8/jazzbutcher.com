@@ -97,7 +97,7 @@ const apiData = async (path: string, args?: string) => {
 			const releases = await apiDataFromHTDBServer('db_albums/data.json');
 			const lyrics = await apiDataFromDataServer('lyric_by_href', args);
 			const song = lyrics?.results[0]?.title;
-			const foundList = await apiDataFromDataServer('releases_by_song', song);
+			const foundList = await apiDataFromDataServer('releases_by_song', encodeURIComponent(song));
 			return {
 				lyrics,
 				foundon: foundList?.results?.map(({ lookup, media }: any) => ({ ...releases?.results?.find((r: any) => lookup === r.lookup), media })),

@@ -12,8 +12,8 @@ import useLyrics from '@/lib/useLyrics';
 import { useRouter, usePathname } from 'next/navigation';
 import Tag from '@/components/Tag';
 
-const FilterButton = (props: { filter: string, setFiltersUsed: any, filtersUsed: string }) => {
-	const { name, value, setFiltersUsed, filtersUsed } = props;
+const FilterButton = (props: { field: string, value: string, setFiltersUsed: any, filtersUsed: string }) => {
+	const { field, value, setFiltersUsed, filtersUsed } = props;
 	const [ isChecked, setIsChecked ] = useState(filtersUsed.includes(value));
 	const router = useRouter();
 	const pathname = usePathname();
@@ -22,13 +22,12 @@ const FilterButton = (props: { filter: string, setFiltersUsed: any, filtersUsed:
 		if (filters?.length) searchParams.set('filters', filters);
 		router.replace(`${pathname}?${searchParams.toString()}`)
 	}
-	const changeFilter = (ev: React.ChangeEvent<HTMLInputElement>) => {
-		ev.preventDefault();
+	const changeFilter = () => {
 		let newFilters;
 		if (isChecked) {
-			newFilters = filtersUsed.split(',').filter((e: string) => e !== ev.target.name).join(',');
+			newFilters = filtersUsed.split(',').filter((e: string) => e !== value).join(',');
 		} else {
-			newFilters = filtersUsed.split(',').concat(ev.target.name).join(',');
+			newFilters = filtersUsed.split(',').concat(value).join(',');
 		}
 		setIsChecked(!isChecked);
 		newFilters = newFilters?.replace(/^,/, '');

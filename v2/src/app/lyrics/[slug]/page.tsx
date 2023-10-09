@@ -30,9 +30,11 @@ const	LyricVideo = ({ video }: any) => {
 	</div>;
 }
 
-const	LyricAudio = ({ mp3 }: any) => {
-	if (!mp3) return;
-	return <EmbedMedia data={{ mediaurl: mp3 }} />
+const	LyricAudio = ({ mp3, foundon }: any) => {
+	if (mp3) {
+		return <EmbedMedia data={{ mediaurl: mp3 }} />
+	}
+	//return foundon?.filter((f: any) => f.media !== 'NULL')?.map((f: any) => <EmbedMedia data={{ mediaurl: f.media, lookup: f.lookup }} />)
 }
 
 const	LyricMedia = ({ media }: any) => {
@@ -43,14 +45,14 @@ const	LyricMedia = ({ media }: any) => {
 
 const	LyricImages = ({ images }: any) => <ImageStrip className="drop-shadow-md imageStrip clear_float text-center" images={parseCaptionsSourcesEtc(images, true)} />;
 
-const Lyrics = (props: any) => {
+const Lyrics = (props: any, foundon: any[]) => {
 	const { mp3, video, media, images, lyrics, key } = props;
 	return (
 		<blockquote key={key}>
+			<LyricAudio mp3={mp3} foundon={foundon} />
 			<LyricVideo video={video} />
 			<LyricImages images={images} />
 			<LyricMedia media={media} />
-			<LyricAudio mp3={mp3} />
 			<div className="lyrics" dangerouslySetInnerHTML={{__html: lyrics?.replace(/<br\/>/g, '') }}/>
 			<div className="clear_float" />
 		</blockquote>
@@ -144,7 +146,7 @@ const Lyric = ({ params }: { params?: any }) => {
 			return (<>
 				<Header project={song?.project} section="lyrics" title={song?.title} />
 				<Tag>{song?.title}</Tag>
-				{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song)}</div>)}
+				{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon)}</div>)}
 				{FoundOn(song, foundon)}
 			</>)
 		})()}

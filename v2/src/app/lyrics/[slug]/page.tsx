@@ -9,7 +9,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import { Attribution } from '@/components/GenericWeb';
 import useLyric from '@/lib/useLyric';
-import { truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/macros';
+import { parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/macros';
 
 const	LyricVideo = ({ video }: any) => {
 	if (!video) return;
@@ -57,13 +57,13 @@ const Lyrics = (props: any) => {
 	)
 }
 
-const FoundOn = (song: any, key: number, releases: any) =>
-	<div key={key}>
+const FoundOn = (song: any, releases: any) =>
+	!!(releases?.length) && <>
 		<Tag>Found On</Tag>
 		<blockquote>
-			{releases.map(MakeAlbumBlurb)}
+			{releases?.sort((a: any, b: any) => parseYear(b.dtreleased) - parseYear(a.dtreleased))?.map(MakeAlbumBlurb)}
 		</blockquote>
-	</div>
+	</>
 
 const PatSays = (props: any) => {
 	const { pat_says } = props;
@@ -135,8 +135,8 @@ const Lyric = ({ params }: { params?: any }) => {
 			{ label: 'Others Say', lookup: (song: any) => (song?.others_say), func: OthersSay },
 			{ label: 'Tablature', lookup: (song: any) => (song?.tablature), func: Tablature },
 			{ label: 'Live Stats', lookup: (song: any) => ({}), func: LiveStats },
-			{ label: 'Media', lookup: (song: any) => (song?.media), func: Media },
 			{ label: 'Audio', lookup: (song: any) => (song?.mp3), func: Audio },
+			{ label: 'Media', lookup: (song: any) => (song?.media), func: Media },
 	];
 
 	return (<><Suspense fallback=<>Loading...</> >
@@ -144,8 +144,8 @@ const Lyric = ({ params }: { params?: any }) => {
 			return (<>
 				<Header project={song?.project} section="lyrics" title={song?.title} />
 				<Tag>{song?.title}</Tag>
-				{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => t?.func(song, key))}
-				{FoundOn(song, 999, foundon)}
+				{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song)}</div>)}
+				{FoundOn(song, foundon)}
 			</>)
 		})()}
 		<Footer />

@@ -12,6 +12,7 @@ const AudioSection = ({ title, data }: any) => {
 			const { performance_id, datetime, category, lookup, variant, type, performer, aka, title, setnum, ordinal, song, version, author, instruments, media } = d;
 			return <EmbedMedia key={key}
 				data={{
+					lookup,
 					//datetime: datetime,
 					//venue: lookup,
 					//venue: d.venue,
@@ -19,7 +20,7 @@ const AudioSection = ({ title, data }: any) => {
 					mediaurl: media,
 					title: song,
 					// author: d.collection,
-					comment: lookup,
+					comment: version,
 					// mediacredit: credit,
 					// mediacrediturl: crediturl,
 					// mediacreditdate: creditdate,

@@ -122,7 +122,7 @@ const ReleaseNotes = ({ release }: { release: ReleaseTypeWithChildren }) => {
 				{notes?.map(([ note, source, sourceurl, sourcedate ]: any, key: number) =>
 					<div className="listItem" key={key}>
 						<div dangerouslySetInnerHTML={{ __html: note }} />
-						{/* NEED TO differentaite between 'notes' and 'announcements' (source) && <Source g={source} u={sourceurl} d={sourcedate} /> */}
+						{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
 					</div>
 				)}
 				</blockquote>

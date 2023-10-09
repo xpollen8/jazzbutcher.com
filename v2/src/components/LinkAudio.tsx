@@ -6,9 +6,10 @@ import Image from 'next/image';
 import { truncAt, autoLink, linkExternal } from '@/lib/macros';
 import useRelease from '@/lib/useRelease';
 
-const LinkAudio = ({ lookup, parent, datetime, venue, city, title, comment, wav, mp3, url, artist, author, autolink = true, children }: {
+const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comment, wav, mp3, url, artist, author, autolink = true, children }: {
 	title: string
 	lookup?: string
+	version?: string
 	parent?: string
 	datetime?: string
 	venue?: string
@@ -46,7 +47,7 @@ const LinkAudio = ({ lookup, parent, datetime, venue, city, title, comment, wav,
 				})()}
 			</i>
 			</span>
-			{(artist) && <b>{artist}</b>} {(author) && <span className="smalltext pl-3"> ({author}) </span>}
+			{(artist) && <b>{artist}</b>} {(author) && <span className="smalltext pl-3"> ({author}) </span>} {(version) && <span className="smalltext pl-3"> ({version}) </span>}
 			{(comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: comment }} /></i>)</span>}
 			{(release?.thumb) && <div className="-mt-1 ml-2 smalltext">From: &quot;{release?.title}&quot; ({release?.type})</div>}
 			<div className="flex">

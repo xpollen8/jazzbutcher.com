@@ -3857,7 +3857,7 @@ Previously available on the ${fishco} LP/CD.
 
 	${clearAlbumPerf(release=violent)}
 	${addAlbumPerf(release=violent, ordinal=1, song="She's A Yo-Yo")}
-	${addAlbumPerf(release=violent, ordinal=2, song="Mister Odd")}
+	${addAlbumPerf(release=violent, ordinal=2, song="Mr. Odd")}
 	${addAlbumPerf(release=violent, ordinal=3, song="She's On Drugs")}
 	${addAlbumPerf(release=violent, ordinal=4, song="Bicycle Kid")}
 	${addAlbumPerf(release=violent, ordinal=5, song="Get It Wrong")}
@@ -3869,7 +3869,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=violent, ordinal=11, song="Whaddya?")}
 	${addAlbumPerf(release=violent, ordinal=12, song="Ghosts")}
 	${addAlbumPerf(release=violent, ordinal=13, song="Pineapple Tuesday")}
-	${addAlbumPerf(release=violent, ordinal=14, song="Shirley MacLaine")}
+	${addAlbumPerf(release=violent, ordinal=14, song="Shirley Maclaine")}
 	${addAlbumPerf(release=violent, ordinal=15, song="Girl-Go")}
 
 	${addAlbumPerf(release=violent, person=[[person:Paul_Mulreany]], instruments=Drums\, percussion\, guitar\, voice)}
@@ -4034,19 +4034,19 @@ Previously available on the ${fishco} LP/CD.
 
 	${clearAlbumPerf(release=lunch)}
 
-	${addAlbumPerf(release=lunch, ordinal=1, song="Mister Odd")}
+	${addAlbumPerf(release=lunch, ordinal=1, song="Mr. Odd")}
 	${addAlbumPerf(release=lunch, ordinal=2, song="She's On Drugs")}
-	${addAlbumPerf(release=lunch, ordinal=3, song="Girl Go")}
+	${addAlbumPerf(release=lunch, ordinal=3, song="Girl-Go")}
 	${addAlbumPerf(release=lunch, ordinal=4, song="Looking For Lot 49")}
 	${addAlbumPerf(release=lunch, ordinal=5, song="She's A Yo-Yo")}
 	${addAlbumPerf(release=lunch, ordinal=6, song="Shirley Maclaine")}
-	${addAlbumPerf(release=lunch, ordinal=7, song="Still And All")}
+	${addAlbumPerf(release=lunch, ordinal=7, song="Still & All")}
 	${addAlbumPerf(release=lunch, ordinal=8, song="Monkeyface")}
 	${addAlbumPerf(release=lunch, ordinal=9, song="Bakersfield")}
 	${addAlbumPerf(release=lunch, ordinal=10, song="Vodka Girls", media=/audio/mp3/vodkagirls.mp3)}
 	${addAlbumPerf(release=lunch, ordinal=11, song="President Chang")}
 	${addAlbumPerf(release=lunch, ordinal=12, song="Scarlett")}
-	${addAlbumPerf(release=lunch, ordinal=13, song="Cops & Hospitals")}
+	${addAlbumPerf(release=lunch, ordinal=13, song="Cops And Hospitals")}
 	${addAlbumPerf(release=lunch, ordinal=14, song="Sister Death")}
 	${addAlbumPerf(release=lunch, ordinal=15, song="True Stories")}
 	${addAlbumPerf(release=lunch, ordinal=16, song="President Chang", version=[Evil Karel Von Daemmerung Remix] From The Bad Archives)}
@@ -4360,17 +4360,17 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=8, song="Mr. Odd")}
 	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=9, song="After The Great Euphrates")}
 	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=10, song="Panic In Room 109")}
-	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=11, song="Girl Go")}
+	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=11, song="Girl-Go")}
 	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=12, song="Turtle Bait")}
 	${addAlbumPerf(release=fire_violent, type=CD3, ordinal=13, song="Sister Death")}
 	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=1, song="Girls Say Yes")}
 	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=2, song="Our Friends The Filth")}
 	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=3, song="Harlan")}
-	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=4, song="Still And All")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=4, song="Still & All")}
 	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=5, song="Monkeyface")}
 	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=6, song="She's A Yo-Yo")}
 	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=7, song="Honey")}
-	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=8, song="Shirley MacLaine")}
+	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=8, song="Shirley Maclaine")}
 	${addAlbumPerf(release=fire_violent, type=CD4, ordinal=9, song="Racheland")}
 
 	${jbc_footer}
@@ -4407,7 +4407,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=9, song="Partytime", version=Hard 12er B-side)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=10, song="Mersey", version=Angels 12er B-side)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=11, song="Blame", version=Spooky 12er B-side)}
-	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=12, song="Excellent!", version=Girl Go 12er Version)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=12, song="Excellent!", version=Girl-Go 12er Version)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=13, song="President Chang", version=Von Daemmerung Remix)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=14, song="Vodka Girls", version=Abus Dangereux magazine compilation, media=/audio/mp3/vodkagirls.mp3)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=15, song="Truck Of Fear", version=Sixteen Years CD Single Version)}

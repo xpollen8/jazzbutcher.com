@@ -7,7 +7,7 @@ import Tag from '@/components/Tag';
 import ImageStrip from '@/components/ImageStrip';
 import EmbedMedia from '@/components/EmbedMedia';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
-import { Attribution } from '@/components/GenericWeb';
+import { Credit, Attribution } from '@/components/GenericWeb';
 import useLyric from '@/lib/useLyric';
 import { parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/macros';
 
@@ -83,8 +83,6 @@ const PatSays = (props: any) => {
 	</>
 }
 
-// TODO: 'annotated', 'is_instrumental', 'images'
-
 const OthersSay = (props: any) => {
 	const { others_say } = props;
 	return (
@@ -95,8 +93,16 @@ const OthersSay = (props: any) => {
 }
 
 const Tablature = (props: any) => {
+	const [ g, u, d ] = props?.tablature_credit?.split(';;');
 	return (
 		<div key={props?.key}>
+			<Tag>Tablature</Tag>
+			<pre>
+				<blockquote dangerouslySetInnerHTML={{ __html: props?.tablature }} />
+			</pre>
+			<blockquote>
+				{(g) && <Credit g={g} u={u} d={d} />}
+			</blockquote>
 		</div>
 	)
 }

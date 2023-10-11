@@ -98,7 +98,7 @@ const	FilterPresses = ({ project, title, showAlbum, filter=filterPassThru }: { t
 					const thumb = truncAt(';;', item.thumb);
 					const info = item.type.replace(project, '').replace('nopat','').replace('wilson','').replace('sumo','').replace('eg','').replace(',,', ',').replace(/^,/, '').replace(/,$/, '');
 					return (<div key={key} className={`w-64`}>
-						<InfoTag text={`${item.dtpublished?.substr(0, 10)}: ${info}`}/>
+						<InfoTag text={`${item.dtpublished?.substr(0, 10).replace(/-00/g, '')}: ${info}`}/>
 						<div className={`outline outline-slate-300 drop-shadow-sm gig_${parseProject(item.type)}`}>
 							<Link key={key} href={item.url}>
 								{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}
@@ -110,7 +110,9 @@ const	FilterPresses = ({ project, title, showAlbum, filter=filterPassThru }: { t
 									<div className="h-1" />
 									{(item.publication && item.title) && <hr />}
 									<div className="h-1" />
-									<div dangerouslySetInnerHTML={{ __html: item.title }} className="-mb-5" />
+									<div dangerouslySetInnerHTML={{ __html: item.title }} />
+									{(parseInt(item?.bodycount, 10) > 0) && <div className="smalltext">{item?.bodycount.toLocaleString()} words</div>}
+									<div className="-mb-5" />
 								</div>
 							</Link>
 						</div>

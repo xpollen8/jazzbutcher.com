@@ -1,14 +1,15 @@
 #define	beg_tab	<font color="#000099">
 #define	end_tab	</font>
 
-#define	lyricsHeader(project, title, lyrics, tablature, tablature_credit, mp3, mp4, caption, embed_link, onlist, patsez, others, credits, annotated, is_instrumental, images, video)
+#define	lyricsHeader(project, title, lyrics, tablature, tablature_credit, mp3, caption, embed_link, onlist, patsez, others, credits, annotated, is_instrumental, images, video)
 #live	if (getval(truncate))
 #live		if (sql(truncate table lyrics))
 #live		endif
 #live	endif
-#live	if (getval(update))
-#insert into lyrics set href="${page}", project="${project}", title="${literalizeQuotes(${unfilter(${title})})}", tablature="${literalizeQuotes(${unfilter(${tablature})})}", tablature_credit="${literalizeQuotes(${unfilter(${tablature_credit})})}", lyrics="${literalizeQuotes(${unfilter(${lyrics})})}", mp3="${literalizeQuotes(${unfilter(${mp3})})}", mp4="${literalizeQuotes(${unfilter(${mp4})})}", embed_link="${literalizeQuotes(${unfilter(${embed_link})})}", found_on="${literalizeQuotes(${unfilter(${onlist})})}", pat_says="${literalizeQuotes(${unfilter(${patsez})})}", others_say="${literalizeQuotes(${unfilter(${others})})}", caption="${literalizeQuotes(${unfilter(${caption})})}", credits="${literalizeQuotes(${unfilter(${credits})})}", annotated="${annotated}", is_instrumental="${is_instrumental}", images="${images}", video="${video}";
-#live		if (sql(insert IGNORE into lyrics set href="${page}", project="${project}", title="${title}", tablature="${literalizeQuotes(${unfilter(${tablature})})}", tablature_credit="${literalizeQuotes(${unfilter(${tablature_credit})})}", lyrics="${literalizeQuotes(${unfilter(${lyrics})})}", mp3="${literalizeQuotes(${unfilter(${mp3})})}", mp4="${literalizeQuotes(${unfilter(${mp4})})}", embed_link="${literalizeQuotes(${unfilter(${embed_link})})}", found_on="${literalizeQuotes(${unfilter(${onlist})})}", pat_says="${literalizeQuotes(${unfilter(${patsez})})}", others_say="${literalizeQuotes(${unfilter(${others})})}", caption="${literalizeQuotes(${unfilter(${caption})})}", credits="${literalizeQuotes(${unfilter(${credits})})}", annotated="${annotated}", is_instrumental="${is_instrumental}", images="${images}", video="${video}"))
+#live	if (getval(UA))
+#live		if (sql(delete from lyrics where href="${page}"))
+#live		endif
+#live		if (sql(insert IGNORE into lyrics set href="${page}", project="${project}", title="${title}", tablature="${literalizeQuotes(${unfilter(${tablature})})}", tablature_credit="${literalizeQuotes(${unfilter(${tablature_credit})})}", lyrics="${literalizeQuotes(${unfilter(${lyrics})})}", mp3="${literalizeQuotes(${unfilter(${mp3})})}", embed_link="${literalizeQuotes(${unfilter(${embed_link})})}", found_on="${literalizeQuotes(${unfilter(${onlist})})}", pat_says="${literalizeQuotes(${unfilter(${patsez})})}", others_say="${literalizeQuotes(${unfilter(${others})})}", caption="${literalizeQuotes(${unfilter(${caption})})}", credits="${literalizeQuotes(${unfilter(${credits})})}", annotated="${annotated}", is_instrumental="${is_instrumental}", images="${images}", video="${video}"))
 #live		endif
 #live	endif
 	${mkHeader(project=${project}, section=Lyrics, title=${title})}
@@ -103,7 +104,7 @@ ${endTab}
 #
 #live	if (sql(lscm:select count(*) as cnt from gigsong where song="${title}" and length(mediaurl) > 0))
 #live	endif
-#live	if ((getnum(lscm->cnt) > 0) || (defined(mp4)) || (defined(mp3)) || (defined(embed_link)))
+#live	if ((getnum(lscm->cnt) > 0) || (defined(video)) || (defined(mp3)) || (defined(embed_link)))
 ${begTab(Media)}
 #live	if (defined(embed_link))
 	${tag_beg}
@@ -113,8 +114,8 @@ ${begTab(Media)}
 	${embedVideo(project=${project}, url=${embed_link}, title=${caption})}
 	</div>
 #live	endif
-#live	if (defined(mp4))
-	${embedVideo(project=${project}, url=${mp4}, title=${caption})}
+#live	if (defined(video))
+	${embedVideo(project=${project}, url=${video}, title=${caption})}
 #live	endif
 #live	if (defined(mp3))
 #live	if (defined(caption))
@@ -5081,6 +5082,8 @@ G - G - C - D
 	Buffalo shame (x3)
 
 	)},
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp3;;Curtis E. Johnson,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp4,
 		onlist=
 		dist .. fire_wasted
 	)}
@@ -9904,6 +9907,8 @@ Break out and find out tonight.
 
 
 	)},
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_PoliceChief.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_PoliceChief.mp3;;Curtis E. Johnson;;;;;;Backing track,
 		mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3, caption=2005 demo,
 		onlist=wilson_demo_2005,
 		,credits=${literalizeCommas(${pat}, ${botty})};;;;© Feb. 2003
@@ -9956,6 +9961,8 @@ Break out and find out tonight.
 
  
 	)},
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SaturdayNight.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SaturdayNight.mp3;;Curtis E. Johnson;;;;;;Backing track,
 		
 		credits=${literalizeCommas(${pat}, ${botty})};;;;© July 2002
 	)}
@@ -9967,7 +9974,7 @@ Break out and find out tonight.
  
 	<h1>No lyrics available - enjoy the video!</h1>
 	)},
-		mp4=https://assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_FilterKings,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_FilterKings.mp4;;Curtis E. Johnson,
 		caption=${curt}'s live backing tracks,
 	)}
 #live	endif
@@ -9978,7 +9985,9 @@ Break out and find out tonight.
  
 	<h1>No lyrics available - enjoy the video!</h1>
 	)},
-		mp4=https://assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_TwoDragons, mp3=http://assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_TwoDragons.mp3, caption=${curt}'s live backing tracks,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_TwoDragons.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_TwoDragons.mp3;;Curtis E. Johnson;;;;;;Backing track,
+		caption=${curt}'s live backing tracks,
 	)}
 #live	endif
 
@@ -10054,6 +10063,8 @@ Break out and find out tonight.
 	Fuck off with your hippy shit.
 
 	)},
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_HippyShit.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_HippyShit.mp3;;Curtis E. Johnson;;;;;;Backing track,
 		mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3, caption=2002 demo,
 		onlist=wilson_demo_2002,
 		credits=${literalizeCommas(© The entire population of the world with a chorus by Bot)}
@@ -10086,6 +10097,8 @@ Break out and find out tonight.
 	I come to destroy.
 
 	)},
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_Critters.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_Critters.mp3;;Curtis E. Johnson;;;;;;Backing track,
 		
 		credits=${literalizeCommas(© ${pat}, ${botty}, King Horror)}
 		)}
@@ -10117,6 +10130,8 @@ Break out and find out tonight.
 
 	)},
 		
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SecretGovernment.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SecretGovernment.mp3;;Curtis E. Johnson;;;;;;Backing track,
 		credits=${pat}
 	)}
 #live	endif
@@ -10203,6 +10218,8 @@ Break out and find out tonight.
 
 #		${linkAudio(project=wilson, title=Quality People (2002 demo), mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3, autolink=no)}
 	)},
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_QualityPeople.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_QualityPeople.mp3;;Curtis E. Johnson;;;;;;Backing track,
 		mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3, caption=2003 demo,
 		onlist=va_wilson_heyday ..  wilson_demo_2003 .. wilson_demo_2002,
 		credits=${literalizeCommas( © ${botty}, ${pat}, Soybaz)}
@@ -10253,6 +10270,8 @@ Break out and find out tonight.
 	Out in the desert with a nameless dread.<br/>
 	If you want to get ahead in the desert get ahead.
 	)},
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_IstanbulConnection.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_IstanbulConnection.mp3;;Curtis E. Johnson;;;;;;Backing track,
 		mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3, caption=2003 demo, embed_link=https://youtube.com/embed/r074mp41514,
 		onlist=wilson_demo_2003 .. wilson_demo_2002,
 		credits=${literalizeCommas( © ${pat}, ${curt}, ${botty}, Traditional, Burroughs, Perry)}
@@ -10298,6 +10317,8 @@ Break out and find out tonight.
 	Sam and Dave!
 
 	)},
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_DarkAgenda.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_DarkAgenda.mp3;;Curtis E. Johnson;;;;;;Backing track,
 		mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, caption=2002 Demo,
 		onlist=wilson_demo_2002,
 		credits=${literalizeCommas( © ${pat}/${botty})};;;;2001,
@@ -10359,6 +10380,8 @@ Break out and find out tonight.
 	No winners in this human race, no winners in just yet.
 
 	)},
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_NoWinners.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_NoWinners.mp3;;Curtis E. Johnson;;;;;;Backing track,
 		patsez=${literalizeCommas(
 		Cheerful, huh? I introduced No Winners to the band as being a treatise on the ultimate futility of religious-based conflict. You
 		should have seen their little faces! Bot and I don't quite know what the other one's about...exactly...but it's jungle, so we
@@ -10408,7 +10431,8 @@ Break out and find out tonight.
 	Fear the madness generator.
 
 	)},
-		
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BattleTime.mp3;;Curtis E. Johnson;;;;;;Backing track,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BattleTime.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
 		credits=${literalizeCommas( © ${pat}/${botty})};;;;2005-04
 	)}
 #live	endif

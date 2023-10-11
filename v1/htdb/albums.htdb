@@ -4101,7 +4101,7 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=water, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=water)}
-	${addAlbumPerf(release=water, ordinal=1, song="Sweet Water")}
+	${addAlbumPerf(release=water, ordinal=1, song="Sweetwater")}
 
 	${addAlbumPerf(release=water, instruments=Bass\, Voice, person=[[person:Dooj_Wilkinson]])}
 	${addAlbumPerf(release=water, instruments=Drums, person=[[person:Nick_Burson]])}

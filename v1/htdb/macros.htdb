@@ -118,9 +118,15 @@
 			<source src="${url}.mp4" type="video/mp4">
 		</video>
 #live	else if (getval(url) == assets.jazzbutcher.com)
+#live	if (getval(url) == mp4)
+		<video controls preload="none" style="max-width: 100%;" poster="${truncAt(.mp4, ${url})}_thumbnail.jpg" >
+			<source src="${truncAt(;;, ${url})}" type="video/mp4">
+		</video>
+#live	else
 		<video controls preload="none" style="max-width: 100%;" poster="${url}_thumbnail.jpg">
 			<source src="${url}.mp4" type="video/mp4">
 		</video>
+#live	endif
 #live	else if (define(urlClean, ${replace(${url}, https://vimeo.com/, https://assets.jazzbutcher.com/video/)}))
 		<div class="js-video [vimeo, widescreen]">
 			<iframe width="560" height="315" src="${urlClean}?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -817,7 +823,7 @@
 #live	endif
 #live if (defined(mp3))
 		<audio controls="controls" title="${stripTags(${title})}" preload="none" class="audio_player">
-			<source src="${mp3}" type="audio/mpeg" />
+			<source src="${truncAt(;;, ${mp3})}" type="audio/mpeg" />
 			Your browser does not support the audio element.
 		</audio>
 #live	endif

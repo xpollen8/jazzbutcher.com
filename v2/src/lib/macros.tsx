@@ -561,7 +561,7 @@ export const parseCredit = (cr: string = '') => {
 		credit,
 		crediturl,
 		creditdate,
-		creditcaption: deHTDBifyText(creditcaption)
+		creditcaption
 	}
 }
 

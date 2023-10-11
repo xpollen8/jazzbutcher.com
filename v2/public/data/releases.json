@@ -1,6 +1,6 @@
 {
 	"noun": "albums",
-	"numResults": 92,
+	"numResults": 95,
 	"results": [
 	{
 		"type": "album",
@@ -59,7 +59,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -85,7 +87,7 @@
 
 		"catalog": "Glass 027",
 
-		"media": "7'",
+		"media": "7er",
 
 		"country": 	"",
 
@@ -119,7 +121,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -179,7 +183,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -187,7 +193,7 @@
 
 		"href": "/albums/marnie.html",
 
-		"title": "Marnie",
+		"title": "Marnie 12er",
 
 		"thumb": "/images/releases/marnie_front",
 
@@ -205,7 +211,7 @@
 
 		"catalog": "Glass 12033",
 
-		"media": 	"",
+		"media": "12er",
 
 		"country": 	"",
 
@@ -229,7 +235,7 @@
 
 		"images": "/images/releases/marnie_back",
 
-		"notes": 	"",
+		"notes": "Includes 4 tracks not on the 7er version. All 4 tracks on side B recorded live in the studio. This release includes the exlusive 'Cowgirl Fever'. Not on Any Other Jazz Butcher Release. A runs on 45RPM, B on 33RPM",
 
 		"patsez": 	"",
 
@@ -239,7 +245,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -265,7 +273,7 @@
 
 		"catalog": "Glass 1204",
 
-		"media": "12'",
+		"media": "12er",
 
 		"country": 	"",
 
@@ -299,13 +307,15 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_pulp.html",
 
 		"title": "VA: Oozing Through the Ozone Layer",
 
@@ -359,7 +369,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -419,7 +431,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -479,7 +493,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -539,7 +555,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -579,7 +597,7 @@
 
 		"onalbum": 	"",
 
-		"liner": "This record collects together the various singles that     have been issued in England to date under the much-abused     name of the Jazz Butcher, to wit: me.     <p />     I rather like having them all in one place like this     - it makes for a nice, noisey muck-it-up sort of disc     that is ideal for leisure time at home, on the beach,     in you local club.... hell, ANYWHERE!!!  Let me tell you about it.     <p />      <!-- BEG:expanded_from:[song:Southern Mark Smith] --> <span class='song'> <i><a href='/lyrics/smith.html'>Southern Mark Smith</a></i> </span> <!-- expanded_from:[song:Southern Mark Smith]:END --> and <!-- BEG:expanded_from:[song:Jazz Butcher -v- Count Dracula] --> <span class='song'> <i><a href='/lyrics/count_dracula.html'>Jazz Butcher -v- Count Dracula</a></i> </span> <!-- expanded_from:[song:Jazz Butcher -v- Count Dracula]:END --> were recorded in the summer     of 1983 in a place called Wellingborough, a small town in the     middle of England where even the children are scarey!     'Hey, mister, can you SEE in them glasses?'  I get to     sing and play things like guitar, sax and piano.     Max does the electric guitar.  On bass is Rolo McGinty,     and Princess Alice Thompson plays the organ.  They're both in     the <a href='/gigs/search.html?f=act&amp;q=The+Woodentops'>The Woodentops</a> now, a group internationally recognised as     being the shortest collection of pop musicians in the     world.  Playing the drums is Kevin Haskins, a charming     neighbour of mine, and veteran of the <a href='http://www.partium.com/~andrewb/bauhaus/' target='new'>Bauhaus</a> conspiracy.  Miaowula!     <p />      <!-- BEG:expanded_from:[song:Marnie] --> <span class='song'> <i><a href='/lyrics/marnie.html'>Marnie</a></i> </span> <!-- expanded_from:[song:Marnie]:END --> and  <!-- BEG:expanded_from:[song:Zombie Love] --> <span class='song'> <i><a href='/lyrics/zombie_love.html'>Zombie Love</a></i> </span> <!-- expanded_from:[song:Zombie Love]:END -->     were the hot spots from my second single,     recorded in London one Sunday afternoon in January 1984.     <!-- BEG:expanded_from:[song:Marnie] --> <span class='song'> <i><a href='/lyrics/marnie.html'>Marnie</a></i> </span> <!-- expanded_from:[song:Marnie]:END --> is an attempt to force a meeting between the     steaming tropical jungles of Bangladesh (where the tigers     live) and the frozen stepps of Siberia (where the Siberian     tigers live).  <!-- BEG:expanded_from:[song:Zombie Love] --> <span class='song'> <i><a href='/lyrics/zombie_love.html'>Zombie Love</a></i> </span> <!-- expanded_from:[song:Zombie Love]:END --> is just sick. Max and Rolo and     me again, with Jody Palmer on drums, bongoes and 'Oi'm jest     a rual boy on a day out in London, guvnor'.     <p />     <!-- BEG:expanded_from:[song:Roadrunner] --> <span class='song'> <i>Roadrunner</i> <span class='song_author'>(Richman)</span> </span> <!-- expanded_from:[song:Roadrunner]:END --> features me, Max, David J.  on bass, and Mr Jones     on drums, and was recorded in Wellingborough again in     April '84.  The song is by <a href='http://www.base.com/jonathan/jonathan.html' target='new'>Jonathan Richman</a>, but the sentiments     are entirely our own. The 'Twilight Zone Mix' on this     record concerns Max's inability to get from one place     to another without disappearing for long periods.  You've     heard of the Bermuda Triangle?  Well, Max has shares     in it.  <a id='rain'> <!-- BEG:expanded_from:[song:Rain] --> <span class='song'> <i><a href='/lyrics/rain.html'>Rain</a></i> </span> <!-- expanded_from:[song:Rain]:END -->, recorded at the same session,     concerns sex and the weather and the undoubted connection     between the two.  Incidentally, it didn't rain once during     the three days we were in the studio!     <p />      <!-- BEG:expanded_from:[song:Real Men] --> <span class='song'> <i><a href='/lyrics/real_men.html'>Real Men</a></i> </span> <!-- expanded_from:[song:Real Men]:END --> and <!-- BEG:expanded_from:[song:The Jazz Butcher Meets the Prime Minister] --> <span class='song'> <i><a href='/lyrics/jb_v_pm.html'>The Jazz Butcher Meets the Prime Minister</a></i> </span> <!-- expanded_from:[song:The Jazz Butcher Meets the Prime Minister]:END --> see the Jazz Butcher Group (me and     Max and Dave and Jones) in vaguely political mood.  In     other words, feisty.  Real Men, the kind who never sit     together on buses in case they get their medallions tangled.     The Prime Minister, a book-burning lunatic, under whose     'leadership' the U.K. has become a police-state satellite     of the most evil and morally corrupt regime in the world.     Locked in the basement in Leamington Spa in steamy August     '84, The Jazz Butcher Group reaches for the cheese wire!     Gasp at the awesome sound of a guitar massacre in Parliament!     <p />     Lastly, from the same summer sessions, comes <!-- BEG:expanded_from:[song:Water] --> <span class='song'> <i><a href='/lyrics/water.html'>Water</a></i> </span> <!-- expanded_from:[song:Water]:END --> Max     and I, late at night, contemplating the curious tale     of the talking elephants, and the endless search for    supplies of free drink...",
+		"liner": "This record collects together the various singles that     have been issued in England to date under the much-abused     name of the Jazz Butcher, to wit: me.     <p />     I rather like having them all in one place like this     - it makes for a nice, noisey muck-it-up sort of disc     that is ideal for leisure time at home, on the beach,     in you local club.... hell, ANYWHERE!!!  Let me tell you about it.     <p />      <!-- BEG:expanded_from:[song:Southern Mark Smith] --> <span class='song'> <i><a href='/lyrics/smith.html'>Southern Mark Smith</a></i> </span> <!-- expanded_from:[song:Southern Mark Smith]:END --> and <!-- BEG:expanded_from:[song:Jazz Butcher -v- Count Dracula] --> <span class='song'> <i><a href='/lyrics/count_dracula.html'>Jazz Butcher -v- Count Dracula</a></i> </span> <!-- expanded_from:[song:Jazz Butcher -v- Count Dracula]:END --> were recorded in the summer     of 1983 in a place called Wellingborough, a small town in the     middle of England where even the children are scarey!     'Hey, mister, can you SEE in them glasses?'  I get to     sing and play things like guitar, sax and piano.     Max does the electric guitar.  On bass is Rolo McGinty,     and Princess Alice Thompson plays the organ.  They're both in     the <a href='/gigs/search.html?f=act&amp;q=The+Woodentops'>The Woodentops</a> now, a group internationally recognised as     being the shortest collection of pop musicians in the     world.  Playing the drums is Kevin Haskins, a charming     neighbour of mine, and veteran of the <a href='http://www.partium.com/~andrewb/bauhaus/' target='new'>Bauhaus</a> conspiracy.  Miaowula!     <p />      <!-- BEG:expanded_from:[song:Marnie] --> <span class='song'> <i><a href='/lyrics/marnie.html'>Marnie</a></i> </span> <!-- expanded_from:[song:Marnie]:END --> and  <!-- BEG:expanded_from:[song:Zombie Love] --> <span class='song'> <i><a href='/lyrics/zombie_love.html'>Zombie Love</a></i> </span> <!-- expanded_from:[song:Zombie Love]:END -->     were the hot spots from my second single,     recorded in London one Sunday afternoon in January 1984.     <!-- BEG:expanded_from:[song:Marnie] --> <span class='song'> <i><a href='/lyrics/marnie.html'>Marnie</a></i> </span> <!-- expanded_from:[song:Marnie]:END --> is an attempt to force a meeting between the     steaming tropical jungles of Bangladesh (where the tigers     live) and the frozen stepps of Siberia (where the Siberian     tigers live).  <!-- BEG:expanded_from:[song:Zombie Love] --> <span class='song'> <i><a href='/lyrics/zombie_love.html'>Zombie Love</a></i> </span> <!-- expanded_from:[song:Zombie Love]:END --> is just sick. Max and Rolo and     me again, with Joby Palmer on drums, bongoes and 'Oi'm jest     a rual boy on a day out in London, guvnor'.     <p />     <!-- BEG:expanded_from:[song:Roadrunner] --> <span class='song'> <i>Roadrunner</i> <span class='song_author'>(Richman)</span> </span> <!-- expanded_from:[song:Roadrunner]:END --> features me, Max, David J.  on bass, and Mr Jones     on drums, and was recorded in Wellingborough again in     April '84.  The song is by <a href='http://www.base.com/jonathan/jonathan.html' target='new'>Jonathan Richman</a>, but the sentiments     are entirely our own. The 'Twilight Zone Mix' on this     record concerns Max's inability to get from one place     to another without disappearing for long periods.  You've     heard of the Bermuda Triangle?  Well, Max has shares     in it.  <a id='rain'> <!-- BEG:expanded_from:[song:Rain] --> <span class='song'> <i><a href='/lyrics/rain.html'>Rain</a></i> </span> <!-- expanded_from:[song:Rain]:END -->, recorded at the same session,     concerns sex and the weather and the undoubted connection     between the two.  Incidentally, it didn't rain once during     the three days we were in the studio!     <p />      <!-- BEG:expanded_from:[song:Real Men] --> <span class='song'> <i><a href='/lyrics/real_men.html'>Real Men</a></i> </span> <!-- expanded_from:[song:Real Men]:END --> and <!-- BEG:expanded_from:[song:The Jazz Butcher Meets the Prime Minister] --> <span class='song'> <i><a href='/lyrics/jb_v_pm.html'>The Jazz Butcher Meets the Prime Minister</a></i> </span> <!-- expanded_from:[song:The Jazz Butcher Meets the Prime Minister]:END --> see the Jazz Butcher Group (me and     Max and Dave and Jones) in vaguely political mood.  In     other words, feisty.  Real Men, the kind who never sit     together on buses in case they get their medallions tangled.     The Prime Minister, a book-burning lunatic, under whose     'leadership' the U.K. has become a police-state satellite     of the most evil and morally corrupt regime in the world.     Locked in the basement in Leamington Spa in steamy August     '84, The Jazz Butcher Group reaches for the cheese wire!     Gasp at the awesome sound of a guitar massacre in Parliament!     <p />     Lastly, from the same summer sessions, comes <!-- BEG:expanded_from:[song:Water] --> <span class='song'> <i><a href='/lyrics/water.html'>Water</a></i> </span> <!-- expanded_from:[song:Water]:END --> Max     and I, late at night, contemplating the curious tale     of the talking elephants, and the endless search for    supplies of free drink...",
 
 		"Agroove": "they were the most literate band i ever knew-a porky prime cut",
 
@@ -599,7 +617,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -625,7 +645,7 @@
 
 		"catalog": "Glass 12041",
 
-		"media": 	"",
+		"media": "12er",
 
 		"country": 	"",
 
@@ -659,7 +679,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -685,7 +707,7 @@
 
 		"catalog": "Glass 043, 12043",
 
-		"media": "7', 12'",
+		"media": "7er, 12er",
 
 		"country": 	"",
 
@@ -707,7 +729,7 @@
 
 		"thanks": 	"",
 
-		"images": "/images/jungleback;;7' reverse$$/images/releases/human_12_back;;12' reverse",
+		"images": "/images/jungleback;;7er reverse$$/images/releases/human_12_back;;12er reverse",
 
 		"notes": 	"",
 
@@ -719,7 +741,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -745,7 +769,7 @@
 
 		"catalog": "HMMM001",
 
-		"media": "7'",
+		"media": "7er",
 
 		"country": 	"",
 
@@ -779,7 +803,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -799,13 +825,13 @@
 
 		"project": 	"",
 
-		"lookup": "uptoyou",
+		"lookup": "va_abstract",
 
 		"label": "Sweatbox",
 
 		"catalog": "SAM 005",
 
-		"media": "12'",
+		"media": "12er",
 
 		"country": 	"",
 
@@ -839,7 +865,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -891,7 +919,7 @@
 
 		"notes": "limited BigTime copies contain an extended <!-- BEG:expanded_from:[album:Conspiracy] --> <span class='release_title'><b><a href='/albums/conspiracy.html'>Conspiracy</a></b></span> <!-- expanded_from:[album:Conspiracy]:END --> LP.",
 
-		"patsez": "A Sri Lankan gentleman once sat down beside me in a bar     in Bremen, asked me to sign his copy of this record,     and then, even as I wrote messages of good luck and global     harmony, announced sternly 'This is a very...bad record.'     He was a berk, but he had a point.  Alan McGee and a number     of people in France, America and The Music Business have     called this one a 'classic album'.  People do, of course,     say much the same about 'Dark Side Of The Moon'.  Can     you hear my flesh creeping?  Germans, on the other hand,     despise it almost universally.     <p />     We were deeply confused young men when we made this record.     Max, Jones and I had all been drinking dangerously for     over a year now, and the poor bass player who replaced     David was finding it almost impossible to keep up with     our twisted thought patterns.  Do you like my bass playing?     That's me on <!-- BEG:expanded_from:[song:Buffalo Shame] --> <span class='song'> <i><a href='/lyrics/buffalo_shame.html'>Buffalo Shame</a></i> </span> <!-- expanded_from:[song:Buffalo Shame]:END -->, <!-- BEG:expanded_from:[song:South America] --> <span class='song'> <i><a href='/lyrics/south_america.html'>South America</a></i> </span> <!-- expanded_from:[song:South America]:END --> and a couple of others.     <p />     By now, effectively, Max and I had totally lost any sense     of quality control on my writing.  Tragic and sincere     or glib and ludicrous, we recorded EVERYTHING.  Sent     in to make demos for this l.p.  Max and I came out with     <!-- BEG:expanded_from:[album:Conspiracy] --> <span class='release_title'><b><a href='/albums/conspiracy.html'>Conspiracy</a></b></span> <!-- expanded_from:[album:Conspiracy]:END --> where we squandered a couple of great ideas that     this l.p. so badly needs.  <!-- BEG:expanded_from:[person:John A. Rivers] --> <span class='person'> <a href='/people/john_rivers.html'>John A. Rivers</a> </span> <!-- expanded_from:[person:John A. Rivers]:END --> you'll notice, has     bought a new reverb unit, a Lexicon, in fact.  He's also     taken to recording digitally.  The ensuing absurd gloss,     matched with an absence of native intelligence around     the bottom end, gives a lot of the songs a sound that     I dislike.  ON THE OTHER HAND, there's <!-- BEG:expanded_from:[song:Angels] --> <span class='song'> <i><a href='/lyrics/angels.html'>Angels</a></i> </span> <!-- expanded_from:[song:Angels]:END -->, <!-- BEG:expanded_from:[song:Falling In Love] --> <span class='song'> <i><a href='/lyrics/falling_in_love.html'>Falling In Love</a></i> </span> <!-- expanded_from:[song:Falling In Love]:END -->, <!-- BEG:expanded_from:[song:The New World] --> <span class='song'> <i><a href='/lyrics/the_new_world.html'>The New World</a></i> </span> <!-- expanded_from:[song:The New World]:END -->.     <p />     Still, in 1986 the best plan would be to buy the     <a href='angels.html'>12' single</a> and go see the band     in concert.  Generally, we had it down in concert.  In     just about every other department, however, we were coming     to bits, individually and collectively, and to me this     record actually shows the morbid state of things at the     time.  Not, of course, that we really noticed any of     this until months later, when, confronted by the realitied     of having been on an accidental two-year intercontinental     binge, we retired damaged, leaving the group in pieces.     Oh, and another thing about <b>Gentlefolk</b>... it's     pretentious too. ;;Pat Letter: 1993-08-30;;/letters/93Aug30/albums.html#dist;;1993-08-30",
+		"patsez": "A Sri Lankan gentleman once sat down beside me in a bar     in Bremen, asked me to sign his copy of this record,     and then, even as I wrote messages of good luck and global     harmony, announced sternly 'This is a very...bad record.'     He was a berk, but he had a point.  Alan McGee and a number     of people in France, America and The Music Business have     called this one a 'classic album'.  People do, of course,     say much the same about 'Dark Side Of The Moon'.  Can     you hear my flesh creeping?  Germans, on the other hand,     despise it almost universally.     <p />     We were deeply confused young men when we made this record.     Max, Jones and I had all been drinking dangerously for     over a year now, and the poor bass player who replaced     David was finding it almost impossible to keep up with     our twisted thought patterns.  Do you like my bass playing?     That's me on <!-- BEG:expanded_from:[song:Buffalo Shame] --> <span class='song'> <i><a href='/lyrics/buffalo_shame.html'>Buffalo Shame</a></i> </span> <!-- expanded_from:[song:Buffalo Shame]:END -->, <!-- BEG:expanded_from:[song:South America] --> <span class='song'> <i><a href='/lyrics/south_america.html'>South America</a></i> </span> <!-- expanded_from:[song:South America]:END --> and a couple of others.     <p />     By now, effectively, Max and I had totally lost any sense     of quality control on my writing.  Tragic and sincere     or glib and ludicrous, we recorded EVERYTHING.  Sent     in to make demos for this l.p.  Max and I came out with     <!-- BEG:expanded_from:[album:Conspiracy] --> <span class='release_title'><b><a href='/albums/conspiracy.html'>Conspiracy</a></b></span> <!-- expanded_from:[album:Conspiracy]:END --> where we squandered a couple of great ideas that     this l.p. so badly needs.  <!-- BEG:expanded_from:[person:John A. Rivers] --> <span class='person'> <a href='/people/john_rivers.html'>John A. Rivers</a> </span> <!-- expanded_from:[person:John A. Rivers]:END --> you'll notice, has     bought a new reverb unit, a Lexicon, in fact.  He's also     taken to recording digitally.  The ensuing absurd gloss,     matched with an absence of native intelligence around     the bottom end, gives a lot of the songs a sound that     I dislike.  ON THE OTHER HAND, there's <!-- BEG:expanded_from:[song:Angels] --> <span class='song'> <i><a href='/lyrics/angels.html'>Angels</a></i> </span> <!-- expanded_from:[song:Angels]:END -->, <!-- BEG:expanded_from:[song:Falling In Love] --> <span class='song'> <i><a href='/lyrics/falling_in_love.html'>Falling In Love</a></i> </span> <!-- expanded_from:[song:Falling In Love]:END -->, <!-- BEG:expanded_from:[song:The New World] --> <span class='song'> <i><a href='/lyrics/the_new_world.html'>The New World</a></i> </span> <!-- expanded_from:[song:The New World]:END -->.     <p />     Still, in 1986 the best plan would be to buy the     <a href='angels.html'>12er single</a> and go see the band     in concert.  Generally, we had it down in concert.  In     just about every other department, however, we were coming     to bits, individually and collectively, and to me this     record actually shows the morbid state of things at the     time.  Not, of course, that we really noticed any of     this until months later, when, confronted by the realitied     of having been on an accidental two-year intercontinental     binge, we retired damaged, leaving the group in pieces.     Oh, and another thing about <b>Gentlefolk</b>... it's     pretentious too. ;;Pat Letter: 1993-08-30;;/letters/93Aug30/albums.html#dist;;1993-08-30",
 
 		"CDring": 	"",
 
@@ -899,7 +927,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -933,13 +963,13 @@
 
 		"contribution": 	"",
 
-		"dtrecorded": 	"",
+		"dtrecorded": "Late 1983 -> Early 1986",
 
 		"studio": 	"",
 
 		"onalbum": 	"",
 
-		"liner": 	"",
+		"liner": "The Jazz Butcher first appeared in Bohemian London in 1983,     clutching a battered acoustic guitar called Lenin and     looking for a place to stay.  His origins remain unclear to     this day.  Some say that he swam to safety from the wreck of     doomed Liberian supertanker Gonzolo; others that he had been     planted by Speznaz to subject the English legal profession.     The most credible theory is that he had formerly been hiding     out in darkest rural Northamptonshire.. plotting.  What was     in his mind is only too blatantly set forth within the     grooves of this disc: A semi-literate pub-crawl through the     swamp of rock's rich tapestry, laced with self-destructive     recreational pursuits and maddened by the buzzing of a     thousand punk rock guitars.     Not that the sound of the Jazz Butcher and his Sikkorskis     from hell (for it is they that are likely to relate to your     scrambled transatlantic notions of what constitutes Le     Pernk).  Press him on the subject and he will sputter     through the special brew, 'of course we're a punk group -     because we do what we want to do' fair.  As they say,     enough.  To me, though, the Butcher's axe grinds somewhere     along the non-existent fusion between soul music and the     sort of dirty pop that failed to make the <a href='http://www.rocknroll.net/loureed/' target='new'>Velvet Underground</a>     famous.  Not that this would take into     account the skiffy suicide that constitutes <!-- BEG:expanded_from:[song:President Reagan's Birthday Present] --> <span class='song'> <i><a href='/lyrics/president_reagan.html'>President Reagan's Birthday Present</a></i> </span> <!-- expanded_from:[song:President Reagan's Birthday Present]:END -->,     or the bittersweet cushioning     that cradels the decidedly neurotic <!-- BEG:expanded_from:[song:Big Saturday] --> <span class='song'> <i><a href='/lyrics/big_saturday.html'>Big Saturday</a></i> </span> <!-- expanded_from:[song:Big Saturday]:END -->.     And Max Eider's <!-- BEG:expanded_from:[song:D.R.I.N.K.] --> <span class='song'> <i><a href='/lyrics/drink.html'>D.R.I.N.K.</a></i> </span> <!-- expanded_from:[song:D.R.I.N.K.]:END --> (dedicated to his hobby) is     another sack of potatoes altogether.  The Jazz Butcher and     his group are not in the business of belonging; they are too     old and too obstreperous to conform to some     attention-seeking image or commercially viable formula.     Rather, they bring their not inconsiderable talents to bear     on whatever happens to be in the way at the time.  The     results can only be described as essential.     <p />     <b>A message from the Jazz Butcher:</b>     Hey, America, I Slept With Your Wife ;;C. C. Dämmerung - Sinful Beat Magazine;;/people/von_dammerung.html",
 
 		"Agroove": 	"",
 
@@ -959,7 +989,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -985,7 +1017,7 @@
 
 		"catalog": "Glass 12046",
 
-		"media": 	"",
+		"media": "7er, 12er",
 
 		"country": 	"",
 
@@ -1001,9 +1033,9 @@
 
 		"liner": "For Fritzi, Puschi &amp; Sieglande.     <p /> <blockquote> 'There was a man who had a goat, <br />He loved that goat, Oh yes he did, <br />He loved that goat just like a kid' </blockquote>     <p />     Swap Murders! (it's the new thing)     Ester from Leichester made a big mistake.  This record is     all about love.  Don't let the psychic molestation syndrome     get to you.  This is our loudest record to date, which is     something to do with the elephants.  Thank you. Butch X.",
 
-		"Agroove": "(12': roundabout of romance-a porky prime cut) (7': This lobster will run and run...)",
+		"Agroove": "(12er: roundabout of romance-a porky prime cut) (7er: This lobster will run and run...)",
 
-		"Bgroove": "(12': hummer, hummer, hummer, hummer, hummer-a porky prime cut) (7': and run)",
+		"Bgroove": "(12er: hummer, hummer, hummer, hummer, hummer-a porky prime cut) (7er: and run)",
 
 		"thanks": 	"",
 
@@ -1019,7 +1051,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1079,7 +1113,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1139,7 +1175,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1189,7 +1227,7 @@
 
 		"images": "/images/releases/gift2_back$$/images/releases/gift2_inside",
 
-		"notes": "limited copies contain <!-- BEG:expanded_from:[single:Speedy Gonzalez] --> <span class='release_title'><b><a href='/albums/mayi.html'>Speedy Gonzalez</a></b></span> <!-- expanded_from:[single:Speedy Gonzalez]:END --> 7'",
+		"notes": "limited copies contain <!-- BEG:expanded_from:[single:Speedy Gonzalez] --> <span class='release_title'><b><a href='/albums/mayi.html'>Speedy Gonzalez</a></b></span> <!-- expanded_from:[single:Speedy Gonzalez]:END --> 7er",
 
 		"patsez": 	"",
 
@@ -1199,7 +1237,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1211,7 +1251,7 @@
 
 		"thumb": "/images/releases/mayi_a",
 
-		"blurb": "Chock full of acoustically and lively delivered cover tunes. Essential.",
+		"blurb": "Acoustically and lively delivered cover tunes. Essential.",
 
 		"dtreleased": "1987",
 
@@ -1225,7 +1265,7 @@
 
 		"catalog": "HMMM002",
 
-		"media": "7'",
+		"media": "7er",
 
 		"country": 	"",
 
@@ -1259,7 +1299,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1319,7 +1361,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1353,7 +1397,7 @@
 
 		"contribution": 	"",
 
-		"dtrecorded": "(Spooky: 1988-05) (Rest: 1988-06-05, Studio 13 CBC)",
+		"dtrecorded": "(Spooky: 1988-05, Greenhouse) (Rest: 1988-06-05, Studio 13 CBC)",
 
 		"studio": 	"",
 
@@ -1379,7 +1423,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1439,7 +1485,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1499,7 +1547,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1541,9 +1591,9 @@
 
 		"liner": "'<b>Basement</b>'; the word     smacks of oily concrete parking lots, hotel elevators and     bulky, bovine [spongiform] laundry baskets.  The     Basement; as far down as we go.     <p />     It oughtn't, by rights, to have had a garden.  Oh, the     initial impression was just right!  Seedy London     frontage; scrawled cardboard messages by the bell; a     dark, intricate descent through too many doors, perfect     underground T.V. squalor, beyond the mysteries of Edgar     Wallace late at night in black and white and what's that     sudden pain in the small of my back?     <p />     Once through that final door, things would take an     unexpected turn.  I'm entering the chamber now.  Whoa!     The jackal-headed dead!  Excellent!  Music and dancing     and improbable combinations of Czech beer and     Jalapeños!  Doors flung open to an ivied yard where     the randomly seditious lounge on cushions and hoot at the     stars and that singular man next door.  Sometimes friends     of friends would come by and take it for a nightclub.     But it wasn't a nightclub, it was a basement.     <p />     The big red bedford mobile nation state rolls on, and,     rolling, cannot stop.  Miles in darkness to the appointed     spot, deep wold evil dead killers wind shelter: beans,     bitburger and no such thing as noise reduction.  Mules in     the night, mantor and eggulos tremble at the head of the     board, waiting for the great infector to make with the     knife.  Stray Americans, stray steg, nice.     <p />     Dank!  teeth and hair fall out.  Fingernails keep     growing.  The pump is out, the night is dark, we're waiting for Mary.  Don't go out to the beer shack.  Those     jackal-headed dead could be on the lurk.  Voluptuously of     course, it looked like a farmhouse.  But it wasn't a     farmhouse, it was a basement.     ;;Karel Von Dämmerung, Wien;;;;1990",
 
-		"Agroove": 	"",
+		"Agroove": "boris is still digging the potatoes-a porky prime cut",
 
-		"Bgroove": 	"",
+		"Bgroove": "egguluos is now digging the potatoes-a porky prime sauteed cut",
 
 		"thanks": "Editing and Knife Work by Mantor, Cartography by Eggulos,     Analogue Provocateurs: Laurence and Mantor, Element of     Danger: Dave Francolini, Telecasters and Basement: Harry,     Justice and Security: Judge Malloy &amp; Mark Hatt, Agency:     Barry Campbell at A.B.S., Management: Philip Thain, The     Butcher's Publisher: Complete Music Limited.",
 
@@ -1559,7 +1609,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1619,7 +1671,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1645,7 +1699,7 @@
 
 		"catalog": "CRE083T",
 
-		"media": 	"",
+		"media": "12er",
 
 		"country": 	"",
 
@@ -1679,7 +1733,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1703,7 +1759,7 @@
 
 		"label": "creation_records, sky_records",
 
-		"catalog": 	"",
+		"catalog": "CRECD110, SKYCLAD 5080",
 
 		"media": "LP;CD",
 
@@ -1729,7 +1785,7 @@
 
 		"images": "/images/releases/blue_back$$/images/releases/blue_inside1$$/images/releases/blue_inside2$$",
 
-		"notes": "The Sky release has sides A&amp;B switched",
+		"notes": "The Sky (CD only) release has sides A&amp;B switched",
 
 		"patsez": "Four desperate men, all too desperate to notice how desperate     the others are, gather in a farmhouse with a queue of     lead guitarists stretching round the block.  For all     the pain and crap from which this record was made, the     actual sessions were a gigantic and wonderful party.     <p />     The songs are all long because we (Paul, Joe, Lix &amp; I)     just enjoyed the playing on the 'to-be-faded' bits so     much that it seemed a shame not to let everyone hear     them.  This was warmly received by The Outside World,     less popular among those who counted themselves JBC afficionados.     Well, I couldn't have written it any other way, and I     love that everyone plays on it, so I'm not in much of     a position to know why you don't care for it. All I can     say is that I'm still well pleased with it as a recording,     and as a piece of writing about a tough subject. I mean,     <b>I</b> hate 'divorce rock' too.  It wuz a tough assignment.     <p />     Go on, give the fucker another listen.  The songs may     not make you laugh, but the playing ought to give you     a few thrills. And, after all, I'm not in a band to make     money, or be a 'professional entertainer' - I'm in a band     because I like to play very loud electric guitar.  This     IS the sound of me having fun, and getting me to do that     in those dark days of mid-1991 was no small job.  (Can     anyone tell me how I *knew* that the French were going     to like '<!-- BEG:expanded_from:[song:Girls Say Yes] --> <span class='song'> <i><a href='/lyrics/girls_say_yes.html'>Girls Say Yes</a></i> </span> <!-- expanded_from:[song:Girls Say Yes]:END -->'?);;Pat Letter: 1993-08-30;;/letters/93Aug30/albums.html#blue;;1993-08-30$$",
 
@@ -1739,7 +1795,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1799,7 +1857,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1825,7 +1885,7 @@
 
 		"catalog": "7-5081-2",
 
-		"media": 	"",
+		"media": "CD",
 
 		"country": "USA",
 
@@ -1859,7 +1919,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1909,7 +1971,7 @@
 
 		"images": "/images/shirley_back$$/images/shirley_cd",
 
-		"notes": "(The liner self-dedication was not approved by Pat!)",
+		"notes": "(The sleeve self-dedication was not approved by Pat!)",
 
 		"patsez": 	"",
 
@@ -1919,7 +1981,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -1979,7 +2043,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2039,7 +2105,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2063,11 +2131,11 @@
 
 		"label": "creation_records",
 
-		"catalog": "PROC 1934",
+		"catalog": "PROC 1934 / SAMP 1934",
 
 		"media": 	"",
 
-		"country": "Australia",
+		"country": "Austria",
 
 		"credit": 	"",
 
@@ -2075,7 +2143,7 @@
 
 		"dtrecorded": 	"",
 
-		"studio": 	"",
+		"studio": "Woodhouse Studios, Leeds",
 
 		"onalbum": "bus",
 
@@ -2099,7 +2167,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2159,7 +2229,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2207,7 +2279,7 @@
 
 		"thanks": "<b>Thanks and respect</b> are extended to Frank Riley,     Peter McCulloch, Jennifer Blair, Jim Parker, Pam Cross,     Ellen and Suzanne at In-Press, Gareth Hardman, Steve     Cranwell, Sal Garza, J'Anna Jacobi, <a href='/gigs/search.html?f=performer&amp;q=Deirdre+O%27Donoghue'>Deirdre O'Donoghue</a>,     Kottie Lurie, <a href='http://davidwhittemore.com/htdb/gallery/joe.html'>Roadkill Joe</a>,     The Jersey Posse, <a href='/gigs/search.html?f=performer&amp;q=Lucien+Borderline'>Lucien Borderline</a>, Gillian Barclay,     Larry Collins, Conrad Sverkersson, Tom Peterson, Don     Chow, Douglas Long, Anne Kiener, Liz Garo, Cole Coonce,     Rob Zieger and the Seattle Crew, <a href='/gigs/search.html?f=performer&amp;q=Knight+Berman'>Knight Berman</a> and all     in Atlanta, Ligga and Meathook, Tony Brusdeilins, The     Elefanthaus Posse, Tony and <a href='/gigs/search.html?f=performer&amp;q=Joe+Foster'>Joe Foster</a>, Rex Sargeant,     Judge Curtis, The Walkabouts, LX Chilton, <a href='/gigs/search.html?f=act&amp;q=Downey+Mildew'>Downey Mildew</a>, D.     Elvis Parker, and the Scum.",
 
-		"images": "/images/western2",
+		"images": "/images/western2;;Tom Peterson",
 
 		"notes": 	"",
 
@@ -2219,7 +2291,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2279,7 +2353,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2299,7 +2375,7 @@
 
 		"project": 	"",
 
-		"lookup": "_16yr",
+		"lookup": "sixteen_years",
 
 		"label": "creation_records",
 
@@ -2339,7 +2415,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2399,7 +2477,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2459,7 +2539,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2519,7 +2601,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2531,9 +2615,9 @@
 
 		"thumb": "/images/glorious_front",
 
-		"blurb": "<div class='annotation'>The last thing anybody expected was a new Jazz Butcher album in the year 2000. But there is one, and it's just the sort of thing that you hardcore JBC listeners are going to enjoy. The record is called 'Glorious and Idiotic' and it is released on 26th January 2000 on ROIR.</div>",
+		"blurb": 	"",
 
-		"dtreleased": "2000",
+		"dtreleased": "2000-01-26",
 
 		"buy": "https://www.amazon.com/Glorious-Idiotic-Jazz-Butcher-Conspiracy/dp/B00004GJWC",
 
@@ -2543,7 +2627,7 @@
 
 		"label": "ROIR",
 
-		"catalog": "001",
+		"catalog": "RUSCD 8260",
 
 		"media": "CD",
 
@@ -2569,7 +2653,7 @@
 
 		"images": "/images/glorious_back",
 
-		"notes": 	"",
+		"notes": "Recorded live at Logo, Grindelallee, Freie and Hansestadt, Hamburg 26.Feb.1999. <a href='/gigs/1999/Feb26.html'>26Feb1999, Logo, Hamburg</a>",
 
 		"patsez": 	"",
 
@@ -2579,7 +2663,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2619,7 +2705,7 @@
 
 		"onalbum": 	"",
 
-		"liner": "Pat and I go back a long way.  I've always been a Butcher fan, although     it's no secret that there was a brief period when I would have liked     to have killed him, dismembered his body, buried the parts at the four     corners of the earth and visited each in turn to have a bit of a dance.     I felt sure he would have done the same for me.  <i>[Actually, I never entertained     these kind of thoughts about The Talented One, but now that he comes to     mention it, it does sound like a bit of a laugh - Ed.]</i>     <p />     But that was a long time ago.     We never quite cut the knot, and so it is - through a strange mixture of complicity,     happenstances, hard liquor and Vinyl Japan - that we cam to make this record.     We have nothing but good to say of Vinyl Japan, but I'm sure they won't mind     my pointing out that it's been made     on the cheap.  This involved Pat in becoming a bass player and virtual     drummer, among other things (leave it, Crouchy), and I had many happy visits     to Northampton NN1 to pursue conversations such as: 'Barrapadap.' 'What,     brapadap?' 'No, barrapadap.' 'Oh, barrapadap ... I see.'     <p />     Anyway, the main purpose of these notes is to give thanks and thanks are     primarily due to co-conspiratorial guitar player <!-- BEG:expanded_from:[person:Peter Crouch] --> <span class='person'> <a href='/people/peter_crouch.html'>Peter Crouch</a> </span> <!-- expanded_from:[person:Peter Crouch]:END -->, who owns the     house and a good deal of the queipment and patience that made this record     possible.  The other main conspirators are listed elsewhere on this sleeve.  Also     conniving were: Agent Russell Cooper; <!-- BEG:expanded_from:[person:Gabriel Turner] --> <span class='person'> <a href='/people/gabriel_turner.html'>Gabriel Turner</a> </span> <!-- expanded_from:[person:Gabriel Turner]:END --> (aka Inexxor); Ian Botterill (courtesy     of Fat Controller); <!-- BEG:expanded_from:[person:Curtis E. Johnson] --> <span class='person'> <a href='/people/curtis_johnson.html'>Curtis E. Johnson</a> </span> <!-- expanded_from:[person:Curtis E. Johnson]:END --> (we are not worthy);     Paul Taylor; Tetsuya Nakatani; John Whitfield and all at Vinyl Japan; and, unwittingly     but gratefully, the proprietors of the local boozer and off-license.  Little     Jake and Hobbu thank Richard Morris.  And then there's you, of course, assuming     that you've actually shelled out some of your hard-earned cash to listen to     this product of disgusted, disappointed, dissipated and rotten souls.     <div align='right'>     ;;Max Eider;;;;2000-04",
+		"liner": "Pat and I go back a long way.  I've always been a Butcher fan, although     it's no secret that there was a brief period when I would have liked     to have killed him, dismembered his body, buried the parts at the four     corners of the earth and visited each in turn to have a bit of a dance.     I felt sure he would have done the same for me.  <i>[Actually, I never entertained     these kind of thoughts about The Talented One, but now that he comes to     mention it, it does sound like a bit of a laugh - Ed.]</i>     <p />     But that was a long time ago.     We never quite cut the knot, and so it is - through a strange mixture of complicity,     happenstances, hard liquor and Vinyl Japan - that we cam to make this record.     We have nothing but good to say of Vinyl Japan, but I'm sure they won't mind     my pointing out that it's been made     on the cheap.  This involved Pat in becoming a bass player and virtual     drummer, among other things (leave it, Crouchy), and I had many happy visits     to Northampton NN1 to pursue conversations such as: 'Barrapadap.' 'What,     brapadap?' 'No, barrapadap.' 'Oh, barrapadap ... I see.'     <p />     Anyway, the main purpose of these notes is to give thanks and thanks are     primarily due to co-conspiratorial guitar player <!-- BEG:expanded_from:[person:Peter Crouch] --> <span class='person'> <a href='/people/peter_crouch.html'>Peter Crouch</a> </span> <!-- expanded_from:[person:Peter Crouch]:END -->, who owns the     house and a good deal of the queipment and patience that made this record     possible.  The other main conspirators are listed elsewhere on this sleeve.  Also     conniving were: Agent Russell Cooper; <!-- BEG:expanded_from:[person:Gabriel Turner] --> <span class='person'> <a href='/people/gabriel_turner.html'>Gabriel Turner</a> </span> <!-- expanded_from:[person:Gabriel Turner]:END --> (aka Inexxor); Ian Botterill (courtesy     of Fat Controller); <!-- BEG:expanded_from:[person:Curtis E. Johnson] --> <span class='person'> <a href='/people/curtis_johnson.html'>Curtis E. Johnson</a> </span> <!-- expanded_from:[person:Curtis E. Johnson]:END --> (we are not worthy);     Paul Taylor; Tetsuya Nakatani; John Whitfield and all at Vinyl Japan; and, unwittingly     but gratefully, the proprietors of the local boozer and off-license.  Little     Jake and Hobbu thank Richard Morris.  And then there's you, of course, assuming     that you've actually shelled out some of your hard-earned cash to listen to     this product of disgusted, disappointed, dissipated and rotten souls.     <div align='right'>     ;;Max Eider;;;;2000-04 </div>",
 
 		"Agroove": 	"",
 
@@ -2639,7 +2725,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2663,7 +2751,7 @@
 
 		"label": "Vinyl Japan",
 
-		"catalog": "ASKCD128",
+		"catalog": "ASKCD128/ASKLP128",
 
 		"media": 	"",
 
@@ -2699,7 +2787,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2759,7 +2849,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2795,7 +2887,7 @@
 
 		"dtrecorded": 	"",
 
-		"studio": 	"",
+		"studio": "Hall Place Studio, Leeds",
 
 		"onalbum": 	"",
 
@@ -2809,7 +2901,7 @@
 
 		"images": 	"",
 
-		"notes": 	"",
+		"notes": "Owen's contribution recorded by Oliver Hasse in Hamburg     Sonic's contribution recorded at New Atlantis in the UK     <p />     Mixed at Hall Place Studio by Richard Formby     <p />     Mastered by Eric James at the Philosophers Barn     <p />     All songs by Pat Fish except for Count Me Out, by Max Eider     <p />     Produced by Richard Formby",
 
 		"patsez": 	"",
 
@@ -2819,7 +2911,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": "/video/adventurers_pledge.mp4;;Pat &amp; Max;;;;2012-07-01;;To mark the 30th anniversary of the Jazz Butcher Conspiracy, Max Eider and Pat Fish are planning to record a new album with producer Richard Formby. After years of wandering, confused, through the digital wreckage of the record business, we have alighted upon this brilliant model for getting our music to those who want it most. So here we are, appealing to you to help us front up the necessary for the recording and manufacturing of that album. <p /> The record will draw on the best of Pat’s compositions since the recording of Rotten Soul back in 2000. Unlike that album, it will be made in a proper studio with the best producer we know. <p /> By pledging here you secure your copy of the album. Think of it as a kind of long-term pre-ordering system. We also have some interesting exclusives to offer, from a signed lyric sheet to Pat’s Fender El Rio guitar. Check out what’s on offer in the sidebar. <p /> If we’re lucky enough to attract more than our target amount, we shall be making a donation to the Citizens’ Advice Bureau. Anything else will go towards the setting up of a celebratory thirtieth anniversary tour. <p /> If we fail to reach our target, everybody gets their money back and we’ll go back to playing cribbage and dribbling into our beer as we struggle to recall our exact whereabouts. But let’s not think about that, eh? <p /> Please give generously."
 
 	} ,
 	{
@@ -2879,7 +2973,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2939,7 +3035,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -2951,7 +3049,7 @@
 
 		"thumb": "/images/sumo/sumosonic_spacemen_a",
 
-		"blurb": "<div class='annotation'>There is a limited-edition vinyl 12' single in the clubs, featuring the long version of Come, Friendly Spacemen alongside re-mixed by Tom Withers of drum n bass combo Override and Johnny Octopus of Octopus Records. The 'Sushi' mix is a full on, dark-hearted progressive house tune with an evil bass; the 'Jackson Hole' Mix is an insane collision between stadium pop and drum &amp; bass which has to be heard to be believed. The 12' will also feature Monks Of Kung Fu. Any DJ is urged to get in touch with Creation to get a copy.</div>",
+		"blurb": "<div class='annotation'>There is a limited-edition vinyl 12er single in the clubs, featuring the long version of Come, Friendly Spacemen alongside re-mixed by Tom Withers of drum n bass combo Override and Johnny Octopus of Octopus Records. The 'Sushi' mix is a full on, dark-hearted progressive house tune with an evil bass; the 'Jackson Hole' Mix is an insane collision between stadium pop and drum &amp; bass which has to be heard to be believed. The 12er will also feature Monks Of Kung Fu. Any DJ is urged to get in touch with Creation to get a copy.</div>",
 
 		"dtreleased": "1996-12-05",
 
@@ -2963,9 +3061,9 @@
 
 		"label": "creation_records",
 
-		"catalog": "CRES 242",
+		"catalog": "CTP242",
 
-		"media": "12'",
+		"media": "12er",
 
 		"country": 	"",
 
@@ -2999,19 +3097,21 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "dvd,live,project",
 
-		"href": 	"",
+		"href": "/albums/dvd_wilson_no_known_predators.html",
 
 		"title": "No Known Predators",
 
-		"thumb": 	"",
+		"thumb": "/images/releases/dvd_wilson_no_known_predators_front",
 
-		"blurb": "The Wilson DVD, entitled No Known Predators, is to be released on Friday 7th September 2012.",
+		"blurb": 	"",
 
 		"dtreleased": "2012-09-07",
 
@@ -3019,7 +3119,7 @@
 
 		"project": "wilson",
 
-		"lookup": 	"",
+		"lookup": "dvd_wilson_no_known_predators",
 
 		"label": 	"",
 
@@ -3039,7 +3139,7 @@
 
 		"onalbum": 	"",
 
-		"liner": 	"",
+		"liner": "Recorded live at The Picturedome, Northampton NN1, 15th August 2009. <p /> Warning:This film contains strong language, adult themes and scenes of human frailty.",
 
 		"Agroove": 	"",
 
@@ -3047,7 +3147,7 @@
 
 		"thanks": 	"",
 
-		"images": 	"",
+		"images": "/images/releases/dvd_wilson_no_known_predators_back$$/images/releases/dvd_wilson_no_known_predators_disc",
 
 		"notes": 	"",
 
@@ -3059,7 +3159,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -3085,7 +3187,7 @@
 
 		"catalog": "GLAEP 104",
 
-		"media": "LP",
+		"media": "12er",
 
 		"country": "UK",
 
@@ -3119,7 +3221,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -3127,7 +3231,7 @@
 
 		"href": "/albums/spooky12.html",
 
-		"title": "Spooky 12'",
+		"title": "Spooky 12er",
 
 		"thumb": "/images/releases/spooky_12_front",
 
@@ -3145,7 +3249,7 @@
 
 		"catalog": "CRE059T",
 
-		"media": "12'",
+		"media": "12er",
 
 		"country": 	"",
 
@@ -3179,7 +3283,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -3239,7 +3345,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -3299,13 +3407,15 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_bigtime_syndrome.html",
 
 		"title": "VA: The BigTime Syndrome",
 
@@ -3321,9 +3431,9 @@
 
 		"lookup": "va_bigtime_syndrome",
 
-		"label": 	"",
+		"label": "BigTime",
 
-		"catalog": 	"",
+		"catalog": "6050-1-B",
 
 		"media": 	"",
 
@@ -3359,7 +3469,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -3419,7 +3531,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -3479,13 +3593,15 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_gunfire.html",
 
 		"title": "VA: Gunfire &amp; Pianos",
 
@@ -3493,7 +3609,7 @@
 
 		"blurb": "The Jazz Butcher contribution subsequently appeared as an additional track on <!-- BEG:expanded_from:[album:The Gift of Music] --> <span class='release_title'><b><a href='/albums/gift1.html'>The Gift of Music</a></b></span> <!-- expanded_from:[album:The Gift of Music]:END -->.",
 
-		"dtreleased": "1986",
+		"dtreleased": "1985",
 
 		"buy": 	"",
 
@@ -3539,19 +3655,21 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_50k.html",
 
 		"title": "VA: 50,000 Glass Fans Can't Be Wrong",
 
 		"thumb": "/images/releases/va_50k_front",
 
-		"blurb": "Note: Limited edition on clear vinyl. The Jazz Butcher contribution subsequently appeared on the <!-- BEG:expanded_from:[album:Big Questions] --> <span class='release_title'><b><a href='/albums/gift2.html'>Big Questions</a></b></span> <!-- expanded_from:[album:Big Questions]:END --> LP/CD. Having said that, this album also includes an early studio version of '<!-- BEG:expanded_from:[song:Leaving It Up To You] --> <span class='song'> <i>Leaving It Up To You</i> <span class='song_author'>(John Cale)</span> </span> <!-- expanded_from:[song:Leaving It Up To You]:END -->' by <!-- BEG:expanded_from:[person:Max Eider] --> <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span> <!-- expanded_from:[person:Max Eider]:END --> with <!-- BEG:expanded_from:[person:Pat Fish] --> <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> <!-- expanded_from:[person:Pat Fish]:END --> on guitar as well as 'Fear (Is A Man's Best Friend)' by <!-- BEG:expanded_from:[person:David J.] --> <span class='person'> <a href='/people/david_j.html'>David J.</a> </span> <!-- expanded_from:[person:David J.]:END --> and a different version of '2:35' by Spacemen 3 amongst others.",
+		"blurb": 	"",
 
 		"dtreleased": "1986",
 
@@ -3589,7 +3707,7 @@
 
 		"images": 	"",
 
-		"notes": 	"",
+		"notes": "Note: Limited edition on clear vinyl. The Jazz Butcher contribution subsequently appeared on the <!-- BEG:expanded_from:[album:Big Questions] --> <span class='release_title'><b><a href='/albums/gift2.html'>Big Questions</a></b></span> <!-- expanded_from:[album:Big Questions]:END --> LP/CD. Having said that, this album also includes an early studio version of '<!-- BEG:expanded_from:[song:Leaving It Up To You] --> <span class='song'> <i>Leaving It Up To You</i> <span class='song_author'>(John Cale)</span> </span> <!-- expanded_from:[song:Leaving It Up To You]:END -->' by <!-- BEG:expanded_from:[person:Max Eider] --> <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span> <!-- expanded_from:[person:Max Eider]:END --> with <!-- BEG:expanded_from:[person:Pat Fish] --> <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> <!-- expanded_from:[person:Pat Fish]:END --> on guitar as well as 'Fear (Is A Man's Best Friend)' by <!-- BEG:expanded_from:[person:David J.] --> <span class='person'> <a href='/people/david_j.html'>David J.</a> </span> <!-- expanded_from:[person:David J.]:END --> and a different version of '2:35' by Spacemen 3 amongst others.",
 
 		"patsez": 	"",
 
@@ -3599,13 +3717,15 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_kids.html",
 
 		"title": "VA: Doing It For The Kids",
 
@@ -3613,7 +3733,7 @@
 
 		"blurb": 	"",
 
-		"dtreleased": "1988",
+		"dtreleased": "1988-08-08",
 
 		"buy": 	"",
 
@@ -3659,13 +3779,15 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_pensioners90.html",
 
 		"title": "VA: Pensioners On Ecstasy",
 
@@ -3673,7 +3795,7 @@
 
 		"blurb": 	"",
 
-		"dtreleased": "1990",
+		"dtreleased": "1990-11",
 
 		"buy": 	"",
 
@@ -3719,21 +3841,23 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_pensioners91.html",
 
 		"title": "VA: American Pensioners On Ecstasy",
 
 		"thumb": "/images/releases/va_pensioners91",
 
-		"blurb": "<div class='annotation'> Another track from that L.A. babe, <a href='/gigs/search.html?f=performer&amp;q=Deirdre+O%27Donoghue'>Deirdre O'Donoghue</a>'s radio show. </div>",
+		"blurb": 	"",
 
-		"dtreleased": "1991",
+		"dtreleased": "1991-04",
 
 		"buy": 	"",
 
@@ -3771,7 +3895,7 @@
 
 		"notes": 	"",
 
-		"patsez": 	"",
+		"patsez": "<div class='annotation'> Another track from that L.A. babe, <a href='/gigs/search.html?f=performer&amp;q=Deirdre+O%27Donoghue'>Deirdre O'Donoghue</a>'s radio show. </div>",
 
 		"CDring": 	"",
 
@@ -3779,7 +3903,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -3789,7 +3915,7 @@
 
 		"title": "VA: What A Nice Way To Turn Seventeen # 3",
 
-		"thumb": "/images/releases/va_seventeen_3_back;;Back",
+		"thumb": "/images/releases/va_seventeen_3_front;;Front",
 
 		"blurb": "Originally issued with the magazine 'What A Nice Way To Turn Seventeen' Issue 3. Publishing details, credits and brief biographies contained in the magazine. Assembled at Woodbine St. Recording Studios, Leamington Spa with thanks to John A. Rivers.",
 
@@ -3827,7 +3953,7 @@
 
 		"thanks": 	"",
 
-		"images": 	"",
+		"images": "/images/releases/va_seventeen_3_back;;Back$$/images/releases/va_seventeen_3_A$$/images/releases/va_seventeen_3_B",
 
 		"notes": 	"",
 
@@ -3839,19 +3965,21 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_summer.html",
 
 		"title": "VA: Songs For Summer",
 
 		"thumb": "/images/releases/va_summer",
 
-		"blurb": "<div class='annotation'> Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects. <p /> I contributed a track, recorded on Curtis' computer. It's a version of 'Indian Summer' as written by the Beat Happening, and recorded by Luna and Spectrum. </div>",
+		"blurb": 	"",
 
 		"dtreleased": "2000",
 
@@ -3861,9 +3989,9 @@
 
 		"lookup": "va_summer",
 
-		"label": 	"",
+		"label": "Oglio Records",
 
-		"catalog": 	"",
+		"catalog": "OGL86959-2",
 
 		"media": 	"",
 
@@ -3891,7 +4019,7 @@
 
 		"notes": 	"",
 
-		"patsez": 	"",
+		"patsez": "Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects. <p /> I contributed a track, recorded on Curtis' computer. It's a version of 'Indian Summer' as written by the Beat Happening, and recorded by Luna and Spectrum.",
 
 		"CDring": 	"",
 
@@ -3899,13 +4027,15 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_abus_126.html",
 
 		"title": "VA: Abus Dangereux #126",
 
@@ -3913,7 +4043,7 @@
 
 		"blurb": 	"",
 
-		"dtreleased": "2016",
+		"dtreleased": "2016-04",
 
 		"buy": 	"",
 
@@ -3921,11 +4051,11 @@
 
 		"lookup": "va_abus_126",
 
-		"label": 	"",
+		"label": "Abus Dangereux",
 
-		"catalog": 	"",
+		"catalog": "CD Abus 126",
 
-		"media": "CD",
+		"media": "CDR",
 
 		"country": "France",
 
@@ -3959,13 +4089,15 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_nh_underglass.html",
 
 		"title": "VA: Northampton Under Glass II",
 
@@ -3981,11 +4113,11 @@
 
 		"lookup": "va_nh_underglass",
 
-		"label": 	"",
+		"label": "White Elephant Records",
 
-		"catalog": 	"",
+		"catalog": "WER008",
 
-		"media": 	"",
+		"media": "CD",
 
 		"country": 	"",
 
@@ -4019,13 +4151,15 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_1000songs.html",
 
 		"title": "VA: 1000 Songs",
 
@@ -4033,7 +4167,7 @@
 
 		"blurb": "This release by the German newspaper 'Süddeutsche Zeitung' combines a book and a CD.",
 
-		"dtreleased": "1985",
+		"dtreleased": "2005",
 
 		"buy": 	"",
 
@@ -4079,13 +4213,15 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "single",
 
-		"href": 	"",
+		"href": "/albums/shock_drugs.html",
 
 		"title": "She's On Drugs",
 
@@ -4105,7 +4241,7 @@
 
 		"catalog": "SHOCK 4007",
 
-		"media": "7'",
+		"media": "7er",
 
 		"country": "Australia",
 
@@ -4139,7 +4275,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4165,7 +4303,7 @@
 
 		"catalog": "BTS 1806",
 
-		"media": "7'",
+		"media": "7er",
 
 		"country": "Australia",
 
@@ -4199,19 +4337,21 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/bigtime_sampler.html",
 
 		"title": "VA: A Big Time Sampler",
 
 		"thumb": "/images/releases/bigtime_sampler",
 
-		"blurb": "Also includes tracks from Love Tractor, The Pastels, and The Lucy Show",
+		"blurb": 	"",
 
 		"dtreleased": "1986",
 
@@ -4225,7 +4365,7 @@
 
 		"catalog": "BIGT 1",
 
-		"media": "7'",
+		"media": "7er",
 
 		"country": 	"",
 
@@ -4249,7 +4389,7 @@
 
 		"images": 	"",
 
-		"notes": 	"",
+		"notes": "Promotional 7er EP. Was included free in the initial pressing of 830 947-1, Hoodoo Gurus 'Blow Your Cool' LP. Hence reference to 830 947-1 on centre labels, along with 'Side 3-Free' and 'Side 4-Free'",
 
 		"patsez": 	"",
 
@@ -4259,7 +4399,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4285,7 +4427,7 @@
 
 		"catalog": "BTS 11",
 
-		"media": "7'",
+		"media": "7er",
 
 		"country": "Australia",
 
@@ -4297,7 +4439,7 @@
 
 		"studio": 	"",
 
-		"onalbum": 	"",
+		"onalbum": "dist",
 
 		"liner": 	"",
 
@@ -4319,7 +4461,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4343,7 +4487,7 @@
 
 		"label": "fire_records",
 
-		"catalog": 	"",
+		"catalog": "FIRECD460",
 
 		"media": "4xCD",
 
@@ -4367,7 +4511,7 @@
 
 		"thanks": 	"",
 
-		"images": 	"",
+		"images": "/images/releases/fire_wasted/JazzButcherGroupBW1$$/images/releases/fire_wasted/JazzButcherGroupBW2$$/images/releases/fire_wasted/jazzbutcher-600;;The Red Bus$$",
 
 		"notes": 	"",
 
@@ -4379,7 +4523,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4387,7 +4533,7 @@
 
 		"href": "/albums/spooky7.html",
 
-		"title": "Spooky 7'",
+		"title": "Spooky 7er",
 
 		"thumb": "/images/releases/spooky7_A",
 
@@ -4405,7 +4551,7 @@
 
 		"catalog": "CRE059",
 
-		"media": "7'",
+		"media": "7er",
 
 		"country": 	"",
 
@@ -4439,19 +4585,21 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
 		"type": "various",
 
-		"href": 	"",
+		"href": "/albums/va_creation_unreleased.html",
 
 		"title": "VA: Creation Unreleased",
 
 		"thumb": "/images/releases/va_creation_unreleased",
 
-		"blurb": "Note: The back cover mistakenly lists the Jazz Butcher track as 'President Gang'. The information printed on the CD itself is correct. This CD was a 'promotional only' issue.",
+		"blurb": 	"",
 
 		"dtreleased": "1995",
 
@@ -4489,7 +4637,7 @@
 
 		"images": 	"",
 
-		"notes": 	"",
+		"notes": "The Back Cover Mispells the Artist name on Track 6. It says 'THE JAZZ BUTHER'. Correctly, it Should say 'THE JAZZ BUTCHER' Song 'President Gang' (on back cover) instead of 'President Chang' (correct title, on CD label)",
 
 		"patsez": 	"",
 
@@ -4499,7 +4647,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4533,13 +4683,13 @@
 
 		"contribution": 	"",
 
-		"dtrecorded": 	"",
+		"dtrecorded": "1988-06-05",
 
 		"studio": 	"",
 
 		"onalbum": 	"",
 
-		"liner": 	"",
+		"liner": "Little known fact! The Jazz Butcher's fabulous Brave New Waves session is one of the only sessions that ever got an official release, as the b-side of an EP called Spooky in the late 80s. Now hopelessly out of print, the session gets new life as part of the Brave New Waves series from Artoffact Records. This release includes a never-heard bonus track, a download card with bonus interviews, and completely updated and revised artwork, partially modified from the original Spooky sleeve art.     <p />     Led by Oxford philosophy graduate Pat Fish (the Jazz Butcher himself) and featuring a dazzling array of co-conspirators (including David Jay of Love And Rockets and Bauhaus fame), The Jazz Butcher is one of the longest running and most cult pop bands in Britain, having recorded some 15 albums since its founding in 1982. The band was one of the gems on the Creation Records roster, and has recently seen an incredible reissue series on Fire Records.     <p />     The Jazz Butcher's Brave New Waves session was recorded on <a href='/gigs/1988/Jun5.html'>June 5th, 1988</a> in CBC Studio 13 in Montreal. The recording features cameos by both <a href='/gigs/search.html?f=performer&amp;q=Kevin+Komoda'>Kevin Komoda</a> (Rational Youth) and <a href='/gigs/search.html?f=performer&amp;q=Brent+Bambury'>Brent Bambury</a> (the Brave New Waves host). An over the top rendition of 'Sex Engine' includes a memorable dig at Skinny Puppy, as well as at other Canadian icons. The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.",
 
 		"Agroove": 	"",
 
@@ -4549,7 +4699,7 @@
 
 		"images": 	"",
 
-		"notes": "Little known fact! The Jazz Butcher's fabulous Brave New Waves session is one of the only sessions that ever got an official release, as the b-side of an EP called Spooky in the late 80s. Now hopelessly out of print, the session gets new life as part of the Brave New Waves series from Artoffact Records. This release includes a never-heard bonus track, a download card with bonus interviews, and completely updated and revised artwork, partially modified from the original Spooky sleeve art.     <p />     Led by Oxford philosophy graduate Pat Fish (the Jazz Butcher himself) and featuring a dazzling array of co-conspirators (including David Jay of Love And Rockets and Bauhaus fame), The Jazz Butcher is one of the longest running and most cult pop bands in Britain, having recorded some 15 albums since its founding in 1982. The band was one of the gems on the Creation Records roster, and has recently seen an incredible reissue series on Fire Records.     <p />     The Jazz Butcher's Brave New Waves session was recorded on <a href='/gigs/1988/Jun5.html'>June 5th, 1988</a> in CBC Studio 13 in Montreal. The recording features cameos by both <a href='/gigs/search.html?f=performer&amp;q=Kevin+Komoda'>Kevin Komoda</a> (Rational Youth) and <a href='/gigs/search.html?f=performer&amp;q=Brent+Bambury'>Brent Bambury</a> (the Brave New Waves host). An over the top rendition of 'Sex Engine' includes a memorable dig at Skinny Puppy, as well as at other Canadian icons. The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.",
+		"notes": 	"",
 
 		"patsez": 	"",
 
@@ -4559,7 +4709,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4619,7 +4771,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4679,7 +4833,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4729,7 +4885,7 @@
 
 		"images": "/images/releases/va_nationofsaints_back",
 
-		"notes": 	"",
+		"notes": "Not for sale or re sale. Issued only for promotional purposes with Dodgem Logic magazine, 1st issue.",
 
 		"patsez": 	"",
 
@@ -4739,7 +4895,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4799,7 +4957,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4859,7 +5019,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -4919,11 +5081,13 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
-		"type": "project",
+		"type": "project,CDR,demo",
 
 		"href": "/albums/wilson_demo_2005.html",
 
@@ -4977,13 +5141,15 @@
 
 		"bishopsez": 	"",
 
-		"audio": "/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3;;Buffalo Sniper$$/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3;;Police Chief",
+		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
-		"type": "project",
+		"type": "project,CDR,demo",
 
 		"href": "/albums/wilson_demo_2003.html",
 
@@ -5037,13 +5203,15 @@
 
 		"bishopsez": 	"",
 
-		"audio": "/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3;;Istanbul Connection$$/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3;;Quality People",
+		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
-		"type": "project",
+		"type": "project,CDR,demo",
 
 		"href": "/albums/wilson_demo_2002.html",
 
@@ -5097,9 +5265,11 @@
 
 		"bishopsez": 	"",
 
-		"audio": "/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3;;Quality People$$/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3;;Istanbul Connection$$/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3;;Hippy Shit$$/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3;;Play It All Night Long$$/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3;;Burn, Hollywood, Burn$$/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3;;Dark Agenda",
+		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -5111,7 +5281,7 @@
 
 		"thumb": "/images/releases/fire_violent",
 
-		"blurb": "Expansive book-styled package of the first four albums from The Jazz Butcher’s early Creation Records’ years – 1988-1991. <p /> Featuring the much praised ‘Fishcotheque’, ‘Big Planet, Scarey Planet’, ‘Cult Of The Basement’ and ‘Condition Blue”.",
+		"blurb": 	"",
 
 		"dtreleased": "2018-03-09",
 
@@ -5123,7 +5293,7 @@
 
 		"label": "fire_records",
 
-		"catalog": 	"",
+		"catalog": "FIRECD470",
 
 		"media": "4xCD",
 
@@ -5139,7 +5309,7 @@
 
 		"onalbum": 	"",
 
-		"liner": 	"",
+		"liner": "Expansive book-styled package of the first four albums from The Jazz Butcher's early Creation Records' years - 1988-1991. <p /> Featuring the much praised 'Fishcotheque', 'Big Planet, Scarey Planet', 'Cult Of The Basement' and 'Condition Blue'. <p /> A sonic journey that takes The Jazz Butcher from a Weather Prophets-propelled rock 'n' roll visionary through to a lean jazz-tinged pop exponent. <p /> Underlining the clever lyrics, witticisms, one-liners, melancholy, irony and conceptualisation of main man Pat Fish that came to maturity across his previous four albums for Glass (collected on Fire and much praised later last year as 'The Wasted Years').",
 
 		"Agroove": 	"",
 
@@ -5159,7 +5329,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -5183,7 +5355,7 @@
 
 		"label": "Tapete Records",
 
-		"catalog": 	"",
+		"catalog": "TR492",
 
 		"media": "CD/LP/digital",
 
@@ -5193,9 +5365,9 @@
 
 		"contribution": 	"",
 
-		"dtrecorded": 	"",
+		"dtrecorded": "2021 Summer",
 
-		"studio": 	"",
+		"studio": "Dulcitone, England",
 
 		"onalbum": 	"",
 
@@ -5219,7 +5391,9 @@
 
 		"audio": 	"",
 
-		"downloads": "/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_engl.pdf;;Tapete Press release (EN)$$/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_dt.pdf;;Tapete Press release (DE)"
+		"downloads": "/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_engl.pdf;;Tapete Press release (EN)$$/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_dt.pdf;;Tapete Press release (DE)",
+
+		"video": 	""
 
 	} ,
 	{
@@ -5243,7 +5417,7 @@
 
 		"label": "fire_records",
 
-		"catalog": 	"",
+		"catalog": "FIRECD565",
 
 		"media": "4xCD",
 
@@ -5279,7 +5453,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -5289,7 +5465,7 @@
 
 		"title": "Guest Pass Disc",
 
-		"thumb": "/images/releases/cdr_guestpass2000",
+		"thumb": "/images/releases/cdr_guestpass2000_front",
 
 		"blurb": "This was a limited edition CD made available to help fund the JBC tour across the US. <p /> Along with the CD you got an autographed photo and tickets to the JBC show of your choice. <p /> Although it is a 'home made' CDR, it was officially released by the JBC and would be pre-paid for pick-up at the show.",
 
@@ -5327,7 +5503,7 @@
 
 		"thanks": 	"",
 
-		"images": 	"",
+		"images": "/images/releases/cdr_guestpass2000_back",
 
 		"notes": 	"",
 
@@ -5339,7 +5515,9 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -5349,7 +5527,7 @@
 
 		"title": "VA: Now That's What I Call Northampton Vol #1",
 
-		"thumb": "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/2010_NowThatsWhatICallNorthamptonVol1",
+		"thumb": "/images/releases/va_nh_vol1_front",
 
 		"blurb": 	"",
 
@@ -5359,11 +5537,11 @@
 
 		"project": 	"",
 
-		"lookup": "va_nm_vol1",
+		"lookup": "va_nh_vol1",
 
-		"label": 	"",
+		"label": "Grass Roots Records",
 
-		"catalog": 	"",
+		"catalog": "NN1 1AA",
 
 		"media": "CD",
 
@@ -5371,7 +5549,7 @@
 
 		"credit": 	"",
 
-		"contribution": "[ mercy, wildlife ]",
+		"contribution": "[ mercy, all_the_saints, wildlife ]",
 
 		"dtrecorded": 	"",
 
@@ -5387,9 +5565,9 @@
 
 		"thanks": 	"",
 
-		"images": 	"",
+		"images": "/images/releases/va_nh_vol1_back",
 
-		"notes": 	"",
+		"notes": "CD's Limited to 1000 copies",
 
 		"patsez": 	"",
 
@@ -5397,9 +5575,11 @@
 
 		"bishopsez": 	"",
 
-		"audio": "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3;;Mercy;;Recorded by Curtis E. Johnson$$https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/WIldlife.mp3;;Wildlife;;Recorded by Curtis E. Johnson",
+		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -5409,7 +5589,7 @@
 
 		"title": "VA: Uncle Andy's Christmas CD (2007)",
 
-		"thumb": "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum",
+		"thumb": "/images/releases/va_uncle_andy_front",
 
 		"blurb": "We finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours",
 
@@ -5447,9 +5627,9 @@
 
 		"thanks": 	"",
 
-		"images": 	"",
+		"images": "/images/releases/va_uncle_andy_back",
 
-		"notes": "Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers. <p /> In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album.",
+		"notes": "Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers. <p /> In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album.;;Mark Cotton;;www.audiowrangler.co.uk;;2021-11-15 01:57:36",
 
 		"patsez": 	"",
 
@@ -5457,9 +5637,11 @@
 
 		"bishopsez": 	"",
 
-		"audio": "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3;;After Hours;;Recorded in December 2007 at Greenway Studio by Andy Clarke",
+		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
 
 	} ,
 	{
@@ -5485,7 +5667,7 @@
 
 		"catalog": "GLAMS004",
 
-		"media": "7'",
+		"media": "7er",
 
 		"country": 	"",
 
@@ -5519,7 +5701,195 @@
 
 		"audio": 	"",
 
-		"downloads": 	""
+		"downloads": 	"",
+
+		"video": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_patron_saints.html",
+
+		"title": "The Patron Saints of Teenage",
+
+		"thumb": "/images/releases/va_patron_saints_front",
+
+		"blurb": 	"",
+
+		"dtreleased": "1994",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_patron_saints",
+
+		"label": "creation_records",
+
+		"catalog": "WK 57562",
+
+		"media": "CD",
+
+		"country": 	"",
+
+		"credit": 	"",
+
+		"contribution": 	"",
+
+		"dtrecorded": 	"",
+
+		"studio": 	"",
+
+		"onalbum": 	"",
+
+		"liner": 	"",
+
+		"Agroove": 	"",
+
+		"Bgroove": 	"",
+
+		"thanks": 	"",
+
+		"images": "/images/releases/va_patron_saints_inner",
+
+		"notes": 	"",
+
+		"patsez": 	"",
+
+		"CDring": 	"",
+
+		"bishopsez": 	"",
+
+		"audio": 	"",
+
+		"downloads": 	"",
+
+		"video": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/marnie7.html",
+
+		"title": "Marnie 7er",
+
+		"thumb": "/images/releases/marnie_front",
+
+		"blurb": 	"",
+
+		"dtreleased": "1984",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "marnie7",
+
+		"label": "Glass",
+
+		"catalog": "033",
+
+		"media": "7er",
+
+		"country": 	"",
+
+		"credit": 	"",
+
+		"contribution": 	"",
+
+		"dtrecorded": 	"",
+
+		"studio": 	"",
+
+		"onalbum": "scandal",
+
+		"liner": 	"",
+
+		"Agroove": 	"",
+
+		"Bgroove": 	"",
+
+		"thanks": 	"",
+
+		"images": 	"",
+
+		"notes": "Jazz Butcher's 2nd Single with Original versions of Marnie &amp; Caroline Wheeler's Birthday Present. Both of which, later appeared re-recorded on the 'A Scandal &amp; Bohemia' album.",
+
+		"patsez": 	"",
+
+		"CDring": 	"",
+
+		"bishopsez": 	"",
+
+		"audio": 	"",
+
+		"downloads": 	"",
+
+		"video": 	""
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/trampling_tokyo.html",
+
+		"title": "Alan Moore – A Compilation Of Songs And Performances By Alan Moore And Friends",
+
+		"thumb": "/images/releases/trampling",
+
+		"blurb": 	"",
+
+		"dtreleased": "2011",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "trampling",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "CD",
+
+		"country": 	"",
+
+		"credit": 	"",
+
+		"contribution": "trampling_tokyo",
+
+		"dtrecorded": "1993 (Summer)",
+
+		"studio": "Far Heath, Northants",
+
+		"onalbum": 	"",
+
+		"liner": 	"",
+
+		"Agroove": 	"",
+
+		"Bgroove": 	"",
+
+		"thanks": 	"",
+
+		"images": 	"",
+
+		"notes": "The brilliant madness of Alan Moore meets the Sumosonic soul food of the ear courtesy of Pat Fish.  Kaiju Love song at it's best.",
+
+		"patsez": 	"",
+
+		"CDring": 	"",
+
+		"bishopsez": 	"",
+
+		"audio": 	"",
+
+		"downloads": 	"",
+
+		"video": "https://youtube.com/embed/KEUAtWXPstQ"
 
 	} 
 	]

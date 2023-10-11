@@ -22,7 +22,6 @@
 #define	projectsTab_beg
 	${begTab(Projects)}
 	${projects_beg}
-
 #define	projectsTab_end
 	${projects_end}
 	${endTab}
@@ -30,7 +29,6 @@
 #define	linksTab_beg
 	${begTab(Links)}
 	${links_beg}
-
 #define	linksTab_end
 	${links_end}
 	${endTab}
@@ -38,22 +36,56 @@
 #define	patTab_beg
 	${begTab(Pat Says)}
 	${patsays_beg}
-
 #define	patTab_end
 	${patsays_end}
 	${endTab}
 
-#define	mkPeopleHeader(title, bio, roles)
+#define	bioTab_beg
+	${begTab(Profile)}
+	<blockquote>
+#define	bioTab_end
+	</blockquote>
+	${endTab}
+
+#define	mkPeopleHeader(title, bio, roles, images, patsays, links, aka, projects)
 	${mkHeader(section=People, title=${title})}
+
 	${tag_beg} ${title} ${tag_end}
 	${beg_tabs}
 
 #live	if (defined(bio))
-	${begTab(Profile)}
-	<blockquote>
-	${bio}
-	</blockquote>
+# format: BODY;;credit;;crediturl;;date
+	${bioTab_beg}
+	${truncAt(;;, ${bio})}
+	${bioTab_end}
+#live	endif
+
+#live	if (defined(images))
+#live		if (define(_PX->images, ${images}))
+	${begTab(Gallery)}
+		<blockquote>
+			${parseImages(prefix=_PX, field=images)}
+		</blockquote>
 	${endTab}
+#live		endif
+#live	endif
+
+#live	if (defined(projects))
+	${projectsTab_beg}
+	${projects}
+	${projectsTab_end}
+#live	endif
+
+#live	if (defined(patsays))
+	${patTab_beg}
+	${patsays}
+	${patTab_end}
+#live	endif
+
+#live	if (defined(links))
+	${linksTab_beg}
+	${links}
+	${linksTab_end}
 #live	endif
 
 #live	if (!(getval(_global_title) = Pat Fish))
@@ -310,182 +342,121 @@ ${define(range[${z}]->end,)}
 #live	if (getval(page) = colin.html)
 	${mkPeopleHeader(title=Colin Harris,
 		roles=Drums on misc European and English live dates,
-		bio=${literalizeCommas(
-
-			<a href="${jbc_images}/egdebut.jpg">
-			<img alt="[image]"
-			SRC="${jbc_images}/egdebut_250.jpg"></a>
-			<br/>
-			Colin being abused by Karel.
-			<p>
-			${w_where} With ${dooj}.
-	)})}
-	${begTab(Projects)}
-	${projectsTab_beg}
-	Drums for ${eg}
-	${projectsTab_end}
-	${endTab}
-
+		projects=Black Eg,
+		images=/images/egdebut;;David Whittemore;;;;1994-06-01;;Colin\, being abused by Karel$$,
+		bio=${literalizeCommas( He's a drum machine, ok?)}
+	)}
 	${people_footer}
 #live	endif
 
 #define	alex_green.html
 #live	if (getval(page) = alex_green.html)
-	${mkPeopleHeader(title=Alex Green, bio=${literalizeCommas(
-
-		<a href="${jbc_images}/alex.jpg">
-		<img alt="[image]"
-		SRC="${jbc_images}/alex_250.jpg"></a>
-		<a href="${jbc_images}/19901111/1990Nov11_alex.jpg"><img
-			src="${jbc_images}/19901111/1990Nov11_alex_250.jpg"></a>
-		<p>
-		Alex has been a side-man since the very beginning,
-		providing saxophone for both albums and live performances.
-		${w_where} Cambridge, England with his cats and family.
-	)})}
-	${patTab_beg}
-	<a href="${jbc_letters}/93Aug30/band.html#alex">"Where is Butcher Band?"</a> (circa 1993)
-	${patTab_end}
+	${mkPeopleHeader(title=Alex Green,
+		images=${jbc_images}/alex;;David Whittemore$$${jbc_images}/19901111/1990Nov11_alex;;David Whittemore;;;;1990-11-11$$,
+		bio=${literalizeCommas(
+			Alex was a longtime side-man, providing saxophone for both albums and live performances.
+			Last known to be in Cambridge, England with his cats and family.
+		)},
+		patsays= <a href="${jbc_letters}/93Aug30/band.html#alex">"Where is Butcher Band?"</a> (circa 1993)
+	)}
 
 	${people_footer}
 #live	endif
 
 #define	alastair_indge.html
 #live	if (getval(page) = alastair_indge.html)
-	${mkPeopleHeader(title=Alastair Indge, roles=Vocals on ${monkey})}
-
-	${linksTab_beg}
-	${linkExternal(https://alastairindge.com/, Alastair Indge)}
-	${linksTab_end}
+	${mkPeopleHeader(title=Alastair Indge,
+		bio=${literalizeCommas(Longtime associate of Pat, photographer, etc)},
+		link=https://alastairindge.com,
+	)}
 
 	${people_footer}
 #live	endif
 
 #define	alex_lee.html
 #live	if (getval(page) = alex_lee.html)
-	${mkPeopleHeader(title=Alex Lee, bio=${literalizeCommas(
-
-		<a href="${jbc_images}/lix.jpg">
-		<img alt="[image]"
-		SRC="${jbc_images}/lix_250.jpg"></a>
-		<a href="${jbc_images}/alex_lee_plays.jpg">
-		<img alt="[image]"
-		SRC="${jbc_images}/alex_lee_plays_250.jpg"></a>
-	)})}
-	${projectsTab_beg}
-	${aero} .. ${strange}
-	(with ${jules}, John Langley, and ${joea})
-	${projectsTab_end}
-	${patTab_beg}
-	<a href="${jbc_letters}/93Aug30/band.html#lix">"Where is Butcher Band?"</a> (circa 1993)
-	${patTab_end}
-
+	${mkPeopleHeader(title=Alex Lee,
+		images=${jbc_images}/lix;;David Whittemore$$${jbc_images}/alex_lee_plays;;David Whittemore$$,
+		projects=${literalizeCommas(${aero} .. ${strange} (with ${jules}, John Langley, and ${joea}))},
+		patsays=<a href="${jbc_letters}/93Aug30/band.html#lix">"Where is Butcher Band?"</a> (circa 1993),
+	)}
 	${people_footer}
 #live	endif
 
 #define	alice_thompson.html
 #live	if (getval(page) = alice_thompson.html)
-	${mkPeopleHeader(title=Alice Thompson, , bio=${literalizeCommas(
-		<img src="/images/alice_thompson_2000.jpg" />
-		BIOGRAPHY
-		<p />
-		Alice Thompson grew up in Edinburgh and read English at Oxford University. She played keyboard with the band, The Woodentops, and is the author of four novels: Justine (1996), winner of the James Tait Black Memorial Prize (for fiction); Pandora's Box (1998); Pharos (2002): and The Falconer (2008).
-		<p />
-		She was formerly Writer in Residence for Shetland and in 2000, won a Creative Scotland Award. She teaches creative writing at the Arvon Foundation.
-		<p />
-		${g_source(g=UK Web Archive, u=https://www.webarchive.org.uk/wayback/archive/20100531232914/http://www.contemporarywriters.com/authors/?p=auth02D8K303612627402, d=2023-09-11)}
-	)})}
+	${mkPeopleHeader(title=Alice Thompson,
+		images=/images/alice_thompson_2000,
+		bio=${literalizeCommas(
+			BIOGRAPHY
+			<p />
+			Alice Thompson grew up in Edinburgh and read English at Oxford University. She played keyboard with the band, The Woodentops, and is the author of four novels: Justine (1996), winner of the James Tait Black Memorial Prize (for fiction); Pandora's Box (1998); Pharos (2002): and The Falconer (2008).
+			<p />
+			She was formerly Writer in Residence for Shetland and in 2000, won a Creative Scotland Award. She teaches creative writing at the Arvon Foundation.
+			;;UK Web Archive;;https://www.webarchive.org.uk/wayback/archive/20100531232914/http://www.contemporarywriters.com/authors/?p=auth02D8K303612627402;;2023-09-11
+		)}
+	)}
 	${people_footer}
 #live	endif
 
 #define	dave_henderson.html
 #live	if (getval(page) = dave_henderson.html)
-	${mkPeopleHeader(title=Dave Henderson, bio=${literalizeCommas(
-		<a href="/images/people/20180220_Barker_DaveHenderson.jpg"><img src="/images/people/20180220_Barker_DaveHenderson_500.jpg"></a>
-		<br/>
-		${hend} (left) with ${barker}.
-		${g_credit(g=${barker}, d=2018-02-20 10:53:00)}
-	)})}
+	${mkPeopleHeader(title=Dave Henderson,
+		images=/images/people/20180220_Barker_DaveHenderson;;Dave Barker;;;;2018-02-20 10:53:00;;Henderson (left) with Barker,
+	)}
 
 	${people_footer}
 #live	endif
 
 #define	david_j.html
 #live	if (getval(page) = david_j.html)
-	${mkPeopleHeader(title=David J.)}
-
-	${credits_end}
-	${projectsTab_beg}
-	${davidj} (his band), ${rocket}
-	${projectsTab_end}
-	${linksTab_beg}
-	${haus}..
-	${davidj}
-	${linksTab_end}
-	${patTab_beg}
-	<a href="${jbc_letters}/93Aug30/band.html#david">"Where is Butcher Band?"</a> (circa 1993)
-	${patTab_end}
+	${mkPeopleHeader(title=David J.,
+		projects=${literalizeCommas( ${davidj} (his band), ${rocket})},
+		links=${literalizeCommas( ${haus}..  ${davidj} )},
+		patsays= <a href="${jbc_letters}/93Aug30/band.html#david">"Where is Butcher Band?"</a> (circa 1993),
+	)}
 
 	${people_footer}
 #live	endif
 
 #define	david_whittemore.html
 #live	if (getval(page) = david_whittemore.html)
-	${mkPeopleHeader(title=David Whittemore, bio=${literalizeCommas(
-
-		<a href="${del_images}/mr2_big.gif"><img
-			alt="[image]"
-			src="${del_images}/domesticity/250/outside.jpg"></a>
-		${w_role} Photographer, Web-host & Archivist, Pseudo-engineer.
-	)})}
-
-	${projectsTab_beg}
-	<a href="${vergiftung}">Vergiftung</a>
-	..
-	<a href="http://www.adjective.com/htdb/volsteadact">The Volstead Act</a>
-	${projectsTab_end}
-	${linksTab_beg}
-	<a href="${del_root}">My Home Page</a>
-	${linksTab_end}
+	${mkPeopleHeader(title=David Whittemore,
+		bio=${literalizeCommas( Photographer, Web-host & Archivist, Pseudo-engineer.)},
+		projects=${literalizeCommas(
+			<a href="${vergiftung}">Vergiftung</a>
+			..
+			<a href="http://www.adjective.com/htdb/volsteadact">The Volstead Act</a>
+		)},
+		links=${literalizeCommas(
+			<a href="https://davidwhittemore.com">My vanity domain</a> ..  <a href="https://adjective.com">Parts of Speech</a>
+		)}
+	)}
 
 	${people_footer}
 #live	endif
 
 #define	dooj_wilkinson.html
 #live	if (getval(page) = dooj_wilkinson.html)
-	${mkPeopleHeader(title=Dooj Wilkinson, bio=${literalizeCommas(
-
-		<a href="${jbc_images}/19920426/M31-01_500.jpg"> <img alt="[image]" src="${jbc_images}/19920426/M31-01_500.jpg"></a>
-		${g_credit(g=Steve Bingham, u=http://www.flickr.com/photos/subpopstar/sets/72157626195728476)}
-		<p>
-		<a href="${jbc_images}/dooj.jpg"> <img alt="[image]" src="${jbc_images}/dooj_500.jpg"></a>
-		${g_credit(g=${del})}
+	${mkPeopleHeader(title=Dooj Wilkinson,
+		bio=${literalizeCommas(
 		${w_RIP} 2017-05-18
-	)})}
-	${patTab_beg}
-	<a href="${jbc_letters}/93Aug30/band.html#dooj">"Where is Butcher Band?"</a> (circa 1993)
-	${patTab_end}
+		)},
+		images=${jbc_images}/19920426/M31-01;;Steve Bingham;;http://www.flickr.com/photos/subpopstar/sets/72157626195728476$$${jbc_images}/dooj;;David Whittemore$$,
+		patsays= <a href="${jbc_letters}/93Aug30/band.html#dooj">"Where is Butcher Band?"</a> (circa 1993)
+	)}
 
 	${people_footer}
 #live	endif
 
 #define	felix_ray.html
 #live	if (getval(page) = felix_ray.html)
-	${mkPeopleHeader(title=Felix Ray, bio=${literalizeCommas(
-
-		<a href="${jbc_images}/felix_contrast1.jpg">
-		<img alt="[image]"
-			src="${jbc_images}/felix_contrast1_250.jpg"></a>
-		<a href="${jbc_images}/felix_contrast2.jpg">
-		<img alt="[image]"
-			src="${jbc_images}/felix_contrast2_250.jpg"></a>
-	)})}
-
-	${linksTab_beg}
-	${linkExternal(http://www.hrc.wmin.ac.uk/studentbios/graham_fudger.html, Westminster Student Page)}
-	..
-	${linkExternal(http://www.grahamfudger.co.uk/, Graham Fudger's Website)}
-	${linksTab_end}
+	${mkPeopleHeader(title=Felix Ray,
+		images=${jbc_images}/felix_contrast1$$${jbc_images}/felix_contrast2$$,
+		links=${linkExternal(http://www.hrc.wmin.ac.uk/studentbios/graham_fudger.html, Westminster Student Page)}
+		..
+		${linkExternal(http://www.grahamfudger.co.uk/, Graham Fudger's Website)}
+	)}
 	${people_footer}
 #live	endif
 

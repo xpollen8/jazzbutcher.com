@@ -31,8 +31,9 @@ const	LyricVideo = ({ video }: any) => {
 }
 
 const	LyricAudio = ({ mp3, foundon }: any) => {
+	// TODO - support multiple mp3$$mp3$$mp3 format
 	if (mp3) {
-		return <EmbedMedia data={{ mediaurl: mp3 }} />
+		return <EmbedMedia data={{ mediaurl: truncAt(';;', mp3) }} />
 	}
 	//return foundon?.filter((f: any) => f.media !== 'NULL')?.map((f: any) => <EmbedMedia data={{ mediaurl: f.media, lookup: f.lookup }} />)
 }

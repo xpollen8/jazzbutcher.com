@@ -555,19 +555,6 @@ const songLinkMapped = (title: string, doit?: boolean) => {
 	}
 }
 
-export const censorEmail = (str: string) => {
-	const deHTDB = str?.replace(/\[remove\].*/, '@') || '';
-	const [ addr, fqdn ] = deHTDB.split('@');
-	if (!fqdn) return deHTDB;
-	const parts = fqdn.split('.');
-	const top = parts.pop();
-	const domain = parts.join('.');
-	const blank = new Array(domain.length + Math.floor(Math.random() * 4)).join( '.' );
-	return addr + '@' + blank + '.' + top;
-}
-
-export const deHTDBifyText = (v?: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '@').replace(/\[at\]/g, '@') || '';
-
 export const parseCredit = (cr: string = '') => {
 	const [ credit, crediturl, creditdate, creditcaption ] = parseCaptionSourceEtc(cr) || [];
 	return {

@@ -1,37 +1,21 @@
-//"use server"
+"use server"
 
-import { localDate, censorEmail, deHTDBifyText, HashedType, RecordType, CommentType } from '@/lib/macros';
+import { localDate, HashedType, RecordType, CommentType } from '@/lib/macros';
 
 const cache: HashedType = {};
 
-/*
-import gigs from '@/../public/data/gigs.json';
-import presses from '@/../public/data/presses.json';
-import gigmedias from '@/../public/data/gigmedias.json';
-import gigtexts from '@/../public/data/gigtexts.json';
-import feedbacks from '@/../public/data/feedbacks.json';
-import performances from '@/../public/data/performances.json';
-import gigsongs from '@/../public/data/gigsongs.json';
-import releases from '@/../public/data/releases.json';
+const censorEmail = (str: string) => {
+	const [ addr, fqdn ] = str.split('@');
+	if (!fqdn) return str;
+	const parts = fqdn.split('.');
+	const top = parts.pop();
+	const domain = parts.join('.');
+	const blank = new Array(domain.length + Math.floor(Math.random() * 4)).join( '.' );
+	return addr + '@' + blank + '.' + top;
+}
 
-cache['gigs'] = gigs;
-cache['presses'] = presses;
-cache['gigmedias'] = gigmedias;
-cache['gigtexts'] = gigtexts;
-cache['feedbacks'] = feedbacks;
-cache['performances'] = performances;
-cache['gigsongs'] = gigsongs;
-cache['releases'] = releases;
-*/
+const deHTDBifyText = (v?: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '@').replace(/\[at\]/g, '@').replace(/\[remove\]/g, '@') || '';
 
-/*
-	TODO
-	we can automatically build up complex searchable
-	structures right here.
-	see how "gig" is attached to "performer" and "gigsong"
-	search results.
-	no reason this cannot be extended to press, etc.
- */
 const doFetch = async (url: string) => {
 	//console.log("FETCH", url);
 	if (cache[url]) {

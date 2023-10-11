@@ -17,9 +17,6 @@ import IconPress from '@/svg/IconPress';
 import IconInterview from '@/svg/IconInterview';
 //import IconPat from '@/svg/IconPat';
 
-//import * as Accordion from '@radix-ui/react-accordion';
-//import { ChevronDownIcon } from '@radix-ui/react-icons';
-
 export type RecordType = {
 	[key: string]: any;
 	matchedTerms?: string[];
@@ -559,18 +556,17 @@ const songLinkMapped = (title: string, doit?: boolean) => {
 }
 
 export const censorEmail = (str: string) => {
-	const deHTDB = str?.replace(/\[remove\].*/, '@');
-	const idx = deHTDB.indexOf('@') + 1;
-	const len = deHTDB.length;
-		//console.log("CENSOR", deHTDB, idx, (len - idx - 1));
-	if (idx >= 0 && (len - idx - 1) >= 0) {
-		return deHTDB[0] + deHTDB.substr(1, idx - 1) + Array(len - idx - 1).join('.') + deHTDB[len - 1];
-	}
-	return str;
+	const deHTDB = str?.replace(/\[remove\].*/, '@') || '';
+	const [ addr, fqdn ] = deHTDB.split('@');
+	if (!fqdn) return deHTDB;
+	const parts = fqdn.split('.');
+	const top = parts.pop();
+	const domain = parts.join('.');
+	const blank = new Array(domain.length + Math.floor(Math.random() * 4)).join( '.' );
+	return addr + '@' + blank + '.' + top;
 }
 
-export const deHTDBifyText = (v?: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/@/g, '[remove]').replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '[remove]') || '';
-
+export const deHTDBifyText = (v?: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '@').replace(/\[at\]/g, '@') || '';
 
 export const parseCredit = (cr: string = '') => {
 	const [ credit, crediturl, creditdate, creditcaption ] = parseCaptionSourceEtc(cr) || [];
@@ -585,7 +581,6 @@ export const parseCredit = (cr: string = '') => {
 const autoLink = songLinkMapped;
 
 const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
-
 
 export const parseCaptionSourceEtc = (str?: string, captionsLast?: boolean) => {
 	const parts = str?.split(';;')?.map((ch: string) => ch.length ? ch.replace('[remove]', '@') : undefined) || []
@@ -606,28 +601,6 @@ export const truncAt = (chop: string, str?: string) => {
 	return ret || str;
 }
 
-/*
-	V1 press.type values are comma-seperated lists like:
-	| interview,album |
-	| interview,gig   |
-	| kit             |
-	| kit,album       |
-	| pat             |
-	| pat,album       |
-	| pat,gig         |
-	| pat,gig,eg      |
-	| pat,gig,sumo    |
-	| pat,gig,wilson  |
-	| pat,kit         |
-	| pat,wilson      |
-	| retrospective   |
-	| sumo,album      |
-	| sumos,kit       |
-	| wilson,gig,kit  |
-	| wilson,kit      |
-
-	parsePressTypes simply splits into an array
- */
 export const parsePressTypes = (types?: string) => types?.split(';');
 
 export const parseMediaOrdinal = (ordinalS?: string) => {

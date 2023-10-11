@@ -76,8 +76,8 @@ const filterIsSet = (used: TypeFilterEntry[], name: string, value: string) => {
 	return false;
 }
 
-const FilterButton = (props: { field: string, display: string, setFiltersUsed: any, filtersUsed: TypeFilterEntry[] }) => {
-	const { field, display, setFiltersUsed, filtersUsed } = props;
+const FilterButton = (props: { field: string, display: string, filtersUsed: TypeFilterEntry[] }) => {
+	const { field, display, filtersUsed } = props;
 	const [ fieldName, fieldValue ] = field.split(':');
 	const [ isChecked, setIsChecked ] = useState(filterIsSet(filtersUsed, fieldName, fieldValue));
 	const router = useRouter();
@@ -99,7 +99,7 @@ const FilterButton = (props: { field: string, display: string, setFiltersUsed: a
 		}
 		setIsChecked(!isChecked);
 		setNav(newFilters);
-		setFiltersUsed(newFilters);
+		//setFiltersUsed(newFilters);
 	}
 	return <button name={fieldValue} className={`drop-shadow-sm px-3 m-2 border rounded-full text-xl ${isChecked ? 'bg-blue-300' : 'bg-slate-100'}`} onClick={changeFilter} >{display}</button>
 }

@@ -1,7 +1,6 @@
 "use client"
 
-import { useTransition, useState, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 import Link from 'next/link';
 
 import Header from '@/components/Header';
@@ -29,19 +28,23 @@ const LyricList = (props: { lyrics: any[] }) => {
 	</>)
 }
 
-const Lyrics = () => {
+const filters = [
+	 { field: "project:wilson", display: "Wilson" },
+	 { field: "project:sumosonic", display: "Sumosonic" },
+	 { field: "boolean:is_instrumental", display: "Instrumentals" },
+	 { field: "exists:tablature", display: "w/Tablature" },
+	 { field: "exists:video", display: "w/Video" },
+	 { field: "boolean:annotated", display: "w/Annotations" },
+]
+
+const Lyrics= (props: any) => {
 	const { data, isLoading, error } = useLyrics();
-	const [ filtersUsed, setFiltersUsed ] = useState(parseFilters(useSearchParams().get('filters') || '') || []);
+	const filtersUsed = parseFilters(props.searchParams?.filters || '') || [];
 
 	return (<>
 		<Header section='lyrics' />
 		<div className="listItem flex flex-wrap">
-			<FilterButton filtersUsed={filtersUsed} setFiltersUsed={setFiltersUsed} field="project:wilson" display="Wilson" />
-			<FilterButton filtersUsed={filtersUsed} setFiltersUsed={setFiltersUsed} field="project:sumosonic" display="Sumosonic" />
-			<FilterButton filtersUsed={filtersUsed} setFiltersUsed={setFiltersUsed} field="boolean:is_instrumental" display="Instrumentals" />
-			<FilterButton filtersUsed={filtersUsed} setFiltersUsed={setFiltersUsed} field="exists:tablature" display="w/Tablature" />
-			<FilterButton filtersUsed={filtersUsed} setFiltersUsed={setFiltersUsed} field="exists:video" display="w/Video" />
-			<FilterButton filtersUsed={filtersUsed} setFiltersUsed={setFiltersUsed} field="boolean:annotated" display="w/Annotations" />
+			{filters.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}
 		</div>
 		<Suspense fallback=<>Loading...</> >
 			{(!isLoading) && <LyricList lyrics={data?.results?.filter((lyric: any) => filterItemBy(lyric, filtersUsed))} />}

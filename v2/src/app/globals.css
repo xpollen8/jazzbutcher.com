@@ -693,6 +693,7 @@ details > summary::-webkit-details-marker {
 	margin-right: 2px;
 }
 .navTop:hover, .navTop:focus, .navTop:active {
+	aria-haspopup: true;
 	padding-right: 2px;
 	margin-right: 0px;
 }

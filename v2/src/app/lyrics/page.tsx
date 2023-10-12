@@ -43,12 +43,14 @@ const Lyrics= (props: any) => {
 
 	return (<>
 		<Header section='lyrics' />
-		<div className="listItem flex flex-wrap">
-			{filters.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}
-		</div>
-		<Suspense fallback=<>Loading...</> >
-			{(!isLoading) && <LyricList lyrics={data?.results?.filter((lyric: any) => filterItemBy(lyric, filtersUsed))} />}
-		</Suspense>
+		<main>
+			<div className="listItem flex flex-wrap">
+				{filters.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}
+			</div>
+			<Suspense fallback=<>Loading...</> >
+				{(!isLoading) && <LyricList lyrics={data?.results?.filter((lyric: any) => filterItemBy(lyric, filtersUsed))} />}
+			</Suspense>
+		</main>
 		<Footer />
 	</>);
 }

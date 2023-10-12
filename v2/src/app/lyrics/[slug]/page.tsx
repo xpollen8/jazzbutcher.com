@@ -152,9 +152,11 @@ const Lyric = ({ params }: { params?: any }) => {
 		{(!isLoading && song) && (() => {
 			return (<>
 				<Header project={song?.project} section="lyrics" title={song?.title} />
-				<Tag>{song?.title}</Tag>
-				{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon)}</div>)}
-				{FoundOn(song, foundon)}
+				<main>
+					<Tag>{song?.title}</Tag>
+					{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon)}</div>)}
+					{FoundOn(song, foundon)}
+				</main>
 			</>)
 		})()}
 		<Footer />

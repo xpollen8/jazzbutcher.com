@@ -15,18 +15,20 @@ const Conspirators = () => {
 	return (
 		<>
 		<Header section='conspirators' />
-		{people.filter((p: any) => !p.act ).sort(sortByLastName).map((props: any, key: number) => {
-			const letter = props.name.split(' ').pop().substr(0, 1);
-			let banner;
-			if (letter !== lastLetter) {
-				banner = <Tag>{letter}</Tag>;
-				lastLetter = letter;
-			}
-			return <div key={key}>
-				{banner}
-				<Link className="ml-5" href={`/conspirators/${props?.href || props.name}`}>{props.name}</Link>
-			</div>
-		})}
+		<main>
+			{people.filter((p: any) => !p.act ).sort(sortByLastName).map((props: any, key: number) => {
+				const letter = props.name.split(' ').pop().substr(0, 1);
+				let banner;
+				if (letter !== lastLetter) {
+					banner = <Tag>{letter}</Tag>;
+					lastLetter = letter;
+				}
+				return <div key={key}>
+					{banner}
+					<Link className="ml-5" href={`/conspirators/${props?.href || props.name}`}>{props.name}</Link>
+				</div>
+			})}
+		</main>
 		<Footer />
 		</>
 	)

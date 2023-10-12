@@ -599,6 +599,21 @@ export const parseMediaOrdinal = (ordinalS?: string) => {
 	};
 }
 
+export const imageThumb = (str?: string, width?: number = 250) => {
+	const getBase = (str?: string) => {
+		if (str?.match(/jpg/i) || str?.match(/jpeg/i)) {
+			const buh = str?.split('.');
+			const ext = buh.pop();
+			const base = buh.join('.');
+			return [ base, ext ];
+		} else {
+			return [ str, 'jpg' ];
+		}
+	}
+	const [ base, ext ] = getBase(str);
+	return 'https://jazzbutcher.com' + base + '_250.' + ext;
+}
+
 export const parseGigExtras = (extra?: string) => extra?.split(',') || [];
 
 export const parseProject = (extra: string) => ['wilson','sumo','eg','solo','duo','nopat'].find((e: string) => parseGigExtras(extra).includes(e)) || '';

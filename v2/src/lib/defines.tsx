@@ -10,8 +10,8 @@ const linkSearch = ({ name, text, act }:
 }) =>
 <>
 	{(() => {
-	if (act) return <Link href={`/gigs?f=alsowith&q=${name}`}>{(text) ? text : name}</Link>
-	return <Link href={`/gigs?f=performer&q=${name}`}>{(text) ? text : name}</Link>
+	if (act) return <Link href= {`/gigs?f=alsowith&q=${name}`}>{(text) ? text : name}</Link>
+	return <Link href= {`/gigs?f=performer&q=${name}`}>{(text) ? text : name}</Link>
 	})()}
 </>
 
@@ -19,7 +19,7 @@ const linkPerson = (props: { href: string, name: string }) => <span className="p
 const linkAlbum = (props: { title: string, href?: string }) =>
 <>
 {(props?.href) ?
-  <span className="release_title"><b><Link href={props?.href}>{props?.title}</Link></b></span>
+  <span className="release_title"><b><Link href= {props?.href}>{props?.title}</Link></b></span>
 	:
 	<span className="release_title"><b>{props?.title}</b></span>
 }
@@ -27,7 +27,7 @@ const linkAlbum = (props: { title: string, href?: string }) =>
 const linkSingle = (props: { title: string, href?: string }) =>
 <>
 {(props?.href) ?
-  <span className="release_title"><b><Link href={props?.href}>{props?.title}</Link></b></span>
+  <span className="release_title"><b><Link href= {props?.href}>{props?.title}</Link></b></span>
 	:
 	<span className="release_title"><b>{props?.title}</b></span>
 }
@@ -38,7 +38,7 @@ const linkSong = (props: { title?: string, href?: string, author?: string | Reac
   <span className='song'>
 	{(() => {
 		if (props?.title && props?.href) {
-			return <i>{' '}<Link href={props.href}>{props.title}</Link>{' '}</i>
+			return <i>{' '}<Link href= {props.href}>{props.title}</Link>{' '}</i>
 		} else if (props?.title) {
 			return <i>{' '}{props.title}{' '}</i>
 		}
@@ -66,7 +66,7 @@ export const tom_hall = linkInternal("/tomhall", "Tom Hall");
 export const colin = linkPerson({ href: "/conspirators/colin.html", name: "Colin Harris" });
 export const curt = linkPerson({ href: "/conspirators/curtis_johnson.html", name: "Curtis E. Johnson" });
 export const curt_eman = linkPerson({ href: "/conspirators/curtis_johnson.html", name: "E-Man" });
-export const damm = linkPerson({ href: "/conspirators/von_dammerung.html", name: "Von D&auml;mmerung" });
+export const damm = linkPerson({ href: "/conspirators/von_dammerung.html", name: "Von Dämmerung" });
 export const deirdre = linkSearch({ name: "Deirdre O'Donoghue" });
 export const del = linkPerson({ href: "/conspirators/david_whittemore.html", name: "David Whittemore" });
 export const dj = linkPerson({ href: "/conspirators/david_j.html", name: "David J." });
@@ -88,7 +88,7 @@ export const is = linkSearch({ name: "Ian Sturgess" });
 export const joby = linkSearch({ name: "Joby Palmer" });
 export const joe = 	linkSearch({ name: "Joe Foster" });
 export const tony = 	linkSearch({ name: "Tony Foster" });
-export const joe_woolley = linkSearch({ name: "Joe Woolley", act: "yes" });
+export const joe_woolley = linkSearch({ name: "Joe Woolley", act: true });
 export const joea = linkPerson({ href: "/conspirators/joe_allen.html", name: "Joe Allen" });
 export const joel_harries = linkPerson({ href: "/conspirators/joel_harries.html", name: "Joel Harries" });
 export const john_silver = 'John Silver';
@@ -164,7 +164,7 @@ export const vu = linkExternal("http://www.rocknroll.net/loureed/", "Velvet Unde
 export const richman = linkExternal("http://www.base.com/jonathan/jonathan.html", "Jonathan Richman");
 export const dronesclub = linkExternal("https://thedronesclub.co.uk/", "The Drones Club");
 export const space = linkExternal("http://www.spiritualized.com/", "Spacemen 3");
-export const aero = linkSearch({ name: "The Blue Aeroplanes", act: "yes" });
+export const aero = linkSearch({ name: "The Blue Aeroplanes", act: true });
 export const haus = linkExternal("http://www.partium.com/~andrewb/bauhaus/", "Bauhaus");
 export const tractors = linkExternal("http://www.geocities.com/Nashville/Stage/8818/favorite.htm", "Stranger Tractors");
 export const poi = linkExternal("http://www.poidogpondering.com/", "Poi Dog Pondering");
@@ -173,28 +173,28 @@ export const bwatch = linkExternal("http://www.theblackwatchmusic.com", "The Bla
 export const purelove = linkExternal("http://ourworld.compuserve.com/homepages/RobertFliegel/purelove.htm, Purelove");
 export const eg	= <Link href="https://adjective.com/htdb/eg">The Black Eg</Link>
 export const vergift = <Link href="https://adjective.com/vergiftung/site">Vergiftung</Link>
-export const cave = linkSearch({ name: "Nick Cave", act: "yes" });
+export const cave = linkSearch({ name: "Nick Cave", act: true });
 export const cvb = "Camper Van Beethoven";
 export const mbv = "My Bloody Valentine";
-export const 	tvamp = linkSearch({ name: "Transvision Vamp", act: "yes" });
-export const swynn = linkSearch({ name: "Steve Wynn", act: "yes" });
-export const bangles = linkSearch({ name: "The Bangles", act: "yes" });
+export const 	tvamp = linkSearch({ name: "Transvision Vamp", act: true });
+export const swynn = linkSearch({ name: "Steve Wynn", act: true });
+export const bangles = linkSearch({ name: "The Bangles", act: true });
 export const cale = linkExternal("http://john-cale.com", "John Cale");
-export const braind = linkSearch({ name: "Braindead Soundmachine", act: "yes" });
-export const eno = linkSearch({ name: "Brian Eno", act: "yes" });
-export const weather = linkSearch({ name: "Weather Prophets", act: "yes" });
-export const hitch = linkSearch({ name: "Robyn Hitchcock", act: "yes" });
-export const perfect = linkSearch({ name: "The Perfect Disaster", act: "yes" });
-export const spect = linkSearch({ name: "Spectrum", act: "yes" });
-export const belly = linkSearch({ name: "Belly", act: "yes" });
-export const tops = linkSearch({ name: "The Woodentops", act: "yes" });
-export const rocket = linkSearch({ name: "Love And Rockets", act: "yes" });
-export const scream = linkSearch({ name: "Primal Scream", act: "yes" });
-export const strange = linkSearch({ name: "Strangelove", act: "yes" });
-export const levit = linkSearch({ name: "Levitation", act: "yes" });
-export const kmfdm = linkSearch({ name: "KMFDM", act: "yes" });
-export const mildew = linkSearch({ name: "Downey Mildew", act: "yes" });
-export const star = linkSearch({ name: "Big Star", act: "yes" });
+export const braind = linkSearch({ name: "Braindead Soundmachine", act: true });
+export const eno = linkSearch({ name: "Brian Eno", act: true });
+export const weather = linkSearch({ name: "Weather Prophets", act: true });
+export const hitch = linkSearch({ name: "Robyn Hitchcock", act: true });
+export const perfect = linkSearch({ name: "The Perfect Disaster", act: true });
+export const spect = linkSearch({ name: "Spectrum", act: true });
+export const belly = linkSearch({ name: "Belly", act: true });
+export const tops = linkSearch({ name: "The Woodentops", act: true });
+export const rocket = linkSearch({ name: "Love And Rockets", act: true });
+export const scream = linkSearch({ name: "Primal Scream", act: true });
+export const strange = linkSearch({ name: "Strangelove", act: true });
+export const levit = linkSearch({ name: "Levitation", act: true });
+export const kmfdm = linkSearch({ name: "KMFDM", act: true });
+export const mildew = linkSearch({ name: "Downey Mildew", act: true });
+export const star = linkSearch({ name: "Big Star", act: true });
 //
 //	artwork
 //
@@ -683,13 +683,13 @@ export const AX = "Lounge Ax";
 export const METRO = "Cabaret Metro";
 export const CUBBY = "Cubby Bear";
 export const FIDDLER = 'Mean Fiddler';
-export const TOWER = <>Tower Records <Image width={126} height={57} alt="[logo]" src="https://jazzbutcher.com/images/tower.gif" /></>
+export const TOWER = <>Tower Records <Image width= {126} height={57} alt="[logo]" src="https://jazzbutcher.com/images/tower.gif" /></>
 export const KCRW = linkExternal("https://www.kcrw.org", "KCRW");
 export const KTBS = linkExternal("http://www.utexas.edu/students/kvrx", "KTBS");
-export const WNUR = linkExternal("http://www.wnur.org", <>WNUR<Image width={114} height={77} alt="[logo]" src="https://jazzbutcher.com/images/wnur.gif" /></>);
+export const WNUR = linkExternal("http://www.wnur.org", <>WNUR<Image width= {114} height={77} alt="[logo]" src="https://jazzbutcher.com/images/wnur.gif" /></>);
 export const WHPK = linkExternal("http://whpk.uchicago.edu", "WHPK");
-export const WXYC = linkExternal("http://www.wxyc.org", <>WXYC <Image width={129} height={56} alt="[logo]" src="https://jazzbutcher.com/images/wxyc.gif" /></>);
-export const CBC = <Image width={100} height={100} alt="[CBC]" src="https://jazzbutcher.com/images/cbc.gif" />
+export const WXYC = linkExternal("http://www.wxyc.org", <>WXYC <Image width= {129} height={56} alt="[logo]" src="https://jazzbutcher.com/images/wxyc.gif" /></>);
+export const CBC = <Image width= {100} height={100} alt="[CBC]" src="https://jazzbutcher.com/images/cbc.gif" />
 //
 //	bootlegging codes
 //
@@ -1137,10 +1137,186 @@ export const expand = (str?: string, treatAsHTML: boolean = false) => {
 		if (treatAsHTML) {
 			// if expansion worked, then just return the expansion.
 			// otherwise, assume we're passing back something that's already HTML
-			return (expanded) ? expansion : <span dangerouslySetInnerHTML={{ __html: expansion }} />;
+			return (expanded) ? expansion : <span dangerouslySetInnerHTML= {{ __html: expansion }} />;
 		} else {
 			return (expanded) ? expansion : str;
 		}
 	}
 	return doIt(str);
 }
+
+export const	people = [
+	{ lookup: "anita_allbright", name:"Anita Allbright" },
+	{ lookup: "astor", href: "peter_astor.html", name: "Peter Astor" },
+	{ lookup: "at", href: "alice_thompson.html", name: "Alice Thompson" },
+	{ lookup: "barker", href: "david_barker.html", name: "David E. Barker" },
+	{ lookup: "beirne", href: "pat_beirne.html", name: "Pat Beirne" },
+	{ lookup: "blair", name: "Blair MacDonald" },
+	{ lookup: "botty", href: "ian_botterill.html", name: "Ian Botterill" },
+	{ lookup: "botty_bman", href: "ian_botterill.html", name: "B-Man" },
+	{ lookup: "brent", name: "Brent Bambury" },
+	{ lookup: "burrell", name: "Tim Burrell" },
+	{ lookup: "butch", name: "The Butcher" },
+	{ lookup: "terry", name: "Terry Walpole", act: true },
+	{ lookup: "tom_hall", href: "/tomhall", name: "Tom Hall", act: true },
+	{ lookup: "colin", href: "colin.html", name: "Colin Harris", images: "/images/egdebut;;David Whittemore;;;;1994-06-01;;Colin, being abused by Karel$$" },
+	{ lookup: "curt", href: "curtis_johnson.html", name: "Curtis E. Johnson" },
+	{ lookup: "curt_eman", href: "curtis_johnson.html", name: "E-Man" },
+	{ lookup: "damm", href: "von_dammerung.html", name: "Von Dämmerung" },
+	{ lookup: "deirdre", name: "Deirdre O'Donoghue" },
+	{ lookup: "del", href: "david_whittemore.html", name: "David Whittemore" },
+	{ lookup: "dj", href: "david_j.html", name: "David J." },
+	{ lookup: "dooj", href: "dooj_wilkinson.html", name: "Dooj Wilkinson" },
+	{ lookup: "erol", name: "Erol Suleyman" },
+	{ lookup: "felce", name: "Dave Felce" },
+	{ lookup: "felix", href: "felix_ray.html", name: "Felix Ray" },
+	{ lookup: "gab", href: "gabriel_turner.html", name: "Gabriel Turner" },
+	{ lookup: "garofalo", href: "steve_garofalo.html", name: "Steve Garofalo" },
+	{ lookup: "gerard", name: "Gerard Langley" },
+	{ lookup: "gould", name: "Greenwood Goulding" },
+	{ lookup: "green", href: "alex_green.html", name: "Alex Green" },
+	{ lookup: "hask", href: "kevin_haskins.html", name: "Kevin Haskins" },
+	{ lookup: "hend", href: "dave_henderson.html", name: "Dave Henderson" },
+	{ lookup: "hook", name: "Paul Hookham" },
+	{ lookup: "iain", href: "iain_ohiggins.html", name: "Iain O'Higgins" },
+	{ lookup: "indge", href: "alastair_indge.html", name: "Alastair Indge" },
+	{ lookup: "is", name: "Ian Sturgess" },
+	{ lookup: "joby", name: "Joby Palmer" },
+	{ lookup: "joe", name:"Joe Foster" },
+	{ lookup: "tony", name:"Tony Foster" },
+	{ lookup: "joe_woolley", name: "Joe Woolley", act: true },
+	{ lookup: "joea", href: "joe_allen.html", name: "Joe Allen" },
+	{ lookup: "joel_harries", href: "joel_harries.html", name: "Joel Harries" },
+	{ lookup: "john_silver", name: "John Silver" },
+	{ lookup: "jonny_mattock", href: "jonny_mattock.html", name: "Jonny Mattock" },
+	{ lookup: "jules", href: "julian_poole.html", name: "Julian Poole" },
+	{ lookup: "karel", href: "/conspirator/von_dammerung.html", name: 'Karel Von Dämmerung' },
+	{ lookup: "kathie", href: "kathie_mcginty.html", name: "Kathie McGinty" },
+	{ lookup: "kathy", href: "kathy_schaer.html", name: "Kathy Schaer" },
+	{ lookup: "kathy_misery", href: "kathy_schaer.html", name: "Misery Wilson" },
+	{ lookup: "kevin", name: "Kevin Komoda" },
+	{ lookup: "kizzy", href: "kizzy_ocallaghan.html", name: "Kizzy O'Callaghan" },
+	{ lookup: "larry", href: "laurence_okeefe.html", name: "Laurence O'Keefe" },
+	{ lookup: "lb", href: "david_barker.html", name: "Lionel Brando" },
+	{ lookup: "lix", href: "alex_lee.html", name: "Alex Lee" },
+	{ lookup: "martin_k_daley", name: "Martin K Daley" },
+	{ lookup: "mark_hadley", href: "marc_hadley.html", name: "Mark Hadley" },
+	{ lookup: "ll", href: "marc_hadley.html", name: "Louis Leroi" },
+	{ lookup: "lohan", name: "Richard Lohan" },
+	{ lookup: "mark_refoy", href: "mark_refoy.html", name: "Mark Refoy" },
+	{ lookup: "max", href: "max_eider.html", name: "Max Eider" },
+	{ lookup: "max_read", name: "Max Read" },
+	{ lookup: "mercer", href: "https://www.mickmercer.com", name: "Mick Mercer" },
+	{ lookup: "mick", name: "Mick Packwood" },
+	{ lookup: "mike_novakovic", name: "Mike Novakovic" },
+	{ lookup: "mitch", href: "mitch_jenkins.html", name: "Mitch Jenkins" },
+	{ lookup: "emerson_hunt", href: "emerson_hunt.html", name: "Emerson Hunt" },
+	{ lookup: "morgan", href: "dave_morgan.html", name: "Dave Morgan" },
+	{ lookup: "nick", href: "nick_burson.html", name: "Nick Burson" },
+	{ lookup: "owen", href: "owen_jones.html", name: "Owen Jones" },
+	{ lookup: "pat", href: "https://patfish.com", name: "Pat Fish" },
+	//{ lookup: "pat_fish: person_pat,
+	//{ lookup: "duo: <>{pat}, {max}</>
+	//{ lookup: "solo: pat;
+	//{ lookup: "davidj: dj;
+	{ lookup: "pat_headstone", href: "https://patfish.com", name: "Wilson Headstone" },
+	{ lookup: "paul", href: "paul_mulreany.html", name: "Paul Mulreany" },
+	{ lookup: "pete", href: "peter_crouch.html", name: "Peter Crouch" },
+	{ lookup: "rev", href: "martin_stebbing.html", name: "Martin Stebbing", aka: "Rev. Botus Whiteblood Fleming" },
+	{ lookup: "richard", href: "richard_formby.html", name: "Richard Formby" },
+	{ lookup: "rivers", href: "john_rivers.html", name: "John A. Rivers" },
+	{ lookup: "rodney", href: "rodney_allen.html", name: "Rodney Allen" },
+	{ lookup: "rolo", href: "rolo_mcginty.html", name: "Rolo McGinty" },
+	{ lookup: "russ", href: "russell_cooper.html", name: "Russell Cooper" },
+	{ lookup: "russ_agent", href: "russell_cooper.html", name: "Agent Wilson" },
+	{ lookup: "simon", href: "simon_taylor.html", name: "Simon Taylor" },
+	{ lookup: "simon_mawby", name: "Simon Mawby" },
+	{ lookup: "sm", name: "Steve Musgrove" },
+	{ lookup: "sonic", href: "sonic_boom.html", name: "Sonic Boom" },
+	{ lookup: "steve", href: "steve_valentine.html", name: "Steve Valentine" },
+	{ lookup: "steve_beswick", href: "steve_beswick.html", name: "Steve Beswick" },
+	{ lookup: "steve_gordon", href: "steve_gordon.html", name: "Steve Gordon" },
+	{ lookup: "steve_gordon_gman", href: "steve_gordon.html", name: "G-Man" },
+	{ lookup: "stevenew", href: "steve_new.html", name: "Steve New" },
+	{ lookup: "sumishta", href: "sumishta_brahm.html", name: "Sumishta Brahm" },
+	{ lookup: "sumo_botty", href: "ian_botterill.html", name: "Mister B" },
+	{ lookup: "sumo_kathie", href: "kathie_mcginty.html", name: "Kathie M" },
+	{ lookup: "sumo_kathy", href: "kathy_schaer.html", name: "Special K" },
+	{ lookup: "sumo_pat", href: "https://patfish.com", name: "Headstone" },
+	{ lookup: "sumo_russ", href: "russell_cooper.html", name: "Agent Russell Cooper" },
+	{ lookup: "tim_harries", href: "tim_harries.html", name: "Tim Harries" },
+	{ lookup: "undertakers", name: "The Undertakers", act: true },
+	{ lookup: "wilson", href: "https://wilsondub.com", name: "Wilson", act: true },
+	{ lookup: "wolfi", href: "wolfgang_tschegg.html", name: "Wolfgang Tschegg" },
+
+//
+//	producers/engineers/soundmen/other
+//
+	{ lookup: "proctor", name: "Steve Proctor" },
+	{ lookup: "howy", href: "http://www.studiowizard.com/ht.html", name: "Howard Turner" },
+	{ lookup: "momus", href: "http://www.demon.co.uk/momus/", name: "Momus", act: true },
+	//{ lookup: "_4AD", href: "http://www.evo.org/eyesore.html", name: "4AD" },
+	{ lookup: "coonce", name: "Cole Coonce" },
+	{ lookup: "vu", href: "http://www.rocknroll.net/loureed/", name: "Velvet Underground", act: true },
+	{ lookup: "richman", href: "http://www.base.com/jonathan/jonathan.html", name: "Jonathan Richman", act: true },
+	{ lookup: "dronesclub", href: "https://thedronesclub.co.uk/", name: "The Drones Club", act: true },
+	{ lookup: "space", href: "http://www.spiritualized.com/", name: "Spacemen 3", act: true },
+	{ lookup: "aero", name: "The Blue Aeroplanes", act: true },
+	{ lookup: "haus", href: "http://www.partium.com/~andrewb/bauhaus/", name: "Bauhaus", act: true },
+	{ lookup: "tractors", href: "http://www.geocities.com/Nashville/Stage/8818/favorite.htm", name: "Stranger Tractors", act: true },
+	{ lookup: "poi", href: "http://www.poidogpondering.com/", name: "Poi Dog Pondering", act: true },
+	{ lookup: "bwatch", href: "http://www.theblackwatchmusic.com", name: "The Black Watch", act: true },
+	{ lookup: "purelove", href: "http://ourworld.compuserve.com/homepages/RobertFliegel/purelove.htm", name: "Purelove", act: true },
+	{ lookup: "eg", href: "https://adjective.com/htdb/eg", name: "The Black Eg", act: true },
+	{ lookup: "vergift", href: "https://adjective.com/vergiftung/site", name: "Vergiftung", act: true },
+	{ lookup: "cave", name: "Nick Cave", act: true },
+	{ lookup: "cvb", name: "Camper Van Beethoven", act: true },
+	{ lookup: "mbv", name: "My Bloody Valentine", act: true },
+	{ lookup: "tvamp", name: "Transvision Vamp", act: true },
+	{ lookup: "swynn", name: "Steve Wynn", act: true },
+	{ lookup: "bangles", name: "The Bangles", act: true },
+	{ lookup: "cale", href: "http://john-cale.com", name: "John Cale", act: true },
+	{ lookup: "braind", name: "Braindead Soundmachine", act: true },
+	{ lookup: "eno", name: "Brian Eno", act: true },
+	{ lookup: "weather", name: "Weather Prophets", act: true },
+	{ lookup: "hitch", name: "Robyn Hitchcock", act: true },
+	{ lookup: "perfect", name: "The Perfect Disaster", act: true },
+	{ lookup: "spect", name: "Spectrum", act: true },
+	{ lookup: "belly", name: "Belly", act: true },
+	{ lookup: "tops", name: "The Woodentops", act: true },
+	{ lookup: "rocket", name: "Love And Rockets", act: true },
+	{ lookup: "scream", name: "Primal Scream", act: true },
+	{ lookup: "strange", name: "Strangelove", act: true },
+	{ lookup: "levit", name: "Levitation", act: true },
+	{ lookup: "kmfdm", name: "KMFDM", act: true },
+	{ lookup: "mildew", name: "Downey Mildew", act: true },
+	{ lookup: "star", name: "Big Star", act: true },
+//
+//	artwork
+//
+	{ lookup: "dave_coverly", href: "https://www.speedbump.com/", name: "Dave Coverly" },
+	{ lookup: "lucien", name: "Lucien Borderline" },
+	{ lookup: "bd", name: "Ben Davis" },
+	{ lookup: "novak", name: "Alex Novak" },
+	{ lookup: "loony", name: "Pascal Legras" },
+//
+//	jbc-list people
+//
+]
+
+export const fans = [
+	{ lookup: "killer", name: "Joe Beaulieu" },
+	{ lookup: "nancy", name: "Nancy Everson" },
+	{ lookup: "woj", name: "The Woj" },
+	{ lookup: "matt", name: "Matt Cockerill" },
+	{ lookup: "rob", name: "Robert Jacob" },
+	{ lookup: "ed", name: "Ed Carter" },
+	{ lookup: "coop", name: "John Cooper" },
+	{ lookup: "frang", name: "Robert Frangooles" },
+	{ lookup: "syd", href: "http://www.sydmeats.co.uk", name: "Sydney Meats" },
+	{ lookup: "davison", name: "John Michael Davison" },
+	{ lookup: "camf", name: "Chris Camfield" },
+	{ lookup: "jdavies", name: "Jim Davies" },
+	{ lookup: "knight", name: "Knight Berman" },
+	{ lookup: "jimmy", href: "https://twitter.com/RealJamesDuval", name: "James Duval" },
+];

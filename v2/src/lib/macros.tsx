@@ -599,19 +599,25 @@ export const parseMediaOrdinal = (ordinalS?: string) => {
 	};
 }
 
-export const imageThumb = (str?: string, width?: number = 250) => {
-	const getBase = (str?: string) => {
-		if (str?.match(/jpg/i) || str?.match(/jpeg/i)) {
-			const buh = str?.split('.');
-			const ext = buh.pop();
-			const base = buh.join('.');
-			return [ base, ext ];
-		} else {
-			return [ str, 'jpg' ];
-		}
+const getImageBase = (str?: string) => {
+	if (str?.match(/jpg/i) || str?.match(/jpeg/i)) {
+		const buh = str?.split('.');
+		const ext = buh.pop();
+		const base = buh.join('.');
+		return [ base, ext ];
+	} else {
+		return [ str, 'jpg' ];
 	}
-	const [ base, ext ] = getBase(str);
-	return 'https://jazzbutcher.com' + base + '_250.' + ext;
+}
+
+export const imageThumb = (str?: string, width?: number = 250) => {
+	const [ base, ext ] = getImageBase(str);
+	return 'https://jazzbutcher.com' + base + '_' + width + '.' + ext;
+}
+
+export const imageFull = (str?: string) => {
+	const [ base, ext ] = getImageBase(str);
+	return 'https://jazzbutcher.com' + base + '.' + ext;
 }
 
 export const parseGigExtras = (extra?: string) => extra?.split(',') || [];

@@ -43,7 +43,10 @@ const music = [
 	{ text: 'Peter Astor',
 		aux: 'Fine & Dandy',
 		children: <EmbedMedia data={{ mediaurl: "https://youtube.com/embed/ipbl27KS68M" }} >
-		It’s always difficult to hear about an old companions passing; we shared a history together, sometimes close, many times not. But the loss ended up bigger than I’d imagined. There was a tribute show and without consciously intending to, a song came, as is often the way, stuff coming up from inside. 
+		It’s always difficult to hear about an old companions passing; we shared
+		a history together, sometimes close, many times not. But the loss ended up
+		bigger than I’d imagined. There was a tribute show and without consciously
+		intending to, a song came, as is often the way, stuff coming up from inside. 
 		<p />
 		I thought of him looking down on us from his version of heaven, and typically, telling us that all was well. 
 		<p />

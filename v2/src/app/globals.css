@@ -277,6 +277,7 @@ textplus1 {
 	border: 1px solid green;
 }
 .clickDiv {
+	background: rgb(245,248,250);
 	padding: 3px;
 	margin: 3px;
 	padding-left: 10px;

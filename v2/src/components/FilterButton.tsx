@@ -101,7 +101,7 @@ const FilterButton = (props: { field: string, display: string, filtersUsed: Type
 		setNav(newFilters);
 		//setFiltersUsed(newFilters);
 	}
-	return <button name={fieldValue} className={`drop-shadow-sm px-3 m-2 border rounded-full text-xl ${isChecked ? 'bg-blue-300' : 'bg-slate-100'}`} onClick={changeFilter} >{display}</button>
+	return <button name={fieldValue} className={`drop-shadow-sm px-3 m-2 hover:outline border rounded-full text-xl ${isChecked ? 'bg-blue-300' : 'bg-slate-100'}`} onClick={changeFilter} >{display}</button>
 }
 
 export default FilterButton;

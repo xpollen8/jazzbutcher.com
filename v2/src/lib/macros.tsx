@@ -610,7 +610,7 @@ const getImageBase = (str?: string) => {
 	}
 }
 
-export const imageThumb = (str?: string, width?: number = 250) => {
+export const imageThumb = (str?: string, width: number = 250) => {
 	const [ base, ext ] = getImageBase(str);
 	return 'https://jazzbutcher.com' + base + '_' + width + '.' + ext;
 }

@@ -14,7 +14,7 @@ import { Credit } from '@/components/GenericWeb';
 
 const PersonGallery = (props: { str?: string }) => {
 	const images = parseCaptionsSourcesEtc(props?.str);
-	return images?.map((img: str[], key: number) => {
+	return images?.map((img: any, key: number) => {
 		const [ src, credit, crediturl, creditdate, caption ] = img;
 		const useSrc = imageThumb(src);
 		return <div key={key} className="listItem w-64">

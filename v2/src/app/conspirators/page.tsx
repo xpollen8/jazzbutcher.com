@@ -11,11 +11,11 @@ const sortByLastName = (a: any, b: any) => {
 }
 
 const Conspirators = () => {
-	let lastLetter;
+	let lastLetter: string;
 	return (
 		<>
 		<Header section='conspirators' />
-		{people.filter((p: any) => !p.act ).sort(sortByLastName).map((props: { href: string, name: string }, key: number) => {
+		{people.filter((p: any) => !p.act ).sort(sortByLastName).map((props: any, key: number) => {
 			const letter = props.name.split(' ').pop().substr(0, 1);
 			let banner;
 			if (letter !== lastLetter) {

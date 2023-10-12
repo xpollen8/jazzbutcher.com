@@ -4,9 +4,9 @@ import { linkInternal, linkExternal } from './macros';
 
 const linkSearch = ({ name, text, act }:
 {
-	name: string;
-	text?: string;
-	act?: 'yes' | 'no';
+	name: string
+	text?: string
+	act?: boolean
 }) =>
 <>
 	{(() => {

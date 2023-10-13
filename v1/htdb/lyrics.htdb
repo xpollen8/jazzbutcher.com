@@ -544,8 +544,8 @@ ${jbc_footer}
 		The inevitable and inglorious consequences of ill-conceived short firm triumphalist capitalism considered at some length, and with no small amount of melancholy whining, as an enormous submarine beast humming a twelve bar and taking its time about it. Sincerity quotient high, reverbs lengthy.
 		;;Pat Letter: 1993-08-30;;/letters/93Aug30/love.html#station;;1993-08-30
 	)}
-
 	,mp3=${jbc_mp3}/angelstn.mp3
+	,caption=30 second snippet
 	)}
 #live	endif
 
@@ -1041,7 +1041,9 @@ The town in question is South Windsor, CT.
 		 A rap which originally appeared on the indisposible Fishcotheque L.P. This version, specifically aimed at Italian discotheques, was set down through a haze of paracetemol, codeine & Red Stripe Lager in defiance of the most apalling toothache known to mankind, May '88 model. My thanks to the revolting O'Higgins for some serious mix magick. Linguistic note: "Edgar Wallace" is surrealist rhyming slang for "serious."
 		;;<b>Spooky</b> liner notes;;/albums/spooky.html#best;;
 	)}
-	,mp3=${jbc_mp3}/bestway.mp3)}
+	,mp3=${jbc_mp3}/bestway.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	bicycle_kid.html
@@ -1569,7 +1571,9 @@ The town in question is South Windsor, CT.
 	)},
 		onlist=
 		dist .. drainglass .. fire_wasted
-	,mp3=${jbc_mp3}/danimal.mp3)}
+	,mp3=${jbc_mp3}/danimal.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	excellent.html
@@ -1914,7 +1918,9 @@ The town in question is South Windsor, CT.
 		Why does the modern simpleton assume that he's causing you a problem by killing you? Inter mortuos nil nisi bonum.
 		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#ghosts;;1993-08-30
 	)}
-	,mp3=${jbc_mp3}/ghosts.mp3)}
+	,mp3=${jbc_mp3}/ghosts.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	girl_go.html
@@ -2080,7 +2086,7 @@ The town in question is South Windsor, CT.
 	, patsez=${literalizeCommas(
 		I love this one.  It has TONE.
 	)}
-	,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Almost_Brooklyn.mp3)}
+	)}
 #live	endif
 
 #define	goldfish.html
@@ -2117,7 +2123,9 @@ The town in question is South Windsor, CT.
 	)},
 		onlist=
 		bacon .. gift1 .. marnie .. drainglass .. fire_wasted .. fire_cholmondley
-	,mp3=${jbc_mp3}/girlsfish.mp3)}
+	,mp3=${jbc_mp3}/girlsfish.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	grey_flannelette.html
@@ -2320,6 +2328,7 @@ The town in question is South Windsor, CT.
 		;;Pat Letter: 1994-09-13;;/letters/94Sep13/harlan.html;;1994-09-13
 	)}
 	,mp3=${jbc_mp3}/harlan.mp3
+	,caption=30 second snippet
 	)}
 #live	endif
 
@@ -2851,7 +2860,9 @@ The town in question is South Windsor, CT.
 		Across the steepes the rumour runs : she's still at it, and she must be stopped!
 		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#marnie;;
 	)}
-	,mp3=${jbc_mp3}/marnie.mp3)}
+	,mp3=${jbc_mp3}/marnie.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	mr_odd.html
@@ -3245,7 +3256,9 @@ The town in question is South Windsor, CT.
 		In the most desolate place in the world they are standing in large numbers. They are out there doing it now. As far as we can tell they have always been out there, miles from anywhere, in conditions that would hospitalise you or me in the course of an afternoon.
 		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#penguins;;
 	)}
-	,mp3=${jbc_mp3}/penguins.mp3)}
+	,mp3=${jbc_mp3}/penguins.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	peter_lorre.html
@@ -3311,7 +3324,9 @@ The town in question is South Windsor, CT.
 		He looks really cool. I was not fully sober when I first had the idea of writing about him. It's an imaginative thing; yeah, he was the bad guy, but imagine some scary-intrigue-casbah type picture where he was your pal. Yeah?
 		;;Pat Letter: 1994-09-13;;/letters/94Sep13/lorre.html;;1994-09-13
 	)}
-	,mp3=${jbc_mp3}/ptrlorre.mp3)}
+	,mp3=${jbc_mp3}/ptrlorre.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	pineapple_tuesday.html
@@ -3469,7 +3484,9 @@ The town in question is South Windsor, CT.
 		Wrestling with life in Post-Historical Universe, we cast around awhile among some of the more extreme options open to the modern voter. A photo appears in a magazine in Florida showing the Grand Wizard of the local chapter of the KKK in full drag: he is eighteen. A drawing appears in a British newspaper depicting John Major strangling Norman Lamont with his underpants. Can being The President's man help your self-esteem? Your sex life? Why worry about Home Affairs when you will have No Home? Why vote for the Lesser Evil?
 		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#chang;;1993-08-30
 	)}
-	,mp3=${jbc_mp3}/prschang.mp3)}
+	,mp3=${jbc_mp3}/prschang.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	racheland.html
@@ -3537,7 +3554,9 @@ The town in question is South Windsor, CT.
 	)},
 		onlist=
 		blue .. family .. fire_violent
-	,mp3=${jbc_mp3}/rachelnd.mp3)}
+	,mp3=${jbc_mp3}/rachelnd.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	real_men.html
@@ -3606,7 +3625,9 @@ The town in question is South Windsor, CT.
 		 Some things never change. Notice how they never sit together on buses?
 		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#men;;
 	)}
-	,mp3=${jbc_mp3}/realmen.mp3)}
+	,mp3=${jbc_mp3}/realmen.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	rosemary_davis.html
@@ -3654,7 +3675,9 @@ The town in question is South Windsor, CT.
 		We can go out the way we came in, but we had best go a bit more quietly. I think that chap in the baseball hat has nodded out.
 		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#david;;1993-08-30
 	)}
-	,mp3=${jbc_mp3}/rdavis.mp3)}
+	,mp3=${jbc_mp3}/rdavis.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	rumour.html
@@ -3944,7 +3967,9 @@ fade
 		Not, obviously enough, about the dear lady herself, more about a miserable rainy night in Camden and the extraordinary things that some people read these days. Remember, when somebody writes a "self-help" book that's exactly what they are doing: helping themselves. Flipper says "hi", by the way.
 		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#shirley;;
 	)}
-	,mp3=${jbc_mp3}/shirleym.mp3)}
+	,mp3=${jbc_mp3}/shirleym.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	sister_death.html
@@ -4137,7 +4162,9 @@ fade
 		Hope that clears things up.
 		;;Pat Fish email;;;;2003-02-24 08:45:31
 	)}
-		,mp3=${jbc_mp3}/sms.mp3)}
+		,mp3=${jbc_mp3}/sms.mp3
+		,caption=30 second snippet
+	)}
 #live	endif
 
 #define	soul_happy_hour.html
@@ -4277,7 +4304,9 @@ fade
 		Inspired by and dedicated - in part - to the Sweetwater Springs Saloon in Los Osos, California, a splendid rockin' redneck shed, which we heartily recommend to all pompous English whiteboy groups trying to "crack the market Stateside". If you're going to play Nick Cave, sooner or later you're going to hurt yourself; far better to stand in a giant refrigerator with six bottles of Jaegermeister and your crew.
 		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#sweet;;
 	)}
-	,mp3=${jbc_mp3}/sweetwtr.mp3)}
+	,mp3=${jbc_mp3}/sweetwtr.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	swell.html
@@ -4474,7 +4503,9 @@ fade
 	, patsez=${literalizeCommas(
 		because I wrote it there
 	)}
-	,mp3=${jbc_mp3}/vienna.mp3)}
+	,mp3=${jbc_mp3}/vienna.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	whaddya.html
@@ -4538,7 +4569,9 @@ fade
 		A true story. Whaddya want? A diagram?
 		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#whad;;1993-08-30
 	)}
-	,mp3=${jbc_mp3}/whaddya.mp3)}
+	,mp3=${jbc_mp3}/whaddya.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	whitfield.html
@@ -4638,7 +4671,9 @@ fade
 	)},
 		onlist=
 		dist .. glorious .. cake .. fire_wasted
-	,mp3=${jbc_mp3}/wholoves.mp3)}
+	,mp3=${jbc_mp3}/wholoves.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	zombie_love.html
@@ -4933,7 +4968,9 @@ G - G - C - D
 	tablature_credit=Keith Morris;;;;2010-01-08,
 		onlist=
 		dist .. drainglass .. cake .. fire_wasted
-	,mp3=${jbc_mp3}/nothspec.mp3)}
+	,mp3=${jbc_mp3}/nothspec.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	basement_theme.html
@@ -5082,8 +5119,6 @@ G - G - C - D
 	Buffalo shame (x3)
 
 	)},
-		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp3;;Curtis E. Johnson,
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp4,
 		onlist=
 		dist .. fire_wasted
 	)}
@@ -5133,7 +5168,9 @@ G - G - C - D
 	, patsez=${literalizeCommas(
 		The first song I ever wrote.  Shows, doesn't it?
 	)}
-	,mp3=${jbc_mp3}/samerica.mp3)}
+	,mp3=${jbc_mp3}/samerica.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	the_onion_field.html
@@ -5314,7 +5351,9 @@ G - G - C - D
 	)},
 		onlist=
 		runner .. gift1 .. nons .. drainglass .. glorious .. fire_cholmondley
-	,mp3=${jbc_mp3}/drink.mp3)}
+	,mp3=${jbc_mp3}/drink.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	human_jungle.html
@@ -5384,7 +5423,9 @@ G - G - C - D
 		The title comes from a rather noir little TV series from the early Sixties wherein the great Herbert Lom played the extremely sexy and not entirely unbrilliant Dr. Alexander Kordu, a psychiatrist with the handy ability to sort out even the most appalling cases within sixty minutes. I love that show, but I love touring better. By the way, anyone who makes suggestions about sex and travel is being extremely rude.
 		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#jungle;;
 	)}
-	,mp3=${jbc_mp3}/hjungle.mp3)}
+	,mp3=${jbc_mp3}/hjungle.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	holiday.html
@@ -6312,7 +6353,9 @@ I haven't got a mind at all.
 	)},
 		onlist=
 		conspir .. conspir12 .. gift2 .. cake .. fire_cholmondley
-	,mp3=${jbc_mp3}/bigwind.mp3)}
+	,mp3=${jbc_mp3}/bigwind.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	rebecca.html
@@ -6544,7 +6587,9 @@ I haven't got a mind at all.
 	)},
 		onlist=
 		gift2 .. va_abigail
-	,mp3=${jbc_mp3}/olafpalm.mp3)}
+	,mp3=${jbc_mp3}/olafpalm.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	nightmare_being.html
@@ -6698,7 +6743,9 @@ I haven't got a mind at all.
 		You've heard of the Bermuda Triangle? Well, Max has shares in it. Rain , recorded at the same session, concerns sex and the weather and the undoubted connection between the two. Incidentally, it didn't rain once during the three days we were in the studio!
 		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#rain;;
 	)}
-	,mp3=${jbc_mp3}/rain.mp3)}
+	,mp3=${jbc_mp3}/rain.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	snowy.html
@@ -6992,7 +7039,9 @@ I haven't got a mind at all.
 	)},
 		onlist=
 		rmen .. nons .. gift1 .. fire_cholmondley
-	,mp3=${jbc_mp3}/jbvpm.mp3)}
+	,mp3=${jbc_mp3}/jbvpm.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	hairbrush_and_tank.html
@@ -7037,7 +7086,9 @@ I haven't got a mind at all.
 	)},
 		onlist=
 		gift2 .. fire_cholmondley
-	,mp3=${jbc_mp3}/hbtank.mp3)}
+	,mp3=${jbc_mp3}/hbtank.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	almost_brooklyn.html
@@ -7076,7 +7127,8 @@ I haven't got a mind at all.
 	, patsez=${literalizeCommas(
 		for Kurt Ralske
 	)}
-	,mp3=${jbc_mp3}/almostbk.mp3)}
+	,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Almost_Brooklyn.mp3
+	)}
 #live	endif
 
 #define	lost_in_france.html
@@ -7228,6 +7280,7 @@ I haven't got a mind at all.
 		va_abus_21 .. lunch .. fire_cholmondley
 	,caption=Vodka Girls
 	,mp3=${jbc_mp3}/vodkagirls.mp3
+	,caption=30 second snippet
 	)}
 #live	endif
 
@@ -7486,7 +7539,9 @@ I haven't got a mind at all.
 	)},
 		onlist=
 		blue .. lunch .. fire_violent
-	,mp3=${jbc_mp3}/monkeyf.mp3)}
+	,mp3=${jbc_mp3}/monkeyf.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	shes_a_yo_yo.html
@@ -7535,7 +7590,9 @@ I haven't got a mind at all.
 		A sorry tale of bad people on bad diets doing bad things. Alex Lee gets to do his impressions of "Desert Storm" while Richard Formby goes backwards. Joe makes motorcycle and I still feel like the Elephant Man.
 		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#yo;;
 	)}
-	,mp3=${jbc_mp3}/yoyo.mp3)}
+	,mp3=${jbc_mp3}/yoyo.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	honey.html
@@ -7623,7 +7680,9 @@ I haven't got a mind at all.
 	"Gee Flip! Will you really let me hold it?"... Dolphins descended from cows... enraged Italian motorists... New Age psychobabble. All in 3 minutes 45 seconds.
 	;;Creation Promo Summary;;/press/95promo_illuminate.html#cute;;
 	)}
-	,mp3=${jbc_mp3}/cutesub.mp3)}
+	,mp3=${jbc_mp3}/cutesub.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	sixteen_years.html
@@ -7700,7 +7759,9 @@ I haven't got a mind at all.
 	Defly manoeuvring their way around a Leveller's song title, the JBC show up mob handed and do their collective nut on behalf of Clause Four. Nasty, Brutish & Short... The single.
 	;;Creation Promo Summary;;/press/95promo_illuminate.html#16;;
 	)}
-	,mp3=${jbc_mp3}/16years.mp3)}
+	,mp3=${jbc_mp3}/16years.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	great_elephants.html
@@ -7790,7 +7851,9 @@ I haven't got a mind at all.
 		It's always difficult to sing about real people, especially when they're famous. But fan records are cool.
 		;;Creation Promo Summary;;/press/95promo_illuminate.html#eno;;
 	)}
-	,mp3=${jbc_mp3}/enosings.mp3)}
+	,mp3=${jbc_mp3}/enosings.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	ugly_song.html
@@ -8242,7 +8305,9 @@ I haven't got a mind at all.
 		"One day Osiris will come & show a world of two legged apes what they can do: but they will never belong here. And they're gonna make a thousand points of light upon the earth, but you know the only light comes from the stars."
 		;;Creation Promo Summary;;/press/95promo_illuminate.html#land;;
 	)}
-	,mp3=${jbc_mp3}/land.mp3)}
+	,mp3=${jbc_mp3}/land.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	lulus_nightmare.html
@@ -8317,7 +8382,9 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 	)};;M.G.J.Jenkins@exeter.ac.uk;;;;1995-11-01 10:07:31
-	,mp3=${jbc_mp3}/lulu.mp3)}
+	,mp3=${jbc_mp3}/lulu.mp3
+	,caption=30 second snippet
+	)}
 #live	endif
 
 #define	surf_gear_in_idaho.html
@@ -9857,7 +9924,8 @@ Break out and find out tonight.
 	Hit him again, he's not quite done yet.
 
 	)},
-		mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3, caption=2005 demo,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp4,
+		mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3;;;;;;;;2005 Demo$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp3;;Curtis E. Johnson;;;;;;Backing Track,
 		onlist=wilson_demo_2005
 		,credits=${literalizeCommas(${pat}, ${botty}, ${curt})};;;;© Feb. 2003
 		)}

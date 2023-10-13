@@ -239,7 +239,7 @@ const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.thumb || release?.images) {
 		const images = parseCaptionsSourcesEtc(release?.images);
 		if (images?.length) {
-				return <ImageStrip className="float-right w-36 flex flex-wrap flex-grow border gap-2 justify-center drop-shadow-lg " images={images} width={150} />
+				return <ImageStrip style={{ padding: '2px', paddingRight: '0px' }} className="float-right outline outline-slate-400 w-40 mt-2 mr-2 flex flex-wrap flex-grow border gap-1 bg-slate-100 text-center justify-center drop-shadow-lg " images={images} width={200} />
 		}
 	}
 }

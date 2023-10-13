@@ -11,15 +11,15 @@ import InfoTag from '@/components/InfoTag';
 import FilterButton, { TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
 
 const filterOptions = [
-	{ field: "type:album", display: "Album" },
-	{ field: "type:dvd", display: "DVD" },
-	{ field: "type:CDR", display: "CDR" },
-	{ field: "type:demo", display: "Demo" },
-	{ field: "type:single", display: "Single" },
-	{ field: "type:compilation", display: "Compilation" },
-	{ field: "type:live", display: "Live" },
-	{ field: "type:EP", display: "EP" },
+	{ field: "type:album", display: "Albums" },
+	{ field: "type:single", display: "Singles" },
+	{ field: "type:compilation", display: "Compilations" },
 	{ field: "type:various", display: "Various" },
+	{ field: "type:EP", display: "EPs" },
+	{ field: "type:demo", display: "Demos" },
+	{ field: "type:live", display: "Live" },
+	{ field: "type:dvd", display: "DVDs" },
+	{ field: "type:CDR", display: "CDRs" },
 ];
 
 const	FilterReleases = ({ project, filters }: { project?: string, filters?: any }) => {

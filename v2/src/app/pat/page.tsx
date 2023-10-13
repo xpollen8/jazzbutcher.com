@@ -6,7 +6,6 @@ import SectionOptions from '@/components/SectionOptions';
 
 const sections = [
 	{ uri: '/facebook', text: "Facebook Activity", aux: "(IDEA: the best of posts from Facebook)" },
-	{ uri: '/interviews', text: "Interviews" },
 ];
 
 const Pat = () => 

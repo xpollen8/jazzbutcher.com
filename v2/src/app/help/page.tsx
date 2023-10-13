@@ -10,11 +10,11 @@ const Help = () => <>
 			Conspire with us!
 		</Tag>
 		<blockquote>
-			The JBC archives are actively seeking assistance to document the band&apos;s history.
+			The JBC archives are encouraging assistance in documenting the band&apos;s history.
 			<p />
 			We have long trawled the underbelly of the Internet looking for JBC memorabilia: gig posters,
 			ticket stubs, setlists, photos from concerts, bootlegs, gig reviews, etc.
-			We know there must be more such material &quot;out there&quot;, hidden away in attics, or
+			We know there is more such material &quot;out there&quot;, hidden in basements, or
 			already housed on hard drives.
 			<p />
 			Share with us what you have! You&apos;ll receive proper credit and your contribution
@@ -23,8 +23,8 @@ const Help = () => <>
 
 		<b>Contact us here:</b>
 		<blockquote>
-			Click the &quot;Add your own&quot; link in the Visitor Feedback section below.
-			Tell us what you have to share, and we&apos;ll get right back to you.
+			Click the &quot;speech bubble&quot; on the top right of the screen.
+			Describe what you have to share, and we&apos;ll get right back to you.
 		</blockquote>
 
 		<b>Contact us on github:</b>

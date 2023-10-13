@@ -2,7 +2,7 @@
 
 import Header from '@/components/Header';
 import FishySession from '@/components/FishySession';
-import LetterHeader from '@/components/LetterHeader';
+import Tag from '@/components/Tag';
 
 import { Navigation, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -62,7 +62,10 @@ const FishyMansions = () =>
 	<>
 		<Header section="fishy_mansions" />
 		<main>
-			<LetterHeader title="The Fishy Mansions Sessions" subhead="2020-2021" />
+			<Tag>
+				The Fishy Mansions Sessions <span className="smalltext">(2020-2021)</span>
+			</Tag>
+			<p />
 			<Swiper
 					style={{  height: '720px', border: '1px solid black', overflow: 'scroll' }}
 				modules={[Navigation, Scrollbar, ]}

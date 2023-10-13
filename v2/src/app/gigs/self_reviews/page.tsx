@@ -5,7 +5,7 @@ const Press = (props: any) => {
 	return (<>
 		<Header section='self_reviews' />
 		<main>
-			<FilterPresses title="Pat Reviews Some Gigs" filter={filterPressByTypePatGigReview} />
+			<FilterPresses filter={filterPressByTypePatGigReview} />
 		</main>
 	</>)
 }

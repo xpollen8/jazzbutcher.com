@@ -5,7 +5,7 @@ const AlbumReviews = (props: any) => {
 	return (<>
 		<Header section='album_reviews' />
 		<main>
-			<FilterPresses title='Album Reviews' showAlbum={true} filter={filterPressByTypeAlbumReview} />
+			<FilterPresses filter={filterPressByTypeAlbumReview} />
 		</main>
 	</>)
 }

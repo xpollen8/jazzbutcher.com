@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	font-size: calc(14px + (26 - 14) * ((100vw - 320px) / (2560 - 320)));
+}
+
 .date {
 	font-size: .9em;
 	color: #777;
+}
+
+label {
+	font-weight: bold;
+	font-size: 1.1em;
 }
 
 /// GALLERY
@@ -597,12 +606,12 @@ samp {
 }
 
 .imageStrip {
+	width: calc(200px + (500 - 50) * ((100vw - 320px) / (2560 - 320)));
 	float: right;
 	margin: 3px;
 	border: 1px solid #666;
 	background: white;
-	padding: 5px;
-	paddingBottom: 0px
+	padding: 3px;
 }
 
 body nav {

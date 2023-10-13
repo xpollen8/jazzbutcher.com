@@ -6,8 +6,7 @@ const Press = (props: any) => {
 	return (<>
 		<Header section='press' />
 		<main>
-			<SectionOptions section='press' />
-			<FilterPresses title="All Press" />
+			<FilterPresses />
 		</main>
 	</>)
 }

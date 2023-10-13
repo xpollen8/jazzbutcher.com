@@ -15,7 +15,7 @@ const Wilson = (props: any) =>
 		</MakeSimpleURI>
 		<FilterReleases project='wilson' filters={props.searchParams?.filters} />
 		<AudioReleases project='wilson' />
-		<FilterPresses title="Wilson Press" project='wilson' />
+		<FilterPresses project='wilson' />
 	</main>
 	<Footer />
 </>

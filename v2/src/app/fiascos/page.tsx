@@ -18,7 +18,7 @@ const IntroMax = ({ heading }: { heading: string }) =>
 	<div className='fiascoFixed'>
 		Date: Sun, 20 Sep 2020 16:06:12 +0100
 		<p>
-		----------------------------------------                                                                             
+		----------------------------------------
 		</p>
 
 		<p>
@@ -44,7 +44,7 @@ const IntroPat = ({ heading }: { heading: string }) =>
 	<div className="fiascoFixed">
 		Date: Fri, 25 Sep 2020 18:23:44 +0100
 		<p>
-		----------------------------------------                                                                             
+		----------------------------------------
 		</p>
 
 		<p>
@@ -90,9 +90,7 @@ const Fiasco1 = ({ heading }: { heading: string }) =>
 		<br/>&quot;The audience sings along to Tumbling Dice&quot;
 	</p>
 
-	<p>
 	<h3>Max&apos;s Story</h3>
-	</p>
 	<div className="fiascoBox">
 	<p>
 	OK, this one was my fault. And this was the one – an excursion eccentric even by 21st-century JBC standards – that set us off on the current project. And really that was Yasmeen’s fault.
@@ -978,9 +976,7 @@ const Fiasco10 = ({ heading }: { heading: string }) =>
 		Club 33, Zurich, <span className="release_title"><Link href="/gigs/1986/Nov27.html">27 November 1986</Link></span>
 			</p>
 
-		<p>
 			<h3>Max&apos;s Story</h3>
-		</p>
 
 			<div className="fiascoBox">
 			<p>
@@ -1081,32 +1077,34 @@ const Epilogue = ({ heading }: { heading: string }) =>
 const Fiascos = (): React.ReactNode =>
 <>
 		<Header section='fiascos' />
-		<Tag>
-			Top 10 JBC Fiascos - Published to Facebook, September, 2020
-		</Tag>
+		<main>
+			<Tag>
+				Top 10 JBC Fiascos - Published to Facebook, September, 2020
+			</Tag>
 
-		<div className="fiascoBox">
-			<video controls preload="none" poster="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/teaser_thumb.jpg">
-				<source src="http://assets.jazzbutcher.com/images/fiascos/teaser.mp4" type="video/mp4" />
-			</video>
-		</div>
+			<div className="fiascoBox">
+				<video controls preload="none" poster="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/teaser_thumb.jpg">
+					<source src="http://assets.jazzbutcher.com/images/fiascos/teaser.mp4" type="video/mp4" />
+				</video>
+			</div>
 
-		<IntroMax heading="Max&apos;s Introduction" />
-		<IntroPat heading="Pat&apos;s Introduction" />
-		<h3>The Fiascos</h3>
-		<div className="fiascoItem">
-			<Fiasco1 heading="The Fatwa"/>
-			<Fiasco2 heading="Marginal Europe – First Explorations on Planet Spain"/>
-			<Fiasco3 heading="The Imp of Groeningen – a cautionary tale"/>
-			<Fiasco4 heading="The hog roast"/>
-			<Fiasco5 heading="Curtains for Butchie"/>
-			<Fiasco6 heading="Pride comes before The Fall"/>
-			<Fiasco7 heading="Cake City"/>
-			<Fiasco8 heading="Two Go To The Highlands"/>
-			<Fiasco9 heading="Teatro Greco"/>
-			<Fiasco10 heading="Parting of the ways"/>
-		</div>
-		<Epilogue heading="Epilogue" />
+			<IntroMax heading="Max&apos;s Introduction" />
+			<IntroPat heading="Pat&apos;s Introduction" />
+			<h3>The Fiascos</h3>
+			<div className="fiascoItem">
+				<Fiasco1 heading="The Fatwa"/>
+				<Fiasco2 heading="Marginal Europe – First Explorations on Planet Spain"/>
+				<Fiasco3 heading="The Imp of Groeningen – a cautionary tale"/>
+				<Fiasco4 heading="The hog roast"/>
+				<Fiasco5 heading="Curtains for Butchie"/>
+				<Fiasco6 heading="Pride comes before The Fall"/>
+				<Fiasco7 heading="Cake City"/>
+				<Fiasco8 heading="Two Go To The Highlands"/>
+				<Fiasco9 heading="Teatro Greco"/>
+				<Fiasco10 heading="Parting of the ways"/>
+			</div>
+			<Epilogue heading="Epilogue" />
+		</main>
 		<Footer />
 	</>
 

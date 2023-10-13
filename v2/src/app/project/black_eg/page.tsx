@@ -23,7 +23,7 @@ const EgAudio = (props: any) =>
 			<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheBlackEg/BlackEg_KevinCarroll_Ostrava Girls.mp3", song: "Ostrava Girls", mediacredit: "Kevin Carroll", mediacreditdate: "2018-08-31" }} />
 			<EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheBlackEg/BlackEg_KevinCarroll_Indianapolis 500.mp3", song: "Indianapolis 500", mediacredit: "Kevin Carroll", mediacreditdate: "2018-08-31" }} />
 		<p />
-		<FilterPresses title="Black Eg Press" project="eg" />
+		<FilterPresses project="eg" />
 	</main>
 	<Footer />
 </>

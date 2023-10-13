@@ -917,7 +917,7 @@
 #define	jbc_images		/images
 #define	jbc_mad_images	/images/mad
 #define	jbc_mp3			${jbc_audio}/mp3
-#define	jbc_root		
+#define	jbc_root		https://jazzbutcher.com
 #define	jbc_video		${jbc_root}/video
 #define	jbc_audio		${jbc_root}/audio
 #define	jbc_mad			${jbc_root}/mad

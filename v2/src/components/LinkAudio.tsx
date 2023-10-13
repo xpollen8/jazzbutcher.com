@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { truncAt, autoLink, linkExternal } from '@/lib/macros';
 import useRelease from '@/lib/useRelease';
 
-const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comment, wav, mp3, url, artist, author, autolink = true, children }: {
+const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comment, wav, mp3, url, artist, author, autolink = false, children }: {
 	title: string
 	lookup?: string
 	version?: string

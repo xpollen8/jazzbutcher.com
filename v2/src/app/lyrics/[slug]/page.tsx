@@ -7,7 +7,7 @@ import Tag from '@/components/Tag';
 import ImageStrip from '@/components/ImageStrip';
 import EmbedMedia from '@/components/EmbedMedia';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
-import { Credit, Attribution } from '@/components/GenericWeb';
+import { removeHTML, Credit, Attribution } from '@/components/GenericWeb';
 import useLyric from '@/lib/useLyric';
 import { parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/macros';
 
@@ -30,10 +30,10 @@ const	LyricVideo = ({ video }: any) => {
 	</div>;
 }
 
-const	LyricAudio = ({ mp3, foundon }: any) => {
-	// TODO - support multiple mp3$$mp3$$mp3 format
+const	LyricAudio = ({ mp3, caption }: any) => {
 	if (mp3) {
-		return <EmbedMedia data={{ mediaurl: truncAt(';;', mp3) }} />
+		const [ mediaurl, mediacredit, mediacrediturl, mediacreditdate, media_caption ] = parseCaptionsSourcesEtc(mp3)[0] || [];
+		return <EmbedMedia data={{ mediaurl, title: media_caption || removeHTML(caption), mediacredit, mediacrediturl, mediacreditdate }} />
 	}
 	//return foundon?.filter((f: any) => f.media !== 'NULL')?.map((f: any) => <EmbedMedia data={{ mediaurl: f.media, lookup: f.lookup }} />)
 }
@@ -50,7 +50,7 @@ const Lyrics = (props: any, foundon: any[]) => {
 	const { mp3, video, media, images, lyrics, key } = props;
 	return (
 		<blockquote key={key}>
-			<LyricAudio mp3={mp3} foundon={foundon} />
+			<LyricAudio {...props} />
 			<LyricVideo video={video} />
 			<LyricImages images={images} />
 			<LyricMedia media={media} />

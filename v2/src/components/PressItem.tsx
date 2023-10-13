@@ -53,9 +53,9 @@ const PressItem = ({ item }: { item: any }) => {
 	const ArticleTitle = ({ article }: any) => {
 		return (<center>
 			{(article?.title || article?.headline || article?.subhead || article?.summary) && (<>
-				{(article?.title) && <><b style={{ fontSize: '2em' }}>{article.title}</b><br /></>}
-				{(article?.headline) && <><b style={{ fontSize: '1.5em' }}>{article.headline}</b><br /></>}
-				{(article?.subhead) && <><b style={{ fontSize: '1.25em' }}>{article.subhead}</b><br /></>}
+				{(article?.title) && <><b style={{ fontSize: '1.5em' }}>{article.title}</b><br /></>}
+				{(article?.headline) && <><b style={{ fontSize: '1.3em' }}>{article.headline}</b><br /></>}
+				{(article?.subhead) && <><b style={{ fontSize: '1.1em' }}>{article.subhead}</b><br /></>}
 				{(article?.summary) && <><b style={{ fontSize: '.95em' }}>{article.summary}</b><br /></>}
 				<p />
 				<hr />

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'Titillium-Regular';
+	src: url("/fonts/Titillium-Regular.otf") format("opentype");
+}
+
 :root {
 	font-size: calc(14px + (26 - 14) * ((100vw - 320px) / (2560 - 320)));
 }
@@ -12,8 +17,8 @@
 }
 
 label {
+	color: #222;
 	font-weight: bold;
-	font-size: 1.1em;
 }
 
 /// GALLERY
@@ -305,7 +310,6 @@ textplus1 {
 	padding: 3px;
 	padding-left: 10px;
 	border: 1px solid #999;
-	font-weight: bold;
 	font-size: 1.2em;
 }
 .tagClickable:hover {
@@ -620,7 +624,7 @@ body nav {
 	z-index: 3;
 	margin: 0px 0px;
 	background-color: #AFF1E4;
-	font-size: 1.1em;
+	font-size: 1.05em;
 	border-bottom: 1px solid #666;
 	filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 	display: flex;

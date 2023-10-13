@@ -49,12 +49,12 @@ const sections : { [key: string]: BreadCrumb } = {
 	media: { parent: 'jbc', title: 'Media' },
 
 	releases: { parent: 'jbc', title: 'Releases', summary: 'The records' },
-	album_reviews: { parent: 'press', title: 'Album Reviews', inParentDirectory: true },
+	'press?filters=type%3B%3Balbum': { parent: 'press', title: 'Album Reviews' },
 
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives' },
-	self_reviews: { parent: 'gigs', title: "Pat's Reviews", inParentDirectory: true },
-	fan_reviews: { parent: 'gigs', title: 'Fan Reviews', inParentDirectory: true },
+	'press?filters=type%3B%3Bpat': { parent: 'gigs', title: "Pat's Gig Reviews" },
+	'press?filters=title%3B%3BPunter': { parent: 'gigs', title: "Fans' Gig Reviews" },
 	posters: { parent: 'gigs', title: 'Posters', summary: 'Gig Ephemera', inParentDirectory: true },
 	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
 
@@ -78,12 +78,11 @@ const sections : { [key: string]: BreadCrumb } = {
 	video: { parent: 'media', title: 'Video' },
 
 	press: { parent: 'media', title: 'Press', summary: "Published Articles" },
-	printed_interviews: { parent: 'press', title: 'Interviews', inParentDirectory: true },
-	gig_reviews: { parent: 'press', title: 'Gig Reviews', inParentDirectory: true },
-	retrospectives: { parent: 'press', title: 'Retrospectives', inParentDirectory: true },
-	profiles: { parent: 'press', title: 'Profile Pieces', inParentDirectory: true },
-	preshow: { parent: 'press', title: 'Pre-show Press', inParentDirectory: true },
-	bios: { parent: 'press', title: 'Band Bios', inParentDirectory: true },
+	'press?filters=type%3B%3Binterview': { parent: 'press', title: 'Interviews' },
+	'press?filters=type%3B%3Bretrospective': { parent: 'press', title: 'Retrospectives' },
+	'press?filters=type%3B%3Bprofile': { parent: 'press', title: 'Profile Pieces' },
+	'press?filters=type%3B%3Bpreshow': { parent: 'press', title: 'Pre-show Press' },
+	'press?filters=type%3B%3Bkit': { parent: 'press', title: 'Band Bios' },
 
 	news: { parent: 'media', title: 'News', summary: "Website announcements" },
 

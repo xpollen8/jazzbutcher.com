@@ -5,11 +5,11 @@ import FilterReleases from '@/components/FilterReleases';
 import FilterPresses from '@/components/FilterPresses';
 import AudioReleases from '@/components/AudioReleases';
 
-const Sumosonic = () => 
+const Sumosonic = (props: any) => 
 <>
 	<Header project="sumo" section="sumosonic" />
 	<main>
-		<FilterReleases project="sumo" />
+		<FilterReleases project="sumo" filters={props.searchParams?.filters} />
 		<AudioReleases project="sumo" />
 		<FilterPresses title="Sumosonic Press" project="sumo" />
 	</main>

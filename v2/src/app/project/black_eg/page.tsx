@@ -7,11 +7,11 @@ import FilterReleases from '@/components/FilterReleases';
 import FilterPresses from '@/components/FilterPresses';
 import AudioReleases from '@/components/AudioReleases';
 
-const EgAudio = () =>
+const EgAudio = (props: any) =>
 <>
 	<Header project='eg' section="black_eg" />
 	<main>
-		<FilterReleases project="eg" />
+		<FilterReleases project="eg" filters={props.searchParams?.filters} />
 		<p />
 		<AudioLive project="eg" />
 		<p />

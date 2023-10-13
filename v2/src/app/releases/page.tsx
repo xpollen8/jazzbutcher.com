@@ -2,12 +2,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FilterReleases from '@/components/FilterReleases';
 
-const Releases = () => {
-	const types = ['CDR','various','compilation','single','album','live'];
+const Releases = (props: any) => {
 	return (<>
 		<Header section="releases" />
 			<main>
-				<FilterReleases types={types} /> 
+				<FilterReleases filters={props.searchParams?.filters} /> 
 			</main>
 		<Footer />
 	</>)

@@ -11,6 +11,11 @@
 	color: #777;
 }
 
+label {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
 /// GALLERY
 .gallery	dl {
 	text-align: center;

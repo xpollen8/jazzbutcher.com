@@ -476,7 +476,6 @@ ${d}
 		title=Steve Wilson talks to PAT FISH,
 		location=Burbank\, CA\, USA,
 		credit=Steve Wilson,
-		todo=OCR,
 		dt=2018-12,
 		added=2023-09-23)}
 
@@ -17642,6 +17641,130 @@ Mais c’est sans doute sur les pures ballades que le Jazz Butcher brille le plu
 #live	if (getval(page) = 201812_press_bigstir5.html)
 	${extractPress(
 		body=${literalizeCommas(
+<div class="iview_q">
+We had a conversation when I was in Northampton a few years ago about your annoyance at the press for labeling The Jazz Butcher as a "twee" band. You stated that you considered The Jazz Butcher to be a punk band. Can you give me your definition of punk rock and The JBC's place within that musical/cultural sphere?
+</div>
+<div class="iview_a">
+A story from long ago: I was on the tour bus talking to the journalist Robin Gibson from Sounds, a lovely chap whom I still see from time to time today. It was the spring of 1985 and our band had just played Berlin for the first time. I was feeling pretty pleased with myself, as evidenced by my remark to Robin along the lines of "We are the last punk rock band!" Robin, a razor-sharp Scotsman, fixed me with a Look and said: "You're as punk as the Pogues." "Well," I replied, "They're punk." "Exactly my point," said Robin. Snookered!
+</div>
+<div class="iview_a">
+I detest most "genre" terms in music but I particularly despise the idea that "indie" is a word that describes a kind of music. To people of my generation it was a way of doing business, nothing more, which — as it happens — was part of the aftershock from punk. Suddenly small bands on small labels were competing with the well-financed pets of the established companies and it was very exciting, but if you look at the "indie charts" of the time you will see that the bands in it played all manner of wildly different styles.
+</div>
+<div class="iview_a">
+For goodness's sake, all the much-derided Stock Aitken and Waterman "hit factory" records by Kylie Minogue, Rick Astley and the like all appeared on the indie chart because the canny producers had their own independent label.
+</div>
+<div class="iview_a">
+People talk about the C-86 sound. Are they having a laugh? Does it sound like Velocity Girl era Primal Scream or does it sound like Bogshed? Fatuous!
+</div>
+<div class="iview_a">
+So terms like "indie" make my flesh creep, and, of course, somewhere deep in the "indie scene" there is this thing called "twee." I have probably never heard 90% of the so-called twee bands, but I did have a brief association with a German label called Marsh-Marigold which might, I suppose, have qualified as operating within that area. That said, their band with whom I was working at the time (the Purelove) sounded more like the Pet Shop Boys than anything else on the label.
+</div>
+<div class="iview_a">
+So I have no real idea of what the "twee" scene might be about but I do know one thing: nobody who ever played in any serious line-up of our band could possibly have been described as a "twee" individual. More than one or two of them would probably have knocked you out for suggesting it.
+</div>
+<div class="iview_a">
+What punk did for me was to re-engage with the original primal excitement and urgency of the mid-sixties scene with things like the Who's "Can't Explain" or the almost-hits of The Creation. When I saw the Pistols in July 1976 the set list included songs by the Kinks, the Small Faces, even "Stepping Stone" as made famous by the Monkees. There was nothing "new" about the music. What was new to me and my generation at the time was the raw, home-cooked approach and the complete absence of any "star" behaviour among the people on the stage. The sight of regular kids your own age doing this on a stage was empowering. (Not that I'm calling Rotten "regular", you understand. I'm not mental.)
+</div>
+<div class="iview_a">
+Of course, very quickly the imitators started to appear and within a couple of years punk as a musical style had become a total straightjacket. Then at the start of 1980 the Clash just blew everything apart with the fabulous, sprawling manifesto that is London Calling. With Topper on the drums they suddenly had the capacity to embrace a myriad of different styles and genres, all the time keeping their own sonic imprint and their own unique attitude. That was the record that showed me that the real message of punk for musicians is that you should be free to express yourself exactly as you want, not just in terms of lyrics but in terms of music as well.
+</div>
+<div class="iview_a">
+There were other lessons to be learned, too, about the way one conducted one-self in business and the enormous importance of remembering to use the word "no" from time to time. As Chuck D (surely one of the great punks!) said on his solo album: "Only got two letters, only takes a second to say it." So, yes, especially at the start we identified as punk rockers. We didn't dress like it and we didn't necessarily always sound like it, but —importantly — we felt like it.
+</div>
+
+<div class="iview_q">
+I once told you that if you changed one letter in your song "Niagra" and made it "Viagra" you could make a million dollars from the pharmaceutical company Pfizer. If remember correctly you responded "Yes, but then would have no soul". Considering the changes in the music industry and how difficult it is to make a living as a working musician, do you still consider the licensing of one's art as soul destroying?
+</div>
+
+<div class="iview_a">
+It really depends on to whom one is licensing it. I've no problem with somebody using my work to advertise a good product like Pilsner Urquell or a good cause. Arms dealers and banks probably need not waste their time writing in.
+</div>
+
+<div class="iview_q">
+Fire Records has recently rereleased eight classic Jazz Butcher albums between two box sets: The Violent Years, and The Wasted Years. All of them remastered and in beautiful packaging with extensive liner notes. How satisfied were you with the results?
+</div>
+
+<div class="iview_a">
+I thought that the people at Fire Records did a really good job. The box sets were very flattering and they garnered some very kind reviews around the world, as well. I believe that a third set, featuring all the singles, b-sides and oddities, is currently in production.
+</div>
+
+<div class="iview_q">
+Whoever did the remastering did a fantastic job. I discover new things in the music that I have never heard in past — guitar parts, samples, etc. Have you heard anything in the remasters that you had forgotten you put there? Who is the engineer that did the re-mastering?
+</div>
+
+<div class="iview_a">
+The remastering was done by a chap called Brian Pyle, who, as I understand it, does a lot of this sort of thing for Fire Records. I was quite taken with his version of Last of the Gentleman Adventurers. I thought he did well to take out some of the lower mid-range, where, in retrospect, perhaps the bottom end of our triple Roland Space Echo abuse did tend to hang around and clog things up a little. The acoustic guitars are pin-bright on his version, which I like. I do wonder, though, if it has made the record sound a bit more "indie" in the current parlance. Was he trying to make it "relevant" to the ears of 2 I st Century hipsters? I have no idea. Nobody ever tells me anything. 
+</div>
+
+<div class="iview_a">
+I can't say that I really noticed his influence too much on the re-issues. You do, however, have to bear in mind that in the case of Fishcotheque and Cult of the Basement, I hadn't heard the records for a full decade.
+</div>
+
+<div class="iview_a">
+As for discovering new things in the mix, well, you have to remember that I was there when all this shit went down. I can still remember things that were on the tape that never made it onto the records. So I'm not really the man to ask about that.
+</div>
+
+<div class="iview_a">
+Basically, I'm glad you like what Brian has done. I certainly have no particular problem with any of it.
+</div>
+
+<div class="iview_q">
+You describe your album In Bath of Bacon as "The one nobody ever talks about" and that it "seems very 80's now". Whilst I'm pretty sure you are referring more to the performances than the recording, I must say that listening to the remastered version has elevated it. I hope this doesn't sound insulting but I never knew that In Bath of Bacon could sound this good! Has the remastering of In Bath of Bacon changed the way you feel about it? Were you are surprised as I was to hear it sound this good?
+</div>
+
+<div class="iview_a">
+I played the test pressing of the remastered vinyl LP once. It was traumatic. At one point I went to the bathroom, next door to where the record was playing. "Sex Engine" was on the stereo at the time. All that I could hear through the wall was this idiot bellowing as though in the grip of a schizophrenic episode. Harrowing.
+</div>
+
+<div class="iview_a">
+I don't believe that I have even played the remastered CD version. 
+</div>
+
+
+<div class="iview_q">
+We have seen The Jazz Butcher, The Jazz Butcher Conspiracy, The Jazz Butcher and His Sikkorskis From Hell (did I miss any?). Lately you have been operating as The jazz Butcher Quartet. Will this be an ongoing concern? Will there be an album recorded with this new lineup?
+</div>
+
+
+<div class="iview_a">
+Well, you couldn't be expected to remember 
+them all. There was the Jazz Butcher and his Big Soppy Pussycats, for a start. I flirted with calling the band the Supermeats (after a cat food on the market at the time) but the vegans in the band weren't having that.
+</div>
+<div class="iview_a">
+At the start of 2018 the Quartet actually morphed into the Quintet for a few gigs when we added keyboard player Nick Bandy to the line-up. Sadly, after three or four storming shows, it seems that this particular band has just sort of evaporated. At the moment, I don't have any plans to build a new live band. I shall still play the very occasional gig on my own (I think I've finally become quite good at that) but band gigs worth doing are almost impossible to come by, so there's really no point in messing musicians about by telling them that they're in a band when the band doesn't — in any real sense — exist. 
+</div>
+
+<div class="iview_q">
+What does the future hold for my beloved JBC?
+</div>
+
+<div class="iview_a">
+Well, as I say, I don't know if there really will be a band as such. Nonetheless, I'm lucky enough to know lots of good musicians, so if a recording project were to come up, I'm sure we could assemble some manner of combo to undertake it. 
+</div>
+
+<div class="iview_a">
+Finally, will the world ever be treated to another collaboration between you and the amazing Mr. Maximilian Eider?
+</div>
+
+<div class="iview_a">
+To be honest, I have no idea. Any live collaboration is likely to be out of the question, as Max has simply had enough of that particular way of working. A studio collaboration is much more likely, but first we would need to be in a position where someone was putting us into a studio to record.
+</div>
+<div class="iview_a">
+Of course, there was a time in the late eighties when it appeared that Max and I wouldn't even speak to each other again, but, as we know, we've done tons of stuff together both onstage and in the recording studio since then. Never say never: that's what I have learned.
+</div>
+
+<div class="iview_q">
+We here at Big Stir have started creating our own slang language (slanguage?). The one word that seems to have gained the most traction is "Croz", as in David Crosby of The Byrds/CSN&Y. When something is very cool it s "Croz" or "Totally Croz" or "Croz as fuck". Could you tell us something that you would consider to be Croz as fuck? Could we get you to create a new word off the top of your head for the Big Stir Slanguage dictionary?
+</div>
+
+<div class="iview_a">
+You're probably aware that during a European tour in 1988 the band developed an absurdly complex private language called "surrealist rhyming slang." Our equivalent of "Croz as fuck" would have been "Waiters and that!"
+</div>
+<div class="iview_a">
+If you would like a concrete example of what we considered to be "Waiters and that!", well, it might be a particularly splendid dinner (probably how the term developed in the first place), a great gig or just a moment of genius...like...for example...Crosby's ridiculous solo at the top end of Eight Miles High.
+</div>
+<div class="iview_a">
+And a brand new word/phrase for your own patois? Let me see...how about... <i>"A glass for Doctor Chumley?"</i> - for - <i>"Let's go out in the car park and get high."</i> </div>
 		)}
 	)}
 	${jbc_footer}

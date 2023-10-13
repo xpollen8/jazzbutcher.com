@@ -32,8 +32,11 @@ const	LyricVideo = ({ video }: any) => {
 
 const	LyricAudio = ({ mp3, caption }: any) => {
 	if (mp3) {
-		const [ mediaurl, mediacredit, mediacrediturl, mediacreditdate, media_caption ] = parseCaptionsSourcesEtc(mp3)[0] || [];
-		return <EmbedMedia data={{ mediaurl, title: media_caption || removeHTML(caption), mediacredit, mediacrediturl, mediacreditdate }} />
+		const mp3s = parseCaptionsSourcesEtc(mp3);
+		return mp3s?.map((m: any, key: number) => {
+			const [ mediaurl, mediacredit, mediacrediturl, mediacreditdate, media_caption ] = m;
+			return <EmbedMedia key={key} data={{ mediaurl, title: media_caption || removeHTML(caption), mediacredit, mediacrediturl, mediacreditdate }} />
+		})
 	}
 	//return foundon?.filter((f: any) => f.media !== 'NULL')?.map((f: any) => <EmbedMedia data={{ mediaurl: f.media, lookup: f.lookup }} />)
 }

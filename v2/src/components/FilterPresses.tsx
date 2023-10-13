@@ -2,12 +2,14 @@
 
 import { Suspense } from 'react';
 import Image from 'next/image';
+import { useSearchParams } from "next/navigation";
 import Link from 'next/link';
 import usePresses from '@/lib/usePresses';
 import useReleases from '@/lib/useReleases';
 import { truncAt, parseYear, parseProject, pressFiltersInclude } from '@/lib/macros';
 import InfoTag from '@/components/InfoTag';
-import LetterHeader from '@/components/LetterHeader';
+import Tag from '@/components/Tag';
+import FilterButton, { TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
 
 export const filterPassThru = (p: any, project?: string) => sortPress(filterPressProject(p, project));
 
@@ -85,15 +87,31 @@ const AlbumCover = ({ album }: { album?: string }) => {
 	</Suspense>
 }
 
-const	FilterPresses = ({ project, title, showAlbum, filter=filterPassThru }: { title: string, project?: string, showAlbum?: boolean, filter?: any }) => {
+const filterOptions = [
+	{ field: "type:album", display: "Album Reviews" },
+	{ field: "type:interview", display: "Interviews" },
+	{ field: "type:retrospective", display: "Retrospectives" },
+	{ field: "type:profile", display: "Profile Pieces" },
+	{ field: "type:preshow", display: "Pre-show Press" },
+	{ field: "type:pat", display: "Pat's Gig Reviews" },
+	{ field: "title:Punter", display: "Fans' Gig Reviews" },
+	{ field: "type:kit", display: "Band Bios" },
+];
+
+const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, filter?: any }) => {
+	const searchParams = useSearchParams();
+	const filters = searchParams.get('filters');
+	const filtersUsed = parseFilters(filters || '') || [];
 	const { data, isLoading, error } = usePresses();
 	const presses = data?.results && filter(data?.results, project);
+	const showAlbum = (filters?.includes('album'));
 
 	return <Suspense fallback=<>Loading...</> >
-		{(!isLoading && presses) && <div className="listItem">
-			<LetterHeader title={title} />
+		{(!isLoading && presses) && <>
+			<div className="listItem flex flex-wrap">{filterOptions.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
 			<div className="flex flex-wrap gap-3 justify-center">
 				{presses
+				?.filter((art: any) => filterItemBy(art, filtersUsed))
 				.map((item: any, key: number) => {
 					const thumb = truncAt(';;', item.thumb);
 					const info = item.type.replace(project, '').replace('nopat','').replace('wilson','').replace('sumo','').replace('eg','').replace(',,', ',').replace(/^,/, '').replace(/,$/, '');
@@ -119,7 +137,7 @@ const	FilterPresses = ({ project, title, showAlbum, filter=filterPassThru }: { t
 					</div>)
 				})}
 			</div>
-		</div>}
+		</>}
 	</Suspense>
 }
 

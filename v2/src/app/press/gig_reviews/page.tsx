@@ -5,7 +5,7 @@ const Press = (props: any) => {
 	return (<>
 		<Header section='gig_reviews' />
 		<main>
-			<FilterPresses title="Printed Gig Reviews" filter={filterPressByTypeGigReview} />
+			<FilterPresses filter={filterPressByTypeGigReview} />
 		</main>
 	</>)
 }

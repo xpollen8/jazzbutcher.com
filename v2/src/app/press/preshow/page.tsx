@@ -5,7 +5,7 @@ const Press = (props: any) => {
 	return (<>
 		<Header section='preshow' />
 		<main>
-			<FilterPresses title="Pre-show Press" filter={filterPressByTypePreshow} />
+			<FilterPresses filter={filterPressByTypePreshow} />
 		</main>
 	</>)
 }

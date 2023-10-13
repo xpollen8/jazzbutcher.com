@@ -5,7 +5,7 @@ const Press = (props: any) => {
 	return (<>
 		<Header section='bios' />
 		<main>
-			<FilterPresses title="Band Bios" filter={filterPressByTypeBio} />
+			<FilterPresses filter={filterPressByTypeBio} />
 		</main>
 	</>)
 }

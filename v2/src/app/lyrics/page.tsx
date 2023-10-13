@@ -22,7 +22,7 @@ const LyricList = (props: { lyrics: any[] }) => {
 			}
 			return (<div key={key}>
 				{banner}
-				<Link className="ml-5" href={`/lyrics/${lyric?.href}`}>{lyric?.title}</Link> <span className="smalltext">{lyric?.tablature ? '(Tablature)' : ''} {lyric?.annotated ? '(Annotated)' : ''} {lyric?.is_instrumental ? '(Instrumental)' : ''} {lyric?.project ? lyric.project : ''}</span>
+				<Link className="ml-5" href={`/lyrics/${lyric?.href}`}>{lyric?.title}</Link> <span className="smalltext">{lyric?.tablature ? '(Tablature)' : ''} {lyric?.annotated ? '(Annotated)' : ''} {lyric?.is_instrumental ? '(Instrumental)' : ''} {lyric?.project ? lyric.project : ''} {lyric?.video?.length ? '(Video)' : ''} {lyric?.mp3?.includes('/mp3/') ? '(Audio excerpt)' : ((lyric?.mp3?.length) ? '(Audio)' : '')}</span> 
 			</div>)
 		})}
 	</>)
@@ -34,6 +34,7 @@ const filters = [
 	 { field: "boolean:is_instrumental", display: "Instrumentals" },
 	 { field: "exists:tablature", display: "w/Tablature" },
 	 { field: "exists:video", display: "w/Video" },
+	 { field: "exists:mp3", display: "w/Audio" },
 	 { field: "boolean:annotated", display: "w/Annotations" },
 ]
 

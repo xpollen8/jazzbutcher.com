@@ -51,7 +51,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	releases: { parent: 'jbc', title: 'Releases', summary: 'The records' },
 //	'press?filters=type%3B%3Balbum': { parent: 'press', title: 'Album Reviews' },
 
-	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
+	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The words' },
 	audio: { parent: 'jbc', title: 'Audio', rootHideChildren: true },
 	video: { parent: 'jbc', title: 'Video', rootHideChildren: true },
 	press: { parent: 'jbc', title: 'Press', summary: "Reviews, Interviews, etc", rootHideChildren: true },

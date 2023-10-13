@@ -9,7 +9,7 @@ create table lyrics (
 	mp3 varchar(200) NOT NULL,
 	mp4 varchar(200) NOT NULL,
 	embed_link varchar(200) NOT NULL,
-	caption varchar(200) NOT NULL,
+	caption varchar(400) NOT NULL,
 	found_on varchar(400) NOT NULL,
 	pat_says text NOT NULL,
 	others_say text NOT NULL,

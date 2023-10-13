@@ -2551,7 +2551,7 @@ Previously available on the ${fishco} LP/CD.
 	)})}
 
 	${clearAlbumPerf(release=va_seventeen_2)}
-	${addAlbumPerf(release=va_seventeen_2, type=Bside, ordinal=1, song="Chinese Envoy", author=John Cale, media=/jazzbutcher.com/audio/JazzButcher_ChineseEnvoy.mp3)}
+	${addAlbumPerf(release=va_seventeen_2, type=Bside, ordinal=1, song="Chinese Envoy", author=John Cale, media=/audio/JazzButcher_ChineseEnvoy.mp3)}
 
 	${jbc_footer}
 #live	endif

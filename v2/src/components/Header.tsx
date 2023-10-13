@@ -67,7 +67,7 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "Early Fan Club issues" },
 	pat_album_reviews: { parent: 'writings', title: "Pat's albums reviews", summary: "Album opinions" },
-	'press?filters=type%3B%3Bpat': { parent: 'writings', title: "Pat's gig reviews" },
+//	'press?filters=type%3B%3Bpat': { parent: 'writings', title: "Pat's gig reviews" },
 
 //	official: { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: true },
 //	live: { parent: 'audio', title: 'Live Recordings', summary: "Non-official recordings", inParentDirectory: true },

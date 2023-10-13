@@ -108,7 +108,14 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 
 	return <Suspense fallback=<>Loading...</> >
 		{(!isLoading && presses) && <>
-			<div className="listItem flex flex-wrap">{filterOptions.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
+			{(() => {
+				const options = filterOptions.filter((f: any) => {
+					const [ type, value ] = f.field.split(':');
+					return presses?.some((r: any) => r[type].includes(value));
+				});
+				if (options?.length <= 1) return;
+				return <div className="listItem flex flex-wrap">{options.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
+			})()}
 			<div className="flex flex-wrap gap-3 justify-center">
 				{presses
 				?.filter((art: any) => filterItemBy(art, filtersUsed))

@@ -7,17 +7,37 @@ import useReleases from '@/lib/useReleases';
 import { ReleaseType } from '@/components/Release';
 import { truncAt, parseYear } from '@/lib/macros';
 import InfoTag from '@/components/InfoTag';
-import LetterHeader from '@/components/LetterHeader';
 
-const	FilterReleases = ({ project, types }: { project?: string, types?: string[] }) => {
+import FilterButton, { TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
+
+const filterOptions = [
+	{ field: "type:album", display: "Album" },
+	{ field: "type:dvd", display: "DVD" },
+	{ field: "type:CDR", display: "CDR" },
+	{ field: "type:demo", display: "Demo" },
+	{ field: "type:single", display: "Single" },
+	{ field: "type:compilation", display: "Compilation" },
+	{ field: "type:live", display: "Live" },
+	{ field: "type:EP", display: "EP" },
+	{ field: "type:various", display: "Various" },
+];
+
+const	FilterReleases = ({ project, filters }: { project?: string, filters?: any }) => {
+	const filtersUsed = parseFilters(filters || '') || [];
 	const { data, isLoading, error } = useReleases();
 	const releases = data?.results?.sort((a: ReleaseType, b: ReleaseType) => parseYear(b.dtreleased) - parseYear(a.dtreleased)).filter((a: ReleaseType) => (project) ? a?.project === project : !a?.project);
 	return <Suspense fallback=<>Loading...</> >
-		{(!isLoading && releases) && <div className="listItem">
-			<LetterHeader title="Releases" />
+		{(!isLoading && releases) && <>
+			{(() => {
+				const options = filterOptions.filter((f: any) => {
+					const [ type, value ] = f.field.split(':');
+					return releases?.some((r: any) => r[type].includes(value));
+				});
+				if (options?.length <= 1) return;
+				return <div className="listItem flex flex-wrap">{options.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
+			})()}
 			<div className="flex flex-wrap gap-3 justify-center">
-				{releases
-					.filter((item: ReleaseType) => (types) ? types.filter((x: string) => item?.type?.split(',').includes(x)) : true)
+				{releases?.filter((rel: any) => filterItemBy(rel, filtersUsed))
 					.map((item: ReleaseType, key: number) => {
 						const thumb = truncAt(';;', item?.thumb);
 						return (<div key={key} className="drop-shadow-sm">
@@ -33,7 +53,7 @@ const	FilterReleases = ({ project, types }: { project?: string, types?: string[]
 						</div>)
 					})}
 				</div>
-			</div>}
+			</>}
 		</Suspense>
 }
 

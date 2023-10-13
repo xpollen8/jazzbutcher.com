@@ -11,7 +11,7 @@ const Sumosonic = (props: any) =>
 	<main>
 		<FilterReleases project="sumo" filters={props.searchParams?.filters} />
 		<AudioReleases project="sumo" />
-		<FilterPresses title="Sumosonic Press" project="sumo" />
+		<FilterPresses project="sumo" />
 	</main>
 	<Footer />
 </>

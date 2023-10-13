@@ -29,13 +29,13 @@ const LyricList = (props: { lyrics: any[] }) => {
 }
 
 const filters = [
+	 { field: "exists:mp3", display: "w/Audio" },
+	 { field: "exists:video", display: "w/Video" },
+	 { field: "boolean:annotated", display: "w/Annotations" },
+	 { field: "exists:tablature", display: "w/Tablature" },
+	 { field: "boolean:is_instrumental", display: "Instrumentals" },
 	 { field: "project:wilson", display: "Wilson" },
 	 { field: "project:sumosonic", display: "Sumosonic" },
-	 { field: "boolean:is_instrumental", display: "Instrumentals" },
-	 { field: "exists:tablature", display: "w/Tablature" },
-	 { field: "exists:video", display: "w/Video" },
-	 { field: "exists:mp3", display: "w/Audio" },
-	 { field: "boolean:annotated", display: "w/Annotations" },
 ]
 
 const Lyrics= (props: any) => {

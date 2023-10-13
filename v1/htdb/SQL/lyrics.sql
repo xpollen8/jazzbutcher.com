@@ -6,7 +6,7 @@ create table lyrics (
 	href varchar(100) NOT NULL,
 	title varchar(200) NOT NULL,
 	lyrics text NOT NULL,
-	mp3 varchar(200) NOT NULL,
+	mp3 varchar(600) NOT NULL,
 	mp4 varchar(200) NOT NULL,
 	embed_link varchar(200) NOT NULL,
 	caption varchar(400) NOT NULL,

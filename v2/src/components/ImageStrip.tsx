@@ -10,10 +10,10 @@ const ImageStrip = (props: any) => {
 	return images && images?.length && <div style={style} className={className}>
 		{images?.map(([ image, caption, source, sourceurl, sourcedate ]: any, key: number) =>
 		<Link key={key} href={`https://jazzbutcher.com${image}.jpg`}>
-			<div className="" style={{ maxWidth: `${width}px` }}>
+			<div >
 				<Image
 					alt={caption || 'album image'}
-					width={width} height={width}
+					width={width * 3} height={width * 3}
 					src={`https://jazzbutcher.com${image}_250.jpg`}
 				/>
 				{(caption) && <><i>{caption}</i><br/></>}

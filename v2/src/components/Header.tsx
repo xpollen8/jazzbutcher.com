@@ -46,49 +46,46 @@ const sections : { [key: string]: BreadCrumb } = {
 	jbc: { href: '/', title: 'The Jazz Butcher' },
 
 	pat: { parent: 'jbc', title: 'Pat' },
-	media: { parent: 'jbc', title: 'Media' },
+//	media: { parent: 'jbc', title: 'Media' },
 
 	releases: { parent: 'jbc', title: 'Releases', summary: 'The records' },
-	'press?filters=type%3B%3Balbum': { parent: 'press', title: 'Album Reviews' },
+//	'press?filters=type%3B%3Balbum': { parent: 'press', title: 'Album Reviews' },
 
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The Words' },
-	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives' },
+	audio: { parent: 'jbc', title: 'Audio', rootHideChildren: true },
+	video: { parent: 'jbc', title: 'Video', rootHideChildren: true },
+	press: { parent: 'jbc', title: 'Press', summary: "Reviews, Interviews, etc", rootHideChildren: true },
+	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives', rootHideChildren: true },
 	'press?filters=type%3B%3Bpat': { parent: 'gigs', title: "Pat's Gig Reviews" },
 	'press?filters=title%3B%3BPunter': { parent: 'gigs', title: "Fans' Gig Reviews" },
 	posters: { parent: 'gigs', title: 'Posters', summary: 'Gig Ephemera', inParentDirectory: true },
 	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
 
-	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The army of musicians' },
+	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The musicians', rootHideChildren: true },
 	fiascos: { parent: 'writings', title: 'Top 10 JBC Fiascos', summary: '2020' },
-	prejbc: { parent: 'pat', title: 'Pre-JBC', summary: 'Before there was The JBC' },
-	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content', rootHideChildren: true },
-	help: { parent: 'jbc', title: 'Get Involved!', summary: "Let's do this, together" },
+	prejbc: { parent: 'jbc', title: 'Pre-JBC', rootHideChildren: true },
 
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "Early Fan Club issues" },
 	pat_album_reviews: { parent: 'writings', title: "Pat's albums reviews", summary: "Album opinions" },
-	pat_gig_reviews: { parent: 'writings', title: "Pat's gig reviews", summary: "Tour write-ups" },
+	'press?filters=type%3B%3Bpat': { parent: 'writings', title: "Pat's gig reviews" },
 
-	audio: { parent: 'media', title: 'Audio' },
-	official: { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: true },
-	live: { parent: 'audio', title: 'Live Recordings', summary: "Non-official recordings", inParentDirectory: true },
-	interviews: { parent: 'audio', title: 'Recorded Interviews', summary: "Radio, etc", inParentDirectory: true },
-	demos: { parent: 'audio', title: 'Demo Recordings', inParentDirectory: true },
+//	official: { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: true },
+//	live: { parent: 'audio', title: 'Live Recordings', summary: "Non-official recordings", inParentDirectory: true },
+//	interviews: { parent: 'audio', title: 'Recorded Interviews', summary: "Radio, etc", inParentDirectory: true },
+//	demos: { parent: 'audio', title: 'Demo Recordings', inParentDirectory: true },
 	elsewhere: { parent: 'audio', title: 'Audio Elsewhere', summary: "Podcasts, etc", inParentDirectory: true },
 
-	video: { parent: 'media', title: 'Video' },
+//	'press?filters=type%3B%3Binterview': { parent: 'press', title: 'Interviews' },
+//	'press?filters=type%3B%3Bretrospective': { parent: 'press', title: 'Retrospectives' },
+//	'press?filters=type%3B%3Bprofile': { parent: 'press', title: 'Profile Pieces' },
+//	'press?filters=type%3B%3Bpreshow': { parent: 'press', title: 'Pre-show Press' },
+//	'press?filters=type%3B%3Bkit': { parent: 'press', title: 'Band Bios' },
 
-	press: { parent: 'media', title: 'Press', summary: "Published Articles" },
-	'press?filters=type%3B%3Binterview': { parent: 'press', title: 'Interviews' },
-	'press?filters=type%3B%3Bretrospective': { parent: 'press', title: 'Retrospectives' },
-	'press?filters=type%3B%3Bprofile': { parent: 'press', title: 'Profile Pieces' },
-	'press?filters=type%3B%3Bpreshow': { parent: 'press', title: 'Pre-show Press' },
-	'press?filters=type%3B%3Bkit': { parent: 'press', title: 'Band Bios' },
-
-	news: { parent: 'media', title: 'News', summary: "Website announcements" },
+//	news: { parent: 'media', title: 'News', summary: "Website announcements" },
 
 	//interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
 
-	project: { parent: 'pat', title: 'Side Projects', summary: "He was a busy butcher" },
+	project: { parent: 'jbc', title: 'Side Projects', rootHideChildren: true },
 	vaguely_familiar: { parent: 'project', title: 'Vaguely Familiar', summary: '1991', inParentDirectory: true },
 	cambodia: { parent: 'project', title: 'Cambodia', summary: '1991', inParentDirectory: true },
 	black_eg: { parent: 'project', title: 'The Black Eg', summary: "1991-1994, 1999", inParentDirectory: true },
@@ -107,7 +104,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	mrblagdon: { parent: 'projects', title: 'Mr. Blagdon', inParentDirectory: true },
 	*/
 
-	gallery: { parent: 'media', title: 'Gallery', summary: "Photography from all eras"  },
+	gallery: { parent: 'conspirators', title: 'Gallery', summary: "Photography from all eras"  },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "COVID-era livestreams" },
 	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals" },
 
@@ -136,6 +133,8 @@ const sections : { [key: string]: BreadCrumb } = {
 	jazz_insects: { parent: 'prejbc', title: 'Jazz Insects', summary: "1982", inParentDirectory: true, body: "Matt Black, Mark Sinker, Max Eider, Pat Fish" },
 	//the_tonix: { parent: 'prejbc', title: 'The Tonix', inParentDirectory: true },
 
+	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content', rootHideChildren: true },
+	help: { parent: 'jbc', title: 'Get Involved!' },
 	admin: { parent: 'jbc', title: "Website Management", hide: false },
 }
 

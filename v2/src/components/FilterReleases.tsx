@@ -4,11 +4,11 @@ import { Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import useReleases from '@/lib/useReleases';
-import { ReleaseType } from '@/components/Release';
+import { type ReleaseType } from '@/components/Release';
 import { truncAt, parseYear } from '@/lib/macros';
 import InfoTag from '@/components/InfoTag';
 
-import FilterButton, { TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
+import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
 
 const filterOptions = [
 	{ field: "type:album", display: "Albums" },

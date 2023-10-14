@@ -133,7 +133,7 @@ const ReleaseNotes = ({ release }: { release: ReleaseTypeWithChildren }) => {
 
 const ReleaseLiner = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.liner) {
-		const [ liner, source, sourceurl, sourcedate ] = release.liner.split(';;');
+		const [ liner='', source, sourceurl, sourcedate ] = release.liner.split(';;');
 		return (<>
 			<Tag>Liner Notes</Tag>
 			<blockquote>
@@ -146,7 +146,7 @@ const ReleaseLiner = ({ release }: { release: ReleaseTypeWithChildren }) => {
 
 const ReleaseBishopSez = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.bishopsez) {
-		const [ bishopsez, source, sourceurl, sourcedate ] = release?.bishopsez.split(';;');
+		const [ bishopsez='', source, sourceurl, sourcedate ] = release?.bishopsez.split(';;');
 		return (<>
 			<Tag>{gab} Says</Tag>
 			<blockquote>
@@ -159,7 +159,7 @@ const ReleaseBishopSez = ({ release }: { release: ReleaseTypeWithChildren }) => 
 
 const ReleasePatSez = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.patsez) {
-		const [ patsez, source, sourceurl, sourcedate ] = release?.patsez.split(';;');
+		const [ patsez='', source, sourceurl, sourcedate ] = release?.patsez.split(';;');
 		return (<>
 			<Tag>Pat Says</Tag>
 			<blockquote>
@@ -174,14 +174,14 @@ const ReleaseThanks = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.thanks) {
 		return (<>
 			<Tag>Thanks</Tag>
-			<blockquote dangerouslySetInnerHTML={{ __html: release?.thanks }} />
+			<blockquote dangerouslySetInnerHTML={{ __html: release.thanks }} />
 		</>)
 	}
 }
 
 const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.downloads) {
-		const downloads = parseCaptionsSourcesEtc(release?.downloads);
+		const downloads = parseCaptionsSourcesEtc(release.downloads);
 		if (downloads?.length) {
 			return (<>
 				<Tag>Downloadable Media</Tag>
@@ -199,7 +199,7 @@ const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => 
 
 const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.audio) {
-		const audio = parseCaptionsSourcesEtc(release?.audio);
+		const audio = parseCaptionsSourcesEtc(release.audio);
 		if (audio?.length) {
 			return (<>
 				<Tag>Audio</Tag>
@@ -214,7 +214,7 @@ const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 
 const ReleaseVideos = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.video) {
-		const videos = parseCaptionsSourcesEtc(release?.video);
+		const videos = parseCaptionsSourcesEtc(release.video);
 		if (videos?.length) {
 			return (<>
 				<Tag>Videos</Tag>
@@ -223,10 +223,10 @@ const ReleaseVideos = ({ release }: { release: ReleaseTypeWithChildren }) => {
 					const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
 					return (<div key={key} className="flex flex-wrap">
 							<div>
-							<div className="w-80 float-right p-1">
-								<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate }} />
-							</div>
-							<blockquote dangerouslySetInnerHTML={{ __html: caption }} />
+								<div className="w-80 float-right p-1">
+									<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate }} />
+								</div>
+								{(caption) && <blockquote dangerouslySetInnerHTML={{ __html: caption }} />}
 							</div>
 					</div>)
 				})}
@@ -236,8 +236,8 @@ const ReleaseVideos = ({ release }: { release: ReleaseTypeWithChildren }) => {
 }
 
 const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
-	if (release?.thumb || release?.images) {
-		const images = parseCaptionsSourcesEtc(release?.images);
+	if (release?.images) {
+		const images = parseCaptionsSourcesEtc(release.images);
 		if (images?.length) {
 				return <ImageStrip style={{ padding: '2px', paddingRight: '0px' }} className="float-right outline outline-slate-400 w-40 mt-2 mr-2 flex flex-wrap flex-grow border gap-1 bg-slate-100 text-center justify-center drop-shadow-lg " images={images} width={200} />
 		}
@@ -245,7 +245,6 @@ const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
 }
 
 const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
-
 	const labels = {
 		type: "Release Type",
 		onalbum: "Single From Album",

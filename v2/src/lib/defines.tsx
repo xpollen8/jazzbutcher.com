@@ -1092,8 +1092,8 @@ export const AutoLinkPlayer = (str?: string) => {
 	const pattern = /\[\[person:(.*?)\]\]/;
 	const match = str.match(pattern);
 	if (match) {
-		const lookup = match[1].replace("'", '').replace('.', '');
-		const found = mapPerformers[lookup];
+		const lookup = match[1]?.replace("'", '').replace('.', '');
+		const found = lookup && mapPerformers[lookup];
 		if (!found) return lookup?.replace(/_/g, ' ');
 		return expand(found);
 	}
@@ -1105,8 +1105,8 @@ export const AutoLinkAct = (str?: string) => {
 	const pattern = /\[\[act:(.*?)\]\]/;
 	const match = str.match(pattern);
 	if (match) {
-		const lookup = match[1].replace("'", '').replace('.', '');
-		const found = mapActs[lookup];
+		const lookup = match[1]?.replace("'", '')?.replace('.', '');
+		const found = lookup && mapActs[lookup];
 		if (!found) return lookup?.replace(/_/g, ' ');
 		return expand(found);
 	}

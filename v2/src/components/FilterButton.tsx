@@ -8,9 +8,9 @@ export type TypeFilterEntry = [
 	string[]
 ];
 
-const unparseFilters = (filters?: TypeFilterEntry[]) => {
+const unparseFilters = (filters: TypeFilterEntry[]) => {
 	let ret = '';
-	filters?.forEach((filter: TypeFilterEntry) => {
+	filters.forEach((filter: TypeFilterEntry) => {
 		const [ field, values ] = filter;
 		if (values?.length) {
 			ret = ret + field + ';;'
@@ -23,22 +23,22 @@ const unparseFilters = (filters?: TypeFilterEntry[]) => {
 	return ret?.replace(/,\$/g, '$').replace(/\$\$$/, '');
 }
 
-const addFilter = (used: TypeFilterEntry[], name: string, value: string) => {
+const addFilter = (used: TypeFilterEntry[], name: string, value: string): TypeFilterEntry[] => {
 	const obj = used.find(([ field, values ]: TypeFilterEntry) => field === name);
 	if (!obj) {
 		used.push([name, [ value ]]);
 	} else {
-		if (!obj[1].includes(name)) {
+		if (obj[1] && !obj[1]?.includes(name)) {
 			obj[1].push(value);
 		}
 	}
 	return used;
 }
 
-const rmFilter = (used: TypeFilterEntry[], name: string, value: string) => {
+const rmFilter = (used: TypeFilterEntry[], name: string, value: string): TypeFilterEntry[] => {
 	const obj = used.find(([ field, values ]: TypeFilterEntry) => field === name);
 	if (obj) {
-		obj[1] = obj[1].filter((v: string) => v !== value);
+		obj[1] = obj[1]?.filter((v: string) => v !== value);
 		if (!obj[1]?.length) {
 			used = used.filter(([ a, b ]: TypeFilterEntry) => a !== obj[0]);
 		}
@@ -46,25 +46,26 @@ const rmFilter = (used: TypeFilterEntry[], name: string, value: string) => {
 	return used;
 }
 
-export const parseFilters = (used?: string): TypeFilterEntry[] | [] => {
+export const parseFilters = (used: string): TypeFilterEntry[] => {
+	let ret: TypeFilterEntry[] = [];
 	if (used?.length) {
 		return used.split('$$')
-			?.map((p: string) => {
+			?.map((p: string): TypeFilterEntry => {
 				const [ field, rest ] = p.split(';;');
-				return [ field, rest?.split(',') ];
+				return [ field || '', rest?.split(',') || [] ];
 			})
 	}
-	return []
+	return ret;
 }
 
 export const filterItemBy = (object: any, filters: TypeFilterEntry[]) => {
 	if (!filters.length) return object;
 	return filters.some(([field, values]: TypeFilterEntry) => {
 		if (field === 'boolean') {
-			return values.some((value: string) => object[value] === 'yes');
+			return values?.some((value: string) => object[value] === 'yes');
 		} if (field === 'exists') {
-			return values.some((value: string) => object[value]?.length);
-		} else if (values.some((value: string) => object[field].includes(value))) {
+			return values?.some((value: string) => object[value]?.length);
+		} else if (values?.some((value: string) => object[field].includes(value))) {
 			return object;
 		}
 	});
@@ -78,7 +79,7 @@ const filterIsSet = (used: TypeFilterEntry[], name: string, value: string) => {
 
 const FilterButton = (props: { field: string, display: string, filtersUsed: TypeFilterEntry[] }) => {
 	const { field, display, filtersUsed } = props;
-	const [ fieldName, fieldValue ] = field.split(':');
+	const [ fieldName='', fieldValue='' ] = field.split(':');
 	const [ isChecked, setIsChecked ] = useState(filterIsSet(filtersUsed, fieldName, fieldValue));
 	const router = useRouter();
 	const pathname = usePathname();
@@ -91,7 +92,7 @@ const FilterButton = (props: { field: string, display: string, filtersUsed: Type
 		router.replace(`${pathname}?${searchParams.toString()}`)
 	}
 	const changeFilter = () => {
-		let newFilters;
+		let newFilters: TypeFilterEntry[];
 		if (isChecked) {
 			newFilters = rmFilter(filtersUsed, fieldName, fieldValue);
 		} else {

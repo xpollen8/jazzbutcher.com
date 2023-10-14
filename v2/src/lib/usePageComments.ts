@@ -1,7 +1,7 @@
 import useSWR from 'swr';
 
-const mapLetterURLIFeedbackLookup = (uri: string) => {
-let ret = uri;
+const mapLetterURLIFeedbackLookup = (uri: string): string => {
+	let ret = uri;
 	[
 		[ '19900214', '90Feb14' ],
 		[ '19910201', '91Feb01' ],
@@ -10,15 +10,10 @@ let ret = uri;
 		[ '19940413', '94Apr13' ],
 		[ '19940624', '94Jun24' ],
 		[ '19940913', '94Sep13' ],
-	].forEach(([ current, old ]: string[]) => {
+	].forEach(([ current, old ]: any) => {
 		ret = ret.replace(current, old);
 	});
-	if (!ret.match(/.html/)) {
-		if (ret[ret.length - 1].match(/[0-9]/)) {
-			return `${ret}/index.html`;
-		}
-		return `${ret}.html`;
-	}
+	if (ret?.match(/[0-9]/)) return `${ret}/index.html`;
 	return ret;
 }
 

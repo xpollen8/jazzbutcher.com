@@ -214,6 +214,7 @@ const NavSections = (props: Props_Header): React.ReactNode  => {
 					return parent && !(sections[parent]?.rootHideChildren && depth === 1) && (parent === section && !sections[href]?.hide)
 				})
 				?.map((href: string, key: number) => {
+					// @ts-ignore
 					const { title, parent, summary, inParentDirectory }: BreadCrumb = sections[href];
 					const useHref = (inParentDirectory) ? `${parent}/${href}` : href;
 					return (

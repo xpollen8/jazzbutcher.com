@@ -1,6 +1,6 @@
 import { Credit, Contribution } from './GenericWeb';
 import FeaturedItem from './FeaturedItem';
-import { ReleaseType, ReleaseTypeWithChildren } from './Release';
+import { type ReleaseType, type ReleaseTypeWithChildren } from './Release';
 import { truncAt, parseCredit } from '@/lib/macros';
 import { expand } from '@/lib/defines';
 

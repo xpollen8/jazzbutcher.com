@@ -1,4 +1,4 @@
-import { RecordType} from '@/lib/macros';
+import { type RecordType} from '@/lib/macros';
 
 export const types: RecordType = {
 	other: {

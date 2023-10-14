@@ -80,10 +80,10 @@ export const parseDate = (str?: string) => {
 		}).find(f => f && f[1]);
 		if (xx) {
 			const [ orig, y, m, d, hh, mm, ss ] = xx;
-			const unknownYear = (!parseInt(y, 10)) ? 'unknownYear' : '';
-			const unknownMonth = (!parseInt(m, 10)) ? 'unknownMonth' : '';
-			const unknownDay = (!parseInt(d, 10)) ? 'unknownDay' : '';
-			const [ iy, im, id, ihh, imm, iss ] = [y, m, d, hh, mm, ss ].map(f => (f && parseInt(f, 10)) || 1);
+			const unknownYear = (!parseInt(y || '', 10)) ? 'unknownYear' : '';
+			const unknownMonth = (!parseInt(m || '', 10)) ? 'unknownMonth' : '';
+			const unknownDay = (!parseInt(d || '', 10)) ? 'unknownDay' : '';
+			const [ iy, im, id, ihh, imm, iss ] = [y, m, d, hh, mm, ss ].map(f => (f && parseInt(f || '', 10)) || 1);
 			if (!iy) return;
 			return [orig,iy,im,id,ihh,imm,iss, unknownYear, unknownMonth, unknownDay];
 		}
@@ -499,7 +499,7 @@ const searchOptions: HashedType[] = [
 	{ ...gigSearchOptions(true, 'alsowith', 'Shared the bill..', 'gigs') },
 ]
 
-export const getOptions = (noun: string | undefined): HashedType => (noun && searchOptions.find(o => o.noun === noun)) || searchOptions[0];
+export const getOptions = (noun: string | undefined): HashedType => (noun && searchOptions.find(o => o.noun === noun)) || searchOptions[0] || [];
 
 const autoHREF = (href: string) => {
 	if (href?.includes('@') && !href?.includes('http')) {	// email address

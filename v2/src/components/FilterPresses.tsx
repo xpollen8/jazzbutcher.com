@@ -9,7 +9,7 @@ import useReleases from '@/lib/useReleases';
 import { truncAt, parseYear, parseProject, pressFiltersInclude } from '@/lib/macros';
 import InfoTag from '@/components/InfoTag';
 import Tag from '@/components/Tag';
-import FilterButton, { TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
+import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
 
 export const filterPassThru = (p: any, project?: string) => sortPress(filterPressProject(p, project));
 

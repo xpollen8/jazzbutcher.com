@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import Header from '@/components/Header';
 import ReleaseBlurb from '@/components/ReleaseBlurb';
 import FeaturedItem from '@/components/FeaturedItem';
 //import DayInHistory from '@/components/DayInHistory';
 //import RandomLiveVideo from '@/components/RandomLiveVideo';
-import { TributeText, TributeAudio } from '@/components/Tributes';
 import Memorial from '@/components/Memorial';
+import Tag from '@/components/Tag';
 
 const BookSikkorski = () =>
 	<FeaturedItem
@@ -57,20 +58,21 @@ const Home = (): React.ReactNode =>
 	<Header section='jbc' />
 	<main>
 		<div className="flex flex-wrap justify-center gap-1">
-			<div className="grow max-w-xl">
-				<div className="border p-3 bg-slate-100 drop-shadow-sm">
-				<Memorial />
+			<div className="grow max-w-lg">
+				<div className="border p-3 bg-slate-100 drop-shadow-sm mb-3">
+					<Link href="/memoriam">
+						<Memorial home={true} />
+					</Link>
 				</div>
-				<p />
-				<div>
-				<TributeAudio />
+				<div className="max-w-lg grow">
+					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
+					<HomeBooks />
+				</div>
 			</div>
-			</div>
-			<div className="w-1/3 max-w-xl grow">
-				<TributeText />
-				<HomeBooks />
-				<HomeReleases />
-			</div>
+				<div className="max-w-lg grow">
+					<Tag style={{ marginBottom: '10px' }}>Recent Releases</Tag>
+					<HomeReleases />
+				</div>
 		</div>
 		{/*<RandomLiveVideo />
 		<DayInHistory />*/}

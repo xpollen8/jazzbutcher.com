@@ -88,7 +88,10 @@ const GigSetlists = (data: any) => <><Iterator data={data} func={GigSetlist} cla
 
 const GigPoster = (data: any, key: number) => <GigMedia {...data} />
 
-const GigPosters = (data: any) => <><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
+const GigPosters = (data: any) => {
+	console.log("POSTERS", data);
+	return <><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
+}
 
 const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
 
@@ -105,7 +108,7 @@ const GigSelfReviews = (data: any) => <><Iterator data={data} func={GigSelfRevie
 const GigPlay = ({ data }: any) => {
 	return (
 		<div>
-			<EmbedMedia data={data} />
+			<EmbedMedia data={{...data, autolink: true }} />
 			{data?.comment}
 		</div>
 	)

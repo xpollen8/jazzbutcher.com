@@ -14,6 +14,7 @@ const Video = () =>
 	</EmbedMedia>
 <hr />
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/screenshots/20201014_facebook_SimonTaylor_NeverGiveUp.png" width={500} height={500} alt="never give up video announcement" />
+	<EmbedMedia data={{ mediaurl: 'https://youtube.com/embed/mkTHuohiZSQ', song: "When You's A Viper" }} />
 	<Footer />
 </>
 

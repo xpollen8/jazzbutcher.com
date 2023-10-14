@@ -12,7 +12,7 @@ const Memoriam = () =>
 	<Header section='memoriam' />
 	<main>
 		<div className="flex flex-wrap justify-center gap-1">
-			<div className="border p-3 bg-slate-100 drop-shadow-sm max-w-xl grow">
+			<div className="border p-3 bg-slate-100 drop-shadow-sm max-w-xl grow mb-3">
 				<Memorial />
 			</div>
 			<div className="w-1/4 max-w-xl grow">

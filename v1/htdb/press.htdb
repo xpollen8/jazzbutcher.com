@@ -422,6 +422,15 @@ ${d}
 		datetime=2014-09-20 20:00:00,
 		dt=2014-09-20 20:00:00)}
 
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/20220202_press_brooklynvegan.html,
+		publication=Brooklyn Vegan,
+		title=Watch The Jazz Butcher's animated "Running On Fumes" video from posthumous new LP,
+		credit=Bill Pearis,
+		source=https://www.brooklynvegan.com/watch-the-jazz-butchers-animated-running-on-fumes-video-from-posthumous-new-lp/,
+		dt=2022-02-02,
+		added=2023-10-103)}
+
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211127_press_tribute.html,
 		publication=Whisperin And Hollerin,
@@ -17926,6 +17935,24 @@ We should all be so lucky.
 #live	if (getval(page) = 20210905_press_funhouse.html)
 	${extractPress(
 		body=${literalizeCommas(
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20220202_press_brooklynvegan.html
+#live	if (getval(page) = 20220202_press_brooklynvegan.html)
+	${extractPress(
+		body=${literalizeCommas(
+We lost Pat Fish, aka The Jazz Butcher, last year, but he left us with a new album, The Highest in the Land, which is out this week via Tapete. The first Jazz Butcher album in 10 years, it features longtime collaborator Max Eider, guitarist Peter Crouch (who played on Condition Blue and Waiting for the Love Bus), Weather Prophets drummer Dave Morgan (who played on The Jazz Butcher’s 1988 album Fishcotheque), and bassist Tim Harries.
+<p />
+There’s a sense of finality to the album — “He’d been around the block and knew he was on the last lap” says Lee Russell — which comes through in songs. “Lemmy and Bowie and Prince all gone,” Pat sings on the jaunty “Running on Fumes” which is actually as much about the state of post-Brexit Britain as it is mortality. “I didn’t see it coming and I didn’t see you care / Is there anything as cheap as chasing profit from despair?”
+<p />
+The video for “Running on Fumes” is decidedly more lighthearted. Made by Ruth Tidmarsh, with help from Bid of The Monochrome Set and Dhiren Basu, it features the adventures of a few stop-motion animated toy animals, including stuffed elephant and a number of fish, who are trying to escape their aquarium and make it to a Jazz Butcher show. “I shot the animation for the video at a low frame rate and put some digital motion blur on afterwards, to give it a dreamy, retro-kids tv look,” Ruth tells us. “In reality, this was, partly, due to time constraints and the challenges of trying to direct a drunk elephant and some delinquent stunt-fish. As with life, there were no real storyboards involved — they all just did what they could to navigate the chaos and get to the gig. I think Pat would have liked that.”
+<p />
+${embedVideo(url=https://youtube.com/embed/0Wk4tzKjvJ4)}
+<p />
+Both fish and elephants are winks to the Jazz Butcher universe, and the video is loaded with easter eggs for fans. It’s charming, witty and a little melancholic, which describes The Jazz Butcher himself. The video premieres in this post and you can watch below.
 		)}
 	)}
 	${jbc_footer}

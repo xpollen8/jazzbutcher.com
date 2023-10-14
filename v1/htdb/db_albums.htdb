@@ -2301,7 +2301,7 @@
     <p />
     Anyway, the main purpose of these notes is to give thanks and thanks are
     primarily due to co-conspiratorial guitar player ${pete}, who owns the
-    house and a good deal of the queipment and patience that made this record
+    house and a good deal of the equipment and patience that made this record
     possible.  The other main conspirators are listed elsewhere on this sleeve.  Also
     conniving were: Agent Russell Cooper; ${gab} (aka Inexxor); Ian Botterill (courtesy
     of Fat Controller); ${curt} (we are not worthy);
@@ -3515,7 +3515,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[92]->dtreleased	2022
 #define	albums[92]->buy	https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7
 #define	albums[92]->blurb
-	In loving memory. Patrick Huntrods (AKA Pat Fish). (20 December 1957 - 5 October 2021)
+	In loving memory.
 
 #define	albums[93]->type	various
 #define	albums[93]->lookup	va_patron_saints

@@ -1,6 +1,7 @@
 "use server"
 
-import { localDate, HashedType, RecordType, CommentType } from '@/lib/macros';
+import { localDate } from '@/lib/macros';
+import { type HashedType, type RecordType, type CommentType } from '@/lib/macros';
 
 const cache: HashedType = {};
 

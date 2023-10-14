@@ -25,25 +25,15 @@ const pathname2feedbackURI = (pathname: string) => {
 		if (uri === '/letters') return '/letters/index.html';
 		if (uri.startsWith('/letters')) return mapLetterURLIFeedbackLookup(uri);
 		if (uri === '/eulogy') return '/site/eulogy.html';
-		//if (uri === '/mad') return '/mad/index.html';
-		//if (uri === '/gigs') return '/gigs/index.html';
 		if (uri.startsWith('/releases')) return uri.replace('/releases', '/albums');
 		if (uri.startsWith('/conspirators')) return uri.replace('/conspirators', '/people');
-		//if (!uri.endsWith('.html')) return uri + '/index.html'
-		//return uri + 'index.html';
-		/*
-		if (uri.endsWith('/')) return uri + 'index.html';
-		if (!uri.endsWith('.html')) return uri + '.html'
-		*/
-		//return uri;
 		const [ section, sub1, sub2 ] = pathname.substr(1).split('/');
 		if (section === 'gigs' && sub2) {
 			return pathname + '.html';
 		}
 	}
 	const usePath = (fullpath(pathname) ?? pathname + '/index.html').substr(1);
-	const ret = `exact/${usePath}`;
-	return ret;
+	return `exact/${usePath}`;
 }
 
 const usePageComments = (pathname: string) => {

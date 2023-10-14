@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import useLyrics from '@/lib/useLyrics';
 
 import Tag from '@/components/Tag';
-import FilterButton, { TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
+import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
 
 const LyricList = (props: { lyrics: any[] }) => {
 	const { lyrics } = props;

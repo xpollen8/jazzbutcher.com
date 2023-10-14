@@ -15,7 +15,6 @@ const Fanclub = () =>
 <>
 	<Header section="fanclub" />
 	<main>
-	</main>
 		<PhotoSet title='The Jazz Butcher "Earl Sikkorski" Fan Club letter!'
 			photos={fanclub_110}
 			description=<>
@@ -26,6 +25,7 @@ const Fanclub = () =>
 			credit='Jimmy Duval'
 			credit_url='https://github.com/xpollen8/jazzbutcher.com/issues/110'
 			credit_date='2023-01-28' />
+	</main>
 	<Footer />
 </>
 

@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'Intro' ] } />
-	<main className="etc">
+	<main>
 		I&apos;m sending this as fast as I can, for, as you will see,
 		there is news which you might wish to impart to the slavering
 		e-hordes.  As sure as egs is egs, I have also been compelled

@@ -7,7 +7,7 @@ import { bacon, ben, pete, girls, creat } from '@/lib/defines';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'More Eider' ] } />
-	<main className="etc">
+	<main>
 		<LetterHeader title="MORE MAXIMILIANA" />
 		<samp>
 			&gt; Wed, 24 Mar 93<br />

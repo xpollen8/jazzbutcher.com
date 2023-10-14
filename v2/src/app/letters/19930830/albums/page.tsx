@@ -16,7 +16,7 @@ import {
 const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title={[ '30Aug93;;/letters/19930830', 'The Albums' ]} />
-		<main className="etc">
+		<main>
 			<LetterHeader title="THE CHURCH OF LOVE IS A BROAD CHURCH:" subhead="Varying impressions on different JBC discs" />
 			<div className="annotation">
 				This is in no way a &quot;defence&quot; of any JBC product.  I

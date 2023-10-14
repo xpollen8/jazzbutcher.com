@@ -8,7 +8,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Politics' ] } />
-	<main className="etc">
+	<main>
 		<div id="chang" />
 		<LetterHeader title="How can you tell when a politician is lying?" subhead="Their lips move" />
 		<samp>

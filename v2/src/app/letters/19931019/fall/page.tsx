@@ -7,7 +7,7 @@ import { loony, smiff, smith, rolo, tops, owen } from '@/lib/defines';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'The Fall' ] } />
-	<main className="etc">
+	<main>
 		<LetterHeader title="JBC -vs- The Fall" />
 		<samp>
 			&gt; Mon, 21 Jun 1993<br />

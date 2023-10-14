@@ -10,7 +10,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', '1994 European Tour' ] } />
-	<main className="etc">
+	<main>
 		<LetterHeader title="JBC TOUR REPORT : EUROPE 1994" />
 		<b>The players this time:</b>
 		<ul>

@@ -7,8 +7,8 @@ import { Credit } from '@/components/GenericWeb';
 
 const NeilSpencer = () => {
 	return (<>
-		<Header section='etc' title='Neil Spencer' />
-		<main className="etc">
+		<Header section='tomhall' title='Neil Spencer' />
+		<main>
 			<LetterHeader title="Hey Thom" />
 			<blockquote>
 			Heard you&apos;d gone. Heard it through the e-mail grapevine, which I

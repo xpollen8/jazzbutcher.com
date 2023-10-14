@@ -6,7 +6,7 @@ import LetterHeader from '@/components/LetterHeader';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Peter Lorre' ]} />
-	<main className="etc">
+	<main>
 		<LetterHeader title=<Link href="/lyrics/peter_lorre.html">PETER LORRE</Link> />
 		<samp>
 		&gt; Date: Fri, 29 Jul 1994 19:09:53 -0400<br />

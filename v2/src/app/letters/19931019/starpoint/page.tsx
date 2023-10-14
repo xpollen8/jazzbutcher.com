@@ -6,7 +6,7 @@ import { bacon, aero } from '@/lib/defines';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'Starpoint' ] } />
-	<main className="etc">
+	<main>
 		<LetterHeader title="STARPOINT STUDIO" />
 		<samp>
 			&gt; Mon, 21 Jun 1993<br />

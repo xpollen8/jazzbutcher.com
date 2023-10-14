@@ -9,7 +9,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Sister Death' ] } />
-	<main className="letter">
+	<main>
 		<LetterHeader title=<>THE <Link href="/lyrics/sister_death.html">SISTER DEATH</Link> THING</> />
 		<samp>
 		&gt; Date: Mon, 15 Aug 1994 15:51:08 -0500<br />

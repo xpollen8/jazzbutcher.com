@@ -9,7 +9,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'News' ] } />
-	<main className="etc">
+	<main>
 		<LetterHeader title='THE BAD NEWS' />
 		<p />
 		<blockquote>

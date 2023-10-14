@@ -62,11 +62,12 @@ const sections : { [key: string]: BreadCrumb } = {
 	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
 
 	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The musicians', rootHideChildren: true },
-	fiascos: { parent: 'writings', title: 'Top 10 JBC Fiascos', summary: '2020' },
+	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals" },
+	fiascos: { parent: 'writings', title: 'Top 10 JBC Fiascos', summary: '2020', body: "When live on the road goes.. interesting" },
+
 	prejbc: { parent: 'jbc', title: 'Pre-JBC', rootHideChildren: true },
 
-	fanclub: { parent: 'writings', title: 'Fan Club', summary: "Early Fan Club issues" },
-	pat_album_reviews: { parent: 'writings', title: "Pat's albums reviews", summary: "Album opinions" },
+//	album_reviews: { parent: 'writings', title: "Pat's albums reviews", summary: "Album opinions" },
 //	'press?filters=type%3B%3Bpat': { parent: 'writings', title: "Pat's gig reviews" },
 
 //	official: { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: true },
@@ -106,15 +107,17 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	gallery: { parent: 'conspirators', title: 'Gallery', summary: "Photography from all eras"  },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "COVID-era livestreams" },
-	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals" },
 
 	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },
 	memoriam: { parent: 'pat', title: 'In Memoriam' },
-	eulogy: { parent: 'memoriam', title: 'Alan Moore Eulogy', summary: "Said better than most" },
+	eulogy: { parent: 'memoriam', title: 'Eulogy', summary: "Alan Moore" },
 	homage: { parent: 'memoriam', title: 'Musical Tributes', summary: "Songs in praise of The Butcher" },
 
-	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994", body: "Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.  Includes then-current news and answers to fan questions in 9 lengthy letters." },
 	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003", body: "The passing of Northampton-based folk music legend Tom Hall prompted Pat to pen a memorial."},
+	'press/20020709_starindia': { parent: 'writings', title: "The Star Of India Restaurant", summary: "2002", body: "Northampton's Star of India restaurant is dearly loved by the artist" },
+	'press/20040512_wilson_about': { parent: 'writings', title: 'Wilson Explainer', summary: '2002', body: '"I started the Wilson project fondly imagining that it would be a solo thing"' },
+	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994", body: "Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.  Includes then-current news and answers to fan questions in 9 lengthy letters." },
+	fanclub: { parent: 'writings', title: 'Fan Club', summary: "1986", body: "Early Fan Club issues" },
 
 	mailinglist: { parent: 'etc', title: 'Mailing List', summary: '1989-2003', body: "The genesis of this Jazz Butcher website was the mailing list that David Whittemore maintained. During the 15 years it was active, several hundred technically-inclined JBC fans kept in touch and posted thousands of email messages." },
 	auction: { parent: 'etc', title: 'Website Auction', summary: '1997', body: "The Butcher had some memorabilia sitting around his home which he was sick of tripping over. So, we decided to have an auction." },

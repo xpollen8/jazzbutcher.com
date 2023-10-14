@@ -3322,7 +3322,7 @@ ${define(_set, false)}
 #live	endif
 #live	if (getval(pix_current) == .jpg)
 
-#live	if (defined(update))
+#live	if (defined(UX))
 #live		if (sql(insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}"))
 #live		endif
 #live	endif
@@ -3350,7 +3350,7 @@ ${define(_set, false)}
 #live	else
 	<br/>
 	<blockquote> ${truncAt(${EOD}, ${p_${idx}[${y}]})} </blockquote>
-#live	if (getval(update))
+#live	if (getval(UX))
 #live		if (sql(insert IGNORE into gigtext set datetime="${datetime}", type="review", ${credit2SQL(review_credits)}  body="${stripWhitespace(${literalizeQuotes(${truncAt(${EOD}, ${p_${idx}[${y}]})})})}"))
 #live		endif
 #live	endif
@@ -3407,13 +3407,13 @@ ${define(_set, false)}
 #live	endif
 
 #define	doPosterSQL(prefix)
-#live	if (defined(update))
+#live	if (defined(UX))
 #live		if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", image="${stripWhitespace(${ts2PosterLink(${${prefix}->datetime})})}", ${credit2SQL(${prefix}->postercredit)} type="poster"))
 #live		endif
 #live	endif
 
 #define	doPostersSQL(prefix, posters)
-#live	if (defined(update))
+#live	if (defined(UX))
 #live		if (makeArray(s, ${EOS}, ${unfilter(${posters})}))
 #live			loop(x, 1, ${s->numResults})
 
@@ -3695,14 +3695,14 @@ ${define(_set, false)}
 
 #live	if (defined(soundman))
 	${g_sound(g=${soundman})}
-#live	if (getval(update))
+#live	if (getval(UX))
 #live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="soundman", credit='', body="${stripWhitespace(${literalizeQuotes(${soundman})})}"))
 #live		endif
 #live	endif
 #live	endif
 
 #live	if (defined(recording))
-#live	if (getval(update))
+#live	if (getval(UX))
 #live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="recording", credit='', body="${stripWhitespace(${literalizeQuotes(${recording})})}"))
 #live		endif
 #live	endif
@@ -3713,7 +3713,7 @@ ${define(_set, false)}
 #live	endif
 
 #live	if (defined(bootlegger))
-#live	if (getval(update))
+#live	if (getval(UX))
 #live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="bootlegger", credit='', body="${stripWhitespace(${literalizeQuotes(${bootlegger})})}"))
 #live		endif
 #live	endif
@@ -3904,7 +3904,7 @@ ${define(_set, false)}
 	</div>
 	${endTab}
 
-#live	if (getval(update))
+#live	if (getval(UX))
 #live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="notes", ${credit2SQL(nx_credits)}  body="${stripWhitespace(${literalizeQuotes(${truncAt(${EOD}, ${nx_current})})})}"))
 #live		endif
 #live	endif
@@ -3929,7 +3929,7 @@ ${define(_set, false)}
 		${parseCredit(${filterProgramArguments(${px_credits})})}
 	</div>
 	${endTab}
-#live	if (getval(update))
+#live	if (getval(UX))
 #live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="selfreview", ${credit2SQL(px_credits)}  body="${stripWhitespace(${literalizeQuotes(${truncAt(${EOD}, ${px_current})})})}"))
 #live		endif
 #live	endif

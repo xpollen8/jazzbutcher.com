@@ -457,7 +457,7 @@ p::first-letter {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin: 6px 0px 7px 0px;
+	margin: 0px 0px 7px 0px;
 	padding: 5px;
 	background-color: rgba(175,241,228,0.5);
 }

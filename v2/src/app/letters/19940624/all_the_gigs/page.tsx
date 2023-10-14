@@ -11,7 +11,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '6Jun94;;/letters/19940624', 'All The Gigs' ] } />
-	<main className="etc">
+	<main>
 		<LetterHeader title="THE JAZZ BUTCHER CONSPIRACY THE WHOLE STORY"
 			subhead=<><i>Up-to-date information is available <Link href="/gigs"> in greatly expanded database format</Link></i></> />
 		The first JBC dates are shrouded in confusion.

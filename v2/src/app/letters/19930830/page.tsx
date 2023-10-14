@@ -7,7 +7,7 @@ import MakeSimpleURI from '@/components/MakeSimpleURI';
 const Letter = () => 
 <>
 	<Header section='letters' title='30Aug93'/>
-	<main className="etc">
+	<main>
 		<div className="flex flex-wrap justify-around">
 			<div className="min-w-[50%]">
 				<MakeSimpleURI uri="/letters/93Aug30/intro.html" text="Introduction" />

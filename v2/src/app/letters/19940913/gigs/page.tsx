@@ -8,7 +8,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Gigs' ] } />
-	<main className="etc">
+	<main>
 		{green} now fully re-assimilated into live line-up, alongside
 		{dooj}, {gab}, {hend} and myself.  Since when we have played:
 		<p />

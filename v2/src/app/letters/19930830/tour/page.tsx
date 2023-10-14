@@ -8,7 +8,7 @@ import { AU, FR, HO, DE, _4AD, belly, dooj, girls, haus, kathie, lix, nick, pat,
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '30Aug93;;/letters/19930830', '1993 Euro Tour' ]} />
-	<main className="etc">
+	<main>
 		<LetterHeader title="1993 EUROPEAN TOUR REPORT" />
 		<b>15.2</b>
 		<blockquote className="annotation">

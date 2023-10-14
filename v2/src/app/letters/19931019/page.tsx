@@ -19,7 +19,7 @@ const topics = [
 const Letter = () =>
 <>
 	<Header section='letters' title='19Oct93'/>
-	<main className="etc">
+	<main>
 		<LetterHeader title="DUCK EVERYBODY!  THE OLD FOOL's COMING IN LINE AGAIN..." />
 		<div className="flex flex-wrap justify-around">
 			<div className="min-w-[50%]">

@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 const Letter = () => 
 <>
 	<Header section='letters' title='14Feb90'/>
-	<main className="etc">
+	<main>
 			<blockquote className="annotation">
 			<Image className="float-right" width={397/1.7} height={219/1.7} alt="[signature]" src="https://jazzbutcher.com/images/19900214/90Feb14_sig.gif" />
 				The <Link href="/releases/cult">new l.p.</Link>

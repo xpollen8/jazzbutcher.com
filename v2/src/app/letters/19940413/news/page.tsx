@@ -7,7 +7,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', 'News' ] } />
-	<main className="etc">
+	<main>
 		<b>Those Old Records</b>
 		<p />
 		It now looks more likely than ever that {scandal} and

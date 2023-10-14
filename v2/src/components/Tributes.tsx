@@ -1,5 +1,6 @@
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import EmbedMedia from '@/components/EmbedMedia';
+import Tag from '@/components/Tag';
 
 const texts = [
 	{ uri: '/eulogy', text: 'Alan Moore',
@@ -72,8 +73,8 @@ const music = [
 		},
 ];
 
-export const TributeText = () => <div className="border"><p className="text-center text-xl">Tributes In Words</p> <p /> {texts.map(MakeSimpleURI)}<p /></div>
-export const TributeAudio = ()  => <div className="border"><p className="text-center text-xl">Tributes In Audio</p> <p /> {music.map(MakeSimpleURI)}</div>
+export const TributeText = () => <div className="border"><Tag>Tributes In Words</Tag> <p /> {texts.map(MakeSimpleURI)}<p /></div>
+export const TributeAudio = ()  => <div className="border"><Tag>Tributes In Audio</Tag> <p /> {music.map(MakeSimpleURI)}</div>
 
 const Tributes = () => <>
 	<TributeText />

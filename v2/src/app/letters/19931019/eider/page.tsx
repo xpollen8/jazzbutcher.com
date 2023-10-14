@@ -6,7 +6,7 @@ import { max, dj, vu } from '@/lib/defines';
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '19Oct93;;/letters/19931019', 'Eider' ] } />
-	<main className="etc">
+	<main>
 		<LetterHeader title="WHERE IS EIDER MAN?" />
 		<samp>
 			&gt; Tue, 23 Mar 1993<br />

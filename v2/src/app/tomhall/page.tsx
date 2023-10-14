@@ -9,7 +9,7 @@ import { pat, ill, curt } from '@/lib/defines';
 const TomHall = () => {
 	return (<>
 		<Header section='tomhall' />
-		<main className="etc">
+		<main>
 			<LetterHeader title="Tom Hall" subhead="(1944-2003)" />
 			<blockquote className="annotation">
 				Tom Hall, itinerant musician, 

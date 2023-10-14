@@ -9,7 +9,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', 'Garage' ] } />
-	<main className="etc">
+	<main>
 		<LetterHeader title="UPSTAIRS AT THE GARAGE, LONDON" subhead=<Link href="/gigs/1994/Mar10.html">10th MARCH 1994</Link> />
 		A new &quot;acoustic&quot; venue in the heart of fashionable Islington
 		plays host to something which my agent calls THE JAZZ

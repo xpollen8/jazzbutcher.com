@@ -8,7 +8,7 @@ import {
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Harlan' ] } />
-	<main className="etc">
+	<main>
 		<LetterHeader title=<>THE <Link href="/lyrics/harlan.html"> HARLAN</Link> THING</> />
 		<samp>
 		&gt; Date: Thu, 14 Jul 1994 23:18:05 -0400<br />

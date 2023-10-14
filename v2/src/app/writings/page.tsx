@@ -7,7 +7,7 @@ const Writings = () =>
 <>
 	<Header section='writings' />
 	<main>
-		<Tag>Written words that don't fit neatly elsewhere</Tag>
+		<Tag>Written words that don&apos;t fit neatly elsewhere</Tag>
 		<SectionOptions section='writings' />
 	</main>
 	<Footer />

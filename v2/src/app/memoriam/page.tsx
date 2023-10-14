@@ -16,10 +16,10 @@ const Memoriam = () =>
 				<Memorial />
 			</div>
 			<div className="w-1/4 max-w-xl grow">
-				<TributeText />
-			</div>
-			<div className="max-w-xl grow">
 				<TributeAudio />
+			</div>
+			<div className="w-1/4 max-w-xl grow">
+				<TributeText />
 			</div>
 		</div>
 	</main>

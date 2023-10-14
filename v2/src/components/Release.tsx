@@ -72,7 +72,7 @@ const PerformanceCredits = ({ who, album_credits, song_credits }: { who: string,
 const ReleaseSongList = ({ songs }: { songs: any[] }) => {
 	if (!songs?.length) return;
 	return (<>
-		<Tag>Songs</Tag>
+		<Tag>Tracks</Tag>
 		<blockquote>
 			{songs?.sort((a: any, b: any) => a.type.localeCompare(b.type))?.map((item: any, key: number) => {
 				return <div key={key}>

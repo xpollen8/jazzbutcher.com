@@ -397,6 +397,7 @@
 		)},
 		notes=${literalizeCommas(
 		)},
+		photosets=/images/19990909/19990909_group.jpg;;${literalizeCommas(Pat, Kevin, David, Max, Owen, Brian Kelly)}$$,
 		pat=${literalizeCommas(
 			The presence of David J and Kevin Haskins (aka The Bowerhouse Brothers) 
 			leant something of a horror rock element to tonight's set.

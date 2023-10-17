@@ -63,7 +63,7 @@ const Lyrics = (props: any, foundon: any[]) => {
 	)
 }
 
-const FoundOn = (song: any, releases: any) =>
+const FoundOn = (releases: any) =>
 	!!(releases?.length) && <>
 		<Tag>Found On</Tag>
 		<blockquote>
@@ -158,7 +158,7 @@ const Lyric = ({ params }: { params?: any }) => {
 				<main>
 					<Tag>{song?.title}</Tag>
 					{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon)}</div>)}
-					{FoundOn(song, foundon)}
+					{FoundOn(foundon)}
 				</main>
 			</>)
 		})()}

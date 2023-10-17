@@ -4006,6 +4006,9 @@ ${define(_set, false)}
 		<span class="album_title">
 #live	if (defined(${prefix}->href))
 			<a class="album_href" href="${${prefix}->href}">${${prefix}->title}</a>
+#live		if (getval(${prefix}->type) == demo)
+				(<b class="smalltext">Demo</b>)
+#live		endif
 #live	else
 			${${prefix}->title}
 #live	endif

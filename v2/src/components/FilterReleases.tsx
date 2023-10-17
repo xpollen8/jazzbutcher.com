@@ -18,14 +18,15 @@ const filterOptions = [
 	{ field: "type:EP", display: "EPs" },
 	{ field: "type:demo", display: "Demos" },
 	{ field: "type:live", display: "Live" },
-	{ field: "type:dvd", display: "DVDs" },
-	{ field: "type:CDR", display: "CDRs" },
+	{ field: "media:dvd", display: "DVDs" },
+	{ field: "media:CDR", display: "CDRs" },
+	{ field: "media:cassette", display: "Cassettes" },
 ];
 
 const	FilterReleases = ({ project, filters }: { project?: string, filters?: any }) => {
 	const filtersUsed = parseFilters(filters || '') || [];
 	const { data, isLoading, error } = useReleases();
-	const releases = data?.results?.sort((a: ReleaseType, b: ReleaseType) => parseYear(b.dtreleased) - parseYear(a.dtreleased)).filter((a: ReleaseType) => (project) ? a?.project === project : !a?.project);
+	const releases = data?.results?.sort((a: ReleaseType, b: ReleaseType) => parseYear(b.dtreleased) - parseYear(a.dtreleased)).filter((a: ReleaseType) => (project) ? a?.project === project : true);
 	return <Suspense fallback=<>Loading...</> >
 		{(!isLoading && releases) && <>
 			{(() => {
@@ -42,7 +43,7 @@ const	FilterReleases = ({ project, filters }: { project?: string, filters?: any 
 						const thumb = truncAt(';;', item?.thumb);
 						return (<div key={key} className="drop-shadow-sm">
 							<InfoTag text={`${parseYear(item.dtreleased)}: ${item?.type?.replace('project', '').replace(',,', ',').replace(/^,/, '').replace(/,$/, '')}`}/>
-							{/*<div className={`gig_${item?.project}`}/>*/}
+							<div className={`gig_${item?.project}`}/>
 							<div style={{ maxWidth: '250px' }} className="outline outline-slate-300 drop-shadow-sm">
 								{(item?.href) && <Link key={key} href={item?.href}><Image src={`https://jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" /></Link>}
 								{(!item?.href) && <Image src={`https://jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" />}

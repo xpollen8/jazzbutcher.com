@@ -3561,7 +3561,21 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[95]->notes
 	The brilliant madness of Alan Moore meets the Sumosonic soul food of the ear courtesy of Pat Fish.  Kaiju Love song at it's best.
 
-#define	albums->numResults	95
+#define	albums[96]->buy
+#define	albums[96]->lookup	sumosonic_demo
+#define	albums[96]->media	cassette
+#define	albums[96]->label	
+#define	albums[96]->catalog
+#define	albums[96]->type	demo,project
+#define	albums[96]->href	${jbc_albums}/sumosonic_demo.html
+#define	albums[96]->dtreleased	1997
+#define	albums[96]->title	This Is Sumo
+#define	albums[96]->thumb	/images/sumo/sumosonic_demo_cover
+#define	albums[96]->project sumo
+#define	albums[96]->blurb
+	Unlike the Creation "This Is Sumo" release, Pat sings lead on all tracks.
+
+#define	albums->numResults	96
 
 #define	lookupAlbumBy(l, f=lookup, backupF=href)
 #live	loop(li, 1, ${albums->numResults})

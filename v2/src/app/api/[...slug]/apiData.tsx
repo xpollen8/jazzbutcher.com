@@ -85,7 +85,7 @@ const apiData = async (path: string, args?: string) => {
 			const foundList = await apiDataFromDataServer('releases_by_song', encodeURIComponent(song));
 			return {
 				lyrics,
-				foundon: foundList?.results?.map(({ lookup, media }: any) => ({ ...releases?.results?.find((r: any) => lookup === r.lookup), media })),
+				foundon: foundList?.results?.map(({ lookup, media }: any) => ({ ...releases?.results?.find((r: any) => lookup === r.lookup), mediaurl: media })),
 			}
 		}
 		case 'songs_by_release': {

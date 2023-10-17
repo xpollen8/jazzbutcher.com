@@ -19,7 +19,7 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 				media={media !== 'NULL' ? media : ''}
 				label={expand(label)}
 				buy={buy}
-				title={title}
+				title=<>{title} {(type?.includes('demo')) ? <span className="smalltext">(Demo)</span> : ''}</>
 				image={truncAt(';;', thumb || '')}
 				alt={`${title} cover`}
 			>

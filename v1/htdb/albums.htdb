@@ -4222,18 +4222,32 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=sumosonic_demo, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=sumosonic_demo)}
-	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", media=https://sumosonic.com/audio/come_friendly_spacemen.mp3, url=${jbc_lyrics}/sumosonic_come_friendly_spacemen.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=2, song="Monks Of Kung Fu", media=https://sumosonic.com/audio/monks_of_kung_fu.mp3, url=${jbc_lyrics}/sumosonic_monks_of_kung_fu.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=3, song="God's Green Earth", media=https://sumosonic.com/audio/gods_green_earth.mp3, url=${jbc_lyrics}/sumosonic_gods_green_earth.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=4, song="Business And Work", media=https://sumosonic.com/audio/business_and_work.mp3, url=${jbc_lyrics}/sumosonic_business_and_work.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=5, song="Destroy All Monsters", media=https://sumosonic.com/audio/destroy_all_monsters.mp3, url=${jbc_lyrics}/sumosonic_destroy_all_monsters.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=6, song="Stupid", media=https://sumosonic.com/audio/hey_stoopid.mp3, url=${jbc_lyrics}/sumosonic_stupid.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=7, song="Everything Is Wonderful", media=https://sumosonic.com/audio/everything_is_wonderful.mp3, url=${jbc_lyrics}/sumosonic_everything_is_wonderful.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Bside, ordinal=1, song="Fern Schnell Gut", media=https://sumosonic.com/audio/fern_schnell_gut.mp3, url=${jbc_lyrics}/sumosonic_fern_schnell_gut.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Bside, ordinal=2, song="Cat's Life", media=https://sumosonic.com/audio/cats_life.mp3, url=${jbc_lyrics}/sumosonic_cats_life.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Bside, ordinal=3, song="My Ultimate Baby", media=https://sumosonic.com/audio/my_ultimate_baby.mp3, url=${jbc_lyrics}/sumosonic_my_ultimate_baby.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Bside, ordinal=4, song="We Are The Traffic", media=https://sumosonic.com/audio/we_are_the_traffic.mp3, url=${jbc_lyrics}/sumosonic_we_are_the_traffic.html)}
-	${addAlbumPerf(release=sumosonic_demo, type=Bside, ordinal=5, song="Sputnik", media=https://sumosonic.com/audio/sputnik.mp3, url=${jbc_lyrics}/sumosonic_sputnik.html)}
+	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", media=https://sumosonic.com/audio/come_friendly_spacemen.mp3, url=${jbc_lyrics}/sumosonic_come_friendly_spacemen.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=2, song="Monks Of Kung Fu", media=https://sumosonic.com/audio/monks_of_kung_fu.mp3, url=${jbc_lyrics}/sumosonic_monks_of_kung_fu.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=3, song="God's Green Earth", media=https://sumosonic.com/audio/gods_green_earth.mp3, url=${jbc_lyrics}/sumosonic_gods_green_earth.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=4, song="Business And Work", media=https://sumosonic.com/audio/business_and_work.mp3, url=${jbc_lyrics}/sumosonic_business_and_work.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=5, song="Destroy All Monsters", media=https://sumosonic.com/audio/destroy_all_monsters.mp3, url=${jbc_lyrics}/sumosonic_destroy_all_monsters.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=6, song="Stupid", media=https://sumosonic.com/audio/hey_stoopid.mp3, url=${jbc_lyrics}/sumosonic_stupid.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Aside, ordinal=7, song="Everything Is Wonderful", media=https://sumosonic.com/audio/everything_is_wonderful.mp3, url=${jbc_lyrics}/sumosonic_everything_is_wonderful.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Bside, ordinal=1, song="Fern Schnell Gut", media=https://sumosonic.com/audio/fern_schnell_gut.mp3, url=${jbc_lyrics}/sumosonic_fern_schnell_gut.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Bside, ordinal=2, song="Cat's Life", media=https://sumosonic.com/audio/cats_life.mp3, url=${jbc_lyrics}/sumosonic_cats_life.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Bside, ordinal=3, song="My Ultimate Baby", media=https://sumosonic.com/audio/my_ultimate_baby.mp3, url=${jbc_lyrics}/sumosonic_my_ultimate_baby.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Bside, ordinal=4, song="We Are The Traffic", media=https://sumosonic.com/audio/we_are_the_traffic.mp3, url=${jbc_lyrics}/sumosonic_we_are_the_traffic.html, project=sumo)}
+	${addAlbumPerf(release=sumosonic_demo, type=Bside, ordinal=5, song="Sputnik", media=https://sumosonic.com/audio/sputnik.mp3, url=${jbc_lyrics}/sumosonic_sputnik.html, project=sumo)}
+
+	${jbc_footer}
+#live	endif
+
+#define	audio_aquatic_demo.html
+#live	if (getval(page) = audio_aquatic_demo.html)
+	${mkAlbumHeader(lookup=audio_aquatic_demo, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=audio_aquatic_demo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", media=/audio/AudioAquatic/AudioAquatic_01_ComeFriendlySpacemen.mp3, url=${jbc_lyrics}/sumosonic_come_friendly_spacemen.html, version=extended, project=sumo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=2, song="God's Green Earth", media=/audio/AudioAquatic/AudioAquatic_02_GodsGreenEarth.mp3, url=${jbc_lyrics}/sumosonic_gods_green_earth.html, project=sumo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=3, song="Fern Schnell Gut", media=/audio/AudioAquatic/AudioAquatic_03_FernSchnellGut.mp3, url=${jbc_lyrics}/sumosonic_fern_schnell_gut.html, project=sumo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=4, song="Destroy All Monsters", media=/audio/AudioAquatic/udioAquatic_04_DestroyAllMonsters.mp3, url=${jbc_lyrics}/sumosonic_destroy_all_monsters.html, project=sumo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=5, song="We Are The Traffic", media=/audio/AudioAquatic/AudioAquatic_06_WeAreTheTraffic.mp3, url=${jbc_lyrics}/sumosonic_we_are_the_traffic.html, project=sumo)}
 
 	${jbc_footer}
 #live	endif
@@ -4559,8 +4573,8 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=1,  song="Play It All Night Long", author=Warren Zevon, project=wilson)}
 	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=2,  song="Critters", project=wilson)}
 	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=3,  song="Filter Kings", project=wilson)}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=4,  song="Quality People", project=wilson)}
-	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=5,  song="Police Chief", project=wilson)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=4,  song="Quality People", project=wilson, media=https://www.youtube.com/embed/Hic-yax9asQ)}
+	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=5,  song="Police Chief", project=wilson, media=https://www.youtube.com/embed/lvEN14PM_5M)}
 	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=6,  song="Buffalo Sniper", project=wilson)}
 	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=7,  song="Dark Agenda", project=wilson)}
 	${addAlbumPerf(release=dvd_wilson_no_known_predators, ordinal=8,  song="Two Dragons", project=wilson)}

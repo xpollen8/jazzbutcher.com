@@ -108,6 +108,7 @@
 #live			if (sql(insert IGNORE into media set project="${project}", datetime="${datetime}",  type="video", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${${anno}})})})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
 #live			endif
 #live		else
+#insert IGNORE into media set project="${project}", datetime="${datetime}", type="video", comment="${literalizeQuotes(${comment})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}";
 #live			if (sql(insert IGNORE into media set project="${project}", datetime="${datetime}", type="video", comment="${literalizeQuotes(${comment})}", href="${url}", collection="${collection}", name="${name}", credit="${credit}", images="${images}"))
 #live			endif
 #live		endif
@@ -843,7 +844,7 @@
 #live	endif
 
 #define	linkSong(title, href, audio, mp3, author, pdf)
-	<!-- BEG:expanded_from:[song:${title}] -->
+#	<!-- BEG:expanded_from:[song:${title}] -->
 #live	if (defined(update))
 #live		if (sql(insert IGNORE into song set name="${literalizeQuotes(${literalizeCommas(${title})})}", href="${href}", audio="${audio}", mp3="${mp3}", author="${author}"))
 #live		endif
@@ -862,7 +863,7 @@
 	<span class="song_author">(${author})</span>
 #live	endif
 	</span>
-	<!-- expanded_from:[song:${title}]:END -->
+#	<!-- expanded_from:[song:${title}]:END -->
 
 #define	linkSingle(title, href)
 	${linkSQL(single, ${title}, ${href})}

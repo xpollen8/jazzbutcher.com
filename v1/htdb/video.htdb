@@ -83,45 +83,45 @@
 #define	fetchGigThingSummary(p)
 	<a href="${jbc_gigs}/${ts2URI(${${p}->datetime})}"><b>${substr(0, 10, ${${p}->datetime})}</b></a> ${replace(${${p}->venue}, @, at)}, ${${p}->city} ${${p}->country}
 
-#define	Wilson_BackingTracks[1]->title	${wilson_battle_time}
+#define	Wilson_BackingTracks[1]->title	Battle Time
 #define	Wilson_BackingTracks[1]->aws	Wilson_BackingTracks_BattleTime
 #define	Wilson_BackingTracks[1]->hasMP3	yes
-#define	Wilson_BackingTracks[2]->title	${wilson_buffalo_sniper}
+#define	Wilson_BackingTracks[2]->title	Buffalo Sniper
 #define	Wilson_BackingTracks[2]->aws	Wilson_BackingTracks_BuffaloSniper
 #define	Wilson_BackingTracks[2]->hasMP3	yes
-#define	Wilson_BackingTracks[3]->title	${wilson_critters}
+#define	Wilson_BackingTracks[3]->title	Critters
 #define	Wilson_BackingTracks[3]->aws	Wilson_BackingTracks_Critters
 #define	Wilson_BackingTracks[3]->hasMP3	yes
-#define	Wilson_BackingTracks[4]->title	${wilson_dark_agenda}
+#define	Wilson_BackingTracks[4]->title	Dark Agenda
 #define	Wilson_BackingTracks[4]->aws	Wilson_BackingTracks_DarkAgenda
 #define	Wilson_BackingTracks[4]->hasMP3	yes
-#define	Wilson_BackingTracks[5]->title	${wilson_filter_kings}
+#define	Wilson_BackingTracks[5]->title	Filter Kings
 #define	Wilson_BackingTracks[5]->aws	Wilson_BackingTracks_FilterKings
-#define	Wilson_BackingTracks[6]->title	${wilson_hippy_shit}
+#define	Wilson_BackingTracks[6]->title	Hippy Shit
 #define	Wilson_BackingTracks[6]->aws	Wilson_BackingTracks_HippyShit
 #define	Wilson_BackingTracks[6]->hasMP3	yes
-#define	Wilson_BackingTracks[7]->title	${wilson_istanbul_connection}
+#define	Wilson_BackingTracks[7]->title	Istanbul Connection
 #define	Wilson_BackingTracks[7]->aws	Wilson_BackingTracks_IstanbulConnection
 #define	Wilson_BackingTracks[7]->hasMP3	yes
-#define	Wilson_BackingTracks[8]->title	${wilson_no_winners}
+#define	Wilson_BackingTracks[8]->title	No Winners
 #define	Wilson_BackingTracks[8]->aws	Wilson_BackingTracks_NoWinners
 #define	Wilson_BackingTracks[8]->hasMP3	yes
-#define	Wilson_BackingTracks[9]->title	${wilson_play_it_all_night_long}
+#define	Wilson_BackingTracks[9]->title	Play It All Night Long
 #define	Wilson_BackingTracks[9]->aws	Wilson_BackingTracks_PlayItAllNightLong
 #define	Wilson_BackingTracks[9]->hasMP3	yes
-#define	Wilson_BackingTracks[10]->title	${wilson_police_chief}
+#define	Wilson_BackingTracks[10]->title	Police Chief
 #define	Wilson_BackingTracks[10]->aws	Wilson_BackingTracks_PoliceChief
 #define	Wilson_BackingTracks[10]->hasMP3	yes
-#define	Wilson_BackingTracks[11]->title	${wilson_quality_people}
+#define	Wilson_BackingTracks[11]->title	Quality People
 #define	Wilson_BackingTracks[11]->aws	Wilson_BackingTracks_QualityPeople
 #define	Wilson_BackingTracks[11]->hasMP3	yes
-#define	Wilson_BackingTracks[12]->title	${wilson_saturday_night}
+#define	Wilson_BackingTracks[12]->title	Saturday Night
 #define	Wilson_BackingTracks[12]->aws	Wilson_BackingTracks_SaturdayNight
 #define	Wilson_BackingTracks[12]->hasMP3	yes
-#define	Wilson_BackingTracks[13]->title	${wilson_secret_government}
+#define	Wilson_BackingTracks[13]->title	Secret Government
 #define	Wilson_BackingTracks[13]->aws	Wilson_BackingTracks_SecretGovernment
 #define	Wilson_BackingTracks[13]->hasMP3	yes
-#define	Wilson_BackingTracks[14]->title	${wilson_two_dragons}
+#define	Wilson_BackingTracks[14]->title	Two Dragons
 #define	Wilson_BackingTracks[14]->aws	Wilson_BackingTracks_TwoDragons
 #define	Wilson_BackingTracks[14]->hasMP3	yes
 
@@ -146,8 +146,13 @@
 #
 #	noun:gigs_with_video
 #
-#live   if (sql(v:select g.* from gig g, gigsong gs where find_in_set('video', g.extra) and g.datetime=gs.datetime and gs.mediaurl is not NULL group by g.datetime order by g.datetime desc))
+#live   if (sql(v:select g.*, gs.mediaurl, gs.mediacredit, gs.song, gs.setnum, gs.type, gs.ordinal, gs.mediacrediturl, gs.comment  from gig g, gigsong gs where find_in_set('video', g.extra) and g.datetime=gs.datetime and gs.mediaurl is not NULL group by g.datetime order by g.datetime desc))
 #live   while (i = v[*]->gig_id)
+
+#live	if (getval(update))
+#live		if (sql(insert IGNORE into media set datetime="${v[${i}]->datetime}", type="video", subtype="live", comment="${literalizeQuotes(${v[${i}]->comment})}", href="${literalizeQuotes(${v[${i}]->mediaurl})}", collection="${literalizeQuotes(${v[${i}]->venue};;${v[${i}]->city};;${v[${i}]->country})}", name="${literalizeQuotes(${v[${i}]->song})}", ordinal="${v[${i}]->type};;${v[${i}]->setnum};;${v[${i}]->ordinal}", credit="${literalizeQuotes(${v[${i}]->mediacredit};;${v[${i}]->mediacrediturl})}"))
+#live		endif
+#live	endif
 
 #live	if (define(currentYear, ${substr(0, 4, ${v[${i}]->datetime})}))
 #live	endif
@@ -175,19 +180,19 @@
 	<a href="${jbc_lyrics}/sumosonic_monks_of_kung_fu.html">Monks Of Kung Fu</a>
 	${tag_end}
 	<div class="listenItem">
-	${embedVideo(project=sumo, collection=Pat Home Videos, url=/video/sumosonic/sumosonic_monks_of_kung_fu, anno=ano)}
+	${embedVideo(project=sumo, name=Monks Of Kung Fu, collection=Pat Home Videos, url=/video/sumosonic/sumosonic_monks_of_kung_fu, anno=ano)}
 	</div>
 	${tag_beg}
 	<a href="${jbc_lyrics}/sumosonic_gods_green_earth.html">God's Green Earth</a>
 	${tag_end}
 	<div class="listenItem">
-	${embedVideo(project=sumo, collection=Pat Home Videos, url=/video/sumosonic/sumosonic_gods_green_earth, anno=ano)}
+	${embedVideo(project=sumo, name=God's Green Earth, collection=Pat Home Videos, url=/video/sumosonic/sumosonic_gods_green_earth, anno=ano)}
 	</div>
 	${tag_beg}
 	<a href="${jbc_lyrics}/sumosonic_sputnik.html">Sputnik</a>
 	${tag_end}
 	<div class="listenItem">
-	${embedVideo(project=sumo, collection=Pat Home Videos, url=/video/sumosonic/sumosonic_sputnik, anno=ano)}
+	${embedVideo(project=sumo, name=Sputnik, collection=Pat Home Videos, url=/video/sumosonic/sumosonic_sputnik, anno=ano)}
 	</div>
 	${endTab}
 
@@ -204,7 +209,7 @@
 #live	while (x = Wilson_BackingTracks[*]->title)
 	<div class="listenItem">
 		<div>
-		${linkSong(title=${Wilson_BackingTracks[${x}]->title})}
+		${linkSong(title=${wilson_${lower(${space2underscore(${Wilson_BackingTracks[${x}]->title})})}})}
 		</div>
 #live	if (getval(Wilson_BackingTracks[${x}]->comment))
 			(${Wilson_BackingTracks[${x}]->comment})
@@ -213,7 +218,7 @@
 			${linkAudio(project=wilson, collection=Curtis' Backing Tracks, mp3=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws}.mp3)}
 #live	else
 #live	endif
-		${embedVideo(project=wilson, collection=Curtis' Backing Tracks, url=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws})}
+		${embedVideo(project=wilson, name=${Wilson_BackingTracks[${x}]->title}, collection=Curtis' Backing Tracks, url=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws})}
 	</div>
 #live	endwhile
 	${tag_beg}
@@ -234,7 +239,7 @@
 	<a href="${jbc_lyrics}/wilson_istanbul_connection.html">Istanbul Connection</a>
 	${tag_end}
 	<div class="listenItem">
-	${embedVideo(url=https://www.youtube.com/embed/r074mp41514)}
+	${embedVideo(project=wilson, name=Istanbul Connection, url=https://www.youtube.com/embed/r074mp41514)}
 	</div>
 	${endTab}
 
@@ -246,7 +251,7 @@
 		${etcVideo[${i}]->credit}
 		)}
 	)}
-	${embedVideo(url=${etcVideo[${i}]->mediaurl}, anno=ano, datetime=${etcVideo[${i}]-date})}
+	${embedVideo(url=${etcVideo[${i}]->mediaurl}, anno=ano, datetime=${etcVideo[${i}]->date})}
 	</div>
 #live	endwhile
 	${tag_beg}

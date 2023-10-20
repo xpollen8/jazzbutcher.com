@@ -39,9 +39,9 @@ export const GigSearchDialog = () => {
 	const [isPending, startTransition] = useTransition();
 
 	const [f, setF] = useState(searchParams.get('f') || 'anything');
-	const [q, setQ] = useState(searchParams.get('q') || '');
+	const [q, setQ] = useState(searchParams.get('q'));
 
-	const setNavigation = (_f: string = 'anything', _q: string) => {
+	const setNavigation = (_f: string = 'anything', _q: string | null) => {
 		startTransition(() => {
 			if (_q) {
 				const searchParams = new URLSearchParams();
@@ -80,7 +80,6 @@ export const GigSearchDialog = () => {
 		>
 				<div className="m-1">
 					<select className="p-2" value={f as string || 'anything'} onChange={(e) => {
-							//debounce(setNavigation(e.target.value, q));
 							setF(e.target.value);
 						}}>
 						{/*<option key={'blank'} className="-1">Find..</option>*/}
@@ -89,8 +88,7 @@ export const GigSearchDialog = () => {
 				</div>
 				<div className="p-1">
 					<input type="text" value={q as string || ''} placeholder="contains.." onChange={(e) => {
-						//debounce(setNavigation(f, e.target.value));
-							setQ(e.target.value);
+						setQ(e.target.value);
 					}} className="p-1" />
 				</div>
 				<span className="w-1/4">

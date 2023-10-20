@@ -8,7 +8,7 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, lab
 	label?: string
 	media?: string
 	alt?: string
-	title?: string
+	title?: string | React.ReactElement
 	buy?: string
 	buy_title?: string
 	className?: string

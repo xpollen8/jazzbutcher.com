@@ -3358,6 +3358,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[83]->media	CDR
 #define	albums[83]->blurb
 	Two song demo.
+#define	albums[83]->credit	David Whittemore
 
 #define	albums[84]->buy
 #define	albums[84]->type	project,CDR,demo
@@ -3379,6 +3380,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
     Tracks contain elements of everything.
 #define	albums[84]->blurb
 	Two song demo.
+#define	albums[84]->credit	David Whittemore
 
 #define	albums[85]->buy
 #define	albums[85]->type	project,CDR,demo
@@ -3397,6 +3399,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 	Six song demo.
 #define	albums[85]->liner
     Recorded by MC Bot on the Roland VS-1800 at Subsound, NN1 during 2001 and 2002. The words to "Play It All Night Long" are by Warren Zevon. Everything else is original pirate material. Increase the peace.
+#define	albums[85]->credit	David Whittemore
 
 #define	albums[86]->buy     https://thejazzbutcher.bandcamp.com/album/the-violent-years
 #define	albums[86]->type	compilation
@@ -3561,7 +3564,38 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[95]->notes
 	The brilliant madness of Alan Moore meets the Sumosonic soul food of the ear courtesy of Pat Fish.  Kaiju Love song at it's best.
 
-#define	albums->numResults	95
+#define	albums[96]->buy
+#define	albums[96]->lookup	sumosonic_demo
+#define	albums[96]->media	cassette
+#define	albums[96]->label	
+#define	albums[96]->catalog
+#define	albums[96]->type	demo,project
+#define	albums[96]->href	${jbc_albums}/sumosonic_demo.html
+#define	albums[96]->dtreleased	1997
+#define	albums[96]->title	This Is Sumo
+#define	albums[96]->thumb	/images/sumo/sumosonic_demo_cover
+#define	albums[96]->project sumo
+#define	albums[96]->blurb
+#define	albums[96]->blurb
+	Unlike the Creation "This Is Sumo" release, Pat sings lead on all tracks.
+#define	albums[96]->credit	David Whittemore
+
+#define	albums[97]->buy
+#define	albums[97]->lookup	audio_aquatic_demo
+#define	albums[97]->media	cassette
+#define	albums[97]->label	
+#define	albums[97]->catalog
+#define	albums[97]->type	demo,project
+#define	albums[97]->href	${jbc_albums}/audio_aquatic_demo.html
+#define	albums[97]->dtreleased	1997
+#define	albums[97]->title	Audio Aquatic
+#define	albums[97]->thumb	/images/sumo/audio_aquatic;;Andrew Brooksbank;;;;2017-06-17
+#define	albums[97]->project sumo
+#define	albums[97]->blurb
+	"Audio Aquatic" was an early working name for Sumosonic. Most tracks from this tape are the same as the later "Sumosonic Demo Cassette".
+#define	albums[97]->credit	Andrew Brooksbank;;;;2017-06-17
+
+#define	albums->numResults	97
 
 #define	lookupAlbumBy(l, f=lookup, backupF=href)
 #live	loop(li, 1, ${albums->numResults})

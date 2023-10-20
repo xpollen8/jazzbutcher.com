@@ -8,7 +8,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 import Tag from '@/components/Tag';
 import { Source, Credit } from '@/components/GenericWeb';
 import usePressArticle from '@/lib/usePressArticle';
-import { parseDomain, parseCaptionsSourcesEtc, dateDiff, dateDisplay, ts2URI } from '@/lib/macros';
+import { parseDomain, parseCaptionsSourcesEtc, dateDiff, dateDisplay, ts2URI } from '@/lib/utils';
 import { AutoLinkPlayer, expand } from '@/lib/defines';
 
 const PressItem = ({ item }: { item: any }) => {

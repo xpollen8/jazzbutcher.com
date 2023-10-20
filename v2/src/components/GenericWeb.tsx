@@ -1,4 +1,4 @@
-import { dateDiff, parseDate, parseDomain, linkInternal, linkExternal } from '@/lib/macros';
+import { dateDiff, parseDate, parseDomain, linkInternal, linkExternal } from '@/lib/utils';
 import * as defines from '@/lib/defines';
 
 const	genericWeb = ({ x, g, u, t, s, d, p }: {

@@ -1,7 +1,7 @@
 import { Credit, Contribution } from './GenericWeb';
 import FeaturedItem from './FeaturedItem';
 import { type ReleaseType, type ReleaseTypeWithChildren } from './Release';
-import { truncAt, parseCredit } from '@/lib/macros';
+import { truncAt, parseCredit } from '@/lib/utils';
 import { expand } from '@/lib/defines';
 
 const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined) => {

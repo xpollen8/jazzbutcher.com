@@ -1,4 +1,4 @@
-import { parseDay, parseYear, ts2URI } from '@/lib/macros';
+import { parseDay, parseYear, ts2URI } from '@/lib/utils';
 import Link from 'next/link';
 
 type GigResults = {

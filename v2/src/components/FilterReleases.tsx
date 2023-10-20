@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import useReleases from '@/lib/useReleases';
 import { type ReleaseType } from '@/components/Release';
-import { truncAt, parseYear } from '@/lib/macros';
+import { truncAt, parseYear } from '@/lib/utils';
 import InfoTag from '@/components/InfoTag';
 
 import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';

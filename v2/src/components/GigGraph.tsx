@@ -1,4 +1,4 @@
-import { type RecordType} from '@/lib/macros';
+import { type RecordType} from '@/lib/utils';
 
 export const GigBarTypes: RecordType = {
 	other: {

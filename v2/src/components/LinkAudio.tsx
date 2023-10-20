@@ -3,7 +3,7 @@
 import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { truncAt, autoLink, linkExternal } from '@/lib/macros';
+import { truncAt, autoLink, linkExternal } from '@/lib/utils';
 import useRelease from '@/lib/useRelease';
 
 const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comment, wav, mp3, url, artist, author, autolink = false, children }: {

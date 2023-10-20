@@ -7,7 +7,7 @@ import { Suspense } from 'react';
 import { usePathname } from 'next/navigation';
 
 import usePageComments from '@/lib/usePageComments';
-import { type CommentType, dateDiff } from '@/lib/macros';
+import { type CommentType, dateDiff } from '@/lib/utils';
 
 const Comment = ({ subject, dtcreated, who, whence, comments }: CommentType, key: number) => (
 	<div key={key} className="comment">

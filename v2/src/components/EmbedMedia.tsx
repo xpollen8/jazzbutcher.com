@@ -1,6 +1,6 @@
 import LinkAudio from '@/components/LinkAudio';
 import EmbedVideo from '@/components/EmbedVideo';
-import { parseDomain, autoLink } from '@/lib/macros';
+import { autoLink } from '@/lib/utils';
 import { Attribution } from '@/components/GenericWeb';
 
 const Performers = ({ datetime }: { datetime: string }) => {

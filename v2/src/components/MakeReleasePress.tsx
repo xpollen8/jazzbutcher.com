@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { dateDiff } from '@/lib/macros';
+import { dateDiff } from '@/lib/utils';
 import useReleasePress from '@/lib/useReleasePress';
 import Tag from '@/components/Tag';
 

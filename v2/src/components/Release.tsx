@@ -12,7 +12,7 @@ import MakeReleasePress from '@/components/MakeReleasePress';
 import EmbedMedia from '@/components/EmbedMedia';
 import useReleaseSongs from '@/lib/useReleaseSongs';
 import { gab, expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
-import { truncAt, parseCaptionsSourcesEtc } from '@/lib/macros';
+import { truncAt, parseCaptionsSourcesEtc } from '@/lib/utils';
 
 export type ReleaseType =  {
 	type?: string

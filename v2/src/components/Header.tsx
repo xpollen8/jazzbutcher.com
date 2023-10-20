@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next'
 
-import { parseCaptionSourceEtc } from '@/lib/macros';
+import { parseCaptionSourceEtc } from '@/lib/utils';
 import { useSearchParams } from 'next/navigation';
 import PageComments from '@/components/PageComments';
  
@@ -58,8 +58,8 @@ const sections : { [key: string]: BreadCrumb } = {
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives', rootHideChildren: true },
 	'press?filters=type%3B%3Bpat': { parent: 'gigs', title: "Pat's Gig Reviews" },
 	'press?filters=title%3B%3BPunter': { parent: 'gigs', title: "Fans' Gig Reviews" },
-	posters: { parent: 'gigs', title: 'Posters', summary: 'Gig Ephemera', inParentDirectory: true },
-	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
+//TODO	posters: { parent: 'gigs', title: 'Posters', summary: 'Gig Ephemera', inParentDirectory: true },
+//TODO	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
 
 	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The musicians', rootHideChildren: true },
 	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals" },

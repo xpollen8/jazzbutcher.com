@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from 'next/link';
 import usePresses from '@/lib/usePresses';
 import useReleases from '@/lib/useReleases';
-import { truncAt, parseYear, parseProject, pressFiltersInclude } from '@/lib/macros';
+import { truncAt, parseYear, parseProject, pressFiltersInclude } from '@/lib/utils';
 import InfoTag from '@/components/InfoTag';
 import Tag from '@/components/Tag';
 import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';

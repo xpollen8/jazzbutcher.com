@@ -1,6 +1,6 @@
 "use client"
 
-import { parseCredit } from '@/lib/macros';
+import { parseCredit } from '@/lib/utils';
 import useAudioLive from '@/lib/useAudioLive';
 import EmbedMedia from '@/components/EmbedMedia';
 import LetterHeader from '@/components/LetterHeader';

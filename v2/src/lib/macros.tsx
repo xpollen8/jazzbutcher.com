@@ -1,4 +1,3 @@
-import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import moment from 'moment';
@@ -34,8 +33,8 @@ export type CommentType = {
 	comments: string
 }
 
-const linkExternal = (href: string, text?: string | React.ReactNode): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
-const linkInternal = (href: string, text?: string): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
+const linkExternal = (href: string, text?: string | React.ReactElement): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
+const linkInternal = (href: string, text?: string | React.ReactElement): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
 const parseYear = (datetime?: string): number => (datetime && parseInt(datetime.substr(0, 4), 10)) || 0;
 const parseMonth = (datetime: string): number => parseInt(localDate(datetime).substr(5, 2), 10);

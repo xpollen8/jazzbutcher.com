@@ -71,10 +71,10 @@ const Conspirator = ({ params }: { params?: any }) => {
 		<Header section="conspirators" title={person?.name} />
 		<main>
 			<Tag>{person?.name}</Tag>
+			This is a work in progress..
 			<PersonGallery str={person?.images} />
-			<Player person={person?.name} />
-			<Act person={person?.name} />
-			work in progress..
+			{(person?.name) && <Player person={person.name} />}
+			{(person?.name) && <Act person={person.name} />}
 		</main>
 		<Footer />
 	</>;

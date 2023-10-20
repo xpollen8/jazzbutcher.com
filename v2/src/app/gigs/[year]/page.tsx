@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { SearchDialog, SearchResults, BannerGigs } from '@/components/GigSearch';
+import { GigSearchDialog, GigSearchResults, BannerGigs } from '@/components/GigSearch';
 import ResultNavigator from '@/components/ResultNavigator';
 import useGigs from '@/lib/useGigs';
 import { PrevArrow, NextArrow } from '@/components/Arrows';
@@ -31,10 +31,10 @@ const Gigs = () => {
 		<Header section='gigs' title={year} extraNav=<ExtraNav year={iyear} /> >
 			<ResultNavigator searchParams={queryString} uriPrefix='/gigs' />
 		</Header>
-		<SearchDialog />
+		<GigSearchDialog />
 		{(data?.error) && <h1 style={{ color: 'red' }}>{data?.error}</h1>}
 		<Suspense fallback={<>Loading...</>}>
-			<SearchResults results={data} banner={() => BannerGigs(data, iyear) } />
+			<GigSearchResults results={data} banner={() => BannerGigs(data, iyear) } />
 		</Suspense>
 		<Footer />
 	</>)

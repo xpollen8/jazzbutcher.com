@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import { useState, useTransition } from 'react';
-import { type RecordType } from '@/lib/utils';
+import { type RecordType, type HashedType } from '@/lib/utils';
 import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parseDay, num2mon, ts2URI } from '@/lib/utils';
 import GigGraph, { GigBarTypes } from '@/components/GigGraph';
 
@@ -31,7 +31,7 @@ type SearchResultType = {
 	searchTerms?: string[]
 }
 
-export const SearchDialog = () => {
+export const GigSearchDialog = () => {
 	const router = useRouter();
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
@@ -102,7 +102,7 @@ export const SearchDialog = () => {
 	)
 }
 
-export const SearchResults = ({ results={}, banner }: { results: SearchResultType, banner?: any }): React.ReactNode => {
+export const GigSearchResults = ({ results={}, banner }: { results: SearchResultType, banner?: any }): React.ReactNode => {
 	const options = gigSearchOptionsByType(results?.type);
 	const layout = options.layout;
 	const template = options?.template;

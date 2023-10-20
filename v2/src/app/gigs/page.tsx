@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation'
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionOptions from '@/components/SectionOptions';
-import { SearchDialog, SearchResults, BannerGigs } from '@/components/GigSearch';
+import { GigSearchDialog, GigSearchResults, BannerGigs } from '@/components/GigSearch';
 import useGigs from '@/lib/useGigs';
 
 const Gigs = () => {
@@ -16,12 +16,12 @@ const Gigs = () => {
 
 	return (<>
 		<Header section='gigs' />
-		<SearchDialog />
+		<GigSearchDialog />
 		{(data?.error) && <h1 style={{ color: 'red' }}>{data.error}</h1>}
 		<SectionOptions section="gigs" />
 		{(isLoading) ?
 			<>Loading..</>
-			: <SearchResults results={data} banner={() => BannerGigs(data) }/>
+			: <GigSearchResults results={data} banner={() => BannerGigs(data) }/>
 		}
 		<Footer />
 	</>)

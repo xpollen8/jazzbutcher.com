@@ -37,6 +37,7 @@ const useGigs = ({ type, query, year }: any) => {
 			.then((res) => res.json())
 			.then(gigs => {
 
+				//console.log("GIGS", JSON.stringify(gigs));
 				// TODO - have a time-based cache invalidation
 				//console.log("SET LOCAL");
 				//localStorage.setItem('gigs', JSON.stringify(gigs));
@@ -45,7 +46,8 @@ const useGigs = ({ type, query, year }: any) => {
 			});
 		}
 
-	const route = (year?.length) ? `/api/${options.route}/${year}` : `/api/${options.route}`;
+	const route = (year?.length) ? `/api/${options.route}/${year}` : 
+		(query ? `/api/${options.route}/${query}` : `/api/${options.route}`);
 
 	const { data, error, isLoading } = useSWR([ route, { year, type, query }], fetcher);
 

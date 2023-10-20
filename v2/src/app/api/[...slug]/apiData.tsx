@@ -3,6 +3,11 @@
 import { localDate } from '@/lib/macros';
 import { type HashedType, type RecordType, type CommentType } from '@/lib/macros';
 
+import gigsStatic from '@/../public/data/gigs.json';
+import pressesStatic from '@/../public/data/presses.json';
+import lyricsStatic from '@/../public/data/lyrics.json';
+import releasesStatic from '@/../public/data/releases.json';
+
 const cache: HashedType = {};
 
 const censorEmail = (str: string) => {
@@ -52,22 +57,31 @@ const apiData = async (path: string, args?: string) => {
 	//console.log("apiData", { path, args });
 
 	switch (path) {
+		case 'lyrics':
+			return lyricsStatic;
+			break;
+		case 'presses':
+			return pressesStatic;
+			break;
+		case 'gigs':
+			return gigsStatic;
+			break;
 		case 'gig_by_datetime':
 		case 'gigmedias':
-		case 'gigs':
 		case 'gigtexts':
 		case 'gigsongs':
 		case 'performances':
 		case 'gigs_with_audio':
 		case 'release_audio_by_project':
 		case 'audio_by_project':
-		case 'presses':
+		case 'release_video_by_project':
+		case 'live_video_by_project':
+		case 'video':
 		case 'medias':
 		case 'credits_by_release':
 		case 'presses_by_release':
 		case 'press_by_href':
 		case 'presses_for_admin':
-		case 'lyrics':
 		case 'songs_by_datetime':
 			return await apiDataFromDataServer(path, args);
 		case 'feedbacks':
@@ -153,7 +167,9 @@ const apiData = async (path: string, args?: string) => {
 			return { ...gigsongs, results }
 		}
 		case 'releases':
-			return await apiDataFromHTDBServer('db_albums/data.json');
+			return releasesStatic;
+			//return await apiDataFromHTDBServer('db_albums/data.json');
+			break;
 		case 'release_by_lookup': {
 			if (args)
 			return await apiDataFromHTDBServer(`db_albums/data.json?lookup=${args}`);

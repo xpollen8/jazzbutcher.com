@@ -5,6 +5,7 @@ import MakeSimpleURI from '@/components/MakeSimpleURI';
 import FilterReleases from '@/components/FilterReleases';
 import FilterPresses from '@/components/FilterPresses';
 import AudioReleases from '@/components/AudioReleases';
+import VideoReleases from '@/components/VideoReleases';
 
 const Wilson = (props: any) => 
 <>
@@ -15,6 +16,7 @@ const Wilson = (props: any) =>
 		</MakeSimpleURI>
 		<FilterReleases project='wilson' filters={props.searchParams?.filters} />
 		<AudioReleases project='wilson' />
+		<VideoReleases project='wilson' />
 		<FilterPresses project='wilson' />
 	</main>
 	<Footer />

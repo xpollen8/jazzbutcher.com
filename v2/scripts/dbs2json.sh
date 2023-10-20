@@ -47,6 +47,7 @@ function htdb_fetch () {
 echo "-------------"
 date
 echo "-------------"
+fetch lyrics lyrics.json
 fetch gigs gigs.json
 fetch gigsongs gigsongs.json
 fetch gigtexts gigtexts.json

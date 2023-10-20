@@ -9,6 +9,8 @@ import Tag from '@/components/Tag';
 import { people, expand, mapPerformers, AutoLinkPlayer } from '@/lib/defines';
 import { imageThumb, imageFull, parseCaptionsSourcesEtc} from '@/lib/utils';
 import { Credit } from '@/components/GenericWeb';
+import useGigs from '@/lib/useGigs';
+import { GigSearchResults } from '@/components/GigSearch';
 
 //import useConspirator from '@/lib/useConspirator';
 
@@ -24,6 +26,26 @@ const PersonGallery = (props: { str?: string }) => {
 			{(credit) && <Credit g={credit} u={crediturl} d={creditdate} />}
 		</div>
 	})
+}
+
+const Player = ({ person }: { person: string }) => {
+	const { data, isLoading, error } = useGigs({ type: 'performer', query: person?.replace(/ /g, '_') });
+	return (<>
+		{(isLoading) ?
+			<>Loading..</>
+			: !!(data?.results?.length) && <GigSearchResults results={data} banner={() => <Tag>As a Performer</Tag> } />
+		}
+	</>)
+}
+
+const Act = ({ person }: { person: string }) => {
+	const { data, isLoading, error } = useGigs({ type: 'alsowith', query: person?.replace(/ /g, '_') });
+	return (<>
+		{(isLoading) ?
+			<>Loading..</>
+			: !!(data?.results?.length) && <GigSearchResults results={data} banner={() => <Tag>Also On The Bill</Tag> } />
+		}
+	</>)
 }
 
 const Conspirator = ({ params }: { params?: any }) => {
@@ -50,6 +72,8 @@ const Conspirator = ({ params }: { params?: any }) => {
 		<main>
 			<Tag>{person?.name}</Tag>
 			<PersonGallery str={person?.images} />
+			<Player person={person?.name} />
+			<Act person={person?.name} />
 			work in progress..
 		</main>
 		<Footer />

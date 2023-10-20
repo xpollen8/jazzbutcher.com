@@ -5,6 +5,7 @@ import { useState, useTransition } from 'react';
 import { type RecordType, type HashedType } from '@/lib/utils';
 import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parseDay, num2mon, ts2URI } from '@/lib/utils';
 import GigGraph, { GigBarTypes } from '@/components/GigGraph';
+import { AutoLinkPlayer, AutoLinkSong, AutoLinkAct } from '@/lib/defines';
 
 import IconSonglist from '@/svg/IconSonglist';
 import IconPix from '@/svg/IconPix';
@@ -154,7 +155,7 @@ const layoutPerformer = (record: RecordType, key: number) => {
 		<Venue record={...gig} />
 		<div style={{ marginBottom: '15px' }}>Musician:{' '}
 		<i>
-			{record?.performer}
+			{AutoLinkPlayer(record?.performer)}
 		</i>
 		</div>
 	</div>
@@ -166,7 +167,7 @@ const layoutSongs = (record: RecordType, key: number) => {
 		<Venue record={...gig} />
 		<div style={{ marginBottom: '15px' }}>Played:{' '}
 		<i>
-			&quot;{record?.song}&quot;
+			&quot;{AutoLinkSong(record?.song)}&quot;
 		</i>
 		</div>
 	</div>
@@ -352,7 +353,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 									<div dangerouslySetInnerHTML={{__html: record?.blurb }}/>
 								</b>
 								<i>
-								<div dangerouslySetInnerHTML={{__html: record?.alsowith }}/>
+								<div>{AutoLinkAct(record?.alsowith)}</div>
 								</i>
 							</div>
 							{layout(record, record?.datetime)}

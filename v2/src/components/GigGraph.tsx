@@ -1,6 +1,6 @@
 import { type RecordType} from '@/lib/macros';
 
-export const types: RecordType = {
+export const GigBarTypes: RecordType = {
 	other: {
 		title: 'JBC',
 		color: '#333',
@@ -74,7 +74,7 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', queryString='' }:
 	if (!(gigs.length)) return <></>;	// no data
 
 	const totalColar = '#ee0';
-	const extras: string[] = Object.keys(types);
+	const extras: string[] = Object.keys(GigBarTypes);
 	const sums: RecordType = {};
 	extras.forEach((e: string) => { sums[e] = 0 });
 
@@ -134,15 +134,15 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', queryString='' }:
 								const num = sums[type];
 								if (num > 0) {
 									return <div key={key} className="flex m-1">
-										<Bar color={types[type].color} background={types[type].background} width={calcWidth(num, maxGigs)} num={num} />
+										<Bar color={GigBarTypes[type].color} background={GigBarTypes[type].background} width={calcWidth(num, maxGigs)} num={num} />
 										{(num === gigs.length)
 											?  <b>
 													<span style={{ color: 'blue' }}>
-													{types[type].title}
+													{GigBarTypes[type].title}
 													</span>
 												</b>
 											: <span className="smalltext">
-													{types[type].title}
+													{GigBarTypes[type].title}
 												</span>
 										}
 									</div>

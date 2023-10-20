@@ -543,17 +543,15 @@ samp {
 .breadcrumb li:not(:last-child)::after {
 	display: inline-block;
 	color: #666;
-	font-weight: bold;
 	content: "→";
 }
-.breadcrumb li:hover, summary a{
-	color: #333;
+.breadcrumb li:not(:last-child):hover, summary a{
 	background: white;
-	padding: -4px;
 }
 .breadcrumb li:last-child span{
 	background: lightyellow;
-	padding: 7px;
+	padding: 4px 3px 6px 3px;
+	margin-left: 5px;
 	color: #777;
 }
 

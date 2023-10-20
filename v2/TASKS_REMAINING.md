@@ -1,4 +1,4 @@
-# move apiData ito app/api dir, sinec that's only place used now
+√ move apiData ito app/api dir, sinec that's only place used now
 
 # Add components
 	* press in /releases
@@ -6,13 +6,13 @@
 	* audio/video/press/gigs within /project/XXX
 	* nootbook scans to lyrics pages
 
-# ensure ALL releases have correct performance entries for songs
+√ ensure ALL releases have correct performance entries for songs
 
 # add audio link to  performance entries for songs
   * this will take care of accounting for songs without any other association
 
 # port all of /articles
-	* will now be /mailinglist
+	√ will now be /mailinglist
 	* the year 2000 does appear to be in my old "strangle" mail folder
 	* use hypermail to generate 2000 and/or modify to dump all to database
 
@@ -22,9 +22,9 @@
 # /conspirators
 	* need to structure old people.htdb file into form that can dump to db
 
-# /releases
+√ /releases
 	<strike>
-	* need to structure old albums.htdb file into form that can dump to db
+	√ need to structure old albums.htdb file into form that can dump to db
 	</strike>
 
 # /press
@@ -32,22 +32,22 @@
 	* need to extend the database table to hold everything.
 	</strike>
 
-# what should be on the home page?
+√ what should be on the home page?
 
 # /gallery
 	* needs complete build out
 
-# /gigs
+√ /gigs
 	* finish the templating
 
 # /feedback
 	* need to re-implement in React
 
-# /prejbc
+√ /prejbc
 	* clean it all up after finding a common templating
 
-# /project/sumo|wilson|vaguely familiar|black_eg
-	* gotta bunch of old material to rework
+√ /project/sumo|wilson|vaguely familiar|black_eg
+	√ gotta bunch of old material to rework
 
 # complete the population of the 'entity' database table
 

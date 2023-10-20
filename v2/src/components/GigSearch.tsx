@@ -4,6 +4,7 @@ import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import { useState, useTransition } from 'react';
 import { type RecordType, type HashedType } from '@/lib/utils';
 import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parseDay, num2mon, ts2URI } from '@/lib/utils';
+import { removeHTML } from '@/components/GenericWeb';
 import GigGraph, { GigBarTypes } from '@/components/GigGraph';
 import { AutoLinkPlayer, AutoLinkSong, AutoLinkAct } from '@/lib/defines';
 
@@ -352,9 +353,10 @@ const templateGigs = (results: RecordType, layout: any) => {
 								<b>
 									<div dangerouslySetInnerHTML={{__html: record?.blurb }}/>
 								</b>
-								<i>
-								<div>{AutoLinkAct(record?.alsowith)}</div>
-								</i>
+								{record?.alsowith?.split(',')?.map((a: string) => {
+									return <div className="listItem">{AutoLinkAct(removeHTML(a.trim()))}</div>
+									}
+									)}
 							</div>
 							{layout(record, record?.datetime)}
 							{!!(icons?.length) && (

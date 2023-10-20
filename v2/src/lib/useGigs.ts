@@ -1,5 +1,5 @@
 import useSWR from 'swr';
-import { getOptions } from '@/lib/macros';
+import { gigSearchOptionsByType } from '@/components/GigSearch';
 
 const filterGigs = (gigs: any, query: any, year: any, type: any, options: any) => {
 	gigs.query = query;
@@ -24,7 +24,7 @@ const filterGigs = (gigs: any, query: any, year: any, type: any, options: any) =
 const useGigs = ({ type, query, year }: any) => {
 	// TODO have fetchGig add .prevGig & .nextGig to object
 	// NOTE: array to bust SWR cache
-	const options = getOptions(type);
+	const options = gigSearchOptionsByType(type);
 	const fetcher = async ([ url, { year, type, query } ]: any) => {
 		/*
 		const localValue = await localStorage.getItem('gigs');

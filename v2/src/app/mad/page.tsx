@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import { dateDiff } from '@/lib/macros';
+import { dateDiff } from '@/lib/utils';
 import { curt, terry } from '@/lib/defines';
 
 const madness = [

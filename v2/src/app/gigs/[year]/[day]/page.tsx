@@ -7,7 +7,7 @@ import './styles.css';
 import EmbedMedia from '@/components/EmbedMedia';
 
 import { AutoLinkPlayer, AutoLinkAct } from '@/lib/defines';
-import { parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, ts2URI, dateDiff } from '@/lib/macros';
+import { parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, ts2URI, dateDiff } from '@/lib/utils';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';

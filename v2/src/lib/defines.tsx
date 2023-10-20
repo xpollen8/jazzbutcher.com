@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { linkInternal, linkExternal } from './macros';
+import { linkInternal, linkExternal } from './utils';
 
 const linkSearch = ({ name, text, act }:
 {

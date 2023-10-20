@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { autoLink, linkExternal } from '@/lib/macros';
+import { autoLink, linkExternal } from '@/lib/utils';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';

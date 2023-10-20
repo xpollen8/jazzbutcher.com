@@ -6,10 +6,8 @@ import Link from 'next/link';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import SearchDialog from '@/components/SearchDialog';
-import SearchResults from '@/components/SearchResults';
+import { SearchDialog, SearchResults, BannerGigs } from '@/components/GigSearch';
 import ResultNavigator from '@/components/ResultNavigator';
-import { bannerGigs } from '@/lib/macros';
 import useGigs from '@/lib/useGigs';
 import { PrevArrow, NextArrow } from '@/components/Arrows';
 
@@ -36,7 +34,7 @@ const Gigs = () => {
 		<SearchDialog />
 		{(data?.error) && <h1 style={{ color: 'red' }}>{data?.error}</h1>}
 		<Suspense fallback={<>Loading...</>}>
-			<SearchResults results={data} banner={() => bannerGigs(data, iyear) } />
+			<SearchResults results={data} banner={() => BannerGigs(data, iyear) } />
 		</Suspense>
 		<Footer />
 	</>)

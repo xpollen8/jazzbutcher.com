@@ -6,7 +6,7 @@ import { useEffect, useState, useTransition } from 'react';
 import { Suspense } from 'react';
 import Header from '@/components/Header';
 import PressItem from '@/components/PressItem';
-import { parseProject, pressFiltersInclude } from '@/lib/macros';
+import { parseProject, pressFiltersInclude } from '@/lib/utils';
 
 import usePressesAdmin from '@/lib/usePressesAdmin';
 

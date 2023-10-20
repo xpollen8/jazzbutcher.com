@@ -7,7 +7,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import { people, expand, mapPerformers, AutoLinkPlayer } from '@/lib/defines';
-import { imageThumb, imageFull, parseCaptionsSourcesEtc} from '@/lib/macros';
+import { imageThumb, imageFull, parseCaptionsSourcesEtc} from '@/lib/utils';
 import { Credit } from '@/components/GenericWeb';
 
 //import useConspirator from '@/lib/useConspirator';

@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import EmbedMedia from '@/components/EmbedMedia';
 import LetterHeader from '@/components/LetterHeader';
 import { expand } from '@/lib/defines';
-import { linkInternal } from '@/lib/macros';
+import { linkInternal } from '@/lib/utils';
 import { Credit } from '@/components/GenericWeb';
 
 const tracks = [

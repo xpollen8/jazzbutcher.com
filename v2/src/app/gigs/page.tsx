@@ -1,15 +1,12 @@
 "use client"
 
 import { useSearchParams } from 'next/navigation'
-import { pat, max, owen, eg, at } from '@/lib/defines';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import SearchDialog from '@/components/SearchDialog';
-import SearchResults from '@/components/SearchResults';
 import SectionOptions from '@/components/SectionOptions';
+import { SearchDialog, SearchResults, BannerGigs } from '@/components/GigSearch';
 import useGigs from '@/lib/useGigs';
-import { bannerGigs } from '@/lib/macros';
 
 const Gigs = () => {
 	const searchParams = useSearchParams();
@@ -24,7 +21,7 @@ const Gigs = () => {
 		<SectionOptions section="gigs" />
 		{(isLoading) ?
 			<>Loading..</>
-			: <SearchResults results={data} banner={() => bannerGigs(data) }/>
+			: <SearchResults results={data} banner={() => BannerGigs(data) }/>
 		}
 		<Footer />
 	</>)

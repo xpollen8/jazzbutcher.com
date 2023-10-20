@@ -9,7 +9,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import { removeHTML, Credit, Attribution } from '@/components/GenericWeb';
 import useLyric from '@/lib/useLyric';
-import { parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/macros';
+import { parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/utils';
 
 const	LyricVideo = ({ video }: any) => {
 	if (!video) return;

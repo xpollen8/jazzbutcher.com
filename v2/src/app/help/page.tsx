@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
-import { linkExternal, linkInternal } from '@/lib/macros';
+import { linkExternal, linkInternal } from '@/lib/utils';
 
 const Help = () => <>
 	<Header section='help' />

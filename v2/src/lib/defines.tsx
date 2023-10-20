@@ -10,8 +10,8 @@ const linkSearch = ({ name, text, act }:
 }) =>
 <>
 	{(() => {
-	if (act) return <Link href= {`/gigs?f=alsowith&q=${name}`}>{(text) ? text : name}</Link>
-	return <Link href= {`/gigs?f=performer&q=${name}`}>{(text) ? text : name}</Link>
+	if (act) return <Link href= {`/gigs?f=alsowith&q="${name}"`}>{(text) ? text : name}</Link>
+	return <Link href= {`/gigs?f=performer&q="${name}"`}>{(text) ? text : name}</Link>
 	})()}
 </>
 
@@ -27,7 +27,7 @@ const linkAlbum = (props: { title: string, href?: string }) =>
 const linkSingle = (props: { title: string, href?: string }) =>
 <>
 {(props?.href) ?
-  <span className="release_title"><b><Link href= {props?.href}>{props?.title}</Link></b></span>
+  <span className="release_title"><b><Link href={props?.href}>{props?.title}</Link></b></span>
 	:
 	<span className="release_title"><b>{props?.title}</b></span>
 }
@@ -1110,7 +1110,10 @@ export const AutoLinkAct = (str?: string) => {
 		if (!found) return lookup?.replace(/_/g, ' ');
 		return expand(found);
 	}
-	return str;
+	const lookup = str.replace("'", '').replace(/\./g, '').replace(',', '').replace(/\'/g, '').replace(/ /g, '_');
+	const found = mapActs[lookup];
+	if (!found) return str?.replace(/_/g, ' ');
+	return expand(found);
 }
 
 export const expand = (str?: string, treatAsHTML: boolean = false) => {

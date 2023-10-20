@@ -2,19 +2,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import moment from 'moment';
 import songMap from './songMap';
-import GigGraph, { types } from '@/components/GigGraph';
+import GigGraph, { GigBarTypes } from '@/components/GigGraph';
 
 import IconSonglist from '@/svg/IconSonglist';
 import IconPix from '@/svg/IconPix';
 import IconVideo from '@/svg/IconVideo';
 import IconRecording from '@/svg/IconRecording';
 import IconPlayers from '@/svg/IconPlayers';
-//import IconSetlist from '@/svg/IconSetlist';
 import IconReview from '@/svg/IconReview';
 import IconTicket from '@/svg/IconTicket';
 import IconPress from '@/svg/IconPress';
 import IconInterview from '@/svg/IconInterview';
 //import IconPat from '@/svg/IconPat';
+//import IconSetlist from '@/svg/IconSetlist';
 
 export type RecordType = {
 	[key: string]: any;
@@ -217,18 +217,17 @@ const layoutSongs = (record: RecordType, key: number) => {
 	</div>
 }
 
-const extras: string[] = Object.keys(types);
+const extras: string[] = Object.keys(GigBarTypes);
 
 const determineStyles = (gig: RecordType) => {
 	let ret: any;
 	const useG = (gig?.gig) ? gig.gig : gig;
-	//const extras = useG.extra?.split(',');
 	extras.forEach((e: string) => {
 		if (useG?.extra?.includes(e)) {
-			ret = { type: e, ...types[e] };
+			ret = { type: e, ...GigBarTypes[e] };
 		}
 	})
-	if (!ret) return { type: 'jbc', ...types['other'], extras: useG?.extra };
+	if (!ret) return { type: 'jbc', ...GigBarTypes['other'], extras: useG?.extra };
 	return { type: ret.type, background: ret.background, color: ret.color, extras: useG?.extra }
 }
 
@@ -238,45 +237,42 @@ const layoutGigs = (record: RecordType, key: number) => {
 	</div>
 }
 
-const cache: {
-  [key: string]: any;
-} = {}
-
 const searchRegex = /[^a-z0-9'_ ]/gi;
-const searchSplit = /(?<=^| )("[^"]*"|[^ ]+)(?= |$)/g;
-
-// convert incoming query string into reasonable search terms
-const searchTerms = (query: string): string[] => {
-	const terms = query
-		?.match(searchSplit)
-		?.map((t: string) => t.replace(/"/g, ''))	// clean up quoted terms
-		.map(term => term.trim().toLowerCase())	// normalize
-		.filter(term => term)	// remove blanks
-		.flat()	// and flatten to a single array of terms
-	 || [];
-	const deduped: string[] = [];
-	terms.forEach((t: string) => {
-		if (!deduped.includes(t)) deduped.push(t);
-	})
-
-	return deduped;	// dedupe
-}
-
-const searchRecord = (record: RecordType, target: string, terms: string[]) => (
-	{
-		...record,
-		matchedTerms: terms.filter(term => {
-			// need to remove quote/space from possibly quoted search terms
-			// in order to match the already cleaned-up target string
-			const X = term.replace(searchRegex, '').replace(/["]/g, '').trim();
-			return target?.includes(X)
-			}
-		)
-	}
-)
 
 const filterBy = (res: RecordType, query: string, recordFilter: any) => {
+	// convert incoming query string into reasonable search terms
+	const searchTerms = (query: string): string[] => {
+		const searchSplit = /(?<=^| )("[^"]*"|[^ ]+)(?= |$)/g;
+		const terms = query
+			?.match(searchSplit)
+			?.map((t: string) => t.replace(/"/g, ''))	// clean up quoted terms
+			.map(term => term.trim().toLowerCase())	// normalize
+			.filter(term => term)	// remove blanks
+			.flat()	// and flatten to a single array of terms
+		 || [];
+		const deduped: string[] = [];
+		terms.forEach((t: string) => {
+			if (!deduped.includes(t)) deduped.push(t);
+		})
+
+		return deduped;	// dedupe
+	}
+
 	const terms = searchTerms(query);
+
+	const searchRecord = (record: RecordType, target: string, terms: string[]) => (
+		{
+			...record,
+			matchedTerms: terms.filter(term => {
+				// need to remove quote/space from possibly quoted search terms
+				// in order to match the already cleaned-up target string
+				const X = term.replace(searchRegex, '').replace(/["]/g, '').trim();
+				return target?.includes(X)
+				}
+			)
+		}
+	)
+
 	const filtered = res.results
 		?.map((record: RecordType) => searchRecord(record, recordFilter(record), terms))	// add 'matchedTerms' to object
 		.filter((r: RecordType) => r?.matchedTerms?.length)	// filter out non-matches

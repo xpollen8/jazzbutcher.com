@@ -41,12 +41,16 @@ export const GigSearchDialog = () => {
 	const [f, setF] = useState(searchParams.get('f') || 'anything');
 	const [q, setQ] = useState(searchParams.get('q') || '');
 
-	const setNavigation = (_f: string = '', _q: string = '') => {
-		const searchParams = new URLSearchParams();
-		searchParams.set('f', _f || '');
-		searchParams.set('q', _q || '');
+	const setNavigation = (_f: string = 'anything', _q: string) => {
 		startTransition(() => {
-			router.replace(`${pathname}?${searchParams.toString()}`)
+			if (_q) {
+				const searchParams = new URLSearchParams();
+				searchParams.set('f', _f);
+				searchParams.set('q', _q);
+				router.replace(`${pathname}?${searchParams.toString()}`);
+			} else {
+				router.replace(pathname);
+			}
 		});
 	}
 	const debounce = (func: any) => {
@@ -93,7 +97,9 @@ export const GigSearchDialog = () => {
 					<button type="submit" className="rounded-full m-2 border bg-slate-300 hover:border-black hover:bg-slate-100 w-1/4">Go!</button>
 					{(f && q) && <button onClick={(ev) => {
 						ev.preventDefault();
-						setNavigation('', '');
+							setF('anything');
+							setQ(null);
+							setNavigation('anything', null);
 						}} type="submit" className="rounded-full m-2 border bg-slate-300 hover:border-black hover:bg-slate-100 w-1/4">Clear!</button>}
 				</span>
 		</div>

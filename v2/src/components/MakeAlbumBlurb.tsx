@@ -15,7 +15,7 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 		<div key={key || 0}>
 			<FeaturedItem
 				className={`w-full`}
-				link={inPage ? null : href}
+				link={inPage ? undefined : href}
 				media={media !== 'NULL' ? media : ''}
 				label={expand(label)}
 				buy={buy}

@@ -14,7 +14,7 @@ const ImageStrip = (props: any) => {
 				<Image
 					alt={caption || 'album image'}
 					width={width * 3} height={width * 3}
-					src={`https://v1.jazzbutcher.com${image}_250.jpg`}
+					src={(image.startsWith('http')) ? `${image}_250.jpg` : `https://v1.jazzbutcher.com${image}_250.jpg`}
 				/>
 				{(caption) && <><i>{caption}</i><br/></>}
 				{(source) && <Attribution g={source} u={sourceurl} d={sourcedate} />}

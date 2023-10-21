@@ -7,7 +7,7 @@ import LetterHeader from '@/components/LetterHeader';
 import { expand } from '@/lib/defines';
 
 const music_projects = [
-	{ uri: '/project/black_eg', text: 'The Black Eg', aux: "The brothers Von Dammerung" },
+	{ uri: '/project/black_eg', text: 'The Black Eg', aux: "The brothers Von Dämmerung" },
 	{ uri: '/project/sumosonic', text: 'Sumosonic', aux: "Aka Audio Aquatic" },
 	{ uri: '/project/wilson', text: 'Wilson', aux: "Northampton 'super group'",
 		children: <>

@@ -22,7 +22,7 @@ const LyricList = (props: { lyrics: any[] }) => {
 			}
 			return (<div key={key}>
 				{banner}
-				<Link className="ml-5" href={`/lyrics/${lyric?.href}`}>{lyric?.title}</Link> <span className="smalltext">{lyric?.tablature ? '(Tablature)' : ''} {lyric?.annotated ? '(Annotated)' : ''} {lyric?.is_instrumental ? '(Instrumental)' : ''} {lyric?.project ? lyric.project : ''} {lyric?.video?.length ? '(Video)' : ''} {lyric?.mp3?.includes('/mp3/') ? '(Audio excerpt)' : ((lyric?.mp3?.length) ? '(Audio)' : '')}</span> 
+				<Link className="ml-5" href={`/lyrics/${lyric?.href}`}>{lyric?.title}</Link> <span className="smalltext">{lyric?.tablature ? '(Tablature)' : ''} {lyric?.annotated ? '(Annotated)' : ''} {lyric?.is_instrumental ? '(Instrumental)' : ''} {lyric?.project ? lyric.project : ''} {lyric?.video?.length ? '(Video)' : ''} {lyric?.mp3?.includes('mp3') ? '(Audio excerpt)' : ((lyric?.mp3?.length) ? '(Audio)' : '')} {lyric?.images?.includes('notebook') ? '(Notebook)' : ''}</span> 
 			</div>)
 		})}
 	</>)
@@ -32,6 +32,7 @@ const filters = [
 	 { field: "exists:mp3", display: "w/Audio" },
 	 { field: "exists:video", display: "w/Video" },
 	 { field: "boolean:annotated", display: "w/Annotations" },
+	 { field: "images:notebook", display: "w/Notebook" },
 	 { field: "exists:tablature", display: "w/Tablature" },
 	 { field: "boolean:is_instrumental", display: "Instrumentals" },
 	 { field: "project:wilson", display: "Wilson" },

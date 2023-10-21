@@ -6,7 +6,7 @@ import { expand } from '@/lib/defines';
 
 const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined) => {
 	const { type, href, title, thumb, blurb, dtreleased, dtrecorded, studio, buy, lookup,
-		label, catalog, media, country, contribution, children, } = props; 
+		label, catalog, media, country, contribution, children, inPage=false } = props; 
 	const blurb_credit = props?.credit;
 
 	if (!title) return <></>;
@@ -15,7 +15,7 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 		<div key={key || 0}>
 			<FeaturedItem
 				className={`w-full`}
-				link={href}
+				link={inPage ? undefined : href}
 				media={media !== 'NULL' ? media : ''}
 				label={expand(label)}
 				buy={buy}

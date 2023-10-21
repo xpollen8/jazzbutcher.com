@@ -46,6 +46,7 @@ export type ReleaseType =  {
 	video?: string
 	annotated?: string
 	is_instrumental?: string
+	inPage?: boolean
 }
 
 export type ReleaseTypeWithChildren = ReleaseType & { children?: string | React.ReactElement }
@@ -279,7 +280,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 	return (
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading && songs) && (<>
-				<div key={key}><MakeAlbumBlurb {...release} /></div>
+				<div key={key}><MakeAlbumBlurb {...release} inPage={true} /></div>
 				<ReleaseImages release={release} />
 				<ReleaseDetails release={release} />
 				<ReleaseDownloads release={release} />

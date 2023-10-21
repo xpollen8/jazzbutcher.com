@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Tag from '@/components/Tag';
 
-const LetterHeader = (props: { title: string | React.ReactNode, subhead?: string | React.ReactNode, aux?: string }) =>
+const LetterHeader = (props: { title: string | React.ReactElement, subhead?: string | React.ReactElement, aux?: string | React.ReactElement }) =>
 <>
 	<Tag>
 	{props.title}

@@ -25,7 +25,7 @@ const Conspirators = () => {
 				}
 				return <div key={key}>
 					{banner}
-					<Link className="ml-5" href={`/conspirators/${props?.href || props.name}`}>{props.name}</Link>
+					<Link className="ml-5" href={`/conspirators/${(props?.href && !props?.href.startsWith('http')) ? props?.href : props.name}`}>{props.name}</Link>
 				</div>
 			})}
 		</main>

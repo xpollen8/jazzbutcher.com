@@ -4666,6 +4666,7 @@ Previously available on the ${fishco} LP/CD.
 
 	${clearAlbumPerf(release=va_pulp)}
 	${addAlbumPerf(release=va_pulp, type=Aside, ordinal=9, song="Sweet Jane", author=Lou Reed, version=RPM Club\, Toronto\, 1986-07-24)}
+	${addAlbumPerf(release=va_pulp, type=Bside, ordinal=12, song="Elephant Man")}
 
 	${jbc_footer}
 #live	endif

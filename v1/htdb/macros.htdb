@@ -283,8 +283,8 @@
 		color: #fff;
 	}
 	.gig_sumo:before {
-		content: url(https://jazzbutcher.com/images/sumo/sumo_logo_50.jpg);
-#		content: url(https://jazzbutcher.com/images/sumosonic_logo_50.png);
+		content: url(https://v1.jazzbutcher.com/images/sumo/sumo_logo_50.jpg);
+#		content: url(https://v1.jazzbutcher.com/images/sumosonic_logo_50.png);
 	}
 	.gig_sumo {
 		background-color: #000000;
@@ -293,7 +293,7 @@
 		margin-bottom: 5px;
 	}
 	.gig_eg:before {
-		content: url(https://jazzbutcher.com/images/blackeg_logo_50.png);
+		content: url(https://v1.jazzbutcher.com/images/blackeg_logo_50.png);
 	}
 	.gig_eg {
 		background-color: #eeeeee;
@@ -301,7 +301,7 @@
 		margin-bottom: 5px;
 	}
 	.gig_wilson:before {
-		content: url(https://jazzbutcher.com/images/wilson_logo_50.png);
+		content: url(https://v1.jazzbutcher.com/images/wilson_logo_50.png);
 	}
 	.gig_wilson {
 		background-color: #ee0000;

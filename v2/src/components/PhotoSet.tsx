@@ -9,7 +9,7 @@ const PhotoSet = ({ title, photos, description, credit, credit_url, credit_date 
 }) => <>
 	{(title) && <Tag> {title} </Tag>}
 	{(description) && <blockquote>{description}</blockquote>}
-	{(credit) && <blockquote><Credit g={credit} u={credit_url} d={credit_date} /></blockquote>}
+	{(credit || credit_url) && <blockquote><Credit g={credit} u={credit_url} d={credit_date} /></blockquote>}
 	<div className="flex flex-wrap justify-center gap-3 listItem">
 		{photos.map((w: any, key: number) => {
 			const { src, alt, credit, credit_url, credit_date, body } = w;

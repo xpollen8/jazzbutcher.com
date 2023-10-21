@@ -83,7 +83,7 @@ const AlbumCover = ({ album }: { album?: string }) => {
 	const { data, isLoading, error } = useReleases();
 	const release = data?.results?.find((a: any) => a.lookup === album);
 	return <Suspense fallback=<>Loading...</> >
-		{(!isLoading && data) && <Image className="w-full" src={`https://jazzbutcher.com${release?.thumb}_250.jpg`} width={250} height={250} alt="album cover" />}
+		{(!isLoading && data) && <Image className="w-full" src={`https://v1.jazzbutcher.com${release?.thumb}_250.jpg`} width={250} height={250} alt="album cover" />}
 	</Suspense>
 }
 
@@ -127,7 +127,7 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 						<div className={`outline outline-slate-300 drop-shadow-sm gig_${parseProject(item.type)}`}>
 							<Link key={key} href={item.url}>
 								{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}
-								{(thumb) && <Image className="w-full" src={`https://jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" />}
+								{(thumb) && <Image className="w-full" src={`https://v1.jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" />}
 								<div className="mx-2 text-center">
 									{(!(item?.album || thumb)) && <div className="h-5" />}
 									<div className="h-2" />

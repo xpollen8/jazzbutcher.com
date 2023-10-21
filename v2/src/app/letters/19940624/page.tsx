@@ -19,7 +19,7 @@ const Letter = () =>  {
 				</div>
 				<div className="m-1">
 					<center>
-						<p /><Image width={270} height={122} alt="[signature]" src="https://jazzbutcher.com/images/19940624/94Jun24_sig.gif" />
+						<p /><Image width={270} height={122} alt="[signature]" src="https://v1.jazzbutcher.com/images/19940624/94Jun24_sig.gif" />
 					</center>
 				</div>
 			</div>

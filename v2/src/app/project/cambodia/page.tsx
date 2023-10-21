@@ -9,8 +9,8 @@ import { linkInternal } from '@/lib/utils';
 import { Credit } from '@/components/GenericWeb';
 
 const tracks = [
-    { title: "We Are The Traffic", comment: "#1", mediaurl: "https://jazzbutcher.com/audio/Cambodia/199108_Cambodia_WeAreTheTraffic_No1.mp3" },
-		{ title: "We Are The Traffic", comment: "#2", mediaurl: "https://jazzbutcher.com/audio/Cambodia/199108_Cambodia_WeAreTheTraffic_No2.mp3" },
+    { title: "We Are The Traffic", comment: "#1", mediaurl: "https://v1.jazzbutcher.com/audio/Cambodia/199108_Cambodia_WeAreTheTraffic_No1.mp3" },
+		{ title: "We Are The Traffic", comment: "#2", mediaurl: "https://v1.jazzbutcher.com/audio/Cambodia/199108_Cambodia_WeAreTheTraffic_No2.mp3" },
 ];
 
 const Cambodia = () => {

@@ -11,17 +11,17 @@ const Artwork = () =>
 	<main>
 		<div className="flex flex-wrap justify-around border pt-5">
 			<div className="m-1">
-				<Link href="https://jazzbutcher.com/images/advert.gif">
-					<Image width={400} height={400} alt="[advert]" src="https://jazzbutcher.com/images//advert.gif" />
+				<Link href="https://v1.jazzbutcher.com/images/advert.gif">
+					<Image width={400} height={400} alt="[advert]" src="https://v1.jazzbutcher.com/images//advert.gif" />
 				</Link>
 			</div>
 			<div className="min-w-[50%]">
 				<LetterHeader title="Extracted Images:" />
-				<MakeSimpleURI uri="https://jazzbutcher.com/images//notes.gif" text="Happy Notes" />
-				<MakeSimpleURI uri="https://jazzbutcher.com/images//HappyNotes.gif" text="Happy Notes (processed)" />
-				<MakeSimpleURI uri="https://jazzbutcher.com/images//sky.gif" text="Happy Clouds" />
-				<MakeSimpleURI uri="https://jazzbutcher.com/images//them.gif" text="Happy Cassettes" />
-				<MakeSimpleURI uri="https://jazzbutcher.com/images//fish.gif" text="Somber Fish" />
+				<MakeSimpleURI uri="https://v1.jazzbutcher.com/images//notes.gif" text="Happy Notes" />
+				<MakeSimpleURI uri="https://v1.jazzbutcher.com/images//HappyNotes.gif" text="Happy Notes (processed)" />
+				<MakeSimpleURI uri="https://v1.jazzbutcher.com/images//sky.gif" text="Happy Clouds" />
+				<MakeSimpleURI uri="https://v1.jazzbutcher.com/images//them.gif" text="Happy Cassettes" />
+				<MakeSimpleURI uri="https://v1.jazzbutcher.com/images//fish.gif" text="Somber Fish" />
 			</div>
 		</div>
 		<hr />

@@ -39,7 +39,7 @@ const NeilSpencer = () => {
 			alsatian. Could white men play the blues? You had the answer, there in
 			a 12-bar tune whose lyrics are still with me:<br />
 			<Image alt="Neil Spencer and Tom Hall"
-				className="float-right m-3" src="https://jazzbutcher.com/images/tom_hall_neil_spencer.jpg" width={222} height={291} />
+				className="float-right m-3" src="https://v1.jazzbutcher.com/images/tom_hall_neil_spencer.jpg" width={222} height={291} />
 			<br />
 			<blockquote>
 			&apos;I wanna be a blues guitarist,<br />

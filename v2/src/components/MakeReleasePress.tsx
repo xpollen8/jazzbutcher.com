@@ -18,7 +18,7 @@ export const PressSummary = (r: any, key: number) => {
 			{dateDiff(r.dtpublished, '')}
 			{(r.added) && <><br />Added: {dateDiff(r.added, '')}</>}
 		</div>
-		{(thumb) && <Image className="" width={200} height={200} alt="article thumbnail" src={`https://jazzbutcher.com${thumb}_250.jpg`} />}
+		{(thumb) && <Image className="" width={200} height={200} alt="article thumbnail" src={`https://v1.jazzbutcher.com${thumb}_250.jpg`} />}
 	</div></Link>)
 }
 

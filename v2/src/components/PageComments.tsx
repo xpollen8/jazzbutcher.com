@@ -38,7 +38,7 @@ export const CommentBubble = (props: any) => {
 	if (0) {
 		return (<span className="commentBubble flex">
 			{props?.children}
-			<Image src="https://jazzbutcher.com/images/horn_flipped_40.png" width={50} height={50} alt="comments" className="ml-2"/>
+			<Image src="https://v1.jazzbutcher.com/images/horn_flipped_40.png" width={50} height={50} alt="comments" className="ml-2"/>
 		</span>)
 	} else {
 		return (

@@ -26,7 +26,7 @@ const Tribute = () =>
 	<main className="etc">
 		<LetterHeader title="THAT TRIBUTE ALBUM IN FULL" subhead="The Butcher writes" />
 		<div className="lyric_annotation">
-			<Image src="https://jazzbutcher.com/images/tribute_notes.jpg" width={301} height={328} alt="Pat&apos;s Tribute Note" style={{ float: "right" }} />
+			<Image src="https://v1.jazzbutcher.com/images/tribute_notes.jpg" width={301} height={328} alt="Pat&apos;s Tribute Note" style={{ float: "right" }} />
 			<p>
 			Living - as you do - with a Nameless Dread, I was anticipating the arrival of the JBC tribute
 			record with some considerable furrowing of brow. It was surely going to be the Mother Of

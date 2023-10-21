@@ -26,7 +26,7 @@ const Letter = () =>
 				{topics.map(MakeSimpleURI)}
 			</div>
 			<div className="mt-10">
-				<Image width={351} height={163} alt="[signature]" src="https://jazzbutcher.com/images/19931019/93Oct19_sig.gif" />
+				<Image width={351} height={163} alt="[signature]" src="https://v1.jazzbutcher.com/images/19931019/93Oct19_sig.gif" />
 			</div>
 		</div>
 	</main>

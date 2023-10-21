@@ -11,7 +11,7 @@ const WesternTape = () =>
 	<Header section="etc" title="Western Family Tape" />
 		<main className="etc">
 			<Link href="/releases/western.html"><Image
-					src="https://jazzbutcher.com/images/western_250.jpg"
+					src="https://v1.jazzbutcher.com/images/western_250.jpg"
 					height={250} width={250} alt="western cover" className="float-left m-3" /></Link>
 			<br />
 			{family},

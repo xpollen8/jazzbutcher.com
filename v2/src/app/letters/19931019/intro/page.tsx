@@ -13,7 +13,7 @@ const Letter = () =>
 		to come on line here and there to sort out one or two
 		of the more inquisitive and/or misguided participants.  Oh-hoh! 
 		<p />
-		<Image className="float-right" width={250} height={250} alt="[signature]" src="https://jazzbutcher.com/images/19931019/93Oct19_sig.gif" />
+		<Image className="float-right" width={250} height={250} alt="[signature]" src="https://v1.jazzbutcher.com/images/19931019/93Oct19_sig.gif" />
 		I am broke, but excited about <Link href="/gigs/1993/Oct28.html">
 		the Cale concert</Link>, the return of <Link href="/conspirators/richard_formby.html">Lenin</Link> and the
 		man who will be dropping round this afternoon to take

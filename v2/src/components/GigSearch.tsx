@@ -321,15 +321,15 @@ const templateGigs = (results: RecordType, layout: any) => {
 					const useG = (record?.gig) ? record.gig : record;
 					const styles = determineStyles(record);
 					const datetime = record?.datetime.substring(0, 10).replace(/-/g, '');
-					let poster = (useG?.extra?.includes('poster')) ? `https://jazzbutcher.com/images/${datetime}/${datetime}_poster.jpg` : undefined;
+					let poster = (useG?.extra?.includes('poster')) ? `/images/${datetime}/${datetime}_poster.jpg` : undefined;
 					if (!poster) {
 						if  (useG?.extra?.includes('ticket')) {
-							poster = `https://jazzbutcher.com/images/${datetime}/${datetime}_ticket.jpg`;
+							poster = `/images/${datetime}/${datetime}_ticket.jpg`;
 						}
 					}
 					if (!poster) {
 						if  (useG?.extra?.includes('setlist')) {
-							poster = `https://jazzbutcher.com/images/${datetime}/${datetime}_setlist.jpg`;
+							poster = `/images/${datetime}/${datetime}_setlist.jpg`;
 						}
 					}
 					const cls = "gig_" + styles?.type;

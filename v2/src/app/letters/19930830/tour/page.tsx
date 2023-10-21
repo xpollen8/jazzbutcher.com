@@ -81,8 +81,8 @@ const Letter = () =>
 		</blockquote>
 		<b>23.2</b>
 		<blockquote className="annotation">
-			<Link href="https://jazzbutcher.com/images/19930223/euro93.jpg">
-				<Image className="float-right ml-3" width={300} height={300} alt="a pic" src="https://jazzbutcher.com/images/19930223/euro93_250.jpg" />
+			<Link href="https://v1.jazzbutcher.com/images/19930223/euro93.jpg">
+				<Image className="float-right ml-3" width={300} height={300} alt="a pic" src="https://v1.jazzbutcher.com/images/19930223/euro93_250.jpg" />
 			</Link>
 			Drive out of France very fast, as well
 			have all had enough.  Got to Breda in Holland.  Tony

@@ -46,7 +46,7 @@ const Letter = () =>
 		and Sophie are headlong into the Ubu Swirl (Hobo Swill)
 		thing.  They&apos;ve made a demo and seem quite positive.
 		<p />
-		<Image className="float-right" width={176} height={176} alt="[signature]" src="https://jazzbutcher.com/images/19940913/94Sep13_sig.gif" />
+		<Image className="float-right" width={176} height={176} alt="[signature]" src="https://v1.jazzbutcher.com/images/19940913/94Sep13_sig.gif" />
 		(Jake has just caught the Biggest Dragonfly in Europe.)
 		<p />
 		(And eaten it.)

@@ -114,7 +114,7 @@ export default Auction;
 /*
 const auctionRecords = () => (
 	<tr>
-	<td bgcolor=#dadada colspan=4><img src="https://jazzbutcher.com/images/trumpet.gif" width=49 height=23 align=top hspace=10><Tag>Vinyl Department</Tag></td>
+	<td bgcolor=#dadada colspan=4><img src="https://v1.jazzbutcher.com/images/trumpet.gif" width=49 height=23 align=top hspace=10><Tag>Vinyl Department</Tag></td>
 	</tr>
 	<tr><td colspan=4>
 	<i>Let&apos;s just get this quite clear - test pressings do NOT have
@@ -182,7 +182,7 @@ const auctionRecords = () => (
 
 const auctionSpacemen = () => (
 	<tr>
-	<td bgcolor=#dadada colspan=4><img src="https://jazzbutcher.com/images/pyramid.gif" width=28 height=25 align=top hspace=10><Tag>Spacemen 3 Articles</Tag></td>
+	<td bgcolor=#dadada colspan=4><img src="https://v1.jazzbutcher.com/images/pyramid.gif" width=28 height=25 align=top hspace=10><Tag>Spacemen 3 Articles</Tag></td>
 	</tr>
 	<tr><td colspan=4>
 	<i>
@@ -210,8 +210,8 @@ const auctionSpacemen = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/poster_spacemen_transparent.jpg"><img border=0
-		src="https://jazzbutcher.com/images/poster_spacemen_transparent.gif"
+	<a href="https://v1.jazzbutcher.com/images/poster_spacemen_transparent.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/poster_spacemen_transparent.gif"
 		width=99 height=138></a></td>
 	</tr>
 	<tr>
@@ -228,8 +228,8 @@ const auctionSpacemen = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/poster_spacemen_perfect.jpg"><img border=0
-		src="https://jazzbutcher.com/images/poster_spacemen_perfect.gif"
+	<a href="https://v1.jazzbutcher.com/images/poster_spacemen_perfect.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/poster_spacemen_perfect.gif"
 		width=99 height=139></a></td>
 	</tr>
 	<tr>
@@ -247,8 +247,8 @@ const auctionSpacemen = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/poster_spacemen3_tour89.jpg"><img border=0
-		src="https://jazzbutcher.com/images/poster_spacemen3_tour89.gif"
+	<a href="https://v1.jazzbutcher.com/images/poster_spacemen3_tour89.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/poster_spacemen3_tour89.gif"
 		width=99 height=150></a></td>
 	</tr>
 )
@@ -284,8 +284,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/19820612/19820612_poster.jpg"><img border=0
-		src="https://jazzbutcher.com/images/19820612/19820612_poster_250.jpg"></a></td>
+	<a href="https://v1.jazzbutcher.com/images/19820612/19820612_poster.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/19820612/19820612_poster_250.jpg"></a></td>
 	</tr>
 	<tr>
 #	$15	rlyons@bigfoot.com	Wed, 29 Oct 1997 21:32:41 -0500
@@ -306,8 +306,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/19860726/19860726_poster.jpg"><img border=0
-		src="https://jazzbutcher.com/images/19860726/19860726_poster_250.jpg"></a></td>
+	<a href="https://v1.jazzbutcher.com/images/19860726/19860726_poster.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/19860726/19860726_poster_250.jpg"></a></td>
 	</tr>
 	<tr>
 #	$15	JV_SEATTLE@compuserve.com	Thu, 30 Oct 1997 02:51:46 -0500
@@ -328,8 +328,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/19860726/19860726_poster.jpg"><img border=0
-		src="https://jazzbutcher.com/images/19860726/19860726_poster_250"></a></td>
+	<a href="https://v1.jazzbutcher.com/images/19860726/19860726_poster.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/19860726/19860726_poster_250"></a></td>
 	</tr>
 	<tr>
 #	$15	JV_SEATTLE@compuserve.com	Thu, 30 Oct 1997 02:51:46 -0500
@@ -353,8 +353,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/19860726/19860726_poster.jpg"><img border=0
-		src="https://jazzbutcher.com/images/19860726/19860726_poster_250"></a></td>
+	<a href="https://v1.jazzbutcher.com/images/19860726/19860726_poster.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/19860726/19860726_poster_250"></a></td>
 	</tr>
 	<tr>
 #	$15	dburns2@calstatela.edu	Oct 30, 1997 19:58:33
@@ -376,8 +376,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/19860726/19860726_poster.jpg"><img border=0
-		src="https://jazzbutcher.com/images/19860726/19860726_poster_250"></a></td>
+	<a href="https://v1.jazzbutcher.com/images/19860726/19860726_poster.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/19860726/19860726_poster_250"></a></td>
 	</tr>
 	<tr>
 #	$35	ZineGreen@aol.com	Sat, 29 Nov 1997 19:42:40 -0500 (EST)
@@ -406,8 +406,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/poster_pat_russel.jpg"><img border=0
-		src="https://jazzbutcher.com/images/poster_pat_russel.gif"
+	<a href="https://v1.jazzbutcher.com/images/poster_pat_russel.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/poster_pat_russel.gif"
 		width=99 height=148></a></td>
 	</tr>
 	<tr>
@@ -427,8 +427,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/19840901/19840901_poster.jpg"><img border=0
-		src="https://jazzbutcher.com/images/19840901/19840901_poster_250.jpg"></a></td>
+	<a href="https://v1.jazzbutcher.com/images/19840901/19840901_poster.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/19840901/19840901_poster_250.jpg"></a></td>
 	</tr>
 	<tr>
 #	$25	wnerini@drf.com	Sun, 30 Nov 1997 11:17:10 -0700
@@ -453,8 +453,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/poster_bath.jpg"><img border=0
-		src="https://jazzbutcher.com/images/poster_bath.gif"
+	<a href="https://v1.jazzbutcher.com/images/poster_bath.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/poster_bath.gif"
 		width=99 height=142></a></td>
 	</tr>
 	<tr>
@@ -479,8 +479,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/19960820/19960820_poster.jpg"><img border=0
-		src="https://jazzbutcher.com/images/19960820/19960820_poster_250.jpg"></a></td>
+	<a href="https://v1.jazzbutcher.com/images/19960820/19960820_poster.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/19960820/19960820_poster_250.jpg"></a></td>
 	</tr>
 #	<tr>
 #	<td valign=top><a href="mailto:${bidAddress}?subject=Bid on A011">A011</a></td>
@@ -526,8 +526,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/19940624/19940624_poster2.jpg"><img border=0
-		src="https://jazzbutcher.com/images/19940624/19940624_poster2_250.jpg"></a></td>
+	<a href="https://v1.jazzbutcher.com/images/19940624/19940624_poster2.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/19940624/19940624_poster2_250.jpg"></a></td>
 	</tr>
 	<tr>
 #	$10	gsm1224@ix.netcom.com	Wed, 03 Dec 1997 19:10:48 -0800
@@ -551,8 +551,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/19940624/19940624_poster.jpg"><img border=0
-		src="https://jazzbutcher.com/images/19940624/19940624_poster_250.jpg"></a></td>
+	<a href="https://v1.jazzbutcher.com/images/19940624/19940624_poster.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/19940624/19940624_poster_250.jpg"></a></td>
 	</tr>
 	<tr>
 #	$13	mercy_@hotmail.co	Wed, 03 Dec 1997 18:56:08 -0800
@@ -568,8 +568,8 @@ const auctionPosters = () => (
 	</td>
 	</tr>
 	<tr><td align=right colspan=3>
-	<a href="https://jazzbutcher.com/images/19821101/19821101_poster.jpg"><img border=0
-		src="https://jazzbutcher.com/images/19821101/19821101_poster_250.jpg"></a></td>
+	<a href="https://v1.jazzbutcher.com/images/19821101/19821101_poster.jpg"><img border=0
+		src="https://v1.jazzbutcher.com/images/19821101/19821101_poster_250.jpg"></a></td>
 	</tr>
 )
 
@@ -694,7 +694,7 @@ const auctionShirts = () => (
 
 const auctionCompilations = () => (<>
 	<tr>
-	<td bgcolor=#dadada colspan=4><img src="https://jazzbutcher.com/images/cassettes.gif" align=middle hspace=10 width=47 height=40><Tag>Compilation Tapes</Tag></td>
+	<td bgcolor=#dadada colspan=4><img src="https://v1.jazzbutcher.com/images/cassettes.gif" align=middle hspace=10 width=47 height=40><Tag>Compilation Tapes</Tag></td>
 	</tr>
 	<tr><td colspan=4>
 	<i>
@@ -776,8 +776,8 @@ const auctionCompilations = () => (<>
 	<td valign=top><a href="mailto:${bidAddress}?subject=Purchase a copy of C003 for $15">C003</a><br />Pat&apos;s Pick</td>
 	<td valign=top>$15</td>
 	<td>
-	<a href="https://jazzbutcher.com/images/19931028/pass_28Oct93.jpg"><img
-		src="https://jazzbutcher.com/images/19931028/pass_28Oct93.gif" 
+	<a href="https://v1.jazzbutcher.com/images/19931028/pass_28Oct93.jpg"><img
+		src="https://v1.jazzbutcher.com/images/19931028/pass_28Oct93.gif" 
 		border={0} width=75 height=113></a>
 	</td>
 	<td valign=top><b>Acoustic In The Dark</b>
@@ -790,7 +790,7 @@ const auctionCompilations = () => (<>
 
 const auctionConcerts = () => (
 	<tr>
-	<td bgcolor=#dadada align=left colspan=4><img src="https://jazzbutcher.com/images/cassettes.gif" align=middle hspace=10 width=47 height=40><Tag>Concert Tapes</Tag></td>
+	<td bgcolor=#dadada align=left colspan=4><img src="https://v1.jazzbutcher.com/images/cassettes.gif" align=middle hspace=10 width=47 height=40><Tag>Concert Tapes</Tag></td>
 	</tr>
 	<tr><td colspan=4>
 	<i>
@@ -1097,8 +1097,8 @@ const auctionConcerts = () => (
 	<td valign=top>SOLD<br>
 	mrnobody @
 	<br>
-	<a href="https://jazzbutcher.com/images/egdebut.jpg"><img
-		src="https://jazzbutcher.com/images/thumb_egdebut.gif"
+	<a href="https://v1.jazzbutcher.com/images/egdebut.jpg"><img
+		src="https://v1.jazzbutcher.com/images/thumb_egdebut.gif"
 		border={0} width=84 height=84></a></td>
 	<td valign=top><a href="${jbc_gigs}/1994/Jun1.html"><b>The Black Eg Live In London : 1Jun94</b></a>
 	<br>The ${damm} brothers make their &quot;first and only debut&quot;
@@ -1133,7 +1133,7 @@ const auctionSections = () => (
 	<nobr><font size=+1><b>Items listed by category.</b></font></nobr>
 	<table border={0} cellspacing={0} cellpadding=0>
 	<tr><td align=center>
-	<img src="https://jazzbutcher.com/images/cassettes.gif" align=top width=47 height=40>
+	<img src="https://v1.jazzbutcher.com/images/cassettes.gif" align=top width=47 height=40>
 	</td><td>
 	<a href="${jbc_root}/auction.html?${encrypt(section=auctionConcerts)}">Concert Tapes</a>
 	</td></tr>
@@ -1143,7 +1143,7 @@ const auctionSections = () => (
 	<a href="${jbc_root}/auction.html?${encrypt(section=auctionCompilations)}">Compilation Tapes</a>
 	</td></tr>
 	<tr><td align=center>
-	<img src="https://jazzbutcher.com/images/pyramid.gif" width=28 height=25 align=top>
+	<img src="https://v1.jazzbutcher.com/images/pyramid.gif" width=28 height=25 align=top>
 	</td><td>
 	<a href="${jbc_root}/auction.html?${encrypt(section=auctionSpacemen)}">Spacemen 3 Articles</a>
 	</td></tr>
@@ -1156,7 +1156,7 @@ const auctionSections = () => (
 	</td><td>
 	<a href="${jbc_root}/auction.html?${encrypt(section=auctionPosters)}">Art and Posters</a>
 	<tr><td align=center>
-	<img src="https://jazzbutcher.com/images/trumpet.gif" width=49 height=23 align=middle>
+	<img src="https://v1.jazzbutcher.com/images/trumpet.gif" width=49 height=23 align=middle>
 	</td><td>
 	<a href="${jbc_root}/auction.html?${encrypt(section=auctionRecords)}">Vinyl Department</a>
 	</td></tr>

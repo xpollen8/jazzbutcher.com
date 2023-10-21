@@ -12,8 +12,8 @@ const Letter = () =>
 		<div className="border">
 			<div className="flex flex-wrap justify-around">
 				<div className="m-1">
-					<Link href="https://jazzbutcher.com/images/lovebus.jpg">
-						<Image alt="album cover" width={250} height={250} src="https://jazzbutcher.com/images/lovebus.jpg" />
+					<Link href="https://v1.jazzbutcher.com/images/lovebus.jpg">
+						<Image alt="album cover" width={250} height={250} src="https://v1.jazzbutcher.com/images/lovebus.jpg" />
 					</Link>
 				</div>
 				<div className="min-w-[50%] p-10">
@@ -105,9 +105,9 @@ const Letter = () =>
 		<a id="penguins" />
 			{penguin}
 		<div className="flex flex-wrap px-5">
-			<Image alt="a penguin" height={59} width={52} src="https://jazzbutcher.com/images/penguin.gif" />
-			<Image alt="a penguin" height={59} width={52} src="https://jazzbutcher.com/images/penguin.gif" />
-			<Image alt="a penguin" height={59} width={52} src="https://jazzbutcher.com/images/penguin.gif" />
+			<Image alt="a penguin" height={59} width={52} src="https://v1.jazzbutcher.com/images/penguin.gif" />
+			<Image alt="a penguin" height={59} width={52} src="https://v1.jazzbutcher.com/images/penguin.gif" />
+			<Image alt="a penguin" height={59} width={52} src="https://v1.jazzbutcher.com/images/penguin.gif" />
 		</div>
 		<blockquote className="annotation">
 			In the most desolate place in the world they are standing

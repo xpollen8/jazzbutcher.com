@@ -33,8 +33,8 @@ const Letter = () =>
 				<p />
 			</div>
 			<div className="m-1">
-				<Link href="https://jazzbutcher.com/images/advert.gif">
-					<Image src="https://jazzbutcher.com/images/advert.gif" width={400} height={400} alt="[advert]" />
+				<Link href="https://v1.jazzbutcher.com/images/advert.gif">
+					<Image src="https://v1.jazzbutcher.com/images/advert.gif" width={400} height={400} alt="[advert]" />
 				</Link>
 			</div>
 		</div>

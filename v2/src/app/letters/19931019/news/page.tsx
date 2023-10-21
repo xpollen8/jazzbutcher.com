@@ -46,7 +46,7 @@ const Letter = () =>
 		dollars or anything, please send large sums of cash for
 		immediate bootleg cassette deluge.
 		<p />
-		<Image className="float-right" width={250} height={250} alt="[signature]" src="https://jazzbutcher.com/images/19931019/93Oct19_sig.gif" />
+		<Image className="float-right" width={250} height={250} alt="[signature]" src="https://v1.jazzbutcher.com/images/19931019/93Oct19_sig.gif" />
 		Somebody said something about a second <Link
 		href="/gigs/bootlegs.html#petermurphy">Black Eg</Link> album.
 		If you send enough money NOW I may still be in a position

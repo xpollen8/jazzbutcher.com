@@ -683,13 +683,13 @@ export const AX = "Lounge Ax";
 export const METRO = "Cabaret Metro";
 export const CUBBY = "Cubby Bear";
 export const FIDDLER = 'Mean Fiddler';
-export const TOWER = <>Tower Records <Image width= {126} height={57} alt="[logo]" src="https://jazzbutcher.com/images/tower.gif" /></>
+export const TOWER = <>Tower Records <Image width= {126} height={57} alt="[logo]" src="https://v1.jazzbutcher.com/images/tower.gif" /></>
 export const KCRW = linkExternal("https://www.kcrw.org", "KCRW");
 export const KTBS = linkExternal("http://www.utexas.edu/students/kvrx", "KTBS");
-export const WNUR = linkExternal("http://www.wnur.org", <>WNUR<Image width= {114} height={77} alt="[logo]" src="https://jazzbutcher.com/images/wnur.gif" /></>);
+export const WNUR = linkExternal("http://www.wnur.org", <>WNUR<Image width= {114} height={77} alt="[logo]" src="https://v1.jazzbutcher.com/images/wnur.gif" /></>);
 export const WHPK = linkExternal("http://whpk.uchicago.edu", "WHPK");
-export const WXYC = linkExternal("http://www.wxyc.org", <>WXYC <Image width= {129} height={56} alt="[logo]" src="https://jazzbutcher.com/images/wxyc.gif" /></>);
-export const CBC = <Image width= {100} height={100} alt="[CBC]" src="https://jazzbutcher.com/images/cbc.gif" />
+export const WXYC = linkExternal("http://www.wxyc.org", <>WXYC <Image width= {129} height={56} alt="[logo]" src="https://v1.jazzbutcher.com/images/wxyc.gif" /></>);
+export const CBC = <Image width= {100} height={100} alt="[CBC]" src="https://v1.jazzbutcher.com/images/cbc.gif" />
 //
 //	bootlegging codes
 //

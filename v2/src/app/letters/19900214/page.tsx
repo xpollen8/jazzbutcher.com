@@ -8,7 +8,7 @@ const Letter = () =>
 	<Header section='letters' title='14Feb90'/>
 	<main>
 			<blockquote className="annotation">
-			<Image className="float-right" width={397/1.7} height={219/1.7} alt="[signature]" src="https://jazzbutcher.com/images/19900214/90Feb14_sig.gif" />
+			<Image className="float-right" width={397/1.7} height={219/1.7} alt="[signature]" src="https://v1.jazzbutcher.com/images/19900214/90Feb14_sig.gif" />
 				The <Link href="/releases/cult">new l.p.</Link>
 				is every bit as strange and twisted as I thought it might
 				be.  We may yet have to make a couple of minor adjustments,

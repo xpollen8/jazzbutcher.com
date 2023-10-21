@@ -92,7 +92,7 @@ const nextConfig = {
 				*/
 				{
 					source: '/images/:path*',
-					destination: 'https://jazzbutcher.com/images/:path*',
+					destination: 'https://v1.jazzbutcher.com/images/:path*',
 					permanent: false,
 				},
 				{
@@ -124,6 +124,12 @@ const nextConfig = {
 				{
 					protocol: 'https',
 					hostname: 'jazzbutcher.com',
+					port: '',
+					pathname: '**',
+				},
+				{
+					protocol: 'https',
+					hostname: 'v1.jazzbutcher.com',
 					port: '',
 					pathname: '**',
 				},

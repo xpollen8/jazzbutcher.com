@@ -19,7 +19,7 @@ const Letter = () =>
 				<MakeSimpleURI uri="/letters/93Aug30/tour.html" text="1993 European Tour Report" />
 			</div>
 			<div className="m-1">
-				<Image width={243} height={111} alt="[signature]" src="https://jazzbutcher.com/images/19930830/93Aug30_sig.gif" />
+				<Image width={243} height={111} alt="[signature]" src="https://v1.jazzbutcher.com/images/19930830/93Aug30_sig.gif" />
 			</div>
 		</div>
 	</main>

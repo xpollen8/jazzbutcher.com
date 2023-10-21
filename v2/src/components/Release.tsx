@@ -187,7 +187,7 @@ const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => 
 				<Tag>Downloadable Media</Tag>
 				<blockquote>
 				{downloads?.filter(([ file, caption]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>
-					<Link key={key} href={`https://jazzbutcher.com${file}`} className="border">{caption}</Link>
+					<Link key={key} href={`https://v1.jazzbutcher.com${file}`} className="border">{caption}</Link>
 					<br />
 				</>)
 				)}

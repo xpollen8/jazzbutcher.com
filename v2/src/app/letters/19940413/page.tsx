@@ -25,8 +25,8 @@ const Letter = () =>  {
 				</div>
 				<div className="m-1">
 					<center>
-					<Link href="https://jazzbutcher.com/images/paris.jpg">
-						<Image width={400} height={400} src="https://jazzbutcher.com/images/paris.jpg" alt="paris group"/>
+					<Link href="https://v1.jazzbutcher.com/images/paris.jpg">
+						<Image width={400} height={400} src="https://v1.jazzbutcher.com/images/paris.jpg" alt="paris group"/>
 					</Link>
 					<ParsedCaption
 						image_caption=<>{nick}, {curt}, {pat}, {dooj} (Paris)</>
@@ -34,7 +34,7 @@ const Letter = () =>  {
 						credit="Lucien Borderline"
 					/>
 					<p />
-					<Image width={353} height={105} alt="[signature]" src="https://jazzbutcher.com/images/19940413/94Apr13_sig.gif" />
+					<Image width={353} height={105} alt="[signature]" src="https://v1.jazzbutcher.com/images/19940413/94Apr13_sig.gif" />
 				</center>
 			</div>
 			</div>

@@ -103,9 +103,9 @@ const Letter = () =>
 			I enjoyed your remarks about the K.D. Land (fuck it,
 			start again; kd lang) photo.
 		<p />
-			<Link href="https://jazzbutcher.com/images/pat_plays.jpg">
+			<Link href="https://v1.jazzbutcher.com/images/pat_plays.jpg">
 				<Image className="float-right" alt="not kd lang" width={300} height={300}
-					src="https://jazzbutcher.com/images/pat_plays.jpg" />
+					src="https://v1.jazzbutcher.com/images/pat_plays.jpg" />
 			</Link>
 		I *know* this photograph!  The best lookalike story
 		I know concern the {aero} when they supported

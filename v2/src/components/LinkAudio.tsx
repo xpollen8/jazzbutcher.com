@@ -53,7 +53,7 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 			<div className="flex">
 				{(lookup && !rel?.isLoading && release && release?.thumb) && <>
 					<Link href={release?.href}>
-						<Image width={60} height={60} alt={lookup} src={`https://jazzbutcher.com${truncAt(';;', release?.thumb)}_250.jpg`} />
+						<Image width={60} height={60} alt={lookup} src={`https://v1.jazzbutcher.com${truncAt(';;', release?.thumb)}_250.jpg`} />
 					</Link>
 				</> }
 				<div className="w-full">

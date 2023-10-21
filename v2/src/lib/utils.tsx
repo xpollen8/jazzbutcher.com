@@ -278,12 +278,12 @@ export const getImageBase = (str?: string) => {
 
 export const imageThumb = (str?: string, width: number = 250) => {
 	const [ base, ext ] = getImageBase(str);
-	return 'https://jazzbutcher.com' + base + '_' + width + '.' + ext;
+	return 'https://v1.jazzbutcher.com' + base + '_' + width + '.' + ext;
 }
 
 export const imageFull = (str?: string) => {
 	const [ base, ext ] = getImageBase(str);
-	return 'https://jazzbutcher.com' + base + '.' + ext;
+	return 'https://v1.jazzbutcher.com' + base + '.' + ext;
 }
 
 export const parseGigExtras = (extra?: string) => extra?.split(',') || [];

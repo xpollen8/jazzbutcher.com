@@ -43,8 +43,8 @@ const VaguelyFamiliar = () => {
 				/>
 			<div className="listItem">
 			<div className="flex flex-wrap justify-center gap-3">
-			<Image src="https://jazzbutcher.com/images/199107/199107_VaguelyFamiliar_Master1.jpg" width={500} height={500} alt={'master tape 1'} />
-			<Image src="https://jazzbutcher.com/images/199107/199107_VaguelyFamiliar_Master2.jpg" width={500} height={500} alt={'master tape 2'} />
+			<Image src="https://v1.jazzbutcher.com/images/199107/199107_VaguelyFamiliar_Master1.jpg" width={500} height={500} alt={'master tape 1'} />
+			<Image src="https://v1.jazzbutcher.com/images/199107/199107_VaguelyFamiliar_Master2.jpg" width={500} height={500} alt={'master tape 2'} />
 			</div>
 			<Credit g='Richard Formby' d='2021-12-10' />
 			</div>

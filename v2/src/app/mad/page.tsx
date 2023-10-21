@@ -174,7 +174,7 @@ const Mad = () => <>
 					<b>{caption}</b>
 						<Image
 							className="border rounded-lg"
-							src={`https://jazzbutcher.com/${img}_500.jpg`}
+							src={`https://v1.jazzbutcher.com/${img}_500.jpg`}
 							height='500'
 							width='500'
 							alt={caption} />

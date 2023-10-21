@@ -20,7 +20,7 @@ const StrangerTractors = () =>
 	  <Tag>Stranger Tractors (1995)</Tag>
 		<blockquote className="listItem">Curtis E. Johnson, Pat Fish (drums)</blockquote>
 <div className="listItem">
-		<Link className="float-right ml-5 border drop-shadow-md w-52 bg-slate-50 text-center" href="https://jazzbutcher.com/images/stranger_tractors/Strangers.jpg">These were the Tractors<Image src="https://jazzbutcher.com/images/stranger_tractors/Strangers.jpg" width={250} height={250} alt="strangers" /> Curtis, Mr. Nasty, Bollie, Matt, and Mr. Shouty.  </Link>
+		<Link className="float-right ml-5 border drop-shadow-md w-52 bg-slate-50 text-center" href="https://v1.jazzbutcher.com/images/stranger_tractors/Strangers.jpg">These were the Tractors<Image src="https://v1.jazzbutcher.com/images/stranger_tractors/Strangers.jpg" width={250} height={250} alt="strangers" /> Curtis, Mr. Nasty, Bollie, Matt, and Mr. Shouty.  </Link>
 During 1994/5 the tractors played all over the British isles
 winning over many converts to their original sound,
 signinging a publishing deal with Creation records
@@ -33,7 +33,7 @@ Shouty & Nasty went off to form SumoSonic, and Matt went off to farm in France.
 <Source u='https://web.archive.org/web/20090830070255/http://geocities.com/Nashville/Stage/8818/strangertractors.htm' />
 </div>
 <div className="listItem clear_float">
-		<Link className="float-right ml-5 border drop-shadow-md w-52 bg-slate-50 text-center" href="https://jazzbutcher.com/images/stranger_tractors/stranger_tractors.jpg"><Image src="https://jazzbutcher.com/images/stranger_tractors/stranger_tractors.jpg" width={250} height={250} alt="album cover" /></Link>
+		<Link className="float-right ml-5 border drop-shadow-md w-52 bg-slate-50 text-center" href="https://v1.jazzbutcher.com/images/stranger_tractors/stranger_tractors.jpg"><Image src="https://v1.jazzbutcher.com/images/stranger_tractors/stranger_tractors.jpg" width={250} height={250} alt="album cover" /></Link>
 It was a brave experiment and they left behind a legacy of one CD single &quot;Vibration&quot; and a David J (Bauhouse, Love And Rockets) produced CD mini album with Steve New(Sex Pistols,Rich Kids) guesting on guitar for &quot;Big Bad City&quot; if you want to obtain a copy of the single send a postal order for £3 for the single, the mini album is now sold out. to Floating World Po box 16677 London W8 7Zl      and  make payable to Floating World  
 		<div className="flex flex-wrap justify-center">{tracks?.map((mediaurl: string, key: number) => <div className="w-3/4" key={key}><EmbedMedia className="listItem" key={key} data={{ mediaurl }} /></div>)}</div>
 <p />
@@ -42,7 +42,7 @@ It was a brave experiment and they left behind a legacy of one CD single &quot;V
 <div className="listItem clear_float">
 My father was a hard drinking gambler, who left before I was three. My earliest memory is of playing a huge plastic guitar, for the guy in the fish shop, I was almost five and he paid me  25 pence, right then I knew what I wanted to do.
 <p />
-		<Link className="float-right ml-5 border drop-shadow-md w-52 bg-slate-50 text-center" href="https://jazzbutcher.com/images/stranger_tractors/BEANKING.jpg"><Image src="https://jazzbutcher.com/images/stranger_tractors/BEANKING.jpg" width={250} height={250} alt="the bean king" />{expand('curt')}</Link>
+		<Link className="float-right ml-5 border drop-shadow-md w-52 bg-slate-50 text-center" href="https://v1.jazzbutcher.com/images/stranger_tractors/BEANKING.jpg"><Image src="https://v1.jazzbutcher.com/images/stranger_tractors/BEANKING.jpg" width={250} height={250} alt="the bean king" />{expand('curt')}</Link>
 At 16 I left home to work as a ghost on the ghost train of a travelling fair. Every time we got to a new town I would be hanging around with my guitar wherever music was being made, making a pest of myself with the local musicians, and learning from the source. After several years of hard travelling, I went back to my home town of Edinburgh and took a job as a DJ. And the money was good so I stayed a while. But playing other peoples music was making me crazy, when I had tunes in my head that wouldn&apos;t let me sleep.
 <p />
 So I made the jump to London.... the big city, London was like a huge vortex and it spat me from ladbroke grove to a box in the road, in all of a few years. But all the time I was picking up experience and playing my music in public, to people that were not necessarily out to listen to music.

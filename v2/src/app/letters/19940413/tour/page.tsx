@@ -338,9 +338,9 @@ const Letter = () =>
 		</blockquote>
 		<Link href="/gigs/1994/Feb17.html">Day 18 : Paris - <b>Arapaho</b></Link>
 		<blockquote>
-		<Link href="https://jazzbutcher.com/images/paris.jpg">
+		<Link href="https://v1.jazzbutcher.com/images/paris.jpg">
 			<Image className="float-right m-3" width={250} height={250} alt="[image]"
-			src="https://jazzbutcher.com/images/paris.jpg" /></Link>
+			src="https://v1.jazzbutcher.com/images/paris.jpg" /></Link>
 		{loony} has been busy; as
 		soon as we arrive in the venue he is on the phone: &quot;I&apos;ve
 		made you a backdrop - can you pick it up?&quot;  It&apos;s huge,

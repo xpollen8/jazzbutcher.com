@@ -42,7 +42,7 @@ const Letter = () =>
 		Plans for the next few weeks involve trying to get this
 		US trip moving, paying some attention to the long-neglected
 		<Image className="float-right" width={300} height={300} alt="[signature]"
-			src="https://jazzbutcher.com/images/19940413/94Apr13_sig.gif" />
+			src="https://v1.jazzbutcher.com/images/19940413/94Apr13_sig.gif" />
 		Pat n Richard album, doing a couple of gigs in London
 		and Belgium (the country, not the club!), and assembling
 		demo tapes for the next LP.  Also, both my guitarists

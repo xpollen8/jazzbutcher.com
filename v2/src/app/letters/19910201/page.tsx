@@ -135,7 +135,7 @@ const Letter = () =>
 		a small but perfectly formed moggy of Shakespeare Road,
 		Northampton, finds typewriters DEAD INTERSTING.
 		</p>
-		<Image width={456} height={52} alt="[signature]" src="https://jazzbutcher.com/images/19910201/91Feb1_sig.gif" />
+		<Image width={456} height={52} alt="[signature]" src="https://v1.jazzbutcher.com/images/19910201/91Feb1_sig.gif" />
 	</main>
 	<Footer />
 </>

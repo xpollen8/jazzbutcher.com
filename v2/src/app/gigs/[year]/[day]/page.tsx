@@ -33,7 +33,7 @@ const parsePhoto = (str: string) => {
 			const parts = str.split('.');
 			const ext = parts.pop();
 			const base = parts.join('.');
-			return { server: 'https://jazzbutcher.com', base, ext };
+			return { server: 'https://v1.jazzbutcher.com', base, ext };
 		}
 	}
 

@@ -22,7 +22,7 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, lab
 		if (image.startsWith('http')) {
 			useImage = `${image}.jpg`;
 		} else {
-			useImage = `https://jazzbutcher.com${image}.jpg`;
+			useImage = `https://v1.jazzbutcher.com${image}.jpg`;
 		}
 		useThumb = useImage.replace('.jpg', `_${width}.jpg`);
 	}

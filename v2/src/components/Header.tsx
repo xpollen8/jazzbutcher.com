@@ -106,10 +106,10 @@ const sections : { [key: string]: BreadCrumb } = {
 	*/
 
 	gallery: { parent: 'conspirators', title: 'Gallery', summary: "Photography from all eras"  },
-	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "COVID-era livestreams" },
-
-	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },
 	memoriam: { parent: 'pat', title: 'In Memoriam' },
+	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "COVID-era livestreams" },
+	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },
+
 	eulogy: { parent: 'memoriam', title: 'Eulogy', summary: "Alan Moore" },
 	homage: { parent: 'memoriam', title: 'Musical Tributes', summary: "Songs in praise of The Butcher" },
 

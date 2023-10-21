@@ -15,7 +15,7 @@ const linkSearch = ({ name, text, act }:
 	})()}
 </>
 
-const linkPerson = (props: { href: string, name: string }) => <span className="person">{linkInternal(props?.href, props?.name)}{' '}</span>
+const linkPerson = (props: { href: string, name: string }) => <span className="person">{linkInternal(`/conspirators/${props?.href}`, props?.name)}{' '}</span>
 const linkAlbum = (props: { title: string, href?: string }) =>
 <>
 {(props?.href) ?
@@ -51,106 +51,106 @@ const linkSong = (props: { title?: string, href?: string, author?: string | Reac
 //       conspirators
 //
 export const anita_allbright = 	linkSearch({ name: "Anita Allbright" });
-export const astor = linkPerson({ href: "/conspirators/peter_astor.html", name: "Peter Astor" });
-export const at = linkPerson({ href: "/conspirators/alice_thompson.html", name: "Alice Thompson" });
-export const barker = linkPerson({ href: "/conspirators/david_barker.html", name: "David E. Barker" });
-export const beirne = linkPerson({ href: "/conspirators/pat_beirne.html", name: "Pat Beirne" });
+export const astor = linkPerson({ href: "peter_astor.html", name: "Peter Astor" });
+export const at = linkPerson({ href: "alice_thompson.html", name: "Alice Thompson" });
+export const barker = linkPerson({ href: "david_barker.html", name: "David E. Barker" });
+export const beirne = linkPerson({ href: "pat_beirne.html", name: "Pat Beirne" });
 export const blair = linkSearch({ name: "Blair MacDonald" });
-export const botty = linkPerson({ href: "/conspirators/ian_botterill.html", name: "Ian Botterill" });
-export const botty_bman = linkPerson({ href: "/conspirators/ian_botterill.html", name: "B-Man" });
+export const botty = linkPerson({ href: "ian_botterill.html", name: "Ian Botterill" });
+export const botty_bman = linkPerson({ href: "ian_botterill.html", name: "B-Man" });
 export const brent = linkSearch({ name: "Brent Bambury" });
 export const burrell = linkSearch({ name: "Tim Burrell" });
 export const butch = 'The Butcher';
 export const terry = 'Terry Walpole';
 export const tom_hall = linkInternal("/tomhall", "Tom Hall");
-export const colin = linkPerson({ href: "/conspirators/colin.html", name: "Colin Harris" });
-export const curt = linkPerson({ href: "/conspirators/curtis_johnson.html", name: "Curtis E. Johnson" });
-export const curt_eman = linkPerson({ href: "/conspirators/curtis_johnson.html", name: "E-Man" });
-export const damm = linkPerson({ href: "/conspirators/von_dammerung.html", name: "Von Dämmerung" });
+export const colin = linkPerson({ href: "colin.html", name: "Colin Harris" });
+export const curt = linkPerson({ href: "curtis_johnson.html", name: "Curtis E. Johnson" });
+export const curt_eman = linkPerson({ href: "curtis_johnson.html", name: "E-Man" });
+export const damm = linkPerson({ href: "von_dammerung.html", name: "Von Dämmerung" });
 export const deirdre = linkSearch({ name: "Deirdre O'Donoghue" });
-export const del = linkPerson({ href: "/conspirators/david_whittemore.html", name: "David Whittemore" });
-export const dj = linkPerson({ href: "/conspirators/david_j.html", name: "David J." });
-export const dooj = linkPerson({ href: "/conspirators/dooj_wilkinson.html", name: "Dooj Wilkinson" });
+export const del = linkPerson({ href: "david_whittemore.html", name: "David Whittemore" });
+export const dj = linkPerson({ href: "david_j.html", name: "David J." });
+export const dooj = linkPerson({ href: "dooj_wilkinson.html", name: "Dooj Wilkinson" });
 export const erol = linkSearch({ name: "Erol Suleyman" });
 export const felce = linkSearch({ name: "Dave Felce" });
-export const felix = linkPerson({ href: "/conspirators/felix_ray.html", name: "Felix Ray" });
-export const gab = linkPerson({ href: "/conspirators/gabriel_turner.html", name: "Gabriel Turner" });
-export const garofalo = linkPerson({ href: "/conspirators/steve_garofalo.html", name: "Steve Garofalo" });
+export const felix = linkPerson({ href: "felix_ray.html", name: "Felix Ray" });
+export const gab = linkPerson({ href: "gabriel_turner.html", name: "Gabriel Turner" });
+export const garofalo = linkPerson({ href: "steve_garofalo.html", name: "Steve Garofalo" });
 export const gerard = linkSearch({ name: "Gerard Langley" });
 export const gould = linkSearch({ name: "Greenwood Goulding" });
-export const green = linkPerson({ href: "/conspirators/alex_green.html", name: "Alex Green" });
-export const hask = linkPerson({ href: "/conspirators/kevin_haskins.html", name: "Kevin Haskins" });
-export const hend = linkPerson({ href: "/conspirators/dave_henderson.html", name: "Dave Henderson" });
+export const green = linkPerson({ href: "alex_green.html", name: "Alex Green" });
+export const hask = linkPerson({ href: "kevin_haskins.html", name: "Kevin Haskins" });
+export const hend = linkPerson({ href: "dave_henderson.html", name: "Dave Henderson" });
 export const hook = linkSearch({ name: "Paul Hookham" });
-export const iain = linkPerson({ href: "/conspirators/iain_ohiggins.html", name: "Iain O'Higgins" });
-export const indge = linkPerson({ href: "/conspirators/alastair_indge.html", name: "Alastair Indge" });
+export const iain = linkPerson({ href: "iain_ohiggins.html", name: "Iain O'Higgins" });
+export const indge = linkPerson({ href: "alastair_indge.html", name: "Alastair Indge" });
 export const is = linkSearch({ name: "Ian Sturgess" });
 export const joby = linkSearch({ name: "Joby Palmer" });
 export const joe = 	linkSearch({ name: "Joe Foster" });
 export const tony = 	linkSearch({ name: "Tony Foster" });
 export const joe_woolley = linkSearch({ name: "Joe Woolley", act: true });
-export const joea = linkPerson({ href: "/conspirators/joe_allen.html", name: "Joe Allen" });
-export const joel_harries = linkPerson({ href: "/conspirators/joel_harries.html", name: "Joel Harries" });
+export const joea = linkPerson({ href: "joe_allen.html", name: "Joe Allen" });
+export const joel_harries = linkPerson({ href: "joel_harries.html", name: "Joel Harries" });
 export const john_silver = 'John Silver';
-export const jonny_mattock = linkPerson({ href: "/conspirators/jonny_mattock.html", name: "Jonny Mattock" });
-export const jules = linkPerson({ href: "/conspirators/julian_poole.html", name: "Julian Poole" });
-export const karel = linkPerson({ href: "/conspirator/von_dammerung.html", name: 'Karel Von Dämmerung' });
-export const kathie = linkPerson({ href: "/conspirators/kathie_mcginty.html", name: "Kathie McGinty" });
-export const kathy = linkPerson({ href: "/conspirators/kathy_schaer.html", name: "Kathy Schaer" });
-export const kathy_misery = linkPerson({ href: "/conspirators/kathy_schaer.html", name: "Misery Wilson" });
+export const jonny_mattock = linkPerson({ href: "jonny_mattock.html", name: "Jonny Mattock" });
+export const jules = linkPerson({ href: "julian_poole.html", name: "Julian Poole" });
+export const karel = linkPerson({ href: "von_dammerung.html", name: 'Karel Von Dämmerung' });
+export const kathie = linkPerson({ href: "kathie_mcginty.html", name: "Kathie McGinty" });
+export const kathy = linkPerson({ href: "kathy_schaer.html", name: "Kathy Schaer" });
+export const kathy_misery = linkPerson({ href: "kathy_schaer.html", name: "Misery Wilson" });
 export const kevin = linkSearch({ name: "Kevin Komoda" });
-export const kizzy = linkPerson({ href: "/conspirators/kizzy_ocallaghan.html", name: "Kizzy O'Callaghan" });
-export const larry = linkPerson({ href: "/conspirators/laurence_okeefe.html", name: "Laurence O'Keefe" });
-export const lb = linkPerson({ href: "/conspirators/david_barker.html", name: "Lionel Brando" });
-export const lix = linkPerson({ href: "/conspirators/alex_lee.html", name: "Alex Lee" });
+export const kizzy = linkPerson({ href: "kizzy_ocallaghan.html", name: "Kizzy O'Callaghan" });
+export const larry = linkPerson({ href: "laurence_okeefe.html", name: "Laurence O'Keefe" });
+export const lb = linkPerson({ href: "david_barker.html", name: "Lionel Brando" });
+export const lix = linkPerson({ href: "alex_lee.html", name: "Alex Lee" });
 export const martin_k_daley = "Martin K Daley";
-export const mark_hadley = linkPerson({ href: "/conspirators/marc_hadley.html", name: "Mark Hadley" });
-export const ll = linkPerson({ href: "/conspirators/marc_hadley.html", name: "Louis Leroi" });
+export const mark_hadley = linkPerson({ href: "marc_hadley.html", name: "Mark Hadley" });
+export const ll = linkPerson({ href: "marc_hadley.html", name: "Louis Leroi" });
 export const lohan = linkSearch({ name: "Richard Lohan" });
-export const mark_refoy = linkPerson({ href: "/conspirators/mark_refoy.html", name: "Mark Refoy" });
-export const max = linkPerson({ href: "/conspirators/max_eider.html", name: "Max Eider" });
+export const mark_refoy = linkPerson({ href: "mark_refoy.html", name: "Mark Refoy" });
+export const max = linkPerson({ href: "max_eider.html", name: "Max Eider" });
 export const max_read = linkSearch({ name: "Max Read" });
 export const mercer = linkExternal('https://www.mickmercer.com', 'Mick Mercer');
 export const mick = linkSearch({ name: "Mick Packwood" });
 export const mike_novakovic = linkSearch({ name: "Mike Novakovic" });
-export const mitch = linkPerson({ href: "/conspirators/mitch_jenkins.html", name: "Mitch Jenkins" });
-export const emerson_hunt = linkPerson({ href: "/conspirators/emerson_hunt.html", name: "Emerson Hunt" });
-export const morgan = linkPerson({ href: "/conspirators/dave_morgan.html", name: "Dave Morgan" });
-export const nick = linkPerson({ href: "/conspirators/nick_burson.html", name: "Nick Burson" });
-export const owen = linkPerson({ href: "/conspirators/owen_jones.html", name: "Owen Jones" });
+export const mitch = linkPerson({ href: "mitch_jenkins.html", name: "Mitch Jenkins" });
+export const emerson_hunt = linkPerson({ href: "emerson_hunt.html", name: "Emerson Hunt" });
+export const morgan = linkPerson({ href: "dave_morgan.html", name: "Dave Morgan" });
+export const nick = linkPerson({ href: "nick_burson.html", name: "Nick Burson" });
+export const owen = linkPerson({ href: "owen_jones.html", name: "Owen Jones" });
 export const pat = linkPerson({ href: "https://patfish.com", name: "Pat Fish" });
 export const pat_fish = pat;
 export const duo = <>{pat}, {max}</>
 export const pat_headstone = linkPerson({ href: "https://patfish.com", name: "Wilson Headstone" });
-export const paul = linkPerson({ href: "/conspirators/paul_mulreany.html", name: "Paul Mulreany" });
-export const pete = linkPerson({ href: "/conspirators/peter_crouch.html", name: "Peter Crouch" });
-export const rev = linkPerson({ href: "/conspirators/martin_stebbing.html", name: "Martin Stebbing (Rev. Botus Whiteblood Fleming)" });
-export const richard = linkPerson({ href: "/conspirators/richard_formby.html", name: "Richard Formby" });
-export const rivers = linkPerson({ href: "/conspirators/john_rivers.html", name: "John A. Rivers" });
-export const rodney = linkPerson({ href: "/conspirators/rodney_allen.html", name: "Rodney Allen" });
-export const rolo = linkPerson({ href: "/conspirators/rolo_mcginty.html", name: "Rolo McGinty" });
-export const russ = linkPerson({ href: "/conspirators/russell_cooper.html", name: "Russell Cooper" });
-export const russ_agent = linkPerson({ href: "/conspirators/russell_cooper.html", name: "Agent Wilson" });
-export const simon = linkPerson({ href: "/conspirators/simon_taylor.html", name: "Simon Taylor" });
+export const paul = linkPerson({ href: "paul_mulreany.html", name: "Paul Mulreany" });
+export const pete = linkPerson({ href: "peter_crouch.html", name: "Peter Crouch" });
+export const rev = linkPerson({ href: "martin_stebbing.html", name: "Martin Stebbing (Rev. Botus Whiteblood Fleming)" });
+export const richard = linkPerson({ href: "richard_formby.html", name: "Richard Formby" });
+export const rivers = linkPerson({ href: "john_rivers.html", name: "John A. Rivers" });
+export const rodney = linkPerson({ href: "rodney_allen.html", name: "Rodney Allen" });
+export const rolo = linkPerson({ href: "rolo_mcginty.html", name: "Rolo McGinty" });
+export const russ = linkPerson({ href: "russell_cooper.html", name: "Russell Cooper" });
+export const russ_agent = linkPerson({ href: "russell_cooper.html", name: "Agent Wilson" });
+export const simon = linkPerson({ href: "simon_taylor.html", name: "Simon Taylor" });
 export const simon_mawby = 'Simon Mawby';
 export const sm = linkSearch({ name: "Steve Musgrove" });
 export const solo = pat;
-export const sonic = linkPerson({ href: "/conspirators/sonic_boom.html", name: "Sonic Boom" });
-export const steve = linkPerson({ href: "/conspirators/steve_valentine.html", name: "Steve Valentine" });
-export const steve_beswick = linkPerson({ href: "/conspirators/steve_beswick.html", name: "Steve Beswick" });
-export const steve_gordon = linkPerson({ href: "/conspirators/steve_gordon.html", name: "Steve Gordon" });
-export const steve_gordon_gman = linkPerson({ href: "/conspirators/steve_gordon.html", name: "G-Man" });
-export const stevenew = linkPerson({ href: "/conspirators/steve_new.html", name: "Steve New" });
-export const sumishta = linkPerson({ href: "/conspirators/sumishta_brahm.html", name: "Sumishta Brahm" });
-export const sumo_botty = linkPerson({ href: "/conspirators/ian_botterill.html", name: "Mister B" });
-export const sumo_kathie = linkPerson({ href: "/conspirators/kathie_mcginty.html", name: "Kathie M" });
-export const sumo_kathy = linkPerson({ href: "/conspirators/kathy_schaer.html", name: "Special K" });
+export const sonic = linkPerson({ href: "sonic_boom.html", name: "Sonic Boom" });
+export const steve = linkPerson({ href: "steve_valentine.html", name: "Steve Valentine" });
+export const steve_beswick = linkPerson({ href: "steve_beswick.html", name: "Steve Beswick" });
+export const steve_gordon = linkPerson({ href: "steve_gordon.html", name: "Steve Gordon" });
+export const steve_gordon_gman = linkPerson({ href: "steve_gordon.html", name: "G-Man" });
+export const stevenew = linkPerson({ href: "steve_new.html", name: "Steve New" });
+export const sumishta = linkPerson({ href: "sumishta_brahm.html", name: "Sumishta Brahm" });
+export const sumo_botty = linkPerson({ href: "ian_botterill.html", name: "Mister B" });
+export const sumo_kathie = linkPerson({ href: "kathie_mcginty.html", name: "Kathie M" });
+export const sumo_kathy = linkPerson({ href: "kathy_schaer.html", name: "Special K" });
 export const sumo_pat = linkPerson({ href: "https://patfish.com", name: "Headstone" });
-export const sumo_russ = linkPerson({ href: "/conspirators/russell_cooper.html", name: "Agent Russell Cooper" });
-export const tim_harries = linkPerson({ href: "/conspirators/tim_harries.html", name: "Tim Harries" });
+export const sumo_russ = linkPerson({ href: "russell_cooper.html", name: "Agent Russell Cooper" });
+export const tim_harries = linkPerson({ href: "tim_harries.html", name: "Tim Harries" });
 export const undertakers = <b>The Undertakers</b>;
-export const wilson = linkExternal('https://wilsondub.com', 'Wilson');
-export const wolfi = linkPerson({ href: "/conspirators/wolfgang_tschegg.html", name: "Wolfgang Tschegg" });
+export const wilson = linkInternal('/project/wilson', 'Wilson');
+export const wolfi = linkPerson({ href: "wolfgang_tschegg.html", name: "Wolfgang Tschegg" });
 
 //
 //	producers/engineers/soundmen/other
@@ -1193,7 +1193,7 @@ export const	people = [
 	{ lookup: "john_silver", name: "John Silver" },
 	{ lookup: "jonny_mattock", href: "jonny_mattock.html", name: "Jonny Mattock" },
 	{ lookup: "jules", href: "julian_poole.html", name: "Julian Poole" },
-	{ lookup: "karel", href: "/conspirator/von_dammerung.html", name: 'Karel Von Dämmerung' },
+	{ lookup: "karel", href: "von_dammerung.html", name: 'Karel Von Dämmerung' },
 	{ lookup: "kathie", href: "kathie_mcginty.html", name: "Kathie McGinty" },
 	{ lookup: "kathy", href: "kathy_schaer.html", name: "Kathy Schaer" },
 	{ lookup: "kathy_misery", href: "kathy_schaer.html", name: "Misery Wilson" },
@@ -1270,7 +1270,7 @@ export const	people = [
 	{ lookup: "poi", href: "http://www.poidogpondering.com/", name: "Poi Dog Pondering", act: true },
 	{ lookup: "bwatch", href: "http://www.theblackwatchmusic.com", name: "The Black Watch", act: true },
 	{ lookup: "purelove", href: "http://ourworld.compuserve.com/homepages/RobertFliegel/purelove.htm", name: "Purelove", act: true },
-	{ lookup: "eg", href: "https://adjective.com/htdb/eg", name: "The Black Eg", act: true },
+	{ lookup: "eg", href: "/project/black_eg", name: "The Black Eg", act: true },
 	{ lookup: "vergift", href: "https://adjective.com/vergiftung/site", name: "Vergiftung", act: true },
 	{ lookup: "cave", name: "Nick Cave", act: true },
 	{ lookup: "cvb", name: "Camper Van Beethoven", act: true },

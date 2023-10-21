@@ -48,7 +48,7 @@ const links = [
 		children:
 			<>
 			{mercer} is one of The Butcher&apos;s favourite journalists and all-round gentleman adventurers
-			is flogging all manner of priceless pop pictures for the discerning at
+			is flogging all manner of priceless pop pictures for the discerning.
 			</>
 	},
 	{

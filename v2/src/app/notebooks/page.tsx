@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PhotoSet from '@/components/PhotoSet';
@@ -26,11 +27,11 @@ const whittemore_miracles = [
 	{ src: "/assets/images/notebooks/DSC_3974.jpg", alt: "notebook" },
 	{ src: "/assets/images/notebooks/DSC_3975.jpg", alt: "notebook" },
 
-	{ src: "/assets/images/notebooks/notebook_lyrics_old_snakey.jpg", alt: "Old Snakey" },
+	{ src: "/assets/images/notebooks/notebook_lyrics_old_snakey.jpg", alt: <Link href="/lyrics/old_snakey">Old Snakey</Link> },
 ];
 
 const duval = [
-	{ src: "/assets/images/notebooks/notebook_lyrics_sister_death.jpg", alt: "sister death lyrics", credit: 'Jimmy Duval', credit_date: '2022-08-20', body: "I just received these handwritten lyrics from Mr. Curtis E Johnson himself!" }
+	{ src: "/assets/images/notebooks/notebook_lyrics_sister_death.jpg", alt: <><Link href="/lyrics/sister_death">Sister Death</Link> lyrics</>, credit: 'Jimmy Duval', credit_date: '2022-08-20', body: "I just received these handwritten lyrics from Mr. Curtis E Johnson himself!" }
 ];
 
 const Notebooks = () => {

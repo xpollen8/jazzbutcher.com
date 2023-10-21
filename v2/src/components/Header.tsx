@@ -131,7 +131,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	first_gig: { parent: 'prejbc', title: "Pat's first gig", summary: "1974", inParentDirectory: true, body: "Pat Fish, Chris Zero, Rolo, others" },
 	nightshift: { parent: 'prejbc', title: 'Nightshift', summary: "1976-1978", inParentDirectory: true, body: "Pat Fish, John Silver, Colin Henney, Paul Quarry, Chris Clark, Ros Caston, Jon Stephenson" },
 	the_institution: { parent: 'prejbc', title: 'The Institution', summary: "1978-1980", inParentDirectory: true, body: "Rolo, Rob Wilford, Max Eider, Pat Fish, Johnathan Stephenson, John Duval" },
-	sonic_tonix: { parent: 'prejbc', title: 'Sonic Tonix', summary: "1980-1981 (AKA 'The Tonix')", inParentDirectory: true, body: "John Silver, Dave Goldie, Simon Mawby, Owen Jones, Pat Fish, Pete Millson" },
+	tonix: { parent: 'prejbc', title: 'Sonic Tonix', summary: "1980-1981 (AKA 'The Tonix')", inParentDirectory: true, body: "John Silver, Dave Goldie, Simon Mawby, Owen Jones, Pat Fish, Pete Millson" },
 	wow_federation: { parent: 'prejbc', title: 'Wow Federation', summary: "1981", inParentDirectory: true, body: "Millree Hughes, Brian Warner, Ian Warner, Nick Horton, Andy Love, James Rogers, Carl Fysh, Vicky Richardson, Boz Warnock, Andy Sizer, Liza Widdowson, Deborah Keeping, Paul Conneally, Pat Fish, Max Eider, Will Buchanan, Mark Sinker (https://rateyourmusic.com/artist/wow-federation)" },
 	jazz_insects: { parent: 'prejbc', title: 'Jazz Insects', summary: "1982", inParentDirectory: true, body: "Matt Black, Mark Sinker, Max Eider, Pat Fish" },
 	//the_tonix: { parent: 'prejbc', title: 'The Tonix', inParentDirectory: true },

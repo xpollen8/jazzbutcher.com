@@ -146,7 +146,7 @@ const	SonicTonix = () =>
 
 const Tonix = () => 
 <>
-	<Header section="sonic_tonix" />
+	<Header section="tonix" />
 	<main>
 		<SonicTonix />
 		<TheTonix />

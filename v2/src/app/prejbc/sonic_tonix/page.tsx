@@ -137,7 +137,7 @@ const	SonicTonix = () =>
 		Photography By – Crispin Plaskitt
 		Producer – Fish*, Tonix*
 		Recorded at DUFFYS.
-		This was an Oxford-based outfit (ft. former members of INSTITUTION) whos sole release comes with rubber-stamped white labels (500 copies made). Members resurfaced in THE JAZZ BUTCHER and THE WOODENTOPS."
+		This was an Oxford-based outfit (ft. former members of INSTITUTION) whos sole release comes with rubber-stamped white labels (500 copies made). Members resurfaced in THE JAZZ BUTCHER and THE WOODENTOPS.
 		<EmbedMedia data={{ mediaurl: "/assets/projects/SonicTonix/SonicTonix_DontGoAway.mp3", title: "Don't Go Away", comment: "A side" }} />
 		<EmbedMedia data={{ mediaurl: "/assets/projects/SonicTonix/SonicTonix_Telepathy.mp3", title: "Telepathy", comment: "B side" }} />
 		</code>

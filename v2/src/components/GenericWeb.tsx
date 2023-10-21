@@ -26,7 +26,7 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 				} else {
 					if (u) {
 						if (u.startsWith('http')) {
-							return linkExternal(u, g)
+							return linkExternal(u, parseDomain(u))
 						} else {
 							return linkInternal(u, cleanG)
 						}

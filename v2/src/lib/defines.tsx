@@ -15,7 +15,7 @@ const linkSearch = ({ name, text, act }:
 	})()}
 </>
 
-const linkPerson = (props: { href: string, name: string }) => <span className="person">{linkInternal(`/conspirators/${props?.href}`, props?.name)}{' '}</span>
+const linkPerson = (props: { href: string, name: string }) => <span className="person">{linkInternal(props?.href?.startsWith('http') ? props?.href : `/conspirators/${props?.href}`, props?.name)}{' '}</span>
 const linkAlbum = (props: { title: string, href?: string }) =>
 <>
 {(props?.href) ?

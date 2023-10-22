@@ -2,10 +2,12 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EmbedMedia from '@/components/EmbedMedia';
+import Video from '@/components/Video';
 
-const Video = () => 
+const VideoPage = () => 
 <>
 	<Header section="video" />
+	<main>
 	<h1>This section is not yet ported from old JBC site</h1>
 	<EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/video/JazzButcherQuartet_NeverGiveUp.mp4', song: 'Never Give Up', datetime: '2020-10-14', mediacredit: 'Simon Taylor' }} >
 		<blockquote>
@@ -15,7 +17,9 @@ const Video = () =>
 <hr />
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/screenshots/20201014_facebook_SimonTaylor_NeverGiveUp.png" width={500} height={500} alt="never give up video announcement" />
 	<EmbedMedia data={{ mediaurl: 'https://youtube.com/embed/mkTHuohiZSQ', song: "When You's A Viper" }} />
+	<Video />
+	</main>
 	<Footer />
 </>
 
-export default Video;
+export default VideoPage;

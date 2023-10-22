@@ -37,8 +37,10 @@ label {
 	display: none;
 }
 .audioPlayer {
+	padding-left: 10px;
+	padding-right: 10px;
 	display: inline-block;
-	width: 96%;
+	width: 100%;
 }
 .audio_player {
 	width: 100%

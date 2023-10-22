@@ -9,7 +9,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import { removeHTML, Credit, Attribution } from '@/components/GenericWeb';
 import useLyric from '@/lib/useLyric';
-import { parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/utils';
+import { ts2URI, parseCredit, parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/utils';
 
 const	LyricVideo = ({ video }: any) => {
 	if (!video) return;
@@ -127,6 +127,44 @@ const Media = (props: any) => {
 	)
 }
 
+const exists = (str?: string) => (str && str?.length && str !== ';;;;') ? str : null;
+
+const Medias = (props: any) => {
+	const { medias } = props;
+	if (!medias?.results?.length) return;
+	return (
+		<>
+		<Tag>Performances</Tag>
+		<blockquote key={props?.key}>
+			{medias?.results?.map((p: any, key: number) => {
+				const { author,
+					collection,
+					comment,
+					credit,
+					datetime,
+					dtcreated,
+					href,
+					images,
+					lookup,
+					media_id,
+					mp3,
+					name,
+					ordinal,
+					//parent,
+					project,
+					subtype,
+					type,
+				} = p;
+				const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit);
+				const { credit: venue, crediturl: city, creditdate: country } = collection?.includes(';;') && parseCredit(collection);
+				const parent = (!datetime.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
+				return <div key={key} className={(type === 'video') ? 'listItem' : ''}><EmbedMedia data={{ mediaurl: (!href.includes('.html') && exists(href)) || exists(mp3), mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? collection : '', venue, city, datetime, parent }} /></div>
+				})}
+		</blockquote>
+		</>
+	)
+}
+
 const Audio = (props: any) => {
 	const { audio } = props;
 	return (
@@ -138,8 +176,11 @@ const Audio = (props: any) => {
 
 const Lyric = ({ params }: { params?: any }) => {
 	const { data, isLoading, error } = useLyric(params?.slug);
-	const { lyrics, foundon } = data || {};
-	const song = lyrics?.results[0];
+	const { lyrics, foundon, medias } = data || {};
+	const song = {
+		...lyrics?.results[0],
+		medias
+	};
 
 	const tabs = [
 			{ label: 'Lyrics', lookup: (song: any) => { return song?.lyrics }, func: Lyrics },
@@ -149,6 +190,7 @@ const Lyric = ({ params }: { params?: any }) => {
 			{ label: 'Live Stats', lookup: (song: any) => ({}), func: LiveStats },
 			{ label: 'Audio', lookup: (song: any) => (song?.mp3), func: Audio },
 			{ label: 'Media', lookup: (song: any) => (song?.media), func: Media },
+			{ label: 'Medias', lookup: (song: any) => (song?.medias), func: Medias },
 	];
 
 	return (<><Suspense fallback=<>Loading...</> >
@@ -157,7 +199,7 @@ const Lyric = ({ params }: { params?: any }) => {
 				<Header project={song?.project} section="lyrics" title={song?.title} />
 				<main>
 					<Tag>{song?.title}</Tag>
-					{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon)}</div>)}
+					{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon, medias)}</div>)}
 					{FoundOn(foundon)}
 				</main>
 			</>)

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import LinkAudio from '@/components/LinkAudio';
 import EmbedVideo from '@/components/EmbedVideo';
 import { autoLink } from '@/lib/utils';
@@ -178,6 +179,12 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 				} else {
 					return (<>
 						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
+
+						{(city?.length && venue?.length && datetime?.length && !datetime.match(/0000-00-00 00:00:00/)) && <>
+							{(parent) && <Link href={parent}><b>{datetime?.substring(0, 10)}</b></Link>}
+							{!(parent) && <b>{datetime?.substring(0, 10)}</b>}
+							{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
+						</>}
 						{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
 						{(author) && <span className="smalltext">({author})</span>}
 						{(comment) && <span className="smalltext"> ({comment}) </span>}

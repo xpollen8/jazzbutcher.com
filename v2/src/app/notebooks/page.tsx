@@ -34,11 +34,17 @@ const duval = [
 	{ src: "/assets/images/notebooks/notebook_lyrics_sister_death.jpg", alt: <><Link href="/lyrics/sister_death">Sister Death</Link> lyrics</>, credit: 'Jimmy Duval', credit_date: '2022-08-20', body: "I just received these handwritten lyrics from Mr. Curtis E Johnson himself!" }
 ];
 
+const katelin = [
+	{ src: "/images/20211006/20211006_press_jericsmith.jpg", alt: <><Link href="/lyrics/drink">D.R.I.N.K.</Link> lyrics</>, credit: 'Katelin Smith', credit_date: '2021-10-06', body: "Max's handwritten DRINK lyrics from the 2012 Adventurer's fundraising" }
+];
+
 const Notebooks = () => {
 	return (<>
 		<Header section="notebooks" />
 		<main>
 		Throughout his life, Pat kept journals in which he documented his gigs, tours, general observations, drew sketches, and jotted down lyrics. They are utterly fascinating.  In 2012, Pat auctioned off many of his older notebooks to raise funds for Last of the Gentlemen Adventurers
+		<hr />
+		<PhotoSet title='Katelin Smith' photos={katelin} />
 		<hr />
 		<PhotoSet title='Jimmy Duval' photos={duval} />
 		<hr />

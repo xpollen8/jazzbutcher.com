@@ -1,33 +1,39 @@
 "use client"
 
-import { parseCredit } from '@/lib/utils';
+import { ts2URI, parseCredit } from '@/lib/utils';
 import useAudio from '@/lib/useAudio';
 import EmbedMedia from '@/components/EmbedMedia';
 import LetterHeader from '@/components/LetterHeader';
+
+const exists = (str?: string) => (str && str?.length && str !== ';;;;') ? str : null;
 
 const AudioSection = ({ title, data }: any) => {
 	return (data && data?.length) && (<>
 		<LetterHeader title={title} />
 		{data?.map((d: any, key: number) => {
-			const { credit=d.mediacredit, crediturl=d.mediacrediturl, creditdate, creditcaption } = parseCredit(d?.credit || '');
-			//if (d.credit) console.log("CR", { cr: d.credit, credit, crediturl, creditdate, creditcaption });
-			//if (title === 'Live Shows') console.log("DATA", d);
-			//if (title === 'Live Shows' && !d.mediaurl) console.log("DATA", d);
-			return <EmbedMedia key={key}
-				data={{
-					datetime: d.datetime,
-					venue: d.venue,
-					city: d.city,
-					mediaurl: d.mp3 || d.mediaurl,
-					title: d.name || d.song || 'XXXXXXX',
-					author: d.collection,
-					comment: d.comment,
-					mediacredit: credit,
-					mediacrediturl: crediturl,
-					mediacreditdate: creditdate,
-					children: creditcaption
-				}} />;
-		})}
+				const { author,
+					collection,
+					comment,
+					credit,
+					datetime,
+					dtcreated,
+					href,
+					images,
+					lookup,
+					media_id,
+					mp3,
+					name,
+					ordinal,
+					//parent,
+					project,
+					subtype,
+					type,
+				} = d;
+				const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit);
+				const { credit: venue, crediturl: city, creditdate: country } = collection?.includes(';;') && parseCredit(collection);
+				const parent = (!datetime.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
+				return <div key={key} className={(type === 'video') ? 'listItem' : ''}><EmbedMedia data={{ autolink: true, mediaurl: (!href.includes('.html') && exists(href)) || exists(mp3), mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? exists(collection) : '', venue, city, datetime, parent }} /></div>
+				})}
 	</>)
 }
 

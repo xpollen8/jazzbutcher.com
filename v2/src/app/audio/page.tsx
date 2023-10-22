@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import EmbedMedia from '@/components/EmbedMedia';
 import LetterHeader from '@/components/LetterHeader';
 import SectionOptions from '@/components/SectionOptions';
+import Audio from '@/components/Audio';
 
 const AudioInterviews = () => {
 	return (<>
@@ -10,7 +11,7 @@ const AudioInterviews = () => {
 	</>);
 }
 
-const Audio = () => {
+const AudioPage = () => {
 	return (<>
 		<Header section="audio" />
 		<main>
@@ -57,12 +58,13 @@ const Audio = () => {
 		expose the contents of:
 		https://s3.amazonaws.com/assets.jazzbutcher.com/audio/flac/
 		</pre>
+		<Audio />
 		</main>
 		<Footer />
 	</>)
 }
 
-export default Audio;
+export default AudioPage;
 /*
 
 #define	gsExtra[1989-11-28_00:00:00]

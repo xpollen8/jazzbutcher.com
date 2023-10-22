@@ -20,7 +20,7 @@ const censorEmail = (str: string) => {
 	return addr + '@' + blank + '.' + top;
 }
 
-const deHTDBifyText = (v?: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '@').replace(/\[at\]/g, '@').replace(/\[remove\]/g, '@') || '';
+const deHTDBifyText = (v?: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/YourTown,/, '').replace(/USofA/, '').replace(/you\(at\)company.com/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '@').replace(/\[at\]/g, '@').replace(/\[remove\]/g, '@').replace(/&amp;/g, '&') || '';
 
 const doFetch = async (url: string) => {
 	//console.log("FETCH", url);
@@ -71,6 +71,7 @@ const apiData = async (path: string, args?: string) => {
 		case 'gigtexts':
 		case 'gigsongs':
 		case 'performances':
+		case 'audio':
 		case 'gigs_with_audio':
 		case 'release_audio_by_project':
 		case 'audio_by_project':
@@ -95,10 +96,12 @@ const apiData = async (path: string, args?: string) => {
 		case 'lyric_by_href': {
 			const releases = await apiDataFromHTDBServer('db_albums/data.json');
 			const lyrics = await apiDataFromDataServer('lyric_by_href', args);
+			const medias = await apiDataFromDataServer('media_by_song', lyrics?.results[0]?.title);
 			const song = lyrics?.results[0]?.title;
 			const foundList = await apiDataFromDataServer('releases_by_song', encodeURIComponent(song));
 			return {
 				lyrics,
+				medias,
 				foundon: foundList?.results?.map(({ lookup, media }: any) => ({ ...releases?.results?.find((r: any) => lookup === r.lookup), mediaurl: media })),
 			}
 		}

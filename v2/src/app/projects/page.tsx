@@ -69,8 +69,8 @@ const Project = () =>
 <Tag>Productions</Tag>
 <ol style={{ marginLeft: '10px' }} className="listItem">
 	<li>Love Ambassadeux - Black Mischief (single, Rumpo Records, 1985)</li>
-	<li>13 Frightened Girls - Lost at Sea (3 track 12", Foundation, 1991)</li>
-	<li>Venus Fly Trap - Pandora's Box (LP, Danceteria 1992)</li>
+	<li>13 Frightened Girls - Lost at Sea (3 track 12&quot;, Foundation, 1991)</li>
+	<li>Venus Fly Trap - Pandora&apos;s Box (LP, Danceteria 1992)</li>
 	<li>Chelsea Paris - Tramway (LP, Virgin France, 1992)</li>
 	</ol>
 	<Tag>Contributions</Tag>
@@ -81,8 +81,8 @@ const Project = () =>
 	<li>Venus Fly Trap - Rocket USA (single, 1989) - Tenor sax</li>
 	<li>M Walking on the Water - Pluto (LP, 1989) - Vocals</li>
 	<li>Blue Aeroplanes - Beatsongs (LP 1991) - Vocals</li>
-	<li>Up in a Down World (EP 1993) - Vocals, co-writing credit on "Meantime"</li>
-	<li>Rough Music (LP 1994) - Guitar, organ, co-writing credit on "Whatever Happened to our Golden Birds?"</li>
+	<li>Up in a Down World (EP 1993) - Vocals, co-writing credit on &quot;Meantime&quot;</li>
+	<li>Rough Music (LP 1994) - Guitar, organ, co-writing credit on &quot;Whatever Happened to our Golden Birds?&quot;</li>
 	<li>Spacemen 3 - Recurring (LP 1990) - Tenor sax, flute</li>
 	<li>Sonic Boom - Spectrum (LP 1989) - Finger pops, vocals</li>
 	<li>Spectrum - Soul Kiss (Glide Divine) (LP, 1992) - Tenor sax</li>
@@ -91,7 +91,7 @@ const Project = () =>
 	<li>Chelsea Paris - Tramway (LP 1992) - Guitar, vocals</li>
 	<li>The Field Trip - Take to the Streets (EP, 1993) - Tenor sax</li>
 	<li>The Black Watch - Jiggery-Pokery (LP, 2002) - Vocals (listen@youtube)</li>
-	<li>The Four One And Only's - Holy (LP, 1996) - Vocals</li>
+	<li>The Four One And Only&apos;s - Holy (LP, 1996) - Vocals</li>
 	<li>Stranger Tractors - Vibration (CD single, 1995) - Drums, vocals</li>
 	<li>The Purelove - King Pop (Marsh Marigold Records, 1997) - Guitar</li>
 	<li>The Purelove - Live (1997 tour of Germany): Guitar</li>

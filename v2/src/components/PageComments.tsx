@@ -1,10 +1,15 @@
 "use client"
 
 import Image from 'next/image';
+import Tag from '@/components/Tag';
 
 import { Suspense } from 'react';
 
 import { usePathname } from 'next/navigation';
+
+import IconReply from '@/svg/IconReply';
+import IconLike from '@/svg/IconLike';
+import IconAddComment from '@/svg/IconAddComment';
 
 import usePageComments from '@/lib/usePageComments';
 import { type CommentType, dateDiff } from '@/lib/utils';
@@ -12,24 +17,34 @@ import { type CommentType, dateDiff } from '@/lib/utils';
 const Comment = ({ subject, dtcreated, who, whence, comments }: CommentType, key: number) => (
 	<div key={key} className="comment">
 		<div id="subject">{subject}</div>
-		<div id="who">{<> {whence} - {who} </>}</div>
-		<div id="date">{dateDiff(dtcreated)}</div>
 		<div id="comments" className="annotation" dangerouslySetInnerHTML={{__html: comments }} />
+		<div id="who"><> <b>{whence}</b> {!!(who?.length) && <span className="smalltext">- {who} </span>}</></div>
+		<div id="date">{dateDiff(dtcreated, '')}</div>
+		<div className="flex flex-wrap justify-center gap-10 pt-2">
+			<IconLike style={{ width: '1.7em' }} />
+			<IconReply style={{ width: '1.7em' }} />
+			<IconAddComment style={{ width: '1.7em' }} />
+		</div>
 	</div>
 )
 
-const AddComment = () => (
+const AddComment = ({ pathname }: { pathname: string }) => (
 	<div className="comment">
-		<h1>Add Comments</h1>
+		<Tag>New comments for <i>{pathname}</i></Tag>
+		<p />
+		<div style={{ outline: '1px solid green', width: '100%', height: '30px', background: '#eee', padding: '5px' }}>
+			Subject
+		</div>
+		<p />
 		<div style={{ outline: '1px solid green', width: '100%', height: '250px', background: '#eee', padding: '5px' }}>
 			New comment form will go here
 		</div>
 	</div>
 )
 
-const Comments = ({ comments = [], className }: { comments: CommentType[], className?: string }) => (
+const Comments = ({ pathname, comments = [], className }: { pathname: string, comments: CommentType[], className?: string }) => (
 	<div className={className}>
-		<AddComment />
+		<AddComment pathname={pathname} />
 		{comments?.map(Comment)}
 	</div>
 )
@@ -84,7 +99,7 @@ const PageComments = ({ className }: { className?: string }) => {
 						<div className="text-sm text-slate-500 ml-1">{comments.length}</div>
 					</CommentBubble>
 				</summary>
-				<Comments comments={comments} className="commentOverlay"/>
+				<Comments pathname={pathname} comments={comments} className="commentOverlay"/>
 			</details>
 		</Suspense>
 	</>)

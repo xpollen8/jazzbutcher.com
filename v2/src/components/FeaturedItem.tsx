@@ -31,9 +31,9 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, lab
 			<div className="album_details">
 				<div className={className} />
 				{!!(useImage?.length && useThumb?.length) &&
-					<div className="float-right text-center" style={{ width: '182px' }}>
+					<div className="float-right text-center">
 					<Link href={link || useImage}>
-						<Image className="border border-slate-600 ml-2 rounded-md" src={useThumb} width={175} height={175} alt={alt} />
+						<Image className="border border-slate-600 ml-2 rounded-md" src={useThumb} width={200} height={200} alt={alt} />
 					</Link>
 					{label} {media}
 					</div>

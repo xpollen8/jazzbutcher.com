@@ -17,7 +17,7 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 				className={`w-full`}
 				link={inPage ? undefined : href}
 				media={media !== 'NULL' ? media : ''}
-				label={expand(label)}
+				label={label}
 				buy={buy}
 				title=<>{title} {(type?.includes('demo')) ? <span className="smalltext">(Demo)</span> : ''}</>
 				image={truncAt(';;', thumb || '')}

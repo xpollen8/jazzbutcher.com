@@ -38,9 +38,9 @@ const AudioPage = () => {
 		>
 		</EmbedMedia>
 
-		<iframe src='https://podomatic.com/embed/html5/episode/6738834' height='208' width='504'frameborder='0' marginheight='0' marginwidth='0' scrolling='no' allowfullscreen></iframe>
+		<iframe src='https://podomatic.com/embed/html5/episode/6738834' height={208} width={504} frameBorder={0} marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen></iframe>
 
-		<iframe src='https://podomatic.com/embed/html5/episode/10011300' height='208' width='504'frameborder='0' marginheight='0' marginwidth='0' scrolling='no' allowfullscreen></iframe>
+		<iframe src='https://podomatic.com/embed/html5/episode/10011300' height={208} width={504} frameBorder={0} marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen></iframe>
 
 		{/*
 		<Suspense fallback=<>Loading...</>>

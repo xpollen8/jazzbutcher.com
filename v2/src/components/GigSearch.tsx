@@ -321,15 +321,15 @@ const templateGigs = (results: RecordType, layout: any) => {
 					const useG = (record?.gig) ? record.gig : record;
 					const styles = determineStyles(record);
 					const datetime = record?.datetime.substring(0, 10).replace(/-/g, '');
-					let poster = (useG?.extra?.includes('poster')) ? `/images/${datetime}/${datetime}_poster.jpg` : undefined;
+					let poster = (useG?.extra?.includes('poster')) ? `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_poster_250.jpg` : undefined;
 					if (!poster) {
 						if  (useG?.extra?.includes('ticket')) {
-							poster = `/images/${datetime}/${datetime}_ticket.jpg`;
+							poster = `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_ticket_250.jpg`;
 						}
 					}
 					if (!poster) {
 						if  (useG?.extra?.includes('setlist')) {
-							poster = `/images/${datetime}/${datetime}_setlist.jpg`;
+							poster = `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_setlist_250.jpg`;
 						}
 					}
 					const cls = "gig_" + styles?.type;
@@ -342,7 +342,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 					return (
 						<Link key={key}
 								href={gigLink}
-								style={{ textAlign: 'center', width: '320px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '1px solid #555'}}
+								style={{ textAlign: 'center', width: '255px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '1px solid #555'}}
 								className={`${cls} drop-shadow-md hover:outline`}
 							>
 							<div style={{ background: 'white', color: '#333', borderRadius: '5px' }} className="drop-shadow-md">
@@ -378,7 +378,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 								</div>
 							)}
 							{(poster) &&
-								<Image alt='poster' width={320} height={320} src={poster} style={{ height: 'auto' }}/>
+								<Image alt='poster' width={250} height={250} src={poster} style={{ height: 'auto' }}/>
 							}
 						</Link>
 					)

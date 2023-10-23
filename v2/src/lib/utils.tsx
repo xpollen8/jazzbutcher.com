@@ -233,7 +233,7 @@ export const parseCredit = (cr: string = '') => {
 
 export const autoLink = songLinkMapped;
 
-export const parseDomain = (str: string) => String(str?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
+export const parseDomain = (str: string) => String(str?.trim()?.match(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/igm))?.replace('http://', '').replace('https://', '');
 
 export const parseCaptionSourceEtc = (str?: string, captionsLast?: boolean) => {
 	const parts = str?.split(';;')?.map((ch: string) => ch.length ? ch.replace('[remove]', '@') : undefined) || []

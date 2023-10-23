@@ -372,26 +372,63 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,12,'Partytime',
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,13,'Real Men',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,14,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,15,'Roadrunner','Jonathan Richman',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,1,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,2,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,3,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,4,'Still in the Kitchen',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,5,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,6,'Marnie',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,7,'Walk With The Devil',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,8,'Just Like Bettie Page',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,9,'Red Pets',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,10,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,11,'Grooving in the Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,12,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,13,'Death Dentist',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,14,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,15,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,16,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,17,'Roadrunner','Jonathan Richman',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,18,'Mind Like A Playgroup',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,19,'I\'m Waiting For My Man','Velvet Underground',NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1986-02-14 00:00:00','set',1,1,'Hard',NULL,NULL,NULL,'https://www.youtube.com/embed/UOdLYoPOAkc',NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23 00:00:00','set',1,0,'The Entire Performance',NULL,"\
+AUD > low gen analog via buenaventura \
+Low gen analog > Kenwood KX-5030 cassette deck > Zoom H2 > WAV (16/44) [transfer to auto_pilot] > Audacity (normalize, trimming) > CDWave (tracking) > TLH (flac, checksum) \
+Running time [92:02] \
+Tape flip 3 minuntes into track 10 \
+Many thanks to buenaventura for sharing.",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19850823/19850823_JazzButcher_Bochum_DE_ZecheBochum.mp3','buenaventura',NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,1, "The Jazz Butcher Meets Count Dracula",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,2, "Big Foot Motel",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,3, "Death Dentist",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,4, "Soul Happy Hour",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,5, "Southern Mark Smith",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,6, "Walk With The Devil",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,7, "Caroline Wheeler's Birthday Present",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,8, "Only A Rumour",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,9, "Girlfriend",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,10, "Girls Who Keep Goldfish",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,11, "Sweet Jane","Lou Reed",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,12, "What's The Matter Boy?",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,13, "Real Men",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,14, "Rain",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,15, "Party Time",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,16, "Zombie Love",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,17, "In Bath Of Bacon",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','set',1,18, "I\'m Waiting For My Man","Velvet Underground",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','encore',1,1, "Speedy Gonzales","Hess, Kaye, Lee",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-08-23','encore',1,2, "Roadrunner","Jonathan Richman",NULL,NULL,NULL,NULL,NULL);
+
+
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16 00:00:00','set',1,0,'The Entire Performance',NULL,"Source: 1st Generation Audio Cassette -> Magix MCLab 2008 deluxe -> Cool Edit -> wav -> TLH -> flac 8 -> dime -> you \
+all credits for this very good audience recording go to the taper: 'mo-Sound concert recording'! \
+complete show, total length: 83:00 mins",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19851116/19851116_JazzButcher_Frankfurt_DE_Batschkapp.mp3','mo-Sound concert recording',NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,1, "Intro",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,2, "Southern Mark Smith",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,3, "Bigfoot Motel",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,4, "Big Saturday",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,5, "Still In The Kitchen",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,6, "Girlfriend",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,7, "Marnie",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,8, "Walk With The Devil",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,9, "Just Like Bettie Page",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,10, "Red Pets",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,11, "The Human Jungle",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,12, "Grooving In The Bus Lane",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,13, "Soul Happy Hour",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,14, "Death Dentist",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,15, "Jazz Butcher -v- Count Dracula",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,16, "Zombie Love",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,17, "Partytime",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,18, "Roadrunner","Jonathan Richman",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','encore',1,1, "Mind Like A Playgroup",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','encore',1,2, "I’m Waiting For My Man","Velvet Underground",NULL,NULL,NULL,NULL,NULL);
+
 
 INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,0,'The Entire Performance',NULL,"Audio recording live concert sourced from the audience. 96kHz FLAC available",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19850705/19850705_JazzButcher_Barcelona_FLAC.mp3','Ramón Piserra',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',1,1,"Bath Of Bacon",NULL,NULL,NULL,NULL,NULL,NULL);

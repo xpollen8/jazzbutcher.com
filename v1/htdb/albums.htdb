@@ -2995,9 +2995,9 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=fishco, person=[[person:Kizzy_O'Callaghan]], instruments=Guitars\, Vocals)}
 	${addAlbumPerf(release=fishco, person=[[person:Alex_Green]], instruments=Saxophones)}
 	${addAlbumPerf(release=fishco, person=[[person:Greenwood_Goulding]], instruments=Bass Guitar)}
-	${addAlbumPerf(release=fishco, person=[[person:Dave_Morgan]], instruments=Drums)}
-	${addAlbumPerf(release=fishco, person=[[person:Erol_Suleyman]], instruments=Bass, song='Lot 49')}
-	${addAlbumPerf(release=fishco, person=[[person:Blair_MacDonald]], instruments=Drums, song='Lot 49')}
+	${addAlbumPerf(release=fishco, person=[[person:Dave_Morgan]], instruments=Drums, song='Get It Wrong$$Chickentown')}
+	${addAlbumPerf(release=fishco, person=[[person:Erol_Suleyman]], instruments=Bass, song='Looking For Lot 49')}
+	${addAlbumPerf(release=fishco, person=[[person:Blair_MacDonald]], instruments=Drums, song='Looking For Lot 49')}
 	${addAlbumPerf(release=fishco, person=[[person:Laurence_O'Keefe]], instruments=Bass, song='Swell')}
 	${addAlbumPerf(release=fishco, person=[[person:Sonic_Boom]], instruments=Feedback, song='Susie')}
 	${addAlbumPerf(release=fishco, person=[[act:The_Perfect_Disaster]], instruments=Backing Vocals, song='The Best Way')}

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { parseDomain, linkInternal, linkExternal } from '@/lib/utils';
 import { expand } from '@/lib/defines';
+import { removeHTML } from '@/components/GenericWeb';
 
 const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, label, media, className, children }: {
 	link?: string
@@ -36,7 +37,7 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, lab
 					<Link href={link || useImage}>
 						<Image className="border border-slate-600 ml-2 rounded-md" src={useThumb} width={200} height={200} alt={alt} />
 					</Link>
-					<div className="smalltext">{(typeof label === 'string') ? <div style={{ width: '200px' }} className="grid grid-cols-1 -mt-5">{label?.split(',').map((x: string, key: number) => <div className="break-keep" key={key}>{expand(x)}<br /></div>)}</div> : label} {media}</div>
+					<div className="smalltext">{(typeof label === 'string') ? <div style={{ width: '200px' }} className="grid grid-cols-1 -mt-5">{label?.split(',').map((x: string, key: number) => <div className="break-keep" key={key}>{removeHTML(expand(x))}<br /></div>)}</div> : label} {media}</div>
 					</div>
 				}
 				<span className="album_title">

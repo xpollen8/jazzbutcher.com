@@ -3963,9 +3963,9 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=va_nh_vol1, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=va_nh_vol1)}
-	${addAlbumPerf(release=va_nh_vol1, ordinal=1, song="All The Saints")}
-	${addAlbumPerf(release=va_nh_vol1, ordinal=12, song="Wildlife", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Wildlife.mp3)}
-	${addAlbumPerf(release=va_nh_vol1, ordinal=17, song="Mercy", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3)}
+	${addAlbumPerf(release=va_nh_vol1, ordinal=1, song="All The Saints", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_AllTheSaints.mp3)}
+	${addAlbumPerf(release=va_nh_vol1, ordinal=12, song="Wildlife", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_Wildlife.mp3)}
+	${addAlbumPerf(release=va_nh_vol1, ordinal=17, song="Mercy", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_Mercy.mp3)}
 
 	${addAlbumPerf(release=va_nh_vol1, person=[[person:Curtis_E._Johnson]], instruments=Producer)}
 	${addAlbumPerf(release=va_nh_vol1, person=[[person:Curtis_E._Johnson]], instruments=Recorded, song="Wildlife$$Mercy")}

@@ -9291,6 +9291,8 @@ Break out and find out tonight.
 	)},
 		onlist=
 		single_saints .. adventurers .. va_nh_vol1
+		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_AllTheSaints.mp3,
+		caption=All The Saints (${va_nh_vol1} version)
 		,credits=${pat};;;;2010
 	)}
 #live	endif
@@ -9322,7 +9324,7 @@ Break out and find out tonight.
 		va_nh_vol1 ..
 		adventurers
 		,credits=${pat};;;;2006
-		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Mercy.mp3,
+		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_Mercy.mp3,
 		caption=Mercy (${va_nh_vol1} version)
 	)}
 #live	endif
@@ -11239,8 +11241,8 @@ Break out and find out tonight.
 	)},
 		onlist=
 		va_nh_vol1
-		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/Wildlife.mp3,
-		caption=Mercy (${va_nh_vol1} version)
+		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_Wildlife.mp3,
+		caption=Wildlife (${va_nh_vol1} version)
 	)}
 #live	endif
 

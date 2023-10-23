@@ -11,7 +11,7 @@ import { parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthNa
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
-import { Credit, ParsedCaption, removeHTML, RenderHTML } from '@/components/GenericWeb';
+import { Source, Credit, ParsedCaption, removeHTML, RenderHTML } from '@/components/GenericWeb';
 import useGig from '@/lib/useGig';
 import { PressSummary } from '@/components/MakeReleasePress';
 import { PrevArrow, NextArrow } from '@/components/Arrows';
@@ -88,10 +88,7 @@ const GigSetlists = (data: any) => <><Iterator data={data} func={GigSetlist} cla
 
 const GigPoster = (data: any, key: number) => <GigMedia {...data} />
 
-const GigPosters = (data: any) => {
-	console.log("POSTERS", data);
-	return <><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
-}
+const GigPosters = (data: any) => <><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
 
 const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
 
@@ -106,10 +103,17 @@ const GigSelfReview = (data: any, key: number) => <GigText {...data} />
 const GigSelfReviews = (data: any) => <><Iterator data={data} func={GigSelfReview} /></>
 
 const GigPlay = ({ data }: any) => {
+	// hack alert.  if the comment field holds 'Source:',
+	// then we assume this is an attibution of where the
+	// setlist came from.  so remove it out of the object
+	// and handle by itself.
+	const [ X, source ] = data?.comment?.split('Source:') || [];
+	const newData = JSON.parse(JSON.stringify(data));
+	if (source) delete newData.comment;
 	return (
 		<div>
-			<EmbedMedia data={{...data, autolink: true }} />
-			{data?.comment}
+			<EmbedMedia data={{...newData, autolink: true }} />
+			{(source) ? <Source u={source} /> : <>{newData?.comment}</>}
 		</div>
 	)
 }
@@ -167,7 +171,9 @@ const GigPresses = (data: any) => <><Iterator data={data} func={GigPress} /></>
 const GigDetails = ({ gig, joins }: any) => {
 	if (!gig) return;
 	return (<>
-		<Tag>Live Performance - {gig?.type} {gig?.venue} {gig?.city} {gig?.country} </Tag>
+		<Tag>
+		{(gig?.extra?.includes('interview')) ? 'Interview' : 'Live Performance'} - {gig?.venue} {gig?.city} {gig?.country}
+		</Tag>
 		<blockquote className="listItem" style={{ paddingLeft: '20px' }}>
 			<label>Date:</label> {dateDiff(gig?.datetime)}<br />
 			{(gig.ticketweb) && <><label>Tickets:</label> <Link href={gig.ticketweb}>{parseDomain(gig.ticketweb)}</Link><br /></>}
@@ -236,7 +242,7 @@ const Content = ({ gig }: { gig: any }) => {
 					joins['players_JBC'].push(t);
 				} else {
 					// only add new instruments to players' object
-					t.instruments.split(',').forEach((i: any) => {
+					t?.instruments?.split(',').forEach((i: any) => {
 						if (!player.instruments.includes(i)) {
 							const inst = player.instruments.split(',');
 							inst.push(i);

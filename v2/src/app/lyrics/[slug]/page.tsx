@@ -81,7 +81,7 @@ const PatSays = (props: any) => {
 		return <blockquote key={key} className="annotation">
 			<div dangerouslySetInnerHTML={{ __html: body }} />
 			<br />
-			<Attribution g={media_source} u={media_sourceurl} d={media_sourcedate} />
+			<Attribution g={removeHTML(media_source)} u={media_sourceurl} d={media_sourcedate} />
 		</blockquote>
 	})}
 	</>

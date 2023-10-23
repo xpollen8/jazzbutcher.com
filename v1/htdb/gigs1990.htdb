@@ -673,6 +673,9 @@
 		tickets=
 			/images/19901114/19901114_ticket.jpg$$
 			Eric R Lillyblad
+		,
+		photosets=
+			/images/19901114/19901114_bathtub.jpg;; JBC fans from new jersey fill a hotel bathtub with booze and proceed to feed them to the band.$$
 	)}
 
 #define	Nov15.html()
@@ -700,7 +703,7 @@
 		,
 		photosets= /images/19901115/19901115_del_alex.jpg;;${literalizeCommas(${green})}$$
 			/images/19901115/19901115_del_julian.jpg;;${literalizeCommas(${jules})}$$
-			/images/19901115/19901115_del_lix.jpg;;${literalizeCommas(${aero})}$$
+			/images/19901115/19901115_del_lix.jpg;;${literalizeCommas(${lix})}$$
 			/images/19901115/19901115_del_rodney.jpg;;${literalizeCommas(${rodney})}$$
 			${del}
 		,

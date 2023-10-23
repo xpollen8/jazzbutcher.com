@@ -30,7 +30,10 @@
 			/images/19930216/19930216_ticket.jpg$$
 			Pierre Guillaume
 		,
-		photosets= /images/19930216/19930216_paris.jpg$$
+		photosets=
+			/images/19930216/19930216_paris.jpg$$
+			/images/19930216/19930216_paris2.jpg$$
+			/images/19930216/19930216_paris3.jpg$$
 		,
 	)}
 

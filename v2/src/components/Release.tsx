@@ -262,12 +262,16 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		CDring: "CD Ring Text",
 	};
 
+	const doIt = (label?: string) => {
+		if (label && typeof label !== 'string') return label;
+		return label?.split(',')?.map((l: string, key: number, mx: string[]) => <span key={key}>{expand(l, true)}{(key !== mx?.length - 1) && <>{', '}</>}</span>);
+	}
 	return (<div>
 		<Tag>Details</Tag>
 		<blockquote>
 			{Object.keys(labels).map((label: string, key: number) => {
 				// @ts-ignore
-				if (release[label]) { return <div key={key}> <label>{labels[label]}</label>: {expand(release[label], true)} </div> }
+				if (release[label]) { return <div key={key}> <label>{labels[label]}</label>: {doIt(release[label])} </div> }
 			})}
 		</blockquote>
 	</div>)

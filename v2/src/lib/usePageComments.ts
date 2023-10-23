@@ -20,6 +20,8 @@ const mapLetterURLIFeedbackLookup = (uri: string): string => {
 const pathname2feedbackURI = (pathname: string) => {
 	const fullpath = (uri: string) => {
 		if (uri === '/') return '/htdb/index.html';
+		if (uri === '/releases') return '/albums/index.html';
+		if (uri === '/conspirators') return '/people/index.html';
 		if (uri === '/western_tape') return '/albums/western_tape.html';
 		if (uri === '/memoriam') return '/site/memoriam.html';
 		if (uri === '/letters') return '/letters/index.html';

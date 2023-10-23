@@ -590,14 +590,17 @@ samp {
 }
 
 .comment {
+	text-align: center;
 	outline: 1px solid #999;
 	border-radius: 5px;
 	background: white;
-	margin: 3px;
+	margin: 5px;
   padding: 10px;
 }
 .comment #subject {
 	font-weight: bold;
+	font-size: 1.15em;
+	background: #eee;
 }
 .comment #date {
 	font-weight: bold;
@@ -605,6 +608,7 @@ samp {
 .comment #who {
 }
 .comment #comments {
+	text-align: left;
 	font-style: italics;
 }
 

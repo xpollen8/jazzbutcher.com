@@ -59,7 +59,7 @@ export const blair = linkSearch({ name: "Blair MacDonald" });
 export const botty = linkPerson({ href: "ian_botterill.html", name: "Ian Botterill" });
 export const botty_bman = linkPerson({ href: "ian_botterill.html", name: "B-Man" });
 export const brent = linkSearch({ name: "Brent Bambury" });
-export const burrell = linkSearch({ name: "Tim Burrell" });
+export const burrell = linkPerson({ href: 'tim_burrell.html', name: "Tim Burrell" });
 export const butch = 'The Butcher';
 export const terry = 'Terry Walpole';
 export const tom_hall = linkInternal("/tomhall", "Tom Hall");
@@ -77,17 +77,17 @@ export const felix = linkPerson({ href: "felix_ray.html", name: "Felix Ray" });
 export const gab = linkPerson({ href: "gabriel_turner.html", name: "Gabriel Turner" });
 export const garofalo = linkPerson({ href: "steve_garofalo.html", name: "Steve Garofalo" });
 export const gerard = linkSearch({ name: "Gerard Langley" });
-export const gould = linkSearch({ name: "Greenwood Goulding" });
+export const gould = linkPerson({ href: 'greenwood_goulding.html', name: "Greenwood Goulding" });
 export const green = linkPerson({ href: "alex_green.html", name: "Alex Green" });
 export const hask = linkPerson({ href: "kevin_haskins.html", name: "Kevin Haskins" });
 export const hend = linkPerson({ href: "dave_henderson.html", name: "Dave Henderson" });
 export const hook = linkSearch({ name: "Paul Hookham" });
 export const iain = linkPerson({ href: "iain_ohiggins.html", name: "Iain O'Higgins" });
 export const indge = linkPerson({ href: "alastair_indge.html", name: "Alastair Indge" });
-export const is = linkSearch({ name: "Ian Sturgess" });
-export const joby = linkSearch({ name: "Joby Palmer" });
-export const joe = 	linkSearch({ name: "Joe Foster" });
-export const tony = 	linkSearch({ name: "Tony Foster" });
+export const is = linkPerson({ href: 'ian_sturgess.html', name: "Ian Sturgess" });
+export const joby = linkPerson({ href: 'joby_palmer.html', name: "Joby Palmer" });
+export const joe = 	linkPerson({ href: 'joe_foster.html', name: "Joe Foster" });
+export const tony = 	linkPerson({ href: 'tony_foster.html', name: "Tony Foster" });
 export const joe_woolley = linkSearch({ name: "Joe Woolley", act: true });
 export const joea = linkPerson({ href: "joe_allen.html", name: "Joe Allen" });
 export const joel_harries = linkPerson({ href: "joel_harries.html", name: "Joel Harries" });
@@ -735,6 +735,10 @@ export const mapActs: {[key: string]: string} = {
 };
 
 export const mapPerformers: {[key: string]: string} = {
+	'Greenwood_Goulding': 'gould',
+	'Joe_Allen': 'joea',
+	'Joe_Foster': 'joe',
+	'Tim_Burrell': 'burrell',
 	'Agent_Wilson': 'russ_agent',
 	'Alex_Green': 'green',
 	'Alex_Lee': 'lix',
@@ -1170,7 +1174,7 @@ export const	people = [
 	{ lookup: "botty", href: "ian_botterill.html", name: "Ian Botterill" },
 	{ lookup: "botty_bman", href: "ian_botterill.html", name: "B-Man" },
 	{ lookup: "brent", name: "Brent Bambury" },
-	{ lookup: "burrell", name: "Tim Burrell" },
+	{ lookup: "burrell", href: "tim_burrell.html", name: "Tim Burrell" },
 	{ lookup: "butch", name: "The Butcher" },
 	{ lookup: "terry", name: "Terry Walpole", act: true },
 	{ lookup: "tom_hall", href: "/tomhall", name: "Tom Hall", act: true },
@@ -1188,17 +1192,17 @@ export const	people = [
 	{ lookup: "gab", href: "gabriel_turner.html", name: "Gabriel Turner" },
 	{ lookup: "garofalo", href: "steve_garofalo.html", name: "Steve Garofalo" },
 	{ lookup: "gerard", name: "Gerard Langley" },
-	{ lookup: "gould", name: "Greenwood Goulding" },
+	{ lookup: "gould", href: 'greenwood_goulding.html', name: "Greenwood Goulding" },
 	{ lookup: "green", href: "alex_green.html", name: "Alex Green" },
 	{ lookup: "hask", href: "kevin_haskins.html", name: "Kevin Haskins" },
 	{ lookup: "hend", href: "dave_henderson.html", name: "Dave Henderson" },
 	{ lookup: "hook", name: "Paul Hookham" },
 	{ lookup: "iain", href: "iain_ohiggins.html", name: "Iain O'Higgins" },
 	{ lookup: "indge", href: "alastair_indge.html", name: "Alastair Indge" },
-	{ lookup: "is", name: "Ian Sturgess" },
-	{ lookup: "joby", name: "Joby Palmer" },
-	{ lookup: "joe", name:"Joe Foster" },
-	{ lookup: "tony", name:"Tony Foster" },
+	{ lookup: "is", href: 'ian_sturgess.html', name: "Ian Sturgess" },
+	{ lookup: "joby", href: 'joby_palmer.html', name: "Joby Palmer" },
+	{ lookup: "joe", href: 'joe_foster.html', name:"Joe Foster" },
+	{ lookup: "tony", href: 'tony_foster.html', name:"Tony Foster" },
 	{ lookup: "joe_woolley", name: "Joe Woolley", act: true },
 	{ lookup: "joea", href: "joe_allen.html", name: "Joe Allen" },
 	{ lookup: "joel_harries", href: "joel_harries.html", name: "Joel Harries" },

@@ -95,6 +95,8 @@ export const john_silver = 'John Silver';
 export const jonny_mattock = linkPerson({ href: "jonny_mattock.html", name: "Jonny Mattock" });
 export const jules = linkPerson({ href: "julian_poole.html", name: "Julian Poole" });
 export const karel = linkPerson({ href: "von_dammerung.html", name: 'Karel Von Dämmerung' });
+export const otto = linkPerson({ href: "von_dammerung.html", name: 'Otto Von Dämmerung' });
+export const emil = linkPerson({ href: "von_dammerung.html", name: 'Emil Von Dämmerung' });
 export const kathie = linkPerson({ href: "kathie_mcginty.html", name: "Kathie McGinty" });
 export const kathy = linkPerson({ href: "kathy_schaer.html", name: "Kathy Schaer" });
 export const kathy_misery = linkPerson({ href: "kathy_schaer.html", name: "Misery Wilson" });
@@ -141,6 +143,9 @@ export const steve_beswick = linkPerson({ href: "steve_beswick.html", name: "Ste
 export const steve_gordon = linkPerson({ href: "steve_gordon.html", name: "Steve Gordon" });
 export const steve_gordon_gman = linkPerson({ href: "steve_gordon.html", name: "G-Man" });
 export const stevenew = linkPerson({ href: "steve_new.html", name: "Steve New" });
+export const nick_bandy = linkPerson({ href: "nick_bandy.html", name: "Nick Bandy" });
+export const lee_brooks = linkPerson({ href: "lee_brooks.html", name: "Lee Brooks" });
+export const pat_kenneally = linkPerson({ href: "pat_kenneally.html", name: "Pat Kenneally" });
 export const sumishta = linkPerson({ href: "sumishta_brahm.html", name: "Sumishta Brahm" });
 export const sumo_botty = linkPerson({ href: "ian_botterill.html", name: "Mister B" });
 export const sumo_kathie = linkPerson({ href: "kathie_mcginty.html", name: "Kathie M" });
@@ -792,10 +797,16 @@ export const mapPerformers: {[key: string]: string} = {
 	'Simon_Taylor': 'simon',
 	'Sonic_Boom': 'sonic',
 	'Steve_Beswick': 'steve_beswick',
+	'Karel_Von_Dämmerung': 'karel',
+	'Otto_Von_Dämmerung': 'otto',
+	'Emil_Von_Dämmerung': 'emil',
 	'Steve_Garofalo': 'garofalo',
 	'Steve_Gordon': 'steve_gordon',
 	'Steve_Musgrove': 'sm',
 	'Steve_New': 'stevenew',
+	'Nick_Bandy': 'nick_bandy',
+	'Lee_Brooks': 'lee_brooks',
+	'Pat_Kenneally': 'pat_kenneally',
 	'Steve_Valentine': 'steve',
 	'Sumishta_Brahm': 'sumishta',
 	'Tim_Harries': 'tim_harries',
@@ -1194,6 +1205,8 @@ export const	people = [
 	{ lookup: "jonny_mattock", href: "jonny_mattock.html", name: "Jonny Mattock" },
 	{ lookup: "jules", href: "julian_poole.html", name: "Julian Poole" },
 	{ lookup: "karel", href: "von_dammerung.html", name: 'Karel Von Dämmerung' },
+	{ lookup: "otto", href: "von_dammerung.html", name: 'Otto Von Dämmerung' },
+	{ lookup: "emil", href: "von_dammerung.html", name: 'Emil Von Dämmerung' },
 	{ lookup: "kathie", href: "kathie_mcginty.html", name: "Kathie McGinty" },
 	{ lookup: "kathy", href: "kathy_schaer.html", name: "Kathy Schaer" },
 	{ lookup: "kathy_misery", href: "kathy_schaer.html", name: "Misery Wilson" },
@@ -1241,6 +1254,9 @@ export const	people = [
 	{ lookup: "steve_gordon", href: "steve_gordon.html", name: "Steve Gordon" },
 	{ lookup: "steve_gordon_gman", href: "steve_gordon.html", name: "G-Man" },
 	{ lookup: "stevenew", href: "steve_new.html", name: "Steve New" },
+	{ lookup: "lee_brooks", href: "lee_brooks.html", name: "Lee Brooks" },
+	{ lookup: "pat_kenneally", href: "pat_kenneally.html", name: "Pat Kenneally" },
+	{ lookup: "nick_bandy", href: "nick_bandy.html", name: "Nick Bandy" },
 	{ lookup: "sumishta", href: "sumishta_brahm.html", name: "Sumishta Brahm" },
 	{ lookup: "sumo_botty", href: "ian_botterill.html", name: "Mister B" },
 	{ lookup: "sumo_kathie", href: "kathie_mcginty.html", name: "Kathie M" },

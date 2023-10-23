@@ -17,7 +17,7 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 			{(t) && <><b>{t}</b>:{' '}</>}
 			{(x) && <>{x}</>}
 			{(() => {
-				if (g?.startsWith('http')) {
+				if (g?.trim().startsWith('http')) {
 					if (u) {
 						return linkExternal(u, g)
 					} else {
@@ -25,7 +25,7 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 					}
 				} else {
 					if (u) {
-						if (u.startsWith('http')) {
+						if (u.trim().startsWith('http')) {
 							return linkExternal(u, parseDomain(u))
 						} else {
 							return linkInternal(u, cleanG)

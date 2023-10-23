@@ -429,6 +429,7 @@ export const glass_records = glass;
 export const creat = <b className="record_label">Creation Records</b>;
 export const creation_records = creat;
 export const fire_records = <b className="record_label">Fire Records</b>;
+export const sky_records = <b className="record_label">Sky Records</b>;
 //
 //	Sumosonic
 //
@@ -1156,7 +1157,7 @@ export const expand = (str?: string, treatAsHTML: boolean = false) => {
 			return (expanded) ? expansion : str;
 		}
 	}
-	return doIt(str);
+	return doIt(str?.trim());
 }
 
 export const	people = [

@@ -596,7 +596,7 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=Tombe-fight, datetime=2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Tombe-fight.mp3)}
+		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=Tombé dans les pommes, datetime=2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Tombe-fight.mp3)}
 		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=When You's A Viper, datetime=2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Viper2.mp3)}
 			Unreleased.
 			<br/>Recorded 2014-07-15

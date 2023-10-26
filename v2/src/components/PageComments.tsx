@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from 'react';
 import Image from 'next/image';
 import Tag from '@/components/Tag';
 
@@ -14,25 +15,61 @@ import IconAddComment from '@/svg/IconAddComment';
 import usePageComments from '@/lib/usePageComments';
 import { type CommentType, dateDiff } from '@/lib/utils';
 
-const Comment = ({ subject, dtcreated, who, whence, comments }: CommentType, key: number) => (
-	<div key={key} className="comment">
-		<div id="subject">{subject}</div>
-		<div id="comments" className="annotation" dangerouslySetInnerHTML={{__html: comments }} />
-		<div id="who"><> <b>{whence}</b> {!!(who?.length) && <span className="smalltext">- {who} </span>}</></div>
-		<div id="date">{dateDiff(dtcreated, '')}</div>
-		<div className="flex flex-wrap justify-center gap-10 pt-2">
-			<IconLike style={{ width: '1.7em' }} />
-			<IconReply style={{ width: '1.7em' }} />
-			<IconAddComment style={{ width: '1.7em' }} />
-		</div>
-	</div>
-)
+const useCommentLike = (props: any) => {
+	return {
+	}
+}
 
-const AddComment = ({ pathname }: { pathname: string }) => (
+const useCommentReply = (props: any) => {
+	return {
+	}
+}
+
+const useCommentNew = (props: any) => {
+	return {
+	}
+}
+
+const	CommentLike = (props: any) => {
+	const { data, isLoading, error } = useCommentLike(props);
+	return <IconLike style={{ width: '1.7em' }} />
+}
+
+const	CommentReply = (props: any) => {
+	const { data, isLoading, error } = useCommentReply(props);
+	return <IconReply style={{ width: '1.7em' }} />
+}
+
+const	ShowNewCommentForm = (props: any) => {
+	const { toggleCommentForm } = props;
+	const { data, isLoading, error } = useCommentNew();
+	return <div onClick={() => toggleCommentForm(true)} className="w-full border text-center bg-slate-100 mt-1 mb-1">
+		ADD NEW
+		{/*<IconAddComment style={{ width: '1.7em' }} />*/}
+	</div>
+}
+
+const Comment = (props: CommentType, key: number) => {
+	const { feedback_id, subject, dtcreated, who, whence, comments } = props;
+	return (
+		<div key={key} className="comment">
+			<div id="subject">{subject}</div>
+			<div id="comments" className="annotation" dangerouslySetInnerHTML={{__html: comments }} />
+			<div id="who"><> <b>{whence}</b> {!!(who?.length) && <span className="smalltext">- {who} </span>}</></div>
+			<div id="date">{dateDiff(dtcreated, '')}</div>
+			<div className="flex flex-wrap justify-center gap-10 pt-2">
+				<CommentLike {...props} />
+				<CommentReply {...props} />
+			</div>
+		</div>
+	)
+}
+
+const NewCommentForm = ({ pathname, toggleCommentForm }: { pathname: string, toggleCommentForm: any }) => (
+		<>
+		<div onClick={() => toggleCommentForm(false)} className="w-full border text-center bg-slate-100 mt-1">DISMISS</div>
 	<div className="comment">
-		<Tag>New comments for <i>{pathname}</i></Tag>
-		<p />
-		<div style={{ outline: '1px solid green', width: '100%', height: '30px', background: '#eee', padding: '5px' }}>
+		<div style={{ outline: '1px solid green', width: '100%', height: '35px', background: '#eee', padding: '5px' }}>
 			Subject
 		</div>
 		<p />
@@ -40,11 +77,12 @@ const AddComment = ({ pathname }: { pathname: string }) => (
 			New comment form will go here
 		</div>
 	</div>
+	</>
 )
 
 const Comments = ({ pathname, comments = [], className }: { pathname: string, comments: CommentType[], className?: string }) => (
 	<div className={className}>
-		<AddComment pathname={pathname} />
+		<Tag>Comments for <i>{pathname}</i></Tag>
 		{comments?.map(Comment)}
 	</div>
 )
@@ -90,6 +128,7 @@ const PageComments = ({ className }: { className?: string }) => {
 	const pathname = usePathname();
 	const { data, isLoading, error } = usePageComments(pathname);
 	const comments = data?.results || [];
+	const [ showForm, toggleCommentForm ] = useState(false);
 
 	return (<>
 		<Suspense fallback={<>Loading...</>}>
@@ -99,7 +138,14 @@ const PageComments = ({ className }: { className?: string }) => {
 						<div className="text-sm text-slate-500 ml-1">{comments.length}</div>
 					</CommentBubble>
 				</summary>
-				<Comments pathname={pathname} comments={comments} className="commentOverlay"/>
+				<div className="commentOverlay">
+				{(showForm) ?
+					<NewCommentForm pathname={pathname} toggleCommentForm={toggleCommentForm} />
+					:
+					<ShowNewCommentForm toggleCommentForm={toggleCommentForm} />
+				}
+				<Comments pathname={pathname} comments={comments} />
+				</div>
 			</details>
 		</Suspense>
 	</>)

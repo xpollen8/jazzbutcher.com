@@ -13,6 +13,7 @@ export type HashedType = {
 }
 
 export type CommentType = {
+	feedback_id: number
 	subject: string
 	dtcreated?: string
 	who: string

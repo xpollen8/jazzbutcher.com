@@ -17,16 +17,25 @@ import { type CommentType, dateDiff } from '@/lib/utils';
 
 const useCommentLike = (props: any) => {
 	return {
+		data: {},
+		isLoading: false,
+		error: {}
 	}
 }
 
 const useCommentReply = (props: any) => {
 	return {
+		data: {},
+		isLoading: false,
+		error: {}
 	}
 }
 
 const useCommentNew = (props: any) => {
 	return {
+		data: {},
+		isLoading: false,
+		error: {}
 	}
 }
 
@@ -42,7 +51,6 @@ const	CommentReply = (props: any) => {
 
 const	ShowNewCommentForm = (props: any) => {
 	const { toggleCommentForm } = props;
-	const { data, isLoading, error } = useCommentNew();
 	return <div onClick={() => toggleCommentForm(true)} className="w-full border text-center bg-slate-100 mt-1 mb-1">
 		ADD NEW
 		{/*<IconAddComment style={{ width: '1.7em' }} />*/}

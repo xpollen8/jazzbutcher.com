@@ -6,6 +6,15 @@ import Tag from '@/components/Tag';
 import LetterHeader from '@/components/LetterHeader';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import { expand } from '@/lib/defines';
+import PhotoSet from '@/components/PhotoSet';
+
+const letter = [
+	{ src: "/assets//images/199708_JBC_Auction/199708_JBC_Auction_1.jpg", alt: "page 1" },
+	{ src: "/assets//images/199708_JBC_Auction/199708_JBC_Auction_2.jpg", alt: "page 2" },
+	{ src: "/assets//images/199708_JBC_Auction/199708_JBC_Auction_3.jpg", alt: "page 3" },
+	{ src: "/assets//images/199708_JBC_Auction/199708_JBC_Auction_4.jpg", alt: "page 4" },
+	{ src: "/assets//images/199708_JBC_Auction/199708_JBC_Auction_5.jpg", alt: "page 5" },
+];
 
 const bidAddress = 'del@......ive.com';
 
@@ -106,6 +115,7 @@ const Auction = () =>
 		<LetterHeader title="Waaaay back in 1997..." subhead="Pat wanted me to auction off a few of his things" />
 		<Body />
 		(the auction results are forthcoming - lotta old HTML to clean up)
+		<PhotoSet title="Pat's Original Letter" photos={letter} />
 	</main>
 	<Footer />
 </>

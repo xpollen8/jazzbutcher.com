@@ -9,7 +9,7 @@ const ImageStrip = (props: any) => {
 	const className = props?.className;
 	return images && images?.length && <div style={style} className={className}>
 		{images?.map(([ image, caption, source, sourceurl, sourcedate ]: any, key: number) =>
-		<Link key={key} href={`https://v1.jazzbutcher.com${image}.jpg`}>
+		<Link key={key} href={(image.startsWith('http')) ? `${image}.jpg` : `https://v1.jazzbutcher.com${image}.jpg`}>
 			<div >
 				<Image
 					alt={caption || 'album image'}

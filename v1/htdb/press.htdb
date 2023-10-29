@@ -117,7 +117,7 @@
 #live	if (define(prefix, pressItems[${page}]))
 #live	endif
 
-	${mkHeader(section=Press, title=${${prefix}->publication}
+	${mkHeader(section=Press, title=${ternary(getval(${prefix}->publication), ${${prefix}->publication}, ${${prefix}->title})}
 		- ${literalizeCommas(${mkPressDate(ts=${${prefix}->dt})})}
 	)}
 
@@ -1741,6 +1741,20 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Creation Records Promo)}
 
 	${addPress(type=kit,
+		url=${jbc_press}/19901120_promo.html,
+		thumb=https://s3.amazonaws.com/assets.jazzbutcher.com/images/promos/19901120_Promo,
+		dt=1990-11-20,
+		title=Rough Trade Records Promo,
+		added=2023-10-29)}
+
+	${addPress(type=kit,
+		url=${jbc_press}/19880215_promo.html,
+		thumb=https://s3.amazonaws.com/assets.jazzbutcher.com/images/promos/19880215_Promo,
+		dt=1988-02-15,
+		title=Relativity Records Promo,
+		added=2023-10-29)}
+
+	${addPress(type=kit,
 		url=${jbc_press}/95promo_yearly.html,
 		credit=Vanessa Cotton at Creation,
 		thumb=/images/95promo,
@@ -1786,7 +1800,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Sumosonic Promo,
 		dt=1998-04-01,
 		added=2022-08-21,
-		thumb=/images/19980401/19980401_Sumosonic_Promo_Trio;;Jimmy Duval;;https://twitter.com/jimmyduval;;2022-08-21
+		thumb=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Sumosonic/19980401_Sumosonic_Promo_Trio;;Jimmy Duval;;https://twitter.com/jimmyduval;;2022-08-21
 	)}
 	${addPress(type=pat;kit, url=${jbc_press}/94stop_press.html, title=Stop Press, dt=1994-05-20, thumb=/images/19940520/19940520_press)}
 	${addPress(type=pat;album, url=${jbc_letters}/93Aug30/albums.html, dt=1993-08-30, title=Pat Reviews His Own Records)}
@@ -17933,6 +17947,24 @@ We should all be so lucky.
 
 #define	20210905_press_funhouse.html
 #live	if (getval(page) = 20210905_press_funhouse.html)
+	${extractPress(
+		body=${literalizeCommas(
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define 19880215_promo.html
+#live	if (getval(page) = 19880215_promo.html)
+	${extractPress(
+		body=${literalizeCommas(
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	19901120_promo.html
+#live	if (getval(page) = 19901120_promo.html)
 	${extractPress(
 		body=${literalizeCommas(
 		)}

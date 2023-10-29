@@ -32,13 +32,13 @@ const pathname2feedbackURI = (pathname: string) => {
 		if (uri === '/eulogy') return '/site/eulogy.html';
 		if (uri?.startsWith('/releases')) return uri.replace('/releases', '/albums');
 		if (uri?.startsWith('/conspirators')) return uri.replace('/conspirators', '/people');
-		const [ section, sub1, sub2 ] = uri?.substr(1).split('/') || '';
+		const [ section, sub1, sub2 ] = uri?.split('/') || '';
 		if (section === 'gigs' && sub2) {
 			return uri + '.html';
 		}
 		return uri;
 	}
-	const usePath = (fullpath(pathname) ?? pathname + '/index.html').substr(1);
+	const usePath = (fullpath(pathname) ?? pathname + '/index.html');
 	return `exact/${usePath}`;
 }
 
@@ -70,7 +70,7 @@ export const usePageCommentReply = (props: any) => {
 	}
 }
 
-export const submitPageCommentNew = async (props: any) => {
+const submitPageCommentCommon = async (apiPath: string, props: any) => {
 	const { pathname, ...body }: { pathname: string, body: CommentType | NewCommentType } = props;
 	const fetcher = async ([ url, body ]: [ url: string, body: string ]) => {
 		return await fetch(url, {
@@ -84,7 +84,15 @@ export const submitPageCommentNew = async (props: any) => {
 		.then((res) => res.json());
 	}
 
-	return await fetcher([ `/api/new_feedback_by_page/${pathname2feedbackURI(pathname)}`, JSON.stringify(body) ]);
+	return await fetcher([ `/api/${apiPath}/${pathname2feedbackURI(pathname)}`, JSON.stringify(body) ]);
+}
+
+export const submitPageCommentReply = async (props: any) => {
+	return await submitPageCommentCommon('feedback_by_page_reply', props);
+}
+
+export const submitPageCommentNew = async (props: any) => {
+	return await submitPageCommentCommon('feedback_by_page_new', props);
 }
 
 export default usePageComments;

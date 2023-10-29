@@ -295,3 +295,8 @@ export const parseGigExtras = (extra?: string) => extra?.split(',') || [];
 export const parseProject = (extra: string) => ['wilson','sumo','eg','solo','duo','nopat'].find((e: string) => parseGigExtras(extra).includes(e)) || '';
 
 export const pressFiltersInclude = (filters: string, f: string) => filters.split(',').find((s: string) => s === f);
+
+export const thumbSource = (str?: string) => {
+	const thumb = truncAt(';;', str || '').trim();
+	return thumb?.includes('http') ? `${thumb}_250.jpg` : `https://v1.jazzbutcher.com${thumb}_250.jpg`;
+}

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { parseDomain, linkInternal, linkExternal } from '@/lib/utils';
+import { parseImage, parseDomain, linkInternal, linkExternal } from '@/lib/utils';
 import { expand } from '@/lib/defines';
 import { removeHTML } from '@/components/GenericWeb';
 
@@ -17,17 +17,8 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, lab
 	children?: string | React.ReactElement
 }): React.ReactNode => {
 	if (!title) return <></>;
-	let useImage: string = '';
-	let useThumb: string = '';
 	const width = 250;
-	if (image) {
-		if (image.startsWith('http')) {
-			useImage = `${image}.jpg`;
-		} else {
-			useImage = `https://v1.jazzbutcher.com${image}.jpg`;
-		}
-		useThumb = useImage.replace('.jpg', `_${width}.jpg`);
-	}
+	const { image: useImage, thumb: useThumb } = parseImage(image);
 	return (
 		<div className="release">
 			<div className="album_details">

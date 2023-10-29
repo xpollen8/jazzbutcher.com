@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from 'next/link';
 import usePresses from '@/lib/usePresses';
 import useReleases from '@/lib/useReleases';
-import { truncAt, parseYear, parseProject, pressFiltersInclude } from '@/lib/utils';
+import { parseImage, truncAt, parseYear, parseProject, pressFiltersInclude } from '@/lib/utils';
 import InfoTag from '@/components/InfoTag';
 import Tag from '@/components/Tag';
 import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
@@ -79,16 +79,11 @@ export const filterPressByTypeInterview = (p: any, project?: string) => {
 	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
 }
 
-const	useThumb = (str?: string) => {
-	const thumb = truncAt(';;', str || '');
-	return str?.includes('http') ? `${str}_250.jpg` : `https://v1.jazzbutcher.com${str}_250.jpg`;
-}
-
 const AlbumCover = ({ album }: { album?: string }) => {
 	const { data, isLoading, error } = useReleases();
 	const release = data?.results?.find((a: any) => a.lookup === album);
 	return <Suspense fallback=<>Loading...</> >
-		{(!isLoading && data) && <Image className="w-full" src={useThumb(release?.thumb)} width={250} height={250} alt="album cover" />}
+		{(!isLoading && data) && <Image className="w-full" src={parseImage(release?.thumb)?.thumb} width={250} height={250} alt="album cover" />}
 	</Suspense>
 }
 
@@ -132,7 +127,7 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 						<div className={`outline outline-slate-300 drop-shadow-sm gig_${parseProject(item.type)}`}>
 							<Link key={key} href={item.url}>
 								{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}
-								{(thumb) && <Image className="w-full" src={useThumb(thumb)} width={250} height={250} alt="cover" />}
+								{(thumb) && <Image className="w-full" src={parseImage(thumb)?.thumb} width={250} height={250} alt="cover" />}
 								<div className="mx-2 text-center">
 									{(!(item?.album || thumb)) && <div className="h-5" />}
 									<div className="h-2" />

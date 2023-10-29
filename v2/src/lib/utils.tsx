@@ -296,7 +296,11 @@ export const parseProject = (extra: string) => ['wilson','sumo','eg','solo','duo
 
 export const pressFiltersInclude = (filters: string, f: string) => filters.split(',').find((s: string) => s === f);
 
-export const thumbSource = (str?: string) => {
-	const thumb = truncAt(';;', str || '').trim();
-	return thumb?.includes('http') ? `${thumb}_250.jpg` : `https://v1.jazzbutcher.com${thumb}_250.jpg`;
+export const parseImage = (str?: string, width: number = 250) => {
+	const raw = truncAt(';;', str || '').trim();
+	const base = raw.includes('http') ? raw : `https://v1.jazzbutcher.com${raw}`;
+	return {
+		image: `${base}.jpg`,
+		thumb: `${base}_${width}.jpg`,
+	}
 }

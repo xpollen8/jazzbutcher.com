@@ -12,13 +12,16 @@ export type HashedType = {
 	[key: string]: any;
 }
 
-export type CommentType = {
-	feedback_id: number
+export type NewCommentType = {
 	subject: string
 	dtcreated?: string
 	who: string
 	whence: string
 	comments: string
+}
+
+export type CommentType = NewCommentType & {
+	feedback_id: number
 }
 
 export const linkExternal = (href: string, text?: string | React.ReactElement): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>

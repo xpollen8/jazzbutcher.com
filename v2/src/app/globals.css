@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: 'Titillium-Regular';
-	src: url("/fonts/Titillium-Regular.otf") format("opentype");
-}
-
 :root {
-	font-size: calc(14px + (26 - 14) * ((100vw - 320px) / (2560 - 320)));
+	font-size: calc(12px + (26 - 12) * ((100vw - 320px) / (2560 - 320)));
 }
 
 .date {
@@ -386,7 +381,7 @@ blockquote {
 }
 a {
 	text-decoration: none;
-	color: blue;
+	color: #2222ee;
 	margin-right: .15em;
 }
 .leading {
@@ -395,9 +390,9 @@ a {
 body {
 	background-image: url(/images/jbcback2.gif);
 	background-attachment: fixed;
-	letter-spacing: 0.01em;
 	color: #444;
-	margin: 4px;
+	margin: 0;
+	padding: 0;
 }
 
 p {
@@ -405,25 +400,6 @@ p {
 	margin-top: 1em;
 	margin-bottom: 0px;
 }
-img_main {
-	display: grid;
-	grid-template-columns:
-		repeat(auto-fit, minmax(250px, 1fr));
-}
-img_figure {
-	margin: 0;
-}
-img_img {
-	display: block;
-	width: 100%;
-	box-shadow: -1px 0px 0px rgba(0,0,0,0.06);
-}
-@supports (initial-letter: 1.1) or
-(-webkit-initial-letter: 1.1) {
-p::first-letter {
-}
-}
-
 .lyrics {
 	font-style: normal;
 	white-space: pre-line;
@@ -508,15 +484,6 @@ p::first-letter {
 	filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.05));
 	background-color: rgba(0,0,0,.02);
 	outline: dashed;
-	outline-width: 1px;
-	padding: 5px;
-}
-
-.layout {
-	filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.02)) drop-shadow(0 5px 3px rgb(0 0 0 / 0.02));
-	background-color: rgba(0,0,0,.02);
-	margin: 1px;
-	outline: solid #aaa;
 	outline-width: 1px;
 	padding: 5px;
 }
@@ -645,11 +612,6 @@ footer {
 
 html {
 	scroll-behavior: smooth;
-}
-
-body {
-	margin: 0;
-	padding: 0;
 }
 
 nav {

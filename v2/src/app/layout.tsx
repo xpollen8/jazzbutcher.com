@@ -1,7 +1,6 @@
-import localFont from 'next/font/local'
 import './globals.css'
 
-const myFont = localFont({ src: '../../public/fonts/Titillium-Regular.otf' })
+import { GeistSans, GeistMono } from 'geist/font'
 
 export default function RootLayout({
   children,
@@ -9,8 +8,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={myFont.className}>
+    <html lang="en" className={GeistSans.className}>
+			<body>
 				{children}
 			</body>
     </html>

@@ -43,7 +43,7 @@ const	ToggleCommentForm = (props: any) => {
 }
 
 const DeleteComment = (props: any) => {
-	console.log("DeleteComment", props);
+	//console.log("DeleteComment", props);
 	const [ deleting, setDeleting ] = useState(false);
 	const [ editing, setEditing ] = useState(false);
 	const [ confirm, setConfirm ] = useState(false);
@@ -69,6 +69,7 @@ const Comment = (props: CommentType & any, key: number) => {
 	const mySession = getSessionId();
 	const { editing=false, session, feedback_id, subject, dtcreated, who, whence, comments, toggleCommentForm } = props;
 	const [ replying, setReplying ] = useState(false);
+
 	return (
 		<div key={key} className="comment">
 			<div id="subject">{(session === mySession) && <DeleteComment {...props} />}{subject}</div>
@@ -89,9 +90,9 @@ const Comment = (props: CommentType & any, key: number) => {
 	)
 }
 
-const CommentForm = (props: { editing?: boolean, session: string, feedback_id?: number, subject?: string, uri: string, toggleCommentForm: any }) => {
+const CommentForm = (props: { session?: string, who?: string, whence?: string, comments?: string, editing?: boolean, feedback_id?: number, subject?: string, uri: string, toggleCommentForm: any }) => {
 	const { editing=false, session, feedback_id, subject: inSubject, uri, comments: inComments, who: inWho, whence: inWhence, toggleCommentForm } = props;
-	const [ subject, setSubject ] = useState((feedback_id) ? `RE: ${inSubject}` : inSubject);
+	const [ subject, setSubject ] = useState((!editing && feedback_id) ? `RE: ${inSubject}` : inSubject);
 	const [ comments, setComments ] = useState(editing ? inComments : '');
 	const [ who, setWho ] = useState(editing ? inWho : '');
 	const [ whence, setWhence ] = useState(editing ? inWhence : '');
@@ -222,12 +223,15 @@ const uuidv4 = () => 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c:
 });
 
 const getSessionId = () => {
-	//return localStorage && localStorage.getItem('session') || localStorage.setItem('session', uuidv4());
+	try {
+		return localStorage.getItem('session') || localStorage.setItem('session', uuidv4()) || uuidv4();
+	} catch(e) {
+		return uuidv4();
+	}
 }
 
 const PageComments = ({ className }: { className?: string }) => {
 	const uri = usePathname()?.substr(1);
-	console.log("URI", uri);
 	const { data, isLoading, error } = usePageComments(uri);
 	const comments = data?.results || [];
 	const [ showForm, toggleCommentForm ] = useState(false);

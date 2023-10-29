@@ -79,11 +79,16 @@ export const filterPressByTypeInterview = (p: any, project?: string) => {
 	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
 }
 
+const	useThumb = (str?: string) => {
+	const thumb = truncAt(';;', str || '');
+	return str?.includes('http') ? `${str}_250.jpg` : `https://v1.jazzbutcher.com${str}_250.jpg`;
+}
+
 const AlbumCover = ({ album }: { album?: string }) => {
 	const { data, isLoading, error } = useReleases();
 	const release = data?.results?.find((a: any) => a.lookup === album);
 	return <Suspense fallback=<>Loading...</> >
-		{(!isLoading && data) && <Image className="w-full" src={`https://v1.jazzbutcher.com${release?.thumb}_250.jpg`} width={250} height={250} alt="album cover" />}
+		{(!isLoading && data) && <Image className="w-full" src={useThumb(release?.thumb)} width={250} height={250} alt="album cover" />}
 	</Suspense>
 }
 
@@ -120,14 +125,14 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 				{presses
 				?.filter((art: any) => filterItemBy(art, filtersUsed))
 				.map((item: any, key: number) => {
-					const thumb = truncAt(';;', item.thumb);
+					const thumb = truncAt(';;', item?.thumb || '');
 					const info = item.type.replace(project, '').replace('nopat','').replace('wilson','').replace('sumo','').replace('eg','').replace(',,', ',').replace(/^,/, '').replace(/,$/, '');
 					return (<div key={key} className={`w-64`}>
 						<InfoTag text={`${item.dtpublished?.substr(0, 10).replace(/-00/g, '')}: ${info}`}/>
 						<div className={`outline outline-slate-300 drop-shadow-sm gig_${parseProject(item.type)}`}>
 							<Link key={key} href={item.url}>
 								{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}
-								{(thumb) && <Image className="w-full" src={`https://v1.jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" />}
+								{(thumb) && <Image className="w-full" src={useThumb(thumb)} width={250} height={250} alt="cover" />}
 								<div className="mx-2 text-center">
 									{(!(item?.album || thumb)) && <div className="h-5" />}
 									<div className="h-2" />

@@ -12,53 +12,36 @@ import IconReply from '@/svg/IconReply';
 import IconLike from '@/svg/IconLike';
 import IconAddComment from '@/svg/IconAddComment';
 
-import usePageComments from '@/lib/usePageComments';
+import usePageComments, { usePageCommentLike, usePageCommentReply, submitPageCommentNew } from '@/lib/usePageComments';
 import { type CommentType, dateDiff } from '@/lib/utils';
 
-const useCommentLike = (props: any) => {
-	return {
-		data: {},
-		isLoading: false,
-		error: {}
-	}
-}
-
-const useCommentReply = (props: any) => {
-	return {
-		data: {},
-		isLoading: false,
-		error: {}
-	}
-}
-
-const useCommentNew = (props: any) => {
-	return {
-		data: {},
-		isLoading: false,
-		error: {}
-	}
-}
-
 const	CommentLike = (props: any) => {
-	const { data, isLoading, error } = useCommentLike(props);
-	return <IconLike style={{ width: '1.7em' }} />
+	const { onClick } = props;
+	const { data, isLoading, error } = usePageCommentLike(props);
+	return <IconLike style={{ width: '1.7em' }} onClick={onClick} />
 }
 
 const	CommentReply = (props: any) => {
-	const { data, isLoading, error } = useCommentReply(props);
-	return <IconReply style={{ width: '1.7em' }} />
+	const { replying, onClick } = props;
+	const { data, isLoading, error } = usePageCommentReply(props);
+	return (!replying) && <IconReply style={{ width: '1.7em' }} onClick={onClick} />
 }
 
 const	ShowNewCommentForm = (props: any) => {
-	const { toggleCommentForm } = props;
-	return <div onClick={() => toggleCommentForm(true)} className="w-full border text-center bg-slate-100 mt-1 mb-1">
-		ADD NEW
-		{/*<IconAddComment style={{ width: '1.7em' }} />*/}
-	</div>
+	const { text, toggleCommentForm, showForm } = props;
+	return <Tag>
+		<div onClick={() => toggleCommentForm(true)}>
+			{text} {(!showForm) && <>
+				[<span className="text-blue-600">Add your own</span>]
+				{/*<IconAddComment style={{ width: '1.7em' }} />*/}
+			</>}
+		</div>
+	</Tag>
 }
 
-const Comment = (props: CommentType, key: number) => {
-	const { feedback_id, subject, dtcreated, who, whence, comments } = props;
+const Comment = (props: CommentType & any, key: number) => {
+	const { feedback_id, subject, dtcreated, who, whence, comments, toggleCommentForm } = props;
+	const [ replying, setReplying ] = useState(false);
 	return (
 		<div key={key} className="comment">
 			<div id="subject">{subject}</div>
@@ -66,34 +49,74 @@ const Comment = (props: CommentType, key: number) => {
 			<div id="who"><> <b>{whence}</b> {!!(who?.length) && <span className="smalltext">- {who} </span>}</></div>
 			<div id="date">{dateDiff(dtcreated, '')}</div>
 			<div className="flex flex-wrap justify-center gap-10 pt-2">
-				<CommentLike {...props} />
-				<CommentReply {...props} />
+				<CommentLike {...props} onClick={() => {
+					alert(`like "${subject}"`);
+				}}/>
+				<CommentReply replying={replying} {...props} onClick={() => {
+					toggleCommentForm(false);
+					setReplying(!replying);
+				}}/>
+				{(replying) && <div className="w-full"><NewCommentForm {...props} toggleCommentForm={setReplying} /></div>}
 			</div>
 		</div>
 	)
 }
 
-const NewCommentForm = ({ pathname, toggleCommentForm }: { pathname: string, toggleCommentForm: any }) => (
-		<>
-		<div onClick={() => toggleCommentForm(false)} className="w-full border text-center bg-slate-100 mt-1">DISMISS</div>
-	<div className="comment">
-		<div style={{ outline: '1px solid green', width: '100%', height: '35px', background: '#eee', padding: '5px' }}>
-			Subject
-		</div>
-		<p />
-		<div style={{ outline: '1px solid green', width: '100%', height: '250px', background: '#eee', padding: '5px' }}>
-			New comment form will go here
-		</div>
-	</div>
+const NewCommentForm = (props: { feedback_id?: number, subject?: string, pathname: string, toggleCommentForm: any }) => {
+	const { feedback_id, subject: inSubject, pathname, toggleCommentForm } = props;
+	const [ subject, setSubject ] = useState((feedback_id) ? `RE: ${inSubject}` : '');
+	const [ comments, setComments ] = useState('');
+	const action = (feedback_id) ? `Replying to "${inSubject}"` : `Composing a message for "${pathname}"`;
+	return <>
+		<form
+			onSubmit={(ev: any) => {
+				ev.preventDefault();
+				submitPageCommentNew({
+					feedback_id,
+					pathname,
+					payload: {
+						subject,
+						comments
+					}
+				})
+			}}
+			>
+			<Tag>
+				<span onClick={() => toggleCommentForm(false)}>
+					{action} [ DISMISS ]
+				</span>
+			</Tag>
+			<div className="comment">
+				<input type="text" value={subject}
+					placeholder="Subject"
+					style={{ outline: '1px solid green', width: '100%', height: '35px', background: '#eee', padding: '5px' }}
+					onChange={(ev: any) => {
+						ev.preventDefault();
+						setSubject(ev?.target?.value);
+					}}
+				/>
+				<p />
+				<input type="text" value={comments}
+					placeholder="New comment form will go here"
+					style={{ outline: '1px solid green', width: '100%', height: '250px', background: '#eee', padding: '5px' }}
+					onChange={(ev: any) => {
+						ev.preventDefault();
+						setComments(ev?.target?.value);
+					}}
+				/>
+			</div>
+			<button type="submit">Submit</button>
+		</form>
 	</>
-)
+}
 
-const Comments = ({ pathname, comments = [], className }: { pathname: string, comments: CommentType[], className?: string }) => (
-	<div className={className}>
-		<Tag>Comments for <i>{pathname}</i></Tag>
-		{comments?.map(Comment)}
+const Comments = (props: { pathname: string, comments: CommentType[], className?: string, toggleCommentForm: any, showForm: boolean }) => {
+	const { pathname, comments = [], className, toggleCommentForm, showForm } = props;
+	return <div className={className}>
+		<ShowNewCommentForm text={`Visitor comments for "${pathname}"`}{...props} />
+		{comments?.map((c: CommentType, key: number) => <Comment key={key} {...c} toggleCommentForm={toggleCommentForm} />)}
 	</div>
-)
+}
 
 export const CommentBubble = (props: any) => {
 	if (0) {
@@ -147,12 +170,8 @@ const PageComments = ({ className }: { className?: string }) => {
 					</CommentBubble>
 				</summary>
 				<div className="commentOverlay">
-				{(showForm) ?
-					<NewCommentForm pathname={pathname} toggleCommentForm={toggleCommentForm} />
-					:
-					<ShowNewCommentForm toggleCommentForm={toggleCommentForm} />
-				}
-				<Comments pathname={pathname} comments={comments} />
+				{(showForm) && <NewCommentForm pathname={pathname} toggleCommentForm={toggleCommentForm} />}
+				<Comments pathname={pathname} comments={comments} showForm={showForm} toggleCommentForm={toggleCommentForm} />
 				</div>
 			</details>
 		</Suspense>

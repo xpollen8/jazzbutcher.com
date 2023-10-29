@@ -1,5 +1,7 @@
 import useSWR from 'swr';
 
+import { type CommentType, type NewCommentType } from '@/lib/utils';
+
 const mapLetterURLIFeedbackLookup = (uri: string): string => {
 	let ret = uri;
 	[
@@ -21,25 +23,27 @@ const pathname2feedbackURI = (pathname: string) => {
 	const fullpath = (uri: string) => {
 		if (uri === '/') return '/htdb/index.html';
 		if (uri === '/releases') return '/albums/index.html';
+		if (uri === '/lyrics') return '/lyrics/index.html';
 		if (uri === '/conspirators') return '/people/index.html';
 		if (uri === '/western_tape') return '/albums/western_tape.html';
 		if (uri === '/memoriam') return '/site/memoriam.html';
 		if (uri === '/letters') return '/letters/index.html';
-		if (uri.startsWith('/letters')) return mapLetterURLIFeedbackLookup(uri);
+		if (uri?.startsWith('/letters')) return mapLetterURLIFeedbackLookup(uri);
 		if (uri === '/eulogy') return '/site/eulogy.html';
-		if (uri.startsWith('/releases')) return uri.replace('/releases', '/albums');
-		if (uri.startsWith('/conspirators')) return uri.replace('/conspirators', '/people');
-		const [ section, sub1, sub2 ] = pathname.substr(1).split('/');
+		if (uri?.startsWith('/releases')) return uri.replace('/releases', '/albums');
+		if (uri?.startsWith('/conspirators')) return uri.replace('/conspirators', '/people');
+		const [ section, sub1, sub2 ] = uri?.substr(1).split('/') || '';
 		if (section === 'gigs' && sub2) {
-			return pathname + '.html';
+			return uri + '.html';
 		}
+		return uri;
 	}
 	const usePath = (fullpath(pathname) ?? pathname + '/index.html').substr(1);
 	return `exact/${usePath}`;
 }
 
 const usePageComments = (pathname: string) => {
-	const fetcher = async (url: any) => fetch(url).then((res) => res.json());
+	const fetcher = async (url: string) => fetch(url).then((res) => res.json());
 
 	const { data, error, isLoading } = useSWR(`/api/feedback_by_page/${pathname2feedbackURI(pathname)}`, fetcher);
 
@@ -50,4 +54,38 @@ const usePageComments = (pathname: string) => {
 	}
 }
 
+export const usePageCommentLike = (props: any) => {
+	return {
+		data: {},
+		isLoading: false,
+		error: {}
+	}
+}
+
+export const usePageCommentReply = (props: any) => {
+	return {
+		data: {},
+		isLoading: false,
+		error: {}
+	}
+}
+
+export const submitPageCommentNew = async (props: any) => {
+	const { pathname, ...body }: { pathname: string, body: CommentType | NewCommentType } = props;
+	const fetcher = async ([ url, body ]: [ url: string, body: string ]) => {
+		return await fetch(url, {
+			method: 'POST',
+			headers: {
+				accept: "application/json",
+				"Content-Type": "application/json",
+			},
+			...(body && { body }),
+		})
+		.then((res) => res.json());
+	}
+
+	return await fetcher([ `/api/new_feedback_by_page/${pathname2feedbackURI(pathname)}`, JSON.stringify(body) ]);
+}
+
 export default usePageComments;
+

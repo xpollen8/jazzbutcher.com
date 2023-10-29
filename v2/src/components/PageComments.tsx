@@ -66,7 +66,7 @@ const DeleteComment = (props: any) => {
 }
 
 const Comment = (props: CommentType & any, key: number) => {
-	const mySession = getSessionId();
+	const mySession = getSessionId() || 'unknown';
 	const { editing=false, session, feedback_id, subject, dtcreated, who, whence, comments, toggleCommentForm } = props;
 	const [ replying, setReplying ] = useState(false);
 

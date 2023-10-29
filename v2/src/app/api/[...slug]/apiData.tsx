@@ -40,7 +40,38 @@ const doFetch = async (url: string) => {
 		})
 		.catch((e) => {
 			console.log("ERR", e);
-			return { error: `search by ${url} failed` };
+			return { error: `GET to ${url} failed` };
+		});
+}
+
+const doPostToDataServer = async (path: string, body: any, args?: string) => {
+	const url = (!args) ? `${process.env.JBC_DATA_SERVER}/api/${path}` : `${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`;
+	console.log("doPostToDataServer", { path, body, url });
+	/*
+	if (cache[url]) {
+		//console.log("CACHE HIT", url);
+		return cache[url];
+	}
+	*/
+	return await fetch(url,
+		{
+			method: 'POST',
+			next: { revalidate: 300 },
+			mode: 'no-cors',
+			headers: {
+				accept: "application/json",
+				"Content-Type": "application/json",
+			},
+			...(body && { body: JSON.stringify(body) }),
+		}
+		)
+		.then(e => e.json())
+		.then(async e => {
+			return await apiDataFromDataServer(path);
+		})
+		.catch((e) => {
+			console.log("ERR", e);
+			return { error: `POST to ${url} failed` };
 		});
 }
 
@@ -53,129 +84,134 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 	return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
 }
 
-const apiData = async (path: string, args?: string) => {
-	//console.log("apiData", { path, args });
+const apiData = async (path: string, args?: string, formData?: any) => {
+	//console.log("apiData", { path, args, formData });
 
-	switch (path) {
-		case 'lyrics':
-			return lyricsStatic;
-			break;
-		case 'presses':
-			return pressesStatic;
-			break;
-		case 'gigs':
-			return gigsStatic;
-			break;
-		case 'gig_by_datetime':
-		case 'gigmedias':
-		case 'gigtexts':
-		case 'gigsongs':
-		case 'performances':
-		case 'audio':
-		case 'gigs_with_audio':
-		case 'release_audio_by_project':
-		case 'audio_by_project':
-		case 'release_video_by_project':
-		case 'live_video_by_project':
-		case 'video':
-		case 'medias':
-		case 'credits_by_release':
-		case 'presses_by_release':
-		case 'press_by_href':
-		case 'presses_for_admin':
-		case 'songs_by_datetime':
-			return await apiDataFromDataServer(path, args);
-		case 'feedbacks':
-		case 'feedback_by_page':
-			const data = await apiDataFromDataServer('feedback', args + '.html');	// next config strips '.html', sigh
-			data.results = data?.results.map((r: CommentType) => ({
-				...r,
-				who: censorEmail(r?.who),
-			}));
-			return data;
-		case 'lyric_by_href': {
-			const releases = await apiDataFromHTDBServer('db_albums/data.json');
-			const lyrics = await apiDataFromDataServer('lyric_by_href', args);
-			const medias = await apiDataFromDataServer('media_by_song', lyrics?.results[0]?.title);
-			const song = lyrics?.results[0]?.title;
-			const foundList = await apiDataFromDataServer('releases_by_song', encodeURIComponent(song));
-			return {
-				lyrics,
-				medias,
-				foundon: foundList?.results?.map(({ lookup, media }: any) => ({ ...releases?.results?.find((r: any) => lookup === r.lookup), mediaurl: media })),
-			}
-		}
-		case 'songs_by_release': {
-			const data = await apiDataFromDataServer(path, args);
-			const crdata = await apiDataFromDataServer('credits_by_release', args);
-			/*
-				detect distinct songs
-				and collect song:instrument credits per person
-			 */
-			const songs: any[] = [];
-			const credits: any = {};
-			crdata?.results?.filter((song: any) => song?.song && song?.song !== 'NULL')?.forEach((song: any) => {
-				if (!songs.includes(song.song)) songs.push(song.song);
-				if (song.performer) {
-					if (!credits[song.performer]) {
-						credits[song.performer] = { song_credits: {} }
-					}
-					if (!credits[song.performer].song_credits[song.song]) {
-						credits[song.performer].song_credits[song.song] = [];
-					}
-					credits[song.performer].song_credits[song.song].push(song.instruments);
+	if (formData) {
+		// POST
+		return await doPostToDataServer(path, formData, args);
+	} else {
+		switch (path) {
+			case 'lyrics':
+				return lyricsStatic;
+				break;
+			case 'presses':
+				return pressesStatic;
+				break;
+			case 'gigs':
+				return gigsStatic;
+				break;
+			case 'gig_by_datetime':
+			case 'gigmedias':
+			case 'gigtexts':
+			case 'gigsongs':
+			case 'performances':
+			case 'audio':
+			case 'gigs_with_audio':
+			case 'release_audio_by_project':
+			case 'audio_by_project':
+			case 'release_video_by_project':
+			case 'live_video_by_project':
+			case 'video':
+			case 'medias':
+			case 'credits_by_release':
+			case 'presses_by_release':
+			case 'press_by_href':
+			case 'presses_for_admin':
+			case 'songs_by_datetime':
+				return await apiDataFromDataServer(path, args);
+			case 'feedbacks':
+			case 'feedback_by_page':
+				const data = await apiDataFromDataServer('feedback', args + '.html');	// next config strips '.html', sigh
+				data.results = data?.results.map((r: CommentType) => ({
+					...r,
+					who: censorEmail(r?.who),
+				}));
+				return data;
+			case 'lyric_by_href': {
+				const releases = await apiDataFromHTDBServer('db_albums/data.json');
+				const lyrics = await apiDataFromDataServer('lyric_by_href', args);
+				const medias = await apiDataFromDataServer('media_by_song', lyrics?.results[0]?.title);
+				const song = lyrics?.results[0]?.title;
+				const foundList = await apiDataFromDataServer('releases_by_song', encodeURIComponent(song));
+				return {
+					lyrics,
+					medias,
+					foundon: foundList?.results?.map(({ lookup, media }: any) => ({ ...releases?.results?.find((r: any) => lookup === r.lookup), mediaurl: media })),
 				}
-			});
-			crdata?.results?.filter((song: any) => (!song?.song || song?.song === 'NULL'))?.forEach((cr: any) => {
-				if (!credits[cr.performer]) {
-					credits[cr.performer] = { album_credits: cr.instruments, song_credits: {} };
-				} else {
-					// multiple rows of album-wide credits for this person.
-					// concatentate the strings
-					if (credits[cr.performer].album_credits) {
-						credits[cr.performer].album_credits += ', ' + cr.instruments;
+			}
+			case 'songs_by_release': {
+				const data = await apiDataFromDataServer(path, args);
+				const crdata = await apiDataFromDataServer('credits_by_release', args);
+				/*
+					detect distinct songs
+					and collect song:instrument credits per person
+				 */
+				const songs: any[] = [];
+				const credits: any = {};
+				crdata?.results?.filter((song: any) => song?.song && song?.song !== 'NULL')?.forEach((song: any) => {
+					if (!songs.includes(song.song)) songs.push(song.song);
+					if (song.performer) {
+						if (!credits[song.performer]) {
+							credits[song.performer] = { song_credits: {} }
+						}
+						if (!credits[song.performer].song_credits[song.song]) {
+							credits[song.performer].song_credits[song.song] = [];
+						}
+						credits[song.performer].song_credits[song.song].push(song.instruments);
+					}
+				});
+				crdata?.results?.filter((song: any) => (!song?.song || song?.song === 'NULL'))?.forEach((cr: any) => {
+					if (!credits[cr.performer]) {
+						credits[cr.performer] = { album_credits: cr.instruments, song_credits: {} };
 					} else {
-						credits[cr.performer].album_credits = cr.instruments;
+						// multiple rows of album-wide credits for this person.
+						// concatentate the strings
+						if (credits[cr.performer].album_credits) {
+							credits[cr.performer].album_credits += ', ' + cr.instruments;
+						} else {
+							credits[cr.performer].album_credits = cr.instruments;
+						}
 					}
+				})
+				return {
+					...data,
+					numResults: songs.length,
+					results: songs,
+					credits,
+					songs: data,
 				}
-			})
-			return {
-				...data,
-				numResults: songs.length,
-				results: songs,
-				credits,
-				songs: data,
 			}
-		}
-		case 'gigs_by_musician': {
-			const performances =  await apiDataFromDataServer(path, args);
-			const gigs = await apiDataFromDataServer('gigs');
-			// join gig data to performance records
-			const results = performances?.results?.map((performance: RecordType) => {
-				const datetime = localDate(performance?.datetime)
-				const gig = gigs?.results.find((gig: RecordType) => localDate(gig?.datetime) === datetime);
-				return { ...performance, gig }
-			});
-			return { ...performances, results }
-		}
-		case 'gigs_by_song': {
-			const gigsongs = await apiDataFromDataServer(path, args);
-			const gigs = await apiDataFromDataServer('gigs', args);
-			// join gig data to song records
-			const results = gigsongs?.results?.map((song: RecordType) => {
-				const datetime = localDate(song?.datetime)
-				const gig = gigs?.results.find((gig: RecordType) => localDate(gig?.datetime) === datetime);
-				return { ...song, gig }
-			});
-			return { ...gigsongs, results }
-		}
-		case 'releases':
-			return releasesStatic;
-			//return await apiDataFromHTDBServer('db_albums/data.json');
-			break;
-		case 'release_by_lookup': {
-			if (args)
-			return await apiDataFromHTDBServer(`db_albums/data.json?lookup=${args}`);
+			case 'gigs_by_musician': {
+				const performances =  await apiDataFromDataServer(path, args);
+				const gigs = await apiDataFromDataServer('gigs');
+				// join gig data to performance records
+				const results = performances?.results?.map((performance: RecordType) => {
+					const datetime = localDate(performance?.datetime)
+					const gig = gigs?.results.find((gig: RecordType) => localDate(gig?.datetime) === datetime);
+					return { ...performance, gig }
+				});
+				return { ...performances, results }
+			}
+			case 'gigs_by_song': {
+				const gigsongs = await apiDataFromDataServer(path, args);
+				const gigs = await apiDataFromDataServer('gigs', args);
+				// join gig data to song records
+				const results = gigsongs?.results?.map((song: RecordType) => {
+					const datetime = localDate(song?.datetime)
+					const gig = gigs?.results.find((gig: RecordType) => localDate(gig?.datetime) === datetime);
+					return { ...song, gig }
+				});
+				return { ...gigsongs, results }
+			}
+			case 'releases':
+				return releasesStatic;
+				//return await apiDataFromHTDBServer('db_albums/data.json');
+				break;
+			case 'release_by_lookup': {
+				if (args)
+				return await apiDataFromHTDBServer(`db_albums/data.json?lookup=${args}`);
+			}
 		}
 	}
 }

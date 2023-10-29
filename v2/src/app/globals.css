@@ -687,3 +687,7 @@ details > summary::-webkit-details-marker {
 	margin: 2px;
 	font-size: .85em;
 }
+
+.pointable:hover {
+	cursor: pointer;
+}

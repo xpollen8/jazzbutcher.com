@@ -70,7 +70,7 @@ const usePageComments = (pathname: string) => {
 	}
 }
 
-export const usePageCommentLike = async (props: any) => {
+export const usePageCommentLike = (props: any) => {
 	return {
 		data: {},
 		isLoading: false,
@@ -78,7 +78,7 @@ export const usePageCommentLike = async (props: any) => {
 	}
 }
 
-export const usePageCommentReply = async (props: any) => {
+export const usePageCommentReply = (props: any) => {
 	return {
 		data: {},
 		isLoading: false,

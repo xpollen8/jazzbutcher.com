@@ -21,20 +21,36 @@ const mapLetterURLIFeedbackLookup = (uri: string): string => {
 
 const pathname2feedbackURI = (pathname: string) => {
 	const fullpath = (uri: string) => {
-		if (uri === '') return 'htdb/index.html';
-		if (uri === 'releases') return 'albums/index.html';
-		if (uri === 'lyrics') return 'lyrics/index.html';
-		if (uri === 'conspirators') return 'people/index.html';
-		if (uri === 'western_tape') return 'albums/western_tape.html';
-		if (uri === 'memoriam') return 'site/memoriam.html';
-		if (uri === 'letters') return 'letters/index.html';
-		if (uri?.startsWith('letters')) return mapLetterURLIFeedbackLookup(uri);
-		if (uri === 'eulogy') return 'site/eulogy.html';
+		const unchanged = [
+			'audio', 'fiascos', 'help', 'lyrics', 'fishy_mansions', 'letters',
+			'gigs', 'links', 'mad', 'tribute', 'video', 'trivia', 'tomhall', 'press'
+		];
+		const isUnchanged = unchanged.find((u: string) => uri === u);
+		if (unchanged.find((u: string) => uri === u)) return uri + '/index.html';
+		const modified = [
+			[ '', 'htdb/index.html' ],
+			[ 'mailinglist', 'articles/index.html' ],
+			[ 'releases', 'albums/index.html' ],
+			[ 'conspirators', 'people/index.html' ],
+			[ 'western_tape', 'albums/western_tape.html' ],
+			[ 'memoriam', 'site/memoriam.html' ],
+			[ 'letters', 'letters/index.html' ],
+			[ 'eulogy', 'site/eulogy.html' ],
+		];
+		const [ orig, updated ] = modified.find(([ orig, updated ]: string[]) => uri === orig) || [];
+		if (updated) return updated;
+
 		if (uri?.startsWith('releases')) return uri.replace('releases', 'albums');
 		if (uri?.startsWith('conspirators')) return uri.replace('conspirators', 'people');
+		if (uri?.startsWith('letters')) return mapLetterURLIFeedbackLookup(uri);
+
 		const [ section, sub1, sub2 ] = uri?.split('/') || '';
-		if (section === 'gigs' && sub2) {
-			return uri + '.html';
+		if (section === 'gigs') {
+			if (sub2) {
+				return uri + '.html';
+			} else if (sub1) {
+				return uri + '/index.html';
+			}
 		}
 		return uri;
 	}

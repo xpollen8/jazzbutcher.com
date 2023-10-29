@@ -1741,6 +1741,20 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Creation Records Promo)}
 
 	${addPress(type=kit,
+		url=${jbc_press}/19901120_promo.html,
+		thumb=https://s3.amazonaws.com/assets.jazzbutcher.com/images/promos/19901120_Promo,
+		dt=1990-11-20,
+		title=Rough Trade Records Promo,
+		added=2023-10-29)}
+
+	${addPress(type=kit,
+		url=${jbc_press}/19880215_promo.html,
+		thumb=https://s3.amazonaws.com/assets.jazzbutcher.com/images/promos/19880215_Promo,
+		dt=1988-02-15,
+		title=Relativity Records Promo,
+		added=2023-10-29)}
+
+	${addPress(type=kit,
 		url=${jbc_press}/95promo_yearly.html,
 		credit=Vanessa Cotton at Creation,
 		thumb=/images/95promo,
@@ -17933,6 +17947,24 @@ We should all be so lucky.
 
 #define	20210905_press_funhouse.html
 #live	if (getval(page) = 20210905_press_funhouse.html)
+	${extractPress(
+		body=${literalizeCommas(
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define 19880215_promo.html
+#live	if (getval(page) = 19880215_promo.html)
+	${extractPress(
+		body=${literalizeCommas(
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	19901120_promo.html
+#live	if (getval(page) = 19901120_promo.html)
 	${extractPress(
 		body=${literalizeCommas(
 		)}

@@ -117,7 +117,7 @@
 #live	if (define(prefix, pressItems[${page}]))
 #live	endif
 
-	${mkHeader(section=Press, title=${${prefix}->publication}
+	${mkHeader(section=Press, title=${ternary(getval(${prefix}->publication), ${${prefix}->publication}, ${${prefix}->title})}
 		- ${literalizeCommas(${mkPressDate(ts=${${prefix}->dt})})}
 	)}
 

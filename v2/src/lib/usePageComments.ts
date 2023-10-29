@@ -15,23 +15,23 @@ const mapLetterURLIFeedbackLookup = (uri: string): string => {
 	].forEach(([ current, old ]: any) => {
 		ret = ret.replace(current, old);
 	});
-	if (ret?.match(/[0-9]/)) return `${ret}/index.html`;
+	if (ret?.match(/[0-9]$/)) return `${ret}/index.html`;
 	return ret;
 }
 
 const pathname2feedbackURI = (pathname: string) => {
 	const fullpath = (uri: string) => {
-		if (uri === '/') return '/htdb/index.html';
-		if (uri === '/releases') return '/albums/index.html';
-		if (uri === '/lyrics') return '/lyrics/index.html';
-		if (uri === '/conspirators') return '/people/index.html';
-		if (uri === '/western_tape') return '/albums/western_tape.html';
-		if (uri === '/memoriam') return '/site/memoriam.html';
-		if (uri === '/letters') return '/letters/index.html';
-		if (uri?.startsWith('/letters')) return mapLetterURLIFeedbackLookup(uri);
-		if (uri === '/eulogy') return '/site/eulogy.html';
-		if (uri?.startsWith('/releases')) return uri.replace('/releases', '/albums');
-		if (uri?.startsWith('/conspirators')) return uri.replace('/conspirators', '/people');
+		if (uri === '') return 'htdb/index.html';
+		if (uri === 'releases') return 'albums/index.html';
+		if (uri === 'lyrics') return 'lyrics/index.html';
+		if (uri === 'conspirators') return 'people/index.html';
+		if (uri === 'western_tape') return 'albums/western_tape.html';
+		if (uri === 'memoriam') return 'site/memoriam.html';
+		if (uri === 'letters') return 'letters/index.html';
+		if (uri?.startsWith('letters')) return mapLetterURLIFeedbackLookup(uri);
+		if (uri === 'eulogy') return 'site/eulogy.html';
+		if (uri?.startsWith('releases')) return uri.replace('releases', 'albums');
+		if (uri?.startsWith('conspirators')) return uri.replace('conspirators', 'people');
 		const [ section, sub1, sub2 ] = uri?.split('/') || '';
 		if (section === 'gigs' && sub2) {
 			return uri + '.html';
@@ -54,7 +54,7 @@ const usePageComments = (pathname: string) => {
 	}
 }
 
-export const usePageCommentLike = (props: any) => {
+export const usePageCommentLike = async (props: any) => {
 	return {
 		data: {},
 		isLoading: false,
@@ -62,7 +62,23 @@ export const usePageCommentLike = (props: any) => {
 	}
 }
 
-export const usePageCommentReply = (props: any) => {
+export const usePageCommentReply = async (props: any) => {
+	return {
+		data: {},
+		isLoading: false,
+		error: {}
+	}
+}
+
+export const patchPageComment = async (props: any) => {
+	return {
+		data: {},
+		isLoading: false,
+		error: {}
+	}
+}
+
+export const deletePageComment = async (props: any) => {
 	return {
 		data: {},
 		isLoading: false,

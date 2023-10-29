@@ -297,7 +297,7 @@ export const parseProject = (extra: string) => ['wilson','sumo','eg','solo','duo
 export const pressFiltersInclude = (filters: string, f: string) => filters.split(',').find((s: string) => s === f);
 
 export const parseImage = (str?: string, width: number = 250) => {
-	const raw = truncAt(';;', str || '').trim();
+	const raw = str && truncAt(';;', str || '')?.trim() || '';
 	const base = raw.includes('http') ? raw : `https://v1.jazzbutcher.com${raw}`;
 	return {
 		image: `${base}.jpg`,

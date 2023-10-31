@@ -47,7 +47,7 @@ const	FilterReleases = ({ project, filters }: { project?: string, filters?: any 
 							<div style={{ maxWidth: '250px' }} className="outline outline-slate-300 drop-shadow-sm">
 								{(item?.href) && <Link key={key} href={item?.href}><Image src={`https://v1.jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" /></Link>}
 								{(!item?.href) && <Image src={`https://v1.jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" />}
-								<div className="-mt-5 mx-2 p-1 font-bold">
+								<div className="-mt-5 mx-2 p-1 font-bold text-center">
 									{item.title}
 								</div>
 							</div>

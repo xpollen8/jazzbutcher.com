@@ -4845,3 +4845,14 @@ Previously available on the ${fishco} LP/CD.
 
 	${jbc_footer}
 #live	endif
+
+#define	sebastians_medication.html
+#live	if (getval(page) sebastians_medication va_patron_saints.html)
+	${mkAlbumHeader(lookup=sebastians_medication, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=sebastians_medication)}
+	${addAlbumPerf(release=sebastians_medication,  ordinal=1, song="Sebastian's Medication")}
+
+	${jbc_footer}
+#live	endif
+

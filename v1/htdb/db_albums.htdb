@@ -3124,6 +3124,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 
 #define	albums[70]->type	single
 #define	albums[70]->lookup	bigtime_jungle
+#define	albums[70]->onalbum	nons
 #define	albums[70]->href	${jbc_albums}/bigtime_jungle_smith.html
 #define	albums[70]->label	BigTime
 #define	albums[70]->country	Australia
@@ -3138,6 +3139,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 
 #define	albums[71]->type	various
 #define	albums[71]->lookup	bigtime_sampler
+#define	albums[71]->onalbum	dist
 #define	albums[71]->href	${jbc_albums}/bigtime_sampler.html
 #define	albums[71]->label	BigTime
 #define	albums[71]->country
@@ -3509,6 +3511,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 
 #define	albums[92]->type	single
 #define	albums[92]->lookup	never7
+#define	albums[92]->onalbum	highest
 #define	albums[92]->href	${jbc_albums}/never_give_up.html
 #define	albums[92]->title	Never Give Up
 #define	albums[92]->label	Glass Modern
@@ -3598,7 +3601,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 
 #define	albums[98]->buy
 #define	albums[98]->lookup	sebastians_medication
-#define	albums[95]->onalbum	highest
+#define	albums[98]->onalbum	highest
 #define	albums[98]->media	CDR
 #define	albums[98]->label	Tapete
 #define	albums[98]->catalog	ISRC DEU162205811

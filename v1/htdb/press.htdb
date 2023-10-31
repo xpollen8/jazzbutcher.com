@@ -2195,7 +2195,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=Brooklyn\, NY\, USA,
 		dt=2013-06-22)}
 			
-	${addPress(type=preshow,
+	${addPress(type=gig,
 		url=${jbc_press}/2005_Nightshift.html,
 		credit=Art Lagun,
 		source=http://nightshift.oxfordmusic.net/2005/may/may.pdf,

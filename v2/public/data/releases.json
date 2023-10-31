@@ -1,6 +1,6 @@
 {
 	"noun": "albums",
-	"numResults": 97,
+	"numResults": 98,
 	"results": [
 	{
 		"type": "album",
@@ -5865,7 +5865,7 @@
 
 		"studio": "Far Heath, Northants",
 
-		"onalbum": 	"",
+		"onalbum": "highest",
 
 		"liner": 	"",
 
@@ -6000,6 +6000,68 @@
 		"thanks": 	"",
 
 		"images": 	"",
+
+		"notes": 	"",
+
+		"patsez": 	"",
+
+		"CDring": 	"",
+
+		"bishopsez": 	"",
+
+		"audio": 	"",
+
+		"downloads": 	"",
+
+		"video": 	""
+
+	} ,
+	{
+		"type": "single",
+
+		"href": "/albums/sebastians_medication.html",
+
+		"title": "Sebastian's Medication",
+
+		"thumb": "/images/releases/sebastians_medication_cd",
+
+		"blurb": 	"",
+
+		"dtreleased": "2022-03-18",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "sebastians_medication",
+
+		"label": "Tapete",
+
+		"catalog": "ISRC DEU162205811",
+
+		"media": "CDR",
+
+		"country": 	"",
+
+		"credit": 	"",
+
+		"contribution": 	"",
+
+		"dtrecorded": 	"",
+
+		"studio": 	"",
+
+		"onalbum": 	"",
+
+		"liner": "The Jazz Butcher - Sebastian's Medication - D/L Only Single <p /> Released 18th March 2022 - Tapete Records <p /> Taken from 'The Highest in the Land' cd/lp/dd released in February 2022. <p /> It's not often that an artist gets to do a Bowie by consciously carving their personal epitaph into the grooves of their final LP. The Highest in the Land is that rarity of an album, and it could not have been made by a more brilliantly poetic and fearlessly sarcastic writer than Pat Fish, also known as The Jazz Butcher. <p /> for more information sean@mutante.co.uk.",
+
+		"Agroove": 	"",
+
+		"Bgroove": 	"",
+
+		"thanks": 	"",
+
+		"images": "/images/releases/sebastians_medication_sleeve",
 
 		"notes": 	"",
 

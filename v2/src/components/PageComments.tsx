@@ -98,7 +98,7 @@ const CommentForm = (props: { session?: string, who?: string, whence?: string, c
 	const [ whence, setWhence ] = useState(editing ? inWhence : '');
 	const action = (editing) ? `Editing your post` : ((feedback_id) ? `Replying to "${inSubject}"` : `Composing a message for "${uri}"`);
 	const formAction = (editing) ? patchPageComment : ((feedback_id) ? submitPageCommentReply : submitPageCommentNew);
-	return <div className="text-left">
+	return <div className="text-left drop-shadow-2xl listItem">
 		<form
 			onSubmit={(ev: any) => {
 				ev.preventDefault();

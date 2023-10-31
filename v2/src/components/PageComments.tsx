@@ -234,7 +234,7 @@ const PageComments = ({ className }: { className?: string }) => {
 	const uri = usePathname()?.substr(1);
 	const { data, isLoading, error } = usePageComments(uri);
 	const comments = data?.results || [];
-	const [ showForm, toggleCommentForm ] = useState(false);
+	const [ showForm, toggleCommentForm ] = useState((comments?.length) ? false : true);
 	const session = getSessionId();
 
 	return (<>

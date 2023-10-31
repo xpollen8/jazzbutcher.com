@@ -3124,6 +3124,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 
 #define	albums[70]->type	single
 #define	albums[70]->lookup	bigtime_jungle
+#define	albums[70]->onalbum	nons
 #define	albums[70]->href	${jbc_albums}/bigtime_jungle_smith.html
 #define	albums[70]->label	BigTime
 #define	albums[70]->country	Australia
@@ -3138,6 +3139,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 
 #define	albums[71]->type	various
 #define	albums[71]->lookup	bigtime_sampler
+#define	albums[71]->onalbum	dist
 #define	albums[71]->href	${jbc_albums}/bigtime_sampler.html
 #define	albums[71]->label	BigTime
 #define	albums[71]->country
@@ -3509,6 +3511,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 
 #define	albums[92]->type	single
 #define	albums[92]->lookup	never7
+#define	albums[92]->onalbum	highest
 #define	albums[92]->href	${jbc_albums}/never_give_up.html
 #define	albums[92]->title	Never Give Up
 #define	albums[92]->label	Glass Modern
@@ -3596,7 +3599,31 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 	"Audio Aquatic" was an early working name for Sumosonic. Most tracks from this tape are the same as the later "Sumosonic Demo Cassette".
 #define	albums[97]->credit	Andrew Brooksbank;;;;2017-06-17
 
-#define	albums->numResults	97
+#define	albums[98]->buy
+#define	albums[98]->lookup	sebastians_medication
+#define	albums[98]->onalbum	highest
+#define	albums[98]->media	CDR
+#define	albums[98]->label	Tapete
+#define	albums[98]->catalog	ISRC DEU162205811
+#define	albums[98]->type	single
+#define	albums[98]->href	${jbc_albums}/sebastians_medication.html
+#define	albums[98]->dtreleased	2022-03-18
+#define	albums[98]->title	Sebastian's Medication
+#define	albums[98]->thumb	/images/releases/sebastians_medication_cd
+#define	albums[98]->images	/images/releases/sebastians_medication_sleeve
+#define	albums[98]->project
+#define	albums[98]->liner
+	The Jazz Butcher - Sebastian's Medication - D/L Only Single
+	<p />
+	Released 18th March 2022 - Tapete Records
+	<p />
+	Taken from "The Highest in the Land" cd/lp/dd released in February 2022.
+	<p />
+	It's not often that an artist gets to do a Bowie by consciously carving their personal epitaph into the grooves of their final LP. The Highest in the Land is that rarity of an album, and it could not have been made by a more brilliantly poetic and fearlessly sarcastic writer than Pat Fish, also known as The Jazz Butcher.
+	<p />
+	for more information sean\@mutante.co.uk.
+
+#define	albums->numResults	98
 
 #define	lookupAlbumBy(l, f=lookup, backupF=href)
 #live	loop(li, 1, ${albums->numResults})

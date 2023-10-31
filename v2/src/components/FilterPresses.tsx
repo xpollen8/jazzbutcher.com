@@ -96,6 +96,7 @@ const filterOptions = [
 	{ field: "type:pat", display: "Pat's Gig Reviews" },
 	{ field: "title:Punter", display: "Fans' Gig Reviews" },
 	{ field: "type:kit", display: "Band Bios" },
+	{ field: "audio:audio", display: "W/Audio" },
 ];
 
 const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, filter?: any }) => {
@@ -111,7 +112,7 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 			{(() => {
 				const options = filterOptions.filter((f: any) => {
 					const [ type, value ] = f.field.split(':');
-					return presses?.some((r: any) => r[type].includes(value));
+					return presses?.some((r: any) => r[type]?.includes(value));
 				});
 				if (options?.length <= 1) return;
 				return <div className="listItem flex flex-wrap">{options.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
@@ -127,7 +128,7 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 						<div className={`outline outline-slate-300 drop-shadow-sm gig_${parseProject(item.type)}`}>
 							<Link key={key} href={item.url}>
 								{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}
-								{(thumb) && <Image className="w-full" src={parseImage(thumb)?.thumb} width={250} height={250} alt="cover" />}
+								{(thumb) ? <Image className="w-full" src={parseImage(thumb)?.thumb} width={250} height={250} alt="cover" /> : <br />}
 								<div className="mx-2 text-center">
 									{(!(item?.album || thumb)) && <div className="h-5" />}
 									<div className="h-2" />

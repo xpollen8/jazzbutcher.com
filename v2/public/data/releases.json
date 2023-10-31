@@ -4377,7 +4377,7 @@
 
 		"studio": 	"",
 
-		"onalbum": 	"",
+		"onalbum": "dist",
 
 		"liner": 	"",
 
@@ -5679,7 +5679,7 @@
 
 		"studio": 	"",
 
-		"onalbum": 	"",
+		"onalbum": "highest",
 
 		"liner": 	"",
 

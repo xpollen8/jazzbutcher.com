@@ -187,10 +187,10 @@ const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => 
 			return (<>
 				<Tag>Downloadable Media</Tag>
 				<blockquote>
-				{downloads?.filter(([ file, caption]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>
-					<Link key={key} href={`https://v1.jazzbutcher.com${file}`} className="border">{caption}</Link>
+				{downloads?.filter(([ file, caption]: any) => file)?.map(([ file, caption ]: any, key: number) => (<div key={key}>
+					<Link href={`https://v1.jazzbutcher.com${file}`} className="border">{caption}</Link>
 					<br />
-				</>)
+				</div>)
 				)}
 				</blockquote>
 			</>)

@@ -209,7 +209,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				//return await apiDataFromHTDBServer('db_albums/data.json');
 				break;
 			case 'release_by_lookup': {
-				const results = releasesStatic?.results?.filter((r: any) => r.href === `/albums/${args}.html`);
+				const results = releasesStatic?.results?.filter((r: any) => r.lookup === args || r.href === `/albums/${args}.html`);
 				return { results };
 				//if (args)
 				//return await apiDataFromHTDBServer(`db_albums/data.json?lookup=${args}`);

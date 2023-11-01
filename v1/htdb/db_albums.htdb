@@ -2787,6 +2787,7 @@ Please give generously.
 
 #define	albums[49]->buy
 #define	albums[49]->lookup	spacemen
+#define	albums[49]->onalbum	thisissumo
 #define	albums[49]->media	CD
 #define	albums[49]->label	creation_records
 #define	albums[49]->catalog	CRESCD 242
@@ -2801,6 +2802,7 @@ Please give generously.
 	The single features: Come, Friendly Spacemen, Monks Of Kung Fu, and Come, Friendly Spacemen (version)
 
 #define	albums[50]->buy
+#define	albums[50]->onalbum	thisissumo
 #define	albums[50]->lookup	spacemen12
 #define	albums[50]->type	single,project
 #define	albums[50]->href	${jbc_albums}/sumosonic_spacemen_12.html
@@ -3111,6 +3113,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 
 #define	albums[69]->type	single
 #define	albums[69]->lookup	shock_drugs
+#define	albums[69]->onalbum	cult
 #define	albums[69]->href	${jbc_albums}/shock_drugs.html
 #define	albums[69]->label	Shock
 #define	albums[69]->country	Australia

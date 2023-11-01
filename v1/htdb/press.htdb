@@ -733,6 +733,7 @@ ${d}
 		location=Toronto\, Ontario\, Canada,
 		credit=Helen Lee,
 		source=https://archive.org/details/1986_08_August_Nerve_27/page/n3/mode/2up?q=%22Jazz+Butcher%22&view=theater,
+		images=/images/19860808/19860808_MikeDyer_PatFish_Negative_1$$/images/19860808/19860808_MikeDyer_PatFish_Negative_2$$/images/19860808/19860808_MikeDyer_PatFish_Negative_3$$/images/19860808/19860808_MikeDyer_PatFish_Negative_4;;Mike Dyer;;;;2023-10-25,
 		dt=1986-08-08,
 		added=2023-09-08)}
 
@@ -16234,23 +16235,22 @@ They claim to be punk, because they do what they want to. Some songs from Bloody
 #live	if (getval(page) = 19860808_press_nerve.html)
 	${extractPress(
 		body=${literalizeCommas(
-A marvelous thing, the English language. A root word, get this, created solely for a British pop musician named Pat Fish, singer, songwriter and coguitarist of Jazz Butcher Conspiracy (as they will henceforth be known).
+A marvelous thing, the English language. A root word, get this, created solely for a British pop musician named Pat Fish, singer, songwriter and co-guitarist of Jazz Butcher Conspiracy (as they will henceforth be known).
 <p />
 Wow. Gestural, articulate, and insightful are good, too. What's in a name?
 <p />
-“Indeed. It's only a name, like Pat Fish is only a name/' The conspiracy arises from the creative collaboration that is “more than just the four people on stage." Through a “convoluted series of accidents, including a brief association with David j (ex Bauhaus, now in Love & Rockets), the final line-up includes Max (guitar), Mr. Jones (drums) Felix (bass).
+“Indeed. It's only a name, like Pat Fish is only a name." The conspiracy arises from the creative collaboration that is “more than just the four people on stage." Through a “convoluted series of accidents, including a brief association with David j (ex Bauhaus, now in Love & Rockets), the final line-up includes Max (guitar), Mr. Jones (drums) Felix (bass).
 <p />
 “We are fully aware of the absurdity of all this"
 <p />
-Several years back, Pat promptly shed his academic skin after realizing, “I was living out other people's ambitions rather than my own." Studying Aristotle and Kant at Oxford U was “a real waste of time," and, getting together with David J in '83, the other man about Northhamptonshire (“it was a little ridiculous: we were wearing the same clothes, liked the same music, read the same books, even the obscure ones"), they set out to make some music and “have fun doing it." Another rock band is born. But this time, it's a bunch of • cracked philosophers who wrestle with the morality of suicide and other Big Questions — the existential crisis encapsulated in a three minute pop song.
+Several years back, Pat promptly shed his academic skin after realizing, “I was living out other people's ambitions rather than my own." Studying Aristotle and Kant at Oxford U was “a real waste of time," and, getting together with David J in '83, the other man about Northhamptonshire (“it was a little ridiculous: we were wearing the same clothes, liked the same music, read the same books, even the obscure ones"), they set out to make some music and “have fun doing it." Another rock band is born. But this time, it's a bunch of cracked philosophers who wrestle with the morality of suicide and other Big Questions — the existential crisis encapsulated in a three minute pop song.
 <p />
 “I don't trust people with beards."
 <p />
 But Tom Waits only has a scruff so he's okay, as are the Weather Prophets, the Pogues, and the Jesus And Mary Chain. Although his pals The Woodentops are “a bit smoother than they ought to be," Pat concedes, “fair enough, they want to make some money." The heart's still mending, though, from the shock he got from
+the pages of Interview: “I'm thinking, yeah, it's true; all Andy Warhol cares about is making money. I turn the page and there's Louis Reed on his stupid little beachbox thing." Exit personal God.
 <p />
-the pages of Interview: “I'm thinking, yeah, it's true; all Andy Warhol cares about is making money. I turn the page and there's Louis Reed on his stupid little beachbox thin#." Exit personal God.
-<p />
-But their fantastic pop song, ' H uman Jungle,' with its 'Walk on the Wild Side' bass line, a go-go lyric (“I know all about your house, I know all about your mouth") and marzipan cool is pure Lou. The Velvets are the thing. They're cute* beyond belief, so sweet."
+But their fantastic pop song, 'Human Jungle,' with its 'Walk on the Wild Side' bass line, a go-go lyric (“I know all about your house, I know all about your mouth") and marzipan cool is pure Lou. The Velvets are the thing. They're cute beyond belief, so sweet."
 <p />
 “We're not quite the ones for the 'plug the product' department"
 <p />

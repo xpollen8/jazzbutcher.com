@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EmbedMedia from '@/components/EmbedMedia';
 import LetterHeader from '@/components/LetterHeader';
+import Tag from '@/components/Tag';
 import SectionOptions from '@/components/SectionOptions';
 import Audio from '@/components/Audio';
 
@@ -11,32 +12,67 @@ const AudioInterviews = () => {
 	</>);
 }
 
+const podcasts = [
+		{
+			mediaurl: "https://www.mixcloud.com/FrenchSpurs1/retropopic-205-pat-fish-early-days-to-jazz-butchers-first-release-in-bath-of-bacon/",
+			title: "RETROPOPIC 205 - PAT FISH: EARLY DAYS TO JAZZ BUTCHER'S FIRST RELEASE 'IN BATH OF BACON'",
+			datetime: "2019",
+			children: <>
+				What was Pat&apos;s childhood like? How did he get on at school? What guitar music inspired him growing up? In what unusual way did he learn to play the guitar? What are his memories of meeting Max Eider? How were the names Pat Fish, Max Eider & The Jazz Butcher arrived at?
+			</>
+		},
+		{
+			mediaurl: "https://www.mixcloud.com/FrenchSpurs1/retropopic-315-pat-fish-the-jazz-butcher-talks-london-calling/",
+			title: "RETROPOPIC 315 - PAT FISH, THE JAZZ BUTCHER TALKS &apos;LONDON CALLING&apos;",
+			datetime: "2019",
+			children: <>
+				Singer-songwriter Pat Fish talks to The Saint of RETROPOPIC RADIO about his deep appreciation of The Clash&apos;s album &apos;London Calling&apos;.
+				<p />
+				Why was he so disappointed by &apos;Give &apos;Em Enough Rope&apos;? What are his memories of first hearing the album? Which are his favorite songs? What does he think was The Clash&apos;s manifesto on &apos;London Calling&apos;? Why was the album so important?
+			</>,
+		},
+		{
+			mediaurl: "https://www.mixcloud.com/bluebeatpete/the-jazz-butcher-the-vital-hour-radio-show-knon-1989/",
+			title: "The Jazz Butcher - The Vital Hour Radio Show KNON 1989",
+			datetime: "1989-12-12",
+			children: <>
+				1 hour of The Jazz Butcher music and facts. From a KNON radio show in 1989
+			</>,
+		},
+		{
+			mediaurl: "https://www.mixcloud.com/david-eastaugh/12-june-the-jazz-butcher-special-with-pat-fish-interview/",
+			title: "12 June - The Jazz Butcher Special with Pat Fish interview - C86 Show",
+			datetime: "2017-06-12",
+			children: <>
+				This week&apos;s show features interview with Pat Fish from the Jazz Butcher - plus music from the likes of The Cure, Popguns, Everything But The Girl, James Dean Driving Experience
+			</>,
+		},
+		{
+			source: "https://soundcloud.com/user-871949376/the-paine-full-podcast-with-pat-fish",
+			mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20200417_2018_The+Paine+Full+Podcast...+with+Pat+Fish.mp3",
+			title: "The Paine Full Podcast... with Pat Fish (2018)",
+			datetime: "2020-04-17",
+			children: <>
+				In this second episode, Andrew unearths an interview with musician, Pat Fish of The Jazz Butcher.
+				Dating from 2018 and recorded at &apos;Fishy Mansions&apos; in Northampton... Pat talks about academic life in Oxford, his friendship with Rolo McGinty, The Sonic Tonix, The Jazz Butcher&apos;s first album, &apos;In Bath Of Bacon&apos;, life on the road and the recording of &apos;Cult Of The Basement&apos;.
+			</>,
+		},
+		{
+			source: "https://soundcloud.com/alexgreenonline/stereo-embers-the-podcast-pat-fish-the-jazz-butcher",
+			mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20211007_JazzButcher_interview_stereoembers.mp3",
+			title: "Stereo Embers The Podcast: Pat Fish (The Jazz Butcher)",
+			datetime: "2021-11-07",
+		},
+		];
+
 const AudioPage = () => {
 	return (<>
 		<Header section="audio" />
 		<main>
-		<LetterHeader title="Jazz Butcher audio" subhead="(Audio for Wilson, etc is in 'Side Projects')" />
 		<SectionOptions section='audio' />
-		<hr />
-		<EmbedMedia data={{
-			source: "https://soundcloud.com/user-871949376/the-paine-full-podcast-with-pat-fish",
-			mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20200417_2018_The+Paine+Full+Podcast...+with+Pat+Fish.mp3",
-			title: "The Paine Full Podcast... with Pat Fish (2018)",
-			datetime: "2020-04-17" }}
-		>
-		<p />
-		In this second episode, Andrew unearths an interview with musician, Pat Fish of The Jazz Butcher.
-		<p />
-		Dating from 2018 and recorded at &apos;Fishy Mansions&apos; in Northampton... Pat talks about academic life in Oxford, his friendship with Rolo McGinty, The Sonic Tonix, The Jazz Butcher&apos;s first album, &apos;In Bath Of Bacon&apos;, life on the road and the recording of &apos;Cult Of The Basement&apos;.
-		</EmbedMedia>
 
-		<EmbedMedia data={{
-			source: "https://soundcloud.com/alexgreenonline/stereo-embers-the-podcast-pat-fish-the-jazz-butcher",
-			mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20211007_JazzButcher_interview_stereoembers.mp3",
-			title: "Stereo Embers The Podcast: Pat Fish (The Jazz Butcher)",
-			datetime: "2021-11-07" }}
-		>
-		</EmbedMedia>
+		<Tag>Some podcasts</Tag>
+		{podcasts.map((p: any, key: number) => <div key={key} className="listItem"><EmbedMedia data={...p} ><blockquote><i>{p?.children}</i></blockquote></EmbedMedia></div>)}
 
 		<iframe src='https://podomatic.com/embed/html5/episode/6738834' height={208} width={504} frameBorder={0} marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen></iframe>
 

@@ -513,8 +513,8 @@
 			${pat}, ${max}, ${owen}, ${steve}
 		)},
 		notes=${literalizeCommas(
-			The story here is that while the band were in San Francisco, ${del} fronted
-			the $$ to pay for time in the studio of Journey manager, Herbie Herbert.
+			The story here is that while the band were in San Francisco, ${del} paid
+			for a demo session in the studio of Journey manager, Herbie Herbert.
 			<p />
 			Pat and the gang were extremely good sports to relent to this abuse at
 			such an early hour in the day.
@@ -522,23 +522,32 @@
 			They had their pick of Herbie's incredible guitar amp collection.
 			<p />
 			The session was engineered by ${linkExternal(http://sonicvistastudios.com, L. Henry Sarmiento II)}
+			and was recorded to 8 channel ADAT.  The live rough mixes of the session can be heard below.
+			<p />
+			The original ADAT session tapes have been digitized, so better mixes of these tracks are possible.  Someday.
 		)},
 		pat=${literalizeCommas(
 		)}
 		,
-		photosets= /images/19990913/13Sep1999_kathy.jpg;;${kathie}$$
-			/images/19990913/13Sep1999_long_night.jpg$$
-			/images/19990913/13Sep1999_max_sat_phones.jpg;;${max}$$
-			/images/19990913/13Sep1999_max_stands.jpg;;${max}$$
-			/images/19990913/13Sep1999_max_tunes.jpg$$
-			/images/19990913/13Sep1999_owen_in_a_cage.jpg;;${owen}$$
-			/images/19990913/13Sep1999_owen_octadrum.jpg;;${owen}$$
-			/images/19990913/13Sep1999_pat_floor.jpg;;${pat}$$
-			/images/19990913/13Sep1999_pat_kit.jpg$$
-			/images/19990913/13Sep1999_pat_max_sat.jpg;;The Dynamic Duo$$
-			/images/19990913/13Sep1999_pat_sat_down.jpg$$
-			/images/19990913/13Sep1999_pat_sat_phones.jpg$$
-			/images/19990913/13Sep1999_steve_stands.jpg;;${steve}$$
+		photosets=
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_1.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_2.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_3.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_4.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_5.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_6.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_7.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_8.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_9.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_10.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_11.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_12.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_13.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_14.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_15.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_16.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_17.jpg$$
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_18.jpg$$
 			person_david_whittemore
 	)}
 

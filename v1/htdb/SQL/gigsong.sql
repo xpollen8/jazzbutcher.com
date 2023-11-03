@@ -2213,6 +2213,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1997-09-22 00:00:00','set',1,15,'Just Like B
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-22 00:00:00','set',1,16,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-22 00:00:00','set',1,17,'Angels',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-22 00:00:00','set',1,18,'Roadrunner','Jonathan Richman',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1999-09-13 00:00:00','set',1,0,"The Entire Performance",NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19990913/19990913_JazzButcher_SF_SyKloppsStudioPractice_DAT.mp3','David Whittemore','http://davidwhittemore.com');
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-13 00:00:00','set',1,1,'She\'s On Drugs',NULL,NULL,NULL,'http://jazzbutcher.com/audio/1999Sep13/shes_on_drugs.mp3','David Whittemore','http://davidwhittemore.com');
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-13 00:00:00','set',1,2,'Girlfriend',NULL,NULL,NULL,'http://jazzbutcher.com/audio/1999Sep13/girlfriend.mp3','David Whittemore','http://davidwhittemore.com');
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-13 00:00:00','set',1,3,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL);

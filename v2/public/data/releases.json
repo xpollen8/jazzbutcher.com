@@ -1,6 +1,6 @@
 {
 	"noun": "albums",
-	"numResults": 98,
+	"numResults": 99,
 	"results": [
 	{
 		"type": "album",
@@ -6072,6 +6072,68 @@
 		"bishopsez": 	"",
 
 		"audio": 	"",
+
+		"downloads": 	"",
+
+		"video": 	""
+
+	} ,
+	{
+		"type": "collaboration",
+
+		"href": "/albums/collaboration_michel_bulteau.html",
+
+		"title": "Archidoxe",
+
+		"thumb": "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_front",
+
+		"blurb": "Pat Fish: instruments &amp; machines",
+
+		"dtreleased": "1993",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "collaboration__michel_bulteau",
+
+		"label": "Cavale",
+
+		"catalog": "002",
+
+		"media": "CD",
+
+		"country": 	"",
+
+		"credit": 	"",
+
+		"contribution": 	"",
+
+		"dtrecorded": 	"",
+
+		"studio": 	"",
+
+		"onalbum": 	"",
+
+		"liner": 	"",
+
+		"Agroove": 	"",
+
+		"Bgroove": 	"",
+
+		"thanks": 	"",
+
+		"images": "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_back$$https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_cd",
+
+		"notes": 	"",
+
+		"patsez": 	"",
+
+		"CDring": 	"",
+
+		"bishopsez": 	"",
+
+		"audio": "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_4_96.mp3;;;;;;;;96$$https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_6_LaTourDeBabylone.mp;;;;;;;;La Tour de Babylone$$",
 
 		"downloads": 	"",
 

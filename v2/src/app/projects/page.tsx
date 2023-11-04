@@ -36,7 +36,7 @@ const collaborations = [
 	{ uri: 'releases/va_canyoutalktothedude_2', text: "Four One And Only's", aux: "Vocals for 'The U.F.O. Man'", },
 	{ uri: '/projects/cambodia', text: 'Cambodia', aux: "w/Cole Coonce" },
 	{ uri: '/projects/vaguely_familiar', text: 'Vaguely Familiar', aux: "w/Richard Formby + Sumishta Brahm"  },
-	{ uri: '/releases/trampling_tokyo', text: "With Alan Moore", aux: "The 'Trampling Tokyo' single" },
+	{ uri: '/releases/collaboration_trampling_tokyo', text: "With Alan Moore", aux: "The 'Trampling Tokyo' single" },
 	{ uri: '/projects/the_undertakers', text: "The Undertakers", aux: "Unrehearsed covers, live",
 		children: <>
 		Formed as the house band of Slurp&apos;s Bar, Northampton,

@@ -53,7 +53,7 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 				})()}
 			</i>
 			</span>
-			{(artist) && <b>{artist}</b>} {(author && !author.includes('NULL')) && <span className="smalltext pl-3"> ({author}) </span>} {(version) && <span className="smalltext pl-3"> ({version}) </span>}
+			{(artist) && <b>{artist}</b>} {(author && (typeof author === 'string') && !author.includes('NULL')) && <span className="smalltext pl-3"> ({author}) </span>} {(version) && <span className="smalltext pl-3"> ({version}) </span>}
 			{(comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: comment }} /></i>)</span>}
 			{(release?.thumb) && <div className="-mt-1 ml-2 smalltext">From: &quot;{release?.title}&quot; ({release?.type})</div>}
 			<div className="flex">

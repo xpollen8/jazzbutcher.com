@@ -76,10 +76,18 @@ const ReleaseSongList = ({ songs }: { songs: any[] }) => {
 		<Tag>Tracks</Tag>
 		<blockquote>
 			{songs?.sort((a: any, b: any) => a.type.localeCompare(b.type))?.map((item: any, key: number) => {
+				if (item?.author === 'NULL') item.author = null;
+				if (item?.media === 'NULL') item.media = null;
+				if (item?.version === 'NULL') item.version = null;
 				return <div key={key}>
-					{(!['set','NULL'].includes(item?.type)) && <>{item.type.replace('side', '.')} - </>}
-					{(item?.ordinal) && <span>{item?.ordinal}.</span>} <i>{AutoLinkSong(item?.title)}</i> {(!item?.author?.includes('NULL')) && <span className="date">({item?.author})</span>} {(item?.version && !item?.version?.includes('NULL')) && <span className="date">({item?.version})</span>}  {(item?.variant) && <span className="date">({item?.variant})</span>}
-					{(!['NULL'].includes(item?.media)) && <EmbedMedia data={{ mediaurl: item.media }} />}
+					{(item?.media?.length) ?
+						<EmbedMedia data={{ mediaurl: item.media, ...item, setnum: item?.type, autolink: true }} />
+					:
+					<>
+					{(!['set','NULL'].includes(item?.type)) && <>{item.type.replace('side', ': ')}</>}
+						<span>{item?.ordinal}.</span> <i>{AutoLinkSong(item?.title)}</i> {(item?.author) && <span className="date">({item?.author})</span>} {(item?.version) && <span className="date">({item?.version})</span>} {(item?.variant) && <span className="date">({item?.variant})</span>}
+					</>
+					}
 				</div>
 			})}
 		</blockquote>
@@ -204,10 +212,13 @@ const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		if (audio?.length) {
 			return (<>
 				<Tag>Audio</Tag>
-				{audio?.map(([ file, title, source, sourceurl, sourcedate ]: any, key: number) => (<>
-					<EmbedMedia key={key} data={{ song: title, mediaurl: file, parent: release.href, comment: release.title }} />
-					{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
-				</>))}
+				{audio?.map(([ file, song, credits ]: any, key: number) => {
+					const [ title, ordinal, version ] = song?.split('::');
+					//const people = credits?.split('^^') || [];
+					return (<>
+					<EmbedMedia key={key} data={{ song: title, mediaurl: file, parent: release.href, comment: release.title, version, ordinal }} />
+				</>)
+				})}
 			</>)
 		}
 	}

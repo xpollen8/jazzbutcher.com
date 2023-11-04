@@ -6133,7 +6133,7 @@
 
 		"bishopsez": 	"",
 
-		"audio": "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_4_96.mp3;;96;;;;;;$$https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_6_LaTourDeBabylone.mp3;;La Tour de Babylone;;;;;;$$",
+		"audio": "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_4_96.mp3;;96::4;;Pat Fish::instruments and machines$$https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_6_LaTourDeBabylone.mp3;;La Tour de Babylone::6;;Pat Fish::instruments and machines$$",
 
 		"downloads": 	"",
 

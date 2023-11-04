@@ -30,13 +30,13 @@
 #live			endif
 #live		endloop
 #live	endif
+
 ## images=URL;;credit;;credit_url;;credit_date;;caption$$....
 #define	parseImages(prefix, field, width=250)
 #live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
 #live		loop(ci, 1, ${chunks->numResults})
 #live			if (define(parts[2]), )
 #live			endif
-#live			if (define(parts[4]), )
 #live			if (define(parts[3]), )
 #live			endif
 #live			if (define(parts[4]), )
@@ -54,6 +54,36 @@
 						<center style="padding-bottom: 10px;">
 							${parseCredit(${parts[2]};;${parts[3]};;${parts[4]})}
 						</center>
+#live				endif
+					<p />
+#live			endif
+#live		endloop
+#live	endif
+
+#audio=url;;song;;credits
+#song=>title::ordinal::version
+#credits=>person^^person^^
+#person=>name::instruments
+# EX: url;;title::ordinal::version;;person::instruments^^
+
+#define	parseAlbumAudio(prefix, field=audio)
+#live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
+#live		loop(ci, 1, ${chunks->numResults})
+#live			if (define(parts[2]), )
+#live			endif
+#live			if (define(parts[3]), )
+#live			endif
+#live			if (makeArray(parts, ;;, ${chunks[${ci}]}))
+#live				if (defined(parts[1]))
+#live					if (define(s_parts[2]), )
+#live					endif
+#live					if (define(s_parts[3]), )
+#live					endif
+#live					if (makeArray(s_parts, ::, ${parts[2]}))
+							<div class="listItem">
+								${linkAudio(title=${literalizeCommas(${s_parts[1]})}, mp3=${parts[1]}, ordinal=${s_parts[2]}, comment=${s_parts[3]}, autolink=no)}
+							</div>
+#live					endif
 #live				endif
 					<p />
 #live			endif
@@ -799,6 +829,9 @@
 #live		endif
 #live	endif
 	<span class="audioPlayer">
+#live	if (getnum(ordinal) > 0)
+			<span class="listenItemOrdinal">${ordinal}.</span>
+#live	endif
 		<span class="audio_title">
 		<i>
 #live	if (defined(url))

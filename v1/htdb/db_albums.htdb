@@ -3554,10 +3554,10 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[94]->notes
 	Jazz Butcher's 2nd Single with Original versions of Marnie & Caroline Wheeler's Birthday Present. Both of which, later appeared re-recorded on the 'A Scandal & Bohemia' album.
 
-#define	albums[95]->type	various
+#define	albums[95]->type	collaboration,various
 #define	albums[95]->lookup	trampling
 #define	albums[95]->onalbum
-#define	albums[95]->href	${jbc_albums}/trampling_tokyo.html
+#define	albums[95]->href	${jbc_albums}/collaboration_trampling_tokyo.html
 #define	albums[95]->title	Alan Moore – A Compilation Of Songs And Performances By Alan Moore And Friends
 #define	albums[95]->media	CD
 #define	albums[95]->label
@@ -3626,7 +3626,23 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 	<p />
 	for more information sean\@mutante.co.uk.
 
-#define	albums->numResults	98
+#define	albums[99]->buy
+#define	albums[99]->lookup	collaboration__michel_bulteau
+#define	albums[99]->media	CD
+#define	albums[99]->label	Cavale
+#define	albums[99]->catalog	002
+#define	albums[99]->type	collaboration
+#define	albums[99]->href	${jbc_albums}/collaboration_michel_bulteau.html
+#define	albums[99]->dtreleased	1993
+#define	albums[99]->title	Archidoxe
+#define	albums[99]->thumb	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_front
+#define	albums[99]->images	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_back$$https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_cd
+#define	albums[99]->liner
+#define	albums[99]->audio	https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_4_96.mp3;;96::4;;Pat Fish::instruments and machines$$https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_6_LaTourDeBabylone.mp3;;La Tour de Babylone::6;;Pat Fish::instruments and machines$$
+#define	albums[99]->blurb
+	Pat Fish: instruments & machines
+
+#define	albums->numResults	99
 
 #define	lookupAlbumBy(l, f=lookup, backupF=href)
 #live	loop(li, 1, ${albums->numResults})

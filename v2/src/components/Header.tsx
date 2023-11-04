@@ -94,7 +94,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	'releases/va_canyoutalktothedude_2': { parent: 'projects', title: "Four One & Only's", summary: '1996 - U.F.O. Man', inParentDirectory: false, },
 	sumosonic: { parent: 'projects', title: 'Sumosonic', summary: "1996-1998", inParentDirectory: true },
 	wilson: { parent: 'projects', title: 'Wilson', summary: "2001-2005, 2012", inParentDirectory: true },
-	'releases/trampling_tokyo': { parent: 'projects', title: 'Alan Moore', summary: '2011 - Trampling Tokyo', inParentDirectory: false },
+	'releases/collaboration_trampling_tokyo': { parent: 'projects', title: 'Alan Moore', summary: '2011 - Trampling Tokyo', inParentDirectory: false },
 	drones_club: { parent: 'projects', title: 'Drones Club', summary: '2014-2021', inParentDirectory: true },
 	prime_evils: { parent: 'projects', title: 'Prime Evils', inParentDirectory: true },
 	masters_of_budvar: { parent: 'projects', title: 'The Masters of Budvar', inParentDirectory: true },

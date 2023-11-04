@@ -70,10 +70,11 @@ export const parseDate = (str?: string) => {
 		}).find(f => f && f[1]);
 		if (xx) {
 			const [ orig, y, m, d, hh, mm, ss ] = xx;
-			const unknownYear = (!parseInt(y || '', 10)) ? 'unknownYear' : '';
-			const unknownMonth = (!parseInt(m || '', 10)) ? 'unknownMonth' : '';
-			const unknownDay = (!parseInt(d || '', 10)) ? 'unknownDay' : '';
-			const [ iy, im, id, ihh, imm, iss ] = [y, m, d, hh, mm, ss ].map(f => (f && parseInt(f || '', 10)) || 1);
+			const [ iy, im, id, ihh, imm, iss ] = [y, m, d, hh, mm, ss ].map(f => (f && parseInt(f || '', 10)) || 0);
+			const anyKnown = (iy || im || id);
+			const unknownYear = anyKnown && (!iy) ? 'unknownYear' : '';
+			const unknownMonth = anyKnown && (!im) ? 'unknownMonth' : '';
+			const unknownDay = anyKnown && (!id) ? 'unknownDay' : '';
 			if (!iy) return;
 			return [orig,iy,im,id,ihh,imm,iss, unknownYear, unknownMonth, unknownDay];
 		}

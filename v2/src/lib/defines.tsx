@@ -576,6 +576,7 @@ export const mayi = linkSong({ title: "May I", author: "Ayers" });
 export const ill = linkAlbum({ href: "/releases/illuminate.html", title: "Illuminate" });
 export const violent = linkSingle({ href: "/releases/violent.html", title: "&#161;Excellent! The Violent Years" });
 export const _16yr = linkSingle({ href: "/releases/sixteen_years.html", title: "Sixteen Years" });
+export const sixteen_years = linkSingle({ href: "/releases/sixteen_years.html", title: "Sixteen Years" });
 export const cute = linkSong({ href: "/lyrics/cute_submarines.html", title: "Cute Submarines" });
 export const _16 = linkSong({ href: "/lyrics/sixteen_years.html", title: "Sixteen Years" });
 export const elephant_man = linkSong({ title: "Elephant Man" });

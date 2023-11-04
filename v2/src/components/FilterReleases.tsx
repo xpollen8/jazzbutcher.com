@@ -14,6 +14,7 @@ const filterOptions = [
 	{ field: "type:album", display: "Albums" },
 	{ field: "type:single", display: "Singles" },
 	{ field: "type:compilation", display: "Compilations" },
+	{ field: "type:collaboration", display: "Collaborations" },
 	{ field: "type:various", display: "Various" },
 	{ field: "type:EP", display: "EPs" },
 	{ field: "type:demo", display: "Demos" },

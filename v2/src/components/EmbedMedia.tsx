@@ -171,8 +171,7 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 					</>
 				} else if (useMediaurl?.includes('.mp3')) {
 					return (<div className="listenItem drop-shadow-md">
-						{(ordinal > 0) && <span className="listenItemOrdinal">{ordinal}.</span>}
-						<LinkAudio version={version} lookup={lookup} parent={parent} autolink={autolink} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} />
+						<LinkAudio version={version} lookup={lookup} parent={parent} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} ordinal={ordinal} setnum={setnum} />
 						{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 						{children}
 					</div>)

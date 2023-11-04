@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import useReleases from '@/lib/useReleases';
 import { type ReleaseType } from '@/components/Release';
-import { truncAt, parseYear } from '@/lib/utils';
+import { parseImage, truncAt, parseYear } from '@/lib/utils';
 import InfoTag from '@/components/InfoTag';
 
 import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
@@ -41,13 +41,14 @@ const	FilterReleases = ({ project, filters }: { project?: string, filters?: any 
 			<div className="flex flex-wrap gap-3 justify-center">
 				{releases?.filter((rel: any) => filterItemBy(rel, filtersUsed))
 					.map((item: ReleaseType, key: number) => {
-						const thumb = truncAt(';;', item?.thumb);
+						//const thumb = truncAt(';;', item?.thumb);
+						const { thumb, image } = parseImage(item?.thumb);
 						return (<div key={key} className="drop-shadow-sm">
 							<InfoTag text={`${parseYear(item.dtreleased)}: ${item?.type?.replace('project', '').replace(',,', ',').replace(/^,/, '').replace(/,$/, '')}`}/>
 							<div className={`gig_${item?.project}`}/>
 							<div style={{ maxWidth: '250px' }} className="outline outline-slate-300 drop-shadow-sm">
-								{(item?.href) && <Link key={key} href={item?.href}><Image src={`https://v1.jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" /></Link>}
-								{(!item?.href) && <Image src={`https://v1.jazzbutcher.com/${thumb}_250.jpg`} width={250} height={250} alt="cover" />}
+								{(item?.href) && <Link key={key} href={item?.href}><Image src={thumb} width={250} height={250} alt="cover" /></Link>}
+								{(!item?.href) && <Image src={thumb} width={250} height={250} alt="cover" />}
 								<div className="-mt-5 mx-2 p-1 font-bold text-center">
 									{item.title}
 								</div>

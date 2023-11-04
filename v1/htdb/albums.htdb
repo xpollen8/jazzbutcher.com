@@ -69,6 +69,9 @@ ${tag_end}
 	</blockquote>
 
 #live	endif
+#live	if (define(LL, ${lookupAlbumBy(l=${release})}))
+	${parseAlbumAudio(prefix=${LL})}
+#live	endif
 
 #define	fetchAlbumPersonnel(release)
 #
@@ -2530,6 +2533,14 @@ Previously available on the ${fishco} LP/CD.
 	${end_tabs}
 
 	${jbc_footer}
+#live	else if (lookupAlbumBy(l=${truncAt(.html, ${page})}, f=lookup)})
+#
+#	else auto-generate page just from db_albums definitions
+#
+	${mkAlbumHeader(lookup=${truncAt(.html, ${page})}, body=${literalizeCommas(
+	)})}
+	${jbc_footer}
+
 #live	endif
 
 #define	va_shadow_and_substance.html
@@ -4830,12 +4841,12 @@ Previously available on the ${fishco} LP/CD.
 	${jbc_footer}
 #live	endif
 
-#define	trampling_tokyo.html
-#live	if (getval(page) == trampling_tokyo.html)
+#define	collaboration_trampling_tokyo.html
+#live	if (getval(page) == collaboration_trampling_tokyo.html)
 	${mkAlbumHeader(lookup=trampling, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=trampling)}
-	${addAlbumPerf(release=trampling,  ordinal=12, song="Trampling Tokyo")}
+	${addAlbumPerf(release=trampling,  ordinal=12, song="Trampling Tokyo", media=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/AlanMoore/AlanMoore_PatFish_Trampling_Tokyo.mp3)}
 	${addAlbumPerf(release=trampling, person=[[person:Alan_Moore]], instruments=Voice\, Words)}
 	${addAlbumPerf(release=trampling, person=[[person:Jill_Partington]], instruments=Drums)}
 	${addAlbumPerf(release=trampling, person=[[person:Michael_Holloway]], instruments=Bass)}

@@ -162,6 +162,7 @@ textplus1 {
 	background-color: rgba(243,243,243,0.5);
 }
 .gig_sumosonic {
+	color: #ffffff;
 	background-color: #000000;
 	margin-bottom: 3px;
 }
@@ -172,6 +173,7 @@ textplus1 {
 	content: url(/images/performance_sumo.png);
 }
 .gig_sumo {
+	color: #ffffff;
 	background-color: #000000;
 	margin-bottom: 3px;
 }
@@ -211,8 +213,12 @@ textplus1 {
 	content: "Memorial gig";
 }
 .gig_wilson {
+	color: #000;
 	background-color: #ee0000;
 	margin-bottom: 3px;
+}
+.gig_wilson a {
+	color: #339;
 }
 .gig_pane {
 	border: 1px solid #aaa;

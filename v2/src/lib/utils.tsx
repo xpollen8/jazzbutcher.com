@@ -113,7 +113,7 @@ export const dateDiff = (dt?: string, sep: string = ' - ') => {
 		const prettyAgo = moment(compare).startOf('hour').fromNow();
 		return (<>
 			{sep}
-			<span className="date">{prettyDate(display)}</span> <span className={`date ${unknownMonth} ${unknownDay}`}>( {prettyAgo} )</span>
+			<span className="date">{prettyDate(display)}</span> <span className={`date ${unknownMonth} ${unknownDay}`}>({prettyAgo})</span>
 		</>)
 	}
 	return <span className={`date ${unknownYear}`} />

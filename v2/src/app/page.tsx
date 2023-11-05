@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import ReleaseBlurb from '@/components/ReleaseBlurb';
 import FeaturedItem from '@/components/FeaturedItem';
-//import DayInHistory from '@/components/DayInHistory';
-//import RandomLiveVideo from '@/components/RandomLiveVideo';
+import DayInHistory from '@/components/DayInHistory';
+import News from '@/components/News';
 import Memorial from '@/components/Memorial';
 import Tag from '@/components/Tag';
 
@@ -67,6 +67,8 @@ const Home = (): React.ReactNode =>
 				<div className="max-w-lg grow">
 					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
 					<HomeBooks />
+					<News />
+					<DayInHistory />
 				</div>
 			</div>
 				<div className="max-w-lg grow">
@@ -74,8 +76,6 @@ const Home = (): React.ReactNode =>
 					<HomeReleases />
 				</div>
 		</div>
-		{/*<RandomLiveVideo />
-		<DayInHistory />*/}
 	</main>
 </>
 

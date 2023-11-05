@@ -2,8 +2,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EmbedMedia from '@/components/EmbedMedia';
 import LetterHeader from '@/components/LetterHeader';
+import { dateDiff } from '@/lib/utils';
 import Tag from '@/components/Tag';
 import SectionOptions from '@/components/SectionOptions';
+import { Source } from '@/components/GenericWeb';
 import Audio from '@/components/Audio';
 
 const AudioInterviews = () => {
@@ -72,11 +74,29 @@ const AudioPage = () => {
 		<SectionOptions section='audio' />
 
 		<Tag>Some podcasts</Tag>
-		{podcasts.map((p: any, key: number) => <div key={key} className="listItem"><EmbedMedia data={...p} ><blockquote><i>{p?.children}</i></blockquote></EmbedMedia></div>)}
+		<blockquote>
+		{podcasts.map((p: any, key: number) => <div className="listItem"><EmbedMedia key={key} data={...p} ><blockquote><i>{p?.children}</i><br /><Source g={p.source} /><br />{dateDiff(p.datetime, '')}</blockquote></EmbedMedia></div>)}
+		</blockquote>
 
-		<iframe src='https://podomatic.com/embed/html5/episode/6738834' height={208} width={504} frameBorder={0} marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen></iframe>
+		<blockquote>
+			<blockquote className="listItem">
+				<iframe className="w-full" src='https://podomatic.com/embed/html5/episode/6738834' height={208} width={504} frameBorder={0} marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen></iframe>
+				<blockquote>
+					<i>In this episode, John cuts deep into the Jazz Butcher's 1984 album, A Scandal In Bohemia. Featuring interviews with band members, Pat Fish, Max Eider, Owen Jones, and David J.</i>
+					<br />{dateDiff('2013-11-06', '')}
+				</blockquote>
+			</blockquote>
+		</blockquote>
 
-		<iframe src='https://podomatic.com/embed/html5/episode/10011300' height={208} width={504} frameBorder={0} marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen></iframe>
+		<blockquote>
+			<blockquote className="listItem">
+				<iframe className="w-full" src='https://podomatic.com/embed/html5/episode/10011300' height={208} width={504} frameBorder={0} marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen></iframe>
+				<blockquote>
+					<i>Greg and Chris visit with the Jazz Butcher himself, Pat Fish. Pat reminisces about the Jazz Butcher Conspiracy and the new Solo project.</i>
+					<br />{dateDiff('2021-04-16', '')}
+				</blockquote>
+			</blockquote>
+		</blockquote>
 
 		{/*
 		<Suspense fallback=<>Loading...</>>
@@ -93,11 +113,9 @@ const AudioPage = () => {
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoadingLive) && <AudioSection title="Live Shows" project="jbc" data={dataLive.results} />}
 		</Suspense>
-		*/}
-		<pre>
 		expose the contents of:
 		https://s3.amazonaws.com/assets.jazzbutcher.com/audio/flac/
-		</pre>
+		*/}
 		<Audio />
 		</main>
 		<Footer />

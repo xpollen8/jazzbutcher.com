@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import ReleaseBlurb from '@/components/ReleaseBlurb';
 import FeaturedItem from '@/components/FeaturedItem';
 import DayInHistory from '@/components/DayInHistory';
-import News from '@/components/News';
+import RecentUpdates from '@/components/RecentUpdates';
 import Memorial from '@/components/Memorial';
 import Tag from '@/components/Tag';
 
@@ -67,7 +67,7 @@ const Home = (): React.ReactNode =>
 				<div className="max-w-lg grow">
 					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
 					<HomeBooks />
-					<News />
+					<RecentUpdates />
 					<DayInHistory />
 				</div>
 			</div>

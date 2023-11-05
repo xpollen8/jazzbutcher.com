@@ -78,7 +78,7 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 				}
 				</div>
 			</div>
-			{(thumb) && <div className="smalltext">Taken from: &quot;{release?.title}&quot; ({release?.type})</div>}
+			{(lookup && thumb && release?.title) && <div className="smalltext">Taken from: &quot;{release?.title}&quot; ({release?.type})</div>}
 			{children}
 		</div>
 	</Suspense>

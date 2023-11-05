@@ -154,7 +154,7 @@ export const sumo_pat = linkPerson({ href: "https://patfish.com", name: "Headsto
 export const sumo_russ = linkPerson({ href: "russell_cooper.html", name: "Agent Russell Cooper" });
 export const tim_harries = linkPerson({ href: "tim_harries.html", name: "Tim Harries" });
 export const undertakers = <b>The Undertakers</b>;
-export const wilson = linkInternal('/project/wilson', 'Wilson');
+export const wilson = linkInternal('/projects/wilson', 'Wilson');
 export const wolfi = linkPerson({ href: "wolfgang_tschegg.html", name: "Wolfgang Tschegg" });
 
 //
@@ -176,7 +176,7 @@ export const poi = linkExternal("http://www.poidogpondering.com/", "Poi Dog Pond
 export const davidj = dj;
 export const bwatch = linkExternal("http://www.theblackwatchmusic.com", "The Black Watch");
 export const purelove = linkExternal("http://ourworld.compuserve.com/homepages/RobertFliegel/purelove.htm, Purelove");
-export const eg	= <Link href="https://adjective.com/htdb/eg">The Black Eg</Link>
+export const eg	= linkInternal('/projects/black_eg', 'The Black Eg');
 export const vergift = <Link href="https://adjective.com/vergiftung/site">Vergiftung</Link>
 export const cave = linkSearch({ name: "Nick Cave", act: true });
 export const cvb = "Camper Van Beethoven";
@@ -588,7 +588,7 @@ export const beetle = linkSong({ href: "/lyrics/beetle_george.html", title: "Bee
 export const cops = linkSong({ href: "/lyrics/cops_and_hospitals.html", title: "Cops And Hospitals" });
 export const truck = linkSong({ href: "/lyrics/truck_o_fear.html", title: "Truck Of Fear" });
 export const dean = linkSong({ href: "/lyrics/blues_for_dean_read.html", title: "Blues For Dean Read" });
-export const sumo = linkSong({ href: "/lyrics/waiting_for_sumo.html", title: "Waiting For Sumo" });
+export const waiting_for_sumo = linkSong({ href: "/lyrics/waiting_for_sumo.html", title: "Waiting For Sumo" });
 export const snakey = linkSong({ href: "/lyrics/old_snakey.html", title: "Old Snakey" });
 export const land = linkSong({ href: "/lyrics/land.html", title: "Land" });
 export const lulu = linkSong({ href: "/lyrics/lulus_nightmare.html", title: "Lulu's Nightmare" });
@@ -649,7 +649,8 @@ export const fire_cholmondley = linkAlbum({ href: "/releases/fire_cholmondley.ht
 //
 //	sumo
 //
-export const sumosonic = linkExternal("https://www.sumosonic.com", "Sumosonic");
+export const sumosonic = linkInternal('/projects/sumosonic', "Sumosonic");
+export const sumo = linkInternal('/projects/sumosonic', "Sumosonic");
 export const friendly = linkSong({ title: "Come, Friendly Spacemen" });
 
 export const lunch = linkAlbum({ href: "/releases/free_lunch.html", title: "The Jazz Butcher's Free Lunch" });
@@ -1068,7 +1069,7 @@ export const mapSongs: {[key: string]: string} = {
 	"Two_Dragons": "wilson_two_dragons",
 	"Vienna_Song": "vienna",
 	"Vodka_Girls": "vodka",
-	"Waiting_For_Sumo": "sumo",
+	"Waiting_For_Sumo": "waiting_for_sumo",
 	"Walk_With_The_Devil": "walk",
 	"Water": "h2o",
 	"We_Love_You": "weluv",
@@ -1292,7 +1293,7 @@ export const	people = [
 	{ lookup: "poi", href: "http://www.poidogpondering.com/", name: "Poi Dog Pondering", act: true },
 	{ lookup: "bwatch", href: "http://www.theblackwatchmusic.com", name: "The Black Watch", act: true },
 	{ lookup: "purelove", href: "http://ourworld.compuserve.com/homepages/RobertFliegel/purelove.htm", name: "Purelove", act: true },
-	{ lookup: "eg", href: "/project/black_eg", name: "The Black Eg", act: true },
+	{ lookup: "eg", href: "/projects/black_eg", name: "The Black Eg", act: true },
 	{ lookup: "vergift", href: "https://adjective.com/vergiftung/site", name: "Vergiftung", act: true },
 	{ lookup: "cave", name: "Nick Cave", act: true },
 	{ lookup: "cvb", name: "Camper Van Beethoven", act: true },

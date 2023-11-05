@@ -218,7 +218,7 @@ const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 				{audio?.map(([ file, song, credits ]: any, key: number) => {
 					const [ title, ordinal, version ] = song?.split('::');
 					//const people = credits?.split('^^') || [];
-					return <EmbedMedia key={key} data={{ song: title, mediaurl: file, parent: release.href, comment: release.title, version, ordinal }} />
+					return <EmbedMedia key={key} data={{ ...release, song: title, mediaurl: file, parent: release.href, version, ordinal }} />
 				})}
 				</blockquote>
 			</>)
@@ -232,18 +232,18 @@ const ReleaseVideos = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		if (videos?.length) {
 			return (<>
 				<Tag>Videos</Tag>
+				<blockquote className="flex flex-wrap">
 				{videos?.map((v: any, key: number) => {
 					const [ videourl, source, sourceurl, sourcedate, caption ] = v;
 					const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
-					return (<div key={key} className="flex flex-wrap">
-							<div>
-								<div className="w-80 float-right p-1">
-									<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate }} />
-								</div>
-								{(caption) && <blockquote dangerouslySetInnerHTML={{ __html: caption }} />}
+					return (<div key={key}>
+							<div className="w-80 float-right p-1">
+								<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate }} />
 							</div>
+							{(caption) && <blockquote dangerouslySetInnerHTML={{ __html: caption }} />}
 					</div>)
 				})}
+				</blockquote>
 			</>)
 		}
 	}

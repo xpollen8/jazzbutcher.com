@@ -2928,7 +2928,6 @@ Please give generously.
 #define	albums[57]->dtreleased	1983
 #define	albums[57]->contribution envoy
 #define	albums[57]->blurb
-		<p />
 		The Jazz Butcher cover version is unavailable elsewhere. Interestingly
 		enough, the same must be said about the other contributions ... The
 		Rag Dolls were an early and short-living band of Dave Kusworth
@@ -3511,6 +3510,8 @@ Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘G
 Starting in the early 2000’s a friend of mine, Andy Clarke, started recording a Christmas Album each year to give away to friends and clients. They started as a bit of a joke based around his fictional alta ego “Uncle Andy” best described as a lecherous, fraudster, man of the cloth. Over the next few years more and more musicians became involved not just from The New Barcelona but from around the world, some still jokey but more and more they became serious production numbers.
 <p />
 In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, which at the end of he obviously stole all the takings. That year we finally asked Pat if he wanted to record one and he said he wouldn’t do a Christmas song, but he would record something … and oh did he do something special for us. He came round and recorded a beautiful version of Afterhours from the 3rd Velvet Underground album.;;Mark Cotton;;www.audiowrangler.co.uk;;2021-11-15 01:57:36
+#define	albums[91]->audio https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3;;After Hours::5$$
+
 
 #define	albums[92]->type	single
 #define	albums[92]->lookup	never7

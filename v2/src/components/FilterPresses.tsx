@@ -126,22 +126,22 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 				.map((item: any, key: number) => {
 					const thumb = truncAt(';;', item?.thumb || '');
 					const info = item.type.replace(project, '').replace('nopat','').replace('wilson','').replace('sumo','').replace('eg','').replace(',,', ',').replace(/^,/, '').replace(/,$/, '');
-					return (<div key={key} className={`w-64`}>
+					return (<div key={key} className='w-64'>
 						<InfoTag text={`${item.dtpublished?.substr(0, 10).replace(/-00/g, '')}: ${info}`}/>
-						<div className={`outline outline-slate-300 drop-shadow-sm gig_${parseProject(item.type)}`}>
+						<div className="outline outline-slate-300 drop-shadow-sm">
 							<Link key={key} href={item.url}>
+								<div className={`gig_${parseProject(item.type)}`} />
 								{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}
 								{(thumb) ? <Image className="w-full" src={parseImage(thumb)?.thumb} width={250} height={250} alt="cover" /> : <br />}
-								<div className="mx-2 text-center">
+								<div className="text-sky-800 text-center px-2">
 									{(!(item?.album || thumb)) && <div className="h-5" />}
-									<div className="h-2" />
+									<div className="h-3" />
 									<div className="font-bold">{item.publication}</div>
 									<div className="h-1" />
 									{(item.publication && item.title) && <hr />}
 									<div className="h-1" />
-									<div dangerouslySetInnerHTML={{ __html: item.title }} />
+									<div className="font-light" dangerouslySetInnerHTML={{ __html: item.title }} />
 									{(parseInt(item?.bodycount, 10) > 0) && <div className="smalltext">{item?.bodycount.toLocaleString()} words</div>}
-									<div className="-mb-5" />
 								</div>
 							</Link>
 						</div>

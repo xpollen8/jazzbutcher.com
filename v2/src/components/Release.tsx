@@ -7,12 +7,11 @@ import Image from 'next/image';
 import { removeHTML, Attribution, Source } from '@/components/GenericWeb';
 import Tag from '@/components/Tag';
 import ImageStrip from '@/components/ImageStrip';
-import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import MakeReleasePress from '@/components/MakeReleasePress';
 import EmbedMedia from '@/components/EmbedMedia';
 import useReleaseSongs from '@/lib/useReleaseSongs';
 import { gab, expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
-import { truncAt, parseCaptionsSourcesEtc } from '@/lib/utils';
+import { linkExternal, parseDomain, truncAt, parseCaptionsSourcesEtc } from '@/lib/utils';
 
 export type ReleaseType =  {
 	type?: string
@@ -124,21 +123,26 @@ const ReleaseContribution = ({ release }: { release: ReleaseTypeWithChildren }) 
 }
 
 const ReleaseNotes = ({ release }: { release: ReleaseTypeWithChildren }) => {
-	if (release?.notes) {
-		const notes = parseCaptionsSourcesEtc(release?.notes);
+	const parseBlob = (str: string) => {
+		const notes = parseCaptionsSourcesEtc(str);
 		if (notes?.length) {
 			return (<>
-				<Tag>Notes</Tag>
-				<blockquote>
 				{notes?.map(([ note, source, sourceurl, sourcedate ]: any, key: number) =>
 					<div className="listItem" key={key}>
 						<div dangerouslySetInnerHTML={{ __html: note }} />
 						{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
 					</div>
 				)}
-				</blockquote>
 			</>)
 		}
+	}
+	if (release?.notes || release?.blurb) {
+		return (<>
+			<Tag>Notes</Tag>
+			<blockquote>
+				{parseBlob(release?.notes + '$$' + release?.blurb + ';;' + release?.credit)}
+			</blockquote>
+		</>)
 	}
 }
 
@@ -250,10 +254,10 @@ const ReleaseVideos = ({ release }: { release: ReleaseTypeWithChildren }) => {
 }
 
 const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
-	if (release?.images) {
-		const images = parseCaptionsSourcesEtc(release.images);
+	if (release?.images || release?.thumb) {
+		const images = parseCaptionsSourcesEtc(release.thumb + '$$' + release.images);
 		if (images?.length) {
-				return <ImageStrip style={{ padding: '2px', paddingRight: '0px' }} className="float-right outline outline-slate-400 w-40 mt-2 mr-2 flex flex-wrap flex-grow border gap-1 bg-slate-100 text-center justify-center drop-shadow-lg " images={images} width={200} />
+				return <ImageStrip style={{ padding: '2px', paddingRight: '0px' }} className="float-right outline outline-slate-400 w-52 ml-3 mt-2 mr-2 flex flex-wrap flex-grow border gap-1 bg-slate-100 text-center justify-center drop-shadow-lg " images={images} />
 		}
 	}
 }
@@ -262,7 +266,7 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	const labels = {
 		type: "Release Type",
 		onalbum: "Single From Album",
-		title: "Release Title",
+		//title: "Release Title",
 		dtreleased: "Released",
 		label: "Label",
 		catalog: "Catalogue",
@@ -275,12 +279,17 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		CDring: "CD Ring Text",
 	};
 
+	const doBuy = ({ buy }: { buy?: string }) => (buy) && (<>
+		<div className="album_purchase"> {linkExternal(buy, 'Purchase Now')} </div>
+		<span className="smalltext"> ( {parseDomain(buy)} ) </span>
+	</>)
+
 	const doIt = (label?: string) => {
 		if (label && typeof label !== 'string') return label;
 		return label?.split(',')?.map((l: string, key: number, mx: string[]) => <span key={key}>{expand(l, true)}{(key !== mx?.length - 1) && <>{', '}</>}</span>);
 	}
 	return (<div>
-		<Tag>Details</Tag>
+		<Tag><span className="text-2xl">{release.title}</span> {doBuy(release)}</Tag>
 		<blockquote>
 			{Object.keys(labels).map((label: string, key: number) => {
 				// @ts-ignore
@@ -297,15 +306,14 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 	return (
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading && songs) && (<>
-				<div key={key}><MakeAlbumBlurb {...release} inPage={true} /></div>
 				<ReleaseImages release={release} />
 				<ReleaseDetails release={release} />
-				<ReleaseDownloads release={release} />
+				<ReleaseNotes release={release} />
 				<ReleaseSongList songs={songs?.results} />
+				<ReleaseDownloads release={release} />
 				<ReleaseCredits credits={credits} />
 				<ReleaseLiner release={release} />
 				<ReleaseThanks release={release} />
-				<ReleaseNotes release={release} />
 				<ReleaseAudio release={release} />
 				<ReleasePatSez release={release} />
 				<ReleaseBishopSez release={release} />

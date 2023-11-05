@@ -66,8 +66,7 @@ const PressItem = ({ item }: { item: any }) => {
 	const ArticleThumbAndImages = ({ article }: any) => {
 		if (article?.thumb || article?.images) {
 			return <ImageStrip
-				className="drop-shadow-md imageStrip clear_float text-center"
-				width={200}
+				className="drop-shadow-md imageStrip clear_float text-center w-60"
 				images={parseCaptionsSourcesEtc(`${article?.thumb}$$${article?.images}`, true)}
 			/>
 		}

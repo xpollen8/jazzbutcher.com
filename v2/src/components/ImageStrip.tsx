@@ -5,7 +5,7 @@ import { parseImage } from '@/lib/utils';
 
 const ImageStrip = (props: any) => {
 	const images = props?.images;
-	const width = props?.width || 250;
+	const width = props?.width || 350;
 	const style = props?.style;
 	const className = props?.className;
 	return images && images?.length && <div style={style} className={className}>

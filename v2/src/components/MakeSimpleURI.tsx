@@ -11,13 +11,13 @@ const MakeSimpleURI = ({ uri='', text, aux, children }: {
 		<Link href={uri} style={{ display: 'inline-block', width: '100%' }}>
 			<div className="clickDiv hover:outline bg-white">
 				{text}
-				{(aux) && <>{' - '}<span className="date">{aux}</span></>}
+				{(aux) && <>{' - '}<span className="smalltext">{aux}</span></>}
 			</div>
 		</Link>
 		:
 		<div className="clickDiv bg-white" style={{ marginBottom: '20px' }}>
 			{text}
-			{' '}<span className="date">{aux}</span>
+			{' - '}<span className="smalltext">{aux}</span>
 		</div>
 	}
 	{(children) && <div className="p-2">{children}</div>}

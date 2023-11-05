@@ -35,9 +35,8 @@ const music = [
 	{ text: 'David J',
 		aux: 'Quell Tristesse',
 		children: <EmbedMedia data={{ mediaurl: "https://youtube.com/embed/u68NS-_qOOE" }} >
-		David J&apos;s tribute to Pat Fish aka The Jazz Butcher
-		7&quot; 45 +CDR released Jan 6, 2023
-		https://glassmodern.bandcamp.com/albu...
+		David J&apos;s tribute to Pat Fish.
+		7&quot;+CDR released Jan 6, 2023
 		Video by Barry Hale
 		</EmbedMedia>
 	},
@@ -57,7 +56,7 @@ const music = [
 	{ text: 'Knight Berman',
 		aux: 'Au Revoir et Merci, Monsieur Fish',
 		children: <EmbedMedia data={{ mediaurl: "https://youtube.com/embed/gUm7UTBDyYo" }} >
-		Gratitude and love to Pat Fish (The Jazz Butcher), 1957-2021 RIP. Sketch by KC c1991, song by The Marble Tea. Special thanks to all the Conspirators for knowing how it feels. If you&apos;d like to download this song, you may do so by tendering a small donation toward our local cat shelter. Details at https://www.playitforward.com/artists...
+		Gratitude and love to Pat Fish (The Jazz Butcher), 1957-2021 RIP. Sketch by KC c1991, song by The Marble Tea. Special thanks to all the Conspirators for knowing how it feels.
 		</EmbedMedia>
 		},
 	{ text: 'Stereo Embers The Podcast',

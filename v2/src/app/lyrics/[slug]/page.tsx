@@ -71,12 +71,9 @@ const FoundOn = (releases: any) =>
 		</blockquote>
 	</>
 
-const PatSays = (props: any) => {
-	const { pat_says } = props;
-	const comments = parseCaptionsSourcesEtc(pat_says) || [];
-	return <>
-		<Tag>Pat Says</Tag>
-		{comments?.map((c: any, key: number) => {
+const XSays = (comments: any[], title: string) => (comments?.length) && <>
+	<Tag>{title}</Tag>
+	{comments?.map((c: any, key: number) => {
 		const [ body, media_source, media_sourceurl, media_sourcedate ] = c;
 		return <blockquote key={key} className="annotation">
 			<div dangerouslySetInnerHTML={{ __html: body }} />
@@ -84,17 +81,11 @@ const PatSays = (props: any) => {
 			<Attribution g={removeHTML(media_source)} u={media_sourceurl} d={media_sourcedate} />
 		</blockquote>
 	})}
-	</>
-}
+</>
 
-const OthersSay = (props: any) => {
-	const { others_say } = props;
-	return (
-		<div key={props?.key}>
-			{others_say}
-		</div>
-	)
-}
+const PatSays = (props: any) => XSays(parseCaptionsSourcesEtc(props?.pat_says) || [], 'Pat Says');
+
+const OthersSay = (props: any) => XSays(parseCaptionsSourcesEtc(props?.others_say) || [], 'Others Say');
 
 const Tablature = (props: any) => {
 	const [ g, u, d ] = props?.tablature_credit?.split(';;');

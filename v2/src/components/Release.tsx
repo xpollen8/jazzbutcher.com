@@ -81,10 +81,12 @@ const ReleaseSongList = ({ songs }: { songs: any[] }) => {
 				if (item?.version === 'NULL') item.version = null;
 				return <div key={key}>
 					{(item?.media?.length) ?
+						<div style={{ marginLeft: '-7px' }}>
 						<EmbedMedia data={{ mediaurl: item.media, ...item, setnum: item?.type, autolink: true }} />
+						</div>
 					:
 					<>
-					{(!['set','NULL'].includes(item?.type)) && <>{item.type.replace('side', ': ')}</>}
+					{(!['set','NULL'].includes(item?.type)) && <>{item.type.replace('side', '')}{': '}</>}
 						<span>{item?.ordinal}.</span> <i>{AutoLinkSong(item?.title)}</i> {(item?.author) && <span className="date">({item?.author})</span>} {(item?.version) && <span className="date">({item?.version})</span>} {(item?.variant) && <span className="date">({item?.variant})</span>}
 					</>
 					}
@@ -212,13 +214,13 @@ const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		if (audio?.length) {
 			return (<>
 				<Tag>Audio</Tag>
+				<blockquote>
 				{audio?.map(([ file, song, credits ]: any, key: number) => {
 					const [ title, ordinal, version ] = song?.split('::');
 					//const people = credits?.split('^^') || [];
-					return (<>
-					<EmbedMedia key={key} data={{ song: title, mediaurl: file, parent: release.href, comment: release.title, version, ordinal }} />
-				</>)
+					return <EmbedMedia key={key} data={{ song: title, mediaurl: file, parent: release.href, comment: release.title, version, ordinal }} />
 				})}
+				</blockquote>
 			</>)
 		}
 	}

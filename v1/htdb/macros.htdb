@@ -23,7 +23,7 @@
 #live				endif
 #live				if (defined(parts[3]))
 						<center style="padding-bottom: 10px;">
-							${parseCredit(${parts[3]};;${parts[4]};;${parts[5]})}
+							${parseCredit(c=${parts[3]};;${parts[4]};;${parts[5]})}
 						</center>
 #live				endif
 					<p />
@@ -52,7 +52,7 @@
 #live				endif
 #live				if (defined(parts[2]))
 						<center style="padding-bottom: 10px;">
-							${parseCredit(${parts[2]};;${parts[3]};;${parts[4]})}
+							${parseCredit(c=${parts[2]};;${parts[3]};;${parts[4]})}
 						</center>
 #live				endif
 					<p />
@@ -3364,7 +3364,7 @@ ${define(_set, false)}
 
 		${parsePhoto(p=${pix_current}, width=${width})}
 #live	else
-		<br/>${parseCredit(${filterProgramArguments(${pix_current})})}
+		<br/>${parseCredit(c=${filterProgramArguments(${pix_current})})}
 #live	endif
 
 #live	endloop
@@ -3381,7 +3381,7 @@ ${define(_set, false)}
 #live	if (define(review_credits, ${p_${idx}[${p_${idx}->numResults}]}))
 #live	endif
 #live	if (getnum(y) = ${p_${idx}->numResults})
-	${parseCredit(${filterProgramArguments(${p_${idx}[${y}]})})}
+	${parseCredit(c=${filterProgramArguments(${p_${idx}[${y}]})})}
 #live	else
 	<br/>
 	<blockquote> ${truncAt(${EOD}, ${p_${idx}[${y}]})} </blockquote>
@@ -3438,7 +3438,7 @@ ${define(_set, false)}
 #define	doPoster(prefix)
 	<a href="${ts2PosterLink(${${prefix}->datetime})}"><img alt="[poster for XX]" src="${ts2Poster(ts=${${prefix}->datetime}, width=500)}"></a>
 #live	if (defined(${prefix}->postercredit))
-		${parseCredit(${${prefix}->postercredit})}
+		${parseCredit(c=${${prefix}->postercredit})}
 #live	endif
 
 #define	doPosterSQL(prefix)
@@ -3935,7 +3935,7 @@ ${define(_set, false)}
 	<div class="listItem">
 		${nx_current}
 		<br/>
-		${parseCredit(${filterProgramArguments(${nx_credits})})}
+		${parseCredit(c=${filterProgramArguments(${nx_credits})})}
 	</div>
 	${endTab}
 
@@ -3961,7 +3961,7 @@ ${define(_set, false)}
 	<div class="annotation">
 		${px_current}
 		<br/>
-		${parseCredit(${filterProgramArguments(${px_credits})})}
+		${parseCredit(c=${filterProgramArguments(${px_credits})})}
 	</div>
 	${endTab}
 #live	if (getval(UX))
@@ -4008,7 +4008,7 @@ ${define(_set, false)}
 					<blockquote>
 					${replace(${literalizeCommas(${newline2br(${_fb[${x}]->comments})})}, <BR>, <p>)}
 					</blockquote>
-					${parseCredit(${literalizeCommas(${_fb[${x}]->whence};;${_fb[${x}]->who})};;${_fb[${x}]->dtcreated})}
+					${parseCredit(c=${literalizeCommas(${_fb[${x}]->whence};;${_fb[${x}]->who})};;${_fb[${x}]->dtcreated})}
 				</div>
 #live			endloop
 #live		endif
@@ -4047,6 +4047,12 @@ ${define(_set, false)}
 #live	else
 			${${prefix}->title}
 #live	endif
+#live	if (defined(${prefix}->collaboration))
+	( collaboration : <b>${${prefix}->collaboration}</b>)
+#live	endif
+#live	if (defined(${prefix}->project))
+	( project : <b>${${prefix}->project}</b>)
+#live	endif
 		</span>
 #<span class="album_type">
 #		${ternary((getval(${prefix}->type) != album))}
@@ -4060,7 +4066,7 @@ ${define(_set, false)}
 				${${prefix}->blurb}
 #live		if (defined(${prefix}->credit))
 				<br />
-				${parseCredit(${${prefix}->credit})}
+				${parseCredit(c=${${prefix}->credit})}
 #live		endif
 			</blockquote>
 #live	endif

@@ -3,13 +3,14 @@
 import { ts2URI, parseCredit } from '@/lib/utils';
 import useAudio from '@/lib/useAudio';
 import EmbedMedia from '@/components/EmbedMedia';
-import LetterHeader from '@/components/LetterHeader';
+import Tag from '@/components/Tag';
 
 const exists = (str?: string) => (str && str?.length && str !== ';;;;') ? str : null;
 
 const AudioSection = ({ title, data }: any) => {
 	return (data && data?.length) && (<>
-		<LetterHeader title={title} />
+		<Tag>{title}</Tag>
+		<blockquote>
 		{data?.map((d: any, key: number) => {
 				const { author,
 					collection,
@@ -34,6 +35,7 @@ const AudioSection = ({ title, data }: any) => {
 				const parent = (!datetime.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
 				return <div key={key} className={(type === 'video') ? 'listItem' : ''}><EmbedMedia data={{ autolink: true, mediaurl: (!href.includes('.html') && exists(href)) || exists(mp3), mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? exists(collection) : '', venue, city, datetime, parent }} /></div>
 				})}
+		</blockquote>
 	</>)
 }
 

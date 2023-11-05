@@ -88,7 +88,7 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	'releases/project_vaguely_familiar': { parent: 'projects', title: 'Vaguely Familiar', summary: '1991', inParentDirectory: false },
 	'releases/collaboration_trampling_tokyo': { parent: 'projects', title: 'Alan Moore', summary: '2011 - Trampling Tokyo', inParentDirectory: false },
-	cambodia: { parent: 'projects', title: 'Cambodia', summary: '1991', inParentDirectory: true },
+	'releases/collaboration_cambodia': { parent: 'projects', title: 'Cambodia', summary: '1991', inParentDirectory: false },
 	black_eg: { parent: 'projects', title: 'The Black Eg', summary: "1991-1994, 1999", inParentDirectory: true },
 	the_undertakers: { parent: 'projects', title: 'The Undertakers', summary: '1995', inParentDirectory: true },
 	stranger_tractors: { parent: 'projects', title: 'Stranger Tractors', summary: '1995', inParentDirectory: true, body: "Curtis E. Johnson, Pat Fish (Mr. Nasty)" },

@@ -266,6 +266,8 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	const labels = {
 		type: "Release Type",
 		onalbum: "Single From Album",
+		collaboration: "Collaborateurs",
+		project: "Side Project",
 		//title: "Release Title",
 		dtreleased: "Released",
 		label: "Label",
@@ -289,7 +291,16 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		return label?.split(',')?.map((l: string, key: number, mx: string[]) => <span key={key}>{expand(l, true)}{(key !== mx?.length - 1) && <>{', '}</>}</span>);
 	}
 	return (<div>
-		<Tag><span className="text-2xl">{release.title}</span> {doBuy(release)}</Tag>
+		<Tag>
+			<span className="text-2xl"> {release.title} </span>
+			{(release.collaboration || release.project) &&
+				<span className="text-md">
+					{(release.collaboration) && <>(collaboration: {release.collaboration})</>}
+					{(release.project) && <>(project: {release.project})</>}
+				</span>
+			}
+			{doBuy(release)}
+		</Tag>
 		<blockquote>
 			{Object.keys(labels).map((label: string, key: number) => {
 				// @ts-ignore

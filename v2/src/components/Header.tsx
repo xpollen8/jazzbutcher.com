@@ -48,7 +48,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	pat: { parent: 'jbc', title: 'Pat' },
 //	media: { parent: 'jbc', title: 'Media' },
 
-	releases: { parent: 'jbc', title: 'Releases', summary: 'The records' },
+	releases: { parent: 'jbc', title: 'Releases', summary: 'The musical output' },
 //	'press?filters=type%3B%3Balbum': { parent: 'press', title: 'Album Reviews' },
 
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The words' },
@@ -86,7 +86,8 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	//interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
 
-	vaguely_familiar: { parent: 'projects', title: 'Vaguely Familiar', summary: '1991', inParentDirectory: true },
+	'releases/project_vaguely_familiar': { parent: 'projects', title: 'Vaguely Familiar', summary: '1991', inParentDirectory: false },
+	'releases/collaboration_trampling_tokyo': { parent: 'projects', title: 'Alan Moore', summary: '2011 - Trampling Tokyo', inParentDirectory: false },
 	cambodia: { parent: 'projects', title: 'Cambodia', summary: '1991', inParentDirectory: true },
 	black_eg: { parent: 'projects', title: 'The Black Eg', summary: "1991-1994, 1999", inParentDirectory: true },
 	the_undertakers: { parent: 'projects', title: 'The Undertakers', summary: '1995', inParentDirectory: true },
@@ -94,7 +95,6 @@ const sections : { [key: string]: BreadCrumb } = {
 	'releases/va_canyoutalktothedude_2': { parent: 'projects', title: "Four One & Only's", summary: '1996 - U.F.O. Man', inParentDirectory: false, },
 	sumosonic: { parent: 'projects', title: 'Sumosonic', summary: "1996-1998", inParentDirectory: true },
 	wilson: { parent: 'projects', title: 'Wilson', summary: "2001-2005, 2012", inParentDirectory: true },
-	'releases/collaboration_trampling_tokyo': { parent: 'projects', title: 'Alan Moore', summary: '2011 - Trampling Tokyo', inParentDirectory: false },
 	drones_club: { parent: 'projects', title: 'Drones Club', summary: '2014-2021', inParentDirectory: true },
 	prime_evils: { parent: 'projects', title: 'Prime Evils', inParentDirectory: true },
 	masters_of_budvar: { parent: 'projects', title: 'The Masters of Budvar', inParentDirectory: true },
@@ -130,7 +130,7 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	first_gig: { parent: 'prejbc', title: "Pat's first gig", summary: "1974", inParentDirectory: true, body: "Pat Fish, Chris Zero, Rolo, others" },
 	nightshift: { parent: 'prejbc', title: 'Nightshift', summary: "1976-1978", inParentDirectory: true, body: "Pat Fish, John Silver, Colin Henney, Paul Quarry, Chris Clark, Ros Caston, Jon Stephenson" },
-	the_institution: { parent: 'prejbc', title: 'The Institution', summary: "1978-1980", inParentDirectory: true, body: "Rolo, Rob Wilford, Max Eider, Pat Fish, Johnathan Stephenson, John Duval" },
+	the_institution: { parent: 'prejbc', title: 'The Institution', summary: "1978-1980", inParentDirectory: true, body: "Rolo, Rob Wilford, Max Eider, Pat Fish, Johnathan Stephenson, John Duvall" },
 	tonix: { parent: 'prejbc', title: 'Sonic Tonix', summary: "1980-1981 (AKA 'The Tonix')", inParentDirectory: true, body: "John Silver, Dave Goldie, Simon Mawby, Owen Jones, Pat Fish, Pete Millson" },
 	wow_federation: { parent: 'prejbc', title: 'Wow Federation', summary: "1981", inParentDirectory: true, body: "Millree Hughes, Brian Warner, Ian Warner, Nick Horton, Andy Love, James Rogers, Carl Fysh, Vicky Richardson, Boz Warnock, Andy Sizer, Liza Widdowson, Deborah Keeping, Paul Conneally, Pat Fish, Max Eider, Will Buchanan, Mark Sinker (https://rateyourmusic.com/artist/wow-federation)" },
 	jazz_insects: { parent: 'prejbc', title: 'Jazz Insects', summary: "1982", inParentDirectory: true, body: "Matt Black, Mark Sinker, Max Eider, Pat Fish" },

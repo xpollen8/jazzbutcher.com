@@ -175,7 +175,7 @@ const GigDetails = ({ gig, joins }: any) => {
 		{(gig?.extra?.includes('interview')) ? 'Interview' : 'Live Performance'} - {gig?.venue} {gig?.city} {gig?.country}
 		</Tag>
 		<blockquote className="listItem" style={{ paddingLeft: '20px' }}>
-			<label>Date:</label> {dateDiff(gig?.datetime)}<br />
+			<label>Date:</label> {dateDiff(gig?.datetime, '')}<br />
 			{(gig.ticketweb) && <><label>Tickets:</label> <Link href={gig.ticketweb}>{parseDomain(gig.ticketweb)}</Link><br /></>}
 			<label>Venue:</label> {gig.venue} {(gig.eventweb) && <Link href={gig.eventweb}>(Website)</Link>} <br />
 			{(gig.city) && <><label>Location:</label> {gig?.address} {gig?.city} {gig?.country} {gig?.postalcode}<br /></>}

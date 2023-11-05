@@ -630,7 +630,7 @@ export const saints_prayer = linkSong({ href: "/lyrics/saints_prayer.html", titl
 //
 //	Highest In The Land
 //
-export const highest = linkAlbum({ href: "/releases/highest_in_the_land.html", title: "Highest in the Land" });
+export const highest = linkAlbum({ href: "/releases/highest_in_the_land.html", title: "The Highest in the Land" });
 export const melanie = linkSong({ title: "Melanie Hargreaves' Father's Jaguar", href: "/lyrics/melanie_hargreave.html" });
 export const time = linkSong({ href: "/lyrics/time.html", title: "Time" });
 export const madness = linkSong({ title: "Sea Madness", href: "/lyrics/sea_madness.html" });

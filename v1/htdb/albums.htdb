@@ -4162,7 +4162,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=highest, type=Aside, ordinal=4, song="Never Give Up")}
 	${addAlbumPerf(release=highest, type=Bside, ordinal=1, song="Amalfi Coast May 1963")}
 	${addAlbumPerf(release=highest, type=Bside, ordinal=2, song="Running On Fumes")}
-	${addAlbumPerf(release=highest, type=Bside, ordinal=3, song="The Highest In The Land")}
+	${addAlbumPerf(release=highest, type=Bside, ordinal=3, song="The Highest in the Land")}
 	${addAlbumPerf(release=highest, type=Bside, ordinal=4, song="Sebastian's Medication")}
 	${addAlbumPerf(release=highest, type=Bside, ordinal=5, song="Goodnight Sweetheart")}
 

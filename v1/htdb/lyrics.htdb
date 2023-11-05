@@ -8172,9 +8172,8 @@ I haven't got a mind at all.
 	<br/>Waiting...
 
 	)},
-		onlist=
-		ill
-	, patsez=${literalizeCommas(
+	onlist=ill,
+	patsez=${literalizeCommas(
 		The etymology of "cake"
 		<br/>Le Gateau (French - Cake)
 		<br/>El Gato (Spanish) - Cat...  go figure
@@ -8182,11 +8181,12 @@ I haven't got a mind at all.
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br/><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
 		A surprisingly tranquil song about a rottweiller.
-		;;/=Creation Promo Summary;;/press/95promo_illuminate.html#sumo;;
-		)},
-		others=${literalizeCommas(
+		;;Creation Promo Summary;;/press/95promo_illuminate.html#sumo;;
+	)},
+	others=${literalizeCommas(
 		"No, really Sumo is a dog (rottweiler, I think) owned by a close friend of Pats."
-		)};;M.G.J.Jenkins@exeter.ac.uk;;;;1995-11-01 10:07:31
+		;;M.G.J.Jenkins@exeter.ac.uk;;;;1995-11-01 10:07:31
+	)}
 	)}
 #live	endif
 

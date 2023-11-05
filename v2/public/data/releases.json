@@ -1,6 +1,6 @@
 {
 	"noun": "albums",
-	"numResults": 100,
+	"numResults": 101,
 	"results": [
 	{
 		"type": "album",
@@ -6394,6 +6394,70 @@
 		"bishopsez": 	"",
 
 		"audio": "/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_AMatterOfTime.mp3;;A Matter of Time::1::A 13 Frightenened Girls number;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Bombed.mp3;;Bombed::2::by Richard, which was featured on the Autumn 93 jbc European tour;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_PedbysGrace.mp3;;Pedby's Grace::3::by me and Sumishta;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_ColourWaltz.mp3;;Colour Waltz::4::by me and  Richard;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Elwood.mp3;;Elwood::5::by Sumishta and me;;$$",
+
+		"downloads": 	"",
+
+		"video": 	"",
+
+		"collaboration": 	""
+
+	} ,
+	{
+		"type": "collaboration,demo",
+
+		"href": "/albums/collaboration_cambodia.html",
+
+		"title": "We Are the Traffic",
+
+		"thumb": 	"",
+
+		"blurb": "Demo tracks from the August 1991 Pat Fish and Cole Coonce collaboration. Written at the Nitronic Research Wind Tunnels, Los Angeles, California.",
+
+		"dtreleased": "1991-08",
+
+		"buy": 	"",
+
+		"project": "Cambodia",
+
+		"lookup": "collaboration_cambodia",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit": 	"",
+
+		"contribution": 	"",
+
+		"dtrecorded": 	"",
+
+		"studio": 	"",
+
+		"onalbum": 	"",
+
+		"liner": 	"",
+
+		"Agroove": 	"",
+
+		"Bgroove": 	"",
+
+		"thanks": 	"",
+
+		"images": 	"",
+
+		"notes": 	"",
+
+		"patsez": "This version was recorded by Cole Coonce (Braindead Sound Machine) and myself at the Nitronic Research Wind Tunnels, Silverlake, California in August 1991 when I was hiding out in L.A. <p /> We had just been to see the L.A. Dodgers, who at the time had Darryl Strawberry on their team. Darryl had fled New York after cynical home fans had started chanting 'Oh Daaaaaryl...' at him when he was off form (most of the time, as it goes). <p /> Imagine our delight when the L.A. crowd started doing exactly the same thing! In addition, Darryl had recently become a follower of The Lord, a piety that did not seem to do anything very much for his game. Hence the 'put that Bible back!' line. <p /> The original version of 'Traffic' was credited to 'Cambodia', which was also the working name for Sumosonic throughout much of 1996. You can probably guess why we never ended up going public with that name.",
+
+		"CDring": 	"",
+
+		"bishopsez": 	"",
+
+		"audio": "https://v1.jazzbutcher.com/audio/Cambodia/199108_Cambodia_WeAreTheTraffic_No1.mp3;;We Are the Traffic::1::;;$$https://v1.jazzbutcher.com/audio/Cambodia/199108_Cambodia_WeAreTheTraffic_No1.mp3;;We Are the Traffic::2::;;",
 
 		"downloads": 	"",
 

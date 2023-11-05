@@ -1,6 +1,6 @@
 {
 	"noun": "albums",
-	"numResults": 99,
+	"numResults": 100,
 	"results": [
 	{
 		"type": "album",
@@ -4777,7 +4777,7 @@
 
 	} ,
 	{
-		"type": "various",
+		"type": "collaboration,various",
 
 		"href": "/albums/va_canyoutalktothedude_2.html",
 
@@ -6134,6 +6134,68 @@
 		"bishopsez": 	"",
 
 		"audio": "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_4_96.mp3;;96::4;;Pat Fish::instruments and machines$$https://s3.amazonaws.com/assets.jazzbutcher.com/projects/1993_MichelBulteau_Archidoxe/1993_MichelBulteau_Archidoxe_6_LaTourDeBabylone.mp3;;La Tour de Babylone::6;;Pat Fish::instruments and machines$$",
+
+		"downloads": 	"",
+
+		"video": 	""
+
+	} ,
+	{
+		"type": "collaboration",
+
+		"href": "/albums/project_vaguely_familiar.html",
+
+		"title": "'The First Three Thousand Years'",
+
+		"thumb": "/images/20220715_WonderBat9_Photoalbum_Vegette;;wonderbat9;;https://youtube.com/watch?v=a6SzTBA7WG8;;2022-07-14;;The Vegette",
+
+		"blurb": "Pat Fish, Richard Formby, Sumishta Brahm",
+
+		"dtreleased": "1991-07",
+
+		"buy": 	"",
+
+		"project": "The Vaguely Familiar",
+
+		"lookup": "project_vaguely_familiar",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": 	"",
+
+		"country": 	"",
+
+		"credit": 	"",
+
+		"contribution": 	"",
+
+		"dtrecorded": 	"",
+
+		"studio": 	"",
+
+		"onalbum": 	"",
+
+		"liner": 	"",
+
+		"Agroove": 	"",
+
+		"Bgroove": 	"",
+
+		"thanks": 	"",
+
+		"images": "https://v1.jazzbutcher.com/images/199107/199107_VaguelyFamiliar_Master1$$https://v1.jazzbutcher.com/images/199107/199107_VaguelyFamiliar_Master2;;Richard Formby;;;;2021-12-10",
+
+		"notes": 	"",
+
+		"patsez": "The Vaguely Familiar was a July 1991 project, put together at Richard Formby&amp;apos;s Woodhouse Studio in Leeds. The line-up was myself, Richard and Sumishta Brahm (13 Frightened Girls). <p /> Basically, I did the drum programming, bass and large electric guitars (note how I &amp;quot;invented&amp;quot; Slowdive on Pedby&amp;apos;s Grace), Richard did the mad ethnic instruments and a bit of bass and guitar, Sumishta sang, played the lap steel guitar and did a bit of electric 12-string. Any glockenspiels are probably down to me. <p /> Richard and I went on to try and rub the project up into a finished album with a big session at Woodhouse in November 92 (during which Richard also got into glockenspiel action, as I recall), but although we committed a further ten or so backing tracks (including the truly awesome &amp;quot;My Milkfloat&amp;quot; featuring a casio playing &amp;quot;My Desert&amp;quot; to itself under a barrage of early sixties electric milkfloat noises, which Richard insisted sounded just like Jimi Hendrix), we never finished them off. I still have the instrumental roughs at home. Richard and I often talked of finishing it all off, but neither of us likes the phone very much and it never got done. <p /> I have spotted bits and pieces from some of those aborted tracks showing up on Richard&amp;apos;s Triumph 2000 LP. <p /> According to my cassette, we recorded five numbers",
+
+		"CDring": 	"",
+
+		"bishopsez": 	"",
+
+		"audio": "/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_AMatterOfTime.mp3;;A Matter of Time::1::A 13 Frightenened Girls number;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Bombed.mp3;;Bombed::2::by Richard, which was featured on the Autumn 93 jbc European tour;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_PedbysGrace.mp3;;Pedby's Grace::3::by me and Sumishta;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_ColourWaltz.mp3;;Colour Waltz::4::by me and  Richard;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Elwood.mp3;;Elwood::5::by Sumishta and me;;$$",
 
 		"downloads": 	"",
 

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import useReleases from '@/lib/useReleases';
 import { type ReleaseType } from '@/components/Release';
 import { parseImage, truncAt, parseYear } from '@/lib/utils';
+import { expand } from '@/lib/defines';
 import InfoTag from '@/components/InfoTag';
 
 import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
@@ -15,6 +16,7 @@ const filterOptions = [
 	{ field: "type:single", display: "Singles" },
 	{ field: "type:compilation", display: "Compilations" },
 	{ field: "type:collaboration", display: "Collaborations" },
+	{ field: "type:project", display: "Projects" },
 	{ field: "type:various", display: "Various" },
 	{ field: "type:EP", display: "EPs" },
 	{ field: "type:demo", display: "Demos" },
@@ -50,6 +52,8 @@ const	FilterReleases = ({ project, filters }: { project?: string, filters?: any 
 								{(item?.href) && <Link key={key} href={item?.href}><Image src={thumb} width={250} height={250} alt="cover" /></Link>}
 								{(!item?.href) && <Image src={thumb} width={250} height={250} alt="cover" />}
 								<div className="-mt-5 mx-2 p-1 font-bold text-center">
+									{(item.project) && <><b>{expand(item.project)}</b><hr /></>}
+									{(item.collaboration) && <><b>{item.collaboration}</b><hr /></>}
 									{item.title}
 								</div>
 							</div>

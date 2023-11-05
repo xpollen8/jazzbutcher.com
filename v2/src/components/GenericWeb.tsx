@@ -25,18 +25,15 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 					}
 				} else {
 					if (u) {
-						if (u.trim().startsWith('http')) {
-							return linkExternal(u, parseDomain(u))
-						} else {
-							return linkInternal(u, cleanG)
-						}
+						if (cleanG?.length) return linkInternal(u, cleanG);
+						return linkExternal(u, parseDomain(u))
 					} else {
 						return cleanGX;
 					}
 				}
 			})()}
 			{(p) && <>{' - '}({p})</>}
-			{(parseDate(d)) && dateDiff(d)}
+			{(parseDate(d)) && dateDiff(d, ' ')}
 		</span>
 	)
 }

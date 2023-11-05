@@ -9,7 +9,7 @@ import Tag from '@/components/Tag';
 export const PressSummary = (r: any, key: number) => {
 	const [ thumb ] = r?.thumb.split(';;') || '';
 	return (<Link key={key} href={r.url}><div className="flex flex-grow gap-5 border bg-slate-50">
-		<div className="w-full">
+		<div className="w-full p-2">
 			{(r.publication) && <b>{r.publication}</b>} {(r.location) && <>({r.location})</>}
 			{(r.title || r.headline || r.subhead)  && <br/>}
 			{(r.title) && <i>{r.title}</i>} {(r.headline) && <i>{r.headline}</i>}

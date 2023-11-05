@@ -9,6 +9,7 @@
 .date {
 	font-size: .9em;
 	color: #777;
+	white-space:nowrap;
 }
 
 label {

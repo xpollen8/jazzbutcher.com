@@ -75,14 +75,14 @@ const AudioPage = () => {
 
 		<Tag>Some podcasts</Tag>
 		<blockquote>
-		{podcasts.map((p: any, key: number) => <div className="listItem"><EmbedMedia key={key} data={...p} ><blockquote><i>{p?.children}</i><br /><Source g={p.source} /><br />{dateDiff(p.datetime, '')}</blockquote></EmbedMedia></div>)}
+		{podcasts.map((p: any, key: number) => <div key={key} className="listItem"><EmbedMedia data={...p} ><blockquote><i>{p?.children}</i><br /><Source g={p.source} /><br />{dateDiff(p.datetime, '')}</blockquote></EmbedMedia></div>)}
 		</blockquote>
 
 		<blockquote>
 			<blockquote className="listItem">
 				<iframe className="w-full" src='https://podomatic.com/embed/html5/episode/6738834' height={208} width={504} frameBorder={0} marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen></iframe>
 				<blockquote>
-					<i>In this episode, John cuts deep into the Jazz Butcher's 1984 album, A Scandal In Bohemia. Featuring interviews with band members, Pat Fish, Max Eider, Owen Jones, and David J.</i>
+					<i>In this episode, John cuts deep into the Jazz Butcher&apos;s 1984 album, A Scandal In Bohemia. Featuring interviews with band members, Pat Fish, Max Eider, Owen Jones, and David J.</i>
 					<br />{dateDiff('2013-11-06', '')}
 				</blockquote>
 			</blockquote>

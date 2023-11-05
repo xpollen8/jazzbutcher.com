@@ -6339,11 +6339,11 @@
 
 	} ,
 	{
-		"type": "project",
+		"type": "project,demo",
 
 		"href": "/albums/project_vaguely_familiar.html",
 
-		"title": "'The First Three Thousand Years'",
+		"title": "The First Three Thousand Years",
 
 		"thumb": "/images/20220715_WonderBat9_Photoalbum_Vegette;;The Vegette;;wonderbat9;;https://youtube.com/watch?v=a6SzTBA7WG8;;2022-07-14",
 

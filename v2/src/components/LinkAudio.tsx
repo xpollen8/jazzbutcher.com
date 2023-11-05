@@ -3,7 +3,7 @@
 import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { truncAt, autoLink, linkExternal } from '@/lib/utils';
+import { parseImage, truncAt, autoLink, linkExternal } from '@/lib/utils';
 import { AutoLinkSong } from '@/lib/defines';
 import useRelease from '@/lib/useRelease';
 
@@ -29,6 +29,8 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 	const rel = useRelease(lookup);
 	const release = rel && rel?.data && rel?.data?.results && rel?.data?.results[0];
 	title = title?.replace(/\\/g, '');	// get rid of HTDB backslashes
+	const { thumb, image } = parseImage(release?.thumb);
+
 	return <Suspense fallback=<>Loading...</> >
 		<div className="audioPlayer listItem">
 			<span className="audio_title">
@@ -56,9 +58,9 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 			{(artist) && <b>{artist}</b>} {(author && (typeof author === 'string') && !author.includes('NULL')) && <span className="smalltext pl-3"> ({author}) </span>} {(version) && <span className="smalltext pl-3"> ({version}) </span>}
 			{(comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: comment }} /></i>)</span>}
 			<div className="flex">
-				{(lookup && !rel?.isLoading && release && release?.thumb) && <>
+				{(lookup && !rel?.isLoading && thumb) && <>
 					<Link href={release?.href}>
-						<Image width={60} height={60} alt={lookup} src={`https://v1.jazzbutcher.com${truncAt(';;', release?.thumb)}_250.jpg`} />
+						<Image width={60} height={60} alt={lookup} src={thumb} />
 					</Link>
 				</> }
 				<div className="w-full">
@@ -76,7 +78,7 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 				}
 				</div>
 			</div>
-			{(release?.thumb) && <div className="smalltext">Taken from: &quot;{release?.title}&quot; ({release?.type})</div>}
+			{(thumb) && <div className="smalltext">Taken from: &quot;{release?.title}&quot; ({release?.type})</div>}
 			{children}
 		</div>
 	</Suspense>

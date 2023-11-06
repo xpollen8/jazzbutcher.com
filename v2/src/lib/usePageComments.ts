@@ -19,6 +19,10 @@ const mapLetterURLIFeedbackLookup = (uri: string): string => {
 	return ret;
 }
 
+export const feedbackURI2Pathname = (pathname: string) => {
+	return pathname?.replace('site', '');
+}
+
 const pathname2feedbackURI = (pathname: string) => {
 	const fullpath = (uri: string) => {
 		const unchanged = [

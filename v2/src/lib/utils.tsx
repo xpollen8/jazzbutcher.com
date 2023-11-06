@@ -69,6 +69,7 @@ export const parseDate = (str?: string) => {
 			return matched;
 		}).find(f => f && f[1]);
 		if (xx) {
+			if (xx[0] === '0000-00-00 00:00:00') return;
 			const [ orig, y, m, d, hh, mm, ss ] = xx;
 			const [ iy, im, id, ihh, imm, iss ] = [y, m, d, hh, mm, ss ].map(f => (f && parseInt(f || '', 10)) || 0);
 			const anyKnown = (iy || im || id);
@@ -76,6 +77,7 @@ export const parseDate = (str?: string) => {
 			const unknownMonth = anyKnown && (!im) ? 'unknownMonth' : '';
 			const unknownDay = anyKnown && (!id) ? 'unknownDay' : '';
 			//if (!iy) return;
+			console.log("X", { xx, y, m, d, hh, mm, ss, iy, im, id, ihh, imm, iss });
 			return [orig,iy,im || 1,id || 1,ihh,imm,iss, unknownYear, unknownMonth, unknownDay];
 		}
 		return;

@@ -135,7 +135,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				return data;
 			case 'recent_releases': {
 				const releases = await apiData('releases');
-				releases.results = releases?.results?.filter((r: any) => r?.dtadded && moment(r.dtadded).isAfter(moment().subtract('months', 6)));
+				releases.results = releases?.results?.filter((r: any) => r?.dtadded && moment(r.dtadded).isAfter(moment().subtract(6, 'months'))).sort((a: any, b: any) => moment(b.dtadded) - moment(a.dtadded));
 				releases.numResults = releases?.results?.length;
 				return releases;
 			}

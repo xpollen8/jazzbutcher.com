@@ -64,17 +64,17 @@ const Home = (): React.ReactNode =>
 						<Memorial home={true} />
 					</Link>
 				</div>
+				<RecentUpdates />
 				<div className="max-w-lg grow">
 					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
 					<HomeBooks />
-					<RecentUpdates />
 					<OnThisDay />
 				</div>
 			</div>
-				<div className="max-w-lg grow">
-					<Tag style={{ marginBottom: '10px' }}>Recent Releases</Tag>
-					<HomeReleases />
-				</div>
+			<div className="max-w-lg grow">
+				<Tag style={{ marginBottom: '10px' }}>Recent Releases</Tag>
+				<HomeReleases />
+			</div>
 		</div>
 	</main>
 </>

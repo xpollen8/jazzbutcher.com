@@ -394,7 +394,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 			if (!months[month]) months[month] = [];
 			months[month].push(g);
 		});
-		return <details key={year} open={Object.keys(years)?.length === 1}>
+		return <details key={year} open={gigs?.length === 1 || Object.keys(years)?.length === 1}>
 			<summary className="flex hover:outline">
 				<GigGraph scaling={scaling} year={year} gigs={gigs} queryString={queryString} />
 			</summary>

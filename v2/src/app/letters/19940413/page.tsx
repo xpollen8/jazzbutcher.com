@@ -52,7 +52,7 @@ const Letter = () =>  {
 				</center>
 			</div>
 			</div>
-			<PhotoSet title='The Letter' photos={letter} />
+			<PhotoSet title='The Letter' photos={letter} pdf='/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore.pdf' description="600 DPI scan of Pat's letter to David Whittemore, penned 1994-03-28, received 1994-04-13" credit='David Whittemore' credit_url='https://davidwhittemore.com' credit_date='2023-11-06' />
 		</main>
 		<Footer />
 	</>)

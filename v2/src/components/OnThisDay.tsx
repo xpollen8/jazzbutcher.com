@@ -15,7 +15,7 @@ const OnThisDay = () => {
 		<Tag>On This Day in JBC History</Tag>
 		{gigs.map((g: any, key: number) => {
 			return <div key={key} className="listItem">
-				<Link href={ts2URI(g.datetime)}><b>{g.venue}</b> {g.city}, {g.country}</Link>
+				<Link href={`/gigs/${ts2URI(g.datetime)}`}><b>{g.venue}</b> {g.city}, {g.country}</Link>
 			</div>
 		})}
 	</Suspense>)

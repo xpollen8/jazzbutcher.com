@@ -118,7 +118,15 @@ ${define(lastPer, ${ap[${api}]->performer})}
 
 #define	mkAlbumHeader(lookup, body)
 #live	if (define(prefix, ${lookupAlbumBy(l=${lookup}, f=lookup)}))
+#live	if (defined(${prefix}->project))
+#live		if (defined(${${prefix}->project}))
+		${mkHeader(section=albums, title=${${${prefix}->project}}: ${${prefix}->title}))}
+#live		else
+		${mkHeader(section=albums, title=${${prefix}->project}: ${${prefix}->title}))}
+#live		endif
+#live	else
 	${mkHeader(section=albums, title=${${prefix}->title}))}
+#live	endif
 #live	if (getval(${prefix}->buy))
 	${tag_beg}
 	Buy This Record

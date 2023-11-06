@@ -5,9 +5,9 @@ import { dateDiff } from '@/lib/utils';
 import newsItems from '@/../public/data/news.json';
 
 type NewsItemType = {
-	subject: string
-	body: string
-	dt: string
+	subject?: string
+	body?: string
+	dt?: string
 	link?: string
 	category?: string
 };
@@ -22,18 +22,24 @@ const recentNews = [
 	},
 ];
 
-recentNews.forEach((r: NewsItemType) => newsItems.results.push(r));
-newsItems.results = newsItems.results.filter((n: NewsItemType) => n.dt.length).map((n: NewsItemType) => {
+// get rid of bad data
+newsItems.results = newsItems.results.filter((n: any) => n.dt && n.dt.length);
+// add new data
+recentNews.forEach((r: any) => newsItems.results.push(r));
+// get dates in correct format
+// and sort by date descending
+newsItems.results = newsItems.results.map((n: any) => {
 		const dt = n.dt.includes('-') ? moment(n.dt, 'YYYY-MM-DD').valueOf() : parseInt(n.dt, 10) * 1000;
 		return { ...n, dt: moment(dt).format('YYYY-MM-DD') }
+// @ts-ignore
 }).sort((a: NewsItemType, b: NewsItemType) => moment(b.dt) - moment(a.dt));
 
 const News = () => {
 return <>
 	{newsItems?.results.map((n: NewsItemType, key: number) => {
 		return <div key={key}>
-			<MakeSimpleURI uri={n?.link} text={n.subject} aux={dateDiff(n.dt)}>
-				<div dangerouslySetInnerHTML={{ __html: n.body }} />
+			<MakeSimpleURI uri={n?.link} text={n.subject || ''} aux={dateDiff(n.dt)}>
+				<div dangerouslySetInnerHTML={{ __html: n.body || '' }} />
 			</MakeSimpleURI>
 		</div>
 	})}

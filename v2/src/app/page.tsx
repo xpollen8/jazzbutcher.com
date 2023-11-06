@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import ReleaseBlurb from '@/components/ReleaseBlurb';
 import FeaturedItem from '@/components/FeaturedItem';
-import DayInHistory from '@/components/DayInHistory';
+import OnThisDay from '@/components/OnThisDay';
 import RecentUpdates from '@/components/RecentUpdates';
 import Memorial from '@/components/Memorial';
 import Tag from '@/components/Tag';
@@ -68,7 +68,7 @@ const Home = (): React.ReactNode =>
 					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
 					<HomeBooks />
 					<RecentUpdates />
-					<DayInHistory />
+					<OnThisDay />
 				</div>
 			</div>
 				<div className="max-w-lg grow">

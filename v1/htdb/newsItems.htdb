@@ -318,7 +318,7 @@
 	We have finally found somebody who is prepared to do some luxurious, lathe-cut vinyl copies of "Gentleman Adventurer". I shall keep you
 	up to date with our progress on this, of course.
 	<p>
-	Also on the horizon, it looks as though I might well be going to play solo in Japan, supporting the Monochrome Set in Tokyo October ${linkInternal(http://jazzbutcher.com${jbc_gigs}/2014/Oct24_1800.html, 24th)} and ${linkInternal(http://jazzbutcher.com${jbc_gigs}/2014/Oct25_1800.html, 25th)} .
+	Also on the horizon, it looks as though I might well be going to play solo in Japan, supporting the Monochrome Set in Tokyo October ${linkInternal(https://jazzbutcher.com${jbc_gigs}/2014/Oct24_1800.html, 24th)} and ${linkInternal(https://jazzbutcher.com${jbc_gigs}/2014/Oct25_1800.html, 25th)} .
 	(Eider won't be joining me on this trip.)
 	<p>
 	I'm also in talks with Alan McGee about a solo acoustic show at his new venue The Tabernacle, which is a beautifully refurbished chapel in a village in
@@ -498,7 +498,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 #define	newsItem[49]->subject Besancon, France - 1986-03-04
 #define	newsItem[49]->category	media
 #define	newsItem[49]->body
-	${linkAudio(title=The Entire Show, mp3=http://jazzbutcher.com/audio/19860304/19860304_JazzButcher_Besacon_EQd.mp3, comment=Besancon\, France, parent=/gigs/1986/Mar4, datetime=1986-03-04, credit=Dom Genot;;https://soundcloud.com/lonesomedog;;2017-03-09)}
+	${linkAudio(title=The Entire Show, mp3=https://jazzbutcher.com/audio/19860304/19860304_JazzButcher_Besacon_EQd.mp3, comment=Besancon\, France, parent=/gigs/1986/Mar4, datetime=1986-03-04, credit=Dom Genot;;https://soundcloud.com/lonesomedog;;2017-03-09)}
 	${g_credit(g=Dom Genot, u=https://soundcloud.com/lonesomedog)}
 
 #define newsItem[50]->dt ${date(U, 2017-03-11)}
@@ -591,7 +591,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 	</blockquote>
 	<b>${linkInternal(${jbc_gigs}/1989/Nov18.html, Madison\, Wisconsin - 1989-11-18)}</b>
 	<blockquote>
-	${linkAudio(title=The Entire Show, mp3=http://jazzbutcher.com/audio/19891118/19891118_JazzButcher_Madison_EQd.mp3)}
+	${linkAudio(title=The Entire Show, mp3=https://jazzbutcher.com/audio/19891118/19891118_JazzButcher_Madison_EQd.mp3)}
 	</blockquote>
 #define	newsItem[54]->dt	${date(U, 2017-04-02)}
 
@@ -631,7 +631,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 #define	newsItem[58]->body
 	<b>${linkInternal(${jbc_gigs}/1991/Nov14.html, Arena\, Vienna - 1991-11-14)}</b>
 	<blockquote>
-	${linkAudio(href=${jbc_gigs}/1991/Nov14.html, mp3=http://jazzbutcher.com/audio/19911114/19911114_JazzButcher_Vienna_Gen1_Flat.mp3)}
+	${linkAudio(href=${jbc_gigs}/1991/Nov14.html, mp3=https://jazzbutcher.com/audio/19911114/19911114_JazzButcher_Vienna_Gen1_Flat.mp3)}
 	</blockquote>
 	Also, appearances on many "Various Artists" releases ${linkInternal(${jbc_albums}, are now better documented.)}
 #define	newsItem[58]->dt	${date(U, 2017-07-23)}
@@ -646,7 +646,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 	${linkInternal(${jbc_press}/20081120_caughtinthecarousel.html, Pat Fish (2007) - VERY long!)}<br/>
 	${linkInternal(${jbc_press}/20080219_mickmercer_max_eider.html, Max Eider (2008))}<br/>
 	<blockquote>
-	${linkAudio(title=Christmas With The Pygmies, mp3=http://jazzbutcher.com/audio/JazzButcher_ChristmasWithThePygmies.mp3)}
+	${linkAudio(title=Christmas With The Pygmies, mp3=https://jazzbutcher.com/audio/JazzButcher_ChristmasWithThePygmies.mp3)}
 	</blockquote>
 #define	newsItem[59]->dt	${date(U, 2017-08-01)}
 
@@ -721,19 +721,19 @@ briefly on a variety of topics. Click the "Etc" tab over in ${linkInternal(${jbc
 #define	newsItem[64]->link
 #define	newsItem[64]->body
 	<b>${linkInternal(${jbc_gigs}/1993/Feb15.html, French National Radio\, Paris - 1993-02-15)}</b>
-	${linkAudio(mp3=http://jazzbutcher.com/audio/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3, comment=In French\, 4 songs performed)}
+	${linkAudio(mp3=https://jazzbutcher.com/audio/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3, comment=In French\, 4 songs performed)}
 
 	<b>${linkInternal(${jbc_gigs}/1993/Oct28.html, The Forum\, London - 1993-10-28)}</b>
-	${linkAudio(mp3=http://jazzbutcher.com/audio/19931028/19931028_JazzButcher_London_Gen0_Flat.mp3, comment=Opening for John Cale. w/Alex Green and Paul Mulreany)}
+	${linkAudio(mp3=https://jazzbutcher.com/audio/19931028/19931028_JazzButcher_London_Gen0_Flat.mp3, comment=Opening for John Cale. w/Alex Green and Paul Mulreany)}
 
 	<b>${linkInternal(${jbc_gigs}/1985/Mar24.html, Kolingsborg\, Stockholm\, Sweden - 1985-03-24)}</b>
-	${linkAudio(mp3=http://jazzbutcher.com/audio/19850324/19850324_JazzButcher_Stockholm_Gen2_Flat.mp3)}
+	${linkAudio(mp3=https://jazzbutcher.com/audio/19850324/19850324_JazzButcher_Stockholm_Gen2_Flat.mp3)}
 
 #	<b>${linkInternal(${jbc_gigs}/1987/Feb3.html, Caveau Des Dominicains\, Nancy\, France - 1987-02-03)}</b>
-#	${linkAudio(mp3=http://jazzbutcher.com/audio/19870203/19870203_JazzButcher_Nancy_Gen1_Flat.mp3)}
+#	${linkAudio(mp3=https://jazzbutcher.com/audio/19870203/19870203_JazzButcher_Nancy_Gen1_Flat.mp3)}
 
 #	<b>${linkInternal(${jbc_gigs}/1989/Jul6.html, Loft\, Berlin\, Germany - 1989-07-06)}</b>
-#	${linkAudio(mp3=http://jazzbutcher.com/audio/19890706/19890706_JazzButcher_Berlin_Gen2_Flat.mp3)}
+#	${linkAudio(mp3=https://jazzbutcher.com/audio/19890706/19890706_JazzButcher_Berlin_Gen2_Flat.mp3)}
 
 #define	newsItem[65]->dt	${date(U, 2017-12-26)}
 #define	newsItem[65]->subject Four more Jazz Butcher albums compiled in upcoming ‘The Violent Years’ box set
@@ -809,7 +809,7 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 
 #define	newsItem[73]->dt	${date(U, 2021-10-06 12:02:22)}
 #define	newsItem[73]->subject Pat Fish - 1957-12-20 .. 2021-10-05
-#define	newsItem[73]->link	http://jazzbutcher.com/memoriam
+#define	newsItem[73]->link	https://jazzbutcher.com/memoriam
 #define	newsItem[73]->category	press
 #define	newsItem[73]->body
 	<table width="100%">
@@ -823,16 +823,16 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 	</blockquote>
 	)}
 	<p>
-	<a href="http://jazzbutcher.com/memoriam">
+	<a href="https://jazzbutcher.com/memoriam">
 	<b>Memoriam is here.</b>
 	</a>
 	</p>
 	</td>
 	<td valign="top">
-		<a href="http://jazzbutcher.com/memoriam"> <img src="/images/20211006_portrait_500.jpg" style="border: 1px; border-radius: 10px;" alt="portrait"></a>
+		<a href="https://jazzbutcher.com/memoriam"> <img src="/images/20211006_portrait_500.jpg" style="border: 1px; border-radius: 10px;" alt="portrait"></a>
 		${g_credit(g=Dave E. Barker)}
 #	<center>
-#		<a href="http://jazzbutcher.com/memoriam"> <img src="/images/20211006_portrait_500.jpg" alt="portrait"></a>
+#		<a href="https://jazzbutcher.com/memoriam"> <img src="/images/20211006_portrait_500.jpg" alt="portrait"></a>
 #	</center>
 	</td>
 	</tr>

@@ -1320,6 +1320,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=Atlanta\, GA\, USA,
 		dt=2000-05-03,
 		datetime=2000-05-03,
+		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20000503_JazzButcher_interview_themadcapspeaks.mp3;;The Interview,
 		source=http://themadcapspeaks.squarespace.com/pat-fish-interview/)}
 
 	${addPress(type=preshow;album, album=blue,

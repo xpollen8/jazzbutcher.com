@@ -136,7 +136,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				}));
 				return data;
 			case 'recent_releases': {
-				const releases: any = await apiData('releases');
+				const releases = await apiDataFromHTDBServer('db_albums/data.json');
 				// @ts-ignore
 				releases.results = releases?.results?.filter((r: any) => r?.dtadded && moment(r.dtadded).isAfter(moment().subtract(6, 'months'))).sort((a: any, b: any) => moment(b.dtadded) - moment(a.dtadded));
 				releases.numResults = releases?.results?.length;

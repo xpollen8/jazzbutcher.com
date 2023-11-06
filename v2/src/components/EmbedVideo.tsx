@@ -1,5 +1,8 @@
+import { truncAt } from '@/lib/utils';
+
 const EmbedVideo = ({ data = {}, className, children }: { data: any, className?: string, children?: React.ReactNode }) => {
-	const { datetime, type, setnum, ordinal, song, author, comment, performers, mediaurl, mediacredit, mediacrediturl } = data;
+	const { datetime, type, setnum, ordinal, song, author, comment, performers, mediaurl: inMediaurl, mediacredit, mediacrediturl } = data;
+	const mediaurl = truncAt(';;', inMediaurl);
 	return (<div className={className}>
 		{(() => {
 			if (mediaurl.startsWith('/video')) {
@@ -13,6 +16,7 @@ const EmbedVideo = ({ data = {}, className, children }: { data: any, className?:
 				);
 			} else if (mediaurl.includes('assets.jazzbutcher.com')) {
 				// AWS mp4
+				console.log("URL", mediaurl);
 				return (
 					<video
 						width={560}

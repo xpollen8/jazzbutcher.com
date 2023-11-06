@@ -10,17 +10,15 @@ const ImageStrip = (props: any) => {
 	const className = props?.className;
 	return images && images?.length && <div style={style} className={className}>
 		{images?.map(([ inImage, caption, source, sourceurl, sourcedate ]: any, key: number) => {
-			const { image, thumb } = parseImage(inImage);
-			return <Link key={key} href={image}>
-				<div >
-					<Image
-						alt={caption || 'album image'}
-						width={width} height={width}
-						src={thumb}
-					/>
-					{(caption) && <><i>{caption}</i><br/></>}
-					{(source) && <Attribution g={source} u={sourceurl} d={sourcedate} />}
-				</div>
+			const { image, thumb='' } = parseImage(inImage);
+			return image && <Link key={key} href={image}>
+				<Image
+					alt={caption || 'album image'}
+					width={width} height={width}
+					src={thumb}
+				/>
+				{(caption) && <><i>{caption}</i><br/></>}
+				{(source) && <Attribution g={source} u={sourceurl} d={sourcedate} />}
 			</Link>
 		}
 	)}

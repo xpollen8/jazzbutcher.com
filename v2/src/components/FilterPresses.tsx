@@ -83,7 +83,7 @@ const AlbumCover = ({ album }: { album?: string }) => {
 	const { data, isLoading, error } = useReleases();
 	const release = data?.results?.find((a: any) => a.lookup === album);
 	return <Suspense fallback=<>Loading...</> >
-		{(!isLoading && data) && <Image className="w-full" src={parseImage(release?.thumb)?.thumb} width={250} height={250} alt="album cover" />}
+		{(!isLoading && data) && <Image className="w-full" src={parseImage(release?.thumb)?.thumb || ''} width={250} height={250} alt="album cover" />}
 	</Suspense>
 }
 
@@ -132,7 +132,7 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 							<Link key={key} href={item.url}>
 								<div className={`gig_${parseProject(item.type)}`} />
 								{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}
-								{(thumb) ? <Image className="w-full" src={parseImage(thumb)?.thumb} width={250} height={250} alt="cover" /> : <br />}
+								{(thumb) ? <Image className="w-full" src={parseImage(thumb)?.thumb || ''} width={250} height={250} alt="cover" /> : <br />}
 								<div className="text-sky-800 text-center px-2">
 									{(!(item?.album || thumb)) && <div className="h-5" />}
 									<div className="h-3" />

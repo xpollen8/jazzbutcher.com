@@ -86,6 +86,7 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 	return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
 }
 
+// @ts-ignore
 const apiData = async (path: string, args?: string, formData?: any) => {
 	//console.log("apiData", { path, args, formData });
 
@@ -135,16 +136,17 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				}));
 				return data;
 			case 'recent_releases': {
-				const releases = await apiData('releases');
+				const releases: any = await apiData('releases');
+				// @ts-ignore
 				releases.results = releases?.results?.filter((r: any) => r?.dtadded && moment(r.dtadded).isAfter(moment().subtract(6, 'months'))).sort((a: any, b: any) => moment(b.dtadded) - moment(a.dtadded));
 				releases.numResults = releases?.results?.length;
 				return releases;
 			}
 			case 'recent_updates': {
-				const press = await apiData('recent_press', args);
-				const media = await apiData('recent_media', args);
-				const feedback = await apiData('recent_feedback', args);
-				const releases = await apiData('recent_releases', args);
+				const press: any = await apiData('recent_press', args);
+				const media: any = await apiData('recent_media', args);
+				const feedback: any = await apiData('recent_feedback', args);
+				const releases: any = await apiData('recent_releases', args);
 				return {
 					press,
 					media,
@@ -153,11 +155,11 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				}
 			}
 			case 'lyric_by_href': {
-				const releases = await apiData('releases');
-				const lyrics = await apiData('lyric_by_href', args);
-				const medias = await apiData('media_by_song', lyrics?.results[0]?.title);
+				const releases: any = await apiData('releases');
+				const lyrics: any = await apiData('lyric_by_href', args);
+				const medias: any = await apiData('media_by_song', lyrics?.results[0]?.title);
 				const song = lyrics?.results[0]?.title;
-				const foundList = await apiData('releases_by_song', encodeURIComponent(song));
+				const foundList: any = await apiData('releases_by_song', encodeURIComponent(song));
 				return {
 					lyrics,
 					medias,
@@ -166,7 +168,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			}
 			case 'songs_by_release': {
 				const data = await apiDataFromDataServer(path, args);
-				const crdata = await apiData('credits_by_release', args);
+				const crdata: any = await apiData('credits_by_release', args);
 				/*
 					detect distinct songs
 					and collect song:instrument credits per person

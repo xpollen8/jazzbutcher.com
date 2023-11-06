@@ -3256,7 +3256,7 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[77]->type	collaboration,various
 #define	albums[77]->lookup	va_canyoutalktothedude_1
 #define	albums[77]->href	${jbc_albums}/va_canyoutalktothedude_1.html
-#define	albums[77]->collaboration	Four One and Onlys
+#define	albums[77]->collaboration	Four One And Only's
 #define	albums[77]->label	Aliénor Records
 #define	albums[77]->country	FR
 #define	albums[77]->catalog	Alien 1
@@ -3264,15 +3264,26 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[77]->thumb	/images/releases/va_canyoutalktothedude_1_front
 #define	albums[77]->images	/images/releases/va_canyoutalktothedude_1_back
 #define	albums[77]->dtreleased	1994
+#define	albums[77]->dtrecorded	1994-02-19
 #define	albums[77]->media	CD
 #define	albums[77]->contribution ufo_man
 #define	albums[77]->blurb
 	Tribute To Jonathan Richman & The Modern Lovers Volume 2
+#define	albums[77]->patsez
+	After a long sleep we drive the 30-odd kilometers to Breda and
+	join Marthy and his band, The Four One And Onlies, at their
+	tiny but beautifully-decorated studio. They are recording a
+	version of ${richman}'s UFO Man for some dubious
+	"tribute album", so we join in with handclaps and backing
+	vocals. We have some beers. Those that are interested in this
+	kind of thing are advised to look for the LP on Aliénor Records,
+	an independent out of Bordeaux, France, in the near future.
+	;;Pat Fish Letter: 1994-04-13;;${jbc_letters}/94Apr13/tour.html;;1994-04-13
 
 #define	albums[78]->buy
 #define	albums[78]->type	collaboration,various
 #define	albums[78]->lookup	va_canyoutalktothedude_2
-#define	albums[78]->collaboration	Four One and Onlys
+#define	albums[78]->collaboration	Four One And Only's
 #define	albums[78]->href	${jbc_albums}/va_canyoutalktothedude_2.html
 #define	albums[78]->label	Aliénor Records
 #define	albums[78]->country	FR
@@ -3285,6 +3296,16 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[78]->contribution ufo_man
 #define	albums[78]->blurb
 	Tribute To Jonathan Richman & The Modern Lovers Volume 2
+#define	albums[78]->patsez
+	After a long sleep we drive the 30-odd kilometers to Breda and
+	join Marthy and his band, The Four One And Onlies, at their
+	tiny but beautifully-decorated studio. They are recording a
+	version of ${richman}'s UFO Man for some dubious
+	"tribute album", so we join in with handclaps and backing
+	vocals. We have some beers. Those that are interested in this
+	kind of thing are advised to look for the LP on Aliénor Records,
+	an independent out of Bordeaux, France, in the near future.
+	;;Pat Fish Letter: 1994-04-13;;${jbc_letters}/94Apr13/tour.html;;1994-04-13
 
 #define	albums[79]->buy
 #define	albums[79]->type	various

@@ -1,27 +1,29 @@
+import { truncAt } from '@/lib/utils';
+
 const EmbedVideo = ({ data = {}, className, children }: { data: any, className?: string, children?: React.ReactNode }) => {
 	const { datetime, type, setnum, ordinal, song, author, comment, performers, mediaurl, mediacredit, mediacrediturl } = data;
 	return (<div className={className}>
 		{(() => {
-			if (mediaurl.startsWith('/video')) {
-				// local video
-				return (
-					<video controls={true} preload="none"
-						className="video"
-						poster={`https://v1.jazzbutcher.com${mediaurl}_thumbnail.jpg`} >
-						<source src={`https://v1.jazzbutcher.com${mediaurl}.mp4`} type="video/mp4" />
-					</video>
-				);
-			} else if (mediaurl.includes('assets.jazzbutcher.com')) {
-				// AWS mp4
+			if (mediaurl?.startsWith('/video') || mediaurl?.includes('assets.jazzbutcher.com')) {
+				const videoURL = (str: string) => {
+					const appendMP4 = (str: string) => {
+						if (!str.includes('.mp4')) return str + '.mp4';
+						return str;
+					}
+					const mediaurl = appendMP4(str);
+					if (mediaurl?.startsWith('/video')) return `https://v1.jazzbutcher.com${mediaurl}`;
+					return mediaurl;
+				}
+				const url = videoURL(truncAt(';;', mediaurl) || '');
 				return (
 					<video
 						width={560}
 						controls={true}
 						preload="none"
 						className="video"
-						poster={`${mediaurl.replace('.mp4', '')}_thumbnail.jpg`}
+						poster={`${url.replace('.mp4', '')}_thumbnail.jpg`}
 					>
-						<source src={mediaurl} type="video/mp4" />
+						<source src={url} type="video/mp4" />
 					</video>
 				);
 			} else {

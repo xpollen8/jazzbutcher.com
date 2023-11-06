@@ -123,6 +123,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			case 'songs_by_datetime':
 			case 'recent_press':
 			case 'recent_media':
+			case 'on_this_day':
 			case 'recent_feedback':
 				return await apiDataFromDataServer(path, args);
 			case 'feedbacks':

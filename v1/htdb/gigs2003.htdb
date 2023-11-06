@@ -684,6 +684,17 @@
 	${gigHeader(
 		blurb=Tom Hall Memorial,
 		cost=free,
+		pat=${literalizeCommas(
+		Well, Tom Hall's memorial event went off massive style. Estimates of the numbers range from 300 to 500. I reckon it       
+		was nearer the latter. It was a big room and it was heaving. It was so crowded that we spent a considerable amount of     
+		time out on the terrace, watching through the huge cricket pavilion windows.The evening started with an oration from      
+		Alan Moore before settling into an unending parade of talent, including Curtis, Sue Figueroa, Accrington Stanley,         
+		assorted Bareback Ryders and Ratcliffe Stouts, the Strung Out Sisters and Tom's son Will, who turned in some great        
+		versions. I got to sing John The Road and Kissing & Killing, the latter a right royal rave-up. When there were no more    
+		songs to sing Stevie Ward let the tape player rip so that we could all do stoopit wee dances to Tom and Guy's deranged    
+		live version of Volga Olga. We signed the guest book and headed off to party all night. On the way home I ran into a      
+		man who had come from Australia!    
+		)}
 	)}
 
 #define	Oct3.html()

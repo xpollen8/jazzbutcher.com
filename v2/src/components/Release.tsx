@@ -45,6 +45,8 @@ export type ReleaseType =  {
 	video?: string
 	annotated?: string
 	is_instrumental?: string
+	collaboration?: string
+	dtadded?: string
 	inPage?: boolean
 }
 

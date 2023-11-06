@@ -43,7 +43,7 @@ const Letter = () =>  {
 						<Image width={400} height={400} src="https://v1.jazzbutcher.com/images/paris.jpg" alt="paris group"/>
 					</Link>
 					<ParsedCaption
-						image_caption=<>{nick}, {curt}, {pat}, {dooj} (Paris)</>
+						image_caption="Nick, Curt, Pat, Dooj (Paris)"
 						credit_date="1994-02-17"
 						credit="Lucien Borderline"
 					/>

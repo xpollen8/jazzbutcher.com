@@ -143,10 +143,10 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				return releases;
 			}
 			case 'recent_updates': {
-				const press: any = await apiData('recent_press', args);
-				const media: any = await apiData('recent_media', args);
-				const feedback: any = await apiData('recent_feedback', args);
-				const releases: any = await apiData('recent_releases', args);
+				const press = await apiDataFromDataServer('recent_press', args);
+				const media = await apiDataFromDataServer('recent_media', args);
+				const feedback = await apiDataFromDataServer('recent_feedback', args);
+				const releases = await apiDataFromDataServer('recent_releases', args);
 				return {
 					press,
 					media,
@@ -155,11 +155,11 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				}
 			}
 			case 'lyric_by_href': {
-				const releases: any = await apiData('releases');
-				const lyrics: any = await apiData('lyric_by_href', args);
-				const medias: any = await apiData('media_by_song', lyrics?.results[0]?.title);
+				const releases = await apiDataFromHTDBServer('db_albums/data.json');
+				const lyrics = await apiDataFromDataServer('lyric_by_href', args);
+				const medias = await apiDataFromDataServer('media_by_song', lyrics?.results[0]?.title);
 				const song = lyrics?.results[0]?.title;
-				const foundList: any = await apiData('releases_by_song', encodeURIComponent(song));
+				const foundList = await apiDataFromDataServer('releases_by_song', encodeURIComponent(song));
 				return {
 					lyrics,
 					medias,
@@ -168,7 +168,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			}
 			case 'songs_by_release': {
 				const data = await apiDataFromDataServer(path, args);
-				const crdata: any = await apiData('credits_by_release', args);
+				const crdata = await apiDataFromDataServer('credits_by_release', args);
 				/*
 					detect distinct songs
 					and collect song:instrument credits per person
@@ -210,7 +210,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			}
 			case 'gigs_by_musician': {
 				const performances =  await apiDataFromDataServer(path, args);
-				const gigs = await apiData('gigs');
+				const gigs = await apiDataFromDataServer('gigs');
 				// join gig data to performance records
 				const results = performances?.results?.map((performance: RecordType) => {
 					const datetime = localDate(performance?.datetime)
@@ -221,7 +221,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			}
 			case 'gigs_by_song': {
 				const gigsongs = await apiDataFromDataServer(path, args);
-				const gigs = await apiData('gigs', args);
+				const gigs = await apiDataFromDataServer('gigs', args);
 				// join gig data to song records
 				const results = gigsongs?.results?.map((song: RecordType) => {
 					const datetime = localDate(song?.datetime)

@@ -2,10 +2,10 @@ import { truncAt } from '@/lib/utils';
 
 const EmbedVideo = ({ data = {}, className, children }: { data: any, className?: string, children?: React.ReactNode }) => {
 	const { datetime, type, setnum, ordinal, song, author, comment, performers, mediaurl: inMediaurl, mediacredit, mediacrediturl } = data;
-	const mediaurl = truncAt(';;', inMediaurl);
+	const mediaurl = truncAt(';;', inMediaurl) || '';
 	return (<div className={className}>
 		{(() => {
-			if (mediaurl.startsWith('/video')) {
+			if (mediaurl?.startsWith('/video')) {
 				// local video
 				return (
 					<video controls={true} preload="none"
@@ -14,7 +14,7 @@ const EmbedVideo = ({ data = {}, className, children }: { data: any, className?:
 						<source src={`https://v1.jazzbutcher.com${mediaurl}.mp4`} type="video/mp4" />
 					</video>
 				);
-			} else if (mediaurl.includes('assets.jazzbutcher.com')) {
+			} else if (mediaurl?.includes('assets.jazzbutcher.com')) {
 				// AWS mp4
 				console.log("URL", mediaurl);
 				return (
@@ -23,7 +23,7 @@ const EmbedVideo = ({ data = {}, className, children }: { data: any, className?:
 						controls={true}
 						preload="none"
 						className="video"
-						poster={`${mediaurl.replace('.mp4', '')}_thumbnail.jpg`}
+						poster={`${mediaurl?.replace('.mp4', '')}_thumbnail.jpg`}
 					>
 						<source src={mediaurl} type="video/mp4" />
 					</video>

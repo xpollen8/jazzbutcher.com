@@ -272,7 +272,7 @@ export const parseMediaOrdinal = (ordinalS?: string) => {
 	};
 }
 
-export const getImageBase = (str?: string) => {
+const getImageBase = (str?: string) => {
 	if (str?.match(/jpg/i) || str?.match(/jpeg/i)) {
 		const buh = str?.split('.');
 		const ext = buh.pop();
@@ -283,14 +283,18 @@ export const getImageBase = (str?: string) => {
 	}
 }
 
+export const imageBase = (str?: string) => {
+	return str && (str.includes('http') || str.startsWith('/assets')) ? str : 'https://v1.jazzbutcher.com' + str;
+}
+
 export const imageThumb = (str?: string, width: number = 250) => {
 	const [ base, ext ] = getImageBase(str);
-	return 'https://v1.jazzbutcher.com' + base + '_' + width + '.' + ext;
+	return imageBase(base) + '_' + width + '.' + ext;
 }
 
 export const imageFull = (str?: string) => {
 	const [ base, ext ] = getImageBase(str);
-	return 'https://v1.jazzbutcher.com' + base + '.' + ext;
+	return imageBase(base) + '.' + ext;
 }
 
 export const parseGigExtras = (extra?: string) => extra?.split(',') || [];
@@ -301,9 +305,8 @@ export const pressFiltersInclude = (filters: string, f: string) => filters.split
 
 export const parseImage = (str?: string, width: number = 250) => {
 	const raw = str && truncAt(';;', str || '')?.trim();
-	const base = raw && (raw.includes('http') ? raw : `https://v1.jazzbutcher.com${raw}`);
 	return {
-		image: base && `${base}.jpg`,
-		thumb: base && `${base}_${width}.jpg`,
+		thumb: imageThumb(raw),
+		image: imageFull(raw),
 	}
 }

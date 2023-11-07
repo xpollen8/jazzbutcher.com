@@ -5,13 +5,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import './styles.css';
 import EmbedMedia from '@/components/EmbedMedia';
+import PhotoSet from '@/components/PhotoSet';
 
 import { AutoLinkPlayer, AutoLinkAct } from '@/lib/defines';
-import { parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, ts2URI, dateDiff } from '@/lib/utils';
+import { type HashedType, parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, ts2URI, dateDiff } from '@/lib/utils';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
-import { Source, Credit, ParsedCaption, removeHTML, RenderHTML } from '@/components/GenericWeb';
+import { Attribution, Source, Credit, ParsedCaption, removeHTML, RenderHTML } from '@/components/GenericWeb';
 import useGig from '@/lib/useGig';
 import { PressSummary } from '@/components/MakeReleasePress';
 import { PrevArrow, NextArrow } from '@/components/Arrows';
@@ -92,7 +93,24 @@ const GigPosters = (data: any) => <><Iterator data={data} func={GigPoster} class
 
 const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
 
-const GigPhotos = (data: any) => <><Iterator data={data} func={GigPhoto} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
+const GigPhotos = (data: any) => {
+	const photosets: HashedType = {};
+	data.forEach((d: any) => {
+		const { image, image_caption } = d;
+		const credit = d?.credit;
+		const credit_date = d?.credit_date;
+		const credit_url = d?.credit_url;
+		const useCredit = (credit?.length) ? credit : 'Un-credited';
+		if (!photosets[useCredit]) {
+			photosets[useCredit] = { credit: removeHTML(credit), credit_date, credit_url, photos: [] }
+		}
+		photosets[useCredit].photos.push({ src: image, alt: image_caption });
+	});
+	return Object.keys(photosets).map((ps: any, key: number) => {
+		const title = (photosets[ps]?.credit) ? <>Photoset by <Attribution g={photosets[ps]?.credit} u={photosets[ps]?.credit_url} d={photosets[ps]?.credit_date} /></> : ps;
+		return <PhotoSet key={key} title={title} photos={photosets[ps]?.photos}/>
+	})
+}
 
 const GigNote = (data: any, key: number) => <GigText {...data} />
 

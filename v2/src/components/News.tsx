@@ -1,5 +1,6 @@
 import moment from 'moment';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
+import Tag from '@/components/Tag';
 import { dateDiff } from '@/lib/utils';
 
 import newsItems from '@/../public/data/news.json';
@@ -20,6 +21,11 @@ const recentNews = [
 		link: '/letters/19940413',
 		category: 'media',
 	},
+	{
+		subject: "Jazz Butcher com V2",
+		body: `Work is underway to modernize the underpinnings of the almost-30-year-old JBC website.<p />Many new features are being incorporated and massive backlogs of press items and project data is being processed`,
+		dt: '2023-07-15',
+	},
 ];
 
 // get rid of bad data
@@ -35,9 +41,17 @@ newsItems.results = newsItems.results.map((n: any) => {
 }).sort((a: NewsItemType, b: NewsItemType) => moment(b.dt) - moment(a.dt));
 
 const News = () => {
+let year;
 return <>
 	{newsItems?.results.map((n: NewsItemType, key: number) => {
+		const yr = parseInt(n.dt, 10);
+		let banner;
+		if (yr !== year) {
+			year = yr;
+			banner = <Tag>{year}</Tag>;
+		}
 		return <div key={key}>
+			{banner}
 			<MakeSimpleURI uri={n?.link} text={n.subject || ''} aux={dateDiff(n.dt)}>
 				<div dangerouslySetInnerHTML={{ __html: n.body || '' }} />
 			</MakeSimpleURI>

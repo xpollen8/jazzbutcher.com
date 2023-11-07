@@ -42,8 +42,9 @@ const Notebooks = () => {
 	return (<>
 		<Header section="notebooks" />
 		<main>
+		<div className="listItem">
 		Throughout his life, Pat kept journals in which he documented his gigs, tours, general observations, drew sketches, and jotted down lyrics. They are utterly fascinating.  In 2012, Pat auctioned off many of his older notebooks to raise funds for Last of the Gentlemen Adventurers
-		<hr />
+		</div>
 		<PhotoSet title='Katelin Smith' photos={katelin}  credit='Katelin Smith' credit_date='2021-10-06' />
 		<hr />
 		<PhotoSet title='Jimmy Duval' photos={duval} />

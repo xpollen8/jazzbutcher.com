@@ -354,7 +354,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 									<div dangerouslySetInnerHTML={{__html: record?.blurb }}/>
 								</b>
 								{record?.alsowith?.split(',')?.map((a: string, key: number) => {
-									return <div key={key} className="listItem">{AutoLinkAct(removeHTML(a.trim()))}</div>
+									return !!a?.length && <div key={key} className="listItem">{AutoLinkAct(removeHTML(a.trim()))}</div>
 									}
 									)}
 							</div>

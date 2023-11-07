@@ -37,8 +37,7 @@ const TomHall = () => {
 							<Link href="/gigs/2003/Sep6_1930.html"><Image
 								src="https://v1.jazzbutcher.com/images/20030906/20030906_poster_250.jpg" alt="poster"
 								width={250} height={250} /></Link>
-							There will be a memorial gig for The Great Tom Hall on
-							<Link href="/gigs/2003/Sep6_1930.html">Saturday 6th September 2003</Link> at
+							There will be a memorial gig for The Great Tom Hall on <Link href="/gigs/2003/Sep6_1930.html">Saturday 6th September 2003</Link> at
 							the Ken Turner Pavilion, Northamptonshire County Cricket
 							Club, Wantage Road, Northampton. Taking part will be many of the musicians
 							who worked with Tom over the years in a revue sort of format. {pat} and {curt}
@@ -129,8 +128,7 @@ const TomHall = () => {
 				other younger musicians in town who were trying to make a go of what he had 
 				already done, dusted and left behind.
 				<p />
-				I remember one Sunday morning during the making of 
-				{ill} when for some odd reason I was feeling unusually down and 
+				I remember one Sunday morning during the making of {ill} when for some odd reason I was feeling unusually down and 
 				battered. Arriving at the studio, I couldn&apos;t get in. Nobody was around and I 
 				didn&apos;t really know where to put myself. As I milled about in the alley, without 
 				a penny or a clue, Tom strolled past. &quot;Come and have a brandy, dear 

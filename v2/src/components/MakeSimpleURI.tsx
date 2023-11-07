@@ -6,7 +6,7 @@ const MakeSimpleURI = ({ uri='', text, aux, children }: {
 	aux?: string | React.ReactNode
 	children?: string | React.ReactNode
 }, key: number): React.ReactNode  => (
-	<div key={key} className="m-1">
+	<div key={key}>
 	{(uri) ?
 		<Link href={uri} style={{ display: 'inline-block', width: '100%' }}>
 			<div className="clickDiv hover:outline bg-white">
@@ -20,7 +20,7 @@ const MakeSimpleURI = ({ uri='', text, aux, children }: {
 			{' - '}<span className="smalltext">{aux}</span>
 		</div>
 	}
-	{(children) && <div style={{ margin: '5px' }} className="listItem">{children}</div>}
+	{(children) && <div className="p-3">{children}</div>}
 	</div>
 )
 

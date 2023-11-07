@@ -104,7 +104,7 @@ const GigPhotos = (data: any) => {
 		if (!photosets[useCredit]) {
 			photosets[useCredit] = { credit: removeHTML(credit), credit_date, credit_url, photos: [] }
 		}
-		photosets[useCredit].photos.push({ src: image, alt: image_caption });
+		photosets[useCredit].photos.push({ src: image, alt: removeHTML(image_caption) });
 	});
 	return Object.keys(photosets).map((ps: any, key: number) => {
 		const title = (photosets[ps]?.credit) ? <>Photoset by <Attribution g={photosets[ps]?.credit} u={photosets[ps]?.credit_url} d={photosets[ps]?.credit_date} /></> : ps;

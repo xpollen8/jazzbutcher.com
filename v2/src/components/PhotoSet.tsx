@@ -19,7 +19,7 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 			const [ part, ext ] = src.split('.');
 			return <div key={key} className="p-1 drop-shadow-sm border border-slate-500 text-center w-80">
 				<Link href={src}><Image key={key} unoptimized src={`${part}_250.${ext}`} width={350} height={350} alt={alt} /></Link>
-				<span dangerouslySetInnerHTML={{ __html: alt }} />
+				{alt}
 				{(body) && <><p />&quot;<i>{body}</i>&quot;</>}
 				{(credit) && <><br /><Credit g={credit} u={credit_url} d={credit_date} /></>}
 			</div>

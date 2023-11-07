@@ -17,7 +17,7 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 		{photos.map((w: any, key: number) => {
 			const { src, alt, credit, credit_url, credit_date, body } = w;
 			const [ part, ext ] = src.split('.');
-			return <div key={key} className="p-1 drop-shadow-sm border border-slate-500 text-center w-84">
+			return <div key={key} className="p-1 drop-shadow-sm border border-slate-500 text-center w-80">
 				<Link href={src}><Image key={key} unoptimized src={`${part}_250.${ext}`} width={350} height={350} alt={alt} /></Link>
 				<span dangerouslySetInnerHTML={{ __html: alt }} />
 				{(body) && <><p />&quot;<i>{body}</i>&quot;</>}

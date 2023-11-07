@@ -20,6 +20,7 @@ const Fanclub = () =>
 			description=<>
 				I just came across this on Facebook this morning!
 				Brought to us by the incredible Heidi Rosen from The Jazz Butcher Facebook Group!
+				 It was from her friend Bjorn who received it from Earl Sikkorski back in the mid eighties.
 				Long Live The JBC fans!!
 			</>
 			credit='Jimmy Duval'

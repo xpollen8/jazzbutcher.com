@@ -8,7 +8,7 @@ import newsItems from '@/../public/data/news.json';
 type NewsItemType = {
 	subject?: string
 	body?: string
-	dt?: string
+	dt: string
 	link?: string
 	category?: string
 };
@@ -41,7 +41,7 @@ newsItems.results = newsItems.results.map((n: any) => {
 }).sort((a: NewsItemType, b: NewsItemType) => moment(b.dt) - moment(a.dt));
 
 const News = () => {
-let year;
+let year: number;
 return <>
 	{newsItems?.results.map((n: NewsItemType, key: number) => {
 		const yr = parseInt(n.dt, 10);

@@ -310,7 +310,7 @@ textplus1 {
 .tag, .tagClickable {
 	color: #222;
 	background-color: #BCF1AF;
-	margin: 1px;
+	margin-top: 5px;
 	padding: 3px;
 	padding-left: 10px;
 	border: 1px solid #999;

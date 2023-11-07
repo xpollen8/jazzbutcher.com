@@ -8,16 +8,18 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 	title?: string, photos: any[], pdf?: string, description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string
 }) => <>
 	{(title) && <Tag> {title} </Tag>}
-	{(description) && <blockquote>{description}</blockquote>}
-	{(credit || credit_url) && <blockquote><Credit g={credit} u={credit_url} d={credit_date} /></blockquote>}
-	{(pdf) && <blockquote><Link href={pdf}>Download this photoset as a single PDF</Link> (large file)</blockquote>}
+	{(description || credit || credit_url || pdf) && <div className="listItem">
+		{(description) && <>{description}</>}
+		{(credit || credit_url) && <>{(description) && <br />}<Credit g={credit} u={credit_url} d={credit_date} /></>}
+		{(pdf) && <><br /><Link href={pdf}>Download this photoset as a single PDF</Link> (large file)</>}
+	</div>}
 	<div className="flex flex-wrap justify-center gap-3 listItem">
 		{photos.map((w: any, key: number) => {
 			const { src, alt, credit, credit_url, credit_date, body } = w;
 			const [ part, ext ] = src.split('.');
-			return <div key={key} className="p-1 drop-shadow-sm border border-slate-500 text-center w-64">
+			return <div key={key} className="p-1 drop-shadow-sm border border-slate-500 text-center w-80">
 				<Link href={src}><Image key={key} unoptimized src={`${part}_250.${ext}`} width={350} height={350} alt={alt} /></Link>
-				{alt}
+				<span dangerouslySetInnerHTML={{ __html: alt }} />
 				{(body) && <><p />&quot;<i>{body}</i>&quot;</>}
 				{(credit) && <><br /><Credit g={credit} u={credit_url} d={credit_date} /></>}
 			</div>

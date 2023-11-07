@@ -43,7 +43,7 @@ const PressItem = ({ item }: { item: any }) => {
 							<b style={{ margin: '3px' }}>Album Review:</b> {expand(article?.album)}
 						</>)}
 				</>))}
-				{(!!parseInt(article?.dtadded, 10)) && <><b style={{ margin: '3px' }}>Item added:</b> {dateDiff(article.dtadded)}</>}
+				{(!!parseInt(article?.dtadded, 10)) && <><b style={{ margin: '3px' }}>Item added:</b> {dateDiff(article.dtadded, '')}</>}
 				{(article?.todo) && <b style={{ background: 'red', padding: '5px', marginBottom: '5px', margin: '3px', color: 'white' }}>ATTENTTION NEEDED: {article.todo} </b>}
 			</div>
 			<p />

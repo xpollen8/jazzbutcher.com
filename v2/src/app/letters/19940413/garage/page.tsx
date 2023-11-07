@@ -11,6 +11,7 @@ const Letter = () =>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', 'Garage' ] } />
 	<main>
 		<LetterHeader title="UPSTAIRS AT THE GARAGE, LONDON" subhead=<Link href="/gigs/1994/Mar10.html">10th MARCH 1994</Link> />
+		<blockquote>
 		A new &quot;acoustic&quot; venue in the heart of fashionable Islington
 		plays host to something which my agent calls THE JAZZ
 		BUTCHER ACOUSTIC CONSPIRACY... the wag!
@@ -44,16 +45,15 @@ const Letter = () =>
 		<dd>{road}</dd>
 		</dl>
 		<p />
-		<blockquote className="annotation">
-			The support came from Spittle Rattle (in their normal
-			three piece line-up), the trucking was by Kathie and
-			the beer on the rider was Oranjeboom.  Lots of people
-			came and applauded, and - best of all - {gerard}
-			had to pay to get in!!!
-			<p />
-			The next manifestation of the Jazz Butcher Acoustic Conspiracy
-			will be at The {FIDDLER} Acoustic Room in London
-			on <Link href="/gigs/1994/Apr8.html">Friday 8th April 1994.</Link>
+		The support came from Spittle Rattle (in their normal
+		three piece line-up), the trucking was by Kathie and
+		the beer on the rider was Oranjeboom.  Lots of people
+		came and applauded, and - best of all - {gerard}
+		had to pay to get in!!!
+		<p />
+		The next manifestation of the Jazz Butcher Acoustic Conspiracy
+		will be at The {FIDDLER} Acoustic Room in London
+		on <Link href="/gigs/1994/Apr8.html">Friday 8th April 1994.</Link>
 		</blockquote>
 	</main>
 	<Footer />

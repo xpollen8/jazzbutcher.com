@@ -92,11 +92,10 @@ const sections : { [key: string]: BreadCrumb } = {
 	black_eg: { parent: 'projects', title: 'The Black Eg', summary: "1991-1994, 1999", inParentDirectory: true },
 	the_undertakers: { parent: 'projects', title: 'The Undertakers', summary: '1995', inParentDirectory: true },
 	stranger_tractors: { parent: 'projects', title: 'Stranger Tractors', summary: '1995', inParentDirectory: true, body: "Curtis E. Johnson, Pat Fish (Mr. Nasty)" },
-	'releases/va_canyoutalktothedude_2': { parent: 'projects', title: "Four One & Only's", summary: '1996 - U.F.O. Man', inParentDirectory: false, },
 	sumosonic: { parent: 'projects', title: 'Sumosonic', summary: "1996-1998", inParentDirectory: true },
 	wilson: { parent: 'projects', title: 'Wilson', summary: "2001-2005, 2012", inParentDirectory: true },
 	drones_club: { parent: 'projects', title: 'Drones Club', summary: '2014-2021', inParentDirectory: true },
-	prime_evils: { parent: 'projects', title: 'Prime Evils', inParentDirectory: true },
+	'/gigs/2006/Jul27': { parent: 'projects', title: 'Prime Evils', inParentDirectory: false },
 	masters_of_budvar: { parent: 'projects', title: 'The Masters of Budvar', inParentDirectory: true },
 	bookstore: { parent: 'projects', title: "Pat's Bookstore", inParentDirectory: true },
 
@@ -115,7 +114,6 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003", body: "The passing of Northampton-based folk music legend Tom Hall prompted Pat to pen a memorial."},
 	'press/20020709_starindia': { parent: 'writings', title: "The Star Of India Restaurant", summary: "2002", body: "Northampton's Star of India restaurant is dearly loved by the artist" },
-	'press/20040512_wilson_about': { parent: 'writings', title: 'Wilson Explainer', summary: '2002', body: '"I started the Wilson project fondly imagining that it would be a solo thing"' },
 	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994", body: "Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.  Includes then-current news and answers to fan questions in 9 lengthy letters." },
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "1986", body: "Early Fan Club issues" },
 

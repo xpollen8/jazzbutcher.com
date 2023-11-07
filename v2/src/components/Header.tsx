@@ -82,7 +82,7 @@ const sections : { [key: string]: BreadCrumb } = {
 //	'press?filters=type%3B%3Bpreshow': { parent: 'press', title: 'Pre-show Press' },
 //	'press?filters=type%3B%3Bkit': { parent: 'press', title: 'Band Bios' },
 
-//	news: { parent: 'media', title: 'News', summary: "Website announcements" },
+	news: { parent: 'jbc', title: 'News', summary: "Website updates" },
 
 	//interviews: { parent: 'pat', title: "Interviews", summary: "Interviews captured over the years" },
 

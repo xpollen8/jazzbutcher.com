@@ -633,6 +633,9 @@ main {
 .commentBubble:hover {
   background: white;
 }
+summary:hover {
+	outline: 2px solid;
+}
 details > summary {
   list-style: none;
 }

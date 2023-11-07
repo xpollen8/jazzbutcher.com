@@ -1,12 +1,14 @@
+<strike>
 √ move apiData ito app/api dir, sinec that's only place used now
 
-# Add components
-	* press in /releases
-	* audio in lyrics
-	* audio/video/press/gigs within /project/XXX
-	* nootbook scans to lyrics pages
+√ Add components
+	√ press in /releases
+	√ audio in lyrics
+	√ audio/video/press/gigs within /project/XXX
+	√ notebook scans to lyrics pages
 
 √ ensure ALL releases have correct performance entries for songs
+</strike>
 
 # add audio link to  performance entries for songs
   * this will take care of accounting for songs without any other association
@@ -22,23 +24,21 @@
 # /conspirators
 	* need to structure old people.htdb file into form that can dump to db
 
+<strike>
 √ /releases
-	<strike>
 	√ need to structure old albums.htdb file into form that can dump to db
-	</strike>
 
-# /press
-	<strike>
-	* need to extend the database table to hold everything.
-	</strike>
+√ /press
+	√ need to extend the database table to hold everything.
 
 √ what should be on the home page?
+</strike>
 
 # /gallery
 	* needs complete build out
 
 √ /gigs
-	* finish the templating
+	√ finish the templating
 
 # /feedback
 	* need to re-implement in React

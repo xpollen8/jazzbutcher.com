@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Tag from '@/components/Tag';
 import { GigSearchResults } from '@/components/GigSearch';
 import useOnThisDay from '@/lib/useOnThisDay';
-import { ts2URI } from '@/lib/utils';
+import { parseYear, ts2URI } from '@/lib/utils';
 
 const OnThisDay = () => {
 	const { data, isLoading, error} = useOnThisDay();
@@ -15,7 +15,7 @@ const OnThisDay = () => {
 		<Tag>On This Day in JBC History</Tag>
 		{gigs.map((g: any, key: number) => {
 			return <div key={key} className="listItem">
-				<Link href={`/gigs/${ts2URI(g.datetime)}`}><b>{g.venue}</b> {g.city}, {g.country}</Link>
+				{parseYear(g.datetime)}: <Link href={`/gigs/${ts2URI(g.datetime)}`}><b>{g.venue}</b> {g.city}, {g.country}</Link>
 			</div>
 		})}
 	</Suspense>)

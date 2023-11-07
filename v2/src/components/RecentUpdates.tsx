@@ -4,6 +4,7 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import Tag from '@/components/Tag';
 import EmbedMedia from '@/components/EmbedMedia';
+import News from '@/components/News';
 import useRecentUpdates from '@/lib/useRecentUpdates';
 import { dateDiff } from '@/lib/utils';
 import { feedbackURI2Pathname } from '@/lib/usePageComments';
@@ -85,14 +86,23 @@ const RecentReleases = (props: any) => {
 	</details>
 }
 
+const RecentNews = () => {
+	return <details>
+		<summary><Tag>Website Update Log</Tag></summary>
+			<News />
+	</details>
+}
 const RecentUpdates = () => {
 	const { data, isLoading, error} = useRecentUpdates();
 	const { press, media, feedback, releases } = data || {};
 	return (<Suspense fallback={<>Loading...</>}>
+		<p />
 		<RecentPress press={press} />
 		<RecentFeedback feedback={feedback} />
 		<RecentMedia media={media} />
 		<RecentReleases releases={releases} />
+		<RecentNews />
+		<p />
 	</Suspense>)
 }
 

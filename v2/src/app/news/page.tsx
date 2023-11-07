@@ -1,11 +1,16 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import News from '@/components/News';
+import Tag from '@/components/Tag';
 
-const Missing = () => 
+const WebsiteNews = () =>
 <>
-	<Header />
-	<h1>This section is not yet ported from old JBC site</h1>
+	<Header section="news" />
+	<main>
+		<Tag>Website Update Log</Tag>
+		<News />
+	</main>
 	<Footer />
 </>
 
-export default Missing;
+export default WebsiteNews;

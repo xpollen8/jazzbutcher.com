@@ -2,15 +2,29 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import PhotoSet from '@/components/PhotoSet';
 import { ParsedCaption } from '@/components/GenericWeb';
-import { FIDDLER, nick, curt, pat, dooj } from '@/lib/defines';
+import { nick, curt, pat, dooj } from '@/lib/defines';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
+
+const letter = [
+	{ src: '/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore_1.jpg', alt: 'The envelope' },
+	{ src: '/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore_2.jpg', alt: 'Intro' },
+	{ src: '/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore_3.jpg', alt: 'JBC Dates You Have Missed' },
+	{ src: '/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore_4.jpg', alt: 'The Spring 94 European Tour: 1' },
+	{ src: '/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore_5.jpg', alt: 'The Spring 94 European Tour: 2' },
+	{ src: '/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore_6.jpg', alt: 'The Spring 94 European Tour: 3' },
+	{ src: '/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore_7.jpg', alt: 'The Spring 94 European Tour: 4' },
+	{ src: '/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore_8.jpg', alt: 'The Spring 94 European Tour: 5' },
+	{ src: '/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore_9.jpg', alt: 'The 10Mar94 GARAGE gig' },
+	{ src: '/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore_10.jpg', alt: 'The 8Apr94 MEAN FIDDLER gig + Other News' },
+]
 
 const topics = [
 	{ uri: "/letters/94Apr13/intro.html", text: "Introduction" },
 	{ uri: "/letters/94Apr13/tour.html", text: "The Spring 94 European Tour" },
-	{ uri: "/letters/94Apr13/garage.html", text: "The 10Mar94 Garage gig, London" },
-	{ uri: "/letters/94Apr13/fiddler.html", text: `The 8Apr94 ${FIDDLER} gig, London` },
+	{ uri: "/letters/94Apr13/garage.html", text: "The 10Mar94 GARAGE gig, London" },
+	{ uri: "/letters/94Apr13/fiddler.html", text: `The 8Apr94 MEAN FIDDLER gig, London` },
 	{ uri: "/letters/94Apr13/gigs.html", text: "JBC Dates You Have Missed" },
 	{ uri: "/letters/94Apr13/news.html", text: "Other News" },
 ];
@@ -29,7 +43,7 @@ const Letter = () =>  {
 						<Image width={400} height={400} src="https://v1.jazzbutcher.com/images/paris.jpg" alt="paris group"/>
 					</Link>
 					<ParsedCaption
-						image_caption=<>{nick}, {curt}, {pat}, {dooj} (Paris)</>
+						image_caption="Nick, Curt, Pat, Dooj (Paris)"
 						credit_date="1994-02-17"
 						credit="Lucien Borderline"
 					/>
@@ -38,6 +52,7 @@ const Letter = () =>  {
 				</center>
 			</div>
 			</div>
+			<PhotoSet title='The Letter' photos={letter} pdf='/assets/images/letters_from_pat/19940413/19940413_PatFish_LetterToDavidWhittemore.pdf' description="600 DPI scan of Pat's letter to David Whittemore, penned 1994-03-28, received 1994-04-13" credit='David Whittemore' credit_url='https://davidwhittemore.com' credit_date='2023-11-06' />
 		</main>
 		<Footer />
 	</>)

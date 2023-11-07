@@ -4,12 +4,13 @@ import Tag from '@/components/Tag';
 
 import { Credit } from '@/components/GenericWeb';
 
-const PhotoSet = ({ title, photos, description, credit, credit_url, credit_date }: {
-	title?: string, photos: any[], description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string
+const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_date }: {
+	title?: string, photos: any[], pdf?: string, description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string
 }) => <>
 	{(title) && <Tag> {title} </Tag>}
 	{(description) && <blockquote>{description}</blockquote>}
 	{(credit || credit_url) && <blockquote><Credit g={credit} u={credit_url} d={credit_date} /></blockquote>}
+	{(pdf) && <blockquote><Link href={pdf}>Download this photoset as a single PDF</Link> (large file)</blockquote>}
 	<div className="flex flex-wrap justify-center gap-3 listItem">
 		{photos.map((w: any, key: number) => {
 			const { src, alt, credit, credit_url, credit_date, body } = w;

@@ -133,6 +133,7 @@ export const dateDiff = (dt?: string, sep: string = ' - ') => {
 		ts2URI(`2023-10-04 23:30:05`) -> 2023/Nov4_2330.html
  */
 export const ts2URI = (ts: string): string => {
+	if (!ts) return '';
 	const year = ts.substr(0, 4);
 	const month = ts.substr(5, 2);
 	const monthName = num2mon(month);

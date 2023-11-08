@@ -1,8 +1,15 @@
 #define	extractThumb(str) ${truncAt(;;, ${str})}
 
+#audio=url;;song;;credits
+#song=>title::ordinal::version
+#credits=>person^^person^^
+#person=>name::instruments
+# EX: url;;title::ordinal::version;;person::instruments^^
+##define parseAlbumAudio(prefix, field=audio)
+
 #define	parseAudio(prefix)
 #live	if (defined(${prefix}->audio))
-	${linkAudio(title=${literalizeCommas(${${prefix}->title} - ${mkPressDate(ts=${${prefix}->dt})})}, mp3=${truncAt(;;, ${${prefix}->audio})}, autolink=no)}
+	${parseAlbumAudio(prefix=${prefix})}
 #live	endif
 
 ## media=URL;;description;;credit;;credit_url;;credit_date$$....
@@ -214,9 +221,9 @@
 
 # below the heading/subhead
 
-	${parseThumbAndImages(prefix=${prefix})}
 	${parseMedia(prefix=${prefix})}
 	${parseAudio(prefix=${prefix})}
+	${parseThumbAndImages(prefix=${prefix})}
 
 #define	defIt(prefix, url, field, value)
 #live	if (define(${prefix}->${field}, ${value}))
@@ -238,7 +245,7 @@ ${d} 00:00:00
 ${d}
 #live	endif
 
-#define	pressItems->numFields	15
+#define	pressItems->numFields	17
 #define	pressItems->field[1]	types
 #define	pressItems->field[2]	type
 #define	pressItems->field[3]	url
@@ -254,15 +261,17 @@ ${d}
 #define	pressItems->field[13]	thumb
 #define	pressItems->field[14]	person
 #define	pressItems->field[15]	new
+#define	pressItems->field[16]	body
+#define	pressItems->field[17]	patsez
 
-#define	addPress(type, url, dt, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, added, headline, subhead, images, todo, media, audio)
+#define	addPress(type, url, dt, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, added, headline, subhead, images, todo, media, audio, patsez)
 #live	if (defined(url))
 
 #live		if (defined(update))
 <h1>update (pub:${dt}) (gig: ${datetime}) (type:${type})</h1>
-#insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", audio="${audio}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}";
+#insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", patsez="${patsez}", audio="${audio}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}";
 
-#live			if (sql(x:insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", audio="${audio}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}"))
+#live			if (sql(x:insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", patsez="${patsez}", audio="${audio}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}"))
 #live			endif
 #live				if ((getval(type) == interview) & (defined(datetime)))
 #live					if (sql(x:update gig set extra=concat('interview,',extra) where extra not like '%%interview%%' and datetime='${fixDt(${datetime})}'))
@@ -326,6 +335,8 @@ ${d}
 #live			if (defIt(prefix=${pre}, url=${url}, field=added, value=${added}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=source, value=${source}))
+#live			endif
+#live			if (defIt(prefix=${pre}, url=${url}, field=patsez, value=${patsez}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=credit, value=${credit}))
 #live			endif
@@ -476,6 +487,30 @@ ${d}
 		credit=Paul McGuire,
 		dt=2021-09-05,
 		added=2023-09-23)}
+
+#	${addPress(type=interview,
+#		url=${jbc_press}/20141112_press_julioruiz.html,
+#		images=/images/20141112/20141112_JazzButcher_madrid_radio1$$/images/20141112/20141112_JazzButcher_madrid_radio2$$/images/20141112/20141112_JazzButcher_madrid_radio3$$/images/20141112/20141112_JazzButcher_madrid_radio4$$,
+#		audio=/audio/20141112/20141112_JazzButcher_JulioRuiz_Interview_Edit.mp3;;The Interview$$http://jazzbutcher.com/audio/20141112/20141112_Madrid_MelanieHargreavesFathersJaguar.mp3;;Melanie Hargreaves' Father's Jaguar$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20141112/20141112_RTVE_MelanieHargreave.mp4;;Melanie Hargreaves' Father's Jaguar$$;;Girlfriend$$,
+#		publication=RTVE - Radio 3,
+#		location=Madrid\, Spain,
+#		title=RTVE - Radio Televisión Española,
+#		headline=Radio 3 with Julio Ruiz,
+#		credit=Julio Ruiz,
+#		dt=2014-11-12,
+#		added=2023-11-08,
+)}
+
+
+#2014-11-12 18:00:00','set',1,1,'The Interview',NULL,NULL,NULL,'http://jazzbutcher.com/audio/20141112/20141112_JazzButcher_JulioRuiz_Interview_Edit.mp3',NULL,NULL);
+#1992-05-16 16:00:00','set',1,1,'The Interview',NULL,"Master recording. College radio interview with a couple of live tunes",NULL,'http://jazzbutcher.com/audio/19920516/19920516_JazzButcher_WNUR_Gen0.mp3','David Whittemore','http://davidwhittemore.com');
+#1990-11-19 00:00:00','set',1,1,'The Interview',NULL,NULL,NULL,'http://jazzbutcher.com/audio/19901119/19901119_JazzButcher_KTBS_Gen1_Flat.mp3',"Robert Jacob",NULL);
+#1993-02-15 00:00:00','set',1,0,'The Interview',NULL,"In French, from Gen1 Cassette",NULL,'http://jazzbutcher.com/audio/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3',NULL,NULL);
+#1992-04-25 12:00:00','set',1,1,'The Interview',NULL,"Gen 1 Cassette. Includes the 'Sydney Meats Story'",NULL,'http://jazzbutcher.com/audio/19920425/19920425_JazzButcher_WRAS_Gen1_Flat.mp3','David Whittemore','http://davidwhittemore.com');
+#1992-04-26 12:00:00','set',1,1,'The Interview',NULL,NULL,NULL,'http://jazzbutcher.com/audio/19920426/19920426_JazzButcher_WXYC_Gen0_Flat.mp3','David Whittemore','http://davidwhittemore.com');
+#1992-05-06 12:00:00','set',1,1,'The Interview',NULL,NULL,NULL,'http://jazzbutcher.com/audio/19920506/19920506_JazzButcher_CBC_Gen0_Flat.mp3',"Brent Brambury",NULL);
+#1992-06-26 00:00:00','set',1,1,'The Interview',NULL,NULL,NULL,'http://www.adjective.com/audio/eg/whpk_interview.mp3','David Whittemore','http://davidwhittemore.com');
+#1982-12-18 00:00:00','set',1,0,'The Entire Show',NULL,'excerpts',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19821218/19821218_barker.mp3','David E. Barker',NULL);
 
 	${addPress(type=interview,
 		url=${jbc_press}/201812_press_bigstir5.html,
@@ -1312,7 +1347,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=2016-02-03,
 		source=http://www.distorsioni.net/canali/interviste/il-ritorno-del-macellaio-jazz)}
 
-	${addPress(type=gig;interview,
+	${addPress(type=interview;gig,
 		url=${jbc_press}/20000503_themadcapspeaks.html,
 		credit=Lisa King,
 		publication=The Madcap Speaks,
@@ -1383,6 +1418,11 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=2014-11-12 18:00:00,
 		dt=2014-11-12 18:00:00,
 		credit=Jului Ruiz,
+		images=/images/20141112/20141112_JazzButcher_madrid_radio1$$/images/20141112/20141112_JazzButcher_madrid_radio2$$/images/20141112/20141112_JazzButcher_madrid_radio3$$/images/20141112/20141112_JazzButcher_madrid_radio4$$,
+		audio=/audio/20141112/20141112_JazzButcher_JulioRuiz_Interview_Edit.mp3;;The Interview::1$$http://jazzbutcher.com/audio/20141112/20141112_Madrid_MelanieHargreavesFathersJaguar.mp3;;Melanie Hargreaves' Father's Jaguar::2$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20141112/20141112_RTVE_MelanieHargreave.mp4;;Melanie Hargreaves' Father's Jaguar::2$$;;Girlfriend::3$$,
+		patsez=${literalizeCommas(
+		Live on the air with Julio Ruiz, the "Espanish John Peel". National radio, six in the evening. He played lots of tunes from Gentleman Adventurers. I played "Melanie Hargreaves' Father's Jaguar" and "Girlfriend". For the interview I had an interpreter. At one point she failed to translate whatever Julio said but it involved the words "Kevin Ayers, Lou Reed, Bob Dylan..." I enjoyed that bit, though, now I come to think about it, he was probably saying "This bloke is not as good as...";;Pat Fish;;;;2014-11-26 21:00:01
+		)},
 		source=)}
 
 	${addPress(type=interview,
@@ -2635,7 +2675,20 @@ subhead=(20 December 1957 – 5 October 2021),
 	${doListPress(type=eg)}
 	${doListPress(type=sumo)}
 	${end_tabs}
-	${jbc_footer}
+	$ {jbc_footer}
+#live   else
+	${definePressItems()}
+#live		if (defined(pressItems[${page}]->url))
+#
+#	auto generate body-less pages
+#
+#live			if (defined(pressItems[${page}]->body))
+				${extractPress(body=${pressItems[${page}]->body})}
+#live			else
+				${extractPress(body=${literalizeCommas()})}
+#live			endif
+				${jbc_footer}
+#live		endif
 #live	endif
 
 #define	96observer.html

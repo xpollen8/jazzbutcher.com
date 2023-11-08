@@ -74,15 +74,19 @@
 #live			if (define(parts[3]), )
 #live			endif
 #live			if (makeArray(parts, ;;, ${chunks[${ci}]}))
-#live				if (defined(parts[1]))
+#live				if ((defined(parts[1])) || (defined(parts[2])) || (defined(parts[3])))
 #live					if (define(s_parts[2]), )
 #live					endif
 #live					if (define(s_parts[3]), )
 #live					endif
 #live					if (makeArray(s_parts, ::, ${parts[2]}))
-							<div class="listItem">
-								${linkAudio(title=${literalizeCommas(${s_parts[1]})}, mp3=${parts[1]}, ordinal=${s_parts[2]}, comment=${s_parts[3]}, autolink=no)}
-							</div>
+							${define(_embed->mediaurl, ${parts[1]})}
+							${define(_embed->ordinal, ${s_parts[2]})}
+							${define(_embed->song, ${literalizeCommas(${s_parts[1]})})}
+							${define(_embed->author, )}
+							${define(_embed->comment, )}
+							${define(_embed->mediacredit, )}
+							${doMediaEmbed(pr=_embed)}
 #live					endif
 #live				endif
 					<p />
@@ -2351,6 +2355,15 @@ ${_d[3]}
 #live			endif
 #live		endwhile
 			</span>
+##live	else
+##
+##	no audio - just a song listing
+##
+#NO ORD
+##live		if (defined(${pr}->ordinal))
+#				<span class="listenItemOrdinal">${${pr}->ordinal}.</span>
+##live		endif
+#				${songLinkMapped(${literalizeCommas(${${pr}->song})})}
 #live	endif
 
 #define	fetchGigSongContent(datetime)

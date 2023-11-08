@@ -25,6 +25,7 @@ create table press (
 	source varchar(200) NOT NULL,
 	credit varchar(200) NOT NULL,
 	body MEDIUMTEXT,
+	patsez MEDIUMTEXT,
 	INDEX idx0(press_id),
 	UNIQUE INDEX idx1(url),
 	INDEX idx2(type),

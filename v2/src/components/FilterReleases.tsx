@@ -62,7 +62,7 @@ const	FilterReleases = ({ project, filters }: { project?: string, filters?: any 
 								<Link href={item?.href || ''}><div className="text-center text-sky-800 px-2">
 									{(item.project) && <><b>{expand(item.project)}</b><hr /></>}
 									{(item.collaboration) && <><b>{item.collaboration}</b><hr /></>}
-									<span className="font-light">{item.title}</span>
+									<span className="font-light">{item?.title?.replace('&amp;', '&')}</span>
 								</div></Link>
 							</div>
 						</div>)

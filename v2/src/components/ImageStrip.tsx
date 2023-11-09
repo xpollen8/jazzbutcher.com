@@ -7,12 +7,13 @@ const ImageStrip = (props: any) => {
 	const images = props?.images;
 	const width = props?.width || 350;
 	const style = props?.style;
-	const className = props?.className;
+	const className = props?.className || "imageStrip outline outline-slate-400 flex flex-wrap gap-3 bg-slate-100 text-center drop-shadow-lg";
 	return images && images?.length && <div style={style} className={className}>
 		{images?.map(([ inImage, caption, source, sourceurl, sourcedate ]: any, key: number) => {
 			const { image, thumb='' } = parseImage(inImage);
 			return image && <Link key={key} href={image}>
 				<Image
+					className="drop-shadow-md"
 					alt={caption || 'album image'}
 					width={width} height={width}
 					src={thumb}

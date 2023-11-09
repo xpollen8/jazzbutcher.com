@@ -47,7 +47,7 @@ const	LyricMedia = ({ media }: any) => {
 	return <>MEDIA</>;
 }
 
-const	LyricImages = ({ images }: any) => <ImageStrip className="drop-shadow-md imageStrip clear_float text-center w-60" images={parseCaptionsSourcesEtc(images, true)} />;
+const	LyricImages = ({ images }: any) => <ImageStrip images={parseCaptionsSourcesEtc(images, true)} />;
 
 const Lyrics = (props: any, foundon: any[]) => {
 	const { mp3, video, media, images, lyrics, key } = props;

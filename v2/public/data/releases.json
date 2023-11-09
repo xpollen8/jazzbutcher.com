@@ -29,7 +29,7 @@
 
 		"country": "UK",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -95,7 +95,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -161,7 +161,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -227,7 +227,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -293,7 +293,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -359,7 +359,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "elephant_man",
 
@@ -425,7 +425,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "inside_heart",
 
@@ -491,7 +491,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -557,7 +557,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -623,7 +623,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -689,7 +689,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -755,7 +755,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -821,7 +821,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -887,7 +887,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "uptoyou",
 
@@ -953,7 +953,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1019,7 +1019,7 @@
 
 		"country": "USA, Canada, Australia",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1085,7 +1085,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1151,7 +1151,7 @@
 
 		"country": "UK",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1217,7 +1217,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1283,7 +1283,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1349,7 +1349,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1415,7 +1415,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1481,7 +1481,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1547,7 +1547,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1613,7 +1613,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1679,7 +1679,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1745,7 +1745,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1811,7 +1811,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1877,7 +1877,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -1943,7 +1943,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2009,7 +2009,7 @@
 
 		"country": "USA",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2075,7 +2075,7 @@
 
 		"country": "Australia",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2141,7 +2141,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2207,7 +2207,7 @@
 
 		"country": "Canada",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2273,7 +2273,7 @@
 
 		"country": "Austria",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2339,7 +2339,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2405,7 +2405,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2471,7 +2471,7 @@
 
 		"country": "France",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "vodka",
 
@@ -2537,7 +2537,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2603,7 +2603,7 @@
 
 		"country": "UK",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2669,7 +2669,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2735,7 +2735,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2801,7 +2801,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2867,7 +2867,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2933,7 +2933,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -2999,7 +2999,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -3065,7 +3065,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -3131,7 +3131,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -3197,7 +3197,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -3263,7 +3263,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -3329,7 +3329,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -3395,7 +3395,7 @@
 
 		"country": "UK",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -3461,7 +3461,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -3509,7 +3509,7 @@
 
 		"thumb": "/images/releases/va_shadow1",
 
-		"blurb": "A lovely interpretation of the Jonathan Richman classic which was originally released in 1979 on the <b>Back In Your Life</b> LP by Jonathan Richman And The Modern Lovers.",
+		"blurb": "A lovely interpretation of the Jonathan Richman classic which was originally released in 1979 on the <b>Back In Your Life</b> LP by Jonathan Richman And The Modern Lovers.;;Perfection As A Hipster;;Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de;;2000-10-10",
 
 		"dtreleased": "1984",
 
@@ -3527,7 +3527,7 @@
 
 		"country": 	"",
 
-		"credit": "Perfection As A Hipster;;Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de;;2000-10-10",
+		"source": 	"",
 
 		"contribution": "aff",
 
@@ -3593,7 +3593,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -3659,7 +3659,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "becky",
 
@@ -3707,7 +3707,7 @@
 
 		"thumb": "/images/releases/va_seventeen_2_back;;Back",
 
-		"blurb": "The Jazz Butcher cover version is unavailable elsewhere. Interestingly enough, the same must be said about the other contributions ... The Rag Dolls were an early and short-living band of Dave Kusworth (Jacobites), <i>Missionary Boy</i> features Nikki Sudden himself on vocals (and is therefore better than the version that appears on <b>The Bible Belt</b> LP with Lizard on vocals) while Sad Go Round was The Swell Maps (!) in disguise. Obviously essential, this highly sought after split single came with a fanzine.",
+		"blurb": "The Jazz Butcher cover version is unavailable elsewhere. Interestingly enough, the same must be said about the other contributions ... The Rag Dolls were an early and short-living band of Dave Kusworth (Jacobites), <i>Missionary Boy</i> features Nikki Sudden himself on vocals (and is therefore better than the version that appears on <b>The Bible Belt</b> LP with Lizard on vocals) while Sad Go Round was The Swell Maps (!) in disguise. Obviously essential, this highly sought after split single came with a fanzine.;;Perfection As A Hipster;;Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de;;2000-10-10",
 
 		"dtreleased": "1983",
 
@@ -3725,7 +3725,7 @@
 
 		"country": 	"",
 
-		"credit": "Perfection As A Hipster;;Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de;;2000-10-10",
+		"source": 	"",
 
 		"contribution": "envoy",
 
@@ -3791,7 +3791,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -3839,7 +3839,7 @@
 
 		"thumb": "/images/releases/va_gunfire_front",
 
-		"blurb": "The Jazz Butcher contribution subsequently appeared as an additional track on <!-- BEG:expanded_from:[album:The Gift of Music] --> <span class='release_title'><b><a href='/albums/gift1.html'>The Gift of Music</a></b></span> <!-- expanded_from:[album:The Gift of Music]:END -->.",
+		"blurb": "The Jazz Butcher contribution subsequently appeared as an additional track on <!-- BEG:expanded_from:[album:The Gift of Music] --> <span class='release_title'><b><a href='/albums/gift1.html'>The Gift of Music</a></b></span> <!-- expanded_from:[album:The Gift of Music]:END -->.;;Perfection As A Hipster;;Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de;;2000-10-10",
 
 		"dtreleased": "1985",
 
@@ -3857,7 +3857,7 @@
 
 		"country": 	"",
 
-		"credit": "Perfection As A Hipster;;Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de;;2000-10-10",
+		"source": 	"",
 
 		"contribution": "lost",
 
@@ -3923,7 +3923,7 @@
 
 		"country": 	"",
 
-		"credit": "Perfection As A Hipster;;Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de;;2000-10-10",
+		"source": 	"",
 
 		"contribution": "city",
 
@@ -3943,7 +3943,7 @@
 
 		"images": 	"",
 
-		"notes": "Note: Limited edition on clear vinyl. The Jazz Butcher contribution subsequently appeared on the <!-- BEG:expanded_from:[album:Big Questions] --> <span class='release_title'><b><a href='/albums/gift2.html'>Big Questions</a></b></span> <!-- expanded_from:[album:Big Questions]:END --> LP/CD. Having said that, this album also includes an early studio version of '<span class='song'> <i>Leaving It Up To You</i> <span class='song_author'>(John Cale)</span> </span>' by <!-- BEG:expanded_from:[person:Max Eider] --> <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span> <!-- expanded_from:[person:Max Eider]:END --> with <!-- BEG:expanded_from:[person:Pat Fish] --> <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> <!-- expanded_from:[person:Pat Fish]:END --> on guitar as well as 'Fear (Is A Man's Best Friend)' by <!-- BEG:expanded_from:[person:David J.] --> <span class='person'> <a href='/people/david_j.html'>David J.</a> </span> <!-- expanded_from:[person:David J.]:END --> and a different version of '2:35' by Spacemen 3 amongst others.",
+		"notes": "Note: Limited edition on clear vinyl. The Jazz Butcher contribution subsequently appeared on the <!-- BEG:expanded_from:[album:Big Questions] --> <span class='release_title'><b><a href='/albums/gift2.html'>Big Questions</a></b></span> <!-- expanded_from:[album:Big Questions]:END --> LP/CD. Having said that, this album also includes an early studio version of '<span class='song'> <i>Leaving It Up To You</i> <span class='song_author'>(John Cale)</span> </span>' by <!-- BEG:expanded_from:[person:Max Eider] --> <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span> <!-- expanded_from:[person:Max Eider]:END --> with <!-- BEG:expanded_from:[person:Pat Fish] --> <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> <!-- expanded_from:[person:Pat Fish]:END --> on guitar as well as 'Fear (Is A Man's Best Friend)' by <!-- BEG:expanded_from:[person:David J.] --> <span class='person'> <a href='/people/david_j.html'>David J.</a> </span> <!-- expanded_from:[person:David J.]:END --> and a different version of '2:35' by Spacemen 3 amongst others.;;Perfection As A Hipster;;Andreas.Hering[at]<i><b>-remove-</b></i>stud.uni-hannover.de;;2000-10-10",
 
 		"patsez": 	"",
 
@@ -3989,7 +3989,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "_49",
 
@@ -4055,7 +4055,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "odd",
 
@@ -4121,7 +4121,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "go",
 
@@ -4187,7 +4187,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "h2o",
 
@@ -4253,7 +4253,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "indian_summer",
 
@@ -4319,7 +4319,7 @@
 
 		"country": "France",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "animals",
 
@@ -4385,7 +4385,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "shame_about_you",
 
@@ -4451,7 +4451,7 @@
 
 		"country": "Germany",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "holiday",
 
@@ -4517,7 +4517,7 @@
 
 		"country": "Australia",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -4583,7 +4583,7 @@
 
 		"country": "Australia",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -4649,7 +4649,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "bigbad",
 
@@ -4715,7 +4715,7 @@
 
 		"country": "Australia",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -4781,7 +4781,7 @@
 
 		"country": "UK",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -4847,7 +4847,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -4913,7 +4913,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "chang",
 
@@ -4979,7 +4979,7 @@
 
 		"country": "CA",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -5045,7 +5045,7 @@
 
 		"country": "FR",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "ufo_man",
 
@@ -5111,7 +5111,7 @@
 
 		"country": "FR",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "ufo_man",
 
@@ -5177,7 +5177,7 @@
 
 		"country": "UK",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "drugs",
 
@@ -5243,7 +5243,7 @@
 
 		"country": "DE",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "girls",
 
@@ -5309,7 +5309,7 @@
 
 		"country": "FR",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "davis",
 
@@ -5375,7 +5375,7 @@
 
 		"country": "US",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "wilson_quality_people",
 
@@ -5441,7 +5441,7 @@
 
 		"country": "UK",
 
-		"credit": "David Whittemore",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -5507,7 +5507,7 @@
 
 		"country": "UK",
 
-		"credit": "David Whittemore",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -5573,7 +5573,7 @@
 
 		"country": "UK",
 
-		"credit": "David Whittemore",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -5639,7 +5639,7 @@
 
 		"country": "UK",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -5705,7 +5705,7 @@
 
 		"country": "DE",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -5771,7 +5771,7 @@
 
 		"country": "UK",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -5837,7 +5837,7 @@
 
 		"country": "UK",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -5903,7 +5903,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "[ mercy, all_the_saints, wildlife ]",
 
@@ -5969,7 +5969,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "afterhours",
 
@@ -6035,7 +6035,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -6101,7 +6101,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -6167,7 +6167,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -6233,7 +6233,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": "trampling_tokyo",
 
@@ -6299,7 +6299,7 @@
 
 		"country": 	"",
 
-		"credit": "David Whittemore",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -6365,7 +6365,7 @@
 
 		"country": 	"",
 
-		"credit": "Andrew Brooksbank;;;;2017-06-17",
+		"source": "Andrew Brooksbank;;;;2017-06-17",
 
 		"contribution": 	"",
 
@@ -6431,7 +6431,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -6497,7 +6497,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -6563,7 +6563,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 
@@ -6629,7 +6629,7 @@
 
 		"country": 	"",
 
-		"credit": 	"",
+		"source": 	"",
 
 		"contribution": 	"",
 

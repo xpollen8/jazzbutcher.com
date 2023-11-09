@@ -3245,7 +3245,7 @@ ${define(_set, false)}
 #live	endif
 #live	endif
 
-#define	parseCredit(c)
+#define	parseCredit(c, t=Credit)
 #live	if (define(_rdate,))
 #live	endif
 #live	if (define(_rlink,))
@@ -3278,9 +3278,9 @@ ${define(_set, false)}
 				${define(_rtext, ${_r[1]})}
 #live		endif
 #live		if (getval(_rtext) == href)
-	${g_genericweb(s=credit, t=Credit, x=${_rtext}, xd=${_rdate})}
+	${g_genericweb(s=credit, t=${t}, x=${_rtext}, xd=${_rdate})}
 #live		else
-	${g_credit(g=${filterProgramArguments(${_rtext})}, u=${_rlink}, d=${_rdate})}
+	${g_credit(g=${filterProgramArguments(${_rtext})}, u=${_rlink}, d=${_rdate}, t=${t})}
 #live		endif
 #live	endif
 
@@ -4080,11 +4080,20 @@ ${define(_set, false)}
 #live	endif
 #live	if (defined(${prefix}->blurb))
 			<blockquote>
-				${${prefix}->blurb}
-#live		if (defined(${prefix}->credit))
-				<br />
-				${parseCredit(c=${${prefix}->credit})}
+			${define(Bx[1],)}
+			${define(Bx[2],)}
+			${define(Bx[3],)}
+			${define(Bx[4],)}
+#live		if (makeArray(Bx, ;;, ${${prefix}->blurb}))
+			${Bx[1]}
+#live			if (defined(Bx[2]))
+				<br />${parseCredit(c=${Bx[2]};;${Bx[3]};;${Bx[4]}, t=Source)}
+#live			endif
 #live		endif
+##live		if (defined(${prefix}->credit))
+#				<br />
+#				${parseCredit(c=${${prefix}->credit})}
+##live		endif
 			</blockquote>
 #live	endif
 	</div>

@@ -51,16 +51,13 @@ const PressItem = ({ item }: { item: any }) => {
 	}
 
 	const ArticleTitle = ({ article }: any) => {
-		return (<center>
+		return (<center className="listItem">
 			{(article?.publication || article?.title || article?.headline || article?.subhead || article?.summary) && (<>
 				{(article?.publication) && <><b style={{ fontSize: '1.5em' }}>{article.publication}</b><br /></>}
 				{(article?.title) && <><span style={{ fontSize: '1.5em' }}>{article.title}</span><br /></>}
 				{(article?.headline) && <><span style={{ fontSize: '1.3em' }}>{article.headline}</span><br /></>}
 				{(article?.subhead) && <><span style={{ fontSize: '1.1em' }}>{article.subhead}</span><br /></>}
-				{(article?.summary) && <><blockquote style={{ fontSize: '.95em' }} dangerouslySetInnerHTML={{ __html: article.summary }} /><br /></>}
-				<p />
-				<hr />
-				<p />
+				{(article?.summary) && <><blockquote style={{ fontSize: '.95em' }} dangerouslySetInnerHTML={{ __html: article.summary }} /></>}
 			</>)}
 		</center>)
 	}
@@ -114,10 +111,10 @@ const PressItem = ({ item }: { item: any }) => {
 	return (item) && <>
 		<ArticleInfoBox article={item} />
 		<div style={{ margin: '5px' }}>
-			<ArticleTitle article={item} />
 			<ArticleThumbAndImages article={item} />
+			<ArticleTitle article={item} />
 			<ArticleMedia article={item} />
-			<div dangerouslySetInnerHTML={{ __html: item?.body }} />
+			{(!!item?.body?.length) && <div className="listItem" dangerouslySetInnerHTML={{ __html: item?.body }} />}
 			<ArticleAnnotation article={item} />
 			<ArticleAudio article={item} />
 		</div>

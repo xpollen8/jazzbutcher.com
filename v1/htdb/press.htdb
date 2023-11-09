@@ -1,8 +1,15 @@
 #define	extractThumb(str) ${truncAt(;;, ${str})}
 
+#audio=url;;song;;credits
+#song=>title::ordinal::version
+#credits=>person^^person^^
+#person=>name::instruments
+# EX: url;;title::ordinal::version;;person::instruments^^
+##define parseAlbumAudio(prefix, field=audio)
+
 #define	parseAudio(prefix)
 #live	if (defined(${prefix}->audio))
-	${linkAudio(title=${literalizeCommas(${${prefix}->title} - ${mkPressDate(ts=${${prefix}->dt})})}, mp3=${truncAt(;;, ${${prefix}->audio})}, autolink=no)}
+	${parseAlbumAudio(prefix=${prefix})}
 #live	endif
 
 ## media=URL;;description;;credit;;credit_url;;credit_date$$....
@@ -92,7 +99,7 @@
 #live	endif
 	<p />
 	${body}
-#live	if ((getval(types[${t}]) == album) & (defined(${prefix}->album)))
+#live	if ((getval(${prefix}->type) == album) & (defined(${prefix}->album)))
 	<div style="font-size: .85em; margin-top: 10px;">
 		${mkAlbumBlurb(prefix=${lookupAlbumBy(l=${${prefix}->album})})}
 	</div>
@@ -121,19 +128,19 @@
 		- ${literalizeCommas(${mkPressDate(ts=${${prefix}->dt})})}
 	)}
 
-#live	if (makeArray(types, ;, ${${prefix}->types}))
+##live	if (makeArray(types, ;, ${${prefix}->types}))
 
-#live		while (t = types[*])
-#live			if (getval(types[${t}]) == eg)
+##live		while (t = types[*])
+#live			if (getval(${prefix}->type) == eg)
 				<div class="gig_eg"><a href="${jbc_search}?f=extras&q=eg"></a></div>
 #live			endif
-#live			if (getval(types[${t}]) == sumo)
+#live			if (getval(${prefix}->type) == sumo)
 				<div class="gig_sumo"><a href="${jbc_search}?f=extras&q=sumo"></a></div>
 #live			endif
-#live			if (getval(types[${t}]) == wilson)
+#live			if (getval(${prefix}->type) == wilson)
 				<div class="gig_wilson"><a href="${jbc_search}?f=extras&q=wilson"></a></div>
 #live			endif
-#live		endwhile
+##live		endwhile
 
 	<div class="listItem" style="border: 1px solid; background: #eeffee; ">
 
@@ -151,17 +158,17 @@
 		<div>
 
 
-#live		while (t = types[*])
-#live			if (getval(types[${t}]) == kit)
+##live		while (t = types[*])
+#live			if (getval(${prefix}->type) == kit)
 				<b style="margin: 3px; ">Press Kit/Biography</b>
 #live			endif
-#live			if (getval(types[${t}]) == clipping)
+#live			if (getval(${prefix}->type) == clipping)
 				<b style="margin: 3px; ">Press Clipping </b>
 #live			endif
-#live			if (getval(types[${t}]) == pat)
+#live			if (getval(${prefix}->type) == pat)
 				<b style="margin: 3px; ">The Butcher Writes </b>
 #live			endif
-#live			if (getval(types[${t}]) == interview)
+#live			if (getval(${prefix}->type) == interview)
 				<b style="margin: 3px; ">Interview w/Conspirator:</b>
 #live				if (defined(${prefix}->person))
 #live					if (makeArray(itypes, ;, ${${prefix}->person}))
@@ -172,18 +179,18 @@
 #live					endif
 #live				endif
 #live			endif
-#live			if (((getval(types[${t}]) == gig) || (getval(types[${t}]) == preshow)) & (defined(${prefix}->datetime)))
+#live			if (((getval(${prefix}->type) == gig) || (getval(${prefix}->type) == preshow)) & (defined(${prefix}->datetime)))
 				<b style="margin: 3px; ">The associated Gig:</b>
 					<a href="${jbc_gigs}/${ts2URI(${${prefix}->datetime})}">
 						${substr(0, 10, ${${prefix}->datetime})}
 					</a>
 #live			endif
-#live			if ((getval(types[${t}]) == album) & (defined(${prefix}->album)))
+#live			if ((getval(${prefix}->type) == album) & (defined(${prefix}->album)))
 				<b style="margin: 3px; ">Album Review:</b> ${${${prefix}->album}}
 #live			endif
 
-#live		endwhile
-#live	endif
+##live		endwhile
+##live	endif
 #live	if (getval(${prefix}->added))
 			<b style="margin: 3px; ">Item added:</b> ${${prefix}->added}
 #live	endif
@@ -206,17 +213,33 @@
 			<b style=" font-size: 1.25em; ">${${prefix}->subhead}</b><br />
 #live	endif
 #live	if (defined(${prefix}->summary))
-			(<b style=" font-size: .95em; ">${${prefix}->summary}</b>)<br />
+			<blockquote style=" font-size: .95em; ">${${prefix}->summary}</blockquote><br />
 #live	endif
 	</center>
 	<hr />
 #live	endif
-
 # below the heading/subhead
-
-	${parseThumbAndImages(prefix=${prefix})}
+#live	if (defined(${prefix}->annotation))
+#live	if (makeArray(${prefix}MkKDf, $$, ${${prefix}->annotation}))
+#live		loop (XsA, 1, ${${prefix}MkKDf->numResults})
+#live			if (makeArray(${prefix}annoX, ;;, ${${prefix}MkKDf[${XsA}]}))
+					${tag_beg}
+#live				if (defined(${prefix}annoX[2]))
+					${${prefix}annoX[2]} Says
+#live				else
+					Comments
+#live				endif
+					${tag_end}
+					<blockquote class="annotation">
+						${${prefix}annoX[1]}
+					</blockquote>
+#live			endif
+#live		endloop
+#live	endif
+#live	endif
 	${parseMedia(prefix=${prefix})}
 	${parseAudio(prefix=${prefix})}
+	${parseThumbAndImages(prefix=${prefix})}
 
 #define	defIt(prefix, url, field, value)
 #live	if (define(${prefix}->${field}, ${value}))
@@ -238,7 +261,7 @@ ${d} 00:00:00
 ${d}
 #live	endif
 
-#define	pressItems->numFields	15
+#define	pressItems->numFields	17
 #define	pressItems->field[1]	types
 #define	pressItems->field[2]	type
 #define	pressItems->field[3]	url
@@ -254,28 +277,39 @@ ${d}
 #define	pressItems->field[13]	thumb
 #define	pressItems->field[14]	person
 #define	pressItems->field[15]	new
+#define	pressItems->field[16]	body
+#define	pressItems->field[17]	annotation
 
-#define	addPress(type, url, dt, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, added, headline, subhead, images, todo, media, audio)
+#define	updatePressDatabase()
+#live	if (defined(updateDatabase))
+<h1>truncate</h1>
+#live		if (sql(truncate table press))
+#live		endif
+#live		loop (pi, 1, ${pressItems->numResults})
+#live			if (define(pr, pressItems[${pi}]))
+<h3>${pi}: update (pub:${${pr}->dt}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
+#live				if (sql(x:insert into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${${pr}->images}", media="${${pr}->media}", annotation="${filterProgramArguments(${${pr}->annotation})}", audio="${${pr}->audio}", publication="${${pr}->publication}", title="${${pr}->title}", headline="${${pr}->headline}", subhead="${${pr}->subhead}", location="${${pr}->location}", summary="${${pr}->summary}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->added})}", dtpublished="${fixDt(${${pr}->dt})}", dtgig="${fixDt(${${pr}->datetime})}", person="${${pr}->person}"))
+#live				endif
+#live			endif
+#live		endloop
+
+##live				if ((getval(type) == interview) & (defined(datetime)))
+##live					if (sql(x:update gig set extra=concat('interview,',extra) where extra not like '%%interview%%' and datetime='${fixDt(${datetime})}'))
+##live					endif
+##live				endif
+##live				if (((getval(type) == gig) || (getval(type) == preshow)) & (defined(datetime)))
+##live					if (sql(x:update gig set extra=concat('press,',extra) where extra not like '%%press%%' and datetime = '${fixDt(${datetime})}'))
+##live					endif
+##live				endif
+
+#live	endif
+
+#define	addPress(type, url, dt, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, added, headline, subhead, images, todo, media, audio, annotation)
+
 #live	if (defined(url))
 
-#live		if (defined(update))
-<h1>update (pub:${dt}) (gig: ${datetime}) (type:${type})</h1>
-#insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", audio="${audio}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}";
-
-#live			if (sql(x:insert into press set type="${replace(${type}, ;,,)}", todo="${todo}", url="${url}", album="${album}", thumb="${thumb}", images="${images}", media="${media}", audio="${audio}", publication="${publication}", title="${title}", headline="${headline}", subhead="${subhead}", location="${location}", summary="${summary}", source="${source}", credit="${credit}", dtadded="${fixDt(${added})}", dtpublished="${fixDt(${dt})}", dtgig="${fixDt(${datetime})}", person="${person}"))
-#live			endif
-#live				if ((getval(type) == interview) & (defined(datetime)))
-#live					if (sql(x:update gig set extra=concat('interview,',extra) where extra not like '%%interview%%' and datetime='${fixDt(${datetime})}'))
-#live					endif
-#live				endif
-#live				if (((getval(type) == gig) || (getval(type) == preshow)) & (defined(datetime)))
-#live					if (sql(x:update gig set extra=concat('press,',extra) where extra not like '%%press%%' and datetime = '${fixDt(${datetime})}'))
-#live					endif
-#live				endif
-#live		endif
-
-#live	if (makeArray(types, ;, ${type}))
-#live		while (t = types[*])
+##live	if (makeArray(types, ;, ${type}))
+##live		while (t = types[*])
 #live			if (getnum(pressItems->numResults) > 0)
 #live				if (define(pressItems->numResults, ${eval(${pressItems->numResults} + 1)}))
 #live				endif
@@ -285,9 +319,11 @@ ${d}
 #live			endif
 #live			if (define(pre, pressItems[${pressItems->numResults}]))
 #live			endif
-#live			if (defIt(prefix=${pre}, url=${url}, field=types, value=${type}))
-#live			endif
-#live			if (defIt(prefix=${pre}, url=${url}, field=type, value=${types[${t}]}))
+##live			if (defIt(prefix=${pre}, url=${url}, field=types, value=${type}))
+##live			endif
+##live			if (defIt(prefix=${pre}, url=${url}, field=type, value=${types[${t}]}))
+##live			endif
+#live			if (defIt(prefix=${pre}, url=${url}, field=type, value=${type}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=person, value=${person}))
 #live			endif
@@ -327,23 +363,12 @@ ${d}
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=source, value=${source}))
 #live			endif
+#live			if (defIt(prefix=${pre}, url=${url}, field=annotation, value=${annotation}))
+#live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=credit, value=${credit}))
 #live			endif
-#live		endwhile
-#live	endif
-#live	endif
-
-#define	addLiveInterviews()
-#live	if (sql(gl:select g.*, gs.* from gig g, gigsong gs where g.extra like '%%interview%%' and gs.song='The Interview' and g.datetime=gs.datetime))
-#live	while (o = gl[*]->datetime)
-	${addPress(type=interview,
-		url=${gl[${o}]->mediaurl},
-		title=${gl[${o}]->venue},
-		credit=${gl[${o}]->mediacredit},
-		location=${literalizeCommas(${gl[${o}]->city}, ${gl[${o}]->country})},
-		datetime=${gl[${o}]->datetime},
-		dt=${gl[${o}]->datetime})}
-#live	endwhile
+##live		endwhile
+##live	endif
 #live	endif
 
 #define	addLiveGigs()
@@ -388,10 +413,13 @@ ${d}
 
 #define	definePressItems()
 
+	${addPatLiveGigs()}
+	${addLiveGigs()}
+
 	${addPress(type=album, album=bacon,
-		url=${jbc_press}/19820905_press_mercutyandherald.html,
+		url=${jbc_press}/19820905_press_mercuryandherald.html,
 		publication=Mercury And Herald,
-		thumb=/images/19820905/19820905_press_mercutyandherald;;Philip Snow;;;;2022-06-02,
+		thumb=/images/19820905/19820905_press_mercuryandherald;;Philip Snow;;;;2022-06-02,
 		todo=OCR,
 		location=Northampton\, UK,
 		credit=Alex Dawson,
@@ -402,9 +430,9 @@ ${d}
 		added=2023-09-10)}
 
 	${addPress(type=gig,
-		url=${jbc_press}/19831008_press_mercutyandherald.html,
+		url=${jbc_press}/19831008_press_mercuryandherald.html,
 		publication=Mercury And Herald,
-		thumb=/images/19831008/19831008_press_mercutyandherald;;Philip Snow;;;;2022-06-02,
+		thumb=/images/19831008/19831008_press_mercuryandherald;;Philip Snow;;;;2022-06-02,
 		todo=OCR,
 		location=Northampton\, UK,
 		title=The gift of music,
@@ -466,16 +494,100 @@ ${d}
 		dt=2019-05-26,
 		added=2023-09-20)}
 
-	${addPress(type=interview,
+	${addPress(type=interview;podcast,
 		url=${jbc_press}/20210905_press_funhouse.html,
 		media=/images/20210905/20210905_pat_interview.docx;;Extended text document,
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20210905_interview_PaulMcGuire_TheFunhouse88.mp3,
-		publication=The Funhouse #88,
-		title=Pat Fish,
-		headline=Audio interview,
+		publication=The Funhouse,
+		title=Episode #88,
+		headline=Pat Fish Audio interview,
 		credit=Paul McGuire,
 		dt=2021-09-05,
 		added=2023-09-23)}
+
+	${addPress(type=interview;radio,
+		url=${jbc_press}/19920516_interview_WNUR.html,
+		audio=http://jazzbutcher.com/audio/19920516/19920516_JazzButcher_WNUR_Gen0.mp3;;The Interview$$;;Angels::1$$;;Take The Skinheads Bowling::2,
+		location=Chicago\, Illinois\, USA,
+		publication=WNUR,
+		title=Radio interview,
+		dt=1990-01-19,
+		summary=College radio interview with a couple of live tunes,
+		)}
+
+	${addPress(type=interview;radio,
+		url=${jbc_press}/19901119_interview_KTBS.html,
+		audio=http://jazzbutcher.com/audio/19901119/19901119_JazzButcher_KTBS_Gen1_Flat.mp3;;The Interview,
+		location=Austin\, Texas\, USA,
+		publication=KTBS,
+		credit=Robert Jacob,
+		title=Radio interview,
+		dt=1990-01-19,
+		)}
+
+	${addPress(type=interview;radio, person=pat;pete,
+		url=${jbc_press}/19930215_interview_paris.html,
+		audio=http://jazzbutcher.com/audio/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3;;The Interview::1::In French$$;;Partytime::2$$;;Angels::3$$;;Mr. Odd::4$$;;Goodnight Irene::5$$,
+		location=Paris\, France,
+		publication=French National Radio,
+		title=French-language interview,
+		dt=1993-02-15,
+		annotation=${literalizeCommas(
+			The guy hosting the event was Bernard Lenoir, easily France's most famous rock DJ. The word is (and I believe it) that Jim Morrison actually died in his house, and had to be moved back across town into his own shower...
+			)};;Pat Fish$$
+		)}
+
+	${addPress(type=interview;radio,
+		url=${jbc_press}/19920425_interview_WRAS.html,
+		audio=http://jazzbutcher.com/audio/19920425/19920425_JazzButcher_WRAS_Gen1_Flat.mp3;;The Interview,
+		publication=WRAS,
+		location=Atlanta\, Georgia\, USA,
+		title=WRAS Radio Interview,
+		dt=1992-04-25,
+		summary=${literalizeCommas(
+			Includes the 'Sydney Meats Story'
+			)}
+		)}
+
+	${addPress(type=interview;radio, person=dooj;pat,
+		url=${jbc_press}/19920426_interview_WXYC.html,
+		audio=http://jazzbutcher.com/audio/19920426/19920426_JazzButcher_WXYC_Gen0_Flat.mp3;;The Interview,
+		publication=WXYC,
+		location=Chapel Hill\, North Carolina\, USA,
+		title=WXYC Radio Interview,
+		dt=1992-04-26,
+		summary=${literalizeCommas(
+			In-studio. Basic college radio interview.
+			Pat & Dooj.
+			)}
+		)}
+
+	${addPress(type=interview;radio,
+		url=${jbc_press}/19920506_interview_CBC.html,
+		audio=http://jazzbutcher.com/audio/19920506/19920506_JazzButcher_CBC_Gen0_Flat.mp3;;The Interview,
+		publication=CBC,
+		location=Toronto\, Canada,
+		title=CBC Radio Interview,
+		dt=1992-05-06,
+		credit=Brent Brambury,
+		summary=${literalizeCommas(
+			Very thoughtful ${blue} era interview during tour of US/Canada.
+			)}
+		)}
+
+	${addPress(type=interview;eg;radio, person=eg,
+		url=${jbc_press}/19920606_interview_blackeg_whpk.html,
+		audio=http://www.adjective.com/audio/eg/whpk_interview.mp3,
+		publication=WHPK,
+		location=Chicago\, Illinois\, USA,
+		title=Black Eg Radio Interview,
+		dt=1992-06-26,
+		credit=Joe Beaulieu,
+		audio=http://www.adjective.com/audio/eg/whpk_interview.mp3;;The Interview$$http://www.adjective.com/audio/eg/blackeg.mp3;;Excerpts;;David Whittemore,
+		summary=${literalizeCommas(
+			Karel Von Dämmerung , Otto Von Dämmerung give preposterous answers to preposterous questions.
+			)}
+		)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/201812_press_bigstir5.html,
@@ -499,7 +611,7 @@ ${d}
 		datetime=1990-04-11 00:00:00,
 		dt=1990-04-11)}
 
-	${addPress(type=interview, person=barker,
+	${addPress(type=interview;podcast, person=barker,
 		url=${jbc_press}/20220128_interview_50YearsOfFun.html,
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20220128_DaveBarker_interview_50YearsOfFun.mp3;;The Interview,
 		publication=50 Years of Fun,
@@ -523,7 +635,10 @@ ${d}
 		credit=JC,,
 		source=https://happymediumproductions.weebly.com/rain---the-jazz-butcher.html,
 		dt=1986-07-18,
-		added=2023-09-20)}
+		added=2023-09-20,
+		annotation=${literalizeCommas(
+			Well John, thanks for that rather strange and touching experience, which carried me back to a time when we were largely happy if permanently pissed. It says much for our dedication to our art that we sound so pleased to be drinking Heineken. But who the hell is that posh bloke Eider and where did he get that accent? Also you have made me catch a few bars of some tracks I've been assiduously avoiding for the last 30 years or so. But thanks all the same for the memory and indeed the Heineken.)};;Max Eider;;;;2017-10-01$$
+		)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/198306_all_that_thinks_and_moves_2.html,
@@ -1312,7 +1427,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=2016-02-03,
 		source=http://www.distorsioni.net/canali/interviste/il-ritorno-del-macellaio-jazz)}
 
-	${addPress(type=gig;interview,
+	${addPress(type=interview;gig,
 		url=${jbc_press}/20000503_themadcapspeaks.html,
 		credit=Lisa King,
 		publication=The Madcap Speaks,
@@ -1353,36 +1468,45 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=2016-03-15,
 		source=http://www.popmatters.com/review/the-jazz-butcher-the-last-of-the-gentleman-adventurers/)}
 
-#	${addPress(type=interview,
-#		url=${jbc_audio}/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3,
-#		title=<b>"Near Perfect Pitch" podcast #35</b>,
-#		dt=2017-03-20,
-#		credit=Dara Mottahed,
-#		source=http://www.nearperfectpitch.com/,
-#		summary=${literalizeCommas(
-#		Dara Mottahed and Pat (via Skype) catch up on happenings since the previous podcast.
-#			)}
-#		)}
-#
-#	${addPress(type=interview,
-#		url=${jbc_audio}/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3,
-#		title=<b>"Near Perfect Pitch" podcast #1</b>,
-#		dt=2016-05-09,
-#		credit=Dara Mottahed,
-#		source=http://www.nearperfectpitch.com/,
-#		summary=${literalizeCommas(
-#		Dara Mottahed and Pat (via Skype) chat about recent band history. And football.
-#			)}
-#		)}
+	${addPress(type=interview;podcast,
+		url=${jbc_press}/20170320_interview_nearperfectpitch_35.html,
+		audio=${jbc_audio}/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3;;The Interview,
+		publication=Near Perfect Pitch podcast,
+		title=Episode #35,
+		dt=2017-03-20,
+		credit=Dara Mottahed,
+		source=http://www.nearperfectpitch.com/,
+		summary=${literalizeCommas(
+		Dara Mottahed and Pat (via Skype) catch up on happenings since the previous podcast.
+			)}
+		)}
 
-	${addPress(type=interview;gig,
+	${addPress(type=interview;podcast,
+		url=${jbc_press}/20160509_interview_nearperfectpitch_1.html,
+		audio=${jbc_audio}/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3;;The Interview,
+		publication=Near Perfect Pitch podcast,
+		title=Episode #1,
+		dt=2016-05-09,
+		credit=Dara Mottahed,
+		source=http://www.nearperfectpitch.com/,
+		summary=${literalizeCommas(
+		Dara Mottahed and Pat (via Skype) chat about recent band history. And football.
+			)}
+		)}
+
+	${addPress(type=interview;gig;radio,
 		url=${jbc_press}/20141112_julioruiz.html,
 		publication=Radio Televisión Española - Radio 3,
 		title=Live on the air with Julio Ruiz,
 		location=Madrid\, Spain,
-		datetime=2014-11-12 18:00:00,
+		datetime=2014-11-12 21:00:00,
 		dt=2014-11-12 18:00:00,
-		credit=Jului Ruiz,
+		credit=Julio Ruiz,
+		images=/images/20141112/20141112_JazzButcher_madrid_radio1$$/images/20141112/20141112_JazzButcher_madrid_radio2$$/images/20141112/20141112_JazzButcher_madrid_radio3$$/images/20141112/20141112_JazzButcher_madrid_radio4$$,
+		audio=/audio/20141112/20141112_JazzButcher_JulioRuiz_Interview_Edit.mp3;;The Interview::1$$http://jazzbutcher.com/audio/20141112/20141112_Madrid_MelanieHargreavesFathersJaguar.mp3;;Melanie Hargreaves' Father's Jaguar::2$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20141112/20141112_RTVE_MelanieHargreave.mp4;;Melanie Hargreaves' Father's Jaguar::2$$;;Girlfriend::3$$,
+		annotation=${literalizeCommas(
+		Live on the air with Julio Ruiz, the "Espanish John Peel". National radio, six in the evening. He played lots of tunes from Gentleman Adventurers. I played "Melanie Hargreaves' Father's Jaguar" and "Girlfriend". For the interview I had an interpreter. At one point she failed to translate whatever Julio said but it involved the words "Kevin Ayers, Lou Reed, Bob Dylan..." I enjoyed that bit, though, now I come to think about it, he was probably saying "This bloke is not as good as..."
+		)};;Pat Fish;;;;2014-11-26 21:00:01$$,
 		source=)}
 
 	${addPress(type=interview,
@@ -2418,6 +2542,126 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=France,
 		dt=2017-08-24)}
 
+#----------------
+#
+#	${addGig(prefix=gs, type=interview;obit,
+#		url=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20211007_JazzButcher_interview_stereoembers.mp3,
+#		title=Stereo Embers The Podcast: Pat Fish (The Jazz Butcher),
+#		dt=2021-10-07,
+#		credit=Alex Green,
+#		source=https://soundcloud.com/alexgreenonline/stereo-embers-the-podcast-pat-fish-the-jazz-butcher,
+#		summary=${literalizeCommas(
+#			An interview and obit, combined.
+#			"He loved his cat, he loved to read, he loved to drink, he loved to smoke and he loved to play music. Recorded in 2013 as the Jazz Butcher’s The Last Of The Gentleman Adventurers album hit shelves, this interview finds Fish in fine form, talking about the new record, Roddy Frame, The Blue Nile, his long-standing relationship with Eider and why it’s so hard to age in rock and roll…"
+#			)}
+#		)}
+#
+#	${addGig(prefix=gs, type=interview,
+#		url=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/201604_JazzButcher_interview_InessaB.mp3,
+#		title=Discovery and Uncovery with Pat Fish,
+#		dt=2016-04,
+#		credit=Inessa B,
+#		source=https://soundcloud.com/inessa-b/discovery-and-uncovery-with-pat-fish,
+#		summary=${literalizeCommas(
+#		Excerpted from Inessa B's soundcloud interview with Pat in 20016.
+#			"Having discovered The Jazz Butcher and followed their varied career over the years, an opportunity came up to connect with the man who started the journey himself, Pat Fish. I sent him questions that began with the all important naming of the group, to what Pat's reading, watching and listening to, and so much more."
+#			)}
+#		)}
+#
+#	${addGig(prefix=gs, type=interview,
+#		url=${jbc_audio}/19860718/19860718_backgroundnoiseproductions_PatMax_interview.mp3,
+#		title=Background Noise Productions,
+#		dt=1986-07-18,
+#		credit=Background Noise Productions,
+#		source=https://happymediumproductions.weebly.com/interview-2---the-jazz-butcher.html,
+#		summary=${literalizeCommas(
+#		${pat} & ${max} in Washington, DC the night of the Jazz Butcher's show at the 9:30 Club.
+#		<p>
+#		Background Noise Productions is: John Collins, Steve Yegelwel, Andy Schoengold, Jim Black, and Jimmy Mitchell 
+#		${anno_beg}
+#		Well John, thanks for that rather strange and touching experience, which carried me back to a time when we were largely happy if permanently pissed. It says much for our dedication to our art that we sound so pleased to be drinking Heineken. But who the hell is that posh bloke Eider and where did he get that accent? Also you have made me catch a few bars of some tracks I've been assiduously avoiding for the last 30 years or so. But thanks all the same for the memory and indeed the Heineken.
+#		${g_credit(g=${max}, d=2017-10-01)}
+#		${anno_end}
+#		</p>
+#			)}
+#		)}
+#
+#	${addGig(prefix=gs, type=interview,
+#		url=${jbc_audio}/20170612/20170612_C86interview.mp3,
+#		title=Norwich Radio/C86 Interview,
+#		dt=2017-06-12,
+#		credit=David Eastaugh,
+#		source=https://cultureclashradio.org,
+#		summary=${literalizeCommas(
+#		Excerpted from radio broadcast.
+#		Topics: The Smiths, early history, ${mer}, playing the sax, ${barker}
+#			)}
+#		)}
+#
+#	${addGig(prefix=gs, type=interview,
+#		url=${jbc_audio}/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3,
+#		title="Near Perfect Pitch" podcast #35,
+#		dt=2017-03-20,
+#		credit=Dara Mottahed,
+#		source=http://www.nearperfectpitch.com/,
+#		summary=${literalizeCommas(
+#		Excerpted from ${linkExternal(https://twitter.com/NearPerfPitch, \@NearPerfPitch)}'s podcast #35.
+#		Dara Mottahed and Pat (via Skype) catch up on happenings since the previous podcast.
+#			)}
+#		)}
+#
+#	${addGig(prefix=gs, type=interview,
+#		url=${jbc_audio}/20181209/20181209_FrenchSpurs1_mixcloud_PatFishInterview.mp3,
+#		title="PAT FISH: EARLY DAYS TO JAZZ BUTCHER'S FIRST RELEASE 'IN BATH OF BACON'",
+#		dt=2018-12-09,
+#		credit=FrehcnSpurs1,
+#		source=https://www.mixcloud.com/FrenchSpurs1/,
+#		summary=${literalizeCommas(
+##			https://www.mixcloud.com/FrenchSpurs1/retropopic-206-pat-fish-early-days-jazz-butcher-to-dan-tracey-2018-benefit/
+##			https://www.mixcloud.com/FrenchSpurs1/retropopic-205-pat-fish-early-days-to-jazz-butchers-first-release-in-bath-of-bacon/
+#			)}
+#		)}
+#
+#
+#	${addGig(prefix=gs, type=interview,
+#		url=${jbc_audio}/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3,
+#		title="On The Road" - CBC featurette,
+#		dt=1989-07-01,
+#		credit=Dana Mottahead (Gen0 cassette of FM broadcast),
+#		summary=${literalizeCommas(
+#		While en-route to 1989 Germany dates, ${pat} answers "Big Questions" for CBC radio
+#		listeners.
+#			)}
+#		)}
+#
+#
+#	${addGig(prefix=gs, type=interview,
+#		url=${jbc_audio}/20180703/20180703_WattFromPedroShow_OwenJones.mp3,
+#		title="The Watt From Pedro Show" podcast - ${owen},
+#		dt=2018-07-03,
+#		credit=Mike Watt,
+#		source=https://www.twfps.com/past-episodes/on-air-guest-owen-jones-from-hamburg-germany-via-skype,
+#		summary=${literalizeCommas(
+#		Excerpted from the musician-to-musician podcasts by Mike Watt (of The Minutemen)
+#		speaking with ${owen} (via Skype). Mostly "Shakespeare and The Bible", and
+#		some passing Jazz Butcher commentary.
+#			)}
+#		)}
+#
+#
+#	${addGig(prefix=gs, type=interview,
+#		url=${jbc_audio}/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3,
+#		title="Near Perfect Pitch" podcast #1,
+#		dt=2016-05-09,
+#		credit=Dara Mottahed,
+#		source=http://www.nearperfectpitch.com/,
+#		summary=${literalizeCommas(
+#		Excerpted from ${linkExternal(https://twitter.com/NearPerfPitch, \@NearPerfPitch)}'s inaugural podcast.
+#		Dara Mottahed and Pat (via Skype) chat about recent band history. And football.
+#			)}
+#		)}
+#----------------
+
 #define	pressHeading[retrospective]->tab	Rememberences
 #define	pressHeading[retrospective]->blurb
 #define	pressHeading[interview]->tab	Interviews
@@ -2569,7 +2813,7 @@ subhead=(20 December 1957 – 5 October 2021),
 #live	if (define(${type}_prevAlbum, XXX))
 #live	endif
 #live	while (x = pressItems[*]->url)
-#live		if (getval(pressItems[${x}]->type) = ${type})
+#live		if (getval(pressItems[${x}]->type) == ${type})
 #live			if (define(${type}_thisYear, ${substr(0, 4, ${pressItems[${x}]->dt})}))
 #live			endif
 #live			if (getval(${type}_prevYear) != ${${type}_thisYear})
@@ -2604,21 +2848,11 @@ subhead=(20 December 1957 – 5 October 2021),
 	</blockquote>
 	${endTab}
 
-#define	checkUpdates()
-#live	if (defined(update))
-<h1>truncate</h1>
-#live	if (sql(truncate table press))
-#live	endif
-
 #define	index.html
 #live	if (getval(page) = index.html)
-	${checkUpdates()}
 	${definePressItems()}
+	${updatePressDatabase()}
 	${mkHeader(section=Press)}
-
-	${addLiveInterviews()}
-	${addPatLiveGigs()}
-	${addLiveGigs()}
 
 #live	if (sort(-pressItems, dt))
 #live	endif
@@ -2630,12 +2864,25 @@ subhead=(20 December 1957 – 5 October 2021),
 	${doListPress(type=gig)}
 	${doListPress(type=preshow)}
 	${doListPress(type=profile)}
-#	${doListPress(type=pat)}
+	${doListPress(type=pat)}
 	${doListPress(type=wilson)}
 	${doListPress(type=eg)}
 	${doListPress(type=sumo)}
 	${end_tabs}
 	${jbc_footer}
+#live	else if (getval(page) != data.json)
+	${definePressItems()}
+#live		if (defined(pressItems[${page}]->url))
+#
+#	auto generate body-less pages
+#
+#live			if (defined(pressItems[${page}]->body))
+				${extractPress(body=${pressItems[${page}]->body})}
+#live			else
+				${extractPress(body=${literalizeCommas()})}
+#live			endif
+				${jbc_footer}
+#live		endif
 #live	endif
 
 #define	96observer.html
@@ -16550,16 +16797,16 @@ All that left time for was one last big sing along to one of Pat's favourite son
 	${jbc_footer}
 #live	endif
 
-#define	19831008_press_mercutyandherald.html
-#live	if (getval(page) = 19831008_press_mercutyandherald.html)
+#define	19831008_press_mercuryandherald.html
+#live	if (getval(page) = 19831008_press_mercuryandherald.html)
 	${extractPress(
 		body=${literalizeCommas(
 	)})}
 	${jbc_footer}
 #live	endif
 
-#define	19820905_press_mercutyandherald.html
-#live	if (getval(page) = 19820905_press_mercutyandherald.html)
+#define	19820905_press_mercuryandherald.html
+#live	if (getval(page) = 19820905_press_mercuryandherald.html)
 	${extractPress(
 		body=${literalizeCommas(
 	)})}

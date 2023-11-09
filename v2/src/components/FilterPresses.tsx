@@ -136,8 +136,7 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 								{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}
 								{(thumb) ? <Image className="w-full" src={parseImage(thumb)?.thumb || ''} width={250} height={250} alt="cover" /> : <br />}
 								<div className="text-sky-800 text-center px-2">
-									{(!(item?.album || thumb)) && <div className="h-5" />}
-									<div className="h-3" />
+									<div className="h-1" />
 									<div className="font-bold">{item.publication}</div>
 									<div className="h-1" />
 									{(item.publication && item.title) && <hr />}

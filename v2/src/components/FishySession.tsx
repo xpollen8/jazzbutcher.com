@@ -1,6 +1,6 @@
 import useSWR from 'swr';
 
-import LetterHeader from '@/components/LetterHeader';
+import Tag from '@/components/Tag';
 import EmbedMedia from '@/components/EmbedMedia';
 import { Suspense } from 'react';
 
@@ -10,9 +10,9 @@ const FishySession = ({ session }: { session: any }) => {
 	const songs = data?.results;
 
 	return (<div key={session.ordinal}
-		className="flex flex-wrap justify-center bg-slate-200 py-3"
-		style={{   overflow: 'scroll' }}
+		className="flex flex-wrap justify-center bg-slate-200 p-2"
 	>
+		<div className="pt-1 px-10 max-w-lg">
 		<video
 			width={350}
 			controls={true}
@@ -21,8 +21,9 @@ const FishySession = ({ session }: { session: any }) => {
 			poster={session.poster} >
 			<source src={session.mp4} type="video/mp4" />
 		</video>
-		<div className="bg-slate-200 p-3 w-1/2">
-				<LetterHeader title={`Fishy Mansions #${session.ordinal + 1}`} subhead={session.date} />
+		</div>
+		<div className="px-10 max-w-sm">
+				<Tag>Fishy Mansions #{session.ordinal + 1} : <span className="date">{session.date}</span></Tag>
 				<Suspense fallback={<>Loading...</>}>
 					{songs?.filter((song: any) => !song.song.includes('Entire')).map((data: any, key: number) => <div key={key}><EmbedMedia data={data} disableVideo={true} /></div>)}
 				</Suspense>

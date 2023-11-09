@@ -67,12 +67,12 @@ const FishyMansions = () =>
 			</Tag>
 			<p />
 			<Swiper
-					style={{  height: '720px', border: '1px solid black', overflow: 'scroll' }}
+					style={{ border: '1px solid black', overflow: 'scroll' }}
 				modules={[Navigation, Scrollbar, ]}
 				navigation
 				scrollbar={{ draggable: true }}
 				pagination={{ clickable: true }}
-				spaceBetween={50}
+				spaceBetween={100}
 				slidesPerView={1}
 				onSlideChange={() => console.log('slide change')}
 				onSwiper={(swiper) => console.log(swiper)}

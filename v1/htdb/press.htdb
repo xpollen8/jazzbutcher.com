@@ -93,7 +93,7 @@
 	${mkPressHeader()}
 #live		if (defined(UA))
 <h1>update (pub:${${prefix}->url})</h1>
-#update press set body="${body}" where url="${${prefix}->url}";
+#update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}";
 #live	if (sql(z:update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
 #live	endif
 #live	endif
@@ -306,7 +306,7 @@ ${d}
 #live		loop (pi, 1, ${pressItems->numResults})
 #live			if (define(pr, pressItems[${pi}]))
 <h3>${pi}: update (pub:${${pr}->dt}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
-#live				if (sql(x:insert into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${${pr}->images}", media="${${pr}->media}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${${pr}->audio}", publication="${${pr}->publication}", title="${${pr}->title}", headline="${${pr}->headline}", subhead="${${pr}->subhead}", location="${${pr}->location}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->added})}", dtpublished="${fixDt(${${pr}->dt})}", dtgig="${fixDt(${${pr}->datetime})}", person="${${pr}->person}", body="${literalizeQuotes(${${pr}->body})}"))
+#live				if (sql(x:insert into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${literalizeQuotes(${${pr}->images})}", media="${literalizeQuotes(${${pr}->media})}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${literalizeQuotes(${${pr}->audio})}", publication="${literalizeQuotes(${${pr}->publication})}", title="${literalizeQuotes(${${pr}->title})}", headline="${literalizeQuotes(${${pr}->headline})}", subhead="${literalizeQuotes(${${pr}->subhead})}", location="${literalizeQuotes(${${pr}->location})}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->added})}", dtpublished="${fixDt(${${pr}->dt})}", dtgig="${fixDt(${${pr}->datetime})}", person="${literalizeQuotes(${${pr}->person})}", body="${literalizeQuotes(${${pr}->body})}"))
 #live				endif
 #live			endif
 #live		endloop
@@ -448,6 +448,17 @@ ${d}
 		subhead=and different,
 		dt=1982-09-05,
 		added=2023-09-10)}
+
+	${addPress(type=gig,
+		url=${jbc_press}/19891128_press_gateway.html,
+		publication=The Gateway,
+		thumb=/images/19891128/19891128_press_gateway,
+		location=Alberta\, Canada,
+		title=Butcher in creative trouble,
+		credit=Greg Pohl,
+		datetime=1989-11-25,
+		dt=1989-11-28,
+		added=2023-11-08)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19831008_press_mercuryandherald.html,
@@ -778,6 +789,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19870210_press_BestOfRockNRollFolkMagazine.html,
+		todo=OCR,
 		thumb=/images/19870210/19870210_press_BestOfRockNRollFolkMagazine;;Pierre Guillaume,
 		publication=Best of Rock n Roll Folk Magazine,
 		title=Gig clipping,
@@ -789,6 +801,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		url=${jbc_press}/19930221_press_BestOfRockNRollFolkMagazine.html,
 		thumb=/images/19930221/19930221_press_BestOfRockNRollFolkMagazine;;Pierre Guillaume,
 		publication=Best of Rock n Roll Folk Magazine,
+		todo=OCR,
 		title=Gig clipping,
 		location=France,
 		datetime=1993-02-21 20:00:00,
@@ -798,6 +811,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		url=${jbc_press}/19930216_press_LiberationNewspaper.html,
 		thumb=/images/19930216/19930216_press_LiberationNewspaper;;Pierre Guillaume,
 		publication=Liberation Newspaper,
+		todo=OCR,
 		title=Gig clipping,
 		location=France,
 		datetime=1993-02-16,
@@ -807,6 +821,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		url=${jbc_press}/19931115_press_lEstRepublicainNewspaper.html,
 		thumb=/images/19931115/19931115_press_lEstRepublicainNewspaper;;Pierre Guillaume,
 		publication=l'Est Republicain Newspaper,
+		todo=OCR,
 		title=Gig clipping,
 		location=France,
 		datetime=1993-11-15,
@@ -857,7 +872,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		url=${jbc_press}/19851109_press_nme.html,
 		thumb=/images/19851109/19851109_press_nme,
 		publication=New Music Express,
-		credit=${mercer},
+		credit=Mick Mercer,
 		source=https://twitter.com/nothingelseon/status/1286213134357639168/photo/1,
 		dt=1985-11-09,
 		added=2020-07-23)}
@@ -960,6 +975,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=gig;wilson,
 		url=${jbc_press}/20040912_wilson_cricketpress.html,
+		thumb=https://wilsondub.com/images/2004Sep12/cricketpress,
+		images=https://wilsondub.com/images/2004Sep12/poster_2004Sep12,
 		publication=Cricket Press,
 		todo=OCR,
 		datetime=2004-09-12 16:00:00,
@@ -1134,7 +1151,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		subhead=Southern Mark Smith,
 		publication=Mojo,
 		source=https://pbs.twimg.com/media/FrXi4OOWIAEoYHp?format=jpg&name=large,
-		credit="AP",
+		credit=AP,
 		added=2023-09-12,
 		dt=2013-03-30)}
 
@@ -1807,6 +1824,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/19990923_press_villagevoice.html,
 		thumb=/images/19990923/19990923_press_villagevoice;;Pat Fish Notebook,
 		credit=Eddy,
+		todo=OCR,
 		publication=Village Voice,
 		location=New York\, New York\, USA,
 		datetime=1999-09-23 20:00:00,
@@ -1815,6 +1833,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=preshow,
 		url=${jbc_press}/19990916_press_seattle_rocket.html,
 		thumb=/images/19990916/19990916_press_seattle_rocket;;Pat Fish Notebook,
+		todo=OCR,
 		credit=Tizzy Asher,
 		publication=The Rocket,
 		location=Seattle\, Washington\, USA,
@@ -1824,6 +1843,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=preshow,
 		url=${jbc_press}/19990916_press_seattle.html,
 		thumb=/images/19990916/19990916_press_seattle;;Pat Fish Notebook,
+		todo=OCR,
 		credit=Barara Mitchell,
 		publication=Up & Coming,
 		location=Seattle\, Washington\, USA,
@@ -1863,7 +1883,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/20031016_wilson.html,
 		thumb=/images/20031016/20031016_press,
 		credit=Headstone,
-		todo=OCR
+		todo=OCR,
 		title=Wilson Play London,
 		datetime=2003-10-16 22:00:00,
 		dt=2003-10-16)}
@@ -3456,22 +3476,6 @@ subhead=(20 December 1957 – 5 October 2021),
 	${jbc_footer}
 #live	endif
 
-#define	19880813_press_melodymaker.html
-#live	if (getval(page) = 19880813_press_melodymaker.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	1994_press_melodymaker.html
-#live	if (getval(page) = 1994_press_melodymaker.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
 #define	88melody.html
 #live	if (getval(page) = 88melody.html)
 	${extractPress(
@@ -4775,7 +4779,6 @@ subhead=(20 December 1957 – 5 October 2021),
 
 #define	91estweb.html
 #live	if (getval(page) = 91estweb.html)
-#added	Fri Jan 24 15:21:13 PST 1997
 	${extractPress(
 		body=${literalizeCommas(
 
@@ -8768,14 +8771,6 @@ Ottawa for a show the following Monday at Barrymores
 	${jbc_footer}
 #live	endif
 
-#define	19980401_Sumosonic_Promo_Trio.html
-#live	if (getval(page) = 19980401_Sumosonic_Promo_Trio.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
 #define	post-intelligencer.html
 #live	if (getval(page) = post-intelligencer.html)
 	${extractPress(
@@ -9597,7 +9592,6 @@ Of course they came back out and while David could have brought up several ex-ba
 #live	if (getval(page) = 19891128_press_gateway.html)
 	${extractPress(
 		body=${literalizeCommas(
-<p />
 The Jazz Butcher is sort of a “he” and sort 
 of a “they”. “He” is Pat Fish, a goofy sort of 
 chap from Northampton, England, who 
@@ -9608,8 +9602,7 @@ just Mr. Fish, or to his whole band.
 <p />
 The show on Saturday night didn’t look 
 like a sellout, but there were plenty of people 
-having fun. People like the two rather “con- 
-fused” individuals who fell into.the speakers 
+having fun. People like the two rather “confused” individuals who fell into the speakers 
 in rapid succession! Most of the crowd was a 
 bit better-behaved than that, though. 
 <p />
@@ -9617,7 +9610,7 @@ The Jazz Butcher opened up with “New
 Invention”, from their latest record, Big 
 Planet, Scary Planet. The next half hour of the 
 show was entirely made up of songs from this 
-LP and the previous record,Fishcoteque. 
+LP and the previous record, Fishcoteque. 
 This newer material received polite applause, 
 but the audience didn’t get really excited 
 until the band drifted into older territory, 
@@ -9633,15 +9626,13 @@ that special something that oozed out of the
 earlier songs. 
 <p />
 What we witnessed on Saturday night was 
-basically a talent that is.in serious creative 
-trouble. It’s not just the self-indulgent nood- 
-ling about with tape loops that we’ve seen on 
+basically a talent that is in serious creative 
+trouble. It’s not just the self-indulgent noodling about with tape loops that we’ve seen on 
 the last two albums. Nor is it the ultra-tight 
 rhythm section, which has given the butcher 
 a calm foundation in exchange for the 
 crazoid mania they used to have. I think the 
-problem is that they’ve tried, quite unsuccess- 
-fully, to become more sophisticated. There’s 
+problem is that they’ve tried, quite unsuccessfully, to become more sophisticated. There’s 
 nothing wrong with progressing, but The 
 Jazz Butcher seems to have moved from 
 something they were good at, into a morass 
@@ -9651,15 +9642,12 @@ There’s nothing really wrong with songs
 like “Chickentown” and Bad Dream Lover,” 
 but they just don’t have that mix of wit and 
 poignancy that older songs had. At one time, 
-<p />
 the Jazz Butcher had something to say about 
 going down to the pub, partying with a 
 bunch of friends, getting drunk and silly, and 
 using it all to disguise the fact that you’re 
-dying inside. From the naive clarity of ”Party- 
-time” to the wigged-out “Devil is my Friend”, 
-their songs worked because they were sin- 
-cere, and everyone could relate to them. But 
+dying inside. From the naive clarity of ”Partytime” to the wigged-out “Devil is my Friend”, 
+their songs worked because they were sincere, and everyone could relate to them. But 
 now the Jazz Butcher has grown up, travelled 
 this big scary planet, and gotten swallowed 
 by it. Perhaps they'll find some direction, but 
@@ -9667,19 +9655,16 @@ right now they’ve lost their roots, and can’t
 find anything concrete to stand on. 
 <p />
 Though it was a very tight set, the show just 
-<p />
 didn’t have enough energy or substance. 
 Longtime fans heard enough of their old 
-faves to keép them happy, but newcomers 
+faves to keep them happy, but newcomers 
 curious about The Jazz Butcher probably 
 were a bit underwhelmed. They would have 
 been better off spending the $13.25 on an 
-<p />
 earlier record, like Bloody Nonsense or 
 Distressed Gentlefolk. Sure, everyone had 
 fun, but Dinwoodie gets better shows for 
-much less money. : 
-
+much less money.
 )})}
 	${jbc_footer}
 #live	endif
@@ -12590,7 +12575,7 @@ as I was standing near the stage I can attest to the fact that max plugged direc
 #live	endif
 
 #define	20200707_psychedelicbabymag.html
-#live	if (getval(page) =  20200707_psychedelicbabymag.html)
+#live	if (getval(page) = 20200707_psychedelicbabymag.html)
 	${extractPress(
 		body=${literalizeCommas(
 Gentleman Adventurer Pat Fish (a.k.a. the Jazz Butcher) founded the group by that name (also known as The Jazz Butcher Conspiracy and The Jazz Butcher And His Sikkorskis From Hell) with Max Eiderin in 1982. The band’s debut in Bath of Bacon was released by Glass Records in 1983. A second album A Scandal in Bohemia, also on Glass, featured guest appearances from David J and Kevin Haskins of Bauhaus, old mates of Pat’s. After four albums, and two singles collections for Glass, Fish signed to Creation Records in 1988, releasing eight albums on the label, culminating in 1995’s Illuminate. This was followed by Rotten Soul (Vinyl Japan, 2000) and 2012’s masterful volume, Last of the Gentleman Adventurers, featuring greats like the title track, or Pat’s ode to his cat, “Black Raoul”. Fish recently spoke with Zack Kopp regarding the scope of his career so far, and its likely direction from here.
@@ -13004,24 +12989,16 @@ The Highest in the Land is out on Friday via Tapete.
 	${jbc_footer}
 #live	endif
 
-#define	20031016_wilson.html
-#live	if (getval(page) = 20031016_wilson.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
 #define	20030916_wilson_bbci.html
 #live	if (getval(page) = 20030916_wilson_bbci.html)
 	${extractPress(
 		body=${literalizeCommas(
 <div class="iview_intro">
-<img src="http://wilsondub.com/images/logo_bbci.gif"></a>
+<img src="https://wilsondub.com/images/logo_bbci.gif"></a>
 Tuesday, 16th September, 2003<br />
 <h2>Wilson</h2>
 	  	<p />
-	  <img src="http://wilsondub.com/images/wilson_270.jpg" alt="Image of Wilson">
+	  <img src="https://wilsondub.com/images/wilson_270.jpg" alt="Image of Wilson">
 		<p />
 	<p />
 	  <b>With 
@@ -13088,47 +13065,6 @@ Tuesday, 16th September, 2003<br />
 	${jbc_footer}
 #live	endif
 
-#define	20040912_wilson_cricketpress.html
-#live	if (getval(page) = 20040912_wilson_cricketpress.html)
-	${extractPress(
-		body=${literalizeCommas(
-	<img src="http://wilsondub.com/images/2004Sep12/cricketpress.jpg">
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19870210_press_BestOfRockNRollFolkMagazine.html
-#live	if (getval(page) = 19870210_press_BestOfRockNRollFolkMagazine.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19930221_press_BestOfRockNRollFolkMagazine.html
-#live	if (getval(page) = 19930221_press_BestOfRockNRollFolkMagazine.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19930216_press_LiberationNewspaper.html
-#live	if (getval(page) = 19930216_press_LiberationNewspaper.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19931115_press_lEstRepublicainNewspaper.html
-#live	if (getval(page) = 19931115_press_lEstRepublicainNewspaper.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
 #define	198703_press_rockdelux.html
 #live	if (getval(page) = 198703_press_rockdelux.html)
 	${extractPress(
@@ -13138,14 +13074,6 @@ Tuesday, 16th September, 2003<br />
 	"Distressed Gentlefolk” is The Jazz Butcher's most laid-back album. Three impeccable ballads contribute to this: "The New World" (where Butch sounds like a crooner from the 1950s), "Angels," and above all, "Still In The Kitchen". A certain country air that pervades the entire album, as well as the jazz swing that permeates "Domestic Animal” or “Buffalo Shame”. Doo-wop and a nostalgic touch also make an appearance on "Who Loves You". But Jazz Butcher is not the only one who betrays clear influences: "Nothing Special", a simple pop song that totally belies its title, is one of the many examples of where the roots of the Woodentops can be found. (Or perhaps the other way around? Both singers have known each other for years...) The truth is that Butch is a great songwriter who doesn't appear to show any fatigue, but rather a capacity for reinvention  that makes his recycling task completely justified. Without surpassing the brilliant "Sex & Travel", "Distressed Gentlefolk" is also an outstanding album, in which Butch gives greater prominence to his sidekick Max Eider, who is in charge of the composition in "The New World" and "Who Loves You? In England there is a limited edition of the album, with a second 45 r.p.m. freebie LP  that includes the tracks of the maxis "Hard" and "Conspiracy", a new version of "Grooving In The Bus Lane" and a couple of unreleased tracks
 	<p />
 	Translation ${g_credit(g=Romà Ferre, u=https://twitter.com/romaferre)}
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19901013_press_nme.html
-#live	if (getval(page) = 19901013_press_nme.html)
-	${extractPress(
-		body=${literalizeCommas(
 	)})}
 	${jbc_footer}
 #live	endif
@@ -13306,38 +13234,6 @@ Any last requests before you throw yourself off Biackfriars Bridge?
 	${jbc_footer}
 #live	endif
 
-#define	19990923_press_villagevoice.html
-#live	if (getval(page) = 19990923_press_villagevoice.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19990916_press_seattle_rocket.html
-#live	if (getval(page) = 19990916_press_seattle_rocket.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19990916_press_seattle.html
-#live	if (getval(page) = 19990916_press_seattle.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19990923_press_timeout.html
-#live	if (getval(page) = 19990923_press_timeout.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
 #define	20170406_lastdaydeaf.html
 #live	if (getval(page) = 20170406_lastdaydeaf.html)
 	${extractPress(
@@ -13392,22 +13288,6 @@ Why did you choose this mini LP to talk about Pat Fish and his first Jazz Butche
 It was not uncommon in the 1980s to find the discs of the Jazz Butcher in the "gothic" or "cold wave"; This was most certainly due to the presence of David J, former bass player of Bauhaus, within the group at this time because nothing else, Can not explain this affiliation. This guitar-like music is indeed very clear and light: we enjoy the tribulations of "regular english-speaking gentleman on holiday" rhythmized by a typewriter ("Holyday") or considerations Of Pat on the Cold War ("President Reagan's Birthday Party"), we wiggle on "Red Pets", we contribute to the slavist choruses of "Walk With The Devil" where we imagine emptying a pint by listening to "Down The Drain ". However, A dull melancholy, which sometimes reminds one of Brian Wilson's, avoids the whole sinking into the mire or silliness. There are of course a few less playful songs ("Big Saturday" or "Only A Rumor", about emotional errors - Pat says he wrote "for the first time on his life as it was then") But it is behind the apparent gaiety of the whole that we must hear what is darkest and most profound. It will always be with Pat Fish: if the dominant image that emerges from his group is that of a band of joyful drills quick to ignite your living room or the local club (photos on the back of the album) It is also a discreet but eternal romantic (photos on the front: the same pose but the expressions are a bit more serious).
 	<p />
 The eight titles of Sex & Travel were recorded (in five days!) In Leamington in February 1985 and produced by John A. Rivers, as had been Scandal in Bohemia and as Distressed Gentlefolk . The Jazz Butcher Conspiracy was above all a story of elective affinities and if the band's line-up has moved a bit over the albums, the spirit has remained unchanged. And oh miracle, many people who once had access to this music have become members of this conspiracy. Few have departed ...
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19901105_press_minneapolis.html
-#live	if (getval(page) = 19901105_press_minneapolis.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19901109_press_guelph.html
-#live	if (getval(page) = 19901109_press_guelph.html)
-	${extractPress(
-		body=${literalizeCommas(
 	)})}
 	${jbc_footer}
 #live	endif
@@ -14464,7 +14344,7 @@ Who knows? 1984 may yet see the release of 'Northern Jazz Butcher'.
 
 	<p class="iview_q">"Xylophone tinkler sporting a wild hairdo not seen since
 	Eraserhead" is how the Melody Maker once described you. Fair
-	description?;-)
+	description?
 	</p>
 
 	<div class="iview_a">
@@ -16811,22 +16691,6 @@ All that left time for was one last big sing along to one of Pat's favourite son
 	${jbc_footer}
 #live	endif
 
-#define	19831008_press_mercuryandherald.html
-#live	if (getval(page) = 19831008_press_mercuryandherald.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
-#define	19820905_press_mercuryandherald.html
-#live	if (getval(page) = 19820905_press_mercuryandherald.html)
-	${extractPress(
-		body=${literalizeCommas(
-	)})}
-	${jbc_footer}
-#live	endif
-
 #define	19860902_press_mcgilldaily.html
 #live	if (getval(page) = 19860902_press_mcgilldaily.html)
 	${extractPress(
@@ -18079,15 +17943,6 @@ From Wikipedia: According to a post on Fish’s official Facebook page on 6 Octo
 	${jbc_footer}
 #live	endif
 
-#define	202201_press_uncut.html
-#live	if (getval(page) = 202201_press_uncut.html)
-	${extractPress(
-		body=${literalizeCommas(
-		)}
-	)}
-	${jbc_footer}
-#live	endif
-
 #define	202201_press_stereoembers.html
 #live	if (getval(page) = 202201_press_stereoembers.html)
 	${extractPress(
@@ -18166,33 +18021,6 @@ Fish is gone now, too, but in death he seems to have achieved something comforti
 And those lyrics tell the story of a man who lived one hell of a life. And that life was raucous, feral, wild, untethered and uncompromising and it was filled with ghosts and angels and penguins and elephants and trains and girls who kept goldfish and falling in love and getting lost in France and burning through the bluest of conditions.
 <p />
 We should all be so lucky.
-		)}
-	)}
-	${jbc_footer}
-#live	endif
-
-#define	20210905_press_funhouse.html
-#live	if (getval(page) = 20210905_press_funhouse.html)
-	${extractPress(
-		body=${literalizeCommas(
-		)}
-	)}
-	${jbc_footer}
-#live	endif
-
-#define 19880215_promo.html
-#live	if (getval(page) = 19880215_promo.html)
-	${extractPress(
-		body=${literalizeCommas(
-		)}
-	)}
-	${jbc_footer}
-#live	endif
-
-#define	19901120_promo.html
-#live	if (getval(page) = 19901120_promo.html)
-	${extractPress(
-		body=${literalizeCommas(
 		)}
 	)}
 	${jbc_footer}

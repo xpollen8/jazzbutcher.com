@@ -100,6 +100,8 @@ const filterOptions = [
 	{ field: "title:Punter", display: "Fans' Gig Reviews" },
 	{ field: "type:kit", display: "Band Bios" },
 	{ field: "audio:audio", display: "W/Audio" },
+	{ field: "type:radio", display: "Radio" },
+	{ field: "type:podcast", display: "Podcasts" },
 ];
 
 const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, filter?: any }) => {

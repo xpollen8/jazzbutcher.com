@@ -16,37 +16,30 @@ const PressItem = ({ item }: { item: any }) => {
 		const types = article?.type?.split(',');	// pat,gig,wilson (etc);
 		const projects = ['wilson','sumo','eg'];
 		const project = (projects.filter((pro: string) => types?.includes(pro)) || [])[0] || '';
+		const doItem = (label: string, value?: string | React.ReactNode) => {
+			return <span className="break-keep outline outline-1 outline-cyan-500"> <b>{label}</b> {value} </span>
+		}
 		return (<>
 			<div className={`gig_${project}`} />
 			<div className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>
-				<div style={{ margin: '3px', marginBottom: '10px' }}>
-					{(article?.publication) && <><b>Published:</b> {article.publication}</>}
-					{(article?.location) && <>({article.location})</>} {dateDisplay(article.dtpublished, '')}
-					{(article?.credit) && <Credit g={article?.credit} u={article?.crediturl} />}
-					{(article?.source) && <span className="m-1"><b>Source:</b> <Link href={article.source}>{parseDomain(article.source)}</Link></span>}
+				<div className="flex flex-wrap gap-3">
+					{(article?.publication) && doItem('Publication', article.publication)}
+					{(article?.location) && doItem('Location', article.location)}
+					{(article?.dtpublished) && doItem('Published', dateDisplay(article.dtpublished, ''))}
+					{(article?.credit) && doItem('Author', <Attribution g={article?.credit} u={article?.crediturl} />)}
+					{(article?.source) && doItem('Source', <Link href={article.source}>{parseDomain(article.source)}</Link>)}
+					{types.map((t: string, key: number) => (<div key={key}>
+							{(t === 'kit') && doItem('Category', 'Press Kit/Biography')}
+							{(t === 'clipping') && doItem('Category', 'Press Clipping')}
+							{(t === 'pat') && doItem('Category', 'The Butcher Writes')}
+							{(t === 'interview') && doItem('Interview w/Conspirator', article.person.split(';').map(expand))}
+							{((t === 'gig' || t === 'preshow') && article.dtgig) && doItem('The associated Gig', <Link href={`/gigs/${ts2URI(article.dtgig)}`}>{article.dtgig.substr(0, 10)}</Link>)}
+							{(t === 'album' && article?.album) && doItem('Album Review', expand(article.album))}
+					</div>))}
+					{(!!parseInt(article?.dtadded, 10)) && doItem('Item added', dateDiff(article.dtadded, ''))}
+					{(article?.todo) && doItem('ATTENTTION NEEDED', article.todo)}
 				</div>
-				{types.map((t: string) => (<>
-						{(t === 'kit') && <b style={{ margin: '3px' }}>Press Kit/Biography</b>}
-						{(t === 'clipping') && <b style={{ margin: '3px' }}>Press Clipping </b>}
-						{(t === 'pat') && <b style={{ margin: '3px' }}>The Butcher Writes </b> }
-						{(t === 'interview') && (<>
-							<b style={{ margin: '3px' }}>Interview w/Conspirator</b>
-							{(article?.person) && <>: {article.person.split(';').map(expand)}</>}
-						</>)}
-						{(t === 'gig' && article.dtgig) && (<>
-							<b style={{ margin: '3px' }}>The associated Gig:</b>
-								<Link href={`/gigs/${ts2URI(article.dtgig)}`}>
-									{article.dtgig.substr(0, 10)}
-								</Link>
-						</>)}
-						{(t === 'album' && article?.album) && (<>
-							<b style={{ margin: '3px' }}>Album Review:</b> {expand(article?.album)}
-						</>)}
-				</>))}
-				{(!!parseInt(article?.dtadded, 10)) && <><b style={{ margin: '3px' }}>Item added:</b> {dateDiff(article.dtadded, '')}</>}
-				{(article?.todo) && <b style={{ background: 'red', padding: '5px', marginBottom: '5px', margin: '3px', color: 'white' }}>ATTENTTION NEEDED: {article.todo} </b>}
 			</div>
-			<p />
 		</>)
 	}
 
@@ -62,10 +55,12 @@ const PressItem = ({ item }: { item: any }) => {
 		</center>)
 	}
 	const ArticleThumbAndImages = ({ article }: any) => {
-		if (article?.thumb || article?.images) {
+		// SLEEVE ASSUME IMAGE NAME IS SAME AS ALBUM LOOKUP
+		const sleeve = (article?.album) ? `/images/releases/${article.album}` : '';
+		if (sleeve || article?.thumb || article?.images) {
 			return <ImageStrip
 				className="drop-shadow-md imageStrip clear_float text-center w-60"
-				images={parseCaptionsSourcesEtc(`${article?.thumb}$$${article?.images}`, true)}
+				images={parseCaptionsSourcesEtc(`${sleeve}$$${article?.thumb}$$${article?.images}`, true)}
 			/>
 		}
 	}
@@ -109,15 +104,13 @@ const PressItem = ({ item }: { item: any }) => {
 			}
 	}
 	return (item) && <>
+		<ArticleThumbAndImages article={item} />
 		<ArticleInfoBox article={item} />
-		<div style={{ margin: '5px' }}>
-			<ArticleThumbAndImages article={item} />
-			<ArticleTitle article={item} />
-			<ArticleMedia article={item} />
-			{(!!item?.body?.length) && <div className="listItem" dangerouslySetInnerHTML={{ __html: item?.body }} />}
-			<ArticleAnnotation article={item} />
-			<ArticleAudio article={item} />
-		</div>
+		<ArticleTitle article={item} />
+		<ArticleMedia article={item} />
+		{(!!item?.body?.length) && <div className="listItem" dangerouslySetInnerHTML={{ __html: item?.body }} />}
+		<ArticleAnnotation article={item} />
+		<ArticleAudio article={item} />
 	</>
 }
 

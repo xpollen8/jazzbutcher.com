@@ -241,7 +241,7 @@ const NavSections = (props: Props_Header): React.ReactNode  => {
 							</li>
 						)
 					}
-					return parseTitle(obj.title, key);
+					return parseTitle(obj.title?.replace('&amp;', '&'), key);	// ick hack
 				})}
 			</ul>
 			<div className="flex">

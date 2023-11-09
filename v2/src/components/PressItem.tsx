@@ -56,7 +56,7 @@ const PressItem = ({ item }: { item: any }) => {
 				{(article?.title) && <><b style={{ fontSize: '1.5em' }}>{article.title}</b><br /></>}
 				{(article?.headline) && <><b style={{ fontSize: '1.3em' }}>{article.headline}</b><br /></>}
 				{(article?.subhead) && <><b style={{ fontSize: '1.1em' }}>{article.subhead}</b><br /></>}
-				{(article?.summary) && <><blockquote style={{ fontSize: '.95em' }}>{article.summary}</blockquote><br /></>}
+				{(article?.summary) && <><blockquote style={{ fontSize: '.95em' }} dangerouslySetInnerHTML={{ __html: article.summary }} /><br /></>}
 				<p />
 				<hr />
 				<p />

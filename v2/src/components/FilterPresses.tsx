@@ -117,7 +117,8 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 			{(() => {
 				const options = filterOptions.filter((f: any) => {
 					const [ type, value ] = f.field.split(':');
-					return presses?.some((r: any) => r[type]?.includes(value));
+					return presses?.some((r: any) => r[type]?.includes(value)) &&
+						!presses?.every((r: any) => r[type]?.includes(value));
 				});
 				if (options?.length <= 1) return;
 				return <div className="listItem flex flex-wrap">{options.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>

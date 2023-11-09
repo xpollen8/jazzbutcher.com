@@ -168,7 +168,7 @@ const makeBreadcrumb = (name: string, aux?: any) => {
 }
 
 const parseTitle = (title: string | string[], key0: number) => {
-	if (typeof title === 'string') return <li key={key0}><span aria-current="page">{title}</span></li>;
+	if (typeof title === 'string') return <li key={key0}><span aria-current="page">{title?.replace('&amp;', '&')}</span></li>;
 	if (title?.constructor === Array && title[0]?.constructor === String) {
 		return title?.map((t: string, key: number) => {
 			const [ text, href ] = parseCaptionSourceEtc(t) || [];
@@ -241,7 +241,7 @@ const NavSections = (props: Props_Header): React.ReactNode  => {
 							</li>
 						)
 					}
-					return parseTitle(obj.title?.replace('&amp;', '&'), key);	// ick hack
+					return parseTitle(obj.title, key);	// ick hack
 				})}
 			</ul>
 			<div className="flex">

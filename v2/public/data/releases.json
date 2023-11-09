@@ -1,6 +1,6 @@
 {
 	"noun": "albums",
-	"numResults": 101,
+	"numResults": 102,
 	"results": [
 	{
 		"type": "album",
@@ -6666,6 +6666,72 @@
 		"collaboration": "Cambodia",
 
 		"dtadded": "2023-11-05"
+
+	} ,
+	{
+		"type": "demo,project",
+
+		"href": "/albums/blackeg_peter_murphy.html",
+
+		"title": "Peter Murphy",
+
+		"thumb": "/images/19920915/19920915_blackeg_cover",
+
+		"blurb": 	"",
+
+		"dtreleased": "1992-09-15",
+
+		"buy": 	"",
+
+		"project": "eg",
+
+		"lookup": "blackeg_peter_murphy",
+
+		"label": "Hanoitone Recordings",
+
+		"catalog": 	"",
+
+		"media": "cassette",
+
+		"country": 	"",
+
+		"source": "David Whittemore",
+
+		"contribution": 	"",
+
+		"dtrecorded": 	"",
+
+		"studio": 	"",
+
+		"onalbum": 	"",
+
+		"liner": 	"",
+
+		"Agroove": 	"",
+
+		"Bgroove": 	"",
+
+		"thanks": 	"",
+
+		"images": "/images/19920915/19920915_blackeg_inside$$/images/19920915/19920915_blackeg_a",
+
+		"notes": 	"",
+
+		"patsez": 	"",
+
+		"CDring": 	"",
+
+		"bishopsez": 	"",
+
+		"audio": "http://www.adjective.com/audio/eg/peter_murphy/1_DoYaWanna.mp3;;Do Ya Wanna?::1::;;$$http://www.adjective.com/audio/eg/peter_murphy/2_Filth.mp3;;Our Friends The Filth::2::;;$$http://www.adjective.com/audio/eg/peter_murphy/3_ConeyIslandNightmare.mp3;;Coney Island Nightmare::3::;;$$http://www.adjective.com/audio/eg/peter_murphy/4_Ezcsta.mp3;;Ezcsta::3::;;$$http://www.adjective.com/audio/eg/peter_murphy/5_LAStories_gameboy_mix.mp3;;L.A. Stories::4::gameboy mix;;$$http://www.adjective.com/audio/eg/peter_murphy/6_HypnoticEye.mp3;;The Hypnotic Eye::5::;;$$http://www.adjective.com/audio/eg/peter_murphy/7_LAStories_metal_mix.mp3;;L.A. Stories::6::metal mix;;$$",
+
+		"downloads": 	"",
+
+		"video": 	"",
+
+		"collaboration": 	"",
+
+		"dtadded": 	""
 
 	} 
 	]

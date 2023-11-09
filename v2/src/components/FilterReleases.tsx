@@ -45,7 +45,7 @@ const	FilterReleases = ({ project, filters }: { project?: string, filters?: any 
 				{releases?.filter((rel: any) => filterItemBy(rel, filtersUsed))
 					.map((item: ReleaseType, key: number) => {
 						const { thumb, image } = parseImage(item?.thumb);
-						return (<div key={key} className="drop-shadow-sm w-64">
+						return (<div key={key} className="drop-shadow-sm w-80">
 							<InfoTag text={`${parseYear(item.dtreleased)}: ${item?.type?.replace('project', '').replace(',,', ',').replace(/^,/, '').replace(/,$/, '')}`}/>
 							<div className={`gig_${item?.project}`}/>
 							<div className="outline outline-slate-300 drop-shadow-sm">

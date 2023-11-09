@@ -81,10 +81,10 @@
 #live					endif
 #live					if (makeArray(s_parts, ::, ${parts[2]}))
 							${define(_embed->mediaurl, ${parts[1]})}
-							${define(_embed->ordinal, ${s_parts[2]})}
 							${define(_embed->song, ${literalizeCommas(${s_parts[1]})})}
+							${define(_embed->ordinal, ${s_parts[2]})}
+							${define(_embed->comment, ${s_parts[3]})}
 							${define(_embed->author, )}
-							${define(_embed->comment, )}
 							${define(_embed->mediacredit, )}
 							${doMediaEmbed(pr=_embed)}
 #live					endif
@@ -2355,15 +2355,6 @@ ${_d[3]}
 #live			endif
 #live		endwhile
 			</span>
-##live	else
-##
-##	no audio - just a song listing
-##
-#NO ORD
-##live		if (defined(${pr}->ordinal))
-#				<span class="listenItemOrdinal">${${pr}->ordinal}.</span>
-##live		endif
-#				${songLinkMapped(${literalizeCommas(${${pr}->song})})}
 #live	endif
 
 #define	fetchGigSongContent(datetime)

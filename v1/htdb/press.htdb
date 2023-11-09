@@ -98,7 +98,25 @@
 #live	endif
 #live	endif
 	<p />
-	${body}
+#live	if (define(Bx[1], ))
+#live	endif
+#live	if (define(Bx[2], ))
+#live	endif
+#live	if (define(Bx[3], ))
+#live	endif
+#live	if (define(Bx[4], ))
+#live	endif
+#live	if (!getval(body) == ;;))
+	<blockquote>
+		${body}
+	</blockquote>
+#live	else if (makeArray(Bx, ;;, ${body}))
+	<blockquote>
+		${Bx[1]}
+		<p />
+		${parseCredit(${Bx[2]};;${Bx[3]};;${Bx[4]})}
+	</blockquote>
+#live	endif
 #live	if ((getval(${prefix}->type) == album) & (defined(${prefix}->album)))
 	<div style="font-size: .85em; margin-top: 10px;">
 		${mkAlbumBlurb(prefix=${lookupAlbumBy(l=${${prefix}->album})})}
@@ -213,7 +231,7 @@
 			<b style=" font-size: 1.25em; ">${${prefix}->subhead}</b><br />
 #live	endif
 #live	if (defined(${prefix}->summary))
-			<blockquote style=" font-size: .95em; ">${${prefix}->summary}</blockquote><br />
+			<div style=" font-size: .95em; ">${${prefix}->summary}</div><br />
 #live	endif
 	</center>
 	<hr />
@@ -288,7 +306,7 @@ ${d}
 #live		loop (pi, 1, ${pressItems->numResults})
 #live			if (define(pr, pressItems[${pi}]))
 <h3>${pi}: update (pub:${${pr}->dt}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
-#live				if (sql(x:insert into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${${pr}->images}", media="${${pr}->media}", annotation="${filterProgramArguments(${${pr}->annotation})}", audio="${${pr}->audio}", publication="${${pr}->publication}", title="${${pr}->title}", headline="${${pr}->headline}", subhead="${${pr}->subhead}", location="${${pr}->location}", summary="${${pr}->summary}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->added})}", dtpublished="${fixDt(${${pr}->dt})}", dtgig="${fixDt(${${pr}->datetime})}", person="${${pr}->person}"))
+#live				if (sql(x:insert into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${${pr}->images}", media="${${pr}->media}", annotation="${filterProgramArguments(${${pr}->annotation})}", audio="${${pr}->audio}", publication="${filterProgramArguments(${${pr}->publication})}", title="${filterProgramArguments(${${pr}->title})}", headline="${filterProgramArguments(${${pr}->headline})}", subhead="${filterProgramArguments(${${pr}->subhead})}", location="${${pr}->location}", summary="${filterProgramArguments(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->added})}", dtpublished="${fixDt(${${pr}->dt})}", dtgig="${fixDt(${${pr}->datetime})}", person="${${pr}->person}", body="${filterProgramArguments(${${pr}->body})}"))
 #live				endif
 #live			endif
 #live		endloop
@@ -304,7 +322,7 @@ ${d}
 
 #live	endif
 
-#define	addPress(type, url, dt, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, added, headline, subhead, images, todo, media, audio, annotation)
+#define	addPress(type, url, dt, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, added, headline, subhead, images, todo, media, audio, annotation, body)
 
 #live	if (defined(url))
 
@@ -364,6 +382,8 @@ ${d}
 #live			if (defIt(prefix=${pre}, url=${url}, field=source, value=${source}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=annotation, value=${annotation}))
+#live			endif
+#live			if (defIt(prefix=${pre}, url=${url}, field=body, value=${body}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=credit, value=${credit}))
 #live			endif
@@ -615,9 +635,9 @@ ${d}
 		url=${jbc_press}/20220128_interview_50YearsOfFun.html,
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20220128_DaveBarker_interview_50YearsOfFun.mp3;;The Interview,
 		publication=50 Years of Fun,
-		title=50 Years of Fun - JAZ001,
+		title=Dave E. Barker,
 		headline=Pat Fish & The Jazz Butcher Special w/guest David Barker (Glass Records),
-		subhead=(Glass Records),
+		subhead=Episode: JAZZ001,
 		source=https://podcasts.apple.com/us/podcast/jaz001-pat-fish-the-jazz-butcher-special-w-guest/id1542932551?i=1000549279324,
 		credit=patreon.com/fiftyyearsoffun,
 		dt=2022-01-28,
@@ -633,11 +653,25 @@ ${d}
 		headline=Interview #2,
 		subhead=The Jazz Butcher - July 18, 1986,
 		credit=JC,,
-		source=https://happymediumproductions.weebly.com/rain---the-jazz-butcher.html,
+		source=https://happymediumproductions.weebly.com/interview-2---the-jazz-butcher.html,
 		dt=1986-07-18,
 		added=2023-09-20,
+		summary=${literalizeCommas(
+			${pat} & ${max} in Washington, DC the night of the Jazz Butcher's show at the 9:30 Club.
+			<br />
+			Background Noise Productions is: John Collins, Steve Yegelwel, Andy Schoengold, Jim Black, and Jimmy Mitchell 
+		)},
 		annotation=${literalizeCommas(
-			Well John, thanks for that rather strange and touching experience, which carried me back to a time when we were largely happy if permanently pissed. It says much for our dedication to our art that we sound so pleased to be drinking Heineken. But who the hell is that posh bloke Eider and where did he get that accent? Also you have made me catch a few bars of some tracks I've been assiduously avoiding for the last 30 years or so. But thanks all the same for the memory and indeed the Heineken.)};;Max Eider;;;;2017-10-01$$
+			Well John, thanks for that rather strange and touching experience, which carried me back to a time when we were largely happy if permanently pissed. It says much for our dedication to our art that we sound so pleased to be drinking Heineken. But who the hell is that posh bloke Eider and where did he get that accent? Also you have made me catch a few bars of some tracks I've been assiduously avoiding for the last 30 years or so. But thanks all the same for the memory and indeed the Heineken.)};;Max Eider;;;;2017-10-01$$,
+		body=${literalizeCommas(
+Another rainy night in Maryland…
+<p />
+The second band to be interviewed by Background Noise Productions back in the mid 80's was The Jazz Butcher; specifically Pat Fish and Max Eider. Mad genius' both, and interestingly, part of the cosmic cat's cradle linking me to another mad genius who's as brilliant with pen and ink as they are with guitars. Eclectic, eccentric, acoustic, electric. The Jazz Butcher never really got their due, but I've had the good fortune of seeing them twice—and both times they were brilliant. The first concert, at the old 9:30 Club, followed a somewhat debauched, Heineken case-long interview in the Background Noise P Street Studios and, if memory serves me right, we ended up in a no-name Chinese restaurant for hours after the show. The second time, was at a much smaller venue in Arlington. Older, wiser, more sophisticated(?) Pat was greeting patrons at the door as if he was welcoming them into his house.
+<p />
+I wish the Jazz Butcher had cracked it back in the day when they were riding high on that wave of college radio popularity… but I suppose if they had… they wouldn't be one of my favorite bands. The Happy Medium Song of the Day is “Rain.” 
+<p />
+C'mon, it's April. Get over it — or as Pat would say… “pass us another Heineken, mate.”
+		)};;Happy Medium Productions;;https://happymediumproductions.weebly.com/rain---the-jazz-butcher.html;;2006-04-25,
 		)}
 
 	${addPress(type=gig,
@@ -1653,8 +1687,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=1989-11-11,
 		datetime=1989-11-11 00:00:00,
 		added=2022-11-19 12:48:00,
-		summary=
-			Inconsequential short interview, translated)}
+		summary= Inconsequential short interview, translated
+	)}
 
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/milwaukee89.html,
@@ -1666,9 +1700,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=Milwaukee\, WI\, USA,
 		dt=1989-11-19,
 		datetime=1989-11-19 20:00:00,
-		summary=
-			Two star-struck fans corner the Butcher and he graciously provides a very informative and lengthy recorded interview\,
-			here transcribed.)}
+		summary= Two star-struck fans corner the Butcher and he graciously provides a very informative and lengthy recorded interview\, here transcribed.
+	)}
 
 	${addPress(type=clipping,
 		url=${jbc_press}/1994_press_melodymaker.html,
@@ -2542,125 +2575,91 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=France,
 		dt=2017-08-24)}
 
-#----------------
-#
-#	${addGig(prefix=gs, type=interview;obit,
-#		url=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20211007_JazzButcher_interview_stereoembers.mp3,
-#		title=Stereo Embers The Podcast: Pat Fish (The Jazz Butcher),
-#		dt=2021-10-07,
-#		credit=Alex Green,
-#		source=https://soundcloud.com/alexgreenonline/stereo-embers-the-podcast-pat-fish-the-jazz-butcher,
-#		summary=${literalizeCommas(
-#			An interview and obit, combined.
-#			"He loved his cat, he loved to read, he loved to drink, he loved to smoke and he loved to play music. Recorded in 2013 as the Jazz Butcher’s The Last Of The Gentleman Adventurers album hit shelves, this interview finds Fish in fine form, talking about the new record, Roddy Frame, The Blue Nile, his long-standing relationship with Eider and why it’s so hard to age in rock and roll…"
-#			)}
-#		)}
-#
-#	${addGig(prefix=gs, type=interview,
-#		url=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/201604_JazzButcher_interview_InessaB.mp3,
-#		title=Discovery and Uncovery with Pat Fish,
-#		dt=2016-04,
-#		credit=Inessa B,
-#		source=https://soundcloud.com/inessa-b/discovery-and-uncovery-with-pat-fish,
-#		summary=${literalizeCommas(
-#		Excerpted from Inessa B's soundcloud interview with Pat in 20016.
-#			"Having discovered The Jazz Butcher and followed their varied career over the years, an opportunity came up to connect with the man who started the journey himself, Pat Fish. I sent him questions that began with the all important naming of the group, to what Pat's reading, watching and listening to, and so much more."
-#			)}
-#		)}
-#
-#	${addGig(prefix=gs, type=interview,
-#		url=${jbc_audio}/19860718/19860718_backgroundnoiseproductions_PatMax_interview.mp3,
-#		title=Background Noise Productions,
-#		dt=1986-07-18,
-#		credit=Background Noise Productions,
-#		source=https://happymediumproductions.weebly.com/interview-2---the-jazz-butcher.html,
-#		summary=${literalizeCommas(
-#		${pat} & ${max} in Washington, DC the night of the Jazz Butcher's show at the 9:30 Club.
-#		<p>
-#		Background Noise Productions is: John Collins, Steve Yegelwel, Andy Schoengold, Jim Black, and Jimmy Mitchell 
-#		${anno_beg}
-#		Well John, thanks for that rather strange and touching experience, which carried me back to a time when we were largely happy if permanently pissed. It says much for our dedication to our art that we sound so pleased to be drinking Heineken. But who the hell is that posh bloke Eider and where did he get that accent? Also you have made me catch a few bars of some tracks I've been assiduously avoiding for the last 30 years or so. But thanks all the same for the memory and indeed the Heineken.
-#		${g_credit(g=${max}, d=2017-10-01)}
-#		${anno_end}
-#		</p>
-#			)}
-#		)}
-#
-#	${addGig(prefix=gs, type=interview,
-#		url=${jbc_audio}/20170612/20170612_C86interview.mp3,
-#		title=Norwich Radio/C86 Interview,
-#		dt=2017-06-12,
-#		credit=David Eastaugh,
-#		source=https://cultureclashradio.org,
-#		summary=${literalizeCommas(
-#		Excerpted from radio broadcast.
-#		Topics: The Smiths, early history, ${mer}, playing the sax, ${barker}
-#			)}
-#		)}
-#
-#	${addGig(prefix=gs, type=interview,
-#		url=${jbc_audio}/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3,
-#		title="Near Perfect Pitch" podcast #35,
-#		dt=2017-03-20,
-#		credit=Dara Mottahed,
-#		source=http://www.nearperfectpitch.com/,
-#		summary=${literalizeCommas(
-#		Excerpted from ${linkExternal(https://twitter.com/NearPerfPitch, \@NearPerfPitch)}'s podcast #35.
-#		Dara Mottahed and Pat (via Skype) catch up on happenings since the previous podcast.
-#			)}
-#		)}
-#
-#	${addGig(prefix=gs, type=interview,
-#		url=${jbc_audio}/20181209/20181209_FrenchSpurs1_mixcloud_PatFishInterview.mp3,
-#		title="PAT FISH: EARLY DAYS TO JAZZ BUTCHER'S FIRST RELEASE 'IN BATH OF BACON'",
-#		dt=2018-12-09,
-#		credit=FrehcnSpurs1,
-#		source=https://www.mixcloud.com/FrenchSpurs1/,
-#		summary=${literalizeCommas(
-##			https://www.mixcloud.com/FrenchSpurs1/retropopic-206-pat-fish-early-days-jazz-butcher-to-dan-tracey-2018-benefit/
-##			https://www.mixcloud.com/FrenchSpurs1/retropopic-205-pat-fish-early-days-to-jazz-butchers-first-release-in-bath-of-bacon/
-#			)}
-#		)}
-#
-#
-#	${addGig(prefix=gs, type=interview,
-#		url=${jbc_audio}/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3,
-#		title="On The Road" - CBC featurette,
-#		dt=1989-07-01,
-#		credit=Dana Mottahead (Gen0 cassette of FM broadcast),
-#		summary=${literalizeCommas(
-#		While en-route to 1989 Germany dates, ${pat} answers "Big Questions" for CBC radio
-#		listeners.
-#			)}
-#		)}
-#
-#
-#	${addGig(prefix=gs, type=interview,
-#		url=${jbc_audio}/20180703/20180703_WattFromPedroShow_OwenJones.mp3,
-#		title="The Watt From Pedro Show" podcast - ${owen},
-#		dt=2018-07-03,
-#		credit=Mike Watt,
-#		source=https://www.twfps.com/past-episodes/on-air-guest-owen-jones-from-hamburg-germany-via-skype,
-#		summary=${literalizeCommas(
-#		Excerpted from the musician-to-musician podcasts by Mike Watt (of The Minutemen)
-#		speaking with ${owen} (via Skype). Mostly "Shakespeare and The Bible", and
-#		some passing Jazz Butcher commentary.
-#			)}
-#		)}
-#
-#
-#	${addGig(prefix=gs, type=interview,
-#		url=${jbc_audio}/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3,
-#		title="Near Perfect Pitch" podcast #1,
-#		dt=2016-05-09,
-#		credit=Dara Mottahed,
-#		source=http://www.nearperfectpitch.com/,
-#		summary=${literalizeCommas(
-#		Excerpted from ${linkExternal(https://twitter.com/NearPerfPitch, \@NearPerfPitch)}'s inaugural podcast.
-#		Dara Mottahed and Pat (via Skype) chat about recent band history. And football.
-#			)}
-#		)}
-#----------------
+	${addPress(type=interview;retrospective;podcast,
+		url=/press/20211007_press_stereoembers.html,
+		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20211007_JazzButcher_interview_stereoembers.mp3;;The Podcast,
+		publication=Stereo Embers The Podcast,
+		title=Pat Fish (The Jazz Butcher),
+		dt=2021-10-07,
+		credit=Alex Green,
+		source=https://soundcloud.com/alexgreenonline/stereo-embers-the-podcast-pat-fish-the-jazz-butcher,
+		summary=${literalizeCommas(
+			An interview and obit, combined.
+			"He loved his cat, he loved to read, he loved to drink, he loved to smoke and he loved to play music. Recorded in 2013 as the Jazz Butcher’s The Last Of The Gentleman Adventurers album hit shelves, this interview finds Fish in fine form, talking about the new record, Roddy Frame, The Blue Nile, his long-standing relationship with Eider and why it’s so hard to age in rock and roll…"
+		)}
+	)}
+
+	${addPress(type=interview;podcast,
+		url=/press/201604_press_innesab.html,
+		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/201604_JazzButcher_interview_InessaB.mp3;;The Interview,
+		publication=Innessa B Podcast,
+		title=Discovery and Uncovery with Pat Fish,
+		headline=In Memory of Pat Fish,
+		dt=2021-10-13 19:59:42,
+		credit=Inessa B,
+		source=https://soundcloud.com/inessa-b/discovery-and-uncovery-with-pat-fish,
+		summary=${literalizeCommas(
+			In the Spring of 2016, I sent my musical hero, Pat Fish, a list of questions. From the obvious like how the band name came to be born, to what was on Pat's reading list, to more complex items in one's life. Where do his inspiration come from and what made Pat dive into sadness.
+		)}
+	)}
+
+	${addPress(type=interview;radio,
+		url=/press/20170612_interview_radio_norwich.html,
+		audio=${jbc_audio}/20170612/20170612_C86interview.mp3;;The Interview,
+		publication=Norwich Radio,
+		title=C86 Interview,
+		dt=2017-06-12,
+		credit=David Eastaugh,
+		source=https://cultureclashradio.org,
+		summary=${literalizeCommas(
+			Excerpted from radio broadcast.
+			Topics: The Smiths, early history, ${mer}, playing the sax, ${barker}
+		)}
+	)}
+
+	${addPress(type=interview;podcast,
+		url=/press/20181209_interview_frenchspurs.html,
+		audio=${jbc_audio}/20181209/20181209_FrenchSpurs1_mixcloud_PatFishInterview.mp3,
+		publication=Retropopic podcast,
+		title=Episode #206,
+		headline=EARLY DAYS TO JAZZ BUTCHER'S FIRST RELEASE 'IN BATH OF BACON',
+		dt=2018-12-09,
+		credit=FrehcnSpurs1,
+		source=https://www.mixcloud.com/FrenchSpurs1/retropopic-206-pat-fish-early-days-jazz-butcher-to-dan-tracey-2018-benefit/,
+		summary=${literalizeCommas(
+		Why did he decide to choose music over an academic route way? Where did the group name 'Jazz Butcher' come from? What negative event was the inspiration behind the classic song 'Next Move Sideways'? Why did Mark E Smith write to Pat? What were the circumstances that lead Brix Smith to thump Jazz Butcher drummer Owen Jones? How did he get involved in The Dan Treacey Benefit? And many, many more great anecdotes......
+		)}
+	)}
+
+	${addPress(type=interview;radio,
+		url=/press/19890701_interview_ontheroad.html,
+		audio=${jbc_audio}/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3,
+		publication=CBC,
+		location=Canada,
+		title="On The Road" - CBC featurette,
+		dt=1989-07-01,
+		credit=Dana Mottahead (Gen0 cassette of FM broadcast),
+		summary=${literalizeCommas(
+			While en-route to 1989 Germany dates, ${pat} answers "Big Questions" for CBC radio
+			listeners.
+		)}
+	)}
+
+	${addPress(type=interview;podcast, person=owen,
+		url=/press/20180703_interview_wattfrompedroshow.html,
+		audio=${jbc_audio}/20180703/20180703_WattFromPedroShow_OwenJones.mp3,
+		publication=The Watt From Pedro Show,
+		title=Owen Jones,
+		dt=2018-07-03,
+		credit=Mike Watt,
+		source=https://www.twfps.com/past-episodes/on-air-guest-owen-jones-from-hamburg-germany-via-skype,
+		summary=${literalizeCommas(
+			Excerpted from the musician-to-musician podcasts by Mike Watt (of The Minutemen)
+			speaking with ${owen} (via Skype). Mostly "Shakespeare and The Bible", and
+			some passing Jazz Butcher commentary.
+		)}
+	)}
+
 
 #define	pressHeading[retrospective]->tab	Rememberences
 #define	pressHeading[retrospective]->blurb
@@ -17619,22 +17618,6 @@ Decir que Jazz Butcher es un genio incomprendido no es un recurso fácil; compar
 Al día siguiente, para celebrar el día de las tiendas de discos especializadas en todo el mundo, Pat tomó su guitarra y a su trompetista y se marcó un mini concierto entrañable en Discos Amsterdam, con alguna otra adaptación inesperada, como “Take The Skinheads Bowling” de Camper Van Beethoven.
 <p />
 A Pat Fish hay que quererle por lo que tiene de significado su música, la libertad de no claudicar ante modas o condicionantes, el talento que derrocha cada vez que contacta con las cuerdas de una guitarra o, incluso, cuando suspira. Y suspira de maravilla, es lo que tienen los genios.
-		)}
-	)}
-	${jbc_footer}
-#live	endif
-
-#define	19860718_press_backgroundmediumproductions.html
-#live	if (getval(page) = 19860718_press_backgroundmediumproductions.html)
-	${extractPress(
-		body=${literalizeCommas(
-Another rainy night in Maryland…
-<p />
-The second band to be interviewed by Background Noise Productions back in the mid 80's was The Jazz Butcher; specifically Pat Fish and Max Eider. Mad genius' both, and interestingly, part of the cosmic cat's cradle linking me to another mad genius who's as brilliant with pen and ink as they are with guitars. Eclectic, eccentric, acoustic, electric. The Jazz Butcher never really got their due, but I've had the good fortune of seeing them twice—and both times they were brilliant. The first concert, at the old 9:30 Club, followed a somewhat debauched, Heineken case-long interview in the Background Noise P Street Studios and, if memory serves me right, we ended up in a no-name Chinese restaurant for hours after the show. The second time, was at a much smaller venue in Arlington. Older, wiser, more sophisticated(?) Pat was greeting patrons at the door as if he was welcoming them into his house. 
-<p />
-I wish the Jazz Butcher had cracked it back in the day when they were riding high on that wave of college radio popularity… but I suppose if they had… they wouldn't be one of my favorite bands. The Happy Medium Song of the Day is “Rain.” 
-<p />
-C'mon, it's April. Get over it — or as Pat would say… “pass us another Heineken, mate.”
 		)}
 	)}
 	${jbc_footer}

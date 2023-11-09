@@ -65,7 +65,7 @@
 	{
 		"subject": "Steve Garofalo",
 
-		"body": "<div class='annotation'> It is with great regret that the Jazz Butcher Quartet must announce that <!-- BEG:expanded_from:[person:Steve Garofalo] --> <span class='person'> <a href='/people/steve_garofalo.html'>Steve Garofalo</a> </span> <!-- expanded_from:[person:Steve Garofalo]:END -->, our drummer, died unexpectedly at his home in Northampton NN1 on 28th February. Steve was so much more than just the drummer in a band. He was the true, beating heart of the entire operation in every way imaginable, and at the moment it seems inconceivable that the band might be able to continue without him. We are utterly bereft, as is his enormous circle of loving friends and family. <p /> Naturally, we apologise to those whom we are forced to let down over bookings and so forth. If there was a way to fulfil such obligations, we would normally find it, but this is just too enormous for us to cope with at this time. <p /> Our thoughts and prayers are with Steve's family. </div>",
+		"body": "<div class='annotation'> It is with great regret that the Jazz Butcher Quartet must announce that <span class='person'> <a href='/people/steve_garofalo.html'>Steve Garofalo</a> </span>, our drummer, died unexpectedly at his home in Northampton NN1 on 28th February. Steve was so much more than just the drummer in a band. He was the true, beating heart of the entire operation in every way imaginable, and at the moment it seems inconceivable that the band might be able to continue without him. We are utterly bereft, as is his enormous circle of loving friends and family. <p /> Naturally, we apologise to those whom we are forced to let down over bookings and so forth. If there was a way to fulfil such obligations, we would normally find it, but this is just too enormous for us to cope with at this time. <p /> Our thoughts and prayers are with Steve's family. </div>",
 
 		"dt": "1458000000",
 
@@ -113,7 +113,7 @@
 	{
 		"subject": "Band News",
 
-		"body": "Someone didn't chop the heads off!!  They're back from the dead. The JBC are more. <p /> As of March 1998, the Jazz Butcher and <a href='http://www.creation-records.com' target='new'>Creation Records</a> have parted ways. <p /> <!-- BEG:expanded_from:[person:Max Eider] --> <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span> <!-- expanded_from:[person:Max Eider]:END -->, who left the group in the 80's is back. <p /> <!-- BEG:expanded_from:[person:Pat Fish] --> <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> <!-- expanded_from:[person:Pat Fish]:END -->'s follow-on project <a href='https://www.sumosonic.com' target='new'>Sumosonic</a>, is well worth your time.",
+		"body": "Someone didn't chop the heads off!!  They're back from the dead. The JBC are more. <p /> As of March 1998, the Jazz Butcher and <a href='http://www.creation-records.com' target='new'>Creation Records</a> have parted ways. <p /> <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span>, who left the group in the 80's is back. <p /> <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span>'s follow-on project <a href='https://www.sumosonic.com' target='new'>Sumosonic</a>, is well worth your time.",
 
 		"dt": "947219674",
 
@@ -125,7 +125,7 @@
 	{
 		"subject": "Rev-Ola compilation",
 
-		"body": "Rev-Ola issued a compilation of the JBC's Creation output at the end of October. Although it has a lot in common with the US release '<!-- BEG:expanded_from:[single:&amp;#161;Excellent! The Violent Years] --> <span class='release_title'><b><a href='/albums/violent.html'>&amp;#161;Excellent! The Violent Years</a></b></span> <!-- expanded_from:[single:&amp;#161;Excellent! The Violent Years]:END -->', it does also feature stuff from '<!-- BEG:expanded_from:[album:Illuminate] --> <span class='release_title'><b><a href='/albums/illuminate.html'>Illuminate</a></b></span> <!-- expanded_from:[album:Illuminate]:END -->' and two previously unreleased efforts from the '<!-- BEG:expanded_from:[album:Waiting For The Love Bus] --> <span class='release_title'><b><a href='/albums/bus.html'>Waiting For The Love Bus</a></b></span> <!-- expanded_from:[album:Waiting For The Love Bus]:END -->' sessions. Besides, you can't get '<!-- BEG:expanded_from:[single:&amp;#161;Excellent! The Violent Years] --> <span class='release_title'><b><a href='/albums/violent.html'>&amp;#161;Excellent! The Violent Years</a></b></span> <!-- expanded_from:[single:&amp;#161;Excellent! The Violent Years]:END -->' anywhere anyway. <p /> Title: <!-- BEG:expanded_from:[album:The Jazz Butcher's Free Lunch] --> <span class='release_title'><b><a href='/albums/free_lunch.html'>The Jazz Butcher's Free Lunch</a></b></span> <!-- expanded_from:[album:The Jazz Butcher's Free Lunch]:END --><br> Release date: October 20th<br> Label: Rev-Ola<br> Cat. No: CRREV 54",
+		"body": "Rev-Ola issued a compilation of the JBC's Creation output at the end of October. Although it has a lot in common with the US release '<span class='release_title'><b><a href='/albums/violent.html'>&amp;#161;Excellent! The Violent Years</a></b></span>', it does also feature stuff from '<span class='release_title'><b><a href='/albums/illuminate.html'>Illuminate</a></b></span>' and two previously unreleased efforts from the '<span class='release_title'><b><a href='/albums/bus.html'>Waiting For The Love Bus</a></b></span>' sessions. Besides, you can't get '<span class='release_title'><b><a href='/albums/violent.html'>&amp;#161;Excellent! The Violent Years</a></b></span>' anywhere anyway. <p /> Title: <span class='release_title'><b><a href='/albums/free_lunch.html'>The Jazz Butcher's Free Lunch</a></b></span><br> Release date: October 20th<br> Label: Rev-Ola<br> Cat. No: CRREV 54",
 
 		"dt": "1066608000",
 
@@ -245,7 +245,7 @@
 	{
 		"subject": 	"",
 
-		"body": "The crowd-funded Jazz Butcher album, <!-- BEG:expanded_from:[album:Last of the Gentleman Adventurers] --> <span class='release_title'><b><a href='/albums/last_of_the_gentleman_adventurers.html'>Last of the Gentleman Adventurers</a></b></span> <!-- expanded_from:[album:Last of the Gentleman Adventurers]:END --> has been released! <p /> Currently only available for download by pledgers. Physical media and iTunes download will be available in a few weeks.",
+		"body": "The crowd-funded Jazz Butcher album, <span class='release_title'><b><a href='/albums/last_of_the_gentleman_adventurers.html'>Last of the Gentleman Adventurers</a></b></span> has been released! <p /> Currently only available for download by pledgers. Physical media and iTunes download will be available in a few weeks.",
 
 		"dt": "1351017590",
 
@@ -377,7 +377,7 @@
 	{
 		"subject": "Speaking of aberrations..",
 
-		"body": "Hey, kids... there's <a href='/gigs/1999'>a US tour in September!</a> <p /> featuring <!-- BEG:expanded_from:[person:Pat Fish] --> <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> <!-- expanded_from:[person:Pat Fish]:END -->, <!-- BEG:expanded_from:[person:Max Eider] --> <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span> <!-- expanded_from:[person:Max Eider]:END -->, <!-- BEG:expanded_from:[person:Owen Jones] --> <span class='person'> <a href='/people/owen_jones.html'>Owen Jones</a> </span> <!-- expanded_from:[person:Owen Jones]:END --> with <!-- BEG:expanded_from:[person:David J.] --> <span class='person'> <a href='/people/david_j.html'>David J.</a> </span> <!-- expanded_from:[person:David J.]:END --> in L.A. and <!-- BEG:expanded_from:[person:Kevin Haskins] --> <span class='person'> <a href='/people/kevin_haskins.html'>Kevin Haskins</a> </span> <!-- expanded_from:[person:Kevin Haskins]:END --> in L.A., S.F., and N.Y.C!",
+		"body": "Hey, kids... there's <a href='/gigs/1999'>a US tour in September!</a> <p /> featuring <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span>, <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span>, <span class='person'> <a href='/people/owen_jones.html'>Owen Jones</a> </span> with <span class='person'> <a href='/people/david_j.html'>David J.</a> </span> in L.A. and <span class='person'> <a href='/people/kevin_haskins.html'>Kevin Haskins</a> </span> in L.A., S.F., and N.Y.C!",
 
 		"dt": "935971200",
 
@@ -749,7 +749,7 @@
 	{
 		"subject": "Wasted Years Press",
 
-		"body": "On the occasion of the <!-- BEG:expanded_from:[album:The Wasted Years] --> <span class='release_title'><b><a href='/albums/fire_wasted.html'>The Wasted Years</a></b></span> <!-- expanded_from:[album:The Wasted Years]:END --> box set release, <u><a href='/press/20171002_bandcamp.html'>here's a nice review and interview</a></u> and <u><a href='/press/20171012_louderthanwar.html'>a nice review</a></u>, and <u><a href='/press/20171015_apessimistisneverdisappointed.html'>or two</a></u>. <u><a href='/press/20171020_popmatters.html'>or three</a></u> <p /> Also, unearthed on the 'tube are some recent video segments where Pat talks briefly on a variety of topics. Click the 'Etc' tab over in <a href='/video'>The Viewing Room</a>.",
+		"body": "On the occasion of the <span class='release_title'><b><a href='/albums/fire_wasted.html'>The Wasted Years</a></b></span> box set release, <u><a href='/press/20171002_bandcamp.html'>here's a nice review and interview</a></u> and <u><a href='/press/20171012_louderthanwar.html'>a nice review</a></u>, and <u><a href='/press/20171015_apessimistisneverdisappointed.html'>or two</a></u>. <u><a href='/press/20171020_popmatters.html'>or three</a></u> <p /> Also, unearthed on the 'tube are some recent video segments where Pat talks briefly on a variety of topics. Click the 'Etc' tab over in <a href='/video'>The Viewing Room</a>.",
 
 		"dt": "1508025600",
 
@@ -797,7 +797,7 @@
 	{
 		"subject": "'On The Road' - CBC featurette",
 
-		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>While en-route to 1989 Germany dates, <!-- BEG:expanded_from:[person:Pat Fish] --> <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> <!-- expanded_from:[person:Pat Fish]:END --> answers 'Big Questions' for CBC radio listeners</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='/audio/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <span class='credit'> <b>Credit</b>: Dana Mottahead </span><!-- credit -->",
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>While en-route to 1989 Germany dates, <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> answers 'Big Questions' for CBC radio listeners</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='/audio/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <span class='credit'> <b>Credit</b>: Dana Mottahead </span><!-- credit -->",
 
 		"dt": "1574553600",
 

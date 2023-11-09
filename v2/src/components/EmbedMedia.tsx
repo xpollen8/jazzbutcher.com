@@ -170,13 +170,13 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 						</EmbedSoundCloud>
 					</>
 				} else if (useMediaurl?.includes('.mp3')) {
-					return (<div className="">
+					return (<>
 						<LinkAudio version={version} lookup={lookup} parent={parent} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} ordinal={ordinal} setnum={setnum} />
 						{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 						{children}
-					</div>)
+					</>)
 				} else {
-					return (<>
+					return (<div className="listItem">
 						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 
 						{(city?.length && venue?.length && datetime?.length && !datetime.match(/0000-00-00 00:00:00/)) && <>
@@ -187,15 +187,13 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 						{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
 						{(author) && <span className="smalltext">({author})</span>}
 						{(comment) && <span className="smalltext"> ({comment}) </span>}
-						<div>
-							<EmbedVideo className={className} data={data} />
-							{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
-							{children}
-						</div>
-					</>);
+						<EmbedVideo className={className} data={data} />
+						{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
+						{children}
+					</div>);
 				}
 			} else {
-				return (<div>
+				return (<div className="listItem">
 					{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 					{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
 					{(author) && <span className="smalltext"> ({author}) </span>}

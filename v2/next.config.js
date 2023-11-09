@@ -129,6 +129,12 @@ const nextConfig = {
 				},
 				{
 					protocol: 'https',
+					hostname: 'wilsondub.com',
+					port: '',
+					pathname: '**',
+				},
+				{
+					protocol: 'https',
 					hostname: 'v1.jazzbutcher.com',
 					port: '',
 					pathname: '**',

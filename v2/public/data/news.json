@@ -1,6 +1,6 @@
 {
 	"noun": "albums",
-	"numResults": 102,
+	"numResults": 103,
 	"results": [
 	{
 		"type": "album",
@@ -6723,7 +6723,73 @@
 
 		"bishopsez": 	"",
 
-		"audio": "http://www.adjective.com/audio/eg/peter_murphy/1_DoYaWanna.mp3;;Do Ya Wanna?::1::;;$$http://www.adjective.com/audio/eg/peter_murphy/2_Filth.mp3;;Our Friends The Filth::2::;;$$http://www.adjective.com/audio/eg/peter_murphy/3_ConeyIslandNightmare.mp3;;Coney Island Nightmare::3::;;$$http://www.adjective.com/audio/eg/peter_murphy/4_Ezcsta.mp3;;Ezcsta::3::;;$$http://www.adjective.com/audio/eg/peter_murphy/5_LAStories_gameboy_mix.mp3;;L.A. Stories::4::gameboy mix;;$$http://www.adjective.com/audio/eg/peter_murphy/6_HypnoticEye.mp3;;The Hypnotic Eye::5::;;$$http://www.adjective.com/audio/eg/peter_murphy/7_LAStories_metal_mix.mp3;;L.A. Stories::6::metal mix;;$$",
+		"audio": "http://www.adjective.com/audio/eg/peter_murphy/1_DoYaWanna.mp3;;Do Ya Wanna?::1::;;$$http://www.adjective.com/audio/eg/peter_murphy/2_Filth.mp3;;Our Friends The Filth::2::;;$$http://www.adjective.com/audio/eg/peter_murphy/3_ConeyIslandNightmare.mp3;;Coney Island Nightmare::3::;;$$http://www.adjective.com/audio/eg/peter_murphy/4_Ezcsta.mp3;;Ezcsta::4::;;$$http://www.adjective.com/audio/eg/peter_murphy/5_LAStories_gameboy_mix.mp3;;L.A. Stories::5::gameboy mix;;$$http://www.adjective.com/audio/eg/peter_murphy/6_HypnoticEye.mp3;;The Hypnotic Eye::6::;;$$http://www.adjective.com/audio/eg/peter_murphy/7_LAStories_metal_mix.mp3;;L.A. Stories::7::metal mix;;$$",
+
+		"downloads": 	"",
+
+		"video": 	"",
+
+		"collaboration": 	"",
+
+		"dtadded": 	""
+
+	} ,
+	{
+		"type": "demo,project",
+
+		"href": "/albums/blackeg_lesprit_formidable.html",
+
+		"title": "l'esprit formidable",
+
+		"thumb": "/images/19930820/19930820_blackeg_cover",
+
+		"blurb": 	"",
+
+		"dtreleased": "1993-08-20",
+
+		"buy": 	"",
+
+		"project": "eg",
+
+		"lookup": "blackeg_lesprit_formidable",
+
+		"label": 	"",
+
+		"catalog": 	"",
+
+		"media": "cassette",
+
+		"country": 	"",
+
+		"source": "David Whittemore",
+
+		"contribution": 	"",
+
+		"dtrecorded": 	"",
+
+		"studio": 	"",
+
+		"onalbum": 	"",
+
+		"liner": "Karel, Otto and (allegedly) Emil Von Dämmerung recorded by Pat Fish at Submarine Sound Complex, Northampton, U.K. Assistant engineer: Keith Jones",
+
+		"Agroove": 	"",
+
+		"Bgroove": 	"",
+
+		"thanks": 	"",
+
+		"images": "/images/19930820/19930820_blackeg_a$$/images/19930820/19930820_blackeg_b",
+
+		"notes": 	"",
+
+		"patsez": 	"",
+
+		"CDring": 	"",
+
+		"bishopsez": 	"",
+
+		"audio": "http://www.adjective.com/audio/eg/l_esprit_formidable/1_AfterVietnam.mp3;;After Vietnam::1::;;$$http://www.adjective.com/audio/eg/l_esprit_formidable/2_DrugsRumble1.mp3;;Drugs Rumble #1::2::;;$$http://www.adjective.com/audio/eg/l_esprit_formidable/3_BelAir.mp3;;Bel Air::3::;;$$http://www.adjective.com/audio/eg/l_esprit_formidable/4_Mogadon.mp3;;Mogadon::4::;;$$http://www.adjective.com/audio/eg/l_esprit_formidable/5_LulusDog.mp3;;Lulu's Dog::5::;;$$http://www.adjective.com/audio/eg/l_esprit_formidable/6_NoAnswer.mp3;;No Answer (In Cambodia)::6::;;$$http://www.adjective.com/audio/eg/l_esprit_formidable/7_IWillSurvive.mp3;;I Will Survive::7::;;$$http://www.adjective.com/audio/eg/l_esprit_formidable/8_SexualTaboos.mp3;;Sexual Taboos::8::;;$$http://www.adjective.com/audio/eg/l_esprit_formidable/9_LaRage.mp3;;La Rage Le Sarcasme Et La Betise Humaine::9::;;$$http://www.adjective.com/audio/eg/l_esprit_formidable/10_AfterVietnam_ambient_mix.mp3;;After Vietnam::10::Ambient Mix;;$$http://www.adjective.com/audio/eg/l_esprit_formidable/11_TonightYouBelongToMe.mp3;;Tonight You Belong To Me::11::;;$$",
 
 		"downloads": 	"",
 

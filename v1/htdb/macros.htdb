@@ -6,13 +6,13 @@
 #define	parseAlbumImages(prefix, field, width=250)
 #live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
 #live		loop(ci, 1, ${chunks->numResults})
-#live			if (define(parts[2]), )
+#live			if (define(parts[2], ))
 #live			endif
-#live			if (define(parts[3]), )
+#live			if (define(parts[3], ))
 #live			endif
-#live			if (define(parts[4]), )
+#live			if (define(parts[4], ))
 #live			endif
-#live			if (define(parts[5]), )
+#live			if (define(parts[5], ))
 #live			endif
 #live			if (makeArray(parts, ;;, ${chunks[${ci}]}))
 #live				if (defined(parts[1]))
@@ -35,13 +35,13 @@
 #define	parseImages(prefix, field, width=250)
 #live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
 #live		loop(ci, 1, ${chunks->numResults})
-#live			if (define(parts[2]), )
+#live			if (define(parts[2], ))
 #live			endif
-#live			if (define(parts[3]), )
+#live			if (define(parts[3], ))
 #live			endif
-#live			if (define(parts[4]), )
+#live			if (define(parts[4], ))
 #live			endif
-#live			if (define(parts[5]), )
+#live			if (define(parts[5], ))
 #live			endif
 #live			if (makeArray(parts, ;;, ${chunks[${ci}]}))
 #live				if (defined(parts[1]))
@@ -69,25 +69,38 @@
 #define	parseAlbumAudio(prefix, field=audio)
 #live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
 #live		loop(ci, 1, ${chunks->numResults})
-#live			if (define(parts[2]), )
+#live			if (define(parts[1], ))
 #live			endif
-#live			if (define(parts[3]), )
+#live			if (define(parts[2], ))
+#live			endif
+#live			if (define(parts[3], ))
 #live			endif
 #live			if (makeArray(parts, ;;, ${chunks[${ci}]}))
 #live				if ((defined(parts[1])) || (defined(parts[2])) || (defined(parts[3])))
-#live					if (define(s_parts[2]), )
+#live					if (define(s_parts[1], ))
 #live					endif
-#live					if (define(s_parts[3]), )
+#live					if (define(s_parts[2], ))
 #live					endif
+#live					if (define(s_parts[3], ))
+#live					endif
+						${define(_embed->mediaurl, ${parts[1]})}
+						${define(_embed->song, )}
+						${define(_embed->ordinal, )}
+						${define(_embed->comment, )}
+						${define(_embed->author, )}
+						${define(_embed->mediacredit, )}
 #live					if (makeArray(s_parts, ::, ${parts[2]}))
-							${define(_embed->mediaurl, ${parts[1]})}
+#live						if ((defined(s_parts[1])) && (getval(s_parts[1]) != ::))
 							${define(_embed->song, ${literalizeCommas(${s_parts[1]})})}
+#live						endif
+#live						if (defined(s_parts[2]))
 							${define(_embed->ordinal, ${s_parts[2]})}
+#live						endif
+#live						if (defined(s_parts[3]))
 							${define(_embed->comment, ${s_parts[3]})}
-							${define(_embed->author, )}
-							${define(_embed->mediacredit, )}
-							${doMediaEmbed(pr=_embed)}
+#live						endif
 #live					endif
+						${doMediaEmbed(pr=_embed)}
 #live				endif
 					<p />
 #live			endif

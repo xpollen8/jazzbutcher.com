@@ -918,27 +918,27 @@
 
 #define	linkSingle(title, href)
 	${linkSQL(single, ${title}, ${href})}
-	<!-- BEG:expanded_from:[single:${title}] -->
+#	<!-- BEG:expanded_from:[single:${title}] -->
 #live	if (defined(href))
 	<span class="release_title"><b><a href="${href}">${title}</a></b></span>
 #live	else
 	<b>${title}</b>
 #live	endif
-	<!-- expanded_from:[single:${title}]:END -->
+#	<!-- expanded_from:[single:${title}]:END -->
 
 #define	linkAlbum(title, href)
 	${linkSQL(album, ${title}, ${href})}
-	<!-- BEG:expanded_from:[album:${title}] -->
+#	<!-- BEG:expanded_from:[album:${title}] -->
 #live	if (defined(href))
 	<span class="release_title"><b><a href="${href}">${title}</a></b></span>
 #live	else
 	<span class="release_title"><b>${title}</b></span>
 #live	endif
-	<!-- expanded_from:[album:${title}]:END -->
+#	<!-- expanded_from:[album:${title}]:END -->
 
 #define	linkPerson(href, name, lookup=no)
 	${linkSQL(person, ${name}, ${href})}
-	<!-- BEG:expanded_from:[person:${name}] -->
+#	<!-- BEG:expanded_from:[person:${name}] -->
 	<span class="person">
 #live	if (getval(lookup) = yes)
 	${name}
@@ -946,7 +946,7 @@
 	<a href="${href}">${name}</a>
 #live	endif
 	</span>
-	<!-- expanded_from:[person:${name}]:END -->
+#	<!-- expanded_from:[person:${name}]:END -->
 
 #define	linkGoogleSearch(query, text)
 #	<a href="${jbc_search}?f=performer&q=${encode(${query})}">${ternary((defined(text)), ${text}, ${query})}</a>
@@ -4049,7 +4049,7 @@ ${define(_set, false)}
 	${footer}
 
 #define	mkAlbumBlurb(prefix, details=yes, size=250)
-	<!-- BEG:expanded_from:[album_blurb:${${prefix}->title}] -->
+#	<!-- BEG:expanded_from:[album_blurb:${${prefix}->title}] -->
 	<div class="release">
 	<div class="album_details">
 #live	if (defined(${prefix}->project))
@@ -4138,7 +4138,7 @@ ${define(_set, false)}
 #live	endif
 	</div>
 	</div>
-	<!-- expanded_from:[album_blurb:${${prefix}->title}]:END -->
+#	<!-- expanded_from:[album_blurb:${${prefix}->title}]:END -->
 
 #define	showNewsCategory(category, limit, showYear, showMore)
 #live	if (define(prevYr, XXX))

@@ -536,7 +536,7 @@ ${d}
 		dt=2021-09-05,
 		added=2023-09-23)}
 
-	${addPress(type=interview;radio,
+	${addPress(type=interview;radio, person=pat;pete,
 		url=${jbc_press}/19920516_interview_WNUR.html,
 		audio=http://jazzbutcher.com/audio/19920516/19920516_JazzButcher_WNUR_Gen0.mp3;;The Interview$$;;Angels::1$$;;Take The Skinheads Bowling::2,
 		location=Chicago\, Illinois\, USA,

@@ -93,8 +93,8 @@
 	${mkPressHeader()}
 #live		if (defined(UA))
 <h1>update (pub:${${prefix}->url})</h1>
-#update press set body="${filterProgramArguments(${body})}" where url="${${prefix}->url}";
-#live	if (sql(z:update press set body="${filterProgramArguments(${body})}" where url="${${prefix}->url}"))
+#update press set body="${body}" where url="${${prefix}->url}";
+#live	if (sql(z:update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
 #live	endif
 #live	endif
 	<p />
@@ -306,7 +306,7 @@ ${d}
 #live		loop (pi, 1, ${pressItems->numResults})
 #live			if (define(pr, pressItems[${pi}]))
 <h3>${pi}: update (pub:${${pr}->dt}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
-#live				if (sql(x:insert into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${${pr}->images}", media="${${pr}->media}", annotation="${filterProgramArguments(${${pr}->annotation})}", audio="${${pr}->audio}", publication="${filterProgramArguments(${${pr}->publication})}", title="${filterProgramArguments(${${pr}->title})}", headline="${filterProgramArguments(${${pr}->headline})}", subhead="${filterProgramArguments(${${pr}->subhead})}", location="${${pr}->location}", summary="${filterProgramArguments(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->added})}", dtpublished="${fixDt(${${pr}->dt})}", dtgig="${fixDt(${${pr}->datetime})}", person="${${pr}->person}", body="${filterProgramArguments(${${pr}->body})}"))
+#live				if (sql(x:insert into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${${pr}->images}", media="${${pr}->media}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${${pr}->audio}", publication="${${pr}->publication}", title="${${pr}->title}", headline="${${pr}->headline}", subhead="${${pr}->subhead}", location="${${pr}->location}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->added})}", dtpublished="${fixDt(${${pr}->dt})}", dtgig="${fixDt(${${pr}->datetime})}", person="${${pr}->person}", body="${literalizeQuotes(${${pr}->body})}"))
 #live				endif
 #live			endif
 #live		endloop
@@ -2600,6 +2600,21 @@ subhead=(20 December 1957 – 5 October 2021),
 		source=https://soundcloud.com/inessa-b/discovery-and-uncovery-with-pat-fish,
 		summary=${literalizeCommas(
 			In the Spring of 2016, I sent my musical hero, Pat Fish, a list of questions. From the obvious like how the band name came to be born, to what was on Pat's reading list, to more complex items in one's life. Where do his inspiration come from and what made Pat dive into sadness.
+		)}
+	)}
+
+	${addPress(type=interview;podcast,
+		url=/press/20200417_interview_painefull.html,
+		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20200417_2018_The+Paine+Full+Podcast...+with+Pat+Fish.mp3,
+		publication=The Paine Full Podcast,
+		title=Episode #2,
+		headline=Pat Fish,
+		dt=2020-04-17,
+		added=2023-11-08,
+		source=https://soundcloud.com/user-871949376/the-paine-full-podcast-with-pat-fish,
+		summary=${literalizeCommas(
+			Dating from 2018 and recorded at 'Fishy Mansions' in Northampton... Pat talks about academic life in Oxford, his friendship with Rolo McGinty, The Sonic Tonix, The Jazz Butcher's first album, 'In Bath Of Bacon', life on the road and the recording of 'Cult Of The Basement'
+			</>,
 		)}
 	)}
 
@@ -9825,7 +9840,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
  record was made with no professional input whatsoever, and is
  largely constructed from bits of string and stuff that we found
  in the garden. In terms of the new material, Max has contributed
- four absolute whoppers to the set. ""The record also reflects what we've
+ four absolute whoppers to the set. "The record also reflects what we've
  been listening to recently,
  Although I'm surprised at how `Jazz Butcher' it has come out.
  We're going to call it `Rotton Soul'. "Regardless of personnel changes or

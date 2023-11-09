@@ -14,6 +14,7 @@ import { gab, expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
 import { linkExternal, parseDomain, truncAt, parseCaptionsSourcesEtc } from '@/lib/utils';
 
 export type ReleaseType =  {
+	[key: string]: any;	// make indexable as hash
 	type?: string
 	href?: string
 	title?: string
@@ -32,7 +33,7 @@ export type ReleaseType =  {
 	catalog?: string
 	media?: string
 	country?: string
-	credit?: string
+	source?: string
 	patsez?: string
 	bishopsez?: string
 	downloads?: string
@@ -124,25 +125,26 @@ const ReleaseContribution = ({ release }: { release: ReleaseTypeWithChildren }) 
 	}
 }
 
-const ReleaseNotes = ({ release }: { release: ReleaseTypeWithChildren }) => {
-	const parseBlob = (str: string) => {
-		const notes = parseCaptionsSourcesEtc(str);
-		if (notes?.length) {
-			return (<>
-				{notes?.map(([ note, source, sourceurl, sourcedate ]: any, key: number) =>
-					<div className="listItem" key={key}>
-						<div dangerouslySetInnerHTML={{ __html: note }} />
-						{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}
-					</div>
-				)}
-			</>)
-		}
+const parseSource = (str: string, className: string = 'listItem') => {
+	const notes = parseCaptionsSourcesEtc(str);
+	if (notes?.length) {
+		return (<>
+			{notes?.map(([ note, source, sourceurl, sourcedate ]: any, key: number) =>
+				<span className={className} key={key}>
+					<span dangerouslySetInnerHTML={{ __html: note }} />
+					{(source) && <><p /><Source g={source} u={sourceurl} d={sourcedate} /></>}
+				</span>
+			)}
+		</>)
 	}
+}
+
+const ReleaseNotes = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.notes || release?.blurb) {
 		return (<>
 			<Tag>Notes</Tag>
 			<blockquote>
-				{parseBlob(release?.notes + '$$' + release?.blurb + ';;' + release?.credit)}
+				{parseSource(release?.notes + '$$' + release?.blurb, 'block')}
 			</blockquote>
 		</>)
 	}
@@ -265,7 +267,10 @@ const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
 }
 
 const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
-	const labels = {
+	type LabelsType = {
+		[key: string]: any;	// make indexable as hash
+	}
+	const labels: LabelsType = {
 		type: "Release Type",
 		onalbum: "Single From Album",
 		collaboration: "Collaborateurs",
@@ -281,6 +286,7 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		Agroove: "A Groove",
 		Bgroove: "B Groove",
 		CDring: "CD Ring Text",
+		source: "Source",
 	};
 
 	const doBuy = ({ buy }: { buy?: string }) => (buy) && (<>
@@ -289,12 +295,12 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	</>)
 
 	const doIt = (label?: string) => {
-		if (label && typeof label !== 'string') return label;
+		if (label && typeof label !== 'string') { return label };
 		return label?.split(',')?.map((l: string, key: number, mx: string[]) => <span key={key}>{expand(l, true)}{(key !== mx?.length - 1) && <>{', '}</>}</span>);
 	}
 	return (<div>
 		<Tag>
-			<span className="text-2xl"> {release.title} </span>
+			<span className="text-2xl" dangerouslySetInnerHTML={{ __html: release?.title || '' }} />
 			{(release.collaboration || release.project) &&
 				<span className="text-md">
 					{(release.collaboration) && <>(collaboration: {release.collaboration})</>}
@@ -305,8 +311,18 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		</Tag>
 		<blockquote>
 			{Object.keys(labels).map((label: string, key: number) => {
-				// @ts-ignore
-				if (release[label]) { return <div key={key}> <label>{labels[label]}</label>: {doIt(release[label])} </div> }
+				if (release[label]) {
+					let val = release[label];
+					let source;
+					if (label === 'source' || release[label]?.includes(';;')) {
+						const parsed = parseCaptionsSourcesEtc(release[label]) || [];
+						const [ name, url, date ] = parsed[0] || [];
+						val = '';
+						source = <Attribution g={name} u={url} d={date} />
+					}
+					return <div key={key}> <label>{labels[label]}</label>: {doIt(val)}{source} </div>
+					// @ts-ignore
+				}
 			})}
 		</blockquote>
 	</div>)

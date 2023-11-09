@@ -21,7 +21,7 @@ create table press (
 	title varchar(200) NOT NULL,
 	headline varchar(200) NOT NULL,
 	subhead varchar(200) NOT NULL,
-	summary varchar(200) NOT NULL,
+	summary MEDIUMTEXT NOT NULL,
 	source varchar(200) NOT NULL,
 	credit varchar(200) NOT NULL,
 	body MEDIUMTEXT,

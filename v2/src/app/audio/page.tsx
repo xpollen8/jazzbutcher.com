@@ -298,59 +298,6 @@ ${define(gsExtra[${dt}], ${summary})}
 #live	endif
 
 
-	${begTab(Wilson)}
-	<a href="${jbc_search}?f=extras&q=wilson"> <div class="gig_wilson"> </div> </a>
-	${tag_beg}
-	November, 2005 Demo
-	${tag_end}
-	<div class="listenItem">
-		<a href="/images/wilson/200511_wilson_cd.jpg"><img src="/images/wilson/200511_wilson_cd_250.jpg"></a>
-		<p>
-		Recorded at ${linkExternal(http://www.premierstudios.co.uk, Premier Studio)}
-		<blockquote>
-		${linkAudio(title=Buffalo Sniper, url=${jbc_lyrics}/wilson_buffalo_sniper.html, mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3)}
-		${linkAudio(title=Police Chief, url=${jbc_lyrics}/wilson_police_chief.html, mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3)}
-		</blockquote>
-	</div>
-
-	${tag_beg}
-	April, 2003 Demo
-	${tag_end}
-	<div class="listenItem">
-		<a href="/images/wilson/200304_wilson_front.jpg"><img src="/images/wilson/200304_wilson_front_250.jpg"></a>
-		<a href="/images/wilson/200304_wilson_back.jpg"><img src="/images/wilson/200304_wilson_back_250.jpg"></a>
-		<p>
-		Recorded at Notepad, NW10 by Andy Parker.
-		Produced by Donald Ross Skinner.
-		All tunes conceived, devised & assembled by Wilson.
-		Tracks contain elements of everything.
-		<blockquote>
-		${linkAudio(title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3)}
-		${linkAudio(title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3)}
-		</blockquote>
-	</div>
-
-	${tag_beg}
-	2002 Demo
-	${tag_end}
-	<div class="listenItem">
-		<a href="/images/wilson/2002_wilson_front.jpg"><img src="/images/wilson/2002_wilson_front_250.jpg"></a>
-		<a href="/images/wilson/2002_wilson_back.jpg"><img src="/images/wilson/2002_wilson_back_250.jpg"></a>
-		<p>
-		Recorded by MC Bot on the Roland VS-1800 at Subsound, NN1
-		during 2001 and 2002. The words to "Play It All Night Long"
-		are by Warren Zevon. Everything else is original pirate material.
-		Increase the peace.
-		<blockquote>
-		${linkAudio(title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3)}
-		${linkAudio(title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3)}
-		${linkAudio(title=Hippy Shit, url=${jbc_lyrics}/wilson_hippy_shit.html, mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3)}
-		${linkAudio(title=Play It All Night Long, mp3=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3)}
-		${linkAudio(title=Burn\, Hollywood\, Burn, url=${jbc_lyrics}/wilson_burn_hollywood_burn.html, mp3=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3)}
-		${linkAudio(title=Dark Agenda, url=${jbc_lyrics}/wilson_dark_agenda.html, mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3)}
-		</blockquote>
-	</div>
-	${endTab}
 
 	${begTab(Sumosonic)}
 	<a href="${jbc_search}?f=extras&q=sumo"> <div class="gig_sumo"> </div> </a>

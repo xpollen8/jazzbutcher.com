@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import ImageStrip from '@/components/ImageStrip';
 import EmbedMedia from '@/components/EmbedMedia';
 import Tag from '@/components/Tag';
-import { Source, Credit } from '@/components/GenericWeb';
+import { Attribution, Source, Credit } from '@/components/GenericWeb';
 import usePressArticle from '@/lib/usePressArticle';
 import { parseDomain, parseCaptionsSourcesEtc, dateDiff, dateDisplay, ts2URI } from '@/lib/utils';
 import { AutoLinkPlayer, expand } from '@/lib/defines';
@@ -56,7 +56,7 @@ const PressItem = ({ item }: { item: any }) => {
 				{(article?.title) && <><b style={{ fontSize: '1.5em' }}>{article.title}</b><br /></>}
 				{(article?.headline) && <><b style={{ fontSize: '1.3em' }}>{article.headline}</b><br /></>}
 				{(article?.subhead) && <><b style={{ fontSize: '1.1em' }}>{article.subhead}</b><br /></>}
-				{(article?.summary) && <><b style={{ fontSize: '.95em' }}>{article.summary}</b><br /></>}
+				{(article?.summary) && <><blockquote style={{ fontSize: '.95em' }}>{article.summary}</blockquote><br /></>}
 				<p />
 				<hr />
 				<p />
@@ -76,9 +76,10 @@ const PressItem = ({ item }: { item: any }) => {
 			const audio = parseCaptionsSourcesEtc(article?.audio);
 			if (audio?.length) {
 				return (<>
-					{audio?.filter(([ file, caption ]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>
-						<EmbedMedia key={key} data={{ mediaurl: file, comment: article?.publication || caption, datetime: article?.dtpublished }} />
-					</>)
+					{audio?.map(([ file, caption ]: any, key: number) => {
+						const [ title, ordinal, version ] = caption?.split('::') || [];
+						return <EmbedMedia key={key} data={{ mediaurl: file, title, ordinal, comment: version, author: article?.publication, datetime: article?.dtpublished, autolink: true }} />
+					}
 					)}
 					<p />
 				</>)
@@ -100,14 +101,24 @@ const PressItem = ({ item }: { item: any }) => {
 			}
 		}
 	}
+	const ArticleAnnotation = ({ article }: any) => {
+		if (article?.annotation) {
+			const says = parseCaptionsSourcesEtc(article?.annotation);
+			return (says?.length) && (<>
+					{says.map(([ body, credit, crediturl, creditdate ]: any, key: number) => <><Tag>{(credit) ? `${credit} Says..` : 'Comments'}</Tag><div className="annotation">{body}</div><Attribution g={credit} u={crediturl} d={creditdate} /></> )}
+					<p />
+				</>)
+			}
+	}
 	return (item) && <>
 		<ArticleInfoBox article={item} />
 		<div style={{ margin: '5px' }}>
 			<ArticleTitle article={item} />
-			<ArticleAudio article={item} />
-			<ArticleMedia article={item} />
 			<ArticleThumbAndImages article={item} />
+			<ArticleMedia article={item} />
 			<div dangerouslySetInnerHTML={{ __html: item?.body }} />
+			<ArticleAnnotation article={item} />
+			<ArticleAudio article={item} />
 		</div>
 	</>
 }

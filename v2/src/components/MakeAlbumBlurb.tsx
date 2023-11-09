@@ -1,16 +1,14 @@
 import { Credit, Contribution } from './GenericWeb';
 import FeaturedItem from './FeaturedItem';
 import { type ReleaseType, type ReleaseTypeWithChildren } from './Release';
-import { truncAt, parseCredit } from '@/lib/utils';
+import { truncAt } from '@/lib/utils';
 import { expand } from '@/lib/defines';
 
 const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined) => {
 	const { type, href, title, thumb, blurb, dtreleased, dtrecorded, studio, buy, lookup,
 		label, catalog, media, country, contribution, children, inPage=false } = props; 
-	const blurb_credit = props?.credit;
 
 	if (!title) return <></>;
-	const { credit, crediturl, creditdate, creditcaption } = parseCredit(blurb_credit);
 	return (
 		<div key={key || 0}>
 			<FeaturedItem
@@ -25,8 +23,7 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 			>
 					<>
 					<Contribution titles={contribution} />
-					{(blurb) && <div dangerouslySetInnerHTML={{__html: blurb }} />}
-					<Credit g={credit} u={crediturl} d={creditdate} />
+					{(blurb) && <div dangerouslySetInnerHTML={{__html: blurb}} />}
 					{children}
 					</>
 			</FeaturedItem>

@@ -15,7 +15,7 @@ const	LyricVideo = ({ video }: any) => {
 	if (!video) return;
 	const videos = parseCaptionsSourcesEtc(video);
 
-	return <div className="clear_float imageStrip drop-shadow-md" style={{ width: '263px' }}>
+	return <div className="imageStrip">
 		{videos?.map((v: any, key: number) => {
 			const [ videourl, source, sourceurl, sourcedate, caption ] = v;
 			const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
@@ -52,21 +52,21 @@ const	LyricImages = ({ images }: any) => <ImageStrip images={parseCaptionsSource
 const Lyrics = (props: any, foundon: any[]) => {
 	const { mp3, video, media, images, lyrics, key } = props;
 	return (
-		<blockquote key={key}>
-			<LyricAudio {...props} />
-			<LyricVideo video={video} />
+		<>
 			<LyricImages images={images} />
+			<LyricVideo video={video} />
 			<LyricMedia media={media} />
-			<div className="lyrics" dangerouslySetInnerHTML={{__html: lyrics?.replace(/<br\/>/g, '') }}/>
-			<div className="clear_float" />
-		</blockquote>
+			<blockquote className="listItem">
+				<div dangerouslySetInnerHTML={{__html: lyrics }}/>
+			</blockquote>
+		</>
 	)
 }
 
 const FoundOn = (releases: any) =>
 	!!(releases?.length) && <>
 		<Tag>Found On</Tag>
-		<blockquote>
+		<blockquote className="listItem">
 			{releases?.sort((a: any, b: any) => parseYear(b.dtreleased) - parseYear(a.dtreleased))?.map(MakeAlbumBlurb)}
 		</blockquote>
 	</>

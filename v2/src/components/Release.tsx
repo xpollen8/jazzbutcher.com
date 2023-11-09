@@ -309,7 +309,8 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 			}
 			{doBuy(release)}
 		</Tag>
-		<blockquote>
+		<div className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>
+			<div className="flex flex-wrap gap-1">
 			{Object.keys(labels).map((label: string, key: number) => {
 				if (release[label]) {
 					let val = release[label];
@@ -320,11 +321,11 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 						val = '';
 						source = <Attribution g={name} u={url} d={date} />
 					}
-					return <div key={key}> <label>{labels[label]}</label>: {doIt(val)}{source} </div>
-					// @ts-ignore
+					return <span key={key} className="break-keep outline outline-1 outline-cyan-500 m-1"> <b>{labels[label]}</b> {doIt(val)}{source} </span>
 				}
 			})}
-		</blockquote>
+			</div>
+		</div>
 	</div>)
 }
 

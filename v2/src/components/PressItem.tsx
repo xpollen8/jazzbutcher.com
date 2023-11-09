@@ -52,10 +52,11 @@ const PressItem = ({ item }: { item: any }) => {
 
 	const ArticleTitle = ({ article }: any) => {
 		return (<center>
-			{(article?.title || article?.headline || article?.subhead || article?.summary) && (<>
-				{(article?.title) && <><b style={{ fontSize: '1.5em' }}>{article.title}</b><br /></>}
-				{(article?.headline) && <><b style={{ fontSize: '1.3em' }}>{article.headline}</b><br /></>}
-				{(article?.subhead) && <><b style={{ fontSize: '1.1em' }}>{article.subhead}</b><br /></>}
+			{(article?.publication || article?.title || article?.headline || article?.subhead || article?.summary) && (<>
+				{(article?.publication) && <><b style={{ fontSize: '1.5em' }}>{article.publication}</b><br /></>}
+				{(article?.title) && <><span style={{ fontSize: '1.5em' }}>{article.title}</span><br /></>}
+				{(article?.headline) && <><span style={{ fontSize: '1.3em' }}>{article.headline}</span><br /></>}
+				{(article?.subhead) && <><span style={{ fontSize: '1.1em' }}>{article.subhead}</span><br /></>}
 				{(article?.summary) && <><blockquote style={{ fontSize: '.95em' }} dangerouslySetInnerHTML={{ __html: article.summary }} /><br /></>}
 				<p />
 				<hr />

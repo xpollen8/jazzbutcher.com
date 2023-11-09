@@ -702,3 +702,7 @@ details > summary::-webkit-details-marker {
 .pointable:hover {
 	cursor: pointer;
 }
+
+.person {
+	display: inline-block;
+}

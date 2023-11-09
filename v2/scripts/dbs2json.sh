@@ -1,5 +1,7 @@
 . ../.env.local
 
+mkdir -p ./temp
+
 if [[ -z $JBC_DATA_SERVER ]];
 then
 	echo '../.env.local does not contain value for: JBC_DATA_SERVER'

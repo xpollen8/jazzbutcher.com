@@ -97,7 +97,7 @@ const PressItem = ({ item }: { item: any }) => {
 		if (article?.annotation) {
 			const says = parseCaptionsSourcesEtc(article?.annotation);
 			return (says?.length) && (<>
-					{says.map(([ body, credit, crediturl, creditdate ]: any, key: number) => <><Tag>{(credit) ? `${credit} Says..` : 'Comments'}</Tag><div className="annotation">{body}</div><Attribution g={credit} u={crediturl} d={creditdate} /></> )}
+					{says.map(([ body, credit, crediturl, creditdate ]: any, key: number) => <><Tag>{(credit) ? `${credit} Says..` : 'Comments'}</Tag><div className="listItem annotation">{body}</div><Attribution g={credit} u={crediturl} d={creditdate} /></> )}
 					<p />
 				</>)
 			}
@@ -107,7 +107,13 @@ const PressItem = ({ item }: { item: any }) => {
 		<ArticleInfoBox article={item} />
 		<ArticleTitle article={item} />
 		<ArticleMedia article={item} />
-		{(!!item?.body?.length) && <div className="listItem" dangerouslySetInnerHTML={{ __html: item?.body }} />}
+		{(!!item?.body?.length) && (() => {
+			const says = parseCaptionsSourcesEtc(item?.body) || [];
+			return (says?.length) && (<>
+					{says.map(([ body, credit, crediturl, creditdate ]: any, key: number) => <>{(credit) && <Tag>{credit} Says..</Tag>}<blockquote className="listItem" dangerouslySetInnerHTML={{ __html: body }} /><Attribution g={credit} u={crediturl} d={creditdate} /></> )}
+					<p />
+				</>)
+		})()}
 		<ArticleAnnotation article={item} />
 		<ArticleAudio article={item} />
 	</>

@@ -41,8 +41,8 @@ const doFetch = async (url: string) => {
 			return cache[url];
 		})
 		.catch((e) => {
-			console.log("ERR", e);
-			return { error: `GET to ${url} failed` };
+			console.log("ERR", e.cause);
+			return { results: [], error: e?.cause?.code };
 		});
 }
 

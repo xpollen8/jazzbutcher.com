@@ -31,7 +31,7 @@ const AudioSection = ({ title, data }: any) => {
 
 const AudioReleases = ({ project='jbc' }: { project?: string }) => {
 	const { data, isLoading, error } = useAudioReleases(project);
-	return <AudioSection title="Audio" data={data?.results} />
+	return <AudioSection title="Tracks on official releases" data={data?.results} />
 }
 
 export default AudioReleases;

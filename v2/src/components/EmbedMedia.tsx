@@ -123,7 +123,7 @@ const	EmbedKCRW = ({ data = {}, children }: { data: any, children?: React.ReactN
 const	EmbedPodomatic = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
 	const { mediaurl } = data;
 	return <><iframe
-			width="100%" height="203" frameBorder="no" marginHeight='0' marginWidth='0' scrolling='no' allowFullScreen
+			width="100%" height={203} frameBorder="no" marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen
 		src={mediaurl} />
 		{children}
 	</>

@@ -120,6 +120,15 @@ const	EmbedKCRW = ({ data = {}, children }: { data: any, children?: React.ReactN
 	/>
 }
 
+const	EmbedPodomatic = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
+	const { mediaurl } = data;
+	return <><iframe
+			width="100%" height="203" frameBorder="no" marginHeight='0' marginWidth='0' scrolling='no' allowFullScreen
+		src={mediaurl} />
+		{children}
+	</>
+}
+
 const	EmbedSoundCloud = ({ data = {}, children }: { data: any, children?: React.ReactNode }) => {
 	const { mediaurl } = data;
 	const useURL = mediaurl?.replace('https:', 'https%3A');
@@ -162,6 +171,12 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 						<EmbedKCRW data={data}>
 							{children}
 						</EmbedKCRW>
+					</>
+				} else if (useMediaurl?.includes('podomatic.com')) {
+					return <>
+						<EmbedPodomatic data={data}>
+							{children}
+						</EmbedPodomatic>
 					</>
 				} else if (useMediaurl?.includes('soundcloud.com')) {
 					return <>

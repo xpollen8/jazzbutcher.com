@@ -1,98 +1,14 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import EmbedMedia from '@/components/EmbedMedia';
-import LetterHeader from '@/components/LetterHeader';
-import { dateDiff } from '@/lib/utils';
-import Tag from '@/components/Tag';
 import SectionOptions from '@/components/SectionOptions';
-import { Source } from '@/components/GenericWeb';
 import Audio from '@/components/Audio';
-
-const AudioInterviews = () => {
-	return (<>
-		<LetterHeader title="Interviews" />
-	</>);
-}
-
-const podcasts = [
-		{
-			mediaurl: "https://www.mixcloud.com/FrenchSpurs1/retropopic-205-pat-fish-early-days-to-jazz-butchers-first-release-in-bath-of-bacon/",
-			title: "RETROPOPIC 205 - PAT FISH: EARLY DAYS TO JAZZ BUTCHER'S FIRST RELEASE 'IN BATH OF BACON'",
-			datetime: "2019",
-			children: <>
-				What was Pat&apos;s childhood like? How did he get on at school? What guitar music inspired him growing up? In what unusual way did he learn to play the guitar? What are his memories of meeting Max Eider? How were the names Pat Fish, Max Eider & The Jazz Butcher arrived at?
-			</>
-		},
-		{
-			mediaurl: "https://www.mixcloud.com/FrenchSpurs1/retropopic-315-pat-fish-the-jazz-butcher-talks-london-calling/",
-			title: "RETROPOPIC 315 - PAT FISH, THE JAZZ BUTCHER TALKS &apos;LONDON CALLING&apos;",
-			datetime: "2019",
-			children: <>
-				Singer-songwriter Pat Fish talks to The Saint of RETROPOPIC RADIO about his deep appreciation of The Clash&apos;s album &apos;London Calling&apos;.
-				<p />
-				Why was he so disappointed by &apos;Give &apos;Em Enough Rope&apos;? What are his memories of first hearing the album? Which are his favorite songs? What does he think was The Clash&apos;s manifesto on &apos;London Calling&apos;? Why was the album so important?
-			</>,
-		},
-		{
-			mediaurl: "https://www.mixcloud.com/bluebeatpete/the-jazz-butcher-the-vital-hour-radio-show-knon-1989/",
-			title: "The Jazz Butcher - The Vital Hour Radio Show KNON 1989",
-			datetime: "1989-12-12",
-			children: <>
-				1 hour of The Jazz Butcher music and facts. From a KNON radio show in 1989
-			</>,
-		},
-		];
 
 const AudioPage = () => {
 	return (<>
 		<Header section="audio" />
 		<main>
-		<SectionOptions section='audio' />
-
-		<Tag>Some podcasts</Tag>
-		<blockquote>
-		{podcasts.map((p: any, key: number) => <div key={key} className="listItem"><EmbedMedia data={...p} ><blockquote><i>{p?.children}</i><br /><Source g={p.source} /><br />{dateDiff(p.datetime, '')}</blockquote></EmbedMedia></div>)}
-		</blockquote>
-
-		<blockquote>
-			<blockquote className="listItem">
-				<iframe className="w-full" src='https://podomatic.com/embed/html5/episode/6738834' height={208} width={504} frameBorder={0} marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen></iframe>
-				<blockquote>
-					<i>In this episode, John cuts deep into the Jazz Butcher&apos;s 1984 album, A Scandal In Bohemia. Featuring interviews with band members, Pat Fish, Max Eider, Owen Jones, and David J.</i>
-					<br />{dateDiff('2013-11-06', '')}
-				</blockquote>
-			</blockquote>
-		</blockquote>
-
-		<blockquote>
-			<blockquote className="listItem">
-				<iframe className="w-full" src='https://podomatic.com/embed/html5/episode/10011300' height={208} width={504} frameBorder={0} marginHeight={0} marginWidth={0} scrolling='no' allowFullScreen></iframe>
-				<blockquote>
-					<i>Greg and Chris visit with the Jazz Butcher himself, Pat Fish. Pat reminisces about the Jazz Butcher Conspiracy and the new Solo project.</i>
-					<br />{dateDiff('2021-04-16', '')}
-				</blockquote>
-			</blockquote>
-		</blockquote>
-
-		{/*
-		<Suspense fallback=<>Loading...</>>
-			{(!isLoading) && <>
-				<AudioSection title="Black Eg" project="eg" data={data.filter((d: any) => d.project === 'eg')} />
-				<AudioSection title="Sumosonic" project="sumo" data={data.filter((d: any) => d.project === 'sumo')} />
-				<AudioSection title="Wilson" project="wilson" data={data.filter((d: any) => d.project === 'wilson')} />
-				<AudioSection title="Interviews" project="jbc" data={data.filter((d: any) =>
-					(d.project === 'jbc' || d.project.length === 0) && (d.subtype === 'interview' || d.name === 'The Interview'))} />
-				<AudioSection title="Jazz Butcher" project="jbc" data={data.filter((d: any) =>
-					(d.project === 'jbc' || d.project.length === 0) && (!d.name.startsWith('The Entire') && d.name !== 'The Interview' && d.subtype !== 'interview'))} />
-			</>}
-		</Suspense>
-		<Suspense fallback=<>Loading...</>>
-			{(!isLoadingLive) && <AudioSection title="Live Shows" project="jbc" data={dataLive.results} />}
-		</Suspense>
-		expose the contents of:
-		https://s3.amazonaws.com/assets.jazzbutcher.com/audio/flac/
-		*/}
-		<Audio />
+			<SectionOptions section='audio' />
+			<Audio />
 		</main>
 		<Footer />
 	</>)

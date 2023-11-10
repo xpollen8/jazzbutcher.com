@@ -48,7 +48,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	pat: { parent: 'jbc', title: 'Pat' },
 //	media: { parent: 'jbc', title: 'Media' },
 
-	releases: { parent: 'jbc', title: 'Releases', summary: 'The musical output' },
+	releases: { parent: 'jbc', title: 'Releases', summary: 'The records' },
 //	'press?filters=type%3B%3Balbum': { parent: 'press', title: 'Album Reviews' },
 
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The words' },
@@ -72,9 +72,9 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	'audio/released': { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: false },
 	'audio/live': { parent: 'audio', title: 'Live Recordings', summary: "Non-official recordings", inParentDirectory: false },
-	'press?filters=audio;;audio': { parent: 'audio', title: 'Recorded Interviews', summary: "Radio, etc", inParentDirectory: false },
-	'audio/demos': { parent: 'audio', title: 'Demo Recordings', inParentDirectory: false },
-	'audio/elsewhere': { parent: 'audio', title: 'Audio Elsewhere', summary: "Podcasts, etc", inParentDirectory: false },
+	'press?filters=audio;;audio': { parent: 'audio', title: 'Recorded Interviews', summary: "Radio, online", body: "This re-directs to those Press Items which are have Audio", inParentDirectory: false },
+	'releases?filters=type;;demo': { parent: 'audio', title: 'Demos', summary: "Unreleased/sent to fans", body: "This re-directs to those Releases which are Demos", inParentDirectory: false },
+	'audio/elsewhere': { parent: 'audio', title: 'Audio Found Elsewhere', summary: "Podcasts, etc", inParentDirectory: false },
 
 //	'press?filters=type%3B%3Binterview': { parent: 'press', title: 'Interviews' },
 //	'press?filters=type%3B%3Bretrospective': { parent: 'press', title: 'Retrospectives' },

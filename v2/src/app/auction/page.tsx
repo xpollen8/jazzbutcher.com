@@ -115,7 +115,7 @@ const Auction = () =>
 		<LetterHeader title="Waaaay back in 1997..." subhead="Pat wanted me to auction off a few of his things" />
 		<Body />
 		(the auction results are forthcoming - lotta old HTML to clean up)
-		<PhotoSet title="Pat's Original Letter" photos={letter} />
+		<PhotoSet title="Pat's Original Letter" description="As received by David Whittemore for the 1997-08 online auction" photos={letter} />
 	</main>
 	<Footer />
 </>

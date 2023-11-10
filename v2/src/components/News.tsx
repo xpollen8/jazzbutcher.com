@@ -15,6 +15,13 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "David Whittemore Scans of Website Auction Letter: 1997-08",
+		body: `600 DPI scan of Pat's letter to David Whittemore for the 1997 website virtual lawn sale`,
+		dt: '2023-11-09',
+		link: '/auction',
+		category: 'media',
+	},
+	{
 		subject: "David Whittemore Scans of Pat Letter: 1994-04-13",
 		body: `600 DPI scan of Pat's letter to David Whittemore, penned 1994-03-28, received 1994-04-13`,
 		dt: '2023-11-06 12:05:00',

@@ -52,7 +52,7 @@ const sections : { [key: string]: BreadCrumb } = {
 //	'press?filters=type%3B%3Balbum': { parent: 'press', title: 'Album Reviews' },
 
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The words' },
-	audio: { parent: 'jbc', title: 'Audio', rootHideChildren: true },
+	audio: { parent: 'jbc', title: 'Audio', rootHideChildren: false },
 	video: { parent: 'jbc', title: 'Video', rootHideChildren: true },
 	press: { parent: 'jbc', title: 'Press', summary: "Reviews, Interviews, etc", rootHideChildren: true },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives', rootHideChildren: true },
@@ -70,11 +70,11 @@ const sections : { [key: string]: BreadCrumb } = {
 //	album_reviews: { parent: 'writings', title: "Pat's albums reviews", summary: "Album opinions" },
 //	'press?filters=type%3B%3Bpat': { parent: 'writings', title: "Pat's gig reviews" },
 
-//	official: { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: true },
-//	live: { parent: 'audio', title: 'Live Recordings', summary: "Non-official recordings", inParentDirectory: true },
-//	interviews: { parent: 'audio', title: 'Recorded Interviews', summary: "Radio, etc", inParentDirectory: true },
-//	demos: { parent: 'audio', title: 'Demo Recordings', inParentDirectory: true },
-//	elsewhere: { parent: 'audio', title: 'Audio Elsewhere', summary: "Podcasts, etc", inParentDirectory: true },
+	'audio/released': { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: false },
+	'audio/live': { parent: 'audio', title: 'Live Recordings', summary: "Non-official recordings", inParentDirectory: false },
+	'press?filters=audio;;audio': { parent: 'audio', title: 'Recorded Interviews', summary: "Radio, etc", inParentDirectory: false },
+	'audio/demos': { parent: 'audio', title: 'Demo Recordings', inParentDirectory: false },
+	'audio/elsewhere': { parent: 'audio', title: 'Audio Elsewhere', summary: "Podcasts, etc", inParentDirectory: false },
 
 //	'press?filters=type%3B%3Binterview': { parent: 'press', title: 'Interviews' },
 //	'press?filters=type%3B%3Bretrospective': { parent: 'press', title: 'Retrospectives' },

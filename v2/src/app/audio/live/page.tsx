@@ -4,7 +4,7 @@ import AudioLive from '@/components/AudioLive';
 
 const Bootlegs = () =>
 <>
-	<Header section="live" />
+	<Header section="audio/live" />
 	<main>
 		<AudioLive />
 	</main>

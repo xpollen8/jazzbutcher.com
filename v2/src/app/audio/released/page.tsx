@@ -4,7 +4,7 @@ import AudioReleases from '@/components/AudioReleases';
 
 const Audio = () =>
 <>
-	<Header section="official" />
+	<Header section="audio/released" />
 	<main>
 		<AudioReleases />
 	</main>

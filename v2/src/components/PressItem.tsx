@@ -7,7 +7,6 @@ import ImageStrip from '@/components/ImageStrip';
 import EmbedMedia from '@/components/EmbedMedia';
 import Tag from '@/components/Tag';
 import { Attribution, Source, Credit } from '@/components/GenericWeb';
-import usePressArticle from '@/lib/usePressArticle';
 import { parseDomain, parseCaptionsSourcesEtc, dateDiff, dateDisplay, ts2URI } from '@/lib/utils';
 import { AutoLinkPlayer, expand } from '@/lib/defines';
 

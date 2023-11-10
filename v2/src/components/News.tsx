@@ -49,7 +49,7 @@ newsItems.results = newsItems.results.map((n: any) => {
 const News = () => {
 let year: number;
 return <>
-	{newsItems?.results.map((n: NewsItemType, key: number) => {
+	{newsItems?.results.map((n: any, key: number) => {
 		const yr = parseInt(n.dt, 10);
 		let banner;
 		if (yr !== year) {

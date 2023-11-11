@@ -2093,9 +2093,19 @@ ${_d[3]}
 #define	g_cost(g)	<br/><b>Admission</b>: <span class="g_cost">${g}</span>
 
 #define	g_datediff(d)
-	<span class="hiddendate">${d}</span>
-	<span class="date">(${date(l\, jS \o\f F Y, ${d})} -
-	${prettySecondsTerse(${eval(${_db_timestamp} - ${parseUnix(${d})})})} ago)
+#live	if (parseUnix(${d}) < 9999)
+#live		if (define(useD, ${d}-01-01))
+#live		endif
+#live	else if (parseUnix(${d}) < 99999)
+#live		if (define(useD, ${d}-01))
+#live		endif
+#live	else
+#live		if (define(useD, ${d}))
+#live		endif
+#live	endif
+	<span class="hiddendate">${useD}</span>
+	<span class="date">(${date(l\, jS \o\f F Y, ${useD})} -
+	${prettySecondsTerse(${eval(${_db_timestamp} - ${parseUnix(${useD})})})} ago)
 	</span><!-- date -->
 
 #define	g_genericweb(x, g, u, t, s, d, xd)

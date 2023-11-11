@@ -10,7 +10,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import { removeHTML, Credit, Attribution } from '@/components/GenericWeb';
 import useLyric from '@/lib/useLyric';
-import { ts2URI, parseCredit, parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/utils';
+import { pluralize, ts2URI, parseCredit, parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/utils';
 
 const	LyricVideo = ({ video }: any) => {
 	if (!video) return;
@@ -121,8 +121,6 @@ const Media = (props: any) => {
 }
 
 const exists = (str?: string) => (str && str?.length && str !== ';;;;') ? str : null;
-
-const pluralize = (num: number, str: string, prefix?: string) => ((prefix) ? `${prefix} ` : '') + ((num) ? num : 'No') + ' ' + str + ((num !== 1) ? 's' : '');
 
 const Medias = (props: any) => {
 	const { medias } = props;

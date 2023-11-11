@@ -33,7 +33,12 @@ const AudioSection = ({ title, data }: any) => {
 
 const AudioLive = ({ project }: { project?: string }) => {
 	const { data, isLoading, error } = useAudioLive(project);
-	return <AudioSection title="Live Audio and Full Shows" project={project || 'jbc'} data={data?.results} />
+	const live = data?.results?.filter((d: any) => {
+		// if 'project' is defined, then return all matches
+		// else, filter out 'interviews' and projects
+		return (project || !['interview','wilson','eg','project'].some((x: string) => d?.extra?.includes(x)))
+	});
+	return <AudioSection title="Live Audio and Full Shows" project={project || 'jbc'} data={live} />
 }
 
 export default AudioLive;

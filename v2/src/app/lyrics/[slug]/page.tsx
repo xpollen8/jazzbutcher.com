@@ -65,13 +65,13 @@ const Lyrics = (props: any, foundon: any[]) => {
 	)
 }
 
-const FoundOn = (releases: any) =>
-	!!(releases?.length) && <>
-		<Tag>Found On</Tag>
+const FoundOn = ({ releases }: any) =>
+	!!(releases?.length) && <details open={releases?.length < 5}>
+		<summary className="tagClickable">{pluralize(releases?.length, 'release', 'Found on')}</summary>
 		<blockquote className="listItem">
 			{releases?.sort((a: any, b: any) => parseYear(b.dtreleased) - parseYear(a.dtreleased))?.map(MakeAlbumBlurb)}
 		</blockquote>
-	</>
+	</details>
 
 const XSays = (comments: any[], title: string) => (comments?.length) && <>
 	<Tag>{title}</Tag>
@@ -122,12 +122,14 @@ const Media = (props: any) => {
 
 const exists = (str?: string) => (str && str?.length && str !== ';;;;') ? str : null;
 
+const pluralize = (num: number, str: string, prefix?: string) => ((prefix) ? `${prefix} ` : '') + ((num) ? num : 'No') + ' ' + str + ((num !== 1) ? 's' : '');
+
 const Medias = (props: any) => {
 	const { medias } = props;
 	if (!medias?.results?.length) return;
 	return (
-		<>
-		<Tag>Recorded Performances</Tag>
+		<details open={medias?.results?.length === 1}>
+		<summary className="tagClickable">{pluralize(medias?.results?.length, 'Live/demo recording')}</summary>
 		<blockquote>
 			{medias?.results?.map((p: any, key: number) => {
 				const { author,
@@ -154,7 +156,7 @@ const Medias = (props: any) => {
 				return <div key={key} className={(type === 'video') ? 'listItem' : ''}><EmbedMedia data={{ mediaurl: (!href.includes('.html') && exists(href)) || exists(mp3), mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? collection : '', venue, city, datetime, parent }} /></div>
 				})}
 		</blockquote>
-		</>
+		</details>
 	)
 }
 
@@ -170,12 +172,12 @@ const Audio = (props: any) => {
 const LiveAudio = (props: any) => {
 	const { live } = props;
 	return live && (
-		<>
-		<Tag>{live?.length} Live Performances</Tag>
+		<details open={live?.length === 1}>
+		<summary className="tagClickable">{pluralize(live?.length, 'Documented performance')}</summary>
 		<blockquote>
 			<GigSearchResults results={{ results: live }} preventAutoExpand={true} />
 		</blockquote>
-		</>
+		</details>
 	)
 }
 
@@ -209,7 +211,7 @@ const Lyric = ({ params }: { params?: any }) => {
 				<main>
 					<Tag>{song?.title}</Tag>
 					{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon, medias)}</div>)}
-					{FoundOn(foundon)}
+					<FoundOn releases={foundon} />
 				</main>
 			</>)
 		})()}

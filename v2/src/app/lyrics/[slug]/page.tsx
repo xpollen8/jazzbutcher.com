@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import ImageStrip from '@/components/ImageStrip';
+import { GigSearchResults } from '@/components/GigSearch';
 import EmbedMedia from '@/components/EmbedMedia';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import { removeHTML, Credit, Attribution } from '@/components/GenericWeb';
@@ -50,11 +51,12 @@ const	LyricMedia = ({ media }: any) => {
 const	LyricImages = ({ images }: any) => <ImageStrip images={parseCaptionsSourcesEtc(images, true)} />;
 
 const Lyrics = (props: any, foundon: any[]) => {
-	const { mp3, video, media, images, lyrics, key } = props;
+	const { mp3, video, media, images, lyrics, key, caption } = props;
 	return (
 		<>
 			<LyricImages images={images} />
 			<LyricVideo video={video} />
+			<LyricAudio mp3={mp3} caption={caption} />
 			<LyricMedia media={media} />
 			<blockquote className="listItem">
 				<div dangerouslySetInnerHTML={{__html: lyrics }}/>
@@ -125,8 +127,8 @@ const Medias = (props: any) => {
 	if (!medias?.results?.length) return;
 	return (
 		<>
-		<Tag>Performances</Tag>
-		<blockquote key={props?.key}>
+		<Tag>Recorded Performances</Tag>
+		<blockquote>
 			{medias?.results?.map((p: any, key: number) => {
 				const { author,
 					collection,
@@ -165,12 +167,27 @@ const Audio = (props: any) => {
 	)
 }
 
+const LiveAudio = (props: any) => {
+	const { live } = props;
+	return live && (
+		<>
+		<Tag>{live?.length} Live Performances</Tag>
+		<blockquote>
+			<GigSearchResults results={{ results: live }} preventAutoExpand={true} />
+		</blockquote>
+		</>
+	)
+}
+
 const Lyric = ({ params }: { params?: any }) => {
 	const { data, isLoading, error } = useLyric(params?.slug);
-	const { lyrics, foundon, medias } = data || {};
+	const { lyrics, live, releaseAudio, releaseVideo, foundon, medias } = data || {};
 	const song = {
 		...lyrics?.results[0],
-		medias
+		medias,
+		live: live?.numResults ? live?.results : undefined,
+		releaseAudio: releaseAudio?.numResults ? releaseAudio?.results : undefined,
+		releaseVideo: releaseVideo?.numResults ? releaseVideo?.results : undefined,
 	};
 
 	const tabs = [
@@ -179,7 +196,8 @@ const Lyric = ({ params }: { params?: any }) => {
 			{ label: 'Others Say', lookup: (song: any) => (song?.others_say), func: OthersSay },
 			{ label: 'Tablature', lookup: (song: any) => (song?.tablature), func: Tablature },
 			{ label: 'Live Stats', lookup: (song: any) => ({}), func: LiveStats },
-			{ label: 'Audio', lookup: (song: any) => (song?.mp3), func: Audio },
+			{ label: 'Live Performances', lookup: (song: any) => (song.live), func: LiveAudio },
+			{ label: 'Audio', lookup: (song: any) => (song?.mp3 || song.live || song.releaseAudio), func: Audio },
 			{ label: 'Media', lookup: (song: any) => (song?.media), func: Media },
 			{ label: 'Medias', lookup: (song: any) => (song?.medias), func: Medias },
 	];

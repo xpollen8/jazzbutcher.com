@@ -55,9 +55,9 @@ const Lyrics = (props: any, foundon: any[]) => {
 	return (
 		<>
 			<LyricImages images={images} />
-			<LyricVideo video={video} />
 			<LyricAudio mp3={mp3} caption={caption} />
 			<LyricMedia media={media} />
+			<LyricVideo video={video} />
 			<blockquote className="listItem">
 				<div dangerouslySetInnerHTML={{__html: lyrics }}/>
 			</blockquote>

@@ -360,7 +360,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-11-11 00:00:00','set',1,10,'Speedy Gonz
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,1,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,2,'Marnie',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,3,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,4,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,4,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,5,'Girls Who Keep Goldfish',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,6,'Sweet Jane','Lou Reed',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-02-08 00:00:00','set',1,7,'Leaving It Up To You','John Cale',NULL,NULL,NULL,NULL,NULL);
@@ -422,7 +422,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,11, "The Human Jungle",N
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,12, "Grooving In The Bus Lane",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,13, "Soul Happy Hour",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,14, "Death Dentist",NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,15, "Jazz Butcher -v- Count Dracula",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,15, "The Jazz Butcher Meets Count Dracula",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,16, "Zombie Love",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,17, "Partytime",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-16','set',1,18, "Roadrunner","Jonathan Richman",NULL,NULL,NULL,NULL,NULL);
@@ -501,7 +501,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,8,'The Best Way
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,9,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,10,'Angels',NULL,NULL,NULL,'https://www.youtube.com/embed/OS1yQIbB-EA','Brian Kelly','https://www.youtube.com/channel/UCZMG7vU7wPdxw7VC4IwBNgg');
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,11,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,12,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,12,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,13,'Girl-Go',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,14,'New Invention',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,15,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -522,7 +522,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',1,8,'Chickentown'
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',1,9,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',1,10,'Angels',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',1,11,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',1,12,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',1,12,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',1,13,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',1,14,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','encore',1,1,'Moscow Drug Club','B. B. Gabor',NULL,NULL,NULL,NULL,NULL);
@@ -551,7 +551,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-10-22 00:00:00','set',1,7,'Looking For 
 INSERT INTO `gigsong` VALUES (NULL,'1990-10-22 00:00:00','set',1,8,'Hysteria',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-10-22 00:00:00','set',1,9,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-10-22 00:00:00','set',1,10,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1990-10-22 00:00:00','set',1,11,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-10-22 00:00:00','set',1,11,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-10-22 00:00:00','set',1,12,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-10-22 00:00:00','set',1,13,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',1,1,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -657,7 +657,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1999-09-09 00:00:00','set',1,2,'Girls Who Ke
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-09 00:00:00','set',1,3,'Who Loves You Now?',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-09 00:00:00','set',1,4,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-09 00:00:00','set',1,5,'D.R.I.N.K.',NULL,NULL,NULL,'http://jazzbutcher.com/audio/19990909/19990909_JBC_LosAngeles_Drink.mp3',NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1999-09-09 00:00:00','set',1,6,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1999-09-09 00:00:00','set',1,6,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-09 00:00:00','set',1,7,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-09 00:00:00','set',1,8,'She\'s On Drugs',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-09 00:00:00','set',1,9,'Walk With The Devil',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -695,7 +695,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1999-09-16 00:00:00','set',2,10,'Take The Sk
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-16 00:00:00','set',2,11,'Bigfoot Motel',NULL,NULL,'Pat & Max',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-16 00:00:00','set',2,12,'Zombie Love',NULL,NULL,'Pat & Max',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-16 00:00:00','encore',1,1,'Roadrunner','Jonathan Richman',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1999-09-16 00:00:00','encore',2,1,'Jazz Butcher -v- Count Dracula',NULL,'Vlad Dracul 2000','Pat & Max',NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1999-09-16 00:00:00','encore',2,1,'The Jazz Butcher Meets Count Dracula',NULL,'Vlad Dracul 2000','Pat & Max',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2004-12-28 00:00:00','set',1,1,'Out Of Touch',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2004-12-28 00:00:00','set',1,2,'The Jazz Butcher -v- Pink Floyd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2004-12-28 00:00:00','set',1,3,'Old Snakey',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -766,7 +766,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',1,8,'The Human Ju
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',1,9,'Who Loves You Now?',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',1,10,'Come, Friendly Spacemen',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',1,11,'Walk With The Devil',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',1,12,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',1,12,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',1,13,'The Long Night Starts',"${max}",NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',1,14,'Niagara',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',1,15,'Come on, Marie',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1148,7 +1148,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',1,6,'Who Loves Yo
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',1,7,'D.R.I.N.K.',NULL,NULL,'Owen on drums, Pat Beirne on harmonica',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',1,8,'Soul Happy Hour',NULL,NULL,'Owen on drums, Steve on bass',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',1,9,'Angels',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',1,10,'Jazz Butcher -v- Count Dracula',NULL,NULL,'Kevin and Owen on drums',NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',1,10,'The Jazz Butcher Meets Count Dracula',NULL,NULL,'Kevin and Owen on drums',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',2,1,'She\'s On Drugs',NULL,NULL,'Kevin on drums, Owen on keyboards',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',2,2,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',2,3,'Walk With The Devil',NULL,NULL,'Owen on accordion',NULL,NULL,NULL);
@@ -1337,7 +1337,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1984-12-08 00:00:00','set',1,5,'Partytime',N
 INSERT INTO `gigsong` VALUES (NULL,'1984-12-08 00:00:00','set',1,6,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1984-12-08 00:00:00','set',1,7,'Leaving It Up To You','John Cale',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1984-12-08 00:00:00','set',1,8,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1984-12-08 00:00:00','set',2,1,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-12-08 00:00:00','set',2,1,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1984-12-08 00:00:00','set',2,2,'Grey Flannelette',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1984-12-08 00:00:00','set',2,3,'Speedy Gonzales','Hess, Kaye, Lee',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1984-12-08 00:00:00','set',2,4,'Rain',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1429,7 +1429,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 00:00:00','set',1,10,'Zombie Love
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 00:00:00','set',1,11,'Speedy Gonzales','Hess, Kaye, Lee',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 00:00:00','set',1,12,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',1,1,'Forever',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',1,2,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',1,2,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',1,3,'Grooving in the Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',1,4,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',1,5,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1448,7 +1448,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',1,17,'Partytime',
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',1,18,'I\'m Waiting For My Man','Velvet Underground',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-12-02 00:00:00','set',1,1,'Bath Of Bacon',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-12-02 00:00:00','set',1,2,'Forever',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-12-02 00:00:00','set',1,3,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-12-02 00:00:00','set',1,3,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-12-02 00:00:00','set',1,4,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-12-02 00:00:00','set',1,5,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-12-02 00:00:00','set',1,6,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1471,7 +1471,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',1,5,'Bad Dream Lo
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',1,6,'The Best Way',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',1,7,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',1,8,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',1,9,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',1,9,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',1,10,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',1,11,'Hysteria',NULL,NULL,NULL,'http://jazzbutcher.com/audio/1989Nov17/hysteria.mp3','David Whittemore','http://davidwhittemore.com');
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',1,12,'Bicycle Kid',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1566,7 +1566,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-11-09 00:00:00','set',1,12,'Rain',NULL,
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-09 00:00:00','set',1,13,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-09 00:00:00','set',1,14,'Death Dentist',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-09 00:00:00','set',1,15,'Grooving in the Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1985-11-09 00:00:00','set',1,16,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1985-11-09 00:00:00','set',1,16,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-09 00:00:00','set',1,17,'Speedy Gonzales','Hess, Kaye, Lee',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-09 00:00:00','set',1,18,'Forever',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-09 00:00:00','set',1,19,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1912,7 +1912,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2014-09-28 19:00:00','set',1,10,'Solar Core'
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-28 19:00:00','set',1,11,'All Along the Watchtower','Bob Dylan',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-28 19:00:00','set',1,12,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-09-28 19:00:00','encore',1,1,'Dunkin\' Beigels','Slim Gaillard',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1990-04-28 00:00:00','set',1,1,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-04-28 00:00:00','set',1,1,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-04-28 00:00:00','set',1,2,'Chickentown',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-04-28 00:00:00','set',1,3,'New Invention',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-04-28 00:00:00','set',1,4,'Burglar Of Love',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2003,7 +2003,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,10,'Hysteria',N
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,11,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,12,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,13,'Girl-Go',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,14,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,14,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,15,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-05 00:00:00','set',1,16,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
 
@@ -2220,7 +2220,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1999-09-13 00:00:00','set',1,3,'Take The Ski
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-13 00:00:00','set',1,4,'Soul Happy Hour',NULL,NULL,NULL,'http://jazzbutcher.com/audio/1999Sep13/soul_happy_hour.mp3','David Whittemore','http://davidwhittemore.com');
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-13 00:00:00','set',1,5,'Walk With The Devil',NULL,NULL,NULL,'http://jazzbutcher.com/audio/1999Sep13/walk_with_the_dev.mp3','David Whittemore','http://davidwhittemore.com');
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-13 00:00:00','set',1,6,'The Long Night Starts',"${max}",NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-02-27 00:00:00','set',1,1,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-02-27 00:00:00','set',1,1,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-02-27 00:00:00','set',1,2,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-02-27 00:00:00','set',1,3,'Grooving in the Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-02-27 00:00:00','set',1,4,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2252,7 +2252,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1986-03-07 00:00:00','set',1,14,'Leaving It 
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-07 00:00:00','set',1,15,'La Mer',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-07 00:00:00','set',1,16,'Roadrunner','Jonathan Richman',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-13 00:00:00','set',1,1,'Forever',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-03-13 00:00:00','set',1,2,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-03-13 00:00:00','set',1,2,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-13 00:00:00','set',1,3,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-13 00:00:00','set',1,4,'Grooving in the Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-13 00:00:00','set',1,5,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2266,7 +2266,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1986-03-13 00:00:00','set',1,12,'Leaving It 
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',1,1,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',1,2,'Grooving in the Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',1,3,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',1,4,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',1,4,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',1,5,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',1,6,'Walk With The Devil',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',1,7,'D.R.I.N.K.',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2285,7 +2285,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1986-05-03 00:00:00','set',1,1,'Forever',NUL
 INSERT INTO `gigsong` VALUES (NULL,'1986-05-03 00:00:00','set',1,2,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-05-03 00:00:00','set',1,3,'Grooving in the Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-05-03 00:00:00','set',1,4,'Angels',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-05-03 00:00:00','set',1,5,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-05-03 00:00:00','set',1,5,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-05-03 00:00:00','set',1,6,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-05-03 00:00:00','set',1,7,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-05-03 00:00:00','set',1,8,'Red Pets',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2388,7 +2388,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1999-09-11 00:00:00','set',1,10,'Girls Who K
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-11 00:00:00','set',1,11,'Don\'t Let Me Keep You',"${owen}",NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-11 00:00:00','set',1,12,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-11 00:00:00','set',1,13,'Angels',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1999-09-11 00:00:00','set',2,1,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1999-09-11 00:00:00','set',2,1,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-11 00:00:00','set',2,2,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-11 00:00:00','set',2,3,'She\'s On Drugs',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-11 00:00:00','set',2,4,'Walk With The Devil',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2568,7 +2568,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',1,9,'Out Of Touch
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',1,10,'Sex Engine',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',1,11,'Spooky','Hirsch, Shapiro, Middlebrooks',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',1,12,'Weird \'Conspiracy Jam\'',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',1,13,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',1,13,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',1,14,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',1,15,'La Mer',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',1,16,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2584,7 +2584,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',1,9,'Out Of Touch
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',1,10,'Sex Engine',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',1,11,'Spooky','Hirsch, Shapiro, Middlebrooks',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',1,12,'Conspiracy',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',1,13,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',1,13,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',1,14,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',1,15,'La Mer',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',1,16,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2607,7 +2607,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-03-16 00:00:00','set',1,12,'Spooky','Hi
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-16 00:00:00','set',1,13,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-16 00:00:00','set',1,14,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-16 00:00:00','encore',1,1,'Olof Palme',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1988-03-16 00:00:00','encore',1,2,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-03-16 00:00:00','encore',1,2,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-16 00:00:00','encore',2,1,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-16 00:00:00','encore',2,2,'Roadrunner','Jonathan Richman',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-16 00:00:00','encore',3,3,'Mind Like A Playgroup',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2623,7 +2623,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-03-17 00:00:00','set',1,9,'Out Of Touch
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-17 00:00:00','set',1,10,'Sex Engine',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-17 00:00:00','set',1,11,'Spooky','Hirsch, Shapiro, Middlebrooks',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-17 00:00:00','set',1,12,'Conspiracy',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1988-03-17 00:00:00','set',1,13,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-03-17 00:00:00','set',1,13,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-17 00:00:00','set',1,14,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-17 00:00:00','set',1,15,'La Mer',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-17 00:00:00','set',1,16,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2675,7 +2675,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-06-03 00:00:00','set',1,13,'Zombie Love
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-03 00:00:00','encore',1,1,'Green Acres',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-03 00:00:00','encore',1,2,'The Chinese Envoy','John Cale',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-03 00:00:00','encore',1,3,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1988-06-03 00:00:00','encore',1,4,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-06-03 00:00:00','encore',1,4,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-12 00:00:00','set',1,0,'The Entire Performance',NULL,"Recorded on AIWA cassette deck with stereo microphone, hand-held in audience, by Douglas Buege. The Jazz Butcher Conspiracy, June 12, 1988 Milwaukee, Wisconsin  USA  Odd Rock Cafe 2010 S. Kinnickinnic Ave Milwaukee, WI 53207 Operated from 1987 to 1990",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19880612/19880612_DouglasBuege_JazzButcher_Milwaukee_OddRockCafe.mp3','Douglas Buege','');
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-12 00:00:00','set',1,1,'Real Men',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19880612/19880612_DouglasBuege_JazzButcher_Milwaukee_OddRockCafe_01_Real_Men.mp3','Douglas Buege','');
@@ -2824,7 +2824,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-09-01 00:00:00','set',1,6,'Bad Dream Lo
 INSERT INTO `gigsong` VALUES (NULL,'1989-09-01 00:00:00','set',1,7,'Hysteria',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-09-01 00:00:00','set',1,8,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-09-01 00:00:00','set',1,9,'Sex Engine',NULL,'incomplete',NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-09-01 00:00:00','set',1,10,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-09-01 00:00:00','set',1,10,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-09-01 00:00:00','set',1,11,'Grey Flannelette',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-09-01 00:00:00','set',1,12,'Part-Time Punks','TV Personalities',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-09-21 00:00:00','set',1,1,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2845,7 +2845,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-12-06 00:00:00','set',1,5,'Bad Dream Lo
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-06 00:00:00','set',1,6,'Burglar Of Love',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-06 00:00:00','set',1,7,'Girl-Go',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-06 00:00:00','set',1,8,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-06 00:00:00','set',1,9,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-06 00:00:00','set',1,9,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-06 00:00:00','set',1,10,'Moscow Drug Club','B. B. Gabor',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-06 00:00:00','set',1,11,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-06 00:00:00','set',1,12,'King Of Joy','Bill Drummond',NULL,NULL,NULL,NULL,NULL);
@@ -2863,7 +2863,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',1,10,'Looking For
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',1,11,'Girl-Go',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',1,12,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',1,13,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',1,14,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',1,14,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-10','set',1,15, "Mr. Odd", NULL,"West Coast '89 Cassette",NULL,"http://jazzbutcher.com/audio/WestCoast89/JBC_WestCoast89_13_Mr._Odd.mp3",NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',1,16,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','encore',1,1,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2884,7 +2884,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-08-25 00:00:00','set',1,10,'Looking For
 INSERT INTO `gigsong` VALUES (NULL,'1990-08-25 00:00:00','set',1,11,'Girl-Go',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-08-25 00:00:00','set',1,12,'Bad Dream Lover',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-08-25 00:00:00','set',1,13,'Chickentown',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1990-08-25 00:00:00','set',1,14,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-08-25 00:00:00','set',1,14,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-08-25 00:00:00','set',1,15,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-08-25 00:00:00','set',1,16,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-08-25 00:00:00','set',1,17,'Huevos',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3214,7 +3214,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2010-12-04 20:00:00','set',1,4,'Shirley Macl
 INSERT INTO `gigsong` VALUES (NULL,'2010-12-04 20:00:00','set',1,5,'Sister Death',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2009-05-03 19:30:00','set',1,1,'Out Of Touch',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2009-05-03 19:30:00','set',1,2,'Jazz Butcher Theme',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2009-05-03 19:30:00','set',1,3,'Jazz Butcher -v- Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2009-05-03 19:30:00','set',1,3,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-04-24 00:00:00','set',1,1,'Still & All',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-04-24 00:00:00','set',1,2,'She\'s A Yo-Yo',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-04-24 00:00:00','set',1,3,'Pineapple Tuesday',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3594,7 +3594,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-11-03 00:00:00','set',1,8,'The Best Way
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-03 00:00:00','set',1,9,'Chickentown',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-03 00:00:00','set',1,10,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-03 00:00:00','set',1,11,'Girl-Go',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-03 00:00:00','set',1,12,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-03 00:00:00','set',1,12,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-03 00:00:00','set',1,13,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-03 00:00:00','encore',1,1,'Moscow Drug Club','B. B. Gabor',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-03 00:00:00','encore',1,2,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3612,7 +3612,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-11-04 00:00:00','set',1,8,'The Best Way
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-04 00:00:00','set',1,9,'Chickentown',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-04 00:00:00','set',1,10,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-04 00:00:00','set',1,11,'Girl-Go',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-04 00:00:00','set',1,12,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-04 00:00:00','set',1,12,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-04 00:00:00','set',1,13,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-04 00:00:00','encore',1,1,'Moscow Drug Club','B. B. Gabor',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-04 00:00:00','encore',1,2,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3776,7 +3776,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',1,8,'The Best Way
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',1,9,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',1,10,'Angels',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',1,11,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',1,12,'Jazz Butcher -v- Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',1,12,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',1,13,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',1,14,'Girl-Go',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',1,15,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3866,7 +3866,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2000-04-26 00:00:00','encore',1,3,'Zombie Lo
 
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-04 00:00:00','set',1,0,'The Entire Performance',NULL,NULL,NULL,'http://jazzbutcher.com/audio/19860304/19860304_JazzButcher_Besacon_EQd.mp3','Dom Genot','https://soundcloud.com/lonesomedog');
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-04 00:00:00','set', 1,1, "Forever", NULL, NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-03-04 00:00:00','set', 1,2, "Jazz Butcher -v- Count Dracula", NULL, NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-03-04 00:00:00','set', 1,2, "The Jazz Butcher Meets Count Dracula", NULL, NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-04 00:00:00','set', 1,3, "Big Saturday", NULL, NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-04 00:00:00','set', 1,4, "Grooving in the Bus Lane", NULL, NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-03-04 00:00:00','set', 1,5, "Soul Happy Hour", NULL, NULL,NULL,NULL,NULL,NULL);

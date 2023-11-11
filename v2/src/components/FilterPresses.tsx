@@ -1,14 +1,10 @@
 "use client"
 
 import { Suspense } from 'react';
-import Image from 'next/image';
 import { useSearchParams } from "next/navigation";
-import Link from 'next/link';
 import usePresses from '@/lib/usePresses';
-import useReleases from '@/lib/useReleases';
-import { parseImage, truncAt, parseYear, parseProject, pressFiltersInclude } from '@/lib/utils';
-import InfoTag from '@/components/InfoTag';
-import Tag from '@/components/Tag';
+import { parseYear, pressFiltersInclude } from '@/lib/utils';
+import PressCards from '@/components/PressCards';
 import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
 
 export const filterPassThru = (p: any, project?: string) => sortPress(filterPressProject(p, project));
@@ -79,14 +75,6 @@ export const filterPressByTypeInterview = (p: any, project?: string) => {
 	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
 }
 
-const AlbumCover = ({ album }: { album?: string }) => {
-	const { data, isLoading, error } = useReleases();
-	const release = data?.results?.find((a: any) => a.lookup === album);
-	return <Suspense fallback=<>Loading...</> >
-		{(!isLoading && data) && <Image className="w-full" src={parseImage(release?.thumb)?.thumb || ''} width={250} height={250} alt="album cover" />}
-	</Suspense>
-}
-
 const filterOptions = [
 	{ field: "type:album", display: "Album Reviews" },
 	{ field: "type:interview", display: "Interviews" },
@@ -123,33 +111,7 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 				if (options?.length <= 1) return;
 				return <div className="listItem flex flex-wrap">{options.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
 			})()}
-			<div className="flex flex-wrap gap-3 justify-center">
-				{presses
-				?.filter((art: any) => filterItemBy(art, filtersUsed))
-				.map((item: any, key: number) => {
-					const thumb = truncAt(';;', item?.thumb || '');
-					const info = item.type.replace(project, '').replace('nopat','').replace('wilson','').replace('sumo','').replace('eg','').replace(',,', ',').replace(/^,/, '').replace(/,$/, '');
-					return (<div key={key} className='w-64'>
-						<InfoTag text={`${item.dtpublished?.substr(0, 10).replace(/-00/g, '')}: ${info}`}/>
-						<div className="outline outline-slate-300 drop-shadow-sm">
-							<Link key={key} href={item.url}>
-								<div className={`gig_${parseProject(item.type)}`} />
-								{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}
-								{(thumb) ? <Image className="w-full" src={parseImage(thumb)?.thumb || ''} width={250} height={250} alt="cover" /> : <br />}
-								<div className="text-sky-800 text-center px-2">
-									<div className="h-1" />
-									<div className="font-bold">{item.publication}</div>
-									<div className="h-1" />
-									{(item.publication && item.title) && <hr />}
-									<div className="h-1" />
-									<div className="font-light" dangerouslySetInnerHTML={{ __html: item.title }} />
-									{(parseInt(item?.bodycount, 10) > 0) && <div className="smalltext">{item?.bodycount.toLocaleString()} words</div>}
-								</div>
-							</Link>
-						</div>
-					</div>)
-				})}
-			</div>
+			<PressCards items={presses?.filter((art: any) => filterItemBy(art, filtersUsed))} project={project} showAlbum={showAlbum} preventAutoExpand={!filtersUsed?.length} />
 		</>}
 	</Suspense>
 }

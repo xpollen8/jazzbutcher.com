@@ -12,7 +12,7 @@ const Wilson = (props: any) =>
 	<Header project="wilson" section="wilson" />
 	<main>
 		<MakeSimpleURI uri='/press/20040512_wilson_about.html?section=etc' text="Wilson Explainer" aux='(2002)'>
-			&quote;I started the Wilson project fondly imagining that it would be a solo thing&quote;
+			I started the Wilson project fondly imagining that it would be a solo thing
 		</MakeSimpleURI>
 		<FilterReleases project='wilson' filters={props.searchParams?.filters} />
 		<AudioReleases project='wilson' />

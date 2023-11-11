@@ -9,7 +9,7 @@ import Tag from '@/components/Tag';
 
 const Fiasco = ({ heading, children }: { heading: string, children: React.ReactNode }) =>
 <details>
-	<summary className="fiascoHeader">{heading}</summary>
+	<summary className="tagClickable">{heading}</summary>
 	{children}
 </details>
 
@@ -1022,7 +1022,9 @@ const Fiasco10 = ({ heading }: { heading: string }) =>
 </Fiasco>
 
 const Epilogue = ({ heading }: { heading: string }) =>
-<Fiasco heading={heading}>
+<>
+<h3>{heading}</h3>
+			<blockquote>
 			<p>
 		Even fiascos come to an end, though I think a few of these have haunted each of us over the years and reliving them like this has been bittersweet. We were mining a rich seam and the selection was to some extent arbitrary. The events all involve the JBC when I was on board. Obviously we have all suffered and inflicted suffering repeatedly in other line-ups and indeed alone, and there is probably nothing more excruciating than dying on stage with no one to share the agony. But that’s another story. Here are a few that broadly met the criteria but didn’t make the cut:
 			</p>
@@ -1072,14 +1074,15 @@ const Epilogue = ({ heading }: { heading: string }) =>
 			<p>
 		Max, Pat and Owen
 			</p>
-</Fiasco>
+			</blockquote>
+</>
 
 const Fiascos = (): React.ReactNode =>
 <>
 		<Header section='fiascos' />
 		<main>
 			<Tag>
-				Top 10 JBC Fiascos - Published to Facebook, September, 2020
+				Top 10 JBC Fiascos as published to Facebook September, 2020
 			</Tag>
 
 			<div className="fiascoBox">
@@ -1088,10 +1091,14 @@ const Fiascos = (): React.ReactNode =>
 				</video>
 			</div>
 
-			<IntroMax heading="Max&apos;s Introduction" />
-			<IntroPat heading="Pat&apos;s Introduction" />
+			<h3>The Justifications</h3>
+			<blockquote>
+				<IntroPat heading="From Pat" />
+				<IntroMax heading="From Max" />
+			</blockquote>
+
 			<h3>The Fiascos</h3>
-			<div className="fiascoItem">
+			<blockquote>
 				<Fiasco1 heading="The Fatwa"/>
 				<Fiasco2 heading="Marginal Europe – First Explorations on Planet Spain"/>
 				<Fiasco3 heading="The Imp of Groeningen – a cautionary tale"/>
@@ -1102,8 +1109,8 @@ const Fiascos = (): React.ReactNode =>
 				<Fiasco8 heading="Two Go To The Highlands"/>
 				<Fiasco9 heading="Teatro Greco"/>
 				<Fiasco10 heading="Parting of the ways"/>
-			</div>
-			<Epilogue heading="Epilogue" />
+			</blockquote>
+			<Epilogue heading="The Epilogue" />
 		</main>
 		<Footer />
 	</>

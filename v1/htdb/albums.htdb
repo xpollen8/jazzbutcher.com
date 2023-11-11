@@ -2795,7 +2795,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=drainglass, ordinal=6, song="Big Saturday")}
 	${addAlbumPerf(release=drainglass, ordinal=7, song="President Reagan's Birthday Present")}
 	${addAlbumPerf(release=drainglass, ordinal=8, song="Girlfriend")}
-	${addAlbumPerf(release=drainglass, ordinal=9, song="Jazz Butcher -v- Count Dracula")}
+	${addAlbumPerf(release=drainglass, ordinal=9, song="The Jazz Butcher Meets Count Dracula")}
 	${addAlbumPerf(release=drainglass, ordinal=10, song="Caroline Wheeler's Birthday Present")}
 	${addAlbumPerf(release=drainglass, ordinal=11, song="Domestic Animal")}
 	${addAlbumPerf(release=drainglass, ordinal=12, song="Zombie Love")}
@@ -2817,9 +2817,9 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=drainglass, person=[[person:The_Undead]], instruments=backing vocals, song="Zombie Love")}
 	${addAlbumPerf(release=drainglass, person=[[person:Lionel_Brando]], instruments=drums, song="Zombie Love")}
 	${addAlbumPerf(release=drainglass, person=[[person:Martin_K._Daley]], instruments=bass, song="Zombie Love")}
-	${addAlbumPerf(release=drainglass, person=[[person:Kevin_Haskins]], instruments=drums, song="Jazz Butcher -v- Count Dracula")}
-	${addAlbumPerf(release=drainglass, person=[[person:Rolo_McGinty]], instruments=bass, song="Jazz Butcher -v- Count Dracula")}
-	${addAlbumPerf(release=drainglass, person=[[person:Alice_Thompson]], instruments=organ, song="Jazz Butcher -v- Count Dracula")}
+	${addAlbumPerf(release=drainglass, person=[[person:Kevin_Haskins]], instruments=drums, song="The Jazz Butcher Meets Count Dracula")}
+	${addAlbumPerf(release=drainglass, person=[[person:Rolo_McGinty]], instruments=bass, song="The Jazz Butcher Meets Count Dracula")}
+	${addAlbumPerf(release=drainglass, person=[[person:Alice_Thompson]], instruments=organ, song="The Jazz Butcher Meets Count Dracula")}
 	${jbc_footer}
 #live	endif
 
@@ -3036,7 +3036,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=gift1, ordinal=2, song="Marnie", version=Miaow Mix)}
 	${addAlbumPerf(release=gift1, ordinal=3, song="Roadrunner")}
 	${addAlbumPerf(release=gift1, ordinal=4, song="Real Men")}
-	${addAlbumPerf(release=gift1, ordinal=5, song="Jazz Butcher -v- Count Dracula")}
+	${addAlbumPerf(release=gift1, ordinal=5, song="The Jazz Butcher Meets Count Dracula")}
 	${addAlbumPerf(release=gift1, ordinal=6, song="Zombie Love")}
 	${addAlbumPerf(release=gift1, ordinal=7, song="Girls Who Keep Goldfish")}
 	${addAlbumPerf(release=gift1, ordinal=8, song="Sweet Jane")}
@@ -3129,7 +3129,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=hamburg, type=Aside, ordinal=4, song="Walk With The Devil")}
 	${addAlbumPerf(release=hamburg, type=Aside, ordinal=5, song="Rain")}
 	${addAlbumPerf(release=hamburg, type=Aside, ordinal=6, song="Roadrunner")}
-	${addAlbumPerf(release=hamburg, type=Aside, ordinal=7, song="Jazz Butcher -v- Count Dracula")}
+	${addAlbumPerf(release=hamburg, type=Aside, ordinal=7, song="The Jazz Butcher Meets Count Dracula")}
 	${addAlbumPerf(release=hamburg, type=Bside, ordinal=1, song="Bigfoot Motel")}
 	${addAlbumPerf(release=hamburg, type=Bside, ordinal=2, song="Real Men")}
 	${addAlbumPerf(release=hamburg, type=Bside, ordinal=3, song="Only A Rumour")}
@@ -3347,7 +3347,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=nons, type=Aside, ordinal=3, song="President Reagan's Birthday Present")}
 	${addAlbumPerf(release=nons, type=Aside, ordinal=4, song="The Jazz Butcher Meets the Prime Minister")}
 	${addAlbumPerf(release=nons, type=Aside, ordinal=5, song="Partytime")}
-	${addAlbumPerf(release=nons, type=Aside, ordinal=6, song="Jazz Butcher -v- Count Dracula", variant=Cassette only)}
+	${addAlbumPerf(release=nons, type=Aside, ordinal=6, song="The Jazz Butcher Meets Count Dracula", variant=Cassette only)}
 	${addAlbumPerf(release=nons, type=Aside, ordinal=7, song="Grooving In The Bus Lane")}
 
 	${addAlbumPerf(release=nons, type=Bside, ordinal=1, song="Death Dentist")}
@@ -3518,7 +3518,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=smith, person=[[person:Kevin_Haskins]], instruments=producer)}
 	${addAlbumPerf(release=smith, person=[[person:Mitch_Jenkins]], instruments=photography)}
 	${addAlbumPerf(release=smith, type=Aside, ordinal=1, song="Southern Mark Smith")}
-	${addAlbumPerf(release=smith, type=Bside, ordinal=1, song="Jazz Butcher -v- Count Dracula")}
+	${addAlbumPerf(release=smith, type=Bside, ordinal=1, song="The Jazz Butcher Meets Count Dracula")}
 
 	${addAlbumPerf(release=smith, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
 	${addAlbumPerf(release=smith, person=[[person:Max_Eider]], instruments=Lead Guitar\, Vocals)}
@@ -4437,7 +4437,7 @@ Previously available on the ${fishco} LP/CD.
 	${clearAlbumPerf(release=fire_cholmondley)}
 
 	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=1, song="Southern Mark Smith", version=Original 45)}
-	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=2, song="Jazz Butcher -v- Count Dracula", version=B-side of Mark Smith)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=2, song="The Jazz Butcher Meets Count Dracula", version=B-side of Mark Smith)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=3, song="Marnie", version=Miaow Mix)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=4, song="Roadrunner", author=Jonathan Richman, version=12er Version)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD1, ordinal=5, song="Real Men", version=12er Version)}

@@ -311,7 +311,7 @@ export const thing = linkSong({ title: "Thing", href: "/lyrics/thing.html" });
 export const hamburg = linkAlbum({ href: "/releases/hamburg.html", title: "Hamburg" });
 export const dentist = linkSong({ href: "/lyrics/death_dentist.html", title: "Death Dentist" });
 export const rain = linkSong({ href: "/lyrics/rain.html", title: "Rain" });
-export const count = linkSong({ href: "/lyrics/count_dracula.html", title: "Jazz Butcher -v- Count Dracula" });
+export const count = linkSong({ href: "/lyrics/count_dracula.html", title: "The Jazz Butcher Meets- Count Dracula" });
 //
 //	 Distressed Gentlefolk
 //
@@ -928,7 +928,7 @@ export const mapSongs: {[key: string]: string} = {
 	"Inside_Your_Heart": "inside_heart",
 	"Istanbul_Connection": "wilson_istanbul_connection",
 	"It_Has_To_Be_You": "you",
-	"Jazz_Butcher_-v-_Count_Dracula": "count",
+	"The_Jazz_Butcher_Meets_Count_Dracula": "count",
 	"Jazz_Butcher_Theme": "jbtheme",
 	"Just_Like_Betty_Page": "betty",
 	"Just_Like_Bettie_Page": "betty",

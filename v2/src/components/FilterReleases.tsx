@@ -1,13 +1,10 @@
 "use client"
 
 import { Suspense } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import useReleases from '@/lib/useReleases';
 import { type ReleaseType } from '@/components/Release';
-import { parseImage, truncAt, parseYear } from '@/lib/utils';
-import { expand } from '@/lib/defines';
-import InfoTag from '@/components/InfoTag';
+import { parseYear } from '@/lib/utils';
+import ReleaseCards from '@/components/ReleaseCards';
 
 import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
 
@@ -41,34 +38,7 @@ const	FilterReleases = ({ project, filters }: { project?: string, filters?: any 
 				if (options?.length <= 1) return;
 				return <div className="listItem flex flex-wrap">{options.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
 			})()}
-			<div className="flex flex-wrap gap-3 justify-center">
-				{releases?.filter((rel: any) => filterItemBy(rel, filtersUsed))
-					.map((item: ReleaseType, key: number) => {
-						const { thumb, image } = parseImage(item?.thumb);
-						return (<div key={key} className="drop-shadow-sm w-80">
-							<InfoTag text={`${parseYear(item.dtreleased)}: ${item?.type?.replace('project', '').replace(',,', ',').replace(/^,/, '').replace(/,$/, '')}`}/>
-							<div className={`gig_${item?.project}`}/>
-							<div className="outline outline-slate-300 drop-shadow-sm">
-								{(thumb) ?
-								<>
-								{(item?.href) ?
-									<Link href={item?.href}><Image className="w-full" src={thumb} width={250} height={250} alt="cover" /></Link>
-									:
-									<Image className="w-full" src={thumb} width={250} height={250} alt="cover" />
-									}
-								</>
-								:
-								<div className="p-7" />
-								}
-								<Link href={item?.href || ''}><div className="text-center text-sky-800 px-2">
-									{(item.project) && <><b>{expand(item.project)}</b><hr /></>}
-									{(item.collaboration) && <><b>{item.collaboration}</b><hr /></>}
-									<span className="font-light">{item?.title?.replace('&amp;', '&')}</span>
-								</div></Link>
-							</div>
-						</div>)
-					})}
-				</div>
+			<ReleaseCards items={releases?.filter((rel: any) => filterItemBy(rel, filtersUsed))} preventAutoExpand={!filtersUsed?.length} />
 			</>}
 		</Suspense>
 }

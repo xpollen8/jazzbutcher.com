@@ -14,7 +14,7 @@ import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import { Attribution, Source, Credit, ParsedCaption, removeHTML, RenderHTML } from '@/components/GenericWeb';
 import useGig from '@/lib/useGig';
-import { PressSummary } from '@/components/MakeReleasePress';
+import PressCards from '@/components/PressCards';
 import { PrevArrow, NextArrow } from '@/components/Arrows';
 
 const parsePhoto = (str: string) => {
@@ -81,15 +81,15 @@ const Iterator = ({ data, func, className }: any) => {
 
 const GigTicket = (data: any, key: number) => <GigMedia {...data} />
 
-const GigTickets = (data: any) => <><Iterator data={data} func={GigTicket} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
+const GigTickets = (data: any) => <div className="listItem"><Iterator data={data} func={GigTicket} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
 
 const GigSetlist = (data: any, key: number) => <GigMedia {...data} />
 
-const GigSetlists = (data: any) => <><Iterator data={data} func={GigSetlist} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
+const GigSetlists = (data: any) => <div className="listItem"><Iterator data={data} func={GigSetlist} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
 
 const GigPoster = (data: any, key: number) => <GigMedia {...data} />
 
-const GigPosters = (data: any) => <><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></>
+const GigPosters = (data: any) => <div className="listItem"><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
 
 const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
 
@@ -114,11 +114,11 @@ const GigPhotos = (data: any) => {
 
 const GigNote = (data: any, key: number) => <GigText {...data} />
 
-const GigNotes = (data: any) => <><Iterator data={data} func={GigNote} /></>
+const GigNotes = (data: any) => <div className="listItem"><Iterator data={data} func={GigNote} /></div>
 
 const GigSelfReview = (data: any, key: number) => <GigText {...data} />
 
-const GigSelfReviews = (data: any) => <><Iterator data={data} func={GigSelfReview} /></>
+const GigSelfReviews = (data: any) => <div className="listItem"><Iterator data={data} func={GigSelfReview} /></div>
 
 const GigPlay = ({ data }: any) => {
 	// hack alert.  if the comment field holds 'Source:',
@@ -139,7 +139,7 @@ const GigPlayed = (data: any) => {
 	let set = '';
 	let type = '';
 	const updateSet = (newSet: string) => set=newSet;
-	return <Iterator data={data} func={(({ data }: any) => {
+	return <Iterator className="listItem" data={data} func={(({ data }: any) => {
 		let banner;
 		if (data.type !== type || data.setnum !== set) {
 			type = data.type;
@@ -157,19 +157,13 @@ const GigWit = ({ data }: any) => {
 		</div>
 	)
 }
-const GigWith = (data: any) => <><Iterator data={data} func={GigWit} /></>
+const GigWith = (data: any) => <div className="listItem"><Iterator data={data} func={GigWit} /></div>
 
-const GigPlayer = ({ data }: any) => {
-	return (
-		<div style={{ whiteSpace: 'nowrap', background: '#fee' }}>
-			{AutoLinkPlayer(data?.performer)}
-			{(data?.instruments?.length) && <>{' '}<span className="smalltext">({data?.instruments?.split(',').join(', ')})</span></>}
-		</div>
-	)
-}
+const GigPlayer = ({ data }: any) => data?.performer && doIt(AutoLinkPlayer(data.performer), (data?.instruments?.length) ? data?.instruments?.split(',').join(', ') : '');
+
 const GigPlayers = (data: any) => (
-	<div className="g_who">
-		<Iterator data={data} func={GigPlayer} className="flex flex-wrap gap-x-5 gap-y-1 -ml-3" />
+	<div className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>
+			<Iterator data={data} func={GigPlayer} className="flex flex-wrap gap-1" />
 	</div>
 )
 
@@ -180,25 +174,28 @@ const GigReview = ({ data }: any) => {
 		</RenderHTML>
 	</>)
 }
-const GigReviews = (data: any) => <><Iterator data={data} func={GigReview} /></>
+const GigReviews = (data: any) => <div className="listItem"><Iterator data={data} func={GigReview} /></div>
 
-const GigPress = ({ data }: any) => PressSummary(data, 1);
+const GigPresses = (data: any) => <PressCards items={...data} />
 
-const GigPresses = (data: any) => <><Iterator data={data} func={GigPress} /></>
+const doIt = (label: any, val: any) => <span className="break-keep outline outline-1 outline-cyan-500 m-1"> <b>{label}</b> {val} </span>;
 
 const GigDetails = ({ gig, joins }: any) => {
 	if (!gig) return;
 	return (<>
 		<Tag>
-		{(gig?.extra?.includes('interview')) ? 'Interview' : 'Live Performance'} - {gig?.venue} {gig?.city} {gig?.country}
+		{doIt((gig?.extra?.includes('interview')) ? 'Interview' : 'Live Performance', `- ${gig?.venue} - ${gig?.city} ${gig?.country}`)}
 		</Tag>
-		<blockquote className="listItem" style={{ paddingLeft: '20px' }}>
-			<label>Date:</label> {dateDiff(gig?.datetime, '')}<br />
-			{(gig.ticketweb) && <><label>Tickets:</label> <Link href={gig.ticketweb}>{parseDomain(gig.ticketweb)}</Link><br /></>}
-			<label>Venue:</label> {gig.venue} {(gig.eventweb) && <Link href={gig.eventweb}>(Website)</Link>} <br />
-			{(gig.city) && <><label>Location:</label> {gig?.address} {gig?.city} {gig?.country} {gig?.postalcode}<br /></>}
-			{(gig.phone) && <><label>Telephone:</label> {gig.phone}<br /></>}
-			{(gig.cost) && <><label>Admission:</label> {gig.cost}</>}
+		<blockquote className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>
+			<div className="flex flex-wrap gap-1">
+				{(gig?.datetime) && doIt('Date', dateDiff(gig.datetime, ''))}
+				{(gig?.ticketweb) && doIt('Tickets', <Link href={gig.ticketweb}>{parseDomain(gig.ticketweb)}</Link>)}
+				{doIt('Venue', gig.venue)}
+				{(gig?.eventweb) && doIt('Venue Website', <Link href={gig.eventweb}>{parseDomain(gig.eventweb)}</Link>)}
+				{(gig?.city) && doIt('Location', `${gig?.address} ${gig?.city} ${gig?.country} ${gig?.postalcode}`)}
+				{(gig?.phone) && doIt('Telephone', gig.phone)}
+				{(gig?.cost) && doIt('Admission', gig.cost)}
+			</div>
 		</blockquote>
 	</>)
 }
@@ -326,18 +323,18 @@ const Content = ({ gig }: { gig: any }) => {
 		{ label: 'Also On The Bill', lookup: 'players_with', func: GigWith },
 		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
 		{ label: 'Tickets', lookup: 'media_ticket', func: GigTickets },
-		{ label: 'Photos', lookup: 'media_pix', func: GigPhotos },
+		{ lookup: 'media_pix', func: GigPhotos },
 		{ label: 'Setlists', lookup: 'media_setlist', func: GigSetlists },
 		{ label: 'Played', lookup: 'played', func: GigPlayed },
 		{ label: "Pat Says", lookup: 'text_selfreview', func: GigSelfReviews },
 		{ label: 'Fan Reviews', lookup: 'text_review', func: GigReviews },
-		{ label: 'Press', lookup: 'press_gig', func: GigPresses },
+		{ lookup: 'press_gig', func: GigPresses },
 	]
 
 	return <>
 		<GigDetails gig={gig} joins={joins} />
 		{extras?.map(({ label, lookup, func }: any, key: number) => <div key={key}>
-			{!!(joins[lookup]?.length) && <><Tag>{label}</Tag><div className="listItem" style={{ paddingLeft: '20px' }}>{func(joins[lookup])}</div></>}
+			{!!(joins[lookup]?.length) && <>{(label) && <Tag>{label}</Tag>}{func(joins[lookup])}</>}
 		</div>)}
 	</>
 }

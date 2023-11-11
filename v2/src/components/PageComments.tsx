@@ -239,15 +239,15 @@ const PageComments = ({ className }: { className?: string }) => {
 
 	return (<>
 		<Suspense fallback={<>Loading...</>}>
-			<details>
+			<details id="commentBubble">
 				<summary>
-					<CommentBubble className={className} style={{ height: '25px' }}>
+					<CommentBubble className="commentBubble">
 						<div className="text-sm text-slate-500 ml-1">{comments.length}</div>
 					</CommentBubble>
 				</summary>
 				<div className="commentOverlay">
-				{(showForm) && <CommentForm session={session} uri={uri} toggleCommentForm={toggleCommentForm} />}
-				<Comments session={session} uri={uri} comments={comments} showForm={showForm} toggleCommentForm={toggleCommentForm} />
+					{(showForm) && <CommentForm session={session} uri={uri} toggleCommentForm={toggleCommentForm} />}
+					<Comments session={session} uri={uri} comments={comments} showForm={showForm} toggleCommentForm={toggleCommentForm} />
 				</div>
 			</details>
 		</Suspense>

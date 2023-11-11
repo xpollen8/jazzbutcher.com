@@ -310,3 +310,5 @@ export const parseImage = (str?: string, width: number = 250) => {
 		image: raw && imageFull(raw),
 	}
 }
+
+export const pluralize = (num: number, str: string, prefix?: string) => ((prefix) ? `${prefix} ` : '') + ((num) ? num : 'No') + ' ' + str + ((num !== 1) ? 's' : '');

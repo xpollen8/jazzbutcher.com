@@ -1,2717 +1,894 @@
-<!DOCTYPE html>
-	<!-- Presented via the HTDB system (http://www.htdb.org) -->
-<head>
-	<title>
-	The Jazz Butcher Conspiracy
-	: "What I do is not entertainment"
-	</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/htdb/site/responsive-tabs.css">
-	<style type="text/css">
-	@font-face {
-	    font-family: Titillium-Regular;
-		src: url("/fonts/Titillium-Regular.otf") format("opentype");
-	}
-	body {
-		margin-top: 5px;
-		font-family: sans-serif;
-		font-size: 1.0em;
-	}
-	.hiddendate {
-		display: none;
-	}
-	.audioPlayer {
-	}
-	.audio_player {
-		padding-left: 10px;
-		width: 100%;
-	}
-	.audio_title {
-	}
-	.person, .source, .credit, .reviewer {
-		margin-top: 1em;
-		color: #6666;
-		font-size: .9em;
-	}
-	.song {
-	}
-	.g_details, .g_bootleg, .g_with, .g_who, .g_soundman {
-		margin-left: 10px;
-		margin-bottom: 10px;
-	}
-	.iview_a, .lyric_annotation, .annotation {
-		border-radius: 10px;
-		margin: 10px;
-		color: #555;
-		letter-spacing: 0.01em;
-		word-spacing: 0.12em;
-		padding: 10px;
-		padding-left: 40px;
-		background-color: rgba(248,248,248,0.8);
-		background-position: left top;
-		background-repeat: no-repeat;
-		#background-image: url(https://assets.dangerousminds.net/images/site_elements/quote.png);
-		background-image: url(/assets/quote.png);
-	}
-	.iview_a:before {
-	}
-	.iview_q:before {
-		content: "";
-	}
-	.iview_q {
-		font-weight: bold;
-		font-size: 1.05em;
-		margin: 10px;
-	}
-	.iview_title {
-		font-size: 1.5em;
-		background-color: #AFF1C3;
-		padding: 5px;
-	}
-	.iview_title a {
-		white-space: nowrap;
-	}
-	.iview_intro, .iview_outro {
-		border: 2px solid #aaa;
-		margin-bottom: 20px;
-		background-color: rgba(243,243,243,0.5);
-		padding: 10px;
-	}
-	/* video handling */
-	.js-video {
-	  height: 0;
-	  padding-top: 25px;
-	  padding-bottom: 67.5%;
-	  margin-bottom: 5px;
-	  position: relative;
-	  overflow: hidden;
-	}
-	.js-video.widescreen {
-	  padding-bottom: 56.34%;
-	}
-	.js-video.vimeo {
-	  padding-top: 0;
-	}
-	.js-video embed, .js-video iframe, .js-video object, .js-video video {
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-	  height: 100%;
-	  position: absolute;
-	}
-	.nav_heading {
-		padding-top: 5px;
-		padding-bottom: 5px;
-		font-weight: bold;
-		font-size: 1em;
-	}
-	.navsep:before {
-		color: black;
-		content: "|";
-		padding: 5px;
-	}
-	#gigTS {
-		display: none;
-	}
-	.fonts-loaded body {
-		font-family: Titillium-Regular, sans-serif;
-	}
-	img {
-		max-width: 100%;
-	}
-	textplus1 {
-		font-size: 1.5em;
-	}
-	.review {
-		padding: 5px;
-		margin-bottom: 20px;
-		background-color: rgba(243,243,243,0.5);
-	}
-	.gig_soon:before {
-	}
-	.gig_soon {
-		background-color: #66ff66;
-		padding: 5px;
-	}
-	.gig_future {
-		background-color: #aaddaa;
-		padding: 5px;
-	}
-	.gig_past {
-		background-color: #ddddee;
-		padding: 5px;
-	}
-	.gig_sumo a {
-		color: #fff;
-	}
-	.gig_sumo:before {
-		content: url(https://v1.jazzbutcher.com/images/sumo/sumo_logo_50.jpg);
-	}
-	.gig_sumo {
-		background-color: #000000;
-		padding: 5px;
-		margin-bottom: 5px;
-	}
-	.gig_eg:before {
-		content: url(https://v1.jazzbutcher.com/images/blackeg_logo_50.png);
-	}
-	.gig_eg {
-		background-color: #eeeeee;
-		padding: 5px;
-		margin-bottom: 5px;
-	}
-	.gig_wilson:before {
-		content: url(https://v1.jazzbutcher.com/images/wilson_logo_50.png);
-	}
-	.gig_wilson {
-		background-color: #ee0000;
-		padding: 5px;
-		margin-bottom: 5px;
-	}
-	.gig_pane {
-		border: 1px solid #aaa;
-		border-radius: 3px;
-		margin-bottom: 5px;
-	}
-	.gig_nopat:before {
-		content: "Masters Of Budvar (Pat promoted this event; didn't perform)";
-	}
-	.gig_nopat {
-		background-color: #999;
-		padding: 5px;
-		color: #fff;
-	}
-	.gig_listing_poster {
-		text-align: center;
-		max-width: 100%;
-	}
-	.gig_listing_date {
-		max-width: 100%;
-		font-size: .85em;
-		color: #333;
-	}
-	.gig_listing_details {
-		background-color: #cceeff;
-		padding: 5px;
-	}
-	.gig_listing_extras {
-		text-align: right;
-	}
-	.smalltext, .press_tags, .song_author {
-		font-size: 80%;
-		color: #666;
-	}
-	.press_tags {
-		margin-bottom: 10px;
-	}
-	.smallertext {
-		color: #666;
-		font-size: 60%;
-	}
-	.menuDiv {
-		padding: 3px;
-		margin: 3px;
-		border: 1px solid green;
-	}
-	.homeContainer {
-		padding: 10px;
-		margin-bottom: 5px;
-		background-color: #AFF1E4;
-		font-size: 1.1em;
-		border: 1px solid #666;
-	}
-	.homeHeader {
-		display: flex;
-		align-items: center;
-	}
-	.headingItem {
-		color: #222;
-		border-radius: 4px;
-		background-color: #BCF1AF;
-		padding: 3px;
-		padding-top: 5px;
-		padding-left: 10px;
-		max-width: 100%;
-		margin-bottom: 5px;
-		font-weight: bold;
-		font-size: 1.2em;
-	}
-	.homeFeature {
-		color: #222;
-		border-radius: 4px;
-		background-color: rgba(175,241,228,0.5);
-		padding: 5px;
-		width: 100%;
-		margin-bottom: 5px;
-	}
-	.listItem, .album_press {
-		border: 1px solid #ccc;
-		border-radius: 3px;
-		margin-bottom: 10px;
-		color: #444;
-		padding: 5px;
-		background-color: rgba(250,250,250,0.6);
-	}
-	.listItem b {
-		color: #000;
-		background-color: #AFF1C3;
-		padding: 2px;
-	}
-	.album_press li {
-		margin-top: .35em;
-	}
-	.album_press a {
-		font-weight: bold;
-		color: #00c;
-		background-color: #AFF1C3;
-		padding: .15em;
-		margin-top: 2px;
-	}
-	dd {
-	  margin-left: 15px;
-	  margin-right: 10px;
-	}
-	blockquote {
-	  margin: 10px;
-	  margin-left: 15px;
-	  margin-right: 10px;
-	}
-	.li-date {
-		font-weight: bold;
-		color: #000;
-		background-color: #AFF1C3;
-		padding: 3px;
-	}
-	.li-location {
-		color: #666;
-	}
-	.li-blurb {
-		color: #666;
-	}
-	.listenItem {
-		border: 1px solid #ccc;
-		border-radius: 3px;
-		color: #444;
-		background-color: rgba(250,250,250,0.8);
-		padding: 5px;
-		margin-bottom: 3px;
-	}
-	.listenItem b {
-		color: #000;
-		background-color: #AFF1C3;
-		padding: 3px;
-	}
-	a {
-		text-decoration: none;
-	}
-	.leading {
-		line-height: 1.5;
-	}
-	body {
-		background-image: url(/images/jbcback2.gif);
-		background-attachment: fixed;
-		letter-spacing: 0.01em;
-		color: #444;
-	}
-	#nav { 
-	  width: 130px;
-	  height: 100%;
-	  border-left: 1px solid #ccc; 
-	  position: fixed;
-	  top: 0px; 
-      right: 0px;
-	  z-index: 1000; 
-	  padding-left: 1px;
-	  background-color: #f6f6f6;
-	}
-	#nav a {
-		margin:3px;
-	}
-	#horn {
-	}
+{
+	"noun": "newsItem",
+	"numResults": 74,
+	"results": [
+	{
+		"subject": "Help Us!",
 
-	#main { 
-	  margin-right: 130px; 
-	  margin-top: 0px;
-	  padding: 0px;  
-	  height: 100%;  
-	}
-	.saveSpace { 
-	  padding-top: 2px;
-	}
-	#menuButton { 
-	  position: fixed;
-	  top: 0px; 
-	  right: 0px; 
-	  display: none; 
-	  margin: 0px;
-	}
-	p {
-		text-align: left;
-		margin-top: 1em;
-		margin-bottom: 0px;
-	}
-	img_main {
-		display: grid;
-		grid-template-columns:
-			repeat(auto-fit, minmax(250px, 1fr));
-	}
-	img_figure {
-		margin: 0;
-	}
-	img_img {
-		display: block;
-		width: 100%;
-		box-shadow: -1px 0px 0px rgba(0,0,0,0.06);
-	}
-	[at]<i><b>-remove-</b></i>supports (display: grid) {
-		// use modern grid layout
-	}
-	[at]<i><b>-remove-</b></i>supports (initial-letter: 4) or
-	(-webkit-initial-letter: 4) {
-	p::first-letter {
-		color: rgba(255,190,150,0.9);
-		font-weight: bold;
-		margin-right: 0.5em;
-		-webkit-initial-letter: 4;
-		initial-letter: 4;
-	}
-	}
+		"body": "We're in the midst of a massive tidy-up of the data that drives this website. You can help the effort!  We're looking for fans of the JBC to <a href='/help'>help us</a> fill in missing details from past gigs.",
 
-	@media all and (max-width: 700px) {
-	  #nav {
-		position: fixed; 
-		width: 130px;
-		border: 1px solid #666; 
-		top: 0px; 
-		left: calc(100% - 135px);
-	  }
-	  #horn {
-	  }
-	  #main { 
-		margin-right: 0px; 
-	  }
-	  .saveSpace { 
-		display: none; 
-	  }
-	  #menuButton { 
-		display: inline; 
-	  }
-	}
-	/* arrows */
-	.right-arrow {
-		display: inline-block;
-		position: relative;
-		background: orange;
-		padding: 0px;
-	}
-	.right-arrow:after {
-		content: '';
-		display: block;  
-		position: absolute;
-		left: 100%;
-		top: 50%;
-		margin-top: -10px;
-		width: 0;
-		height: 0;
-		border-top: 10px solid transparent;
-		border-right: 10px solid transparent;
-		border-bottom: 10px solid transparent;
-		border-left: 10px solid orange;
-	}
-	.left-arrow {
-		margin-left: 5px;
-		display: inline-block;
-		position: relative;
-		background: lightgrey;
-		padding: 0px;
-	}
-	.left-arrow:after {
-		content: '';
-		display: block;  
-		position: absolute;
-		right: 100%;
-		top: 50%;
-		margin-top: -10px;
-		width: 0;
-		height: 0;
-		border-top: 10px solid transparent;
-		border-right: 10px solid lightgrey;
-		border-bottom: 10px solid transparent;
-		border-left: 10px solid transparent;
-	}
-	/* masonry */
-	/* https://medium.com/[at]<i><b>-remove-</b></i>_jh3y/how-to-pure-css-masonry-layouts-a8ede07ba31a#.27486l1i1 */
-	.ml1 {
-	  -webkit-box-sizing: border-box;
-			  box-sizing: border-box;
-	  -webkit-column-count: 1;
-		 -moz-column-count: 1;
-			  column-count: 1;
-	  -webkit-column-gap: 0;
-		 -moz-column-gap: 0;
-			  column-gap: 0;
-	  position: relative;
-	}
-	.ml1 * {
-	  -webkit-box-sizing: border-box;
-			  box-sizing: border-box;
-	}
-	.ml2 {
-	  -webkit-box-sizing: border-box;
-			  box-sizing: border-box;
-	  -webkit-column-count: 2;
-		 -moz-column-count: 2;
-			  column-count: 2;
-	  -webkit-column-gap: 0;
-		 -moz-column-gap: 0;
-			  column-gap: 0;
-	  position: relative;
-	}
-	.ml2 * {
-	  -webkit-box-sizing: border-box;
-			  box-sizing: border-box;
-	}
-	.ml3 {
-	  -webkit-box-sizing: border-box;
-			  box-sizing: border-box;
-	  -webkit-column-count: 3;
-		 -moz-column-count: 3;
-			  column-count: 3;
-	  -webkit-column-gap: 0;
-		 -moz-column-gap: 0;
-			  column-gap: 0;
-	  position: relative;
-	}
-	.ml3 * {
-	  -webkit-box-sizing: border-box;
-			  box-sizing: border-box;
-	}
+		"dt": "1487376000",
 
-	.ml-panel {
-	  margin: 0;
-	  padding: 5px;
-	}
+		"link": "/help",
 
-	.ml-pnl {
-	  -webkit-column-break-inside: avoid;
-	  page-break-inside: avoid;
-	  break-inside: avoid;
-	}
+		"category": 	""
 
-	.ml-pnl__cntnt {
-	  border-radius: 10px;
-	  overflow: hidden;
-	  padding: 10px;
-	  width: 100%;
-	}
-	.ml-pnl__cntnt--img {
-	  max-width: 100%;
-	  padding: 0;
-	}
+	} ,
+	{
+		"subject": "The Jazz Butcher: 'Sound And Vision'",
 
-	.ml-clstr {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display: flex;
-	  padding: 0;
-	}
-	.ml-clstr--vrt {
-	  -webkit-box-orient: vertical;
-	  -webkit-box-direction: normal;
-	  -webkit-flex-direction: row;
-		  -ms-flex-direction: row;
-			  flex-direction: row;
-	}
+		"body": "<div class='annotation'> Pat Fish: My favorite song of Bowie? I have many, but it is often 'Sound and Vision' that I choose. At the time of the release of 'Low', I lived with a friend in an apartment in upper floors of the Cromwell Tower in the Barbican. We were unable to start the day, to leave the building or anything else without listening to 'Sound and Vision'. The energy, simplicity and clarity of this title are incredible. </div> <p /> <a href='http://addict-culture.com/bowie-jazz-butcher-marlon-williams-wild-beasts/' target='new'>The Man Who Changed Our World</a> (French)",
 
-	.ml-clstr--hrz {
-	  -webkit-box-orient: vertical;
-	  -webkit-box-direction: normal;
-	  -webkit-flex-direction: column;
-		  -ms-flex-direction: column;
-			  flex-direction: column;
-	}
-	.ml-clstr__sgmnt {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display: flex;
-	  -webkit-box-flex: 1;
-	  -webkit-flex: 1 1 auto;
-		  -ms-flex: 1 1 auto;
-			  flex: 1 1 auto;
-	}
-	.ml-clstr__sgmnt--rw {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display: flex;
-	  -webkit-box-orient: vertical;
-	  -webkit-box-direction: normal;
-	  -webkit-flex-direction: row;
-		  -ms-flex-direction: row;
-			  flex-direction: row;
-	}
-	.ml-clstr__sgmnt--clmn {
-	  -webkit-box-orient: vertical;
-	  -webkit-box-direction: normal;
-	  -webkit-flex-direction: column;
-		  -ms-flex-direction: column;
-			  flex-direction: column;
-	}
+		"dt": "1480723200",
 
-	.ml-clstr__sgmnt--hlf {
-	  -webkit-flex-basis: 50%;
-	  -ms-flex-preferred-size: 50%;
-	  flex-basis: 50%;
-	}
-	.ml-clstr__sgmnt--qrt {
-	  -webkit-flex-basis: 25%;
-	  -ms-flex-preferred-size: 25%;
-	  flex-basis: 25%;
-	}
-	.lyrics {
-		margin-top: -20px;
-		font-style: normal;
-		white-space: pre-line;
-	}
-	.lyrics_tablature {
-		margin-top: -20px;
-		font-family: Courier, monospace;
-		white-space: pre-wrap;
-	}
-	.lyrics_verse {
-		margin-top: -20px;
-	}
-	.lyrics_chorus:before {
-		font-weight: bold;
-		font-style: normal;
-		content: "Chorus";
-	}
-	.lyrics_chorus_define {
-		margin-left: 20px;
-		font-style: italic;
-	}
-	.lyrics_chorus_define:before {
-		margin-left: -20px;
-		font-weight: bold;
-		font-style: normal;
-		content: "Chorus:";
-	}
-	/* album stylings */
-	.release {
-		border: 1px solid #aaa;
-		border-radius: 3px;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		margin-bottom: 5px;
-		padding: 5px;
-		background-color: rgba(175,241,228,0.5);
-	}
-	.album_thumb {
-		max-width: 150px;
-		flex: 1;
-	}
-	.release_title {
-		font-weight: bold;
-	}
-	.release_title a, .album_title a {
-		color: #00d;
-		background-color: #AFF1C3;
-		padding: 3px;
-	}
-	.album_title {
-		font-weight: bold;
-		font-size: 1.2em;
-	}
-	.album_details {
-		padding-right: 5px;
-		flex: 2;
-	}
-	.album_type {
-		font-size: .9em;
-		color: #666;
-	}
-	.album_blurb {
-		margin-top: 10px;
-	}
-	.album_purchase {
-		font-size: 1.2em;
-		margin-top: 10px;
-	}
-</style>
-	</head>
-	<body>
-	<div id="nav" class="saveSpace">
-	<a id="horn" href="/"><img alt="The Jazz Butcher" height="80" src="/images/knife_logo_80.png"></a>
-	
-	<div class="menuDiv">
-				<a href="https://patfish.com">Pat</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/memoriam">In Memoriam</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/fishy_mansions">Fishy Mansions</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/fiascos">The Fiascos</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/lyrics">The Songs</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/albums">The Releases</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/gigs">The Gigs</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/audio">Some Audio</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/video">Some Video</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/people">Conspirators</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/press">Press</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/news">News</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/help">Contribute!</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/etc">etc..</a><br/>
-</div>
-	<div class="nav_heading">Projects</div>
-	<div class="menuDiv">
-				<a href="/gigs/search.html?f=extras&q=eg">Black Eg</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/gigs/search.html?f=extras&q=sumo">Sumosonic</a><br/>
-</div>
-	<div class="menuDiv">
-				<a href="/gigs/search.html?f=extras&q=wilson">Wilson</a><br/>
-</div>
-	<div class="nav_heading">Pre-JBC</div>
-	<div class="menuDiv">
-				&nbsp;Nightshift<br/>
-</div>
-	<div class="menuDiv">
-				&nbsp;The Institution<br/>
-</div>
-	<div class="menuDiv">
-				&nbsp;Sonic Tonix<br/>
-</div>
-	</div>
-	<!-- end the left-side navigation-->
-	<!-- begin the content for this page -->
-	<div id="main">
-		<a href="#" id="menuButton"><img alt="The Jazz Butcher" height="80" src="/images/knife_logo_80.png"></a>
-		<div style="max-width: 100%; text-align: left;">
-		<!--- CONTENT -->
-	<div class="homeContainer">
-	<div class="homeHeader">
-		<a href="/">The Jazz Butcher</a> <span class="navsep"/>
-		<nobr>
-			<i>"What I do is not entertainment"</i>
-		</nobr>
-		</div>
-	</div>
+		"link": "http://addict-culture.com/bowie-jazz-butcher-marlon-williams-wild-beasts/",
 
-	<style type="text/css">
-		#container {
-		   height: auto;
-		   overflow: hidden;
-		}
-		#right {
-			margin-left: 5px;
-			width: 70%;
-			float: right;
-		}
-		#left {
-			float: none;
-			width: auto;
-			overflow: hidden;
-		}
-		@media (max-width: 600px) {
-			#right {
-				width: 100%;
-				float: none;
-				margin-left: 0px;
-			}
-		}
-	</style>
-	<div id="container">
-	<div id="right">
-		<div class="release">
-	<div class="album_details">
-		<span class="album_title">
-			<a class="album_href" href="/albums/never_give_up.html">Never Give Up</a>
-		</span>
-	<div class="album_blurb">
-			<blockquote>
-			
-			
-			
-			
-			In loving memory.
-			</blockquote>
-	</div>
-	<div class="album_purchase">
-		<a href="https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7" target="new">Purchase Now</a><br/><span class="smalltext">( cargorecordsdirect.co.uk
-)</span>
-	</div>
-	</div>
-	<div class="album_thumb">
-	<a href="/albums/never_give_up.html"><img style="border: 1px solid;" alt="[Never Give Up cover thumbnail]" src="/images/releases/never7_A_250.jpg"></a>
-	</div>
-	</div>
-		<div class="release">
-	<div class="album_details">
-		<span class="album_title"><a href="https://www.paypal.com/instantcommerce/checkout/B9R9UNV97A754" target="new">Earl Sikkorski’s Golden Treasury</a></span>
-	<div class="album_blurb">
-		‘Earl Sikkorski’s Golden Treasury’, a facsimile of the Jazz Butcher fan club scrapbook, pinned out, examined under the microscope and
-		expanded upon, by Philip Snow.  Hardback book out now.
-	</div>
-	<div class="album_purchase">
-		<a href="https://www.paypal.com/instantcommerce/checkout/B9R9UNV97A754" target="new">Order direct from the author</a>
-		<br/><span class="smalltext">at a discounted costof 15GBP, which includes delivery to anywhere on the planet.</span>
-	</div>
-</div>
-<div style="max-width: 350px; flex: 1">
-	<a href="/images/book_sikkorski.jpg"><img src="/images/book_sikkorski_500.jpg"/></a>
-</div>
-	</div>
-		<div class="release">
-	<div class="album_details">
-<span class="album_title"><a href="https://www.paypal.com/instantcommerce/checkout/HRQWCR4BWWF5W" target="new">Miracles and Wonders</a></span>
-<div class="album_blurb">
-	<i>A Meandering, Cacophonous Concordance of The Jazz Butcher Songbook</i>, by Pat Fish & Philip Snow, will be officially published on the first day of May, 2022.
-	<p>
-	A 400 page volume with hundreds of illustrations, many uniquely sourced from the Fishy Mansions Archives and friends worldwide.
-		Big Answers, finally.
-	</p>
-	</div>
-	<div class="album_purchase">
-		<a href="https://www.paypal.com/instantcommerce/checkout/HRQWCR4BWWF5W" target="new">Purchase Now</a>
-		<br/><span class="smalltext">(Via <b>Paypal</b>, includes shipping, literally anywhere)</span>
-	</div>
-</div>
-<div style="max-width: 350px; flex: 1">
-	<a href="/images/songbook/cover.jpg"><img src="/images/songbook/cover_500.jpg"/></a>
-</div>
-	</div>
-		<div class="release">
-	<div class="album_details">
-		<span class="album_title">
-			<a class="album_href" href="/albums/highest_in_the_land.html">The Highest in the Land</a>
-		</span>
-	<div class="album_blurb">
-			<blockquote>
-			
-			
-			
-			
-			It's not often that an artist gets to do a Bowie by consciously carving their personal epitaph into the grooves of their final LP. The Highest in the Land is that rarity of an album, and it could not have been made by a more brilliantly poetic and fearlessly sarcastic writer than Pat Fish, also known as The Jazz Butcher.
-			</blockquote>
-	</div>
-	<div class="album_purchase">
-		<a href="https://www.tapeterecords.de/artists/the-jazz-butcher/" target="new">Purchase Now</a><br/><span class="smalltext">( www.tapeterecords.de
-)</span>
-	</div>
-	</div>
-	<div class="album_thumb">
-	<a href="/albums/highest_in_the_land.html"><img style="border: 1px solid;" alt="[The Highest in the Land cover thumbnail]" src="/images/releases/highest_250.jpg"></a>
-	</div>
-	</div>
-		<div class="release">
-	<div class="album_details">
-		<span class="album_title">
-			<a class="album_href" href="/albums/fire_cholmondley.html">Dr Cholmondley Repents: A​-​sides, B​-​Sides and Seasides</a>
-		</span>
-	<div class="album_blurb">
-			<blockquote>
-			
-			
-			
-			
-			Four CD box set gathering A-sides, the would-be hits along with B-sides, tangential 12-inch tracks (the C-sides), and an excellent session for Los Angeles radio station KCRW from 1989.
-<p />
-Includes over a dozen indie chart hits including ‘Southern Mark Smith’, ‘Girl Go’, ‘The Human Jungle’, ‘16 Years’ plus a host of truly eclectic Butcher tunes from his early Glass recordings through his time at Creation.
-			</blockquote>
-	</div>
-	<div class="album_purchase">
-		<a href="https://thejazzbutcher.bandcamp.com/album/dr-cholmondley-repents-a-sides-b-sides-and-seasides" target="new">Purchase Now</a><br/><span class="smalltext">( thejazzbutcher.bandcamp.com
-)</span>
-	</div>
-	</div>
-	<div class="album_thumb">
-	<a href="/albums/fire_cholmondley.html"><img style="border: 1px solid;" alt="[Dr Cholmondley Repents: A​-​sides, B​-​Sides and Seasides cover thumbnail]" src="/images/releases/fire_cholmondley_250.jpg"></a>
-	</div>
-	</div>
-		<div class="release">
-	<div class="album_details">
-		<span class="album_title">
-			<a class="album_href" href="/albums/fire_violent.html">The Violent Years</a>
-		</span>
-	<div class="album_blurb">
-	</div>
-	<div class="album_purchase">
-		<a href="https://thejazzbutcher.bandcamp.com/album/the-violent-years" target="new">Purchase Now</a><br/><span class="smalltext">( thejazzbutcher.bandcamp.com
-)</span>
-	</div>
-	</div>
-	<div class="album_thumb">
-	<a href="/albums/fire_violent.html"><img style="border: 1px solid;" alt="[The Violent Years cover thumbnail]" src="/images/releases/fire_violent_250.jpg"></a>
-	</div>
-	</div>
-		<div class="release">
-	<div class="album_details">
-		<span class="album_title">
-			<a class="album_href" href="/albums/fire_wasted.html">The Wasted Years</a>
-		</span>
-	<div class="album_blurb">
-			<blockquote>
-			
-			
-			
-			
-			Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’.
-			</blockquote>
-	</div>
-	<div class="album_purchase">
-		<a href="https://thejazzbutcher.bandcamp.com/album/the-wasted-years" target="new">Purchase Now</a><br/><span class="smalltext">( thejazzbutcher.bandcamp.com
-)</span>
-	</div>
-	</div>
-	<div class="album_thumb">
-	<a href="/albums/fire_wasted.html"><img style="border: 1px solid;" alt="[The Wasted Years cover thumbnail]" src="/images/releases/fire_wasted_250.jpg"></a>
-	</div>
-	</div>
-		<div class="release">
-	<div class="album_details">
-		<span class="album_title">
-			<a class="album_href" href="/albums/brave.html">Brave New Waves Session</a>
-		</span>
-	<div class="album_blurb">
-			<blockquote>
-			
-			
-			
-			
-			The Jazz Butcher’s Brave New Waves session was recorded on <a href="/gigs/1988/Jun5.html">June 5th, 1988</a> in CBC Studio 13 in Montreal.  The recording is taken from CBC Archives reels and remastered at Grey Market Mastering in Montreal, by Harris Newman.
-			</blockquote>
-	</div>
-	<div class="album_purchase">
-		<a href="http://www.stormingthebase.com/the-jazz-butcher-brave-new-waves-session-blue-vinyl/" target="new">Purchase Now</a><br/><span class="smalltext">( www.stormingthebase.com
-)</span>
-	</div>
-	</div>
-	<div class="album_thumb">
-	<a href="/albums/brave.html"><img style="border: 1px solid;" alt="[Brave New Waves Session cover thumbnail]" src="/images/releases/brave_250.jpg"></a>
-	</div>
-	</div>
-		<div class="release">
-	<div class="album_details">
-		<span class="album_title">
-			<a class="album_href" href="/albums/last_of_the_gentleman_adventurers.html">Last of the Gentleman Adventurers</a>
-		</span>
-	<div class="album_blurb">
-			<blockquote>
-			
-			
-			
-			
-			Crowd-funded in under 12 hours, recorded on 2" tape, lush and warm..
-			</blockquote>
-	</div>
-	<div class="album_purchase">
-		<a href="https://thejazzbutcher.bandcamp.com/album/last-of-the-gentleman-adventurers" target="new">Purchase Now</a><br/><span class="smalltext">( thejazzbutcher.bandcamp.com
-)</span>
-	</div>
-	</div>
-	<div class="album_thumb">
-	<a href="/albums/last_of_the_gentleman_adventurers.html"><img style="border: 1px solid;" alt="[Last of the Gentleman Adventurers cover thumbnail]" src="/images/adventurers_front_250.jpg"></a>
-	</div>
-	</div>
-			<div class="headingItem">
-	Random Forced Viewing
-	</div>
-	<div class="listenItem">
-		<b>		<span class='song'>
-	<i><a href="/lyrics/tombe_dans_les_pomes.html">Tombé dans les pommes</a></i>
-	</span>
-</b>
-		- <a href="/gigs/2013/Jun13.html
-">2013-06-13</a> @ The Labour Club, Northampton
-				<div class="js-video [vimeo, widescreen]">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/ett6Q0RCFgk?showinfo=0" frameborder="0" allowfullscreen></iframe>
-		</div>
+		"category": 	""
 
-			<span class="credit">
-	<b>Credit</b>:
-						<a href="https://www.youtube.com/user/andyskank64" target="new">andyskank64</a>
-	</span><!-- credit -->
+	} ,
+	{
+		"subject": "Pat Fish + David J, Racehorse Christmas Gig, 1993",
 
-	</div>
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/gigs/search.html?f=song&amp;q=The+Entire+Show'>The Entire Show</a></i> </span>  </i> </span> <br/> <audio controls='controls' title='The Entire Show' preload='none' class='audio_player'> <source src='/audio/19931223/19931223_JazzButcher_TheRacehorse_Gen0_Cassette.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <p /> Pat and David J play 4 songs, and then Alan Moore takes the stage (*that* set is not included in this download)",
 
-			<div class="headingItem">
-	On This Date In History..
-	</div>
-		<a href="/gigs/1985/Nov11.html">
-	<div class='gig_pane'>
-	<div class="gig_listing_date">
-		<div
-		class="gig_past"
-		>
-			Mon, Nov 11<sup>th</sup> 1985
+		"dt": "1479168000",
 
-		
-	</div>
-	<div class="gig_listing_details">
-		@ Alabamahalle<br/>
-		
-		
-		Munich
-		
-		Germany
-		
-		<div class="gig_listing_extras">
-			💬
-			
-			📹
-			🎼
-	</div>
-	</div>
-	</div>
-	</div>
-	</a>
-		<a href="/gigs/1989/Nov11.html">
-	<div class='gig_pane'>
-	<div class="gig_listing_date">
-		<div
-		class="gig_past"
-		>
-			Sat, Nov 11<sup>th</sup> 1989
+		"link": "/gigs/1993/Dec23.html",
 
-		
-	</div>
-	<div class="gig_listing_details">
-		@ Foufounes Electriques<br/>
-		
-		
-		Montreal
-		Quebec,
-		Canada
-		
-		<div class="gig_listing_extras">
-			
-			[interview]
-			📰
-	</div>
-	</div>
-	</div>
-	</div>
-	</a>
-		<a href="/gigs/1990/Nov11.html">
-	<div class='gig_pane'>
-	<div class="gig_listing_date">
-		<div
-		class="gig_past"
-		>
-			Sun, Nov 11<sup>th</sup> 1990
+		"category": "media"
 
-		
-	</div>
-	<div class="gig_listing_details">
-		@ Paradise<br/>
-		
-		
-		Boston
-		Massachusetts,
-		USA
-		
-		<div class="gig_listing_extras">
-			
-			♥
-			📷
-			📹
-			⭐
-			📰
-			🎼
-	</div>
-	</div>
-	</div>
-	</div>
-	</a>
-		<a href="/gigs/1991/Nov11.html">
-	<div class='gig_pane'>
-	<div class="gig_listing_date">
-		<div
-		class="gig_past"
-		>
-			Mon, Nov 11<sup>th</sup> 1991
+	} ,
+	{
+		"subject": "'Near Perfect Pitch' podcast #1",
 
-		
-	</div>
-	<div class="gig_listing_details">
-		@ Jazzhaus<br/>
-		
-		
-		Freiburg
-		
-		Germany
-		
-		<div class="gig_listing_extras">
-			
-			⭐
-	</div>
-	</div>
-	</div>
-	</div>
-	</a>
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> 'Near Perfect Pitch' podcast #1 </i> </span> <span class='smalltext'> <i>Dara Mottahed and Pat (via Skype) chat about recent band history. And football.</i> </span> <br/> <audio controls='controls' title=''Near Perfect Pitch' podcast #1' preload='none' class='audio_player'> <source src='/audio/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> Excerpted from <a href='https://twitter.com/NearPerfPitch' target='new'>@NearPerfPitch</a>'s inaugural podcast. Dara Mottahed and Pat (via Skype) <a href='http://www.ckcufm.com/node/700' target='new'>chat about recent band history. And football</a>.",
 
-	</div>
-	<div id="left">
-				<a href="/gigs/2023/Apr2_1900.html">
-	<div class='gig_pane'>
-	<div class="gig_listing_date">
-		<div
-		class="gig_future"
-		>
-			Sun, Apr  2<sup>nd</sup> 2023 7:00pm
+		"dt": "1462752000",
 
-		<div class="textplus1"><i>Masters of Budvar Presents: The Ship of Fools</i></div>
-	</div>
-	<div class="gig_listing_details">
-		@ The Labour Club<br/>
-		
-		95-97 Charles St<br/>
-		Northampton
-		
-		England
-		NN1 3
-		<div class="gig_listing_extras">
-			📷
-			📹
-			⭐
-			🎼
-	[Tribute]
-	</div>
-		<div class="gig_listing_poster">
-				<img style="border: 1px solid;" alt="[poster for 2023/Apr2_1900.html]" src="/images/20230402/20230402_poster_250.jpg
-">
-		</div>
-	</div>
-	</div>
-	</div>
-	</a>
-		<a href="/gigs/2022/Dec18_1930.html">
-	<div class='gig_pane'>
-	<div class="gig_listing_date">
-		<div
-		class="gig_past"
-		>
-			Sun, Dec 18<sup>th</sup> 2022 7:30pm
+		"link": 	"",
 
-		
-	</div>
-	<div class="gig_listing_details">
-		@ The Lexington<br/>
-		
-		96-98 Pentonville Road<br/>
-		London
-		
-		England
-		N1 9JB
-		<div class="gig_listing_extras">
-			⭐
-	[Tribute]
-	</div>
-	</div>
-	</div>
-	</div>
-	</a>
-		<a href="/gigs/2021/Nov27_1930.html">
-	<div class='gig_pane'>
-	<div class="gig_listing_date">
-		<div
-		class="gig_past"
-		>
-			Sat, Nov 27<sup>th</sup> 2021 7:30pm
+		"category": "media"
 
-		
-	</div>
-	<div class="gig_listing_details">
-		@ The Dublin Castle<br/>
-		
-		94 Parkway<br/>
-		London
-		
-		England
-		NW1 7AN
-		<div class="gig_listing_extras">
-			📹
-			⭐
-			📰
-			[setlist]
-			🎼
-	[Tribute]
-	</div>
-		<div class="gig_listing_poster">
-				<img style="border: 1px solid;" alt="[poster for 2021/Nov27_1930.html]" src="/images/20211127/20211127_poster_250.jpg
-">
-		</div>
-	</div>
-	</div>
-	</div>
-	</a>
-		<a href="/gigs/2021/Aug21_1900.html">
-	<div class='gig_pane'>
-	<div class="gig_listing_date">
-		<div
-		class="gig_past"
-		>
-			Sat, Aug 21<sup>st</sup> 2021 7:00pm
+	} ,
+	{
+		"subject": "Steve Garofalo, drummer for The Jazz Butcher Quartet",
 
-		
-	</div>
-	<div class="gig_listing_details">
-		@ The Ferret<br/>
-		
-		55 Fylde Rd<br/>
-		Preston
-		
-		England
-		PR1 2XQ
-		<div class="gig_listing_extras">
-			📹
-			⭐
-			☠
-			🎼
-	</div>
-		<div class="gig_listing_poster">
-				<img style="border: 1px solid;" alt="[poster for 2021/Aug21_1900.html]" src="/images/20210821/20210821_poster_250.jpg
-">
-		</div>
-	</div>
-	</div>
-	</div>
-	</a>
-		<a href="/gigs/2021/Aug20_1800.html">
-	<div class='gig_pane'>
-	<div class="gig_listing_date">
-		<div
-		class="gig_past"
-		>
-			Fri, Aug 20<sup>th</sup> 2021 6:00pm
+		"body": "<a href='http://www.northamptonchron.co.uk/news/local/northampton-barbershop-that-was-at-the-heart-of-community-closes-after-103-years-1-7303919' target='new'>He also a much loved barber.</a>",
 
-		
-	</div>
-	<div class="gig_listing_details">
-		@ The Continental<br/>
-		
-		South Meadow Lane<br/>
-		Preston
-		
-		England
-		PR1 8JP
-		<div class="gig_listing_extras">
-			💬
-			📷
-			🎼
-	</div>
-		<div class="gig_listing_poster">
-				<img style="border: 1px solid;" alt="[poster for 2021/Aug20_1800.html]" src="/images/20210820/20210820_poster_250.jpg
-">
-		</div>
-	</div>
-	</div>
-	</div>
-	</a>
+		"dt": "1459382400",
 
-	</div>
-	</div>
-	<!--- CONTENT -->
-	<div class="headingItem">
-	Visitor Feedback
-	</div>
-		<div id="fbar" style="clear: both; background-color: #e6e6e6; max-width: 100%; padding: 3px; margin: 0px; font-family: Titillium-Regular; color: #000000; text-align: left;">
-	<b>Visitors' recent comments for this page</b>
-	[<a
-	href="/htdb/feedback?|pe1|dm1pHr-3dmwlNoDCGB_FdZBbgMuby__h">Read all 301 comments</a>]
-	[<a href="/htdb/feedback?|pe1|dGdpBZjgZmZtLJfDR1iYf5YRkYuX2vrjiIuUHg">Add your own</a>]
-	</div><!-- fbar -->
-	<div id="feedback" style="background-color: #efefef; max-width: 100%; padding: 3px; margin: 0px; font-family: Titillium-Regular;">
-	<ul style="list-style: none; color: #000000; text-align: left; margin-left: -10px;">
-	<li>
-	<b>Third book back CD</b>
-	<br>
-	lesguillaumepch[at]<i><b>-remove-</b></i>gmail.com
-	- Pierre Guillaume, Brussey
-	<br>
-	7Sep2021 10:25 AM
-	(2 years 65 days  ago)
-	<blockquote>
-		Great news...!<br/>
-I knew the blue one was missing...!!
-	</blockquote>
-	</li>
-	<li>
-	<b>Interview Request</b>
-	<br>
-	Paulmcgu[at]<i><b>-remove-</b></i>gmail.com
-	- Paul McGuire
-	<br>
-	16Jul2021 6:38 PM
-	(2 years 118 days  ago)
-	<blockquote>
-		Dear Pat:<br/>
-<br/>
-I do a radio show for low power/internet station in Los Angeles: KHUG.rocks. I love your work. My show is a pre-recorded hour. I can send you a sample show if you wish. Sometimes I focus on one artist (JJ Cale, The Tubes, The Alice Cooper Groupâ€”week after played Caroline Wheelerâ€™s Birthday PresentðŸ˜‰&#41; and I am going to soon do an hour on TJB. If any chance I could email you some questions would love to then read your answers on air. Have also done rock journalism off and on since I was 15 fyi.<br/>
-<br/>
-Anyway longshot but never hurts to ask. Really love your work and have turned many fellow Angelenos and friends onto it. Have played on air Shakey, Devil, Jungle, YoYo, CWBP and Roadrunner.<br/>
-<br/>
-Hope you are healthy after health scare in recent years. You do great stuff.<br/>
-<br/>
-Best<br/>
-Paul McGuire<br/>
-Canyon Country CA
-	</blockquote>
-	</li>
-	<li>
-	<b>Hamburg LP</b>
-	<br>
-	nope[at]<i><b>-remove-</b></i>nope.tv
-	- Pat Fish, NN1
-	<br>
-	3Jul2021 8:58 AM
-	(2 years 131 days  ago)
-	<blockquote>
-		Hi Patrik, The album that you have was recorded live at Onkel Po&#39;s Carnegie Hall, Hamburg (yes, really!&#41; on 16th August 1985. Released by SPV, a German label. It was a very enjoyable gig, but the record didn&#39;t come out particularly well, in my opinion. Best regards, Pat x
-	</blockquote>
-	</li>
-	<li>
-	<b>Mysterious vinyl</b>
-	<br>
-	patrik.zarkovic247[at]<i><b>-remove-</b></i>gmail.com
-	- Patrik, Croatia
-	<br>
-	5Jun2021 4:10 AM
-	(2 years 159 days  ago)
-	<blockquote>
-		Hey, I got a vinyl record from my parents a few days ago. They were looking for Joy Division but got something called Jazz Butcher, and that&#39;s how I ended up here. The record is called &#34;Jazz Butcher Live Hamburg&#34;. It isn&#39;t mentioned anywhere on the Internet and I feel like you might know something. If you want photos send an email :&#41;
-	</blockquote>
-	</li>
-	<li>
-	<b>Olof Palme</b>
-	<br>
-	Bluesbaruch[at]<i><b>-remove-</b></i>protonmail.com
-	- Bryan, Californis
-	<br>
-	25May2021 5:58 PM
-	(2 years 170 days  ago)
-	<blockquote>
-		Olof Palme was a great man and the Jazz Butcher&#39;s song about him was a great song. WT holy living F is going on with that song? You can find lyrics online, but absolutely no links to recordings, performances, videos, nothing. Is there something going on with the rights? A legal fight? Or is socialism still such a nasty word in the US that it&#39;s been culturally erased? I have the lyrics and I play it busking. I think it&#39;s such a culturally important song, it needs to be household familiar and played far and wide. I&#39;m gonna keep playing it. I&#39;m so poor I&#39;m judgement proof, so sue me. Be my guest. It needs to be heard.
-	</blockquote>
-	</li>
-	<li>
-	<b>&#34;All the Saints&#34; and &#34;Saints Prayer&#34; Videos</b>
-	<br>
-	rsd[at]<i><b>-remove-</b></i>tradenet.net
-	- Scott, PA, USA
-	<br>
-	23Feb2021 3:05 PM
-	(2 years 261 days  ago)
-	<blockquote>
-		Just posted this video for &#34;Saints Prayer&#34;: https://youtu.be/tW2hsJNGIvI<br/>
-<br/>
-which is a companion piece / making of video for the original &#34;All the Saints&#34; video: https://youtu.be/8KnBitnz7PY<br/>
-<br/>
-<br/>
-Thanks to Pat and Max for the great music!
-	</blockquote>
-	</li>
-	<li>
-	<b>Happy New Year</b>
-	<br>
-	LetTheRain[at]<i><b>-remove-</b></i>WashTheShameAway.com
-	- Liam, Oregon
-	<br>
-	2Jan2021 7:15 PM
-	(2 years 313 days  ago)
-	<blockquote>
-		Just wanted to say still blasting JB into 2021
-	</blockquote>
-	</li>
-	<li>
-	<b>Cheers from longtime fan</b>
-	<br>
-	Kevininnes[at]<i><b>-remove-</b></i>gmail.com
-	- Kevin Innes, washington state, USA
-	<br>
-	14Dec2020 3:04 AM
-	(2 years 332 days  ago)
-	<blockquote>
-		Hi! Really want to say how much Iâ€™ve enjoyed the music over <br/>
-the years! Grew up in Winnipeg, introduced to the JBC by <br/>
-Brave New Waves, on the CBC radio. Saw you in concert in <br/>
-88 or 89 when you came through on tour. Constantly <br/>
-somewhere on my playlists. My kids sing along to the songs <br/>
-as well! Thanks for being a meaningful part of my musical life!
-	</blockquote>
-	</li>
-	<li>
-	<b>The gift keeps giving</b>
-	<br>
-	Thmtelluride[at]<i><b>-remove-</b></i>gmail.com
-	- Tom
-	<br>
-	22Sep2020 9:14 PM
-	(3 years 49 days  ago)
-	<blockquote>
-		Just cranked, very loudly, the Glass/Cartel vinyl 45 of Groovin in the bus lane and Hard on my insane audiophile system here in Brentwood (Los Angeles&#41;CA. I was strutting around my house like a rooster in heat.<br/>
- I have been listening to the Butcher since about &#39;83. Saw them Many times on any tour that came within 1000 miles of me. Last show was Mercury Lounge NYC I think in early 2000s. Met Pat on several occasions. An honor. <br/>
-It&#39;s hard to overstate the joy that your (and Max&#39;s&#41; music has brought, and still brings to me over almost 40 years later. I have almost all of the original vinyl. I won&#39;t listen on CD. Just isn&#39;t the same. <br/>
-Your songwriting craft and wit put you among the best in the rock and roll tradition. IMHO. <br/>
-Thanks Pat. For the gift of your genius.
-	</blockquote>
-	</li>
-	<li>
-	<b>Sun Is Still Sunny</b>
-	<br>
-	richp20[at]<i><b>-remove-</b></i>hotmail.com
-	- Rich from Calgary, Alberta
-	<br>
-	16Aug2020 6:37 PM
-	(3 years 87 days  ago)
-	<blockquote>
-		Just listened to Sun Is Still Sunny.  Damn.  Great cover choice. You can still kick me hard in the feelings when you want to Fishy!  Tasty stuff.<br/>
-<br/>
-By the way, I&#39;m still holding you to that promise of a set of those rare tunes that I need in cd quality.  I bought and devoured the two box sets (Violent and Wasted years&#41; - loved to hear those wonderful songs again - and the liner notes brought a smile and a tear!  But I need many of your lesser known gems available in high quality sound!<br/>
-<br/>
-Thanks for all the gifts over the years.  I still listen to your music often and it is a touchstone and comfort in time like these!  Good heath and happiness to you sir!  My wallet will always be willing to part with its contents whenever you have more beautiful tunes. to offer!
-	</blockquote>
-	</li>
-	<li>
-	<b>FB Live Show???</b>
-	<br>
-	doc6502[at]<i><b>-remove-</b></i>yahoo.com
-	- Doc
-	<br>
-	12Jun2020 7:47 AM
-	(3 years 152 days  ago)
-	<blockquote>
-		Live from Fishy Mansions, Sunday 14 June<br/>
-Europe 22:00<br/>
-London 21:00<br/>
-New York: 16:00<br/>
-CHICAGO: 15:00<br/>
-L.A. 13:00
-	</blockquote>
-	</li>
-	<li>
-	<b>video</b>
-	<br>
-	les.guillaume[at]<i><b>-remove-</b></i>club-internet.fr
-	- Pierre Guillaume
-	<br>
-	3Jun2020 9:34 AM
-	(3 years 161 days  ago)
-	<blockquote>
-		Thanks for your human jungle video. Like we say in french: ces chansons n&#39;ont pas pris une ride...!
-	</blockquote>
-	</li>
-	<li>
-	<b>Re: Box Sets</b>
-	<br>
-	therecordstop[at]<i><b>-remove-</b></i>aol.com
-	- Thomas USA
-	<br>
-	22Sep2019 4:19 AM
-	(4 years 51 days  ago)
-	<blockquote>
-		The Violent years and Wasted Years boxes were great. Are we going to see a 3rd covering the last 4 albums? We really should! Thanks
-	</blockquote>
-	</li>
-	<li>
-	<b>22 of june&#39;s gig</b>
-	<br>
-	les.guillaume[at]<i><b>-remove-</b></i>club-internet.fr
-	- Pierre Guillaume BesanÃ§on
-	<br>
-	30Jun2019 12:52 PM
-	(4 years 135 days  ago)
-	<blockquote>
-		Hello,<br/>
-Seems to be quiet a gig...!<br/>
-Too bad Northampton, UK is so far from BesanÃ§on, France...
-	</blockquote>
-	</li>
-	<li>
-	<b>Hello</b>
-	<br>
-	rene[at]<i><b>-remove-</b></i>blossombeauty.us
-	- Rene Walczak Indy
-	<br>
-	14Feb2019 6:19 PM
-	(4 years 271 days  ago)
-	<blockquote>
-		Will always find my way back JBC  Rosemary Davis where E U?  Cheers Pat!
-	</blockquote>
-	</li>
-	<li>
-	<b>Reviews on AllMusic</b>
-	<br>
-	emailaddyshows[at]howcomeitdoesthat
-	- Justanotherdarnedex-critic, Somewhere USA
-	<br>
-	21Sep2018 4:32 AM
-	(5 years 52 days  ago)
-	<blockquote>
-		Was looking through your website and noticed you didn&#39;t have links to reviews at the AllMusic website for your albums. The ones there are generally very positive, so you might want to do so. I wrote some of them, so I should know... BTW, love most of your stuff I&#39;ve encountered (though have only heard through &#34;Cult of the Basement&#34;&#41;, with &#34;Scandal in Bohemia&#34; being my favorite -- truly fine stuff. Here&#39;s a link to that review:<br/>
-<br/>
-https://www.allmusic.com/album/a-scandal-in-bohemia-mw0000017476<br/>
-<br/>
-You might be aware of them, but if not, you may want to take a look. Best wishes!
-	</blockquote>
-	</li>
-	<li>
-	<b>Wasted Years CD&#39;s</b>
-	<br>
-	johnnybrew[at]<i><b>-remove-</b></i>comcast.net
-	- John  Hall (Indianapolis&#41;
-	<br>
-	12Jan2018 1:49 PM
-	(5 years 304 days  ago)
-	<blockquote>
-		I am curious if the Wasted years re-issue have been remastered/remixed or whatever.  I already own all these discs, though my copy of Big Planet/Scarey Planet has a very annoying skip during one of the songs.  I also thought the vocal tracks on that album were a little muddy or surpressed.<br/>
-<br/>
-Always happy to send some cash Pats way. His music has lifted my life for over a quarter century. (That&#39;s Big Scary&#41;.<br/>
-<br/>
-Pat, I am the same brewer from Chicago you met on the 2000 tour.  Still brewing and playing your music in the brewery every chance I get.
-	</blockquote>
-	</li>
-	<li>
-	<b>jumping</b>
-	<br>
-	matthewbrunswick[at]<i><b>-remove-</b></i>gmail.com
-	- Matthew Melbourne
-	<br>
-	26Dec2017 6:26 PM
-	(5 years 321 days  ago)
-	<blockquote>
-		My two year old daughter got so excited dancing to &#34;Looking for Lot 49&#34; that she jumped into the air for the first time ever.<br/>
-<br/>
-Thanks!
-	</blockquote>
-	</li>
-	<li>
-	<b>gig</b>
-	<br>
-	les.guillaume[at]<i><b>-remove-</b></i>club-internet.fr
-	- Pierre Guillaume Brussey
-	<br>
-	20Oct2017 12:04 AM
-	(6 years 23 days  ago)
-	<blockquote>
-		Hello, is there a jazzbutcher gig for every day of the year...?
-	</blockquote>
-	</li>
-	<li>
-	<b>Good time had ATLANTA festival</b>
-	<br>
-	apples_1215[at]<i><b>-remove-</b></i>yahoo.com
-	- BRENDA Atlanta Georgia
-	<br>
-	28May2017 4:44 PM
-	(6 years 168 days  ago)
-	<blockquote>
-		Sounds were great temperature is just  right   Wonderful night in downtown Atlanta
-	</blockquote>
-	</li>
-	<li>
-	<b>re:Washington DC</b>
-	<br>
-	liseroussel[at]<i><b>-remove-</b></i>yahoo.ca
-	- Lise Toronto
-	<br>
-	11May2017 3:57 AM
-	(6 years 185 days  ago)
-	<blockquote>
-		Hi Pat,<br/>
-<br/>
-Just wondering if you have written any songs about the fiascoes happening in Washington DC?  I think you would be the perfect laureate to comment on these dark days. I read this morning that press secretary Sean Spicer was hiding in the bushes to try to avoid reporters. Alas, it has come to this!
-	</blockquote>
-	</li>
-	<li>
-	<b>Submitted for Pats&#39; consideration</b>
-	<br>
-	Pursuedbyemail[at]<i><b>-remove-</b></i>gmail.com
-	- Pursued By Trees (Cornwall, UK&#41;
-	<br>
-	7Feb2017 6:19 AM
-	(6 years 278 days  ago)
-	<blockquote>
-		What are the chances of visiting a Jazz Butcher memoir upon the literary world?<br/>
-<br/>
-Is this something that you might consider undertaking either as a solo project, or perhaps collectively/collaboratively with your fellow and former conspirators?<br/>
-<br/>
-I reckon that this would make for an entertaining and enlightening read, and possibly another great crowd-funded project.
-	</blockquote>
-	</li>
-	<li>
-	<b>Perpetual gratitude</b>
-	<br>
-	pressaccofowlow[at]<i><b>-remove-</b></i>gmail.com
-	- Old Andrew
-	<br>
-	11Jan2017 10:11 PM
-	(6 years 304 days  ago)
-	<blockquote>
-		Lads, just another ardent fan thanking you for all the years of sublimely beautiful and odd music. Kitchen dancing, playing bicycle kid for my wee ones, litmus test for potential friends. The joy I feel when I play anything truly gives me hope for these dreadful times. Thank you for everything
-	</blockquote>
-	</li>
-	<li>
-	<b>Dunkin Bagel?</b>
-	<br>
-	doc6502[at]<i><b>-remove-</b></i>yahoo.com
-	- Doc, Chicago
-	<br>
-	18Nov2016 7:46 AM
-	(6 years 359 days  ago)
-	<blockquote>
-		I love this version:  https://www.youtube.com/watch?v=n3RYcPySxE4
-	</blockquote>
-	</li>
-	<li>
-	<b>Paris</b>
-	<br>
-	dufourelisa[at]<i><b>-remove-</b></i>free.fr
-	- jean michel Paris
-	<br>
-	16May2016 1:53 PM
-	(7 years 180 days  ago)
-	<blockquote>
-		Happy to see that the Jazz butcher quartet is on the road again<br/>
-<br/>
-<br/>
-We&#39;re waiting for you Pat !
-	</blockquote>
-	</li>
-	<li>
-	<b>abus dangereux</b>
-	<br>
-	les.guillaume[at]<i><b>-remove-</b></i>club-internet.fr
-	- Pierre Guillaume Brussey
-	<br>
-	9May2016 6:22 AM
-	(7 years 187 days  ago)
-	<blockquote>
-		3 cheers for Abus Dangereux, french magazine who has very good taste with his interview of Mr Fish: 2 pages, one colour photo and one song (animals&#41; on the CD sampler offered with every magazine !
-	</blockquote>
-	</li>
-	<li>
-	<b>steve garofalo</b>
-	<br>
-	les.guillaume[at]<i><b>-remove-</b></i>club-internet.fr
-	- Pierre Guillaume
-	<br>
-	25Mar2016 5:25 AM
-	(7 years 232 days  ago)
-	<blockquote>
-		So sorry for this loss even if I didn&#39;t know him and I didn&#39;t saw him play with you...!!!
-	</blockquote>
-	</li>
-	<li>
-	<b>New Album</b>
-	<br>
-	thomastomasska[at]<i><b>-remove-</b></i>gmail.com
-	- Thomas Tomasska: Gloucestershire
-	<br>
-	16Feb2016 8:28 AM
-	(7 years 270 days  ago)
-	<blockquote>
-		FANTASTIC NEWS!!! <br/>
-<br/>
-Condition no longer blue!
-	</blockquote>
-	</li>
-	<li>
-	<b>Fire Records</b>
-	<br>
-	EchoBmen[at]<i><b>-remove-</b></i>GMail.com
-	- Mark R, Brooklyn, NY
-	<br>
-	4Dec2015 3:13 AM
-	(7 years 344 days  ago)
-	<blockquote>
-		Great news on your deal with Fire.  Better a deal with Fire than to play with it.  Long time fan, and while my CD version of GENTLEMAN ADVENTURERS will do, I am so happy that your stuff will soon be available once again -- that once the re-releases happen.  I guess I&#39;ll have to take down my duplicate CD copy of FISHCOTHEQUE from Amazon, which is posted at &#36;100+.  THAT&#39;S how happy I am.<br/>
-<br/>
-Looking forward to a new record from you.
-	</blockquote>
-	</li>
-	<li>
-	<b>Reissues?</b>
-	<br>
-	doc6502[at]<i><b>-remove-</b></i>yahoo.com
-	- Doc, Chicago
-	<br>
-	23Nov2015 9:05 AM
-	(7 years 355 days  ago)
-	<blockquote>
-		After all this time, Fire finally got itself together. This does, of course, call for a tour of the US.
-	</blockquote>
-	</li>
-	<li>
-	<b>New JBQ recordings.</b>
-	<br>
-	drop[at]<i><b>-remove-</b></i>aapt.net.au
-	- Phillip Lewis, Kuranda, Australia
-	<br>
-	2Nov2015 3:28 AM
-	(8 years 11 days  ago)
-	<blockquote>
-		Delighted to hear the news of any new Jazz Butcher material. Congratulations guys. If you do rerelease Big Planet I won&#39;t need to buy a turntable.
-	</blockquote>
-	</li>
-	<li>
-	<b>re-releases and new music</b>
-	<br>
-	john[at]<i><b>-remove-</b></i>5rabbitbrewery.com
-	- John Hall  Chicago illinois
-	<br>
-	8Oct2015 4:04 PM
-	(8 years 36 days  ago)
-	<blockquote>
-		Wonderful news!  I had a lot of fun in the past hunting down your out of print CD&#39;s through E-Bay.  I would have rather given the money directly to you.  Any re-mastering or re-mixing planned?  Always loved &#34;Big Planet, Scarey Planet&#34;, but thought it sounded a little &#39;muddy&#39;.  Pardon the technical jargon.   Can&#39;t wait to put some cash in your coffers.
-	</blockquote>
-	</li>
-	<li>
-	<b>Vinyl Gentleman/New Jazz Butcher Quartet Album</b>
-	<br>
-	h2ofuego[at]<i><b>-remove-</b></i>yahoo.com
-	- Jimmy  Hollywoodland
-	<br>
-	2Oct2015 2:04 PM
-	(8 years 42 days  ago)
-	<blockquote>
-		Seconded! Just landed from Hawaii and I must admit this is Great, Great news!! I&#39;ve been eagerly awaiting the Vinyl release of &#34;Last of The Gentleman Adventurers&#34; since it was 1st proposed and of course eagerly anticipating any recordings &#34;The Jazz Butcher Quartet&#34; since they began performing! The holidays are a comin&#39;! Thank you, for the great news Pat!! Let&#39;s see if I can&#39;t get back over to that side of the pond sometime in the near future! Missin&#39; ya, from Hollywoodland, Jimmy D.
-	</blockquote>
-	</li>
-	<li>
-	<b>great news</b>
-	<br>
-	les.guillaume[at]<i><b>-remove-</b></i>club-internet.fr
-	- Pierre Guillaume Brussey
-	<br>
-	30Sep2015 11:38 AM
-	(8 years 44 days  ago)
-	<blockquote>
-		great great news...!!
-	</blockquote>
-	</li>
-	<li>
-	<b>la mer sur France inter</b>
-	<br>
-	les.guillaume[at]<i><b>-remove-</b></i>club-internet.fr
-	- Pierre Guillaume Brusser
-	<br>
-	22Aug2015 6:55 AM
-	(8 years 83 days  ago)
-	<blockquote>
-		This morning at quarter to 9, I have heard &#34;La mer&#34; on the french radio France Inter...Very emotionnal...Here is the link:<br/>
-<br/>
-http://www.franceinter.fr/emission-la-langue-a-loreille-vive-les-bananes<br/>
-<br/>
-Rare enough to be told...!!
-	</blockquote>
-	</li>
-	<li>
-	<b>Your attendance is requested.</b>
-	<br>
-	peter[at]<i><b>-remove-</b></i>thebicycle.ca
-	- Peter Reitzel, Flesherton Ontario Canada
-	<br>
-	20Jun2015 11:31 AM
-	(8 years 146 days  ago)
-	<blockquote>
-		In Canada.<br/>
-Particularly Flesherton.<br/>
-What do you say?
-	</blockquote>
-	</li>
-	<li>
-	<b>sud-ouest</b>
-	<br>
-	les.guillaume[at]<i><b>-remove-</b></i>club-internet.fr
-	- Pierre Guillaume - Franche ComtÃ©
-	<br>
-	17May2015 2:37 PM
-	(8 years 180 days  ago)
-	<blockquote>
-		De retour en France...!<br/>
-Les gens du sud-ouest sont de sacrÃ©s chanceux...!!!
-	</blockquote>
-	</li>
-	<li>
-	<b>k b</b>
-	<br>
-	stephen[at]<i><b>-remove-</b></i>vardihowe.com
-	- Stephen Howe, Oxford
-	<br>
-	6Apr2015 10:52 PM
-	(8 years 220 days  ago)
-	<blockquote>
-		You may well long have known this - if so sorry for repetition and for â€˜re-bringingâ€™ old bad news â€“ but I only just learned that KB Mensah died on NY Eve in Ghana. I see he&#39;s mentioned somewhere on this site, as an old school/college friend of several JB-linked musicians.<br/>
-<br/>
-He and I had remained good friends, though latterly only getting together occasionally, when we were both in London (heâ€™d been living back in Ghana for some years&#41; â€“ he always made a real effort to stay in touch.<br/>
-<br/>
-So many good (albeit, from the earliest days, often stoned&#41; memories of him, so often revolving also around music, from listening to reggae and jazz in his Oxford rooms to going together, later, in London to hear everything from Louis Moholo and other visiting Africans to various latterday manifestations of the Institution/Random Hold/Jazz Butcher â€˜familyâ€™â€¦ I wish the attached could show, and let me hear again, his laugh.<br/>
-<br/>
-Stephen
-	</blockquote>
-	</li>
-	<li>
-	<b>Gutted</b>
-	<br>
-	gregoryoung[at]<i><b>-remove-</b></i>shaw.ca
-	- Gregor
-	<br>
-	13Aug2014 1:04 AM
-	(9 years 92 days  ago)
-	<blockquote>
-		I&#39;ll be in London Aug 15-17 and then again Aug 25-27. Came here fingers crossed to maybe see if there was a show in Northampton I could make my way too and now see I&#39;ll miss three full JBC shows by a matter of days. Great to see you playing again but shaking my head at my unfortunate timing
-	</blockquote>
-	</li>
-	<li>
-	<b>The Last of the Gentlemen Adventurers</b>
-	<br>
-	doc6502[at]<i><b>-remove-</b></i>yahoo.com
-	- Doc, Chicago
-	<br>
-	11Mar2014 8:14 PM
-	(9 years 246 days  ago)
-	<blockquote>
-		Lads<br/>
-<br/>
-I confess, I had no small amount of trepidation approaching the new record.  Indeed, I&#39;ve had it in my possession for a year and I just completed the third listening.  <br/>
-<br/>
-Since the JBC hits me on a basic emotional level (even the funny stuff, always has done&#41;, I worry about the releases from my favorite artists as I age exponentially.  It&#39;s not doubt, it&#39;s just wondering where this communique will fit in the cupboard of things near and dear to me.  Either there&#39;s less space in there, or there are more items in store than I&#39;d care to admit.  <br/>
-<br/>
-I needn&#39;t have worried.  This is a wonderful record.  I&#39;ll spare you my nonsense re: what I like and why. <br/>
-<br/>
-Thanks for realizing you had another one in you and getting it out the door.  <br/>
-<br/>
-doc6502<[at]<i><b>-remove-</b></i>at[at]<i><b>-remove-</b></i>>yahoo.com.
-	</blockquote>
-	</li>
-	<li>
-	<b>Calgary High Performance Rodeo</b>
-	<br>
-	richp20[at]<i><b>-remove-</b></i>hotmail.com
-	- Rich from Canada
-	<br>
-	22Feb2014 8:16 AM
-	(9 years 264 days  ago)
-	<blockquote>
-		Just wanted to follow up on the invitation for The JBC to play at Calgary&#39;s well respected High Performance Rodeo.  I am not a good friend of Michael (though we have met a few times&#41; but I have attended many events at The High Performance Rodeo and at One Yellow Rabbit theatre and can vouch for the wonderful festival and concur that you would be a wonderful fit.  I have sent several messages on this board requesting for you guys to return to Calgary for a live show or two.  This might be the best way and venue to make it happen.  Please bring Max with you!  I enjoyed your last couple of shows here in town but it has been way too long and we need you back!  Love the new album!
-	</blockquote>
-	</li>
-	<li>
-	<b>My brother&#39;s mix</b>
-	<br>
-	msclafani[at]<i><b>-remove-</b></i>yahoo.com
-	- Mike from Bronx, NY
-	<br>
-	23Jan2014 5:49 PM
-	(9 years 294 days  ago)
-	<blockquote>
-		So twenty-one years ago, my brother passed away.  When going through his things, I found a mix tape of great songs with no tracklisting.  It took me twenty-one years, but I finally identified the last two songs: Olof Palme, and the up-tempo version of Southern Mark Smith that appears on Gift of Music.<br/>
-<br/>
-Unfortunately, I cannot find a digital version of either song.  Is there anyone who can help me? I&#39;m more than willing to pay.  This would be of great emotional importance to me.
-	</blockquote>
-	</li>
-	<li>
-	<b>Merry Xmas La Mer 2012</b>
-	<br>
-	h2ofuego[at]<i><b>-remove-</b></i>yahoo.com
-	- Jimmy Duval
-	<br>
-	26Dec2013 9:04 PM
-	(9 years 321 days  ago)
-	<blockquote>
-		Wishing A Very Happy Xmas (albeit a day late&#41; to The JBC (Pat, Max, Johnny and Tim&#41; and to all the gentlefolk out there! Many thanks for the Xmas surprise, &#34;Gents&#34;!! I&#39;ve had La Mer 2012 on constant repeat (along with the &#34;The Last of The English Gentleman&#34; and the recently acquired Curtis E Johnson&#39;s &#34;The Compleat Unknown&#34;&#41;. Adding a little spice into the Xmas festivities. An utterly unexpected and absolutely marvelous surprise treat for the holiday season! Happy to New Year to all!!
-	</blockquote>
-	</li>
-	<li>
-	<b>High Performance Rodeo</b>
-	<br>
-	mgreen[at]<i><b>-remove-</b></i>hprodeo.ca
-	- Michael, Calgary, Canada
-	<br>
-	1Dec2013 3:16 PM
-	(9 years 347 days  ago)
-	<blockquote>
-		Hello Jazz Butchers, would you ever consider coming to Calgary to feature in our annual festival of the arts, High Performance Rodeo? Check it out, youâ€™d be in good company: www.hprodeo.ca Calgary still misses you. And, Iâ€™d be delighted to host you. Please take this invitation seriously, and with affection.
-	</blockquote>
-	</li>
-	<li>
-	<b>Lou Reed</b>
-	<br>
-	cheeso65[at]<i><b>-remove-</b></i>yahoo.com
-	- Cheeso, Alhambra, CA
-	<br>
-	27Oct2013 4:46 PM
-	(10 years 17 days  ago)
-	<blockquote>
-		Play Sweet Jane and Over You for Lou today, Butch.<br/>
-<br/>
-RIP Lou
-	</blockquote>
-	</li>
-	<li>
-	<b>Love Kittens</b>
-	<br>
-	wkmccann[at]<i><b>-remove-</b></i>gmail.com
-	- Will, Richmond, Virginia, USA
-	<br>
-	27Sep2013 10:40 AM
-	(10 years 47 days  ago)
-	<blockquote>
-		My children are 8 and 10, girl and boy respectively.  My wife sings with a chorus on Monday nights, so I&#39;m with them exclusively those evenings.  This past Monday I told them if they brushed their teeth and got ready for bed extra quickly, I&#39;d play them a special song.  They raced through their evening ritual and came down to the living room, whereupon I played &#34;Love Kittens&#34; at a substantial volume.  (This song drives their mother up the wall, you understand, so I can only play it on Mondays when she&#39;s gone.&#41;  They laughed out loud, danced around the room, and mimed the saxophone solo.  Then they asked me to play it again and again, trying to keep up with the introductory &#34;meows&#34; and pantomiming &#34;only six inches tall...&#34;  A great time was had by three.  Thought you&#39;d like to know you brought quite a lot of joy to two little kids.  <br/>
-<br/>
-Thanks for all the music.
-	</blockquote>
-	</li>
-	<li>
-	<b>Toronto</b>
-	<br>
-	zevon65[at]<i><b>-remove-</b></i>mac.com
-	- zevon65
-	<br>
-	10Sep2013 5:53 PM
-	(10 years 64 days  ago)
-	<blockquote>
-		Please come to Toronto, we need you here! In the 80s I was a field geologist in the wilds of Northern Canada where your music, particularly Partytime, saved our little group of explorers from killing our boss and/or going completely batty. I thank you for that, but I never got a chance to see you play in person.<br/>
-The new CD is amazing and I finally found a way to order Sumosonic and Waiting for the Love Bus. Happy days!
-	</blockquote>
-	</li>
-	<li>
-	<b>thank gawd</b>
-	<br>
-	shortatthefront[at]<i><b>-remove-</b></i>hotmail.com
-	- c austin canada
-	<br>
-	7Jul2013 7:43 PM
-	(10 years 129 days  ago)
-	<blockquote>
-		&#34;bloody nonsense&#39; came out when everyone took themselves too seriously and had no tunes. JBC had tunes and a sense of humour. even in the barren wastes of Canaday it was apparent something was up. Cheers. Wish I could go to the pub with you.
-	</blockquote>
-	</li>
-	<li>
-	<b>I don&#39;t need no Ford Fiesta</b>
-	<br>
-	Jquinn14[at]<i><b>-remove-</b></i>me.com
-	- Jq
-	<br>
-	15Jun2013 10:12 PM
-	(10 years 150 days  ago)
-	<blockquote>
-		I have such fond memories of Human Jungle. Just listening to my old vinyl again  and pulled out Human Jungle EP. Wonderful.  Please share the chords so I can butcher it myself. Love the JB. Come to  Toronto again    I saw u in 87 I think. At  RPM. Cheers jq
-	</blockquote>
-	</li>
-	<li>
-	<b>I don&#39;t need no Ford Fiesta</b>
-	<br>
-	Jquinn14[at]<i><b>-remove-</b></i>me.com
-	- Jq
-	<br>
-	15Jun2013 10:12 PM
-	(10 years 150 days  ago)
-	<blockquote>
-		I have such fond memories of Human Jungle. Just listening to my old vinyl again  and pulled out Human Jungle EP. Wonderful.  Please share the chords so I can butcher it myself. Love the JB. Come to  Toronto again    I saw u in 87 I think. At  RPM. Cheers jq
-	</blockquote>
-	</li>
-	<li>
-	<b>Round Table</b>
-	<br>
-	andyc[at]<i><b>-remove-</b></i>hiphop.com
-	- Andy, Cambridge
-	<br>
-	31May2013 5:27 AM
-	(10 years 166 days  ago)
-	<blockquote>
-		Quick note: Art Brut&#39;s Eddie Argos bigged up the Butcher on last night&#39;s Round Table on BBC6 Music. Listen here: http://www.bbc.co.uk/programmes/b01xpy4p<br/>
-<br/>
-ACx<br/>
-<br/>
-PS: Can&#39;t wait for the UK dates.
-	</blockquote>
-	</li>
-	<li>
-	<b>AAAAAAUUUUGHGHGHGHGHGHG</b>
-	<br>
-	doc6502[at]<i><b>-remove-</b></i>yahoo.com
-	- Doc, Chicago
-	<br>
-	24May2013 10:19 AM
-	(10 years 173 days  ago)
-	<blockquote>
-		So.  You&#39;re there the weekend AFTER PopFest?  Dammittohell.
-	</blockquote>
-	</li>
-	<li>
-	<b>The Jazz Butcher and Sonic Boom</b>
-	<br>
-	cheeso65[at]<i><b>-remove-</b></i>yahoo.com
-	- David, Alhambra, CA
-	<br>
-	23May2013 8:38 AM
-	(10 years 174 days  ago)
-	<blockquote>
-		Hey Pat, I had a dream that the Jazz Butcher made a psychedelic album with Sonic Boom. It was all fuzz guitars, tremolo, and synthesizer. And glorious! Do it!
-	</blockquote>
-	</li>
-	<li>
-	<b>Southern Mark Smith is a great song</b>
-	<br>
-	headhoncho[at]<i><b>-remove-</b></i>vatican.va
-	- Jorge Mario Bergoglio
-	<br>
-	13Mar2013 1:10 PM
-	(10 years 245 days  ago)
-	<blockquote>
-		Thousands of people are queueing in the rain to meet the Pope (meet the Pope, meet the pope, meet the Pope&#41; Francis I
-	</blockquote>
-	</li>
-	<li>
-	<b>Priceless</b>
-	<br>
-	annavulpe[at]<i><b>-remove-</b></i>talk21.com
-	- Kittrnchops
-	<br>
-	2Mar2013 6:09 PM
-	(10 years 256 days  ago)
-	<blockquote>
-		&#39;You&#39;ve got to have a plan in the back of the van&#39;...essential x
-	</blockquote>
-	</li>
-	<li>
-	<b>Wilson DVD</b>
-	<br>
-	decibel_hell[at]<i><b>-remove-</b></i>hotmail.com
-	- Duncan Disorderly
-	<br>
-	28Dec2012 6:20 PM
-	(10 years 320 days  ago)
-	<blockquote>
-		When will the Wilson DVD be available for purchase in the U.S.A.?<br/>
-Thank you.<br/>
-- Duncan
-	</blockquote>
-	</li>
-	<li>
-	<b>overseas purchase</b>
-	<br>
-	dmwha[at]<i><b>-remove-</b></i>yahoo.ca
-	- Dan Whalen
-	<br>
-	21Dec2012 8:17 PM
-	(10 years 326 days  ago)
-	<blockquote>
-		Oooops. never mind. Purchase completed! I didn&#39;t see the country choice... at the very top !
-	</blockquote>
-	</li>
-	<li>
-	<b>Overseas purchase</b>
-	<br>
-	dmwha[at]<i><b>-remove-</b></i>yahoo.ca
-	- Dan Whalen
-	<br>
-	21Dec2012 7:27 PM
-	(10 years 327 days  ago)
-	<blockquote>
-		Seems your PayPal only processes UK orders. Tripped up at the counties section and no other options.<br/>
-What&#39;s a feller to do?
-	</blockquote>
-	</li>
-	<li>
-	<b>Love The New Album</b>
-	<br>
-	wally[at]<i><b>-remove-</b></i>thebeautifulmusic.com
-	- Wally
-	<br>
-	16Dec2012 9:19 PM
-	(10 years 331 days  ago)
-	<blockquote>
-		I&#39;m really enjoying the new album - well done to you and Max and the rest of the band - you still have that magic touch and the sense of humour. Thanks so much!!!<br/>
-<br/>
-All the best with the upcoming show - wish I could make it but not likely this time - I see you may do a few covers so maybe one day I can get you to play that Television Personalities cover and record it.
-	</blockquote>
-	</li>
-	<li>
-	<b>I&#39;M-SO-EXCITED-NEW-ALBUM-YAY!!!!</b>
-	<br>
-	pamm77[at]<i><b>-remove-</b></i>telus.net
-	- Pam in Vancouver
-	<br>
-	15Dec2012 2:02 PM
-	(10 years 333 days  ago)
-	<blockquote>
-		Logged in today after missing a few months to find THE NEW ALBUM HAS BEEN RELEASED!!!! So sorry I didn&#39;t help with production costs, but have purchased my quota of album (quantities limited, so only 1 per :(  &#41;. Christmas has indeed come early, and can&#39;t wait for the CD to arrive! My ears are tingling with anticipation. Thank you, Pat (and everyone else involved&#41;. Would love to see you on the West Coast again....maybe we can help with touring costs???!? Here&#39;s to the possibilites of 2013!
-	</blockquote>
-	</li>
-	<li>
-	<b>ETA for CD?</b>
-	<br>
-	tripecac[at]<i><b>-remove-</b></i>gmail.com
-	- Travis (NZ&#41;
-	<br>
-	1Dec2012 10:02 AM
-	(10 years 347 days  ago)
-	<blockquote>
-		Any chance of a release of the new CD before Xmas?
-	</blockquote>
-	</li>
-	<li>
-	<b>new album</b>
-	<br>
-	dufourelisa[at]<i><b>-remove-</b></i>free.fr
-	- jean michel (Paris&#41;
-	<br>
-	28Nov2012 12:49 PM
-	(10 years 350 days  ago)
-	<blockquote>
-		i got it !<br/>
-i listened to it !<br/>
-Beautiful songs Pat !<br/>
-You welcome in Paris to sing &#34;tombÃ© dans les pommes&#34; <br/>
-<br/>
-Jazz Butcher will never die !!!!!
-	</blockquote>
-	</li>
-	<li>
-	<b>DJ Liam Fish</b>
-	<br>
-	andyzed1[at]<i><b>-remove-</b></i>yahoo.co.uk
-	- Andy Z
-	<br>
-	16Nov2012 4:28 PM
-	(10 years 362 days  ago)
-	<blockquote>
-		Pat,<br/>
-Wanted to a&#41; thank you again for pulling together an amazing night tonight. Liams beautiful, breathy melodies were a revelation, and I will be looking him up when I can. And David J has no doubt been on and off the majority of tonight&#39;s attendees record players/ tape decks/ cd players/ mp3 thingies for the past 30 years. When you think you know what to expect from someone you have grown up with, you get hit with an extraordinary show, such as was put on tonight, marvellously accompanied by Michael Berg. and b&#41; I wanted to apologise for nicking off after you kindly went to find me a cd! I did lurk about for a while, until the call of nature took over both of us. Feel bad now for incurring you unneccesary postage costs! If you are ever passing, do pop it through the letter box, or better still..... pop in for a brew.<br/>
-THANKS again for organising tonight. A very special night for everyone in attendance!!!
-	</blockquote>
-	</li>
-	<li>
-	<b>Them Butchers</b>
-	<br>
-	thebutcher[at]<i><b>-remove-</b></i>imadeitup.net
-	- pat fish
-	<br>
-	14Nov2012 6:35 AM
-	(10 years 364 days  ago)
-	<blockquote>
-		The &#34;Jazz Butchers&#34; appear to be a young, serious jazz band from the Los Angeles area. I believe that they have one album out at the moment. I also believe that the first of &#34;our&#34; Jazz Butcher records was almost certainly released before any of the members of this jazz band were actually born. So I&#39;m rather looking forward to an irate letter from their management, asking us to change our band name.<br/>
-<br/>
-We shall see...
-	</blockquote>
-	</li>
-	<li>
-	<b>&#34;the jazz butchers&#34;</b>
-	<br>
-	juan234329[at]<i><b>-remove-</b></i>msn.com
-	- John Hansen Buffalo, New York
-	<br>
-	13Nov2012 5:20 PM
-	(11 years 2 hours  ago)
-	<blockquote>
-		HiPat,<br/>
- Best of luck with the new release, I looked for it on Amazon today, hoping maybe the CD&#39;S were hitting the rack.<br/>
-  While there I found something by a group called &#34; The Jazz Butchers&#34;, I clicked on the 1st MP3 sample, it&#39;s some jazz-rock fission thing. <br/>
-Are you aware of this group? Are they compensating you for the use of the name? What gives?
-	</blockquote>
-	</li>
-	<li>
-	<b>release</b>
-	<br>
-	thebutcher[at]<i><b>-remove-</b></i>noyadont.tv
-	- Pat Fish, NN1
-	<br>
-	21Oct2012 11:31 PM
-	(11 years 22 days  ago)
-	<blockquote>
-		Hi Everybody,<br/>
-<br/>
-Just to say that the download release for pledgers has happened, but the hard copy CDs will take a week or two more before they are available.<br/>
-We&#39;ll be sure to let you know when and where you can order them. Digital release via i-tunes and so forth will follow shortly after that.<br/>
-Best regards,<br/>
-Pat x
-	</blockquote>
-	</li>
-	<li>
-	<b>order/download of new JB</b>
-	<br>
-	salvi-stefano[at]<i><b>-remove-</b></i>libero.it
-	- Stefano - Italy
-	<br>
-	21Oct2012 6:45 PM
-	(11 years 23 days  ago)
-	<blockquote>
-		Dear Butcher,<br/>
-in the pledgemusic.com section it is not possible to order or download the new album.<br/>
-Please , how can I get it??<br/>
-Thanx,<br/>
-stefano
-	</blockquote>
-	</li>
-	<li>
-	<b>Last Of The Gentleman Adventurers</b>
-	<br>
-	h2ofuego[at]<i><b>-remove-</b></i>yahoo.com
-	- Jim Duval
-	<br>
-	20Oct2012 7:59 AM
-	(11 years 24 days  ago)
-	<blockquote>
-		Alright, Gentlefolks, it&#39;s finally here THE JAZZ BUTCHER CONSPIRACY - LAST OF THE GENTLEMAN ADVENTURERS and I can&#39;t believe no one has commented here on the new album yet! I guess it has only been a few days but still, it has been on constant rotation (house, auto, bus, train, and on foot&#41; with this individual since it&#39;s groundbreaking launch at 4pm PST Oct 18, 2012 and I must add, &#34;It&#39;s quite the perfect album, indeed!&#34; After 30 years Pat, Max and co. have pulled out all the stops to bring us what can simply and truly be called the album Of The Year!! I&#39;ve been in contact with all the usual JBC fan conspirators and I know they&#39;ll agree...do yourselves a tremendous favor and pick yourselves up a copy or 3!! Pat & Max are already gearing up for a few gigs in Japan in early Dec.!! Let&#39;s see what we can do about bringing them west across the pond for a little North American action!!! To the future kind Gentlefolks. with much Love & Respect, ~Jim
-	</blockquote>
-	</li>
-	<li>
-	<b>general adulation</b>
-	<br>
-	paulmcgu[at]<i><b>-remove-</b></i>gmail.com
-	- paul mcguire los angeles
-	<br>
-	29Jun2012 6:49 PM
-	(11 years 137 days  ago)
-	<blockquote>
-		Dear JB,<br/>
-Discovered you via LA radio KXLU late 80s.  Bought Hey America I Slept Your Wife LP. Genius.  Been listening to my cassette i taped off elpee of Planet.  What a MASTERPIECE.  <br/>
-<br/>
-Just ordered and received (took me few decades to catch up sorry&#41; Condition Blue, Glorioius and more.  Put CB on and heard Shes a YoYo for first time.  WOW.  As exhilarating a pop song as i have ever heard up there with i Got A Line on you by SPirit.  Played it 15 times today.  No kidding.  Somehow missed tours.  53 year old Hollywood exec in LA.  You should be opening for Stranglers (Giants in more ways than one&#41; next tour.  <br/>
-<br/>
-Anyway just wanted to say f-ing great music.  The Devil Is My Friend indeed.<br/>
-<br/>
-pm
-	</blockquote>
-	</li>
-	<li>
-	<b>Looking for glass era cds (I know I am not alone&#41;</b>
-	<br>
-	richp20[at]<i><b>-remove-</b></i>hotmail.com
-	- Rich from Canada
-	<br>
-	29Jun2012 2:13 PM
-	(11 years 137 days  ago)
-	<blockquote>
-		Howdy Folks!<br/>
-I am a longtime JBC fan.  I had the great pleasure of seeing Pat and friends several times here in Canada.  Good times.  I am also a big music collector and though I spend a great deal of time snooping the corners of the internet and cd shops all over the world I am still without a CD of In Bath Of Bacon, Big Questions Gift of Music vol 2 and the live Hamburg glass era cds.  I NEED them in my collection on cd.  I have them on vinyl and have ripped them to cd but it just ain&#39;t the same.  I have plenty of extra rare JBC to trade ( an extra Scandal In Bohemia / Sex and Travel glass era CD in mint&#41; plus a ton of extra rare jbc vinyl.  It is criminal that this wonderful music is largely out of print.  Anyone want to trade or sell me the goodies I need.  Mr. Fish, is there no chance of future re-issues?  Also while I am voicing my sob stories, why has Grooving In The Bus Lane (Bloody Nonsense version&#41; been released on cd?  Anywho, I just thought I would express my love for all eras of Jazz Butcher material and throw in a rude complaint or two.  Can&#39;t wait to hear more new stuff.  I have Max&#39;s recent cds as well as the new Pat tracks on the Northhampton cd, but do sign me up for more new cds and I would like to second someone else&#39;s suggestion of a fan funded project.  That might be the way to get reissues off the ground too.  Don&#39;t ask mw what I paid for some of my glass era cds on ebay.  Yikes!!!!<br/>
-Cheers All,<br/>
-Rich<br/>
-Calgary, Alberta, Canada<br/>
-richp20[at]<i><b>-remove-</b></i>hotmail.com
-	</blockquote>
-	</li>
-	<li>
-	<b>If I Can Help</b>
-	<br>
-	wally[at]<i><b>-remove-</b></i>thebeautifulmusic.com
-	- Wally
-	<br>
-	26May2012 10:16 AM
-	(11 years 171 days  ago)
-	<blockquote>
-		Let me know if I can help spread the word about your new stuff and get your new songs released - i&#39;m sure there will be many people interested.<br/>
-<br/>
-Wally<br/>
-www.thebeautifulmusic.com
-	</blockquote>
-	</li>
-	<li>
-	<b>IT LIVES!</b>
-	<br>
-	jdvf[at]<i><b>-remove-</b></i>optonline.net
-	- Foonon, New England
-	<br>
-	26May2012 4:47 AM
-	(11 years 171 days  ago)
-	<blockquote>
-		Found in my inbox today: <br/>
-<br/>
-The corpse of the Jazz Butcher seems to be twitching. If you&#39;re interested, please sign up for the Jazz Butcher Facebook page (it says here&#41; and await instructions.<br/>
-<br/>
-http://www.facebook.com/pages/the-Jazz-Butcher/382453195016<br/>
-<br/>
-Lovely in Frinton this time of year.<br/>
-<br/>
-Augustus Pokerback<br/>
-Supremo
-	</blockquote>
-	</li>
-	<li>
-	<b>New album?</b>
-	<br>
-	pursuedbyemail[at]<i><b>-remove-</b></i>btopenworld.com
-	- Pursued By Trees - Midlands UK
-	<br>
-	26May2012 4:16 AM
-	(11 years 171 days  ago)
-	<blockquote>
-		&#34;I&#39;ve got a good album&#39;s worth of new and unreleased stuff. I wonder what happens now...&#34;<br/>
-<br/>
-You set up a page somewhere like pledgemusic or kickstarter, let it be known here and we fund it for you!  This in return for a signed advance copy or something of that order.  Sound like an idea?<br/>
-<br/>
-Love & Affection<br/>
-<br/>
-PBT
-	</blockquote>
-	</li>
-	<li>
-	<b>Copy of Reunion Tour CD</b>
-	<br>
-	liseroussel[at]<i><b>-remove-</b></i>yahoo.ca
-	- Lise, Toronto
-	<br>
-	9Mar2012 3:57 PM
-	(11 years 249 days  ago)
-	<blockquote>
-		Hi David,<br/>
-<br/>
-I would be delighted to get a cd copy of the show! My e-mail is liseroussel[at]<i><b>-remove-</b></i>yahoo.ca. Looking forward to hearing from you!<br/>
-<br/>
-kind regards,<br/>
-Lise
-	</blockquote>
-	</li>
-	<li>
-	<b>Lise in Toronoto, request for CDs</b>
-	<br>
-	dzembower[at]<i><b>-remove-</b></i>gmail.com
-	- David, Chicago
-	<br>
-	29Jan2012 5:22 AM
-	(11 years 289 days  ago)
-	<blockquote>
-		Hello Lise.  You can download the tribute cd as individual mp3 files from this website, follow the tribute project link on the left.  As for the recording of the 1999 show at Crocodile Club in Seattle (I think that&#39;s what you&#39;re asking for when you refer to the 2000 reunion tour CD&#41;, I&#39;d be happy to make a copy and send it to you.  Please post some way I could contact you (email address would be easiest&#41;.
-	</blockquote>
-	</li>
-	<li>
-	<b>Wow</b>
-	<br>
-	h2ofuego[at]<i><b>-remove-</b></i>yahoo.com
-	- James Hollywoodland
-	<br>
-	20Jan2012 3:47 PM
-	(11 years 298 days  ago)
-	<blockquote>
-		Well said, Iian.<br/>
-<br/>
-Wow. All that (and years later mind you&#41; from a comment off myspace? Of your band? Whew, I highly advise you against anything having to do with entertainment industry or public criticism in general, sir.<br/>
-<br/>
-It&#39;s a losing battle, and with that being said, yes, &#34;Good luck, with that lad.&#34;<br/>
-<br/>
-<br/>
-....ok, so, now back to the more pertinent subject at hand. I also am famished for New material since &#34;Now That&#39;s What I Call Northampton Vol. 1&#34;. Whaddya say, Pat? Looking forward to the Wilson DVD! Shall we be on the look out for &#34;Now That&#39;s What I Call Northampton Vol. 2&#34;? Or a Pat Fish album perhaps? Time will tell.<br/>
-<br/>
-Cheers, Pat! And to the New Barcelona!!<br/>
-<br/>
-James
-	</blockquote>
-	</li>
-	<li>
-	<b>The Last Post</b>
-	<br>
-	joiain67[at]<i><b>-remove-</b></i>yahoo.com
-	- Iain Nottingham
-	<br>
-	16Jan2012 11:28 AM
-	(11 years 302 days  ago)
-	<blockquote>
-		I know that Pat is more than capable of composing his own defence, but I am pleased to see that the passage of &#39;a few years&#39; and the discovery that his critic was responsible for a &#39;load of boring old dad rock&#39; has helped the author of the Last Post to get over said criticism (if saying &#39;good luck with that lads&#39; can be called criticism...&#41; and move on with his life. Seems to slightly miss the point too that without Pat, who knows whether his (and probably most of ours too&#41; beloved Spacemen 3 would ever have made it out of Rugby.<br/>
-<br/>
-Anyway, pleased to see that he was at least brave enough to name his band too, so we could check them out...err no he didn&#39;t.<br/>
-<br/>
-Anyway Pat, please update us on album plans, for those who can&#39;t wait for a lot more &#39;truly w**k&#39; genius.<br/>
-<br/>
-Iain
-	</blockquote>
-	</li>
-	<li>
-	<b>your music</b>
-	<br>
-	sf74ca[at]<i><b>-remove-</b></i>hotmail.com
-	- Jon SF, CA
-	<br>
-	15Jan2012 10:41 PM
-	(11 years 302 days  ago)
-	<blockquote>
-		A few years back when MySpace was popular my band mate posted a comment on someone&#39;s page maybe it was The Mirrors and you didn&#39;t like it so made a disparaging remark about my band something to the effect of &#34;good luck with that lads&#34;. Years later I&#39;m reading a Spacemen 3 book and I finally find out who you are so I come to your website to listen to your music and I have to say what a bunch of boring old dad rock. It is truly wank. Why the hell a band as cool as Spacemen 3 ever let someone like you hang around them is beyond me. I would put the music from that old band up against yours any day.
-	</blockquote>
-	</li>
-	<li>
-	<b>Ruenion Tour cd/Tribute cd</b>
-	<br>
-	liseroussel[at]<i><b>-remove-</b></i>yahoo.ca
-	- Lise, Toronto
-	<br>
-	15Jan2012 11:30 AM
-	(11 years 303 days  ago)
-	<blockquote>
-		I recently lost a good chunk of my JBC cd&#39;s(including a lovely autographed copy of Scandal in Bohemia/Sex & Travel..!&#41; - I was wondering if anyone had copies of the 2000 reunion tour cd and the JBC Tribute/covers cd that they&#39;d be willing to copy? I&#39;m not sure if this is the forum for such a request (or if it&#39;s feasible&#41;, or if there is another list?
-	</blockquote>
-	</li>
-	<li>
-	<b>Max Eider, etc</b>
-	<br>
-	haystackhunter[at]<i><b>-remove-</b></i>hotmail.com
-	- WGH from Vancouver
-	<br>
-	12Jan2012 10:22 PM
-	(11 years 305 days  ago)
-	<blockquote>
-		Just got the new(ish&#41; Max Eider album & it&#39;s fantastic. Also have a record player for the first time in years so I can listen to my old Jazz Butcher & Woodentops platters. These are great days!<br/>
-<br/>
-Hey, the last commenter was from Vancouver as well!
-	</blockquote>
-	</li>
-	<li>
-	<b>Weelllll......</b>
-	<br>
-	pamm77[at]<i><b>-remove-</b></i>telus.net
-	- Pam from Vancouver
-	<br>
-	1Jan2012 4:43 PM
-	(11 years 317 days  ago)
-	<blockquote>
-		Let&#39;s get it on! Wha&#39;d ya say, folks? More importantly, what do you say, Pat? You say......
-	</blockquote>
-	</li>
-	<li>
-	<b>fan funding</b>
-	<br>
-	pwgabachito[at]<i><b>-remove-</b></i>yahoo.com
-	- Pasitos Wells
-	<br>
-	27Dec2011 6:59 PM
-	(11 years 322 days  ago)
-	<blockquote>
-		Chip in works with Paypal, and many international banks can be connected to your PayPal account.  I use it to send money from my Mexican bank account to my American.  <br/>
-<br/>
-I have friends in the States who also use it for raising money for their charities.
-	</blockquote>
-	</li>
-	<li>
-	<b>Kickstarter</b>
-	<br>
-	jdvf[at]<i><b>-remove-</b></i>hotmail.com
-	- Foonon, New England
-	<br>
-	27Dec2011 4:59 PM
-	(11 years 322 days  ago)
-	<blockquote>
-		Anyone globally can pledge to Kickstarter projects, but creating a project currently requires a U.S. bank account. All you need is someone in the US who is willing to lend a hand.<br/>
-<br/>
-(Like, oh I dunno...me.&#41;<br/>
-<br/>
-Also, peoplefund.it is a UK-based Kickstarter like-a-look, but it only takes UK contributions for the moment.<br/>
-<br/>
-IndieGoGo.com is international, but they charge 4&#37; according to their FAQ<br/>
- <br/>
-~f
-	</blockquote>
-	</li>
-	<li>
-	<b>It&#34;s been so long :(</b>
-	<br>
-	pamm77[at]<i><b>-remove-</b></i>telus.net
-	- pam from vancouver, bc, canada
-	<br>
-	23Dec2011 1:36 AM
-	(11 years 326 days  ago)
-	<blockquote>
-		Well then:  is it Christmas Eve there yet? Brain/time malfunction here. A very happy and into the new year to you and your family and friends. Good grief, I&#39;m listening to &#34;Illuminate&#34;, which made me think I could possibly make contact on my shiny new laptop. Perhaps it will work. Here&#39;s hoping.....<br/>
- <br/>
-Thanks for the tunes, Pat. I hope that doesn&#39;t sound flip. I was telling a friend a few months ago that I could (and will&#41; happily listen to your music, desert island or not, for the rest of my life. It makes me feel: good, thoughtful, angry, connected,...  and who doesn&#39;t need that? To that end, if funding for a new album is still pending/wanting;trying, please keep advised. Perhaps global fan funding is possible. Could you, or possibly fans, create a sort of co-op, without too much red tape?<br/>
-<br/>
-Anyways, here&#39;s withing you and yours the very best happiness, health and desired success for 2012. I look forward to learning more. Until then, take good care.
-	</blockquote>
-	</li>
-	<li>
-	<b>fan-funding</b>
-	<br>
-	butcher[at]<i><b>-remove-</b></i>upyrfrunt.tv
-	- The Butcher
-	<br>
-	28Nov2011 5:45 PM
-	(11 years 351 days  ago)
-	<blockquote>
-		The trouble with this fan-funding thing is that the various sites which do it are - at the moment - country specific. I don&#39;t think there are enough JBC fans in any one country to make an album happen right now. But we are thinking about it. Pat x
-	</blockquote>
-	</li>
-	<li>
-	<b>new material</b>
-	<br>
-	dave.ungar[at]<i><b>-remove-</b></i>gmail.com
-	- Dave, Ohio
-	<br>
-	27Nov2011 3:25 PM
-	(11 years 352 days  ago)
-	<blockquote>
-		so, uh ... any possibility of releasing new material or rarities or something to make the trip to the mailbox exciting?<br/>
-<br/>
-any interest in a fan-financed release?
-	</blockquote>
-	</li>
-	<li>
-	<b>12 bar club</b>
-	<br>
-	dufourelisa[at]<i><b>-remove-</b></i>free.fr
-	- Jean michel
-	<br>
-	12Oct2011 12:43 PM
-	(12 years 33 days  ago)
-	<blockquote>
-		thanks pat for these precisions<br/>
-i try to reserve by phone and mails but i&#39;ve no response....<br/>
-so i&#39;ll be there of course<br/>
-so happy to see you on stage 20 years after !!!<br/>
-(nota the solo sets in paris were at the Troupeau bar...but i remenber the rex club, the new morning, elysÃ©es montmartre support tuxedo moon, l&#39;EuropÃ©en and many more&#41;<br/>
-amitiÃ©s musicales
-	</blockquote>
-	</li>
-	<li>
-	<b>12 Bar Club</b>
-	<br>
-	rub a dub
-	- Pat, NN1
-	<br>
-	12Oct2011 3:48 AM
-	(12 years 33 days  ago)
-	<blockquote>
-		I should be on at about nine o&#39;clock. Details for 12 Bar Club bookings can be found here: http://www.12barclub.com/gig_listings.html
-	</blockquote>
-	</li>
-	<li>
-	<b>Not sure</b>
-	<br>
-	neardrums[at]<i><b>-remove-</b></i>yahoo.com
-	- Mike/USA(sorry&#41;
-	<br>
-	11Oct2011 6:03 PM
-	(12 years 34 days  ago)
-	<blockquote>
-		Still not sure. I recently imagined that I hooked up with a former co-worker at a record store, and remembered a bit of music from that time. Yours was at the forefront, for what that&#39;s worth. <br/>
-Now I&#39;m most assuredly not sure, but I am &#39;happy&#39; I guess, that the man whose tunes I continue to dial up(not Itune-wise,etc.-I still use a walkman!&#41;has a forum. Thanks for maintaining the idea that kick-ass rock can sulk, and rage, and kick ass, and love, and regret, and pilfer one&#39;s own soul for a time, all the while kicking ass for some reason.<br/>
-<br/>
-Please tell me if the I-tune thing would be the better way for yourself financially. You need to thrive more.<br/>
-<br/>
-I typed the red word into the box, but I&#39;d still like the hose again. Rock n&#39; Roll, I guess!
-	</blockquote>
-	</li>
-	<li>
-	<b>gigs in Nov?</b>
-	<br>
-	imgrant[at]<i><b>-remove-</b></i>athabascau.ca
-	- Iain Grant
-	<br>
-	30Sep2011 11:32 AM
-	(12 years 45 days  ago)
-	<blockquote>
-		Hey Pat ... <br/>
-<br/>
-Greetings from Canada. Been a while - was a big fan back in the day, and we even opened for the JB at a hall in the middle of a park in Kitchener, Ontario, circa 1986 or 87. ANYWAY ... am coming to London for a bit in very early November. If you&#39;re playing it would be a blast to catch it. <br/>
-<br/>
-Best, <br/>
-<br/>
-Iain Grant
-	</blockquote>
-	</li>
-	<li>
-	<b>Gig 12 BARCLUB</b>
-	<br>
-	dufourelisa[at]<i><b>-remove-</b></i>free.fr
-	- jean michel (Paris&#41;
-	<br>
-	14Sep2011 12:32 PM
-	(12 years 61 days  ago)
-	<blockquote>
-		Hello Pat<br/>
-i will come with my family and friends to london and i will support you the 23 OCTOBER AT the 12 BARCLUB<br/>
-do you know at what time you ll play and how to reserve places<br/>
-<br/>
-Ã€ bientÃ´t (remember the solo&#39;s shows at the piano vache in Paris ?&#41;
-	</blockquote>
-	</li>
-	<li>
-	<b>new songs</b>
-	<br>
-	les.guillaume[at]<i><b>-remove-</b></i>club-internet.fr
-	- pierre guillaume brussey
-	<br>
-	6Sep2011 11:47 PM
-	(12 years 68 days  ago)
-	<blockquote>
-		I think the subscription CD is a very good idea...!!
-	</blockquote>
-	</li>
-	<li>
-	<b>The new stuff</b>
-	<br>
-	marktgallacher[at]<i><b>-remove-</b></i>hotmail.com
-	- Mark Gallacher
-	<br>
-	16Aug2011 2:26 AM
-	(12 years 90 days  ago)
-	<blockquote>
-		Pat Pat Pat, you simply have to get this new albums worth of material out to us punks. It&#39;s a necessity. Even if it has to be via the evils of itunes or a simple subscription CD or vinyl deal. That would really make a haddock smile. Look forward to the Wilson DVD as well. Love and fishes Marko x
-	</blockquote>
-	</li>
-	<li>
-	<b>conspiring</b>
-	<br>
-	redvenus88[at]<i><b>-remove-</b></i>gmail.com
-	- wallfisch
-	<br>
-	2Aug2011 3:27 AM
-	(12 years 104 days  ago)
-	<blockquote>
-		Hey Pat!<br/>
-44 days and 27 minutes after the last bloke...<br/>
-<br/>
-I&#39;m living in old Europe these days--in Dortmund,  the <br/>
-Pittsburgh of Germany. Took a job causing a ruckus at the local <br/>
-Stadt Theater. Woyzeck, Threepenny Opera and other teutonic <br/>
-classics. <br/>
-Anyway--I&#39;ve imported my music salon, Small Beast. We also do <br/>
-Hamburg and Berlin.  I think Thomas T. might have mentioned to <br/>
-you my cockamany idea for conjuring up the non-existent <br/>
-supergroup reunion of Marcus Maria Jansen, Thomas, you and <br/>
-me for a few shows. Now might be that moment. Or Spring <br/>
-2012, anyway--if we can all plan that far ahead. It&#39;d be perfect <br/>
-for my beastliness. <br/>
-Get in touch Butcher! Tell me what ya think. <br/>
-Be well!<br/>
-paul
-	</blockquote>
-	</li>
-	<li>
-	<b>I go with the vinyl idea..</b>
-	<br>
-	joiain67[at]<i><b>-remove-</b></i>yahoo.com
-	- Iain Nottingham
-	<br>
-	19Jun2011 2:48 AM
-	(12 years 148 days  ago)
-	<blockquote>
-		..as I am just sitting here listening to the aforementioned Mr Langley&#39;s new offering (and very fine it is too&#41; - although an accompanying download code would have been handy! Presumably you would need to know (on whatever format&#41; how many people were willing to buy (or indeed pre-pay&#41;, to help fund?<br/>
-<br/>
-Anyway, how are you Pat?
-	</blockquote>
-	</li>
-	<li>
-	<b>New Stuff?</b>
-	<br>
-	doc6502[at]<i><b>-remove-</b></i>yahoo.com
-	- Doc, Chicago
-	<br>
-	7Jun2011 8:51 PM
-	(12 years 159 days  ago)
-	<blockquote>
-		Wild, really?  Is it all done-like?  Could it be put out on the interwebs?  Or is this a whole-single-unit-like and wouldn&#39;t like being split into pieces and downloaded?  Could you go the old way and press some rekkids like dear Mr. Langley has done with the new Aeros record?  What&#39;s the cost?  How much you want to make outta this deal?<br/>
-<br/>
-</fanboy-mouth-foam>
-	</blockquote>
-	</li>
-	<li>
-	<b>Recent Pat Fish Songs</b>
-	<br>
-	scierli[at]<i><b>-remove-</b></i>yahoo.com
-	- Stan US
-	<br>
-	2Jun2011 10:39 AM
-	(12 years 165 days  ago)
-	<blockquote>
-		Hi...<br/>
-<br/>
-Recently picked up All The Saints and Mercy...  Fantastic songs...  Any chance of any more solo songs?<br/>
-<br/>
-Thanks,<br/>
-Stan
-	</blockquote>
-	</li>
-	<li>
-	<b>Download of Devil is My Friend</b>
-	<br>
-	jcevrt[at]<i><b>-remove-</b></i>yahoo.com
-	- Jeff Everett
-	<br>
-	1May2011 1:49 PM
-	(12 years 197 days  ago)
-	<blockquote>
-		I am a big Jazz Butcher Fan and would also like to locate a copy of The Devil Is My Friend. Any suggestions would be greatly appreciated.
-	</blockquote>
-	</li>
-	<li>
-	<b>paris</b>
-	<br>
-	dufourelisa[at]<i><b>-remove-</b></i>free.fr
-	- jean michel
-	<br>
-	1May2011 12:54 PM
-	(12 years 197 days  ago)
-	<blockquote>
-		hello pat<br/>
-have we got any chance to hear one more time your fabulous songs in paris ?<br/>
-good luck<br/>
-best regards
-	</blockquote>
-	</li>
-	<li>
-	<b>Camden gig</b>
-	<br>
-	fishy[at]<i><b>-remove-</b></i>jbc.tv
-	- pat NN1
-	<br>
-	22Apr2011 4:42 AM
-	(12 years 206 days  ago)
-	<blockquote>
-		You should be fine turning up on the night, though the venue is small so don&#39;t leave it too late in the evening. Playing solo, as I shall be, I think there&#39;s a danger that Racheland might put everybody to sleep...
-	</blockquote>
-	</li>
-	</ul>
-	</div><!-- feedback -->
+		"link": "http://www.northamptonchron.co.uk/news/local/northampton-barbershop-that-was-at-the-heart-of-community-closes-after-103-years-1-7303919",
 
-	</div>
-	</div>
-<script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
-<script src="/fontfaceobserver.js"></script>
-<script type="text/javascript"> 
-var font = new FontFaceObserver('Titillium-Regular', {
-});
+		"category": 	""
 
-font.load().then(function () {
-	document.documentElement.className += " fonts-loaded";
-  //alert('Font is available');
-}, function () {
-  //alert('Font is not available');
-});
-  $(document).ready(function() {
-    $("#menuButton").toggle(function(){ 
-         $("#nav").removeClass("saveSpace"); 
-      },function(){
-         $("#nav").addClass("saveSpace"); 
-    });
-   });
-</script></body>
-	</html>
+	} ,
+	{
+		"subject": "Steve Garofalo",
+
+		"body": "<div class='annotation'> It is with great regret that the Jazz Butcher Quartet must announce that <span class='person'> <a href='/people/steve_garofalo.html'>Steve Garofalo</a> </span>, our drummer, died unexpectedly at his home in Northampton NN1 on 28th February. Steve was so much more than just the drummer in a band. He was the true, beating heart of the entire operation in every way imaginable, and at the moment it seems inconceivable that the band might be able to continue without him. We are utterly bereft, as is his enormous circle of loving friends and family. <p /> Naturally, we apologise to those whom we are forced to let down over bookings and so forth. If there was a way to fulfil such obligations, we would normally find it, but this is just too enormous for us to cope with at this time. <p /> Our thoughts and prayers are with Steve's family. </div>",
+
+		"dt": "1458000000",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Ah, press.",
+
+		"body": "I'd almost forgotten about press.  <p /> Good old press.  <p /> It's press week.  <p /> I'd almost forgotten about press week. <p /> <a href='https://radio.abc.net.au/programitem/peqQVbq2yQ' target='new'>Australia!</a> <a href='/press/20160203_distorsioni.html'>Italy!</a> <a href='/press/20160202_terapijanet.html'>Croatia!</a> <a href='http://www.popnews.com/popnews/du-premier-choix-cette-annee-chez-the-jazz-butcher' target='new'>France!</a> <p /> Pat",
+
+		"dt": "1454976000",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Fire Records Re-issues",
+
+		"body": "We have signed a deal with Fire Records of London, who will be re-releasing a bunch of Jazz Butcher records, starting with our most recent effort, Last of the Gentleman Adventurers, in February 2016. <p /> A new album , tentatively entitled 'The Highest in the Land', is scheduled for Autumn 2016.",
+
+		"dt": "1449705600",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Interview",
+
+		"body": "I was <a href='http://spiritsjournal.klwines.com/klwinescom-spirits-blog/2015/2/2/d2d-interview-pat-fish.html' target='new'>interviewed by Spirits Journal</a>.",
+
+		"dt": "1422835200",
+
+		"link": "/press/20150202_spiritsjournal.html",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Band News",
+
+		"body": "Someone didn't chop the heads off!!  They're back from the dead. The JBC are more. <p /> As of March 1998, the Jazz Butcher and <a href='http://www.creation-records.com' target='new'>Creation Records</a> have parted ways. <p /> <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span>, who left the group in the 80's is back. <p /> <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span>'s follow-on project <a href='https://www.sumosonic.com' target='new'>Sumosonic</a>, is well worth your time.",
+
+		"dt": "947219674",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Rev-Ola compilation",
+
+		"body": "Rev-Ola issued a compilation of the JBC's Creation output at the end of October. Although it has a lot in common with the US release '<span class='release_title'><b><a href='/albums/violent.html'>&amp;#161;Excellent! The Violent Years</a></b></span>', it does also feature stuff from '<span class='release_title'><b><a href='/albums/illuminate.html'>Illuminate</a></b></span>' and two previously unreleased efforts from the '<span class='release_title'><b><a href='/albums/bus.html'>Waiting For The Love Bus</a></b></span>' sessions. Besides, you can't get '<span class='release_title'><b><a href='/albums/violent.html'>&amp;#161;Excellent! The Violent Years</a></b></span>' anywhere anyway. <p /> Title: <span class='release_title'><b><a href='/albums/free_lunch.html'>The Jazz Butcher's Free Lunch</a></b></span><br> Release date: October 20th<br> Label: Rev-Ola<br> Cat. No: CRREV 54",
+
+		"dt": "1066608000",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "Any dates you see listed here from now on will essentially be  solo gigs by me. I shall be aiming to style myself simply 'Pat Fish' wherever I can, though no doubt some promoters will still prefer to list me as the Butcher. <p /> Those of you who haven't seen me for a while will find themselves confronted with large swathes of new material, both acoustic and electric.",
+
+		"dt": "1204573951",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "Max is taking a break from playing live to concentrate on finishing his new record, scheduled for release early next year.",
+
+		"dt": "1155720917",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "I would like to thank everybody who voted for my acoustic session on BBC         Radio Northampton in their end of year awards. In the end I was knocked         back into 2nd place by The Zutons, which is perfectly all right by me,         for they are a talented bunch of aliens for sure. Still, thanks for your         support, and I hope one or two of you managed to download the session         tunes from the BBC website while you were at it.         <p />         This seems like a good opportunity to say that I've had a really         wonderful time this year, so thanks to all my lovely colleagues in Wilson         and the JBC, thanks to all the artists who have come and played my mad         little club, and thanks most of all to everybody who has come to our club         nights and gigs and to everybody who has helped and supported us this         last twelve months. Special shouts to Pete and Sophie at The Racehorse         for their endless kindness; John Purcell for lights fantastic; Steve and         Duncan at Phoenix Soundworks for technical support way beyond the call of         duty; Andy Skank for involving me in the World of Budvar and everybody at         the Labour Club for putting up with me and my noisy mates; and, of         course, to David for hosting the worldwide wonderland that is jbc.com. A         happy Christmas and a sterling New Year to you all.         <p />         Love,<br>         Pat<br>",
+
+		"dt": "1129400570",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "Pat &amp; Max are making some West Coast US appearances.. <p /> Max Eider's new album is out and available at the newly-renovated <a href='http://www.maxeider.com' target='new'>Eider website</a>",
+
+		"dt": "1253561469",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "For immediate release",
+
+		"body": "For further information, contact tundraducks[at]<i><b>-remove-</b></i>[at]<i><b>-remove-</b></i>btinternet.com<br> <br> Max Eider: Disaffection (TDKS003) 11 October 2010<br> <br> Augustus Pokerback, Supremo of Tundraducks Records, has announced the release date for Max Eider's new album, Disaffection. 'It is with a heavy heart that I prepare to offer this morbidly morose record to an indifferent public,' said Pokerback. 'On the other hand, we thereby become the first record company to escape bankruptcy and release two Eider albums. My strategy was simple but brilliant: I invested absolutely nothing whatsoever.'<br> <br> Augustus Pokerback is 97.<br> <br> <a href='http://maxeider.com' target='new'>maxeider.com</a><br> <a href='http://myspace.com/maxeider' target='new'>myspace.com/maxeider</a>",
+
+		"dt": "1286755200",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "I shall have 3 brand new tunes released at the end of August on a compilation called (I shit you not) 'Now, That's What I Call Northampton - Vol. 1'. It's a bonzer wee compilation that also features new studio recordings by Curtis E. Johnson, Joe Woolley and Andy Harding, plus previously unreleased studio stuff from Eaglehead, P-Hex, Good Cop Bad Cop, Fat Controller and <a href='https://wilsondub.com' target='new'>Wilson</a>. There's even a <a href='http://www.nowthatswhaticallnorthampton.com' target='new'>website</a> where you can keep an eye on developments. There will be a few promotional gigs around that time. <p /> Also, at the beginning of September the Creation Records movie comes out. It's called 'Upside Down' and I think the premiere is in London on the 5th September. I'm in the movie and there will be some London gigs around the time of its release. There's a trailer up on the YouTube at the moment.",
+
+		"dt": "1284918236",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "Went to see the Creation movie, '<a href='http://www.bfi.org.uk/lff/films/new_british_cinema/821' target='new'>Upside Down</a>'. Really not bad at all. Kinda tells it like it was. I'm in it, plus namechecks for Kizzy and Mulreany. Nice. Because it got shown at the London Film Festival, suddenly film fests all over the world want it. It's already been to        Barcelona. I'd keep an eye open, if I were you. It'll be out on DVD early in 2011... <p /> ...As will the <a href='http://www.wilsondub.com' target='new'>Wilson</a> movie. We gave a sneak preview last week at a local film night...which was in the venue where we played the gig. So <p /> There are clips from the Wilson DVD to be seen on  <a href='http://www.youtube.com/watch?v=Hic-yax9asQ' target='new'>teh youtube</a>.",
+
+		"dt": "1297919295",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "I finally have the money to manufacture the Wilson DVD. Soon come, as they say...soon come...",
+
+		"dt": "1311613339",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "I've got a good album's worth of new and unreleased stuff. I wonder what happens now... <p /> There is, in fact, a lot more to it than that: check out our page on Pledgemusic and you will see that there are all manner of strangely diverting things available to those of you who choose to support us. <p /> Pledgemusic is an international company which has successfully funded projects for the likes of Cornershop, Viv Albertine, Amanda Palmer and Ian McCullough. They can deal with international payments, exchange rates and all that stuff. Your money is safe with them and, if for any reason the album doesn't go ahead, you will get it back. The fundraising project runs until the beginning of September. <p /> Please help us out with this one. Check out our page: <a href='http://www.pledgemusic.com/projects/thejazzbutcher' target='new'>here</a>",
+
+		"dt": "1341532800",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "The crowd-funded Jazz Butcher album, <span class='release_title'><b><a href='/albums/last_of_the_gentleman_adventurers.html'>Last of the Gentleman Adventurers</a></b></span> has been released! <p /> Currently only available for download by pledgers. Physical media and iTunes download will be available in a few weeks.",
+
+		"dt": "1351017590",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "The Wilson DVD, entitled No Known Predators, is to be released on Friday 7th September 2012.         <p />         To celebrate, Wilson will be reforming for a special one-off show at The Picturedrome, Kettering Road, Northampton NN1 on         <a href='http://wilsondub.com/gigs/2012/Sep7.html'>Friday 7th September 2012.</a><p />         Tickets for the event cost £2:50, exactly the same as at Wilson's very first show in March 2001.         <p />         The DVD will be available to buy at the Picturedrome show.         Further availability details to follow.         <p />         Cheers,         Pat x",
+
+		"dt": "1344337097",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "<p />We enjoyed brief, surreal trip to Japan, playing to lovely, knowledgeable audiences and meeting the charming Stuart Moxham, who, as part of Young Marble Giants, had been a profound influence on us when we were but youths. <p />While Max holed up in his Northern fortress, Pat gamely rode the Eurostar to Brussels to play an electric set to a gaggle of sophisticats in a concrete basement and negotiated the mysteries of online check-in for a flight to Germany, where he played some solo shows and joined up with Paul Wallfisch, Thomas Truax and Markus Maria Jansen for concerts in Hamburg and Dortmund under the spurious 'supergroup' handle of The Almost Has Beens. It's all been most enjoyable. <p />We have plans for one or two UK appearances later in the year. <p />What we are now looking for is engagements for Pat and Max, performing as a duo, in Germany, Belgium, France and the USA. <p />Now, a word of warning is in order here. We really are seeking only professional, paid gigs in venues where people come to listen to music, rather than rock out and riot or, indeed, spend the evening enjoying a nice chat with their friends. Whereas a band can compete with a noisy room, two ageing nutters on stools are best enjoyed in a somewhat more...uh...sedate environment. <p />It's easy to be tempted into trying to do a DIY job of putting on your favourite band in your local venue. 'How hard can it be?' is the seductive question. The cruel answer is: 'Harder than you think.'<br /> It's not just a question of paying two old lunatics for sitting around playing songs. We have to pay our travel expenses and we need some sort of vaguely civilised accommodation. (We are, to be honest, getting a bit too old and fragile for kipping on our friends' floors!) We need fed and watered too, and we need some razor wire to keep Fishy safe from the enraged 'smoke-free' fundamentalists.  <p />While we have, over the years, occasionally enjoyed brilliant DIY nights organised by fans in their local bar, the truth is that the live music game can be very hard these days and we don't want to see people who like us losing money. So while we are in no way 'against' DIY gigs, we do urge that you make sure that you know exactly what you're doing.  Do feel free to e-mail us if you have any questions. <p />Our main hope is that one or two of you lovely people out there will actually have connections to a club or a promoter who might be interested in putting us on and that you might be able to point us in their direction, or, indeed, point them in ours. <p />If you want to make some enquiries, send us a message at <a href='http://www.facebook.com/jazz.butcher.official'>www.facebook.com/jazz.butcher.official</a> or e-mail us at <a href='mailto://tundraducks[at]<i><b>-remove-</b></i>[at]<i><b>-remove-</b></i>btinternet.com'>tundraducks[at]<i><b>-remove-</b></i>[at]<i><b>-remove-</b></i>btinternet.com</a> <p />All suggestions gratefully received, folks.<br />",
+
+		"dt": "1373583959",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Hello, everybody",
+
+		"body": "It's been a great few months for us at JBC Central. As we may have mentioned before, we were overwhelmed by your swiftness and generosity in supporting our fundraising campaign for the new record. We're pleased with the way that copies have been making their way out of the door as well, which, at the very least, affords Fishy an airing once in a while on his trips to the Post Office.  We have sold copies in the UK, France, Belgium, the Netherlands, Germany, Italy, Greece, Spain, Sweden, Canada, Japan, Australia, New Zealand, Brazil and the USA.",
+
+		"dt": "1396207520",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "New CD, Disaffection",
+
+		"body": "out and available now at maxeider.com                                                <p /> If you prefer to donate a large proportion of the cover price to some dotcom billionaire or other, the album is also available at Amazon, CD Baby, iTunes and most other digital retailers when they get round to adding it.",
+
+		"dt": "1402718872",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "updated upcoming gig",
+
+		"body": "Also on the horizon, it looks as though I might well be going to play solo in Japan, supporting the Monochrome Set in Tokyo in October. Again, more news as things firm up. (Eider won't be joining me on this trip.)",
+
+		"dt": "1402718872",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "JBQ",
+
+		"body": "We're going to record the lounge quartet on Monday, then try and sync it up with some video to make a sort of 'business card'. Steve the drummer has his own old-fashioned barber's shop and we're going to be filming in there in our lived-in suits. Obviously, I'll let you know how this senile delinquency works out.",
+
+		"dt": "1403203825",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": 	"",
+
+		"dt": 	"",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "In August the Jazz Butcher Conspiracy emerges to play its first run of UK dates since 2002. The four-piece band comprises Pat Fish, Max Eider, bassist Steve New and drummer Steve Garofalo. The set will focus chiefly on the Butcher's latest album 'Last of the Gentleman Adventurers' with a few tunes from the past thrown in to see what happens. <p /> We hope to see you out and about at one of these shows. <p /> Pat x",
+
+		"dt": "1406226812",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Jazz Butcher Quartet",
+
+		"body": "A nice Jazz Butcher Quartet write-up <a href='http://louderthanwar.com/the-butch-is-back-the-return-of-the-jazz-butcher/' target='new'>at 'Louder Than War'</a>",
+
+		"dt": "1412916436",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "We have finally found somebody who is prepared to do some luxurious, lathe-cut vinyl copies of 'Gentleman Adventurer'. I shall keep you up to date with our progress on this, of course. <p /> Also on the horizon, it looks as though I might well be going to play solo in Japan, supporting the Monochrome Set in Tokyo October <a href='https://jazzbutcher.com/gigs/2014/Oct24_1800.html'>24th</a> and <a href='https://jazzbutcher.com/gigs/2014/Oct25_1800.html'>25th</a> . (Eider won't be joining me on this trip.) <p /> I'm also in talks with Alan McGee about a solo acoustic show at his new venue The Tabernacle, which is a beautifully refurbished chapel in a village in Wales! <p /> Confused yet? Splendid! Right. I shall probably be sending some dope on the new loungecore combo shortly. Hopefully, a few more dates as well. <p /> Pat xxx",
+
+		"dt": "1401968363",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Speaking of aberrations..",
+
+		"body": "Hey, kids... there's <a href='/gigs/1999'>a US tour in September!</a> <p /> featuring <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span>, <span class='person'> <a href='/people/max_eider.html'>Max Eider</a> </span>, <span class='person'> <a href='/people/owen_jones.html'>Owen Jones</a> </span> with <span class='person'> <a href='/people/david_j.html'>David J.</a> </span> in L.A. and <span class='person'> <a href='/people/kevin_haskins.html'>Kevin Haskins</a> </span> in L.A., S.F., and N.Y.C!",
+
+		"dt": "935971200",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": 	"",
+
+		"body": "Shock! <p /> On Saturday 19th February 2000 in Northampton NN1 Pat Fish and Max Eider signed a contract with the record company Vinyl Japan to make a new Jazz Butcher Conspiracy LP. The record, which will feature all new material from Max and The Butcher, has the working title 'Big Cat Diary'. Bear in mind, however, that the Conspiracy are also rather taken with the title 'Just Plain Sick'. <p /> Pat and Max will be recording in March at the home studio of sometime JBC guitarist Peter Crouch. There are also likely to be contributions from Archbishop Gabriel Turner, Sumosonic percussionist Russ Cooper and others. <p /> The record will be released as both a CD and a vinyl LP. Hooray! <p /> Horror! <p /> Vinyl Japan are hoping to have the record released by June 2000, at which point the JBC will set off for their first ever concerts in Japan. The dates are: Sat 17 June : Tokyo Sun 18 June : Tokyo Tue 20 June : Osaka <p /> Club information will follow when we know it. <p /> The JBC line-up will be: <p /> Pat Fish - Guitar, Singing Max Eider : Guitar, Singing Owen Jones : Drums, Singing Steve Valentine : Bass, Singing <p /> Support on all dates will be Dislocation Dance, with a short solo set by Max as well. <p /> Find out more about Vinyl Japan by visiting their website: www.vinyljapan.demon.co.uk . <p /> (Those who have signed up for the$100 EP should not fear. The tunes on their record remain exclusive to them and will not be appearing on the new LP.) <p /> Mayhem! <p /> Max is also surprised to announce the imminent re-release of his ancient and improbably named solo effort 'The Best Kisser in the World' (now the Second Best Kisser in the World?). All complaints and objections once again to Vinyl Japan, please. <p />",
+
+		"dt": "955843200",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Songs For Summer",
+
+		"body": "Last year, before everything went all Butcher-shaped, a young man from California asked me to contribute to a charity compilation album in memory of his unfortunate girlfriend, who died real young. The money goes to help disadvantaged and abused kids with art projects. <p /> I contributed a track, recorded on Curtis' computer. It's a version of 'Indian Summer' as written by the Beat Happening, and recorded by Luna and Spectrum. (In fact, that's me on lead guitar on the Spectrum version, but that's another story. You should probably point out to people that this is a new version altogether.) The record also features Jonathan Richman, B-52s, Pansy Division, G-Love and a bunch of others. At your favourite online store now!",
+
+		"dt": "955843200",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Euro Tour",
+
+		"body": "The JBC are in the early stages of planning a short tour of Britain and Germany for the first two weeks of August 2001. Anybody who would be interested in putting the band on during this period, please get in touch. Thanks!",
+
+		"dt": "985046400",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Vinyl Japan Is My Friend",
+
+		"body": "Max's new CD is now for sale! The official street date is 28 Jan 2002. Until then, it is available exclusively via mail order. If you do not want to send credit card details over the net then you can also order by phone (+44 (0) 20 7284 0359) or fax (+44 (0) 20 7267 5186). Contact spencer([at]<i><b>-remove-</b></i>)vinyljapan.com for details! <p /> Vinyl Japan also has made available the LONG awaited re-issues of Distressed Gentlefolk, A Scandal in Bohemia and the new Glass-era compilation, Cake City.",
+
+		"dt": "1010793600",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "The JBC begin their 20th year with these European gigs:",
+
+		"body": "Tue, 11 Jun - The Onion - Hamburg , Germany - NOT A GIG! JUST A PARTY <br/> Thu, 13 Jun - Club 2 - Munich , Germany <br/> Fri, 14 Jun - Hemdendienst - Nüremberg  , Germany - Karl-Grillenberger-Strasse 40 <br/> Sat, 15 Jun - Elfenbein - Bielefeld , Germany - Niederwall 37-39 33602 Bielefeld, (05 21) 600 19 <br/> Tue, 18 Jun - Klein Stadhuis - Ypres , Belgium <br/> Sat, 22 Jun - Logo - Hamburg , Germany",
+
+		"dt": "1023148800",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Upcoming Gigs",
+
+		"body": "Wed, 25 Aug - The Racehorse - Northampton , England - Wilson - Free - 'Playing at Home' <br/> Wed, 20 Sep - The Roadmender - Northampton , England - Wilson - Headlining a 6 band bill - £3:00 - Open late",
+
+		"dt": "1028246400",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Upcoming Gigs",
+
+		"body": "Sat, 12Oct2002The Roadmender - Northampton , England  <br/> We are opening for Skindread",
+
+		"dt": "1033084800",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Tom Hall",
+
+		"body": "Tom Hall, itinerant musician, songwriter, overt sartorial provocateur, player of unlikely ancient instruments and 109% solid platinum genius, died at three o'clock this morning.",
+
+		"dt": "1048550400",
+
+		"link": "/tomhall",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Wilson",
+
+		"body": "Pat's new band - Wilson - invade the capital. We're playing at Cargo, 83 Rivington Street, Shoreditch, London EC2 on 16th October. It's a club night called 'For Your Pleasure'. We will be playing live at about 10:00pm, and there will be a DJ set from The Freestylers. The club is supposed to have one of the best sound systems in London. Should be a top night.",
+
+		"dt": "1065225600",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Sumosonic",
+
+		"body": "Sumosonic is the new Pat Fish project.",
+
+		"dt": "884908800",
+
+		"link": "http://sumosonic.com",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Gigs!",
+
+		"body": "May 1, 1998!  <p /> The Jazz Butcher Conspiracy starring Pat Fish and Max Eider will be appearing (with a local bassist &amp; drummer) at The Point in Atlanta, Georgia, USA (404.659.3522). Tickets $8. Call for availability.",
+
+		"dt": "893548800",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "How MAD are you? (new feature!)",
+
+		"body": "Show us yourself wearing your JBC best",
+
+		"dt": "912816000",
+
+		"link": "/mad",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Another aberration!",
+
+		"body": "February 26, 1999! The Jazz Butcher Conspiracy starring Pat Fish and Max Eider supported by Curtis Johnson will be playing at Logo, Hamburg, Germany.  <br/> Address: Logo, Grindelallee 5, 20146 Hamburg, Germany  <br/> Tickets by phone: +49 40 433 039 (9:00-6:30 mon-fri and 10:00-2:00 saturday) (times are Central European)  <br/> E-mail : LogoHH[at]<i><b>-remove-</b></i>Bigfoot.com",
+
+		"dt": "919382400",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Older JBC website features",
+
+		"body": "As part of the JBC website make-over, several older site features have been archived together in <a href='/etc'>one location</a>.",
+
+		"dt": "1488499200",
+
+		"link": "/etc",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Black Raoul",
+
+		"body": "A lovely video for <span class='song'> <i><a href='/lyrics/black_raoul.html'>Black Raoul</a></i> </span>, filmed <a href='htdb/gigs/2015/Sep22_2000.html'>2015-02-22</a> <div class='js-video [vimeo, widescreen]'> <iframe width='560' height='315' src='https://www.youtube.com/embed/ZAnYjrYmF4Q?showinfo=0' frameborder='0' allowfullscreen></iframe> </div>",
+
+		"dt": "1488672000",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Andrew Brooksbank photos",
+
+		"body": "David J. and Bauhaus archivist, Andrew Brooksbank has graciously provided a glimpse into his collection with photographs from  the following early JBC gigs: <a href='/gigs/1986/Mar4.html'>1986-03-04</a>, <a href='/gigs/1986/Oct29.html'>1986-10-29</a>, <a href='/gigs/1989/Sep21.html'>1989-09-21 <img src='/images/19890921/19890921_brooksbank_006_500.jpg'></a>",
+
+		"dt": "1488585600",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Besancon, France - 1986-03-04",
+
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/gigs/search.html?f=song&amp;q=The+Entire+Show'>The Entire Show</a></i> </span>  </i> </span> <span class='smalltext'> <i>Besancon, France</i> </span> <br/> <audio controls='controls' title='The Entire Show' preload='none' class='audio_player'> <source src='https://jazzbutcher.com/audio/19860304/19860304_JazzButcher_Besacon_EQd.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <span class='credit'> <b>Credit</b>: <a href='https://soundcloud.com/lonesomedog' target='new'>Dom Genot</a> </span><!-- credit -->",
+
+		"dt": "1489017600",
+
+		"link": "/gigs/1986/Mar4.html",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Pierre Guillaume Ticket Stubs",
+
+		"body": "Pierre Guillaume responded to our <a href='/help'>request for assistance</a> with some high-quality scans of ticket stubs from several gigs in France - including one show not previously listed in the archives! <blockquote> <a href='/gigs/1994/Jul7.html'><img src='/images/19940707/19940707_ticket_250.jpg'></a> <p /> <a href='/gigs/1987/Aug2.html'>1987-08-02</a>, <a href='/gigs/1987/Feb2.html'>1987-02-02</a>, <a href='/gigs/1988/Apr8.html'>1988-04-08</a>, <a href='/gigs/1990/Mar13.html'>1990-03-13</a>, <a href='/gigs/1991/Oct21.html'>1991-10-21</a>, <a href='/gigs/1993/Feb16.html'>1993-02-16</a>, <a href='/gigs/1994/Jul7.html'>1994-07-07</a>, <a href='/gigs/1995/Sep13.html'>1995-09-13</a>, <p /> <a href='/gigs/1987/Aug2.html'><img src='/images/19870802/19870802_ticket_250.jpg'></a> <span class='credit'> <b>Credit</b>: Pierre Guillaume </span><!-- credit -->  </blockquote> Merci!",
+
+		"dt": "1489190400",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "JBC in the news",
+
+		"body": "Added pages for (mechanical) translations of <a href='/press/20160203_distorsioni.html'>Italian</a> and <a href='/press/20160202_terapijanet.html'>Croatian</a> press tidbits from 2016.",
+
+		"dt": "1490054400",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "More Pierre Guillaume scans!",
+
+		"body": "Pierre Guillaume has provided yet more high-quality scans of JBC ephemera: <p /> <a href='/gigs/1990/Mar8.html'><img src='/images/19900308/19900308_poster_250.jpg'></a> <p /> <b>posters and announcements</b> <blockquote> <a href='/gigs/1986/Apr4.html'>1986-04-04</a>, <a href='/gigs/1986/Aug14.html'>1986-08-14</a>, <a href='/gigs/1987/May29.html'>1987-05-29</a>, <a href='/gigs/1988/Apr8.html'>1988-04-08</a>, <a href='/gigs/1989/Sep1.html'>1989-09-01</a>, <a href='/gigs/1990/Mar13.html'>1990-03-13</a>, <a href='/gigs/1990/Mar14.html'>1990-03-14</a>, <a href='/gigs/1990/Mar16.html'>1990-03-16</a>, <a href='/gigs/1990/Sep15.html'>1990-09-15</a>, <a href='/gigs/1993/Nov15.html'>1993-11-15</a>, <a href='/gigs/1994/Feb17.html'>1994-02-17</a>, <a href='/gigs/1995/Sep13_2000.html'>1995-09-13</a>, <a href='/gigs/1995/Dec21.html'>1995-12-21</a> </blockquote> <b>newspaper clippings</b> <blockquote> <a href='/gigs/1993/Nov15.html'>1993-11-15</a>, <a href='/gigs/1993/Feb16.html'>1993-02-16</a>, <a href='/gigs/1993/Feb21_2000.html'>1993-02-21</a>, <a href='/gigs/1987/Feb10.html'>1987-02-10</a> </blockquote> Big Merci!",
+
+		"dt": "1490745600",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "'Near Perfect Pitch' podcast #35",
+
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> 'Near Perfect Pitch' podcast #35 </i> </span> <span class='smalltext'> <i>Dara Mottahed and Pat (via Skype) catch up on happenings since the previous podcast.</i> </span> <br/> <audio controls='controls' title=''Near Perfect Pitch' podcast #35' preload='none' class='audio_player'> <source src='/audio/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> Excerpted from <a href='https://twitter.com/NearPerfPitch' target='new'>@NearPerfPitch</a>'s podcast #35. Dara Mottahed and Pat (via Skype) <a href='http://www.nearperfectpitch.com' target='new'>catch up on happenings since the previous podcast.</a>.",
+
+		"dt": "1491091200",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Press Clippings, Posters, and Audio",
+
+		"body": "Archive additions: more newspaper clippings: <blockquote> <a href='/press/19990923_press_villagevoice.html'>Village Voice 1999-09-23</a>, <a href='/press/19990923_press_timeout.html'>Time Out 1999-09-23</a>, <a href='/press/19990916_press_seattle_rocket.html'>Seattle Rocket 1999-09-16</a>, <a href='/press/19990916_press_seattle.html'>Seattle Newspaper 1999-09-16</a>, </blockquote> And a few posters, including this crackerjack for The Black Eg: <blockquote> <a href='/gigs/1999/Jun3.html'><img src='/images/19990603/19990603_poster_250.jpg'></a> </blockquote> <b><a href='/gigs/1989/Nov18.html'>Madison, Wisconsin - 1989-11-18</a></b> <blockquote> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/gigs/search.html?f=song&amp;q=The+Entire+Show'>The Entire Show</a></i> </span>  </i> </span> <br/> <audio controls='controls' title='The Entire Show' preload='none' class='audio_player'> <source src='https://jazzbutcher.com/audio/19891118/19891118_JazzButcher_Madison_EQd.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> </blockquote>",
+
+		"dt": "1491091200",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Interviews from 1990 &amp; 1992",
+
+		"body": "Added to the archives: a few hoarded audio interviews: <p /> <a href='/gigs/1992/May6_1200.html'>1992 CBC</a>  professional Brave New Waves Condition Blue-era interview. <p /> <a href='/gigs/1992/May16_1600.html'>1992 WNUR</a> Chicago College radio interview with a couple of live tunes. <p /> <a href='/gigs/1992/Apr26_1200.html'>1992 WXYC</a> Chapel Hill, NC radio interview + tunes <p /> <a href='/gigs/1992/Apr25_1200.html'>1992 WRAS</a> Atlanta radio interview which includes the 'Sydney Meats Story'. <p /> <a href='/gigs/1990/Nov19.html'>1990 WTBS</a> Austin, TX radio interview",
+
+		"dt": "1491350400",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Interview: Last Day Deaf",
+
+		"body": "Here's an <a href='/press/20170406_lastdaydeaf.html'>interview with Pat</a> ahead of the upcoming <a href='/gigs/2017/Apr8_2000.html'>gig at The Continental</a>.",
+
+		"dt": "1491436800",
+
+		"link": "/press/20170406_lastdaydeaf.html",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Side-Project Mayhem",
+
+		"body": "Audio and artwork for the Wilson, Sumosonic, The Vaguely Familiar, Cambodia, and Black Eg projects <a href='/audio'>have been added to the listening room</a>",
+
+		"dt": "1492041600",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Site Updates",
+
+		"body": "<b><a href='/gigs/1991/Nov14.html'>Arena, Vienna - 1991-11-14</a></b> <blockquote> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='https://jazzbutcher.com/audio/19911114/19911114_JazzButcher_Vienna_Gen1_Flat.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> </blockquote> Also, appearances on many 'Various Artists' releases <a href='/albums'>are now better documented.</a>",
+
+		"dt": "1500768000",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Interviews Added",
+
+		"body": "<a href='/press/1995_apollox_alex_green.html'>Alex Green (1995)</a><br/> <a href='/press/200002_julian_poole.html'>Julian Poole (2000)</a><br/> <a href='/press/200505_apollox.html'>Pat Fish (2005)</a><br/> <a href='/press/20081120_stereoembers_max_eider.html'>Max Eider (2007)</a><br/> <a href='/press/20081120_caughtinthecarousel.html'>Pat Fish (2007) - VERY long!</a><br/> <a href='/press/20080219_mickmercer_max_eider.html'>Max Eider (2008)</a><br/> <blockquote> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/lyrics/xmas_with_the_pygmies.html'>Christmas With The Pygmies</a></i> </span>  </i> </span> <br/> <audio controls='controls' title='Christmas With The Pygmies' preload='none' class='audio_player'> <source src='https://jazzbutcher.com/audio/JazzButcher_ChristmasWithThePygmies.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> </blockquote>",
+
+		"dt": "1501545600",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Max Eider's Quiet Life",
+
+		"body": "An announcement may be over-dramatic in the circumstances but perhaps I should confirm that I have decided to give up playing live. I prefer a quiet life these days. But I am forever grateful to Pat and everyone who has helped and supported us over the years. It has been a great adventure. As I said to Pat the other day, when I think of the places we’ve been, the times we’ve had, the friends we’ve made, and the bars we have drunk dry at other people’s expense (we never paid you see), I just feel very, very lucky. <p /> The JBC of course marches on. Pat has turned my departure into an opportunity before now and I have no doubt he will do so again. In truth, he’s already got that covered. And we may yet record together again. The last album wasn’t too shabby after all. <p /> And if, at some time in the future, you should happen to see me propping up the bar at a JBC show somewhere while Pat does all the hard work, do come up and say hello. <p /> Many thanks again <p /> <a href='http://maxeider.com' target='new'>Maximilian Theodore Eider III</a> (aged 55 and a half) <p /> Buy Max Eider's <i>Duck Dance</i>, over at <a href='http://maxeider.com' target='new'>maxeider.com</a> <p /> (here is Eider's <a href='/gigs/2014/Aug20_2000.html'>last recorded gig with the JBC</a>, and here is Eider's <a href='/gigs/2014/Aug21.html'>last gig with the JBC</a>)",
+
+		"dt": "1422748800",
+
+		"link": 	"",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Fire Records Boxset - <i>The Wasted Years</i>",
+
+		"body": "This item will be released on October 20, 2017. <p /> Featuring ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’. <a href='http://www.firerecords.com/product/the-jazz-butcher-the-wasted-years/' target='new'>Purchase Here</a>",
+
+		"dt": "1501718400",
+
+		"link": "http://www.firerecords.com/product/the-jazz-butcher-the-wasted-years/",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Un Samedi Soir Avec The Jazz Butcher",
+
+		"body": "<a href='/press/20170824_soulkitchen.html'>Pat discusses</a> the Glass era releases and the new Fire Records boxset.",
+
+		"dt": "1503532800",
+
+		"link": "/press/20170824_soulkitchen.html",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Wasted Years Press",
+
+		"body": "On the occasion of the <span class='release_title'><b><a href='/albums/fire_wasted.html'>The Wasted Years</a></b></span> box set release, <u><a href='/press/20171002_bandcamp.html'>here's a nice review and interview</a></u> and <u><a href='/press/20171012_louderthanwar.html'>a nice review</a></u>, and <u><a href='/press/20171015_apessimistisneverdisappointed.html'>or two</a></u>. <u><a href='/press/20171020_popmatters.html'>or three</a></u> <p /> Also, unearthed on the 'tube are some recent video segments where Pat talks briefly on a variety of topics. Click the 'Etc' tab over in <a href='/video'>The Viewing Room</a>.",
+
+		"dt": "1508025600",
+
+		"link": "/press/20171002_bandcamp.html",
+
+		"category": 	""
+
+	} ,
+	{
+		"subject": "Live Shows Uploaded",
+
+		"body": "<b><a href='/gigs/1993/Feb15.html'>French National Radio, Paris - 1993-02-15</a></b> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>In French, 4 songs performed</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='https://jazzbutcher.com/audio/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>  <b><a href='/gigs/1993/Oct28.html'>The Forum, London - 1993-10-28</a></b> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>Opening for John Cale. w/Alex Green and Paul Mulreany</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='https://jazzbutcher.com/audio/19931028/19931028_JazzButcher_London_Gen0_Flat.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>  <b><a href='/gigs/1985/Mar24.html'>Kolingsborg, Stockholm, Sweden - 1985-03-24</a></b> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='https://jazzbutcher.com/audio/19850324/19850324_JazzButcher_Stockholm_Gen2_Flat.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>",
+
+		"dt": "1509753600",
+
+		"link": 	"",
+
+		"category": "media"
+
+	} ,
+	{
+		"subject": "Four more Jazz Butcher albums compiled in upcoming ‘The Violent Years’ box set",
+
+		"body": "<img src='/images/releases/fire_violent_250.jpg'> <p /> Fire Records next spring will follow up its collection of the first four albums by The Jazz Butcher, Pat Fish’s long-running U.K. indie-pop outfit, with a new box set called The Violent Years that compiles the next four LPs, all originally released on Creation Records between 1988 and 1991. <p /> Due out March 9 on streaming/download or in a 4CD box set encased in a book, The Violent Years collects straight, bonus-less reissues of Fishcotheque (1988), Big Planet, Scarey Planet (1989), Cult of the Basement (1990) and Condition Blue (1990). The collection can be <a href='https://thejazzbutcher.bandcamp.com/album/the-violent-years' target='new'>pre-ordered now via Bandcamp</a>.",
+
+		"dt": "1514246400",
+
+		"link": "/albums/fire_violent.html",
+
+		"category": "news"
+
+	} ,
+	{
+		"subject": "The Earliest Known Jazz Butcher Gig Review",
+
+		"body": "<u><a href='/press/198306_all_that_thinks_and_moves_2.html'>1983-04-19</a></u> Courtesy its author. <span class='credit'> <b>Credit</b>: <a href='https://twitter.com/NeilCooper1' target='new'>https://twitter.com/NeilCooper1</a> </span><!-- credit -->",
+
+		"dt": "1522540800",
+
+		"link": "/press/198306_all_that_thinks_and_moves_2.html",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "'On The Road' - CBC featurette",
+
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>While en-route to 1989 Germany dates, <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> answers 'Big Questions' for CBC radio listeners</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='/audio/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <span class='credit'> <b>Credit</b>: Dana Mottahead </span><!-- credit -->",
+
+		"dt": "1574553600",
+
+		"link": 	"",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "Gig photos from Martin Reed",
+
+		"body": "Martin Reed shares his photos from 3 gigs - including the Sumsonic debut:  <a href='/gigs/1997/Mar11.html'>1997-03-11</a>, <a href='/gigs/1999/Sep23_2000.html'>1999-09-23</a>, <a href='/gigs/2005/Sep19.html'>2005-09-19</a>",
+
+		"dt": "1578614400",
+
+		"link": 	"",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "Gig photos from Pierre Guillaume",
+
+		"body": "Pierre Guillaume shares his photos from <a href='/gigs/2019/Sep28_1900.html'>2019-09-28 Paris</a>",
+
+		"dt": "1584748800",
+
+		"link": 	"",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "'My songs have not always been well understood.'",
+
+		"body": "French interview from Pop News: <a href='/press/20200504_press_popnews.html'>translated here</a>",
+
+		"dt": "1588550400",
+
+		"link": 	"",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "1985 NME article",
+
+		"body": "<a href='/press/19850302_press_nme.html'>Scanned and OCR'd early NME interview w/photo</a>",
+
+		"dt": "1588723200",
+
+		"link": 	"",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "Dr Cholmondley Repents: A-sides, B-sides and Seasides",
+
+		"body": "<img src='/images/cover_singles_500.jpg'> <p /> The Jazz Butcher reveals limited edition bookback CD ‘Dr Cholmondley Repents: A-sides, B-sides and Seasides’     (out 12th November). <p /> <a href='https://fire-records.lnk.to/JazzButcherDrCholmondleyFA' target='new'>Listen to the first singles 'Sixteen Years/Rebecca Wants Her Bike Back'/pre-order here</a> <p /> “The Jazz Butcher is one of the most brilliant incisive pop writers that Britain has produced since the glory days of Ray           Davies and Pete Townshend” Alan McGee, Creation",
+
+		"dt": "1630886400",
+
+		"link": "https://fire-records.lnk.to/JazzButcherDrCholmondleyFA",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "Pat Fish - 1957-12-20 .. 2021-10-05",
+
+		"body": "<table width='100%'> <tr> <td valign='top' width='50%'> <div class='headingItem'> Max Eider Says..  </div><blockquote> Very sad to announce that my old friend Pat Fish died suddenly but peacefully on Tuesday evening. Pat rocked my world in          every way and his death leaves a big hole in my life and my memory, much of which was only stored in his outsized brain.          Goodbye mate and thanks for everything. I’m going to miss you.<br/><i>Max x</i> </blockquote> <p /> <a href='https://jazzbutcher.com/memoriam'> <b>Memoriam is here.</b> </a> </td> <td valign='top'> <a href='https://jazzbutcher.com/memoriam'> <img src='/images/20211006_portrait_500.jpg' style='border: 1px; border-radius: 10px;' alt='portrait'></a> <span class='credit'> <b>Credit</b>: Dave E. Barker </span><!-- credit -->  </td> </tr> </table>",
+
+		"dt": "1633521742",
+
+		"link": "https://jazzbutcher.com/memoriam",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "THE JAZZ BUTCHER 'NEVER GIVE UP (GLASS VERSION)'",
+
+		"body": "Cargo Records UK | The Jazz Butcher 'Never Give Up (Glass Version)' - Random colour via @CargoRecords 'Order this now and let’s do a “Pastels/Sonic Youth” and get it in the charts!' -  <a href='https://twitter.com/chrisseventeen' target='new'>Chris Coleman</a>",
+
+		"dt": "1661865142",
+
+		"link": "https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7",
+
+		"category": "press"
+
+	} 
+	]
+}

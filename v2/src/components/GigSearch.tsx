@@ -108,7 +108,7 @@ export const GigSearchDialog = () => {
 	)
 }
 
-export const GigSearchResults = ({ results={}, banner }: { results: SearchResultType, banner?: any }): React.ReactNode => {
+export const GigSearchResults = ({ results={}, banner, preventAutoExpand }: { results: SearchResultType, banner?: any, preventAutoExpand?: boolean }): React.ReactNode => {
 	const options = gigSearchOptionsByType(results?.type);
 	const layout = options.layout;
 	const template = options?.template;
@@ -116,7 +116,7 @@ export const GigSearchResults = ({ results={}, banner }: { results: SearchResult
 	return (
 		<>
 			{(banner) && banner(results)}
-			{(template) && template(results, layout)}
+			{(template) && template(results, layout, preventAutoExpand)}
 		</>
 	)
 }
@@ -276,7 +276,7 @@ const filterGigsByAnything = (res: RecordType, query: string) => {
 	return filterBy(res, query, (searchTarget));
 }
 
-const templateGigs = (results: RecordType, layout: any) => {
+const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boolean) => {
 	const years: HashedType = {};
 	results?.results?.forEach((r: RecordType) => {
 		const year = parseYear(r.datetime);
@@ -394,7 +394,7 @@ const templateGigs = (results: RecordType, layout: any) => {
 			if (!months[month]) months[month] = [];
 			months[month].push(g);
 		});
-		return <details key={year} open={gigs?.length === 1 || Object.keys(years)?.length === 1}>
+		return <details key={year} open={(!preventAutoExpand) && (gigs?.length === 1 || Object.keys(years)?.length === 1)}>
 			<summary className="flex hover:outline">
 				<GigGraph scaling={scaling} year={year} gigs={gigs} queryString={queryString} />
 			</summary>

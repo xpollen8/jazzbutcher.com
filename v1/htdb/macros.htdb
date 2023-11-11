@@ -1514,7 +1514,7 @@ font.load().then(function () {
 #define	hamburg		${linkAlbum(href=${jbc_albums}/hamburg.html, title=Hamburg)}
 #define	dentist		${linkSong(href=${jbc_lyrics}/death_dentist.html, title=Death Dentist)}
 #define	rain		${linkSong(href=${jbc_lyrics}/rain.html, title=Rain)}
-#define	count		${linkSong(href=${jbc_lyrics}/count_dracula.html, title=Jazz Butcher -v- Count Dracula)}
+#define	count		${linkSong(href=${jbc_lyrics}/count_dracula.html, title=The Jazz Butcher Meets Count Dracula)}
 #
 #	 Distressed Gentlefolk
 #
@@ -2093,9 +2093,19 @@ ${_d[3]}
 #define	g_cost(g)	<br/><b>Admission</b>: <span class="g_cost">${g}</span>
 
 #define	g_datediff(d)
-	<span class="hiddendate">${d}</span>
-	<span class="date">(${date(l\, jS \o\f F Y, ${d})} -
-	${prettySecondsTerse(${eval(${_db_timestamp} - ${parseUnix(${d})})})} ago)
+#live	if (strlen(${d}) = 4)
+#live		if (define(useD, ${d}-01-01))
+#live		endif
+#live	else if (strlen(${d}) = 7)
+#live		if (define(useD, ${d}-01))
+#live		endif
+#live	else
+#live		if (define(useD, ${d}))
+#live		endif
+#live	endif
+	<span class="hiddendate">${useD}</span>
+	<span class="date">(${date(l\, jS \o\f F Y, ${useD})} -
+	${prettySecondsTerse(${eval(${_db_timestamp} - ${parseUnix(${useD})})})} ago)
 	</span><!-- date -->
 
 #define	g_genericweb(x, g, u, t, s, d, xd)
@@ -4517,9 +4527,9 @@ ${define(_set, false)}
 #define	songMap[i_hate_love]	i_hate_love.html
 #define	songMap[i_need_meat]	i_need_meat.html
 #define	songMap[it_has_to_be_you]	it_has_to_be_you.html
-#define	songMap[jazz_butcher_-v-_count_dracula]	count_dracula.html
+#define	songMap[the_jazz_butcher_meets_count_dracula]	count_dracula.html
 #define	songMap[jazz_butcher_theme]	jb_theme.html
-#define	songMap[jazz_butcher_-v-_prime_minister]	jb_v_pm.html
+#define	songMap[the_jazz_butcher_meets_the_prime_minister]	jb_v_pm.html
 #define	songMap[just_like_bettie_page]	betty_page.html
 #define	songMap[keeping_the_curtains_closed]	curtains.html
 #define	songMap[kids_in_the_mall]	kids_in_the_mall.html

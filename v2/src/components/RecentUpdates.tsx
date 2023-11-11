@@ -13,7 +13,7 @@ const RecentPress = (props: any) => {
 	const { press } = props;
 	if (!press?.numResults) return;
 	return <details>
-		<summary><Tag>Recent updates to Press section: {press.numResults}</Tag></summary>
+		<summary className="tagClickable">Recent updates to press items: {press.numResults}</summary>
 		<blockquote>
 			{press.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">
@@ -29,7 +29,7 @@ const RecentFeedback = (props: any) => {
 	const { feedback } = props;
 	if (!feedback?.numResults) return;
 	return <details>
-		<summary><Tag>Recent website comments: {feedback.numResults}</Tag></summary>
+		<summary className="tagClickable">Recent website comments: {feedback.numResults}</summary>
 		<blockquote>
 			{feedback.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">
@@ -58,7 +58,7 @@ const RecentMedia = (props: any) => {
 	const { media } = props;
 	if (!media?.numResults) return;
 	return <details>
-		<summary><Tag>Recent updates to Media: {media.numResults}</Tag></summary>
+		<summary className="tagClickable">Recent media updates: {media.numResults}</summary>
 		<blockquote>
 			{media.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">
@@ -74,7 +74,7 @@ const RecentReleases = (props: any) => {
 	const { releases } = props;
 	if (!releases?.numResults) return;
 	return <details>
-		<summary><Tag>Recent updates to Releases section: {releases.numResults}</Tag></summary>
+		<summary className="tagClickable">Recent updates to releases: {releases.numResults}</summary>
 		<blockquote>
 			{releases.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">
@@ -88,7 +88,7 @@ const RecentReleases = (props: any) => {
 
 const RecentNews = () => {
 	return <details>
-		<summary><Tag>Website Update Log</Tag></summary>
+		<summary className="tagClickable">Full website update log</summary>
 			<News />
 	</details>
 }
@@ -98,9 +98,9 @@ const RecentUpdates = () => {
 	return (<Suspense fallback={<>Loading...</>}>
 		<p />
 		<RecentPress press={press} />
+		<RecentReleases releases={releases} />
 		<RecentFeedback feedback={feedback} />
 		<RecentMedia media={media} />
-		<RecentReleases releases={releases} />
 		<RecentNews />
 		<p />
 	</Suspense>)

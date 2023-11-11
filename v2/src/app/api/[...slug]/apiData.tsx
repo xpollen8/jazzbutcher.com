@@ -139,6 +139,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				const releases = await apiDataFromHTDBServer('db_albums/data.json');
 				// @ts-ignore
 				releases.results = releases?.results?.filter((r: any) => r?.dtadded && moment(r.dtadded).isAfter(moment().subtract(6, 'months'))).sort((a: any, b: any) => moment(b.dtadded) - moment(a.dtadded));
+				console.log("RELEASE", releases.results);
 				releases.numResults = releases?.results?.length;
 				return releases;
 			}
@@ -146,7 +147,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				const press = await apiDataFromDataServer('recent_press', args);
 				const media = await apiDataFromDataServer('recent_media', args);
 				const feedback = await apiDataFromDataServer('recent_feedback', args);
-				const releases = await apiDataFromDataServer('recent_releases', args);
+				const releases: HashedType = await apiData('recent_releases', args);
 				return {
 					press,
 					media,

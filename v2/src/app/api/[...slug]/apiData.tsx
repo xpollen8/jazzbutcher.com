@@ -157,11 +157,18 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			case 'lyric_by_href': {
 				const releases = await apiDataFromHTDBServer('db_albums/data.json');
 				const lyrics = await apiDataFromDataServer('lyric_by_href', args);
-				const medias = await apiDataFromDataServer('media_by_song', lyrics?.results[0]?.title);
-				const song = lyrics?.results[0]?.title;
-				const foundList = await apiDataFromDataServer('releases_by_song', encodeURIComponent(song));
+				const title = lyrics?.results[0]?.title;
+				const song = encodeURIComponent(title);
+				const medias = await apiDataFromDataServer('media_by_song', song);
+				const live = await apiDataFromDataServer('live_performances_by_song', song);
+				const foundList = await apiDataFromDataServer('releases_by_song', song);
+				const releaseAudio = releases?.results?.filter((r: any) => r?.audio?.includes(title));
+				const releaseVideo = releases?.results?.filter((r: any) => r?.video?.includes(title));
 				return {
 					lyrics,
+					live,
+					releaseAudio,
+					releaseVideo,
 					medias,
 					foundon: foundList?.results?.map(({ lookup, media }: any) => ({ ...releases?.results?.find((r: any) => lookup === r.lookup), mediaurl: media })),
 				}

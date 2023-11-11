@@ -1401,7 +1401,7 @@ The town in question is South Windsor, CT.
 
 #define	count_dracula.html
 #live	if (getval(page) = count_dracula.html)
-	${lyricsHeader(title=Jazz Butcher -v- Count Dracula,
+	${lyricsHeader(title=The Jazz Butcher Meets Count Dracula,
 		video=https://www.youtube.com/embed/dpk0cMvRJf8;;Pat;;;;2000-01-10;;The Blood on the Cats video compilation (by an English company called Jettisoundz) featured a video of \"JB Meets Count Dracula\" made in my living room at a total cost to the band of 50p. (for blood red plastic bin liners).  The best bits (where Dave J ties the Goth chick to the chair) got left out\, but it's still quite a laugh\, and features Fantastic Orange Cat Sterling,
 		lyrics=${literalizeCommas(
 
@@ -1453,9 +1453,9 @@ The town in question is South Windsor, CT.
 
 	)},
 		onlist=
-		smith .. gift1 .. nons .. hamburg .. drainglass .. fire_cholmondley
+		va_blood_on_the_cats.. smith .. gift1 .. nons .. hamburg .. drainglass .. fire_cholmondley
 	, patsez=${literalizeCommas(
-		Southern Mark Smith and Jazz Butcher -v- Count Dracula were recorded in the summer of 1983 in a place called Wellingborough, a small town in the middle of England where even the children are scarey! "Hey, mister, can you SEE in them glasses?" I get to sing and play things like guitar, sax and piano. Max does the electric guitar. On bass is Rolo McGinty, and Princess Alice Thompson plays the organ. They're both in the The Woodentops now, a group internationally recognised as being the shortest collection of pop musicians in the world. Playing the drums is Kevin Haskins, a charming neighbour of mine, and veteran of the Bauhaus conspiracy. Miaowula!
+		Southern Mark Smith and Jazz Butcher Meets Count Dracula were recorded in the summer of 1983 in a place called Wellingborough, a small town in the middle of England where even the children are scarey! "Hey, mister, can you SEE in them glasses?" I get to sing and play things like guitar, sax and piano. Max does the electric guitar. On bass is Rolo McGinty, and Princess Alice Thompson plays the organ. They're both in the The Woodentops now, a group internationally recognised as being the shortest collection of pop musicians in the world. Playing the drums is Kevin Haskins, a charming neighbour of mine, and veteran of the Bauhaus conspiracy. Miaowula!
 		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#dracula;;
 	)}
 	,embed_link=https://youtube.com/embed/dpk0cMvRJf8)}
@@ -4103,7 +4103,7 @@ fade
 		onlist=
 		scandal .. smith .. rmen .. gift1 .. nons .. uncond .. family .. drainglass .. bigtime_jungle .. fire_wasted .. fire_cholmondley
 	, patsez=${literalizeCommas(
-		Southern Mark Smith and Jazz Butcher -v- Count Dracula were recorded in the summer of 1983 in a place called Wellingborough, a small town in the middle of England where even the children are scarey! "Hey, mister, can you SEE in them glasses?" I get to sing and play things like guitar, sax and piano. Max does the electric guitar. On bass is Rolo McGinty, and Princess Alice Thompson plays the organ. They're both in the The Woodentops now, a group internationally recognised as being the shortest collection of pop musicians in the world. Playing the drums is Kevin Haskins, a charming neighbour of mine, and veteran of the Bauhaus conspiracy. Miaowula!
+		Southern Mark Smith and Jazz Butcher Meets Count Dracula were recorded in the summer of 1983 in a place called Wellingborough, a small town in the middle of England where even the children are scarey! "Hey, mister, can you SEE in them glasses?" I get to sing and play things like guitar, sax and piano. Max does the electric guitar. On bass is Rolo McGinty, and Princess Alice Thompson plays the organ. They're both in the The Woodentops now, a group internationally recognised as being the shortest collection of pop musicians in the world. Playing the drums is Kevin Haskins, a charming neighbour of mine, and veteran of the Bauhaus conspiracy. Miaowula!
 		;;<b>The Gift Of Music</b> liner notes;;/albums/gift1.html#smith;;
 		--NEXT--
 		Soft white underbelly = Saturday Scene.

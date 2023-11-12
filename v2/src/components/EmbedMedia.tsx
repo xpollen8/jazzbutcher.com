@@ -201,10 +201,10 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 						</>}
 						{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
 						{(author) && <span className="smalltext">({author})</span>}
-						{(comment) && <span className="smalltext"> ({comment}) </span>}
+						{/*(comment) && <span className="smalltext"> ({comment}) </span>*/}
 						<EmbedVideo className={className} data={data} />
-						{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 						{children}
+						{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 					</div>);
 				}
 			} else {

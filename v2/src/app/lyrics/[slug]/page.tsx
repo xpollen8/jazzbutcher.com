@@ -22,8 +22,7 @@ const	LyricVideo = ({ video }: any) => {
 			const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
 			return (<div key={key}>
 				<center>
-					<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate }}>
-						<br />{caption}
+					<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate, comment: caption }}>
 					</EmbedMedia>
 				</center>
 			</div>)
@@ -173,7 +172,7 @@ const LiveAudio = (props: any) => {
 		<details open={live?.length === 1}>
 		<summary className="tagClickable">{pluralize(live?.length, 'Documented performance')}</summary>
 		<blockquote>
-			<GigSearchResults results={{ results: live }} preventAutoExpand={true} />
+			<GigSearchResults results={{ results: live }} />
 		</blockquote>
 		</details>
 	)

@@ -23,6 +23,7 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 	wav?: string
 	url?: string
 	author?: string | React.ReactNode
+	collection?: string
 	autolink?: boolean
 	children?: React.ReactNode
 }) => {

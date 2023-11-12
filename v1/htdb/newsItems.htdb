@@ -840,7 +840,14 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 	"Order this now and let’s do a “Pastels/Sonic Youth” and get it in the charts!" - 
 	${linkExternal(https://twitter.com/chrisseventeen, Chris Coleman)}
 
-#define	newsItem->numResults	74
+#define	newsItem[75]->dt	${date(U, 2023-11-11 16:21:00)}
+#define	newsItem[75]->subject Blood On The Cats
+#define	newsItem[75]->link	/albums/va_blood_on_the_cats.html
+#define	newsItem[75]->category	press
+#define	newsItem[75]->body
+	Finally add this old comp!
+
+#define	newsItem->numResults	75
 
 
 #define	data.json

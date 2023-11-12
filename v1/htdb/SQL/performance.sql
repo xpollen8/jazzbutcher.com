@@ -18,7 +18,7 @@ CREATE TABLE `performance` (
   `version` varchar(100),
   `author` varchar(50) DEFAULT NULL,
   `instruments` varchar(200) DEFAULT NULL,
-  `media` varchar(200) DEFAULT NULL,
+  `media` MEDIUMTEXT DEFAULT NULL,
   KEY `idx0` (`performance_id`),
   KEY `idx1` (`datetime`,`category`),
   KEY `idx2` (`category`,`title`),

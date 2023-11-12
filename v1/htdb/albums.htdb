@@ -33,24 +33,26 @@ ${tag_end}
 #live		if (getval(as[${i}]->type) != set)
 #live			if (getval(as[${i}]->type) != ${_side})
 #live				if (define(_side, ${as[${i}]->type}))
-</blockquote>
-${tag_beg}
-#live	if (defined(${_side}))
-${${_side}}
-#live	else
-${_side}
-#live	endif
-${tag_end}
-<blockquote>
+						</blockquote>
+						${tag_beg}
+#live					if (defined(${_side}))
+							${${_side}}
+#live					else
+							${_side}
+#live					endif
+						${tag_end}
+						<blockquote>
 #live				endif
 #live			endif
 #live		endif
-#live		if (defined(as[${i}]->ordinal))
+#live		if (getint(as[${i}]->ordinal))
 				${as[${i}]->ordinal}.
 #live		endif
-#live	if (defined(as[${i}]->media) = NULL)
-			${songLinkMapped(title=${literalizeCommas(${as[${i}]->song})})}
-#live	endif
+#live		if (!defined(as[${i}]->media))
+				${as[${i}]->song}
+#live		else if (defined(as[${i}]->media) = NULL)
+				${songLinkMapped(title=${literalizeCommas(${as[${i}]->song})})}
+#live		endif
 #live		if (getval(as[${i}]->variant) != NULL)
 				<span class="song_author">(${as[${i}]->variant})</span>
 #live		endif
@@ -61,7 +63,7 @@ ${tag_end}
 				<span class="song_author">(${as[${i}]->author})</span>
 #live		endif
 #live		if (getval(as[${i}]->media) != NULL)
-			${linkAudio(title=${literalizeCommas(${as[${i}]->song})}, mp3=${as[${i}]->media})}
+				${linkAudio(title=${literalizeCommas(${as[${i}]->song})}, mp3=${as[${i}]->media})}
 #live		endif
 	<br />
 #live	endwhile
@@ -69,9 +71,10 @@ ${tag_end}
 	</blockquote>
 
 #live	endif
-#live	if (define(LL, ${lookupAlbumBy(l=${release})}))
-	${parseAlbumAudio(prefix=${LL})}
-#live	endif
+#<hr/>
+##live	if (define(LL, ${lookupAlbumBy(l=${release})}))
+#	${parseAlbumAudio(prefix=${LL})}
+##live	endif
 
 #define	fetchAlbumPersonnel(release)
 #
@@ -2541,15 +2544,38 @@ Previously available on the ${fishco} LP/CD.
 	${end_tabs}
 
 	${jbc_footer}
-#live	else if (lookupAlbumBy(l=${truncAt(.html, ${page})}, f=lookup)})
+#live	else if (lookupAlbumBy(l=${truncAt(.html, ${page})}, f=lookup))
 #
 #	else auto-generate page just from db_albums definitions
 #
 	${mkAlbumHeader(lookup=${truncAt(.html, ${page})}, body=${literalizeCommas(
 	)})}
+#live	if ((defined(UA)) && (cloneAlbum(lookup=${truncAt(.html, ${page})}, newObj=thisAlbum)))
+#
+#	and auto-insert from db definitions
+#
+	${clearAlbumPerf(release=${thisAlbum[1]->lookup})}
+	${parseAlbumAudio(prefix=thisAlbum[1], field=audio, callback=UpdateAlbumSong)}
+	${parseImages(prefix=thisAlbum[1], field=video, callback=UpdateAlbumVideo)}
+#live	endif
 	${jbc_footer}
 
 #live	endif
+
+#define	UpdateAlbumVideo(prefix, url)
+	${addAlbumPerf(release=${${prefix}->lookup}, song="", media=${url})}
+
+#define	UpdateAlbumSong(prefix, result)
+#	**${${prefix}->lookup}
+#	**${${prefix}->audio}
+#	<hr/>
+#	URL**${${result}->mediaurl}
+#	SON**${song}
+#	ORD**${ordinal}
+#	COMM**$comment}
+#	AUT**${author}
+#	CRED**$mediacredit}
+	${addAlbumPerf(release=${${prefix}->lookup}, song="${${result}->song}", type=Aside, ordinal=${${result}->ordinal}, author=${${result}->author}, media=${${result}->mediaurl}, variant=${${result}->comment})}
 
 #define	va_shadow_and_substance.html
 #live	if (getval(page) = va_shadow_and_substance.html)

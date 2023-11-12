@@ -6,6 +6,8 @@
 #define	parseAlbumImages(prefix, field, width=250)
 #live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
 #live		loop(ci, 1, ${chunks->numResults})
+#live			if (define(parts[1], ))
+#live			endif
 #live			if (define(parts[2], ))
 #live			endif
 #live			if (define(parts[3], ))
@@ -20,21 +22,23 @@
 #live					if (defined(parts[2]))
 							${g_caption(${parts[2]})}
 #live					endif
+#live					if (defined(parts[3]))
+							<center style="padding-bottom: 10px;">
+								${parseCredit(c=${parts[3]};;${parts[4]};;${parts[5]})}
+							</center>
+#live					endif
+						<p />
 #live				endif
-#live				if (defined(parts[3]))
-						<center style="padding-bottom: 10px;">
-							${parseCredit(c=${parts[3]};;${parts[4]};;${parts[5]})}
-						</center>
-#live				endif
-					<p />
 #live			endif
 #live		endloop
 #live	endif
 
 ## images=URL;;credit;;credit_url;;credit_date;;caption$$....
-#define	parseImages(prefix, field, width=250)
+#define	parseImages(prefix, field, width=250, callback)
 #live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
 #live		loop(ci, 1, ${chunks->numResults})
+#live			if (define(parts[1], ))
+#live			endif
 #live			if (define(parts[2], ))
 #live			endif
 #live			if (define(parts[3], ))
@@ -44,18 +48,22 @@
 #live			if (define(parts[5], ))
 #live			endif
 #live			if (makeArray(parts, ;;, ${chunks[${ci}]}))
-#live				if (defined(parts[1]))
-						<a href="${parts[1]}.jpg"><img src="${parts[1]}_${width}.jpg" alt="scan" width="${width}" /></a>
-#live					if (defined(parts[5]))
-							${g_caption(${parts[5]})}
+#live				if (defined(callback))
+						${${callback}(prefix=${prefix}, url=${parts[1]};;${parts[2]};;${parts[3]};;${parts[4]};;${parts[5]})}
+#live				else
+#live					if (defined(parts[1]))
+							<a href="${parts[1]}.jpg"><img src="${parts[1]}_${width}.jpg" alt="scan" width="${width}" /></a>
+#live						if (defined(parts[5]))
+								${g_caption(${parts[5]})}
+#live						endif
 #live					endif
+#live					if (defined(parts[2]))
+							<center style="padding-bottom: 10px;">
+								${parseCredit(c=${parts[2]};;${parts[3]};;${parts[4]})}
+							</center>
+#live					endif
+						<p />
 #live				endif
-#live				if (defined(parts[2]))
-						<center style="padding-bottom: 10px;">
-							${parseCredit(c=${parts[2]};;${parts[3]};;${parts[4]})}
-						</center>
-#live				endif
-					<p />
 #live			endif
 #live		endloop
 #live	endif
@@ -66,7 +74,7 @@
 #person=>name::instruments
 # EX: url;;title::ordinal::version;;person::instruments^^
 
-#define	parseAlbumAudio(prefix, field=audio)
+#define	parseAlbumAudio(prefix, field=audio, callback)
 #live	if (makeArray(chunks, $$, ${${prefix}->${field}}))
 #live		loop(ci, 1, ${chunks->numResults})
 #live			if (define(parts[1], ))
@@ -100,7 +108,11 @@
 							${define(_embed->comment, ${s_parts[3]})}
 #live						endif
 #live					endif
-						${doMediaEmbed(pr=_embed)}
+#live					if (defined(callback))
+							${${callback}(prefix=${prefix}, result=_embed)}
+#live					else
+							${doMediaEmbed(pr=_embed)}
+#live					endif
 #live				endif
 					<p />
 #live			endif
@@ -4455,7 +4467,6 @@ ${define(_set, false)}
 #live	else
 	${linkSong(title=${title}, href=${jbc_search}?f=song&q=${encode(${title})})}
 #live	endif
-
 
 #define	songMap[diamorphone]	diamorphone.html
 #define	songMap[all_the_saints]	all_the_saints.html

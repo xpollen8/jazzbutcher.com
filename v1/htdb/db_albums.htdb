@@ -3782,6 +3782,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[104]->images	/images/releases/va_blood_on_the_cats_back
 #define	albums[104]->contribution	count
 #define	albums[104]->dtreleased	1983
+#define	albums[104]->dtadded	2023-11-11
 #define	albums[104]->blurb
 	heavier
 	mix compared to "Draining..." version. The backing vocals

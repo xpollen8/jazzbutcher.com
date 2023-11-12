@@ -1,6 +1,6 @@
 "use client"
 
-import { parseCredit } from '@/lib/utils';
+import { ts2URI, parseCredit } from '@/lib/utils';
 import useAudioLive from '@/lib/useAudioLive';
 import EmbedMedia from '@/components/EmbedMedia';
 import LetterHeader from '@/components/LetterHeader';
@@ -15,6 +15,7 @@ const AudioSection = ({ title, data }: any) => {
 			//if (title === 'Live Shows' && !d.mediaurl) console.log("DATA", d);
 			return <EmbedMedia key={key}
 				data={{
+					parent: '/gigs/' + ts2URI(d.datetime),
 					datetime: d.datetime,
 					venue: d.venue,
 					city: d.city,

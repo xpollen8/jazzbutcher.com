@@ -218,13 +218,19 @@ const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => 
 
 const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.audio) {
-		const audio = parseCaptionsSourcesEtc(release.audio);
+		const audio = parseCaptionsSourcesEtc(release.audio)?.map(([ file, song, credits ]: any) => {
+			const [ title, ordinal, version ] = song?.split('::') || [];
+			return {
+				file, song, credits,
+				title, ordinal, version,
+			}
+		})?.filter(({ file }: any) => file);
 		if (audio?.length) {
 			return (<>
 				<Tag>Audio</Tag>
 				<blockquote>
-				{audio?.map(([ file, song, credits ]: any, key: number) => {
-					const [ title, ordinal, version ] = song?.split('::');
+				{audio?.map(({ file, song, credits, title, ordinal, version }: any, key: number) => {
+					//const [ title, ordinal, version ] = song?.split('::');
 					//const people = credits?.split('^^') || [];
 					return <EmbedMedia key={key} data={{ ...release, song: title, mediaurl: file, parent: release.href, version, ordinal }} />
 				})}

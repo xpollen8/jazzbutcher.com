@@ -71,9 +71,10 @@ const sections : { [key: string]: BreadCrumb } = {
 //	'press?filters=type%3B%3Bpat': { parent: 'writings', title: "Pat's gig reviews" },
 
 	'audio/released': { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: false },
+	'audio/unreleased': { parent: 'audio', title: 'Un-released tracks', summary: "", inParentDirectory: false },
 	'audio/live': { parent: 'audio', title: 'Live Recordings', summary: "Non-official recordings", inParentDirectory: false },
 	'press?filters=audio;;audio': { parent: 'audio', title: 'Recorded Interviews', summary: "Radio, online", body: "This re-directs to those Press Items which are have Audio", inParentDirectory: false },
-	'releases?filters=type;;demo': { parent: 'audio', title: 'Demos', summary: "Unreleased/sent to fans", body: "This re-directs to those Releases which are Demos", inParentDirectory: false },
+	'releases?filters=type;;demo': { parent: 'audio', title: 'Demos', summary: "Demos/sent to fans", body: "This re-directs to those Releases which are Demos", inParentDirectory: false },
 	'audio/elsewhere': { parent: 'audio', title: 'Audio Found Elsewhere', summary: "Podcasts, etc", inParentDirectory: false },
 
 //	'press?filters=type%3B%3Binterview': { parent: 'press', title: 'Interviews' },

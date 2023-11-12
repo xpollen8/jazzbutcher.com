@@ -110,6 +110,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			case 'gigsongs':
 			case 'performances':
 			case 'audio':
+			case 'unreleased_audio':
 			case 'gigs_with_audio':
 			case 'release_audio_by_project':
 			case 'audio_by_project':

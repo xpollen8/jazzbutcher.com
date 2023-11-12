@@ -578,7 +578,7 @@ ${define(gsExtra[${dt}], ${summary})}
 		Recorded in December 2007 at Greenway Studio by Andy Clarke 
 		</p>
 		<blockquote>
-		${linkAudio(collection=Uncle Andy's 2007 Christmas Album, title=After Hours, datetime=2007-12-00, comment=2007-12, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3)}
+		${linkAudio(lookup=va_andy_2007, collection=Uncle Andy's 2007 Christmas Album, title=After Hours, datetime=2007-12-00, comment=2007-12, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2007_UncleAndy_ChristmasAlbum/2007_UncleAndy_ChristmasAlbum_PatFish_Afterhours.mp3)}
 		</blockquote>
 		</p>
 		${g_credit(g=Mark Cotton, d=2021-11-15)}
@@ -590,7 +590,7 @@ ${define(gsExtra[${dt}], ${summary})}
 		<div class="listenItem">
 		Tracks that appeared on early compilations and singles.
 		<blockquote>
-		${linkAudio(title=Christmas With The Pygmies, mp3=${jbc_audio}/JazzButcher_ChristmasWithThePygmies.mp3)}
+		${linkAudio(lookup=swingin, title=Christmas With The Pygmies, mp3=${jbc_audio}/JazzButcher_ChristmasWithThePygmies.mp3)}
 			From <b>${swingin}</b> (1985)
 		</blockquote>
 
@@ -604,21 +604,21 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=Affection, collection="rarities", mp3=${jbc_audio}/JazzButcher_Affection.mp3, author=Jonathan Richman)}
+		${linkAudio(lookup=va_shadow, title=Affection, collection=Cak Bag session, mp3=${jbc_audio}/JazzButcher_Affection.mp3, author=Jonathan Richman)}
 			From <b>${va_shadow}</b> (1984).
 			<br/>Recorded May 1983, "Cak Bag session", Sketch Studio, Northampton
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=Temptation Inside Your Heart, collection="rarities", mp3=${jbc_audio}/JazzButcher_TemptationInsideYourHeart.mp3, author=Velvet Underground)}
+		${linkAudio(lookup=va_spark, title=Temptation Inside Your Heart, collection=Cak Bag session, mp3=${jbc_audio}/JazzButcher_TemptationInsideYourHeart.mp3, author=Velvet Underground)}
 			From <b>${va_spark}</b> (1984).
 			<br/>Recorded from the May 1983, "Cak Bag session", Sketch Studio, Northampton
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=May I, collection="rarities", mp3=${jbc_audio}/JazzButcher_MayI.mp3, author=Kevin Ayes)}
+		${linkAudio(lookup=may, title=May I, mp3=${jbc_audio}/JazzButcher_MayI.mp3, author=Kevin Ayes)}
 			From <b>${may}</b> (1987)
 		</blockquote>
 
@@ -630,31 +630,31 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=Poor Spy, collection="rarities", mp3=${jbc_audio}/JazzButcher_PoorSpy.mp3)}
+		${linkAudio(title=Poor Spy, collection=Cak Bag session, mp3=${jbc_audio}/JazzButcher_PoorSpy.mp3)}
 			<br/>Recorded May 1983, "Cak Bag session", Sketch Studio, Northampton
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=Chinese Envoy, collection="rarities", mp3=${jbc_audio}/JazzButcher_ChineseEnvoy.mp3, author=John Cale)}
+		${linkAudio(lookup=va_seventeen_2, title=Chinese Envoy, mp3=${jbc_audio}/JazzButcher_ChineseEnvoy.mp3, author=John Cale)}
 			From <b>${va_seventeen_2}</b> (1983)
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(collection=Guest Pass 2000, title=${hobbu}, datetime=2000-00-00, mp3=${jbc_audio}/tunes/hobbu.mp3)}
+		${linkAudio(lookup=cdr_guestpass2000, title=The Hobbu Song, author=Robert Goodman, datetime=2000-00-00, mp3=${jbc_audio}/tunes/hobbu.mp3)}
 			${cdr_guestpass2000}
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=Cowgirl Fever, collection="rarities", mp3=${jbc_audio}/mp3/cowgirlfever.mp3)}
+		${linkAudio(lookup=marnie, title=Cowgirl Fever, mp3=${jbc_audio}/mp3/cowgirlfever.mp3)}
 			${marnie} 12" single B-side (1984)
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=Vodka Girls, collection="rarities", mp3=${jbc_audio}/mp3/vodkagirls.mp3)}
+		${linkAudio(lookup=va_abus_21, title=Vodka Girls, mp3=${jbc_audio}/mp3/vodkagirls.mp3)}
 			From ${va_abus_21} (1994)
 		</blockquote>
 		</div>

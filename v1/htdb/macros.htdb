@@ -851,10 +851,10 @@
 	}
 </style>
 
-#define	linkAudio(project=jbc, collection, type, title, comment, mp3, url, author, autolink=yes, credit, images, datetime, parent, ordinal)
+#define	linkAudio(project=jbc, collection, type, title, comment, mp3, url, author, autolink=yes, credit, images, datetime, parent, ordinal, lookup)
 #live	if (defined(update))
-#insert IGNORE into media set project="${project}", type="audio", subtype="${type}", name="${stripTags(${literalizeCommas(${title})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", ordinal="${ordinal}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}";
-#live		if (sql(insert IGNORE into media set project="${project}", type="audio", subtype="${type}", name="${stripTags(${literalizeCommas(${title})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", ordinal="${ordinal}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}"))
+#insert IGNORE into media set lookup="${lookup}", project="${project}", type="audio", subtype="${type}", name="${stripTags(${literalizeCommas(${title})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", ordinal="${ordinal}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}";
+#live		if (sql(insert IGNORE into media set lookup="${lookup}", project="${project}", type="audio", subtype="${type}", name="${stripTags(${literalizeCommas(${title})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", collection="${collection}", ordinal="${ordinal}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}"))
 #live		endif
 #live	endif
 	<span class="audioPlayer">

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import LinkAudio from '@/components/LinkAudio';
 import EmbedVideo from '@/components/EmbedVideo';
-import { autoLink } from '@/lib/utils';
+import { imageBase, autoLink } from '@/lib/utils';
 import { Attribution } from '@/components/GenericWeb';
 
 const Performers = ({ datetime }: { datetime: string }) => {
@@ -150,7 +150,8 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);
-	const useMediaurl = (mediaurl && mediaurl.startsWith('/')) ? `https://v1.jazzbutcher.com${mediaurl}` : mediaurl;
+	const useMediaurl = imageBase(mediaurl);
+	//const useMediaurl = (mediaurl && mediaurl.startsWith('/')) ? `https://v1.jazzbutcher.com${mediaurl}` : mediaurl;
 	return (<>
 		{(() => {
 			if (useMediaurl && !disableVideo) {

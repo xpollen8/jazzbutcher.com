@@ -101,6 +101,7 @@ const CommentForm = (props: { session?: string, who?: string, whence?: string, c
 	return <div className="text-left drop-shadow-2xl listItem">
 		<form
 			onSubmit={(ev: any) => {
+				alert('Sorry! Not yet functional');
 				ev.preventDefault();
 				formAction({
 					session,

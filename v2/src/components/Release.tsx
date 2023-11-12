@@ -218,7 +218,7 @@ const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => 
 
 const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.audio) {
-		const audio = parseCaptionsSourcesEtc(release.audio)?.filter((r: any) => r.mediaurl);
+		const audio = parseCaptionsSourcesEtc(release.audio);
 		if (audio?.length) {
 			return (<>
 				<Tag>Audio</Tag>

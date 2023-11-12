@@ -51,6 +51,7 @@ const media2Embed = (p: any) => {
 		title: name,
 		project,
 		author,
+		collection,
 	}
 }
 

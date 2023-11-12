@@ -1,6 +1,6 @@
 {
 	"noun": "newsItem",
-	"numResults": 74,
+	"numResults": 75,
 	"results": [
 	{
 		"subject": "Help Us!",
@@ -886,6 +886,18 @@
 		"dt": "1661865142",
 
 		"link": "https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "Blood On The Cats",
+
+		"body": "Finally add this old comp!",
+
+		"dt": "1699719660",
+
+		"link": "/albums/va_blood_on_the_cats.html",
 
 		"category": "press"
 

@@ -222,11 +222,17 @@ ${define(lastPer, ${ap[${api}]->performer})}
 #live		endif
 #live	endif
 
-#define	addAlbumPerf(release, person, category=release, aka=NULL, instruments, song=NULL, ordinal=NULL, type=set, datetime, media=NULL, author=NULL, version, variant, project)
+#define	addAlbumPerf(release, person, category=release, aka=NULL, instruments, song=NULL, ordinal=NULL, type=set, datetime, media=NULL, author=NULL, version, variant, project, collection)
 #live	if (defined(UA))
 #insert into performance set lookup="${release}", category="${category}", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal="${ordinal}", song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}";
 #live		if (sql(insert into performance set lookup="${release}", category="release", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal="${ordinal}", song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}", project="${project}"))
 #live		endif
+
+#live	if ((defined(media)) && (getval(media) != NULL))
+#insert IGNORE into media set lookup="${release}", project="${project}", type="audio", name=${song}, mp3="${media}", author="${author}", collection="${collection}", ordinal="${ordinal}", datetime=NOW();
+#live		if (sql(insert IGNORE into media set lookup="${release}", project="${project}", type="audio", name=${song}, mp3="${media}", author="${author}", collection="${collection}", ordinal="${ordinal}", datetime=NOW()))
+#live		endif
+#live	endif
 #live	endif
 
 #define	mkAlbumPress(album)
@@ -4880,7 +4886,7 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=trampling, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=trampling)}
-	${addAlbumPerf(release=trampling,  ordinal=12, song="Trampling Tokyo", media=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/AlanMoore/AlanMoore_PatFish_Trampling_Tokyo.mp3)}
+	${addAlbumPerf(release=trampling,  ordinal=12, song="Trampling Tokyo", media=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/AlanMoore/AlanMoore_PatFish_Trampling_Tokyo.mp3, collection=Alan Moore Session)}
 	${addAlbumPerf(release=trampling, person=[[person:Alan_Moore]], instruments=Voice\, Words)}
 	${addAlbumPerf(release=trampling, person=[[person:Jill_Partington]], instruments=Drums)}
 	${addAlbumPerf(release=trampling, person=[[person:Michael_Holloway]], instruments=Bass)}
@@ -4892,7 +4898,7 @@ Previously available on the ${fishco} LP/CD.
 #live	endif
 
 #define	sebastians_medication.html
-#live	if (getval(page) sebastians_medication va_patron_saints.html)
+#live	if (getval(page) == sebastians_medication.html)
 	${mkAlbumHeader(lookup=sebastians_medication, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=sebastians_medication)}
@@ -4900,4 +4906,3 @@ Previously available on the ${fishco} LP/CD.
 
 	${jbc_footer}
 #live	endif
-

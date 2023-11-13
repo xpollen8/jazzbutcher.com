@@ -224,8 +224,8 @@ const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => 
 # EX: url;;title::ordinal::version;;person::instruments^^
 */
 
-const mergeAudioAndMedia = (audio: any[], media: any[]) => {
-	const audios = parseCaptionsSourcesEtc(audio)?.map(([ mediaurl, song, credits ]: any) => {
+const mergeAudioAndMedia = (audio?: string, media?: any[]) => {
+	const audios = parseCaptionsSourcesEtc(audio || '')?.map(([ mediaurl, song, credits ]: any) => {
 		const [ title, ordinal, version ] = song?.split('::') || [];
 		return {
 			type: '',
@@ -236,7 +236,7 @@ const mergeAudioAndMedia = (audio: any[], media: any[]) => {
 			credits,
 		}
 	}) || [];
-	const songs = media?.results?.map(({ type, author, media, ordinal, setnum, title, version, variant }: any) => {
+	const songs = media?.map(({ type, author, media, ordinal, setnum, title, version, variant }: any) => {
 		const [ mediaurl, mediacredit, mediacreditdate ] = media?.split(';;') || [];
 		return {
 			type,
@@ -257,7 +257,7 @@ const mergeAudioAndMedia = (audio: any[], media: any[]) => {
 	for (let i = 0; i < audios?.length; i++) {
 		merged.push({
 			...audios[i], 
-			...(songs.find((itmInner) => itmInner.mediaurl === audios[i].mediaurl))}
+			...(songs.find((itmInner) => itmInner.mediaurl === audios[i]?.mediaurl))}
 		);
 	}
 	return merged;
@@ -389,7 +389,7 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 	const { data, isLoading, error } = useReleaseSongs(lookup);
 	const { songs, credits } = data || {};
 	// merge duplicates in ->audio and ->songs
-	const tracks = mergeAudioAndMedia(release?.audio, data?.songs);
+	const tracks = mergeAudioAndMedia(release?.audio, data?.songs?.results);
 	return (
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading && songs) && (<>

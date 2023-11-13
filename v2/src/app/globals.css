@@ -710,3 +710,12 @@ details summary::-webkit-details-marker {
 
 .person {
 }
+
+.masonry {
+	columns: 14rem;
+	column-gap: 1rem;
+}
+.masonry > div {
+	break-inside: avoid;
+	margin: 0 0 1rem;
+}

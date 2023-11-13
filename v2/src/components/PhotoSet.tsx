@@ -14,12 +14,12 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 		{(credit || credit_url) && <>{(description) && <br />}<Credit g={credit} u={credit_url} d={credit_date} /></>}
 		{(pdf) && <><br /><Link href={pdf}>Download this photoset as a single PDF</Link> (large file)</>}
 	</div>}
-	<div className="flex flex-wrap justify-center gap-3 listItem">
+	<div className="masonry listItem">
 		{photos.map((w: any, key: number) => {
 			const { src, alt, credit, credit_url, credit_date, body } = w;
-			const { image, thumb } = parseImage(src);
-			return <div key={key} className="p-1 drop-shadow-sm border border-slate-500 text-center w-80">
-				{(image) && <Link href={image}>{(thumb) && <Image className="w-full" key={key} unoptimized src={thumb} width={350} height={350} alt={alt} />}</Link>}
+			const { image, thumb } = parseImage(src, 500);
+			return <div key={key} className="text-center p-1 drop-shadow-sm border border-slate-500 rounded-sm">
+				{(image) && <Link href={image}>{(thumb) && <Image className="rounded-sm" key={key} unoptimized src={thumb} width={350} height={350} alt={alt} />}</Link>}
 				{alt}
 				{(body) && <><p />&quot;<i>{body}</i>&quot;</>}
 				{(credit) && <><br /><Credit g={credit} u={credit_url} d={credit_date} /></>}

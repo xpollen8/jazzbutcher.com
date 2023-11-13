@@ -133,7 +133,6 @@ const sections : { [key: string]: BreadCrumb } = {
 	tonix: { parent: 'prejbc', title: 'Sonic Tonix', summary: "1980-1981 (AKA 'The Tonix')", inParentDirectory: true, body: "John Silver, Dave Goldie, Simon Mawby, Owen Jones, Pat Fish, Pete Millson" },
 	wow_federation: { parent: 'prejbc', title: 'Wow Federation', summary: "1981", inParentDirectory: true, body: "Millree Hughes, Brian Warner, Ian Warner, Nick Horton, Andy Love, James Rogers, Carl Fysh, Vicky Richardson, Boz Warnock, Andy Sizer, Liza Widdowson, Deborah Keeping, Paul Conneally, Pat Fish, Max Eider, Will Buchanan, Mark Sinker (https://rateyourmusic.com/artist/wow-federation)" },
 	jazz_insects: { parent: 'prejbc', title: 'Jazz Insects', summary: "1982", inParentDirectory: true, body: "Matt Black, Mark Sinker, Max Eider, Pat Fish" },
-	//the_tonix: { parent: 'prejbc', title: 'The Tonix', inParentDirectory: true },
 
 	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content', rootHideChildren: true },
 	help: { parent: 'jbc', title: 'Get Involved!' },

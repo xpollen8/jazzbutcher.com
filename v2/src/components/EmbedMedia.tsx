@@ -151,7 +151,6 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);
 	const useMediaurl = mediaurl && imageBase(mediaurl);
-	//const useMediaurl = (mediaurl && mediaurl.startsWith('/')) ? `https://v1.jazzbutcher.com${mediaurl}` : mediaurl;
 	return (<>
 		{(() => {
 			if (useMediaurl && !disableVideo) {

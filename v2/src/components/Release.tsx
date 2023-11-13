@@ -72,23 +72,23 @@ const PerformanceCredits = ({ who, album_credits, song_credits }: { who: string,
 	</>)
 }
 
-const ReleaseSongList = ({ songs }: { songs: any[] }) => {
+const ReleaseTracks = ({ songs, lookup }: { songs: any[], lookup: string }) => {
 	if (!songs?.length) return;
 	return (<>
 		<Tag>Tracks</Tag>
 		<blockquote>
-			{songs?.sort((a: any, b: any) => a.type.localeCompare(b.type))?.map((item: any, key: number) => {
+			{songs?.sort((a: any, b: any) => a?.type.localeCompare(b?.type))?.map((item: any, key: number) => {
 				if (item?.author === 'NULL') item.author = null;
-				if (item?.media === 'NULL') item.media = null;
+				if (item?.mediaurl === 'NULL') item.mediaurl = null;
 				if (item?.version === 'NULL') item.version = null;
 				return <div key={key}>
-					{(item?.media?.length) ?
+					{(item?.mediaurl?.length) ?
 						<div style={{ marginLeft: '-7px' }}>
-						<EmbedMedia data={{ mediaurl: item.media, ...item, setnum: item?.type, autolink: true }} />
+						<EmbedMedia data={{ lookup, ...item, setnum: item?.type, autolink: true }} />
 						</div>
 					:
 					<>
-					{(!['set','NULL'].includes(item?.type)) && <>{item.type.replace('side', '')}{': '}</>}
+					{(!['','set','NULL']?.includes(item?.type)) && <>{item?.type?.replace('side', '')}{': '}</>}
 						<span>{item?.ordinal}.</span> <i>{AutoLinkSong(item?.title)}</i> {(item?.author) && <span className="date">({item?.author})</span>} {(item?.version) && <span className="date">({item?.version})</span>} {(item?.variant) && <span className="date">({item?.variant})</span>}
 					</>
 					}
@@ -216,6 +216,54 @@ const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => 
 	}
 }
 
+/*
+#audio=url;;song;;credits
+#song=>title::ordinal::version
+#credits=>person^^person^^
+#person=>name::instruments
+# EX: url;;title::ordinal::version;;person::instruments^^
+*/
+
+const mergeAudioAndMedia = (audio: any[], media: any[]) => {
+	const audios = parseCaptionsSourcesEtc(audio)?.map(([ mediaurl, song, credits ]: any) => {
+		const [ title, ordinal, version ] = song?.split('::') || [];
+		return {
+			type: '',
+			mediaurl,
+			title,
+			ordinal,
+			version,
+			credits,
+		}
+	}) || [];
+	const songs = media?.results?.map(({ type, author, media, ordinal, setnum, title, version, variant }: any) => {
+		const [ mediaurl, mediacredit, mediacreditdate ] = media?.split(';;') || [];
+		return {
+			type,
+			mediaurl, mediacredit, mediacreditdate,
+			author,
+			title,
+			ordinal,
+			setnum,
+			version,
+			variant
+		}
+	}) || [];
+
+	if (!audios?.length) return songs;
+	if (!songs?.length) return audios;
+	let merged = [];
+
+	for (let i = 0; i < audios?.length; i++) {
+		merged.push({
+			...audios[i], 
+			...(songs.find((itmInner) => itmInner.mediaurl === audios[i].mediaurl))}
+		);
+	}
+	return merged;
+}
+
+/*
 const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.audio) {
 		const audio = parseCaptionsSourcesEtc(release.audio)?.map(([ file, song, credits ]: any) => {
@@ -239,6 +287,7 @@ const ReleaseAudio = ({ release }: { release: ReleaseTypeWithChildren }) => {
 		}
 	}
 }
+*/
 
 const ReleaseVideos = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	if (release?.video) {
@@ -339,18 +388,20 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 	const lookup = release?.lookup ?? '';
 	const { data, isLoading, error } = useReleaseSongs(lookup);
 	const { songs, credits } = data || {};
+	// merge duplicates in ->audio and ->songs
+	const tracks = mergeAudioAndMedia(release?.audio, data?.songs);
 	return (
 		<Suspense fallback=<>Loading...</>>
 			{(!isLoading && songs) && (<>
 				<ReleaseImages release={release} />
 				<ReleaseDetails release={release} />
 				<ReleaseNotes release={release} />
-				<ReleaseSongList songs={songs?.results} />
+				<ReleaseTracks songs={tracks} lookup={lookup} />
 				<ReleaseDownloads release={release} />
 				<ReleaseCredits credits={credits} />
 				<ReleaseLiner release={release} />
 				<ReleaseThanks release={release} />
-				<ReleaseAudio release={release} />
+				{/*<ReleaseAudio release={release} />*/}
 				<ReleasePatSez release={release} />
 				<ReleaseBishopSez release={release} />
 				<ReleaseVideos release={release} />

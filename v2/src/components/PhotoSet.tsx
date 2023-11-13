@@ -17,12 +17,14 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 	<div className="masonry listItem">
 		{photos.map((w: any, key: number) => {
 			const { src, alt, credit, credit_url, credit_date, body } = w;
-			const { image, thumb } = parseImage(src, 500);
-			return <div key={key} className="text-center p-1 drop-shadow-sm border border-slate-500 rounded-sm">
+			const { image, thumb } = parseImage(src, 250);
+			return <div key={key} className="text-center drop-shadow-sm border border-slate-400 rounded-sm">
 				{(image) && <Link href={image}>{(thumb) && <Image className="rounded-sm" key={key} unoptimized src={thumb} width={350} height={350} alt={alt} />}</Link>}
-				{alt}
-				{(body) && <><p />&quot;<i>{body}</i>&quot;</>}
-				{(credit) && <><br /><Credit g={credit} u={credit_url} d={credit_date} /></>}
+				<div className="text-base font-light -mt-6">
+				{(alt) && <span className="px-1">{alt}</span>}
+				{(body) && <span className="px-1">&quot;<i>{body}</i>&quot;</span>}
+				{(credit) && <span className="px-1"><br /><Credit g={credit} u={credit_url} d={credit_date} /></span>}
+				</div>
 			</div>
 		})}
 	</div>

@@ -713,9 +713,10 @@ details summary::-webkit-details-marker {
 
 .masonry {
 	columns: 14rem;
-	column-gap: 1rem;
+	column-gap: .75rem;
 }
 .masonry > div {
+	filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 	break-inside: avoid;
-	margin: 0 0 1rem;
+	margin: 0 0 .75rem;
 }

@@ -62,7 +62,8 @@ const sections : { [key: string]: BreadCrumb } = {
 //TODO	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
 
 	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The musicians', rootHideChildren: true },
-	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals" },
+	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994", body: "Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.  Includes then-current news and answers to fan questions in 9 lengthy letters." },
+	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals", body: "Pat extensively journaled his projects. Some pages are shared here." },
 	fiascos: { parent: 'writings', title: 'Top 10 JBC Fiascos', summary: '2020', body: "When live on the road goes.. interesting" },
 
 	prejbc: { parent: 'jbc', title: 'Pre-JBC', rootHideChildren: true },
@@ -115,7 +116,6 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003", body: "The passing of Northampton-based folk music legend Tom Hall prompted Pat to pen a memorial."},
 	'press/20020709_starindia': { parent: 'writings', title: "The Star Of India Restaurant", summary: "2002", body: "Northampton's Star of India restaurant is dearly loved by the artist" },
-	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994", body: "Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.  Includes then-current news and answers to fan questions in 9 lengthy letters." },
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "1986", body: "Early Fan Club issues" },
 
 	mailinglist: { parent: 'etc', title: 'Mailing List', summary: '1989-2003', body: "The genesis of this Jazz Butcher website was the mailing list that David Whittemore maintained. During the 15 years it was active, several hundred technically-inclined JBC fans kept in touch and posted thousands of email messages." },

@@ -338,8 +338,11 @@ textplus1 {
 	padding: 7px;
 	background-color: rgba(250,250,250,0.6);
 }
+.listItem b:hover {
+	outline: 1px dashed;
+}
 .listItem b {
-	color: #000;
+	color: #333;
 	background-color: #AFF1C3;
 	padding: 2px;
 }
@@ -390,12 +393,9 @@ blockquote {
 	padding: 3px;
 }
 a {
+	color: #3333FF;
 	text-decoration: none;
-	color: #2222ee;
-	margin-right: .15em;
-}
-.leading {
-	line-height: 1.5;
+	border-bottom: 1px dotted #004B6B;
 }
 body {
 	background-image: url(/images/jbcback2.gif);
@@ -534,6 +534,7 @@ samp {
 }
 
 .breadcrumb a{
+	border-bottom: none;
 	margin-left: 3px;
 	padding-bottom: 6px;
 }
@@ -684,7 +685,7 @@ details summary::-webkit-details-marker {
 }
 
 .navTop {
-	color: blue;
+	color: #004B6B;
 	margin-right: 2px;
 }
 .navTop:hover, .navTop:focus, .navTop:active {

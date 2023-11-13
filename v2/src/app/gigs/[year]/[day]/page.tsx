@@ -182,9 +182,10 @@ const doIt = (label: any, val: any) => <span className="break-keep outline outli
 
 const GigDetails = ({ gig, joins }: any) => {
 	if (!gig) return;
+	const showType = gig?.extra?.includes('interview') ? 'Interview' : 'Live Performance';
 	return (<>
 		<Tag>
-		{doIt((gig?.extra?.includes('interview')) ? 'Interview' : 'Live Performance', `- ${gig?.venue} - ${gig?.city} ${gig?.country}`)}
+		<b>{showType}</b> - {gig?.venue} - {gig?.city} {gig?.country}
 		</Tag>
 		<blockquote className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>
 			<div className="flex flex-wrap gap-1">
@@ -209,8 +210,8 @@ const ExtraNav = ({ gig }: { gig: any }) => {
 	if (gig.prev && gig.next) {
 		const prev = gig?.prev[0]?.datetime;
 		const next = gig?.next[0]?.datetime;
-		const prevGig = <Link href={`/gigs/` + ts2URI(prev)}><PrevArrow className="arrows" style={{ marginLeft: '10px' }} /></Link>;
-		const nextGig = <Link href={`/gigs/` + ts2URI(next)}><NextArrow className="arrows" style={{ marginRight: '30px' }} /></Link>;
+		const prevGig = <Link href={`/gigs/` + ts2URI(prev)}><PrevArrow className="arrows" style={{ marginTop: '3px', marginLeft: '10px', marginRight: '5px' }} /></Link>;
+		const nextGig = <Link href={`/gigs/` + ts2URI(next)}><NextArrow className="arrows" style={{ marginTop: '3px', marginRight: '30px' }} /></Link>;
 		return <> {prevGig} gig {nextGig} </>
 	}
 }

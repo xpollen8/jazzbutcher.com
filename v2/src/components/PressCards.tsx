@@ -17,7 +17,7 @@ const AlbumCover = ({ album }: { album?: string }) => {
 	</Suspense>
 }
 
-const PressCards = ({ items, project, showAlbum, preventAutoExpand=true }: any) => 
+const PressCards = ({ items, project, showAlbum, preventAutoExpand=false }: any) =>
 	(!!items?.length) && <details open={(!preventAutoExpand) || items.length < 10}>
 		<summary className="tagClickable">{pluralize(items.length, 'Press item')}</summary>
 		<div className="flex flex-wrap gap-3 justify-center">

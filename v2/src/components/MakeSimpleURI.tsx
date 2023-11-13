@@ -8,7 +8,7 @@ const MakeSimpleURI = ({ uri='', text, aux, children }: {
 }, key: number): React.ReactNode  => (
 	<div key={key}>
 	{(uri) ?
-		<Link href={uri} style={{ display: 'inline-block', width: '100%' }}>
+		<Link href={uri} style={{ display: 'inline-block', width: '100%', borderBottom: 'none' }}>
 			<div className="clickDiv hover:outline bg-white">
 				{text}
 				{(aux) && <>{' - '}<span className="smalltext">{aux}</span></>}

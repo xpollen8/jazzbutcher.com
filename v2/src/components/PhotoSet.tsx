@@ -20,10 +20,10 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 			const { image, thumb } = parseImage(src, 250);
 			return <div key={key} className="text-center drop-shadow-sm border border-slate-400 rounded-sm">
 				{(image) && <Link href={image}>{(thumb) && <Image className="rounded-sm" key={key} unoptimized src={thumb} width={350} height={350} alt={alt} />}</Link>}
-				<div className="text-sm font-light -mt-6">
-				{(alt) && <span className="px-1">{alt}</span>}
-				{(body) && <span className="px-1">&quot;<i>{body}</i>&quot;</span>}
-				{(credit) && <span className="px-1"><br /><Credit g={credit} u={credit_url} d={credit_date} /></span>}
+				<div className="text-sm font-light">
+				{(alt) && <span className="px-2">{alt}</span>}
+				{(body) && <span className="px-2">&quot;<i>{body}</i>&quot;</span>}
+				{(credit) && <span className="px-2"><br /><Credit g={credit} u={credit_url} d={credit_date} /></span>}
 				</div>
 			</div>
 		})}

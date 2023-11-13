@@ -306,7 +306,7 @@ export const pressFiltersInclude = (filters: string, f: string) => filters.split
 export const parseImage = (str?: string, width: number = 250) => {
 	const raw = str && truncAt(';;', str || '')?.trim();
 	return {
-		thumb: raw && imageThumb(raw),
+		thumb: raw && imageThumb(raw, width),
 		image: raw && imageFull(raw),
 	}
 }

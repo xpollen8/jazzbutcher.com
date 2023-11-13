@@ -1779,7 +1779,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2008-06-05 00:00:00','set',1,1,'Daycare Nati
 INSERT INTO `gigsong` VALUES (NULL,'2008-06-05 00:00:00','set',1,2,'Mercy',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2008-06-05 00:00:00','set',1,3,'Beautiful Mind',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2008-06-05 00:00:00','set',1,4,'Swell',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2008-06-05 00:00:00','set',1,5,'California','David J.',NULL,NULL,'https://myspace.com/play/video/california-58095125-58095125','Andrew Brooksbank',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2008-06-05 00:00:00','set',1,5,'California','David J.',NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20080605/20080605_PatFish_Brooksbank_California.mp4','Andrew Brooksbank',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2008-06-05 00:00:00','set',1,6,'San Franciso\'s Fine','Steve DeWilson',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2008-06-05 00:00:00','set',1,7,'Vienna Song',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2008-06-05 00:00:00','set',1,8,'Quality People','Wilson',NULL,NULL,NULL,NULL,NULL);

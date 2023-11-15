@@ -635,6 +635,13 @@ main {
 .arrows:hover {
   background: white;
 }
+.extraNav {
+	width: 200px;
+}
+.arrows {
+	display: inline;
+	margin-right: 5px;
+}
 
 .commentBubble {
 	height: 25px;
@@ -644,6 +651,8 @@ main {
 }
 #commentBubble > summary:first-of-type {
 	list-style-type: none;
+	width: 60px;
+	margin-left: 40px;
 }
 details summary > * {
 	cursor: pointer;

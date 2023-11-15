@@ -244,13 +244,11 @@ const NavSections = (props: Props_Header): React.ReactNode  => {
 					return parseTitle(obj.title, key);	// ick hack
 				})}
 			</ul>
-			<div className="flex">
-				<span className="flex">
-					{extraNav}
-				</span>
-				<span className="">
-					<PageComments />
-				</span>
+			<div className="extraNav">
+				{extraNav}
+			</div>
+			<div className="commentBubble">
+				<PageComments />
 			</div>
 		</div>
 	</div>)

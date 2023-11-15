@@ -4583,7 +4583,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1996-12-31 00:00:00','set',1,4, "Monks of Ku
 INSERT INTO `gigsong` VALUES (NULL,'1996-12-31 00:00:00','set',1,5, "Radio Saigon",NULL,NULL, NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1996-12-31 00:00:00','set',1,6, "Come, Friendly Spacemen",NULL,NULL, NULL,NULL,NULL,NULL);
 
-INSERT INTO `gigsong` VALUES (NULL,'2019-02-21 21:00:00','set',1,0, 'The Entire Performance',NULL,"Facebook Live Broadcast",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20190221/20190221_JazzButcher_FacebookLive.mp4',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2019-02-21 21:00:00','set',1,0, 'The Entire Performance',NULL,"Facebook Live Broadcast",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20190221/20190221_JazzButcher_FacebookLive.mp4','Colin Henney',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-02-21 21:00:00','set',1,1, "Decadence","Kevin Ayres",NULL, NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-02-21 21:00:00','set',1,2, "Sylvia Plath","Peter Laughner",NULL, NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-02-21 21:00:00','set',1,3, "Last of the Gentleman Adventurers",NULL,NULL, NULL,NULL,NULL,NULL);

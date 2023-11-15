@@ -3350,6 +3350,8 @@ INSERT INTO `gigsong` VALUES (NULL,'1992-05-13 00:00:00','set',1,12,'Shirley Mac
 INSERT INTO `gigsong` VALUES (NULL,'1992-05-13 00:00:00','set',1,13,'Racheland',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-05-13 00:00:00','encore',1,1,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-05-13 00:00:00','encore',1,2,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL);
+
+
 INSERT INTO `gigsong` VALUES (NULL,'1992-05-15 00:00:00','set',1,1,'Over The Rainbow','Arlen/Hamburg',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-05-15 00:00:00','set',1,2,'She\'s A Yo-Yo',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-05-15 00:00:00','set',1,3,'Honey',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -3426,7 +3428,10 @@ INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',1,0,'The Entire P
 INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',1,1,'Tribute To Asian Youth',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',1,2,'Mitropa Express',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',1,3,'Indianapolis 500 Go!',NULL,NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1992-06-17 00:00:00','set',1,0,'Banter',NULL,"Between-tunes - talking about the Highlander Hotel in Calgary, Alberta, Canada",NULL,'http://jazzbutcher.com/audio/unrivaled.mp3','David Whittemore','http://davidwhittemore.com');
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-17 00:00:00','set',1,1,'Beautiful Snow-White Hair',NULL,"Performance from the 'Western Family' release",NULL,NULL,'David Whittemore','http://davidwhittemore.com');
+
 INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',1,1,'The Man With the Black Moustache','The Monochrome Set',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',1,2,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2014-12-19 00:00:00','set',1,3,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -4583,7 +4588,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1996-12-31 00:00:00','set',1,4, "Monks of Ku
 INSERT INTO `gigsong` VALUES (NULL,'1996-12-31 00:00:00','set',1,5, "Radio Saigon",NULL,NULL, NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1996-12-31 00:00:00','set',1,6, "Come, Friendly Spacemen",NULL,NULL, NULL,NULL,NULL,NULL);
 
-INSERT INTO `gigsong` VALUES (NULL,'2019-02-21 21:00:00','set',1,0, 'The Entire Performance',NULL,"Facebook Live Broadcast",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20190221/20190221_JazzButcher_FacebookLive.mp4',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2019-02-21 21:00:00','set',1,0, 'The Entire Performance',NULL,"Facebook Live Broadcast",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20190221/20190221_JazzButcher_FacebookLive.mp4','Colin Henney',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-02-21 21:00:00','set',1,1, "Decadence","Kevin Ayres",NULL, NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-02-21 21:00:00','set',1,2, "Sylvia Plath","Peter Laughner",NULL, NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-02-21 21:00:00','set',1,3, "Last of the Gentleman Adventurers",NULL,NULL, NULL,NULL,NULL,NULL);

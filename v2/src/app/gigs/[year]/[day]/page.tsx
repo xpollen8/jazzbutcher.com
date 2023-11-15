@@ -79,21 +79,7 @@ const Iterator = ({ data, func, className }: any) => {
 		</div>
 }
 
-const GigTicket = (data: any, key: number) => <GigMedia {...data} />
-
-const GigTickets = (data: any) => <div className="listItem"><Iterator data={data} func={GigTicket} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
-
-const GigSetlist = (data: any, key: number) => <GigMedia {...data} />
-
-const GigSetlists = (data: any) => <div className="listItem"><Iterator data={data} func={GigSetlist} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
-
-const GigPoster = (data: any, key: number) => <GigMedia {...data} />
-
-const GigPosters = (data: any) => <div className="listItem"><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
-
-const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
-
-const GigPhotos = (data: any) => {
+const GigPicType = (data: any) => {
 	const photosets: HashedType = {};
 	data.forEach((d: any) => {
 		const { image, image_caption } = d;
@@ -111,6 +97,22 @@ const GigPhotos = (data: any) => {
 		return <PhotoSet key={key} title={title} photos={photosets[ps]?.photos}/>
 	})
 }
+
+const GigTicket = (data: any, key: number) => <GigMedia {...data} />
+
+const GigTickets = (data: any) => <div className="listItem"><Iterator data={data} func={GigTicket} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
+
+const GigSetlist = (data: any, key: number) => <GigMedia {...data} />
+
+const GigSetlists = (data: any) => <div className="listItem"><Iterator data={data} func={GigSetlist} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
+
+const GigPoster = (data: any, key: number) => <GigMedia {...data} />
+
+const GigPosters = (data: any) => <div className="listItem"><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
+
+const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
+
+const GigPhotos = (data: any) => GigPicType(data);
 
 const GigNote = (data: any, key: number) => <GigText {...data} />
 
@@ -131,7 +133,7 @@ const GigPlay = ({ data }: any) => {
 	return (
 		<div>
 			<EmbedMedia data={{...newData, autolink: true }} />
-			{(source) ? <Source u={source} /> : <>{newData?.comment}</>}
+			{(source) && <Source u={source} />}
 		</div>
 	)
 }

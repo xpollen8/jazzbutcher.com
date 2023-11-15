@@ -7,7 +7,7 @@ import LetterHeader from '@/components/LetterHeader';
 const AudioSection = ({ title, data }: any) => {
 	return !!(data && data?.length) && (<>
 		<LetterHeader title={title} />
-		{data?.map((d: any, key: number) => {
+		{data?.sort((a: any, b: any) => a?.song.localeCompare(b?.song))?.map((d: any, key: number) => {
 			const { performance_id, datetime, category, lookup, variant, type, performer, aka, title, setnum, ordinal, song, version, author, instruments, media } = d;
 			return <EmbedMedia key={key}
 				data={{

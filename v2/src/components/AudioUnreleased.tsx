@@ -22,7 +22,7 @@ const AudioSection = ({ title, data }: any) => {
 			const data: any[] = collections[collection];
 			return (<div className="listItem" key={key}>
 				<Tag>{collection}</Tag>
-				{data?.map((d: any, key: number) => {
+				{data?.sort((a: any, b: any) => a?.name.localeCompare(b?.name))?.map((d: any, key: number) => {
 					const { author,
 						collection,
 						comment,

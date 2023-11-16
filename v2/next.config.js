@@ -135,6 +135,12 @@ const nextConfig = {
 				},
 				{
 					protocol: 'https',
+					hostname: 'davidwhittemore.com',
+					port: '',
+					pathname: '**',
+				},
+				{
+					protocol: 'https',
 					hostname: 'v1.jazzbutcher.com',
 					port: '',
 					pathname: '**',

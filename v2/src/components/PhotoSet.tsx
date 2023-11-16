@@ -16,14 +16,16 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 	</div>}
 	<div className="masonry listItem">
 		{photos.map((w: any, key: number) => {
-			const { src, alt, credit, credit_url, credit_date, body } = w;
+			const { src, alt, credit, credit_url, credit_date, body, location } = w;
 			const { image, thumb } = parseImage(src, 250);
 			return <div key={key} className="text-center drop-shadow-sm border border-slate-400 rounded-sm">
 				{(image) && <Link href={image}>{(thumb) && <Image className="rounded-sm" key={key} unoptimized src={thumb} width={350} height={350} alt={alt} />}</Link>}
 				<div className="text-sm font-light">
-				{(alt) && <span className="px-2">{alt}</span>}
-				{(body) && <span className="px-2">&quot;<i>{body}</i>&quot;</span>}
-				{(credit) && <span className="px-2"><br /><Credit g={credit} u={credit_url} d={credit_date} /></span>}
+				{(credit_date?.length === 4) && <div>{credit_date}</div>}
+				{(alt) && <div className="px-2">{alt}</div>}
+				{(body) && <div className="px-2">&quot;<i>{body}</i>&quot;</div>}
+				{(location) && <div className="px-2">{location}</div>}
+				{(credit) && <div className="px-2"><Credit g={credit} u={credit_url} d={(credit_date?.length === 4) ? '' : credit_date} /></div>}
 				</div>
 			</div>
 		})}

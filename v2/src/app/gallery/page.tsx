@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionOptions from '@/components/SectionOptions';
 import PhotoSet from '@/components/PhotoSet';
+import Tag from '@/components/Tag';
 
 const gallery = [
 	{
@@ -92,8 +93,11 @@ const Gallery = () =>
 <>
 	<Header section="gallery" />
 	<main>
-		<SectionOptions section='gallery' />
-		<PhotoSet photos={gallery?.sort((a: any, b: any) => b?.credit_date - a?.credit_date)} />
+		<Tag>Featured Photographers</Tag>
+		<blockquote className="listItem">
+			<SectionOptions section='gallery' />
+		</blockquote>
+		<PhotoSet title="Jazz Butcher Gallery" photos={gallery?.sort((a: any, b: any) => b?.credit_date - a?.credit_date)} />
 	</main>
 	<Footer />
 </>

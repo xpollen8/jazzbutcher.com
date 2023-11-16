@@ -80,7 +80,7 @@ const gallery = [
 			body: <>
 The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hammersmith, London in 1981 by myself. They opened for a group called English Subtitles, who I’d just done a single with. This was the first time I met Pat. I asked them if they’d do a track for a compilation LP I was working on, ‘The Wonderful World of Glass Volume 1’ and they did. My friend and former bandmate Ciaran Harte, who was kind of a house producer for the label at that time, had a Teac four track in his flat in a tower block in Plaistow, East London and they recorded it there on the 12th floor or something.
 			</>,
-			credit: "Dvaid E. Barker",
+			credit: "David E. Barker",
 			credit_date: "1981",
 			location: "London",
 		}

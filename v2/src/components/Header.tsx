@@ -61,7 +61,7 @@ const sections : { [key: string]: BreadCrumb } = {
 //TODO	posters: { parent: 'gigs', title: 'Posters', summary: 'Gig Ephemera', inParentDirectory: true },
 //TODO	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
 
-	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The musicians', rootHideChildren: true },
+	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The musicians', rootHideChildren: false },
 	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994", body: "Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.  Includes then-current news and answers to fan questions in 9 lengthy letters." },
 	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals", body: "Pat extensively journaled his projects. Some pages are shared here." },
 	fiascos: { parent: 'writings', title: 'Top 10 JBC Fiascos', summary: '2020', body: "When live on the road goes.. interesting" },
@@ -106,6 +106,13 @@ const sections : { [key: string]: BreadCrumb } = {
 	*/
 
 	gallery: { parent: 'conspirators', title: 'Gallery', summary: "Photography from all eras"  },
+	/*
+	'gallery/mitch_jenkins': { parent: 'gallery', title: 'Mitch Jenkins' },
+	'gallery/mick_mercer': { parent: 'gallery', title: 'Mick Mercer' },
+	'gallery/dave_barker': { parent: 'gallery', title: 'David E. Barker' },
+	'gallery/david_whittemore': { parent: 'gallery', title: 'David Whittemore' },
+	'gallery/ruth_tidmarsh': { parent: 'gallery', title: 'Ruth Tidmarsh' },
+	*/
 	memoriam: { parent: 'pat', title: 'In Memoriam' },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "COVID-era livestreams" },
 	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },

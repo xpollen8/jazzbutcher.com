@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
+import SectionOptions from '@/components/SectionOptions';
 import { people } from '@/lib/defines';
 
 const sortByLastName = (a: any, b: any) => {
@@ -16,6 +17,7 @@ const Conspirators = () => {
 		<>
 		<Header section='conspirators' />
 		<main>
+			<SectionOptions section='conspirators' />
 			{people.filter((p: any) => !p.act ).sort(sortByLastName).map((props: any, key: number) => {
 				const letter = props.name.split(' ').pop().substr(0, 1);
 				let banner;

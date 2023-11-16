@@ -106,13 +106,11 @@ const sections : { [key: string]: BreadCrumb } = {
 	*/
 
 	gallery: { parent: 'conspirators', title: 'Gallery', summary: "Photography from all eras"  },
-	/*
-	'gallery/mitch_jenkins': { parent: 'gallery', title: 'Mitch Jenkins' },
+	//'gallery/mitch_jenkins': { parent: 'gallery', title: 'Mitch Jenkins' },
 	'gallery/mick_mercer': { parent: 'gallery', title: 'Mick Mercer' },
-	'gallery/dave_barker': { parent: 'gallery', title: 'David E. Barker' },
-	'gallery/david_whittemore': { parent: 'gallery', title: 'David Whittemore' },
-	'gallery/ruth_tidmarsh': { parent: 'gallery', title: 'Ruth Tidmarsh' },
-	*/
+	//'gallery/dave_barker': { parent: 'gallery', title: 'David E. Barker' },
+	//'gallery/david_whittemore': { parent: 'gallery', title: 'David Whittemore' },
+	//'gallery/ruth_tidmarsh': { parent: 'gallery', title: 'Ruth Tidmarsh' },
 	memoriam: { parent: 'pat', title: 'In Memoriam' },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "COVID-era livestreams" },
 	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },

@@ -496,7 +496,7 @@
 				guitar was good. even though the dancers would have moved to
 				nearly anything.
 			)}$$
-			${del}
+			David Whittemore
 			---
 		,
 			photosets= /images/19940601/19940601_del_egdebut.jpg$$
@@ -504,7 +504,7 @@
 				/images/19940601/19940601_del_egdebut2.jpg$$
 				/images/19940601/19940601_del_egdebut3.jpg$$
 				/images/19940601/19940601_flyer.jpg$$
-				${del}
+				David Whittemore
 			---
 				/images/19940601/20220715_WonderBat9_Photoalbum_BlackEg.jpg;;Michael Horton-Jupiter meets The Black Eg$$
 				wonderbat9;;https://www.youtube.com/watch?v=a6SzTBA7WG8;;2022-07-14
@@ -518,7 +518,7 @@
 	${gigHeader(
 
 	cost=&pound;12:50,
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas(${DAT} ${room}, ${q(5)}, ${p(B)}, ${i(5)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${hend}, ${gab}, ${green} )},
 	blurb=Creation Records 10th anniversary mega-gig,
@@ -531,7 +531,7 @@
 			from around the auditorium.  ${green} is not heard due
 			to the over-burdened soundmen.
 		)}$$
-			${del}
+			David Whittemore
 	---
 		${literalizeCommas(
 			there was a review of "Undrugged" in this current NME.
@@ -561,7 +561,7 @@
 	,
 	tickets=
 			/images/19940604/19940604_ticket.jpg$$
-			${del}
+			David Whittemore
 
 	)}
 

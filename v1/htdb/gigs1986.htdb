@@ -487,7 +487,7 @@
 			/images/19860731/19860731_ticket.jpg$$
 			baywatchbanks;;http://www.flickr.com/photos/baywatch-brimful/2846445759/
 		,photosets= /images/19860731/19860731_barker_band.jpg;;${literalizeCommas(The Jazz Butcher Conspiracy, Chicago, Cabaret Metro. The night Tom Waits turned up)}$$
-			${barker};;https://twitter.com/glassmodern1/status/1450102200722669570;;2021-10-18
+			David E. Barker;;https://twitter.com/glassmodern1/status/1450102200722669570;;2021-10-18
 	)}
 
 #define	Aug1.html()

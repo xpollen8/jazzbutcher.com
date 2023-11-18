@@ -53,13 +53,14 @@ const Lyrics = (props: any, foundon: any[]) => {
 	const { mp3, video, media, images, lyrics, key, caption } = props;
 	return (
 		<>
-			<LyricImages images={images} />
 			<LyricAudio mp3={mp3} caption={caption} />
+			<LyricImages images={images} />
 			<LyricMedia media={media} />
 			<LyricVideo video={video} />
 			<blockquote className="listItem">
 				<div dangerouslySetInnerHTML={{__html: lyrics }}/>
 			</blockquote>
+			<div className="clear_float" />
 		</>
 	)
 }

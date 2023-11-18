@@ -86,7 +86,13 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 			credit: "David E. Barker",
 			credit_date: "1981",
 			location: "London",
-		}
+		},
+	{
+		src: "/images/19841208/19841208_indge_trio.jpg",
+		credit: "Alastair Indge",
+		credit_date: "1984-12-08",
+		location: "Hamburg"
+	},
 ];
 
 const Gallery = () => 

@@ -5,10 +5,6 @@ import Tag from '@/components/Tag';
 import PhotoSet from '@/components/PhotoSet';
 
 const images_PhilipSnow1 = [
-		{ src: "/assets/projects/TheInstitution/6+Sheldonian+1.jpg", alt: "Live Sheldonian #1" },
-		{ src: "/assets/projects/TheInstitution/6+Sheldonian+2.jpg", alt: "Live Sheldonian #2" },
-		{ src: "/assets/projects/TheInstitution/6+Sheldonian+3.jpg", alt: "Live Sheldonian #3" },
-		{ src: "/assets/projects/TheInstitution/6+Sheldonian+4.jpg", alt: "Live Sheldonian #4" },
 		{ src: "/assets/projects/TheInstitution/Institution_Shirt_1.jpg", alt: "shirt 1" },
 		{ src: "/assets/projects/TheInstitution/Institution_Shirt_2.jpg", alt: "shirt 2" },
 		{ src: "/assets/projects/TheInstitution/Institution_Shirt_3.jpg", alt: "shirt 3" },

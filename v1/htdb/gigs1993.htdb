@@ -519,13 +519,13 @@
 		)},
 		recording=${literalizeCommas(${q(9)}, ${p(A)}, ${i(A)} ${g(1)})},
 		reviews=highly recommended!$$
-			${del}
+			David Whittemore
 		,
 		photosets=
 			/images/19930820/19930820_blackeg_cover.jpg$$
 			/images/19930820/19930820_blackeg_a.jpg$$
 			/images/19930820/19930820_blackeg_b.jpg$$
-			${del}
+			David Whittemore
 	)}
 
 #define	Aug27.html()
@@ -596,7 +596,7 @@
 		with=${literalizeCommas( ${cale} )},
 	notes=${literalizeCommas(opening for ${cale}. never so nervous.)},
 		photosets= /images/19931028/pass_28Oct93.jpg;;All-Access Pass$$
-			${del},
+			David Whittemore,
 		tickets=/images/19931028/19931028_ticket.jpg$$
 			Alexander Vrchoticky
 	)}
@@ -663,7 +663,7 @@
 #define	Dec23.html()
 	${gigHeader(
 		recording=${literalizeCommas(${q(9)}, ${p(A)}, ${i(A)}, ${mt})},
-		bootlegger=${literalizeCommas(${del})},
+		bootlegger=${literalizeCommas(David Whittemore)},
 		who=${literalizeCommas(
 			${pat}, ${dj}
 		)},

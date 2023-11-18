@@ -367,7 +367,7 @@
 		Pat's notebooks.
 	,
 	photosets= /images/richard.jpg;;${literalizeCommas(${richard})}$$
-			${del}
+			David Whittemore
 	)}
 
 #define	Nov9.html()
@@ -429,7 +429,7 @@
 	Quality In Sound is heard at the end of ${best}.
 	)},
 		photosets= /images/19891117/19891117_del_richard4.jpg;;${literalizeCommas(${richard})}$$
-			${del}
+			David Whittemore
 
 	)}
 
@@ -448,7 +448,7 @@
 			anything off of it well i am thinking to myself "he just saying that",
 			but i request ${go} and they played it.
 		)}$$
-			${del}
+			David Whittemore
 	)}
 
 #define	Nov19_1600.html()
@@ -462,7 +462,7 @@
 			<a href="${jbc_press}/milwaukee89.html">Here's a transcription</a> of the interview conducted that night.
 		)},
 		photosets= /images/19891119/19891119_del_patsat.jpg;;${literalizeCommas(${pat})}$$
-			${del}
+			David Whittemore
 	)}
 
 #define	Nov19_2000.html()
@@ -482,7 +482,7 @@
 			/images/19891119/19891119_del_paul.jpg;;${literalizeCommas(${paul})}$$
 			/images/19891119/19891119_del_laurence.jpg;;${literalizeCommas(${larry})}$$
 			/images/19891119/19891119_del_formby.jpg;;${literalizeCommas(${richard})}$$
-			${del}
+			David Whittemore
 			---
 			/images/19891119/19891119_del_01.jpg$$
 			/images/19891119/19891119_del_02.jpg$$
@@ -515,7 +515,7 @@
 			/images/19891119/19891119_del_30.jpg$$
 			/images/19891119/19891119_del_31.jpg$$
 			/images/19891119/19891119_del_32.jpg$$
-			${del}
+			David Whittemore
 	)}
 
 #define	Nov20.html()
@@ -734,7 +734,7 @@
 	plus acoustic ${domest}
 	)},
 	photosets= /images/19891219/19891219_del_pat.jpg;;${literalizeCommas(${pat})}$$
-		${del}
+		David Whittemore
 
 	)}
 
@@ -746,7 +746,7 @@
 	notes=${literalizeCommas( spontaneous end-of-tour hotel acoustic tunes
 	)},
 		photosets= /images/19891220/19891220_del_xmas.jpg$$
-			${del}
+			David Whittemore
 
 	)}
 

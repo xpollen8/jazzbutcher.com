@@ -29,7 +29,7 @@
 #define	Jul1.html()
 	${gigHeader(
 		recording=${literalizeCommas( ${q(8)}, ${p(A)}, ${i(B)}, ${g(1)}, ${DAT})},
-		bootlegger=${literalizeCommas(${del})},
+		bootlegger=${literalizeCommas(David Whittemore)},
 		pat=${literalizeCommas(
 			The Vaguely Familiar was a July 1991 project, put together at Richard
 			Formby's Woodhouse Studio in Leeds. The line-up was myself, Richard and
@@ -94,7 +94,7 @@
 		recording=${literalizeCommas(
 			${q(8)}, ${p(A)}, ${i(B)}, ${g(1)}, ${DAT}
 		)},
-		bootlegger=${literalizeCommas(${del})},
+		bootlegger=${literalizeCommas(David Whittemore)},
 		who=${literalizeCommas(
 			${pat}, ${coonce}
 		)},

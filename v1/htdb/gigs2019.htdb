@@ -364,7 +364,7 @@
 		---
 			/images/20191026/20191026_barker_MClubDBChurchill.jpg$$
 			/images/20191026/20191026_barker_MClubDBEiderFish.jpg;;${literalizeCommas(${max},${barker},${pat})}$$
-			${barker}
+			David E. Barker
 	)}
 
 #define	Nov9_1930.html()

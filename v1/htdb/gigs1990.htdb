@@ -418,7 +418,7 @@
 			both bands were on particularly
 			good behaviour in front of each other.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes, Jellyfish )},
 	)}
@@ -438,7 +438,7 @@
 			however, the bands themselves just seem to enjoy
 			being able to tour together.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 		tickets=
@@ -460,7 +460,7 @@
 			drinkers.  a 6 guitar strong version of ${jane} as the JBC
 			join the ${aero} on stage for the last song.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -491,7 +491,7 @@
 	it takes $23 to fill the car with gas.
 	*i* do not particularly like canada.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -513,7 +513,7 @@
 			the great line "give em a walkie-talkie and they think theyre
 			adolph hitler".
 		)}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -532,7 +532,7 @@
 			during pack-up, i nod off and awaken to martin hovering above
 			me with a sharpie (TM).  bastards!
 		)}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -555,11 +555,11 @@
 			around like a las vegas entertainer with his
 			microphone.  this *is* what he lives for.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		photosets= /images/19901111/1990Nov11_pat.jpg$$
 			/images/19901111/1990Nov11_alex.jpg$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -580,11 +580,11 @@
 			they bomb.  the small crowd is apathetic and most leave after the
 			${aero} open.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		tickets=
 			/images/19901112/19901112_ticket.jpg$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -604,12 +604,12 @@
 			"${jungle}, 1 play, chicago"; and then a whole page of stuff from
 			being played on the comedy channel.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		photosets= /images/19901112/19901112_del_comedy1.jpg$$
 			/images/19901112/19901112_del_comedy2.jpg$$
 			/images/19901112/19901112_del_comedy3.jpg$$
-			${del}
+			David Whittemore
 
 	)}
 
@@ -622,7 +622,7 @@
 			we go to rough trade where pat does an interview and we watch
 			a bit of the boston show video. (interview is cut short on DAT)
 		)}$$
-			${del}
+			David Whittemore
 
 	)}
 
@@ -643,7 +643,7 @@
 			the JBC bus, it was not insured.  julians hollow body guitar
 			is taken too.  he has to borrow angelos for the rest of the tour.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -667,7 +667,7 @@
 				always leave the hotel
 				in the morning wearing sunglasses as a hangover deterrent.
 			)}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 		tickets=
@@ -681,7 +681,7 @@
 #define	Nov15.html()
 	${gigHeader(
 
-		bootlegger=${literalizeCommas(${del})},
+		bootlegger=${literalizeCommas(David Whittemore)},
 		recording=${literalizeCommas( ${d}, ${q(8)}, ${p(A)} ${mt}, ${g_details(nice sound. hot in right channel.)})},
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
 		reviews=
@@ -699,13 +699,13 @@
 			rock self indulgence.
 			i have to run the lights as the club is understaffed.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		photosets= /images/19901115/19901115_del_alex.jpg;;${literalizeCommas(${green})}$$
 			/images/19901115/19901115_del_julian.jpg;;${literalizeCommas(${jules})}$$
 			/images/19901115/19901115_del_lix.jpg;;${literalizeCommas(${lix})}$$
 			/images/19901115/19901115_del_rodney.jpg;;${literalizeCommas(${rodney})}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -714,7 +714,7 @@
 #define	Nov16.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 		recording=${literalizeCommas( ${d}, ${q(8)}, ${p(A)} ${mt}, ${g_details(slight distortion in right channel on high frequencies.)})},
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
 		reviews=
@@ -728,7 +728,7 @@
 			has martin completely shave his head.  the pseudo nazi
 			black-jackboot clad poseur club workers dont know what to make of it.
 		)}$$
-		${del}
+		David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -737,7 +737,7 @@
 #define	Nov17.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 		recording=${literalizeCommas( ${d}, ${q(7)}, ${p(C)}, ${i(D)}, ${mt} ${g_details(half the songs cut in and out due to dodgy cabling.)})},
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
 		reviews=
@@ -753,7 +753,7 @@
 			real life.  gerard wears his
 			shades even more than pat does if you can believe it.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 		posters=
@@ -775,7 +775,7 @@
 #define	Nov19_2000.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 		recording=${literalizeCommas( ${d}, ${q(7)}, ${p(B)}, ${i(B)}, ${mono} ${mt} ${g_details(some low frequency distortion. excellent crowd banter. very good show.)})},
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
 		reviews=
@@ -794,10 +794,10 @@
 			gun.  ${green} notes after the show "an admission of guilt, dont
 			you think?" good food though..
 		)}$$
-			${del}
+			David Whittemore
 	,
 		photosets= /images/suave.jpg;;${literalizeCommas(${larry} and ${paul})}$$
-				${del}
+				David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -806,12 +806,12 @@
 #define	Nov20.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 		recording=${literalizeCommas( ${d}, ${mt})},
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
 		photosets= /images/19901120/19901120_del_group1.jpg$$
 			/images/19901120/19901120_del_group2.jpg;;${literalizeCommas( Photos from the next morning.)}$$
-			${del}
+			David Whittemore
 		,
 		reviews=
 		${literalizeCommas(
@@ -821,7 +821,7 @@
 			and plays it for the only time this tour.  the mellower
 			songlist is back.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -839,7 +839,7 @@
 #define	Nov23.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 		recording=${literalizeCommas( ${d}, ${q(10)}, ${p(B+)}, ${i(A+)}, ${mt}, ${DAT})},
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
 	reviews=

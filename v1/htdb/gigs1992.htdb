@@ -22,7 +22,7 @@
 #define	Apr24.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(9)}, ${p(C)}, ${i(C)}, ${mt}, ${DAT}, ${PZM})},
 	who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 	notes=${literalizeCommas( First night out - a little rough)},
@@ -40,12 +40,12 @@
 #define	Apr25_1600.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(7)}, ${p(C)}, ${i(C)}, ${mt}, ${DAT}, ${g_details(g=bad mix after ${angels})})},
 		who=${literalizeCommas( ${pat}, ${pete} )},
 		photosets= /images/19920425/19920425_del_pat.jpg$$
 			/images/19920425/19920425_del_pete.jpg$$
-			${del}
+			David Whittemore
 
 	)}
 
@@ -54,14 +54,14 @@
 
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		photosets= /images/pat_plays.jpg$$
-			${del}
+			David Whittemore
 
 	)}
 
 #define	Apr26_1200.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT}, ${g_details(30 minutes.)})},
 		who=${literalizeCommas( ${pat}, ${dooj} )},
 	notes=${literalizeCommas( in-studio. basic college radio interview.
@@ -73,7 +73,7 @@
 	${gigHeader(
 
 	cost=$6,
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(9)}, ${p(B)}, ${i(A)}, ${mt}, ${DAT}, ${PZM}, ${g_details(good mix, good bass.)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 	notes=${literalizeCommas( sombre, intimate show.  beautiful sounding desk+room mix.
@@ -91,13 +91,13 @@
 		,
 		tickets=
 			/images/19920426/19920426_ticket.jpg$$
-			${del}
+			David Whittemore
 	)}
 
 #define	Apr28.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(9)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 	notes=${literalizeCommas( crowd really into it. nice stereo separation and mix.
@@ -110,7 +110,7 @@
 #define	Apr29.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(8)}, ${p(C)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}, ${d}, ${g_details(out-of-tune on last songs. one channel mono. one channel live room. clear vocals.)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 	notes=${literalizeCommas( decent tape.
@@ -128,12 +128,12 @@
 #define	May1.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	with=${literalizeCommas(The Eggs)},
 	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		photosets= /images/19920501/19920501_del_crouch.jpg;;${literalizeCommas(${pete})}$$
-			${del}
+			David Whittemore
 			---
 			/images/19920501/19920501_lillyblad_band.jpg$$
 			/images/19920501/19920501_lillyblad_pat.jpg$$
@@ -168,20 +168,20 @@
 #define	May3.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(6)}, ${p(C)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 	notes=${literalizeCommas( dank
 	)},
 		photosets= /images/19920503/19920503_del_techno.jpg;;${literalizeCommas(${pat})}$$
-			${del}
+			David Whittemore
 
 	)}
 
 #define	May5.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(B+)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 	setlists=
@@ -195,7 +195,7 @@
 #define	May6_1200.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(1)}0, ${p(A+)}, ${i(A+)}, ${mt}, ${DAT} ${g_details(30 minutes.)})},
 		who=${literalizeCommas( ${pat} )},
 	notes=${literalizeCommas( in-studio
@@ -210,7 +210,7 @@
 	${gigHeader(
 
 	cost=$13.50,
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		with=${literalizeCommas( Lowest Of The Low )},
@@ -223,7 +223,7 @@
 	${gigHeader(
 
 	cost=$8,
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 
@@ -232,7 +232,7 @@
 #define	May8.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 
@@ -241,7 +241,7 @@
 #define	May9.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(8)}, ${p(A)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}. ${g_details(out-of-phase. stereo geetar mix, excellent drums, tight bass.)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 	notes=${literalizeCommas( great show. drunk girl rips down my mics during ${party}.
@@ -253,11 +253,11 @@
 #define	May10.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		photosets= /images/19920510/19920510_del_ohiggins.jpg;;${literalizeCommas(${iain})}$$
-			${del}
+			David Whittemore
 
 	)}
 
@@ -271,7 +271,7 @@
 #define	May13.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}, ${g_details(some microphone overload. buzzing in monitors.)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 
@@ -288,7 +288,7 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(7)}, ${p(A)}, ${i(B)}, ${mt}, ${DAT}, ${PZM},)},
 	${g_details(microphone overload. nice stereo separation and mix. great crowd banter. snow white hair is ad-lib.)}
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
@@ -298,7 +298,7 @@
 #define	May16_1200.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(7)}, ${p(A)}, ${i(A)}, ${mt}, ${DAT}, ${g_details(Core Sound mics)})},
 		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
 	notes=${literalizeCommas( in-store at ${TOWER}
@@ -309,7 +309,7 @@
 #define	May16_1600.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(B+)}, ${mt}, ${DAT}, ${g_details(recorded slightly hot. 45 minutes.)})},
 		who=${literalizeCommas( ${pat}, ${pete} )},
 	notes=${literalizeCommas( in-studio
@@ -320,7 +320,7 @@
 #define	May16_2000.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${del})},
+	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(7)}, ${p(A)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}, ${g_details(Core Sound binaural mics distort nearly everywhere..)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 	notes=${literalizeCommas( crowd really into it.
@@ -603,7 +603,7 @@
 			had seen this tour, you know that pete never moved, never spoke,
 			and stared intently at his frets the whole show.
 		)}$$
-			${del}
+			David Whittemore
 		,
 		photosets= /images/19920617/19920617_lis_pete.jpg;;${pete}$$
 			Suzanne Lis
@@ -665,7 +665,7 @@
 			/images/19920915/19920915_blackeg_cover.jpg$$
 			/images/19920915/19920915_blackeg_inside.jpg$$
 			/images/19920915/19920915_blackeg_a.jpg$$
-			${del}
+			David Whittemore
 
 	)}
 

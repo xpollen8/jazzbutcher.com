@@ -276,7 +276,7 @@
 		photosets=
 			/images/20170528/20170528_barker.jpg;;${literalizeCommas(${pat}, ${rolo}, ${barker})}$$
 			/images/20170528/20170528_barker_rolo.jpg;;${rolo}$$
-			${barker}
+			David E. Barker
 			---
 			/images/20170528/20170528_roswell.jpg$$
 			Sterling Roswell

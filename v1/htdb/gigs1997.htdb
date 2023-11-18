@@ -106,7 +106,7 @@
 		photosets= /images/19970917/17Sep97_1.jpg$$
 			/images/19970917/17Sep97_2.jpg$$
 			/images/water.jpg$$
-		${del}
+		David Whittemore
 	)}
 
 #define	Sep19.html()
@@ -149,7 +149,7 @@
 			by all.  Imagine your large grey-haired aunt trying to dance to
 			Caroline Wheeler and you get the gist.
 		)}$$
-			${del}
+			David Whittemore
 	)}
 
 #define	Sep22.html()
@@ -173,14 +173,14 @@
 			/images/19970922/22Sep97_4.jpg$$
 			/images/19970922/22Sep97_5.jpg$$
 			/images/19970922/22Sep97_6.jpg$$
-		${del}
+		David Whittemore
 		---
 			/images/19970922/22Sep97_marquee.jpg$$
 		Murray Digby
 		,
 		tickets=
 			/images/19970922/19970922_ticket.jpg$$
-			${del}
+			David Whittemore
 		,
 	reviews=
 		${literalizeCommas(
@@ -253,7 +253,7 @@
 			ensued between the tunes.
 			taped? yes.  success.
 		)}$$
-			${del}
+			David Whittemore
 	)}
 
 #define	Nov4.html()

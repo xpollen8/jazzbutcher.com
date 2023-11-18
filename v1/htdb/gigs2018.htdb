@@ -223,7 +223,7 @@
 		notes=${literalizeCommas(Ex Bauhaus/ Love & Rockets star David J returns to London’s The Islington in August. Support from The Jazz Butcher and Micky Greaney at this lovely little London venue soon.)},
 		photosets=
 		/images/20180825/20180825_barker_group.jpg;;${literalizeCommas(${max}, ${barker}, ${dj})}$$
-		${barker}
+		David E. Barker
 	)}
 
 #define	Nov8_1930.html()

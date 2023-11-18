@@ -46,7 +46,7 @@
 
 	recording=${literalizeCommas(${w}, ${q(6)}, ${p(B)})},
 	who=${literalizeCommas( ${solo} )},
-	posters=/images/19890406/19890406_poster.jpg%$$
+	posters=/images/19890406/19890406_poster.jpg$$
 	Simon Phillips;;https://www.facebook.com/simonovitch
 
 	)}
@@ -55,7 +55,7 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${solo} )},
-	posters=/images/19890407/19890407_poster.jpg%$$
+	posters=/images/19890407/19890407_poster.jpg$$
 	Simon Phillips;;https://www.facebook.com/simonovitch
 
 	)}
@@ -746,6 +746,7 @@
 	notes=${literalizeCommas( spontaneous end-of-tour hotel acoustic tunes
 	)},
 		photosets= /images/19891220/19891220_del_xmas.jpg$$
+			/images/19891220/19891220_DavidWhittemore_RichardFormby.jpg;;Richard Formby$$
 			David Whittemore
 
 	)}

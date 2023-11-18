@@ -39,6 +39,12 @@ const recentNews = [
 		link: '/projects/sumosonic',
 		dt: '2023-11-06 19:05:00',
 	},
+	{
+		subject: "The Beautiful Snow White Hair story",
+		body: `Exerpted from Philip Snow's Pat Fish Interview Tape #16 - the "Beautiful Snow White Hair" story and it's creation in deepest Alabama`,
+		link: '/lyrics/snowy',
+		dt: '2023-11-18'
+	},
 ];
 
 // get rid of bad data

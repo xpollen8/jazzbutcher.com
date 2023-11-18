@@ -2,6 +2,7 @@ import moment from 'moment';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import Tag from '@/components/Tag';
 import { dateDiff } from '@/lib/utils';
+import { Credit } from '@/components/GenericWeb';
 
 import newsItems from '@/../public/data/news.json';
 
@@ -11,6 +12,7 @@ type NewsItemType = {
 	dt: string
 	link?: string
 	category?: string
+	credit?: string
 };
 
 const recentNews = [
@@ -34,16 +36,32 @@ const recentNews = [
 		dt: '2023-07-15',
 	},
 	{
-		subject: "James Duval Scans of Sumosonic Promo Cassettes",
+		subject: "Scans: Sumosonic Promo Cassettes",
 		body: `Here are scans of the Sumosonic Cassettes I got from Pat back in the 90's. The "This Is Sumo" Demo is almost Identical artwork to the Sumo Demos on jazzbutcher.com except slightly altered artwork but with the same track listing. The other two Sumo cassettes were promo advances to the single "Come, Friendly Spaceman" and the album "This Is Sumo"`,
 		link: '/projects/sumosonic',
 		dt: '2023-11-06 19:05:00',
+		credit: 'James Duval'
 	},
 	{
-		subject: "The Beautiful Snow White Hair story",
-		body: `Exerpted from Philip Snow's Pat Fish Interview Tape #16 - the "Beautiful Snow White Hair" story and it's creation in deepest Alabama`,
+		subject: "The Beautiful Snow White Hair story/Im Korb images",
+		body: `Exerpted from Philip Snow's Pat Fish Interview Tape #16 - the "Beautiful Snow White Hair" story and it's creation in deepest Alabama, and associated "kitten playing card"`,
 		link: '/lyrics/snowy',
-		dt: '2023-11-18'
+		dt: '2023-11-18 12:00:00',
+		credit: 'Philip Snow'
+	},
+	{
+		subject: "Majorca gig images from Pat Fish Archives",
+		body: `Added a couple images from Philip Snow's scans of Pat Fish's archives`,
+		link: '/gigs/1996/Aug20',
+		dt: '2023-11-18 15:23:00',
+		credit: 'Philip Snow'
+	},
+	{
+		subject: "Photo: Rich Hall Comedy Central",
+		body: `Added a photo previous sent to Pat Fish by David Whittemore`,
+		link: '/gigs/1990/Nov12_1200',
+		dt: '2023-11-18 15:40:00',
+		credit: 'Philip Snow'
 	},
 ];
 
@@ -73,6 +91,7 @@ return <>
 			{banner}
 			<MakeSimpleURI uri={n?.link} text={n.subject || ''} aux={dateDiff(n.dt)}>
 				<div dangerouslySetInnerHTML={{ __html: n.body || '' }} />
+				{(n?.credit) && <Credit g={n.credit} />}
 			</MakeSimpleURI>
 		</div>
 	})}

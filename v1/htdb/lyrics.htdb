@@ -6756,6 +6756,7 @@ I haven't got a mind at all.
 	${lyricsHeader(title=Beautiful Snow-White Hair,
 	mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+16+Highest_BeautifulSnowWhiteHair.mp3,
 	caption=Excerpt from Philip Snow's interview tape #16,
+	images=/images/ImKorb_1$$/images/ImKorb_2$$,
 	lyrics=${literalizeCommas(
 
 	Well, he's just a baby

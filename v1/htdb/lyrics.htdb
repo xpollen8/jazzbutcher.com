@@ -6753,7 +6753,10 @@ I haven't got a mind at all.
 
 #define	snowy.html
 #live	if (getval(page) = snowy.html)
-	${lyricsHeader(title=Beautiful Snow-White Hair, lyrics=${literalizeCommas(
+	${lyricsHeader(title=Beautiful Snow-White Hair,
+	mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+16+Highest_BeautifulSnowWhiteHair.mp3,
+	caption=Excerpt from Philip Snow's interview tape #16,
+	lyrics=${literalizeCommas(
 
 	Well, he's just a baby
 	<br />He lives im Korb

@@ -14,10 +14,10 @@ const snow2 = [
 	{ src: "/assets/projects/Nightshift/N13.jpg", alt: "inst 2" },
 	{ src: "/assets/projects/Nightshift/N54.jpg", alt: "inst 3" },
 	{ src: "/assets/projects/Nightshift/N55.jpg", alt: "inst 4" },
-	{ src: "/assets/projects/TheInstitution/6+Sheldonian+1.jpg", alt: "Live Sheldonian #1" },
-	{ src: "/assets/projects/TheInstitution/6+Sheldonian+2.jpg", alt: "Live Sheldonian #2" },
-	{ src: "/assets/projects/TheInstitution/6+Sheldonian+3.jpg", alt: "Live Sheldonian #3" },
-	{ src: "/assets/projects/TheInstitution/6+Sheldonian+4.jpg", alt: "Live Sheldonian #4" },
+	{ src: "/assets/projects/Nightshift/6+Sheldonian+1.jpg", alt: "Live Sheldonian #1" },
+	{ src: "/assets/projects/Nightshift/6+Sheldonian+2.jpg", alt: "Live Sheldonian #2" },
+	{ src: "/assets/projects/Nightshift/6+Sheldonian+3.jpg", alt: "Live Sheldonian #3" },
+	{ src: "/assets/projects/Nightshift/6+Sheldonian+4.jpg", alt: "Live Sheldonian #4" },
 ];
 
 const silver = [

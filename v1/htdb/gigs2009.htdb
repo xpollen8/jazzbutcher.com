@@ -276,7 +276,10 @@
 		pat=${literalizeCommas(
 			Sold out. Sweaty. Loud.
 		)},
-		photosets= /images/20091017/20091017_jazzbutcher_losangeles.jpg$$
+		photosets=
+			/images/20091017/20091017_jazzbutcher_losangeles.jpg$$
+		---
+			/images/20091017/20091017_group.jpg$$
 	)}
 
 #define	Oct30_1800.html()

@@ -1,6 +1,6 @@
 {
 	"noun": "newsItem",
-	"numResults": 78,
+	"numResults": 79,
 	"results": [
 	{
 		"subject": "Help Us!",
@@ -934,6 +934,18 @@
 		"dt": "1700432340",
 
 		"link": "/gigs/1989/Feb28.html",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "Japan gig Poster",
+
+		"body": 	"",
+
+		"dt": "1700434020",
+
+		"link": "/gigs/2014/Oct24_1800.html",
 
 		"category": "press"
 

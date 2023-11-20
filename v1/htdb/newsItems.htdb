@@ -874,7 +874,13 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[79]->category	press
 #define	newsItem[79]->body
 
-#define	newsItem->numResults	79
+#define	newsItem[80]->dt	${date(U, 2023-11-19 23:34:00)}
+#define	newsItem[80]->subject Mat Wallis pic
+#define	newsItem[80]->link	/gigs/2014/Aug20_2000.html
+#define	newsItem[80]->category	press
+#define	newsItem[80]->body
+
+#define	newsItem->numResults	80
 
 
 #define	data.json

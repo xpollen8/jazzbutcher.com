@@ -71,13 +71,16 @@
 			${pat}, ${max}, ${garofalo}, ${stevenew}
 		)},
 		with=${literalizeCommas(
-			Joe Woolley
+			Joe Woolley;;;;
 		)},
 		photosets= /images/20140820/20140820_guynewton_duo.jpg$$
-			Guy Newton
+			Guy Newton;;;;
 		---
 		/images/20140820/20140820_foodiecraftbeerlife.jpg$$
 			FoodieCraftBeerLife;;https://www.instagram.com/foodiecraftbeerlife/
+		---
+		/images/20140820/20140820_group.jpg$$
+			Mat Wallis;;;;
 	)}
 
 

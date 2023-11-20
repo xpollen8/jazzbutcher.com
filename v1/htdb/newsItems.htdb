@@ -880,7 +880,13 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[80]->category	press
 #define	newsItem[80]->body
 
-#define	newsItem->numResults	80
+#define	newsItem[81]->dt	${date(U, 2023-11-19 23:40:00)}
+#define	newsItem[81]->subject Gig pic
+#define	newsItem[81]->link	/gigs/2009/Oct17.html
+#define	newsItem[81]->category	press
+#define	newsItem[81]->body
+
+#define	newsItem->numResults	81
 
 
 #define	data.json

@@ -31,7 +31,9 @@
 	with=${literalizeCommas(
 		Benny Profane, Kit
 	)},
-
+	setlists=
+		/images/19890228/19890228_setlist.jpg$$
+		Jay Hedblade;;;;
 	)}
 
 #define	Mar10.html()

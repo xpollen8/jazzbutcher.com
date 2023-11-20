@@ -847,7 +847,14 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[75]->body
 	Finally add this old comp!
 
-#define	newsItem->numResults	75
+#define	newsItem[76]->dt	${date(U, 2023-11-19 21:43:00)}
+#define	newsItem[76]->subject Pat Fish Archives photoset
+#define	newsItem[76]->link	https://jazzbutcher.com/gigs/1983/Sep24.html
+#define	newsItem[76]->category	press
+#define	newsItem[76]->body
+	Old gig gets new photos
+
+#define	newsItem->numResults	76
 
 
 #define	data.json

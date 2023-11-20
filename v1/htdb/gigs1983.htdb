@@ -92,6 +92,7 @@
 	who=${literalizeCommas( ${pat}, ${at}, ${rolo}, ${max} )},
 		photosets=
 			/images/19830924/19830924_jazzbutcher_derngate.jpg$$
+			/images/19830924/19830924_pat.jpg$$
 			Kevin Barron
 			---
 			/images/19830924/19830924_1.jpg$$

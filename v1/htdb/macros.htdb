@@ -3382,29 +3382,29 @@ ${define(_set, false)}
 #live	if (makeArray(p_${idx}, ${EOD}, ${unfilter(${photoset})}))
     <div class="ml-pnl">
 #live	loop(y, 1, ${p_${idx}->numResults})
-#live	if (define(pix_current, ${p_${idx}[${y}]}))
-#live	endif
-##live	if (getval(p_${idx}[${p_${idx}->numResults}]) == ${EOI})
-#live		if (define(pix_credits, ${p_${idx}[${p_${idx}->numResults}]}))
+#live		if (define(pix_current, ${p_${idx}[${y}]}))
 #live		endif
-##live	else if (define(pix_credits,))
-## 			no credit
-##live	endif
-#live	if (getval(pix_credits) == .jpg)
-#live		if (define(pix_credits,))
+##live		if (getval(p_${idx}[${p_${idx}->numResults}]) == ${EOI})
+#live			if (define(pix_credits, ${p_${idx}[${p_${idx}->numResults}]}))
+#live			endif
+##live		else if (define(pix_credits,))
+## 				no credit
+##live		endif
+#live		if (getval(pix_credits) == .jpg)
+#live			if (define(pix_credits,))
+#live			endif
 #live		endif
-#live	endif
-#live	if (getval(pix_current) == .jpg)
+#live		if (getval(pix_current) == .jpg)
 
-#live	if (defined(UX))
-#live		if (sql(insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}"))
-#live		endif
-#live	endif
+#live			if (defined(UX))
+#live				if (sql(insert IGNORE into gigmedia set datetime="${datetime}", ${photo2SQL(pix_current)} ${credit2SQL(pix_credits)} type="${type}"))
+#live				endif
+#live			endif
 
 		${parsePhoto(p=${pix_current}, width=${width})}
-#live	else
+#live		else
 		<br/>${parseCredit(c=${filterProgramArguments(${pix_current})})}
-#live	endif
+#live		endif
 
 #live	endloop
 	</div>
@@ -3465,11 +3465,11 @@ ${define(_set, false)}
 #				<div class="${mlclass}">
 #live			loop(x, 1, ${s->numResults})
 					<div class="ml-panel" style="${colorSet(${x})}; border: 1px solid; margin: 5px; border-radius:10px;">
-#live	if (defined(prefix))
+#live				if (defined(prefix))
 						${parsePhotoset(datetime=${${prefix}->datetime}, idx=${x}, photoset=${s[${x}]}, width=${width}, type=pix)}
-#live	else
+#live				else
 						${parsePhotoset(idx=${x}, photoset=${s[${x}]}, width=${width}, type=pix)}
-#live	endig
+#live				endif
 					</div>
 #live			endloop
 #live		endif

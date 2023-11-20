@@ -847,7 +847,28 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[75]->body
 	Finally add this old comp!
 
-#define	newsItem->numResults	75
+#define	newsItem[76]->dt	${date(U, 2023-11-19 21:43:00)}
+#define	newsItem[76]->subject Gig photos from Pat Fish Archives
+#define	newsItem[76]->link	https://jazzbutcher.com/gigs/1983/Sep24.html
+#define	newsItem[76]->category	press
+#define	newsItem[76]->body
+	Gig gets new (unattributed) photos
+
+#define	newsItem[77]->dt	${date(U, 2023-11-19 21:50:00)}
+#define	newsItem[77]->subject Gig poster from Pat Fish Archives
+#define	newsItem[77]->link	https://jazzbutcher.com/gigs/1984/Dec8.html
+#define	newsItem[77]->category	press
+#define	newsItem[77]->body
+	First Po gig poster
+
+#define	newsItem[78]->dt	${date(U, 2023-11-19 22:19:00)}
+#define	newsItem[78]->subject Scanned setlist from Pat Fish Archives
+#define	newsItem[78]->link	https://jazzbutcher.com/gigs/1989/Feb28.html
+#define	newsItem[78]->category	press
+#define	newsItem[78]->body
+	Jay Hedblade setlist
+
+#define	newsItem->numResults	78
 
 
 #define	data.json

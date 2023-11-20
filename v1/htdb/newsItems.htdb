@@ -868,7 +868,13 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[78]->body
 	Jay Hedblade setlist
 
-#define	newsItem->numResults	78
+#define	newsItem[79]->dt	${date(U, 2023-11-19 22:47:00)}
+#define	newsItem[79]->subject Japan gig Poster
+#define	newsItem[79]->link	/gigs/2014/Oct24_1800.html
+#define	newsItem[79]->category	press
+#define	newsItem[79]->body
+
+#define	newsItem->numResults	79
 
 
 #define	data.json

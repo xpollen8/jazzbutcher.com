@@ -1125,8 +1125,13 @@ export const AutoLinkAct = (str?: string) => {
 	if (match) {
 		const lookup = match[1]?.replace("'", '')?.replace('.', '');
 		const found = lookup && mapActs[lookup];
-		if (!found) return lookup?.replace(/_/g, ' ');
-		return expand(found);
+		if (!found) {
+			const act = lookup?.replace(/_/g, ' ');
+			return <Link href={`/gigs?f=alsowith&q="${act}"`}>{act}</Link>
+		}
+		const expanded = expand(found);
+		if (expanded !== found) return expanded;
+		return <Link href={`/gigs?f=alsowith&q="${found}"`}>{found}</Link>
 	}
 	const lookup = str.replace("'", '').replace(/\./g, '').replace(',', '').replace(/\'/g, '').replace(/ /g, '_');
 	const found = mapActs[lookup];

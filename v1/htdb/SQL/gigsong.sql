@@ -5009,7 +5009,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2023-04-02 19:00:00','set',1,0,'The Entire P
 
 INSERT INTO `gigsong` VALUES (NULL,'2010-07-15 00:00:00','set',1,1,'Walking with Jesus',NULL,NULL,NULL,'https://www.youtube.com/embed/mTR-fbcoQFw','3transmit','https://www.youtube.com/@3transmit');
 
-INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19841113/19841113_JazzButcher_Brighton_UK_TheRichmond.mp3','@FruitierThanThou','https://www.youtube.com/@FruitierThanThou');
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19841113/19841113_JazzButcher_Brighton_UK_TheRichmond.mp3','FruitierThanThou','https://www.youtube.com/FruitierThanThou');
 INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,1, "Southern Mark Smith",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,2, "Bigfoot Motel",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,3, "Real Men",NULL,NULL,NULL,NULL,NULL,NULL);

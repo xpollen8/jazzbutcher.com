@@ -1,6 +1,6 @@
 {
 	"noun": "newsItem",
-	"numResults": 79,
+	"numResults": 81,
 	"results": [
 	{
 		"subject": "Help Us!",
@@ -946,6 +946,30 @@
 		"dt": "1700434020",
 
 		"link": "/gigs/2014/Oct24_1800.html",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "Mat Wallis pic",
+
+		"body": 	"",
+
+		"dt": "1700436840",
+
+		"link": "/gigs/2014/Aug20_2000.html",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "Gig pic",
+
+		"body": 	"",
+
+		"dt": "1700437200",
+
+		"link": "/gigs/2009/Oct17.html",
 
 		"category": "press"
 

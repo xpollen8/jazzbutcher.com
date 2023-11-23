@@ -891,7 +891,7 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[82]->link	/gigs/1984/Nov13.html
 #define	newsItem[82]->category	press
 #define	newsItem[82]->body
-	${linkAudio(mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19841113/19841113_JazzButcher_Brighton_UK_TheRichmond.mp3, datetime=1984-11-13, title=1984-11-13: Sikorskis in Brighton)}
+	${linkAudio(mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19841113/19841113_JazzButcher_Brighton_UK_TheRichmond.mp3, datetime=1984-11-13, title=1984-11-13: Sikkorskis in Brighton)}
 
 #define	newsItem->numResults	82
 

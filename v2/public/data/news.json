@@ -1,6 +1,6 @@
 {
 	"noun": "newsItem",
-	"numResults": 81,
+	"numResults": 82,
 	"results": [
 	{
 		"subject": "Help Us!",
@@ -970,6 +970,18 @@
 		"dt": "1700437200",
 
 		"link": "/gigs/2009/Oct17.html",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "Old show uploaded to 'tube.",
+
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> 1984-11-13: Sikorskis in Brighton </i> </span> <br/> <audio controls='controls' title='1984-11-13: Sikorskis in Brighton' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19841113/19841113_JazzButcher_Brighton_UK_TheRichmond.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>",
+
+		"dt": "1700734320",
+
+		"link": "/gigs/1983/Nov13.html",
 
 		"category": "press"
 

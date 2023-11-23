@@ -5009,6 +5009,21 @@ INSERT INTO `gigsong` VALUES (NULL,'2023-04-02 19:00:00','set',1,0,'The Entire P
 
 INSERT INTO `gigsong` VALUES (NULL,'2010-07-15 00:00:00','set',1,1,'Walking with Jesus',NULL,NULL,NULL,'https://www.youtube.com/embed/mTR-fbcoQFw','3transmit','https://www.youtube.com/@3transmit');
 
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19841113/19841113_JazzButcher_Brighton_UK_TheRichmond.mp3','FruitierThanThou','https://www.youtube.com/FruitierThanThou');
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,1, "Southern Mark Smith",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,2, "Bigfoot Motel",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,3, "Real Men",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,4, "Marnie",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,5, "Partytime",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,6, "Girlfriend",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,7, "Leaving It Up To You",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,8, "Only A Rumour",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,9, "Red Pets",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,10, "Rain",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,11, "I Need Meat",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,12, "Zombie Love",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','encore',1,1, "Roadrunner","Jonathan Richman","Love Kittens intro",NULL,NULL,NULL,NULL);
+
 /*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
 UNLOCK TABLES;
 

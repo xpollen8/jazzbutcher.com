@@ -5,7 +5,8 @@ import apiData from './apiData';
  
 export async function GET(request: NextRequest) {
 	const [ j1, j2, route = '', ...rest ] = request.nextUrl.pathname.split('/');
-	const args = rest?.join('/');
+	const suffix = request.nextUrl.searchParams.get('suffix') ?? '';
+	const args = rest?.join('/') + suffix;
 	return NextResponse.json(await apiData(route, args));
 }
 

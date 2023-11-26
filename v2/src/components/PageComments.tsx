@@ -246,7 +246,7 @@ const PageComments = ({ className }: { className?: string }) => {
 			<details id="commentBubble">
 				<summary>
 					<CommentBubble className="commentBubble">
-						<div className="text-sm text-slate-500 ml-1">{comments.length}</div>
+						<div className="text-sm text-slate-500 ml-1">{data?.numResults}</div>
 					</CommentBubble>
 				</summary>
 				<div className="commentOverlay">

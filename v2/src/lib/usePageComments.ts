@@ -78,7 +78,7 @@ const usePageComments = (pathname: string) => {
 	const results = data?.results.map((r: CommentType, i: number, all: CommentType[]) => ({ ...r, children: buildThread(r, all) }))?.filter((r: CommentType) => !r.parent_id);
 
 	return {
-		data: { results, numResults: results?.length },
+		data: { results, numResults: data?.results?.length },	// keep original total count
 		isLoading,
 		error,
 	}

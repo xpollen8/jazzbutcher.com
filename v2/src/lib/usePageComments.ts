@@ -41,7 +41,7 @@ const pathname2feedbackURI = (pathname: string) => {
 			[ 'letters', [ 'letters', '/index.html' ] ],
 			[ 'eulogy', [ 'site', '/eulogy.html' ] ],
 		];
-		const [ orig, updated ] = modified.find(([ orig, updated ]: string[]) => uri === orig) || [];
+		const [ orig, updated ] = modified.find(([ orig, updated ]: any[]) => uri === orig) || [];
 		if (updated) return updated;
 
 		if (uri?.startsWith('releases')) return [ uri.replace('releases', 'albums') ];

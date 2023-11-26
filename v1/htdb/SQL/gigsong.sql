@@ -32,6 +32,8 @@ CREATE TABLE `gigsong` (
 LOCK TABLES `gigsong` WRITE;
 /*!40000 ALTER TABLE `gigsong` DISABLE KEYS */;
 
+INSERT INTO `gigsong` VALUES (NULL,'2012-10-20 00:00:00','set',1,1,'Sweetwater',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20121020/20121020_JazzButcher_NickSelwyn.mp4','Nick Selwyn',NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'2013-04-20 21:00:00','set',1,1,'Animals',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-04-20 21:00:00','set',1,2,'Shame About You',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2013-04-20 21:00:00','set',1,3,'All The Saints',NULL,NULL,NULL,NULL,NULL,NULL);

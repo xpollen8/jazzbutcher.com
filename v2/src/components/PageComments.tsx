@@ -87,7 +87,7 @@ const Comment = (props: CommentType & any, key: number) => {
 				{(replying) && <div className="w-full"><CommentForm {...props} toggleCommentForm={setReplying} /></div>}
 			</div>
 			{(!!children?.length) && <div className="bg-green-400 pb-10">
-				<Tag>Replies to "{subject}"..</Tag>
+				<Tag>Replies to &quot;{subject}&quot;..</Tag>
 				<Comments session={session} uri={uri} comments={children} showForm={showForm} toggleCommentForm={toggleCommentForm} />
 			</div>}
 		</div>

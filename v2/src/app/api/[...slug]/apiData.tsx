@@ -130,7 +130,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				return await apiDataFromDataServer(path, args);
 			case 'feedbacks':
 			case 'feedback_by_page':
-				const data = await apiDataFromDataServer('feedback', args + '.html');	// next config strips '.html', sigh
+				const data = await apiDataFromDataServer('feedback', args);
 				data.results = data?.results.map((r: CommentType) => ({
 					...r,
 					who: censorEmail(r?.who),

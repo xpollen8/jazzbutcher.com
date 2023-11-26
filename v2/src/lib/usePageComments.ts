@@ -30,36 +30,36 @@ const pathname2feedbackURI = (pathname: string) => {
 			'gigs', 'links', 'mad', 'tribute', 'video', 'trivia', 'tomhall', 'press'
 		];
 		const isUnchanged = unchanged.find((u: string) => uri === u);
-		if (unchanged.find((u: string) => uri === u)) return uri + '/index.html';
+		if (unchanged.find((u: string) => uri === u)) return [ uri, '/index.html' ];
 		const modified = [
-			[ '', 'htdb/index.html' ],
-			[ 'mailinglist', 'articles/index.html' ],
-			[ 'releases', 'albums/index.html' ],
-			[ 'conspirators', 'people/index.html' ],
-			[ 'western_tape', 'albums/western_tape.html' ],
-			[ 'memoriam', 'site/memoriam.html' ],
-			[ 'letters', 'letters/index.html' ],
-			[ 'eulogy', 'site/eulogy.html' ],
+			[ '', [ 'htdb', '/index.html' ] ],
+			[ 'mailinglist', [ 'articles', '/index.html' ] ],
+			[ 'releases', [ 'albums', '/index.html' ] ],
+			[ 'conspirators', [ 'people', '/index.html' ] ],
+			[ 'western_tape', [ 'albums', '/western_tape.html' ] ],
+			[ 'memoriam', [ 'site', '/memoriam.html' ] ],
+			[ 'letters', [ 'letters', '/index.html' ] ],
+			[ 'eulogy', [ 'site', '/eulogy.html' ] ],
 		];
 		const [ orig, updated ] = modified.find(([ orig, updated ]: string[]) => uri === orig) || [];
 		if (updated) return updated;
 
-		if (uri?.startsWith('releases')) return uri.replace('releases', 'albums');
-		if (uri?.startsWith('conspirators')) return uri.replace('conspirators', 'people');
-		if (uri?.startsWith('letters')) return mapLetterURLIFeedbackLookup(uri);
+		if (uri?.startsWith('releases')) return [ uri.replace('releases', 'albums') ];
+		if (uri?.startsWith('conspirators')) return [ uri.replace('conspirators', 'people') ];
+		if (uri?.startsWith('letters')) return [ mapLetterURLIFeedbackLookup(uri) ];
 
 		const [ section, sub1, sub2 ] = uri?.split('/') || '';
 		if (section === 'gigs') {
 			if (sub2) {
-				return uri + '.html';
+				return [ uri, '.html' ];
 			} else if (sub1) {
-				return uri + '/index.html';
+				return [ uri, '/index.html' ];
 			}
 		}
-		return uri;
+		return [ uri, '/index.html' ];
 	}
-	const usePath = (fullpath(pathname) ?? pathname + '/index.html');
-	return `exact/${usePath}`;
+	const [ usePath, useSuffix ] = fullpath(pathname);
+	return `exact/${usePath}?suffix=${useSuffix}`;
 }
 
 const usePageComments = (pathname: string) => {

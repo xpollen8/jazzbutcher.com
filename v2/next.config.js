@@ -83,6 +83,11 @@ const nextConfig = {
 					destination: '/:path*',
 					permanent: false,
 				},
+				{
+					source: '/:path*/index',
+					destination: '/:path*',
+					permanent: false,
+				},
 				/*
 				{
 					source: '/audio/:path*',

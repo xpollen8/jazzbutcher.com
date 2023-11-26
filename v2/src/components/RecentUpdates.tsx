@@ -47,6 +47,7 @@ const media2Embed = (p: any) => {
 	return {
 		mediaurl: mp3 || href,
 		collection,
+		datetime,
 		comment,
 		title: name,
 		project,

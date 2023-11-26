@@ -893,7 +893,14 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[82]->body
 	${linkAudio(mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19841113/19841113_JazzButcher_Brighton_UK_TheRichmond.mp3, datetime=1984-11-13, title=1984-11-13: Sikkorskis in Brighton)}
 
-#define	newsItem->numResults	82
+#define	newsItem[83]->dt	${date(U, 2023-11-26 00:00:00)}
+#define	newsItem[83]->subject Sweetwater - Private party performance
+#define	newsItem[83]->link	/gigs/2012/Oct20.html
+#define	newsItem[83]->category	press
+#define	newsItem[83]->body
+	${embedVideo(name=Sweetwater, url=https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20121020/20121020_JazzButcher_NickSelwyn.mp4)}
+
+#define	newsItem->numResults	83
 
 
 #define	data.json

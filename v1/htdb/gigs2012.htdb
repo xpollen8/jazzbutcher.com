@@ -175,6 +175,10 @@
 		Pursued By Trees;;https://www.headheritage.co.uk/headtohead/unsung/topic/66532/;;2012-09-09 21:57:00$$
 	)}
 
+#define	Oct20.html()
+	${gigHeader(
+	)}
+
 #define	Nov3_1930.html()
 	${gigHeader(
 		notes=${literalizeCommas(

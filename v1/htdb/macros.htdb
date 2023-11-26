@@ -3026,6 +3026,7 @@ ${_base}.html
 ##live	endif
 #	${tag_end}
 
+#${mkGigLink(ts=2012-10-20 00:00:00, venue=Private Party, country=England, sidebar=${sidebar}, extra=solo)}
 #${mkGigLink(ts=1984-03-13 00:00:00, venue=Magee's Bistro, city=Wellingborough, state=Northamptonshire, country=England, sidebar=${sidebar}, extra=solo)}
 #${mkGigLink(ts=1981-12-01 00:00:00, venue=Chez Louis, city=Wimbledon\, London, country=England, sidebar=${sidebar}, blurb=Exact date in December is unknown)}
 #${mkGigLink(ts=1982-06-27 00:00:00, venue=Richard Fordham's Party, city=Oxford, country=England, sidebar=${sidebar})}

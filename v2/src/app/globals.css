@@ -567,14 +567,14 @@ samp {
 }
 
 .comment {
-	text-align: center;
 	outline: 1px solid #999;
 	border-radius: 5px;
 	background: white;
-	margin: 5px;
-  padding: 10px;
+	margin: 3%;
+  padding: 2%;
 }
 .comment #subject {
+	display: inline;
 	font-weight: bold;
 	font-size: 1.15em;
 	background: #eee;
@@ -582,7 +582,12 @@ samp {
 .comment #date {
 	font-weight: bold;
 }
+.comment #email {
+}
 .comment #who {
+	display: inline;
+	color: #333;
+	background-color: #AFF1C3;
 }
 .comment #comments {
 	text-align: left;

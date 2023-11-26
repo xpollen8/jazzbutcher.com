@@ -67,8 +67,18 @@ const usePageComments = (pathname: string) => {
 
 	const { data, error, isLoading } = useSWR(`/api/feedback_by_page/${pathname2feedbackURI(pathname)}`, fetcher);
 
+	const buildThread = (r: CommentType, all: CommentType[]) => {
+		// TODO recursive/multi-depth comments
+		return all?.filter((a: CommentType) => r.feedback_id === a.parent_id);
+	}
+
+	/*
+		collect those items with 'parent_id' under their parent as 'children'
+	 */
+	const results = data?.results.map((r: CommentType, i: number, all: CommentType[]) => ({ ...r, children: buildThread(r, all) }))?.filter((r: CommentType) => !r.parent_id);
+
 	return {
-		data,
+		data: { results, numResults: results?.length },
 		isLoading,
 		error,
 	}

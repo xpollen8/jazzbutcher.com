@@ -1,6 +1,6 @@
 {
 	"noun": "newsItem",
-	"numResults": 82,
+	"numResults": 83,
 	"results": [
 	{
 		"subject": "Help Us!",
@@ -982,6 +982,18 @@
 		"dt": "1700734320",
 
 		"link": "/gigs/1984/Nov13.html",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "Sweetwater - Private party performance",
+
+		"body": "<video controls preload='none' style='max-width: 100%;' poster='https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20121020/20121020_JazzButcher_NickSelwyn_thumbnail.jpg' > <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20121020/20121020_JazzButcher_NickSelwyn.mp4' type='video/mp4'> </video>",
+
+		"dt": "1700956800",
+
+		"link": "/gigs/2012/Oct20.html",
 
 		"category": "press"
 

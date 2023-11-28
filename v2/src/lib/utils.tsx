@@ -18,6 +18,8 @@ export type NewCommentType = {
 	who: string
 	whence: string
 	comments: string
+	parent_id?: number
+	children?: NewCommentType[]
 }
 
 export type CommentType = NewCommentType & {

@@ -67,14 +67,14 @@ const DeleteComment = (props: any) => {
 
 const Comment = (props: CommentType & any, key: number) => {
 	const mySession = getSessionId() || 'unknown';
-	const { editing=false, session, feedback_id, subject, dtcreated, who, whence, comments, toggleCommentForm } = props;
+	const { editing=false, session, feedback_id, subject, dtcreated, who, whence, comments, toggleCommentForm, children, uri, showForm } = props;
 	const [ replying, setReplying ] = useState(false);
 
 	return (
 		<div key={key} className="comment">
 			<div id="subject">{(session === mySession) && <DeleteComment {...props} />}{subject}</div>
 			<div id="comments" className="annotation" dangerouslySetInnerHTML={{__html: comments }} />
-			<div id="who"><> <b>{whence}</b> {!!(who?.length) && <span className="smalltext">- {who} </span>}</></div>
+			<div id="who"><b>{whence}</b> </div> {!!(who?.length) && <div id="email" className="smalltext">{who} </div>}
 			<div id="date">{dateDiff(dtcreated, '')}</div>
 			<div className="flex flex-wrap justify-center gap-10 pt-2">
 				<CommentLike {...props} onClick={() => {
@@ -86,6 +86,10 @@ const Comment = (props: CommentType & any, key: number) => {
 				}}/>
 				{(replying) && <div className="w-full"><CommentForm {...props} toggleCommentForm={setReplying} /></div>}
 			</div>
+			{(!!children?.length) && <div className="bg-green-400 pb-10">
+				<Tag>Replies to &quot;{subject}&quot;..</Tag>
+				<Comments session={session} uri={uri} comments={children} showForm={showForm} toggleCommentForm={toggleCommentForm} />
+			</div>}
 		</div>
 	)
 }
@@ -175,10 +179,7 @@ const CommentForm = (props: { session?: string, who?: string, whence?: string, c
 
 const Comments = (props: { session: string, uri: string, comments: CommentType[], className?: string, toggleCommentForm: any, showForm: boolean }) => {
 	const { session, uri, comments = [], className, toggleCommentForm, showForm } = props;
-	return <div className={className}>
-		<ToggleCommentForm text={`Visitor comments for "${uri}"`}{...props} />
-		{comments?.map((c: CommentType, key: number) => <Comment session={session} key={key} {...c} toggleCommentForm={toggleCommentForm} />)}
-	</div>
+	return comments?.map((c: CommentType, key: number) => <Comment session={session} key={key} {...c} toggleCommentForm={toggleCommentForm} showForm={showForm} />)
 }
 
 export const CommentBubble = (props: any) => {
@@ -235,7 +236,7 @@ const PageComments = ({ className }: { className?: string }) => {
 	const uri = usePathname()?.substr(1);
 	const { data, isLoading, error } = usePageComments(uri);
 	const comments = data?.results || [];
-	const [ showForm, toggleCommentForm ] = useState((comments?.length) ? false : true);
+	const [ showForm, toggleCommentForm ] = useState((!!comments?.length) ? false : true);
 	const session = getSessionId();
 
 	return (<>
@@ -243,11 +244,12 @@ const PageComments = ({ className }: { className?: string }) => {
 			<details id="commentBubble">
 				<summary>
 					<CommentBubble className="commentBubble">
-						<div className="text-sm text-slate-500 ml-1">{comments.length}</div>
+						<div className="text-sm text-slate-500 ml-1">{data?.numResults}</div>
 					</CommentBubble>
 				</summary>
 				<div className="commentOverlay">
 					{(showForm) && <CommentForm session={session} uri={uri} toggleCommentForm={toggleCommentForm} />}
+					<ToggleCommentForm text={`Visitor comments for "${uri}"`} showForm={showForm} toggleCommentForm={toggleCommentForm} />
 					<Comments session={session} uri={uri} comments={comments} showForm={showForm} toggleCommentForm={toggleCommentForm} />
 				</div>
 			</details>

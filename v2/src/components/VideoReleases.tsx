@@ -6,7 +6,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 import LetterHeader from '@/components/LetterHeader';
 
 const VideoSection = ({ title, data }: any) => {
-	console.log("DATA", data);
+	//console.log("DATA", data);
 	return !!(data && data?.length) && (<>
 		<LetterHeader title={title} />
 		{data?.map((d: any, key: number) => {

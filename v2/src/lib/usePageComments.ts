@@ -30,36 +30,36 @@ const pathname2feedbackURI = (pathname: string) => {
 			'gigs', 'links', 'mad', 'tribute', 'video', 'trivia', 'tomhall', 'press'
 		];
 		const isUnchanged = unchanged.find((u: string) => uri === u);
-		if (unchanged.find((u: string) => uri === u)) return uri + '/index.html';
+		if (unchanged.find((u: string) => uri === u)) return [ uri, '/index.html' ];
 		const modified = [
-			[ '', 'htdb/index.html' ],
-			[ 'mailinglist', 'articles/index.html' ],
-			[ 'releases', 'albums/index.html' ],
-			[ 'conspirators', 'people/index.html' ],
-			[ 'western_tape', 'albums/western_tape.html' ],
-			[ 'memoriam', 'site/memoriam.html' ],
-			[ 'letters', 'letters/index.html' ],
-			[ 'eulogy', 'site/eulogy.html' ],
+			[ '', [ 'htdb', '/index.html' ] ],
+			[ 'mailinglist', [ 'articles', '/index.html' ] ],
+			[ 'releases', [ 'albums', '/index.html' ] ],
+			[ 'conspirators', [ 'people', '/index.html' ] ],
+			[ 'western_tape', [ 'albums', '/western_tape.html' ] ],
+			[ 'memoriam', [ 'site', '/memoriam.html' ] ],
+			[ 'letters', [ 'letters', '/index.html' ] ],
+			[ 'eulogy', [ 'site', '/eulogy.html' ] ],
 		];
-		const [ orig, updated ] = modified.find(([ orig, updated ]: string[]) => uri === orig) || [];
+		const [ orig, updated ] = modified.find(([ orig, updated ]: any[]) => uri === orig) || [];
 		if (updated) return updated;
 
-		if (uri?.startsWith('releases')) return uri.replace('releases', 'albums');
-		if (uri?.startsWith('conspirators')) return uri.replace('conspirators', 'people');
-		if (uri?.startsWith('letters')) return mapLetterURLIFeedbackLookup(uri);
+		if (uri?.startsWith('releases')) return [ uri.replace('releases', 'albums') ];
+		if (uri?.startsWith('conspirators')) return [ uri.replace('conspirators', 'people') ];
+		if (uri?.startsWith('letters')) return [ mapLetterURLIFeedbackLookup(uri) ];
 
 		const [ section, sub1, sub2 ] = uri?.split('/') || '';
 		if (section === 'gigs') {
 			if (sub2) {
-				return uri + '.html';
+				return [ uri, '.html' ];
 			} else if (sub1) {
-				return uri + '/index.html';
+				return [ uri, '/index.html' ];
 			}
 		}
-		return uri;
+		return [ uri, '/index.html' ];
 	}
-	const usePath = (fullpath(pathname) ?? pathname + '/index.html');
-	return `exact/${usePath}`;
+	const [ usePath, useSuffix ] = fullpath(pathname);
+	return `exact/${usePath}?suffix=${useSuffix}`;
 }
 
 const usePageComments = (pathname: string) => {
@@ -67,8 +67,18 @@ const usePageComments = (pathname: string) => {
 
 	const { data, error, isLoading } = useSWR(`/api/feedback_by_page/${pathname2feedbackURI(pathname)}`, fetcher);
 
+	const buildThread = (r: CommentType, all: CommentType[]) => {
+		// TODO recursive/multi-depth comments
+		return all?.filter((a: CommentType) => r.feedback_id === a.parent_id);
+	}
+
+	/*
+		collect those items with 'parent_id' under their parent as 'children'
+	 */
+	const results = data?.results.map((r: CommentType, i: number, all: CommentType[]) => ({ ...r, children: buildThread(r, all) }))?.filter((r: CommentType) => !r.parent_id);
+
 	return {
-		data,
+		data: { results, numResults: data?.results?.length },	// keep original total count
 		isLoading,
 		error,
 	}

@@ -130,7 +130,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				return await apiDataFromDataServer(path, args);
 			case 'feedbacks':
 			case 'feedback_by_page':
-				const data = await apiDataFromDataServer('feedback', args + '.html');	// next config strips '.html', sigh
+				const data = await apiDataFromDataServer('feedback', args);
 				data.results = data?.results.map((r: CommentType) => ({
 					...r,
 					who: censorEmail(r?.who),
@@ -140,7 +140,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				const releases = await apiDataFromHTDBServer('db_albums/data.json');
 				// @ts-ignore
 				releases.results = releases?.results?.filter((r: any) => r?.dtadded && moment(r.dtadded).isAfter(moment().subtract(6, 'months'))).sort((a: any, b: any) => moment(b.dtadded) - moment(a.dtadded));
-				console.log("RELEASE", releases.results);
+				//console.log("RELEASE", releases.results);
 				releases.numResults = releases?.results?.length;
 				return releases;
 			}

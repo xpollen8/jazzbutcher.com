@@ -282,6 +282,9 @@
 		---
 			/images/20150922/20150922_dianaverdu_onstage.jpg$$
 			\@dianaverdu;;https://twitter.com/dianaverdu
+		---
+			/images/20150922/20150922_william_backstage.jpg;;${literalizeCommas(Going through the archives and finding the few pictures I’ve taken of Fishy over the years… and I like this from The Moth Club ‘dressing room’ 2015)}$$
+			Mr Paul Williams;;https://twitter.com/MrPaulWilliams;;2021-12-12
 	)}
 
 #define	Oct10_2000.html()

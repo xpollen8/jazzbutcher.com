@@ -1622,7 +1622,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=${brooksbank},
 		dt=2003)}
 
-	${addPress(type=interview,
+	${addPress(type=interview;profile,
 		url=${jbc_press}/interview_independent_8Aug2001.html,
 		credit=William Whiteside,
 		publication=The Independent,

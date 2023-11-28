@@ -212,6 +212,8 @@
 		photosets=
 		https://s3.amazonaws.com/assets.jazzbutcher.com/images/20180804/20180804_tobyrose_pat.jpg$$
 		toby rose;;https://www.flickr.com/photos/129025072\@N04/43150287664
+		---
+		/images/20180804/20180804_pat.jpg$$
 	)}
 
 #define	Aug25_1900.html()

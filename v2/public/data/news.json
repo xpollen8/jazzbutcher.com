@@ -1,6 +1,6 @@
 {
 	"noun": "newsItem",
-	"numResults": 83,
+	"numResults": 85,
 	"results": [
 	{
 		"subject": "Help Us!",
@@ -903,9 +903,9 @@
 
 	} ,
 	{
-		"subject": "Gig photos from Pat Fish Archives",
+		"subject": "1983-09-24 - Gig photos from Pat Fish Archives",
 
-		"body": "Gig gets new (unattributed) photos",
+		"body": "<a href='/gigs/1983/Sep24.html'><img src='/images/19830924/19830924_1_250.jpg' width=250' alt='photo'></a> (+7 more)",
 
 		"dt": "1700430180",
 
@@ -915,9 +915,9 @@
 
 	} ,
 	{
-		"subject": "Gig poster from Pat Fish Archives",
+		"subject": "1984-12-08 - First Po gig poster from Pat Fish Archives",
 
-		"body": "First Po gig poster",
+		"body": "<a href='/gigs/1989/Dec8.html'><img src='/images/19841208/19841208_poster_250.jpg' width=250' alt='poster'></a>",
 
 		"dt": "1700430600",
 
@@ -927,9 +927,9 @@
 
 	} ,
 	{
-		"subject": "Scanned setlist from Pat Fish Archives",
+		"subject": "1989-02-28 - Scanned setlist from Pat Fish Archives",
 
-		"body": "Jay Hedblade setlist",
+		"body": "<a href='/gigs/1989/Feb28.html'><img src='/images/19890228/19890228_setlist_250.jpg' width=250' alt='setlist'></a>",
 
 		"dt": "1700432340",
 
@@ -939,9 +939,9 @@
 
 	} ,
 	{
-		"subject": "Japan gig Poster",
+		"subject": "2014-10-24 - Japan gig Poster",
 
-		"body": 	"",
+		"body": "<a href='/gigs/2014/Oct24.html'><img src='/images/20141024/20141024_poster_250.jpg' width=250' alt='poster'></a>",
 
 		"dt": "1700434020",
 
@@ -951,9 +951,9 @@
 
 	} ,
 	{
-		"subject": "Mat Wallis pic",
+		"subject": "2014-08-20 - Mat Wallis pic",
 
-		"body": 	"",
+		"body": "<a href='/gigs/2014/Aug20_2000.html'><img src='/images/20140820/20140820_group_250.jpg' width=250' alt='photo'></a>",
 
 		"dt": "1700436840",
 
@@ -963,9 +963,9 @@
 
 	} ,
 	{
-		"subject": "Gig pic",
+		"subject": "2009-10-17 - Gig pic",
 
-		"body": 	"",
+		"body": "<a href='/gigs/2009/Oct17.html'><img src='/images/20091017/20091017_group_250.jpg' width=250' alt='photo'></a>",
 
 		"dt": "1700437200",
 
@@ -975,7 +975,7 @@
 
 	} ,
 	{
-		"subject": "Old show uploaded to 'tube.",
+		"subject": "1984-11-13 - Old show uploaded to 'tube.",
 
 		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> 1984-11-13: Sikkorskis in Brighton </i> </span> <br/> <audio controls='controls' title='1984-11-13: Sikkorskis in Brighton' preload='none' class='audio_player'> <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19841113/19841113_JazzButcher_Brighton_UK_TheRichmond.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>",
 
@@ -987,13 +987,37 @@
 
 	} ,
 	{
-		"subject": "Sweetwater - Private party performance",
+		"subject": "2012-10-20 - Sweetwater - Private party performance",
 
 		"body": "<video controls preload='none' style='max-width: 100%;' poster='https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20121020/20121020_JazzButcher_NickSelwyn_thumbnail.jpg' > <source src='https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20121020/20121020_JazzButcher_NickSelwyn.mp4' type='video/mp4'> </video>",
 
 		"dt": "1700956800",
 
 		"link": "/gigs/2012/Oct20.html",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "1992-06-12 - Setlist",
+
+		"body": "<a href='/gigs/1992/Jun12.html'><img src='/images/19920612/19920612_setlist_250.jpg' width=250' alt='setlist'></a>",
+
+		"dt": "1701115200",
+
+		"link": "/gigs/1992/Jun12.html",
+
+		"category": "press"
+
+	} ,
+	{
+		"subject": "2015-09-22 - Backstage photo",
+
+		"body": "<a href='/gigs/2015/Sep22_2000.html'><img src='/images/20150922/20150922_william_backstage_250.jpg' width=250' alt='backstage'></a>",
+
+		"dt": "1701117660",
+
+		"link": "/gigs/2015/Sep22_2000.html",
 
 		"category": "press"
 

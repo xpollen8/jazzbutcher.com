@@ -3709,7 +3709,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set', 1,1, "Partytime",NULL,NU
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set', 1,2, "Animals",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set', 1,3, "Living in a Village",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set', 1,4, "Melanie Hargreaves' Father's Jaguar",NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set', 1,5, "Mister Odd",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set', 1,5, "Mr. Odd",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set', 1,6, "The Man with the Black Moustache","Monochrome Set",NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set', 1,7, "When You's a Viper","Rosetta Howard",NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set', 1,8, "Dunkin' Beigels","Slim Gaillard",NULL,NULL,NULL,NULL,NULL);
@@ -4980,8 +4980,8 @@ INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 1,5,'Femme Fata
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 1,6,'Someone To Share My Life With','TV Personalities',NULL,'Jowe Head vocals, ${morgan} drums, Jim Shepherd bass, David Musker keyboards',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 1,7,"Peter Lorre",NULL,NULL,"Jem Price vocals, Jim Shepherd guitar, ${morgan} drums, David Musker keyboards, ${simon_mawby} Guitar, ${larry} bass",NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 1,8,"Bicycle Kid",NULL,NULL,"Tim Keegan vocals and guitar, ${morgan} drums, David Musker keyboards, ${pete} Guitar, ${larry} bass",NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 1,9,"Mister Odd",NULL,NULL,"Jem Price vocals, Tim Keegan guitar, ${morgan} drums, David Musker keyboards, ${pete} Guitar, ${larry} bass","https://www.youtube.com/embed/BoXhxuRmmpM","pfjones70", "https://www.youtube.com/user/pfjones70");
-INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 1,9,"Mister Odd",NULL,NULL,"Jem Price vocals, Tim Keegan guitar, ${morgan} drums, David Musker keyboards, ${pete} Guitar, ${larry} bass","https://www.youtube.com/embed/s_bWo7eYWCI","Ozmosis UK", "https://www.youtube.com/channel/UCAtiJgSujvVrdVDgmgEnnyA");
+INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 1,9,"Mr. Odd",NULL,NULL,"Jem Price vocals, Tim Keegan guitar, ${morgan} drums, David Musker keyboards, ${pete} Guitar, ${larry} bass","https://www.youtube.com/embed/BoXhxuRmmpM","pfjones70", "https://www.youtube.com/user/pfjones70");
+INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 1,9,"Mr. Odd",NULL,NULL,"Jem Price vocals, Tim Keegan guitar, ${morgan} drums, David Musker keyboards, ${pete} Guitar, ${larry} bass","https://www.youtube.com/embed/s_bWo7eYWCI","Ozmosis UK", "https://www.youtube.com/channel/UCAtiJgSujvVrdVDgmgEnnyA");
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 2,1,'Thoughtless Kind','John Cale',NULL,"Matt Sewell solo",NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 2,2,'Saints Prayer',NULL,NULL,"${sumishta} vocals and guitar, 13 Frightened Girls",NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00', 'set', 2,3,"Matter Of Time",NULL,NULL,"${sumishta} vocals and guitar, 13 Frightened Girls",NULL,NULL,NULL);
@@ -5003,7 +5003,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2018-08-25 19:00:00','encore',1,1,"Knocking 
 INSERT INTO `gigsong` VALUES (NULL,'1990-02-26 00:00:00','set',1,1,"Looking For Lot 49",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-02-26 00:00:00','set',1,2,"Love Kittens",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-02-26 00:00:00','set',1,3,"Caroline Wheeler's Birthday Present",NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1990-02-26 00:00:00','set',1,4,"Mister Odd",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-02-26 00:00:00','set',1,4,"Mr. Odd",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-02-26 00:00:00','set',1,5,"Burglar Of Love",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-02-26 00:00:00','set',1,6,"Partytime",NULL,NULL,NULL,NULL,NULL,NULL);
 
@@ -5026,6 +5026,19 @@ INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,11, "I Need Mea
 INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set',1,12, "Zombie Love",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','encore',1,1, "Roadrunner","Jonathan Richman","Love Kittens intro",NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,1,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,2,'Pineapple Tuesday',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,3,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,4,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,5,'Girl-Go',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,6,'Girls Say Yes',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,7,'Susie',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,8,'Falling In Love',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,9,'Angels',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,10,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,11,"She's A Yo-Yo",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,12,'Monkeyface',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-12 00:00:00','set',1,13,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
 UNLOCK TABLES;
 

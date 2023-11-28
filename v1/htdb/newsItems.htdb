@@ -848,59 +848,77 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 	Finally add this old comp!
 
 #define	newsItem[76]->dt	${date(U, 2023-11-19 21:43:00)}
-#define	newsItem[76]->subject Gig photos from Pat Fish Archives
+#define	newsItem[76]->subject 1983-09-24 - Gig photos from Pat Fish Archives
 #define	newsItem[76]->link	/gigs/1983/Sep24.html
 #define	newsItem[76]->category	press
 #define	newsItem[76]->body
-	Gig gets new (unattributed) photos
+	<a href="/gigs/1983/Sep24.html"><img src="/images/19830924/19830924_1_250.jpg" width=250" alt="photo"></a>
+	(+7 more)
 
 #define	newsItem[77]->dt	${date(U, 2023-11-19 21:50:00)}
-#define	newsItem[77]->subject Gig poster from Pat Fish Archives
+#define	newsItem[77]->subject 1984-12-08 - First Po gig poster from Pat Fish Archives
 #define	newsItem[77]->link	/gigs/1984/Dec8.html
 #define	newsItem[77]->category	press
 #define	newsItem[77]->body
-	First Po gig poster
+	<a href="/gigs/1989/Dec8.html"><img src="/images/19841208/19841208_poster_250.jpg" width=250" alt="poster"></a>
 
 #define	newsItem[78]->dt	${date(U, 2023-11-19 22:19:00)}
-#define	newsItem[78]->subject Scanned setlist from Pat Fish Archives
+#define	newsItem[78]->subject 1989-02-28 - Scanned setlist from Pat Fish Archives
 #define	newsItem[78]->link	/gigs/1989/Feb28.html
 #define	newsItem[78]->category	press
 #define	newsItem[78]->body
-	Jay Hedblade setlist
+	<a href="/gigs/1989/Feb28.html"><img src="/images/19890228/19890228_setlist_250.jpg" width=250" alt="setlist"></a>
 
 #define	newsItem[79]->dt	${date(U, 2023-11-19 22:47:00)}
-#define	newsItem[79]->subject Japan gig Poster
+#define	newsItem[79]->subject 2014-10-24 - Japan gig Poster
 #define	newsItem[79]->link	/gigs/2014/Oct24_1800.html
 #define	newsItem[79]->category	press
 #define	newsItem[79]->body
+	<a href="/gigs/2014/Oct24.html"><img src="/images/20141024/20141024_poster_250.jpg" width=250" alt="poster"></a>
 
 #define	newsItem[80]->dt	${date(U, 2023-11-19 23:34:00)}
-#define	newsItem[80]->subject Mat Wallis pic
+#define	newsItem[80]->subject 2014-08-20 - Mat Wallis pic
 #define	newsItem[80]->link	/gigs/2014/Aug20_2000.html
 #define	newsItem[80]->category	press
 #define	newsItem[80]->body
+	<a href="/gigs/2014/Aug20_2000.html"><img src="/images/20140820/20140820_group_250.jpg" width=250" alt="photo"></a>
 
 #define	newsItem[81]->dt	${date(U, 2023-11-19 23:40:00)}
-#define	newsItem[81]->subject Gig pic
+#define	newsItem[81]->subject 2009-10-17 - Gig pic
 #define	newsItem[81]->link	/gigs/2009/Oct17.html
 #define	newsItem[81]->category	press
 #define	newsItem[81]->body
+	<a href="/gigs/2009/Oct17.html"><img src="/images/20091017/20091017_group_250.jpg" width=250" alt="photo"></a>
 
 #define	newsItem[82]->dt	${date(U, 2023-11-23 10:12:00)}
-#define	newsItem[82]->subject Old show uploaded to 'tube.
+#define	newsItem[82]->subject 1984-11-13 - Old show uploaded to 'tube.
 #define	newsItem[82]->link	/gigs/1984/Nov13.html
 #define	newsItem[82]->category	press
 #define	newsItem[82]->body
 	${linkAudio(mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19841113/19841113_JazzButcher_Brighton_UK_TheRichmond.mp3, datetime=1984-11-13, title=1984-11-13: Sikkorskis in Brighton)}
 
 #define	newsItem[83]->dt	${date(U, 2023-11-26 00:00:00)}
-#define	newsItem[83]->subject Sweetwater - Private party performance
+#define	newsItem[83]->subject 2012-10-20 - Sweetwater - Private party performance
 #define	newsItem[83]->link	/gigs/2012/Oct20.html
 #define	newsItem[83]->category	press
 #define	newsItem[83]->body
 	${embedVideo(name=Sweetwater, url=https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20121020/20121020_JazzButcher_NickSelwyn.mp4)}
 
-#define	newsItem->numResults	83
+#define	newsItem[84]->dt	${date(U, 2023-11-27 20:00:00)}
+#define	newsItem[84]->subject 1992-06-12 - Setlist
+#define	newsItem[84]->link	/gigs/1992/Jun12.html
+#define	newsItem[84]->category	press
+#define	newsItem[84]->body
+	<a href="/gigs/1992/Jun12.html"><img src="/images/19920612/19920612_setlist_250.jpg" width=250" alt="setlist"></a>
+
+#define	newsItem[85]->dt	${date(U, 2023-11-27 20:41:00)}
+#define	newsItem[85]->subject 2015-09-22 - Backstage photo
+#define	newsItem[85]->link	/gigs/2015/Sep22_2000.html
+#define	newsItem[85]->category	press
+#define	newsItem[85]->body
+	<a href="/gigs/2015/Sep22_2000.html"><img src="/images/20150922/20150922_william_backstage_250.jpg" width=250" alt="backstage"></a>
+
+#define	newsItem->numResults	85
 
 
 #define	data.json

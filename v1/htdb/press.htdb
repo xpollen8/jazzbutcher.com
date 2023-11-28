@@ -2251,6 +2251,19 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=1997-05)}
 
 	${addPress(type=retrospective,
+		url=${jbc_press}/20211029_press_nnjournal.html,
+		credit=Rachel McGrath,
+		publication=NN Journal,
+		location=Northampton\, England,
+		images=/images/20130615/20130615_GregHiggings_Pat;;Greg Higgins;;;;;;New York\, 2013$$/images/20180804/20180804_pat;;;;;;;;Playing at the Albion Bar Brewery in Northampton\, 2018$$/images/19891119/19891119_del_patsat;;David Whittemore;;;;;;Milwaukee\, Wisconsin\, USA 1989$$,
+		title=Pat Fish obituary,
+		headline=Founder of the Jazz Butcher music outfit and pop’s ‘Last of the Gentleman Adventurers’ was UK music’s best kept secret,
+		source=https://www.nnjournal.co.uk/p/pat-fish-obituary,
+		dt=2021-10-29,
+		added=2023-11-27,
+		)}
+
+	${addPress(type=retrospective,
 		url=${jbc_press}/20121121_press_psychedelicbabymag.html,
 		credit=Zack Kopp,
 		publication=It's Psychedelic Baby Magazine,
@@ -18038,6 +18051,71 @@ The video for “Running on Fumes” is decidedly more lighthearted. Made by Rut
 ${embedVideo(url=https://youtube.com/embed/0Wk4tzKjvJ4)}
 <p />
 Both fish and elephants are winks to the Jazz Butcher universe, and the video is loaded with easter eggs for fans. It’s charming, witty and a little melancholic, which describes The Jazz Butcher himself. The video premieres in this post and you can watch below.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20211029_press_nnjournal.html
+#live	if (getval(page) = 20211029_press_nnjournal.html)
+	${extractPress(
+		body=${literalizeCommas(
+Pat Fish (Patrick Guy Sibley Huntrods), English musician and singer songwriter has died, aged 63. Most famously known as ‘The Jazz Butcher’ his musical career spanned more than four decades.
+<p />
+Born in London in 1957, he was a lifelong Tottenham Hotspur football fan. He subsequently resided for most of his life in Northampton and was a local legend on the alternative music scene there whilst also continuing to court a dedicated and loyal international fan base through his various musical evolutions, especially in the USA, Canada, Germany, France, Japan and even a small contingent in South America.
+<p />
+With a discography spanning forty years including fifteen albums, four live albums and countless singles and EPs, his subsequent various musical collaborations include dance projects such as Sumosonic, Black Eg and Wilson. He supported the great John Cale on stage.
+<p />
+In recent years he was a member of The Drones Club, a Northampton-based group as producer and bass player with fellow local musicians percussionist Russ Cooper, guitarist Stevie Gordon and Ian Clabburn on bagpipes and dulcimer, the name being a playful reference to the drone note in the bagpipes and the gentleman’s club from PG Wodehouse’s novels.
+<p />
+His complete discography, videos, interviews, legacy and so much more is lovingly curated by lifelong supporter and fan Dave Whittemore at the jazzbutcher.com website. In his lifetime he had been signed to Glass, Creation, Fire records ROIR of New York and Vinyl Japan of Tokyo.
+<p />
+His forthcoming album ‘The Highest in the Land’ is due to be released by German company Tapete records and a CD box set of re-releases by Fire Records entitled: ‘Dr Cholmondley Repents: A-sides, B-sides and Seasides’ is due for release next month.
+<p />
+The Huntrods family moved to South Northamptonshire whilst Pat was a child and he grew up on a diet of Hammer Horror movies, with Terence Fisher, the famous director, having been a close family friend and affectionately known as ‘Uncle Terry.’ In Pat’s own words, ‘I was a goth before goth had been invented’.
+<p />
+He studied Classics at Merton College, Oxford and recalled playing music in the same room where the poet Louis MacNeice had resided. Not fitting in with the general etiquette of Oxford University, as a student with a distinct distaste for bourgeois attitudes, he spent much of his time nurturing the musical friendships from which his future career in pop would emerge. As a result, he graduated with what he termed a ‘gentleman’s degree.’
+<p />
+It was at Oxford University that he met some of his early musical collaborators including lifelong friends guitarist Max Eider and old school friend Rolo McGinty who formed alongside Pat Fish, the band known as The Institution. Pat Fish and Max Eider went on to form the Jazz Butcher in 1982 with Rolo McGinty and Alice Thompson being part of the early line up before going onto establish The Woodentops.
+<p />
+Owen Jones from the Oxford-based band the Sonic Tonix later joined as the drummer. Pat came late to the guitar, self-taught at the age of 23, although was already an accomplished flautist and saxophonist having learnt both instruments in his early teenage years.
+<p />
+Subsequently he would meet musician, producer and writer and enduring pal David J Haskins (of Bauhaus fame) at a memorable barge party in Northampton in 1983 alongside the graphic novelist and writer Alan Moore. These are just a few of the fellow musicians that would bring together the various formations of what would be known as the Jazz Butcher – it would come to be known as the Jazz Butcher and his Sikkorskis from Hell, Conspiracy, Quartet and Quintet throughout his musical career with a long list of band members and alliances all listed on the jazzbutcher.com website.
+<p />
+Returning from Oxford, jobless and living in a Northamptonshire village and experimenting with sounds from his Amstrad 7090 tape recorder from his bedroom, he would produce a song called ‘Zombie Lover.’ A subsequent posting of a copy to David Barker of Glass Records under the pseudonym ‘The Jazz Butcher’ was to prove fortuitous and he was offered his first chance at recording an album.
+<p />
+That album was ‘Bath of Bacon’ which received a modest reception. It was to be the Jazz Butcher’s second album ‘A Scandal in Bohemia’ that was to attract serious attention from the independent music press, selling over 20,000 copies and introducing them to an international fan base. The band went full time in 1984 and Pat gave up his job working for a local solicitor’s firm.
+<p />
+It was in February of 1987, following on from a live performance in Paris, that the Jazz Butcher was first approached by Alan McGee of Creation Records to sign up to their label. In later years when young aspiring musicians would ask Pat about how to seal a record deal he would simply say: ‘Leave the house and talk to people’, such was the happenstance and serendipity of how he felt he had come by his own opportunities.
+<p />
+In 2013, just as Pat came to the conclusion that his musical career had come to natural halt, it was kickstarted again by a chance opportunity to play music at a newly opened local gin parlour. The reformed group became known as The Jazz Butcher Quartet consisting of local musicians Steve New, Simon Taylor and the late Steve Garofalo (to whom his latest album is dedicated in memory of).
+<p />
+Avoiding categorisation, it’s somewhat challenging to exactly pinpoint and capture the enigmatic and prolific song writing output of Pat Fish and the music of the Jazz Butcher within a simple genre although often broadly referred to as ‘indie’.
+<p />
+Claiming to have no real imagination, he would describe his lyrics as postcards of moments, feelings and observations that include explorations of love, death, loss, politics, references to old film stars and situationist philosophy, animals, especially cats, elephants and dinosaurs; humour and sadness imbued with a sometimes bitter and dark twist from a psychedelicised mind. Being no stranger to the oblique cards strategy of Brian Eno, and the David Bowie cut-up technique, it was just as likely that a song line would occur whilst walking to the local shops or pub.
+<p />
+Pat’s musical influences and heroes spanned an eclectic mix including Syd Barrett, Peter Perrett, Patti Smith, The Velvet Underground, Kevin Ayers and Bob Dylan. He was also a keen enthusiast of ‘The Third Policeman’ by Irish novelist Flann O’Brien, lending to the uninitiated and having to re-purchase several copies himself. He was a regular subscriber to The Fortean Times, a magazine exploring strange phenomena and weird experiences.
+<p />
+One of his favourite pastimes was watching football with his close friend, Northampton-based archaeologist Paul Blinkhorn, a Liverpool football fan, which was a team Pat was able to tolerate alongside his beloved Spurs.
+<p />
+An impressionable experience that would transform his life and lead to a lifelong passion for music making was watching Patti Smith perform ‘Horses’ on television during the 1970s.
+<p />
+The Jazz Butcher would open for John Cale at the Forum in London in 1993, one of his musical heroes, and, also in turn being supported in a live performance in the USA by musician Jeff Buckley.
+<p />
+Known for his colourful retelling of touring band exploits, this included a two-day drinking session in a transvestite cowboy bar with musician Alex Chilton, performing in 1986 in the Bay of Naples to 20,000 members of the Italian Young Communists and fan Mark E Smith of The Fall being turned away at one of their music shows (although subsequently allowed in).
+<p />
+Pat Fish’s generosity and kindness to his fan base is well known and highly regarded. He spent many an hour in recent years talking to his fans online with humility and honesty, and throughout his career signing albums and photographs sent in the post. A cancer diagnosis in 2019 (from which he subsequently recovered) didn’t prevent him from meeting fans who would visit Northampton.
+<p />
+During the coronavirus pandemic Pat performed a series of online music performances which were well received by his community of close-knit Jazz Butcher fans from across the globe. It was filmed by his long-standing housemate and friend Dhiren Basu and broadcasted on social media with occasional guest appearances from his much-loved cat Raoul.
+<p />
+During 2020 he also performed a cameo role in Alan Moore’s newly released film ‘The Show.’
+Photo credit: Paul Blinkhorn
+<p />
+This year, Pat was back in the music studio recording his latest album ‘The Highest in the Land’ produced by Lee Russell and musical contributors including lifelong and close musician friends Tim Harries, Joe Woolley and Peter Crouch.
+<p />
+Having completed his last album, he died suddenly but peacefully at home in his beloved ‘Fishy Mansions’ NN1, where he entertained so many companions and fans long into the night with rich conversation and music.
+<p />
+The outpouring of memories, stories and tributes in recent weeks online from fans, friends and loved ones are a testimony to the upstanding and statesman-like character of Pat Fish. He truly was, just like the namesake of the Jazz Butcher 2012 album, one of the ‘Last of the Gentleman Adventurers.’
 		)}
 	)}
 	${jbc_footer}

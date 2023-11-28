@@ -911,7 +911,14 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[84]->body
 	<a href="/gigs/1992/Jun12.html"><img src="/images/19920612/19920612_setlist_250.jpg" width=250" alt="setlist"></a>
 
-#define	newsItem->numResults	84
+#define	newsItem[85]->dt	${date(U, 2023-11-27 20:41:00)}
+#define	newsItem[85]->subject 2015-09-22 - Backstage photo
+#define	newsItem[85]->link	/gigs/2015/Sep22_2000.html
+#define	newsItem[85]->category	press
+#define	newsItem[85]->body
+	<a href="/gigs/2015/Sep22_2000.html"><img src="/images/20150922/20150922_william_backstage_250.jpg" width=250" alt="backstage"></a>
+
+#define	newsItem->numResults	85
 
 
 #define	data.json

@@ -2,6 +2,7 @@
 
 import { Suspense } from 'react';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -15,11 +16,14 @@ const PressArticle = ({ params }: { params?: any }) => {
 	const subTitle = article?.publication || (article?.type?.includes('pat') && 'The Butcher Writes') || article?.title;
 	const title = (subTitle) ? `${subTitle} - ` : '';
 
+	if (!isLoading && !article) return notFound();
+
 	return (<>
 		{(data?.error) && <h1>{data?.error}</h1>}
 		<Suspense fallback=<>Loading...</> >
-			{(!isLoading && article) && (<>
-					<Header section="press" title={`${title} ${article.dtpublished.substr(0, 10).replace(/-00/g, '-01')}`} />
+			{(!isLoading) && (<>
+					<Header section="press"
+						title={title && `${title} ${article?.dtpublished.substr(0, 10).replace(/-00/g, '-01')}`} />
 					<main>
 						<PressItem item={article} />
 					</main>

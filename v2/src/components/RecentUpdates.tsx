@@ -8,6 +8,7 @@ import News from '@/components/News';
 import useRecentUpdates from '@/lib/useRecentUpdates';
 import { dateDiff } from '@/lib/utils';
 import { feedbackURI2Pathname } from '@/lib/usePageComments';
+import InfoTag from '@/components/InfoTag';
 
 const RecentPress = (props: any) => {
 	const { press } = props;
@@ -18,7 +19,7 @@ const RecentPress = (props: any) => {
 			{press.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">
 					<div className="date">{dateDiff(p.dtadded, '')}</div>
-					<Link href={p.url}><b>{!!p.publication?.length && p.publication + ':'} {p.title}</b></Link>
+					<Link href={p.url}><b>{!!p.publication?.length && p.publication + ':'} {p.title}</b></Link> <div className="date">Published: {p.dtpublished.substr(0, 10)}</div>
 				</div>
 			})}
 		</blockquote>

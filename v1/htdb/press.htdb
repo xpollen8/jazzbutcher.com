@@ -301,8 +301,8 @@ ${d}
 #define	updatePressDatabase()
 #live	if (defined(updateDatabase))
 <h1>truncate</h1>
-#live		if (sql(truncate table press))
-#live		endif
+##live		if (sql(truncate table press))
+##live		endif
 #live		loop (pi, 1, ${pressItems->numResults})
 #live			if (define(pr, pressItems[${pi}]))
 <h3>${pi}: update (pub:${${pr}->dt}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
@@ -2113,6 +2113,17 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Rage Magazine,
 		location=UK,
 		dt=1991-09)}
+
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/202203_press_mojo.html,
+		credit=Andy Cowan,
+		publication=Mojo,
+		title=The Jazz Butcher,
+		headline=The Highest In The Land,
+		subhead=TAPETE. CD/DL/LP,
+		location=UK,
+		dt=2022-03,
+		added=2023-11-28)}
 
 	${addPress(type=album, album=blue,
 		url=${jbc_press}/91select.html,
@@ -18333,6 +18344,18 @@ I had never made a record with a group before and I wasn't sure if I really want
 	${jbc_footer}
 #live	endif
 
+#define	202203_press_mojo.html
+#live	if (getval(page) = 202203_press_mojo.html)
+	${extractPress(
+		body=${literalizeCommas(
+	Underrated songwriter supplies his own effortlessly swinging epitaph. Intimations of mortality run rife through Pat Fish's fourteenth and final Jazz Butcher LP. But whether "screaming at the ambulance" with his name on it on Goodnight Sweetheart, watching "existential threats pile up like mashed potato snow" on Hammond-laced singalong Running On Fumes or catching a "one-way ticket to a pit of council lime" amid the wry, semi-rapped ruminations of Time, they're far from mawkish or selfpitying. Fish was clear from extensive cancer treatment when producer Lee Russell captured the most natural sounding album of his career. From the jangly jazz fusion of Melanie Hargreaves' Father's
+Jaguar to the carefree guitar pop of Sea Madness and shimmering lap-steel lamentation of Never Give Up — a heartbreaker, up with his very best – fresh triumphs override metatextual nods to glories past.
+	<p />
+	4 Stars
+		)}
+	)}
+	${jbc_footer}
+#live	endif
 
 #define data.json
 #define data.json

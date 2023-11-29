@@ -436,6 +436,26 @@ ${d}
 	${addPatLiveGigs()}
 	${addLiveGigs()}
 
+	${addPress(type=album, album=fire_wasted,
+		url=${jbc_press}/20180206_press_magnetmagazine.html,
+		publication=Magnet Magazine,
+		thumb=/images/releases/fire_wasted/JazzButcherGroupBW2,
+		credit=Corey duBrowa,
+		title=Essential New Music,
+		headline=The Jazz Butcher’s “The Wasted Years”,
+		dt=2018-02-06,
+		added=2023-11-28)}
+
+	${addPress(type=album, album=adventurers,
+		url=${jbc_press}/20160227_press_magnetmagazine.html,
+		publication=Magnet Magazine,
+		thumb=/images/20170406/20170406_group;;Matt Wallis,
+		credit=Corey duBrowa,
+		title=Essential New Music,
+		headline=The Jazz Butcher’s “Last Of The Gentleman Adventurers”,
+		dt=2016-02-27,
+		added=2023-11-28)}
+
 	${addPress(type=album, album=bacon,
 		url=${jbc_press}/19820905_press_mercuryandherald.html,
 		publication=Mercury And Herald,
@@ -18352,6 +18372,28 @@ I had never made a record with a group before and I wasn't sure if I really want
 Jaguar to the carefree guitar pop of Sea Madness and shimmering lap-steel lamentation of Never Give Up — a heartbreaker, up with his very best – fresh triumphs override metatextual nods to glories past.
 	<p />
 	4 Stars
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20180206_press_magnetmagazine.html
+#live	if (getval(page) = 20180206_press_magnetmagazine.html)
+	${extractPress(
+		body=${literalizeCommas(
+For a prolific musical project with nearly as many compilations as official releases, it makes sense that the Jazz Butcher—a.k.a. Pat Fish and whoever was sprinkled about his orbit over the years—would break a five-year silence with a four-disc set reassembling the group’s earliest releases. The Wasted Years is anything but—Fish and Co. were marvelously out of step with contemporary pop chart tastes back in the early 1980s, spinning British eccentricity into fool’s gold with albums that veered wildly from a stylistic standpoint. 1983 debut In Bath Of Bacon was essentially a Pat Fish solo album in Jonathan Richman mode; later efforts such as 1984’s A Scandal In Bohemia leaned faux-folk, while 1985’s terrific Sex And Travel included a lineup featuring Bauhaus’ David J. that traded in story/songs Ray Davies might’ve recognized. Stylishly repackaged with lovingly crafted liner notes to match, The Wasted Years finds Fish polishing his legacy with work resembling what Syd Barrett might’ve sounded like if his vice was closer to cross-tops than sugar cubes. Revisiting these years is the sound of some of our undergraduate degrees.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20160227_press_magnetmagazine.html
+#live	if (getval(page) = 20160227_press_magnetmagazine.html)
+	${extractPress(
+		body=${literalizeCommas(
+If Richard Hawley was more psychedelic story-weaver than twilight troubadour, or if Robyn Hitchcock had been separated at birth from an equally daft twin, they would be the Jazz Butcher, a.k.a. eccentric English singer/songwriter Pat Fish plus whomever he happened to have around since 1982.
+<p />
+Back in the day, that list of contributors included Max Eider, David J (Bauhaus, Love And Rockets) and Spacemen 3’s Sonic Boom, among others. Last Of The Gentleman Adventurers finds Fish reuniting with several of these trusted wingmen in service of recording/touring again after more than a decade out of the game, reissuing a self-pressed, limited-edition disc originally created to quietly celebrate the band’s 30th anniversary. Memorable melodies, lyrical yearning and stylistic elasticity (from the title track’s cowpoke jazz-blues to the trebly Lloyd Cole-like guitar pop of “All The Saints”) makes this band of merry men worthy of rediscovery, the same as they ever were.
 		)}
 	)}
 	${jbc_footer}

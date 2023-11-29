@@ -1,12 +1,13 @@
 import Link from 'next/link';
 
-const MakeSimpleURI = ({ uri='', text, aux, children }: {
+const MakeSimpleURI = ({ uri='', text, aux, children, className }: {
 	uri?: string
 	text: string
 	aux?: string | React.ReactNode
+	className?: string
 	children?: string | React.ReactNode
 }, key: number): React.ReactNode  => (
-	<div key={key}>
+	<div key={key} className={className}>
 	{(uri) ?
 		<Link href={uri} style={{ display: 'inline-block', width: '100%', borderBottom: 'none' }}>
 			<div className="clickDiv hover:outline bg-white">

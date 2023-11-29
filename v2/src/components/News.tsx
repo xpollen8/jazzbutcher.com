@@ -89,7 +89,7 @@ return <>
 		}
 		return <div key={key}>
 			{banner}
-			<MakeSimpleURI uri={n?.link} text={n.subject || ''} aux={dateDiff(n.dt)}>
+			<MakeSimpleURI uri={n?.link} text={n.subject || ''} aux={dateDiff(n.dt)} className="listItem">
 				<div dangerouslySetInnerHTML={{ __html: n.body || '' }} />
 				{(n?.credit) && <Credit g={n.credit} />}
 			</MakeSimpleURI>

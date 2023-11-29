@@ -17,21 +17,6 @@ label {
 	font-weight: bold;
 }
 
-/// GALLERY
-.gallery	dl {
-	text-align: center;
-}
-.gallery	dd {
-	width: 100%;
-	border: solid 1px gray;
-	padding: 10px;
-	margin: 10px;
-}
-
-/// GLOBAL
-.hiddendate {
-	display: none;
-}
 .audioPlayer {
 	padding-left: 10px;
 	padding-right: 10px;

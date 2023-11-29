@@ -6,6 +6,11 @@ const texts = [
 	{ uri: '/eulogy', text: 'Alan Moore',
 		aux: 'Eulogy' },
 	{
+		uri: '/press/20211029_press_nnjournal',
+		text: 'Rachel McGrath',
+		aux: '[NN Journal]: An obituary',
+	},
+	{
 		uri: '/press/20211007_press_louderthanwar',
 		text: 'Alex Maiolo',
 		aux: '[Louder Than War]: An appreciation',

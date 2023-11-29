@@ -301,12 +301,12 @@ ${d}
 #define	updatePressDatabase()
 #live	if (defined(updateDatabase))
 <h1>truncate</h1>
-#live		if (sql(truncate table press))
-#live		endif
+##live		if (sql(truncate table press))
+##live		endif
 #live		loop (pi, 1, ${pressItems->numResults})
 #live			if (define(pr, pressItems[${pi}]))
 <h3>${pi}: update (pub:${${pr}->dt}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
-#live				if (sql(x:insert into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${literalizeQuotes(${${pr}->images})}", media="${literalizeQuotes(${${pr}->media})}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${literalizeQuotes(${${pr}->audio})}", publication="${literalizeQuotes(${${pr}->publication})}", title="${literalizeQuotes(${${pr}->title})}", headline="${literalizeQuotes(${${pr}->headline})}", subhead="${literalizeQuotes(${${pr}->subhead})}", location="${literalizeQuotes(${${pr}->location})}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->added})}", dtpublished="${fixDt(${${pr}->dt})}", dtgig="${fixDt(${${pr}->datetime})}", person="${literalizeQuotes(${${pr}->person})}", body="${literalizeQuotes(${${pr}->body})}"))
+#live				if (sql(x:insert IGNORE into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${literalizeQuotes(${${pr}->images})}", media="${literalizeQuotes(${${pr}->media})}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${literalizeQuotes(${${pr}->audio})}", publication="${literalizeQuotes(${${pr}->publication})}", title="${literalizeQuotes(${${pr}->title})}", headline="${literalizeQuotes(${${pr}->headline})}", subhead="${literalizeQuotes(${${pr}->subhead})}", location="${literalizeQuotes(${${pr}->location})}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->added})}", dtpublished="${fixDt(${${pr}->dt})}", dtgig="${fixDt(${${pr}->datetime})}", person="${literalizeQuotes(${${pr}->person})}", body="${literalizeQuotes(${${pr}->body})}"))
 #live				endif
 #live			endif
 #live		endloop
@@ -2114,6 +2114,17 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=UK,
 		dt=1991-09)}
 
+	${addPress(type=album, album=highest,
+		url=${jbc_press}/202203_press_mojo.html,
+		credit=Andy Cowan,
+		publication=Mojo,
+		title=The Jazz Butcher,
+		headline=The Highest In The Land,
+		subhead=TAPETE. CD/DL/LP,
+		location=UK,
+		dt=2022-03,
+		added=2023-11-28)}
+
 	${addPress(type=album, album=blue,
 		url=${jbc_press}/91select.html,
 		thumb=/images/199112/199112_press_select,
@@ -2521,6 +2532,17 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=/images/201604/201604_press_abus_cover,
 		location=France,
 		dt=2016-04)}
+
+	${addPress(type=profile;interview;album, album=fishco,
+		url=${jbc_press}/198902_press_howl_germany.html,
+		images=/images/198902_press_howl_germany_1$$/images/198902_press_howl_germany_2,
+		credit=Thomas Lasarzik,
+		publication=Howl #2,
+		title=The Jazz Butcher,
+		headline=It's a sad and beautiful world,
+		location=Munich\, Germany,
+		dt=1989-02,
+		added=2023-11-28)}
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/2016_press_rollingstone_germany.html,
@@ -18115,6 +18137,221 @@ This year, Pat was back in the music studio recording his latest album ‘The Hi
 Having completed his last album, he died suddenly but peacefully at home in his beloved ‘Fishy Mansions’ NN1, where he entertained so many companions and fans long into the night with rich conversation and music.
 <p />
 The outpouring of memories, stories and tributes in recent weeks online from fans, friends and loved ones are a testimony to the upstanding and statesman-like character of Pat Fish. He truly was, just like the namesake of the Jazz Butcher 2012 album, one of the ‘Last of the Gentleman Adventurers.’
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	198902_press_howl_germany.html
+#live	if (getval(page) = 198902_press_howl_germany.html)
+	${extractPress(
+		body=${literalizeCommas(
+<div class="iview_intro"> The Jazz Butcher, Pat Fish, one of the most pleasant and moving interviewees to date, who one can easily imagine having written some of his songs at English bus stops, tells in a long conversation for those who still believe The Jazz Butcher a party band, its story.
+</div>
+
+<div class="iview_q"> Why is Max Eider no longer in the group?</div>
+
+	<div class="iview_a"> Pat Fish: We had an argument. We got drunk and threw furniture at each other for an evening.
+	It started when I made a pretty meaningless comment.
+	He got it completely wrong. Hard to believe, but he picked up a table and threw it at me.
+	</div>
+
+<div class="iview_q"> So it was more personal than musical?</div>
+
+	<div class="iview_a"> No, that was just the culmination of the whole matter. We get along quite well again now.
+	<p />
+	But what really happened was that musically he moved in one direction and I moved in the other. That's why it was inevitable. Nobody can work together forever.
+	</div>
+
+<div class="iview_q"> What did Kizzy O'Callaghan, your new partner, do before The Jazz Butcher?...Musically.</div>
+
+	<div class="iview_a"> Oh, I thought I had to tell you about how he once blew up a gas station.
+	<p />When he was very, very young, he started making music in Ireland, where he comes from. He played with people much older than him. Then he stopped for a few years.
+	<p />Whenever he was in London he lived in the same house as me. Sometimes he came with us on tour to take care of the guitars. When I needed a new guitarist, it was obvious to bring him into the group.
+	</div>
+
+<div class="iview_q"> How important are these people to the group? How important was Max, is Kizzy?</div>
+
+	<div class="iview_a"> Max was incredibly important. More or less I learned to play the guitar through him. And so the music inevitably changed. Everyone in the group is important. Everyone who plays with you shapes the music.
+	<p />I write the songs, do home demos, but as soon as they play the things, they form you too. That's because they should play it in a way that they enjoy.
+	<p />
+	Especially Kizzy, he's a pretty individual guy. Every evening something different happens. He's the Syd Barrett of the group. Of course these people are important. I can't possibly have my fingers in everything,
+	</div>
+
+<div class="iview_q"> But you already see yourself as a bandleader.</div>
+
+	<div class="iview_a"> Yes, I am the songwriter. Le boucher c'est moi. And the group is just the group.</div>
+
+<div class="iview_q"> You once told me that you learned a lot about songwriting from David J. Could you explain that in a little more detail?</div>
+
+	<div class="iview_a"> He definitely had an influence on me as a songwriter. I was very impressed by his Crocodile Tears And The Velvet Cosh album. Take Angels (Distressed Gentlefolk). The chords: David J and Nikki Sudden. What I learned a lot about from him was working in the studio. He's really good in the studio. When we were recording Soul Happy Hour for A Scandal In Bohemia, he came up and said, "I just came up with one idea" and he went with his old fucked up 5-said brought his guitar into the recording room, cranked it up and played that loud guitar solo in the middle of Soul Happy Hour. Max and I were in the control room and thought, "Oh God, the doctor is having another one of his seizures." The thing sounded absolutely terrible. He came to mix it. Mentally he was completely withdrawn, like a chess player. We listened to the mix and right at the end of the guitar solo, this feedback came in absolutely the right place. Incredible. I learned a lot from him by watching how he works in the studio. He is very forward-looking. A not untalented person.</div>
+
+<div class="iview_q"> And what about Rolo McGinty?</div>
+
+	<div class="iview_a"> Yes, what about him? What should we do with this Rolo McGinty? We'll probably have to admit that we'll have to get used to him. This is my advice to the world: "Get used to it, because you won't get rid of it that quickly!"</div>
+
+<div class="iview_q"> Was he a full member of the Jazz Butcher back then?</div>
+
+	<div class="iview_a"> At first it was Max, a saxophonist and me. We never thought we would ever make a record. Then David J, who we had never met before, contacted us and said: "Bauhaus are playing at the Hammersmith Odeon, we want you as the opening act". Freak Out! So we formed the group. Rolo was there too. The band existed around the whole of 1983. The first single Southern Mark Smith, which is no longer available, was recorded by this line-up. Rolo, Alice, Max, Kevin Haskins and me. It was just a thrown together band. We panicked and quickly formed this group because of the Bauhaus. In September 83 I separated from Alice. At the same time, Rolo started with the Woodentops. Max and I then played some & acoustic gigs. . </div>
+
+<div class="iview_q"> Do you see musical similarities between Thee Jazz Butcher and the Woodentops?</div>
+
+	<div class="iview_a"> Yes, guitar power, speed, melody, simple at The Jazz Butcher because she was my friend and we wanted to give her something to do. Rolo thought she looked good and might have learned something after a while. But she learned nothing during the entire time she played with the Woodentops. For the last 6 months before she left the Woodentops, Rolo and Alice didn't speak to each other. Be in a group where people don't talk to each other. People ask me: "Max and you. Did it have personal reasons?" No!...Anne Stephenson, her successor, a really nice person, is even smaller. Rolo claims she is a duck. If Rolo says something like that, you can imagine what we'll think.</div>
+
+<div class="iview_q"> When and how did your interest in songwriting actually begin?</div>
+
+	<div class="iview_a"> I lived in the country with my parents. I had no job, no money, no friends, nothing. Just a guitar and some stupid instruments. A flute, a glockenspiel. And this 2-tape recorder. I wondered if I could record a song with it. I tinkered around and recorded 2 songs. Zombie Love and Jazz Butcher Theme (both on Bath Of Bacon). I liked it. I didn't think I could do something like that. I couldn't even play the guitar back then. I just sent a copy of it to people I knew, and one of them happened to be Dave Barker, who happened to be starting Glass Records and asked me if I wanted to make an LP. At first I thought the Jazz Butcher would remain this figure in the shadows, distributing his tapes via the English post. I had no idea it would end here. It completely slipped out of my hands. It's only this year that I'm starting to realize what we do and have done. Before that everything was coincidence. We approached the matter fairly carelessly. Our attitude was sometimes so careless that it resulted in hardly any people coming to our concerts. The argument between Max and I was about the importance of the audience. For him, music is everything. I want to play the music 100% well, but because there are people who want to listen to it, not for abstract reasons. I believe there is no point in playing a song if there is no one to listen to it. And with this band I think I'm going to be professional for the first time. Professional? You saw the concert. It wasn't that professional either. But it's the first time I know what I'm doing. We know that we have responsibilities.</div>
+
+<div class="iview_q"> What responsibility?</div>
+
+	<div class="iview_a">People just put expectations on you.</div>
+
+<div class="iview_q"> But you really can't know what the audience expects.</div>
+
+	<div class="iview_a">That's correct.</div>
+
+<div class="iview_q"> Do you like Frank Zappa?</div>
+
+	<div class="iview_a">In the late 70s I listened to a lot of Clash, Stranglers Buzzcocks and the first three Zappa albums. We're Only In It For The Money is a vicious attack on everything. It's simply the greatest anti-hippie record of all time. And the Velvets never made such an anti-hippie record. Frank Zappa was really dangerous. And he used humor to viciously attack people. He didn't influence me, but I liked his old stuff. Only when he got better musically did he completely freak out and make a record where he only spoke dirty words in order to be able to pay the rent. And when he had the money he started making these idiotic jazz rock records. But in 1966 he was First Division.</div>
+
+<div class="iview_q"> But Lou Reed was probably very influential on you?</div>
+
+	<div class="iview_a">What I learned from Lou is understanding how to use simple chords. Things like Pale Blue Eyes.  I also like songs like Sister Ray. But Pale Blue Eyes, I'm Set Free, Afterhours...That's the other side of the Velvets.
+	<p />
+	Afterhours is my favorite Velvets track. This site was almost folky, but definitely not hippie. Lou was so sweet. Today he is like Paul Newman or Steve McQueen. Not quite as good anymore. But when he was young, oh God.
+	<p />
+	I would have gone to bed with him.
+	</div>
+
+<div class="iview_q">  On your older records you brought things so openly, obviously includes pieces of old songs. Wilson Picket's Land Of The Thousand Dances in Jazz Butcher Theme or Born To Be Wild in Poiseened By Food (Bath Of Bacon). Do you think that your way of using scraps of these old songs has something in common with the way rap musicians work? Especially since you also have a rap on your new record?</div>
+
+	<div class="iview_a"> Yes, the procedure can probably be compared.  The single with which Run DMC made their breakthrough could also have been called an Aerosmith single. The difference is: If you're from New York and you do it, then you're cool, if you're not from New York, then you're just not cool. But that doesn't matter. I know I'm cool. I like rap, I like sampling and there's nothing wrong with stealing from the good stuff. And I think we'll do more rap in the future. Sometimes I start talking very fast on stage during a song. It depends on how much drugs I've taken.
+	<p />
+I'll just start babbling. And nothing can hold me. It's not singing anymore. I talk to the music. And I've been doing that for years. And then I listen to rap and think to myself: "Yes, that sounds familiar." Especially it's very helpful if you're not exactly the best singer.
+	</div>
+
+<div class="iview_q"> Your singing is okay.</div>
+
+	<div class="iview_a"> Well, I'm doing my best. I often find myself out of breath, so I must have done my best. We'll definitely work more with rap. A lot of white people are a little worried about incorporating rap into their music. I believe that is wrong. Rap is much more of a 'musical' thing than reggae. Reggae emerged from cultural circumstances. I think it's wrong for white people to play reggae. The most important thing about rap is to express your own voice. What are all the MCs doing? They tell you how great they are. Besides, rap is like spoken language and when it comes to my lyrics, I always try to make it clear that I don't want to write poetry. My texts should be such that you could speak them in the pub or at the bus stop. Colloquial language.</div>
+
+<div class="iview_q">  Did you hear Bob Dylan on the Kurtis Blow record (Kingdom Blow) rap?</div>
+
+	<div class="iview_a"> Oh no! How is he? Actually, Dylan's singing on many of his old songs is very similar to rap.</div>
+
+<div class="iview_q"> That also applies to Lou Reed. The way he looks up The Sun City record 'sings' isn't that different from other Lou Reed songs.</div>
+
+	<div class="iview_a">Exactly. You hit the nail on the head.
+	<p >
+I have to say in the last answer. He's also hated by a lot of rappers because he does it at an insane speed. And soon the NME will feature a group that plays and raps to speed metal. And do you know what that is? The Velvets, 1968. You're right. Lou has a way of spitting out the words. Now I know who I got it from. Good old Lou, I really love him.</div>
+
+<div class="iview_q"> Your records are quite different from each other. Care to comment on each one? For example, whether you are satisfied, what could have been better, etc.</div>
+
+<div class="iview_a"> The first is Bath Of Bacon. It was like a phone call: "Would you like to make an LP?" Sure.
+	<p />No idea what to do, no band, nothing. I had to cover the studio costs myself. The highest loan I could get from a bank was £300. We recorded it on an 8-track machine, very cheap, very fast. All my friends stopped by and helped out. Looking back, it can hardly be described as a well-crafted LP. It was like a postcard from vacation. I had a steady job, took a week's vacation and made the record: "Hello, how are you? This is what I'm doing right now." But I think it's better to make a record like that than to say the philosopher's stone would have been found. Bath Of Bacon was more of a solo LP.
+		<p />By the second one, A Scandal In Bohemia, the band had already developed. I definitely didn't want to make any of those boring pop records. I had serious difficulties two or three times during the making of the record. I totally freaked out because 
+I had never made a record with a group before and I wasn't sure if I really wanted to. But it worked well. It's a varied record and the cover is the best of all Jazz Butcher albums. You can actually look at it as the first album. I love Sex And Travel. Everything happened very quickly, very concentrated and consciously. Rehearse for 1 day, record and mix for 6 days. It doesn't feel like a record to me, more like a short film.
+	<p />I love this record. It and Fishcotheque are my favorite records.
+	<p />Distressed Gentlefolk: An ambivalent album. It was the wrong time. We had a few ideas and suddenly America appeared. We had to go to the States. I wanted to do the LP afterwards because I wanted to change a few things. I planned to bring Alex into the band. It was around the time we were recording the Conspiracy EP and we really just wanted to record demos for the LP. And at the end we played the record. There were people playing on the album who actually didn't know what was going on.
+	<p />It was more than I could handle. Some things on the LP are good. The morbid things. Still In The Kitchen or Angels. But other things weren't thought through enough. It's probably overproduced, but that's just the way John Rivers works.
+	<p />Fishcotheque was created in a similar way to Bath Of Bacon. Kizzy and I had clear ideas, but the two Weather Prophets guys didn't know what was going on. I tried to record demos for them, but my tape recorder broke. And I had a rehearsal with Daue Morgen. We went to a pub and drank. That was our test. It was like Bath Of Bacon. "Come and join us". Someone recently said to me that the record sounded like the people playing didn't know the songs well. And that's true. But I like the record. It is quite varied.
+	<p />The next one will be wild. Like acid house. With a groove section. Wild. Like a punk acid disco record. You will either love them or hate them. It will probably be like Wooden Foot Cops On The Highway (desperate laugh). What should we do with this Rolo McGinty?</div>
+
+<div class="iview_q"> Which lot has sold best so far?</div>
+
+	<div class="iview_a"> It's really a pleasure for me to tell you that it's the new one. About 30,000 pieces so far. America contributes a lot to this. And it's only been out for 2 months. It took Distressed Gentlefolk a year to get to this point. Our current label, Creation, is simply better organized.</div>
+
+<div class="iview_q"> The press release from your German record company says that Fishcotheque is your most varied LP.</div>
+
+	<div class="iview_a"> They are all quite varied. Fishcotheque actually seems pretty consistent, as they have a fairly similar sound throughout.</div>
+
+<div class="iview_q"> Lyrically, it's hard for me to say anything because there's no guide sheet.</div>
+
+	<div class="iview_a"> Yes, I'm sorry. But that's snobbery. When I was a teenager, about 100 years ago, groups like Genesis and Yes always released a lyric sheet with their records. And that really scares me. When we made the live LP for the Federal Republic of Germany, we added a lyric sheet because we knew it would only be released in the Federal Republic of Germany. If it could be organized to only add the lyrics to the record in foreign-speaking countries, we would do it. I'm very suspicious of bands that put lyrics on their records. You don't bring out the bass fingerings either.</div>
+
+<div class="iview_q"> Do you think Fishcotheque is your most serious LP so far?</div>
+
+	<div class="iview_a"> Between Distressed Gentlefolk and Fishcotheque I learned a few things. about me. I do not know exactly. Sex And Travel is a pretty serious LP. Distressed Gentlefolk was too serious. Too pompous. We took ourselves too seriously. That was because of Eider. He was completely thrilled with the album. I could understand what he meant, but I was missing the spark somewhere, except for the song Nothing Special. Fishcotheque is a bit more thought out since I took a break. We toured almost non-stop from 1984 onwards. We toured ourselves to death. It was crazy. We wanted to stop, went on vacation and wrote to each other that we couldn't go on. We just wanted to live an ordinary life. But after a few months break, I just had to come back, right? This song Susie on Fishcotheque is something like a self-explanation, a justification.</div>
+
+<div class="iview_q"> Is there a connection between Susie and Only A Rumor (Sex And Travel).</div>
+
+	<div class="iview_a"> Yes, the same girl. Poor old Susie. She is the straw I cling to when my delusions plague me too wildly. Poor girl. This is a wild story.</div>
+
+<div class="iview_q"> Back to the diversity on your records. Is there an idea behind it, or does it happen unconsciously, by chance?</div>
+
+	<div class="iview_a"> It's like...A kid walking around a toy store wondering, "What's this good for? What can I do with it?" When we're with the old band, we call them the Eider Band, played a song that had a slight country feel to it, then we played it so over the top that it actually sounded like a country song. The new band presents a more unified image as they try to find their own style.</div>
+
+<div class="iview_q"> There's quite a bit of humor in your songs. But how do you feel writing songs like Vienna Song, Angels, Girlfriend, Only A Rumour, Susie, and then being described almost exclusively as a comedy band, a funny, humorous band?</div>
+
+	<div class="iview_a"> Yes, these songs are not comedy songs. Honestly, it really annoys me. Songs like Girlfriend and Angels are full of personal stuff. I know it sounds idiotic, but sometimes when we play these things live and we play them well, I cry. The ending of Angels is sometimes so good that I start to gasp because that little cat died. It's great. To some extent I'm really happy, the group sounds fantastic. I know that sounds idiotic.</div>
+
+<div class="iview_q"> Why? That's not idiotic. It should be so.</div>
+
+	<div class="iview_a"> That's why I make pop music. To be happy and sad. There's a Brazilian word, saudade, that captures this feeling of simultaneous happiness and sadness quite well. There's actually no word for it in English. In Sounds a critic wrote about Fishcotheque, which I consider to be a pretty serious LP, and called me the Mike Yar-wood of pop music. Mike Yarwood is a really bad comedian who still imitates English prime ministers from the 1960s. This critic complained that the LP wasn't funny enough. Who the hell told him the record was supposed to be funny? It can be very frustrating and I would like to get away from it. For other groups it is exactly the opposite. The Smiths. Everyone says, "Oh The Smiths, miserable." But sometimes they are so funny. This also applies to Nikki Sudden normal, real human behavior.</div>
+
+<div class="iview_q"> That's an image thing. To characterize a band in a nutshell. Best in one sentence.</div>
+
+	<div class="iview_a"> But describe Lou Reed in one sentence, or Tam Waits, Bob Dylan. Well, these guys have it their perseverance, achieved through their own personal quality. I'll have to try! I don't think I'll ever be as good as Tom Waits or Lou Reed, but whatever. I'll at least try. I still can for some people be an enrichment, have meaning. It's not a competition, not a football game. It's just about doing what you can. There's a couple, they met at a Jazz Butcher concert and fell in love with each other. It was important to her. Honestly, I felt like their priest. It is great; They came back to the concert and we took a photo of the three of them. You can really have a positive influence on some people's lives. That's great, isn't it?
+	<p />
+	Oh, I'm getting so sentimental, sorry. Today I'm going to tell you things that I don't often say.
+	</div>
+
+<div class="iview_q"> Do you know the NME record review about Fishcotheque?</div>
+
+	<div class="iview_a"> Yes, Helen Mead wrote it. It is strange. We're starting to get good reviews in the NME. Something must have gone wrong.</div>
+
+<div class="iview_q"> There was an interesting sentence in there: "The Jazz Butcher, the man and lyricist, is almost a genius, or an idiot, it depends on whether the reviewer is a doctor of philosophy."</div>
+
+	<div class="iview_a"> That's OK. My favorite review of what I'm trying to do was in a Canadian magazine: Lousy Jazz Butcher, he looks at the world and he writes about things as they really are. And that's why everyone thinks he's crazy." Most of my songs are reports. I just see something happen and report it. Even Water, which Nikki hates so much, is a true story. This elephant was found in Siberia. And you can imagine how the Russians are crazy about something like that. So there's this elephant on this farm and the owner claims: "He talks." And of course all the Soviet scientists flock to this farm, with tape recorders and film cameras . And one night, when everyone was asleep, this elephant starts talking. They had their tapes playing. And the elephant murmurs: "Ele-fent, good elephant" in Russian of course, "Water, the elephant has already had water" , Because he heard his owner say: "Water, give the elephant water". People think: "Mhm, what a shitty song". Sure it's a shitty song, but it's true.</div>
+
+<div class="iview_q"> What about the song The Best May on Fishcotheque. Does the person speaking sound like Ronald Reagan?</div>
+
+	<div class="iview_a"> True, but it's Not Reagan. Like before. It's from an American poultry commercial that played on US radio.</div>
+
+<div class="iview_q"> Do you have something against being asked about individual lines of your songs?</div>
+
+	<div class="iview_a"> No, not at all. I'm just amazed that anyone is interested in this.</div>
+
+<div class="iview_q"> Vienna Song: "It's just like those songs that I recently believed in about living your life in the run." Did you have specific songs in mind when you heard this line?</div>
+
+	<div class="iview_a"> No, but you hear songs like R. Dean Taylor's Indiana Wants Me, or Bruce Springsteen. Born To Ru Run. And often you think they're clichés. You think you hate these songs. "Baby, Im an outlaw" and all that shit. And then you realize that you're on you write a song about touring, about people you meet on tour but are probably unable to ever see them again. And then you start to understand what you're actually doing all the time: you're constantly on the road! God, it's really like in all those songs, which I never believed. But sometimes it really is.</div>
+
+<div class="iview_q"> In the song Bath Of Bacon you sing, "The tune just came when I took LSD, bit I know for sure it was No-ABC". Did you mean the band ABC?</div>
+
+	<div class="iview_a"> Yes, ABC was the thing back then. They had all the attention, 1982, 83. I thought, "This ain't No-ABC." There is a demo version of the song where I sing:"And I knew I had to sing it like XTC..</div>
+
+<div class="iview_q"> Girlfriend: I don't think I fully understood the story. Is this about a guy who fell in love with his friend's girlfriend.</div>
+
+	<div class="iview_a"> Many people think this. It is very impressionistic, so it is difficult to understand.
+	<p />I had a terrible hangover and felt really miserable. It was in the summer of '83, anyway. was very strange for me. I was living in Northampton and slowly becoming a bit more well known.
+	<p />The first LP had just come out and people knew that I was some kind of pop singer. There are a lot of 17 year old girls in Northampton. Every girl in Northampton is 17 all the time. I was with Alice.
+	<p />Our relationship was slowly falling apart...I was walking down the street and met my best friend's girlfriend and thought, "Oh, my boyfriend's girlfriend, I have a girlfriend too." Then I met another girl and she had too a friend.
+	<p />The whole idea behind Girlfriend is how people own each other. In the book Dracula there is this character Lucy Westenraa who asks her sister, "Why can't a girl marry 2 men?". Sometimes I bring that into the song on stage. It's just about how people possess each other. Stupid attitude, right? And 'it only seems to make me down'. It's quite complicated, but it's not about 'stealing' other people's girlfriends.
+	</div>
+
+<div class="iview_q">The chorus confused me.</div>
+
+	<div class="iview_a"> Me too (laughs).</div>
+
+<div class="iview_q"> On the back cover you comment on the song with the words: "Concerns a number of conflicting feelings (Yes, we do have them)". Who did you mean by we?</div>
+
+	<div class="iview_a"> The people in the group. At that time, this comedy band image was already emerging.
+	<p />Some of the songs on this LP are also quite happy. Soul Happy Hour or Marnie, which is a little fantasy story. But I just wanted to make it clear: "This is a serious song and the people in the group are real people." It was a strange summer. All of a sudden I was being turned on by all kinds of women. Something like that had never happened to me before and it probably won't happen again (laughs).
+	<p />Then during the summer the cat died. I loved this little cat. My reason for breaking up with Alice was because she didn't like the cat. It was really like: Who do you love more? Make a decision! The cat or me?" - "Ok darling, it's the cat"....And then the cat died. It was so sad. At the end of Girlfriend I sing: Don't sleep in the subway, darling. Don't stand in the pouring in, Maureen".
+	<p />She was so sweet and so young. She had kittens and died as a result...One night we played in Northampton, Rolo, Alice, Max and I and a drum machine. It was our best concert up to that point. It was our first time playing for a real audience.
+	<p />After the concert we went to my house and watched her slowly die. The whole group sat on the kitchen floor and cried. We knew she would die that week. Elements of this also flowed into Girlfriend. And Angels is about them too. It's weird, isn't it? Most people write love songs about other people.</div>
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	202203_press_mojo.html
+#live	if (getval(page) = 202203_press_mojo.html)
+	${extractPress(
+		body=${literalizeCommas(
+	Underrated songwriter supplies his own effortlessly swinging epitaph. Intimations of mortality run rife through Pat Fish's fourteenth and final Jazz Butcher LP. But whether "screaming at the ambulance" with his name on it on Goodnight Sweetheart, watching "existential threats pile up like mashed potato snow" on Hammond-laced singalong Running On Fumes or catching a "one-way ticket to a pit of council lime" amid the wry, semi-rapped ruminations of Time, they're far from mawkish or selfpitying. Fish was clear from extensive cancer treatment when producer Lee Russell captured the most natural sounding album of his career. From the jangly jazz fusion of Melanie Hargreaves' Father's
+Jaguar to the carefree guitar pop of Sea Madness and shimmering lap-steel lamentation of Never Give Up — a heartbreaker, up with his very best – fresh triumphs override metatextual nods to glories past.
+	<p />
+	4 Stars
 		)}
 	)}
 	${jbc_footer}

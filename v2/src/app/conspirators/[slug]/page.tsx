@@ -11,6 +11,7 @@ import { imageThumb, imageFull, parseCaptionsSourcesEtc} from '@/lib/utils';
 import { Credit } from '@/components/GenericWeb';
 import useGigs from '@/lib/useGigs';
 import { GigSearchResults } from '@/components/GigSearch';
+import { notFound } from 'next/navigation';
 
 //import useConspirator from '@/lib/useConspirator';
 
@@ -55,7 +56,6 @@ const Conspirator = ({ params }: { params?: any }) => {
 
 	const conspirator = data?.results[0];
 
-	/*
 	return (<><Suspense fallback=<>Loading...</> >
 		{(!isLoading && !isX) && (() => {
 			return (<>

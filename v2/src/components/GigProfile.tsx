@@ -1,6 +1,7 @@
 "use client"
 
 import React, { Suspense } from 'react';
+import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 //import './styles.css';
@@ -356,9 +357,11 @@ const GigProfile = (props: any) => {
 	const { data, isLoading, error } = useGig(datetime)
 	const gig = data?.results[0];
 
+	if (!isLoading && !gig) return notFound();
+
 	return <div className={(isLoading) ? 'blur-sm' : ''}>
 		<Suspense fallback=<>Loading...</>>
-			{(!isLoading && gig) && (<>
+			{(!isLoading) && (<>
 				<Nav year={year} datetime={datetime} gig={gig} />
 				<main>
 					<Content gig={gig} />

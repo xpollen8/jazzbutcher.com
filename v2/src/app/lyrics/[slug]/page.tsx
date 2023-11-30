@@ -11,6 +11,7 @@ import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import { removeHTML, Credit, Attribution } from '@/components/GenericWeb';
 import useLyric from '@/lib/useLyric';
 import { pluralize, ts2URI, parseCredit, parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/utils';
+import { notFound } from 'next/navigation';
 
 const	LyricVideo = ({ video }: any) => {
 	if (!video) return;
@@ -202,17 +203,17 @@ const Lyric = ({ params }: { params?: any }) => {
 			{ label: 'Medias', lookup: (song: any) => (song?.medias), func: Medias },
 	];
 
+	if (!isLoading && !song?.title) return notFound();
+
 	return (<><Suspense fallback=<>Loading...</> >
-		{(!isLoading && song) && (() => {
-			return (<>
-				<Header project={song?.project} section="lyrics" title={song?.title} />
-				<main>
-					<Tag>{song?.title}</Tag>
-					{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon, medias)}</div>)}
-					<FoundOn releases={foundon} />
-				</main>
-			</>)
-		})()}
+		{(!isLoading) && (<>
+			<Header project={song?.project} section="lyrics" title={song?.title} />
+			<main>
+				<Tag>{song?.title}</Tag>
+				{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon, medias)}</div>)}
+				<FoundOn releases={foundon} />
+			</main>
+		</>)}
 		<Footer />
 	</Suspense></>)
 }

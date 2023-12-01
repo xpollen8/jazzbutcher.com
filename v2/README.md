@@ -37,4 +37,4 @@ Submit changes as new branches, which will be reviewed prior to accepting your c
 
 This app will be deployed onto vercel upon changes/merges into the _main_ branch.
 
-The current _main_ branch [is running here](https://jazzbutcher-com.vercel.app/).
+The current _main_ branch [is running here](https://v2.jazzbutcher.com/).

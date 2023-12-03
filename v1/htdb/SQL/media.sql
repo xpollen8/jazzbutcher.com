@@ -10,6 +10,8 @@ create table media (
 	collection varchar(200) NOT NULL,
 	name varchar(200) NOT NULL,
 	comment varchar(200) NOT NULL,
+	version varchar(200) NOT NULL,
+	variant varchar(200) NOT NULL,
 	mp3 varchar(200) NOT NULL,
 	href varchar(200) NOT NULL,
 	author varchar(200) NOT NULL,

@@ -6137,7 +6137,7 @@ I haven't got a mind at all.
 
 	)},
 		onlist=
-		sex .. nons .. drainglass .. fire_wasted
+		sex .. nons .. drainglass .. fire_wasted .. va_city_of_silver
 	)}
 #live	endif
 

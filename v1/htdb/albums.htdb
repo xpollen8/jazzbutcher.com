@@ -4881,6 +4881,16 @@ Previously available on the ${fishco} LP/CD.
 	${jbc_footer}
 #live	endif
 
+#define	va_city_of_silver.html
+#live	if (getval(page) == va_city_of_silver.html)
+	${mkAlbumHeader(lookup=va_city_of_silver, body=${literalizeCommas()})}
+
+	${clearAlbumPerf(release=va_city_of_silver)}
+	${addAlbumPerf(release=va_city_of_silver,  ordinal=1, song="Red Russians Shot My Rocket Down", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/1984_CityOfSilver/The+Plymouth+Fastbucks+-+Red+Russians+Shot+My+Rocket+Down.mp3)}
+
+	${jbc_footer}
+#live	endif
+
 #define	collaboration_trampling_tokyo.html
 #live	if (getval(page) == collaboration_trampling_tokyo.html)
 	${mkAlbumHeader(lookup=trampling, body=${literalizeCommas()})}

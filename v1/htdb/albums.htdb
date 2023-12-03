@@ -53,18 +53,18 @@ ${tag_end}
 #live		else if (defined(as[${i}]->media) = NULL)
 				${songLinkMapped(title=${literalizeCommas(${as[${i}]->song})})}
 #live		endif
-#live		if (getval(as[${i}]->variant) != NULL)
-				<span class="song_author">(${as[${i}]->variant})</span>
-#live		endif
-#live		if (getval(as[${i}]->version) != NULL)
-				<span class="song_author">(${as[${i}]->version})</span>
-#live		endif
-#live		if (getval(as[${i}]->author) != NULL)
-				<span class="song_author">(${as[${i}]->author})</span>
-#live		endif
 #live		if (getval(as[${i}]->media) != NULL)
-				${linkAudio(title=${literalizeCommas(${as[${i}]->song})}, mp3=${as[${i}]->media})}
+				${linkAudio(title=${literalizeCommas(${as[${i}]->song})}, mp3=${as[${i}]->media}, author=${as[${i}]->author}, version=${as[${i}]->version}, variant=${as[${i}]->variant})}
 #live		endif
+##live		if (getval(as[${i}]->variant) != NULL)
+#				<span class="song_author">(${as[${i}]->variant})</span>
+##live		endif
+##live		if (getval(as[${i}]->version) != NULL)
+#				<span class="song_author">(${as[${i}]->version})</span>
+##live		endif
+##live		if (getval(as[${i}]->author) != NULL)
+#				<span class="song_author">(${as[${i}]->author})</span>
+##live		endif
 	<br />
 #live	endwhile
 
@@ -230,7 +230,7 @@ ${define(lastPer, ${ap[${api}]->performer})}
 
 #live	if ((defined(media)) && (getval(media) != NULL))
 #insert IGNORE into media set lookup="${release}", project="${project}", type="audio", name=${song}, mp3="${media}", author="${author}", collection="${collection}", ordinal="${ordinal}", datetime=NOW();
-#live		if (sql(insert IGNORE into media set lookup="${release}", project="${project}", type="audio", name=${song}, mp3="${media}", author="${author}", collection="${collection}", ordinal="${ordinal}", datetime=NOW()))
+#live		if (sql(insert IGNORE into media set lookup="${release}", project="${project}", type="audio", name=${song}, mp3="${media}", author="${author}", version="${version}", variant="${variant}", collection="${collection}", ordinal="${ordinal}", datetime=NOW()))
 #live		endif
 #live	endif
 #live	endif
@@ -4886,7 +4886,7 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=va_city_of_silver, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=va_city_of_silver)}
-	${addAlbumPerf(release=va_city_of_silver,  ordinal=1, song="Red Russians Shot My Rocket Down", media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/1984_CityOfSilver/The+Plymouth+Fastbucks+-+Red+Russians+Shot+My+Rocket+Down.mp3)}
+	${addAlbumPerf(release=va_city_of_silver,  ordinal=1, song="President Reagan's Birthday Present", version=Red Russians Shot My Rocket Down, media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/1984_CityOfSilver/The+Plymouth+Fastbucks+-+Red+Russians+Shot+My+Rocket+Down.mp3)}
 
 	${jbc_footer}
 #live	endif

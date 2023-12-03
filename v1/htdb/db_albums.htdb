@@ -3651,7 +3651,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 
 #define	albums[99]->dtadded	2023-11-04
 #define	albums[99]->buy
-#define	albums[99]->lookup	collaboration__michel_bulteau
+#define	albums[99]->lookup	collaboration_michel_bulteau
 #define	albums[99]->media	CD
 #define	albums[99]->label	Cavale
 #define	albums[99]->catalog	002
@@ -3792,7 +3792,33 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[104]->video	https://www.youtube.com/embed/dpk0cMvRJf8;;Pat;;;;2000-01-10;;The Blood on the Cats video compilation (by an English company called Jettisoundz) featured a video of \"JB Meets Count Dracula\" made in my living room at a total cost to the band of 50p. (for blood red plastic bin liners).  The best bits (where Dave J ties the Goth chick to the chair) got left out\, but it's still quite a laugh\, and features Fantastic Orange Cat Sterling,
 #define	albums[104]->audio	;;The Jazz Butcher Meets Count Dracula::3
 
-#define	albums->numResults	104
+#define	albums[105]->type	various
+#define	albums[105]->lookup	va_city_of_silver
+#define	albums[105]->media	LP
+#define	albums[105]->href	${jbc_albums}/va_city_of_silver.html
+#define	albums[105]->title	City of Silver
+#define	albums[105]->label	Plastic Head Records
+#define	albums[105]->catalog	PLAS/LP 002
+#define	albums[105]->thumb	/images/releases/va_city_of_silver_front
+#define	albums[105]->images	/images/releases/va_city_of_silver_back$$/images/releases/va_city_of_silver_inside1$$/images/releases/va_city_of_silver_inside2
+#define	albums[105]->contribution	reagan
+#define	albums[105]->dtreleased	1984
+#define	albums[105]->dtadded	2023-12-02
+#define	albums[105]->blurb
+	"Originally the song appeared on a compilation from 1983 called 'City of Silver, which came out on
+	Plastic Head Records. It was an imaginary compilation of bands from Los Angeles, one of which was
+	'The Plymouth Fastbacks' who performed 'Red Russians Shot My Rocket Down'. Max and I (we were,
+	in fact, 'The Plymouth Fastbacks') were sent a little sequenced bass loop. We simply climbed on back
+	of that and wigged out; The song on 'Sex & Travel' is a remodelling with the whole band."
+	;;
+	Pat Fish - from "Miracles & Wonders";;;;
+#define	albums[104]->liner
+	THE PLYMOUTH FASTBACKS were formed out of the two late-lamented bands, "GRINGOS ON HEAT" from San Diego and
+	"THE TWISTED PRETZELS" from L.A.  They have been together for a year and have played 300 gigs in that year.
+	"Red Russians" us a track sfrom their forthecoming LP "PUSSYCATS IN THE SOUP".
+#define	albums[104]->audio	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/1984_CityOfSilver/The+Plymouth+Fastbucks+-+Red+Russians+Shot+My+Rocket+Down.mp3;;Red Russians Shot My Rocket Down::1::(${reagan})
+
+#define	albums->numResults	105
 
 #define	lookupAlbumBy(l, f=lookup, backupF=href)
 #live	loop(li, 1, ${albums->numResults})

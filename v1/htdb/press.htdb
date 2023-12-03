@@ -301,8 +301,8 @@ ${d}
 #define	updatePressDatabase()
 #live	if (defined(updateDatabase))
 <h1>truncate</h1>
-#live		if (sql(truncate table press))
-#live		endif
+##live		if (sql(truncate table press))
+##live		endif
 #live		loop (pi, 1, ${pressItems->numResults})
 #live			if (define(pr, pressItems[${pi}]))
 <h3>${pi}: update (pub:${${pr}->dt}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
@@ -435,6 +435,18 @@ ${d}
 
 	${addPatLiveGigs()}
 	${addLiveGigs()}
+
+	${addPress(type=interview,
+		url=${jbc_press}/198503_press_goforgold3_germany.html,
+		publication=Go For Gold #3,
+		thumb=/images/198503_press_goforgold3_germany_1,
+		images=/images/198503_press_goforgold3_germany_2$$/images/198503_press_goforgold3_germany_3$$,
+		source=https://archive.org/details/go-for-gold-03-85-luedenscheid-fanzine-851/page/n15/mode/2up?q=%22Jazz+Butcher%22,
+		credit=Any More & Gil,
+		location=Ludenscheid\, Germany,
+		title=The Jazz Butcher,
+		dt=1985-03,
+		added=2023-11-29)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20180206_press_magnetmagazine.html,
@@ -18361,6 +18373,164 @@ For a prolific musical project with nearly as many compilations as official rele
 If Richard Hawley was more psychedelic story-weaver than twilight troubadour, or if Robyn Hitchcock had been separated at birth from an equally daft twin, they would be the Jazz Butcher, a.k.a. eccentric English singer/songwriter Pat Fish plus whomever he happened to have around since 1982.
 <p />
 Back in the day, that list of contributors included Max Eider, David J (Bauhaus, Love And Rockets) and Spacemen 3’s Sonic Boom, among others. Last Of The Gentleman Adventurers finds Fish reuniting with several of these trusted wingmen in service of recording/touring again after more than a decade out of the game, reissuing a self-pressed, limited-edition disc originally created to quietly celebrate the band’s 30th anniversary. Memorable melodies, lyrical yearning and stylistic elasticity (from the title track’s cowpoke jazz-blues to the trebly Lloyd Cole-like guitar pop of “All The Saints”) makes this band of merry men worthy of rediscovery, the same as they ever were.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	198503_press_goforgold3_germany.html
+#live	if (getval(page) = 198503_press_goforgold3_germany.html)
+	${extractPress(
+		body=${literalizeCommas(
+<div class="iview_intro">
+The rain was falling heavily and in thick drops from the sky, so that the windshield wipers had a lot of trouble ensuring a clear view. Left and right there are misty, barren fields and pastures. Winter braced itself with the courage of desperation against the ever-increasing green of the trees and ruffles and it looked like the last one. battle over. Nothing could dampen our mood, because today was probably the most important concert of this year. The Jazz Butcher and Microdisney should brave the bad weather,
+<p />
+"It's party time" and 5 hours until the concert.
+<p />
+Actually, Bauhaus and the Jazz Butcher have nothing at all in common; At least that's how it seems at first glance, if it weren't for the press and David Jay, ex-bassist of Bauhaus and now also ex-bassist of the Jazz Butcher. So the band was quickly pushed into a corner where they actually had absolutely no place, namely that of the Bauhaus successor bands. On a par with Tones on Tail or Dali's Car, which we can safely forget. The Jazz Butcher are better than the whole Bauhaus nonsense, apart from a few good singles. David I had this. never had a particularly bad influence on the group, it probably came more through the personal relationships between the two groups and the Jazz Butchers because they both come from Northampton.
+</div>
+
+<div class="iview_q">
+GFG: "You just talked about Bauhaus. Do you also have personal connections to Bauhaus or other bands from the Northhampton area?"
+</div>
+
+<div class="iview_a">
+Butch: "Yes, of course! We know Bauhaus very well personally. We also have relationships with other bands. Our current bassist Felix, for example, comes from a band that (oh God, another difficult name that I've never heard before , it is pronounced something like this: )"Biwioakawer" calls." B..." played a lot in Northhampton. We then took them to London a few times where they played with us. They're a great band,"
+</div>
+
+<div class="iview_intro">
+Unfortunately, we don't have the signs of the times in the interview. knows and didn't ask what happened to David J and why he left the band, it's a shame, we're sorry! But now an end to the necessary evil of Bauhaus. Another hour and a half: Microdisney take the stage, led by singer Cathal Coughlan, and put on a clean set. Typically British except for the above
+<p />
+The so-called singer, who is more reminiscent of Fat Dumpling Meat Loaf. The drummer in the fashionable Uham T-shirt! You can read everything else from my colleague Zimmermann in Spex. The Jazz Butcher singers Butch and Max Eider, you have two so far LP's, a MiniLP and the 12" "Roadrunner" were recorded.
+<p />
+There's really only one thing to say about their records: "Buy or die!" In Bath of Bacon, their first record, was largely lost in 1983 and has now been re-released. It contains an amazing variety of different styles (swing, beat , Psychedelia, Rock'n Roll etc.) and in "Gloop Jiving" there is even a touch of jazz. At the end of '84 the universally praised "Scandal in Bohemia" LP, with which they finally achieved their big breakthrough. And let's be completely honest: when was the last time there was an LP that excited us so much? !82 maybe Dexy's Midnight Runners, Gang of Four, '83 Aztec Camera, whichever way we turn it, it won't be more than five or six. And now " Scandal in Bohemiat, which is more mature, better structured and poppier than the first record. As I said,
+<p />
+"buy or die",
+<p />
+Finally joy arises, Butch and his friends start with "Bath of Bacon" from the LP of the same name. And we continue through the Butchers' program. One hit follows another. And everyone is happy when Butch looks at the audience with his big eyes. Soon he would have to win the supposedly beautiful ones from Spandau Ballet, ham, etc. out of the charts because he looks much better than these Schmalzköppe. Party time was announced. ax and Felix stay on their karhachers the whole time, while Butch takes care of the movement on stage. and only the encore part "Speedy Gonzales", Sweet Jane "Mind like a playgroup" and eal Men "carried the audience into storms of enthusiasm. After the fourth encore it was over, and everything was back to normal, you had one seen the best concerts of the year,
+<p />
+We went backstage and found the Jazz Butchers in a pretty euphoric mood. Unfortunately, it has to be said that Butch didn't take the interview very seriously and said a lot of nonsense. But who can blame him, as he is one of the most likeable figures on the current English music scene? Let's start in 1894!
+</div>
+
+<div class="iview_a">
+Butch: "The origin? Yes, it really started in 1894. That was during the time of Queen Victoria, and it happened that a Mr. gave birth to a son named Harold in 1901, which was a very popular name at the time. Anyway, Harold is my grandfather. He also wrote songs, albeit pretty bad ones for cheap musicals (supposedly also a "classic gay song ").
+<p />
+The band's story begins in a small country in a small district in a small town called Northampton, it's probably as big as Detmold or Witten. That's where we started writing our songs and that's where the whole development began."
+</div>
+
+<div class="iview_q">
+GFG: “When did you become the group “Jazz Butcher”? Apparently you and Max played with the “Woodentops” before?
+</div>
+
+<div class="iview_a">
+general laughter
+<p />
+Butch: "Do you know the Woodentops?"
+</div>
+
+<div class="iview_q">
+GFG: No, not personally,"
+</div>
+
+<div class="iview_a">
+Butch: "This is probably due to an error in the SPEX interview. When we started giving concerts, the drummer and the bassist left us. They are now with the Woodentops. They're a really good band from London and appeared on Rouch Trade.
+<p />
+If you ever meet the Woodentops, the first thing you'll do is ask Patti Wilson (in chorus): "Where is Frazer"? and "Who makes your trousers?".
+</div>
+
+(They don't want to reveal more about it, it doesn't matter!)
+<p />
+<div class="iview_q">
+GFG: Going back to their start; When did you first play?"
+</div>
+
+<div class="iview_a">
+Butch: That was 12, July 1982. We played as support act for a post-punk band called (sorry, we didn't catch the name) at Black Lion's Blub in Northampton.
+</div>
+
+<div class="iview_q">
+GFG: If you played your first gigs almost 3 years ago, you had success pretty quickly!
+</div>
+
+<div class="iview_a">
+Butch: No, not really, we started performing before, in 1982 we played at mostly serious parties. Our repatoir consisted of our own first songs like “Partytime” and replayed songs like “Over the rainbow”. That's when we got the taste for giving concerts. But we didn't always have success. There were also setbacks. Once the manager had us off the stage after the first song because otherwise it would have been so dangerous for us. Oas was in a punk club and the manager told us not to play so terribly complicated. We played our first real concert as a support act in front of Bauhaus. That was during the time of Ziggy Stardust. Oh well.  Be that as it may, shortly afterwards our first single "Southern Mark Smith" was released and it sold very well straight away."
+<p />
+Yeah, definitely Northampton actually has a pretty big music scene with good bands!
+</div>
+
+<div class="iview_q">
+GFG: "What do you think of the entire English indie scene? We all know your opinion about the pop scene."
+</div>
+
+<div class="iview_a">
+Butch: "I wouldn't draw a line between the indies and the big ones. It's fluid. It's not the case that indie bands play because it's fun for them, and the big ones only play because they get money for it.
+</div>
+
+<div class="iview_q">
+GFG: "Can you tell us what your favorite groups are, what do you listen to in your free time?"
+</div>
+
+<div class="iview_a">
+Butch: "(Again) B..., Suicide... Tell me what my favorite bands are. You can do it no? Hmm... still Marc Almond, Abba...
+</div>
+
+<div class="iview_q">
+GFG: Ha Ha Ha...
+</div>
+
+<div class="iview_a">
+Butch: "No really, it's a matter of attitude. They make good lyrics and good music... F.R.David, King Crimson, Uriah Heep, Kajagoogoo, do you know their hairstyles? Class
+</div>
+
+<div class="iview_q">
+GFG: "Have any bands influenced you, the serious ones , I mean?
+</div>
+
+<div class="iview_a">
+Butch: "Duran Duren influenced us a lot, Margaret Thather...
+</div>
+
+<div class="iview_q">
+GFG: "Now seriously: What are your next goals? Are there any new records?"
+</div>
+
+<div class="iview_a">
+Butch: "Yes, we're making a new record at the moment, "Sex and Travel", two of my favorite things. Next year we're releasing a record, "Food & Drink", then we'll have all of my favorite things in the two record titles (gasp!) . Otherwise we don't make great plans, We've learned that it doesn't help. I mean, if you want us to play here, we'll just play here again. Or?"
+<p />
+Band: Here? Hm.. (The restaurant owner probably didn't give out enough free beer!)
+</div>
+
+<div class="iview_q">
+GFG: “Is there anything else you want to get rid of?”
+</div>
+
+<div class="iview_a">
+Butch: "Max wants,"
+<p />
+Max: (silence) Butch?"Maximilian's statement the readers of GfG; (Be silent)
+</div>
+
+<div class="iview_q">
+GFG: “We have no more questions.”
+</div>
+
+<div class="iview_a">
+Butch: "You don't have any more questions. But I still have some damn questions. What gives you the right to come in here and bother me? Who do you think you are?
+</div>
+
+(We know who we are! Author's note) I think I'm reading your magazine." (Amazed) (Butch leafs through GfG No.2)
+
+<div class="iview_a">
+Butch: "Multicolored Shades, I think we play with them in Hamburg... I also know The Felt, you have interesting bands in your magazine...
+<p />
+Robin Hitchcock-Bells of Rhymney “.. very good, Velvet Underground Vu “.. super record, super band. Television Personalities - one of the few bright spots on the scene at the moment."
+</div>
+
+<div class="iview_outro">
+  The curtain falls.
+<p />
+the light goes
+</div>
 		)}
 	)}
 	${jbc_footer}

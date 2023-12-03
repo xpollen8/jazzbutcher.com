@@ -1,6 +1,6 @@
 {
 	"noun": "albums",
-	"numResults": 104,
+	"numResults": 105,
 	"results": [
 	{
 		"type": "album",
@@ -6837,7 +6837,7 @@
 
 		"onalbum": 	"",
 
-		"liner": 	"",
+		"liner": "THE PLYMOUTH FASTBACKS were formed out of the two late-lamented bands, 'GRINGOS ON HEAT' from San Diego and 'THE TWISTED PRETZELS' from L.A.  They have been together for a year and have played 300 gigs in that year. 'Red Russians' us a track sfrom their forthecoming LP 'PUSSYCATS IN THE SOUP'.",
 
 		"Agroove": 	"",
 
@@ -6855,7 +6855,7 @@
 
 		"bishopsez": 	"",
 
-		"audio": ";;The Jazz Butcher Meets Count Dracula::3",
+		"audio": "https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/1984_CityOfSilver/The+Plymouth+Fastbucks+-+Red+Russians+Shot+My+Rocket+Down.mp3;;Red Russians Shot My Rocket Down::1::(<span class='song'> <i><a href='/lyrics/president_reagan.html'>President Reagan's Birthday Present</a></i> </span>)",
 
 		"downloads": 	"",
 
@@ -6864,6 +6864,72 @@
 		"collaboration": 	"",
 
 		"dtadded": "2023-11-11"
+
+	} ,
+	{
+		"type": "various",
+
+		"href": "/albums/va_city_of_silver.html",
+
+		"title": "City of Silver",
+
+		"thumb": "/images/releases/va_city_of_silver_front",
+
+		"blurb": "'Originally the song appeared on a compilation from 1983 called 'City of Silver, which came out on Plastic Head Records. It was an imaginary compilation of bands from Los Angeles, one of which was 'The Plymouth Fastbacks' who performed 'Red Russians Shot My Rocket Down'. Max and I (we were, in fact, 'The Plymouth Fastbacks') were sent a little sequenced bass loop. We simply climbed on back of that and wigged out; The song on 'Sex &amp; Travel' is a remodelling with the whole band.' ;; Pat Fish - from 'Miracles &amp; Wonders';;;;",
+
+		"dtreleased": "1984",
+
+		"buy": 	"",
+
+		"project": 	"",
+
+		"lookup": "va_city_of_silver",
+
+		"label": "Plastic Head Records",
+
+		"catalog": "PLAS/LP 002",
+
+		"media": "LP",
+
+		"country": 	"",
+
+		"source": 	"",
+
+		"contribution": "reagan",
+
+		"dtrecorded": 	"",
+
+		"studio": 	"",
+
+		"onalbum": 	"",
+
+		"liner": 	"",
+
+		"Agroove": 	"",
+
+		"Bgroove": 	"",
+
+		"thanks": 	"",
+
+		"images": "/images/releases/va_city_of_silver_back$$/images/releases/va_city_of_silver_inside1$$/images/releases/va_city_of_silver_inside2",
+
+		"notes": 	"",
+
+		"patsez": 	"",
+
+		"CDring": 	"",
+
+		"bishopsez": 	"",
+
+		"audio": 	"",
+
+		"downloads": 	"",
+
+		"video": 	"",
+
+		"collaboration": 	"",
+
+		"dtadded": "2023-12-02"
 
 	} 
 	]

@@ -20,6 +20,7 @@ export type NewCommentType = {
 	comments: string
 	parent_id?: number
 	children?: NewCommentType[]
+	has_children?: number
 }
 
 export type CommentType = NewCommentType & {

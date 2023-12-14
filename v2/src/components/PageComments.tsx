@@ -29,6 +29,7 @@ const getSessionId = () => {
 }
 
 const	CommentLike = (props: any) => {
+	return;
 	const { onClick } = props;
 	const { data, isLoading, error } = usePageCommentLike(props);
 	return <IconLike className="pointable" style={{ width: '1.7em' }} onClick={onClick} />
@@ -45,11 +46,11 @@ const	ToggleCommentForm = (props: any) => {
 	return <Tag>
 		<div onClick={() => toggleCommentForm(true)}>
 			<center>
+			{text}{' '}
 			{(!showForm) && <>
 				<span className="pointable text-blue-600 bg-white p-1">[ + ]</span>
 				{/*<IconAddComment style={{ width: '1.7em' }} />*/}
 			</>}
-			{' '}{text}
 			</center>
 		</div>
 	</Tag>
@@ -102,7 +103,7 @@ const Comment = (props: CommentType & any, key: number) => {
 
 	return (
 		<div key={key} className="comment">
-			<div id="subject">{(session === getSessionId()) && <DeleteComment mutate={mutate} {...props} />}{subject}</div>
+			<div id="subject">{subject} {(session === getSessionId()) && <DeleteComment mutate={mutate} {...props} />}</div>
 			<div id="comments" className="annotation" dangerouslySetInnerHTML={{__html: comments }} />
 			<div id="who"><b>{whence}</b> </div> {!!(who?.length) && <div id="email" className="smalltext">{who} </div>}
 			<div id="date">{dateDiff(dtcreated, '')}</div>
@@ -132,12 +133,23 @@ const CommentForm = ({ mutate, commentData, editing=false, toggleCommentForm }: 
 	const [ comments, setComments ] = useState(editing ? inComments : '');
 	const [ who, setWho ] = useState(editing ? inWho : '');
 	const [ whence, setWhence ] = useState(editing ? inWhence : '');
-	const action = (editing) ? `Editing your post` : ((feedback_id) ? `Replying to "${inSubject}"` : `Composing a message for "${uri}"`);
+	const label = (uri?.length > 0) ? `Composing a new comment for "${uri}"` : `Composing a new comment`;
+	const action = (editing) ? `Editing your post` : ((feedback_id) ? `Replying to "${inSubject}"` : label);
 
 	return <div className="text-left drop-shadow-2xl listItem">
 		<form
 			onSubmit={async (ev: any) => {
 				ev.preventDefault();
+
+				if (!subject?.length) {
+					alert('Subject: required');
+					return;
+				}
+
+				if (!comments?.length) {
+					alert('Your Comments: required');
+					return;
+				}
 
 				const body = JSON.stringify({
 					session: getSessionId(),
@@ -170,8 +182,8 @@ const CommentForm = ({ mutate, commentData, editing=false, toggleCommentForm }: 
 			<Tag>
 				<span onClick={() => toggleCommentForm(false)}>
 					<center>
+					{action}{' '}
 					<span className="pointable text-red-600 bg-white p-1">[ Dismiss ]</span>
-					{' '}{action}
 					</center>
 				</span>
 			</Tag>
@@ -221,7 +233,7 @@ const CommentForm = ({ mutate, commentData, editing=false, toggleCommentForm }: 
 					}}
 				/>
 			</div>
-			<button type="submit">Submit</button>
+			<button type="submit" className="comment_submit">Submit</button>
 		</form>
 	</div>
 }
@@ -273,7 +285,8 @@ const PageComments = ({ className }: { className?: string }) => {
 	const uri = usePathname()?.substr(1);
 	const { data, isLoading, error, mutate } = usePageComments(uri);
 	const comments = data?.results || [];
-	const [ showForm, toggleCommentForm ] = useState((!!comments?.length) ? false : true);
+	const [ showForm, toggleCommentForm ] = useState(comments.length > 0 ? false : true);
+	const label = (uri?.length > 0) ? `Comments for "${uri}"` : 'Comments';
 
 	return (<>
 		<Suspense fallback={<>Loading...</>}>
@@ -285,7 +298,7 @@ const PageComments = ({ className }: { className?: string }) => {
 				</summary>
 				<div className="commentOverlay">
 					{(showForm) && <CommentForm mutate={mutate} commentData={{ uri }} toggleCommentForm={toggleCommentForm} />}
-					<ToggleCommentForm text={`Visitor comments for "${uri}"`} showForm={showForm} toggleCommentForm={toggleCommentForm} />
+					<ToggleCommentForm text={label} showForm={showForm} toggleCommentForm={toggleCommentForm} />
 					<Comments mutate={mutate} commentData={{ uri, comments }} showForm={showForm} toggleCommentForm={toggleCommentForm} />
 				</div>
 			</details>

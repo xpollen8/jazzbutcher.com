@@ -44,9 +44,9 @@ export const pathname2feedbackURI = (pathname: string) => {
 		const [ orig, updated ] = modified.find(([ orig, updated ]: any[]) => uri === orig) || [];
 		if (updated) return updated;
 
-		if (uri?.startsWith('releases')) return [ uri.replace('releases', 'albums') ];
-		if (uri?.startsWith('conspirators')) return [ uri.replace('conspirators', 'people') ];
-		if (uri?.startsWith('letters')) return [ mapLetterURLIFeedbackLookup(uri) ];
+		if (uri?.startsWith('releases')) return [ uri.replace('releases', 'albums'), '.html' ];
+		if (uri?.startsWith('conspirators')) return [ uri.replace('conspirators', 'people'), '.html' ];
+		if (uri?.startsWith('letters')) return [ mapLetterURLIFeedbackLookup(uri), '.html' ];
 
 		const [ section, sub1, sub2 ] = uri?.split('/') || '';
 		if (section === 'gigs') {
@@ -59,7 +59,7 @@ export const pathname2feedbackURI = (pathname: string) => {
 		return [ uri, '.html' ];
 	}
 	const [ usePath, useSuffix ] = fullpath(pathname);
-	//console.log("SUFF", [ usePath, useSuffix ], `exact/${usePath}?suffix=${useSuffix}`);
+	console.log("SUFF", [ usePath, useSuffix ], `exact/${usePath}?suffix=${useSuffix}`);
 	return `exact/${usePath}?suffix=${useSuffix}`;
 }
 

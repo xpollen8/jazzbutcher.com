@@ -24,17 +24,28 @@ const censorEmail = (str: string) => {
 
 const deHTDBifyText = (v?: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/YourTown,/, '').replace(/USofA/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '@').replace(/\[at\]/g, '@').replace(/-remove-/g, '').replace(/\[remove\]/g, '@').replace(/&amp;/g, '&').replace(/&eacute;/g, 'é').replace(/&oacute;/g, 'ó').replace(/&ntilde;/g, 'ñ').replace(/&auml;/g, 'ä').replace(/&Delta;/g, 'Δ').replace(/&Sigma;/g, 'Σ').replace(/â€ž/g, '&quot;').replace(/â€œ/g, '&quot;').replace(/â€“/g, '-').replace(/â€™/g, "'") .replace(/â€/g, '&quot;')|| '';
 
+const fetchOptions = (url: string) => {
+	const options: HashedType = {
+		mode: 'no-cors'
+	};
+	if (url?.includes('feedback')) {
+		options['cache'] = 'no-cache';	// DO NOT CACHE FEEDBACK
+	} else {
+		options['next'] = { revalidate: 300 };
+	}
+	//console.log("OPT", url, options);
+	return options;
+}
+
 const doFetch = async (url: string) => {
 	//console.log("FETCH", url);
+	/*
 	if (cache[url]) {
 		//console.log("CACHE HIT", url);
 		return cache[url];
 	}
-	return await fetch(url,
-		{
-			next: { revalidate: 300 },
-			mode: 'no-cors'
-		})
+	*/
+	return await fetch(url, fetchOptions(url))
 		.then(e => e.json())
 		.then(e => {
 			cache[url] = JSON.parse(deHTDBifyText(JSON.stringify(e)));
@@ -58,8 +69,7 @@ const doPostToDataServer = async (path: string, body: any, args?: string) => {
 	return await fetch(url,
 		{
 			method: 'POST',
-			next: { revalidate: 300 },
-			mode: 'no-cors',
+			...fetchOptions(url),
 			headers: {
 				accept: "application/json",
 				"Content-Type": "application/json",
@@ -68,9 +78,13 @@ const doPostToDataServer = async (path: string, body: any, args?: string) => {
 		}
 		)
 		.then(e => e.json())
+		/*
 		.then(async e => {
-			return await apiDataFromDataServer(path);
+			const ret: HashedType = await apiData('feedback_by_page', `exact/${body.uri}`);
+			console.log("RET", { args: body.uri, ret });
+			return ret;
 		})
+		*/
 		.catch((e) => {
 			console.log("ERR", e);
 			return { error: `POST to ${url} failed` };
@@ -127,6 +141,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			case 'recent_media':
 			case 'on_this_day':
 			case 'recent_feedback':
+			case 'feedback_delete':
 				return await apiDataFromDataServer(path, args);
 			case 'feedbacks':
 			case 'feedback_by_page':

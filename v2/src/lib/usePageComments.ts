@@ -59,7 +59,7 @@ export const pathname2feedbackURI = (pathname: string) => {
 		return [ uri, '.html' ];
 	}
 	const [ usePath, useSuffix ] = fullpath(pathname);
-	console.log("SUFF", [ usePath, useSuffix ], `exact/${usePath}?suffix=${useSuffix}`);
+	//console.log("SUFF", [ usePath, useSuffix ], `exact/${usePath}?suffix=${useSuffix}`);
 	return `exact/${usePath}?suffix=${useSuffix}`;
 }
 

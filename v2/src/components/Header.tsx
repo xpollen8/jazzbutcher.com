@@ -142,6 +142,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content', rootHideChildren: true },
 	help: { parent: 'jbc', title: 'Get Involved!' },
 	admin: { parent: 'jbc', title: "Website Management", hide: false },
+	'https://v1.jazzbutcher.com': { parent: 'jbc', title: "Old site", hide: false },
 }
 
 const makeBreadcrumb = (name: string, aux?: any) => {
@@ -222,7 +223,7 @@ const NavSections = (props: Props_Header): React.ReactNode  => {
 					const useHref = (inParentDirectory) ? `${parent}/${href}` : href;
 					return (
 						<div key={key} className={`navItem ${(depth === 0) ? 'outer' : ''}`}>
-							<Link href={`/${useHref}`}>{title}</Link>
+							<Link href={useHref.includes('https') ? useHref : `/${useHref}`}>{title}</Link>
 							{(summary) && <div style={{ display: 'inline' }} className="date">{' - '}{summary}</div>}
 							{makeMenuOptions(href, depth + 1)}
 						</div>

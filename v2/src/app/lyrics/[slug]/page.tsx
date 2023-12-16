@@ -123,14 +123,52 @@ const Media = (props: any) => {
 
 const exists = (str?: string) => (str && str?.length && str !== ';;;;') ? str : null;
 
-const Medias = (props: any) => {
-	const { medias } = props;
-	if (!medias?.results?.length) return;
+const Performances = (song: any) => {
+	const { performances } = song;
+	if (!performances?.length) return;
 	return (
-		<details open={medias?.results?.length === 1}>
-		<summary className="tagClickable">{pluralize(medias?.results?.length, 'Live/demo recording')}</summary>
+		<details open={performances?.length === 1}>
+		<summary className="tagClickable">Audio for {pluralize(performances?.length, 'Released Version')}</summary>
 		<blockquote>
-			{medias?.results?.map((p: any, key: number) => {
+			{performances?.map((p: any, key: number) => {
+				const { author,
+					collection,
+					comment,
+					credit,
+					datetime,
+					dtcreated,
+					href,
+					images,
+					lookup,
+					media_id,
+					media,
+					mp3,
+					name,
+					ordinal,
+					//parent,
+					project,
+					subtype,
+					type,
+				} = p;
+				const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit) || {};
+				const { credit: venue, crediturl: city, creditdate: country } = collection?.includes(';;') && parseCredit(collection) || {};
+				const parent = (!datetime.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
+				return <div key={key}><EmbedMedia data={{ ...p, mediaurl: media, autolink: true }} /></div>
+				})}
+		</blockquote>
+		</details>
+	)
+}
+
+const Medias = (song: any) => {
+	let { medias } = song;
+	medias = medias?.filter((p: any) => !p?.lookup);
+	if (!medias.length) return;
+	return (
+		<details open={medias?.length === 1}>
+		<summary className="tagClickable">{pluralize(medias?.length, 'Live/demo recording')}</summary>
+		<blockquote>
+			{medias?.map((p: any, key: number) => {
 				const { author,
 					collection,
 					comment,
@@ -150,9 +188,9 @@ const Medias = (props: any) => {
 					type,
 				} = p;
 				const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit) || {};
-				const { credit: venue, crediturl: city, creditdate: country } = collection?.includes(';;') && parseCredit(collection);
+				const { credit: venue, crediturl: city, creditdate: country } = collection?.includes(';;') && parseCredit(collection) || {};
 				const parent = (!datetime.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
-				return <div key={key}><EmbedMedia data={{ mediaurl: (!href.includes('.html') && exists(href)) || exists(mp3), mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? collection : '', venue, city, datetime, parent }} /></div>
+				return <div key={key}><EmbedMedia data={{ lookup, mediaurl: (!href.includes('.html') && exists(href)) || exists(mp3), mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? collection : '', venue, city, datetime, parent }} /></div>
 				})}
 		</blockquote>
 		</details>
@@ -182,10 +220,11 @@ const LiveAudio = (props: any) => {
 
 const Lyric = ({ params }: { params?: any }) => {
 	const { data, isLoading, error } = useLyric(params?.slug);
-	const { lyrics, live, releaseAudio, releaseVideo, foundon, medias } = data || {};
+	const { lyrics, performances, live, releaseAudio, releaseVideo, foundon, medias } = data || {};
 	const song = {
 		...lyrics?.results[0],
-		medias,
+		medias: medias?.numResults ? medias?.results : undefined,
+		performances: performances?.numResults ? performances?.results : undefined,
 		live: live?.numResults ? live?.results : undefined,
 		releaseAudio: releaseAudio?.numResults ? releaseAudio?.results : undefined,
 		releaseVideo: releaseVideo?.numResults ? releaseVideo?.results : undefined,
@@ -201,6 +240,7 @@ const Lyric = ({ params }: { params?: any }) => {
 			{ label: 'Audio', lookup: (song: any) => (song?.mp3 || song.live || song.releaseAudio), func: Audio },
 			{ label: 'Media', lookup: (song: any) => (song?.media), func: Media },
 			{ label: 'Medias', lookup: (song: any) => (song?.medias), func: Medias },
+			{ label: 'Released Versions', lookup: (song: any) => (song?.performances), func: Performances },
 	];
 
 	if (!isLoading && !song?.title) return notFound();

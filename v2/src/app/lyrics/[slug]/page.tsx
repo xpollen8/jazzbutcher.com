@@ -106,9 +106,14 @@ const Tablature = (props: any) => {
 }
 
 const LiveStats = (props: any) => {
-	return (
-		<div key={props?.key}>
-		</div>
+	const { live } = props;
+	return live && (
+		<details open={live?.length === 1}>
+		<summary className="tagClickable">{pluralize(live?.length, 'Documented performance')}</summary>
+		<blockquote>
+			<GigSearchResults results={{ results: live }} />
+		</blockquote>
+		</details>
 	)
 }
 
@@ -128,7 +133,7 @@ const Performances = (song: any) => {
 	if (!performances?.length) return;
 	return (
 		<details open={performances?.length === 1}>
-		<summary className="tagClickable">Audio for {pluralize(performances?.length, 'Released Version')}</summary>
+		<summary className="tagClickable">Audio from {pluralize(performances?.length, 'Release')}</summary>
 		<blockquote>
 			{performances?.map((p: any, key: number) => {
 				const { author,
@@ -162,7 +167,7 @@ const Performances = (song: any) => {
 
 const Medias = (song: any) => {
 	let { medias } = song;
-	medias = medias?.filter((p: any) => !p?.lookup);
+	medias = medias?.filter((p: any) => !p?.lookup && !p?.datetime);
 	if (!medias.length) return;
 	return (
 		<details open={medias?.length === 1}>
@@ -207,12 +212,38 @@ const Audio = (props: any) => {
 }
 
 const LiveAudio = (props: any) => {
-	const { live } = props;
+	let { live } = props;
+	live = live.filter((l: any) => l?.mediaurl?.length);
+	if (!live?.length) return;
 	return live && (
 		<details open={live?.length === 1}>
-		<summary className="tagClickable">{pluralize(live?.length, 'Documented performance')}</summary>
+		<summary className="tagClickable">{pluralize(live?.length, 'Live Performance Recording')}</summary>
 		<blockquote>
-			<GigSearchResults results={{ results: live }} />
+			{live?.map((p: any, key: number) => {
+				const { author,
+					collection,
+					comment,
+					credit,
+					datetime,
+					dtcreated,
+					href,
+					images,
+					lookup,
+					media_id,
+					media,
+					mp3,
+					name,
+					ordinal,
+					//parent,
+					project,
+					subtype,
+					type,
+				} = p;
+				const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit) || {};
+				const { credit: venue, crediturl: city, creditdate: country } = collection?.includes(';;') && parseCredit(collection) || {};
+				const parent = (!datetime.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
+				return <div key={key}><EmbedMedia data={{ ...p, autolink: true }} /></div>
+				})}
 		</blockquote>
 		</details>
 	)
@@ -235,7 +266,7 @@ const Lyric = ({ params }: { params?: any }) => {
 			{ label: 'Pat Says', lookup: (song: any) => (song?.pat_says), func: PatSays },
 			{ label: 'Others Say', lookup: (song: any) => (song?.others_say), func: OthersSay },
 			{ label: 'Tablature', lookup: (song: any) => (song?.tablature), func: Tablature },
-			{ label: 'Live Stats', lookup: (song: any) => ({}), func: LiveStats },
+			{ label: 'Live Stats', lookup: (song: any) => (song.live), func: LiveStats },
 			{ label: 'Live Performances', lookup: (song: any) => (song.live), func: LiveAudio },
 			{ label: 'Audio', lookup: (song: any) => (song?.mp3 || song.live || song.releaseAudio), func: Audio },
 			{ label: 'Media', lookup: (song: any) => (song?.media), func: Media },

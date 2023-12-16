@@ -647,7 +647,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 	${linkInternal(${jbc_press}/20081120_caughtinthecarousel.html, Pat Fish (2007) - VERY long!)}<br/>
 	${linkInternal(${jbc_press}/20080219_mickmercer_max_eider.html, Max Eider (2008))}<br/>
 	<blockquote>
-	${linkAudio(title=Christmas With The Pygmies, mp3=/audio/JazzButcher_ChristmasWithThePygmies.mp3)}
+	${linkAudio(title=Christmas With The Pygmies, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Christmas_with_the_Pygmies.mp3)}
 	</blockquote>
 #define	newsItem[59]->dt	${date(U, 2017-08-01)}
 

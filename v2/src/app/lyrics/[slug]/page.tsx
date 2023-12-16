@@ -171,7 +171,7 @@ const Medias = (song: any) => {
 	if (!medias.length) return;
 	return (
 		<details open={medias?.length === 1}>
-		<summary className="tagClickable">{pluralize(medias?.length, 'Live/demo recording')}</summary>
+		<summary className="tagClickable">{pluralize(medias?.length, 'Non-live recording')}</summary>
 		<blockquote>
 			{medias?.map((p: any, key: number) => {
 				const { author,

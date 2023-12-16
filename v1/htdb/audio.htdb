@@ -321,7 +321,7 @@ ${define(gsExtra[${dt}], ${summary})}
 		)}
 
 	${addGig(prefix=gs, type=interview,
-		url=${jbc_audio}/19860718/19860718_backgroundnoiseproductions_PatMax_interview.mp3,
+		url=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19860718_JazzButcher_interview_backgroundmediumproductions.mp3,
 		title=Background Noise Productions,
 		dt=1986-07-18,
 		credit=Background Noise Productions,
@@ -590,7 +590,7 @@ ${define(gsExtra[${dt}], ${summary})}
 		<div class="listenItem">
 		Tracks that appeared on early compilations and singles.
 		<blockquote>
-		${linkAudio(lookup=swingin, title=Christmas With The Pygmies, mp3=${jbc_audio}/JazzButcher_ChristmasWithThePygmies.mp3)}
+		${linkAudio(lookup=swingin, title=Christmas With The Pygmies, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Christmas_with_the_Pygmies.mp3)}
 			From <b>${swingin}</b> (1985)
 		</blockquote>
 

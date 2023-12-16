@@ -3725,7 +3725,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[101]->images
 #define	albums[101]->liner
 #define	albums[101]->source	David Whittemore
-#define	albums[101]->audio	https://v1.jazzbutcher.com/audio/Cambodia/199108_Cambodia_WeAreTheTraffic_No1.mp3;;We Are the Traffic::1::;;$$https://v1.jazzbutcher.com/audio/Cambodia/199108_Cambodia_WeAreTheTraffic_No1.mp3;;We Are the Traffic::2::;;
+#define	albums[101]->audio	https://v1.jazzbutcher.com/audio/Cambodia/199108_Cambodia_WeAreTheTraffic_No1.mp3;;We Are the Traffic::1::;;$$https://v1.jazzbutcher.com/audio/Cambodia/199108_Cambodia_WeAreTheTraffic_No2.mp3;;We Are the Traffic::2::;;
 #define	albums[101]->blurb
 	Demo tracks from the August 1991 Pat Fish and Cole Coonce collaboration.
 	Written at the Nitronic Research Wind Tunnels, Los Angeles, California.

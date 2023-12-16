@@ -229,7 +229,6 @@ ${define(lastPer, ${ap[${api}]->performer})}
 #live		endif
 
 #live	if ((defined(media)) && (getval(media) != NULL))
-#insert IGNORE into media set lookup="${release}", project="${project}", type="audio", name=${song}, mp3="${media}", author="${author}", collection="${collection}", ordinal="${ordinal}", datetime=NOW();
 #live		if (sql(insert IGNORE into media set lookup="${release}", project="${project}", type="audio", name=${song}, mp3="${media}", author="${author}", version="${version}", variant="${variant}", collection="${collection}", ordinal="${ordinal}", datetime=NOW()))
 #live		endif
 #live	endif
@@ -2573,14 +2572,18 @@ Previously available on the ${fishco} LP/CD.
 
 #define	UpdateAlbumSong(prefix, result)
 #	**${${prefix}->lookup}
-#	**${${prefix}->audio}
 #	<hr/>
 #	URL**${${result}->mediaurl}
-#	SON**${song}
-#	ORD**${ordinal}
-#	COMM**$comment}
-#	AUT**${author}
-#	CRED**$mediacredit}
+#	<hr/>
+#	SON**${${result}->song}
+#	<hr/>
+#	ORD**${${result}->ordinal}
+#	<hr/>
+#	COMM**${${result}->comment}
+#	<hr/>
+#	AUT**${${result}->author}
+#	<hr/>
+#	CRED**${${result}->mediacredit}
 	${addAlbumPerf(release=${${prefix}->lookup}, song="${${result}->song}", type=Aside, ordinal=${${result}->ordinal}, author=${${result}->author}, media=${${result}->mediaurl}, variant=${${result}->comment})}
 
 #define	va_shadow_and_substance.html

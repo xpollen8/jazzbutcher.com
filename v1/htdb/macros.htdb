@@ -91,27 +91,27 @@
 #live					endif
 #live					if (define(s_parts[3], ))
 #live					endif
-						${define(_embed->mediaurl, ${parts[1]})}
-						${define(_embed->song, )}
-						${define(_embed->ordinal, )}
-						${define(_embed->comment, )}
-						${define(_embed->author, )}
-						${define(_embed->mediacredit, )}
+						${define(_embed_${ci}->mediaurl, ${parts[1]})}
+						${define(_embed_${ci}->song, )}
+						${define(_embed_${ci}->ordinal, )}
+						${define(_embed_${ci}->comment, )}
+						${define(_embed_${ci}->author, )}
+						${define(_embed_${ci}->mediacredit, )}
 #live					if (makeArray(s_parts, ::, ${parts[2]}))
 #live						if ((defined(s_parts[1])) && (getval(s_parts[1]) != ::))
-							${define(_embed->song, ${literalizeCommas(${s_parts[1]})})}
+							${define(_embed_${ci}->song, ${literalizeCommas(${s_parts[1]})})}
 #live						endif
 #live						if (defined(s_parts[2]))
-							${define(_embed->ordinal, ${s_parts[2]})}
+							${define(_embed_${ci}->ordinal, ${s_parts[2]})}
 #live						endif
 #live						if (defined(s_parts[3]))
-							${define(_embed->comment, ${s_parts[3]})}
+							${define(_embed_${ci}->comment, ${s_parts[3]})}
 #live						endif
 #live					endif
 #live					if (defined(callback))
-							${${callback}(prefix=${prefix}, result=_embed)}
+							${${callback}(prefix=${prefix}, result=_embed_${ci})}
 #live					else
-							${doMediaEmbed(pr=_embed)}
+							${doMediaEmbed(pr=_embed_${ci})}
 #live					endif
 #live				endif
 					<p />

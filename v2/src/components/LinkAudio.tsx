@@ -3,7 +3,7 @@
 import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { parseImage, truncAt, autoLink, linkExternal } from '@/lib/utils';
+import { parseImage, truncAt, autoLink, linkExternal, ts2URI } from '@/lib/utils';
 import { AutoLinkSong } from '@/lib/defines';
 import useRelease from '@/lib/useRelease';
 
@@ -39,7 +39,7 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 			{(!!ordinal) && <span className='listenItemOrdinal'>{ordinal}.</span>}{' '}
 			{(city?.length && venue?.length && datetime?.length && !datetime.match(/0000-00-00 00:00:00/)) && <>
 				{(parent) && <Link href={parent}><b>{datetime?.substring(0, 10)}</b></Link>}
-				{!(parent) && <b>{datetime?.substring(0, 10)}</b>}
+				{!(parent) && <Link href={`/gigs/${ts2URI(datetime)}`}><b>{datetime?.substring(0, 10)}</b></Link>}
 				{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
 			</>}
 			<i>

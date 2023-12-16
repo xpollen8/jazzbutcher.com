@@ -29,7 +29,7 @@
 	{
 		"subject": "Pat Fish + David J, Racehorse Christmas Gig, 1993",
 
-		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/gigs/search.html?f=song&amp;q=The+Entire+Show'>The Entire Show</a></i> </span>  </i> </span> <br/> <audio controls='controls' title='The Entire Show' preload='none' class='audio_player'> <source src='/audio/19931223/19931223_JazzButcher_TheRacehorse_Gen0_Cassette.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <p /> Pat and David J play 4 songs, and then Alan Moore takes the stage (*that* set is not included in this download)",
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/gigs/search.html?f=song&amp;q=The+Entire+Show'>The Entire Show</a></i> </span>  </i> </span> <br/> <audio controls='controls' title='The Entire Show' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/19931223/19931223_JazzButcher_TheRacehorse_Gen0_Cassette.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <p /> Pat and David J play 4 songs, and then Alan Moore takes the stage (*that* set is not included in this download)",
 
 		"dt": "1479168000",
 
@@ -41,7 +41,7 @@
 	{
 		"subject": "'Near Perfect Pitch' podcast #1",
 
-		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> 'Near Perfect Pitch' podcast #1 </i> </span> <span class='smalltext'> <i>Dara Mottahed and Pat (via Skype) chat about recent band history. And football.</i> </span> <br/> <audio controls='controls' title=''Near Perfect Pitch' podcast #1' preload='none' class='audio_player'> <source src='/audio/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> Excerpted from <a href='https://twitter.com/NearPerfPitch' target='new'>@NearPerfPitch</a>'s inaugural podcast. Dara Mottahed and Pat (via Skype) <a href='http://www.ckcufm.com/node/700' target='new'>chat about recent band history. And football</a>.",
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> 'Near Perfect Pitch' podcast #1 </i> </span> <span class='smalltext'> <i>Dara Mottahed and Pat (via Skype) chat about recent band history. And football.</i> </span> <br/> <audio controls='controls' title=''Near Perfect Pitch' podcast #1' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> Excerpted from <a href='https://twitter.com/NearPerfPitch' target='new'>@NearPerfPitch</a>'s inaugural podcast. Dara Mottahed and Pat (via Skype) <a href='http://www.ckcufm.com/node/700' target='new'>chat about recent band history. And football</a>.",
 
 		"dt": "1462752000",
 
@@ -569,7 +569,7 @@
 	{
 		"subject": "Andrew Brooksbank photos",
 
-		"body": "David J. and Bauhaus archivist, Andrew Brooksbank has graciously provided a glimpse into his collection with photographs from  the following early JBC gigs: <a href='/gigs/1986/Mar4.html'>1986-03-04</a>, <a href='/gigs/1986/Oct29.html'>1986-10-29</a>, <a href='/gigs/1989/Sep21.html'>1989-09-21 <img src='/images/19890921/19890921_brooksbank_006_500.jpg'></a>",
+		"body": "David J. and Bauhaus archivist, Andrew Brooksbank has graciously provided a glimpse into his collection with photographs from  the following early JBC gigs: <a href='/gigs/1986/Mar4.html'>1986-03-04</a>, <a href='/gigs/1986/Oct29.html'>1986-10-29</a>, <a href='/gigs/1989/Sep21.html'>1989-09-21 <img src='https://v1.jazzbutcher.com/images/19890921/19890921_brooksbank_006_500.jpg'></a>",
 
 		"dt": "1488585600",
 
@@ -581,7 +581,7 @@
 	{
 		"subject": "Besancon, France - 1986-03-04",
 
-		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/gigs/search.html?f=song&amp;q=The+Entire+Show'>The Entire Show</a></i> </span>  </i> </span> <span class='smalltext'> <i>Besancon, France</i> </span> <br/> <audio controls='controls' title='The Entire Show' preload='none' class='audio_player'> <source src='/audio/19860304/19860304_JazzButcher_Besacon_EQd.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <span class='credit'> <b>Credit</b>: <a href='https://soundcloud.com/lonesomedog' target='new'>Dom Genot</a> </span><!-- credit -->",
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/gigs/search.html?f=song&amp;q=The+Entire+Show'>The Entire Show</a></i> </span>  </i> </span> <span class='smalltext'> <i>Besancon, France</i> </span> <br/> <audio controls='controls' title='The Entire Show' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/19860304/19860304_JazzButcher_Besacon_EQd.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <span class='credit'> <b>Credit</b>: <a href='https://soundcloud.com/lonesomedog' target='new'>Dom Genot</a> </span><!-- credit -->",
 
 		"dt": "1489017600",
 
@@ -593,7 +593,7 @@
 	{
 		"subject": "Pierre Guillaume Ticket Stubs",
 
-		"body": "Pierre Guillaume responded to our <a href='/help'>request for assistance</a> with some high-quality scans of ticket stubs from several gigs in France - including one show not previously listed in the archives! <blockquote> <a href='/gigs/1994/Jul7.html'><img src='/images/19940707/19940707_ticket_250.jpg'></a> <p /> <a href='/gigs/1987/Aug2.html'>1987-08-02</a>, <a href='/gigs/1987/Feb2.html'>1987-02-02</a>, <a href='/gigs/1988/Apr8.html'>1988-04-08</a>, <a href='/gigs/1990/Mar13.html'>1990-03-13</a>, <a href='/gigs/1991/Oct21.html'>1991-10-21</a>, <a href='/gigs/1993/Feb16.html'>1993-02-16</a>, <a href='/gigs/1994/Jul7.html'>1994-07-07</a>, <a href='/gigs/1995/Sep13.html'>1995-09-13</a>, <p /> <a href='/gigs/1987/Aug2.html'><img src='/images/19870802/19870802_ticket_250.jpg'></a> <span class='credit'> <b>Credit</b>: Pierre Guillaume </span><!-- credit -->  </blockquote> Merci!",
+		"body": "Pierre Guillaume responded to our <a href='/help'>request for assistance</a> with some high-quality scans of ticket stubs from several gigs in France - including one show not previously listed in the archives! <blockquote> <a href='/gigs/1994/Jul7.html'><img src='https://v1.jazzbutcher.com/images/19940707/19940707_ticket_250.jpg'></a> <p /> <a href='/gigs/1987/Aug2.html'>1987-08-02</a>, <a href='/gigs/1987/Feb2.html'>1987-02-02</a>, <a href='/gigs/1988/Apr8.html'>1988-04-08</a>, <a href='/gigs/1990/Mar13.html'>1990-03-13</a>, <a href='/gigs/1991/Oct21.html'>1991-10-21</a>, <a href='/gigs/1993/Feb16.html'>1993-02-16</a>, <a href='/gigs/1994/Jul7.html'>1994-07-07</a>, <a href='/gigs/1995/Sep13.html'>1995-09-13</a>, <p /> <a href='/gigs/1987/Aug2.html'><img src='https://v1.jazzbutcher.com/images/19870802/19870802_ticket_250.jpg'></a> <span class='credit'> <b>Credit</b>: Pierre Guillaume </span><!-- credit -->  </blockquote> Merci!",
 
 		"dt": "1489190400",
 
@@ -617,7 +617,7 @@
 	{
 		"subject": "More Pierre Guillaume scans!",
 
-		"body": "Pierre Guillaume has provided yet more high-quality scans of JBC ephemera: <p /> <a href='/gigs/1990/Mar8.html'><img src='/images/19900308/19900308_poster_250.jpg'></a> <p /> <b>posters and announcements</b> <blockquote> <a href='/gigs/1986/Apr4.html'>1986-04-04</a>, <a href='/gigs/1986/Aug14.html'>1986-08-14</a>, <a href='/gigs/1987/May29.html'>1987-05-29</a>, <a href='/gigs/1988/Apr8.html'>1988-04-08</a>, <a href='/gigs/1989/Sep1.html'>1989-09-01</a>, <a href='/gigs/1990/Mar13.html'>1990-03-13</a>, <a href='/gigs/1990/Mar14.html'>1990-03-14</a>, <a href='/gigs/1990/Mar16.html'>1990-03-16</a>, <a href='/gigs/1990/Sep15.html'>1990-09-15</a>, <a href='/gigs/1993/Nov15.html'>1993-11-15</a>, <a href='/gigs/1994/Feb17.html'>1994-02-17</a>, <a href='/gigs/1995/Sep13_2000.html'>1995-09-13</a>, <a href='/gigs/1995/Dec21.html'>1995-12-21</a> </blockquote> <b>newspaper clippings</b> <blockquote> <a href='/gigs/1993/Nov15.html'>1993-11-15</a>, <a href='/gigs/1993/Feb16.html'>1993-02-16</a>, <a href='/gigs/1993/Feb21_2000.html'>1993-02-21</a>, <a href='/gigs/1987/Feb10.html'>1987-02-10</a> </blockquote> Big Merci!",
+		"body": "Pierre Guillaume has provided yet more high-quality scans of JBC ephemera: <p /> <a href='/gigs/1990/Mar8.html'><img src='https://v1.jazzbutcher.com/images/19900308/19900308_poster_250.jpg'></a> <p /> <b>posters and announcements</b> <blockquote> <a href='/gigs/1986/Apr4.html'>1986-04-04</a>, <a href='/gigs/1986/Aug14.html'>1986-08-14</a>, <a href='/gigs/1987/May29.html'>1987-05-29</a>, <a href='/gigs/1988/Apr8.html'>1988-04-08</a>, <a href='/gigs/1989/Sep1.html'>1989-09-01</a>, <a href='/gigs/1990/Mar13.html'>1990-03-13</a>, <a href='/gigs/1990/Mar14.html'>1990-03-14</a>, <a href='/gigs/1990/Mar16.html'>1990-03-16</a>, <a href='/gigs/1990/Sep15.html'>1990-09-15</a>, <a href='/gigs/1993/Nov15.html'>1993-11-15</a>, <a href='/gigs/1994/Feb17.html'>1994-02-17</a>, <a href='/gigs/1995/Sep13_2000.html'>1995-09-13</a>, <a href='/gigs/1995/Dec21.html'>1995-12-21</a> </blockquote> <b>newspaper clippings</b> <blockquote> <a href='/gigs/1993/Nov15.html'>1993-11-15</a>, <a href='/gigs/1993/Feb16.html'>1993-02-16</a>, <a href='/gigs/1993/Feb21_2000.html'>1993-02-21</a>, <a href='/gigs/1987/Feb10.html'>1987-02-10</a> </blockquote> Big Merci!",
 
 		"dt": "1490745600",
 
@@ -629,7 +629,7 @@
 	{
 		"subject": "'Near Perfect Pitch' podcast #35",
 
-		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> 'Near Perfect Pitch' podcast #35 </i> </span> <span class='smalltext'> <i>Dara Mottahed and Pat (via Skype) catch up on happenings since the previous podcast.</i> </span> <br/> <audio controls='controls' title=''Near Perfect Pitch' podcast #35' preload='none' class='audio_player'> <source src='/audio/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> Excerpted from <a href='https://twitter.com/NearPerfPitch' target='new'>@NearPerfPitch</a>'s podcast #35. Dara Mottahed and Pat (via Skype) <a href='http://www.nearperfectpitch.com' target='new'>catch up on happenings since the previous podcast.</a>.",
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> 'Near Perfect Pitch' podcast #35 </i> </span> <span class='smalltext'> <i>Dara Mottahed and Pat (via Skype) catch up on happenings since the previous podcast.</i> </span> <br/> <audio controls='controls' title=''Near Perfect Pitch' podcast #35' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> Excerpted from <a href='https://twitter.com/NearPerfPitch' target='new'>@NearPerfPitch</a>'s podcast #35. Dara Mottahed and Pat (via Skype) <a href='http://www.nearperfectpitch.com' target='new'>catch up on happenings since the previous podcast.</a>.",
 
 		"dt": "1491091200",
 
@@ -641,7 +641,7 @@
 	{
 		"subject": "Press Clippings, Posters, and Audio",
 
-		"body": "Archive additions: more newspaper clippings: <blockquote> <a href='/press/19990923_press_villagevoice.html'>Village Voice 1999-09-23</a>, <a href='/press/19990923_press_timeout.html'>Time Out 1999-09-23</a>, <a href='/press/19990916_press_seattle_rocket.html'>Seattle Rocket 1999-09-16</a>, <a href='/press/19990916_press_seattle.html'>Seattle Newspaper 1999-09-16</a>, </blockquote> And a few posters, including this crackerjack for The Black Eg: <blockquote> <a href='/gigs/1999/Jun3.html'><img src='/images/19990603/19990603_poster_250.jpg'></a> </blockquote> <b><a href='/gigs/1989/Nov18.html'>Madison, Wisconsin - 1989-11-18</a></b> <blockquote> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/gigs/search.html?f=song&amp;q=The+Entire+Show'>The Entire Show</a></i> </span>  </i> </span> <br/> <audio controls='controls' title='The Entire Show' preload='none' class='audio_player'> <source src='/audio/19891118/19891118_JazzButcher_Madison_EQd.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> </blockquote>",
+		"body": "Archive additions: more newspaper clippings: <blockquote> <a href='/press/19990923_press_villagevoice.html'>Village Voice 1999-09-23</a>, <a href='/press/19990923_press_timeout.html'>Time Out 1999-09-23</a>, <a href='/press/19990916_press_seattle_rocket.html'>Seattle Rocket 1999-09-16</a>, <a href='/press/19990916_press_seattle.html'>Seattle Newspaper 1999-09-16</a>, </blockquote> And a few posters, including this crackerjack for The Black Eg: <blockquote> <a href='/gigs/1999/Jun3.html'><img src='https://v1.jazzbutcher.com/images/19990603/19990603_poster_250.jpg'></a> </blockquote> <b><a href='/gigs/1989/Nov18.html'>Madison, Wisconsin - 1989-11-18</a></b> <blockquote> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i><a href='/gigs/search.html?f=song&amp;q=The+Entire+Show'>The Entire Show</a></i> </span>  </i> </span> <br/> <audio controls='controls' title='The Entire Show' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/19891118/19891118_JazzButcher_Madison_EQd.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> </blockquote>",
 
 		"dt": "1491091200",
 
@@ -677,7 +677,7 @@
 	{
 		"subject": "Side-Project Mayhem",
 
-		"body": "Audio and artwork for the Wilson, Sumosonic, The Vaguely Familiar, Cambodia, and Black Eg projects <a href='/audio'>have been added to the listening room</a>",
+		"body": "Audio and artwork for the Wilson, Sumosonic, The Vaguely Familiar, Cambodia, and Black Eg projects <a href='https://v1.jazzbutcher.com/audio'>have been added to the listening room</a>",
 
 		"dt": "1492041600",
 
@@ -689,7 +689,7 @@
 	{
 		"subject": "Site Updates",
 
-		"body": "<b><a href='/gigs/1991/Nov14.html'>Arena, Vienna - 1991-11-14</a></b> <blockquote> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='/audio/19911114/19911114_JazzButcher_Vienna_Gen1_Flat.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> </blockquote> Also, appearances on many 'Various Artists' releases <a href='/albums'>are now better documented.</a>",
+		"body": "<b><a href='/gigs/1991/Nov14.html'>Arena, Vienna - 1991-11-14</a></b> <blockquote> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/19911114/19911114_JazzButcher_Vienna_Gen1_Flat.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> </blockquote> Also, appearances on many 'Various Artists' releases <a href='/albums'>are now better documented.</a>",
 
 		"dt": "1500768000",
 
@@ -749,7 +749,7 @@
 	{
 		"subject": "Wasted Years Press",
 
-		"body": "On the occasion of the <span class='release_title'><b><a href='/albums/fire_wasted.html'>The Wasted Years</a></b></span> box set release, <u><a href='/press/20171002_bandcamp.html'>here's a nice review and interview</a></u> and <u><a href='/press/20171012_louderthanwar.html'>a nice review</a></u>, and <u><a href='/press/20171015_apessimistisneverdisappointed.html'>or two</a></u>. <u><a href='/press/20171020_popmatters.html'>or three</a></u> <p /> Also, unearthed on the 'tube are some recent video segments where Pat talks briefly on a variety of topics. Click the 'Etc' tab over in <a href='/video'>The Viewing Room</a>.",
+		"body": "On the occasion of the <span class='release_title'><b><a href='/albums/fire_wasted.html'>The Wasted Years</a></b></span> box set release, <u><a href='/press/20171002_bandcamp.html'>here's a nice review and interview</a></u> and <u><a href='/press/20171012_louderthanwar.html'>a nice review</a></u>, and <u><a href='/press/20171015_apessimistisneverdisappointed.html'>or two</a></u>. <u><a href='/press/20171020_popmatters.html'>or three</a></u> <p /> Also, unearthed on the 'tube are some recent video segments where Pat talks briefly on a variety of topics. Click the 'Etc' tab over in <a href='https://v1.jazzbutcher.com/video'>The Viewing Room</a>.",
 
 		"dt": "1508025600",
 
@@ -761,7 +761,7 @@
 	{
 		"subject": "Live Shows Uploaded",
 
-		"body": "<b><a href='/gigs/1993/Feb15.html'>French National Radio, Paris - 1993-02-15</a></b> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>In French, 4 songs performed</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='/audio/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>  <b><a href='/gigs/1993/Oct28.html'>The Forum, London - 1993-10-28</a></b> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>Opening for John Cale. w/Alex Green and Paul Mulreany</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='/audio/19931028/19931028_JazzButcher_London_Gen0_Flat.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>  <b><a href='/gigs/1985/Mar24.html'>Kolingsborg, Stockholm, Sweden - 1985-03-24</a></b> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='/audio/19850324/19850324_JazzButcher_Stockholm_Gen2_Flat.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>",
+		"body": "<b><a href='/gigs/1993/Feb15.html'>French National Radio, Paris - 1993-02-15</a></b> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>In French, 4 songs performed</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>  <b><a href='/gigs/1993/Oct28.html'>The Forum, London - 1993-10-28</a></b> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>Opening for John Cale. w/Alex Green and Paul Mulreany</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/19931028/19931028_JazzButcher_London_Gen0_Flat.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>  <b><a href='/gigs/1985/Mar24.html'>Kolingsborg, Stockholm, Sweden - 1985-03-24</a></b> <span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/19850324/19850324_JazzButcher_Stockholm_Gen2_Flat.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>",
 
 		"dt": "1509753600",
 
@@ -773,7 +773,7 @@
 	{
 		"subject": "Four more Jazz Butcher albums compiled in upcoming ‘The Violent Years’ box set",
 
-		"body": "<img src='/images/releases/fire_violent_250.jpg'> <p /> Fire Records next spring will follow up its collection of the first four albums by The Jazz Butcher, Pat Fish’s long-running U.K. indie-pop outfit, with a new box set called The Violent Years that compiles the next four LPs, all originally released on Creation Records between 1988 and 1991. <p /> Due out March 9 on streaming/download or in a 4CD box set encased in a book, The Violent Years collects straight, bonus-less reissues of Fishcotheque (1988), Big Planet, Scarey Planet (1989), Cult of the Basement (1990) and Condition Blue (1990). The collection can be <a href='https://thejazzbutcher.bandcamp.com/album/the-violent-years' target='new'>pre-ordered now via Bandcamp</a>.",
+		"body": "<img src='https://v1.jazzbutcher.com/images/releases/fire_violent_250.jpg'> <p /> Fire Records next spring will follow up its collection of the first four albums by The Jazz Butcher, Pat Fish’s long-running U.K. indie-pop outfit, with a new box set called The Violent Years that compiles the next four LPs, all originally released on Creation Records between 1988 and 1991. <p /> Due out March 9 on streaming/download or in a 4CD box set encased in a book, The Violent Years collects straight, bonus-less reissues of Fishcotheque (1988), Big Planet, Scarey Planet (1989), Cult of the Basement (1990) and Condition Blue (1990). The collection can be <a href='https://thejazzbutcher.bandcamp.com/album/the-violent-years' target='new'>pre-ordered now via Bandcamp</a>.",
 
 		"dt": "1514246400",
 
@@ -797,7 +797,7 @@
 	{
 		"subject": "'On The Road' - CBC featurette",
 
-		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>While en-route to 1989 Germany dates, <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> answers 'Big Questions' for CBC radio listeners</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='/audio/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <span class='credit'> <b>Credit</b>: Dana Mottahead </span><!-- credit -->",
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> <span class='song'> <i></i> </span>  </i> </span> <span class='smalltext'> <i>While en-route to 1989 Germany dates, <span class='person'> <a href='https://patfish.com'>Pat Fish</a> </span> answers 'Big Questions' for CBC radio listeners</i> </span> <audio controls='controls' title='' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span> <span class='credit'> <b>Credit</b>: Dana Mottahead </span><!-- credit -->",
 
 		"dt": "1574553600",
 
@@ -857,7 +857,7 @@
 	{
 		"subject": "Dr Cholmondley Repents: A-sides, B-sides and Seasides",
 
-		"body": "<img src='/images/cover_singles_500.jpg'> <p /> The Jazz Butcher reveals limited edition bookback CD ‘Dr Cholmondley Repents: A-sides, B-sides and Seasides’     (out 12th November). <p /> <a href='https://fire-records.lnk.to/JazzButcherDrCholmondleyFA' target='new'>Listen to the first singles 'Sixteen Years/Rebecca Wants Her Bike Back'/pre-order here</a> <p /> “The Jazz Butcher is one of the most brilliant incisive pop writers that Britain has produced since the glory days of Ray           Davies and Pete Townshend” Alan McGee, Creation",
+		"body": "<img src='https://v1.jazzbutcher.com/images/cover_singles_500.jpg'> <p /> The Jazz Butcher reveals limited edition bookback CD ‘Dr Cholmondley Repents: A-sides, B-sides and Seasides’     (out 12th November). <p /> <a href='https://fire-records.lnk.to/JazzButcherDrCholmondleyFA' target='new'>Listen to the first singles 'Sixteen Years/Rebecca Wants Her Bike Back'/pre-order here</a> <p /> “The Jazz Butcher is one of the most brilliant incisive pop writers that Britain has produced since the glory days of Ray           Davies and Pete Townshend” Alan McGee, Creation",
 
 		"dt": "1630886400",
 
@@ -869,7 +869,7 @@
 	{
 		"subject": "Pat Fish - 1957-12-20 .. 2021-10-05",
 
-		"body": "<table width='100%'> <tr> <td valign='top' width='50%'> <div class='headingItem'> Max Eider Says..  </div><blockquote> Very sad to announce that my old friend Pat Fish died suddenly but peacefully on Tuesday evening. Pat rocked my world in          every way and his death leaves a big hole in my life and my memory, much of which was only stored in his outsized brain.          Goodbye mate and thanks for everything. I’m going to miss you.<br/><i>Max x</i> </blockquote> <p /> <a href='/memoriam'> <b>Memoriam is here.</b> </a> </td> <td valign='top'> <a href='/memoriam'> <img src='/images/20211006_portrait_500.jpg' style='border: 1px; border-radius: 10px;' alt='portrait'></a> <span class='credit'> <b>Credit</b>: Dave E. Barker </span><!-- credit -->  </td> </tr> </table>",
+		"body": "<table width='100%'> <tr> <td valign='top' width='50%'> <div class='headingItem'> Max Eider Says..  </div><blockquote> Very sad to announce that my old friend Pat Fish died suddenly but peacefully on Tuesday evening. Pat rocked my world in          every way and his death leaves a big hole in my life and my memory, much of which was only stored in his outsized brain.          Goodbye mate and thanks for everything. I’m going to miss you.<br/><i>Max x</i> </blockquote> <p /> <a href='/memoriam'> <b>Memoriam is here.</b> </a> </td> <td valign='top'> <a href='/memoriam'> <img src='https://v1.jazzbutcher.com/images/20211006_portrait_500.jpg' style='border: 1px; border-radius: 10px;' alt='portrait'></a> <span class='credit'> <b>Credit</b>: Dave E. Barker </span><!-- credit -->  </td> </tr> </table>",
 
 		"dt": "1633521742",
 
@@ -905,7 +905,7 @@
 	{
 		"subject": "1983-09-24 - Gig photos from Pat Fish Archives",
 
-		"body": "<a href='/gigs/1983/Sep24.html'><img src='/images/19830924/19830924_1_250.jpg' width=250' alt='photo'></a> (+7 more)",
+		"body": "<a href='/gigs/1983/Sep24.html'><img src='https://v1.jazzbutcher.com/images/19830924/19830924_1_250.jpg' width=250' alt='photo'></a> (+7 more)",
 
 		"dt": "1700430180",
 
@@ -917,7 +917,7 @@
 	{
 		"subject": "1984-12-08 - First Po gig poster from Pat Fish Archives",
 
-		"body": "<a href='/gigs/1989/Dec8.html'><img src='/images/19841208/19841208_poster_250.jpg' width=250' alt='poster'></a>",
+		"body": "<a href='/gigs/1989/Dec8.html'><img src='https://v1.jazzbutcher.com/images/19841208/19841208_poster_250.jpg' width=250' alt='poster'></a>",
 
 		"dt": "1700430600",
 
@@ -929,7 +929,7 @@
 	{
 		"subject": "1989-02-28 - Scanned setlist from Pat Fish Archives",
 
-		"body": "<a href='/gigs/1989/Feb28.html'><img src='/images/19890228/19890228_setlist_250.jpg' width=250' alt='setlist'></a>",
+		"body": "<a href='/gigs/1989/Feb28.html'><img src='https://v1.jazzbutcher.com/images/19890228/19890228_setlist_250.jpg' width=250' alt='setlist'></a>",
 
 		"dt": "1700432340",
 
@@ -941,7 +941,7 @@
 	{
 		"subject": "2014-10-24 - Japan gig Poster",
 
-		"body": "<a href='/gigs/2014/Oct24.html'><img src='/images/20141024/20141024_poster_250.jpg' width=250' alt='poster'></a>",
+		"body": "<a href='/gigs/2014/Oct24.html'><img src='https://v1.jazzbutcher.com/images/20141024/20141024_poster_250.jpg' width=250' alt='poster'></a>",
 
 		"dt": "1700434020",
 
@@ -953,7 +953,7 @@
 	{
 		"subject": "2014-08-20 - Mat Wallis pic",
 
-		"body": "<a href='/gigs/2014/Aug20_2000.html'><img src='/images/20140820/20140820_group_250.jpg' width=250' alt='photo'></a>",
+		"body": "<a href='/gigs/2014/Aug20_2000.html'><img src='https://v1.jazzbutcher.com/images/20140820/20140820_group_250.jpg' width=250' alt='photo'></a>",
 
 		"dt": "1700436840",
 
@@ -965,7 +965,7 @@
 	{
 		"subject": "2009-10-17 - Gig pic",
 
-		"body": "<a href='/gigs/2009/Oct17.html'><img src='/images/20091017/20091017_group_250.jpg' width=250' alt='photo'></a>",
+		"body": "<a href='/gigs/2009/Oct17.html'><img src='https://v1.jazzbutcher.com/images/20091017/20091017_group_250.jpg' width=250' alt='photo'></a>",
 
 		"dt": "1700437200",
 
@@ -1001,7 +1001,7 @@
 	{
 		"subject": "1992-06-12 - Setlist",
 
-		"body": "<a href='/gigs/1992/Jun12.html'><img src='/images/19920612/19920612_setlist_250.jpg' width=250' alt='setlist'></a>",
+		"body": "<a href='/gigs/1992/Jun12.html'><img src='https://v1.jazzbutcher.com/images/19920612/19920612_setlist_250.jpg' width=250' alt='setlist'></a>",
 
 		"dt": "1701115200",
 
@@ -1013,7 +1013,7 @@
 	{
 		"subject": "2015-09-22 - Backstage photo",
 
-		"body": "<a href='/gigs/2015/Sep22_2000.html'><img src='/images/20150922/20150922_william_backstage_250.jpg' width=250' alt='backstage'></a>",
+		"body": "<a href='/gigs/2015/Sep22_2000.html'><img src='https://v1.jazzbutcher.com/images/20150922/20150922_william_backstage_250.jpg' width=250' alt='backstage'></a>",
 
 		"dt": "1701117660",
 

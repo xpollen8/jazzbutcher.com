@@ -96,12 +96,12 @@
 #define	gsExtra[1989-12-10_00:00:00]
 		${gsExtra[1989-11-28_00:00:00]}
 #define	gsExtra[1992-09-15_00:00:00]
-		<a href="${jbc_gigs}/1992/Sep15.html"><img src="/images/19920915/19920915_blackeg_cover_250.jpg"></a>
-		<a href="${jbc_gigs}/1992/Sep15.html"><img src="/images/19920915/19920915_blackeg_inside_250.jpg"></a>
+		<a href="${jbc_gigs}/1992/Sep15.html"><img src="${jbc_images}/19920915/19920915_blackeg_cover_250.jpg"></a>
+		<a href="${jbc_gigs}/1992/Sep15.html"><img src="${jbc_images}/19920915/19920915_blackeg_inside_250.jpg"></a>
 #define	gsExtra[1993-08-20_00:00:00]
-		<a href="${jbc_gigs}/1993/Aug20.html"><img src="/images/19930820/19930820_blackeg_cover_250.jpg"></a>
+		<a href="${jbc_gigs}/1993/Aug20.html"><img src="${jbc_images}/19930820/19930820_blackeg_cover_250.jpg"></a>
 #define	gsExtra[1994-06-01_00:00:00]
-		<a href="${jbc_gigs}/1994/Jun1.html"><img src="/images/19940601/19940601_del_egdebut_250.jpg"></a>
+		<a href="${jbc_gigs}/1994/Jun1.html"><img src="${jbc_images}/19940601/19940601_del_egdebut_250.jpg"></a>
 		<p>
 		Black Eg's Live Debut!
 #define	gsExtra[1985-04-23_00:00:00]
@@ -143,7 +143,7 @@
 		Rough mixes of a practice session recorded by ${linkExternal(http://www.sonicvistastudios.com/, Henry Sarmiento)}
 		at <a href="http://www.syklopps.com">Sy Klopps Studios</a> in San Francisco.
 #define	gsExtra[2013-06-17_00:00:00]
-		${linkPDF(title=PDF suitable for CD, pdf=/images/20130617/20130617_JBC_Manhattan_CakeShop.pdf)}
+		${linkPDF(title=PDF suitable for CD, pdf=${jbc_images}/20130617/20130617_JBC_Manhattan_CakeShop.pdf)}
 		${g_credit(g=Lito Vales, u=https://www.flickr.com/photos/uncletoe/)}
 #define	gsExtra[2014-11-12_18:00:00]
 		From interview session with Julio Ruiz.
@@ -241,7 +241,7 @@
 #live	endif
 	<blockquote class="li-media">
 #live	endif
-	${linkAudio(project=${project}, datetime=${${prefix}[${gi}]->datetime}, type=${literalizeCommas(${${prefix}[${gi}]->extra})}, title=${literalizeCommas(${${prefix}[${gi}]->song})}, mp3=${${prefix}[${gi}]->mediaurl}, author=${${prefix}[${gi}]->author}, comment=${literalizeCommas(${${prefix}[${gi}]->comment})}, collection=${literalizeQuotes(${${prefix}[${gi}]->venue};;${${prefix}[${gi}]->city};;${${prefix}[${gi}]->country})}, ordinal=${${prefix}[${gi}]->type};;${${prefix}[${gi}]->setnum};;${${prefix}[${gi}]->ordinal})}
+	${linkAudio(project=${project}, datetime=${${prefix}[${gi}]->datetime}, type=${literalizeCommas(${${prefix}[${gi}]->extra})}, title=${literalizeCommas(${${prefix}[${gi}]->song})}, mp3=${${prefix}[${gi}]->mediaurl}, author=${${prefix}[${gi}]->author}, comment=${literalizeCommas(${${prefix}[${gi}]->comment})}, collection=${literalizeQuotes(${${prefix}[${gi}]->venue};;${${prefix}[${gi}]->city};;${${prefix}[${gi}]->country})}, ordinal=${${prefix}[${gi}]->type};;${${prefix}[${gi}]->setnum};;${${prefix}[${gi}]->ordinal}, hideOrdinal=true)}
 #live	if (getval(cDT) != ${${prefix}[${eval(1 + ${gi})}]->datetime})
 #live		if (define(gsDT, ${space2underscore(${cDT})}))
 #live		endif
@@ -433,12 +433,12 @@ ${define(gsExtra[${dt}], ${summary})}
 	November, 2005 Demo
 	${tag_end}
 	<div class="listenItem">
-		<a href="/images/wilson/200511_wilson_cd.jpg"><img src="/images/wilson/200511_wilson_cd_250.jpg"></a>
+		<a href="${jbc_images}/wilson/200511_wilson_cd.jpg"><img src="${jbc_images}/wilson/200511_wilson_cd_250.jpg"></a>
 		<p>
 		Recorded at ${linkExternal(http://www.premierstudios.co.uk, Premier Studio)}
 		<blockquote>
-		${linkAudio(project=wilson, collection=2005-11 Demo, title=Buffalo Sniper, url=${jbc_lyrics}/wilson_buffalo_sniper.html, mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3)}
-		${linkAudio(project=wilson, collection=2005-11 Demo, title=Police Chief, url=${jbc_lyrics}/wilson_police_chief.html, mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3)}
+		${linkAudio(project=wilson, collection=2005-11 Demo, title=Buffalo Sniper, url=${jbc_lyrics}/wilson_buffalo_sniper.html, mp3=${jbc_audio}/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3)}
+		${linkAudio(project=wilson, collection=2005-11 Demo, title=Police Chief, url=${jbc_lyrics}/wilson_police_chief.html, mp3=${jbc_audio}/Wilson_200511/02_Wilson_200511_Police_Chief.mp3)}
 		</blockquote>
 	</div>
 
@@ -446,16 +446,16 @@ ${define(gsExtra[${dt}], ${summary})}
 	April, 2003 Demo
 	${tag_end}
 	<div class="listenItem">
-		<a href="/images/wilson/200304_wilson_front.jpg"><img src="/images/wilson/200304_wilson_front_250.jpg"></a>
-		<a href="/images/wilson/200304_wilson_back.jpg"><img src="/images/wilson/200304_wilson_back_250.jpg"></a>
+		<a href="${jbc_images}/wilson/200304_wilson_front.jpg"><img src="${jbc_images}/wilson/200304_wilson_front_250.jpg"></a>
+		<a href="${jbc_images}/wilson/200304_wilson_back.jpg"><img src="${jbc_images}/wilson/200304_wilson_back_250.jpg"></a>
 		<p>
 		Recorded at Notepad, NW10 by Andy Parker.
 		Produced by Donald Ross Skinner.
 		All tunes conceived, devised & assembled by Wilson.
 		Tracks contain elements of everything.
 		<blockquote>
-		${linkAudio(project=wilson, collection=2003-04 Demo, title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3)}
-		${linkAudio(project=wilson, collection=2003-04 Demo, title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3)}
+		${linkAudio(project=wilson, collection=2003-04 Demo, title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=${jbc_audio}/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3)}
+		${linkAudio(project=wilson, collection=2003-04 Demo, title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=${jbc_audio}/Wilson_200304/02_Wilson_200304_Quality_People.mp3)}
 		</blockquote>
 	</div>
 
@@ -463,20 +463,20 @@ ${define(gsExtra[${dt}], ${summary})}
 	2002 Demo
 	${tag_end}
 	<div class="listenItem">
-		<a href="/images/wilson/2002_wilson_front.jpg"><img src="/images/wilson/2002_wilson_front_250.jpg"></a>
-		<a href="/images/wilson/2002_wilson_back.jpg"><img src="/images/wilson/2002_wilson_back_250.jpg"></a>
+		<a href="${jbc_images}/wilson/2002_wilson_front.jpg"><img src="${jbc_images}/wilson/2002_wilson_front_250.jpg"></a>
+		<a href="${jbc_images}/wilson/2002_wilson_back.jpg"><img src="${jbc_images}/wilson/2002_wilson_back_250.jpg"></a>
 		<p>
 		Recorded by MC Bot on the Roland VS-1800 at Subsound, NN1
 		during 2001 and 2002. The words to "Play It All Night Long"
 		are by Warren Zevon. Everything else is original pirate material.
 		Increase the peace.
 		<blockquote>
-		${linkAudio(project=wilson, collection=2002 Demo, title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3)}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3)}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Hippy Shit, url=${jbc_lyrics}/wilson_hippy_shit.html, mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3)}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Play It All Night Long, mp3=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3)}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Burn\, Hollywood\, Burn, url=${jbc_lyrics}/wilson_burn_hollywood_burn.html, mp3=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3)}
-		${linkAudio(project=wilson, collection=2002 Demo, title=Dark Agenda, url=${jbc_lyrics}/wilson_dark_agenda.html, mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Quality People, url=${jbc_lyrics}/wilson_quality_people.html, mp3=${jbc_audio}/Wilson_2002/01_Wilson_2002_Quality_People.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Istanbul Connection, url=${jbc_lyrics}/wilson_istanbul_connection.html, mp3=${jbc_audio}/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Hippy Shit, url=${jbc_lyrics}/wilson_hippy_shit.html, mp3=${jbc_audio}/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Play It All Night Long, mp3=${jbc_audio}/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Burn\, Hollywood\, Burn, url=${jbc_lyrics}/wilson_burn_hollywood_burn.html, mp3=${jbc_audio}/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3)}
+		${linkAudio(project=wilson, collection=2002 Demo, title=Dark Agenda, url=${jbc_lyrics}/wilson_dark_agenda.html, mp3=${jbc_audio}/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3)}
 		</blockquote>
 	</div>
 	${endTab}
@@ -499,20 +499,20 @@ ${define(gsExtra[${dt}], ${summary})}
 	${tag_end}
 
 	<div class="listenItem">
-		<a href="/images/sumo/audio_aquatic.jpg"><img src="/images/sumo/audio_aquatic_250.jpg"></a>
+		<a href="${jbc_images}/sumo/audio_aquatic.jpg"><img src="${jbc_images}/sumo/audio_aquatic_250.jpg"></a>
 		<p>
 		${g_credit(g=Andrew Brooksbank)}
 		"Audio Aquatic" was an early working name for Sumosonic. Most tracks from
 		this tape are the same as the later "Demo Cassette".
 		<blockquote>
-		${linkAudio(project=sumo, collection=Audio Aquatic, title=Come\, Friendly Spacemen, mp3=/audio/AudioAquatic/AudioAquatic_01_ComeFriendlySpacemen.mp3)}
+		${linkAudio(project=sumo, collection=Audio Aquatic, title=Come\, Friendly Spacemen, mp3=${jbc_audio}/AudioAquatic/AudioAquatic_01_ComeFriendlySpacemen.mp3)}
 		<blockquote>
 			This is an "extended" version, with approximately 90 seconds more beat breaks.
 		</blockquote>
-#		${linkAudio(project=sumo, collection=Audio Aquatic, title=God's Green Earth, mp3=/audio/AudioAquatic/AudioAquatic_02_GodsGreenEarth.mp3)}
-#		${linkAudio(project=sumo, collection=Audio Aquatic, title=Fern\, Schnell\, Gut, mp3=/audio/AudioAquatic/AudioAquatic_03_FernSchnellGut.mp3)}
-#		${linkAudio(project=sumo, collection=Audio Aquatic, title=Destroy All Monsters, mp3=/audio/AudioAquatic/AudioAquatic_04_DestroyAllMonsters.mp3)}
-#		${linkAudio(project=sumo, collection=Audio Aquatic, title=She Moved Through The Fair, mp3=/audio/AudioAquatic/AudioAquatic_05_SheMovedThroughTheFair.mp3)}
+#		${linkAudio(project=sumo, collection=Audio Aquatic, title=God's Green Earth, mp3=${jbc_audio}/AudioAquatic/AudioAquatic_02_GodsGreenEarth.mp3)}
+#		${linkAudio(project=sumo, collection=Audio Aquatic, title=Fern\, Schnell\, Gut, mp3=${jbc_audio}/AudioAquatic/AudioAquatic_03_FernSchnellGut.mp3)}
+#		${linkAudio(project=sumo, collection=Audio Aquatic, title=Destroy All Monsters, mp3=${jbc_audio}/AudioAquatic/AudioAquatic_04_DestroyAllMonsters.mp3)}
+#		${linkAudio(project=sumo, collection=Audio Aquatic, title=She Moved Through The Fair, mp3=${jbc_audio}/AudioAquatic/AudioAquatic_05_SheMovedThroughTheFair.mp3)}
 #		<blockquote>
 #			Traditional Irish tune.
 #			That's Mark Refoy singing on Fair. His voice is blended right in with Kathie McGinty's, the? idea being    
@@ -520,7 +520,7 @@ ${define(gsExtra[${dt}], ${summary})}
 #			if you don't mind
 #			Sat Jun 17 13:21:53 PDT 2017
 #		</blockquote>
-#		${linkAudio(project=sumo, collection=Audio Aquatic, title=We Are The Traffic, mp3=/audio/AudioAquatic/AudioAquatic_06_WeAreTheTraffic.mp3)}
+#		${linkAudio(project=sumo, collection=Audio Aquatic, title=We Are The Traffic, mp3=${jbc_audio}/AudioAquatic/AudioAquatic_06_WeAreTheTraffic.mp3)}
 		</blockquote>
 	</div>
 
@@ -529,7 +529,7 @@ ${define(gsExtra[${dt}], ${summary})}
 	${tag_end}
 
 	<div class="listenItem">
-		<a href="/images/sumo/sumosonic_demo_cover.jpg"><img src="/images/sumo/sumosonic_demo_cover_250.jpg"></a>
+		<a href="${jbc_images}/sumo/sumosonic_demo_cover.jpg"><img src="${jbc_images}/sumo/sumosonic_demo_cover_250.jpg"></a>
 		<p>
 		Unlike the Creation ${linkInternal(${jbc_albums}/sumosonic_this_is_sumo.html, "This Is Sumo")} release, Pat sings lead on all tracks.
 		<blockquote>
@@ -631,7 +631,7 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(collection=Jazz Butcher Adventurers Sessions, title=La Mer, datetime=2012-00-00, mp3=/audio/tunes/2012_JBC_LaMer.mp3)}
+		${linkAudio(collection=Jazz Butcher Adventurers Sessions, title=La Mer, datetime=2012-00-00, mp3=${jbc_audio}/tunes/2012_JBC_LaMer.mp3)}
 			From the 2012 ${adventurers} recording session (unreleased)
 		</blockquote>
 

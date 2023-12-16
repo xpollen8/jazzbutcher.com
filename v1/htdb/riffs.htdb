@@ -1,13 +1,13 @@
 #define	index.html
 Max Eider website "riffs" (circa 2011)
 <hr/>
-${linkAudio(mp3=/audio/EiderRiffs/riff_1.mp3)}
-${linkAudio(mp3=/audio/EiderRiffs/riff_2.mp3)}
-${linkAudio(mp3=/audio/EiderRiffs/riff_3.mp3)}
-${linkAudio(mp3=/audio/EiderRiffs/riff_4.mp3)}
-${linkAudio(mp3=/audio/EiderRiffs/riff_5.mp3)}
-${linkAudio(mp3=/audio/EiderRiffs/riff_6.mp3)}
-${linkAudio(mp3=/audio/EiderRiffs/riff_7.mp3)}
-${linkAudio(mp3=/audio/EiderRiffs/riff_8.mp3)}
-${linkAudio(mp3=/audio/EiderRiffs/riff_9.mp3)}
-${linkAudio(mp3=/audio/EiderRiffs/riff_10.mp3)}
+${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_1.mp3)}
+${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_2.mp3)}
+${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_3.mp3)}
+${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_4.mp3)}
+${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_5.mp3)}
+${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_6.mp3)}
+${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_7.mp3)}
+${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_8.mp3)}
+${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_9.mp3)}
+${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_10.mp3)}

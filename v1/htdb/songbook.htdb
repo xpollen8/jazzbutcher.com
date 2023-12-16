@@ -16,6 +16,6 @@
 	</div>
 </div>
 <div style="max-width: 350px; flex: 1">
-	<a href="/images/songbook/cover.jpg"><img src="/images/songbook/cover_500.jpg"/></a>
+	<a href="${jbc_images}/songbook/cover.jpg"><img src="${jbc_images}/songbook/cover_500.jpg"/></a>
 </div>
 	</div>

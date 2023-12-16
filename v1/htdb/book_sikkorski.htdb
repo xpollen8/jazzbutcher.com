@@ -13,6 +13,6 @@
 	</div>
 </div>
 <div style="max-width: 350px; flex: 1">
-	<a href="/images/book_sikkorski.jpg"><img src="/images/book_sikkorski_500.jpg"/></a>
+	<a href="${jbc_images}/book_sikkorski.jpg"><img src="${jbc_images}/book_sikkorski_500.jpg"/></a>
 </div>
 	</div>

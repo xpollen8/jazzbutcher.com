@@ -439,8 +439,8 @@ ${d}
 	${addPress(type=interview,
 		url=${jbc_press}/198503_press_goforgold3_germany.html,
 		publication=Go For Gold #3,
-		thumb=/images/198503_press_goforgold3_germany_1,
-		images=/images/198503_press_goforgold3_germany_2$$/images/198503_press_goforgold3_germany_3$$,
+		thumb=${jbc_images}/198503_press_goforgold3_germany_1,
+		images=${jbc_images}/198503_press_goforgold3_germany_2$$${jbc_images}/198503_press_goforgold3_germany_3$$,
 		source=https://archive.org/details/go-for-gold-03-85-luedenscheid-fanzine-851/page/n15/mode/2up?q=%22Jazz+Butcher%22,
 		credit=Any More & Gil,
 		location=Ludenscheid\, Germany,
@@ -451,7 +451,7 @@ ${d}
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20180206_press_magnetmagazine.html,
 		publication=Magnet Magazine,
-		thumb=/images/releases/fire_wasted/JazzButcherGroupBW2,
+		thumb=${jbc_images}/releases/fire_wasted/JazzButcherGroupBW2,
 		credit=Corey duBrowa,
 		title=Essential New Music,
 		headline=The Jazz Butcher’s “The Wasted Years”,
@@ -461,7 +461,7 @@ ${d}
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/20160227_press_magnetmagazine.html,
 		publication=Magnet Magazine,
-		thumb=/images/20170406/20170406_group;;Matt Wallis,
+		thumb=${jbc_images}/20170406/20170406_group;;Matt Wallis,
 		credit=Corey duBrowa,
 		title=Essential New Music,
 		headline=The Jazz Butcher’s “Last Of The Gentleman Adventurers”,
@@ -471,7 +471,7 @@ ${d}
 	${addPress(type=album, album=bacon,
 		url=${jbc_press}/19820905_press_mercuryandherald.html,
 		publication=Mercury And Herald,
-		thumb=/images/19820905/19820905_press_mercuryandherald;;Philip Snow;;;;2022-06-02,
+		thumb=${jbc_images}/19820905/19820905_press_mercuryandherald;;Philip Snow;;;;2022-06-02,
 		todo=OCR,
 		location=Northampton\, UK,
 		credit=Alex Dawson,
@@ -484,7 +484,7 @@ ${d}
 	${addPress(type=gig,
 		url=${jbc_press}/19891128_press_gateway.html,
 		publication=The Gateway,
-		images=/images/19891128/19891128_press_gateway,
+		images=${jbc_images}/19891128/19891128_press_gateway,
 		location=Alberta\, Canada,
 		title=Butcher in creative trouble,
 		credit=Greg Pohl,
@@ -495,7 +495,7 @@ ${d}
 	${addPress(type=gig,
 		url=${jbc_press}/19831008_press_mercuryandherald.html,
 		publication=Mercury And Herald,
-		thumb=/images/19831008/19831008_press_mercuryandherald;;Philip Snow;;;;2022-06-02,
+		thumb=${jbc_images}/19831008/19831008_press_mercuryandherald;;Philip Snow;;;;2022-06-02,
 		todo=OCR,
 		location=Northampton\, UK,
 		title=The gift of music,
@@ -534,8 +534,8 @@ ${d}
 
 	${addPress(type=gig,
 		url=${jbc_press}/20150420_press_dirtyrock.html,
-		thumb=/images/20150417/20150417_pestano_Pat-Fish-en-el-16-Toneladas-de-Valencia;;Juan Carlos Pestano;;https://www.litelestudio.com/$$,
-		images=/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-16-Toneladas-de-Valencia$$/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas-de-Valencia-2015$$/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas-de-Valencia$$/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas$$/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-Valencia$$,
+		thumb=${jbc_images}/20150417/20150417_pestano_Pat-Fish-en-el-16-Toneladas-de-Valencia;;Juan Carlos Pestano;;https://www.litelestudio.com/$$,
+		images=${jbc_images}/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-16-Toneladas-de-Valencia$$${jbc_images}/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas-de-Valencia-2015$$${jbc_images}/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas-de-Valencia$$${jbc_images}/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas$$${jbc_images}/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-Valencia$$,
 		publication=Dirty Rock Magazine,
 		title=THE JAZZ BUTCHER (PAT FISH),
 		headline=EN EL 25 ANIVERSARIO DEL PROGRAMA DE RADIO LOS 39 SONIDOS EN EL 16 TONELADAS DE VALENCIA,
@@ -549,7 +549,7 @@ ${d}
 
 	${addPress(type=profile,
 		url=${jbc_press}/20190526_press_creationrecords.html,
-		thumb=/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807,
+		thumb=${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040807,
 		publication=Creation Records,
 		title=Pat Fish of The Jazz Butcher ‘has been unwell’,
 		headline=Pat Fish of The Jazz Butcher is currently recovering from an unspecified illness earlier this year\, his recovery has meant that he is unable to work at present.,
@@ -559,7 +559,7 @@ ${d}
 
 	${addPress(type=interview;podcast,
 		url=${jbc_press}/20210905_press_funhouse.html,
-		media=/images/20210905/20210905_pat_interview.docx;;Extended text document,
+		media=${jbc_images}/20210905/20210905_pat_interview.docx;;Extended text document,
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20210905_interview_PaulMcGuire_TheFunhouse88.mp3,
 		publication=The Funhouse,
 		title=Episode #88,
@@ -570,7 +570,7 @@ ${d}
 
 	${addPress(type=interview;radio, person=pat;pete,
 		url=${jbc_press}/19920516_interview_WNUR.html,
-		audio=http://jazzbutcher.com/audio/19920516/19920516_JazzButcher_WNUR_Gen0.mp3;;The Interview$$;;Angels::1$$;;Take The Skinheads Bowling::2,
+		audio=${jbc_audio}/19920516/19920516_JazzButcher_WNUR_Gen0.mp3;;The Interview$$;;Angels::1$$;;Take The Skinheads Bowling::2,
 		location=Chicago\, Illinois\, USA,
 		publication=WNUR,
 		title=Radio interview,
@@ -580,7 +580,7 @@ ${d}
 
 	${addPress(type=interview;radio,
 		url=${jbc_press}/19901119_interview_KTBS.html,
-		audio=http://jazzbutcher.com/audio/19901119/19901119_JazzButcher_KTBS_Gen1_Flat.mp3;;The Interview,
+		audio=${jbc_audio}/19901119/19901119_JazzButcher_KTBS_Gen1_Flat.mp3;;The Interview,
 		location=Austin\, Texas\, USA,
 		publication=KTBS,
 		credit=Robert Jacob,
@@ -590,7 +590,7 @@ ${d}
 
 	${addPress(type=interview;radio, person=pat;pete,
 		url=${jbc_press}/19930215_interview_paris.html,
-		audio=http://jazzbutcher.com/audio/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3;;The Interview::1::In French$$;;Partytime::2$$;;Angels::3$$;;Mr. Odd::4$$;;Goodnight Irene::5$$,
+		audio=${jbc_audio}/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3;;The Interview::1::In French$$;;Partytime::2$$;;Angels::3$$;;Mr. Odd::4$$;;Goodnight Irene::5$$,
 		location=Paris\, France,
 		publication=French National Radio,
 		title=French-language interview,
@@ -602,7 +602,7 @@ ${d}
 
 	${addPress(type=interview;radio,
 		url=${jbc_press}/19920425_interview_WRAS.html,
-		audio=http://jazzbutcher.com/audio/19920425/19920425_JazzButcher_WRAS_Gen1_Flat.mp3;;The Interview,
+		audio=${jbc_audio}/19920425/19920425_JazzButcher_WRAS_Gen1_Flat.mp3;;The Interview,
 		publication=WRAS,
 		location=Atlanta\, Georgia\, USA,
 		title=WRAS Radio Interview,
@@ -614,7 +614,7 @@ ${d}
 
 	${addPress(type=interview;radio, person=dooj;pat,
 		url=${jbc_press}/19920426_interview_WXYC.html,
-		audio=http://jazzbutcher.com/audio/19920426/19920426_JazzButcher_WXYC_Gen0_Flat.mp3;;The Interview,
+		audio=${jbc_audio}/19920426/19920426_JazzButcher_WXYC_Gen0_Flat.mp3;;The Interview,
 		publication=WXYC,
 		location=Chapel Hill\, North Carolina\, USA,
 		title=WXYC Radio Interview,
@@ -627,7 +627,7 @@ ${d}
 
 	${addPress(type=interview;radio,
 		url=${jbc_press}/19920506_interview_CBC.html,
-		audio=http://jazzbutcher.com/audio/19920506/19920506_JazzButcher_CBC_Gen0_Flat.mp3;;The Interview,
+		audio=${jbc_audio}/19920506/19920506_JazzButcher_CBC_Gen0_Flat.mp3;;The Interview,
 		publication=CBC,
 		location=Toronto\, Canada,
 		title=CBC Radio Interview,
@@ -654,8 +654,8 @@ ${d}
 
 	${addPress(type=interview,
 		url=${jbc_press}/201812_press_bigstir5.html,
-		thumb=/images/201812/201812_press_bigstir5;;David Whittemore,
-		images=/images/201812/201812_press_bigstir5_inside1$$/images/201812/201812_press_bigstir5_inside2,
+		thumb=${jbc_images}/201812/201812_press_bigstir5;;David Whittemore,
+		images=${jbc_images}/201812/201812_press_bigstir5_inside1$$${jbc_images}/201812/201812_press_bigstir5_inside2,
 		publication=Big Stir Magazine,
 		title=Steve Wilson talks to PAT FISH,
 		location=Burbank\, CA\, USA,
@@ -665,7 +665,7 @@ ${d}
 
 	${addPress(type=interview,
 		url=${jbc_press}/19900411_alterock.html,
-		thumb=/images/19900411/19900411_alterock;;David Whittemore,
+		thumb=${jbc_images}/19900411/19900411_alterock;;David Whittemore,
 		publication=Alterock,
 		title=Jazz Butcher,
 		location=Budapest\, Hungary,
@@ -688,8 +688,8 @@ ${d}
 
 	${addPress(type=interview, person=pat;max,
 		url=${jbc_press}/19860718_press_backgroundmediumproductions.html,
-		thumb=/images/19860718/19860718_press_backgroundmediumproductions_1,
-		images=/images/19860718/19860718_press_backgroundmediumproductions_2,
+		thumb=${jbc_images}/19860718/19860718_press_backgroundmediumproductions_1,
+		images=${jbc_images}/19860718/19860718_press_backgroundmediumproductions_2,
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19860718_JazzButcher_interview_backgroundmediumproductions.mp3;;The Interview,
 		publication=Background Medium Productions,
 		title=Background Noise Productions,
@@ -720,7 +720,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=gig,
 		url=${jbc_press}/198306_all_that_thinks_and_moves_2.html,
 		publication=All That Thinks And Moves #2,
-		thumb=/images/198306/198306_all_that_thinks_and_moves_2;;David Whittemore,
+		thumb=${jbc_images}/198306/198306_all_that_thinks_and_moves_2;;David Whittemore,
 		credit=Neil Cooper,
 		source=https://twitter.com/NeilCooper1,
 		datetime=1983-04-19 20:30:00,
@@ -730,8 +730,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=preshow;interview,
 		url=${jbc_press}/20170406_lastdaydeaf.html,
 		publication=Last Day Deaf,
-		thumb=/images/20170406/20170406_group;;Mat Wallis,
-		images=/images/20140822/20140822_johncannon_pat;;John Cannon$$/images/20150417/20150417_clubbed;;Leighton Bobby Cousins,
+		thumb=${jbc_images}/20170406/20170406_group;;Mat Wallis,
+		images=${jbc_images}/20140822/20140822_johncannon_pat;;John Cannon$$${jbc_images}/20150417/20150417_clubbed;;Leighton Bobby Cousins,
 		credit=Christos Doukakis,
 		source=http://lastdaydeaf.com/the-jazz-butcher-quartet/,
 		datetime=2017-04-08 20:00:00,
@@ -739,7 +739,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=welove,
 		url=${jbc_press}/19901013_press_nme.html,
-		thumb=/images/19901013/19901013_press_nme;;David Whittemore,
+		thumb=${jbc_images}/19901013/19901013_press_nme;;David Whittemore,
 		todo=OCR,
 		publication=New Music Express,
 		credit=HM The Queen,
@@ -749,7 +749,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=welove,
 		url=${jbc_press}/19900919_press_nme.html,
-		thumb=/images/19900919/19900919_press_nme;;David Whittemore,
+		thumb=${jbc_images}/19900919/19900919_press_nme;;David Whittemore,
 		publication=New Music Express,
 		credit=HM The Queen,
 		dt=1990-09-19,
@@ -780,7 +780,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=dist,
 		url=${jbc_press}/198703_press_rockdelux.html,
-		images=/images/198703/198703_press_rockdelux;;David Whittemore,
+		images=${jbc_images}/198703/198703_press_rockdelux;;David Whittemore,
 		credit=Ricardo Aldarondo,
 		publication=Rock Delux,
 		location=Spain,
@@ -790,8 +790,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=preshow;kit,
 		url=${jbc_press}/19900308_press.html,
-		thumb=/images/19900308/19900308_poster;;Pierre Guillaume,
-		images=/images/19900308/19900308_press;;Pierre Guillaume,
+		thumb=${jbc_images}/19900308/19900308_poster;;Pierre Guillaume,
+		images=${jbc_images}/19900308/19900308_press;;Pierre Guillaume,
 		title=Universal Club Postcard,
 		location=Madrid\, Spain,
 		datetime=1990-03-08,
@@ -799,7 +799,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=preshow;interview,
 		url=${jbc_press}/19901109_press_guelph.html,
-		thumb=/images/19901109/19901109_press,
+		thumb=${jbc_images}/19901109/19901109_press,
 		todo=OCR,
 		publication=Newspaper,
 		title=Jazz Butcher comes up from the basement,
@@ -810,7 +810,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19901105_press_minneapolis.html,
-		thumb=/images/19901105/19901105_press,
+		thumb=${jbc_images}/19901105/19901105_press,
 		todo=OCR,
 		publication=Newspaper,
 		title=Gig clipping,
@@ -822,7 +822,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19870210_press_BestOfRockNRollFolkMagazine.html,
 		todo=OCR,
-		images=/images/19870210/19870210_press_BestOfRockNRollFolkMagazine;;Pierre Guillaume,
+		images=${jbc_images}/19870210/19870210_press_BestOfRockNRollFolkMagazine;;Pierre Guillaume,
 		publication=Best of Rock n Roll Folk Magazine,
 		title=Gig clipping,
 		location=France,
@@ -831,7 +831,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19930221_press_BestOfRockNRollFolkMagazine.html,
-		thumb=/images/19930221/19930221_press_BestOfRockNRollFolkMagazine;;Pierre Guillaume,
+		thumb=${jbc_images}/19930221/19930221_press_BestOfRockNRollFolkMagazine;;Pierre Guillaume,
 		publication=Best of Rock n Roll Folk Magazine,
 		todo=OCR,
 		title=Gig clipping,
@@ -841,7 +841,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19930216_press_LiberationNewspaper.html,
-		images=/images/19930216/19930216_press_LiberationNewspaper;;Pierre Guillaume,
+		images=${jbc_images}/19930216/19930216_press_LiberationNewspaper;;Pierre Guillaume,
 		publication=Liberation Newspaper,
 		todo=OCR,
 		title=Gig clipping,
@@ -851,7 +851,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19931115_press_lEstRepublicainNewspaper.html,
-		images=/images/19931115/19931115_press_lEstRepublicainNewspaper;;Pierre Guillaume,
+		images=${jbc_images}/19931115/19931115_press_lEstRepublicainNewspaper;;Pierre Guillaume,
 		publication=l'Est Republicain Newspaper,
 		todo=OCR,
 		title=Gig clipping,
@@ -862,8 +862,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=gig,
 		url=${jbc_press}/20170503_popnews.html,
 		publication=Pop News,
-		thumb=/images/20170415/20170415_popnews1,
-		images=/images/20170415/20170415_popnews2$$/images/20170415/20170415_popnews3$$/images/20170415/20170415_popnews4$$/images/20170415/20170415_popnews5$$/images/20170415/20170415_popnews6$$/images/20170415/20170415_popnews7$$/images/20170415/20170415_popnews8$$/images/20170415/20170415_popnews9,
+		thumb=${jbc_images}/20170415/20170415_popnews1,
+		images=${jbc_images}/20170415/20170415_popnews2$$${jbc_images}/20170415/20170415_popnews3$$${jbc_images}/20170415/20170415_popnews4$$${jbc_images}/20170415/20170415_popnews5$$${jbc_images}/20170415/20170415_popnews6$$${jbc_images}/20170415/20170415_popnews7$$${jbc_images}/20170415/20170415_popnews8$$${jbc_images}/20170415/20170415_popnews9,
 		title=The Jazz Butcher and The Jasmine Minks,
 		headline=The Lexington,
 		subhead=London\, April 15\, 201,
@@ -878,19 +878,19 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=Wilson Warfare,
 		headline=RETURN TO THE ARK,
 		subhead=BEHOLD\, LITTLE WARFARE PUNTERS.  THEY COME IN BLACK TO MESS WITH YOUR HEADS.,
-		thumb=/images/wilson/warfare/image002,
-		images=/images/wilson/warfare/misery$$/images/wilson/warfare/eman$$/images/wilson/warfare/bottie$$/images/wilson/warfare/russ$$/images/wilson/warfare/stevieg$$/images/wilson/warfare/headstone$$,
+		thumb=${jbc_images}/wilson/warfare/image002,
+		images=${jbc_images}/wilson/warfare/misery$$${jbc_images}/wilson/warfare/eman$$${jbc_images}/wilson/warfare/bottie$$${jbc_images}/wilson/warfare/russ$$${jbc_images}/wilson/warfare/stevieg$$${jbc_images}/wilson/warfare/headstone$$,
 		dt=2004-05-12)}
 
 	${addPress(type=pat;wilson,
 		url=${jbc_press}/20040512_wilson_about.html,
-		images=/images/wilson/warfare/image002$$/images/20020131/20020131_wilson_boatrace;;;;;;;;Wilson at the Boatrace in Cambridge\, 31Jan2002,
+		images=${jbc_images}/wilson/warfare/image002$$${jbc_images}/20020131/20020131_wilson_boatrace;;;;;;;;Wilson at the Boatrace in Cambridge\, 31Jan2002,
 		title=About Wilson,
 		dt=2004-05-12)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/20200925_press_melomania.html,
-		thumb=/images/20200925/20200925_press_melomania,
+		thumb=${jbc_images}/20200925/20200925_press_melomania,
 		publication=MELOMANIA,
 		title=AN INTERVIEW WITH PAT FISH,
 		headline=The stories he could tell. Mr. Fish will be sorely missed.,
@@ -902,7 +902,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=interview;album, album=human,
 		url=${jbc_press}/19851109_press_nme.html,
-		thumb=/images/19851109/19851109_press_nme,
+		thumb=${jbc_images}/19851109/19851109_press_nme,
 		publication=New Music Express,
 		credit=Mick Mercer,
 		source=https://twitter.com/nothingelseon/status/1286213134357639168/photo/1,
@@ -911,7 +911,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=sex,
 		url=${jbc_press}/19850615_press_nme.html,
-		thumb=/images/19850615/19850615_press_nme,
+		thumb=${jbc_images}/19850615/19850615_press_nme,
 		title=THE JAZZ BUTCHER,
 		headline=Sex And Travel,
 		subhead=(Glass),
@@ -923,19 +923,19 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=interview,
 		url=${jbc_press}/19860808_press_nerve.html,
-		thumb=/images/19860808/19860808_press_nerve,
+		thumb=${jbc_images}/19860808/19860808_press_nerve,
 		publication=Nerve #27,
 		title=the joy of BUTCHERY,
 		location=Toronto\, Ontario\, Canada,
 		credit=Helen Lee,
 		source=https://archive.org/details/1986_08_August_Nerve_27/page/n3/mode/2up?q=%22Jazz+Butcher%22&view=theater,
-		images=/images/19860808/19860808_MikeDyer_PatFish_Negative_1$$/images/19860808/19860808_MikeDyer_PatFish_Negative_2$$/images/19860808/19860808_MikeDyer_PatFish_Negative_3$$/images/19860808/19860808_MikeDyer_PatFish_Negative_4;;Mike Dyer;;;;2023-10-25,
+		images=${jbc_images}/19860808/19860808_MikeDyer_PatFish_Negative_1$$${jbc_images}/19860808/19860808_MikeDyer_PatFish_Negative_2$$${jbc_images}/19860808/19860808_MikeDyer_PatFish_Negative_3$$${jbc_images}/19860808/19860808_MikeDyer_PatFish_Negative_4;;Mike Dyer;;;;2023-10-25,
 		dt=1986-08-08,
 		added=2023-09-08)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/19850302_press_nme.html,
-		thumb=/images/19850302/19850302_press_nme,
+		thumb=${jbc_images}/19850302/19850302_press_nme,
 		publication=New Music Express,
 		credit=William Leith,
 		title=THIS MEAT IS MURDER,
@@ -946,7 +946,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=gig,
 		url=${jbc_press}/19850112_press_nme.html,
-		thumb=/images/19850112/19850112_press_nme,
+		thumb=${jbc_images}/19850112/19850112_press_nme,
 		publication=New Music Express,
 		credit=Bruce Dessau,
 		source=https://twitter.com/nothingelseon/status/1252870405653532681/photo/1,
@@ -956,7 +956,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/202201_press_uncut.html,
-		images=/images//202201/202201_press_uncut,
+		images=${jbc_images}//202201/202201_press_uncut,
 		title=The Jazz Butcher,
 		headline=The Highest in the Land,
 		todo=OCR,
@@ -990,7 +990,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=interview,
 		url=${jbc_press}/20200504_press_popnews.html,
 		title= Mes chansons n’ont pas toujours été bien comprise,
-		thumb=/images/20200504/20200504_press_popnews_garden,
+		thumb=${jbc_images}/20200504/20200504_press_popnews_garden,
 		publication=Pop News,
 		location=France,
 		credit=Vincent Arquillière,
@@ -1023,7 +1023,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=preshow;kit;eg,
 		url=${jbc_press}/94eg.html,
-		thumb=/images/19940601/19940601_flyer,
+		thumb=${jbc_images}/19940601/19940601_flyer,
 		title=A press release received from those slavic sensations BLACK EG,
 		headline=Do not miss this,
 		subhead=your life could depend upon it,
@@ -1088,8 +1088,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211007_press_illlive.html,
-		thumb=/images/20211007/20211007_press_illlive_6;;Sandra Boynton;;;;;;${literalizeCommas(Sandra, I promise, I will absolutely try. But it will take a while to get over this one. Rest well, Pat)},
-		images=/images/20211007/20211007_press_illlive_1;;Deborah Wassertzug;;$$/images/20211007/20211007_press_illlive_2;;Deborah Wassertzug;;;;;;${literalizeCommas(Commenting on the song “Hysteria“)}$$/images/20211007/20211007_press_illlive_3;;Deborah Wassertzug;;;;;;${literalizeCommas(Commenting on an article I’d posted about Uber, with a fantastic anecdote)}$$/images/20211007/20211007_press_illlive_4;;Deborah Wassertzug;;;;;;${literalizeCommas(Attempting to resolve my debate about a word to use in a translation)}$$/images/20211007/20211007_press_illlive_5;;Deborah Wassertzug;;;;;;${literalizeCommas(Joining a debate about Velvet Underground lyrics)}$$
+		thumb=${jbc_images}/20211007/20211007_press_illlive_6;;Sandra Boynton;;;;;;${literalizeCommas(Sandra, I promise, I will absolutely try. But it will take a while to get over this one. Rest well, Pat)},
+		images=${jbc_images}/20211007/20211007_press_illlive_1;;Deborah Wassertzug;;$$${jbc_images}/20211007/20211007_press_illlive_2;;Deborah Wassertzug;;;;;;${literalizeCommas(Commenting on the song “Hysteria“)}$$${jbc_images}/20211007/20211007_press_illlive_3;;Deborah Wassertzug;;;;;;${literalizeCommas(Commenting on an article I’d posted about Uber, with a fantastic anecdote)}$$${jbc_images}/20211007/20211007_press_illlive_4;;Deborah Wassertzug;;;;;;${literalizeCommas(Attempting to resolve my debate about a word to use in a translation)}$$${jbc_images}/20211007/20211007_press_illlive_5;;Deborah Wassertzug;;;;;;${literalizeCommas(Joining a debate about Velvet Underground lyrics)}$$
 		,
 		title=Making Me Understand,
 		headline=Pat Fish of the Jazz Butcher Conspiracy,
@@ -1122,7 +1122,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220210_press_bucketfullofbrains.html,
-		thumb=/images/2021_PressRelease_PatFish2_RuthTidmarsh;;Ruth Tidmarsh,
+		thumb=${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;Ruth Tidmarsh,
 		title=The Jazz Butcher,
 		headline=The Highest In The Land,
 		publication=Bucketfuill of Brains,
@@ -1177,7 +1177,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=smith,
 		url=${jbc_press}/20130330_press_mojo.html,
-		images=/images/20130330/20130330_press_mojo,
+		images=${jbc_images}/20130330/20130330_press_mojo,
 		title=The UK Indie Top 100 Records,
 		headline=The Jazz Butcher,
 		subhead=Southern Mark Smith,
@@ -1199,7 +1199,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211006_press_postpunk.html,
-		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
+		thumb=${jbc_images}/19891119/19891119_del_patsat;;David Whittemore,
 		title=The Jazz Butcher,
 		headline=Pat Fish Has Passed Away,
 		publication=post-punk.com,
@@ -1210,7 +1210,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211112_press_mojo.html,
-		images=/images/20211112/20211112_press_mojo;;Glass Modern;;https://twitter.com/glassmodern1/status/1459187934049947650,
+		images=${jbc_images}/20211112/20211112_press_mojo;;Glass Modern;;https://twitter.com/glassmodern1/status/1459187934049947650,
 		title=The Jazz Butcher,
 		headline=Gentleman adventurer,
 		subhead=Born 1957,
@@ -1223,7 +1223,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=retrospective,
 		url=${jbc_press}/20220405_press_monolithcocktail.html,
 		title=Kalporz X Monolith Cocktail,
-		thumb=/images/releases/nonsense_front,
+		thumb=${jbc_images}/releases/nonsense_front,
 		headline=Celebrating The Legacy Of Pat Fish,
 		subhead=A Special by Matteo Maioli,
 		publication=Monolith Cocktail,
@@ -1320,7 +1320,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20230202_press_apessimistisneverdisappointed_highest.html,
-		thumb=/images/2021_PressRelease_PatFish2_RuthTidmarsh;;Ruth Tidmarsh,
+		thumb=${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;Ruth Tidmarsh,
 		title=Running On Fumes,
 		headline=A Brief Review Of The New Album From The Jazz Butcher,
 		publication=A Pessimist Is Never Disappointed,
@@ -1342,7 +1342,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=fire_violent,
 		url=${jbc_press}/20180308_press_apessimistisneverdisappointed_violent.html,
-		thumb=/images/releases/fire_wasted/JazzButcherGroupBW1,
+		thumb=${jbc_images}/releases/fire_wasted/JazzButcherGroupBW1,
 		title=Next Move Sideways,
 		headline=A Few Words About The New Jazz Butcher Box From Fire Records,
 		publication=A Pessimist Is Never Disappointed,
@@ -1354,8 +1354,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171015_press_apessimistisneverdisappointed_wasted.html,
 		title=Big Bad Thing,
-		thumb=/images/releases/fire_wasted/JazzButcherGroupBW1,
-		images=/images/releases/fire_wasted/JazzButcherGroupPatFishBW1$$/images/releases/fire_wasted/JazzButcherGroupBW2,
+		thumb=${jbc_images}/releases/fire_wasted/JazzButcherGroupBW1,
+		images=${jbc_images}/releases/fire_wasted/JazzButcherGroupPatFishBW1$$${jbc_images}/releases/fire_wasted/JazzButcherGroupBW2,
 		headline=A Few Words About The Fine New Jazz Butcher Box From Fire Records,
 		publication=A Pessimist Is Never Disappointed,
 		source=http://www.apessimistisneverdisappointed.com/2017/10/big-bad-thing-few-words-about-fine-new.html,
@@ -1365,8 +1365,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=interview;album, album=fire_wasted,
 		url=${jbc_press}/20171002_bandcamp.html,
-		thumb=/images/releases/fire_wasted/JazzButcherGroupPatFishBW1,
-		images=/images/releases/fire_wasted/JazzButcherGroupBW1$$/images/releases/fire_wasted/JazzButcherGroupBW2$$/images/releases/fire_wasted/jazzbutcher-600$$,
+		thumb=${jbc_images}/releases/fire_wasted/JazzButcherGroupPatFishBW1,
+		images=${jbc_images}/releases/fire_wasted/JazzButcherGroupBW1$$${jbc_images}/releases/fire_wasted/JazzButcherGroupBW2$$${jbc_images}/releases/fire_wasted/jazzbutcher-600$$,
 		title=The Jazz Butcher's Indie Pop Genesis,
 		publication=Bandcamp Daily,
 		source=https://daily.bandcamp.com/2017/10/02/the-jazz-butchers-indie-pop-genesis,
@@ -1375,8 +1375,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211006_press_jericsmith.html,
-		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
-		images=/images/20211006/20211006_press_jericsmith;;Katelin Smith;;;;;; I just told Katelin about Pat’s passing and she sent me a photo of Max’s kind gift,
+		thumb=${jbc_images}/19891119/19891119_del_patsat;;David Whittemore,
+		images=${jbc_images}/20211006/20211006_press_jericsmith;;Katelin Smith;;;;;; I just told Katelin about Pat’s passing and she sent me a photo of Max’s kind gift,
 		title=Only A Rumour,
 		headline=Pat Fish (The Jazz Butcher),
 subhead=(20 December 1957 – 5 October 2021),
@@ -1388,7 +1388,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211007_press_nme.html,
-		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
+		thumb=${jbc_images}/19891119/19891119_del_patsat;;David Whittemore,
 		title=Pat Fish, AKA The Jazz Butcher, has died aged 64,
 		headline=The former Creation Records artist died earlier this week,
 		publication=NME,,
@@ -1399,7 +1399,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211007_press_louderthanwar.html,
-		thumb=/images/20211007/20211007_press_louderthatwar;;Matt Condon,
+		thumb=${jbc_images}/20211007/20211007_press_louderthatwar;;Matt Condon,
 		title=Pat Fish aka The Jazz Butcher,
 		headline=an appreciation,
 		subhead=Farewell to the Last of the Gentleman Adventurers,
@@ -1423,7 +1423,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211017_magnetmagazine.html,
 		title=KEEPING THE CURTAINS CLOSED,
-		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
+		thumb=${jbc_images}/19891119/19891119_del_patsat;;David Whittemore,
 		headline=R.I.P,
 		subhead=The Jazz Butcher,
 		publication=Magnet Magazine,
@@ -1456,13 +1456,13 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=interview;album, album=adventurers,
 		url=${jbc_press}/20160219_press_recordcollector.html,
-		images=/images/20160219/20160219_press_recordcollector,
+		images=${jbc_images}/20160219/20160219_press_recordcollector,
 		publication=The Record Collector,
 		dt=2016-02-19)}
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/20160218_press_bigtakeover_print.html,
-		images=/images/2016/2016_press_bigtakeover_print,
+		images=${jbc_images}/2016/2016_press_bigtakeover_print,
 		publication=The Big Takeover (print),
 		title=the jazz butcher,
 		headline=LAST OF THE GENTLEMEN ADVENTURERS (FIRE),
@@ -1534,7 +1534,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220208_press_popmatters.html,
 		credit=John Bergstrom,
-		thumb=/images/2021_PressRelease_PatFish2_RuthTidmarsh;;Ruth Tidmarsh,
+		thumb=${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;Ruth Tidmarsh,
 		title=THE JAZZ BUTCHER’S FINAL ALBUM IS ‘THE HIGHEST IN THE LAND’,
 		headline=The final\, sadly posthumous album from the great Pat Fish (aka the Jazz Butcher) shows the British indie-pop legend was taken much too soon.,
 		publication=Pop Matters,
@@ -1585,8 +1585,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=2014-11-12 21:00:00,
 		dt=2014-11-12 18:00:00,
 		credit=Julio Ruiz,
-		images=/images/20141112/20141112_JazzButcher_madrid_radio1$$/images/20141112/20141112_JazzButcher_madrid_radio2$$/images/20141112/20141112_JazzButcher_madrid_radio3$$/images/20141112/20141112_JazzButcher_madrid_radio4$$,
-		audio=/audio/20141112/20141112_JazzButcher_JulioRuiz_Interview_Edit.mp3;;The Interview::1$$http://jazzbutcher.com/audio/20141112/20141112_Madrid_MelanieHargreavesFathersJaguar.mp3;;Melanie Hargreaves' Father's Jaguar::2$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20141112/20141112_RTVE_MelanieHargreave.mp4;;Melanie Hargreaves' Father's Jaguar::2$$;;Girlfriend::3$$,
+		images=${jbc_images}/20141112/20141112_JazzButcher_madrid_radio1$$${jbc_images}/20141112/20141112_JazzButcher_madrid_radio2$$${jbc_images}/20141112/20141112_JazzButcher_madrid_radio3$$${jbc_images}/20141112/20141112_JazzButcher_madrid_radio4$$,
+		audio=${jbc_audio}/20141112/20141112_JazzButcher_JulioRuiz_Interview_Edit.mp3;;The Interview::1$$${jbc_audio}/20141112/20141112_Madrid_MelanieHargreavesFathersJaguar.mp3;;Melanie Hargreaves' Father's Jaguar::2$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20141112/20141112_RTVE_MelanieHargreave.mp4;;Melanie Hargreaves' Father's Jaguar::2$$;;Girlfriend::3$$,
 		annotation=${literalizeCommas(
 		Live on the air with Julio Ruiz, the "Espanish John Peel". National radio, six in the evening. He played lots of tunes from Gentleman Adventurers. I played "Melanie Hargreaves' Father's Jaguar" and "Girlfriend". For the interview I had an interpreter. At one point she failed to translate whatever Julio said but it involved the words "Kevin Ayers, Lou Reed, Bob Dylan..." I enjoyed that bit, though, now I come to think about it, he was probably saying "This bloke is not as good as..."
 		)};;Pat Fish;;;;2014-11-26 21:00:01$$,
@@ -1597,8 +1597,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Wine Merchants,
 		title=D2D Interview,
 		headline=Pat Fish,
-		thumb=/images/fishco2,
-		images=/images/western2;;Tom Peterson,
+		thumb=${jbc_images}/fishco2,
+		images=${jbc_images}/western2;;Tom Peterson,
 		location=USA,
 		dt=2015-02-02 03:52:00,
 		credit=David Driscoll,
@@ -1607,7 +1607,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/2014_louderthanwar.html,
 		source=http://louderthanwar.com/the-butch-is-back-the-return-of-the-jazz-butcher/,
-		thumb=/images/20140920/20140920_poster,
+		thumb=${jbc_images}/20140920/20140920_poster,
 		publication=Louder Than War,
 		title=The Butch is Back… the return of The Jazz Butcher!,
 		dt=2014-09-18,
@@ -1620,7 +1620,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Apollox Magazine,
 		title=Fish heads,
 		headline=(& tales),
-		media=/images/200505_apollox_PatFishCrocodileTearsInterview.doc;;Andrew's original .doc,
+		media=${jbc_images}/200505_apollox_PatFishCrocodileTearsInterview.doc;;Andrew's original .doc,
 		location=UK,
 		credit=${brooksbank},
 		added=2017-07-30,
@@ -1631,7 +1631,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Apollox Magazine,
 		title=Alex Green & The Sinister Ducks,
 		headline=An Interview,
-		media=/images/1995_apollox_AlexGreenInterview.doc;;Andrew's original .doc,
+		media=${jbc_images}/1995_apollox_AlexGreenInterview.doc;;Andrew's original .doc,
 		location=UK,
 		credit=${brooksbank},
 		added=2017-07-30,
@@ -1667,7 +1667,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview,preshow,
 		url=${jbc_press}/interview_metrotimes_12Apr2000.html,
 		credit=Chris Handyside,
-		thumb=/images/20000412_metrotimes,
+		thumb=${jbc_images}/20000412_metrotimes,
 		publication=Metro Times,
 		title=Chatting up the Butch,
 		location=Detroit\, MI\, USA,
@@ -1699,7 +1699,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview;album, album=blue,
 		url=${jbc_press}/92front_center.html,
 		credit=Jennifer Brown,
-		thumb=/images/19920508/19920508_press_frontcenter,
+		thumb=${jbc_images}/19920508/19920508_press_frontcenter,
 		publication=The Record Store Up Front And Center Issue #5,
 		title=Treading the line between dumb and stupid,
 		location=Waterloo\, Canada,
@@ -1708,7 +1708,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview,
 		url=${jbc_press}/91musicexpress.html,
 		credit=David Sprague,
-		thumb=/images/199101_press,
+		thumb=${jbc_images}/199101_press,
 		publication=Music Express Magazine,
 		title=The Jazz Butcher Vaulting Synapses,
 		location=Canada,
@@ -1716,10 +1716,10 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=interview,
 		url=${jbc_press}/90fishy.html,
-		thumb=/images/1990/1990_press_foaf_cover,
+		thumb=${jbc_images}/1990/1990_press_foaf_cover,
 		credit=Chris Fish,
-		thumb=/images/1990/1990_press_foaf_cover,
-		images=/images/1990/1990_press_foaf_1$$/images/1990/1990_press_foaf_2$$/images/1990/1990_press_foaf_3$$,
+		thumb=${jbc_images}/1990/1990_press_foaf_cover,
+		images=${jbc_images}/1990/1990_press_foaf_1$$${jbc_images}/1990/1990_press_foaf_2$$${jbc_images}/1990/1990_press_foaf_3$$,
 		publication=Far Out And Fishy Issue #4,
 		location=UK,
 		dt=1990)}
@@ -1727,7 +1727,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview;preshow,
 		source=https://numerique.banq.qc.ca/patrimoine/details/52327/3722981,
 		url=${jbc_press}/19891111_press_latribune.html,
-		thumb=/images/19891111/19891111_press_latribune,
+		thumb=${jbc_images}/19891111/19891111_press_latribune,
 		publication=La Tribune,
 		title=The Jazz Butcher,
 		headline=sous le signe de la fantaisie,
@@ -1742,8 +1742,8 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/milwaukee89.html,
 		publication=Kelly & Whittemore,
-		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
-		images=/images/19821101/19821101_poster,
+		thumb=${jbc_images}/19891119/19891119_del_patsat;;David Whittemore,
+		images=${jbc_images}/19821101/19821101_poster,
 		title=The Milwaukee Interview,
 		credit=David Whittemore & Brian Kelly,
 		location=Milwaukee\, WI\, USA,
@@ -1754,7 +1754,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=clipping,
 		url=${jbc_press}/1994_press_melodymaker.html,
-		images=/images/1994/1994_press_melodymaker;;Kevin Carroll;;;;,
+		images=${jbc_images}/1994/1994_press_melodymaker;;Kevin Carroll;;;;,
 		publication=Melody Maker,
 		todo=OCR,
 		title=Five Creation Oddities,
@@ -1766,7 +1766,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=gig,
 		url=${jbc_press}/19880813_press_melodymaker.html,
 		credit=Simon Reynolds,
-		thumb=/images/19880813/19880813_press_melodymaker;;Richard Bella;;;;,
+		thumb=${jbc_images}/19880813/19880813_press_melodymaker;;Richard Bella;;;;,
 		todo=OCR,
 		publication=Melody Maker,
 		title=Day Of Creation,
@@ -1778,7 +1778,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview,
 		url=${jbc_press}/88melody.html,
 		credit=C M,
-		thumb=/images/19881203/19881203_press_melodymaker,
+		thumb=${jbc_images}/19881203/19881203_press_melodymaker,
 		publication=Melody Maker,
 		title=Conspiracy Theories,
 		location=UK,
@@ -1787,7 +1787,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/88newsletter.html,
 		publication=The Newsletter Vol1 #7,
-		images=/images/fishco2;;;;;;,
+		images=${jbc_images}/fishco2;;;;;;,
 		title=Jazz Butcher Vs. New Community,
 		credit=Eric Beaumont,
 		location=Milwaukee\, WI\, USA,
@@ -1798,7 +1798,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/19840526_nme.html,
 		source=https://perseverancevinylique.wordpress.com/2017/07/24/the-godlike-genius-of-pat-fish-the-jazz-butcher/pat1/,
 		credit=Bruce Dessau,
-		thumb=/images/19840526/19840526_nme,
+		thumb=${jbc_images}/19840526/19840526_nme,
 		publication=New Music Express,
 		title=THE FISH AND I,
 		headline=BRUCE DESSAU hears THE JAZZ BUTCHER's beef,
@@ -1819,8 +1819,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/86contrast.html,
 		credit=Laura Smith & Randy Bookasta,
 		publication=Contrast,
-		thumb=/images/pat_contrast1;;Greg Allen,
-		images=/images/owen_contrast;;Greg Allen$$/images/felix_contrast1;;Greg Allen$$/images/felix_contrast2;;Greg Allen$$/images/max_contrast;;Greg Allen$$/images/pat_contrast2;;Greg Allen$$,
+		thumb=${jbc_images}/pat_contrast1;;Greg Allen,
+		images=${jbc_images}/owen_contrast;;Greg Allen$$${jbc_images}/felix_contrast1;;Greg Allen$$${jbc_images}/felix_contrast2;;Greg Allen$$${jbc_images}/max_contrast;;Greg Allen$$${jbc_images}/pat_contrast2;;Greg Allen$$,
 		title=The Jazz Butcher vs the USA,
 		location=USA,
 		datetime=1986-08-14,
@@ -1829,7 +1829,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview,
 		url=${jbc_press}/85abstract.html,
 		credit=Josh,
-		thumb=/images/198503/198503_abstract5,
+		thumb=${jbc_images}/198503/198503_abstract5,
 		publication=Abstract Magazine,
 		title=Issue #5,
 		dt=1985-03)}
@@ -1843,7 +1843,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=gig,
 		url=${jbc_press}/19880603_press_bostonrock.html,
-		images=/images/19880603/19880603_press_bostonrock,
+		images=${jbc_images}/19880603/19880603_press_bostonrock,
 		credit=S.J. Hurley,
 		title=THE JAZZ BUTCHER,
 		headline=TT the Bears Place - Boston,
@@ -1854,7 +1854,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19990923_press_villagevoice.html,
-		thumb=/images/19990923/19990923_press_villagevoice;;Pat Fish Notebook,
+		thumb=${jbc_images}/19990923/19990923_press_villagevoice;;Pat Fish Notebook,
 		credit=Eddy,
 		todo=OCR,
 		publication=Village Voice,
@@ -1864,7 +1864,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19990916_press_seattle_rocket.html,
-		images=/images/19990916/19990916_press_seattle_rocket;;Pat Fish Notebook,
+		images=${jbc_images}/19990916/19990916_press_seattle_rocket;;Pat Fish Notebook,
 		todo=OCR,
 		credit=Tizzy Asher,
 		publication=The Rocket,
@@ -1874,7 +1874,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19990916_press_seattle.html,
-		images=/images/19990916/19990916_press_seattle;;Pat Fish Notebook,
+		images=${jbc_images}/19990916/19990916_press_seattle;;Pat Fish Notebook,
 		todo=OCR,
 		credit=Barara Mitchell,
 		publication=Up & Coming,
@@ -1884,7 +1884,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19990923_press_timeout.html,
-		images=/images/19990923/19990923_press_timeout,
+		images=${jbc_images}/19990923/19990923_press_timeout,
 		todo=OCR,
 		credit=Dev Sherlock,
 		publication=Timeout,
@@ -1894,7 +1894,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=profile,
 		url=${jbc_press}/92rider.html,
-		thumb=/images/pat_party;;David Whittemore;;;;1989-12-20,
+		thumb=${jbc_images}/pat_party;;David Whittemore;;;;1989-12-20,
 		credit=Suzanne Lis,
 		publication=Ryder Magazine,
 		title=The Distressed Gentlefolk,
@@ -1903,7 +1903,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/19920422_press_athensflagpole.html,
-		images=/images/19920422/19920422_press_athensflagpole,
+		images=${jbc_images}/19920422/19920422_press_athensflagpole,
 		credit=Hillary Meister,
 		publication=Flagpole Magazine,
 		title=Cult of the Jazz Butcher,
@@ -1913,7 +1913,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=wilson;gig;kit,
 		url=${jbc_press}/20031016_wilson.html,
-		thumb=/images/20031016/20031016_press,
+		thumb=${jbc_images}/20031016/20031016_press,
 		credit=Headstone,
 		todo=OCR,
 		title=Wilson Play London,
@@ -1923,7 +1923,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=profile,
 		url=${jbc_press}/trouser.html,
 		credit=Altricia Gethers & Doug Brod,
-		thumb=/images/pat_plays;;DavidWhittemore,
+		thumb=${jbc_images}/pat_plays;;DavidWhittemore,
 		publication=Trouser Press 4th edition,
 		source=http://www.trouserpress.com,
 		dt=1990)}
@@ -1947,7 +1947,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=kit,
 		url=${jbc_press}/95promo.html,
 		credit=Vanessa Cotton at Creation,
-		thumb=/images/95promo,
+		thumb=${jbc_images}/95promo,
 		dt=1995,
 		title=Creation Records Promo)}
 
@@ -1968,7 +1968,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=kit,
 		url=${jbc_press}/95promo_yearly.html,
 		credit=Vanessa Cotton at Creation,
-		thumb=/images/95promo,
+		thumb=${jbc_images}/95promo,
 		dt=1995,
 		title=Creation Records Promo,
 		headline=Year By Year
@@ -1976,7 +1976,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=kit,
 		url=${jbc_press}/92biography.html,
-		thumb=/images/promo2,
+		thumb=${jbc_images}/promo2,
 		dt=1992,
 		title=Sky Records Promo,
 		headline=The Jazz Butcher Biography
@@ -1985,7 +1985,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=kit,
 		url=${jbc_press}/91biography.html,
 		dt=1991,
-		thumb=/images/promo1,
+		thumb=${jbc_images}/promo1,
 		title=Creation Records Promo,
 		headline=The Jazz Butcher Biography
 		)}
@@ -2002,7 +2002,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=THE J.B. POST-INTELLIGENCER,
 		dt=1998-04-01,
 		added=2022-08-21,
-		thumb=/images/19980401/19980401_press_postintelligencer;;Jimmy Duval;;https://twitter.com/jimmyduval;;2022-08-21,
+		thumb=${jbc_images}/19980401/19980401_press_postintelligencer;;Jimmy Duval;;https://twitter.com/jimmyduval;;2022-08-21,
 		headline=The Newsletter Of The Group That Doesn't Exist,
 		subhead=Volume 1\, Issue 1,
 	)}
@@ -2013,7 +2013,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		added=2022-08-21,
 		thumb=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Sumosonic/19980401_Sumosonic_Promo_Trio;;Jimmy Duval;;https://twitter.com/jimmyduval;;2022-08-21
 	)}
-	${addPress(type=pat;kit, url=${jbc_press}/94stop_press.html, title=Stop Press, dt=1994-05-20, thumb=/images/19940520/19940520_press)}
+	${addPress(type=pat;kit, url=${jbc_press}/94stop_press.html, title=Stop Press, dt=1994-05-20, thumb=${jbc_images}/19940520/19940520_press)}
 	${addPress(type=pat;album, url=${jbc_letters}/93Aug30/albums.html, dt=1993-08-30, title=Pat Reviews His Own Records)}
 	${addPress(type=pat;album, album=bus, url=${jbc_letters}/93Aug30/love.html, dt=1993-08-30, title=Letters From Pat - 1993-08-30: Cultural guidance notes issued to the U.K. press)}
 	${addPress(type=album, url=${jbc_press}/disclaimerband.html, credit=Willie, source=http://www.disclaimerband.com/j.html, publication=Disclaimer, title=Music Review - All The Albums, dt=2001)}
@@ -2051,7 +2051,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=fishco,
 		url=${jbc_press}/19880303_press_gwu_hatcher.html,
-		images=/images/19880303/19880303_press_gwu_hatchet;;David Whittemore,
+		images=${jbc_images}/19880303/19880303_press_gwu_hatchet;;David Whittemore,
 		credit=Tim Walker,
 		source=https://archive.org/details/gwu_hatchet_19880303/page/n9/mode/2up?q=%22Jazz+Butcher%22,
 		publication=Hatchet\, George Washington University,
@@ -2062,7 +2062,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=fishco,
 		url=${jbc_press}/19880316_press_defender.html,
-		thumb=/images/19880316/19880316_press_defender;;David Whittemore,
+		thumb=${jbc_images}/19880316/19880316_press_defender;;David Whittemore,
 		credit=Kate Flaherty,
 		source=https://archive.org/details/defender10sain_14/page/8/mode/2up?q=%22Jazz+Butcher%22,
 		publication=The Defender\, Saint Michael's College,
@@ -2073,7 +2073,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=fishco,
 		url=${jbc_press}/89mirror.html,
-		thumb=/images/1989/1989_press_recordmirror;;David Whittemore,
+		thumb=${jbc_images}/1989/1989_press_recordmirror;;David Whittemore,
 		title=The Jazz Butcher,
 		credit=Chris Histed,
 		publication=Record Mirror,
@@ -2082,7 +2082,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=planet,
 		url=${jbc_press}/89sounds.html,
-		thumb=/images/19890729/19890729_press_sounds;;David Whittemore,
+		thumb=${jbc_images}/19890729/19890729_press_sounds;;David Whittemore,
 		credit=Robin Gibson,
 		publication=Sounds,
 		title=Scarey monster!,
@@ -2091,7 +2091,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=planet,
 		url=${jbc_press}/89spiral.html,
-		thumb=/images/198910/198910_press_spiralscratch,
+		thumb=${jbc_images}/198910/198910_press_spiralscratch,
 		credit=Dominic Mohan,
 		publication=Spiral Scratch,
 		location=UK,
@@ -2099,7 +2099,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=interview;album, album=cult,
 		url=${jbc_press}/90melody.html,
-		thumb=/images/19900707/19900707_press_melodymaker,
+		thumb=${jbc_images}/19900707/19900707_press_melodymaker,
 		credit=Chris Roberts,
 		publication=Melody Maker,
 		location=UK,
@@ -2107,7 +2107,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=gig,
 		url=${jbc_press}/19900317_press_melodymaker.html,
-		thumb=/images/19900226/19900226_press_melodymaker;;Paul Blinkhorn;;;;,
+		thumb=${jbc_images}/19900226/19900226_press_melodymaker;;Paul Blinkhorn;;;;,
 		credit=Sharon O'Connell,
 		publication=Melody Maker,
 		title=THE JAZZ BUTCHER,
@@ -2160,7 +2160,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=blue,
 		url=${jbc_press}/91select.html,
-		thumb=/images/199112/199112_press_select,
+		thumb=${jbc_images}/199112/199112_press_select,
 		credit=David Cavanagh,
 		publication=Select Magazine,
 		location=UK,
@@ -2215,7 +2215,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=bus,
 		url=${jbc_press}/94cash.html,
-		thumb=/images/19940416/19940416_cashbox,
+		thumb=${jbc_images}/19940416/19940416_cashbox,
 		publication=Cash Box,
 		location=USA,
 		dt=1994-04-16)}
@@ -2299,7 +2299,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Rachel McGrath,
 		publication=NN Journal,
 		location=Northampton\, England,
-		images=/images/20130615/20130615_GregHiggings_Pat;;Greg Higgins;;;;;;New York\, 2013$$/images/20180804/20180804_pat;;;;;;;;Playing at the Albion Bar Brewery in Northampton\, 2018$$/images/19891119/19891119_del_patsat;;David Whittemore;;;;;;Milwaukee\, Wisconsin\, USA 1989$$,
+		images=${jbc_images}/20130615/20130615_GregHiggings_Pat;;Greg Higgins;;;;;;New York\, 2013$$${jbc_images}/20180804/20180804_pat;;;;;;;;Playing at the Albion Bar Brewery in Northampton\, 2018$$${jbc_images}/19891119/19891119_del_patsat;;David Whittemore;;;;;;Milwaukee\, Wisconsin\, USA 1989$$,
 		title=Pat Fish obituary,
 		headline=Founder of the Jazz Butcher music outfit and pop’s ‘Last of the Gentleman Adventurers’ was UK music’s best kept secret,
 		source=https://www.nnjournal.co.uk/p/pat-fish-obituary,
@@ -2335,7 +2335,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Bill Kopp,
 		location=USA,
 		publication=Musoscribe Bootleg Bin,
-		thumb=/images/19970919/bandg,
+		thumb=${jbc_images}/19970919/bandg,
 		title=Bootleg Bin: Jazz Butcher – Bob & Anne’s Wedding Reception,
 		source=http://blog.musoscribe.com/index.php/2011/10/14/bootleg-bin-jazz-butcher-bob-annes-wedding-reception/,
 		dt=2011-10-14,
@@ -2351,7 +2351,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20221005_ink19_jazz_butcher_society.html,
-		thumb=/images/19891119/19891119_del_patsat;;David Whittemore,
+		thumb=${jbc_images}/19891119/19891119_del_patsat;;David Whittemore,
 		title=The Jazz Butcher Society,
 		headline=Remembering Pat Fish,
 		subhead=(1957-2021),
@@ -2376,7 +2376,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=album, album=glorious,
 		url=${jbc_press}/popculturecorn.html,
 		credit=Jay Nagy,
-		images=/images/reviews/popculturecorn_com;;David Whittemore,
+		images=${jbc_images}/reviews/popculturecorn_com;;David Whittemore,
 		publication=Pop Culture Corn,
 		dt=2000-06)}
 
@@ -2393,8 +2393,8 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=pat,
 		url=${jbc_press}/20020709_starindia.html,
 		title=Star of India restaurant review,
-		thumb=/images/star_india/Bodrul,
-		images=/images/star_india/StarScrap;;Pat;;;;2002-07-09;;${literalizeCommas(In 1988 that I managed to take this top snap of Paul Mulreany and Laurence O'Keefe rioting at the table)},
+		thumb=${jbc_images}/star_india/Bodrul,
+		images=${jbc_images}/star_india/StarScrap;;Pat;;;;2002-07-09;;${literalizeCommas(In 1988 that I managed to take this top snap of Paul Mulreany and Laurence O'Keefe rioting at the table)},
 		summary=${literalizeCommas(Northampton's Star of India restaurant is dearly loved by the artist)},
 		dt=2002-07-09)}
 
@@ -2414,8 +2414,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/kelly_20th_tour.html,
 		title=Brian Kelly reports,
 		headline=the 20th anniversary tour,
-		thumb=/images/20020613/2002Jun13_JBC1;;Brian Kelly,
-		images=/images/20020611/2002Jun11_JBC;;Brian Kelly,
+		thumb=${jbc_images}/20020613/2002Jun13_JBC1;;Brian Kelly,
+		images=${jbc_images}/20020611/2002Jun11_JBC;;Brian Kelly,
 		subhead=June 8-19\, 2002,
 		dt=2002-06-20)}
 
@@ -2469,7 +2469,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=preshow,profile,
 		url=${jbc_press}/article_metrotimes_12Apr2000.html,
 		credit=Chris Handyside,
-		thumb=/images/20000412_metrotimes,
+		thumb=${jbc_images}/20000412_metrotimes,
 		publication=Metro Times,
 		title=Chatting up the Butch,
 		headline=Sex and travel,
@@ -2497,7 +2497,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=REGULAR\, ENGLISH SPEAKING GENTLEMEN…,
 		headline=DAVID J / PAT FISH (THE JAZZ BUTCHER),
 		subhead=MANCHESTER ACADEMY 3,
-		images=/images/20191024/20191024_brooksbank_manchester_davidj;;${brooksbank}$$/images/20191024/20191024_brooksbank_manchester_davidj_karel$$,
+		images=${jbc_images}/20191024/20191024_brooksbank_manchester_davidj;;${brooksbank}$$${jbc_images}/20191024/20191024_brooksbank_manchester_davidj_karel$$,
 		location=Manchester\, England,
 		dt=2019-10-24 19:30:00,
 		datetime=2019-10-24 19:30:00)}
@@ -2528,7 +2528,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/96observer.html,
 		title=He's in Hollywood's hottest film,
 		headline=So why is he boozing in Sheperd's Bush?,
-		images=/images/19960820/live_20Aug96_2;;Jimmy Duval;;;;$$/images/19960820/live_20Aug96;;Jimmy Duval;;;;,
+		images=${jbc_images}/19960820/live_20Aug96_2;;Jimmy Duval;;;;$$${jbc_images}/19960820/live_20Aug96;;Jimmy Duval;;;;,
 		publication=The Observer,
 		location=UK,
 		credit=Campbell Stevenson,
@@ -2539,7 +2539,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/20171020_magic_revue_206.html,
 		credit=Cédric Rouquette,
 		publication=Magic Revue #206,
-		thumb=/images/20171020/20171020_magic_revue_206;;David Whittemore,
+		thumb=${jbc_images}/20171020/20171020_magic_revue_206;;David Whittemore,
 		location=France,
 		dt=2017-10-20,
 		added=2017-10-31)}
@@ -2551,7 +2551,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=THE JAZZ BUTCHER,
 		headline=The Wasted Years,
 		subhead=FIRE RECORDS,
-		images=/images/201710/201710_press_abus,
+		images=${jbc_images}/201710/201710_press_abus,
 		location=France,
 		dt=2017-10,
 		added=2017-10-31)}
@@ -2559,16 +2559,16 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview;album, album=adventurers,
 		url=${jbc_press}/201604_press_abus.html,
 		credit=Bertrand Lamargelle,
-		images=/images/201604/201604_press_abus_inside,
-		media=/images/201604/201604_press_abus_transcription.doc;;The original french .doc of this interview,
+		images=${jbc_images}/201604/201604_press_abus_inside,
+		media=${jbc_images}/201604/201604_press_abus_transcription.doc;;The original french .doc of this interview,
 		publication=Abus Dangereux #138,
-		thumb=/images/201604/201604_press_abus_cover,
+		thumb=${jbc_images}/201604/201604_press_abus_cover,
 		location=France,
 		dt=2016-04)}
 
 	${addPress(type=profile;interview;album, album=fishco,
 		url=${jbc_press}/198902_press_howl_germany.html,
-		images=/images/198902_press_howl_germany_1$$/images/198902_press_howl_germany_2,
+		images=${jbc_images}/198902_press_howl_germany_1$$${jbc_images}/198902_press_howl_germany_2,
 		credit=Thomas Lasarzik,
 		publication=Howl #2,
 		title=The Jazz Butcher,
@@ -2579,7 +2579,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/2016_press_rollingstone_germany.html,
-		images=/images/2016/2016_press_rollingstone_germany,
+		images=${jbc_images}/2016/2016_press_rollingstone_germany,
 		credit=Sebastian Zabel,
 		publication=Rolling Stone,
 		title=Beautiful comeback album by the jingling Bohemians from Oxford,
@@ -2588,7 +2588,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/2016_press_germany.html,
-		images=/images/2016/2016_press_germany,
+		images=${jbc_images}/2016/2016_press_germany,
 		credit=Thomas Bärnthaler,
 		publication=Unknown Print Review,
 		location=Germany,
@@ -2596,7 +2596,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/2016_press_blowup.html,
-		images=/images/2016/2016_press_blowup,
+		images=${jbc_images}/2016/2016_press_blowup,
 		credit=Stefano I. Bianchi,
 		publication=Blow Up,
 		location=Italy,
@@ -2605,7 +2605,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/92toronto.html,
 		credit=Mike Stennis,
-		thumb=/images/19920509/19920509_press,
+		thumb=${jbc_images}/19920509/19920509_press,
 		publication=Toronto Performer,
 		title=Jazz Butcher's Conditioned Response,
 		location=Toronto\, Canada,
@@ -2614,7 +2614,7 @@ subhead=(20 December 1957 – 5 October 2021),
 			
 	${addPress(type=preshow;interview,
 		url=${jbc_press}/19920527_press_vancouverprovince.html,
-		thumb=/images/19920527/19920527_press_vancouverprovince,
+		thumb=${jbc_images}/19920527/19920527_press_vancouverprovince,
 		credit=Tom Harrison,
 		publication=The Province,
 		title=Jazz Butcher Feeling Moody\, Blue,
@@ -2626,7 +2626,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=preshow;interview,
 		url=${jbc_press}/92ottawa.html,
 		credit=Roch Parisien,
-		thumb=/images/19920507/19920507_press,
+		thumb=${jbc_images}/19920507/19920507_press,
 		publication=The Ottawa Citizen,
 		title=British Popster Fights The Good Fight To Put Some Literacy Back Into Lyrics,
 		location=Ottawa\, Ontario\, Canada,
@@ -2636,7 +2636,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview;preshow, album=blue,
 		url=${jbc_press}/19920527_press_vancouversun.html,
 		credit=John Mackie,
-		thumb=/images/19920527/19920527_press_vancouversun,
+		thumb=${jbc_images}/19920527/19920527_press_vancouversun,
 		publication=Vancouver Sun,
 		title=Butchered relationship fascinates Fish,
 		location=Vancouver\, British Columbia\, Canada,
@@ -2646,7 +2646,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/92montreal.html,
 		credit=Paul Wells,
-		thumb=/images/19920506/19920506_press,
+		thumb=${jbc_images}/19920506/19920506_press,
 		publication=Monteal Gazette,
 		title=Jazz Butcher Slicing,
 		headline=Dicing Expectations,
@@ -2857,7 +2857,7 @@ subhead=(20 December 1957 – 5 October 2021),
 #live	endif
 #live	if (defined(${prefix}->album))
 ##live		if (getval(${prefix}->album) != ${${prefix}->prevAlbum})
-			<br/><a href="${${prefix}->url}"><img style="max-width: 50px;" src="/images/releases/${${prefix}->album}_250.jpg"></a>
+			<br/><a href="${${prefix}->url}"><img style="max-width: 50px;" src="${jbc_images}/releases/${${prefix}->album}_250.jpg"></a>
 ##live		endif
 		<br/><span class="smalltext">${${${prefix}->album}}</span>
 #live	endif
@@ -8690,7 +8690,7 @@ Ottawa for a show the following Monday at Barrymores
 
 	Suddenly, and very coincidentally, "Heaven" by Robyn Hitchcock comes on the stereo.
 
-	${linkAudio(mp3=https://jazzbutcher.com/audio/19891119/19891119_JBC_MilwaukeeInterview_Hitchcock.mp3)}
+	${linkAudio(mp3=${jbc_audio}/19891119/19891119_JBC_MilwaukeeInterview_Hitchcock.mp3)}
 
 	<div class="iview_a"> (Incensed, screaming) GO AWAY! LEAVE ME
 	ALONE! LEAVE ME ALONE! I'LL DO ANYTHING JUST LEAVE ME ALONE!
@@ -10257,7 +10257,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/bath.jpg">
+	<img src="${jbc_images}/bath.jpg">
 	</div>
 	<p />
 	${bacon}
@@ -10287,7 +10287,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/scandal_front.jpg">
+	<img src="${jbc_images}/scandal_front.jpg">
 	</div>
 	<p />
 	${scandal}
@@ -10325,7 +10325,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/gift.jpg">
+	<img src="${jbc_images}/gift.jpg">
 	</div>
 	<p />
 	${gift1}
@@ -10352,7 +10352,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/sex_front.jpg">
+	<img src="${jbc_images}/sex_front.jpg">
 	</div>
 	<p />
 	${sex}
@@ -10377,7 +10377,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/releases/nonsense_front_500.jpg">
+	<img src="${jbc_images}/releases/nonsense_front_500.jpg">
 	</div>
 	<p />
 	${nons}
@@ -10403,7 +10403,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/gentle.jpg">
+	<img src="${jbc_images}/gentle.jpg">
 	</div>
 	<p />
 	${dist}
@@ -10424,7 +10424,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/releases/gift2_front_500.jpg">
+	<img src="${jbc_images}/releases/gift2_front_500.jpg">
 	</div>
 	<p />
 	${gift2}
@@ -10451,7 +10451,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/fishco.jpg">
+	<img src="${jbc_images}/fishco.jpg">
 	</div>
 	<p />
 	${fishco}
@@ -10471,7 +10471,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/planet.jpg">
+	<img src="${jbc_images}/planet.jpg">
 	</div>
 	<p />
 	${planet}
@@ -10487,7 +10487,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/cult.jpg">
+	<img src="${jbc_images}/cult.jpg">
 	</div>
 	<p />
 	${cult}
@@ -10506,7 +10506,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/releases/blue_front_500.jpg">
+	<img src="${jbc_images}/releases/blue_front_500.jpg">
 	</div>
 	<p />
 	${blue}
@@ -10525,7 +10525,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/lovebus.jpg">
+	<img src="${jbc_images}/lovebus.jpg">
 	</div>
 	<p />
 	${bus}
@@ -10539,7 +10539,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 	</div>
 	<div class="listItem">
 	<div style="max-width: 500px;">
-	<img src="/images/front_rotten_soul.jpg">
+	<img src="${jbc_images}/front_rotten_soul.jpg">
 	</div>
 	<p />
 	${rotten}
@@ -11748,7 +11748,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 		<br />June 14, 2002</b>
 		</a>
 	</div>
-	<a href="/images/20020614/2002Jun14_nuremburg4.jpg"><img src="/images/20020614/2002Jun14_nuremburg4_500.jpg"></a>
+	<a href="${jbc_images}/20020614/2002Jun14_nuremburg4.jpg"><img src="${jbc_images}/20020614/2002Jun14_nuremburg4_500.jpg"></a>
 	<p />
 		It is incredible how different each and every day is.
 	<p />
@@ -11816,7 +11816,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 		<br />June 16, 2002</b>
 		</a>
 	</div>
-	<a href="/images/20020616/2002Jun16_pat.jpg"><img src="/images/20020616/2002Jun16_pat_500.jpg"></a>
+	<a href="${jbc_images}/20020616/2002Jun16_pat.jpg"><img src="${jbc_images}/20020616/2002Jun16_pat_500.jpg"></a>
 	<p />
 		When we last left our heroes...We were in Bielefeld, which was
 	 kind of a downer...but what a difference a day makes!
@@ -11907,7 +11907,7 @@ And frankly, that's okay with them. Says Pat Fish "Personally I measure
 		<br />June 18, 2002</b>
 		</a>
 	</div>
-	<a href="/images/20020618/2002Jun18_JBC4.jpg"><img src="/images/20020618/2002Jun18_JBC4_500.jpg"></a>
+	<a href="${jbc_images}/20020618/2002Jun18_JBC4.jpg"><img src="${jbc_images}/20020618/2002Jun18_JBC4_500.jpg"></a>
 	<p />
 		Owen's Birthday and the gig in Ypres. I sang Owen the ComedySportz
 	 birthday song, which he enjoyed (I guess if you've never heard

@@ -719,9 +719,9 @@
 	<p>
 	<a name="penguins">
 	${penguin}</a>
-	<img ALIGN=MIDDLE height=59 width=52 src="${images}/penguin.gif">
-	<img ALIGN=MIDDLE height=59 width=52 src="${images}/penguin.gif">
-	<img ALIGN=MIDDLE height=59 width=52 src="${images}/penguin.gif">
+	<img ALIGN=MIDDLE height=59 width=52 src="${jbc_images}/penguin.gif">
+	<img ALIGN=MIDDLE height=59 width=52 src="${jbc_images}/penguin.gif">
+	<img ALIGN=MIDDLE height=59 width=52 src="${jbc_images}/penguin.gif">
 	<blockquote>
 		In the most desolate place in the world they are standing
 		in large numbers.  They are out there doing it now.

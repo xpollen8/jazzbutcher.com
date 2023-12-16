@@ -1,6 +1,6 @@
 #define	index.html
 	${mkHeader(section=Sumosonic)}
-	<img src="https://v1.jazzbutcher.com/images/sumosonic_logo_50.png"/>
+	<img src="${jbc_images}/sumosonic_logo_50.png"/>
 	${beg_tabs}
 	${begTab(About)}
 	<div class="annotation">

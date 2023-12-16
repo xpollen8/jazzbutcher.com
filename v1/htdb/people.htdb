@@ -61,7 +61,7 @@
 #live	endif
 
 #live	if (defined(images))
-#live		if (define(_PX->images, ${images}))
+#live		if (define(_PX->images, ${jbc_images}))
 	${begTab(Gallery)}
 		<blockquote>
 			${parseImages(prefix=_PX, field=images)}
@@ -343,7 +343,7 @@ ${define(range[${z}]->end,)}
 	${mkPeopleHeader(title=Colin Harris,
 		roles=Drums on misc European and English live dates,
 		projects=Black Eg,
-		images=/images/egdebut;;David Whittemore;;;;1994-06-01;;Colin\, being abused by Karel$$,
+		images=${jbc_images}/egdebut;;David Whittemore;;;;1994-06-01;;Colin\, being abused by Karel$$,
 		bio=${literalizeCommas( He's a drum machine, ok?)}
 	)}
 	${people_footer}
@@ -386,7 +386,7 @@ ${define(range[${z}]->end,)}
 #define	alice_thompson.html
 #live	if (getval(page) = alice_thompson.html)
 	${mkPeopleHeader(title=Alice Thompson,
-		images=/images/alice_thompson_2000,
+		images=${jbc_images}/alice_thompson_2000,
 		bio=${literalizeCommas(
 			BIOGRAPHY
 			<p />
@@ -402,7 +402,7 @@ ${define(range[${z}]->end,)}
 #define	dave_henderson.html
 #live	if (getval(page) = dave_henderson.html)
 	${mkPeopleHeader(title=Dave Henderson,
-		images=/images/people/20180220_Barker_DaveHenderson;;Dave Barker;;;;2018-02-20 10:53:00;;Henderson (left) with Barker,
+		images=${jbc_images}/people/20180220_Barker_DaveHenderson;;Dave Barker;;;;2018-02-20 10:53:00;;Henderson (left) with Barker,
 	)}
 
 	${people_footer}
@@ -528,7 +528,7 @@ ${define(range[${z}]->end,)}
 	${mkPeopleHeader(title=David E. Barker, bio=${literalizeCommas(
 
 		${w_role} Producer (Glass Records)
-		<a href="/images/20170528/20170528_barker.jpg"><img src="/images/20170528/20170528_barker_500.jpg"></a>
+		<a href="${jbc_images}/20170528/20170528_barker.jpg"><img src="${jbc_images}/20170528/20170528_barker_500.jpg"></a>
 		<br/>
 		${barker} (right), with ${pat} & ${rolo}.
 		${g_credit(g=${barker}, u=${jbc_gigs}/20170528_1630.html, d=2017-05-28 16:30:00)}
@@ -642,7 +642,7 @@ ${define(range[${z}]->end,)}
 			src="${jbc_images}/stebbing_doorway_1993_250.jpg"></a>
 		${g_credit(g=${del})}
 
-		<a href="/images/people/20220714_WonderBat9_Photobook_MartinStebbing.jpg"><img src="/images/people/20220714_WonderBat9_Photobook_MartinStebbing_500.jpg" alt="Botus"></a>
+		<a href="${jbc_images}/people/20220714_WonderBat9_Photobook_MartinStebbing.jpg"><img src="${jbc_images}/people/20220714_WonderBat9_Photobook_MartinStebbing_500.jpg" alt="Botus"></a>
 		${g_credit(g=wonderbat9 , u=https://youtu.be/a6SzTBA7WG8?t=182, d=2022-07-14)}
 		${w_where} Chicago, Illinios.
 		Martin works freelance as a studio recording
@@ -782,8 +782,8 @@ ${define(range[${z}]->end,)}
 	${mkPeopleHeader(title=Pat Fish, bio=${literalizeCommas(
 
 		<div style="text-align: center;">
-			<a href="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807.jpg">
-			<img src="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807_500.jpg"></a>
+			<a href="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040807.jpg">
+			<img src="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040807_500.jpg"></a>
 			${g_credit(g=\@PlanetruthPictures)}
 		</div>
 		<div class="listItem">
@@ -812,37 +812,37 @@ ${define(range[${z}]->end,)}
 
 	${begTab(Gallery)}
 	<div style="text-align: center;">
-		<a href="/images/20211006_portrait.jpg"> <img src="/images/20211006_portrait_500.jpg" alt="portrait"></a>
+		<a href="${jbc_images}/20211006_portrait.jpg"> <img src="${jbc_images}/20211006_portrait_500.jpg" alt="portrait"></a>
 			${g_credit(g=Dave E. Barker)}
 		<br/>
 		<br/>
-		<a href="/images/20171021/20171021_mattjolly_1_500.jpg">
-			<img src="/images/20171021/20171021_mattjolly_1_500.jpg"></a>
+		<a href="${jbc_images}/20171021/20171021_mattjolly_1_500.jpg">
+			<img src="${jbc_images}/20171021/20171021_mattjolly_1_500.jpg"></a>
 			${g_credit(g=Matt Jolly)}
 		<br/>
 		<br/>
-		<a href="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807.jpg">
-			<img src="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807_500.jpg"></a>
+		<a href="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040807.jpg">
+			<img src="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040807_500.jpg"></a>
 			${g_credit(g=\@PlanetruthPictures\, 2017)}
 		<br/>
 		<br/>
-		<a href="/images/20150501/20150501_vulpe_truax_gig.jpg">
-			<img src="/images/20150501/20150501_vulpe_truax_gig_500.jpg"></a>
+		<a href="${jbc_images}/20150501/20150501_vulpe_truax_gig.jpg">
+			<img src="${jbc_images}/20150501/20150501_vulpe_truax_gig_500.jpg"></a>
 			${g_credit(g=Anne Vulpe\, 2015)}
 		<br/>
 		<br/>
-		<a href="/images/2015_annavulpe_pat.jpg">
-			<img src="/images/2015_annavulpe_pat_500.jpg"></a>
+		<a href="${jbc_images}/2015_annavulpe_pat.jpg">
+			<img src="${jbc_images}/2015_annavulpe_pat_500.jpg"></a>
 			${g_credit(g=Anne Vulpe\, 2015)}
 		<br/>
 		<br/>
-		<a href="/images/20140822/20140822_johncannon_pat.jpg">
-			<img src="/images/20140822/20140822_johncannon_pat_500.jpg"></a>
+		<a href="${jbc_images}/20140822/20140822_johncannon_pat.jpg">
+			<img src="${jbc_images}/20140822/20140822_johncannon_pat_500.jpg"></a>
 			${g_credit(g=John Cannon\, 2014)}
 		<br/>
 		<br/>
-		<a href="/images/20121201/20121201_opal_krusch_patsmiles.jpg">
-			<img src="/images/20121201/20121201_opal_krusch_patsmiles_500.jpg"></a>
+		<a href="${jbc_images}/20121201/20121201_opal_krusch_patsmiles.jpg">
+			<img src="${jbc_images}/20121201/20121201_opal_krusch_patsmiles_500.jpg"></a>
 			${g_credit(g=opal_krusch\, 2012)}
 		<br/>
 		<br/>
@@ -871,18 +871,18 @@ ${define(range[${z}]->end,)}
 			${g_credit(g=${del}\, 1989)}
 		<br/>
 		<br/>
-		<a href="/images/19880611/19880611_del_cubbybear_11.jpg">
-			<img src="/images/19880611/19880611_del_cubbybear_11_500.jpg"></a>
+		<a href="${jbc_images}/19880611/19880611_del_cubbybear_11.jpg">
+			<img src="${jbc_images}/19880611/19880611_del_cubbybear_11_500.jpg"></a>
 			${g_credit(g=${del}\, 1988)}
 		<br/>
 		<br/>
-		<a href="/images/1985/1985_mitch_jenkins_hamburg_pat_fish.jpg">
-			<img src="/images/1985/1985_mitch_jenkins_hamburg_pat_fish_500.jpg"></a>
+		<a href="${jbc_images}/1985/1985_mitch_jenkins_hamburg_pat_fish.jpg">
+			<img src="${jbc_images}/1985/1985_mitch_jenkins_hamburg_pat_fish_500.jpg"></a>
 			${g_credit(g=${mitch}\, 1988\, Hamburg)}
 		<br/>
 		<br/>
-		<a href="/images/1981/1981_barker_tonix_1.jpg">
-			<img src="/images/1981/1981_barker_tonix_1_500.jpg"></a>
+		<a href="${jbc_images}/1981/1981_barker_tonix_1.jpg">
+			<img src="${jbc_images}/1981/1981_barker_tonix_1_500.jpg"></a>
 			<p>
 The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hammersmith, London in 1981 by myself. They opened for a group called English Subtitles, who I’d just done a single with. This was the first time I met Pat. I asked them if they’d do a track for a compilation LP I was working on, ‘The Wonderful World of Glass Volume 1’ and they did. My friend and former bandmate Ciaran Harte, who was kind of a house producer for the label at that time, had a Teac four track in his flat in a tower block in Plaistow, East London and they recorded it there on the 12th floor or something.
 			</p>
@@ -1107,15 +1107,15 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 #live	if (getval(page) = rolo_mcginty.html)
 	${mkPeopleHeader(title=Rolo McGinty, bio=${literalizeCommas(
 
-		<a href="/images/20060910/rolo_241487377_o.jpg"><img src="/images/20060910/rolo_241487377_o_250.jpg"></a>
+		<a href="${jbc_images}/20060910/rolo_241487377_o.jpg"><img src="${jbc_images}/20060910/rolo_241487377_o_250.jpg"></a>
 		<br/>
 		${g_credit(g=antisyzygy, u=${jbc_gigs}/2006/Sep10_2000.html, d=2006-09-10)}
 		<br/>
-		<a href="/images/20060913/rolo_242988391_o.jpg"><img src="/images/20060913/rolo_242988391_o_250.jpg"></a>
+		<a href="${jbc_images}/20060913/rolo_242988391_o.jpg"><img src="${jbc_images}/20060913/rolo_242988391_o_250.jpg"></a>
 		<br/>
 		${g_credit(g=antisyzygy, u=${jbc_gigs}/2006/Sep13_2030.html, d=2006-09-13)}
 		<br/>
-		<a href="/images/20170528/20170528_barker_rolo.jpg"><img src="/images/20170528/20170528_barker_rolo_250.jpg"></a>
+		<a href="${jbc_images}/20170528/20170528_barker_rolo.jpg"><img src="${jbc_images}/20170528/20170528_barker_rolo_250.jpg"></a>
 		<br/>
 		${g_credit(g=${barker}, u=${jbc_gigs}/20170528_1630.html, d=2017-05-28 16:30:00)}
 	)})}
@@ -1320,7 +1320,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 
 		<img src="${jbc_images}/people_curtis_johnson.jpg">
 		<p>
-		<a href="/images/20040213/romaniacs001.jpg"><img src="/images/20040213/romaniacs001_250.jpg"></a>
+		<a href="${jbc_images}/20040213/romaniacs001.jpg"><img src="${jbc_images}/20040213/romaniacs001_250.jpg"></a>
 		<p>
 		${aka_beg}
 		E-Man (${wilson})
@@ -1405,7 +1405,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 		bands, and it was then that he released that extraordinary first album.
 		<p>
 		Recorded in a Vienna church, ${linkAlbum(title=Wolfgang Tschegg)} is a record of astonishing simplicity, 
-		<img src="${images}/tschegg/tschegg_album3.jpg" width=150 height=150
+		<img src="${jbc_images}/tschegg/tschegg_album3.jpg" width=150 height=150
 			align=right alt='[wolfgang]'>
 		elegance and seductive power. Instrumentation is kept to an essential minimum: a fat 
 		Gibson 335, a harmonium, even a bassoon, used to devastating effect on ${linkSong(title=Dig)}.
@@ -1421,7 +1421,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 		confused with the offshoot of the British band Wire). Gernot is also involved with the 
 		Vienna Scientists group of DJs and producers who recently rocked The Limelight in New 
 		York.
-		<img src="${images}/tschegg/tschegg_album1.jpg" width=150 height=150
+		<img src="${jbc_images}/tschegg/tschegg_album1.jpg" width=150 height=150
 			align=left alt='[wolfgang]'>
 		<p>
 		Gernot brought his skills to Wolfgang's songs, resulting in what the duo called <i>Klare 
@@ -1439,7 +1439,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 		words of English and French drift through here and there).
 		A release on London's Octopus Record label is being discussed.
 		<p>
-		<img src="${images}/tschegg/tschegg_album2.jpg" width=150 height=150
+		<img src="${jbc_images}/tschegg/tschegg_album2.jpg" width=150 height=150
 			align=right alt='[wolfgang]'>
 		Through the arrangements the songs still shine simple, direct and affecting.  ${linkSong(title=Winter 
 		Kompakt)}, for which the duo have made a video, is as romantic a tune as Wolfgang has yet 
@@ -1487,11 +1487,11 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 #live	if (getval(page) = steve_garofalo.html)
 	${mkPeopleHeader(title=Steve Garofalo, bio=${literalizeCommas(
 
-		<a href="/images/20140822/20140822_johncannon_drums.jpg"><img
-			src="/images/20140822/20140822_johncannon_drums_500.jpg"></a>
+		<a href="${jbc_images}/20140822/20140822_johncannon_drums.jpg"><img
+			src="${jbc_images}/20140822/20140822_johncannon_drums_500.jpg"></a>
 		${g_credit(g=John Cannon)}
-		<a href="/images/people/SteveGarofalo.jpg"><img
-			src="/images/people/SteveGarofalo_500.jpg"></a>
+		<a href="${jbc_images}/people/SteveGarofalo.jpg"><img
+			src="${jbc_images}/people/SteveGarofalo_500.jpg"></a>
 		${w_role} Drummer, The Jazz Butcher Quartet
 	)})}
 	${people_footer}
@@ -1501,12 +1501,12 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 #live	if (getval(page) = steve_new.html)
 	${mkPeopleHeader(title=Steve New, bio=${literalizeCommas(
 
-		<a href="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040744.jpg"><img
-			src="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040744_500.jpg"></a>
+		<a href="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040744.jpg"><img
+			src="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040744_500.jpg"></a>
 		${g_credit(g=\@PlanetruthPictures)}
 		<p>
-		<a href="/images/20140822/20140822_johncannon_bass.jpg"><img
-			src="/images/20140822/20140822_johncannon_bass_500.jpg"></a>
+		<a href="${jbc_images}/20140822/20140822_johncannon_bass.jpg"><img
+			src="${jbc_images}/20140822/20140822_johncannon_bass_500.jpg"></a>
 		${g_credit(g=John Cannon)}
 		${w_role} Bass, The Jazz Butcher Quartet
 	)})}
@@ -1517,8 +1517,8 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 #live	if (getval(page) = simon_taylor.html)
 	${mkPeopleHeader(title=Simon Taylor, bio=${literalizeCommas(
 
-		<a href="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040792.jpg"><img
-			src="/images/20170415/20170415_JazzButcher_Tidmarsh_P1040792_500.jpg"></a>
+		<a href="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040792.jpg"><img
+			src="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040792_500.jpg"></a>
 		${g_credit(g=\@PlanetruthPictures)}
 		${w_role} Trumpet, The Jazz Butcher Quartet
 	)})}
@@ -1531,7 +1531,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 
 		<img src="http://wilsondub.com/images/bot.jpg">
 		<p>
-		<a href="/images/20040504/May4Bot.jpg"><img src="/images/20040504/May4Bot_250.jpg"></a>
+		<a href="${jbc_images}/20040504/May4Bot.jpg"><img src="${jbc_images}/20040504/May4Bot_250.jpg"></a>
 		<p>
 		${w_role} Voice, Programming
 		${aka_beg}
@@ -1562,7 +1562,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 #live	if (getval(page) = kathy_schaer.html)
 	${mkPeopleHeader(title=Kathy Schaer, bio=${literalizeCommas(
 
-		<img src="/images/wilson/warfare/misery.jpg">
+		<img src="${jbc_images}/wilson/warfare/misery.jpg">
 		${w_role} Bass, Voice
 		${aka_beg}
 		Misery (${wilson})
@@ -1582,8 +1582,8 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 #live	if (getval(page) = russell_cooper.html)
 	${mkPeopleHeader(title=Russell Cooper, bio=${literalizeCommas(
 
-		<img src="/images/wilson/warfare/russ.jpg">
-		<a href src="/images/20040430/BuilthRuss.jpg"><img src="/images/20040430/BuilthRuss_250.jpg"></a>
+		<img src="${jbc_images}/wilson/warfare/russ.jpg">
+		<a href src="${jbc_images}/20040430/BuilthRuss.jpg"><img src="${jbc_images}/20040430/BuilthRuss_250.jpg"></a>
 		${w_role} Percussion
 		${aka_beg}
 		Agent Wilson (${wilson})
@@ -1604,7 +1604,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 #live	if (getval(page) = steve_gordon.html)
 	${mkPeopleHeader(title=Steve Gordon, bio=${literalizeCommas(
 
-		<img src="/images/wilson/warfare/stevieg.jpg">
+		<img src="${jbc_images}/wilson/warfare/stevieg.jpg">
 		<img src="http://wilsondub.com/images/thanos.jpg">
 		${w_role} Guitar
 		${aka_beg}
@@ -1672,7 +1672,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 #define	dave_morgan.html
 #live	if (getval(page) = dave_morgan.html)
 	${mkPeopleHeader(title=Dave Morgan, bio=${literalizeCommas(
-		<a href="/images/2017_DaveMorgan.jpg"><img src="/images/2017_DaveMorgan_500.jpg"></a> ${g_credit(g=\@PlanetruthPictures)}
+		<a href="${jbc_images}/2017_DaveMorgan.jpg"><img src="${jbc_images}/2017_DaveMorgan_500.jpg"></a> ${g_credit(g=\@PlanetruthPictures)}
 		(2017)
 	)}
 	)}

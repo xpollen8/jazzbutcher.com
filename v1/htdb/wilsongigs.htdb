@@ -989,8 +989,8 @@
 			Aaaargh! BUILTH!
 		)},
 		press=${literalizeCommas(
-			<a href="/images/20040912/cricketpress.jpg"><img
-				src="/images/20040912/cricketpress_500.jpg"></a>
+			<a href="${jbc_images}/20040912/cricketpress.jpg"><img
+				src="${jbc_images}/20040912/cricketpress_500.jpg"></a>
 		)},
 		notes=${literalizeCommas(
 			1:00 'til 6:00 in the afternoon

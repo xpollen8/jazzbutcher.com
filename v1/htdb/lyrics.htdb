@@ -489,7 +489,7 @@ ${jbc_footer}
 
 	onlist=cdr_guestpass2000,
 		credits=Robert Goodman,
-		mp3=/audio/tunes/hobbu.mp3,
+		mp3=${jbc_audio}/tunes/hobbu.mp3,
 		caption=The Hobbu Song
 	)}
 #live	endif
@@ -1580,7 +1580,7 @@ The town in question is South Windsor, CT.
 #live	if (getval(page) = excellent.html)
 	${lyricsHeader(title=Excellent!,
 		annotated=yes,
-		images=/images/20220715_WonderBat9_Photoalbum_Vegette;;wonderbat9;;https://youtube.com/watch?v=a6SzTBA7WG8;;2022-07-14;;The Vegette,
+		images=${jbc_images}/20220715_WonderBat9_Photoalbum_Vegette;;wonderbat9;;https://youtube.com/watch?v=a6SzTBA7WG8;;2022-07-14;;The Vegette,
 		video=/video/Excellent.mp4;;;;;;;;first... an emotional protectiveness..  now... one of sympathy.. Excellent!,
 		lyrics=${literalizeCommas(
 
@@ -2608,7 +2608,7 @@ The town in question is South Windsor, CT.
 		onlist=
 		bacon .. fire_wasted,
 		caption=From the 2012 ${adventurers} recording session (unreleased),
-		mp3=/audio/tunes/2012_JBC_LaMer.mp3,
+		mp3=${jbc_audio}/tunes/2012_JBC_LaMer.mp3,
 		others=${literalizeCommas(
 			One day in 2018, Pat Fish sent me a very kind message to explain to me the genesis of a song, which I'm sure is now one of the classics of French song. No small feat for a roast beef.
 
@@ -3250,9 +3250,9 @@ The town in question is South Windsor, CT.
 		onlist=
 		bus
 	, patsez=${literalizeCommas(
-		<img src="${images}/penguin.gif">
-		<img src="${images}/penguin.gif">
-		<img src="${images}/penguin.gif">
+		<img src="${ibc_images}/penguin.gif">
+		<img src="${ibc_images}/penguin.gif">
+		<img src="${ibc_images}/penguin.gif">
 		In the most desolate place in the world they are standing in large numbers. They are out there doing it now. As far as we can tell they have always been out there, miles from anywhere, in conditions that would hospitalise you or me in the course of an afternoon.
 		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#penguins;;
 	)}
@@ -5291,7 +5291,7 @@ G - G - C - D
 #define	drink.html
 #live	if (getval(page) = drink.html)
 	${lyricsHeader(title=D.R.I.N.K.,
-		images=/images/20211006/20211006_press_jericsmith;;Katelin Smith;;;;2021-10-06;;Max's handwritten DRINK lyrics from the 2012 Adventurer's fundraising,
+		images=${jbc_images}/20211006/20211006_press_jericsmith;;Katelin Smith;;;;2021-10-06;;Max's handwritten DRINK lyrics from the 2012 Adventurer's fundraising,
 	lyrics=${literalizeCommas(
 
 	I'm broken-hearted
@@ -6092,7 +6092,7 @@ I haven't got a mind at all.
 	<br /><meow>
 
 	)},
-		images=/images/1985_BarryHale_RedPets_Cartoon;;Barry Hale;;;;2022-02-04;;Cartoon strip that Pat drew for Red Pets which he sent me way back in 1985 sent to 'Barry Hale' from the Jazz Butcher Facebook group.,
+		images=${jbc_images}/1985_BarryHale_RedPets_Cartoon;;Barry Hale;;;;2022-02-04;;Cartoon strip that Pat drew for Red Pets which he sent me way back in 1985 sent to 'Barry Hale' from the Jazz Butcher Facebook group.,
 		onlist=
 		sex .. fire_wasted
 	)}
@@ -6756,7 +6756,7 @@ I haven't got a mind at all.
 	${lyricsHeader(title=Beautiful Snow-White Hair,
 	mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+16+Highest_BeautifulSnowWhiteHair.mp3,
 	caption=Excerpt from Philip Snow's interview tape #16,
-	images=/images/ImKorb_1$$/images/ImKorb_2$$,
+	images=${jbc_images}/ImKorb_1$$${jbc_images}/ImKorb_2$$,
 	lyrics=${literalizeCommas(
 
 	Well, he's just a baby
@@ -9936,7 +9936,7 @@ Break out and find out tonight.
 
 	)},
 		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp4,
-		mp3=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3;;;;;;;;2005 Demo$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp3;;Curtis E. Johnson;;;;;;Backing Track,
+		mp3=${jbc_audio}/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3;;;;;;;;2005 Demo$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp3;;Curtis E. Johnson;;;;;;Backing Track,
 		onlist=wilson_demo_2005
 		,credits=${literalizeCommas(${pat}, ${botty}, ${curt})};;;;© Feb. 2003
 		)}
@@ -9988,7 +9988,7 @@ Break out and find out tonight.
 	)},
 		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_PoliceChief.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
 #		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_PoliceChief.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		mp3=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3, caption=2005 demo,
+		mp3=${jbc_audio}/Wilson_200511/02_Wilson_200511_Police_Chief.mp3, caption=2005 demo,
 		onlist=wilson_demo_2005,
 		,credits=${literalizeCommas(${pat}, ${botty})};;;;© Feb. 2003
 	)}
@@ -10144,7 +10144,7 @@ Break out and find out tonight.
 	)},
 		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_HippyShit.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
 #		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_HippyShit.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		mp3=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3, caption=2002 demo,
+		mp3=${jbc_audio}/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3, caption=2002 demo,
 		onlist=wilson_demo_2002,
 		credits=${literalizeCommas(© The entire population of the world with a chorus by Bot)}
 	)}
@@ -10251,7 +10251,7 @@ Break out and find out tonight.
 	Burn, Hollywood, burn, Hollywood, burn, muthafucka, burn.
 
 	)},
-		mp3=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3, caption=2002 demo,
+		mp3=${jbc_audio}/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3, caption=2002 demo,
 		onlist=wilson_demo_2002,
 		credits=${literalizeCommas( © ${pat}/${botty})}
 	)}
@@ -10295,11 +10295,11 @@ Break out and find out tonight.
 	Quality people with nothing to hide.
 
 
-#		${linkAudio(project=wilson, title=Quality People (2002 demo), mp3=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3, autolink=no)}
+#		${linkAudio(project=wilson, title=Quality People (2002 demo), mp3=${jbc_audio}/Wilson_2002/01_Wilson_2002_Quality_People.mp3, autolink=no)}
 	)},
 		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_QualityPeople.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
 #		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_QualityPeople.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		mp3=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3, caption=2003 demo,
+		mp3=${jbc_audio}/Wilson_200304/02_Wilson_200304_Quality_People.mp3, caption=2003 demo,
 		onlist=va_wilson_heyday ..  wilson_demo_2003 .. wilson_demo_2002,
 		credits=${literalizeCommas( © ${botty}, ${pat}, Soybaz)}
 	)}
@@ -10351,7 +10351,7 @@ Break out and find out tonight.
 	)},
 		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_IstanbulConnection.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
 #		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_IstanbulConnection.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		mp3=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3, caption=2003 demo, embed_link=https://youtube.com/embed/r074mp41514,
+		mp3=${jbc_audio}/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3, caption=2003 demo, embed_link=https://youtube.com/embed/r074mp41514,
 		onlist=wilson_demo_2003 .. wilson_demo_2002,
 		credits=${literalizeCommas( © ${pat}, ${curt}, ${botty}, Traditional, Burroughs, Perry)}
 	)}
@@ -10398,7 +10398,7 @@ Break out and find out tonight.
 	)},
 		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_DarkAgenda.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
 #		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_DarkAgenda.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		mp3=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, caption=2002 Demo,
+		mp3=${jbc_audio}/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, caption=2002 Demo,
 		onlist=wilson_demo_2002,
 		credits=${literalizeCommas( © ${pat}/${botty})};;;;2001,
 	patsez=${literalizeCommas(

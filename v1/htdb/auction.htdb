@@ -1020,7 +1020,7 @@
 #	OLD	
 #	OLD	#define	bullet
 #	OLD		<img align=middle
-#	OLD			src="/images/del/resume/bullet.gif" height=6 width=6>
+#	OLD			src="${jbc_images}/del/resume/bullet.gif" height=6 width=6>
 #	OLD	
 #	OLD	#define	auctionSections
 #	OLD		<nobr><font size=+1><b>Items listed by category.</b></font></nobr>

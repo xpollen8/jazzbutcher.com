@@ -12,18 +12,18 @@
 	<table border=0 cellpadding=5 cellspacing=10 bgcolor="#dedede" width="220" align="right">
 		<tr><td align="center">
 		<a href="${jbc_tomhall}/neil_spencer.html"><img
-			src="${images}/tom_hall_neil_spencer.jpg" width=222 height=291 border=1></a>
+			src="${jbc_images}/tom_hall_neil_spencer.jpg" width=222 height=291 border=1></a>
 		<br>
 		A <a href="${jbc_tomhall}/neil_spencer.html">tribute page</a> by Neil Spencer.
 	</td></tr>
 		<tr><td align="center">
 		<a href="/TomHall.pdf"><img
-			src="${images}/tom_hall_tribute_small.gif" width=207 height=269 border=1></a>
+			src="${jbc_images}/tom_hall_tribute_small.gif" width=207 height=269 border=1></a>
 		<br>
 		A <a href="/TomHall.pdf">downloadable tribute</a> by Mark Griffiths (pdf).
 	<p>
 		<a href="${jbc_gigs}/2003/Sep6_1930.html"><img
-			src="${images}/20030906/20030906_poster_250.jpg"></a>
+			src="${jbc_images}/20030906/20030906_poster_250.jpg"></a>
 		<br>
 		There will be a memorial gig for The Great Tom Hall on
 		<a href="${jbc_gigs}/2003/Sep6_1930.html">Saturday 6th
@@ -98,7 +98,7 @@
 	had an accompanying slide show. I think he reckoned he had some kind of William 
 	Blake thing going on. Whatever, when the slide of the local public library went 
 	on above his head, things started to spin out badly. Locals were guffawing at 
-	<img src="${images}/tom_hall.jpg" align="left" width=332 height=307 hspace=5 vspace=5 border=1>
+	<img src="${jbc_images}/tom_hall.jpg" align="left" width=332 height=307 hspace=5 vspace=5 border=1>
 	the simple-minded earnestness of it all. The Australians were starting to riot 
 	and say naughty things about the royal family. As the situation slid out of 
 	control, there was some kind of technical breakdown on stage. Superb. Utter 
@@ -155,7 +155,7 @@
 	electric guitar but happier still when picking blues from the jumbo
 	acoustic I recall as your trademark. Born under the earthy Bull, you
 	belonged to tradition as much as any Thomas Hardy hero.<br>
-	<img src="${images}/tom_hall_neil_spencer.jpg" border=1 width=222 height=291 align="right">
+	<img src="${jbc_images}/tom_hall_neil_spencer.jpg" border=1 width=222 height=291 align="right">
 	<br>
 	That much you made clear when we first met, you and our little gang:
 	us the arch-modernists, impatient for a new world which we already had

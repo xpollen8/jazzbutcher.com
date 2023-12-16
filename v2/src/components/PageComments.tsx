@@ -12,10 +12,24 @@ import IconReply from '@/svg/IconReply';
 import IconLike from '@/svg/IconLike';
 import IconAddComment from '@/svg/IconAddComment';
 
-import usePageComments, { patchPageComment, deletePageComment, usePageCommentLike, usePageCommentReply, submitPageCommentReply, submitPageCommentNew } from '@/lib/usePageComments';
+import usePageComments, { patchPageComment, deletePageComment, usePageCommentLike, usePageCommentReply, } from '@/lib/usePageComments';
 import { type CommentType, dateDiff } from '@/lib/utils';
 
+const uuidv4 = () => 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c: string) => {
+	var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+	return v.toString(16);
+});
+
+const getSessionId = () => {
+	try {
+		return localStorage.getItem('session') || localStorage.setItem('session', uuidv4()) || uuidv4();
+	} catch(e) {
+		return uuidv4();
+	}
+}
+
 const	CommentLike = (props: any) => {
+	return;
 	const { onClick } = props;
 	const { data, isLoading, error } = usePageCommentLike(props);
 	return <IconLike className="pointable" style={{ width: '1.7em' }} onClick={onClick} />
@@ -32,47 +46,64 @@ const	ToggleCommentForm = (props: any) => {
 	return <Tag>
 		<div onClick={() => toggleCommentForm(true)}>
 			<center>
+			{text}{' '}
 			{(!showForm) && <>
 				<span className="pointable text-blue-600 bg-white p-1">[ + ]</span>
 				{/*<IconAddComment style={{ width: '1.7em' }} />*/}
 			</>}
-			{' '}{text}
 			</center>
 		</div>
 	</Tag>
 }
 
 const DeleteComment = (props: any) => {
-	//console.log("DeleteComment", props);
+	//console.log("DeleteComment", props, getSessionId());
+	const { mutate, feedback_id } = props;
 	const [ deleting, setDeleting ] = useState(false);
 	const [ editing, setEditing ] = useState(false);
 	const [ confirm, setConfirm ] = useState(false);
+	if (props?.session !== getSessionId()) return;
 	return <>
 		{(!editing && deleting) && <span className="pointable text-blue-600 bg-white p-1" onClick={async () => {
 			setConfirm(!confirm);
-			await deletePageComment(props);
+			//await deletePageComment(feedback_id);
+
+			const updated = await fetch(`/api/feedback_delete/${feedback_id}`, {
+				cache: "no-cache",
+				method: 'GET',
+				headers: {
+					accept: "application/json",
+					"Content-Type": "application/json",
+				},
+			})
+			.then((res) => res.json());
+
+			mutate(true, // which cache keys are updated
+				undefined, // update cache data to `undefined`
+					{ revalidate: false } // do not revalidate
+				);
+
 			setDeleting(!deleting);
 			setEditing(false);
 		}}>[ Really Delete? ]</span>}
-		{(!editing && !deleting) && <span className="pointable text-red-600 bg-white p-1" onClick={() => {
+		{(!editing && !deleting && !props.has_children) && <span className="pointable text-red-600 bg-white p-1" onClick={() => {
 			setEditing(false);
 			setDeleting(!deleting)
 		}}>[ Delete ]</span>}
-		{(editing) && <><CommentForm {...props} editing={true} toggleCommentForm={setEditing} /></>}
-		{(!editing) && <span className="pointable text-green-600 bg-white p-1" onClick={() => {
+		{(editing) && <><CommentForm mutate={mutate} commentData={{...props}} editing={true} toggleCommentForm={setEditing} /></>}
+		{/* (!editing) && <span className="pointable text-green-600 bg-white p-1" onClick={() => {
 			setEditing(!editing)
-		}}>[ Edit ]</span>}
+		}}>[ Edit ]</span> */}
 	</>
 }
 
 const Comment = (props: CommentType & any, key: number) => {
-	const mySession = getSessionId() || 'unknown';
-	const { editing=false, session, feedback_id, subject, dtcreated, who, whence, comments, toggleCommentForm, children, uri, showForm } = props;
+	const { mutate, editing=false, session, feedback_id, subject, dtcreated, who, whence, comments, toggleCommentForm, children, uri, showForm } = props;
 	const [ replying, setReplying ] = useState(false);
 
 	return (
 		<div key={key} className="comment">
-			<div id="subject">{(session === mySession) && <DeleteComment {...props} />}{subject}</div>
+			<div id="subject">{subject} {(session === getSessionId()) && <DeleteComment mutate={mutate} {...props} />}</div>
 			<div id="comments" className="annotation" dangerouslySetInnerHTML={{__html: comments }} />
 			<div id="who"><b>{whence}</b> </div> {!!(who?.length) && <div id="email" className="smalltext">{who} </div>}
 			<div id="date">{dateDiff(dtcreated, '')}</div>
@@ -84,45 +115,75 @@ const Comment = (props: CommentType & any, key: number) => {
 					toggleCommentForm(false);
 					setReplying(!replying);
 				}}/>
-				{(replying) && <div className="w-full"><CommentForm {...props} toggleCommentForm={setReplying} /></div>}
+				{(replying) && <div className="w-full"><CommentForm mutate={mutate} commentData={{...props}} toggleCommentForm={setReplying} /></div>}
 			</div>
 			{(!!children?.length) && <div className="bg-green-400 pb-10">
 				<Tag>Replies to &quot;{subject}&quot;..</Tag>
-				<Comments session={session} uri={uri} comments={children} showForm={showForm} toggleCommentForm={toggleCommentForm} />
+				<Comments mutate={mutate} commentData={{ uri, comments: children }} showForm={showForm} toggleCommentForm={toggleCommentForm} />
 			</div>}
 		</div>
 	)
 }
 
-const CommentForm = (props: { session?: string, who?: string, whence?: string, comments?: string, editing?: boolean, feedback_id?: number, subject?: string, uri: string, toggleCommentForm: any }) => {
-	const { editing=false, session, feedback_id, subject: inSubject, uri, comments: inComments, who: inWho, whence: inWhence, toggleCommentForm } = props;
+import { pathname2feedbackURI } from '@/lib/usePageComments';
+
+const CommentForm = ({ mutate, commentData, editing=false, toggleCommentForm }: any) => {
+	const { feedback_id, subject: inSubject, uri, comments: inComments, who: inWho, whence: inWhence } = commentData;
 	const [ subject, setSubject ] = useState((!editing && feedback_id) ? `RE: ${inSubject}` : inSubject);
 	const [ comments, setComments ] = useState(editing ? inComments : '');
 	const [ who, setWho ] = useState(editing ? inWho : '');
 	const [ whence, setWhence ] = useState(editing ? inWhence : '');
-	const action = (editing) ? `Editing your post` : ((feedback_id) ? `Replying to "${inSubject}"` : `Composing a message for "${uri}"`);
-	const formAction = (editing) ? patchPageComment : ((feedback_id) ? submitPageCommentReply : submitPageCommentNew);
+	const label = (uri?.length > 0) ? `Composing a new comment for "${uri}"` : `Composing a new comment`;
+	const action = (editing) ? `Editing your post` : ((feedback_id) ? `Replying to "${inSubject}"` : label);
+
 	return <div className="text-left drop-shadow-2xl listItem">
 		<form
-			onSubmit={(ev: any) => {
-				alert('Sorry! Not yet functional');
+			onSubmit={async (ev: any) => {
 				ev.preventDefault();
-				formAction({
-					session,
+
+				if (!subject?.length) {
+					alert('Subject: required');
+					return;
+				}
+
+				if (!comments?.length) {
+					alert('Your Comments: required');
+					return;
+				}
+
+				const body = JSON.stringify({
+					session: getSessionId(),
 					feedback_id,
-					uri,
+					uri: (uri.includes('.html') ? uri : `${uri}.html`),
 					who,
 					whence,
 					subject,
 					comments,
+				});
+
+				const updated = await fetch(`/api/${feedback_id ? 'feedback_by_page_reply' : 'feedback_by_page_new'}/${pathname2feedbackURI(uri)}`, {
+					cache: "no-cache",
+					method: 'POST',
+					headers: {
+						accept: "application/json",
+						"Content-Type": "application/json",
+					},
+					body
 				})
+				.then((res) => res.json());
+
+				toggleCommentForm(false);
+				mutate(true, // which cache keys are updated
+				  undefined, // update cache data to `undefined`
+					  { revalidate: false } // do not revalidate
+					);
 			}}
 			>
 			<Tag>
 				<span onClick={() => toggleCommentForm(false)}>
 					<center>
+					{action}{' '}
 					<span className="pointable text-red-600 bg-white p-1">[ Dismiss ]</span>
-					{' '}{action}
 					</center>
 				</span>
 			</Tag>
@@ -172,14 +233,15 @@ const CommentForm = (props: { session?: string, who?: string, whence?: string, c
 					}}
 				/>
 			</div>
-			<button type="submit">Submit</button>
+			<button type="submit" className="comment_submit">Submit</button>
 		</form>
 	</div>
 }
 
-const Comments = (props: { session: string, uri: string, comments: CommentType[], className?: string, toggleCommentForm: any, showForm: boolean }) => {
-	const { session, uri, comments = [], className, toggleCommentForm, showForm } = props;
-	return comments?.map((c: CommentType, key: number) => <Comment session={session} key={key} {...c} toggleCommentForm={toggleCommentForm} showForm={showForm} />)
+const Comments = (props: { mutate: any, commentData: any, className?: string, toggleCommentForm: any, showForm: boolean }) => {
+	const { mutate, commentData, className, toggleCommentForm, showForm } = props;
+	const { uri, comments = [] } = commentData;
+	return comments?.map((c: CommentType, key: number) => <Comment mutate={mutate} {...c } key={key} toggleCommentForm={toggleCommentForm} showForm={showForm} />)
 }
 
 export const CommentBubble = (props: any) => {
@@ -219,25 +281,12 @@ export const CommentBubble = (props: any) => {
 	}
 }
 
-const uuidv4 = () => 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c: string) => {
-	var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-	return v.toString(16);
-});
-
-const getSessionId = () => {
-	try {
-		return localStorage.getItem('session') || localStorage.setItem('session', uuidv4()) || uuidv4();
-	} catch(e) {
-		return uuidv4();
-	}
-}
-
 const PageComments = ({ className }: { className?: string }) => {
 	const uri = usePathname()?.substr(1);
-	const { data, isLoading, error } = usePageComments(uri);
+	const { data, isLoading, error, mutate } = usePageComments(uri);
 	const comments = data?.results || [];
-	const [ showForm, toggleCommentForm ] = useState((!!comments?.length) ? false : true);
-	const session = getSessionId();
+	const [ showForm, toggleCommentForm ] = useState(comments.length > 0 ? false : true);
+	const label = (uri?.length > 0) ? `Comments for "${uri}"` : 'Comments';
 
 	return (<>
 		<Suspense fallback={<>Loading...</>}>
@@ -248,9 +297,9 @@ const PageComments = ({ className }: { className?: string }) => {
 					</CommentBubble>
 				</summary>
 				<div className="commentOverlay">
-					{(showForm) && <CommentForm session={session} uri={uri} toggleCommentForm={toggleCommentForm} />}
-					<ToggleCommentForm text={`Visitor comments for "${uri}"`} showForm={showForm} toggleCommentForm={toggleCommentForm} />
-					<Comments session={session} uri={uri} comments={comments} showForm={showForm} toggleCommentForm={toggleCommentForm} />
+					{(showForm) && <CommentForm mutate={mutate} commentData={{ uri }} toggleCommentForm={toggleCommentForm} />}
+					<ToggleCommentForm text={label} showForm={showForm} toggleCommentForm={toggleCommentForm} />
+					<Comments mutate={mutate} commentData={{ uri, comments }} showForm={showForm} toggleCommentForm={toggleCommentForm} />
 				</div>
 			</details>
 		</Suspense>

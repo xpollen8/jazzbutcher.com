@@ -178,12 +178,14 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				const song = encodeURIComponent(title);
 				const medias = await apiDataFromDataServer('media_by_song', song);
 				const live = await apiDataFromDataServer('live_performances_by_song', song);
+				const performances = await apiDataFromDataServer('performances_by_song', song);
 				const foundList = await apiDataFromDataServer('releases_by_song', song);
 				const releaseAudio = releases?.results?.filter((r: any) => r?.audio?.includes(title));
 				const releaseVideo = releases?.results?.filter((r: any) => r?.video?.includes(title));
 				return {
 					lyrics,
 					live,
+					performances,
 					releaseAudio,
 					releaseVideo,
 					medias,

@@ -91,7 +91,7 @@ const nextConfig = {
 				/*
 				{
 					source: '/audio/:path*',
-					destination: 'https://jazzbutcher.com/audio/:path*',
+					destination: 'https://v1.jazzbutcher.com/audio/:path*',
 					permanent: false,
 				},
 				*/

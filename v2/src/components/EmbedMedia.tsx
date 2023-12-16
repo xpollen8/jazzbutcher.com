@@ -151,6 +151,10 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);
 	const useMediaurl = mediaurl && imageBase(mediaurl);
+	const useTitle = (song || title)?.replace('NULL','');
+	const useArtist = artist?.replace('NULL','');
+	const useAuthor = author?.replace('NULL','');
+
 	return (<>
 		{(() => {
 			if (useMediaurl && !disableVideo) {
@@ -186,7 +190,7 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 					</>
 				} else if (useMediaurl?.includes('.mp3')) {
 					return (<>
-						<LinkAudio version={version} lookup={lookup} parent={parent} title={song || title} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={artist} author={author} comment={comment} ordinal={ordinal} setnum={setnum} collection={collection} />
+						<LinkAudio version={version} lookup={lookup} parent={parent} title={useTitle} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={useArtist} author={useAuthor} comment={comment} ordinal={ordinal} setnum={setnum} collection={collection} />
 						{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 						{collection}
 						{children}
@@ -200,8 +204,8 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 							{!(parent) && <b>{datetime?.substring(0, 10)}</b>}
 							{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
 						</>}
-						{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
-						{(author) && <span className="smalltext">({author})</span>}
+						{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
+						{(useAuthor) && <span className="smalltext">({useAuthor})</span>}
 						{/*(comment) && <span className="smalltext"> ({comment}) </span>*/}
 						<EmbedVideo className={className} data={data} />
 						{children}
@@ -211,8 +215,8 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 			} else {
 				return (<div className="listItem">
 					{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
-					{(artist) && <b>{artist}{ }</b>} {autoLink(song || title, autolink)}
-					{(author) && <span className="smalltext"> ({author}) </span>}
+					{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
+					{(useAuthor) && <span className="smalltext"> ({useAuthor}) </span>}
 					{(comment) && <span className="smalltext"> ({comment}) </span>}
 					{/*(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>*/}
 				</div>);

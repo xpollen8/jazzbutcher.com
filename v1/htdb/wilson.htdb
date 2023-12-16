@@ -6,13 +6,13 @@
 	${end_tabs}
 	<center>
 	<img
-	    border=0 width=252 height=72 src="${images}/wilson/warfare/image002.jpg">
+	    border=0 width=252 height=72 src="${jbc_images}/wilson/warfare/image002.jpg">
 	<br>
 	(see also: <a href="${jbc_root}/wilson/warfare.html">Warfare</a>)
-	<img src="/images/20020131/20020131_wilson_boatrace_500.jpg">
+	<img src="${jbc_images}/20020131/20020131_wilson_boatrace_500.jpg">
 #	<p>
-#	<a href="${images}/wilson/Boatrace.jpg"><img
-#		src="${images}/wilson/Boatrace_250.jpg" width=250 height=166 alt="big-ass image" border=1></a>
+#	<a href="${jbc_images}/wilson/Boatrace.jpg"><img
+#		src="${jbc_images}/wilson/Boatrace_250.jpg" width=250 height=166 alt="big-ass image" border=1></a>
 	<br>
 	(Wilson at the <a href="${jbc_gigs}/2002/Jan31.html">Boatrace in Cambridge, 31Jan2002</a>)
 	</center>
@@ -200,13 +200,13 @@
 	<center>
 
    <a href="${jbc_root}/wilson"><img
-   	border=0 width=252 height=72 src="${images}/wilson/warfare/image002.jpg"></a>
+   	border=0 width=252 height=72 src="${jbc_images}/wilson/warfare/image002.jpg"></a>
 	<p>
 #	+44 (0)1604 620294
 #	<p>
 #	headstone@sumo77.freeserve.co.uk
 	<p>
-	<img width=44 height=44 src="${images}/wilson/warfare/image003.gif">
+	<img width=44 height=44 src="${jbc_images}/wilson/warfare/image003.gif">
 	<h2>RETURN TO THE ARK</h2>
 
 	<b> BEHOLD, LITTLE WARFARE PUNTERS.
@@ -235,18 +235,18 @@
 
 	 <table cellpadding=0 cellspacing=0>
 	  <tr>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/misery.jpg"><img
-	   	width=108 height=155 border=0 src="${images}/wilson/warfare/thumb_misery.jpg"></a></td>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/eman.jpg"><img
-	   	width=120 height=143 border=0 src="${images}/wilson/warfare/thumb_eman.jpg"></a></td>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/bottie.jpg"><img
-	   	width=142 height=143 border=0 src="${images}/wilson/warfare/thumb_bottie.jpg"></a></td>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/russ.jpg"><img
-		width=120 height=143 border=0 src="${images}/wilson/warfare/thumb_russ.jpg"></a></td>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/stevieg.jpg"><img
-		width=107 height=143 border=0 src="${images}/wilson/warfare/thumb_stevieg.jpg"></a></td>
-	   <td align=left valign=top><a href="${images}/wilson/warfare/headstone.jpg"><img
-	   	width=103 height=155 border=0 src="${images}/wilson/warfare/thumb_headstone.jpg"></a></td>
+	   <td align=left valign=top><a href="${jbc_images}/wilson/warfare/misery.jpg"><img
+	   	width=108 height=155 border=0 src="${jbc_images}/wilson/warfare/thumb_misery.jpg"></a></td>
+	   <td align=left valign=top><a href="${jbc_images}/wilson/warfare/eman.jpg"><img
+	   	width=120 height=143 border=0 src="${jbc_images}/wilson/warfare/thumb_eman.jpg"></a></td>
+	   <td align=left valign=top><a href="${jbc_images}/wilson/warfare/bottie.jpg"><img
+	   	width=142 height=143 border=0 src="${jbc_images}/wilson/warfare/thumb_bottie.jpg"></a></td>
+	   <td align=left valign=top><a href="${jbc_images}/wilson/warfare/russ.jpg"><img
+		width=120 height=143 border=0 src="${jbc_images}/wilson/warfare/thumb_russ.jpg"></a></td>
+	   <td align=left valign=top><a href="${jbc_images}/wilson/warfare/stevieg.jpg"><img
+		width=107 height=143 border=0 src="${jbc_images}/wilson/warfare/thumb_stevieg.jpg"></a></td>
+	   <td align=left valign=top><a href="${jbc_images}/wilson/warfare/headstone.jpg"><img
+	   	width=103 height=155 border=0 src="${jbc_images}/wilson/warfare/thumb_headstone.jpg"></a></td>
 	  </tr>
 	 </table>
 	<p>
@@ -272,11 +272,11 @@
 	 <table cellpadding=0 cellspacing=0>
 	  <tr>
 	   <td align=left valign=top><img width=125 height=128
-		src="${images}/wilson/warfare/image019.jpg"></td>
+		src="${jbc_images}/wilson/warfare/image019.jpg"></td>
 	   <td align=left valign=top><img width=134 height=127
-		src="${images}/wilson/warfare/image018.jpg"></td>
+		src="${jbc_images}/wilson/warfare/image018.jpg"></td>
 	   <td align=left valign=top><img width=125 height=128
-		src="${images}/wilson/warfare/image019.jpg"></td>
+		src="${jbc_images}/wilson/warfare/image019.jpg"></td>
 	  </tr>
 	 </table>
 

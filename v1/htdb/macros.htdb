@@ -122,7 +122,7 @@
 #define	isNew(dt)
 #live	if (getval(dt))
 #live	if (parseUnix(${dt}) > ${eval(${parseUnix(${_db_timestamp})} - (60 * 60 * 24 * 90))})
-	<img src="/images/new.jpg">
+	<img src="${jbc_images}/new.jpg">
 #live	endif
 #live	endif
 
@@ -342,8 +342,8 @@
 		color: #fff;
 	}
 	.gig_sumo:before {
-		content: url(https://v1.jazzbutcher.com/images/sumo/sumo_logo_50.jpg);
-#		content: url(https://v1.jazzbutcher.com/images/sumosonic_logo_50.png);
+		content: url(${jbc_images}/sumo/sumo_logo_50.jpg);
+#		content: url(${jbc_images}/sumosonic_logo_50.png);
 	}
 	.gig_sumo {
 		background-color: #000000;
@@ -352,7 +352,7 @@
 		margin-bottom: 5px;
 	}
 	.gig_eg:before {
-		content: url(https://v1.jazzbutcher.com/images/blackeg_logo_50.png);
+		content: url(${jbc_images}/blackeg_logo_50.png);
 	}
 	.gig_eg {
 		background-color: #eeeeee;
@@ -360,7 +360,7 @@
 		margin-bottom: 5px;
 	}
 	.gig_wilson:before {
-		content: url(https://v1.jazzbutcher.com/images/wilson_logo_50.png);
+		content: url(${jbc_images}/wilson_logo_50.png);
 	}
 	.gig_wilson {
 		background-color: #ee0000;
@@ -851,14 +851,14 @@
 	}
 </style>
 
-#define	linkAudio(project=jbc, collection, type, title, comment, mp3, url, author, version, variant, autolink=yes, credit, images, datetime, parent, ordinal, lookup)
+#define	linkAudio(project=jbc, collection, type, title, comment, mp3, url, author, version, variant, autolink=yes, credit, images, datetime, parent, ordinal, lookup, hideOrdinal=false)
 #live	if ((defined(update)) || (defined(UA)))
 #insert IGNORE into media set lookup="${lookup}", project="${project}", type="audio", subtype="${type}", name="${stripTags(${literalizeCommas(${title})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", author="${author}", version="${version}", variant="${variant}", collection="${collection}", ordinal="${ordinal}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}";
 #live		if (sql(insert IGNORE into media set lookup="${lookup}", project="${project}", type="audio", subtype="${type}", name="${stripTags(${literalizeCommas(${title})})}", comment="${literalizeQuotes(${stripTags(${literalizeCommas(${comment})})})}", href="${url}", mp3="${mp3}", version="${version}", variant="${variant}", author="${author}", collection="${collection}", ordinal="${ordinal}", credit="${credit}", images="${images}", parent="${parent}", datetime="${datetime}"))
 #live		endif
 #live	endif
 	<span class="audioPlayer">
-#live	if (getnum(ordinal) > 0)
+#live	if ((getval(hideOrdinal) = false) && (getnum(ordinal) > 0))
 			<span class="listenItemOrdinal">${ordinal}.</span>
 #live	endif
 		<span class="audio_title">
@@ -982,14 +982,14 @@
 #	paths to the HTDB databases for things found on this site.
 #	values are relative to DOCUMENT_ROOT
 #
-#define	audio			/audio
-#define	images			/images
-#define	jbc_images		/images
-#define	jbc_mad_images	/images/mad
-#define	jbc_mp3			${jbc_audio}/mp3
+#define	audio			https://v1.jazzbutcher.com/audio
+#define	images			https://v1.jazzbutcher.com/images
+#define	jbc_images		https://v1.jazzbutcher.com/images
+#define	jbc_mp3			https://v1.jazzbutcher.com/mp3
+#define	jbc_video		https://v1.jazzbutcher.com/video
+#define	jbc_audio		https://v1.jazzbutcher.com/audio
+#define	jbc_mad_images	https://v1.jazzbutcher.com/images/mad
 #define	jbc_root
-#define	jbc_video		${jbc_root}/video
-#define	jbc_audio		${jbc_root}/audio
 #define	jbc_mad			${jbc_root}/mad
 #define	jbc_trivia		${jbc_root}/trivia
 #define	jbc_help		${jbc_root}/help
@@ -1109,10 +1109,10 @@
 #
 #	site-wide definitions
 #
-#define	makePDFIcon(title) <img height="9" width="19" alt="[download ${title}]" src="${images}/iconPDF.gif">
-#define	makeMP3Icon(title) <img height="9" width="19" src="${images}/iconMP3.gif"> ${title}
+#define	makePDFIcon(title) <img height="9" width="19" alt="[download ${title}]" src="${jbc_images}/iconPDF.gif">
+#define	makeMP3Icon(title) <img height="9" width="19" src="${jbc_images}/iconMP3.gif"> ${title}
 #define	icon_audio ${makeMP3Icon(title=download MP3)}
-#define	icon_feedback	<img height="19" width="19" alt="[extra shit]" src="${images}/iconFeedback2.gif">
+#define	icon_feedback	<img height="19" width="19" alt="[extra shit]" src="${jbc_images}/iconFeedback2.gif">
 
 #define	footer
 </div>
@@ -1138,8 +1138,8 @@ font.load().then(function () {
 </script>
 
 #define	icon_blank
-	<img src="${images}/para.gif" alt="*" width=25 height=10>
-#define	para	<p><img src="${images}/para.gif" alt=" " width=25 height=10>
+	<img src="${jbc_images}/para.gif" alt="*" width=25 height=10>
+#define	para	<p><img src="${jbc_images}/para.gif" alt=" " width=25 height=10>
 
 #define	linkFeedback	${base_url}/feedback
 
@@ -1156,8 +1156,8 @@ font.load().then(function () {
 	${mkSimpleURI(uri=${jbc_lyrics}, text=The Songs)}
 	${mkSimpleURI(uri=${jbc_albums}, text=The Releases)}
 	${mkSimpleURI(uri=${jbc_gigs}, text=The Gigs)}
-	${mkSimpleURI(uri=${jbc_audio}, text=Some Audio)}
-	${mkSimpleURI(uri=${jbc_video}, text=Some Video)}
+	${mkSimpleURI(uri=/audio, text=Some Audio)}
+	${mkSimpleURI(uri=/video, text=Some Video)}
 	${mkSimpleURI(uri=${jbc_people}, text=Conspirators)}
 	${mkSimpleURI(uri=${jbc_press}, text=Press)}
 	${mkSimpleURI(uri=${jbc_news}, text=News)}
@@ -1167,10 +1167,10 @@ font.load().then(function () {
 	${mkSimpleURI(uri=${jbc_search}?f=extras&q=eg, text=Black Eg)}
 	${mkSimpleURI(uri=${jbc_search}?f=extras&q=sumo, text=Sumosonic)}
 	${mkSimpleURI(uri=${jbc_search}?f=extras&q=wilson, text=Wilson)}
-	<div class="nav_heading">Pre-JBC</div>
-	${mkSimpleURI(text=Nightshift)}
-	${mkSimpleURI(text=The Institution)}
-	${mkSimpleURI(text=Sonic Tonix)}
+#	<div class="nav_heading">Pre-JBC</div>
+#	${mkSimpleURI(text=Nightshift)}
+#	${mkSimpleURI(text=The Institution)}
+#	${mkSimpleURI(text=Sonic Tonix)}
 #	${mkSimpleURI(text=The Tonix)}
 	</div>
 	<!-- end the left-side navigation-->
@@ -2320,12 +2320,12 @@ ${_d[3]}
 	</center>
 	</td>
 	<td width="50%" valign="top">
-		<a href="/images/20211008_joolesjoyce_tribute.jpg"> <img src="/images/20211008_joolesjoyce_tribute_500.jpg" alt="tribute" style="border: 1px; border-radius: 10px;"></a>
+		<a href="${jbc_images}/20211008_joolesjoyce_tribute.jpg"> <img src="${jbc_images}/20211008_joolesjoyce_tribute_500.jpg" alt="tribute" style="border: 1px; border-radius: 10px;"></a>
 		${g_credit(g=Jooles Joyce)}
 	</td>
 	</tr>
 	</table>
-#	<a href="/images/20211006_portrait.jpg"><img src="/images/20211006_portrait_500.jpg" style="border-radius: 10px;"></a>
+#	<a href="${jbc_images}/20211006_portrait.jpg"><img src="${jbc_images}/20211006_portrait_500.jpg" style="border-radius: 10px;"></a>
 #	${g_credit(g=Dave E. Barker)}
 #	${jbc_footer(memoriam.html)}
 
@@ -2648,7 +2648,7 @@ on
 #live	endif
 #live	if (getval(${prefix}->extra) == duo)
 	${tag_beg}
-	<a href="${jbc_search}?f=extras&q=duo"><img src="/images/iconPat.gif">Pat <img src="/images/iconMax.gif"> Max Duo</a>
+	<a href="${jbc_search}?f=extras&q=duo"><img src="${jbc_images}/iconPat.gif">Pat <img src="${jbc_images}/iconMax.gif"> Max Duo</a>
 	${define(_set,true)}
 	${tag_end}
 #live	endif
@@ -2863,7 +2863,7 @@ on
 			${iconSelf}
 #live	endif
 #live	if (getval(extra) == pat)
-			<img src="${images}/iconPat.gif" width=17 height=16 alt="[pat notes]">
+			<img src="${jbc_images}/iconPat.gif" width=17 height=16 alt="[pat notes]">
 #live	endif
 #live	if (getval(extra) == duo)
 			[pat&max]
@@ -3235,7 +3235,7 @@ ${define(_set, false)}
 #live	endif
 #live	if (getval(${prefix}->extra) == duo)
 	${tag_beg}
-	<a href="${jbc_search}?f=extras&q=duo"><img src="/images/iconPat.gif">Pat <img src="/images/iconMax.gif"> Max Duo</a>
+	<a href="${jbc_search}?f=extras&q=duo"><img src="${jbc_images}/iconPat.gif">Pat <img src="${jbc_images}/iconMax.gif"> Max Duo</a>
 	${define(_set,true)}
 	${tag_end}
 #live	endif
@@ -4140,7 +4140,7 @@ ${define(_set, false)}
 	<a target="_new" href="${truncAt(;;, ${${prefix}->thumb})}.jpg"><img alt="[${${prefix}->title} cover thumbnail]" src="${truncAt(;;, ${${prefix}->thumb})}_${size}.jpg"></a>
 #live		endif
 #live	else
-	<img src="${images}/spacer.gif" width="145" height="145">
+	<img src="${jbc_images}/spacer.gif" width="145" height="145">
 #live	endif
 #live	if ((getval(details) = yes) && ((defined(${prefix}->label)) || (defined(${prefix}->media))))
 	<br/>
@@ -4253,7 +4253,7 @@ ${define(_set, false)}
 
 #define	doBarType(type, num, max, color=gray)
 #live	if (getnum(num) > 0)
-		<img style="border-radius: 10px;" src="/images/gig_spacer_${type}.gif" width="${int(${eval(1 + (100 * ${num} / ${max}))})}%"> <span class="smalltext"><span style="color: ${color};">${num}</span> (${typeLookup[${type}]})</span>
+		<img style="border-radius: 10px;" src="${jbc_images}/gig_spacer_${type}.gif" width="${int(${eval(1 + (100 * ${num} / ${max}))})}%"> <span class="smalltext"><span style="color: ${color};">${num}</span> (${typeLookup[${type}]})</span>
 		<br>
 #live	endif
 
@@ -4426,7 +4426,7 @@ ${define(_set, false)}
 #live		if (define(useColor, gray))
 #live		endif
 #live		if (multiBars(prefix=_graphG[${i}]))
-				<img style="border-radius: 10px;" src="/images/spacer.gif" width="${int(${eval(1 + (100 * ${_graphG[${i}]} / ${maxGigs}))})}%"> <b>${_graphG[${i}]}</b>
+				<img style="border-radius: 10px;" src="${jbc_images}/spacer.gif" width="${int(${eval(1 + (100 * ${_graphG[${i}]} / ${maxGigs}))})}%"> <b>${_graphG[${i}]}</b>
 				<br/>
 #live		else
 #live			if (define(useColor, blue))
@@ -4442,7 +4442,7 @@ ${define(_set, false)}
 			</a>
 			</td>
 #live	else
-		<td class="data"><a href="${link}"><img src="/images/spacer.gif" width="${int(${eval(1 + (100 * 0 / ${maxGigs}))})}%"></a>0</td>
+		<td class="data"><a href="${link}"><img src="${jbc_images}/spacer.gif" width="${int(${eval(1 + (100 * 0 / ${maxGigs}))})}%"></a>0</td>
 #live	endif
 		</tr>
 #live	endif

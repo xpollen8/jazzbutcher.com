@@ -492,14 +492,14 @@ the following early JBC gigs:
 ${linkInternal(${jbc_gigs}/1986/Mar4.html, 1986-03-04)},
 ${linkInternal(${jbc_gigs}/1986/Oct29.html, 1986-10-29)},
 ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
-<img src="/images/19890921/19890921_brooksbank_006_500.jpg">)}
+<img src="${jbc_images}/19890921/19890921_brooksbank_006_500.jpg">)}
 
 #define newsItem[49]->dt ${date(U, 2017-03-09)}
 #define	newsItem[49]->link ${jbc_gigs}/1986/Mar4.html
 #define	newsItem[49]->subject Besancon, France - 1986-03-04
 #define	newsItem[49]->category	media
 #define	newsItem[49]->body
-	${linkAudio(title=The Entire Show, mp3=/audio/19860304/19860304_JazzButcher_Besacon_EQd.mp3, comment=Besancon\, France, parent=/gigs/1986/Mar4, datetime=1986-03-04, credit=Dom Genot;;https://soundcloud.com/lonesomedog;;2017-03-09)}
+	${linkAudio(title=The Entire Show, mp3=${jbc_audio}/19860304/19860304_JazzButcher_Besacon_EQd.mp3, comment=Besancon\, France, parent=/gigs/1986/Mar4, datetime=1986-03-04, credit=Dom Genot;;https://soundcloud.com/lonesomedog;;2017-03-09)}
 	${g_credit(g=Dom Genot, u=https://soundcloud.com/lonesomedog)}
 
 #define newsItem[50]->dt ${date(U, 2017-03-11)}
@@ -510,7 +510,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 	with some high-quality scans of ticket stubs from several gigs in France - including
 	one show not previously listed in the archives!
 	<blockquote>
-	<a href="${jbc_gigs}/1994/Jul7.html"><img src="/images/19940707/19940707_ticket_250.jpg"></a>
+	<a href="${jbc_gigs}/1994/Jul7.html"><img src="${jbc_images}/19940707/19940707_ticket_250.jpg"></a>
 	<p />
 	<a href="${jbc_gigs}/1987/Aug2.html">1987-08-02</a>,
 	<a href="${jbc_gigs}/1987/Feb2.html">1987-02-02</a>,
@@ -521,7 +521,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 	<a href="${jbc_gigs}/1994/Jul7.html">1994-07-07</a>,
 	<a href="${jbc_gigs}/1995/Sep13.html">1995-09-13</a>,
 	<p />
-	<a href="${jbc_gigs}/1987/Aug2.html"><img src="/images/19870802/19870802_ticket_250.jpg"></a>
+	<a href="${jbc_gigs}/1987/Aug2.html"><img src="${jbc_images}/19870802/19870802_ticket_250.jpg"></a>
 	${g_credit(g=Pierre Guillaume)}
 	</blockquote>
 	Merci!
@@ -541,7 +541,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 #define	newsItem[52]->body
 	Pierre Guillaume has provided yet more high-quality scans of JBC ephemera:
 	<p />
-	<a href="${jbc_gigs}/1990/Mar8.html"><img src="/images/19900308/19900308_poster_250.jpg"></a>
+	<a href="${jbc_gigs}/1990/Mar8.html"><img src="${jbc_images}/19900308/19900308_poster_250.jpg"></a>
 	<p />
 	<b>posters and announcements</b>
 	<blockquote>
@@ -588,11 +588,11 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 	</blockquote>
 	And a few posters, including this crackerjack for The Black Eg:
 	<blockquote>
-	<a href="${jbc_gigs}/1999/Jun3.html"><img src="/images/19990603/19990603_poster_250.jpg"></a>
+	<a href="${jbc_gigs}/1999/Jun3.html"><img src="${jbc_images}/19990603/19990603_poster_250.jpg"></a>
 	</blockquote>
 	<b>${linkInternal(${jbc_gigs}/1989/Nov18.html, Madison\, Wisconsin - 1989-11-18)}</b>
 	<blockquote>
-	${linkAudio(title=The Entire Show, mp3=/audio/19891118/19891118_JazzButcher_Madison_EQd.mp3)}
+	${linkAudio(title=The Entire Show, mp3=${jbc_audio}/19891118/19891118_JazzButcher_Madison_EQd.mp3)}
 	</blockquote>
 #define	newsItem[54]->dt	${date(U, 2017-04-02)}
 
@@ -632,7 +632,7 @@ ${linkInternal(${jbc_gigs}/1989/Sep21.html, 1989-09-21
 #define	newsItem[58]->body
 	<b>${linkInternal(${jbc_gigs}/1991/Nov14.html, Arena\, Vienna - 1991-11-14)}</b>
 	<blockquote>
-	${linkAudio(href=${jbc_gigs}/1991/Nov14.html, mp3=/audio/19911114/19911114_JazzButcher_Vienna_Gen1_Flat.mp3)}
+	${linkAudio(href=${jbc_gigs}/1991/Nov14.html, mp3=${jbc_audio}/19911114/19911114_JazzButcher_Vienna_Gen1_Flat.mp3)}
 	</blockquote>
 	Also, appearances on many "Various Artists" releases ${linkInternal(${jbc_albums}, are now better documented.)}
 #define	newsItem[58]->dt	${date(U, 2017-07-23)}
@@ -721,26 +721,26 @@ briefly on a variety of topics. Click the "Etc" tab over in ${linkInternal(${jbc
 #define	newsItem[64]->link
 #define	newsItem[64]->body
 	<b>${linkInternal(${jbc_gigs}/1993/Feb15.html, French National Radio\, Paris - 1993-02-15)}</b>
-	${linkAudio(mp3=/audio/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3, comment=In French\, 4 songs performed)}
+	${linkAudio(mp3=${jbc_audio}/19930215/19930215_JazzButcher_ParisInterview_Gen1.mp3, comment=In French\, 4 songs performed)}
 
 	<b>${linkInternal(${jbc_gigs}/1993/Oct28.html, The Forum\, London - 1993-10-28)}</b>
-	${linkAudio(mp3=/audio/19931028/19931028_JazzButcher_London_Gen0_Flat.mp3, comment=Opening for John Cale. w/Alex Green and Paul Mulreany)}
+	${linkAudio(mp3=${jbc_audio}/19931028/19931028_JazzButcher_London_Gen0_Flat.mp3, comment=Opening for John Cale. w/Alex Green and Paul Mulreany)}
 
 	<b>${linkInternal(${jbc_gigs}/1985/Mar24.html, Kolingsborg\, Stockholm\, Sweden - 1985-03-24)}</b>
-	${linkAudio(mp3=/audio/19850324/19850324_JazzButcher_Stockholm_Gen2_Flat.mp3)}
+	${linkAudio(mp3=${jbc_audio}/19850324/19850324_JazzButcher_Stockholm_Gen2_Flat.mp3)}
 
 #	<b>${linkInternal(${jbc_gigs}/1987/Feb3.html, Caveau Des Dominicains\, Nancy\, France - 1987-02-03)}</b>
-#	${linkAudio(mp3=/audio/19870203/19870203_JazzButcher_Nancy_Gen1_Flat.mp3)}
+#	${linkAudio(mp3=${jbc_audio}/19870203/19870203_JazzButcher_Nancy_Gen1_Flat.mp3)}
 
 #	<b>${linkInternal(${jbc_gigs}/1989/Jul6.html, Loft\, Berlin\, Germany - 1989-07-06)}</b>
-#	${linkAudio(mp3=/audio/19890706/19890706_JazzButcher_Berlin_Gen2_Flat.mp3)}
+#	${linkAudio(mp3=${jbc_audio}/19890706/19890706_JazzButcher_Berlin_Gen2_Flat.mp3)}
 
 #define	newsItem[65]->dt	${date(U, 2017-12-26)}
 #define	newsItem[65]->subject Four more Jazz Butcher albums compiled in upcoming ‘The Violent Years’ box set
 #define	newsItem[65]->category	news
 #define	newsItem[65]->link	/albums/fire_violent.html
 #define	newsItem[65]->body
-	<img src="/images/releases/fire_violent_250.jpg">
+	<img src="${jbc_images}/releases/fire_violent_250.jpg">
 	<p />
 	Fire Records next spring will follow up its collection of the first four albums by The Jazz Butcher, Pat Fish’s long-running U.K. indie-pop outfit, with a new box set called The Violent Years that compiles the next four LPs, all originally released on Creation Records between 1988 and 1991.
 	<p />
@@ -794,7 +794,7 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[72]->category	press
 #define	newsItem[72]->link	https://fire-records.lnk.to/JazzButcherDrCholmondleyFA
 #define	newsItem[72]->body
-	<img src="/images/cover_singles_500.jpg">
+	<img src="${jbc_images}/cover_singles_500.jpg">
 	<p />
 	The Jazz Butcher reveals limited edition bookback CD ‘Dr Cholmondley Repents: A-sides, B-sides and Seasides’    
 	(out 12th November).
@@ -825,7 +825,7 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 	</a>
 	</td>
 	<td valign="top">
-		<a href="/memoriam"> <img src="/images/20211006_portrait_500.jpg" style="border: 1px; border-radius: 10px;" alt="portrait"></a>
+		<a href="/memoriam"> <img src="${jbc_images}/20211006_portrait_500.jpg" style="border: 1px; border-radius: 10px;" alt="portrait"></a>
 		${g_credit(g=Dave E. Barker)}
 	</td>
 	</tr>
@@ -852,7 +852,7 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[76]->link	/gigs/1983/Sep24.html
 #define	newsItem[76]->category	press
 #define	newsItem[76]->body
-	<a href="/gigs/1983/Sep24.html"><img src="/images/19830924/19830924_1_250.jpg" width=250" alt="photo"></a>
+	<a href="/gigs/1983/Sep24.html"><img src="${jbc_images}/19830924/19830924_1_250.jpg" width=250" alt="photo"></a>
 	(+7 more)
 
 #define	newsItem[77]->dt	${date(U, 2023-11-19 21:50:00)}
@@ -860,35 +860,35 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[77]->link	/gigs/1984/Dec8.html
 #define	newsItem[77]->category	press
 #define	newsItem[77]->body
-	<a href="/gigs/1989/Dec8.html"><img src="/images/19841208/19841208_poster_250.jpg" width=250" alt="poster"></a>
+	<a href="/gigs/1989/Dec8.html"><img src="${jbc_images}/19841208/19841208_poster_250.jpg" width=250" alt="poster"></a>
 
 #define	newsItem[78]->dt	${date(U, 2023-11-19 22:19:00)}
 #define	newsItem[78]->subject 1989-02-28 - Scanned setlist from Pat Fish Archives
 #define	newsItem[78]->link	/gigs/1989/Feb28.html
 #define	newsItem[78]->category	press
 #define	newsItem[78]->body
-	<a href="/gigs/1989/Feb28.html"><img src="/images/19890228/19890228_setlist_250.jpg" width=250" alt="setlist"></a>
+	<a href="/gigs/1989/Feb28.html"><img src="${jbc_images}/19890228/19890228_setlist_250.jpg" width=250" alt="setlist"></a>
 
 #define	newsItem[79]->dt	${date(U, 2023-11-19 22:47:00)}
 #define	newsItem[79]->subject 2014-10-24 - Japan gig Poster
 #define	newsItem[79]->link	/gigs/2014/Oct24_1800.html
 #define	newsItem[79]->category	press
 #define	newsItem[79]->body
-	<a href="/gigs/2014/Oct24.html"><img src="/images/20141024/20141024_poster_250.jpg" width=250" alt="poster"></a>
+	<a href="/gigs/2014/Oct24.html"><img src="${jbc_images}/20141024/20141024_poster_250.jpg" width=250" alt="poster"></a>
 
 #define	newsItem[80]->dt	${date(U, 2023-11-19 23:34:00)}
 #define	newsItem[80]->subject 2014-08-20 - Mat Wallis pic
 #define	newsItem[80]->link	/gigs/2014/Aug20_2000.html
 #define	newsItem[80]->category	press
 #define	newsItem[80]->body
-	<a href="/gigs/2014/Aug20_2000.html"><img src="/images/20140820/20140820_group_250.jpg" width=250" alt="photo"></a>
+	<a href="/gigs/2014/Aug20_2000.html"><img src="${jbc_images}/20140820/20140820_group_250.jpg" width=250" alt="photo"></a>
 
 #define	newsItem[81]->dt	${date(U, 2023-11-19 23:40:00)}
 #define	newsItem[81]->subject 2009-10-17 - Gig pic
 #define	newsItem[81]->link	/gigs/2009/Oct17.html
 #define	newsItem[81]->category	press
 #define	newsItem[81]->body
-	<a href="/gigs/2009/Oct17.html"><img src="/images/20091017/20091017_group_250.jpg" width=250" alt="photo"></a>
+	<a href="/gigs/2009/Oct17.html"><img src="${jbc_images}/20091017/20091017_group_250.jpg" width=250" alt="photo"></a>
 
 #define	newsItem[82]->dt	${date(U, 2023-11-23 10:12:00)}
 #define	newsItem[82]->subject 1984-11-13 - Old show uploaded to 'tube.
@@ -909,14 +909,14 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[84]->link	/gigs/1992/Jun12.html
 #define	newsItem[84]->category	press
 #define	newsItem[84]->body
-	<a href="/gigs/1992/Jun12.html"><img src="/images/19920612/19920612_setlist_250.jpg" width=250" alt="setlist"></a>
+	<a href="/gigs/1992/Jun12.html"><img src="${jbc_images}/19920612/19920612_setlist_250.jpg" width=250" alt="setlist"></a>
 
 #define	newsItem[85]->dt	${date(U, 2023-11-27 20:41:00)}
 #define	newsItem[85]->subject 2015-09-22 - Backstage photo
 #define	newsItem[85]->link	/gigs/2015/Sep22_2000.html
 #define	newsItem[85]->category	press
 #define	newsItem[85]->body
-	<a href="/gigs/2015/Sep22_2000.html"><img src="/images/20150922/20150922_william_backstage_250.jpg" width=250" alt="backstage"></a>
+	<a href="/gigs/2015/Sep22_2000.html"><img src="${jbc_images}/20150922/20150922_william_backstage_250.jpg" width=250" alt="backstage"></a>
 
 #define	newsItem->numResults	85
 

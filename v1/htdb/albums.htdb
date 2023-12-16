@@ -2297,10 +2297,10 @@ font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">LINKS</span></u><u><span s
 		</ul>
 
 		<blockquote>
-		<a href="${images}/bigtimesyndromeinner.jpg"><img
-			src="${images}/bigtimesyndromeinner.gif" width=145 height=145></a>
-		<a href="${images}/bigtimesyndrome.jpg"><img
-			src="${images}/bigtimesyndrome.gif" width=145 height=145></a>
+		<a href="${jbc_images}/bigtimesyndromeinner.jpg"><img
+			src="${jbc_images}/bigtimesyndromeinner.gif" width=145 height=145></a>
+		<a href="${jbc_images}/bigtimesyndrome.jpg"><img
+			src="${jbc_images}/bigtimesyndrome.gif" width=145 height=145></a>
 		</blockquote>
 
 		<b>
@@ -2309,12 +2309,12 @@ font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">LINKS</span></u><u><span s
 		<br />
 		(UK/Seventeen Rather GEAR 17/'83)
 		<blockquote>
-		<a href="${images}/whataway_front.jpg"><img
-			src="${images}/whataway_front_145.jpg" width=145 height=145></a>
-		<a href="${images}/whataway_back.jpg"><img
-			src="${images}/whataway_back_145.jpg" width=145 height=145></a>
-		<a href="${images}/whataway.jpg"><img
-			src="${images}/whataway_145.jpg" width=145 height=145></a>
+		<a href="${jbc_images}/whataway_front.jpg"><img
+			src="${jbc_images}/whataway_front_145.jpg" width=145 height=145></a>
+		<a href="${jbc_images}/whataway_back.jpg"><img
+			src="${jbc_images}/whataway_back_145.jpg" width=145 height=145></a>
+		<a href="${jbc_images}/whataway.jpg"><img
+			src="${jbc_images}/whataway_145.jpg" width=145 height=145></a>
 		</blockquote>
 
 		<ul>
@@ -2592,7 +2592,7 @@ Previously available on the ${fishco} LP/CD.
 	)})}
 
 	${clearAlbumPerf(release=va_shadow)}
-	${addAlbumPerf(release=va_shadow, song="Affection", type=Aside, ordinal=5, author=Jonathan Richman, media=/audio/JazzButcher_Affection.mp3)}
+	${addAlbumPerf(release=va_shadow, song="Affection", type=Aside, ordinal=5, author=Jonathan Richman, media=${jbc_audio}/JazzButcher_Affection.mp3)}
 	${addAlbumPerf(release=va_shadow, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals)}
 	${addAlbumPerf(release=va_shadow, person=[[person:Alice_Thompson]], instruments=Organ)}
 
@@ -2605,7 +2605,7 @@ Previously available on the ${fishco} LP/CD.
 	)})}
 
 	${clearAlbumPerf(release=va_seventeen_2)}
-	${addAlbumPerf(release=va_seventeen_2, type=Bside, ordinal=1, song="Chinese Envoy", author=John Cale, media=/audio/JazzButcher_ChineseEnvoy.mp3)}
+	${addAlbumPerf(release=va_seventeen_2, type=Bside, ordinal=1, song="Chinese Envoy", author=John Cale, media=${jbc_audio}/JazzButcher_ChineseEnvoy.mp3)}
 
 	${jbc_footer}
 #live	endif
@@ -2627,7 +2627,7 @@ Previously available on the ${fishco} LP/CD.
 	)})}
 
 	${clearAlbumPerf(release=va_spark)}
-	${addAlbumPerf(release=va_spark, type=Bside, ordinal=10, song="Inside Your Heart", author=Velvet Underground, media=/audio/JazzButcher_TemptationInsideYourHeart.mp3)}
+	${addAlbumPerf(release=va_spark, type=Bside, ordinal=10, song="Inside Your Heart", author=Velvet Underground, media=${jbc_audio}/JazzButcher_TemptationInsideYourHeart.mp3)}
 	${addAlbumPerf(release=va_spark, person=[[person:Mike_Novakovic]], instruments=engineer)}
 	${addAlbumPerf(release=va_spark, person=[[person:Lionel_Brando]], instruments=producer)}
 	${addAlbumPerf(release=va_spark, person=[[person:Pat_Fish]], instruments=Rhythm Guitar\, Vocals\, producer)}
@@ -3296,7 +3296,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=marnie, type=Bside, ordinal=1, song="Zombie Love")}
 	${addAlbumPerf(release=marnie, type=Bside, ordinal=2, song="Girls Who Keep Goldfish", version=live)}
 	${addAlbumPerf(release=marnie, type=Bside, ordinal=3, song="Sweet Jane", version=live)}
-	${addAlbumPerf(release=marnie, type=Bside, ordinal=4, song="Cowgirl Fever", version=live, media=/audio/mp3/cowgirlfever.mp3)}
+	${addAlbumPerf(release=marnie, type=Bside, ordinal=4, song="Cowgirl Fever", version=live, media=${jbc_audio}/mp3/cowgirlfever.mp3)}
 
 	${addAlbumPerf(release=marnie, instruments=engineer, person=[[person:Les_Sanders]])}
 	${addAlbumPerf(release=marnie, instruments=photography, person=[[person:Mitch_Jenkins]])}
@@ -3323,7 +3323,7 @@ Previously available on the ${fishco} LP/CD.
 
 	${addAlbumPerf(release=may, type=Aside, ordinal=1, song="Speedy Gonzalez")}
 	${addAlbumPerf(release=may, type=Aside, ordinal=2, song="Knocking On Heaven's Door")}
-	${addAlbumPerf(release=may, type=Bside, ordinal=1, song="May I", media=/audio/JazzButcher_MayI.mp3)}
+	${addAlbumPerf(release=may, type=Bside, ordinal=1, song="May I", media=${jbc_audio}/JazzButcher_MayI.mp3)}
 	${addAlbumPerf(release=may, type=Bside, ordinal=2, song="Over You")}
 
 	${addAlbumPerf(release=may, person=[[person:Pat_Fish]], instruments=guitar\, vocals)}
@@ -3709,7 +3709,7 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=va_abus_21, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=va_abus_21)}
-	${addAlbumPerf(release=va_abus_21, ordinal=1, song="Vodka Girls", media=/audio/mp3/vodkagirls.mp3)}
+	${addAlbumPerf(release=va_abus_21, ordinal=1, song="Vodka Girls", media=${jbc_audio}/mp3/vodkagirls.mp3)}
 	${addAlbumPerf(release=va_abus_21, person=[[person:Pat_Fish]], instruments=Guitar\, Vocals)}
 	${addAlbumPerf(release=va_abus_21, person=[[person:Nick_Burson]], instruments=Drums)}
 	${addAlbumPerf(release=va_abus_21, person=[[person:Dooj_Wilkinson]], instruments=Bass\, Vocals)}
@@ -4044,7 +4044,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=cdr_guestpass2000, ordinal=1, song="Doktor Anthrax")}
 	${addAlbumPerf(release=cdr_guestpass2000, ordinal=2, song="Don't Let Me Keep You")}
 	${addAlbumPerf(release=cdr_guestpass2000, ordinal=3, song="Hey Now Baby (My Arse Is On Fire)")}
-	${addAlbumPerf(release=cdr_guestpass2000, ordinal=4, song="The Hobbu Song", media=/audio/tunes/hobbu.mp3)}
+	${addAlbumPerf(release=cdr_guestpass2000, ordinal=4, song="The Hobbu Song", media=${jbc_audio}/tunes/hobbu.mp3)}
 
 	${jbc_footer}
 #live	endif
@@ -4097,7 +4097,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=lunch, ordinal=7, song="Still & All")}
 	${addAlbumPerf(release=lunch, ordinal=8, song="Monkeyface")}
 	${addAlbumPerf(release=lunch, ordinal=9, song="Bakersfield")}
-	${addAlbumPerf(release=lunch, ordinal=10, song="Vodka Girls", media=/audio/mp3/vodkagirls.mp3)}
+	${addAlbumPerf(release=lunch, ordinal=10, song="Vodka Girls", media=${jbc_audio}/mp3/vodkagirls.mp3)}
 	${addAlbumPerf(release=lunch, ordinal=11, song="President Chang")}
 	${addAlbumPerf(release=lunch, ordinal=12, song="Scarlett")}
 	${addAlbumPerf(release=lunch, ordinal=13, song="Cops And Hospitals")}
@@ -4184,11 +4184,11 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=cake, type=Bside, ordinal=1, song="Big Old Wind")}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=2, song="City Of Night")}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=3, song="Sweet Jane")}
-	${addAlbumPerf(release=cake, type=Bside, ordinal=4, song="Affection", version=CD only, media=/audio/JazzButcher_Affection.mp3)}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=4, song="Affection", version=CD only, media=${jbc_audio}/JazzButcher_Affection.mp3)}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=5, song="Speedy Gonzales", version=CD only)}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=6, song="Knocking On Heaven's Door")}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=7, song="Over You", version=CD only)}
-	${addAlbumPerf(release=cake, type=Bside, ordinal=8, song="May I?", version=CD only, media=/audio/JazzButcher_MayI.mp3)}
+	${addAlbumPerf(release=cake, type=Bside, ordinal=8, song="May I?", version=CD only, media=${jbc_audio}/JazzButcher_MayI.mp3)}
 	${addAlbumPerf(release=cake, type=Bside, ordinal=9, song="Water", version=CD only)}
 
 	${jbc_footer}
@@ -4297,11 +4297,11 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=audio_aquatic_demo, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=audio_aquatic_demo)}
-	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", media=/audio/AudioAquatic/AudioAquatic_01_ComeFriendlySpacemen.mp3, url=${jbc_lyrics}/sumosonic_come_friendly_spacemen.html, version=extended, project=sumo)}
-	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=2, song="God's Green Earth", media=/audio/AudioAquatic/AudioAquatic_02_GodsGreenEarth.mp3, url=${jbc_lyrics}/sumosonic_gods_green_earth.html, project=sumo)}
-	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=3, song="Fern Schnell Gut", media=/audio/AudioAquatic/AudioAquatic_03_FernSchnellGut.mp3, url=${jbc_lyrics}/sumosonic_fern_schnell_gut.html, project=sumo)}
-	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=4, song="Destroy All Monsters", media=/audio/AudioAquatic/udioAquatic_04_DestroyAllMonsters.mp3, url=${jbc_lyrics}/sumosonic_destroy_all_monsters.html, project=sumo)}
-	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=5, song="We Are The Traffic", media=/audio/AudioAquatic/AudioAquatic_06_WeAreTheTraffic.mp3, url=${jbc_lyrics}/sumosonic_we_are_the_traffic.html, project=sumo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", media=${jbc_audio}/AudioAquatic/AudioAquatic_01_ComeFriendlySpacemen.mp3, url=${jbc_lyrics}/sumosonic_come_friendly_spacemen.html, version=extended, project=sumo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=2, song="God's Green Earth", media=${jbc_audio}/AudioAquatic/AudioAquatic_02_GodsGreenEarth.mp3, url=${jbc_lyrics}/sumosonic_gods_green_earth.html, project=sumo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=3, song="Fern Schnell Gut", media=${jbc_audio}/AudioAquatic/AudioAquatic_03_FernSchnellGut.mp3, url=${jbc_lyrics}/sumosonic_fern_schnell_gut.html, project=sumo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=4, song="Destroy All Monsters", media=${jbc_audio}/AudioAquatic/udioAquatic_04_DestroyAllMonsters.mp3, url=${jbc_lyrics}/sumosonic_destroy_all_monsters.html, project=sumo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=5, song="We Are The Traffic", media=${jbc_audio}/AudioAquatic/AudioAquatic_06_WeAreTheTraffic.mp3, url=${jbc_lyrics}/sumosonic_we_are_the_traffic.html, project=sumo)}
 
 	${jbc_footer}
 #live	endif
@@ -4498,7 +4498,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=11, song="Blame", version=Spooky 12er B-side)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=12, song="Excellent!", version=Girl-Go 12er Version)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=13, song="President Chang", version=Von Daemmerung Remix)}
-	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=14, song="Vodka Girls", version=Abus Dangereux magazine compilation, media=/audio/mp3/vodkagirls.mp3)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=14, song="Vodka Girls", version=Abus Dangereux magazine compilation, media=${jbc_audio}/mp3/vodkagirls.mp3)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD2, ordinal=15, song="Truck Of Fear", version=Sixteen Years CD Single Version)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=1, song="Conspiracy", version=12er Version)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=2, song="Forever", version=Conspiracy 12er Version)}
@@ -4511,11 +4511,11 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=9, song="Thing", version=Hard 12er B-side)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=10, song="Rebecca Wants Her Bike Back", version=Angels 12er B-side)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=11, song="Almost Brooklyn", version=New Invention 12er B-side, media=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/tunes/Almost_Brooklyn.mp3)}
-	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=12, song="May I", version=Speedy Gonzalez 7er B-side, media=/audio/JazzButcher_MayI.mp3)}
-	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=13, song="Affection", version=12er Version, media=/audio/JazzButcher_Affection.mp3)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=12, song="May I", version=Speedy Gonzalez 7er B-side, media=${jbc_audio}/JazzButcher_MayI.mp3)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=13, song="Affection", version=12er Version, media=${jbc_audio}/JazzButcher_Affection.mp3)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=14, song="Over You", version=Speedy Gonzalez 7er B-side)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=15, song="Girls Who Keep Goldfish", version=Marnie 12er B-side)}
-	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=16, song="Cowgirl Fever", version=Marnie 12er B-side, media=/audio/mp3/cowgirlfever.mp3)}
+	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=16, song="Cowgirl Fever", version=Marnie 12er B-side, media=${jbc_audio}/mp3/cowgirlfever.mp3)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD3, ordinal=17, song="Knocking On Heaven's Door", version=Speedy Gonzalez 12er B-side)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=1, song="New Invention", version=Live KCRW Session 1989)}
 	${addAlbumPerf(release=fire_cholmondley, type=CD4, ordinal=2, song="Chickentown", version=Live KCRW Session 1989)}
@@ -4658,8 +4658,8 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=wilson_demo_2005, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=wilson_demo_2005)}
-	${addAlbumPerf(release=wilson_demo_2005, song="Buffalo Sniper", ordinal=1, media=/audio/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3, project=wilson, category=demo)}
-	${addAlbumPerf(release=wilson_demo_2005, song="Police Chief", ordinal=2, media=/audio/Wilson_200511/02_Wilson_200511_Police_Chief.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2005, song="Buffalo Sniper", ordinal=1, media=${jbc_audio}/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2005, song="Police Chief", ordinal=2, media=${jbc_audio}/Wilson_200511/02_Wilson_200511_Police_Chief.mp3, project=wilson, category=demo)}
 
 	${jbc_footer}
 #live	endif
@@ -4671,8 +4671,8 @@ Previously available on the ${fishco} LP/CD.
 	${clearAlbumPerf(release=wilson_demo_2003)}
 	${addAlbumPerf(release=wilson_demo_2003, person=[[person:Andy_Parker]], instruments=Recorded)}
 	${addAlbumPerf(release=wilson_demo_2003, person=[[person:David_Ross_Skinner]], instruments=Produced)}
-	${addAlbumPerf(release=wilson_demo_2003, song="Istanbul Connection", ordinal=1, media=/audio/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3, project=wilson, category=demo)}
-	${addAlbumPerf(release=wilson_demo_2003, song="Quality People", ordinal=2, media=/audio/Wilson_200304/02_Wilson_200304_Quality_People.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2003, song="Istanbul Connection", ordinal=1, media=${jbc_audio}/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2003, song="Quality People", ordinal=2, media=${jbc_audio}/Wilson_200304/02_Wilson_200304_Quality_People.mp3, project=wilson, category=demo)}
 
 	${jbc_footer}
 #live	endif
@@ -4682,12 +4682,12 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=wilson_demo_2002, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=wilson_demo_2002)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Quality People", ordinal=1, media=/audio/Wilson_2002/01_Wilson_2002_Quality_People.mp3, project=wilson, category=demo)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Istanbul Connection", ordinal=2, media=/audio/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3, project=wilson, category=demo)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Hippy Shit", ordinal=3, media=/audio/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3, project=wilson, category=demo)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Play It All Night Long", ordinal=4, media=/audio/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3, author=Warren Zevon, project=wilson, category=demo)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Burn\, Hollywood\, Burn", ordinal=5, media=/audio/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3, project=wilson, category=demo)}
-	${addAlbumPerf(release=wilson_demo_2002, song="Dark Agenda", ordinal=6, media=/audio/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Quality People", ordinal=1, media=${jbc_audio}/Wilson_2002/01_Wilson_2002_Quality_People.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Istanbul Connection", ordinal=2, media=${jbc_audio}/Wilson_2002/02_Wilson_2002_Istanbul_Connection.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Hippy Shit", ordinal=3, media=${jbc_audio}/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Play It All Night Long", ordinal=4, media=${jbc_audio}/Wilson_2002/04_Wilson_2002_Play_It_All_Night_Long.mp3, author=Warren Zevon, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Burn\, Hollywood\, Burn", ordinal=5, media=${jbc_audio}/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3, project=wilson, category=demo)}
+	${addAlbumPerf(release=wilson_demo_2002, song="Dark Agenda", ordinal=6, media=${jbc_audio}/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, project=wilson, category=demo)}
 
 	${jbc_footer}
 #live	endif

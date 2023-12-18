@@ -102,7 +102,7 @@ const RecentUpdates = () => {
 		<RecentPress press={press} />
 		<RecentReleases releases={releases} />
 		<RecentFeedback feedback={feedback} />
-		<RecentMedia media={media} />
+		{/*<RecentMedia media={media} />*/}
 		<RecentNews />
 		<p />
 	</Suspense>)

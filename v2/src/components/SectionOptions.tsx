@@ -1,4 +1,4 @@
-//"use server"
+"use server"
 
 import { sectionOptions} from '@/components/Header';
 import MakeSimpleURI from '@/components/MakeSimpleURI';

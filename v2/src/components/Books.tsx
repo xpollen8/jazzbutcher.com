@@ -22,10 +22,11 @@ export const BookMiraclesAndWonders = () =>
 	>
 		<>
 			<i>A Meandering, Cacophonous Concordance of The Jazz Butcher Songbook</i>,
-			by Pat Fish & Philip Snow, will be officially published on the first day of May, 2022.
-			<p>
+			by Pat Fish & Philip Snow.
+			<p />
 				A 400 page volume with hundreds of illustrations, many uniquely sourced from the
 				Fishy Mansions Archives and friends worldwide.  Big Answers, finally.
-			</p>
+			<p />
+			<div className="date">2022-05-01</div>
 		</>
 	</FeaturedItem>

@@ -73,6 +73,7 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	'audio/released': { parent: 'audio', title: 'Released tracks', summary: "Official recordings", inParentDirectory: false },
 	'audio/unreleased': { parent: 'audio', title: 'Un-released tracks', summary: "", inParentDirectory: false },
+	'audio/miracles_interviews': { parent: 'audio', title: "'Miracles & Wonders' Interviews", body: "Philip Snow conducted 16 recorded interviews with Pat which served as source material for their book 'Miracles & Wonders'.  Some of those raw audio files are presented here. More may be forthcoming", inParentDirectory: false },
 	'audio/live': { parent: 'audio', title: 'Live Recordings', summary: "Non-official recordings", inParentDirectory: false },
 	'press?filters=audio;;audio': { parent: 'audio', title: 'Recorded Interviews', summary: "Radio, online", body: "This re-directs to those Press Items which are have Audio", inParentDirectory: false },
 	'releases?filters=type;;demo': { parent: 'audio', title: 'Demos', summary: "Demos/sent to fans", body: "This re-directs to those Releases which are Demos", inParentDirectory: false },
@@ -190,10 +191,10 @@ export const sectionOptions = (match: string) => {
 		const this_section = sections[section];
 		const parent_section = this_section?.parent && sections[this_section?.parent];
 		return {
-			uri: (parent_section && this_section?.inParentDirectory) ? `/${this_section?.parent}/${section}` : `/${section}`,
+			uri: section?.includes('/') ? section : (parent_section && this_section?.inParentDirectory) ? `/${this_section?.parent}/${section}` : `/${section}`,
 			...sections[section] }
 		})
-		?.filter((section: any) => section?.parent && (section?.parent === match))
+		?.filter((section: any) => section?.parent === match || (section?.uri?.includes('/') && section.uri === match))
 		.map((section: any) => {
 		return {
 			uri: section.uri,

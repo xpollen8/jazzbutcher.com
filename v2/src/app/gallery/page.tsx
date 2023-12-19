@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionOptions from '@/components/SectionOptions';
 import PhotoSet from '@/components/PhotoSet';
+import MakeSimpleURI from '@/components/MakeSimpleURI';
 import Tag from '@/components/Tag';
 
 const gallery = [

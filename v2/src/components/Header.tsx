@@ -109,6 +109,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	gallery: { parent: 'conspirators', title: 'Gallery', summary: "Photography from all eras"  },
 	//'gallery/mitch_jenkins': { parent: 'gallery', title: 'Mitch Jenkins' },
 	'gallery/mick_mercer': { parent: 'gallery', title: 'Mick Mercer' },
+	'gallery/interesting': { parent: 'gallery', title: 'Interesting Photosets' },
 	//'gallery/dave_barker': { parent: 'gallery', title: 'David E. Barker' },
 	//'gallery/david_whittemore': { parent: 'gallery', title: 'David Whittemore' },
 	//'gallery/ruth_tidmarsh': { parent: 'gallery', title: 'Ruth Tidmarsh' },

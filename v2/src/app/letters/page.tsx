@@ -29,9 +29,11 @@ const Letters = () =>
 		&quot;Letters From Pat&quot; covers news and answers to fan questions in 9 lengthy letters.
 			</>
 		/>
+		<p />
 		<div className="flex flex-wrap justify-around">
 			<div className="min-w-[50%]">
 				{letters.map(MakeSimpleURI)}
+				<p />
 			</div>
 			<div className="m-1">
 				<center>

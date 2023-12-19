@@ -5,6 +5,7 @@ import OnThisDay from '@/components/OnThisDay';
 import RecentUpdates from '@/components/RecentUpdates';
 import Memorial from '@/components/Memorial';
 import { BookSikkorski, BookMiraclesAndWonders } from '@/components/Books';
+import { MostRecentNews } from '@/components/News';
 import Tag from '@/components/Tag';
 
 const HomeBooks = () =>
@@ -34,7 +35,7 @@ const Home = (): React.ReactNode =>
 						<Memorial home={true} />
 					</Link>
 				</div>
-				<RecentUpdates />
+				<MostRecentNews />
 				<div className="max-w-lg grow">
 					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
 					<HomeBooks />
@@ -42,6 +43,7 @@ const Home = (): React.ReactNode =>
 				</div>
 			</div>
 			<div className="max-w-lg grow">
+				<RecentUpdates />
 				<Tag style={{ marginBottom: '10px' }}>Recent Releases</Tag>
 				<HomeReleases />
 			</div>

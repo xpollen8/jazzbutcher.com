@@ -79,6 +79,11 @@ const nextConfig = {
 				},
 				// remove ".html" from all URLs
 				{
+					source: '/htdb/:path*.html',
+					destination: '/:path*',
+					permanent: true,
+				},
+				{
 					source: '/:path*.html',
 					destination: '/:path*',
 					permanent: false,

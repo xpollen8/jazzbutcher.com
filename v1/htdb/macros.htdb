@@ -985,7 +985,7 @@
 #define	audio			https://v1.jazzbutcher.com/audio
 #define	images			https://v1.jazzbutcher.com/images
 #define	jbc_images		https://v1.jazzbutcher.com/images
-#define	jbc_mp3			https://v1.jazzbutcher.com/mp3
+#define	jbc_mp3			https://v1.jazzbutcher.com/audio/mp3
 #define	jbc_video		https://v1.jazzbutcher.com/video
 #define	jbc_audio		https://v1.jazzbutcher.com/audio
 #define	jbc_mad_images	https://v1.jazzbutcher.com/images/mad
@@ -1163,6 +1163,7 @@ font.load().then(function () {
 	${mkSimpleURI(uri=${jbc_news}, text=News)}
 	${mkSimpleURI(uri=${jbc_help}, text=Contribute!)}
 	${mkSimpleURI(uri=${jbc_etc}, text=etc..)}
+	${mkSimpleURI(uri=https://jazzbutcher.com, text=JBC V2)}
 	<div class="nav_heading">Projects</div>
 	${mkSimpleURI(uri=${jbc_search}?f=extras&q=eg, text=Black Eg)}
 	${mkSimpleURI(uri=${jbc_search}?f=extras&q=sumo, text=Sumosonic)}

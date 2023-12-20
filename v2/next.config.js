@@ -23,6 +23,11 @@ const nextConfig = {
 					permanent: false,
 				},
 				{
+					source: '/gigs/search.html',
+					destination: '/gigs',
+					permanent: false,
+				},
+				{
 					source: '/conspirators/gallery',
 					destination: '/gallery',
 					permanent: false,

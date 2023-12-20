@@ -3816,7 +3816,6 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 	THE PLYMOUTH FASTBACKS were formed out of the two late-lamented bands, "GRINGOS ON HEAT" from San Diego and
 	"THE TWISTED PRETZELS" from L.A.  They have been together for a year and have played 300 gigs in that year.
 	"Red Russians" us a track sfrom their forthecoming LP "PUSSYCATS IN THE SOUP".
-#define	albums[104]->audio	https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/1984_CityOfSilver/The+Plymouth+Fastbucks+-+Red+Russians+Shot+My+Rocket+Down.mp3;;President Reagan's Birthday Present::1::Red Russians Shot My Rocket Down
 
 #define	albums->numResults	105
 

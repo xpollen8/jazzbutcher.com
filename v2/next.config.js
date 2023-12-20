@@ -23,6 +23,11 @@ const nextConfig = {
 					permanent: false,
 				},
 				{
+					source: '/gigs/search.html',
+					destination: '/gigs',
+					permanent: false,
+				},
+				{
 					source: '/conspirators/gallery',
 					destination: '/gallery',
 					permanent: false,
@@ -78,6 +83,11 @@ const nextConfig = {
 					permanent: false,
 				},
 				// remove ".html" from all URLs
+				{
+					source: '/htdb/:path*.html',
+					destination: '/:path*',
+					permanent: true,
+				},
 				{
 					source: '/:path*.html',
 					destination: '/:path*',

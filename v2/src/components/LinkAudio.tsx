@@ -32,6 +32,8 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 	title = title?.replace(/\\/g, '');	// get rid of HTDB backslashes
 	const { thumb, image } = parseImage(release?.thumb);
 
+	const fixDomain = (url: string) => url.replace('http://jazzbutcher.com/audio', 'https://v1.jazzbutcher.com/audio');
+
 	return <Suspense fallback=<>Loading...</> >
 		<div className="audioPlayer listItem">
 			<span className="audio_title">
@@ -67,13 +69,13 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 				<div className="w-full">
 				{(mp3) &&
 				<audio controls title={title} preload="none" className="audio_player">
-					<source src={mp3} type="audio/mpeg" />
+					<source src={fixDomain(mp3)} type="audio/mpeg" />
 					Your browser does not support the audio element.
 				</audio>
 				}
 				{(wav) &&
 				<audio controls title={title} preload="none" className="audio_player">
-					<source src={wav} type="audio/wav" />
+					<source src={fixDomain(wav)} type="audio/wav" />
 					Your browser does not support the audio element.
 				</audio>
 				}

@@ -53,7 +53,7 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The words' },
 	audio: { parent: 'jbc', title: 'Audio', rootHideChildren: false },
-	video: { parent: 'jbc', title: 'Video', rootHideChildren: true },
+	video: { parent: 'jbc', title: 'Video', summary: 'Huge/unorganized. Sorry!', rootHideChildren: true },
 	press: { parent: 'jbc', title: 'Press', summary: "Reviews, Interviews, etc", rootHideChildren: true },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives', rootHideChildren: true },
 	'press?filters=type%3B%3Bpat': { parent: 'gigs', title: "Pat's Gig Reviews" },

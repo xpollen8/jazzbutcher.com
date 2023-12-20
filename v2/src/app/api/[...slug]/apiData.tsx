@@ -52,7 +52,7 @@ const doFetch = async (url: string) => {
 			return cache[url];
 		})
 		.catch((e) => {
-			console.log("ERR", e.cause);
+			console.log("ERR", url, e);
 			return { results: [], error: e?.cause?.code };
 		});
 }

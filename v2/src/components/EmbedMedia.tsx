@@ -2,6 +2,7 @@ import Link from 'next/link';
 import LinkAudio from '@/components/LinkAudio';
 import EmbedVideo from '@/components/EmbedVideo';
 import { imageBase, autoLink, ts2URI } from '@/lib/utils';
+import { expand } from '@/lib/defines';
 import { Attribution } from '@/components/GenericWeb';
 
 const Performers = ({ datetime }: { datetime: string }) => {
@@ -155,80 +156,77 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 	const useArtist = artist?.replace('NULL','');
 	const useAuthor = author?.replace('NULL','');
 
-	return (<>
-		{(() => {
-			if (useMediaurl && !disableVideo) {
-				if (useMediaurl?.includes('mixcloud.com')) {
-					return <>
-						<EmbedMixCloud data={data}>
-							{children}
-						</EmbedMixCloud>
-					</>
-				} else if (useMediaurl?.includes('bandcamp.com')) {
-					return <>
-						<EmbedBandcamp data={data}>
-							{children}
-						</EmbedBandcamp>
-					</>
-				} else if (useMediaurl?.includes('kcrw.com')) {
-					return <>
-						<EmbedKCRW data={data}>
-							{children}
-						</EmbedKCRW>
-					</>
-				} else if (useMediaurl?.includes('podomatic.com')) {
-					return <>
-						<EmbedPodomatic data={data}>
-							{children}
-						</EmbedPodomatic>
-					</>
-				} else if (useMediaurl?.includes('soundcloud.com')) {
-					return <>
-						<EmbedSoundCloud data={data}>
-							{children}
-						</EmbedSoundCloud>
-					</>
-				} else if (useMediaurl?.includes('.mp3')) {
-					return (<>
-						<LinkAudio version={version} lookup={lookup} parent={parent} title={useTitle} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={useArtist} author={useAuthor} comment={comment} ordinal={ordinal} setnum={setnum} collection={collection} />
-						{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
-						{collection}
+	const main = () => {
+		if (useMediaurl && !disableVideo) {
+			if (useMediaurl?.includes('mixcloud.com')) {
+				return <>
+					<EmbedMixCloud data={data}>
 						{children}
-					</>)
-				} else {
-					return (<div className="listItem">
-						{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
-
-						{!!(city?.length && venue?.length && datetime?.length && !datetime.match(/0000-00-00 00:00:00/)) && <>
-							{(parent) && <Link href={parent}><b>{datetime?.substring(0, 10)}</b></Link>}
-							{!(parent) && <Link href={`/gigs/${ts2URI(datetime)}`}><b>{datetime?.substring(0, 10)}</b></Link>}
-							{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
-						</>}
-						{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
-						{(useAuthor) && <span className="smalltext">{' '}({useAuthor})</span>}
-						{/*(comment) && <span className="smalltext">{' '} ({comment}) </span>*/}
-						<EmbedVideo className={className} data={data} />
+					</EmbedMixCloud>
+				</>
+			} else if (useMediaurl?.includes('bandcamp.com')) {
+				return <>
+					<EmbedBandcamp data={data}>
 						{children}
-						{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
-					</div>);
-				}
+					</EmbedBandcamp>
+				</>
+			} else if (useMediaurl?.includes('kcrw.com')) {
+				return <>
+					<EmbedKCRW data={data}>
+						{children}
+					</EmbedKCRW>
+				</>
+			} else if (useMediaurl?.includes('podomatic.com')) {
+				return <>
+					<EmbedPodomatic data={data}>
+						{children}
+					</EmbedPodomatic>
+				</>
+			} else if (useMediaurl?.includes('soundcloud.com')) {
+				return <>
+					<EmbedSoundCloud data={data}>
+						{children}
+					</EmbedSoundCloud>
+				</>
+			} else if (useMediaurl?.includes('.mp3')) {
+				return (<>
+					<LinkAudio version={version} lookup={lookup} parent={parent} title={useTitle} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={useArtist} author={useAuthor} comment={comment} ordinal={ordinal} setnum={setnum} collection={collection} />
+					{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
+					{collection}
+					{children}
+				</>)
 			} else {
 				return (<div className="listItem">
 					{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
+
+					{!!(city?.length && venue?.length && datetime?.length && !datetime.match(/0000-00-00 00:00:00/)) && <>
+						{(parent) && <Link href={parent}><b>{datetime?.substring(0, 10)}</b></Link>}
+						{!(parent) && <Link href={`/gigs/${ts2URI(datetime)}`}><b>{datetime?.substring(0, 10)}</b></Link>}
+						{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
+					</>}
 					{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
-					{(useAuthor) && <span className="smalltext"> ({useAuthor}) </span>}
-					{(comment) && <span className="smalltext"> ({comment}) </span>}
-					{/*(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>*/}
+					{(useAuthor) && <span className="smalltext">{' '}({useAuthor})</span>}
+					{/*(comment) && <span className="smalltext">{' '} ({comment}) </span>*/}
+					<EmbedVideo className={className} data={data} />
+					{children}
+					{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 				</div>);
 			}
-		})()}
-		{(() => {
-			return (<>
-				{(performers) && <div className="smalltext"> {performers} </div>}
-				<Performers datetime={datetime} />
-			</>);
-		})()}
-	</>)
+		} else {
+			return (<div className="listItem">
+				{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
+				{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
+				{(useAuthor) && <span className="smalltext"> ({useAuthor}) </span>}
+				{(comment) && <span className="smalltext"> ({comment}) </span>}
+				{/*(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>*/}
+			</div>);
+		}
+	}
+	return (<>
+		{main()}
+		{(performers) && <div className="smalltext"> {performers.split(' ').map((r: string) => { console.log("X", r); return <>{' '}{expand(r.replace('${','').replace('}',''))}</> })} </div>}
+		<Performers datetime={datetime} />
+	</>);
 }
 
 export default EmbedMedia;

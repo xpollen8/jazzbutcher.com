@@ -14,7 +14,7 @@ const RecentPress = (props: any) => {
 	const { press } = props;
 	if (!press?.numResults) return;
 	return <details>
-		<summary className="tagClickable">Recent updates to press items: {press.numResults}</summary>
+		<summary className="tagClickable">Recent press updates: {press.numResults}</summary>
 		<blockquote>
 			{press.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">
@@ -76,7 +76,7 @@ const RecentReleases = (props: any) => {
 	const { releases } = props;
 	if (!releases?.numResults) return;
 	return <details>
-		<summary className="tagClickable">Recent updates to releases: {releases.numResults}</summary>
+		<summary className="tagClickable">Recent releases updates: {releases.numResults}</summary>
 		<blockquote>
 			{releases.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">

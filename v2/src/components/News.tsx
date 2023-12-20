@@ -107,22 +107,25 @@ const displayNewsItem = (n: NewsItemType) => {
 export const MostRecentNews = () => displayNewsItem(recentNews[0] as NewsItemType);
 
 const News = () => {
-let year: number;
-return <>
-	{newsItems?.map((n: NewsItemType, key: number) => {
-		const yr = parseInt(n.dt, 10);
-		let banner;
-		if (yr !== year) {
-			year = yr;
-			banner = <Tag>{year}</Tag>;
-		}
+	let year: number;
+	return <>
+		<details>
+			<summary className="tagClickable">Full website update log: {newsItems?.length}</summary>
+			{newsItems?.map((n: NewsItemType, key: number) => {
+				const yr = parseInt(n.dt, 10);
+				let banner;
+				if (yr !== year) {
+					year = yr;
+					banner = <Tag>{year}</Tag>;
+				}
 
-		return <div key={key}>
-			{banner}
-			{displayNewsItem(n)}
-		</div>
-	})}
-</>
+				return <div key={key}>
+					{banner}
+					{displayNewsItem(n)}
+				</div>
+			})}
+		</details>
+	</>
 }
 
 export default News;

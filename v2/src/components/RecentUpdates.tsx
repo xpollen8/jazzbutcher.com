@@ -88,12 +88,6 @@ const RecentReleases = (props: any) => {
 	</details>
 }
 
-const RecentNews = () => {
-	return <details>
-		<summary className="tagClickable">Full website update log</summary>
-			<News />
-	</details>
-}
 const RecentUpdates = () => {
 	const { data, isLoading, error} = useRecentUpdates();
 	const { press, media, feedback, releases } = data || {};
@@ -103,7 +97,7 @@ const RecentUpdates = () => {
 		<RecentReleases releases={releases} />
 		<RecentFeedback feedback={feedback} />
 		{/*<RecentMedia media={media} />*/}
-		<RecentNews />
+		<News />
 		<p />
 	</Suspense>)
 }

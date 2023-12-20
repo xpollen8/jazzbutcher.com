@@ -143,7 +143,7 @@ const sections : { [key: string]: BreadCrumb } = {
 
 	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content', rootHideChildren: true },
 	help: { parent: 'jbc', title: 'Get Involved!' },
-	admin: { parent: 'jbc', title: "Website Management", hide: false },
+	//admin: { parent: 'jbc', title: "Website Management", hide: false },
 	'https://v1.jazzbutcher.com': { parent: 'jbc', title: "Old site", hide: false },
 }
 

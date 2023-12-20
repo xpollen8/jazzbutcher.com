@@ -29,7 +29,7 @@ const EmbedVideo = ({ data = {}, className, children }: { data: any, className?:
 			} else {
 				// youtube/vimeo/myspace(h1)
 				//const urlClean = mediaurl?.replace('https://vimeo.com/', 'https://assets.jazzbutcher.com/video/');
-				const urlClean = mediaurl;
+				const urlClean = mediaurl?.replace('/jazzbutcher.com/video', '/v1.jazzbutcher.com/video');
 				return (
 					<div className="js-video [vimeo, widescreen]">
 						<iframe width={560} height={315} src={`${urlClean}?showinfo=0`} frameBorder={0} allowFullScreen></iframe>

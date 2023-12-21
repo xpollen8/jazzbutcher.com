@@ -11,9 +11,9 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 	const blurb0 = parsed_blurb[0] || [];
 	const [ blurb_text, blurb_credit, blurb_crediturl, blurb_creditdate ] = blurb0;
 
-	if (!title) return <></>;
+	//if (!title) return <></>;
 	return (
-		<div key={key || 0}>
+		<div key={key}>
 			<FeaturedItem
 				className={`w-full`}
 				link={inPage ? undefined : href}
@@ -24,12 +24,10 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 				image={truncAt(';;', thumb || '')}
 				alt={`${title} cover`}
 			>
-					<>
-					<Contribution titles={contribution} />
-					{(blurb_text) && <div dangerouslySetInnerHTML={{__html: blurb_text}} />}
-					{(blurb_credit) && <Attribution g={blurb_credit} u={blurb_crediturl} d={blurb_creditdate} />}
-					{children}
-					</>
+				<Contribution titles={contribution} />
+				{(blurb_text) && <div dangerouslySetInnerHTML={{__html: blurb_text}} />}
+				{(blurb_credit) && <Attribution g={blurb_credit} u={blurb_crediturl} d={blurb_creditdate} />}
+				{children}
 			</FeaturedItem>
 		</div>
 	)

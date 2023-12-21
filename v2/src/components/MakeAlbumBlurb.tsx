@@ -11,9 +11,9 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 	const blurb0 = parsed_blurb[0] || [];
 	const [ blurb_text, blurb_credit, blurb_crediturl, blurb_creditdate ] = blurb0;
 
-	//if (!title) return <></>;
+	if (!title) return <></>;
 	return (
-		<div key={key}>
+		<div key={key || 0}>
 			<FeaturedItem
 				className={`w-full`}
 				link={inPage ? undefined : href}

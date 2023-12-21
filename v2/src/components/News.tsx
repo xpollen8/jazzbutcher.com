@@ -22,8 +22,8 @@ const recentNews = [
 		subject: "jazzbutcher.com V2 launched",
 		body: <>For its first 10,588 days, jazzbutcher.com was delivered by David Whittemore&apos;s &quot;HTDB&quot; toy language.
 		<p />While effective in serving you the wholesome Jazz Butcher information you&apos;ve come to love, HTDB had a few flaws: 1) Only Whittemore knew how to use it, 2) It was difficult to manage data in a structured manner. 3) There are easier to use ways to generate web content.
-		<p />In the interest of future-proofing jazzbutcher.com, in 2023, Whittemore spent 6 months porting the HTDB content into structured data,
-		using the React framework.  In the process, much new content was added, and navigation was made more concise.
+		<p />In 2023, 6 months were spent porting the HTDB site into React and api-driven structured data.
+		In the process, much new content was added, and everything was generally cleaned-up.
 		<p />A couple sections (the old mailing list, the &quot;conspirators&quot;) still need porting, but we wanted to deploy prior to what would have been Pat&apos;s 66th birthday.
 		<p />
 		The old/V1 site is now at <Link href="https://v1.jazzbutcher.com">v1.jazzbutcher.com</Link>
@@ -107,22 +107,25 @@ const displayNewsItem = (n: NewsItemType) => {
 export const MostRecentNews = () => displayNewsItem(recentNews[0] as NewsItemType);
 
 const News = () => {
-let year: number;
-return <>
-	{newsItems?.map((n: NewsItemType, key: number) => {
-		const yr = parseInt(n.dt, 10);
-		let banner;
-		if (yr !== year) {
-			year = yr;
-			banner = <Tag>{year}</Tag>;
-		}
+	let year: number;
+	return <>
+		<details>
+			<summary className="tagClickable">Full website update log: {newsItems?.length}</summary>
+			{newsItems?.map((n: NewsItemType, key: number) => {
+				const yr = parseInt(n.dt, 10);
+				let banner;
+				if (yr !== year) {
+					year = yr;
+					banner = <Tag>{year}</Tag>;
+				}
 
-		return <div key={key}>
-			{banner}
-			{displayNewsItem(n)}
-		</div>
-	})}
-</>
+				return <div key={key}>
+					{banner}
+					{displayNewsItem(n)}
+				</div>
+			})}
+		</details>
+	</>
 }
 
 export default News;

@@ -24,12 +24,12 @@ const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined)
 				image={truncAt(';;', thumb || '')}
 				alt={`${title} cover`}
 			>
-					<>
+				<>
 					<Contribution titles={contribution} />
 					{(blurb_text) && <div dangerouslySetInnerHTML={{__html: blurb_text}} />}
 					{(blurb_credit) && <Attribution g={blurb_credit} u={blurb_crediturl} d={blurb_creditdate} />}
 					{children}
-					</>
+				</>
 			</FeaturedItem>
 		</div>
 	)

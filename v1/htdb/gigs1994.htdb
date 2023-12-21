@@ -569,7 +569,10 @@
 	${gigHeader(
 
 		cost=&pound;1:00,
-		posters= /images/19940624/19940624_poster2.jpg;;A second flyer for the same gig!$$,
+		posters=
+			/images/19940624/19940624_poster.jpg$$
+			/images/19940624/19940624_poster2.jpg;;A second flyer for the same gig!$$
+		,
 		who=${literalizeCommas( ${pat}, ${hend} )}
 
 

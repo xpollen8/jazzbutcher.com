@@ -178,7 +178,8 @@
 		)},
 		photosets= /images/20150619/20150619_leighton_gig.jpg$$
 			Leighton Bobby Cousins
-		,posters=/images/20150619/20150619_poster2.jpg$$
+		,posters=/images/20150619/20150619_poster.jpg$$
+			/images/20150619/20150619_poster2.jpg$$
 	)}
 
 #define	Jun20.html()

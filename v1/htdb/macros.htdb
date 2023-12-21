@@ -3498,25 +3498,23 @@ ${define(_set, false)}
 #live	if (defined(UX))
 #live		if (makeArray(s, ${EOS}, ${unfilter(${posters})}))
 #live			loop(x, 1, ${s->numResults})
-
 #live				if (makeArray(p, ${EOD}, ${unfilter(${s[${x}]})}))
-#live				if (getval(p[${p->numResults}]) == $EOI)
-#live				if (define(_credits, \, ${credit2SQL(p[${p->numResults}])}))
-#live				endif
-#live				else
-#live				if (define(_credits,)
-#live				endif
-#live				endif
-#live				loop(y, 1, ${p->numResults})
-#live				if ((getval(p[${y}]) == .jpg))
-#live				if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", type='poster', image="${truncAt(${EOI}, ${stripWhitespace(${literalizeQuotes(${p[${y}]})})})}" ${_credits}))
-#live				endif
-#live				endif
-#live				endloop
+#live					if (define(_credits,))
+#live					endif
+#live					if (!(getval(p[${p->numResults}]) == .jpg))
+#live						if (define(_credits, ${credit2SQL(p[${p->numResults}])}))
+#live						endif
+#live					endif
+#live					loop(y, 1, ${p->numResults})
+#live						if ((getval(p[${y}]) == .jpg))
+#live							if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", ${photo2SQL(p[${y}])} ${_credits} type='poster'))
+#live							endif
+#live						endif
+#live					endloop
 #live				endif
 #live			endloop
 #live		endif
-#live		endif
+#live	endif
 
 #define	doSetlist(prefix, setlists)
 #live	if (defined(setlists))

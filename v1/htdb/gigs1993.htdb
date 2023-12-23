@@ -667,6 +667,9 @@
 		who=${literalizeCommas(
 			${pat}, ${dj}
 		)},
+		with=${literalizeCommas(
+			David J, Tom Hall, Tim Perkins
+		)},
 		notes=${literalizeCommas(
 			Christmas gig. Pat is joined by David J.
 		)},

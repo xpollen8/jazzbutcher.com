@@ -1,5 +1,6 @@
 import moment from 'moment';
 import Link from 'next/link';
+import Image from 'next/image';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import Tag from '@/components/Tag';
 import EmbedMedia from '@/components/EmbedMedia';
@@ -18,6 +19,13 @@ type NewsItemType = {
 };
 
 const recentNews = [
+	{
+		subject: "30th anniversay: gig poster: 1993-12-23",
+		body: <Link href="/gigs/1993/Dec23"><Image src="https://v1.jazzbutcher.com/images/19931223/19931223_poster_250.jpg" width="250" height="250" alt="poster" /></Link>,
+		dt: '2023-12-23',
+		link: '/gigs/1993/Dec23',
+		category: 'media',
+	},
 	{
 		subject: "jazzbutcher.com V2 launched",
 		body: <>For its first 10,588 days, jazzbutcher.com was delivered by David Whittemore&apos;s &quot;HTDB&quot; toy language.

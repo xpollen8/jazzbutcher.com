@@ -2286,10 +2286,10 @@ ${_d[3]}
 
 #define	jbc_footer(res=${page})
 	<!--- CONTENT -->
-	${tag_beg}
-	Visitor Feedback
-	${tag_end}
-	${fetchComments(res=${db}/${res}, face=Titillium-Regular, limit=200)}
+#	${tag_beg}
+#	Visitor Feedback
+#	${tag_end}
+#	${fetchComments(res=${db}/${res}, face=Titillium-Regular, limit=200)}
 	</div>
 	${footer}
 
@@ -2332,10 +2332,10 @@ ${_d[3]}
 
 #define	jbc_footer
 	<!--- CONTENT -->
-	${tag_beg}
-	Visitor Feedback
-	${tag_end}
-	${fetchComments(res=${db}/${page}, face=Titillium-Regular, limit=100)}
+#	${tag_beg}
+#	Visitor Feedback
+#	${tag_end}
+#	${fetchComments(res=${db}/${page}, face=Titillium-Regular, limit=100)}
 	</div>
 	${footer}
 

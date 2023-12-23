@@ -154,7 +154,7 @@ const CommentForm = ({ mutate, commentData, editing=false, toggleCommentForm }: 
 				const body = JSON.stringify({
 					session: getSessionId(),
 					feedback_id,
-					uri: (uri.includes('.html') ? uri : `${uri}.html`),
+					uri,
 					who,
 					whence,
 					subject,
@@ -282,7 +282,7 @@ export const CommentBubble = (props: any) => {
 }
 
 const PageComments = ({ className }: { className?: string }) => {
-	const uri = usePathname()?.substr(1);
+	const uri = usePathname();
 	const { data, isLoading, error, mutate } = usePageComments(uri);
 	const comments = data?.results || [];
 	const [ showForm, toggleCommentForm ] = useState(comments.length > 0 ? false : true);

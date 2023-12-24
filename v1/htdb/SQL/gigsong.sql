@@ -4849,21 +4849,21 @@ INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00', 'set', 1,17, 'Running 
 INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00', 'set', 1,18, 'Goodnight Irene', 'Leadbelly', NULL,NULL,NULL,NULL, NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,0, "The Entire Performance", NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200927/20200927_PatFish_FishyMansions.mp4',NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,0, "Mr. Odd", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,1, "Girls Who Keep Goldfish", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,2, "The Highest in the Land", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,3, "Ben", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,4, "Southern Mark Smith", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,5, "Tombé dans les pommes", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,6, "La Mer", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,7, "Baltic", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,8, "Aftergirls", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,9, "Marnie", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,10, "She's on Drugs", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,11, "Daycare Nation", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,12, "Melanie Hargreaves' Father's Jaguar", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,13, "The Human Jungle", NULL,NULL,NULL,NULL,NULL, NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,14, "Never Give Up", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,1, "Mr. Odd", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,2, "Girls Who Keep Goldfish", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,3, "The Highest in the Land", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,4, "Ben", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,5, "Southern Mark Smith", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,6, "Tombé dans les pommes", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,7, "La Mer", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,8, "Baltic", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,9, "Aftergirls", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,10, "Marnie", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,11, "She's on Drugs", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,12, "Daycare Nation", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,13, "Melanie Hargreaves' Father's Jaguar", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,14, "The Human Jungle", NULL,NULL,NULL,NULL,NULL, NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00', 'set', 1,15, "Never Give Up", NULL,NULL,NULL,NULL,NULL, NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00', 'set', 1,0, "The Entire Performance", NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210606/20210606_PatFish_FishyMansions.mp4',NULL, NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00', 'set', 1,1, "What's the Matter, Boy?", NULL,NULL,NULL,NULL,NULL, NULL);

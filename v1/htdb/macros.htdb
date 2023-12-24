@@ -3482,12 +3482,26 @@ ${define(_set, false)}
 #live			endloop
 #live		endif
 
+#
+#	from 'gig.extra == poster'
+#
 #define	doPoster(prefix)
 	<a href="${ts2PosterLink(${${prefix}->datetime})}"><img alt="[poster for XX]" src="${ts2Poster(ts=${${prefix}->datetime}, width=500)}"></a>
+#live	if (define(_Xpostercredit,))
+#live	endif
 #live	if (defined(${prefix}->postercredit))
 		${parseCredit(c=${${prefix}->postercredit})}
+#live		if (define(_Xpostercredit, ${${prefix}->postercredit}))
+#live		endif
+#live	endif
+#live	if (defined(UX))
+#live		if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", image="${stripWhitespace(${ts2PosterLink(${${prefix}->datetime})})}", ${credit2SQL(_Xpostercredit)} type="poster"))
+#live		endif
 #live	endif
 
+#
+#	from 'posters=..."
+#
 #define	doPosterSQL(prefix)
 #live	if (defined(UX))
 #live		if (sql(insert IGNORE into gigmedia set datetime="${${prefix}->datetime}", image="${stripWhitespace(${ts2PosterLink(${${prefix}->datetime})})}", ${credit2SQL(${prefix}->postercredit)} type="poster"))

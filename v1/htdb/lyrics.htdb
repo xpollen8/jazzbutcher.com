@@ -467,7 +467,75 @@ ${jbc_footer}
 
 #define	doktor_anthrax.html
 #live	if (getval(page) = doktor_anthrax.html)
-	${lyricsHeader(title=Doktor Anthrax, lyrics=${NEEDS_TRANSCRIPTION}, onlist=cdr_guestpass2000)}
+	${lyricsHeader(title=Doktor Anthrax, lyrics=${literalizeCommas(
+	Another summer in the city, and you want to run away<br />
+	Run from the up tight do-right urban decay of today, to a beautiful farm<br />
+	Yeah sure, Spraying biological napalm on food, to keep a sell by date<br />
+	Which contain all those motherfuckin’ phosphates<br />
+	How did we ever get into this state, how we gonna stop it? Its too late!<br />
+	You got a big scare, so you stand at the bottom of the big stairs,<br />
+	Telling everybody that you don’t care, spilling out the government line,<br />
+	You’re fine, we’re fine, I think you’re lying<br />
+	Everything you say is like a telly repeat, you don’t even care about the shit<br />
+	you’re eating, Hong Kong chicken and scotch peach pie<br />
+	Twenty five years of government lies<br />
+	You got a visitor, from another dimension<br />
+	When you get your body to millennial attention<br />
+	A brand new territory to demand your attention<br />
+	Somethings you better just not mention<br />
+	Anthrax, here to make another comeback<br />
+	It’ll be a massive attack jack, Specialty of Portland Down<br />
+	One little bottle will take out the town<br />
+	Doctor Anthrax he’s a maitre d’<br />
+	come into your town and your duty free<br />
+	Shit, why be worried about the youth foundation<br />
+	When you’re in the walls of the Kings Cross station<br />
+	Nationwide, deep in the countryside<br />
+	There’s no area you just can’t hide from<br />
+	Doctor Anthrax, living in the soil<br />
+	Bow your head down, you’re just a big fat boil <br />
+	<br />
+	The snakes out, a positive message to the kids, ‘bout what you done did<br />
+	Let, the snakes out, a positive message to the kids, ‘bout what you done did<br />
+	Let, the snakes out, a positive message to the kids, ‘bout what you done did<br />
+	Let, the snakes out, a positive message to the kids, ‘bout what you done did<br />
+	<br />
+	Doctor Anthrax, stalking the land, it’s an outbreak<br />
+	Right out of hand, Doctor Anthrax, scourge of a nation, no chance of an immunization<br />
+	stay out of hospital, people die there<br />
+	stay out of the subway, cuz your brain gets fried there<br />
+	stay out of the city, cuz, there’s no place to hide there<br />
+	Stay out of sight and I will tell you why<br />
+	Doctor Anthrax, stalking the land, it’s an outbreak<br />
+	Right out of hand, It’s an Anthrax, scourge of a nation, no chance of an immunization<br />
+	stay out of hospital, people die there<br />
+	stay out of the subway, cuz your brain gets fried there<br />
+	stay out of the city, cuz, there’s no place to hide there<br />
+	Headstrong, gonna tell you why, yeah!<br />
+	<br />
+	Let the snakes out, positive message to the kids, ‘bout what you done did<br />
+	Let, the snakes out, positive message to the kids, ‘bout what you done did<br />
+	Let, the snakes out, positive message to the kids, ‘bout what you done did<br />
+	Let, the snakes out, positive message to the kids, ‘bout what you done did<br />
+	<br />
+	More of everything! Don’t be afraid because you know you’re gonna get some<br />
+	More of everything! Don’t be afraid no, don’t be afraid no<br />
+	More of everything! Don’t be afraid because you know you’re gonna get some<br />
+	More of everything! <br />
+	Don’t be afraid no, don’t be afraid no,<br />
+	Don’t be afraid no, don’t be afraid, no<br />
+	Don’t be afraid no, don’t be afraid, no<br />
+	Don’t be afraid no, don’t be afraid, no<br />
+	Don’t be afraid no, don’t be afraid, don’t be afraid, <br />
+	Don’t be afraid, don’t be afraid, no<br />
+	Don’t be afraid, don’t be afraid, no<br />
+	Don’t be afraid, don’t be afraid, no<br />
+	Don’t be afraid, don’t be afraid, <br />
+	Be afraid, don’t be afraid, no<br />
+	<br />
+	Be afraid, don’t be afraid!<br />
+	Be afraid, be afraid!!
+	)}, onlist=cdr_guestpass2000)}
 #live	endif
 
 #define	hobbu.html

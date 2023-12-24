@@ -28,6 +28,8 @@
 		)},
 		with=${literalizeCommas(
 		)},
+		setlists= /images/20200927/20200927_setlist.jpg$$
+			Tom Peterson;;;;2023-12-24,
 		photosets=
 	)}
 

@@ -23,7 +23,7 @@ const recentNews = [
 		subject: "Cult of the Basement in-studio poster",
 		dt: '2023-12-24',
 		body: <><Link href="https://v1.jazzbutcher.com/images/releases/cult_studio_poster.jpg"><Image src="https://v1.jazzbutcher.com/images/releases/cult_studio_poster_250.jpg" width="250" height="250" alt="poster" /></Link>
-		The original map of the "Cult Of The Basement" album, drawn up by the Conspiracy in the studio, January 1990.
+		The original map of the &quot;Cult Of The Basement&quot; album, drawn up by the Conspiracy in the studio, January 1990.
 		</>,
 		link: '/releases/cult',
 		category: 'media',

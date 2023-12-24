@@ -1052,7 +1052,7 @@
 #define	albums[26]->Agroove	boris is still digging the potatoes-a porky prime cut
 #define	albums[26]->Bgroove	egguluos is now digging the potatoes-a porky prime sauteed cut
 #define	albums[26]->thumb	${jbc_images}/cult
-#define	albums[26]->images	${jbc_images}/19891119/19891119_del_cult;;Dank;;David Whittemore;;;;1989-11-19$$
+#define	albums[26]->images	${jbc_images}/19891119/19891119_del_cult;;Dank;;David Whittemore;;;;1989-11-19$$${jbc_images}/releases/cult_studio_poster;;${literalizeCommas(The original map of the "Cult Of The Basement" album, drawn up by the Conspiracy in the studio, January 1990. See who played what, where the samples came from, what the Butcher thought about the first mix of "Girl Go"...this is not an item for families: there is strong language and irrational behaviour. A doozy! Coloured felt-tip on card.64 x 50 cm. Fair condition with some tape damage.)};;Pat Fish;;;;1997-08-00$$
 #define	albums[26]->blurb
 	<div class="annotation">If things seemed weird back in February 1989, when we made this baby, the Weird were going shopping on bikes. In a farmhouse in the dead of winter, in personal circumstances too bizarre and complex to relate, we set about making our "commercial suicide" album. For the first time, I felt, we had made an album that really sounded like us. This record does have personality. One of my favourites, this.</div>
 #define	albums[26]->dtreleased	1990

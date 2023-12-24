@@ -4,7 +4,6 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import Tag from '@/components/Tag';
 import EmbedMedia from '@/components/EmbedMedia';
-import News from '@/components/News';
 import useRecentUpdates from '@/lib/useRecentUpdates';
 import { dateDiff } from '@/lib/utils';
 import { feedbackURI2Pathname } from '@/lib/usePageComments';
@@ -97,7 +96,6 @@ const RecentUpdates = () => {
 		<RecentReleases releases={releases} />
 		<RecentFeedback feedback={feedback} />
 		{/*<RecentMedia media={media} />*/}
-		<News />
 		<p />
 	</Suspense>)
 }

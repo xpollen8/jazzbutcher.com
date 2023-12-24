@@ -20,6 +20,19 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "lyrics: Doktor Anthrax",
+		dt: '2023-12-24',
+		link: '/lyrics/doktor_anthrax',
+		category: 'media',
+	},
+	{
+		subject: "gig setlist: 2020-09-27",
+		body: <Link href="/gigs/2020/Sep27_2200"><Image src="https://v1.jazzbutcher.com/images/20200927/20200927_setlist_250.jpg" width="250" height="250" alt="setlist" /></Link>,
+		dt: '2023-12-24',
+		link: '/gigs/2020/Sep27_2200',
+		category: 'media',
+	},
+	{
 		subject: "30th anniversay: gig poster: 1993-12-23",
 		body: <Link href="/gigs/1993/Dec23"><Image src="https://v1.jazzbutcher.com/images/19931223/19931223_poster_250.jpg" width="250" height="250" alt="poster" /></Link>,
 		dt: '2023-12-23',
@@ -112,13 +125,13 @@ const displayNewsItem = (n: NewsItemType) => {
 	</MakeSimpleURI>
 }
 
-export const MostRecentNews = () => displayNewsItem(recentNews[0] as NewsItemType);
+export const MostRecentNews = () => <><Tag>Most recent website change</Tag>{displayNewsItem(recentNews[0] as NewsItemType)}<News /><p /></>;
 
 const News = () => {
 	let year: number;
 	return <>
 		<details>
-			<summary className="tagClickable">Full website update log: {newsItems?.length}</summary>
+			<summary className="tagClickable">Full changelog: {newsItems?.length}</summary>
 			{newsItems?.map((n: NewsItemType, key: number) => {
 				const yr = parseInt(n.dt, 10);
 				let banner;

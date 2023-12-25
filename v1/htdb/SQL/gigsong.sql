@@ -4500,6 +4500,8 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-07-06 00:00:00','encore',2,1, 'Stand By
 INSERT INTO `gigsong` VALUES (NULL,'1989-07-06 00:00:00','encore',2,2, 'Take The Skinheads Bowling','Camper Van Beethoven',"With Peter Astor",NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-07-06 00:00:00','encore',2,3, 'Sweet Jane','Lou Reed',"With Peter Astor",NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'2018-11-08 19:30:00','set',1,1, "Someone To Share My Life With","Television Personalities",NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20181108/20181108_PatFish_TVP_SomeoneToShareToShareMyLifeWith.mp3',NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'2018-03-01 19:30:00','set',1,1, "Jazz Butcher Theme",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2018-03-01 19:30:00','set',1,2, "Animals",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2018-03-01 19:30:00','set',1,3, "Tombé dans les pommes",NULL,NULL,NULL,NULL,NULL,NULL);

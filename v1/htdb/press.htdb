@@ -568,6 +568,18 @@ ${d}
 		dt=2021-09-05,
 		added=2023-09-23)}
 
+	${addPress(type=interview;radio,
+		url=${jbc_press}/19920623_interview_WXPN.html,
+		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19920623_JazzButcher_WXPN_Interview.mp3;;The Interview,
+		location=Philadelphia\, Pennsylvania\, USA,
+		publication=WXPN,
+		title=World Cafe,
+		headline=Radio interview,
+		dt=1992-06-23,
+		summary=Played: Honey & Biggest Harriest,
+		added=2023-12-25,
+		)}
+
 	${addPress(type=interview;radio, person=pat;pete,
 		url=${jbc_press}/19920516_interview_WNUR.html,
 		audio=${jbc_audio}/19920516/19920516_JazzButcher_WNUR_Gen0.mp3;;The Interview$$;;Angels::1$$;;Take The Skinheads Bowling::2,

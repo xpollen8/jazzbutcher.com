@@ -20,6 +20,13 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "interview: 1992-06-23 - WXPN, Philadelphia",
+		dt: '2023-12-25',
+		body: <EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19920623_JazzButcher_WXPN_Interview.mp3' }} />,
+		link: '/press/19920623_interview_WXPN',
+		category: 'media',
+	},
+	{
 		subject: "audio: Someone To Share My Life With",
 		dt: '2023-12-25',
 		body: <EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20181108/20181108_PatFish_TVP_SomeoneToShareToShareMyLifeWith.mp3', author: 'Television Personalities' }} />,

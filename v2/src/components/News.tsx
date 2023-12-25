@@ -20,6 +20,13 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "audio: Someone To Share My Life With",
+		dt: '2023-12-25',
+		body: <EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20181108/20181108_PatFish_TVP_SomeoneToShareToShareMyLifeWith.mp3', author: 'Television Personalities' }} />,
+		link: '/gigs/2018/Nov8_1930',
+		category: 'media',
+	},
+	{
 		subject: "audio: Doktor Anthrax",
 		dt: '2023-12-25',
 		body: <EmbedMedia data={{ mediaurl: 'https://v1.jazzbutcher.com/audio/tunes/JazzButcher_DoktorAnthrax.mp3' }} />,
@@ -34,7 +41,7 @@ const recentNews = [
 		category: 'media',
 	},
 	{
-		subject: "Cult of the Basement in-studio poster",
+		subject: "artwork: Cult of the Basement in-studio poster",
 		dt: '2023-12-24',
 		body: <><Link href="https://v1.jazzbutcher.com/images/releases/cult_studio_poster.jpg"><Image src="https://v1.jazzbutcher.com/images/releases/cult_studio_poster_250.jpg" width="250" height="250" alt="poster" /></Link>
 		The original map of the &quot;Cult Of The Basement&quot; album, drawn up by the Conspiracy in the studio, January 1990.
@@ -49,14 +56,14 @@ const recentNews = [
 		category: 'media',
 	},
 	{
-		subject: "gig setlist: 2020-09-27",
+		subject: "setlist: 2020-09-27",
 		body: <Link href="/gigs/2020/Sep27_2200"><Image src="https://v1.jazzbutcher.com/images/20200927/20200927_setlist_250.jpg" width="250" height="250" alt="setlist" /></Link>,
 		dt: '2023-12-24',
 		link: '/gigs/2020/Sep27_2200',
 		category: 'media',
 	},
 	{
-		subject: "30th anniversay: gig poster: 1993-12-23",
+		subject: "gig poster: 1993-12-23",
 		body: <Link href="/gigs/1993/Dec23"><Image src="https://v1.jazzbutcher.com/images/19931223/19931223_poster_250.jpg" width="250" height="250" alt="poster" /></Link>,
 		dt: '2023-12-23',
 		link: '/gigs/1993/Dec23',
@@ -142,7 +149,7 @@ const newsItems: NewsItemType[] = jsonNewsItems?.results?.filter((n: NewsItemTyp
 
 const displayNewsItem = (n: NewsItemType) => {
 	const body = (typeof n.body === 'object') ? n.body : <div dangerouslySetInnerHTML={{ __html: n.body || '' }} />
-	return <MakeSimpleURI uri={n?.link} text={n.subject || ''} aux={dateDiff(n.dt)} className="listItem">
+	return <MakeSimpleURI uri={n?.link} text={n.subject || ''} aux={dateDiff(n.dt, '')} className="listItem">
 		{body}
 		{(n?.credit) && <Credit g={n.credit} />}
 	</MakeSimpleURI>

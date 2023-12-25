@@ -20,6 +20,20 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "audio: Doktor Anthrax",
+		dt: '2023-12-25',
+		body: <EmbedMedia data={{ mediaurl: 'https://v1.jazzbutcher.com/audio/tunes/JazzButcher_DoktorAnthrax.mp3' }} />,
+		link: '/lyrics/doktor_anthrax',
+		category: 'media',
+	},
+	{
+		subject: "artwork: Trampling Tokyo lyrics",
+		dt: '2023-12-25',
+		body: <Link href="/releases/collaboration_trampling_tokyo"><Image src="https://v1.jazzbutcher.com/images/trampling_tokyo_negative_burn_lyrics3_250.jpg" width="250" height="250" alt="poster" /></Link>,
+		link: '/releases/collaboration_trampling_tokyo',
+		category: 'media',
+	},
+	{
 		subject: "Cult of the Basement in-studio poster",
 		dt: '2023-12-24',
 		body: <><Link href="https://v1.jazzbutcher.com/images/releases/cult_studio_poster.jpg"><Image src="https://v1.jazzbutcher.com/images/releases/cult_studio_poster_250.jpg" width="250" height="250" alt="poster" /></Link>

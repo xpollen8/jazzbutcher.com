@@ -3542,7 +3542,7 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[92]->label	Glass Modern
 #define	albums[92]->catalog	GLAMS004
 #define	albums[92]->thumb	${jbc_images}/releases/never7_A
-#define	albums[92]->images	${jbc_images}/releases/never7_B
+#define	albums[92]->images	${jbc_images}/releases/never7_B$$${jbc_images}/releases/nevergiveup_poster$$${jbc_images}/releases/ngu_sophie_joiner_painting;;Uncropped painting;;Sophie Joiner;;;;2023-12-20$$
 #define	albums[92]->media	7er
 #define	albums[92]->dtreleased	2022
 #define	albums[92]->buy	https://cargorecordsdirect.co.uk/products/the-jazz-butcher-never-give-up-glass-version-7

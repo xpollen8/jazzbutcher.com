@@ -535,7 +535,7 @@ ${jbc_footer}
 	<br />
 	Be afraid, don’t be afraid!<br />
 	Be afraid, be afraid!!
-	)}, onlist=cdr_guestpass2000)}
+	)}, mp3=${jbc_audio}/tunes/JazzButcher_DoktorAnthrax.mp3, onlist=cdr_guestpass2000)}
 #live	endif
 
 #define	hobbu.html

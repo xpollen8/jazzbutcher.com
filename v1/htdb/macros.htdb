@@ -4701,6 +4701,9 @@ ${define(_set, false)}
 #define	songMap[goodnight_sweetheart]	goodnight_sweetheart.html
 #define	songMap[wildlife]	wildlife.html
 
+#define	songMap[The_Hobbu_Song]	hobbu.html
+#define	songMap[Doktor_Anthrax]	doktor_anthrax.html
+
 #define	append(x, y)
 	${define(${x}, ${${x}} ${${y}})}
 

@@ -3586,6 +3586,13 @@ In 2007 the storyline for that years album was Uncle Andy’s huge charity gig, 
 #define	albums[95]->label
 #define	albums[95]->catalog
 #define	albums[95]->thumb	${jbc_images}/releases/trampling
+#define	albums[95]->images	${jbc_images}/trampling_tokyo_negative_burn_cover;;${literalizeCommas(TRAMPLING TOKYO Lyrics - Original Released in -
+Negative Burn #18 (December 1994): Trampling Tokyo
+Illustrated by Arthur Adams. 4 pages.
+Reprinted in Art Adams’ Creature Features (Dark Horse Comics, August 1996), with colouring by Laura Allred.
+Reprinted in Alan Moore’s Songbook (Caliber Press, 1998).
+Trampling Tokyo song released in 2011 on the CD "A Compilation of Songs and Performances By Alan Moore And Friends" that was included with the book Alan Moore: Storyteller.)};;$$${jbc_images}/trampling_tokyo_negative_burn_lyrics1$$${jbc_images}/trampling_tokyo_negative_burn_lyrics2$$${jbc_images}/trampling_tokyo_negative_burn_lyrics3;;${literalizeCommas(Note the omission of the lyrics after "where the luminous lagoon night never ends,..."
+it should say ",...in my monster world, with my monster girl,..." right before "are singing, Gojira,...")};;James Duval;;;;2023-11-05$$
 #define	albums[95]->contribution	trampling_tokyo
 #define	albums[95]->dtreleased	2011
 #define	albums[95]->video	https://youtube.com/embed/KEUAtWXPstQ

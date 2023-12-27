@@ -573,6 +573,7 @@ ${d}
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19920623_JazzButcher_WXPN_Interview.mp3;;The Interview,
 		location=Philadelphia\, Pennsylvania\, USA,
 		publication=WXPN,
+		credit=David Dye,
 		title=World Cafe,
 		headline=Radio interview,
 		dt=1992-06-23,

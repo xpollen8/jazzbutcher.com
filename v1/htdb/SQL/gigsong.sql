@@ -1936,6 +1936,11 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-04-28 00:00:00','encore',1,2,'Take The 
 INSERT INTO `gigsong` VALUES (NULL,'1990-04-28 00:00:00','encore',2,1,'My Zeppelin',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-04-28 00:00:00','encore',2,2,'Moscow Drug Club','B. B. Gabor',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-04-28 00:00:00','encore',2,3,'Part-Time Punks','TV Personalities',NULL,NULL,NULL,NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1993-03-04 00:00:00','set',1,0,'Concert Excerpt',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/19930304/19930304_JazzButcher_ValenzaPo_IT_CircoloPalomar.mp4','Giorgio Zito',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1993-03-04 00:00:00','set',1,1,'Angels',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1993-03-04 00:00:00','set',1,2,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','set',1,1,'Susie',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','set',1,2,'Sweetwater',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','set',1,3,'Rosemary Davis\' World Of Sound',NULL,NULL,NULL,NULL,NULL,NULL);

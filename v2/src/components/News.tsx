@@ -20,6 +20,13 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "video: 1993-03-04 - Valenza Po, Italy",
+		dt: '2023-12-26',
+		body: <EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/19930304/19930304_JazzButcher_ValenzaPo_IT_CircoloPalomar.mp4', mediacredit: 'Giorgio Zito' }} />,
+		link: '/gigs/1993/Mar4',
+		category: 'media',
+	},
+	{
 		subject: "interview: 1992-06-23 - WXPN, Philadelphia",
 		dt: '2023-12-25',
 		body: <EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19920623_JazzButcher_WXPN_Interview.mp3' }} />,
@@ -148,7 +155,7 @@ const recentNews = [
 
 recentNews.forEach((r: any) => jsonNewsItems?.results.push(r));
 
-const newsItems: NewsItemType[] = jsonNewsItems?.results?.filter((n: NewsItemType) => n.dt && n.dt.length)?.map((n: NewsItemType) => {
+export const newsItems: NewsItemType[] = jsonNewsItems?.results?.filter((n: NewsItemType) => n.dt && n.dt.length)?.map((n: NewsItemType) => {
 		const dt = n.dt.includes('-') ? moment(n.dt, 'YYYY-MM-DD HH:mm:SS').valueOf() : parseInt(n.dt, 10) * 1000;
 		return { ...n, dt: moment(dt).format('YYYY-MM-DD HH:mm:SS') }
 // @ts-ignore

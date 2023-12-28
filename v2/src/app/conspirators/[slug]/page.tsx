@@ -50,7 +50,7 @@ const Act = ({ person }: { person: string }) => {
 }
 
 const Conspirator = ({ params }: { params?: any }) => {
-	const person = people.find(({ href, name }) => href === `${params?.slug}.html` || name === unescape(params?.slug));
+	const person = people.find(({ href, name }) => href === params?.slug || name === unescape(params?.slug));
 	/*
 	const { data, isLoading, error } = useConspirator(name);
 

@@ -93,9 +93,11 @@
 	${mkPressHeader()}
 #live		if (defined(UA))
 <h1>update (pub:${${prefix}->url})</h1>
+#live			if (sql(x:update press set type="${replace(${${prefix}->type}, ;,,)}", todo="${${prefix}->todo}", album="${${prefix}->album}", thumb="${${prefix}->thumb}", images="${literalizeQuotes(${${prefix}->images})}", media="${literalizeQuotes(${${prefix}->media})}", annotation="${literalizeQuotes(${${prefix}->annotation})}", audio="${literalizeQuotes(${${prefix}->audio})}", publication="${literalizeQuotes(${${prefix}->publication})}", title="${literalizeQuotes(${${prefix}->title})}", headline="${literalizeQuotes(${${prefix}->headline})}", subhead="${literalizeQuotes(${${prefix}->subhead})}", location="${literalizeQuotes(${${prefix}->location})}", summary="${literalizeQuotes(${${prefix}->summary})}", source="${${prefix}->source}", credit="${${prefix}->credit}", dtadded="${fixDt(${${prefix}->added})}", dtpublished="${fixDt(${${prefix}->dt})}", dtgig="${fixDt(${${prefix}->datetime})}", person="${literalizeQuotes(${${prefix}->person})}", body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
+#live			endif
 #update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}";
-#live	if (sql(z:update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
-#live	endif
+##live	if (sql(z:update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
+##live	endif
 #live	endif
 	<p />
 #live	if (define(Bx[1], ))
@@ -2263,6 +2265,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=album, album=ill,
 		url=${jbc_press}/95nme.html,
+		thumb=${jbc_images}/press_95nme,
 		credit=Neil Spence,
 		publication=New Music Express,
 		location=UK,

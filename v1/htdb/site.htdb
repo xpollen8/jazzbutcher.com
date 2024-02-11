@@ -42,11 +42,38 @@
 #live	endwhile
 #live	endif
 
+#define	relatedAlbums[1]->type	album
+#define	relatedAlbums[1]->lookup	bacon
+#define	relatedAlbums[1]->dtreleased	2024-02-05
+#define	relatedAlbums[1]->dtrecorded	2024-02-02
+##define	relatedAlbums[1]->studio	Starforce Studio, Clapham
+##define	relatedAlbums[1]->Agroove	bad chromosomes
+##define	relatedAlbums[1]->Bgroove	this record belongs to....sound clinic
+##define	relatedAlbums[1]->href	${jbc_albums}/bath.html
+#define	relatedAlbums[1]->title	All Shall Be Well
+#define	relatedAlbums[1]->media	CD
+#define	relatedAlbums[1]->country	UK
+#define	relatedAlbums[1]->label	glass_modern
+##define	relatedAlbums[1]->catalog	GLALP002;GLACD002
+#define	relatedAlbums[1]->thumb	${jbc_images}/releases/20240202_MaxEider_AllShallBeWell
+#define	relatedalbums[1]->blurb
+Tundraducks Records supremo Augustus Pokerback has shocked the music world by announcing that Max Eider’s new EP will be released on Glass Modern. ‘I’ve stitched Barker up like a kipper,’ Pokerback commented. ‘I can’t believe I’m rid of that idiot at last.’
+<p />
+In addition to the new title track, ‘All Shall Be Well’, the CD/DL features remixed/remastered versions of Eider’s last two digital single releases, ‘Go Gentle’ and ‘The Meek’, the latter including new vocal tracks by long-time collaborator and singer supreme June Miles-Kingston.
+<p />
+‘These songs belong together so it made sense to revisit the other two and do a physical release,’ Max says. ‘It’s great to be working with Dave again. Augustus will probably be devastated but to be honest I’m not sure he still has mental capacity, if you know what I mean. He’s 111 years old for fuck’s sake.’
+<p />
+Cover art by multi-award-winning cartoonist and old friend Dave Coverly
+<p />
+Includes digital pre-order of All Shall Be Well. You get 1 track now (streaming via the free Bandcamp app and also available as a high-quality download in MP3, FLAC and more), plus the complete album the moment it’s released.
+#define	relatedalbums[1]->buy	https://glassmodern.bandcamp.com/album/all-shall-be-well
+
 #define	mainContent()
 
 #	${showNews(limit=2, showMore=no)}
 	<div id="container">
 	<div id="right">
+		${mkAlbumBlurb(prefix=relatedAlbums[1], details=no)}
 		${mkAlbumBlurb(prefix=albums[92], details=no)}
 		${book_sikkorski}
 #		${newsNeverGiveUp}

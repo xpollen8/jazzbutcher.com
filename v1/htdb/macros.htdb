@@ -1649,6 +1649,7 @@ font.load().then(function () {
 #define	glorious		${linkAlbum(href=${jbc_albums}/glorious.html, title=Glorious And Idiotic)}
 #define	glass			<b>Glass Records</b>
 #define	glass_records	${glass}
+#define	glass_modern	Glass Modern
 #
 #	Sumosonic
 #

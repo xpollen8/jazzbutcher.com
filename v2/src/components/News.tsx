@@ -20,6 +20,12 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "video: 1986-08-22 - Hard, French TV",
+		dt: '2024-01-25',
+		body: <EmbedMedia data={{ mediaurl: 'https://youtube.com/embed/3DeTg80CMj8', mediacredit: 'Jeremy braGxon fait le tri dans ses archives vidéo' }} />,
+		category: 'media',
+	},
+	{
 		subject: "video: 1993-03-04 - Valenza Po, Italy",
 		dt: '2023-12-26',
 		body: <EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/19930304/19930304_JazzButcher_ValenzaPo_IT_CircoloPalomar.mp4', mediacredit: 'Giorgio Zito' }} />,

@@ -188,7 +188,7 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 						{children}
 					</EmbedSoundCloud>
 				</>
-			} else if (useMediaurl?.includes('.mp3')) {
+			} else if (useMediaurl?.includes('.mp3') || useMediaurl?.includes('google')) {
 				return (<>
 					<LinkAudio version={version} lookup={lookup} parent={parent} title={useTitle} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={useArtist} author={useAuthor} comment={comment} ordinal={ordinal} setnum={setnum} collection={collection} />
 					{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}

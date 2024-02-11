@@ -17,6 +17,9 @@ const VideoPage = () =>
 <hr />
 <Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/screenshots/20201014_facebook_SimonTaylor_NeverGiveUp.png" width={500} height={500} alt="never give up video announcement" />
 	<EmbedMedia data={{ mediaurl: 'https://youtube.com/embed/mkTHuohiZSQ', song: "When You's A Viper" }} />
+	<EmbedMedia data={{ mediaurl: 'https://youtube.com/embed/3DeTg80CMj8', song: "Hard" }}>
+	Emission Décibels diffusée sur le réseau national de FR3 le 22/08/1986
+	</EmbedMedia>
 	<Video />
 	</main>
 	<Footer />

@@ -3318,9 +3318,9 @@ The town in question is South Windsor, CT.
 		onlist=
 		bus
 	, patsez=${literalizeCommas(
-		<img src="${ibc_images}/penguin.gif">
-		<img src="${ibc_images}/penguin.gif">
-		<img src="${ibc_images}/penguin.gif">
+		<img src="${jbc_images}/penguin.gif">
+		<img src="${jbc_images}/penguin.gif">
+		<img src="${jbc_images}/penguin.gif">
 		In the most desolate place in the world they are standing in large numbers. They are out there doing it now. As far as we can tell they have always been out there, miles from anywhere, in conditions that would hospitalise you or me in the course of an afternoon.
 		;;Pat Letter 1993-08-30;;/letters/93Aug30/love.html#penguins;;
 	)}

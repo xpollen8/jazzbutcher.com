@@ -9,13 +9,13 @@ const nextConfig = {
 			return [
 				{
 					source: '/albums/last_of_the_gentlemen_adventurers.html',
-					destination: '/albums/last_of_the_gentleman_adventurers.html',
-					permanent: false,
+					destination: '/releases/last_of_the_gentleman_adventurers',
+					permanent: true,
 				},
 				{
 					source: '/lyrics/last_of_the_gentlemen_adventurers.html',
-					destination: '/lyrics/last_of_the_gentleman_adventurers.html',
-					permanent: false,
+					destination: '/lyrics/last_of_the_gentleman_adventurers',
+					permanent: true,
 				},
 				{
 					source: '/conspirators/pat',
@@ -123,6 +123,7 @@ const nextConfig = {
 			]
 	},
 	images: {
+	    unoptimized: true,
 			remotePatterns: [
 				{
 					protocol: 'https',

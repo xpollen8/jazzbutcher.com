@@ -506,7 +506,18 @@ ${d}
 		added=2023-09-10)}
 
 	${addPress(type=gig;review,
-		url=${jbc_press}/20140920__press_quartet.html,
+		url=${jbc_press}/20180301_press_quartet.html,
+		publication=Whisperin And Hollerin,
+		title=Review: The Jazz Butcher Quartet & Tim Keegan,
+		headline=Live at The 100 Club, London,
+		credit=simonovitch,
+		source=http://www.whisperinandhollerin.co.uk/reviews/review.asp?id=14086,
+		datetime=2018-03-01 19:30:00,
+		dt=2018-03-01 19:30:00,
+		added=2024-03-18)}
+
+	${addPress(type=gig;review,
+		url=${jbc_press}/20140920_press_quartet.html,
 		publication=Whisperin And Hollerin,
 		title=The Jazz Butcher Quartet,
 		headline=live at the Hope And Anchor Islington,
@@ -9544,8 +9555,48 @@ A project with Dark Flowers’ Paul Statham (B Movie, 100 Men) has spawned <i>Th
 	${jbc_footer}
 #live	endif
 
-#define	20140920__press_quartet.html
-#live	if (getval(page) = 20140920__press_quartet.html)
+#define	20180301_press_quartet.html
+#live	if (getval(page) = 20180301_press_quartet.html)
+	${extractPress(
+		body=${literalizeCommas(
+Yes The Jazz Butcher is back and this time it's for the first live show by his Quintet and the second time I've seen him live since his most recent permanent drummer Steve Garofolo died, I'm afraid I'm not sure who the new drummer is but like the new keyboards player he comes from Leicester so Pat has signed his own Vardy and Mahrez dream team.<br />
+<br />
+Since I last saw The Jazz Butcher last year at the Lexington they have managed to put out 2 box sets of reissues "The Wasted Years" and "The Violent Years" as well as one vinyl re-issue all of which were on sale at the gig.<br />
+<br />
+Still first on was Tim Keegan who has the job of warming up the crowd on the coldest March day in London since records began apparently so I was glad that both Tim and his compadre had nice warm tones to the guitar sound as they opened with New Songs Are Coming that has a sort of Anti-folk feel to it both lyrically and musically and it's a good start to the set.<br />
+<br />
+Honeysuckle Rose is about as country as they get and is rather careworn and a little downbeat. They then did a song about drinking which will always go down well with a Jazz Butcher audience, before they did a song that could be an ode to all small children It's Not Fair well of course it isn't.<br />
+<br />
+Trouble Again was a cool blues folk song and then they went full on Anti-folk for Jamie's Going Snowboarding that was my favourite song of the set and was an overheard mobile phone call with wonderfully wry lyrics a song well worth seeking out.<br />
+<br />
+You Must Be Strong was next and was Tim's attempt at turning a self-help book into a self-help song and it kind of worked quite nicely, they then finished with On A Good Day and as Tim pointed out any day he's supporting the Jazz Butcher is a good day.<br />
+<br />
+After the break The Jazz Butcher Quintet sauntered onstage complete with the bands own legendary portable bar making a comeback for the first show by The Quintet, no not THE Quintet who recorded the album at Massey Hall that I had to play while reviewing the gig.<br />
+<br />
+They went right back to the Bath Of Bacon to open with the Jazz Butcher Theme which is a song I don't ever remember them playing live before it sounded great although Pat may have updated one or two of the lyrics and The Quintet have a great Indie Jazz rock sound but don't play fusion.<br />
+<br />
+Animals was next and was the first song that really showcased Simon Taylor's trumpet playing that interweaved with Pat's guitar and the Keyboards beautifully. Pat then dedicated the next song to the French fans that had come over for the gig and they did a rather wonderful laid back version of Tombe Dans Le Pommes off the bands most recent album Last Of The Gentleman Adventurers it kept the Slim Gaillard feel it normally has and had some great mute work by Simon.<br />
+<br />
+Last Of The Gentleman Adventurers was next and the lyrics have become a lot more poignant for me now I go and visit my mum in an old folks home and totally get what Pat is getting at and why he'd rather not end up watching dvd's of Coronation street all day long. This had a good slow bluesy feel to it.<br />
+<br />
+Black Raoul was played at a faster pace and the new Keyboards wiz really added a good bit of colour to the song. They then played the bands newest song Melanie Hargreaves Fathers Jaguar that has been in the live set for about 3 years now and is only getting better, I think Pat may have added another verse to it, either way I want to own it as a record in the old days it would have been a 12" single but either way it's overdue to be recorded a great song.<br />
+<br />
+I think Living In a Village was the first time Simon switched from Trumpet to Flugelhorn to add another layer of sophistication to this song of the despair of living in the middle of nowhere and it also still has quite a dancey feel to it. Mr Odd is still just as odd as he's always been only the flugelhorn bass and keyboards really wrapped around the lyrics really well as they sounded super tight and yet still good and musically flexible.<br />
+<br />
+Everyone loved Shakey one of the more recent songs that already seems like a live classic every time I hear it played and it got good and frantic in places before they got a lot more romantic on Shirley Maclaine that had most of us singing along to it.<br />
+<br />
+Pat then Toasted us all at the start of Partytime a song guaranteed to have us all singing and dancing along to it that just left time for a good long rave up through Solar Core that started out bluesy and then got spacier and spacier towards the end it was a great way to close a really great set.<br />
+<br />
+The packed crowd went nuts for an encore that was the inevitable tribute to the recently departed Mark E Smith yes we got a great version of Southern Mark Smith that made everyone smile. Then after more raucous applause they did Roadrunner for the second encore and it went down a treat the trumpet really made it.<br />
+<br />
+This was a really great Jazz Butcher show I hope the Quintet get to play lots more shows in the near future.<br />
+<br />
+		)})}
+	${jbc_footer}
+#live	endif
+
+#define	20140920_press_quartet.html
+#live	if (getval(page) = 20140920_press_quartet.html)
 	${extractPress(
 		body=${literalizeCommas(
 It has been years since I last saw anyone play at the Hope & Anchor and its recent makeover has made it once again a venue worth going to with great beer selection meaning I could drink this week's most appropriate beer yes I had some Twisted Thistle to keep the union together with. It was also cool to once again be at a gig promoted by Tony Fraser who put on so many of the gigs I was at in the 80's and onwards good to see him still putting on the odd cool show.

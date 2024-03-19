@@ -7,7 +7,7 @@ const MakeSimpleURI = ({ uri='', text, aux, children, className }: {
 	className?: string
 	children?: string | React.ReactNode
 }, key: number): React.ReactNode  => {
-	const useUri = uri?.startsWith('/') ? uri : `/${uri}`;
+	const useUri = (uri?.startsWith('/') || uri?.startsWith('http')) ? uri : `/${uri}`;
 	return (
 		<div key={key} className={className}>
 		{(uri) ?

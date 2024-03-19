@@ -72,6 +72,7 @@ const contributions = [
 	{ uri: '/releases/va_canyoutalktothedude_2', text: "Four One And Only's - Holy (LP, 1996)", aux: "Vocals for 'The U.F.O. Man'", },
 	{ text: 'The Purelove - King Pop (Marsh Marigold Records, 1997)', aux: 'Guitar', },
 	{ text: 'The Purelove - Live (1997 tour of Germany)', aux: 'Guitar', },
+	{ text: 'Shorty - The Bridge Over The River Nene (2020)', aux: 'Electric Guitar', uri: 'https://www.youtube.com/embed/75mdACIrqww'},
 ];
 
 const producer = [

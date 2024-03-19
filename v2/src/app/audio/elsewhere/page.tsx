@@ -7,6 +7,13 @@ import Tag from '@/components/Tag';
 
 const podcasts = [
 		{
+			mediaurl: "https://www.mixcloud.com/darrenharte/archive-interview-with-pat-fish-on-darren-hartes-hfm-radio-show-in-september-2018/",
+			title: "Archive interview with Pat Fish on Darren Harte's HFM Radio Show in September 2018",
+			datetime: "2018-09",
+			children: <>
+			</>
+		},
+		{
 			mediaurl: "https://podomatic.com/embed/html5/episode/6738834",
 			title: "Jughead's Basement, Episode 10 - The Jazz Butcher's A Scandal in Bohemia",
 			datetime: "2013-11-06",

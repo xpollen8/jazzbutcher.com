@@ -3870,7 +3870,7 @@ ${define(_set, false)}
 #live		if (define(hasPix, yes))
 #live		endif
 #live	endif
-#live	if (defined(setlists))
+#live	if ((getval(_gig->extra) == setlist) || (defined(setlists)))
 #live		if (define(hasSetlist, yes))
 #live		endif
 #live	endif

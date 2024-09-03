@@ -23,15 +23,15 @@ This is the first step to formalize a public/participatory framework for maintai
 
 ## v1
 
-The `v1` directory contains (most) of the .htdb files which drive the HTDB version of the jazzbutcher.com website
+The `v1` directory contains (most) of the .htdb files which drive the original HTDB version of the website, which is now found at: [https://v1.jazzbutcher.com](https://v1.jazzbutcher.com)
 
 ## v2
 
-The `v2` directory contains the Work In Progress which is the conversion of the `v1` site into a nextjs/React application.
+The `v2` directory contains the Work In Progress which is the conversion of the `v1` site into a nextjs/React application
 
-Changes made here will be deployed within a minute to [https://jazzbutcher-com.vercel.app/](https://jazzbutcher-com.vercel.app/)
+Changes made here will be deployed within a minute to [https://jazzbutcher-com.vercel.app/](https://jazzbutcher-com.vercel.app/), which is also where jazzbutcher.com now points.
 
-As of this writing (2023-08-27), the V2 website is fairly faithful to the look and functionalty of V1 version.
+<strike>As of this writing (2023-08-27), the V2 website is fairly faithful to the look and functionalty of V1 version.</strike>
 
 I am *completely* open to collaborating with people with web design and/or UX experience.  Let's work on this together.  Hit me up!
 

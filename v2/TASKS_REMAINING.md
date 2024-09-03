@@ -10,8 +10,8 @@
 √ ensure ALL releases have correct performance entries for songs
 </strike>
 
-# add audio link to  performance entries for songs
-  * this will take care of accounting for songs without any other association
+√ add audio link to  performance entries for songs
+  √ this will take care of accounting for songs without any other association
 
 # port all of /articles
 	√ will now be /mailinglist

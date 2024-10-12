@@ -1,6 +1,6 @@
 {
 	"noun": "newsItem",
-	"numResults": 85,
+	"numResults": 86,
 	"results": [
 	{
 		"subject": "Help Us!",
@@ -1020,6 +1020,18 @@
 		"link": "/gigs/2015/Sep22_2000.html",
 
 		"category": "press"
+
+	} ,
+	{
+		"subject": "Unreleased demo from Sumosonic II: Dracula 2000",
+
+		"body": "<span class='audioPlayer'> <span class='audio_title'> <i> Dracula 2000 </i> </span> <span class='smalltext'> <i>Courtesy Ian Botteril, a sampling of what a second Sumosonic release might have sounded like.</i> </span> <br/> <audio controls='controls' title='Dracula 2000' preload='none' class='audio_player'> <source src='https://v1.jazzbutcher.com/audio/Sumosonic_Dracula_2000.mp3' type='audio/mpeg' /> Your browser does not support the audio element. </audio> </span>",
+
+		"dt": "1728667980",
+
+		"link": "/lyrics/dracula_2000.html",
+
+		"category": "media"
 
 	} 
 	]

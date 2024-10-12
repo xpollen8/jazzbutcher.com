@@ -24,6 +24,13 @@ The jazzbutcher.com HTDB files in particular are the most complex examples of HT
 
 This is why *things must change*
 
+## state of the world
+
+JBC com `v2` is now live as (https://jazzbutcher.com)
+
+JBC com `v1` lives on at (https://v1.jazzbutcher.com), and some of the editing processes supported by `v1` are instrumental for maintaining the data that drives `v2`.
+
+<strike>
 ## the roadmap to V2 (node codebase)
 
 Much of what is currently derived in realtime from database results could, in fact, be transformed into static .json files.
@@ -35,7 +42,4 @@ Once .json files have been created, nextjs/React components could replace HTDB s
 Currently, not *all* of the data is held in the database.  Unfortunately, much real "data" is interspered within the .htdb data files - declared as arrays and variables in HTDB, and then used by HTDB scripts.
 
 It will be a challenge to extract this information, while maintaining the orginial intent and layout.
-
-## the process
-
-*TDB*
+</strike>

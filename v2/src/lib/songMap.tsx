@@ -209,6 +209,8 @@ const songMap: { [key: string]: any } = {
 	"sebastian's_medication": "sebastians_medication.html",
 	"goodnight_sweetheart": "goodnight_sweetheart.html",
 	"wildlife": "wildlife.html",
+
+	"dracula_2000": "dracula_2000.html",
 }
 
 export default songMap;

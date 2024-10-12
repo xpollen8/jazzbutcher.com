@@ -168,14 +168,14 @@ export const newsItems: NewsItemType[] = jsonNewsItems?.results?.filter((n: News
 }).sort((a: NewsItemType, b: NewsItemType) => moment(b.dt) - moment(a.dt));
 
 const displayNewsItem = (n: NewsItemType) => {
-	const body = (typeof n.body === 'object') ? n.body : <div dangerouslySetInnerHTML={{ __html: n.body || '' }} />
+	const body = (typeof n.body === 'object') ? n.body : <div dangerouslySetInnerHTML={{ __html: n?.body || '' }} />
 	return <MakeSimpleURI uri={n?.link} text={n.subject || ''} aux={dateDiff(n.dt, '')} className="listItem">
 		{body}
 		{(n?.credit) && <Credit g={n.credit} />}
 	</MakeSimpleURI>
 }
 
-export const MostRecentNews = () => <><Tag>Most recent website change</Tag>{displayNewsItem(recentNews[0] as NewsItemType)}<News /><p /></>;
+export const MostRecentNews = () => <><Tag>Most recent website change</Tag>{displayNewsItem(newsItems[0] as NewsItemType)}<News /><p /></>;
 
 const News = () => {
 	let year: number;

@@ -435,6 +435,10 @@ ${jbc_footer}
 	<dd><a href="${jbc_lyrics}/sumosonic_sputnik.html"><i>Sputnik</i></a></dd>
 	<dd><a href="${jbc_lyrics}/sumosonic_radio_saigon.html"><i>Radio Saigon</i></a></dd>
 	<dd><a href="${jbc_lyrics}/sumosonic_hey_star.html"><i>Hey, Star</i></a></dd>
+	<hr />
+	Unreleased
+	<hr />
+	<dd><a href="${jbc_lyrics}/dracula_2000.html"><i>Dracula 2000</i></a></dd>
 	</dl>
 	${endTab}
 

@@ -1448,6 +1448,7 @@ font.load().then(function () {
 #define	knight		${linkSearch(query=Knight Berman)}
 #define	jimmy		${linkExternal(https://twitter.com/RealJamesDuval, James Duval)}
 
+#define	dracula_2000		${linkSong(href=${jbc_lyrics}/dracula_2000.html, title=Dracula 2000, project=sumosonic)}
 #
 #	useful defines
 #

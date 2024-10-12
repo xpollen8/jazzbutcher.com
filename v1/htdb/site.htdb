@@ -70,9 +70,9 @@ Includes digital pre-order of All Shall Be Well. You get 1 track now (streaming 
 
 #define	mainContent()
 
-#	${showNews(limit=2, showMore=no)}
 	<div id="container">
 	<div id="right">
+	${showNews(limit=2, showMore=no)}
 		${mkAlbumBlurb(prefix=relatedAlbums[1], details=no)}
 		${mkAlbumBlurb(prefix=albums[92], details=no)}
 		${book_sikkorski}

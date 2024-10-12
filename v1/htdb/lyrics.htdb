@@ -11321,6 +11321,88 @@ Break out and find out tonight.
 	)}
 #live	endif
 
+#define	dracula_2000.html
+#live	if (getval(page) = dracula_2000.html)
+	${lyricsHeader(title=Dracula 2000,
+		project=sumosonic,
+		lyrics=${literalizeCommas(
+
+			Dracula in the years 2000 - RISE
+			<br />		From a  culture of lies 
+			<br />		And plead stupidity and joinin’ in
+			<br />		Christ Jesus give me an original sin!
+			<br />
+			<br />		Berlin in the 1930’s
+			<br />		Too many fools don’t want to get their hands dirty
+			<br />		They came for the Reds, the Gypsies, the Jews
+			<br />		So who’s gonna stop ‘em when they come for you?
+			<br />
+			<br />		And who is this sucker they’re callin’ the drug czar
+			<br />		Face everywhere like a motherfuckin’ rock star
+			<br />		Please to Banksy the voice of a nation
+			<br />		70% of decriminalization  
+			<br />
+			<br />		Hate (8?) to go no disrespect
+			<br />		But what the fuck d’you expect to see?
+			<br />		Cop’s throwin’ out ice cold water
+			<br />		Yeah, terminator X-tacy
+			<br />
+			<br />		All I’m tryin’ to do is get along
+			<br />		Who is it? Who is it? Who is it?
+			<br />		All I’m tryin’ to do is get along
+			<br />		Who is it?
+			<br />
+			<br />		Dracula in the years 2000 rules
+			<br />		A little chain of fools in denial
+			<br />		Bloodsucker, evil motherfucker
+			<br />		Back from the dead tryin’ to play me for a sucker
+			<br />
+			<br />		In an undead life of health and sobriety
+			<br />		Make me secure in the belly of society
+			<br />		I’m here to tell you that you got that wrong
+			<br />		I don’t wanna belong.
+			<br />
+			<br />		All I’m tryin’ to do is get along
+			<br />		Who is it? Who is it? Who is it? Who is it?
+			<br />		All I’m tryin’ to do is get along
+			<br />		Who is it? Who is it? Who is it? Who is it?
+			<br />
+			<br />		Who moves the invisible hands?
+			<br />		Who is it? Who is it? Who is it? Who is it?
+			<br />		Who is it? Who is it?
+			<br />		Who is it? Who is it? Who is it? Who is it? Who is it? Who is it? Who is it? Who is it?
+			<br />
+			<br />		All I’m tryin’ to do is get along
+			<br />		All I’m tryin’ to do is get along
+			<br />		All I’m tryin’ to do is get along
+			<br />		All I’m tryin’ to do is get along, yeah
+			<br />		All I’m tryin’ to do is get along
+			<br />		Help me out here. Name the guilty men
+			<br />
+			<br />		Who is he to the employee?
+			<br />		Is he Mr. Bean just the same as me?
+			<br />		I don’t think so, and I’m here to go
+			<br />		Minutes to go as we roll with the flow
+			<br />
+			<br />		We got minutes to go
+			<br />		Minutes to go
+			<br />		Don’t let them see us, don’t let them know what we’re doin’
+			<br />		Not the ones we’re screwin’
+			<br />
+			<br />		Here to go
+			<br />		Right, Minutes to go!
+			<br />		last words of Hassan Sabbah
+			<br />
+			<br />		Don’t let them in on the heavy metal deal
+			<br />		Not the green deal
+			<br />		Not the real deal
+			<br />		Are these the words of all the undead corporations of the Earth?
+		)},
+		mp3=${jbc_audio}/Sumosonic_Dracula_2000.mp3,
+		caption=${literalizeCommas(Provided by Ian Botteril, 2024-10-11)},
+	)}
+#live	endif
+
 #define	data.json
 #live if (getval(page) = data.json)
 # doesn't yet work

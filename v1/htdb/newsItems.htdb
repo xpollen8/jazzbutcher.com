@@ -918,7 +918,15 @@ Courtesy its author. ${g_credit(u=https://twitter.com/NeilCooper1)}
 #define	newsItem[85]->body
 	<a href="/gigs/2015/Sep22_2000.html"><img src="${jbc_images}/20150922/20150922_william_backstage_250.jpg" width=250" alt="backstage"></a>
 
-#define	newsItem->numResults	85
+#define	newsItem[86]->dt	${date(U, 2024-10-11 17:33:00)}
+#define	newsItem[86]->subject Unreleased demo from Sumosonic II: Dracula 2000
+#define	newsItem[86]->link	/lyrics/dracula_2000.html
+#define	newsItem[86]->category	media
+#define	newsItem[86]->body
+	${linkAudio(project=sumosonic, title=Dracula 2000, autolink=no, mp3=${jbc_audio}/Sumosonic_Dracula_2000.mp3, comment=${literalizeCommas(
+	Courtesy Ian Botteril, a sampling of what a second Sumosonic release might have sounded like.)})}
+
+#define	newsItem->numResults	86
 
 
 #define	data.json

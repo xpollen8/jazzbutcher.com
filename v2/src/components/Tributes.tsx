@@ -38,7 +38,7 @@ const music = [
 		}} /></>
 	},
 	{ text: 'David J',
-		aux: 'Quell Tristesse',
+		aux: 'Quelle Tristesse',
 		children: <EmbedMedia data={{ mediaurl: "https://youtube.com/embed/u68NS-_qOOE" }} >
 		David J&apos;s tribute to Pat Fish.
 		7&quot;+CDR released Jan 6, 2023

@@ -20,6 +20,12 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "video: 2024-05-04 - David J. performing Quell Tristesse",
+		dt: '2024-11-04',
+		body: <EmbedMedia data={{ mediaurl: 'https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/video/20240504_DavidJ_Quell_AnnePace.mp4', mediacredit: 'Ann Pace', datetime: '2024-05-04', mediacreditdate: '2024-05-04' }} />,
+		category: 'media',
+	},
+	{
 		subject: "video: 1986-08-22 - Hard, French TV",
 		dt: '2024-01-25',
 		body: <EmbedMedia data={{ mediaurl: 'https://youtube.com/embed/3DeTg80CMj8', mediacredit: 'Jeremy braGxon fait le tri dans ses archives vidéo' }} />,

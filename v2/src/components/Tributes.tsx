@@ -78,7 +78,7 @@ const music = [
 ];
 
 export const TributeText = () => <div className="border"><Tag>Tributes In Words</Tag> <p /> {texts.map(MakeSimpleURI)}<p /></div>
-export const TributeAudio = ()  => <div className="border"><Tag>Tributes In Audio</Tag> <p /> {music.map(MakeSimpleURI)}</div>
+export const TributeAudio = ()  => <div className="border"><Tag>Tributes In Song</Tag> <p /> {music.map(MakeSimpleURI)}</div>
 
 const Tributes = () => <>
 	<TributeText />

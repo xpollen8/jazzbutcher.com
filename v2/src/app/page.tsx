@@ -59,16 +59,16 @@ const Home = (): React.ReactNode =>
 					</Link>
 				</div>
 				<MostRecentNews />
-				<div className="max-w-lg grow">
-					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
+				<RecentUpdates />
 					<OnThisDay />
-				</div>
 			</div>
 			<div className="max-w-lg grow">
-				<RecentUpdates />
 				<Tag style={{ marginBottom: '10px' }}>Recent Releases</Tag>
 				<HomeReleases />
-				<HomeBooks />
+				<div className="max-w-lg grow">
+					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
+					<HomeBooks />
+				</div>
 			</div>
 		</div>
 	</main>

@@ -501,7 +501,8 @@ samp {
 	padding: 0px;
 }
     
-.breadcrumb li {
+.breadcrumb a {
+	text-decoration-line: underline;
 }
 .breadcrumb li:not(:last-child)::after {
 	display: inline-block;

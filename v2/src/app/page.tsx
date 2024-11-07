@@ -20,13 +20,15 @@ const relatedReleases = {
 	Tundraducks Records supremo Augustus Pokerback has shocked the music world by announcing that Max Eider’s new EP will be released on Glass Modern. ‘I’ve stitched Barker up like a kipper,’ Pokerback commented. ‘I can’t believe I’m rid of that idiot at last.’
 	<p />
 	In addition to the new title track, ‘All Shall Be Well’, the CD/DL features remixed/remastered versions of Eider’s last two digital single releases, ‘Go Gentle’ and ‘The Meek’, the latter including new vocal tracks by long-time collaborator and singer supreme June Miles-Kingston.
+	`
+	/*
 	<p />
 	‘These songs belong together so it made sense to revisit the other two and do a physical release,’ Max says. ‘It’s great to be working with Dave again. Augustus will probably be devastated but to be honest I’m not sure he still has mental capacity, if you know what I mean. He’s 111 years old for fuck’s sake.’
 	<p />
 	Cover art by multi-award-winning cartoonist and old friend Dave Coverly
 	<p />
 	Includes digital pre-order of All Shall Be Well. You get 1 track now (streaming via the free Bandcamp app and also available as a high-quality download in MP3, FLAC and more), plus the complete album the moment it’s released.
-	`
+	*/
 };
 
 const HomeBooks = () =>
@@ -59,7 +61,6 @@ const Home = (): React.ReactNode =>
 				<MostRecentNews />
 				<div className="max-w-lg grow">
 					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
-					<HomeBooks />
 					<OnThisDay />
 				</div>
 			</div>
@@ -67,6 +68,7 @@ const Home = (): React.ReactNode =>
 				<RecentUpdates />
 				<Tag style={{ marginBottom: '10px' }}>Recent Releases</Tag>
 				<HomeReleases />
+				<HomeBooks />
 			</div>
 		</div>
 	</main>

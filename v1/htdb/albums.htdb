@@ -4301,7 +4301,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=1, song="Come\, Friendly Spacemen", media=${jbc_audio}/AudioAquatic/AudioAquatic_01_ComeFriendlySpacemen.mp3, url=${jbc_lyrics}/sumosonic_come_friendly_spacemen.html, version=extended, project=sumo)}
 	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=2, song="God's Green Earth", media=${jbc_audio}/AudioAquatic/AudioAquatic_02_GodsGreenEarth.mp3, url=${jbc_lyrics}/sumosonic_gods_green_earth.html, project=sumo)}
 	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=3, song="Fern Schnell Gut", media=${jbc_audio}/AudioAquatic/AudioAquatic_03_FernSchnellGut.mp3, url=${jbc_lyrics}/sumosonic_fern_schnell_gut.html, project=sumo)}
-	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=4, song="Destroy All Monsters", media=${jbc_audio}/AudioAquatic/udioAquatic_04_DestroyAllMonsters.mp3, url=${jbc_lyrics}/sumosonic_destroy_all_monsters.html, project=sumo)}
+	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=4, song="Destroy All Monsters", media=${jbc_audio}/AudioAquatic/AudioAquatic_04_DestroyAllMonsters.mp3, url=${jbc_lyrics}/sumosonic_destroy_all_monsters.html, project=sumo)}
 	${addAlbumPerf(release=audio_aquatic_demo, type=Aside, ordinal=5, song="We Are The Traffic", media=${jbc_audio}/AudioAquatic/AudioAquatic_06_WeAreTheTraffic.mp3, url=${jbc_lyrics}/sumosonic_we_are_the_traffic.html, project=sumo)}
 
 	${jbc_footer}

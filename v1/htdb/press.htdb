@@ -438,6 +438,153 @@ ${d}
 	${addPatLiveGigs()}
 	${addLiveGigs()}
 
+	${addPress(type=album, album=nons,
+		url=${jbc_press}/19860807_press_varsity_nonsense.html,
+		publication=The Varsity,
+		thumb=${jbc_images}/19860807_press_varsity_nonsense,
+		source=https://archive.org/details/thevarsity107/page/n39/mode/2up?q=%22jazz+butcher%22,
+		credit=RICHARD ELLIS,
+		location=University of Toronto\, Canada,
+		title=The Jazz Butcher,
+		headline=tottering on the edge of popularity,
+		dt=1986-08-07,
+		added=2024-11-14)}
+
+	${addPress(type=album, album=planet,
+		url=${jbc_press}/19900125_press_varsity_planet.html,
+		publication=The Varsity,
+		thumb=${jbc_images}/19900125_press_varsity_planet,
+		source=https://archive.org/details/thevarsity110/page/n557/mode/2up?q=%22jazz+butcher%22,
+		credit=ANDREW THOMPSON,
+		location=University of Toronto\, Canada,
+		title=The Jazz Butcher,
+		dt=1990-01-25,
+		added=2024-11-14)}
+
+	${addPress(type=album, album=cult,
+		url=${jbc_press}/19901211_press_varsity_cult.html,
+		publication=The Varsity,
+		thumb=${jbc_images}/19901211_press_varsity_cult,
+		source=https://archive.org/details/thevarsity111/page/n413/mode/2up?q=%22jazz+butcher%22,
+		credit=MURRAY FOSTER,
+		location=University of Toronto\, Canada,
+		title=The Jazz Butcher,
+		dt=1990-12-11,
+		added=2024-11-14)}
+
+	${addPress(type=album, album=fishco,
+		url=${jbc_press}/19880404_press_collegian_fishco.html,
+		publication=The Massachusetts Daily Collegian,
+		thumb=${jbc_images}/19880404_press_collegian_fishco,
+		source=https://archive.org/details/massachuse19871988univ/page/n1035/mode/2up?q=%22jazz+butcher%22,
+		credit=CHAD EDWARDS,
+		location=Amherst\, Massachusetts\, USA,
+		title=Butcher bounces back on new Fishcoteque Lp,
+		dt=1988-04-04,
+		added=2024-11-14)}
+
+	${addPress(type=album, album=nons,
+		url=${jbc_press}/19860919_press_catalyst_nonsense.html,
+		publication=The Catalyst,
+		thumb=${jbc_images}/19860919_press_catalyst_nonsense,
+		source=https://archive.org/details/catalystsept12192021colo/page/n45/mode/2up?q=%22jazz+butcher%22,
+		credit=CHRISTOPHER DUNN,
+		location=Colorado College\, Colorado\, USA,
+		title=Tasty Cuts from the Butcher,
+		dt=1986-09-19,
+		added=2024-11-14)}
+
+	${addPress(type=interview,
+		url=${jbc_press}/19880526_press_charlatan.html,
+		publication=The Charlatan,
+		thumb=${jbc_images}/19880526_press_charlatan,
+		source=https://archive.org/details/thecharleton18carl/page/10/mode/2up?q=%22jazz+butcher%22,
+		credit=Anne Marie McElrone,
+		location=Carleton University\, Ottawa\, Ontario\, Canada,
+		title=Beer and Big Questions with the Butcher,
+		dt=1988-05-26,
+		added=2024-11-14)}
+
+	${addPress(type=album, album=nons,
+		url=${jbc_press}/19861003_press_queensjournal_nonsense.html,
+		publication=The Queen's Journal,
+		thumb=${jbc_images}/19861003_press_queensjournal_nonsense,
+		source=https://archive.org/details/queensjournal114/page/n129/mode/1up?q=%22jazz+butcher%22,
+		credit=JEFF BURTT,
+		location=Queen's University\, Kingston\, Ontario\, Canada,
+		title=Jazz Butcher makes music of bloody nonsense,
+		dt=1986-10-03,
+		added=2024-11-14)}
+
+	${addPress(type=album, album=spook,
+		url=${jbc_press}/19890310_press_queensjournal_spooky.html,
+		publication=The Queen's Journal,
+		thumb=${jbc_images}/19890310_press_queensjournal_spooky,
+		source=https://archive.org/details/queensjournal116/page/n563/mode/1up?q=%22jazz+butcher%22,
+		credit=TOM MEGGINSON,
+		location=Queen's University\, Kingston\, Ontario\, Canada,
+		title=Spooky,
+		dt=1989-03-10,
+		added=2024-11-14)}
+
+	${addPress(type=album, album=dist,
+		url=${jbc_press}/19861128_press_queensjournal_distressed.html,
+		publication=The Queen's Journal,
+		thumb=${jbc_images}/19861128_press_queensjournal_distressed,
+		source=https://archive.org/details/queensjournal114/page/n298/mode/1up?q=%22jazz+butcher%22,
+		credit=JEFF BURTT,
+		location=Queen's University\, Kingston\, Ontario\, Canada,
+		title=Butcher lacks chop,
+		dt=1986-11-28,
+		added=2024-11-14)}
+
+	${addPress(type=album, album=planet,
+		url=${jbc_press}/19891117_press_queensjournal_planet.html,
+		publication=The Queen's Journal,
+		thumb=${jbc_images}/19891117_press_queensjournal_planet,
+		source=https://archive.org/details/queensjournal117/page/n338/mode/1up?q=%22jazz+butcher%22,
+		credit=Helen Lee,
+		location=Queen's University\, Kingston\, Ontario\, Canada,
+		title=Meaty offering from the Butcher,
+		dt=1989-11-17,
+		added=2024-11-14)}
+
+	${addPress(type=album, album=dist,
+		url=${jbc_press}/19870115_press_varsity_distressed.html,
+		publication=The Varsity,
+		thumb=${jbc_images}/19870115_press_varsity_distressed,
+		source=https://archive.org/details/thevarsity107/page/n585/mode/2up?q=%22jazz+butcher%22,
+		credit=Helen Lee,
+		location=Toronto\, Canada,
+		title=In the springtime fish have sex,
+		dt=1987-01-15,
+		added=2024-11-14)}
+
+	${addPress(type=gig,
+		url=${jbc_press}/19891207_press_martlet.html,
+		publication=The Martlet,
+		thumb=${jbc_images}/19891207_press_martlet,
+		source=https://archive.org/details/martlet-1989-12-07/page/12/mode/2up?q=%22jazz+butcher%22,
+		credit=Victoria Mallett,
+		location=Victoria\, Canada,
+		title=Unusual pair rocked the Forge,
+		datetime=1989-11-29,
+		dt=1989-12-07,
+		added=2024-11-14)}
+
+	${addPress(type=interview,
+		url=${jbc_press}/20130113_press_unita.html,
+		publication=l'Unità,
+		thumb=${jbc_images}/20130113_press_unita,
+		source=https://archive.org/details/unita_2013-01-13/page/n23/mode/1up?view=theater,
+		credit=GIANCARLO SUSANNA,
+		location=Italy,
+		title=Jazz Butcher,
+		headline=il ritorno,
+		subhead=Il cd del gruppo inglese finanziato su internet,
+		dt=2013-01-13,
+		added=2024-11-14)}
+
 	${addPress(type=interview,
 		url=${jbc_press}/198503_press_goforgold3_germany.html,
 		publication=Go For Gold #3,
@@ -16605,6 +16752,519 @@ Kate Flaherty reviews new alternative music from the record library of WWPV-FM.
 
 	)})}
 	${jbc_footer}
+#live	endif
+
+#define	19860807_press_varsity_nonsense.html
+#live	if (getval(page) = 19860807_press_varsity_nonsense.html)
+	${extractPress(
+		body=${literalizeCommas(
+BY RICHARD ELLIS Varsity Staff Writer
+<p />
+Really good secrets don't stay hidden for very long. Sooner or later the wrong people find out, and then the fun is ruined for those who were in the know.
+<p />
+In the world and culture of commercial pop music this usually signals the downfall of a band's artistic credentials, at least in the eyes of the original beholders. Singles follow singles. Success follows success. Then comes the first gold album and international stardom, followed meekly by cries of "I used to like Simple Minds when they weren't on the radio."
+<p />
+British pop upstarts The Jazz Butcher seem to be tottering on the edge of popularity — or at least marginal success — much to the chagrin of import-bin regulars like me who may soon be saying "I used to like The Jazz Butcher when ..."
+<p />
+For the moment, however, the Butchermen are Next To God. Seriously. They are the refreshingest breath of air to hit the platter in quite a while. While The Smiths are making alarming inroads with the teenie crowd and Billy Bragg has found his way into the homes of the Rosedale socialist set, The Jazz Butcher, surely the most unpretentious band around, have quietly but firmly brought a good sense of humour back to the whole thing. And I mean the Whole Thing.
+<p />
+Their first North American release. Bloody Nonsense, is (what else?) a compilation of some of their finer tunes already released in Britain. The bulk of the album is culled from the Scandal in Bohemia album and The Human Jungle EP.
+<p />
+Musically, The Jazz Butcher live up to their name, hacking apart genres as though there were no tomorrow. "The Devil is my Friend" is a country rave-up, "Partytime" is a hilarious send-up of smoky barroom jazz, and "CaroHne Wheeler's Birthday Present" would set the tootsies of the most ardent pogoer alight.
+<p />
+They really hit the mark, though, when they concentrate on their unequalled breezy pop melodies. Infectious and wonderful, songs like "Hard", "Big Saturday", "Southern Mark Smith", and "Girlfriend" jump out at you with their warm, straight, and honest sound. The music is pop at its best, with Max Eider spreading the icing on the cake with his witty and jazzy lead guitar fills.
+<p />
+Those who were at the Butcher's RPM concert last month were treated to an easygoing and friendly display of music that not only reached out to people, but also entertained them. The band members say they are too old and obstreperous to conform to an image or a formula. I think they're too intelligent to hop on any bandwagon, be it angst, heavy metal or whatever.
+<p />
+The mid-1980s pop music scene is beginning to look dangerously like the mid 1970s. We need to find bands like The Jazz Butcher: real people singing real songs to real people, shunning the image and pretentions, both lyric and musical, that make popular music so empty and imbecilic these days.
+<p />
+So buy the album, join the Jazz Butcher Conspiracy, and find out what you've been missing. But don't tell anyone. You may spoil a good thing.
+		)}
+	)}
+#live	endif
+
+#define	19900125_press_varsity_planet.html
+#live	if (getval(page) = 19900125_press_varsity_planet.html)
+	${extractPress(
+		body=${literalizeCommas(
+The Jazz Butcher
+<p />
+Big Planet Scarey Planet
+<p />
+Creation Records
+<p />
+The Jazz Butcher Conspiracy, those iconoclasts of British politics, have produced another intriguing effort. It's evident that the band has slowly but surely risen from their image as a post-Bauhaus band. As of late they have had to cope with the loss of JBC mainstay Max Eider, who has been estranged from them for the past year or so.
+<p />
+Despite these problems, Big Planet Scarey Pianet is a continuation on their much travelled road of social and poUtical consciousness.
+<p />
+"Bicycle Kid" originated from Fish watching the temper tantrum of an eleven-year-old. It's a return to the boppy style seen in their previous hit "The Devil Is My Friend," which just let loose and tried to enjoy itself. Lyrics like "Bicycle Kid grow up and get worse / Bicycle Kid forget to use a condom / Bicycle Kid! / It's evolution in reverse," show that they have not lost their quirky sense of humor.
+<p />
+This album has expanded upon the usual heavy bass and guitar jangle that epitomizes the JBC sound. The driving rhythms of "Burglar Love" and ""The Word I Was Looking For' explore these more forceful sounds.
+<p />
+Of the more political efforts, the opening track, "New Invention," has a rift that is reminiscent of Lloyd Cole and the Commotions. It voices Fish's disdain for the hardline conservative politics of his native England.
+<p />
+Besides the lack of prevalent sax work so typical of past Jazz Butcher efforts. Big Pianet Scarey Planet encompasses all aspects of the JBC's multifaceted persona. It will entice those unfamiliar with their work to indulge themselves in its revelry while satisfying the hungers of their poetically dissatisfied fans.
+<p />
+ANDREW THOMPSON
+		)}
+	)}
+#live	endif
+
+#define	19901211_press_varsity_cult.html
+#live	if (getval(page) = 19901211_press_varsity_cult.html)
+	${extractPress(
+		body=${literalizeCommas(
+The Jazz Butcher Cult of the Basement Polygram
+<p />
+Well, thank god for the Jazz Butcher. If not for that ragged and dangerous silhouette falling drukenly acoss my door every few years, muttering something about Prague and throwing his latest album viciously onto the turntable, I might begin to believe that music had become safe.
+<p />
+But no. Just when we were getting to like three minute lobotomies ol' J.B. serves up Cult the Basement, a counter-culture album that takes love of the ground floor beyond defiant pride and into the realm of deification. As the liner notes read " beans blitburger and no such thing as noise reduction" (there's no use putting it in context, 'cuz it doesn't help.)
+<p />
+The dank, oily suburban basement — overtly mundane, secretly monstrous — perfectly sets the tone for this collection of ascerbic and ironic descriptions couched in an innocuous, sweet-sounding melody.
+<p />
+The first song on the album is the menacing intstruniental called, of course, "The Basement" which features the noise of two Germans brawling as background sounds. They could be French but even to ask that question means you've missed the point.
+<p />
+This track creeps back in between and beneath songs throughout, giving the album an eerie continuity that plagues the listener with a vague sense of persecution. By the third reprise, you find yourselves asking questions like, "What if they're not really my family?"
+<p />
+The Butcher's dangerous ironies are truly interesting. By lifting a few logs and tearing down a few facades, the band intelligently tackles such once-taboo topics as romantic homicide ("You're too good for this world /Something had to be done") and owning one's own Zepplin ("My Steff-Graf-Zepplin dream"). The entirely hummable melodies provide ironic counterpart and will keep you coming back even after the punchlines have lost their punch.
+<p />
+At some points when they can help themselves no longer, as with "Turtle Bait", an angry pilgrimage back to their punk-tinged roots, the band gives up all pretense of decorum and melody and simply rave for three minutes. To those who have made the acquaintance of the Jazz Butcher, Cult of the Basement will belike a visit from an old friend just back from therapy. To those who haven't, buy this one and deadbolt your doors.
+<p />
+MURRAY FOSTER
+		)}
+	)}
+#live	endif
+
+#define	19880404_press_collegian_fishco.html
+#live	if (getval(page) = 19880404_press_collegian_fishco.html)
+	${extractPress(
+		body=${literalizeCommas(
+By CHAD EDWARDS Collegian Correspondent
+<p />
+The Jazz Butcher
+<p />
+Fishcotheque
+<p />
+Relativity Creation Records
+<p />
+For those of you who are tired of hearing pretentious synthesized garbage. Pat Fish, a.k.a. The Jazz Butcher, has just released the eagerly awaited Fishcotheque. Since his first LP in 1983 (which was assisted by Max Eider, now on his own). Fish has in corporated new "partners in crime" and has changed record labels. Prior to this album, his sixth, it was popular opinion that he had previously exhausted all of his talent on former relaases. Fishcotheque defies all rumors.
+<p />
+Teaming up with Kizzy O'Callaghan on guitar and vocals, the Jazz Butcher has redefined all of his creative energies to produce ten new songs that are musically charming yet lyrically pungent. Both absurdity and diversity abound as Fish's folio goes on a trip through assorted tracks ranging in subject matter from hard-core loneliness to a rap-based song about vegetarianism.
+<p />
+The Jazz Butcher has metamorphosized his once modest guitar strumming into frantic and sometimes frenzied displays of creative emotion On "Chicken Town" and "Looking for Lot 49." Fish takes to the fuzzbox to thrash out heavy guitar licks, seemingly only a dream of his, especially after hearing his last release. And while never lacking consistency. Fish also produces smooth riffs that send the listener to calming terrains.
+<p />
+If you've never acquired that distinct taste for saxophones, this album provides you with a chance to do so. The Jazz Butcher has incorporated the talents of the renowned Alex Green. Using a chorus of saxes on "Out of Touch" and "Living in a Village." Green takes the English Beat's tropicana club sound a step further, producing a musical texture that can be used for both easy listening and for dancing.
+<p />
+When listening to Fishcotheque for the first time, you're sure to find yourself lost among these "folkish" tunes with their lyrics which really hit home on "Let's Get it Wrong" for example, pop music's "let's get it right, babe" attitude is blatantly attacked with lines like "You say I've got no moral fiber/ Well I'm sick and tired of that Special K to eat for breakfast anyway So come on darling, let's get it wrong."
+<p />
+Part of "Chicken Town's" background monologue. "Way Best chicken is so superb that you'll serve it with no regrets, no apologies" shows how Fish can tastefully adapt Big Audio Dynamite's acclaimed style of using radio announcers to blurt out some off-the-wall advertisement.
+<p />
+It's apparent that the English music scene is going through a revolution, steering away from its old post punk ideals and turning back to a traditional jazz-rock sound. The musicians themselves are having an identity crisis, as their synth/drum machine dependent counterparts give them an "all technology, no talent" label. Fishcotheque, with its glowing talent and tasteful selection of instruments, stands as the first authentic release to symbolize English music's new trend.
+<p />
+The Jazz Butcher, a.k.a. Pat Fish, lounges yet still is able to rock on his sixth release, Fishcotheque. The Butcher turns to diverse lyrics and textured musical styles on this newest Lp. Released in March, it is available on Relativity Records in area record stores.
+		)}
+	)}
+#live	endif
+
+#define	19860919_press_catalyst_nonsense.html
+#live	if (getval(page) = 19860919_press_catalyst_nonsense.html)
+	${extractPress(
+		body=${literalizeCommas(
+BY CHRISTOPHER DUNN
+<p />
+The Jazz Butcher Group is among the truly original bands to come over from England this year. This Northamptonshire group first appeared in London in 1983, and have finally made it over to the United States to promote their latest album "Bloody Nonsense." It includes a diverse assortment of twelve cuts, compiled expressly for us Americans, from various albums and 45s previously released in England.
+<p />
+The Butcher and his group mix elements of soul, countiy, jazz, and that raw, dirty rock sound that obscured the Velvet Underground from popular recognition. At their rawest the Jazz Butcher Group is remeniscent of Bauhaus (though not so dark and "intense") as in "Caroline Wheeler's Birthday Present," which features a loud, distorted guitar and the Butcher's ranting vocals. The more polished, melodic tunes, like "The Human Jungle" and "Big Saturday," may remind you of Roxy Music or Elvis Costello. To be sure, they are not afraid to utilize their more refined talents, like those of Max Eider, who generally prefers a clean, picked sound to the recently celebrated "chainsaw" craze.
+<p />
+In their lyrics, the Jazz Butcher Group stays clear of this new reverence for "sincerity," which has made some "postpunk" bands so syrupy and tiresome. The Jazz Butcher, with forked tongue and alcohol breath, sings and sputters about how he loves to groove in the bus lane, how he fears the "Death Dentist" (armed with electrical spikes and Novocain), and how the devil and Frank Sinatta are his friends. Of course, "Bloody Nonsense" includes two jazzy tunes, "Partytime" and "Drink," which describe the group's favorite pastime. They satirize everything from the heroes of modern rock to the absurdities of world politics, as in "President Reagan's Birthday Present." For the Jazz Butcher Group, nothing is sacred.
+<p />
+How refreshing it is to hear a band that doesn't take themselves, nor anything around them, too seriously. So I pass along the Jazz Butcher's message to America as it appears on the album cover: "Hey America, I slept with your wife,"
+		)}
+	)}
+#live	endif
+
+#define	19901130_press_queensjournal_cult.html
+#live	if (getval(page) = 19901130_press_queensjournal_cult.html)
+	${extractPress(
+		body=${literalizeCommas(
+The Jazz Butcher “The Cult of the Basement" PolyGram
+<p />
+BY TOM MEGGINSON
+<p />
+The Queen's Journal
+<p />
+The Jazz Butcher has returned this year and gone down to ihe basement. Not chartwise - he never even made the first floor - but in thought and feeling.
+<p />
+"Cult of the Basement" is the newest adventure in the absurd from Butch (Pat Fish) and the Jazz Butcher Conspiracy (Paul Mulreany, Lawrence O’Keefe, Kizzy 0’Callaghan, Richard Formby and Alex Green). Their music belongs - somewhat in the early ’80s, along with such notables as the Teardrop Explodes, the Cure, the Psychedelic Furs, and XTC. It is psychedelic pop - a mixture of post-punk top-forty and too many hits of LSD.
+<p />
+The Butcher himself came out of that period in 1983 - another escapist refugee of Thatcher’s England. In one sense, the Butcher will never come out of that period. His music has retained a whimsical simplicity through several albums, gaining him a fairly impressive cult following among students, undergrounders and cafetypes.
+<p />
+"Cult of the Basement" has a depth and morbidity unprecedented in the Butcher's musical career. He told Melody Maker. “It was all very subterranean, going insane in a small, dark room ...We’re hopelessly nocturnal and wintry. The mushrooms didn’t help. “Debasement’ would have been more appropriate."
+<p />
+It is not really necessary to listen to all of the words; many are political or social commentary - but they don’t seem to make much sense. Along with the incessant vocal samples, the lyrics are best if you just let them blend in with the music - so that the extra-special bits of weirdness can jump out and take you by surprise. It helps to break the tension.
+<p />
+The dark mood of "Cult of the Basement" has led to several intriguing innovations in the JBC sound. “The Onion Field” has a moody piano laid overtop of a “Heroes”type sustained, harsh guitar. “Daycare Nation” has a beautiful blend of saxophones, and is paced like a mid- “70s Lou Reed song.
+<p />
+The Butcher uses his trademark sound and style to breed familiarity on songs such as “She’s On Drugs”, “Pineapple Tuesday”, “Mr. Odd”, “Panic in Room 109” and “Girl Go” - a more thickly produced version of a song from his June ’88 CBC sessions for Brave New Waves, which appeared on the Canadian mini-album Spooky. But that familiar sound is a bit fuller, more involved.
+<p />
+The eccentricity of a man who has grafted every conceivable genre to his own warped sensibilities is apparent on “My Zeppelin” a vaguely country-&-westem song about his desire to own a balloon vehicle. And then there is “After the Great Euphrates” - a short steel-guitar statement of a Hula nature.
+<p />
+The already dark mood of the album drops even further in the end. “Turtle Bait” and “Sister Death” - which should have been done by the Cure’s Robert Smith - are hard to deal with after everything else.
+<p />
+This is not to say that the album is bad. It’s really intriguing after a while. At first it seems like a normal JBC album: amusing and light - a fine companion piece for illicit activities, or cafe cruising. You could laugh at it the way you laugh at all of the other peculiar things that swim through your head sometimes. Or you could let it lull you into a mood as you sit for hours trying to find the meaning of life in the pattern of foam left in your diminishing cup of cafe au lait.
+<p />
+But then it grows in your brain - like mushrooms - nourished by warmth, darkness and heavy shit
+		)}
+	)}
+#live	endif
+
+#define	19880526_press_charlatan.html
+#live	if (getval(page) = 19880526_press_charlatan.html)
+	${extractPress(
+		body=${literalizeCommas(
+by Anne Marie McElrone
+<p />
+Part-time philosopher and full-time musician, Pat Fish, also known as the Jazz Butcher, has been tackling the Big Questions most people only ask when they're on acid or going through mid-life crisis.
+<p />
+The Butcher donned his apron and picked up his cleaver five years ago when he joined Maximilian Eider to form the core of the group composed of an everchanging assortment of their musical pals from Northampton in the United Kingdom. Over the years the Butcher's line-up has included the brothers Haskins, Kevin and David J. (both of Love and Rockets and. previously, Bauhaus), Rolo McGinty (The Woodentops), Owen Jones and Felix.
+<p />
+Eider and the rest of the Northampton entourage departed last year to pursue other projects, leaving Fish to carry on alone.
+<p />
+The recent release of Fishcotheque marks the forming of a new nucleus for the Butcher's ensemble. The new members were recruited in various ways. Fish says he found them by hanging around public washrooms, but in reality, guitarist/vocalist Kizzy O'Callaghan and saxophonist Alex Green have been "hanging around Northampton" and the Butcher for a long time. Fish says he found Lawrence O'Keefe through an ad in Melody Maker that caught his eye. "It began 'Hippopotamus, Pineapple ' he was a lunatic so we signed him up and sure enough he got the job."
+<p />
+Fish disagrees with some critics who say the lunacy of tunes like "Death Dentist" and "Buffalo Shame" is missing from his new album. He says he does not want to be dismissed as wacky and says Fishcotheque houses some of his better ideas.
+<p />
+"I feared at one time that we were in danger of being stuck as wacky, the funny pop group ... I want to make humour earn its keep. . . we can't change a great deal with pop songs but we can by talking to each other and pop songs help you talk to someone with 5,000 watts of volume so it must do something. Some of the overtly wacky stuff may have gone out but that's OK because I don't really like overtly wacky. I mean you could turn up to work wearing different colours of shoes but so what, know what I mean?"
+<p />
+He says the album is similar to their first domestic release Bloody Nonsense because a lot of the musicians went in and played songs they'd never played before.
+<p />
+"It's not a slab of raving expertly produced noise, but I wasn't aiming to make one of those anyway."
+<p />
+Fish uses his serious side to answer those nagging questions like What's it all about anyway? Polygram and CBC got together and decided to use Fish's insatiable curiousity and eloquence to produce an hour of the Butcher answering listener's Big Questions on CBC's Brave New Waves. Fish says he sits in the back of the tour bus mumbling into a microphone "looking quite absurd" but he's received "loads of intriguing stuff. . . some were seriously big. Some people wanted the entire universe explained. One brilliant chap wanted to know if you could squeeze infinity through the eye of a needle." That's big! No problem for the Butcher. "Sure you can," he says, "One thing about infinity is its extraordinary flexibility. I think it's possible but I wouldn't try it at home 'cause it's going take an awfully long time."
+<p />
+The Butcher has no time for stuffing anything through the eye of the needle. He's been touring with his new line-up since February and will be in Ottawa at Barrymore's on June 6. Unlike many bands who complain about touring, the Butcher loves it.
+<p />
+"It's a great way to travel, especially when you're a little band. A big band has to play huge venues like ugly grey concrete sports halls and the rest of the time they see a Holiday Inn and an airplane."
+<p />
+Fish finds Canadian crowds particularly receptive to the Jazz Butcher's music, "Just from the ground floor experience of going around and playing to people, Canada just struck me as sympathetic to us."
+<p />
+The crowds aren't the only thing the Butcher likes about Canada. He is "quite fond" of Molson beer. Veering off on a tangent, as he is prone to do, Fish comments on the disdain Americans seem to feel towards bands sponsored by beer companies.
+<p />
+"Oh, them they're a beer band. It's the kiss of death for a band." He does not have any qualms about cigarette companies as sponsors. "If they're good enough for Bette Davis, they're good enough for me!"
+<p />
+Actually it's the slogan on Molson's bottles that caught the Butcher's eye. '"An honest brew makes its own friends' is a great piece of wisdom. Actually, I think that's an answer to one of the Big Questions."
+		)}
+	)}
+#live	endif
+
+#define	19861003_press_queensjournal_nonsense.html
+#live	if (getval(page) = 19861003_press_queensjournal_nonsense.html)
+	${extractPress(
+		body=${literalizeCommas(
+Bloody Nonsense The Jazz Butcher Polygram
+<p />
+By JEFF BURTT
+<p />
+The Jazz Butcher and his aptly-named cohorts, the Sikkorskis From Hell, offer up on Bloody Nonsense a collection of bright, tuneful and unabashedly groovy pop songs.
+<p />
+Eschewing a commercially viable, formulaic approach, the Butcher and his daredevil chums attack everything from the jazzy, soulful meanderings of the opener, "The Human Jungle," to the all out rocker, "Death Dentist." This casual outburst of styles reveals a concern for texture and mood as opposed to simple verse — chorus song structure.
+<p />
+The record spawns the sublime and the (wonderfully) ridiculous. "Big Saturday" is a gorgeous, upbeat ballad which underpins its heart warming lyric with bittersweet guitar and warbling bass progressions; the band’s natural sense of timing here creates a dynamic thrust equal to the song’s emotional impact.
+<p />
+"Girlfriend" presents an amphetamine-blurred Dire Straits while “Caroline Wheeler’s Birthday Present” — made "entirely from the skins of dead Jim Morrisons... that’s why it smelt sooo bad" — is as deranged a thrasher as could be imagined.
+<p />
+These disparate styles are all immensely successful. The lush musical arrangements and twin guitars of the Butcher and his sidekick Max Eider propel the songs forward with a rhythmic and melodic quirkiness which positively leaps forth from the grooves.
+<p />
+The band’s campy sense of fun, with such dedication to dementia now being so rare and unfashionable, is innovative musically and tremendously invigorating. Bloody Nonsense exposes the Jazz Butcher at the height of his powers. This is a release that shouldn’t miss being checked out
+		)}
+	)}
+#live	endif
+
+#define	19890310_press_queensjournal_spooky.html
+#live	if (getval(page) = 19890310_press_queensjournal_spooky.html)
+	${extractPress(
+		body=${literalizeCommas(
+The Jazz Butcher Polygram
+<p />
+By TOM MEGGINSON
+<p />
+Butch is back - and a bargain Butch to boot. On his tour last year to promote Fishcotheque, Pat Fish the Jazz Butcher - and his merry band stopped in at CBC studios in Montreal. There, they did a bit of recording for “Brave New Waves,” in a Peel-type session.
+<p />
+When he got back to England, Butch went to work on a 12” single of dance music, to fill what he found to be a “severe shortage of suitable frugging material” in his repertoire. He created an acid-dance cover of “Spooky,” instantly familiar sixties pop gem.
+<p />
+Butch’s compatriots must be content with just the dance tracks. But we happy colonists may rejoice to our own exclusive mini-album, featuring the English EP on side one and the CBC session on the flip. And at seven bucks for the vinyl or tape, and eleven for the CD, it may be this year’s best buy yet
+<p />
+The Jazz Butcher is yet another product of the eighties yearning for the simple sixties. Like most other psychedelic pop artists, his songs attack today’s evils with the sort of whimsical sarcasm that can only come from England’s acid underground. Like Julian Cope and Robyn Hitchcock, Butch follows a credo of “speak softly but carry lots of guitar effects.”
+<p />
+In the current anti-drug blitz of neo-disco and Armani suits, the Butcher’s attitudes and music may seem a trifle out of date. He begins his copious liner notes with the words, “Thanks for the money.  We’ll be spending it on WEAPONS and DRUGS.” Not the kind of thing you’d hear pretty Rick crooning over his drum programs.
+<p />
+If you want to dance with the Butcher, he suggests that you play his record “very loud indeed and thrash about in a carefree fashion until it stops.” Anarchic as that may sound, the two versions of “Spooky” and the remix of “The Best Way” - a rap about the evils of eating chicken from Fishcotheque - incorporate elements of the evil House menace. Fortunately, since Butch is both a musician and a lunatic, his version of dance music is rythmic and repetetive, yet also interesting and weird.
+<p />
+The radio session is more traditional Jazz Butcher material. It’s
+stripped down, more like the music of his first two albums. He must have had quite a time in Canada, as he names several famous hosers in “Sex Engine”: Barbara Frum, Bruno Gerussi and A1 Waxman get mentioned alongside Skinny Puppy, Also included are a raunchier version of “Blame,” in overproduced form on side one, and three very pleasant tunes with dark lyrics “Whitfield, Sarah & The Birchfield Road Affair,” “Giri-Go” and “Grey Flannelette,” the Butcher’s favorite.
+<p />
+If you’ve got a sense of humor and a taste for alternative music, this could be your chance to get turned on to a great English institution - Acid Pop. The Jazz Butcher gives his own feelings about his music in Spooky’s liner notes: “I hope you dig the noises on this record.  That is, after all, the reason for our making them."
+<p />
+A true musician speaks.
+		)}
+	)}
+#live	endif
+
+#define	19861128_press_queensjournal_distressed.html
+#live	if (getval(page) = 19861128_press_queensjournal_distressed.html)
+	${extractPress(
+		body=${literalizeCommas(
+The Jazz Butcher Conspiracy Distressed Gentlefolk/Conspiracy polygram
+<p />
+By JEFF BURTT
+<p />
+Following last year’s Bloody Nonsense, this likeable ensemble garnered a reputation, both here and abroad, as endearing English jesters, with a penchant for musical dexterity. Their previous ability to be adventurous, which precipitated an explosion into disparate styles, eludes them in their latest release.
+<p />
+Distressed Gentlefolk is largely, a departure for the Butcher and chums. This release reveals the band is no longer disheveled and (reading dangerously upon the non-existent fusion between soul music and dirty pop. The Conspiracy attempts a collection of raw, somewhat brooding love songs; the listener's dilemma is that this retreat from self-parody and musical aggression reveals only frustrating glimpses of something more worthwhile.
+<p />
+The light, cocktail hour jazz of "The New World" masks twisting and bleak lyrics, while the anthemous "Angels” is played with less conviction than it deserves. The unfortunate result is that the group fails to transcend the tentative scratchings at the heart of their music.
+<p />
+As the title implies, Distressed Gentlefolk contains a bit too much English reserve. When the lyrics get painful, the music gets playful, and self-deprecation disguises a distaste for showing emotion. On this record the mocking self-caricature of the pop-star is ineffectual, the lyrics curiously edgy and the tongue too firmly planted in cheek.
+<p />
+The highlights are elicited when the band returns to its forte, bringing their not inconsiderable talents to bear on the bright, tuneful songs which characterized prior releases. "Domestic Animal" employs a campy lyric and superimposes a burgeoning guitar riff upon a whippersnapper high-hat skitter. "Nothing Special” is fueled by a chiming guitar which heightens the song’s bouncy progression.
+<p />
+In retrospect, I prefer these emphysemic ditties of ligament snapping proportion to the half-hearted, arm-wrestling poignance of the ballads. The Butcher and army need to find the right targets for their obvious wit and musical ability. Until they do, there remains the feeling they’ve conspired to make a record that could have been great, rather than merely pleasant.
+		)}
+	)}
+#live	endif
+
+#define	19891117_press_queensjournal_planet.html
+#live	if (getval(page) = 19891117_press_queensjournal_planet.html)
+	${extractPress(
+		body=${literalizeCommas(
+Big Planet Scarey Planet
+<br />
+The Jazz Butcher
+<br />
+Mercury/Creation Records
+<br />
+BY TOM MEGGINSON
+<br />
+The Queen's Journal 
+<p />
+Who listens to the Jazz Butcher? His music is just too damn poppy for the rockers, and too bizarre for the popsters to dig. Nobody appreciates amusing music anymore.
+<p />
+And who dances to the Jazz Butcher? He plays a guitar, all but passe in the computer age. He sings about political and personal concerns, and doesn't dwell on the standard dance lyrics "Jack", "Push it", or "Stroke it" to all points of the compass. Nobody dances to a human beat.
+<p />
+So who is this Butch anyway, and what is he trying to prove? Why does he dwell on sixties melodies and political stances in the generation of swine? The man talks about taking DRUGS openly in his lyrics, without a hint of irony or morality! Didn't anyone tell him to just say no? Appalling!
+<p />
+So who listens to the Jazz Butcher? Well, I for one think that he's gear as all hell. The Butcher has built his career on a asychedelic tongue-in-cheek approach to music and life that may be a bit hard for some people to handle. He's not afraid to whimsically mock such things as the tabloids, American culture, and meat. And his music has nothing to do with jazz; nothing at all.
+<p />
+The Butcher's style used to be in-definable. He played with every possible mutation of sixties pop, with some eighties fads thrown in. His albums would bounce from idiom to idiom, from folk melodies to demented rap, without any consistency or shame.
+<p />
+But earlier this year he released a cover of "Spooky" with definite dance intentions. It was set to an eighties dance beat, with eighties sampling included, but kept to a sixties melody and feel.
+<p />
+Now Butch has released an entire album of this new musical mongrel. Big Planet Scarey Planet is his most upbeat and consistent offering yet; it almost seems to be an effort by the Butcher to reach a wider audience, especially on the college radio charts. But it's still pretty strange.
+<p />
+Side one of Big Planet Searcy Planet is labelled "Big Side", and it consists mainly of songs with a big, lush, early Psychedelic Furs kind of sound. "New Invention", "Line Of Death", "Hysteria" and "The Word I Was Looking For are full of a lot of acoustic and electric guitar sounds, with the vocals mixed in at a very low level. The lyrics to these songs an uniformly dark, reflecting national disillusionment in the U.K. and the U.S.A., and the language that they share. These songs are guaranteed to astound your favorite stoner, when samples of obscure American dialogue and lots of cheap sixties vocal/guitar effects jump out at them from the mix.
+<p />
+The Butcher's new dance tune, "Do The Bubonic Plague", is on side two ("Seamy Side"). but it follows the same formula as the first four songs on the lust side. It's a little more danceable, and it features the kind of guitar playing you'd expect to hear in an old Spidennan cartoon The vocal samples in this tune are absolutely wild, but I won't spoil the surprise.
+<p />
+"Bicycle Kid", at the end of the Big Side, is another great new tune from the Butcher. It thumps along as he bitches about a delinquent little boy, calling him the "Dog-faced spawn of a working-class Tory". The song ends with the nasty lines, "Bicycle kid forget to wear a condom/Bicycle kid it's evolution in reverse!", as the Butcher's final verdict.
+<p />
+"Bad Dream Lover" is a beautiful bit of poetic irony about the love/hate obsession of a dejected lover. Lines such as "lf you'd let me keep your photograph I'd break it in two" portray these feelings beautifully. He talks about getting together with another girl, only to have his bad dream lover "come walking through the wall". He accuses her of being a supernatural curse, trying to ruin his life. It's a well-done bit of sentiment.
+<p />
+ Big Planet Scarey Planet is probably the most accessible Jazz Butcher album yet. It has been a lot of fun to listen to so far, and maybe they'll play "Do The Bubonic Plague" at Alfie's some night. Or maybe we could get Butch himself to play Alf's at some future date— I hear that he runs a pretty cheap show.
+<p />
+So pick up this album if you're a fan of the Jazz Butcher Conspiracy, or would like to be one. Then call your friendly QEA agent and request a show. Maybe there are more of you out there than I thought. 
+		)}
+	)}
+#live	endif
+
+#define	19870115_press_varsity_distressed.html
+#live	if (getval(page) = 19870115_press_varsity_distressed.html)
+	${extractPress(
+		body=${literalizeCommas(
+In the springtime fish have sex
+<p />
+Jazz Butcher Conspiracy Distressed Gentlefolk Polygram
+<p />
+My brother's friend Dan owns a chameleon. It's sitting on my left thigh; on my right is a pocket recorder playing the new Jazz Butcher album. As quickly as the lizard changes colours, the band changes names (last year adding "Conspiracy" to their moniker); the music sidesteps neat categorization. Asking Dan if he likes it (not the chameleon — he's ten, looks like Huck Finn — I know he likes that), he says, "Yeah, it's funny."
+<p />
+If nothing else, the Jazz Butcher Conspiracy are a bunch of very funny guys who are making some of the
+most intelligent (never intellectual) pop music coming out of Britain today.
+<p />
+Yes, the Velvet Underground influence is pervasive. But if you're going to sound like somebody, why not the Velvetsl Yes, the mood is consistently upbeat (though not chirpy, never twee). There's more than just a pinch of sage in this Butcher's stew. They're serving up a particularly potent portion of life and love in a very delicious way. How to resist, "I'll be your breakfast, I'll be your dinner... so darling Darling, I'll be your food"?
+<p />
+Like their pals The Voodentops, their humour and simplicity isn't rooted in blind idealism or ignorance. The collage on the inner sleeve includes such "distressed gentlefolk" as Patty Hearst, Judy Garland, assorted lab animals, Franz Kafka, cluing us in as to where
+their sensibilities lie. But rather than celebrating these social victims or ranting about how rotten the world really is, they've transformed some of that English angst into a two album bargain of positive popcraft.
+<p />
+The eclecticism which populated last year's first domestic release. Bloody Nonsense, a compilation of British EPs, is
+understandably less pronounced on this album. Without David J's (ex of Bauhaus, now with Love and Rockets) collaboration, the sound is smoother and, in this focused effort, relaxes with Max Eider's jazz-inspired guitarwork.
+<p />
+"PLAY LOUD AND OFTEN," the liner notes instruct. Right now, my favourites are "Nothing Special", "Who Loves You Now?" and "Conspiracy: You'll Be All Right" (it's worth it just to hear an Englishman — apart from
+George Michaels — rap). Maybe they'll change as I play it louder and more often. Maybe they won't. No matter. Join the Conspiracy: soon you'll too be singing, "In the springtime, fish have sex."
+<p />
+Helen Lee
+		)}
+	)}
+#live	endif
+
+#define	19891207_press_martlet.html
+#live	if (getval(page) = 19891207_press_martlet.html)
+	${extractPress(
+		body=${literalizeCommas(
+Unusual pair rocked the Forge
+<p />
+by Victoria Mallett
+<p />
+Last Wednesday night at the Forge, the unlikely pairing of off-beat group The Jazz Butcher and - well-known David Lindley - attracted a huge, diverse group of people.
+<p />
+Those who went specifically to hear the Jazz Butcher, accustomed to the versatility and spunk of albums such as Distressed Gentlefolk and Bloody Nonsense, may have been disappointed by the lack of musical variety, and shortness of their set.
+<p />
+While they were the warm up band for better-known David Lindley, a longer set would not have been untoward at a Torontonian ticket price of 14 dollars.
+<p />
+They did show characteristic humour and irreverence, with a couple of satirical numbers. One song was ‘Meet the Prime Minister’. After the second line, ‘eat the Prime Minister” the song gets paradoxically sillier and more admirable in its sardonic innuendo. Although more serious in its ultimate intent, “Meet the Prime Minister’ is the imaginative stuff of such favourites as “‘Water’’ — a song imploring consideration for thirsty elephant friends recorded on Bloody Nonsense. 
+<p />
+What a pity most of the introductory comments were lost in distortion: perhaps due to alow ceiling over a large area and  the ubiquitous excessive volume. Undoubtedly, missed remarks were witty, hilarious, provocative, absurd, outrageous, and entertaining.
+<p />
+David Lindley’s single set also seemed short. The band filled the dance floor with inexhaustible groupies.
+<p />
+They showed good judgement in getting “Mercury Blues” out of the way early on, following it with a number of highly danceable calypso, reggae and latin- flavoured songs which had the Forge Rocking.
+<p />
+What an unusual band to pair together. It worked.
+		)}
+	)}
+#live	endif
+
+#define	20130113_press_unita.html
+#live	if (getval(page) = 20130113_press_unita.html)
+	${extractPress(
+		body=${literalizeCommas(
+<h3>CAUTION - This is a robotic translation of the original Italian publication</h3>
+<p />
+Fish says that the appeal on the Pledgemusic website
+allowed them to raise money to cover expenses
+by immediately selling 500 copies
+<p />
+GIANCARLO SUSANNA
+<p />
+DESPITE THE CRISIS THAT HAS HIT THE RECORD INDUSTRY,
+THERE ARE CONSOLING SIGNS OF RESISTANCE SUCH AS THE INCREASE IN
+VINYL SALES OR
+like the system devised by an English website, Pledgemusic,
+to allow bands without a contract to raise
+money to cover production costs. It's all very
+simple: buyers pay for the record before it is
+produced and if the project doesn't come to fruition they are
+reimbursed. Published a few months ago with this system,
+Last Of The Gentleman Adventurers marked the return of
+one of those bands that in the early 80s frequented
+British post-punk with originality and talent.
+<p />
+In love with the Velvet Underground and Jonathan Richman and
+led by a brilliant author like Pat Fish, The Jazz
+Butcher (a «jazz butcher») were perhaps too «unkempt» to achieve mass success. Centered
+on Shakey, a song in homage to Neil Young and Brian Wilson,
+the CD is once again the work of the guitar team
+formed by Pat Fish and Max Eider, and it is, needless to say, a small
+masterpiece.
+<p />
+The Jazz Butcher were also one of the groups
+that the undersigned played most often on Stereonotte and
+that friendship still lasts today, allowing us to
+report this feat to you with an interview with Pat Fish.
+Not all is lost if there are musicians so in love with
+what they do and so many people who want to listen to them. The response to your appeal
+on the
+Pledgemusic site is truly a beautiful thing. It means that
+good music still has a place in many people’s lives.
+<p />
+“Yes. When Max (Eider) and I started the
+project we had no idea if anyone would contribute,
+but - very quickly people showed that they were
+interested in the music to the point of putting their hands in
+their pockets and paying for it. Some were
+incredibly generous in their support.
+Pledgemusic has also been a big help. They have a
+good business model for a “post-record company” era and
+I would recommend them to all artists.”
+<p />
+What do you think about the reaction of those who
+bought the CD when you finished it?
+<p />
+“We didn’t try to “promote” the album in any way. We pressed 500 copies to start with.
+People bought it so quickly that
+we couldn’t keep any copies for the media. So we have no idea what the opinion-formers
+think of our
+work (other than you, of course!). From what I’ve seen
+on Facebook etc, our supporters are not disappointed. It’s
+been a very encouraging response, from our
+point of view... and we’ve printed another 500 copies...».
+<p />
+Britain is always a reference point for people
+in music, but that doesn’t mean it doesn’t
+make it very difficult to maintain significant visibility.
+<p />
+«Britain today is a country where people
+know the price of everything and the value of nothing. It’s been hard for musicians
+lately, but I
+just don’t know what else to do with my time so
+why stop?»
+<p />
+Do you think an article about Jazz Butcher in one of the
+most influential music magazines would help you?
+<p />
+«It’s impossible to say. I don’t even know which
+publications are influential. I have to say that even twenty or
+thirty years ago, positive reviews in magazines
+did not always guarantee good sales. If they had
+done that, I could dictate these answers to a secretary
+while drinking cocktails by a swimming pool».
+<p />
+You surely know that two of your albums - «A Scandal In
+Bohemia» and «Fishcotheque» - are sold online at
+considerable prices.
+<p />
+«I haven’t checked the prices of our records recently.
+In 2000, Vinyl Japan re-released some of them,
+including Scandal. Before that, I know that prices on E-bay
+or similar sites had completely gone crazy. Some copies
+of our albums have sold for more than a hundred dollars».
+<p />
+The thing I love most in your songs is the fusion of
+sweetness and sense of humor, which is also very present in the
+new album.
+<p />
+"For a while my songs were published by a
+company called Bittersweet Music, it was a
+good name. I'm glad you still like what we do. When we
+started raising money for the new record, we weren't sure if we
+would find anyone who would be interested."
+<p />
+Maybe "Shakey" is the song that explains it all: the years
+go by, but we're still here and "we're always
+dangerous."
+<p />
+"The Shakey of the title is of course Neil Young, a man who
+seems to grow more brilliantly
+unhinged with each passing year. I have no idea how he does it! There's a lot
+that happens in the lyrics of this song, but part of
+what I wanted to say is that, with so many great
+rock and soul greats dying in recent years, there's
+some responsibility for those of us who are still
+here to step up, “get serious” and make music
+worth listening to».
+<p />
+Could you explain to our readers what The Jazz
+Butcher means?
+<p />
+«I can’t remember how many times we had to explain
+that “we don’t do jazz and we don’t eat meat”. It’s the
+silliest name you could imagine, don’t you think?
+I think
+we wanted to make fun of some of the ridiculous names
+that bands in the early 80s were going by. We had no
+idea that we would make a record under this name,
+let alone make, record and perform internationally
+thirty years later. As I’ve said before, it’s a funny old life...».
+		)}
+	)}
 #live	endif
 
 #define	20200504_press_popnews.html

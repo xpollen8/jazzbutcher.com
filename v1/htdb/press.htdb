@@ -633,6 +633,7 @@ ${d}
 	${addPress(type=gig,
 		url=${jbc_press}/19891128_press_gateway.html,
 		publication=The Gateway,
+		source=https://archive.org/details/GAT_1989112801/page/n7/mode/2up?q=%22pat+fish%22,
 		images=${jbc_images}/19891128/19891128_press_gateway,
 		location=Alberta\, Canada,
 		title=Butcher in creative trouble,

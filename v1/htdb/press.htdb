@@ -3161,6 +3161,93 @@ subhead=(20 December 1957 – 5 October 2021),
 #live		endif
 #live	endif
 
+#define	19890701_interview_ontheroad.html
+#live	if (getval(page) = 19890701_interview_ontheroad.html)
+	${extractPress(
+		body=${literalizeCommas(
+			Straight on. We're in New Brunswick now. Well, actually we're not. We're still zooming down the German motorway, but our next questions come from New Brunswick. Peter Armstrong of review New Brunswick wants to know, What's the difference between the real world and the dreams I have at night?
+			<p />
+			I mean, really. I think you probably get away with more in your dreams, don't you? Then he asks, and I like this question. This is a good one. What do you do when you get home from a friend's house after a few brewskies and your dog asks, hey.
+			<p />
+			Are you okay? First thing you do is you ask the dog to repeat that. If the dog does repeat it, you pick the dog up. You hold it very tightly. You run into the street.
+			<p />
+			You flag down the first vehicle you consigned, and you get into the TV studio. You get in the TV studio, and you get rich. Seriously rich. Peter Armstrong and his talking dog, if it's happened to you governor, if it's happened to you, I suggest that, yours is a name we'll be hearing a lot more of in the future. If California falls into the sea like it's supposed to, says Peter Armstrong, will it still remain the surf capital of the world?
+			<p />
+			It's certainly true that California has a lot of surf and a lot of capital. Too much of both for my tastes. I quite like the idea that it's supposed to fall into this. I don't think California is the capital of anything very useful to you. Next question from Peter Armstrong is, if we all, in the big world we live in, could turn green like plants and live off the sun, Would we live longer and maintain peace and harmony?
+			<p />
+			Or is this possible? Of course, it's not possible, you prune. Of course, it's not possible. It's a preposterous notion. And would you really want to be green?
+			<p />
+			The chlorophyll head. Lid. Here's the last one and it's a good one. Can you squeeze infinity in the hole of a needle? The answer to that is yes, Peter.
+			<p />
+			But I'll give you a word of warning before you try it at home. It's gonna take a seriously long time. And here's the last one. Suppose a bug came crawling by while you were sitting on a park bench doing nothing. It stops and stares at you and you stare back.
+			<p />
+			Now, if both human and insect concentrating on trying to destroy each other's mind anatomically through psychic brainwaves, who would win? And would this mean the extinction of the insect kingdom? Whereas presupposing things a bit, ain't it? I mean, like, wouldn't mean the extinction of the insect kingdom if the insect won. Actually, I don't think insects are too much in the staring matches.
+			<p />
+			I don't really think this sort of thing is very likely to occur. Try with cats, though. It's quite a blast with cats. But I warn you, it really annoys them. They get really cross.
+			<p />
+			Here's a question coming in from Wayne Reeves in Toronto, Ontario. And he says, he liked the interview so much, he couldn't resist popping a big question. Well, I'm glad you liked it. And it's a good big question as it happens. In fact, it's our butcher hamper winner.
+			<p />
+			Yeah. Here's another one who's won himself whole bucket load of butcher detritus courtesy of the delectable Karen and her crew. Why are the ladies at record companies? Here's a big question. It just occurred to me.
+			<p />
+			It's my big question for the broadcast of our listeners. Why are promotional ladies at record companies always called Karen? Right. So here's here's a big question of note. A prize winning big question, in fact, from Wayne Reeves of Toronto in Ontario.
+			<p />
+			He says, if architecture is indeed frozen music, what building or buildings or even city best reflects the jazz butcher sound? Good question. O'Higgins was muttering the other night about, Gaudi Cathedrals in Barcelona. I suppose, yeah. Actually, Barcelona is quite a JBC type city.
+			<p />
+			So is Naples. But Naples. But I think the best the best thing really for architecture being frozen music, if you can imagine that somewhere in, Carpathian Alps, there's some undiscovered tribe of, like, seriously backwards Transylvanians who live in kind of huts made out of twigs and mud and stucco and stuff like that. Right? And at some time in the fifties, an Aeroflot jet crashed there.
+			<p />
+			With all that fifties, we are the future stuff on board. And they got hold of this stuff and sort of set it up in some curious cargo cult decor. So you've got, like, you know, mud walls with bits of Aeroflot seat belts hanging out of them and, compasses on top of the on top of the peet stove and stuff like that. Then, you know, sick bags. All sort of airplane detritus in this really khaki, grubby, dark, not entirely straight building.
+			<p />
+			Then I think that's the sort of thing that you're looking at with JBC Music. Dodgy cargo cult business. Good question. Now, out in Regina out of Regina in the university, there is a self confessed poor, non profit, lonely radio station. It's called CKUR.
+			<p />
+			And the station manager out at CKUR is called Rob Reid. And he's got a bunch of questions for me which I'm gonna answer because I don't want him to feel too lonely out there, even if he's in love with his own loneliness. To mister Pat Fish or for the jazz butcher, must be me. How much wood could a woodchuck chuck if a woodchuck could chuck wood? Stupid question.
+			<p />
+			Not answering it. Sort it out for yourself. Is Alexi Sahel really the messiah? No. Well, we've already sorted out on this broadcast that your potato is your messiah.
+			<p />
+			And I suppose you could have a couple. I mean, like you've had your Buddha and your Mohammed. These these chaps are obviously fairly close to being messiahs, just the same as Bill Carter is. But, on the whole, Alexi Sahel, no. Not the messiah.
+			<p />
+			A lot of other words, but not a messiah. In the overall scheme of things, is wrestling on TV really necessary? Good question. I'm pretty certain it's not really necessary at all. Why?
+			<p />
+			Well, it's unpleasant for a start. And unpleasantness really isn't necessary. They should have proved to be necessary in certain circumstances. Don't mess with the JBC because we're dead good at it if need be. And here's one of the really big questions.
+			<p />
+			In fact, I wasn't going to award any, you know, I was gonna try and keep it a bit easy with a butcher handlers. But this question, the more I think about it, the more it's obviously deserving of the prize. So another prize winner here, Rob Reid as c k u r in Regina. So this seriously sizable question with or without ice, is a question that has been occupying a considerable amount of JBC time over the last few days in dressing rooms and on the bus. The general line goes something along something like this.
+			<p />
+			Ice, excellent with vodka. Most other things we reckon, it's okay to chill them in a ice bucket. Like champagne, for instance, you know, or a good white wine. Shove it in the ice bucket, but don't put ice in it. Beer and ice, of course, never red wine and ice, of course, is viral.
+			<p />
+			Good heavens. And, the one that's really kept us going, the one aspect of this seriously large question that's, had us talking 20 to the dozen at times is the question of ice in Scotch. Now I know a lot of people over there do it, but as far as the JBC are concerned, flogging is too good for you. Flogging is too good for people who put ice in their Scotch. I'm not a great Scotch drinker myself, but you've got to get things right.
+			<p />
+			And Alex became really quite passionate about this. I mean, he was devised all kinds of unpleasant things we could do to do to people who put ice in their scotch. And we probably won't actually get around to doing them, but I reckon I reckon it stands in the Vodka, round the wine, out of the scotch, a 100 miles away from the Scotch. Here is a leading deranged Canadian. His name's Dixon MacLean, and he lives in Regina, Saskatchewan, a place where I once had a very nice dinner at a Bebop bar.
+			<p />
+			Thank you, ladies. Two questions that have been bothering Dixon. The first is, if good Samaritans supposedly go to heaven and crooks go to hell, assuming the existence of such places and all that soul business, where do the TV evangelists go? Well, I think they go to a special place for TV evangelists. A special place where all the checks are rubber checks.
+			<p />
+			Where there's no electricity. Where the makeup stings. I think they go to a special place, And I hope that it's a long way from where I get sent. The other question, sizable sort of question, this concerns us. That is all of us on earth and the universe.
+			<p />
+			Now, I understand, says Dixon, how we and the other planets in our solar system wheel about the sun in perfect ellipses. And this solar system goes through an elliptical cycle in our galaxy. But where is our galaxy moving in this universe, if anywhere, besides infinitely repeating ellipses? Is our universe moving in an elliptical plane in something bigger? Why are we going wherever we're going, if indeed we're going anywhere?
+			<p />
+			And what happens when we finally reach that destination, if ever? I don't know about this question, Brent, sus Dixon. Ever. It's too big for me. Going to run away because of huge ugly people threatening Besides, it may not matter, considering we're going there whether we want to or not.
+			<p />
+			It's pretty large, It's true. I mean, we are wherever we're going. We're going there irrespective of what we feel about it. That much seems to be for certain. Yes.
+			<p />
+			It's I mean, this is something bigger than us. Even if Dixon and I and half a dozen other people started to complain about it, we'd still be going there, I reckon. I think it said that he read in the newspaper the other day that we were going somewhere. But I didn't find that very helpful. But I'm gonna try Higgins on this one because he seems to have some sort of idea about space.
+			<p />
+			Oh, Higgins. Yes? The question about the ellipsis. About the what? Ellipsis.
+			<p />
+			What about it? Well, you said the other night you had some idea about where we were going in the universe. Oh, you mean the great attraction? That's right. You were talking about the great attraction.
+			<p />
+			I was for Chrissie Hine, I think. Yeah. No. Well, the idea is that, our solar system is moving towards Virgo. And Virgo and ourselves are going to like a Milky Way and all that, is actually heading towards the great attraction, which is moving us off, sort of to the west as we're looking at it from here.
+			<p />
+			But nobody knows where. I'm not sure, I'm trying to work it out, but it'll take a while so there's no immediate panic. There shouldn't be any panic. Fair enough. I mean, the guy's at Dixon, right, who's come up with this question says that he doesn't know if it really matters anyway because after all, we're going there whether we want to or not.
+			<p />
+			Exactly. We have no choice in the matter. Matter. Get it? Matter.
+			<p />
+			Full. Alfred Hitchcock. Thanks, sir. He gives you a break. The Jazz Butcher and Sweet Jane 12 inch single released in 1984, and before that the JBC on the bus, and the philosophical gentleman of pop music himself handling questions sent to him by brave New Wave listeners.
+			<p />
+			We also heard Hungarian Love Song, a track from Distressed Gentle Folk, which came out in 1986. The big questions are still pouring in for the Jazz Butcher, and if you would like to add your own to the big questions contest, and possibly like Wayne Reeves of Toronto, or Rob Reid of Regina, managed to come off with a butcher hamper, please give it a try. Our address is box 6 1000 Montreal H3C388. We'll see to it that the butcher gets your questions. And we're still gonna we still have a few more dates on the en route to Nuremberg tour, the bus.
+			<p />
+			So, those are still coming up within the next couple of weeks on Brave New Ways. Psychic TV have a new LP out, it is an untitled picture.
+		)}
+	)}
+#live	endif
+
 #define	96observer.html
 #live	if (getval(page) = 96observer.html)
 	${extractPress(

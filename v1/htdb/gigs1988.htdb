@@ -167,6 +167,13 @@
 
 	)}
 
+#define	Mar10_1200.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat} )},
+
+	)}
+
 #define	Mar10.html()
 	${gigHeader(
 

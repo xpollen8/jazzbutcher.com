@@ -1112,6 +1112,7 @@
 #define	makePDFIcon(title) <img height="9" width="19" alt="[download ${title}]" src="${jbc_images}/iconPDF.gif">
 #define	makeMP3Icon(title) <img height="9" width="19" src="${jbc_images}/iconMP3.gif"> ${title}
 #define	icon_audio ${makeMP3Icon(title=download MP3)}
+#define	icon_unreleased (unreleased)
 #define	icon_feedback	<img height="19" width="19" alt="[extra shit]" src="${jbc_images}/iconFeedback2.gif">
 
 #define	footer
@@ -1766,6 +1767,7 @@ font.load().then(function () {
 #	unreleased tracks
 #
 #define	wildlife	${linkSong(title=Wildlife, href=${jbc_lyrics}/wildlife.html)}
+#define	beautiful_mind	${linkSong(title=Beautiful Mind, href=${jbc_lyrics}/beautiful_mind.html)}
 #
 #	albums
 #

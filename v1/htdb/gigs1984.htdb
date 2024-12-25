@@ -123,7 +123,9 @@
 	cost=&pound;2,
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
 	with=${literalizeCommas( Another Time)},
-
+	posters=/images/19840602/19840602_poster.jpg$$
+		/images/19840602/19840602_poster_reverse.jpg$$
+		Andrew Brooksbank
 	)}
 
 #define	Jun11.html()

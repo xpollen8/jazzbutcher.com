@@ -17,7 +17,7 @@
 	${lyrics}
 
 #live	if (defined(credits))
-		${parseCredit(${filterProgramArguments(${credits})})}
+		${parseCredit(c=${filterProgramArguments(${credits})})}
 #live	endif
 	</blockquote>
 #live	if (defined(onlist))
@@ -87,7 +87,7 @@
 	<div class="lyrics_tablature">
 		${tablature}
 	</div>
-	${parseCredit(${filterProgramArguments(${tablature_credit})})}
+	${parseCredit(c=${filterProgramArguments(${tablature_credit})})}
 	</blockquote>
 #live	endif
 ${endTab}
@@ -167,6 +167,7 @@ ${jbc_footer}
 	${clyde} |
 	${baltic} |
 	${bath} |
+	${beautiful_mind} ${icon_unreleased} |
 	${snowy} ${icon_extra} |
 	${ben} ${icon_extra} |
 	${kid} ${icon_extra} |
@@ -362,7 +363,7 @@ ${jbc_footer}
 	${enos} |
 	${sarah} ${icon_extra} |
 	${who} |
-	${wildlife}
+	${wildlife} ${icon_unreleased}
 
 	<h4>Z</h4>
 	${zombie}
@@ -5905,6 +5906,64 @@ G - G - C - D
 		Is this the sort of tune you can play to your mother?
 		;;<b>A Scandal In Bohemia</b> liner notes;;/albums/scandal.html#betty;;
 	)}
+	)}
+#live	endif
+
+#define	beautiful_mind.html
+#live	if (getval(page) = beautiful_mind.html)
+	${lyricsHeader(title=Beautiful Mind, lyrics=${literalizeCommas(
+
+	<div class="lyrics">
+I’d love to kiss you in the moonlight in the Schoenbrunn Palace belvedere,
+But kissing’s not for me.
+And I’d make love to you like no man had made love to you before…
+In theory.
+I know the places you have been and I’ve got things I really mean
+To do with you.
+So much more beautiful than Leonardo guessed, but I’m forgetting,
+Yes, I’m forgetting
+
+That 20 years of sin and luxury
+Have contrived to make a ruin out of me.
+It’s really pretty hard to see
+Why somebody like you should want to stop and talk to me,
+
+But I say
+
+Baby, couldn’t you use a beautiful mind?
+Darling, couldn’t you use a beautiful mind?
+All I’ve got to offer you is my time,
+But it’s a real good time. Baby, we’d be fine.
+
+The tennis-playing poet Frederick wrote that if she knew his feelings
+The odds were she’d be scared.
+And now, I must admit, a part of me is being too revealing,
+But I don’t care.
+I go too far, I always do, I’d like to go too far with you
+From A to O.
+And though they try to demonise that gorgeous undertow of wickedness,
+
+I’m pretty sure you know.
+If only 20 years of luxury and greed
+Hadn’t served to make a monster out of me.
+Aw, it’s all futility.
+Why should someone like you even stop and talk to me?
+But I still say
+
+Baby, couldn’t you use a beautiful mind?
+Darling, couldn’t you use a beautiful mind?
+A love like yours is hard to find.
+
+Christ knows, I took my time. Baby, please be mine.
+
+You can’t do it, you can’t sing it
+You can’t beat it, you’d better bin it.
+You can’t do it, you can’t sing it
+You can’t beat it, you can’t bin it.
+Baby, couldn’t you use a beautiful mind?
+</div>
+	)}
+	,credits=${pat};;;;2006-06
 	)}
 #live	endif
 

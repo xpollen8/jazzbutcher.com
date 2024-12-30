@@ -1384,7 +1384,7 @@ font.load().then(function () {
 #	TODO: all these need to be linkSearch(.., act=yes)
 #
 #define	proctor		${linkSearch(query=Steve Proctor)}
-#define	howy		${linkExternal(http://www.studiowizard.com/ht.html, Howard Turner)}
+#define	howy		${linkExternal(https://www.studiowizard.co.uk, Howard Turner)}
 #define	momus		${linkExternal(http://www.demon.co.uk/momus/, Momus)}
 #define	4AD			${linkExternal(http://www.evo.org/eyesore.html, 4AD)}
 #define	coonce		Cole Coonce
@@ -1407,7 +1407,7 @@ font.load().then(function () {
 #define	tvamp		${linkSearch(query=Transvision Vamp, act=yes)}
 #define	swynn		${linkSearch(query=Steve Wynn, act=yes)}
 #define	bangles		${linkSearch(query=The Bangles, act=yes)}
-#define	cale		${linkExternal(http://john-cale.com/, John Cale)}
+#define	cale		${linkExternal(https://john-cale.com/, John Cale)}
 #define	braind		${linkSearch(query=Braindead Soundmachine, act=yes)}
 #define	eno			${linkSearch(query=Brian Eno, act=yes)}
 #define	weather		${linkSearch(query=Weather Prophets, act=yes)}
@@ -1442,7 +1442,7 @@ font.load().then(function () {
 #define	ed			${linkSearch(query=Ed Carter)}
 #define	coop		${linkSearch(query=John Cooper)}
 #define	frang		${linkSearch(query=Robert Frangooles)}
-#define	syd			${linkExternal(http://www.sydmeats.co.uk, Sydney Meats)}
+#define	syd			${linkExternal(https://www.sydmeats.co.uk, Sydney Meats)}
 #define	davison		${linkSearch(query=John Michael Davison)}
 #define	camf		${linkSearch(query=Chris Camfield)}
 #define	jdavies		${linkSearch(query=Jim Davies)}
@@ -1920,10 +1920,10 @@ font.load().then(function () {
 						<img width=126 height=57 alt="[image]" src="${jbc_images}/tower.gif">
 #define	KCRW			${linkExternal(https://www.kcrw.org, KCRW)}
 #define	KTBS			${linkExternal(http://www.utexas.edu/students/kvrx, KTBS)}
-#define	WNUR			${linkExternal(http://www.wnur.org, WNUR)}
+#define	WNUR			${linkExternal(https://wnur.org, WNUR)}
 						<img width=114 height=77 alt="[image]" src="${jbc_images}/wnur.gif">
-#define	WHPK			${linkExternal(http://whpk.uchicago.edu, WHPK)}
-#define	WXYC			${linkExternal(http://www.wxyc.org, WXYC)}
+#define	WHPK			${linkExternal(https://whpk.org, WHPK)}
+#define	WXYC			${linkExternal(https://wxyc.org, WXYC)}
 #						<img width=129 height=56 alt="[image]" src="${jbc_images}/wxyc.gif">
 #define	CBC				<img alt="[CBC]" src="${jbc_images}/cbc.gif">
 #
@@ -2199,7 +2199,7 @@ ${_d[3]}
 #
 #	mailing list macros
 #
-#define	creat	${linkExternal(http://www.creation-records.com, Creation Records)}
+#define	creat	${linkExternal(https://creation-records.com, Creation Records)}
 
 #define	egli	<a href="mailto:megli@ici.net">Mike Egli</a>
 #define	tony	<a href="mailto:tonyli@microsoft.com">Tony Liano</a>
@@ -3078,7 +3078,7 @@ ${_base}.html
 #	${mkGigLink(ts=2018-05-27 19:30:00, ticketweb=https://www.seetickets.com/event/the-bevis-frond/100-club/1206772, venue=100 Club, address=100 Oxford Street, city=London, country=England, postalcode=W1D 1LL, sidebar=${sidebar}, extra=with-poster)}
 #	${mkGigLink(ts=2018-07-28 19:30:00, venue=The Thunderbolt, address=124 Bath Road, city=Totterdown\, Bristol, postalcode=BS4 3ED, country=England, sidebar=${sidebar}, extra)}
 #	${mkGigLink(ts=1983-04-19 20:30:00, venue=The Steam Heat Room\, The Old White Horse, address=, city=Brixton\, London, country=England, postalcode=SW2 5BZ, sidebar=${sidebar}, extra=with-review)}
-#	${mkGigLink(ts=2017-10-20 19:00:00, ticketweb=http://www.seetickets.com/event/jasmine-minks/broadcast/1104748, venue=Broadcast, address=427 Sauchiehall Street, city=Glasgow, country=Scotland, postalcode=G2 3LG, extra=with, sidebar=${sidebar})}
+#	${mkGigLink(ts=2017-10-20 19:00:00, ticketweb=https://www.seetickets.com/event/jasmine-minks/broadcast/1104748, venue=Broadcast, address=427 Sauchiehall Street, city=Glasgow, country=Scotland, postalcode=G2 3LG, extra=with, sidebar=${sidebar})}
 #	${mkGigLink(ts=2017-10-21 19:30:00, sidebar=${sidebar}, extra=with, cost=&pound;9:00, ticketweb=https://www.skiddle.com/whats-on/Aberdeen/Krakatoa/the-jasmine-minks--jazz-butcher-quarte/12895927/, venue=Krakatoa, address=2 Trinity Quay, city=Aberdeen, country=Scotland, postalcode=AB11 5AA)}
 #	${mkGigLink(ts=2017-10-22 19:00:00, sidebar=${sidebar}, cost=free, venue=Outlaws Yacht Club, address=38 New York Street, city=Leeds, country=England, postalcode=LS2 7DY)}
 #	${mkGigLink(ts=2018-03-01 19:30:00, ticketweb=https://www.ticketweb.uk/event/the-jazz-butcher-100-club-tickets/7768855, venue=100 Club, address=100 Oxford Street, city=London, country=England, postalcode=W1D 1LL, sidebar=${sidebar}, extra=poster-pix)}

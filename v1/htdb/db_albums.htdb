@@ -535,7 +535,7 @@
 #define	albums[12]->label	glass_records
 #define	albums[12]->catalog	Glass 043, 12043
 #define	albums[12]->thumb	${jbc_images}/junglefront
-#define	albums[12]->images	${jbc_images}/jungleback;;7er reverse$$${jbc_images}/releases/human_12_back;;12er reverse
+#define	albums[12]->images	${jbc_images}/jungleback;;7er reverse$$${jbc_images}/releases/human_12_back;;12er reverse$$${jbc_images}/releases/human_jungle_poster_brooksbank;;Andrew Brooksbank;;2025-01-02
 #define	albums[12]->dtreleased	1985-09
 #define	albums[12]->blurb
 	<div class="annotation">The title comes from a rather noir little TV series from the early Sixties wherein the great Herbert Lom played the extremely sexy and not entirely unbrilliant Dr. Alexander Kordu, a psychiatrist with the handy ability to sort out even the most appalling cases within sixty minutes.</div>
@@ -849,7 +849,7 @@
 #define	albums[23]->dtrecorded	(Spooky: 1988-05, Greenhouse) (Rest: 1988-06-05, Studio 13 CBC)
 #define	albums[23]->title	Spooky EP
 #define	albums[23]->thumb	${jbc_images}/releases/spooky_12_front
-#define	albums[23]->images	${jbc_images}/releases/spooky_12_back
+#define	albums[23]->images	${jbc_images}/releases/spooky_12_back$$${jbc_images}/releases/spooky_promo_signed_brooksbank;;Andrew Brooksbank;;2025-01-02
 #define	albums[23]->dtreleased	1988
 #define	albums[23]->blurb
 	<div class="annotation">Thanks for the money. We'll be spending it on weapons and drugs. The first thing that you have to understand about this disc is that it is not an L.P.: it is a single and a radio session nailed together for your amusement.</div>
@@ -2867,7 +2867,7 @@ Please give generously.
 #define	albums[53]->href	${jbc_albums}/spooky12.html
 #define	albums[53]->title	Spooky 12er
 #define	albums[53]->thumb	${jbc_images}/releases/spooky_12_front
-#define	albums[53]->images	${jbc_images}/releases/spooky_12_back
+#define	albums[53]->images	${jbc_images}/releases/spooky_12_back$$${jbc_images}/releases/spooky_promo_signed_brooksbank;;Andrew Brooksbank;;2025-01-02
 #define	albums[53]->label	creation_records
 #define	albums[53]->catalog	CRE059T
 #define	albums[53]->media	12er

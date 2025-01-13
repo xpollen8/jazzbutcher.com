@@ -7,6 +7,16 @@ import Tag from '@/components/Tag';
 
 const podcasts = [
 		{
+			mediaurl: "https://www.mixcloud.com/SharonLouise/05-11-2021-special-guest-pat-fish-aka-the-jazz-butcher-tribute-replay-originally-07-12-2018/",
+			title: "05 11 2021 Special guest Pat Fish - aka The Jazz Butcher Tribute replay (originally 07 12 2018)",
+			datetime: "2021-11-05",
+			children: <>
+			05 11 2021 The Weekend Warm Up.
+			Special guest Pat Fish - aka The Jazz Butcher.
+			Tribute replay (originally aired 07 12 2018) on Beat Route Radio.
+			</>
+		},
+		{
 			mediaurl: "https://www.mixcloud.com/darrenharte/archive-interview-with-pat-fish-on-darren-hartes-hfm-radio-show-in-september-2018/",
 			title: "Archive interview with Pat Fish on Darren Harte's HFM Radio Show in September 2018",
 			datetime: "2018-09",

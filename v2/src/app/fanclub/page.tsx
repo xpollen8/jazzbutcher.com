@@ -8,7 +8,6 @@ const fanclub_110 = [
 	{ src: "/assets/fanclub/110/fanclub_110_2.jpg", alt: "page 2" },
 	{ src: "/assets/fanclub/110/fanclub_110_3.jpg", alt: "page 3" },
 	{ src: "/assets/fanclub/110/fanclub_110_4.jpg", alt: "page 4" },
-	{ src: "/assets/fanclub/110/fanclub_110_5.jpg", alt: "page 5" },
 ]
 
 const Fanclub = () => 

@@ -718,6 +718,17 @@ ${d}
 		dt=2019-05-26,
 		added=2023-09-20)}
 
+	${addPress(type=interview;podcast, person=barker,
+		url=${jbc_press}/20241128_DaveBarker_interview_counterforce.html,
+#		media=${jbc_images}/20210905/20210905_pat_interview.docx;;Extended text document,
+		audio=https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20241128_DaveBarker_interview_counterforce.mp3;;The Interview,
+		publication=The Counterforce,
+		title=Episode #60,
+		headline=Dave Barker Audio interview,
+		credit=Aug Stone,
+		dt=2024-11-28,
+		added=2025-01-25)}
+
 	${addPress(type=interview;podcast,
 		url=${jbc_press}/20210905_press_funhouse.html,
 		media=${jbc_images}/20210905/20210905_pat_interview.docx;;Extended text document,
@@ -18350,6 +18361,14 @@ A Pat Fish hay que quererle por lo que tiene de significado su música, la liber
 		)}
 	)}
 	${jbc_footer}
+#live	endif
+
+#define	20241128_DaveBarker_interview_counterforce.html
+#live	if (getval(page) = 20241128_DaveBarker_interview_counterforce.html)
+	${extractPress(
+		body=${literalizeCommas(
+		)}
+	)}
 #live	endif
 
 #define	20220128_interview_50YearsOfFun.html

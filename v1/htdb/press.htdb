@@ -723,7 +723,7 @@ ${d}
 #		media=${jbc_images}/20210905/20210905_pat_interview.docx;;Extended text document,
 		audio=https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20241128_DaveBarker_interview_counterforce.mp3;;The Interview,
 		publication=The Counterforce,
-		title=Episode #60,
+		title=Episode #60 - Dave Barker,
 		headline=Dave Barker Audio interview,
 		credit=Aug Stone,
 		dt=2024-11-28,

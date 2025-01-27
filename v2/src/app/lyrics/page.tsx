@@ -50,7 +50,7 @@ const Lyrics= (props: any) => {
 				{filters.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}
 			</div>
 			<Suspense fallback=<>Loading...</> >
-				{(!isLoading) && <LyricList lyrics={data?.results?.filter((lyric: any) => filterItemBy(lyric, filtersUsed))} />}
+				{(!isLoading) && <LyricList lyrics={data?.results?.filter((lyric: any) => filterItemBy(lyric, filtersUsed, []))} />}
 			</Suspense>
 		</main>
 		<Footer />

@@ -808,3 +808,7 @@ details > summary::marker, details > summary::-webkit-details-marker {
 	background-color: white;
 	max-height:15em;
 }
+
+.gigplayer_annotation {
+	background-color: lightyellow;
+}

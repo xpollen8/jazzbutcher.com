@@ -38,7 +38,7 @@ const	FilterReleases = ({ project, filters }: { project?: string, filters?: any 
 				if (options?.length <= 1) return;
 				return <div className="listItem flex flex-wrap">{options.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
 			})()}
-			<ReleaseCards items={releases?.filter((rel: any) => filterItemBy(rel, filtersUsed))} preventAutoExpand={!filtersUsed?.length} />
+			<ReleaseCards items={releases?.filter((rel: any) => filterItemBy(rel, filtersUsed, []))} preventAutoExpand={!filtersUsed?.length} />
 			</>}
 		</Suspense>
 }

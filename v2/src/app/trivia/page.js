@@ -13,8 +13,8 @@ const Trivia = () =>
 				tracks={[
 					{ title: 'Introduction', start: 0},
 					{ title: 'Quality People', start: 78},
-					{ title: 'Shakey', start: 314},
-					{ title: 'Buffalo Sniper', start: 656, artist: 'Wilson'},
+					{ title: 'Shakey', start: 321},
+					{ title: 'Buffalo Sniper', start: 654, artist: 'Wilson'},
 					// Add more songs as needed
 				]}
 				header=<GigPlayerHeader
@@ -33,24 +33,24 @@ const Trivia = () =>
 				src="https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_JazzButcher_Hamburg.mp3"
 				tracks={[
 					{ title: `Introduction`, start: 0 },
-					{ title: `Partytime`, start: 49, comment: `Pat + Max` },
-					{ title: `It Has To Be You`, author: `Max Eider`, start: 386  },
-					{ title: `La Mer`, start: 707 },
-					{ title: `Who Loves You Now?`, start: 935 },
-					{ title: `Whaddya`, start: 1209, version: `backing track` },
-					{ title: `Southern Mark Smith`, start: 1488.5 },
-					{ title: `Girls Who Keep Goldfish`, start: 1891, version: `drum machine` },
+					{ title: `Partytime`, start: 76, comment: `Pat + Max` },
+					{ title: `It Has To Be You`, author: `Max Eider`, start: 385  },
+					{ title: `La Mer`, start: 714 },
+					{ title: `Who Loves You Now?`, start: 941 },
+					{ title: `Whaddya`, start: 1210, version: `backing track` },
+					{ title: `Southern Mark Smith`, start: 1498 },
+					{ title: `Girls Who Keep Goldfish`, start: 1892, version: `drum machine` },
 					{ title: `Shame About You`, start: 2111, version: `backing track` },
-					{ title: `My Desert`, start: 2372 },
-					{ title: `Caroline Wheeler's Birthday Present`, start: 2592, version: `spooky synth intro` },
-					{ title: `Bigfoot Motel`, start: 2909 },
-					{ title: `Zombie Love`, start: 3192.5 },
+					{ title: `My Desert`, start: 2375 },
+					{ title: `Caroline Wheeler's Birthday Present`, start: 2590, version: `spooky synth intro` },
+					{ title: `Bigfoot Motel`, start: 2913 },
+					{ title: `Zombie Love`, start: 3182 },
 					//encore 1
-					{ title: `I Wish I Could Sprechen Sie Deutsch`, start: 3635 },
-					{ title: `Soul Happy Hour`, start: 3663 },
+					{ title: `I Wish I Could Sprechen Sie Deutsch`, start: 3642 },
+					{ title: `Soul Happy Hour`, start: 3673.8 },
 					{ title: `Take The Skinheads Bowling`, author: `Camper Van Beethoven`, start: 3822 },
-					{ title: `Sweet Jane`, author: `Lou Reed`, start: 4213.5, annotation: [
-						{ start: 4349, comment: `"March of the wooden soldiers" is a reference to the 1990 KCRW performance when Pat and Gerald Langley covered this song`, link: `/gigs/1990/Nov22` } 
+					{ title: `Sweet Jane`, author: `Lou Reed`, start: 4213, annotation: [
+						{ start: 4348, comment: `"March of the wooden soldiers" is a reference to the 1990 KCRW performance when Pat and Gerald Langley covered this song`, link: `/gigs/1990/Nov22` } 
 					]},
 				]}
 				header=<GigPlayerHeader

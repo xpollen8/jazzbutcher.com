@@ -49,7 +49,9 @@ const Trivia = () =>
 					{ title: `I Wish I Could Sprechen Sie Deutsch`, start: 3635 },
 					{ title: `Soul Happy Hour`, start: 3663 },
 					{ title: `Take The Skinheads Bowling`, author: `Camper Van Beethoven`, start: 3822 },
-					{ title: `Sweet Jane`, author: `Lou Reed`, start: 4213.5 },
+					{ title: `Sweet Jane`, author: `Lou Reed`, start: 4213.5, annotation: [
+						{ start: 4349, comment: `"March of the wooden soldiers" is a reference to the 1990 KCRW performance when Pat and Gerald Langley covered this song`, link: `/gigs/1990/Nov22` } 
+					]},
 				]}
 				header=<GigPlayerHeader
 					artist="Full band set"

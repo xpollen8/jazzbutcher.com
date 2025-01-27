@@ -133,7 +133,7 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				{(p.comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: p.comment }} /></i>)</span>}
 				</div>
 				{(p.annotation?.length) && <div className="gigplayer_annotation">{p.annotation.map(({ start, comment, link }, i) => {
-					return (<li key={i} className="smalltext">
+					return (<li key={i}>
 						<tt className='pointable' onClick={() => jumpSeconds(start)}>{secToTime(start)}</tt>
 						{linkExternal(link, comment)}
 						</li>

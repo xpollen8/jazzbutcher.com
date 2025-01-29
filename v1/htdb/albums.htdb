@@ -4075,7 +4075,7 @@ Previously available on the ${fishco} LP/CD.
 
 	${addAlbumPerf(release=rotten, person=[[person:Pat_Fish]], instruments=fender telecaster\, acoustic guitar\, bass\, singing)}
 	${addAlbumPerf(release=rotten, person=[[person:Max_Eider]], instruments=gretsch double anniversary\, singing\, bass)}
-	${addAlbumPerf(release=rotten, person=[[person:Owen_Jones]], instruments=accordian\, percussion\, singing\, catering)}
+	${addAlbumPerf(release=rotten, person=[[person:Owen_Jones]], instruments=accordion\, percussion\, singing\, catering)}
 	${addAlbumPerf(release=rotten, person=[[person:Peter_Crouch]], instruments=fender stratocaster\, shouting)}
 	${addAlbumPerf(release=rotten, person=[[person:Kathie_McGinty]], instruments=singing\, logistics)}
 	${addAlbumPerf(release=rotten, person=[[person:Pat_Beirne]], instruments=mouth organ)}

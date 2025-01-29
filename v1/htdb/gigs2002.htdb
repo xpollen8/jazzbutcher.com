@@ -716,6 +716,10 @@
 			/images/20020611/2002Jun11_JBC.jpg$$
 			/images/20020611/2002Jun11_max.jpg$$
 			Brian Kelly
+			---
+			/images/20020611/20020611_CD_HolgerMuhsfeldt_front.jpg;;${literalizeCommas(Holger Muhsfeldt recording)}$$
+			/images/20020611/20020611_CD_HolgerMuhsfeldt_back.jpg;;${literalizeCommas(Holger Muhsfeldt recording)}$$
+			James Duval
 		,
 		reviews=
 			${literalizeCommas(

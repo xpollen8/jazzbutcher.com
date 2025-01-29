@@ -58,9 +58,14 @@ export const parseFilters = (used: string): TypeFilterEntry[] => {
 	return ret;
 }
 
-export const filterItemBy = (object: any, filters: TypeFilterEntry[]) => {
+export const filterItemBy = (object: any, filters: TypeFilterEntry[], filterOptions: any[]) => {
 	if (!filters.length) return object;
 	return filters.some(([field, values]: TypeFilterEntry) => {
+		const exact = filterOptions.find((fld: any) => {
+			const [ f, v ] = fld.field.split(':');
+			return values.includes(v);
+		})?.exact;
+		//console.log("XXX", { field, values, exact });
 		if (field === 'boolean') {
 			return values?.some((value: string) => object[value] === 'yes');
 		} if (field === 'exists') {

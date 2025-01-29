@@ -84,6 +84,7 @@ const filterOptions = [
 	{ field: "type:eg", display: "Black Eg" },
 	{ field: "type:wilson", display: "Wilson" },
 	{ field: "type:preshow", display: "Pre-show Press" },
+	{ field: "type:gig", display: "Published Gig Reviews", exact: true },
 	{ field: "type:pat", display: "Pat's Gig Reviews" },
 	{ field: "title:Punter", display: "Fans' Gig Reviews" },
 	{ field: "type:kit", display: "Band Bios" },
@@ -111,7 +112,7 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 				if (options?.length <= 1) return;
 				return <div className="listItem flex flex-wrap">{options.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
 			})()}
-			<PressCards items={presses?.filter((art: any) => filterItemBy(art, filtersUsed))} project={project} showAlbum={showAlbum} preventAutoExpand={!filtersUsed?.length} />
+			<PressCards items={presses?.filter((art: any) => filterItemBy(art, filtersUsed, filterOptions))} project={project} showAlbum={showAlbum} preventAutoExpand={!filtersUsed?.length} />
 		</>}
 	</Suspense>
 }

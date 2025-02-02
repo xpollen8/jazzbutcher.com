@@ -136,9 +136,9 @@ const sections : { [key: string]: BreadCrumb } = {
 	western_dat: { parent: 'etc', title: 'The Western Family DAT', summary: '2005', body: "Western Family , the 1992 live album released on Creation Records, is not the record it could have been.."},
 
 	first_gig: { parent: 'prejbc', title: "Pat's first gig", summary: "1974", inParentDirectory: true, body: "Pat Fish, Chris Zero, Rolo, others" },
-	nightshift: { parent: 'prejbc', title: 'Nightshift', summary: "1976-1978", inParentDirectory: true, body: "Pat Fish (vocals, sax), John Silver (drums), Colin Henney (keys), Paul Quarry (drums), Chris Clark (guitar), Ros Caston, Jon Stephenson (keys)" },
+	nightshift: { parent: 'prejbc', title: 'Nightshift', summary: "1976-1978", inParentDirectory: true, body: "Pat Fish (vocals, sax), John Silver (bass), Colin Henney (keys), Paul Quarry (drums), Chris Clark (guitar), Ros Caston, Jon Stephenson (keys)" },
 	the_institution: { parent: 'prejbc', title: 'The Institution', summary: "1978-1980", inParentDirectory: true, body: "Rolo (bass), Rob Wilford (drums), Max Eider (guitar), Pat Fish (vocals, sax), Johnathan Stephenson (synthesizers), John Duvall (drums)" },
-	tonix: { parent: 'prejbc', title: 'Sonic Tonix', summary: "1980-1981 (AKA 'The Tonix')", inParentDirectory: true, body: "John Silver (drums), Dave Goldie (bass), Simon Mawby (vocals), Owen Jones (guitar), Pat Fish (vocals), Pete Millson (guitar)" },
+	tonix: { parent: 'prejbc', title: 'Sonic Tonix', summary: "1980-1981 (AKA 'The Tonix')", inParentDirectory: true, body: "John Silver (bass, vocals), Dave Goldie (guitar, vocals), Simon Mawby (keys), Owen Jones (drums), Pat Fish (vocals), Pete Millson (guitar)" },
 //	wow_federation: { parent: 'prejbc', title: 'Wow Federation', summary: "1981", inParentDirectory: true, body: "Millree Hughes, Brian Warner, Ian Warner, Nick Horton, Andy Love, James Rogers, Carl Fysh, Vicky Richardson, Boz Warnock, Andy Sizer, Liza Widdowson, Deborah Keeping, Paul Conneally, Pat Fish, Max Eider, Will Buchanan, Mark Sinker (https://rateyourmusic.com/artist/wow-federation)" },
 //	jazz_insects: { parent: 'prejbc', title: 'Jazz Insects', summary: "1982", inParentDirectory: true, body: "Matt Black, Mark Sinker, Max Eider, Pat Fish" },
 

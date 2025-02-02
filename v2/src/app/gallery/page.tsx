@@ -49,8 +49,15 @@ const gallery = [
 			credit_date: "2000",
 		},
 	{
+		src: "/images/PatFish_1990Barcelona_SumishtaBrahm.jpg",
+			credit: "Sumishta Brahm",
+			location: "Barcelona",
+			credit_date: "1990",
+		},
+	{
 		src: "/images/PatFish_SumishtaBrahm.jpg",
 			credit: "Sumishta Brahm",
+			location: "Natural History Museum, London",
 			//credit_date: "1990",
 		},
 	{

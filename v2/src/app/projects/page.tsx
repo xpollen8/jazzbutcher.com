@@ -34,7 +34,7 @@ const inbands = [
 
 const collaborations = [
 	{ uri: '/releases/collaboration_cambodia', text: 'Cambodia', aux: "w/Cole Coonce" },
-	{ uri: '/releases/project_vaguely_familiar', text: 'Vaguely Familiar', aux: "w/Richard Formby + Sumishta Brahm"  },
+	{ uri: '/releases/project_vaguely_familiar', text: 'Vaguely Familiar/Duck', aux: "w/Richard Formby + Sumishta Brahm"  },
 	{ uri: '/releases/collaboration_trampling_tokyo', text: "With Alan Moore", aux: "'Trampling Tokyo', 'London'" },
 ];
 

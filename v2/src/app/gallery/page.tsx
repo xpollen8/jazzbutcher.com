@@ -49,6 +49,11 @@ const gallery = [
 			credit_date: "2000",
 		},
 	{
+		src: "/images/PatFish_SumishtaBrahm.jpg",
+			credit: "Sumishta Brahm",
+			credit_date: "1990",
+		},
+	{
 		src: "/images/19920425/19920425_del_pat.jpg",
 			credit: "David Whittemore",
 			credit_date: "1992",

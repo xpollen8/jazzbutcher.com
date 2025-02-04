@@ -99,7 +99,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	sumosonic: { parent: 'projects', title: 'Sumosonic', summary: "1996-1998", inParentDirectory: true },
 	wilson: { parent: 'projects', title: 'Wilson', summary: "2001-2005, 2012", inParentDirectory: true },
 	drones_club: { parent: 'projects', title: 'Drones Club', summary: '2014-2021', inParentDirectory: true },
-	'/gigs/2006/Jul27': { parent: 'projects', title: 'Prime Evils', inParentDirectory: false },
+	'gigs/2006/Jul27': { parent: 'projects', title: 'Prime Evils', inParentDirectory: false },
 	masters_of_budvar: { parent: 'projects', title: 'The Masters of Budvar', inParentDirectory: true },
 	bookstore: { parent: 'projects', title: "Pat's Bookstore", inParentDirectory: true },
 

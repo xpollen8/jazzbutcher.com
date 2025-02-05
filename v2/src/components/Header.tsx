@@ -39,7 +39,7 @@ type BreadCrumb = {
 	summary?: string
 	inParentDirectory?: boolean
 	rootHideChildren?: boolean
-	body?: string
+	body?: string | React.ReactElement
 	hide?: boolean
 }
 

@@ -4041,10 +4041,10 @@ Previously available on the ${fishco} LP/CD.
 	${mkAlbumHeader(lookup=cdr_guestpass2000, body=${literalizeCommas()})}
 
 	${clearAlbumPerf(release=cdr_guestpass2000)}
-	${addAlbumPerf(release=cdr_guestpass2000, ordinal=1, project=jbc, song="Doktor Anthrax", media=https://v1.jazzbutcher.com/audio/tunes/JazzButcher_DoktorAnthrax.mp3)}
-	${addAlbumPerf(release=trampling,  ordinal=12, song="Trampling Tokyo", media=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/AlanMoore/AlanMoore_PatFish_Trampling_Tokyo.mp3, collection=Alan Moore Session)}
-	${addAlbumPerf(release=cdr_guestpass2000, ordinal=2, song="Don't Let Me Keep You")}
-	${addAlbumPerf(release=cdr_guestpass2000, ordinal=3, song="Hey Now Baby (My Arse Is On Fire)")}
+	${addAlbumPerf(release=cdr_guestpass2000, ordinal=1, project=jbc, song="Doktor Anthrax", media=${jbc_audio}/tunes/JazzButcher_DoktorAnthrax.mp3)}
+#	${addAlbumPerf(release=trampling,  ordinal=12, song="Trampling Tokyo", media=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/AlanMoore/AlanMoore_PatFish_Trampling_Tokyo.mp3, collection=Alan Moore Session)}
+	${addAlbumPerf(release=cdr_guestpass2000, ordinal=2, song="Don't Let Me Keep You", media=${jbc_audio}/tunes/JazzButcher_DontLetMeKeepYou.mp3)}
+	${addAlbumPerf(release=cdr_guestpass2000, ordinal=3, song="Hey Now Baby (My Arse Is On Fire)", media=${jbc_audio}/tunes/JazzButcher_MyArseInOnFire.mp3)}
 	${addAlbumPerf(release=cdr_guestpass2000, ordinal=4, song="The Hobbu Song", media=${jbc_audio}/tunes/hobbu.mp3)}
 
 	${jbc_footer}

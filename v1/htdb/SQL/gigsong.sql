@@ -4477,12 +4477,13 @@ INSERT INTO `gigsong` VALUES (NULL,'2017-09-22','set',1,8,"Quality People","Wils
 INSERT INTO `gigsong` VALUES (NULL,'2017-09-22','encore',1,1,"Thoughtless Kind","John Cale",NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20170922/20170922_JazzButcher_MalcolmBlack.mp4',"Malcolm Black",NULL);
 
 
-INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,1,"Whitfield, Sarah & The Birchfield Road Affair",NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,2,"Sex Engine",NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,3,"Blame",NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,4,"Girl-Go",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,1,"Big Saturday",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,2,"Whitfield, Sarah & The Birchfield Road Affair",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,3,"Sex Engine",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,4,"Blame",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,5,"Girl-Go",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,5,"Grey Flannelette",NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,6,"The Party's Over","David J.",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',1,7,"The Party's Over","David J.",NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-05','set',2,1,"The Interview",NULL,NULL,NULL,NULL,NULL,NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','set',1,1,"The Highest in the Land",NULL,NULL,NULL,NULL,NULL,NULL);

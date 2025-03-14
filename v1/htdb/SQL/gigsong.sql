@@ -492,6 +492,28 @@ INSERT INTO `gigsong` VALUES (NULL,'1986-07-24 00:00:00','encore',1,2,'Roadrunne
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-24 00:00:00','encore',2,1,'La Mer',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-24 00:00:00','encore',3,1,'Sweet Jane','Lou Reed',NULL,NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,1,'Bach Intro',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,2,'New Invention',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,3,'Chickentown',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,4,'Bicycle Kid',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,5,'Burglar Of Love',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,6,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,7,'Angels',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,8,'Bad Dream Lover',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,9,'The Best Way',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,10,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,11,'Girl-Go',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,12,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,13,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,14,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','set',1,15,'Zombie Love',NULL,'11:30 long!',NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','encore',1,1,'Moscow Drug Club','B. B. Gabor',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','encore',1,2,'The Devil Is My Friend',NULL,'Lawrence: "JBC:1, Edmonton: NIL"',NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','encore',2,1,'Partytime',NULL,'solo, with Cale verse, similar to Chicago version',NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','encore',2,2,'King Of Joy','Bill Drummond',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','encore',3,1,'Just Like Bettie Page',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','encore',3,2,'Part-Time Punks','TV Personalities',NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,1,'Bach Intro',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,2,'Big Saturday',NULL,NULL,NULL,'https://www.youtube.com/embed/nK0qi5DTPYw','Brian Kelly','https://www.youtube.com/channel/UCZMG7vU7wPdxw7VC4IwBNgg');
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-06 00:00:00','set',1,3,'Chickentown',NULL,NULL,NULL,NULL,NULL,NULL);

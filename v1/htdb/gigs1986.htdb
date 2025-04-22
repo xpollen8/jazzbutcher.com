@@ -9,6 +9,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+		posters=/images/19860117/19860117_poster.jpg$$
+		Andrew Brooksbank;;;;2025-04-22
 
 	)}
 

@@ -157,7 +157,7 @@ const Performances = (song: any) => {
 				} = p;
 				const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit) || {};
 				const { credit: venue, crediturl: city, creditdate: country } = collection?.includes(';;') && parseCredit(collection) || {};
-				const parent = (!datetime.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
+				const parent = (!datetime?.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
 				return <div key={key}><EmbedMedia data={{ ...p, mediaurl: media, autolink: true }} /></div>
 				})}
 		</blockquote>
@@ -194,7 +194,7 @@ const Medias = (song: any) => {
 				} = p;
 				const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit) || {};
 				const { credit: venue, crediturl: city, creditdate: country } = collection?.includes(';;') && parseCredit(collection) || {};
-				const parent = (!datetime.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
+				const parent = (!datetime?.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
 				return <div key={key}><EmbedMedia data={{ lookup, mediaurl: (!href.includes('.html') && exists(href)) || exists(mp3), mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? collection : '', venue, city, datetime, parent }} /></div>
 				})}
 		</blockquote>

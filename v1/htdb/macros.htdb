@@ -2325,6 +2325,9 @@ ${_d[3]}
 	</center>
 	</td>
 	<td width="50%" valign="top">
+		<a href="${jbc_images}/20250206_onetoysarah_gravemarker.jpg"> <img src="${jbc_images}/20250206_onetoysarah_gravemarker_500.jpg" alt="grave marker" style="border: 1px; border-radius: 10px;"></a>
+		${g_credit(g=onetoysarah, u=https://www.instagram.com/r_v_ra/p/DFurSIqqJjN/?img_index=1, d=2025-02-06)}
+		<p />
 		<a href="${jbc_images}/20211008_joolesjoyce_tribute.jpg"> <img src="${jbc_images}/20211008_joolesjoyce_tribute_500.jpg" alt="tribute" style="border: 1px; border-radius: 10px;"></a>
 		${g_credit(g=Jooles Joyce)}
 	</td>

@@ -20,6 +20,13 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "Tribute song, grave marker pic added",
+		link: '/memoriam',
+		body: <EmbedMedia data={{ mediaurl: "https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/video/Liam_Dullaghan-Light_On_Shakespeare_Road.mp4" }} />,
+		dt: '2025-04-22',
+		category: 'media',
+	},
+	{
 		subject: "1987-01-15 - Distressed Gentlefolk review",
 		link: '/press/19870115_press_varsity_distressed.html',
 		body: `<i>The Varsity Press</i> University of Toronto, Canada`,

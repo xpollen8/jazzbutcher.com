@@ -64,6 +64,11 @@ const music = [
 		Gratitude and love to Pat Fish (The Jazz Butcher), 1957-2021 RIP. Sketch by KC c1991, song by The Marble Tea. Special thanks to all the Conspirators for knowing how it feels.
 		</EmbedMedia>
 		},
+	{ text: 'Liam Dullaghan',
+		aux: 'Light on Shakespeare Road',
+		children: <EmbedMedia data={{ mediaurl: "https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/video/Liam_Dullaghan-Light_On_Shakespeare_Road.mp4" }} >
+		</EmbedMedia>
+		},
 	{ text: 'Stereo Embers The Podcast',
 		aux: 'Pat Fish (The Jazz Butcher)',
 		children: <EmbedMedia data={{

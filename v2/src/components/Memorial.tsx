@@ -13,10 +13,11 @@ const Memorial = (props: { home?: boolean }) => {
 			</Link>)}
 				{(!props?.home) &&
 				<div className="smalltext" style={{ width: '450px' }}>
-				"I loved Pat very dearly. He was the coolest man I ever met. When I first visited Pat's plot, after the pandemic, there was no marker - but I came back and a kind
+				I loved Pat very dearly. He was the coolest man I ever met. When I first visited Pat&quot;s plot, after the pandemic, there was no marker - but I came back and a kind
 				lady at the Olney burial ground showed me to his resting place. Here is the memorial plaque I arranged for Pat. I know Pat was proud of this song, Last of the
 				Gentleman Adventurers, and hope it will bring peace to all the JBC fans, who still miss him, and any those who may wish to visit Pat in the future. Love to all.
-				Sarah x"
+				<br />
+				Sarah x
 				</div>}
 		<Credit g="onetoysarah" u="https://www.instagram.com/r_v_ra/p/DFurSIqqJjN/?img_index=1" d="2025-02-06" />
 		<p />

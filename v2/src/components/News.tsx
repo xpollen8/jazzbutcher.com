@@ -20,6 +20,14 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "Jazz Butcher gig pix",
+		link: '/gigs/1989/Sep21',
+		body: `Updated photoset from Duchess Of York - Leeds, England`,
+		dt: '2025-04-29',
+		category: 'media',
+		credit: 'Andrew Brooksbank'
+	},
+	{
 		subject: "Wilson gig pix",
 		link: '/gigs/2001/Apr14_2130',
 		body: `7 lovely action shots from The Packhorse - Leeds England`,

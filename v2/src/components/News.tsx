@@ -20,6 +20,14 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "Wilson gig pix",
+		link: '/gigs/2001/Apr14_2130',
+		body: `7 lovely action shots from The Packhorse - Leeds England`,
+		dt: '2025-04-28',
+		category: 'media',
+		credit: 'Andrew Brooksbank'
+	},
+	{
 		subject: "Tribute song, grave marker pic added",
 		link: '/memoriam',
 		body: <EmbedMedia data={{ mediaurl: "https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/video/Liam_Dullaghan-Light_On_Shakespeare_Road.mp4" }} />,

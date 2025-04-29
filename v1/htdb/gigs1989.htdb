@@ -291,8 +291,16 @@
 		/images/19890921/19890921_jazzbutcher_brooksbank11.jpg;;${literalizeCommas(${larry})}$$
 		/images/19890921/19890921_jazzbutcher_brooksbank12.jpg$$
 		Andrew Brooksbank;;;;2025-04-29
-
-	)}
+	, reviews=
+		${literalizeCommas(
+			I think this was the 1st Duchess gig, I remember eating pizza upstairs after the gig
+			with the band at this one. The second one was the infamous Barnsley M1 shoot out, the gofer kept coming to me and
+			asking what the set up is (ie how many mics are required etc) as they were incredibly late due to the local plod
+			nicking them for shooting M1 commuters with plastic guns…I think the little clipping from our local rag is on the
+			back of one of the box sets, I sent Pat that post gig…
+		)}$$
+			Andrew Brooksbank;;;;2025-04-29
+	)},
 
 #define	Oct4.html()
 	${gigHeader(

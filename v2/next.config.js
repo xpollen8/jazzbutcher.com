@@ -88,6 +88,12 @@ const nextConfig = {
 					destination: '/:path*',
 					permanent: true,
 				},
+				// remove "/htdb" from head of paths
+				{
+					source: '/htdb/:path*',
+					destination: '/:path*',
+					permanent: true,
+				},
 				{
 					source: '/:path*.html',
 					destination: '/:path*',

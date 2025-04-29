@@ -33,6 +33,7 @@ const recentNews = [
 		body: <EmbedMedia data={{ mediaurl: "https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/video/Liam_Dullaghan-Light_On_Shakespeare_Road.mp4" }} />,
 		dt: '2025-04-22',
 		category: 'media',
+		credit: 'onetoysarah'
 	},
 	{
 		subject: "1987-01-15 - Distressed Gentlefolk review",
@@ -137,6 +138,7 @@ const recentNews = [
 		dt: '2024-11-04',
 		body: <EmbedMedia data={{ mediaurl: 'https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/video/20240504_DavidJ_Quell_AnnePace.mp4', mediacredit: 'Ann Pace', datetime: '2024-05-04', mediacreditdate: '2024-05-04' }} />,
 		category: 'media',
+		credit: 'Ann Pace',
 	},
 	{
 		subject: "video: 1986-08-22 - Hard, French TV",
@@ -150,6 +152,7 @@ const recentNews = [
 		body: <EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/19930304/19930304_JazzButcher_ValenzaPo_IT_CircoloPalomar.mp4', mediacredit: 'Giorgio Zito' }} />,
 		link: '/gigs/1993/Mar4',
 		category: 'media',
+		credit: 'Giorgio Zito',
 	},
 	{
 		subject: "interview: 1992-06-23 - WXPN, Philadelphia",

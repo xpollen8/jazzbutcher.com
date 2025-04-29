@@ -95,6 +95,15 @@
 			Special navigational note: There are TWO Packhorses in Leeds!
 			This one is the one near the University.
 		)},
+		photosets=
+			/images/20010414/20010414_Wilson_Brooksbank1.jpg$$
+			/images/20010414/20010414_Wilson_Brooksbank2.jpg$$
+			/images/20010414/20010414_Wilson_Brooksbank3.jpg$$
+			/images/20010414/20010414_Wilson_Brooksbank4.jpg$$
+			/images/20010414/20010414_Wilson_Brooksbank5.jpg$$
+			/images/20010414/20010414_Wilson_Brooksbank6.jpg$$
+			/images/20010414/20010414_Wilson_Brooksbank7.jpg$$
+			Andrew Brooksbank;;;;2025-04-28
 	)}
 
 #define	May24_2100.html()

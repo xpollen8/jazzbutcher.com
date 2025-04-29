@@ -270,13 +270,27 @@
 	recording=${literalizeCommas(${d}, ${q(7)}, ${p(A)})},
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
 	photosets= /images/19890921/19890921_brooksbank_001.jpg$$
-		/images/19890921/19890921_brooksbank_004.jpg$$
-		/images/19890921/19890921_brooksbank_005.jpg$$
-		/images/19890921/19890921_brooksbank_006.jpg$$
+#		/images/19890921/19890921_brooksbank_004.jpg$$
+#		/images/19890921/19890921_brooksbank_005.jpg$$
+#		/images/19890921/19890921_brooksbank_006.jpg$$
 		/images/19890921/19890921_brooksbank_008.jpg$$
 		/images/19890921/19890921_brooksbank_009.jpg$$
 		/images/19890921/19890921_brooksbank_010.jpg$$
 		Andrew Brooksbank
+		---
+		/images/19890921/19890921_jazzbutcher_brooksbank1.jpg$$
+		/images/19890921/19890921_jazzbutcher_brooksbank2.jpg$$
+		/images/19890921/19890921_jazzbutcher_brooksbank3.jpg$$
+		/images/19890921/19890921_jazzbutcher_brooksbank4.jpg$$
+		/images/19890921/19890921_jazzbutcher_brooksbank5.jpg$$
+		/images/19890921/19890921_jazzbutcher_brooksbank6.jpg$$
+		/images/19890921/19890921_jazzbutcher_brooksbank7.jpg$$
+		/images/19890921/19890921_jazzbutcher_brooksbank8.jpg$$
+		/images/19890921/19890921_jazzbutcher_brooksbank9.jpg$$
+		/images/19890921/19890921_jazzbutcher_brooksbank10.jpg;;${literalizeCommas(${paul})}$$
+		/images/19890921/19890921_jazzbutcher_brooksbank11.jpg;;${literalizeCommas(${larry})}$$
+		/images/19890921/19890921_jazzbutcher_brooksbank12.jpg$$
+		Andrew Brooksbank;;;;2025-04-29
 
 	)}
 

@@ -44,7 +44,6 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [currentTime, setCurrentTime] = useState(0);
 	const [info, setInfo] = useState();
-	//const { duration } = audioRef.current;
 
   useEffect(() => {
 		clearInterval(intervalRef.current);
@@ -182,14 +181,14 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				const backgroundColor = { backgroundColor: (idx === currentTrackIndex) ? 'lightgreen' : 'white' };
 				return (<dd key={idx} className='pointable' style={backgroundColor}>
 				<div onClick={() => jumpIdx(idx)}>
-				<tt>{secToTime(p.start)} - {idx + 1}.</tt> <span> {p?.title} </span>
+				<tt className="smalltext">{idx + 1}.</tt> <span> {p?.title} </span>
 				{(p.artist) && <>({p.artist})</>}
 				{(p.author && (typeof p.author === 'string') && !p.author.includes('NULL')) && <span className="smalltext pl-3"> ({p.author}) </span>}
 				{(p.version) && <span className="smalltext pl-3"> ({p.version}) </span>}
 				{(p.comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: p.comment }} /></i>)</span>}
 				</div>
 				{(p.annotation?.length) && <div className="gigplayer_annotation">{p.annotation.map(({ start, comment, link }, i) => {
-					return (<li key={i}>
+					return (<li key={i} className="smalltext">
 						<tt className='pointable' onClick={() => jumpSeconds(start)}>{secToTime(start)}</tt>
 						{linkExternal(link, comment)}
 						</li>

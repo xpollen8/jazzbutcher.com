@@ -18,7 +18,7 @@ const songMap: { [key: string]: any } = {
 	"big_saturday": "big_saturday.html",
 	"black_raoul": "black_raoul.html",
 	"blame": "blame.html",
-	"blues_for_dead_dean_reed": "blues_for_dean_read.html",
+	"blues_for_dean_read": "blues_for_dead_dean_reed.html",
 	"blues_for_dead_dean_reed": "blues_for_dead_dean_reed.html",
 	"buffalo_shame": "buffalo_shame.html",
 	"burglar_of_love": "burglar_of_love.html",

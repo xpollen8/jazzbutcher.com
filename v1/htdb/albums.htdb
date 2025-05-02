@@ -3862,7 +3862,7 @@ Previously available on the ${fishco} LP/CD.
 	${addAlbumPerf(release=ill, type=Bside, ordinal=2, song="The Ugliest Song In The World")}
 	${addAlbumPerf(release=ill, type=Bside, ordinal=3, song="Scarlett")}
 	${addAlbumPerf(release=ill, type=Bside, ordinal=4, song="Cops And Hospitals")}
-	${addAlbumPerf(release=ill, type=Bside, ordinal=5, song="Blues For Dean Read")}
+	${addAlbumPerf(release=ill, type=Bside, ordinal=5, song="Blues For Dead Dean Reed")}
 	${addAlbumPerf(release=ill, type=Bside, ordinal=6, song="True Stories")}
 
 	${addAlbumPerf(release=ill, person=[[person:Max_Reed]], instruments=engineer)}

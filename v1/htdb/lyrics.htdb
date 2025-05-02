@@ -8229,9 +8229,9 @@ I haven't got a mind at all.
 	)}
 #live	endif
 
-#define	blues_for_dean_read.html
-#live	if (getval(page) = blues_for_dean_read.html)
-	${lyricsHeader(title=Blues For Dean Read, annotated=yes, lyrics=${literalizeCommas(
+#define	blues_for_dead_dean_reed.html
+#live	if (getval(page) = blues_for_dead_dean_reed.html)
+	${lyricsHeader(title=Blues For Dead Dean Reed, annotated=yes, lyrics=${literalizeCommas(
 
 	I saw you here some years ago
 	<br />you've had your teeth fixed - I don't know
@@ -8272,7 +8272,7 @@ I haven't got a mind at all.
 		Featured vocalists at the end: Erich Honecker and Mikhail Gorbachev
 #	<b>${gab} Says</b>: <a href="${jbc_articles}/1995/0024.html">jbc-list</a>
 #	<br /><b>Keith Jones Says</b>: <a href="${jbc_articles}/1994/0292.html">jbc-list</a>
-		Dean Read was the American folk singer who contrived, staggeringly, to become the biggest pop star in East Germany. They're both gone now, forever.
+		Dean Reed was the American folk singer who contrived, staggeringly, to become the biggest pop star in East Germany. They're both gone now, forever.
 		;;Creation Promo Summary;;/press/95promo_illuminate.html#blue;;
 	)}
 	)}

@@ -581,8 +581,8 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-10-22 00:00:00','set',1,13,'Zombie Love
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',1,1,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',1,2,'D.R.I.N.K.',NULL,NULL,'Max on vocals',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',1,3,'Girls who keep goldfish',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',2,0,'The Entire Performance',NULL,"Recorded on SONY HF60. The tape starts with the end of one song, before a little chat and intro to ‘Blues For Dean Read’",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19951221/19951221_JazzButcher_London_TheGarage.mp3',NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',2,1,'Blues For Dean Read',NULL,'fast!',NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',2,0,'The Entire Performance',NULL,"Recorded on SONY HF60. The tape starts with the end of one song, before a little chat and intro to ‘Blues For Dead Dean Reed’",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19951221/19951221_JazzButcher_London_TheGarage.mp3',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',2,1,'Blues For Dead Dean Reed',NULL,'fast!',NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',2,2,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',2,4,'Bakersfield',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set',2,5,'Our Friends the Filth',NULL,NULL,NULL,NULL,NULL,NULL);

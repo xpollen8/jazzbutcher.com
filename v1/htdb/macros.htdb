@@ -1813,7 +1813,7 @@ font.load().then(function () {
 #define	beetle			${linkSong(href=${jbc_lyrics}/beetle_george.html, title=Beetle George)}
 #define	cops			${linkSong(href=${jbc_lyrics}/cops_and_hospitals.html, title=Cops And Hospitals)}
 #define	truck			${linkSong(href=${jbc_lyrics}/truck_o_fear.html, title=Truck Of Fear)}
-#define	dean			${linkSong(href=${jbc_lyrics}/blues_for_dean_read.html, title=Blues For Dean Read)}
+#define	dean			${linkSong(href=${jbc_lyrics}/blues_for_dead_dean_reed.html, title=Blues For Dead Dean Reed)}
 #define	sumo			${linkSong(href=${jbc_lyrics}/waiting_for_sumo.html, title=Waiting For Sumo)}
 #define	snakey			${linkSong(href=${jbc_lyrics}/old_snakey.html, title=Old Snakey)}
 #define	land			${linkSong(href=${jbc_lyrics}/land.html, title=Land)}

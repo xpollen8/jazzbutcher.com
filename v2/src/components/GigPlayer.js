@@ -155,26 +155,28 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 			<div className="listItem">
 			<div style={{ display: 'flex' }} >
 				<b>{info} {songLinkMapped(tracks[currentTrackIndex]?.title, true)}</b>
-				<div style={{ marginLeft: 'auto' }}>
+				<div className='smalltext' style={{ marginLeft: 'auto', border: '1px solid #ddd', borderRadius: '5px', paddingLeft: '.3em', paddingRight: '.3em', background: 'white', marginBottom: 'auto' }}>
 					{secToTime(currentTime)} / {secToTime(duration)}
 				</div>
       </div>
-			<div style={{ display: 'flex' }} >
-			{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '.4em'  }}/></button>}
-      <button style={{ width: '3.0em', marginTop: '.7em', marginLeft: '.3em' }} onClick={isPlaying ? handlePause : handlePlay}>
-        {isPlaying ? <IconPause/> : <IconPlay/>}
-      </button>
-			{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '.4em' }}/></button>}
-      <input
-				style={{ width: '85%',  marginBottom: '.4em' }}
-        type="range"
-        min={0}
-        max={duration}
-        value={currentTime}
-        onChange={handleSliderChange}
-				onMouseUp={onScrubEnd}
-				onKeyUp={onScrubEnd}
-      />
+			<div style={{ display: 'flex', border: '1px solid #ddd', borderRadius: '5px',  background: 'white', paddingRight: '1em' }} >
+				<span style={{ display: 'flex', padding: '.5em' }}>
+					{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em'  }}/></button>}
+					<button style={{ width: '2.0em' }} onClick={isPlaying ? handlePause : handlePlay}>
+						{isPlaying ? <IconPause/> : <IconPlay/>}
+					</button>
+					{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '1em', marginLeft: '.5em' }}/></button>}
+				</span>
+				<input
+					style={{ width: '100%' }}
+					type="range"
+					min={0}
+					max={duration}
+					value={currentTime}
+					onChange={handleSliderChange}
+					onMouseUp={onScrubEnd}
+					onKeyUp={onScrubEnd}
+				/>
 			</div>
 			<dl className="gigplayer_tracks">
 			{tracks?.map((p, idx) => {

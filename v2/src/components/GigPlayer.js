@@ -160,13 +160,13 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				</div>
       </div>
 			<div style={{ display: 'flex' }} >
-			{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em'  }}/></button>}
-      <button onClick={isPlaying ? handlePause : handlePlay}>
-        {isPlaying ? <IconPause style={{ width: '2.0em', marginTop: '1em' }}/> : <IconPlay style={{ width: '2.0em', marginTop: '1em' }}/>}
+			{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '.4em'  }}/></button>}
+      <button style={{ width: '3.0em', marginTop: '.7em', marginLeft: '.3em' }} onClick={isPlaying ? handlePause : handlePlay}>
+        {isPlaying ? <IconPause/> : <IconPlay/>}
       </button>
-			{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '1em' }}/></button>}
+			{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '.4em' }}/></button>}
       <input
-				style={{ width: '85%' }}
+				style={{ width: '85%',  marginBottom: '.4em' }}
         type="range"
         min={0}
         max={duration}

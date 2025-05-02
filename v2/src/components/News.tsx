@@ -20,6 +20,13 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "1995-12-21 - 'Last Gig Ever'",
+		dt: '2025-05-01',
+		body: <EmbedMedia data={{ mediaurl: 'https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19951221/19951221_JazzButcher_London_TheGarage.mp3' }} />,
+		link: '/gigs/1995/Dec21',
+		category: 'media',
+	},
+	{
 		subject: "Jazz Butcher gig pix",
 		link: '/gigs/1989/Sep21',
 		body: `Updated photoset from Duchess Of York - Leeds, England`,

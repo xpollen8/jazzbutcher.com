@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { padZero, songLinkMapped, dateDiff } from '@/lib/utils';
 import IconSkipForward from '@/svg/IconSkipForward';
 import IconSkipBackward from '@/svg/IconSkipBackward';
@@ -29,53 +29,91 @@ export const GigPlayerHeader = ({ title, artist, version, datetime, city, state,
 		{datetime && <span className='gigplayer_datetime'>{datetime} {dateDiff(datetime, ' - ')}</span>}
 	</div>);
 }
+
 /*
 		tracks: [ { title, start, artist, version, comment } ]
  */
 const GigPlayer = ({ src, tracks, header, footer }) => {
-  const audioRef = useRef(null);
+	const [audio] = React.useState(typeof Audio !== 'undefined' ? new Audio(src) : null);
+  const audioRef = useRef(audio);
+  const intervalRef = useRef();
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
 	const [duration, setDuration] = useState(0);
 	const [isPlaying, setIsPlaying] = useState(false);
+	const [currentTime, setCurrentTime] = useState(0);
+	const [info, setInfo] = useState();
+	//const { duration } = audioRef.current;
 
-  const handleDuration = () => {
-    const audio = audioRef.current;
-		setDuration(audio.duration);
-	}
+  useEffect(() => {
+		clearInterval(intervalRef.current);
+		intervalRef.current = setInterval(handleTimeUpdate, [1000]);
+	});
 
-  const handleTimeUpdate = () => {
-    const audio = audioRef.current;
-		setIsPlaying(!audio.paused);
-		// manufacture temp structure to hold end times
-		setDuration(audio.duration);
-		const tracksEnds = tracks?.map((p, i) => {
-			return {
-				...p,
-				end: (i === tracks.length - 1) ? duration : tracks[i + 1]?.start
-			};
-		});
-		// which track are we currently within?
-		const nextIdx = tracksEnds.findIndex(t => audio.currentTime >= t.start && audio.currentTime < t.end);
-		if (nextIdx !== currentTrackIndex) {
-      setCurrentTrackIndex(nextIdx);
-		}
-  };
+	useEffect(() => {
+			setInfo(!audioRef?.current?.paused ? 'Now Playing:' : (tracks[currentTrackIndex]?.title ? 'Paused:' : 'Ended'));
+	}, [audioRef?.current?.paused, tracks, currentTrackIndex]);
 
 	const jumpSeconds = (s) => {
-		setIsPlaying(true);
     const audio = audioRef.current;
 		audio.currentTime = s;
 		audio.play();
+    setCurrentTime(s);
 	}
 
 	const jumpIdx = (idx) => {
-		setIsPlaying(true);
-		setCurrentTrackIndex(idx);
     const audio = audioRef.current;
+		console.log("JUMP", idx);
+		setCurrentTrackIndex(idx);
 		const { start } = tracks[idx];
 		audio.currentTime = start;
 		audio.play();
+    setCurrentTime(start);
+    setIsPlaying(true);
 	}
+
+	const handleTimeUpdate = () => {
+		const audio = audioRef.current;
+		if (!audio.paused) {
+			setCurrentTime(audio.currentTime);
+			setDuration(audio.duration);
+			// manufacture temp structure to hold end times
+			const tracksEnds = tracks?.map((p, i) => {
+				return {
+					...p,
+					end: (i === tracks.length - 1) ? audio?.duration : tracks[i + 1]?.start
+				};
+			});
+			// which track are we currently within?
+			const nextIdx = tracksEnds.findIndex(t => {
+				//console.log(audio.currentTime, t.start, t.end);
+				return audio.currentTime >= t.start && audio.currentTime < t.end
+				});
+			if (nextIdx !== currentTrackIndex) {
+				console.log("BUMP", nextIdx);
+				setCurrentTrackIndex(nextIdx);
+			}
+		}
+	};
+
+  const handlePlay = () => {
+    const audio = audioRef.current;
+    const { start } = tracks[currentTrackIndex];
+    audio.currentTime = start;
+    audio.play();
+    setIsPlaying(true);
+    setCurrentTime(start);
+  };
+
+  const handleSliderChange = (event) => {
+    const newTime = parseFloat(event.target.value);
+    audioRef.current.currentTime = newTime;
+    setCurrentTime(newTime);
+  };
+
+  const handlePause = () => {
+    audioRef.current.pause();
+    setIsPlaying(false);
+  };
 
   const handleNext = () => {
 		jumpIdx((currentTrackIndex + 1) % tracks.length);
@@ -83,6 +121,14 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 
   const handlePrev = () => {
 		jumpIdx(currentTrackIndex === 0 ? tracks.length - 1 : currentTrackIndex - 1);
+  };
+
+  const onScrubEnd = () => {
+		/*
+    const audio = audioRef.current;
+    audio.play();
+    setIsPlaying(true);
+		*/
   };
 
 	const secToTime = (s) => {
@@ -106,20 +152,29 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 		>
 			{header}
 			<div className="listItem">
-			<b>{isPlaying ? 'Now Playing:' : (tracks[currentTrackIndex]?.title ? 'Paused:' : 'Ended')} {songLinkMapped(tracks[currentTrackIndex]?.title, true)}</b>
+			<b>{info} {songLinkMapped(tracks[currentTrackIndex]?.title, true)}</b>
 			<div
 				style={{ display: 'flex' }}
 			>
 			{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em'  }}/></button>}
+      <button onClick={isPlaying ? handlePause : handlePlay}>
+        {isPlaying ? 'Pause' : 'Play'}
+      </button>
 			{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '1em' }}/></button>}
-			<audio
-				className="audio_player" 
-				ref={audioRef}
-				src={src}
-				onTimeUpdate={handleTimeUpdate}
-				oncanplay={handleDuration}
-				controls
-			/>
+      <input
+				style={{ width: '70%' }}
+        type="range"
+        min={0}
+        max={duration}
+        value={currentTime}
+        onChange={handleSliderChange}
+				onMouseUp={onScrubEnd}
+				onKeyUp={onScrubEnd}
+      />
+      <div>
+        <span>{Math.floor(currentTime / 60)}:{Math.floor(currentTime % 60).toString().padStart(2, '0')}</span> / 
+        <span>{Math.floor(duration / 60)}:{Math.floor(duration % 60).toString().padStart(2, '0')}</span>
+      </div>
 			</div>
 			<dl className="gigplayer_tracks">
 			{tracks?.map((p, idx) => {

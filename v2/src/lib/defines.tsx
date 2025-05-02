@@ -587,7 +587,7 @@ export const scarlet = linkSong({ href: "/lyrics/scarlett", title: "Scarlett" })
 export const beetle = linkSong({ href: "/lyrics/beetle_george", title: "Beetle George" });
 export const cops = linkSong({ href: "/lyrics/cops_and_hospitals", title: "Cops And Hospitals" });
 export const truck = linkSong({ href: "/lyrics/truck_o_fear", title: "Truck Of Fear" });
-export const dean = linkSong({ href: "/lyrics/blues_for_dean_read", title: "Blues For Dean Read" });
+export const dean = linkSong({ href: "/lyrics/blues_for_dead_dean_reed", title: "Blues For Dead Dean Reed" });
 export const waiting_for_sumo = linkSong({ href: "/lyrics/waiting_for_sumo", title: "Waiting For Sumo" });
 export const snakey = linkSong({ href: "/lyrics/old_snakey", title: "Old Snakey" });
 export const land = linkSong({ href: "/lyrics/land", title: "Land" });
@@ -858,7 +858,7 @@ export const mapSongs: {[key: string]: string} = {
 	"Biggest_Loudest_Hairiest_Group_Of_All": "biggy",
 	"Black_Raoul": "black_raoul",
 	"Blame": "blame",
-	"Blues_For_Dean_Read": "dean",
+	"Blues_For_Dead_Dean_Reed": "dean",
 	"Buffalo_Shame": "shame",
 	"Buffalo_Sniper": "wilson_buffalo_sniper",
 	"Burglar_Of_Love": "burg",

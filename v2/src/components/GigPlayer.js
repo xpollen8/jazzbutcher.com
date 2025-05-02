@@ -3,6 +3,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import { padZero, songLinkMapped, dateDiff } from '@/lib/utils';
 import IconSkipForward from '@/svg/IconSkipForward';
 import IconSkipBackward from '@/svg/IconSkipBackward';
+import IconPlay from '@/svg/IconPlay';
+import IconPause from '@/svg/IconPause';
 
 import { parseDomain, parseCredit, linkExternal } from '@/lib/utils';
 import { Attribution } from '@/components/GenericWeb';
@@ -158,7 +160,7 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 			>
 			{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em'  }}/></button>}
       <button onClick={isPlaying ? handlePause : handlePlay}>
-        {isPlaying ? 'Pause' : 'Play'}
+        {isPlaying ? <IconPause style={{ width: '2.0em', marginTop: '1em' }}/> : <IconPlay style={{ width: '2.0em', marginTop: '1em' }}/>}
       </button>
 			{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '1em' }}/></button>}
       <input

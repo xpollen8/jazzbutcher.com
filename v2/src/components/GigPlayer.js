@@ -154,17 +154,20 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 		>
 			{header}
 			<div className="listItem">
-			<b>{info} {songLinkMapped(tracks[currentTrackIndex]?.title, true)}</b>
-			<div
-				style={{ display: 'flex' }}
-			>
+			<div style={{ display: 'flex' }} >
+				<b>{info} {songLinkMapped(tracks[currentTrackIndex]?.title, true)}</b>
+				<div style={{ marginLeft: 'auto' }}>
+					{secToTime(currentTime)} / {secToTime(duration)}
+				</div>
+      </div>
+			<div style={{ display: 'flex' }} >
 			{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em'  }}/></button>}
       <button onClick={isPlaying ? handlePause : handlePlay}>
         {isPlaying ? <IconPause style={{ width: '2.0em', marginTop: '1em' }}/> : <IconPlay style={{ width: '2.0em', marginTop: '1em' }}/>}
       </button>
 			{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '1em' }}/></button>}
       <input
-				style={{ width: '70%' }}
+				style={{ width: '85%' }}
         type="range"
         min={0}
         max={duration}
@@ -173,10 +176,6 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				onMouseUp={onScrubEnd}
 				onKeyUp={onScrubEnd}
       />
-      <div>
-        <span>{Math.floor(currentTime / 60)}:{Math.floor(currentTime % 60).toString().padStart(2, '0')}</span> / 
-        <span>{Math.floor(duration / 60)}:{Math.floor(duration % 60).toString().padStart(2, '0')}</span>
-      </div>
 			</div>
 			<dl className="gigplayer_tracks">
 			{tracks?.map((p, idx) => {

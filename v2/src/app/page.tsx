@@ -53,11 +53,11 @@ const Concert = () =>
 	<div className="listItem">
 	<b>A new thing!</b> <span className="smalltext">2025-05-03</span>
 	<p/>
-	For the longest time, I've wanted to be able to listen to JBC shows in a playlist
+	For the longest time, I&apos;ve wanted to be able to listen to JBC shows in a playlist
 	format rather than in a big blind MP3.  There was no pre-built thing that would
-	suit the needs of JBC com, so we rolled our own. <span className="smalltext">(If you're a CSS wiz who can improve this, hit me up)</span>
+	suit the needs of JBC com, so we rolled our own. <span className="smalltext">(If you&apos;re a CSS wiz who can improve this, hit me up)</span>
 	<p />
-	Eventually all live gigs (and there are LOTS of 'em!) will be presented in
+	Eventually all live gigs (and there are LOTS of &apos;em!) will be presented in
 	this gigplayer.
 	<p />
 	To get us started, please enjoy this wonderful 2005 Hamburg show.
@@ -86,6 +86,7 @@ const Concert = () =>
 				{ start: startSeconds('1:12:10'), comment: `"March of the wooden soldiers" is a reference to the 1990 KCRW performance when Pat and Gerald Langley covered this song`, link: `/gigs/1990/Nov22` } 
 			]},
 		]}
+		// @ts-ignore
 		header=<GigPlayerHeader
 			artist="Full band set"
 			venue='KIR'
@@ -93,6 +94,7 @@ const Concert = () =>
 			country='Germany'
 			datetime='2005-10-27'
 		/>
+		// @ts-ignore
 		footer=<GigPlayerFooter
 			comment="Masters of Budvar present The Jazz Butcher Conspiracy Soul Revue featuring Pat Fish , Max Eider & Owen Jones plus Curtis E. Johnson and Joe Woolley"
 			credit='Owen Jones;;'

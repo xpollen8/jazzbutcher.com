@@ -18,7 +18,7 @@ export const GigPlayerFooter = ({ source, comment, credit }) => {
 	</div>)
 }
 
-export const GigPlayerHeader = ({ title, artist, version, datetime, city, state, country, venue }) => {
+export const GigPlayerHeader = ({ title, artist, version, datetime, city, state, country, venue, source }) => {
 	const location = <>
 		<span className='gigplayer_venue'>{venue}</span>
 		<div>
@@ -42,7 +42,7 @@ export const GigPlayerHeader = ({ title, artist, version, datetime, city, state,
 const GigPlayer = ({ src, tracks, header, footer }) => {
 	const [audio] = React.useState(typeof Audio !== 'undefined' ? new Audio(src) : null);
   const audioRef = useRef(audio);
-  const intervalRef = useRef();
+	const intervalRef = useRef(null);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
 	const [duration, setDuration] = useState(0);
 	const [remainingTime, setRemainingTime] = useState(0);
@@ -53,8 +53,12 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 	const [tracksEnds, setTrackEnds] = useState([]);
 
   useEffect(() => {
-		clearInterval(intervalRef.current);
 		intervalRef.current = setInterval(handleTimeUpdate, [1000]);
+		return () => {
+			if (intervalRef.current !== null) {
+				clearInterval(intervalRef.current);
+			}
+		};
 	});
 
 	useEffect(() => {

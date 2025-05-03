@@ -168,7 +168,7 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				</div>
       </div>
 			<div style={{ display: 'flex', border: '1px solid #ddd', borderRadius: '5px', background: 'white', paddingRight: '1em', marginBottom: '.25em', marginTop: '.25em' }} >
-				<span style={{ display: 'flex', padding: '1em', borderRight: '1px dotted green', background: '#deeede' }}>
+				<span style={{ display: 'flex', paddingLeft: '1em', paddingRight: '.8em', borderRight: '1px dotted green', background: '#dedeee' }}>
 					{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em', }}/></button>}
 					<button style={{ width: '2.0em' }} onClick={isPlaying ? handlePause : handlePlay}>
 						{isPlaying ? <IconPause/> : <IconPlay/>}

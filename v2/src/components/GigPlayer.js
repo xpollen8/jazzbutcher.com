@@ -44,11 +44,22 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [currentTime, setCurrentTime] = useState(0);
 	const [info, setInfo] = useState();
+	const [tracksEnds, setTrackEnds] = useState([]);
 
   useEffect(() => {
 		clearInterval(intervalRef.current);
 		intervalRef.current = setInterval(handleTimeUpdate, [1000]);
 	});
+
+	useEffect(() => {
+		setDuration(audio.duration);
+		setTrackEnds(tracks?.map((p, i) => {
+			return {
+				...p,
+				end: (i === tracks.length - 1) ? audio?.duration : tracks[i + 1]?.start
+			};
+		}));
+	}, [audio?.duration, tracks]);
 
 	useEffect(() => {
 			setInfo(!audioRef?.current?.paused ? 'Now Playing:' : (tracks[currentTrackIndex]?.title ? 'Paused:' : 'Ended'));
@@ -63,7 +74,6 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 
 	const jumpIdx = (idx) => {
     const audio = audioRef.current;
-		console.log("JUMP", idx);
 		setCurrentTrackIndex(idx);
 		const { start } = tracks[idx];
 		audio.currentTime = start;
@@ -76,21 +86,13 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 		const audio = audioRef.current;
 		if (!audio.paused) {
 			setCurrentTime(audio.currentTime);
-			setDuration(audio.duration);
 			// manufacture temp structure to hold end times
-			const tracksEnds = tracks?.map((p, i) => {
-				return {
-					...p,
-					end: (i === tracks.length - 1) ? audio?.duration : tracks[i + 1]?.start
-				};
-			});
 			// which track are we currently within?
 			const nextIdx = tracksEnds.findIndex(t => {
 				//console.log(audio.currentTime, t.start, t.end);
 				return audio.currentTime >= t.start && audio.currentTime < t.end
 				});
 			if (nextIdx !== currentTrackIndex) {
-				console.log("BUMP", nextIdx);
 				setCurrentTrackIndex(nextIdx);
 			}
 		}
@@ -156,19 +158,19 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 			<div style={{ display: 'flex' }} >
 				<b>{info} {songLinkMapped(tracks[currentTrackIndex]?.title, true)}</b>
 				<div className='smalltext' style={{ marginLeft: 'auto', border: '1px solid #ddd', borderRadius: '5px', paddingLeft: '.3em', paddingRight: '.3em', background: 'white', marginBottom: 'auto' }}>
-					{secToTime(currentTime)} / {secToTime(duration)}
+					<tt>{secToTime(currentTime)} / {secToTime(duration)}</tt>
 				</div>
       </div>
-			<div style={{ display: 'flex', border: '1px solid #ddd', borderRadius: '5px',  background: 'white', paddingRight: '1em' }} >
-				<span style={{ display: 'flex', padding: '.5em' }}>
-					{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em'  }}/></button>}
+			<div style={{ display: 'flex', border: '1px solid #ddd', borderRadius: '5px', background: 'white', paddingRight: '1em', marginBottom: '.25em', marginTop: '.25em' }} >
+				<span style={{ display: 'flex', padding: '.5em', borderRight: '1px dotted green' }}>
+					{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em' }}/></button>}
 					<button style={{ width: '2.0em' }} onClick={isPlaying ? handlePause : handlePlay}>
 						{isPlaying ? <IconPause/> : <IconPlay/>}
 					</button>
-					{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '1em', marginLeft: '.5em' }}/></button>}
+					{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '1em', marginLeft: '.5em', marginRight: '-.5em' }}/></button>}
 				</span>
 				<input
-					style={{ width: '100%' }}
+					style={{ width: '100%', marginLeft: '.5em', background: '#666' }}
 					type="range"
 					min={0}
 					max={duration}

@@ -802,7 +802,10 @@ details > summary::marker, details > summary::-webkit-details-marker {
 }
 
 .gigplayer_tracks {
+	padding-top: .5em;
+	padding-bottom: .5em;
 	border: 1px solid #cfcfcf;
+	border-radius: .25em;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-color: white;

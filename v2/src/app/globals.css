@@ -735,9 +735,9 @@ details > summary::marker, details > summary::-webkit-details-marker {
 }
 
 .gigplayer_header {
-	margin-bottom: .25em;
 	padding: .25em;
 	background-color: #f7f7f7;
+	border-right: 1px dotted green;
 }
 
 .gigplayer_artist {
@@ -747,6 +747,7 @@ details > summary::marker, details > summary::-webkit-details-marker {
 .gigplayer_artist::after {
 	margin-right: .5em;
 	content: '';
+	display: block;
 }
 
 .gigplayer_title::before {
@@ -782,7 +783,7 @@ details > summary::marker, details > summary::-webkit-details-marker {
 }
 
 .gigplayer_footer {
-	background-color: #fcfcfc;
+	background-color: white;
 	font-size: .75em;
 	margin-top: .5em;
 	margin-bottom: .5em;

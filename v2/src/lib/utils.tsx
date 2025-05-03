@@ -46,6 +46,19 @@ export const padZero = (s: any): string => {
 	return (!str || str?.length < 1) ? `00` : ((str?.length < 2) ? `0${str}` : str);
 }
 
+export const startSeconds = (str: any = ''): number => {
+	if (typeof(str) === 'number') return str;
+	var p = str.split(':'),
+			s = 0, m = 1;
+
+	while (p.length > 0) {
+			s += m * parseInt(p.pop(), 10);
+			m *= 60;
+	}
+
+	return s;
+}
+
 export const monthNames = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', ];
 export const num2mon = (num: any): string => monthNames[num - 1] || '';
 export const mon2num = (month: any): number => monthNames.indexOf(String(month)) + 1;

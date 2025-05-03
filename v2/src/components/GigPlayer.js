@@ -100,11 +100,17 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 
   const handlePlay = () => {
     const audio = audioRef.current;
-    const { start } = tracks[currentTrackIndex];
-    audio.currentTime = start;
-    audio.play();
-    setIsPlaying(true);
-    setCurrentTime(start);
+		if (audio.paused) {
+			// resume at current time
+			audio.play();
+			setIsPlaying(true);
+		} else {
+			const { start } = tracks[currentTrackIndex];
+			audio.currentTime = start;
+			audio.play();
+			setIsPlaying(true);
+			setCurrentTime(start);
+		}
   };
 
   const handleSliderChange = (event) => {
@@ -162,15 +168,15 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				</div>
       </div>
 			<div style={{ display: 'flex', border: '1px solid #ddd', borderRadius: '5px', background: 'white', paddingRight: '1em', marginBottom: '.25em', marginTop: '.25em' }} >
-				<span style={{ display: 'flex', padding: '.5em', borderRight: '1px dotted green' }}>
-					{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em' }}/></button>}
+				<span style={{ display: 'flex', padding: '1em', borderRight: '1px dotted green', background: '#deeede' }}>
+					{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em', }}/></button>}
 					<button style={{ width: '2.0em' }} onClick={isPlaying ? handlePause : handlePlay}>
 						{isPlaying ? <IconPause/> : <IconPlay/>}
 					</button>
-					{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '1em', marginLeft: '.5em', marginRight: '-.5em' }}/></button>}
+					{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '1em', marginLeft: '.5em', marginRight: '-.75em' }}/></button>}
 				</span>
 				<input
-					style={{ width: '100%', marginLeft: '.5em', background: '#666' }}
+					style={{ width: '100%', marginLeft: '.75em' }}
 					type="range"
 					min={0}
 					max={duration}

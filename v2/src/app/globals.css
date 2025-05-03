@@ -737,7 +737,7 @@ details > summary::marker, details > summary::-webkit-details-marker {
 .gigplayer_header {
 	margin-bottom: .25em;
 	padding: .25em;
-	background-color: #fcfcfc;
+	background-color: #f7f7f7;
 }
 
 .gigplayer_artist {
@@ -782,11 +782,11 @@ details > summary::marker, details > summary::-webkit-details-marker {
 }
 
 .gigplayer_footer {
+	background-color: #fcfcfc;
 	font-size: .75em;
-	margin-top: .25em;
-	margin-bottom: .25em;
+	margin-top: .5em;
+	margin-bottom: .5em;
 	padding: .5em;
-	background-color: #efefef;
 }
 
 .gigplayer_comment {

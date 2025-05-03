@@ -177,14 +177,15 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				<span style={{ width: '100%', margin: 'auto' }}>
 					{header}
 				</span>
-				<span style={{ width: '100%', margin: 'auto' }}>
+				{(footer) && <span style={{ width: '100%', margin: 'auto' }}>
 					{footer}
 				</span>
+				}
 			</div>
-				<div style={{ border: '2px solid black', borderRadius: '5px', background: (isPlaying) ? 'lightgreen' : 'white', padding: '.5em', textAlign: 'center' }}>
-					<span style={{ fontSize: '1.5em' }}><tt>{currentTrackIndex + 1}/{tracks?.length}.</tt><b>{songLinkMapped(tracks[currentTrackIndex]?.title, true)}</b></span>
-					{/*<tt className="smalltext pl-3" style={{ padding: '2em' }}>{(info) || <>(-{secToTime(remainingTrackTime)})</>}</tt>*/}
-				</div>
+			<div style={{ border: '2px solid black', borderRadius: '5px', background: (isPlaying) ? 'lightgreen' : 'white', padding: '.5em', textAlign: 'center', marginBottom: '.5em' }}>
+				<span style={{ fontSize: '1.5em' }}><tt>{currentTrackIndex + 1}/{tracks?.length}.</tt><b>{songLinkMapped(tracks[currentTrackIndex]?.title, true)}</b></span>
+				{/*<tt className="smalltext pl-3" style={{ padding: '2em' }}>{(info) || <>(-{secToTime(remainingTrackTime)})</>}</tt>*/}
+			</div>
 			<div style={{ marginBottom: '.5em' }}>
 				<div style={{ display: 'flex', border: '1px solid #ddd', borderRadius: '5px', background: 'white', paddingRight: '1em', marginBottom: '.25em', marginTop: '.25em' }} >
 					<span style={{ display: 'flex', paddingLeft: '1em', paddingRight: '.8em', borderRight: '1px dotted green', background: '#dedeee' }}>
@@ -205,7 +206,7 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 						onKeyUp={onScrubEnd}
 					/>
 						<span className="smalltext" style={{ borderLeft: '1px dotted green', paddingLeft: '10px', margin: 'auto' }}>
-							<tt><b>{secToTime(currentTime)}</b></tt>
+							<tt style={{ background: isPlaying ? 'lightgreen' : 'white', fontWeight: 900 }}>{secToTime(currentTime)}</tt>
 							<br />
 							<tt>{secToTime(duration)}</tt>
 						</span>

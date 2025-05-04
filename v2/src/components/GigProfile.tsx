@@ -6,10 +6,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import EmbedMedia from '@/components/EmbedMedia';
 import PhotoSet from '@/components/PhotoSet';
-import TheGigPlayer from '@/components/GigPlayer';
+import TheGigPlayer, { GigPlayerHeader, GigPlayerFooter } from '@/components/GigPlayer';
 
 import { AutoLinkPlayer, AutoLinkAct } from '@/lib/defines';
-import { type HashedType, parseYear, parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, ts2URI, dateDiff } from '@/lib/utils';
+import { type HashedType, parseYear, parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, ts2URI, dateDiff, startSeconds } from '@/lib/utils';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
@@ -138,25 +138,48 @@ const GigPlay = ({ data }: any) => {
 		</div>
 	)
 }
+
+const parseAnnotation = (a:any = '') => {
+	if (typeof(a) === 'string') {
+		const [ start, comment, link ] = a?.split(';;');
+		return [ { start: startSeconds(start), comment, link } ];
+	}
+}
+
 const GigPlayed = (data: any) => {
 	/*
 		determine if this is a GigPlayer dataset
 			* if there is a song w/ordinal '0', AND that entry has media
 	 */
-	const playlists = [];
-	data?.filter(d => d?.mediaurl && d.ordinal === 0)?.forEach(d => {
-		const { setnum, song, comment, mediaurl, mediaurlcredit } = d;
-		const inSet = data?.filter(d => d.setnum === setnum && d.ordinal !== 0);
-	console.log("DATA", { setnum, song, comment, mediaurl, mediaurlcredit, inSet });
+	const playlists: any[] = [];
+	data?.filter((d:any) => d?.mediaurl?.includes('.mp3') && d.ordinal === 0)?.forEach((d:any) => {
+		const { setnum, ordinal, song, comment, mediaurl, mediaurlcredit } = d;
+		// add if in playlist format (start is set)
+		const inSet = data?.filter((d:any) => d.setnum === setnum && d.ordinal !== 0 && d.start);
+		if (inSet?.length) {
+			playlists.push({
+				src: mediaurl,
+				tracks: inSet?.map((i:any) => ({
+					title: i.song,
+					start: startSeconds(i.start),
+					version: i.comment,
+					annotation: parseAnnotation(i?.annotation),
+				})),
+				...d	// data needed for old format
+			});
+		} else {
+			playlists.push(d);
+		}
 	});
 
-	return <TheGigPlayer
-	/>
-	
+	//console.log("PLAYLISTS", playlists);
 	let set = '';
 	let type = '';
 	const updateSet = (newSet: string) => set=newSet;
-	return <Iterator className="listItem" data={data} func={(({ data }: any) => {
+	return <Iterator className="listItem" data={playlists?.length ? playlists : data} func={(({ data }: any) => {
+		// @ts-ignore
+		if (data?.tracks?.length) return <TheGigPlayer {...data} header=<GigPlayerHeader artist={data?.comment} venue={data?.song} /> footer=<GigPlayerFooter credit={data?.mediacredit} crediturl={data?.mediacrediturl} source={data?.mediaurl} /> />
+		// else fallthrough to single song format
 		let banner;
 		if (data.type !== type || data.setnum !== set) {
 			type = data.type;
@@ -164,7 +187,7 @@ const GigPlayed = (data: any) => {
 			banner = <Tag>{type} {set}</Tag>;
 		}
 		return <>{banner}<GigPlay data={data}/></>
-	})} />
+	})}/>
 }
 
 const GigWit = ({ data }: any) => {

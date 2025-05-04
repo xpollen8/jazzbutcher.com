@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import EmbedMedia from '@/components/EmbedMedia';
 import PhotoSet from '@/components/PhotoSet';
+import TheGigPlayer from '@/components/GigPlayer';
 
 import { AutoLinkPlayer, AutoLinkAct } from '@/lib/defines';
 import { type HashedType, parseYear, parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, ts2URI, dateDiff } from '@/lib/utils';
@@ -138,6 +139,20 @@ const GigPlay = ({ data }: any) => {
 	)
 }
 const GigPlayed = (data: any) => {
+	/*
+		determine if this is a GigPlayer dataset
+			* if there is a song w/ordinal '0', AND that entry has media
+	 */
+	const playlists = [];
+	data?.filter(d => d?.mediaurl && d.ordinal === 0)?.forEach(d => {
+		const { setnum, song, comment, mediaurl, mediaurlcredit } = d;
+		const inSet = data?.filter(d => d.setnum === setnum && d.ordinal !== 0);
+	console.log("DATA", { setnum, song, comment, mediaurl, mediaurlcredit, inSet });
+	});
+
+	return <TheGigPlayer
+	/>
+	
 	let set = '';
 	let type = '';
 	const updateSet = (newSet: string) => set=newSet;

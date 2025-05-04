@@ -52,8 +52,6 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 	const [info, setInfo] = useState();
 	const [tracksEnds, setTrackEnds] = useState([]);
 
-	if (!tracks?.length) return <></>;
-
   useEffect(() => {
 		intervalRef.current = setInterval(handleTimeUpdate, [1000]);
 		return () => {
@@ -76,6 +74,8 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 	useEffect(() => {
 			setInfo(!audioRef?.current?.paused ? `` : (tracks[currentTrackIndex]?.title ? '(Paused)' : '(Ended)'));
 	}, [audioRef?.current?.paused, tracks, currentTrackIndex]);
+
+	if (!tracks?.length) return <></>;
 
 	const jumpSeconds = (s) => {
     const audio = audioRef.current;

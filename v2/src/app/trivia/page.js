@@ -77,6 +77,7 @@ const Trivia = () =>
 	<Header section="trivia" />
 	<main className="etc">
 		<h1>This section is not yet ported from old JBC site</h1>
+		{/*
     <div>
       <GigPlayer
 				src="https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_PatFish_Hamburg.mp3"
@@ -136,6 +137,7 @@ const Trivia = () =>
 				/>
 			/>
     </div>
+		*/}
 	</main>
 	<Footer />
 </>

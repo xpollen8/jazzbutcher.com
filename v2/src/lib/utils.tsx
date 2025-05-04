@@ -47,7 +47,7 @@ export const padZero = (s: any): string => {
 }
 
 export const startSeconds = (str: any = ''): number => {
-	if (typeof(str) === 'number') return str;
+	if (!str || typeof(str) === 'number') return str;
 	var p = str.split(':'),
 			s = 0, m = 1;
 

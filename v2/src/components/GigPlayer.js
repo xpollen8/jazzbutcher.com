@@ -52,6 +52,8 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 	const [info, setInfo] = useState();
 	const [tracksEnds, setTrackEnds] = useState([]);
 
+	if (!tracks?.length) return <></>;
+
   useEffect(() => {
 		intervalRef.current = setInterval(handleTimeUpdate, [1000]);
 		return () => {
@@ -80,6 +82,7 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 		audio.currentTime = s;
 		audio.play();
     setCurrentTime(s);
+    setIsPlaying(true);
 	}
 
 	const jumpIdx = (idx) => {
@@ -228,7 +231,7 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				{(p.comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: p.comment }} /></i>)</span>}
 				{(idx === currentTrackIndex) && <tt className="smalltext pl-3"><b>(-{secToTime(remainingTrackTime)})</b> {info}</tt>}
 				</div>
-				{(p.annotation?.length) && <div className="gigplayer_annotation">{p.annotation.map(({ start, comment, link }, i) => {
+				{(p?.annotation?.length) && <div className="gigplayer_annotation">{p?.annotation?.map(({ start, comment, link }, i) => {
 					return (<li key={i} className="smalltext">
 						<tt className='pointable' onClick={() => jumpSeconds(start)}>{secToTime(start)}</tt>
 						{linkExternal(link, comment)}

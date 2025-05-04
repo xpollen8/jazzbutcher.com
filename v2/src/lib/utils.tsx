@@ -197,7 +197,7 @@ export const autoHREF = (href: string) => {
 		if (href?.includes('htt')) {	// full url
 			return href;
 		} else {
-			if (href.startsWith('/')) {	// local link
+			if (href?.startsWith('/')) {	// local link
 				return href;
 			} else {	// was just a domain
 				return `https://${href}`;

@@ -453,6 +453,10 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',NULL,2,1,"Speedy 
 INSERT INTO `gigsong` VALUES (NULL,'1985-07-05 00:00:00','set',NULL,2,2,"Roadrunner","Jonathan Richman",NULL,NULL,NULL,NULL,NULL,NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,"Pat Fish solo set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_PatFish_Hamburg.mp3','Owen Jones',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set','0',1,1,'Banter',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set','1:18',1,2,'Quality People','Wilson',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set','5:21',1,3,'Shakey',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set','10:54',1,4,'Buffalo Sniper','Wilson',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',NULL,2,0,'The Entire Performance',NULL,"Owen Jones set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_OwenJones_Hamburg.mp3','Owen Jones',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',NULL,3,0,'The Entire Performance',NULL,"Max Eider set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_MaxEider_Hamburg.mp3','Owen Jones',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2005-10-27 00:00:00','set',NULL,4,0,'The Entire Performance',NULL,"Peter Crouch set",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_PeterCrouch_Hamburg.mp3','Owen Jones',NULL,NULL);

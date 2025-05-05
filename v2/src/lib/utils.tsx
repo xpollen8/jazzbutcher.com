@@ -47,7 +47,7 @@ export const padZero = (s: any): string => {
 }
 
 export const startSeconds = (str: any = ''): number => {
-	if (typeof(str) === 'number') return str;
+	if (!str || typeof(str) === 'number') return str;
 	var p = str.split(':'),
 			s = 0, m = 1;
 
@@ -197,7 +197,7 @@ export const autoHREF = (href: string) => {
 		if (href?.includes('htt')) {	// full url
 			return href;
 		} else {
-			if (href.startsWith('/')) {	// local link
+			if (href?.startsWith('/')) {	// local link
 				return href;
 			} else {	// was just a domain
 				return `https://${href}`;

@@ -744,18 +744,6 @@ details > summary::marker, details > summary::-webkit-details-marker {
 	font-size: 1.25em;
 	font-weight: 600;
 }
-.gigplayer_artist::after {
-	margin-right: .5em;
-	content: '';
-	display: block;
-}
-
-.gigplayer_title::before {
-	content: '"';
-}
-.gigplayer_title::after {
-	content: '"';
-}
 .gigplayer_title {
 	font-style: italic;
 	font-size: 1.05em;
@@ -766,7 +754,6 @@ details > summary::marker, details > summary::-webkit-details-marker {
 	font-style: italic;
 	font-size: 1.05em;
 	font-weight: 300;
-	margin: .5em;
 }
 
 .gigplayer_datetime {
@@ -776,17 +763,16 @@ details > summary::marker, details > summary::-webkit-details-marker {
 .gigplayer_venue {
 	font-size: 1.25em;
 	font-weight: 600;
-	margin-right: .5em;
+	display: block;
 }
 
 .gigplayer_location {
+	display: block;
 }
 
 .gigplayer_footer {
 	background-color: white;
 	font-size: .75em;
-	margin-top: .5em;
-	margin-bottom: .5em;
 	padding: .5em;
 }
 
@@ -799,7 +785,6 @@ details > summary::marker, details > summary::-webkit-details-marker {
 }
 .gigplayer_source {
 	display: block;
-	margin: .5em;
 }
 
 .gigplayer_tracks {

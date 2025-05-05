@@ -5,12 +5,11 @@ import IconSkipForward from '@/svg/IconSkipForward';
 import IconSkipBackward from '@/svg/IconSkipBackward';
 import IconPlay from '@/svg/IconPlay';
 import IconPause from '@/svg/IconPause';
-
 import { parseDomain, parseCredit, linkExternal } from '@/lib/utils';
 import { Attribution } from '@/components/GenericWeb';
 
-export const GigPlayerFooter = ({ source, comment, credit }) => {
-	const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit) || {};
+export const GigPlayerFooter = ({ source, comment, credit, crediturl }) => {
+	const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit) || { credit, crediturl  };
 	return (<div className="gigplayer_footer">
 		{comment && <div className="gigplayer_comment">{comment}</div>}
 		{source && <div className="gigplayer_source">{linkExternal(source, parseDomain(source))}</div>}
@@ -75,11 +74,14 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 			setInfo(!audioRef?.current?.paused ? `` : (tracks[currentTrackIndex]?.title ? '(Paused)' : '(Ended)'));
 	}, [audioRef?.current?.paused, tracks, currentTrackIndex]);
 
+	if (!tracks?.length) return <></>;
+
 	const jumpSeconds = (s) => {
     const audio = audioRef.current;
 		audio.currentTime = s;
 		audio.play();
     setCurrentTime(s);
+    setIsPlaying(true);
 	}
 
 	const jumpIdx = (idx) => {
@@ -177,14 +179,13 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				if (key === 'ArrowDown') handleNext();
 			}}
 		>
-			<div style={{ display: 'flex', border: '1px solid #ddd', borderRadius: '5px', marginBottom: '.5em', justifyContent: 'center', aliignItems: 'center' }}>
-				<span style={{ width: '100%', margin: 'auto' }}>
+			<div style={{ display: 'flex', border: '1px solid #ddd', borderRadius: '5px', marginBottom: '.5em' }}>
+				{(header) && <span style={{ width: '100%', margin: 'auto' }}>
 					{header}
-				</span>
+				</span>}
 				{(footer) && <span style={{ width: '100%', margin: 'auto' }}>
 					{footer}
-				</span>
-				}
+				</span>}
 			</div>
 			<div style={{ border: '2px solid black', borderRadius: '5px', background: (isPlaying) ? 'lightgreen' : 'white', padding: '.5em', textAlign: 'center', marginBottom: '.5em' }}>
 				<span style={{ fontSize: '1.5em' }}><tt>{currentTrackIndex + 1}/{tracks?.length}.</tt><b>{songLinkMapped(tracks[currentTrackIndex]?.title, true)}</b></span>
@@ -228,7 +229,7 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				{(p.comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: p.comment }} /></i>)</span>}
 				{(idx === currentTrackIndex) && <tt className="smalltext pl-3"><b>(-{secToTime(remainingTrackTime)})</b> {info}</tt>}
 				</div>
-				{(p.annotation?.length) && <div className="gigplayer_annotation">{p.annotation.map(({ start, comment, link }, i) => {
+				{(p?.annotation?.length) && <div className="gigplayer_annotation">{p?.annotation?.map(({ start, comment, link }, i) => {
 					return (<li key={i} className="smalltext">
 						<tt className='pointable' onClick={() => jumpSeconds(start)}>{secToTime(start)}</tt>
 						{linkExternal(link, comment)}

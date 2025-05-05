@@ -3785,6 +3785,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set',NULL, 1,7, "When You's a 
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set',NULL, 1,8, "Dunkin' Beigels","Slim Gaillard",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set',NULL, 1,9, "Shakey",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set',NULL, 1,10, "Shirley Maclaine",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2016-06-03', 'set','49:55', 1,11, "Southern Mark Smith",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'1985-03-24 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,"Gen2 Cassette",NULL,'https://v1.jazzbutcher.com/audio/19850324/19850324_JazzButcher_Stockholm_Gen2_Flat.mp3',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-03-24 00:00:00','set',NULL,1,1,'Marnie',NULL,NULL,NULL,NULL,NULL,NULL,NULL);

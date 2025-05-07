@@ -152,6 +152,7 @@ const GigPlayed = (data: any) => {
 			* if there is a song w/ordinal '0', AND that entry has media
 	 */
 	const playlists: any[] = [];
+	// "Entire Shows"
 	data?.filter((d:any) => d?.mediaurl?.includes('.mp3') && d.ordinal === 0)?.forEach((d:any) => {
 		const { setnum, ordinal, song, comment, mediaurl, mediaurlcredit } = d;
 		// add if in playlist format (start is set)
@@ -170,6 +171,13 @@ const GigPlayed = (data: any) => {
 		} else {
 			playlists.push(d);
 		}
+	});
+	// non gigplayer format
+	data?.filter((d:any) => d.ordinal)?.forEach((d:any) => {
+		const { setnum, ordinal, song, comment, mediaurl, mediaurlcredit } = d;
+		// add if in playlist format (start is set)
+		const inSet = data?.filter((d:any) => d.setnum === setnum && d.ordinal !== 0 && d.start);
+		playlists.push(d);
 	});
 
 	//console.log("PLAYLISTS", playlists);

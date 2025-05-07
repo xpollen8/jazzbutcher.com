@@ -57,8 +57,9 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 			if (intervalRef.current !== null) {
 				clearInterval(intervalRef.current);
 			}
+			audioRef?.current?.pause();
 		};
-	});
+	}, []);
 
 	useEffect(() => {
 		setDuration(audio.duration);

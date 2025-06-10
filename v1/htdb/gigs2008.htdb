@@ -260,9 +260,12 @@
 
 #define	Jun5.html()
 	${gigHeader(
-		photosets= /images/20080605/20080605_brooksbank_pat1.jpg$$
+		photosets=/images/20080605/20080605_brooksbank_1.jpg$$
+			/images/20080605/20080605_brooksbank_2.jpg$$
+			/images/20080605/20080605_brooksbank_3.jpg$$
+			/images/20080605/20080605_brooksbank_pat1.jpg$$
 			/images/20080605/20080605_brooksbank_pat2.jpg$$
-			Andrew Brooksbank
+			Andrew Brooksbank;;;;2025-06-10
 	)}
 
 #define	Jun6.html()

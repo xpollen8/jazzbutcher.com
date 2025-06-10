@@ -208,7 +208,10 @@
 		posters= /images/20121116/20121116_poster.jpg$$
 		---
 		/images/20121116/20121116_poster2.jpg$$
-		Andrew Brooksbank;;;;2025-05-09
+		Andrew Brooksbank;;;;2025-05-09,
+		photosets=
+			/images/20121116/20121116_brooksbank.jpg$$
+			Andrew Brooksbank;;;;2025-06-10
 	)}
 
 #define	Dec1_1800.html()

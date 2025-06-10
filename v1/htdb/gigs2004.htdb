@@ -1115,7 +1115,10 @@
 			to pass around and something of a workshop was developing with Micky, ${joe_woolley} and me. Fortunately, the
 			arrival of The Drummer brought us all back to our senses and we got on with the drinking and the smoking and
 			the talking rubbish. Brilliant. Trebles all round.
-		)}
+		)},
+		photosets=
+			/images/20040604/20040604_brooksbank.jpg$$
+			Andrew Brooksbank;;;;2025-06-10
 	)}
 
 #define Jun6_1245.html()

@@ -106,7 +106,6 @@ const WesternTape = () =>
 					source=''
 				/>
 				footer=<></>
-				/>
 			/>
 		</main>
 	<Footer />

@@ -105,9 +105,7 @@ const WesternTape = () =>
 					country=''
 					source=''
 				/>
-				footer=<GigPlayerFooter
-					comment=<>
-					</>
+				footer=<></>
 				/>
 			/>
 		</main>

@@ -42,24 +42,14 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 	const [audio] = React.useState(typeof Audio !== 'undefined' ? new Audio(src) : null);
   const audioRef = useRef(audio);
 	const intervalRef = useRef(null);
+	const [isPlaying, setIsPlaying] = useState(false);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
 	const [duration, setDuration] = useState(0);
-	const [remainingTime, setRemainingTime] = useState(0);
 	const [remainingTrackTime, setRemainingTrackTime] = useState(0);
-	const [isPlaying, setIsPlaying] = useState(false);
 	const [currentTime, setCurrentTime] = useState(0);
 	const [info, setInfo] = useState();
+	const [intervalTick, setIntervalTick] = useState(0);
 	const [tracksEnds, setTrackEnds] = useState([]);
-
-  useEffect(() => {
-		intervalRef.current = setInterval(handleTimeUpdate, [1000]);
-		return () => {
-			if (intervalRef.current !== null) {
-				clearInterval(intervalRef.current);
-			}
-			audioRef?.current?.pause();
-		};
-	}, []);
 
 	useEffect(() => {
 		setDuration(audio.duration);
@@ -69,11 +59,23 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				end: (i === tracks.length - 1) ? audio?.duration : tracks[i + 1]?.start
 			};
 		}));
+		intervalRef.current = setInterval(handleTimeUpdate, [1000]);
+		return () => {
+			if (intervalRef.current !== null) {
+				clearInterval(intervalRef.current);
+			}
+			if (!audioRef.current.paused) {
+				audioRef.current.pause();
+			}
+		}
 	}, [audio?.duration, tracks]);
 
 	useEffect(() => {
-			setInfo(!audioRef?.current?.paused ? `` : (tracks[currentTrackIndex]?.title ? '(Paused)' : '(Ended)'));
-	}, [audioRef?.current?.paused, tracks, currentTrackIndex]);
+		const { end } = tracksEnds[currentTrackIndex] || {};
+		if (end) {
+			setRemainingTrackTime(end - audio.currentTime);
+		}
+	}, [currentTrackIndex, intervalTick]);
 
 	if (!tracks?.length) return <></>;
 
@@ -82,33 +84,33 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 		audio.currentTime = s;
 		audio.play();
     setCurrentTime(s);
-    setIsPlaying(true);
 	}
 
 	const jumpIdx = (idx) => {
     const audio = audioRef.current;
 		setCurrentTrackIndex(idx);
-		const { start } = tracks[idx];
+		const { start } = tracksEnds[idx];
 		audio.currentTime = start;
 		audio.play();
     setCurrentTime(start);
-    setIsPlaying(true);
 	}
 
 	const handleTimeUpdate = () => {
 		const audio = audioRef.current;
 		if (!audio.paused) {
 			setCurrentTime(audio.currentTime);
-			setRemainingTime(audio.duration - audio.currentTime);
+			setIntervalTick(parseInt(audio.currentTime));
+			//setRemainingTime(audio.duration - audio.currentTime);
 			// manufacture temp structure to hold end times
 			// which track are we currently within?
 			const nextIdx = tracksEnds.findIndex(t => {
-				//console.log(audio.currentTime, t.start, t.end);
 				return audio.currentTime >= t.start && audio.currentTime < t.end
-				});
-			setRemainingTrackTime(tracksEnds[nextIdx].end - audio.currentTime);
-			if (nextIdx !== currentTrackIndex) {
-				setCurrentTrackIndex(nextIdx);
+			});
+			if (nextIdx > 0) {
+				//setRemainingTrackTime(tracksEnds[nextIdx].end - audio.currentTime);
+				if (nextIdx !== currentTrackIndex) {
+					setCurrentTrackIndex(nextIdx);
+				}
 			}
 		}
 	};
@@ -117,52 +119,54 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
     const audio = audioRef.current;
 		if (audio.paused) {
 			// resume at current time
-			audio.play();
-			setIsPlaying(true);
+			audioRef.current.play();
 		} else {
-			const { start } = tracks[currentTrackIndex];
+			const { start } = tracksEnds[currentTrackIndex];
 			audio.currentTime = start;
-			audio.play();
-			setIsPlaying(true);
+			audioRef.current.play();
 			setCurrentTime(start);
 		}
+		setIsPlaying(true);
+		setInfo(!audioRef?.current?.paused ? `` : (tracks[currentTrackIndex].title ? '(Paused)' : '(Ended)'));
   };
 
   const handleSliderChange = (event) => {
     const newTime = parseFloat(event.target.value);
     audioRef.current.currentTime = newTime;
     setCurrentTime(newTime);
+		handleTimeUpdate();
   };
 
   const handlePause = () => {
-    audioRef.current.pause();
-    setIsPlaying(false);
+    const audio = audioRef.current;
+    audio.pause();
+		setIsPlaying(false);
+		setInfo(!audioRef?.current?.paused ? `` : (tracks[currentTrackIndex].title ? '(Paused)' : '(Ended)'));
   };
 
   const handleNext = () => {
-		jumpIdx((currentTrackIndex + 1) % tracks.length);
+		jumpIdx((currentTrackIndex + 1) % tracksEnds.length);
   };
 
   const handlePrev = () => {
-		jumpIdx(currentTrackIndex === 0 ? tracks.length - 1 : currentTrackIndex - 1);
+		jumpIdx(currentTrackIndex === 0 ? tracksEnds.length - 1 : currentTrackIndex - 1);
   };
 
   const onScrubEnd = () => {
-		/*
-    const audio = audioRef.current;
-    audio.play();
-    setIsPlaying(true);
-		*/
+		handleTimeUpdate();
   };
 
 	const secToTime = (s = 0) => {
-		const hours = (s - s % 3600) / 3600;
-		const minutes = ((s - s % 60) / 60) % 60;
-		const seconds = s % 60;
-		let str = '';
-		if (hours) str = `${padZero(hours)}:`;
-		str = `${str}${padZero(minutes)}:${padZero(parseInt(seconds))}`;
-		return str;
+		if (JSON.stringify(s) !== 'null') {
+			const hours = (s - s % 3600) / 3600;
+			const minutes = ((s - s % 60) / 60) % 60;
+			const seconds = s % 60;
+			let str = '';
+			if (hours) str = `${padZero(hours)}:`;
+			str = `${str}${padZero(minutes)}:${padZero(parseInt(seconds))}`;
+			return str;
+		}
+		return '';
 	}
 
   return (
@@ -188,7 +192,7 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 					{footer}
 				</span>}
 			</div>
-			<div style={{ border: '2px solid black', borderRadius: '5px', background: (isPlaying) ? 'lightgreen' : 'white', padding: '.5em', textAlign: 'center', marginBottom: '.5em' }}>
+			<div style={{ border: '2px solid black', borderRadius: '5px', background: (!audioRef?.current?.paused) ? 'lightgreen' : 'white', padding: '.5em', textAlign: 'center', marginBottom: '.5em' }}>
 				<span style={{ fontSize: '1.5em' }}><tt>{currentTrackIndex + 1}/{tracks?.length}.</tt><b>{songLinkMapped(tracks[currentTrackIndex]?.title, true)}</b></span>
 				{/*<tt className="smalltext pl-3" style={{ padding: '2em' }}>{(info) || <>(-{secToTime(remainingTrackTime)})</>}</tt>*/}
 			</div>
@@ -196,8 +200,8 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				<div style={{ display: 'flex', border: '1px solid #ddd', borderRadius: '5px', background: 'white', paddingRight: '1em', marginBottom: '.25em', marginTop: '.25em' }} >
 					<span style={{ display: 'flex', paddingLeft: '1em', paddingRight: '.8em', borderRight: '1px dotted green', background: '#dedeee' }}>
 						{(tracks?.length > 1) && <button className="left-arrow" onClick={handlePrev}><IconSkipBackward style={{ width: '2.0em', marginTop: '1em', }}/></button>}
-						<button style={{ width: '2.0em' }} onClick={isPlaying ? handlePause : handlePlay}>
-							{isPlaying ? <IconPause/> : <IconPlay/>}
+						<button style={{ width: '2.0em' }} onClick={() => audioRef?.current?.paused ? handlePlay() : handlePause()}>
+							{!audio?.paused ? <IconPause/> : <IconPlay/>}
 						</button>
 						{(tracks?.length > 1) && <button className="right-arrow" onClick={handleNext}><IconSkipForward style={{ width: '2.0em', marginTop: '1em', marginLeft: '.5em', marginRight: '-.75em' }}/></button>}
 					</span>
@@ -205,14 +209,14 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 						style={{ width: '100%', marginLeft: '.75em', marginRight: '.75em' }}
 						type="range"
 						min={0}
-						max={duration}
+						max={duration || null}
 						value={currentTime}
 						onChange={handleSliderChange}
 						onMouseUp={onScrubEnd}
 						onKeyUp={onScrubEnd}
 					/>
 						<span className="smalltext" style={{ borderLeft: '1px dotted green', paddingLeft: '10px', margin: 'auto' }}>
-							<tt style={{ background: isPlaying ? 'lightgreen' : 'white', fontWeight: 900 }}>{secToTime(currentTime)}</tt>
+							<tt style={{ background: !audioRef?.current?.paused ? 'lightgreen' : 'white', fontWeight: 900 }}>{secToTime(currentTime)}</tt>
 							<br />
 							<tt>{secToTime(duration)}</tt>
 						</span>
@@ -227,16 +231,17 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				{(p.artist) && <>({p.artist})</>}
 				{(p.author && (typeof p.author === 'string') && !p.author.includes('NULL')) && <span className="smalltext pl-3"> ({p.author}) </span>}
 				{(p.version) && <span className="smalltext pl-3"> ({p.version}) </span>}
+				{(p.performers) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: p.performers }} /></i>)</span>}
 				{(p.comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: p.comment }} /></i>)</span>}
 				{(idx === currentTrackIndex) && <tt className="smalltext pl-3"><b>(-{secToTime(remainingTrackTime)})</b> {info}</tt>}
 				</div>
-				{(p?.annotation?.length) && <div className="gigplayer_annotation">{p?.annotation?.map(({ start, comment, link }, i) => {
+				{(p?.annotation?.length) && <ul className="gigplayer_annotation">{p?.annotation?.map(({ start, comment, link }, i) => {
 					return (<li key={i} className="smalltext">
-						<tt className='pointable' onClick={() => jumpSeconds(start)}>{secToTime(start)}</tt>
-						{linkExternal(link, comment)}
+						<tt className='gigplayer_annotation_text' onClick={() => jumpSeconds(start)}>{secToTime(start)}</tt>
+						{link ? linkExternal(link, comment) : comment}
 						</li>
 					)
-				})}</div>
+				})}</ul>
 				}
 				</dd>)
 				})}

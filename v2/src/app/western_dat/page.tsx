@@ -5,6 +5,20 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Attribution } from '@/components/GenericWeb';
 import { family, rev, creation_records } from '@/lib/defines';
+import GigPlayer, { GigPlayerHeader, GigPlayerFooter } from '@/components/GigPlayer';
+
+const startSeconds = (str = '') => {
+	if (typeof(str) === 'number') return str;
+	var p = str.split(':'),
+			s = 0, m = 1;
+
+	while (p.length > 0) {
+			s += m * parseInt(p.pop(), 10);
+			m *= 60;
+	}
+
+	return s;
+}
 
 const WesternTape = () =>
 <>
@@ -37,11 +51,52 @@ const WesternTape = () =>
 			<b>a pre-master for Western Family has surfaced</b> -
 			tunes from beyond the grave.
 			<p />
-			So, I will be offering dubs of this better-than-the-release DAT
-			to those interested.
-			<p />
 			<Attribution g="David Whittemore" d="2005-11-15" />
-			<div className="clear_float" />
+      <GigPlayer
+				src="https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/1992_JazzButcher_WesternFamily_PreMaster_DAT_CBR.mp3"
+				tracks={[
+					{ title: `Tones`, start: startSeconds('0') },
+					{ title: `Girl-Go`, start: startSeconds('0:34') },
+					{ title: `She's On Drugs`, start: startSeconds('06:18') },
+					{ title: `She's A Yo-Yo`, start: startSeconds('10:24') },
+					{ title: `Pineapple Tuesday`, start: startSeconds('15:47') },
+					{ title: `Angels`, start: startSeconds('21:43') },
+					{ title: `Racheland`, start: startSeconds('28:08') },
+					{ title: `Tugboat Captain`, start: startSeconds('35:57') },
+					{ title: `Sister Death`, start: startSeconds('40:14') },
+					{ title: `Somewhere Over The Rainbow`, start: startSeconds('48:25') },
+					{ title: `Still And All`, start: startSeconds('51:33') },
+					{ title: `Everybody's Talkin'`, start: startSeconds('57:49') },
+					{ title: `Southern Mark Smith`, start: startSeconds('01:01:33') },
+					{ title: `Beautiful Snow-White Hair`, start: startSeconds('01:07:05'),
+						annotation: [
+							{
+								start: startSeconds('01:07:23'),
+								comment: `Pat: "88.5. JBC Broadcasting. You wanna get down to Nick's, my son"`,
+							},
+							{
+								start: startSeconds('01:07:23'),
+								comment: `(David Whittemore was broadcasting using a micro FM transmitter into his car radio in order to test the mix)`,
+							},
+						],
+					},
+					{ title: `Falling In Love`, start: startSeconds('01:14:18'),
+						annotation: [
+							{ start: startSeconds('01:14:18'), comment: "This track is not on Western Family" },
+						],
+					},
+					{ title: `Shirley Maclaine`, start: startSeconds('01:18:15') },
+				]}
+				header=<GigPlayerHeader
+					artist="Jazz Butcher"
+					venue='Western Family DAT Pre-Master'
+					datetime='2025-06-12'
+				/>
+				footer=<GigPlayerFooter
+					comment=<>
+					</>
+				/>
+			/>
 		</main>
 	<Footer />
 </>

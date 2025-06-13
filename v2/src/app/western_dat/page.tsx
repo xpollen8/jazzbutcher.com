@@ -13,7 +13,7 @@ const startSeconds = (str = '') => {
 			s = 0, m = 1;
 
 	while (p.length > 0) {
-			s += m * parseInt(p.pop(), 10);
+			s += m * parseInt(p.pop() || '0', 10);
 			m *= 60;
 	}
 
@@ -55,7 +55,14 @@ const WesternTape = () =>
       <GigPlayer
 				src="https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/1992_JazzButcher_WesternFamily_PreMaster_DAT_CBR.mp3"
 				tracks={[
-					{ title: `Tones`, start: startSeconds('0') },
+					{ title: `Tones`, start: startSeconds('0'),
+						annotation: [
+							{
+								start: 0,
+								comment: `20 seconds of 1k Hz test tones used for audio mastering calibration`,
+							}
+						],
+					},
 					{ title: `Girl-Go`, start: startSeconds('0:34') },
 					{ title: `She's On Drugs`, start: startSeconds('06:18') },
 					{ title: `She's A Yo-Yo`, start: startSeconds('10:24') },

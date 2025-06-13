@@ -548,7 +548,7 @@
 #define	albums[13]->href	${jbc_albums}/pygmies.html
 #define	albums[13]->title	Christmas With The Pygmies
 #define	albums[13]->thumb	${jbc_images}/cover_pygmies_front
-#define	albums[13]->images	${jbc_images}/cover_pygmies_back
+#define	albums[13]->images	${jbc_images}/cover_pygmies_back$$${jbc_images}/cover_pygmies_A$$${jbc_images}/cover_pygmies_B;;;;James Duval;;;;2025-06-12
 #define	albums[13]->blurb	
 #define	albums[13]->dtreleased	1985
 #define	albums[13]->notes

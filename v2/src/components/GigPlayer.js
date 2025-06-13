@@ -237,7 +237,9 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				</div>
 				{(p?.annotation?.length) && <ul className="gigplayer_annotation">{p?.annotation?.map(({ start, comment, link }, i) => {
 					return (<li key={i} className="smalltext">
-						<tt className='gigplayer_annotation_text' onClick={() => jumpSeconds(start)}>{secToTime(start)}</tt>
+						<tt className='gigplayer_annotation_text'>
+						{start && <span onClick={() => jumpSeconds(start)}>{secToTime(start)}</span>}
+						</tt>
 						{link ? linkExternal(link, comment) : comment}
 						</li>
 					)

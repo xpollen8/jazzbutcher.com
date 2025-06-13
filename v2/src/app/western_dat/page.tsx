@@ -58,7 +58,6 @@ const WesternTape = () =>
 					{ title: `Tones`, start: startSeconds('0'),
 						annotation: [
 							{
-								start: 0,
 								comment: `20 seconds of 1k Hz test tones used for audio mastering calibration`,
 							}
 						],
@@ -82,14 +81,13 @@ const WesternTape = () =>
 								comment: `Pat: "88.5. JBC Broadcasting. You wanna get down to Nick's, my son"`,
 							},
 							{
-								start: startSeconds('01:07:23'),
 								comment: `(David Whittemore was broadcasting using a micro FM transmitter into his car radio in order to test the mix)`,
 							},
 						],
 					},
 					{ title: `Falling In Love`, start: startSeconds('01:14:18'),
 						annotation: [
-							{ start: startSeconds('01:14:18'), comment: "This track is not on Western Family" },
+							{ comment: "This track is not on Western Family" },
 						],
 					},
 					{ title: `Shirley Maclaine`, start: startSeconds('01:18:15') },

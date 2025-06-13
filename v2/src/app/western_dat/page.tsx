@@ -98,6 +98,10 @@ const WesternTape = () =>
 					artist="Jazz Butcher"
 					venue='Western Family DAT Pre-Master'
 					datetime='2025-06-12'
+					title=''
+					version=''
+					city=''
+					state=''
 				/>
 				footer=<GigPlayerFooter
 					comment=<>

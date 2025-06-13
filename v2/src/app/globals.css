@@ -799,5 +799,13 @@ details > summary::marker, details > summary::-webkit-details-marker {
 }
 
 .gigplayer_annotation {
+	padding: .25em;
+	margin-left: 1.25em;
+	padding-bottom: .25em;
 	background-color: lightyellow;
+	border: 1px solid black;
+}
+
+.gigplayer_annotation_text {
+	padding: .5em;
 }

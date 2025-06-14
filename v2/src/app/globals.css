@@ -792,20 +792,17 @@ details > summary::marker, details > summary::-webkit-details-marker {
 	padding-bottom: .5em;
 	border: 1px solid #cfcfcf;
 	border-radius: .25em;
-	overflow-y: scroll;
 	overflow-x: hidden;
-	background-color: white;
-	max-height:15em;
 }
 
 .gigplayer_annotation {
-	padding: .25em;
+	width: 75%;
 	margin-left: 1.25em;
-	padding-bottom: .25em;
-	background-color: lightyellow;
-	border: 1px solid black;
+	padding: .1em;
+	background-color: #ededed;
+	border: 1px solid #ccc;
 }
 
 .gigplayer_annotation_text {
-	padding: .5em;
+	padding: 1em;
 }

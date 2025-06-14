@@ -236,9 +236,9 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 				{(idx === currentTrackIndex) && <tt className="smalltext pl-3"><b>(-{secToTime(remainingTrackTime)})</b> {info}</tt>}
 				</div>
 				{(p?.annotation?.length) && <ul className="gigplayer_annotation">{p?.annotation?.map(({ start, comment, link }, i) => {
-					return (<li key={i} className="smalltext">
+					return (<li key={i} className="smalltext" onClick={() => start ? jumpSeconds(start) : jumpIdx(idx)}>
 						<tt className='gigplayer_annotation_text'>
-						{start && <span onClick={() => jumpSeconds(start)}>{secToTime(start)}</span>}
+						{start && <span className="gigplayer_annotation_text">{secToTime(start)}</span>}
 						</tt>
 						{link ? linkExternal(link, comment) : comment}
 						</li>

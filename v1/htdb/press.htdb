@@ -923,6 +923,89 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		dt=1983-06,
 		added=2018-04-01)}
 
+#	${addPress(type=preshow;interview,
+# 2025-06-12 - awaiting Jimmy Duval's checking in with Swick for date/publication
+# 1988 Saskatoon
+#Jazz Butcher's following grows
+#
+#“The Jazz Butcher is not a band, it's me. Let's get that straight.
+#It’s like I'm the Jazz, this is my band, It's always been like that.”
+#
+#The Jazz Butcher, aka. Pat Fish, is an idiosyncratic Englishman who,
+#for the past five years, has been releasing delightfully elegant
+#dementia to an ever expanding circle of followers.
+#
+#He makes a rare appearance in Saskatoon on Friday night at Louis’ Pub
+#on campus, along with Montreal's the Gruesomes and Los Angeles’ Downy
+#Mildew, as part of a cross-country tour.
+#
+#The album, Fishcoteque, is his sixth, and with each new release
+#more are discovering the Jazz Butcher. His record company is especially
+#happy, since Western Canada represents a significant share of worldwide
+#sales, a fact Fish doesn't even attempt to analyze.
+#
+#“Nothing has ever been planned. I've got the future planning capacity
+#of a giant panda,” he exclaimed. “I'm baffled and surprised by this,
+#I certainly didn't conceive it.”
+#
+#Growing up in Northhampton in a decidedly non-musical family,
+#Fish admitted if it weren't for music, “I think by now I'd be a bum
+#and the English political climate frowns on bums.
+#
+#“I never planned to do concerts.  I had this idea of releasing oblique
+#little records and let it go at that.”
+#
+#During a swing through Europe, Fish was idling away his time with the
+#band in a Barcelona bar watching European version of MTV.
+#
+#When the images of Madonna and Tiffany flashed across the screen, it
+#dawned on him that though their individual sound is radically different,
+#all three are linked through marketing, “I'm not that fond of marketing.”
+#
+#But to keep his record company happy, he willingly submits to rounds of
+#interviews, even though this day he is almost talked out “Yeah I'm a bit
+#throaty, and we've got a recording session tonight on CBC.”
+#
+#Fish is amused at recent reviews of the album which noted a certain
+#maturity from his previous works, “It was made in a thoroughly immature
+#fashion. We spent more time in the pub than the recording studio.”
+#
+#Nevertheless. the album has been greeted with gushing reviews and sales
+#throughout the west have been brisk. Not brisk enough to warrant inclusion on
+#Top 40 charts, but the college market has taken the Jaze Butcher to heart.
+#CRAIG
+
+
+#	${addPress(type=preshow;interview,
+# 2025-06-12 - awaiting Jimmy Duval's checking in with Swick for date/publication
+#PAT FISH, a.k.a. the Jazz Butcher, was sequestered in a Vancouver hotel, “yakking my head off” in preparation
+#for his band’s upcoming cross-Canada tour.
+#
+#‘Again, Saskatoon is on the band’s itinerary; he plays tonight at Louis’ pub on campus.
+#The show will be his third in the city in the past three years. This tour is in support
+#of his latest disc, Cult of the Basement, ‘That disc was composed and produced shortly
+#after the last North ‘American tour, Fish said.
+#
+#“Not a lot of work went into it. We were (old to come up with a record, we were stuck
+#in the studio and went through real frantic writing," he recalls “But it kicked together
+#with speed and alacrity.”
+#
+#Fish admits recording the latest disc in a pressure cooker situation and having it
+#come out as well as it did could “make us cocky, if we know we can do it at the drop of a hat.”
+#
+#His imagination worked overtime, wringing out weird compositions like ‘My Zeppelin,
+#a mutant country-western styled ode to owning your own dirigible.  ‘That fits neatly
+#alongside other bizarre tunes like Mr. Odd or Pineapple Tuesday. Clearly, Fish has
+#carved out a niche for the obscure and freakish which has endeared him to his legions
+#of fans. Each of his past performances in Saskatoon has drawn substantial crowds adding
+#to his reputation as a cult favorite.
+#
+#Does he ever see himself as a mainstream performer?
+#
+#“I really don’t know. It’s flattering to know we have a core of fans. Our stuff
+#is devised for anyone to use," he maintains, “If we ever got into the Top 40, it
+#certainly would add to our pocket books.”
+
 	${addPress(type=preshow;interview,
 		url=${jbc_press}/20170406_lastdaydeaf.html,
 		publication=Last Day Deaf,
@@ -1939,7 +2022,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/milwaukee89.html,
 		publication=Kelly & Whittemore,
 		thumb=${jbc_images}/19891119/19891119_del_patsat;;David Whittemore,
-		images=${jbc_images}/19821101/19821101_poster,
+		images=${jbc_images}/19891119/19891119_BK_1_scaled$$${jbc_images}/19891119/19891119_BK_2_scaled;;David Whittemore;;;;;;Brian Kelly and Pat before the show$$${jbc_images}/19891119/19891119_BK_3_scaled$$${jbc_images}/19891119/19891119_BK_4_scaled;;David Whittemore;;;;;;Brian Kelly interviewing Pat backstage$$${jbc_images}/19821101/19821101_poster;;;;;;;;Article about gig Pat mentions$$,
 		title=The Milwaukee Interview,
 		credit=David Whittemore & Brian Kelly,
 		location=Milwaukee\, WI\, USA,

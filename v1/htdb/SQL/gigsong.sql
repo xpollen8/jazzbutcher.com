@@ -3221,6 +3221,11 @@ INSERT INTO `gigsong` VALUES (NULL,'2003-05-04 00:00:00','set',NULL,1,6,'Hippy S
 INSERT INTO `gigsong` VALUES (NULL,'2003-05-04 00:00:00','set',NULL,1,7,'Dark Agenda',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2003-05-04 00:00:00','set',NULL,1,8,'Quality People',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2003-05-04 00:00:00','set',NULL,1,9,'Buffalo Sniper',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'2003-06-24 00:00:00','set',NULL,1,5,'Play It All Night Long','Warren Zevon',NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20030624/20030624_JazzButcher_MattSewell_05_Play_It_All_Night_Long.mp3','Matt Sewell',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2003-06-24 00:00:00','set',NULL,1,6,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20030624/20030624_JazzButcher_MattSewell_06_Take_The_Skinheads_Bowling.mp3','Matt Sewell',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2003-06-24 00:00:00','set',NULL,1,14,'Moscow Drug Club','B. B. Gabor',NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20030624/20030624_JazzButcher_MattSewell_14_Moscow_Drug_Club.mp3','Matt Sewell',NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'2003-07-27 20:00:00','set',NULL,1,1,'Critters',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2003-07-27 20:00:00','set',NULL,1,2,'Secret Government',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2003-07-27 20:00:00','set',NULL,1,3,'Every Saturday Night',NULL,NULL,NULL,NULL,NULL,NULL,NULL);

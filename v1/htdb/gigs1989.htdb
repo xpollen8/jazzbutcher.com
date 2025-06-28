@@ -486,7 +486,11 @@
 			<a href="${jbc_press}/milwaukee89.html">Here's a transcription</a> of the interview conducted that night.
 		)},
 		photosets= /images/19891119/19891119_del_patsat.jpg;;${literalizeCommas(${pat})}$$
-			David Whittemore
+			/images/19891119/19891119_BK_1_scaled.jpg;;Brian Kelly and Pat before the show$$
+			/images/19891119/19891119_BK_2_scaled.jpg;;Brian Kelly and Pat before the show$$
+			/images/19891119/19891119_BK_3_scaled.jpg;;Brian Kelly interviewing Pat backstage$$
+			/images/19891119/19891119_BK_4_scaled.jpg;;Brian Kelly interviewing Pat backstage$$
+			David Whittemore;;;;2025-06-17
 	)}
 
 #define	Nov19_2000.html()

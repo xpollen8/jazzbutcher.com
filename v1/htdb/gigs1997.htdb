@@ -167,13 +167,15 @@
 		pat=${literalizeCommas(
 		)}
 		,
-		photosets= /images/19970922/22Sep97_1.jpg$$
-			/images/19970922/22Sep97_2.jpg$$
-			/images/19970922/22Sep97_3.jpg$$
-			/images/19970922/22Sep97_4.jpg$$
-			/images/19970922/22Sep97_5.jpg$$
-			/images/19970922/22Sep97_6.jpg$$
-		David Whittemore
+		photosets= /images/19970922/19970922_1.jpg$$
+			/images/19970922/19970922_2.jpg$$
+			/images/19970922/19970922_3.jpg$$
+			/images/19970922/19970922_4.jpg$$
+			/images/19970922/19970922_5.jpg$$
+			/images/19970922/19970922_6.jpg$$
+			/images/19970922/19970922_7.jpg$$
+			/images/19970922/19970922_8.jpg$$
+		David Whittemore;;;;2025-06-14
 		---
 			/images/19970922/22Sep97_marquee.jpg$$
 		Murray Digby

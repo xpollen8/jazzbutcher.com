@@ -645,8 +645,36 @@
 			is taken too.  he has to borrow angelos for the rest of the tour.
 		)}$$
 			David Whittemore
+			---
+		${literalizeCommas(
+			audience 1st gen
+			<p />
+			Originally recorded with a Aiwa JS-800 with a Sony 909 (or maybe 929) mic.
+			I owned both and could never tell the difference so I alternated which one I used.
+			<p />
+			This is from a listening tape I made and the actual master seems to be long gone.
+			<p />
+			TDK SA-90 > wavelab 6 > TLH > Make torrent 2 > dime
+			(SBE's corrected)
+			<p />
+			Just a quick note. I didn't own the best equipment back then but this club had a blown PA
+			to which I happened to be standing near. Some of the distortion is their crappy sound system.
+			This is definitely nowhere near one of my better recordings.
+			<p />
+			So, at the end of the show during the encore for 'Caroline Wheeler's' & 'Sweet Jane", all of the 
+			guitarists in the Blue Aeroplanes jumped up on stage to join in. The singer from the the Blue Aeroplanes
+			also joined in plus that guy who used to just dance around on stage with them. Some of the guitars were 
+			not even plugged in but they were playing. I can't remember how many guitarists were up on stage but it 
+			was madness. So many people on this little stage all performing. btw- The Blue Aeroplanes were the opening 
+			act.
+		)}$$
+			another madelf master;;;;2025-06-28
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
+		tickets=
+			/images/19901113/19901113_ticket.jpg$$
+			another madelf master;;;;2025-06-28
+		,
 
 	)}
 

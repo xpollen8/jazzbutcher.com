@@ -49,6 +49,7 @@ const HomeReleases = () =>
 		<ReleaseBlurb lookup='adventurers' key={6} />
 </>
 
+/* OFF - due to pounding AWS S3
 const Concert = () =>
 	<div className="listItem">
 	<b>A new thing!</b> <span className="smalltext">2025-05-03</span>
@@ -101,6 +102,7 @@ const Concert = () =>
 		/>
 		/>
 	</div>
+*/
 
 const Home = (): React.ReactNode =>
 <>
@@ -108,7 +110,6 @@ const Home = (): React.ReactNode =>
 	<main>
 		<div className="flex flex-wrap justify-center gap-1">
 			<div className="grow max-w-lg">
-				<Concert />
 				<div className="border p-3 bg-slate-100 drop-shadow-sm mb-3">
 					<Link href="/memoriam">
 						<Memorial home={true} />

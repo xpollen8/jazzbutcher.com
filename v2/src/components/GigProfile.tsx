@@ -157,9 +157,10 @@ const GigPlayed = (data: any) => {
 	const playlists: any[] = [];
 	// "Entire Shows"
 	data?.filter((d:any) => d?.mediaurl?.includes('.mp3') && d.ordinal === 0)?.forEach((d:any) => {
-		const { setnum, ordinal, song, comment, mediaurl, mediaurlcredit } = d;
+		const { type, setnum, ordinal, song, comment, mediaurl, mediaurlcredit } = d;
 		// add if in playlist format (start is set)
-		const inSet = data?.filter((d:any) => d.setnum === setnum && d.ordinal !== 0 && d.start);
+		const inSet = data?.filter((d:any) => d.start !== null);
+		console.log({ data, inSet });
 		if (inSet?.length) {
 			playlists.push({
 				src: mediaurl,

@@ -160,7 +160,6 @@ const GigPlayed = (data: any) => {
 		const { type, setnum, ordinal, song, comment, mediaurl, mediaurlcredit } = d;
 		// add if in playlist format (start is set)
 		const inSet = data?.filter((d:any) => d.start !== null);
-		console.log({ data, inSet });
 		if (inSet?.length) {
 			playlists.push({
 				src: mediaurl,

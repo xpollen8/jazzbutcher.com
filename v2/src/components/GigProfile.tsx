@@ -141,8 +141,11 @@ const GigPlay = ({ data }: any) => {
 
 const parseAnnotation = (a:any = '') => {
 	if (typeof(a) === 'string') {
-		const [ start, comment, link ] = a?.split(';;');
-		return [ { start: startSeconds(start), comment, link } ];
+		const lines = a?.split('$$');
+		return lines?.map(l => {
+			const [ start, comment, link ] = l?.split(';;');
+			return (start && comment) ? { start: startSeconds(start), comment, link } : null;
+		})?.filter(x => x);
 	}
 }
 

@@ -1380,27 +1380,32 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',NULL,1,6,'Bad Dre
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',NULL,1,7,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',NULL,1,8,'Chickentown',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-08 00:00:00','set',NULL,1,9,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore',NULL,1,1,'Biggest, Loudest, Hairiest Group Of All','John Cale',NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/biggest.mp3','David Whittemore','http://davidwhittemore.com',NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore',NULL,1,2,'Moscow Drug Club','B. B. Gabor',NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/moscow.mp3','David Whittemore','http://davidwhittemore.com',NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore',NULL,1,3,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore',NULL,2,1,'Partytime',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/partytime.mp3','David Whittemore','http://davidwhittemore.com',NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore',NULL,2,2,'King Of Joy','Bill Drummond',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore',NULL,2,3,'Part-Time Punks','TV Personalities',NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/19891117_JazzButcher_LoungeAx_PartTimePunks.mp3','David Whittemore','http://davidwhittemore.com',NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,1,'New Invention',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,10,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,11,'Hysteria',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/hysteria.mp3','David Whittemore','http://davidwhittemore.com',NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,12,'Bicycle Kid',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,13,'Burglar Of Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,14,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,15,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,2,'Chickentown',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,3,'Big Saturday',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/saturday.mp3','David Whittemore','http://davidwhittemore.com',NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,4,'Angels',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,5,'Bad Dream Lover',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,6,'The Best Way',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,7,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,8,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,9,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,'Handheld walkman audience recording of a dynamite band',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19891117/19891117_JazzButcher_Chicago_Gen0_EQ.mp3','David Whittemore','https://davidwhittemore.com',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','0',1,1,'Bach Intro',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','01:29',1,2,'New Invention',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','06:05',1,3,'Chickentown',NULL,NULL,NULL,NULL,NULL,NULL,'05:46;;"Why doesn\'t Al wanto to go to bed with Peggy?" Pat begins his ongoing riff on the Chicago-based TV show "Married with Children"');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','09:07',1,4,'Big Saturday',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/saturday.mp3','David Whittemore','http://davidwhittemore.com',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','12:35',1,5,'Angels',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','17:56',1,6,'Bad Dream Lover',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','21:37',1,7,'The Best Way',NULL,NULL,NULL,NULL,NULL,NULL,'26:41;;"Quality in Sound" from backing tape shows up in Black Eg material');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','27:04',1,8,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL,"30:27;;Pat wonders about Peggy\'s spending habits");
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','30:53',1,9,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','35:26',1,10,'The Jazz Butcher Meets the Prime Minister',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','39:00',1,11,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL,'38:15;;"Love Kittens" fake intro');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','43:24',1,12,'Hysteria',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/hysteria.mp3','David Whittemore','http://davidwhittemore.com','42:08;;"Which brings us to the subject of Kelly.."$$42:42;;"You guys are about 8 years too late for most of these songs" - Pat trying to ease the shouty fans into the new world$$');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','48:06',1,13,'Bicycle Kid',NULL,NULL,NULL,NULL,NULL,NULL,'47:04;;"It\'s nice that you know all these songs, but you only have to let me know once"$$47:19;;"You want requests? Go and see a fucking jukebox"');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','52:16',1,14,'Burglar Of Love',NULL,NULL,NULL,NULL,NULL,NULL,'51:56;;"As for you, jack, I\'ll see you later" - Pat\'s had enough of a mouthy punter');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','55:54',1,15,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL,'55:47;;"I don\'t know what that guy who keeps shouting at me does, but I bet he doesn\'t have to work in the dark"');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','set','59:15',1,16,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore','01:05:20',1,1,'Biggest, Loudest, Hairiest Group Of All','John Cale',NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/biggest.mp3','David Whittemore','http://davidwhittemore.com',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore','01:08:10',1,2,'Moscow Drug Club','B. B. Gabor',NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/moscow.mp3','David Whittemore','http://davidwhittemore.com','01:07:37;;"For your parents, Al and Peggy. Kelly, please, honey. I\'m on my knees Kelly"');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore','01:12:06',1,3,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL,'01:11:43;;If Al Bundy\'s so poor, how come his house about the size of this club?"');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore','01:15:46',2,1,'Partytime',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/partytime.mp3','David Whittemore','http://davidwhittemore.com','01:15:30;;"There\'s always time for a sit-down, a drink, and a shag"$$01:17:24;;"Paranoia, great beauty queen..."');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore','01:20:12',2,2,'King Of Joy','Bill Drummond',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-17 00:00:00','encore','01:24:00',2,3,'Part-Time Punks','TV Personalities',NULL,NULL,'https://v1.jazzbutcher.com/audio/1989Nov17/19891117_JazzButcher_LoungeAx_PartTimePunks.mp3','David Whittemore','http://davidwhittemore.com','01:23:18;;"Freebird? How did you know?"');
+
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','encore',NULL,1,1,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','encore',NULL,1,2,'Moscow Drug Club','B. B. Gabor',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/19891118/19891118_JazzButcher_Madison_EQd.mp3','David Whittemore','http://davidwhittemore.com',NULL);
@@ -4762,7 +4767,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,6,'The Bal
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,7,'O, Wot a Dream','Kevin Ayers',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,8,'Bob Dylan Blues','Syd Barrett',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,9,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,0,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210228/20210228_PatFish_FishyMansions.mp4',NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210228/20210228_PatFish_FishyMansions.mp4',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,1,'Domestic Animal',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,10,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,11,'Niagara',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -4880,7 +4885,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00','set',NULL,2,8,'Domesti
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00','set',NULL,2,9,'Another World','${rolo}',NULL,'${rolo} vocals and guitar, ${morgan} drums, ${simon_mawby} bass, David Musker keyboards, ${john_silver} bass','https://www.youtube.com/embed/o-IAnHjDX6Q','Jane B','https://www.youtube.com/user/Caryne99',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2023-04-02 19:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20230402/20230402_Dhiren_TributeShow.mp4','Dhiren',NULL,NULL);
 
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set',NULL,0,0,'The Entire Performance',NULL,'audience master - aiwa jh800 w/ sony 909 mic',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19891105/19891105_JazzButcher_NYC_anothermadelfmaster.mp3','another madelf master',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,'audience master - aiwa jh800 w/ sony 909 mic',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19891105/19891105_JazzButcher_NYC_anothermadelfmaster.mp3','another madelf master',NULL,NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','0', 1,1, 'Bach Intro', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','01:24', 1,2, 'Big Saturday', NULL,NULL,NULL,NULL,NULL,NULL,NULL);

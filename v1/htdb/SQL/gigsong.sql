@@ -972,7 +972,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',NULL,1,6,'Souther
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',NULL,1,7,'Susie',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',NULL,1,8,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 00:00:00','set',NULL,1,9,'Out Of Touch',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 12:00:00','set',NULL,1,0,'The Interview',NULL,'Lightly edited interview captured at 1988-03-10 Rennes France after show. Broadcast date unknown. Pat Fish\'s personal cassette copy',NULL,'https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19880310_interview_rennes_france_RadioFMR_borderline_FMAC5.mp3','Lucien Borderline',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-03-10 12:00:00','set',NULL,1,0,'The Interview',NULL,'Lightly edited interview captured at 1988-03-10 Rennes France after show. Broadcast date unknown. Pat Fish\'s personal cassette copy',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19880310_interview_rennes_france_RadioFMR_borderline_FMAC5.mp3','Lucien Borderline',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',NULL,1,1,'Grey Flannelette',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',NULL,1,10,'Sex Engine',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-03-14 00:00:00','set',NULL,1,11,'Spooky','Hirsch, Shapiro, Middlebrooks',NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1589,7 +1589,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-11-11 00:00:00','set',NULL,1,7,'Mr. Odd
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-11 00:00:00','set',NULL,1,8,'Line Of Death',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-11 00:00:00','set',NULL,1,9,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-13 12:00:00','set',NULL,1,1,'The Interview',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1990-11-13 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19901113/19901113_JazzButcher_NYV_Marquee_anothermadelfmaster.mp3','another madelf master',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-11-13 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19901113/19901113_JazzButcher_NYC_Marquee_anothermadelfmaster.mp3','another madelf master',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-13 00:00:00','set','0',1,1,"Conspiracy",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-13 00:00:00','set','04:42',1,2,"Bigfoot Motel",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-13 00:00:00','set','08:49',1,3,"Line Of Death",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1644,7 +1644,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-11-16 00:00:00','set',NULL,1,6,'Girl-Go
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-16 00:00:00','set',NULL,1,7,'She\'s On Drugs',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-16 00:00:00','set',NULL,1,8,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-16 00:00:00','set',NULL,1,9,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1990-11-16 00:00:00','warmup',NULL,1,1,'My Zeppelin',NULL,NULL,NULL,'https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19901116/19901116_JazzButcher_Atlanta_MyZeppelin.mp3','David Whittemore','https://davidwhittemore.com',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1990-11-16 00:00:00','warmup',NULL,1,1,'My Zeppelin',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19901116/19901116_JazzButcher_Atlanta_MyZeppelin.mp3','David Whittemore','https://davidwhittemore.com',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-16 00:00:00','warmup',NULL,1,2,'Marnie',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-16 00:00:00','warmup',NULL,1,3,'Pineapple Tuesday',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-17 00:00:00','set',NULL,1,1,'Conspiracy',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -4601,7 +4601,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2019-04-06 22:30:00','set',NULL,1,7,'Last of
 INSERT INTO `gigsong` VALUES (NULL,'2019-04-06 22:30:00','set',NULL,1,8,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-04-06 22:30:00','set',NULL,1,9,'Shame About You',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-04-13 00:00:00','set',NULL,1,1,'Big Saturday',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20190413/20190413_JazzButcher_JeanLazure.mp4','Jean Lazure',NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2019-06-22 00:00:00','set',NULL,1,1,'Roadrunner','Jonathan Richman',NULL,'Jon Mattock - drums, Tim Harries - bass, Mark Refoy - guitar, Joe Woolley - guitar, Andrea Parra - tambourine, Pat Fish - singing and guitar, Will Carruthers - finger-pointing','https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/video/gigs/20190622/20190622_fundraiser.mp4','Pat Fish','https://www.youtube.com/channel/UC6DWOlzXdRhQscPoNNhFkYg',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2019-06-22 00:00:00','set',NULL,1,1,'Roadrunner','Jonathan Richman',NULL,'Jon Mattock - drums, Tim Harries - bass, Mark Refoy - guitar, Joe Woolley - guitar, Andrea Parra - tambourine, Pat Fish - singing and guitar, Will Carruthers - finger-pointing','https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20190622/20190622_fundraiser.mp4','Pat Fish','https://www.youtube.com/channel/UC6DWOlzXdRhQscPoNNhFkYg',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-08-03 21:00:00','set',NULL,1,1,'Little Sister','Lou Reed',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-08-03 21:00:00','set',NULL,1,2,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-08-03 21:00:00','set',NULL,1,3,'Shame About You',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -4879,6 +4879,29 @@ INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00','set',NULL,2,7,'Sweet J
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00','set',NULL,2,8,'Domestic Animal',NULL,NULL,'Bid vocals, ${morgan} drums, ${simon_mawby} bass, David Musker keyboards, ${john_silver} bass','https://www.youtube.com/embed/m9osNtXDF74','Jane B','https://www.youtube.com/user/Caryne99',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00','set',NULL,2,9,'Another World','${rolo}',NULL,'${rolo} vocals and guitar, ${morgan} drums, ${simon_mawby} bass, David Musker keyboards, ${john_silver} bass','https://www.youtube.com/embed/o-IAnHjDX6Q','Jane B','https://www.youtube.com/user/Caryne99',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2023-04-02 19:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20230402/20230402_Dhiren_TributeShow.mp4','Dhiren',NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set',NULL,0,0,'The Entire Performance',NULL,'audience master - aiwa jh800 w/ sony 909 mic',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19891105/19891105_JazzButcher_NYC_anothermadelfmaster.mp3','another madelf master',NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','0', 1,1, 'Bach Intro', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','01:24', 1,2, 'Big Saturday', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','04:27', 1,3, 'New Invention', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','09:41', 1,4, 'Bicycle Kid', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','13:17', 1,5, 'Looking For Lot 49', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','17:45', 1,6, 'Burgler Of Love', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','22:05', 1,7, 'Angels', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','28:05', 1,8, 'Bad Dream Lover', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','32:01', 1,9, 'Southern Mark Smith', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','36:13', 1,10, 'Chicken', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','42:06', 1,11, 'Chickentown', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','45:35', 1,12, 'The Jazz Butcher Meets the Prime Minister', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','48:13', 1,13, 'Mr. Odd', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set','52:13', 1,14, 'The Jazz Butcher Meets Count Dracula', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','encore','58:21', 1,1, 'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,'01:00:00;;Spaaaaaaaacccccccccee Eccchhhooo solo');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','encore','01:02:52', 1,2, 'Moscow Drug Club', 'B. B. Gabor',NULL,NULL,NULL,NULL,NULL,'01:01:52;;Explanation');
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','encore','01:06:41', 1,3, 'The Devil is My Friend', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','encore','01:10:42', 1,4, 'King Of Joy', 'Bill Drummond',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','encore','01:14:28', 2,1, 'Mind Like A Playgroup', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
 /*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
 UNLOCK TABLES;
 

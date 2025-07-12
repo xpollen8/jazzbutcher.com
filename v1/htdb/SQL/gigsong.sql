@@ -4907,6 +4907,28 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','encore','01:06:41', 1,
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','encore','01:10:42', 1,4, 'King Of Joy', 'Bill Drummond',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','encore','01:14:28', 2,1, 'Mind Like A Playgroup', NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',NULL, 1, 0, "The Entire Performance", NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20061001/20061001_JazzButcher_Hamburg_marmot.mp3','Marmot',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"00:00", 1, 1, "Beautiful Mind", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"04:50", 1, 2, "Quality People", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"08:08", 1, 3, "The Ugliest Song In The World", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"11:40", 1, 4, "Mercy", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"15:35", 1, 5, "Jazz Butcher Theme", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"19:53", 1, 6, "Shame About You", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"24:23", 1, 7, "Stop This City", "David J.",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"29:00", 1, 8, "Ghosts", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"35:26", 1, 9, "Regrets Of A Spaceman", 'Charlie Barnard',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"41:22", 1, 10, "Land", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"47:54", 1, 11, "Buffalo Sniper", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"55:47", 1, 12, "Swell", NULL,"w/Joe Woolley",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"59:20", 1, 13, "Chickentown", NULL,"w/Joe Woolley",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"01:03:53", 1, 14, "Sister Death", NULL,"w/Joe Woolley",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"01:09:05", 1, 15, "Whaddya?", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"01:14:19", 1, 16, "Southern Mark Smith", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"01:20:33", 1, 17, "Caroline Wheeler's Birthday Present", NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"01:28:34", 1, 18, "Soul Happy Hour", NULL,"w/Joe Woolley band",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"01:31:38", 1, 19, "Take The Skinheads Bowling", "Camper Van Beethoven","w/Joe Woolley",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"01:36:58", 1, 20, "Moon River/Tugboat Captain", 'Henry Mancini/Dean Wareham',NULL,NULL,NULL,NULL,NULL,NULL);
+
 /*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
 UNLOCK TABLES;
 

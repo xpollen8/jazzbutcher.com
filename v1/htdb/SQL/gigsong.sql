@@ -4933,6 +4933,8 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"22:03",1,8,'Part
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"22:21",1,9,'Little Jake Music',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"23:00",1,10,'Rain',NULL,'instrumental',NULL,NULL,NULL,NULL,'25:50;;piano noodlings');
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"26:25",1,11,'Dehydration',NULL,NULL,NULL,NULL,NULL,NULL,'27:40;;piano noodlings');
+
+INSERT INTO `gigsong` VALUES (NULL,'1986-03-04 23:00:00','set',NULL,1,1,'The Interview',NULL,'After-show interview partially in French',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19860304_JazzButcher_Besancon_Interview.mp3',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
 UNLOCK TABLES;
 

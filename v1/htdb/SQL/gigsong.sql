@@ -382,6 +382,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-11-20 00:00:00','set',NULL,1,8,'Rain',N
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-20 00:00:00','set',NULL,1,9,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-11-28 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://www.youtube.com/embed/fNm2sNDmwuc','Gazely Gaze','https://www.youtube.com/channel/UCnKqqqJcsl-kb_caJvrBWrQ',NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-02-14 00:00:00','set',NULL,1,1,'Hard',NULL,NULL,NULL,'https://www.youtube.com/embed/UOdLYoPOAkc',NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-02-27 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19860227/19860227_JazzButcher_Nantes.mp3',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-02-27 00:00:00','set',NULL,1,1,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-02-27 00:00:00','set',NULL,1,10,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-02-27 00:00:00','set',NULL,1,11,'Death Dentist',NULL,NULL,NULL,NULL,NULL,NULL,NULL);

@@ -398,7 +398,11 @@
 		)},
 		notes=${literalizeCommas(
 		)},
-		photosets=/images/19990909/19990909_group.jpg;;${literalizeCommas(Pat, Kevin, David, Max, Owen, Brian Kelly)}$$,
+		photosets=
+			/images/19990909/19990909_group.jpg;;${literalizeCommas(Pat, Kevin, David, Max, Owen, Brian Kelly)}$$
+			---
+			/images/19990909/19990909_Notebook_backstage.jpg;;${literalizeCommas(Page from Pat's 1999 Notebook featuring Our Man Brian Kelly)}$$
+			David Whittemore;;;;2025-07-14,
 		pat=${literalizeCommas(
 			The presence of David J and Kevin Haskins (aka The Bowerhouse Brothers) 
 			leant something of a horror rock element to tonight's set.

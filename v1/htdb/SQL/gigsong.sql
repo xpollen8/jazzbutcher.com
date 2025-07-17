@@ -1513,14 +1513,6 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',NULL,1,6,'Big Sat
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',NULL,1,7,'Angels',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',NULL,1,8,'Bad Dream Lover',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-12-10 00:00:00','set',NULL,1,9,'The Best Way',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',NULL,1,1,'After Hours','Velvet Underground',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',NULL,1,2,'Christmas With The Pygmies',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',NULL,1,3,'Pale Blue Eyes','Velvet Underground',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',NULL,1,4,'May I','Kevin Ayers',NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',NULL,1,5,'Careful What You Wish For/Human Jungle/Get It Wrong',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',NULL,1,6,'Little Jake Music',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',NULL,1,7,'Rain',NULL,'instrumental',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',NULL,1,8,'Dehydration',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-02-26 00:00:00','set',NULL,1,1,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-02-26 00:00:00','set',NULL,1,2,'Love Kittens',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-02-26 00:00:00','set',NULL,1,3,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -4929,6 +4921,20 @@ INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"01:28:34", 1, 18, "Soul H
 INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"01:31:38", 1, 19, "Take The Skinheads Bowling", "Camper Van Beethoven","w/Joe Woolley",NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2006-10-01','set',"01:36:58", 1, 20, "Moon River/Tugboat Captain", 'Henry Mancini/Dean Wareham',NULL,NULL,NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',NULL,1,0,"The Entire Performance",NULL,"Spontaneous end-of-tour hotel acoustic tunes. Portable cassette recorder.",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19891220/19891220_JazzButcher_DaysInnLobby_Gen0_CASSETTE.mp3','David Whittemore','https://davidwhittemore.com',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"03:10",1,1,'After Hours','Velvet Underground',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"04:51",1,2,'Christmas With The Pygmies',NULL,NULL,NULL,NULL,NULL,NULL,'06:30;;"Stairway to Heaven" intro');
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"06:56",1,3,'Pale Blue Eyes','Velvet Underground',NULL,NULL,NULL,NULL,NULL,'12:49;;Tuner comment$$13:52;;"Mr. Odd" intro$$');
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"14:28",1,4,'May I','Kevin Ayers',NULL,NULL,NULL,NULL,NULL,'15:05;;"Tricky bit"$$15:40;;"Do you know what that means?"$$16:49;;"Sick in the dick"');
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"17:00",1,5,'Careful What You Wish For',"Downey Mildew","excerpt",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"18:05",1,6,'Human Jungle',NULL,"excerpt",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"18:57",1,7,'Get It Wrong',NULL,"excerpt",NULL,NULL,NULL,NULL,'20:03;;"Ludicrious in 2 consecutive songs..$$21:24;;"Where\'d you get it?"$$21:54;;"Party after the party"');
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"22:03",1,8,'Part-Time Punks','TV Personalities',"excerpt",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"22:21",1,9,'Little Jake Music',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"23:00",1,10,'Rain',NULL,'instrumental',NULL,NULL,NULL,NULL,'25:50;;piano noodlings');
+INSERT INTO `gigsong` VALUES (NULL,'1989-12-20 00:00:00','set',"26:25",1,11,'Dehydration',NULL,NULL,NULL,NULL,NULL,NULL,'27:40;;piano noodlings');
+
+INSERT INTO `gigsong` VALUES (NULL,'1986-03-04 23:00:00','set',NULL,1,1,'The Interview',NULL,'After-show interview partially in French',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19860304_JazzButcher_Besancon_Interview.mp3',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
 UNLOCK TABLES;
 

@@ -41,7 +41,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,2,1,'Zombie 
 INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,2,2,'Love Kittens',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,2,3,'Roadrunner',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
-INSERT INTO `gigsong` VALUES (NULL,'1983-08-21 00:00:00','set',NULL,1,0,"Pat's cassette",NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19830321/19830321_JazzButcher_Derngate_FMAC20.mp3',"Pat's FMAC20 tape",NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-08-21 00:00:00','set',NULL,1,0,"Pat's cassette",NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19830821/19830821_JazzButcher_Derngate_FMAC20.mp3',"Pat's FMAC20 tape",NULL,NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'1983-04-19 20:30:00','set',NULL,1,1,'Summertime','George Gershwin',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-04-19 20:30:00','set',NULL,1,10,'Jazz Butcher Theme',NULL,NULL,NULL,NULL,NULL,NULL,NULL);

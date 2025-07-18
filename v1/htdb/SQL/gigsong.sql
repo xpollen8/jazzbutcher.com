@@ -33,12 +33,16 @@ CREATE TABLE `gigsong` (
 
 LOCK TABLES `gigsong` WRITE;
 /*!40000 ALTER TABLE `gigsong` DISABLE KEYS */;
-INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,1,0,'The Entire Show',NULL,'excerpts',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19821218/19821218_barker.mp3','David E. Barker',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,1,0,"Pat's cassette",NULL,"2 songs",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19821218/19821218_JazzButcher_BlackLion_FMAC20.mp3',"Pat's FMAC20 tape",NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,1,1,'Christmas With The Pygmies',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,1,2,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,1,3,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,1,4,'Love Kittens',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,1,5,'Roadrunner',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,2,0,"Dave Barker's CD",NULL,'3 songs',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19821218/19821218_barker.mp3','David E. Barker',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,2,1,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,2,2,'Love Kittens',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,2,3,'Roadrunner',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1983-08-21 00:00:00','set',NULL,1,0,"Pat's cassette",NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19830321/19830321_JazzButcher_Derngate_FMAC20.mp3',"Pat's FMAC20 tape",NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1983-04-19 20:30:00','set',NULL,1,1,'Summertime','George Gershwin',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-04-19 20:30:00','set',NULL,1,10,'Jazz Butcher Theme',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-04-19 20:30:00','set',NULL,1,2,'Love Kittens',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -49,12 +53,21 @@ INSERT INTO `gigsong` VALUES (NULL,'1983-04-19 20:30:00','set',NULL,1,6,'Chinato
 INSERT INTO `gigsong` VALUES (NULL,'1983-04-19 20:30:00','set',NULL,1,7,'Christmas With The Pygmies',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-04-19 20:30:00','set',NULL,1,8,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-04-19 20:30:00','set',NULL,1,9,'Bohemian',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-06-25 00:00:00','set',NULL,1,0,"Pat's cassette",NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19830625/19830625_JazzButcher_Merton_FMAC20.mp3',"Pat's FMAC20 tape",NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-06-25 00:00:00','set',NULL,1,1,'The Intro & The Outre',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-06-25 00:00:00','set',NULL,1,2,'Love Kittens',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-06-25 00:00:00','set',NULL,1,3,'My Favourite Things',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-06-25 00:00:00','set',NULL,1,4,'Chinatown',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-06-25 00:00:00','set',NULL,1,5,'Jazz Butcher Theme',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-06-25 00:00:00','set',NULL,1,6,'Roadrunner','Jonathan Richman',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-07-25 00:00:00','set',NULL,1,0,"Pat's cassette",NULL,"Practice for that night's gig",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19830725/19830725_JazzButcher_Practice_FMAC20.mp3',"Pat's FMAC20 tape",NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-07-25 00:00:00','set',NULL,1,1,"Zombie Love",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-07-25 00:00:00','set',NULL,1,2,"I Need Meat",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-07-25 00:00:00','set',NULL,1,3,"Chinatown",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-07-25 00:00:00','set',NULL,1,4,"Jazz Butcher Theme",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-07-25 00:00:00','set',NULL,1,5,"Southern Mark Smith",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-07-25 00:00:00','set',NULL,1,6,"Mongoloid","DEVO","munged",NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1983-08-21 00:00:00','set',NULL,1,1,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-08-21 00:00:00','set',NULL,1,2,'Love Kittens',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-08-21 00:00:00','set',NULL,1,3,'I Need Meat',NULL,NULL,NULL,NULL,NULL,NULL,NULL);

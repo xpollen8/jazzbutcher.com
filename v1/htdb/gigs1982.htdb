@@ -184,6 +184,10 @@
 		photosets=
 		   https://s3.amazonaws.com/assets.jazzbutcher.com/images/19821218/19821218_barker.jpg$$
 		   David E. Barker;;https://soundcloud.com/user-46834996/the-jazz-butcher-his-big-soppy-pussycats-zombie-love-love-kittens-roadrunner/s-VbAeD7eLGQi;;2023-04-14
+		   ---
+		   /images/FM/FMAC20_cover.jpg$$
+		   /images/FM/FMAC20_songs.jpg$$
+		   Fishy Mansions;;;;2025-07-17
 	)}
 
 #define	page_requested	${${page}()}

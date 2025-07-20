@@ -2090,6 +2090,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1992-06-01 00:00:00','set',NULL,1,6,'Angels'
 INSERT INTO `gigsong` VALUES (NULL,'1992-06-01 00:00:00','set',NULL,1,7,'Susie',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-06-01 00:00:00','set',NULL,1,8,'She\'s On Drugs',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-06-01 00:00:00','set',NULL,1,9,'Pineapple Tuesday',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1992-06-05 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,'soundboard',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19920605/19920605_JazzButcher_LosAngeles_Gen0_Flat.mp3','James Duval',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-06-05 00:00:00','encore',NULL,1,1,'Over The Rainbow','Arlen/Hamburg',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-06-05 00:00:00','encore',NULL,1,2,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1992-06-05 00:00:00','encore',NULL,1,3,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -2547,6 +2548,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1998-04-18 00:00:00','set',NULL,1,5,'Dracula
 INSERT INTO `gigsong` VALUES (NULL,'1998-04-18 00:00:00','set',NULL,1,6,'Radio Saigon',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1998-04-18 00:00:00','set',NULL,1,7,'Doktor Anthrax',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1998-04-18 00:00:00','set',NULL,1,8,'Everything Is Wonderful',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1998-05-01 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,'sourced from MiniDisc',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19980501/19980501_JazzButcher_Atlanta_Gen0_CASSETTE.mp3',NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1998-05-01 00:00:00','set',NULL,1,1,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1998-05-01 00:00:00','set',NULL,1,10,'What\'s The Matter, Boy?',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1998-05-01 00:00:00','set',NULL,1,11,'Girls Who Keep Goldfish',NULL,NULL,NULL,NULL,NULL,NULL,NULL);

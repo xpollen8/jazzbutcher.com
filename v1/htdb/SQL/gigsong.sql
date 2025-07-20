@@ -76,7 +76,17 @@ INSERT INTO `gigsong` VALUES (NULL,'1983-08-21 00:00:00','set',NULL,1,5,'Girls W
 INSERT INTO `gigsong` VALUES (NULL,'1983-08-21 00:00:00','set',NULL,1,6,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-08-21 00:00:00','set',NULL,1,7,'The Crusher',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1983-08-21 00:00:00','set',NULL,1,8,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,1,'Love Kittens',NULL,NULL,NULL,'https://www.youtube.com/embed/24QOc2IBosE','Mitch Jenkins','http://www.mitchjenkins.com/',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,"Pat's copy FMAC21",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19831124/19831124_JazzButcher_KingstonPoly_London_FMAC21.mp3',NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,1,'Cowgirl Fever',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,2,'Love Kittens',NULL,NULL,NULL,'https://www.youtube.com/embed/24QOc2IBosE','Mitch Jenkins','http://www.mitchjenkins.com/',NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,3,'Speedy Gonzalez','Hess, Kaye, Lee',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,4,'Girls Who Keep Goldfish',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,5,'Sweet Jane','Lou Reed',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,6,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,7,'Water',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,8,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1983-11-24 00:00:00','set',NULL,1,9,'Roadrunner','Jonathan Richman','w/David J.',NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','encore','48:39',1,1,'Roadrunner','Jonathan Richman','Love Kittens intro',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set','0',1,1,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1984-11-13 00:00:00','set','05:37',1,2,'Bigfoot Motel',NULL,'fast!',NULL,NULL,NULL,NULL,NULL);

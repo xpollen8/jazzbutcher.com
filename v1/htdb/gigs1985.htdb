@@ -465,11 +465,11 @@
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 
-		photosets= /images/19850727/JbJL001.jpg$$
-			/images/19850727/JbJL003.jpg$$
-			/images/19850727/JbJL004.jpg$$
-			/images/19850727/JbJL005.jpg$$
-			ruse@cableinet.co.uk
+		photosets= /images/19850727/19850727_ruse_JbJL001.jpg$$
+			/images/19850727/19850727_ruse_JbJL003.jpg$$
+			/images/19850727/19850727_ruse_JbJL004.jpg$$
+			/images/19850727/19850727_ruse_JbJL005.jpg$$
+			ruse@cableinet.co.uk;;;;2001-02-03
 
 	)}
 
@@ -645,6 +645,7 @@
 	)},
 	tickets=
 		/images/19851029/19851029_ticket.jpg$$
+		ruse@cableinet.co.uk;;;;2004-02-13
 	,posters=
 		/images/19851029/19851029_poster.jpg$$
 		/images/19851029/19851029_poster_2.jpg$$

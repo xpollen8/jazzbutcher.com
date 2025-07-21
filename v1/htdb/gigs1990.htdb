@@ -366,6 +366,9 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+	tickets=
+			/images/19901026/19901026_ticket.jpg$$
+			Gregor Young;;;;2024-08-24
 
 	)}
 

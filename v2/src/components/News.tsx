@@ -20,13 +20,13 @@ type NewsItemType = {
 
 const recentNews = [
 	{
-		subject: "1992 US Tour full shows, others",
+		subject: `1992 US Tour full shows, others`,
 		dt: '2025-07-20',
 		category: 'media',
 		credit: 'David Whittemore',
 		body: <>
-			Full show perforamnces from David Whittemore's DAT masters of 1992 US Tour
-			(the tapes NOT lost in the <<Link href="/western_dat">Western Family Fiasco</Link>)
+			Full show performances from David Whittemore&apos;s DAT masters of 1992 US Tour
+			(the tapes NOT lost in the <Link href="/western_dat">Western Family Fiasco</Link>)
 			<pre>
 			<Link href="/gigs/1992/Apr24">Athens, Georgia</Link>
 			<Link href="/gigs/1992/Apr26_2000">Chapel Hill, North Carolina</Link>

@@ -107,6 +107,10 @@ const GigSetlist = (data: any, key: number) => <GigMedia {...data} />
 
 const GigSetlists = (data: any) => <div className="listItem"><Iterator data={data} func={GigSetlist} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
 
+const GigCassette = (data: any, key: number) => <GigMedia {...data} />
+
+const GigCassettes = (data: any) => <div className="listItem"><Iterator data={data} func={GigCassette} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
+
 const GigPoster = (data: any, key: number) => <GigMedia {...data} />
 
 const GigPosters = (data: any) => <div className="listItem"><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
@@ -287,6 +291,7 @@ const Content = ({ gig }: { gig: any }) => {
 		const nameIt = `media_${t.type}`;
 		switch (t.type) {
 			case 'pix':
+			case 'cassette':
 			case 'poster':
 			case 'setlist':
 			case 'ticket':
@@ -373,6 +378,7 @@ const Content = ({ gig }: { gig: any }) => {
 		{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
 		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
 		{ label: 'Also On The Bill', lookup: 'players_with', func: GigWith },
+		{ label: 'Cassettes', lookup: 'media_cassette', func: GigCassettes },
 		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
 		{ label: 'Tickets', lookup: 'media_ticket', func: GigTickets },
 		{ lookup: 'media_pix', func: GigPhotos },

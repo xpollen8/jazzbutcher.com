@@ -20,9 +20,40 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: "1992 US Tour full shows, others",
+		dt: '2025-07-20',
+		category: 'media',
+		credit: 'David Whittemore',
+		body: <>
+			Full show perforamnces from David Whittemore's DAT masters of 1992 US Tour
+			(the tapes NOT lost in the <<Link href="/western_dat">Western Family Fiasco</Link>)
+			<pre>
+			<Link href="/gigs/1992/Apr24">Athens, Georgia</Link>
+			<Link href="/gigs/1992/Apr26_2000">Chapel Hill, North Carolina</Link>
+			<Link href="/gigs/1992/Apr28">Baltimore, Maryland</Link>
+			<Link href="/gigs/1992/May1">Washington DC</Link>
+			<Link href="/gigs/1992/May3">Providence, Rhode Island</Link>
+			<Link href="/gigs/1992/May5">Boston, Massachusetts</Link>
+			<Link href="/gigs/1992/May6_2000">Montreal</Link>
+			<Link href="/gigs/1992/May8">Waterloo</Link>
+			<Link href="/gigs/1992/May9">Toronto</Link>
+			<Link href="/gigs/1992/May16_2000">Chicago</Link>
+			<Link href="/gigs/1992/May16_1200">Tower Records, Chicago</Link>
+			<Link href="/gigs/1992/Jun5">Los Angeles</Link>
+			</pre>
+			<hr />
+			Some other lovely older shows
+			<pre>
+			<Link href="/gigs/1989/Dec10">San Juan Capistrano</Link>
+			<Link href="/gigs/1991/Jun18">London</Link>
+			<Link href="/gigs/1998/May1">Atlanta</Link>
+			</pre>
+		</>
+	},
+	{
 		subject: "1995-12-21 - 'Last Gig Ever'",
 		dt: '2025-05-01',
-		body: <EmbedMedia data={{ mediaurl: 'https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19951221/19951221_JazzButcher_London_TheGarage.mp3' }} />,
+		body: <EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19951221/19951221_JazzButcher_London_TheGarage.mp3' }} />,
 		link: '/gigs/1995/Dec21',
 		category: 'media',
 	},
@@ -45,7 +76,7 @@ const recentNews = [
 	{
 		subject: "Tribute song, grave marker pic added",
 		link: '/memoriam',
-		body: <EmbedMedia data={{ mediaurl: "https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/video/Liam_Dullaghan-Light_On_Shakespeare_Road.mp4" }} />,
+		body: <EmbedMedia data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/video/Liam_Dullaghan-Light_On_Shakespeare_Road.mp4" }} />,
 		dt: '2025-04-22',
 		category: 'media',
 		credit: 'onetoysarah'
@@ -151,7 +182,7 @@ const recentNews = [
 	{
 		subject: "video: 2024-05-04 - David J. performing Quelle Tristesse",
 		dt: '2024-11-04',
-		body: <EmbedMedia data={{ mediaurl: 'https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/video/20240504_DavidJ_Quell_AnnePace.mp4', mediacredit: 'Ann Pace', datetime: '2024-05-04', mediacreditdate: '2024-05-04' }} />,
+		body: <EmbedMedia data={{ mediaurl: 'https://s3.amazonaws.com/assets.jazzbutcher.com/video/20240504_DavidJ_Quell_AnnePace.mp4', mediacredit: 'Ann Pace', datetime: '2024-05-04', mediacreditdate: '2024-05-04' }} />,
 		category: 'media',
 		credit: 'Ann Pace',
 	},

@@ -636,6 +636,9 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${dooj}, ${richard} )},
+		tickets=
+			/images/19931117/19931117_ticket.jpg$$
+			Pierre Guillaume;;;;2025-07-21
 
 	)}
 

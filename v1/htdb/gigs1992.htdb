@@ -291,17 +291,6 @@
 
 	)}
 
-#define	May15.html()
-	${gigHeader(
-
-		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-	bootlegger=${literalizeCommas(David Whittemore)},
-	recording=${literalizeCommas( ${q(7)}, ${p(A)}, ${i(B)}, ${mt}, ${DAT}, ${PZM},)},
-	${g_details(microphone overload. nice stereo separation and mix. great crowd banter. snow white hair is ad-lib.)}
-		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-
-	)}
-
 #define	May16_1200.html()
 	${gigHeader(
 
@@ -605,6 +594,8 @@
 #define	Jun17.html()
 	${gigHeader(
 
+		bootlegger=${literalizeCommas(David Whittemore)},
+		recording=${literalizeCommas( ${q(7)}, ${p(A)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}, ${g_details(microphone overload. nice stereo separation and mix. great crowd banter. snow white hair is ad-lib.)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		reviews=
 		${literalizeCommas(

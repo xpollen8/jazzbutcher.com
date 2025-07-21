@@ -3605,7 +3605,7 @@ ${define(_set, false)}
 #live	endif
 #live	endif
 
-#define	gigHeader(extra, who, pat, with, eventweb, cost, ticketweb, notes, phone, photosets, reviews, setlists, recording, soundman, bootlegger, nopat, blurb, tickets, address, postalcode, posters)
+#define	gigHeader(extra, who, pat, with, eventweb, cost, ticketweb, notes, phone, cassettes, photosets, reviews, setlists, recording, soundman, bootlegger, nopat, blurb, tickets, address, postalcode, posters)
 #live	if (sql(_gig:select *, unix_timestamp(datetime) as ts, year(datetime) as year, month(datetime) as month, day(datetime) as day from gig where datetime='${gigPage2Datetime()}' and isdeleted is NULL limit 1))
 #live		if (sql(_prevgig:select datetime, venue from gig where datetime<'${_gig->datetime}' and isdeleted is NULL order by datetime desc limit 1))
 #live		endif
@@ -3872,6 +3872,10 @@ ${define(_set, false)}
 #live		if (define(hasTicket, yes))
 #live		endif
 #live	endif
+#live	if (defined(cassettes))
+#live		if (define(hasCassettes, yes))
+#live		endif
+#live	endif
 #live	if (defined(photosets))
 #live		if (define(hasPix, yes))
 #live		endif
@@ -3885,7 +3889,16 @@ ${define(_set, false)}
 #
 #	gig was in the past
 #
-#live		if (defined(hasPix))
+#live		if (defined(hasCassettes))
+#live			if (define(hasCassettes, no))
+#live			endif
+			${tag_beg}
+			${iconPix} Cassettes
+			${tag_end}
+			<blockquote style="text-align: center;">
+	${doPhotos(prefix=_gig, photosets=${cassettes})}
+			</blockquote>
+#live		else if (defined(hasPix))
 #live			if (define(hasPix, no))
 #live			endif
 			${tag_beg}
@@ -3955,6 +3968,7 @@ ${define(_set, false)}
 #	hasMap
 #	hasPoster
 #	hasPix
+#	hasCassettes
 #	isPast
 #
 # OLD	${doMap(prefix=_gig)}
@@ -4035,6 +4049,12 @@ ${define(_set, false)}
 #live		endif
 #live	endif
 
+#live	endif
+
+#live	if (getval(hasCassettes) = yes)
+	${begTab(${iconPix} Cassettes)}
+	${doPhotos(prefix=_gig, photosets=${cassettes})}
+	${endTab}
 #live	endif
 
 #live	if (getval(hasPix) = yes)

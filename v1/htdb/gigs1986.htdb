@@ -126,7 +126,7 @@
 	The recording also features radio interview from Besancon${FR},
 	a few days afterwards [4Mar1986]
 	)},
-		photosets= /images/19860227/19860227_cassette.jpg$$
+		cassettes= /images/19860227/19860227_cassette.jpg$$
 	)}
 
 #define	Feb28.html()
@@ -161,7 +161,7 @@
 
 #define	Mar4_2300.html()
 	${gigHeader(
-		photosets= /images/19860304/19860304_cassette.jpg$$
+		cassettes= /images/19860304/19860304_cassette.jpg$$
 	)}
 
 #define	Mar5.html()

@@ -314,7 +314,7 @@
 	<p>
 	${may} released from this recording.
 	)}
-		,photosets=
+		,cassettes=
 			/images/19850425/19850425_cassette_1.jpg$$
 			/images/19850425/19850425_cassette_2.jpg$$
 			Will Nerini;;;;2021-12-07
@@ -429,6 +429,7 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	cassettes=/images/19850705/19850705_cassette.jpg$$,
 
 	)}
 

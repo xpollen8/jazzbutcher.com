@@ -25,9 +25,9 @@ const recentNews = [
 		category: 'media',
 		credit: 'David Whittemore',
 		body: <>
-			Full show performances from David Whittemore&apos;s DAT masters of 1992 US Tour
+			<b>Full show performances from David Whittemore&apos;s DAT masters of 1992 US Tour</b>
 			(the tapes NOT lost in the <Link href="/western_dat">Western Family Fiasco</Link>):
-			<br /><Link href="/gigs/1992/Apr24">Athens, Georgia</Link>
+			<p /><Link href="/gigs/1992/Apr24">Athens, Georgia</Link>
 			<br /><Link href="/gigs/1992/Apr26_2000">Chapel Hill, North Carolina</Link>
 			<br /><Link href="/gigs/1992/Apr28">Baltimore, Maryland</Link>
 			<br /><Link href="/gigs/1992/May1">Washington DC</Link>
@@ -39,11 +39,12 @@ const recentNews = [
 			<br /><Link href="/gigs/1992/May16_2000">Chicago</Link>
 			<br /><Link href="/gigs/1992/May16_1200">Tower Records, Chicago</Link>
 			<br /><Link href="/gigs/1992/Jun5">Los Angeles</Link>
-			<hr />
-			Some other lovely older shows:
-			<br /><Link href="/gigs/1989/Dec10">San Juan Capistrano</Link>
+			<p />
+			<b>Some other lovely older shows</b>:
+			<p /><Link href="/gigs/1989/Dec10">San Juan Capistrano</Link>
 			<br /><Link href="/gigs/1991/Jun18">London</Link>
 			<br /><Link href="/gigs/1998/May1">Atlanta</Link>
+			<p />
 		</>
 	},
 	{

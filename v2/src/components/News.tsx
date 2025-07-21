@@ -27,23 +27,23 @@ const recentNews = [
 		body: <>
 			<b>Full show performances from David Whittemore&apos;s DAT masters of 1992 US Tour</b>
 			(the tapes NOT lost in the <Link href="/western_dat">Western Family Fiasco</Link>):
-			<p /><Link href="/gigs/1992/Apr24">Athens, Georgia</Link>
-			<br /><Link href="/gigs/1992/Apr26_2000">Chapel Hill, North Carolina</Link>
-			<br /><Link href="/gigs/1992/Apr28">Baltimore, Maryland</Link>
-			<br /><Link href="/gigs/1992/May1">Washington DC</Link>
-			<br /><Link href="/gigs/1992/May3">Providence, Rhode Island</Link>
-			<br /><Link href="/gigs/1992/May5">Boston, Massachusetts</Link>
-			<br /><Link href="/gigs/1992/May6_2000">Montreal</Link>
-			<br /><Link href="/gigs/1992/May8">Waterloo</Link>
-			<br /><Link href="/gigs/1992/May9">Toronto</Link>
-			<br /><Link href="/gigs/1992/May16_2000">Chicago</Link>
-			<br /><Link href="/gigs/1992/May16_1200">Tower Records, Chicago</Link>
-			<br /><Link href="/gigs/1992/Jun5">Los Angeles</Link>
+			<p /><Link href="/gigs/1992/Apr24">1992-04-24: Athens, Georgia</Link>
+			<br /><Link href="/gigs/1992/Apr26_2000">1992-04-26: Chapel Hill, North Carolina</Link>
+			<br /><Link href="/gigs/1992/Apr28">1992-04-28: Baltimore, Maryland</Link>
+			<br /><Link href="/gigs/1992/May1">1992-05-01: Washington DC</Link>
+			<br /><Link href="/gigs/1992/May3">1992-05-03: Providence, Rhode Island</Link>
+			<br /><Link href="/gigs/1992/May5">1992-05-05: Boston, Massachusetts</Link>
+			<br /><Link href="/gigs/1992/May6_2000">1992-05-06: Montreal</Link>
+			<br /><Link href="/gigs/1992/May8">1992-05-08: Waterloo</Link>
+			<br /><Link href="/gigs/1992/May9">1992-05-09: Toronto</Link>
+			<br /><Link href="/gigs/1992/May16_2000">1992-05-16: Chicago</Link>
+			<br /><Link href="/gigs/1992/May16_1200">1992-05-16: Tower Records, Chicago</Link>
+			<br /><Link href="/gigs/1992/Jun5">1992-06-05: Los Angeles</Link>
 			<p />
 			<b>Some other lovely older shows</b>:
-			<p /><Link href="/gigs/1989/Dec10">San Juan Capistrano</Link>
-			<br /><Link href="/gigs/1991/Jun18">London</Link>
-			<br /><Link href="/gigs/1998/May1">Atlanta</Link>
+			<p /><Link href="/gigs/1989/Dec10">1989-12-10: San Juan Capistrano</Link>
+			<br /><Link href="/gigs/1991/Jun18">1991-06-18: London</Link>
+			<br /><Link href="/gigs/1998/May1">1998-05-01: Atlanta</Link>
 			<p />
 		</>
 	},

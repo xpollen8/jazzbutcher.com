@@ -2765,6 +2765,8 @@ on
 #define	ts2Poster(ts, width=250)	${ts2Thing(thing=poster, ts=${ts}, width=${width})}
 #define	ts2TicketLink(ts)	${ts2Thing(thing=ticket, type=link, ts=${ts})}
 #define	ts2Ticket(ts, width=250)	${ts2Thing(thing=ticket, ts=${ts}, width=${width})}
+#define	ts2CasseteLink(ts)	${ts2Thing(thing=cassette, type=link, ts=${ts})}
+#define	ts2Cassete(ts, width=250)	${ts2Thing(thing=cassette, ts=${ts}, width=${width})}
 
 #define	mkGigDatetime(ts)
 #live	if (int(${substr(11, 2, ${ts})}) > 0)
@@ -3558,6 +3560,27 @@ ${define(_set, false)}
 		</div>
 #live		endif
 
+#define	doCassettes(prefix, cassettes)
+#live	if (defined(cassettes))
+#live		if (makeArray(s, ${EOS}, ${unfilter(${cassettes})}))
+				<div class="ml1">
+#live			loop(x, 1, ${s->numResults})
+					<div class="ml-panel" style="${colorSet(${x})};">
+						${parsePhotoset(datetime=${${prefix}->datetime}, idx=${x}, photoset=${s[${x}]}, width=500, type=cassette)}
+					</div>
+#live			endloop
+				</div>
+#live		endif
+#live		else
+		<div class="ml1">
+#live	if (sql(insert IGNORE into gigmedia set type='cassette', datetime="${${prefix}->datetime}", image="${ts2CassetteLink(${${prefix}->datetime})}"))
+#live	endif
+			<div class="ml-panel" style="${colorSet(1)};">
+				<a href="${ts2CassetteLink(ts=${_gig->datetime})}"><img alt="[cassette]" src="${ts2Cassette(ts=${_gig->datetime}, width=500)}"></a>
+			</div>
+		</div>
+#live		endif
+
 #define	doTicket(prefix, tickets)
 #live	if (defined(tickets))
 #live		if (makeArray(s, ${EOS}, ${unfilter(${tickets})}))
@@ -3896,7 +3919,7 @@ ${define(_set, false)}
 			${iconPix} Cassettes
 			${tag_end}
 			<blockquote style="text-align: center;">
-	${doPhotos(prefix=_gig, photosets=${cassettes})}
+	${doCassettes(prefix=_gig, cassettes=${unfilter(${cassettes})})}
 			</blockquote>
 #live		else if (defined(hasPix))
 #live			if (define(hasPix, no))
@@ -4053,7 +4076,7 @@ ${define(_set, false)}
 
 #live	if (getval(hasCassettes) = yes)
 	${begTab(${iconPix} Cassettes)}
-	${doPhotos(prefix=_gig, photosets=${cassettes})}
+	${doCassettes(prefix=_gig, cassettes=${unfilter(${cassettes})})}
 	${endTab}
 #live	endif
 

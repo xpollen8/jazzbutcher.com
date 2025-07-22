@@ -277,6 +277,9 @@
 		with=${literalizeCommas(
 	M. Walking On The Water
 		)},
+		tickets=
+			/images/19880323/19880323_ticket.jpg$$
+			Mark Knochen;;;;2025-07-22
 
 	)}
 

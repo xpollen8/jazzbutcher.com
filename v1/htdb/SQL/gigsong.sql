@@ -3707,6 +3707,19 @@ INSERT INTO `gigsong` VALUES (NULL,'2005-12-22 20:00:00','set',NULL,1,6,'She\'s 
 INSERT INTO `gigsong` VALUES (NULL,'2005-12-22 20:00:00','set',NULL,1,7,'Sister Death',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2005-12-22 20:00:00','set',NULL,1,8,'Quality People','Wilson',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2005-12-22 20:00:00','set',NULL,1,9,'Moon River','Henry Mancini',NULL,NULL,NULL,NULL,NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,"FMACD21 Love Alastair",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20060614/20060614_JazzButcher_Kilburn_AlastairIndge.mp3',"Alastair Indge",NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,1,"Partytime",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,2,"D.R.I.N.K.",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,3,"Who Loves You Now?",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,4,"Sister Death",NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,5,"Whaddya?",NULL,"w/backing track",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,6,"Shame About You",NULL,"w/backing track",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,7,"Mr. Odd",NULL,"w/backing track",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,8,"Land",NULL,"w/backing track. 'You can land here if you want to, Osiris'",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,9,"Southern Mark Smith",NULL,"w/backing track. 'Yes, we sample our own guitar playing'",NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2006-06-14 00:00:00','set',NULL,1,10,"Take The Skinheads Bowling","Camper Van Beethoven",NULL,NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'2006-01-29 00:00:00','set',NULL,1,1,'After Hours','Velvet Underground',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2006-01-29 00:00:00','set',NULL,1,10,'Girls Who Keep Goldfish',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2006-01-29 00:00:00','set',NULL,1,11,'Take the Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL);

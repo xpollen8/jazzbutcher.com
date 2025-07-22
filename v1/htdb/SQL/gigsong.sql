@@ -2780,7 +2780,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1999-09-16 00:00:00','set',NULL,2,9,'The Lon
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','encore',NULL,1,1,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','encore',NULL,1,2,'Forever',NULL,NULL,'Pat solo',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','encore',NULL,2,1,'Roadrunner','Jonathan Richman',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',NULL,1,0,'The Entire Performance',NULL,'\nThe Jazz Butcher Conspiracy - Wetlands, New York City, NY \nSeptember 23, 1999 \n \n audience master \n  \n  Sony TCD-D8 w/ 2 audio technica AT-831b mics > wavelab 6 > TLH > make torrent 2 > dime (SBE corrected)',NULL,'https://v1.jazzbutcher.com/audio/19990923/19990923_JazzButcher_Wetlands.mp3','another madelf master'',NULL,NULL,"2021-10-11");
+INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',NULL,1,0,'The Entire Performance',NULL,"The Jazz Butcher Conspiracy - Wetlands, New York City, NY September 23, 1999 audience master Sony TCD-D8 w/ 2 audio technica AT-831b mics > wavelab 6 > TLH > make torrent 2 > dime (SBE corrected)",NULL,'https://v1.jazzbutcher.com/audio/19990923/19990923_JazzButcher_Wetlands.mp3','another madelf master',NULL,NULL,"2021-10-11");
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',NULL,1,1,'Partytime',NULL,NULL,'Pat & Max','https://www.youtube.com/embed/Qjl98ojBFGo','Tom Peterson','http://fuelburningoracle.wix.com/tompeterson2',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',NULL,1,10,'The Jazz Butcher Meets Count Dracula',NULL,NULL,'Kevin and Owen on drums',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1999-09-23 20:00:00','set',NULL,1,2,'Falling In Love',NULL,NULL,NULL,'https://www.youtube.com/embed/FAghpUkJWTM','Tom Peterson','http://fuelburningoracle.wix.com/tompeterson2',NULL,NULL);
@@ -5047,39 +5047,35 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-11-08 00:00:00','set',NULL,1,17,'Panic 
 /*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
 UNLOCK TABLES;
 
-/*!
-1988-08-22  shintomo  -  tomoko shintani
-"Real Men"
-"Looking For Lot 49"
-"Out of Touch"
-"Angels"
-"The Best Way"
-"Caroline Wheeler's Birthday Present"
-"Partytime"
-"D.R.I.N.K."
-"Spooky"
-"Blame"
-"Grey Flanelette"
-*/
-
-/*!
-1988-09-08  shintomo  -  tomoko shintani
-"D.R.I.N.K."
-"Domestic Animal"
-"Only A Rumour"
-"Hungarian Love Song "
-"Girls Who Keep Goldfish"
-"Lisa Says", "Lou Reed", "excerpt"
-"Girlfriend"
-"Swell"
-"Angels" "this is a song about a dead cat"
----
-set2
-"Stand By Me", "Ben E. King", "Alan McGee, guitar"
-"Roadrunner","Jonathan Richman", "Alan McGee, guitar"
-encore1
-"Speedy Gonzalez", "Hess, Kaye, Lee", "Alan McGee, guitar"
-*/
+--  1988-08-22  shintomo  -  tomoko shintani
+--  "Real Men"
+--  "Looking For Lot 49"
+--  "Out of Touch"
+--  "Angels"
+--  "The Best Way"
+--  "Caroline Wheeler's Birthday Present"
+--  "Partytime"
+--  "D.R.I.N.K."
+--  "Spooky"
+--  "Blame"
+--  "Grey Flanelette"
+--  
+--  1988-09-08  shintomo  -  tomoko shintani
+--  "D.R.I.N.K."
+--  "Domestic Animal"
+--  "Only A Rumour"
+--  "Hungarian Love Song "
+--  "Girls Who Keep Goldfish"
+--  "Lisa Says", "Lou Reed", "excerpt"
+--  "Girlfriend"
+--  "Swell"
+--  "Angels" "this is a song about a dead cat"
+--  ---
+--  set2
+--  "Stand By Me", "Ben E. King", "Alan McGee, guitar"
+--  "Roadrunner","Jonathan Richman", "Alan McGee, guitar"
+--  encore1
+--  "Speedy Gonzalez", "Hess, Kaye, Lee", "Alan McGee, guitar"
 
 update gig set extra=concat('songlist,',extra) where extra not like '%songlist%' and datetime in (select distinct datetime from gigsong);
 update gig set extra=concat('recording,',extra) where extra not like '%recording%' and datetime in (select distinct datetime from gigsong where mediaurl like '%audio%');

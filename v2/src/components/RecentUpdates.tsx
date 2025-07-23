@@ -41,6 +41,7 @@ const RecentFeedback = (props: any) => {
 	</details>
 }
 
+/* `media` table version
 const media2Embed = (p: any) => {
 	const { media_id, lookup, type, subtype, ordinal, project, collection, name, comment,
 		mp3, href, author, credit, parent, datetime, images, dtcreated } = p;
@@ -54,6 +55,11 @@ const media2Embed = (p: any) => {
 		author,
 	}
 }
+*/
+
+const media2Embed = (p: any) => {
+	return p
+}
 
 const RecentMedia = (props: any) => {
 	const { media } = props;
@@ -63,7 +69,7 @@ const RecentMedia = (props: any) => {
 		<blockquote>
 			{media.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">
-					<div className="date">{dateDiff(p.dtcreated, '')}</div>
+					<div className="date">{dateDiff(p.dtcreated || p.added, '')}</div>
 					<EmbedMedia data={media2Embed(p)} />
 				</div>
 			})}
@@ -95,7 +101,7 @@ const RecentUpdates = () => {
 		<RecentPress press={press} />
 		<RecentReleases releases={releases} />
 		<RecentFeedback feedback={feedback} />
-		{/*<RecentMedia media={media} />*/}
+		<RecentMedia media={media} />
 		<p />
 	</Suspense>)
 }

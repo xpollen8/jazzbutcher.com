@@ -25,7 +25,7 @@ const FishySession = ({ session }: { session: any }) => {
 		<div className="px-10 max-w-sm">
 				<Tag>Fishy Mansions #{session.ordinal + 1} : <span className="date">{session.date}</span></Tag>
 				<Suspense fallback={<>Loading...</>}>
-					{songs?.filter((song: any) => !song.song.includes('Entire')).map((data: any, key: number) => <div key={key}><EmbedMedia data={data} disableVideo={true} /></div>)}
+					{songs?.filter((song: any) => !song.song.includes('Entire')).sort((a, b) => a.ordinal - b.ordinal).map((data: any, key: number) => <div key={key}><EmbedMedia data={data} disableVideo={true} /></div>)}
 				</Suspense>
 		</div>
 	</div>);

@@ -67,3 +67,7 @@ echo "LOCAL_DEV=true" >> .env.local
 `npm run dev`
 
 * open `http://localhost:3000` in a browser
+
+Keep that `npm run dev` command running.  If you edit any of the underlying files in the `v2/src/[app/components]` folders, any changes should almost immediately appear in the browser.
+
+CSS is found in the `v2/src/app/globals.css` file, if you want to try a hand at turning things into a candy-coloured clown.

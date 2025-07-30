@@ -141,11 +141,13 @@ const useFishyMansionsArchives = (slug: any) => {
 		data: {
 			error: false,
 			results: [
-				...FMAs.cassettes.filter(f => slug ? f.ID == slug : 1),
-				...FMAs.cds.filter(f => slug ? f.ID == slug : 1),
-				...FMAs.multis.filter(f => slug ? f.ID == slug : 1),
-				...FMAs.videos.filter(f => slug ? f.ID == slug : 1),
-				...FMAs.dats.filter(f => slug ? f.ID == slug : 1),
+				{
+					cassette: FMAs.cassettes.find(f => slug ? f.ID == slug : 1),
+					cd: FMAs.cds.find(f => slug ? f.ID == slug : 1),
+					multi: FMAs.multis.find(f => slug ? f.ID == slug : 1),
+					video: FMAs.videos.find(f => slug ? f.ID == slug : 1),
+					dat: FMAs.dats.find(f => slug ? f.ID == slug : 1),
+				}
 			]
 		}
 	}

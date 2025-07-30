@@ -7,17 +7,31 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import useFishyMansionsArchives from '@/lib/useFishyMansionsArchives';
+import LetterHeader from '@/components/LetterHeader';
 
-const FishyMansionsArchivesItem = (item: any) => {
+const ShowFMA = ({ title, item }: any) => {
+	if (!item) return;
 	return <>
+		<LetterHeader title={title} />
 		<ul>
-			{Object.keys(item)?.map((k, i) => {
+			{Object.keys(item)?.map((k, i): any => {
 				return <li key={i}>
 				<b>{k}</b> <i>{item[k]}</i>
 				</li>
 			})}
 		</ul>
 	</>;
+}
+
+const FishyMansionsArchivesItem = (item: any) => {
+	const { cassette, cd, multi, video, dat }: any = item;
+	return <>
+		<ShowFMA title="Cassettes" item={cassette} />
+		<ShowFMA title="Multitrack Cassettes" item={multi} />
+		<ShowFMA title="CDs" item={cd} />
+		<ShowFMA title="DATs" item={dat} />
+		<ShowFMA title="Videos" item={video} />
+	</>
 }
 
 const FishyMansionsArchives = ({ params }: { params?: any }) => {

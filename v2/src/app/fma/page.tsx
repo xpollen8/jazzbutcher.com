@@ -11,11 +11,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const FMAIndex = (data: any) => {
-	const cassettes = data.cassettes.map(c => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
-	const cds = data.cds.map(c => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
-	const multis = data.multis.map(c => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
-	const dats = data.dats.map(c => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
-	const videos = data.videos.map(c => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
+	const cassettes = data.cassettes.map((c: any) => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
+	const cds = data.cds.map((c: any) => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
+	const multis = data.multis.map((c: any) => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
+	const dats = data.dats.map((c: any) => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
+	const videos = data.videos.map((c: any) => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
 	return <>
 		{!!cassettes?.length && <>
 			<LetterHeader title="Cassettes" />

@@ -115,7 +115,8 @@ const sections : { [key: string]: BreadCrumb } = {
 	//'gallery/david_whittemore': { parent: 'gallery', title: 'David Whittemore' },
 	//'gallery/ruth_tidmarsh': { parent: 'gallery', title: 'Ruth Tidmarsh' },
 	memoriam: { parent: 'pat', title: 'In Memoriam' },
-	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions', summary: "COVID-era livestreams" },
+	fma: { parent: 'pat', title: 'Fishy Mansions Archives', summary: "Cassettes, CDs, Video tapes from Pat Fish's Estate" },
+	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions Livestreams', summary: "COVID-era livestreams" },
 	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },
 	projects: { parent: 'pat', title: 'Side Projects', rootHideChildren: true },
 
@@ -125,6 +126,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003", body: "The passing of Northampton-based folk music legend Tom Hall prompted Pat to pen a memorial."},
 	'press/20020709_starindia': { parent: 'writings', title: "The Star Of India Restaurant", summary: "2002", body: "Northampton's Star of India restaurant is dearly loved by the artist" },
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "1986", body: "Early Fan Club issues" },
+	japan2000: { parent: 'writings', title: 'THE JBC GO JAPAN', summary: "2000", body: "Tour summary" },
 
 	mailinglist: { parent: 'etc', title: 'Mailing List', summary: '1989-2003', body: "The genesis of this Jazz Butcher website was the mailing list that David Whittemore maintained. During the 15 years it was active, several hundred technically-inclined JBC fans kept in touch and posted thousands of email messages." },
 	auction: { parent: 'etc', title: 'Website Auction', summary: '1997', body: "The Butcher had some memorabilia sitting around his home which he was sick of tripping over. So, we decided to have an auction." },

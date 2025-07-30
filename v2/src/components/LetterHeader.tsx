@@ -6,7 +6,7 @@ const LetterHeader = (props: { title: string | React.ReactElement, subhead?: str
 	<Tag> {props.title} </Tag>
 	{(props?.subhead || props?.aux) && <div className="listItem">
 	   {(props?.subhead) && <>{props.subhead}</>}
-		 {(props?.aux) && <><br />{props.aux}</>}
+		 {(props?.aux) && <>{props.aux}</>}
 	</div>}
 </>
 

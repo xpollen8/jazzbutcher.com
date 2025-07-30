@@ -77,7 +77,30 @@ const FMA_cassettes = [
 	{ ID: "FMAC76", "Digitised": "Y", "Digitised by": "Philip Woodrow", "Type": "", "Artist": "Sumosonic", "Item Name": "Sumo Live – Copy", "Date": "October 97", "Side A Track List": "Monks / God's Green Earth / Business / Sputnik / Dracula / Saigon / Wo'Ful / Spacemen", "Side B Track List": "Copy", "Scanned?": "Yes", "Notes": "" },
 ];
 
-const FMA_cds: any = [
+const FMA_cds = [
+{ "ID": "FMACD1", "Item Name": "2018", "Digitised by": "", "Type": "", "Artist": "", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD10", "Item Name": "Pat Fish Big Questions _Glowin_ Jingle", "Digitised by": "", "Type": "", "Artist": "", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD11", "Item Name": "Sumosonic Backing Tracks", "Digitised by": "", "Type": "", "Artist": "Sumosonic", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD12", "Item Name": "Roger_s Prize", "Digitised by": "", "Type": "", "Artist": "", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD13", "Item Name": "The Jazz Butcher - _Mad Ghost_ Demos?", "Digitised by": "", "Type": "", "Artist": "Jazz Butcher", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD14", "Item Name": "Max Eider - Turn Blue", "Digitised by": "", "Type": "", "Artist": "Max Eider", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD15", "Item Name": "Big Planet Summer of 88 Demos", "Digitised by": "", "Type": "Demo", "Artist": "Jazz Butcher", "Date": "1988", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD16", "Item Name": "Stranger Tractor David J Mixes", "Digitised by": "", "Type": "", "Artist": "Stranger Tractors", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD17", "Item Name": "Wilson Original Mixes Jan-03-01", "Digitised by": "", "Type": "", "Artist": "Wilson", "Date": "2001-01-03", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD18", "Item Name": "Wilson Mixes Dec-19-01", "Digitised by": "", "Type": "", "Artist": "Wilson", "Date": "2001-12-19", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD19", "Item Name": "Junkie Christmas", "Digitised by": "", "Type": "", "Artist": "", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD1a", "Item Name": "2018", "Digitised by": "", "Type": "", "Artist": "", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD2", "Item Name": "Everything", "Digitised by": "", "Type": "", "Artist": "", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD2", "Item Name": "_Everything_ False Awakenings EDITED (Remainder  in Progress)", "Digitised by": "", "Type": "", "Artist": "", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD20", "Item Name": "Stranger Tractors David J Mixes", "Digitised by": "", "Type": "", "Artist": "Stranger Tractors", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD21", "Item Name": "Love Alastair", "Digitised by": "", "Type": "", "Artist": "", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD3", "Item Name": "Big Return Live LOGO Hamburg Jan-10-2006 2CD", "Digitised by": "", "Type": "Live", "Artist": "Jazz Butcher", "Date": "2006-01-10", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD4", "Item Name": "Live Yoyo Club Shipley UK June-5-2008 (Andrew BrookBanks)", "Digitised by": "", "Type": "Live", "Artist": "Jazz Butcher", "Date": "2008-06-05", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD5", "Item Name": "The Jazz Butcher ~ Terry Warphole - Curious Collaborations", "Digitised by": "", "Type": "", "Artist": "Jazz Butcher", "Date": "", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD6", "Item Name": "Blue Lips In Amsterdam Dec-7-1984", "Digitised by": "", "Type": "Live", "Artist": "Jazz Butcher", "Date": "1984-12-07", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD7", "Item Name": "Only A Rumour April-23-1985 Onkel Po_s", "Digitised by": "", "Type": "Live", "Artist": "Jazz Butcher", "Date": "1985-04-23", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD8", "Item Name": "The Fall Of Jayzilla Feb-8-1985", "Digitised by": "", "Type": "Live", "Artist": "Jazz Butcher", "Date": "1985-02-08", "Tracks": "", "Scanned?": "", "Notes": "" },
+{ "ID": "FMACD9", "Item Name": "The Rise Of Felix April-17-1985", "Digitised by": "", "Type": "Live", "Artist": "Jazz Butcher", "Date": "1985-04-17", "Tracks": "", "Scanned?": "", "Notes": "" },
 ];
 
 const FMA_multis = [

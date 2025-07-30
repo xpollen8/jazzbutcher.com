@@ -15,19 +15,25 @@ const useFishyMansionsArchives = () => {
         const worksheet = wb.Sheets[sheetName];
         
         // Convert worksheet to JSON with headers as attributes
+				// @ts-ignore
         const jsonData = utils.sheet_to_json(worksheet, {
             header: 1,          // Use first row as headers
         });
         
         // Extract headers from first row
         const headers = jsonData.shift();
+				// @ts-ignore
 				result[sheetName] = [];
 				jsonData.forEach((r: any) => {
 					const row = {};
+					// @ts-ignore
 					headers.forEach((h: any, i: number) => {
+						// @ts-ignore
 						row[h] = r[i];
 					});
+					// @ts-ignore
 					if (row?.ID?.length) {
+						// @ts-ignore
 						result[sheetName].push(row);
 					}
 				});

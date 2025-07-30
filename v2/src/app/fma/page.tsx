@@ -11,33 +11,20 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const FMAIndex = (data: any) => {
-	const cassettes = data.cassettes.map((c: any) => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
-	const cds = data.cds.map((c: any) => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
-	const multis = data.multis.map((c: any) => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
-	const dats = data.dats.map((c: any) => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
-	const videos = data.videos.map((c: any) => { return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Item Name'] } });
-	return <>
-		{!!cassettes?.length && <>
-			<LetterHeader title="Cassettes" />
-			{cassettes?.map(MakeSimpleURI)}
-		</>}
-		{!!multis?.length && <>
-			<LetterHeader title="Multitrack Cassettes" />
-			{multis?.map(MakeSimpleURI)}
-		</>}
-		{!!cds?.length && <>
-			<LetterHeader title="CDs" />
-			{cds?.map(MakeSimpleURI)}
-		</>}
-		{!!dats?.length && <>
-			<LetterHeader title="DATs" />
-			{dats?.map(MakeSimpleURI)}
-		</>}
-		{!!videos?.length && <>
-			<LetterHeader title="Videos" />
-			{videos?.map(MakeSimpleURI)}
-		</>}
-	</>
+	return [
+		{ title: "Cassettes", obj: data.cassettes },
+		{ title: "Multitrack Cassettes", obj: data.multis },
+		{ title: "CDs", obj: data.cds },
+		{ title: "DATs", obj: data.dats },
+		{ title: "Videos", obj: data.videos },
+	].map(({ title, obj}: any, key: number) => {
+		return <div key={key}>
+			<LetterHeader title={title} />
+			{obj.map((c: any) => {
+				return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Artist']?.length ? c?.['Artist'] : c?.['Type'], children: c?.['Item Name'] }
+			}).map(MakeSimpleURI)}
+		</div>
+	});
 }
 
 const FishyMansionsArchives = ({ params }: { params?: any }) => {

@@ -24,14 +24,13 @@ const ShowFMA = ({ title, item }: any) => {
 }
 
 const FishyMansionsArchivesItem = (item: any) => {
-	const { cassette, cd, multi, video, dat }: any = item;
-	return <>
-		<ShowFMA title="Cassettes" item={cassette} />
-		<ShowFMA title="Multitrack Cassettes" item={multi} />
-		<ShowFMA title="CDs" item={cd} />
-		<ShowFMA title="DATs" item={dat} />
-		<ShowFMA title="Videos" item={video} />
-	</>
+	return [
+		{ title: "Cassettes", item: item?.cassette },
+		{ title: "Multitrack Cassettes", item: item?.multi },
+		{ title: "CDs", item: item?.cd },
+		{ title: "DATs", item: item?.dat },
+		{ title: "Videos", item: item?.video },
+	].map(ShowFMA);
 }
 
 const FishyMansionsArchives = ({ params }: { params?: any }) => {

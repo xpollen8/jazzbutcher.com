@@ -21,7 +21,7 @@ const FMAIndex = (data: any) => {
 		return <div key={key}>
 			<LetterHeader title={title} />
 			{obj.map((c: any) => {
-				return { uri: `/fma/${c.ID}`, text: c.ID, aux: c?.['Artist']?.length ? c?.['Artist'] : c?.['Type'], children: c?.['Item Name'] }
+				return { uri: `/fma/${c.ID}`, text: c.ID, aux: <>{c?.['Artist']?.length ? c?.['Artist'] : c?.['Type']} <span>{c?.['Date']}</span></>, children: c?.['Item Name'] }
 			}).map(MakeSimpleURI)}
 		</div>
 	});

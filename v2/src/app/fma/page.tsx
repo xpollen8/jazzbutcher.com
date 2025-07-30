@@ -51,7 +51,7 @@ const FishyMansionsArchives = ({ params }: { params?: any }) => {
 					<LetterHeader title="Fishy Mansions Archives" aux=<> As part of the JBC Documentary, we are striving to digitize all cassettes, CDs demo and live recordings from Pat Fish&apos;s estate. Here is an initial summary of the items being considered.
 					</> />
 					<main>
-						<FMAIndex {...data} />
+						<FMAIndex {...data?.results[0]} />
 					</main>
 				<Footer />
 			</>)}

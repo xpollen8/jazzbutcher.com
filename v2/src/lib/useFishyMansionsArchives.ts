@@ -132,7 +132,9 @@ const useFishyMansionsArchives = (slug: any) => {
 	if (!slug) return {
 		isLoading: false,
 		error: false,
-		data: FMAs
+		data: {
+			results: [ FMAs ],
+		},
 	};
 	return {
 		isLoading: false,

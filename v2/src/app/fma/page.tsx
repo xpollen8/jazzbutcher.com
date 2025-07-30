@@ -41,7 +41,7 @@ const FMAIndex = (data: any) => {
 }
 
 const FishyMansionsArchives = ({ params }: { params?: any }) => {
-	const { data, isLoading } = useFishyMansionsArchives();
+	const { data, isLoading } = useFishyMansionsArchives(null);
 
 	return (<>
 		{(data?.error) && <h1>{data?.error}</h1>}

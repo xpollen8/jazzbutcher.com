@@ -77,8 +77,7 @@ const FMA_cassettes = [
 	{ ID: "FMAC76", "Digitised": "Y", "Digitised by": "Philip Woodrow", "Type": "", "Artist": "Sumosonic", "Item Name": "Sumo Live – Copy", "Date": "October 97", "Side A Track List": "Monks / God's Green Earth / Business / Sputnik / Dracula / Saigon / Wo'Ful / Spacemen", "Side B Track List": "Copy", "Scanned?": "Yes", "Notes": "" },
 ];
 
-const FMA_cds = [
-{}
+const FMA_cds: any = [
 ];
 
 const FMA_multis = [

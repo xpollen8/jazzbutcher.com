@@ -131,15 +131,15 @@ const useFishyMansionsArchives = (slug: any) => {
 	*/
 	if (!slug) return {
 		isLoading: false,
-		error: false,
 		data: {
+			error: false,
 			results: [ FMAs ],
 		},
 	};
 	return {
 		isLoading: false,
-		error: false,
 		data: {
+			error: false,
 			results: [
 				...FMAs.cassettes.filter(f => slug ? f.ID == slug : 1),
 				...FMAs.cds.filter(f => slug ? f.ID == slug : 1),

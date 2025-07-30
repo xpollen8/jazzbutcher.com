@@ -12,6 +12,8 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 }) => {
 	const cleanG = g?.replace('</p>', '').replace('<p>', '<br/><br/>');
 	const cleanGX = <span dangerouslySetInnerHTML={{ __html: cleanG || '' }} />
+	const pattern = new RegExp(/(FMA[A-Z0-9]*)/);
+	const FMAraw = g?.match(pattern);
 	return (
 		(x || g || u || parseDate(d)) && <span className={s}>
 			{(t) && <><b>{t}</b>:{' '}</>}
@@ -28,6 +30,8 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 						if (cleanG?.length) return linkInternal(u, cleanG);
 						return linkExternal(u, parseDomain(u))
 					} else {
+						// auto-link Fishy Mansions Archives
+						if (FMAraw) return linkInternal(`/fma/${FMAraw[0]}`, g);
 						return cleanGX;
 					}
 				}

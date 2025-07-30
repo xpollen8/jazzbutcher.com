@@ -129,8 +129,14 @@ const useFishyMansionsArchives = (slug: any) => {
 		error,
 	}
 	*/
-	if (!slug) return { data: FMAs };
+	if (!slug) return {
+		isLoading: false,
+		error: false,
+		data: FMAs
+	};
 	return {
+		isLoading: false,
+		error: false,
 		data: {
 			results: [
 				...FMAs.cassettes.filter(f => slug ? f.ID == slug : 1),

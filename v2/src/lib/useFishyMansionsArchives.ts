@@ -78,6 +78,7 @@ const FMA_cassettes = [
 ];
 
 const FMA_cds = [
+{}
 ];
 
 const FMA_multis = [
@@ -142,11 +143,11 @@ const useFishyMansionsArchives = (slug: any) => {
 			error: false,
 			results: [
 				{
-					cassette: FMAs.cassettes.find(f => slug ? f.ID == slug : 1),
-					cd: FMAs.cds.find(f => slug ? f.ID == slug : 1),
-					multi: FMAs.multis.find(f => slug ? f.ID == slug : 1),
-					video: FMAs.videos.find(f => slug ? f.ID == slug : 1),
-					dat: FMAs.dats.find(f => slug ? f.ID == slug : 1),
+					cassette: FMAs.cassettes.find((f: any) => slug ? f?.ID == slug : 1),
+					cd: FMAs.cds.find((f: any) => slug ? f?.ID == slug : 1),
+					multi: FMAs.multis.find((f: any) => slug ? f?.ID == slug : 1),
+					video: FMAs.videos.find((f: any) => slug ? f?.ID == slug : 1),
+					dat: FMAs.dats.find((f: any) => slug ? f?.ID == slug : 1),
 				}
 			]
 		}

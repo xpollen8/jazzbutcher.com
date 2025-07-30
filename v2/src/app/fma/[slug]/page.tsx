@@ -9,36 +9,36 @@ import Footer from '@/components/Footer';
 import useFishyMansionsArchives from '@/lib/useFishyMansionsArchives';
 import LetterHeader from '@/components/LetterHeader';
 
-const ShowFMA = ({ title, item }: any) => {
+const FishyMansionsArchivesItem = ({ item, slug }: any) => {
 	if (!item) return;
-	return <>
-		<LetterHeader title={title} />
-		<ul>
-			{Object.keys(item)?.map((k, i): any => {
-				return <li key={i}>
-				<b>{k}</b> <i>{item[k]}</i>
-				</li>
-			})}
-		</ul>
-	</>;
-}
 
-const FishyMansionsArchivesItem = (item: any) => {
 	return [
-		{ title: "Cassettes", item: item?.cassette },
-		{ title: "Multitrack Cassettes", item: item?.multi },
-		{ title: "CDs", item: item?.cd },
-		{ title: "DATs", item: item?.dat },
-		{ title: "Videos", item: item?.video },
-	].map(ShowFMA);
+		{ title: "Cassettes", item: item['Cassettes'] },
+		{ title: "Multitrack Cassettes", item: item['Multi Cassettes'] },
+		{ title: "CDs", item: item['CDs'] },
+		{ title: "DATs", item: item['DATs'] },
+		{ title: "Videos", item: item['Videos'] },
+	].map(({ title, item }: any) => {
+		if (!item) return;
+		const obj = item?.find((f: any) => f?.ID == slug);
+		if (!obj) return;
+		return <>
+			<LetterHeader title={title} />
+			<ul>
+				{Object.keys(obj)?.map((k, i): any => {
+					return <li key={i}>
+					<b>{k}</b> <i>{obj[k]}</i>
+					</li>
+				})}
+			</ul>
+		</>;
+	});
 }
 
 const FishyMansionsArchives = ({ params }: { params?: any }) => {
-	const { data, isLoading } = useFishyMansionsArchives(params?.slug);
+	const { data, isLoading } = useFishyMansionsArchives();
 
 	const item = data?.results[0];
-
-	if (!isLoading && !item) return notFound();
 
 	return (<>
 		{(data?.error) && <h1>{data?.error}</h1>}
@@ -46,7 +46,7 @@ const FishyMansionsArchives = ({ params }: { params?: any }) => {
 			{(!isLoading) && (<>
 					<Header section="FMA" />
 					<main>
-						<FishyMansionsArchivesItem {...item} />
+						<FishyMansionsArchivesItem item={item} slug={params?.slug} />
 					</main>
 				<Footer />
 			</>)}

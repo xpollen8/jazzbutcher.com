@@ -1,8 +1,6 @@
 "use client";
 
 import { Suspense } from 'react';
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import LetterHeader from '@/components/LetterHeader';
 import useFishyMansionsArchives from '@/lib/useFishyMansionsArchives';

@@ -1,5 +1,4 @@
 import useSWR from 'swr';
-import { read, utils } from 'xlsx';
 
 const useFishyMansionsArchives = () => {
 	const fetcher = (url: string) => fetch(url).then((res) => res.json())

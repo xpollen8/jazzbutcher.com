@@ -18,27 +18,24 @@ const FishyMansionsArchivesItem = ({ item, slug }: any) => {
 		{ title: "CDs", item: item['CDs'] },
 		{ title: "DATs", item: item['DATs'] },
 		{ title: "Videos", item: item['Videos'] },
-	].map(({ title, item }: any) => {
-		if (!item) return;
+	].map(({ title, item }: any, key: number) => {
 		const obj = item?.find((f: any) => f?.ID == slug);
 		if (!obj) return;
-		return <>
+		return <div key={key}>
 			<LetterHeader title={title} />
-			<ul>
+			<ul className="listItem">
 				{Object.keys(obj)?.map((k, i): any => {
 					return <li key={i}>
 					<b>{k}</b> <i>{obj[k]}</i>
 					</li>
 				})}
 			</ul>
-		</>;
+		</div>;
 	});
 }
 
 const FishyMansionsArchives = ({ params }: { params?: any }) => {
 	const { data, isLoading } = useFishyMansionsArchives();
-
-	const item = data?.results[0];
 
 	return (<>
 		{(data?.error) && <h1>{data?.error}</h1>}
@@ -46,7 +43,7 @@ const FishyMansionsArchives = ({ params }: { params?: any }) => {
 			{(!isLoading) && (<>
 					<Header section="FMA" />
 					<main>
-						<FishyMansionsArchivesItem item={item} slug={params?.slug} />
+						<FishyMansionsArchivesItem item={data?.results[0]} slug={params?.slug} />
 					</main>
 				<Footer />
 			</>)}

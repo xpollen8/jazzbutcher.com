@@ -18,8 +18,9 @@ const FMAIndex = ({ items }: any) => {
 		{ title: "DATs", obj: items?.['DATs'] },
 		{ title: "Videos", obj: items?.['Videos'] },
 	].map(({ title, obj}: any, key: number) => {
-		return <div key={key}>
+		return <div key={key} className="listItem">
 			<LetterHeader title={title} />
+			<br />
 			{obj?.map((c: any) => {
 				return { uri: `/fma/${c.ID}`, text: c.ID, aux: <>{c?.['Artist']?.length ? c?.['Artist'] : c?.['Type']} <span>{c?.['Date']}</span></>, children: c?.['Item Name'] }
 			}).map(MakeSimpleURI)}
@@ -30,8 +31,6 @@ const FMAIndex = ({ items }: any) => {
 const FishyMansionsArchives = ({ params }: { params?: any }) => {
 	const { data, isLoading } = useFishyMansionsArchives();
 
-	const item = data?.results[0];
-
 	return (<>
 		{(data?.error) && <h1>{data?.error}</h1>}
 		<Suspense fallback=<>Loading...</> >
@@ -40,7 +39,7 @@ const FishyMansionsArchives = ({ params }: { params?: any }) => {
 					<LetterHeader title="Fishy Mansions Archives" aux=<> As part of the JBC Documentary, we are striving to digitize all cassettes, CDs demo and live recordings from Pat Fish&apos;s estate. Here is an initial summary of the items being considered.
 					</> />
 					<main>
-						<FMAIndex items={item} />
+						<FMAIndex items={data?.results[0]} />
 					</main>
 				<Footer />
 			</>)}

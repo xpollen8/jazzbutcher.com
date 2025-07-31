@@ -1,6 +1,7 @@
 "use server"
 
 import moment from 'moment';
+import * as XLSX from 'xlsx';
 
 import { localDate } from '@/lib/utils';
 import { type HashedType, type RecordType, type CommentType } from '@/lib/utils';
@@ -28,7 +29,7 @@ const fetchOptions = (url: string) => {
 	const options: HashedType = {
 		mode: 'no-cors'
 	};
-	if (url?.includes('feedback')) {
+	if (url?.includes('feedback') || url?.includes('gigsong_edit')) {
 		options['cache'] = 'no-cache';	// DO NOT CACHE FEEDBACK
 	} else {
 		options['next'] = { revalidate: 300 };
@@ -57,9 +58,53 @@ const doFetch = async (url: string) => {
 		});
 }
 
+const doFetchFileXLS = async (url: string) => {
+	if (cache[url]) {
+		//console.log("CACHE HIT", url);
+		return cache[url];
+	}
+	const response = await fetch(url);
+	const arrayBuffer = await response.arrayBuffer();
+	const data = new Uint8Array(arrayBuffer);
+	const workbook = XLSX.read(data, { type: 'array' });
+
+	// Initialize result object to store sheets
+	const result = {};
+
+	// Process each worksheet
+	workbook.SheetNames.forEach(sheetName => {
+		const worksheet = workbook.Sheets[sheetName];
+		
+		// Convert worksheet to JSON with headers as attributes
+		// @ts-ignore
+		const jsonData = XLSX.utils.sheet_to_json(worksheet, {
+				header: 1,          // Use first row as headers
+		});
+		
+		// Extract headers from first row
+		const headers = jsonData.shift();
+		// @ts-ignore
+		result[sheetName] = [];
+		jsonData.forEach((r: any) => {
+			const row = {};
+			// @ts-ignore
+			headers.forEach((h: any, i: number) => {
+				// @ts-ignore
+				row[h] = r[i];
+			});
+			// @ts-ignore
+			if (row?.ID?.length) {
+				// @ts-ignore
+				result[sheetName].push(row);
+			}
+		});
+	});
+	cache[url] = result;
+	return cache[url];
+}
+
 const doPostToDataServer = async (path: string, body: any, args?: string) => {
 	const url = (!args) ? `${process.env.JBC_DATA_SERVER}/api/${path}` : `${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`;
-	console.log("doPostToDataServer", { path, body, url });
 	/*
 	if (cache[url]) {
 		//console.log("CACHE HIT", url);
@@ -91,6 +136,8 @@ const doPostToDataServer = async (path: string, body: any, args?: string) => {
 		});
 }
 
+const apiXLSFromStaticServer = async (path: string) => await doFetchFileXLS(`${process.env.JBC_HTDB_SERVER}/static/${path}`);
+
 const apiDataFromHTDBServer = async (path: string) => await doFetch(`${process.env.JBC_HTDB_SERVER}/htdb/${path}`);
 
 const apiDataFromDataServer = async (path: string, args?: string) => {
@@ -106,9 +153,18 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 
 	if (formData) {
 		// POST
-		return await doPostToDataServer(path, formData, args);
+		switch (path) {
+			case 'gigsong_edit':
+				return await doPostToDataServer(path, formData, args);
+				break;
+			default:
+				return await doPostToDataServer(path, formData, args);
+		}
 	} else {
 		switch (path) {
+			case 'FMA.xls':
+				return await apiXLSFromStaticServer(path);
+				break;
 			case 'lyrics':
 				return lyricsStatic;
 				break;

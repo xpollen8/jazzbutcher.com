@@ -17,11 +17,13 @@ const FMAIndex = ({ items }: any) => {
 		{ title: "Videos", obj: items?.['Videos'] },
 	].map(({ title, obj}: any, key: number) => {
 		return <div key={key} className="listItem">
-			<LetterHeader title={title} />
+			<details>
+			<summary className="tagClickable"> {title} </summary>
 			<br />
 			{obj?.map((c: any) => {
 				return { uri: `/fma/${c.ID}`, text: c.ID, aux: <>{c?.['Artist']?.length ? c?.['Artist'] : c?.['Type']} <span>{c?.['Date']}</span></>, children: c?.['Item Name'] }
 			}).map(MakeSimpleURI)}
+			</details>
 		</div>
 	});
 }

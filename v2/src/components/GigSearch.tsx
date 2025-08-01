@@ -194,7 +194,8 @@ const layoutGigs = (record: RecordType, key: number) => {
 	</div>
 }
 
-const searchRegex = /[^a-z0-9'_ ]/gi;
+// special chars which exist in seartchable JBC venus and city names
+const searchRegex = /[^a-z0-9'_ü,&éßΔΣ ]/gi;
 
 const filterBy = (res: RecordType, query: string, recordFilter: any) => {
 	// convert incoming query string into reasonable search terms
@@ -216,6 +217,8 @@ const filterBy = (res: RecordType, query: string, recordFilter: any) => {
 	}
 
 	const terms = searchTerms(query);
+
+	console.log("TERM", terms);
 
 	const searchRecord = (record: RecordType, target: string, terms: string[]) => (
 		{

@@ -26,9 +26,9 @@ const recentNews = [
 		credit: 'David Whittemore',
 		body: <>
 			I fixed the display of things like Uumlats in city and venue names, and added the ability to search
-			gigs when items contain "special characters".
+			gigs when items contain &quot;special characters&quot;.
 			<p />
-			Also added is the ability to search gigs by "State".
+			Also added is the ability to search gigs by &quot;State&quot;.
 			<p />
 			There is a new section for the <Link href="/fma">Fishy Mansions Archives</Link> items
 			which are being digitized as part of the Documentary efforts.

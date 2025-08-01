@@ -338,11 +338,13 @@ const Content = ({ gig }: { gig: any }) => {
 
 	// joins.press_* (press table)
 	gig?.press?.forEach((t: any) => {
-		if (t.url?.includes('/press') || t.url?.includes('/gig')) {
+		if (t.url?.includes('/press')) {
 			const types = t.type.split(',');
 			types.forEach((tt: string) => {
-				const nameIt = `press_${tt}`;
+				//const nameIt = `press_${tt}`;
+				const nameIt = `press_gig`;
 				switch (tt) {
+					case 'preshow':
 					case 'gig':
 					case 'album':
 					case 'interview':
@@ -350,11 +352,15 @@ const Content = ({ gig }: { gig: any }) => {
 					case 'pat':
 					case 'retrospective':
 						if (!joins[nameIt]) joins[nameIt] = [];
-						joins[nameIt].push(t);
+						if (!joins[nameIt]?.find((f: any) => f.url === t.url)) {
+							joins[nameIt].push(t);
+						}
 						break;
 					default:
 						if (!joins['press_other']) joins['press_other'] = [];
-						joins['press_other'].push(t);
+						if (!joins[nameIt]?.find((f: any) => f.url === t.url)) {
+							joins['press_other'].push(t);
+						}
 				}
 			})
 		}

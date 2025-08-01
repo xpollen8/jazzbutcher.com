@@ -2860,7 +2860,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=preshow,
 		url=${jbc_press}/1989_press_oxford_isis_no1798_p33.html,
-		images=${jbc_images}/1989/1989_press_oxford_isis_no1798_p33;;Michael Whitworth,
+		thumb=${jbc_images}/1989/1989_press_oxford_isis_no1798_p33;;Michael Whitworth,
 		credit=Dominic Green and Nick Johnson,
 		publication=Isis (Oxford) no.1798,
 		title=The Jazz Butcher,

@@ -18,7 +18,7 @@ const RecentPress = (props: any) => {
 			{press.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">
 					<div className="date">{dateDiff(p.dtadded, '')}</div>
-					<Link href={p.url}><b>{!!p.publication?.length && p.publication + ':'} {p.title}</b></Link> <div className="date">Published: {p.dtpublished.substr(0, 10)}</div>
+					<Link href={p.url}><b>{!!p.publication?.length && p.publication + ':'} {p.title}</b></Link> <div className="date">Published: {p?.dtpublished?.substr(0, 10)?.replace(/-00/g, '')}</div>
 				</div>
 			})}
 		</blockquote>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Suspense } from 'react';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import LetterHeader from '@/components/LetterHeader';
@@ -47,6 +48,7 @@ const FishyMansionsArchives = ({ params }: { params?: any }) => {
 			{(!isLoading) && (<>
 					<Header section="FMA" />
 					<LetterHeader title="Fishy Mansions Archives" aux=<> As part of the JBC Documentary, we are striving to digitize all cassettes, CDs demo and live recordings from Pat Fish&apos;s estate. Here is an initial summary of the items being considered.
+					<Image className="w-full"  width={250} height={250} src={`https://v1.jazzbutcher.com/static/20241022_FMA1.jpg`} alt="fish mansion archive CDs" />
 					</> />
 					<main>
 						<FMAIndex items={data?.results[0]} />

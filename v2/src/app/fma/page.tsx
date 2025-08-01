@@ -1,12 +1,22 @@
 "use client";
 
+import Link from 'next/link';
 import { Suspense } from 'react';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import LetterHeader from '@/components/LetterHeader';
 import useFishyMansionsArchives from '@/lib/useFishyMansionsArchives';
+import { ts2URI } from '@/lib/utils';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+
+const maybeLink = (obj: any) => {
+	if (obj?.['Type'] === 'Live' && obj?.['Date']?.length) {
+		return <Link href={`/gigs/${ts2URI(obj?.['Date'])}`}>{obj?.['Date']}</Link>;
+	} else {
+		return obj?.['Date'];
+	}
+}
 
 const FMAIndex = ({ items }: any) => {
 	return [
@@ -21,7 +31,7 @@ const FMAIndex = ({ items }: any) => {
 			<summary className="tagClickable"> {title} </summary>
 			<br />
 			{obj?.map((c: any) => {
-				return { uri: `/fma/${c.ID}`, text: c.ID, aux: <>{c?.['Artist']?.length ? c?.['Artist'] : c?.['Type']} <span>{c?.['Date']}</span></>, children: c?.['Item Name'] }
+				return { uri: `/fma/${c.ID}`, text: c.ID, aux: <>{c?.['Artist']?.length ? c?.['Artist'] : c?.['Type']} {maybeLink(c)}</>, children: c?.['Item Name'] }
 			}).map(MakeSimpleURI)}
 			</details>
 		</div>

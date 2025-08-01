@@ -246,9 +246,14 @@ const GigDetails = ({ gig, joins }: any) => {
 			<div className="flex flex-wrap gap-1">
 				{(gig?.datetime) && doIt('Date', dateDiff(gig.datetime, ''))}
 				{(gig?.ticketweb) && doIt('Tickets', <Link href={gig.ticketweb}>{parseDomain(gig.ticketweb)}</Link>)}
-				{doIt('Venue', <Link href={`/gigs?f=venue&q="${gig.venue}"`}>{gig.venue}</Link>)}
+				{doIt('Venue', <Link href={`/gigs?f=venue&q="${encodeURIComponent(gig.venue)}"`}>{gig.venue}</Link>)}
 				{(gig?.eventweb) && doIt('Venue Website', <Link href={gig.eventweb}>{parseDomain(gig.eventweb)}</Link>)}
-				{(gig?.city) && doIt('Location', <>{htmlString(gig?.address)} {(gig?.city && <Link href={`/gigs?f=city&q="${gig.city}"`}>{htmlString(gig?.city)}</Link>)} {gig?.country ?? ''} {gig?.postalcode ?? ''}</>)}
+				{(gig?.city) && doIt('Location', <>
+					{htmlString(gig?.address)}{' '}
+					{(gig?.city && <Link href={`/gigs?f=city&q="${encodeURIComponent(gig.city)}"`}>{htmlString(gig?.city)}</Link>)}{' '}
+					{(gig?.state && <Link href={`/gigs?f=state&q="${encodeURIComponent(gig.state)}"`}>{htmlString(gig?.state)}</Link>)}{' '}
+					{gig?.country ?? ''} {gig?.postalcode ?? ''}
+				</>)}
 				{(gig?.phone) && doIt('Telephone', gig.phone)}
 				{(gig?.cost) && doIt('Admission', gig.cost)}
 			</div>

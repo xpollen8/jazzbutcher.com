@@ -218,8 +218,6 @@ const filterBy = (res: RecordType, query: string, recordFilter: any) => {
 
 	const terms = searchTerms(query);
 
-	console.log("TERM", terms);
-
 	const searchRecord = (record: RecordType, target: string, terms: string[]) => (
 		{
 			...record,
@@ -254,6 +252,7 @@ const filterGigsByField = (res: any, query: string, field: string) => {
 
 const filterGigsByVenue = (res: any, query: string) => filterGigsByField(res, query, 'venue');
 const filterGigsByCity = (res: any, query: string) => filterGigsByField(res, query, 'city');
+const filterGigsByState = (res: any, query: string) => filterGigsByField(res, query, 'state');
 const filterGigsByCountry = (res: any, query: string) => filterGigsByField(res, query, 'country');
 const filterGigsBySupport = (res: any, query: string) => filterGigsByField(res, query, 'alsowith');
 const filterGigsBySong = (res: any, query: string) => filterGigsByField(res, query, 'song');
@@ -424,6 +423,7 @@ const buildGigSearchOptions = (noun: string, text: string, route: string) =>
 const gigSearchOptions: HashedType[] = [
 	{ ...buildGigSearchOptions('venue', 'Venue', 'gigs') },
 	{ ...buildGigSearchOptions('city', 'City', 'gigs') },
+	{ ...buildGigSearchOptions('state', 'State', 'gigs') },
 	{ ...buildGigSearchOptions('anything', 'Anywhere in details', 'gigs'),
 		filter: filterGigsByAnything,
 	},

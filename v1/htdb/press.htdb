@@ -2858,6 +2858,18 @@ subhead=(20 December 1957 – 5 October 2021),
 		dt=1989-02,
 		added=2023-11-28)}
 
+	${addPress(type=preshow,
+		url=${jbc_press}/1989_press_oxford_isis_no1798_p33.html,
+		images=${jbc_images}/1989/1989_press_oxford_isis_no1798_p33;;Michael Whitworth,
+		credit=Dominic Green and Nick Johnson,
+		publication=Isis (Oxford) no.1798,
+		title=The Jazz Butcher,
+		headline=A Bath in Bacon with Butch,
+		location=Oxford\, England,
+		dt=1989,
+		datetime=1989-05-13,
+		added=2025-08-01)}
+
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/2016_press_rollingstone_germany.html,
 		images=${jbc_images}/2016/2016_press_rollingstone_germany,
@@ -15367,6 +15379,35 @@ Tuesday, 16th September, 2003<br />
 	</div>
   )})}
 	${jbc_footer}
+#live	endif
+
+#define	1989_press_oxford_isis_no1798_p33.html
+#live	if (getval(page) = 1989_press_oxford_isis_no1798_p33.html)
+	${extractPress(
+		body=${literalizeCommas(
+		The Jazz Butcher, aka Pat Fish, has been described as 'the Hamlet of Pop'; he mixes a heavy cocktail of musical Butchery, everything from French ballads to garage thrash, the result has been shaken and stirred across Europe and America. We met him prior to his appearance at the Teddy Hall 'Summer Fling'...
+		<p />
+		One day in 1976, Pat Fish came up to Merton as an undergraduate, expecting a world stimulated by intellectual conversation. However, "after a week, all I saw was all these people with their noses in books, like '0' Levels, so I thought, 'Fuck that, they said this was going to be different.' So I went down the pub."
+		<p />
+		It seems that the young proto- Butch never really left it: "It's quite scary walking around the town: there are very few places where I haven't been seriously lagging drunk." Other memories include never meeting his tutor for Finals, ("He lived in another college, and as I didn't go to the first tutorial, he must have forgotten about me,"), finishing them, ("I went back with a mate, rolled a massive spliff, and said, 'Fucking students',"), and an encounter with a young Rowan Atkinson, who was dancing with a group of Frank Zappa impersonators, "A hideous prune, doing pathetic mime things, so like bad Oxford it wasn't true. Every time I see him on the telly I think, 'Why didn't I hit him then?' Poncey student doing poncey faces." And as for being a student, "It really was an excuse to be a bum. People who say students are bums, well, I don't think many are, and I think that's the problem with the majority of students. So bum out a bit more!"
+		<p />
+		Having bummed a Third in Classics, he "gave up trying to be clever", got a day job and (literally) unconsciously drifted onto Northampton indie 'Glass Records', where he made the first of many classic albums, 'Bath in Bacon'. "At first I never expected anyone to hear me apart from my poor old mum. The original band was just a bunch of mates playing in the living room, and suddenly we real ised,'What's going on? We're drunk every night! We can't see!"
+		<p />
+		"The old band was much more prone to spectacular catastrophes," such as the departure of longtime guitarist/drinking partner Max Eider over 'musical differences', although "the actual spark was him throwing a table at me in Zurich". The Jazz Butcher mk. 2 has experienced similar difficulties, mainly to do with maintaining their vertical stability, and breaking in new bassist Larry, who "went psychokinetic with his bathroom. He destroyed it by entering it. Cups were flying off the shelves, his toothbrush went down the loo, he broke two glasses, and the mirror cracked."
+		<p />
+		The Butcher's music is spiked with humorous tales of 'Zombie Love', 'Death Dentists','Groovin' in The Bus Lane', and bio-degradable fish, about whom he is passionately defensive, "The story that they only havea two-second memory is a fake, a justifying thing. At an Artists For Animals benefit in Manchester, I got a badge with a goldfish on it, saying 'Bored, lonely, and a long way from home.' I would wear it, but I used it for taking drugs on under a beer glass when we had no skins."
+		<p />
+		Although he is often comical, he is primarily a musician, "I don't like it when we get reviewed as an interesting oddity from Bedlam...we're not a loony show, it's music, and that's what we're most proud of."
+		<p />
+		At the Teddy Hall event, Butch and the boys romped through a fast, furious set, although Pat was experiencing bouts of ataxia. Much japery was had by all, "Otherwise there wouldn't be any point in doing it," he declared.
+		<p />
+		Butch has a new album out in late June on Creation Records, and is also toying with the idea of writing an autobiography, tentatively titled 'Bad Things Can Happen To Anyone', although his drummer Paul's interjection halfway through our little chat might suffice equally well, "Fuckin"ell, I got so spliffed out last night...".
+		<p />
+		Dominic Green and Nick Johnson
+		<p />
+		33 
+		)}
+	)}
 #live	endif
 
 #define	198703_press_rockdelux.html

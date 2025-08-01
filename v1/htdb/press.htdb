@@ -79,7 +79,7 @@
 		${parseImages(prefix=${prefix}, field=thumb)}
 #live	if (defined(${prefix}->todo))
 			<center style="background: red; padding: 5px; margin-bottom: 5px;">
-				<b style="margin: 3px; color: white;">ATTENTTION NEEDED</b>: ${${prefix}->todo}
+				<b style="margin: 3px; color: white;">ATTENTION NEEDED</b>: ${${prefix}->todo}
 			</center>
 #live	endif
 #live	endif
@@ -1489,7 +1489,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211112_press_mojo.html,
-		images=${jbc_images}/20211112/20211112_press_mojo;;Glass Modern;;https://twitter.com/glassmodern1/status/1459187934049947650,
+		thumb=${jbc_images}/20211112/20211112_press_mojo;;Glass Modern;;https://twitter.com/glassmodern1/status/1459187934049947650,
 		title=The Jazz Butcher,
 		headline=Gentleman adventurer,
 		subhead=Born 1957,
@@ -2143,7 +2143,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19990916_press_seattle_rocket.html,
-		images=${jbc_images}/19990916/19990916_press_seattle_rocket;;Pat Fish Notebook,
+		thumb=${jbc_images}/19990916/19990916_press_seattle_rocket;;Pat Fish Notebook,
 		todo=OCR,
 		credit=Tizzy Asher,
 		publication=The Rocket,
@@ -2153,7 +2153,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19990916_press_seattle.html,
-		images=${jbc_images}/19990916/19990916_press_seattle;;Pat Fish Notebook,
+		thumb=${jbc_images}/19990916/19990916_press_seattle;;Pat Fish Notebook,
 		todo=OCR,
 		credit=Barara Mitchell,
 		publication=Up & Coming,
@@ -2579,7 +2579,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Rachel McGrath,
 		publication=NN Journal,
 		location=Northampton\, England,
-		images=${jbc_images}/20130615/20130615_GregHiggings_Pat;;Greg Higgins;;;;;;New York\, 2013$$${jbc_images}/20180804/20180804_pat;;;;;;;;Playing at the Albion Bar Brewery in Northampton\, 2018$$${jbc_images}/19891119/19891119_del_patsat;;David Whittemore;;;;;;Milwaukee\, Wisconsin\, USA 1989$$,
+		thumb=${jbc_images}/20130615/20130615_GregHiggings_Pat;;Greg Higgins;;;;;;New York\, 2013,
+		images=${jbc_images}/20180804/20180804_pat;;;;;;;;Playing at the Albion Bar Brewery in Northampton\, 2018$$${jbc_images}/19891119/19891119_del_patsat;;David Whittemore;;;;;;Milwaukee\, Wisconsin\, USA 1989$$,
 		title=Pat Fish obituary,
 		headline=Founder of the Jazz Butcher music outfit and pop’s ‘Last of the Gentleman Adventurers’ was UK music’s best kept secret,
 		source=https://www.nnjournal.co.uk/p/pat-fish-obituary,

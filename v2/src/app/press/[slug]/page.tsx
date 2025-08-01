@@ -23,7 +23,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 		<Suspense fallback=<>Loading...</> >
 			{(!isLoading) && (<>
 					<Header section="press"
-						title={title && `${title} ${article?.dtpublished?.substr(0, 10).replace(/-00/g, '-01')}`} />
+						title={title && `${title} ${article?.dtpublished?.substr(0, 10).replace(/-00/g, '')}`} />
 					<main>
 						<PressItem item={article} />
 					</main>

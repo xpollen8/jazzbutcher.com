@@ -104,6 +104,7 @@ const PressItem = ({ item }: { item: any }) => {
 		<ArticleInfoBox article={item} />
 		<ArticleTitle article={item} />
 		<ArticleMedia article={item} />
+		<ArticleAudio article={item} />
 		{(!!item?.body?.length) && (() => {
 			const says = parseCaptionsSourcesEtc(item?.body) || [];
 			return (says?.length) && (<>
@@ -112,7 +113,6 @@ const PressItem = ({ item }: { item: any }) => {
 				</>)
 		})()}
 		<ArticleAnnotation article={item} />
-		<ArticleAudio article={item} />
 	</>
 }
 

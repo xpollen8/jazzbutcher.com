@@ -20,6 +20,22 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: `Website/search improvement`,
+		dt: '2025-07-31',
+		category: 'maintenance',
+		credit: 'David Whittemore',
+		body: <>
+			I fixed the display of things like Uumlats in city and venue names, and added the ability to search
+			gigs when items contain "special characters".
+			<p />
+			Also added is the ability to search gigs by "State".
+			<p />
+			There is a new section for the <Link href="/fma">Fishy Mansions Archives</Link> items
+			which are being digitized as part of the Documentary efforts.
+			<p />
+		</>
+	},
+	{
 		subject: `1992 US Tour full shows, others`,
 		dt: '2025-07-20',
 		category: 'media',

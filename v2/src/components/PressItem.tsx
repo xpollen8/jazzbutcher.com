@@ -34,7 +34,7 @@ const PressItem = ({ item }: { item: any }) => {
 							{(t === 'album' && article?.album) && doItem('Album Review', expand(article.album))}
 					</div>))}
 					{(!!parseInt(article?.dtadded, 10)) && doItem('Item added', dateDiff(article.dtadded, ''))}
-					{(article?.todo) && doItem('ATTENTTION NEEDED', article.todo)}
+					{(article?.todo) && doItem('ATTENTION NEEDED', article.todo)}
 				</div>
 			</div>
 		</>)

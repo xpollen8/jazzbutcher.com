@@ -11,7 +11,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const maybeLink = (obj: any) => {
-	if (obj?.['Type'] === 'Live' && obj?.['Date']?.length) {
+	if (obj?.['Type'] === 'Live' && obj?.['Date']?.length === 10) {
 		return <Link href={`/gigs/${ts2URI(obj?.['Date'])}`}>{obj?.['Date']}</Link>;
 	} else {
 		return obj?.['Date'];

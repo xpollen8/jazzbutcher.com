@@ -1130,7 +1130,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19931115_press_lEstRepublicainNewspaper.html,
-		images=${jbc_images}/19931115/19931115_press_lEstRepublicainNewspaper;;Pierre Guillaume,
+		thumb=${jbc_images}/19931115/19931115_press_lEstRepublicainNewspaper;;Pierre Guillaume,
 		publication=l'Est Republicain Newspaper,
 		todo=OCR,
 		title=Gig clipping,

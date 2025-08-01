@@ -156,6 +156,8 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 	const useArtist = artist?.replace('NULL','');
 	const useAuthor = author?.replace('NULL','');
 
+	const expandAll = (s: string) => s?.split(' ')?.map((r: string) => expand(r.replace('${','').replace('}','')));
+
 	const main = () => {
 		if (useMediaurl && !disableVideo) {
 			if (useMediaurl?.includes('mixcloud.com')) {
@@ -190,7 +192,7 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 				</>
 			} else if (useMediaurl?.includes('.mp3') || useMediaurl?.includes('google')) {
 				return (<>
-					<LinkAudio version={version} lookup={lookup} parent={parent} title={useTitle} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={useArtist} author={useAuthor} comment={comment} ordinal={ordinal} setnum={setnum} collection={collection} />
+					<LinkAudio version={version} lookup={lookup} parent={parent} title={useTitle} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={useArtist} author={useAuthor} comment={expandAll(comment)} ordinal={ordinal} setnum={setnum} collection={collection} />
 					{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
 					{collection}
 					{children}
@@ -216,15 +218,15 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 			return (<div className="listItem">
 				{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 				{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
-				{(useAuthor) && <span className="smalltext"> ({useAuthor}) </span>}
-				{(comment) && <span className="smalltext"> ({comment}) </span>}
+				{(useAuthor) && <span className="smalltext"> ({expandAll(useAuthor)}) </span>}
+				{(comment) && <span className="smalltext"> ({expandAll(comment)}) </span>}
 				{/*(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>*/}
 			</div>);
 		}
 	}
 	return (<>
 		{main()}
-		{(performers) && <div className="smalltext"> {performers.split(' ').map((r: string) => { console.log("X", r); return <>{' '}{expand(r.replace('${','').replace('}',''))}</> })} </div>}
+		{(performers) && <div className="smalltext"> {expandAll(performers)} </div>}
 		<Performers datetime={datetime} />
 	</>);
 }

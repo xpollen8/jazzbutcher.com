@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import ImageStrip from '@/components/ImageStrip';
 import EmbedMedia from '@/components/EmbedMedia';
 import Tag from '@/components/Tag';

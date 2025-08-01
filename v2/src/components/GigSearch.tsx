@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import { useState, useTransition } from 'react';
 import { type RecordType, type HashedType } from '@/lib/utils';
-import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parseDay, num2mon, ts2URI } from '@/lib/utils';
+import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parseDay, num2mon, ts2URI, htmlString } from '@/lib/utils';
 import { removeHTML } from '@/components/GenericWeb';
 import GigGraph, { GigBarTypes } from '@/components/GigGraph';
 import { AutoLinkPlayer, AutoLinkSong, AutoLinkAct } from '@/lib/defines';
@@ -140,8 +140,8 @@ export const BannerGigs = (results: HashedType, searchYear?: number) => {
 const Venue = ({ record }: { record: RecordType }) =>
 <div style={{ paddingTop: '4px', paddingBottom: '6px' }}>
 		{(record?.title) && <div className="gig_project">&quot;{record?.title}&quot;</div>}
-		<div dangerouslySetInnerHTML={{__html: record?.venue}} style={{ fontWeight: '900', fontSize: '1.5em' }} />
-		{record?.city}
+		<div style={{ fontWeight: '900', fontSize: '1.5em' }} >{htmlString(record?.venue)}</div>
+		{htmlString(record?.city)}
 		{' '}
 		{record?.state}
 		{' '}

@@ -27,6 +27,8 @@ export type CommentType = NewCommentType & {
 	feedback_id: number
 }
 
+export const htmlString = (x: any) => x ? <span dangerouslySetInnerHTML={{ __html: x }} /> : '';
+
 export const linkExternal = (href: string, text?: string | React.ReactElement): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
 export const linkInternal = (href: string, text?: string | React.ReactElement): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 

@@ -9,7 +9,7 @@ import PhotoSet from '@/components/PhotoSet';
 import TheGigPlayer, { GigPlayerHeader, GigPlayerFooter } from '@/components/GigPlayer';
 
 import { AutoLinkPlayer, AutoLinkAct } from '@/lib/defines';
-import { type HashedType, parseYear, parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, ts2URI, dateDiff, startSeconds } from '@/lib/utils';
+import { type HashedType, parseYear, parseDomain, parseProject, parseHourAMPM, parseDayOrdinal, parseMonthName, datesEqual, gigPage2Datetime, ts2URI, dateDiff, startSeconds, htmlString } from '@/lib/utils';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
@@ -240,7 +240,7 @@ const GigDetails = ({ gig, joins }: any) => {
 	const showType = gig?.extra?.includes('interview') ? 'Interview' : 'Live Performance';
 	return (<>
 		<Tag>
-		<b>{showType}</b> - {gig?.venue} - {gig?.city} {gig?.country}
+		<b>{showType}</b> - {htmlString(gig?.venue)} - {htmlString(gig?.city)} {gig?.country}
 		</Tag>
 		<blockquote className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>
 			<div className="flex flex-wrap gap-1">
@@ -248,7 +248,7 @@ const GigDetails = ({ gig, joins }: any) => {
 				{(gig?.ticketweb) && doIt('Tickets', <Link href={gig.ticketweb}>{parseDomain(gig.ticketweb)}</Link>)}
 				{doIt('Venue', <Link href={`/gigs?f=venue&q="${gig.venue}"`}>{gig.venue}</Link>)}
 				{(gig?.eventweb) && doIt('Venue Website', <Link href={gig.eventweb}>{parseDomain(gig.eventweb)}</Link>)}
-				{(gig?.city) && doIt('Location', <>{gig?.address ?? ''} {(gig?.city && <Link href={`/gigs?f=city&q="${gig.city}"`}>{gig?.city ?? ''}</Link>)} {gig?.country ?? ''} {gig?.postalcode ?? ''}</>)}
+				{(gig?.city) && doIt('Location', <>{htmlString(gig?.address)} {(gig?.city && <Link href={`/gigs?f=city&q="${gig.city}"`}>{htmlString(gig?.city)}</Link>)} {gig?.country ?? ''} {gig?.postalcode ?? ''}</>)}
 				{(gig?.phone) && doIt('Telephone', gig.phone)}
 				{(gig?.cost) && doIt('Admission', gig.cost)}
 			</div>

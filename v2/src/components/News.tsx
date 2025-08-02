@@ -30,7 +30,7 @@ const recentNews = [
 			<p />
 			Also added is the ability to search gigs by &quot;State&quot;.
 			<p />
-			There is a new section for the <Link href="/fma">Fishy Mansions Archives</Link> items
+			There is a new section for the <b><Link href="/fma">Fishy Mansions Archives</Link></b> items
 			which are being digitized as part of the Documentary efforts.
 			<p />
 			Check out the <b>Recent gig-related images</b> section below for gig page updates!

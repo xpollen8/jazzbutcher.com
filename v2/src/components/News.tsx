@@ -21,7 +21,7 @@ type NewsItemType = {
 const recentNews = [
 	{
 		subject: `Website/search improvement`,
-		dt: '2025-07-31',
+		dt: '2025-08-01',
 		category: 'maintenance',
 		credit: 'David Whittemore',
 		body: <>
@@ -32,6 +32,8 @@ const recentNews = [
 			<p />
 			There is a new section for the <Link href="/fma">Fishy Mansions Archives</Link> items
 			which are being digitized as part of the Documentary efforts.
+			<p />
+			Check out the <b>Recent gig-related images</b> section below for gig page updates!
 			<p />
 		</>
 	},

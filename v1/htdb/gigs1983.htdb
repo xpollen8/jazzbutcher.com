@@ -68,7 +68,7 @@
 
 	recording=${literalizeCommas( ${w}, ${q(5)}, ${p(C)} )},
 	who=${literalizeCommas( ${pat}, ${at}, ${ll}, ${max}, ${rolo}, ${hook} )},
-	photosets=
+	cassettes=
 	   /images/FM/FMAC20_cover.jpg$$
 	   /images/FM/FMAC20_songs.jpg$$
 	   Fishy Mansions;;;;2025-07-17
@@ -79,7 +79,7 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${at}, ${rolo}, ${hask} )},
-	photosets=
+	cassettes=
 	   /images/FM/FMAC20_cover.jpg$$
 	   /images/FM/FMAC20_songs.jpg$$
 	   Fishy Mansions;;;;2025-07-17
@@ -91,7 +91,7 @@
 
 	ootleg=${literalizeCommas( ${w}, ${q(4)}, ${p(D)} )},
 	who=${literalizeCommas( ${pat}, ${at}, ${rolo}, ${max} )},
-	photosets=
+	cassettes=
 	   /images/FM/FMAC20_cover.jpg$$
 	   /images/FM/FMAC20_songs.jpg$$
 	   Fishy Mansions;;;;2025-07-17

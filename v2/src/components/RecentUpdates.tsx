@@ -79,7 +79,8 @@ const RecentGigMedia = (props: any) => {
 			{Object.keys(results)?.map((p: any, key: number) => {
 				// @ts-ignore
 				const items = results[p];
-				return <details key={key} className="listItem">
+				return <div key={key} className="listItem">
+					<details>
 					<summary className="tagClickable">{p}: {items.length}</summary>
 					<blockquote>
 						{items.map((p: any, key: number) => {
@@ -88,11 +89,13 @@ const RecentGigMedia = (props: any) => {
 						return <div key={key} className="listItem">
 							<Link href={href}><Image src={thumb} width={250} height={250} alt={p.image_caption || p.type} /></Link>
 							<div className="date"><Link href={`/gigs/${ts2URI(p.datetime)}`}>{dateDiff(p.datetime, '')}</Link></div>
+							{/*// @ts-ignore */}
 							<Attribution g={p.credit} d={p.credit_date} x={(p.image_caption) ? <span className="date">{p.image_caption}<br /></span> : ''} />
 						</div>
 						})}
 					</blockquote>
-				</details>
+					</details>
+				</div>
 			})}
 		</blockquote>
 	</details>

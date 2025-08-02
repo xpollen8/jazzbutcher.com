@@ -130,7 +130,7 @@
 #<pre>
 #${stripTags(${list})}
 #</pre>
-#live	if (getval(cgi->http_x_real_ip) = X192.184.195.208)
+#live	if (getval(cgi->http_x_real_ip) = X192.184.195.146)
 #live	if (makeArray(deparse_list, \[comma], ${stripTags(${list})}))
 #**${deparse_list->numResults}**
 #live		loop(l, 1, ${deparse_list->numResults})
@@ -3552,7 +3552,9 @@ ${define(_set, false)}
 #live		endif
 #live		else
 		<div class="ml1">
-#live	if (sql(insert IGNORE into gigmedia set type='setlist', datetime="${${prefix}->datetime}", image="${ts2SetlistLink(${${prefix}->datetime})}"))
+#live	if (getval(UX))
+#live		if (sql(insert IGNORE into gigmedia set type='setlist', datetime="${${prefix}->datetime}", image="${ts2SetlistLink(${${prefix}->datetime})}"))
+#live		endif
 #live	endif
 			<div class="ml-panel" style="${colorSet(1)};">
 				<a href="${ts2SetlistLink(ts=${_gig->datetime})}"><img alt="[setlist]" src="${ts2Setlist(ts=${_gig->datetime}, width=500)}"></a>

@@ -2,12 +2,14 @@
 
 import { Suspense } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Tag from '@/components/Tag';
 import EmbedMedia from '@/components/EmbedMedia';
 import useRecentUpdates from '@/lib/useRecentUpdates';
-import { dateDiff } from '@/lib/utils';
+import { dateDiff, ts2URI } from '@/lib/utils';
 import { feedbackURI2Pathname } from '@/lib/usePageComments';
 import InfoTag from '@/components/InfoTag';
+import { Attribution } from '@/components/GenericWeb';
 
 const RecentPress = (props: any) => {
 	const { press } = props;
@@ -61,6 +63,42 @@ const media2Embed = (p: any) => {
 	return p
 }
 
+const RecentGigMedia = (props: any) => {
+	const { gigmedia } = props;
+	if (!gigmedia?.numResults) return;
+	const results = {};
+	gigmedia.results?.forEach((p: any) => {
+		// @ts-ignore
+		if (!results[p.type]) { results[p.type] = []; }
+		// @ts-ignore
+		results[p.type].push(p);
+	});
+	return <details>
+		<summary className="tagClickable">Recent gig-related images: {gigmedia.numResults}</summary>
+		<blockquote>
+			{Object.keys(results)?.map((p: any, key: number) => {
+				// @ts-ignore
+				const items = results[p];
+				return <details key={key} className="listItem">
+					<summary className="tagClickable">{p}: {items.length}</summary>
+					<blockquote>
+						{items.map((p: any, key: number) => {
+						const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
+						const thumb = href.replace(/.jpg/, '_250.jpg');
+						return <div key={key} className="listItem">
+							{p.type}
+							<Link href={href}><Image src={thumb} width={100} height={100} alt={p.image_caption || p.type} /></Link>
+							<div className="date"><Link href={`/gigs/${ts2URI(p.datetime)}`}>{dateDiff(p.datetime, '')}</Link></div>
+							<Attribution g={p.credit} d={p.credit_date} />
+						</div>
+						})}
+					</blockquote>
+				</details>
+			})}
+		</blockquote>
+	</details>
+}
+
 const RecentMedia = (props: any) => {
 	const { media } = props;
 	if (!media?.numResults) return;
@@ -95,13 +133,14 @@ const RecentReleases = (props: any) => {
 
 const RecentUpdates = () => {
 	const { data, isLoading, error} = useRecentUpdates();
-	const { press, media, feedback, releases } = data || {};
+	const { press, media, gigmedia, feedback, releases } = data || {};
 	return (<Suspense fallback={<>Loading...</>}>
 		<p />
 		<RecentPress press={press} />
 		<RecentReleases releases={releases} />
 		<RecentFeedback feedback={feedback} />
 		<RecentMedia media={media} />
+		<RecentGigMedia gigmedia={gigmedia} />
 		<p />
 	</Suspense>)
 }

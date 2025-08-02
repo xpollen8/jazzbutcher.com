@@ -1079,12 +1079,12 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=preshow;interview,
 		url=${jbc_press}/19901109_press_guelph.html,
 		thumb=${jbc_images}/19901109/19901109_press,
-		todo=OCR,
 		publication=Newspaper,
 		title=Jazz Butcher comes up from the basement,
 		credit=Bruce Lawrence,
 		location=Guelph\, Ontario\, Canada,
 		datetime=1990-11-09,
+		added=2017-06-25,
 		dt=1990-11-09)}
 
 	${addPress(type=preshow;clipping,
@@ -3278,6 +3278,36 @@ subhead=(20 December 1957 – 5 October 2021),
 #live			endif
 				${jbc_footer}
 #live		endif
+#live	endif
+
+#define	19901109_press_guelph.html
+#live	if (getval(page) = 19901109_press_guelph.html)
+	${extractPress(
+		body=${literalizeCommas(
+"Can I ask you something?" enquires The Jazz Butcher's Pat Fish from the colonial grandeur of his room at the King George Hotel in Saskatoon, "Tell me... about your students. Do they like music?" "Yes. very much," I replied. "Oh good." 
+<p />
+It seems that the band encountered somewhat of a musical "backwater" at last night's gig in Saskatoon. "The students here don't seem to know what's going on," says Pat. "They all seem a bit reserved. I guess we're a bit esoteric for some people - we do presuppose a certain knowledge of music in general." 
+<p />
+It's 1982. Butch (known to his mother as Pat Fish), Oxford philosophy graduate, founding member and lead singer of The Jazz Butcher Group , emerges from the English countryside around Northampton armed with a "collapsing" guitar, a handful of songs and the assistance of the "preposterously talented" guitarist Maximillian Eider. They are promptly signed by London's Glass Records, who release their first full length LP, Bath of Bacon. The record receives "critical acclaim and consumer indifference." The band follows up the album with a very successful tour featuring (along with Butch and Max) fellow Northamptonite Kevin Haskins (from Bauhaus) on drums and Rolo McGinty (from The Woodentops) on bass.
+<p />
+It's now 1983 and Butch and Max have dismissed Kevin and Rolo from the band and set out on a pseudo-folk tour with just two acoustic guitars. The tour baffled audiences but did show the devious extremes that Butch and Max were prepared to go to define their brand of "garage scum."
+<p />
+1984: an auspicious year. Orwell's predictions go out the window and Butch and Max finally achieve full-fledged cult status with their single, "Marnie." Within weeks of the 
+single's release Butch and Max surface with yet another rhythm section for the ever-fluctuating Jazz Butcher Group. Now called the Sikkorskis from Hell, Butch and Max further solidify their philosophy of "Never let the bastards know what's going on" with the addition of Bauhaus bassist David J and someone named Owen Jones on drums. The new lineup's first single is Jonathan Richman' s cult-classic (made famous by the Sex Pistols), "Roadrunner." The band's second LP, A Scandal in Bohemia is released amid a series of ambitious and exhausting U.K. and European tours which are followed by the release of the mini-LP Sex and Travel.
+<p />
+Jumping ahead a couple of years to 1986, Butch, Max and the boys finally break out of the European market with their first North American release Bloody Nonsense. Not surprisingly, bassist David exits and is replaced by Felix from the little known Groovy Underwear.
+<p />
+"We've always had troubles with bassists," notes Butch. "After Rolo left and before we had David, we had lots and lots of different, perfectly adequate and perfectly pleasant bass players. But the problem was that we never knew quite where to find them when we had work for them."
+<p />
+North American critics, baffled by the extreme diversity of the Bloody Nonsense compilation, spew out ambiguous rhetoric like: "the band spurs visions of Lloyd Cole meets Jonathan Richman meets Iggy Pop" and "Hip beats for Velvet Lovers in the Modern Underground."
+<p />
+To make a potentially long story short, the band rounds out the decade with Distressed Gentlefolk (which included Butch and Max's The Jazz Butcher Conspiracy), Fishcoteque, Spooky (which was only released in Canada as a heartfelt tribute to Butch's leagues of hoser fans), last year's Big Planet, Scary Planet and the newest release The Cult of the Basement.
+<p />
+The new album is good. If you're a hardcore JB fan (and there are apparently a lot of them) the album might even be great. There isn't really a Cult of the Basement, but "Mr Odd" did live next door at one time (although he is sadly no longer with us). It's just that The Jazz Butcher has been playing so long in his Northhampton basement that it's become an institution of sorts. One could say that it seems The Jazz Butcher is destined to spend the rest of his days in a band which will never break out of the proverbial basement, but that might be a little unfair (not to mention premature). 
+<p />
+The Jazz Butcher along with friends The Blue Aeroplanes play Peter Clark Hall on Friday November 9th. Sponsored by yer CSA. 
+		)}
+	)}
 #live	endif
 
 #define	19890701_interview_ontheroad.html

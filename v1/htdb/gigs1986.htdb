@@ -576,6 +576,12 @@
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		with=${literalizeCommas( Downey Mildew, Clay Idols)},
+		posters=
+		/images/19860814/19860814_poster.jpg$$
+		Jimmy Duval;;;;2025-08-01
+		---
+		/images/19860814/19860814_poster1.jpg$$
+		Pierre Guillaume;;;;2017-03-29
 
 	)}
 

@@ -195,6 +195,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			case 'songs_by_datetime':
 			case 'recent_press':
 			case 'recent_media':
+			case 'recent_gigmedia':
 			case 'on_this_day':
 			case 'recent_feedback':
 			case 'feedback_delete':
@@ -218,10 +219,12 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			case 'recent_updates': {
 				const press = await apiDataFromDataServer('recent_press', args);
 				const media = await apiDataFromDataServer('recent_media', args);
+				const gigmedia = await apiDataFromDataServer('recent_gigmedia', args);
 				const feedback = await apiDataFromDataServer('recent_feedback', args);
 				const releases: HashedType = await apiData('recent_releases', args);
 				return {
 					press,
+					gigmedia,
 					media,
 					feedback,
 					releases

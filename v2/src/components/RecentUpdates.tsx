@@ -86,10 +86,9 @@ const RecentGigMedia = (props: any) => {
 						const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
 						const thumb = href.replace(/.jpg/, '_250.jpg');
 						return <div key={key} className="listItem">
-							{p.type}
-							<Link href={href}><Image src={thumb} width={100} height={100} alt={p.image_caption || p.type} /></Link>
+							<Link href={href}><Image src={thumb} width={250} height={250} alt={p.image_caption || p.type} /></Link>
 							<div className="date"><Link href={`/gigs/${ts2URI(p.datetime)}`}>{dateDiff(p.datetime, '')}</Link></div>
-							<Attribution g={p.credit} d={p.credit_date} />
+							<Attribution g={p.credit} d={p.credit_date} x={(p.image_caption) ? <span className="date">{p.image_caption}<br /></span> : ''} />
 						</div>
 						})}
 					</blockquote>

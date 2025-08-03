@@ -49,61 +49,6 @@ const HomeReleases = () =>
 		<ReleaseBlurb lookup='adventurers' key={6} />
 </>
 
-/* OFF - due to pounding AWS S3
-const Concert = () =>
-	<div className="listItem">
-	<b>A new thing!</b> <span className="smalltext">2025-05-03</span>
-	<p/>
-	For the longest time, I&apos;ve wanted to be able to listen to JBC shows in a playlist
-	format rather than in a big blind MP3.  There was no pre-built thing that would
-	suit the needs of JBC com, so we rolled our own. <span className="smalltext">(If you&apos;re a CSS wiz who can improve this, hit me up)</span>
-	<p />
-	Eventually all live gigs (and there are LOTS of &apos;em!) will be presented in
-	this gigplayer.
-	<p />
-	To get us started, please enjoy this wonderful 2005 Hamburg show.
-	-David
-	<GigPlayer
-		src="https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20051027/20051027_MastersOfBudvar_JazzButcher_Hamburg.mp3"
-		tracks={[
-			{ title: `Introduction`, start: startSeconds(0) },
-			{ title: `Partytime`, start: startSeconds('1:16'), comment: `Pat + Max` },
-			{ title: `It Has To Be You`, author: `Max Eider`, start: startSeconds('6:25')  },
-			{ title: `La Mer`, start: startSeconds('11:50') },
-			{ title: `Who Loves You Now?`, start: startSeconds('15:38') },
-			{ title: `Whaddya`, start: startSeconds('20:04'), version: `backing track` },
-			{ title: `Southern Mark Smith`, start: startSeconds('24:48') },
-			{ title: `Girls Who Keep Goldfish`, start: startSeconds('31:18'), version: `drum machine` },
-			{ title: `Shame About You`, start: startSeconds('35:00'), version: `backing track` },
-			{ title: `My Desert`, start: startSeconds('39:23') },
-			{ title: `Caroline Wheeler's Birthday Present`, start: startSeconds('43:00'), version: `spooky synth intro` },
-			{ title: `Bigfoot Motel`, start: startSeconds('48:27') },
-			{ title: `Zombie Love`, start: startSeconds('52:53') },
-			//encore 1
-			{ title: `I Wish I Could Sprechen Sie Deutsch`, start: startSeconds('1:00:27') },
-			{ title: `Soul Happy Hour`, start: startSeconds('1:00:56') },
-			{ title: `Take The Skinheads Bowling`, author: `Camper Van Beethoven`, start: startSeconds('1:03:35') },
-			{ title: `Sweet Jane`, author: `Lou Reed`, start: startSeconds('1:09:50'), annotation: [
-				{ start: startSeconds('1:12:10'), comment: `"March of the wooden soldiers" is a reference to the 1990 KCRW performance when Pat and Gerald Langley covered this song`, link: `/gigs/1990/Nov22` } 
-			]},
-		]}
-		// @ts-ignore
-		header=<GigPlayerHeader
-			artist="Full band set"
-			venue='KIR'
-			city='Hamburg'
-			country='Germany'
-			datetime='2005-10-27'
-		/>
-		// @ts-ignore
-		footer=<GigPlayerFooter
-			comment="Masters of Budvar present The Jazz Butcher Conspiracy Soul Revue featuring Pat Fish , Max Eider & Owen Jones plus Curtis E. Johnson and Joe Woolley"
-			credit='Owen Jones;;'
-		/>
-		/>
-	</div>
-*/
-
 const Home = (): React.ReactNode =>
 <>
 	<Header section='jbc' />

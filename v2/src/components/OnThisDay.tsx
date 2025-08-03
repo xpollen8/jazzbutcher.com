@@ -1,11 +1,9 @@
 "use client"
 
 import { Suspense } from 'react';
-import Link from 'next/link';
 import Tag from '@/components/Tag';
 import { GigSearchResults } from '@/components/GigSearch';
 import useOnThisDay from '@/lib/useOnThisDay';
-import { parseYear, ts2URI } from '@/lib/utils';
 
 const OnThisDay = () => {
 	const { data, isLoading, error} = useOnThisDay();
@@ -13,11 +11,7 @@ const OnThisDay = () => {
 	if (!gigs?.length) return;
 	return (<Suspense fallback={<>Loading...</>}>
 		<Tag>On This Day in JBC History</Tag>
-		{gigs.map((g: any, key: number) => {
-			return <div key={key} className="listItem">
-				{parseYear(g.datetime)}: <Link href={`/gigs/${ts2URI(g.datetime)}`}><b>{g.venue}</b> {g.city}, {g.country}</Link>
-			</div>
-		})}
+		<GigSearchResults results={data} />
 	</Suspense>)
 }
 

@@ -31,7 +31,10 @@ const RecentFeedback = (props: any) => {
 		{feedback.results.map((p: any, key: number) => {
 			return <div key={key} className="listItem clickListItem">
 				<div className="date">{dateDiff(p.dtcreated, '')}</div>
-				<Link href={feedbackURI2Pathname(p.uri)}><b>{p.subject}</b></Link>
+				<b>{p.subject}</b> <Link href={feedbackURI2Pathname(p.uri)}>{p.uri}</Link>
+				<blockquote>
+				{p.comments}
+				</blockquote>
 			</div>
 		})}
 	</details>
@@ -105,8 +108,8 @@ const RecentUpdates = () => {
 		<RecentGigMedia gigmedia={gigmedia} />
 		<RecentPress press={press} />
 		<RecentReleases releases={releases} />
-		<RecentFeedback feedback={feedback} />
 		<RecentMedia media={media} />
+		<RecentFeedback feedback={feedback} />
 	</Suspense>)
 }
 

@@ -348,33 +348,34 @@ export const newsItems: NewsItemType[] = [...recentNews, ...jsonNewsItems?.resul
 // @ts-ignore
 }).sort((a: NewsItemType, b: NewsItemType) => moment(b.dt) - moment(a.dt));
 
-const displayNewsItem = (n: NewsItemType) => {
+const displayNewsItem = (n: NewsItemType, key: number) => {
 	const body = (typeof n.body === 'object') ? n.body : <div dangerouslySetInnerHTML={{ __html: n?.body || '' }} />
-	return <MakeSimpleURI uri={n?.link} text={n.subject || ''} aux={dateDiff(n.dt, '')} className="listItem">
+	return <MakeSimpleURI uri={n?.link} text={n.subject || ''} aux={dateDiff(n.dt, '')} className="listItem" key={key}>
 		{body}
 		{(n?.credit) && <Credit g={n.credit} />}
 	</MakeSimpleURI>
 }
 
-export const MostRecentNews = () => <><Tag>Most recent website change</Tag>{displayNewsItem(newsItems[0] as NewsItemType)}<News /></>;
+export const MostRecentNews = () => <><Tag>Most recent website change</Tag>{displayNewsItem(newsItems[0] as NewsItemType, 0)}<News /></>;
 
 const News = () => {
-	let year: number;
+	const years: Record<string, NewsItemType[]> = {};
+	newsItems?.forEach((item: NewsItemType) => {
+		const year = item?.dt?.substr(0, 4);
+		if (!years[year]) {
+			years[year] = [];
+		}
+		years[year]?.push(item);
+	});
 	return <>
 		<details>
-			<summary className="tagClickable">Full changelog: {newsItems?.length}</summary>
-			{newsItems?.map((n: NewsItemType, key: number) => {
-				const yr = parseInt(n.dt, 10);
-				let banner;
-				if (yr !== year) {
-					year = yr;
-					banner = <Tag>{year}</Tag>;
-				}
-
-				return <div key={key}>
-					{banner}
-					{displayNewsItem(n)}
-				</div>
+			<summary className="tagClickable">Website changelog <span className="smalltext">({newsItems?.length} items)</span></summary>
+			{Object.keys(years)?.sort((a: string, b: string) => parseInt(b) - parseInt(a))?.map((year: string, key: number) => {
+				const dat = years[year];
+				return <details key={key} className="listItem clickListItem">
+						<summary className="tagClickable">{year} <span className="smalltext">({dat?.length} items)</span></summary>
+							{dat?.map(displayNewsItem)}
+					</details>
 			})}
 		</details>
 	</>

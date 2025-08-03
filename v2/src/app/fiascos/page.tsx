@@ -10,12 +10,14 @@ import Tag from '@/components/Tag';
 const Fiasco = ({ heading, children }: { heading: string, children: React.ReactNode }) =>
 <details>
 	<summary className="tagClickable">{heading}</summary>
-	{children}
+	<div className="listItem">
+		{children}
+	</div>
 </details>
 
 const IntroMax = ({ heading }: { heading: string }) =>
 <Fiasco heading={heading}>
-	<div className='fiascoFixed'>
+	<div className='fiascoFixed listItem'>
 		Date: Sun, 20 Sep 2020 16:06:12 +0100
 		<p>
 		----------------------------------------
@@ -41,7 +43,7 @@ const IntroMax = ({ heading }: { heading: string }) =>
 
 const IntroPat = ({ heading }: { heading: string }) =>
 <Fiasco heading={heading}>
-	<div className="fiascoFixed">
+	<div className="fiascoFixed listItem">
 		Date: Fri, 25 Sep 2020 18:23:44 +0100
 		<p>
 		----------------------------------------
@@ -1025,55 +1027,33 @@ const Epilogue = ({ heading }: { heading: string }) =>
 <>
 <h3>{heading}</h3>
 			<blockquote>
-			<p>
+			<div className="listItem">
 		Even fiascos come to an end, though I think a few of these have haunted each of us over the years and reliving them like this has been bittersweet. We were mining a rich seam and the selection was to some extent arbitrary. The events all involve the JBC when I was on board. Obviously we have all suffered and inflicted suffering repeatedly in other line-ups and indeed alone, and there is probably nothing more excruciating than dying on stage with no one to share the agony. But that’s another story. Here are a few that broadly met the criteria but didn’t make the cut:
-			</p>
-
-			<p>
+			<p/>
 		<b>The Embassy Club, London, <span className="release_title"><Link href="/gigs/1983/Nov23.html">23 November 1983</Link></span></b>: An early duo show, both on barstools. I became aware of a kind of blur in my peripheral vision and turned my head (in those days such feats were possible) to see my companion teetering dangerously on his perch. Abandoning his musical duties, Butchie was desperately flailing about in an attempt to regain his balance, but he’d passed the point of no return and only succeeded in launching himself off the front of the stage. God I wish I had video of this one.
-			</p>
-			<p>
+			<p />
 		<b>Pat adds</b>: I was reaching down for my flute when the instability kicked in. The Embassy Club stage is high so I spent some time in the air, together with flute, guitar and microphone stand. Scarcely credibly, I landed on my feet, but then found myself obliged to clamber back up onto the stage, a deeply undignified process, during which I managed to upend two extremely expensive bottles of Holsten Pils. Not good.
-			</p>
-
-			<p>
+			<p />
 		<b>The Roxy, Los Angeles, <span className="release_title"><Link href="/gigs/1986/Aug14.html">14 August 1986</Link></span> (Owen)</b>: ‘Take your fingers out of your assholes and put your hands together for The Jazz Butcher Experience!’ These were the well-chosen words with which the late, great Country Dick Montana introduced us. We already knew Dick, having supported his band The Beat Farmers in the UK earlier that year. He was legendary: huge, hilarious and slightly scary. The Roxy show, at the end of our first US tour, was something of a barnstormer [what’s it doing here then? – ed]. Backstage afterwards, celebrations were felt to be in order. Dick charged in bearing gifts: miniature bottles of mescal, one for each of us. Mescal is the one with an unfortunate worm in it (not exactly veggie fare but we let that pass in the heat of the moment). Most of us knew about the worm factor – but not Max. As he tipped the contents down his throat, an unforgettable series of expressions crossed his face in rapid succession: puzzlement, shock and nausea, to name but a few. [Ah I see – ed]
-			</p>
-
-			<p>
+			<p />
 		<b>Bob and Anne’s wedding, Seattle, <span className="release_title"><Link href="/gigs/1997/Sep19.html">19 September 1997</Link></span></b>: This event was anything but a fiasco – indeed the trip provided two good friends and some of my fondest JBC memories. However, at the reception, at the end of our last number, I was seen to approach the microphone and say ‘Thanks very much for coming!’ like some kind of rock star playing to a packed house at The Astoria. Obviously the guests had not come to see us. What a berk.
-			</p>
-
-			<p>
+			<p />
 		<b>The Troubadour, Los Angeles, <span className="release_title"><Link href="/gigs/1999/Sep9.html">9 September 1999</Link></span></b>: We decided to disqualify individual musical pratfalls on the grounds that they were too common. But this one was something. David J Haskins forgets the chords to DRINK and unwisely opts to wing it. Seriously avant garde.
-			</p>
-
-			<p>
+			<p />
 		<b>Odeon, Münster, <span className="release_title"><Link href="/gigs/1985/Apr13.html">13 April 1985</Link></span> (Owen)</b>: Mid-concert, Pat seemed to be having a bit of a chat with the audience, so I thought I had a moment to light a rollie. But he caught me out: he broke off mid-waffle and suddenly launched into the intro to ‘Girlfriend’. I&apos;d just lit my fag and didn&apos;t have time to remove it from my mouth before coming in on the drums. I only used to play the rather fast (and risky) drum break following the second chorus about 20% of the time, but the show was going well so I decided to go for it tonight. As the moment approached I took in a deep breath – and promptly swallowed my cigarette.
-			</p>
-
-			<p>
+			<p />
 		<b>Mont Blanc, December 1985</b>: There was an extended period when it seemed we couldn’t enter or leave France without the accursed douaniers demanding that we dropped our trousers before taking unspeakable liberties with our persons. We were once even intercepted a long way from the border and taken to an interrogation centre where they gutted the van and subjected us to the usual procedure. But we always had the last laugh. This occasion was particularly gratifying because, when his turn came, our old friend and crew member Tommy walked up to the Funny Room, calmly deposited his hash and pipe on the floor beside the door, went in, took it like a man, then picked up his stash on the way out. We were in awe.
-			</p>
-			<p>
+			<p />
 		<b>Owen adds</b>: When I was gleefully recounting to Bärbel this tale of her ex-boyfriend&apos;s super-cool (to our minds) performance in the Alpine Customs Shed, she seemed singularly unimpressed. ‘Oh yes’, she replied drily, ‘we did that every few weeks for a couple of years in the late 70s, when we were smuggling hash from The Netherlands.’  
-			</p>
-
-			<p>
+			<p />
 		<b>Elfenbein, Bielefeld, Germany, <span className="release_title"><Link href="/gigs/2002/Jun15.html">15 June 2002</Link></span></b>: This was one of those ‘but no one came’ evenings, though in our defence we were up against a World Cup game involving Germany. Quite a large club. They tried to partition a section off but it was still embarrassing. Not the best atmosphere backstage. However, the reason this one sticks in my mind is because the stage lighting was such that I couldn’t see the inlays on my fretboard. Concerned that this might lead to some highly original voicings, I asked the lighting engineer for more white light on stage. He looked at me for a moment or two and then said: ‘Maybe you should take off your sunglasses, you fucking moron.’ Actually he didn’t articulate that last bit but his tone was expressive. In fact, I can see the fretboard under the glasses, but he was looking at some prick in shades complaining it was too dark. All in all a chastening evening.
-			</p>
-
-			<p>
+			<p />
 		<b>Gabe’s, Iowa City, <span className="release_title"><Link href="/gigs/2000/Apr25.html">25 April 2000</Link></span> (Pat)</b>: He was so chuffed that he’d made it in time to see the soundcheck. He’d driven some 300 miles up from Kansas, tripping his brains out all the way. Within minutes of meeting me, he’d thrust a tab into my palm and made about forty song requests. Shamefully, we left our good friend Brian Kelly, who had volunteered to help us, stranded with him at the ‘merch desk’ while we sneaked out for a very ‘college town’ sort of dinner. On returning, we found poor Brian still coping manfully with our Number One Fan’s streams of technicolour consciousness. With the exception of a few bored staff, there was nobody else in the place. We played a full set. Probably made his year: always assuming that he remembers. I lost the tab. [Let us be thankful for small mercies – ed]
-			</p>
-
-			<p>
+			<p />
 		All best
-			</p>
-
-			<p>
+			<p />
 		Max, Pat and Owen
-			</p>
+			</div>
 			</blockquote>
 </>
 

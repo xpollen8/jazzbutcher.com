@@ -299,9 +299,8 @@ textplus1 {
 	padding: 3px;
 	padding-left: 10px;
 	border: 1px solid #999;
+	border-radius: 3px;
 	font-size: 1.2em;
-}
-.tagClickable {
 }
 .tagClickable:hover {
 	outline: 2px solid;
@@ -318,9 +317,9 @@ textplus1 {
 .listItem, .album_press {
 	border: 1px solid #ccc;
 	border-radius: 3px;
-	margin: 5px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	color: #444;
-	padding: 7px;
+	padding: 5px;
 	background-color: rgba(250,250,250,0.6);
 }
 .listItem b a:hover {
@@ -657,7 +656,7 @@ details summary > * {
 	cursor: pointer;
 }
 details > summary {
-  list-style: none;
+  //list-style: none;
 }
 details > summary::marker, details > summary::-webkit-details-marker {
 	display: none;

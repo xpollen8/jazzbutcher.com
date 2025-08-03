@@ -49,13 +49,13 @@ const RecentGigMedia = (props: any) => {
 		<summary className="tagClickable">Recent gig images <span className="smalltext">({gigmedia.numResults} items)</span></summary>
 		{Object.keys(results)?.map((p: any, key: number) => {
 			const items = results[p];
-			return <div key={key} className="listItem clickListItem">
+			return <div key={key} className="clickListItem">
 				<details>
 				<summary className="tagClickable">{p} <span className="smalltext">({items?.length} items)</span></summary>
 					{items?.map((p: any, key: number) => {
 					const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
 					const thumb = href.replace(/.jpg/, '_250.jpg');
-					return <div key={key} className="listItem clickListItem">
+					return <div key={key} className="listItem">
 						<Link href={href}><Image src={thumb} width={250} height={250} alt={p.image_caption || p.type} /></Link>
 						<div className="date"><Link href={`/gigs/${ts2URI(p.datetime)}`}>{dateDiff(p.datetime, '')}</Link></div>
 						{/*// @ts-ignore */}

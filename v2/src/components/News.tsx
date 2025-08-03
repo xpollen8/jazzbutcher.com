@@ -25,7 +25,7 @@ const recentNews = [
 		category: 'maintenance',
 		credit: 'David Whittemore',
 		body: <>
-			I fixed the display of things like Uumlats in city and venue names, and added the ability to search
+			Fixed the display of things like &Uuml; in city and venue names, and added the ability to search
 			gigs when items contain &quot;special characters&quot;.
 			<p />
 			Also added is the ability to search gigs by &quot;State&quot;.
@@ -33,7 +33,7 @@ const recentNews = [
 			There is a new section for the <b><Link href="/fma">Fishy Mansions Archives</Link></b> items
 			which are being digitized as part of the Documentary efforts.
 			<p />
-			Check out the <b>Recent gig-related images</b> section below for gig page updates!
+			Check out the <b>Recent A/V</b> section below for gig page updates!
 			<p />
 		</>
 	},
@@ -372,7 +372,7 @@ const News = () => {
 			<summary className="tagClickable">Website changelog <span className="smalltext">({newsItems?.length} items)</span></summary>
 			{Object.keys(years)?.sort((a: string, b: string) => parseInt(b) - parseInt(a))?.map((year: string, key: number) => {
 				const dat = years[year];
-				return <details key={key} className="listItem clickListItem">
+				return <details key={key} className="clickListItem">
 						<summary className="tagClickable">{year} <span className="smalltext">({dat?.length} items)</span></summary>
 							{dat?.map(displayNewsItem)}
 					</details>

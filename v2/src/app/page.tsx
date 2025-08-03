@@ -55,7 +55,7 @@ const Home = (): React.ReactNode =>
 	<main>
 		<div className="flex flex-wrap justify-center gap-1">
 			<div className="grow max-w-lg">
-				<div className="border p-3 bg-slate-100 drop-shadow-sm mb-3">
+				<div className="border p-3 bg-slate-100 drop-shadow-sm mb-1">
 					<Link href="/memoriam">
 						<Memorial home={true} />
 					</Link>

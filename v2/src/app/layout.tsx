@@ -1,5 +1,5 @@
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next";
+//import { Analytics } from '@vercel/analytics/react';
+//import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import './globals.css'
 
@@ -23,8 +23,8 @@ export default function RootLayout({
     <html lang="en" className={GeistSans.className}>
 			<body>
 				{children}
-				<Analytics />
-				<SpeedInsights />
+				{/*<Analytics />
+				<SpeedInsights /> */}
 			</body>
     </html>
   )

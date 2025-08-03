@@ -27,7 +27,7 @@ const FMAIndex = ({ items }: any) => {
 		{ title: "DATs", obj: items?.['DATs'] },
 		{ title: "Videos", obj: items?.['Videos'] },
 	].map(({ title, obj}: any, key: number) => {
-		return <div key={key} className="listItem">
+		return <div key={key}>
 			<details>
 			<summary className="tagClickable"> {title} </summary>
 			<br />

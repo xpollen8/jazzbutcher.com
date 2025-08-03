@@ -35,6 +35,8 @@ const RecentFeedback = (props: any) => {
 				<b>{p.subject}</b> <Link href={feedbackURI2Pathname(p.uri)}>{p.uri}</Link>
 				<blockquote>
 				{p.comments}
+				<br />
+				<b>{p.whence}</b>
 				</blockquote>
 			</div>
 		})}

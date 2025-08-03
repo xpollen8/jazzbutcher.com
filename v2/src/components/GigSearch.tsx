@@ -397,10 +397,10 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 			months[month].push(g);
 		});
 		return <details key={year} open={(!preventAutoExpand) && (gigs?.length === 0 || Object.keys(years)?.length === 1)}>
-			<summary className="flex hover:outline">
+			<summary className="flex hover:outline" style={{ marginBottom: '5px' }}>
 				<GigGraph scaling={scaling} year={year} gigs={gigs} queryString={queryString} />
 			</summary>
-			<div style={{ background: 'white', padding: '5px', border: '1px solid #ddd', marginTop: '5px' }}>
+			<div style={{ background: 'white', border: '1px solid #ddd' }}>
 				{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(year, m, months[m]))}
 			</div>
 		</details>

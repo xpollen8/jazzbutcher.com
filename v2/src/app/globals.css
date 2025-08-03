@@ -644,9 +644,17 @@ main {
 	display: inline;
 	margin-right: 5px;
 }
-
 .commentBubble {
 	height: 25px;
+	display: flex;
+}
+.commentBubbleSimple {
+	height: 25px;
+	display: inline;
+	margin-bottom: 7px;
+}
+.superscript {
+	vertical-align: super;
 }
 .commentBubble:hover {
   background: white;

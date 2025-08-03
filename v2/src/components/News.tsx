@@ -356,7 +356,7 @@ const displayNewsItem = (n: NewsItemType, key: number) => {
 	</MakeSimpleURI>
 }
 
-export const MostRecentNews = () => <><Tag>Most recent website change</Tag>{displayNewsItem(newsItems[0] as NewsItemType, 0)}<News /></>;
+export const MostRecentNews = () => <><Tag>Most recent website change <span className="smalltext">({newsItems[0]?.dt?.substr(0, 10)})</span></Tag>{displayNewsItem(newsItems[0] as NewsItemType, 0)}<News /></>;
 
 const News = () => {
 	const years: Record<string, NewsItemType[]> = {};

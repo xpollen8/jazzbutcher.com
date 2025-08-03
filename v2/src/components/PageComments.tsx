@@ -252,7 +252,7 @@ export const CommentBubble = (props: any) => {
 		</span>)
 	} else {
 		return (
-			<span className="flex commentBubble" >
+			<span className={props?.className}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"

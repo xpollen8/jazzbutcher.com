@@ -8,12 +8,13 @@ import useRecentUpdates from '@/lib/useRecentUpdates';
 import { dateDiff, ts2URI } from '@/lib/utils';
 import { feedbackURI2Pathname } from '@/lib/usePageComments';
 import { Attribution } from '@/components/GenericWeb';
+import { CommentBubble } from '@/components/PageComments';
 
 const RecentPress = (props: any) => {
 	const { press } = props;
 	if (!press?.numResults) return;
 	return <details>
-		<summary className="tagClickable">Recent press: <span className="smalltext">({press.numResults} items)</span></summary>
+		<summary className="tagClickable">Recent press <span className="smalltext">({press.numResults} items)</span></summary>
 			{press.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem clickListItem">
 					<div className="date">{dateDiff(p.dtadded, '')}</div>
@@ -27,7 +28,7 @@ const RecentFeedback = (props: any) => {
 	const { feedback } = props;
 	if (!feedback?.numResults) return;
 	return <details>
-		<summary className="tagClickable">Recent website comments: {feedback.numResults}</summary>
+		<summary className="tagClickable">Recent website comments: <CommentBubble className="commentBubbleSimple"/> <span className="smalltext superscript">{feedback.numResults}</span></summary>
 		{feedback.results.map((p: any, key: number) => {
 			return <div key={key} className="listItem clickListItem">
 				<div className="date">{dateDiff(p.dtcreated, '')}</div>
@@ -75,7 +76,7 @@ const RecentMedia = (props: any) => {
 	const { media } = props;
 	if (!media?.numResults) return;
 	return <details>
-		<summary className="tagClickable">Recent A/V: <span className="smalltext">({media.numResults})</span></summary>
+		<summary className="tagClickable">Recent A/V <span className="smalltext">({media.numResults})</span></summary>
 			{media.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem clickListItem">
 					<div className="date">{dateDiff(p.dtcreated || p.added, '')}</div>

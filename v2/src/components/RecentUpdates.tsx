@@ -43,26 +43,6 @@ const RecentFeedback = (props: any) => {
 	</details>
 }
 
-/* `media` table version
-const media2Embed = (p: any) => {
-	const { media_id, lookup, type, subtype, ordinal, project, collection, name, comment,
-		mp3, href, author, credit, parent, datetime, images, dtcreated } = p;
-	return {
-		mediaurl: mp3 || href,
-		collection,
-		datetime,
-		comment,
-		title: name,
-		project,
-		author,
-	}
-}
-*/
-
-const media2Embed = (p: any) => {
-	return p
-}
-
 const RecentGigMedia = (props: any) => {
 	const { gigmedia } = props;
 	if (!gigmedia?.numResults) return;
@@ -110,7 +90,7 @@ const RecentMedia = (props: any) => {
 			{media.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">
 					<div className="date">{dateDiff(p.dtcreated || p.added, '')}</div>
-					<EmbedMedia data={media2Embed(p)} />
+					<EmbedMedia data={p} />
 				</div>
 			})}
 		</blockquote>
@@ -137,13 +117,11 @@ const RecentUpdates = () => {
 	const { data, isLoading, error} = useRecentUpdates();
 	const { press, media, gigmedia, feedback, releases } = data || {};
 	return (<Suspense fallback={<>Loading...</>}>
-		<p />
 		<RecentPress press={press} />
 		<RecentReleases releases={releases} />
 		<RecentFeedback feedback={feedback} />
 		<RecentMedia media={media} />
 		<RecentGigMedia gigmedia={gigmedia} />
-		<p />
 	</Suspense>)
 }
 

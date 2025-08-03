@@ -342,9 +342,7 @@ const recentNews = [
 	},
 ];
 
-recentNews.forEach((r: any) => jsonNewsItems?.results.push(r));
-
-export const newsItems: NewsItemType[] = jsonNewsItems?.results?.filter((n: NewsItemType) => n.dt && n.dt.length)?.map((n: NewsItemType) => {
+export const newsItems: NewsItemType[] = [...recentNews, ...jsonNewsItems?.results]?.filter((n: NewsItemType) => n.dt && n.dt.length)?.map((n: NewsItemType) => {
 		const dt = n.dt.includes('-') ? moment(n.dt, 'YYYY-MM-DD HH:mm:SS').valueOf() : parseInt(n.dt, 10) * 1000;
 		return { ...n, dt: moment(dt).format('YYYY-MM-DD HH:mm:SS') }
 // @ts-ignore
@@ -358,7 +356,7 @@ const displayNewsItem = (n: NewsItemType) => {
 	</MakeSimpleURI>
 }
 
-export const MostRecentNews = () => <><Tag>Most recent website change</Tag>{displayNewsItem(newsItems[0] as NewsItemType)}<News /><p /></>;
+export const MostRecentNews = () => <><Tag>Most recent website change</Tag>{displayNewsItem(newsItems[0] as NewsItemType)}<News /></>;
 
 const News = () => {
 	let year: number;

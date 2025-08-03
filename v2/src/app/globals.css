@@ -321,6 +321,10 @@ textplus1 {
 	color: #444;
 	padding: 5px;
 	background-color: rgba(250,250,250,0.6);
+	margin-bottom: 3px;
+}
+.clickListItem {
+	margin-left: 20px;
 }
 .listItem b a:hover {
 	outline: 1px dashed;

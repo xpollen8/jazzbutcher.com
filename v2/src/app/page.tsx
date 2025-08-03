@@ -65,7 +65,7 @@ const Home = (): React.ReactNode =>
 					<OnThisDay />
 			</div>
 			<div className="max-w-lg grow">
-				<Tag style={{ marginBottom: '10px' }}>Recent Releases</Tag>
+				<Tag>Recent Releases</Tag>
 				<HomeReleases />
 				<div className="max-w-lg grow">
 					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>

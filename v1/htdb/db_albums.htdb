@@ -3430,6 +3430,8 @@ This release by the German newspaper "Süddeutsche Zeitung" combines a book and 
 #define	albums[86]->buy     https://thejazzbutcher.bandcamp.com/album/the-violent-years
 #define	albums[86]->type	compilation
 #define	albums[86]->lookup	fire_violent
+#define	albums[86]->blurb	Expansive book-styled package of the first four albums from The Jazz Butcher's early Creation Records' years - 1988-1991.
+Featuring the much praised 'Fishcotheque', 'Big Planet, Scarey Planet', 'Cult Of The Basement' and 'Condition Blue'.
 #define	albums[86]->href	${jbc_albums}/fire_violent.html
 #define	albums[86]->label	fire_records
 #define	albums[86]->country	UK

@@ -8,7 +8,7 @@ const MemorialGuitar = ({ link }: { link: string }) => <center>
 			<Link href={link}><Image src="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={300} height={300} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} /></Link>
 			<Credit g="Jooles Joyce" />
 		</div>
-		<div className="w-full min-[500px]:w-1/2" style={{ padding: '10px', textAlign: 'left' }}>
+		<div className="w-full min-[500px]:w-1/2" style={{ padding: '10px' }}>
 			<p />
 			Pat Fish
 			<p />

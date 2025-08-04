@@ -111,7 +111,7 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', queryString='' }:
 		<tbody>
 			<tr>
 			<td style={{ padding: '5px', border: '1px solid #999' }}>
-				<a style={{ fontSize: '1.6em', backgroundColor: mainColor }} href={`/gigs/${year}${queryString}`}><tt>{year}</tt></a>
+				<a style={{ fontFamily: 'monospace', fontSize: '1.6em', backgroundColor: mainColor }} href={`/gigs/${year}${queryString}`}>{year}</a>
 			</td>
 
 			{(gigs.length) &&

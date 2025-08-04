@@ -5,8 +5,8 @@ import { Credit } from '@/components/GenericWeb';
 const Memorial = (props: { home?: boolean }) => {
 	return (<center>
 		<p />
-		{(props?.home) ? <Image src="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={450} height={450} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} /> : (<Link href="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute.jpg">
-			<Image src="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={450} height={450} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} />
+		{(props?.home) ? <Image src="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={500} height={500} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} /> : (<Link href="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute.jpg">
+			<Image src="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={500} height={500} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} />
 		</Link>)}
 		<Credit g="Jooles Joyce" />
 		<p />
@@ -16,7 +16,7 @@ const Memorial = (props: { home?: boolean }) => {
 		<p />
 		{(!props?.home) && <>
 			<Link href="https://v1.jazzbutcher.com/images/20250206_onetoysarah_gravemarker.jpg">
-			<Image src="https://v1.jazzbutcher.com/images/20250206_onetoysarah_gravemarker.jpg" width={450} height={450} alt="Grave marker" style={{ border: "1px", borderRadius: "10px" }} />
+			<Image src="https://v1.jazzbutcher.com/images/20250206_onetoysarah_gravemarker.jpg" width={400} height={400} alt="Grave marker" style={{ border: "1px", borderRadius: "10px" }} />
 		</Link>
 		<br />
 		<div className="smalltext" style={{ width: '450px' }}>

@@ -62,15 +62,13 @@ const Home = (): React.ReactNode =>
 				</div>
 				<MostRecentNews />
 				<RecentUpdates />
-					<OnThisDay />
+				<OnThisDay />
 			</div>
 			<div className="w-full min-[1000px]:w-1/2">
 				<Tag>Recent Releases</Tag>
 				<HomeReleases />
-				<div className="max-w-lg">
-					<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
-					<HomeBooks />
-				</div>
+				<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
+				<HomeBooks />
 			</div>
 		</div>
 	</main>

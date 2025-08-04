@@ -54,7 +54,7 @@ const Home = (): React.ReactNode =>
 	<Header section='jbc' />
 	<main>
 		<div className="flex flex-col min-[1000px]:flex-row gap-1">
-			<div className="w-full min-[1000px]:w-1/2">
+			<div className="w-full min-[1000px]:w-[60%]">
 				<div className="border p-3 bg-slate-100 drop-shadow-sm mb-1">
 					<Link href="/memoriam">
 						<Memorial home={true} />
@@ -63,12 +63,12 @@ const Home = (): React.ReactNode =>
 				<MostRecentNews />
 				<RecentUpdates />
 				<OnThisDay />
-			</div>
-			<div className="w-full min-[1000px]:w-1/2">
-				<Tag>Recent Releases</Tag>
-				<HomeReleases />
 				<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
 				<HomeBooks />
+			</div>
+			<div className="w-full min-[1000px]:w-[40%]">
+				<Tag>Recent Releases</Tag>
+				<HomeReleases />
 			</div>
 		</div>
 	</main>

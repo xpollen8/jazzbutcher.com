@@ -406,7 +406,7 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 		</details>
 	}
 
-	return <div style={{ margin: '5px' }}>
+	return <div style={{ margin: '3px' }}>
 		{Object.keys(years).sort((a: any, b: any) => b - a).map((y: any) => makeGigYear(queryString, y, years[y]))}
 	</div>
 }

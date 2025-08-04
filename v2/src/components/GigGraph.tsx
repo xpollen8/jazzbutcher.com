@@ -99,7 +99,7 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', queryString='' }:
 
 	const calcWidth = (num: number, max: number) => `${(1 + (100 * num / (scaling * 1.1)))}%`;
 
-	const Bar = ({ color, background, width, num }: { color: string, background: string, width: string, num: number }) => <div className="drop-shadow-md border" style={{ borderRadius: '10px', background, height: '15px', marginRight: '5px', width, color, textAlign: 'right', paddingRight: '3px', paddingTop: '1px' }} >{num}</div>
+	const Bar = ({ color, background, width, num }: { color: string, background: string, width: string, num: number }) => <div className="smalltext drop-shadow-md border" style={{ borderRadius: '10px', background, height: '16px', marginRight: '5px', width, color, textAlign: 'right', paddingLeft: '1px', paddingRight: '4px' }} >{num}</div>
 
 	const mainColor = 'whitesmoke';
 
@@ -107,19 +107,19 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', queryString='' }:
 		<table style={{
 			width: '100%',
 			backgroundColor: mainColor,
-			borderRadius: '10px',
 		}}>
 		<tbody>
 			<tr>
-			<td style={{ padding: '3px', border: '1px solid #999' }}>
-				<a style={{ fontSize: '2.2em'}} href={`/gigs/${year}${queryString}`}>{year}</a>
+			<td style={{ padding: '5px', border: '1px solid #999' }}>
+				<a style={{ fontSize: '1.6em', backgroundColor: mainColor }} href={`/gigs/${year}${queryString}`}><tt>{year}</tt></a>
 			</td>
 
 			{(gigs.length) &&
 				<td style={{
 						width: '100%',
 						lineHeight: '15px',
-						border: '1px solid #999'
+						border: '1px solid #999',
+						borderRadius: '10px'
 					}} >
 
 					{(() => {
@@ -127,7 +127,7 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', queryString='' }:
 							{(maxGigs !== gigs.length) &&
 								<div className="flex m-1">
 									<Bar color="#000" background={totalColar} width={calcWidth(gigs.length, maxGigs)} num={gigs.length} />
-									<b style={{ color: 'blue' }}>Total</b>
+									<span style={{ color: '#666' }}>Total</span>
 								</div>
 							}
 							{extras.map((type: string, key: number) => {
@@ -136,11 +136,9 @@ const DoGraph = ({ scaling, year, gigs=[], section='main', queryString='' }:
 									return <div key={key} className="flex m-1">
 										<Bar color={GigBarTypes[type].color} background={GigBarTypes[type].background} width={calcWidth(num, maxGigs)} num={num} />
 										{(num === gigs.length)
-											?  <b>
-													<span style={{ color: 'blue' }}>
+											?  <span style={{ color: '#666' }}>
 													{GigBarTypes[type].title}
 													</span>
-												</b>
 											: <span className="smalltext">
 													{GigBarTypes[type].title}
 												</span>

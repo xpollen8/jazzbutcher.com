@@ -13,11 +13,11 @@ const Memoriam = () =>
 	<Header section='memoriam' />
 	<main>
     <div className="flex flex-col min-[1000px]:flex-row gap-1">
-			<div className="w-full min-[1000px]:w-1/2 border drop-shadow-sm bg-slate-100">
+			<div className="min-[1000px]:w-[60%] border drop-shadow-sm bg-slate-100">
 				<Memorial />
 				<TributeText />
 			</div>
-			<div className="w-full min-[1000px]:w-1/2">
+			<div className="min-[1000px]:w-[40%]">
 				<TributeAudio />
 			</div>
 		</div>

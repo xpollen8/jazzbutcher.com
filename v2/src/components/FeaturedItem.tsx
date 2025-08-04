@@ -32,6 +32,14 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, lab
 						const exp = expand(x);
 						return <div className="break-keep" key={key}>{(typeof exp === 'string') ? removeHTML(exp) : exp}<br /></div>
 						})}</div> : label} {media}</div>
+				{(buy) && (<>
+					<div className="album_purchase">
+						{linkExternal(buy, buy_title || 'Purchase Now')}
+					</div>
+					<span className="smalltext">
+						({parseDomain(buy)})
+					</span>
+				</>)}
 					</div>
 				}
 				<span className="album_title">
@@ -47,14 +55,6 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, lab
 				<div className="album_blurb">
 					{children}
 				</div>
-				{(buy) && (<>
-					<div className="album_purchase">
-						{linkExternal(buy, buy_title || 'Purchase Now')}
-					</div>
-					<span className="smalltext">
-						( {parseDomain(buy)} )
-					</span>
-				</>)}
 			</div>
 		<p className="clear_float" />
 		</div>

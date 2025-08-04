@@ -301,16 +301,13 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 
 	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => (
 		<div key={year+month}>
-			<div style={{ textAlign: 'center', background: '#ededed', fontSize: '1.5em', paddingTop: '2px', paddingLeft: '5px', margin: '5px', border: '1px solid #666'}} className="drop-shadow-md">
+			<div style={{ textAlign: 'center', background: '#ededed', fontSize: '1.25em', paddingTop: '2px', paddingLeft: '5px',  border: '1px solid #666'}} className="drop-shadow-md">
 				{num2mon(month)}, {year}
 				{(gigs.length > 1) && <>
 					{': '}
 					{gigs.length} gigs
 				</>}
 			</div>
-		{/*
-			</summary>
-		*/}
 			<div
 				style={{
 					display: 'flex',

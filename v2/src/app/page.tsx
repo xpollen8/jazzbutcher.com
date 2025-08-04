@@ -41,12 +41,12 @@ const HomeBooks = () =>
 
 const HomeReleases = () =>
 <>
-		<MakeAlbumBlurb {...relatedReleases} key={1} />
 		<ReleaseBlurb lookup='highest' key={2} />
 		<ReleaseBlurb lookup='fire_cholmondley' key={3} />
 		<ReleaseBlurb lookup='fire_violent' key={4} />
 		<ReleaseBlurb lookup='fire_wasted' key={5} />
 		<ReleaseBlurb lookup='adventurers' key={6} />
+		<MakeAlbumBlurb {...relatedReleases} key={1} />
 </>
 
 const Home = (): React.ReactNode =>

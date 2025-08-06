@@ -55,10 +55,8 @@ const Home = (): React.ReactNode =>
 	<main>
 		<div className="flex flex-col min-[1000px]:flex-row gap-1">
 			<div className="w-full min-[1000px]:w-[60%]">
-				<div className="border p-3 bg-slate-100 drop-shadow-sm mb-1">
-					<Link href="/memoriam">
+				<div className="border p-3 bg-slate-100">
 						<Memorial home={true} />
-					</Link>
 				</div>
 				<MostRecentNews />
 				<RecentUpdates />

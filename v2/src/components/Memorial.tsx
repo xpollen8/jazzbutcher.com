@@ -2,13 +2,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Credit } from '@/components/GenericWeb';
 
-const MemorialGuitar = ({ link }: { link: string }) => <center>
-	<div className="flex flex-col min-[500px]:flex-row gap-5">
-		<div className="w-full min-[500px]:w-1/2">
+const MemorialGuitar = ({ link }: { link: string }) => (
+	<div className="flex flex-col min-[500px]:flex-row gap-5 p-3 items-center">
+		<div className="min-[500px]:w-1/2 justify-self-center">
 			<Link href={link}><Image src="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={300} height={300} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} /></Link>
 			<Credit g="Jooles Joyce" />
 		</div>
-		<div className="w-full min-[500px]:w-1/2" style={{ padding: '10px' }}>
+		<div className="min-[500px]:w-1/2 justify-self-center">
 			Pat Fish
 			<p />
 			The Jazz Butcher
@@ -18,10 +18,10 @@ const MemorialGuitar = ({ link }: { link: string }) => <center>
 			<div className="smalltext"> 1957-12-20 / 2021-10-05</div>
 		</div>
 	</div>
-</center>
+)
 
-const MemorialSarah = () => <center>
-	<div className="flex flex-col min-[500px]:flex-row gap-5">
+const MemorialSarah = () => (
+	<div className="flex flex-col min-[500px]:flex-row gap-5 items-center">
 		<div className="w-full min-[500px]:w-1/2">
 			<div className="smalltext" style={{ padding: '10px', textAlign: 'left' }}>
 				I loved Pat very dearly. He was the coolest man I ever met. When I first visited Pat&apos;s plot, after the pandemic, there was no marker - but I came back and a kind
@@ -36,15 +36,15 @@ const MemorialSarah = () => <center>
 			<Credit g="onetoysarah" u="https://www.instagram.com/r_v_ra/p/DFurSIqqJjN/?img_index=1" d="2025-02-06" />
 		</div>
 	</div>
-</center>
+)
 
 const Memorial = (props: { home?: boolean }) => {
-	return (<>
+	return (<div className="grid place-items-center">
 		<MemorialGuitar link={(props?.home) ? '/memoriam' : 'https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute.jpg'} />
 		<p />
 		{(!props?.home) && <MemorialSarah />}
 		<p />
-	</>)
+	</div>)
 }
 
 export default Memorial;

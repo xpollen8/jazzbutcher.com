@@ -173,7 +173,7 @@ const extras: string[] = Object.keys(GigBarTypes);
 const determineTypes = (gig: RecordType) => {
 	let ret: any;
 	const useG = (gig?.gig) ? gig.gig : gig;
-	const types = [];
+	const types: any[] = [];
 	extras.forEach((e: string) => {
 		if (useG?.extra?.includes(e)) {
 			types.push(e);

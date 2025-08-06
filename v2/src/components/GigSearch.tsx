@@ -295,7 +295,7 @@ const countriesPlayed = [
 ];
 
 const country2Flag = (country?: string) => {
-	const iso = countriesPlayed.find((c: any) => c.full.toLowerCase() === country.toLowerCase())?.iso;
+	const iso = countriesPlayed.find((c: any) => c?.full?.toLowerCase() === country?.toLowerCase())?.iso;
 	if (iso) {
 		const className = `fi fi-${iso}`;
 		return <span className={className} />

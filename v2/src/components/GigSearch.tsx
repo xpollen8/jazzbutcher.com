@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import { useState, useTransition } from 'react';
 import { type RecordType, type HashedType } from '@/lib/utils';
-import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parseDay, num2mon, ts2URI, htmlString } from '@/lib/utils';
+import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parseDay, num2mon, ts2URI, htmlString, prettyDate, num2month } from '@/lib/utils';
 import { removeHTML } from '@/components/GenericWeb';
 import GigGraph, { GigBarTypes } from '@/components/GigGraph';
 import { AutoLinkPlayer, AutoLinkSong, AutoLinkAct } from '@/lib/defines';
@@ -141,13 +141,7 @@ const Venue = ({ record }: { record: RecordType }) =>
 <div style={{ paddingTop: '4px', paddingBottom: '6px' }}>
 		{(record?.title) && <div className="gig_project">&quot;{record?.title}&quot;</div>}
 		<div style={{ fontWeight: '900', fontSize: '1.5em' }} >{htmlString(record?.venue)}</div>
-		{htmlString(record?.city)}
-		{' '}
-		{record?.state}
-		{' '}
-		{record?.country}
-		{' '}
-		{record?.postalcode}
+		<Location {...record} simple={true} />
 </div>
 
 const layoutPerformer = (record: RecordType, key: number) => {
@@ -176,16 +170,17 @@ const layoutSongs = (record: RecordType, key: number) => {
 
 const extras: string[] = Object.keys(GigBarTypes);
 
-const determineStyles = (gig: RecordType) => {
+const determineTypes = (gig: RecordType) => {
 	let ret: any;
 	const useG = (gig?.gig) ? gig.gig : gig;
+	const types = [];
 	extras.forEach((e: string) => {
 		if (useG?.extra?.includes(e)) {
-			ret = { type: e, ...GigBarTypes[e] };
+			types.push(e);
 		}
 	})
-	if (!ret) return { type: 'jbc', ...GigBarTypes['other'], extras: useG?.extra };
-	return { type: ret.type, background: ret.background, color: ret.color, extras: useG?.extra }
+	//if (!types.length) { types.push('jbc') }
+	return types;
 }
 
 const layoutGigs = (record: RecordType, key: number) => {
@@ -278,6 +273,48 @@ const filterGigsByAnything = (res: RecordType, query: string) => {
 	return filterBy(res, query, (searchTarget));
 }
 
+const countriesPlayed = [
+	{ full: 'Austria', iso: 'at' },
+	{ full: 'Belgium', iso: 'be' },
+	{ full: 'Canada', iso: 'ca' },
+	{ full: 'England', iso: 'gb' },
+	{ full: 'France', iso: 'fr' },
+	{ full: 'Germany', iso: 'de' },
+	{ full: 'Hungary', iso: 'hu' },
+	{ full: 'Ireland', iso: 'ie' },
+	{ full: 'Italy', iso: 'it' },
+	{ full: 'Japan', iso: 'jp' },
+	{ full: 'Netherlands', iso: 'nl' },
+	{ full: 'Norway', iso: 'no' },
+	{ full: 'Scotland', iso: 'gb-sct' },
+	{ full: 'Spain', iso: 'es' },
+	{ full: 'Sweden', iso: 'sw' },
+	{ full: 'Switzerland', iso: 'ch' },
+	{ full: 'USA', iso: 'us' },
+	{ full: 'Wales', iso: 'gb-wls' },
+];
+
+const country2Flag = (country?: string) => {
+	const iso = countriesPlayed.find((c: any) => c.full.toLowerCase() === country.toLowerCase())?.iso;
+	if (iso) {
+		const className = `fi fi-${iso}`;
+		return <span className={className} />
+	} else {
+		return country;
+	}
+}
+
+const	Location = (args: any) => {
+	const { address, city, state, country, postalcode, simple } = args;
+	let strs;
+	if (simple) {
+		strs = [ city, state, ]?.filter(f => f)?.join(', ');
+	} else {
+		strs = [ address, city, state, postalcode ]?.filter(f => f)?.join(', ');
+	}
+	return <>{country2Flag(country)} {strs}</>;
+}
+
 const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boolean) => {
 	const years: HashedType = {};
 	results?.results?.forEach((r: RecordType) => {
@@ -299,10 +336,67 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 	if (gigsQuery) queryParams.set('q', gigsQuery);
 	const queryString = (gigsType && gigsQuery) ? `?${queryParams.toString()}` : '';
 
+	const makeGigRow = (record: RecordType, key: number) => {
+		const useG = (record?.gig) ? record.gig : record;
+		const types = determineTypes(record);
+		const datetime = record?.datetime.substring(0, 10).replace(/-/g, '');
+		const year = parseYear(datetime);
+		let poster = (useG?.extra?.includes('poster')) ? `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_poster_250.jpg` : undefined;
+		if (!poster) {
+			if  (useG?.extra?.includes('ticket')) {
+				poster = `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_ticket_250.jpg`;
+			}
+		}
+		if (!poster) {
+			if  (useG?.extra?.includes('setlist')) {
+				poster = `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_setlist_250.jpg`;
+			}
+		}
+		const extras = [
+			{ type: 'songlist', func: IconSonglist },
+			{ type: 'pix', func: IconPix },
+			{ type: 'video', func: IconVideo },
+			{ type: 'recording', func: IconRecording },
+			{ type: 'review', func: IconReview },
+			{ type: 'ticket', func: IconTicket },
+			{ type: 'interview', func: IconInterview },
+			{ type: 'press', func: IconPress },
+			{ type: 'players', func: IconPlayers },
+			//{ type: 'setlist', func: IconSetlist },
+			//{ type: 'pat', func: IconPat },
+			//{ type: 'self', func: IconPatReview },
+			].filter(({ type }: string) => useG?.extra?.includes(type));;
+
+		return (<div className="tagClickable w-full" style={{ background: '#cceeff', border: '1px solid #777', paddingLeft: '3px' }}>
+			<Link key={key} href={`/gigs/${ts2URI(record?.datetime)}`} style={{ color: '#333' }}>
+				{types?.map((type: string, key: number) => <div key={key} className={`gig_${type}`}/>)}
+				<div style={{ background: '#ccccdd' }} > {prettyDate(record?.datetime)} </div>
+				<div className="flex justify-between">
+					<div className="w-full">
+						{layout(record, record?.datetime)}
+						<div className="m-1">
+							<div className="m-1 flex flex-wrap float-right">
+								{extras?.map((ex: any, key: number) => ex.func({ key, height: 25, width: 25, style: { padding: '3px' } }))}
+							</div>
+							{(record?.alsowith) && <div className="pt-1">{record?.alsowith?.split(',')?.map((a: string, key: number) => {
+								const name = removeHTML(a.trim())?.toLowerCase();
+								const query = gigsQuery?.replace(/"/g, '')?.toLowerCase();
+								return !!a?.length && <span key={key} className="listItem smalltext ml-1">{(gigsType === 'alsowith' && name === query) ? name : AutoLinkAct(name)}</span>
+								}
+							)}</div>}
+							</div>
+					</div>
+					
+					{(poster) && <div className=""><Image alt='poster' width={150} height={150} src={poster}/></div>}
+				</div>
+			</Link>
+		</div>)
+	}
+
 	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => (
 		<div key={year+month}>
-			<div style={{ textAlign: 'center', background: '#ededed', fontSize: '1.25em', paddingTop: '2px', paddingLeft: '5px',  border: '1px solid #666'}} className="drop-shadow-md">
-				{num2mon(month)}, {year}
+			<div className="tag" >
+				{num2month(month)}, {year}
 				{(gigs.length > 1) && <>
 					{': '}
 					{gigs.length} gigs
@@ -316,72 +410,7 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 					}}
 				>
 				{gigs?.sort((a: any, b: any) => parseDay(a.datetime) - parseDay(b.datetime))
-					.map((record: RecordType, key: number) => {
-					const useG = (record?.gig) ? record.gig : record;
-					const styles = determineStyles(record);
-					const datetime = record?.datetime.substring(0, 10).replace(/-/g, '');
-					let poster = (useG?.extra?.includes('poster')) ? `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_poster_250.jpg` : undefined;
-					if (!poster) {
-						if  (useG?.extra?.includes('ticket')) {
-							poster = `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_ticket_250.jpg`;
-						}
-					}
-					if (!poster) {
-						if  (useG?.extra?.includes('setlist')) {
-							poster = `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_setlist_250.jpg`;
-						}
-					}
-					const cls = "gig_" + styles?.type;
-					const icons = ['ticket', 'interview', 'players', 'press', 'review', 'setlist', 'songlist', 'recording', 'video', 'pix',
-						// 'pat', 'setlist', 'self'
-						]
-						.filter((type: string) => useG?.extra?.includes(type));
-					const gigLink = `/gigs/${ts2URI(record?.datetime)}`;
-
-					return (
-						<Link key={key}
-								href={gigLink}
-								style={{ textAlign: 'center', width: '255px', ...styles, margin: '10px', padding: '3px', borderRadius: '5px', border: '1px solid #555'}}
-								className={`${cls} drop-shadow-md hover:outline`}
-							>
-							<div style={{ background: 'white', color: '#333', borderRadius: '5px' }} className="drop-shadow-md">
-								{num2mon(parseMonth(record?.datetime))} {parseDayOrdinal(record?.datetime)}
-								{' '}
-								{(parseHour(record?.datetime) > 0) && <>{parseHourAMPM(record?.datetime)}</>}
-								{', '}{year}
-								<b>
-									<div dangerouslySetInnerHTML={{__html: record?.blurb }}/>
-								</b>
-								{record?.alsowith?.split(',')?.map((a: string, key: number) => {
-									return !!a?.length && <div key={key} className="listItem">{AutoLinkAct(removeHTML(a.trim()))}</div>
-									}
-									)}
-							</div>
-							{layout(record, record?.datetime)}
-							{!!(icons?.length) && (
-								<div className="flex flex-wrap drop-shadow-md" style={{ padding: '5px', justifyContent: 'center', background: 'white'}}>
-
-									{/*(icons.includes('setlist')) && <IconSetlist height={25} width={25} style={{ padding: '3px' }} />*/}
-									{/*(icons.includes('pat')) && <IconPat height={25} width={25} style={{ padding: '3px' }} />*/}
-									{/*(icons.includes('self')) && <IconPatReview height={25} width={25} style={{ padding: '3px' }} />*/}
-
-									{(icons.includes('songlist')) && <IconSonglist height={25} width={25} style={{ padding: '3px' }} />}
-									{(icons.includes('pix')) && <IconPix height={25} width={25} style={{ padding: '3px' }} />}
-									{(icons.includes('video')) && <IconVideo height={25} width={25} style={{ padding: '3px' }} />}
-									{(icons.includes('recording')) && <IconRecording height={25} width={25} style={{ padding: '3px' }} />}
-									{(icons.includes('review')) && <IconReview height={25} width={25} style={{ padding: '3px' }} />}
-									{(icons.includes('ticket')) && <IconTicket height={25} width={25} style={{ padding: '3px' }} />}
-									{(icons.includes('interview')) && <IconInterview height={25} width={25} style={{ padding: '3px' }} />}
-									{(icons.includes('press')) && <IconPress height={25} width={25} style={{ padding: '3px' }} />}
-									{(icons.includes('players')) && <IconPlayers height={25} width={25} style={{ padding: '3px' }} />}
-								</div>
-							)}
-							{(poster) &&
-								<Image alt='poster' width={250} height={250} src={poster} style={{ height: 'auto' }}/>
-							}
-						</Link>
-					)
-				})}
+					.map(makeGigRow)}
 			</div>
 		</div>
 	)
@@ -394,16 +423,14 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 			months[month].push(g);
 		});
 		return <details key={year} open={(!preventAutoExpand) && (gigs?.length === 0 || Object.keys(years)?.length === 1)}>
-			<summary className="flex hover:outline" style={{ marginBottom: '5px' }}>
+			<summary className="flex hover:outline mb-1">
 				<GigGraph scaling={scaling} year={year} gigs={gigs} queryString={queryString} />
 			</summary>
-			<div style={{ background: 'white', border: '1px solid #ddd' }}>
-				{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(year, m, months[m]))}
-			</div>
+			{Object.keys(months).sort((a: any, b: any) => a - b).map((m: any) => makeGigMonth(year, m, months[m]))}
 		</details>
 	}
 
-	return <div style={{ margin: '3px' }}>
+	return <div className="m-1">
 		{Object.keys(years).sort((a: any, b: any) => b - a).map((y: any) => makeGigYear(queryString, y, years[y]))}
 	</div>
 }

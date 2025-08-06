@@ -61,9 +61,11 @@ export const startSeconds = (str: any = ''): number => {
 	return s;
 }
 
-export const monthNames = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', ];
-export const num2mon = (num: any): string => monthNames[num - 1] || '';
-export const mon2num = (month: any): number => monthNames.indexOf(String(month)) + 1;
+export const monthNames = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', ];
+export const monNames = monthNames.map((m: string) => m.substr(0, 3));
+export const num2month = (num: any): string => monthNames[num - 1] || '';
+export const num2mon = (num: any): string => monNames[num - 1] || '';
+export const mon2num = (month: any): number => monNames.indexOf(String(month)) + 1;
 
 /*
 	accept:

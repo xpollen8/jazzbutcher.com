@@ -12,6 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={GeistSans.className}>
+		<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+		</head>
+
 			<body>
 				{children}
 				{/*<Analytics />

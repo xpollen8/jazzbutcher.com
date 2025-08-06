@@ -365,7 +365,7 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 			//{ type: 'setlist', func: IconSetlist },
 			//{ type: 'pat', func: IconPat },
 			//{ type: 'self', func: IconPatReview },
-			].filter(({ type }: string) => useG?.extra?.includes(type));;
+			].filter((a: any) => useG?.extra?.includes(a?.type));;
 
 		return (<div className="tagClickable w-full" style={{ background: '#cceeff', border: '1px solid #777', paddingLeft: '3px' }}>
 			<Link key={key} href={`/gigs/${ts2URI(record?.datetime)}`} style={{ color: '#333' }}>

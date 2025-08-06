@@ -1135,7 +1135,7 @@ export const AutoLinkAct = (str?: string) => {
 	}
 	const lookup = str.replace("'", '').replace(/\./g, '').replace(',', '').replace(/\'/g, '').replace(/ /g, '_');
 	const found = mapActs[lookup];
-	if (!found) return str?.replace(/_/g, ' ');
+	if (!found) return <Link href={`/gigs?f=alsowith&q="${str?.replace(/_/g, ' ')}"`}>{str}</Link>
 	return expand(found);
 }
 

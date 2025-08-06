@@ -21,6 +21,19 @@ type NewsItemType = {
 const recentNews = [
 	{
 		subject: `Website/search improvement`,
+		dt: '2025-08-05',
+		category: 'maintenance',
+		credit: 'David Whittemore',
+		body: <>
+			The V2 &quot;card&quot; gig search result style just wasn&apos;t doing it for me,
+			so a look similar to the V1 version has been rolled out.
+			<p />
+			New feature: bands shown in the &quot;shared the bill with&quot; are now clickable to search for all times they shared the stage with the JBC.
+			<p />
+		</>
+	},
+	{
+		subject: `Website/search improvement`,
 		dt: '2025-08-01',
 		category: 'maintenance',
 		credit: 'David Whittemore',

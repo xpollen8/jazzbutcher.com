@@ -26,9 +26,9 @@ const recentNews = [
 		credit: 'David Whittemore',
 		body: <>
 			The V2 &quot;card&quot; <b><Link href="/gigs">gig search result</Link></b> look
-			has been replaced with the original V1 &quot;row&quot; style.
+			has been reverted to the V1 &quot;row&quot; style.
 			<p />
-			New feature: bands shown in the &quot;shared the bill with&quot; are now clickable to search for all times they shared the stage with the JBC.
+			New search result feature: band names shown in the &quot;shared the bill with&quot; are now click-to-search.
 			<p />
 		</>
 	},

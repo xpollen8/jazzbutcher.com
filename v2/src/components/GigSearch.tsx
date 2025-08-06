@@ -179,7 +179,7 @@ const determineTypes = (gig: RecordType) => {
 			types.push(e);
 		}
 	})
-	//if (!types.length) { types.push('jbc') }
+	if (!types.length) { types.push('jbc') }
 	return types;
 }
 
@@ -367,7 +367,7 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 			//{ type: 'self', func: IconPatReview },
 			].filter((a: any) => useG?.extra?.includes(a?.type));;
 
-		return (<div className="tagClickable w-full" style={{ background: '#cceeff', border: '1px solid #777', paddingLeft: '3px' }}>
+		return (<div className="tagClickable w-full mt-3" style={{ background: '#cceeff', border: '1px solid #777', paddingLeft: '3px' }}>
 			<Link key={key} href={`/gigs/${ts2URI(record?.datetime)}`} style={{ color: '#333' }}>
 				{types?.map((type: string, key: number) => <div key={key} className={`gig_${type}`}/>)}
 				<div style={{ background: '#ccccdd' }} > {prettyDate(record?.datetime)} </div>
@@ -395,23 +395,15 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 
 	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => (
 		<div key={year+month}>
-			<div className="tag" >
+			<div className="tag mt-3" >
 				{num2month(month)}, {year}
 				{(gigs.length > 1) && <>
 					{': '}
 					{gigs.length} gigs
 				</>}
 			</div>
-			<div
-				style={{
-					display: 'flex',
-					flexWrap: 'wrap',
-					justifyContent: 'center',
-					}}
-				>
-				{gigs?.sort((a: any, b: any) => parseDay(a.datetime) - parseDay(b.datetime))
-					.map(makeGigRow)}
-			</div>
+			{gigs?.sort((a: any, b: any) => parseDay(a.datetime) - parseDay(b.datetime))
+				.map(makeGigRow)}
 		</div>
 	)
 

@@ -3,19 +3,19 @@ import Image from 'next/image';
 import { Credit } from '@/components/GenericWeb';
 
 const MemorialGuitar = ({ link }: { link: string }) => (
-	<div className="flex flex-col min-[500px]:flex-row gap-5 p-3 items-center">
+	<div className="flex flex-col min-[500px]:flex-row gap-9 items-center">
 		<div className="min-[500px]:w-1/2 justify-self-center">
 			<Link href={link}><Image src="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={300} height={300} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} /></Link>
 			<Credit g="Jooles Joyce" />
 		</div>
-		<div className="min-[500px]:w-1/2 justify-self-center">
+		<div>
 			Pat Fish
 			<p />
 			The Jazz Butcher
 			<p />
-			<b>Patrick Guy Sibley Huntrods</b>
-			<p />
 			<div className="smalltext"> 1957-12-20 / 2021-10-05</div>
+			<p />
+			<b>Patrick Guy Sibley Huntrods</b>
 		</div>
 	</div>
 )
@@ -39,12 +39,11 @@ const MemorialSarah = () => (
 )
 
 const Memorial = (props: { home?: boolean }) => {
-	return (<div className="grid place-items-center">
+	return (<center className="p-3">
 		<MemorialGuitar link={(props?.home) ? '/memoriam' : 'https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute.jpg'} />
 		<p />
 		{(!props?.home) && <MemorialSarah />}
-		<p />
-	</div>)
+	</center>)
 }
 
 export default Memorial;

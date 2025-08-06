@@ -21,7 +21,7 @@ export const GigBarTypes: RecordType = {
 	wilson: {
 		title: 'Wilson',
 		color: '#eee',
-		background: '#e00',
+		background: '#e33',
 		icon: '/images/performance_wilson.png',
 	},
 	sumo: {
@@ -51,7 +51,7 @@ export const GigBarTypes: RecordType = {
 	duo: {
 		title: 'Pat + Max',
 		color: '#eee',
-		background: '#0258bc',
+		background: '#247adf',
 		icon: '/images/performance_duo.png',
 	},
 	interview: {

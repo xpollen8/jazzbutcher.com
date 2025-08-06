@@ -160,7 +160,8 @@ textplus1 {
 .gig_sumo {
 	color: #ffffff;
 	background-color: #000000;
-	padding: 3px;
+	padding: 5px;
+	padding-bottom: 0px;
 }
 .gig_sumo a {
 	color: #fff;
@@ -175,45 +176,57 @@ textplus1 {
 	content: url(/images/performance_jbc.png);
 }
 .gig_eg {
-	background-color: #ddd;
-	margin-bottom: 3px;
+	background-color: #f2f2f2;
+	padding-top: 3px;
+	border-bottom: 1px solid #888;
 }
 .gig_eg:before {
-	content: url(/images/performance_eg.png);
+	content: url(/images/performance_eg.jpg);
 }
 .gig_wilson:before {
-	content: url(/images/performance_wilson.png);
+	content: url(/images/performance_wilson.jpg);
 }
 .gig_duo {
-	background-color: #0258bc;
-	margin-bottom: 3px;
+	background-color: #020203;
+	padding-top: 3px;
+	border-bottom: 1px solid #888;
 }
 .gig_duo:before {
-	content: url(/images/performance_duo.png);
+	content: url(/images/performance_duo.jpg);
 }
 .gig_interview {
-	padding: 9px;
+	padding-left: 5px;
 	font-size: 2em;
+	border-bottom: 1px solid #888;
 	color: #000;
 	background: #9e9;
-	icon: url(/images/performance_other.png);
 }
 .gig_interview:before {
 	content: "Interview";
 }
 .gig_solo {
-	background: #aba;
+	padding-top: 5px;
+	background: #fbfafb;
+	border-bottom: 1px solid #888;
 }
 .gig_solo:before {
-	content: url(/images/performance_solo.png);
+	content: url(/images/performance_solo.jpg);
+}
+.gig_tribute {
+	padding-left: 5px;
+	font-size: 2em;
+	border-bottom: 1px solid #888;
+	color: #eee;
+	background: #99e;
 }
 .gig_tribute:before {
 	content: "Memorial gig";
 }
 .gig_wilson {
 	color: #000;
-	background-color: #ee0000;
-	margin-bottom: 3px;
+	background-color: #ed0000;
+	padding-top: 3px;
+	border-bottom: 1px solid #888;
 }
 .gig_wilson a {
 	color: #339;
@@ -224,10 +237,12 @@ textplus1 {
 	margin-bottom: 5px;
 }
 .gig_nopat:before {
-	content: url(/images/performance_nopat.png);
+	content: url(/images/performance_nopat.jpg);
 }
 .gig_nopat {
-	background-color: #449944;
+	padding-top: 7px;
+	background-color: #037b07;
+	border-bottom: 1px solid #888;
 }
 .gig_institution {
 	background-color: #eeffee;

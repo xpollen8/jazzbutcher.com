@@ -5,7 +5,6 @@ export const GigBarTypes: RecordType = {
 		title: 'JBC',
 		color: '#333',
 		background: 'oldlace',
-		icon: '/images/performance_jbc.png',
 	},
 	project: {
 		title: 'Side Project',
@@ -14,51 +13,43 @@ export const GigBarTypes: RecordType = {
 	},
 	solo: {
 		title: 'Pat Solo',
-		color: '#555',
-		background: '#aba',
-		icon: '/images/performance_solo.png',
+		color: '#333',
+		background: '#fbfafb',
 	},
 	wilson: {
 		title: 'Wilson',
 		color: '#eee',
-		background: '#e33',
-		icon: '/images/performance_wilson.png',
+		background: '#ed0000',
 	},
 	sumo: {
 		title: 'Sumosonic',
 		color: '#eee',
 		background: '#000',
-		icon: '/images/performance_sumo.png',
 	},
 	nopat: {
 		title: 'Hosted..',
 		color: '#f6eaea',
-		background: '#77c',
-		icon: '/images/performance_nopat.png',
+		background: '#037b07',
 	},
 	eg: {
 		title: 'Black Eg',
 		color: '#000',
 		background: '#ee9',
-		icon: '/images/performance_eg.png',
 	},
 	tribute: {
 		title: 'Tribute',
 		color: '#eee',
-		background: '#000',
-		icon: '/images/performance_other.png',
+		background: '#99e',
 	},
 	duo: {
 		title: 'Pat + Max',
 		color: '#eee',
-		background: '#247adf',
-		icon: '/images/performance_duo.png',
+		background: '#020203',
 	},
 	interview: {
 		title: 'Interview',
 		color: '#000',
 		background: '#9e9',
-		icon: '/images/performance_other.png',
 	},
 }
 

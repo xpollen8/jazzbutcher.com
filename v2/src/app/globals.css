@@ -160,13 +160,16 @@ textplus1 {
 .gig_sumo {
 	color: #ffffff;
 	background-color: #000000;
-	margin-bottom: 3px;
+	padding: 3px;
 }
 .gig_sumo a {
 	color: #fff;
 }
 .gig_sumo:before {
-	content: url(/images/performance_sumo.png);
+	content: url(/images/sumo/sumo_logo_50.jpg);
+}
+.gig_jbc {
+	background: oldlace;
 }
 .gig_jbc:before {
 	content: url(/images/performance_jbc.png);
@@ -188,8 +191,18 @@ textplus1 {
 .gig_duo:before {
 	content: url(/images/performance_duo.png);
 }
+.gig_interview {
+	padding: 9px;
+	font-size: 2em;
+	color: #000;
+	background: #9e9;
+	icon: url(/images/performance_other.png);
+}
 .gig_interview:before {
 	content: "Interview";
+}
+.gig_solo {
+	background: #aba;
 }
 .gig_solo:before {
 	content: url(/images/performance_solo.png);

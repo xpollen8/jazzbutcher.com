@@ -22,7 +22,7 @@ const Fanclub = () =>
 				 It was from her friend Bjorn who received it from Earl Sikkorski back in the mid eighties.
 				Long Live The JBC fans!!
 			</>
-			credit='Jimmy Duval'
+			credit='James Duval'
 			credit_url='https://github.com/xpollen8/jazzbutcher.com/issues/110'
 			credit_date='2023-01-28' />
 	</main>

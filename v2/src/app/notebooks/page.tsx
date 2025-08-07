@@ -31,7 +31,7 @@ const whittemore_miracles = [
 ];
 
 const duval = [
-	{ src: "/assets/images/notebooks/notebook_lyrics_sister_death.jpg", alt: <><Link href="/lyrics/sister_death">Sister Death</Link> lyrics</>, credit: 'Jimmy Duval', credit_date: '2022-08-20', body: "I just received these handwritten lyrics from Mr. Curtis E Johnson himself!" }
+	{ src: "/assets/images/notebooks/notebook_lyrics_sister_death.jpg", alt: <><Link href="/lyrics/sister_death">Sister Death</Link> lyrics</>, credit: 'James Duval', credit_date: '2022-08-20', body: "I just received these handwritten lyrics from Mr. Curtis E Johnson himself!" }
 ];
 
 const katelin = [
@@ -47,7 +47,7 @@ const Notebooks = () => {
 		</div>
 		<PhotoSet title='Katelin Smith' photos={katelin}  credit='Katelin Smith' credit_date='2021-10-06' />
 		<hr />
-		<PhotoSet title='Jimmy Duval' photos={duval} />
+		<PhotoSet title='James Duval' photos={duval} />
 		<hr />
 		<PhotoSet title='Whittemore - setlist scans' photos={whittemore_setlists} credit="David Whittemore" />
 		<hr />

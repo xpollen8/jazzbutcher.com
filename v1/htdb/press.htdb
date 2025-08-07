@@ -93,7 +93,7 @@
 	${mkPressHeader()}
 #live		if (defined(UA))
 <h1>update (pub:${${prefix}->url})</h1>
-#live			if (sql(x:update press set type="${replace(${${prefix}->type}, ;,,)}", todo="${${prefix}->todo}", album="${${prefix}->album}", thumb="${${prefix}->thumb}", images="${literalizeQuotes(${${prefix}->images})}", media="${literalizeQuotes(${${prefix}->media})}", annotation="${literalizeQuotes(${${prefix}->annotation})}", audio="${literalizeQuotes(${${prefix}->audio})}", publication="${literalizeQuotes(${${prefix}->publication})}", title="${literalizeQuotes(${${prefix}->title})}", headline="${literalizeQuotes(${${prefix}->headline})}", subhead="${literalizeQuotes(${${prefix}->subhead})}", location="${literalizeQuotes(${${prefix}->location})}", summary="${literalizeQuotes(${${prefix}->summary})}", source="${${prefix}->source}", credit="${${prefix}->credit}", dtadded="${fixDt(${${prefix}->added})}", dtpublished="${fixDt(${${prefix}->dt})}", dtgig="${fixDt(${${prefix}->datetime})}", person="${literalizeQuotes(${${prefix}->person})}", body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
+#live			if (sql(x:update press set type="${replace(${${prefix}->type}, ;,,)}", todo="${${prefix}->todo}", album="${${prefix}->album}", thumb="${${prefix}->thumb}", images="${literalizeQuotes(${${prefix}->images})}", media="${literalizeQuotes(${${prefix}->media})}", annotation="${literalizeQuotes(${${prefix}->annotation})}", audio="${literalizeQuotes(${${prefix}->audio})}", publication="${literalizeQuotes(${${prefix}->publication})}", title="${literalizeQuotes(${${prefix}->title})}", headline="${literalizeQuotes(${${prefix}->headline})}", subhead="${literalizeQuotes(${${prefix}->subhead})}", location="${literalizeQuotes(${${prefix}->location})}", summary="${literalizeQuotes(${${prefix}->summary})}", source="${${prefix}->source}", credit="${${prefix}->credit}", dtadded="${fixDt(${${prefix}->dtadded})}", dtpublished="${fixDt(${${prefix}->dtpublished})}", dtgig="${fixDt(${${prefix}->datetime})}", person="${literalizeQuotes(${${prefix}->person})}", body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
 #live			endif
 #update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}";
 ##live	if (sql(z:update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
@@ -145,7 +145,7 @@
 #live	endif
 
 	${mkHeader(section=Press, title=${ternary(getval(${prefix}->publication), ${${prefix}->publication}, ${${prefix}->title})}
-		- ${literalizeCommas(${mkPressDate(ts=${${prefix}->dt})})}
+		- ${literalizeCommas(${mkPressDate(ts=${${prefix}->dtpublished})})}
 	)}
 
 ##live	if (makeArray(types, ;, ${${prefix}->types}))
@@ -171,7 +171,7 @@
 #live	if (defined(${prefix}->location))
 			(${${prefix}->location})
 #live	endif
-			${mkPressDate(ts=${${prefix}->dt})}
+			${mkPressDate(ts=${${prefix}->dtpublished})}
 			${mkPressCredit(prefix=${prefix})}
 		</div>
 
@@ -211,8 +211,8 @@
 
 ##live		endwhile
 ##live	endif
-#live	if (getval(${prefix}->added))
-			<b style="margin: 3px; ">Item added:</b> ${${prefix}->added}
+#live	if (getval(${prefix}->dtadded))
+			<b style="margin: 3px; ">Item added:</b> ${${prefix}->dtadded}
 #live	endif
 		</div>
 
@@ -286,7 +286,7 @@ ${d}
 #define	pressItems->field[2]	type
 #define	pressItems->field[3]	url
 #define	pressItems->field[4]	datetime
-#define	pressItems->field[5]	dt
+#define	pressItems->field[5]	dtpublished
 #define	pressItems->field[6]	album
 #define	pressItems->field[7]	publication
 #define	pressItems->field[8]	title
@@ -307,8 +307,8 @@ ${d}
 ##live		endif
 #live		loop (pi, 1, ${pressItems->numResults})
 #live			if (define(pr, pressItems[${pi}]))
-<h3>${pi}: update (pub:${${pr}->dt}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
-#live				if (sql(x:insert IGNORE into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${literalizeQuotes(${${pr}->images})}", media="${literalizeQuotes(${${pr}->media})}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${literalizeQuotes(${${pr}->audio})}", publication="${literalizeQuotes(${${pr}->publication})}", title="${literalizeQuotes(${${pr}->title})}", headline="${literalizeQuotes(${${pr}->headline})}", subhead="${literalizeQuotes(${${pr}->subhead})}", location="${literalizeQuotes(${${pr}->location})}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->added})}", dtpublished="${fixDt(${${pr}->dt})}", dtgig="${fixDt(${${pr}->datetime})}", person="${literalizeQuotes(${${pr}->person})}", body="${literalizeQuotes(${${pr}->body})}"))
+<h3>${pi}: update (pub:${${pr}->dtpublished}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
+#live				if (sql(x:insert IGNORE into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${literalizeQuotes(${${pr}->images})}", media="${literalizeQuotes(${${pr}->media})}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${literalizeQuotes(${${pr}->audio})}", publication="${literalizeQuotes(${${pr}->publication})}", title="${literalizeQuotes(${${pr}->title})}", headline="${literalizeQuotes(${${pr}->headline})}", subhead="${literalizeQuotes(${${pr}->subhead})}", location="${literalizeQuotes(${${pr}->location})}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->dtadded})}", dtpublished="${fixDt(${${pr}->dtpublished})}", dtgig="${fixDt(${${pr}->datetime})}", person="${literalizeQuotes(${${pr}->person})}", body="${literalizeQuotes(${${pr}->body})}"))
 #live				endif
 #live			endif
 #live		endloop
@@ -324,7 +324,7 @@ ${d}
 
 #live	endif
 
-#define	addPress(type, url, dt, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, added, headline, subhead, images, todo, media, audio, annotation, body)
+#define	addPress(type, url, dtpublished, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, dtadded, headline, subhead, images, todo, media, audio, annotation, body)
 
 #live	if (defined(url))
 
@@ -353,7 +353,7 @@ ${d}
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=datetime, value=${fixDt(${datetime})}))
 #live			endif
-#live			if (defIt(prefix=${pre}, url=${url}, field=dt, value=${fixDt(${dt})}))
+#live			if (defIt(prefix=${pre}, url=${url}, field=dtpublished, value=${fixDt(${dtpublished})}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=album, value=${album}))
 #live			endif
@@ -377,9 +377,9 @@ ${d}
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=summary, value=${summary}))
 #live			endif
-#live			if (defIt(prefix=${pre}, url=${url}, field=new, value=${isNew(${added})}))
+#live			if (defIt(prefix=${pre}, url=${url}, field=new, value=${isNew(${dtadded})}))
 #live			endif
-#live			if (defIt(prefix=${pre}, url=${url}, field=added, value=${added}))
+#live			if (defIt(prefix=${pre}, url=${url}, field=dtadded, value=${dtadded}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=source, value=${source}))
 #live			endif
@@ -400,7 +400,7 @@ ${d}
 		url=${jbc_gigs}/${ts2URI(${g[${z}]->datetime})},
 		title=<i>Punter Gig Review - ${literalizeCommas(${g[${z}]->venue}, ${g[${z}]->city}, ${g[${z}]->country})}</i>,
 		datetime=${g[${z}]->datetime},
-		dt=${g[${z}]->datetime})}
+		dtpublished=${g[${z}]->datetime})}
 #live	endwhile
 #live	endif
 
@@ -429,7 +429,7 @@ ${d}
 		url=${jbc_gigs}/${ts2URI(${g[${z}]->datetime})},
 		title=<i>Pat's Gig Review - ${literalizeCommas(${g[${z}]->venue}, ${g[${z}]->city}, ${g[${z}]->country})}</i>,
 		datetime=${g[${z}]->datetime},
-		dt=${g[${z}]->datetime})}
+		dtpublished=${g[${z}]->datetime})}
 #live	endwhile
 #live	endif
 
@@ -447,8 +447,8 @@ ${d}
 		location=University of Toronto\, Canada,
 		title=The Jazz Butcher,
 		headline=tottering on the edge of popularity,
-		dt=1986-08-07,
-		added=2024-11-14)}
+		dtpublished=1986-08-07,
+		dtadded=2024-11-14)}
 
 	${addPress(type=album, album=planet,
 		url=${jbc_press}/19900125_press_varsity_planet.html,
@@ -458,8 +458,8 @@ ${d}
 		credit=ANDREW THOMPSON,
 		location=University of Toronto\, Canada,
 		title=The Jazz Butcher,
-		dt=1990-01-25,
-		added=2024-11-14)}
+		dtpublished=1990-01-25,
+		dtadded=2024-11-14)}
 
 	${addPress(type=album, album=cult,
 		url=${jbc_press}/19901211_press_varsity_cult.html,
@@ -469,8 +469,8 @@ ${d}
 		credit=MURRAY FOSTER,
 		location=University of Toronto\, Canada,
 		title=The Jazz Butcher,
-		dt=1990-12-11,
-		added=2024-11-14)}
+		dtpublished=1990-12-11,
+		dtadded=2024-11-14)}
 
 	${addPress(type=album, album=fishco,
 		url=${jbc_press}/19880404_press_collegian_fishco.html,
@@ -480,8 +480,8 @@ ${d}
 		credit=CHAD EDWARDS,
 		location=Amherst\, Massachusetts\, USA,
 		title=Butcher bounces back on new Fishcoteque Lp,
-		dt=1988-04-04,
-		added=2024-11-14)}
+		dtpublished=1988-04-04,
+		dtadded=2024-11-14)}
 
 	${addPress(type=album, album=nons,
 		url=${jbc_press}/19860919_press_catalyst_nonsense.html,
@@ -491,8 +491,8 @@ ${d}
 		credit=CHRISTOPHER DUNN,
 		location=Colorado College\, Colorado\, USA,
 		title=Tasty Cuts from the Butcher,
-		dt=1986-09-19,
-		added=2024-11-14)}
+		dtpublished=1986-09-19,
+		dtadded=2024-11-14)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/19880526_press_charlatan.html,
@@ -502,8 +502,8 @@ ${d}
 		credit=Anne Marie McElrone,
 		location=Carleton University\, Ottawa\, Ontario\, Canada,
 		title=Beer and Big Questions with the Butcher,
-		dt=1988-05-26,
-		added=2024-11-14)}
+		dtpublished=1988-05-26,
+		dtadded=2024-11-14)}
 
 	${addPress(type=album, album=nons,
 		url=${jbc_press}/19861003_press_queensjournal_nonsense.html,
@@ -513,8 +513,8 @@ ${d}
 		credit=JEFF BURTT,
 		location=Queen's University\, Kingston\, Ontario\, Canada,
 		title=Jazz Butcher makes music of bloody nonsense,
-		dt=1986-10-03,
-		added=2024-11-14)}
+		dtpublished=1986-10-03,
+		dtadded=2024-11-14)}
 
 	${addPress(type=album, album=spook,
 		url=${jbc_press}/19890310_press_queensjournal_spooky.html,
@@ -524,8 +524,8 @@ ${d}
 		credit=TOM MEGGINSON,
 		location=Queen's University\, Kingston\, Ontario\, Canada,
 		title=Spooky,
-		dt=1989-03-10,
-		added=2024-11-14)}
+		dtpublished=1989-03-10,
+		dtadded=2024-11-14)}
 
 	${addPress(type=album, album=dist,
 		url=${jbc_press}/19861128_press_queensjournal_distressed.html,
@@ -535,8 +535,8 @@ ${d}
 		credit=JEFF BURTT,
 		location=Queen's University\, Kingston\, Ontario\, Canada,
 		title=Butcher lacks chop,
-		dt=1986-11-28,
-		added=2024-11-14)}
+		dtpublished=1986-11-28,
+		dtadded=2024-11-14)}
 
 	${addPress(type=album, album=planet,
 		url=${jbc_press}/19891117_press_queensjournal_planet.html,
@@ -546,8 +546,8 @@ ${d}
 		credit=Helen Lee,
 		location=Queen's University\, Kingston\, Ontario\, Canada,
 		title=Meaty offering from the Butcher,
-		dt=1989-11-17,
-		added=2024-11-14)}
+		dtpublished=1989-11-17,
+		dtadded=2024-11-14)}
 
 	${addPress(type=album, album=dist,
 		url=${jbc_press}/19870115_press_varsity_distressed.html,
@@ -557,8 +557,8 @@ ${d}
 		credit=Helen Lee,
 		location=Toronto\, Canada,
 		title=In the springtime fish have sex,
-		dt=1987-01-15,
-		added=2024-11-14)}
+		dtpublished=1987-01-15,
+		dtadded=2024-11-14)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19891207_press_martlet.html,
@@ -569,8 +569,8 @@ ${d}
 		location=Victoria\, Canada,
 		title=Unusual pair rocked the Forge,
 		datetime=1989-11-29,
-		dt=1989-12-07,
-		added=2024-11-14)}
+		dtpublished=1989-12-07,
+		dtadded=2024-11-14)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/20130113_press_unita.html,
@@ -582,8 +582,8 @@ ${d}
 		title=Jazz Butcher,
 		headline=il ritorno,
 		subhead=Il cd del gruppo inglese finanziato su internet,
-		dt=2013-01-13,
-		added=2024-11-14)}
+		dtpublished=2013-01-13,
+		dtadded=2024-11-14)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/198503_press_goforgold3_germany.html,
@@ -594,8 +594,8 @@ ${d}
 		credit=Any More & Gil,
 		location=Ludenscheid\, Germany,
 		title=The Jazz Butcher,
-		dt=1985-03,
-		added=2023-11-29)}
+		dtpublished=1985-03,
+		dtadded=2023-11-29)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20180206_press_magnetmagazine.html,
@@ -604,8 +604,8 @@ ${d}
 		credit=Corey duBrowa,
 		title=Essential New Music,
 		headline=The Jazz Butcher’s “The Wasted Years”,
-		dt=2018-02-06,
-		added=2023-11-28)}
+		dtpublished=2018-02-06,
+		dtadded=2023-11-28)}
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/20160227_press_magnetmagazine.html,
@@ -614,8 +614,8 @@ ${d}
 		credit=Corey duBrowa,
 		title=Essential New Music,
 		headline=The Jazz Butcher’s “Last Of The Gentleman Adventurers”,
-		dt=2016-02-27,
-		added=2023-11-28)}
+		dtpublished=2016-02-27,
+		dtadded=2023-11-28)}
 
 	${addPress(type=album, album=bacon,
 		url=${jbc_press}/19820905_press_mercuryandherald.html,
@@ -627,8 +627,8 @@ ${d}
 		title=Jazz Butcher set for a debut,
 		headline=The choice cuts sound 'very promising',
 		subhead=and different,
-		dt=1982-09-05,
-		added=2023-09-10)}
+		dtpublished=1982-09-05,
+		dtadded=2023-09-10)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19891128_press_gateway.html,
@@ -639,8 +639,8 @@ ${d}
 		title=Butcher in creative trouble,
 		credit=Greg Pohl,
 		datetime=1989-11-25,
-		dt=1989-11-28,
-		added=2023-11-08)}
+		dtpublished=1989-11-28,
+		dtadded=2023-11-08)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19831008_press_mercuryandherald.html,
@@ -650,8 +650,8 @@ ${d}
 		location=Northampton\, UK,
 		title=The gift of music,
 		datetime=1983-09-24,
-		dt=1983-10-08,
-		added=2023-09-10)}
+		dtpublished=1983-10-08,
+		dtadded=2023-09-10)}
 
 	${addPress(type=gig;review,
 		url=${jbc_press}/20180301_press_quartet.html,
@@ -661,8 +661,8 @@ ${d}
 		credit=simonovitch,
 		source=http://www.whisperinandhollerin.co.uk/reviews/review.asp?id=14086,
 		datetime=2018-03-01 19:30:00,
-		dt=2018-03-01 19:30:00,
-		added=2024-03-18)}
+		dtpublished=2018-03-01 19:30:00,
+		dtadded=2024-03-18)}
 
 	${addPress(type=gig;review,
 		url=${jbc_press}/20140920_press_quartet.html,
@@ -672,7 +672,7 @@ ${d}
 		credit=simonovitch,
 		source=http://www.whisperinandhollerin.com/reviews/review.asp?id=11388,
 		datetime=2014-09-20 20:00:00,
-		dt=2014-09-20 20:00:00)}
+		dtpublished=2014-09-20 20:00:00)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220202_press_brooklynvegan.html,
@@ -680,8 +680,8 @@ ${d}
 		title=Watch The Jazz Butcher's animated "Running On Fumes" video from posthumous new LP,
 		credit=Bill Pearis,
 		source=https://www.brooklynvegan.com/watch-the-jazz-butchers-animated-running-on-fumes-video-from-posthumous-new-lp/,
-		dt=2022-02-02,
-		added=2023-10-103)}
+		dtpublished=2022-02-02,
+		dtadded=2023-10-103)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211127_press_tribute.html,
@@ -690,8 +690,8 @@ ${d}
 		headline=The Jazz Butcher,
 		credit=simonovitch,
 		source=http://www.whisperinandhollerin.com/reviews/review.asp?id=15747,
-		dt=2021-11-27 19:30:00,
-		added=2023-09-10)}
+		dtpublished=2021-11-27 19:30:00,
+		dtadded=2023-09-10)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/20150420_press_dirtyrock.html,
@@ -705,8 +705,8 @@ ${d}
 		credit=Juan Vitoria,
 		source=https://www.dirtyrock.info/2015/04/the-jazz-butcher-pat-fish-en-el-25-aniversario-del-programa-de-radio-los-39-sonidos-en-el-16-toneladas-de-valencia/,
 		datetime=2015-04-17 23:30:00,
-		dt=2015-04-20,
-		added=2023-09-20)}
+		dtpublished=2015-04-20,
+		dtadded=2023-09-20)}
 
 	${addPress(type=profile,
 		url=${jbc_press}/20190526_press_creationrecords.html,
@@ -715,8 +715,8 @@ ${d}
 		title=Pat Fish of The Jazz Butcher ‘has been unwell’,
 		headline=Pat Fish of The Jazz Butcher is currently recovering from an unspecified illness earlier this year\, his recovery has meant that he is unable to work at present.,
 		source=https://creation-records.com/2019/05/26/pat-fish-of-the-jazz-butcher-has-been-unwell/,
-		dt=2019-05-26,
-		added=2023-09-20)}
+		dtpublished=2019-05-26,
+		dtadded=2023-09-20)}
 
 	${addPress(type=interview;podcast, person=barker,
 		url=${jbc_press}/20241128_DaveBarker_interview_counterforce.html,
@@ -726,8 +726,8 @@ ${d}
 		title=Episode #60 - Dave Barker,
 		headline=Dave Barker Audio interview,
 		credit=Aug Stone,
-		dt=2024-11-28,
-		added=2025-01-25)}
+		dtpublished=2024-11-28,
+		dtadded=2025-01-25)}
 
 	${addPress(type=interview;radio,
 		url=${jbc_press}/20160209_JazzButcher_interview_RadioAbcNetAu.html,
@@ -737,8 +737,8 @@ ${d}
 		location=Australia,
 		title=The Inside Sleeve,
 		headline=Last Of The Gentleman Adventurers - The Jazz Butcher,
-		dt=2016-02-09,
-		added=2025-06-12)}
+		dtpublished=2016-02-09,
+		dtadded=2025-06-12)}
 
 	${addPress(type=interview;podcast,
 		url=${jbc_press}/20210905_interview_PaulMcGuire_TheFunhouse88.html,
@@ -748,8 +748,8 @@ ${d}
 		title=Episode #88,
 		headline=Pat Fish Audio interview,
 		credit=Paul McGuire,
-		dt=2021-09-05,
-		added=2023-09-23)}
+		dtpublished=2021-09-05,
+		dtadded=2023-09-23)}
 
 	${addPress(type=interview;radio,
 		url=${jbc_press}/19920623_JazzButcher_WXPN_Interview.html,
@@ -759,9 +759,9 @@ ${d}
 		credit=David Dye,
 		title=World Cafe,
 		headline=Radio interview,
-		dt=1992-06-23,
+		dtpublished=1992-06-23,
 		summary=Played: Honey & Biggest Harriest,
-		added=2023-12-25,
+		dtadded=2023-12-25,
 		)}
 
 	${addPress(type=interview;radio, person=pat;pete,
@@ -770,7 +770,7 @@ ${d}
 		location=Chicago\, Illinois\, USA,
 		publication=WNUR,
 		title=Radio interview,
-		dt=1992-05-16,
+		dtpublished=1992-05-16,
 		summary=College radio interview with a couple of live tunes,
 		)}
 
@@ -781,7 +781,7 @@ ${d}
 		publication=KTBS,
 		credit=Robert Jacob,
 		title=Radio interview,
-		dt=1990-01-19,
+		dtpublished=1990-01-19,
 		)}
 
 	${addPress(type=interview;radio, person=pat;pete,
@@ -790,7 +790,7 @@ ${d}
 		location=Paris\, France,
 		publication=French National Radio,
 		title=French-language interview,
-		dt=1993-02-15,
+		dtpublished=1993-02-15,
 		annotation=${literalizeCommas(
 			The guy hosting the event was Bernard Lenoir, easily France's most famous rock DJ. The word is (and I believe it) that Jim Morrison actually died in his house, and had to be moved back across town into his own shower...
 			)};;Pat Fish$$
@@ -802,7 +802,7 @@ ${d}
 		publication=WRAS,
 		location=Atlanta\, Georgia\, USA,
 		title=WRAS Radio Interview,
-		dt=1992-04-25,
+		dtpublished=1992-04-25,
 		summary=${literalizeCommas(
 			Includes the 'Sydney Meats Story'
 			)}
@@ -814,7 +814,7 @@ ${d}
 		publication=WXYC,
 		location=Chapel Hill\, North Carolina\, USA,
 		title=WXYC Radio Interview,
-		dt=1992-04-26,
+		dtpublished=1992-04-26,
 		summary=${literalizeCommas(
 			In-studio. Basic college radio interview.
 			Pat & Dooj.
@@ -827,7 +827,7 @@ ${d}
 		publication=CBC,
 		location=Toronto\, Canada,
 		title=CBC Radio Interview,
-		dt=1992-05-06,
+		dtpublished=1992-05-06,
 		credit=Brent Brambury,
 		summary=${literalizeCommas(
 			Very thoughtful ${blue} era interview during tour of US/Canada.
@@ -840,7 +840,7 @@ ${d}
 		publication=WHPK,
 		location=Chicago\, Illinois\, USA,
 		title=Black Eg Radio Interview,
-		dt=1992-06-26,
+		dtpublished=1992-06-26,
 		credit=Joe Beaulieu,
 		audio=http://www.adjective.com/audio/eg/whpk_interview.mp3;;The Interview$$http://www.adjective.com/audio/eg/blackeg.mp3;;Excerpts;;David Whittemore,
 		summary=${literalizeCommas(
@@ -856,8 +856,8 @@ ${d}
 		title=Steve Wilson talks to PAT FISH,
 		location=Burbank\, CA\, USA,
 		credit=Steve Wilson,
-		dt=2018-12,
-		added=2023-09-23)}
+		dtpublished=2018-12,
+		dtadded=2023-09-23)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/19900411_alterock.html,
@@ -868,7 +868,7 @@ ${d}
 		credit=Gonzo,
 		source=http://saltyka.blogspot.com/2009/05/jazz-butcher.html,
 		datetime=1990-04-11 00:00:00,
-		dt=1990-04-11)}
+		dtpublished=1990-04-11)}
 
 	${addPress(type=interview;podcast, person=barker,
 		url=${jbc_press}/20220128_interview_50YearsOfFun.html,
@@ -879,8 +879,8 @@ ${d}
 		subhead=Episode: JAZZ001,
 		source=https://podcasts.apple.com/us/podcast/jaz001-pat-fish-the-jazz-butcher-special-w-guest/id1542932551?i=1000549279324,
 		credit=patreon.com/fiftyyearsoffun,
-		dt=2022-01-28,
-		added=2023-09-20)}
+		dtpublished=2022-01-28,
+		dtadded=2023-09-20)}
 
 	${addPress(type=interview, person=pat;max,
 		url=${jbc_press}/19860718_press_backgroundmediumproductions.html,
@@ -893,8 +893,8 @@ ${d}
 		subhead=The Jazz Butcher - July 18, 1986,
 		credit=JC,,
 		source=https://happymediumproductions.weebly.com/interview-2---the-jazz-butcher.html,
-		dt=1986-07-18,
-		added=2023-09-20,
+		dtpublished=1986-07-18,
+		dtadded=2023-09-20,
 		summary=${literalizeCommas(
 			${pat} & ${max} in Washington, DC the night of the Jazz Butcher's show at the 9:30 Club.
 			<br />
@@ -920,8 +920,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		credit=Neil Cooper,
 		source=https://twitter.com/NeilCooper1,
 		datetime=1983-04-19 20:30:00,
-		dt=1983-06,
-		added=2018-04-01)}
+		dtpublished=1983-06,
+		dtadded=2018-04-01)}
 
 #	${addPress(type=preshow;interview,
 # 2025-06-12 - awaiting Jimmy Duval's checking in with Swick for date/publication
@@ -1014,7 +1014,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		credit=Christos Doukakis,
 		source=http://lastdaydeaf.com/the-jazz-butcher-quartet/,
 		datetime=2017-04-08 20:00:00,
-		dt=2017-04-06)}
+		dtpublished=2017-04-06)}
 
 	${addPress(type=album, album=welove,
 		url=${jbc_press}/19901013_press_nme.html,
@@ -1022,18 +1022,18 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		todo=OCR,
 		publication=New Music Express,
 		credit=HM The Queen,
-		dt=1990-10-13,
+		dtpublished=1990-10-13,
 		source=https://pbs.twimg.com/media/FXpoGiuUUAAdQlo?format=jpg&name=large,
-		added=2023-09-12)}
+		dtadded=2023-09-12)}
 
 	${addPress(type=album, album=welove,
 		url=${jbc_press}/19900919_press_nme.html,
 		thumb=${jbc_images}/19900919/19900919_press_nme;;David Whittemore,
 		publication=New Music Express,
 		credit=HM The Queen,
-		dt=1990-09-19,
+		dtpublished=1990-09-19,
 		source=https://twitter.com/martin_j_wilson/status/1307237594330288136/photo/1,
-		added=2020-09-19)}
+		dtadded=2020-09-19)}
 
 	${addPress(type=album, album=scandal,
 		url=${jbc_press}/20180214_press_wonomagazine.html,
@@ -1042,9 +1042,9 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=A Scandal In Bohemia,
 		headline=The Jazz Butcher,
 		location=Netherlands,
-		dt=2018-02-14,
+		dtpublished=2018-02-14,
 		source=https://wonomagazine.blogspot.com/2018/02/a-scandal-in-bohemia-jazz-butcher.html,
-		added=2023-09-20)}
+		dtadded=2023-09-20)}
 
 	${addPress(type=album, album=dist,
 		url=${jbc_press}/20130405_press_songwithinasong.html,
@@ -1053,9 +1053,9 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=The Jazz Butcher Conspiracy,
 		headline=Nothing special,
 		location=Spain,
-		dt=2013-04-05,
+		dtpublished=2013-04-05,
 		source=https://cofrederecuerdosmusicales.blogspot.com/2013/04/the-jazz-butcher-conspiracy-nada.html,
-		added=2023-09-20)}
+		dtadded=2023-09-20)}
 
 	${addPress(type=album, album=dist,
 		url=${jbc_press}/198703_press_rockdelux.html,
@@ -1063,9 +1063,9 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		credit=Ricardo Aldarondo,
 		publication=Rock Delux,
 		location=Spain,
-		dt=1987-03,
+		dtpublished=1987-03,
 		source=https://twitter.com/raldarondo/status/1261354575413436423/photo/1,
-		added=2020-05-15)}
+		dtadded=2020-05-15)}
 
 	${addPress(type=preshow;kit,
 		url=${jbc_press}/19900308_press.html,
@@ -1074,7 +1074,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=Universal Club Postcard,
 		location=Madrid\, Spain,
 		datetime=1990-03-08,
-		dt=1990-03-08)}
+		dtpublished=1990-03-08)}
 
 	${addPress(type=preshow;interview,
 		url=${jbc_press}/19901109_press_guelph.html,
@@ -1084,8 +1084,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		credit=Bruce Lawrence,
 		location=Guelph\, Ontario\, Canada,
 		datetime=1990-11-09,
-		added=2017-06-25,
-		dt=1990-11-09)}
+		dtadded=2017-06-25,
+		dtpublished=1990-11-09)}
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19901105_press_minneapolis.html,
@@ -1096,7 +1096,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		credit=Walsh,
 		location=Minneapolis\, Minnesota\, USA,
 		datetime=1990-11-05,
-		dt=1990-11-05)}
+		dtpublished=1990-11-05)}
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19870210_press_BestOfRockNRollFolkMagazine.html,
@@ -1106,7 +1106,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=Gig clipping,
 		location=France,
 		datetime=1987-02-10,
-		dt=1987-02-10)}
+		dtpublished=1987-02-10)}
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19930221_press_BestOfRockNRollFolkMagazine.html,
@@ -1116,7 +1116,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=Gig clipping,
 		location=France,
 		datetime=1993-02-21 20:00:00,
-		dt=1993-02-21 20:00:00)}
+		dtpublished=1993-02-21 20:00:00)}
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19930216_press_LiberationNewspaper.html,
@@ -1126,7 +1126,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=Gig clipping,
 		location=France,
 		datetime=1993-02-16,
-		dt=1993-02-16)}
+		dtpublished=1993-02-16)}
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19931115_press_lEstRepublicainNewspaper.html,
@@ -1136,7 +1136,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=Gig clipping,
 		location=France,
 		datetime=1993-11-15,
-		dt=1993-11-15)}
+		dtpublished=1993-11-15)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/20170503_popnews.html,
@@ -1150,7 +1150,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		location=France,
 		source=http://www.popnews.com/popnews/the-jazz-butcher-the-jasmine-minks-the-lexington-londres-15-avril-2017,
 		datetime=2017-04-15,
-		dt=2017-05-03)}
+		dtpublished=2017-05-03)}
 
 	${addPress(type=pat;wilson,
 		url=${jbc_press}/20040512_wilson_warfare.html,
@@ -1159,13 +1159,13 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		subhead=BEHOLD\, LITTLE WARFARE PUNTERS.  THEY COME IN BLACK TO MESS WITH YOUR HEADS.,
 		thumb=${jbc_images}/wilson/warfare/image002,
 		images=${jbc_images}/wilson/warfare/misery$$${jbc_images}/wilson/warfare/eman$$${jbc_images}/wilson/warfare/bottie$$${jbc_images}/wilson/warfare/russ$$${jbc_images}/wilson/warfare/stevieg$$${jbc_images}/wilson/warfare/headstone$$,
-		dt=2004-05-12)}
+		dtpublished=2004-05-12)}
 
 	${addPress(type=pat;wilson,
 		url=${jbc_press}/20040512_wilson_about.html,
 		images=${jbc_images}/wilson/warfare/image002$$${jbc_images}/20020131/20020131_wilson_boatrace;;;;;;;;Wilson at the Boatrace in Cambridge\, 31Jan2002,
 		title=About Wilson,
-		dt=2004-05-12)}
+		dtpublished=2004-05-12)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/20200925_press_melomania.html,
@@ -1176,8 +1176,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		credit=tbone@tbonescafe.com,
 		source=https://melomania.substack.com/p/an-archived-interview-with-pat-fish,
 		summary=Lengthy career-spanning questions answered,
-		dt=2020-09-25,
-		added=2023-09-20)}
+		dtpublished=2020-09-25,
+		dtadded=2023-09-20)}
 
 	${addPress(type=interview;album, album=human,
 		url=${jbc_press}/19851109_press_nme.html,
@@ -1185,8 +1185,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=New Music Express,
 		credit=Mick Mercer,
 		source=https://twitter.com/nothingelseon/status/1286213134357639168/photo/1,
-		dt=1985-11-09,
-		added=2020-07-23)}
+		dtpublished=1985-11-09,
+		dtadded=2020-07-23)}
 
 	${addPress(type=album, album=sex,
 		url=${jbc_press}/19850615_press_nme.html,
@@ -1197,8 +1197,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=New Music Express,
 		credit=David Swift,
 		source=https://twitter.com/nothingelseon/status/1268819255841026048/photo/1,
-		dt=1985-06-15,
-		added=2020-06-05)}
+		dtpublished=1985-06-15,
+		dtadded=2020-06-05)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/19860808_press_nerve.html,
@@ -1209,8 +1209,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		credit=Helen Lee,
 		source=https://archive.org/details/1986_08_August_Nerve_27/page/n3/mode/2up?q=%22Jazz+Butcher%22&view=theater,
 		images=${jbc_images}/19860808/19860808_MikeDyer_PatFish_Negative_1$$${jbc_images}/19860808/19860808_MikeDyer_PatFish_Negative_2$$${jbc_images}/19860808/19860808_MikeDyer_PatFish_Negative_3$$${jbc_images}/19860808/19860808_MikeDyer_PatFish_Negative_4;;Mike Dyer;;;;2023-10-25,
-		dt=1986-08-08,
-		added=2023-09-08)}
+		dtpublished=1986-08-08,
+		dtadded=2023-09-08)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/19850302_press_nme.html,
@@ -1220,8 +1220,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=THIS MEAT IS MURDER,
 		headline=William Leith asks the question that bugs you all —who is The Jazz Butcher?,
 		source=https://twitter.com/nothingelseon/status/1257944495607255041/photo/1,
-		dt=1985-03-02,
-		added=2020-05-06)}
+		dtpublished=1985-03-02,
+		dtadded=2020-05-06)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19850112_press_nme.html,
@@ -1230,8 +1230,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		credit=Bruce Dessau,
 		source=https://twitter.com/nothingelseon/status/1252870405653532681/photo/1,
 		datetime=1984-11-09,
-		dt=1985-01-12,
-		added=2020-04-22)}
+		dtpublished=1985-01-12,
+		dtadded=2020-04-22)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/202201_press_uncut.html,
@@ -1241,8 +1241,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		todo=OCR,
 		publication=Uncut Magazine,
 		credit=Jim Wirth,
-		dt=2022-01,
-		added=2023-09-23)}
+		dtpublished=2022-01,
+		dtadded=2023-09-23)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220215_press_popnews.html,
@@ -1252,8 +1252,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		location=France,
 		credit=Vincent Arquillière,
 		source=https://www.popnews.com/2022/02/15/the-jazz-butcher-the-highest-in-the-land/,
-		dt=2022-02-15,
-		added=2023-09-22)}
+		dtpublished=2022-02-15,
+		dtadded=2023-09-22)}
 
 	${addPress(type=preshow,
 		url=${jbc_press}/20190918_press_popnews.html,
@@ -1262,9 +1262,9 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		location=France,
 		credit=Vincent Arquillière,
 		source=http://www.popnews.com/2019/09/18/le-jazz-butcher-en-visite/,
-		dt=2019-09-28 19:00:00,
+		dtpublished=2019-09-28 19:00:00,
 		datetime=2019-09-28 19:00:00,
-		added=2021-11-22)}
+		dtadded=2021-11-22)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/20200504_press_popnews.html,
@@ -1274,8 +1274,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		location=France,
 		credit=Vincent Arquillière,
 		source=http://popnews.com/2020/05/04/pat-fish-the-jazz-butcher-mes-chansons-nont-pas-toujours-ete-bien-comprises/,
-		dt=2020-05-04,
-		added=2020-05-04)}
+		dtpublished=2020-05-04,
+		dtadded=2020-05-04)}
 
 	${addPress(type=preshow;wilson,
 		url=${jbc_press}/20120907_wilson_northamptonchron.html,
@@ -1283,7 +1283,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		credit=David Jackson,
 		source=http://www.northamptonchron.co.uk/whats-on/music/wilson-return-for-picturedrome-show-1-4236180,
 		datetime=2012-09-07 19:30:00,
-		dt=2012-09-07 08:43:00)}
+		dtpublished=2012-09-07 08:43:00)}
 
 	${addPress(type=gig;wilson,
 		url=${jbc_press}/20040912_wilson_cricketpress.html,
@@ -1291,14 +1291,14 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Cricket Press,
 		todo=OCR,
 		datetime=2004-09-12 16:00:00,
-		dt=2004-09-12)}
+		dtpublished=2004-09-12)}
 
 	${addPress(type=wilson;kit,
 		url=${jbc_press}/20030916_wilson_bbci.html,
 		publication=BBCi,
 		title=Band Profile,
 		source=http://www.bbc.co.uk/print/northamptonshire/music/sounds/wilson.shtml,
-		dt=2003-09-16)}
+		dtpublished=2003-09-16)}
 
 	${addPress(type=preshow;kit;eg,
 		url=${jbc_press}/94eg.html,
@@ -1306,7 +1306,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=A press release received from those slavic sensations BLACK EG,
 		headline=Do not miss this,
 		subhead=your life could depend upon it,
-		dt=1994-06-01,
+		dtpublished=1994-06-01,
 		datetime=1994-06-01)}
 
 	${addPress(type=interview,
@@ -1316,8 +1316,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		source=https://web.archive.org/web/20081120210226/http://www.caughtinthecarousel.com/interviews/jazzButcher.php,
 		credit=Alex Green,
 		summary=An incredibly long and detailed interview rescued from archive.org,
-		added=2017-07-30,
-		dt=2007-11-30)}
+		dtadded=2017-07-30,
+		dtpublished=2007-11-30)}
 
 	${addPress(type=interview, person=max_eider,
 		url=${jbc_press}/20080219_mickmercer_max_eider.html,
@@ -1325,8 +1325,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Max Eider Blog,
 		source=http://maxeider.com/blog/578,
 		credit=Mick Mercer,
-		added=2017-07-30,
-		dt=2008-02-19)}
+		dtadded=2017-07-30,
+		dtpublished=2008-02-19)}
 
 	${addPress(type=interview, person=max_eider,
 		url=${jbc_press}/20110311_jimruiz_max_eider.html,
@@ -1334,8 +1334,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Jim Ruiz Website,
 		source=https://web.archive.org/web/20120901163326/http://thelegendaryjimruiz.com:80/2011/02/18/jim-remembers-max-max-remembers-wes/,
 		credit=Jim Ruiz,
-		added=2017-10-13,
-		dt=2011-03-11 11:07:00)}
+		dtadded=2017-10-13,
+		dtpublished=2011-03-11 11:07:00)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/202201_press_stereoembers.html,
@@ -1344,8 +1344,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Stereo Embers,
 		source=https://stereoembersmagazine.com/stereo-embers-track-of-the-day-the-jazz-butchers-time/,
 		credit=Alex Green,
-		added=2023-09-23,
-		dt=2022-01)}
+		dtadded=2023-09-23,
+		dtpublished=2022-01)}
 
 	${addPress(type=interview, person=max_eider,
 		url=${jbc_press}/20081120_stereoembers_max_eider.html,
@@ -1353,8 +1353,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Caught In The Carousel/Stereo Embers,
 		source=http://stereoembersmagazine.com/breathing-statues-interview-max-eider/,
 		credit=Alex Green,
-		added=2017-07-30,
-		dt=2007-11-30)}
+		dtadded=2017-07-30,
+		dtpublished=2007-11-30)}
 
 	${addPress(type=interview, person=julian_poole,
 		url=${jbc_press}/200002_julian_poole.html,
@@ -1362,8 +1362,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Witness Website,
 		source=http://www.witness.uk.com/julian_interview.htm,
 		credit=Dylan Harris,
-		added=2017-07-30,
-		dt=2000-02)}
+		dtadded=2017-07-30,
+		dtpublished=2000-02)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211007_press_illlive.html,
@@ -1375,8 +1375,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=I'll Live,
 		source=https://ill-live.com/2021/10/07/making-me-understand-pat-fish-of-the-jazz-butcher-conspiracy/,
 		credit=Deborah Wassertzug,
-		added=2023-09-12,
-		dt=2021-10-07)}
+		dtadded=2023-09-12,
+		dtpublished=2021-10-07)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220210_press_spillmagazine.html,
@@ -1386,8 +1386,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Spill Magazine,
 		credit=Aaron Badgley,
 		source=https://spillmagazine.com/spill-album-review-the-jazz-butcher-the-highest-in-the-land/,
-		added=2023-09-12,
-		dt=2022-02-10)}
+		dtadded=2023-09-12,
+		dtpublished=2022-02-10)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220204_press_bigtakeover.html,
@@ -1396,8 +1396,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=The Big Takeover,
 		credit=Michael Tolard,
 		source=https://bigtakeover.com/recordings/TheJazzButcherTheHighestintheLandTapete,
-		added=2023-09-12,
-		dt=2022-02-04)}
+		dtadded=2023-09-12,
+		dtpublished=2022-02-04)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220210_press_bucketfullofbrains.html,
@@ -1406,8 +1406,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		headline=The Highest In The Land,
 		publication=Bucketfuill of Brains,
 		source=https://nickbob.com/2022/02/10/the-jazz-butcher-the-highest-in-the-land/,
-		added=2023-09-12,
-		dt=2022-02-10)}
+		dtadded=2023-09-12,
+		dtpublished=2022-02-10)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220131_press_backseatmafia.html,
@@ -1417,8 +1417,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Backseat Mafia,
 		source=https://www.backseatmafia.com/album-review-the-jazz-butcher-the-highest-in-the-land-one-final-pop-postcard-from-northamptons-foremost-gent-kickers/,
 		credit=CHRIS SAWLE,
-		added=2023-09-12,
-		dt=2022-01-31)}
+		dtadded=2023-09-12,
+		dtpublished=2022-01-31)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220204_press_whisperinandhollerin.html,
@@ -1428,8 +1428,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Whisperin And Hollerin,
 		source=http://www.whisperinandhollerin.com/reviews/review.asp?id=15828&fbclid=IwAR0oJ7sCEhcA70iP4_Ll348kYFrVuMq6q7B4c4GLLN--JCG69w59u5OPWgA,
 		credit=simonovitch,
-		added=2023-09-12,
-		dt=2022-02-04)}
+		dtadded=2023-09-12,
+		dtpublished=2022-02-04)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220204_press_ghettoblaster.html,
@@ -1439,8 +1439,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Ghettoblaster,
 		source=https://ghettoblastermagazine.com/features/album-reviews/new-music-friday-roll-out-02-04-22/,
 		credit=EDDIE UGARTE,
-		added=2023-09-12,
-		dt=2022-02-04)}
+		dtadded=2023-09-12,
+		dtpublished=2022-02-04)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220121_press_mancreview.html,
@@ -1451,8 +1451,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=The Manc Review,
 		source=https://www.mancreview.com/2022/01/album-of-the-month-the-highest-in-the-land-by-jazz-butcher/,
 		credit=Dave Morgan,
-		added=2023-09-12,
-		dt=2022-01-21)}
+		dtadded=2023-09-12,
+		dtpublished=2022-01-21)}
 
 	${addPress(type=album, album=smith,
 		url=${jbc_press}/20130330_press_mojo.html,
@@ -1463,8 +1463,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Mojo,
 		source=https://pbs.twimg.com/media/FrXi4OOWIAEoYHp?format=jpg&name=large,
 		credit=AP,
-		added=2023-09-12,
-		dt=2013-03-30)}
+		dtadded=2023-09-12,
+		dtpublished=2013-03-30)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220307_press_rockandrollglobe.html,
@@ -1473,8 +1473,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Rock and Roll Globe,
 		source=https://rockandrollglobe.com/indie-rock/albums-the-last-will-and-testament-of-pat-fish/,
 		credit=Rev. Keith A. Gordon,
-		added=2023-09-20,
-		dt=2022-03-07)}
+		dtadded=2023-09-20,
+		dtpublished=2022-03-07)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211006_press_postpunk.html,
@@ -1484,8 +1484,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=post-punk.com,
 		source=https://post-punk.com/the-jazz-butcher-pat-fish-has-passed-away/,
 		credit=Alice Temple,
-		added=2023-09-20,
-		dt=2021-10-06)}
+		dtadded=2023-09-20,
+		dtpublished=2021-10-06)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211112_press_mojo.html,
@@ -1496,8 +1496,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Mojo,
 		source=https://twitter.com/glassmodern1/status/1459187934049947650,
 		credit=Andy Cowan,
-		added=2023-09-12,
-		dt=2021-11-12)}
+		dtadded=2023-09-12,
+		dtpublished=2021-11-12)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20220405_press_monolithcocktail.html,
@@ -1508,8 +1508,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Monolith Cocktail,
 		source=https://monolithcocktail.com/2022/04/05/kalporz-x-monolith-cocktail-celebrating-the-legacy-of-pat-fish/,
 		credit=Matteo Maioli,
-		added=2023-09-12,
-		dt=2022-04-05)}
+		dtadded=2023-09-12,
+		dtpublished=2022-04-05)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220210_pitchfork.html,
@@ -1519,8 +1519,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Pitchfork,
 		source=https://pitchfork.com/reviews/albums/the-jazz-butcher-the-highest-in-the-land,
 		credit=Brian Howe,
-		added=2023-09-12,
-		dt=2022-02-10)}
+		dtadded=2023-09-12,
+		dtpublished=2022-02-10)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20180109_pitchfork.html,
@@ -1528,8 +1528,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Pitchfork,
 		source=https://pitchfork.com/reviews/albums/the-jazz-butcher-the-wasted-years,
 		credit=Robert Ham;;https://twitter.com/roberthamwriter,
-		added=2018-01-09,
-		dt=2018-01-09)}
+		dtadded=2018-01-09,
+		dtpublished=2018-01-09)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171103_whenyoumotoraway.html,
@@ -1537,8 +1537,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=When You Motor Away...,
 		source=https://whenyoumotoraway.blogspot.com/2017/11/the-jazz-butcher-wasted-years.html,
 		credit=Rocksteady74,
-		added=2017-11-03,
-		dt=2017-11-03)}
+		dtadded=2017-11-03,
+		dtpublished=2017-11-03)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171208_undertheradar.html,
@@ -1546,8 +1546,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Under The Radar,
 		source=http://www.undertheradarmag.com/reviews/the_jazz_butcher_the_wasted_years/,
 		credit=Stephen Wyatt,
-		added=2017-12-09,
-		dt=2017-12-08)}
+		dtadded=2017-12-09,
+		dtpublished=2017-12-08)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171109_sunburnsout.html,
@@ -1556,8 +1556,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		source=http://www.sunburnsout.com/les-annees-folles-du-jazz-butcher-ou-pas-de-pitie-pour-les-genies/,
 		credit=Benjamin Berton,
 		location=France,
-		added=2017-12-09,
-		dt=2017-11-09)}
+		dtadded=2017-12-09,
+		dtpublished=2017-11-09)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171101_thevinyldistrict.html,
@@ -1565,8 +1565,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=The Vinyl District,
 		source=http://www.thevinyldistrict.com/storefront/2017/11/graded-on-a-curve-the-jazz-butcher-the-wasted-years/,
 		credit=Joseph Neff,
-		added=2017-11-02,
-		dt=2017-11-01)}
+		dtadded=2017-11-02,
+		dtpublished=2017-11-01)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171101_allmusic.html,
@@ -1574,8 +1574,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=AllMusic,
 		source=https://www.allmusic.com/album/the-wasted-years-mw0003106280,
 		credit=Tim Sendra,
-		added=2017-11-02,
-		dt=2017-11-01)}
+		dtadded=2017-11-02,
+		dtpublished=2017-11-01)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171020_popmatters.html,
@@ -1583,8 +1583,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Pop Matters,
 		source=http://www.popmatters.com/review/the-jazz-butcher-the-wasted-years/,
 		credit=John Bergstrom,
-		added=2017-10-22,
-		dt=2017-10-20)}
+		dtadded=2017-10-22,
+		dtpublished=2017-10-20)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211012_press_northantstelegraph_davidjackson.html,
@@ -1594,8 +1594,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		location=Northamptonshire\, UK,
 		source=https://www.northantstelegraph.co.uk/whats-on/arts-and-entertainment/tributes-paid-to-northampton-musician-pat-fish-the-jazz-butcher-3415330,
 		credit=David Jackson,
-		added=2023-09-12,
-		dt=2021-10-12)}
+		dtadded=2023-09-12,
+		dtpublished=2021-10-12)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20230202_press_apessimistisneverdisappointed_highest.html,
@@ -1605,8 +1605,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=A Pessimist Is Never Disappointed,
 		source=http://www.apessimistisneverdisappointed.com/2022/02/running-on-fumes-brief-review-of-new.html,
 		credit=Glenn Griffith,
-		added=2023-09-12,
-		dt=2023-02-02)}
+		dtadded=2023-09-12,
+		dtpublished=2023-02-02)}
 
 	${addPress(type=album, album=fire_violent,
 		url=${jbc_press}/20180316_press_popmatters.html,
@@ -1616,8 +1616,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Pop Matters,
 		source=https://www.popmatters.com/jazz-butcher-the-violent-years-2544551500.html,
 		credit=John Bergstrom,
-		added=2023-09-23,
-		dt=2018-03-16)}
+		dtadded=2023-09-23,
+		dtpublished=2018-03-16)}
 
 	${addPress(type=album, album=fire_violent,
 		url=${jbc_press}/20180308_press_apessimistisneverdisappointed_violent.html,
@@ -1627,8 +1627,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=A Pessimist Is Never Disappointed,
 		source=http://www.apessimistisneverdisappointed.com/2018/03/next-move-sideways-few-words-about-new.html,
 		credit=Glenn Griffith,
-		added=2022-01-10,
-		dt=2018-03-08)}
+		dtadded=2022-01-10,
+		dtpublished=2018-03-08)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171015_press_apessimistisneverdisappointed_wasted.html,
@@ -1639,8 +1639,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=A Pessimist Is Never Disappointed,
 		source=http://www.apessimistisneverdisappointed.com/2017/10/big-bad-thing-few-words-about-fine-new.html,
 		credit=Glenn Griffith,
-		added=2017-10-15,
-		dt=2017-10-15)}
+		dtadded=2017-10-15,
+		dtpublished=2017-10-15)}
 
 	${addPress(type=interview;album, album=fire_wasted,
 		url=${jbc_press}/20171002_bandcamp.html,
@@ -1650,7 +1650,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		publication=Bandcamp Daily,
 		source=https://daily.bandcamp.com/2017/10/02/the-jazz-butchers-indie-pop-genesis,
 		credit=Michael White,
-		dt=2017-10-02)}
+		dtpublished=2017-10-02)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211006_press_jericsmith.html,
@@ -1662,8 +1662,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=J. Eric Smith blog,
 		source=https://jericsmith.com/2021/10/06/only-a-rumour-pat-fish-the-jazz-butcher20-december-1957-5-october-2021/,
 		credit=J. Eric Smith,
-		added=2023-09-20,
-		dt=2021-10-06)}
+		dtadded=2023-09-20,
+		dtpublished=2021-10-06)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211007_press_nme.html,
@@ -1673,8 +1673,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=NME,,
 		source=https://www.nme.com/news/music/pat-fish-aka-the-jazz-butcher-has-died-aged-64-3065181,
 		credit=Will Lavin,
-		added=2023-09-20,
-		dt=2021-10-07)}
+		dtadded=2023-09-20,
+		dtpublished=2021-10-07)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211007_press_louderthanwar.html,
@@ -1685,8 +1685,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Louder Than War,
 		source=https://louderthanwar.com/pat-fish-aka-the-jazz-butcher-rip-an-appreciation-farewell-to-the-last-of-the-gentleman-adventurers/,
 		credit=Alex Maiolo,
-		added=2023-09-20,
-		dt=2021-10-07)}
+		dtadded=2023-09-20,
+		dtpublished=2021-10-07)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220210_louderthanwar.html,
@@ -1696,8 +1696,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Louder Than War,
 		source=https://louderthanwar.com/the-jazz-butcher-the-highest-in-the-land-album-review/,
 		credit=Neil Hodge,
-		added=2023-09-12,
-		dt=2022-02-10)}
+		dtadded=2023-09-12,
+		dtpublished=2022-02-10)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211017_magnetmagazine.html,
@@ -1708,8 +1708,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Magnet Magazine,
 		source=https://magnetmagazine.com/2021/10/17/keeping-the-curtains-closed-r-i-p-the-jazz-butcher/,
 		credit=Matt Hickey,
-		added=2023-09-12,
-		dt=2021-10-17)}
+		dtadded=2023-09-12,
+		dtpublished=2021-10-17)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220216_magnetmagazine.html,
@@ -1719,8 +1719,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Magnet Magazine,
 		source=https://magnetmagazine.com/2022/02/16/essential-new-music-the-jazz-butchers-the-highest-in-the-land/,
 		credit=Matt Hickey,
-		added=2023-09-12,
-		dt=2022-02-16)}
+		dtadded=2023-09-12,
+		dtpublished=2022-02-16)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171012_louderthanwar.html,
@@ -1730,14 +1730,14 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Louder Than War,
 		source=http://louderthanwar.com/the-jazz-butcher-the-wasted-years-album-review/,
 		credit=Mark Ray,
-		added=2017-10-14,
-		dt=2017-10-12)}
+		dtadded=2017-10-14,
+		dtpublished=2017-10-12)}
 
 	${addPress(type=interview;album, album=adventurers,
 		url=${jbc_press}/20160219_press_recordcollector.html,
 		images=${jbc_images}/20160219/20160219_press_recordcollector,
 		publication=The Record Collector,
-		dt=2016-02-19)}
+		dtpublished=2016-02-19)}
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/20160218_press_bigtakeover_print.html,
@@ -1746,14 +1746,14 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=the jazz butcher,
 		headline=LAST OF THE GENTLEMEN ADVENTURERS (FIRE),
 		location=New York\, New York\, USA,
-		dt=2016-02-18)}
+		dtpublished=2016-02-18)}
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/20160218_press_bigtakeover.html,
 		credit=Elizabeth Klisiewicz,
 		publication=The Big Takeover (online),
 		location=New York\, New York\, USA,
-		dt=2016-02-18,
+		dtpublished=2016-02-18,
 		source=http://bigtakeover.com/recordings/the-jazz-butcher-last-of-the-gentleman-adventurers-fire-records)}
 
 	${addPress(type=album, album=adventurers,
@@ -1761,7 +1761,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Zachary Houle,
 		publication=Festival Peak,
 		location=Ottawa\, Canada,
-		dt=2016-02-03,
+		dtpublished=2016-02-03,
 		source=https://festivalpeak.com/a-review-of-the-jazz-butcher-s-last-of-the-gentlemen-adventurers-reissue-out-february-19-2016-193f087f3cfc#.m4jsw7a9w)}
 
 	${addPress(type=album, album=adventurers,
@@ -1769,7 +1769,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Glenn,
 		publication=A Pessimist Is Never Disappointed,
 		title=The Jazz Butcher Reissues Start Here,
-		dt=2016-02-19,
+		dtpublished=2016-02-19,
 		source=http://www.apessimistisneverdisappointed.com/2016/02/the-jazz-butcher-reissues-start-here.html)}
 
 	${addPress(type=album, album=adventurers,
@@ -1777,7 +1777,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Terapija,
 		credit=pedja,
 		location=Croatia,
-		dt=2016-02-03,
+		dtpublished=2016-02-03,
 		source=http://www.terapija.net/mjuzik.asp?ID=23351)}
 
 	${addPress(type=interview;album, album=adventurers,
@@ -1786,7 +1786,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Distorsioni,
 		title=The Return of the Jazz Butcher,
 		location=Italy,
-		dt=2016-02-03,
+		dtpublished=2016-02-03,
 		source=http://www.distorsioni.net/canali/interviste/il-ritorno-del-macellaio-jazz)}
 
 	${addPress(type=interview;gig,
@@ -1795,7 +1795,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Madcap Speaks,
 		title=Pat Fish of the Jazz Butcher Conspiracy,
 		location=Atlanta\, GA\, USA,
-		dt=2000-05-03,
+		dtpublished=2000-05-03,
 		datetime=2000-05-03,
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20000503_JazzButcher_interview_themadcapspeaks.mp3;;The Interview,
 		source=http://themadcapspeaks.squarespace.com/pat-fish-interview/)}
@@ -1806,7 +1806,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Washington Post,
 		title=Charming Chiming of Jazz Butcher,
 		location=Washington\, DC\, USA,
-		dt=1992-05-01,
+		dtpublished=1992-05-01,
 		datetime=1992-05-01,
 		source=https://www.washingtonpost.com/archive/lifestyle/1992/05/01/charming-chiming-of-jazz-butcher/7e29a9b9-b46f-4589-853b-c9aa0dbc3830/)}
 
@@ -1818,16 +1818,16 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=The final\, sadly posthumous album from the great Pat Fish (aka the Jazz Butcher) shows the British indie-pop legend was taken much too soon.,
 		publication=Pop Matters,
 		location=Queens\, NY\, USA,
-		dt=2022-02-08,
+		dtpublished=2022-02-08,
 		source=https://www.popmatters.com/jazz-butcher-highest-land-review,
-		added=2023-09-12)}
+		dtadded=2023-09-12)}
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/20160315_popmatters.html,
 		credit=Kevin Korber,
 		publication=Pop Matters,
 		location=Queens\, NY\, USA,
-		dt=2016-03-15,
+		dtpublished=2016-03-15,
 		source=http://www.popmatters.com/review/the-jazz-butcher-the-last-of-the-gentleman-adventurers/)}
 
 	${addPress(type=interview;podcast,
@@ -1835,7 +1835,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		audio=${jbc_audio}/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3;;The Interview,
 		publication=Near Perfect Pitch podcast,
 		title=Episode #35,
-		dt=2017-03-20,
+		dtpublished=2017-03-20,
 		credit=Dara Mottahed,
 		source=http://www.nearperfectpitch.com/,
 		summary=${literalizeCommas(
@@ -1848,7 +1848,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		audio=${jbc_audio}/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3;;The Interview,
 		publication=Near Perfect Pitch podcast,
 		title=Episode #1,
-		dt=2016-05-09,
+		dtpublished=2016-05-09,
 		credit=Dara Mottahed,
 		source=http://www.nearperfectpitch.com/,
 		summary=${literalizeCommas(
@@ -1862,7 +1862,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Live on the air with Julio Ruiz,
 		location=Madrid\, Spain,
 		datetime=2014-11-12 21:00:00,
-		dt=2014-11-12 18:00:00,
+		dtpublished=2014-11-12 18:00:00,
 		credit=Julio Ruiz,
 		images=${jbc_images}/20141112/20141112_JazzButcher_madrid_radio1$$${jbc_images}/20141112/20141112_JazzButcher_madrid_radio2$$${jbc_images}/20141112/20141112_JazzButcher_madrid_radio3$$${jbc_images}/20141112/20141112_JazzButcher_madrid_radio4$$,
 		audio=${jbc_audio}/20141112/20141112_JazzButcher_JulioRuiz_Interview_Edit.mp3;;The Interview::1$$${jbc_audio}/20141112/20141112_Madrid_MelanieHargreavesFathersJaguar.mp3;;Melanie Hargreaves' Father's Jaguar::2$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20141112/20141112_RTVE_MelanieHargreave.mp4;;Melanie Hargreaves' Father's Jaguar::2$$;;Girlfriend::3$$,
@@ -1879,7 +1879,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/fishco2,
 		images=${jbc_images}/western2;;Tom Peterson,
 		location=USA,
-		dt=2015-02-02 03:52:00,
+		dtpublished=2015-02-02 03:52:00,
 		credit=David Driscoll,
 		source=http://spiritsjournal.klwines.com/klwinescom-spirits-blog/2015/2/2/d2d-interview-pat-fish.html)}
 
@@ -1889,7 +1889,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/20140920/20140920_poster,
 		publication=Louder Than War,
 		title=The Butch is Back… the return of The Jazz Butcher!,
-		dt=2014-09-18,
+		dtpublished=2014-09-18,
 		datetime=2014-09-20 20:00:00,
 		credit=Andy Barding,
 		source=http://louderthanwar.com/the-butch-is-back-the-return-of-the-jazz-butcher)}
@@ -1902,8 +1902,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		media=${jbc_images}/200505_apollox_PatFishCrocodileTearsInterview.doc;;Andrew's original .doc,
 		location=UK,
 		credit=${brooksbank},
-		added=2017-07-30,
-		dt=2005-05)}
+		dtadded=2017-07-30,
+		dtpublished=2005-05)}
 
 	${addPress(type=interview, person=alex_green,
 		url=${jbc_press}/1995_apollox_alex_green.html,
@@ -1913,8 +1913,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		media=${jbc_images}/1995_apollox_AlexGreenInterview.doc;;Andrew's original .doc,
 		location=UK,
 		credit=${brooksbank},
-		added=2017-07-30,
-		dt=1995)}
+		dtadded=2017-07-30,
+		dtpublished=1995)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/2002_apollox.html,
@@ -1924,7 +1924,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		summary=A lengthy Pat & Max tag-team interview,
 		location=UK,
 		credit=${brooksbank},
-		dt=2002-04)}
+		dtpublished=2002-04)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/2003_apollox.html,
@@ -1932,7 +1932,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Apollox shares a conversation with The Jazz Butcher over a Free Lunch,
 		location=UK,
 		credit=${brooksbank},
-		dt=2003)}
+		dtpublished=2003)}
 
 	${addPress(type=interview;profile,
 		url=${jbc_press}/interview_independent_8Aug2001.html,
@@ -1941,7 +1941,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Who is the Jazz Butcher?,
 		headline=Twenty years of his exhilarating rock'n'roll and mordant wit have given Patrick Fish a cult following,
 		location=UK,
-		dt=2001-08-08)}
+		dtpublished=2001-08-08)}
 
 	${addPress(type=interview,preshow,
 		url=${jbc_press}/interview_metrotimes_12Apr2000.html,
@@ -1950,7 +1950,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Metro Times,
 		title=Chatting up the Butch,
 		location=Detroit\, MI\, USA,
-		dt=2000-04-12)}
+		dtpublished=2000-04-12)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/94alternative_press.html,
@@ -1959,21 +1959,21 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=British label sobers up and celebrates its tenth anniversary,
 		headline=Jon Wiederhorn waits for the love bus,
 		location=USA,
-		dt=1994-08)}
+		dtpublished=1994-08)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/94splatter.html,
 		credit=Spiros P. Ballas II & Dennis Sweeney,
 		publication=The Splatter Effect,
 		location=New Brunswick\, NJ\, USA,
-		dt=1994-06)}
+		dtpublished=1994-06)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/91inrockuptible.html,
 		credit=Emmanuel Tellier,
 		publication=Les Inrockuptibles,
 		location=France,
-		dt=1991-09)}
+		dtpublished=1991-09)}
 
 	${addPress(type=interview;album, album=blue,
 		url=${jbc_press}/92front_center.html,
@@ -1982,7 +1982,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Record Store Up Front And Center Issue #5,
 		title=Treading the line between dumb and stupid,
 		location=Waterloo\, Canada,
-		dt=1992-05-08)}
+		dtpublished=1992-05-08)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/91musicexpress.html,
@@ -1991,7 +1991,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Music Express Magazine,
 		title=The Jazz Butcher Vaulting Synapses,
 		location=Canada,
-		dt=1991-01)}
+		dtpublished=1991-01)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/90fishy.html,
@@ -2001,7 +2001,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		images=${jbc_images}/1990/1990_press_foaf_1$$${jbc_images}/1990/1990_press_foaf_2$$${jbc_images}/1990/1990_press_foaf_3$$,
 		publication=Far Out And Fishy Issue #4,
 		location=UK,
-		dt=1990)}
+		dtpublished=1990)}
 
 	${addPress(type=interview;preshow,
 		source=https://numerique.banq.qc.ca/patrimoine/details/52327/3722981,
@@ -2012,9 +2012,9 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=sous le signe de la fantaisie,
 		credit=Bertrand Houle,
 		location=Montreal\, QU\, Canada,
-		dt=1989-11-11,
+		dtpublished=1989-11-11,
 		datetime=1989-11-11 00:00:00,
-		added=2022-11-19 12:48:00,
+		dtadded=2022-11-19 12:48:00,
 		summary= Inconsequential short interview, translated
 	)}
 
@@ -2026,7 +2026,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=The Milwaukee Interview,
 		credit=David Whittemore & Brian Kelly,
 		location=Milwaukee\, WI\, USA,
-		dt=1989-11-19,
+		dtpublished=1989-11-19,
 		datetime=1989-11-19 20:00:00,
 		summary= Two star-struck fans corner the Butcher and he graciously provides a very informative and lengthy recorded interview\, here transcribed.
 	)}
@@ -2040,7 +2040,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=THE JAZZ BUTCHER,
 		subhead=Fruitcake Sociologist,
 		location=UK,
-		dt=1994)}
+		dtpublished=1994)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19880813_press_melodymaker.html,
@@ -2050,8 +2050,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Melody Maker,
 		title=Day Of Creation,
 		location=UK,
-		dt=1988-08-13,
-		added=2021-04-24 00:00:00,
+		dtpublished=1988-08-13,
+		dtadded=2021-04-24 00:00:00,
 		datetime=1988-08-07 22:00:00)}
 
 	${addPress(type=interview,
@@ -2061,7 +2061,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Melody Maker,
 		title=Conspiracy Theories,
 		location=UK,
-		dt=1988-12-03)}
+		dtpublished=1988-12-03)}
 
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/88newsletter.html,
@@ -2071,7 +2071,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Eric Beaumont,
 		location=Milwaukee\, WI\, USA,
 		datetime=1988-06-12,
-		dt=1988-07-16)}
+		dtpublished=1988-07-16)}
 
 	${addPress(type=interview;profile,
 		url=${jbc_press}/19840526_nme.html,
@@ -2083,7 +2083,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=BRUCE DESSAU hears THE JAZZ BUTCHER's beef,
 		location=UK,
 		datetime=1984-05-26,
-		dt=1984-05-26)}
+		dtpublished=1984-05-26)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/86nsb.html,
@@ -2092,7 +2092,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=FRUITCAKE SOCIOLOGY 101,
 		subhead=Life According to the Jazz Butcher,
 		location=USA,
-		dt=1986)}
+		dtpublished=1986)}
 
 	${addPress(type=interview;gig,
 		url=${jbc_press}/86contrast.html,
@@ -2103,7 +2103,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=The Jazz Butcher vs the USA,
 		location=USA,
 		datetime=1986-08-14,
-		dt=1986-08)}
+		dtpublished=1986-08)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/85abstract.html,
@@ -2111,14 +2111,14 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/198503/198503_abstract5,
 		publication=Abstract Magazine,
 		title=Issue #5,
-		dt=1985-03)}
+		dtpublished=1985-03)}
 
 	${addPress(type=interview,
 		url=${jbc_press}/84zigzag.html,
 		publication=ZigZag,
 		title=Jazz Butcher,
 		headline=Meat Means Murder!,
-		dt=1984-04)}
+		dtpublished=1984-04)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19880603_press_bostonrock.html,
@@ -2129,7 +2129,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Boston Rock #91,
 		location=Boston\, Massachusettes\, USA,
 		datetime=1988-06-03,
-		dt=1988-06-03)}
+		dtpublished=1988-06-03)}
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19990923_press_villagevoice.html,
@@ -2139,7 +2139,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Village Voice,
 		location=New York\, New York\, USA,
 		datetime=1999-09-23 20:00:00,
-		dt=1999-09-23)}
+		dtpublished=1999-09-23)}
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19990916_press_seattle_rocket.html,
@@ -2149,7 +2149,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Rocket,
 		location=Seattle\, Washington\, USA,
 		datetime=1999-09-16,
-		dt=1999-09-15)}
+		dtpublished=1999-09-15)}
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19990916_press_seattle.html,
@@ -2159,7 +2159,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Up & Coming,
 		location=Seattle\, Washington\, USA,
 		datetime=1999-09-16,
-		dt=1999-09-16)}
+		dtpublished=1999-09-16)}
 
 	${addPress(type=preshow,
 		url=${jbc_press}/19990923_press_timeout.html,
@@ -2169,7 +2169,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Timeout,
 		location=New York\, New York\, USA,
 		datetime=1999-09-23 20:00:00,
-		dt=1999-09-23)}
+		dtpublished=1999-09-23)}
 
 	${addPress(type=profile,
 		url=${jbc_press}/92rider.html,
@@ -2178,7 +2178,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Ryder Magazine,
 		title=The Distressed Gentlefolk,
 		location=Bloomington\, IN\, USA,
-		dt=1992-05)}
+		dtpublished=1992-05)}
 
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/19920422_press_athensflagpole.html,
@@ -2187,7 +2187,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Flagpole Magazine,
 		title=Cult of the Jazz Butcher,
 		location=Athens\, GA\, USA,
-		dt=1992-04-22,
+		dtpublished=1992-04-22,
 		datetime=1992-04-24)}
 
 	${addPress(type=wilson;gig;kit,
@@ -2197,7 +2197,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		todo=OCR,
 		title=Wilson Play London,
 		datetime=2003-10-16 22:00:00,
-		dt=2003-10-16)}
+		dtpublished=2003-10-16)}
 
 	${addPress(type=profile,
 		url=${jbc_press}/trouser.html,
@@ -2205,50 +2205,50 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/pat_plays;;DavidWhittemore,
 		publication=Trouser Press 4th edition,
 		source=http://www.trouserpress.com,
-		dt=1990)}
+		dtpublished=1990)}
 
 	${addPress(type=kit,
 		url=${jbc_press}/2017biography.html,
 		title=Official Bio,
-		dt=2017)}
+		dtpublished=2017)}
 
 	${addPress(type=kit,
 		url=${jbc_press}/2012biography.html,
 		title=Official Bio,
-		dt=2012)}
+		dtpublished=2012)}
 
 	${addPress(type=kit,
 		url=${jbc_press}/2000biography.html,
 		title=Official Bio,
 		headline=.. the C21 Bio ..,
-		dt=2000)}
+		dtpublished=2000)}
 
 	${addPress(type=kit,
 		url=${jbc_press}/95promo.html,
 		credit=Vanessa Cotton at Creation,
 		thumb=${jbc_images}/95promo,
-		dt=1995,
+		dtpublished=1995,
 		title=Creation Records Promo)}
 
 	${addPress(type=kit,
 		url=${jbc_press}/19901120_promo.html,
 		thumb=https://s3.amazonaws.com/assets.jazzbutcher.com/images/promos/19901120_Promo,
-		dt=1990-11-20,
+		dtpublished=1990-11-20,
 		title=Rough Trade Records Promo,
-		added=2023-10-29)}
+		dtadded=2023-10-29)}
 
 	${addPress(type=kit,
 		url=${jbc_press}/19880215_promo.html,
 		thumb=https://s3.amazonaws.com/assets.jazzbutcher.com/images/promos/19880215_Promo,
-		dt=1988-02-15,
+		dtpublished=1988-02-15,
 		title=Relativity Records Promo,
-		added=2023-10-29)}
+		dtadded=2023-10-29)}
 
 	${addPress(type=kit,
 		url=${jbc_press}/95promo_yearly.html,
 		credit=Vanessa Cotton at Creation,
 		thumb=${jbc_images}/95promo,
-		dt=1995,
+		dtpublished=1995,
 		title=Creation Records Promo,
 		headline=Year By Year
 		)}
@@ -2256,31 +2256,31 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=kit,
 		url=${jbc_press}/92biography.html,
 		thumb=${jbc_images}/promo2,
-		dt=1992,
+		dtpublished=1992,
 		title=Sky Records Promo,
 		headline=The Jazz Butcher Biography
 		)}
 
 	${addPress(type=kit,
 		url=${jbc_press}/91biography.html,
-		dt=1991,
+		dtpublished=1991,
 		thumb=${jbc_images}/promo1,
 		title=Creation Records Promo,
 		headline=The Jazz Butcher Biography
 		)}
 
-	${addPress(type=pat, url=${jbc_letters}/91Feb01, dt=1991-02-01, title=Letters From Pat - 1991-02-01, summary=The "Hunter S. Thompson" letter)}
-	${addPress(type=pat;album, album=cult, url=${jbc_letters}/90Feb14, dt=1990-02-14, title=Letters From Pat - 1990-02-14: Cult Of The Basement)}
-	${addPress(type=pat, url=${jbc_letters}/93Aug30, dt=1993-08-30, title=Letters From Pat - 1993-08-30, summary=The Albums\, The Bands\, LoveBus\, 93 Euro Tour)}
-	${addPress(type=pat, url=${jbc_letters}/93Oct19, dt=1993-10-19, title=Letters From Pat - 1993-10-19, summary=Eider\, The Fall\, News)}
-	${addPress(type=pat, url=${jbc_letters}/94Apr13, dt=1994-04-13, title=Letters From Pat - 1994-04-13, summary=94 Euro Tour\, Two Gigs\, News\, 93/94 Tours)}
-	${addPress(type=pat, url=${jbc_letters}/94Sep13, dt=1994-09-13, title=Letters From Pat - 1994-09-13, summary=Gig self-reviews\, jbc-list rebuttals\, etc)}
-	${addPress(type=pat, url=${jbc_letters}/94Jun24, dt=1994-06-24, title=Letters From Pat - 1994-06-24, summary=All The Gigs\, Ever)}
+	${addPress(type=pat, url=${jbc_letters}/91Feb01, dtpublished=1991-02-01, title=Letters From Pat - 1991-02-01, summary=The "Hunter S. Thompson" letter)}
+	${addPress(type=pat;album, album=cult, url=${jbc_letters}/90Feb14, dtpublished=1990-02-14, title=Letters From Pat - 1990-02-14: Cult Of The Basement)}
+	${addPress(type=pat, url=${jbc_letters}/93Aug30, dtpublished=1993-08-30, title=Letters From Pat - 1993-08-30, summary=The Albums\, The Bands\, LoveBus\, 93 Euro Tour)}
+	${addPress(type=pat, url=${jbc_letters}/93Oct19, dtpublished=1993-10-19, title=Letters From Pat - 1993-10-19, summary=Eider\, The Fall\, News)}
+	${addPress(type=pat, url=${jbc_letters}/94Apr13, dtpublished=1994-04-13, title=Letters From Pat - 1994-04-13, summary=94 Euro Tour\, Two Gigs\, News\, 93/94 Tours)}
+	${addPress(type=pat, url=${jbc_letters}/94Sep13, dtpublished=1994-09-13, title=Letters From Pat - 1994-09-13, summary=Gig self-reviews\, jbc-list rebuttals\, etc)}
+	${addPress(type=pat, url=${jbc_letters}/94Jun24, dtpublished=1994-06-24, title=Letters From Pat - 1994-06-24, summary=All The Gigs\, Ever)}
 	${addPress(type=pat;kit,
 		url=${jbc_press}/post-intelligencer.html,
 		title=THE J.B. POST-INTELLIGENCER,
-		dt=1998-04-01,
-		added=2022-08-21,
+		dtpublished=1998-04-01,
+		dtadded=2022-08-21,
 		thumb=${jbc_images}/19980401/19980401_press_postintelligencer;;Jimmy Duval;;https://twitter.com/jimmyduval;;2022-08-21,
 		headline=The Newsletter Of The Group That Doesn't Exist,
 		subhead=Volume 1\, Issue 1,
@@ -2288,23 +2288,23 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=sumo;kit,
 		url=${jbc_press}/19980401_Sumosonic_Promo_Trio.html,
 		title=Sumosonic Promo,
-		dt=1998-04-01,
-		added=2022-08-21,
+		dtpublished=1998-04-01,
+		dtadded=2022-08-21,
 		thumb=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Sumosonic/19980401_Sumosonic_Promo_Trio;;Jimmy Duval;;https://twitter.com/jimmyduval;;2022-08-21
 	)}
-	${addPress(type=pat;kit, url=${jbc_press}/94stop_press.html, title=Stop Press, dt=1994-05-20, thumb=${jbc_images}/19940520/19940520_press)}
-	${addPress(type=pat;album, url=${jbc_letters}/93Aug30/albums.html, dt=1993-08-30, title=Pat Reviews His Own Records)}
-	${addPress(type=pat;album, album=bus, url=${jbc_letters}/93Aug30/love.html, dt=1993-08-30, title=Letters From Pat - 1993-08-30: Cultural guidance notes issued to the U.K. press)}
-	${addPress(type=album, url=${jbc_press}/disclaimerband.html, credit=Willie, source=http://www.disclaimerband.com/j.html, publication=Disclaimer, title=Music Review - All The Albums, dt=2001)}
+	${addPress(type=pat;kit, url=${jbc_press}/94stop_press.html, title=Stop Press, dtpublished=1994-05-20, thumb=${jbc_images}/19940520/19940520_press)}
+	${addPress(type=pat;album, url=${jbc_letters}/93Aug30/albums.html, dtpublished=1993-08-30, title=Pat Reviews His Own Records)}
+	${addPress(type=pat;album, album=bus, url=${jbc_letters}/93Aug30/love.html, dtpublished=1993-08-30, title=Letters From Pat - 1993-08-30: Cultural guidance notes issued to the U.K. press)}
+	${addPress(type=album, url=${jbc_press}/disclaimerband.html, credit=Willie, source=http://www.disclaimerband.com/j.html, publication=Disclaimer, title=Music Review - All The Albums, dtpublished=2001)}
 
-	${addPress(type=album, url=${jbc_press}/87spex.html, dt=1989-08, location=Germany, publication=Spex Magazine, album=may)}
+	${addPress(type=album, url=${jbc_press}/87spex.html, dtpublished=1989-08, location=Germany, publication=Spex Magazine, album=may)}
 
 	${addPress(type=album, album=dist,
 		url=${jbc_press}/87option.html,
 		credit=Scott Becker,
 		publication=Option,
 		location=USA,
-		dt=1987-05)}
+		dtpublished=1987-05)}
 
 	${addPress(type=album, album=nons,
 		url=${jbc_press}/19860902_press_mcgilldaily.html,
@@ -2315,8 +2315,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=Bloody Nonsense,
 		subhead=(Polygram),
 		location=Montreal\, Quebec\, Canada,
-		dt=1986-09-02,
-		added=2023-09-10)}
+		dtpublished=1986-09-02,
+		dtadded=2023-09-10)}
 
 	${addPress(type=album, album=nons,
 		url=${jbc_press}/19860902_press_bellringer.html,
@@ -2325,8 +2325,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Bell Ringer\, Montgomery Bell Academy,
 		title=The Jazz Butcher Bloody Nonsense,
 		location=Nashville\, Tennessee\, USA,
-		dt=1986-09-02,
-		added=2023-09-08)}
+		dtpublished=1986-09-02,
+		dtadded=2023-09-08)}
 
 	${addPress(type=album, album=fishco,
 		url=${jbc_press}/19880303_press_gwu_hatcher.html,
@@ -2336,8 +2336,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Hatchet\, George Washington University,
 		title=Scanning the globe for discs,
 		location=Washington DC\, USA,
-		dt=1988-03-03,
-		added=2023-09-08)}
+		dtpublished=1988-03-03,
+		dtadded=2023-09-08)}
 
 	${addPress(type=album, album=fishco,
 		url=${jbc_press}/19880316_press_defender.html,
@@ -2347,8 +2347,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Defender\, Saint Michael's College,
 		title=The Jazz Butcher's latest has the right idea\, wrong sound,
 		location=Winooski\, Vermont\, USA,
-		dt=1988-03-16,
-		added=2023-09-08)}
+		dtpublished=1988-03-16,
+		dtadded=2023-09-08)}
 
 	${addPress(type=album, album=fishco,
 		url=${jbc_press}/89mirror.html,
@@ -2357,7 +2357,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Chris Histed,
 		publication=Record Mirror,
 		location=UK,
-		dt=1989)}
+		dtpublished=1989)}
 
 	${addPress(type=album, album=planet,
 		url=${jbc_press}/89sounds.html,
@@ -2366,7 +2366,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Sounds,
 		title=Scarey monster!,
 		location=UK,
-		dt=1989-07-29)}
+		dtpublished=1989-07-29)}
 
 	${addPress(type=album, album=planet,
 		url=${jbc_press}/89spiral.html,
@@ -2374,7 +2374,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Dominic Mohan,
 		publication=Spiral Scratch,
 		location=UK,
-		dt=1989-10)}
+		dtpublished=1989-10)}
 
 	${addPress(type=interview;album, album=cult,
 		url=${jbc_press}/90melody.html,
@@ -2382,7 +2382,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Chris Roberts,
 		publication=Melody Maker,
 		location=UK,
-		dt=1990-07-07)}
+		dtpublished=1990-07-07)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/19900317_press_melodymaker.html,
@@ -2393,9 +2393,9 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=DINGWALLS. LONDON,
 		subhead=DROLL isn't the word.  But it'll do for the moment,
 		location=UK,
-		added=2022-11-06,
+		dtadded=2022-11-06,
 		datetime=1990-02-26,
-		dt=1990-03-17)}
+		dtpublished=1990-03-17)}
 
 	${addPress(type=interview;album, album=cult,
 		url=${jbc_press}/90unknown.html,
@@ -2403,28 +2403,28 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=KCMU Interview,
 		title=Red Dots In The Butcher's Basement,
 		location=Seattle\, WA\, USA,
-		dt=1990)}
+		dtpublished=1990)}
 
 	${addPress(type=album, album=cult,
 		url=${jbc_press}/90option.html,
 		credit=Bob Sled,
 		publication=Option,
 		location=USA,
-		dt=1990-11)}
+		dtpublished=1990-11)}
 
 	${addPress(type=eg;album, album=damn,
 		url=${jbc_press}/91estweb.html,
 		credit=MG,
 		publication=ESTWeb,
-		added=1997-01-24 15:21:13,
-		dt=1991)}
+		dtadded=1997-01-24 15:21:13,
+		dtpublished=1991)}
 
 	${addPress(type=album, album=blue,
 		url=${jbc_press}/91rage.html,
 		credit=Andy Cowan,
 		publication=Rage Magazine,
 		location=UK,
-		dt=1991-09)}
+		dtpublished=1991-09)}
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/202203_press_mojo.html,
@@ -2434,8 +2434,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=The Highest In The Land,
 		subhead=TAPETE. CD/DL/LP,
 		location=UK,
-		dt=2022-03,
-		added=2023-11-28)}
+		dtpublished=2022-03,
+		dtadded=2023-11-28)}
 
 	${addPress(type=album, album=blue,
 		url=${jbc_press}/91select.html,
@@ -2443,74 +2443,74 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=David Cavanagh,
 		publication=Select Magazine,
 		location=UK,
-		dt=1991-12)}
+		dtpublished=1991-12)}
 
 	${addPress(type=album, album=blue,
 		url=${jbc_press}/92details.html,
 		credit=chris heath,
 		publication=Details For Men,
 		location=USA,
-		dt=1992-06)}
+		dtpublished=1992-06)}
 
 	${addPress(type=album, album=blue,
 		url=${jbc_press}/92creem.html,
 		credit=Mark J. Petracca,
 		publication=Creem Magazine,
 		location=USA,
-		dt=1992-07)}
+		dtpublished=1992-07)}
 
 	${addPress(type=album, album=blue,
 		url=${jbc_press}/92option.html,
 		credit=Scott Jackson,
 		publication=Option,
 		location=USA,
-		dt=1992-05)}
+		dtpublished=1992-05)}
 
 	${addPress(type=album, album=blue,
 		url=${jbc_press}/blue_evans.html,
 		credit=Stewart Evans,
 		source=http://doodah.net/reviews/art351.html,
 		publication=DooDah Reviews,
-		dt=1992)}
+		dtpublished=1992)}
 
 	${addPress(type=album, album=blue,
 		url=${jbc_press}/93cdconnection.html,
 		credit=Roch Parisien,
 		publication=Compact Disc Connection,
-		dt=1993)}
+		dtpublished=1993)}
 
 	${addPress(type=album, album=bus,
 		url=${jbc_press}/93inrockuptible.html,
 		publication=Les Inrockuptibles,
 		location=France,
-		dt=1993-06)}
+		dtpublished=1993-06)}
 
 	${addPress(type=album, album=bus,
 		url=${jbc_press}/94ie.html,
 		credit=Adam St. James,
 		publication=Illinois Entertainer,
 		location=Chicago\, IL\, USA,
-		dt=1994-09)}
+		dtpublished=1994-09)}
 
 	${addPress(type=album, album=bus,
 		url=${jbc_press}/94cash.html,
 		thumb=${jbc_images}/19940416/19940416_cashbox,
 		publication=Cash Box,
 		location=USA,
-		dt=1994-04-16)}
+		dtpublished=1994-04-16)}
 
 	${addPress(type=album, album=bus,
 		url=${jbc_press}/94option.html,
 		credit=Richie Unterberger,
 		publication=Option,
 		location=USA,
-		dt=1994-09)}
+		dtpublished=1994-09)}
 
 	${addPress(type=kit;album, album=ill,
 		url=${jbc_press}/95promo_illuminate.html,
 		credit=Vanessa Cotton at Creation,
 		title=Creation Records Promo - Illuminate,
-		dt=1995-03)}
+		dtpublished=1995-03)}
 
 	${addPress(type=album, album=sex,
 		url=${jbc_press}/20080105_friedrock.html,
@@ -2518,14 +2518,14 @@ subhead=(20 December 1957 – 5 October 2021),
 		source=http://fried2.blogspot.com/2008/01/jazz-butcher-sex-and-travel.html,
 		publication=Fried Rock Classics from the 80's,
 		location=France,
-		dt=2008-01-05)}
+		dtpublished=2008-01-05)}
 
 	${addPress(type=album, album=ill,
 		url=${jbc_press}/95scots.html,
 		credit=Tom Lappin,
 		publication=The Scotsman,
 		location=UK,
-		dt=1995-03-15)}
+		dtpublished=1995-03-15)}
 
 	${addPress(type=album, album=ill,
 		url=${jbc_press}/95nme.html,
@@ -2533,46 +2533,46 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Neil Spence,
 		publication=New Music Express,
 		location=UK,
-		dt=1995-04-08)}
+		dtpublished=1995-04-08)}
 
 	${addPress(type=album, album=sixteen_years,
 		url=${jbc_press}/95creation.html,
 		publication=Creation Records,
-		dt=1995-03)}
+		dtpublished=1995-03)}
 
 	${addPress(type=kit;album, album=sixteen_years,
 		url=${jbc_press}/95promo_16years.html,
 		credit=Vanessa Cotton at Creation,
 		publication=Creation Records,
 		title=Promo - Sixteen Years,
-		dt=1995-03)}
+		dtpublished=1995-03)}
 
 	${addPress(type=album, album=drainglass,
 		url=${jbc_press}/97q.html,
 		credit=Paul Davies,
 		publication=Q magazine,
-		dt=1996-10)}
+		dtpublished=1996-10)}
 
 	${addPress(type=sumo;album, album=thisissumo,
 		url=${jbc_press}/1997_sumosonic_smith.html,
 		credit=Patrick Smith,
 		title=Patrick Smith Reviews,
 		location=USA,
-		dt=1997)}
+		dtpublished=1997)}
 
 	${addPress(type=album, album=drainglass,
 		url=${jbc_press}/97drainglass.html,
 		credit=Patrick Smith,
 		title=Patrick Smith Reviews,
 		location=USA,
-		dt=1997-05)}
+		dtpublished=1997-05)}
 
 	${addPress(type=album, album=violent,
 		url=${jbc_press}/97violent.html,
 		credit=Patrick Smith,
 		title=Patrick Smith Reviews,
 		location=USA,
-		dt=1997-05)}
+		dtpublished=1997-05)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20211029_press_nnjournal.html,
@@ -2584,8 +2584,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Pat Fish obituary,
 		headline=Founder of the Jazz Butcher music outfit and pop’s ‘Last of the Gentleman Adventurers’ was UK music’s best kept secret,
 		source=https://www.nnjournal.co.uk/p/pat-fish-obituary,
-		dt=2021-10-29,
-		added=2023-11-27,
+		dtpublished=2021-10-29,
+		dtadded=2023-11-27,
 		)}
 
 	${addPress(type=retrospective,
@@ -2595,8 +2595,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=The Jazz Butcher is Dead!,
 		headline=Long Live the Jazz Butcher!,
 		source=https://www.psychedelicbabymag.com/2021/11/the-jazz-butcher-is-dead-long-live-the-jazz-butxher-by-zack-kopp.html,
-		dt=2021-11-21,
-		added=2023-09-23,
+		dtpublished=2021-11-21,
+		dtadded=2023-09-23,
 		)}
 
 	${addPress(type=interview,
@@ -2607,8 +2607,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Pretty Tunes With Sour\, Disassociated Lyrics,
 		headline=A conversation with the Jazz Butcher,
 		source=https://www.psychedelicbabymag.com/2020/07/pretty-tunes-with-sour-disassociated-lyrics-a-conversation-with-the-jazz-butcher-by-zack-kopp.html,
-		dt=2020-07-07,
-		added=2021-11-22,
+		dtpublished=2020-07-07,
+		dtadded=2021-11-22,
 		)}
 
 	${addPress(type=gig,
@@ -2619,7 +2619,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/19970919/bandg,
 		title=Bootleg Bin: Jazz Butcher – Bob & Anne’s Wedding Reception,
 		source=http://blog.musoscribe.com/index.php/2011/10/14/bootleg-bin-jazz-butcher-bob-annes-wedding-reception/,
-		dt=2011-10-14,
+		dtpublished=2011-10-14,
 		datetime=1997-09-19,
 		)}
 
@@ -2628,7 +2628,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Ian Koss,
 		publication=ink19.com,
 		source=http://ink19.com/2003/03/magazine/music-reviews/the-jazz-butcher-conspiracy,
-		dt=2003-03-13)}
+		dtpublished=2003-03-13)}
 
 	${addPress(type=retrospective,
 		url=${jbc_press}/20221005_ink19_jazz_butcher_society.html,
@@ -2639,38 +2639,38 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Julius C. Lacking,
 		publication=ink19.com,
 		source=https://ink19.com/2022/10/magazine/features/sfsrkl-jazz-butcher-tbd,
-		dt=2022-10-05)}
+		dtpublished=2022-10-05)}
 
 	${addPress(type=album, album=glorious,
 		url=${jbc_press}/2000glorious.html,
 		credit=Ian Koss,
 		publication=ink19.com,
 		source=http://ink19.com/2000/04/magazine/music-reviews/the-jazz-butcher-conspiracy-2,
-		dt=2000-04-03)}
+		dtpublished=2000-04-03)}
 
 	${addPress(type=album, album=glorious,
 		url=${jbc_press}/vermontreview.html,
 		credit=BK,
 		publication=The Vermont Review,
-		dt=2000)}
+		dtpublished=2000)}
 
 	${addPress(type=album, album=glorious,
 		url=${jbc_press}/popculturecorn.html,
 		credit=Jay Nagy,
 		images=${jbc_images}/reviews/popculturecorn_com;;David Whittemore,
 		publication=Pop Culture Corn,
-		dt=2000-06)}
+		dtpublished=2000-06)}
 
 	${addPress(type=pat,
 		url=${jbc_press}/japan2000.html,
 		title=Tour Report: Japan 2000,
 		credit=Pat Fish,
-		dt=2000-09)}
+		dtpublished=2000-09)}
 
 	${addPress(type=pat;gig,
 		url=${jbc_letters}/94Apr13/tour.html,
 		title=Tour Report: Europe 1994,
-		dt=1994-04-13)}
+		dtpublished=1994-04-13)}
 
 	${addPress(type=pat,
 		url=${jbc_press}/20020709_starindia.html,
@@ -2678,19 +2678,19 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/star_india/Bodrul,
 		images=${jbc_images}/star_india/StarScrap;;Pat;;;;2002-07-09;;${literalizeCommas(In 1988 that I managed to take this top snap of Paul Mulreany and Laurence O'Keefe rioting at the table)},
 		summary=${literalizeCommas(Northampton's Star of India restaurant is dearly loved by the artist)},
-		dt=2002-07-09)}
+		dtpublished=2002-07-09)}
 
 	${addPress(type=pat;gig,
 		url=${jbc_letters}/93Aug30/tour.html,
 		title=Tour Report: Europe 1993,
-		dt=1993-08-30)}
+		dtpublished=1993-08-30)}
 
 	${addPress(type=profile,
 		url=${jbc_press}/94takeover.html,
 		publication=The Big Takeover Issue #34,
 		title=Excerpt from interview with the band Belly,
 		summary=JBC is favourably mentioned in an interview with Belly,
-		dt=1994)}
+		dtpublished=1994)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/kelly_20th_tour.html,
@@ -2699,7 +2699,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/20020613/2002Jun13_JBC1;;Brian Kelly,
 		images=${jbc_images}/20020611/2002Jun11_JBC;;Brian Kelly,
 		subhead=June 8-19\, 2002,
-		dt=2002-06-20)}
+		dtpublished=2002-06-20)}
 
 	${addPress(type=gig,
 		url=${jbc_press}/2013_chickfactor.html,
@@ -2710,7 +2710,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Jim Ruiz,
 		datetime=2013-06-15,
 		location=Brooklyn\, NY\, USA,
-		dt=2013-06-22)}
+		dtpublished=2013-06-22)}
 			
 	${addPress(type=gig,
 		url=${jbc_press}/2005_Nightshift.html,
@@ -2718,7 +2718,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		source=http://nightshift.oxfordmusic.net/2005/may/may.pdf,
 		publication=Nightshift,
 		location=Oxford\, UK,
-		dt=2005-05,
+		dtpublished=2005-05,
 		datetime=2005-04-14)}
 			
 	${addPress(type=gig,
@@ -2728,7 +2728,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=The Black Watch + Pat Fish + Anton Barbeau + The New Moon,
 		headline=Port Mahon\, 14 April 2005,
 		location=Oxford\, UK,
-		dt=2005-05,
+		dtpublished=2005-05,
 		datetime=2005-04-14)}
 
 	${addPress(type=gig,profile,
@@ -2736,7 +2736,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=There's no such thing as 'Alternative Radio' anymore,
 		credit=Brian Kelly,
 		location=Minneapolis\, MN\, USA,
-		dt=2000-04-23,
+		dtpublished=2000-04-23,
 		datetime=2000-04-23)}
 			
 	${addPress(type=preshow,
@@ -2745,7 +2745,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Cleveland Plain Dealer,
 		title=Top-five obscurity,
 		location=Cleveland\, OH\, USA,
-		dt=2000-04-18,
+		dtpublished=2000-04-18,
 		datetime=2000-04-18)}
 			
 	${addPress(type=preshow,profile,
@@ -2757,7 +2757,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=Sex and travel,
 		subhead=After nearly two decades of peerless pop\, the Jazz Butcher can't lose for breaking up,
 		location=Detroit\, MI\, USA,
-		dt=2000-04-12,
+		dtpublished=2000-04-12,
 		datetime=2000-04-19)}
 
 	${addPress(type=gig,
@@ -2768,7 +2768,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=David J Haskins and Pat Fish,
 		headline=Live at the M.O.T.H. Club Hackney,
 		location=Hackney\, London\, England,
-		dt=2019-10-26 18:30:00,
+		dtpublished=2019-10-26 18:30:00,
 		datetime=2019-10-26 18:30:00)}
 			
 	${addPress(type=gig,
@@ -2781,7 +2781,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		subhead=MANCHESTER ACADEMY 3,
 		images=${jbc_images}/20191024/20191024_brooksbank_manchester_davidj;;${brooksbank}$$${jbc_images}/20191024/20191024_brooksbank_manchester_davidj_karel$$,
 		location=Manchester\, England,
-		dt=2019-10-24 19:30:00,
+		dtpublished=2019-10-24 19:30:00,
 		datetime=2019-10-24 19:30:00)}
 			
 	${addPress(type=gig,
@@ -2792,7 +2792,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=Live at The Betsey Trotwood\, Farringdon,
 		source=http://www.whisperinandhollerin.com/reviews/review.asp?id=14815,
 		location=Cork\, Ireland,
-		dt=2019-10-11 19:30:00,
+		dtpublished=2019-10-11 19:30:00,
 		datetime=2019-10-11 19:30:00)}
 			
 	${addPress(type=gig,profile,
@@ -2803,7 +2803,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=Hard to figure from the outside,
 		subhead=Provide fans with a universe of meaning\, or something,
 		location=San Francisco\,CA,
-		dt=1997-11-05,
+		dtpublished=1997-11-05,
 		datetime=1997-09-22)}
 			
 	${addPress(type=gig,
@@ -2814,7 +2814,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Observer,
 		location=UK,
 		credit=Campbell Stevenson,
-		dt=1996-08-18,
+		dtpublished=1996-08-18,
 		datetime=1996-08-20)}
 
 	${addPress(type=album, album=fire_wasted,
@@ -2823,8 +2823,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Magic Revue #206,
 		thumb=${jbc_images}/20171020/20171020_magic_revue_206;;David Whittemore,
 		location=France,
-		dt=2017-10-20,
-		added=2017-10-31)}
+		dtpublished=2017-10-20,
+		dtadded=2017-10-31)}
 
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/201710_press_abus.html,
@@ -2835,8 +2835,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		subhead=FIRE RECORDS,
 		images=${jbc_images}/201710/201710_press_abus,
 		location=France,
-		dt=2017-10,
-		added=2017-10-31)}
+		dtpublished=2017-10,
+		dtadded=2017-10-31)}
 
 	${addPress(type=interview;album, album=adventurers,
 		url=${jbc_press}/201604_press_abus.html,
@@ -2846,7 +2846,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Abus Dangereux #138,
 		thumb=${jbc_images}/201604/201604_press_abus_cover,
 		location=France,
-		dt=2016-04)}
+		dtpublished=2016-04)}
 
 	${addPress(type=profile;interview;album, album=fishco,
 		url=${jbc_press}/198902_press_howl_germany.html,
@@ -2856,8 +2856,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=The Jazz Butcher,
 		headline=It's a sad and beautiful world,
 		location=Munich\, Germany,
-		dt=1989-02,
-		added=2023-11-28)}
+		dtpublished=1989-02,
+		dtadded=2023-11-28)}
 
 	${addPress(type=preshow,
 		url=${jbc_press}/1989_press_oxford_isis_no1798_p33.html,
@@ -2867,9 +2867,9 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=The Jazz Butcher,
 		headline=A Bath in Bacon with Butch,
 		location=Oxford\, England,
-		dt=1989-05,
+		dtpublished=1989-05,
 		datetime=1989-05-13,
-		added=2025-08-01)}
+		dtadded=2025-08-01)}
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/2016_press_rollingstone_germany.html,
@@ -2878,7 +2878,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Rolling Stone,
 		title=Beautiful comeback album by the jingling Bohemians from Oxford,
 		location=Germany,
-		dt=2016)}
+		dtpublished=2016)}
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/2016_press_germany.html,
@@ -2886,7 +2886,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Thomas Bärnthaler,
 		publication=Unknown Print Review,
 		location=Germany,
-		dt=2016)}
+		dtpublished=2016)}
 
 	${addPress(type=album, album=adventurers,
 		url=${jbc_press}/2016_press_blowup.html,
@@ -2894,7 +2894,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Stefano I. Bianchi,
 		publication=Blow Up,
 		location=Italy,
-		dt=2016)}
+		dtpublished=2016)}
 
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/92toronto.html,
@@ -2903,7 +2903,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Toronto Performer,
 		title=Jazz Butcher's Conditioned Response,
 		location=Toronto\, Canada,
-		dt=1992-05,
+		dtpublished=1992-05,
 		datetime=1992-05-09)}
 			
 	${addPress(type=preshow;interview,
@@ -2914,7 +2914,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Jazz Butcher Feeling Moody\, Blue,
 		headline=Expect a dark show tonight,
 		location=Vancouver\, BC,
-		dt=1992-05-27,
+		dtpublished=1992-05-27,
 		datetime=1992-05-27)}
 			
 	${addPress(type=preshow;interview,
@@ -2924,7 +2924,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Ottawa Citizen,
 		title=British Popster Fights The Good Fight To Put Some Literacy Back Into Lyrics,
 		location=Ottawa\, Ontario\, Canada,
-		dt=1992-05-07,
+		dtpublished=1992-05-07,
 		datetime=1992-05-07)}
 			
 	${addPress(type=interview;preshow, album=blue,
@@ -2934,7 +2934,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Vancouver Sun,
 		title=Butchered relationship fascinates Fish,
 		location=Vancouver\, British Columbia\, Canada,
-		dt=1992-05-27,
+		dtpublished=1992-05-27,
 		datetime=1992-05-27)}
 
 	${addPress(type=interview;preshow,
@@ -2945,7 +2945,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Jazz Butcher Slicing,
 		headline=Dicing Expectations,
 		location=Montreal\, Canada,
-		dt=1992-05-06,
+		dtpublished=1992-05-06,
 		datetime=1992-05-06 20:00:00)}
 
 	${addPress(type=interview,
@@ -2954,14 +2954,14 @@ subhead=(20 December 1957 – 5 October 2021),
 		source=http://www.soul-kitchen.fr/75101-samedi-soir-the-jazz-butcher,
 		title=Un Samedi Soir Avec The Jazz Butcher,
 		location=France,
-		dt=2017-08-24)}
+		dtpublished=2017-08-24)}
 
 	${addPress(type=interview;retrospective;podcast,
 		url=/press/20211007_press_stereoembers.html,
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20211007_JazzButcher_interview_stereoembers.mp3;;The Podcast,
 		publication=Stereo Embers The Podcast,
 		title=Pat Fish (The Jazz Butcher),
-		dt=2021-10-07,
+		dtpublished=2021-10-07,
 		credit=Alex Green,
 		source=https://soundcloud.com/alexgreenonline/stereo-embers-the-podcast-pat-fish-the-jazz-butcher,
 		summary=${literalizeCommas(
@@ -2976,7 +2976,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Innessa B Podcast,
 		title=Discovery and Uncovery with Pat Fish,
 		headline=In Memory of Pat Fish,
-		dt=2021-10-13 19:59:42,
+		dtpublished=2021-10-13 19:59:42,
 		credit=Inessa B,
 		source=https://soundcloud.com/inessa-b/discovery-and-uncovery-with-pat-fish,
 		summary=${literalizeCommas(
@@ -2990,8 +2990,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Paine Full Podcast,
 		title=Episode #2,
 		headline=Pat Fish,
-		dt=2020-04-17,
-		added=2023-11-08,
+		dtpublished=2020-04-17,
+		dtadded=2023-11-08,
 		source=https://soundcloud.com/user-871949376/the-paine-full-podcast-with-pat-fish,
 		summary=${literalizeCommas(
 			Dating from 2018 and recorded at 'Fishy Mansions' in Northampton... Pat talks about academic life in Oxford, his friendship with Rolo McGinty, The Sonic Tonix, The Jazz Butcher's first album, 'In Bath Of Bacon', life on the road and the recording of 'Cult Of The Basement'
@@ -3004,7 +3004,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		audio=${jbc_audio}/20170612/20170612_C86interview.mp3;;The Interview,
 		publication=Norwich Radio,
 		title=C86 Interview,
-		dt=2017-06-12,
+		dtpublished=2017-06-12,
 		credit=David Eastaugh,
 		source=https://cultureclashradio.org,
 		summary=${literalizeCommas(
@@ -3019,7 +3019,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Retropopic podcast,
 		title=Episode #206,
 		headline=EARLY DAYS TO JAZZ BUTCHER'S FIRST RELEASE 'IN BATH OF BACON',
-		dt=2018-12-09,
+		dtpublished=2018-12-09,
 		credit=FrehcnSpurs1,
 		source=https://www.mixcloud.com/FrenchSpurs1/retropopic-206-pat-fish-early-days-jazz-butcher-to-dan-tracey-2018-benefit/,
 		summary=${literalizeCommas(
@@ -3033,7 +3033,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=CBC,
 		location=Canada,
 		title="On The Road" - CBC featurette,
-		dt=1989-07-01,
+		dtpublished=1989-07-01,
 		credit=Dana Mottahead (Gen0 cassette of FM broadcast),
 		summary=${literalizeCommas(
 			While en-route to 1989 Germany dates, ${pat} answers "Big Questions" for CBC radio
@@ -3046,7 +3046,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		audio=${jbc_audio}/20180703/20180703_WattFromPedroShow_OwenJones.mp3;;The Interview,
 		publication=The Watt From Pedro Show,
 		title=Owen Jones,
-		dt=2018-07-03,
+		dtpublished=2018-07-03,
 		credit=Mike Watt,
 		source=https://www.twfps.com/past-episodes/on-air-guest-owen-jones-from-hamburg-germany-via-skype,
 		summary=${literalizeCommas(
@@ -3095,7 +3095,7 @@ subhead=(20 December 1957 – 5 October 2021),
 #live	endif
 #live	if (getval(${prefix}->url) == .mp3)
 			<blockquote>
-			${linkAudio(title=${literalizeCommas(${${prefix}->title} - ${mkPressDate(ts=${${prefix}->dt})})}, mp3=${${prefix}->url}, autolink=no)}
+			${linkAudio(title=${literalizeCommas(${${prefix}->title} - ${mkPressDate(ts=${${prefix}->dtpublished})})}, mp3=${${prefix}->url}, autolink=no)}
 #live		if (defined(${prefix}->credit))
 				${g_credit(g=${${prefix}->credit}, u=${${prefix}->source})}
 #live		endif
@@ -3209,7 +3209,7 @@ subhead=(20 December 1957 – 5 October 2021),
 #live	endif
 #live	while (x = pressItems[*]->url)
 #live		if (getval(pressItems[${x}]->type) == ${type})
-#live			if (define(${type}_thisYear, ${substr(0, 4, ${pressItems[${x}]->dt})}))
+#live			if (define(${type}_thisYear, ${substr(0, 4, ${pressItems[${x}]->dtpublished})}))
 #live			endif
 #live			if (getval(${type}_prevYear) != ${${type}_thisYear})
 #live				if (getval(${type}_prevYear) != XXX)
@@ -3249,7 +3249,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${updatePressDatabase()}
 	${mkHeader(section=Press)}
 
-#live	if (sort(-pressItems, dt))
+#live	if (sort(-pressItems, dtpublished))
 #live	endif
 	${beg_tabs}
 	${doListPress(type=retrospective)}

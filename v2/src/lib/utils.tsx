@@ -103,7 +103,7 @@ export const parseDate = (str?: string) => {
 	}
 }
 
-export const prettyDate = (dt: string) => moment(dt).format("ddd, MMM Do YYYY");
+export const prettyDate = (dt: string) => moment(dt).local().format("ddd, MMM Do YYYY");
 
 export const dateDisplay = (dt?: string, sep: string = ' - ') => {
 	const [orig, iy,im,id,ihh,imm,iss, unknownYear, unknownMonth, unknownDay]: any = parseDate(dt) || [];

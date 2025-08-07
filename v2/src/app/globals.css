@@ -181,7 +181,7 @@ textplus1 {
 	border-bottom: 1px solid #888;
 }
 .gig_eg:before {
-	content: url(/images/performance_eg.jpg);
+	content: url(/images/performance_eg.png);
 }
 .gig_wilson:before {
 	content: url(/images/performance_wilson.jpg);

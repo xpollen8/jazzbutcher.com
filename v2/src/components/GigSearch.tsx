@@ -140,7 +140,7 @@ export const BannerGigs = (results: HashedType, searchYear?: number) => {
 const Venue = ({ record }: { record: RecordType }) =>
 <div style={{ paddingTop: '4px', paddingBottom: '6px' }}>
 		{(record?.title) && <div className="gig_project">&quot;{record?.title}&quot;</div>}
-		<div style={{ fontWeight: '900', fontSize: '1.5em' }} >{htmlString(record?.venue)}</div>
+		<div style={{ fontWeight: '600', fontSize: '1.25em' }} >{htmlString(record?.venue)}</div>
 		<Location {...record} simple={true} />
 </div>
 
@@ -387,7 +387,7 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 							</div>
 					</div>
 					
-					{(poster) && <div className=""><Image alt='poster' width={150} height={150} src={poster}/></div>}
+					{(poster) && <div className=""><Image alt='poster' width={100} height={100} src={poster}/></div>}
 				</div>
 			</Link>
 		</div>)

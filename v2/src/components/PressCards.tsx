@@ -5,7 +5,7 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { pluralize, truncAt, parseProject, parseImage } from '@/lib/utils';
+import { dateDiff, pluralize, truncAt, parseProject, parseImage } from '@/lib/utils';
 import useReleases from '@/lib/useReleases';
 import InfoTag from '@/components/InfoTag';
 
@@ -39,6 +39,7 @@ const PressCards = ({ items, project, showAlbum, preventAutoExpand=false }: any)
 							<div className="h-1" />
 							<div className="font-light" dangerouslySetInnerHTML={{ __html: item.title }} />
 							{(parseInt(item?.bodycount, 10) > 0) && <div className="smalltext">{item?.bodycount.toLocaleString()} words</div>}
+							{(item?.dtadded) && <div className="smalltext">{dateDiff(item.dtadded, 'added: ')}</div>}
 						</div>
 					</Link>
 				</div>

@@ -68,6 +68,13 @@ export const filterPressByTypeAlbumReview = (p: any, project?: string) => {
 	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
 }
 
+export const filterPressByTypeClipping = (p: any, project?: string) => {
+	const type = 'clipping';
+	const base = sortPress(filterPressProject(p, project));
+
+	return base?.filter((item: any) => (type) ? pressFiltersInclude(item?.type, type) : true);
+}
+
 export const filterPressByTypeInterview = (p: any, project?: string) => {
 	const type = 'interview';
 	const base = sortPress(filterPressProject(p, project));
@@ -78,6 +85,7 @@ export const filterPressByTypeInterview = (p: any, project?: string) => {
 const filterOptions = [
 	{ field: "type:album", display: "Album Reviews" },
 	{ field: "type:interview", display: "Interviews" },
+	{ field: "type:clipping", display: "Short Clippings" },
 	{ field: "type:retrospective", display: "Retrospectives" },
 	{ field: "type:profile", display: "Profile Pieces" },
 	{ field: "type:sumo", display: "Sumosonic" },

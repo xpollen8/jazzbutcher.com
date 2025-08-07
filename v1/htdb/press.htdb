@@ -1106,6 +1106,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=Gig clipping,
 		location=France,
 		datetime=1987-02-10,
+		dtadded=2017-03-29,
 		dtpublished=1987-02-10)}
 
 	${addPress(type=preshow;clipping,
@@ -1116,16 +1117,18 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=Gig clipping,
 		location=France,
 		datetime=1993-02-21 20:00:00,
+		dtadded=2017-03-29,
 		dtpublished=1993-02-21 20:00:00)}
 
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19930216_press_LiberationNewspaper.html,
-		images=${jbc_images}/19930216/19930216_press_LiberationNewspaper;;Pierre Guillaume,
+		thumb=${jbc_images}/19930216/19930216_press_LiberationNewspaper;;Pierre Guillaume,
 		publication=Liberation Newspaper,
 		todo=OCR,
 		title=Gig clipping,
 		location=France,
 		datetime=1993-02-16,
+		dtadded=2017-03-29,
 		dtpublished=1993-02-16)}
 
 	${addPress(type=preshow;clipping,
@@ -1136,6 +1139,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=Gig clipping,
 		location=France,
 		datetime=1993-11-15,
+		dtadded=2017-03-29,
 		dtpublished=1993-11-15)}
 
 	${addPress(type=gig,
@@ -1306,6 +1310,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=A press release received from those slavic sensations BLACK EG,
 		headline=Do not miss this,
 		subhead=your life could depend upon it,
+		dtadded=1994-06-08,
 		dtpublished=1994-06-01,
 		datetime=1994-06-01)}
 
@@ -1737,6 +1742,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/20160219_press_recordcollector.html,
 		images=${jbc_images}/20160219/20160219_press_recordcollector,
 		publication=The Record Collector,
+		dtadded=2017-05-07,
 		dtpublished=2016-02-19)}
 
 	${addPress(type=album, album=adventurers,
@@ -1746,6 +1752,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=the jazz butcher,
 		headline=LAST OF THE GENTLEMEN ADVENTURERS (FIRE),
 		location=New York\, New York\, USA,
+		dtadded=2017-05-07,
 		dtpublished=2016-02-18)}
 
 	${addPress(type=album, album=adventurers,
@@ -1959,6 +1966,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=British label sobers up and celebrates its tenth anniversary,
 		headline=Jon Wiederhorn waits for the love bus,
 		location=USA,
+		dtadded=1996-08-19,
 		dtpublished=1994-08)}
 
 	${addPress(type=interview,
@@ -1966,6 +1974,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Spiros P. Ballas II & Dennis Sweeney,
 		publication=The Splatter Effect,
 		location=New Brunswick\, NJ\, USA,
+		dtadded=1994-08-26,
 		dtpublished=1994-06)}
 
 	${addPress(type=interview,
@@ -1973,6 +1982,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Emmanuel Tellier,
 		publication=Les Inrockuptibles,
 		location=France,
+		dtadded=1996-08-19,
 		dtpublished=1991-09)}
 
 	${addPress(type=interview;album, album=blue,
@@ -1982,6 +1992,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Record Store Up Front And Center Issue #5,
 		title=Treading the line between dumb and stupid,
 		location=Waterloo\, Canada,
+		dtadded=1996-08-19,
 		dtpublished=1992-05-08)}
 
 	${addPress(type=interview,
@@ -1991,6 +2002,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Music Express Magazine,
 		title=The Jazz Butcher Vaulting Synapses,
 		location=Canada,
+		dtadded=1996-08-19,
 		dtpublished=1991-01)}
 
 	${addPress(type=interview,
@@ -2001,6 +2013,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		images=${jbc_images}/1990/1990_press_foaf_1$$${jbc_images}/1990/1990_press_foaf_2$$${jbc_images}/1990/1990_press_foaf_3$$,
 		publication=Far Out And Fishy Issue #4,
 		location=UK,
+		dtadded=1994-04-15,
 		dtpublished=1990)}
 
 	${addPress(type=interview;preshow,
@@ -2031,15 +2044,26 @@ subhead=(20 December 1957 – 5 October 2021),
 		summary= Two star-struck fans corner the Butcher and he graciously provides a very informative and lengthy recorded interview\, here transcribed.
 	)}
 
+	${addPress(type=clipping;preshow,
+		url=${jbc_press}/19830419_press_city_limits.html,
+		images=${jbc_images}/19830419/19830419_press_city_limits,
+		publication=City Limits,
+		todo=OCR,
+		title=Design For Living + The Jazz Butcher,
+		location=UK,
+		dtadded=2018-04-01,
+		datetime=1983-04-19 20:30:00)}
+
 	${addPress(type=clipping,
 		url=${jbc_press}/1994_press_melodymaker.html,
-		images=${jbc_images}/1994/1994_press_melodymaker;;Kevin Carroll;;;;,
+		thumb=${jbc_images}/1994/1994_press_melodymaker;;Kevin Carroll;;;;,
 		publication=Melody Maker,
 		todo=OCR,
 		title=Five Creation Oddities,
 		headline=THE JAZZ BUTCHER,
 		subhead=Fruitcake Sociologist,
 		location=UK,
+		dtadded=2018-09-04,
 		dtpublished=1994)}
 
 	${addPress(type=gig,
@@ -2061,6 +2085,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Melody Maker,
 		title=Conspiracy Theories,
 		location=UK,
+		dtadded=1996-08-19,
 		dtpublished=1988-12-03)}
 
 	${addPress(type=interview;preshow,
@@ -2070,6 +2095,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Jazz Butcher Vs. New Community,
 		credit=Eric Beaumont,
 		location=Milwaukee\, WI\, USA,
+		dtadded=1994-04-15,
 		datetime=1988-06-12,
 		dtpublished=1988-07-16)}
 
@@ -2087,12 +2113,13 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=interview,
 		url=${jbc_press}/86nsb.html,
-		publication=Non*Stop Banter,
+		publication=Non*Stop Banter #9,
 		title=Life According to the Jazz Butcher,
 		headline=FRUITCAKE SOCIOLOGY 101,
 		subhead=Life According to the Jazz Butcher,
 		location=USA,
-		dtpublished=1986)}
+		dtadded=1996-08-19,
+		dtpublished=1986-09)}
 
 	${addPress(type=interview;gig,
 		url=${jbc_press}/86contrast.html,
@@ -2102,6 +2129,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		images=${jbc_images}/owen_contrast;;Greg Allen$$${jbc_images}/felix_contrast1;;Greg Allen$$${jbc_images}/felix_contrast2;;Greg Allen$$${jbc_images}/max_contrast;;Greg Allen$$${jbc_images}/pat_contrast2;;Greg Allen$$,
 		title=The Jazz Butcher vs the USA,
 		location=USA,
+		dtadded=1995-02-03,
 		datetime=1986-08-14,
 		dtpublished=1986-08)}
 
@@ -2111,6 +2139,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/198503/198503_abstract5,
 		publication=Abstract Magazine,
 		title=Issue #5,
+		dtadded=1996-08-19,
 		dtpublished=1985-03)}
 
 	${addPress(type=interview,
@@ -2139,6 +2168,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Village Voice,
 		location=New York\, New York\, USA,
 		datetime=1999-09-23 20:00:00,
+		dtadded=2017-04-02,
 		dtpublished=1999-09-23)}
 
 	${addPress(type=preshow,
@@ -2149,6 +2179,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Rocket,
 		location=Seattle\, Washington\, USA,
 		datetime=1999-09-16,
+		dtadded=2017-04-02,
 		dtpublished=1999-09-15)}
 
 	${addPress(type=preshow,
@@ -2159,6 +2190,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Up & Coming,
 		location=Seattle\, Washington\, USA,
 		datetime=1999-09-16,
+		dtadded=2017-04-02,
 		dtpublished=1999-09-16)}
 
 	${addPress(type=preshow,
@@ -2168,6 +2200,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Dev Sherlock,
 		publication=Timeout,
 		location=New York\, New York\, USA,
+		dtadded=2017-04-02,
 		datetime=1999-09-23 20:00:00,
 		dtpublished=1999-09-23)}
 
@@ -2178,6 +2211,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Ryder Magazine,
 		title=The Distressed Gentlefolk,
 		location=Bloomington\, IN\, USA,
+		dtadded=1996-08-19,
 		dtpublished=1992-05)}
 
 	${addPress(type=interview;preshow,
@@ -2188,6 +2222,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Cult of the Jazz Butcher,
 		location=Athens\, GA\, USA,
 		dtpublished=1992-04-22,
+		dtadded=1994-04-06,
 		datetime=1992-04-24)}
 
 	${addPress(type=wilson;gig;kit,
@@ -2205,6 +2240,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/pat_plays;;DavidWhittemore,
 		publication=Trouser Press 4th edition,
 		source=http://www.trouserpress.com,
+		dtadded=1996-08-19,
 		dtpublished=1990)}
 
 	${addPress(type=kit,
@@ -2250,15 +2286,17 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/95promo,
 		dtpublished=1995,
 		title=Creation Records Promo,
-		headline=Year By Year
+		headline=Year By Year,
+		dtadded=1996-08-19,
 		)}
 
 	${addPress(type=kit,
 		url=${jbc_press}/92biography.html,
 		thumb=${jbc_images}/promo2,
-		dtpublished=1992,
 		title=Sky Records Promo,
-		headline=The Jazz Butcher Biography
+		headline=The Jazz Butcher Biography,
+		dtpublished=1992,
+		dtadded=1996-08-19,
 		)}
 
 	${addPress(type=kit,
@@ -2266,7 +2304,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		dtpublished=1991,
 		thumb=${jbc_images}/promo1,
 		title=Creation Records Promo,
-		headline=The Jazz Butcher Biography
+		headline=The Jazz Butcher Biography,
+		dtadded=1996-08-19,
 		)}
 
 	${addPress(type=pat, url=${jbc_letters}/91Feb01, dtpublished=1991-02-01, title=Letters From Pat - 1991-02-01, summary=The "Hunter S. Thompson" letter)}
@@ -2292,18 +2331,23 @@ subhead=(20 December 1957 – 5 October 2021),
 		dtadded=2022-08-21,
 		thumb=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/Sumosonic/19980401_Sumosonic_Promo_Trio;;Jimmy Duval;;https://twitter.com/jimmyduval;;2022-08-21
 	)}
-	${addPress(type=pat;kit, url=${jbc_press}/94stop_press.html, title=Stop Press, dtpublished=1994-05-20, thumb=${jbc_images}/19940520/19940520_press)}
+	${addPress(type=pat;kit, url=${jbc_press}/94stop_press.html, title=Stop Press,
+		dtadded=1996-08-19,
+		dtpublished=1994-05-20, thumb=${jbc_images}/19940520/19940520_press)}
 	${addPress(type=pat;album, url=${jbc_letters}/93Aug30/albums.html, dtpublished=1993-08-30, title=Pat Reviews His Own Records)}
 	${addPress(type=pat;album, album=bus, url=${jbc_letters}/93Aug30/love.html, dtpublished=1993-08-30, title=Letters From Pat - 1993-08-30: Cultural guidance notes issued to the U.K. press)}
 	${addPress(type=album, url=${jbc_press}/disclaimerband.html, credit=Willie, source=http://www.disclaimerband.com/j.html, publication=Disclaimer, title=Music Review - All The Albums, dtpublished=2001)}
 
-	${addPress(type=album, url=${jbc_press}/87spex.html, dtpublished=1989-08, location=Germany, publication=Spex Magazine, album=may)}
+	${addPress(type=album, url=${jbc_press}/87spex.html,
+		dtadded=1996-08-19,
+		dtpublished=1989-08, location=Germany, publication=Spex Magazine, album=may)}
 
 	${addPress(type=album, album=dist,
 		url=${jbc_press}/87option.html,
 		credit=Scott Becker,
 		publication=Option,
 		location=USA,
+		dtadded=1996-08-19,
 		dtpublished=1987-05)}
 
 	${addPress(type=album, album=nons,
@@ -2357,6 +2401,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Chris Histed,
 		publication=Record Mirror,
 		location=UK,
+		dtadded=1996-08-19,
 		dtpublished=1989)}
 
 	${addPress(type=album, album=planet,
@@ -2366,6 +2411,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Sounds,
 		title=Scarey monster!,
 		location=UK,
+		dtadded=1996-08-19,
 		dtpublished=1989-07-29)}
 
 	${addPress(type=album, album=planet,
@@ -2374,6 +2420,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Dominic Mohan,
 		publication=Spiral Scratch,
 		location=UK,
+		dtadded=1994-04-15,
 		dtpublished=1989-10)}
 
 	${addPress(type=interview;album, album=cult,
@@ -2382,6 +2429,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Chris Roberts,
 		publication=Melody Maker,
 		location=UK,
+		dtadded=1996-08-19,
 		dtpublished=1990-07-07)}
 
 	${addPress(type=gig,
@@ -2403,6 +2451,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=KCMU Interview,
 		title=Red Dots In The Butcher's Basement,
 		location=Seattle\, WA\, USA,
+		dtadded=1996-08-19,
 		dtpublished=1990)}
 
 	${addPress(type=album, album=cult,
@@ -2410,6 +2459,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Bob Sled,
 		publication=Option,
 		location=USA,
+		dtadded=1996-08-19,
 		dtpublished=1990-11)}
 
 	${addPress(type=eg;album, album=damn,
@@ -2424,6 +2474,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Andy Cowan,
 		publication=Rage Magazine,
 		location=UK,
+		dtadded=1996-08-19,
 		dtpublished=1991-09)}
 
 	${addPress(type=album, album=highest,
@@ -2443,6 +2494,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=David Cavanagh,
 		publication=Select Magazine,
 		location=UK,
+		dtadded=1994-04-15,
 		dtpublished=1991-12)}
 
 	${addPress(type=album, album=blue,
@@ -2450,6 +2502,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=chris heath,
 		publication=Details For Men,
 		location=USA,
+		dtadded=1996-08-19,
 		dtpublished=1992-06)}
 
 	${addPress(type=album, album=blue,
@@ -2464,6 +2517,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Scott Jackson,
 		publication=Option,
 		location=USA,
+		dtadded=1996-08-19,
 		dtpublished=1992-05)}
 
 	${addPress(type=album, album=blue,
@@ -2477,12 +2531,14 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/93cdconnection.html,
 		credit=Roch Parisien,
 		publication=Compact Disc Connection,
+		dtadded=1996-08-19,
 		dtpublished=1993)}
 
 	${addPress(type=album, album=bus,
 		url=${jbc_press}/93inrockuptible.html,
 		publication=Les Inrockuptibles,
 		location=France,
+		dtadded=1996-08-19,
 		dtpublished=1993-06)}
 
 	${addPress(type=album, album=bus,
@@ -2490,6 +2546,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Adam St. James,
 		publication=Illinois Entertainer,
 		location=Chicago\, IL\, USA,
+		dtadded=1996-08-19,
 		dtpublished=1994-09)}
 
 	${addPress(type=album, album=bus,
@@ -2497,6 +2554,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/19940416/19940416_cashbox,
 		publication=Cash Box,
 		location=USA,
+		dtadded=1996-08-19,
 		dtpublished=1994-04-16)}
 
 	${addPress(type=album, album=bus,
@@ -2504,12 +2562,14 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Richie Unterberger,
 		publication=Option,
 		location=USA,
+		dtadded=1996-08-19,
 		dtpublished=1994-09)}
 
 	${addPress(type=kit;album, album=ill,
 		url=${jbc_press}/95promo_illuminate.html,
 		credit=Vanessa Cotton at Creation,
 		title=Creation Records Promo - Illuminate,
+		dtadded=1996-08-19,
 		dtpublished=1995-03)}
 
 	${addPress(type=album, album=sex,
@@ -2525,6 +2585,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Tom Lappin,
 		publication=The Scotsman,
 		location=UK,
+		dtadded=1996-08-19,
 		dtpublished=1995-03-15)}
 
 	${addPress(type=album, album=ill,
@@ -2533,11 +2594,13 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Neil Spence,
 		publication=New Music Express,
 		location=UK,
+		dtadded=1995-01-18,
 		dtpublished=1995-04-08)}
 
 	${addPress(type=album, album=sixteen_years,
 		url=${jbc_press}/95creation.html,
 		publication=Creation Records,
+		dtadded=1996-08-19,
 		dtpublished=1995-03)}
 
 	${addPress(type=kit;album, album=sixteen_years,
@@ -2545,6 +2608,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Vanessa Cotton at Creation,
 		publication=Creation Records,
 		title=Promo - Sixteen Years,
+		dtadded=1996-08-19,
 		dtpublished=1995-03)}
 
 	${addPress(type=album, album=drainglass,
@@ -2690,6 +2754,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=The Big Takeover Issue #34,
 		title=Excerpt from interview with the band Belly,
 		summary=JBC is favourably mentioned in an interview with Belly,
+		dtadded=1996-08-19,
 		dtpublished=1994)}
 
 	${addPress(type=gig,
@@ -2815,6 +2880,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		location=UK,
 		credit=Campbell Stevenson,
 		dtpublished=1996-08-18,
+		dtadded=1996-08-19,
 		datetime=1996-08-20)}
 
 	${addPress(type=album, album=fire_wasted,
@@ -2846,6 +2912,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Abus Dangereux #138,
 		thumb=${jbc_images}/201604/201604_press_abus_cover,
 		location=France,
+		dtadded=2017-05-07,
 		dtpublished=2016-04)}
 
 	${addPress(type=profile;interview;album, album=fishco,
@@ -2878,6 +2945,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Rolling Stone,
 		title=Beautiful comeback album by the jingling Bohemians from Oxford,
 		location=Germany,
+		dtadded=2017-05-07,
 		dtpublished=2016)}
 
 	${addPress(type=album, album=adventurers,
@@ -2886,6 +2954,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Thomas Bärnthaler,
 		publication=Unknown Print Review,
 		location=Germany,
+		dtadded=2017-05-07,
 		dtpublished=2016)}
 
 	${addPress(type=album, album=adventurers,
@@ -2894,6 +2963,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Stefano I. Bianchi,
 		publication=Blow Up,
 		location=Italy,
+		dtadded=2017-05-07,
 		dtpublished=2016)}
 
 	${addPress(type=interview;preshow,
@@ -2904,6 +2974,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Jazz Butcher's Conditioned Response,
 		location=Toronto\, Canada,
 		dtpublished=1992-05,
+		dtadded=1994-04-10,
 		datetime=1992-05-09)}
 			
 	${addPress(type=preshow;interview,
@@ -2915,6 +2986,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=Expect a dark show tonight,
 		location=Vancouver\, BC,
 		dtpublished=1992-05-27,
+		dtadded=1994-04-06,
 		datetime=1992-05-27)}
 			
 	${addPress(type=preshow;interview,
@@ -2925,6 +2997,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=British Popster Fights The Good Fight To Put Some Literacy Back Into Lyrics,
 		location=Ottawa\, Ontario\, Canada,
 		dtpublished=1992-05-07,
+		dtadded=1994-04-10,
 		datetime=1992-05-07)}
 			
 	${addPress(type=interview;preshow, album=blue,
@@ -2935,6 +3008,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Butchered relationship fascinates Fish,
 		location=Vancouver\, British Columbia\, Canada,
 		dtpublished=1992-05-27,
+		dtadded=1994-04-06,
 		datetime=1992-05-27)}
 
 	${addPress(type=interview;preshow,
@@ -2946,6 +3020,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=Dicing Expectations,
 		location=Montreal\, Canada,
 		dtpublished=1992-05-06,
+		dtadded=1996-08-19,
 		datetime=1992-05-06 20:00:00)}
 
 	${addPress(type=interview,

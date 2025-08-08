@@ -53,8 +53,7 @@ const useGigs = ({ type, query, year }: any) => {
 
 	//console.log("RET", data);
 	return {
-		data,
-		year, type, query,
+		data: { ...data, year, type, query },
 		isLoading,
 		error,
 	}

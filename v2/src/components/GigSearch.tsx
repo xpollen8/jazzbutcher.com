@@ -126,13 +126,14 @@ export const BannerGigs = (results: HashedType, searchYear?: number) => {
 		const searchType = gigSearchOptionsByType(results?.type).text;
 		const numMatched = results?.numResults ?? 0;
 		const bannerYear = (searchYear) ? `In ${searchYear}, ` : '';
-		const bannerTerms = (searchType && results?.searchTerms) ? `${searchType}: ${results?.searchTerms}` : '';
+		const bannerTerms = (searchType && results?.searchTerms) ? <>{searchType}: <i>"{results?.searchTerms}"</i></> : '';
 		const bannerClass = (numMatched) ? 'search found' : 'search notfound';
 		const bannerText = `${bannerYear}${numMatched} gig${(numMatched === 1) ? '' : 's'} matched`;
 
 		return (
-			<div style={{ textAlign: 'center', fontSize: '2em' }}>
-				{bannerText} {(bannerTerms) && <span className={bannerClass}>{bannerTerms}</span>}
+			<div style={{ textAlign: 'center', fontSize: '1.5em' }}>
+				{(bannerTerms) && <div className={bannerClass}>{bannerTerms}</div>}
+				{bannerText}
 			</div>
 		)
 }
@@ -386,7 +387,6 @@ const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boole
 							)}</div>}
 							</div>
 					</div>
-					
 					{(poster) && <div className=""><Image alt='poster' width={100} height={100} src={poster}/></div>}
 				</div>
 			</Link>

@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionOptions from '@/components/SectionOptions';
 import { GigSearchDialog, GigSearchResults, BannerGigs } from '@/components/GigSearch';
+import Loading from '@/components/Loading';
 import useGigs from '@/lib/useGigs';
 
 const Gigs = () => {
@@ -19,8 +20,7 @@ const Gigs = () => {
 		<GigSearchDialog />
 		{(data?.error) && <h1 style={{ color: 'red' }}>{data.error}</h1>}
 		<SectionOptions section="gigs" />
-		{(isLoading) ?
-			<>Loading..</>
+		{(isLoading) ? <Loading />
 			: <GigSearchResults results={data} banner={() => BannerGigs(data) }/>
 		}
 		<Footer />

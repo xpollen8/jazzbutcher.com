@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { GigSearchDialog, GigSearchResults, BannerGigs } from '@/components/GigSearch';
+import { GigSearchDialog, GigSearchResults } from '@/components/GigSearch';
 import ResultNavigator from '@/components/ResultNavigator';
 import { PrevArrow, NextArrow } from '@/components/Arrows';
 import GigProfile from '@/components/GigProfile';

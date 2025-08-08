@@ -7,6 +7,7 @@ import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parse
 import { removeHTML } from '@/components/GenericWeb';
 import GigGraph, { GigBarTypes } from '@/components/GigGraph';
 import { AutoLinkPlayer, AutoLinkSong, AutoLinkAct } from '@/lib/defines';
+import Loading from '@/components/Loading';
 
 import IconSonglist from '@/svg/IconSonglist';
 import IconPix from '@/svg/IconPix';
@@ -122,20 +123,20 @@ export const GigSearchResults = ({ results={}, banner, preventAutoExpand }: { re
 }
 
 export const BannerGigs = (results: HashedType, searchYear?: number) => {
-		if (!results) return <></>;
-		const searchType = gigSearchOptionsByType(results?.type).text;
-		const numMatched = results?.numResults ?? 0;
-		const bannerYear = (searchYear) ? `In ${searchYear}, ` : '';
-		const bannerTerms = (searchType && results?.searchTerms) ? <>{searchType}: <i>"{results?.searchTerms}"</i></> : '';
-		const bannerClass = (numMatched) ? 'search found' : 'search notfound';
-		const bannerText = `${bannerYear}${numMatched} gig${(numMatched === 1) ? '' : 's'} matched`;
+	if (!results) return <Loading />;
+	const searchType = gigSearchOptionsByType(results?.type).text;
+	const numMatched = results?.numResults ?? 0;
+	const bannerYear = (searchYear) ? `In ${searchYear}, ` : '';
+	const bannerTerms = (results?.searchTerms || results?.query) ? <>{searchType}: <i>{results?.searchTerms || results?.query}</i></> : '';
+	const bannerClass = (numMatched) ? 'search found' : 'search notfound';
+	const bannerText = `${bannerYear}${numMatched} gig${(numMatched === 1) ? '' : 's'} matched`;
 
-		return (
-			<div style={{ textAlign: 'center', fontSize: '1.5em' }}>
-				{(bannerTerms) && <div className={bannerClass}>{bannerTerms}</div>}
-				{bannerText}
-			</div>
-		)
+	return (
+		<>
+			{(bannerTerms) && <div className={bannerClass}>{bannerTerms}</div>}
+			<div className="search count">{bannerText}</div>
+		</>
+	)
 }
 
 const Venue = ({ record }: { record: RecordType }) =>
@@ -236,7 +237,7 @@ const filterBy = (res: RecordType, query: string, recordFilter: any) => {
 		...res,
 		numResults: filtered.length,
 		results: filtered,
-		searchTerms: terms.join('" AND "'),
+		searchTerms: terms.join('" OR "'),
 	}
 }
 

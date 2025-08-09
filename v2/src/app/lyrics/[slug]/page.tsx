@@ -1,6 +1,5 @@
 "use client"
 
-import { Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
@@ -12,6 +11,7 @@ import { removeHTML, Credit, Attribution } from '@/components/GenericWeb';
 import useLyric from '@/lib/useLyric';
 import { pluralize, ts2URI, parseCredit, parseYear, truncAt, parseCaptionSourceEtc, parseCaptionsSourcesEtc } from '@/lib/utils';
 import { notFound } from 'next/navigation';
+import Loading from '@/components/Loading';
 
 const	LyricVideo = ({ video }: any) => {
 	if (!video) return;
@@ -276,17 +276,15 @@ const Lyric = ({ params }: { params?: any }) => {
 
 	if (!isLoading && !song?.title) return notFound();
 
-	return (<><Suspense fallback=<>Loading...</> >
-		{(!isLoading) && (<>
-			<Header project={song?.project} section="lyrics" title={song?.title} />
-			<main>
-				<Tag>{song?.title}</Tag>
-				{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon, medias)}</div>)}
-				<FoundOn releases={foundon} />
-			</main>
-		</>)}
+	return <Loading isLoading={isLoading} >
+		<Header project={song?.project} section="lyrics" title={song?.title} />
+		<main>
+			<Tag>{song?.title}</Tag>
+			{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon, medias)}</div>)}
+			<FoundOn releases={foundon} />
+		</main>
 		<Footer />
-	</Suspense></>)
+	</Loading>
 }
 
 export default Lyric;

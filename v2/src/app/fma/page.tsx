@@ -2,11 +2,11 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Suspense } from 'react';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import LetterHeader from '@/components/LetterHeader';
 import useFishyMansionsArchives from '@/lib/useFishyMansionsArchives';
 import { ts2URI } from '@/lib/utils';
+import Loading from '@/components/Loading';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -42,21 +42,18 @@ const FMAIndex = ({ items }: any) => {
 const FishyMansionsArchives = ({ params }: { params?: any }) => {
 	const { data, isLoading } = useFishyMansionsArchives();
 
-	return (<>
-		{(data?.error) && <h1>{data?.error}</h1>}
-		<Suspense fallback=<>Loading...</> >
-			{(!isLoading) && (<>
-					<Header section="FMA" />
-					<LetterHeader title="Fishy Mansions Archives" aux=<> As part of the JBC Documentary, we are striving to digitize all cassettes, CDs demo and live recordings from Pat Fish&apos;s estate. Here is an initial summary of the items being considered.
-					<Image className="w-full"  width={250} height={250} src={`https://v1.jazzbutcher.com/static/20241022_FMA1.jpg`} alt="fish mansion archive CDs" />
-					</> />
-					<main>
-						<FMAIndex items={data?.results[0]} />
-					</main>
-				<Footer />
-			</>)}
-		</Suspense>
-	</>)
+	return <Loading isLoading={isLoading} >
+		<Header section="FMA" />
+		<LetterHeader title="Fishy Mansions Archives" aux=<>
+			As part of the JBC Documentary, we are striving to digitize all cassettes, CDs demo and live recordings from Pat Fish&apos;s estate. Here is an initial summary of the items being considered.
+			<Image className="w-full"  width={250} height={250} src={`https://v1.jazzbutcher.com/static/20241022_FMA1.jpg`} alt="fish mansion archive CDs" />
+			</>
+		/>
+		<main>
+			<FMAIndex items={data?.results[0]} />
+		</main>
+		<Footer />
+	</Loading>
 }
 
 export default FishyMansionsArchives;

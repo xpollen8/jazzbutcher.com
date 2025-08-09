@@ -123,7 +123,7 @@ export const GigSearchResults = ({ results={}, banner, preventAutoExpand }: { re
 }
 
 export const BannerGigs = (results: HashedType, searchYear?: number) => {
-	if (!results) return <Loading />;
+	//if (!results) return <Loading />;
 	const searchType = gigSearchOptionsByType(results?.type).text;
 	const numMatched = results?.numResults ?? 0;
 	const bannerYear = (searchYear) ? `In ${searchYear}, ` : '';
@@ -317,7 +317,7 @@ const	Location = (args: any) => {
 	return <>{country2Flag(country)} {strs}</>;
 }
 
-const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boolean) => {
+export const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boolean) => {
 	const years: HashedType = {};
 	results?.results?.forEach((r: RecordType) => {
 		const year = parseYear(r.datetime);

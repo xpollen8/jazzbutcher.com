@@ -1,11 +1,11 @@
 "use client"
 
-import { Suspense } from 'react';
 import Link from 'next/link';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import useLyrics from '@/lib/useLyrics';
+import Loading from '@/components/Loading';
 
 import Tag from '@/components/Tag';
 import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
@@ -41,19 +41,19 @@ const filters = [
 
 const Lyrics= (props: any) => {
 	const { data, isLoading, error } = useLyrics();
-	const filtersUsed = parseFilters(props.searchParams?.filters || '') || [];
+	const filtersUsed = parseFilters(props?.searchParams?.filters || '') || [];
 
 	return (<>
 		<Header section='lyrics' />
-		<main>
-			<div className="listItem flex flex-wrap">
-				{filters.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}
-			</div>
-			<Suspense fallback=<>Loading...</> >
-				{(!isLoading) && <LyricList lyrics={data?.results?.filter((lyric: any) => filterItemBy(lyric, filtersUsed, []))} />}
-			</Suspense>
-		</main>
-		<Footer />
+		<Loading isLoading={isLoading} >
+			<main>
+				<div className="listItem flex flex-wrap">
+					{filters.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}
+				</div>
+				<LyricList lyrics={data?.results?.filter((lyric: any) => filterItemBy(lyric, filtersUsed, []))} />
+			</main>
+			<Footer />
+		</Loading>
 	</>);
 }
 

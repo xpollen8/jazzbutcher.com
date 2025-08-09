@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
@@ -12,6 +11,7 @@ import { Credit } from '@/components/GenericWeb';
 import useGigs from '@/lib/useGigs';
 import { GigSearchResults } from '@/components/GigSearch';
 import { notFound } from 'next/navigation';
+import Loading from '@/components/Loading';
 
 //import useConspirator from '@/lib/useConspirator';
 
@@ -31,22 +31,16 @@ const PersonGallery = (props: { str?: string }) => {
 
 const Player = ({ person }: { person: string }) => {
 	const { data, isLoading, error } = useGigs({ type: 'performer', query: person?.replace(/ /g, '_') });
-	return (<>
-		{(isLoading) ?
-			<>Loading..</>
-			: !!(data?.results?.length) && <GigSearchResults results={data} banner={() => <Tag>As a Performer</Tag> } />
-		}
-	</>)
+	return <Loading isLoading={isLoading} >
+		<GigSearchResults results={data} banner={() => (!!data?.results?.length) && <Tag>As a Performer</Tag> } />
+	</Loading>
 }
 
 const Act = ({ person }: { person: string }) => {
 	const { data, isLoading, error } = useGigs({ type: 'alsowith', query: person?.replace(/ /g, '_') });
-	return (<>
-		{(isLoading) ?
-			<>Loading..</>
-			: !!(data?.results?.length) && <GigSearchResults results={data} banner={() => <Tag>Also On The Bill</Tag> } />
-		}
-	</>)
+	return <Loading isLoading={isLoading} >
+		<GigSearchResults results={data} banner={() => (!!data?.results?.length) && <Tag>Also On The Bill</Tag> } />
+	</Loading>
 }
 
 const Conspirator = ({ params }: { params?: any }) => {
@@ -56,16 +50,12 @@ const Conspirator = ({ params }: { params?: any }) => {
 
 	const conspirator = data?.results[0];
 
-	return (<><Suspense fallback=<>Loading...</> >
-		{(!isLoading && !isX) && (() => {
-			return (<>
-				<Header section="conspirator" title={conspirator?.name} />
-				<Tag>{song?.title}</Tag>
-				{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => t?.func(song, key))}
-			</>)
-		})()}
+	return <Loading isLoading={isLoading} >
+		<Header section="conspirator" title={conspirator?.name} />
+		<Tag>{song?.title}</Tag>
+		{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => t?.func(song, key))}
 		<Footer />
-	</Suspense></>)
+		</Loading>
 	*/
 	return <>
 		<Header section="conspirators" title={person?.name} />

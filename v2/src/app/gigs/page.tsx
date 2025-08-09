@@ -20,9 +20,9 @@ const Gigs = () => {
 		<GigSearchDialog />
 		{(data?.error) && <h1 style={{ color: 'red' }}>{data.error}</h1>}
 		<SectionOptions section="gigs" />
-		{(isLoading) ? <Loading />
-			: <GigSearchResults results={data} banner={() => BannerGigs(data) }/>
-		}
+		<Loading isLoading={isLoading} >
+			<GigSearchResults results={data} banner={() => BannerGigs(data) }/>
+		</Loading>
 		<Footer />
 	</>)
 }

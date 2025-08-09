@@ -1,11 +1,11 @@
 "use client"
 
-import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { parseImage, truncAt, autoLink, linkExternal, ts2URI } from '@/lib/utils';
 import { AutoLinkSong } from '@/lib/defines';
 import useRelease from '@/lib/useRelease';
+import Loading from '@/components/Loading';
 
 const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comment, wav, mp3, url, artist, author, autolink = false, setnum, ordinal, children }: {
 	title: string
@@ -27,14 +27,14 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 	autolink?: boolean
 	children?: React.ReactNode
 }) => {
-	const rel = useRelease(lookup);
-	const release = rel && rel?.data && rel?.data?.results && rel?.data?.results[0];
+	const { data, isLoading } = useRelease(lookup);
+	const release = data?.results && data?.results[0];
 	title = title?.replace(/\\/g, '');	// get rid of HTDB backslashes
 	const { thumb, image } = parseImage(release?.thumb);
 
 	const fixDomain = (url: string) => url.replace('http://jazzbutcher.com/audio', 'https://v1.jazzbutcher.com/audio');
 
-	return <Suspense fallback=<>Loading...</> >
+	return <Loading isLoading={isLoading} >
 		<div className="audioPlayer listItem">
 			<span className="audio_title">
 			{(setnum && (typeof setnum === 'string') && !['set','NULL'].includes(setnum)) && <>{setnum?.replace('side', '')}{': '}</>}
@@ -61,7 +61,7 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 			{(artist) && <b>{artist}</b>} {(author && (typeof author === 'string') && !author.includes('NULL')) && <span className="smalltext pl-3"> ({author}) </span>} {(version) && <span className="smalltext pl-3"> ({version}) </span>}
 			{(comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: comment }} /></i>)</span>}
 			<div className="flex">
-				{(lookup && !rel?.isLoading && thumb) && <>
+				{(lookup && thumb) && <>
 					<Link href={release?.href}>
 						<Image width={60} height={60} alt={lookup} src={thumb} />
 					</Link>
@@ -84,7 +84,7 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 			{(lookup && thumb && release?.title) && <div className="smalltext">Taken from: &quot;{release?.title}&quot; ({release?.type})</div>}
 			{children}
 		</div>
-	</Suspense>
+	</Loading>
 }
 
 export default LinkAudio;

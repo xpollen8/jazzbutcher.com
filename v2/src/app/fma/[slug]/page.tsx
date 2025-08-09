@@ -1,10 +1,10 @@
 "use client";
 
-import { Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import useFishyMansionsArchives from '@/lib/useFishyMansionsArchives';
 import LetterHeader from '@/components/LetterHeader';
+import Loading from '@/components/Loading';
 
 const FishyMansionsArchivesItem = ({ item, slug }: any) => {
 	if (!item) return;
@@ -34,18 +34,15 @@ const FishyMansionsArchivesItem = ({ item, slug }: any) => {
 const FishyMansionsArchives = ({ params }: { params?: any }) => {
 	const { data, isLoading } = useFishyMansionsArchives();
 
-	return (<>
-		{(data?.error) && <h1>{data?.error}</h1>}
-		<Suspense fallback=<>Loading...</> >
-			{(!isLoading) && (<>
-					<Header section="FMA" />
-					<main>
-						<FishyMansionsArchivesItem item={data?.results[0]} slug={params?.slug} />
-					</main>
-				<Footer />
-			</>)}
-		</Suspense>
-	</>)
+	return <>
+		<Header section="FMA" />
+		<Loading isLoading={isLoading} >
+			<main>
+				<FishyMansionsArchivesItem item={data?.results[0]} slug={params?.slug} />
+			</main>
+		</Loading>
+		<Footer />
+	</>
 }
 
 export default FishyMansionsArchives;

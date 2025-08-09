@@ -1,10 +1,10 @@
 "use client"
 
-import { Suspense } from 'react';
 import { useSearchParams } from "next/navigation";
 import usePresses from '@/lib/usePresses';
 import { parseYear, pressFiltersInclude } from '@/lib/utils';
 import PressCards from '@/components/PressCards';
+import Loading from '@/components/Loading';
 import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
 
 export const filterPassThru = (p: any, project?: string) => sortPress(filterPressProject(p, project));
@@ -51,7 +51,8 @@ export const filterPressByTypeGigReview = (p: any, project?: string) => {
 	const noTitle = 'Punter Gig Review';
 	const base = sortPress(filterPressProject(p, project));
 
-	return base?.filter((item: any) => (type) ? (pressFiltersInclude(item?.type, type) && !pressFiltersInclude(item?.type, notType) && !item?.title.includes(noTitle)) : true);
+	// TODO - notType/noTitle are not being filtered out
+	return base?.filter((item: any) => pressFiltersInclude(item?.type, type))?.filter((item: any) => !pressFiltersInclude(item?.type, notType))?.filter((item: any) => !item?.title.includes(noTitle));
 }
 
 export const filterPressByTypeRetrospective = (p: any, project?: string) => {
@@ -84,7 +85,7 @@ export const filterPressByTypeInterview = (p: any, project?: string) => {
 
 const filterOptions = [
 	{ field: "type:album", display: "Album Reviews" },
-	{ field: "type:interview", display: "Interviews" },
+	{ field: "type:interview", display: "Interviews", func: filterPressByTypeInterview },
 	{ field: "type:clipping", display: "Short Clippings" },
 	{ field: "type:retrospective", display: "Retrospectives" },
 	{ field: "type:profile", display: "Profile Pieces" },
@@ -109,20 +110,18 @@ const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, f
 	const presses = data?.results && filter(data?.results, project);
 	const showAlbum = (filters?.includes('album'));
 
-	return <Suspense fallback=<>Loading...</> >
-		{(!isLoading && presses) && <>
-			{(() => {
-				const options = filterOptions.filter((f: any) => {
-					const [ type, value ] = f.field.split(':');
-					return presses?.some((r: any) => r[type]?.includes(value)) &&
-						!presses?.every((r: any) => r[type]?.includes(value));
-				});
-				if (options?.length <= 1) return;
-				return <div className="listItem flex flex-wrap">{options.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
-			})()}
-			<PressCards items={presses?.filter((art: any) => filterItemBy(art, filtersUsed, filterOptions))} project={project} showAlbum={showAlbum} preventAutoExpand={!filtersUsed?.length} />
-		</>}
-	</Suspense>
+	return <Loading isLoading={isLoading} >
+		{(() => {
+			const options = filterOptions.filter((f: any) => {
+				const [ type, value ] = f.field.split(':');
+				return presses?.some((r: any) => r[type]?.includes(value)) &&
+					!presses?.every((r: any) => r[type]?.includes(value));
+			});
+			if (options?.length <= 1) return;
+			return <div className="listItem flex flex-wrap">{options.map((props: { field: string, display: string }, key:number) => <div key={key}><FilterButton filtersUsed={filtersUsed} {...props} /></div>)}</div>
+		})()}
+		<PressCards items={presses?.filter((item: any) => filterItemBy(item, filtersUsed, filterOptions))} project={project} showAlbum={showAlbum} preventAutoExpand={!filtersUsed?.length} />
+	</Loading>
 }
 
 export default FilterPresses;

@@ -1,6 +1,5 @@
 "use client"
 
-import React, { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -17,6 +16,7 @@ import { Attribution, Source, Credit, ParsedCaption, removeHTML, RenderHTML } fr
 import useGig from '@/lib/useGig';
 import PressCards from '@/components/PressCards';
 import { PrevArrow, NextArrow } from '@/components/Arrows';
+import Loading from '@/components/Loading';
 
 const parsePhoto = (str: string) => {
 	if (!str) return {};
@@ -424,17 +424,13 @@ const GigProfile = (props: any) => {
 
 	if (!isLoading && !gig) return notFound();
 
-	return <div className={(isLoading) ? 'blur-sm' : ''}>
-		<Suspense fallback=<>Loading...</>>
-			{(!isLoading) && (<>
-				<Nav year={year} datetime={datetime} gig={gig} />
-				<main>
-					<Content gig={gig} />
-				</main>
-			</>)}
-		</Suspense>
+	return <Loading isLoading={isLoading} >
+		<Nav year={year} datetime={datetime} gig={gig} />
+		<main>
+			<Content gig={gig} />
+		</main>
 		<Footer />
-	</div>
+	</Loading>
 }
 
 export default GigProfile;

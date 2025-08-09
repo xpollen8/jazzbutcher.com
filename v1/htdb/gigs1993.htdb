@@ -503,6 +503,9 @@
 			</dl>
 			${g_source(g=Pat Letter: 1993-08-30, u=${jbc_letters}/93Aug30/fiddler.html, d=1993-08-30)}
 		)}
+		,posters=
+			/images/19930515/19930515_poster.jpg$$
+			;;;;2015-10-04
 	)}
 
 #define	Aug11.html()

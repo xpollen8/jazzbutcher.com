@@ -1,7 +1,5 @@
 "use client"
 
-import { Suspense } from 'react';
-
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -12,9 +10,8 @@ import InfoTag from '@/components/InfoTag';
 const AlbumCover = ({ album }: { album?: string }) => {
 	const { data, isLoading, error } = useReleases();
 	const release = data?.results?.find((a: any) => a.lookup === album);
-	return <Suspense fallback=<>Loading...</> >
-		{(!isLoading && data) && <Image className="w-full" src={parseImage(release?.thumb)?.thumb || ''} width={250} height={250} alt="album cover" />}
-	</Suspense>
+	if (isLoading || !release?.thumb) return;
+	return <Image className="w-full" src={parseImage(release?.thumb)?.thumb || ''} width={250} height={250} alt="album cover" />
 }
 
 const PressCards = ({ items, project, showAlbum, preventAutoExpand=false }: any) =>

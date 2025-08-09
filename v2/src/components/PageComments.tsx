@@ -4,8 +4,6 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Tag from '@/components/Tag';
 
-import { Suspense } from 'react';
-
 import { usePathname } from 'next/navigation';
 
 import IconReply from '@/svg/IconReply';
@@ -288,22 +286,20 @@ const PageComments = ({ className }: { className?: string }) => {
 	const [ showForm, toggleCommentForm ] = useState(comments.length > 0 ? false : true);
 	const label = (uri?.length > 0) ? `Comments for "${uri}"` : 'Comments';
 
-	return (<>
-		<Suspense fallback={<>Loading...</>}>
-			<details id="commentBubble">
-				<summary>
-					<CommentBubble className="commentBubble">
-						<div className="text-sm text-slate-500 ml-1">{data?.numResults}</div>
-					</CommentBubble>
-				</summary>
-				<div className="commentOverlay">
-					{(showForm) && <CommentForm mutate={mutate} commentData={{ uri }} toggleCommentForm={toggleCommentForm} />}
-					<ToggleCommentForm text={label} showForm={showForm} toggleCommentForm={toggleCommentForm} />
-					<Comments mutate={mutate} commentData={{ uri, comments }} showForm={showForm} toggleCommentForm={toggleCommentForm} />
-				</div>
-			</details>
-		</Suspense>
-	</>)
+	if (isLoading) return;
+
+	return <details id="commentBubble">
+		<summary>
+			<CommentBubble className="commentBubble">
+				<div className="text-sm text-slate-500 ml-1">{data?.numResults}</div>
+			</CommentBubble>
+		</summary>
+		<div className="commentOverlay">
+			{(showForm) && <CommentForm mutate={mutate} commentData={{ uri }} toggleCommentForm={toggleCommentForm} />}
+			<ToggleCommentForm text={label} showForm={showForm} toggleCommentForm={toggleCommentForm} />
+			<Comments mutate={mutate} commentData={{ uri, comments }} showForm={showForm} toggleCommentForm={toggleCommentForm} />
+		</div>
+	</details>
 }
 
 export default PageComments;

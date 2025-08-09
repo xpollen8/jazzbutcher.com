@@ -1,6 +1,5 @@
 "use client"
 
-import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -12,6 +11,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 import useReleaseSongs from '@/lib/useReleaseSongs';
 import { gab, expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
 import { linkExternal, parseDomain, truncAt, parseCaptionsSourcesEtc } from '@/lib/utils';
+import Loading from '@/components/Loading';
 
 export type ReleaseType =  {
 	[key: string]: any;	// make indexable as hash
@@ -390,26 +390,22 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 	const { songs, credits } = data || {};
 	// merge duplicates in ->audio and ->songs
 	const tracks = mergeAudioAndMedia(release?.audio, data?.songs?.results);
-	return (
-		<Suspense fallback=<>Loading...</>>
-			{(!isLoading && songs) && (<>
-				<ReleaseImages release={release} />
-				<ReleaseDetails release={release} />
-				<ReleaseNotes release={release} />
-				<ReleaseTracks songs={tracks} lookup={lookup} />
-				<ReleaseDownloads release={release} />
-				<ReleaseCredits credits={credits} />
-				<ReleaseLiner release={release} />
-				<ReleaseThanks release={release} />
-				{/*<ReleaseAudio release={release} />*/}
-				<ReleasePatSez release={release} />
-				<ReleaseBishopSez release={release} />
-				<ReleaseVideos release={release} />
-				<MakeReleasePress lookup={lookup} />
-				<p />
-			</>)}
-		</Suspense>
-	)
+	return <Loading isLoading={isLoading} >
+		<ReleaseImages release={release} />
+		<ReleaseDetails release={release} />
+		<ReleaseNotes release={release} />
+		<ReleaseTracks songs={tracks} lookup={lookup} />
+		<ReleaseDownloads release={release} />
+		<ReleaseCredits credits={credits} />
+		<ReleaseLiner release={release} />
+		<ReleaseThanks release={release} />
+		{/*<ReleaseAudio release={release} />*/}
+		<ReleasePatSez release={release} />
+		<ReleaseBishopSez release={release} />
+		<ReleaseVideos release={release} />
+		<MakeReleasePress lookup={lookup} />
+		<p />
+	</Loading>
 }
 
 export default Release;

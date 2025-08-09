@@ -1,6 +1,5 @@
 "use client"
 
-import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import EmbedMedia from '@/components/EmbedMedia';
@@ -9,6 +8,7 @@ import { dateDiff, ts2URI } from '@/lib/utils';
 import { feedbackURI2Pathname } from '@/lib/usePageComments';
 import { Attribution } from '@/components/GenericWeb';
 import { CommentBubble } from '@/components/PageComments';
+import Loading from '@/components/Loading';
 
 const RecentPress = (props: any) => {
 	const { press } = props;
@@ -107,13 +107,13 @@ const RecentReleases = (props: any) => {
 const RecentUpdates = () => {
 	const { data, isLoading, error} = useRecentUpdates();
 	const { press, media, gigmedia, feedback, releases } = data || {};
-	return (<Suspense fallback={<>Loading...</>}>
+	return <Loading isLoading={isLoading} >
 		<RecentGigMedia gigmedia={gigmedia} />
 		<RecentPress press={press} />
 		<RecentReleases releases={releases} />
 		<RecentMedia media={media} />
 		<RecentFeedback feedback={feedback} />
-	</Suspense>)
+	</Loading>
 }
 
 export default RecentUpdates;

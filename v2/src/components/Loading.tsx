@@ -1,3 +1,3 @@
-const Loading = ({ isLoading, silent=false, children }: { isLoading: boolean, silent: boolean, children : any }) => (isLoading) ? <div className="search loading">{(!silent) && `Loading...`}</div> : children;
+const Loading = ({ isLoading, silent=false, message="Loading...", children }: { isLoading: boolean, silent?: boolean, message?: string, children : any }) => (isLoading) ? <div className="search loading">{(!silent) && message}</div> : children;
 
 export default Loading;

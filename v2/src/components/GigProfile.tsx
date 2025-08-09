@@ -267,7 +267,7 @@ const GigMap = ({ data }: any) => {
 }
 
 const ExtraNav = ({ gig }: { gig: any }) => {
-	if (gig.prev && gig.next) {
+	if (gig?.prev && gig?.next) {
 		const prev = gig?.prev[0]?.datetime;
 		const next = gig?.next[0]?.datetime;
 		const prevGig = <Link href={`/gigs/` + ts2URI(prev)}><PrevArrow className="arrows" /></Link>;
@@ -278,7 +278,7 @@ const ExtraNav = ({ gig }: { gig: any }) => {
 
 const Nav = ({ year, datetime, gig }: { year: number, datetime: string, gig: any }) => {
 	const hasHour = !(datetime.includes('00:00:00'));
-	const project = parseProject(gig?.extra);
+	const project = gig && parseProject(gig?.extra);
 
 	const display = `${parseMonthName(datetime)} ${parseDayOrdinal(datetime)} ${(hasHour) ? parseHourAMPM(datetime) : ''}`;
 
@@ -424,13 +424,15 @@ const GigProfile = (props: any) => {
 
 	if (!isLoading && !gig) return notFound();
 
-	return <Loading isLoading={isLoading} >
+	return <>
 		<Nav year={year} datetime={datetime} gig={gig} />
-		<main>
-			<Content gig={gig} />
-		</main>
+		<Loading isLoading={isLoading} >
+			<main>
+				<Content gig={gig} />
+			</main>
+		</Loading>
 		<Footer />
-	</Loading>
+	</>
 }
 
 export default GigProfile;

@@ -16,6 +16,8 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${ll} )},
+	posters=/images/19840203/19840203_poster.jpg$$
+	nothingelseon;;https://twitter.com/nothingelseon;;2019-11-13
 
 	)}
 
@@ -115,6 +117,8 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	posters=/images/19840526/19840526_poster.jpg$$
+		nothingelseon;;https://twitter.com/nothingelseon;;2019-12-11
 	)}
 
 #define	Jun2.html()
@@ -125,7 +129,7 @@
 	with=${literalizeCommas( Another Time)},
 	posters=/images/19840602/19840602_poster.jpg$$
 		/images/19840602/19840602_poster_reverse.jpg$$
-		Andrew Brooksbank
+		Andrew Brooksbank;;;;2024-11-21
 	)}
 
 #define	Jun11.html()
@@ -186,7 +190,9 @@
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
 	with=${literalizeCommas(
 		Daniel Ash, Terry Walpole, Csawza Cinema, Harry Isles, Graham Trott, Alex Novak, MJ Harvey, David Haslam, Ian Blackmore, David J., Mitch Jenkins, Kevin Haskins, Tim Perkins
-	)}
+	)},
+	posters=/images/19840901/19840901_poster.jpg$$
+	;;;;2004-05-12
 	)}
 
 #define	Oct29.html()
@@ -202,6 +208,8 @@
 	cost=&pound;2.50,
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
 	with=Micro Disney,
+	posters=/images/19841109/19841109_poster.jpg$$
+		nothingelseon;;https://twitter.com/nothingelseon/status/1216653166256652288/photo/1;;2020-01-13
 	)}
 
 #define	Nov13.html()
@@ -229,7 +237,9 @@
 
 	cost=&pound;2.50,
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
-	with=And The Doctores Children
+	with=And The Doctores Children,
+	posters=/images/19841129/19841129_poster.jpg$$
+		nothingelseon;;https://twitter.com/nothingelseon/status/1218416076784111616/photo/1;;2020-01-18
 
 	)}
 
@@ -300,7 +310,9 @@
 		<p>
 		Total overload of mic coz Rolo is down the front!
 	)},
-		photosets= /images/19841230/19841230_pat.jpg$$
+	photosets= /images/19841230/19841230_pat.jpg$$,
+	posters=/images/19841230/19841230_poster.jpg$$
+		https://twitter.com/Birmingham_81/status/1191801384968032256/photo/1;;;;2019-11-06
 
 	)}
 

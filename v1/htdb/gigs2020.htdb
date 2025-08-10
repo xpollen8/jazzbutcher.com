@@ -12,61 +12,46 @@
 #define	Jul12.html()
 	${gigHeader(
 		eventweb=https://www.facebook.com/pat.fish.7/videos/10214163350756122/,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-		)},
-		photosets=
+		who=${literalizeCommas( ${pat})},
+		posters=/images/20200712/20200712_poster.jpg$$
+		    ;;;;2020-07-08
 	)}
 
 #define	Sep27_2200.html()
 	${gigHeader(
 		eventweb=https://www.facebook.com/rock.music.fan2/videos/1024675418375453,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-		)},
+		who=${literalizeCommas( ${pat})},
 		setlists= /images/20200927/20200927_setlist.jpg$$
 			Tom Peterson;;;;2023-12-24,
-		photosets=
 	)}
 
 #define	Oct10.html()
 	${gigHeader(
 		eventweb=https://www.youtube.com/c/FrancoisSky,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-		)},
-		photosets=
+		who=${literalizeCommas( ${pat})},
 	)}
 
 #define	Dec6.html()
 	${gigHeader(
 		eventweb=https://www.facebook.com/pat.fish.7/videos/10215055466938469,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-		)},
-		photosets=
+		who=${literalizeCommas( ${pat})},
+		posters=/images/20201206/20201206_poster.jpg$$
+		    ;;;;2020-12-07
 	)}
 
 #define	Dec31.html()
 	${gigHeader(
 		eventweb=https://www.facebook.com/pat.fish.7/videos/10215197012997032,
-		who=${literalizeCommas(
-			${pat}
-		)},
+		who=${literalizeCommas( ${pat})},
 		notes=${literalizeCommas(
 		Somebody suggested that we should do a New Year's Eve "broadcast" from Fishy Mansions. My ego rather likes the idea of rescuing you all from Jools Holland and his plinky-plonk totalitarianism, but at the same time I'm aware that scarcity is value, and I don't want to do so many of these things that you all get bored. So I'm putting it out there: if anybody fancies watching an elderly beatnik slowly disintegrating as he boozes and smokes his way through a pack of covers and originals and into the new year, let us know with a "like", or whatever. We'll see how it goes.
 		)}$$${pat};;;;2020-12-17,
 		photosets=
 			/images/20201231/20201231_livestream.jpg$$
 			David Whittemore
+		,
+		posters=/images/20201231/20201231_poster.jpg$$
+		    ;;;;2020-12-29
 	)}
 
 #define	page_requested	${${page}()}

@@ -38,7 +38,7 @@
 		who=${literalizeCommas( ${pat}, ${green} )},
 		tickets=
 			/images/19870202/19870202_ticket.jpg$$
-			Pierre Guillaume
+			Pierre Guillaume;;;;2017-03-11
 	)}
 
 #define	Feb3.html()
@@ -95,6 +95,8 @@
 #define	Feb11.html()
 	${gigHeader(
 		who=${literalizeCommas( ${pat}, ${green} )},
+		posters=/images/19870211/19870211_poster.jpg$$
+			;;;;2017-03-27
 	)}
 
 #define	Feb12_1700.html()
@@ -195,7 +197,9 @@
 			Sonic Spaceman Pete gave us a lift. We gave him this ice lolly.
 			<p>
 			Rolo took all his clothes off.
-		)}
+		)},
+		posters=/images/19870529/19870529_poster.jpg$$
+			Pierre Guillaume;;;;2017-03-29
 	)}
 
 #define	Jul28.html()
@@ -218,7 +222,7 @@
 		)},
 		tickets=
 			/images/19870802/19870802_ticket.jpg$$
-			Pierre Guillaume
+			Pierre Guillaume;;;;2017-03-11
 		,photosets=
 			/images/19870802/19870802_FranckYeznikian_pat.jpg$$
 				Franck Yeznikian
@@ -239,6 +243,8 @@
 		who=${literalizeCommas(
 			${pat} (with a cold)
 		)},
+		posters=/images/19870918/19870918_poster.jpg$$
+			Johnny P.;;;;2016-04-17
 	)}
 
 #define	Oct20.html()

@@ -27,6 +27,9 @@
 		tunes worked well and we played 2 encores. Afterwards we had a
 		fine party at Misery's yard.
 		)}
+		,
+		posters=/images/20030329/20030329_poster.jpg$$
+		    ;;;;2004-05-19
 	)}
 
 #define	May4.html()
@@ -94,6 +97,9 @@
 			/images/20030504/Wilson12.jpg$$
 			/images/20030504/Wilson13.jpg$$
 			/images/20030504/Wilson14.jpg$$
+		,
+		posters=/images/20030504/20030504_poster.jpg$$
+		    ;;;;2004-05-19
 	)}
 
 #define	Apr11.html()
@@ -261,6 +267,9 @@
 			through the P.A.
 			It's Mister Noel Coward, and he's singing: "Don't let's be beastly to the Germans..."
 		)}
+		,
+		posters=/images/20030419/20030419_poster.jpg$$
+		    ;;;;2017-02-24
 	)}
 
 #define Jun11_2100.html()
@@ -328,6 +337,8 @@
 			The Stone
 			<br>xxx
 		)},
+		posters=/images/20030611/20030611_poster.jpg$$
+		    ;;;;2004-05-19
 	)}
 
 #define Jun24.html()
@@ -711,6 +722,9 @@
 		live version of Volga Olga. We signed the guest book and headed off to party all night. On the way home I ran into a      
 		man who had come from Australia!    
 		)}
+		,
+		posters=/images/20030906/20030906_poster.jpg$$
+		    ;;;;2017-06-01
 	)}
 
 #define	Oct3.html()
@@ -831,6 +845,9 @@
 			/images/20031016/Pat_cargo.jpg$$
 			/images/20031016/wilson_cargo.jpg$$
 			Mark Cotton;;Mark.Cotton@travisperkins.co.uk
+		,
+		posters=/images/20031016/20031016_poster.jpg$$
+		    ;;;;2017-03-25
 	)}
 
 #define	Nov5_2115.html()
@@ -939,6 +956,9 @@
 			/images/20031224/HeadsOfState.jpg$$
 			/images/20031224/PatUsesTeleToCaptureSaddam.jpg$$
 			Mark Cotton;;Mark.Cotton@travisperkins.co.uk
+		,
+		posters=/images/20031224/20031224_poster.jpg$$
+		    ;;;;2017-03-25
 	)}
 
 #define	Nov7.html()

@@ -24,6 +24,9 @@
 			9:00 o'clock in the evening. I'm supporting an act called Sheepy, which Alastair tells me is really good.      
 			It's a free show.
 		)}
+		,
+		posters=/images/20150220/20150220_poster.jpg$$
+		    ;;;;2015-02-17
 	)}
 
 #define	Mar21_2000.html()
@@ -34,6 +37,9 @@
 		notes=${literalizeCommas(
 			THE JAZZ BUTCHER AND HIS GENTLEMAN ADVENTURERS 
 		)}
+		,
+		posters=/images/20150321/20150321_poster.jpg$$
+		    ;;;;2017-02-16
 	)}
 
 #define	Mar27_2000.html()
@@ -73,6 +79,9 @@
 			/images/20150327/20150327_vulpe_port2.jpg$$
 			/images/20150327/20150327_vulpe_port3.jpg$$
 			Anna Vulpe
+		,
+		posters=/images/20150327/20150327_poster.jpg$$
+		    ;;;;2015-03-12
 	)}
 
 #define	Apr17_1200.html()
@@ -142,6 +151,9 @@
 				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas.jpg$$
 				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-Valencia.jpg$$
 				Juan Carlos Pestano;;http://www.litelestudio.com
+		,
+		posters=/images/20150417/20150417_poster.jpg$$
+		    ;;;;2015-02-23
 	)}
 
 
@@ -169,6 +181,9 @@
 		photosets= /images/20150612/20150612_cunningham_gig1.jpg$$
 			/images/20150612/20150612_cunningham_gig2.jpg$$
 			Sean Michael Cunningham
+		,
+		posters=/images/20150612/20150612_poster.jpg$$
+		    ;;;;2015-06-18
 	)}
 
 #define	Jun19.html()
@@ -179,7 +194,10 @@
 		photosets= /images/20150619/20150619_leighton_gig.jpg$$
 			Leighton Bobby Cousins
 		,posters=/images/20150619/20150619_poster.jpg$$
+			;;;;2015-05-15
+			---
 			/images/20150619/20150619_poster2.jpg$$
+			;;;;2015-05-15
 	)}
 
 #define	Jun20.html()
@@ -194,6 +212,9 @@
 		---
 			/images/20150620/20150620_steve_1.jpg$$
 			${garofalo}
+		,
+		posters=/images/20150620/20150620_poster.jpg$$
+		    ;;;;2015-05-15
 	)}
 
 #define	Jun21.html()
@@ -203,6 +224,9 @@
 		)},
 		photosets= /images/20150621/20150621_leighton_gig.jpg$$
 			Leighton Bobby Cousins
+		,
+		posters=/images/20150621/20150621_poster.jpg$$
+		    ;;;;2015-05-15
 	)}
 
 #define	Jun23.html()
@@ -212,6 +236,9 @@
 		)},
 		photosets= /images/20150623/20150623_leighton_gig.jpg$$
 			Leighton Bobby Cousins
+		,
+		posters=/images/20150623/20150623_poster.jpg$$
+		    ;;;;2015-05-15
 	)}
 
 #define	Jun26.html()
@@ -219,6 +246,8 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
+		posters=/images/20150626/20150626_poster.jpg$$
+		    ;;;;2015-05-15
 	)}
 
 #define	Jun27.html()
@@ -231,7 +260,10 @@
 		,
 		setlists=
 			/images/20150627/20150627_vulpe.jpg$$
-			Anne Vulpe
+			Anne Vulpe;;;;2017-07-07
+		,
+		posters=/images/20150627/20150627_poster.jpg$$
+		    ;;;;2015-05-24
 	)}
 
 #define	Jun28.html()
@@ -260,13 +292,14 @@
 		---
 			/images/20150829/20150829_playing.jpg$$
 			\@DGee3;;https://twitter.com/DGee3
+		,
+		posters=/images/20150829/20150829_poster.jpg$$
+		    ;;;;2015-08-30
 	)}
 
 #define	Sep22_2000.html()
 	${gigHeader(
-		who=${literalizeCommas(
-			${solo}
-		)},
+		who=${literalizeCommas( ${solo})},
 		photosets= /images/20150922/20150922_nicholls_pat_martin.jpg$$
 			James Nicholls
 		---
@@ -286,13 +319,16 @@
 		---
 			/images/20150922/20150922_william_backstage.jpg;;${literalizeCommas(Going through the archives and finding the few pictures I’ve taken of Fishy over the years… and I like this from The Moth Club ‘dressing room’ 2015)}$$
 			Mr Paul Williams;;https://twitter.com/MrPaulWilliams;;2021-12-12
+		,
+		posters=/images/20150922/20150922_poster.jpg$$
+		    ;;;;2015-09-07
 	)}
 
 #define	Oct10_2000.html()
 	${gigHeader(
-		who=${literalizeCommas(
-			${solo}
-		)},
+		who=${literalizeCommas( ${solo})},
+		posters=/images/20151010/20151010_poster.jpg$$
+		    ;;;;2015-09-07
 	)}
 
 #define	Dec11_1900.html()
@@ -311,6 +347,9 @@
 		---
 			/images/20151211/20151211_kuenzler_group.jpg$$
 			\@HPKuenzler;;https://twitter.com/HPKuenzler
+		,
+		posters=/images/20151211/20151211_poster.jpg$$
+		    ;;;;2016-11-20
 	)}
 
 #define	Dec12.html()
@@ -330,6 +369,9 @@
 			/images/20151212/20151212_street_3.jpg$$
 			/images/20151212/20151212_street_4.jpg$$
 			Michael Street
+		,
+		posters=/images/20151212/20151212_poster.jpg$$
+		    ;;;;2015-10-13
 	)}
 
 #define	Dec13.html()
@@ -346,6 +388,9 @@
 			/images/20151213/20151213_gray_simon.jpg;;Simon$$
 			/images/20151213/20151213_gray_steve.jpg;;Steve$$
 			Carolyn Gray
+		,
+		posters=/images/20151213/20151213_poster.jpg$$
+		    ;;;;2015-10-22
 	)}
 
 #define	Dec26.html()

@@ -160,7 +160,10 @@
 		)},
 		tickets=
 			/images/19950913/19950913_ticket.jpg$$
-			Guillaume
+			Paul Guillaume;;;;2017-03-11
+		,
+		posters=/images/19950913/19950913_poster.jpg$$
+		    Pierre Guillaume;;;;2017-03-29
 	)}
 
 #define	Dec20.html()
@@ -259,6 +262,9 @@
 			Baubles,
 		)}$$
 			Ed Carter
+		,
+		posters=/images/19951221/19951221_poster.jpg$$
+		    Pierre Guillaume;;;;2017-03-29
 	)}
 
 #define	page_requested	${${page}()}

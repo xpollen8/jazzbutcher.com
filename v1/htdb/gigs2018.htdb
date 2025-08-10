@@ -99,6 +99,9 @@
 		/images/20180301/20180301_arcane93_13.jpg$$
 		/images/20180301/20180301_arcane93_14.jpg$$
 		Matt Condon;;https://twitter.com/arcane93
+		,
+		posters=/images/20180301/20180301_poster.jpg$$
+		    ;;;;2017-12-19
 	)}
 
 #define	May24_2000.html()
@@ -122,6 +125,9 @@
 		/images/20180524/20180524_mcgrath_cnd5.jpg$$
 		/images/20180524/20180524_mcgrath_cnd6.jpg$$
 		Rachel McGrath
+		,
+		posters=/images/20180524/20180524_poster.jpg$$
+		    ;;;;2018-04-04
 	)}
 
 #define	May5_1930.html()
@@ -174,6 +180,9 @@
 		---
 		/images/20180527/20180527_arcane93_pat.jpg$$
 		Matt Condon;;https://twitter.com/arcane93
+		,
+		posters=/images/20180527/20180527_poster.jpg$$
+		    ;;;;2018-03-08
 	)}
 
 #define	Apr14_2000.html()
@@ -214,6 +223,9 @@
 		toby rose;;https://www.flickr.com/photos/129025072\@N04/43150287664
 		---
 		/images/20180804/20180804_pat.jpg$$
+		,
+		posters=/images/20180804/20180804_poster.jpg$$
+		    ;;;;2018-08-04
 	)}
 
 #define	Aug25_1900.html()
@@ -224,8 +236,11 @@
 		with=${literalizeCommas(${dj}, Mickey Greaney)},
 		notes=${literalizeCommas(Ex Bauhaus/ Love & Rockets star David J returns to London’s The Islington in August. Support from The Jazz Butcher and Micky Greaney at this lovely little London venue soon.)},
 		photosets=
-		/images/20180825/20180825_barker_group.jpg;;${literalizeCommas(${max}, ${barker}, ${dj})}$$
-		David E. Barker
+			/images/20180825/20180825_barker_group.jpg;;${literalizeCommas(${max}, ${barker}, ${dj})}$$
+			David E. Barker
+		,
+		posters=/images/20180825/20180825_poster.jpg$$
+		    ;;;;2018-08-19
 	)}
 
 #define	Nov8_1930.html()
@@ -266,6 +281,9 @@
 		---
 		/images/20181108/20181108_WraggStephan_pat.jpg$$
 		\@WraggStephan;;https://twitter.com/WraggStephan
+		,
+		posters=/images/20181108/20181108_poster.jpg$$
+		    ;;;;2018-11-04
 	)}
 
 #define	page_requested	${${page}()}

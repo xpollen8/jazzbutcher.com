@@ -23,7 +23,9 @@
 			Lots of classic old Spacemen stuff performed really well. As good a band as he's ever had, dare I say?
 			<p>
 			I received a surprisingly warm reception (cheering from the outset, demands for more, all that shit) and played...well, not as well as I'd hoped, but clearly well enough. Went down great and spent the rest of the evening drinking free beers.
-		)}
+		)},
+		posters=/images/20090227/20090227_poster.jpg$$
+		    ;;;;2009-02-03
 	)}
 
 #define	Mar2.html()
@@ -145,6 +147,8 @@
 			<p>
 			(I shall be doing an electric set)
 		)},
+		posters=/images/20090627/20090627_poster.jpg$$
+		    ;;;;2009-09-21
 	)}
 
 #define	Aug15.html()
@@ -156,6 +160,8 @@
 			Admission will be free, because we shall be making a film of the night. Expect Johnny P. and his lightshow, guest DJs and complete and
 			utter mayhem.
 		)},
+		posters=/images/20090815/20090815_poster.jpg$$
+		    ;;;;2017-02-25
 	)}
 
 #define	Aug16_2000.html()
@@ -176,6 +182,8 @@
 			<p>
 			Max Eider will also be in the house. Could be a good party night. 
 		)},
+		posters=/images/20090816/20090816_poster.jpg$$
+		    ;;;;2009-08-06
 	)}
 
 #define	Aug23_2030.html()
@@ -208,6 +216,7 @@
 		${coonce}
 		,
 		setlists= /images/20091010/20091010_setlist.jpg$$
+			;;;;2017-04-28
 	)}
 
 #define	Oct11_2200.html()
@@ -232,8 +241,8 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${hask}
 		)},
-		pat=${literalizeCommas(
-		)},
+		posters=/images/20091011/20091011_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Oct13_2030.html()

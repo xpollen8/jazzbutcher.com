@@ -1192,6 +1192,8 @@
 			Roadmender next, a nice big room where we shall have films as well as lights. The day after that we play a party in Wales.
 			In October, God help us, we're playing at somebody's wedding. But then it's time to go to London.
 		)},
+		posters=/images/20020825/20020825_poster.jpg$$
+		    ;;;;2017-02-24
 	)}
 
 #define	Sep20.html()
@@ -1251,6 +1253,8 @@
 			<p>
 			We pass a pleasant hour or so in the Bradlaugh before taking off. Kath is going home for some long-overdue rest. Russ and Curt also head for home. The rest of us have a brief after-show back at Shakespeare Mansions. Mindful of our gig tomorrow, we turn in around four o'clock.
 		)},
+		posters=/images/20020920/20020920_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Sep21.html()
@@ -1341,6 +1345,9 @@
 			/images/20020921/NoMates.jpg;;${literalizeCommas(No Mates)}$$
 			/images/20020921/SteveFred.jpg;;${literalizeCommas(${steve_gordon} and Fred)}$$
 			/images/20020921/CurtHeid.jpg;;${literalizeCommas(${curt}'s painted head)}$$
+		,
+		posters=/images/20020921/20020921_poster.jpg$$
+		    ;;;;2004-05-19
 	)}
 
 #define	Oct12.html()
@@ -1378,6 +1385,8 @@
 			<p>
 			Dark Agenda - do you need an explanation?
 		)},
+		posters=/images/20021012/20021012_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Oct26.html()
@@ -1407,6 +1416,8 @@
 		)},
 		pat=${literalizeCommas(
 		)},
+		posters=/images/20021208/20021208_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Dec27.html()

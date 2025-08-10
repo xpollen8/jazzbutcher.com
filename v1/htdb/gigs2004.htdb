@@ -149,6 +149,9 @@
 			and get some of this to the site before too long. But this one is particularly scary, coz E-Man
 			is centre stage. Eek! How did that occur?)
 		)}
+		,
+		posters=/images/20040213/20040213_poster.jpg$$
+		    ;;;;2004-05-19
 	)}
 
 #define Feb26.html()
@@ -551,6 +554,8 @@
 			/images/20040228/LabourClub3.jpg$$
 			/images/20040228/PatL-Club.jpg$$
 		,
+		posters=/images/20040228/20040228_poster.jpg$$
+		    ;;;;2017-03-25
 	)}
 
 #define	Mar5.html()
@@ -691,6 +696,8 @@
 			Another Wilson gig for the calendar. The gig with Applecraft went so well for us that the Labour Club have
 			asked us to return and play for them again. Happy to oblige...
 		)},
+		posters=/images/20040417/20040417_poster.jpg$$
+		    ;;;;2017-03-25
 	)}
 
 #define Apr30_1800.html()
@@ -890,6 +897,8 @@
 			/images/20040504/May4pub.jpg$$
 			/images/20040504/May4Bot.jpg$$
 		,
+		posters=/images/20040504/20040504_poster.jpg$$
+		    ;;;;2004-05-19
 	)}
 
 #define	May7.html()
@@ -956,6 +965,9 @@
 			western swing and a singer-songwriter from the same gang that brought you Dave
 			Kusworth. Yes, it's free, of course.
 		)}
+		,
+		posters=/images/20040507/20040507_poster.jpg$$
+		    ;;;;2004-05-12
 	)}
 
 #define	May9.html()
@@ -988,6 +1000,9 @@
 			<p>
 			11 May 2004
 		)}
+		,
+		posters=/images/20040509/20040509_poster.jpg$$
+		    ;;;;2004-05-12
 	)}
 
 #define	May29.html()
@@ -1116,6 +1131,8 @@
 			arrival of The Drummer brought us all back to our senses and we got on with the drinking and the smoking and
 			the talking rubbish. Brilliant. Trebles all round.
 		)},
+		posters=/images/20040604/20040604_poster.jpg$$
+		    ;;;;2004-05-26
 	)}
 
 #define Jun6_1245.html()
@@ -1252,6 +1269,8 @@
 			Alarmingly, we shall be on stage at a quarter to one in the afternoon.
 			That is...in daylight...
 		)},
+		posters=/images/20040606/20040606_poster.jpg$$
+		    ;;;;2017-02-24
 	)}
 
 #define	Jun20.html()
@@ -1417,6 +1436,8 @@
 #define Jul25.html()
 	${gigHeader(
 		cost=free,
+		posters=/images/20040725/20040725_poster.jpg$$
+		    ;;;;2004-07-04
 	)}
 
 #define	Aug6.html()
@@ -1525,6 +1546,9 @@
 			The Echo Chamber. Damn it, I'm living my life for one single night each month - but at least that night is
 			Masters of Budvar.
 		)}
+		,
+		posters=/images/20040806/20040806_poster.jpg$$
+		    ;;;;2004-07-15
 	)}
 
 #define	Sep3.html()
@@ -1647,6 +1671,9 @@
 			<p>
 			Don't miss it, now.
 		)}
+		,
+		posters=/images/20040903/20040903_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define Sep12_1600.html()
@@ -1752,6 +1779,8 @@
 			<p>Cricket for all knockout trophy 2004
 			Wilson will be playing in The Ken Turner Room.
 		)},
+		posters=/images/20040912/20040912_poster.jpg$$
+		    ;;;;2004-09-07
 	)}
 
 #define Sep25.html()
@@ -1877,6 +1906,9 @@
 		,
 		photosets= /images/20041001/blue.jpg$$
 			/images/20041001/RodGerard.jpg$$
+		,
+		posters=/images/20041001/20041001_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Oct22.html()
@@ -1916,6 +1948,9 @@
 			<p>
 			Roll on November 5th...
 		)}
+		,
+		posters=/images/20041022/20041022_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Nov5.html()
@@ -1955,6 +1990,9 @@
 		)},
 		pat=${literalizeCommas(
 		)}
+		,
+		posters=/images/20041105/20041105_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Dec3.html()
@@ -2089,6 +2127,8 @@
 			Pat<br>
 			xxx
 		)},
+		posters=/images/20041203/20041203_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define Dec5.html()
@@ -2108,6 +2148,8 @@
 			they do that "we're not worthy" thing in the corridor outside the gents lavatory
 			afterwards...which is always nice...
 		)},
+		posters=/images/20041205/20041205_poster.jpg$$
+		    ;;;;2005-10-15
 	)}
 
 #define Dec11.html()
@@ -2133,6 +2175,8 @@
 			Pat<br>
 			xxx
 		)},
+		posters=/images/20041211/20041211_poster.jpg$$
+		    ;;;;2017-02-28
 	)}
 
 #define	Dec28.html()

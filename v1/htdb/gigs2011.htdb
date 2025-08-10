@@ -17,6 +17,8 @@
 			A follow-up to last year's successful "Beat Evening" featuring live music, DJs and readings.
 			Playing live: ${joe_woolley} and Pat Fish
 		)},
+		posters=/images/20110520/20110520_poster.jpg$$
+		    ;;;;2011-05-12
 	)}
 
 #define	May21.html()
@@ -34,6 +36,8 @@
 			<p>
 			Admission free!
 		)},
+		posters=/images/20110528/20110528_poster.jpg$$
+		    ;;;;2011-04-27
 	)}
 
 #define	Jun4_2200.html()
@@ -113,6 +117,8 @@
 		notes=${literalizeCommas(
 			Revolver DJ's playin SCARY SOUNDS
 		)},
+		posters=/images/20111029/20111029_poster.jpg$$
+		    ;;;;2011-10-31
 	)}
 
 #define	page_requested	${${page}()}

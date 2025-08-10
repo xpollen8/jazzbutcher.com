@@ -261,7 +261,9 @@
 		)},
 		notes=${literalizeCommas(
 			This month our headliner, from San Gabriel, California, is Steven Wilson, known to his many admirers as PLASTICSOUL. A classic songwriter in the vein of John Lennon or Neil Young, Wilson is possessed of an awesome voice and enormous talent. Support and superstar DJ to be confirmed, so check back later for more Budvar thrills.
-		)}
+		)},
+		posters=/images/20070601/20070601_poster.jpg$$
+		    ;;;;2017-04-28
 	)}
 
 #define	Jun24.html()
@@ -1005,7 +1007,9 @@
 			style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P>
 			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN
 			style="FONT-SIZE: 8pt; FONT-FAMILY: Arial"><o:p>&nbsp;</o:p></SPAN></P></FONT></DIV>
-		)}
+		)},
+		posters=/images/20071005/20071005_poster.jpg$$
+		    ;;;;2017-04-28
 	)}
 
 #define	Oct24.html()
@@ -1215,7 +1219,9 @@
 			BR or Dockland Light Railway station: Lewisham. Buses: 185, 178, 261, 321, 122, 273, 202.
 			Wilson have 50 tickets for this event, going at the stupidly low price of £6:00 each. Available from the band. We'll be setting up
 			an online service within the week. More on that as it comes up. Meanwhile, feel free to contact us for tickets.
-		)}
+		)},
+		posters=/images/20071222/20071222_poster.jpg$$
+		    ;;;;2007-11-21
 	)}
 
 #define	page_requested	${${page}()}

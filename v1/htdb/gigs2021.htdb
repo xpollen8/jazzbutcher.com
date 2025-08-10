@@ -1,61 +1,51 @@
 #define	Feb28.html()
 	${gigHeader(
 		eventweb=https://www.facebook.com/pat.fish.7/videos/10215577990601234/,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-		)},
+		who=${literalizeCommas( ${pat})},
 		photosets=
 		   /images/20210228/20210228_paypal.jpg$$
 		   /images/20210228/20210228_LittleMu.jpg$$
 		   /images/20210228/20210228_CatCard1.jpg$$
 		   /images/20210228/20210228_CatCard2.jpg$$
 		   David Whittemore
-		,setlists=
+		,
+		setlists=
 			/images/20210228/20210228_setlist.jpg$$
-			David Whittemore
+			David Whittemore;;;;2021-02-28
+		,
+		posters=/images/20210228/20210228_poster.jpg$$
+		    ;;;;2021-02-27
 	)}
 
 #define	Apr18_2200.html()
 	${gigHeader(
 		eventweb=https://www.facebook.com/pat.fish.7,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-		)},
+		who=${literalizeCommas( ${pat})},
 		photosets=
 		   /images/20210418/20210418_davies.jpg$$
 		   Jim Davies
 		   ---
 		   /images/20210418/20210418_sumishta.jpg$$
 		   Sumishta Brahm
-		,setlists=
+		,
+		posters=/images/20210418/20210418_poster.jpg$$
+		    ;;;;2021-04-14
 	)}
 
 #define	Jun6_2200.html()
 	${gigHeader(
 		eventweb=https://www.facebook.com/pat.fish.7,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-		)},
-		photosets=
-		,setlists=
+		who=${literalizeCommas( ${pat})},
+		posters=/images/20210606/20210606_poster.jpg$$
+		    ;;;;2021-06-06
 	)}
 
 #define	Jul25_2200.html()
 	${gigHeader(
 		eventweb=https://www.facebook.com/pat.fish.7,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-		)},
-		photosets=
-		,setlists=
+		who=${literalizeCommas( ${pat})},
+		posters=/images/20210725/20210725_poster.jpg$$
+		    ;;;;2021-07-20
 	)}
 
 #define	Aug20_1800.html()
@@ -72,21 +62,19 @@
 		   ---
 		   /images/20210820/20210820_cath.jpg;;$$
 		   Cath Aubergin
-		,setlists=
+		,
+		posters=/images/20210820/20210820_poster.jpg$$
+		    ;;;;2021-08-14
 	)}
 
 #define	Aug21_1900.html()
 	${gigHeader(
 #		eventweb=https://www.skiddle.com/whats-on/Preston/The-Continental/Preston-Pop-Fest-/35794204/,
 		cost=free,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-		Blow-Up, Bedside Manners
-		)},
-		photosets=
-		,setlists=
+		who=${literalizeCommas( ${pat})},
+		with=${literalizeCommas( Blow-Up, Bedside Manners)},
+		posters=/images/20210821/20210821_poster.jpg$$
+		    ;;;;2021-08-21
 	)}
 
 # CANCELLED#define	Oct3_2100.html()
@@ -135,7 +123,10 @@
 		   /images/20211127/20211127_heidiberry.jpg;;${pete}\, ${sumishta}\, Tim Keegan\, Heidi Berry\, John Silver\, Simon Mawby$$
 		   ${sumishta};;;;2021-11-28
 		,setlists=
-			/images/20211127/20211127_setlist.jpg$$
+			;;;;2021-11-28
+		,
+		posters=/images/20211127/20211127_poster.jpg$$
+		    ;;;;2021-09-21
 	)}
 
 #define	page_requested	${${page}()}

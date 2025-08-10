@@ -22,20 +22,18 @@
 		<p>
 		Helen McCookerybook was a John Peel favourite through the '80s and '90s, singing and playing bass in Brighton outsider indiepop/punk bands Jody and the Hooligans, The Smartees and The Chefs before forming her own sumptuous, country-inflected Helen and the Horns. She has more recently helped write women back into the official history of punk with her book 'The Lost Women Of Rock: Female Musicians Of The Punk Era', which has interviews with The Mo-dettes, The Slits and Dolly Mixture amongst others. Helen's songs are beacons of outside of everything lyricism, and her set shall consist of songs from her new LP 'The Sea' and classics of yore.
 		)},
-		who=${literalizeCommas(
-		${pat}
-		)},
+		who=${literalizeCommas( ${pat})},
+		posters=/images/20190330/20190330_poster.jpg$$
+		    ;;;;2019-01-07
 	)}
 
 #define	Feb21_2100.html()
 	${gigHeader(
 		eventweb=https://facebook.com/colinhennymusic,
-		notes=${literalizeCommas(
-			Facebook Live broadcast
-		)},
-		who=${literalizeCommas(
-			${pat}, Colin Henney
-		)},
+		notes=${literalizeCommas( Facebook Live broadcast)},
+		who=${literalizeCommas( ${pat}, Colin Henney)},
+		posters=/images/20190221/20190221_poster.jpg$$
+		    ;;;;2019-02-23
 	)}
 
 #define	Apr6_2230.html()
@@ -57,7 +55,10 @@
 		photosets=
 			/images/20190406/20190406_basu_1.jpg$$
 			/images/20190406/20190406_basu_2.jpg$$
-			Dhiren Basu,
+			Dhiren Basu
+		,
+		posters=/images/20190406/20190406_poster.jpg$$
+		    ;;;;2019-02-02
 	)}
 
 #define	Apr13.html()
@@ -130,29 +131,26 @@
 		photosets=
 			/images/20190622/20190622_johnnyp_pat_kusworth.jpg;;Dave Kusworth\, ${pat}$$
 			Johnny P;;https://twitter.com/johnnyp_p
+		,
+		posters=/images/20190622/20190622_poster.jpg$$
+		    ;;;;2019-06-17
 	)}
 
 #define	Jul13_2000.html()
 	${gigHeader(
 		cost=free,
 		phone=+44 1604 631752,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-			DJ Alex Novak
-		)}
+		who=${literalizeCommas( ${pat})},
+		with=${literalizeCommas( DJ Alex Novak)},
+		posters=/images/20190713/20190713_poster.jpg$$
+		    ;;;;2025-07-16
 	)}
 
 #define	Aug3_2100.html()
 	${gigHeader(
 		cost=&pound;5,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-			Micky Greaney
-		)},
+		who=${literalizeCommas( ${pat})},
+		with=${literalizeCommas( Micky Greaney)},
 		photosets=
 			/images/20190803/20190803_brooksbank_pat1.jpg$$
 			/images/20190803/20190803_brooksbank_pat2.jpg$$
@@ -160,44 +158,38 @@
 			Andrew Brooksbank,
 		setlists=
 			/images/20190803/20190803_setlist.jpg$$
-			Andrew Brooksbank
+			Andrew Brooksbank;;;;2019-08-04
+		,
+		posters=/images/20190803/20190803_poster.jpg$$
+		    Andrew Brooksbank;;;;2024-11-21
 	)}
 
 #define	Aug4.html()
 	${gigHeader(
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-			Micky Greaney
-		)},
+		who=${literalizeCommas( ${pat})},
+		with=${literalizeCommas( Micky Greaney)},
 	)}
 
 #define	Aug17.html()
 	${gigHeader(
 		blurb=King Genius Festival,
 		eventweb=https://pomfretarms.co.uk,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-			Micky Greaney
-		)},
+		who=${literalizeCommas( ${pat})},
+		with=${literalizeCommas( Micky Greaney)},
 		photosets=
 			/images/20190817/20190817_cousins.jpg$$
-			Graham Cousins,
+			Graham Cousins
+		,
+		posters=/images/20190817/20190817_poster.jpg$$
+		    ;;;;2023-11-20
 	)}
 
 #define	Sep28_1900.html()
 	${gigHeader(
 		cost=15 Euro,
 		ticketweb=https://www.billetweb.fr/pat-fish-tim-keegan,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-			Tim Keegan
-		)},
+		who=${literalizeCommas( ${pat})},
+		with=${literalizeCommas( Tim Keegan)},
 		pat=${literalizeCommas(
 			Well, that went rather well, I think. Tim was brilliant, of course. He and I were royally entertained
 			by Jean-michel Dufour, fed, watered and chauffered around by Betty Dufour, while Philippe Dufour
@@ -267,6 +259,9 @@
 			---
 			/images/20190928/20190928_magicrpm_pat.jpg;;"Yes I’m pretty high"$$
 			magicrpm;;https://twitter.com/magicrpm/status/1178050161983021067
+		,
+		posters=/images/20190928/20190928_poster.jpg$$
+		    ;;;;2019-09-21
 	)}
 
 #define	Oct5.html()
@@ -283,9 +278,7 @@
 	${gigHeader(
 		cost=&pound;9,
 		ticketweb=https://www.wegottickets.com/event/478651,
-		who=${literalizeCommas(
-			${pat}
-		)},
+		who=${literalizeCommas( ${pat})},
 		pat=${literalizeCommas(
 			This gig reminded me very much of my very first proper solo shows, ${linkInternal(http://jazzbutcher.com/gigs/1989/Apr6.html, thirty years ago at Le Troupeau in
 			Paris)}, not least because of the always reassuring presence of Simon Phillips, who took these
@@ -303,6 +296,9 @@
 			/images/20191011/20191011_simon_1.jpg$$
 			/images/20191011/20191011_simon_2.jpg$$
 			Simon Phillips
+		,
+		posters=/images/20191011/20191011_poster.jpg$$
+		    ;;;;2019-09-08
 	)}
 
 #define	Oct24_1930.html()
@@ -347,12 +343,8 @@
 		cost=&pound;22,
 		venueweb=http://www.manchesteracademy.net,
 		ticketweb=https://dice.fm/event/kwy89-david-j-haskins-missives-and-miles-tour-2019-26th-oct-moth-club-london-tickets,
-		who=${literalizeCommas(
-			${pat}
-		)},
-		with=${literalizeCommas(
-			${dj}
-		)},
+		who=${literalizeCommas( ${pat})},
+		with=${literalizeCommas( ${dj})},
 		photosets=
 			/images/20191026/20191026_pat.jpg$$
 		---
@@ -369,6 +361,9 @@
 			/images/20191026/20191026_barker_MClubDBChurchill.jpg$$
 			/images/20191026/20191026_barker_MClubDBEiderFish.jpg;;${literalizeCommas(${max},${barker},${pat})}$$
 			David E. Barker
+		,
+		posters=/images/20191026/20191026_poster.jpg$$
+		    ;;;;2019-09-23
 	)}
 
 #define	Nov9_1930.html()
@@ -403,6 +398,9 @@
 			---
 			/images/20191109/20191109_uncredited_pat_sato.jpg;;${literalizeCommas(${pat}, Kyoko Sato)}$$
 			/images/20191109/20191109_uncredited_rolo_proctor.jpg;;${literalizeCommas(${rolo}, ${proctor})}$$
+		,
+		posters=/images/20191109/20191109_poster.jpg$$
+		    ;;;;2019-08-30
 	)}
 
 #define	Nov30_1900.html()
@@ -420,6 +418,9 @@
 		Trap are also on the bill and a "special guest" is promised. I strongly suspect that I will be opening
 		this show, so come early and buy me drinks after I'm done until it's time to go home. Sorted. 
 		)}
+		,
+		posters=/images/20191130/20191130_poster.jpg$$
+		    ;;;;2019-09-21
 	)}
 
 #define	page_requested	${${page}()}

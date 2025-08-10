@@ -2,6 +2,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat} )},
+		posters=/images/19920109/19920109_poster.jpg$$
+		    ;;;;2025-07-14
 
 	)}
 
@@ -98,7 +100,7 @@
 		,
 		tickets=
 			/images/19920426/19920426_ticket.jpg$$
-			David Whittemore
+			David Whittemore;;;;2017-03-20
 	)}
 
 #define	Apr28.html()
@@ -158,6 +160,9 @@
 		with=${literalizeCommas(Jeff Buckley, Gary Lucas)},
 		photosets= /images/19920502/19920502_genesolomon_tablecloth.jpg;;${literalizeCommas(Pat had decorated the tables in the club)}$$
 			Gene Solomon
+		,
+		posters=/images/19920502/19920502_poster.jpg$$
+		    Gene Solomon;;;;2019-03-10
 
 	)}
 
@@ -170,6 +175,9 @@
 		with=${literalizeCommas(Jeff Buckley, Gary Lucas)},
 		photosets= /images/19920502/19920502_genesolomon_tablecloth.jpg;;${literalizeCommas(Pat had decorated the tables in the club)}$$
 			Gene Solomon
+		,
+		posters=/images/19920502/19920502_poster.jpg$$
+		    Gene Solomon;;;;2019-03-10
 
 	)}
 
@@ -194,6 +202,7 @@
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 	setlists=
 		/images/19920505/19920505_setlist.jpg$$
+		;;;;2013-06-22
 	,
 	notes=${literalizeCommas( vocals buried. poor bass.  geetars in yer face. good show, though.
 	)},
@@ -360,7 +369,7 @@
 		,
 		tickets=
 			/images/19920523/19920523_ticket.jpg$$
-			Greg Pohl
+			Greg Pohl;;;;2021-11-20
 
 	)}
 
@@ -430,6 +439,7 @@
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		tickets=
 			/images/19920529/19920529_ticket.jpg$$
+			;;;;2004-05-12
 
 	)}
 
@@ -522,6 +532,7 @@
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		tickets=
 			/images/19920606/19920606_ticket.jpg$$
+			;;;;2013-06-22
 
 	)}
 

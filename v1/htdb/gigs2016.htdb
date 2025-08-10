@@ -10,6 +10,9 @@
 		I've just found this, unfortunately, the hum from the PA and the loud television downstairs, don't help the audio. The stereo on a stick that was serving as a PA was woefully inadequate, however. its yours to do with as you wish. This was a very low key gig with a new drummer. I recorded it on a Zoom H2 and i was a little too close to simon, oh well.
 		)}
 		${curt};;;;2021-12-17
+		,
+		posters=/images/20160603/20160603_poster.jpg$$
+		    ;;;;2016-05-16
 	)}
 
 #define	Jul13.html()
@@ -29,6 +32,9 @@
 		notes=${literalizeCommas(
 			BLITZ Festival
 		)}
+		,
+		posters=/images/20161112/20161112_poster.jpg$$
+		    ;;;;2017-01-07
 	)}
 
 #define	Nov13_2000.html()
@@ -36,6 +42,9 @@
 		notes=${literalizeCommas(
 			SBD Promotions
 		)}
+		,
+		posters=/images/20161113/20161113_poster.jpg$$
+		    ;;;;2017-01-07
 	)}
 
 #define	Dec18_1700.html()
@@ -55,6 +64,9 @@
 			All delivered without the aid of a PA system or any other amplification at all, but with the aid of a
 			warm, supportive audience. 
 		)}
+		,
+		posters=/images/20161218/20161218_poster.jpg$$
+		    ;;;;2016-11-15
 	)}
 
 #define	page_requested	${${page}()}

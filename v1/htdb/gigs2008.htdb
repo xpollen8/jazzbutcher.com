@@ -80,7 +80,9 @@
 			Dragons + Wilson + The Pepper Box &pound;6:00 - A Spiral Archive production.  
 			<p>
 			Dragons is the new band of Dave Francolini (Levitation/Dark Star)
-		)}
+		)},
+		posters=/images/20080226/20080226_poster.jpg$$
+		    ;;;;2008-01-21
 	)}
 
 #define	Mar7_2000.html()
@@ -164,6 +166,8 @@
 			<br>
 			So we hope...no, expect to see you there...<br>
 		)},
+		posters=/images/20080307/20080307_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Mar22.html()
@@ -171,6 +175,8 @@
 		cost=free,
 		who=${literalizeCommas(
 		)},
+		posters=/images/20080322/20080322_poster.jpg$$
+		    ;;;;2008-04-15
 	)}
 
 #define	Apr4.html()
@@ -196,34 +202,26 @@
 			<br>
 			And, as usual, this is all entirely free of charge.
 		)},
+		posters=/images/20080404/20080404_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Apr10.html()
 	${gigHeader(
 		ticketweb=http://www.wegottickets.com/event/23264,
 		cost=&pound;12:50,
-		who=${literalizeCommas(
-		)},
 		with=${literalizeCommas(
 			Jim Bob (Carter USM)
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)},
+		posters=/images/20080410/20080410_poster.jpg$$
+		    ;;;;2009-09-21
 	)}
 
 #define	Apr27.html()
 	${gigHeader(
 		cost=free,
-		who=${literalizeCommas(
-		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)},
+		posters=/images/20080427/20080427_poster.jpg$$
+		    ;;;;2008-04-15
 	)}
 
 #define	May1.html()
@@ -252,6 +250,8 @@
 			<br>
 			It's all free and it's on Friday 2nd May. The Labour Club is friendly, reasonably priced and offers good facilities for smokers. Masters of Budvar. We do it because we love it.<br>
 		)},
+		posters=/images/20080502/20080502_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	May31.html()
@@ -274,7 +274,9 @@
 		notes=${literalizeCommas(
 			We're presenting "an evening with Wilson" on our own turf at our own night with our favourite PA and a supertanker full of Ceske Budejovice's finest.
 			Full electric set - Wilson Son Et Lumiere - Wilson DJs - Acoustic support sets from various members of the band. Rumours that MC Bottman Bott will be performing balloon animal-related entertainments can neither be confirmed, nor yet plausibly denied.
-		)}
+		)},
+		posters=/images/20080606/20080606_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Jun13.html()
@@ -291,9 +293,8 @@
 			Bibliotek, Castilian Street, Northampton NN1<br>
 			3:00 admission
 		)},
-		pat=${literalizeCommas(
-		)},
 	)}
+
 #define	Jul4.html()
 	${gigHeader(
 		notes=${literalizeCommas(
@@ -356,6 +357,8 @@
 			<br>
 			There are pretty lights, friendly people and good vibrations radiating indiscriminately around the Labour Club. There are good facilities for smokers and now there is Budvar on draught. The music starts at around nine o'clock and the bar is open until midnight. You should most probably come down and have a really good time.<br>
 		)},
+		posters=/images/20080704/20080704_poster.jpg$$
+		    ;;;;2008-06-30
 	)}
 
 #define	Jul19_2030.html()
@@ -412,9 +415,10 @@
 			state-of-the-art lighting arrangements and doing our best to rock everybody in the kitchens of the Star of India, which
 			turn out to be right next door to the stage. We'll almost certainly do two sets here.
 		)},
-		pat=${literalizeCommas(
-		)},
+		posters=/images/20080726/20080726_poster.jpg$$
+		    ;;;;2008-06-30
 	)}
+
 #define	Aug1_2030.html()
 	${gigHeader(
 		notes=${literalizeCommas(
@@ -464,6 +468,8 @@
 			Bar open until midnight <br>
 			Garden for smokers - but don't miss the bands... <br>
 		)},
+		posters=/images/20080801/20080801_poster.jpg$$
+		    ;;;;2008-07-24
 	)}
 
 #define	Aug9_1900.html()
@@ -535,6 +541,8 @@
 			<p>
 			As usual, admission is entirely free. 
 		)},
+		posters=/images/20080905/20080905_poster.jpg$$
+		    ;;;;2009-02-03
 	)}
 
 #define	Sep26.html()
@@ -549,9 +557,10 @@
 			The Racehorse, Abington Square, Northampton NN1<p>
 			Launch of Dirty Sweet's record label and club night.
 		)},
-		pat=${literalizeCommas(
-		)},
+		posters=/images/20080926/20080926_poster.jpg$$
+		    ;;;;2017-02-26
 	)}
+
 #define	Oct2_1900.html()
 	${gigHeader(
 		notes=${literalizeCommas(
@@ -606,7 +615,9 @@
 		notes=${literalizeCommas(
 			Wilson have a gig at The Roadmender in Northampton NN1 on Saturday 29th November.
 			Tickets are 3:00 in advance or 5:00 on the door.
-		)}
+		)},
+		posters=/images/20081129/20081129_poster.jpg$$
+		    ;;;;2017-02-25
 	)}
 
 #define	Dec18.html()

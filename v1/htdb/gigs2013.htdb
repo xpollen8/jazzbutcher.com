@@ -2,6 +2,9 @@
 	${gigHeader(
 		photosets= /images/20130126/20130126_pat1.jpg$$
 			/images/20130126/20130126_pat2.jpg$$
+		,
+		posters=/images/20130126/20130126_poster.jpg$$
+		    Pierre Guillaume;;;;2025-07-21
 	)}
 
 #define	Feb14_2030.html()
@@ -129,10 +132,10 @@
 	,
 	setlists=
 			/images/20130615/20130615_ruiz_setlist.jpg$$
-			Jim Ruiz;;http://chickfactor.com/2013/06/the-jazz-butcher-live-by-jim-ruiz/
+			Jim Ruiz;;http://chickfactor.com/2013/06/the-jazz-butcher-live-by-jim-ruiz/;;2013-06-23
 	---
 			/images/20130615/20130615_arcane93_setlist.jpg$$
-				Matt Condon;;http://twitter.com/arcane93
+				Matt Condon;;http://twitter.com/arcane93;;2013-06-16
 	,
 	)}
 

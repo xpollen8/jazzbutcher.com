@@ -12,7 +12,7 @@
 		)}
 		,setlists=
 			/images/20000413/20000413_setlist.jpg$$
-			VerveNet@aol.com
+			VerveNet@aol.com;;;;2004-05-12
 	,
 	reviews=
 		${literalizeCommas(
@@ -326,7 +326,7 @@
 		,
 		setlists=
 			/images/20000417/20000417_setlist.jpg$$
-			Robert Gilroy;;rgilroy@mail.bright.net
+			Robert Gilroy;;rgilroy@mail.bright.net;;2014-11-28
 		,
 		photosets=/images/20000417/jbc_pitt1.jpg$$
 			/images/20000417/max_pitt.jpg$$
@@ -578,7 +578,7 @@
 			Mary;;mdec@lear.com
 		,
 		tickets=/images/20000419/20000419_ticket.jpg$$
-		songinspace;;https://www.instagram.com/songinspace/
+		songinspace;;https://www.instagram.com/songinspace/;;2017-04-08
 	)}
 
 #define	Apr20.html()
@@ -701,6 +701,9 @@
 			Look after yerselves...
 		)}$$
 			Doc;;blueaero@yahoo.com
+		,
+		posters=/images/20000421/20000421_poster.jpg$$
+		    ;;;;2004-05-19
 	)}
 
 #define	Apr23.html()
@@ -747,7 +750,9 @@
 		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
-		)}
+		)},
+		posters=/images/20000426/20000426_poster.jpg$$
+		    Kevin Carroll;;;;2022-03-23
 	)}
 
 #define	Apr27.html()
@@ -799,6 +804,9 @@
 		photosets=/images/20000429/jbcwebcast.jpg$$
 			/images/20000429/fishy.jpg$$
 			David Whittemore
+		,
+		posters=/images/20000429/20000429_poster.jpg$$
+		    ;;;;2013-06-13
 	)}
 
 
@@ -875,6 +883,10 @@
 		Jennifer Hubler;;https://www.flickr.com/photos/jenhuber/albums/72177720298823758
 	,setlists=
 			/images/20000503/20000503_setlist.jpg$$
+			;;;;2016-04-18
+	,
+	posters=/images/20000503/20000503_poster.jpg$$
+	    ;;;;2004-05-19
 	)}
 
 #define	May4.html()
@@ -1655,6 +1667,9 @@
 			Sunday and said "you must be Ray from China."
 		)}$$
 			Ray;;rlkoke@public1.tpt.tj.cn
+		,
+		posters=/images/20000617/20000617_poster.jpg$$
+		    https://twitter.com/Mayumi3bi;;;;2023-06-02
 	)}
 
 #define	Jun18.html()
@@ -1766,6 +1781,9 @@
 			And I'm still grinning.
 		)}$$
 			Ray;;rlkoke@public1.tpt.tj.cn
+		,
+		posters=/images/20000618/20000618_poster.jpg$$
+		    https://twitter.com/Mayumi3bi;;;;2023-06-02
 	)}
 
 #define	Jun20.html()

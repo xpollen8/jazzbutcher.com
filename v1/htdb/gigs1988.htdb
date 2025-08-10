@@ -3,6 +3,8 @@
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
 		with=${literalizeCommas( The Jasmine Minks, Biff Bang Pow )},
+		posters=/images/19880111/19880111_poster.jpg$$
+			nothingelseon;;https://twitter.com/nothingelseon/status/1338016555993497600;;2020-12-13
 
 	)}
 
@@ -106,12 +108,12 @@
 		with=${literalizeCommas( The Jasmine Minks, Disco )},
 		tickets=
 			/images/19880229/19880229_ticket.jpg$$
-			Andrew Brooksbank
+			Andrew Brooksbank;;;;2017-05-05
 		,posters=
 			/images/19880229/19880229_poster.jpg$$
 			/images/19880229/19880229_poster2.jpg$$
 			/images/19880229/19880229_poster3.jpg$$
-			Andrew Brooksbank
+			Andrew Brooksbank;;;;2024-11-21
 		,photosets=
 			/images/19880229/19880229_JazzButcher_Leeds_Brooksbank1.jpg$$
 			/images/19880229/19880229_JazzButcher_Leeds_Brooksbank2.jpg$$
@@ -216,6 +218,11 @@
 		cost=DM18,
 		recording=${literalizeCommas( ${w}, ${q(5)}, ${p(C)})},
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		tickets=/images/19880314/19880314_ticket.jpg$$
+			;;;;2017-03-19
+		,
+		posters=/images/19880314/19880314_poster.jpg$$
+			;;;;2016-12-19
 
 	)}
 
@@ -223,12 +230,16 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880315/19880315_poster.jpg$$
+			;;;;2016-12-19
 	)}
 
 #define	Mar16.html()
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880316/19880316_poster.jpg$$
+			;;;;2016-12-19
 	)}
 
 #define	Mar17.html()
@@ -236,6 +247,8 @@
 
 		recording=${literalizeCommas( ${w}, ${q(5)}, ${p(B)})},
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880317/19880317_poster.jpg$$
+			;;;;2016-12-19
 	)}
 
 #define	Mar18.html()
@@ -243,30 +256,40 @@
 
 		recording=${literalizeCommas( ${w}, ${g(2)}, ${q(4)}, ${i(D)})},
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880318/19880318_poster.jpg$$
+			;;;;2016-12-19
 	)}
 
 #define	Mar19.html()
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880319/19880319_poster.jpg$$
+			;;;;2016-12-19
 	)}
 
 #define	Mar20.html()
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880320/19880320_poster.jpg$$
+			;;;;2016-12-19
 	)}
 
 #define	Mar21.html()
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880321/19880321_poster.jpg$$
+			;;;;2016-12-19
 	)}
 
 #define	Mar22.html()
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880322/19880322_poster.jpg$$
+			;;;;2016-12-19
 
 	)}
 
@@ -274,12 +297,13 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
-		with=${literalizeCommas(
-	M. Walking On The Water
-		)},
+		with=${literalizeCommas( M. Walking On The Water)},
 		tickets=
 			/images/19880323/19880323_ticket.jpg$$
 			Mark Knochen;;;;2025-07-22
+		,
+		posters=/images/19880323/19880323_poster.jpg$$
+			;;;;2016-12-19
 
 	)}
 
@@ -287,6 +311,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880324/19880324_poster.jpg$$
+			;;;;2016-12-19
 
 	)}
 
@@ -294,12 +320,19 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		tickets=/images/19880325/19880325_ticket.jpg$$
+			;;;;2021-10-12
+		,
+		posters=/images/19880325/19880325_poster.jpg$$
+			;;;;2016-12-19
 	)}
 
 #define	Mar27.html()
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880327/19880327_poster.jpg$$
+			;;;;2016-12-19
 
 	)}
 
@@ -307,6 +340,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880328/19880328_poster.jpg$$
+			;;;;2016-12-19
 
 	)}
 
@@ -353,8 +388,10 @@
 		with=${literalizeCommas(Marc Minelli)},
 		tickets=
 			/images/19880408/19880408_ticket.jpg$$
-			Pierre Guillaume
-
+			Pierre Guillaume;;;;2017-03-11
+		,
+		posters=/images/19880408/19880408_poster.jpg$$
+			Pierre Guillaume;;;;2017-03-29
 	)}
 
 #define	Apr9.html()
@@ -456,6 +493,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		posters=/images/19880602/19880602_poster.jpg$$
+			https://twitter.com/MHoganSays/status/1270094614813261824;;;;2020-06-09
 
 	)}
 
@@ -563,6 +602,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		posters=/images/19880615/19880615_poster.jpg$$
+			;;;;2023-09-21
 
 	)}
 
@@ -584,6 +625,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		posters=/images/19880618/19880618_poster.jpg$$
+			Greg Pohl;;;;2021-11-20
 
 	)}
 
@@ -598,6 +641,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		posters=/images/19880621/19880621_poster.jpg$$
+			;;;;2023-09-11
 
 	)}
 
@@ -605,6 +650,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		posters=/images/19880622/19880622_poster.jpg$$
+			;;;;2023-09-11
 
 	)}
 
@@ -612,6 +659,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		posters=/images/19880623/19880623_poster.jpg$$
+			;;;;2023-09-11
 
 	)}
 
@@ -620,8 +669,8 @@
 
 		cost=$7.95,
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
-		tickets=
-			/images/19880624/19880624_ticket.jpg
+		tickets=/images/19880624/19880624_ticket.jpg$$
+		;;;;2004-05-12
 	)}
 
 #define	Jun25.html()
@@ -666,6 +715,8 @@
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
 		with=${literalizeCommas( Alex Chilton
 		)},
+		tickets=/images/19880701/19880701_ticket.jpg$$
+		;;;;2021-10-07
 
 	)}
 
@@ -678,9 +729,14 @@
 		blurb=Doing It For The Kids,
 		tickets=
 			/images/19880807/19880807_ticket.jpg$$
-		,photosets=
+			;;;;2013-06-22
+		,
+		photosets=
 			/images/19880807/19880807_andybcfc2015_lineup.jpg$$
 			andybcfc2015;;https://www.instagram.com/andybcfc2015/
+		,
+		posters=/images/19880807/19880807_poster.jpg$$
+			;;;;2014-11-29
 
 	)}
 
@@ -688,6 +744,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		posters=/images/19880822/19880822_poster.jpg$$
+			nothingelseon;;https://twitter.com/nothingelseon/status/1388613677654319105;;2021-05-01
 
 	)}
 
@@ -730,8 +788,9 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
-		with=${literalizeCommas( Robyn Hitchcock
-		)},
+		with=${literalizeCommas( Robyn Hitchcock)},
+		posters=/images/19881006/19881006_poster.jpg$$
+			https://askingtree.com/gigs/246;;;;2023-01-22
 
 	)}
 
@@ -761,9 +820,9 @@
 
 		cost=&pound;3,
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
-		with=${literalizeCommas(
-			Spacemen 3, The Sun Carriage
-		)},
+		with=${literalizeCommas( Spacemen 3, The Sun Carriage)},
+		posters=/images/19881101/19881101_poster.jpg$$
+			https://twitter.com/spacemen3/status/784304225752784897;;;;2021-10-06
 
 	)}
 
@@ -817,6 +876,8 @@
 		with=${literalizeCommas(
 			Deaf Heights, Cajun Aces, The Thenes
 		)},
+		tickets=/images/19881216/19881216_ticket.jpg$$
+		;;;;2015-10-04
 
 	)}
 
@@ -824,9 +885,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, Ed Ball )},
-		setlists=
-			/images/19881221/19881221_notebook_setlist.jpg$$
-			Pat's notebooks
+		setlists=/images/19881221/19881221_notebook_setlist.jpg$$
+			Pat's notebooks;;;;2015-08-04
 	)}
 
 #define	page_requested	${${page}()}

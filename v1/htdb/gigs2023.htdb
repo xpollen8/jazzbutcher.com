@@ -36,6 +36,9 @@
 			---
 			/images/20230402/20230402_TimKeegan.jpg;;${literalizeCommas(Celebrating Pat Fish at The Lab tonight. Great vibes 😊 [Tim Keegan on stage])}$$
 			Mike Kenny;;https://twitter.com/mikeyblag;;2023-04-02
+		,
+		posters=/images/20230402/20230402_poster.jpg$$
+		    Patrik;;;;2023-02-11
 	)}
 
 #define	page_requested	${${page}()}

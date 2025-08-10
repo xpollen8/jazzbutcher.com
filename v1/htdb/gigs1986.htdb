@@ -127,6 +127,7 @@
 	a few days afterwards [4Mar1986]
 	)},
 		cassettes= /images/19860227/19860227_cassette.jpg$$
+		Fishy Mansions FMAC22;;;;2025-07-21,
 	)}
 
 #define	Feb28.html()
@@ -162,6 +163,7 @@
 #define	Mar4_2300.html()
 	${gigHeader(
 		cassettes= /images/19860304/19860304_cassette.jpg$$
+		Fishy Mansions FMAC22;;;;2025-07-21,
 	)}
 
 #define	Mar5.html()
@@ -176,8 +178,9 @@
 
 		recording=${literalizeCommas( ${w}, ${q(7)}, ${p(A)} )},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
-		pat=${literalizeCommas( well 'ard
-	)},
+		pat=${literalizeCommas( well 'ard)},
+		posters=/images/19860307/19860307_poster.jpg$$
+			;;;;2023-12-23
 
 	)}
 
@@ -187,6 +190,8 @@
 		phone=0296 622733,
 		cost=&pound;2:50,
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+		posters=/images/19860308/19860308_poster.jpg$$
+			nothingelseon;;https://twitter.com/nothingelseon/status/1301445254453760001;;2020-09-05
 
 	)}
 
@@ -195,6 +200,8 @@
 
 		recording=${literalizeCommas( ${w}, ${q(6)}, ${p(A)} )},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+		posters=/images/19860313/19860313_poster.jpg$$
+			nothingelseon;;https://twitter.com/nothingelseon/status/1302170870580826112;;2020-09-05
 
 	)}
 
@@ -213,15 +220,17 @@
 		tickets=
 			/images/19860321/19860321_ticket.jpg$$
 			ruse@cableinet.co.uk;;;;2004-02-13
+		,posters=/images/19860321/19860321_poster.jpg$$
+			nothingelseon;;https://twitter.com/nothingelseon/status/1302171936298954752;;2020-09-05
 	)}
 
 #define	Mar27.html()
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
-		with=${literalizeCommas(
-	Spacemen 3
-	)},
+		with=${literalizeCommas( Spacemen 3)},
+		posters=/images/19860327/19860327_poster.jpg$$
+			;;;;2015-08-03
 
 	)}
 
@@ -238,6 +247,8 @@
 		cost=&pound;4,
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		with=Rumble Fish,
+		posters=/images/19860404/19860404_poster.jpg$$
+			Pierre Guillaume;;;;2017-03-29
 
 	)}
 
@@ -277,8 +288,12 @@
 		with=${literalizeCommas( The Go-Betweens, Microdisney
 	)},
 	tickets=
-	/images/19860430/19860430_ticket.jpg
-
+		/images/19860430/19860430_ticket.jpg$$
+		;;;;2016-12-19,
+	posters=
+		/images/19860430/19860430_poster.jpg$$
+		;;;;2015-03-19
+		
 	)}
 
 #define	May3.html()
@@ -310,7 +325,9 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
-		with=${literalizeCommas(35th of May)}
+		with=${literalizeCommas(35th of May)},
+		posters=/images/19860523/19860523_poster.jpg$$
+			nothingelseon;;https://twitter.com/nothingelseon/status/1310122394309152769;;2020-09-27
 
 	)}
 
@@ -320,6 +337,8 @@
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		cost=$2.75,
 		phone=0296 622733,
+		posters=/images/19860531/19860531_poster.jpg$$
+			nothingelseon;;https://twitter.com/nothingelseon/status/1311579899614748672;;2020-10-01
 
 	)}
 
@@ -397,9 +416,10 @@
 	bootlegger=${literalizeCommas(${nancy})},
 		recording=${literalizeCommas( ${w}, ${q(7)}, ${i(B)}, ${g(1)} )},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
-	notes=${literalizeCommas(Nice audience recording.
-	)},
+		notes=${literalizeCommas(Nice audience recording.)},
 		with=${literalizeCommas( Christmas)},
+		posters=/images/19860721/19860721_poster.jpg$$
+			;;;;2023-09-11
 
 	)}
 
@@ -433,6 +453,8 @@
 	Radio broadcast, a little light on Max in the mix here and there.
 	Features Max's ${you} with a flute solo (!) by Pat.
 	)},
+		,setlists=/images/19860724/19860724_setlist.jpg$$
+			;;;;2023-08-22
 	)}
 
 #define	Jul25.html()
@@ -441,6 +463,8 @@
 		recording=${literalizeCommas( ${w}, ${q(5)}, ${p(B)} )},
 		notes=${literalizeCommas(Small room, appreciative crowd.)},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+		posters=/images/19860725/19860725_poster.jpg$$
+			;;;;2016-04-10
 
 	)}
 
@@ -448,10 +472,10 @@
 	${gigHeader(
 
 		recording=${literalizeCommas( ${w}, ${q(5)}, ${p(B)} )},
-		notes=${literalizeCommas(
-	The later, adult show--ie, you could buy a drink. !
-		)},
+		notes=${literalizeCommas( The later, adult show--ie, you could buy a drink. !)},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+		posters=/images/19860725/19860725_poster.jpg$$
+			;;;;2016-04-10
 	)}
 
 #define	Jul26.html()
@@ -459,7 +483,10 @@
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		posters=/images/19860726/19860726_poster.jpg$$
+			;;;;2004-05-12
+			---
 			/images/19860726/19860726_poster2.jpg$$
+			;;;;2004-05-12,
 
 	)}
 
@@ -489,13 +516,15 @@
 		)},
 		recording=${literalizeCommas( ${w}, ${q(9)}, ${p(A)} )},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
-	notes=${literalizeCommas(very nice room recording
-	)},
+		notes=${literalizeCommas(very nice room recording)},
 	tickets=
-			/images/19860731/19860731_ticket.jpg$$
-			baywatchbanks;;http://www.flickr.com/photos/baywatch-brimful/2846445759/
-		,photosets= /images/19860731/19860731_barker_band.jpg;;${literalizeCommas(The Jazz Butcher Conspiracy, Chicago, Cabaret Metro. The night Tom Waits turned up)}$$
-			David E. Barker;;https://twitter.com/glassmodern1/status/1450102200722669570;;2021-10-18
+		/images/19860731/19860731_ticket.jpg$$
+		baywatchbanks;;http://www.flickr.com/photos/baywatch-brimful/2846445759/;;2011-06-04,
+	photosets=
+		/images/19860731/19860731_barker_band.jpg;;${literalizeCommas(The Jazz Butcher Conspiracy, Chicago, Cabaret Metro. The night Tom Waits turned up)}$$
+		David E. Barker;;https://twitter.com/glassmodern1/status/1450102200722669570;;2021-10-18,
+	posters=/images/19860731/19860731_poster.jpg$$
+		Skitch;;;;2017-05-27
 	)}
 
 #define	Aug1.html()
@@ -509,6 +538,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+		posters=/images/19860802/19860802_poster.jpg$$
+			Kevin Carroll;;;;2022-03-23
 
 	)}
 
@@ -566,7 +597,7 @@
 		)},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		posters=/images/19860813/19860813_poster.jpg$$
-		lilmikesf;;https://twitter.com/lilmikesf
+			lilmikesf;;https://twitter.com/lilmikesf;;2016-08-09
 	)},
 
 	)}
@@ -681,8 +712,10 @@
 			Andrew Brooksbank
 		,
 		tickets= /images/19861029/19861029_ticket.jpg$$
-			Andrew Brooksbank
-
+			Andrew Brooksbank;;;;2017-05-03
+		,
+		posters=/images/19861029/19861029_poster.jpg$$
+			Andrew Brooksbank;;;;2017-06-06
 	)}
 
 #define	Oct30.html()
@@ -690,6 +723,8 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${green}, ${lohan}
 		)},
+		posters=/images/19861030/19861030_poster.jpg$$
+			nothingelseon;;https://twitter.com/nothingelseon/status/1328599434586959873;;2020-11-21
 	)}
 
 #define	Oct31.html()

@@ -76,6 +76,9 @@
 			We had a wonderful evening. Many thanks to Paul Williams for his driving skills and his essential
 			medical interventions.
 		)}
+		,
+		posters=/images/20170408/20170408_poster.jpg$$
+		    ;;;;2016-12-21
 	)}
 
 #define	Apr15.html()
@@ -166,6 +169,9 @@
 			<p>
 			* - Brian Kelly! xxx  
 		)}
+		,
+		posters=/images/20170415/20170415_poster.jpg$$
+		    ;;;;2017-01-21
 	)}
 
 #define	Apr27_1930.html()
@@ -220,6 +226,9 @@
 		pat=${literalizeCommas(
 		A very pleasant evening, much enhanced by Chef Watson and his most excellent rice, peas and plantain.
 		)}
+		,
+		posters=/images/20170427/20170427_poster.jpg$$
+		    ;;;;2017-04-25
 	)}
 
 #define	May25_1900.html()
@@ -241,6 +250,9 @@
 			/images/20170525/20170525_rachel_band.jpg$$
 			/images/20170525/20170525_rachel_psych.jpg$$
 			Rachel McGrath
+		,
+		posters=/images/20170525/20170525_poster.jpg$$
+		    ;;;;2017-05-19
 	)}
 
 #define	May28_1630.html()
@@ -286,6 +298,9 @@
 		---
 			/images/20170528/20170528_sydmeats.jpg;;$$
 			Sydney Meats
+		,
+		posters=/images/20170528/20170528_poster.jpg$$
+		    ;;;;2017-03-28
 	)}
 
 #define	Jul2_1800.html()
@@ -311,6 +326,10 @@
 			---
 			/images/20170702/20170702_newboots.jpg$$
 			New Boots Mag;;https://newbootsnorthants.wordpress.com;;2017-07-02 10:58:00
+		,
+		2017,Jul2_1800.html,https://v1.jazzbutcher.com/gigs/2017/Jul2_1800.html
+		posters=/images/20170702/20170702_poster.jpg$$
+		    ;;;;2017-07-01
 	)}
 
 #define	Oct20_1900.html()
@@ -370,7 +389,7 @@
 		)},
 		setlists=
 		/images/20171022/20171022_brooksbank_setlist.jpg$$
-		Andrew Brooksbank
+		Andrew Brooksbank;;;;2017-10-23
 		,
 		photosets=
 		/images/20171022/20171022_brooksbank_408.jpg$$
@@ -409,6 +428,9 @@
 		---
 		/images/20170922/20170922_rehearsal.jpg;;Pat Fish in Rehearsal$$
 		Glass Modern;;https://twitter.com/glassmodern2/status/1447500184015958019
+		,
+		posters=/images/20170922/20170922_poster.jpg$$
+		    ;;;;2017-07-21
 	)}
 
 #define	Nov3.html()

@@ -59,10 +59,8 @@
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
 		photosets= /images/19850208/19850208_jbc.jpg$$
 		,
-	setlists=
-		/images/19850208/19850208_setlist.jpg$$
-		Andrew Brooksbank
-
+	setlists=/images/19850208/19850208_setlist.jpg$$
+		Andrew Brooksbank;;;;2017-03-06
 	)}
 
 #define	Feb24.html()
@@ -92,6 +90,8 @@
 		---
 		/images/19850307/19850307_lochgirl_pat.jpg$$
 			lochgirl,
+		posters=/images/19850307/19850307_poster.jpg$$
+			nothingelseon;;https://twitter.com/nothingelseon/status/1257208646880030720;;2020-05-04
 
 	)}
 
@@ -99,6 +99,9 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	posters=/images/19850309/19850309_poster.jpg$$
+		nothingelseon;;https://twitter.com/nothingelseon/status/1258670504136720384/photo/1;;2020-05-08
+
 
 	)}
 
@@ -200,7 +203,7 @@
 	)},
 	tickets=
 			/images/19850405/19850405_ticket.jpg$$
-			Roberto Grassilli;;http://www.flickr.com/photos/robertograssilli/1443654121
+			Roberto Grassilli;;http://www.flickr.com/photos/robertograssilli/1443654121;;2007-11-24
 
 	)}
 
@@ -277,8 +280,7 @@
 	)},
 	setlists=
 		/images/19850417/19850417_setlist.jpg$$
-		Andrew Brooksbank
-
+		Andrew Brooksbank;;;;2017-03-06
 	)}
 
 #define	Apr19.html()
@@ -328,6 +330,8 @@
 	${d}, ${q(5)}, ${p(B)}
 	)},
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	posters=/images/19850503/19850503_poster.jpg$$
+		Paul Read;;;;2020-12-07
 
 	)}
 
@@ -358,6 +362,8 @@
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 	with=${literalizeCommas( The Triffids
 	)},
+	posters=/images/19850525/19850525_poster.jpg$$
+		nothingelseon;;https://twitter.com/nothingelseon/status/1266654571025203200;;2020-05-30
 
 	)}
 
@@ -406,6 +412,8 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	posters=/images/19850628/19850628_poster.jpg$$
+		ruse@cableinet.co.uk;;;;2025-07-21
 
 	)}
 
@@ -413,6 +421,8 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	posters=/images/19850628/19850628_poster.jpg$$
+		ruse@cableinet.co.uk;;;;2025-07-21
 
 	)}
 
@@ -420,8 +430,9 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
-	with=${literalizeCommas( The Beat Farmers
-	)},
+	with=${literalizeCommas( The Beat Farmers)},
+	posters=/images/19850629/19850629_poster.jpg$$
+		nothingelseon;;https://twitter.com/nothingelseon/status/1270259576361807872;;2020-06-09
 
 	)}
 
@@ -429,7 +440,8 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
-	cassettes=/images/19850705/19850705_cassette.jpg$$,
+	cassettes=/images/19850705/19850705_cassette.jpg$$
+		;;;;2025-07-21,
 
 	)}
 
@@ -551,6 +563,8 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	posters=/images/19850919/19850919_poster.jpg$$
+		nothingelseon;;https://twitter.com/nothingelseon/status/1281517557564891138/photo/1;;2020-07-16
 
 	)}
 
@@ -558,6 +572,8 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	posters=/images/19850920/19850920_poster.jpg$$
+		nothingelseon;;https://twitter.com/nothingelseon/status/1281519898032631808/photo/1;;2020-07-16
 
 	)}
 
@@ -648,7 +664,10 @@
 		ruse@cableinet.co.uk;;;;2004-02-13
 	,posters=
 		/images/19851029/19851029_poster.jpg$$
+		;;;;2020-07-16
+		---
 		/images/19851029/19851029_poster_2.jpg$$
+		;;;;2022-10-30
 	)}
 
 #define	Nov1.html()

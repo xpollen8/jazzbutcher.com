@@ -10,6 +10,8 @@
 			Plus beat generation films, music and poetry.<p>
 			Admission free.
 		)},
+		posters=/images/20100122/20100122_poster.jpg$$
+		    ;;;;2010-06-09
 	)}
 
 #define	Jan29.html()
@@ -25,6 +27,8 @@
 			Free admission<br/>
 			Late bar
 		)},
+		posters=/images/20100129/20100129_poster.jpg$$
+		    ;;;;2010-06-09
 	)}
 
 #define	Feb19.html()
@@ -48,7 +52,11 @@
 		pat=${literalizeCommas(
 			London went well. Fantastic sound man and - consequently - appreciative punters. A nice night out.
 		)},
-		photosets= /images/20100309/20100309_pat.jpg
+		photosets=
+			/images/20100309/20100309_pat.jpg$$
+		,
+		posters=/images/20100309/20100309_poster.jpg$$
+		    ;;;;2010-06-09
 	)}
 
 #define	Mar18.html()
@@ -73,6 +81,8 @@
 			Acoustic and electric sets
 			Admission free.
 		)},
+		posters=/images/20100626/20100626_poster.jpg$$
+		    ;;;;2010-06-09
 	)}
 
 #define	Jul15.html()

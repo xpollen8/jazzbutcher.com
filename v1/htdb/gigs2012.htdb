@@ -51,6 +51,8 @@
 			The Games for May thing in London turned out to be very enjoyable. Rosco and his pals did a 3 song set of songs from Syd Barrett's Pink
 			Floyd, including See Emily Play, of course. Mindblowing. I did a sit-down loud acoustic set.
 		)},
+		posters=/images/20120507/20120507_poster.jpg$$
+		    ;;;;2012-06-28
 	)}
 
 #define	May26.html()
@@ -105,6 +107,9 @@
 		photosets= /images/20120526/budvar1.jpg$$
 			/images/20120526/budvar2.jpg$$
 			Matt Sewell
+		,
+		posters=/images/20120526/20120526_poster.jpg$$
+		    ;;;;2012-06-28
 	)}
 
 #define	Jun9_2000.html()
@@ -123,6 +128,8 @@
 			<p>
 			Seeing as I am on first, I shall probably opt for an acoustic set.
 		)},
+		posters=/images/20120609/20120609_poster.jpg$$
+		    ;;;;2012-06-28
 	)}
 
 #define	Aug18.html()
@@ -176,6 +183,9 @@
 		,
 		tickets= /images/20120907/20120907_ticket.jpg$$
 			James Duval;;;;2025-08-07
+		,
+		posters=/images/20120907/20120907_poster.jpg$$
+		    ;;;;2017-02-25
 	)}
 
 #define	Oct20.html()
@@ -208,10 +218,13 @@
 			<p>
 			Tickets strictly limited in number. Buy now...
 		)},
-		posters= /images/20121116/20121116_poster.jpg$$
-		---
-		/images/20121116/20121116_poster2.jpg$$
-		Andrew Brooksbank;;;;2025-05-09,
+		posters=
+			/images/20121116/20121116_poster.jpg$$
+			;;;;2016-11-11
+			--
+			/images/20121116/20121116_poster2.jpg$$
+			Andrew Brooksbank;;;;2025-05-09
+		,
 		photosets=
 			/images/20121116/20121116_brooksbank.jpg$$
 			/images/20121116/20121116_brooksbank2.jpg$$
@@ -254,6 +267,10 @@
 		,
 		setlists=
 			/images/20121201/20121201_setlist.jpg$$
+			;;;;2012-12-05
+		,
+		posters=/images/20121201/20121201_poster.jpg$$
+		    Ayuko Koyabashi;;;;2017-02-20
 	)}
 
 #define	Dec2_1800.html()
@@ -289,6 +306,8 @@
 		phone=071 607 1818,
 		cost=&pound;5,
 		blurb=Christmas Party,
+		posters=/images/20121221/20121221_poster.jpg$$
+		    ;;;;2017-03-29
 	)}
 
 #define	page_requested	${${page}()}

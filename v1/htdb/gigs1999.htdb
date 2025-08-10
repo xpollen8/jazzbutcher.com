@@ -176,6 +176,9 @@
 			/images/19990226/Pat1.jpg$$
 			/images/19990226/Pat2.jpg;;${literalizeCommas(${pat})}$$
 			/images/19990226/Tp.jpg;;${literalizeCommas(${pat}, Toria Estes)}
+		,
+		posters=/images/19990226/19990226_poster.jpg$$
+		    ;;;;2016-04-18
 	)}
 
 #define	Mar5.html()
@@ -322,7 +325,9 @@
 		think it was certainly their best manifestation to date.
 		<p />
 		They are pig.
-		)}
+		)},
+		posters=/images/19990603/19990603_poster.jpg$$
+		    Pat Fish;;;;2017-04-02
 	)}
 
 #define	Aug22.html()
@@ -386,6 +391,9 @@
 		notes=${literalizeCommas(
 		)},
 		photosets=/images/19990824/19990824_adamgimbel_patmax.jpg$$
+		,
+		posters=/images/19990824/19990824_poster.jpg$$
+		    Pat Fish;;;;2017-04-03
 	)}
 
 #define	Sep9.html()
@@ -506,6 +514,7 @@
 	,
 	tickets=
 			/images/19990911/19990911_ticket.jpg$$
+			;;;;2004-05-12
 	)}
 
 #define	Sep13.html()
@@ -612,6 +621,9 @@
 			/images/19990914/P0000192.jpg$$
 			/images/19990914/P0000198.jpg$$
 			Leisa ReFalo
+		,
+		posters=/images/19990914/19990914_poster.jpg$$
+		    ;;;;2016-11-20
 	)}
 
 #define	Sep16.html()
@@ -725,7 +737,7 @@
 		)},
 		setlists=
 			/images/19990923/19990923_setlist.jpg$$
-			jAYDEIGNAN;;https://www.flickr.com/photos/jaydeignan/
+			jAYDEIGNAN;;https://www.flickr.com/photos/jaydeignan/;;2022-05-10
 		,
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}, ${hask}, ${beirne}
@@ -813,7 +825,7 @@
 		,
 		tickets=
 			/images/19990923/19990923_ticket.jpg$$
-			Scott Deschaine
+			Scott Deschaine;;;;2011-06-04
 		,
 		photosets= /images/19990923/23Sep1999_JazzB1.jpg$$
 			/images/19990923/23Sep1999_JazzB2.jpg$$
@@ -1336,6 +1348,9 @@
 
 		)}$$
 			Wilson Neate;;http://www.thei.aust.com/tssmusic1/jazzbutcher.html
+		,
+		posters=/images/19990923/19990923_poster.jpg$$
+		    Pat Fish;;;;2017-04-02
 	)}
 
 #define	page_requested	${${page}()}

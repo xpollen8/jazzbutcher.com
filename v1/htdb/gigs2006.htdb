@@ -28,7 +28,9 @@
 			The Spacemen 3/Spiritualised bassmeister spins the tunes.
 			<p>
 			Admission is free. Doors are open from 7:30pm. The bar is open until midnight.
-		)}
+		)},
+		posters=/images/20060106/20060106_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Jan23.html()
@@ -133,7 +135,9 @@
 		pat=${literalizeCommas(
 			My thanks to Andy Skank and Joe Woolley for looking after the club while I was away with Wilson in Milton
 			Keynes.
-		)}
+		)},
+		posters=/images/20060203/20060203_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Mar3.html()
@@ -188,7 +192,9 @@
 			Admission is - as ever - free.
 			<p>
 			Hope to see you there.
-		)}
+		)},
+		posters=/images/20060303/20060303_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Mar18.html()
@@ -226,7 +232,9 @@
 			into the freezing night, bent on return to NN1 so that Russ could finally enjoy a drink. No little confusion was induced a when we discovered that The Authorities
 			had gone and CLOSED THE ROAD TO NORTHAMPTON. We set off on a not so magical mystery tour down tiny roads through dark, deserted woods, found our way somehow to
 			Bicester, then sped the rest of the way home with ease, spotting the foxes raiding the Towcester Little Chef as we went by.
-		)}
+		)},
+		posters=/images/20060318/20060318_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Mar19.html()
@@ -264,7 +272,9 @@
 			Lush and lovely music, perfect for a Sunday night at the best pub in town.
 			<p>
 			(You can also catch Wolfgang playing live on Resonance FM on Saturday 18th March.)
-		)}
+		)},
+		posters=/images/20060319/20060319_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Apr7.html()
@@ -338,7 +348,9 @@
 			Black Carrot onstage at 10:15pm
 			<p>
 			Far out.
-		)}
+		)},
+		posters=/images/20060407/20060407_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Apr23.html()
@@ -385,6 +397,9 @@
 			/images/20060427/DSCN0406.jpg$$
 			/images/20060427/DSCN0408.jpg$$
 			Raj Patel
+		,
+		posters=/images/20060427/20060427_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	May5.html()
@@ -418,7 +433,9 @@
 			<p>
 			Admission is free, as ever. The doors are open from 8:00pm. The bar is open until midnight.
 			Thornfield onstage at about 9:00pm. I Had An Inkling onstage at about 10:00pm It's going to be a night not to be missed.
-		)}
+		)},
+		posters=/images/20060505/20060505_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	May6.html()
@@ -461,7 +478,9 @@
 			The Racehorse, Abington Square, Northampton<br>
 			9:00pm<br>
 			Front bar - Free admission
-		)}
+		)},
+		posters=/images/20060507/20060507_poster.jpg$$
+		    ;;;;2007-06-14
 	)}
 
 #define	May28.html()
@@ -661,7 +680,9 @@
 			The Luminaire, 307-311 Kilburn High Road, London NW6 7JR
 			<p>
 			Wednesday 14th June 2006
-		)}
+		)},
+		posters=/images/20060614/20060614_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Jul27.html()
@@ -798,7 +819,9 @@
 			First band onstage at 9:30pm
 			<p>
 			You seriously need to see this one, people.
-		)}
+		)},
+		posters=/images/20060804/20060804_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Aug19_1900.html()
@@ -829,6 +852,9 @@
 		/images/20060819/wilsonistas_219388945_o.jpg;;Wilsonistas$$
 		/images/20060819/wilson-russell-and-stevie-g_219388760_o.jpg;;Russell and Stevie G$$
 			antisyzygy;;https://www.flickr.com/photos/antisyzygy/sets/72157594243333081/
+		,
+		posters=/images/20060819/20060819_poster.jpg$$
+		    ;;;;2007-06-14
 	)}
 
 #define	Aug20.html()
@@ -877,7 +903,9 @@
 			London media, he has turned to writing on such diverse subjects as PR girls, the mystifying preoccupation with designer labels, credit card debt,
 			models with bad tempers, models with intellectual ability, Georgian Britain, the depletion of the rain forests, Claude Debussy, James McNeill
 			Whistler and of course, death, or as he calls it ... the world's end.
-		)}
+		)},
+		posters=/images/20060901/20060901_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Sep10_2000.html()
@@ -936,6 +964,9 @@
 			/images/20060910/wilson--the-racehorse_241485745_o.jpg;;Wilson$$
 			/images/20060910/woodentops--the-racehorse_241487408_o.jpg;;The Woodentops$$
 			antisyzygy;;https://www.flickr.com/photos/antisyzygy/sets/72157594280938638/
+		,
+		posters=/images/20060910/20060910_poster.jpg$$
+		    ;;;;2007-06-14
 	)}
 
 #define	Sep13_2030.html()
@@ -1091,7 +1122,9 @@
 			the lights pretty and the speeches short.
 			We hope to see you there with all your pals.
 			Masters of Budvar - as heard on BBC Radio One.
-		)}
+		)},
+		posters=/images/20061006/20061006_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Nov3.html()
@@ -1138,7 +1171,9 @@
 			Headline act on at about 10:30pm<br>
 			Pretty lights, friendly vibration, quality beers wines and spirits and the best little sound system in town.<br>
 			Saturation Point, Joe Woolley, DJ Plastic Sushi
-		)}
+		)},
+		posters=/images/20061103/20061103_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Nov7_2100.html()

@@ -158,6 +158,9 @@
 			evening would never actually have happened.
 			<p>
 		)}
+		,
+		posters=/images/20050127/20050127_poster.jpg$$
+		    ;;;;2005-10-15
 	)}
 
 #define	Feb4.html()
@@ -214,6 +217,8 @@
 			themselves confused at their emotional responses. Sonic Boom gets to frighten everybody and we all go home
 			happy.
 		)},
+		posters=/images/20050204/20050204_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Feb5.html()
@@ -354,7 +359,9 @@
 			I opened up the proceedings, playing a couple of acoustic numbers with Joe
 			Woolley before turning on the tape recorder and going all sparkly on the assembled. I have to say that
 			I enjoyed it, especially the last couple of numbers, which, frankly, had no place in a folk club...
-		)}
+		)},
+		posters=/images/20050304/20050304_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Apr1.html()
@@ -409,7 +416,9 @@
 			<p>
 			So there it is. It's all free and it kicks off at nine o'clock in the evening. Masters of Budvar, doing
 			it for the love of a good night out.
-		)}
+		)},
+		posters=/images/20050401/20050401_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Apr11.html()
@@ -639,7 +648,9 @@
 			<p>
 			As usual, doors are open from 8:00pm and admission is free to anyone who cares to walk in off the street and hear some top
 			quality music. Masters of Budvar. Yes, thank you very much.
-		)}
+		)},
+		posters=/images/20050506/20050506_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	May17.html()
@@ -714,7 +725,9 @@
 			This is a free event organised by the Masters of Budvar, a shadowy but ultimately well-intentioned non-profit
 			organisation dedicated to bringing the best possible live music to Northampton's mighty Labour Club. Lovers of
 			classic songwriting will want to be there.
-		)}
+		)},
+		posters=/images/20050527/20050527_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Jun3_2100.html()
@@ -827,7 +840,9 @@
 			Back at Shakespeare Villas we enjoyed another fine afterhours set from ${joe_woolley}, whose CD was promptly seized by
 			Rainer for further investigation back in Berlin. Doesn't it get light early these days? What's that you say, Crouchy?
 			No, leave it. Leave it.
-		)}
+		)},
+		posters=/images/20050603/20050603_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Jun4_2000.html()
@@ -879,7 +894,9 @@
 			bought himself the biggest electric fan that he could find. Stevie G broke his bigfoot wah-wah pedal and I found myself obliged to finish Battle Time on an
 			acoustic after breaking a string on my Burns. Apart from that, sweet as you like. So thanks to Phoenix Soundworks, Ash and John at the Racehorse, The Importers and
 			everybody who came along.
-		)}
+		)},
+		posters=/images/20050626/20050626_poster.jpg$$
+		    ;;;;2005-10-15
 	)}
 
 #define	Jul1.html()
@@ -979,7 +996,9 @@
 			the event that launched the Dreamweapon. No, China has moved on, so instead it's trebles all round and back to
 			Masters of Budvar Secret Headquarters for afters. Thanks to the Labour Club, Andy, all the musicians and everybody
 			who came out.
-		)}
+		)},
+		posters=/images/20050701/20050701_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Aug1.html()
@@ -1045,7 +1064,9 @@
 			</div>
 		)}$$Natasha House - Northampton Chronicle & Echo;;;;2005-08-05,
 		pat=${literalizeCommas(
-		)}
+		)},
+		posters=/images/20050801/20050801_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Aug5.html()
@@ -1092,8 +1113,8 @@
 			Assume that the first artist will be on stage at 9:00 o'clock and you can't go wrong. Hope to see you there.
 			</center>
 		)},
-		pat=${literalizeCommas(
-		)}
+		posters=/images/20050805/20050805_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Aug11.html()
@@ -1344,6 +1365,9 @@
 			/images/20050820/weekender_stage_wilson_pat_470x300.jpg;;Headstone$$
 			/images/20050820/weekender_stage_wilson_russell_470x300.jpg;;Agent Cooper$$
 			BBC Weekender website
+		,
+		posters=/images/20050820/20050820_poster.jpg$$
+		    ;;;;2005-10-15
 	)}
 
 #define	Aug27.html()
@@ -1462,8 +1486,8 @@
 		WWW.THESHAKEDOWN.COM - News, dates and music plus speak to the DJS online all day HERE ON THE MESSAGEBOARD.
 		</div>
 		)},
-		pat=${literalizeCommas(
-		)}
+		posters=/images/20050828/20050828_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Sep2.html()
@@ -1549,8 +1573,8 @@
 			This all kicks off at 8:30pm
 			</div>
 		)},
-		pat=${literalizeCommas(
-		)}
+		posters=/images/20050902/20050902_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Sep10.html()
@@ -1617,7 +1641,9 @@
 			<p>
 			Next Butcher -v- Eider
 			action is in Hamburg at the KIR nightclub on Thursday 27th October, with Owen, Curtis and Joe all on board for a mega soul revue.
-		)}
+		)},
+		posters=/images/20050919/20050919_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Sep25.html()
@@ -1698,8 +1724,8 @@
 			<p>
 			${g_artistweb(g=http://www.lemonrock.com/charlie)}
 		)},
-		pat=${literalizeCommas(
-		)}
+		posters=/images/20051007/20051007_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Oct27.html()
@@ -1720,8 +1746,8 @@
 			${curt}<br>
 			${joe_woolley}
 		)},
-		pat=${literalizeCommas(
-		)}
+		posters=/images/20051027/20051027_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Nov4.html()
@@ -1795,8 +1821,8 @@
 			As usual, the Labour Club welcomes all comers from 8:00pm and as usual entry is free. We hope to see you there.
 			</div>
 		)},
-		pat=${literalizeCommas(
-		)}
+		posters=/images/20051104/20051104_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Nov17.html()
@@ -1871,15 +1897,13 @@
 			As ever, admission is free, and - as of this month - the bar will be
 			open until midnight!
 		)},
-		pat=${literalizeCommas(
-		)}
+		posters=/images/20051202/20051202_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Dec10.html()
 	${gigHeader(
 		cost=free,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 		)},
 		notes=${literalizeCommas(
@@ -1891,7 +1915,9 @@
 			Great night at the Labour club on Saturday. After the Weekender boys played Buffalo Sniper on the
 			radio, the place was absolutely packed with punters baying for evil dub. Which is exactly what they
 			got.
-		)}
+		)},
+		posters=/images/20051210/20051210_poster.jpg$$
+		    ;;;;2006-01-03
 	)}
 
 #define	Dec22_2000.html()

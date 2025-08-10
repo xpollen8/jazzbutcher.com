@@ -63,6 +63,9 @@
 		photosets= /images/20140719/20140719_group1.jpg$$
 			/images/20140719/20140719_group2.jpg$$
 			/images/20140719/20140719_group3.jpg
+		,
+		posters=/images/20140719/20140719_poster.jpg$$
+		    ;;;;2017-02-12
 	)}
 
 #define	Aug20_2000.html()
@@ -81,6 +84,9 @@
 		---
 		/images/20140820/20140820_group.jpg$$
 			Mat Wallis;;;;
+		,
+		posters=/images/20140820/20140820_poster.jpg$$
+		    ;;;;2014-11-27
 	)}
 
 
@@ -110,6 +116,9 @@
 			/images/20140821/20140821_michaelwhitworth_3.jpg$$
 			/images/20140821/20140821_michaelwhitworth_4.jpg$$
 			Michael Whitworth;;https://www.flickr.com/photos/antisyzygy
+		,
+		posters=/images/20140821/20140821_poster.jpg$$
+		    Ayuko Koyabashi;;;;2014-11-20
 	)}
 
 
@@ -125,7 +134,10 @@
 		,
 		setlists=
 			/images/20140822/20140822_stevegarofalo_setlist.jpg$$
-			${garofalo}
+			Steve Garofalo;;;;2014-08-31
+		,
+		posters=/images/20140822/20140822_poster.jpg$$
+		    Ayuko Koyabashi;;;;2014-11-20
 	)}
 
 #define	Sep20_2000.html()
@@ -155,6 +167,8 @@
 			/images/20140920/20140920_michaelwhitworth_5.jpg$$
 			Michael Whitworth;;https://www.flickr.com/photos/antisyzygy
 		,
+		posters=/images/20140920/20140920_poster.jpg$$
+		    ;;;;2014-10-12
 	)}
 
 #define	Sep27.html()
@@ -203,6 +217,9 @@
 			/images/20141004/20141004_paulblinkhorn_2.jpg$$
 			/images/20141004/20141004_paulblinkhorn_3.jpg$$
 			Paul Blinkhorn
+		,
+		posters=/images/20141004/20141004_poster.jpg$$
+		    ;;;;2014-10-15
 	)}
 
 
@@ -226,6 +243,9 @@
 			/images/20141024/20141024_zher1.jpg$$
 			/images/20141024/20141024_zher2.jpg$$
 			/images/20141024/20141024_zher3.jpg$$
+		,
+		posters=/images/20141024/20141024_poster.jpg$$
+		    ;;;;2023-11-20
 	)}
 
 
@@ -301,6 +321,9 @@
 			/images/20141112/20141112_JazzButcher_madrid2.jpg$$
 			/images/20141112/20141112_JazzButcher_madrid_cool.jpg$$
 			/images/20141112/20141112_JazzButcher_stevieg.jpg
+		,
+		posters=/images/20141112/20141112_poster.jpg$$
+		    ;;;;2014-10-14
 	)}
 
 

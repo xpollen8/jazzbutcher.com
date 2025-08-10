@@ -104,6 +104,9 @@
 			/images/20010414/20010414_Wilson_Brooksbank6.jpg$$
 			/images/20010414/20010414_Wilson_Brooksbank7.jpg$$
 			Andrew Brooksbank;;;;2025-04-28
+		,
+		posters=/images/20010414/20010414_poster.jpg$$
+		    Andrew Brooksbank;;;;2024-11-21
 	)}
 
 #define	May24_2100.html()
@@ -305,6 +308,9 @@
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
 		photosets=/images/20010818/20010818_map.jpg$$
+		,
+		posters=/images/20010818/20010818_poster.jpg$$
+		    ;;;;2017-03-29
 	)}
 
 #define	Oct7.html()
@@ -374,6 +380,8 @@
 		)},
 		pat=${literalizeCommas(
 		)},
+		posters=/images/20011019/20011019_poster.jpg$$
+		    Andrew Brooksbank;;;;2024-11-21
 	)}
 
 #define	Oct20.html()

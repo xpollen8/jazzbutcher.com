@@ -46,12 +46,12 @@ export const GigSearchDialog = () => {
 	useEffect(() => {
 		setQ(searchParams.get('q') || '');
 	// @ts-ignore
-	}, [searchParams.get('q')]);
+	}, [searchParams]);
 
 	useEffect(() => {
 		setF(searchParams.get('f') || 'anything');
 	// @ts-ignore
-	}, [searchParams.get('f')]);
+	}, [searchParams]);
 
 	const setNavigation = (_f: string = 'anything', _q: string | null) => {
 		startTransition(() => {
@@ -130,7 +130,7 @@ export const BannerGigs = (results: HashedType, searchYear?: number) => {
 	const searchType = gigSearchOptionsByType(results?.type).text;
 	const numMatched = results?.numResults ?? 0;
 	const bannerYear = (searchYear) ? `In ${searchYear}, ` : '';
-	const bannerTerms = (results?.searchTerms || results?.query) ? <>{searchType}: <i>"{results?.searchTerms || results?.query}"</i></> : '';
+	const bannerTerms = (results?.searchTerms || results?.query) ? <>{searchType}: <i>&quot;{results?.searchTerms || results?.query}&quot;</i></> : '';
 	const bannerClass = (numMatched) ? 'search found' : 'search notfound';
 	const bannerText = `${bannerYear}${numMatched} gig${(numMatched === 1) ? '' : 's'} matched`;
 

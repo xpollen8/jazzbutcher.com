@@ -238,7 +238,7 @@ const filterBy = (res: RecordType, query: string, recordFilter: any) => {
 		...res,
 		numResults: filtered.length,
 		results: filtered,
-		searchTerms: terms.join('" OR "'),
+		searchTerms: terms?.find((t: any) => t?.match(/"/)) ? terms.join(' OR ') : terms.join('" OR "'),
 	}
 }
 

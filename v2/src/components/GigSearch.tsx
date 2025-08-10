@@ -44,11 +44,13 @@ export const GigSearchDialog = () => {
 	const [q, setQ] = useState(searchParams.get('q'));
 
 	useEffect(() => {
-		setQ(searchParams.get('q'));
+		setQ(searchParams.get('q') || '');
+	// @ts-ignore
 	}, [searchParams.get('q')]);
 
 	useEffect(() => {
-		setF(searchParams.get('f'));
+		setF(searchParams.get('f') || 'anything');
+	// @ts-ignore
 	}, [searchParams.get('f')]);
 
 	const setNavigation = (_f: string = 'anything', _q: string | null) => {

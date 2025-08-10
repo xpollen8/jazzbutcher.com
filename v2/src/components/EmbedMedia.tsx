@@ -84,7 +84,7 @@ const Performers = ({ datetime }: { datetime: string }) => {
 
 #define	linkSearch(query, text, act=no)
 #live	if (getval(act) = yes)
-	<a href="{jbc_search}?f=act&q={encode({query})}">{ternary((defined(text)), {text}, {query})}</a>
+	<a href="{jbc_search}?f=alsowith&q={encode({query})}">{ternary((defined(text)), {text}, {query})}</a>
 #live	else
 	<a href="{jbc_search}?f=performer&q={encode({query})}">{ternary((defined(text)), {text}, {query})}</a>
 #live	endif

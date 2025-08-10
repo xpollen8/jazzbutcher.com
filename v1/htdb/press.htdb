@@ -2126,7 +2126,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/86contrast.html,
 		credit=Laura Smith & Randy Bookasta,
 		publication=Contrast,
-		thumb=${jbc_images}/pat_contrast1;;Greg Allen,
+		thumb=${jbc_images}/pat_contrast1;;Greg Allen;;;;2004-05-12,
 		images=${jbc_images}/owen_contrast;;Greg Allen$$${jbc_images}/felix_contrast1;;Greg Allen$$${jbc_images}/felix_contrast2;;Greg Allen$$${jbc_images}/max_contrast;;Greg Allen$$${jbc_images}/pat_contrast2;;Greg Allen$$,
 		title=The Jazz Butcher vs the USA,
 		location=USA,
@@ -7387,8 +7387,7 @@ The Jazz Butcher along with friends The Blue Aeroplanes play Peter Clark Hall on
 	<p />
 	What other bands also share their approach?
 	<div class="iview_a">
-	"The ${tops}
-	go back a long way with us... they certainly have similar
+	"${tops} go back a long way with us... they certainly have similar
 	attitudes. Their song 'Do It Anyway' just about sums up the
 	idea of their group and mine... (In attitude) we see
 	ourselves as a punk rock group, musically too because we can

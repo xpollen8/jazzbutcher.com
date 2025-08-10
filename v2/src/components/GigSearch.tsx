@@ -254,8 +254,8 @@ const filterGigsByPerformer = (res: any, query: string) => {
 			return record[field]?.toLowerCase();
 		}
 	});
-	*/
 	return filterBy(res, query, recordFilter);
+	*/
 }
 
 const filterGigsByAnything = (res: RecordType, query: string) => {

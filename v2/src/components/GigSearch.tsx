@@ -244,14 +244,17 @@ const filterGigsByCity = (res: any, query: string) => filterGigsByField(res, que
 const filterGigsByState = (res: any, query: string) => filterGigsByField(res, query, 'state');
 const filterGigsByCountry = (res: any, query: string) => filterGigsByField(res, query, 'country');
 const filterGigsBySupport = (res: any, query: string) => filterGigsByField(res, query, 'alsowith');
-const filterGigsBySong = (res: any, query: string) => filterGigsByField(res, query, 'song');
+const filterGigsBySong = (res: any, query: string) => res; //filterGigsByField(res, query, 'song');
 const filterGigsByPerformer = (res: any, query: string) => {
+	return res;
+	/*
 	const recordFilter = ((record: RecordType) => {
 		const field = 'performer';
 		if (record[field]?.startsWith('[[person:')) {
 			return record[field]?.toLowerCase();
 		}
 	});
+	*/
 	return filterBy(res, query, recordFilter);
 }
 
@@ -434,6 +437,7 @@ const gigSearchOptions: HashedType[] = [
 		filter: filterGigsByAnything,
 	},
 	{ ...buildGigSearchOptions('song', 'Played this song..', 'gigs_by_song'),
+		filter: filterGigsBySong,
 		layout: layoutSongs,
 	},
 	{ ...buildGigSearchOptions('performer', 'Musician performed..', 'gigs_by_musician'),

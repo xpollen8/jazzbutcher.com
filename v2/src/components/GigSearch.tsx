@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
-import { useState, useTransition } from 'react';
+import { useEffect, useState, useTransition } from 'react';
 import { type RecordType, type HashedType } from '@/lib/utils';
 import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parseDay, num2mon, ts2URI, htmlString, prettyDate, num2month } from '@/lib/utils';
 import { removeHTML } from '@/components/GenericWeb';
@@ -42,6 +42,14 @@ export const GigSearchDialog = () => {
 
 	const [f, setF] = useState(searchParams.get('f') || 'anything');
 	const [q, setQ] = useState(searchParams.get('q'));
+
+	useEffect(() => {
+		setQ(searchParams.get('q'));
+	}, [searchParams.get('q')]);
+
+	useEffect(() => {
+		setF(searchParams.get('f'));
+	}, [searchParams.get('f')]);
 
 	const setNavigation = (_f: string = 'anything', _q: string | null) => {
 		startTransition(() => {
@@ -84,7 +92,6 @@ export const GigSearchDialog = () => {
 					<select className="p-2" value={f as string || 'anything'} onChange={(e) => {
 							setF(e.target.value);
 						}}>
-						{/*<option key={'blank'} className="-1">Find..</option>*/}
 						{gigSearchOptions.map((o, key) => <option key={key} value={o.noun}>{o.text}</option>)}
 					</select>
 				</div>

@@ -7,7 +7,6 @@ import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parse
 import { removeHTML } from '@/components/GenericWeb';
 import GigGraph, { GigBarTypes } from '@/components/GigGraph';
 import { AutoLinkPlayer, AutoLinkSong, AutoLinkAct } from '@/lib/defines';
-import Loading from '@/components/Loading';
 
 import IconSonglist from '@/svg/IconSonglist';
 import IconPix from '@/svg/IconPix';
@@ -110,20 +109,15 @@ export const GigSearchDialog = () => {
 }
 
 export const GigSearchResults = ({ results={}, banner, preventAutoExpand }: { results: SearchResultType, banner?: any, preventAutoExpand?: boolean }): React.ReactNode => {
-	const options = gigSearchOptionsByType(results?.type);
-	const layout = options.layout;
-	const template = options?.template;
+	const { layout, template } = gigSearchOptionsByType(results?.type);
 
-	return (
-		<>
-			{(banner) && banner(results)}
-			{(template) && template(results, layout, preventAutoExpand)}
-		</>
-	)
+	return <>
+		{(banner) && banner(results)}
+		{(template) && template(results, layout, preventAutoExpand)}
+	</>
 }
 
 export const BannerGigs = (results: HashedType, searchYear?: number) => {
-	//if (!results) return <Loading />;
 	const searchType = gigSearchOptionsByType(results?.type).text;
 	const numMatched = results?.numResults ?? 0;
 	const bannerYear = (searchYear) ? `In ${searchYear}, ` : '';
@@ -131,12 +125,10 @@ export const BannerGigs = (results: HashedType, searchYear?: number) => {
 	const bannerClass = (numMatched) ? 'search found' : 'search notfound';
 	const bannerText = `${bannerYear}${numMatched} gig${(numMatched === 1) ? '' : 's'} matched`;
 
-	return (
-		<>
-			{(bannerTerms) && <div className={bannerClass}>{bannerTerms}</div>}
-			<div className="search count">{bannerText}</div>
-		</>
-	)
+	return <>
+		{(bannerTerms) && <div className={bannerClass}>{bannerTerms}</div>}
+		<div className="search count">{bannerText}</div>
+	</>
 }
 
 const Venue = ({ record }: { record: RecordType }) =>
@@ -317,9 +309,9 @@ const	Location = (args: any) => {
 	return <>{country2Flag(country)} {strs}</>;
 }
 
-export const templateGigs = (results: RecordType, layout: any, preventAutoExpand: boolean) => {
+export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: boolean) => {
 	const years: HashedType = {};
-	results?.results?.forEach((r: RecordType) => {
+	data?.results?.forEach((r: RecordType) => {
 		const year = parseYear(r.datetime);
 		if (!years[year]) years[year] = [];
 		years[year].push(r)
@@ -331,8 +323,8 @@ export const templateGigs = (results: RecordType, layout: any, preventAutoExpand
 		}
 	})
 
-	const gigsType = results?.type;
-	const gigsQuery = results?.query;
+	const gigsType = data?.type;
+	const gigsQuery = data?.query;
 	const queryParams = new URLSearchParams();
 	if (gigsType) queryParams.set('f', gigsType);
 	if (gigsQuery) queryParams.set('q', gigsQuery);
@@ -378,7 +370,6 @@ export const templateGigs = (results: RecordType, layout: any, preventAutoExpand
 						{layout(record, record?.datetime)}
 						<div className="m-1">
 							<div className="m-1 flex flex-wrap float-right">
-								{extras?.map((ex: any, key: number) => ex.func({ key, height: 25, width: 25, style: { padding: '3px' } }))}
 							</div>
 							{(record?.alsowith) && <div className="pt-1">{record?.alsowith?.split(',')?.map((a: string, key: number) => {
 								const name = removeHTML(a.trim())?.toLowerCase();
@@ -394,19 +385,17 @@ export const templateGigs = (results: RecordType, layout: any, preventAutoExpand
 		</div>)
 	}
 
-	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => (
-		<div key={year+month}>
-			<div className="tag mt-3" >
-				{num2month(month)}, {year}
-				{(gigs.length > 1) && <>
-					{': '}
-					{gigs.length} gigs
-				</>}
-			</div>
-			{gigs?.sort((a: any, b: any) => parseDay(a.datetime) - parseDay(b.datetime))
-				.map(makeGigRow)}
+	const makeGigMonth = (year: number, month: number, gigs: RecordType[]) => <div key={year + month}>
+		<div className="tag mt-3" >
+			{num2month(month)}, {year}
+			{(gigs.length > 1) && <>
+				{': '}
+				{gigs.length} gigs
+			</>}
 		</div>
-	)
+		{gigs?.sort((a: any, b: any) => parseDay(a.datetime) - parseDay(b.datetime))
+			.map(makeGigRow)}
+	</div>
 
 	const makeGigYear = (queryString: string, year: number, gigs: RecordType[]) => {
 		const months: HashedType = {};

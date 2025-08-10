@@ -294,7 +294,12 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				}
 			}
 			case 'gigs_by_musician': {
+				/*
+				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, '_');
+				console.log("ARGS", { path, args, useArgs });
+				*/
 				const performances =  await apiDataFromDataServer(path, args);
+				/*
 				const gigs = await apiDataFromDataServer('gigs');
 				// join gig data to performance records
 				const results = performances?.results?.map((performance: RecordType) => {
@@ -302,7 +307,10 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 					const gig = gigs?.results.find((gig: RecordType) => localDate(gig?.datetime) === datetime);
 					return { ...performance, gig }
 				});
+				delete performances.results;
 				return { ...performances, results }
+				*/
+				return performances;
 			}
 			case 'gigs_by_song': {
 				const gigsongs = await apiDataFromDataServer(path, args);

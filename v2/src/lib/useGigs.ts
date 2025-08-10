@@ -18,6 +18,8 @@ const filterGigs = (gigs: any, query: any, year: any, type: any, options: any) =
 	if (!type) return gigs;	// no search
 
 	// filter by search
+	//console.log("FILTERING", { gigs, query, options });
+	//console.log("FILTERINGX", gigs?.results);
 	return options.filter(gigs, query);
 }
 
@@ -26,6 +28,7 @@ const useGigs = ({ type, query, year }: any) => {
 	// NOTE: array to bust SWR cache
 	const options = gigSearchOptionsByType(type);
 	const fetcher = async ([ url, { year, type, query } ]: any) => {
+		//console.log("FETCH", url, query);
 		/*
 		const localValue = await localStorage.getItem('gigs');
 		if (localValue) {
@@ -37,7 +40,7 @@ const useGigs = ({ type, query, year }: any) => {
 			.then((res) => res.json())
 			.then(gigs => {
 
-				//console.log("GIGS", JSON.stringify(gigs));
+				//console.log("GIGS", gigs);
 				// TODO - have a time-based cache invalidation
 				//console.log("SET LOCAL");
 				//localStorage.setItem('gigs', JSON.stringify(gigs));

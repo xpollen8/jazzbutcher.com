@@ -82,7 +82,7 @@ export const Credit = ({ g, u, d }: {
 	g?: string
 	u?: string
 	d?: string
-}) => genericWeb({ g, u, t: "Credit", s: "credit", d })
+}) => genericWeb({ g, u, t: (g) ? "Credit" : "Added", s: "credit", d })
 
 // no title
 export const Attribution = ({ x, g, u, d }: {

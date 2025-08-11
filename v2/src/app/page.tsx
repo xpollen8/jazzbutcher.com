@@ -23,14 +23,6 @@ const relatedReleases = {
 	<p />
 	In addition to the new title track, ‘All Shall Be Well’, the CD/DL features remixed/remastered versions of Eider’s last two digital single releases, ‘Go Gentle’ and ‘The Meek’, the latter including new vocal tracks by long-time collaborator and singer supreme June Miles-Kingston.
 	`
-	/*
-	<p />
-	‘These songs belong together so it made sense to revisit the other two and do a physical release,’ Max says. ‘It’s great to be working with Dave again. Augustus will probably be devastated but to be honest I’m not sure he still has mental capacity, if you know what I mean. He’s 111 years old for fuck’s sake.’
-	<p />
-	Cover art by multi-award-winning cartoonist and old friend Dave Coverly
-	<p />
-	Includes digital pre-order of All Shall Be Well. You get 1 track now (streaming via the free Bandcamp app and also available as a high-quality download in MP3, FLAC and more), plus the complete album the moment it’s released.
-	*/
 };
 
 const HomeBooks = () =>
@@ -41,12 +33,8 @@ const HomeBooks = () =>
 
 const HomeReleases = () =>
 <>
-		<ReleaseBlurb lookup='highest' key={2} />
-		<ReleaseBlurb lookup='fire_cholmondley' key={3} />
-		<ReleaseBlurb lookup='fire_violent' key={4} />
-		<ReleaseBlurb lookup='fire_wasted' key={5} />
-		<ReleaseBlurb lookup='adventurers' key={6} />
-		<MakeAlbumBlurb {...relatedReleases} key={1} />
+		{['highest', 'fire_cholmondley', 'fire_violent', 'fire_wasted', 'adventurers'].map(ReleaseBlurb)}
+		<MakeAlbumBlurb {...relatedReleases} key={66} />
 </>
 
 const Home = (): React.ReactNode =>

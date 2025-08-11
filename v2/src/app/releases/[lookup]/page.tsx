@@ -1,5 +1,3 @@
-"use client"
-
 import { notFound } from 'next/navigation';
 import Release from '@/components/Release';
 import Header from '@/components/Header';

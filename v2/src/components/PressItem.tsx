@@ -99,6 +99,7 @@ const PressItem = ({ item }: { item: any }) => {
 				</>)
 			}
 	}
+	const substitutions = (a: string) => a?.replace(/f=act/g, 'f=alsowith');
 	return (item) && <>
 		<ArticleThumbAndImages article={item} />
 		<ArticleInfoBox article={item} />
@@ -108,7 +109,7 @@ const PressItem = ({ item }: { item: any }) => {
 		{(!!item?.body?.length) && (() => {
 			const says = parseCaptionsSourcesEtc(item?.body) || [];
 			return (says?.length) && (<>
-					{says.map(([ body, credit, crediturl, creditdate ]: any, key: number) => <>{(credit) && <Tag>{credit} Says..</Tag>}<blockquote className="listItem" dangerouslySetInnerHTML={{ __html: body }} /><Attribution g={credit} u={crediturl} d={creditdate} /></> )}
+					{says.map(([ body, credit, crediturl, creditdate ]: any, key: number) => <>{(credit) && <Tag>{credit} Says..</Tag>}<blockquote className="listItem" dangerouslySetInnerHTML={{ __html: substitutions(body) }} /><Attribution g={credit} u={crediturl} d={creditdate} /></> )}
 					<p />
 				</>)
 		})()}

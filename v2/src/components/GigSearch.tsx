@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
-import { useState, useTransition } from 'react';
+import { useEffect, useState, useTransition } from 'react';
 import { type RecordType, type HashedType } from '@/lib/utils';
 import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parseDay, num2mon, ts2URI, htmlString, prettyDate, num2month } from '@/lib/utils';
 import { removeHTML } from '@/components/GenericWeb';
@@ -42,6 +42,16 @@ export const GigSearchDialog = () => {
 
 	const [f, setF] = useState(searchParams.get('f') || 'anything');
 	const [q, setQ] = useState(searchParams.get('q'));
+
+	useEffect(() => {
+		setQ(searchParams.get('q') || '');
+	// @ts-ignore
+	}, [searchParams]);
+
+	useEffect(() => {
+		setF(searchParams.get('f') || 'anything');
+	// @ts-ignore
+	}, [searchParams]);
 
 	const setNavigation = (_f: string = 'anything', _q: string | null) => {
 		startTransition(() => {
@@ -84,7 +94,6 @@ export const GigSearchDialog = () => {
 					<select className="p-2" value={f as string || 'anything'} onChange={(e) => {
 							setF(e.target.value);
 						}}>
-						{/*<option key={'blank'} className="-1">Find..</option>*/}
 						{gigSearchOptions.map((o, key) => <option key={key} value={o.noun}>{o.text}</option>)}
 					</select>
 				</div>
@@ -121,7 +130,7 @@ export const BannerGigs = (results: HashedType, searchYear?: number) => {
 	const searchType = gigSearchOptionsByType(results?.type).text;
 	const numMatched = results?.numResults ?? 0;
 	const bannerYear = (searchYear) ? `In ${searchYear}, ` : '';
-	const bannerTerms = (results?.searchTerms || results?.query) ? <>{searchType}: <i>{results?.searchTerms || results?.query}</i></> : '';
+	const bannerTerms = (results?.searchTerms || results?.query) ? <>{searchType}: <i>&quot;{results?.searchTerms || results?.query?.replace(/"/g, '')}&quot;</i></> : '';
 	const bannerClass = (numMatched) ? 'search found' : 'search notfound';
 	const bannerText = `${bannerYear}${numMatched} gig${(numMatched === 1) ? '' : 's'} matched`;
 
@@ -229,7 +238,7 @@ const filterBy = (res: RecordType, query: string, recordFilter: any) => {
 		...res,
 		numResults: filtered.length,
 		results: filtered,
-		searchTerms: terms.join('" OR "'),
+		searchTerms: terms?.find((t: any) => t?.match(/"/)) ? terms.join(' OR ') : terms.join('" OR "'),
 	}
 }
 
@@ -244,8 +253,10 @@ const filterGigsByCity = (res: any, query: string) => filterGigsByField(res, que
 const filterGigsByState = (res: any, query: string) => filterGigsByField(res, query, 'state');
 const filterGigsByCountry = (res: any, query: string) => filterGigsByField(res, query, 'country');
 const filterGigsBySupport = (res: any, query: string) => filterGigsByField(res, query, 'alsowith');
-const filterGigsBySong = (res: any, query: string) => filterGigsByField(res, query, 'song');
+const filterGigsBySong = (res: any, query: string) => res; //filterGigsByField(res, query, 'song');
 const filterGigsByPerformer = (res: any, query: string) => {
+	return res;
+	/*
 	const recordFilter = ((record: RecordType) => {
 		const field = 'performer';
 		if (record[field]?.startsWith('[[person:')) {
@@ -253,6 +264,7 @@ const filterGigsByPerformer = (res: any, query: string) => {
 		}
 	});
 	return filterBy(res, query, recordFilter);
+	*/
 }
 
 const filterGigsByAnything = (res: RecordType, query: string) => {
@@ -434,6 +446,7 @@ const gigSearchOptions: HashedType[] = [
 		filter: filterGigsByAnything,
 	},
 	{ ...buildGigSearchOptions('song', 'Played this song..', 'gigs_by_song'),
+		filter: filterGigsBySong,
 		layout: layoutSongs,
 	},
 	{ ...buildGigSearchOptions('performer', 'Musician performed..', 'gigs_by_musician'),

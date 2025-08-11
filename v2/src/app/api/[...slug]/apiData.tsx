@@ -294,11 +294,8 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				}
 			}
 			case 'gigs_by_musician': {
-				/*
-				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, '_');
-				console.log("ARGS", { path, args, useArgs });
-				*/
-				const performances =  await apiDataFromDataServer(path, args);
+				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, '_')?.replace(/ /g, '_');
+				const performances =  await apiDataFromDataServer(path, useArgs);
 				/*
 				const gigs = await apiDataFromDataServer('gigs');
 				// join gig data to performance records
@@ -313,6 +310,10 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				return performances;
 			}
 			case 'gigs_by_song': {
+				const useArgs = args?.replace(/%22/g, '');
+				const gigsongs = await apiDataFromDataServer(path, useArgs);
+				return gigsongs;
+				/*
 				const gigsongs = await apiDataFromDataServer(path, args);
 				const gigs = await apiDataFromDataServer('gigs', args);
 				// join gig data to song records
@@ -322,6 +323,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 					return { ...song, gig }
 				});
 				return { ...gigsongs, results }
+				*/
 			}
 			case 'releases':
 				return releasesStatic;

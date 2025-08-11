@@ -56,10 +56,10 @@ const RecentGigMedia = (props: any) => {
 	return <details>
 		<summary className="tagClickable">{pluralize(gigmedia.numResults, 'gig image', 'Recently added')}</summary>
 		{Object.keys(results)?.map((p: any, key: number) => {
-			const items = results[p];
+			const items = results[p] || [];
 			return <div key={key} className="clickListItem">
 				<details>
-				<summary className="tagClickable">{pluralize(items?.length, p, 'Recently added')}</summary>
+				<summary className="tagClickable">{pluralize(items.length, p, 'Recently added')}</summary>
 					{items?.map((p: any, key: number) => {
 					const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
 					const thumb = href.replace(/.jpg/, '_250.jpg');

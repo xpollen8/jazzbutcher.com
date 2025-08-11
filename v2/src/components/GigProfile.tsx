@@ -420,7 +420,7 @@ const GigProfile = (props: any) => {
 		datetime = gigPage2Datetime(`/${year}/${pday}.html`);
 	}
 	const { data, isLoading, error } = useGig(datetime)
-	const gig = data?.results[0];
+	const gig = data;
 
 	if (!isLoading && !gig) return notFound();
 

@@ -242,7 +242,7 @@ const apiData = async (path: string, args?: string, formData?: any): Promise<Has
 				return data;
 			}
 			case 'recent_releases': {
-				return findRecent(path, releasesStatic, 'dtadded', 6, 'years');
+				return findRecent(path, releasesStatic, 'dtadded', 6, 'months');
 			}
 			case 'recent_press': {
 				return findRecent(path, pressesStatic, 'dtadded', 6, 'months');

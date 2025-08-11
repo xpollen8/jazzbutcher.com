@@ -345,7 +345,7 @@ export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: b
 	const makeGigRow = (record: RecordType, key: number) => {
 		const useG = (record?.gig) ? record.gig : record;
 		const types = determineTypes(record);
-		const datetime = record?.datetime.substring(0, 10).replace(/-/g, '');
+		const datetime = record?.datetime?.substring(0, 10).replace(/-/g, '');
 		const year = parseYear(datetime);
 		let poster = (useG?.extra?.includes('poster')) ? `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_poster_250.jpg` : undefined;
 		if (!poster) {

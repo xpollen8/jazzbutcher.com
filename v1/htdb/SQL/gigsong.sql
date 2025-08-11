@@ -2220,6 +2220,9 @@ INSERT INTO `gigsong` VALUES (NULL,'1993-02-15 00:00:00','set',NULL,1,4,'Goodnig
 INSERT INTO `gigsong` VALUES (NULL,'1993-03-04 00:00:00','set',NULL,1,0,'Concert Excerpt',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/19930304/19930304_JazzButcher_ValenzaPo_IT_CircoloPalomar.mp4','Giorgio Zito',NULL,NULL,"2023-12-26");
 INSERT INTO `gigsong` VALUES (NULL,'1993-03-04 00:00:00','set',NULL,1,1,'Angels',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1993-03-04 00:00:00','set',NULL,1,2,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1993-04-21 00:00:00','set',NULL,1,1,'Waiting For The Love Bus',NULL,'premier',NULL,NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','encore',NULL,1,1,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','encore',NULL,1,2,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','encore',NULL,2,1,'Chickentown',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

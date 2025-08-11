@@ -1,3 +1,4 @@
+/*
 import useSWR from 'swr';
 
 const useRelease = (lookup?: string) => {
@@ -7,6 +8,20 @@ const useRelease = (lookup?: string) => {
 		data,
 		isLoading,
 		error,
+	}
+}
+*/
+
+
+import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
+import releasesStatic from '@/../public/data/releases.json';
+import { returnResults } from '@/lib/utils';
+
+const useRelease = (lookup: string) => {
+	const href = `/albums/${lookup}.html`;
+	const	results = releasesStatic?.results?.filter((f: any) => f.href === href) || [];
+	return {
+		data: returnResults(results),
 	}
 }
 

@@ -337,3 +337,10 @@ export const pluralize = (num: number, str: string, prefix?: string) => <>
 </>
 
 export const returnResults = (results: any) => ({ results, numResults: results?.length });
+
+export const returnSWR = (results: any) => ({
+	data: returnResults(results),
+	isLoading: false,
+	error: null
+});
+

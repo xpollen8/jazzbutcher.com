@@ -7,7 +7,7 @@ import EmbedMedia from '@/components/EmbedMedia';
 import { dateDiff } from '@/lib/utils';
 import { Credit } from '@/components/GenericWeb';
 
-import jsonNewsItems from '@/../public/data/news.json';
+import newsItemsV1 from '@/../public/data/newsV1.json';
 
 type NewsItemType = {
 	subject?: string
@@ -355,7 +355,7 @@ const recentNews = [
 	},
 ];
 
-export const newsItems: NewsItemType[] = [...recentNews, ...jsonNewsItems?.results]?.filter((n: NewsItemType) => n.dt && n.dt.length)?.map((n: NewsItemType) => {
+export const newsItems: NewsItemType[] = [...recentNews, ...newsItemsV1?.results]?.filter((n: NewsItemType) => n.dt && n.dt.length)?.map((n: NewsItemType) => {
 		const dt = n.dt.includes('-') ? moment(n.dt, 'YYYY-MM-DD HH:mm:SS').valueOf() : parseInt(n.dt, 10) * 1000;
 		return { ...n, dt: moment(dt).format('YYYY-MM-DD HH:mm:SS') }
 // @ts-ignore

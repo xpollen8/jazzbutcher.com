@@ -18,10 +18,11 @@ import releasesStatic from '@/../public/data/releases.json';
 
 const cache: HashedType = {};
 
-const censorEmail = (str: string) => {
-	const [ addr, fqdn ] = str.split('@');
+const censorEmail = (str?: string) => {
+	if (!str) return;
+	const [ addr, fqdn ] = str?.split('@');
 	if (!fqdn) return str;
-	const parts = fqdn.split('.');
+	const parts = fqdn?.split('.');
 	const top = parts.pop();
 	const domain = parts.join('.');
 	const blank = new Array(domain.length + Math.floor(Math.random() * 4)).join( '.' );
@@ -152,9 +153,9 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 	return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
 }
 
-const findRecent = (object: any, field: string, period: number, type: string) => {
+const findRecent = (noun: string, object: any, field: string, period: number, type: string) => {
 	// @ts-ignore
-	return returnResults(object?.results?.filter((r: any) => r[field] && moment(r[field]).isAfter(moment().subtract(period, type))).sort((a: any, b: any) => moment(b[field]) - moment(a[field])));
+	return returnResults(object?.results?.filter((r: any) => r[field] && moment(r[field]).isAfter(moment().subtract(period, type)))?.sort((a: any, b: any) => moment(b[field]) - moment(a[field])));
 }
 
 // @ts-ignore
@@ -230,24 +231,27 @@ const apiData = async (path: string, args?: string, formData?: any): Promise<Has
 			case 'feedback_delete':
 				return await apiDataFromDataServer(path, args);
 			case 'feedbacks':
-			case 'feedback_by_page':
+			case 'feedback_by_page': {
 				const data = await apiDataFromDataServer('feedback', args);
-				data.results = data?.results.map((r: CommentType) => ({
-					...r,
-					who: censorEmail(r?.who),
-				}));
+				data.results = data.results?.map((r: CommentType) => {
+					return {
+						...r,
+						who: censorEmail(r?.who),
+					}
+				});
 				return data;
+			}
 			case 'recent_releases': {
-				return findRecent(releasesStatic, 'dtadded', 6, 'months');
+				return findRecent(path, releasesStatic, 'dtadded', 6, 'years');
 			}
 			case 'recent_press': {
-				return findRecent(pressesStatic, 'dtadded', 6, 'months');
+				return findRecent(path, pressesStatic, 'dtadded', 6, 'months');
 			}
 			case 'recent_gigmedia': {
-				return findRecent(gigmediasStatic, 'credit_date', 6, 'months');
+				return findRecent(path, gigmediasStatic, 'credit_date', 6, 'months');
 			}
 			case 'recent_media': {
-				const { results } = await findRecent(gigsongsStatic, 'added', 3, 'months');
+				const { results } = await findRecent(path, gigsongsStatic, 'added', 3, 'months');
 				// join medias and gigs
 				return returnResults(results?.map((gs: any) => ({ ...gs, ...gigsStatic?.results?.find((g: any) => g.datetime === gs.datetime) || {} })));
 			}

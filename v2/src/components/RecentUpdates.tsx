@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import EmbedMedia from '@/components/EmbedMedia';
 import useRecentUpdates from '@/lib/useRecentUpdates';
-import { dateDiff, ts2URI } from '@/lib/utils';
+import { pluralize, dateDiff, ts2URI } from '@/lib/utils';
 import { feedbackURI2Pathname } from '@/lib/usePageComments';
 import { Attribution } from '@/components/GenericWeb';
 import { CommentBubble } from '@/components/PageComments';
@@ -14,7 +14,7 @@ const RecentPress = (props: any) => {
 	const { press } = props;
 	if (!press?.numResults) return;
 	return <details>
-		<summary className="tagClickable">Recent press <span className="smalltext">({press.numResults} items)</span></summary>
+		<summary className="tagClickable">{pluralize(press.numResults, 'press', 'Recently added')}</summary>
 			{press.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem clickListItem">
 					<div className="date">{dateDiff(p.dtadded, '')}</div>
@@ -28,16 +28,18 @@ const RecentFeedback = (props: any) => {
 	const { feedback } = props;
 	if (!feedback?.numResults) return;
 	return <details>
-		<summary className="tagClickable">Recent website comments: <CommentBubble className="commentBubbleSimple"/> <span className="smalltext superscript">{feedback.numResults}</span></summary>
+		<summary className="tagClickable">{pluralize(feedback.numResults, 'website comment', 'Recent')} <CommentBubble className="commentBubbleSimple"/></summary>
 		{feedback.results.map((p: any, key: number) => {
 			return <div key={key} className="listItem clickListItem">
-				<div className="date">{dateDiff(p.dtcreated, '')}</div>
-				<b>{p.subject}</b> <Link href={feedbackURI2Pathname(p.uri)}>{p.uri}</Link>
+				<b><Link href={feedbackURI2Pathname(p.uri)}>{p.uri}</Link></b> <span className="date">{dateDiff(p.dtcreated, '')}</span>
+				<div className="listItem">
+				<b>{p.subject}</b>
 				<blockquote>
 				{p.comments}
 				<br />
 				<b>{p.whence}</b>
 				</blockquote>
+				</div>
 			</div>
 		})}
 	</details>
@@ -52,12 +54,12 @@ const RecentGigMedia = (props: any) => {
 		results[p.type]?.push(p);
 	});
 	return <details>
-		<summary className="tagClickable">Recent gig images <span className="smalltext">({gigmedia.numResults} items)</span></summary>
+		<summary className="tagClickable">{pluralize(gigmedia.numResults, 'gig image', 'Recently added')}</summary>
 		{Object.keys(results)?.map((p: any, key: number) => {
 			const items = results[p];
 			return <div key={key} className="clickListItem">
 				<details>
-				<summary className="tagClickable">{p} <span className="smalltext">({items?.length} items)</span></summary>
+				<summary className="tagClickable">{pluralize(items?.length, p, 'Recently added')}</summary>
 					{items?.map((p: any, key: number) => {
 					const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
 					const thumb = href.replace(/.jpg/, '_250.jpg');
@@ -78,7 +80,7 @@ const RecentMedia = (props: any) => {
 	const { media } = props;
 	if (!media?.numResults) return;
 	return <details>
-		<summary className="tagClickable">Recent A/V <span className="smalltext">({media.numResults})</span></summary>
+		<summary className="tagClickable">{pluralize(media.numResults, 'audio', 'Recent')}</summary>
 			{media.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem clickListItem">
 					<div className="date">{dateDiff(p.dtcreated || p.added, '')}</div>
@@ -92,7 +94,7 @@ const RecentReleases = (props: any) => {
 	const { releases } = props;
 	if (!releases?.numResults) return;
 	return <details>
-		<summary className="tagClickable">Recent releases updates: {releases.numResults}</summary>
+		<summary className="tagClickable">{pluralize(releases.numResults, 'release', 'Recently added')}</summary>
 		<blockquote>
 			{releases.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">

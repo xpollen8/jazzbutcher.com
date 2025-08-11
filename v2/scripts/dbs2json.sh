@@ -18,23 +18,25 @@ OUTPUT_DIR="../public/data"
 function _fetch () {
 	remote=$1
 	file=$2
-	echo "fetching $remote into $TEMP_DIR/$file ($OUTPUT_DIR/$file)"
+	echo "#fetching $remote into $TEMP_DIR/$file ($OUTPUT_DIR/$file)"
 	curl -s -o $TEMP_DIR/$file $remote
 	diffResult=$(diff --ignore-all-space --brief $TEMP_DIR/$file $OUTPUT_DIR/$file 2>&1)
 	if [ "$diffResult" != "" ]; then
-		echo "!!!!!!!!!!!!!!!!!!!!!!!"
-		echo "Data change detected in: $file."
-		echo "Consider updating $OUTPUT_DIR/$file with $TEMP_DIR/$file"
-		echo "--- OLD ---"
-		/bin/ls -latr $OUTPUT_DIR/$file
-		echo "--- NEW ---"
-		/bin/ls -latr $TEMP_DIR/$file
-		echo "--- COPY/PASTE ---"
+		OLD=$(/bin/ls -latr $OUTPUT_DIR/$file)
+		NEW=$(/bin/ls -latr $TEMP_DIR/$file)
+		echo "#!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "#Data change detected in: $file."
+		echo "#Consider updating $OUTPUT_DIR/$file with $TEMP_DIR/$file"
+		echo "#--- OLD ---"
+		echo "#$OLD"
+		echo "#--- NEW ---"
+		echo "#$NEW"
+		echo "#--- COPY/PASTE ---"
 		echo "(cp -p  $TEMP_DIR/$file $OUTPUT_DIR/$file && git commit -m \"updated from $remote\" $OUTPUT_DIR/$file)"
 		echo
 		echo
 	else
-		echo "(no change to $file)"
+		echo "#(no change to $file)"
 	fi
 }
 

@@ -8,8 +8,6 @@ import Memorial from '@/components/Memorial';
 import { BookSikkorski, BookMiraclesAndWonders } from '@/components/Books';
 import { MostRecentNews } from '@/components/News';
 import Tag from '@/components/Tag';
-import { startSeconds } from '@/lib/utils';
-import GigPlayer, { GigPlayerHeader, GigPlayerFooter } from '@/components/GigPlayer';
 
 const relatedReleases = {
 	title: 'All Shall Be Well',

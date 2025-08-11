@@ -4,8 +4,13 @@ import moment from 'moment';
 import * as XLSX from 'xlsx';
 
 import { localDate } from '@/lib/utils';
-import { type HashedType, type RecordType, type CommentType } from '@/lib/utils';
+import { returnResults, type HashedType, type RecordType, type CommentType } from '@/lib/utils';
 
+import gigsongsStatic from '@/../public/data/gigsongs.json';
+import gigmediasStatic from '@/../public/data/gigmedias.json';
+import mediasStatic from '@/../public/data/medias.json';
+import gigtextsStatic from '@/../public/data/gigtexts.json';
+import performancesStatic from '@/../public/data/performances.json';
 import gigsStatic from '@/../public/data/gigs.json';
 import pressesStatic from '@/../public/data/presses.json';
 import lyricsStatic from '@/../public/data/lyrics.json';
@@ -147,8 +152,13 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 	return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
 }
 
+const findRecent = (object: any, field: string, period: number, type: string) => {
+	// @ts-ignore
+	return returnResults(object?.results?.filter((r: any) => r[field] && moment(r[field]).isAfter(moment().subtract(period, type))).sort((a: any, b: any) => moment(b[field]) - moment(a[field])));
+}
+
 // @ts-ignore
-const apiData = async (path: string, args?: string, formData?: any) => {
+const apiData = async (path: string, args?: string, formData?: any): Promise<HashedType> => {
 	//console.log("apiData", { path, args, formData });
 
 	if (formData) {
@@ -175,6 +185,28 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				return gigsStatic;
 				break;
 			case 'gig_by_datetime':
+				const datetime = args?.replace(/%20/g, ' ');
+				const gigs = gigsStatic?.results?.find((g: RecordType) => g?.datetime === datetime);
+				const played = gigsongsStatic?.results?.filter((g: RecordType) => g?.datetime === datetime);
+				const media = gigmediasStatic?.results?.filter((g: RecordType) => g?.datetime === datetime);
+				const text = gigtextsStatic?.results?.filter((g: RecordType) => g?.datetime === datetime);
+				const players = performancesStatic?.results?.filter((g: RecordType) => g?.datetime === datetime);
+				const press = pressesStatic?.results?.filter((g: RecordType) => g?.dtgig === datetime);
+				// assumes gigs are already sorted by date by API
+				const indexOfGig = gigsStatic?.results?.map((g: RecordType, index: number) => ({ index, ...g }))?.find((g: RecordType) => g.gig_id === gigs?.gig_id)?.index || -1;
+				const next = [ indexOfGig > -1 ? gigsStatic?.results[indexOfGig + 1] : {} ];
+				const prev = [ indexOfGig > -1 ? gigsStatic?.results[indexOfGig - 1] : {} ];
+				return {
+					...gigs,
+					played,
+					media,
+					text,
+					players,
+					press,
+					prev,
+					next,
+				}
+				break;
 			case 'gigmedias':
 			case 'gigtexts':
 			case 'gigsongs':
@@ -193,9 +225,6 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			case 'press_by_href':
 			case 'presses_for_admin':
 			case 'songs_by_datetime':
-			case 'recent_press':
-			case 'recent_media':
-			case 'recent_gigmedia':
 			case 'on_this_day':
 			case 'recent_feedback':
 			case 'feedback_delete':
@@ -209,19 +238,25 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				}));
 				return data;
 			case 'recent_releases': {
-				const releases = await apiDataFromHTDBServer('db_albums/data.json');
-				// @ts-ignore
-				releases.results = releases?.results?.filter((r: any) => r?.dtadded && moment(r.dtadded).isAfter(moment().subtract(6, 'months'))).sort((a: any, b: any) => moment(b.dtadded) - moment(a.dtadded));
-				//console.log("RELEASE", releases.results);
-				releases.numResults = releases?.results?.length;
-				return releases;
+				return findRecent(releasesStatic, 'dtadded', 6, 'months');
+			}
+			case 'recent_press': {
+				return findRecent(pressesStatic, 'dtadded', 6, 'months');
+			}
+			case 'recent_gigmedia': {
+				return findRecent(gigmediasStatic, 'credit_date', 6, 'months');
+			}
+			case 'recent_media': {
+				const { results } = await findRecent(gigsongsStatic, 'added', 3, 'months');
+				// join medias and gigs
+				return returnResults(results?.map((gs: any) => ({ ...gs, ...gigsStatic?.results?.find((g: any) => g.datetime === gs.datetime) || {} })));
 			}
 			case 'recent_updates': {
-				const press = await apiDataFromDataServer('recent_press', args);
-				const media = await apiDataFromDataServer('recent_media', args);
-				const gigmedia = await apiDataFromDataServer('recent_gigmedia', args);
+				const press = await apiData('recent_press', args);
+				const media = await apiData('recent_media', args);
+				const gigmedia = await apiData('recent_gigmedia', args);
+				const releases = await apiData('recent_releases', args);
 				const feedback = await apiDataFromDataServer('recent_feedback', args);
-				const releases: HashedType = await apiData('recent_releases', args);
 				return {
 					press,
 					gigmedia,
@@ -231,7 +266,7 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 				}
 			}
 			case 'lyric_by_href': {
-				const releases = await apiDataFromHTDBServer('db_albums/data.json');
+				const releases = await apiData('releases', args);
 				const lyrics = await apiDataFromDataServer('lyric_by_href', args);
 				const title = lyrics?.results[0]?.title;
 				const song = encodeURIComponent(title);
@@ -327,15 +362,21 @@ const apiData = async (path: string, args?: string, formData?: any) => {
 			}
 			case 'releases':
 				return releasesStatic;
-				//return await apiDataFromHTDBServer('db_albums/data.json');
 				break;
+			/* REPLACED
 			case 'release_by_lookup': {
 				const results = releasesStatic?.results?.filter((r: any) => r.lookup === args || r.href === `/albums/${args}.html`);
-				return { results };
+				return { results, numResults: results?.length };
 				//if (args)
 				//return await apiDataFromHTDBServer(`db_albums/data.json?lookup=${args}`);
 			}
+			*/
 		}
+	}
+	return {
+		noun: path,
+		results: [],
+		numResults: 0,
 	}
 }
 

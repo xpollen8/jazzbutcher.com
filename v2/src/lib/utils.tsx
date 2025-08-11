@@ -40,7 +40,7 @@ export const parseHour = (datetime: string): number => parseInt(localDate(dateti
 export const parseHourAMPM = (datetime: string) => moment(localDate(datetime)).format('LT')
 export const parseDayOrdinal = (datetime: string) => moment.localeData().ordinal(parseDay(datetime))
 
-export const localDate = (ts: string): string => moment.utc(ts).format('YYYY-MM-DD HH:mm:ss');
+export const localDate = (ts: string): string => ts; // moment.utc(ts).format('YYYY-MM-DD HH:mm:ss');
 export const datesEqual = (ts1: string, ts2: string) => localDate(ts1) === localDate(ts2);
 
 export const padZero = (s: any): string => {
@@ -331,4 +331,9 @@ export const parseImage = (str?: string, width: number = 250) => {
 	}
 }
 
-export const pluralize = (num: number, str: string, prefix?: string) => ((prefix) ? `${prefix} ` : '') + ((num) ? num : 'No') + ' ' + str + ((num !== 1) ? 's' : '');
+export const pluralize = (num: number, str: string, prefix?: string) => <>
+	{(prefix) && `${prefix} `}
+	{str + ((num !== 1) ? (str?.endsWith('s') || str?.endsWith('x') || str?.endsWith('ia') || str?.endsWith('io') ? '' : 's') : '')} <span className="smalltext">({(num) ? num : 'None'})</span>
+</>
+
+export const returnResults = (results: any) => ({ results, numResults: results?.length });

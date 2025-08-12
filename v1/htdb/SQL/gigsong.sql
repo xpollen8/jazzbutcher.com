@@ -3159,6 +3159,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',NULL,1,7,'She\'s 
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',NULL,1,8,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-08 00:00:00','set',NULL,1,9,'Who Loves You Now?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'2001-07-11 22:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,"https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20010711/2001071122_JazzButcher_CafeDuNorde_Master_EQd.mp3","David Whittemore",NULL,NULL,"2025-08-12");
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-11 22:00:00','set',NULL,1,1,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-11 22:00:00','set',NULL,1,2,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2001-07-11 22:00:00','set',NULL,1,3,'Girls Say Yes',NULL,"this song is for Deirdre",NULL,NULL,NULL,NULL,NULL,NULL);

@@ -378,7 +378,7 @@
 
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		photosets=
-			/images/19920524/19920524_wem_hmv_01_40162413563_o.jpg$$
+			/images/19920524/19920524_wem_hmv_01_40162413563_o.jpg;;West Edmonton Mall - HMV$$
 			/images/19920524/19920524_wem_hmv_02_47075010332_o.jpg$$
 			/images/19920524/19920524_wem_hmv_03_40162412283_o.jpg$$
 			/images/19920524/19920524_wem_hmv_04_47075009242_o.jpg$$
@@ -410,7 +410,7 @@
 			/images/19920524/19920524_wem_hmv_30_47074995212_o.jpg$$
 			/images/19920524/19920524_wem_hmv_31_47127345271_o.jpg$$
 			/images/19920524/19920524_wem_hmv_32_47074994712_o.jpg$$
-			https://www.flickr.com/photos/164658904\@N04/albums/72157706909453154
+			Auersberger;;https://www.flickr.com/photos/164658904\@N04/albums/72157706909453154;;2021-10-06
 
 	)}
 

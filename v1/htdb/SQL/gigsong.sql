@@ -2571,8 +2571,21 @@ INSERT INTO `gigsong` VALUES (NULL,'1997-09-16 00:00:00','set',"02:12:10",1,12,'
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-16 00:00:00','set',"02:33:13",1,13,"Zombie Love",NULL,NULL,NULL,NULL,NULL,NULL,02:33:33;;bass practice$$02:33:46;;guitar instruction$$02:34:25;;false start$$02:34:49;;complete run-through",NULL);
 
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',NULL,1,0,'The Entire Practice',NULL,"Live mix to DAT in practice room - 8 channel digital still to be mixed",NULL,"https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19970917/19970917_JBC_Seattle_Practice_EQd_DAT.mp3",'David Whittemore',NULL,NULL,"2025-08-12");
-INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',NULL,1,1,'Girlfriend',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/19970917/19970917_JBC_SeattlePractice_Girlfriend.mp3','David Whittemore','http://davidwhittemore.com',NULL,"2012-09-21");
-INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',NULL,1,2,'Pineapple Tuesday',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/19970917/19970917_JBC_SeattlePractice_PineappleTuesday.mp3','David Whittemore','http://davidwhittemore.com',NULL,"2012-09-21");
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"00:00",1,1,"Roadrunner","Jonathan Richman",NULL,NULL,NULL,NULL,NULL,"00:38;;run-through$$",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"06:26",1,2,"Mr. Odd",NULL,NULL,NULL,NULL,NULL,NULL,"06:26;;false start - perfect sounding guitar$$06:59;;false start$$07:15;;run-through$$09:59;;cuts off!",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"10:00",1,3,'Girlfriend',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/19970917/19970917_JBC_SeattlePractice_Girlfriend.mp3','David Whittemore','http://davidwhittemore.com',NULL,"2012-09-21");
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"15:33",1,4,"Partytime",NULL,NULL,NULL,NULL,NULL,NULL,"15:56;;run-through - flawless rendition$$",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"21:21",1,5,"Angels",NULL,NULL,NULL,NULL,NULL,NULL,"24:33;;'here comes the breakdown'$$",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"27:38",1,6,"The Basement",NULL,NULL,NULL,NULL,NULL,NULL,"28:17;;run-through$$",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"32:11",1,7,"Bigfoot Motel",NULL,NULL,NULL,NULL,NULL,NULL,"33:42;;run-through$$",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"37:40",1,8,"Caroline Wheeler's Borthday Present",NULL,NULL,NULL,NULL,NULL,NULL,"39:00;;run-through$$",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"44:04",1,9,"Rain",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"49:32",1,10,"Real Men",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"54:03",1,11,"Soul Happy Hour",NULL,NULL,NULL,NULL,NULL,NULL,"57:18;;practice",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"58:10",1,12,"Southern Mark Smith",NULL,NULL,NULL,NULL,NULL,NULL,"58:24;;run-through$$01:02:58;;'bloody hell'$$01:04:12;;practice ending$$01:05:10;;practice ending$$01:06:17;;practice ending$$",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"01:09:38",1,13,"Zombie Love",NULL,NULL,NULL,NULL,NULL,NULL,"01:13:13;;'zombie, zombie, zombie' - coaching the ritardando$$",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-17 00:00:00','set',"01:20:12",1,14,'Pineapple Tuesday',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/19970917/19970917_JBC_SeattlePractice_PineappleTuesday.mp3','David Whittemore','http://davidwhittemore.com',"01:24:45;;end of practice chatter","2012-09-21");
+
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-19 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,"Live mix to DAT - 8 channel digital still to be mixed",NULL,"https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19970919/19970919_JazzButcher_Seattle_Master_Flat_DAT.mp3",'David Whittemore',NULL,NULL,"2025-08-12");
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-19 00:00:00','encore',NULL,1,1,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-19 00:00:00','set',NULL,1,1,'Whaddya?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

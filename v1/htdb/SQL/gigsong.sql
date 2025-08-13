@@ -5143,34 +5143,33 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-11-08 00:00:00','set',NULL,1,17,'Panic 
 UNLOCK TABLES;
 
 --  1988-08-22  shintomo  -  tomoko shintani
---  "Real Men"
---  "Looking For Lot 49"
---  "Out of Touch"
---  "Angels"
---  "The Best Way"
---  "Caroline Wheeler's Birthday Present"
---  "Partytime"
---  "D.R.I.N.K."
---  "Spooky"
---  "Blame"
---  "Grey Flanelette"
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,0,"The Entire Performance",NULL,"loud, distorted",NULL,"https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19880822/19880822_JazzButcher_Dingwalls_shintomo.mp3","Tomoko Shintani",NULL,NULL,"2025-08-12");
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,1,"Real Men",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,2,"Looking For Lot 49",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,3,"Out of Touch",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,4,"Angels",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,5,"The Best Way",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,6,"Caroline Wheeler's Birthday Present",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,7,"Partytime",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,8,"Soul Happy Hour",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,9,"Spooky",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,10,"Blame",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,11,"Grey Flanelette",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 --  
 --  1988-09-08  shintomo  -  tomoko shintani
---  "D.R.I.N.K."
---  "Domestic Animal"
---  "Only A Rumour"
---  "Hungarian Love Song "
---  "Girls Who Keep Goldfish"
---  "Lisa Says", "Lou Reed", "excerpt"
---  "Girlfriend"
---  "Swell"
---  "Angels" "this is a song about a dead cat"
---  ---
---  set2
---  "Stand By Me", "Ben E. King", "Alan McGee, guitar"
---  "Roadrunner","Jonathan Richman", "Alan McGee, guitar"
---  encore1
---  "Speedy Gonzalez", "Hess, Kaye, Lee", "Alan McGee, guitar"
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,0,"The Entire Performance",NULL,NULL,NULL,"https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19880908/19880908_PatFish_MarketTavern_shintomo.mp3","Tomoko Shintani",NULL,NULL,"2025-08-12");
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,1,"Soul Happy Hour",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,2,"Domestic Animal",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,3,"Only A Rumour",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,4,"Hungarian Love Song ",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,5,"Lisa Says","Lou Reed","excerpt",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,6,"Girls Who Keep Goldfish",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,7,"Girlfriend",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,8,"Swell",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,9,"Angels",NULL,"this is a song about a dead cat",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','encore',NULL,1,10,"Stand By Me","Ben E. King","Alan McGee, guitar",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','encore',NULL,1,11,"Roadrunner","Jonathan Richman","Alan McGee, guitar",NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','encore',NULL,2,12,"Speedy Gonzalez","Hess, Kaye, Lee","Alan McGee, guitar",NULL,NULL,NULL,NULL,NULL,NULL);
 
 update gig set extra=concat('songlist,',extra) where extra not like '%songlist%' and datetime in (select distinct datetime from gigsong);
 update gig set extra=concat('recording,',extra) where extra not like '%recording%' and datetime in (select distinct datetime from gigsong where mediaurl like '%audio%');

@@ -163,7 +163,7 @@ const GigPlayed = (data: any) => {
 	data?.filter((d:any) => d?.mediaurl?.includes('.mp3') && d.ordinal === 0)?.forEach((d:any) => {
 		const { type, setnum, ordinal, song, comment, mediaurl, mediaurlcredit } = d;
 		// add if in playlist format (start is set)
-		const inSet = data?.filter((d:any) => d.start !== null);
+		const inSet = data?.filter((d:any) => d.start);
 		if (inSet?.length) {
 			playlists.push({
 				src: mediaurl,
@@ -193,7 +193,7 @@ const GigPlayed = (data: any) => {
 	const updateSet = (newSet: string) => set=newSet;
 	return <Iterator className="listItem" data={playlists?.length ? playlists : data} func={(({ data }: any) => {
 		// @ts-ignore
-		if (data?.tracks?.length) return <TheGigPlayer {...data} header=<GigPlayerHeader artist={data?.comment} venue={data?.song} /> footer=<GigPlayerFooter credit={data?.mediacredit} crediturl={data?.mediacrediturl} source={data?.mediaurl} /> />
+		if (data?.tracks?.length) return <TheGigPlayer {...data} header=<GigPlayerHeader artist={data?.comment} venue={data?.song} /> footer=<GigPlayerFooter credit={data?.mediacredit} crediturl={data?.mediacrediturl} source={data?.mediaurl} added={data?.added} /> />
 		// else fallthrough to single song format
 		let banner;
 		if (data.type !== type || data.setnum !== set) {

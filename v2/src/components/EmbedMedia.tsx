@@ -147,8 +147,9 @@ const	EmbedSoundCloud = ({ data = {}, children }: { data: any, children?: React.
 }
 
 const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { data: any, className?: string, children?: React.ReactNode, disableVideo?: boolean }) => {
-	const { version, lookup, autolink=false, parent, datetime, venue, city, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate, collection } = data;
+	const { version, lookup, autolink=false, parent, datetime, venue, city, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate, collection, added } = data;
 
+	console.log("EmbedMedia", { mediacreditdate, added });
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);
 	const useMediaurl = mediaurl && imageBase(mediaurl);
@@ -193,7 +194,7 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 			} else if (useMediaurl?.includes('.mp3') || useMediaurl?.includes('google')) {
 				return (<>
 					<LinkAudio version={version} lookup={lookup} parent={parent} title={useTitle} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={useArtist} author={useAuthor} comment={comment} ordinal={ordinal} setnum={setnum} collection={collection} />
-					{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
+					{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate || added} /></>}
 					{collection}
 					{children}
 				</>)
@@ -211,7 +212,7 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 					{/*(comment) && <span className="smalltext">{' '} ({comment}) </span>*/}
 					<EmbedVideo className={className} data={data} />
 					{children}
-					{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>}
+					{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate || added} /></>}
 				</div>);
 			}
 		} else {
@@ -220,7 +221,7 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 				{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
 				{(useAuthor) && <span className="smalltext"> ({expandAll(useAuthor)}) </span>}
 				{(comment) && <span className="smalltext"> ({expandAll(comment)}) </span>}
-				{/*(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} /></>*/}
+				{/*(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate || added} /></>*/}
 			</div>);
 		}
 	}

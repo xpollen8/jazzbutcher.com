@@ -149,7 +149,6 @@ const	EmbedSoundCloud = ({ data = {}, children }: { data: any, children?: React.
 const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { data: any, className?: string, children?: React.ReactNode, disableVideo?: boolean }) => {
 	const { version, lookup, autolink=false, parent, datetime, venue, city, type, setnum, ordinal, title, song, artist, author, comment, performers, mediaurl, mediacredit, mediacrediturl, mediacreditdate, collection, added } = data;
 
-	console.log("EmbedMedia", { mediacreditdate, added });
 	// const mediaDomain = parseDomain(mediaurl);
 	// const creditDomain = parseDomain(mediacrediturl);
 	const useMediaurl = mediaurl && imageBase(mediaurl);

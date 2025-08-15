@@ -4,7 +4,7 @@ import Image from 'next/image';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import Tag from '@/components/Tag';
 import EmbedMedia from '@/components/EmbedMedia';
-import { dateDiff } from '@/lib/utils';
+import { pluralize, dateDiff, dateAgo } from '@/lib/utils';
 import { Credit } from '@/components/GenericWeb';
 
 import newsItemsV1 from '@/../public/data/newsV1.json';
@@ -382,7 +382,7 @@ const News = () => {
 	});
 	return <>
 		<details>
-			<summary className="tagClickable">Website changelog <span className="smalltext">({newsItems?.length} items)</span></summary>
+			<summary className="tagClickable">{pluralize(newsItems?.length, 'changelog', 'Website')} {dateAgo(newsItems[0]?.dt)}</summary>
 			{Object.keys(years)?.sort((a: string, b: string) => parseInt(b) - parseInt(a))?.map((year: string, key: number) => {
 				const dat = years[year];
 				return <details key={key} className="clickListItem">

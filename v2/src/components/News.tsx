@@ -21,6 +21,21 @@ type NewsItemType = {
 const recentNews = [
 	{
 		subject: `Website/search improvement`,
+		dt: '2025-08-15',
+		category: 'maintenance',
+		credit: 'David Whittemore',
+		body: <>
+			Whole lotta changes to backend data handling - most data now comes
+			from static JSON instead of live database calls.  This should result
+			in a snappier response.
+			<p />
+			Contributors to the website are now highlighted in the <b>Community contributions</b>
+			section.
+			<p />
+		</>
+	},
+	{
+		subject: `Website/search improvement`,
 		dt: '2025-08-05',
 		category: 'maintenance',
 		credit: 'David Whittemore',
@@ -369,7 +384,13 @@ const displayNewsItem = (n: NewsItemType, key: number) => {
 	</MakeSimpleURI>
 }
 
-export const MostRecentNews = () => <><Tag>Most recent website change <span className="smalltext">({newsItems[0]?.dt?.substr(0, 10)})</span></Tag>{displayNewsItem(newsItems[0] as NewsItemType, 0)}<News /></>;
+export const MostRecentNews = () => <>
+	<details>
+	<summary className="tagClickable"> {pluralize(newsItems?.length, 'website change', 'Most recent')} {dateAgo(newsItems[0]?.dt)}</summary>
+		{displayNewsItem(newsItems[0] as NewsItemType, 0)}
+		<News />
+	</details>
+</>
 
 const News = () => {
 	const years: Record<string, NewsItemType[]> = {};
@@ -382,7 +403,7 @@ const News = () => {
 	});
 	return <>
 		<details>
-			<summary className="tagClickable">{pluralize(newsItems?.length, 'changelog', 'Website')} {dateAgo(newsItems[0]?.dt)}</summary>
+			<summary className="tagClickable">{pluralize(newsItems?.length, 'changelog', 'Full')} {dateAgo(newsItems[0]?.dt)}</summary>
 			{Object.keys(years)?.sort((a: string, b: string) => parseInt(b) - parseInt(a))?.map((year: string, key: number) => {
 				const dat = years[year];
 				return <details key={key} className="clickListItem">

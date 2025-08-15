@@ -121,6 +121,22 @@ export const dateDisplay = (dt?: string, sep: string = ' - ') => {
 	return <span className={`date ${unknownYear}`} />
 }
 
+export const dateAgo = (dt?: string, sep: string = ' - ') => {
+	const [orig, iy,im,id,ihh,imm,iss, unknownYear, unknownMonth, unknownDay]: any = parseDate(dt) || [];
+	if (!dt) return;
+	if (!unknownYear) {
+		const padDate = (dt: number[]) => {
+			const [iy,im,id,ihh,imm,iss] = dt || [];
+			return localDate(`${iy}-${padZero(im)}-${padZero(id)} ${padZero(ihh)}:${padZero(imm)}:${padZero(iss)}`);
+		}
+		const compare = padDate([iy,im || 1,id || 1,ihh,imm,iss]);
+		const prettyAgo = moment(compare).startOf('hour').fromNow();
+		return (<>
+			{sep}
+			<span className={`smalltext`}>({prettyAgo})</span>
+		</>)
+	}
+}
 export const dateDiff = (dt?: string, sep: string = ' - ') => {
 	const [orig, iy,im,id,ihh,imm,iss, unknownYear, unknownMonth, unknownDay]: any = parseDate(dt) || [];
 	if (!dt) return;

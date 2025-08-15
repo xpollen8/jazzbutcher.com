@@ -2,7 +2,7 @@
 	${gigHeader(
 		cost=£12,
 		with=${literalizeCommas(
-			Piss Shivers, Venus Flytrap, Woodentops, Tim Keegan
+			Piss Shivers, Venus Flytrap, The Woodentops, Tim Keegan
 		)},
 		notes=${literalizeCommas(
 		<p>

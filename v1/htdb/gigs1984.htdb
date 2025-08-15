@@ -273,7 +273,7 @@
 		${w}, ${q(7)}, ${p(B)}
 	)},
 		photosets= /images/19841208/19841208_indge_trio.jpg;;${literalizeCommas(Pat, me and Max at the wonderful Onkel Pö club in Hamburg - which is where, as it it happens, I met the love of my life Bärbel, 37 years ago today.. Not 100 percent certain, but I think the photo was taken by ${indge})}$$
-			${owen};;;;2021-12-08
+			Owen Jones;;;;2021-12-08
 	)}
 
 #define	Dec9.html()
@@ -310,9 +310,10 @@
 		<p>
 		Total overload of mic coz Rolo is down the front!
 	)},
-	photosets= /images/19841230/19841230_pat.jpg$$,
+	photosets= /images/19841230/19841230_pat.jpg$$
+		;;;;2017-04-28,
 	posters=/images/19841230/19841230_poster.jpg$$
-		https://twitter.com/Birmingham_81/status/1191801384968032256/photo/1;;;;2019-11-06
+		Birmingham_81;;https://twitter.com/Birmingham_81/status/1191801384968032256/photo/1;;;;2019-11-06
 
 	)}
 

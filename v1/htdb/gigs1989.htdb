@@ -310,7 +310,7 @@
 
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
 	posters=/images/19891004/19891004_poster.jpg$$
-		https://twitter.com/nothingelseon/status/1474281400228483073/photo/1;;;;2021-12-24
+		nothingelseon;;https://twitter.com/nothingelseon/status/1474281400228483073/photo/1;;;;2021-12-24
 
 	)}
 
@@ -810,7 +810,7 @@
 		pat=${literalizeCommas( The last great rock & roll concert of the eighties.
 	)},
 	posters=/images/19891229/19891229_poster.jpg$$
-		https://twitter.com/jo_bartlett/status/1493884322214203392;;;;2022-02-16
+		jo_bartlett;;https://twitter.com/jo_bartlett/status/1493884322214203392;;;;2022-02-16
 
 	)}
 

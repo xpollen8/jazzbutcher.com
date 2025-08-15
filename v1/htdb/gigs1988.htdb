@@ -494,7 +494,7 @@
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
 		posters=/images/19880602/19880602_poster.jpg$$
-			https://twitter.com/MHoganSays/status/1270094614813261824;;;;2020-06-09
+			MHoganSays;;https://twitter.com/MHoganSays/status/1270094614813261824;;;;2020-06-09
 
 	)}
 
@@ -790,7 +790,7 @@
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
 		with=${literalizeCommas( Robyn Hitchcock)},
 		posters=/images/19881006/19881006_poster.jpg$$
-			https://askingtree.com/gigs/246;;;;2023-01-22
+			askingtree;;https://askingtree.com/gigs/246;;;;2023-01-22
 
 	)}
 
@@ -822,7 +822,7 @@
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
 		with=${literalizeCommas( Spacemen 3, The Sun Carriage)},
 		posters=/images/19881101/19881101_poster.jpg$$
-			https://twitter.com/spacemen3/status/784304225752784897;;;;2021-10-06
+			spacemen3;;https://twitter.com/spacemen3/status/784304225752784897;;;;2021-10-06
 
 	)}
 

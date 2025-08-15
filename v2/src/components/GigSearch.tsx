@@ -345,7 +345,6 @@ export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: b
 	const makeGigRow = (record: RecordType, key: number) => {
 		const useG = (record?.gig) ? record.gig : record;
 		const types = determineTypes(record);
-		console.log("TYPES", useG?.extra);
 		const datetime = record?.datetime?.substring(0, 10).replace(/-/g, '');
 		const year = parseYear(datetime);
 		let poster = (useG?.extra?.includes('poster')) ? `https://v1.jazzbutcher.com/images/${datetime}/${datetime}_poster_250.jpg` : undefined;
@@ -373,7 +372,6 @@ export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: b
 			//{ type: 'pat', func: IconPat },
 			//{ type: 'self', func: IconPatReview },
 			].filter((a: any) => useG?.extra?.includes(a?.type));;
-			console.log("EXTRAS", extras);
 
 		return (<div className="tagClickable w-full mt-3" style={{ background: '#cceeff', border: '1px solid #777', paddingLeft: '3px' }}>
 			<Link key={key} href={`/gigs/${ts2URI(record?.datetime)}`} style={{ color: '#333' }}>

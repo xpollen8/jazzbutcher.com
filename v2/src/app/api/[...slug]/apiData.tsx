@@ -8,7 +8,7 @@ import { returnResults, type HashedType, type RecordType, type CommentType } fro
 
 import gigsongsStatic from '@/../public/data/gigsongs.json';
 import gigmediasStatic from '@/../public/data/gigmedias.json';
-import mediasStatic from '@/../public/data/medias.json';
+//import mediasStatic from '@/../public/data/medias.json';
 import gigtextsStatic from '@/../public/data/gigtexts.json';
 import performancesStatic from '@/../public/data/performances.json';
 import gigsStatic from '@/../public/data/gigs.json';
@@ -153,13 +153,44 @@ const apiDataFromDataServer = async (path: string, args?: string) => {
 	return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}/${args || ''}`);
 }
 
-const findRecent = (noun: string, object: any, field: string, period: number, type: string) => {
-	// @ts-ignore
-	return returnResults(object?.results?.filter((r: any) => r[field] && moment(r[field]).isAfter(moment().subtract(period, type)))?.sort((a: any, b: any) => moment(b[field]) - moment(a[field])));
+const forceDT = (dt?: string): string => {
+	if (!dt) return '';
+	const [ useDT ] = dt.split(' ');
+	if (!useDT) return '';
+	return new Date(Date.parse(useDT?.replace(/-00/g, '-01'))).toISOString().substr(0, 10);
+}
+
+const findRecent = (noun: string, object: any, fields: string[] , options?: HashedType ) => {
+	const { value = 6, units = 'months' } = options || {};
+	const findValue = (obj: HashedType, fields: string[]) => {
+		const useField = fields?.find((f: string) => (f && obj[f]?.length)) || fields[0];
+		const useVal = useField && forceDT(obj[useField]?.trim());
+		return [ useVal, useField ];
+	}
+	const sortValues = (b: any, a: any) => {
+		const [ valB, fieldB ] = findValue(b, fields);
+		const [ valA, fieldA ] = findValue(a, fields);
+		return ('' + valA || '').localeCompare(valB || '')
+	}
+	//console.log("findRecent", { noun, fields, value, units });
+	if (options?.limit) {
+		return returnResults(object?.results?.sort(sortValues)?.slice(0, options.limit));
+	}
+
+	return returnResults(object?.results?.filter((r: any) => {
+		const [ useVal, useField ] = findValue(r, fields) || [];
+		return useVal && moment(useVal).isAfter(moment().subtract(value, units));
+	})?.sort(sortValues));
 }
 
 // @ts-ignore
-const apiData = async (path: string, args?: string, formData?: any): Promise<HashedType> => {
+const apiData = async (path: string, args?: any, formData?: any): Promise<HashedType> => {
+	if (typeof args === 'string') {
+		// decode any encoded JSON object being passed in as args
+		args = decodeURI(args);
+		// if args is now an object, parse out
+		if (args?.startsWith('{')) { args = JSON.parse(args); }
+	}
 	//console.log("apiData", { path, args, formData });
 
 	if (formData) {
@@ -208,9 +239,7 @@ const apiData = async (path: string, args?: string, formData?: any): Promise<Has
 					next,
 				}
 				break;
-			case 'gigmedias':
 			case 'gigtexts':
-			case 'gigsongs':
 			case 'performances':
 			case 'audio':
 			case 'unreleased_audio':
@@ -220,7 +249,6 @@ const apiData = async (path: string, args?: string, formData?: any): Promise<Has
 			case 'release_video_by_project':
 			case 'live_video_by_project':
 			case 'video':
-			case 'medias':
 			case 'credits_by_release':
 			case 'presses_by_release':
 			case 'press_by_href':
@@ -241,32 +269,56 @@ const apiData = async (path: string, args?: string, formData?: any): Promise<Has
 				});
 				return data;
 			}
+			case 'gigmedias': {
+				return gigmediasStatic;
+			}
 			case 'recent_releases': {
-				return findRecent(path, releasesStatic, 'dtadded', 6, 'months');
+				return findRecent(path, releasesStatic, ['dtadded','dtreleased','datetime'], args?.releases);
 			}
 			case 'recent_press': {
-				return findRecent(path, pressesStatic, 'dtadded', 6, 'months');
+				return findRecent(path, pressesStatic, ['dtadded','dtpublished','datetime'], args?.press);
 			}
 			case 'recent_gigmedia': {
-				return findRecent(path, gigmediasStatic, 'credit_date', 6, 'months');
+				const gigmedias = await apiData('gigmedias');
+				return findRecent(path, gigmedias, ['credit_date','added','datetime'], args?.gigmedia);
 			}
-			case 'recent_media': {
-				const { results } = await findRecent(path, gigsongsStatic, 'added', 3, 'months');
+			case 'recent_gigsongs_media': {
+				const gigsong_media =  await apiData('gigsongs_media', args);
+				const { results } = await findRecent(path, gigsong_media, ['added','datetime'], args?.gigsong_media);
 				// join medias and gigs
-				return returnResults(results?.map((gs: any) => ({ ...gs, ...gigsStatic?.results?.find((g: any) => g.datetime === gs.datetime) || {} })));
+				const joined = results?.map((gs: any) => ({ ...gs, ...gigsStatic?.results?.find((g: any) => g.datetime === gs.datetime) || {} }));
+				return returnResults(joined);
 			}
 			case 'recent_updates': {
 				const press = await apiData('recent_press', args);
-				const media = await apiData('recent_media', args);
+				const gigsong_media = await apiData('recent_gigsongs_media', args);
 				const gigmedia = await apiData('recent_gigmedia', args);
 				const releases = await apiData('recent_releases', args);
 				const feedback = await apiDataFromDataServer('recent_feedback', args);
 				return {
 					press,
 					gigmedia,
-					media,
+					gigsong_media,
 					feedback,
 					releases
+				}
+			}
+			case 'gigsongs': {
+				return gigsongsStatic;
+			}
+			case 'gigsongs_media': {
+				const { results } = await apiData('gigsongs');
+				return returnResults(results?.filter((g: any) => g?.mediaurl?.match(/.mp3$/)));
+			}
+			case 'gigmedia_contributors': {
+				const gigmedias = await apiData('gigmedias');
+				const gigmedias_credited = returnResults(gigmedias?.results?.filter((g: any) => (g?.credit?.length && g?.credit_date?.length)));
+				return findRecent(path, gigmedias_credited, ['credit_date'], args?.gigmedia);
+			}
+			case 'contributors': {
+				const gigmedia = await apiData('gigmedia_contributors', args);
+				return {
+					gigmedia
 				}
 			}
 			case 'lyric_by_href': {

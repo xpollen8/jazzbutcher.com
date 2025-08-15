@@ -123,6 +123,7 @@ export const dateDisplay = (dt?: string, sep: string = ' - ') => {
 
 export const dateDiff = (dt?: string, sep: string = ' - ') => {
 	const [orig, iy,im,id,ihh,imm,iss, unknownYear, unknownMonth, unknownDay]: any = parseDate(dt) || [];
+	if (!dt) return;
 	if (!unknownYear) {
 		const padDate = (dt: number[]) => {
 			const [iy,im,id,ihh,imm,iss] = dt || [];

@@ -278,14 +278,9 @@
 	recording=${literalizeCommas(${d}, ${q(7)}, ${p(A)})},
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
 	photosets= /images/19890921/19890921_brooksbank_001.jpg$$
-#		/images/19890921/19890921_brooksbank_004.jpg$$
-#		/images/19890921/19890921_brooksbank_005.jpg$$
-#		/images/19890921/19890921_brooksbank_006.jpg$$
 		/images/19890921/19890921_brooksbank_008.jpg$$
 		/images/19890921/19890921_brooksbank_009.jpg$$
 		/images/19890921/19890921_brooksbank_010.jpg$$
-		Andrew Brooksbank
-		---
 		/images/19890921/19890921_jazzbutcher_brooksbank1.jpg$$
 		/images/19890921/19890921_jazzbutcher_brooksbank2.jpg$$
 		/images/19890921/19890921_jazzbutcher_brooksbank3.jpg$$
@@ -295,8 +290,8 @@
 		/images/19890921/19890921_jazzbutcher_brooksbank7.jpg$$
 		/images/19890921/19890921_jazzbutcher_brooksbank8.jpg$$
 		/images/19890921/19890921_jazzbutcher_brooksbank9.jpg$$
-		/images/19890921/19890921_jazzbutcher_brooksbank10.jpg;;${literalizeCommas(${paul})}$$
-		/images/19890921/19890921_jazzbutcher_brooksbank11.jpg;;${literalizeCommas(${larry})}$$
+		/images/19890921/19890921_jazzbutcher_brooksbank10.jpg;;Paul Mulreany$$
+		/images/19890921/19890921_jazzbutcher_brooksbank11.jpg;;Laurence O'keefe$$
 		/images/19890921/19890921_jazzbutcher_brooksbank12.jpg$$
 		Andrew Brooksbank;;;;2025-04-29
 	, reviews=
@@ -315,7 +310,7 @@
 
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
 	posters=/images/19891004/19891004_poster.jpg$$
-		https://twitter.com/nothingelseon/status/1474281400228483073/photo/1;;;;2021-12-24
+		nothingelseon;;https://twitter.com/nothingelseon/status/1474281400228483073/photo/1;;;;2021-12-24
 
 	)}
 
@@ -815,7 +810,7 @@
 		pat=${literalizeCommas( The last great rock & roll concert of the eighties.
 	)},
 	posters=/images/19891229/19891229_poster.jpg$$
-		https://twitter.com/jo_bartlett/status/1493884322214203392;;;;2022-02-16
+		jo_bartlett;;https://twitter.com/jo_bartlett/status/1493884322214203392;;;;2022-02-16
 
 	)}
 

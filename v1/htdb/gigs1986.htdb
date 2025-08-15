@@ -391,6 +391,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+		photosets=/images/19860717/19860717_pat_catclub_indge.jpg$$
+		Alastair Indge;;;;2025-08-15
 
 	)}
 

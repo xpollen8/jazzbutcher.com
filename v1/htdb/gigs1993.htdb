@@ -137,7 +137,7 @@
 			Murders.
 		)},
 		photosets= /images/19930223/euro93.jpg$$
-			${kathie}
+			Kathie McGinty;;;;2004-05-12
 	)}
 
 #define	Feb25.html()
@@ -658,7 +658,7 @@
 
 		who=${literalizeCommas( ${pat}, ${dooj}, ${richard} )},
 		posters=/images/19931127/19931127_poster.jpg$$
-		    ;;;;2023-07-04
+		    nothingelseon;;https://twitter.com/nothingelseon/status/1676314140162523136/photo/1;;;;2023-07-04
 
 	)}
 

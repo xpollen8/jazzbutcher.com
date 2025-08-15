@@ -2080,6 +2080,18 @@ subhead=(20 December 1957 – 5 October 2021),
 		datetime=1988-08-07 22:00:00)}
 
 	${addPress(type=interview,
+		url=${jbc_press}/19850330_press_melodymaker.html,
+		credit=Mick Mercer,
+		todo=OCR,
+		source=https://twitter.com/nme1980s/status/1929620317900595572/photo/1,
+		images=${jbc_images}/19850330_press_melodymaker,
+		publication=Melody Maker,
+		title=tickling the ivories,
+		location=UK,
+		dtadded=2025-08-15,
+		dtpublished=1985-03-30)}
+
+	${addPress(type=interview,
 		url=${jbc_press}/88melody.html,
 		credit=C M,
 		thumb=${jbc_images}/19881203/19881203_press_melodymaker,

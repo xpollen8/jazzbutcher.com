@@ -156,7 +156,13 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 	const useArtist = artist?.replace('NULL','');
 	const useAuthor = author?.replace('NULL','');
 
-	const expandAll = (s: string) => s?.split(' ')?.map((r: string) => expand(r.replace('${','').replace('}','')));
+	const expandAll = (s: string) => s?.split(' ')?.map((r: string, key: number) => {
+		if (r?.match(/\${/)) {
+			return <span key={key}>{expand(r.replace('${','').replace('}',''))}</span>;
+		} else {
+			return r;
+		}
+	});
 
 	const main = () => {
 		if (useMediaurl && !disableVideo) {

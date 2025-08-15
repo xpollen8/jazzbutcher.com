@@ -8,6 +8,7 @@ import Memorial from '@/components/Memorial';
 import { BookSikkorski, BookMiraclesAndWonders } from '@/components/Books';
 import { MostRecentNews } from '@/components/News';
 import Tag from '@/components/Tag';
+import Contributors from '@/components/Contributors';
 
 const relatedReleases = {
 	title: 'All Shall Be Well',
@@ -44,9 +45,10 @@ const Home = (): React.ReactNode =>
 				<div className="border p-3 bg-slate-100">
 						<Memorial home={true} />
 				</div>
+				<OnThisDay />
 				<MostRecentNews />
 				<RecentUpdates />
-				<OnThisDay />
+				<Contributors />
 				<Tag style={{ marginBottom: '10px' }}>Jazz Butcher Books</Tag>
 				<HomeBooks />
 			</div>

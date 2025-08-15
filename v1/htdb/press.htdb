@@ -2114,6 +2114,7 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=interview,
 		url=${jbc_press}/86nsb.html,
+		images=/images/198609_press_nonstopbanter_1_duval;;James Duval;;;;2025-08-14$$/images/198609_press_nonstopbanter_2_duval$$/images/198609_press_nonstopbanter_3_duval$$,
 		publication=Non*Stop Banter #9,
 		title=Life According to the Jazz Butcher,
 		headline=FRUITCAKE SOCIOLOGY 101,

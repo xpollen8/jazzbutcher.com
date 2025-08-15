@@ -25,12 +25,12 @@ const recentNews = [
 		category: 'maintenance',
 		credit: 'David Whittemore',
 		body: <>
-			Whole lotta changes to backend data handling - most data now comes
-			from static JSON instead of live database calls.  This should result
-			in a snappier response.
+			Fans of the JBC have provided many images/ticket/posters/etc over the years.
+			We acknowledge their efforts in the <b>Community contributions</b> section.
 			<p />
-			Contributors to the website are now highlighted in the <b>Community contributions</b>
-			section.
+			Lotta backend data changes - most data now comes
+			from static JSON instead of live database calls.  This will make it easier
+			for future generations to get their hands on the data behind this website.
 			<p />
 		</>
 	},

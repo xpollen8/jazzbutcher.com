@@ -1,11 +1,8 @@
 "use client"
 
 import Link from 'next/link';
-import Image from 'next/image';
-import Tag from '@/components/Tag';
 import useContributors from '@/lib/useContributors';
 import { type HashedType, pluralize, dateDiff, dateAgo, ts2URI } from '@/lib/utils';
-import { Attribution } from '@/components/GenericWeb';
 import Loading from '@/components/Loading';
 
 const ShowContributors = ({ contributors, total, recent }: any) => {

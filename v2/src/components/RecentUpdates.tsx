@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import EmbedMedia from '@/components/EmbedMedia';
 import useRecentUpdates from '@/lib/useRecentUpdates';
-import { pluralize, dateDiff, ts2URI } from '@/lib/utils';
+import { pluralize, dateDiff, dateAgo, ts2URI } from '@/lib/utils';
 import { feedbackURI2Pathname } from '@/lib/usePageComments';
 import { Attribution } from '@/components/GenericWeb';
 import { CommentBubble } from '@/components/PageComments';
@@ -14,7 +14,7 @@ const RecentPress = (props: any) => {
 	const { press } = props;
 	if (!press?.numResults) return;
 	return <details>
-		<summary className="tagClickable">{pluralize(press.numResults, 'press', 'Recently added')}</summary>
+		<summary className="tagClickable">{pluralize(press.numResults, 'press', 'Recently added')} {dateAgo(press?.results[0]?.dtadded)}</summary>
 			{press.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem clickListItem">
 					<div className="date">{dateDiff(p.dtadded, '')}</div>
@@ -28,7 +28,7 @@ const RecentFeedback = (props: any) => {
 	const { feedback } = props;
 	if (!feedback?.numResults) return;
 	return <details>
-		<summary className="tagClickable">{pluralize(feedback.numResults, 'website comment', 'Recent')} <CommentBubble className="commentBubbleSimple"/></summary>
+		<summary className="tagClickable">{pluralize(feedback.numResults, 'website comment', 'Recent')} <CommentBubble className="commentBubbleSimple"/>{dateAgo(feedback?.results[0]?.dtcreated)}</summary>
 		{feedback.results.map((p: any, key: number) => {
 			return <div key={key} className="listItem clickListItem">
 				<b><Link href={feedbackURI2Pathname(p.uri)}>{p.uri}</Link></b> <span className="date">{dateDiff(p.dtcreated, '')}</span>
@@ -53,13 +53,14 @@ const RecentGigMedia = (props: any) => {
 		if (!results[p.type]) { results[p.type] = []; }
 		results[p.type]?.push(p);
 	});
+	const mostRecent = gigmedia?.results[0]?.credit_date;
 	return <details>
-		<summary className="tagClickable">{pluralize(gigmedia.numResults, 'gig image', 'Recently added')}</summary>
-		{Object.keys(results)?.map((p: any, key: number) => {
+		<summary className="tagClickable">{pluralize(gigmedia.numResults, 'gig image', 'Recently added')} {dateAgo(mostRecent)}</summary>
+		{Object.keys(results)?.sort((a: any, b: any) => a[0]?.credit_date - b[0]?.credit_date)?.map((p: any, key: number) => {
 			const items = results[p] || [];
 			return <div key={key} className="clickListItem">
 				<details>
-				<summary className="tagClickable">{pluralize(items.length, p, 'Recently added')}</summary>
+				<summary className="tagClickable">{pluralize(items.length, p, 'Recently added')} {dateAgo(items[0]?.credit_date)}</summary>
 					{items?.map((p: any, key: number) => {
 					const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
 					const thumb = href.replace(/.jpg/, '_250.jpg');
@@ -76,11 +77,11 @@ const RecentGigMedia = (props: any) => {
 	</details>
 }
 
-const RecentMedia = (props: any) => {
+const RecentGigSongMedia = (props: any) => {
 	const { media } = props;
 	if (!media?.numResults) return;
 	return <details>
-		<summary className="tagClickable">{pluralize(media.numResults, 'audio', 'Recent')}</summary>
+		<summary className="tagClickable">{pluralize(media.numResults, 'live audio', 'Recent')} {dateAgo(media?.results[0]?.added)}</summary>
 			{media.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem clickListItem">
 					<div className="date">{dateDiff(p.dtcreated || p.added, '')}</div>
@@ -107,13 +108,19 @@ const RecentReleases = (props: any) => {
 }
 
 const RecentUpdates = () => {
-	const { data, isLoading, error} = useRecentUpdates();
-	const { press, media, gigmedia, feedback, releases } = data || {};
+	const { data, isLoading, error} = useRecentUpdates({
+		gigmedia: { value: 1, units: 'months' },
+		releases: { value: 1, units: 'years' },
+		gigsong_media: { value: 1, units: 'months' },
+		press: { value: 6, units: 'months' },
+		feedback: { limit: 5 },
+	});
+	const { press, gigsong_media, gigmedia, feedback, releases } = data || {};
 	return <Loading isLoading={isLoading} >
 		<RecentGigMedia gigmedia={gigmedia} />
 		<RecentPress press={press} />
 		<RecentReleases releases={releases} />
-		<RecentMedia media={media} />
+		<RecentGigSongMedia media={gigsong_media} />
 		<RecentFeedback feedback={feedback} />
 	</Loading>
 }

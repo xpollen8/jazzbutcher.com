@@ -446,6 +446,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
+		posters=/images/19901103/19901103_poster.jpg$$
+			James Duval;;;;2025-08-14
 
 	)}
 

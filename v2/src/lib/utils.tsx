@@ -350,7 +350,7 @@ export const parseImage = (str?: string, width: number = 250) => {
 
 export const pluralize = (num: number, str: string, prefix?: string) => <>
 	{(prefix) && `${prefix} `}
-	{str + ((num !== 1) ? (str?.endsWith('s') || str?.endsWith('x') || str?.endsWith('ia') || str?.endsWith('io') ? '' : 's') : '')} <span className="smalltext">({(num) ? num : 'None'})</span>
+	{str + ((num !== 1) ? (str?.endsWith('log') || str?.endsWith('s') || str?.endsWith('x') || str?.endsWith('ia') || str?.endsWith('io') ? '' : 's') : '')} <span className="smalltext">({(num) ? num : 'None'})</span>
 </>
 
 export const returnResults = (results: any) => ({ results, numResults: results?.length });

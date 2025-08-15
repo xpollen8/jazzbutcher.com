@@ -5847,7 +5847,7 @@ G - G - C - D
 
 #define	betty_page.html
 #live	if (getval(page) = betty_page.html)
-	${lyricsHeader(title=Just Like Bettie Page, annotated=yes, lyrics=${literalizeCommas(
+	${lyricsHeader(title=Just Like Betty Page, annotated=yes, lyrics=${literalizeCommas(
 
 	Hey, hey, hey.
 	<p />

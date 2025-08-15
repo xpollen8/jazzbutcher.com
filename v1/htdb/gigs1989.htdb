@@ -785,7 +785,10 @@
 	plus acoustic ${domest}
 	)},
 	photosets= /images/19891219/19891219_del_pat.jpg;;${literalizeCommas(${pat})}$$
-		David Whittemore
+		David Whittemore;;;;2013-06-23
+	,
+	cassettes=/images/FM/19891219_FMAC39.jpg$$
+		Fishy Mansions FMAC39;;;;2025-08-14
 
 	)}
 

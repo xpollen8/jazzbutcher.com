@@ -217,7 +217,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				return gigsStatic;
 				break;
 			case 'gig_by_datetime':
-				const datetime = args?.replace(/%20/g, ' ');
+				const datetime = args?.replace(/%20/g, ' ')?.replace(/ 00:00:00/, '');
 				const gigs = gigsStatic?.results?.find((g: RecordType) => g?.datetime === datetime);
 				const played = gigsongsStatic?.results?.filter((g: RecordType) => g?.datetime === datetime);
 				const media = gigmediasStatic?.results?.filter((g: RecordType) => g?.datetime === datetime);

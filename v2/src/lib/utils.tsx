@@ -130,7 +130,7 @@ export const dateAgo = (dt?: string, sep: string = ' - ') => {
 			return localDate(`${iy}-${padZero(im)}-${padZero(id)} ${padZero(ihh)}:${padZero(imm)}:${padZero(iss)}`);
 		}
 		const compare = padDate([iy,im || 1,id || 1,ihh,imm,iss]);
-		const prettyAgo = moment(compare).startOf('hour').fromNow();
+		const prettyAgo = moment.utc(compare).startOf('hour').fromNow();
 		return (<>
 			{sep}
 			<span className={`smalltext`}>({prettyAgo})</span>
@@ -147,8 +147,7 @@ export const dateDiff = (dt?: string, sep: string = ' - ') => {
 		}
 		const display = (orig?.length < 10) ? orig : padDate([iy,im,id,ihh,imm,iss]);
 		const compare = padDate([iy,im || 1,id || 1,ihh,imm,iss]);
-		//const prettyDate = moment(display).format("ddd, MMM Do YYYY");
-		const prettyAgo = moment(compare).startOf('hour').fromNow();
+		const prettyAgo = moment.utc(compare).startOf('hour').fromNow();
 		return (<>
 			{sep}
 			<span className="date">{prettyDate(display)}</span> <span className={`date ${unknownMonth} ${unknownDay}`}>({prettyAgo})</span>

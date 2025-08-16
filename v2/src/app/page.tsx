@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import ReleaseBlurb from '@/components/ReleaseBlurb';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import OnThisDay from '@/components/OnThisDay';
+import Documentary from '@/components/Documentary';
 import RecentUpdates from '@/components/RecentUpdates';
 import Memorial from '@/components/Memorial';
 import { BookSikkorski, BookMiraclesAndWonders } from '@/components/Books';
@@ -42,6 +43,7 @@ const Home = (): React.ReactNode =>
 	<main>
 		<div className="flex flex-col min-[1000px]:flex-row gap-1">
 			<div className="w-full min-[1000px]:w-[60%]">
+				<Documentary />
 				<div className="border p-3 bg-slate-100">
 						<Memorial home={true} />
 				</div>

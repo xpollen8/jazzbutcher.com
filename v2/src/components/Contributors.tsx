@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import useContributors from '@/lib/useContributors';
-import { type HashedType, pluralize, dateDiff, dateAgo, ts2URI } from '@/lib/utils';
+import { type HashedType, pluralize, dateAgo, ts2URI } from '@/lib/utils';
 import Loading from '@/components/Loading';
 
 const ShowContributors = ({ contributors, total, recent }: any) => {
@@ -22,7 +22,7 @@ const ShowContributors = ({ contributors, total, recent }: any) => {
 					const count = uniques[x];
 					const { type, datetime, added } = JSON.parse(x);
 					return <div key={key}  className="clickListItem">
-						<Link href={`/gigs/${ts2URI(datetime)}`}>{datetime}</Link> {pluralize(count, type)} {dateDiff(added)}
+						<Link href={`/gigs/${ts2URI(datetime)}`}>{datetime}</Link> {pluralize(count, type)} {dateAgo(added)}
 					</div>}
 				)}
 			</details>

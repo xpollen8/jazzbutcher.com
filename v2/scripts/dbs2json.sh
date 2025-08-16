@@ -58,7 +58,7 @@ fetch gigtexts gigtexts.json
 fetch gigmedias gigmedias.json
 fetch performances performances.json
 fetch presses presses.json
-fetch medias medias.json
+# DISABLED fetch medias medias.json
 fetch feedbacks feedbacks.json
 fetch gigs_with_audio gigs_with_audio.json
 

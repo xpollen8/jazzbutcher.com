@@ -183,6 +183,10 @@ const findRecent = (noun: string, object: any, fields: string[] , options?: Hash
 	})?.sort(sortValues));
 }
 
+const joinOn = (field: string, arr1: Array<HashedType>, arr2: Array<HashedType>) => {
+	return returnResults(arr1.map((gs: any) => ({ ...gs, ...arr2.find((g: any) => g[field] === gs[field]) || {} })));
+}
+
 // @ts-ignore
 const apiData = async (path: string, args?: any, formData?: any): Promise<HashedType> => {
 	if (typeof args === 'string') {
@@ -216,6 +220,15 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'gigs':
 				return gigsStatic;
 				break;
+			case 'performances':
+				return performancesStatic;
+				break;
+			case 'gigtexts':
+				return gigtextsStatic;
+				break;
+			case 'gigmedias': {
+				return gigmediasStatic;
+			}
 			case 'gig_by_datetime':
 				const datetime = args?.replace(/%20/g, ' ')?.replace(/ 00:00:00/, '');
 				const gigs = gigsStatic?.results?.find((g: RecordType) => g?.datetime === datetime);
@@ -239,11 +252,8 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					next,
 				}
 				break;
-			case 'gigtexts':
-			case 'performances':
 			case 'audio':
 			case 'unreleased_audio':
-			case 'gigs_with_audio':
 			case 'release_audio_by_project':
 			case 'audio_by_project':
 			case 'release_video_by_project':
@@ -254,7 +264,6 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'press_by_href':
 			case 'presses_for_admin':
 			case 'songs_by_datetime':
-			case 'on_this_day':
 			case 'recent_feedback':
 			case 'feedback_delete':
 				return await apiDataFromDataServer(path, args);
@@ -269,8 +278,10 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				});
 				return data;
 			}
-			case 'gigmedias': {
-				return gigmediasStatic;
+			case 'on_this_day': {
+				const { results } = await apiData('gigs', args);
+				const today = new Date().toISOString()?.substr(4, 6);
+				return returnResults(results?.filter((r: RecordType) => r.datetime?.substr(4, 6) === today));
 			}
 			case 'recent_releases': {
 				return findRecent(path, releasesStatic, ['dtadded','dtreleased','datetime'], args?.releases);
@@ -285,9 +296,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'recent_gigsongs_media': {
 				const gigsong_media =  await apiData('gigsongs_media', args);
 				const { results } = await findRecent(path, gigsong_media, ['added','datetime'], args?.gigsong_media);
-				// join medias and gigs
-				const joined = results?.map((gs: any) => ({ ...gs, ...gigsStatic?.results?.find((g: any) => g.datetime === gs.datetime) || {} }));
-				return returnResults(joined);
+				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 			case 'recent_updates': {
 				const press = await apiData('recent_press', args);
@@ -309,6 +318,10 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'gigsongs_media': {
 				const { results } = await apiData('gigsongs');
 				return returnResults(results?.filter((g: any) => g?.mediaurl?.match(/.mp3$/)));
+			}
+			case 'gigs_with_audio': {
+				const { results } = await apiData('gigsongs_media');
+				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 			case 'gigmedia_contributors': {
 				const gigmedias = await apiData('gigmedias');

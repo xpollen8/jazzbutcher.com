@@ -503,6 +503,26 @@ INSERT INTO `gigsong` VALUES (NULL,'1986-07-16 00:00:00','set',NULL,1,6,'What\'s
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-16 00:00:00','set',NULL,1,7,'Water',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-16 00:00:00','set',NULL,1,8,'Hard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-16 00:00:00','set',NULL,1,9,'Hungarian Love Song',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,'1st generation cassette',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19860721/19860721_JazzButcher_Cambridge_Gen1_Flat.mp3','Nancy Everson',NULL,NULL,"2025-08-17");
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',"00:00",1,1,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL,"31:00;;start",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',"03:26",1,2,'Grooving in the Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',"06:45",1,3,"The Human Jungle",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',"12:01",1,4,"Southern Mark Smith",NULL,NULL,NULL,NULL,NULL,NULL,"11:50;;one of out non-hits",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',"06:45",1,5,"The Human Jungle",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',"15:46",1,6,"La Mer",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',"18:25",1,7,"Hard",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',"23:45",1,8,"Still In The Kitchen",NULL,NULL,NULL,NULL,NULL,NULL,"22:10;;Sex? You didn't come here to see sex did you?",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',"29:02",1,9,"Rain",NULL,NULL,NULL,NULL,NULL,NULL,"31:55;;a capella section",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set',"33:40",1,10,"The Devil Is My Friend",NULL,NULL,NULL,NULL,NULL,NULL,"32:53;;We've got something real special for you people",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set', "36:44",1,11, "Angels",NULL,NULL,NULL,NULL,NULL,NULL,"41:16;;tearing it up$$41:46;;that was for Maureen, Authur and Alastair",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set', "42:01",1,12, "Marnie",NULL,NULL,NULL,NULL,NULL,NULL,"41:51;;and this is for Pete's sake",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set', "44:59",1,13, "Conspiracy",NULL,NULL,NULL,NULL,NULL,NULL,"49:32;;Did the Woodentops play up here?$$49:52;;band introduction",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set', "50:28",1,14, "Partytime",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','set', "54:26",1,15, "Zombie Love",NULL,NULL,NULL,NULL,NULL,NULL,"56:13;;twilight zone section$$57:58;;storytime$$58:42;;Makes me think about.... shellfish",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','encore', "01:03:28",1,16, "Water",NULL,NULL,NULL,NULL,NULL,NULL,"01:03:25;;About an elephant from Russia",NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1986-07-21 00:00:00','encore', "01:05:36",1,17, "Roadrunner","Jonathan Richman",NULL,NULL,NULL,NULL,NULL,"01:07:55;;twilight section$$01:09:10;;Max Eider storytime",NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-24 00:00:00','encore',NULL,1,1,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-24 00:00:00','encore',NULL,1,2,'Roadrunner','Jonathan Richman',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-24 00:00:00','encore',NULL,2,1,'La Mer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

@@ -351,7 +351,7 @@ export const pluralize = (num: number, str: string, prefix?: string, terse?: boo
 	if (num === 1 && terse) return <>{(prefix) && `${prefix} `}{str}</>
 	return <>
 		{(prefix) && `${prefix} `}
-		{str + ((num !== 1) ? (str?.endsWith('log') || str?.endsWith('s') || str?.endsWith('x') || str?.endsWith('ia') || str?.endsWith('io') ? '' : 's') : '')} <span className="smalltext">({(num) ? num : 'None'})</span>
+		{str && str + ((num !== 1) ? (str?.endsWith('"') || str?.endsWith('log') || str?.endsWith('s') || str?.endsWith('x') || str?.endsWith('ia') || str?.endsWith('io') ? '' : 's') : '')} <span className="smalltext">({(num) ? num : 'None'})</span>
 	</>
 }
 

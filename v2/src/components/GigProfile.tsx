@@ -387,10 +387,10 @@ const Content = ({ gig }: { gig: any }) => {
 
 	const extras = [
 		{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
+		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
 		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
 		{ label: 'Also On The Bill', lookup: 'players_with', func: GigWith },
 		{ label: 'Cassettes', lookup: 'media_cassette', func: GigCassettes },
-		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
 		{ label: 'Tickets', lookup: 'media_ticket', func: GigTickets },
 		{ lookup: 'media_pix', func: GigPhotos },
 		{ label: 'Setlists', lookup: 'media_setlist', func: GigSetlists },

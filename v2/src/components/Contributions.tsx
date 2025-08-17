@@ -17,7 +17,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 	const showData = (x: any, key: number) => {
 		const { count, type, datetime, added, summary } = x;
 		return <div key={key}  className="clickListItem">
-			<Link className="monospace" href={`/gigs/${ts2URI(datetime)}`}>{datetime?.substr(0, 10)}</Link> {pluralize(count, type, null, true)} {dateAgo(added)} {summary && `"${summary}"`}
+			<Link className="monospace" href={`/gigs/${ts2URI(datetime)}`}>{datetime?.substr(0, 10)}</Link> {pluralize(count, type, undefined, true)} {dateAgo(added)} {summary && `"${summary}"`}
 		</div>
 	}
 
@@ -79,7 +79,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	gigsong?.results?.forEach((r: any) => {
 		if (!r?.mediaurl?.length) return;
 		const type = prettyType(r?.mediaurl?.includes('.mp3') ? 'audio' : 'video', r?.type);
-		const person = removeHTML(r?.mediacredit);
+		const person = removeHTML(r?.mediacredit) || '-UNKNOWN-';
 		const datetime = r?.datetime;
 		const added = r?.added;
 		if (!contributions[person]) { contributions[person] = []; }
@@ -92,7 +92,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	});
 	gigtext?.results?.forEach((r: any) => {
 		const type = prettyType('text', r?.type);
-		const person = removeHTML(r?.credit);
+		const person = removeHTML(r?.credit)|| '-UNKNOWN-';
 		const datetime = r?.datetime;
 		const added = r?.credit_date;
 		if (!contributions[person]) { contributions[person] = []; }
@@ -105,7 +105,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	});
 	gigmedia?.results?.forEach((r: any) => {
 		const type = prettyType('image', r?.type);
-		const person = removeHTML(r?.credit);
+		const person = removeHTML(r?.credit)|| '-UNKNOWN-';
 		const datetime = r?.datetime;
 		const added = r?.credit_date;
 		if (!contributions[person]) { contributions[person] = []; }

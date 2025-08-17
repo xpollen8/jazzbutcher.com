@@ -3840,7 +3840,7 @@ ${define(_set, false)}
 
 #live	if (defined(bootlegger))
 #live	if (getval(UX))
-#live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="bootlegger", credit='', body="${stripWhitespace(${literalizeQuotes(${bootlegger})})}"))
+#live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="bootlegger", credit="${stripWhitespace(${literalizeQuotes(${bootlegger})})}"))
 #live		endif
 #live	endif
 	${g_boot(g=${bootlegger})}

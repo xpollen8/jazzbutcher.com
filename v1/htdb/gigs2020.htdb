@@ -45,7 +45,7 @@
 		who=${literalizeCommas( ${pat})},
 		notes=${literalizeCommas(
 		Somebody suggested that we should do a New Year's Eve "broadcast" from Fishy Mansions. My ego rather likes the idea of rescuing you all from Jools Holland and his plinky-plonk totalitarianism, but at the same time I'm aware that scarcity is value, and I don't want to do so many of these things that you all get bored. So I'm putting it out there: if anybody fancies watching an elderly beatnik slowly disintegrating as he boozes and smokes his way through a pack of covers and originals and into the new year, let us know with a "like", or whatever. We'll see how it goes.
-		)}$$${pat};;;;2020-12-17,
+		)}$$Pat Fish;;;;2020-12-17,
 		photosets=
 			/images/20201231/20201231_livestream.jpg$$
 			David Whittemore;;;;2020-12-31

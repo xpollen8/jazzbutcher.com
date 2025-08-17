@@ -196,6 +196,7 @@
 		photosets=
 			/images/20010708/20010708_troubadour1.jpg$$
 			/images/20010708/20010708_troubadour2.jpg$$
+			;;;;2017-04-28
 		,
 		setlists=/images/20010708/20010708_setlist_duval.jpg$$
 			James Duval;;;;2025-08-01,
@@ -308,6 +309,7 @@
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
 		photosets=/images/20010818/20010818_map.jpg$$
+			;;;;2018-08-15
 		,
 		posters=/images/20010818/20010818_poster.jpg$$
 		    ;;;;2017-03-29

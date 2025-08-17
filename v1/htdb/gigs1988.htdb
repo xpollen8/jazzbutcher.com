@@ -68,7 +68,7 @@
 			/images/19880224/19880224_lovebucket_1.jpg$$
 			/images/19880224/19880224_lovebucket_2.jpg$$
 			/images/19880224/19880224_lovebucket_3.jpg$$
-			Lisa Lovebucket;;https://twitter.com/Lisa_Lovebucket/status/1445863117951545344
+			Lisa Lovebucket;;https://twitter.com/Lisa_Lovebucket/status/1445863117951545344;;2021-10-06
 
 	)}
 
@@ -557,7 +557,11 @@
 		)},
 		pat=${literalizeCommas(
 		)},
-		photosets= /images/19880611/19880611_del_cubbybear_01.jpg$$
+		photosets=
+			/images/19880611/19880611_del_cubbybear_11.jpg$$
+			David Whittemore;;;;1997-05-28
+			---
+			/images/19880611/19880611_del_cubbybear_01.jpg$$
 			/images/19880611/19880611_del_cubbybear_02.jpg$$
 			/images/19880611/19880611_del_cubbybear_03.jpg$$
 			/images/19880611/19880611_del_cubbybear_04.jpg$$
@@ -567,7 +571,6 @@
 			/images/19880611/19880611_del_cubbybear_08.jpg$$
 			/images/19880611/19880611_del_cubbybear_09.jpg$$
 			/images/19880611/19880611_del_cubbybear_10.jpg$$
-			/images/19880611/19880611_del_cubbybear_11.jpg$$
 			/images/19880611/19880611_del_cubbybear_12.jpg$$
 			/images/19880611/19880611_del_cubbybear_13.jpg$$
 			/images/19880611/19880611_del_cubbybear_14.jpg$$
@@ -580,7 +583,7 @@
 			/images/19880611/19880611_del_cubbybear_21.jpg$$
 			/images/19880611/19880611_del_cubbybear_22.jpg$$
 			/images/19880611/19880611_del_cubbybear_23.jpg$$
-			David Whittemore
+			David Whittemore;;;;2013-07-06
 	)}
 
 #define	Jun12.html()
@@ -733,7 +736,7 @@
 		,
 		photosets=
 			/images/19880807/19880807_andybcfc2015_lineup.jpg$$
-			andybcfc2015;;https://www.instagram.com/andybcfc2015/
+			andybcfc2015;;https://www.instagram.com/andybcfc2015/;;2017-04-08
 		,
 		posters=/images/19880807/19880807_poster.jpg$$
 			;;;;2014-11-29
@@ -764,7 +767,7 @@
 			/images/19880908/19880908_shintomo_6.jpg$$
 			/images/19880908/19880908_shintomo_7.jpg$$
 			/images/19880908/19880908_shintomo_8.jpg;;w/Alan McGee$$
-			shintomo;;https://twitter.com/tomokos88/status/1429987603340697629
+			shintomo;;https://twitter.com/tomokos88/status/1429987603340697629;;2021-08-28
 		,reviews=${literalizeCommas(
 		During my first stay in London I saw the Jazz Butcher twice. I don’t remember the first one because I lost in London all night long after the live, so my memory was this episode.
 		)}$$shintomo;;https://twitter.com/tomokos88;;2021-10-13

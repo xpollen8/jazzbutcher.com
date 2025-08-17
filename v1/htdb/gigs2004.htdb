@@ -122,7 +122,7 @@
 			/images/20040213/romaniacs001.jpg$$
 			/images/20040213/romaniacs002.jpg$$
 			/images/20040213/romaniacs003.jpg$$
-			Paul Blinkhorn;;paul.blinkhorn@ntlworld.com
+			Paul Blinkhorn;;paul.blinkhorn@ntlworld.com;;2004-05-19
 			---
 			/images/20040213/fundraiser059.jpg$$
 			/images/20040213/fundraiser013.jpg$$
@@ -131,7 +131,7 @@
 			/images/20040213/fundraiser053.jpg$$
 			/images/20040213/fundraiser025.jpg$$
 			/images/20040213/fundraiser037.jpg$$
-			John Gilfillan
+			John Gilfillan;;;;2004-05-19
 		,
 		pat=${literalizeCommas(
 			Well, the Romanian benefit at the Racehorse passed off well. It was a warm and friendly night out, with
@@ -553,6 +553,7 @@
 		photosets= /images/20040228/LabourClub.jpg$$
 			/images/20040228/LabourClub3.jpg$$
 			/images/20040228/PatL-Club.jpg$$
+			;;;;2004-10-07
 		,
 		posters=/images/20040228/20040228_poster.jpg$$
 		    ;;;;2017-03-25
@@ -840,6 +841,7 @@
 			/images/20040430/BuilthPatMiz.jpg$$
 			/images/20040430/BuilthMiz.jpg$$
 			/images/20040430/stevebacon2.jpg$$
+			;;;;2004-05-19
 		,
 	)}
 
@@ -896,6 +898,7 @@
 			/images/20040504/May4Band.jpg$$
 			/images/20040504/May4pub.jpg$$
 			/images/20040504/May4Bot.jpg$$
+			;;;;2004-10-07
 		,
 		posters=/images/20040504/20040504_poster.jpg$$
 		    ;;;;2004-05-19
@@ -1906,6 +1909,7 @@
 		,
 		photosets= /images/20041001/blue.jpg$$
 			/images/20041001/RodGerard.jpg$$
+			;;;;2004-10-23
 		,
 		posters=/images/20041001/20041001_poster.jpg$$
 		    ;;;;2017-02-12
@@ -2213,7 +2217,7 @@
 		,
 		photosets= /images/20041228/Pat1.jpg$$
 			/images/20041228/Pat2.jpg$$
-			D'Enton
+			D'Enton;;;;2005-10-15
 	)}
 
 #define	page_requested	${${page}()}

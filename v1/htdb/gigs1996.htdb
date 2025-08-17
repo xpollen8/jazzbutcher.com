@@ -13,14 +13,14 @@
 		)},
 		photosets= /images/19960820/live_20Aug96.jpg$$
 			/images/19960820/live_20Aug96_2.jpg$$
-			James Duval;;https://twitter.com/jimmyduval$$
+			James Duval;;https://twitter.com/jimmyduval;;2001-08-09
 		---
 			/images/19960820/19960820_PF.jpg$$
 			/images/19960820/19960820_PF_after.jpg;;With Jimmy Duval$$
-			Philip Snow - Pat Fish Archives;;;;2023-04-18$$
+			Philip Snow - Pat Fish Archives;;;;2023-04-18
 		,
 		posters=/images/19960820/19960820_poster.jpg$$
-		    ;;;;2004-05-12
+		    Pat Fish;;;;1998-04-26
 	)}
 
 #define	Dec31.html()

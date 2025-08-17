@@ -4,13 +4,13 @@
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
 		photosets= /images/20150111/20150111_JazzButcher_kyokosato_lolopat.jpg$$
-			Kyoko Sato
+			Kyoko Sato;;;;2015-01-15
 		---
 			/images/20150111/20150111_JazzButcher_stevegarofalo_chop.jpg$$
-			${garofalo}
+			Steve Garofalo;;;;2015-01-15
 		---
 			/images/20150111/20150111_JazzButcher_tomdelrio_jbq.jpg$$
-			Tom del Rio
+			Tom del Rio;;;;2015-01-15
 	)}
 
 #define	Feb20_2100.html()
@@ -137,12 +137,12 @@
 				/images/20150417/20150417_lunch.jpg$$
 				/images/20150417/20150417_steve_n_simon.jpg$$
 				/images/20150417/20150417_thursday_club_south.jpg$$
-				Leighton Bobby Cousins
+				Leighton Bobby Cousins;;;;2015-05-05
 			---
 				/images/20150417/20150417_anniejackson_1.jpg$$
 				/images/20150417/20150417_anniejackson_2.jpg$$
 				/images/20150417/20150417_anniejackson_3.jpg$$
-				Annie Jackson
+				Annie Jackson;;;;2017-04-26
 			---
 				/images/20150417/20150417_pestano_Pat-Fish-en-el-16-Toneladas-de-Valencia.jpg$$
 				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-16-Toneladas-de-Valencia.jpg$$
@@ -150,7 +150,7 @@
 				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas-de-Valencia.jpg$$
 				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-en-el-16-Toneladas.jpg$$
 				/images/20150417/20150417_pestano_Pat-Fish-The-Jazz-Butcher-Valencia.jpg$$
-				Juan Carlos Pestano;;http://www.litelestudio.com
+				Juan Carlos Pestano;;http://www.litelestudio.com;;2015-05-05
 		,
 		posters=/images/20150417/20150417_poster.jpg$$
 		    ;;;;2015-02-23
@@ -163,7 +163,7 @@
 			${solo}
 		)},
 		photosets= /images/20150501/20150501_vulpe_truax_gig.jpg$$
-			Anna Vulpe
+			Anna Vulpe;;;;2015-05-06
 	)}
 
 #define	May9.html()
@@ -180,7 +180,7 @@
 		)},
 		photosets= /images/20150612/20150612_cunningham_gig1.jpg$$
 			/images/20150612/20150612_cunningham_gig2.jpg$$
-			Sean Michael Cunningham
+			Sean Michael Cunningham;;;;2015-06-18
 		,
 		posters=/images/20150612/20150612_poster.jpg$$
 		    ;;;;2015-06-18
@@ -192,7 +192,7 @@
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
 		photosets= /images/20150619/20150619_leighton_gig.jpg$$
-			Leighton Bobby Cousins
+			 Leighton Bobby Cousins;;;;2015-07-06
 		,posters=/images/20150619/20150619_poster.jpg$$
 			;;;;2015-05-15
 			---
@@ -208,10 +208,10 @@
 		photosets= /images/20150620/20150620_leighton_1.jpg$$
 			/images/20150620/20150620_leighton_2.jpg$$
 			/images/20150620/20150620_leighton_3.jpg$$
-			Leighton Bobby Cousins
+			Leighton Bobby Cousins;;;;2015-08-30
 		---
 			/images/20150620/20150620_steve_1.jpg$$
-			${garofalo}
+			Steve Garofalo;;;;2015-08-30
 		,
 		posters=/images/20150620/20150620_poster.jpg$$
 		    ;;;;2015-05-15
@@ -223,7 +223,7 @@
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
 		photosets= /images/20150621/20150621_leighton_gig.jpg$$
-			Leighton Bobby Cousins
+			Leighton Bobby Cousins;;;;2015-07-06
 		,
 		posters=/images/20150621/20150621_poster.jpg$$
 		    ;;;;2015-05-15
@@ -235,7 +235,7 @@
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
 		photosets= /images/20150623/20150623_leighton_gig.jpg$$
-			Leighton Bobby Cousins
+			Leighton Bobby Cousins;;;;2015-08-30
 		,
 		posters=/images/20150623/20150623_poster.jpg$$
 		    ;;;;2015-05-15
@@ -257,6 +257,7 @@
 		)},
 		photosets=
 			/images/20150627/20150627_place.jpg$$
+			;;;;2015-05-24
 		,
 		setlists=
 			/images/20150627/20150627_vulpe.jpg$$
@@ -273,12 +274,12 @@
 		)},
 		photosets= /images/20150628/20150628_wallis_pat.jpg$$
 			/images/20150628/20150628_wallis_group.jpg$$
-			Mat Wallis
+			Mat Wallis;;;;2015-08-30
 		---
 			/images/20150628/20150628_puydebois_1.jpg$$
 			/images/20150628/20150628_puydebois_2.jpg$$
 			/images/20150628/20150628_puydebois_gig.jpg$$
-			Francis Puydebois
+			Francis Puydebois;;;;2015-08-30
 	)}
 
 #define	Aug29.html()
@@ -288,10 +289,10 @@
 		)},
 		photosets= /images/20150829/20150829_lekeux_one.jpg$$
 			/images/20150829/20150829_lekeux_two.jpg$$
-			Paul Le Keux
+			Paul Le Keux;;;;2015-10-05
 		---
 			/images/20150829/20150829_playing.jpg$$
-			\@DGee3;;https://twitter.com/DGee3
+			\@DGee3;;https://twitter.com/DGee3;;2015-08-30
 		,
 		posters=/images/20150829/20150829_poster.jpg$$
 		    ;;;;2015-08-30
@@ -301,21 +302,21 @@
 	${gigHeader(
 		who=${literalizeCommas( ${solo})},
 		photosets= /images/20150922/20150922_nicholls_pat_martin.jpg$$
-			James Nicholls
+			James Nicholls;;;;2015-09-07
 		---
 			/images/20150922/20150922_hornsby_intro.jpg$$
 			/images/20150922/20150922_hornsby_preshow.jpg$$
 			/images/20150922/20150922_hornsby_one.jpg$$
 			/images/20150922/20150922_hornsby_two.jpg$$
 			/images/20150922/20150922_hornsby_three.jpg$$
-			Alex Hornsby
+			Alex Hornsby;;;;2015-09-24
 		---
 			/images/20150922/20150922_firerecords_preshow.jpg$$
 			/images/20150922/20150922_firerecords_onstage.jpg$$
-			Fire Records;;https://instagram.com/fire_records/
+			Fire Records;;https://instagram.com/fire_records/;;2015-09-22
 		---
 			/images/20150922/20150922_dianaverdu_onstage.jpg$$
-			\@dianaverdu;;https://twitter.com/dianaverdu
+			\@dianaverdu;;https://twitter.com/dianaverdu;;2015-09-22
 		---
 			/images/20150922/20150922_william_backstage.jpg;;${literalizeCommas(Going through the archives and finding the few pictures I’ve taken of Fishy over the years… and I like this from The Moth Club ‘dressing room’ 2015)}$$
 			Mr Paul Williams;;https://twitter.com/MrPaulWilliams;;2021-12-12
@@ -338,15 +339,15 @@
 		)},
 		photosets=
 		 /images/20151211/20151211_smith_pat.jpg$$
-		 Patrick Smith
+		 Patrick Smith;;;;2017-05-16
 		---
 		 /images/20151211/20151211_heimo_group.jpg$$
 		 /images/20151211/20151211_heimo_steve.jpg;;Steve$$
 		/images/20151211/20151211_reifetshammer_group.jpg$$
-			Heimo Reifetshammer
+			Heimo Reifetshammer;;;;2017-05-16
 		---
 			/images/20151211/20151211_kuenzler_group.jpg$$
-			\@HPKuenzler;;https://twitter.com/HPKuenzler
+			\@HPKuenzler;;https://twitter.com/HPKuenzler;;2015-12-14
 		,
 		posters=/images/20151211/20151211_poster.jpg$$
 		    ;;;;2016-11-20
@@ -368,7 +369,7 @@
 			/images/20151212/20151212_street_2.jpg$$
 			/images/20151212/20151212_street_3.jpg$$
 			/images/20151212/20151212_street_4.jpg$$
-			Michael Street
+			Michael Street;;;;2017-05-16
 		,
 		posters=/images/20151212/20151212_poster.jpg$$
 		    ;;;;2015-10-13
@@ -380,14 +381,14 @@
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
 		photosets= /images/20151213/20151213_group.jpg$$
-			Heimo Reifetshammer
+			Heimo Reifetshammer;;;;2015-12-14
 			---
 		 /images/20151213/20151213_gray_group.jpg$$
 		 /images/20151213/20151213_gray_pat.jpg$$
 			/images/20151213/20151213_gray.jpg$$
 			/images/20151213/20151213_gray_simon.jpg;;Simon$$
 			/images/20151213/20151213_gray_steve.jpg;;Steve$$
-			Carolyn Gray
+			Carolyn Gray;;;;2017-05-16
 		,
 		posters=/images/20151213/20151213_poster.jpg$$
 		    ;;;;2015-10-22

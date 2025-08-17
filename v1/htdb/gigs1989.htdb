@@ -310,7 +310,7 @@
 
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
 	posters=/images/19891004/19891004_poster.jpg$$
-		nothingelseon;;https://twitter.com/nothingelseon/status/1474281400228483073/photo/1;;;;2021-12-24
+		nothingelseon;;https://twitter.com/nothingelseon/status/1474281400228483073/photo/1;;2021-12-24
 
 	)}
 
@@ -326,7 +326,7 @@
 
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
 		photosets= /images/19891006/19891006_gregneate_patformby.jpg$$
-			Greg Neate
+			Greg Neate;;;;2014-07-12
 	)}
 
 #define	Oct13.html()
@@ -395,7 +395,7 @@
 		Pat's notebooks.;;;;2004-05-12
 	,
 	photosets= /images/richard.jpg;;${literalizeCommas(${richard})}$$
-			David Whittemore
+			David Whittemore;;;;1997-05-29
 	)}
 
 #define	Nov9.html()
@@ -457,7 +457,7 @@
 	Quality In Sound is heard at the end of ${best}.
 	)},
 		photosets= /images/19891117/19891117_del_richard4.jpg;;${literalizeCommas(${richard})}$$
-			David Whittemore
+			David Whittemore;;;;1997-05-29
 
 	)}
 
@@ -517,7 +517,7 @@
 			/images/19891119/19891119_del_paul.jpg;;${literalizeCommas(${paul})}$$
 			/images/19891119/19891119_del_laurence.jpg;;${literalizeCommas(${larry})}$$
 			/images/19891119/19891119_del_formby.jpg;;${literalizeCommas(${richard})}$$
-			David Whittemore
+			David Whittemore;;;;1997-05-29
 			---
 			/images/19891119/19891119_del_01.jpg$$
 			/images/19891119/19891119_del_02.jpg$$
@@ -550,7 +550,7 @@
 			/images/19891119/19891119_del_30.jpg$$
 			/images/19891119/19891119_del_31.jpg$$
 			/images/19891119/19891119_del_32.jpg$$
-			David Whittemore
+			David Whittemore;;;;2013-07-04
 	)}
 
 #define	Nov20.html()
@@ -797,9 +797,11 @@
 	notes=${literalizeCommas( spontaneous end-of-tour hotel acoustic tunes
 	)},
 		photosets= /images/19891220/19891220_del_xmas.jpg$$
+			David Whittemore;;;;2013-06-22
+			---
 			/images/19891220/19891220_bathroom.jpg;;The evening's refreshments courtesy the "Jersey Posse"$$
 			/images/19891220/19891220_DavidWhittemore_RichardFormby.jpg;;Richard Formby$$
-			David Whittemore
+			David Whittemore;;;;2025-07-16
 
 	)}
 
@@ -810,7 +812,7 @@
 		pat=${literalizeCommas( The last great rock & roll concert of the eighties.
 	)},
 	posters=/images/19891229/19891229_poster.jpg$$
-		jo_bartlett;;https://twitter.com/jo_bartlett/status/1493884322214203392;;;;2022-02-16
+		jo_bartlett;;https://twitter.com/jo_bartlett/status/1493884322214203392;;2022-02-16
 
 	)}
 

@@ -1364,7 +1364,7 @@
 			/images/20050820/weekender_stage_wilson_curtis_470x300.jpg;;Curtis E. Johnson$$
 			/images/20050820/weekender_stage_wilson_pat_470x300.jpg;;Headstone$$
 			/images/20050820/weekender_stage_wilson_russell_470x300.jpg;;Agent Cooper$$
-			BBC Weekender website
+			BBC Weekender website;;;;2005-10-15
 		,
 		posters=/images/20050820/20050820_poster.jpg$$
 		    ;;;;2005-10-15
@@ -1620,7 +1620,7 @@
 			/images/20050919/20050919_martinsreed_001.jpg$$
 			/images/20050919/20050919_martinsreed_003.jpg$$
 			/images/20050919/20050919_martinsreed_004.jpg$$
-			Martin Reed
+			Martin Reed;;;;2005-09-19
 		,
 		notes=${literalizeCommas(
 			Monday 19th September - The 12 Bar Club, Denmark Street, London

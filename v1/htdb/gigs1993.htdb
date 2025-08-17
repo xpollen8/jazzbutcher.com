@@ -34,6 +34,7 @@
 			/images/19930216/19930216_paris.jpg$$
 			/images/19930216/19930216_paris2.jpg$$
 			/images/19930216/19930216_paris3.jpg$$
+			;;;;2023-10-22
 		,
 	)}
 
@@ -137,7 +138,7 @@
 			Murders.
 		)},
 		photosets= /images/19930223/euro93.jpg$$
-			Kathie McGinty;;;;2004-05-12
+			Kathie McGinty;;;;1997-05-29
 	)}
 
 #define	Feb25.html()
@@ -524,11 +525,11 @@
 		reviews=highly recommended!$$
 			David Whittemore
 		,
-		photosets=
+		cassettes=
 			/images/19930820/19930820_blackeg_cover.jpg$$
 			/images/19930820/19930820_blackeg_a.jpg$$
 			/images/19930820/19930820_blackeg_b.jpg$$
-			David Whittemore
+			David Whittemore;;;;2017-04-13
 	)}
 
 #define	Aug27.html()
@@ -599,10 +600,10 @@
 		who=${literalizeCommas( ${pat}, ${paul}, ${green} )},
 		with=${literalizeCommas( ${cale} )},
 	notes=${literalizeCommas(opening for ${cale}. never so nervous.)},
-		photosets= /images/19931028/pass_28Oct93.jpg;;All-Access Pass$$
-			David Whittemore,
-		tickets=/images/19931028/19931028_ticket.jpg$$
-			Alexander Vrchoticky;;;;2017-08-05
+	photosets= /images/19931028/pass_28Oct93.jpg;;All-Access Pass$$
+		David Whittemore;;;;1998-04-26,
+	tickets=/images/19931028/19931028_ticket.jpg$$
+		Alexander Vrchoticky;;;;2017-08-05
 	)}
 
 #define	Oct30.html()
@@ -658,7 +659,7 @@
 
 		who=${literalizeCommas( ${pat}, ${dooj}, ${richard} )},
 		posters=/images/19931127/19931127_poster.jpg$$
-		    nothingelseon;;https://twitter.com/nothingelseon/status/1676314140162523136/photo/1;;;;2023-07-04
+		    nothingelseon;;https://twitter.com/nothingelseon/status/1676314140162523136/photo/1;;2023-07-04
 
 	)}
 

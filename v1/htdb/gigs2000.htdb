@@ -12,7 +12,7 @@
 		)}
 		,setlists=
 			/images/20000413/20000413_setlist.jpg$$
-			VerveNet@aol.com;;;;2004-05-12
+			VerveNet@aol.com;;;;2001-08-09
 	,
 	reviews=
 		${literalizeCommas(
@@ -250,7 +250,7 @@
 			/images/20000415/patsteve.jpg$$
 			/images/20000415/theboys.jpg$$
 			/images/20000415/theboysc.jpg$$
-			Jim Gibbin;;jhg@mail.buffnet.net
+			Jim Gibbin;;jhg@mail.buffnet.net;;2004-05-12
 	---
 			/images/20000415/Buff01.jpg$$
 			/images/20000415/Buff02.jpg$$
@@ -276,7 +276,7 @@
 			/images/20000415/Buff46.jpg$$
 			/images/20000415/Buff47.jpg$$
 			/images/20000415/Buff49.jpg$$
-			person_robert_ferin
+			Robert Ferin;;;;2001-08-04
 	,
 	reviews=
 		${literalizeCommas(
@@ -308,7 +308,7 @@
 			/images/20000416/erie_3.jpg$$
 			/images/20000416/erie_4.jpg$$
 			/images/20000416/erie_5.jpg$$
-			jlw;;welle@velocity.net
+			jlw;;welle@velocity.net;;2004-05-12
 	)}
 
 #define	Apr17.html()
@@ -330,7 +330,7 @@
 		,
 		photosets=/images/20000417/jbc_pitt1.jpg$$
 			/images/20000417/max_pitt.jpg$$
-			Robert Gilroy;;rgilroy@mail.bright.net
+			Robert Gilroy;;rgilroy@mail.bright.net;;2004-05-12
 	,
 	reviews=
 		${literalizeCommas(
@@ -722,7 +722,7 @@
 			/images/20000423/004_4.jpg$$
 			/images/20000423/005_5.jpg$$
 			/images/20000423/006_6.jpg$$
-			Brian Obert;;brian@ticketking.net
+			Brian Obert;;brian@ticketking.net;;2001-08-21
 	)}
 
 #define	Apr25.html()
@@ -803,7 +803,7 @@
 		,
 		photosets=/images/20000429/jbcwebcast.jpg$$
 			/images/20000429/fishy.jpg$$
-			David Whittemore
+			David Whittemore;;;;2013-06-13
 		,
 		posters=/images/20000429/20000429_poster.jpg$$
 		    ;;;;2013-06-13
@@ -880,7 +880,7 @@
 		/images/20000503/20000503_jenniferhubler_JBC15.jpg$$
 		/images/20000503/20000503_jenniferhubler_JBC16.jpg$$
 		/images/20000503/20000503_jenniferhubler_JBC17.jpg$$
-		Jennifer Hubler;;https://www.flickr.com/photos/jenhuber/albums/72177720298823758
+		Jennifer Hubler;;https://www.flickr.com/photos/jenhuber/albums/72177720298823758;;2022-05-11
 	,setlists=
 			/images/20000503/20000503_setlist.jpg$$
 			;;;;2016-04-18
@@ -912,7 +912,7 @@
 			/images/20000504/JBC9.jpg$$
 			/images/20000504/JBC10.jpg$$
 			/images/20000504/JBC11.jpg$$
-			Jay Nagy;;https://twitter.com/ServoAcademy
+			Jay Nagy;;https://twitter.com/ServoAcademy;;2004-05-19
 	,
 	reviews=
 		${literalizeCommas(
@@ -1224,7 +1224,7 @@
 			/images/20000508/disk4.Untitled6.jpg$$
 			/images/20000508/disk4.Untitled7.jpg$$
 			/images/20000508/disk4.Untitled9.jpg$$
-			Diane White;;ocbh@juno.com
+			Diane White;;ocbh@juno.com;;2004-07-04
 	,
 	reviews=
 		${literalizeCommas(
@@ -1403,7 +1403,7 @@
 			/images/20000511/NYC20000511B22.jpg$$
 			/images/20000511/NYC20000511B23.jpg$$
 			/images/20000511/NYC20000511B24.jpg$$
-			person_robert_ferin
+			Robert Ferin;;;;2000-09-28
 	---
 			/images/20000511/disk2.Untitled4.jpg$$
 			/images/20000511/disk2.Untitled5.jpg$$
@@ -1436,7 +1436,7 @@
 			/images/20000511/disk2.Untitled31.jpg$$
 			/images/20000511/disk2.Untitled33.jpg$$
 			/images/20000511/disk2.Untitled34.jpg$$
-			Diane White;;ocbh@juno.com
+			Diane White;;ocbh@juno.com;;2004-07-04
 			,
 	reviews=
 		${literalizeCommas(
@@ -1558,7 +1558,7 @@
 			/images/20000617/DCP_1082.jpg$$
 			/images/20000617/DCP_1083.jpg$$
 			/images/20000617/DCP_1084.jpg$$
-			Ray;;rlkoke@public1.tpt.tj.cn
+			Ray;;rlkoke@public1.tpt.tj.cn;;;;2004-05-11
 			---
 			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20000617/20000617_screenshot.jpg;;Captured from video$$
 			Disclocation Dance video;;https://youtu.be/rVQK2Bsdd7Q?t=161;;2023-04-16
@@ -1720,7 +1720,7 @@
 			/images/20000618/DCP_1112.jpg$$
 			/images/20000618/DCP_1113.jpg$$
 			/images/20000618/DCP_1114.jpg$$
-			Ray;;rlkoke@public1.tpt.tj.cn
+			Ray;;rlkoke@public1.tpt.tj.cn;;;;2004-05-11
 	,
 	reviews=
 		${literalizeCommas(

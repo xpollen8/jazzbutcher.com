@@ -2,6 +2,7 @@
 	${gigHeader(
 		photosets= /images/20130126/20130126_pat1.jpg$$
 			/images/20130126/20130126_pat2.jpg$$
+			;;;;2014-07-12
 		,
 		posters=/images/20130126/20130126_poster.jpg$$
 		    Pierre Guillaume;;;;2025-07-21
@@ -21,6 +22,7 @@
 		Heimo Reifetshammer;;heimoreifetshammer\@web.de;;2021-11-15
 		,
 		photosets= /images/20130214/20130214_pat.jpg$$
+			;;;;2014-11-27
 	)}
 
 #define	Feb15_2200.html()
@@ -80,7 +82,7 @@
 			(Both of them)
 		)},
 	photosets= /images/20130615/20130615_brianchistian_max.jpg$$
-			Brian Christian III
+			Brian Christian III;;;;2013-06-16
 	 ---
 			/images/20130615/20130615_arcane93_soundcheck_pat.jpg$$
 			/images/20130615/20130615_arcane93_soundcheck_max.jpg$$
@@ -88,19 +90,19 @@
 			/images/20130615/20130615_arcane93_max1.jpg$$
 			/images/20130615/20130615_arcane93_max2.jpg$$
 			/images/20130615/20130615_arcane93_pat1.jpg$$
-			Matt Condon;;http://twitter.com/arcane93
+			Matt Condon;;http://twitter.com/arcane93;;2013-06-16
 	---
 			/images/20130615/20130615_TheMickLewis_duo.jpg$$
-			\@TheMickLewis;;http://twitter.com/TheMickLewis
+			\@TheMickLewis;;http://twitter.com/TheMickLewis;;2013-06-16
 	---
 			/images/20130615/20130615_soundbitesnyc_duo.jpg$$
-			\@soundbitesnyc;;http://twitter.com/soundbitesnyc
+			\@soundbitesnyc;;http://twitter.com/soundbitesnyc;;2013-06-16
 	---
 			/images/20130615/20130615_brooklynvegan_pat.jpg$$
-			\@brooklynvegan;;http://twitter.com/brooklynvegan
+			\@brooklynvegan;;http://twitter.com/brooklynvegan;;2013-06-16
 	---
 			/images/20130615/20130615_knight_duo.jpg$$
-			Knight Berman\, Jr\, (\@marbletea);;http://twitter.com/marbletea
+			Knight Berman\, Jr\, (\@marbletea);;http://twitter.com/marbletea;;2013-06-16
 	 ---
 			/images/20130615/20130615_uncletoe_duo2.jpg$$
 			/images/20130615/20130615_uncletoe_pat2.jpg$$
@@ -112,23 +114,25 @@
 			/images/20130615/20130615_uncletoe_max1.jpg$$
 			/images/20130615/20130615_uncletoe_max2.jpg$$
 			/images/20130615/20130615_uncletoe_pat1.jpg$$
-			uncletoe;;http://www.flickr.com/photos/uncletoe
+			Lito Vales;;http://www.flickr.com/photos/uncletoe;;2013-06-22
 	---
 			/images/20130615/20130615_ruiz_duo.jpg$$
 			/images/20130615/20130615_ruiz_max.jpg$$
 			/images/20130615/20130615_ruiz_gretsch.jpg$$
-			Jim Ruiz;;http://chickfactor.com/2013/06/the-jazz-butcher-live-by-jim-ruiz/
+			Jim Ruiz;;http://chickfactor.com/2013/06/the-jazz-butcher-live-by-jim-ruiz/;;2013-06-23
 	---
 			/images/20130615/20130615_thelmagazine_JazzButcherJazzButcher02.jpg$$
 			/images/20130615/20130615_thelmagazine_JazzButcherJazzButcher03.jpg$$
 			/images/20130615/20130615_thelmagazine_JazzButcherJazzButcher11.jpg$$
 			/images/20130615/20130615_thelmagazine_JazzButcherJazzButcher19.jpg$$
+			Beowulf Sheehan/The L Magazine;;http://www.thelmagazine.com;;2013-06-26
+	---
 			/images/20130615/20130615_donyc_max.jpg$$
 			/images/20130615/20130615_donyc_pat.jpg$$
-			Beowulf Sheehan/The L Magazine;;http://www.thelmagazine.com
+			Beowulf Sheehan/The L Magazine;;http://www.thelmagazine.com;;2014-07-12
 	---
 			/images/20130615/20130615_GregHiggings_Pat.jpg$$
-			Greg Higgins;;;;
+			Greg Higgins;;;;2023-11-28
 	,
 	setlists=
 			/images/20130615/20130615_ruiz_setlist.jpg$$
@@ -143,10 +147,10 @@
 	${gigHeader(
 		photosets=
 		/images/20130617/20130617_cakeshop_pat.jpg$$
-			Cake Shop;;https://www.instagram.com/cakeshopusa/
+			Cake Shop;;https://www.instagram.com/cakeshopusa/;;2017-04-08
 		---
 		/images/20130617/20130617_gregbetza_sketch.jpg$$
-			Greg Betza;;http://www.gregbetza.com/the-jazz-butcher-at-the-cake-shop
+			Greg Betza;;http://www.gregbetza.com/the-jazz-butcher-at-the-cake-shop;;2014-07-12
 	---
 			/images/20130617/20130617_arcane93_pat.jpg$$
 			/images/20130617/20130617_arcane93_max.jpg$$
@@ -160,7 +164,7 @@
 			/images/20130617/20130617_foonon_pat_outside.jpg$$
 			/images/20130617/20130617_foonon_patmax_outside.jpg$$
 			/images/20130617/20130617_foonon_duo2.jpg$$
-			Foonon;;http://thefoonon.tumblr.com
+			Foonon;;http://thefoonon.tumblr.com;;2013-06-19
 	---
 			/images/20130617/20130617_uncletoe_group.jpg$$
 			/images/20130617/20130617_uncletoe_guitar.jpg$$
@@ -176,7 +180,7 @@
 			/images/20130617/20130617_uncletoe_pat4.jpg$$
 			/images/20130617/20130617_uncletoe_pat5.jpg$$
 			/images/20130617/20130617_uncletoe_pat6.jpg$$
-			Lito Vales;;http://www.flickr.com/photos/uncletoe
+			Lito Vales;;http://www.flickr.com/photos/uncletoe;;2013-06-22
 		,
 	reviews=${literalizeCommas(
 			<h2>Jazz Butcher 6/17/2013</h2>

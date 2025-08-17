@@ -54,6 +54,7 @@
 		)},
 		photosets=
 			/images/20100309/20100309_pat.jpg$$
+			;;;;2014-07-12
 		,
 		posters=/images/20100309/20100309_poster.jpg$$
 		    ;;;;2010-06-09
@@ -215,7 +216,7 @@
 			/images/20100917/Famp8.jpg$$
 			/images/20100917/Famp11.jpg$$
 			/images/20100917/Famp12.jpg$$
-			Popular TV Archaeologist Paul Blinkhorn
+			Popular TV Archaeologist Paul Blinkhorn;;;;2010-09-19
 	)}
 
 #define	Oct15.html()
@@ -241,7 +242,7 @@
 		photosets= /images/20101022/labour1.jpg$$
 			/images/20101022/labour2.jpg$$
 			/images/20101022/labour3.jpg$$
-			Paul Blinkhorn
+			Paul Blinkhorn;;;;2011-06-04
 	)}
 
 #define	Dec4_2000.html()
@@ -291,7 +292,7 @@
 			/images/20101204/horse7.jpg;;${literalizeCommas(
 				Sensational Andy Harwood Band - Andy on guitar, stage left
 			)}$$
-			Paul Blinkhorn
+			Paul Blinkhorn;;;;2011-06-04
 	)}
 
 #define	Dec10.html()

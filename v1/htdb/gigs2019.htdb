@@ -55,7 +55,7 @@
 		photosets=
 			/images/20190406/20190406_basu_1.jpg$$
 			/images/20190406/20190406_basu_2.jpg$$
-			Dhiren Basu
+			Dhiren Basu;;;;2019-08-30
 		,
 		posters=/images/20190406/20190406_poster.jpg$$
 		    ;;;;2019-02-02
@@ -130,7 +130,7 @@
 		)},
 		photosets=
 			/images/20190622/20190622_johnnyp_pat_kusworth.jpg;;Dave Kusworth\, ${pat}$$
-			Johnny P;;https://twitter.com/johnnyp_p
+			Johnny P;;https://twitter.com/johnnyp_p;;2019-08-04
 		,
 		posters=/images/20190622/20190622_poster.jpg$$
 		    ;;;;2019-06-17
@@ -155,7 +155,7 @@
 			/images/20190803/20190803_brooksbank_pat1.jpg$$
 			/images/20190803/20190803_brooksbank_pat2.jpg$$
 			/images/20190803/20190803_brooksbank_pat3.jpg$$
-			Andrew Brooksbank,
+			Andrew Brooksbank;;;;2019-08-04
 		setlists=
 			/images/20190803/20190803_setlist.jpg$$
 			Andrew Brooksbank;;;;2019-08-04
@@ -178,7 +178,7 @@
 		with=${literalizeCommas( Micky Greaney)},
 		photosets=
 			/images/20190817/20190817_cousins.jpg$$
-			Graham Cousins
+			Graham Cousins;;;;2019-08-30
 		,
 		posters=/images/20190817/20190817_poster.jpg$$
 		    ;;;;2023-11-20
@@ -203,14 +203,14 @@
 		)},
 		photosets=
 			/images/20190928/20190928_blackbird_paris1.jpg$$
-			Mathieu David Blackbird
+			Mathieu David Blackbird;;;;2019-10-01
 			---
 			/images/20190928/20190928_cathimini_paris13.jpg;;Tim\, Cathimini\, Pat\, Mathieu David Blackbird$$
 			/images/20190928/20190928_cathimini_paris6.jpg$$
 			/images/20190928/20190928_cathimini_paris7.jpg$$
 			/images/20190928/20190928_cathimini_paris8.jpg$$
 			/images/20190928/20190928_cathimini_paris9.jpg$$
-			Cathimini (Abus Dangereux)
+			Cathimini (Abus Dangereux);;;;2019-10-01
 			---
 			/images/20190928/20190928_pierre_P1480744.jpg$$
 			/images/20190928/20190928_pierre_P1480743.jpg$$
@@ -231,7 +231,7 @@
 			/images/20190928/20190928_pierre_P1480728.jpg$$
 			/images/20190928/20190928_pierre_P1480727.jpg$$
 			/images/20190928/20190928_pierre_P1480726.jpg$$
-			Pierre Guillaume
+			Pierre Guillaume;;;;2020-03-22
 			---
 			/images/20190928/20190928_dufour_garedunord1.jpg$$
 			/images/20190928/20190928_dufour_garedunord2.jpg$$
@@ -239,26 +239,26 @@
 			/images/20190928/20190928_dufour_paris3.jpg$$
 			/images/20190928/20190928_dufour_paris4.jpg$$
 			/images/20190928/20190928_dufour_paris.jpg$$
-			Philippe Dufour
+			Philippe Dufour;;;;2019-10-01
 			---
 			/images/20190928/20190928_lucien_paris12.jpg$$
 			/images/20190928/20190928_lucien_paris5.jpg$$
 			/images/20190928/20190928_lucien_paris.jpg$$
-			Lucien Borderline
+			Lucien Borderline;;;;2019-10-01
 			---
 			/images/20190928/20190928_tremolo_paris11.jpg$$
 			/images/20190928/20190928_tremolo_paris_1.jpg$$
-			Tremolo Lelaboratoire
+			Tremolo Lelaboratoire;;;;2019-10-01
 			---
 			/images/20190928/20190928_arquilliere_1.jpg$$
 			/images/20190928/20190928_arquilliere_2.jpg$$
 			/images/20190928/20190928_arquilliere_3.jpg$$
 			/images/20190928/20190928_arquilliere_4.jpg$$
 			/images/20190928/20190928_arquilliere_5.jpg$$
-			Vincent Arquilliere
+			Vincent Arquilliere;;;;2019-10-07
 			---
 			/images/20190928/20190928_magicrpm_pat.jpg;;"Yes I’m pretty high"$$
-			magicrpm;;https://twitter.com/magicrpm/status/1178050161983021067
+			magicrpm;;https://twitter.com/magicrpm/status/1178050161983021067;;2019-09-28
 		,
 		posters=/images/20190928/20190928_poster.jpg$$
 		    ;;;;2019-09-21
@@ -271,7 +271,7 @@
 		)},
 		photosets=
 			/images/20191005/20191005_PhilipSnow_Pat.jpg$$
-			Philip Snow
+			Philip Snow;;;;2023-08-09
 	)}
 
 #define	Oct11_1930.html()
@@ -295,7 +295,7 @@
 		photosets=
 			/images/20191011/20191011_simon_1.jpg$$
 			/images/20191011/20191011_simon_2.jpg$$
-			Simon Phillips
+			Simon Phillips;;;;2019-10-14
 		,
 		posters=/images/20191011/20191011_poster.jpg$$
 		    ;;;;2019-09-08
@@ -320,22 +320,22 @@
 		photosets=
 			/images/20191024/20191024_brooksbank_pat.jpg$$
 			/images/20191024/20191024_brooksbank_pat2.jpg$$
-			Andrew Brooksbank
+			Andrew Brooksbank;;;;2019-10-26
 			---
 			/images/20191024/20191024_loynes_1.jpg$$
 			/images/20191024/20191024_loynes_2.jpg$$
-			Andy Loynes
+			Andy Loynes;;;;2019-11-11
 			---
 			/images/20191024/20191024_rice_1.jpg$$
 			/images/20191024/20191024_rice_2.jpg$$
-			Lynda Rice
+			Lynda Rice;;;;2019-11-11
 			---
 			/images/20191024/20191024_corbridge_1.jpg$$
 			/images/20191024/20191024_corbridge_2.jpg$$
 			/images/20191024/20191024_corbridge_3.jpg$$
 			/images/20191024/20191024_corbridge_4.jpg$$
 			/images/20191024/20191024_corbridge_5.jpg$$
-			Ian Corbridge
+			Ian Corbridge;;;;2019-11-11
 	)}
 
 #define	Oct26_1830.html()
@@ -347,20 +347,21 @@
 		with=${literalizeCommas( ${dj})},
 		photosets=
 			/images/20191026/20191026_pat.jpg$$
+			;;;;2019-07-09
 		---
 			/images/20191026/20191026_phillips_MClubSimon1.jpg$$
 			/images/20191026/20191026_phillips_MClubSimon2.jpg$$
 			/images/20191026/20191026_phillips_MClubSimon3.jpg$$
-			Simon Phillips
+			Simon Phillips;;;;2019-11-11
 		---
 			/images/20191026/20191026_forrest_MClubVDForrestFishy.jpg$$
 			/images/20191026/20191026_forrest_VDForrestDaveband.jpg$$
 			/images/20191026/20191026_forrest_VDForrest.jpg$$
-			Vincent Damian Forrest
+			Vincent Damian Forrest;;;;2019-11-11
 		---
 			/images/20191026/20191026_barker_MClubDBChurchill.jpg$$
 			/images/20191026/20191026_barker_MClubDBEiderFish.jpg;;${literalizeCommas(${max},${barker},${pat})}$$
-			David E. Barker
+			David E. Barker;;;;2019-11-11
 		---
 			/images/20191026/20191026_PatFish_8660_MothClub26102019_EGabrielEdvy.jpg$$
 			/images/20191026/20191026_PatFish_8662_MothClub26102019_EGabrielEdvy.jpg$$
@@ -393,25 +394,26 @@
 		)},
 		photosets=
 			/images/20191109/20191109_dufour_1.jpg$$
-			Philippe Dufour
+			Philippe Dufour;;;;2019-11-15
 			---
 			/images/20191109/20191109_dufour_2.jpg$$
-			Jean-michel Dufour
+			Jean-michel Dufour;;;;2019-11-15
 			---
 			/images/20191109/20191109_jenkins_1.jpg$$
 			/images/20191109/20191109_jenkins_2.jpg$$
 			/images/20191109/20191109_jenkins_3.jpg$$
-			Tony Jenkins
+			Tony Jenkins;;;;2019-11-15
 			---
 			/images/20191109/20191109_russell_1.jpg$$
-			Claire Russell
+			Claire Russell;;;;2019-11-15
 			---
 			/images/20191109/20191109_turner_1.jpg$$
 			/images/20191109/20191109_turner_2.jpg$$
-			Joe Turner
+			Joe Turner;;;;2019-11-15
 			---
 			/images/20191109/20191109_uncredited_pat_sato.jpg;;${literalizeCommas(${pat}, Kyoko Sato)}$$
 			/images/20191109/20191109_uncredited_rolo_proctor.jpg;;${literalizeCommas(${rolo}, ${proctor})}$$
+			;;;;2019-11-15
 		,
 		posters=/images/20191109/20191109_poster.jpg$$
 		    ;;;;2019-08-30

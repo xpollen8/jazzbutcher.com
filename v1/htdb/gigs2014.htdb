@@ -36,10 +36,10 @@
 			like Slim Gaillard's "Dunking Bagels" for instance.
 		)},
 		photosets= /images/20140627/20140627_ectomort_loungequartet.jpg$$
-				brendan mccarthy;;https://twitter.com/ectomort
+				brendan mccarthy;;https://twitter.com/ectomort;;2014-07-04
 		---
 				/images/20140627/20140627_thelamplighter1_warmup.jpg$$
-				\@theLampLighter1;;https://twitter.com/theLampLighter1
+				\@theLampLighter1;;https://twitter.com/theLampLighter1;;2014-07-04
 	)}
 
 #define	Jul12.html()
@@ -62,7 +62,8 @@
 		)},
 		photosets= /images/20140719/20140719_group1.jpg$$
 			/images/20140719/20140719_group2.jpg$$
-			/images/20140719/20140719_group3.jpg
+			/images/20140719/20140719_group3.jpg$$
+			;;;;2014-07-22
 		,
 		posters=/images/20140719/20140719_poster.jpg$$
 		    ;;;;2017-02-12
@@ -77,13 +78,13 @@
 			Joe Woolley;;;;
 		)},
 		photosets= /images/20140820/20140820_guynewton_duo.jpg$$
-			Guy Newton;;;;
+			Guy Newton;;;;2014-08-31
 		---
 		/images/20140820/20140820_foodiecraftbeerlife.jpg$$
-			FoodieCraftBeerLife;;https://www.instagram.com/foodiecraftbeerlife/
+			FoodieCraftBeerLife;;https://www.instagram.com/foodiecraftbeerlife/;;2017-04-08
 		---
 		/images/20140820/20140820_group.jpg$$
-			Mat Wallis;;;;
+			Mat Wallis;;;;2023-11-20
 		,
 		posters=/images/20140820/20140820_poster.jpg$$
 		    ;;;;2014-11-27
@@ -106,16 +107,16 @@
 		)},
 		photosets= /images/20140821/20140821_gillianbarclay_group1.jpg$$
 			/images/20140821/20140821_gillianbarclay_group2.jpg$$
-			Gillian Barclay
+			Gillian Barclay;;;;2014-08-31
 	---
 			/images/20140821/20140821_philipthain_trio.jpg$$
-			Phillip Thain
+			Phillip Thain;;;;2014-08-31
 	---
 			/images/20140821/20140821_michaelwhitworth_1.jpg$$
 			/images/20140821/20140821_michaelwhitworth_2.jpg$$
 			/images/20140821/20140821_michaelwhitworth_3.jpg$$
 			/images/20140821/20140821_michaelwhitworth_4.jpg$$
-			Michael Whitworth;;https://www.flickr.com/photos/antisyzygy
+			Michael Whitworth;;https://www.flickr.com/photos/antisyzygy;;2014-09-22
 		,
 		posters=/images/20140821/20140821_poster.jpg$$
 		    Ayuko Koyabashi;;;;2014-11-20
@@ -130,7 +131,7 @@
 		photosets= /images/20140822/20140822_johncannon_pat.jpg$$
 			/images/20140822/20140822_johncannon_drums.jpg$$
 			/images/20140822/20140822_johncannon_bass.jpg$$
-			John Cannon
+			John Cannon;;;;2014-08-31
 		,
 		setlists=
 			/images/20140822/20140822_stevegarofalo_setlist.jpg$$
@@ -146,26 +147,26 @@
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
 		photosets= /images/20140920/20140920_brendanquinn_patjoe.jpg$$
-			Brendan Quinn
+			Brendan Quinn;;;;2014-09-22
 	---
 			/images/20140920/20140920_anchor_kerryharris.jpg$$
-			Kerry Harris
+			Kerry Harris;;;;2017-07-01
 	---
 			/images/20140920/20140920_claireharrison_1.jpg$$
 			/images/20140920/20140920_claireharrison_2.jpg$$
-			Claire Harrison
+			Claire Harrison;;;;2014-09-22
 	---
 			/images/20140920/20140920_mattsewell_1.jpg$$
 			/images/20140920/20140920_mattsewell_2.jpg$$
 			/images/20140920/20140920_mattsewell_3.jpg$$
-			Matt Sewell
+			Matt Sewell;;;;2014-09-22
 	---
 			/images/20140920/20140920_michaelwhitworth_1.jpg$$
 			/images/20140920/20140920_michaelwhitworth_2.jpg$$
 			/images/20140920/20140920_michaelwhitworth_3.jpg$$
 			/images/20140920/20140920_michaelwhitworth_4.jpg$$
 			/images/20140920/20140920_michaelwhitworth_5.jpg$$
-			Michael Whitworth;;https://www.flickr.com/photos/antisyzygy
+			Michael Whitworth;;https://www.flickr.com/photos/antisyzygy;;2014-09-22
 		,
 		posters=/images/20140920/20140920_poster.jpg$$
 		    ;;;;2014-10-12
@@ -198,7 +199,7 @@
 		photosets= /images/20141003/20141003_cunningham_1.jpg$$
 			/images/20141003/20141003_cunningham_2.jpg$$
 			/images/20141003/20141003_cunningham_3.jpg$$
-			Sean Michael Cunningham
+			Sean Michael Cunningham;;;;2014-10-15
 	)}
 
 
@@ -216,7 +217,7 @@
 		photosets= /images/20141004/20141004_paulblinkhorn_1.jpg$$
 			/images/20141004/20141004_paulblinkhorn_2.jpg$$
 			/images/20141004/20141004_paulblinkhorn_3.jpg$$
-			Paul Blinkhorn
+			Paul Blinkhorn;;;;2014-10-15
 		,
 		posters=/images/20141004/20141004_poster.jpg$$
 		    ;;;;2014-10-15
@@ -230,19 +231,20 @@
 				Tokyo. We are sitting in a joint called Mister Donut. We think we look like three riverboat gamblers       
 				trying to look as though we had never, ever played poker before, no sir.)}
 				$$
-			Izumi Nakatani
+			Izumi Nakatani;;;;2014-10-29
 	---
 			/images/20141024/20141024_JazzButcher_keiko.jpg$$
-			Keiko
+			Keiko;;;;2014-11-27
 	---
 			/images/20141024/20141024_JazzButcher_kenkinoshita.jpg;;
 			${literalizeCommas("Pat was good today. Short, 40 minutes. I wanted to hear the song of the Jazz Butcher more.")}
 			$$
-			ken kinoshita;;https://twitter.com/prettypopmusic
+			ken kinoshita;;https://twitter.com/prettypopmusic;;2014-10-25
 	---
 			/images/20141024/20141024_zher1.jpg$$
 			/images/20141024/20141024_zher2.jpg$$
 			/images/20141024/20141024_zher3.jpg$$
+			;;;;2014-10-29
 		,
 		posters=/images/20141024/20141024_poster.jpg$$
 		    ;;;;2023-11-20
@@ -252,7 +254,7 @@
 #define	Oct25_1800.html()
 	${gigHeader(
 		photosets= /images/20141025/20141025_yuko_pat.jpg$$
-			Yuko
+			Yuko;;;;2014-11-27
 	---
 			/images/20141025/20141025_pat1.jpg$$
 			/images/20141025/20141025_pat2.jpg;;
@@ -281,7 +283,7 @@
 			For what it's worth, he pays lead rather like a certain Max Eider...                         
 			)}
 			$$
-			Keiko
+			Keiko;;;;2014-11-27
 	)}
 
 
@@ -297,7 +299,8 @@
 		photosets= /images/20141112/20141112_JazzButcher_madrid_radio1.jpg$$
 			/images/20141112/20141112_JazzButcher_madrid_radio2.jpg$$
 			/images/20141112/20141112_JazzButcher_madrid_radio3.jpg$$
-			/images/20141112/20141112_JazzButcher_madrid_radio4.jpg
+			/images/20141112/20141112_JazzButcher_madrid_radio4.jpg$$
+			;;;;2014-11-27
 		,
 		pat=${literalizeCommas(
 			Live on the air with Julio Ruiz, the "Espanish John Peel". National radio, six in the evening. He          
@@ -315,12 +318,13 @@
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
 		photosets= /images/20141112/20141112_JazzButcher_anidelrio_madrid.jpg$$
-			Ani Del Rio
+			Ani Del Rio;;;;2014-11-27
 		---
 			/images/20141112/20141112_JazzButcher_madrid.jpg$$
 			/images/20141112/20141112_JazzButcher_madrid2.jpg$$
 			/images/20141112/20141112_JazzButcher_madrid_cool.jpg$$
-			/images/20141112/20141112_JazzButcher_stevieg.jpg
+			/images/20141112/20141112_JazzButcher_stevieg.jpg$$
+			;;;;2014-11-27
 		,
 		posters=/images/20141112/20141112_poster.jpg$$
 		    ;;;;2014-10-14
@@ -344,7 +348,8 @@
 			/images/20141113/20141113_hatbar11.jpg$$
 			/images/20141113/20141113_hatbar12.jpg$$
 			/images/20141113/20141113_hatbar13.jpg$$
-			/images/20141113/20141113_hatbar15.jpg
+			/images/20141113/20141113_hatbar15.jpg$$
+			;;;;2014-11-27
 	)}
 
 #define	Nov27_2000.html()
@@ -353,7 +358,8 @@
 			Half-hour solo performance to open the Labour Club's 30th birthday celebrations. Onstage eight o'clock.
 		)},
 		photosets= /images/20141127/20141127_JazzButcher_LabourClub1.jpg$$
-			/images/20141127/20141127_JazzButcher_LabourClub2.jpg
+			/images/20141127/20141127_JazzButcher_LabourClub2.jpg$$
+			;;;;2014-12-02
 	)}
 
 #define	Dec19.html()

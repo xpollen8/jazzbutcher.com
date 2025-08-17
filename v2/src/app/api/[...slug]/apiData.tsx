@@ -160,6 +160,7 @@ const forceDT = (dt?: string): string => {
 	return new Date(Date.parse(useDT?.replace(/-00/g, '-01'))).toISOString().substr(0, 10);
 }
 
+// @ts-ignore
 const makeOptions = (args: HashedType, type?: string) => ({ all: args?.all, filter: args?.filter, ...args[type] });
 
 const findRecent = (noun: string, object: any, fields: string[] , options?: HashedType ) => {

@@ -417,7 +417,7 @@
 #define	May15.html()
 	${gigHeader(
 		recording=${literalizeCommas(${q(7)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT})},
-		bootlegger=${literalizeCommas(${matt})},
+		bootlegger=${literalizeCommas(Matthew Cockerill)},
 		who=${literalizeCommas(
 			${solo}
 		)},
@@ -431,7 +431,7 @@
 				<p>Pat was wandering around the bar during the support acts, muttering "Christ, I’m nervous. I haven’t done this in years."
 				<p>The audience were mostly seated (as was he) around him, looking agog, like he was some guru.
 			)}$$
-			Matt Cockerill,
+			Matthew Cockerill,
 		pat=${literalizeCommas(
 			<h3>THAT MEAN <a href="${jbc_gigs}/1993/May15.html">FIDDLER
 			SET</a> LIST IN FULL...</h3>

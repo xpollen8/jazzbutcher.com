@@ -25,7 +25,7 @@
 		)},
 		notes=${literalizeCommas(
 			Pat made the poster for this gig
-		)},
+		)}$$David Whittemore;;;;1998-04-26,
 		posters=/images/19820612/19820612_poster.jpg$$
 		Pat Fish;;;;1998-04-26
 	)}

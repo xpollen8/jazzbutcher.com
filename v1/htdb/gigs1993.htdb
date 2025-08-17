@@ -612,7 +612,7 @@
 		who=${literalizeCommas( ${pat}, ${paul}, ${dooj}, ${richard} )},
 	setlists=
 		/images/19931030/19931030_notebook_setlist.jpg$$
-			Pat's notebooks.;;;;2015-10-04
+			Pat Fish Notebook;;;;2015-10-04
 
 #define	Nov12.html()
 	${gigHeader(

@@ -889,7 +889,7 @@
 
 		who=${literalizeCommas( ${pat}, Ed Ball )},
 		setlists=/images/19881221/19881221_notebook_setlist.jpg$$
-			Pat's notebooks;;;;2015-08-04
+			Pat Fish Notebook;;;;2015-08-04
 	)}
 
 #define	page_requested	${${page}()}

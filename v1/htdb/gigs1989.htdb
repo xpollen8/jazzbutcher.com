@@ -10,7 +10,7 @@
 
 	who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
 	,setlists=/images/19890203/19890203_notebook_setlist.jpg$$
-		Pats's notebooks;;;;2015-08-04
+		Pat Fish Notebook;;;;2015-08-04
 	)}
 
 #define	Feb25.html()
@@ -356,7 +356,7 @@
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
 	setlists=
 		/images/19891103/19891103_notebook_setlist.jpg$$
-		Pat's notebooks.;;;;2015-08-04
+		Pat Fish Notebook;;;;2015-08-04
 	)}
 
 #define	Nov4.html()
@@ -382,7 +382,7 @@
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
 	setlists=
 		/images/19891106/19891106_notebook_setlist.jpg$$
-			Pat's notebooks;;;;2015-08-04
+			Pat Fish Notebook;;;;2015-08-04
 	)}
 
 #define	Nov8.html()
@@ -392,7 +392,7 @@
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
 	setlists=
 		/images/19891108/19891108_setlist.jpg$$
-		Pat's notebooks.;;;;2004-05-12
+		Pat Fish Notebook;;;;2004-05-12
 	,
 	photosets= /images/richard.jpg;;${literalizeCommas(${richard})}$$
 			David Whittemore;;;;1997-05-29
@@ -721,7 +721,7 @@
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
 		setlists=
 		/images/19891210/19891210_notebook_setlist.jpg$$
-			Pat's notebooks.;;;;2015-10-04
+			Pat Fish Notebook;;;;2015-10-04
 
 	)}
 

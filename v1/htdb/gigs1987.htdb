@@ -47,7 +47,7 @@
 		reviews=${literalizeCommas(
 		My goodness, what a weird show.
 		About halfway through, Pat and Alex turn against the audience.
-		)}$$${del};;;;2017-11-05,
+		)}$$David Whittemore;;;;2017-11-05,
 		who=${literalizeCommas( ${pat}, ${green} )},
 	)}
 

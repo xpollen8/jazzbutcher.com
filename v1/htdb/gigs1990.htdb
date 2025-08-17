@@ -211,7 +211,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900420/19900420_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -220,7 +220,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900421/19900421_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -229,7 +229,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900422/19900422_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -238,7 +238,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900423/19900423_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -247,7 +247,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900424/19900424_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -256,7 +256,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900425/19900425_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -265,7 +265,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900427/19900427_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -274,7 +274,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900427/19900427_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -284,10 +284,10 @@
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		setlists=
 			/images/19900428/19900428_setlist.jpg$$
-			;;;;2004-05-12
+			;;;;1997-05-28
 		,
 		posters=/images/19900428/19900428_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 	)}
 
 #define	Apr29.html()
@@ -295,7 +295,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900429/19900429_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -304,7 +304,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900430/19900430_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -313,7 +313,7 @@
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
 		posters=/images/19900501/19900501_poster.jpg$$
-		    ;;;;2016-04-18
+		    ;;;;1997-11-19
 
 	)}
 
@@ -617,7 +617,7 @@
 		,
 		photosets= /images/19901111/1990Nov11_pat.jpg$$
 			/images/19901111/1990Nov11_alex.jpg$$
-			David Whittemore
+			David Whittemore;;;;1997-11-19
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -667,8 +667,10 @@
 		photosets= /images/19901112/19901112_del_comedy1.jpg$$
 			/images/19901112/19901112_del_comedy2.jpg$$
 			/images/19901112/19901112_del_comedy3.jpg$$
+			David Whittemore;;;;1997-05-29
+			---
 			/images/19901112/19901112_DavidWhittemore_shoot.jpg$$
-			David Whittemore
+			David Whittemore;;;;2023-11-18
 
 	)}
 
@@ -765,6 +767,7 @@
 		,
 		photosets=
 			/images/19901114/19901114_bathtub.jpg;; JBC fans from new jersey fill a hotel bathtub with booze and proceed to feed them to the band.$$
+			Scott Shleentz;;;;2023-10-23
 	)}
 
 #define	Nov15.html()
@@ -794,7 +797,7 @@
 			/images/19901115/19901115_del_julian.jpg;;${literalizeCommas(${jules})}$$
 			/images/19901115/19901115_del_lix.jpg;;${literalizeCommas(${lix})}$$
 			/images/19901115/19901115_del_rodney.jpg;;${literalizeCommas(${rodney})}$$
-			David Whittemore
+			David Whittemore;;;;1997-05-29
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 		setlists=
@@ -889,7 +892,7 @@
 			David Whittemore
 	,
 		photosets= /images/suave.jpg;;${literalizeCommas(${larry} and ${paul})}$$
-				David Whittemore
+				David Whittemore;;;;1997-05-29
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},
 
@@ -903,7 +906,7 @@
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
 		photosets= /images/19901120/19901120_del_group1.jpg$$
 			/images/19901120/19901120_del_group2.jpg;;${literalizeCommas( Photos from the next morning.)}$$
-			David Whittemore
+			David Whittemore;;;;1997-11-19
 		,
 		reviews=
 		${literalizeCommas(

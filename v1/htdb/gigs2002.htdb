@@ -7,6 +7,7 @@
 			In January ${wilson} played with ${gab}'s band, Tobermory, in Cambridge.
 		)},
 		photosets= /images/20020131/20020131_wilson_boatrace.jpg$$
+			;;;;2013-06-22
 	)}
 
 #define	Jan4_2100.html()
@@ -515,6 +516,7 @@
 		)},
 		photosets= /images/20020330/20020320_LeedsTrip.jpg$$
 			/images/20020330/20020320_YeahAnd.jpg$$
+			;;;;2017-03-24
 	)}
 
 #define	Apr18.html()
@@ -715,11 +717,11 @@
 		photosets= /images/20020611/2002Jun11_owen_pat.jpg$$
 			/images/20020611/2002Jun11_JBC.jpg$$
 			/images/20020611/2002Jun11_max.jpg$$
-			Brian Kelly
+			Brian Kelly;;;;2004-05-12
 			---
 			/images/20020611/20020611_CD_HolgerMuhsfeldt_front.jpg;;${literalizeCommas(Holger Muhsfeldt recording)}$$
 			/images/20020611/20020611_CD_HolgerMuhsfeldt_back.jpg;;${literalizeCommas(Holger Muhsfeldt recording)}$$
-			James Duval
+			James Duval;;;;2025-01-29
 		,
 		reviews=
 			${literalizeCommas(
@@ -782,7 +784,7 @@
 			/images/20020613/2002Jun13_pat2.jpg$$
 			/images/20020613/2002Jun13_pat_crouchy.jpg$$
 			/images/20020613/2002Jun13_pat_crouchy_max.jpg$$
-			Brian Kelly
+			Brian Kelly;;;;2004-05-12
 		,
 		reviews=
 			${literalizeCommas(
@@ -874,7 +876,7 @@
 			/images/20020614/2002Jun14_nuremburg5.jpg$$
 			/images/20020614/2002Jun14_nuremburg6.jpg$$
 			/images/20020614/2002Jun14_nuremburg7.jpg$$
-			Brian Kelly
+			Brian Kelly;;;;2004-05-12
 		,
 		reviews=
 			${literalizeCommas(
@@ -979,7 +981,7 @@
 		photosets= /images/20020616/2002Jun16_max1.jpg$$
 			/images/20020616/2002Jun16_max2.jpg$$
 			/images/20020616/2002Jun16_pat.jpg$$
-			Brian Kelly
+			Brian Kelly;;;;2004-05-12
 		,
 		reviews=
 			${literalizeCommas(
@@ -1061,7 +1063,7 @@
 			/images/20020618/2002Jun18_cunts.jpg$$
 			/images/20020618/2002Jun18_max_owen_baby_postshow.jpg$$
 			/images/20020618/2002Jun18_max_owen_postshow.jpg$$
-			Brian Kelly
+			Brian Kelly;;;;2004-05-12
 		,
 		reviews=
 			${literalizeCommas(
@@ -1345,6 +1347,7 @@
 			/images/20020921/NoMates.jpg;;${literalizeCommas(No Mates)}$$
 			/images/20020921/SteveFred.jpg;;${literalizeCommas(${steve_gordon} and Fred)}$$
 			/images/20020921/CurtHeid.jpg;;${literalizeCommas(${curt}'s painted head)}$$
+			;;;;2002-12-14
 		,
 		posters=/images/20020921/20020921_poster.jpg$$
 		    ;;;;2004-05-19

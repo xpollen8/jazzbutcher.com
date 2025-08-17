@@ -58,6 +58,7 @@
 	)},
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
 		photosets= /images/19850208/19850208_jbc.jpg$$
+		;;;;2017-04-28
 		,
 	setlists=/images/19850208/19850208_setlist.jpg$$
 		Andrew Brooksbank;;;;2017-03-06
@@ -86,10 +87,10 @@
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 	with=${literalizeCommas( The Fall, Khmer Rouge)},
 		photosets= /images/19850307/19850307_cosmictigger_group.jpg$$
-			cosmictigger
+			cosmictigger;;;;2014-11-27
 		---
 		/images/19850307/19850307_lochgirl_pat.jpg$$
-			lochgirl,
+			lochgirl;;;;2019-10-11
 		posters=/images/19850307/19850307_poster.jpg$$
 			nothingelseon;;https://twitter.com/nothingelseon/status/1257208646880030720;;2020-05-04
 

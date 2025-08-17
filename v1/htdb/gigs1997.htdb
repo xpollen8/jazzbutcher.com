@@ -2,7 +2,7 @@
 	${gigHeader(
 		photosets= /images/19970311/19970311_martinsreed_001.jpg$$
 			/images/19970311/19970311_martinsreed_003.jpg$$
-			Martin Reed
+			Martin Reed;;;;2005-09-23
 		---
 		/images/19970311/sumo1.jpg$$
 			/images/19970311/sumo2.jpg$$
@@ -15,7 +15,7 @@
 			/images/19970311/sumo9.jpg$$
 			/images/19970311/sumo10.jpg$$
 			/images/19970311/sumo11.jpg$$
-			John Devitofranceschi
+			John Devitofranceschi;;;;2017-02-24
 			,
 			notes=${literalizeCommas(
 				Sumosonic will be playing live at The Powerhaus, London
@@ -88,7 +88,7 @@
 			${pat}, ${max}, Joe Skyward (bass), Greg Gilmore (drums)
 		)},
 		photosets=/images/19970916/19970916_notebook_spaceneedle.jpg$$
-			Pat Fish,
+			Pat Fish Notebook;;;;2017-04-02,
 		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
@@ -110,7 +110,7 @@
 		photosets= /images/19970917/17Sep97_1.jpg$$
 			/images/19970917/17Sep97_2.jpg$$
 			/images/water.jpg$$
-		David Whittemore
+			David Whittemore;;;;2004-05-12
 	)}
 
 #define	Sep19.html()
@@ -135,7 +135,7 @@
 			/images/19970919/maxpat.jpg$$
 			/images/19970919/ourhero.jpg;;${del}$$
 			/images/19970919/pat.jpg$$
-			Unknown Wedding Photographer
+			Unknown Wedding Photographer;;;;2004-10-23
 		---
 			/images/19970919/19Sep97_1.jpg$$
 			/images/19970919/19Sep97_2.jpg$$
@@ -143,7 +143,7 @@
 			/images/19970919/19Sep97_4.jpg$$
 			/images/19970919/19Sep97_5.jpg$$
 			/images/19970919/19Sep97_6.jpg$$
-			Dave Lee;;dlee@eskimo.com
+			Dave Lee;;dlee@eskimo.com;;1997-11-19
 	,
 	reviews=
 		${literalizeCommas(
@@ -156,7 +156,7 @@
 			David Whittemore
 	,
 	posters=/images/19970919/19970919_poster.jpg$$
-	    David Whittemore;;;;2004-05-12
+	    David Whittemore;;;;1997-11-19
 	)}
 
 #define	Sep22.html()
@@ -182,14 +182,14 @@
 			/images/19970922/19970922_6.jpg$$
 			/images/19970922/19970922_7.jpg$$
 			/images/19970922/19970922_8.jpg$$
-		David Whittemore;;;;2025-06-14
+		David Whittemore;;;;1998-04-26
 		---
 			/images/19970922/22Sep97_marquee.jpg$$
-		Murray Digby
+		Murray Digby;;;;1998-04-26
 		,
 		tickets=
 			/images/19970922/19970922_ticket.jpg$$
-			David Whittemore;;;;2004-05-12
+			David Whittemore;;;;1997-11-19
 		,
 	reviews=
 		${literalizeCommas(

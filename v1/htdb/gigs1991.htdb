@@ -130,7 +130,7 @@
 		pat=${literalizeCommas(
 		)},
 		photosets= /images/19911012/19911012_creation_paris.jpg;;${literalizeCommas(Nikki Sudden & Pat Fish, Paris 1991)}$$
-			Creation Flickr;;http://www.flickr.com/photos/creation-records/5400636977/
+			Creation Flickr;;http://www.flickr.com/photos/creation-records/5400636977/;;2013-06-22
 		,
 		tickets=
 			/images/19911012/19911012_ticket.jpg$$

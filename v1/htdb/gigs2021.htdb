@@ -7,7 +7,7 @@
 		   /images/20210228/20210228_LittleMu.jpg$$
 		   /images/20210228/20210228_CatCard1.jpg$$
 		   /images/20210228/20210228_CatCard2.jpg$$
-		   David Whittemore
+		   David Whittemore;;;;2021-02-28
 		,
 		setlists=
 			/images/20210228/20210228_setlist.jpg$$
@@ -23,10 +23,10 @@
 		who=${literalizeCommas( ${pat})},
 		photosets=
 		   /images/20210418/20210418_davies.jpg$$
-		   Jim Davies
+		   Jim Davies;;;;2021-04-23
 		   ---
 		   /images/20210418/20210418_sumishta.jpg$$
-		   Sumishta Brahm
+		   Sumishta Brahm;;;;2025-02-02
 		,
 		posters=/images/20210418/20210418_poster.jpg$$
 		    ;;;;2021-04-14
@@ -58,10 +58,10 @@
 		)},
 		photosets=
 		   /images/20210820/20210820_duo.jpg;;w/Joe Woolley$$
-		   Manuel Soleado;;https://twitter.com/manuelsoleado
+		   Manuel Soleado;;https://twitter.com/manuelsoleado;;2021-08-21
 		   ---
 		   /images/20210820/20210820_cath.jpg;;$$
-		   Cath Aubergin
+		   Cath Aubergin;;;;2021-08-28
 		,
 		posters=/images/20210820/20210820_poster.jpg$$
 		    ;;;;2021-08-14
@@ -118,7 +118,7 @@
 		photosets=
 		   /images/20211127/20211127_mccookerybook.jpg;;Helen McCookerybook$$
 		   /images/20211127/20211127_sumishaheidi.jpg;;Sumishta Brahm and Heidi Berry$$
-		   Planet Ruth;;https://twitter.com/Planetruth_;;2021-11-27
+		   \@PlanetruthPictures;;https://twitter.com/Planetruth_;;2021-11-27
 		   ---
 		   /images/20211127/20211127_heidiberry.jpg;;Peter Crouch\, Sumishta Brahm\, Tim Keegan\, Heidi Berry\, John Silver\, Simon Mawby$$
 		   Sumishta Brahm;;;;2021-11-28

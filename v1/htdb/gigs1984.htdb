@@ -169,11 +169,11 @@
 		reviews=${literalizeCommas(
 			It is at the very end of my stay in London, July 20, 1984, I finally saw The Jazz Butcher at the Living Room, with Spit Like Paint and Vee VV in the first part.  I do not think they played that night the resumption of Chinese envoy , one of the best songs from one of my favorite albums of John Cale, Music for a new society. Bizarrement, cette chanson n'a jamais été reprise sur aucune compilation de Pat Fish (alias The Jazz Butcher). Oddly, this song has never been taken on any compilation of Pat Fish (aka The Jazz Butcher).
 		)}$$
-			Vivonzeureux!;;http://vivonzeureux.blogspot.com/2009/09/what-nice-way-to-turn-seventeen-2.html
+			Vivonzeureux!;;http://vivonzeureux.blogspot.com/2009/09/what-nice-way-to-turn-seventeen-2.html;;2013-06-22
 		,
 		photosets= /images/19840720/19840720_vivonzeureux_band1.jpg$$
 			/images/19840720/19840720_vivonzeureux_band2.jpg$$
-			Vivonzeureux!;;http://vivonzeureux.blogspot.com/2009/09/what-nice-way-to-turn-seventeen-2.html
+			Vivonzeureux!;;http://vivonzeureux.blogspot.com/2009/09/what-nice-way-to-turn-seventeen-2.html;;2013-06-22
 	)}
 
 #define	Aug4.html()
@@ -192,7 +192,7 @@
 		Daniel Ash, Terry Walpole, Csawza Cinema, Harry Isles, Graham Trott, Alex Novak, MJ Harvey, David Haslam, Ian Blackmore, David J., Mitch Jenkins, Kevin Haskins, Tim Perkins
 	)},
 	posters=/images/19840901/19840901_poster.jpg$$
-	;;;;2004-05-12
+	;;;;1998-04-26
 	)}
 
 #define	Oct29.html()
@@ -296,6 +296,7 @@
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
 		photosets= /images/19841222/19841222_jazzbutcher_rockgarden_1.jpg$$
 			/images/19841222/19841222_jazzbutcher_rockgarden_2.jpg$$
+			;;;;2014-10-15
 	)}
 
 #define	Dec30.html()

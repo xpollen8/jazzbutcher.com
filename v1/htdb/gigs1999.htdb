@@ -165,7 +165,7 @@
 		)}
 		,
 		photosets= /images/19990226/26Feb1999_hamburg.jpg;;${literalizeCommas(${owen}, ${max}, ${pat})}$$
-			Arne Jasse
+			Arne Jasse;;;;2004-05-12
 		---
 			/images/19990226/19990226_jazzbutcher_hamburg.jpg;;${literalizeCommas(The Executaire)}$$
 			/images/19990226/226.jpg$$
@@ -176,6 +176,7 @@
 			/images/19990226/Pat1.jpg$$
 			/images/19990226/Pat2.jpg;;${literalizeCommas(${pat})}$$
 			/images/19990226/Tp.jpg;;${literalizeCommas(${pat}, Toria Estes)}
+			;;;;2001-08-26
 		,
 		posters=/images/19990226/19990226_poster.jpg$$
 		    ;;;;2016-04-18
@@ -264,7 +265,7 @@
 		photosets= /images/19990521/max.jpg$$
 			/images/19990521/duo.jpg$$
 			/images/19990521/pat.jpg$$
-			Anne Pace and Bob Frangooles
+			 Anne Pace and Bob Frangooles;;;;2004-05-12
 	)}
 
 #define	May22_1930.html()
@@ -391,6 +392,7 @@
 		notes=${literalizeCommas(
 		)},
 		photosets=/images/19990824/19990824_adamgimbel_patmax.jpg$$
+			;;;;2014-07-12
 		,
 		posters=/images/19990824/19990824_poster.jpg$$
 		    Pat Fish;;;;2017-04-03
@@ -408,6 +410,7 @@
 		)},
 		photosets=
 			/images/19990909/19990909_group.jpg;;${literalizeCommas(Pat, Kevin, David, Max, Owen, Brian Kelly)}$$
+			;;;;2023-10-16
 			---
 			/images/19990909/19990909_Notebook_backstage.jpg;;${literalizeCommas(Page from Pat's 1999 Notebook featuring Our Man Brian Kelly)}$$
 			David Whittemore;;;;2025-07-14,
@@ -487,7 +490,7 @@
 		)}
 		,
 		photosets= /images/19990911/11Sep1999_groupo.jpg;;${literalizeCommas(Left to right: Jimmy Duval, ${hask}, ${owen}, ${max}, ${kathie}, ${pat}, ${steve})}$$
-			Mark Miller;; MJMiller@co.anoka.mn.us
+			Mark Miller;;MJMiller@co.anoka.mn.us;;2004-05-12
 	---
 			/images/19990911/11Sep1999_max_chiseled.jpg$$
 			/images/19990911/11Sep1999_max_is_god.jpg$$
@@ -510,7 +513,7 @@
 			/images/19990911/11Sep1999_pat_wildeyes.jpg$$
 			/images/19990911/11Sep1999_steve.jpg$$
 			/images/19990911/11Sep1999_steve_pat.jpg$$
-			David Whittemore
+			David Whittemore;;;;2004-05-12
 	,
 	tickets=
 			/images/19990911/19990911_ticket.jpg$$
@@ -620,7 +623,7 @@
 			/images/19990914/P0000188.jpg$$
 			/images/19990914/P0000192.jpg$$
 			/images/19990914/P0000198.jpg$$
-			Leisa ReFalo
+			Leisa ReFalo;;;;2004-05-12
 		,
 		posters=/images/19990914/19990914_poster.jpg$$
 		    ;;;;2016-11-20
@@ -702,13 +705,13 @@
 			/images/19990916/P0000235.jpg$$
 			/images/19990916/P0000236.jpg$$
 			/images/19990916/P0000237.jpg$$
-			Leisa ReFalo
+			Leisa ReFalo;;;;2004-05-12
 	---
 			/images/19990916/jbcseattlefront150.jpg$$
 			/images/19990916/jbcseattlefront300.jpg$$
 			/images/19990916/jbcseattletray150.jpg$$
 			/images/19990916/jbcseattletray300.jpg$$
-			Brent Aliverti;;brenta_ms@email.msn.com
+			Brent Aliverti;;brenta_ms@email.msn.com;;2004-05-12
 	)}
 
 #define	Sep23_1200.html()
@@ -831,11 +834,11 @@
 			/images/19990923/23Sep1999_JazzB2.jpg$$
 			/images/19990923/23Sep1999_JazzB3.jpg$$
 			/images/19990923/23Sep1999_JazzB4.jpg$$
-			Jen Uscher and Jason Conradt
+			Jen Uscher and Jason Conradt;;;;2001-08-11
 	---
 			/images/19990923/19990923_martinsreed_002.jpg$$
 			/images/19990923/19990923_martinsreed_003.jpg$$
-			Martin Reed
+			Martin Reed;;;;2005-10-04
 	---
 			/images/19990923/23Sep1999_monkee1.jpg$$
 			/images/19990923/23Sep1999_monkee2.jpg$$
@@ -843,14 +846,14 @@
 			/images/19990923/23Sep1999_monkee4.jpg$$
 			/images/19990923/23Sep1999_monkee5.jpg$$
 			/images/19990923/23Sep1999_monkee6.jpg$$
-			person_robert_ferin
+			Robert Ferin;;;;2003-04-24
 	---
 			/images/19990923/23Sep1999_Neate1.jpg$$
 			/images/19990923/23Sep1999_Neate2.jpg$$
 			/images/19990923/23Sep1999_Neate5.jpg$$
 			/images/19990923/23Sep1999_Neate11.jpg$$
 			/images/19990923/23Sep1999_Neate12.jpg$$
-			Wilson Neate
+			Wilson Neate;;;;2003-04-24
 	,
 	reviews=
 		${literalizeCommas(

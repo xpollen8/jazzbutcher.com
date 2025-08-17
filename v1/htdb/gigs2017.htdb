@@ -9,7 +9,7 @@
 		photosets=
 		/images/20170408/BradJazwinski.jpg$$
 		/images/20170408/BradJazwinski2.jpg$$
-		Mandy Jazwinski
+		Mandy Jazwinski;;;;2017-04-15
 	)}
 
 #define	Apr8_2000.html()
@@ -51,7 +51,7 @@
 		,
 		photosets=
 			/images/20170408/20170408_preseton_heathcote.jpg$$
-			Paul Heathcote
+			Paul Heathcote;;;;2017-04-10
 		---
 		/images/20170408/preston_lastdaydeaf_1.jpg$$
 		/images/20170408/preston_lastdaydeaf_2.jpg$$
@@ -87,15 +87,15 @@
 		,
 		photosets=
 		/images/20170415/arash_lex.jpg$$
-		Arash Torabi
+		Arash Torabi;;;;2017-04-16
 		---
 		/images/20170415/heeson_lex.jpg$$
-		Mick Heeson
+		Mick Heeson;;;;2017-04-16
 		---
 		/images/20170415/jimdavies_lex_1.jpg$$
 		/images/20170415/jimdavies_lex_2.jpg$$
 		/images/20170415/jimdavies_lex_3_group.jpg$$
-		Jim Davies
+		Jim Davies;;;;2017-04-16
 		---
 		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040651.jpg$$
 		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040665.jpg$$
@@ -139,10 +139,10 @@
 		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040898.jpg$$
 		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040900.jpg$$
 		/images/20170415/20170415_JazzButcher_Tidmarsh_P1040910.jpg$$
-		\@PlanetruthPictures
+		\@PlanetruthPictures;;https://twitter.com/Planetruth_;;2017-04-17
 		---
 		/images/20170415/kevmatthews_lex.jpg$$
-		Kev Matthews
+		Kev Matthews;;;;2017-04-17
 		---
 		/images/20170415/20170415_countrymile_1.jpg$$
 		/images/20170415/20170415_countrymile_2.jpg$$
@@ -217,11 +217,11 @@
 		)},
 		photosets=
 			/images/20170427/20170427_russpearson.jpg$$
-			Russ Pearson
+			Russ Pearson;;;;2017-04-28
 			---
 			/images/20170427/20170427_janebarnes_1.jpg$$
 			/images/20170427/20170427_janebarnes_2.jpg$$
-			Jane Barnes;;https://www.youtube.com/channel/UCkwNb500dnNugMJUiq7IvBg
+			Jane Barnes;;https://www.youtube.com/channel/UCkwNb500dnNugMJUiq7IvBg;;2017-04-28
 		,
 		pat=${literalizeCommas(
 		A very pleasant evening, much enhanced by Chef Watson and his most excellent rice, peas and plantain.
@@ -249,7 +249,7 @@
 			/images/20170525/20170525_rachel_2.jpg$$
 			/images/20170525/20170525_rachel_band.jpg$$
 			/images/20170525/20170525_rachel_psych.jpg$$
-			Rachel McGrath
+			Rachel McGrath;;;;2017-05-26
 		,
 		posters=/images/20170525/20170525_poster.jpg$$
 		    ;;;;2017-05-19
@@ -288,16 +288,16 @@
 		photosets=
 			/images/20170528/20170528_barker.jpg;;${literalizeCommas(${pat}, ${rolo}, ${barker})}$$
 			/images/20170528/20170528_barker_rolo.jpg;;${rolo}$$
-			David E. Barker
+			David E. Barker;;;;2017-05-30
 			---
 			/images/20170528/20170528_roswell.jpg$$
-			Sterling Roswell
+			Sterling Roswell;;;;2017-05-30
 		---
 			/images/20170528/20170528_firerecords_simon.jpg;;${simon}$$
-			Fire Records
+			Fire Records;;;;2017-06-02
 		---
 			/images/20170528/20170528_sydmeats.jpg;;$$
-			Sydney Meats
+			Sydney Meats;;;;2017-06-02
 		,
 		posters=/images/20170528/20170528_poster.jpg$$
 		    ;;;;2017-03-28
@@ -322,7 +322,7 @@
 			/images/20170702/20170702_jah_4.jpg;;${stevenew}$$
 			/images/20170702/20170702_jah_5.jpg$$
 			/images/20170702/20170702_jah_6.jpg;;${joel_harries}$$
-			Jasmine Aleesha Hale
+			Jasmine Aleesha Hale;;;;2017-07-05
 			---
 			/images/20170702/20170702_newboots.jpg$$
 			New Boots Mag;;https://newbootsnorthants.wordpress.com;;2017-07-02 10:58:00
@@ -348,12 +348,12 @@
 			7:00 to 10:30 pm
 		)},
 		setlists=
-		/images/20171022/20171022_brooksbank_setlist.jpg$$
-		Andrew Brooksbank
+			/images/20171022/20171022_brooksbank_setlist.jpg$$
+			Andrew Brooksbank;;;;2017-10-23
 		,
 		photosets=
-		/images/20171020/20171020_markgallacher.jpg$$
-		Mark Gallacher
+			/images/20171020/20171020_markgallacher.jpg$$
+			Mark Gallacher;;;;2017-11-03
 	)}
 
 #define	Oct21_1930.html()
@@ -376,10 +376,10 @@
 		/images/20171021/20171021_mattjolly_2.jpg$$
 		/images/20171021/20171021_mattjolly_3.jpg$$
 		/images/20171021/20171021_mattjolly_4.jpg$$
-		Matt Jolly
+		Matt Jolly;;;;2017-11-03
 		---
 		/images/20171021/20171021_petepunk73_pat.jpg$$
-		petepunk73;;https://instagram.com/petepunk73
+			petepunk73;;https://instagram.com/petepunk73;;2018-03-03
 	)}
 
 #define	Oct22_1900.html()
@@ -394,10 +394,10 @@
 		photosets=
 		/images/20171022/20171022_brooksbank_408.jpg$$
 		/images/20171022/20171022_brooksbank_409.jpg$$
-		Andrew Brooksbank
+		Andrew Brooksbank;;;;2017-10-23
 		---
 		/images/20171022/20171022_benlewis.jpg$$
-		Ben Lewis
+		Ben Lewis;;;;2017-11-03
 	)}
 
 #define	Sep22.html()
@@ -410,13 +410,13 @@
 		photosets=
 		/images/20170922/20170922_suebennett_1.jpg;;${literalizeCommas(Me joining ${dj} and Fiona Brice for the encore of Knocking On Heaven's Door)}$$
 		/images/20170922/20170922_suebennett_2.jpg$$
-		Sue Bennett
+		Sue Bennett;;;;2017-09-24
 		---
 		/images/20170922/20170922_joeturner.jpg$$
-		Joe Turner
+		Joe Turner;;;;2017-09-24
 		---
 		/images/20170922/20170922_barker.jpg;;${literalizeCommas(Me trying to do a soundcheck while ${barker} and ${dj} take the piss)}$$
-		Mrs. ${barker}
+		Mrs. David E. Barker;;;;2017-09-24
 		---
 		/images/20170922/20170922_201504.jpg$$
 		/images/20170922/20170922_203342.jpg$$
@@ -427,7 +427,7 @@
 		Malcolm Black;;;;2022-10-07
 		---
 		/images/20170922/20170922_rehearsal.jpg;;Pat Fish in Rehearsal$$
-		Glass Modern;;https://twitter.com/glassmodern2/status/1447500184015958019
+		Glass Modern;;https://twitter.com/glassmodern2/status/1447500184015958019;;2023-09-23
 		,
 		posters=/images/20170922/20170922_poster.jpg$$
 		    ;;;;2017-07-21

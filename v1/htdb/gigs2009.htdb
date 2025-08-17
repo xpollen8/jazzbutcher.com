@@ -15,7 +15,7 @@
 			8:00 - 2:00
 		)},
 		photosets= /images/20090227/20090227_BobUnderexposed.jpg$$
-			Bob Underexposed;;http://www.flickr.com/photos/bobunderexposed/3321411807/
+			Bob Underexposed;;http://www.flickr.com/photos/bobunderexposed/3321411807/;;2010-06-09
 		,
 		pat=${literalizeCommas(
 			Friday night's show was a real nice one. Sonic and band were really, really good.
@@ -87,7 +87,7 @@
 			Yes, I shall be singing it. Yes, they really do play it about 6 times faster than I have ever heard it played before. 
 		)},
 		photosets= /images/20090503/20090503_jonnytrotsky.jpg$$
-			Jonny Trotsky
+			Jonny Trotsky;;;;2017-04-28
 	)}
 
 #define	May24.html()
@@ -103,7 +103,7 @@
 		)},
 		photosets= /images/20090524/20090524_Pat1_MsDee23.jpg$$
 			/images/20090524/20090524_Pat2_MsDee23.jpg$$
-			MsDee23;;http://www.flickr.com/photos/25553559\@N00/3581304190
+			MsDee23;;http://www.flickr.com/photos/25553559@N00/3581304190;;2010-06-09
 	)}
 	 
 
@@ -211,9 +211,10 @@
 			${coonce};;;;2017-02-23 15:27:53
 			,
 		photosets= /images/20091010/20091010_hut.jpg$$
+		;;;;2017-04-28
 		---
 		/images/20091010/20091010_colecoonce.jpg$$
-		${coonce}
+		Cole Coonce;;;;2017-04-28
 		,
 		setlists= /images/20091010/20091010_setlist.jpg$$
 			;;;;2017-04-28
@@ -236,7 +237,7 @@
 			/images/20091011/4004482614_2178d51c00_o.jpg$$
 			/images/20091011/4004486186_25bfbf1fda_o.jpg$$
 			/images/20091011/4004491572_e91b2d5bf2_o.jpg$$
-			Ned Raggett;;https://www.flickr.com/photos/nedraggett/;;
+			Ned Raggett;;https://www.flickr.com/photos/nedraggett/;;2023-09-21
 		,
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${hask}
@@ -259,20 +260,21 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${hask}
 		)},
-		photosets= /images/20091013/20091013_jazzbutcher_losangeles.jpg
+		photosets= /images/20091013/20091013_jazzbutcher_losangeles.jpg$$
+			;;;;2014-10-15
 		---
 		/images/20091013/20091013_aquirkimagery.jpg$$
-		aquirkimagery
+			aquirkimagery;;;;2017-04-28
 		---
 		https://s3.amazonaws.com/assets.jazzbutcher.com/images/20091013/20091013_barrus_band.jpg$$
-		barrus;;https://www.flickr.com/photos/quartzcity/4004399264/
+			barrus;;https://www.flickr.com/photos/quartzcity/4004399264/
 		---
 		/images/20091013/20091013_JazzButcher_LA_NedRagget_1.jpg$$
 		/images/20091013/20091013_JazzButcher_LA_NedRagget_2.jpg$$
 		/images/20091013/20091013_JazzButcher_LA_NedRagget_3.jpg$$
 		/images/20091013/20091013_JazzButcher_LA_NedRagget_4.jpg$$
 		/images/20091013/20091013_JazzButcher_LA_NedRagget_5.jpg$$
-		Neg Raggett;;https://www.flickr.com/photos/nedraggett/;;2025-07-14
+			Neg Raggett;;https://www.flickr.com/photos/nedraggett/;;2025-07-14
 	)}
 
 #define	Oct17.html()
@@ -294,8 +296,10 @@
 		)},
 		photosets=
 			/images/20091017/20091017_jazzbutcher_losangeles.jpg$$
+			;;;;2014-10-15
 		---
 			/images/20091017/20091017_group.jpg$$
+			;;;;2023-11-20
 	)}
 
 #define	Oct30_1800.html()
@@ -309,10 +313,10 @@
 		)},
 		photosets=
 		/images/20091030/20091030_donchow.jpg$$
-		Don Chow
+			Don Chow;;;;2017-04-28
 		---
 		/images/20091030/20091030_nickhi_pat.jpg$$
-			Nick Hider;;http://www.flickr.com/photos/nickhi
+			Nick Hider;;http://www.flickr.com/photos/nickhi;;2013-06-22
 	)}
 
 #define	Nov7.html()

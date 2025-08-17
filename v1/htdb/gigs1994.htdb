@@ -322,7 +322,7 @@
 		recording=${literalizeCommas( ${q(7)}, ${p(A)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${nick}, ${curt} )},
 		photosets= /images/19940217/19940217_lucien_group.jpg$$
-			Lucien Borderline
+			Lucien Borderline;;;;2013-06-23
 		,
 		pat=${literalizeCommas( <a href="${jbc_letters}/94Apr13/tour.html">${butch} reviews the tour.</a><p>
 	${loony} has been busy; as soon as we arrive in the venue he is on
@@ -508,7 +508,7 @@
 				/images/19940601/19940601_del_egdebut2.jpg$$
 				/images/19940601/19940601_del_egdebut3.jpg$$
 				/images/19940601/19940601_flyer.jpg$$
-				David Whittemore
+				David Whittemore;;;;1997-05-29
 			---
 				/images/19940601/20220715_WonderBat9_Photoalbum_BlackEg.jpg;;Michael Horton-Jupiter meets The Black Eg$$
 				wonderbat9;;https://www.youtube.com/watch?v=a6SzTBA7WG8;;2022-07-14
@@ -577,7 +577,7 @@
 		cost=&pound;1:00,
 		posters=
 			/images/19940624/19940624_poster.jpg$$
-			;;;;2004-05-12
+			;;;;1998-04-26
 			---
 			/images/19940624/19940624_poster2.jpg;;A second flyer for the same gig!$$
 			David Whittemore;;https://davidwhittemore.com;;2023-12-21

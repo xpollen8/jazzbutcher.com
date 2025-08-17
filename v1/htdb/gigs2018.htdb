@@ -48,20 +48,21 @@
 		photosets=
 		/images/20180301/20180301_100club.jpg$$
 		/images/20180301/20180301_unknown.jpg$$
+		;;;;2018-03-03
 		---
 		/images/20180301/20180301_cannon.jpg$$
-		John Cannon
+		John Cannon;;;;2018-03-03
 		---
 		/images/20180301/20180301_dufour1.jpg;;Nick$$
 		/images/20180301/20180301_dufour2.jpg$$
-		Jean-Michel Dufour
+		Jean-Michel Dufour;;;;2018-03-03
 		---
 		/images/20180301/20180301_harris.jpg$$
-		Kelly Harris
+		Kelly Harris;;;;2018-03-03
 		---
 		/images/20180301/20180301_sewell1.jpg$$
 		/images/20180301/20180301_sewell2.jpg$$
-		Matt Sewell
+		Matt Sewell;;;;2018-03-03
 		---
 		/images/20180301/20180301_whitworth.jpg$$
 		/images/20180301/20180301_anti13.jpg$$
@@ -78,10 +79,10 @@
 		/images/20180301/20180301_antiPF7.jpg$$
 		/images/20180301/20180301_antiPF8.jpg$$
 		/images/20180301/20180301_antiPF9.jpg$$
-		Michael Whitworth;;https://www.flickr.com/photos/antisyzygy
+		Michael Whitworth;;https://www.flickr.com/photos/antisyzygy;;2018-08-03
 		---
 		/images/20180301/20180301_NNNPackdrill_band.jpg;;Jazz Butcher pouring it on at the hundred$$
-		\@NNNPackdrill;;https://twitter.com/NNNPackdrill
+		\@NNNPackdrill;;https://twitter.com/NNNPackdrill;;2018-03-02
 		---
 		/images/20180301/20180301_condon.jpg$$
 		/images/20180301/20180301_arcane93_1.jpg$$
@@ -98,7 +99,7 @@
 		/images/20180301/20180301_arcane93_12.jpg;;Nick Bandy$$
 		/images/20180301/20180301_arcane93_13.jpg$$
 		/images/20180301/20180301_arcane93_14.jpg$$
-		Matt Condon;;https://twitter.com/arcane93
+		Matt Condon;;https://twitter.com/arcane93;;2018-03-11
 		,
 		posters=/images/20180301/20180301_poster.jpg$$
 		    ;;;;2017-12-19
@@ -124,7 +125,7 @@
 		/images/20180524/20180524_mcgrath_cnd4.jpg$$
 		/images/20180524/20180524_mcgrath_cnd5.jpg$$
 		/images/20180524/20180524_mcgrath_cnd6.jpg$$
-		Rachel McGrath
+		Rachel McGrath;;;;2018-05-31
 		,
 		posters=/images/20180524/20180524_poster.jpg$$
 		    ;;;;2018-04-04
@@ -143,7 +144,7 @@
 		)},
 		photosets=
 		/images/20180505/20180505_matwallis.jpg$$
-		Mat Wallis
+		 Mat Wallis;;;;2018-05-07
 	)}
 
 #define	May27_1930.html()
@@ -161,7 +162,7 @@
 		/images/20180527/20180527_heeson_1.jpg$$
 		/images/20180527/20180527_heeson_2.jpg$$
 		/images/20180527/20180527_heeson_3.jpg$$
-		Mick Heeson
+		Mick Heeson;;;;2018-05-31
 		---
 		/images/20180527/20180527_turner_1.jpg$$
 		/images/20180527/20180527_turner_2.jpg$$
@@ -173,13 +174,13 @@
 		/images/20180527/20180527_turner_8.jpg$$
 		/images/20180527/20180527_turner_9.jpg$$
 		/images/20180527/20180527_turner_10.jpg$$
-		Joe Turner
+		Joe Turner;;;;2018-05-31
 		---
 		/images/20180527/20180527_delrio_1.jpg$$
-		Tom Del Rio
+		Tom Del Rio;;;;2018-05-31
 		---
 		/images/20180527/20180527_arcane93_pat.jpg$$
-		Matt Condon;;https://twitter.com/arcane93
+		Matt Condon;;https://twitter.com/arcane93;;2018-05-27
 		,
 		posters=/images/20180527/20180527_poster.jpg$$
 		    ;;;;2018-03-08
@@ -192,7 +193,7 @@
 		who=${literalizeCommas( ${pat})},
 		photosets=
 		/images/20180414/20180414_cunninham.jpg$$
-		Sean Michael Cunningham
+		Sean Michael Cunningham;;;;2018-04-15
 	)}
 
 #define	Jul28_1930.html()
@@ -211,7 +212,7 @@
 		/images/20180728/20180728_antiJBC6.jpg$$
 		/images/20180728/20180728_antiJBC7.jpg$$
 		/images/20180728/20180728_antiJBC8.jpg$$
-		Michael Whitworth;;https://www.flickr.com/photos/antisyzygy,
+		Michael Whitworth;;https://www.flickr.com/photos/antisyzygy;;2023-10-03
 	)}
 
 #define	Aug4_2100.html()
@@ -219,10 +220,11 @@
 		who=${literalizeCommas( ${pat})},
 		with=${literalizeCommas(Alex Novak)},
 		photosets=
-		https://s3.amazonaws.com/assets.jazzbutcher.com/images/20180804/20180804_tobyrose_pat.jpg$$
-		toby rose;;https://www.flickr.com/photos/129025072\@N04/43150287664
+			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20180804/20180804_tobyrose_pat.jpg$$
+			toby rose;;https://www.flickr.com/photos/129025072\@N04/43150287664
 		---
-		/images/20180804/20180804_pat.jpg$$
+			/images/20180804/20180804_pat.jpg$$
+			;;;;2023-11-28
 		,
 		posters=/images/20180804/20180804_poster.jpg$$
 		    ;;;;2018-08-04
@@ -237,7 +239,7 @@
 		notes=${literalizeCommas(Ex Bauhaus/ Love & Rockets star David J returns to London’s The Islington in August. Support from The Jazz Butcher and Micky Greaney at this lovely little London venue soon.)},
 		photosets=
 			/images/20180825/20180825_barker_group.jpg;;${literalizeCommas(${max}, ${barker}, ${dj})}$$
-			David E. Barker
+			David E. Barker;;;;2018-09-09
 		,
 		posters=/images/20180825/20180825_poster.jpg$$
 		    ;;;;2018-08-19
@@ -273,14 +275,14 @@
 		)},
 		photosets=
 		/images/20181108/20181108_keikorockpile_Pat.jpg$$
-		\@keikorockpile;;https://twitter.com/keikorockpile
+		\@keikorockpile;;https://twitter.com/keikorockpile;;2018-11-10
 		---
 		/images/20181108/20181108_SpiderPixie73_Pat.jpg$$
 		/images/20181108/20181108_SpiderPixie73_PatRose.jpg;;${literalizeCommas(${pat} and Rose McDowall)}$$
-		\@SpiderPixie73;;https://twitter.com/SpiderPixie73
+		\@SpiderPixie73;;https://twitter.com/SpiderPixie73;;2018-11-10
 		---
 		/images/20181108/20181108_WraggStephan_pat.jpg$$
-		\@WraggStephan;;https://twitter.com/WraggStephan
+		\@WraggStephan;;https://twitter.com/WraggStephan;;2020-04-07
 		,
 		posters=/images/20181108/20181108_poster.jpg$$
 		    ;;;;2018-11-04

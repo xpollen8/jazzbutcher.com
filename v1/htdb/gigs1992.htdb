@@ -54,7 +54,7 @@
 		who=${literalizeCommas( ${pat}, ${pete} )},
 		photosets= /images/19920425/19920425_del_pat.jpg$$
 			/images/19920425/19920425_del_pete.jpg$$
-			David Whittemore
+			David Whittemore;;;;2013-06-22
 
 	)}
 
@@ -63,7 +63,7 @@
 
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		photosets= /images/pat_plays.jpg$$
-			David Whittemore
+			 David Whittemore;;;;2004-05-12
 
 	)}
 
@@ -96,7 +96,7 @@
 			/images/19920426/M31-09.jpg;;${nick}$$
 			/images/19920426/M31-10.jpg;;${pete}$$
 			/images/19920426/M31-11.jpg$$
-			Steve Bingham;;http://www.flickr.com/photos/subpopstar/sets/72157626195728476
+			Steve Bingham;;http://www.flickr.com/photos/subpopstar/sets/72157626195728476;;2011-03-07
 		,
 		tickets=
 			/images/19920426/19920426_ticket.jpg$$
@@ -142,13 +142,13 @@
 	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		photosets= /images/19920501/19920501_del_crouch.jpg;;${literalizeCommas(${pete})}$$
-			David Whittemore
+			David Whittemore;;;;2013-06-23
 			---
 			/images/19920501/19920501_lillyblad_band.jpg$$
 			/images/19920501/19920501_lillyblad_band2.jpg$$
 			/images/19920501/19920501_lillyblad_pat.jpg$$
 			/images/19920501/19920501_lillyblad_friends.jpg;;Robert Lanza\, Pat Kelly$$
-			Eric R Lillyblad
+			Eric R Lillyblad;;;;2018-03-24
 	)}
 
 #define	May2_2030.html()
@@ -159,7 +159,7 @@
 		notes=${literalizeCommas( 8:30pm show)},
 		with=${literalizeCommas(Jeff Buckley, Gary Lucas)},
 		photosets= /images/19920502/19920502_genesolomon_tablecloth.jpg;;${literalizeCommas(Pat had decorated the tables in the club)}$$
-			Gene Solomon
+			Gene Solomon;;;;2019-03-10
 		,
 		posters=/images/19920502/19920502_poster.jpg$$
 		    Gene Solomon;;;;2019-03-10
@@ -174,7 +174,7 @@
 		notes=${literalizeCommas( 11:30pm show)},
 		with=${literalizeCommas(Jeff Buckley, Gary Lucas)},
 		photosets= /images/19920502/19920502_genesolomon_tablecloth.jpg;;${literalizeCommas(Pat had decorated the tables in the club)}$$
-			Gene Solomon
+			Gene Solomon;;;;2019-03-10
 		,
 		posters=/images/19920502/19920502_poster.jpg$$
 		    Gene Solomon;;;;2019-03-10
@@ -190,7 +190,7 @@
 	notes=${literalizeCommas( dank
 	)},
 		photosets= /images/19920503/19920503_del_techno.jpg;;${literalizeCommas(${pat})}$$
-			David Whittemore
+			David Whittemore;;;;1997-05-28
 
 	)}
 
@@ -274,7 +274,7 @@
 	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		photosets= /images/19920510/19920510_del_ohiggins.jpg;;${literalizeCommas(${iain})}$$
-			David Whittemore
+			David Whittemore;;;;1997-05-29
 
 	)}
 
@@ -602,7 +602,7 @@
 		photosets= /images/19920615/19920615_lis_pat_pete.jpg$$
 			/images/19920615/19920615_lis_pat.jpg$$
 			/images/19920615/19920615_lis_roll.jpg$$
-			Suzanne Lis
+			Suzanne Lis;;;;2017-03-20
 
 	)}
 
@@ -623,7 +623,7 @@
 			David Whittemore
 		,
 		photosets= /images/19920617/19920617_lis_pete.jpg;;${pete}$$
-			Suzanne Lis
+			Suzanne Lis;;;;2017-03-20
 	)}
 
 #define	Jun26.html()
@@ -678,11 +678,11 @@
 
 	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(B)}, ${g(1)})},
 		who=${literalizeCommas( ${eg} - Karel and Otto ${damm} )},
-		photosets=
+		cassettes=
 			/images/19920915/19920915_blackeg_cover.jpg$$
 			/images/19920915/19920915_blackeg_inside.jpg$$
 			/images/19920915/19920915_blackeg_a.jpg$$
-			David Whittemore
+			David Whittemore;;;;2017-04-13
 
 	)}
 

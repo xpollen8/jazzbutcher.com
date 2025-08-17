@@ -105,7 +105,7 @@
 		photosets=
 			/images/19830924/19830924_jazzbutcher_derngate.jpg$$
 			/images/19830924/19830924_pat.jpg$$
-			Kevin Barron
+			Kevin Barron;;;;2023-11-20
 			---
 			/images/19830924/19830924_1.jpg$$
 			/images/19830924/19830924_2.jpg$$
@@ -123,6 +123,7 @@
 
 	who=${literalizeCommas( ${pat}, ${max}, ${rolo} )},
 		photosets= /images/19830925/19830925_wiggingout.jpg$$
+			;;;;2017-04-28
 
 	)}
 

@@ -53,7 +53,7 @@
 			<p>I shall be on stage around ten o'clock in the evening.
 		)},
 		photosets= /images/20110604/20110604_zallaz01_pat.jpg$$
-			Kevin Misan;;http://www.flickr.com/photos/64033775\@N05/
+			Kevin Misan;;http://www.flickr.com/photos/64033775@N05/;;2013-06-22
 	)}
 
 #define	Jul20.html()
@@ -103,13 +103,13 @@
 			evening on the decks.
 		)},
 		photosets= /images/20110913/397305186.jpg$$
-			\@Miss_Lucifer;;http://twitter.com/Miss_Lucifer
+			\@Miss_Lucifer;;http://twitter.com/Miss_Lucifer;;2011-10-31
 	)}
 
 #define	Oct23.html()
 	${gigHeader(
 		photosets= /images/20111023/12bar2011.jpg$$
-			Karen Eng
+			Karen Eng;;;;2011-10-31
 	)}
 
 #define	Oct29_2000.html()

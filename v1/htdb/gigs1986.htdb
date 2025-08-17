@@ -415,7 +415,7 @@
 #define	Jul21.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${nancy})},
+	bootlegger=${literalizeCommas(Nancy Everson)},
 		recording=${literalizeCommas( ${w}, ${q(7)}, ${i(B)}, ${g(1)} )},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		notes=${literalizeCommas(Nice audience recording.)},

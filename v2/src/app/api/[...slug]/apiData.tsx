@@ -164,7 +164,7 @@ const forceDT = (dt?: string): string => {
 const makeOptions = (args: HashedType, type?: string) => ({ all: args?.all, filter: args?.filter, ...args[type] });
 
 const findRecent = (noun: string, object: any, fields: string[] , options?: HashedType ) => {
-	const { value = 6, units = 'months', filter = {} } = options || {};
+	const { exact = false, value = 6, units = 'months', filter = {} } = options || {};
 	const findValue = (obj: HashedType, fields: string[]) => {
 		const useField = fields?.find((f: string) => (f && obj[f]?.length)) || fields[0];
 		const useVal = useField && forceDT(obj[useField]?.trim());
@@ -177,9 +177,12 @@ const findRecent = (noun: string, object: any, fields: string[] , options?: Hash
 	}
 	const filterValues = ((r: HashedType) => {
 		if (!filter?.field || !filter?.value) return true;
+		if (filter.exact) {
+			return r[filter.field]?.toLowerCase() === filter.value?.toLowerCase();
+		}
 		return r[filter.field]?.toLowerCase()?.includes(filter.value?.toLowerCase());
 	});
-	//console.log("findRecent", { noun, fields, value, units }, options, filter);
+	//console.log("findRecent", { noun, fields, value, units, exact }, options, filter);
 	if (options?.limit) {
 		if (options?.filter) {
 			return returnResults(object?.results?.filter(filterValues)?.sort(sortValues)?.slice(0, options.limit));
@@ -345,17 +348,23 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const gigsongs = await apiData('gigsongs');
 				return returnResults(gigsongs?.results?.filter((g: any) => args?.all || (g?.mediacredit?.length && g?.added?.length))?.map((g: any) => ({
 					...g,
-					credit: g?.mediacredit,
+					credit: (g?.mediacredit?.length) ? g?.mediacredit : '-UNKNOWN-',
 					credit_date: g?.added,
 				})));
 			}
 			case 'gigtext_contributions': {
 				const gigtexts = await apiData('gigtexts');
-				return returnResults(gigtexts?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length)));
+				return returnResults(gigtexts?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
+					...g,
+					credit: (g?.credit?.length) ? g?.credit : '-UNKNOWN-',
+				})));
 			}
 			case 'gigmedia_contributions': {
 				const gigmedias = await apiData('gigmedias');
-				return returnResults(gigmedias?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length)));
+				return returnResults(gigmedias?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
+					...g,
+					credit: (g?.credit?.length) ? g?.credit : '-UNKNOWN-',
+				})));
 			}
 			case 'contributions': {
 				const gigmedia = await apiData('gigmedia_contributions', args);

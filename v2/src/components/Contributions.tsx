@@ -74,12 +74,12 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	if (!data) return;
 	const { gigmedia, gigtext, gigsong } = data || {};
 	const contributions: HashedType = {};
-	const total = gigmedia?.results?.length + gigtext?.results?.length + gigsong?.results?.length;
 	const recent = gigmedia?.results[0]?.credit_date;
+	let total = 0;
 	gigsong?.results?.forEach((r: any) => {
 		if (!r?.mediaurl?.length) return;
 		const type = prettyType(r?.mediaurl?.includes('.mp3') ? 'audio' : 'video', r?.type);
-		const person = removeHTML(r?.mediacredit) || '-UNKNOWN-';
+		const person = r?.credit;
 		const datetime = r?.datetime;
 		const added = r?.added;
 		if (!contributions[person]) { contributions[person] = []; }
@@ -89,10 +89,11 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 			datetime,
 			summary: r?.song,
 		});
+		total = total + 1;
 	});
 	gigtext?.results?.forEach((r: any) => {
 		const type = prettyType('text', r?.type);
-		const person = removeHTML(r?.credit)|| '-UNKNOWN-';
+		const person = r?.credit;
 		const datetime = r?.datetime;
 		const added = r?.credit_date;
 		if (!contributions[person]) { contributions[person] = []; }
@@ -102,10 +103,11 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 			datetime,
 			summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substr(0, 50) + '...' : '',
 		});
+		total = total + 1;
 	});
 	gigmedia?.results?.forEach((r: any) => {
 		const type = prettyType('image', r?.type);
-		const person = removeHTML(r?.credit)|| '-UNKNOWN-';
+		const person = r?.credit;
 		const datetime = r?.datetime;
 		const added = r?.credit_date;
 		if (!contributions[person]) { contributions[person] = []; }
@@ -115,7 +117,9 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 			datetime,
 			summary: (r?.image_caption) ? removeHTML(r?.image_caption)?.substr(0, 50) + '...' : '',
 		});
+		total = total + 1;
 	});
+
 	return <Loading isLoading={isLoading} >
 		<AllContributions contributions={contributions} total={total} recent={recent} label={label} options={options} />
 	</Loading>

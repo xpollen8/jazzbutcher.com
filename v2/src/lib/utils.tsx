@@ -347,10 +347,13 @@ export const parseImage = (str?: string, width: number = 250) => {
 	}
 }
 
-export const pluralize = (num: number, str: string, prefix?: string) => <>
-	{(prefix) && `${prefix} `}
-	{str + ((num !== 1) ? (str?.endsWith('log') || str?.endsWith('s') || str?.endsWith('x') || str?.endsWith('ia') || str?.endsWith('io') ? '' : 's') : '')} <span className="smalltext">({(num) ? num : 'None'})</span>
-</>
+export const pluralize = (num: number, str?: string, prefix?: string, terse?: boolean) => {
+	if (num === 1 && terse) return <>{(prefix) && `${prefix} `}{str}</>
+	return <>
+		{(prefix) && `${prefix} `}
+		{str && str + ((num !== 1) ? (str?.endsWith('"') || str?.endsWith('log') || str?.endsWith('s') || str?.endsWith('x') || str?.endsWith('ia') || str?.endsWith('io') ? '' : 's') : '')} <span className="smalltext">({(num) ? num : 'None'})</span>
+	</>
+}
 
 export const returnResults = (results: any) => ({ results, numResults: results?.length });
 

@@ -1,9 +1,9 @@
 import useSWR from 'swr';
 import { type HashedType } from '@/lib/utils';
 
-const useContributors = (options: HashedType) => {
+const useContributions = (options: HashedType) => {
 	const fetcher = (url: string) => fetch(url).then((res) => res.json());
-	const { data, error, isLoading } = useSWR(`/api/contributors/${JSON.stringify(options)}`, fetcher);
+	const { data, error, isLoading } = useSWR(`/api/contributions/${JSON.stringify(options)}`, fetcher);
 	return {
 		data,
 		isLoading,
@@ -11,4 +11,4 @@ const useContributors = (options: HashedType) => {
 	}
 }
 
-export default useContributors;
+export default useContributions;

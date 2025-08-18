@@ -160,8 +160,11 @@ const forceDT = (dt?: string): string => {
 	return new Date(Date.parse(useDT?.replace(/-00/g, '-01'))).toISOString().substr(0, 10);
 }
 
+// @ts-ignore
+const makeOptions = (args: HashedType, type?: string) => ({ all: args?.all, filter: args?.filter, ...args[type] });
+
 const findRecent = (noun: string, object: any, fields: string[] , options?: HashedType ) => {
-	const { value = 6, units = 'months' } = options || {};
+	const { value = 6, units = 'months', filter = {} } = options || {};
 	const findValue = (obj: HashedType, fields: string[]) => {
 		const useField = fields?.find((f: string) => (f && obj[f]?.length)) || fields[0];
 		const useVal = useField && forceDT(obj[useField]?.trim());
@@ -172,12 +175,27 @@ const findRecent = (noun: string, object: any, fields: string[] , options?: Hash
 		const [ valA, fieldA ] = findValue(a, fields);
 		return ('' + valA || '').localeCompare(valB || '')
 	}
-	//console.log("findRecent", { noun, fields, value, units });
+	const filterValues = ((r: HashedType) => {
+		if (!filter?.field || !filter?.value) return true;
+		return r[filter.field]?.toLowerCase()?.includes(filter.value?.toLowerCase());
+	});
+	//console.log("findRecent", { noun, fields, value, units }, options, filter);
 	if (options?.limit) {
-		return returnResults(object?.results?.sort(sortValues)?.slice(0, options.limit));
+		if (options?.filter) {
+			return returnResults(object?.results?.filter(filterValues)?.sort(sortValues)?.slice(0, options.limit));
+		} else {
+			return returnResults(object?.results?.sort(sortValues)?.slice(0, options.limit));
+		}
+	}
+	if (options?.all) {
+		if (options?.filter) {
+			return returnResults(object?.results?.filter(filterValues)?.sort(sortValues));
+		} else {
+			return returnResults(object?.results?.sort(sortValues));
+		}
 	}
 
-	return returnResults(object?.results?.filter((r: any) => {
+	return returnResults(object?.results?.filter(filterValues)?.filter((r: any) => {
 		const [ useVal, useField ] = findValue(r, fields) || [];
 		return useVal && moment(useVal).isAfter(moment().subtract(value, units));
 	})?.sort(sortValues));
@@ -323,15 +341,30 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const { results } = await apiData('gigsongs_media');
 				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
-			case 'gigmedia_contributors': {
-				const gigmedias = await apiData('gigmedias');
-				const gigmedias_credited = returnResults(gigmedias?.results?.filter((g: any) => (g?.credit?.length && g?.credit_date?.length)));
-				return findRecent(path, gigmedias_credited, ['credit_date'], args?.gigmedia);
+			case 'gigsong_contributions': {
+				const gigsongs = await apiData('gigsongs');
+				return returnResults(gigsongs?.results?.filter((g: any) => args?.all || (g?.mediacredit?.length && g?.added?.length))?.map((g: any) => ({
+					...g,
+					credit: g?.mediacredit,
+					credit_date: g?.added,
+				})));
 			}
-			case 'contributors': {
-				const gigmedia = await apiData('gigmedia_contributors', args);
+			case 'gigtext_contributions': {
+				const gigtexts = await apiData('gigtexts');
+				return returnResults(gigtexts?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length)));
+			}
+			case 'gigmedia_contributions': {
+				const gigmedias = await apiData('gigmedias');
+				return returnResults(gigmedias?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length)));
+			}
+			case 'contributions': {
+				const gigmedia = await apiData('gigmedia_contributions', args);
+				const gigsong = await apiData('gigsong_contributions', args);
+				const gigtext = await apiData('gigtext_contributions', args);
 				return {
-					gigmedia
+					gigmedia: findRecent(path, gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
+					gigsong: findRecent(path, gigsong, ['added'], makeOptions(args, 'gigsong')),
+					gigtext: findRecent(path, gigtext, ['credit_date'], makeOptions(args, 'gigtext')),
 				}
 			}
 			case 'lyric_by_href': {

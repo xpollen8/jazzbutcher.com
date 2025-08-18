@@ -7,6 +7,7 @@ import LetterHeader from '@/components/LetterHeader';
 import useFishyMansionsArchives from '@/lib/useFishyMansionsArchives';
 import { ts2URI } from '@/lib/utils';
 import Loading from '@/components/Loading';
+import Contributions from '@/components/Contributions';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -51,6 +52,10 @@ const FishyMansionsArchives = ({ params }: { params?: any }) => {
 				</>
 			/>
 			<FMAIndex items={data?.results[0]} />
+			<Contributions label={`Processed Item`} options={{
+				all: true,
+				filter: { field: 'credit', value: 'FMA' },
+			}} />
 		</main>
 		<Footer />
 	</Loading>

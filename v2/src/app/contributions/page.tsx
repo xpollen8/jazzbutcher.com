@@ -6,6 +6,7 @@ import Tag from '@/components/Tag';
 import Loading from '@/components/Loading';
 import { type HashedType } from '@/lib/utils';
 import useContributions from '@/lib/useContributions';
+import { pluralize } from '@/lib/utils';
 import { removeHTML } from '@/components/GenericWeb';
 import { useState, useEffect } from 'react';
 
@@ -21,7 +22,7 @@ const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) =>
 		return (sortOrder) ? 'sortAsc' : 'sortDesc';
 	}
 	return <>
-		<table className="table-auto smalltext border w-full">
+		<table className="table-fixed smalltext border w-full">
 			<thead className="text-end font-bold p-2 border-b">
 					<th onClick={(e) => setHeader(e, 'person')} className={`text-start font-bold p-2 border-b ${guessClass('person')}`}> Credited </th>
 					<th onClick={(e) => setHeader(e, 'total')} className={guessClass('total')}> Total </th>
@@ -35,7 +36,7 @@ const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) =>
 			{data?.map((obj: HashedType, key: number) => {
 				const { person, total, image, text, av, min, max } = obj;
 				return <tr key={key} className="odd:bg-gray-100 text-end">
-					<td className="pr-3 text-start border-b"> <Link href={`/contributions/${person}`}><b>{truncate(person, 25)}</b></Link> </td>
+					<td className="pr-3 text-start border-b"> <Link href={`/contributions/${person}`}><b>{truncate(person, 20)}</b></Link> </td>
 					<td className="text-end border-b"> {total} </td>
 					<td className="text-end border-b"> {image} </td>
 					<td className="text-end border-b"> {text} </td>
@@ -58,9 +59,12 @@ const Contributions = (props: any) => {
 
   const { gigmedia, gigtext, gigsong } = data || {};
   const contributions: HashedType = {};
+	let total = 0;
+	/*
   const total = gigmedia?.results?.length +
 		gigtext?.results?.length +
 		gigsong?.results?.length;
+		*/
 
 	const addInfo = (contributions: HashedType, person: string, type: string, added: string) => {
 		const useAdded = added?.substr(0, 10);
@@ -79,21 +83,22 @@ const Contributions = (props: any) => {
 		p[type] = p[type] + 1;
 		if (useAdded > p.max) p.max = useAdded;
 		if (added && useAdded < p.min) p.min = useAdded;
+		total = total + 1;
 	}
 	gigsong?.results?.forEach((r: any) => {
 		if (!r?.mediaurl?.length) return;
-		const person = removeHTML(r?.mediacredit) || '-UNKNOWN-';
+		const person = r?.credit;
 		const datetime = r?.datetime;
 		addInfo(contributions, person, 'av', r?.added);
 	});
 	gigtext?.results?.forEach((r: any) => {
-		const person = removeHTML(r?.credit)|| '-UNKNOWN-';
+		const person = r?.credit;
 		const datetime = r?.datetime;
 		const added = r?.credit_date;
 		addInfo(contributions, person, 'text', r?.credit_date);
 	});
 	gigmedia?.results?.forEach((r: any) => {
-		const person = removeHTML(r?.credit)|| '-UNKNOWN-';
+		const person = r?.credit;
 		const datetime = r?.datetime;
 		const added = r?.credit_date;
 		addInfo(contributions, person, 'image', r?.credit_date);
@@ -123,7 +128,7 @@ const Contributions = (props: any) => {
 		<Header section='contributions' />
 		<Loading isLoading={isLoading} >
 		<main>
-			<Tag>Website contributions since 1993</Tag>
+			<Tag>Website contributions since 1993 {pluralize(total)}</Tag>
 			<ContributionsTable data={sorted} total={total} onClick={onClick} sortBy={sortBy} sortOrder={sortOrder} />
 		</main>
 		</Loading>

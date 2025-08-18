@@ -6,6 +6,12 @@
 	font-size: calc(12px + (26 - 12) * ((100vw - 320px) / (2560 - 320)));
 }
 
+.sortAsc:after {
+	content: "\2193";
+}
+.sortDesc:after {
+	content: "\2191";
+}
 .date {
 	font-size: .9em;
 	color: #777;

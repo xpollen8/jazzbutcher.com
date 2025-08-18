@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Tag from '@/components/Tag';
 import Loading from '@/components/Loading';
-import { HashedType as type } from '@/lib/utils';
+import { type HashedType } from '@/lib/utils';
 import useContributions from '@/lib/useContributions';
 import { removeHTML } from '@/components/GenericWeb';
 
@@ -50,7 +50,7 @@ const Contributions = (props: any) => {
   const contributions: HashedType = {};
   const total = gigmedia?.results?.length + gigtext?.results?.length + gigsong?.results?.length;
 
-	const addInfo = (contributions, person: string, type: string, added: string) => {
+	const addInfo = (contributions: HashedType, person: string, type: string, added: string) => {
 		const useAdded = added?.substr(0, 10);
 		if (!contributions[person]) {
 			contributions[person] = {

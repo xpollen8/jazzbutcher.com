@@ -4,6 +4,7 @@ import moment from 'moment';
 import * as XLSX from 'xlsx';
 
 import { localDate } from '@/lib/utils';
+import { removeHTML } from '@/components/GenericWeb';
 import { returnResults, type HashedType, type RecordType, type CommentType } from '@/lib/utils';
 
 import gigsongsStatic from '@/../public/data/gigsongs.json';
@@ -348,7 +349,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const gigsongs = await apiData('gigsongs');
 				return returnResults(gigsongs?.results?.filter((g: any) => args?.all || (g?.mediacredit?.length && g?.added?.length))?.map((g: any) => ({
 					...g,
-					credit: (g?.mediacredit?.length) ? g?.mediacredit : '-UNKNOWN-',
+					credit: (g?.mediacredit?.length) ? removeHTML(g?.mediacredit) : '-UNKNOWN-',
 					credit_date: g?.added,
 				})));
 			}
@@ -356,14 +357,14 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const gigtexts = await apiData('gigtexts');
 				return returnResults(gigtexts?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
 					...g,
-					credit: (g?.credit?.length) ? g?.credit : '-UNKNOWN-',
+					credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
 				})));
 			}
 			case 'gigmedia_contributions': {
 				const gigmedias = await apiData('gigmedias');
 				return returnResults(gigmedias?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
 					...g,
-					credit: (g?.credit?.length) ? g?.credit : '-UNKNOWN-',
+					credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
 				})));
 			}
 			case 'contributions': {

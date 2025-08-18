@@ -430,6 +430,9 @@ p {
 	font-style: normal;
 	white-space: pre-line;
 }
+.monospace {
+	font-family: monospace;
+}
 .lyrics_tablature {
 	margin-top: -20px;
 	font-family: Courier, monospace;

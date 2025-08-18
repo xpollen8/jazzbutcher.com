@@ -14,7 +14,7 @@ const RecentPress = (props: any) => {
 	const { press } = props;
 	if (!press?.numResults) return;
 	return <details>
-		<summary className="tagClickable">{pluralize(press.numResults, 'press', 'Recently added')} {dateAgo(press?.results[0]?.dtadded)}</summary>
+		<summary className="tagClickable">{pluralize(press.numResults, 'press/clipping', 'Recently added')} {dateAgo(press?.results[0]?.dtadded)}</summary>
 			{press.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem clickListItem">
 					<div className="date">{dateDiff(p.dtadded, '')}</div>
@@ -55,12 +55,12 @@ const RecentGigMedia = (props: any) => {
 	});
 	const mostRecent = gigmedia?.results[0]?.credit_date;
 	return <details>
-		<summary className="tagClickable">{pluralize(gigmedia.numResults, 'gig image', 'Recently added')} {dateAgo(mostRecent)}</summary>
+		<summary className="tagClickable">{pluralize(gigmedia.numResults, 'image', 'Recently added')} {dateAgo(mostRecent)}</summary>
 		{Object.keys(results)?.sort((a: any, b: any) => a[0]?.credit_date - b[0]?.credit_date)?.map((p: any, key: number) => {
 			const items = results[p] || [];
 			return <div key={key} className="clickListItem">
 				<details>
-				<summary className="tagClickable">{pluralize(items.length, p, 'Recently added')} {dateAgo(items[0]?.credit_date)}</summary>
+				<summary className="tagClickable">{pluralize(items.length, p?.replace('pix', 'live photos'), 'Recently added')} {dateAgo(items[0]?.credit_date)}</summary>
 					{items?.map((p: any, key: number) => {
 					const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
 					const thumb = href.replace(/.jpg/, '_250.jpg');
@@ -81,7 +81,7 @@ const RecentGigSongMedia = (props: any) => {
 	const { media } = props;
 	if (!media?.numResults) return;
 	return <details>
-		<summary className="tagClickable">{pluralize(media.numResults, 'live audio', 'Recent')} {dateAgo(media?.results[0]?.added)}</summary>
+		<summary className="tagClickable">{pluralize(media.numResults, 'uploaded show', 'Recently')} {dateAgo(media?.results[0]?.added)}</summary>
 			{media.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem clickListItem">
 					<div className="date">{dateDiff(p.dtcreated || p.added, '')}</div>
@@ -117,10 +117,10 @@ const RecentUpdates = () => {
 	});
 	const { press, gigsong_media, gigmedia, feedback, releases } = data || {};
 	return <Loading isLoading={isLoading} >
+		<RecentGigSongMedia media={gigsong_media} />
 		<RecentGigMedia gigmedia={gigmedia} />
 		<RecentPress press={press} />
 		<RecentReleases releases={releases} />
-		<RecentGigSongMedia media={gigsong_media} />
 		<RecentFeedback feedback={feedback} />
 	</Loading>
 }

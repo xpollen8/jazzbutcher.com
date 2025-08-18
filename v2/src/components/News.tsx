@@ -26,7 +26,7 @@ const recentNews = [
 		credit: 'David Whittemore',
 		body: <>
 			Fans of the JBC have provided many images/ticket/posters/etc over the years.
-			We acknowledge their efforts in the <b>Community contributions</b> section.
+			We acknowledge their efforts in the <Link href={`/help`}><b>Community contributions</b></Link> section.
 			<p />
 			Lotta backend data changes - most data now comes
 			from static JSON instead of live database calls.  This will make it easier

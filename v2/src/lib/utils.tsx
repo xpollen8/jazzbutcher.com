@@ -347,7 +347,7 @@ export const parseImage = (str?: string, width: number = 250) => {
 	}
 }
 
-export const pluralize = (num: number, str?: string, prefix?: string, terse?: boolen) => {
+export const pluralize = (num: number, str?: string, prefix?: string, terse?: boolean) => {
 	if (num === 1 && terse) return <>{(prefix) && `${prefix} `}{str}</>
 	return <>
 		{(prefix) && `${prefix} `}

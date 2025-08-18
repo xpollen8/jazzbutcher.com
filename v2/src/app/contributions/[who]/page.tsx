@@ -9,7 +9,7 @@ const Person = ({ params }: { params?: any }) => {
 		<main>
 			<Contributions label={person} options={{
 				all: true,
-				filter: { field: 'credit', value: person },
+				filter: { field: 'credit', value: person, exact: true },
 			}} />
 		</main>
 		<Footer />

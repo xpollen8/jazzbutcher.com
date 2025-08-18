@@ -454,7 +454,7 @@
 #define	Nov5.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${nancy})},
+	bootlegger=${literalizeCommas(Nancy Everson)},
 		recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(B)}, ${g(1)}, ${VHS}, ${g_details(good sound. a little far away.)})},
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
 		reviews=

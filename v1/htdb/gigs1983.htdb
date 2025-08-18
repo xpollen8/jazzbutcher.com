@@ -71,7 +71,7 @@
 	cassettes=
 	   /images/FM/FMAC20_cover.jpg$$
 	   /images/FM/FMAC20_songs.jpg$$
-	   Fishy Mansions;;;;2025-07-17
+	   Fishy Mansions Cassette FMAC20;;;;2025-07-17
 
 	)}
 
@@ -82,7 +82,7 @@
 	cassettes=
 	   /images/FM/FMAC20_cover.jpg$$
 	   /images/FM/FMAC20_songs.jpg$$
-	   Fishy Mansions;;;;2025-07-17
+	   Fishy Mansions Cassette FMAC20;;;;2025-07-17
 
 	)}
 
@@ -94,7 +94,7 @@
 	cassettes=
 	   /images/FM/FMAC20_cover.jpg$$
 	   /images/FM/FMAC20_songs.jpg$$
-	   Fishy Mansions;;;;2025-07-17
+	   Fishy Mansions Cassette FMAC20;;;;2025-07-17
 
 	)}
 
@@ -115,7 +115,7 @@
 			/images/19830924/19830924_6.jpg$$
 			/images/19830924/19830924_7.jpg;;Rolo McGinty$$
 			/images/19830924/19830924_8.jpg;;Alice Thompson$$
-			Pat Fish Archives;;;;2023-04-18
+			Fishy Mansions Archives - Philip Snow;;;;2023-04-18
 	)}
 
 #define	Sep25.html()

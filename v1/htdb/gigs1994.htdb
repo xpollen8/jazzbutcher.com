@@ -420,7 +420,7 @@
 	The new look conspiracy was in experimental mode, and was less frenetic
 	than the band I saw at The Powerhaus, which is probably no bad thing.
 	)}$$
-	${matt},
+	Matthew Cockerill,
 		pat=${literalizeCommas( <a href="${jbc_letters}/94Apr13/fiddler.html">
 	As ${butch} describes it</a>
 	)},
@@ -684,9 +684,9 @@
 			was demolished recently, taking some rather important structural
 			parts of Slurps with it, hence the scaffolding).
 		)}$$
-			${matt}
+			Matthew Cockerill
 		,
-		pat=${literalizeCommas( As detailed already by ${matt}, who had a chat with me that
+		pat=${literalizeCommas( As detailed already by Matthew Cockerill, who had a chat with me that
 	evening.  Very enjoyable to be able to put on the whole band
 	here in Northampton, and - indeed - the local folks seemed
 	glad that we had bothered.  Lots of mad decor out in the
@@ -843,7 +843,7 @@
 			change from Slurps, at least. ${chang} became a theatrical noise
 			experience info	not a million miles from Sonic Youth (almost).
 		)}$$
-			${matt}
+			Matthew Cockerill
 
 	)}
 
@@ -913,7 +913,7 @@
 			href="${jbc_albums}/illuminate.html">New Album</a> North American
 			tour coming your way soon.
 		)}$$
-			${matt}
+			Matthew Cockerill
 	)}
 
 #define	Dec31.html()

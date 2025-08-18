@@ -127,7 +127,7 @@
 	a few days afterwards [4Mar1986]
 	)},
 		cassettes= /images/19860227/19860227_cassette.jpg$$
-		Fishy Mansions FMAC22;;;;2025-07-21,
+		Fishy Mansions Cassette FMAC22;;;;2025-07-21,
 	)}
 
 #define	Feb28.html()
@@ -163,7 +163,7 @@
 #define	Mar4_2300.html()
 	${gigHeader(
 		cassettes= /images/19860304/19860304_cassette.jpg$$
-		Fishy Mansions FMAC22;;;;2025-07-21,
+		Fishy Mansions Cassette FMAC22;;;;2025-07-21,
 	)}
 
 #define	Mar5.html()
@@ -415,7 +415,7 @@
 #define	Jul21.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(${nancy})},
+	bootlegger=${literalizeCommas(Nancy Everson)},
 		recording=${literalizeCommas( ${w}, ${q(7)}, ${i(B)}, ${g(1)} )},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		notes=${literalizeCommas(Nice audience recording.)},

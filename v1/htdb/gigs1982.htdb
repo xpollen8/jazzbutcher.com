@@ -25,7 +25,7 @@
 		)},
 		notes=${literalizeCommas(
 			Pat made the poster for this gig
-		)},
+		)}$$David Whittemore;;;;1998-04-26,
 		posters=/images/19820612/19820612_poster.jpg$$
 		Pat Fish;;;;1998-04-26
 	)}
@@ -156,7 +156,6 @@
 			they were about. Of course, before long he ended up finding out more about us than he probably ever needed to know.
 			$$
 			Andrew Brooksbank;;;;2025-02-06
-
 		)},
 		posters=/images/19821101/19821101_poster.jpg$$
 		;;;;2004-05-12
@@ -192,7 +191,7 @@
 		 cassettes=
 		   /images/FM/FMAC20_cover.jpg$$
 		   /images/FM/FMAC20_songs.jpg$$
-		   Fishy Mansions;;;;2025-07-17
+		   Fishy Mansions Cassette FMAC20;;;;2025-07-17
 	)}
 
 #define	page_requested	${${page}()}

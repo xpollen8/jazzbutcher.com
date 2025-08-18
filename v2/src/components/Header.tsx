@@ -45,6 +45,8 @@ type BreadCrumb = {
 
 const sections : { [key: string]: BreadCrumb } = {
 	jbc: { href: '/', title: 'The Jazz Butcher' },
+	help: { parent: 'jbc', title: 'Get Involved!', summary: "Share your JBC treasures!" },
+	contributions: { parent: 'help', title: 'All contributions to this website' },
 
 	pat: { parent: 'jbc', title: 'Pat' },
 //	media: { parent: 'jbc', title: 'Media' },
@@ -115,7 +117,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	//'gallery/david_whittemore': { parent: 'gallery', title: 'David Whittemore' },
 	//'gallery/ruth_tidmarsh': { parent: 'gallery', title: 'Ruth Tidmarsh' },
 	memoriam: { parent: 'pat', title: 'In Memoriam' },
-	fma: { parent: 'pat', title: 'Fishy Mansions Archives', summary: "Cassettes, CDs, Video tapes from Pat Fish's Estate" },
+	fma: { parent: 'pat', title: 'Fishy Mansions Archives', summary: "Items tapes from Pat Fish's Estate" },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions Livestreams', summary: "COVID-era livestreams" },
 	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },
 	projects: { parent: 'pat', title: 'Side Projects', rootHideChildren: true },
@@ -145,7 +147,6 @@ const sections : { [key: string]: BreadCrumb } = {
 //	jazz_insects: { parent: 'prejbc', title: 'Jazz Insects', summary: "1982", inParentDirectory: true, body: "Matt Black, Mark Sinker, Max Eider, Pat Fish" },
 
 	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content', rootHideChildren: true },
-	help: { parent: 'jbc', title: 'Get Involved!' },
 	//admin: { parent: 'jbc', title: "Website Management", hide: false },
 	'https://v1.jazzbutcher.com': { parent: 'jbc', title: "Old site", hide: false },
 }

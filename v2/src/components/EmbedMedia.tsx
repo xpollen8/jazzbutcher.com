@@ -162,7 +162,7 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 		} else {
 			return r;
 		}
-	});
+	}).join(" ");
 
 	const main = () => {
 		if (useMediaurl && !disableVideo) {

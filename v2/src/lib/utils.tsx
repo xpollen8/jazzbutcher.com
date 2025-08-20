@@ -167,6 +167,7 @@ export const dateDiff = (dt?: string, sep: string = ' - ') => {
 		ts2URI(`2023-10-04 23`) -> 2023/Nov4_23.html
 		ts2URI(`2023-10-04 23:30`) -> 2023/Nov4_2330.html
 		ts2URI(`2023-10-04 23:30:05`) -> 2023/Nov4_2330.html
+		ts2URI(`2023-10-00`) -> 2003/Oct1.html
  */
 export const ts2URI = (ts: string): string => {
 	if (!ts) return '';
@@ -178,7 +179,7 @@ export const ts2URI = (ts: string): string => {
 	const hour = ts.substr(11, 2);
 	const min = ts.substr(14, 2) || '00';
 	if (!month) return `${year}.html`;
-	if (!day) return `${year}/${monthName}.html`;
+	if (!day) return `${year}/${monthName}1.html`;	// force day = 1 if only have month
 	if (!hour) return `${year}/${monthName}${day}.html`;
 	return `${year}/${monthName}${day}_${hour}${min}.html`.replace('_0000.html', '.html');
 }

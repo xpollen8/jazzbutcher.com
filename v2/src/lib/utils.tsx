@@ -33,11 +33,11 @@ export const linkExternal = (href: string, text?: string | React.ReactElement): 
 export const linkInternal = (href: string, text?: string | React.ReactElement): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
 export const parseYear = (datetime?: string): number => (datetime && parseInt(datetime.substr(0, 4), 10)) || 0;
-export const parseMonth = (datetime: string): number => parseInt(localDate(datetime).substr(5, 2), 10);
+export const parseMonth = (datetime: string): number => parseInt(localDate(datetime)?.substr(5, 2), 10);
 export const parseMonthName = (datetime: string) => num2mon(parseMonth(datetime));
-export const parseDay = (datetime: string): number => parseInt(localDate(datetime).substr(8, 2), 10);
-export const parseHour = (datetime: string): number => parseInt(localDate(datetime).substr(11, 2), 10);
-export const parseHourAMPM = (datetime: string) => moment(localDate(datetime)).format('LT')
+export const parseDay = (datetime: string): number => parseInt(localDate(datetime)?.substr(8, 2), 10);
+export const parseHour = (datetime: string): number => parseInt(localDate(datetime)?.substr(11, 2), 10);
+export const parseHourAMPM = (datetime: string) => moment(localDate(datetime))?.format('LT')
 export const parseDayOrdinal = (datetime: string) => moment.localeData().ordinal(parseDay(datetime))
 
 export const localDate = (ts: string): string => ts; // moment.utc(ts).format('YYYY-MM-DD HH:mm:ss');

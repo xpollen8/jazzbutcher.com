@@ -56,7 +56,7 @@ const PressItem = ({ item }: { item: any }) => {
 		const sleeve = (article?.album) ? `/images/releases/${article.album}` : '';
 		if (sleeve || article?.thumb || article?.images) {
 			return <ImageStrip
-				images={parseCaptionsSourcesEtc(`${sleeve}$$${article?.thumb}$$${article?.images}`, true)}
+				images={parseCaptionsSourcesEtc(`${sleeve || ''}$$${article?.thumb || ''}$$${article?.images || ''}`, true)}
 			/>
 		}
 	}

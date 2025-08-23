@@ -77,7 +77,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	const recent = gigmedia?.results[0]?.credit_date;
 	let total = 0;
 
-	const addInfo = (contributions: HashedType, person: string, type: string, added?: string, datetime: string, summary?: string) => {
+	const addInfo = (contributions: HashedType, person: string, type: string, added?: string, datetime?: string, summary?: string) => {
 		if (!contributions[person]) { contributions[person] = []; }
 		contributions[person].push({
 			type,

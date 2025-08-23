@@ -36,7 +36,7 @@ const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) =>
 			{data?.map((obj: HashedType, key: number) => {
 				const { person, total, image, text, av, min, max } = obj;
 				return <tr key={key} className="odd:bg-gray-100 text-end">
-					<td className="pr-3 text-start border-b"> <Link href={`/contributions/${person}`}><b>{truncate(person, 20)}</b></Link> </td>
+					<td className="pr-3 text-start border-b"> <Link href={`/contributions/${encodeURIComponent(person)}`}><b>{truncate(person, 20)}</b></Link> </td>
 					<td className="text-end border-b"> {total} </td>
 					<td className="text-end border-b"> {image} </td>
 					<td className="text-end border-b"> {text} </td>

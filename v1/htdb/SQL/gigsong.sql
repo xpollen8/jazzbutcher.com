@@ -1697,7 +1697,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-11-11 00:00:00','set',NULL,1,7,'Mr. Odd
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-11 00:00:00','set',NULL,1,8,'Line Of Death',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-11 00:00:00','set',NULL,1,9,'Caroline Wheeler\'s Birthday Present',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
-INSERT INTO `gigsong` VALUES (NULL,'1990-11-12 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19901112/19901112_JazzButcher_Hoboken_Gen1_CASSETTE.mp3','Woj',NULL,NULL,"2025-08-12");
+INSERT INTO `gigsong` VALUES (NULL,'1990-11-12 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19901112/19901112_JazzButcher_Hoboken_Gen1_CASSETTE.mp3','woj',NULL,NULL,"2025-08-12");
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-12 00:00:00','set',NULL,1,1,'The Basement',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-12 00:00:00','set',NULL,1,2,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-12 00:00:00','set',NULL,1,3,"She's On Drugs",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

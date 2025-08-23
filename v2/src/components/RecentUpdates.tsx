@@ -78,7 +78,7 @@ const RecentGigMedia = (props: any) => {
 			return {
 				...p,
 				alt: p?.datetime?.substr(0, 10),
-				href: ts2URI(p?.datetime),
+				href: `/gigs/${ts2URI(p?.datetime)}`,
 				src: p?.image
 			}
 			})

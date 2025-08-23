@@ -66,10 +66,11 @@ const GigMedia = ({ data }: any) => {
 }
 
 const GigText = ({ data }: any) => {
-	const useURL = (data?.credit) ? `/contributions/${data?.credit}` : data?.credit_url;
+	const useCredit = removeHTML(data?.credit);
+	const useURL = (useCredit) ? `/contributions/${useCredit}` : data?.credit_url;
 	return (<>
 		<RenderHTML className="listItem" body={data?.body}>
-			<Credit g={removeHTML(data?.credit)} u={useURL} d={data?.credit_date} />
+			<Credit g={useCredit} u={useURL} d={data?.credit_date} />
 		</RenderHTML>
 	</>)
 }
@@ -224,10 +225,11 @@ const GigPlayers = (data: any) => (
 )
 
 const GigReview = ({ data }: any) => {
-	const useURL = (data?.credit) ? `/contributions/${data?.credit}` : data?.credit_url;
+	const useCredit = removeHTML(data?.credit);
+	const useURL = (useCredit) ? `/contributions/${useCredit}` : data?.credit_url;
 	return (<>
 		<RenderHTML className="listItem" body={data?.body} >
-			<Credit g={removeHTML(data?.credit)} u={useURL} d={data?.credit_date} />
+			<Credit g={useCredit} u={useURL} d={data?.credit_date} />
 		</RenderHTML>
 	</>)
 }

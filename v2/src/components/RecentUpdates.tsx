@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import EmbedMedia from '@/components/EmbedMedia';
+import PhotoSet from '@/components/PhotoSet';
 import useRecentUpdates from '@/lib/useRecentUpdates';
 import { pluralize, dateDiff, dateAgo, ts2URI } from '@/lib/utils';
 import { feedbackURI2Pathname } from '@/lib/usePageComments';
@@ -45,6 +46,23 @@ const RecentFeedback = (props: any) => {
 	</details>
 }
 
+// ({ title, photos, pdf, description, credit, credit_url, credit_date }
+//	const { src, alt, credit, credit_url, credit_date, body, location } = w;
+//	const { image, thumb } = parseImage(src, 250);
+
+const doPix = (arr: any) => {
+	return <PhotoSet
+		photos={arr?.map((p: any) => {
+			const image = `https://v1.jazzbutcher.com/${p.image.trim()}`;
+			const thumb = image.replace(/.jpg/, '_250.jpg');
+			return {
+				...p,
+				src: image
+			}
+		})}
+	/>
+}
+
 const RecentGigMedia = (props: any) => {
 	const { gigmedia } = props;
 	if (!gigmedia?.numResults) return;
@@ -61,16 +79,16 @@ const RecentGigMedia = (props: any) => {
 			return <div key={key} className="clickListItem">
 				<details>
 				<summary className="tagClickable">{pluralize(items.length, p?.replace('pix', 'live photos'), 'Recently added')} {dateAgo(items[0]?.credit_date)}</summary>
-					{items?.map((p: any, key: number) => {
+					{doPix(items)}
+					{/*(p === 'pix') ? doPix(items) : items?.map((p: any, key: number) => {
 					const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
 					const thumb = href.replace(/.jpg/, '_250.jpg');
 					return <div key={key} className="listItem">
 						<Link href={href}><Image src={thumb} width={250} height={250} alt={p.image_caption || p.type} /></Link>
 						<div className="date"><Link href={`/gigs/${ts2URI(p.datetime)}`}>{dateDiff(p.datetime, '')}</Link></div>
-						{/*// @ts-ignore */}
 						<Attribution g={p.credit} d={p.credit_date} x={(p.image_caption) ? <span className="date">{p.image_caption}<br /></span> : ''} />
 					</div>
-					})}
+					})*/}
 				</details>
 			</div>
 		})}

@@ -3174,6 +3174,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2000-05-08 00:00:00','set',NULL,1,7,'Who Lov
 INSERT INTO `gigsong` VALUES (NULL,'2000-05-08 00:00:00','set',NULL,1,8,'Diamorphine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2000-05-08 00:00:00','set',NULL,1,9,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'2000-05-09 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,"nice soundboard",NULL,"https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20000509/20000509_JazzButcher_Hoboken_woj.mp3","woj",NULL,NULL,"2025-08-23");
 INSERT INTO `gigsong` VALUES (NULL,'2000-05-09 00:00:00','set',NULL,1,1,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2000-05-09 00:00:00','set',NULL,1,2,'Falling In Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2000-05-09 00:00:00','set',NULL,1,3,'Raking Up The Leaves','${max}',NULL,NULL,NULL,NULL,NULL,NULL,NULL);

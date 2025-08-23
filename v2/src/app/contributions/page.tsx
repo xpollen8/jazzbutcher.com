@@ -60,11 +60,6 @@ const Contributions = (props: any) => {
   const { gigmedia, gigtext, gigsong } = data || {};
   const contributions: HashedType = {};
 	let total = 0;
-	/*
-  const total = gigmedia?.results?.length +
-		gigtext?.results?.length +
-		gigsong?.results?.length;
-		*/
 
 	const addInfo = (contributions: HashedType, person: string, type: string, added: string) => {
 		const useAdded = added?.substr(0, 10);
@@ -87,21 +82,13 @@ const Contributions = (props: any) => {
 	}
 	gigsong?.results?.forEach((r: any) => {
 		if (!r?.mediaurl?.length) return;
-		const person = r?.credit;
-		const datetime = r?.datetime;
-		addInfo(contributions, person, 'av', r?.added);
+		addInfo(contributions, r?.credit, 'av', r?.added);
 	});
 	gigtext?.results?.forEach((r: any) => {
-		const person = r?.credit;
-		const datetime = r?.datetime;
-		const added = r?.credit_date;
-		addInfo(contributions, person, 'text', r?.credit_date);
+		addInfo(contributions, r?.credit, 'text', r?.credit_date);
 	});
 	gigmedia?.results?.forEach((r: any) => {
-		const person = r?.credit;
-		const datetime = r?.datetime;
-		const added = r?.credit_date;
-		addInfo(contributions, person, 'image', r?.credit_date);
+		addInfo(contributions, r?.credit, 'image', r?.credit_date);
 	});
 
 	const sorted = Object.keys(contributions)?.map((person: string, key: number) => ({ person, ...contributions[person] }))?.sort((a: HashedType, b: HashedType) => {

@@ -20,7 +20,7 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 			if (!w) return;
 			const { href, src, alt, credit, credit_url, credit_date, body, location } = w;
 			const { image, thumb } = parseImage(src, 250);
-			const useCredit = removeHTML(credit) || '-UNKNOWN-';
+			const useCredit = removeHTML(credit);
 			const useURL = (useCredit) ? `/contributions/${useCredit}` : credit_url;
 			const useLink: any = href || image;
 			return <div key={key} className="text-center drop-shadow-sm border border-slate-400 rounded-sm">

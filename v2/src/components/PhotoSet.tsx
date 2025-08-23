@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Tag from '@/components/Tag';
-import { ts2URI, parseImage } from '@/lib/utils';
+import { parseImage } from '@/lib/utils';
 import { removeHTML } from '@/components/GenericWeb';
 
 import { Credit } from '@/components/GenericWeb';
@@ -17,11 +17,12 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 	</div>}
 	<div className="masonry listItem">
 		{photos.map((w: any, key: number) => {
-			const { datetime, src, alt, credit, credit_url, credit_date, body, location } = w;
+			if (!w) return;
+			const { href, src, alt, credit, credit_url, credit_date, body, location } = w;
 			const { image, thumb } = parseImage(src, 250);
 			const useCredit = removeHTML(credit) || '-UNKNOWN-';
 			const useURL = (useCredit) ? `/contributions/${useCredit}` : credit_url;
-			const useLink: any = (datetime) ? ts2URI(datetime) : image;
+			const useLink: any = href || image;
 			return <div key={key} className="text-center drop-shadow-sm border border-slate-400 rounded-sm">
 				{(image) && <Link href={useLink}>{(thumb) && <Image className="rounded-sm" key={key} unoptimized src={thumb} width={350} height={350} alt={alt} />}</Link>}
 				<div className="text-sm font-light">

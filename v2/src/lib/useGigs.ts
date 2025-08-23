@@ -24,41 +24,22 @@ const filterGigs = (gigs: any, query: any, year: any, type: any, options: any) =
 }
 
 const useGigs = ({ type, query, year }: any) => {
-	// TODO have fetchGig add .prevGig & .nextGig to object
-	// NOTE: array to bust SWR cache
 	const options = gigSearchOptionsByType(type);
 	const fetcher = async ([ url, { year, type, query } ]: any) => {
-		//console.log("FETCH", url, query);
-		/*
-		const localValue = await localStorage.getItem('gigs');
-		if (localValue) {
-				//console.log("FROM LOCAL", localValue.length);
-				return filterGigs(JSON.parse(localValue), query, year, type, options);
-		}
-		*/
 		return fetch(url)
 			.then((res) => res.json())
-			.then(gigs => {
-
-				//console.log("GIGS", gigs);
-				// TODO - have a time-based cache invalidation
-				//console.log("SET LOCAL");
-				//localStorage.setItem('gigs', JSON.stringify(gigs));
-
-				return filterGigs(gigs, query, year, type, options);
-			});
+			.then(gigs => filterGigs(gigs, query, year, type, options));
 		}
 
 	const route = (year?.length) ? `/api/${options.route}/${year}` : 
 		(query ? `/api/${options.route}/${query}` : `/api/${options.route}`);
 
-	const { data, error, isLoading } = useSWR([ route, { year, type, query }], fetcher);
+	const { data, isLoading } = useSWR([ route, { year, type, query }], fetcher);
 
-	//console.log("RET", data);
 	return {
 		data: { ...data, year, type, query },
 		isLoading,
-		error,
+		error: data?.error,
 	}
 }
 

@@ -66,9 +66,10 @@ const GigMedia = ({ data }: any) => {
 }
 
 const GigText = ({ data }: any) => {
+	const useURL = (data?.credit) ? `/contributions/${data?.credit}` : data?.credit_url;
 	return (<>
-		<RenderHTML body={data?.body}>
-			<Credit g={data?.credit} u={data?.credit_url} d={data?.credit_date} />
+		<RenderHTML className="listItem" body={data?.body}>
+			<Credit g={removeHTML(data?.credit)} u={useURL} d={data?.credit_date} />
 		</RenderHTML>
 	</>)
 }
@@ -94,7 +95,8 @@ const GigPicType = (data: any) => {
 		photosets[useCredit].photos.push({ src: image, alt: removeHTML(image_caption) });
 	});
 	return Object.keys(photosets).map((ps: any, key: number) => {
-		const title = (photosets[ps]?.credit) ? <>Photoset by <Attribution g={photosets[ps]?.credit} u={photosets[ps]?.credit_url} d={photosets[ps]?.credit_date} /></> : ps;
+		const useURL = (photosets[ps]?.credit) ? `/contributions/${photosets[ps]?.credit}` : photosets[ps]?.credit_url;
+		const title = (photosets[ps]?.credit) ? <>Photoset by <Attribution g={photosets[ps]?.credit} u={useURL} d={photosets[ps]?.credit_date} /></> : ps;
 		return <PhotoSet key={key} title={title} photos={photosets[ps]?.photos}/>
 	})
 }
@@ -222,9 +224,10 @@ const GigPlayers = (data: any) => (
 )
 
 const GigReview = ({ data }: any) => {
+	const useURL = (data?.credit) ? `/contributions/${data?.credit}` : data?.credit_url;
 	return (<>
 		<RenderHTML className="listItem" body={data?.body} >
-			<Credit g={removeHTML(data?.credit)} u={data?.credit_url} d={data?.credit_date} />
+			<Credit g={removeHTML(data?.credit)} u={useURL} d={data?.credit_date} />
 		</RenderHTML>
 	</>)
 }

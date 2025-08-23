@@ -76,48 +76,43 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	const contributions: HashedType = {};
 	const recent = gigmedia?.results[0]?.credit_date;
 	let total = 0;
+
+	const addInfo = (contributions: HashedType, person: string, type: string, added?: string, datetime?: string, summary?: string) => {
+		if (!contributions[person]) { contributions[person] = []; }
+		contributions[person].push({
+			type,
+			added,
+			datetime,
+			summary,
+		});
+		total = total + 1;
+	}
 	gigsong?.results?.forEach((r: any) => {
 		if (!r?.mediaurl?.length) return;
-		const type = prettyType(r?.mediaurl?.includes('.mp3') ? 'audio' : 'video', r?.type);
-		const person = r?.credit;
-		const datetime = r?.datetime;
-		const added = r?.added;
-		if (!contributions[person]) { contributions[person] = []; }
-		contributions[person].push({
-			type,
-			added,
-			datetime,
-			summary: r?.song,
-		});
-		total = total + 1;
+		addInfo(contributions,
+			r?.credit,
+			prettyType(r?.mediaurl?.includes('.mp3') ? 'audio' : 'video', r?.type),
+			r?.added,
+			r?.datetime,
+			r?.song);
 	});
+
 	gigtext?.results?.forEach((r: any) => {
-		const type = prettyType('text', r?.type);
-		const person = r?.credit;
-		const datetime = r?.datetime;
-		const added = r?.credit_date;
-		if (!contributions[person]) { contributions[person] = []; }
-		contributions[person].push({
-			type,
-			added,
-			datetime,
-			summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substr(0, 50) + '...' : '',
-		});
-		total = total + 1;
+		addInfo(contributions,
+			r?.credit,
+			prettyType('text', r?.type),
+			r?.credit_date,
+			r?.datetime,
+			(r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substr(0, 50) + '...' : '');
 	});
+
 	gigmedia?.results?.forEach((r: any) => {
-		const type = prettyType('image', r?.type);
-		const person = r?.credit;
-		const datetime = r?.datetime;
-		const added = r?.credit_date;
-		if (!contributions[person]) { contributions[person] = []; }
-		contributions[person].push({
-			type,
-			added,
-			datetime,
-			summary: (r?.image_caption) ? removeHTML(r?.image_caption)?.substr(0, 50) + '...' : '',
-		});
-		total = total + 1;
+		addInfo(contributions,
+			r?.credit,
+			prettyType('image', r?.type),
+			r?.credit_date,
+			r?.datetime,
+			(r?.image_caption) ? removeHTML(r?.image_caption)?.substr(0, 50) + '...' : '');
 	});
 
 	return <Loading isLoading={isLoading} >

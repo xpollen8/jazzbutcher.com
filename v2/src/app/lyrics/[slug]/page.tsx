@@ -39,7 +39,6 @@ const	LyricAudio = ({ mp3, caption }: any) => {
 			return <EmbedMedia key={key} data={{ mediaurl, title: media_caption || removeHTML(caption), mediacredit, mediacrediturl, mediacreditdate }} />
 		})
 	}
-	//return foundon?.filter((f: any) => f.media !== 'NULL')?.map((f: any) => <EmbedMedia data={{ mediaurl: f.media, lookup: f.lookup }} />)
 }
 
 const	LyricMedia = ({ media }: any) => {
@@ -50,7 +49,7 @@ const	LyricMedia = ({ media }: any) => {
 
 const	LyricImages = ({ images }: any) => <ImageStrip images={parseCaptionsSourcesEtc(images, true)} />;
 
-const Lyrics = (props: any, foundon: any[]) => {
+const Lyrics = (props: any) => {
 	const { mp3, video, media, images, lyrics, key, caption } = props;
 	return (
 		<>
@@ -128,14 +127,14 @@ const Media = (props: any) => {
 
 const exists = (str?: string) => (str && str?.length && str !== ';;;;') ? str : null;
 
-const Performances = (song: any) => {
-	const { performances } = song;
-	if (!performances?.length) return;
+const ReleasedRecordings = (song: any) => {
+	const { released_recordings } = song;
+	if (!released_recordings?.length) return;
 	return (
-		<details open={performances?.length === 1}>
-		<summary className="tagClickable">Audio from {pluralize(performances?.length, 'Release')}</summary>
+		<details open={released_recordings?.length === 1}>
+		<summary className="tagClickable">{pluralize(released_recordings?.length, 'Released recording')}</summary>
 		<blockquote>
-			{performances?.map((p: any, key: number) => {
+			{released_recordings?.map((p: any, key: number) => {
 				const { author,
 					collection,
 					comment,
@@ -165,15 +164,15 @@ const Performances = (song: any) => {
 	)
 }
 
-const Medias = (song: any) => {
-	let { medias } = song;
-	medias = medias?.filter((p: any) => !p?.lookup && !p?.datetime);
-	if (!medias.length) return;
+const Unreleased = (song: any) => {
+	let { unreleased } = song;
+	//medias = medias?.filter((p: any) => !p?.lookup && !p?.datetime);
+	if (!unreleased.length) return;
 	return (
-		<details open={medias?.length === 1}>
-		<summary className="tagClickable">{pluralize(medias?.length, 'Non-live recording')}</summary>
+		<details open={unreleased?.length === 1}>
+		<summary className="tagClickable">{pluralize(unreleased?.length, 'Unreleased recording')}</summary>
 		<blockquote>
-			{medias?.map((p: any, key: number) => {
+			{unreleased?.map((p: any, key: number) => {
 				const { author,
 					collection,
 					comment,
@@ -195,7 +194,7 @@ const Medias = (song: any) => {
 				const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit) || {};
 				const { credit: venue, crediturl: city, creditdate: country } = collection?.includes(';;') && parseCredit(collection) || {};
 				const parent = (!datetime?.match(/0000-00-00 00:00:00/)) ? `/gigs/${ts2URI(datetime)}` : undefined;
-				return <div key={key}><EmbedMedia data={{ lookup, mediaurl: (!href.includes('.html') && exists(href)) || exists(mp3), mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? collection : '', venue, city, datetime, parent }} /></div>
+				return <div key={key}><EmbedMedia data={{ lookup, mediaurl: (!href?.includes('.html') && exists(href)) || exists(mp3), mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? collection : '', venue, city, datetime, parent }} /></div>
 				})}
 		</blockquote>
 		</details>
@@ -217,7 +216,7 @@ const LiveAudio = (props: any) => {
 	if (!live?.length) return;
 	return live && (
 		<details open={live?.length === 1}>
-		<summary className="tagClickable">{pluralize(live?.length, 'Live Performance Recording')}</summary>
+		<summary className="tagClickable">{pluralize(live?.length, 'Live recording')}</summary>
 		<blockquote>
 			{live?.map((p: any, key: number) => {
 				const { author,
@@ -251,27 +250,28 @@ const LiveAudio = (props: any) => {
 
 const Lyric = ({ params }: { params?: any }) => {
 	const { data, isLoading, error } = useLyric(params?.slug);
-	const { lyrics, performances, live, releaseAudio, releaseVideo, foundon, medias } = data || {};
+	const { lyrics, released_recordings, live, releaseAudio, releaseVideo, foundon, unreleased } = data || {};
 	const song = {
 		...lyrics?.results[0],
-		medias: medias?.numResults ? medias?.results : undefined,
-		performances: performances?.numResults ? performances?.results : undefined,
+		unreleased: unreleased?.numResults ? unreleased?.results : undefined,
+		released_recordings: released_recordings?.numResults ? released_recordings?.results : undefined,
 		live: live?.numResults ? live?.results : undefined,
 		releaseAudio: releaseAudio?.numResults ? releaseAudio?.results : undefined,
 		releaseVideo: releaseVideo?.numResults ? releaseVideo?.results : undefined,
+
 	};
 
 	const tabs = [
-			{ label: 'Lyrics', lookup: (song: any) => { return song?.lyrics }, func: Lyrics },
-			{ label: 'Pat Says', lookup: (song: any) => (song?.pat_says), func: PatSays },
-			{ label: 'Others Say', lookup: (song: any) => (song?.others_say), func: OthersSay },
-			{ label: 'Tablature', lookup: (song: any) => (song?.tablature), func: Tablature },
-			{ label: 'Live Stats', lookup: (song: any) => (song.live), func: LiveStats },
-			{ label: 'Live Performances', lookup: (song: any) => (song.live), func: LiveAudio },
-			{ label: 'Audio', lookup: (song: any) => (song?.mp3 || song.live || song.releaseAudio), func: Audio },
-			{ label: 'Media', lookup: (song: any) => (song?.media), func: Media },
-			{ label: 'Medias', lookup: (song: any) => (song?.medias), func: Medias },
-			{ label: 'Released Versions', lookup: (song: any) => (song?.performances), func: Performances },
+			{ lookup: (song: any) => (song?.lyrics), func: Lyrics },
+			{ lookup: (song: any) => (song?.pat_says), func: PatSays },
+			{ lookup: (song: any) => (song?.others_say), func: OthersSay },
+			{ lookup: (song: any) => (song?.tablature), func: Tablature },
+			{ lookup: (song: any) => (song.live), func: LiveStats },
+			{ lookup: (song: any) => (song.live), func: LiveAudio },
+			{ lookup: (song: any) => (song?.mp3 || song.live || song.releaseAudio), func: Audio },
+			{ lookup: (song: any) => (song?.media), func: Media },
+			{ lookup: (song: any) => (song?.unreleased), func: Unreleased },
+			{ lookup: (song: any) => (song?.released_recordings), func: ReleasedRecordings },
 	];
 
 	if (!isLoading && !song?.title) return notFound();
@@ -280,8 +280,8 @@ const Lyric = ({ params }: { params?: any }) => {
 		<Header project={song?.project} section="lyrics" title={song?.title} />
 		<main>
 			<Tag>{song?.title}</Tag>
-			{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song, foundon, medias)}</div>)}
-			<FoundOn releases={foundon} />
+			{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => <div key={key}>{t?.func(song)}</div>)}
+			<FoundOn releases={foundon?.results} />
 		</main>
 		<Footer />
 	</Loading>

@@ -5,11 +5,11 @@ import * as XLSX from 'xlsx';
 
 import { localDate } from '@/lib/utils';
 import { removeHTML } from '@/components/GenericWeb';
-import { returnResults, type HashedType, type RecordType, type CommentType } from '@/lib/utils';
+import { returnResults, type HashedType, type CommentType } from '@/lib/utils';
 
 import gigsongsStatic from '@/../public/data/gigsongs.json';
 import gigmediasStatic from '@/../public/data/gigmedias.json';
-//import mediasStatic from '@/../public/data/medias.json';
+import mediasStatic from '@/../public/data/medias.json';
 import gigtextsStatic from '@/../public/data/gigtexts.json';
 import performancesStatic from '@/../public/data/performances.json';
 import gigsStatic from '@/../public/data/gigs.json';
@@ -46,7 +46,6 @@ const fetchOptions = (url: string) => {
 }
 
 const doFetch = async (url: string) => {
-	//console.log("FETCH", url);
 	/*
 	if (cache[url]) {
 		//console.log("CACHE HIT", url);
@@ -56,12 +55,12 @@ const doFetch = async (url: string) => {
 	return await fetch(url, fetchOptions(url))
 		.then(e => e.json())
 		.then(e => {
+			if (e?.error) throw(e);
 			cache[url] = JSON.parse(deHTDBifyText(JSON.stringify(e)));
 			return cache[url];
 		})
 		.catch((e) => {
-			console.log("ERR", url, e);
-			return { results: [], error: e?.cause?.code };
+			return { results: [], error: e?.error?.code };
 		});
 }
 
@@ -164,7 +163,15 @@ const forceDT = (dt?: string): string => {
 // @ts-ignore
 const makeOptions = (args: HashedType, type?: string) => ({ all: args?.all, filter: args?.filter, ...args[type] });
 
-const findRecent = (noun: string, object: any, fields: string[] , options?: HashedType ) => {
+const filterObjectByAttribute = (obj: HashedType, field?: string, value?: string, exact?: boolean) => {
+	if (!field || !value) return true;
+	if (exact) {
+		return obj[field]?.toLowerCase() === value?.toLowerCase();
+	}
+		return obj[field]?.toLowerCase()?.includes(value?.toLowerCase());
+}
+
+const findRecent = (object: any, fields: string[] , options?: HashedType ) => {
 	const { exact = false, value = 6, units = 'months', filter = {} } = options || {};
 	const findValue = (obj: HashedType, fields: string[]) => {
 		const useField = fields?.find((f: string) => (f && obj[f]?.length)) || fields[0];
@@ -177,13 +184,14 @@ const findRecent = (noun: string, object: any, fields: string[] , options?: Hash
 		return ('' + valA || '').localeCompare(valB || '')
 	}
 	const filterValues = ((r: HashedType) => {
+		return filterObjectByAttribute(r, filter?.field, filter?.value, filter?.exact);
 		if (!filter?.field || !filter?.value) return true;
 		if (filter.exact) {
 			return r[filter.field]?.toLowerCase() === filter.value?.toLowerCase();
 		}
 		return r[filter.field]?.toLowerCase()?.includes(filter.value?.toLowerCase());
 	});
-	//console.log("findRecent", { noun, fields, value, units, exact }, options, filter);
+	//console.log("findRecent", { fields, value, units, exact }, options, filter);
 	if (options?.limit) {
 		if (options?.filter) {
 			return returnResults(object?.results?.filter(filterValues)?.sort(sortValues)?.slice(0, options.limit));
@@ -206,7 +214,31 @@ const findRecent = (noun: string, object: any, fields: string[] , options?: Hash
 }
 
 const joinOn = (field: string, arr1: Array<HashedType>, arr2: Array<HashedType>) => {
-	return returnResults(arr1.map((gs: any) => ({ ...gs, ...arr2.find((g: any) => g[field] === gs[field]) || {} })));
+	return returnResults(arr1?.map((gs: any) => {
+		const found = arr2?.find((g: any) => g[field] === gs[field]);
+		if (found) {
+			return { ...gs, ...found }
+		}
+	})?.filter((gs: any) => gs && gs[field]));
+}
+
+const returnFilteredPath = async (path: string, attribute?: string, value?: string,  exact?: boolean, func?: any) => {
+	const { results } = await apiData(path);
+	return returnResults(results?.filter((r: HashedType) => {
+		if (func) { return func(r, value, exact) };
+		return filterObjectByAttribute(r, attribute, value, exact)
+	}));
+}
+
+const matchesPerformerField = (type: string, candidate: HashedType, value: string, exact: boolean) => {
+	const { category, performer, aka = '' } = candidate || {};
+	if (!performer && !aka) return false;
+	const [ x1, v ] = performer?.replace('[[', '')?.replace(']]', '')?.replace(/_/g, ' ')?.split(':');
+	const [ x2, a ] = aka?.replace('[[', '')?.replace(']]', '')?.replace(/_/g, ' ')?.split(':');
+	const vl = v?.toLowerCase() || '';
+	const al = a?.toLowerCase() || '';
+	const valuel = value?.toLowerCase();
+	return category === type && (exact ? (vl === valuel || al === valuel) : (vl?.includes(valuel) || al?.includes(valuel)));
 }
 
 // @ts-ignore
@@ -222,45 +254,93 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 	if (formData) {
 		// POST
 		switch (path) {
-			case 'gigsong_edit':
+			case 'gigsong_edit': {
 				return await doPostToDataServer(path, formData, args);
-				break;
+			}
 			default:
 				return await doPostToDataServer(path, formData, args);
 		}
 	} else {
 		switch (path) {
-			case 'FMA.xls':
-				return await apiXLSFromStaticServer(path);
-				break;
-			case 'lyrics':
-				return lyricsStatic;
-				break;
-			case 'presses':
-				return pressesStatic;
-				break;
-			case 'gigs':
-				return gigsStatic;
-				break;
-			case 'performances':
-				return performancesStatic;
-				break;
-			case 'gigtexts':
-				return gigtextsStatic;
-				break;
-			case 'gigmedias': {
-				return gigmediasStatic;
+			/*
+				live db lookups
+			 */
+			case 'release_audio_by_project':
+			case 'audio_by_project':
+			case 'release_video_by_project':
+			case 'live_video_by_project':
+			case 'presses_for_admin':
+			case 'recent_feedback':
+			case 'feedbacks':
+			case 'feedback_delete': {
+				return await apiDataFromDataServer(path, args);
 			}
-			case 'gig_by_datetime':
+			case 'feedback_by_page': {
+				const { results } = await apiDataFromDataServer('feedback', args);
+				return returnResults(results?.map((r: CommentType) => ({
+						...r,
+						who: censorEmail(r?.who),
+					}
+				)));
+			}
+
+			/*
+				static file lookups
+			 */
+			case 'FMA.xls': { return await apiXLSFromStaticServer(path); }
+			case 'gigs': { return gigsStatic; }
+			case 'gigmedias': { return gigmediasStatic; }
+			case 'gigsongs': { return gigsongsStatic; }
+			case 'gigtexts': { return gigtextsStatic; }
+			case 'lyrics': { return lyricsStatic; }
+			case 'performances': { return performancesStatic; }
+			case 'presses': { return pressesStatic; }
+			case 'releases': { return releasesStatic; }
+
+			/*
+				simple filtered lookups
+			 */
+			case 'songs_by_datetime': {
+				return await returnFilteredPath('gigsongs', 'datetime', args, false);
+			}
+			case 'presses_by_release': {
+				return await returnFilteredPath('presses', 'album', args, true);
+			}
+			case 'recent_releases': {
+				return findRecent(releasesStatic, ['dtadded','dtreleased','datetime'], args?.releases);
+			}
+			case 'recent_press': {
+				return findRecent(pressesStatic, ['dtadded','dtpublished','datetime'], args?.press);
+			}
+			case 'recent_gigmedia': {
+				return findRecent(gigmediasStatic, ['credit_date','added','datetime'], args?.gigmedia);
+			}
+
+			/*
+				more complex lookups
+			 */
+			case 'audio': {
+				// select * from media where type='audio' order by project, collection, ordinal
+				return returnResults(mediasStatic?.results
+					?.filter((m: HashedType) => m?.type === 'audio')
+					?.sort((a: HashedType, b: HashedType) => a?.project?.localeCompare(b?.project) || a?.collection?.localeCompare(b?.collection) || a?.ordinal - b?.ordinal));
+			}
+			case 'video': {
+				// select * from media where type='video' order by project, collection, ordinal
+				return returnResults(mediasStatic?.results
+					?.filter((m: HashedType) => m?.type === 'video')
+					?.sort((a: HashedType, b: HashedType) => a?.project?.localeCompare(b?.project) || a?.collection?.localeCompare(b?.collection) || a?.ordinal - b?.ordinal));
+			}
+			case 'gig_by_datetime': {
 				const datetime = args?.replace(/%20/g, ' ')?.replace(/ 00:00:00/, '');
-				const gigs = gigsStatic?.results?.find((g: RecordType) => g?.datetime === datetime);
-				const played = gigsongsStatic?.results?.filter((g: RecordType) => g?.datetime === datetime);
-				const media = gigmediasStatic?.results?.filter((g: RecordType) => g?.datetime === datetime);
-				const text = gigtextsStatic?.results?.filter((g: RecordType) => g?.datetime === datetime);
-				const players = performancesStatic?.results?.filter((g: RecordType) => g?.datetime === datetime);
-				const press = pressesStatic?.results?.filter((g: RecordType) => g?.dtgig === datetime);
+				const gigs = gigsStatic?.results?.find((g: HashedType) => g?.datetime === datetime);
+				const played = gigsongsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				const media = gigmediasStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				const press = pressesStatic?.results?.filter((g: HashedType) => g?.dtgig === datetime);
 				// assumes gigs are already sorted by date by API
-				const indexOfGig = gigsStatic?.results?.map((g: RecordType, index: number) => ({ index, ...g }))?.find((g: RecordType) => g.gig_id === gigs?.gig_id)?.index || -1;
+				const indexOfGig = gigsStatic?.results?.map((g: HashedType, index: number) => ({ index, ...g }))?.find((g: HashedType) => g.gig_id === gigs?.gig_id)?.index || -1;
 				const next = [ indexOfGig > -1 ? gigsStatic?.results[indexOfGig + 1] : {} ];
 				const prev = [ indexOfGig > -1 ? gigsStatic?.results[indexOfGig - 1] : {} ];
 				return {
@@ -273,51 +353,27 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					prev,
 					next,
 				}
-				break;
-			case 'audio':
-			case 'unreleased_audio':
-			case 'release_audio_by_project':
-			case 'audio_by_project':
-			case 'release_video_by_project':
-			case 'live_video_by_project':
-			case 'video':
-			case 'credits_by_release':
-			case 'presses_by_release':
-			case 'press_by_href':
-			case 'presses_for_admin':
-			case 'songs_by_datetime':
-			case 'recent_feedback':
-			case 'feedback_delete':
-				return await apiDataFromDataServer(path, args);
-			case 'feedbacks':
-			case 'feedback_by_page': {
-				const data = await apiDataFromDataServer('feedback', args);
-				data.results = data.results?.map((r: CommentType) => {
-					return {
-						...r,
-						who: censorEmail(r?.who),
-					}
+			}
+			case 'press_by_href': {
+				return await returnFilteredPath('presses', 'url', args, true, (candidate: HashedType, value: string, exact: boolean) => {
+					const vl = value?.toLowerCase();
+					const cl = candidate?.url?.toLowerCase();
+					return cl === `/press/${vl}` || cl === `/press/${vl}.html`;
 				});
-				return data;
 			}
 			case 'on_this_day': {
-				const { results } = await apiData('gigs', args);
 				const today = new Date().toISOString()?.substr(4, 6);
-				return returnResults(results?.filter((r: RecordType) => r.datetime?.substr(4, 6) === today));
+				return returnResults(gigsStatic?.results?.filter((r: HashedType) => r.datetime?.substr(4, 6) === today));
 			}
-			case 'recent_releases': {
-				return findRecent(path, releasesStatic, ['dtadded','dtreleased','datetime'], args?.releases);
-			}
-			case 'recent_press': {
-				return findRecent(path, pressesStatic, ['dtadded','dtpublished','datetime'], args?.press);
-			}
-			case 'recent_gigmedia': {
-				const gigmedias = await apiData('gigmedias');
-				return findRecent(path, gigmedias, ['credit_date','added','datetime'], args?.gigmedia);
+			case 'unreleased_audio': {
+				// "select * from media where type='audio' and length(lookup) = 0 and collection like '%session%' order by project, collection, ordinal"
+				return returnResults(mediasStatic?.results?.filter((m: HashedType) => {
+					return m?.type === 'audio' && !m?.lookup?.length && m?.collection?.toLowerCase()?.includes('session');
+				})?.sort((a: HashedType, b: HashedType) => a?.project?.localeCompare(b?.project) || a?.collection?.localeCompare(b?.collection) || a?.ordinal - b?.ordinal));
 			}
 			case 'recent_gigsongs_media': {
 				const gigsong_media =  await apiData('gigsongs_media', args);
-				const { results } = await findRecent(path, gigsong_media, ['added','datetime'], args?.gigsong_media);
+				const { results } = await findRecent(gigsong_media, ['added','datetime'], args?.gigsong_media);
 				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 			case 'recent_updates': {
@@ -325,7 +381,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const gigsong_media = await apiData('recent_gigsongs_media', args);
 				const gigmedia = await apiData('recent_gigmedia', args);
 				const releases = await apiData('recent_releases', args);
-				const feedback = await apiDataFromDataServer('recent_feedback', args);
+				const feedback = await apiData('recent_feedback', args);
 				return {
 					press,
 					gigmedia,
@@ -333,9 +389,6 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					feedback,
 					releases
 				}
-			}
-			case 'gigsongs': {
-				return gigsongsStatic;
 			}
 			case 'gigsongs_media': {
 				const { results } = await apiData('gigsongs');
@@ -355,7 +408,10 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			}
 			case 'gigtext_contributions': {
 				const gigtexts = await apiData('gigtexts');
-				return returnResults(gigtexts?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
+				return returnResults(gigtexts?.results?.filter((r: any) => {
+					return (!['bootlegger','recording','soundman'].includes(r.type));
+				})?.filter((g: any) => args?.all ||
+					(g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
 					...g,
 					credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
 				})));
@@ -372,35 +428,56 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const gigsong = await apiData('gigsong_contributions', args);
 				const gigtext = await apiData('gigtext_contributions', args);
 				return {
-					gigmedia: findRecent(path, gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
-					gigsong: findRecent(path, gigsong, ['added'], makeOptions(args, 'gigsong')),
-					gigtext: findRecent(path, gigtext, ['credit_date'], makeOptions(args, 'gigtext')),
+					gigmedia: findRecent(gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
+					gigsong: findRecent(gigsong, ['added'], makeOptions(args, 'gigsong')),
+					gigtext: findRecent(gigtext, ['credit_date'], makeOptions(args, 'gigtext')),
 				}
+			}
+			case 'releases_by_song': {
+				//select distinct(lookup), media, version from performance where ? and category="release"'
+				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
+				return joinOn('lookup', [... new Set(performancesStatic?.results?.filter(value => (value?.category === 'release' && value?.song === useArgs))?.map(value => value?.lookup))]?.map(lookup => ({ lookup })), releasesStatic?.results);
+			}
+			case 'live_performances_by_song': {
+				// 'select * from gigsong gs, gig g where gs.datetime=g.datetime and song="{{value}}"' },
+				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
+				const { results } = await returnFilteredPath('gigsongs', 'song', useArgs, true);
+				return joinOn('datetime', results || [], gigsStatic?.results || []);
+			}
+			case 'released_recordings_by_song': {
+				// select * from performance where song="{{value}}" and media IS NOT NULL
+				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
+				const { results } = await returnFilteredPath('performances', 'song', useArgs, true);
+				return returnResults(results?.filter((r: HashedType) => r?.media?.length));
 			}
 			case 'lyric_by_href': {
 				const releases = await apiData('releases', args);
-				const lyrics = await apiDataFromDataServer('lyric_by_href', args);
+				const lyrics = await returnFilteredPath('lyrics', 'href', args, false);
 				const title = lyrics?.results[0]?.title;
 				const song = encodeURIComponent(title);
-				const medias = await apiDataFromDataServer('media_by_song', song);
-				const live = await apiDataFromDataServer('live_performances_by_song', song);
-				const performances = await apiDataFromDataServer('performances_by_song', song);
-				const foundList = await apiDataFromDataServer('releases_by_song', song);
+				const live = await apiData('live_performances_by_song', song);
+				const unreleased = returnResults(performancesStatic?.results?.filter((g: HashedType) => g?.name === title && g?.lookup && g?.media));
+				const released_recordings = await apiData('released_recordings_by_song', song);
+				const foundon = await apiData('releases_by_song', song);
 				const releaseAudio = releases?.results?.filter((r: any) => r?.audio?.includes(title));
 				const releaseVideo = releases?.results?.filter((r: any) => r?.video?.includes(title));
 				return {
 					lyrics,
 					live,
-					performances,
+					released_recordings,
 					releaseAudio,
 					releaseVideo,
-					medias,
-					foundon: foundList?.results?.map(({ lookup, media }: any) => ({ ...releases?.results?.find((r: any) => lookup === r.lookup), mediaurl: media })),
+					unreleased,
+					foundon,
 				}
 			}
 			case 'songs_by_release': {
-				const data = await apiDataFromDataServer(path, args);
-				const crdata = await apiDataFromDataServer('credits_by_release', args);
+				//select *, song as title from performance where lookup = "{{value}}" and length(performer) = 0 order by type, ordinal
+				const X = await returnFilteredPath('performances', 'lookup', args, true);
+				const results = X?.results?.map((r: HashedType) => ({...r, title: r?.song }));
+				const data = returnResults(results?.filter((r: HashedType) => !r?.performer?.length)?.sort((a: HashedType, b: HashedType) => a?.type?.localeCompare(b?.type) || a?.ordinal - b?.ordinal));
+				//'select * from performance where lookup="{{value}}" and length(performer) > 0'
+				const crdata = returnResults(results?.filter((r: HashedType) => r?.performer?.length > 0)?.sort((a: HashedType, b: HashedType) => a?.type?.localeCompare(b?.type) || a?.ordinal - b?.ordinal));
 				/*
 					detect distinct songs
 					and collect song:instrument credits per person
@@ -426,9 +503,9 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 						// multiple rows of album-wide credits for this person.
 						// concatentate the strings
 						if (credits[cr.performer].album_credits) {
-							credits[cr.performer].album_credits += ', ' + cr.instruments;
+							credits[cr.performer].album_credits += ', ' + cr?.instruments;
 						} else {
-							credits[cr.performer].album_credits = cr.instruments;
+							credits[cr.performer].album_credits = cr?.instruments;
 						}
 					}
 				})
@@ -440,49 +517,37 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					songs: data,
 				}
 			}
+			case 'gigs_by_act': {
+				let useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
+				let exact = false;
+				if (useArgs?.includes('"')) {
+					exact = true;
+					useArgs = useArgs.replace(/"/g, '');
+				}
+				const { results } = await returnFilteredPath('performances', 'performer', useArgs, exact, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('with', candidate, value, exact));
+				//console.log("ACTS", results);
+				return joinOn('datetime', results || [], gigsStatic?.results || []);
+			}
 			case 'gigs_by_musician': {
-				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, '_')?.replace(/ /g, '_');
-				const performances =  await apiDataFromDataServer(path, useArgs);
-				/*
-				const gigs = await apiDataFromDataServer('gigs');
-				// join gig data to performance records
-				const results = performances?.results?.map((performance: RecordType) => {
-					const datetime = localDate(performance?.datetime)
-					const gig = gigs?.results.find((gig: RecordType) => localDate(gig?.datetime) === datetime);
-					return { ...performance, gig }
-				});
-				delete performances.results;
-				return { ...performances, results }
-				*/
-				return performances;
+				let useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
+				let exact = false;
+				if (useArgs?.includes('"')) {
+					exact = true;
+					useArgs = useArgs.replace(/"/g, '');
+				}
+				const { results } = await returnFilteredPath('performances', 'performer', useArgs, exact, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('event', candidate, value, exact));
+				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 			case 'gigs_by_song': {
-				const useArgs = args?.replace(/%22/g, '');
-				const gigsongs = await apiDataFromDataServer(path, useArgs);
-				return gigsongs;
-				/*
-				const gigsongs = await apiDataFromDataServer(path, args);
-				const gigs = await apiDataFromDataServer('gigs', args);
-				// join gig data to song records
-				const results = gigsongs?.results?.map((song: RecordType) => {
-					const datetime = localDate(song?.datetime)
-					const gig = gigs?.results.find((gig: RecordType) => localDate(gig?.datetime) === datetime);
-					return { ...song, gig }
-				});
-				return { ...gigsongs, results }
-				*/
+				let useArgs = args?.replace(/%22/g, '');
+				let exact = false;
+				if (useArgs?.includes('"')) {
+					exact = true;
+					useArgs = useArgs.replace(/"/g, '');
+				}
+				const { results } = await returnFilteredPath('gigsongs', 'song', useArgs, exact);
+				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
-			case 'releases':
-				return releasesStatic;
-				break;
-			/* REPLACED
-			case 'release_by_lookup': {
-				const results = releasesStatic?.results?.filter((r: any) => r.lookup === args || r.href === `/albums/${args}.html`);
-				return { results, numResults: results?.length };
-				//if (args)
-				//return await apiDataFromHTDBServer(`db_albums/data.json?lookup=${args}`);
-			}
-			*/
 		}
 	}
 	return {

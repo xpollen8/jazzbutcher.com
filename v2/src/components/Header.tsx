@@ -117,7 +117,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	//'gallery/david_whittemore': { parent: 'gallery', title: 'David Whittemore' },
 	//'gallery/ruth_tidmarsh': { parent: 'gallery', title: 'Ruth Tidmarsh' },
 	memoriam: { parent: 'pat', title: 'In Memoriam' },
-	fma: { parent: 'pat', title: 'Fishy Mansions Archives', summary: "Items tapes from Pat Fish's Estate" },
+	fma: { parent: 'pat', title: 'Fishy Mansions Archives', summary: "Items from Pat Fish's Estate" },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions Livestreams', summary: "COVID-era livestreams" },
 	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },
 	projects: { parent: 'pat', title: 'Side Projects', rootHideChildren: true },

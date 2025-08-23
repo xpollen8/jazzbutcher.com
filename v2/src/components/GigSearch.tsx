@@ -252,20 +252,9 @@ const filterGigsByVenue = (res: any, query: string) => filterGigsByField(res, qu
 const filterGigsByCity = (res: any, query: string) => filterGigsByField(res, query, 'city');
 const filterGigsByState = (res: any, query: string) => filterGigsByField(res, query, 'state');
 const filterGigsByCountry = (res: any, query: string) => filterGigsByField(res, query, 'country');
-const filterGigsBySupport = (res: any, query: string) => filterGigsByField(res, query, 'alsowith');
-const filterGigsBySong = (res: any, query: string) => res; //filterGigsByField(res, query, 'song');
-const filterGigsByPerformer = (res: any, query: string) => {
-	return res;
-	/*
-	const recordFilter = ((record: RecordType) => {
-		const field = 'performer';
-		if (record[field]?.startsWith('[[person:')) {
-			return record[field]?.toLowerCase();
-		}
-	});
-	return filterBy(res, query, recordFilter);
-	*/
-}
+const filterGigsBySupport = (res: any, query: string) => res;
+const filterGigsBySong = (res: any, query: string) => res;
+const filterGigsByPerformer = (res: any, query: string) => res;
 
 const filterGigsByAnything = (res: RecordType, query: string) => {
 	// create a searchable string from record object
@@ -385,9 +374,12 @@ export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: b
 							{extras?.map((ex: any, key: number) => ex.func({ key, height: 25, width: 25, style: { padding: '3px' } }))}
 							</div>
 							{(record?.alsowith) && <div className="pt-1">{record?.alsowith?.split(',')?.map((a: string, key: number) => {
-								const name = removeHTML(a.trim())?.toLowerCase();
+								const [ nameX, akaX ] = removeHTML(a.trim())?.toLowerCase()?.split('(') || [];
+								const name = nameX?.trim();
+								const aka = akaX?.replace(')', '')?.trim();
 								const query = gigsQuery?.replace(/"/g, '')?.toLowerCase();
-								return !!a?.length && <span key={key} className="listItem smalltext ml-1">{(gigsType === 'alsowith' && name === query) ? name : AutoLinkAct(name)}</span>
+								const akaLink = aka && <>({aka === query ? aka : AutoLinkAct(aka)})</>;
+								return !!a?.length && <span key={key} className="listItem smalltext ml-1">{(gigsType === 'alsowith' && name === query) ? name : AutoLinkAct(name)} {akaLink}</span>
 								}
 							)}</div>}
 							</div>
@@ -447,14 +439,16 @@ const gigSearchOptions: HashedType[] = [
 		filter: filterGigsByAnything,
 	},
 	{ ...buildGigSearchOptions('song', 'Played this song..', 'gigs_by_song'),
-		filter: filterGigsBySong,
+		//filter: filterGigsBySong,
 		layout: layoutSongs,
 	},
 	{ ...buildGigSearchOptions('performer', 'Musician performed..', 'gigs_by_musician'),
 		filter: filterGigsByPerformer,
 		layout: layoutPerformer
 	},
-	{ ...buildGigSearchOptions('alsowith', 'Shared the bill..', 'gigs') },
+	{ ...buildGigSearchOptions('alsowith', 'Shared the bill..', 'gigs_by_act'),
+		filter: filterGigsBySupport,
+	},
 ]
 
 export const gigSearchOptionsByType = (noun: string | undefined): HashedType => (noun && gigSearchOptions.find(o => o.noun === noun)) || gigSearchOptions[0] || [];

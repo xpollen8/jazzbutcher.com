@@ -5,10 +5,11 @@ import { removeHTML } from '@/components/GenericWeb';
 import useContributions from '@/lib/useContributions';
 import { type HashedType, pluralize, dateAgo, ts2URI } from '@/lib/utils';
 import Loading from '@/components/Loading';
+import PhotoSet from '@/components/PhotoSet';
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
-		const key = JSON.stringify(a);
+		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, added: a?.added });
 		return { ...acc, [key]: (acc[key] || 0) + 1};
 	}, {});
 
@@ -16,8 +17,16 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 
 	const showData = (x: any, key: number) => {
 		const { count, type, datetime, added, summary } = x;
+		const photos = contributions?.filter((c: any) => c?.image?.includes('jpg') && c?.datetime === datetime)?.map((c: any) => {
+			return {
+				src: c?.image,
+				alt: removeHTML(c?.image_caption),
+			}
+		});
 		return <div key={key}  className="clickListItem">
 			<Link className="monospace" href={`/gigs/${ts2URI(datetime)}`}>{datetime?.substr(0, 10)}</Link> {pluralize(count, type, undefined, true)} {dateAgo(added)} {summary && `"${summary}"`}
+			<PhotoSet title={(!!photos?.length) ? `Images from ${datetime?.substr(0, 10)}` : ''} photos={photos}
+			/>
 		</div>
 	}
 
@@ -77,13 +86,15 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	const recent = gigmedia?.results[0]?.credit_date;
 	let total = 0;
 
-	const addInfo = (contributions: HashedType, person: string, type: string, added?: string, datetime?: string, summary?: string) => {
+	const addInfo = (contributions: HashedType, person: string, type: string, added?: string, datetime?: string, summary?: string, image?: string, image_caption?: string) => {
 		if (!contributions[person]) { contributions[person] = []; }
 		contributions[person].push({
 			type,
 			added,
 			datetime,
 			summary,
+			image,
+			image_caption,
 		});
 		total = total + 1;
 	}
@@ -112,7 +123,9 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 			prettyType('image', r?.type),
 			r?.credit_date,
 			r?.datetime,
-			(r?.image_caption) ? removeHTML(r?.image_caption)?.substr(0, 50) + '...' : '');
+			(r?.image_caption) ? removeHTML(r?.image_caption)?.substr(0, 50) + '...' : '',
+			r?.image,
+			r?.image_caption);
 	});
 
 	return <Loading isLoading={isLoading} >

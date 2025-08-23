@@ -8,10 +8,10 @@ import Header from '@/components/Header';
 import PressItem from '@/components/PressItem';
 import { parseProject, pressFiltersInclude } from '@/lib/utils';
 
-import usePressesAdmin from '@/lib/usePressesAdmin';
+import usePresses from '@/lib/usePresses';
 
 const Press = (props: any) => {
-	const { data, isLoading, error } = usePressesAdmin();
+	const { data, isLoading, error } = usePresses();
 
 	const router = useRouter();
 	const pathname = usePathname();

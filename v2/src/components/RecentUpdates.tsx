@@ -5,7 +5,7 @@ import Image from 'next/image';
 import EmbedMedia from '@/components/EmbedMedia';
 import PhotoSet from '@/components/PhotoSet';
 import useRecentUpdates from '@/lib/useRecentUpdates';
-import { pluralize, dateDiff, dateAgo, ts2URI } from '@/lib/utils';
+import { parseCaptionsSourcesEtc, parseImage, pluralize, dateDiff, dateAgo, ts2URI } from '@/lib/utils';
 import { feedbackURI2Pathname } from '@/lib/usePageComments';
 import { Attribution } from '@/components/GenericWeb';
 import { CommentBubble } from '@/components/PageComments';
@@ -16,13 +16,30 @@ const RecentPress = (props: any) => {
 	if (!press?.numResults) return;
 	return <details>
 		<summary className="tagClickable">{pluralize(press.numResults, 'press/clipping', 'Recently added')} {dateAgo(press?.results[0]?.dtadded)}</summary>
-			{press.results.map((p: any, key: number) => {
-				return <div key={key} className="listItem clickListItem">
-					<div className="date">{dateDiff(p.dtadded, '')}</div>
-					<Link href={p.url}><b>{!!p.publication?.length && p.publication + ':'} {p.title}</b></Link> <div className="date">Published: {p?.dtpublished?.substr(0, 10)?.replace(/-00/g, '')}</div>
+		<PhotoSet photos={press.results?.map((p: any) => {
+			const { image, thumb } = parseImage(p?.images, 250);
+			if (!p?.thumb && !image && !thumb) return;
+			return {
+				...p,
+				src: p?.thumb || image || thumb,
+				alt: p?.publication,
+				body: '',
+				href: p?.url,
+				credit_date: p?.dtadded,
+			}
+			})
+		} />
+		{press.results?.filter((p: any) => p?.audio)?.map((p: any, key: number) => {
+			const row = parseCaptionsSourcesEtc(p?.audio);
+			return row?.map(([ file, caption ]: any, key: number) => {
+				const [ title, ordinal, version ] = caption?.split('::') || [];
+				return <div key={key} className="listItem">
+					<EmbedMedia data={{ mediacrediturl: p?.url, mediaurl: file, title, ordinal, comment: version, author: p?.publication, mediacreditdate: p?.dtadded, mediacredit: p?.title, autolink: true }} />
 				</div>
-			})}
-	</details>
+			}
+			)
+		})}
+		</details>
 }
 
 const RecentFeedback = (props: any) => {
@@ -46,53 +63,48 @@ const RecentFeedback = (props: any) => {
 	</details>
 }
 
-// ({ title, photos, pdf, description, credit, credit_url, credit_date }
-//	const { src, alt, credit, credit_url, credit_date, body, location } = w;
-//	const { image, thumb } = parseImage(src, 250);
-
-const doPix = (arr: any) => {
-	return <PhotoSet
-		photos={arr?.map((p: any) => {
-			const image = `https://v1.jazzbutcher.com/${p.image.trim()}`;
-			const thumb = image.replace(/.jpg/, '_250.jpg');
-			return {
-				...p,
-				src: image
-			}
-		})}
-	/>
-}
-
 const RecentGigMedia = (props: any) => {
 	const { gigmedia } = props;
 	if (!gigmedia?.numResults) return;
-	const results: Record<string, any[]> = {};
-	gigmedia.results?.forEach((p: any) => {
-		if (!results[p.type]) { results[p.type] = []; }
-		results[p.type]?.push(p);
-	});
+//	const results: Record<string, any[]> = {};
+//	gigmedia.results?.forEach((p: any) => {
+//		if (!results[p.type]) { results[p.type] = []; }
+//		results[p.type]?.push(p);
+//	});
 	const mostRecent = gigmedia?.results[0]?.credit_date;
 	return <details>
 		<summary className="tagClickable">{pluralize(gigmedia.numResults, 'image', 'Recently added')} {dateAgo(mostRecent)}</summary>
-		{Object.keys(results)?.sort((a: any, b: any) => a[0]?.credit_date - b[0]?.credit_date)?.map((p: any, key: number) => {
-			const items = results[p] || [];
-			return <div key={key} className="clickListItem">
-				<details>
-				<summary className="tagClickable">{pluralize(items.length, p?.replace('pix', 'live photos'), 'Recently added')} {dateAgo(items[0]?.credit_date)}</summary>
-					{doPix(items)}
-					{/*(p === 'pix') ? doPix(items) : items?.map((p: any, key: number) => {
-					const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
-					const thumb = href.replace(/.jpg/, '_250.jpg');
-					return <div key={key} className="listItem">
-						<Link href={href}><Image src={thumb} width={250} height={250} alt={p.image_caption || p.type} /></Link>
-						<div className="date"><Link href={`/gigs/${ts2URI(p.datetime)}`}>{dateDiff(p.datetime, '')}</Link></div>
-						<Attribution g={p.credit} d={p.credit_date} x={(p.image_caption) ? <span className="date">{p.image_caption}<br /></span> : ''} />
-					</div>
-					})*/}
-				</details>
-			</div>
-		})}
-	</details>
+		<PhotoSet photos={gigmedia.results?.map((p: any) => {
+			return {
+				...p,
+				alt: p?.datetime?.substr(0, 10),
+				href: ts2URI(p?.datetime),
+				src: p?.image
+			}
+			})
+		} />
+		</details>
+//	return <details>
+//		<summary className="tagClickable">{pluralize(gigmedia.numResults, 'image', 'Recently added')} {dateAgo(mostRecent)}</summary>
+//		{Object.keys(results)?.sort((a: any, b: any) => a[0]?.credit_date - b[0]?.credit_date)?.map((p: any, key: number) => {
+//			const items = results[p] || [];
+//			return <div key={key} className="clickListItem">
+//				<details>
+//				<summary className="tagClickable">{pluralize(items.length, p?.replace('pix', 'live photos'), 'Recently added')} {dateAgo(items[0]?.credit_date)}</summary>
+//					{doPix(items)}
+//					{/*(p === 'pix') ? doPix(items) : items?.map((p: any, key: number) => {
+//					const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
+//					const thumb = href.replace(/.jpg/, '_250.jpg');
+//					return <div key={key} className="listItem">
+//						<Link href={href}><Image src={thumb} width={250} height={250} alt={p.image_caption || p.type} /></Link>
+//						<div className="date"><Link href={`/gigs/${ts2URI(p.datetime)}`}>{dateDiff(p.datetime, '')}</Link></div>
+//						<Attribution g={p.credit} d={p.credit_date} x={(p.image_caption) ? <span className="date">{p.image_caption}<br /></span> : ''} />
+//					</div>
+//					})*/}
+//				</details>
+//			</div>
+//		})}
+//	</details>
 }
 
 const RecentGigSongMedia = (props: any) => {

@@ -70,7 +70,7 @@ export const filterItemBy = (object: any, filters: TypeFilterEntry[], filterOpti
 			return values?.some((value: string) => object[value] === 'yes');
 		} if (field === 'exists') {
 			return values?.some((value: string) => object[value]?.length);
-		} else if (values?.some((value: string) => object[field].includes(value))) {
+		} else if (values?.some((value: string) => object[field]?.includes(value))) {
 			return object;
 		}
 	});

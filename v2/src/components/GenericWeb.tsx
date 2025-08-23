@@ -26,7 +26,7 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 						return linkExternal(g, parseDomain(g))
 					}
 				} else {
-					if (u) {
+					if (u && !FMAraw) {
 						if (cleanG?.length) return linkInternal(u, cleanG);
 						return linkExternal(u, parseDomain(u))
 					} else {

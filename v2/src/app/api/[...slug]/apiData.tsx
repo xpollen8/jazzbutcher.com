@@ -454,11 +454,11 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const releases = await apiData('releases', args);
 				const lyrics = await returnFilteredPath('lyrics', 'href', args, false);
 				const title = lyrics?.results[0]?.title;
-				const song = encodeURIComponent(title);
-				const live = await apiData('live_performances_by_song', song);
+				//const song = encodeURIComponent(title);
+				const live = await apiData('live_performances_by_song', title);
 				const unreleased = returnResults(performancesStatic?.results?.filter((g: HashedType) => g?.name === title && g?.lookup && g?.media));
-				const released_recordings = await apiData('released_recordings_by_song', song);
-				const foundon = await apiData('releases_by_song', song);
+				const released_recordings = await apiData('released_recordings_by_song', title);
+				const foundon = await apiData('releases_by_song', title);
 				const releaseAudio = releases?.results?.filter((r: any) => r?.audio?.includes(title));
 				const releaseVideo = releases?.results?.filter((r: any) => r?.video?.includes(title));
 				return {

@@ -15,7 +15,7 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 		{(credit || credit_url) && <>{(description) && <br />}<Credit g={credit} u={credit_url} d={credit_date} /></>}
 		{(pdf) && <><br /><Link href={pdf}>Download this photoset as a single PDF</Link> (large file)</>}
 	</div>}
-	<div className="masonry listItem">
+	{(photos?.length) && <div className="masonry listItem">
 		{photos.map((w: any, key: number) => {
 			if (!w) return;
 			const { href, src, alt, credit, credit_url, credit_date, body, location } = w;
@@ -34,7 +34,7 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 				</div>
 			</div>
 		})}
-	</div>
+	</div>}
 </>
 
 export default PhotoSet;

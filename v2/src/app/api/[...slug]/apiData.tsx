@@ -357,7 +357,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'press_by_href': {
 				return await returnFilteredPath('presses', 'url', args, true, (candidate: HashedType, value: string, exact: boolean) => {
 					const vl = value?.toLowerCase();
-					const cl = candidate?.toLowerCase();
+					const cl = candidate?.url?.toLowerCase();
 					return cl === `/press/${vl}` || cl === `/press/${vl}.html`;
 				});
 			}

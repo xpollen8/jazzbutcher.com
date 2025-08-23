@@ -124,10 +124,12 @@ export const removeHTML = (str?: string) => {
 
 export const ParsedCaption = (props: { credit?: string, url?: string, credit_url?: string, credit_date?: string, caption?: string | React.ReactNode, image_caption?: string | React.ReactNode }) => {
 	const needBR = ((props?.caption || props?.image_caption) && ((props?.credit) || (props?.credit_url) || (props?.credit_date)));
+	const useCredit = removeHTML(props?.credit);
+	const useURL = (useCredit) ? `/contributions/${useCredit}` : props?.credit_url;
 	return (<>
 		{(props?.caption || props?.image_caption) && <span dangerouslySetInnerHTML={{ __html: props?.caption || '' + props?.image_caption }} />}
 		{(needBR) && <br />}
-		<Credit g={removeHTML(props?.credit)} u={props?.credit_url} d={props?.credit_date} />
+		<Credit g={useCredit} u={useURL} d={props?.credit_date} />
 	</>)
 }
 

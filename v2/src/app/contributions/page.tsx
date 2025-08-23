@@ -30,19 +30,19 @@ const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) =>
 					<th onClick={(e) => setHeader(e, 'text')} className={guessClass('text')}> Texts </th>
 					<th onClick={(e) => setHeader(e, 'av')} className={guessClass('av')}> A/V </th>
 					<th onClick={(e) => setHeader(e, 'min')} className={guessClass('min')}> First </th>
-					<th onClick={(e) => setHeader(e, 'max')} className={guessClass('max')}> Recent </th>
+					<th onClick={(e) => setHeader(e, 'max')} className={`pr-2 ${guessClass('max')}`}> Recent </th>
 			</thead>
 			<tbody>
 			{data?.map((obj: HashedType, key: number) => {
 				const { person, total, image, text, av, min, max } = obj;
 				return <tr key={key} className="odd:bg-gray-100 text-end">
-					<td className="pr-3 text-start border-b"> <Link href={`/contributions/${encodeURIComponent(person)}`}><b>{truncate(person, 20)}</b></Link> </td>
+					<td className="pl-2 text-start border-b"> <Link href={`/contributions/${encodeURIComponent(person)}`}><b>{truncate(person, 20)}</b></Link> </td>
 					<td className="text-end border-b"> {total} </td>
 					<td className="text-end border-b"> {image} </td>
 					<td className="text-end border-b"> {text} </td>
 					<td className="text-end border-b"> {av} </td>
 					<td className="text-end monospace smalltext border-b"> {min?.replace(/9999-12-31/, '')} </td>
-					<td className="text-end monospace smalltext border-b"> {max?.replace(/0000-00-00/, '')} </td>
+					<td className="pr-2 text-end monospace smalltext border-b"> {max?.replace(/0000-00-00/, '')} </td>
 				</tr>
 			})}
 			</tbody>

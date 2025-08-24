@@ -83,7 +83,7 @@ const PressItem = ({ item }: { item: any }) => {
 				return (<>
 					<b >Download:</b>{' '}
 					{media?.filter(([ file, caption ]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>
-						<Link key={key} href={`https://v1.jazzbutcher.com${file}`} className="border">{caption || file}</Link>
+						<Link key={key} href={file?.includes('https:') ? file : `https://v1.jazzbutcher.com${file}`} className="border">{caption || file}</Link>
 					</>)
 					)}
 					<p />

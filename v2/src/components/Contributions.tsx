@@ -9,7 +9,7 @@ import PhotoSet from '@/components/PhotoSet';
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
-		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, added: a?.added, href: a?.href, summary: (a?.type?.includes('photo') || a?.type?.includes('image')) ? '' : a?.summary });
+		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, summary: (a?.type?.includes('photo') || a?.type?.includes('image')) ? '' : a?.summary });
 		return { ...acc, [key]: (acc[key] || 0) + 1};
 	}, {});
 

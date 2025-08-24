@@ -441,8 +441,8 @@ ${d}
 
 #define	definePressItems()
 
-	${addPatLiveGigs()}
-	${addLiveGigs()}
+#	${addPatLiveGigs()}
+#	${addLiveGigs()}
 
 	${addPress(type=album, album=nons,
 		url=${jbc_press}/19860807_press_varsity_nonsense.html,

@@ -59,8 +59,8 @@ const sections : { [key: string]: BreadCrumb } = {
 	video: { parent: 'jbc', title: 'Video', summary: 'Huge/unorganized. Sorry!', rootHideChildren: true },
 	press: { parent: 'jbc', title: 'Press', summary: "Reviews, Interviews, etc", rootHideChildren: true },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives', rootHideChildren: true },
-	'press?filters=type%3B%3Bpat': { parent: 'gigs', title: "Pat's Gig Reviews" },
-	'press?filters=title%3B%3BPunter': { parent: 'gigs', title: "Fans' Gig Reviews" },
+//	'press?filters=type%3B%3Bpat': { parent: 'gigs', title: "Pat's Gig Reviews" },
+//	'press?filters=title%3B%3BPunter': { parent: 'gigs', title: "Fans' Gig Reviews" },
 //TODO	posters: { parent: 'gigs', title: 'Posters', summary: 'Gig Ephemera', inParentDirectory: true },
 //TODO	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
 

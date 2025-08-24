@@ -414,11 +414,11 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 						)?.map((g: any) => ([
 							{	// to make findable by Author
 								...g,
-								credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
+								credit: removeHTML(g?.credit) || '-UNKNOWN-',
 							},
 							{	// to make findable by Publication
 								...g,
-								credit: (g?.publication?.length) ? removeHTML(g?.publication) : '-UNKNOWN-',
+								credit: removeHTML(g?.publication) || '-UNKNOWN-',
 							},
 						]))?.flat()
 				);

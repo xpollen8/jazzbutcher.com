@@ -17,6 +17,7 @@ create table press (
 	media varchar(1000) NOT NULL,
 	audio MEDIUMTEXT NOT NULL,
 	publication varchar(200) NOT NULL,
+	issue varchar(20),
 	location varchar(100) NOT NULL,
 	title varchar(200) NOT NULL,
 	headline varchar(200) NOT NULL,

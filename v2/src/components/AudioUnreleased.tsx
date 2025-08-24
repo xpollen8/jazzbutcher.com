@@ -1,6 +1,6 @@
 "use client"
 
-import { ts2URI, parseCredit } from '@/lib/utils';
+import { parseCredit } from '@/lib/utils';
 import useAudioUnreleased from '@/lib/useAudioUnreleased';
 import EmbedMedia from '@/components/EmbedMedia';
 import Tag from '@/components/Tag';

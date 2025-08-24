@@ -274,8 +274,8 @@ const ExtraNav = ({ gig }: { gig: any }) => {
 	if (gig?.prev && gig?.next) {
 		const prev = gig?.prev[0]?.datetime;
 		const next = gig?.next[0]?.datetime;
-		const prevGig = <Link href={`/gigs/` + ts2URI(prev)}><PrevArrow className="arrows" /></Link>;
-		const nextGig = <Link href={`/gigs/` + ts2URI(next)}><NextArrow className="arrows" /></Link>;
+		const prevGig = <Link href={ts2URI(prev)}><PrevArrow className="arrows" /></Link>;
+		const nextGig = <Link href={ts2URI(next)}><NextArrow className="arrows" /></Link>;
 		return <> {prevGig} gig {nextGig} </>
 	}
 }

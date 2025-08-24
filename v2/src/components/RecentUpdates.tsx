@@ -78,7 +78,7 @@ const RecentGigMedia = (props: any) => {
 			return {
 				...p,
 				alt: p?.datetime?.substr(0, 10),
-				href: `/gigs/${ts2URI(p?.datetime)}`,
+				href: ts2URI(p?.datetime),
 				src: p?.image
 			}
 			})
@@ -97,7 +97,7 @@ const RecentGigMedia = (props: any) => {
 //					const thumb = href.replace(/.jpg/, '_250.jpg');
 //					return <div key={key} className="listItem">
 //						<Link href={href}><Image src={thumb} width={250} height={250} alt={p.image_caption || p.type} /></Link>
-//						<div className="date"><Link href={`/gigs/${ts2URI(p.datetime)}`}>{dateDiff(p.datetime, '')}</Link></div>
+//						<div className="date"><Link href={ts2URI(p.datetime)}>{dateDiff(p.datetime, '')}</Link></div>
 //						<Attribution g={p.credit} d={p.credit_date} x={(p.image_caption) ? <span className="date">{p.image_caption}<br /></span> : ''} />
 //					</div>
 //					})*/}

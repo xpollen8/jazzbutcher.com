@@ -363,7 +363,7 @@ export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: b
 			].filter((a: any) => useG?.extra?.includes(a?.type));;
 
 		return (<div className="tagClickable w-full mt-3" style={{ background: '#cceeff', border: '1px solid #777', paddingLeft: '3px' }}>
-			<Link key={key} href={`/gigs/${ts2URI(record?.datetime)}`} style={{ color: '#333' }}>
+			<Link key={key} href={ts2URI(record?.datetime)} style={{ color: '#333' }}>
 				{types?.map((type: string, key: number) => <div key={key} className={`gig_${type}`}/>)}
 				<div style={{ background: '#ccccdd' }} > {prettyDate(record?.datetime)} </div>
 				<div className="flex justify-between">

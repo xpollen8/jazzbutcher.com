@@ -102,7 +102,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				added: r?.added,
 				datetime: r?.datetime,
 				summary: r?.song,
-				href: `/gigs/${ts2URI(r?.datetime)}`,
+				href: ts2URI(r?.datetime),
 			}
 		);
 	});
@@ -115,7 +115,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				added: r?.credit_date,
 				datetime: r?.datetime,
 				summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substr(0, 50) + '...' : '',
-				href: `/gigs/${ts2URI(r?.datetime)}`,
+				href: ts2URI(r?.datetime),
 			}
 		);
 	});
@@ -128,7 +128,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				added: r?.credit_date,
 				datetime: r?.datetime,
 				summary: (r?.image_caption) ? removeHTML(r?.image_caption)?.substr(0, 50) + '...' : '',
-				href: `/gigs/${ts2URI(r?.datetime)}`,
+				href: ts2URI(r?.datetime),
 				image: r?.image,
 				caption: r?.image_caption,
 			}

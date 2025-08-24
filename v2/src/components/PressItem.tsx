@@ -30,7 +30,7 @@ const PressItem = ({ item }: { item: any }) => {
 							{(t === 'clipping') && doItem('Category', 'Press Clipping')}
 							{(t === 'pat') && doItem('Category', 'The Butcher Writes')}
 							{(t === 'interview') && doItem('Interview w/Conspirator', article.person.split(';').map(expand))}
-							{((t === 'gig' || t === 'preshow') && article.dtgig) && doItem('The associated Gig', <Link href={`/gigs/${ts2URI(article.dtgig)}`}>{article.dtgig.substr(0, 10)}</Link>)}
+							{((t === 'gig' || t === 'preshow') && article.dtgig) && doItem('The associated Gig', <Link href={ts2URI(article.dtgig)}>{article.dtgig.substr(0, 10)}</Link>)}
 							{(t === 'album' && article?.album) && doItem('Album Review', expand(article.album))}
 					</div>))}
 					{(!!parseInt(article?.dtadded, 10)) && doItem('Item added', dateDiff(article.dtadded, ''))}

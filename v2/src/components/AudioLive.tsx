@@ -15,7 +15,7 @@ const AudioSection = ({ title, data }: any) => {
 			//if (title === 'Live Shows' && !d.mediaurl) console.log("DATA", d);
 			return <EmbedMedia key={key}
 				data={{
-					parent: '/gigs/' + ts2URI(d.datetime),
+					parent: ts2URI(d.datetime),
 					datetime: d.datetime,
 					venue: d.venue,
 					city: d.city,

@@ -57,7 +57,7 @@ const Contributions = (props: any) => {
   const { data, isLoading, error} = useContributions({ all: true });
   if (!data) return;
 
-  const { gigmedia, gigtext, gigsong } = data || {};
+  const { gigmedia, gigtext, gigsong, press } = data || {};
   const contributions: HashedType = {};
 	let total = 0;
 
@@ -89,6 +89,9 @@ const Contributions = (props: any) => {
 	});
 	gigmedia?.results?.forEach((r: any) => {
 		addInfo(contributions, r?.credit, 'image', r?.credit_date);
+	});
+	press?.results?.forEach((r: any) => {
+		addInfo(contributions, r?.credit, 'text', r?.dtadded);
 	});
 
 	const sorted = Object.keys(contributions)?.map((person: string, key: number) => ({ person, ...contributions[person] }))?.sort((a: HashedType, b: HashedType) => {

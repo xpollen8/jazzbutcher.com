@@ -5,8 +5,7 @@ import Link from 'next/link';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { GigSearchDialog, GigSearchResults } from '@/components/GigSearch';
-import ResultNavigator from '@/components/ResultNavigator';
+import { GigSearchDialog } from '@/components/GigSearch';
 import { PrevArrow, NextArrow } from '@/components/Arrows';
 import GigProfile from '@/components/GigProfile';
 import GigYear from '@/components/GigYear';
@@ -19,7 +18,6 @@ const Gigs = () => {
 	const searchParams = useSearchParams();
 	const type = searchParams.get('f') as string;
 	const query = searchParams.get('q') as string;
-	const queryString = searchParams.toString();
 	// new style: /gigs/1999-09-23 12:00:00
 	if (pyear?.length > 4) return GigProfile({ params: { datetime: params.year } });
 
@@ -29,14 +27,12 @@ const Gigs = () => {
 		return <> {prevGig} year {nextGig} </>
 	}
 
-	return (<>
-		<Header section='gigs' title={year} extraNav=<ExtraNav year={year} /> >
-			<ResultNavigator searchParams={queryString} uriPrefix='/gigs' />
-		</Header>
+	return <>
+		<Header section='gigs' title={year} extraNav=<ExtraNav year={year} /> />
 		<GigSearchDialog />
 		<GigYear args={{ year, type, query }} />
 		<Footer />
-	</>)
+	</>
 }
 
 export default Gigs;

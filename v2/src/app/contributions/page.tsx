@@ -61,7 +61,7 @@ const Contributions = (props: any) => {
   const contributions: HashedType = {};
 	let total = 0;
 
-	const addInfo = (contributions: HashedType, person: string, type: string, added: string) => {
+	const addInfo = (contributions: HashedType, person: string, type: string, added: string, accummulate?: boolean) => {
 		const useAdded = added?.substr(0, 10);
 		if (!contributions[person]) {
 			contributions[person] = {
@@ -74,27 +74,27 @@ const Contributions = (props: any) => {
 			};
 		}
 		const p = contributions[person];
-		p.total = p.total + 1;
-		p[type] = p[type] + 1;
+		if (accummulate) p.total = p.total + 1;
+		if (accummulate) p[type] = p[type] + 1;
 		if (useAdded > p.max) p.max = useAdded;
 		if (added && useAdded < p.min) p.min = useAdded;
-		total = total + 1;
+		if (accummulate) total = total + 1;
 	}
 	gigsong?.results?.forEach((r: any) => {
 		if (!r?.mediaurl?.length) return;
-		addInfo(contributions, r?.credit, 'av', r?.added);
+		addInfo(contributions, r?.credit, 'av', r?.added, true);
 	});
 	gigtext?.results?.forEach((r: any) => {
-		addInfo(contributions, r?.credit, 'text', r?.credit_date);
+		addInfo(contributions, r?.credit, 'text', r?.credit_date, true);
 	});
 	gigmedia?.results?.forEach((r: any) => {
-		addInfo(contributions, r?.credit, 'image', r?.credit_date);
+		addInfo(contributions, r?.credit, 'image', r?.credit_date, true);
 	});
 	press?.results?.forEach((r: any) => {
-		addInfo(contributions, r?.credit, 'text', r?.dtadded);
+		if (r?.credit) addInfo(contributions, r?.credit, 'text', r?.dtadded, true);
 	});
 	press?.results?.forEach((r: any) => {
-		addInfo(contributions, r?.publication, 'text', r?.dtadded);
+		if (r?.publication) addInfo(contributions, r?.publication, 'text', r?.dtadded, false);
 	});
 
 	const sorted = Object.keys(contributions)?.map((person: string, key: number) => ({ person, ...contributions[person] }))?.sort((a: HashedType, b: HashedType) => {

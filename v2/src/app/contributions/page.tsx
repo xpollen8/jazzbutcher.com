@@ -93,6 +93,9 @@ const Contributions = (props: any) => {
 	press?.results?.forEach((r: any) => {
 		addInfo(contributions, r?.credit, 'text', r?.dtadded);
 	});
+	press?.results?.forEach((r: any) => {
+		addInfo(contributions, r?.publication, 'text', r?.dtadded);
+	});
 
 	const sorted = Object.keys(contributions)?.map((person: string, key: number) => ({ person, ...contributions[person] }))?.sort((a: HashedType, b: HashedType) => {
 		if (typeof a[sortBy] === 'number') {

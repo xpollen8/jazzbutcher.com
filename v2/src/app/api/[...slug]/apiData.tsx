@@ -410,7 +410,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const presses = await apiData('presses');
 				return returnResults(presses?.results?.filter((g: any) => {
 						// get rid of "fake" "X Gig Review" entries
-						if (!g?.body?.length && !g?.images?.length && !g?.thumb?.length) return false;
+						if (!g?.body?.length && !g?.images?.length && !g?.thumb?.length && !g?.audio?.length) return false;
 						return true;
 					})?.filter((g: any) => args?.all || (g?.credit?.length || g?.publication?.length)
 						)?.map((g: any) => ([

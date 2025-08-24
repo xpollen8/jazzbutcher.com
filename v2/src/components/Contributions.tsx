@@ -9,23 +9,23 @@ import PhotoSet from '@/components/PhotoSet';
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
-		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, added: a?.added });
+		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, added: a?.added, href: a?.href, summary: (a?.type?.includes('photo') || a?.type?.includes('image')) ? '' : a?.summary });
 		return { ...acc, [key]: (acc[key] || 0) + 1};
 	}, {});
 
 	const useData = Object.keys(uniques)?.map((x: any) => ({ count: uniques[x], ...JSON.parse(x) }))?.sort((a: any, b: any) => ('' + b?.added || '').localeCompare(a?.added || ''));
 
 	const showData = (x: any, key: number) => {
-		const { count, type, datetime, added, summary } = x;
+		const { count, type, datetime, added, summary, href } = x;
 		const typeIsImage = (type?.includes('photo') || type?.includes('image'));
 		const photos = (!typeIsImage) ? [] : contributions?.filter((c: any) => c?.type == type && c?.datetime === datetime)?.map((c: any) => {
 			return {
 				src: c?.image,
-				alt: removeHTML(c?.image_caption),
+				alt: removeHTML(c?.caption),
 			}
 		});
-		return <div key={key}  className="clickListItem">
-			<Link className="monospace" href={`/gigs/${ts2URI(datetime)}`}>{datetime?.substr(0, 10)}</Link> {pluralize(count, type, undefined, true)} {dateAgo(added)} {summary && `"${summary}"`}
+		return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
+			<Link className="monospace" href={href} >{datetime?.substr(0, 10)}</Link> {pluralize(count, type, undefined, true)} {dateAgo(added)} {summary && `"${summary}"`}
 			<PhotoSet title={(!!photos?.length) ? `Images from ${datetime?.substr(0, 10)}` : ''} photos={photos}
 			/>
 		</div>
@@ -82,53 +82,71 @@ const prettyType = (type: string, t?: string) => {
 const Contributions = ({ options, label='Community contribution' }: HashedType) => {
 	const { data, isLoading, error} = useContributions(options);
 	if (!data) return;
-	const { gigmedia, gigtext, gigsong } = data || {};
+	const { gigmedia, gigtext, gigsong, press } = data || {};
 	const contributions: HashedType = {};
 	const recent = gigmedia?.results[0]?.credit_date;
 	let total = 0;
 
-	const addInfo = (contributions: HashedType, person: string, type: string, added?: string, datetime?: string, summary?: string, image?: string, image_caption?: string) => {
-		if (!contributions[person]) { contributions[person] = []; }
-		contributions[person].push({
-			type,
-			added,
-			datetime,
-			summary,
-			image,
-			image_caption,
-		});
+	const addInfo = (contributions: HashedType, info: any) => {
+		const person = info?.person;
+		if (!person || !contributions[person]) { contributions[person] = []; }
+		contributions[person].push(info);
 		total = total + 1;
 	}
 	gigsong?.results?.forEach((r: any) => {
 		if (!r?.mediaurl?.length) return;
 		addInfo(contributions,
-			r?.credit,
-			prettyType(r?.mediaurl?.includes('.mp3') ? 'audio' : 'video', r?.type),
-			r?.added,
-			r?.datetime,
-			r?.song);
+			{
+				person: r?.credit,
+				type: prettyType(r?.mediaurl?.includes('.mp3') ? 'audio' : 'video', r?.type),
+				added: r?.added,
+				datetime: r?.datetime,
+				summary: r?.song,
+				href: ts2URI(r?.datetime),
+			}
+		);
 	});
 
 	gigtext?.results?.forEach((r: any) => {
 		addInfo(contributions,
-			r?.credit,
-			prettyType('text', r?.type),
-			r?.credit_date,
-			r?.datetime,
-			(r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substr(0, 50) + '...' : '');
+			{
+				person: r?.credit,
+				type: prettyType('text', r?.type),
+				added: r?.credit_date,
+				datetime: r?.datetime,
+				summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substr(0, 50) + '...' : '',
+				href: ts2URI(r?.datetime),
+			}
+		);
 	});
 
 	gigmedia?.results?.forEach((r: any) => {
 		addInfo(contributions,
-			r?.credit,
-			prettyType('image', r?.type),
-			r?.credit_date,
-			r?.datetime,
-			(r?.image_caption) ? removeHTML(r?.image_caption)?.substr(0, 50) + '...' : '',
-			r?.image,
-			r?.image_caption);
+			{
+				person: r?.credit,
+				type: prettyType('image', r?.type),
+				added: r?.credit_date,
+				datetime: r?.datetime,
+				summary: (r?.image_caption) ? removeHTML(r?.image_caption)?.substr(0, 50) + '...' : '',
+				href: ts2URI(r?.datetime),
+				image: r?.image,
+				caption: r?.image_caption,
+			}
+		);
 	});
 
+	press?.results?.forEach((r: any) => {
+		addInfo(contributions,
+			{
+				person: r?.credit,
+				type: 'press',
+				added: r?.dtadded,
+				datetime: r?.dtpublished,
+				summary: [r?.publication, r?.title]?.filter((x: string) => x)?.join(' - ')?.substr(0, 50) + '...',
+				href: r?.url,
+			}
+		);
+	});
 	return <Loading isLoading={isLoading} >
 		<AllContributions contributions={contributions} total={total} recent={recent} label={label} options={options} />
 	</Loading>

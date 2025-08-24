@@ -406,6 +406,16 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					credit_date: g?.added,
 				})));
 			}
+			case 'press_contributions': {
+				const presses = await apiData('presses');
+				return returnResults(presses?.results?.filter((r: any) => {
+					return true
+				})?.filter((g: any) => args?.all ||
+					(g?.credit?.length && g?.dtadded?.length))?.map((g: any) => ({
+					...g,
+					credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
+				})));
+			}
 			case 'gigtext_contributions': {
 				const gigtexts = await apiData('gigtexts');
 				return returnResults(gigtexts?.results?.filter((r: any) => {
@@ -427,10 +437,12 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const gigmedia = await apiData('gigmedia_contributions', args);
 				const gigsong = await apiData('gigsong_contributions', args);
 				const gigtext = await apiData('gigtext_contributions', args);
+				const press = await apiData('press_contributions', args);
 				return {
 					gigmedia: findRecent(gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
 					gigsong: findRecent(gigsong, ['added'], makeOptions(args, 'gigsong')),
 					gigtext: findRecent(gigtext, ['credit_date'], makeOptions(args, 'gigtext')),
+					press: findRecent(press, ['dtadded'], makeOptions(args, 'press')),
 				}
 			}
 			case 'releases_by_song': {
@@ -454,7 +466,6 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const releases = await apiData('releases', args);
 				const lyrics = await returnFilteredPath('lyrics', 'href', args, false);
 				const title = lyrics?.results[0]?.title;
-				//const song = encodeURIComponent(title);
 				const live = await apiData('live_performances_by_song', title);
 				const unreleased = returnResults(performancesStatic?.results?.filter((g: HashedType) => g?.name === title && g?.lookup && g?.media));
 				const released_recordings = await apiData('released_recordings_by_song', title);

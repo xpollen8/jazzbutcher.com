@@ -409,7 +409,9 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'press_contributions': {
 				const presses = await apiData('presses');
 				return returnResults(presses?.results?.filter((g: any) => {
-						return g?.dtadded?.length;
+						// get rid of "fake" "X Gig Review" entries
+						if (!g?.body?.length && !g?.images?.length && !g?.thumb?.length) return false;
+						return true;
 					})?.filter((g: any) => args?.all || (g?.credit?.length || g?.publication?.length)
 						)?.map((g: any) => ([
 							{	// to make findable by Author

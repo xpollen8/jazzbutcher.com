@@ -412,17 +412,30 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 						// get rid of "fake" "X Gig Review" entries
 						if (!g?.body?.length && !g?.images?.length && !g?.thumb?.length && !g?.audio?.length) return false;
 						return true;
-					})?.filter((g: any) => args?.all || (g?.credit?.length || g?.publication?.length)
-						)?.map((g: any) => ([
-							{	// to make findable by Author
+					})?.filter((g: any) => args?.all || (g?.credit?.length || g?.publication?.length))?.map((g: any) => {
+						const credit = removeHTML(g?.credit);
+						const publication = removeHTML(g?.publication);
+						if (credit && publication) {
+							/*
+								we have both, so return both
+							 */
+							return [
+								{	// to make findable by Author
+									...g,
+									credit: credit,
+								},
+								{	// to make findable by Publication
+									...g,
+									credit: publication,
+								},
+							];
+						} else {
+							return {	// else return what we do have, or UNKNOWN
 								...g,
-								credit: removeHTML(g?.credit) || '-UNKNOWN-',
-							},
-							{	// to make findable by Publication
-								...g,
-								credit: removeHTML(g?.publication) || '-UNKNOWN-',
-							},
-						]))?.flat()
+								credit: credit || publication || '-UNKNOWN-',
+							};
+						}
+					})?.flat()
 				);
 			}
 			case 'gigtext_contributions': {

@@ -178,10 +178,11 @@ export const ts2URI = (ts: string): string => {
 	const day = parseInt(dayp || '', 10);
 	const hour = ts.substr(11, 2);
 	const min = ts.substr(14, 2) || '00';
-	if (!month) return `${year}.html`;
-	if (!day) return `${year}/${monthName}1.html`;	// force day = 1 if only have month
-	if (!hour) return `${year}/${monthName}${day}.html`;
-	return `${year}/${monthName}${day}_${hour}${min}.html`.replace('_0000.html', '.html');
+	const prefix = '/gigs';
+	if (!month) return `${prefix}/${year}.html`;
+	if (!day) return `${prefix}/${year}/${monthName}1.html`;	// force day = 1 if only have month
+	if (!hour) return `${prefix}/${year}/${monthName}${day}.html`;
+	return `${prefix}/${year}/${monthName}${day}_${hour}${min}.html`.replace('_0000.html', '.html');
 }
 
 /*

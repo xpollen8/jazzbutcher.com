@@ -20,7 +20,7 @@ const PressItem = ({ item }: { item: any }) => {
 			<div className={`gig_${project}`} />
 			<div className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>
 				<div className="flex flex-wrap gap-3">
-					{(article?.publication) && doItem('Publication', article.publication)}
+					{(article?.publication) && doItem('Publication', <Attribution g={article?.publication} u={`/contributions/${article?.publication}` || article?.crediturl} />)}
 					{(article?.location) && doItem('Location', article.location)}
 					{(article?.dtpublished) && doItem('Published', dateDisplay(article.dtpublished, ''))}
 					{(article?.credit) && doItem('Author', <Attribution g={article?.credit} u={`/contributions/${article?.credit}` || article?.crediturl} />)}

@@ -93,11 +93,11 @@
 	${mkPressHeader()}
 #live		if (defined(UA))
 <h1>update (pub:${${prefix}->url})</h1>
-#live			if (sql(x:update press set type="${replace(${${prefix}->type}, ;,,)}", todo="${${prefix}->todo}", album="${${prefix}->album}", thumb="${${prefix}->thumb}", images="${literalizeQuotes(${${prefix}->images})}", media="${literalizeQuotes(${${prefix}->media})}", annotation="${literalizeQuotes(${${prefix}->annotation})}", audio="${literalizeQuotes(${${prefix}->audio})}", publication="${literalizeQuotes(${${prefix}->publication})}", title="${literalizeQuotes(${${prefix}->title})}", headline="${literalizeQuotes(${${prefix}->headline})}", subhead="${literalizeQuotes(${${prefix}->subhead})}", location="${literalizeQuotes(${${prefix}->location})}", summary="${literalizeQuotes(${${prefix}->summary})}", source="${${prefix}->source}", credit="${${prefix}->credit}", dtadded="${fixDt(${${prefix}->dtadded})}", dtpublished="${fixDt(${${prefix}->dtpublished})}", dtgig="${fixDt(${${prefix}->datetime})}", person="${literalizeQuotes(${${prefix}->person})}", body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
+#live			if (sql(x:update press set type="${replace(${${prefix}->type}, ;,,)}", todo="${${prefix}->todo}", album="${${prefix}->album}", thumb="${${prefix}->thumb}", images="${literalizeQuotes(${${prefix}->images})}", media="${literalizeQuotes(${${prefix}->media})}", annotation="${literalizeQuotes(${${prefix}->annotation})}", audio="${literalizeQuotes(${${prefix}->audio})}", publication="${literalizeQuotes(${${prefix}->publication})}", issue=${literalizeQuotes(${${prefix}->issue})}", title="${literalizeQuotes(${${prefix}->title})}", headline="${literalizeQuotes(${${prefix}->headline})}", subhead="${literalizeQuotes(${${prefix}->subhead})}", location="${literalizeQuotes(${${prefix}->location})}", summary="${literalizeQuotes(${${prefix}->summary})}", source="${${prefix}->source}", credit="${${prefix}->credit}", dtadded="${fixDt(${${prefix}->dtadded})}", dtpublished="${fixDt(${${prefix}->dtpublished})}", dtgig="${fixDt(${${prefix}->datetime})}", person="${literalizeQuotes(${${prefix}->person})}" where url="${${prefix}->url}"))
 #live			endif
 #update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}";
-##live	if (sql(z:update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
-##live	endif
+#live	if (sql(z:update press set body="${literalizeQuotes(${body})}" where url="${${prefix}->url}"))
+#live	endif
 #live	endif
 	<p />
 #live	if (define(Bx[1], ))
@@ -167,6 +167,9 @@
 		<div style="margin: 3px; margin-bottom: 10px;">
 #live	if (defined(${prefix}->publication))
 			<b>Published:</b> ${${prefix}->publication}
+#live	endif
+#live	if (defined(${prefix}->issue))
+			- ${${prefix}->issue}
 #live	endif
 #live	if (defined(${prefix}->location))
 			(${${prefix}->location})
@@ -289,16 +292,17 @@ ${d}
 #define	pressItems->field[5]	dtpublished
 #define	pressItems->field[6]	album
 #define	pressItems->field[7]	publication
-#define	pressItems->field[8]	title
-#define	pressItems->field[9]	location
-#define	pressItems->field[10]	summary
-#define	pressItems->field[11]	source
-#define	pressItems->field[12]	credit
-#define	pressItems->field[13]	thumb
-#define	pressItems->field[14]	person
-#define	pressItems->field[15]	new
-#define	pressItems->field[16]	body
-#define	pressItems->field[17]	annotation
+#define	pressItems->field[8]	issue
+#define	pressItems->field[9]	title
+#define	pressItems->field[10]	location
+#define	pressItems->field[11]	summary
+#define	pressItems->field[12]	source
+#define	pressItems->field[13]	credit
+#define	pressItems->field[14]	thumb
+#define	pressItems->field[15]	person
+#define	pressItems->field[16]	new
+#define	pressItems->field[17]	body
+#define	pressItems->field[18]	annotation
 
 #define	updatePressDatabase()
 #live	if (defined(updateDatabase))
@@ -308,7 +312,7 @@ ${d}
 #live		loop (pi, 1, ${pressItems->numResults})
 #live			if (define(pr, pressItems[${pi}]))
 <h3>${pi}: update (pub:${${pr}->dtpublished}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
-#live				if (sql(x:insert IGNORE into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${literalizeQuotes(${${pr}->images})}", media="${literalizeQuotes(${${pr}->media})}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${literalizeQuotes(${${pr}->audio})}", publication="${literalizeQuotes(${${pr}->publication})}", title="${literalizeQuotes(${${pr}->title})}", headline="${literalizeQuotes(${${pr}->headline})}", subhead="${literalizeQuotes(${${pr}->subhead})}", location="${literalizeQuotes(${${pr}->location})}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->dtadded})}", dtpublished="${fixDt(${${pr}->dtpublished})}", dtgig="${fixDt(${${pr}->datetime})}", person="${literalizeQuotes(${${pr}->person})}", body="${literalizeQuotes(${${pr}->body})}"))
+#live				if (sql(x:insert IGNORE into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${literalizeQuotes(${${pr}->images})}", media="${literalizeQuotes(${${pr}->media})}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${literalizeQuotes(${${pr}->audio})}", publication="${literalizeQuotes(${${pr}->publication})}", issue="${literalizeQuotes(${${pr}->issue})}", title="${literalizeQuotes(${${pr}->title})}", headline="${literalizeQuotes(${${pr}->headline})}", subhead="${literalizeQuotes(${${pr}->subhead})}", location="${literalizeQuotes(${${pr}->location})}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->dtadded})}", dtpublished="${fixDt(${${pr}->dtpublished})}", dtgig="${fixDt(${${pr}->datetime})}", person="${literalizeQuotes(${${pr}->person})}", body="${literalizeQuotes(${${pr}->body})}"))
 #live				endif
 #live			endif
 #live		endloop
@@ -324,7 +328,7 @@ ${d}
 
 #live	endif
 
-#define	addPress(type, url, dtpublished, album, publication, title, location, summary, source, credit, datetime, thumb, person=pat_fish, dtadded, headline, subhead, images, todo, media, audio, annotation, body)
+#define	addPress(type, url, dtpublished, album, publication, issue, title, location, summary, source, credit, datetime, thumb, person=pat_fish, dtadded, headline, subhead, images, todo, media, audio, annotation, body)
 
 #live	if (defined(url))
 
@@ -358,6 +362,8 @@ ${d}
 #live			if (defIt(prefix=${pre}, url=${url}, field=album, value=${album}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=publication, value=${publication}))
+#live			endif
+#live			if (defIt(prefix=${pre}, url=${url}, field=issue, value=${issue}))
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=title, value=${title}))
 #live			endif
@@ -587,7 +593,8 @@ ${d}
 
 	${addPress(type=interview,
 		url=${jbc_press}/198503_press_goforgold3_germany.html,
-		publication=Go For Gold #3,
+		publication=Go For Gold,
+		issue=#3,
 		thumb=${jbc_images}/198503_press_goforgold3_germany_1,
 		images=${jbc_images}/198503_press_goforgold3_germany_2$$${jbc_images}/198503_press_goforgold3_germany_3$$,
 		source=https://archive.org/details/go-for-gold-03-85-luedenscheid-fanzine-851/page/n15/mode/2up?q=%22Jazz+Butcher%22,
@@ -723,8 +730,8 @@ ${d}
 #		media=${jbc_images}/20210905/20210905_pat_interview.docx;;Extended text document,
 		audio=https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20241128_DaveBarker_interview_counterforce.mp3;;The Interview,
 		publication=The Counterforce,
-		title=Episode #60 - Dave Barker,
-		headline=Dave Barker Audio interview,
+		issue=Episode #60,
+		title=Dave Barker Audio interview,
 		credit=Aug Stone,
 		dtpublished=2024-11-28,
 		dtadded=2025-01-25)}
@@ -745,8 +752,8 @@ ${d}
 		media=${jbc_images}/20210905/20210905_pat_interview.docx;;Extended text document,
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20210905_interview_PaulMcGuire_TheFunhouse88.mp3;;The Interview,
 		publication=The Funhouse,
-		title=Episode #88,
-		headline=Pat Fish Audio interview,
+		issue=Episode #88,
+		title=Pat Fish Audio interview,
 		credit=Paul McGuire,
 		dtpublished=2021-09-05,
 		dtadded=2023-09-23)}
@@ -888,8 +895,9 @@ ${d}
 		images=${jbc_images}/19860718/19860718_press_backgroundmediumproductions_2,
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/19860718_JazzButcher_interview_backgroundmediumproductions.mp3;;The Interview,
 		publication=Background Medium Productions,
+		issue=#2,
 		title=Background Noise Productions,
-		headline=Interview #2,
+		headline=Interview,
 		subhead=The Jazz Butcher - July 18, 1986,
 		credit=JC,,
 		source=https://happymediumproductions.weebly.com/interview-2---the-jazz-butcher.html,
@@ -915,7 +923,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=gig,
 		url=${jbc_press}/198306_all_that_thinks_and_moves_2.html,
-		publication=All That Thinks And Moves #2,
+		publication=All That Thinks And Moves,
+		issue=#2,
 		thumb=${jbc_images}/198306/198306_all_that_thinks_and_moves_2;;David Whittemore,
 		credit=Neil Cooper,
 		source=https://twitter.com/NeilCooper1,
@@ -1207,7 +1216,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=interview,
 		url=${jbc_press}/19860808_press_nerve.html,
 		thumb=${jbc_images}/19860808/19860808_press_nerve,
-		publication=Nerve #27,
+		publication=Nerve,
+		issue=#27,
 		title=the joy of BUTCHERY,
 		location=Toronto\, Ontario\, Canada,
 		credit=Helen Lee,
@@ -1841,7 +1851,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/20170320_interview_nearperfectpitch_35.html,
 		audio=${jbc_audio}/20170320/20170320_JazzButcher_NearPerfectPitch35_Interview.mp3;;The Interview,
 		publication=Near Perfect Pitch podcast,
-		title=Episode #35,
+		issue=Episode #35,
 		dtpublished=2017-03-20,
 		credit=Dara Mottahed,
 		source=http://www.nearperfectpitch.com/,
@@ -1854,7 +1864,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/20160509_interview_nearperfectpitch_1.html,
 		audio=${jbc_audio}/20160509/20160509_JazzButcher_NearPerfectPitch_Interview.mp3;;The Interview,
 		publication=Near Perfect Pitch podcast,
-		title=Episode #1,
+		issue=Episode #1,
 		dtpublished=2016-05-09,
 		credit=Dara Mottahed,
 		source=http://www.nearperfectpitch.com/,
@@ -1989,7 +1999,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/92front_center.html,
 		credit=Jennifer Brown,
 		thumb=${jbc_images}/19920508/19920508_press_frontcenter,
-		publication=The Record Store Up Front And Center Issue #5,
+		publication=The Record Store Up Front And Center,
+		issue=Issue #5,
 		title=Treading the line between dumb and stupid,
 		location=Waterloo\, Canada,
 		dtadded=1996-08-19,
@@ -2011,7 +2022,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Chris Fish,
 		thumb=${jbc_images}/1990/1990_press_foaf_cover,
 		images=${jbc_images}/1990/1990_press_foaf_1$$${jbc_images}/1990/1990_press_foaf_2$$${jbc_images}/1990/1990_press_foaf_3$$,
-		publication=Far Out And Fishy Issue #4,
+		publication=Far Out And Fishy,
+		issue=Issue #4,
 		location=UK,
 		dtadded=1994-04-15,
 		dtpublished=1990)}
@@ -2103,7 +2115,8 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=interview;preshow,
 		url=${jbc_press}/88newsletter.html,
-		publication=The Newsletter Vol1 #7,
+		publication=The Newsletter,
+		issue=Vol1 #7,
 		thumb=${jbc_images}/fishco2;;;;;;,
 		title=Jazz Butcher Vs. New Community,
 		credit=Eric Beaumont,
@@ -2127,7 +2140,8 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=interview,
 		url=${jbc_press}/86nsb.html,
 		images=/images/198609_press_nonstopbanter_1_duval;;James Duval;;;;2025-08-14$$/images/198609_press_nonstopbanter_2_duval$$/images/198609_press_nonstopbanter_3_duval$$,
-		publication=Non*Stop Banter #9,
+		publication=Non*Stop Banter,
+		issue=#9,
 		title=Life According to the Jazz Butcher,
 		headline=FRUITCAKE SOCIOLOGY 101,
 		subhead=Life According to the Jazz Butcher,
@@ -2152,7 +2166,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Josh,
 		thumb=${jbc_images}/198503/198503_abstract5,
 		publication=Abstract Magazine,
-		title=Issue #5,
+		issue=Issue #5,
 		dtadded=1996-08-19,
 		dtpublished=1985-03)}
 
@@ -2169,7 +2183,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=S.J. Hurley,
 		title=THE JAZZ BUTCHER,
 		headline=TT the Bears Place - Boston,
-		publication=Boston Rock #91,
+		publication=Boston Rock,
+		issue=#91,
 		location=Boston\, Massachusettes\, USA,
 		datetime=1988-06-03,
 		dtpublished=1988-06-03)}
@@ -2368,7 +2383,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/19860902_press_mcgilldaily.html,
 		credit=Jenn Allen,
 		source=https://archive.org/details/McGillLibrary-mcgill-daily-v76-september-02-1986-12971/page/n7/mode/2up,
-		publication=The McGill Daily #76,
+		publication=The McGill Daily,
+		issue=#76,
 		title=The Jazz Butcher,
 		headline=Bloody Nonsense,
 		subhead=(Polygram),
@@ -2765,7 +2781,8 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=profile,
 		url=${jbc_press}/94takeover.html,
-		publication=The Big Takeover Issue #34,
+		publication=The Big Takeover Issue,
+		issue=#34,
 		title=Excerpt from interview with the band Belly,
 		summary=JBC is favourably mentioned in an interview with Belly,
 		dtadded=1996-08-19,
@@ -2900,7 +2917,8 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/20171020_magic_revue_206.html,
 		credit=Cédric Rouquette,
-		publication=Magic Revue #206,
+		publication=Magic Revue,
+		issue=#206,
 		thumb=${jbc_images}/20171020/20171020_magic_revue_206;;David Whittemore,
 		location=France,
 		dtpublished=2017-10-20,
@@ -2909,7 +2927,8 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=album, album=fire_wasted,
 		url=${jbc_press}/201710_press_abus.html,
 		credit=Bertrand Lamargelle,
-		publication=Abus Dangereux #144,
+		publication=Abus Dangereux,
+		issue=#144,
 		title=THE JAZZ BUTCHER,
 		headline=The Wasted Years,
 		subhead=FIRE RECORDS,
@@ -2923,7 +2942,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Bertrand Lamargelle,
 		images=${jbc_images}/201604/201604_press_abus_inside,
 		media=${jbc_images}/201604/201604_press_abus_transcription.doc;;The original french .doc of this interview,
-		publication=Abus Dangereux #138,
+		publication=Abus Dangereux,
+		issue=#138,
 		thumb=${jbc_images}/201604/201604_press_abus_cover,
 		location=France,
 		dtadded=2017-05-07,
@@ -2933,7 +2953,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/198902_press_howl_germany.html,
 		images=${jbc_images}/198902_press_howl_germany_1$$${jbc_images}/198902_press_howl_germany_2,
 		credit=Thomas Lasarzik,
-		publication=Howl #2,
+		publication=Howl,
+		issue=#2,
 		title=The Jazz Butcher,
 		headline=It's a sad and beautiful world,
 		location=Munich\, Germany,
@@ -3077,7 +3098,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=/press/20200417_interview_painefull.html,
 		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20200417_2018_The+Paine+Full+Podcast...+with+Pat+Fish.mp3;;The Interview,
 		publication=The Paine Full Podcast,
-		title=Episode #2,
+		issue=Episode #2,
 		headline=Pat Fish,
 		dtpublished=2020-04-17,
 		dtadded=2023-11-08,
@@ -3106,8 +3127,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=/press/20181209_interview_frenchspurs.html,
 		audio=${jbc_audio}/20181209/20181209_FrenchSpurs1_mixcloud_PatFishInterview.mp3;;The Interview,
 		publication=Retropopic podcast,
-		title=Episode #206,
-		headline=EARLY DAYS TO JAZZ BUTCHER'S FIRST RELEASE 'IN BATH OF BACON',
+		issue=Episode #206,
+		title=EARLY DAYS TO JAZZ BUTCHER'S FIRST RELEASE 'IN BATH OF BACON',
 		dtpublished=2018-12-09,
 		credit=FrehcnSpurs1,
 		source=https://www.mixcloud.com/FrenchSpurs1/retropopic-206-pat-fish-early-days-jazz-butcher-to-dan-tracey-2018-benefit/,

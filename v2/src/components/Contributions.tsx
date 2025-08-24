@@ -142,7 +142,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				type: 'press',
 				added: r?.dtadded,
 				datetime: r?.dtpublished,
-				summary: [r?.publication, r?.title]?.filter((x: string) => x)?.join(' - ')?.substr(0, 50) + '...',
+				summary: [r?.publication, r?.title, r?.headline]?.filter((x: string) => x)?.join(' - ')?.substr(0, 50) + '...',
 				href: r?.url,
 			}
 		);

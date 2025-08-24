@@ -14,13 +14,14 @@ const PressItem = ({ item }: { item: any }) => {
 		const projects = ['wilson','sumo','eg'];
 		const project = (projects.filter((pro: string) => types?.includes(pro)) || [])[0] || '';
 		const doItem = (label: string, value?: string | React.ReactNode) => {
-			return <span className="break-keep outline outline-1 outline-cyan-500"> <b>{label}</b> {value} </span>
+			return <span className="break-keep outline outline-1 outline-cyan-500 pr-1"> <b>{label}</b> {value} </span>
 		}
 		return (<>
 			<div className={`gig_${project}`} />
 			<div className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>
 				<div className="flex flex-wrap gap-3">
 					{(article?.publication) && doItem('Publication', <Attribution g={article?.publication} u={`/contributions/${encodeURIComponent(article?.publication)}` || article?.crediturl} />)}
+					{(article?.issue) && doItem('Issue', article.issue)}
 					{(article?.location) && doItem('Location', article.location)}
 					{(article?.dtpublished) && doItem('Published', dateDisplay(article.dtpublished, ''))}
 					{(article?.credit) && doItem('Author', <Attribution g={article?.credit} u={`/contributions/${article?.credit}` || article?.crediturl} />)}

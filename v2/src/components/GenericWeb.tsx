@@ -34,7 +34,7 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 						// auto-link Fishy Mansions Archives
 						if (FMAraw) return linkInternal(`/fma/${FMAraw[0]}`, g);
 						// only auto link to there's a chance it was a dated gig* thing
-						if (d) return linkInternal(`/contributions/${cleanG}`, cleanG);
+						if (d && cleanG) return linkInternal(`/contributions/${cleanG}`, cleanG);
 						return cleanG;
 					}
 				}

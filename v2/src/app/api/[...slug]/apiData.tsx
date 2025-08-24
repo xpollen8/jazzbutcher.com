@@ -408,13 +408,20 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			}
 			case 'press_contributions': {
 				const presses = await apiData('presses');
-				return returnResults(presses?.results?.filter((r: any) => {
-					return true
-				})?.filter((g: any) => args?.all ||
-					(g?.credit?.length && g?.dtadded?.length))?.map((g: any) => ({
-					...g,
-					credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
-				})));
+				return returnResults(presses?.results?.filter((g: any) => {
+						return g?.dtadded?.length;
+					})?.filter((g: any) => args?.all || (g?.credit?.length || g?.publication?.length)
+						)?.map((g: any) => ([
+							{	// to make findable by Author
+								...g,
+								credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
+							},
+							{	// to make findable by Publication
+								...g,
+								credit: (g?.publication?.length) ? removeHTML(g?.publication) : '-UNKNOWN-',
+							},
+						]))?.flat()
+				);
 			}
 			case 'gigtext_contributions': {
 				const gigtexts = await apiData('gigtexts');

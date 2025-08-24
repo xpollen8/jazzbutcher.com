@@ -22,9 +22,9 @@ const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) =>
 		return (sortOrder) ? 'sortAsc' : 'sortDesc';
 	}
 	return <>
-		<table className="table-fixed smalltext border w-full">
+		<table className="table-auto smalltext border w-full">
 			<thead className="text-end font-bold p-2 border-b">
-					<th onClick={(e) => setHeader(e, 'person')} className={`text-start font-bold p-2 border-b ${guessClass('person')}`}> Credited </th>
+					<th onClick={(e) => setHeader(e, 'person')} className={`w-1/4 text-start font-bold p-2 border-b ${guessClass('person')}`}> Credited </th>
 					<th onClick={(e) => setHeader(e, 'total')} className={guessClass('total')}> Total </th>
 					<th onClick={(e) => setHeader(e, 'image')} className={guessClass('image')}> Images </th>
 					<th onClick={(e) => setHeader(e, 'text')} className={guessClass('text')}> Texts </th>
@@ -36,7 +36,7 @@ const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) =>
 			{data?.map((obj: HashedType, key: number) => {
 				const { person, total, image, text, av, min, max } = obj;
 				return <tr key={key} className="odd:bg-gray-100 text-end">
-					<td className="pl-2 text-start border-b"> <Link href={`/contributions/${encodeURIComponent(person)}`}><b>{truncate(person, 20)}</b></Link> </td>
+					<td className="pl-2 text-start border-b"> <Link href={`/contributions/${encodeURIComponent(person)}`}><b>{truncate(person, 40)}</b></Link> </td>
 					<td className="text-end border-b"> {total} </td>
 					<td className="text-end border-b"> {image} </td>
 					<td className="text-end border-b"> {text} </td>

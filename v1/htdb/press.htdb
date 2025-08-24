@@ -1908,7 +1908,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=(& tales),
 		media=${jbc_images}/200505_apollox_PatFishCrocodileTearsInterview.doc;;Andrew's original .doc,
 		location=UK,
-		credit=${brooksbank},
+		credit=Andrew Brooksbank,
 		dtadded=2017-07-30,
 		dtpublished=2005-05)}
 
@@ -1919,7 +1919,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=An Interview,
 		media=${jbc_images}/1995_apollox_AlexGreenInterview.doc;;Andrew's original .doc,
 		location=UK,
-		credit=${brooksbank},
+		credit=Andrew Brooksbank,
 		dtadded=2017-07-30,
 		dtpublished=1995)}
 
@@ -1930,7 +1930,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=(a slight return),
 		summary=A lengthy Pat & Max tag-team interview,
 		location=UK,
-		credit=${brooksbank},
+		credit=Andrew Brooksbank,
 		dtpublished=2002-04)}
 
 	${addPress(type=interview,
@@ -1938,7 +1938,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Apollox Magazine,
 		title=Apollox shares a conversation with The Jazz Butcher over a Free Lunch,
 		location=UK,
-		credit=${brooksbank},
+		credit=Andrew Brooksbank,
 		dtpublished=2003)}
 
 	${addPress(type=interview;profile,
@@ -2852,13 +2852,13 @@ subhead=(20 December 1957 – 5 October 2021),
 			
 	${addPress(type=gig,
 		url=${jbc_press}/20191024_brooksbank_manchester.html,
-		credit=${brooksbank},
+		credit=Andrew Brooksbank,
 		publication=Torched Magazine,
 		source=https://torchedmagazine.com/2019/10/28/bauhaus-historian-andrew-j-brooksbank-reviews-david-j-pat-fish-live-at-the-manchester-academy/,
 		title=REGULAR\, ENGLISH SPEAKING GENTLEMEN…,
 		headline=DAVID J / PAT FISH (THE JAZZ BUTCHER),
 		subhead=MANCHESTER ACADEMY 3,
-		images=${jbc_images}/20191024/20191024_brooksbank_manchester_davidj;;${brooksbank}$$${jbc_images}/20191024/20191024_brooksbank_manchester_davidj_karel$$,
+		images=${jbc_images}/20191024/20191024_brooksbank_manchester_davidj;;Andrew Brooksbank$$${jbc_images}/20191024/20191024_brooksbank_manchester_davidj_karel$$,
 		location=Manchester\, England,
 		dtpublished=2019-10-24 19:30:00,
 		datetime=2019-10-24 19:30:00)}
@@ -10025,7 +10025,7 @@ A project with Dark Flowers’ Paul Statham (B Movie, 100 Men) has spawned <i>Th
 	<p />
 	Knocked out during sound-check earlier, the trio trialled Sinatra’s <i>classic It Was a Very Good Year</i> authentically and stylishly reproduced as this evening’s set closer. David, resplendent in Fedora, croons his way through Ervin Drakes ’61 original, performed initially by Bob Shane with the Kingston Trio but its Sinatra’s 1966 interpretation that’s recreated, it struck me whilst watching this particular performance how suited to this style David actually is. Some of his best work has seen him delivering almost spoken word set to a collage of soundscapes, not dissimilar to the arrangement of <i>It Was a Very Good Year</i>. David J has recently suggested that <i>Missive to an Angel from the Halls of Infamy and Allure</i> could be his swansong, his final solo album. We could be at a crossroad.	
 	<p />
-	<b>© ${brooksbank}</b>	<p />
+	<b>© Andrew J. Brooksbank</b>	<p />
 	)})}
 	${jbc_footer}
 #live	endif
@@ -17542,7 +17542,7 @@ Dave's solo work for Situation Two.
 </div>
 
 <div class="iview_outro">
-© ${brooksbank} for Apollox 1995
+© Andrew J. Brooksbank for Apollox 1995
 	<p />
 Amendment
 Contrary to the above statement, I first met Alan two days after that fateful rendezvous with mister Green. Ushered into a dank basement flat in Colwyn road, Northampton, I became the delighted witness to a scene straight out of Kerouac's 'The Subterraneans'. There was the imposing figure of Alan Moore holding forth in the center of the small room, the walls of which were covered with reversed posters, picture side facing the wall(!), proclaiming that "Old Gangsters Never Die!" Whilst Alex blew smoky ribbons of saxophone sound , a sandy haired angelic looking boy known as 'Seaweed' scratched at a cheap electric guitar and the strange and inscrutable Doctor Pickle a.k.a. Mr. Liquorice ran skeletal fingers over the keys of an ancient Wurlitzer. Various small time criminals and denizens of the local underground art scene nodded approvingly in the sepulchral corners. I also nodded and eventually joined in.

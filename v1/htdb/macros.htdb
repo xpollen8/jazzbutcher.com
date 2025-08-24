@@ -1274,13 +1274,11 @@ font.load().then(function () {
 #
 #       conspirators
 #
-#define	person_andrew_j_brooksbank	${brooksbank}
 #define	person_terry_walpole	${terry}
 #define	person_steve_beswick	Steve Beswick;;/people/steve_beswick.html
 
 #define	butch	The Butcher
 #define	terry	Terry Walpole
-#define	brooksbank	Andrew J. Brooksbank
 #define	pat		${linkPerson(href=https://patfish.com, name=Pat Fish)}
 #define	pat_fish		${pat}
 #define	solo	${pat}

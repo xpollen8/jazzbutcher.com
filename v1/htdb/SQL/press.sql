@@ -5,7 +5,7 @@ drop table if exists press;
 create table press (
 	press_id mediumint unsigned NOT NULL auto_increment,
 	url varchar(200) NOT NULL,
-	type varchar(20),
+	type varchar(200),
 	person varchar(50) NOT NULL,
 	dtadded datetime,
 	dtpublished datetime NOT NULL,

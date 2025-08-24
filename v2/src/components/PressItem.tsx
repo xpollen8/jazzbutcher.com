@@ -23,7 +23,7 @@ const PressItem = ({ item }: { item: any }) => {
 					{(article?.publication) && doItem('Publication', article.publication)}
 					{(article?.location) && doItem('Location', article.location)}
 					{(article?.dtpublished) && doItem('Published', dateDisplay(article.dtpublished, ''))}
-					{(article?.credit) && doItem('Author', <Attribution g={article?.credit} u={article?.crediturl} />)}
+					{(article?.credit) && doItem('Author', <Attribution g={article?.credit} u={`/contributions/${article?.credit}` || article?.crediturl} />)}
 					{(article?.source) && doItem('Source', <Link href={article.source}>{parseDomain(article.source)}</Link>)}
 					{types.map((t: string, key: number) => (<div key={key}>
 							{(t === 'kit') && doItem('Category', 'Press Kit/Biography')}

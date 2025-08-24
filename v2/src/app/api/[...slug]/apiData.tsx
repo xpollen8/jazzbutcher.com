@@ -245,7 +245,7 @@ const matchesPerformerField = (type: string, candidate: HashedType, value: strin
 const apiData = async (path: string, args?: any, formData?: any): Promise<HashedType> => {
 	if (typeof args === 'string') {
 		// decode any encoded JSON object being passed in as args
-		args = decodeURI(args);
+		args = decodeURIComponent(args);
 		// if args is now an object, parse out
 		if (args?.startsWith('{')) { args = JSON.parse(args); }
 	}

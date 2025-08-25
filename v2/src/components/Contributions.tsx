@@ -25,9 +25,11 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 			}
 		});
 		return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
+			{(!!photos?.length) ? <PhotoSet title=<Link href={ts2URI(datetime)}>{datetime?.substr(0, 10)}: {type}</Link>  photos={photos} /> : 
+			<>
 			<Link className="monospace" href={href} >{datetime?.substr(0, 10)}</Link> {pluralize(count, type, undefined, true)} {dateAgo(added)} {summary && `"${summary}"`}
-			<PhotoSet title={(!!photos?.length) ? `Images from ${datetime?.substr(0, 10)}` : ''} photos={photos}
-			/>
+			</>}
+			{/*<PhotoSet title={(!!photos?.length) ? <Link href={ts2URI(datetime)}>{datetime?.substr(0, 10)}: {type}</Link> : ''} photos={photos} />*/}
 		</div>
 	}
 
@@ -73,7 +75,7 @@ const prettyType = (type: string, t?: string) => {
 	}
 	if (type === 'text' && t === 'bootlegger') return 'taped the show';
 	if (type === 'text' && t === 'recording') return 'bootleg description';
-	if (t === 'pix') return 'photo from live gig';
+	if (t === 'pix') return 'event photo';
 	if (t === 'review') return 'gig review';
 	if (t === 'selfreview') return 'Pat gig review';
 	return t + ' ' + type;

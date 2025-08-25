@@ -86,7 +86,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	if (!data) return;
 	const { gigmedia, gigtext, gigsong, press } = data || {};
 	const contributions: HashedType = {};
-	const recent = gigmedia?.results[0]?.credit_date;
+	const recent = [ gigmedia?.results[0]?.credit_date, gigsong?.results[0]?.added, gigtext?.results[0]?.credit_date, press?.results[0]?.dtadded]?.sort((a: any, b: any) => b?.localeCompare(a))[0];
 	let total = 0;
 
 	const addInfo = (contributions: HashedType, info: any) => {

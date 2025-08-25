@@ -121,7 +121,7 @@ export const dateDisplay = (dt?: string, sep: string = ' - ') => {
 	return <span className={`date ${unknownYear}`} />
 }
 
-export const dateAgo = (dt?: string, sep: string = ' - ') => {
+export const dateAgo = (dt?: string, sep?: string = ' - ', prefix?: string = '') => {
 	const [orig, iy,im,id,ihh,imm,iss, unknownYear, unknownMonth, unknownDay]: any = parseDate(dt) || [];
 	if (!dt) return;
 	if (!unknownYear) {
@@ -133,7 +133,7 @@ export const dateAgo = (dt?: string, sep: string = ' - ') => {
 		const prettyAgo = moment.utc(compare).startOf('hour').fromNow();
 		return (<>
 			{sep}
-			<span className={`smalltext`}>({prettyAgo})</span>
+			<span className={`smalltext`}>({prefix}{prettyAgo})</span>
 		</>)
 	}
 }

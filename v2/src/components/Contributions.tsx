@@ -150,7 +150,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		);
 	});
 	return <Loading isLoading={isLoading} >
-		<AllContributions contributions={contributions} total={total} recent={recent} label={label} options={options} />
+		{(!!total) && <AllContributions contributions={contributions} total={total} recent={recent} label={label} options={options} />}
 	</Loading>
 }
 

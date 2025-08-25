@@ -44,12 +44,12 @@ const Conspirator = ({ params }: { params?: any }) => {
 	return <>
 		<Header section="conspirators" title={name} />
 		<main>
-			<Tag>{name}</Tag>
-			This is a work in progress..
+			{/*<Tag>{name}</Tag>
+			This is a work in progress.. */}
 			<Loading isLoading={isLoading} >
+				<Pictures pictures={pictures} name={name} />
 				<Player results={performer} />
 				<Act results={support} />
-				<Pictures pictures={pictures} name={name} />
 				<Contributions label={`Website contributions by ${name}`} options={{
 					all: true,
 					filter: { field: 'credit', value: name },

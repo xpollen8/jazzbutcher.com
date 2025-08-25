@@ -121,7 +121,7 @@ export const dateDisplay = (dt?: string, sep: string = ' - ') => {
 	return <span className={`date ${unknownYear}`} />
 }
 
-export const dateAgo = (dt?: string, sep?: string = ' - ', prefix?: string = '') => {
+export const dateAgo = (dt?: string, sep: string = ' - ', prefix: string = '') => {
 	const [orig, iy,im,id,ihh,imm,iss, unknownYear, unknownMonth, unknownDay]: any = parseDate(dt) || [];
 	if (!dt) return;
 	if (!unknownYear) {

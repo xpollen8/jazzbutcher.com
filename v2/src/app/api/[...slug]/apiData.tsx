@@ -265,8 +265,6 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			/*
 				live db lookups
 			 */
-			case 'release_audio_by_project':
-			case 'audio_by_project':
 			case 'release_video_by_project':
 			case 'live_video_by_project':
 			case 'presses_for_admin':
@@ -319,6 +317,16 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			/*
 				more complex lookups
 			 */
+			case 'audio_by_project': {
+				const gigs = gigsStatic?.results?.filter((g: HashedType) => g?.extra?.includes(args));
+				return joinOn("datetime", gigs || [], gigsongsStatic?.results?.filter((gs: HashedType) => gs?.mediaurl?.length) || []);
+			}
+			case 'release_audio_by_project': {
+				// "select * from performance where ? and category='release' and media IS NOT NULL group by lookup, song order by lookup, ordinal
+				return returnResults(performancesStatic?.results
+					?.filter((p: HashedType) => p?.project === args && p?.category === 'release' && p?.media?.length)
+					?.sort((a: HashedType, b: HashedType) => a?.lookup?.localeCompare(b?.lookup) || a?.ordinal - b?.ordinal));
+			}
 			case 'audio': {
 				// select * from media where type='audio' order by project, collection, ordinal
 				return returnResults(mediasStatic?.results

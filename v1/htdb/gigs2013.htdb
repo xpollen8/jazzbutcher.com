@@ -326,7 +326,7 @@
 	${gigHeader(
 		photosets= /images/20131010/20131010_martinreed_1.jpg$$
 			/images/20131010/20131010_martinreed_2.jpg$$
-			Martin Reed
+			Martin Reed;;;;2013-10-13
 	)}
 
 #define	Oct11_2000.html()

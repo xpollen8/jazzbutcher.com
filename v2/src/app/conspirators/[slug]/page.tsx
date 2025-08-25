@@ -9,6 +9,7 @@ import { GigSearchResults } from '@/components/GigSearch';
 import { notFound } from 'next/navigation';
 import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
+import Contributions from '@/components/Contributions';
 import useConspirator from '@/lib/useConspirator';
 
 const Pictures = ({ pictures, name }: any) => {
@@ -49,6 +50,10 @@ const Conspirator = ({ params }: { params?: any }) => {
 				<Player results={performer} />
 				<Act results={support} />
 				<Pictures pictures={pictures} name={name} />
+				<Contributions label={`Website contributions by ${name}`} options={{
+					all: true,
+					filter: { field: 'credit', value: name },
+				}} />
 			</Loading>
 		</main>
 		<Footer />

@@ -21,6 +21,19 @@ type NewsItemType = {
 const recentNews = [
 	{
 		subject: `Website/search improvement`,
+		dt: '2025-08-25',
+		category: 'maintenance',
+		credit: 'David Whittemore',
+		body: <>
+			Want to know who played when? Want to see what your favorite Conspirator looks like?
+			I finally updated the <Link href={`/conspirators`}><b>Conspirators</b></Link> section.
+			<p />
+			Now, I need to tag more photos so that they get picked up and displayed.
+			<p />
+		</>
+	},
+	{
+		subject: `Website/search improvement`,
 		dt: '2025-08-15',
 		category: 'maintenance',
 		credit: 'David Whittemore',

@@ -9,11 +9,11 @@ import PhotoSet from '@/components/PhotoSet';
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
-		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, summary: (a?.type?.includes('photo') || a?.type?.includes('image')) ? '' : a?.summary });
+		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: (a?.type?.includes('photo') || a?.type?.includes('image')) ? '' : a?.summary });
 		return { ...acc, [key]: (acc[key] || 0) + 1};
 	}, {});
 
-	const useData = Object.keys(uniques)?.map((x: any) => ({ count: uniques[x], ...JSON.parse(x) }))?.sort((a: any, b: any) => ('' + b?.added || '').localeCompare(a?.added || ''));
+	const useData = Object.keys(uniques)?.map((x: any) => ({ count: uniques[x], ...JSON.parse(x) }))?.sort((a: any, b: any) => (b?.added || '').localeCompare(a?.added || ''));
 
 	const showData = (x: any, key: number) => {
 		const { count, type, datetime, added, summary, href } = x;
@@ -21,15 +21,15 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 		const photos = (!typeIsImage) ? [] : contributions?.filter((c: any) => c?.type == type && c?.datetime === datetime)?.map((c: any) => {
 			return {
 				src: c?.image,
-				alt: removeHTML(c?.caption),
+				added: c?.added,
+				alt: removeHTML(c?.caption) || '',
 			}
 		});
 		return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
-			{(!!photos?.length) ? <PhotoSet title=<Link href={ts2URI(datetime)}>{datetime?.substr(0, 10)}: {type}</Link>  photos={photos} /> : 
+			{(!!photos?.length) ? <PhotoSet title=<Link href={ts2URI(datetime)}>{datetime?.substr(0, 10)}: {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>  photos={photos?.filter((f: any) => f?.added == added)} /> : 
 			<>
-			<Link className="monospace" href={href} >{datetime?.substr(0, 10)}</Link> {pluralize(count, type, undefined, true)} {dateAgo(added)} {summary && `"${summary}"`}
+			<Link className="monospace" href={href} >{datetime?.substr(0, 10)}</Link> {pluralize(count, type, undefined, true)} {summary && `"${summary}"`} {dateAgo(added,' - ',`added: ${added} - `)}
 			</>}
-			{/*<PhotoSet title={(!!photos?.length) ? <Link href={ts2URI(datetime)}>{datetime?.substr(0, 10)}: {type}</Link> : ''} photos={photos} />*/}
 		</div>
 	}
 

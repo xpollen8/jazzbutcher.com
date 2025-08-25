@@ -1106,8 +1106,7 @@ export const AutoLinkSong = (str?: string) => {
 
 export const AutoLinkPlayer = (str?: string) => {
   if (!str?.length) return;
-	const pattern = /\[\[person:(.*?)\]\]/;
-	const match = str.match(pattern);
+	const match = str.match(/\[\[(?:act|person):(.*?)\]\]/);
 	if (match) {
 		const lookup = match[1]?.replace("'", '').replace('.', '');
 		const found = lookup && mapPerformers[lookup];
@@ -1119,8 +1118,7 @@ export const AutoLinkPlayer = (str?: string) => {
 
 export const AutoLinkAct = (str?: string) => {
   if (!str?.length) return;
-	const pattern = /\[\[act|person:(.*?)\]\]/;
-	const match = str.match(pattern);
+	const match = str.match(/\[\[(?:act|person):(.*?)\]\]/);
 	if (match) {
 		const lookup = match[1]?.replace("'", '')?.replace('.', '');
 		const found = lookup && mapActs[lookup];

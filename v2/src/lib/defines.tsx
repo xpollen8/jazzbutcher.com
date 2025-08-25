@@ -719,7 +719,7 @@ export const yuck = <span className="recording_quality">Not so good quality...</
 export const mt = <span className="recording_generation">Master Copy</span>;
 
 export const mapActs: {[key: string]: string} = {
-	'Curtis_E_Johnson': 'curt',
+	'Curtis_E._Johnson': 'curt',
 	'David_J': 'dj',
 	'E-Man': 'curt_eman',
 	'Joe_Woolley': 'joe_woolley',
@@ -1119,7 +1119,7 @@ export const AutoLinkPlayer = (str?: string) => {
 
 export const AutoLinkAct = (str?: string) => {
   if (!str?.length) return;
-	const pattern = /\[\[act:(.*?)\]\]/;
+	const pattern = /\[\[act|person:(.*?)\]\]/;
 	const match = str.match(pattern);
 	if (match) {
 		const lookup = match[1]?.replace("'", '')?.replace('.', '');

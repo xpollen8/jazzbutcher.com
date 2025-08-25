@@ -7,7 +7,7 @@ import { removeHTML } from '@/components/GenericWeb';
 import { Credit } from '@/components/GenericWeb';
 
 const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_date }: {
-	title?: string, photos: any[], pdf?: string, description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string
+	title?: string | React.ReactNode, photos: any[], pdf?: string, description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string
 }) => <>
 	{(title) && <Tag> {title} </Tag>}
 	{(description || credit || credit_url || pdf) && <div className="listItem">

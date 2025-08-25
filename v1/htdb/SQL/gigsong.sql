@@ -2488,7 +2488,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1994-04-08 00:00:00','set',NULL,1,6,'Mr. Odd
 INSERT INTO `gigsong` VALUES (NULL,'1994-04-08 00:00:00','set',NULL,1,7,'Sister Death',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1994-04-08 00:00:00','set',NULL,1,8,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1994-04-08 00:00:00','set',NULL,1,9,'She\'s On Drugs',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'http://www.adjective.com/audio/eg/1994Jun1.mp3','David Whittemore','http://davidwhittemore.com',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'http://www.adjective.com/audio/eg/1994Jun1.mp3','David Whittemore','http://davidwhittemore.com',NULL,"2013-02-01");
 INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',NULL,1,1,'Tribute To Asian Youth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',NULL,1,2,'Mitropa Express',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1994-06-01 00:00:00','set',NULL,1,3,'Indianapolis 500 Go!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

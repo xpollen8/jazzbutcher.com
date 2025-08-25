@@ -18,7 +18,7 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 	{(!!photos?.length) && <div className="masonry listItem">
 		{photos.map((w: any, key: number) => {
 			if (!w) return;
-			const { href, src, alt, credit, credit_url, credit_date, body, location } = w;
+			const { href, src, alt, credit, credit_url, credit_date, body, location, caption } = w;
 			const { image, thumb } = parseImage(src, 250);
 			const useCredit = removeHTML(credit);
 			const useURL = (useCredit) ? `/contributions/${useCredit}` : credit_url;
@@ -27,6 +27,7 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 				{(image) && <Link href={useLink}>{(thumb) && <Image className="rounded-sm" key={key} unoptimized src={thumb} width={350} height={350} alt={alt} />}</Link>}
 				<div className="text-sm font-light">
 				{(credit_date?.length === 4) && <div>{credit_date}</div>}
+				{(caption) && <div className="px-2">{removeHTML(caption)}</div>}
 				{(alt) && <div className="px-2">{alt}</div>}
 				{(body) && <div className="px-2">&quot;<i>{body}</i>&quot;</div>}
 				{(location) && <div className="px-2">{location}</div>}

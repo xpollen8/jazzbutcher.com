@@ -1,40 +1,36 @@
 "use client"
 
-import Image from 'next/image';
-import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
-import { people, expand, mapPerformers, AutoLinkPlayer } from '@/lib/defines';
-import { type HashedType, imageThumb, imageFull, parseCaptionsSourcesEtc} from '@/lib/utils';
-import { Credit } from '@/components/GenericWeb';
-import useGigs from '@/lib/useGigs';
+import { people } from '@/lib/defines';
+import { ts2URI } from '@/lib/utils';
 import { GigSearchResults } from '@/components/GigSearch';
 import { notFound } from 'next/navigation';
 import Loading from '@/components/Loading';
-
+import PhotoSet from '@/components/PhotoSet';
 import useConspirator from '@/lib/useConspirator';
 
-const Pictures = (results?: HashedType) => {
-	return results && <></>;
-	/*
-	const images = parseCaptionsSourcesEtc(props?.str);
-	return images?.map((img: any, key: number) => {
-		const [ src, credit, crediturl, creditdate, caption ] = img;
-		const useSrc = imageThumb(src);
-		return <div key={key} className="listItem w-64">
-			<Link href={imageFull(src)}><Image src={imageThumb(src)} width={250} height={250} alt='image' /></Link>
-			{(caption) && <span>{caption}</span>}
-			<br />
-			{(credit) && <Credit g={credit} u={crediturl} d={creditdate} />}
-		</div>
-	})
-	*/
+const Pictures = ({ pictures, name }: any) => {
+	if (!pictures?.numResults) return;
+	return <>
+		<Tag>Photos tagged with &quot;{name}&quot;</Tag>
+    <PhotoSet photos={pictures?.results?.map((p: any) => {
+      return {
+        ...p,
+				caption: p?.image_caption,
+        alt: p?.datetime?.substr(0, 10),
+        href: ts2URI(p?.datetime),
+        src: p?.image
+      }
+      })
+    } />
+	</>
 }
 
-const Player = (results?: HashedType) => results && <GigSearchResults results={results} banner={(results: HashedType) => (results) && <Tag>Played in the band</Tag> } />
+const Player = ({ results }: any) => (!!results?.numResults) && <GigSearchResults results={results} banner={(results: any) => <Tag>Played in the band</Tag> } />
 
-const Act = (results?: HashedType) => results && <GigSearchResults results={results} banner={(results: HashedType) => (results) && <Tag>Shared the bill</Tag> } />
+const Act = ({ results }: any) => (!!results?.numResults) && <GigSearchResults results={results} banner={(results: any) => <Tag>Shared the bill</Tag> } />
 
 const Conspirator = ({ params }: { params?: any }) => {
 	const conspirator: any = people.find(({ href, name }) => href === params?.slug || name === unescape(params?.slug));
@@ -50,9 +46,9 @@ const Conspirator = ({ params }: { params?: any }) => {
 			<Tag>{name}</Tag>
 			This is a work in progress..
 			<Loading isLoading={isLoading} >
-				<Player results={performer?.results} />
-				<Act results={support?.results} />
-				<Pictures results={pictures?.result} />
+				<Player results={performer} />
+				<Act results={support} />
+				<Pictures pictures={pictures} name={name} />
 			</Loading>
 		</main>
 		<Footer />

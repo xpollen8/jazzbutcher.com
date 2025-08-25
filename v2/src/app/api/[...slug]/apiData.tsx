@@ -298,6 +298,14 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			/*
 				simple filtered lookups
 			 */
+			case 'conspirator': {
+				const performer = await apiData('gigs_by_musician', args);
+				const support = await apiData('gigs_by_act', args);
+				return {
+					performer,
+					support,
+				};
+			}
 			case 'songs_by_datetime': {
 				return await returnFilteredPath('gigsongs', 'datetime', args, false);
 			}

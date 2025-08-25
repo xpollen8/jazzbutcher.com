@@ -6,16 +6,18 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
 import { people, expand, mapPerformers, AutoLinkPlayer } from '@/lib/defines';
-import { imageThumb, imageFull, parseCaptionsSourcesEtc} from '@/lib/utils';
+import { type HashedType, imageThumb, imageFull, parseCaptionsSourcesEtc} from '@/lib/utils';
 import { Credit } from '@/components/GenericWeb';
 import useGigs from '@/lib/useGigs';
 import { GigSearchResults } from '@/components/GigSearch';
 import { notFound } from 'next/navigation';
 import Loading from '@/components/Loading';
 
-//import useConspirator from '@/lib/useConspirator';
+import useConspirator from '@/lib/useConspirator';
 
-const PersonGallery = (props: { str?: string }) => {
+const Pictures = (results?: HashedType) => {
+	return results && <></>;
+	/*
 	const images = parseCaptionsSourcesEtc(props?.str);
 	return images?.map((img: any, key: number) => {
 		const [ src, credit, crediturl, creditdate, caption ] = img;
@@ -27,47 +29,34 @@ const PersonGallery = (props: { str?: string }) => {
 			{(credit) && <Credit g={credit} u={crediturl} d={creditdate} />}
 		</div>
 	})
+	*/
 }
 
-const Player = ({ person }: { person: string }) => {
-	const { data, isLoading, error } = useGigs({ type: 'performer', query: person?.replace(/ /g, '_') });
-	return <Loading isLoading={isLoading} >
-		<GigSearchResults results={data} banner={() => (!!data?.results?.length) && <Tag>As a Performer</Tag> } />
-	</Loading>
-}
+const Player = (results?: HashedType) => results && <GigSearchResults results={results} banner={(results: HashedType) => (results) && <Tag>Played in the band</Tag> } />
 
-const Act = ({ person }: { person: string }) => {
-	const { data, isLoading, error } = useGigs({ type: 'alsowith', query: person?.replace(/ /g, '_') });
-	return <Loading isLoading={isLoading} >
-		<GigSearchResults results={data} banner={() => (!!data?.results?.length) && <Tag>Also On The Bill</Tag> } />
-	</Loading>
-}
+const Act = (results?: HashedType) => results && <GigSearchResults results={results} banner={(results: HashedType) => (results) && <Tag>Shared the bill</Tag> } />
 
 const Conspirator = ({ params }: { params?: any }) => {
-	const person = people.find(({ href, name }) => href === params?.slug || name === unescape(params?.slug));
-	/*
+	const conspirator: any = people.find(({ href, name }) => href === params?.slug || name === unescape(params?.slug));
+	const name = conspirator && conspirator.name || '';
 	const { data, isLoading, error } = useConspirator(name);
+	const { performer, support, pictures } = data || {};
 
-	const conspirator = data?.results[0];
+	if (!params || !params?.slug || !name.length) return notFound();
 
-	return <Loading isLoading={isLoading} >
-		<Header section="conspirator" title={conspirator?.name} />
-		<Tag>{song?.title}</Tag>
-		{tabs.filter(t => t.lookup(song))?.map((t: any, key: number) => t?.func(song, key))}
-		<Footer />
-		</Loading>
-	*/
 	return <>
-		<Header section="conspirators" title={person?.name} />
+		<Header section="conspirators" title={name} />
 		<main>
-			<Tag>{person?.name}</Tag>
+			<Tag>{name}</Tag>
 			This is a work in progress..
-			<PersonGallery str={person?.images} />
-			{(person?.name) && <Player person={person.name} />}
-			{(person?.name) && <Act person={person.name} />}
+			<Loading isLoading={isLoading} >
+				<Player results={performer?.results} />
+				<Act results={support?.results} />
+				<Pictures results={pictures?.result} />
+			</Loading>
 		</main>
 		<Footer />
-	</>;
+	</>
 }
 
 export default Conspirator;

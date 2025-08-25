@@ -24,6 +24,7 @@ const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) =>
 	return <>
 		<table className="table-auto smalltext border w-full">
 			<thead className="text-end font-bold p-2 border-b">
+				<tr>
 					<th onClick={(e) => setHeader(e, 'person')} className={`w-1/4 text-start font-bold p-2 border-b ${guessClass('person')}`}> Credited </th>
 					<th onClick={(e) => setHeader(e, 'total')} className={guessClass('total')}> Total </th>
 					<th onClick={(e) => setHeader(e, 'image')} className={guessClass('image')}> Images </th>
@@ -31,6 +32,7 @@ const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) =>
 					<th onClick={(e) => setHeader(e, 'av')} className={guessClass('av')}> A/V </th>
 					<th onClick={(e) => setHeader(e, 'min')} className={guessClass('min')}> First </th>
 					<th onClick={(e) => setHeader(e, 'max')} className={`pr-2 ${guessClass('max')}`}> Recent </th>
+				</tr>
 			</thead>
 			<tbody>
 			{data?.map((obj: HashedType, key: number) => {

@@ -426,7 +426,7 @@ const GigProfile = (props: any) => {
 	const { data, isLoading, error } = useGig(datetime)
 	const gig = data;
 
-	if (!isLoading && !gig) return notFound();
+	if (!isLoading && !gig?.gig_id) return notFound();
 
 	return <>
 		<Nav year={year} datetime={datetime} gig={gig} />

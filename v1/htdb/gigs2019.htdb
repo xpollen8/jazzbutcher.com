@@ -346,9 +346,6 @@
 		who=${literalizeCommas( ${pat})},
 		with=${literalizeCommas( ${dj})},
 		photosets=
-			/images/20191026/20191026_pat.jpg$$
-			;;;;2019-07-09
-		---
 			/images/20191026/20191026_phillips_MClubSimon1.jpg$$
 			/images/20191026/20191026_phillips_MClubSimon2.jpg$$
 			/images/20191026/20191026_phillips_MClubSimon3.jpg$$

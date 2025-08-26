@@ -2,7 +2,7 @@ import Link from 'next/link';
 import LinkAudio from '@/components/LinkAudio';
 import EmbedVideo from '@/components/EmbedVideo';
 import { imageBase, autoLink, ts2URI } from '@/lib/utils';
-import { isKnownMusician, expand } from '@/lib/defines';
+import { expand, expandAll } from '@/lib/defines';
 import { Attribution } from '@/components/GenericWeb';
 
 const Performers = ({ datetime }: { datetime: string }) => {
@@ -155,36 +155,6 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 	const useTitle = (song || title)?.replace('NULL','');
 	const useArtist = artist?.replace('NULL','');
 	const useAuthor = author?.replace('NULL','');
-
-	const expandAll = (s: string, commate: boolean = false) => {
-		const className = (commate) ? '' : "mr-1";
-		const res = s?.split(',')?.map((r: string, key: number, arr: any) => {
-			/*
-				group Cap words togethger
-			 */
-			const muso: string[] = [];
-			const inst: string[] = [];
-			r?.split(' ')?.forEach((x: string) => {
-				if (x[0]?.match(/[A-Z]/)) {
-					muso.push(x);
-				} else if (x !== 'on') {
-					inst.push(x);
-				}
-			});
-			const musician = muso.join(' ')?.trim();
-			const instruments = inst.join(' ')?.trim();
-			return <span key={key} className={className}>
-				{(isKnownMusician(musician)) ? (<Link href={`/conspirators/${musician}`}>{musician}</Link>) : musician}
-				{(!!instruments) && <>: {instruments}</>}
-				{(key !== arr?.length - 1) && <>,</>}
-			</span>
-		});
-		if (commate) {
-			return <>({res})</>;
-		} else {
-			return res;
-		}
-	}
 
 	const main = () => {
 		if (useMediaurl && !disableVideo) {

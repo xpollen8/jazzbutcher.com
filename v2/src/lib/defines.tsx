@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { linkInternal, linkExternal } from './utils';
+import { type HashedType, linkInternal, linkExternal } from './utils';
 
 const linkSearch = ({ name, text, act }:
 {
@@ -51,12 +51,12 @@ const linkSong = (props: { title?: string, href?: string, author?: string | Reac
 //       conspirators
 //
 export const anita_allbright = 	linkSearch({ name: "Anita Allbright" });
-export const astor = linkPerson({ href: "peter_astor", name: "Peter Astor", aliases: [ "Pete" ] });
-export const at = linkPerson({ href: "alice_thompson", name: "Alice Thompson", aliases: [ "Alice" ] });
-export const barker = linkPerson({ href: "david_barker", name: "David E. Barker", aliases: [ "Barker" ] });
+export const astor = linkPerson({ href: "peter_astor", name: "Peter Astor" });
+export const at = linkPerson({ href: "alice_thompson", name: "Alice Thompson" });
+export const barker = linkPerson({ href: "david_barker", name: "David E. Barker" });
 export const beirne = linkPerson({ href: "pat_beirne", name: "Pat Beirne" });
 export const blair = linkPerson({ name: "Blair MacDonald", href: "blair_macdonald" });
-export const botty = linkPerson({ href: "ian_botterill", name: "Ian Botterill", aliases: [ "Botty", "Bott", "Bot" ] });
+export const botty = linkPerson({ href: "ian_botterill", name: "Ian Botterill" });
 export const botty_bman = linkPerson({ href: "ian_botterill", name: "B-Man" });
 export const brent = linkPerson({ name: "Brent Bambury", href: "brent_bambury" });
 export const burrell = linkPerson({ href: 'tim_burrell', name: "Tim Burrell" });
@@ -1173,14 +1173,14 @@ export const expand = (str?: string, treatAsHTML: boolean = false) => {
 	return doIt(str?.trim());
 }
 
-export const	people = {
+export const	people: HashedType = {
 	anita_allbright: { name:"Anita Allbright" },
-	astor: { href: "peter_astor", name: "Peter Astor" },
-	at: { href: "alice_thompson", name: "Alice Thompson" },
-	barker: { href: "david_barker", name: "David E. Barker" },
+	astor: { href: "peter_astor", name: "Peter Astor", aliases: [ "Pete" ] },
+	at: { href: "alice_thompson", name: "Alice Thompson", aliases: [ "Alice" ] },
+	barker: { href: "david_barker", name: "David E. Barker", aliases: [ "Barker" ] },
 	beirne: { href: "pat_beirne", name: "Pat Beirne" },
 	blair: { name: "Blair MacDonald", href: "blair_macdonald" },
-	botty: { href: "ian_botterill", name: "Ian Botterill" },
+	botty: { href: "ian_botterill", name: "Ian Botterill", aliases: [ "Botty", "Bott", "Bot" ] },
 	botty_bman: { href: "ian_botterill", name: "B-Man" },
 	brent: { name: "Brent Bambury", href: "brent_bambury" },
 	burrell: { href: "tim_burrell", name: "Tim Burrell" },
@@ -1338,9 +1338,10 @@ export const	people = {
 
 // @ts-ignore
 export const peopleArray = Object.keys(people)?.map((lookup: string) => {
-	const aliases = people[lookup]?.aliases?.map((alias: string) => ({ href: people[lookup]?.href, lookup, name: alias })) || [];
-	delete people[lookup].aliases;
-	return [ {...people[lookup], lookup }, ...aliases ];
+	const obj: any = people[lookup];
+	const aliases = obj?.aliases?.map((alias: string) => ({ href: obj?.href, lookup, name: alias })) || [];
+	delete obj.aliases;
+	return [ {...obj, lookup }, ...aliases ];
 }).flat();
 
 const otherArray = [
@@ -1355,7 +1356,8 @@ export const personName = (str?: string) => {
 	return (name) ? name : str;
 }
 
-export const expandAll = (s: string, commate: boolean = false) => {
+export const expandAll = (s?: string, commate: boolean = false) => {
+	if (!s) return;
 	const className = (commate) ? '' : "mr-1";
 	const res = s?.split(',')?.map((r: string, key: number, arr: any) => {
 		/*

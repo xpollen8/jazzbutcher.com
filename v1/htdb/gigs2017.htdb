@@ -341,6 +341,7 @@
 		city=Glasgow,
 		country=Scotland,
 		postalcode=G2 3LG,
+		who=${literalizeCommas( ${pat} )},
 		with=${literalizeCommas(
 			The Jasmine Minks
 		)},

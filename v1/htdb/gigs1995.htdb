@@ -17,7 +17,7 @@
 		cost=£5,
 		with=${literalizeCommas(
 		)},
-		who=${literalizeCommas(
+		who=${literalizeCommas( ${pat}
 		)},
 		notes=${literalizeCommas(
 		)},
@@ -30,7 +30,7 @@
 		cost=,
 		with=${literalizeCommas(
 		)},
-		who=${literalizeCommas(
+		who=${literalizeCommas( ${pat}
 		)},
 		notes=${literalizeCommas(
 		)},

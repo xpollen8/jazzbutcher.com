@@ -591,6 +591,7 @@
 	${gigHeader(
 
 		cost=60&#8355;,
+		who=${literalizeCommas( ${pat} )},
 		with=${literalizeCommas( The Posies, Nyan Ferties )},
 		tickets=
 			/images/19940707/19940707_ticket.jpg$$

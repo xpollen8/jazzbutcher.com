@@ -1,16 +1,61 @@
 "use client"
 
+import FeaturedItem from '@/components/FeaturedItem';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
-import { person } from '@/lib/defines';
-import { ts2URI } from '@/lib/utils';
+import { person, AutoLinkSong } from '@/lib/defines';
+import { type HashedType, ts2URI, truncAt, pluralize } from '@/lib/utils';
 import { GigSearchResults } from '@/components/GigSearch';
 import { notFound } from 'next/navigation';
+import { removeHTML } from '@/components/GenericWeb';
 import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
 import Contributions from '@/components/Contributions';
 import useConspirator from '@/lib/useConspirator';
+import useRelease from '@/lib/useRelease';
+
+const AlbumAppearance = ({ lookup, object }: any) => {
+	const { data, isLoading, error } = useRelease(lookup);
+	const album = data?.results[0];
+	if (!album) return;
+	return <FeaturedItem
+		image={truncAt(';;', album?.thumb || '')}
+		title=<><b>{album?.title}</b> ({removeHTML(album?.dtreleased)})</>
+		>
+		<div>
+			{(!!object?.instruments?.length) && <div><b>Role</b>: {object?.instruments?.join(', ')}</div>}
+			{Object?.keys(object?.songs)?.map((s: string, key: number) => {
+				return <div key="key">
+					<b>{AutoLinkSong(s)}</b> - {object?.songs[s]?.join(', ')}
+				</div>
+			})}
+		</div>
+	</FeaturedItem>
+}
+
+const Releases = ({ releases, name }: any) => {
+	if (!releases?.numResults) return;
+	const albums: HashedType = {};
+	releases?.results?.forEach((a: any) => {
+		const { project='jbc', lookup, song, instruments } = a;
+		if (!albums[lookup]) albums[lookup] = { instruments: [], songs: {} };
+		if (song) {
+			song?.split('$$')?.forEach((s: string) => {
+				if (!albums[lookup].songs[s]) albums[lookup].songs[s] = [];
+				albums[lookup].songs[s].push(instruments);
+			});
+		} else {
+			albums[lookup].instruments.push(instruments);
+		}
+	});
+
+	const count = Object?.keys(albums)?.length;
+	return (!!count) && <details>
+		<summary className="tagClickable">{pluralize(count, 'album credit', name)}</summary>
+		{Object?.keys(albums)?.map((a: string, key: number) => <div className="listItem" key={key}><AlbumAppearance lookup={a} object={albums[a]} /></div>)}
+	</details>
+}
 
 const Pictures = ({ pictures, name }: any) => {
 	if (!pictures?.numResults) return;
@@ -37,7 +82,7 @@ const Conspirator = ({ params }: { params?: any }) => {
 	const conspirator = person(unescape(params?.slug));
 	const name = conspirator && conspirator.name || '';
 	const { data, isLoading, error } = useConspirator(name);
-	const { performer, support, pictures } = data || {};
+	const { releases, performer, support, pictures } = data || {};
 
 	if (!params || !params?.slug || !name.length) return notFound();
 
@@ -47,6 +92,7 @@ const Conspirator = ({ params }: { params?: any }) => {
 			{/*<Tag>{name}</Tag>
 			This is a work in progress.. */}
 			<Loading isLoading={isLoading} >
+				<Releases releases={releases} name={name} />
 				<Pictures pictures={pictures} name={name} />
 				<Player results={performer} />
 				<Act results={support} />
@@ -61,112 +107,3 @@ const Conspirator = ({ params }: { params?: any }) => {
 }
 
 export default Conspirator;
-
-/*
-Agent Cooper
-Agent Wilson
-Aggi Demetri
-Alan Moore
-Alastair Indge
-Alex Green
-Alex Lee
-Alice Thompson
-Ani Cordero
-Anita Allbright
-B-Man
-Blair MacDonald
-Bolly
-Brent Bambury
-Buffalo Shame
-Charlie Baldonado
-Curtis E. Johnson
-Dave Henderson
-Dave Morgan
-David E. Barker
-David J.
-David Whittemore
-Deirdre O'Donoghue
-Derek Tomkins
-Dooj Wilkinson
-E-Man
-Emil Von D&auml;mmerung
-Erich Hubner
-Erol Suleyman
-Felix Ray
-Francisco Cabeza
-G-Man
-Gabriel Turner
-Garrick Simmons
-Greenwood Goulding
-Greg Gilmore
-Howard Turner
-Iain O'Higgins
-Ian Botterill
-Ian Sturgess
-Joby Palmer
-Joe Allen
-Joe Skyward
-Joe Woolley
-Joel Harries
-John A. Rivers
-Jonny Mattock
-Julian Poole
-Karel Von D&auml;mmerung
-Kathie McGinty
-Kathy Schaer
-Kevin Haskins
-Kevin Komoda
-Kizzy O'Callaghan
-Laurence O'Keefe
-Lee Brooks
-Les Sanders
-Lionel Brando
-MC Bott
-Malcolm Rivett-Carnac
-Marc Hadley
-Mark Brown
-Mark Refoy
-Martin. K. Daley
-Martin K. Daley
-Martin Stebbing
-Max Eider
-Max Read
-Max Reed
-Mick Mercer
-Misery Wilson
-Mitch Jenkins
-Mr. Crush
-Nick Bandy
-Nick Burson
-Otto Von D&auml;mmerung
-Owen Jones
-Pascal Legras
-Pat Beirne
-Pat Fish
-Pat Kenneally
-Paul Hookham
-Paul Mulreany
-Paul Taylor
-Peter Astor
-Peter Crouch
-Richard Formby
-Richard Lohan
-Rolo McGinty
-Russell Cooper
-Simon Taylor
-Sonic Boom
-Steve Beswick
-Steve Garofalo
-Steve Musgrove
-Steve New
-Steve Valentine
-Sumishta Brahm
-The Antichrist
-The Conspiracy
-The Undead
-Tim Burrell
-Tim Harries
-Tony Harris
-Tractor
-Wilson Headstone
-*/

@@ -3,7 +3,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
-import { people } from '@/lib/defines';
+import { person } from '@/lib/defines';
 import { ts2URI } from '@/lib/utils';
 import { GigSearchResults } from '@/components/GigSearch';
 import { notFound } from 'next/navigation';
@@ -34,7 +34,7 @@ const Player = ({ results }: any) => (!!results?.numResults) && <GigSearchResult
 const Act = ({ results }: any) => (!!results?.numResults) && <GigSearchResults results={results} banner={(results: any) => <Tag>Shared the bill</Tag> } />
 
 const Conspirator = ({ params }: { params?: any }) => {
-	const conspirator: any = people.find(({ href, name }) => href === params?.slug || name === unescape(params?.slug));
+	const conspirator = person(unescape(params?.slug));
 	const name = conspirator && conspirator.name || '';
 	const { data, isLoading, error } = useConspirator(name);
 	const { performer, support, pictures } = data || {};

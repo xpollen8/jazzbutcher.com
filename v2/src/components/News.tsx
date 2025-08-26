@@ -398,7 +398,7 @@ const displayNewsItem = (n: NewsItemType, key: number) => {
 }
 
 export const MostRecentNews = () => <>
-	<details>
+	<details open={true}>
 	<summary className="tagClickable"> {pluralize(newsItems?.length, 'website change', 'Most recent')} {dateAgo(newsItems[0]?.dt)}</summary>
 		{displayNewsItem(newsItems[0] as NewsItemType, 0)}
 		<News />

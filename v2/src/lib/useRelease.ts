@@ -3,7 +3,7 @@ import { returnSWR } from '@/lib/utils';
 
 const useRelease = (lookup?: string) => {
 	const href = `/albums/${lookup}.html`;
-	const	results = releasesStatic?.results?.filter((f: any) => f.href === href) || [];
+	const	results = releasesStatic?.results?.filter((f: any) => f.href === href || f.lookup === lookup) || [];
 	return returnSWR(results);
 }
 

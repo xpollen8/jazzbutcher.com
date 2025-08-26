@@ -127,10 +127,11 @@
 #live	endif
 
 #define	deparse(datetime, category, type, list)
+OK
 #<pre>
 #${stripTags(${list})}
 #</pre>
-#live	if (getval(cgi->http_x_real_ip) = X192.184.195.146)
+#live	if (getval(cgi->http_x_real_ip) = X192.184.191.56)
 #live	if (makeArray(deparse_list, \[comma], ${stripTags(${list})}))
 #**${deparse_list->numResults}**
 #live		loop(l, 1, ${deparse_list->numResults})
@@ -2390,8 +2391,9 @@ ${_d[3]}
 #live	endif
 #live	if (getval(${pr}->performers))
 			<div class="smalltext"> ${${pr}->performers} </div>
+# HERE insert into performance **${${pr}->datetime}**${${pr}->performers}**${${pr}->setnum}**${${pr}->ordinal}**
 #live	endif
-#live	if ((sql(pe:select * from performance where datetime='${datetime}' and category='event' and type='${${pr}->type}' and setnum='${${pr}->setnum}' and ordinal='${${pr}->ordinal}')) && (getnum(pe->numResults) > 0))
+#live	if ((sql(pe:select * from performance where datetime='${${pr}->datetime}' and category='event' and type='${${pr}->type}' and setnum='${${pr}->setnum}' and ordinal='${${pr}->ordinal}')) && (getnum(pe->numResults) > 0))
 			<span class="smalltext">
 #live		while (pei = pe[*]->performer)
 				- ${parse(para=pe[${pei}]->performer)}

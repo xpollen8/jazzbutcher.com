@@ -127,7 +127,6 @@
 #live	endif
 
 #define	deparse(datetime, category, type, list)
-OK
 #<pre>
 #${stripTags(${list})}
 #</pre>

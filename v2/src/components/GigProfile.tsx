@@ -118,9 +118,11 @@ const GigPoster = (data: any, key: number) => <GigMedia {...data} />
 
 const GigPosters = (data: any) => <div className="listItem"><Iterator data={data} func={GigPoster} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
 
-const GigPhoto = (data: any, key: number) => <GigMedia {...data} />
-
 const GigPhotos = (data: any) => GigPicType(data);
+
+const GigImage = (data: any, key: number) => <GigMedia {...data} />
+
+const GigImages = (data: any) => <div className="listItem"><Iterator data={data} func={GigImage} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
 
 const GigNote = (data: any, key: number) => <GigText {...data} />
 
@@ -299,19 +301,29 @@ const Content = ({ gig }: { gig: any }) => {
 	gig?.media?.forEach((t: any) => {
 		const nameIt = `media_${t.type}`;
 		switch (t.type) {
-			case 'pix':
+			/*
 			case 'cassette':
 			case 'poster':
 			case 'setlist':
 			case 'ticket':
+			*/
+			case 'pix':
 				if (!joins[nameIt]) joins[nameIt] = [];
 				joins[nameIt].push(t);
 				break;
-			default:
-				if (!joins['media_other']) joins['media_other'] = [];
-				joins['media_other'].push(t);
 		}
 	})
+	/*
+		collect all but 'pix' into a catch-all 'media_combined' bucket.
+		this will yield a more compact UI layout
+	 */
+	gig?.media?.forEach((t: any) => {
+		const nameIt = `media_combined`;
+		if (t.type === 'pix') return;
+		if (!joins[nameIt]) joins[nameIt] = [];
+		joins[nameIt].push(t);
+	})
+	console.log("media_combined", joins['media_combined']);
 
 	// joins.players_* (performance table)
 	gig?.players?.forEach((t: any) => {
@@ -391,6 +403,7 @@ const Content = ({ gig }: { gig: any }) => {
 
 	const extras = [
 		{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
+		{ label: 'Images', lookup: 'media_combined', func: GigImages },
 		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
 		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
 		{ label: 'Also On The Bill', lookup: 'players_with', func: GigWith },

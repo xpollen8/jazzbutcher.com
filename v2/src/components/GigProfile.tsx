@@ -337,7 +337,6 @@ const Content = ({ gig }: { gig: any }) => {
 		if (!joins[nameIt]) joins[nameIt] = [];
 		joins[nameIt].push(t);
 	})
-	console.log("media_combined", joins['media_combined']);
 
 	// joins.players_* (performance table)
 	gig?.players?.forEach((t: any) => {

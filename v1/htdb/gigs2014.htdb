@@ -227,7 +227,7 @@
 #define	Oct24_1800.html()
 	${gigHeader(
 		photosets= /images/20141024/20141024_izuminakatani_riverboatgamblers.jpg;;
-				${literalizeCommas(Here is a lovely picture of me, Bid and Pete Astor, taken by Izumi Nakatani just after we arrived in       
+				${literalizeCommas(Here is a lovely picture of me, Bid and Peter Astor, taken by Izumi Nakatani just after we arrived in       
 				Tokyo. We are sitting in a joint called Mister Donut. We think we look like three riverboat gamblers       
 				trying to look as though we had never, ever played poker before, no sir.)}
 				$$
@@ -270,7 +270,7 @@
 			$$
 			/images/20141025/20141025_peteandme.jpg;;
 			${literalizeCommas(
-			Me and Pete Astor photographed in the street by a Pete Astor fan     
+			Me and Peter Astor photographed in the street by a Pete Astor fan     
 			who was literally shaking with excitement, bless him. - I think he thought I was Pete's bodyguard!
 			)}
 			$$
@@ -347,7 +347,7 @@
 			/images/20141113/20141113_hatbar10.jpg$$
 			/images/20141113/20141113_hatbar11.jpg$$
 			/images/20141113/20141113_hatbar12.jpg$$
-			/images/20141113/20141113_hatbar13.jpg$$
+			/images/20141113/20141113_hatbar13.jpg;;Steve Garofalo\, Simon Taylor$$
 			/images/20141113/20141113_hatbar15.jpg$$
 			;;;;2014-11-27
 	)}

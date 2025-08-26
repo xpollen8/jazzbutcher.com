@@ -178,7 +178,7 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${joe_woolley} (electric guitar)
 		)},
-		photosets= /images/20150612/20150612_cunningham_gig1.jpg$$
+		photosets= /images/20150612/20150612_cunningham_gig1.jpg;;Pat Fish\, Steve Garofalo$$
 			/images/20150612/20150612_cunningham_gig2.jpg$$
 			Sean Michael Cunningham;;;;2015-06-18
 		,
@@ -345,7 +345,7 @@
 		 Patrick Smith;;;;2017-05-16
 		---
 		 /images/20151211/20151211_heimo_group.jpg$$
-		 /images/20151211/20151211_heimo_steve.jpg;;Steve$$
+		 /images/20151211/20151211_heimo_steve.jpg;;Steve New$$
 		/images/20151211/20151211_reifetshammer_group.jpg$$
 			Heimo Reifetshammer;;;;2017-05-16
 		---
@@ -368,7 +368,7 @@
 			St. Giles Cheese 
 		)},
 		photosets=
-			/images/20151212/20151212_street_1.jpg$$
+			/images/20151212/20151212_street_1.jpg;;${literalizeCommas(Pat Fish, Steve Garofalo, Steve New, Simon Taylor)}$$
 			/images/20151212/20151212_street_2.jpg$$
 			/images/20151212/20151212_street_3.jpg$$
 			/images/20151212/20151212_street_4.jpg$$
@@ -389,8 +389,8 @@
 		 /images/20151213/20151213_gray_group.jpg$$
 		 /images/20151213/20151213_gray_pat.jpg$$
 			/images/20151213/20151213_gray.jpg$$
-			/images/20151213/20151213_gray_simon.jpg;;Simon$$
-			/images/20151213/20151213_gray_steve.jpg;;Steve$$
+			/images/20151213/20151213_gray_simon.jpg;;Simon Taylor$$
+			/images/20151213/20151213_gray_steve.jpg;;Steve New$$
 			Carolyn Gray;;;;2017-05-16
 		,
 		posters=/images/20151213/20151213_poster.jpg$$

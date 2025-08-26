@@ -307,7 +307,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				});
 
 				return {
-					releases,
+					releases: joinOn('lookup', releases?.results, releasesStatic.results),
 					performer,
 					support,
 					pictures,

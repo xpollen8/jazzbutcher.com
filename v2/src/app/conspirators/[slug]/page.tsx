@@ -13,33 +13,27 @@ import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
 import Contributions from '@/components/Contributions';
 import useConspirator from '@/lib/useConspirator';
-import useRelease from '@/lib/useRelease';
 
-const AlbumAppearance = ({ lookup, object }: any) => {
-	const { data, isLoading, error } = useRelease(lookup);
-	const album = data?.results[0];
-	if (!album) return;
-	return <FeaturedItem
-		image={truncAt(';;', album?.thumb || '')}
-		title=<><b>{album?.title}</b> ({removeHTML(album?.dtreleased)})</>
-		>
-		<div>
-			{(!!object?.instruments?.length) && <div><b>Role</b>: {object?.instruments?.join(', ')}</div>}
-			{Object?.keys(object?.songs)?.map((s: string, key: number) => {
-				return <div key="key">
-					<b>{AutoLinkSong(s)}</b> - {object?.songs[s]?.join(', ')}
-				</div>
-			})}
-		</div>
-	</FeaturedItem>
-}
+const AlbumAppearance = ({ lookup, object }: any) => <FeaturedItem
+	image={truncAt(';;', object?.thumb || '')}
+	title=<><b>{object?.title}</b> ({removeHTML(object?.dtreleased)})</>
+	>
+	<div>
+		{(!!object?.instruments?.length) && <div><b>Role</b>: {object?.instruments?.join(', ')}</div>}
+		{Object?.keys(object?.songs)?.map((s: string, key: number) => {
+			return <div key="key">
+				<b>{AutoLinkSong(s)}</b> - {object?.songs[s]?.join(', ')}
+			</div>
+		})}
+	</div>
+</FeaturedItem>
 
 const Releases = ({ releases, name }: any) => {
 	if (!releases?.numResults) return;
 	const albums: HashedType = {};
 	releases?.results?.forEach((a: any) => {
-		const { project='jbc', lookup, song, instruments } = a;
-		if (!albums[lookup]) albums[lookup] = { instruments: [], songs: {} };
+		const { project='jbc', lookup, song, instruments, thumb, title, dtreleased } = a;
+		if (!albums[lookup]) albums[lookup] = { instruments: [], songs: {}, thumb, title, dtreleased };
 		if (song) {
 			song?.split('$$')?.forEach((s: string) => {
 				if (!albums[lookup].songs[s]) albums[lookup].songs[s] = [];

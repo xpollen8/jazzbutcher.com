@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Attribution } from '@/components/GenericWeb';
 import { parseImage } from '@/lib/utils';
+import { person } from '@/lib/defines';
 
 const ImageStrip = (props: any) => {
 	const images = props?.images;
@@ -11,16 +12,19 @@ const ImageStrip = (props: any) => {
 	return images && images?.length && <div style={style} className={className}>
 		{images?.map(([ inImage, caption, source, sourceurl, sourcedate ]: any, key: number) => {
 			const { image, thumb='' } = parseImage(inImage);
-			return image && <Link key={key} href={image}>
+			const { href } = person(source) || {};
+			return image && <div key={key}>
+			<Link href={image}>
 				<Image
 					className="drop-shadow-md"
 					alt={caption || 'album image'}
 					width={width} height={width}
 					src={thumb}
 				/>
-				{(caption) && <><i>{caption}</i><br/></>}
-				{(source) && <Attribution g={source} u={sourceurl} d={sourcedate} />}
 			</Link>
+				{(caption) && <><i>{caption}</i><br/></>}
+				{(source) && <Attribution g={source} u={sourceurl || `/contributions/${source}`} d={sourcedate} />}
+			</div>
 		}
 	)}
 	</div>

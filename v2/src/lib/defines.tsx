@@ -51,12 +51,12 @@ const linkSong = (props: { title?: string, href?: string, author?: string | Reac
 //       conspirators
 //
 export const anita_allbright = 	linkSearch({ name: "Anita Allbright" });
-export const astor = linkPerson({ href: "peter_astor", name: "Peter Astor" });
-export const at = linkPerson({ href: "alice_thompson", name: "Alice Thompson" });
-export const barker = linkPerson({ href: "david_barker", name: "David E. Barker" });
+export const astor = linkPerson({ href: "peter_astor", name: "Peter Astor", aliases: [ "Pete" ] });
+export const at = linkPerson({ href: "alice_thompson", name: "Alice Thompson", aliases: [ "Alice" ] });
+export const barker = linkPerson({ href: "david_barker", name: "David E. Barker", aliases: [ "Barker" ] });
 export const beirne = linkPerson({ href: "pat_beirne", name: "Pat Beirne" });
 export const blair = linkPerson({ name: "Blair MacDonald", href: "blair_macdonald" });
-export const botty = linkPerson({ href: "ian_botterill", name: "Ian Botterill" });
+export const botty = linkPerson({ href: "ian_botterill", name: "Ian Botterill", aliases: [ "Botty", "Bott", "Bot" ] });
 export const botty_bman = linkPerson({ href: "ian_botterill", name: "B-Man" });
 export const brent = linkPerson({ name: "Brent Bambury", href: "brent_bambury" });
 export const burrell = linkPerson({ href: 'tim_burrell', name: "Tim Burrell" });
@@ -1194,19 +1194,19 @@ export const	people = {
 	deirdre: { name: "Deirdre O'Donoghue" },
 	del: { href: "david_whittemore", name: "David Whittemore" },
 	dj: { href: "david_j", name: "David J." },
-	dooj: { href: "dooj_wilkinson", name: "Dooj Wilkinson" },
+	dooj: { href: "dooj_wilkinson", name: "Dooj Wilkinson", aliases: [ "Dooj" ] },
 	erol: { name: "Erol Suleyman", href: "erol_suleyman" },
 	felce: { name: "Dave Felce" },
-	felix: { href: "felix_ray", name: "Felix Ray" },
-	gab: { href: "gabriel_turner", name: "Gabriel Turner" },
+	felix: { href: "felix_ray", name: "Felix Ray", aliases: [ "Felix" ] },
+	gab: { href: "gabriel_turner", name: "Gabriel Turner", aliases: [ "Gabriel" ] },
 	garofalo: { href: "steve_garofalo", name: "Steve Garofalo" },
 	gerard: { name: "Gerard Langley" },
 	gould: { href: 'greenwood_goulding', name: "Greenwood Goulding" },
 	green: { href: "alex_green", name: "Alex Green" },
-	hask: { href: "kevin_haskins", name: "Kevin Haskins" },
+	hask: { href: "kevin_haskins", name: "Kevin Haskins", aliases: [ "Kevin" ] },
 	hend: { href: "dave_henderson", name: "Dave Henderson" },
 	hook: { name: "Paul Hookham", href: "paul_hookham" },
-	iain: { href: "iain_ohiggins", name: "Iain O'Higgins" },
+	iain: { href: "iain_ohiggins", name: "Iain O'Higgins", aliases: [ "Iain", "O'Higgins" ] },
 	indge: { href: "alastair_indge", name: "Alastair Indge" },
 	is: { href: 'ian_sturgess', name: "Ian Sturgess" },
 	joby: { href: 'joby_palmer', name: "Joby Palmer" },
@@ -1217,7 +1217,7 @@ export const	people = {
 	joel_harries: { href: "joel_harries", name: "Joel Harries" },
 	john_silver: { name: "John Silver" },
 	jonny_mattock: { href: "jonny_mattock", name: "Jonny Mattock" },
-	jules: { href: "julian_poole", name: "Julian Poole" },
+	jules: { href: "julian_poole", name: "Julian Poole", aliases: [ "Julian", "Jules" ] },
 	karel: { href: "von_dammerung", name: 'Karel Von Dämmerung' },
 	otto: { href: "von_dammerung", name: 'Otto Von Dämmerung' },
 	emil: { href: "von_dammerung", name: 'Emil Von Dämmerung' },
@@ -1225,8 +1225,8 @@ export const	people = {
 	kathy: { href: "kathy_schaer", name: "Kathy Schaer" },
 	kathy_misery: { href: "kathy_schaer", name: "Misery Wilson" },
 	kevin: { name: "Kevin Komoda" },
-	kizzy: { href: "kizzy_ocallaghan", name: "Kizzy O'Callaghan" },
-	larry: { href: "laurence_okeefe", name: "Laurence O'Keefe" },
+	kizzy: { href: "kizzy_ocallaghan", name: "Kizzy O'Callaghan", aliases: [ "Kizzy" ] },
+	larry: { href: "laurence_okeefe", name: "Laurence O'Keefe", aliases: [ "Laurence", "Larry" ] },
 	lb: { href: "david_barker", name: "Lionel Brando" },
 	lix: { href: "alex_lee", name: "Alex Lee" },
 	martin_k_daley: { name: "Martin K Daley" },
@@ -1234,7 +1234,7 @@ export const	people = {
 	ll: { href: "marc_hadley", name: "Louis Leroi" },
 	lohan: { name: "Richard Lohan", href: "richard_lohan" },
 	mark_refoy: { href: "mark_refoy", name: "Mark Refoy" },
-	max: { href: "max_eider", name: "Max Eider" },
+	max: { href: "max_eider", name: "Max Eider", aliases: [ "Max", "Eider" ] },
 	max_read: { name: "Max Read", href: "max_read" },
 	mercer: { href: "https://www.mickmercer.com", name: "Mick Mercer" },
 	mick: { name: "Mick Packwood", href: "mick_packwood" },
@@ -1243,26 +1243,26 @@ export const	people = {
 	emerson_hunt: { href: "emerson_hunt", name: "Emerson Hunt" },
 	morgan: { href: "dave_morgan", name: "Dave Morgan" },
 	nick: { href: "nick_burson", name: "Nick Burson" },
-	owen: { href: "owen_jones", name: "Owen Jones" },
-	pat: { href: "https://patfish.com", name: "Pat Fish" },
+	owen: { href: "owen_jones", name: "Owen Jones", aliases: [ "Owen", "Owen P. Jones" ] },
+	pat: { href: "https://patfish.com", name: "Pat Fish", aliases: [ "Pat", "Butch", "The Butcher", "Headstone" ] },
 	//pat_fish: person_pat,
 	//duo: <>{pat}, {max}</>
 	//solo: pat;
 	//davidj: dj;
 	pat_headstone: { href: "https://patfish.com", name: "Wilson Headstone" },
-	paul: { href: "paul_mulreany", name: "Paul Mulreany" },
-	pete: { href: "peter_crouch", name: "Peter Crouch" },
-	rev: { href: "martin_stebbing", name: "Martin Stebbing", aka: "Rev. Botus Whiteblood Fleming" },
-	richard: { href: "richard_formby", name: "Richard Formby" },
+	paul: { href: "paul_mulreany", name: "Paul Mulreany", alias: [ "Paul", "Mulreany" ] },
+	pete: { href: "peter_crouch", name: "Peter Crouch", alias: [ "Crouchy" ] },
+	rev: { href: "martin_stebbing", name: "Martin Stebbing", aliases: [ "Rev. Botus Whiteblood Fleming" ] },
+	richard: { href: "richard_formby", name: "Richard Formby", aliases: [ "Richard" ] },
 	rivers: { href: "john_rivers", name: "John A. Rivers" },
 	rodney: { href: "rodney_allen", name: "Rodney Allen" },
-	rolo: { href: "rolo_mcginty", name: "Rolo McGinty" },
+	rolo: { href: "rolo_mcginty", name: "Rolo McGinty", aliases: [ "Rolo", "King" ] },
 	russ: { href: "russell_cooper", name: "Russell Cooper" },
 	russ_agent: { href: "russell_cooper", name: "Agent Wilson" },
 	simon: { href: "simon_taylor", name: "Simon Taylor" },
 	simon_mawby: { name: "Simon Mawby" },
 	sm: { name: "Steve Musgrove" },
-	sonic: { href: "sonic_boom", name: "Sonic Boom" },
+	sonic: { href: "sonic_boom", name: "Sonic Boom", aliases: [ "Sonic" ] },
 	steve: { href: "steve_valentine", name: "Steve Valentine" },
 	steve_beswick: { href: "steve_beswick", name: "Steve Beswick" },
 	steve_gordon: { href: "steve_gordon", name: "Steve Gordon" },
@@ -1271,7 +1271,7 @@ export const	people = {
 	lee_brooks: { href: "lee_brooks", name: "Lee Brooks" },
 	pat_kenneally: { href: "pat_kenneally", name: "Pat Kenneally" },
 	nick_bandy: { href: "nick_bandy", name: "Nick Bandy" },
-	sumishta: { href: "sumishta_brahm", name: "Sumishta Brahm" },
+	sumishta: { href: "sumishta_brahm", name: "Sumishta Brahm", aliases: [ "Sumishta" ] },
 	sumo_botty: { href: "ian_botterill", name: "Mister B" },
 	sumo_kathie: { href: "kathie_mcginty", name: "Kathie M" },
 	sumo_kathy: { href: "kathy_schaer", name: "Special K" },
@@ -1337,13 +1337,54 @@ export const	people = {
 };
 
 // @ts-ignore
-export const peopleArray = Object.keys(people)?.map((lookup: string) => ({...people[lookup], lookup }));
+export const peopleArray = Object.keys(people)?.map((lookup: string) => {
+	const aliases = people[lookup]?.aliases?.map((alias: string) => ({ href: people[lookup]?.href, lookup, name: alias })) || [];
+	delete people[lookup].aliases;
+	return [ {...people[lookup], lookup }, ...aliases ];
+}).flat();
+
+const otherArray = [
+	{ name: 'Brian Kelly', lookup: 'Brian Kelly' },
+]
 
 export const isKnownMusician = (str?: string) => peopleArray?.find((a: any) => a?.name === str);
+export const isKnownOther = (str?: string) => otherArray?.find((a: any) => a?.name === str);
 
 export const personName = (str?: string) => {
 	const { lookup, name, href, act }: any = person(str) || {};
 	return (name) ? name : str;
+}
+
+export const expandAll = (s: string, commate: boolean = false) => {
+	const className = (commate) ? '' : "mr-1";
+	const res = s?.split(',')?.map((r: string, key: number, arr: any) => {
+		/*
+			group Cap words togethger
+		 */
+		const muso: string[] = [];
+		const inst: string[] = [];
+		r?.split(' ')?.forEach((x: string) => {
+			if (x[0]?.match(/[A-Z]/)) {
+				muso.push(x);
+			} else if (x !== 'on') {
+				inst.push(x);
+			}
+		});
+		const musician = muso.join(' ')?.trim();
+		const instruments = inst.join(' ')?.trim();
+		return <span key={key} className={className}>
+			{(isKnownMusician(musician)) ?
+				(<Link href={`/conspirators/${musician}`}>{musician}</Link>) :
+				((isKnownOther(musician)) ? <Link href={`/contributors/${musician}`}>{musician}</Link> : musician)}
+			{(!!instruments) && <>: {instruments}</>}
+			{(key !== arr?.length - 1) && <>,</>}
+		</span>
+	});
+	if (commate) {
+		return <>({res})</>;
+	} else {
+		return res;
+	}
 }
 
 export const personLink = (str?: string) => {

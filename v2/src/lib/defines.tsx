@@ -1339,6 +1339,8 @@ export const	people = {
 // @ts-ignore
 export const peopleArray = Object.keys(people)?.map((lookup: string) => ({...people[lookup], lookup }));
 
+export const isKnownMusician = (str?: string) => peopleArray?.find((a: any) => a?.name === str);
+
 export const personName = (str?: string) => {
 	const { lookup, name, href, act }: any = person(str) || {};
 	return (name) ? name : str;

@@ -299,6 +299,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				simple filtered lookups
 			 */
 			case 'conspirator': {
+				const releases = await apiData('releases_by_performer', args);
 				const performer = await apiData('gigs_by_musician', args);
 				const support = await apiData('gigs_by_act', args);
 				const pictures = await returnFilteredPath('gigmedias', 'type', 'pix', true, (candidate: HashedType, value: string, exact: boolean) => {
@@ -306,6 +307,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				});
 
 				return {
+					releases,
 					performer,
 					support,
 					pictures,
@@ -487,6 +489,10 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					gigtext: findRecent(gigtext, ['credit_date'], makeOptions(args, 'gigtext')),
 					press: findRecent(press, ['dtadded'], makeOptions(args, 'press')),
 				}
+			}
+			case 'releases_by_performer': {
+				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
+				return  await returnFilteredPath('performances', 'performer', useArgs, true, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('release', candidate, value, exact));
 			}
 			case 'releases_by_song': {
 				//select distinct(lookup), media, version from performance where ? and category="release"'

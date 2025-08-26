@@ -358,9 +358,10 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const datetime = args?.replace(/%20/g, ' ')?.replace(/ 00:00:00/, '');
 				const gigs = gigsStatic?.results?.find((g: HashedType) => g?.datetime === datetime);
 				const played = gigsongsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime)
+					/* already cleaned in db
 					?.map((gs: HashedType) => {
-						// clean up performers data
-						const performers = gs?.performers?.split(' ')?.map((p: any) => {
+						// clean up data
+						const unexpand = (p?: string) => p?.split(' ')?.map((p: any) => {
 							if (p?.startsWith('${') && p?.endsWith('}')) {
 								const val = p?.substr(2, p?.length - 3); // ick
 								return personName(val);
@@ -368,11 +369,15 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 								return p;
 							}
 						})?.join(' ');
+						const performers = unexpand(gs?.performers);
+						const author = unexpand(gs?.author);
 						return {
 							...gs,
 							performers,
+							author,
 						}
 					});
+				*/
 				const media = gigmediasStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
 				const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
 				const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);

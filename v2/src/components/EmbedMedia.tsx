@@ -2,7 +2,7 @@ import Link from 'next/link';
 import LinkAudio from '@/components/LinkAudio';
 import EmbedVideo from '@/components/EmbedVideo';
 import { imageBase, autoLink, ts2URI } from '@/lib/utils';
-import { expand } from '@/lib/defines';
+import { isKnownMusician, expand } from '@/lib/defines';
 import { Attribution } from '@/components/GenericWeb';
 
 const Performers = ({ datetime }: { datetime: string }) => {
@@ -156,13 +156,35 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 	const useArtist = artist?.replace('NULL','');
 	const useAuthor = author?.replace('NULL','');
 
-	const expandAll = (s: string) => s?.split(' ')?.map((r: string, key: number) => {
-		if (r?.match(/\${/)) {
-			return <span key={key}>{expand(r.replace('${','').replace('}',''))}</span>;
+	const expandAll = (s: string, commate: boolean = false) => {
+		const className = (commate) ? '' : "mr-1";
+		const res = s?.split(',')?.map((r: string, key: number, arr: any) => {
+			/*
+				group Cap words togethger
+			 */
+			const muso: string[] = [];
+			const inst: string[] = [];
+			r?.split(' ')?.forEach((x: string) => {
+				if (x[0]?.match(/[A-Z]/)) {
+					muso.push(x);
+				} else if (x !== 'on') {
+					inst.push(x);
+				}
+			});
+			const musician = muso.join(' ')?.trim();
+			const instruments = inst.join(' ')?.trim();
+			return <span key={key} className={className}>
+				{(isKnownMusician(musician)) ? (<Link href={`/conspirators/${musician}`}>{musician}</Link>) : musician}
+				{(!!instruments) && <>: {instruments}</>}
+				{(key !== arr?.length - 1) && <>,</>}
+			</span>
+		});
+		if (commate) {
+			return <>({res})</>;
 		} else {
-			return r;
+			return res;
 		}
-	}).join(" ");
+	}
 
 	const main = () => {
 		if (useMediaurl && !disableVideo) {
@@ -213,8 +235,8 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 						{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
 					</>}
 					{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
-					{(useAuthor) && <span className="smalltext">{' '}({useAuthor})</span>}
-					{/*(comment) && <span className="smalltext">{' '} ({comment}) </span>*/}
+					{(useAuthor) && <span className="smalltext">{' '}{expandAll(useAuthor, true)}</span>}
+					{/*(comment) && <span className="smalltext">{' '}{expandAll(comment, true)}</span>*/}
 					<EmbedVideo className={className} data={data} />
 					{children}
 					{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate || added} /></>}
@@ -224,15 +246,15 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 			return (<div className="listItem">
 				{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 				{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
-				{(useAuthor) && <span className="smalltext"> ({expandAll(useAuthor)}) </span>}
-				{(comment) && <span className="smalltext"> ({expandAll(comment)}) </span>}
+				{(useAuthor) && <span className="smalltext">{' '}{expandAll(useAuthor, true)} </span>}
+				{(comment) && <span className="smalltext">{' '}{expandAll(comment, true)} </span>}
 				{/*(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate || added} /></>*/}
 			</div>);
 		}
 	}
 	return (<>
 		{main()}
-		{(performers) && <div className="smalltext"> {expandAll(performers)} </div>}
+		{(performers) && <div className="smalltext"> {expandAll(performers, false)} </div>}
 		<Performers datetime={datetime} />
 	</>);
 }

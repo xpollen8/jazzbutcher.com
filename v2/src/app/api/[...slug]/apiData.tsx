@@ -3,9 +3,9 @@
 import moment from 'moment';
 import * as XLSX from 'xlsx';
 
-import { localDate } from '@/lib/utils';
+import { personName } from '@/lib/defines';
 import { removeHTML } from '@/components/GenericWeb';
-import { returnResults, type HashedType, type CommentType } from '@/lib/utils';
+import { localDate, returnResults, type HashedType, type CommentType } from '@/lib/utils';
 
 import gigsongsStatic from '@/../public/data/gigsongs.json';
 import gigmediasStatic from '@/../public/data/gigmedias.json';
@@ -357,7 +357,22 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'gig_by_datetime': {
 				const datetime = args?.replace(/%20/g, ' ')?.replace(/ 00:00:00/, '');
 				const gigs = gigsStatic?.results?.find((g: HashedType) => g?.datetime === datetime);
-				const played = gigsongsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				const played = gigsongsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime)
+					?.map((gs: HashedType) => {
+						// clean up performers data
+						const performers = gs?.performers?.split(' ')?.map((p: any) => {
+							if (p?.startsWith('${') && p?.endsWith('}')) {
+								const val = p?.substr(2, p?.length - 3); // ick
+								return personName(val);
+							} else {
+								return p;
+							}
+						})?.join(' ');
+						return {
+							...gs,
+							performers,
+						}
+					});
 				const media = gigmediasStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
 				const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
 				const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);

@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PhotoSet from '@/components/PhotoSet';
 import { ParsedCaption } from '@/components/GenericWeb';
-import { nick, curt, pat, dooj } from '@/lib/defines';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const letter = [

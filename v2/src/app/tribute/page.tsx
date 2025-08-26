@@ -301,7 +301,7 @@ const Tribute = () =>
 		<TributeTrack title="Filth"
 			dl="2-04_Filth.mp3"
 			artist="Vergiftung"
-			 url="www.adjective.com/vergiftung"
+			 url="vergiftung.adjective.com"
 			>
 		 These men are seditious deviant oddballs who should be pursued by The Authorities, yea
 		 even unto Florida. Not content with re-writing the riff, the bassline and the arrangement

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-import { karel, larry, aero, astor, swynn, tvamp } from '@/lib/defines';
+import { personLink } from '@/lib/defines';
 
 const Letter = () => 
 <>
@@ -16,15 +16,15 @@ const Letter = () =>
 		Orca, a small plastic whale who joined the JBC in December
 		1989 after a brief and unsatisfying career in a store
 		called &quot;HIPPOCAMPUS&quot; on Sunset Strip in Hollywood, has
-		lost his voice.  {larry}, a performing loony and professional
+		lost his voice.  {personLink('larry')}, a performing loony and professional
 		word-nigger (&quot;I JUST WANT A FUCKING CHEESE SANDWHICH,
 		YOU CANUCK CUNT!!!&quot;) played the bass for TERRY &quot;I AM
 		NOT SYD BARRETT, I AM A GRAPEFRUIT&quot; BICKERS on a disturbing
-		night in North London when Big Bazz (the {aero} soundman)
+		night in North London when Big Bazz (the {personLink('aero')} soundman)
 		brought his wall of noise to very small basement room
 		where I came face to face with the contradictions of
 		the modern Italian psyche.  He has subsequently been
-		taken in by the kindly staff of the {astor} Home for the
+		taken in by the kindly staff of the {personLink('astor')} Home for the
 		Persistently Tardy and plans to make a life for himself
 		in the cut-and thrust world of antique dealing. Mmmm.
 		The JBC is in the same kind of suspension, Streaky was
@@ -63,8 +63,8 @@ const Letter = () =>
 		the home front.  Those who survive the projected atrocities
 		will be deemed suitable to act in the defence of domestic
 		feudalism, fire and theft wherever the hand of Justice
-		may be required.  Thank you.  God bless {tvamp},
-		{swynn} and this small piece of fluff from the
+		may be required.  Thank you.  God bless {personLink('tvamp')},
+		{personLink('swynn')} and this small piece of fluff from the
 		pockets of a celebrated network newsreader.  More details
 		as and when they come up.
 		</p>
@@ -88,7 +88,7 @@ const Letter = () =>
 		the story so far
 		</p>
 		<p>
-		{karel}
+		{personLink('karel')}
 		a not so young Czech emigre living in a seedy district
 		of Vienna with his two disgusting brothers, Otto and
 		Emil, is mortified to discover that his lover, an American

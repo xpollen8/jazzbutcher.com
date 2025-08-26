@@ -9,7 +9,7 @@ import ImageStrip from '@/components/ImageStrip';
 import MakeReleasePress from '@/components/MakeReleasePress';
 import EmbedMedia from '@/components/EmbedMedia';
 import useReleaseSongs from '@/lib/useReleaseSongs';
-import { gab, expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
+import { personLink, expand, AutoLinkPlayer, AutoLinkSong } from '@/lib/defines';
 import { linkExternal, parseDomain, truncAt, parseCaptionsSourcesEtc } from '@/lib/utils';
 import Loading from '@/components/Loading';
 
@@ -167,7 +167,7 @@ const ReleaseBishopSez = ({ release }: { release: ReleaseTypeWithChildren }) => 
 	if (release?.bishopsez) {
 		const [ bishopsez='', source, sourceurl, sourcedate ] = release?.bishopsez.split(';;');
 		return (<>
-			<Tag>{gab} Says</Tag>
+			<Tag>{personLink('Gabriel Turner')} Says Says</Tag>
 			<blockquote>
 				<div dangerouslySetInnerHTML={{ __html: bishopsez }} />
 				{(source) && <Source g={source} u={sourceurl} d={sourcedate} />}

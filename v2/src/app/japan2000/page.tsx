@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { pat, max, owen, steve, kathie } from '@/lib/defines';
+import { personLink } from '@/lib/defines';
 
 const Japan2000 = () => 
 <>
@@ -13,18 +13,18 @@ const Japan2000 = () =>
 		
 		<h3>European Squad</h3>
 		
-		{max} - Guitarist and singer, London
+		{personLink('max')} - Guitarist and singer, London
 		<br />
-		{owen} - Percussionist, accordionist and singer, Hamburg
+		{personLink('owen')} - Percussionist, accordionist and singer, Hamburg
 		<br />
-		{pat} - Guitarist and singer, Northampton NN1
+		{personLink('pat')} - Guitarist and singer, Northampton NN1
 		<br />
 		Anne Millson - Guitarist&apos;s sister, London
 		<br />
 		
 		<h3>American Tendency</h3>
 		
-		{steve}- Bassist and Attorney At Law, Los Angeles
+		{personLink('steve')}- Bassist and Attorney At Law, Los Angeles
 		<br />
 		Lynda Skulpone - Bassist&apos;s girlfriend and singer, Los Angeles
 		<br />
@@ -1818,7 +1818,7 @@ const Japan2000 = () =>
 		the Alleged Republic Of Yugoslavia out of Euro 2000 (a place
 		where, in this writer&apos;s opinion, it should never have been
 		in the first place - did you know that their top goalscorer
-		was called Milosevic?).  {kathie} comes in to join us
+		was called Milosevic?).  {personLink('kathie')} comes in to join us
 		after finishing at work. I turn to Max and say:
 		<p />&quot;I thought it was all supposed to
 		go to shit when we got back to England... &quot;

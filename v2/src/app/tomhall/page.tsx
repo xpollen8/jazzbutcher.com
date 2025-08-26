@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
 import { Credit } from '@/components/GenericWeb';
-import { pat, ill, curt } from '@/lib/defines';
+import { personLink, ill } from '@/lib/defines';
 
 const TomHall = () => {
 	return (<>
@@ -40,7 +40,7 @@ const TomHall = () => {
 							There will be a memorial gig for The Great Tom Hall on <Link href="/gigs/2003/Sep6_1930.html">Saturday 6th September 2003</Link> at
 							the Ken Turner Pavilion, Northamptonshire County Cricket
 							Club, Wantage Road, Northampton. Taking part will be many of the musicians
-							who worked with Tom over the years in a revue sort of format. {pat} and {curt}
+							who worked with Tom over the years in a revue sort of format. {personLink('pat')} and {personLink('curt')}
 							will be also be appearing. Starting times and admission prices to follow.
 						</div>
 					</center>

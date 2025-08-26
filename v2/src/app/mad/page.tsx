@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
 import { dateDiff } from '@/lib/utils';
-import { curt, terry } from '@/lib/defines';
+import { personLink } from '@/lib/defines';
 
 const madness = [
 	{
@@ -137,7 +137,7 @@ const Mad = () => <>
 	<main className="etc">
 		<LetterHeader title="Contest Invocation" />
 		<blockquote className="annotation">
-			Sitting around the house with {curt} and {terry} a week or so ago - we came up with a plot.
+			Sitting around the house with {personLink('curt')} and {personLink('terry')} a week or so ago - we came up with a plot.
 			<p />
 			It occurred to us that we could liven up the site and have 
 			ourselves a deep larrrf if we were to entice those who use the

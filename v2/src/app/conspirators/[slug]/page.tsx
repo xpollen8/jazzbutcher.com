@@ -15,6 +15,7 @@ import Contributions from '@/components/Contributions';
 import useConspirator from '@/lib/useConspirator';
 
 const AlbumAppearance = ({ lookup, object }: any) => <FeaturedItem
+	link={object.href}
 	image={truncAt(';;', object?.thumb || '')}
 	title=<><b>{object?.title}</b> ({removeHTML(object?.dtreleased)})</>
 	>
@@ -32,8 +33,8 @@ const Releases = ({ releases, name }: any) => {
 	if (!releases?.numResults) return;
 	const albums: HashedType = {};
 	releases?.results?.forEach((a: any) => {
-		const { project='jbc', lookup, song, instruments, thumb, title, dtreleased } = a;
-		if (!albums[lookup]) albums[lookup] = { instruments: [], songs: {}, thumb, title, dtreleased };
+		const { project='jbc', lookup, song, instruments, href, thumb, title, dtreleased } = a;
+		if (!albums[lookup]) albums[lookup] = { instruments: [], songs: {}, href, thumb, title, dtreleased };
 		if (song) {
 			song?.split('$$')?.forEach((s: string) => {
 				if (!albums[lookup].songs[s]) albums[lookup].songs[s] = [];

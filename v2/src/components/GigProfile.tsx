@@ -297,6 +297,18 @@ const Content = ({ gig }: { gig: any }) => {
 		played: gig?.played
 	}
 
+	const justPix = gig?.media?.filter((t: any) => t.type === 'pix');
+	const photoSets = justPix?.reduce((acc: any, a: any) => {
+		const key = a?.credit;
+		return { ...acc, [key]: (acc[key] || 0) + 1};
+	}, {});
+
+	/*
+		any photoset w/fewer than X items per credit
+		will get combined in the UI
+	 */
+	const smallLimit = 5;
+	const largePhotoSets = Object?.keys(photoSets)?.filter((f: string) => photoSets[f] > smallLimit)?.map((f: string) => f);
 	// joins.media_* (gigmedia table)
 	gig?.media?.forEach((t: any) => {
 		const nameIt = `media_${t.type}`;
@@ -308,8 +320,10 @@ const Content = ({ gig }: { gig: any }) => {
 			case 'ticket':
 			*/
 			case 'pix':
-				if (!joins[nameIt]) joins[nameIt] = [];
-				joins[nameIt].push(t);
+				if (largePhotoSets?.includes(t.credit)) {
+					if (!joins[nameIt]) joins[nameIt] = [];
+					joins[nameIt].push(t);
+				}
 				break;
 		}
 	})
@@ -319,7 +333,7 @@ const Content = ({ gig }: { gig: any }) => {
 	 */
 	gig?.media?.forEach((t: any) => {
 		const nameIt = `media_combined`;
-		if (t.type === 'pix') return;
+		if (largePhotoSets?.includes(t.credit)  && t.type === 'pix') return;
 		if (!joins[nameIt]) joins[nameIt] = [];
 		joins[nameIt].push(t);
 	})
@@ -403,9 +417,9 @@ const Content = ({ gig }: { gig: any }) => {
 
 	const extras = [
 		{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
+		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
 		{ label: 'Images', lookup: 'media_combined', func: GigImages },
 		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
-		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
 		{ label: 'Also On The Bill', lookup: 'players_with', func: GigWith },
 		{ label: 'Cassettes', lookup: 'media_cassette', func: GigCassettes },
 		{ label: 'Tickets', lookup: 'media_ticket', func: GigTickets },

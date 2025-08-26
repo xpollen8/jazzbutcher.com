@@ -6888,17 +6888,50 @@ I haven't got a mind at all.
 	mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+16+Highest_BeautifulSnowWhiteHair.mp3,
 	caption=Excerpt from Philip Snow's interview tape #16,
 	images=${jbc_images}/ImKorb_1$$${jbc_images}/ImKorb_2$$,
-	lyrics=${literalizeCommas(
-
-	Well, he's just a baby
-	<br />He lives im Korb
-	<br />And his mother's so proud of him:
-	<br />He's got beautiful snow-white hair.
-
-	)},
-		onlist=
-		family
-	, patsez=${literalizeCommas(
+	patsez=
+#		${literalizeCommas(
+#One day, out of the blue, Higgins announced to general public without much fanfare. When I was a little baby, I used to have beautiful snow white hair. Well, occasionally, remarks would be made. Because I part part of the fun with O'Higgins is just being horrible to him. And, yeah, tart remarks would be made about beautiful snow white hair or someone would go, oi, snowy, or so forth.
+#<p />
+#And we got to the very last night of the tour, which was in a place called The Knick in Birmingham, Alabama. Hadn't been to Alabama before. You hear a lot about Alabama, don't you? You hear a lot about Birmingham, Alabama because that's where they shot fucking Martin Luther King, wasn't it? We just had an insane two and a half days in New Orleans, the Chilton Binge.
+#<p />
+#And we had to drive up to Alabama. We were all feeling a little bit fragile, and we're all feeling a little bit scared. And the Nick turned out to be a sort of large log cabin on the edge of town with, like, rather impressive motorcycles parked outside. Chicken wire. We weren't that panicked because Alex had said that he was gonna come up.
+#<p />
+#And we thought, well, if anyone can protect us in Birmingham, Alabama, it will be Alex children. We'll be alright. So we went in, tea time for a sound check, and sure enough, rednecks. You know, sort of Elvis Presley hairdos, the black shirts, the denim, rednecks. They didn't really pay us much mind.
+#<p />
+#We didn't really pay them much mind. It's a bit like alligators. You just everyone gets on with it. You know? It might have been a vague flicker of interest when the barman said, "we got a Pat Fish here?"
+#<p />
+#Yep. "I got Alex Chilton on the phone for you." I think one or two of them might have, like an eyebrow might have gone up a sixteenth of an inch. You know? And it was Alex on the dog, and he was going, like, "I'm fucked.  I'm not coming up tonight." I said, that's cool. It was great seeing you. Bye. Went back to doing a sound check.
+#<p />
+#Rednecks everywhere. Can't even remember what we had for dinner, but I don't remember leaving the nick or going to a restaurant or anything. I think we probably just got, like, you know, carry out pizza or some kind of muck like that. And this is the last night of the tour. Right?
+#<p />
+#So it's not it's not shaping up too great. You know, we've done two shows at the Roxy in Los Angeles. We've done two shows with Jeff Buckley in New York. We've done Vancouver. We've done Chicago.
+#<p />
+#And now we're in this wooden shed in a city that has a rather scary and hostile reputation with a few rednecks at the bar while we're trying to soundcheck. Alex isn't coming. It's all a bit the potential is there for disappointment. Couple of spliffs in the car park. Wait.
+#<p />
+#What? Why don't we start tonight with a jam? What? Well, they're all rednecks. They won't be listening.
+#<p />
+#You know, I mean, this could be pointless. Why don't we just have some fun? And instead of starting off with, like, party time or something, why don't we just get up there and have a massive great one called Jam? Yeah. Right?  Yeah. You alright? Brilliant.
+#<p />
+#Dave Whittemore was there, the website guy, with his little spaceship sports car type thing. And being the Internet crazy guy that he was, just general sort of sound scientist kind of chap, in his little spaceship car.
+#<p />
+#He'd somehow set up the capacity to broadcast. So he was he put his mics up. He'd been taping loads of the shows on that tour as Western Family prooves. And he set up his mics and actually sort of turned his car into a tiny radio station with a reach of about two or three miles. So we weren't just playing to the punters who turned up.
+#<p />
+#They turned up in reasonable numbers, actually. Didn't look too scary. But also broadcasting to anyone who's in the area, which is why there's a crack at the very top of that sort of I forget exactly what I say, but it's like, oh, you're on the radio. You wanna get down to Nick, my son? And it's literally the first song in the set.
+#<p />
+#It's literally Birmingham, Alabama. They are the rednecks that were there at tea time are still there, still drinking amongst the hipsters. And we start off with a shapeless one quart jam that lasts about seven minutes and concludes with me chanting, Allahu Akbar. Allahu Akbar. I thought, well, in for a penny, in for a dollar.
+#<p />
+#You know? Not the slightest problem. Not the slightest problem. Played through the whole set. Increasingly warm applause.
+#<p />
+#Finished the set. Having a quiet drink. Uh-oh. Here comes one of the rednecks. This is a bit this is you know, everything's gone so smooth, and here comes a redneck.
+#<p />
+#"You boys? You boys lack of breath, fresh air." Oh, that's very nice of you. And then he turns to Crouchy, and he goes Crouchy, he was, like, almost static on stage. Right?  Just plays. Turns around to Crouchy. He goes, "you need to calm down, little son."
+#<p />
+#So that is the story of beautiful Snow White Hair. It's basically an attempt to see if we could get ourselves shot.
+#<p />
+#And, you know, when all else failed, I tried the old. But, in the middle of it, we lift massively Spaceman 3 number, which is why the writing credits on there are so complicated because their writing credits were complicated enough. And then we sort of added stuff around it. But, yeah, I rather like the version of Amen in the middle.
+#	)}Pat Fish 'Miracles and Wonders' Interview #16;;;;2025-08-21$$
+#	---
+	${literalizeCommas(
 		There is no lyric as such.
 		"Im Korb" to you it's just GERMAN for
 		"in the basket", but to ${dooj}, ${pete} and me it
@@ -6911,6 +6944,17 @@ I haven't got a mind at all.
 		add a chorus of "Alla Akhbar!" (God is great, a Muslim
 		rallying call).  To your surprise, the locals will not shoot you.
 	)}
+	,
+	lyrics=${literalizeCommas(
+
+	Well, he's just a baby
+	<br />He lives im Korb
+	<br />And his mother's so proud of him:
+	<br />He's got beautiful snow-white hair.
+
+	)},
+		onlist=
+		family
 	)}
 #live	endif
 
@@ -9847,7 +9891,7 @@ Break out and find out tonight.
 #define	running_on_fumes.html
 #live	if (getval(page) = running_on_fumes.html)
 	${lyricsHeader(title=Running on Fumes,
-		video=https://youtube.com/embed/0Wk4tzKjvJ4;;planetruth;;;;2022-02-03;;Official Video,
+		video=https://youtube.com/embed/0Wk4tzKjvJ4;;\@PlanetruthPictures;;;;2022-02-03;;Official Video,
 		lyrics=${literalizeCommas(
 
 	Running on fumes, running on fumes, everybody's running on fumes<br />

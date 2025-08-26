@@ -1416,7 +1416,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220210_press_bucketfullofbrains.html,
-		thumb=${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;planetruth,
+		thumb=${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;\@PlanetruthPictures,
 		title=The Jazz Butcher,
 		headline=The Highest In The Land,
 		publication=Bucketfuill of Brains,
@@ -1614,7 +1614,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20230202_press_apessimistisneverdisappointed_highest.html,
-		thumb=${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;planetruth,
+		thumb=${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;\@PlanetruthPictures,
 		title=Running On Fumes,
 		headline=A Brief Review Of The New Album From The Jazz Butcher,
 		publication=A Pessimist Is Never Disappointed,
@@ -1830,7 +1830,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220208_press_popmatters.html,
 		credit=John Bergstrom,
-		thumb=${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;planetruth,
+		thumb=${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;\@PlanetruthPictures,
 		title=THE JAZZ BUTCHER’S FINAL ALBUM IS ‘THE HIGHEST IN THE LAND’,
 		headline=The final\, sadly posthumous album from the great Pat Fish (aka the Jazz Butcher) shows the British indie-pop legend was taken much too soon.,
 		publication=Pop Matters,
@@ -20095,7 +20095,7 @@ Fresh wind attained, the title track comes full of slightly detached braggadocio
 <p />
 It’s sad we’ll now never hear these songs played live – he performs some of them on The Fishy Mansions Sessions viewable at jazzbutcher.com – but across the span of The Highest In The Land he remains so with us, and as these songs unfold, spurring ideas, spinning tangents, and simply delighting, a conversation continues. For any artist that’s no small legacy, and as good a consolation as we get to take.
 <p />
-The Highest In The Land is available now on Tapete Records. The in-studio photo was taken by planetruth who also created the ‘Running On Fumes’ video.
+The Highest In The Land is available now on Tapete Records. The in-studio photo was taken by \@PlanetruthPictures who also created the ‘Running On Fumes’ video.
 		)}
 	)}
 	${jbc_footer}
@@ -21008,7 +21008,7 @@ We lost Pat Fish, aka The Jazz Butcher, last year, but he left us with a new alb
 <p />
 There’s a sense of finality to the album — “He’d been around the block and knew he was on the last lap” says Lee Russell — which comes through in songs. “Lemmy and Bowie and Prince all gone,” Pat sings on the jaunty “Running on Fumes” which is actually as much about the state of post-Brexit Britain as it is mortality. “I didn’t see it coming and I didn’t see you care / Is there anything as cheap as chasing profit from despair?”
 <p />
-The video for “Running on Fumes” is decidedly more lighthearted. Made by planetruth, with help from Bid of The Monochrome Set and Dhiren Basu, it features the adventures of a few stop-motion animated toy animals, including stuffed elephant and a number of fish, who are trying to escape their aquarium and make it to a Jazz Butcher show. “I shot the animation for the video at a low frame rate and put some digital motion blur on afterwards, to give it a dreamy, retro-kids tv look,” Ruth tells us. “In reality, this was, partly, due to time constraints and the challenges of trying to direct a drunk elephant and some delinquent stunt-fish. As with life, there were no real storyboards involved — they all just did what they could to navigate the chaos and get to the gig. I think Pat would have liked that.”
+The video for “Running on Fumes” is decidedly more lighthearted. Made by \@PlanetruthPictures, with help from Bid of The Monochrome Set and Dhiren Basu, it features the adventures of a few stop-motion animated toy animals, including stuffed elephant and a number of fish, who are trying to escape their aquarium and make it to a Jazz Butcher show. “I shot the animation for the video at a low frame rate and put some digital motion blur on afterwards, to give it a dreamy, retro-kids tv look,” Ruth tells us. “In reality, this was, partly, due to time constraints and the challenges of trying to direct a drunk elephant and some delinquent stunt-fish. As with life, there were no real storyboards involved — they all just did what they could to navigate the chaos and get to the gig. I think Pat would have liked that.”
 <p />
 ${embedVideo(url=https://youtube.com/embed/0Wk4tzKjvJ4)}
 <p />

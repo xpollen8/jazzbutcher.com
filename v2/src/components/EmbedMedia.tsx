@@ -2,7 +2,7 @@ import Link from 'next/link';
 import LinkAudio from '@/components/LinkAudio';
 import EmbedVideo from '@/components/EmbedVideo';
 import { imageBase, autoLink, ts2URI } from '@/lib/utils';
-import { expand, expandAll } from '@/lib/defines';
+import { expandAll } from '@/lib/defines';
 import { Attribution } from '@/components/GenericWeb';
 
 const Performers = ({ datetime }: { datetime: string }) => {
@@ -205,8 +205,8 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 						{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
 					</>}
 					{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
-					{(useAuthor) && <span className="smalltext">{' '}{expandAll(useAuthor, true)}</span>}
-					{/*(comment) && <span className="smalltext">{' '}{expandAll(comment, true)}</span>*/}
+					{(useAuthor) && <span className="smalltext">{' '}({expandAll(useAuthor)})</span>}
+					{/*(comment) && <span className="smalltext">{' '}{expandAll(comment)}</span>*/}
 					<EmbedVideo className={className} data={data} />
 					{children}
 					{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate || added} /></>}
@@ -216,15 +216,15 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 			return (<div className="listItem">
 				{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 				{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
-				{(useAuthor) && <span className="smalltext">{' '}{expandAll(useAuthor, true)} </span>}
-				{(comment) && <span className="smalltext">{' '}{expandAll(comment, true)} </span>}
+				{(useAuthor) && <span className="smalltext">{' '}({expandAll(useAuthor)}) </span>}
+				{(comment) && <span className="smalltext">{' '}{expandAll(comment)} </span>}
 				{/*(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate || added} /></>*/}
 			</div>);
 		}
 	}
 	return (<>
 		{main()}
-		{(performers) && <div className="smalltext"> {expandAll(performers, false)} </div>}
+		{(performers) && <div className="smalltext"> {expandAll(performers)} </div>}
 		<Performers datetime={datetime} />
 	</>);
 }

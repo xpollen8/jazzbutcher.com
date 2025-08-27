@@ -14,9 +14,9 @@ const AlbumCover = ({ album }: { album?: string }) => {
 	return <Image className="w-full" src={parseImage(release?.thumb)?.thumb || ''} width={250} height={250} alt="album cover" />
 }
 
-const PressCards = ({ items, project, showAlbum, preventAutoExpand=false }: any) =>
+const PressCards = ({ items, project, showAlbum, preventAutoExpand=false, title }: any) =>
 	(!!items?.length) && <details open={(!preventAutoExpand) || items.length < 10}>
-		<summary className="tagClickable">{pluralize(items.length, 'Press item')}</summary>
+		<summary className="tagClickable">{(title) ? title : pluralize(items.length, 'Press item')}</summary>
 		<div className="flex flex-wrap gap-3 justify-center">
 		{items?.map((item: any, key: number) => {
 			const thumb = truncAt(';;', item?.thumb || '');
@@ -38,6 +38,7 @@ const PressCards = ({ items, project, showAlbum, preventAutoExpand=false }: any)
 							{((parseInt(item?.bodycount, 10) > 0) || (item?.dtadded)) && <div className="smalltext">
 								<hr />
 								{(parseInt(item?.bodycount, 10) > 0) && <div>{item?.bodycount.toLocaleString()} words</div>}
+								{(item?.summary) && <div className="listItem">{item.summary}</div>}
 								{(item?.dtadded) && <div>{dateDiff(item.dtadded, 'added: ')}</div>}
 							</div>}
 						</div>

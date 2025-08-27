@@ -1242,8 +1242,8 @@ const	people: HashedType = {
 	john_silver: { name: 'John Silver' },
 	jonny_mattock: { name: "Jonny Mattock" },
 	jules: { name: "Julian Poole", aliases: [ "Julian", "Jules" ] },
-	karel: { name: 'Karel Von Dämmerung' },
-	kathie: { name: "Kathie McGinty" },
+	karel: { name: 'Karel Von Dämmerung', aliases: [ "Karel" ] },
+	kathie: { name: "Kathie McGinty", aliases: [ "Kathie" ] },
 	kathy: { name: "Kathy Schaer", aliases: [ "Misery" ] },
 	kathy_misery: { name: "Misery Wilson" },
 	kevin: { name: "Kevin Komoda" },
@@ -1337,7 +1337,7 @@ const	people: HashedType = {
 const snake = (s: string) => s?.toLowerCase()?.replace(/ /g, '_');
 
 // @ts-ignore
-const peopleArray = Object.keys(people)?.map((lookup: string) => {
+export const peopleArray = Object.keys(people)?.map((lookup: string) => {
 	const obj: any = people[lookup];
 	const href = obj?.href || `/conspirators/${obj?.name}`;
 	const aliases = [ lookup, ...(obj?.aliases || []) ];
@@ -1368,47 +1368,25 @@ export const personName = (str?: string) => {
 export const expandAll = (s?: string, commate: boolean = false) => {
 	if (!s) return;
 	if (typeof s !== 'string') return s;	// freaking React being passed in
-	const className = (commate) ? '' : "pr-1";
-	const res = s?.split(',')?.map((r: string, key: number, arr: any) => {
-		/*
-			group Cap words together
-		 */
-		const muso: string[] = [];
-		const inst: string[] = [];
-		const igno: string[] = [];
-		let looking = false;
-		r?.split(' ')?.forEach((x: string) => {
-			if (x?.startsWith('(')) {
-				looking = true;
-				igno.push(x);
-			} else if (x?.endsWith(')')) {
-				looking = false;
-				igno.push(x);
-			} else if (looking) {
-				igno.push(x);
-			} else if (x[0]?.match(/[A-Z]/)) {
-				muso.push(x);
-			} else if (x !== 'on') {
-				inst.push(x);
-			}
+
+	return s.replace(/(?:[A-Z][a-z']*\s*)+/g, (match) => `[[${match.trim()}]] `) // construct parsable string
+		?.split(']]') // now we're an array
+		?.map((w) => {
+			const text = w + ']]';
+			return text.split('[[')
+				?.map((chunk: string, key: number) => {
+					const str = chunk?.replace(', ', ',');
+					if (str?.endsWith(']]')) {
+						const musician = str.substr(0, str.length - 2)?.trim();
+						const known = isKnownPerson(musician);
+						return <span key={key}>
+							{' '}{(known) ? <Link href={known?.href}>{musician}</Link> : musician}
+						</span>
+					} else {
+						return str;
+					}
+				})?.flat();
 		});
-		const musician = muso.join(' ')?.trim();
-		const instruments = inst.join(' ')?.trim();
-		const ignore = igno?.join(' ')?.trim();
-		const known = isKnownPerson(musician);
-		return <span key={key} className={className}>
-			{(known) ?  <Link href={known?.href}>{musician}</Link> : musician}
-			{(!!ignore?.length) && <> {ignore}</>}
-			{(!!instruments?.length && !!musician?.length) && `:`}
-			{(!!instruments?.length) && instruments}
-			{(key !== arr?.length - 1) && <>,</>}
-		</span>
-	})?.filter((f: any) => f);
-	if (commate) {
-		return <>({res})</>;
-	} else {
-		return res;
-	}
 }
 
 export const personLink = (str?: string) => {

@@ -1481,8 +1481,8 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',NULL,1,8,'The Bes
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','set',NULL,1,9,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','warmup',NULL,1,1,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-18 00:00:00','warmup',NULL,1,2,'New Invention',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-19 16:00:00','set',NULL,1,1,'Topic: Robyn Hitchcock',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/19891119/19891119_JBC_MilwaukeeInterview_Hitchcock.mp3','Brian Kelly/David Whittemore','http://davidwhittemore.com',NULL,"2016-04-17");
-INSERT INTO `gigsong` VALUES (NULL,'1989-11-19 16:00:00','set',NULL,1,2,'Topic: David J\'s \"The Party\'s Over\"',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/19891119/19891119_JBC_MilwaukeeInterview_ThePartysOver.mp3','Brian Kelly/David Whittemore','http://davidwhittemore.com',NULL,"2016-04-17");
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-19 16:00:00','set',NULL,1,1,'Topic: Robyn Hitchcock',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/19891119/19891119_JBC_MilwaukeeInterview_Hitchcock.mp3','Brian Kelly & David Whittemore','http://davidwhittemore.com',NULL,"2016-04-17");
+INSERT INTO `gigsong` VALUES (NULL,'1989-11-19 16:00:00','set',NULL,1,2,'Topic: David J\'s \"The Party\'s Over\"',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/19891119/19891119_JBC_MilwaukeeInterview_ThePartysOver.mp3','Brian Kelly & David Whittemore','http://davidwhittemore.com',NULL,"2016-04-17");
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','encore',NULL,1,1,'Moscow Drug Club','B. B. Gabor',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','encore',NULL,1,2,'The Devil Is My Friend',NULL,'Lawrence: \"JBC:1, Edmonton: NIL\"',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-25 00:00:00','encore',NULL,2,1,'Partytime',NULL,'Cale verse, similar to Chicago version','Pat Fish',NULL,NULL,NULL,NULL,NULL);

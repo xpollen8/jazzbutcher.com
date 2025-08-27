@@ -4,7 +4,7 @@ import FeaturedItem from '@/components/FeaturedItem';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
-import { person, AutoLinkSong } from '@/lib/defines';
+import { isKnownMusician, AutoLinkSong } from '@/lib/defines';
 import { type HashedType, ts2URI, truncAt, pluralize } from '@/lib/utils';
 import { GigSearchResults } from '@/components/GigSearch';
 import { notFound } from 'next/navigation';
@@ -74,8 +74,8 @@ const Player = ({ results }: any) => (!!results?.numResults) && <GigSearchResult
 const Act = ({ results }: any) => (!!results?.numResults) && <GigSearchResults results={results} banner={(results: any) => <Tag>Shared the bill</Tag> } />
 
 const Conspirator = ({ params }: { params?: any }) => {
-	const conspirator = person(unescape(params?.slug));
-	const name = conspirator && conspirator.name || '';
+	const known = isKnownMusician(decodeURIComponent(params?.slug));
+	const name = known && known.name || '';
 	const { data, isLoading, error } = useConspirator(name);
 	const { releases, performer, support, pictures } = data || {};
 

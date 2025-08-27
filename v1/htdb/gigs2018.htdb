@@ -86,16 +86,16 @@
 		---
 		/images/20180301/20180301_condon.jpg$$
 		/images/20180301/20180301_arcane93_1.jpg$$
-		/images/20180301/20180301_arcane93_2.jpg;;${simon}$$
+		/images/20180301/20180301_arcane93_2.jpg;;Simon Taylor$$
 		/images/20180301/20180301_arcane93_3.jpg$$
-		/images/20180301/20180301_arcane93_4.jpg;;${stevenew}$$
+		/images/20180301/20180301_arcane93_4.jpg;;Steve New$$
 		/images/20180301/20180301_arcane93_5.jpg$$
-		/images/20180301/20180301_arcane93_6.jpg$$
+		/images/20180301/20180301_arcane93_6.jpg;;${literalizeCommas(Pat, Lee Brooks, Simon Taylor)}$$
 		/images/20180301/20180301_arcane93_7.jpg;;Lee Brooks$$
 		/images/20180301/20180301_arcane93_8.jpg$$
 		/images/20180301/20180301_arcane93_9.jpg$$
 		/images/20180301/20180301_arcane93_10.jpg$$
-		/images/20180301/20180301_arcane93_11.jpg$$
+		/images/20180301/20180301_arcane93_11.jpg;;${literalizeCommas(Pat, Lee Brooks)}$$
 		/images/20180301/20180301_arcane93_12.jpg;;Nick Bandy$$
 		/images/20180301/20180301_arcane93_13.jpg$$
 		/images/20180301/20180301_arcane93_14.jpg$$

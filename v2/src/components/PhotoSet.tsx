@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Tag from '@/components/Tag';
 import { parseImage } from '@/lib/utils';
+import { expandAll } from '@/lib/defines';
 import { removeHTML } from '@/components/GenericWeb';
 
 import { Credit } from '@/components/GenericWeb';
@@ -27,8 +28,8 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 				{(image) && <Link href={useLink}>{(thumb) && <Image className="rounded-sm" key={key} unoptimized src={thumb} width={350} height={350} alt={alt} />}</Link>}
 				<div className="text-sm font-light">
 				{(credit_date?.length === 4) && <div>{credit_date}</div>}
-				{(caption) && <div className="px-2">{removeHTML(caption)}</div>}
-				{(alt) && <div className="px-2">{alt}</div>}
+				{(caption) && <div>{expandAll(caption)}</div>}
+				{(alt) && <div>{expandAll(alt)}</div>}
 				{(body) && <div className="px-2">&quot;<i>{body}</i>&quot;</div>}
 				{(location) && <div className="px-2">{location}</div>}
 				{(useCredit) && <div className="px-2"><Credit g={useCredit} u={useURL} d={(credit_date?.length === 4) ? '' : credit_date} /></div>}

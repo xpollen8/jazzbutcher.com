@@ -18,8 +18,9 @@ const Conspirators = () => {
 		<Header section='conspirators' />
 		<main>
 			<SectionOptions section='conspirators' />
-			{peopleArray.filter((p: any) => !p.act ).sort(sortByLastName).map((props: any, key: number) => {
-				const letter = props.name.split(' ').pop().substr(0, 1);
+			{peopleArray.filter((p: any) => !p.act && p.isParent ).sort(sortByLastName).map((person: any, key: number) => {
+				const { name, href, lookup } = person;
+				const letter = name.split(' ').pop().substr(0, 1);
 				let banner;
 				if (letter !== lastLetter) {
 					banner = <Tag>{letter}</Tag>;
@@ -27,7 +28,7 @@ const Conspirators = () => {
 				}
 				return <div key={key}>
 					{banner}
-					<Link className="ml-5" href={`/conspirators/${(props?.href && !props?.href.startsWith('http')) ? props?.href : props.name}`}>{props.name}</Link>
+					<Link className="ml-5" href={href}>{name}</Link>
 				</div>
 			})}
 		</main>

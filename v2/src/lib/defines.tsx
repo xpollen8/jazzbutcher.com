@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { linkInternal, linkExternal } from './utils';
+import { type HashedType, linkInternal, linkExternal } from './utils';
 
 const linkSearch = ({ name, text, act }:
 {
@@ -1112,6 +1112,7 @@ export const AutoLinkSong = (str?: string) => {
 export const AutoLinkPlayer = (str?: string) => {
   if (!str?.length) return;
 	const match = str.match(/\[\[(?:act|person):(.*?)\]\]/);
+	/*
 	if (match) {
 		const lookup = match[1]?.replace("'", '').replace('.', '');
 		const found = lookup && mapPerformers[lookup];
@@ -1119,6 +1120,14 @@ export const AutoLinkPlayer = (str?: string) => {
 		return expand(found);
 	}
 	return AutoLinkAct(str);	// maybe it is an Act?
+	*/
+	const found = match && match[1];
+	if (found) {
+		const player = isKnownPerson(found.replace(/_/g, ' '));
+		if (!player) return str;
+		return <Link href={player?.href}>{player?.name}</Link>;
+	}
+	return str;
 }
 
 export const AutoLinkAct = (str?: string) => {
@@ -1173,177 +1182,222 @@ export const expand = (str?: string, treatAsHTML: boolean = false) => {
 	return doIt(str?.trim());
 }
 
-export const	people = {
-	anita_allbright: { name:"Anita Allbright" },
-	astor: { href: "peter_astor", name: "Peter Astor" },
-	at: { href: "alice_thompson", name: "Alice Thompson" },
-	barker: { href: "david_barker", name: "David E. Barker" },
-	beirne: { href: "pat_beirne", name: "Pat Beirne" },
-	blair: { name: "Blair MacDonald", href: "blair_macdonald" },
-	botty: { href: "ian_botterill", name: "Ian Botterill" },
-	botty_bman: { href: "ian_botterill", name: "B-Man" },
-	brent: { name: "Brent Bambury", href: "brent_bambury" },
-	burrell: { href: "tim_burrell", name: "Tim Burrell" },
-	butch: { name: "The Butcher" },
-	terry: { name: "Terry Walpole", act: true },
-	tom_hall: { href: "/tomhall", name: "Tom Hall", act: true },
-	colin: { href: "colin", name: "Colin Harris" },
-	curt: { href: "curtis_johnson", name: "Curtis E. Johnson" },
-	curt_eman: { href: "curtis_johnson", name: "E-Man" },
-	damm: { href: "von_dammerung", name: "Von Dämmerung" },
+export const	people: HashedType = {
+	aero: { name: "The Blue Aeroplanes", act: true },
+	anita_allbright: { name: "Anita Allbright" },
+	astor: { name: "Peter Astor", aliases: [ "Pete" ] },
+	at: { name: "Alice Thompson", aliases: [ "Alice" ] },
+	barker: { name: "David E. Barker", aliases: [ "Barker" ] },
+	bd: { name: "Ben Davis" },
+	beirne: { name: "Pat Beirne" },
+	blair: { name: "Blair MacDonald" },
+	botty: { name: "Ian Botterill", aliases: [ "Botty", "Bott", "Bot" ] },
+	botty_bman: { name: "B-Man" },
+	braind: { name: "Braindead Soundmachine", act: true },
+	brent: { name: "Brent Bambury" },
+	brent_bambury: { name: "Brent Bambury" },
+	burrell: { name: "Tim Burrell" },
+	colin: { name: "Colin Harris" },
+	coonce: { name: "Cole Coonce" },
+	curt: { name: "Curtis E. Johnson", aliases: [ "Curt" ] },
+	curt_eman: { name: "E-Man" },
+	damm: { name: "Von Dämmerung" },
 	deirdre: { name: "Deirdre O'Donoghue" },
-	del: { href: "david_whittemore", name: "David Whittemore" },
-	dj: { href: "david_j", name: "David J." },
-	dooj: { href: "dooj_wilkinson", name: "Dooj Wilkinson" },
-	erol: { name: "Erol Suleyman", href: "erol_suleyman" },
+	del: { name: "David Whittemore" },
+	dj: { name: "David J." },
+	dooj: { name: "Dooj Wilkinson", aliases: [ "Dooj" ] },
+	eg: { href: '/projects/black_eg', name: 'The Black Eg', act: true },
+	emerson_hunt: { name: "Emerson Hunt" },
+	emil: { name: 'Emil Von Dämmerung' },
+	erol: { name: "Erol Suleyman" },
 	felce: { name: "Dave Felce" },
-	felix: { href: "felix_ray", name: "Felix Ray" },
-	gab: { href: "gabriel_turner", name: "Gabriel Turner" },
-	garofalo: { href: "steve_garofalo", name: "Steve Garofalo" },
+	felix: { name: "Felix Ray", aliases: [ "Felix" ] },
+	gab: { name: "Gabriel Turner", aliases: [ "Gabriel" ] },
+	garofalo: { name: "Steve Garofalo" },
 	gerard: { name: "Gerard Langley" },
-	gould: { href: 'greenwood_goulding', name: "Greenwood Goulding" },
-	green: { href: "alex_green", name: "Alex Green" },
-	hask: { href: "kevin_haskins", name: "Kevin Haskins" },
-	hend: { href: "dave_henderson", name: "Dave Henderson" },
-	hook: { name: "Paul Hookham", href: "paul_hookham" },
-	iain: { href: "iain_ohiggins", name: "Iain O'Higgins" },
-	indge: { href: "alastair_indge", name: "Alastair Indge" },
-	is: { href: 'ian_sturgess', name: "Ian Sturgess" },
-	joby: { href: 'joby_palmer', name: "Joby Palmer" },
-	joe: { href: 'joe_foster', name:"Joe Foster" },
-	tony: { href: 'tony_foster', name:"Tony Foster" },
-	joe_woolley: { name: "Joe Woolley", href: 'joe_woolley' },
-	joea: { href: "joe_allen", name: "Joe Allen" },
-	joel_harries: { href: "joel_harries", name: "Joel Harries" },
-	john_silver: { name: "John Silver" },
-	jonny_mattock: { href: "jonny_mattock", name: "Jonny Mattock" },
-	jules: { href: "julian_poole", name: "Julian Poole" },
-	karel: { href: "von_dammerung", name: 'Karel Von Dämmerung' },
-	otto: { href: "von_dammerung", name: 'Otto Von Dämmerung' },
-	emil: { href: "von_dammerung", name: 'Emil Von Dämmerung' },
-	kathie: { href: "kathie_mcginty", name: "Kathie McGinty" },
-	kathy: { href: "kathy_schaer", name: "Kathy Schaer" },
-	kathy_misery: { href: "kathy_schaer", name: "Misery Wilson" },
+	gould: { name: "Greenwood Goulding" },
+	green: { name: "Alex Green" },
+	hask: { name: "Kevin Haskins", aliases: [ "Kevin" ] },
+	hend: { name: "Dave Henderson" },
+	hitch: { name: "Robyn Hitchcock", act: true },
+	hook: { name: "Paul Hookham" },
+	iain: { name: "Iain O'Higgins", aliases: [ "Iain", "O'Higgins" ] },
+	indge: { name: "Alastair Indge" },
+	is: { name: "Ian Sturgess" },
+	joby: { name: "Joby Palmer" },
+	joe: { name:"Joe Foster" },
+	joe_woolley: { name: "Joe Woolley" },
+	joea: { name: "Joe Allen" },
+	joel_harries: { name: "Joel Harries" },
+	john_silver: { name: 'John Silver' },
+	jonny_mattock: { name: "Jonny Mattock" },
+	jules: { name: "Julian Poole", aliases: [ "Julian", "Jules" ] },
+	karel: { name: 'Karel Von Dämmerung' },
+	kathie: { name: "Kathie McGinty" },
+	kathy: { name: "Kathy Schaer" },
+	kathy_misery: { name: "Misery Wilson" },
 	kevin: { name: "Kevin Komoda" },
-	kizzy: { href: "kizzy_ocallaghan", name: "Kizzy O'Callaghan" },
-	larry: { href: "laurence_okeefe", name: "Laurence O'Keefe" },
-	lb: { href: "david_barker", name: "Lionel Brando" },
-	lix: { href: "alex_lee", name: "Alex Lee" },
+	kizzy: { name: "Kizzy O'Callaghan", aliases: [ "Kizzy" ] },
+	larry: { name: "Laurence O'Keefe", aliases: [ "Laurence", "Larry" ] },
+	lb: { name: "Lionel Brando" },
+	lee_brooks: { name: "Lee Brooks" },
+	lix: { name: "Alex Lee" },
+	ll: { name: "Louis Leroi" },
+	lohan: { name: "Richard Lohan" },
+	loony: { name: "Pascal Legras" },
+	lucien: { name: "Lucien Borderline" },
+	mark_hadley: { name: "Mark Hadley" },
+	mark_refoy: { name: "Mark Refoy" },
 	martin_k_daley: { name: "Martin K Daley" },
-	mark_hadley: { href: "marc_hadley", name: "Mark Hadley" },
-	ll: { href: "marc_hadley", name: "Louis Leroi" },
-	lohan: { name: "Richard Lohan", href: "richard_lohan" },
-	mark_refoy: { href: "mark_refoy", name: "Mark Refoy" },
-	max: { href: "max_eider", name: "Max Eider" },
-	max_read: { name: "Max Read", href: "max_read" },
+	max: { name: "Max Eider", aliases: [ "Max", "Eider" ] },
+	max_read: { name: "Max Read" },
 	mercer: { href: "https://www.mickmercer.com", name: "Mick Mercer" },
-	mick: { name: "Mick Packwood", href: "mick_packwood" },
-	mike_novakovic: { name: "Mike Novakovic", href: "mike_novakovic" },
-	mitch: { href: "mitch_jenkins", name: "Mitch Jenkins" },
-	emerson_hunt: { href: "emerson_hunt", name: "Emerson Hunt" },
-	morgan: { href: "dave_morgan", name: "Dave Morgan" },
-	nick: { href: "nick_burson", name: "Nick Burson" },
-	owen: { href: "owen_jones", name: "Owen Jones" },
-	pat: { href: "https://patfish.com", name: "Pat Fish" },
-	//pat_fish: person_pat,
-	//duo: <>{pat}, {max}</>
-	//solo: pat;
-	//davidj: dj;
+	mick: { name: "Mick Packwood" },
+	mike_novakovic: { name: "Mike Novakovic" },
+	mildew: { name: "Downey Mildew", act: true },
+	mitch: { name: "Mitch Jenkins" },
+	morgan: { name: "Dave Morgan" },
+	nick: { name: "Nick Burson" },
+	nick_bandy: { name: "Nick Bandy" },
+	novak: { name: "Alex Novak" },
+	otto: { name: 'Otto Von Dämmerung' },
+	owen: { name: "Owen Jones", aliases: [ "Owen", "Owen P. Jones" ] },
+	pat: { href: "https://patfish.com", name: "Pat Fish", aliases: [ "Pat", "Butch", "The Butcher", "Headstone" ] },
 	pat_headstone: { href: "https://patfish.com", name: "Wilson Headstone" },
-	paul: { href: "paul_mulreany", name: "Paul Mulreany" },
-	pete: { href: "peter_crouch", name: "Peter Crouch" },
-	rev: { href: "martin_stebbing", name: "Martin Stebbing", aka: "Rev. Botus Whiteblood Fleming" },
-	richard: { href: "richard_formby", name: "Richard Formby" },
-	rivers: { href: "john_rivers", name: "John A. Rivers" },
-	rodney: { href: "rodney_allen", name: "Rodney Allen" },
-	rolo: { href: "rolo_mcginty", name: "Rolo McGinty" },
-	russ: { href: "russell_cooper", name: "Russell Cooper" },
-	russ_agent: { href: "russell_cooper", name: "Agent Wilson" },
-	simon: { href: "simon_taylor", name: "Simon Taylor" },
-	simon_mawby: { name: "Simon Mawby" },
+	pat_kenneally: { name: "Pat Kenneally" },
+	paul: { name: "Paul Mulreany", alias: [ "Paul", "Mulreany" ] },
+	perfect: { name: "The Perfect Disaster", act: true },
+	pete: { name: "Peter Crouch", alias: [ "Crouchy" ] },
+	rev: { name: "Martin Stebbing", aliases: [ "Rev. Botus Whiteblood Fleming" ] },
+	richard: { name: "Richard Formby", aliases: [ "Richard" ] },
+	rivers: { name: "John A. Rivers" },
+	rodney: { name: "Rodney Allen" },
+	rolo: { name: "Rolo McGinty", aliases: [ "Rolo", "King" ] },
+	russ: { name: "Russell Cooper" },
+	russ_agent: { name: "Agent Wilson" },
+	simon: { name: "Simon Taylor" },
+	simon_mawby: { name: 'Simon Mawby' },
+	simon_taylor: { name: "Simon Taylor" },
 	sm: { name: "Steve Musgrove" },
-	sonic: { href: "sonic_boom", name: "Sonic Boom" },
-	steve: { href: "steve_valentine", name: "Steve Valentine" },
-	steve_beswick: { href: "steve_beswick", name: "Steve Beswick" },
-	steve_gordon: { href: "steve_gordon", name: "Steve Gordon" },
-	steve_gordon_gman: { href: "steve_gordon", name: "G-Man" },
-	stevenew: { href: "steve_new", name: "Steve New" },
-	lee_brooks: { href: "lee_brooks", name: "Lee Brooks" },
-	pat_kenneally: { href: "pat_kenneally", name: "Pat Kenneally" },
-	nick_bandy: { href: "nick_bandy", name: "Nick Bandy" },
-	sumishta: { href: "sumishta_brahm", name: "Sumishta Brahm" },
-	sumo_botty: { href: "ian_botterill", name: "Mister B" },
-	sumo_kathie: { href: "kathie_mcginty", name: "Kathie M" },
-	sumo_kathy: { href: "kathy_schaer", name: "Special K" },
+	sonic: { name: "Sonic Boom", aliases: [ "Sonic" ] },
+	steve: { name: "Steve Valentine" },
+	steve_beswick: { name: "Steve Beswick" },
+	steve_gordon: { name: "Steve Gordon" },
+	steve_gordon_gman: { name: "G-Man" },
+	stevenew: { name: "Steve New" },
+	strange: { name: "Strangelove", act: true },
+	sumishta: { name: "Sumishta Brahm", aliases: [ "Sumishta" ] },
+	sumo_botty: { name: "Mister B" },
+	sumo_kathie: { name: "Kathie M" },
+	sumo_kathy: { name: "Special K" },
 	sumo_pat: { href: "https://patfish.com", name: "Headstone" },
-	sumo_russ: { href: "russell_cooper", name: "Agent Russell Cooper" },
-	tim_harries: { href: "tim_harries", name: "Tim Harries" },
+	sumo_russ: { name: "Agent Russell Cooper" },
+	terry: { name: "Terry Walpole", act: true },
+	tim_harries: { name: "Tim Harries" },
+	tom_hall: { href: "/tomhall", name: "Tom Hall", act: true },
+	tony: { name:"Tony Foster" },
+	tops: { name: "The Woodentops", act: true },
 	undertakers: { name: "The Undertakers", act: true },
-	wilson: { href: "https://wilsondub.com", name: "Wilson", act: true },
-	wolfi: { href: "wolfgang_tschegg", name: "Wolfgang Tschegg" },
-
+	weather: { name: "Weather Prophets", act: true },
+	wilson: { href: '/projects/wilson', name: 'Wilson', act: true },
+	wolfi: { name: "Wolfgang Tschegg", act: true },
 //
 //	producers/engineers/soundmen/other
 //
 	proctor: { name: "Steve Proctor" },
 	howy: { name: "Howard Turner" },
-	momus: { name: "Momus", act: true },
-	//_4AD: { name: "4AD" },
-	coonce: { name: "Cole Coonce" },
-	vu: { href: "http://www.rocknroll.net/loureed/", name: "Velvet Underground", act: true },
-	richman: { name: "Jonathan Richman", act: true },
 	dronesclub: { href: "https://thedronesclub.co.uk/", name: "The Drones Club", act: true },
 	space: { href: "http://www.spiritualized.com/", name: "Spacemen 3", act: true },
-	aero: { name: "The Blue Aeroplanes", act: true },
-	haus: { href: "http://www.partium.com/~andrewb/bauhaus/", name: "Bauhaus", act: true },
 	tractors: { href: "http://www.geocities.com/Nashville/Stage/8818/favorite.htm", name: "Stranger Tractors", act: true },
 	poi: { href: "http://www.poidogpondering.com/", name: "Poi Dog Pondering", act: true },
 	bwatch: { href: "http://www.theblackwatchmusic.com", name: "The Black Watch", act: true },
 	purelove: { href: "http://ourworld.compuserve.com/homepages/RobertFliegel/purelove.htm", name: "Purelove", act: true },
-	eg: { href: "/projects/black_eg", name: "The Black Eg", act: true },
-	cave: { name: "Nick Cave", act: true },
 	cvb: { name: "Camper Van Beethoven", act: true },
-	mbv: { name: "My Bloody Valentine", act: true },
-	tvamp: { name: "Transvision Vamp", act: true },
-	swynn: { name: "Steve Wynn", act: true },
-	bangles: { name: "The Bangles", act: true },
 	cale: { href: "http://john-cale.com", name: "John Cale", act: true },
-	braind: { name: "Braindead Soundmachine", act: true },
 	eno: { name: "Brian Eno", act: true },
-	weather: { name: "Weather Prophets", act: true },
-	hitch: { name: "Robyn Hitchcock", act: true },
-	perfect: { name: "The Perfect Disaster", act: true },
-	spect: { name: "Spectrum", act: true },
-	belly: { name: "Belly", act: true },
-	tops: { name: "The Woodentops", act: true },
 	rocket: { name: "Love And Rockets", act: true },
-	scream: { name: "Primal Scream", act: true },
-	strange: { name: "Strangelove", act: true },
 	levit: { name: "Levitation", act: true },
-	kmfdm: { name: "KMFDM", act: true },
-	mildew: { name: "Downey Mildew", act: true },
-	star: { name: "Big Star", act: true },
 //
 //	artwork
 //
 	dave_coverly: { href: "https://www.speedbump.com/", name: "Dave Coverly" },
-	lucien: { name: "Lucien Borderline", href: "lucien_borderline" },
-	bd: { name: "Ben Davis" },
-	novak: { name: "Alex Novak", href: "alex_novak" },
-	loony: { name: "Pascal Legras", href: "pascal_legras" },
-//
-//	jbc-list people
-//
 };
 
+const snake = (s: string) => s?.toLowerCase()?.replace(/ /g, '_');
+
 // @ts-ignore
-export const peopleArray = Object.keys(people)?.map((lookup: string) => ({...people[lookup], lookup }));
+export const peopleArray = Object.keys(people)?.map((lookup: string) => {
+	const obj: any = people[lookup];
+	const href = obj?.href || `/conspirators/${obj?.name}`;
+	const aliases = [ lookup, ...(obj?.aliases || []) ];
+	const add = aliases?.map((name: string) => ({ href, lookup, name, aliases, snake: snake(name) })) || [];
+	return [ {...obj, isParent: true, href, lookup, aliases, snake: snake(obj?.name) }, ...add ];
+}).flat();
+
+const otherArray = [
+	{ name: 'Brian Kelly', lookup: 'Brian Kelly' },
+	{ name: 'James Duval', lookup: 'James Duval', aliases: [ 'Jimmy Duval', 'Duval' ] },
+]?.map((obj: any) => {
+	const lookup = obj?.lookup;
+	const href = `/contributions/${lookup}`;
+	const aliases = [ lookup, ...(obj?.aliases || []) ];
+	const add = aliases?.map((name: string) => ({ href, lookup, name, aliases })) || [];
+	return [ { ...obj, href, lookup, aliases }, ...add ];
+}).flat();
 
 export const isKnownMusician = (str?: string) => peopleArray?.find((a: any) => a?.name === str);
+export const isKnownOther = (str?: string) => otherArray?.find((a: any) => a?.name === str);
+export const isKnownPerson  = (str?: string) => isKnownMusician(str) || isKnownOther(str);
 
 export const personName = (str?: string) => {
 	const { lookup, name, href, act }: any = person(str) || {};
 	return (name) ? name : str;
+}
+
+export const expandAll = (s?: string, commate: boolean = false) => {
+	if (!s) return;
+	if (typeof s !== 'string') return s;	// freaking React being passed in
+	const className = (commate) ? '' : "pr-1";
+	const res = s?.split(',')?.map((r: string, key: number, arr: any) => {
+		/*
+			group Cap words together
+		 */
+		const muso: string[] = [];
+		const inst: string[] = [];
+		const igno: string[] = [];
+		let looking = false;
+		r?.split(' ')?.forEach((x: string) => {
+			if (x?.startsWith('(')) {
+				looking = true;
+				igno.push(x);
+			} else if (x?.endsWith(')')) {
+				looking = false;
+				igno.push(x);
+			} else if (looking) {
+				igno.push(x);
+			} else if (x[0]?.match(/[A-Z]/)) {
+				muso.push(x);
+			} else if (x !== 'on') {
+				inst.push(x);
+			}
+		});
+		const musician = muso.join(' ')?.trim();
+		const instruments = inst.join(' ')?.trim();
+		const ignore = igno?.join(' ')?.trim();
+		const known = isKnownPerson(musician);
+		return <span key={key} className={className}>
+			{(known) ?  <Link href={known?.href}>{musician}</Link> : musician}
+			{(!!ignore?.length) && <> {ignore}</>}
+			{(!!instruments?.length && !!musician?.length) && `:`}
+			{(!!instruments?.length) && instruments}
+			{(key !== arr?.length - 1) && <>,</>}
+		</span>
+	})?.filter((f: any) => f);
+	if (commate) {
+		return <>({res})</>;
+	} else {
+		return res;
+	}
 }
 
 export const personLink = (str?: string) => {
@@ -1360,5 +1414,7 @@ export const personLink = (str?: string) => {
 export const person = (str?: string) => {
 	if (!str) return;
 	const ll = str?.toLowerCase();
-	return peopleArray.find((p: any) => ll === p.lookup || ll === p.name?.toLowerCase() || ll === p.href);
+	const href = ll?.replace(/ /g, '_');
+	return peopleArray.find((p: any) => ll === p.snake || ll === p.lookup || ll === p.name?.toLowerCase() || ll === p.href);
 };
+

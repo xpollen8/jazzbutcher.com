@@ -58,7 +58,7 @@ const GigMedia = ({ data }: any) => {
 
 	const useDate = (data?.credit_date === '0000-00-00 00:00:00') ? '' : data?.credit_date;
 	return (<div className="image drop-shadow-md" style={{ width: width / 1.45 }}>
-		<Link href={`${image}`}>
+		<Link href={image}>
 			<Image unoptimized src={thumb} width={width / 1.5} height={height / 1.5} alt={alt} className="max-w-md" />
 		</Link>
 		<ParsedCaption {...data} credit_date={useDate} />
@@ -337,7 +337,6 @@ const Content = ({ gig }: { gig: any }) => {
 		if (!joins[nameIt]) joins[nameIt] = [];
 		joins[nameIt].push(t);
 	})
-	console.log("media_combined", joins['media_combined']);
 
 	// joins.players_* (performance table)
 	gig?.players?.forEach((t: any) => {

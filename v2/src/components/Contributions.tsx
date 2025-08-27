@@ -22,7 +22,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 			return {
 				src: c?.image,
 				added: c?.added,
-				alt: removeHTML(c?.caption) || '',
+				alt: c?.caption || '',
 			}
 		});
 		return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
@@ -132,7 +132,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				summary: (r?.image_caption) ? removeHTML(r?.image_caption)?.substr(0, 50) + '...' : '',
 				href: ts2URI(r?.datetime),
 				image: r?.image,
-				caption: r?.image_caption,
+				caption: removeHTML(r?.image_caption),
 			}
 		);
 	});

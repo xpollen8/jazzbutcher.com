@@ -139,3 +139,12 @@ export const ParsedCaption = (props: { credit?: string, url?: string, credit_url
 }
 
 export const RenderHTML = ({ body, className, children }: { body?: string, className?: string, children?: React.ReactNode }) => body && <div className={className}><div dangerouslySetInnerHTML={{ __html: body }} />{children}</div>
+
+
+export const summaryBodySearch = (body: string, name: string, window: number = 100) => {
+	if (!body) return '';
+	const useBody = removeHTML(body)?.replace(/<br\/>/g, '') || '';
+	const first = useBody.toLowerCase().indexOf(name.toLowerCase());
+	const begin = (first > window) ? first - window : first;
+	return `...` + useBody.substr(begin, window * 2) + `...`;
+}

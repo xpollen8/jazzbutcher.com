@@ -305,14 +305,14 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const pictures = await returnFilteredPath('gigmedias', 'type', 'pix', true, (candidate: HashedType, value: string, exact: boolean) => {
 					return candidate?.image_caption?.toLowerCase()?.includes(args?.toLowerCase());
 				});
-				const press =  await returnFilteredPath('presses', 'body', args, false);
+				const inpress =  await returnFilteredPath('presses', 'body', args, false);
 
 				return {
 					releases: joinOn('lookup', releases?.results, releasesStatic.results),
 					performer,
 					support,
 					pictures,
-					press,
+					inpress,
 				};
 			}
 			case 'songs_by_datetime': {
@@ -505,11 +505,13 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const gigsong = await apiData('gigsong_contributions', args);
 				const gigtext = await apiData('gigtext_contributions', args);
 				const press = await apiData('press_contributions', args);
+				const inpress = await returnFilteredPath('presses', 'body', args?.filter?.value, false);
 				return {
 					gigmedia: findRecent(gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
 					gigsong: findRecent(gigsong, ['added'], makeOptions(args, 'gigsong')),
 					gigtext: findRecent(gigtext, ['credit_date'], makeOptions(args, 'gigtext')),
 					press: findRecent(press, ['dtadded'], makeOptions(args, 'press')),
+					inpress,
 				}
 			}
 			case 'releases_by_performer': {

@@ -7,7 +7,7 @@ const Person = ({ params }: { params?: any }) => {
 	const person = decodeURIComponent(params?.who);
 	const known = isKnownPerson(person);
 	return <>
-		<Header section="contributions" title={known?.lookup} />
+		<Header section="contributions" title={person} />
 		<main>
 			<Contributions label={person} options={{
 				all: true,

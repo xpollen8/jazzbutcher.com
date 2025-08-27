@@ -1,11 +1,20 @@
 "use client"
 
 import Link from 'next/link';
-import { removeHTML } from '@/components/GenericWeb';
+import { summaryBodySearch, removeHTML } from '@/components/GenericWeb';
 import useContributions from '@/lib/useContributions';
 import { type HashedType, pluralize, dateAgo, ts2URI } from '@/lib/utils';
+import { expandAll } from '@/lib/defines';
 import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
+import PressCards from '@/components/PressCards';
+
+const InPress = ({ inpress, name }: any) => {
+	if (!inpress?.numResults) return;
+	return <PressCards title={pluralize(inpress.numResults, 'press article', `"${name}" appears in`)} preventAutoExpand={true} items={inpress?.results?.map((p: any) => {
+		return { ...p, summary: expandAll(summaryBodySearch(p?.body, name)) }
+	})} />
+}
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
@@ -84,7 +93,7 @@ const prettyType = (type: string, t?: string) => {
 const Contributions = ({ options, label='Community contribution' }: HashedType) => {
 	const { data, isLoading, error} = useContributions(options);
 	if (!data) return;
-	const { gigmedia, gigtext, gigsong, press } = data || {};
+	const { gigmedia, gigtext, gigsong, press, inpress } = data || {};
 	const contributions: HashedType = {};
 	const recent = [ gigmedia?.results[0]?.credit_date, gigsong?.results[0]?.added, gigtext?.results[0]?.credit_date, press?.results[0]?.dtadded]?.sort((a: any, b: any) => b?.localeCompare(a))[0];
 	let total = 0;
@@ -150,6 +159,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		);
 	});
 	return <Loading isLoading={isLoading} >
+		<InPress inpress={inpress} name={options?.filter?.value} />
 		{(!!total) && <AllContributions contributions={contributions} total={total} recent={recent} label={label} options={options} />}
 	</Loading>
 }

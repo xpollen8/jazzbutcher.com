@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import Tag from '@/components/Tag';
+import PressCards from '@/components/PressCards';
 import { expandAll, isKnownMusician, AutoLinkSong } from '@/lib/defines';
 import { type HashedType, ts2URI, truncAt, pluralize, dateDisplay } from '@/lib/utils';
 import { GigSearchResults } from '@/components/GigSearch';
@@ -91,12 +92,18 @@ const PressSummary = ({ item, name }: any) => {
 
 const Press = ({ press, name }: any) => {
 	if (!press?.numResults) return;
-	return <details>
-		<summary className="tagClickable">{pluralize(press.numResults, 'press article', `"${name}" appears in`)}</summary>
-		{press.results.map((p: any, key: number) => {
-			return <div className="listItem" key={key}><PressSummary item={p} name={name} /></div>
-		})}
-	</details>
+		return <PressCards title={pluralize(press.numResults, 'press article', `"${name}" appears in`)} preventAutoExpand={true} items={press?.results?.map((p: any) => {
+			return { ...p, summary: expandAll(contextSearch(p?.body, name)) }
+		})} />
+//	return <details>
+//		<summary className="tagClickable">{pluralize(press.numResults, 'press article', `"${name}" appears in`)}</summary>
+//		return <PressCards title={pluralize(press.numResults, 'press article', `"${name}" appears in`)} items={press?.results?.map((p: any) => {
+//			return { ...p, summary: expandAll(contextSearch(p?.body, name)) }
+//		})} />
+//		{/*press.results.map((p: any, key: number) => {
+//			return <div className="listItem" key={key}><PressSummary item={p} name={name} /></div>
+//		})*/}
+//	</details>
 }
 
 const Player = ({ results }: any) => (!!results?.numResults) && <GigSearchResults results={results} banner={(results: any) => <Tag>Played in the band</Tag> } />

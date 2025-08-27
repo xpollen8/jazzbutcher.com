@@ -305,12 +305,14 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const pictures = await returnFilteredPath('gigmedias', 'type', 'pix', true, (candidate: HashedType, value: string, exact: boolean) => {
 					return candidate?.image_caption?.toLowerCase()?.includes(args?.toLowerCase());
 				});
+				const press =  await returnFilteredPath('presses', 'body', args, false);
 
 				return {
 					releases: joinOn('lookup', releases?.results, releasesStatic.results),
 					performer,
 					support,
 					pictures,
+					press,
 				};
 			}
 			case 'songs_by_datetime': {

@@ -1121,10 +1121,10 @@ export const AutoLinkPlayer = (str?: string) => {
 	}
 	return AutoLinkAct(str);	// maybe it is an Act?
 	*/
-	const found = match && match[1];
+	const found = (match && match[1])?.replace(/_/g, ' ');
 	if (found) {
-		const player = isKnownPerson(found.replace(/_/g, ' '));
-		if (!player) return str;
+		const player = isKnownPerson(found);
+		if (!player) return found;
 		return <Link href={player?.href}>{player?.name}</Link>;
 	}
 	return str;
@@ -1191,7 +1191,8 @@ export const	people: HashedType = {
 	bd: { name: "Ben Davis" },
 	beirne: { name: "Pat Beirne" },
 	blair: { name: "Blair MacDonald" },
-	botty: { name: "Ian Botterill", aliases: [ "Botty", "Bott", "Bot" ] },
+	aggi_demetri: { name: "Aggi Demetri" },
+	botty: { name: "Ian Botterill", aliases: [ "Botty", "Bott", "Bot", "MC Bott" ] },
 	botty_bman: { name: "B-Man" },
 	braind: { name: "Braindead Soundmachine", act: true },
 	brent: { name: "Brent Bambury" },
@@ -1273,7 +1274,7 @@ export const	people: HashedType = {
 	rivers: { name: "John A. Rivers" },
 	rodney: { name: "Rodney Allen" },
 	rolo: { name: "Rolo McGinty", aliases: [ "Rolo", "King" ] },
-	russ: { name: "Russell Cooper" },
+	russ: { name: "Russell Cooper", aliases: [ "Agent Cooper" ] },
 	russ_agent: { name: "Agent Wilson" },
 	simon: { name: "Simon Taylor" },
 	simon_mawby: { name: 'Simon Mawby' },
@@ -1294,6 +1295,7 @@ export const	people: HashedType = {
 	sumo_russ: { name: "Agent Russell Cooper" },
 	terry: { name: "Terry Walpole", act: true },
 	tim_harries: { name: "Tim Harries" },
+	mat_wallis: { name: "Mat Wallis", aliases: [ "Tractor" ] },
 	tom_hall: { href: "/tomhall", name: "Tom Hall", act: true },
 	tony: { name:"Tony Foster" },
 	tops: { name: "The Woodentops", act: true },

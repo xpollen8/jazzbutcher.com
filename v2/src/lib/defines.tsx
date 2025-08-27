@@ -1342,7 +1342,7 @@ export const peopleArray = Object.keys(people)?.map((lookup: string) => {
 	const href = obj?.href || `/conspirators/${obj?.name}`;
 	const aliases = [ lookup, ...(obj?.aliases || []) ];
 	const add = aliases?.map((name: string) => ({ href, lookup, name, aliases })) || [];
-	return [ {...obj, href, lookup, aliases }, ...add ];
+	return [ {...obj, isParent: true, href, lookup, aliases }, ...add ];
 }).flat();
 
 const otherArray = [

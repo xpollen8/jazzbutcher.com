@@ -891,7 +891,7 @@
 		)}$$
 			David Whittemore
 	,
-		photosets= /images/suave.jpg;;${literalizeCommas(${larry} and ${paul})}$$
+		photosets= /images/suave.jpg;;${literalizeCommas(Laurence O'Keefe, Paul Mulreany)}$$
 				David Whittemore;;;;1997-05-29
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},

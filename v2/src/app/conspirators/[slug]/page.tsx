@@ -5,9 +5,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import Tag from '@/components/Tag';
-import PressCards from '@/components/PressCards';
-import { expandAll, isKnownMusician, AutoLinkSong } from '@/lib/defines';
-import { type HashedType, ts2URI, truncAt, pluralize, dateDisplay } from '@/lib/utils';
+import { isKnownMusician, AutoLinkSong } from '@/lib/defines';
+import { type HashedType, ts2URI, truncAt, pluralize } from '@/lib/utils';
 import { GigSearchResults } from '@/components/GigSearch';
 import { notFound } from 'next/navigation';
 import { summaryBodySearch, removeHTML } from '@/components/GenericWeb';
@@ -71,13 +70,6 @@ const Pictures = ({ pictures, name }: any) => {
 	</>
 }
 
-const InPress = ({ inpress, name }: any) => {
-	if (!inpress?.numResults) return;
-	return <PressCards title={pluralize(inpress.numResults, 'press article', `"${name}" appears in`)} preventAutoExpand={true} items={inpress?.results?.map((p: any) => {
-		return { ...p, summary: expandAll(summaryBodySearch(p?.body, name)) }
-	})} />
-}
-
 const Player = ({ results }: any) => (!!results?.numResults) && <GigSearchResults results={results} banner={(results: any) => <Tag>Played in the band</Tag> } />
 
 const Act = ({ results }: any) => (!!results?.numResults) && <GigSearchResults results={results} banner={(results: any) => <Tag>Shared the bill</Tag> } />
@@ -89,7 +81,7 @@ const Conspirator = ({ params }: { params?: any }) => {
 	const known = isKnownMusician(conspirator);
 	const name = known && known.name || '';
 	const { data, isLoading, error } = useConspirator(name);
-	const { releases, performer, support, pictures, inpress } = data || {};
+	const { releases, performer, support, pictures } = data || {};
 
 	if (!params || !params?.slug || !name.length) return notFound();
 
@@ -102,7 +94,6 @@ const Conspirator = ({ params }: { params?: any }) => {
 				<AKA aliases={known?.aliases?.filter((a: string) => a !== conspirator)} />
 				<Releases releases={releases} name={name} />
 				<Pictures pictures={pictures} name={name} />
-				<InPress inpress={inpress} name={name} />
 				<Player results={performer} />
 				<Act results={support} />
 				<Contributions label={`Website contributions by ${name}`} options={{

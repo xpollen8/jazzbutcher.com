@@ -132,8 +132,7 @@ export const ParsedCaption = (props: { credit?: string, url?: string, credit_url
 	const useCaption = removeHTML(props?.caption || props?.image_caption);
 	const useURL = (useCredit) ? `/contributions/${useCredit}` : props?.credit_url;
 	return (<>
-		{expandAll(useCaption)}
-		{/*(props?.caption || props?.image_caption) && <span dangerouslySetInnerHTML={{ __html: props?.caption || '' + props?.image_caption }} />*/}
+		{expandAll(useCaption, false)}
 		{(needBR) && <br />}
 		<Credit g={useCredit} u={useURL} d={props?.credit_date} />
 	</>)

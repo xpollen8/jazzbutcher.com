@@ -1356,6 +1356,7 @@ export const personName = (str?: string) => {
 
 export const expandAll = (s?: string, commate: boolean = false) => {
 	if (!s) return;
+	if (typeof s !== 'string') return s;	// freaking React being passed in
 	const className = (commate) ? '' : "pr-1";
 	const res = s?.split(',')?.map((r: string, key: number, arr: any) => {
 		/*

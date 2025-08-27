@@ -17,7 +17,7 @@ CREATE TABLE `gigsong` (
   `song` varchar(100) NOT NULL,
   `author` varchar(50) DEFAULT NULL,
   `comment` text,
-  `performers` varchar(255) DEFAULT NULL,
+  `performers` text DEFAULT NULL,
   `mediaurl` text,
   `mediacredit` text,
   `mediacrediturl` text,

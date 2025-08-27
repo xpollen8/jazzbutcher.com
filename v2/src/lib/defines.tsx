@@ -719,119 +719,119 @@ export const mono = <span className="recording_channels">mono</span>;
 export const yuck = <span className="recording_quality">Not so good quality...</span>;
 export const mt = <span className="recording_generation">Master Copy</span>;
 
-export const mapActs: {[key: string]: string} = {
-	'Curtis_E._Johnson': 'curt',
-	'David_J': 'dj',
-	'E-Man': 'curt_eman',
-	'Joe_Woolley': 'joe_woolley',
-	'Owen_Jones': 'owen',
-	'Peter_Astor': 'astor',
-	'Pete_Astor': 'astor',
-	'Peter_Crouch': 'pete',
-	'Robyn_Hitchcock': 'hitch',
-	'Spectrum': 'spect',
-	'Syd_Meats': 'syd',
-	'Sydney_Meats': 'syd',
-	'The_Black_Watch': 'bwatch',
-	'The_Blue_Aeroplanes': 'aero',
-	'The_Woodentops': 'tops',
-	'Wolfgang_Tschegg': 'wolfi',
-};
+// const mapActs: {[key: string]: string} = {
+// 	'Curtis_E._Johnson': 'curt',
+// 	'David_J': 'dj',
+// 	'E-Man': 'curt_eman',
+// 	'Joe_Woolley': 'joe_woolley',
+// 	'Owen_Jones': 'owen',
+// 	'Peter_Astor': 'astor',
+// 	'Pete_Astor': 'astor',
+// 	'Peter_Crouch': 'pete',
+// 	'Robyn_Hitchcock': 'hitch',
+// 	'Spectrum': 'spect',
+// 	'Syd_Meats': 'syd',
+// 	'Sydney_Meats': 'syd',
+// 	'The_Black_Watch': 'bwatch',
+// 	'The_Blue_Aeroplanes': 'aero',
+// 	'The_Woodentops': 'tops',
+// 	'Wolfgang_Tschegg': 'wolfi',
+// };
 
-export const mapPerformers: {[key: string]: string} = {
-	'Greenwood_Goulding': 'gould',
-	'Joe_Allen': 'joea',
-	'Joe_Foster': 'joe',
-	'Tim_Burrell': 'burrell',
-	'Agent_Wilson': 'russ_agent',
-	'Alex_Green': 'green',
-	'Alex_Lee': 'lix',
-	'Alice_Thompson': 'at',
-	'Blair_MacDonald': 'blair',
-	'B-Man': 'botty_bman',
-	'Cole_Coonce': 'coonce',
-	'Colin_Harris': 'colin',
-	'Curtis_E_Johnson': 'curt',
-	'Dave_Henderson': 'hend',
-	'Dave_Morgan': 'morgan',
-	'David_J': 'dj',
-	'Dooj_Wilkinson': 'dooj',
-	'Erol_Suleyman': 'erol',
-	'Felix_Ray': 'felix',
-	'Gabriel_Turner': 'gab',
-	'Gerard_Langley': 'gerard',
-	'G-Man': 'steve_gordon_gman',
-	'Ian_Botterill': 'botty',
-	'MC_Bott': 'botty',
-	'Mister_B': 'sumo_botty',
-	'Ian_Sturgess': 'is',
-	'Joel_Harries': 'joel_harries',
-	'Joe_Woolley': 'joe_woolley',
-	'David_E_Barker': 'barker',
-	'John_A_Rivers': 'rivers',
-	'Martin_Stebbing': 'rev',
-	'Iain_OHiggins': 'iain',
-	'Jonny_Mattock':	'jonny_mattock',
-	'Julian_Poole': 'jules',
-	'Kathie_McGinty': 'kathie',
-	'Kathie_M': 'sumo_kathie',
-	'Kathy_Schaer': 'kathy',
-	'Special_K': 'sumo_kathy',
-	'Kevin_Haskins': 'hask',
-	'Kizzy_OCallaghan': 'kizzy',
-	'Laurence_OKeefe': 'larry',
-	'Lionel_Brando': 'lb',
-	'Mike_Novakovic': 'mike_novakovic',
-	'Louis_Leroi': 'll',
-	'Marc_Hadley': 'mark_hadley',
-	'Max_Eider': 'max',
-	'Max': 'max',
-	'Mick_Packwood': 'mick',
-	'Misery_Wilson': 'kathy_misery',
-	'Nick_Burson': 'nick',
-	'Owen_Jones': 'owen',
-	'Pat_Beirne': 'beirne',
-	'Pat_Fish': 'pat',
-	'Pat': 'pat',
-	'Deirdre_ODonoghue': 'deirdre',
-	'Brent_Bambury': 'brent',
-	'Paul_Hookham': 'hook',
-	'Paul_Mulreany': 'paul',
-	'Peter_Astor': 'astor',
-	'Pete_Astor': 'astor',
-	'Peter_Crouch': 'pete',
-	'Richard_Formby': 'richard',
-	'Richard_Lohan': 'lohan',
-	'Rolo_McGinty': 'rolo',
-	'Agent_Cooper': 'sumo_russ',
-	'Agent_Russell_Cooper': 'sumo_russ',
-	'Russell_Cooper': 'russ',
-	'Simon_Taylor': 'simon',
-	'Sonic_Boom': 'sonic',
-	'Steve_Beswick': 'steve_beswick',
-	'Karel_Von_Dämmerung': 'karel',
-	'Otto_Von_Dämmerung': 'otto',
-	'Emil_Von_Dämmerung': 'emil',
-	'Steve_Garofalo': 'garofalo',
-	'Steve_Gordon': 'steve_gordon',
-	'Steve_Musgrove': 'sm',
-	'Steve_New': 'stevenew',
-	'Nick_Bandy': 'nick_bandy',
-	'Lee_Brooks': 'lee_brooks',
-	'Pat_Kenneally': 'pat_kenneally',
-	'Steve_Valentine': 'steve',
-	'Sumishta_Brahm': 'sumishta',
-	'Tim_Harries': 'tim_harries',
-	'Headstone': 'sumo_pat',
-	'Wilson_Headstone': 'pat_headstone',
-	'Wolfgang_Tschegg': 'wolfi',
-	'Max_Read': 'max_read',
-	'Anita_Allbright': 'anita_allbright',
-	'Mark_Refoy': 'mark_refoy',
-	'Mitch_Jenkins': 'mitch',
-	'Emerson_Hunt': 'emerson_hunt',
-	'Martin_K_Daley': 'martin_k_daley',
-};
+//	const mapPerformers: {[key: string]: string} = {
+//		'Greenwood_Goulding': 'gould',
+//		'Joe_Allen': 'joea',
+//		'Joe_Foster': 'joe',
+//		'Tim_Burrell': 'burrell',
+//		'Agent_Wilson': 'russ_agent',
+//		'Alex_Green': 'green',
+//		'Alex_Lee': 'lix',
+//		'Alice_Thompson': 'at',
+//		'Blair_MacDonald': 'blair',
+//		'B-Man': 'botty_bman',
+//		'Cole_Coonce': 'coonce',
+//		'Colin_Harris': 'colin',
+//		'Curtis_E_Johnson': 'curt',
+//		'Dave_Henderson': 'hend',
+//		'Dave_Morgan': 'morgan',
+//		'David_J': 'dj',
+//		'Dooj_Wilkinson': 'dooj',
+//		'Erol_Suleyman': 'erol',
+//		'Felix_Ray': 'felix',
+//		'Gabriel_Turner': 'gab',
+//		'Gerard_Langley': 'gerard',
+//		'G-Man': 'steve_gordon_gman',
+//		'Ian_Botterill': 'botty',
+//		'MC_Bott': 'botty',
+//		'Mister_B': 'sumo_botty',
+//		'Ian_Sturgess': 'is',
+//		'Joel_Harries': 'joel_harries',
+//		'Joe_Woolley': 'joe_woolley',
+//		'David_E_Barker': 'barker',
+//		'John_A_Rivers': 'rivers',
+//		'Martin_Stebbing': 'rev',
+//		'Iain_OHiggins': 'iain',
+//		'Jonny_Mattock':	'jonny_mattock',
+//		'Julian_Poole': 'jules',
+//		'Kathie_McGinty': 'kathie',
+//		'Kathie_M': 'sumo_kathie',
+//		'Kathy_Schaer': 'kathy',
+//		'Special_K': 'sumo_kathy',
+//		'Kevin_Haskins': 'hask',
+//		'Kizzy_OCallaghan': 'kizzy',
+//		'Laurence_OKeefe': 'larry',
+//		'Lionel_Brando': 'lb',
+//		'Mike_Novakovic': 'mike_novakovic',
+//		'Louis_Leroi': 'll',
+//		'Marc_Hadley': 'mark_hadley',
+//		'Max_Eider': 'max',
+//		'Max': 'max',
+//		'Mick_Packwood': 'mick',
+//		'Misery_Wilson': 'kathy_misery',
+//		'Nick_Burson': 'nick',
+//		'Owen_Jones': 'owen',
+//		'Pat_Beirne': 'beirne',
+//		'Pat_Fish': 'pat',
+//		'Pat': 'pat',
+//		'Deirdre_ODonoghue': 'deirdre',
+//		'Brent_Bambury': 'brent',
+//		'Paul_Hookham': 'hook',
+//		'Paul_Mulreany': 'paul',
+//		'Peter_Astor': 'astor',
+//		'Pete_Astor': 'astor',
+//		'Peter_Crouch': 'pete',
+//		'Richard_Formby': 'richard',
+//		'Richard_Lohan': 'lohan',
+//		'Rolo_McGinty': 'rolo',
+//		'Agent_Cooper': 'sumo_russ',
+//		'Agent_Russell_Cooper': 'sumo_russ',
+//		'Russell_Cooper': 'russ',
+//		'Simon_Taylor': 'simon',
+//		'Sonic_Boom': 'sonic',
+//		'Steve_Beswick': 'steve_beswick',
+//		'Karel_Von_Dämmerung': 'karel',
+//		'Otto_Von_Dämmerung': 'otto',
+//		'Emil_Von_Dämmerung': 'emil',
+//		'Steve_Garofalo': 'garofalo',
+//		'Steve_Gordon': 'steve_gordon',
+//		'Steve_Musgrove': 'sm',
+//		'Steve_New': 'stevenew',
+//		'Nick_Bandy': 'nick_bandy',
+//		'Lee_Brooks': 'lee_brooks',
+//		'Pat_Kenneally': 'pat_kenneally',
+//		'Steve_Valentine': 'steve',
+//		'Sumishta_Brahm': 'sumishta',
+//		'Tim_Harries': 'tim_harries',
+//		'Headstone': 'sumo_pat',
+//		'Wilson_Headstone': 'pat_headstone',
+//		'Wolfgang_Tschegg': 'wolfi',
+//		'Max_Read': 'max_read',
+//		'Anita_Allbright': 'anita_allbright',
+//		'Mark_Refoy': 'mark_refoy',
+//		'Mitch_Jenkins': 'mitch',
+//		'Emerson_Hunt': 'emerson_hunt',
+//		'Martin_K_Daley': 'martin_k_daley',
+//	};
 
 export const mapSongs: {[key: string]: string} = {
 	"A_Great_Visitation_Of_Elephants": "eleph",
@@ -1121,16 +1121,24 @@ export const AutoLinkPlayer = (str?: string) => {
 	}
 	return AutoLinkAct(str);	// maybe it is an Act?
 	*/
-	const found = (match && match[1])?.replace(/_/g, ' ');
-	if (found) {
-		const player = isKnownPerson(found);
-		if (!player) return found;
+	const name = (match && match[1])?.replace(/_/g, ' ') || str;
+	if (name) {
+		const player = isKnownPerson(name);
+		if (!player) {
+			if (str?.includes('person:')) {
+				return <Link href={`/gigs?f=performer&q="${name}"`}>{name}</Link>
+			} else {
+				return <Link href={`/gigs?f=alsowith&q="${name}"`}>{name}</Link>
+			}
+		}
 		return <Link href={player?.href}>{player?.name}</Link>;
 	}
 	return str;
 }
 
 export const AutoLinkAct = (str?: string) => {
+	return AutoLinkPlayer(str);
+	/*
   if (!str?.length) return;
 	const match = str.match(/\[\[(?:act|person):(.*?)\]\]/);
 	if (match) {
@@ -1148,6 +1156,7 @@ export const AutoLinkAct = (str?: string) => {
 	const found = mapActs[lookup];
 	if (!found) return <Link href={`/gigs?f=alsowith&q="${str?.replace(/_/g, ' ')}"`}>{str}</Link>
 	return expand(found);
+	*/
 }
 
 export const expand = (str?: string, treatAsHTML: boolean = false) => {
@@ -1182,7 +1191,7 @@ export const expand = (str?: string, treatAsHTML: boolean = false) => {
 	return doIt(str?.trim());
 }
 
-export const	people: HashedType = {
+const	people: HashedType = {
 	aero: { name: "The Blue Aeroplanes", act: true },
 	anita_allbright: { name: "Anita Allbright" },
 	astor: { name: "Peter Astor", aliases: [ "Pete" ] },
@@ -1328,7 +1337,7 @@ export const	people: HashedType = {
 const snake = (s: string) => s?.toLowerCase()?.replace(/ /g, '_');
 
 // @ts-ignore
-export const peopleArray = Object.keys(people)?.map((lookup: string) => {
+const peopleArray = Object.keys(people)?.map((lookup: string) => {
 	const obj: any = people[lookup];
 	const href = obj?.href || `/conspirators/${obj?.name}`;
 	const aliases = [ lookup, ...(obj?.aliases || []) ];

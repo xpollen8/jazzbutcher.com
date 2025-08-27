@@ -1339,17 +1339,26 @@ export const	people: HashedType = {
 // @ts-ignore
 export const peopleArray = Object.keys(people)?.map((lookup: string) => {
 	const obj: any = people[lookup];
-	const aliases = obj?.aliases?.map((alias: string) => ({ href: obj?.href, lookup, name: alias })) || [];
-	delete obj.aliases;
-	return [ {...obj, lookup }, ...aliases ];
+	const href = obj?.href || `/conspirators/${obj?.name}`;
+	const aliases = [ lookup, ...(obj?.aliases || []) ];
+	const add = aliases?.map((name: string) => ({ href, lookup, name, aliases })) || [];
+	return [ {...obj, href, lookup, aliases }, ...add ];
 }).flat();
 
 const otherArray = [
 	{ name: 'Brian Kelly', lookup: 'Brian Kelly' },
-]
+	{ name: 'James Duval', lookup: 'James Duval', aliases: [ 'Jimmy Duval', 'Duval' ] },
+]?.map((obj: any) => {
+	const lookup = obj?.lookup;
+	const href = `/contributions/${lookup}`;
+	const aliases = [ lookup, ...(obj?.aliases || []) ];
+	const add = aliases?.map((name: string) => ({ href, lookup, name, aliases })) || [];
+	return [ { ...obj, href, lookup, aliases }, ...add ];
+}).flat();
 
 export const isKnownMusician = (str?: string) => peopleArray?.find((a: any) => a?.name === str);
 export const isKnownOther = (str?: string) => otherArray?.find((a: any) => a?.name === str);
+export const isKnownPerson  = (str?: string) => isKnownMusician(str) || isKnownOther(str);
 
 export const personName = (str?: string) => {
 	const { lookup, name, href, act }: any = person(str) || {};
@@ -1358,7 +1367,7 @@ export const personName = (str?: string) => {
 
 export const expandAll = (s?: string, commate: boolean = false) => {
 	if (!s) return;
-	const className = (commate) ? '' : "mr-1";
+	const className = (commate) ? '' : "pr-1";
 	const res = s?.split(',')?.map((r: string, key: number, arr: any) => {
 		/*
 			group Cap words togethger
@@ -1374,10 +1383,9 @@ export const expandAll = (s?: string, commate: boolean = false) => {
 		});
 		const musician = muso.join(' ')?.trim();
 		const instruments = inst.join(' ')?.trim();
+		const known = isKnownPerson(musician);
 		return <span key={key} className={className}>
-			{(isKnownMusician(musician)) ?
-				(<Link href={`/conspirators/${musician}`}>{musician}</Link>) :
-				((isKnownOther(musician)) ? <Link href={`/contributors/${musician}`}>{musician}</Link> : musician)}
+			{(known) ?  <Link href={known?.href}>{musician}</Link> : musician}
 			{(!!instruments) && <>: {instruments}</>}
 			{(key !== arr?.length - 1) && <>,</>}
 		</span>

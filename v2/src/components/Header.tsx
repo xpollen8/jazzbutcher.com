@@ -69,7 +69,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals", body: "Pat extensively journaled his projects. Some pages are shared here." },
 	fiascos: { parent: 'writings', title: 'Top 10 JBC Fiascos', summary: '2020', body: "When live on the road goes.. interesting" },
 
-	prejbc: { parent: 'jbc', title: 'Pre-JBC', rootHideChildren: true },
+	prejbc: { parent: 'pat', title: 'Pre-JBC', rootHideChildren: true },
 
 //	album_reviews: { parent: 'writings', title: "Pat's albums reviews", summary: "Album opinions" },
 //	'press?filters=type%3B%3Bpat': { parent: 'writings', title: "Pat's gig reviews" },

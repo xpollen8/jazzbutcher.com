@@ -178,8 +178,9 @@ const filterObjectByAttribute = (obj: HashedType, field?: string, value?: string
 	// custom search logic
 	// ensure that the full search term is contained in the target
 	// AND is surrounded by whitespace/punctiuation.  wheee.
+	const pattern = /[a-z]/i;
 	while (!match && idx > 0 && len) {
-		match = /[\s,.']/.test(body[idx - 1]) && /[\s,.']/.test(body[idx + lclen]);
+		match = !pattern.test(body[idx - 1]) && !pattern.test(body[idx + lclen]);
 		if (!match) { // hump along
 			body = body.substr(idx + lclen);
 			len = body.length;

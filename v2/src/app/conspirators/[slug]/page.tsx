@@ -56,7 +56,7 @@ const Pictures = ({ pictures, name }: any) => {
       return {
         ...p,
 				caption: p?.image_caption,
-        alt: p?.datetime?.substr(0, 10),
+        alt: p?.datetime?.substring(0, 10),
         href: ts2URI(p?.datetime),
         src: p?.image
       }

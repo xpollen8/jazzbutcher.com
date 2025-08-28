@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react';
 
 const truncate = (str: string, len: number) => {
 	if (str.length < len) return str;
-	return str.substr(0, len) + '..';
+	return str.substring(0, len) + '..';
 }
 
 const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) => {
@@ -64,7 +64,7 @@ const Contributions = (props: any) => {
 	let total = 0;
 
 	const addInfo = (contributions: HashedType, person: string, type: string, added: string, accummulate?: boolean) => {
-		const useAdded = added?.substr(0, 10);
+		const useAdded = added?.substring(0, 10);
 		if (!contributions[person]) {
 			contributions[person] = {
 				total: 0,

@@ -20,7 +20,7 @@ const PressArticle = ({ params }: { params?: any }) => {
 
 	return <Loading isLoading={isLoading} >
 		<Header section="press"
-			title={title && `${title} ${article?.dtpublished?.substr(0, 10).replace(/-00/g, '')}`} />
+			title={title && `${title} ${article?.dtpublished?.substring(0, 10).replace(/-00/g, '')}`} />
 		<main>
 			<PressItem item={article} />
 		</main>

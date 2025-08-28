@@ -16,8 +16,8 @@ const LyricList = (props: { lyrics: any[] }) => {
 	return (<>
 		{lyrics?.map((lyric: any, key: number) => {
 			let banner;
-			if (lyric?.title?.substr(0, 1) !== chr) {
-				chr = lyric?.title?.substr(0, 1);
+			if (lyric?.title?.substring(0, 1) !== chr) {
+				chr = lyric?.title?.substring(0, 1);
 				banner = <Tag>{chr}</Tag>;
 			}
 			return (<div key={key}>

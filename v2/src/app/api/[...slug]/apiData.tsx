@@ -157,7 +157,7 @@ const forceDT = (dt?: string): string => {
 	if (!dt) return '';
 	const [ useDT ] = dt.split(' ');
 	if (!useDT) return '';
-	return new Date(Date.parse(useDT?.replace(/-00/g, '-01'))).toISOString().substr(0, 10);
+	return new Date(Date.parse(useDT?.replace(/-00/g, '-01'))).toISOString().substring(0, 10);
 }
 
 // @ts-ignore
@@ -183,7 +183,7 @@ const filterObjectByAttribute = (obj: HashedType, field?: string, value?: string
 	while (!match && idx > 0 && len) {
 		match = (idx === 0 || !pattern.test(body[idx - 1])) && (len === lclen || !pattern.test(body[idx + lclen]));
 		if (!match) { // hump along
-			body = body.substr(idx + lclen);
+			body = body.substring(idx + lclen);
 			len = body.length;
 			idx = body.indexOf(lc);
 		}
@@ -383,7 +383,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 						// clean up data
 						const unexpand = (p?: string) => p?.split(' ')?.map((p: any) => {
 							if (p?.startsWith('${') && p?.endsWith('}')) {
-								const val = p?.substr(2, p?.length - 3); // ick
+								const val = p?.substring(2, p?.length - 3); // ick
 								return personName(val);
 							} else {
 								return p;
@@ -425,8 +425,8 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				});
 			}
 			case 'on_this_day': {
-				const today = new Date().toISOString()?.substr(4, 6);
-				return returnResults(gigsStatic?.results?.filter((r: HashedType) => r.datetime?.substr(4, 6) === today));
+				const today = new Date().toISOString()?.substring(4, 6);
+				return returnResults(gigsStatic?.results?.filter((r: HashedType) => r.datetime?.substring(4, 6) === today));
 			}
 			case 'unreleased_audio': {
 				// "select * from media where type='audio' and length(lookup) = 0 and collection like '%session%' order by project, collection, ordinal"

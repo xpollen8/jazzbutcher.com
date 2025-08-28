@@ -20,7 +20,7 @@ const Conspirators = () => {
 			<SectionOptions section='conspirators' />
 			{peopleArray.filter((p: any) => !p.act && p.isParent ).sort(sortByLastName).map((person: any, key: number) => {
 				const { name, href, lookup } = person;
-				const letter = name.split(' ').pop().substr(0, 1);
+				const letter = name.split(' ').pop().substring(0, 1);
 				let banner;
 				if (letter !== lastLetter) {
 					banner = <Tag>{letter}</Tag>;

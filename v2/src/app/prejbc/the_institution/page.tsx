@@ -18,11 +18,10 @@ const images_PhilipSnow2 = [
 
 const images_rolo = [
 		{ src: "/images/20220517/20220517_fb_rolo_institution1.jpg", alt: "Rolo FB comments #1" },
-		{ src: "/images/20220517/20220517_fb_rolo_institution2.jpg", alt: "Rolo FB comments #2" },
-		{ src: "/images/20220517/20220517_fb_rolo_institution3.jpg", alt: "Rolo FB comments #3" },
-		{ src: "/images/20220517/20220517_fb_rolo_institution4.jpg", alt: "Rolo FB comments #4" },
-		{ src: "/images/20220517/20220517_fb_rolo_institution5.jpg", alt: "Rolo FB comments #5" },
-		{ src: "/images/20220517/20220517_fb_rolo_institution6.jpg", alt: "Rolo FB comments #6" },
+		{ src: "/images/20220517/20220517_fb_rolo_institution3.jpg", alt: "Rolo FB comments #2" },
+		{ src: "/images/20220517/20220517_fb_rolo_institution4.jpg", alt: "Rolo FB comments #3" },
+		{ src: "/images/20220517/20220517_fb_rolo_institution5.jpg", alt: "Rolo FB comments #4" },
+		{ src: "/images/20220517/20220517_fb_rolo_institution6.jpg", alt: "Rolo FB comments #5" },
 ];
 
 const images_vinyl = [

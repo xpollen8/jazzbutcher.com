@@ -66,45 +66,19 @@ const RecentFeedback = (props: any) => {
 const RecentGigMedia = (props: any) => {
 	const { gigmedia } = props;
 	if (!gigmedia?.numResults) return;
-//	const results: Record<string, any[]> = {};
-//	gigmedia.results?.forEach((p: any) => {
-//		if (!results[p.type]) { results[p.type] = []; }
-//		results[p.type]?.push(p);
-//	});
 	const mostRecent = gigmedia?.results[0]?.credit_date;
 	return <details>
 		<summary className="tagClickable">{pluralize(gigmedia.numResults, 'image', 'Recently added')} {dateAgo(mostRecent)}</summary>
 		<PhotoSet photos={gigmedia.results?.map((p: any) => {
 			return {
 				...p,
-				alt: p?.datetime?.substr(0, 10),
+				alt: p?.datetime?.substring(0, 10),
 				href: ts2URI(p?.datetime),
 				src: p?.image
 			}
 			})
 		} />
 		</details>
-//	return <details>
-//		<summary className="tagClickable">{pluralize(gigmedia.numResults, 'image', 'Recently added')} {dateAgo(mostRecent)}</summary>
-//		{Object.keys(results)?.sort((a: any, b: any) => a[0]?.credit_date - b[0]?.credit_date)?.map((p: any, key: number) => {
-//			const items = results[p] || [];
-//			return <div key={key} className="clickListItem">
-//				<details>
-//				<summary className="tagClickable">{pluralize(items.length, p?.replace('pix', 'live photos'), 'Recently added')} {dateAgo(items[0]?.credit_date)}</summary>
-//					{doPix(items)}
-//					{/*(p === 'pix') ? doPix(items) : items?.map((p: any, key: number) => {
-//					const href = `https://v1.jazzbutcher.com/${p.image.trim()}`;
-//					const thumb = href.replace(/.jpg/, '_250.jpg');
-//					return <div key={key} className="listItem">
-//						<Link href={href}><Image src={thumb} width={250} height={250} alt={p.image_caption || p.type} /></Link>
-//						<div className="date"><Link href={ts2URI(p.datetime)}>{dateDiff(p.datetime, '')}</Link></div>
-//						<Attribution g={p.credit} d={p.credit_date} x={(p.image_caption) ? <span className="date">{p.image_caption}<br /></span> : ''} />
-//					</div>
-//					})*/}
-//				</details>
-//			</div>
-//		})}
-//	</details>
 }
 
 const RecentGigSongMedia = (props: any) => {

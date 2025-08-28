@@ -245,7 +245,7 @@ const NavSections = (props: Props_Header): React.ReactNode  => {
 			<ul className="w-full">
 				{nav.map((obj: any, key: number) => {
 					if (obj?.href) {
-						const mainOptions = makeMenuOptions((obj?.href === '/') ? 'jbc' : obj?.href.substr(1), 0);
+						const mainOptions = makeMenuOptions((obj?.href === '/') ? 'jbc' : obj?.href.substring(1), 0);
 						return (
 							<li key={key} className="navTop">
 								<Link id="summary" href={obj.href}>{obj.title}</Link>

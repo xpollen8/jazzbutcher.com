@@ -408,7 +408,7 @@ export const MostRecentNews = () => <>
 const News = () => {
 	const years: Record<string, NewsItemType[]> = {};
 	newsItems?.forEach((item: NewsItemType) => {
-		const year = item?.dt?.substr(0, 4);
+		const year = item?.dt?.substring(0, 4);
 		if (!years[year]) {
 			years[year] = [];
 		}

@@ -34,9 +34,9 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 			}
 		});
 		return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
-			{(!!photos?.length) ? <PhotoSet title=<Link href={ts2URI(datetime)}>{datetime?.substr(0, 10)}: {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>  photos={photos?.filter((f: any) => f?.added == added)} /> : 
+			{(!!photos?.length) ? <PhotoSet title=<Link href={ts2URI(datetime)}>{datetime?.substring(0, 10)}: {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>  photos={photos?.filter((f: any) => f?.added == added)} /> : 
 			<>
-			<Link className="monospace" href={href} >{datetime?.substr(0, 10)}</Link> {pluralize(count, type, undefined, true)} {summary && `"${summary}"`} {dateAgo(added,' - ',`added: ${added} - `)}
+			<Link className="monospace" href={href} >{datetime?.substring(0, 10)}</Link> {pluralize(count, type, undefined, true)} {summary && `"${summary}"`} {dateAgo(added,' - ',`added: ${added} - `)}
 			</>}
 		</div>
 	}
@@ -124,7 +124,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				type: prettyType('text', r?.type),
 				added: r?.credit_date,
 				datetime: r?.datetime,
-				summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substr(0, 50) + '...' : '',
+				summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substring(0, 50) + '...' : '',
 				href: ts2URI(r?.datetime),
 			}
 		);
@@ -137,7 +137,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				type: prettyType('image', r?.type),
 				added: r?.credit_date,
 				datetime: r?.datetime,
-				summary: (r?.image_caption) ? removeHTML(r?.image_caption)?.substr(0, 50) + '...' : '',
+				summary: (r?.image_caption) ? removeHTML(r?.image_caption)?.substring(0, 50) + '...' : '',
 				href: ts2URI(r?.datetime),
 				image: r?.image,
 				caption: removeHTML(r?.image_caption),
@@ -152,7 +152,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				type: 'press',
 				added: r?.dtadded,
 				datetime: r?.dtpublished,
-				summary: [r?.publication, r?.issue, r?.title, r?.headline]?.filter((x: string) => x)?.join(' - ')?.substr(0, 50) + '...',
+				summary: [r?.publication, r?.issue, r?.title, r?.headline]?.filter((x: string) => x)?.join(' - ')?.substring(0, 50) + '...',
 				href: r?.url,
 			}
 		);

@@ -26,7 +26,7 @@ const PressCards = ({ items, project, showAlbum, preventAutoExpand=false, title 
 			return (<div key={key} className='p-1'>
 				<InfoTag>
 				<>
-				{item.dtpublished?.substr(0, 10).replace(/-00/g, '')}: <span className="pl-1">{info}</span>
+				{item.dtpublished?.substring(0, 10).replace(/-00/g, '')}: <span className="pl-1">{info}</span>
 				</>
 				</InfoTag>
 				<div className="outline outline-slate-300 drop-shadow-sm">

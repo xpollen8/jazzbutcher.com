@@ -32,11 +32,11 @@ export const htmlString = (x: any) => x ? <span dangerouslySetInnerHTML={{ __htm
 export const linkExternal = (href: string, text?: string | React.ReactElement): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>
 export const linkInternal = (href: string, text?: string | React.ReactElement): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
-export const parseYear = (datetime?: string): number => (datetime && parseInt(datetime.substr(0, 4), 10)) || 0;
-export const parseMonth = (datetime: string): number => parseInt(localDate(datetime)?.substr(5, 2), 10);
+export const parseYear = (datetime?: string): number => (datetime && parseInt(datetime.substring(0, 4), 10)) || 0;
+export const parseMonth = (datetime: string): number => parseInt(localDate(datetime)?.substring(5, 2), 10);
 export const parseMonthName = (datetime: string) => num2mon(parseMonth(datetime));
-export const parseDay = (datetime: string): number => parseInt(localDate(datetime)?.substr(8, 2), 10);
-export const parseHour = (datetime: string): number => parseInt(localDate(datetime)?.substr(11, 2), 10);
+export const parseDay = (datetime: string): number => parseInt(localDate(datetime)?.substring(8, 2), 10);
+export const parseHour = (datetime: string): number => parseInt(localDate(datetime)?.substring(11, 2), 10);
 export const parseHourAMPM = (datetime: string) => moment(localDate(datetime))?.format('LT')
 export const parseDayOrdinal = (datetime: string) => moment.localeData().ordinal(parseDay(datetime))
 
@@ -62,7 +62,7 @@ export const startSeconds = (str: any = ''): number => {
 }
 
 export const monthNames = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', ];
-export const monNames = monthNames.map((m: string) => m.substr(0, 3));
+export const monNames = monthNames.map((m: string) => m.substring(0, 3));
 export const num2month = (num: any): string => monthNames[num - 1] || '';
 export const num2mon = (num: any): string => monNames[num - 1] || '';
 export const mon2num = (month: any): number => monNames.indexOf(String(month)) + 1;
@@ -171,13 +171,13 @@ export const dateDiff = (dt?: string, sep: string = ' - ') => {
  */
 export const ts2URI = (ts: string): string => {
 	if (!ts) return '';
-	const year = ts.substr(0, 4);
-	const month = ts.substr(5, 2);
+	const year = ts.substring(0, 4);
+	const month = ts.substring(5, 2);
 	const monthName = num2mon(month);
-	const dayp = ts.substr(8, 2);
+	const dayp = ts.substring(8, 2);
 	const day = parseInt(dayp || '', 10);
-	const hour = ts.substr(11, 2);
-	const min = ts.substr(14, 2) || '00';
+	const hour = ts.substring(11, 2);
+	const min = ts.substring(14, 2) || '00';
 	const prefix = '/gigs';
 	if (!month) return `${prefix}/${year}.html`;
 	if (!day) return `${prefix}/${year}/${monthName}1.html`;	// force day = 1 if only have month

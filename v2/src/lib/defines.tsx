@@ -1375,7 +1375,7 @@ export const expandAll = (s?: string, commate: boolean = false) => {
 				?.map((chunk: string, key: number) => {
 					const str = chunk?.replace(', ', ',');
 					if (str?.endsWith(']]')) {
-						const musician = str.substr(0, str.length - 2)?.trim();
+						const musician = str.substring(0, str.length - 2)?.trim();
 						const known = isKnownPerson(musician);
 						return <span key={key}>
 							{' '}{(known) ? <Link href={known?.href}>{musician}</Link> : musician}

@@ -147,5 +147,5 @@ export const summaryBodySearch = (body: string, name: string, window: number = 1
 	const useBody = removeHTML(body)?.replace(/<br\/>/g, '') || '';
 	const first = useBody.toLowerCase().indexOf(name.toLowerCase());
 	const begin = (first > window) ? first - window : first;
-	return `...` + useBody.substr(begin, window * 2) + `...`;
+	return `...` + useBody.substring(begin, window * 2) + `...`;
 }

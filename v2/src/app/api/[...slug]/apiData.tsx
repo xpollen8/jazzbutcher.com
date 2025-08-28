@@ -174,14 +174,14 @@ const filterObjectByAttribute = (obj: HashedType, field?: string, value?: string
 	const lclen = lc.length;
 	let body = obj[field]?.toLowerCase();
 	let idx = body?.indexOf(lc);
-	let match = false;
 	let len = body?.length;
+	let match = (len == lclen && body === lc);
 	// custom search logic
 	// ensure that the full search term is contained in the target
 	// AND is surrounded by whitespace/punctiuation.  wheee.
 	const pattern = /[a-z]/i;
 	while (!match && idx > 0 && len) {
-		match = !pattern.test(body[idx - 1]) && !pattern.test(body[idx + lclen]);
+		match = (idx === 0 || !pattern.test(body[idx - 1])) && (len === lclen || !pattern.test(body[idx + lclen]));
 		if (!match) { // hump along
 			body = body.substr(idx + lclen);
 			len = body.length;
@@ -504,7 +504,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'gigtext_contributions': {
 				const gigtexts = await apiData('gigtexts');
 				return returnResults(gigtexts?.results?.filter((r: any) => {
-					return (!['bootlegger','recording','soundman'].includes(r.type));
+					return (!['bootlegger','recording','soundman','selfreview'].includes(r.type));
 				})?.filter((g: any) => args?.all ||
 					(g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
 					...g,

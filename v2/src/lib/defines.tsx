@@ -1196,7 +1196,7 @@ const	people: HashedType = {
 	anita_allbright: { name: "Anita Allbright" },
 	astor: { name: "Peter Astor", aliases: [ "Pete" ] },
 	at: { name: "Alice Thompson", aliases: [ "Alice" ] },
-	barker: { name: "David E. Barker", aliases: [ "Barker", "Lionel Brando" ] },
+	barker: { name: "David E. Barker", aliases: [ "Dave Barker", "Barker", "Lionel Brando" ] },
 	bd: { name: "Ben Davis" },
 	beirne: { name: "Pat Beirne" },
 	blair: { name: "Blair MacDonald" },
@@ -1257,7 +1257,7 @@ const	people: HashedType = {
 	lucien: { name: "Lucien Borderline" },
 	mark_hadley: { name: "Mark Hadley" },
 	mark_refoy: { name: "Mark Refoy" },
-	martin_k_daley: { name: "Martin K Daley" },
+	martin_k_daley: { name: "Martin K Daley", aliases: [ "M.K. Daley" ] },
 	max: { name: "Max Eider", aliases: [ "Max", "Eider" ] },
 	max_read: { name: "Max Read" },
 	mercer: { href: "https://www.mickmercer.com", name: "Mick Mercer" },
@@ -1332,7 +1332,7 @@ const	people: HashedType = {
 	dave_coverly: { href: "https://www.speedbump.com/", name: "Dave Coverly" },
 };
 
-const snake = (s: string) => s?.toLowerCase()?.replace(/ /g, '_');
+const snake = (s: string) => s?.toLowerCase()?.replace(/[^a-zA-Z ]/g, '').replace(/ /g, '_');
 
 // @ts-ignore
 export const peopleArray = Object.keys(people)?.map((lookup: string) => {
@@ -1354,8 +1354,8 @@ const otherArray = [
 	return [ { ...obj, href, lookup, aliases }, ...add ];
 }).flat();
 
-export const isKnownMusician = (str?: string) => peopleArray?.find((a: any) => a?.name === str);
-export const isKnownOther = (str?: string) => otherArray?.find((a: any) => a?.name === str);
+export const isKnownMusician = (str?: string) => peopleArray?.find((a: any) => a?.name === str || a?.snake === str);
+export const isKnownOther = (str?: string) => otherArray?.find((a: any) => a?.name === str || a?.snake === str || a?.lookup === str);
 export const isKnownPerson  = (str?: string) => isKnownMusician(str) || isKnownOther(str);
 
 export const personName = (str?: string) => {
@@ -1367,7 +1367,7 @@ export const expandAll = (s?: string, commate: boolean = false) => {
 	if (!s) return;
 	if (typeof s !== 'string') return s;	// freaking React being passed in
 
-	return s.replace(/(?:[A-Z][\u0080-\uFFFFa-z'.]*\s*)+/g, (match) => `[[${match.trim()}]] `) // construct parsable string
+	return s.replace(/(?:[A-Z][\u0080-\uFFFFa-z'.-]*\s*)+/g, (match) => `[[${match.trim()}]] `) // construct parsable string
 		?.split(']]') // now we're an array
 		?.map((w) => {
 			const text = w + ']]';
@@ -1404,4 +1404,3 @@ export const person = (str?: string) => {
 	const href = ll?.replace(/ /g, '_');
 	return peopleArray.find((p: any) => ll === p.snake || ll === p.lookup || ll === p.name?.toLowerCase() || ll === p.href);
 };
-

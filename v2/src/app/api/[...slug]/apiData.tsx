@@ -168,7 +168,25 @@ const filterObjectByAttribute = (obj: HashedType, field?: string, value?: string
 	if (exact) {
 		return obj[field]?.toLowerCase() === value?.toLowerCase();
 	}
-		return obj[field]?.toLowerCase()?.includes(value?.toLowerCase());
+
+	const lc = value?.toLowerCase();
+	const lclen = lc.length;
+	let body = obj[field]?.toLowerCase();
+	let idx = body?.indexOf(lc);
+	let match = false;
+	let len = body?.length;
+	// custom search logic
+	// ensure that the full search term is contained in the target
+	// AND is surrounded by whitespace/punctiuation.  wheee.
+	while (!match && idx > 0 && len) {
+		match = /[\s,.']/.test(body[idx - 1]) && /[\s,.']/.test(body[idx + lclen]);
+		if (!match) { // hump along
+			body = body.substr(idx + lclen);
+			len = body.length;
+			idx = body.indexOf(lc);
+		}
+	}
+	return match;
 }
 
 const findRecent = (object: any, fields: string[] , options?: HashedType ) => {
@@ -226,7 +244,9 @@ const returnFilteredPath = async (path: string, attribute?: string, value?: stri
 	const { results } = await apiData(path);
 	return returnResults(results?.filter((r: HashedType) => {
 		if (func) { return func(r, value, exact) };
-		return filterObjectByAttribute(r, attribute, value, exact)
+		const m = filterObjectByAttribute(r, attribute, value, exact)
+		if (m) console.log("MATCH", r.title);
+		return m;
 	}));
 }
 

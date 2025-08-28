@@ -169,6 +169,7 @@ const filterObjectByAttribute = (obj: HashedType, field?: string, value?: string
 		return obj[field]?.toLowerCase() === value?.toLowerCase();
 	}
 
+	//return obj[field]?.toLowerCase()?.includes(value?.toLowerCase());
 	const lc = value?.toLowerCase();
 	const lclen = lc.length;
 	let body = obj[field]?.toLowerCase();
@@ -554,7 +555,8 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			}
 			case 'lyric_by_href': {
 				const releases = await apiData('releases', args);
-				const lyrics = await returnFilteredPath('lyrics', 'href', args, false);
+				const matchOn = args + '.html';
+				const lyrics = await returnFilteredPath('lyrics', 'href', matchOn, true);
 				const title = lyrics?.results[0]?.title;
 				const live = await apiData('live_performances_by_song', title);
 				const unreleased = returnResults(performancesStatic?.results?.filter((g: HashedType) => g?.name === title && g?.lookup && g?.media));

@@ -47,7 +47,7 @@ const Releases = ({ releases, name }: any) => {
 	});
 
 	const count = Object?.keys(albums)?.length;
-	return (!!count) && <details>
+	return (!!count) && <details open={count < 2}>
 		<summary className="tagClickable">{pluralize(count, 'album credit', name)}</summary>
 		{Object?.keys(albums)?.map((a: string, key: number) => <div className="listItem" key={key}><AlbumAppearance lookup={a} object={albums[a]} /></div>)}
 	</details>
@@ -78,7 +78,9 @@ const AKA = ({ aliases }: any) => (!!aliases?.length) && (<><Tag>Also Known As</
 
 const Conspirator = ({ params }: { params?: any }) => {
 	const conspirator = decodeURIComponent(params?.slug);
+	console.log("conspirator", conspirator);
 	const known = isKnownMusician(conspirator);
+	console.log("known", known);
 	const name = known && known.name || '';
 	const { data, isLoading, error } = useConspirator(name);
 	const { releases, performer, support, pictures } = data || {};

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { dateDiff, pluralize, truncAt, parseProject, parseImage } from '@/lib/utils';
+import { truncate, dateDiff, pluralize, truncAt, parseProject, parseImage } from '@/lib/utils';
 import { expandAll } from '@/lib/defines';
 import { removeHTML } from '@/components/GenericWeb';
 import useReleases from '@/lib/useReleases';
@@ -22,12 +22,10 @@ const PressCards = ({ items, project, showAlbum, preventAutoExpand=false, title 
 		<div className="masonry">
 		{items?.map((item: any, key: number) => {
 			const thumb = truncAt(';;', item?.thumb || '');
-			const info = item.type.replace(project, '').replace('nopat','').replace('wilson','').replace('sumo','').replace('eg','').replace(',,', ',').replace(/^,/, '').replace(/,$/, '');
-			return (<div key={key} className='p-1'>
+			const info = truncate(item.type.replace(project, '').replace('nopat','').replace('wilson','').replace('sumo','').replace('eg','').replace(',,', ',').replace(/^,/, '').replace(/,$/, ''), 12);
+			return (<div key={key}>
 				<InfoTag>
-				<>
-				{item.dtpublished?.substring(0, 10).replace(/-00/g, '')}: <span className="pl-1">{info}</span>
-				</>
+				<span className="p-1"> {item.dtpublished?.substring(0, 10).replace(/-00/g, '')} {info} </span>
 				</InfoTag>
 				<div className="outline outline-slate-300 drop-shadow-sm">
 					<Link key={key} href={item.url}>

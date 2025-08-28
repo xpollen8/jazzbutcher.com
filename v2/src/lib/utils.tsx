@@ -259,7 +259,7 @@ export const songLinkMapped = (title: string, doit?: boolean) => {
 		if (songMapped) {
 			return linkSong({ title, href: `/lyrics/${songMapped}` });
 		} else {
-			return linkSong({ title, href: `/gigs?f=song&q=${title}` });
+			return linkSong({ title, href: `/gigs?f=song&q="${encodeURIComponent(title)}"` });
 		}
 	} else {
 		return title;

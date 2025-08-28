@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { dateDiff, pluralize, truncAt, parseProject, parseImage } from '@/lib/utils';
+import { expandAll } from '@/lib/defines';
+import { removeHTML } from '@/components/GenericWeb';
 import useReleases from '@/lib/useReleases';
 import InfoTag from '@/components/InfoTag';
 
@@ -35,10 +37,10 @@ const PressCards = ({ items, project, showAlbum, preventAutoExpand=false, title 
 							{(item.publication && item.title) && <hr />}
 							<div className="h-1" />
 							<div className="font-light" dangerouslySetInnerHTML={{ __html: item.title }} />
-							{((parseInt(item?.bodycount, 10) > 0) || (item?.dtadded)) && <div className="smalltext">
+							{(item?.summary || (parseInt(item?.bodycount, 10) > 0) || (item?.dtadded)) && <div className="smalltext">
 								<hr />
 								{(parseInt(item?.bodycount, 10) > 0) && <div>{item?.bodycount.toLocaleString()} words</div>}
-								{(item?.summary) && <div className="listItem">{item.summary}</div>}
+								{(item?.summary) && <div className="listItem">{expandAll(removeHTML(item.summary))}</div>}
 								{(item?.dtadded) && <div>{dateDiff(item.dtadded, 'added: ')}</div>}
 							</div>}
 						</div>

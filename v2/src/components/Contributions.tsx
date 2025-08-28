@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { summaryBodySearch, removeHTML } from '@/components/GenericWeb';
 import useContributions from '@/lib/useContributions';
 import { type HashedType, pluralize, dateAgo, ts2URI } from '@/lib/utils';
-import { expandAll } from '@/lib/defines';
 import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
 import PressCards from '@/components/PressCards';
@@ -12,7 +11,7 @@ import PressCards from '@/components/PressCards';
 const InPress = ({ inpress, name }: any) => {
 	if (!inpress?.numResults) return;
 	return <PressCards title={pluralize(inpress.numResults, 'press article', `"${name}" appears in`)} preventAutoExpand={true} items={inpress?.results?.map((p: any) => {
-		return { ...p, summary: expandAll(summaryBodySearch(p?.body, name)) }
+		return { ...p, summary: summaryBodySearch(p?.body, name) }
 	})} />
 }
 

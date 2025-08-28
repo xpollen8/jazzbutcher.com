@@ -1367,7 +1367,7 @@ export const expandAll = (s?: string, commate: boolean = false) => {
 	if (!s) return;
 	if (typeof s !== 'string') return s;	// freaking React being passed in
 
-	return s.replace(/(?:[A-Z][a-z'.]*\s*)+/g, (match) => `[[${match.trim()}]] `) // construct parsable string
+	return s.replace(/(?:[A-Z][\u0080-\uFFFFa-z'.]*\s*)+/g, (match) => `[[${match.trim()}]] `) // construct parsable string
 		?.split(']]') // now we're an array
 		?.map((w) => {
 			const text = w + ']]';

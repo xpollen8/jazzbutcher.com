@@ -4,6 +4,8 @@ import { useSearchParams } from "next/navigation";
 import usePresses from '@/lib/usePresses';
 import { parseYear, pressFiltersInclude } from '@/lib/utils';
 import PressCards from '@/components/PressCards';
+import { removeHTML } from '@/components/GenericWeb';
+import { expandAll } from '@/lib/defines';
 import Loading from '@/components/Loading';
 import FilterButton, { type TypeFilterEntry, parseFilters, filterItemBy } from '@/components/FilterButton';
 
@@ -102,13 +104,16 @@ const filterOptions = [
 	{ field: "type:podcast", display: "Podcasts" },
 ];
 
+import pressesStatic from '@/../public/data/presses.json';
+
 const	FilterPresses = ({ project, filter=filterPassThru }: { project?: string, filter?: any }) => {
 	const searchParams = useSearchParams();
 	const filters = searchParams.get('filters');
 	const filtersUsed = parseFilters(filters || '') || [];
-	const { data, isLoading, error } = usePresses();
-	const presses = data?.results && filter(data?.results, project);
+	//const { data, isLoading, error } = usePresses();
+	const presses = pressesStatic?.results && filter(pressesStatic?.results, project);
 	const showAlbum = (filters?.includes('album'));
+	const isLoading = false;
 
 	return <Loading isLoading={isLoading} >
 		{(() => {

@@ -113,6 +113,7 @@ export const Contribution = ({ titles }: {
 }
 
 export const removeHTML = (str?: string) => {
+	if (typeof str !== 'string') return str;
 	const deParagraphed = str
 		?.replace(/<BR>/ig, '<br/>') // <BR> => <br/>
 		?.replace(/<p>/ig, '<br/>') // <p> => <br/>

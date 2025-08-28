@@ -244,9 +244,7 @@ const returnFilteredPath = async (path: string, attribute?: string, value?: stri
 	const { results } = await apiData(path);
 	return returnResults(results?.filter((r: HashedType) => {
 		if (func) { return func(r, value, exact) };
-		const m = filterObjectByAttribute(r, attribute, value, exact)
-		if (m) console.log("MATCH", r.title);
-		return m;
+		return filterObjectByAttribute(r, attribute, value, exact)
 	}));
 }
 

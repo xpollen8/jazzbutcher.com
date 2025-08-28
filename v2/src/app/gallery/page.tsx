@@ -10,7 +10,7 @@ import Tag from '@/components/Tag';
 const gallery = [
 	{
 		src: "/images/20211006_portrait.jpg",
-			credit: "Dave E. Barker",
+			credit: "David E. Barker",
 			credit_date: "2015",
 		},
 	{

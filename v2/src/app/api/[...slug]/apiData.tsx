@@ -633,12 +633,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			}
 			case 'gigs_by_musician': {
 				let useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
-				let exact = false;
-				if (useArgs?.includes('"')) {
-					exact = true;
-					useArgs = useArgs.replace(/"/g, '');
-				}
-				const { results } = await returnFilteredPath('performances', 'performer', useArgs, exact, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('event', candidate, value, exact));
+				const { results } = await returnFilteredPath('performances', 'performer', useArgs, true, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('event', candidate, value, exact));
 				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 			case 'gigs_by_song': {

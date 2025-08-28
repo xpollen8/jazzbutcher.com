@@ -49,10 +49,10 @@ const gallery = [
 			credit_date: "2000",
 		},
 	{
-		src: "/images/PatFish_1990Barcelona_SumishtaBrahm.jpg",
+		src: "/images/19900310/19900310_pat_sumishta.jpg",
 			credit: "Sumishta Brahm",
 			location: "Barcelona",
-			credit_date: "1990",
+			credit_date: "1990-03-10",
 		},
 	{
 		src: "/images/PatFish_SumishtaBrahm.jpg",

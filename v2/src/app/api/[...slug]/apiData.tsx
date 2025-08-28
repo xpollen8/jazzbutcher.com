@@ -383,7 +383,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 						// clean up data
 						const unexpand = (p?: string) => p?.split(' ')?.map((p: any) => {
 							if (p?.startsWith('${') && p?.endsWith('}')) {
-								const val = p?.substring(2, p?.length - 3); // ick
+								const val = p?.substring(2, 2 + p?.length - 3); // ick
 								return personName(val);
 							} else {
 								return p;
@@ -425,8 +425,8 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				});
 			}
 			case 'on_this_day': {
-				const today = new Date().toISOString()?.substring(4, 6);
-				return returnResults(gigsStatic?.results?.filter((r: HashedType) => r.datetime?.substring(4, 6) === today));
+				const today = new Date().toISOString()?.substring(4, 4 + 6);
+				return returnResults(gigsStatic?.results?.filter((r: HashedType) => r.datetime?.substring(4, 4 + 6) === today));
 			}
 			case 'unreleased_audio': {
 				// "select * from media where type='audio' and length(lookup) = 0 and collection like '%session%' order by project, collection, ordinal"
@@ -504,7 +504,12 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'gigtext_contributions': {
 				const gigtexts = await apiData('gigtexts');
 				return returnResults(gigtexts?.results?.filter((r: any) => {
-					return (!['bootlegger','recording','soundman','selfreview'].includes(r.type));
+					if (r.type === 'selfreview') {
+						if (args?.filter?.value === 'Pat Fish') {
+							return true;
+						}
+					}
+					return (!['bootlegger','recording','soundman'].includes(r.type));
 				})?.filter((g: any) => args?.all ||
 					(g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
 					...g,

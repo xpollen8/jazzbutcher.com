@@ -33,10 +33,10 @@ export const linkExternal = (href: string, text?: string | React.ReactElement): 
 export const linkInternal = (href: string, text?: string | React.ReactElement): React.ReactNode => <Link href={href}>{' '}{text || href}</Link>
 
 export const parseYear = (datetime?: string): number => (datetime && parseInt(datetime.substring(0, 4), 10)) || 0;
-export const parseMonth = (datetime: string): number => parseInt(localDate(datetime)?.substring(5, 2), 10);
+export const parseMonth = (datetime: string): number => parseInt(localDate(datetime)?.substring(5, 5 + 2), 10);
 export const parseMonthName = (datetime: string) => num2mon(parseMonth(datetime));
-export const parseDay = (datetime: string): number => parseInt(localDate(datetime)?.substring(8, 2), 10);
-export const parseHour = (datetime: string): number => parseInt(localDate(datetime)?.substring(11, 2), 10);
+export const parseDay = (datetime: string): number => parseInt(localDate(datetime)?.substring(8, 8 + 2), 10);
+export const parseHour = (datetime: string): number => parseInt(localDate(datetime)?.substring(11, 11 + 2), 10);
 export const parseHourAMPM = (datetime: string) => moment(localDate(datetime))?.format('LT')
 export const parseDayOrdinal = (datetime: string) => moment.localeData().ordinal(parseDay(datetime))
 
@@ -172,12 +172,12 @@ export const dateDiff = (dt?: string, sep: string = ' - ') => {
 export const ts2URI = (ts: string): string => {
 	if (!ts) return '';
 	const year = ts.substring(0, 4);
-	const month = ts.substring(5, 2);
+	const month = ts.substring(5, 5 + 2);
 	const monthName = num2mon(month);
-	const dayp = ts.substring(8, 2);
+	const dayp = ts.substring(8, 8 + 2);
 	const day = parseInt(dayp || '', 10);
-	const hour = ts.substring(11, 2);
-	const min = ts.substring(14, 2) || '00';
+	const hour = ts.substring(11, 11 + 2);
+	const min = ts.substring(14, 14 + 2) || '00';
 	const prefix = '/gigs';
 	if (!month) return `${prefix}/${year}.html`;
 	if (!day) return `${prefix}/${year}/${monthName}1.html`;	// force day = 1 if only have month

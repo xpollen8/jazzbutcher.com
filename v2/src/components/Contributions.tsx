@@ -11,7 +11,7 @@ import PressCards from '@/components/PressCards';
 const InPress = ({ inpress, name }: any) => {
 	if (!inpress?.numResults) return;
 	return <PressCards title={pluralize(inpress.numResults, 'press article', `"${name}" appears in`)} preventAutoExpand={true} items={inpress?.results?.map((p: any) => {
-		return { ...p, summary: summaryBodySearch(p?.body, name) }
+		return { ...p, summary: summaryBodySearch(p?.body, name, 200) }
 	})} />
 }
 

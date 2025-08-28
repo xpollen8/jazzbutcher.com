@@ -1,6 +1,5 @@
 "use client"
 
-import FeaturedItem from '@/components/FeaturedItem';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
@@ -14,13 +13,10 @@ import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
 import Contributions from '@/components/Contributions';
 import useConspirator from '@/lib/useConspirator';
+import ReleaseCards from '@/components/ReleaseCards';
 
-const AlbumAppearance = ({ lookup, object }: any) => <FeaturedItem
-	link={object.href}
-	image={truncAt(';;', object?.thumb || '')}
-	title=<><b>{object?.title}</b> ({removeHTML(object?.dtreleased)})</>
-	>
-	<div>
+const AlbumAppearance = ({ lookup, object }: any) => {
+	return <div>
 		{(!!object?.instruments?.length) && <div><b>Role</b>: {object?.instruments?.join(', ')}</div>}
 		{Object?.keys(object?.songs)?.map((s: string, key: number) => {
 			return <div key="key">
@@ -28,14 +24,15 @@ const AlbumAppearance = ({ lookup, object }: any) => <FeaturedItem
 			</div>
 		})}
 	</div>
-</FeaturedItem>
+}
 
 const Releases = ({ releases, name }: any) => {
 	if (!releases?.numResults) return;
 	const albums: HashedType = {};
+
 	releases?.results?.forEach((a: any) => {
 		const { project='jbc', lookup, song, instruments, href, thumb, title, dtreleased } = a;
-		if (!albums[lookup]) albums[lookup] = { instruments: [], songs: {}, href, thumb, title, dtreleased };
+		if (!albums[lookup]) albums[lookup] = { ...a, instruments: [], songs: {}, href, thumb, title, dtreleased };
 		if (song) {
 			song?.split('$$')?.forEach((s: string) => {
 				if (!albums[lookup].songs[s]) albums[lookup].songs[s] = [];
@@ -47,10 +44,7 @@ const Releases = ({ releases, name }: any) => {
 	});
 
 	const count = Object?.keys(albums)?.length;
-	return (!!count) && <details open={count < 2}>
-		<summary className="tagClickable">{pluralize(count, 'album credit', name)}</summary>
-		{Object?.keys(albums)?.map((a: string, key: number) => <div className="listItem" key={key}><AlbumAppearance lookup={a} object={albums[a]} /></div>)}
-	</details>
+	return <ReleaseCards preventAutoExpand={(count > 4)} items={Object.keys(albums)?.map((a: any) => ({ ...albums[a], summary: <AlbumAppearance lookup={a?.lookup} object={albums[a]} /> }))} />
 }
 
 const Pictures = ({ pictures, name }: any) => {
@@ -78,9 +72,7 @@ const AKA = ({ aliases }: any) => (!!aliases?.length) && (<><Tag>Also Known As</
 
 const Conspirator = ({ params }: { params?: any }) => {
 	const conspirator = decodeURIComponent(params?.slug);
-	console.log("conspirator", conspirator);
 	const known = isKnownMusician(conspirator);
-	console.log("known", known);
 	const name = known && known.name || '';
 	const { data, isLoading, error } = useConspirator(name);
 	const { releases, performer, support, pictures } = data || {};

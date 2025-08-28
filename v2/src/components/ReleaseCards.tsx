@@ -6,9 +6,9 @@ import { expand } from '@/lib/defines';
 import InfoTag from '@/components/InfoTag';
 import { type ReleaseType } from '@/components/Release';
 
-const ReleaseCards = ({ items, preventAutoExpand=false }: any) =>
+const ReleaseCards = ({ items, preventAutoExpand=false, title='Release' }: any) =>
   !!items?.length && <details open={(!preventAutoExpand) || items.length < 10}>
-	<summary className="tagClickable">{pluralize(items.length, 'Release')}</summary>
+	<summary className="tagClickable">{pluralize(items.length, title)}</summary>
 	<div className="masonry">
 		{items.map((item: ReleaseType, key: number) => {
 				const { thumb, image } = parseImage(item?.thumb);

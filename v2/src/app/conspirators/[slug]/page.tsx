@@ -45,7 +45,7 @@ const Releases = ({ releases, name }: any) => {
 	});
 
 	const count = Object?.keys(albums)?.length;
-	return <ReleaseCards preventAutoExpand={(count > 4)} items={Object.keys(albums)?.map((a: any) => ({ ...albums[a], summary: <AlbumAppearance lookup={a?.lookup} object={albums[a]} /> }))} />
+	return <ReleaseCards title={`${name} album appearance`} preventAutoExpand={(count > 4)} items={Object.keys(albums)?.map((a: any) => ({ ...albums[a], summary: <AlbumAppearance lookup={a?.lookup} object={albums[a]} /> }))} />
 }
 
 const Pictures = ({ pictures, name }: any) => {

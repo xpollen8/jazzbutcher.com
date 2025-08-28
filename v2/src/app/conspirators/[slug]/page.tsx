@@ -16,8 +16,9 @@ import useConspirator from '@/lib/useConspirator';
 import ReleaseCards from '@/components/ReleaseCards';
 
 const AlbumAppearance = ({ lookup, object }: any) => {
+	const roles = object?.instruments?.join(', ');
 	return <div>
-		{(!!object?.instruments?.length) && <div><b>Role</b>: {object?.instruments?.join(', ')}</div>}
+		{(!!roles?.length) && <div><b>Role</b>: {roles}</div>}
 		{Object?.keys(object?.songs)?.map((s: string, key: number) => {
 			return <div key="key">
 				<b>{AutoLinkSong(s)}</b> - {object?.songs[s]?.join(', ')}

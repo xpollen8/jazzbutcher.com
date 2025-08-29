@@ -3,7 +3,7 @@ import LinkAudio from '@/components/LinkAudio';
 import EmbedVideo from '@/components/EmbedVideo';
 import { imageBase, autoLink, ts2URI } from '@/lib/utils';
 import { expandAll } from '@/lib/defines';
-import { Attribution } from '@/components/GenericWeb';
+import { Credit, Source, Download } from '@/components/GenericWeb';
 
 const Performers = ({ datetime }: { datetime: string }) => {
 	return (<>
@@ -75,6 +75,14 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 	const useArtist = artist?.replace('NULL','');
 	const useAuthor = author?.replace('NULL','');
 
+	/*
+		- if have mediacrediturl: <Source u={mediacrediturl} />
+		- if have mediacredit:  <Credit u={/contributors/mediacredit} />
+		- if no mediacredit: <Credit u={/contributors/-UNKNOWN-} />
+	 */
+	const useSource = (mediacrediturl) ? <Source u={mediacrediturl} d={mediacreditdate} /> : <></>;
+	const useCredit = mediacredit || '-UNKNOWN-';
+	const useAttribution = <Credit g={useCredit} u={`/contributions/${useCredit}`} d={mediacreditdate || added} />;
 	const main = () => {
 		if (useMediaurl && !disableVideo) {
 			if (useMediaurl?.includes('mixcloud.com')) {
@@ -107,10 +115,12 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 						{children}
 					</EmbedSoundCloud>
 				</>
-			} else if (useMediaurl?.includes('.mp3') || useMediaurl?.includes('google')) {
+			} else if (useMediaurl?.includes('.mp3')) {
 				return (<>
 					<LinkAudio version={version} lookup={lookup} parent={parent} title={useTitle} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={useArtist} author={useAuthor} comment={comment} ordinal={ordinal} setnum={setnum} collection={collection} />
-					{(mediacredit) && <><br/><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate || added} /></>}
+					{useAttribution}
+					{useSource}
+					<Download u={mediaurl} />
 					{collection}
 					{children}
 				</>)
@@ -128,7 +138,8 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 					{/*(comment) && <span className="smalltext">{' '}{expandAll(comment)}</span>*/}
 					<EmbedVideo className={className} data={data} />
 					{children}
-					{(mediacredit) && <><Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate || added} /></>}
+					{useAttribution}
+					{useSource}
 				</div>);
 			}
 		} else {

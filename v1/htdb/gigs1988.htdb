@@ -140,10 +140,10 @@
 #define	Jun5.html()
 	${gigHeader(
 		recording=${literalizeCommas(${r})},
-		notes=${literalizeCommas(
+		reviews=${literalizeCommas(
 			Material from this session was released on ${spook},
 			and on ${brave}.
-		)},
+		)}$$David Whittemore,
 	)}
 
 #define	Mar2.html()

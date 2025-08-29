@@ -10,7 +10,7 @@
 
 #define	Feb14_2030.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I will be one of four artists collaborating on an evening called "Small Beast". The others are New Yorker Thomas Truax,               
 			Markus-Maria Jansen of German band M. Walking on the Water and Paul Wallfisch, another New Yorker who is currently the director of    
 			music at the theatre in Dortmund. Each of us will play a short solo set before joining up to play a full set together. It will        
@@ -54,7 +54,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, Tim Harries, Jonny Mattock
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			We have booked a "warm up" date for the New York shows at the Labour Club in NN1.
 			The NYC gigs will be duo shows, so we will mostly be performing as a duo on this occasion too.
 			Since, however, we are in Northampton, it would be beyond stupid to miss out on involving Jonny and Tim, who played on the album,
@@ -72,7 +72,7 @@
 		who=${literalizeCommas(
 			${duo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			THE JAZZ BUTCHER DUO (Pat Fish & Max Eider)
 			<p>
 			21+ show
@@ -277,14 +277,14 @@
 
 #define	Jun21_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			White Elephant Records presents
 		)},
 	)}
 
 #define	Sep6_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Biography
 			Georges staggered out of the dimly lit doorway. Dazed from the explosion, his eyes smarting in the early dawn light he stumbled into a narrow sidestreet.
 			Pausing
@@ -331,7 +331,7 @@
 
 #define	Oct11_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Yeah, ${joe_woolley}'s launching his EP record with his band. How extremely good!
 		)},
 	)}

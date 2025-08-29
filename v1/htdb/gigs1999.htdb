@@ -10,8 +10,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${curt}, ${owen}, ${beirne}, Nikki Whittaker
 		)},
-		notes=${literalizeCommas(
-		)},
 		pat=${literalizeCommas(
 			<p />HAMBURG 1999
 			<p />the butcher files his report
@@ -191,7 +189,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${curt}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			There is a gig at the Racehorse pub Abington street Northampton UK
 			 with Martin Stephenson and the Toe Rags, The Jazz Butcher, & Max Eider, & Curtis
 										  E Johnson 
@@ -234,7 +232,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Max and I will be playing at this year's Highland Festival.
 			<p />
 			Where's that, you ask.
@@ -281,7 +279,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Max and I will be playing at this year's Highland Festival.
 			<p />
 			Where's that, you ask.
@@ -313,12 +311,6 @@
 #define	Jun3.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
-		who=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)},
 		pat=${literalizeCommas(
 		I'm in recovery.
 		<p />
@@ -341,7 +333,7 @@
 		who=${literalizeCommas(
 			${pat}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I'll be playing on all of Wolfgang's sets.
 			He is bringing CDs of backing tracks with him for us to play over.
 			<p />
@@ -365,7 +357,7 @@
 		who=${literalizeCommas(
 			${pat}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I'll be playing on all of Wolfgang's sets.
 			He is bringing CDs of backing tracks with him for us to play over.
 			<p />
@@ -389,8 +381,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}
 		)},
-		notes=${literalizeCommas(
-		)},
 		photosets=/images/19990824/19990824_adamgimbel_patmax.jpg$$
 			;;;;2014-07-12
 		,
@@ -401,12 +391,8 @@
 #define	Sep9.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${dj}, ${hask}
-		)},
-		notes=${literalizeCommas(
 		)},
 		photosets=
 			/images/19990909/19990909_group.jpg;;${literalizeCommas(Pat, Kevin, David, Max, Owen, Brian Kelly)}$$
@@ -456,12 +442,8 @@
 	${gigHeader(
 		cost=$12.50,
 		address=859 O'Farrell St,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${hask}, ${steve}, Derek Hokal
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 			With David flying of to Hawaii to DJ in a fetish club, we enrolled Steve 
@@ -529,7 +511,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}
 		)},
-		notes=${literalizeCommas(
+		reviews=${literalizeCommas(
 			The story here is that while the band were in San Francisco, ${del} paid
 			for a demo session in the studio of Journey manager, Herbie Herbert.
 			<p />
@@ -542,9 +524,7 @@
 			and was recorded to 16 channel ADAT.  The live rough mixes of the session can be heard below.
 			<p />
 			The original ADAT session tapes have been digitized, so better mixes of these tracks are possible.  Someday.
-		)},
-		pat=${literalizeCommas(
-		)}
+		)}$$David Whittemore,
 		,
 		photosets=
 			https://s3.amazonaws.com/assets.jazzbutcher.com/images/19990913/19990913_SykloppsStudio_JazzButcher_Whittemore_1.jpg$$
@@ -576,8 +556,6 @@
 		)},
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 			With Kevin off to a wedding for a couple of days we set off into the Pacific 
@@ -635,12 +613,8 @@
 		bootlegger=${literalizeCommas(
 			Brent Aliverti, brenta_ms@email.msn.com
 		)},
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 			First of all a word of thanks to Bob Frangooles and Anne Pace,
@@ -717,12 +691,8 @@
 #define	Sep23_1200.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${max}
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 			At lunchtime Max and the Butcher visited WNYU where we recorded
@@ -744,8 +714,6 @@
 		,
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}, ${hask}, ${beirne}
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 			We arrived in New York to check into our

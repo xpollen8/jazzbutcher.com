@@ -1,52 +1,30 @@
 #define	Mar11.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${hend}, ${pat}, ${dooj}, ${gab}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	Mar23_2030.html()
 	${gigHeader(
 		cost=£5,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas( ${pat}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	Apr1.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas( ${pat}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	Apr4.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${hend}, ${pat}, ${dooj}, ${gab}, ${green}
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 			The French schoolkids' gig!
@@ -62,10 +40,6 @@
 		who=${literalizeCommas(
 			${pat}, ${dooj}, ${max}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 		reviews=
 			${literalizeCommas(
@@ -151,12 +125,8 @@
 #define	Sep13_2000.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${dooj}, ${dj}
-		)},
-		notes=${literalizeCommas(
 		)},
 		tickets=
 			/images/19950913/19950913_ticket.jpg$$
@@ -169,12 +139,8 @@
 #define	Dec20.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${hend}, ${pat}, ${dooj}, ${gab}, ${green}
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 		When asked: <i>One of your notebooks shows (*) Video beside "Caroline Wheeler", "Angels", and "Lot 49". What's that about?</i>
@@ -196,7 +162,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${gab}, ${hend}, ${dooj}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Just thought you'd like to know that the gig at the Garage
 			on the 21st of December is
 			<p>

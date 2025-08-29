@@ -59,7 +59,7 @@
 
 #define	Sep19.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			19Sep1998 - APOCALYPSE SUMO
 			<p>
 			All-night up-country old skool rave up.

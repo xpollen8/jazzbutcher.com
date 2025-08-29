@@ -299,7 +299,9 @@
 	)},
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 	pat=A drunken marathon "secret" gig,
-	notes=A fun show. Human Jungle is not in the recording,
+	reviews=${literalizeCommas(
+		A fun show. Human Jungle is not in the recording
+	)}$$David Whittemore,
 
 	)}
 
@@ -547,9 +549,9 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
-	notes=${literalizeCommas(
-	Mentioned in the liner notes for ${cake}.
-	)}
+	reviews=${literalizeCommas(
+		Mentioned in the liner notes for ${cake}.
+	)}$$David Whittemore
 
 	)}
 

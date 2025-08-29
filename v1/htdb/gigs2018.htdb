@@ -3,7 +3,7 @@
 		cost=&pound;12.50,
 		with=Tim Keegan,
 		ticketweb=https://www.ticketweb.uk/event/the-jazz-butcher-100-club-tickets/7768855,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 		The Jazz Butcher are releasing a 4CD box set 'The Wasted Years' compiling their first four albums - ‘Bath Of Bacon’, ‘A Scandal In Bohemia’, ‘Sex And Travel’ and ‘Distressed Gentlefolk’ - which originally came out on Glass Records between 1983-1986.
 		<p>
 		Formed in 1982 by songwriter/vocalist Pat Fish, The Jazz Butcher released their debut single "Southern Mark Smith" in 1983 followed by a frantic version of Jonathan Richman's "Roadrunner" the following year. The Glass Records catalogue is being re-released by Fire Records to co-incide with this concert. In 1988 the band signed to Alan McGee's Creation Records releasing an album a year with them until 1995.
@@ -110,7 +110,7 @@
 		cost=&pound;5.50,
 		with=${literalizeCommas(John Hegley)},
 		ticketweb=https://www.wegottickets.com/event/436057,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			CND 60th Anniversary celebration.
 			<p>
 			Should be a good night. Hegley is brilliant.
@@ -136,7 +136,7 @@
 		cost=&pound;22.00,
 		with=${literalizeCommas(Luke Haines)},
 		ticketweb=https://www.seetickets.com/event/luke-haines/the-lexington-london/1204840,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Supporting Luke Haines
 		)},
 		who=${literalizeCommas(
@@ -152,7 +152,7 @@
 		cost=&pound;22.00,
 		with=${literalizeCommas(The Bevis Frond, Jowe Head)},
 		ticketweb=https://www.seetickets.com/event/the-bevis-frond/100-club/1206772,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			This Corner of England #2
 		)},
 		who=${literalizeCommas(
@@ -236,7 +236,7 @@
 		ticketweb=https://www.seetickets.com/event/david-j/the-islington/1230762,
 		who=${literalizeCommas( ${pat})},
 		with=${literalizeCommas(${dj}, Mickey Greaney)},
-		notes=${literalizeCommas(Ex Bauhaus/ Love & Rockets star David J returns to London’s The Islington in August. Support from The Jazz Butcher and Micky Greaney at this lovely little London venue soon.)},
+		announcement=${literalizeCommas(Ex Bauhaus/ Love & Rockets star David J returns to London’s The Islington in August. Support from The Jazz Butcher and Micky Greaney at this lovely little London venue soon.)},
 		photosets=
 			/images/20180825/20180825_barker_group.jpg;;${literalizeCommas(${max}, ${barker}, ${dj})}$$
 			David E. Barker;;;;2018-09-09
@@ -264,7 +264,7 @@
 			DJ: ALAN McGEE (Creation Records),
 			DJ: STEVE PROCTOR (Better Days)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Though never a great commercial success, The Television Personalities, and their leading light Daniel Treacy are spoken of in reverential tones by all of those familiar with their work. The term genius is bandied around all too casually in the wacky world of pop, but in this case it barely does this band's simple but beautiful songs, sometimes deeply poignant, occasionally angry, from time to time hilarious and always truthful, justice.
 			<p>
 			The Television Personalities were Kurt Cobain's favourite band,  MGMT wrote 'A Song For Dan Treacy' for their 2010 album "Congratulations", and Alan McGee, who joins us as our DJ for the night and to whom we are indebted to for his support of this gig, once described him as "the poet laureate of working-class London". He credits the Television Personalities for inspiring him to start Creation Records. Their fingerprints are all over the work of every indie outfit to have followed them.

@@ -34,7 +34,7 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(9)}, ${p(C)}, ${i(C)}, ${mt}, ${DAT}, ${PZM})},
 	who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-	notes=${literalizeCommas( First night out - a little rough)},
+	reviews=${literalizeCommas( First night out - a little rough)}$$David Whittemore,
 
 	)}
 
@@ -73,8 +73,8 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT}, ${g_details(30 minutes.)})},
 		who=${literalizeCommas( ${pat}, ${dooj} )},
-	notes=${literalizeCommas( in-studio. basic college radio interview.
-	)},
+	reviews=${literalizeCommas( in-studio. basic college radio interview.
+	)}$$David Whittemore,
 
 	)}
 
@@ -85,8 +85,8 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(9)}, ${p(B)}, ${i(A)}, ${mt}, ${DAT}, ${PZM}, ${g_details(good mix, good bass.)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-	notes=${literalizeCommas( sombre, intimate show.  beautiful sounding desk+room mix.
-	)},
+	reviews=${literalizeCommas( sombre, intimate show.  beautiful sounding desk+room mix.
+	)}$$David Whittemore,
 		photosets= /images/19920426/M31-01.jpg;;${dooj}$$
 			/images/19920426/M31-02.jpg$$
 			/images/19920426/M31-03.jpg$$
@@ -109,10 +109,10 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(9)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-	notes=${literalizeCommas( crowd really into it. nice stereo separation and mix.
+	reviews=${literalizeCommas( crowd really into it. nice stereo separation and mix.
 	gets very good after the bad live mix on ${still} and ${tues}.
 	bad mix on ${odd}
-	)},
+	)}$$David Whittemore,
 
 	)}
 
@@ -122,8 +122,8 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(8)}, ${p(C)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}, ${d}, ${g_details(out-of-tune on last songs. one channel mono. one channel live room. clear vocals.)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-	notes=${literalizeCommas( decent tape.
-	)},
+	reviews=${literalizeCommas( decent tape.
+	)}$$David Whittemore,
 
 	)}
 
@@ -156,7 +156,6 @@
 
 		cost=$12,
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-		notes=${literalizeCommas( 8:30pm show)},
 		with=${literalizeCommas(Jeff Buckley, Gary Lucas)},
 		photosets= /images/19920502/19920502_genesolomon_tablecloth.jpg;;${literalizeCommas(Pat had decorated the tables in the club)}$$
 			Gene Solomon;;;;2019-03-10
@@ -171,7 +170,6 @@
 
 		cost=$12,
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-		notes=${literalizeCommas( 11:30pm show)},
 		with=${literalizeCommas(Jeff Buckley, Gary Lucas)},
 		photosets= /images/19920502/19920502_genesolomon_tablecloth.jpg;;${literalizeCommas(Pat had decorated the tables in the club)}$$
 			Gene Solomon;;;;2019-03-10
@@ -187,8 +185,8 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(6)}, ${p(C)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-	notes=${literalizeCommas( dank
-	)},
+	reviews=${literalizeCommas( dank
+	)}$$David Whittemore,
 		photosets= /images/19920503/19920503_del_techno.jpg;;${literalizeCommas(${pat})}$$
 			David Whittemore;;;;1997-05-28
 
@@ -204,8 +202,8 @@
 		/images/19920505/19920505_setlist.jpg$$
 		;;;;2013-06-22
 	,
-	notes=${literalizeCommas( vocals buried. poor bass.  geetars in yer face. good show, though.
-	)},
+	reviews=${literalizeCommas( vocals buried. poor bass.  geetars in yer face. good show, though.
+	)}$$David Whittemore,
 
 	)}
 
@@ -215,11 +213,11 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(1)}0, ${p(A+)}, ${i(A+)}, ${mt}, ${DAT} ${g_details(30 minutes.)})},
 		who=${literalizeCommas( ${pat} )},
-	notes=${literalizeCommas( in-studio
+	reviews=${literalizeCommas( in-studio
 	Excellent in-studio professional interview for CBC's "Brave New Waves" program.
 	Interviewer: Brent Brambury.
 	VERY RECOMMENDED!
-	)},
+	)}$$David Whittemore,
 
 	)}
 
@@ -231,8 +229,8 @@
 	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}.)},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 		with=${literalizeCommas( Lowest Of The Low )},
-	notes=${literalizeCommas( weak vocals in the otherwise excellent mix. brilliant ${capt}.
-	)},
+	reviews=${literalizeCommas( weak vocals in the otherwise excellent mix. brilliant ${capt}.
+	)}$$David Whittemore,
 
 	)}
 
@@ -261,9 +259,9 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(8)}, ${p(A)}, ${i(C)}, ${mt}, ${DAT}, ${PZM}. ${g_details(out-of-phase. stereo geetar mix, excellent drums, tight bass.)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-	notes=${literalizeCommas( great show. drunk girl rips down my mics during ${party}.
+	reviews=${literalizeCommas( great show. drunk girl rips down my mics during ${party}.
 	${rainbow} is audience sing-along.
-	)},
+	)}$$David Whittemore,
 
 	)}
 
@@ -307,8 +305,8 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(7)}, ${p(A)}, ${i(A)}, ${mt}, ${DAT}, ${g_details(Core Sound mics)})},
 		who=${literalizeCommas( ${pat}, ${pete}, ${dooj} )},
-	notes=${literalizeCommas( in-store at ${TOWER}
-	)},
+	reviews=${literalizeCommas( in-store at ${TOWER}
+	)}$$David Whittemore,
 
 	)}
 
@@ -318,8 +316,8 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(B+)}, ${mt}, ${DAT}, ${g_details(recorded slightly hot. 45 minutes.)})},
 		who=${literalizeCommas( ${pat}, ${pete} )},
-	notes=${literalizeCommas( in-studio
-	)},
+	reviews=${literalizeCommas( in-studio
+	)}$$David Whittemore,
 
 	)}
 
@@ -329,8 +327,8 @@
 	bootlegger=${literalizeCommas(David Whittemore)},
 	recording=${literalizeCommas( ${q(7)}, ${p(A)}, ${i(B)}, ${mt}, ${DAT}, ${PZM}, ${g_details(Core Sound binaural mics distort nearly everywhere..)})},
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
-	notes=${literalizeCommas( crowd really into it.
-	)},
+	reviews=${literalizeCommas( crowd really into it.
+	)}$$David Whittemore,
 
 	)}
 
@@ -632,7 +630,7 @@
 	bootlegger=${literalizeCommas(${killer})},
 	recording=${literalizeCommas( ${q(8)}, ${p(A+)}, ${i(A+)}, ${g(1)}, ${DAT}, ${g_details(45 minutes.)})},
 		who=${literalizeCommas( ${eg} - Karel and Otto ${damm} )},
-	notes=${literalizeCommas(
+	reviews=${literalizeCommas(
 	<b>hilights</b> :
 	Ils arrivent, Welcome, Is no "Black Eg", Where Is Emil,
 	Is too much this Creation Records, The evil Hass Buoucher,
@@ -654,7 +652,7 @@
 	Vietnamese twist movement, Extreme East,
 	Multi-media toilet water, We send you back to Russia,
 	Keep it up Canada
-	)},
+	)}$$David Whittemore,
 
 	)}
 

@@ -6,10 +6,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,setlists=
 			/images/20000413/20000413_setlist.jpg$$
 			VerveNet@aol.com;;;;2001-08-09
@@ -229,10 +225,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 		photosets=/images/20000415/a.jpg$$
 			/images/20000415/atlarge.jpg$$
@@ -298,10 +290,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 		photosets=/images/20000416/erie_1.jpg$$
 			/images/20000416/erie_2.jpg$$
@@ -319,10 +307,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 		setlists=
 			/images/20000417/20000417_setlist.jpg$$
@@ -377,10 +361,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 		reviews=
 			${literalizeCommas(
@@ -519,8 +499,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
 	reviews=
 		${literalizeCommas(
 			How was the Jazz Butcher show?  They were here last night and they were
@@ -590,10 +568,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 	reviews=
 		${literalizeCommas(
@@ -667,10 +641,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 	reviews=
 		${literalizeCommas(
@@ -714,8 +684,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
 		photosets=/images/20000423/001_1.jpg$$
 			/images/20000423/002_2.jpg$$
 			/images/20000423/003_3.jpg$$
@@ -733,10 +701,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	Apr26.html()
@@ -746,10 +710,6 @@
 		)},
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
-		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
 		)},
 		posters=/images/20000426/20000426_poster.jpg$$
 		    Kevin Carroll;;;;2022-03-23
@@ -763,10 +723,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	,
 	reviews=
 		${literalizeCommas(
@@ -789,10 +745,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}, ${kathie}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	,
 	reviews=
 		${literalizeCommas(
@@ -818,10 +770,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	,
 	reviews=
 		${literalizeCommas(
@@ -843,10 +791,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	May3.html()
@@ -858,10 +802,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	,photosets=
 		/images/20000503/20000503_jenniferhubler_JBC01.jpg$$
 		/images/20000503/20000503_jenniferhubler_JBC02.jpg$$
@@ -898,10 +838,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 		photosets=/images/20000504/JBC2.jpg$$
 			/images/20000504/JBC3.jpg$$
@@ -969,10 +905,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	May7.html()
@@ -984,10 +916,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	,
 	reviews=
 		${literalizeCommas(
@@ -1195,10 +1123,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 		photosets=/images/20000508/disk3.Untitled1.jpg$$
 			/images/20000508/disk3.Untitled3.jpg$$
@@ -1286,10 +1210,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 		tickets=
 			/images/20000509/20000509_ticket_tommassey.jpg$$
@@ -1371,10 +1291,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}, ${kathie}, ${dj}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 		photosets=/images/20000511/NYC2000051101.jpg$$
 			/images/20000511/NYC2000051103.jpg$$
@@ -1488,10 +1404,6 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	May28.html()
@@ -1503,10 +1415,6 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	Jun17.html()
@@ -1517,8 +1425,6 @@
 		)},
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 			<a href="${jbc_root}/japan2000">Pat's Japan 2000 Travelogue</a>
@@ -1689,8 +1595,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
-		)},
 		pat=${literalizeCommas(
 			<a href="${jbc_root}/japan2000">Pat's Japan 2000 Travelogue</a>
 		)}
@@ -1802,8 +1706,6 @@
 		)},
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 			<a href="${jbc_root}/japan2000">Pat's Japan 2000 Travelogue</a>

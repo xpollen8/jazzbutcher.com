@@ -421,17 +421,20 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
-			Small, enthusiastic crowd, nervous performer, intimate show.
-			<p>
-			About Matt Cockerill's recording: tech - mono, lapel microphone.
-		)},
 		reviews=${literalizeCommas(
 				<p>It was just him! besides, there wouldn’t have been room for anybody else.
 				<p>Pat was wandering around the bar during the support acts, muttering "Christ, I’m nervous. I haven’t done this in years."
 				<p>The audience were mostly seated (as was he) around him, looking agog, like he was some guru.
 			)}$$
-			Matthew Cockerill,
+			Matthew Cockerill
+			---
+			${literalizeCommas(
+				Small, enthusiastic crowd, nervous performer, intimate show.
+				<p>
+				About Matt Cockerill's recording: tech - mono, lapel microphone.
+			)}$$
+			David Whittemore
+			,
 		pat=${literalizeCommas(
 			<h3>THAT MEAN <a href="${jbc_gigs}/1993/May15.html">FIDDLER
 			SET</a> LIST IN FULL...</h3>
@@ -599,7 +602,7 @@
 	recording=${literalizeCommas( ${q(8)}, ${p(B)}, ${i(A)}, ${mt})},
 		who=${literalizeCommas( ${pat}, ${paul}, ${green} )},
 		with=${literalizeCommas( ${cale} )},
-	notes=${literalizeCommas(opening for ${cale}. never so nervous.)},
+	reviews=${literalizeCommas(opening for ${cale}. never so nervous.)}$$David Whittemore,
 	photosets= /images/19931028/pass_28Oct93.jpg;;All-Access Pass$$
 		David Whittemore;;;;1998-04-26,
 	tickets=/images/19931028/19931028_ticket.jpg$$
@@ -680,9 +683,9 @@
 		with=${literalizeCommas(
 			David J., Tom Hall, Tim Perkins
 		)},
-		notes=${literalizeCommas(
+		reviews=${literalizeCommas(
 			Christmas gig. Pat is joined by David J.
-		)},
+		)}$$David Whittemore,
 		posters=/images/19931223/19931223_poster.jpg$$
 		    David Whittemore;;;;2023-12-23
 	)}

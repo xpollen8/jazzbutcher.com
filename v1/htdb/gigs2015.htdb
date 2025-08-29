@@ -18,7 +18,7 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Got a little solo gig on Friday. I'm playing at a party for a photo exhibition by my pal ${indge},       
 			which is happening in a shop called Vinyl Deptford, 4 Tanners Hill, Deptford, London SE8 4PJ this Friday at    
 			9:00 o'clock in the evening. I'm supporting an act called Sheepy, which Alastair tells me is really good.      
@@ -34,7 +34,7 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			THE JAZZ BUTCHER AND HIS GENTLEMAN ADVENTURERS 
 		)}
 		,
@@ -47,7 +47,7 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			THE JAZZ BUTCHER AND HIS GENTLEMAN ADVENTURERS 
 			<p>
 			Tickets strictly limited in number, so please move quickly to ensure a seat.
@@ -90,7 +90,7 @@
 		who=${literalizeCommas(
 			${pat}, ${simon}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			A little in-store at a local record shop on record store day for me and Simon.
 		)}
 	)}
@@ -100,7 +100,7 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			THE JAZZ BUTCHER AND HIS GENTLEMAN ADVENTURERS
 		)},
 		pat=${literalizeCommas(
@@ -361,7 +361,7 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Tickets are also available at:
 			Hervey Street Barbers,
 			Spiral Archive Records,

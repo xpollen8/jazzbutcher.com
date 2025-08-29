@@ -30,7 +30,7 @@
 
 #define	Nov12_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			BLITZ Festival
 		)}
 		,
@@ -40,7 +40,7 @@
 
 #define	Nov13_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			SBD Promotions
 		)}
 		,
@@ -50,7 +50,7 @@
 
 #define	Dec18_1700.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Unstoppable Achievers present their 'A Bit of a Christmas Do'.
 			<p>
 			14:30 Unstoppable Achievers 15.30 Gardyloo Spew 17:00 Pat Fish (aka The Jazz Butcher)

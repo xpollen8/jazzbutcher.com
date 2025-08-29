@@ -1,18 +1,12 @@
 #define	Jan18.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	Mar29.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Our CD single, Istanbul Connection b/w Quality People will be available from our gig at the Labour Club on 29th
 			March.
 		)},
@@ -35,11 +29,7 @@
 #define	May4.html()
 	${gigHeader(
 		cost=free,
-		who=${literalizeCommas(
-		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Free! - One of our front-room nights: a home fixture.
 			<p>
 			Star Wars day, apparently...will Steve really dress up as a wookie?
@@ -224,7 +214,7 @@
 		with=${literalizeCommas(
 			Eaglehead, Pig Unit
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Anti-Nazi League benefit. Support from Eaglehead and Pig Unit.
 		)},
 		pat=${literalizeCommas(
@@ -275,7 +265,7 @@
 
 #define Jun11_2100.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			We are supporting a band called Fin, and we are second in a three band bill, so that probably means
 			we'll be on stage shortly after 9:00pm.
 		)},
@@ -344,12 +334,6 @@
 
 #define Jun24.html()
 	${gigHeader(
-		notes=${literalizeCommas(
-		)},
-		with=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${curt}
 		)},
@@ -371,7 +355,7 @@
 #define Jul27_2000.html()
 	${gigHeader(
 		cost=&pound;3:00,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Wilson + Magic Skool Bus<br>
 			Doors open 8:00pm<br>
 			Admission £3:00
@@ -470,7 +454,7 @@
 		with=${literalizeCommas(
 			P-Hex, Wiggy Bot
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			We shall return to Builth Wells in Wales for a 6 band extravaganza on Saturday 23rd August. This
 			show will also feature the exellent P-Hex, Wiggy Bot (Northampton's own Stooges tribute riot) and three
 			Welsh bands.
@@ -733,7 +717,7 @@
 		cost=,
 		with=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Guy Fletcher's birthday party has gone in some way oddly public,
 			exposing the heroic Wilson squad to the rigorous aesthetic demands
 			of the regulars at the Plume Of Feathers in Weedon, Northants this
@@ -827,7 +811,7 @@
 		with=${literalizeCommas(
 			Justin Robertson AKA Lionrock
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Finally Wilson invade the capital. We're playing at Cargo, 83 Rivington Street, Shoreditch, London EC2 on 16th
 			October. It's a club night called "For Your Pleasure". We will be playing live at about 10:00pm.
 			The club is supposed to have one of the best sound systems in London. Should be a top night.
@@ -854,7 +838,7 @@
 #define	Nov5_2115.html()
 	${gigHeader(
 		cost=,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			We have just acquired a gig at a party in a car repair garage two blocks
 			from my house. Tomorrow!
 			How local is that?
@@ -914,7 +898,7 @@
 		with=${literalizeCommas(
 			Rocket Hi-Fi System
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Those ever cheerful popular music hall entertainers Wilson will be makin' 'em laff, makin' 'em cry in a festiff
 			stylee at The Rockin' Horse, Northampton NN1 on Christmas Eve. (That's Wednesday 24th December, folks). Wilson will
 			be capably supported by the reggae sounds of the Rocket Hi-Fi System. We may add another group, we don't know yet.

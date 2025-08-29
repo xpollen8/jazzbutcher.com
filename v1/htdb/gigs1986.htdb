@@ -418,7 +418,7 @@
 	bootlegger=${literalizeCommas(Nancy Everson)},
 		recording=${literalizeCommas( ${w}, ${q(7)}, ${i(B)}, ${g(1)} )},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
-		notes=${literalizeCommas(Nice audience recording.)},
+		reviews=${literalizeCommas(Nice audience recording.)}$$David Whittemore,
 		with=${literalizeCommas( Christmas)},
 		posters=/images/19860721/19860721_poster.jpg$$
 			;;;;2023-09-11
@@ -463,7 +463,7 @@
 	${gigHeader(
 
 		recording=${literalizeCommas( ${w}, ${q(5)}, ${p(B)} )},
-		notes=${literalizeCommas(Small room, appreciative crowd.)},
+		reviews=${literalizeCommas(Small room, appreciative crowd.)}$$David Whittemore,
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		posters=/images/19860725/19860725_poster.jpg$$
 			;;;;2016-04-10
@@ -474,7 +474,7 @@
 	${gigHeader(
 
 		recording=${literalizeCommas( ${w}, ${q(5)}, ${p(B)} )},
-		notes=${literalizeCommas( The later, adult show--ie, you could buy a drink. !)},
+		pat=${literalizeCommas( The later, adult show--ie, you could buy a drink. !)},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		posters=/images/19860725/19860725_poster.jpg$$
 			;;;;2016-04-10
@@ -518,7 +518,7 @@
 		)},
 		recording=${literalizeCommas( ${w}, ${q(9)}, ${p(A)} )},
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
-		notes=${literalizeCommas(very nice room recording)},
+		reviews=${literalizeCommas(very nice room recording)}$$David Whittemore,
 	tickets=
 		/images/19860731/19860731_ticket.jpg$$
 		baywatchbanks;;http://www.flickr.com/photos/baywatch-brimful/2846445759/;;2011-06-04,

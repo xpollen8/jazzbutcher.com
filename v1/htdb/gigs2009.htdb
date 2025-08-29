@@ -1,12 +1,12 @@
 #define	Feb27_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Got a London show coming up with the The Boy Sonic.
-			<p>
+			<p />
 			I shall be playing solo and electric, with my beats and all.
-			<p>
+			<p />
 			Sonic Cathedral presents:
-			<p>
+			<p />
 			SPECTRUM <br>
 			GENTLE FRIENDLY <br>
 			BANJO OR FREAKOUT <br>
@@ -19,9 +19,9 @@
 		,
 		pat=${literalizeCommas(
 			Friday night's show was a real nice one. Sonic and band were really, really good.
-			<p>
+			<p />
 			Lots of classic old Spacemen stuff performed really well. As good a band as he's ever had, dare I say?
-			<p>
+			<p />
 			I received a surprisingly warm reception (cheering from the outset, demands for more, all that shit) and played...well, not as well as I'd hoped, but clearly well enough. Went down great and spent the rest of the evening drinking free beers.
 		)},
 		posters=/images/20090227/20090227_poster.jpg$$
@@ -30,24 +30,24 @@
 
 #define	Mar2.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Joe Woolley is organising a bunch of dates featuring old Creation songwriters. Unsurprisingly, he is
 			calling it Recreation.
-			<p>
+			<p />
 			I shall be playing one of these nights, details as follows:
-			<p>
+			<p />
 			Monday 2nd March 2009
-			<p>
+			<p />
 			The Dream Machine Record Shop<br>
 			89 Lordship Lane<br>
 			East Dulwich<br>
 			London SE22 8EP
-			<p>
+			<p />
 			East Dulwich railway station
-			<p>
+			<p />
 			Pat Fish and other artists tbc<br>
 			Admission £3:00
-			<p>
+			<p />
 			I shall most likely be in acoustic mode.
 			Although the venue is a record shop, this is a proper evening gig. Good atmosphere and a nice crowd.
 		)},
@@ -61,27 +61,27 @@
 	${gigHeader(
 		pat=${literalizeCommas(
 			Played a mate's birthday party last night with Wilson.
-			<p>
+			<p />
 			Mayhem. An entire hour of intense, sprawling hostility, rapturously received.
 		)},
 	)}
 
 #define	Apr10.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			It's the opening of a group show of local artists and craftspeople.
-			<p>
+			<p />
 			I shall be there with an electric guitar and some beats.
 		)},
 	)}
 
 #define	May3_1930.html()
 	${gigHeader(
-		notes=${literalizeCommas(
-			Solo electric<p>
+		announcement=${literalizeCommas(
+			Solo electric<p />
 			Opening for the I-Saws, for whom I shall also be blowing a little bit of sax
-			<p>
-			ISAWS + me + No Truth<p>
+			<p />
+			ISAWS + me + No Truth<p />
 			Doors for this show are at seven o'clock. First act on around half past seven. I shall play around a quarter past eight. 
 			Yes, I shall be playing sax on a couple of tunes with the ISAWS. Yes, they are going to cover The Jazz Butcher Meets Count Dracula. 
 			Yes, I shall be singing it. Yes, they really do play it about 6 times faster than I have ever heard it played before. 
@@ -92,13 +92,13 @@
 
 #define	May24.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Asbo Derek's Bank Holiday Bender! That's how they're billing this one. 
-			<p>
+			<p />
 			The Prince Albert is at 48 Trafalgar Street, Brighton BN1, near the station, apparently. 
 			Doors for this event are at 6:00pm and there is a host of acts taking part, including Cracktown, Glass Eye, Phil Jeays and Asbo Derek 
 			themselves. I shall be playing a (lengthy) electric set at around nine o'clock. 
-			<p>
+			<p />
 			Tickets for this event are £5:00 on the door. 
 		)},
 		photosets= /images/20090524/20090524_Pat1_MsDee23.jpg$$
@@ -109,14 +109,14 @@
 
 #define	Jun9_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Solo electric set, onstage around ten o'clock. Support from Sacramento's psychedelic psuperstar Anton Barbeau.
-			<p>
+			<p />
 			One or two other acts on the bill yet to be confirmed.
-			<p>
+			<p />
 			Doors will open at 8:00pm Don't know what it will cost yet, probably around six or seven quid, but I 
 			shall let you know when I do.
-			<p>
+			<p />
 			Lovely venue. Nearest tube station: Tottenham Court Road.
 		)},
 		pat=${literalizeCommas(
@@ -127,24 +127,24 @@
 
 #define	Jun21_2100.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			SLEEPY PETE, PAT FISH, JOE WOOLLEY
-			<p>
+			<p />
 			Completely acoustic night. Free admission.
 		)},
 	)}
 
 #define	Jun27_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			THE REMARKABLE ROCKET, GHOST TRAIN, PAT FISH + GUESTS
-			<p>
+			<p />
 			Superstar DJ Johnny P.
-			<p>
+			<p />
 			A Masters of Budvar presentation
-			<p>
+			<p />
 			£3:00 on the door. 
-			<p>
+			<p />
 			(I shall be doing an electric set)
 		)},
 		posters=/images/20090627/20090627_poster.jpg$$
@@ -154,9 +154,9 @@
 #define	Aug15.html()
 	${gigHeader(
 		cost=free,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			WILSON will be appearing at the Picturedrome, Kettering Road, Northampton NN1 on Saturday 15th August.      
-			<p>
+			<p />
 			Admission will be free, because we shall be making a film of the night. Expect Johnny P. and his lightshow, guest DJs and complete and
 			utter mayhem.
 		)},
@@ -166,9 +166,9 @@
 
 #define	Aug16_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Admission free
-			<p>
+			<p />
 			Masters of Budvar present<br>
 			>From Hamburg<br>
 			SHAKESPEARE AND THE BIBLE (Hamburg)<br>
@@ -176,10 +176,10 @@
 			CURTIS E. JOHNSON (Northampton)<br>
 			and<br>
 			HIGH QUALITY GIRLS (Hamburg)<br>
-			<p>
+			<p />
 			Owen's band are touring their spiffy new album Plus Or Minus Zero.
 			${g_artistweb(g=http://www.myspace.com/shakespeareandthebible)}
-			<p>
+			<p />
 			Max Eider will also be in the house. Could be a good party night. 
 		)},
 		posters=/images/20090816/20090816_poster.jpg$$
@@ -188,7 +188,7 @@
 
 #define	Aug23_2030.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Admission £3:00 <br>
 			PAT FISH SOLO ACOUSTIC and many other talented artists<br>
 			I shall be on stage around half past eight, I believe
@@ -205,7 +205,7 @@
 		)},
 		reviews=${literalizeCommas(
 			This was a JBC fan's 50th b-day party on a concrete patio in the suburbs of West Covina. A conga line formed to Caroline Wheeler.
-			<p>
+			<p />
 			Firkin Estates was my cheeky name 4 the house. The Firkins were the opening act. Every song was about beer. They live there, so...
 			)}$$
 			${coonce};;;;2017-02-23 15:27:53
@@ -222,13 +222,13 @@
 
 #define	Oct11_2200.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Sun 11th Oct - Part Time Punks festival at The Echo, 1822 Sunset Boulevard, Los Angeles, Ca 90026
-			<p>
+			<p />
 			Doors open at 2:00pm for a big all-day bill including Gang of Four, Viv from the Slits, Medium Medium and ourselves.
-			<p>
+			<p />
 			Admission $25:00
-			<p>
+			<p />
 			Line-up: Max Eider, Steve Valentine, Kevin Haskins, Pat Fish
 		)},
 		photosets=
@@ -248,13 +248,13 @@
 
 #define	Oct13_2030.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Tue 13th Oct - The Echo, 1822 Sunset Boulevard, Los Angeles, Ca 90026
-			<p>
+			<p />
 			Doors open 8:30
-			<p>
+			<p />
 			Admission $10:00
-			<p>
+			<p />
 			Solo set from Pat Fish and Max Eider; Pat & Max duo set; Band set with Steve and Kevin.
 		)},
 		who=${literalizeCommas(
@@ -282,13 +282,13 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, Steve Valentine, Kevin Haskins
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Next to the Henry Fonda Theatre
-			<p>
+			<p />
 			Admission free!
-			<p>
+			<p />
 			Support from excellent quartet, The Firkins.
-			<p>
+			<p />
 			They sing about beer. 
 		)},
 		pat=${literalizeCommas(
@@ -304,11 +304,11 @@
 
 #define	Oct30_1800.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Opening for the Woodentops at their crazy Games for Hallowe'en night.
-			<p>
+			<p />
 			I shall be on, acoustic, at 6:00pm in the evening!
-			<p>
+			<p />
 			Tickets =&pound;17:50
 		)},
 		photosets=
@@ -321,9 +321,9 @@
 
 #define	Nov7.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Part of a 3 act bill in aid of local charity Have A Heart. I shall have my beats with me. Ticket price includes a barbecue supper.
-			<p>
+			<p />
 			Tickets £6:95
 		)},
 	)}

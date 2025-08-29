@@ -4,7 +4,7 @@
 		with=${literalizeCommas(
 			Piss Shivers, Venus Flytrap, The Woodentops, Tim Keegan
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 		<p>
 		We are pleased to announce that the Jazz Butcher tribute date, originally planned for London on  Sunday 2nd April, will now
 		go ahead, on the same date, shifting venue to The Labour Club, Northampton, NN1.  Featuring a host of former conspirators
@@ -23,7 +23,7 @@
 		Poster by Patrik.
 		</p>
 
-		)},
+		)}$$;;Patrik,
 		photosets=
 			/images/20230402/20230402_Tribute.jpg;;Pre-shot crowd$$
 			Andrea;;https://twitter.com/parramaterial;;2023-04-02

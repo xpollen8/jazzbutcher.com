@@ -14,9 +14,9 @@
 		who=${literalizeCommas(
 			${pat}, ${green}
 		)},
-		notes=${literalizeCommas(
+		reviews=${literalizeCommas(
 			lasts 140+ minutes
-		)},
+		)}$$David Whittemore,
 	)}
 
 #define	Jan27.html()

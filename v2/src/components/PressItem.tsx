@@ -66,9 +66,9 @@ const PressItem = ({ item }: { item: any }) => {
 			const audio = parseCaptionsSourcesEtc(article?.audio);
 			if (audio?.length) {
 				return (<>
-					{audio?.map(([ file, caption ]: any, key: number) => {
+					{audio?.map(([ file, caption, mediacredit ]: any, key: number) => {
 						const [ title, ordinal, version ] = caption?.split('::') || [];
-						return <EmbedMedia key={key} data={{ mediaurl: file, title, ordinal, comment: version, author: article?.publication, datetime: article?.dtpublished, autolink: true }} />
+						return <EmbedMedia key={key} data={{ mediaurl: file, title, ordinal, comment: version, mediacredit, author: article?.publication, datetime: article?.dtpublished, autolink: true }} />
 					}
 					)}
 					<p />

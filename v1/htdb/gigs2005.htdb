@@ -351,7 +351,7 @@
 			I enjoyed it, especially the last couple of numbers, which, frankly, had no place in a folk club...
 		)},
 		posters=/images/20050304/20050304_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Apr1.html()
@@ -828,7 +828,7 @@
 			No, leave it. Leave it.
 		)},
 		posters=/images/20050603/20050603_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Jun4_2000.html()
@@ -1731,7 +1731,7 @@
 			${joe_woolley}
 		)},
 		posters=/images/20051027/20051027_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Nov4.html()
@@ -1874,7 +1874,7 @@
 			open until midnight!
 		)},
 		posters=/images/20051202/20051202_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Dec10.html()

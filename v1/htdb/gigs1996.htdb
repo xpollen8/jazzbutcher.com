@@ -26,9 +26,9 @@
 #define	Dec31.html()
 	${gigHeader(
 		phone=01604 604313,
-		notes=${literalizeCommas(
+		reviews=${literalizeCommas(
 			Live debut of Sumosonic
-		)},
+		)}$$David Whittemore,
 		pat=${literalizeCommas(
 			"Lots of girls on stage. That's what I want"
 		)},

@@ -453,9 +453,9 @@
 	with=Spies Who Surf,
 	recording=${literalizeCommas(${w}, ${q(7)}, ${p(A)}, ${g(0)})},
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
-	notes=${literalizeCommas( intimate show, good room recording.
+	reviews=${literalizeCommas( intimate show, good room recording.
 	Quality In Sound is heard at the end of ${best}.
-	)},
+	)}$$David Whittemore,
 		photosets= /images/19891117/19891117_del_richard4.jpg;;${literalizeCommas(${richard})}$$
 			David Whittemore;;;;1997-05-29
 
@@ -487,11 +487,11 @@
 		recording=${literalizeCommas(
 			${q(7)}, ${p(A+)}, ${i(A+)}, ${g(1)}
 		)},
-		notes=${literalizeCommas(
+		reviews=${literalizeCommas(
 			90 minutes talking with pat. highly recommended!
 			<p>
 			<a href="${jbc_press}/milwaukee89.html">Here's a transcription</a> of the interview conducted that night.
-		)},
+		)}$$David Whittemore,
 		photosets= /images/19891119/19891119_del_patsat.jpg;;${literalizeCommas(${pat})}$$
 			/images/19891119/19891119_BK_1_scaled.jpg;;Brian Kelly and Pat before the show$$
 			/images/19891119/19891119_BK_2_scaled.jpg;;Brian Kelly and Pat before the show$$
@@ -508,9 +508,9 @@
 		who=${literalizeCommas(
 			${pat}, ${larry}, ${paul}, ${richard}
 		)},
-		notes=${literalizeCommas(
+		reviews=${literalizeCommas(
 			The inside photo from ${cult} was taken this night!
-		)},
+		)}$$David Whittemore,
 		photosets= /images/19891119/19891119_del_cult.jpg;;${literalizeCommas(${cult} inner photo)}$$
 			/images/19891119/19891119_del_patsat.jpg;;${literalizeCommas(${pat})}$$
 			/images/19891119/19891119_del_formbypat.jpg;;${literalizeCommas(${richard}, ${pat})}$$
@@ -598,10 +598,10 @@
 
 	recording=${literalizeCommas(${d}, ${q(7)}, ${p(B)})},
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
-	notes=${literalizeCommas(
+	reviews=${literalizeCommas(
 	similar to <a href="${jbc_gigs}/1989/Nov17.html">17Nov89</a>,
 	minus ${party}, plus ${betty}, and ${go}
-	)}
+	)}$$David Whittemore
 
 	)}
 
@@ -676,7 +676,7 @@
 
 	recording=${literalizeCommas(${r})},
 	who=${literalizeCommas( ${pat}, ${paul}, ${larry}, ${richard} )},
-	notes=${literalizeCommas( ${deirdre}'s SNAP )},
+	reviews=${literalizeCommas( ${deirdre}'s SNAP )}$$David Whittemore,
 
 	)}
 
@@ -707,9 +707,9 @@
 			;;;;2013-06-22
 	,
 	with=${literalizeCommas( Miss Allans, 13 Frightened Girls)},
-	notes=${literalizeCommas(
+	reviews=${literalizeCommas(
 	similar to Nov89, plus ${engine}
-	)}
+	)}$$David Whittemore
 
 	)}
 
@@ -777,10 +777,10 @@
 
 	recording=${literalizeCommas( ${q(7)}, ${p(B)}, ${i(B)} ${g(1)}, ${VHS})},
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
-	notes=${literalizeCommas(
+	reviews=${literalizeCommas(
 	similar to <a href="${jbc_gigs}/1989/Dec10.html">10Dec89</a>,
 	plus acoustic ${domest}
-	)},
+	)}$$David Whittemore,
 	photosets= /images/19891219/19891219_del_pat.jpg;;${literalizeCommas(${pat})}$$
 		David Whittemore;;;;2013-06-23
 	,
@@ -794,8 +794,8 @@
 
 	recording=${literalizeCommas(${q(7)}, ${p(B)}, ${i(B)}, ${g(0)})},
 	who=${literalizeCommas( ${pat} )},
-	notes=${literalizeCommas( spontaneous end-of-tour hotel acoustic tunes
-	)},
+	reviews=${literalizeCommas( spontaneous end-of-tour hotel acoustic tunes
+	)}$$David Whittemore,
 		photosets= /images/19891220/19891220_del_xmas.jpg$$
 			David Whittemore;;;;2013-06-22
 			---

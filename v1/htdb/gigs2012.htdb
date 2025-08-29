@@ -9,9 +9,9 @@
 			escapes me now, that I'd play Sex & Travel in it
 			entirety. Solo. Acoustic. As Mitch Jenkins would
 			surely have said, were he on the spot, "What a maroon!"
-			<p>
+			<p />
 			Lucky to be alive, really.
-			<p>
+			<p />
 			Pat x
 		)},
 		photosets= /images/20120306/20120306_snow_pat.jpg$$
@@ -23,7 +23,7 @@
 
 #define	Apr22_1930.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Solo acoustic, supporting the very excellent Micky Greaney and his new band.
 			Amazing venue: it's like the Garden of Eden with a bar.
 			Admission £10.00 - Starts 7:30pm.
@@ -41,7 +41,7 @@
 		with=${literalizeCommas(
 			Mike Absalom, Easter Sun, George Frakes, Gabby G, Victoria Major, Marcia Mello, Louiza Kilcawley, ROSCO, Sterling Roswell, The Bare Nodes, Dee Jay\'s, Vinita Rocket Girl, DJ Dirty Water
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Solo acoustic, taking part in a 14 hour festival of poetry, music and art involving Pete Bassman (the Darkside), Sterling Rosco  
 			(Spacemen 3) and the legendary Mike Absalom, among others.
 			I'm on at around ten o'clock in the evening.
@@ -58,25 +58,25 @@
 #define	May26.html()
 	${gigHeader(
 		blurb=Masters of Budvar,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar are at it again!  
-			<p>
+			<p />
 			Saturday 26th May 2012  
 			The Labour Club, Earl & Charles, Northampton NN1
-			<p>
+			<p />
 			Masters of Budvar present THREE MINUTE TEASE with support from PAT FISH.
-			<p>
+			<p />
 			Admission -L-3.00 
-			<p>
+			<p />
 			Three Minute Tease, featuring Anton Barbeau, together with Andy Metcalfe
 			and Morris Windsor of the Soft Boys/Robyn Hitchcock & the Egyptians, 
 			present their brand new self-titled album live at Northampton's finest  
 			venue, with support from Pat Fish (the Jazz Butcher). 
-			<p>
+			<p />
 			Three Minute Tease is Three Minute Tease's debut album - and Three Minute 
 			Tease is An...ton Barbeau, Andy Metcalfe, and Morris Windsor, joined on 
 			this recording by special guests Stornoway and Nick Saloman (Bevis Frond).
-			<p>
+			<p />
 			The inexhaustible Californian psychedelic cult hero Barbeau has been a  
 			lifelong fan of Metcalfe and Windsor for their work with Robyn Hitchcock
 			in the Soft Boys and Egyptians, and first met them in 1988 at the Fillmore
@@ -86,21 +86,21 @@
 			took shape in Berlin in May 2010 when Morris and I met to record, " says
 			Barbeau, "but I'd asked them each at different times, and both seemed
 			keen."
-			<p>
+			<p />
 			Barbeau began writing songs specifically for TMT in June 2010, soon after
 			the group's debut gig at the Wheatsheaf pub in Oxford. The final product, 
 			much of it recorded at Kimberley Rew's Remote Farm studio in
 			Cambridgeshire, sounds slightly more pared down compared to Barbeau's
 			recent work, partly due to Metcalfe's influence as co-producer.
-			<p>
+			<p />
 			"I've had many bands, but this the most a part of something I've ever
 			felt," says Barbeau. "The fact that it's with Andy and Morris is amazing
 			for me. I'm proud of how the album reflects the intense effort and
 			enthusiasm we all shared from the start, shaping the unique sound you hear
 			now." 
-			<p>
+			<p />
 			${g_artistweb(g=http://www.threeminutetease.com)}
-			<p>
+			<p />
 			PS - Keep an eye on the Youtube channel. I have footage from 2 recent
 			London gigs. 
 		)},
@@ -115,17 +115,17 @@
 #define	Jun9_2000.html()
 	${gigHeader(
 		blurb=Twinfest,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Twinfest presents:
-			<p>
+			<p />
 			THE VENUS FLY TRAP (Northampton)<br/>
 			YET (Poitiers)<br/>
 			BAPTISTE PIZON (Poitiers)<br/>
 			PAT FISH (Northampton)
-			<p>
+			<p />
 			FREE ADMISSION<br/>
 			Doors open 8:00pm
-			<p>
+			<p />
 			Seeing as I am on first, I shall probably opt for an acoustic set.
 		)},
 		posters=/images/20120609/20120609_poster.jpg$$
@@ -153,30 +153,30 @@
 #define	Sep7_1930.html()
 	${gigHeader(
 		cost=&pound;2:50,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The Wilson DVD, entitled No Known Predators, is to be released on Friday 7th September 2012.     
-			<p>
+			<p />
 			To celebrate, Wilson will be reforming for a special one-off show at The Picturedrome, Kettering Road, Northampton NN1 on Friday 7th September 2012.
-			<p>
+			<p />
 			Tickets for the event cost £2:50, exactly the same as at Wilson's very first show in March 2001.
-			<p>
+			<p />
 			The DVD will be available to buy at the Picturedrome show.
-			<p>
+			<p />
 		)},
 		reviews=${literalizeCommas(
 			Northampton supergroup Wilson (inc' members of: The Jazz Butcher, Stranger Tractors, Sumosonic and others) reformed for the first time in 3 years to play the Picturedrome on Friday, launching their long-anticipated live DVD 'No Known Predators'.
-		<p>
-			${linkExternal(https://youtube.com/watch?v=lvEN14PM_5M)}<p>
-			${linkExternal(http://www.wilsondub.com/htdb/audio)}<p>
+		<p />
+			${linkExternal(https://youtube.com/watch?v=lvEN14PM_5M)}<p />
+			${linkExternal(http://www.wilsondub.com/htdb/audio)}<p />
 			(note couple of demos produced by DRS)
-		<p>
+		<p />
 			The live DVD is a film of the bands farewell gig at the Picturedrome. A film that was then premiered on the cinema screen of the Picturedrome and there's a possibility that only a technical hitch prevented them performing in front of it at the same venue ... which might have been pushing the fabric of spatial and temporal reality a little too far.
-		<p>
+		<p />
 			The launch concert was outstanding. The DVD is pretty much the only record of the groups music apart from the mp3's on the website.
 			Should be available to order online soon.
-		<p>
+		<p />
 			I got chatting to Pat Fish after the gig. He and his missus insisted that Sangelus and I come back to theirs with some other members of the band and their partners for a small after show party, where he treated us to a listen of a mix of a track from the impending new Jazz Butcher album which he'd only received earlier that day ... [fast show voice] which was nice. 
-		<p>
+		<p />
 			We went home a little after 2am ... happily, not in a taxi or disgrace.
 		)}$$
 		Pursued By Trees;;https://www.headheritage.co.uk/headtohead/unsung/topic/66532/;;2012-09-09 21:57:00$$
@@ -194,28 +194,28 @@
 
 #define	Nov3_1930.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Nearest tube station: Farringdon
-			<p>
+			<p />
 			Pat Fish<br>
 			Joe Woolley<br>
 			Neil Robert Herd<br>
 			Fawn<br>
-			<p>
+			<p />
 			Tickets: £6:00 <br>
 			Doors open: 7:30 pm
-			<p>
+			<p />
 			I should be on at around ten o'clock.
 		)},
 	)}
 
 #define	Nov16.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			DAVID J + LIAM DULLAGHAN + PAT FISH
-			<p>
+			<p />
 			Tickets £7:00 in advance.
-			<p>
+			<p />
 			Tickets strictly limited in number. Buy now...
 		)},
 		posters=
@@ -239,7 +239,7 @@
 			some interesting guitar maneouvres. Audience painfully hip. ambience deliciously warm. Total buzz. Taxis.
 			For encores we played      
 			"Soul Happy Hour" and then "Girls Who Keep Goldfish" and "Sweet Jane" (the way we used to do in about 1983).
-			<p>
+			<p />
 			Ayuko Koyabashi made a poster with a rather flattering depiction of the performers.
 		)},
 		photosets= /images/20121201/20121201_opal_krusch_flier.jpg$$

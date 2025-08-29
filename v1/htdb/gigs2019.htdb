@@ -5,7 +5,7 @@
 		cost=&pound;9.35,
 		with=${literalizeCommas(Asbo Derek, Helen McCookerybook)},
 		ticketweb=https://www.wegottickets.com/event/447944,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 		Pat Fish
 		<p>
 		Fish started making records under the name of the Jazz Butcher in 1983 and nobody has quite succeeded in putting a stop to this yet. He has recorded for Glass Records, Creation Records, ROIR of New York and Vinyl Japan of Tokyo. Overall he has written and released fifteen albums of original music, three live albums and innumerable singles and compilations.
@@ -30,7 +30,7 @@
 #define	Feb21_2100.html()
 	${gigHeader(
 		eventweb=https://facebook.com/colinhennymusic,
-		notes=${literalizeCommas( Facebook Live broadcast)},
+		reviews=${literalizeCommas( Facebook Live broadcast)}$$David Whittemore,
 		who=${literalizeCommas( ${pat}, Colin Henney)},
 		posters=/images/20190221/20190221_poster.jpg$$
 		    ;;;;2019-02-23
@@ -41,11 +41,11 @@
 		phone=34 963 49 45 84,
 		eventweb=https://www.16toneladas.com,
 		ticketweb=https://movingtickets.com/detalle/Entradas-The-Jazz-Butcher-UVPOP-en-concierto-en-Valencia/,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 		La banda británica the Jazz Butcher aterriza en Valencia en formato dúo electroacústico donde repasará sus más de 35 años de carrera artística con grandes obras maestras como “A Scandal in Bohemia” “Fishcotheque” o” In Bath of Bacon” aparte de alguna versión de grupos que le influenciaron como Syd Barret o Velvet Underground. Vienen acompañados de UV PØP los creadores de canciones míticas en las salas valencianas como “Serious” o “No songs tomorrow”, el broche a la noche lo pondrá el Dj Juan Vitoria en lo que lo convierte en una cita ineludible..
 		<p>
 		The Jazz Butcher és una banda oblidada de la història del rock. Formada a finals dels anys 80 a Oxford, és completament desconeguda per a la gran majoria, però per a uns altres pocs és una banda de culte. Ha tingut diferents noms i ha canviat constantment de membres, però l’excèntric Pat Fish, compositor artesà de cançons pop atípiques, molt personals i originals, sempre ha estat al capdavant. Han tocat gran diversitat d’estils, sempre amb lletres iròniques, irreverents i cíniques, plenes del característic humor anglès obscur. Estranya banda amb més de quaranta anys d’experiència a la que tindrem oportunitat de recordar o descobrir al 16 Toneladas. XIMO MARQUÉS 
-		)},
+		)}$$XIMO MARQUÉS,
 		who=${literalizeCommas(
 			${pat}, Dhiren Basu (lead guitar)
 		)},
@@ -63,7 +63,7 @@
 
 #define	Apr13.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		reviews=${literalizeCommas(
 		<p>
 		This is a video from one of the best nights of my life...the night I met my idol, Pat. It is likely my most prized
 		possession and it cost me nothing. They say meeting your idols can be dangerous as they may not live up to your idea of

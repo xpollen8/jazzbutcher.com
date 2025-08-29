@@ -58,7 +58,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
-
+		photosets= /images/19900310/19900310_pat_sumishta.jpg$$
+			Sumishta Brahm;;;;2025-02-02
 	)}
 
 #define	Mar13.html()

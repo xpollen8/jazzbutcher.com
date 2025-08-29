@@ -7,7 +7,7 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I have accidentally been put in charge of the Acoustic Allstars night, first Friday
 			of every month at the Labour Club, charles Street, NN1, free to get in, Budvar now on sale at socialist
 			prices.
@@ -84,7 +84,7 @@
 		with=${literalizeCommas(
 			A Fat Dog Sound, Good Cop Bad Cop, P-Hex
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			8:00pm - The doors open and the Electric Gypsyland album goes on the stereo.<br>
 			9:00pm - A Fat Dog Sound<br>
 			9:45pm - Wilson<br>
@@ -159,7 +159,7 @@
 		with=${literalizeCommas(
 			Eftus Septun, Milf, Applecraft
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Mike Mooney and Jon Mattock from Lupine Howl have another band, called Applecraft.
 			Having just put out their debut album , "The Happiest Man Alive" (Ochre Records - OCHO43LCD), they are going
 			out to play a few dates. Wilson will be opening.
@@ -439,7 +439,7 @@
 		with=${literalizeCommas(
 			Applecraft
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Mike Mooney and Jon Mattock from Lupine Howl have another band, called Applecraft.
 			Having just put out their debut album , "The Happiest Man Alive" (Ochre Records - OCHO43LCD), they are going
 			out to play a few dates. Wilson will be opening.
@@ -542,7 +542,7 @@
 		with=${literalizeCommas(
 			Applecraft
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Mike Mooney and Jon Mattock from Lupine Howl have another band, called Applecraft.
 			Having just put out their debut album , "The Happiest Man Alive" (Ochre Records - OCHO43LCD), they are going
 			out to play a few dates. Wilson will be opening.
@@ -567,7 +567,7 @@
 		)},
 		who=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Next Acoustic Allstars is on Friday 5th March at the Labour Club, NN1, your host: The Butcher.
 			<p>
 			This month we have a special treat, a headline set from Mrs. Pilgrimm to celebrate the release of her
@@ -592,7 +592,7 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Well, next month's Acoustic Allstars really does live up to its name. It's on Friday 2nd April at the
 			Labour Club, Charles Street, Northampton NN1, and it's still free to get in. Anyone who has been to either
 			of the first two nights will tell you that it has the best sound system and the best vibration of any club
@@ -693,7 +693,7 @@
 		with=${literalizeCommas(
 			Applecraft
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Another Wilson gig for the calendar. The gig with Applecraft went so well for us that the Labour Club have
 			asked us to return and play for them again. Happy to oblige...
 		)},
@@ -820,7 +820,7 @@
 		with=${literalizeCommas(
 			P-Hex, Good Cop Bad Cop, A Fat Dog Sound, Brown Thunder, Doctor Rhythm Method
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			It's a big production: Wilson, P-Hex, Good Cop Bad Cop, A Fat Dog Sound and two Welsh bands!
 			The night will run from 6:00pm to 1:00am.
 			Truly, as Stevie G said, we are in the hands of madmen.
@@ -872,7 +872,7 @@
 			our stride with the Police Chief song. >From there on in it was sweet, in a rowdy sort
 			of way. Mind you, those robes are awful sweaty.
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Long ago, in a pub very far away, they did occasionally have a band on in the Racehorse bar of a Tuesday
 			night. I can just about recall seeing quite a tidy band there, named Skuravi after the stylish Czech
 			striker of the day. That would have been about 1992. But for years now it's been the same: you just don't
@@ -913,7 +913,7 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Rolo McGinty is DJ Applebad. He's got an album called "Cocktail Party On A Space Station".
 			Also northern ranter supreme, D. Millard, and local acoustic champ, ${joe_woolley}.
 			Still free. What can it all mean?
@@ -1017,7 +1017,7 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I'll be appearing solo at the Labour Club in Northampton NN1 on Saturday 29th May.
 			<p>
 			It will be a fully naked show, no backing tracks or anything, just me and a guitar.
@@ -1052,7 +1052,7 @@
 		)},
 		who=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			An essential night for lovers of guitar music.
 			<p>
 			Hot Mocambo are a gypsy jazz sextet, playing the music of Django Rheinhardt and more.
@@ -1257,7 +1257,7 @@
 			the sound engineers (who were paid), the one thing that those bands and their audiences really, really wanted
 			out this event - the chance to play their shit and be heard doing it - was in many cases denied them.
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Wilson Involved in Festival with Hard-to-Understand Name
 			<p>
 			As part of the Twinfest cultural exchange knees-up, where bands from our twin towns of
@@ -1285,7 +1285,7 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			There is a gig on Sunday 20th June. It's at the Oakley Arms, Rushden, Northamptonshire.
 			It features Ghost Train, ${joe_woolley}, Robert Bray and me solo. As in "Pat Fish". I will probably have my
 			backing tracks too.
@@ -1376,7 +1376,7 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Friday 2nd July sees a long, cool draught of electro-acoustic intoxicants across three distinct genres.
 			<p>
 			Our headliner - and this is a bit of a coup for us - is Ramon de Juan.
@@ -1451,7 +1451,7 @@
 		)},
 		who=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Jesse Morningstar and band - Curtis E. Johnson - ${joe_woolley}
 			<p>
 			Our headliner this month is Jesse Morningstar from Bristol. Formerly with The Moonflowers, Jesse is a
@@ -1556,7 +1556,7 @@
 
 #define	Sep3.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The next Masters of Budvar night is at the Labour Club, Charles Street, Northampton NN1 on Friday 3rd
 			September.
 			<p>
@@ -1776,7 +1776,7 @@
 			<p>
 			Aaaargh! BUILTH!
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			1:00 'til 6:00 in the afternoon
 			CAN / Tom Hall Memorial
 			<p>Cricket for all knockout trophy 2004
@@ -1788,7 +1788,7 @@
 
 #define Sep25.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			In the immortal words of Chuck D, here we go again. On Saturday 25th September the entire NN1 underground
 			packs up and heads west, for it's time for one of Fred's mighty parties. All manner of sporting and
 			cultural events and curry goat too, if I'm getting the hang of it.
@@ -1815,7 +1815,7 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar present
 			<p>
 			GERARD LANGLEY & RODNEY ALLEN
@@ -1924,7 +1924,7 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Another gig to announce, a bit of a special one.
 			<p>
 			The Black Watch are coming from Los Angeles to play a festival in Liverpool, their first trip to play in the UK.
@@ -1964,7 +1964,7 @@
 		)},
 		who=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar - 5th November 2004
 			<p>
 			Robert Bray and Friends
@@ -2005,7 +2005,7 @@
 		with=${literalizeCommas(
 			Slipstream, Ghost Train, The Short Wave Band, Superstar DJ Willie Carruthers
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			<b>Slipstream</b> (onstage 10:15pm)
 			<p>
 			This is, of course, Mark Refoy's other band, featuring Jon Mattock and Ray Dickerty, his old
@@ -2191,7 +2191,7 @@
 		)},
 		who=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I'm on a bill with The Mispelt, Post
 			Teen Neurotic Breakdown Complex, ${joe_woolley} and Sir Paul Cox. Doors are at
 			eight and it's &pound;3:00 to get in.

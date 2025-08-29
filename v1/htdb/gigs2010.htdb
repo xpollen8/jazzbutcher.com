@@ -3,11 +3,11 @@
 		who=${literalizeCommas(
 			${pat}, ${joe_woolley}
 		)},
-		notes=${literalizeCommas(
-			The Boiler Club presents a Beat Evening: tribute to Ginsberg, Gysin, Burroughs, Corso, Kerouac & Ferlinghetti featuring<p>
-			Pat Fish - and- Joe Woolley<p>
-			Plus Charlie Barnard reading William S. Burroughs<p>
-			Plus beat generation films, music and poetry.<p>
+		announcement=${literalizeCommas(
+			The Boiler Club presents a Beat Evening: tribute to Ginsberg, Gysin, Burroughs, Corso, Kerouac & Ferlinghetti featuring<p />
+			Pat Fish - and- Joe Woolley<p />
+			Plus Charlie Barnard reading William S. Burroughs<p />
+			Plus beat generation films, music and poetry.<p />
 			Admission free.
 		)},
 		posters=/images/20100122/20100122_poster.jpg$$
@@ -19,7 +19,7 @@
 		who=${literalizeCommas(
 			Rolo: Guitar and voice, Mal Darwen: Double bass
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Fri 29th January 2010<br/>
 			Masters of Budvar present<br/>
 			THE WOODENTOPS - ACOUSTIC<br/>
@@ -36,17 +36,17 @@
 		who=${literalizeCommas(
 			${solo} (electric)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			${solo} (electric)
-			<p>
+			<p />
 			I may well be joined by one or two guests this evening...
 		)},
 	)}
 
 #define	Mar9.html()
 	${gigHeader(
-		notes=${literalizeCommas(
-			Cost: £6:00 adv./£8:00 on the door<p>
+		announcement=${literalizeCommas(
+			Cost: £6:00 adv./£8:00 on the door<p />
 			Solo electric show. I shall be on stage about half past nine.
 		)},
 		pat=${literalizeCommas(
@@ -62,22 +62,22 @@
 
 #define	Mar18.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Voodoo Amplifier
-			<p>
+			<p />
 			Opening night of a new regular club hosted by Alex Novak of Venus Fly Trap/Spiral Archive Records.
-			<p>
+			<p />
 			Live: Pat Fish - aka the Jazz Butcher -Acoustic and electric sets
-			<p>
+			<p />
 			DJ Alex Novak (Spiral Archive)
-			<p>
+			<p />
 			Admission free 
 		)},
 	)}
 
 #define	Jun26.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			One solo gig you oughtta know about...
 			Acoustic and electric sets
 			Admission free.
@@ -89,7 +89,7 @@
 #define	Jul15.html()
 	${gigHeader(
 		with=Spacemen 3,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			A partial and unofficial 'reunion' of Spacemen 3 occurred on 15 July 2010 at a benefit gig dubbed 'A Reunion of Friends', organised for former Spacemen 3 drummer Natty Brooker (diagnosed with terminal cancer) at the Hoxton Bar and Grill in London where there was a retrospective exhibition of his artwork. Will Carruthers said of the event, "This is as close as you'll get to a Spacemen 3 reunion, trust me." The participants were: Peter Kember (keyboard/guitar/vocals); Will Carruthers (bass); Jonny Mattock (drums); Mark Refoy (guitar); Jason Holt (guitarist from Kember's touring Spectrum band); and guest appearances from Pat Fish (vocals), and Kevin Shields (guitar) of My Bloody Valentine. They played a 45-minute set comprising the songs 'Walkin' with Jesus', 'Revolution' and 'Suicide'.
 		)},
 		photosets=
@@ -109,21 +109,21 @@
 		who=${literalizeCommas(
 			Shakespeare And The Bible
 		)},
-		notes=${literalizeCommas(
-			Sat 17th July<p>
-			The Lamplighter, Overstone road, Northampton NN1<p>
-			SHAKESPEARE AND THE BIBLE<p>
-			From Hamburg, featuring Owen Jones of the JBC.<p>
+		announcement=${literalizeCommas(
+			Sat 17th July<p />
+			The Lamplighter, Overstone road, Northampton NN1<p />
+			SHAKESPEARE AND THE BIBLE<p />
+			From Hamburg, featuring Owen Jones of the JBC.<p />
 			Free admission! 
 		)},
 	)}
 
 #define	Jul30.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Fri 30th July<br/>
 			The Labour Club, Corner of Earl & Charles, Northampton NN1<br/>
-			Masters of Budvar present<p>
+			Masters of Budvar present<p />
 			THE SECOND FLOOR<br/>
 			ONE UNIQUE SIGNAL<br/>
 			THE URGZ<br/>
@@ -157,18 +157,18 @@
 
 #define	Aug3.html()
 	${gigHeader(
-		notes=${literalizeCommas(
-			PAT FISH - ACOUSTIC SET<p>
-			Headline acoustic set at Joe Woolley's regular London club night, The Bard, The Beat & The Blues.<p>
-			Full supporting cast of bohemian talent.<p>
-			Admission £5:00 or £3:00 concessions  <p>
+		announcement=${literalizeCommas(
+			PAT FISH - ACOUSTIC SET<p />
+			Headline acoustic set at Joe Woolley's regular London club night, The Bard, The Beat & The Blues.<p />
+			Full supporting cast of bohemian talent.<p />
+			Admission £5:00 or £3:00 concessions  <p />
 		)},
 	)}
 
 #define	Aug12.html()
 	${gigHeader(
-		notes=${literalizeCommas(
-			PAT FISH - ELECTRIC SET<p>
+		announcement=${literalizeCommas(
+			PAT FISH - ELECTRIC SET<p />
 			I shall be playing a half-hour electric set. Also on the bill is the very wonderful Kevin Hewick and many other
 			artists. This is a charity event in support of LOROS hospices for the terminally ill. It's part of the Summer Sundae Fringe Festival.
 		)},
@@ -176,19 +176,19 @@
 
 #define	Sep17_1930.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Grass Roots Records and Richardsons Events present:
-			<p>
+			<p />
 			NOW THAT'S WHAT I CALL NORTHAMPTON
-			<p>
+			<p />
 			Album launch party and revue.
 			<br>
 			Free admission.
 			<br>
 			Doors open 7:30pm
-			<p>
+			<p />
 			Featured artists, in order of appearance:
-			<p>
+			<p />
 			CURTIS e JOHNSON
 			<br>
 			JOE WOOLLEY
@@ -202,7 +202,7 @@
 			EAGLEHEAD
 			<br>
 			CURTIS e JOHNSON AND THE STEVIE GDS
-			<p>
+			<p />
 			Plus films and records. The Picturedrome is a lovely beerhall in an old nineteen twenties cinema with two bars,
 			easy, spacious parking and a good smoking terrace. Come and join in an entirely positive celebration of
 			Northampton's underground music scene.
@@ -224,7 +224,7 @@
 		with=${literalizeCommas(
 			The Urgz (Pete Baine)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Free admission - Acoustic set, supporting Pete Baine's band The Urgz.
 		)},
 	)}
@@ -234,9 +234,9 @@
 		with=${literalizeCommas(
 			Escalation featuring Curtis E. Johnson, Andy Harwood & Friends, Big Tim Sansom
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			In support of the "Now, That's What I Call Northampton - Vol. 1" album
-			<p>
+			<p />
 			I'm playing this night of the NTWICN two-nighter. Electric set.
 		)},
 		photosets= /images/20101022/labour1.jpg$$
@@ -247,33 +247,33 @@
 
 #define	Dec4_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
-			8:00pm <p>
-			"Now That's What I Call Northampton"<p>
-			Grass Roots Records presents<p>
-			ANDY HARWOOD (electric set - full band)<p>
-			PAT FISH<p>
-			CURTIS E. JOHNSON<p>
-			Admission free<p>
+		announcement=${literalizeCommas(
+			8:00pm <p />
+			"Now That's What I Call Northampton"<p />
+			Grass Roots Records presents<p />
+			ANDY HARWOOD (electric set - full band)<p />
+			PAT FISH<p />
+			CURTIS E. JOHNSON<p />
+			Admission free<p />
 			The album is still available at ${linkExternal(http://www.nowthatswhaticallnorthampton.com)}
 		)},
 		pat=${literalizeCommas(
 			Super night at the Racehorse on Saturday.
-			<p>
+			<p />
 			I opened things up with an acoustic set that verged on the
 			boisterous (for me) and concluded with a certain amount of breakage. Curtis appeared with the full
 			Escalation/StevieGeeDees band and they were on great form, having played the previous night at the Lovelight
 			Romania benefit up in Kingsthorpe.
-			<p>
+			<p />
 			The Rev. D. Wayne Love (for it was he) joined them for a rendition of
 			Warren Zevon's Werewolves of London which had all the Usual Suspects howling and bellowing like good 'uns
 			before the Sensational Andy Harwood Band (as I now insist on calling them) banged out a rousing set of
 			originals and well-chosen sixties cover tunes, ably assisted by Susana Figueira singing her heart out.
 			Splendid stuff, all magisterially (if abusively) compered by the Reverend Love.
-			<p>
+			<p />
 			Special credit to Curtis and
 			Steves Gordon and Davies for the ridiculous amount of work they put in to make the event happen.
-			<p>
+			<p />
 			If you still don't have a copy of the album that this night was supporting, waste no time in logging on at
 			www.nowthatswhaticallnorthampton.com to secure your copy. Hand-tooled in selected petrolium by-products,
 			these handsome volumes of 21st century provincial beat music make an ideal festive gift for your loved ones
@@ -297,7 +297,7 @@
 
 #define	Dec10.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			£4:00 - Electric set, 4 other acts on the bill.
 			At the BFI London Film Festival.
 		)},

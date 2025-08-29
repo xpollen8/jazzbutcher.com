@@ -1,6 +1,6 @@
 #define	Apr5.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Pat Fish solo acoustic, opening for The Lords of Thyme<br/>
 			Also on the bill: Son of Kirk.
 		)},
@@ -8,7 +8,7 @@
 
 #define	Apr11.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Pat Fish solo and acoustic opening for the Lords of Thyme<br/>
 			Special guest DJs and lights
 		)},
@@ -23,7 +23,7 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			In the Upstairs Bar
 			<p>
 			THE JAZZ BUTCHER LOUNGE QUARTET
@@ -57,7 +57,7 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The Jazz Butcher Quartet
 		)},
 		photosets= /images/20140719/20140719_group1.jpg$$
@@ -208,7 +208,7 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Charity gig for Lovelight Romania Project
 		)},
 		with=${literalizeCommas(
@@ -354,7 +354,7 @@
 
 #define	Nov27_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Half-hour solo performance to open the Labour Club's 30th birthday celebrations. Onstage eight o'clock.
 		)},
 		photosets= /images/20141127/20141127_JazzButcher_LabourClub1.jpg$$
@@ -367,7 +367,7 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${joe_woolley} (special guest on the electric guitar)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The Jazz Butcher and his Gentleman Adventurers
 		)},
 	)}

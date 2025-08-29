@@ -19,7 +19,7 @@
 		with=${literalizeCommas(
 			Curtis E. Johnson
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			9:00 pm &pound;3:00
 			Pat, Max, Steve and Owen continue to plunder the UK on their festiff mission.
 			Support bands tbc plus top party vibrations and hospitality.
@@ -186,7 +186,7 @@
 		with=${literalizeCommas(
 			The Sunny Valley Dance Band
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Just confirmed the support for the Garage show on 5th January.
 			<p>
 			It's The Sunny Valley Dance Band.
@@ -396,7 +396,7 @@
 		with=${literalizeCommas(
 			Wolfgang Tschegg
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Supported by Messrs. Eider and Fish of the JBC in some form of sedentary guitar-related entertainment.
 			Not sure about the ticket prices yet, but you can always call the nice people at the club on 0207 209 2248.
 			I have almost certainly said so before, but this tiny club has a great vibration and a very late bar.
@@ -491,7 +491,7 @@
 		with=${literalizeCommas(
 			Saab 77, Andy Skank
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Further excitement attends the Wilson show at The Racehorse.
 			<p>
 			We shall be having lights from Johnny P, who used to do Spacemen 3 among others,
@@ -510,7 +510,7 @@
 		with=${literalizeCommas(
 			Saab 77
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 		)},
@@ -527,7 +527,7 @@
 		)},
 		with=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Pat n Max JBC Sit-Down Duo live at The Packhorse, Leeds on Thursday 18th April.
 			<p>
 			Another production of Team Borscht, who look after Wilson oop north.
@@ -644,7 +644,7 @@
 		with=${literalizeCommas(
 			P-Hex, UK Waste, Screwface
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Special Jubilee Mayhem
 			<p>
 			Wilson + full supporting cast in a punk rock special - The Racehorse, Northampton NN1 - Monday 3rd June 2002.
@@ -704,10 +704,6 @@
 	${gigHeader(
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}
-		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 			As midnight chimes the band will be 20 years old. The Onion stays open quite
@@ -773,9 +769,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}, ${pete}
 		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			part of 20th anniversary tour
 		)},
 		photosets= /images/20020613/2002Jun13_JBC1.jpg$$
@@ -857,9 +851,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}
 		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			part of 20th anniversary tour
 			<p>
 			address:<p>
@@ -928,12 +920,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}
 		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)},
 		reviews=
 			${literalizeCommas(
 					<b>JBC 20th Anniversary Tour Travelogue - Day 8
@@ -969,14 +955,10 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}
 		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			part of 20th anniversary tour
 			<p>
 			'AU CASINO', Doorniksewijk 31, KORTRIJK, Belgium, 21u.00.
-		)},
-		pat=${literalizeCommas(
 		)},
 		photosets= /images/20020616/2002Jun16_max1.jpg$$
 			/images/20020616/2002Jun16_max2.jpg$$
@@ -1038,12 +1020,8 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}
 		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			part of 20th anniversary tour
-		)},
-		pat=${literalizeCommas(
 		)},
 		photosets= /images/20020618/2002Jun18_stadhuis.jpg$$
 			/images/20020618/2002Jun18_JBC1.jpg$$
@@ -1120,24 +1098,14 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${owen}, ${steve}
 		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			part of 20th anniversary tour
-		)},
-		pat=${literalizeCommas(
 		)},
 	)}
 
 #define	Aug25.html()
 	${gigHeader(
 		cost=,
-		who=${literalizeCommas(
-		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)},
 		pat=${literalizeCommas(
 			Well, that was quite a night at the Racehorse, let me tell you.
 			<p>
@@ -1201,11 +1169,7 @@
 #define	Sep20.html()
 	${gigHeader(
 		cost=&pound;3:00,
-		who=${literalizeCommas(
-		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Headlining a 6 band bill - &pound;3:00 - Open late
 		)},
 		pat=${literalizeCommas(
@@ -1262,12 +1226,10 @@
 #define	Sep21.html()
 	${gigHeader(
 		cost=,
-		who=${literalizeCommas(
-		)},
 		with=${literalizeCommas(
 			P-Hex
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			We didn't advertise it coz it was essentially a birthday party for an expat Northamptonian.
 		)},
 		pat=${literalizeCommas(
@@ -1356,7 +1318,7 @@
 		with=${literalizeCommas(
 			Skindred
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			As a result of the mmmm...severity of our <a href="${jbc_gigs}/2002/Sep20.html">Roadmender engagement</a>
 			we managed to pick up another date there.
 			We are opening for Skindred (uh-huh...) on Saturday 12th October.
@@ -1390,12 +1352,6 @@
 #define	Oct26.html()
 	${gigHeader(
 		cost=,
-		who=${literalizeCommas(
-		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)},
 		pat=${literalizeCommas(
 			We didn't advertise it, for it was a private party. The stage was
 			profoundly dark, which resulted in my playing like a blinking rhinoceros, but it didn't seem to
@@ -1406,14 +1362,6 @@
 #define	Dec8.html()
 	${gigHeader(
 		cost=free,
-		who=${literalizeCommas(
-		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)},
 		posters=/images/20021208/20021208_poster.jpg$$
 		    ;;;;2017-02-12
 	)}
@@ -1422,15 +1370,11 @@
 	${gigHeader(
 		cost=,
 		blurb=Love Music\, Hate Racism Charity Event,
-		who=${literalizeCommas(
-		)},
 		with=${literalizeCommas(
 			Eaglehead, P-Hex
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			This gig is a benefit for the ${linkExternal(http://www.lmhr.org, Love Music, Hate Racism organisation..)}
-		)},
-		pat=${literalizeCommas(
 		)},
 	)}
 

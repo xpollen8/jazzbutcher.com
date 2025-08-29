@@ -3,7 +3,7 @@
 		who=${literalizeCommas(
 			${pat}, Agent Cooper, Special K.
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			<b>WILSON</b> will be supporting Hane-Pesodi.
 			<p>
 			<b>WILSON</b> are Pat Fish, Agent Cooper and Special K.
@@ -87,7 +87,7 @@
 		with=${literalizeCommas(
 			Saab 77
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The plucky dub situationists will be playing at The Packhorse, Leeds,
 			UK on Saturday 14th April, opening for Saab 77.
 			Wilson will be onstage at 9:30 pm.
@@ -122,8 +122,6 @@
 		)},
 		with=${literalizeCommas(
 			Not By Choice
-		)},
-		notes=${literalizeCommas(
 		)},
 		pat=${literalizeCommas(
 			Well, against all the odds Wilson pulled off something of an away win last night.
@@ -177,7 +175,7 @@
 		who=${literalizeCommas(
 			${solo}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I shall be doing a DJ set at Radio 4 at The Knitting Factory, LA on Saturday 7th July.
 		)},
 	)}
@@ -188,7 +186,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${hask}, ${owen}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			with Very Special Surprise Guest opener, and with Kevin Haskins on Drums for the JBC
 			<p>
 			Ticket Price: $12.50, go on sale June 14th
@@ -223,7 +221,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Wedding gig.
 		)},
 		photosets=
@@ -254,11 +252,9 @@
 		with=${literalizeCommas(
 			Curtis E. Johnson, Saab 77
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			It's a newish venue and very nice. It holds about 400, so come on down,
 			you JBC lovers, on yer bikes!
-		)},
-		pat=${literalizeCommas(
 		)},
 	)}
 
@@ -270,10 +266,8 @@
 		with=${literalizeCommas(
 			Curtis E. Johnson
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			This is Alan McGee's club. Come watch the JBC annoy the glitterati!
-		)},
-		pat=${literalizeCommas(
 		)},
 	)}
 
@@ -286,10 +280,8 @@
 		with=${literalizeCommas(
 			Curtis E. Johnson, Saab 77
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The scene of many previous JBC soirees.
-		)},
-		pat=${literalizeCommas(
 		)},
 	)}
 
@@ -298,8 +290,6 @@
 		eventweb=http://www.rockspektakel.de,
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
-		)},
-		pat=${literalizeCommas(
 		)},
 	)}
 
@@ -326,14 +316,10 @@
 			B-Man - MC,
 			E-Man - Theremin-like machine that goes Pffffffffttthhhhweeeeeeeoooop.
 		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Wilson appear to be holding steady at a 6 piece line-up and are adding
 			some new tunes for these dates.
 			One of them is a version of a Frank Zappa tune. Christ!
-		)},
-		pat=${literalizeCommas(
 		)},
 	)}
 
@@ -346,7 +332,7 @@
 		with=${literalizeCommas(
 			Gerard Langley
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I'm doing a solo show, opening for Gerard Langley (!) at The 12-Bar Club, Denmark Street, London
 			on Wednesday 17th October 2001. Expect me onstage around 9:00pm.
 			Advance bookings: 0207 209 2248
@@ -356,8 +342,6 @@
 			full for that night...
 			so conspiracy theorists needn't fret...Max and I will probably be doing a headliner at the same club
 			over the next few months
-		)},
-		pat=${literalizeCommas(
 		)},
 	)}
 
@@ -375,12 +359,10 @@
 		with=${literalizeCommas(
 			Curtis E. Johnson, Saab 77, Mrs. Pilgrim
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Wilson appear to be holding steady at a 6 piece line-up and are adding
 			some new tunes for these dates.
 			One of them is a version of a Frank Zappa tune. Christ!
-		)},
-		pat=${literalizeCommas(
 		)},
 		posters=/images/20011019/20011019_poster.jpg$$
 		    Andrew Brooksbank;;;;2024-11-21
@@ -395,7 +377,7 @@
 		with=${literalizeCommas(
 			Mrs. Pilgrim, Curtis E. Johnson
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I'll be doing a solo show on Saturday 20th October at The Cardigan Arms in Leeds.
 			It's &pound;2:00 to get in.
 			You get: me solo, Mrs. Pilgrimm, and Curtis E. Johnson, in that order.
@@ -417,31 +399,17 @@
 		done around that time...that's about all I can remember though!
 		)}$$
 		Andrew Brooksbank,
-		pat=${literalizeCommas(
-		)},
 	)}
 
 #define	Dec2.html()
 	${gigHeader(
 		cost=free,
-		who=${literalizeCommas(
-		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)},
 	)}
 
 #define	Dec24.html()
 	${gigHeader(
 		cost=&pound;2:50,
-		who=${literalizeCommas(
-		)},
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			There will be deejays and
 			lights and all that festive shit and it only costs &pound;2:50 to get in. Blindin'!
 		)},
@@ -457,7 +425,7 @@
 		)},
 		with=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The Riverie at Buxton Mill<br>
 			Mill Street<br>
 			Buxton<br>

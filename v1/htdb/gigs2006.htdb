@@ -4,29 +4,29 @@
 		with=${literalizeCommas(
 			The New Moon, DJ Will Carruthers
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			A Happy New Year from Masters of Budvar!
-			<p>
+			<p />
 			FRIDAY 6th JANUARY 2006
-			<p>
+			<p />
 			at
-			<p>
+			<p />
 			THE LABOUR CLUB, NORTHAMPTON
-			<p>
+			<p />
 			WILSON
-			<p>
+			<p />
 			Northampton's favourite digidub hooligans.
-			<p>
+			<p />
 			www.wilsondub.com
-			<p>
+			<p />
 			THE NEW MOON
-			<p>
+			<p />
 			Powerful acoustic stylings from Oxford.
-			<p>
+			<p />
 			SUPERSTAR DJ WILL CARRUTHERS
-			<p>
+			<p />
 			The Spacemen 3/Spiritualised bassmeister spins the tunes.
-			<p>
+			<p />
 			Admission is free. Doors are open from 7:30pm. The bar is open until midnight.
 		)},
 		posters=/images/20060106/20060106_poster.jpg$$
@@ -36,10 +36,6 @@
 #define	Jan23.html()
 	${gigHeader(
 		cost=free,
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	Jan29.html()
@@ -47,15 +43,15 @@
 		with=${literalizeCommas(
 			Owen Jones, Onkel Jose
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Onkel Jose (from Hamburg) live and mostly acoustic at The Racehorse, Abington Square, Northampton NN1
-			<p>
+			<p />
 			Sunday 29th January 2006
-			<p>
+			<p />
 			Admission free
-			<p>
+			<p />
 			${g_artistweb(g=http://www.onkel-jose.de)}
-			<p>
+			<p />
 			Chances are that I'll be sitting in on a few tunes with them. They do a mean "${gold}".
 		)},
 		pat=${literalizeCommas(
@@ -82,37 +78,37 @@
 		with=${literalizeCommas(
 			Misterlee, Charlie Barnard, Cheap Music For Cheap People
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The next Masters of Budvar will be at the Labour Club, Charles St, Northampton on Friday 3rd February.
-			<p>
+			<p />
 			Our headliners:
-			<p>
+			<p />
 			MISTERLEE
-			<p>
+			<p />
 			Astonishing trio from Leicester playing insane 21st Century antifolk in a uniquely spooky style.
-			<p>
+			<p />
 			Check out their latest album "Night of the Killer Longface".
-			<p>
+			<p />
 			${g_artistweb(g=http://www.misterlee.co.uk)}
-			<p>
+			<p />
 			In support:
-			<p>
+			<p />
 			CHARLIE BARNARD
-			<p>
+			<p />
 			Young solo performer from Milton Keynes who may be some kind of genius.
-			<p>
+			<p />
 			${g_artistweb(g=http://www.lemonrock.com/charlie)}
-			<p>
+			<p />
 			Our superstar DJs
-			<p>
+			<p />
 			CHEAP MUSIC FOR CHEAP PEOPLE
-			<p>
+			<p />
 			"Music that's better than it sounds"
-			<p>
+			<p />
 			www.hinterhoff.com
-			<p>
+			<p />
 			Doors are open from 8:00pm and the bar stays open until midnight.
-			<p>
+			<p />
 			Admission is free.
 		)},
 		reviews=
@@ -120,13 +116,13 @@
 			Eclectic is one of those oft-overused adjectives employed to describe bands which may not have decided
 			which particular musical genre works for them...But I can think of no better handle for the mind-zapping
 			trio Misterlee who topped the bill at the Labour Club in Earl Street.
-			<p>
+			<p />
 			Lead singer-percussionist Lee Allatson loves to create the impression that he's a cross between Syd
 			Barrett and The Who's Keith Moon. Using the most minimalist of drum machines and lots of knob-twiddling
 			feedback, he managed to create walls of sound which were definitely not for the MOR faint-hearted. And
 			having toured extensively with him for five years, guitarist Jamie Smith and Michael Oxteby, electric
 			violin/bass, knew how to keep up with him - just!
-			<p>
+			<p />
 			It came as no surprise they'd supported the mechanically mesmerising Thomas Truax (a wow at the Labour
 			Club recently) with their "serious improvisation" set. Sounds like a crazy gig? It was!
 			)}$$
@@ -146,51 +142,51 @@
 		with=${literalizeCommas(
 			Dave Kusworth, Joe Woolley, DJ Pat Fish, DJ Ghost Train
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar present
-			<p>
+			<p />
 			at
-			<p>
+			<p />
 			THE LABOUR CLUB
-			<p>
+			<p />
 			Earl Street, Northampton NN1
-			<p>
+			<p />
 			on
-			<p>
+			<p />
 			FRIDAY 3rd MARCH
-			<p>
+			<p />
 			our headliners
-			<p>
+			<p />
 			THE DAVE KUSWORTH GROUP
-			<p>
+			<p />
 			Everybody knows that the true rock capital of the UK is Birmingham. Zeppelin, Sabbath, Traffic, PWEI, the list goes on and on. Dave
 			Kusworth is a true son of Brum, a genius songwriter who was born to rock. He has recorded many albums for Creation and Glitterhouse among
 			other labels and he has toured the world from Russia to America. After performing a heart-rending solo set at Masters of Budvar last
 			November, Dave is back and this time he's brought the artillery. He will be leading a three piece band whose track record includes
 			legendary Birmingham band the Subterranean Hawks and John Peel favourites The Nightingales. Expect a night of full-on rock and roll, pumped
 			up and dirty in all the right ways. More info at: ${g_artistweb(g=http://www.davekusworth.com)}
-			<p>
+			<p />
 			in support
-			<p>
+			<p />
 			JOE WOOLLEY
-			<p>
+			<p />
 			A welcome return to Masters of Budvar for our favourite local troubadour. Joe has been rocking himself up of late, working with Jon Mattock
 			(Slipstream) and Luke Goddard (The On/Offs) to add muscle and swing to his elegant
 			folk-blues style. As he starts to play more and more London shows, it looks as though Joe is on his way to some
 			well-deserved success. Always worth checking out. See ${g_artistweb(g=http://www.joewoolley.com)}
-			<p>
+			<p />
 			spinning the tunes, your host
-			<p>
+			<p />
 			PAT FISH
-			<p>
+			<p />
 			${g_artistweb(g=http://www.jazzbutcher.com )}
-			<p>
+			<p />
 			The doors are open from 8:00pm and the bar stays open until midnight.
-			<p>
+			<p />
 			First act onstage at about 9:00pm
-			<p>
+			<p />
 			Admission is - as ever - free.
-			<p>
+			<p />
 			Hope to see you there.
 		)},
 		posters=/images/20060303/20060303_poster.jpg$$
@@ -203,31 +199,31 @@
 		with=${literalizeCommas(
 			Anton Barbeau, The New Moon
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Saturday 18th March<br>
 			The Port Mahon, St Clements Street, Oxford<br>
 			PAT FISH<br>
 			ANTON BARBEAU<br>
 			THE NEW MOON<br>
-			<p>
+			<p />
 			£4:00 on the door on the night
-			<p>
+			<p />
 			${g_artistweb(g=http://www.jazzbutcher.com)}
 			${g_artistweb(g=http://www.antonbarbeau.com)}
 			${g_artistweb(g=http://www.thenewmoonnews.co.uk)}
-			<p>
+			<p />
 			I shall be playing a longer set, involving elements of the acoustic and the digital, possibly even at the same time.
 		)},
 		pat=${literalizeCommas(
 			A nice trip to Oxfodd on Saturday night. Russ Cooper drove us all down there and brought various drums and shakey things with which to accompany me and my big            wooden tape-recorder.
-			<p>
+			<p />
 			We took our time over soundchecking - this time there were even monitors...which was nice. A quick veggie-burger at the Turkish take-away           over the street and a little creative paperwork in the carpark, then we were back in the venue with a foming beaker of Budvar, all set to continue the JBC
 			Hardcore's survey of the glorious history of Raplh Coates, surely one of the greatest fag-at-half-time merchants that the game has ever seen.
-			<p>Upstairs a small crowd had gathered to witness The New Moon unleashing some new tunes in a bass/guitar/tabla formation to a rousing reception. Some classic introductions, too. Anton and Sue delivered a set heavy on the melody and easy on the rambling and then it was our turn. We played the first three tunes acoustic
+			<p />Upstairs a small crowd had gathered to witness The New Moon unleashing some new tunes in a bass/guitar/tabla formation to a rousing reception. Some classic introductions, too. Anton and Sue delivered a set heavy on the melody and easy on the rambling and then it was our turn. We played the first three tunes acoustic
 			(making a bit of a hash of Charlie Barnard's sublime "Regrets of a Spacemen" by being altogether too heavy-handed) before switching on the BWT for a version of
 			Land off Illuminate which really seemed to fly along rather nicely. "This," I told the small crowd, "is the rhythm I like." I even essayed some Barney Sumner style
 			whoops during Shame About You. Frankly it sounded every bit as daft as when Barney does it. Note to self: pack it in, son. Rein yourself in.
-			<p>
+			<p />
 			The set was warmly received and - I think - reasonably well played. We had another beer, received handsome payment for our endeavours (thank you) and headed off
 			into the freezing night, bent on return to NN1 so that Russ could finally enjoy a drink. No little confusion was induced a when we discovered that The Authorities
 			had gone and CLOSED THE ROAD TO NORTHAMPTON. We set off on a not so magical mystery tour down tiny roads through dark, deserted woods, found our way somehow to
@@ -243,34 +239,34 @@
 		with=${literalizeCommas(
 			Wolfgang Tschegg, Hannah Tame
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Euromasters present
-			<p>
+			<p />
 			at
-			<p>
+			<p />
 			The Racehorse
-			<p>
+			<p />
 			Abington Square, Northampton NN1
-			<p>
+			<p />
 			on
-			<p>
+			<p />
 			Sunday 19th March 2006
-			<p>
+			<p />
 			Wolfgang Tschegg and Hannah Tame
-			<p>
+			<p />
 			${g_artistweb(g=http://www.wolfgangtschegg.de)}
-			<p>
+			<p />
 			${g_artistweb(g=http://www.racehorse.moonfruit.com)}
-			<p>
+			<p />
 			Hurrah! He's back in town! The electric Alpine country boy plays a one-off set at the Racehorse.
-			<p>
+			<p />
 			For those who missed his marvellous set at Masters of Budvar last summer, Wolfgang is an Austrian recording artist based in Berlin.
 			He sings his original songs and plays lovely wide-screen guitar over seriously cool European house style backing.
-			<p>
+			<p />
 			For this show he is joined by UK guitarist and composer Hannah Tame.
-			<p>
+			<p />
 			Lush and lovely music, perfect for a Sunday night at the best pub in town.
-			<p>
+			<p />
 			(You can also catch Wolfgang playing live on Resonance FM on Saturday 18th March.)
 		)},
 		posters=/images/20060319/20060319_poster.jpg$$
@@ -283,70 +279,70 @@
 		with=${literalizeCommas(
 			Black Carrot, Mrs. Pilgrimm and the Naked Nun, DJ Alex Novak (Spiral Archive)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar present
-			<p>
+			<p />
 			at
-			<p>
+			<p />
 			The Labour Club
-			<p>
+			<p />
 			Charles Street, Northampton NN1
-			<p>
+			<p />
 			on
-			<p>
+			<p />
 			Friday 7th April 2006
-			<p>
+			<p />
 			Your headliners
-			<p>
+			<p />
 			Black Carrot
-			<p>
+			<p />
 			${g_artistweb(g=http://www.blackcarrot.net)}
-			<p>
+			<p />
 			Since their last appearance at Masters of Budvar, Black Carrot have recorded three full albums, appeared on BBC Radio 3, added a
 			vocalist and filled the theatre in their native Market Harborough with nerve-jangling improvisations around the stories of Edgar
 			Allen Poe. Three ultra-talented musicians and a gaunt, imperious de-frocked thespian, the Carrot are demanding, intimidating,
 			frenetic and mental. Frankly, you wouldn't dare make them up. As febrile and hostile as Van Der Graaf Generator, as pounding and
 			grainy as Faust, as instinctive and mercurial as Can, this is one far-out combo.
-			<p>
+			<p />
 			They support The Fall at the Charlotte in Leicester on Friday 24th March before heading to Northampton's most demented little
 			nightclub to perform - and I kid you not - their own unique interpretation of Franz Kafka's "Metamorphosis".
-			<p>
+			<p />
 			Yes, that is right - Franz Kafka's "Metamorphosis".
-			<p>
+			<p />
 			Your special guests
-			<p>
+			<p />
 			Mrs. Pilgrimm and the Naked Nuns
-			<p>
+			<p />
 			${g_artistweb(g=http://www.mrs.pilgrimm.de)}
-			<p>
+			<p />
 			She is one of Northampton's finest artists, the girl with the cello and the time machine, not forgetting that super-cool voice of
 			hers. Mrs. Pilgrimm has an international reputation, having played with the likes of Lou Barlow (Dinosaur Jr) and Michael Rother
 			(Neu). Her album "Alone Queen" is one of the finest ever to come out of Northampton and it belongs in your collection.
-			<p>
+			<p />
 			Tonight she appears accompanied by her new live band, The Naked Nuns.
-			<p>
+			<p />
 			Are you getting a feel of this evening yet?
-			<p>
+			<p />
 			That's right - It's going to be far-out.
-			<p>
+			<p />
 			Your superstar DJ
-			<p>
+			<p />
 			Alex Novak
-			<p>
+			<p />
 			${g_artistweb(g=http://www.spiralarchive.com)}
-			<p>
+			<p />
 			Leader of the legendary Venus Flytrap, proprietor of Northampton's number one indpendent record shop, concert promoter and the man
 			behind Pulse audiozine, Alex stole the show at the Labour Club's John Peel Night with a magisterial DJ set. Tonight he takes his
 			rightful place among the great and the good, spinning his own far-out selection.
-			<p>
+			<p />
 			Entry to this far-out event is, as usual, entirely free.
-			<p>
+			<p />
 			The bar is open until midnight and bottles of Budvar are the lovely big half-litre ones.
-			<p>
+			<p />
 			Mrs. Pilgrimm and the Naked Nuns will be onstage at 9:10pm
-			<p>
+			<p />
 			Black Carrot onstage at 10:15pm
-			<p>
+			<p />
 			Far out.
 		)},
 		posters=/images/20060407/20060407_poster.jpg$$
@@ -359,19 +355,19 @@
 		with=${literalizeCommas(
 			Bee Church & Saskia Tomkins, Sapphiel\'s Fall
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I've been asked to do a slot at one of Kevin Buxton's excellent Kontra Acoustic sessions. The details, such as I understand them:
-			<p>Sunday 23rd April 2006
-			<p>
+			<p />Sunday 23rd April 2006
+			<p />
 			The Monk & Minstrel, Isham, Northamptonshire
 			<br>Kontra Acoustic presents
-			<p>
+			<p />
 			Pat Fish<br>
 			Bee Church & Saskia Tomkins<br>
 			Sapphiel's Fall<br>
-			<p>
+			<p />
 			Admission free, as far as I'm aware.
-			<p>
+			<p />
 			It's possible that Max Eider might be playing this one too, as he'll be in Northampton that weekend, but given that it's on a Sunday night he may just feel compelled to leap astride his mighty hog and hightail it back to the Smoke. Perhaps we will know closer to the time.
 		)}
 	)}
@@ -382,11 +378,11 @@
 		ticketweb=http://www.wegottickets.co.uk/event/9710,
 		with=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Max and I have a London Jazz Butcher gig. It's at the 100 Club in Oxford Street on Thursday 27th April 2006. We are in the
 			middle of the bill, before headliner David Devant and after The Wouldbegoods, who feature Andy Warren, the old bass player
 			of the Monochrome Set.
-			<p>
+			<p />
 			We shall be onstage at 8:45, playing a 40 minute set.
 		)},
 		photosets= /images/20060427/DSCN0399.jpg$$
@@ -408,29 +404,29 @@
 		with=${literalizeCommas(
 			I Had And Inkling, Thornfield, DJ The Retro Spankees
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar present
 			at-
 			The Labour Club, Charles Street, Northampton NN1
 			-on-
 			Friday 5th May 2006
-			<p>
+			<p />
 			I HAD AN INKLING
-			<p>
+			<p />
 			This young trio are based in Manchester, though they feature the talents of Leeds-dwelling Northamptonian Richard Morris, a fine drummer and guitarist whom you may recall from God's Acre or, more recently, Saab 77. With a new record out, the band are embarking on a UK tour, and this is the very first night. Expect rough, angular jams with mad flashes of musical wit and - indeed - trombone. As www.manchestermusic.co.uk put it, "Riffs are highly distinctive and geared to some freaky dancing. Similarly, there is an attractive sense of humour present. I Had An Inkling are probably what Wire or PIL would sound like today."
 			Blimey!
 			${g_artistweb(g=http://www.ihadaninkling.co.uk)}
-			<p>
+			<p />
 			THORNFIELD
-			<p>
+			<p />
 			Geoff Bland and Adam Mustin are a powerful ambient folk duo from Kattering. Exceptional guitar playing and show-stopping singing combine to give their dark original material a real emotional charge. Melodic but wildly intense, these dark horses could turn in one of the surprise performances of the year.
-			<p>
+			<p />
 			and, of course, your superstar DJs
 			THE RETRO SPANKEES
-			<p>
+			<p />
 			Northampton's best-loved yelp-punk popstars empty the contents of their very mental record collections all over the Labour Club floor, unleashing mystification and delight for all.
 			${g_artistweb(g=http://www.theretrospankees.com)}
-			<p>
+			<p />
 			Admission is free, as ever. The doors are open from 8:00pm. The bar is open until midnight.
 			Thornfield onstage at about 9:00pm. I Had An Inkling onstage at about 10:00pm It's going to be a night not to be missed.
 		)},
@@ -444,19 +440,19 @@
 		with=${literalizeCommas(
 			TV Smith (The Adverts)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I have a nice solo acoustic gig lined up. Details being:
-			<p>
+			<p />
 			Saturday 6th May 2006
 			<br>The Labour Club, Northampton
 			<br>Spiral Archive presents
-			<p>
+			<p />
 			TV Smith
 			<br>
 			Pat Fish
-			<p>
+			<p />
 			Admission Free!
-			<p>
+			<p />
 			TV Smith, of course, was the leader of The Adverts, proper punk legends, whose singles "One Chord Wonders" and "Gary Gilmore's Eyes" were among my personal
 			favourites of the time. For many years now he has toured as an acoustic solo
 			singer-songwriter. He opened for the JBC in Rennes, France some years ago and he was brilliant. The songs are great and he is a proper gent. A real coup for Spiral
@@ -472,7 +468,7 @@
 		)},
 		who=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Sunday 7th May<br>
 			Wilson - Live Dub Goth Mayhem<br>
 			The Racehorse, Abington Square, Northampton<br>
@@ -489,9 +485,9 @@
 		who=${literalizeCommas(
 			Pat, Misery, Agent Russell Cooper (Wilson/Sumosonic/Mystic Crew/JBC)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Sunday 28th May 2006 - The General Elliott Festival, near Oxfodd - Pat Fish plays live at about 7:00pm with digital shit and live percussion from Agent Russell Cooper (Wilson/Sumosonic/Mystic Crew/JBC).
-			<p>
+			<p />
 			I have no more details than this. Local guides suggest that this alleged General Elliott might be in the area known as South Hinksey, but I cannot confirm or deny the accuracy of such allegations, nor can I tell you who the allegators might be. I suspect that the event will be free to get in as well, but I don't want any law suits, you understand?
 		)},
 		photosets= /images/20060528/pat-fish_242982897_o.jpg;;Pat Fish$$
@@ -509,7 +505,7 @@
 		with=${literalizeCommas(
 			Saturation Point, Syd Meats, The Specimen Eyeball
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar <br>
 			present<br>
 			at<br>
@@ -520,11 +516,11 @@
 			2006<br><br>
 			&gt;&gt;a summer
 			psychedelic special of mind-melting mentality&lt;&lt;
-			<p>
+			<p />
 			featuring
-			<p>
+			<p />
 			SATURATION POINT
-			<p>
+			<p />
 			Saturation Point are John Langley (drums), Joe
 			Allen (bass) and Julian Poole (guitar).
 			They come from Bristol and have an awesome
@@ -535,7 +531,7 @@
 			Holland's Later.
 			Joe has played with just about everybody from
 			Rodney Allen to Groove Armada.
-			<p>
+			<p />
 			The Saturation Point sound is lush, loud and
 			psychedelic. John was blunt:"It's Spacemen 3 without the
 			singing."
@@ -546,26 +542,26 @@
 			to meet. There is some disagreement among experts as to whether the band's name
 			refers to the levels at which they play or the state of John Langley's
 			liver.
-			<p>
+			<p />
 			SYD MEATS
 			${g_artistweb(g=http://www.sydmeats.co.uk)}
-			<p>
+			<p />
 			A special guest appearance from Southampton's
 			Leading Weird Bloke. From humble origins as songwriter-in-residence at BBC Radio
 			Lincoln, Syd has gone on to become one of the most oddly beguiling solo
 			performers around. An oasis of calm in tonight's proceedings, if not quite
 			anything as mundane as sanity.
-			<p>
+			<p />
 			THE SPECIMEN EYEBALL
 			${g_artistweb(g=http://www.lemonrock.com/charlie)}
-			<p>
+			<p />
 			Mind-melting electric guitars and a tidal
 			wave of tape delay shimmer all around the dark and devious songwriting of
 			Charlie Barnard, backed up this time by a full band of his shadowy associates
 			from the breezeblock jungle of Milton Keynes. Your brains will turn to jelly,
 			seep out of your ears and dribble down your cheeks. And you will like
 			it.
-			<p>
+			<p />
 			Usual terms and conditions
 			apply
 			free admission - bar till midnight -
@@ -580,12 +576,6 @@
 #define	Jun17.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
-		who=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)},
 		photosets= /images/20060617/169517931_b04ad7ad59_o.jpg$$
 			/images/20060617/169517973_85d7daf9a8_o.jpg$$
 			/images/20060617/blurry-wilsonistas_169518015_o.jpg$$
@@ -603,7 +593,7 @@
 		with=${literalizeCommas(
 			Ray, The Black Watch, DJ Pat Fish
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar present<br>
 			-at-<br>
 			The Labour Club, Earl Street, Northampton NN1<br>
@@ -655,12 +645,6 @@
 #define	Jul10.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
-		who=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	Jun14.html()
@@ -669,16 +653,16 @@
 		with=${literalizeCommas(
 			Scarlet Well (Monochrome Set)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Max and I have another London gig. It's at a rather lovely venue in Kilburn called The Luminaire. We're supporting Scarlet Well, which is the current band of BID,
 			the former singer of the Monochrome Set. I don't know what it's going to cost to get in yet, but I'll let you know.
-			<p>
+			<p />
 			Pat Fish & Max Eider
-			<p>
+			<p />
 			Supporting Scarlet Well
-			<p>
+			<p />
 			The Luminaire, 307-311 Kilburn High Road, London NW6 7JR
-			<p>
+			<p />
 			Wednesday 14th June 2006
 		)},
 		posters=/images/20060614/20060614_poster.jpg$$
@@ -707,7 +691,7 @@
 
 #define	Jul29.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I shall be playing a solo set at a new music night set up by the very talented Greg Cave. I'm not sure what the brief is,
 			but I expect I shall soon be in a position to let you know. I'll be playing solo or perhaps with Russ.
 		)}
@@ -719,21 +703,21 @@
 		with=${literalizeCommas(
 			They Came From The Stars I Saw Them, Les Clochards, DJ Joe Woolley
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar proudly present
-			<p>
+			<p />
 			on
-			<p>
+			<p />
 			FRIDAY 4th AUGUST
-			<p>
+			<p />
 			at
-			<p>
+			<p />
 			THE LABOUR CLUB, EARL STREET, NORTHAMPTON NN1
-			<p>
+			<p />
 			THEY CAME FROM THE STARS I SAW THEM
-			<p>
+			<p />
 			${g_artistweb(g=http://www.myspace.com/theycamefromthestarsisawthem)}
-			<p>
+			<p />
 			they came from the stars i saw them are searching for the motherlode<br>
 			they came from the stars i saw them are here to rock your world<br>
 			they came from the stars i saw them believe in unadulterated joy<br>
@@ -741,49 +725,49 @@
 			they came from the stars i saw them are different every time<br>
 			they came from the stars i saw them are a joke band<br>
 			they came from the stars i saw them are serious as the hole in the ozone
-			<p>
+			<p />
 			Bonkers death-factory cocktail bar electronica about meeting aliens. They're going to be stars
 			(we see it)...You could be forgiven for thinking TCFTSIST are the only pop group in the world
 			who matter. Genius is the only word, really.
-			<p>
+			<p />
 			Twice Leftfield Single of the Month - Muzik magazine
-			<p>
+			<p />
 			One of the highlights of my year, without a doubt.
 			John Kennedy XFM - Twice Single of the Week
-			<p>
+			<p />
 			It's an oddity!
 			Xmas Single of the Week: Mark & Lard, Radio 1
-			<p>
+			<p />
 			Utterly entrancing...this is the Beta Band, times twenty.
 			BANG! Magazine
-			<p>
-			<p>
+			<p />
+			<p />
 			Tastelessness? I'd say tasty to the point of pungent!
 			Mixing It, Radio 3
-			<p>
+			<p />
 			Absurdist madness with the sole aim to create excitement
 			The Guardian
-			<p>
-			<p>
+			<p />
+			<p />
 			...rush-of-blood-to-the-head exciting...Awesome
 			Careless Talk Costs Lives
-			<p>
+			<p />
 			'gorgeous, inventive, sweetly winking, vaguely Flaming Lips-like Xmas e.p.
 			Time Out
-			<p>
+			<p />
 			Beautiful, poetic, creeping chaos
 			Single of the Month, Bizarre Magazine
-			<p>
+			<p />
 			There isn't much else to say. This is the maddest band in London. Don't miss it.
-			<p>
+			<p />
 			Plus Special Guests
-			<p>
+			<p />
 			LES CLOCHARDS
-			<p>
+			<p />
 			${g_artistweb(g=http://www.clochard.co.uk )}
-			<p>
+			<p />
 			Euro-Romance of the very highest quality, with more than a touch of the great Jacques Brel.
-			<p>
+			<p />
 			Les Clochards, a laid-back quartet of stand-up bass, accordion, acoustic and drums,
 			purvey a relaxing blend of Parisian cafe music, the odd nugget of Brecht/Weill and
 			a couple of acoustic ballads that breathe the air of Henry Miller lounging around
@@ -794,30 +778,30 @@
 			and slightly scared, filled the music with artful, authentic-sounding melodies and
 			the overall effect was enchanting. Another strong gig, with Les Clochards emerging
 			as a band of charm and originality.
-			<p>
+			<p />
 			Colin Mackinnon, ${g_artistweb(g=http://www.oxfordbands.co.uk)}
-			<p>
+			<p />
 			Your superstar DJ
-			<p>
+			<p />
 			JOE WOOLLEY
-			<p>
+			<p />
 			${g_artistweb(g=http://www.joewoolley.com)}
-			<p>
-			<p>
+			<p />
+			<p />
 			You all know he's more Merry Prankster than Teenage Angster. Now prepare to be bewitched,
 			bothered and bewildered by the psychedelic superstar's unique mix of beat poetry,
 			classical music and steam train recordings, as they all add up to the kind of night
 			where you just want to kick off your shoes, roll back the carpet and watch out for
 			splinters. It's the New Barcelona. You know you love it!
-			<p>
+			<p />
 			Everything else is as per normal.
-			<p>
+			<p />
 			Admission free.
-			<p>
+			<p />
 			Bar open till midnight.
-			<p>
+			<p />
 			First band onstage at 9:30pm
-			<p>
+			<p />
 			You seriously need to see this one, people.
 		)},
 		posters=/images/20060804/20060804_poster.jpg$$
@@ -831,10 +815,10 @@
 		)},
 		who=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			We're performing on Stage A, sponsored by the mighty ${linkExternal(http://www.phoenixsoundworks.com, Phoenix Sound Works)},
 			at seven o'clock in the evening.
-			<p>
+			<p />
 			It's free, of course. Everything we do is free. We wanna be free. To do what we wanna do.
 		)},
 		photosets=
@@ -862,7 +846,7 @@
 		with=${literalizeCommas(
 			Pants Yell
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I shall be opening for the American band Pants Yell. The night is promoted by Undereducated Music.
 		)}
 	)}
@@ -873,31 +857,31 @@
 		with=${literalizeCommas(
 			The Pop Gun Plot, Big Tim Sansom, DJ James Acaster (The Wow Scenario)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			At next month's Masters of Budvar we shall be featuring:
-			<p>
+			<p />
 			THE POP GUN PLOT
-			<p>
+			<p />
 			Named after possibly the most fatuous assassination attempt ever, the Pop Gun Plot is the vehicle for the songwriting skills of
 			Belfast-born Mairtin Burns. Inspired by the likes of the Monochrome Set and the Wedding Present, they play classic, melodic pop with a
 			nervous edge and brilliant, witty lyrics that are reminiscent of Ray Davies. With a sterling album in the can, this show is part of the
 			band's first UK tour.
-			<p>
+			<p />
 			BIG TIM SANSOM
-			<p>
+			<p />
 			One of Northampton's finest ever songwriters and wordsmiths returns to Masters of Budvar.
-			<p>
+			<p />
 			And, of course, we present your Superstar DJ,
-			<p>
+			<p />
 			JAMES ACASTER (The Wow Scenario)
-			<p>
+			<p />
 			It's all at Northampton Labour Club on Friday 1st September.
 			Free admission, as ever, first artist on stge at 9:15pm, friendly people, pretty lights, bring all your pals to Masters of Budvar and show
 			them all how cool you are.
-			<p>
+			<p />
 			The Popgun Plot hail from sunny West Belfast. The name comes from the failed assassination attempt on George III in 1794; the plotters were going
 			to shoot the monarch in the neck with a poisoned dart from a popgun as he sat in the Royal Box of a theatre.
-			<p>
+			<p />
 			Frontman Martin Burns writes songs that reflect the humour of everyday life in the housing estates of West Belfast; joyriders, glue-sniffers,
 			gambling addicts, valium addicts, alcoholics and promiscuous lemonade delivery men. And now that Martin works in the fancy pants world of the
 			London media, he has turned to writing on such diverse subjects as PR girls, the mystifying preoccupation with designer labels, credit card debt,
@@ -916,39 +900,39 @@
 		)},
 		who=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Planet Misery presents
-			<p>
+			<p />
 			at
-			<p>
+			<p />
 			THE RACEHORSE
-			<p>
+			<p />
 			15 Abington Square, Northampton NN1
-			<p>
+			<p />
 			on
-			<p>
+			<p />
 			SUNDAY 10th SEPTEMBER 2006
-			<p>
+			<p />
 			THE WOODENTOPS
-			<p>
+			<p />
 			plus
-			<p>
+			<p />
 			WILSON
-			<p>
+			<p />
 			This will be the first live show from the legendary Rough Trade chart-toppers since 1992,
-			<p>
+			<p />
 			a special warm-up for their gig at the 100 Club in London on Wednesday 13th.
-			<p>
+			<p />
 			Support comes from NN1's award-winning Gangster Goth combo, Wilson.
-			<p>
+			<p />
 			Doors open at 8:00pm in the back room of the Racehorse.
-			<p>
+			<p />
 			Admission is 5:00
-			<p>
+			<p />
 			Please get there early, as this event will sell out.
-			<p>
+			<p />
 			Doors: 8:00pm
-			<p>
+			<p />
 			Wilson onstage 9:15pm
 			<br>
 			Woodentops onstage: 10:15pm
@@ -975,12 +959,12 @@
 		with=${literalizeCommas(
 			Woodentops
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Well, I've just confirmed it. In a bizarre piece of time travel I shall be opening for the Woodentops at the 100 Club in London's Oxford
 			Street on Wednesday 13th September.
-			<p>
+			<p />
 			Yes, the Woodentops.
-			<p>
+			<p />
 			I'm onstage at 8:30pm for 40 minutes.
 		)}
 		,
@@ -1026,9 +1010,9 @@
 		with=${literalizeCommas(
 			The Woodentops
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I shall be opening for the Woodentops
-			<p>
+			<p />
 			I'm onstage at 9:00pm for 40 minutes.
 		)}
 	)}
@@ -1038,8 +1022,6 @@
 		with=${literalizeCommas(
 			 Wolfgang Tschegg, Joe Woolley
 		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	Sep29.html()
@@ -1048,8 +1030,6 @@
 		with=${literalizeCommas(
 			Joe Woolley
 		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	Oct1.html()
@@ -1058,8 +1038,6 @@
 		with=${literalizeCommas(
 			Joe Woolley
 		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	Oct6.html()
@@ -1068,17 +1046,17 @@
 		with=${literalizeCommas(
 			Nazca Plain (Charles Barnard), Spittle Rattle, DJ Curtis E. Johnson
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar present<br>
 			-at-<br>
 			The Labour Club<br>
 			Northampton<br>
 			-on-<br>
 			Friday 6th October 2006
-			<p>
+			<p />
 			>From London<br>
 			NAZCA PLAIN
-			<p>
+			<p />
 			Nazca Plain was formed by Charlie Barnard, Nick Mellon, David Gillespie
 			and
 			Robert Shields to experiment with music in colour. Sensuous and intense
@@ -1090,11 +1068,11 @@
 			Temple and Pink Floyd; Nazca Plain are one of the leading lights of
 			British
 			psychedelia.
-			<p>
+			<p />
 
 			>From the dark heart of NN1<br>
 			SPITTLE RATTLE
-			<p>
+			<p />
 			Michael Holloway's long-running NN1 Delta Blues project grows ever
 			stronger. Bone dry wit chronicling black despair, exquisite guitar music
 			wedded to visceral disgust, the Spittle Rattle experience inspires
@@ -1102,10 +1080,10 @@
 			while retaining its own unique style.
 			A must for those who find more to laugh about in Sam Beckett than Green
 			Wing.
-			<p>
+			<p />
 			And, of course, your Superstar DJ for this month<br>
 			${curt}
-			<p>
+			<p />
 			He's a local legend. He's an asset to the community and he has the
 			paperwork to prove it.
 			The leader of Barbed Choir, Strange Tales and Stranger Tractors, the
@@ -1116,7 +1094,7 @@
 			back and
 			prepare to be amazed ((c) T. Walpole ) as he unleashes the beats. Didja
 			get any on ya?
-			<p>
+			<p />
 			This all kicks off at about 9:00pm on Friday night.
 			As usual, admission is free, the beer is cheap, the vibrations friendly,
 			the lights pretty and the speeches short.
@@ -1133,7 +1111,7 @@
 		with=${literalizeCommas(
 			Saturation Point, Joe Woolley, DJ Plastic Sushi
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar present<br>
 			on<br>
 			Friday 3rd November<br>
@@ -1185,11 +1163,11 @@
 		pat=${literalizeCommas(
 			Special thanks to Dave and Piers, Max Eider, Charlie Barnard and the Earl of Aldgate.
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Tuesday 7th November 2006 - The Constitution, Camden Town, London NW1<br>
 			Pat Fish - Sliho (from Detroit) - Madam<br>
 			Doors open 9:00pm, admission �5:00  <br>
-			A Turning Worm Promotion.<p>
+			A Turning Worm Promotion.<p />
 			${g_artistweb(g=http://www.turning-worm.co.uk)}<br>
 			${g_artistweb(g=http://www.myspace.com/turningworm)}
 			${g_artistweb(u=info@turning-worm.co.uk)}
@@ -1202,10 +1180,6 @@
 		with=${literalizeCommas(
 			The Relationships
 		)},
-		who=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	Dec1.html()
@@ -1214,13 +1188,13 @@
 		with=${literalizeCommas(
 			Will Carruthers, DJ The Cooper Mental Whores
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			 Hi folks! Masters of Budvar this Friday 1st December features gangsta goth nepotists ${WILSON} plus Spiritualised/Freelovebabies psychedelic stormtrooper WILL CARRUTHERS.
-			 <p>
+			 <p />
 			 Also your superstar DJ tag-team THE COOPER MENTAL WHORES. It's a family affair!
-			 <p>
+			 <p />
 			 Free admission and bar until midnight. Be there or be somewhere else.
-			 <p>
+			 <p />
 			 Pat xxx
 		)}
 	)}
@@ -1230,13 +1204,13 @@
 		cost=free,
 		with=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I shall be playing a solo set in the new arts centre at Northampton Fish Market on Saturday 9th December.
-			<p>
+			<p />
 			The shows run quite early in the evening, so I shall be on at about 8:00pm. As far as I am aware, it's free to get in.
-			<p>
+			<p />
 			The show is promoted by Giant Squids of The Fishmarket.
-			<p>
+			<p />
 			And no, I am not making this up...
 		)}
 	)}
@@ -1247,9 +1221,9 @@
 		with=${literalizeCommas(
 			The New Moon
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Pat Fish - The Q.I. Club, 16 Turl Street, Oxford - 14th December 2006 - £5:00
-			<p>
+			<p />
 			I think that the New Moon are playing support on this one. I shall be bringing my laptop and telling a few stories...
 		)}
 	)}
@@ -1260,9 +1234,9 @@
 		with=${literalizeCommas(
 			Bikini Beach Band, The Surgens
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The Luminaire, Kilburn High Road, London - 20th December 2006 - £5:00
-			<p>
+			<p />
 			We are first on, opening for the Bikini Beach Band and The Surgens (sic) Expect Wilson on stage at 8:15pm
 		)}
 	)}
@@ -1270,10 +1244,10 @@
 #define Dec31_2100.html()
 	${gigHeader(
 		cost=&pound;15:00,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Wilson, The Sheep Thieves, Joe Woolley & The Prime Evils + Spiral Archive and other DJs - The Romany,
 			Northampton - 31st December 2006 - £15:00
-			<p>
+			<p />
 			A New Year's Eve extravaganza! Doors open from 6:00pm to 3:00am. Wilson are the headline band. Expect us on stage at 9:30pm.
 		)}
 	)}

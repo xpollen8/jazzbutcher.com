@@ -4,26 +4,26 @@
 		with=${literalizeCommas(
 			The Adult Section, DJ Flash
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar - Friday 5th January 2007 - The Labour Club, Earl Street, Northampton NN1
 																																	
-			<p>THE ADULT SECTION
+			<p />THE ADULT SECTION
 																																	
-			<p>This blistering 4 piece formed only a year ago but has already started to blaze a trail on the London circuit,
+			<p />This blistering 4 piece formed only a year ago but has already started to blaze a trail on the London circuit,
 			playing at The Water Rats, Hope & Anchor, Dublin Castle, Caernarvon Castle, The Luminaire and Ryan's Bar with their
 			fusion of powerpop punk and glam. Their influences are obvious and unavoidable: Bowie, Buzzcocks, New York Dolls,
 			Patti Smith. And, yes, they feature former JBC man Dooj.
 																																	
-			<p>THE WOW! SCENARIO
+			<p />THE WOW! SCENARIO
 																																	
-			<p>New and fascinating young band from Northamptonshire featuring James Acaster.
+			<p />New and fascinating young band from Northamptonshire featuring James Acaster.
 																																	
-			<p>SUPERSTAR DJ FLASH
+			<p />SUPERSTAR DJ FLASH
 																																	
-			<p>The man behind P-Hex, the heavy artillery of Wilson, the rhythm guitarist of Ghost Train: DJ Flash has the music in
+			<p />The man behind P-Hex, the heavy artillery of Wilson, the rhythm guitarist of Ghost Train: DJ Flash has the music in
 			him and now it's gotta come out.
 																																	
-			<p>Entry is free, as it has been for almost three years. First band onstage at about nine o'clock. Well-stocked and
+			<p />Entry is free, as it has been for almost three years. First band onstage at about nine o'clock. Well-stocked and
 			genially staffed bar open until midnight. We hope to see you there.
 		)}
 	)}
@@ -39,7 +39,7 @@
 		with=${literalizeCommas(
 			Misterlee, The Black Watch, DJ Sonic Boom (Spacemen 3)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			MISTERLEE (Leicester) + THE BLACK WATCH (Los Angeles) + Superstar DJ SONIC BOOM (Spacemen 3)
 		)}
 	)}
@@ -54,16 +54,16 @@
 		with=${literalizeCommas(
 			Black Carrot, DJ James Acaster
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			BLACK CARROT<br>
 			PAT FISH<br>
 			SUPERSTAR DJ JAMES ACASTER (MUSIC FOR SQUARES)
-			<p>
+			<p />
 			It's going to be a wild old night in NN1, with Market Harborough's frankly terrifying purveyors of 21st Century
 			Krautrock,
 			foul-mouthed psychedelic karaoke from NN1 and a mystifying smorgasbord of post-everything pop from James Acaster on
 			the decks.
-			<p>
+			<p />
 			${g_artistweb(g=http://www.blackcarrot.net)}<br>
 			${g_artistweb(g=http://www.jazzbutcher.com)}<br>
 			${g_artistweb(g=http://www.myspace.com/thewowscenario)}<br>
@@ -76,16 +76,16 @@
 		with=${literalizeCommas(
 			Justin Nozuka, Farah Naz, Moody McArdle, Maxwells Daemon
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I shall be doing a show at the 12 Bar Club, Denmark Street, London on Thursday 22nd
 			March 2007.
-			<p>
+			<p />
 			It's six quid to get in. I'm on at ten o'clock. The other acts look interesting.
-			Here's the full line-up for Thursday 22nd:<p>
-			7-30pm Justin Nozuka<p>
-			8pm Farah Naz<p>
-			8-45pm Moody McArdle<p>
-			9-30pm Maxwells Daemon <p>
+			Here's the full line-up for Thursday 22nd:<p />
+			7-30pm Justin Nozuka<p />
+			8pm Farah Naz<p />
+			8-45pm Moody McArdle<p />
+			9-30pm Maxwells Daemon <p />
 			10-15pm Pat Fish
 		)}
 	)}
@@ -94,9 +94,9 @@
 	${gigHeader(
 		with=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Wilson will be playing at THE ROADMENDER, Northampton NN1 on SUNDAY 25th MARCH.
-			<p>
+			<p />
 			The show is an all-day benefit concert for the Cambodian Kids Project, which basically takes care of orphans in that
 			country. Details to follow when we have them.
 		)}
@@ -108,7 +108,7 @@
 		with=${literalizeCommas(
 			They Came From The Stars I Saw Them, DJ Joe Woolley
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar present
 			
 			<br>
@@ -181,19 +181,11 @@
 #define	Apr10.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	Apr12.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	May4.html()
@@ -202,7 +194,7 @@
 		with=${literalizeCommas(
 			Tim Chaplin (aka Luminous), DJ Johnny P.
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			May the Fourth be with you. This month we feature the very wonderful TIM CHAPLIN (aka Luminous), plus a support act tbc and superstar DJ JOHNNY P.
 		)}
 	)}
@@ -213,7 +205,7 @@
 		blurb=German Beer Festival,
 		with=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			There is a German Beer Festival coming to Northampton from the 4th to the 7th May. I shall be performing there at noon (yes,
 			midday) on Sunday 6th May and again on Monday 7th May. I'll be playing acoustic.
 		)}
@@ -225,7 +217,7 @@
 		blurb=German Beer Festival,
 		with=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			There is a German Beer Festival coming to Northampton from the 4th to the 7th May. I shall be performing there at noon (yes,
 			midday) on Sunday 6th May and again on Monday 7th May. I'll be playing acoustic.
 		)}
@@ -234,10 +226,6 @@
 #define	May20.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	May27.html()
@@ -246,7 +234,7 @@
 		with=${literalizeCommas(
 			Steven Wilson (Plasticsoul), Dave Boy Fish and the Wheel
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			This gig has moved from The Monk and minstrel in Isham to THE WHITE HORSE in WOODFORD, NN14. Again, we&#39;re talking about the extreme
 			eastern side of Northamptonshire here, out beyond Kettering, I believe. Also on the bill is Steven Wilson of Plasticsoul and an outfit
 			called Dave Boy Fish and the Wheel.
@@ -259,7 +247,7 @@
 		with=${literalizeCommas(
 			Steven Wilson (Plasticsoul)
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			This month our headliner, from San Gabriel, California, is Steven Wilson, known to his many admirers as PLASTICSOUL. A classic songwriter in the vein of John Lennon or Neil Young, Wilson is possessed of an awesome voice and enormous talent. Support and superstar DJ to be confirmed, so check back later for more Budvar thrills.
 		)},
 		posters=/images/20070601/20070601_poster.jpg$$
@@ -269,10 +257,6 @@
 #define	Jun24.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	Jul6.html()
@@ -281,71 +265,71 @@
 		with=${literalizeCommas(
 			Ray, Just Fontaine
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			This month we feature London-based recording artists RAY, plus NN1's own JUST FONTAINE. Your host and DJ for the evening: yours truly, PAT FISH.
-			<p>
+			<p />
 			Masters of Budvar present
-			<p>
+			<p />
 			-at-
-			<p>
+			<p />
 			The Labour Club
 			Corner of Earl & Charles
 			Northampton NN1
-			<p>
+			<p />
 			-on-
-			<p>
+			<p />
 			Friday 6th July 2007
-			<p>
+			<p />
 			Your headliners
 			RAY
-			<p>
+			<p />
 			Superb melancholy quartet from London who combine the world-weary longing of Leonard Cohen or Nick Drake with the awesome sonic authority of Echo & The Bunnymen, Mercury Rev, or even - whisper this - Pink Floyd. A year ago Ray gave one of the most memorable shows that Masters of Budvar have hosted in four years. With a new album ready for release, they are unmissable.
-			<p>
+			<p />
 			New RAY single Great Strange Dream out now. This new single follows the release of their last two albums - Daylight in the Darkroom (Aug 2006) and Deep Blue Happy (Nov 2005). It was produced by regular band cohort John Rivers, - whose credits include The Specials (Ghost Town), Felt & Ocean Colour Scene. John was also at the production helm for their previous LPs.
 			These LPs (along with their 2001 Rough Trade debut First Light) have seen the London-based band reinforce their reputation for epic, emotive British guitar pop - having been hailed in some quarters as the missing link between House of Love, Echo and the Bunnymen, The Chameleons and Tindersticks
-			<p>
+			<p />
 			The line up of songwriting brothers Nev and Mark Bradford (vocals and guitar respectively) and drummer Chris Lowe, have now been joined by Martin Tisdall on bass after the departure of Jenni Tarma to LA
-			<p>
+			<p />
 			Young Masters
 			Mojo
-			<p>
+			<p />
 			Almost flawless - Ray's touch is breathtaking
 			Q
-			<p>
+			<p />
 			Guitar notes hang in the air. Words are weighted then dispersed in the ether... but acutely present undercurrents of hostility, give the songs a serrated edge
 			NME
-			<p>
+			<p />
 			Loveliness galore for those lugubrious nights of the soul. A Ray of delight, if you will
 			Rocksound
-			<p>
+			<p />
 			RAY have tapped into the wonderful musical nostalgia of a bygone sonic age, but mixed it with enough contemporary panache to make the hairs on the back of your neck stand on end
 			msn.co.uk
-			<p>
+			<p />
 			Sublimely Melodic
 			The Guardian
-			<p>
+			<p />
 			${g_artistweb(g=http://www.raytheband.com)}
-			<p>
+			<p />
 			${g_artistweb(g=http://www.myspace.com/raytheband)}
-			<p>
+			<p />
 			Your opening entertainers
-			<p>
+			<p />
 			Just Fontaine
-			<p>
+			<p />
 			>From the new Barcelona, NN1, these sharp-tongued men in sharp suits pursue their unsavoury but ultimately redemptive agenda somewhere on the other side of this life. A stately limo driven through the heart of darkness, Just Fontaine find grace under pressure in the strangest of places and work their way effortlessly into the listener's heart. They don't really do happy.
-			<p>
+			<p />
 			${g_artistweb(g=http://www.myspace.com/thebandfontaine)}
-			<p>
+			<p />
 			Plus your cheapskate superstar DJ
-			<p>
+			<p />
 			Pat Fish
-			<p>
+			<p />
 			The man who "discovered" the Spacemen 3 discovers that he has a virgin copy of "It's So Funny (How We Don't Talk Any More)" by Sir Lord Cliff Richard in his record bag. Slowly and methodically he prepares himself for ritual suicide right here in the Labour Club, pausing only to cue up "Rock Me Amadeus" by the all-conquering Falco as the blood begins to spray over hapless, shrieking alternative-rock fans who thought (God bless!) that this might have been the happening place to be - rather than this brutal charnel house of forcibly collided beats, ill-matched pads, warring riffs and spine-warping howls of unsatisfied desire. Oh, well.
-			<p>
+			<p />
 			${g_artistweb(g=http://www.myspace.com/patfish77)}
-			<p>
+			<p />
 			It's free to get in. The music is always really cool.
-			<p>
+			<p />
 			Why would you think it was not for you?
 		)}
 	)}
@@ -356,7 +340,7 @@
 		with=${literalizeCommas(
 			Jim Jasmine, Chipanman
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			JIM JASMINE PAT FISH CHIMPANMAN plus superstar DJ tbc A bit of a night for Creation fans, this one. Jim Shepherd, leader of first generation Creation band The Jasmine Minks will be travelling down from Scotland to perform a solo set and also a set of Jasmine Minks tunes backed by Northampton/Milton Keynes combo Chimpanman. I shall be there with my guitar and a laptop and Chimpanman will open the evening with their own original set. Jim is an immensely talented songwriter with a heart as big as a mountain. It should be a super night. More details as I have them, Pat x
 		)}
 	)}
@@ -366,72 +350,72 @@
 		cost=free,
 		with=${literalizeCommas(
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar
 			present
-			<p>
+			<p />
 			at
-			<p>
+			<p />
 			The Labour Club
-			<p>
+			<p />
 			Corner of Earl
 			&amp; Charles
-			<p>
+			<p />
 			Northampton NN1
-			<p>
+			<p />
 			on
-			<p>
+			<p />
 			Friday 3rd August 2007
-			<p>
+			<p />
 			SATURATION
 			POINT
 				${g_artistweb(g=http://www.myspace.com/thesaturationpoin)}
 
-			<p>
+			<p />
 			Last time that this Bristol trio
 			played at Masters of Budvar they ended up being signed to a record deal with
 			Very Friendly Records, part of Cargo. So it seems only right that they should
 			make their return to the Labour Club just as their album is
 			released.
-			<p>
+			<p />
 			With a history involving Blue
 			Aeroplanes, Strangelove, Witness and Groove Armada (!), Saturation Point are a
 			deeply powerful and melodic post-rock outfit, combining powerful electric guitar
 			drones with fizzing electronics and a mighty rhythm section. Their lovely
 			instrumentals work their way deep into your consciousness and a sense of deep
 			satisfaction and contentment can only ensue.
-			<p>
+			<p />
 			BROKEN
 			STARS
 			${g_artistweb(g=http://www.myspace.com/brokenstarsu)}
 
-			<p>
+			<p />
 			A first appearance at Masters of
 			Budvar for this darkly talented quintet from London. Classic songwriting and
 			powerful, committed lyrics combine to bring to mind memories of the Perfect
 			Disaster.
-			<p>
+			<p />
 			SUPERSTAR DJ THE NOTORIOUS
 			B.E.Z.
-			<p>
+			<p />
 			NN1's leviathan of the leisure lounge
 			graces us with a fine selection of tunes from his capacious
 			collection.
-			<p>
+			<p />
 			Admission is free and the doors are
 			open from 8:00pm
-			<p>
+			<p />
 			Don't let the speakeasy-style door
 			entryphone system put you off. Somebody will surely come and let you
 			in.
-			<p>
+			<p />
 			Don't worry about smoking either. The
 			Labour Club has erected a covered area for smokers in the back garden. We like
 			to call it "The Bike Shed".
-			<p>
+			<p />
 			We hope to see you there for another
 			rocking night at Masters of Budvar.
-			<p>
+			<p />
 			This message has reached
 			you because your name has found its way onto the mailing list for Masters of
 			Budvar, a non-profit organisation devoted to bringing the best in global music
@@ -442,7 +426,7 @@
 			distressing, then please feel free to reply to our e-mail with the code "LEAVE
 			IT!" in the subject field and we shall drop your address from our list at a
 			speed quicker than can be detected by the human eye.
-			<p>
+			<p />
 			If, on the other hand,
 			this kind of thing looks interesting to you, please feel free to forward this
 			message to all your music-loving pals. Thank you!
@@ -455,7 +439,7 @@
 		with=${literalizeCommas(
 			Kevin Hewick, The New Moon, DJ Mister Lee
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			<DIV><FONT face=Arial size=2>
 			<P style="TEXT-ALIGN: center" align=center><?xml:namespace prefix = st1 ns =
 			"urn:schemas-microsoft-com:office:smarttags" /><st1:date Year="2007" Day="7"
@@ -679,7 +663,7 @@
 		with=${literalizeCommas(
 			The Adult Section, Freelovebabies, DJ 78
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			<DIV><FONT face=Arial size=2>
 			<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center"
 			align=center><SPAN style="FONT-SIZE: 8pt; FONT-FAMILY: Arial"><?xml:namespace
@@ -1018,9 +1002,9 @@
 		with=${literalizeCommas(
 			Anton Barbeau
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I'm playing the 12 Bar Club in London on Weds 24th October.
-			<p>
+			<p />
 			I'm on with Anton Barbeau and his band. The 12 Bar is in
 			Denmark Street in the West End. Nearest tube station is Tottenham Court Road.
 			It's a lovely club. I always have fun there.
@@ -1038,7 +1022,7 @@
 		reviews=
 			${literalizeCommas(
 				Once again, I was in London on business and was able to take in a live gig by Pat 'The Jazz Butcher' Fish at the famous 12 Bar Club on Denmark Street. This time around, I brought a decent camera, my Canon G9, and was able to capture some photos and video, now on YouTube. It was an all-acoustic gig --just Pat, his guitar and a couple of effects pedals. Still, you got to see a glimpse of the man's range as a musician and songwriter, moving gracefully from humor to heartbreak and back again. As good as this gig was, it left me wanting for more. But for now, I'll just have to make due with some of the Jazz Butcher CD's from Amazon.
-				<p>
+				<p />
 				One nice change since the last gig in April is that London's bars and restaurants now have a smoking ban in effect. So instead of me having to go outside every 20 minutes for fresh air, it was the smokers who went out! Also, it was nice to see the Reading branch of the Pat Fish fan club out in full force. Thanks to Nigel and Dominic for the drinks. See you again next time, guys!
 			)}$$
 			Zack's Guitarvibe post;;http://www.guitarvibe.com/2007/10/pat-jazz-butche.html
@@ -1050,41 +1034,41 @@
 		with=${literalizeCommas(
 			Eaglehead, Will Carruthers
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The Labour Club, Earl Street, Northampton NN1
-			<p>
+			<p />
 			Friday 2nd November 2007
-			<p>
+			<p />
 			Masters of Budvar present
-			<p>
+			<p />
 			Last minute de-railments at tonight's Master of Budvar.
 			Important updates.
-			<p>
+			<p />
 			At the last moment, Tim Keegan has been in touch to report that he is bedridden with ME and, despite his
 			best endeavours, is simply too unwell to perform at tonight's Masters of Budvar. He apologises, can't
 			remember when he ever missed a show before. Masters of Budvar apologise, it's a terrible shame. We shall
 			take all steps to bring Tim and his band back as soon as it is possible.
-			<p>
+			<p />
 			Within an hour of that little bombshell we heard from DJ Flash. He - happily - is alive and well, but he
 			had forgotten that he was down to play out at this night and gone and got himself a load of work in Corby
 			instead. Well, fair enough, it's probably better paid for a start. So there we were. Eight o'clock the
 			night before the show and we were down two out of three artistes. Masters of Nothing Very Much.
-			<p>
+			<p />
 			Hasty revision, a phew phone calls and here's the situation.
-			<p>
+			<p />
 			EAGLEHEAD will headline. Rocking. ${g_artistweb(g=http://www.myspace.com/eagleheaduk)}
-			<p>
+			<p />
 			WILL CARRUTHERS leader of the Freelovebabies, will open with an acoustic set.
 			${g_artistweb(g=http://www.myspace.com/freelovebabies)}
-			<p>
+			<p />
 			Tunes will be provided from the Archives of Budvar.
-			<p>
+			<p />
 			It's still going to be worth your time.
-			<p>
+			<p />
 			Labour Club NN1
-			<p>
+			<p />
 			As usual this all kicks off at around half past eight at the Labour Club.
-			<p>
+			<p />
 			As usual, admission is free.
 		)}
 	)}
@@ -1092,10 +1076,6 @@
 #define	Nov16.html()
 	${gigHeader(
 		cost=free,
-		with=${literalizeCommas(
-		)},
-		notes=${literalizeCommas(
-		)}
 	)}
 
 #define	Dec7.html()
@@ -1104,79 +1084,79 @@
 		with=${literalizeCommas(
 			The Winnebago Orchestra, The Havenots, DJ Special Horse
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Masters of Budvar present
-			<p>
+			<p />
 			The Labour Club, Corner or Earl & Charles, Northampton NN1
-			<p>
+			<p />
 			Friday 7th December 2007
-			<p>
+			<p />
 			>From Birmingham
-			<p>
+			<p />
 			THE WINNEBAGO ORCHESTRA
-			<p>
+			<p />
 			"When enlightenment thought took a wrong turn"
-			<p>
+			<p />
 			The Winnebago Orchestra were formed in England in 2001. They are former Blue Aeroplanes guitarist Caroline Trettine and multi instrumentalist Spencer Roberts.
-			<p>
+			<p />
 			Together they perform a singularly eclectic, yet brilliant blend of melodic English beat poetry and song. After releasing a couple of albums on their own independent Oporto Records in 2002/3, they were snapped up by tuition (home of Go-Betweens and Kevin Ayers) in 2005.
-			<p>
+			<p />
 			It's impossible to draw comparisons, so no one does!
-			<p>
+			<p />
 			However, their influences range from the melodic pop of The Go Betweens, through to Nick Drake, Love, Fairport Convention, The Velvet Underground right through to Erik Satie and Laurie Anderson, but this provides but a fraction of a guide to their unique musical appeal.
-			<p>
+			<p />
 			Spencer's unique musical talent creates sounds and landscapes which act as a cinematic canvas to singer-songwriter and former Blue Aeroplanes guitarist Caroline Trettine. Caroline, a former protegee of Billy Bragg, adds an extra dimension to The Winnebago Orchestra with her sensual and folk orientated vocal style.
-			<p>
+			<p />
 			The new Winnebago Orchestra album 'Born in the Sun' will be released in the UK, November 2007; Germany 25th January 2008; the USA and the rest of Europe January 2008 too.
-			<p>
+			<p />
 			${g_artistweb(g=http://www.myspace.com/thewinnebagoorchestra)}
-			<p>
+			<p />
 			THE HAVENOTS
-			<p>
+			<p />
 			Well-loved local artist Liam Dullaghan and Sophia Marshall made two very well received albums as The Havenots. Tonight, with their third album "Weakender" shortly to be released, they reunite for a rare appearance together here at Masters of Budvar.
-			<p>
+			<p />
 			Praise for the Havenots' previous releases:
-			<p>
+			<p />
 			Bad Pennies (Circus 65) 2003
-			<p>
+			<p />
 			The voices are spectacular. Dullaghan's lazy drawl already likened to Ryan Adams on smack, Marshall's classically trained larynx somewhere between Emmylou and Hope Sandoval. Heartening stuff. - Helen Keen, Uncut ****
-			<p>
+			<p />
 			Never Say Goodnight (Cooking Vinyl) 2005
-			<p>
+			<p />
 			Maverick Magazine
-			<p>
+			<p />
 			The Havenots
 			Never Say Goodnight
 			Cooking Vinyl
 			COOK327
 			****
-			<p>
+			<p />
 			Only three years into the Havenots' career and already the Leicester couple have produced two stunning albums. NEVER SAY GOODNIGHT is the splendid second after 2003's BAD PENNIES, and the two song-writing youngsters (Liam Dullaghan and Sophia Marshall) already sound like old pros. Here they have an album solid with good songs, blends of gorgeous pop and unbridled folk-tinged melancholy.
-			<p>
+			<p />
 			>From the rocky, Garbage-lite Sweetest Feeling to the fragile Ryan Adamsy Ghost to the ethereal Byrds influenced Lets Just Start Again, this bundle of tracks will no doubt to be a hit with both the alternative country in-crowd and Radio 2's more mainstream listeners. Sophia sings like a fallen angel while Liam tempers his smoky tones into a calm summer breeze. And Chicago songwriter Chris Mills guests on mandolin and synths as well as helping out with production. If their success continues at this rate, who knows, maybe one day it will be Wembley. Never say goodnight. - HK
-			<p>
+			<p />
 			Album Of The Week - Irish Sunday Tribune
-			<p>
+			<p />
 			Will undoubtedly be a contender for album of the year for everyone who hears it. Unreservedly recommended. - Jeremy Searle, Americana UK
-			<p>
+			<p />
 			Spellbinding: four stars. - Uncut
-			<p>
+			<p />
 			${g_artistweb(g=http://www.myspace.com/justturnleft)}
-			<p>
+			<p />
 			${g_artistweb(g=http://www.havenots.co.uk)}
-			<p>
+			<p />
 			Superstar DJ Special Horse
-			<p>
+			<p />
 			He is a horse that plays records. He is a special horse. Your thoroughbred superstar DJ comes from the dark regions of NN2 to bring first rate cuts of psychedelia, folk and blues to delight you all. Sugar lumps all round!
-			<p>
+			<p />
 			All in the delightfully spacious new Labour-Drome!
-			<p>
+			<p />
 			Doors 8:00pm
-			<p>
+			<p />
 			First band onstage around 9:15pm
-			<p>
+			<p />
 			Bar until midnight
-			<p>
+			<p />
 			Admission free
 		)}
 	)}
@@ -1187,19 +1167,19 @@
 		with=${literalizeCommas(
 			Vic Godard & The Subway Sect, Zallaz
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Spiral Archive present
-			<p>
+			<p />
 			VIC GODARD & THE SUBWAY SECT
 			<br>
 			PAT FISH
 			<br>
 			ZALLAZ
-			<p>
+			<p />
 			The Soundhaus, Gt Russell St, Northampton NN1
-			<p>
+			<p />
 			Saturday 15th December
-			<p>
+			<p />
 			Tickets &pound;5:00 in advance from Spiral Archive
 		)}
 	)}
@@ -1210,12 +1190,12 @@
 		with=${literalizeCommas(
 			Alabama 3
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Hot Wilson gig news.
-			<p>
+			<p />
 			Saturday 22nd December Wilson are opening for the Alabama 3 at Dirty South, 162 Lee High Road, Lewisham, London SE13 5PR. 8:00pm
 			til 2:00am. Wilson onstage at 10:30pm.
-			<p>
+			<p />
 			BR or Dockland Light Railway station: Lewisham. Buses: 185, 178, 261, 321, 122, 273, 202.
 			Wilson have 50 tickets for this event, going at the stupidly low price of £6:00 each. Available from the band. We'll be setting up
 			an online service within the week. More on that as it comes up. Meanwhile, feel free to contact us for tickets.

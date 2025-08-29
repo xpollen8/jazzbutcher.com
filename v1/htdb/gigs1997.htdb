@@ -17,7 +17,7 @@
 			/images/19970311/sumo11.jpg$$
 			John Devitofranceschi;;;;2017-02-24
 			,
-			notes=${literalizeCommas(
+			announcement=${literalizeCommas(
 				Sumosonic will be playing live at The Powerhaus, London
 				at 9:15pm on Tuesday, 11th March '97. Tube Station: Finsbury Park.
 				People who want discounted tickets should call Pat.
@@ -67,45 +67,29 @@
 #define	Sep11.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${max}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		From Pat Fish:  This gig is from the 12 Bar Club in London's "Tin Pan Alley", Denmark Street in the West End on Thursday 11th September 1997. Max and I booked it as a warm-up for the trip to Seattle and San Francisco. It was the first time that we had played a set together in public since 1985. You can kind of tell; both players are on their best behaviour. 🙂
+		reviews=${literalizeCommas(
+		(verbatim from youtube) From Pat Fish:  This gig is from the 12 Bar Club in London's "Tin Pan Alley", Denmark Street in the West End on Thursday 11th September 1997. Max and I booked it as a warm-up for the trip to Seattle and San Francisco. It was the first time that we had played a set together in public since 1985. You can kind of tell; both players are on their best behaviour. 🙂
 		)}$$Hale;;https://www.youtube.com/senorme1001;;2023-03-01
 	)}
 
 #define	Sep16.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${max}, Joe Skyward (bass), Greg Gilmore (drums)
 		)},
 		photosets=/images/19970916/19970916_notebook_spaceneedle.jpg$$
 			Pat Fish Notebook;;;;2017-04-02,
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	Sep17.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${max}, Joe Skyward (bass), Greg Gilmore (drums)
-		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
 		)},
 		photosets= /images/19970917/17Sep97_1.jpg$$
 			/images/19970917/17Sep97_2.jpg$$
@@ -116,14 +100,12 @@
 #define	Sep19.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${max}, Joe Skyward (bass), Greg Gilmore (drums)
 		)},
-		notes=${literalizeCommas(
+		reviews=${literalizeCommas(
 			${del} ran sound.
-		)},
+		)}$$David Whittemore,
 		pat=${literalizeCommas(
 		)},
 		photosets=
@@ -169,10 +151,6 @@
 		who=${literalizeCommas(
 			${pat}, ${max}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 		,
 		photosets= /images/19970922/19970922_1.jpg$$
 			/images/19970922/19970922_2.jpg$$
@@ -268,32 +246,22 @@
 #define	Nov4.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}
 		)},
-		notes=${literalizeCommas(
+		pat=${literalizeCommas(
 			<i>"If we had the money, we'd go all over Europe and
 			destroy everyone, because we're harder than you"</i>
 			<br><b>Member of the Mad Butcher's</b>
 		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	Dec10.html()
 	${gigHeader(
 		cost=,
-		with=${literalizeCommas(
-		)},
 		who=${literalizeCommas(
 			${pat}, ${max}
 		)},
-		notes=${literalizeCommas(
-		)},
-		pat=${literalizeCommas(
-		)}
 	)}
 
 #define	page_requested	${${page}()}

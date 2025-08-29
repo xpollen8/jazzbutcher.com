@@ -15,7 +15,7 @@
 #define	Apr8_2000.html()
 	${gigHeader(
 		who=${literalizeCommas( ${pat}, ${stevenew}, ${simon}, Joel Harries )},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Last Day Deaf is more than proud to announce that is Media Partner for the 8th April double bill (The Jasmine Minks, The Jazz Butcher Quartet) that will take place at The Continental, South Meadow Lane.Preston, UK.
 			<p>
 			The event is co-organised by  Tuff Life Boogie & They Eat Culture.
@@ -176,7 +176,7 @@
 
 #define	Apr27_1930.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			<blockquote class="annotation">
 			<i>"Along with Alan Moore and Rockingham Castle, Pat Fish remains a Northamptonshire institution. Boozer, intellectual and troubadour, Fish has released an entire canon of Jazz Butcher albums since the early eighties and has intermittently reformed the JBC to critical plaudits.”</i>
 			</blockquote>
@@ -240,7 +240,7 @@
 		who=${literalizeCommas(
 			${pat}, ${stevenew}, ${simon}, ${joel_harries}
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Labour Party social event featuring the Labour Party Candidate Kevin McKeever
 			with a live set by the Jazz Butcher Quartet. Seven to nine, so come early.
 		)},
@@ -266,18 +266,18 @@
 		with=${literalizeCommas(
 			The Bevis Frond, Wreckless Eric, Jowe Head And His Infernal Contraption
 		)},
-		notes=${literalizeCommas(
-		<b>JBQ on stage 4:30pm</b>
-		<p>
-		This Corner of England celebrates 30 Years of the legendary, and incredibly influential, English psychedelic outfit “The Bevis Frond” with a whole day of music at the London Fields Brewery on Sunday May 28th
-<p>
-		Just added: Wreckless Eric, The Jazz Butcher, Jowe Head (of Television Personalities, Swell Maps)
-<p>
-		The Bevis Frond have ultimately become the UK’s leading underground psychedelic rock band with supporters such as comedian Stewart Lee, Dinosaur Jr, Evan Dando, David Tibet, Teenage Fanclub and more. Live, the line-up today includes: Paul Simmons (guitar), Adrian Shaw (bass, vocals), Dave Pearce (drums) and Nick Saloman (vocals, guitar and sitar).
-<p>
-		“Nick Saloman is my choice for king of the 60s psychedelic revival” Pitchfork
-<p>
-		The event will have a series of very special guests from all corners of the musical spectrum and will run from 4pm until 11pm. Live feed projections provided by Innerstrings
+		announcement=${literalizeCommas(
+			<b>JBQ on stage 4:30pm</b>
+			<p>
+			This Corner of England celebrates 30 Years of the legendary, and incredibly influential, English psychedelic outfit “The Bevis Frond” with a whole day of music at the London Fields Brewery on Sunday May 28th
+	<p>
+			Just added: Wreckless Eric, The Jazz Butcher, Jowe Head (of Television Personalities, Swell Maps)
+	<p>
+			The Bevis Frond have ultimately become the UK’s leading underground psychedelic rock band with supporters such as comedian Stewart Lee, Dinosaur Jr, Evan Dando, David Tibet, Teenage Fanclub and more. Live, the line-up today includes: Paul Simmons (guitar), Adrian Shaw (bass, vocals), Dave Pearce (drums) and Nick Saloman (vocals, guitar and sitar).
+	<p>
+			“Nick Saloman is my choice for king of the 60s psychedelic revival” Pitchfork
+	<p>
+			The event will have a series of very special guests from all corners of the musical spectrum and will run from 4pm until 11pm. Live feed projections provided by Innerstrings
 		)},
 		pat=${literalizeCommas(
 		A most agreeable afternoon at the fire Records event, This Corner of England. Dave Barker, Glass           
@@ -345,7 +345,7 @@
 		with=${literalizeCommas(
 			The Jasmine Minks
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			7:00 to 10:30 pm
 		)},
 		setlists=
@@ -369,7 +369,7 @@
 		with=${literalizeCommas(
 			The Jasmine Minks
 		)},
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			7:30pm to 3:00am
 		)},
 		photosets=
@@ -385,7 +385,7 @@
 
 #define	Oct22_1900.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The Jazz Butcher Quartet.. special living room set... Sunday 22nd October. Free entry & everybody welcome.
 		)},
 		setlists=
@@ -440,9 +440,9 @@
 			Slipstream
 		)},
 		cost=free,
-		notes=                                                   
-		${literalizeCommas(
-		I shall be doing an acoustic set, opening for Slipstream.)}
+		announcement=${literalizeCommas(
+			I shall be doing an acoustic set, opening for Slipstream.
+		)}
 	)}
 
 

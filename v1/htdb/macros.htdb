@@ -2896,8 +2896,8 @@ on
 #live	if (getval(extra) == ticket)
 			[ticket stub]
 #live	endif
-##live	if (getval(extra) == teaser)
-#			[show teaser]
+##live	if (getval(extra) == announcement)
+			[show announcement]
 ##live	endif
 #live	if (getval(extra) == bishop)
 			[Gabriel Turner reviews]
@@ -3630,7 +3630,7 @@ ${define(_set, false)}
 #live	endif
 #live	endif
 
-#define	gigHeader(extra, who, pat, with, eventweb, cost, ticketweb, notes, phone, cassettes, photosets, reviews, setlists, recording, soundman, bootlegger, nopat, blurb, tickets, address, postalcode, posters)
+#define	gigHeader(extra, who, pat, with, eventweb, cost, ticketweb, announcement, notes, phone, cassettes, photosets, reviews, setlists, recording, soundman, bootlegger, nopat, blurb, tickets, address, postalcode, posters)
 #live	if (sql(_gig:select *, unix_timestamp(datetime) as ts, year(datetime) as year, month(datetime) as month, day(datetime) as day from gig where datetime='${gigPage2Datetime()}' and isdeleted is NULL limit 1))
 #live		if (sql(_prevgig:select datetime, venue from gig where datetime<'${_gig->datetime}' and isdeleted is NULL order by datetime desc limit 1))
 #live		endif
@@ -4032,7 +4032,7 @@ ${define(_set, false)}
 #live			if (define(nx_credits, ${_nx[2]}))
 #live			endif
 #live		else
-#live			if (define(nx_credits, pat))
+#live			if (define(nx_credits, Pat Fish))
 #live			endif
 #live		endif
 #live	endif
@@ -4046,6 +4046,32 @@ ${define(_set, false)}
 
 #live	if (getval(UX))
 #live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="notes", ${credit2SQL(nx_credits)}  body="${stripWhitespace(${literalizeQuotes(${truncAt(${EOD}, ${nx_current})})})}"))
+#live		endif
+#live	endif
+#live	endif
+
+#live	if (defined(announcement))
+#live	if (makeArray(_nx, ${EOD}, ${unfilter(${announcement})}))
+#live		if (define(nx_current, ${_nx[1]}))
+#live		endif
+#live		if (getval(_nx[2]))
+#live			if (define(nx_credits, ${_nx[2]}))
+#live			endif
+#live		else
+#live			if (define(nx_credits, Pat Fish))
+#live			endif
+#live		endif
+#live	endif
+	${begTab(Announcement)}
+	<div class="listItem">
+		${nx_current}
+		<br/>
+		${parseCredit(c=${filterProgramArguments(${nx_credits})})}
+	</div>
+	${endTab}
+
+#live	if (getval(UX))
+#live		if (sql(insert IGNORE into gigtext set datetime="${_gig->datetime}", type="announcement", ${credit2SQL(nx_credits)}  body="${stripWhitespace(${literalizeQuotes(${truncAt(${EOD}, ${nx_current})})})}"))
 #live		endif
 #live	endif
 #live	endif

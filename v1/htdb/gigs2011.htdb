@@ -1,8 +1,8 @@
 #define	May10.html()
 	${gigHeader(
-		notes=${literalizeCommas(
-			Admission £5:00 (£3:00 concessions)<p>
-			A solo acoustic set at ${joe_woolley}'s celebrated Bohemian hang-out.<p>
+		announcement=${literalizeCommas(
+			Admission £5:00 (£3:00 concessions)<p />
+			A solo acoustic set at ${joe_woolley}'s celebrated Bohemian hang-out.<p />
 			Full supporting cast of talent.
 		)},
 		pat=${literalizeCommas(
@@ -12,7 +12,7 @@
 
 #define	May20_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			The Boiler Club presents "The Beat Goes On"
 			A follow-up to last year's successful "Beat Evening" featuring live music, DJs and readings.
 			Playing live: ${joe_woolley} and Pat Fish
@@ -27,13 +27,13 @@
 
 #define	May28_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			N.T.W.I.C.N. presents
-			<p>
+			<p />
 			Real Live Owls - Andy Harwood - Will Hall - Fred Claridge - Pat Fish
-			<p>
+			<p />
 			Your host: ${curt}
-			<p>
+			<p />
 			Admission free!
 		)},
 		posters=/images/20110528/20110528_poster.jpg$$
@@ -43,14 +43,14 @@
 #define	Jun4_2200.html()
 	${gigHeader(
 		blurb=Twinfest,
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I shall be appearing at The Lamplighter, Overstone road, NN1 on Saturday (4th June) as
 			part of the annual Twinfest, where bands from Northampton's twin
 			towns of Marburg (Germany) and Poitiers (France) join local talent
 			at a series of shows in Northampton over the weekend.
-			<p>I shall be on, playing an electric set, between two Marburg bands, The Vic
+			<p />I shall be on, playing an electric set, between two Marburg bands, The Vic
 			Suhr Band and Angelo & The Angelas.
-			<p>I shall be on stage around ten o'clock in the evening.
+			<p />I shall be on stage around ten o'clock in the evening.
 		)},
 		photosets= /images/20110604/20110604_zallaz01_pat.jpg$$
 			Kevin Misan;;http://www.flickr.com/photos/64033775@N05/;;2013-06-22
@@ -65,7 +65,7 @@
 
 #define	Jul29_2300.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			It's a 3 day festival. Weekend          
 			tickets are £25:00. I'm onstage around eleven o'clock on the Friday night. Completely solo.
 		)},
@@ -73,31 +73,31 @@
 
 #define	Aug20_2100.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			I am supporting Rugby band The Anteloids at the launch of their first album.
-			<p>
+			<p />
 			I shall be onstage around nine o'clock.
-			<p>
+			<p />
 			Completely solo.
-			<p>
+			<p />
 			Tickets are £2:50 and it should be a night to remember.
 		)},
 	)}
 
 #define	Aug30.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			A welcome return gig at ${joe_woolley}'s remarkable entirely acoustic nightclub. Recommended.
-			<p>
+			<p />
 			Tickets are £5:00 on the night, £3:00 for unwaged etc.
 		)},
 	)}
 
 #define	Sep13.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			A special screening of UPSIDE DOWN: The Creation Records Story in the iconic 100 Club.
-			<p>
+			<p />
 			After the screening we'll hand over to some Creation legends, with live sets from the
 			legendary Television Personalities and the Jazz Butcher. Mark Gardener will close out the          
 			evening on the decks.
@@ -114,7 +114,7 @@
 
 #define	Oct29_2000.html()
 	${gigHeader(
-		notes=${literalizeCommas(
+		announcement=${literalizeCommas(
 			Revolver DJ's playin SCARY SOUNDS
 		)},
 		posters=/images/20111029/20111029_poster.jpg$$

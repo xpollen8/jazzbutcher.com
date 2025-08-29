@@ -11,7 +11,7 @@
 			Admission free.
 		)},
 		posters=/images/20100122/20100122_poster.jpg$$
-		    ;;;;2010-06-09
+		    Pat Fish;;;;2010-06-09
 	)}
 
 #define	Jan29.html()
@@ -57,7 +57,7 @@
 			;;;;2014-07-12
 		,
 		posters=/images/20100309/20100309_poster.jpg$$
-		    ;;;;2010-06-09
+		    Pat Fish;;;;2010-06-09
 	)}
 
 #define	Mar18.html()

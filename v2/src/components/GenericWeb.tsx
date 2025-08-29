@@ -136,7 +136,7 @@ export const removeHTML = (str?: string) => {
 
 export const ParsedCaption = (props: { credit?: string, url?: string, credit_url?: string, credit_date?: string, caption?: any, image_caption?: any }) => {
 	const needBR = ((props?.caption || props?.image_caption) && ((props?.credit) || (props?.credit_url) || (props?.credit_date)));
-	const useCredit = removeHTML(props?.credit);
+	const useCredit = removeHTML(props?.credit) || '-UNKNOWN-';
 	const useCaption = removeHTML(props?.caption || props?.image_caption);
 	const useURL = (useCredit) ? `/contributions/${useCredit}` : props?.credit_url;
 	return (<>

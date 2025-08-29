@@ -14,7 +14,8 @@ const Gigs = () => {
 	const searchParams = useSearchParams();
 	const type = searchParams.get('f') as string;
 	const query = searchParams.get('q') as string;
-	const { data, isLoading, error } = useGigs({ type, query });
+	// remove quotes from 'performer','alsowith' types
+	const { data, isLoading, error } = useGigs({ type, query: (['performer','alsowith'].includes(type)) ? query?.replace(/"/g, '') : query });
 
 	return (<>
 		<Header section='gigs' />

@@ -624,6 +624,18 @@ ${d}
 		dtpublished=2016-02-27,
 		dtadded=2023-11-28)}
 
+	${addPress(type=gig,
+		url=${jbc_press}/19821106_press_mercuryandherald.html,
+		publication=Mercury And Herald,
+		thumb=${jbc_images}/19821101/19821101_poster;;David Whittemore;;;;2004-05-12,
+		todo=OCR,
+		location=Northampton\, UK,
+		credit=Dominic Chapman,
+		title=Bauhaus remember their roots,
+		datetime=1982-11-01,
+		dtpublished=1982-11-06,
+		dtadded=2025-08-28)}
+
 	${addPress(type=album, album=bacon,
 		url=${jbc_press}/19820905_press_mercuryandherald.html,
 		publication=Mercury And Herald,

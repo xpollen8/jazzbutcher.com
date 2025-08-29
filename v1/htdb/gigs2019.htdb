@@ -33,7 +33,7 @@
 		reviews=${literalizeCommas( Facebook Live broadcast)}$$David Whittemore,
 		who=${literalizeCommas( ${pat}, Colin Henney)},
 		posters=/images/20190221/20190221_poster.jpg$$
-		    ;;;;2019-02-23
+		    Pat Fish;;;;2019-02-23
 	)}
 
 #define	Apr6_2230.html()

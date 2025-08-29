@@ -118,7 +118,7 @@
 			Revolver DJ's playin SCARY SOUNDS
 		)},
 		posters=/images/20111029/20111029_poster.jpg$$
-		    ;;;;2011-10-31
+		    Pat Fish;;;;2011-10-31
 	)}
 
 #define	page_requested	${${page}()}

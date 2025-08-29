@@ -216,7 +216,7 @@
 			happy.
 		)},
 		posters=/images/20050204/20050204_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Feb5.html()
@@ -351,7 +351,7 @@
 			I enjoyed it, especially the last couple of numbers, which, frankly, had no place in a folk club...
 		)},
 		posters=/images/20050304/20050304_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Apr1.html()
@@ -408,7 +408,7 @@
 			it for the love of a good night out.
 		)},
 		posters=/images/20050401/20050401_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Apr11.html()
@@ -636,7 +636,7 @@
 			quality music. Masters of Budvar. Yes, thank you very much.
 		)},
 		posters=/images/20050506/20050506_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	May17.html()
@@ -713,7 +713,7 @@
 			classic songwriting will want to be there.
 		)},
 		posters=/images/20050527/20050527_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Jun3_2100.html()
@@ -828,7 +828,7 @@
 			No, leave it. Leave it.
 		)},
 		posters=/images/20050603/20050603_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Jun4_2000.html()
@@ -984,7 +984,7 @@
 			who came out.
 		)},
 		posters=/images/20050701/20050701_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Aug1.html()
@@ -1052,7 +1052,7 @@
 		pat=${literalizeCommas(
 		)},
 		posters=/images/20050801/20050801_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Aug5.html()
@@ -1100,7 +1100,7 @@
 			</center>
 		)},
 		posters=/images/20050805/20050805_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Aug11.html()
@@ -1558,7 +1558,7 @@
 			</div>
 		)},
 		posters=/images/20050902/20050902_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Sep10.html()
@@ -1709,7 +1709,7 @@
 			${g_artistweb(g=http://www.lemonrock.com/charlie)}
 		)},
 		posters=/images/20051007/20051007_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Oct27.html()
@@ -1731,7 +1731,7 @@
 			${joe_woolley}
 		)},
 		posters=/images/20051027/20051027_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Nov4.html()
@@ -1806,7 +1806,7 @@
 			</div>
 		)},
 		posters=/images/20051104/20051104_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Nov17.html()
@@ -1874,7 +1874,7 @@
 			open until midnight!
 		)},
 		posters=/images/20051202/20051202_poster.jpg$$
-		    ;;;;2017-02-12
+		    Pat Fish;;;;2017-02-12
 	)}
 
 #define	Dec10.html()

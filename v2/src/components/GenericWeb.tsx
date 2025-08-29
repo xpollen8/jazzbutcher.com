@@ -46,6 +46,13 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 	)
 }
 
+export const Download = ({ g, u, p, d }: {
+	g?: string
+	u?: string
+	d?: string
+	p?: string
+}) =>	genericWeb({ g, u, t: "Download", s: "source", d, p });
+
 export const Source = ({ g, u, p, d }: {
 	g?: string
 	u?: string

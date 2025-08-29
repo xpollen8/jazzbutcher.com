@@ -128,6 +128,10 @@ const GigNote = (data: any, key: number) => <GigText {...data} />
 
 const GigNotes = (data: any) => <div className="listItem"><Iterator data={data} func={GigNote} /></div>
 
+const GigAnnouncement = (data: any, key: number) => <GigText {...data} />
+
+const GigAnnouncements = (data: any) => <div className="listItem"><Iterator data={data} func={GigAnnouncement} /></div>
+
 const GigSelfReview = (data: any, key: number) => <GigText {...data} />
 
 const GigSelfReviews = (data: any) => <div className="listItem"><Iterator data={data} func={GigSelfReview} /></div>
@@ -401,6 +405,7 @@ const Content = ({ gig }: { gig: any }) => {
 		switch (t.type) {
 			case 'bootlegger':
 			case 'notes':
+			case 'announcement':
 			case 'recording':
 			case 'review':
 			case 'selfreview':
@@ -416,6 +421,7 @@ const Content = ({ gig }: { gig: any }) => {
 
 	const extras = [
 		{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
+		{ label: 'Announcement', lookup: 'text_announcement', func: GigAnnouncements },
 		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
 		{ label: 'Images', lookup: 'media_combined', func: GigImages },
 		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },

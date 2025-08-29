@@ -6,14 +6,9 @@ import Tag from '@/components/Tag';
 import Loading from '@/components/Loading';
 import { type HashedType } from '@/lib/utils';
 import useContributions from '@/lib/useContributions';
-import { pluralize } from '@/lib/utils';
+import { truncate, pluralize } from '@/lib/utils';
 import { removeHTML } from '@/components/GenericWeb';
 import { useState, useEffect } from 'react';
-
-const truncate = (str: string, len: number) => {
-	if (str.length < len) return str;
-	return str.substring(0, len) + '..';
-}
 
 const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) => {
 	const setHeader = (e: any, header: string) => { e.preventDefault(); onClick(header); }

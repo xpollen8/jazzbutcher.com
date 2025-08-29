@@ -27,6 +27,10 @@ export type CommentType = NewCommentType & {
 	feedback_id: number
 }
 
+export const truncate = (str: string, len: number) => {
+	if (str.length < len) return str;
+	return str.substring(0, len) + '..';
+}
 export const htmlString = (x: any) => x ? <span dangerouslySetInnerHTML={{ __html: x }} /> : '';
 
 export const linkExternal = (href: string, text?: string | React.ReactElement): React.ReactNode => <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>

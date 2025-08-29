@@ -311,7 +311,7 @@ ${d}
 ##live		endif
 #live		loop (pi, 1, ${pressItems->numResults})
 #live			if (define(pr, pressItems[${pi}]))
-<h3>${pi}: update (pub:${${pr}->dtpublished}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
+#<h3>${pi}: update (pub:${${pr}->dtpublished}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
 #live				if (sql(x:insert IGNORE into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${literalizeQuotes(${${pr}->images})}", media="${literalizeQuotes(${${pr}->media})}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${literalizeQuotes(${${pr}->audio})}", publication="${literalizeQuotes(${${pr}->publication})}", issue="${literalizeQuotes(${${pr}->issue})}", title="${literalizeQuotes(${${pr}->title})}", headline="${literalizeQuotes(${${pr}->headline})}", subhead="${literalizeQuotes(${${pr}->subhead})}", location="${literalizeQuotes(${${pr}->location})}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->dtadded})}", dtpublished="${fixDt(${${pr}->dtpublished})}", dtgig="${fixDt(${${pr}->datetime})}", person="${literalizeQuotes(${${pr}->person})}", body="${literalizeQuotes(${${pr}->body})}"))
 #live				endif
 #live			endif
@@ -393,7 +393,13 @@ ${d}
 #live			endif
 #live			if (defIt(prefix=${pre}, url=${url}, field=body, value=${body}))
 #live			endif
-#live			if (defIt(prefix=${pre}, url=${url}, field=credit, value=${credit}))
+#live			if ((getval(${pre}->type) == pat) && (!defined(${pre}->credit)))
+#					force type=pat to have credit=Pat Fish
+#live				if (defIt(prefix=${pre}, url=${url}, field=credit, value=Pat Fish))
+#live				endif
+#live			else
+#live				if (defIt(prefix=${pre}, url=${url}, field=credit, value=${credit}))
+#live				endif
 #live			endif
 ##live		endwhile
 ##live	endif

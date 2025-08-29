@@ -414,7 +414,7 @@ const Content = ({ gig }: { gig: any }) => {
 			//case 'soundman':
 			default:
 				if (!joins['text_other']) joins['text_other'] = [];
-				joins['text_other'].push({ ...t, body: `${t.type}: ${t.body || t.credit}` });
+				joins['text_other'].push({ ...t, body: removeHTML(`${t.type}: ${t.body || t.credit}`) });
 		}
 	})
 

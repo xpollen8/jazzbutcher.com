@@ -26,7 +26,7 @@
 		)}
 		,
 		posters=/images/20150220/20150220_poster.jpg$$
-		    ;;;;2015-02-17
+		    Pat Fish;;;;2015-02-17
 	)}
 
 #define	Mar21_2000.html()
@@ -81,7 +81,7 @@
 			Anna Vulpe;;;;2015-05-05
 		,
 		posters=/images/20150327/20150327_poster.jpg$$
-		    ;;;;2015-03-12
+		    Pat Fish;;;;2015-03-12
 	)}
 
 #define	Apr17_1200.html()
@@ -153,7 +153,7 @@
 				Juan Carlos Pestano;;http://www.litelestudio.com;;2015-05-05
 		,
 		posters=/images/20150417/20150417_poster.jpg$$
-		    ;;;;2015-02-23
+		    Pat Fish;;;;2015-02-23
 	)}
 
 
@@ -194,10 +194,10 @@
 		photosets= /images/20150619/20150619_leighton_gig.jpg$$
 			 Leighton Bobby Cousins;;;;2015-07-06
 		,posters=/images/20150619/20150619_poster.jpg$$
-			;;;;2015-05-15
+			Pat Fish;;;;2015-05-15
 			---
 			/images/20150619/20150619_poster2.jpg$$
-			;;;;2015-05-15
+			Pat Fish;;;;2015-05-15
 	)}
 
 #define	Jun20.html()
@@ -214,7 +214,7 @@
 			Steve Garofalo;;;;2015-08-30
 		,
 		posters=/images/20150620/20150620_poster.jpg$$
-		    ;;;;2015-05-15
+		    Pat Fish;;;;2015-05-15
 	)}
 
 #define	Jun21.html()
@@ -226,7 +226,7 @@
 			Leighton Bobby Cousins;;;;2015-07-06
 		,
 		posters=/images/20150621/20150621_poster.jpg$$
-		    ;;;;2015-05-15
+		    Pat Fish;;;;2015-05-15
 	)}
 
 #define	Jun23.html()
@@ -238,7 +238,7 @@
 			Leighton Bobby Cousins;;;;2015-08-30
 		,
 		posters=/images/20150623/20150623_poster.jpg$$
-		    ;;;;2015-05-15
+		    Pat Fish;;;;2015-05-15
 	)}
 
 #define	Jun26.html()
@@ -247,7 +247,7 @@
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
 		posters=/images/20150626/20150626_poster.jpg$$
-		    ;;;;2015-05-15
+		    Pat Fish;;;;2015-05-15
 	)}
 
 #define	Jun27.html()
@@ -264,7 +264,7 @@
 			Anne Vulpe;;;;2017-07-07
 		,
 		posters=/images/20150627/20150627_poster.jpg$$
-		    ;;;;2015-05-24
+		    Pat Fish;;;;2015-05-24
 	)}
 
 #define	Jun28.html()
@@ -325,14 +325,14 @@
 			Mr Paul Williams;;https://twitter.com/MrPaulWilliams;;2021-12-12
 		,
 		posters=/images/20150922/20150922_poster.jpg$$
-		    ;;;;2015-09-07
+		    Pat Fish;;;;2015-09-07
 	)}
 
 #define	Oct10_2000.html()
 	${gigHeader(
 		who=${literalizeCommas( ${solo})},
 		posters=/images/20151010/20151010_poster.jpg$$
-		    ;;;;2015-09-07
+		    Pat Fish;;;;2015-09-07
 	)}
 
 #define	Dec11_1900.html()
@@ -375,7 +375,7 @@
 			Michael Street;;;;2017-05-16
 		,
 		posters=/images/20151212/20151212_poster.jpg$$
-		    ;;;;2015-10-13
+		    Pat Fish;;;;2015-10-13
 	)}
 
 #define	Dec13.html()
@@ -394,7 +394,7 @@
 			Carolyn Gray;;;;2017-05-16
 		,
 		posters=/images/20151213/20151213_poster.jpg$$
-		    ;;;;2015-10-22
+		    Pat Fish;;;;2015-10-22
 	)}
 
 #define	Dec26.html()

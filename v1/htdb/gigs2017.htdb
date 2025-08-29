@@ -78,7 +78,7 @@
 		)}
 		,
 		posters=/images/20170408/20170408_poster.jpg$$
-		    ;;;;2016-12-21
+		    Pat Fish;;;;2016-12-21
 	)}
 
 #define	Apr15.html()
@@ -171,7 +171,7 @@
 		)}
 		,
 		posters=/images/20170415/20170415_poster.jpg$$
-		    ;;;;2017-01-21
+		    Pat Fish;;;;2017-01-21
 	)}
 
 #define	Apr27_1930.html()
@@ -228,7 +228,7 @@
 		)}
 		,
 		posters=/images/20170427/20170427_poster.jpg$$
-		    ;;;;2017-04-25
+		    Pat Fish;;;;2017-04-25
 	)}
 
 #define	May25_1900.html()
@@ -252,7 +252,7 @@
 			Rachel McGrath;;;;2017-05-26
 		,
 		posters=/images/20170525/20170525_poster.jpg$$
-		    ;;;;2017-05-19
+		    Pat Fish;;;;2017-05-19
 	)}
 
 #define	May28_1630.html()
@@ -300,7 +300,7 @@
 			Sydney Meats;;;;2017-06-02
 		,
 		posters=/images/20170528/20170528_poster.jpg$$
-		    ;;;;2017-03-28
+		    Pat Fish;;;;2017-03-28
 	)}
 
 #define	Jul2_1800.html()
@@ -329,7 +329,7 @@
 		,
 		2017,Jul2_1800.html,https://v1.jazzbutcher.com/gigs/2017/Jul2_1800.html
 		posters=/images/20170702/20170702_poster.jpg$$
-		    ;;;;2017-07-01
+		    Pat Fish;;;;2017-07-01
 	)}
 
 #define	Oct20_1900.html()
@@ -431,7 +431,7 @@
 		Glass Modern;;https://twitter.com/glassmodern2/status/1447500184015958019;;2023-09-23
 		,
 		posters=/images/20170922/20170922_poster.jpg$$
-		    ;;;;2017-07-21
+		    Pat Fish;;;;2017-07-21
 	)}
 
 #define	Nov3.html()

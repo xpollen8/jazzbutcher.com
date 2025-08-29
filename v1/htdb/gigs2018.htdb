@@ -102,7 +102,33 @@
 		Matt Condon;;https://twitter.com/arcane93;;2018-03-11
 		,
 		posters=/images/20180301/20180301_poster.jpg$$
-		    ;;;;2017-12-19
+		    Pat Fish;;;;2017-12-19
+	)}
+
+#define	Apr14_2000.html()
+	${gigHeader(
+		eventweb=http://thelabnorthampton.club/,
+		with=${literalizeCommas(Thomas Truax)},
+		who=${literalizeCommas( ${pat})},
+		photosets=
+		/images/20180414/20180414_cunninham.jpg$$
+		Sean Michael Cunningham;;;;2018-04-15
+	)}
+
+#define	May5_1930.html()
+	${gigHeader(
+		cost=&pound;22.00,
+		with=${literalizeCommas(Luke Haines)},
+		ticketweb=https://www.seetickets.com/event/luke-haines/the-lexington-london/1204840,
+		announcement=${literalizeCommas(
+			Supporting Luke Haines
+		)},
+		who=${literalizeCommas(
+		${pat}
+		)},
+		photosets=
+		/images/20180505/20180505_matwallis.jpg$$
+		 Mat Wallis;;;;2018-05-07
 	)}
 
 #define	May24_2000.html()
@@ -129,22 +155,6 @@
 		,
 		posters=/images/20180524/20180524_poster.jpg$$
 		    ;;;;2018-04-04
-	)}
-
-#define	May5_1930.html()
-	${gigHeader(
-		cost=&pound;22.00,
-		with=${literalizeCommas(Luke Haines)},
-		ticketweb=https://www.seetickets.com/event/luke-haines/the-lexington-london/1204840,
-		announcement=${literalizeCommas(
-			Supporting Luke Haines
-		)},
-		who=${literalizeCommas(
-		${pat}
-		)},
-		photosets=
-		/images/20180505/20180505_matwallis.jpg$$
-		 Mat Wallis;;;;2018-05-07
 	)}
 
 #define	May27_1930.html()
@@ -183,17 +193,7 @@
 		Matt Condon;;https://twitter.com/arcane93;;2018-05-27
 		,
 		posters=/images/20180527/20180527_poster.jpg$$
-		    ;;;;2018-03-08
-	)}
-
-#define	Apr14_2000.html()
-	${gigHeader(
-		eventweb=http://thelabnorthampton.club/,
-		with=${literalizeCommas(Thomas Truax)},
-		who=${literalizeCommas( ${pat})},
-		photosets=
-		/images/20180414/20180414_cunninham.jpg$$
-		Sean Michael Cunningham;;;;2018-04-15
+		    Pat Fish;;;;2018-03-08
 	)}
 
 #define	Jul28_1930.html()
@@ -227,7 +227,7 @@
 			;;;;2023-11-28
 		,
 		posters=/images/20180804/20180804_poster.jpg$$
-		    ;;;;2018-08-04
+		    Pat Fish;;;;2018-08-04
 	)}
 
 #define	Aug25_1900.html()
@@ -242,7 +242,7 @@
 			David E. Barker;;;;2018-09-09
 		,
 		posters=/images/20180825/20180825_poster.jpg$$
-		    ;;;;2018-08-19
+		    Pat Fish;;;;2018-08-19
 	)}
 
 #define	Nov8_1930.html()
@@ -285,7 +285,7 @@
 		\@WraggStephan;;https://twitter.com/WraggStephan;;2020-04-07
 		,
 		posters=/images/20181108/20181108_poster.jpg$$
-		    ;;;;2018-11-04
+		    Pat Fish;;;;2018-11-04
 	)}
 
 #define	page_requested	${${page}()}

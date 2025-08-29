@@ -14,7 +14,7 @@
 		eventweb=https://www.facebook.com/pat.fish.7/videos/10214163350756122/,
 		who=${literalizeCommas( ${pat})},
 		posters=/images/20200712/20200712_poster.jpg$$
-		    ;;;;2020-07-08
+		    Pat Fish;;;;2020-07-08
 	)}
 
 #define	Sep27_2200.html()
@@ -36,7 +36,7 @@
 		eventweb=https://www.facebook.com/pat.fish.7/videos/10215055466938469,
 		who=${literalizeCommas( ${pat})},
 		posters=/images/20201206/20201206_poster.jpg$$
-		    ;;;;2020-12-07
+		    Pat Fish;;;;2020-12-07
 	)}
 
 #define	Dec31.html()
@@ -51,7 +51,7 @@
 			David Whittemore;;;;2020-12-31
 		,
 		posters=/images/20201231/20201231_poster.jpg$$
-		    ;;;;2020-12-29
+		    Pat Fish;;;;2020-12-29
 	)}
 
 #define	page_requested	${${page}()}

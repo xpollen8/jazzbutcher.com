@@ -12,7 +12,7 @@
 		${curt};;;;2021-12-17
 		,
 		posters=/images/20160603/20160603_poster.jpg$$
-		    ;;;;2016-05-16
+		    Pat Fish;;;;2016-05-16
 	)}
 
 #define	Jul13.html()
@@ -67,7 +67,7 @@
 		)}
 		,
 		posters=/images/20161218/20161218_poster.jpg$$
-		    ;;;;2016-11-15
+		    Pat Fish;;;;2016-11-15
 	)}
 
 #define	page_requested	${${page}()}

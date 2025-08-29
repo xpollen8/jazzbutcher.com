@@ -1135,7 +1135,7 @@
 			the talking rubbish. Brilliant. Trebles all round.
 		)},
 		posters=/images/20040604/20040604_poster.jpg$$
-		    ;;;;2004-05-26
+		    Pat Fish;;;;2004-05-26
 	)}
 
 #define Jun6_1245.html()
@@ -1144,9 +1144,6 @@
 		with=${literalizeCommas(
 			Good Cop Bad Cop
 		)},
-		posters=
-			/images/20040606/20040606_poster.jpg$$
-		,
 		pat=${literalizeCommas(
 			It's the first weekend of June 2004 and all over the UK people are getting themselves overexcited commemorating
 			the D-Day invasions. And what is happening in Northampton? Why it's overrun with Germans - I love this town!
@@ -1551,7 +1548,7 @@
 		)}
 		,
 		posters=/images/20040806/20040806_poster.jpg$$
-		    ;;;;2004-07-15
+		    Pat Fish;;;;2004-07-15
 	)}
 
 #define	Sep3.html()

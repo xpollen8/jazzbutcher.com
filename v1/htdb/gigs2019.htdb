@@ -24,7 +24,7 @@
 		)},
 		who=${literalizeCommas( ${pat})},
 		posters=/images/20190330/20190330_poster.jpg$$
-		    ;;;;2019-01-07
+		    Pat Fish;;;;2019-01-07
 	)}
 
 #define	Feb21_2100.html()
@@ -58,7 +58,7 @@
 			Dhiren Basu;;;;2019-08-30
 		,
 		posters=/images/20190406/20190406_poster.jpg$$
-		    ;;;;2019-02-02
+		    Pat Fish;;;;2019-02-02
 	)}
 
 #define	Apr13.html()
@@ -133,7 +133,7 @@
 			Johnny P;;https://twitter.com/johnnyp_p;;2019-08-04
 		,
 		posters=/images/20190622/20190622_poster.jpg$$
-		    ;;;;2019-06-17
+		    Pat Fish;;;;2019-06-17
 	)}
 
 #define	Jul13_2000.html()
@@ -261,7 +261,7 @@
 			magicrpm;;https://twitter.com/magicrpm/status/1178050161983021067;;2019-09-28
 		,
 		posters=/images/20190928/20190928_poster.jpg$$
-		    ;;;;2019-09-21
+		    Pat Fish;;;;2019-09-21
 	)}
 
 #define	Oct5.html()
@@ -298,7 +298,7 @@
 			Simon Phillips;;;;2019-10-14
 		,
 		posters=/images/20191011/20191011_poster.jpg$$
-		    ;;;;2019-09-08
+		    Pat Fish;;;;2019-09-08
 	)}
 
 #define	Oct24_1930.html()
@@ -375,7 +375,7 @@
 			Gabriel Edvy;;;;2025-08-10
 		,
 		posters=/images/20191026/20191026_poster.jpg$$
-		    ;;;;2019-09-23
+		    Pat Fish;;;;2019-09-23
 	)}
 
 #define	Nov9_1930.html()
@@ -413,7 +413,7 @@
 			;;;;2019-11-15
 		,
 		posters=/images/20191109/20191109_poster.jpg$$
-		    ;;;;2019-08-30
+		    Pat Fish;;;;2019-08-30
 	)}
 
 #define	Nov30_1900.html()
@@ -433,7 +433,7 @@
 		)}
 		,
 		posters=/images/20191130/20191130_poster.jpg$$
-		    ;;;;2019-09-21
+		    Pat Fish;;;;2019-09-21
 	)}
 
 #define	page_requested	${${page}()}

@@ -14,7 +14,7 @@
 			David Whittemore;;;;2021-02-28
 		,
 		posters=/images/20210228/20210228_poster.jpg$$
-		    ;;;;2021-02-27
+		    Pat Fish;;;;2021-02-27
 	)}
 
 #define	Apr18_2200.html()
@@ -29,7 +29,7 @@
 		   Sumishta Brahm;;;;2025-02-02
 		,
 		posters=/images/20210418/20210418_poster.jpg$$
-		    ;;;;2021-04-14
+		    Pat Fish;;;;2021-04-14
 	)}
 
 #define	Jun6_2200.html()
@@ -37,7 +37,7 @@
 		eventweb=https://www.facebook.com/pat.fish.7,
 		who=${literalizeCommas( ${pat})},
 		posters=/images/20210606/20210606_poster.jpg$$
-		    ;;;;2021-06-06
+		    Pat Fish;;;;2021-06-06
 	)}
 
 #define	Jul25_2200.html()
@@ -45,7 +45,7 @@
 		eventweb=https://www.facebook.com/pat.fish.7,
 		who=${literalizeCommas( ${pat})},
 		posters=/images/20210725/20210725_poster.jpg$$
-		    ;;;;2021-07-20
+		    Pat Fish;;;;2021-07-20
 	)}
 
 #define	Aug20_1800.html()
@@ -64,7 +64,7 @@
 		   Cath Aubergin;;;;2021-08-28
 		,
 		posters=/images/20210820/20210820_poster.jpg$$
-		    ;;;;2021-08-14
+		    Pat Fish;;;;2021-08-14
 	)}
 
 #define	Aug21_1900.html()
@@ -74,7 +74,7 @@
 		who=${literalizeCommas( ${pat})},
 		with=${literalizeCommas( Blow-Up, Bedside Manners)},
 		posters=/images/20210821/20210821_poster.jpg$$
-		    ;;;;2021-08-21
+		    Pat Fish;;;;2021-08-21
 	)}
 
 # CANCELLED#define	Oct3_2100.html()

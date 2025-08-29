@@ -18,7 +18,7 @@
 			Playing live: ${joe_woolley} and Pat Fish
 		)},
 		posters=/images/20110520/20110520_poster.jpg$$
-		    ;;;;2011-05-12
+		    Pat Fish;;;;2011-05-12
 	)}
 
 #define	May21.html()
@@ -37,7 +37,7 @@
 			Admission free!
 		)},
 		posters=/images/20110528/20110528_poster.jpg$$
-		    ;;;;2011-04-27
+		    Pat Fish;;;;2011-04-27
 	)}
 
 #define	Jun4_2200.html()

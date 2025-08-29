@@ -2586,7 +2586,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1997-08-29 00:00:00','set',NULL,1,4,'Everyth
 INSERT INTO `gigsong` VALUES (NULL,'1997-08-29 00:00:00','set',NULL,1,5,'Radio Saigon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-08-29 00:00:00','set',NULL,1,6,'Sputnik',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-08-29 00:00:00','set',NULL,1,7,'Monks Of Kung Fu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://www.youtube.com/embed/BUoAwJ0XhmY','Hale','https://www.youtube.com/@senorme1001',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://www.youtube.com/embed/BUoAwJ0XhmY','Hale','https://www.youtube.com/@senorme1001',NULL,'2023-03-05');
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,1,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,10,'What\'s The Matter, Boy?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,11,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL,NULL);

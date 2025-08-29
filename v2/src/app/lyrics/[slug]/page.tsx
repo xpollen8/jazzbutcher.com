@@ -90,7 +90,8 @@ const PatSays = (props: any) => XSays(parseCaptionsSourcesEtc(props?.pat_says) |
 const OthersSay = (props: any) => XSays(parseCaptionsSourcesEtc(props?.others_say) || [], 'Others Say');
 
 const Tablature = (props: any) => {
-	const [ g, u, d ] = props?.tablature_credit?.split(';;');
+	const [ g, _u, d ] = props?.tablature_credit?.split(';;');
+	const u = `/contributions/${g}`;
 	return (
 		<div key={props?.key}>
 			<Tag>Tablature</Tag>

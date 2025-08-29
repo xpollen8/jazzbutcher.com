@@ -124,9 +124,9 @@ const GigImage = (data: any, key: number) => <GigMedia {...data} />
 
 const GigImages = (data: any) => <div className="listItem"><Iterator data={data} func={GigImage} className="flex flex-row flex-wrap gap-5 justify-center p-3" /></div>
 
-const GigNote = (data: any, key: number) => <GigText {...data} />
+const GigOtherDetail = (data: any, key: number) => <GigText {...data} />
 
-const GigNotes = (data: any) => <div className="listItem"><Iterator data={data} func={GigNote} /></div>
+const GigOtherDetails = (data: any) => <div className="listItem"><Iterator data={data} func={GigOtherDetail} /></div>
 
 const GigAnnouncement = (data: any, key: number) => <GigText {...data} />
 
@@ -403,26 +403,24 @@ const Content = ({ gig }: { gig: any }) => {
 	gig?.text?.forEach((t: any) => {
 		const nameIt = `text_${t.type}`;
 		switch (t.type) {
-			case 'bootlegger':
-			case 'notes':
 			case 'announcement':
 			case 'recording':
 			case 'review':
 			case 'selfreview':
-			case 'soundman':
 				if (!joins[nameIt]) joins[nameIt] = [];
 				joins[nameIt].push(t);
 			break;
+			//case 'bootlegger':
+			//case 'soundman':
 			default:
 				if (!joins['text_other']) joins['text_other'] = [];
-				joins['text_other'].push(t);
+				joins['text_other'].push({ ...t, body: `${t.type}: ${t.body || t.credit}` });
 		}
 	})
 
 	const extras = [
 		{ label: 'Players', lookup: 'players_JBC', func: GigPlayers },
 		{ label: 'Announcement', lookup: 'text_announcement', func: GigAnnouncements },
-		{ label: 'Notes', lookup: 'text_notes', func: GigNotes },
 		{ label: 'Images', lookup: 'media_combined', func: GigImages },
 		{ label: 'Posters', lookup: 'media_poster', func: GigPosters },
 		{ label: 'Also On The Bill', lookup: 'players_with', func: GigWith },
@@ -433,6 +431,7 @@ const Content = ({ gig }: { gig: any }) => {
 		{ label: 'Played', lookup: 'played', func: GigPlayed },
 		{ label: "Pat Says", lookup: 'text_selfreview', func: GigSelfReviews },
 		{ label: 'Fan Reviews', lookup: 'text_review', func: GigReviews },
+		{ label: 'Other Details', lookup: 'text_other', func: GigOtherDetails },
 		{ lookup: 'press_gig', func: GigPresses },
 	]
 

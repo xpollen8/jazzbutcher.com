@@ -180,7 +180,7 @@ const filterObjectByAttribute = (obj: HashedType, field?: string, value?: string
 	// ensure that the full search term is contained in the target
 	// AND is surrounded by whitespace/punctiuation.  wheee.
 	const pattern = /[a-z]/i;
-	while (!match && idx > 0 && len) {
+	while (!match && idx >= 0 && len) {
 		match = (idx === 0 || !pattern.test(body[idx - 1])) && (len === lclen || !pattern.test(body[idx + lclen]));
 		if (!match) { // hump along
 			body = body.substring(idx + lclen);
@@ -290,9 +290,6 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'presses_for_admin':
 			case 'recent_feedback':
 			case 'feedbacks':
-			case 'feedback_delete': {
-				return await apiDataFromDataServer(path, args);
-			}
 			case 'feedback_by_page': {
 				const { results } = await apiDataFromDataServer('feedback', args);
 				return returnResults(results?.map((r: CommentType) => ({
@@ -300,6 +297,9 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 						who: censorEmail(r?.who),
 					}
 				)));
+			}
+			case 'feedback_delete': {
+				return await apiDataFromDataServer(path, args);
 			}
 
 			/*
@@ -378,26 +378,6 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const datetime = args?.replace(/%20/g, ' ')?.replace(/ 00:00:00/, '');
 				const gigs = gigsStatic?.results?.find((g: HashedType) => g?.datetime === datetime);
 				const played = gigsongsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime)
-					/* already cleaned in db
-					?.map((gs: HashedType) => {
-						// clean up data
-						const unexpand = (p?: string) => p?.split(' ')?.map((p: any) => {
-							if (p?.startsWith('${') && p?.endsWith('}')) {
-								const val = p?.substring(2, 2 + p?.length - 3); // ick
-								return personName(val);
-							} else {
-								return p;
-							}
-						})?.join(' ');
-						const performers = unexpand(gs?.performers);
-						const author = unexpand(gs?.author);
-						return {
-							...gs,
-							performers,
-							author,
-						}
-					});
-				*/
 				const media = gigmediasStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
 				const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
 				const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
@@ -529,12 +509,14 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const gigtext = await apiData('gigtext_contributions', args);
 				const press = await apiData('press_contributions', args);
 				const inpress = await returnFilteredPath('presses', 'body', args?.filter?.value, false);
+				const lyric = await returnFilteredPath('lyrics', 'tablature_credit', args?.filter?.value, false);
 				return {
 					gigmedia: findRecent(gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
 					gigsong: findRecent(gigsong, ['added'], makeOptions(args, 'gigsong')),
 					gigtext: findRecent(gigtext, ['credit_date'], makeOptions(args, 'gigtext')),
 					press: findRecent(press, ['dtadded'], makeOptions(args, 'press')),
 					inpress,
+					lyric,
 				}
 			}
 			case 'releases_by_performer': {

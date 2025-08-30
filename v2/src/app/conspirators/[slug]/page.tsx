@@ -74,7 +74,7 @@ const AKA = ({ aliases }: any) => (!!aliases?.length) && (<><Tag>Also Known As</
 const Conspirator = ({ params }: { params?: any }) => {
 	const conspirator = decodeURIComponent(params?.slug);
 	const known = isKnownMusician(conspirator);
-	const name = known && known.name || '';
+	const name = known && known.name || conspirator;
 	const { data, isLoading, error } = useConspirator(name);
 	const { releases, performer, support, pictures } = data || {};
 

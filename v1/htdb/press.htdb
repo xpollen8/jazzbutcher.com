@@ -3408,6 +3408,319 @@ subhead=(20 December 1957 – 5 October 2021),
 #live		endif
 #live	endif
 
+#define	20211007_press_stereoembers.html
+#live	if (getval(page) = 20211007_press_stereoembers.html)
+	${extractPress(
+		body=${literalizeCommas(
+		<div class="iview_intro">
+		(0:00 - 1:08)
+		All right, so this is going to be a really tricky show. The news arrived this morning that Pat Fish, also known as the Jazz Butcher, has died. Pat was my hero, and he might have been yours as well. 
+		<p />
+		He also might have been your friend, or maybe he was just an occasional drinking pal, or maybe he was just a musician you admired who generously signed what you asked him to sign. Maybe he sent you a friend request out of nowhere, or commented on something you posted in the Jazz Butcher Facebook group. It seems Pat knew everyone, and everyone has a great story about his generosity, his wittiness, and his way of showing up for the people in his life, his friends, his fans, his loved ones. 
+		<p />
+		If you've known about the Jazz Butcher and you've been on Love Bus for years, or if this show is your introduction to Pat's music, welcome. Take a seat, get comfortable. We're going to get through this, because we're going to get through it together.
+		<p />
+		(1:09 - 2:08)
+		I'm Alex Green, and this is Stereo Embers, the podcast. Check this out.
+		<p />
+		[plays: Last of the Gentleman Adventurers]
+		<p />
+		...
+		<p />
+		My god, I almost played the whole thing. Who could blame me? That is the music of the Jazz Butcher, a band which featured my guest today on the program, Pat Fish. 
+		<p />
+		Let me tell you a little bit about the Jazz Butcher and Pat Fish. Over the course of a 40-year career that started in 1982, the London-born and Northampton-raised and Oxford-educated Pat Fish fronted the Jazz Butcher Conspiracy, which then became shortened to the Jazz Butcher, which then became the name that he was associated with. He was the Butcher, and along with co-conspirator and guitarist Max Eider, the band had a rotating cast of characters varying from guys like David Jay of Bauhaus or Rolo from the Woodentops. 
+		<p />
+		The Jazz Butcher put out close to 15 studio albums, several live albums, a handful of compilations, a bunch of box sets, tons of singles. You get the idea. If you're a collector, the Jazz Butcher is the band for you.
+		<p />
+		(5:30 - 6:24)
+		There's lots of stuff. They put out albums on Big Time, Creation, and Glass, and they played with R.E.M., Robin Hitchcock, and Jonathan Richman, and the list just goes on and on and on. Now, I saw them play several times in San Francisco, and it was always sold out. 
+		<p />
+		Always. Not too shabby for an cult band, right? She's on Drugs was probably the closest they came to a mainstream hit, and by the late 90s, things had kind of slowed down a bit for the band. Pat owned a bookshop in Northampton, he played locally a great deal, he hosted the Masters of Budvar live series, and he just kind of chilled out after nearly two decades of frantic touring, late-night drinking, hotel staying, and rock and roll mayhem. 
+		<p />
+		Now, you have to understand, Pat was adored, and never far from those who did all that adoring. He was loved. You can be assured of that.
+		<p />
+		(6:25 - 7:06)
+		And speaking of love, he loved his cat, he loved to read, he loved to drink, he loved to smoke, and he loved to play music. How much did he love playing music? Well, I asked him once if he ever thought about walking away from it all, and he said:
+
+		<div class="iview_a">
+		"To be honest, if I were to walk away from music, what purpose would it serve? Who would suffer? Not music, that's for sure. Only me, really. 
+		Music is one of the few things that I understand at all in this world, so I can't see why I should ever try to take that away from myself."
+		</div>
+		<p />
+		Now, the first time we chatted was in 1988, on the day of my 18th birthday. The Fishcotheque album had just come out, and I was nervous as hell.
+		<p />
+		(7:06 - 7:58)
+		I came home from school at lunch, I holed up in my bedroom, my mom was downstairs, I said, don't make any noise, and I had the breeziest, coolest conversation with the Jazz Butcher. Every second was just pure joy. At the end, I remember he was telling me he was moving, and he'd mentioned this to his cat, and the cat had run away. 
+		<p />
+		Pat was worried that the cat had taken him literally, and thought that Pat was moving, and the cat was going to be staying, they wouldn't be going together. But of course, that wasn't what he meant at all. Pat loved cats, and cats actually show up in some of his songs. 
+		<p />
+		So do other animals, and vampires, and prime ministers, and murdered heads of state, and ghosts, and bicycles, and booze. Pat changed the way I see the world. His humor, his candor, his affable nature, and his grace.
+		<p />
+		(7:58 - 8:16)
+		Those were all rare qualities to be found in the same person. Now, this is one of two interviews that I'll be airing for the podcast with Pat. This one took place when the last of the Gentleman Adventurer's album hit shelves, and the next interview took place fairly recently, and it's close to two hours long.
+		<p />
+		(8:16 - 8:38)
+		It's joyous, it's lovely, and it has some very moving moments that I won't say anything about here, because I want you to experience them for yourself in its purest form. I debated for a long time about when to post the second one, and my thought was, I'll just wait until the new album comes out. But now that I think about it, I wish I'd posted it a few months ago so Pat could be around to hear it.
+		<p />
+		(8:38 - 8:52)
+		I think I kind of screwed that one up. That's the bad news. The good news, I suppose, is that when I do post it, you're going to hear a very intimate conversation with the Butcher that finds him at home and philosophical about the world.
+		<p />
+		(8:52 - 9:03)
+		But let's start with this one. It reminds me of Sinatra in his September of My Years period. Pat's about 52, two years older than Sinatra's 50, and one year older than I am now.
+		<p />
+		(9:03 - 9:15)
+		There's a touch of awareness about the weight of the oncoming years, absolutely. But Pat, he kind of seems comfortable about all that. Years later, he would tell me that his 50s were a blast.
+		<p />
+		(9:15 - 10:29)
+		So think of this as that blast as its beginning. Let's have a conversation with the Butcher, shall we? Here's me and Pat Fish right here on Stereo Embers, the podcast. So I know that you just got off stage. 
+		</div>
+		<p />
+		<div class="iview_q">
+		How was the show tonight?
+		</div>
+		<p />
+		<div class="iview_a">
+		Oh, it was very pleasant. I was on first and I just had an acoustic guitar. And of course, you know, that's Pat in the middle, Josh Ryan. 
+		<p />
+		He has an array of electronics and beats and so forth. And of course, there's Thomas, who built his own instruments. And he does this crazy shit.
+		<p />
+		(10:29 - 10:40)
+		So I felt very kind of, oh, yeah, the conventional old folky bug at the start. I didn't really expect people to be listening. And yeah, they sort of did.
+		</div>
+		<p />
+		(10:40 - 11:01)
+		<div class="iview_q">
+		Well, of course they did, Pat. You do this gracious thing where you insist on sometimes being the opener, where you're at the bottom of the bill, where other people can go and have a more prominent place. How do you like going first?
+		</div>
+		<p />
+		<div class="iview_a">
+		In a way, I like it because you kind of get that anxiety thing out of the way.
+		(11:01 - 11:58)
+		You express yourself and then you can just hang around, watch the music and get drunk, you know? It helps if you're supporting someone that you like. It's really cool also that you stick around. A lot of times people will, you know, they'll open for somebody or they'll be on the bill and then they leave. 
+		</div>
+		<p />
+		<div class="iview_q">
+		But you're not like that. You seem to always stay, which is incredibly supportive and very cool and also very rare.
+		</div>
+		<div class="iview_a">
+		The thing is, you see bands, they put it in their publicity, don't they? It's like, we supported Bauhaus and the Sisters of Mercy. 
+		<p />
+		And as a musician, I look at that and I think, well, it doesn't really matter, does it? Because Bauhaus and the Sisters of Mercy had no say in that. You know, it's just like, you got on those bills. So I can kind of understand if a support band doesn't want to watch the main band or whatever and they just fuck off back home because they want to get to bed and go to work in the morning.
+		<p />
+		(11:58 - 12:18)
+		I can kind of understand that. But to me, it's like these people who need a football match 10 minutes early, you know? Why would you do that? There was a classic one a couple of months ago over here and I forget which one it was. It was a premiership team and they were losing 1-0.
+		<p />
+		(12:20 - 12:37)
+		And the fans were getting really disgusted and they were giving the manager shit. And they started walking out and large numbers of them left in the last five minutes, decided that they'd deserted, equalized, and then won the game. And they missed it.
+		</div>
+		<p />
+		(12:39 - 13:16)
+		<div class="iview_q">
+		It's ridiculous. The last time you and I talked, it was on the occasion of the Fischkotech album. Surely you remember that one?
+		</div>
+		<div class="iview_a">
+		Yeah, I mean, I can remember specific 15-minute tracks of time, pretty much in real time from the making of that thing. 
+		<p />
+		Mostly because I was hopping from foot to foot going, what the hell's going on here? Drugs, terrorism, stop it. I'm trying to make a record. I read an essay recently where the author said that he thinks memory is the clumsiest of editors.
+		</div>
+		<p />
+		(13:17 - 13:50)
+		<div class="iview_q">
+		What do you make of that?
+		</div>
+		<div class="iview_a">
+		Well, I mean, I have to admit, if you drink like I do, you can't expect memory to be that accurate a piece of software, you know? There's something about it. I mean, you know, you play the show and hopefully you play a good roommate season, but I'm not playing a football match. Hopefully you'll do the right thing and you can go away satisfied.
+		<p />
+		(13:51 - 14:26)
+		And then, of course, you're rejoicing and you're knocking back the beers because you've done the work. And if it's one of those awful nights where it hasn't really connected and you've just kind of wasted everybody's time, then, well, you hear a thing, fuck it, I'll have a beer. So inevitably, you know, when you play every night for like five weeks in a row, you can't remember every night. 
+		<p />
+		So, you know, memory becomes the editor. I've done my memories compromised by my own pursuits.
+		</div>
+		<div class="iview_q">
+		Well, to be fair, Pat, you're not Shane McGowan.
+		</div>
+		<p />
+		(14:28 - 14:43)
+		<div class="iview_a">
+		You can tell that because he's talented and sells lots of records. Yeah, but not for the last couple of years, he's not. You know, and, you know, from 10 years before that, people have been sneaking up to me in pubs and getting all conspiratorial in my ear and going, Shane's going to die.
+		<p />
+		(14:44 - 15:19)
+		And it's like, yeah, I can't find where you are. I was talking to Alan McGee a couple of years ago when I was writing my book on The Stone Roses, and he said something that was interesting. He said that in England, for a lot of bands, they don't think of their band as a career. 
+		<p />
+		It's sort of like, you know, kind of a get in, get out kind of a situation. But I look at what you've done since 1982 and I go, well, that's a career. Well, it's a career, but it's a career that wouldn't have been able to fund itself.
+		<p />
+		(15:19 - 16:26)
+		I've done day jobs and, you know, when my mother died, I got lucky and inherited a few quid. So, you know, I've been able to live quite comfortably without having to depend on just music. But on the other hand, it has been the primary income stream since about, I don't know, 85 or something. 
+		<p />
+		So I don't know about career. I mean, the whole idea of a career, it's such a such a postmodern thing, isn't it? It's like, you know, you have a little bit, a little bit of success at doing something, so they promote you to something that you can't do. I'm not really interested. 
+		<p />
+		I'd rather just keep doing something I can do. It's pretty interesting that whole thing about how the record business is, you know. Robert Wyatt, you know, Robert Wyatt, of course. 
+		<p />
+		Of course. Yeah. And there was that extraordinary moment sometime, I think, back into the 70s or the start of the 80s, where he covered I'm a Believer by the Monkeys.
+		<p />
+		(16:27 - 18:03)
+		Now, there was you, Robert. He'd been quietly sailing along, selling like 20,000 records at a time, making back the recording money and just quietly getting on with it. And nobody sacked him because he wasn't losing money and everything was fine. 
+		<p />
+		And then suddenly he has this hit with I'm a Believer. I can't remember the figures, but let's say they sell 200,000. OK. 
+		<p />
+		What happens next? Everyone at the record company and the record company, let's not forget these rough trades, right? Everyone's on him saying, make another record, make another record, make another record. And so he bangs out another single. And actually, that does quite well. 
+		<p />
+		For Robert Wyatt, the man who sells 20,000 records, it does jolly well because he probably sells 160,000. But because it sold less than the last one that sold 200,000, he's a failure. Right. 
+		<p />
+		Right. You know, after 40 years of bubbling away, quietly doing shit and making some great music into the bargain, after 40 years of banging away, suddenly he's a failure because he dared to have a hit once. Because you just basically, I mean, if you operate at the level that people like me and, you know, what people like me operate at, the record company accountants never really see you.
+		<p />
+		(18:05 - 18:09)
+		Right. Right. Do you know what I'm saying? You don't really bubble up into their view.
+		<p />
+		(18:09 - 18:30)
+		You take 20 grand to make a record. The record makes 40 grand. You know, you're down there with paying for the plumber and the electricity bill and stuff like that. 
+		<p />
+		They don't notice.
+		</div>
+		<div class="iview_q">
+		Well, my guess is that you probably don't miss record company people. I mean, I'm not saying you don't need them, but you probably don't need them as much as you used to.
+		</div>
+		<p />
+		(18:30 - 19:57)
+		<div class="iview_a">
+		Hmm. Yeah, it's interesting. I mean, we feel that we've been very lucky with this whole record that we made and like, you know, begging for money on the internet and everyone backing us up and helping out and actually getting the thing out. 
+		<p />
+		Let's see, it's been selling well. I mean, I said to Max, look, we're offering 500 on the pledge. Let's press 500. 
+		<p />
+		And he's going, nah, press more. I'm going, nah, fuck off, man, because 500, if we sell that 500, we're in profit. The whole thing's finished. 
+		<p />
+		No need to talk about it anymore. You know, we've done the record and made a profit. And I guess the thing had been out for about a fortnight when a complete spanner went into the works from Japan, where some distributor ordered, well, he ordered 150. 
+		<p />
+		We told him we'd only got 75. And his response to this was great. I'll take 175. 
+		<p />
+		We ended up repressing immediately. It's quite ridiculous, really, that, you know, we used to sell like 20, 40,000 records every time. And we were still nobody, but we would sell those kind of figures. 
+		<p />
+		And right now we're rejoicing because we've sold 800 LPs. This is the modern world, Alex. This is what you have to put up with.
+		<p />
+		(19:57 - 22:25)
+		But again, by comparison, when Max put out Disaffection last year, he sold about 250. I didn't realize that. Wow. 
+		<p />
+		You know, so you can say, oh, you don't need record companies, but as gatekeepers to the media and so forth, they're still quite important, really.
+		</div>
+		<div class="iview_q">
+		The Jazz Butcher Facebook group can attest that your fans are completely lovely people who remain as devoted to you as ever. And they're just great people. 
+		</div>
+		<p />
+		<div class="iview_a">
+		I love interacting with them. They're incredibly responsive and upfront about how they feel about you and how important you are in their life. And the response for the funding of Gentleman Adventurers through the Pledge Music campaign was pretty incredible. 
+		</div>
+		<p />
+		<div class="iview_q">
+		Were you a little bit nervous when you hit that button and the whole thing became public and, you know, let's go, let's fund this thing? Were you nervous at all?
+		</div>
+		<div class="iview_a">
+		The response was unequivocally great. It was five o'clock tea time on a Friday afternoon when I pressed the button. You know, we'd finally prepared the bid and the little begging video and all the offers. 
+		<p />
+		We've got it all together. And they came to that time to click your mouse and press the button that says go. And I've got to tell you, it was literally five o'clock on a Friday afternoon and I felt great. 
+		<p />
+		Well, we've got like 90 days to raise this money. How depressing is it going to be when six weeks have gone by and we've got like £370, you know? Right. And I thought, well, I don't worry about it. 
+		<p />
+		Life goes on. It's Friday evening, I had my supper, I went down to the pub. And by the time I got down to the pub, there were people with mobile phones there. 
+		<p />
+		And they were going like, man, you're at 50%. And I'm like, fuck off, I only pressed the button four hours ago. And they're going, you're at 50%. 
+		<p />
+		And by midnight, it was getting, it was like someone reporting on a football match. People, some people I didn't even really know were running up to me with mobile phones going, 87%. Now, it's fair to say I was absolutely astonished at the response.
+		<p />
+		(22:26 - 22:55)
+		I mean, we did our best. I mean, like with the gimmicks and the things that we were offering, we were trying to play the game and get people interested and enable people to have things that they wouldn't ever otherwise have. So, you know, like we wouldn't have the record, but hey, they wouldn't have that and nobody else was going to have that. 
+		<p />
+		We were trying to play the game. But we were astonished. We were absolutely astonished.
+		<p />
+		</div>
+		(22:55 - 23:27)
+		<div class="iview_q">
+		Well, it got funded, it got made, and it sounds really, really good.
+		</div>
+		<div class="iview_a">
+		Well, to be fair, we spent some money on it. You know, it's like when we were raising that money, I mean, we wanted, we didn't want to sit around in someone's living room with computers doing like WAV files. 
+		<p />
+		We wanted to go into a room with a drum kit, with an actual tape recorder where the reels went round. And, you know, once you start thinking about that, you start thinking about tape recorders. Oh, that would be a Richard Formby then.
+		<p />
+		(23:28 - 23:47)
+		And we got so lucky. Just like we got lucky with the supporters putting the money in. We were incredibly lucky with the recording window because like Richard's quite a busy man now. 
+		<p />
+		He made a record a couple of years ago with a band called Wild Beast.
+		</div>
+		<div class="iview_q">
+		Right. I love that band.
+		</div>
+		<p />
+		<div class="iview_a">
+		(23:47 - 25:01)
+		Yeah. And they got nominated for a Mercury Prize. And suddenly, Richard, after like 15 years of quietly beavering away in his studio, was like a professional producer with a manager and all this shit, right? And they sent him all these fashionable young bands to see if he could cope with them. 
+		<p />
+		I'm talking about Egyptian hip hop. He said they were like little monkeys that were running all over the studio and he did two or three days of these buggers and he got the record done and he sent them back. And the management went, yeah, we just sent them to see if you could cope with them. 
+		<p />
+		But that's probably gossip. I probably shouldn't say that. Anyway, it was great to catch Richard because he's really busy. 
+		<p />
+		And Johnny and Tim, the drummer and the bass player, and they're both good, dear friends, but they're also both top musicians. And, you know, Johnny could be in Portugal with Massive Attack or Tim could be in Venezuela with Eno. And the chance of getting those two and time in Richard's studio at the same time was so remote.
+		<p />
+		(25:01 - 26:50)
+		And we did it. It was like, you know, well, the money happened by magic and then the timing happened by magic. And so the vibe, when we finally got in the studio and just sat down to play, it was like, well, we can do anything we like. 
+		<p />
+		You know, the gods are on our side this week. I should think about somewhere between a third and a half of those songs, the kind of drums, bass, rhythm, guitar shit. It's all first take. 
+		<p />
+		It's the only time those four people played that song. And we were down for that. We wanted that relaxed vibration. 
+		<p />
+		We wanted it to sound like something that could have been our island records in 1975, but was still cool when punk happened. Because this is a fan funded album, was there pressure where you really wanted to nail it for them? To be honest with you, because it kind of came out of nowhere. The whole idea of doing it came out of nowhere and everything was so easy to make it happen. 
+		<p />
+		You know, it was it was like it was supposed to happen. It was like the steps of the yellow brick road were just falling under our feet. And so we were kind of we didn't really feel high stakes about it at all. 
+		<p />
+		We felt quite relaxed about it, which I guess shows when I hear Animals on the record, which I did about an hour ago. I'm like, whoa, man, it's just a date version. I played it night life and me on my own. 
+		<p />
+		It's a whole lot punkier than it is on the record. But that is the record, you know, there are only postcards. And by the way, Animals is the perfect opener for this album.
+		<p />
+		(26:50 - 27:12)
+		</div>
+		<div class="iview_q">
+		It was.
+		</div>
+		<div class="iview_a">
+		Yeah, I was I was the only person out of the five of us out, Johnny, Tim, Richard, Max and me. I was the only one who was going, oh, I don't know, should we open with that? But they were all going, no, fuck off. 
+		<p />
+		You've got to start with Animals. And in the end, it's just John, you're just going on that floor. Yeah, come on.
+		<p />
+		</div>
+		(27:13 - 29:11)
+		<div class="iview_q">
+		Now, to my ear, this album is very novelistic. There's a beginning, there's a middle and there's an end. Did you labor over the sequencing?
+		</div>
+		<div class="iview_a">
+		We, all the time we were making it, we had this fantasy that we could somehow distinguish side one and side two. 
+		<p />
+		Like an old, like a real record, you know? Closing the album with Saints Prayer was genius, but also, I think, the obvious choice to to end things. Yeah, it really had to be. And when I'm talking about side one and side two, of course, in the end, we did nothing. 
+		<p />
+		It's just a CD and the songs just go blah, blah, blah. You know, we thought about putting vinyl noise between the end of Count Me Out and the beginning of All The Saints. But the idea is that side two, yeah, you start with All The Saints and then you get to the end with the reprise set. 
+		<p />
+		And yeah, that that fucker, that totally writes itself. I think it was always going to be the last time. Well, you see, this is why we have side one and side two, because there was always going to be a fight for the last song between Saints Prayer and Count Me Out. 
+		<p />
+		And in a way, I kind of like Count Me Out there, but I guess Max, he might be a little bit wary of getting that last spot on the record thing, like as a cliche, like, you know, sex and travel and, you know, maybe he was concerned about that. But anyway, the thing writes itself. So the idea is that side two starts with All The Saints and ends with The Saints Prayer. 
+		</div>
+		<p />
+		<div class="iview_q">
+		Was this batch of songs all written around the same time, or were some hanging around for a while?
+		</div>
+		<div class="iview_a">
+		No, some of them have been around for quite some time. I think I started playing Shakey in about 2004. Shame About You came a little after that.
+		<p />
+		(29:14 - 29:59)
+		I don't know, some of them are more recent, Gent Advent and Shakey, or they're quite recent. But yeah, I mean, I was kind of calling on quite a few years because, you know, we just hadn't recorded anything. It all started, Max just emailed me and said, hey, 30 year anniversary, let's do a world tour. 
+		<p />
+		And I'm like, fuck off, you mad lunatic. He's sitting there, he's got a job, and he's got a house and he lives up there now on the Scottish borders in the middle of nowhere. And he's always joking about me, you know, like, oh Pat, I'll go and play to like three people.
+		</div>
+		<p />
+		......
+		30 more minutes exist
+		)}
+	)}
+#live	endif
+
 #define	19901109_press_guelph.html
 #live	if (getval(page) = 19901109_press_guelph.html)
 	${extractPress(

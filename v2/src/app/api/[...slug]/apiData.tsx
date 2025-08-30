@@ -287,7 +287,6 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			 */
 			case 'release_video_by_project':
 			case 'live_video_by_project':
-			case 'presses_for_admin':
 			case 'recent_feedback':
 			case 'feedbacks':
 			case 'feedback_by_page': {

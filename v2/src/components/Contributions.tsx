@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { summaryBodySearch, removeHTML } from '@/components/GenericWeb';
 import useContributions from '@/lib/useContributions';
-import { type HashedType, pluralize, dateAgo, ts2URI } from '@/lib/utils';
+import { type HashedType, pluralize, dateAgo, ts2URI, parseCredit } from '@/lib/utils';
 import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
 import PressCards from '@/components/PressCards';
@@ -36,7 +36,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 		return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
 			{(!!photos?.length) ? <PhotoSet title=<Link href={ts2URI(datetime)}>{datetime?.substring(0, 10)}: {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>  photos={photos?.filter((f: any) => f?.added == added)} /> : 
 			<>
-			<Link className="monospace" href={href} >{datetime?.substring(0, 10)}</Link> {pluralize(count, type, undefined, true)} {summary && `"${summary}"`} {dateAgo(added,' - ',`added: ${added} - `)}
+			<Link className="monospace" href={href} >{datetime?.substring(0, 10) || summary}</Link> {pluralize(count, type, undefined, true)} {summary && `"${summary}"`} {dateAgo(added,' - ',`added: ${added} - `)}
 			</>}
 		</div>
 	}
@@ -92,7 +92,7 @@ const prettyType = (type: string, t?: string) => {
 const Contributions = ({ options, label='Community contribution' }: HashedType) => {
 	const { data, isLoading, error} = useContributions(options);
 	if (!data) return;
-	const { gigmedia, gigtext, gigsong, press, inpress } = data || {};
+	const { gigmedia, gigtext, gigsong, press, inpress, lyric } = data || {};
 	const contributions: HashedType = {};
 	const recent = [ gigmedia?.results[0]?.credit_date, gigsong?.results[0]?.added, gigtext?.results[0]?.credit_date, press?.results[0]?.dtadded]?.sort((a: any, b: any) => b?.localeCompare(a))[0];
 	let total = 0;
@@ -154,6 +154,18 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				datetime: r?.dtpublished,
 				summary: [r?.publication, r?.issue, r?.title, r?.headline]?.filter((x: string) => x)?.join(' - ')?.substring(0, 50) + '...',
 				href: r?.url,
+			}
+		);
+	});
+	lyric?.results?.forEach(({ tablature_credit, title, href }: any) => {
+		const { credit, crediturl, creditdate, creditcaption } = parseCredit(tablature_credit);
+		addInfo(contributions,
+			{
+				person: credit,
+				type: 'Song Tablature',
+				added: creditdate,
+				summary: title,
+				href: `/lyrics/${href}`,
 			}
 		);
 	});

@@ -155,7 +155,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 					type: 'Press Item Image',
 					added: mediacreditdate || r?.dtpublished,
 					summary: caption,
-					href: file + '.jpg',
+					href: r?.url
 				}
 			);
 		});
@@ -166,7 +166,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 					type: 'Press Item Audio',
 					added: mediacreditdate || r?.dtpublished,
 					summary: caption,
-					href: file,
+					href: r?.url
 				}
 			);
 		});

@@ -92,7 +92,7 @@ const prettyType = (type: string, t?: string) => {
 const Contributions = ({ options, label='Community contribution' }: HashedType) => {
 	const { data, isLoading, error} = useContributions(options);
 	if (!data) return;
-	const { gigmedia, gigtext, gigsong, press, pressmedia, inpress, lyric } = data || {};
+	const { gigmedia, gigtext, gigsong, press, pressmedia, media, inpress, lyric } = data || {};
 	const contributions: HashedType = {};
 	const recent = [ gigmedia?.results[0]?.credit_date, gigsong?.results[0]?.added, gigtext?.results[0]?.credit_date, press?.results[0]?.dtadded]?.sort((a: any, b: any) => b?.localeCompare(a))[0];
 	let total = 0;
@@ -130,6 +130,20 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		);
 	});
 
+	media?.results?.forEach((r: any) => {
+		addInfo(contributions,
+			{
+				person: r?.credit,
+				type: prettyType(r?.type, r?.subtype || ''),
+				added: r?.credit_date,
+				datetime: r?.datetime,
+				summary: r?.name,
+				href: ts2URI(r?.datetime),
+				image: r?.image,
+			}
+		);
+	});
+
 	gigmedia?.results?.forEach((r: any) => {
 		addInfo(contributions,
 			{
@@ -154,7 +168,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				href: r?.href,
 				image: r?.image,
 				audio: r?.audio,
-				caption: r?.caption,
+				summary: r?.caption,
 			}
 		);
 	});

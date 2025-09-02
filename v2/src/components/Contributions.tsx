@@ -152,7 +152,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 			addInfo(contributions,
 				{
 					person: mediacredit || r?.credit,
-					type: prettyType('image', 'press'),
+					type: prettyType('image', caption || 'press'),
 					added: mediacreditdate || r?.dtpublished,
 					summary: caption,
 					image: file,

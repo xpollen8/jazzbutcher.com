@@ -146,8 +146,6 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	});
 
 	press?.results?.forEach((r: any) => {
-	});
-	press?.results?.forEach((r: any) => {
 		const audio = parseCaptionsSourcesEtc(r?.audio);
 		const images = parseCaptionsSourcesEtc(r?.images);
 		images?.map(([ file, caption, mediacredit, mediacreditdate ]: any) => {

@@ -372,7 +372,7 @@ const Content = ({ gig }: { gig: any }) => {
 	// joins.press_* (press table)
 	gig?.press?.forEach((t: any) => {
 		if (t.url?.includes('/press')) {
-			const types = t.type.split(',');
+			const types = t.type.split(/[;,]/);
 			types.forEach((tt: string) => {
 				//const nameIt = `press_${tt}`;
 				const nameIt = `press_gig`;

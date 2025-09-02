@@ -10,7 +10,7 @@ import { AutoLinkPlayer, expand } from '@/lib/defines';
 
 const PressItem = ({ item }: { item: any }) => {
 	const ArticleInfoBox = ({ article }: any) => {
-		const types = article?.type?.split(';');	// pat,gig,wilson (etc);
+		const types = article?.type?.split(/[;,]/);	// pat,gig,wilson (etc);
 		const projects = ['wilson','sumo','eg'];
 		const project = (projects.filter((pro: string) => types?.includes(pro)) || [])[0] || '';
 		const doItem = (label: string, value?: string | React.ReactNode) => {

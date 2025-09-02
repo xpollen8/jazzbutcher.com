@@ -148,7 +148,6 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	press?.results?.forEach((r: any) => {
 		const audio = parseCaptionsSourcesEtc(r?.audio);
 		audio?.map(([ file, caption, mediacredit, mediacreditdate ]: any) => {
-			console.log("ADDED", [ file, caption, mediacredit, mediacreditdate ]);
 			addInfo(contributions,
 				{
 					person: mediacredit || r?.credit,

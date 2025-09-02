@@ -146,7 +146,21 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	});
 
 	press?.results?.forEach((r: any) => {
+	});
+	press?.results?.forEach((r: any) => {
 		const audio = parseCaptionsSourcesEtc(r?.audio);
+		const images = parseCaptionsSourcesEtc(r?.images);
+		images?.map(([ file, caption, mediacredit, mediacreditdate ]: any) => {
+			addInfo(contributions,
+				{
+					person: mediacredit || r?.credit,
+					type: 'Press Item Image',
+					added: mediacreditdate || r?.dtpublished,
+					summary: caption,
+					href: file + '.jpg',
+				}
+			);
+		});
 		audio?.map(([ file, caption, mediacredit, mediacreditdate ]: any) => {
 			addInfo(contributions,
 				{
@@ -158,8 +172,6 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				}
 			);
 		});
-	});
-	press?.results?.forEach((r: any) => {
 		addInfo(contributions,
 			{
 				person: r?.credit,

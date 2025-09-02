@@ -26,7 +26,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 	const showData = (x: any, key: number) => {
 		const { count, type, datetime, added, summary, href } = x;
 		const typeIsImage = (type?.includes('photo') || type?.includes('image'));
-		const photos = (!typeIsImage) ? [] : contributions?.filter((c: any) => c?.type == type && c?.datetime === datetime)?.map((c: any) => {
+		const photos = (!typeIsImage) ? [] : contributions?.filter((c: any) => c?.type == type && c?.datetime === datetime && c?.href === href)?.map((c: any) => {
 			return {
 				src: c?.image,
 				added: c?.added,
@@ -92,7 +92,7 @@ const prettyType = (type: string, t?: string) => {
 const Contributions = ({ options, label='Community contribution' }: HashedType) => {
 	const { data, isLoading, error} = useContributions(options);
 	if (!data) return;
-	const { gigmedia, gigtext, gigsong, press, press_audio, inpress, lyric } = data || {};
+	const { gigmedia, gigtext, gigsong, press, pressmedia, inpress, lyric } = data || {};
 	const contributions: HashedType = {};
 	const recent = [ gigmedia?.results[0]?.credit_date, gigsong?.results[0]?.added, gigtext?.results[0]?.credit_date, press?.results[0]?.dtadded]?.sort((a: any, b: any) => b?.localeCompare(a))[0];
 	let total = 0;
@@ -145,43 +145,21 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		);
 	});
 
-	press?.results?.forEach((r: any) => {
-		const audio = parseCaptionsSourcesEtc(r?.audio);
-		const images = parseCaptionsSourcesEtc(r?.images);
-		images?.map(([ file, caption, mediacredit, mediacreditdate ]: any) => {
-			addInfo(contributions,
-				{
-					person: mediacredit || r?.credit,
-					type: prettyType('image', caption || 'press'),
-					added: mediacreditdate || r?.dtpublished,
-					summary: caption,
-					image: file,
-					href: r?.url
-				}
-			);
-		});
-		audio?.map(([ file, caption, mediacredit, mediacreditdate ]: any) => {
-			addInfo(contributions,
-				{
-					person: mediacredit || r?.credit,
-					type: 'Press Item Audio',
-					added: mediacreditdate || r?.dtpublished,
-					summary: caption,
-					href: r?.url
-				}
-			);
-		});
+	pressmedia?.results?.forEach((r: any) => {
 		addInfo(contributions,
 			{
 				person: r?.credit,
-				type: 'press',
-				added: r?.dtadded,
-				datetime: r?.dtpublished,
-				summary: [r?.publication, r?.issue, r?.title, r?.headline]?.filter((x: string) => x)?.join(' - ')?.substring(0, 50) + '...',
-				href: r?.url,
+				type: prettyType(r?.type, 'Press article'),
+				added: r?.credit_date,
+				href: r?.href,
+				image: r?.image,
+				audio: r?.audio,
+				summary: "hello",
+				caption: r?.caption,
 			}
 		);
 	});
+
 	lyric?.results?.forEach(({ tablature_credit, title, href }: any) => {
 		const { credit, crediturl, creditdate, creditcaption } = parseCredit(tablature_credit);
 		addInfo(contributions,

@@ -5,7 +5,7 @@ import * as XLSX from 'xlsx';
 
 import { personName } from '@/lib/defines';
 import { removeHTML } from '@/components/GenericWeb';
-import { localDate, returnResults, type HashedType, type CommentType } from '@/lib/utils';
+import { parseCaptionsSourcesEtc, localDate, returnResults, type HashedType, type CommentType } from '@/lib/utils';
 
 import gigsongsStatic from '@/../public/data/gigsongs.json';
 import gigmediasStatic from '@/../public/data/gigmedias.json';
@@ -146,7 +146,7 @@ const forceDT = (dt?: string): string => {
 	if (!dt) return '';
 	const [ useDT ] = dt.split(' ');
 	if (!useDT) return '';
-	return new Date(Date.parse(useDT?.replace(/-00/g, '-01'))).toISOString().substring(0, 10);
+	return new Date(Date.parse(useDT?.replace(/-00/g, '-01')))?.toISOString().substring(0, 10);
 }
 
 // @ts-ignore
@@ -276,7 +276,10 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			 */
 			case 'feedback_delete': { return await apiDataFromDataServer(path, args); }
 			case 'feedback_by_page': { return await apiDataFromDataServer('feedback', args); }
-			case 'recent_feedback': { return await apiDataFromDataServer('feedbacks', JSON.stringify(args)); }
+			case 'recent_feedback': {
+					const feedbacks = await apiDataFromDataServer('feedbacks', JSON.stringify(args));
+					return findRecent(feedbacks, ['dtcreated'], {});
+			}
 
 			/*
 				static file lookups
@@ -290,6 +293,54 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'medias': { return mediasStatic; }
 			case 'performances': { return performancesStatic; }
 			case 'presses': { return pressesStatic; }
+			case 'pressmedias': {
+				return returnResults(pressesStatic.results.map((p: any) => {
+					const { audio, images, thumb } = p;
+					const au = [];
+					const im = [];
+					if (audio) {
+						parseCaptionsSourcesEtc(audio)?.forEach(([ audio, caption, credit, credit_date ]: any) => {
+							au.push({
+								type: 'audio',
+								caption,
+								href: p?.url,
+								audio,
+								credit: credit || p.credit,
+								credit_date: credit_date || p.dtadded || p.dtpublished,
+							});
+						});
+					}
+					if (images) {
+						parseCaptionsSourcesEtc(images)?.forEach(([ image, credit, credit_url, credit_date, caption ]: any) => {
+							if (!im.find((i: any) => i.image === image)) {
+								im.push({
+									type: 'image',
+									caption,
+									image,
+									href: p?.url,
+									credit: credit || p.credit,
+									credit_date: credit_date || p.dtadded || p.dtpublished,
+								});
+							}
+						});
+					}
+					if (thumb) {
+						parseCaptionsSourcesEtc(thumb)?.forEach(([ image, credit, credit_url, credit_date, caption ]: any) => {
+							if (!im.find((i: any) => i.image === image)) {
+								im.push({
+									type: 'image',
+									caption,
+									image,
+									href: p?.url,
+									credit: credit || p.credit,
+									credit_date: credit_date || p.dtadded || p.dtpublished,
+								});
+							}
+						});
+					}
+					return [...au, ...im];
+				}).flat());
+			}
 			case 'releases': { return releasesStatic; }
 
 			/*
@@ -493,18 +544,29 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
 				})));
 			}
+			case 'pressmedia_contributions': {
+				const pressmedias = await apiData('pressmedias');
+				return returnResults(pressmedias?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
+					...g,
+					credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
+				})));
+			}
 			case 'contributions': {
+				const media = await apiData('media_contributions', args);
 				const gigmedia = await apiData('gigmedia_contributions', args);
 				const gigsong = await apiData('gigsong_contributions', args);
 				const gigtext = await apiData('gigtext_contributions', args);
 				const press = await apiData('press_contributions', args);
+				const pressmedia = await apiData('pressmedia_contributions', args);
 				const inpress = await returnFilteredPath('presses', 'body', args?.filter?.value, false);
 				const lyric = await returnFilteredPath('lyrics', 'tablature_credit', args?.filter?.value, false);
 				return {
+					media: findRecent(media, ['credit_date'], makeOptions(args, 'gigmedia')),
 					gigmedia: findRecent(gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
 					gigsong: findRecent(gigsong, ['added'], makeOptions(args, 'gigsong')),
 					gigtext: findRecent(gigtext, ['credit_date'], makeOptions(args, 'gigtext')),
 					press: findRecent(press, ['dtadded'], makeOptions(args, 'press')),
+					pressmedia: findRecent(pressmedia, ['credit_date'], makeOptions(args, 'pressmedia')),
 					inpress,
 					lyric,
 				}

@@ -154,7 +154,6 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				href: r?.href,
 				image: r?.image,
 				audio: r?.audio,
-				summary: "hello",
 				caption: r?.caption,
 			}
 		);

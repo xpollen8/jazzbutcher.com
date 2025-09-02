@@ -150,9 +150,9 @@ export const RenderHTML = ({ body, className, children }: { body?: string, class
 
 
 export const summaryBodySearch = (body: string, name: string, window: number = 100) => {
-	if (!body) return '';
-	const useBody = removeHTML(body)?.replace(/<br\/>/g, '') || '';
-	const first = useBody.toLowerCase().indexOf(name.toLowerCase());
+	if (!body || !name) return '';
+	const useBody = (removeHTML(body)?.replace(/<br\/>/g, '')) || '';
+	const first = useBody.toLowerCase().indexOf(name?.toLowerCase());
 	const begin = (first > window) ? first - window : first;
 	return `...` + useBody.substring(begin, begin + (window * 2)) + `...`;
 }

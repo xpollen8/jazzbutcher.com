@@ -36,8 +36,8 @@ const Press = (props: any) => {
 		];
 
 	const filterRecord = (p: any) => {
-		if (p.title.includes('Punter Gig Review')) return false;
-		if (p.title.includes("Pat's Gig Review")) return false;
+		if (p?.title?.includes('Punter Gig Review')) return false;
+		if (p?.title?.includes("Pat's Gig Review")) return false;
 		if (!filtersUsed.length) return true;
 
 		return filtersUsed.split(',').some((f: string) => {
@@ -98,7 +98,7 @@ const Press = (props: any) => {
 					>
 						<option key={-1} value={''}>-- choose --</option>
 						{presses?.map((p: any, key: number) => {
-							return <option key={key} value={p.press_id}>#{p.press_id} : {p.dtpublished.substr(0, 10)} : {parseProject(p.type)} {p.title} : {p.publication}</option>
+							return <option key={key} value={p.press_id}>#{p.press_id} : {p.dtpublished.substring(0, 10)} : {parseProject(p.type)} {p?.title} : {p.publication}</option>
 						})}
 					</select>
 					{(pressID) && (() => {

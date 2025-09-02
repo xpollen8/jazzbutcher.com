@@ -19,17 +19,6 @@ import releasesStatic from '@/../public/data/releases.json';
 
 const cache: HashedType = {};
 
-const censorEmail = (str?: string) => {
-	if (!str) return;
-	const [ addr, fqdn ] = str?.split('@');
-	if (!fqdn) return str;
-	const parts = fqdn?.split('.');
-	const top = parts.pop();
-	const domain = parts.join('.');
-	const blank = new Array(domain.length + Math.floor(Math.random() * 4)).join( '.' );
-	return addr + '@' + blank + '.' + top;
-}
-
 const deHTDBifyText = (v?: string) => v?.replace(/&#34;/g, "'").replace(/&#39;/g, "'").replace(/&#41;/g, ")").replace(/&#36;/g, "$").replace(/YourTown,/, '').replace(/USofA/, '').replace(/\n/g, '<p />').replace(/\\t/g, ' ').replace(/&#92;/g, '').replace(/&#61;/g, '=').replace(/&#35;/g, '@').replace(/\[at\]/g, '@').replace(/-remove-/g, '').replace(/\[remove\]/g, '@').replace(/&amp;/g, '&').replace(/&eacute;/g, 'é').replace(/&oacute;/g, 'ó').replace(/&ntilde;/g, 'ñ').replace(/&auml;/g, 'ä').replace(/&Delta;/g, 'Δ').replace(/&Sigma;/g, 'Σ').replace(/â€ž/g, '&quot;').replace(/â€œ/g, '&quot;').replace(/â€“/g, '-').replace(/â€™/g, "'") .replace(/â€/g, '&quot;')|| '';
 
 const fetchOptions = (url: string) => {
@@ -283,24 +272,11 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 	} else {
 		switch (path) {
 			/*
-				live db lookups
+				feedback needs live db lookups
 			 */
-			case 'release_video_by_project':
-			case 'live_video_by_project':
-			case 'presses_for_admin':
-			case 'recent_feedback':
-			case 'feedbacks':
-			case 'feedback_by_page': {
-				const { results } = await apiDataFromDataServer('feedback', args);
-				return returnResults(results?.map((r: CommentType) => ({
-						...r,
-						who: censorEmail(r?.who),
-					}
-				)));
-			}
-			case 'feedback_delete': {
-				return await apiDataFromDataServer(path, args);
-			}
+			case 'feedback_delete': { return await apiDataFromDataServer(path, args); }
+			case 'feedback_by_page': { return await apiDataFromDataServer('feedback', args); }
+			case 'recent_feedback': { return await apiDataFromDataServer('feedbacks', JSON.stringify(args)); }
 
 			/*
 				static file lookups
@@ -311,6 +287,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'gigsongs': { return gigsongsStatic; }
 			case 'gigtexts': { return gigtextsStatic; }
 			case 'lyrics': { return lyricsStatic; }
+			case 'medias': { return mediasStatic; }
 			case 'performances': { return performancesStatic; }
 			case 'presses': { return pressesStatic; }
 			case 'releases': { return releasesStatic; }
@@ -352,6 +329,19 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			/*
 				more complex lookups
 			 */
+			case 'release_video_by_project': {	//   { noun: "release_video_by_project", key: 'project', query: "select * from media where ? and type='video' order by collection, ordinal" },
+				const { results } = await apiData('medias');
+				return returnResults(results
+					?.filter((p: HashedType) => p?.project === args && p?.type === 'video' && !p?.datetime)
+					?.sort((a: HashedType, b: HashedType) => a?.collection?.localeCompare(b?.collection) || a?.ordinal - b?.ordinal));
+			}
+			case 'live_video_by_project': {		// { noun: "live_video_by_project", key: 'project', query: "select * from media where ? and type='video' and datetime <> '0000-00-00 00:00:00' order by collection, ordinal" },
+				// no actual results right now
+				const { results } = await apiData('medias');
+				return returnResults(results
+					?.filter((p: HashedType) => p?.project === args && p?.type === 'video' && p?.datetime)
+					?.sort((a: HashedType, b: HashedType) => a?.collection?.localeCompare(b?.collection) || a?.ordinal - b?.ordinal));
+			}
 			case 'audio_by_project': {
 				const gigs = gigsStatic?.results?.filter((g: HashedType) => g?.extra?.includes(args));
 				return joinOn("datetime", gigs || [], gigsongsStatic?.results?.filter((gs: HashedType) => gs?.mediaurl?.length) || []);

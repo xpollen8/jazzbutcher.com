@@ -105,10 +105,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	masters_of_budvar: { parent: 'projects', title: 'The Masters of Budvar', inParentDirectory: true },
 	bookstore: { parent: 'projects', title: "Pat's Bookstore", inParentDirectory: true },
 
-	/*
-	mrblagdon: { parent: 'projects', title: 'Mr. Blagdon', inParentDirectory: true },
-	*/
-
+	admin: { parent: 'jbc', title: "Website Management", summary: "Someday..", hide: true },
 	gallery: { parent: 'conspirators', title: 'Gallery', summary: "Photography from all eras"  },
 	//'gallery/mitch_jenkins': { parent: 'gallery', title: 'Mitch Jenkins' },
 	'gallery/mick_mercer': { parent: 'gallery', title: 'Mick Mercer' },
@@ -147,7 +144,6 @@ const sections : { [key: string]: BreadCrumb } = {
 //	jazz_insects: { parent: 'prejbc', title: 'Jazz Insects', summary: "1982", inParentDirectory: true, body: "Matt Black, Mark Sinker, Max Eider, Pat Fish" },
 
 	etc: { parent: 'jbc', title: 'Etc', summary: 'Ancient website content', rootHideChildren: true },
-	//admin: { parent: 'jbc', title: "Website Management", hide: false },
 	'https://v1.jazzbutcher.com': { parent: 'jbc', title: "Old site", hide: false },
 }
 

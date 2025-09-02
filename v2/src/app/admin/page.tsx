@@ -9,6 +9,7 @@ const options = [
 	{ uri: '/admin/conspirator', text: 'Manage Conspirators' },
 	{ uri: '/admin/gig', text: 'Manage Gigs' },
 	{ uri: '/admin/release', text: 'Manage Releases' },
+	{ uri: '/admin/gigsong', text: 'Manage GigSongs' },
 	{ uri: '/admin/performance', text: 'Manage Performances' },
 	{ uri: '/admin/song', text: 'Manage Songs' },
 	{ uri: '/admin/defines', text: 'Manage Global defines' },

@@ -83,8 +83,6 @@ const Conspirator = ({ params }: { params?: any }) => {
 	return <>
 		<Header section="conspirators" title={name} />
 		<main>
-			{/*<Tag>{name}</Tag>
-			This is a work in progress.. */}
 			<Loading isLoading={isLoading} >
 				<AKA aliases={known?.aliases?.filter((a: string) => a !== conspirator)} />
 				<Releases releases={releases} name={name} />

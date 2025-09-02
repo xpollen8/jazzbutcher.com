@@ -544,6 +544,19 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
 				})));
 			}
+			case 'media_contributions': {
+				const medias = await apiData('medias');
+				return returnResults(medias?.results?.filter((g: any) => args?.all || (g?.credit?.length))?.map((g: any) => {
+					return parseCaptionsSourcesEtc(g?.credit)?.map(([ credit, credit_url, credit_date ]: any) => {
+						return {
+							...g,
+							credit: credit || '-UNKNOWN-',
+							credit_url,
+							credit_date
+						}
+					});
+				})?.flat()?.filter((f: any) => f)?.filter(({ credit }: any) => credit));
+			}
 			case 'pressmedia_contributions': {
 				const pressmedias = await apiData('pressmedias');
 				return returnResults(pressmedias?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
@@ -561,7 +574,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const inpress = await returnFilteredPath('presses', 'body', args?.filter?.value, false);
 				const lyric = await returnFilteredPath('lyrics', 'tablature_credit', args?.filter?.value, false);
 				return {
-					media: findRecent(media, ['credit_date'], makeOptions(args, 'gigmedia')),
+					media: findRecent(media, ['credit_date'], makeOptions(args, 'media')),
 					gigmedia: findRecent(gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
 					gigsong: findRecent(gigsong, ['added'], makeOptions(args, 'gigsong')),
 					gigtext: findRecent(gigtext, ['credit_date'], makeOptions(args, 'gigtext')),

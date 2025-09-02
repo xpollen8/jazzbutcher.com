@@ -10,7 +10,7 @@ import { AutoLinkPlayer, expand } from '@/lib/defines';
 
 const PressItem = ({ item }: { item: any }) => {
 	const ArticleInfoBox = ({ article }: any) => {
-		const types = article?.type?.split(',');	// pat,gig,wilson (etc);
+		const types = article?.type?.split(';');	// pat,gig,wilson (etc);
 		const projects = ['wilson','sumo','eg'];
 		const project = (projects.filter((pro: string) => types?.includes(pro)) || [])[0] || '';
 		const doItem = (label: string, value?: string | React.ReactNode) => {
@@ -66,9 +66,9 @@ const PressItem = ({ item }: { item: any }) => {
 			const audio = parseCaptionsSourcesEtc(article?.audio);
 			if (audio?.length) {
 				return (<>
-					{audio?.map(([ file, caption, mediacredit ]: any, key: number) => {
+					{audio?.map(([ file, caption, mediacredit, mediacreditdate ]: any, key: number) => {
 						const [ title, ordinal, version ] = caption?.split('::') || [];
-						return <EmbedMedia key={key} data={{ mediaurl: file, title, ordinal, comment: version, mediacredit: mediacredit || article?.credit, author: article?.publication, datetime: article?.dtpublished, autolink: true }} />
+						return <EmbedMedia key={key} data={{ mediaurl: file, title, ordinal, comment: version, mediacredit: mediacredit || article?.credit, mediacreditdate: mediacreditdate, author: article?.publication, datetime: article?.dtpublished, autolink: true }} />
 					}
 					)}
 					<p />

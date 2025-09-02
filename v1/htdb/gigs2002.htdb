@@ -523,7 +523,7 @@
 	${gigHeader(
 		cost=,
 		who=${literalizeCommas(
-			${pat}, ${max}, ${richard}
+			${pat}, ${max}
 		)},
 		with=${literalizeCommas(
 		)},

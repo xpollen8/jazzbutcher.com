@@ -1951,14 +1951,16 @@ subhead=(20 December 1957 – 5 October 2021),
 		dtadded=2017-07-30,
 		dtpublished=1995)}
 
-	${addPress(type=interview,
+	${addPress(type=interview;gig, person=pat_fish;max_eider,
 		url=${jbc_press}/2002_apollox.html,
+		audio=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/20020418_PatFishMaxEider_interview_brooksbank.mp3;;The Interview;;;;2025-09-01,
 		publication=Apollox Magazine,
 		title=The Jazz Butcher versus Max Eider...,
 		headline=(a slight return),
 		summary=A lengthy Pat & Max tag-team interview,
 		location=UK,
 		credit=Andrew Brooksbank,
+		datetime=2002-04-18,
 		dtpublished=2002-04)}
 
 	${addPress(type=interview,

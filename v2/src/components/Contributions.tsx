@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { summaryBodySearch, removeHTML } from '@/components/GenericWeb';
 import useContributions from '@/lib/useContributions';
-import { type HashedType, pluralize, dateAgo, ts2URI, parseCredit } from '@/lib/utils';
+import { type HashedType, parseCaptionsSourcesEtc, pluralize, dateAgo, ts2URI, parseCredit } from '@/lib/utils';
 import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
 import PressCards from '@/components/PressCards';
@@ -92,7 +92,7 @@ const prettyType = (type: string, t?: string) => {
 const Contributions = ({ options, label='Community contribution' }: HashedType) => {
 	const { data, isLoading, error} = useContributions(options);
 	if (!data) return;
-	const { gigmedia, gigtext, gigsong, press, inpress, lyric } = data || {};
+	const { gigmedia, gigtext, gigsong, press, press_audio, inpress, lyric } = data || {};
 	const contributions: HashedType = {};
 	const recent = [ gigmedia?.results[0]?.credit_date, gigsong?.results[0]?.added, gigtext?.results[0]?.credit_date, press?.results[0]?.dtadded]?.sort((a: any, b: any) => b?.localeCompare(a))[0];
 	let total = 0;
@@ -145,6 +145,21 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		);
 	});
 
+	press?.results?.forEach((r: any) => {
+		const audio = parseCaptionsSourcesEtc(r?.audio);
+		audio?.map(([ file, caption, mediacredit, mediacreditdate ]: any) => {
+			console.log("ADDED", [ file, caption, mediacredit, mediacreditdate ]);
+			addInfo(contributions,
+				{
+					person: mediacredit || r?.credit,
+					type: 'Press Item Audio',
+					added: mediacreditdate || r?.dtpublished,
+					summary: caption,
+					href: file,
+				}
+			);
+		});
+	});
 	press?.results?.forEach((r: any) => {
 		addInfo(contributions,
 			{

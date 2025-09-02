@@ -296,8 +296,8 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'pressmedias': {
 				return returnResults(pressesStatic.results.map((p: any) => {
 					const { audio, images, thumb } = p;
-					const au = [];
-					const im = [];
+					const au: any[] = [];
+					const im: any[] = [];
 					if (audio) {
 						parseCaptionsSourcesEtc(audio)?.forEach(([ audio, caption, credit, credit_date ]: any) => {
 							au.push({

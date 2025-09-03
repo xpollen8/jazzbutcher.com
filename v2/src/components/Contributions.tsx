@@ -25,7 +25,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 
 	const showData = (x: any, key: number) => {
 		const { count, type, datetime, added, summary, caption, href } = x;
-		const typeIsImage = (type?.includes('photo') || type?.includes('image'));
+		const typeIsImage = type?.includes('image');
 		const photos = (!typeIsImage) ? [] : contributions?.filter((c: any) => c?.type == type && c?.datetime === datetime && c?.href === href)?.map((c: any) => {
 			return {
 				src: c?.image,

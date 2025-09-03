@@ -41,10 +41,11 @@ const Miracles = () =>
 	<Tag>The Interviews</Tag>
 	<blockquote>
 	{interviews.map((i: any, key: number) => (<div key={key} className="listItem">
-		#{i.number} - <b>{i.title}</b> - <span className="smalltext">({i.location}, {i.date})</span>
-		<EmbedMedia data={{ mediaurl: i.media }} >
+		#{i.number}/16 - <b>{i.title}</b> - <span className="smalltext">({i.location}, {i.date})</span>
+		<blockquote>
 		{i.description}
-		</EmbedMedia>
+		</blockquote>
+		<EmbedMedia data={{ mediaurl: i.media, mediacredit: 'Philip Snow' }} />
 	</div>))}
 	</blockquote>
 	<Tag>Get The Book</Tag>

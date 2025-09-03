@@ -303,7 +303,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 						parseCaptionsSourcesEtc(mp3)?.forEach(([ audio, credit, crediturl, credit_date, caption ]: any) => {
 							au.push({
 								type: 'audio',
-								caption: p.title + ' - ' + caption,
+								caption: [ p.title, caption ]?.filter((f: any) => f)?.join(' - '),
 								summary: p.title,
 								href: '/lyrics/' + p?.href,
 								audio,
@@ -317,7 +317,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 							if (!im.find((i: any) => i.image === image)) {
 								im.push({
 									type: 'image',
-									caption: p.title + ' - ' + caption,
+									caption: [ p.title, caption ]?.filter((f: any) => f)?.join(' - '),
 									image,
 									href: '/lyrics/' + p?.href,
 									credit: credit || p.credit,
@@ -332,7 +332,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 								vi.push({
 									type: 'video',
 									href: '/lyrics/' + p?.href,
-									caption: p.title + ' - ' + caption,
+									caption: [ p.title, caption ]?.filter((f: any) => f)?.join(' - '),
 									video,
 									credit: credit || p.credit,
 									credit_date: credit_date || p.dtadded || p.dtpublished,

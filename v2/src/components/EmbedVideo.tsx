@@ -4,7 +4,7 @@ const EmbedVideo = ({ data = {}, className, children }: { data: any, className?:
 	const { datetime, type, setnum, ordinal, song, author, comment, performers, mediaurl, mediacredit, mediacrediturl } = data;
 	return (<div className={className}>
 		{(() => {
-			if (mediaurl?.startsWith('/video') || mediaurl?.includes('assets.jazzbutcher.com')) {
+			if (mediaurl?.startsWith('/video') || mediaurl?.includes('assets.jazzbutcher.com') || mediaurl?.includes('v1.jazzbutcher.com/video')) {
 				const videoURL = (str: string) => {
 					const appendMP4 = (str: string) => {
 						if (!str.includes('.mp4')) return str + '.mp4';

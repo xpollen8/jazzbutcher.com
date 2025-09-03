@@ -2586,7 +2586,8 @@ INSERT INTO `gigsong` VALUES (NULL,'1997-08-29 00:00:00','set',NULL,1,4,'Everyth
 INSERT INTO `gigsong` VALUES (NULL,'1997-08-29 00:00:00','set',NULL,1,5,'Radio Saigon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-08-29 00:00:00','set',NULL,1,6,'Sputnik',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-08-29 00:00:00','set',NULL,1,7,'Monks Of Kung Fu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://www.youtube.com/embed/BUoAwJ0XhmY','Hale','https://www.youtube.com/@senorme1001',NULL,'2023-03-05');
+//INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://www.youtube.com/embed/BUoAwJ0XhmY','Hale','https://www.youtube.com/@senorme1001',NULL,'2023-03-05');
+INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19970911/19970911_JazzButcher_London_youtube_hale.mp3','Hale','https://www.youtube.com/embed/BUoAwJ0XhmY',NULL,'2025-08-29');
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,1,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,10,'What\'s The Matter, Boy?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1997-09-11 00:00:00','set',NULL,1,11,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -4701,7 +4702,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2016-06-03 00:00:00','set','32:42',1,8,'Dunk
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03 00:00:00','set','36:34',1,9,'Shakey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03 00:00:00','set','43:03',1,10,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-06-03 00:00:00','set','49:55',1,11,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2016-06-03 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20160603/20160603_JazzButcher_Northampton_Lamplighter.mp3','Curtis Johnson',NULL,NULL,"2021-12-17");
+INSERT INTO `gigsong` VALUES (NULL,'2016-06-03 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20160603/20160603_JazzButcher_Northampton_Lamplighter.mp3','Curtis E. Johnson',NULL,NULL,"2021-12-17");
 INSERT INTO `gigsong` VALUES (NULL,'2016-12-18 17:00:00','encore',NULL,1,1,'True Love Will Find You in the End','Daniel Johnston',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-12-18 17:00:00','encore',NULL,1,2,'Dream Baby Dream','Suicide',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2016-12-18 17:00:00','set',NULL,1,1,'The Highest in the Land',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5230,10 +5231,6 @@ INSERT INTO `gigsong` VALUES (NULL,'1990-11-08 00:00:00','set',NULL,1,15,'Groovi
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-08 00:00:00','set',NULL,1,16,'After The Great Euphrates',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1990-11-08 00:00:00','set',NULL,1,17,'Panic In Room 109',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
-/*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
-UNLOCK TABLES;
-
---  1988-08-22  shintomo  -  tomoko shintani
 INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,0,"The Entire Performance",NULL,"loud, distorted",NULL,"https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19880822/19880822_JazzButcher_Dingwalls_shintomo.mp3","Tomoko Shintani",NULL,NULL,"2025-08-12");
 INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,1,"Real Men",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,2,"Looking For Lot 49",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5246,8 +5243,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,8,"Soul Happy Hour"
 INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,9,"Spooky",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,10,"Blame",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-08-22','set',NULL,1,11,"Grey Flanelette",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
---  
---  1988-09-08  shintomo  -  tomoko shintani
+
 INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,0,"The Entire Performance",NULL,NULL,NULL,"https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19880908/19880908_PatFish_MarketTavern_shintomo.mp3","Tomoko Shintani",NULL,NULL,"2025-08-12");
 INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,1,"Soul Happy Hour",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,2,"Domestic Animal",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5261,6 +5257,9 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','set',NULL,1,9,"Angels",NULL,"th
 INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','encore',NULL,1,10,"Stand By Me","Ben E. King","Alan McGee, guitar",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','encore',NULL,1,11,"Roadrunner","Jonathan Richman","Alan McGee, guitar",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','encore',NULL,2,12,"Speedy Gonzalez","Hess, Kaye, Lee","Alan McGee, guitar",NULL,NULL,NULL,NULL,NULL,NULL);
+
+/*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
+UNLOCK TABLES;
 
 update gig set extra=concat('songlist,',extra) where extra not like '%songlist%' and datetime in (select distinct datetime from gigsong);
 update gig set extra=concat('recording,',extra) where extra not like '%recording%' and datetime in (select distinct datetime from gigsong where mediaurl like '%audio%');

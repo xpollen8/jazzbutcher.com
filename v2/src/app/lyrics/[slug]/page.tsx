@@ -17,13 +17,12 @@ const	LyricVideo = ({ video }: any) => {
 	if (!video) return;
 	const videos = parseCaptionsSourcesEtc(video);
 
-	return <div className="imageStrip">
+	return <div className="w-full">
 		{videos?.map((v: any, key: number) => {
 			const [ videourl, source, sourceurl, sourcedate, caption ] = v;
-			const extensionLessURL = videourl?.startsWith('/') ? truncAt('.', videourl) : videourl;
 			return (<div key={key}>
 				<center>
-					<EmbedMedia data={{ mediaurl: extensionLessURL, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate, comment: caption }}>
+					<EmbedMedia data={{ mediaurl: videourl, mediacredit: source, mediacrediturl: sourceurl, mediacreditdate: sourcedate, comment: caption }}>
 					</EmbedMedia>
 				</center>
 			</div>)
@@ -32,13 +31,13 @@ const	LyricVideo = ({ video }: any) => {
 }
 
 const	LyricAudio = ({ mp3, caption }: any) => {
-	if (mp3) {
-		const mp3s = parseCaptionsSourcesEtc(mp3);
-		return mp3s?.map((m: any, key: number) => {
-			const [ mediaurl, mediacredit, mediacrediturl, mediacreditdate, media_caption ] = m;
-			return <EmbedMedia key={key} data={{ mediaurl, title: media_caption || removeHTML(caption), mediacredit, mediacrediturl, mediacreditdate }} />
-		})
-	}
+	if (!mp3) return;
+	const mp3s = parseCaptionsSourcesEtc(mp3);
+
+	return mp3s?.map((m: any, key: number) => {
+		const [ mediaurl, mediacredit, mediacrediturl, mediacreditdate, media_caption ] = m;
+		return <EmbedMedia key={key} data={{ mediaurl, title: media_caption || removeHTML(caption), mediacredit, mediacrediturl, mediacreditdate }} />
+	})
 }
 
 const	LyricMedia = ({ media }: any) => {

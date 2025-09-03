@@ -540,7 +540,7 @@ ${jbc_footer}
 	<br />
 	Be afraid, don’t be afraid!<br />
 	Be afraid, be afraid!!
-	)}, mp3=${jbc_audio}/tunes/JazzButcher_DoktorAnthrax.mp3, onlist=cdr_guestpass2000)}
+	)}, mp3=${jbc_audio}/tunes/JazzButcher_DoktorAnthrax.mp3;;David Whittemore, onlist=cdr_guestpass2000)}
 #live	endif
 
 #define	hobbu.html
@@ -562,7 +562,7 @@ ${jbc_footer}
 
 	onlist=cdr_guestpass2000,
 		credits=Robert Goodman,
-		mp3=${jbc_audio}/tunes/hobbu.mp3,
+		mp3=${jbc_audio}/tunes/hobbu.mp3;;David Whittemore,
 		caption=The Hobbu Song
 	)}
 #live	endif
@@ -678,7 +678,7 @@ ${jbc_footer}
 		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#angels;;
 	)}
 
-	,mp3=${jbc_mp3}/angels.mp3,
+	,mp3=${jbc_mp3}/angels.mp3;;David Whittemore,
 	embed_link=https://youtube.com/embed/Cj6lU1ykzsA
 	)}
 #live	endif
@@ -1754,7 +1754,7 @@ The town in question is South Windsor, CT.
 	)},
 		onlist=
 		girlgo .. fire_cholmondley
-	,mp3=${jbc_audio}/cult/excellent.mp3, caption=Rough studio mix)}
+	,mp3=${jbc_audio}/cult/excellent.mp3;;Martin Stebbing, caption=Rough studio mix)}
 #live	endif
 
 #define	fertiliser.html
@@ -1784,7 +1784,7 @@ The town in question is South Windsor, CT.
 	)},
 		onlist=
 		cult .. fire_violent
-	,mp3=${jbc_audio}/cult/yes_mantor.mp3, caption=Rough studio mix)}
+	,mp3=${jbc_audio}/cult/yes_mantor.mp3;;Martin Stebbing, caption=Rough studio mix)}
 #live	endif
 
 #define	filth.html
@@ -2054,7 +2054,7 @@ The town in question is South Windsor, CT.
 		Girl-Go is for my friend Phil (ip of Walshingham) Parfitt, singer & writer with The Perfect Disaster and class A-! human being. It is about a number of things, with special emphasis on the popular chord "E". Listen and pass out.
 		;;<b>Spooky</b> liner notes;;/albums/spooky.html#girl;;
 	)}
-	,mp3=${jbc_audio}/cult/girl.mp3, caption=Rough studio mix, embed_link=https://youtube.com/embed/YhpMSXo-kzM)}
+	,mp3=${jbc_audio}/cult/girl.mp3;;Martin Stebbing, caption=Rough studio mix, embed_link=https://youtube.com/embed/YhpMSXo-kzM)}
 #live	endif
 
 #define	girlfriend.html
@@ -2681,7 +2681,7 @@ The town in question is South Windsor, CT.
 		onlist=
 		bacon .. fire_wasted,
 		caption=From the 2012 ${adventurers} recording session (unreleased),
-		mp3=${jbc_audio}/tunes/2012_JBC_LaMer.mp3,
+		mp3=${jbc_audio}/tunes/2012_JBC_LaMer.mp3;;Simon Taylor,
 		others=${literalizeCommas(
 			One day in 2018, Pat Fish sent me a very kind message to explain to me the genesis of a song, which I'm sure is now one of the classics of French song. No small feat for a roast beef.
 
@@ -3442,7 +3442,7 @@ The town in question is South Windsor, CT.
 		Is it a road song? Is it a love song? Is it a mushy title or what? I'm sorry, Jesus, every line is true. I never enjoyed vanilla as much in all my life. Watch carefully: Californian brainfried road-accident-from-outer-space guitar in the area!
 		;;<b>Unconditional</b> liner notes;;/albums/unconditional.html#tues;;
 	)}
-	,mp3=${jbc_audio}/cult/pineapple.mp3, caption=Rough studio mix)}
+	,mp3=${jbc_audio}/cult/pineapple.mp3;;Martin Stebbing, caption=Rough studio mix)}
 #live	endif
 
 #define	president_chang.html
@@ -4117,7 +4117,7 @@ fade
 		St. Francis, Alex Chilton and Yer Actual Life - those are the main constituents. I've never seen Sandman. I did read a little Anne Rice, but I thought it was a tad... muddled, if you like. She seems to make the rules of Being Undead up as she goes along. Having been raised on Uncle Terry's vampire pictures since the age of about six, I feel that i know the rules, and cling to what I learned as a youth. Don't forget, folks - after you stake 'em, you got to CHOP OFF THE HEAD, or it ain't nothing but a sequel in the works.
 		;;Pat Letter: 1994-09-13;;/letters/94Sep13/sis.html;;1994-09-13
 	)}
-	,mp3=${jbc_audio}/cult/sister.mp3, caption=Rough studio mix)}
+	,mp3=${jbc_audio}/cult/sister.mp3;;Martin Stebbing, caption=Rough studio mix)}
 #live	endif
 
 #define	smith.html
@@ -5287,7 +5287,7 @@ G - G - C - D
 	)},
 		onlist=
 		cult .. fire_violent
-	,mp3=${jbc_audio}/cult/onion.mp3, caption=Rough studio mix)}
+	,mp3=${jbc_audio}/cult/onion.mp3;;Martin Stebbing, caption=Rough studio mix)}
 #live	endif
 
 #define	devil_is_my_friend.html
@@ -6885,7 +6885,7 @@ I haven't got a mind at all.
 #define	snowy.html
 #live	if (getval(page) = snowy.html)
 	${lyricsHeader(title=Beautiful Snow-White Hair,
-	mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+16+Highest_BeautifulSnowWhiteHair.mp3,
+	mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+16+Highest_BeautifulSnowWhiteHair.mp3;;Philip Snow,
 	caption=Excerpt from Philip Snow's interview tape #16,
 	images=${jbc_images}/ImKorb_1$$${jbc_images}/ImKorb_2$$,
 	patsez=
@@ -9470,7 +9470,7 @@ Break out and find out tonight.
 	)},
 		onlist=
 		single_saints .. adventurers .. va_nh_vol1
-		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_AllTheSaints.mp3,
+		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_AllTheSaints.mp3;;David Whittemore,
 		caption=All The Saints (${va_nh_vol1} version)
 		,credits=${pat};;;;2010
 	)}
@@ -9503,7 +9503,7 @@ Break out and find out tonight.
 		va_nh_vol1 ..
 		adventurers
 		,credits=${pat};;;;2006
-		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_Mercy.mp3,
+		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_Mercy.mp3;;David Whittemore,
 		caption=Mercy (${va_nh_vol1} version)
 	)}
 #live	endif
@@ -10110,8 +10110,8 @@ Break out and find out tonight.
 	Hit him again, he's not quite done yet.
 
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp4,
-		mp3=${jbc_audio}/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3;;;;;;;;2005 Demo$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp3;;Curtis E. Johnson;;;;;;Backing Track,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop Video,
+		mp3=${jbc_audio}/Wilson_200511/01_Wilson_200511_Buffalo_Sniper.mp3;;;;;;2006-02-08;;2005 Demo$$https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BuffaloSniper.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing Track,
 		onlist=wilson_demo_2005
 		,credits=${literalizeCommas(${pat}, ${botty}, ${curt})};;;;© Feb. 2003
 		)}
@@ -10161,9 +10161,9 @@ Break out and find out tonight.
 
 
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_PoliceChief.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
-#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_PoliceChief.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		mp3=${jbc_audio}/Wilson_200511/02_Wilson_200511_Police_Chief.mp3, caption=2005 demo,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_PoliceChief.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
+#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_PoliceChief.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
+		mp3=${jbc_audio}/Wilson_200511/02_Wilson_200511_Police_Chief.mp3;;David Whittemore, caption=2005 demo,
 		onlist=wilson_demo_2005,
 		,credits=${literalizeCommas(${pat}, ${botty})};;;;© Feb. 2003
 	)}
@@ -10215,8 +10215,8 @@ Break out and find out tonight.
 
  
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SaturdayNight.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
-		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SaturdayNight.mp3;;Curtis E. Johnson;;;;;;Backing track,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SaturdayNight.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SaturdayNight.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
 		
 		credits=${literalizeCommas(${pat}, ${botty})};;;;© July 2002
 	)}
@@ -10228,7 +10228,7 @@ Break out and find out tonight.
  
 	<h1>No lyrics available - enjoy the video!</h1>
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_FilterKings.mp4;;Curtis E. Johnson,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_FilterKings.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
 		caption=${curt}'s live backing tracks,
 	)}
 #live	endif
@@ -10239,8 +10239,8 @@ Break out and find out tonight.
  
 	<h1>No lyrics available - enjoy the video!</h1>
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_TwoDragons.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
-		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_TwoDragons.mp3;;Curtis E. Johnson;;;;;;Backing track,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_TwoDragons.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_TwoDragons.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
 		caption=${curt}'s live backing tracks,
 	)}
 #live	endif
@@ -10320,9 +10320,9 @@ Break out and find out tonight.
 	Fuck off with your hippy shit.
 
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_HippyShit.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
-#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_HippyShit.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		mp3=${jbc_audio}/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3, caption=2002 demo,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_HippyShit.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
+#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_HippyShit.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
+		mp3=${jbc_audio}/Wilson_2002/03_Wilson_2002_Hippy_Shit.mp3;;David Whittemore, caption=2002 demo,
 		onlist=wilson_demo_2002,
 		credits=${literalizeCommas(© The entire population of the world with a chorus by Bot)}
 	)}
@@ -10354,8 +10354,8 @@ Break out and find out tonight.
 	I come to destroy.
 
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_Critters.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
-		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_Critters.mp3;;Curtis E. Johnson;;;;;;Backing track,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_Critters.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_Critters.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
 		
 		credits=${literalizeCommas(© ${pat}, ${botty}, King Horror)}
 		)}
@@ -10387,8 +10387,8 @@ Break out and find out tonight.
 
 	)},
 		
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SecretGovernment.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
-		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SecretGovernment.mp3;;Curtis E. Johnson;;;;;;Backing track,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SecretGovernment.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_SecretGovernment.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
 		credits=${pat}
 	)}
 #live	endif
@@ -10429,7 +10429,7 @@ Break out and find out tonight.
 	Burn, Hollywood, burn, Hollywood, burn, muthafucka, burn.
 
 	)},
-		mp3=${jbc_audio}/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3, caption=2002 demo,
+		mp3=${jbc_audio}/Wilson_2002/05_Wilson_2002_Burn_Hollywood_Burn.mp3;;David Whittemore, caption=2002 demo,
 		onlist=wilson_demo_2002,
 		credits=${literalizeCommas( © ${pat}/${botty})}
 	)}
@@ -10475,9 +10475,9 @@ Break out and find out tonight.
 
 #		${linkAudio(project=wilson, title=Quality People (2002 demo), mp3=${jbc_audio}/Wilson_2002/01_Wilson_2002_Quality_People.mp3, autolink=no)}
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_QualityPeople.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
-#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_QualityPeople.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		mp3=${jbc_audio}/Wilson_200304/02_Wilson_200304_Quality_People.mp3, caption=2003 demo,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_QualityPeople.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
+#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_QualityPeople.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
+		mp3=${jbc_audio}/Wilson_200304/02_Wilson_200304_Quality_People.mp3;;David Whittemore, caption=2003 demo,
 		onlist=va_wilson_heyday ..  wilson_demo_2003 .. wilson_demo_2002,
 		credits=${literalizeCommas( © ${botty}, ${pat}, Soybaz)}
 	)}
@@ -10527,9 +10527,9 @@ Break out and find out tonight.
 	Out in the desert with a nameless dread.<br />
 	If you want to get ahead in the desert get ahead.
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_IstanbulConnection.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
-#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_IstanbulConnection.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		mp3=${jbc_audio}/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3, caption=2003 demo, embed_link=https://youtube.com/embed/r074mp41514,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_IstanbulConnection.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
+#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_IstanbulConnection.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
+		mp3=${jbc_audio}/Wilson_200304/01_Wilson_200304_Istanbul_Connection.mp3;;David Whittemore, caption=2003 demo, embed_link=https://youtube.com/embed/r074mp41514,
 		onlist=wilson_demo_2003 .. wilson_demo_2002,
 		credits=${literalizeCommas( © ${pat}, ${curt}, ${botty}, Traditional, Burroughs, Perry)}
 	)}
@@ -10574,9 +10574,9 @@ Break out and find out tonight.
 	Sam and Dave!
 
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_DarkAgenda.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
-#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_DarkAgenda.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		mp3=${jbc_audio}/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3, caption=2002 Demo,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_DarkAgenda.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
+#		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_DarkAgenda.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
+		mp3=${jbc_audio}/Wilson_2002/06_Wilson_2002_Dark_Agenda.mp3;;David Whittemore, caption=2002 Demo,
 		onlist=wilson_demo_2002,
 		credits=${literalizeCommas( © ${pat}/${botty})};;;;2001,
 	patsez=${literalizeCommas(
@@ -10637,8 +10637,8 @@ Break out and find out tonight.
 	No winners in this human race, no winners in just yet.
 
 	)},
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_NoWinners.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
-		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_NoWinners.mp3;;Curtis E. Johnson;;;;;;Backing track,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_NoWinners.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_NoWinners.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
 		patsez=${literalizeCommas(
 		Cheerful, huh? I introduced No Winners to the band as being a treatise on the ultimate futility of religious-based conflict. You
 		should have seen their little faces! Bot and I don't quite know what the other one's about...exactly...but it's jungle, so we
@@ -10688,8 +10688,8 @@ Break out and find out tonight.
 	Fear the madness generator.
 
 	)},
-		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BattleTime.mp3;;Curtis E. Johnson;;;;;;Backing track,
-		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BattleTime.mp4;;Curtis E. Johnson;;;;;;Backdrop video,
+		mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BattleTime.mp3;;Curtis E. Johnson;;;;2021-12-12;;Backing track,
+		video=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/Wilson_BackingTracks_BattleTime.mp4;;Curtis E. Johnson;;;;2021-12-12;;Backdrop video,
 		credits=${literalizeCommas( © ${pat}/${botty})};;;;2005-04
 	)}
 #live	endif
@@ -10748,7 +10748,7 @@ Break out and find out tonight.
 	Come, friendly spacemen, come on down.
 
 	)},
-		onlist=thisissumo..spacemen..spacemen12,mp3=https://sumosonic.com/audio/come_friendly_spacemen.mp3, caption=Demo Version,
+		onlist=thisissumo..spacemen..spacemen12,mp3=https://sumosonic.com/audio/come_friendly_spacemen.mp3;;David Whittemore, caption=Demo Version,
 		credits=${literalizeCommas(© ${pat})};;;;1995
 	)}
 #live	endif
@@ -10785,7 +10785,7 @@ Break out and find out tonight.
 	<br />When you're gone.
 
 	)},
-		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/gods_green_earth.mp3,
+		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/gods_green_earth.mp3;;David Whittemore,
 		embed_link=/video/sumosonic/sumosonic_gods_green_earth,
 		credits=${literalizeCommas( © ${pat})};;;;1995
 	)}
@@ -10806,7 +10806,7 @@ Break out and find out tonight.
 	<br />Monks of Kung Fu.
 
 	)},
-		onlist=thisissumo..spacemen..spacemen12,caption=Demo Version, mp3=https://sumosonic.com/audio/monks_of_kung_fu.mp3,
+		onlist=thisissumo..spacemen..spacemen12,caption=Demo Version, mp3=https://sumosonic.com/audio/monks_of_kung_fu.mp3;;David Whittemore,
 		embed_link=/video/sumosonic/sumosonic_monks_of_kung_fu,
 		credits=${literalizeCommas(© ${pat})};;;;1996
 	)}
@@ -10862,7 +10862,7 @@ Break out and find out tonight.
 	<br /><b>Chorus</b>
 
 	)},
-		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/business_and_work.mp3,
+		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/business_and_work.mp3;;David Whittemore,
 		credits=${literalizeCommas( © ${pat})};;;;1996
 	)}
 #live	endif
@@ -10939,7 +10939,7 @@ Break out and find out tonight.
 	<br />Nothing much has changed.
 
 	)},
-		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/destroy_all_monsters.mp3,
+		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/destroy_all_monsters.mp3;;David Whittemore,
 		credits=${literalizeCommas( © ${pat})};;;;1995
 	)}
 #live	endif
@@ -11006,7 +11006,7 @@ Break out and find out tonight.
 	<br />Hey, stupid!
 
 	)},
-		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/hey_stoopid.mp3,
+		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/hey_stoopid.mp3;;David Whittemore,
 		credits=${literalizeCommas( © ${pat})};;;;1996
 	)}
 #live	endif
@@ -11038,7 +11038,7 @@ Break out and find out tonight.
 	<br />Everything is wonderful!
 
 	)},
-		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/everything_is_wonderful.mp3,
+		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/everything_is_wonderful.mp3;;David Whittemore,
 		credits=${literalizeCommas( © ${pat})};;;;1995
 	)}
 #live	endif
@@ -11103,7 +11103,7 @@ Break out and find out tonight.
 	<br />Fern, schnell, gut - let the people be free.
 
 	)},
-		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/fern_schnell_gut.mp3,
+		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/fern_schnell_gut.mp3;;David Whittemore,
 		credits=${literalizeCommas( © ${pat})};;;;1995
 	)}
 #live	endif
@@ -11158,7 +11158,7 @@ Break out and find out tonight.
 	<br />Ah, look at you - what did you expect but a cat's life?
 
 	)},
-		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/cats_life.mp3,
+		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/cats_life.mp3;;David Whittemore,
 		credits=${literalizeCommas( © ${pat})};;;;1996
 	)}
 #live	endif
@@ -11199,7 +11199,7 @@ Break out and find out tonight.
 	Thank you.  Thank you very much.
 
 	)},
-		caption=Demo Version, mp3=https://sumosonic.com/audio/my_ultimate_baby.mp3,
+		caption=Demo Version, mp3=https://sumosonic.com/audio/my_ultimate_baby.mp3;;David Whittemore,
 		credits=${literalizeCommas( arranged by ${pat} words by 'Daniel Fantasy')}
 	)}
 #live	endif
@@ -11249,7 +11249,7 @@ Break out and find out tonight.
 	<br /><b>Chorus</b>	
 
 	)},
-		caption=Demo Version, mp3=https://sumosonic.com/audio/we_are_the_traffic.mp3,
+		caption=Demo Version, mp3=https://sumosonic.com/audio/we_are_the_traffic.mp3;;David Whittemore,
 		credits=${literalizeCommas( © ${pat})};;;;1991 ,
 		patsez=${literalizeCommas(
 			Initially written at the
@@ -11302,7 +11302,7 @@ Break out and find out tonight.
 	<br />For ever.
 
 	)},
-		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/sputnik.mp3,
+		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/sputnik.mp3;;David Whittemore,
 		embed_link=/video/sumosonic/sumosonic_sputnik,
 		credits=${literalizeCommas( © ${pat})};;;;1996
 	)}
@@ -11423,7 +11423,7 @@ Break out and find out tonight.
 	)},
 		onlist=
 		va_nh_vol1
-		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_Wildlife.mp3,
+		,mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/various/2010_NowThatsWhatICallNorthamptonVol1/JazzButcher_NowThatsWhatICallNorthamptonVol1_Wildlife.mp3;;David Whittemore,
 		caption=Wildlife (${va_nh_vol1} version)
 	)}
 #live	endif
@@ -11505,7 +11505,7 @@ Break out and find out tonight.
 			<br />		Not the real deal
 			<br />		Are these the words of all the undead corporations of the Earth?
 		)},
-		mp3=${jbc_audio}/Sumosonic_Dracula_2000.mp3,
+		mp3=${jbc_audio}/Sumosonic_Dracula_2000.mp3;;Ian Botteril;;;;2024-10-11,
 		caption=${literalizeCommas(Provided by Ian Botteril, 2024-10-11)},
 	)}
 #live	endif

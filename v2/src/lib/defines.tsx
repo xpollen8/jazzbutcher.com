@@ -1196,7 +1196,7 @@ const	people: HashedType = {
 	anita_allbright: { name: "Anita Allbright" },
 	astor: { name: "Peter Astor", aliases: [ "Pete" ] },
 	at: { name: "Alice Thompson", aliases: [ "Alice" ] },
-	barker: { name: "David E. Barker", aliases: [ "Dave Barker", "Barker", "Lionel Brando" ] },
+	barker: { name: "David E. Barker", aliases: [ "david_barker", "Dave Barker", "Barker", "Lionel Brando" ] },
 	bd: { name: "Ben Davis" },
 	beirne: { name: "Pat Beirne" },
 	blair: { name: "Blair MacDonald" },

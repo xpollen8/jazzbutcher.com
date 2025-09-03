@@ -54,7 +54,7 @@ const Contributions = (props: any) => {
   const { data, isLoading, error} = useContributions({ all: true });
   if (!data) return;
 
-  const { gigmedia, gigtext, gigsong, press, pressmedia, media } = data || {};
+  const { gigmedia, gigtext, gigsong, press, pressmedia, media, lyricmedia } = data || {};
   const contributions: HashedType = {};
 	let total = 0;
 
@@ -86,6 +86,13 @@ const Contributions = (props: any) => {
 	});
 	gigmedia?.results?.forEach((r: any) => {
 		addInfo(contributions, r?.credit, 'image', r?.credit_date, true);
+	});
+	lyricmedia?.results?.forEach((r: any) => {
+		if (r?.type === 'image') {
+			addInfo(contributions, r?.credit, 'image', r?.credit_date, true);
+		} else {
+			addInfo(contributions, r?.credit, 'av', r?.credit_date, true);
+		}
 	});
 	pressmedia?.results?.forEach((r: any) => {
 		if (r?.type === 'image') {

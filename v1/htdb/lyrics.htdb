@@ -115,7 +115,11 @@ ${begTab(Media)}
 	</div>
 #live	endif
 #live	if (defined(video))
-	${embedVideo(project=${project}, url=${video}, title=${caption})}
+#live		if (getval(video) == .com)
+	${embedVideo(project=${project}, url=${truncAt(;;, ${video})}, title=${caption})}
+#live		else
+	${embedVideo(project=${project}, url=https://v1.jazzbutcher.com${truncAt(;;, ${video})}, title=${caption})}
+#live		endif
 #live	endif
 #live	if (defined(mp3))
 #live	if (defined(caption))
@@ -10786,7 +10790,8 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/gods_green_earth.mp3;;David Whittemore,
-		embed_link=/video/sumosonic/sumosonic_gods_green_earth,
+#		embed_link=/video/sumosonic/sumosonic_gods_green_earth,
+		video=/video/sumosonic/sumosonic_gods_green_earth.mp4;;Pat Fish,
 		credits=${literalizeCommas( © ${pat})};;;;1995
 	)}
 #live	endif
@@ -10807,7 +10812,8 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo..spacemen..spacemen12,caption=Demo Version, mp3=https://sumosonic.com/audio/monks_of_kung_fu.mp3;;David Whittemore,
-		embed_link=/video/sumosonic/sumosonic_monks_of_kung_fu,
+#		embed_link=/video/sumosonic/sumosonic_monks_of_kung_fu,
+		video=/video/sumosonic/sumosonic_monks_of_kung_fu.mp4;;Pat Fish,
 		credits=${literalizeCommas(© ${pat})};;;;1996
 	)}
 #live	endif
@@ -11303,7 +11309,8 @@ Break out and find out tonight.
 
 	)},
 		onlist=thisissumo,caption=Demo Version, mp3=https://sumosonic.com/audio/sputnik.mp3;;David Whittemore,
-		embed_link=/video/sumosonic/sumosonic_sputnik,
+#		embed_link=/video/sumosonic/sumosonic_sputnik,
+		video=/video/sumosonic/sumosonic_sputnik.mp4;;Pat Fish,
 		credits=${literalizeCommas( © ${pat})};;;;1996
 	)}
 #live	endif

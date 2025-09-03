@@ -17,14 +17,14 @@ const InPress = ({ inpress, name }: any) => {
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
-		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: (a?.type?.includes('photo') || a?.type?.includes('image')) ? '' : a?.summary });
+		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: a?.summary, caption: a?.caption });
 		return { ...acc, [key]: (acc[key] || 0) + 1};
 	}, {});
 
 	const useData = Object.keys(uniques)?.map((x: any) => ({ count: uniques[x], ...JSON.parse(x) }))?.sort((a: any, b: any) => (b?.added || '').localeCompare(a?.added || ''));
 
 	const showData = (x: any, key: number) => {
-		const { count, type, datetime, added, summary, href } = x;
+		const { count, type, datetime, added, summary, caption, href } = x;
 		const typeIsImage = (type?.includes('photo') || type?.includes('image'));
 		const photos = (!typeIsImage) ? [] : contributions?.filter((c: any) => c?.type == type && c?.datetime === datetime && c?.href === href)?.map((c: any) => {
 			return {
@@ -36,7 +36,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 		return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
 			{(!!photos?.length) ? <PhotoSet title=<Link href={href || ts2URI(datetime)}>{datetime?.substring(0, 10)} {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>  photos={photos?.filter((f: any) => f?.added == added)} /> : 
 			<>
-			<Link className="monospace" href={href} >{datetime?.substring(0, 10) || summary}</Link> {pluralize(count, type, undefined, true)} {summary && `"${summary}"`} {dateAgo(added,' - ',`added: ${added} - `)}
+			<Link className="monospace" href={href} >{datetime?.substring(0, 10) || summary}</Link> {pluralize(count, type, undefined, true)} {caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${added} - `)}
 			</>}
 		</div>
 	}
@@ -124,6 +124,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				type: prettyType('text', r?.type),
 				added: r?.credit_date,
 				datetime: r?.datetime,
+				caption: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substring(0, 50) + '...' : '',
 				summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substring(0, 50) + '...' : '',
 				href: ts2URI(r?.datetime),
 			}
@@ -188,6 +189,18 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		);
 	});
 
+	press?.results?.forEach((r: any) => {
+		addInfo(contributions,
+			{
+				person: r?.credit,
+				type: prettyType(r?.type, 'Press article'),
+				added: r?.dtpublished,
+				summary: r?.title || r?.publication,
+				caption: r?.summary?.substring(0, 50) + '...',
+				href: r?.url,
+			}
+		);
+	});
 	lyric?.results?.forEach(({ tablature_credit, title, href }: any) => {
 		const { credit, crediturl, creditdate, creditcaption } = parseCredit(tablature_credit);
 		addInfo(contributions,

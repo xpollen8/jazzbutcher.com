@@ -293,6 +293,56 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'medias': { return mediasStatic; }
 			case 'performances': { return performancesStatic; }
 			case 'presses': { return pressesStatic; }
+			case 'lyricmedias': {
+				return returnResults(lyricsStatic.results.map((p: any) => {
+					const { images, video, mp3 } = p;
+					const au: any[] = [];
+					const im: any[] = [];
+					const vi: any[] = [];
+					if (mp3) {
+						parseCaptionsSourcesEtc(mp3)?.forEach(([ audio, credit, crediturl, credit_date, caption ]: any) => {
+							au.push({
+								type: 'audio',
+								caption: p.title + ' - ' + caption,
+								summary: p.title,
+								href: '/lyrics/' + p?.href,
+								audio,
+								credit: credit || p.credit,
+								credit_date: credit_date || p.dtadded || p.dtpublished,
+							});
+						});
+					}
+					if (images) {
+						parseCaptionsSourcesEtc(images)?.forEach(([ image, credit, credit_url, credit_date, caption ]: any) => {
+							if (!im.find((i: any) => i.image === image)) {
+								im.push({
+									type: 'image',
+									caption: p.title + ' - ' + caption,
+									image,
+									href: '/lyrics/' + p?.href,
+									credit: credit || p.credit,
+									credit_date: credit_date || p.dtadded || p.dtpublished,
+								});
+							}
+						});
+					}
+					if (video) {
+						parseCaptionsSourcesEtc(video)?.forEach(([ video, credit, credit_url, credit_date, caption ]: any) => {
+							if (!vi.find((i: any) => i.video === video)) {
+								vi.push({
+									type: 'video',
+									href: '/lyrics/' + p?.href,
+									caption: p.title + ' - ' + caption,
+									video,
+									credit: credit || p.credit,
+									credit_date: credit_date || p.dtadded || p.dtpublished,
+								});
+							}
+						});
+					}
+					return [...au, ...im, ...vi];
+				}).flat());
+			}
 			case 'pressmedias': {
 				return returnResults(pressesStatic.results.map((p: any) => {
 					const { audio, images, thumb } = p;
@@ -557,6 +607,13 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					});
 				})?.flat()?.filter((f: any) => f)?.filter(({ credit }: any) => credit));
 			}
+			case 'lyricmedia_contributions': {
+				const lyricmedias = await apiData('lyricmedias');
+				return returnResults(lyricmedias?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
+					...g,
+					credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
+				})));
+			}
 			case 'pressmedia_contributions': {
 				const pressmedias = await apiData('pressmedias');
 				return returnResults(pressmedias?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
@@ -573,6 +630,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const pressmedia = await apiData('pressmedia_contributions', args);
 				const inpress = await returnFilteredPath('presses', 'body', args?.filter?.value, false);
 				const lyric = await returnFilteredPath('lyrics', 'tablature_credit', args?.filter?.value, false);
+				const lyricmedia = await apiData('lyricmedia_contributions', args);;
 				return {
 					media: findRecent(media, ['credit_date'], makeOptions(args, 'media')),
 					gigmedia: findRecent(gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
@@ -582,6 +640,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					pressmedia: findRecent(pressmedia, ['credit_date'], makeOptions(args, 'pressmedia')),
 					inpress,
 					lyric,
+					lyricmedia: findRecent(lyricmedia, ['credit_date'], makeOptions(args, 'lyricmedia')),
 				}
 			}
 			case 'releases_by_performer': {

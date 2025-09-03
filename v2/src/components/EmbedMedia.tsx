@@ -120,7 +120,7 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 					<LinkAudio version={version} lookup={lookup} parent={parent} title={useTitle} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={useArtist} author={useAuthor} comment={comment} ordinal={ordinal} setnum={setnum} collection={collection} />
 					{useAttribution}
 					{useSource}
-					<Download u={mediaurl} />
+					<Download u={useMediaurl} />
 					{collection}
 					{children}
 				</>)

@@ -17,7 +17,7 @@ const InPress = ({ inpress, name }: any) => {
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
-		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: a?.summary, caption: a?.caption });
+		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: (a?.type?.includes('photo')) ? '' : a?.summary, caption: (a?.type?.includes('photo')) ? '' : a?.caption });
 		return { ...acc, [key]: (acc[key] || 0) + 1};
 	}, {});
 

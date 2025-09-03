@@ -196,7 +196,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				type: prettyType(r?.type, 'Press article'),
 				added: r?.dtpublished,
 				summary: r?.title || r?.publication,
-				caption: r?.summary?.substring(0, 50) + '...',
+				caption: r?.headline?.substring(0, 50) + '...',
 				href: r?.url,
 			}
 		);

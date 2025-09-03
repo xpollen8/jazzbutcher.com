@@ -791,7 +791,7 @@ ${d}
 
 	${addPress(type=interview;radio, person=pat;pete,
 		url=${jbc_press}/19920516_interview_WNUR.html,
-		audio=${jbc_audio}/19920516/19920516_JazzButcher_WNUR_Gen0.mp3;;The Interview$$;;Angels::1$$;;Take The Skinheads Bowling::2,
+		audio=${jbc_audio}/19920516/19920516_JazzButcher_WNUR_Gen0.mp3;;The Interview;;David Whittemore;;1992-05-16$$;;Angels::1$$;;Take The Skinheads Bowling::2,
 		location=Chicago\, Illinois\, USA,
 		publication=WNUR,
 		title=Radio interview,
@@ -835,7 +835,7 @@ ${d}
 
 	${addPress(type=interview;radio, person=dooj;pat,
 		url=${jbc_press}/19920426_interview_WXYC.html,
-		audio=${jbc_audio}/19920426/19920426_JazzButcher_WXYC_Gen0_Flat.mp3;;The Interview,
+		audio=${jbc_audio}/19920426/19920426_JazzButcher_WXYC_Gen0_Flat.mp3;;The Interview;;David Whittemore;;1992-04-26,
 		publication=WXYC,
 		location=Chapel Hill\, North Carolina\, USA,
 		title=WXYC Radio Interview,
@@ -848,7 +848,7 @@ ${d}
 
 	${addPress(type=interview;radio,
 		url=${jbc_press}/19920506_interview_CBC.html,
-		audio=${jbc_audio}/19920506/19920506_JazzButcher_CBC_Gen0_Flat.mp3;;The Interview,
+		audio=${jbc_audio}/19920506/19920506_JazzButcher_CBC_Gen0_Flat.mp3;;The Interview;;David Whittemore;;1992-05-06,
 		publication=CBC,
 		location=Toronto\, Canada,
 		title=CBC Radio Interview,
@@ -903,7 +903,7 @@ ${d}
 		headline=Pat Fish & The Jazz Butcher Special w/guest David Barker (Glass Records),
 		subhead=Episode: JAZZ001,
 		source=https://podcasts.apple.com/us/podcast/jaz001-pat-fish-the-jazz-butcher-special-w-guest/id1542932551?i=1000549279324,
-		credit=patreon.com/fiftyyearsoffun,
+		credit=fiftyyearsoffun,
 		dtpublished=2022-01-28,
 		dtadded=2023-09-20)}
 
@@ -3151,7 +3151,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		issue=Episode #206,
 		title=EARLY DAYS TO JAZZ BUTCHER'S FIRST RELEASE 'IN BATH OF BACON',
 		dtpublished=2018-12-09,
-		credit=FrehcnSpurs1,
+		credit=FrenchSpurs1,
 		source=https://www.mixcloud.com/FrenchSpurs1/retropopic-206-pat-fish-early-days-jazz-butcher-to-dan-tracey-2018-benefit/,
 		summary=${literalizeCommas(
 		Why did he decide to choose music over an academic route way? Where did the group name 'Jazz Butcher' come from? What negative event was the inspiration behind the classic song 'Next Move Sideways'? Why did Mark E Smith write to Pat? What were the circumstances that lead Brix Smith to thump Jazz Butcher drummer Owen Jones? How did he get involved in The Dan Treacey Benefit? And many, many more great anecdotes......
@@ -3160,15 +3160,15 @@ subhead=(20 December 1957 – 5 October 2021),
 
 	${addPress(type=interview;radio,
 		url=/press/19890701_interview_ontheroad.html,
-		audio=${jbc_audio}/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3;;The Interview,
+		audio=${jbc_audio}/19890701/19890701_JazzButcher_edit_CBC_FM_Gen0.mp3;;The Interview;;Dara Mottahead;;;;2019-11-22,
 		publication=CBC,
 		location=Canada,
 		title="On The Road" - CBC featurette,
 		dtpublished=1989-07-01,
-		credit=Dana Mottahead (Gen0 cassette of FM broadcast),
+		credit=Dara Mottahead,
 		summary=${literalizeCommas(
 			While en-route to 1989 Germany dates, ${pat} answers "Big Questions" for CBC radio
-			listeners.
+			listeners. Recording is from master cassette.
 		)}
 	)}
 

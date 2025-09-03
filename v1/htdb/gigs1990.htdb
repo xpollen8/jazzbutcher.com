@@ -906,7 +906,7 @@
 		recording=${literalizeCommas( ${d}, ${mt})},
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${jules}, ${green} )},
 		photosets= /images/19901120/19901120_del_group1.jpg$$
-			/images/19901120/19901120_del_group2.jpg;;${literalizeCommas( Photos from the next morning.)}$$
+			/images/19901120/19901120_del_group2.jpg;;${literalizeCommas(Photos from the next morning. Pat Fish, Martin Stebbing, Paul Mulreaney, Roadie Mark, Laurence O'Keefe, Julian Poole)}$$
 			David Whittemore;;;;1997-11-19
 		,
 		reviews=

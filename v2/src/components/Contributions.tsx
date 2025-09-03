@@ -17,7 +17,7 @@ const InPress = ({ inpress, name }: any) => {
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
-		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: (a?.type?.includes('photo')) ? '' : a?.summary, caption: (a?.type?.includes('photo')) ? '' : a?.caption });
+		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: (a?.type?.includes('image')) ? '' : a?.summary, caption: (a?.type?.includes('image')) ? '' : a?.caption });
 		return { ...acc, [key]: (acc[key] || 0) + 1};
 	}, {});
 
@@ -83,7 +83,7 @@ const prettyType = (type: string, t?: string) => {
 	}
 	if (type === 'text' && t === 'bootlegger') return 'taped the show';
 	if (type === 'text' && t === 'recording') return 'bootleg description';
-	if (t === 'pix') return 'event photo';
+	if (t === 'pix') return 'event image';
 	if (t === 'review') return 'gig review';
 	if (t === 'selfreview') return 'Pat gig review';
 	return t + ' ' + type;

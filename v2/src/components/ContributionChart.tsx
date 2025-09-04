@@ -9,7 +9,11 @@ const ContributionChart = ({ data }: any) => {
 		let maxYear: number = 0;
 		const years: HashedType = {};
 		data.forEach((d: any) => {
-			const year = parseInt(d[attribute]?.substring(0, 4));
+			let year = parseInt(d[attribute]?.substring(0, 4));
+			if (attribute === 'added' && year < 1994) {
+				// website didn't exist before 1994
+				year = 1994;
+			}
 			if (year > maxYear) maxYear = year;
 			if (year < minYear) minYear = year;
 			const count: number = d?.count || 1;

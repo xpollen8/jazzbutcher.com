@@ -7,8 +7,7 @@ import { type HashedType, parseCaptionsSourcesEtc, pluralize, dateAgo, ts2URI, p
 import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
 import PressCards from '@/components/PressCards';
-import { LineChart } from 'react-chartkick';
-import 'chartkick/chart.js';
+import ContributionChart from '@/components/ContributionChart';
 
 const InPress = ({ inpress, name }: any) => {
 	if (!inpress?.numResults) return;
@@ -16,41 +15,6 @@ const InPress = ({ inpress, name }: any) => {
 		return { ...p, summary: summaryBodySearch(p?.body, name, 200) }
 	})} />
 }
-
-const lineChartData = (data: any) => {
-
-	const chartByAttribute = (data: any, attribute: string) => {
-		let maxCount: number = 0;
-		let minYear: number = 9999;
-		let maxYear: number = 0;
-		const years: HashedType = {};
-		data.forEach((d: any) => {
-			const year = parseInt(d[attribute]?.substring(0, 4));
-			if (year > maxYear) maxYear = year;
-			if (year < minYear) minYear = year;
-			const count: number = d?.count || 1;
-			//const type = 
-			if (year) {
-				if (!years[year]) years[year] = 0;
-				years[year] = years[year] + count;
-				if ( years[year] > maxCount) maxCount = years[year];
-			}
-		});
-		// fill in missing years
-		for (let y = minYear ; y < maxYear ; y++) {
-			if (!years[y]) years[y] = 0;
-		}
-		const ret = Object?.keys(years)?.map((y: string) => {
-			return [ y, years[y] ]
-		})
-		return [ ret, Math.trunc(maxCount * 1.1) ];
-	}
-	const [ addedData, addedCount ] = chartByAttribute(data, 'added');
-	const [ datetimeData, datetimeCount ] = chartByAttribute(data, 'datetime');
-
-	// @ts-ignore
-	return [ [{ name: "By Datetime", data: datetimeData }, { name: "By Added", data: addedData } ], Math.max([ addedCount, datetimeCount ]) ];
-};
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
@@ -78,14 +42,9 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 		</div>
 	}
 
-	const [ chartData, maxCount ] = lineChartData(useData);
-
-	// @ts-ignore
-	const useChart = <LineChart width={'100%'} max={maxCount} data={chartData} />;
-
 	if (justOneResult) {
 		return <>
-			{useChart}
+			<ContributionChart data={useData} />
 			{useData?.map(showData)}
 		</>
 	}

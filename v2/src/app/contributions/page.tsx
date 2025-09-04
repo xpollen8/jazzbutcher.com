@@ -9,6 +9,7 @@ import useContributions from '@/lib/useContributions';
 import { truncate, pluralize } from '@/lib/utils';
 import { removeHTML } from '@/components/GenericWeb';
 import { useState, useEffect } from 'react';
+import ContributionChart from '@/components/ContributionChart';
 
 const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) => {
 	const setHeader = (e: any, header: string) => { e.preventDefault(); onClick(header); }
@@ -58,7 +59,8 @@ const Contributions = (props: any) => {
   const contributions: HashedType = {};
 	let total = 0;
 
-	const addInfo = (contributions: HashedType, person: string, type: string, added: string, accummulate?: boolean) => {
+	const chartData: any[] = [];
+	const addInfo = (contributions: HashedType, person: string, type: string, added: string, datetime: string, accummulate?: boolean) => {
 		const useAdded = added?.substring(0, 10);
 		if (!contributions[person]) {
 			contributions[person] = {
@@ -76,36 +78,41 @@ const Contributions = (props: any) => {
 		if (useAdded > p.max) p.max = useAdded;
 		if (added && useAdded < p.min) p.min = useAdded;
 		if (accummulate) total = total + 1;
+		chartData.push({
+			added,
+			datetime,
+			count: 1,
+		});
 	}
 	gigsong?.results?.forEach((r: any) => {
 		if (!r?.mediaurl?.length) return;
-		addInfo(contributions, r?.credit, 'av', r?.added, true);
+		addInfo(contributions, r?.credit, 'av', r?.added, r?.datetime, true);
 	});
 	gigtext?.results?.forEach((r: any) => {
-		addInfo(contributions, r?.credit, 'text', r?.credit_date, true);
+		addInfo(contributions, r?.credit, 'text', r?.credit_date, r?.datetime, true);
 	});
 	gigmedia?.results?.forEach((r: any) => {
-		addInfo(contributions, r?.credit, 'image', r?.credit_date, true);
+		addInfo(contributions, r?.credit, 'image', r?.credit_date, r?.datetime, true);
 	});
 	lyricmedia?.results?.forEach((r: any) => {
 		if (r?.type === 'image') {
-			addInfo(contributions, r?.credit, 'image', r?.credit_date, true);
+			addInfo(contributions, r?.credit, 'image', r?.credit_date, r?.datetime, true);
 		} else {
-			addInfo(contributions, r?.credit, 'av', r?.credit_date, true);
+			addInfo(contributions, r?.credit, 'av', r?.credit_date, r?.datetime, true);
 		}
 	});
 	pressmedia?.results?.forEach((r: any) => {
 		if (r?.type === 'image') {
-			addInfo(contributions, r?.credit, 'image', r?.credit_date, true);
+			addInfo(contributions, r?.credit, 'image', r?.credit_date, r?.dtpublished, true);
 		} else {
-			addInfo(contributions, r?.credit, 'av', r?.credit_date, true);
+			addInfo(contributions, r?.credit, 'av', r?.credit_date, r?.dtpublished, true);
 		}
 	});
 	press?.results?.forEach((r: any) => {
-		if (r?.credit) addInfo(contributions, r?.credit, 'text', r?.dtadded, true);
+		if (r?.credit) addInfo(contributions, r?.credit, 'text', r?.dtadded, r?.dtpublished, true);
 	});
 	press?.results?.forEach((r: any) => {
-		if (r?.publication) addInfo(contributions, r?.publication, 'text', r?.dtadded, false);
+		if (r?.publication) addInfo(contributions, r?.publication, 'text', r?.dtadded, r?.dtpublished, false);
 	});
 
 	const sorted = Object.keys(contributions)?.map((person: string, key: number) => ({ person, ...contributions[person] }))?.sort((a: HashedType, b: HashedType) => {
@@ -133,6 +140,7 @@ const Contributions = (props: any) => {
 		<Loading isLoading={isLoading} >
 		<main>
 			<Tag>Website contributions since 1993 {pluralize(total)}</Tag>
+			<ContributionChart data={chartData} />
 			<ContributionsTable data={sorted} total={total} onClick={onClick} sortBy={sortBy} sortOrder={sortOrder} />
 		</main>
 		</Loading>

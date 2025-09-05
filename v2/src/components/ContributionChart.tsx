@@ -1,7 +1,7 @@
 import { type HashedType } from '@/lib/utils';
 import { BarChart, ColumnChart, LineChart } from 'react-chartkick';
 import 'chartkick/chart.js';
-const ContributionChart = ({ data }: any) => {
+const ContributionChart = ({ data, ...options }: any) => {
 
 	const chartByAttribute = (data: any, attribute: string) => {
 		let maxCount: number = 0;
@@ -38,7 +38,7 @@ const ContributionChart = ({ data }: any) => {
 	const [ datetimeData, datetimeCount ] = chartByAttribute(data, 'datetime');
 
 	// @ts-ignore
-	return <BarChart stacked={true} width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
+	return <BarChart {...options} width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
 	//return <ColumnChart stacked={true} width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
 	//return <LineChart width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
 }

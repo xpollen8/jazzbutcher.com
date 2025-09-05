@@ -20,7 +20,7 @@ const gallery = [
 		},
 	{
 		src: "/images/20170415/20170415_JazzButcher_Tidmarsh_P1040807.jpg",
-			credit: "@PlanetruthPictures",
+			credit: "Planetruth Pictures",
 			credit_date: "2017",
 		},
 	{

@@ -140,7 +140,7 @@ const Contributions = (props: any) => {
 		<Loading isLoading={isLoading} >
 		<main>
 			<Tag>Website contributions since 1993 {pluralize(total)}</Tag>
-			<ContributionChart data={chartData} />
+			<ContributionChart data={chartData} stacked={true} />
 			<ContributionsTable data={sorted} total={total} onClick={onClick} sortBy={sortBy} sortOrder={sortOrder} />
 		</main>
 		</Loading>

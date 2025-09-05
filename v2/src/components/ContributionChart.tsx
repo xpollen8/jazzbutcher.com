@@ -36,8 +36,10 @@ const ContributionChart = ({ data, ...options }: any) => {
 
 	const [ addedData, addedCount, minY1, maxY1 ] = chartByAttribute(data, 'added');
 	const [ datetimeData, datetimeCount, minY2, maxY2 ] = chartByAttribute(data, 'datetime');
-	const minY = Math.min(...[ minY1, minY2 ].filter((x: number) => x < 9999));
-	const maxY = Math.max(...[ maxY1, maxY2 ].filter((x: number) => x > 0));
+	// @ts-ignore
+	const minY = Math.min(...[ minY1, minY2 ].filter((x?: number) => x < 9999));
+	// @ts-ignore
+	const maxY = Math.max(...[ maxY1, maxY2 ].filter((x?: number) => x > 0));
 
 	const spread = maxY - minY;
 

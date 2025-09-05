@@ -3458,7 +3458,7 @@ Featuring the much praised 'Fishcotheque', 'Big Planet, Scarey Planet', 'Cult Of
 #define	albums[87]->catalog	TR492
 #define	albums[87]->title	The Highest in the Land
 #define	albums[87]->thumb	${jbc_images}/releases/highest
-#define	albums[87]->images	${jbc_images}/2021_PressRelease_PatFish_PhilippeDufour;;;;Philippe Dufar$$${jbc_images}/2021_PressRelease_PatFish1_RuthTidmarsh;;;;PlanetruthPictures$$${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;;;PlanetruthPictures$$
+#define	albums[87]->images	${jbc_images}/2021_PressRelease_PatFish_PhilippeDufour;;;;Philippe Dufar$$${jbc_images}/2021_PressRelease_PatFish1_RuthTidmarsh;;;;Planetruth Pictures$$${jbc_images}/2021_PressRelease_PatFish2_RuthTidmarsh;;;;Planetruth Pictures$$
 #define	albums[87]->downloads	/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_engl.pdf;;Tapete Press release (EN)$$/pdf/TR492_The_Jazz_Butcher_The_Highest_In_The_Land_dt.pdf;;Tapete Press release (DE)
 #define	albums[87]->dtreleased	2022-02-04
 #define	albums[87]->dtrecorded	2021 Summer

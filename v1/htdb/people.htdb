@@ -784,7 +784,7 @@ ${define(range[${z}]->end,)}
 		<div style="text-align: center;">
 			<a href="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040807.jpg">
 			<img src="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040807_500.jpg"></a>
-			${g_credit(g=\@PlanetruthPictures)}
+			${g_credit(g=Planetruth Pictures)}
 		</div>
 		<div class="listItem">
 		Born in West London at a time that left him just too young to be a hippie and just a little too old to be a punk, Pat Fish grew up in an era where the Bonzo Dog Band appeared on children’s television, Syd Barrett was on Top of the Pops and the Adult World was represented in shows like The Avengers and The Prisoner. Disappointment was an inevitability.
@@ -823,7 +823,7 @@ ${define(range[${z}]->end,)}
 		<br/>
 		<a href="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040807.jpg">
 			<img src="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040807_500.jpg"></a>
-			${g_credit(g=\@PlanetruthPictures\, 2017)}
+			${g_credit(g=Planetruth Pictures\, 2017)}
 		<br/>
 		<br/>
 		<a href="${jbc_images}/20150501/20150501_vulpe_truax_gig.jpg">
@@ -1234,7 +1234,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 	
 	<dd><a href="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040651.jpg">
 		<img src="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040651_250.jpg"></a>
-		${g_credit(g=\@PlanetruthPictures\, 2017, u=${jbc_gigs}/2017/Apr15.html)}
+		${g_credit(g=Planetruth Pictures\, 2017, u=${jbc_gigs}/2017/Apr15.html)}
 	</dd>
 	<dd><a href="${jbc_images}/20170406/20170406_group.jpg">
 		<img src="${jbc_images}/20170406/20170406_group_250.jpg"></a>
@@ -1503,7 +1503,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 
 		<a href="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040744.jpg"><img
 			src="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040744_500.jpg"></a>
-		${g_credit(g=\@PlanetruthPictures)}
+		${g_credit(g=Planetruth Pictures)}
 		<p>
 		<a href="${jbc_images}/20140822/20140822_johncannon_bass.jpg"><img
 			src="${jbc_images}/20140822/20140822_johncannon_bass_500.jpg"></a>
@@ -1519,7 +1519,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 
 		<a href="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040792.jpg"><img
 			src="${jbc_images}/20170415/20170415_JazzButcher_Tidmarsh_P1040792_500.jpg"></a>
-		${g_credit(g=\@PlanetruthPictures)}
+		${g_credit(g=Planetruth Pictures)}
 		${w_role} Trumpet, The Jazz Butcher Quartet
 	)})}
 	${people_footer}
@@ -1672,7 +1672,7 @@ The sleeve pic for Bath of Bacon was taken at a Tonix gig at the Clarendon, Hamm
 #define	dave_morgan.html
 #live	if (getval(page) = dave_morgan.html)
 	${mkPeopleHeader(title=Dave Morgan, bio=${literalizeCommas(
-		<a href="${jbc_images}/2017_DaveMorgan.jpg"><img src="${jbc_images}/2017_DaveMorgan_500.jpg"></a> ${g_credit(g=\@PlanetruthPictures)}
+		<a href="${jbc_images}/2017_DaveMorgan.jpg"><img src="${jbc_images}/2017_DaveMorgan_500.jpg"></a> ${g_credit(g=Planetruth Pictures)}
 		(2017)
 	)}
 	)}

@@ -39,8 +39,8 @@ const ContributionChart = ({ data }: any) => {
 
 	// @ts-ignore
 	return <BarChart stacked={true} width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
-	return <ColumnChart stacked={true} width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
-	return <LineChart width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
+	//return <ColumnChart stacked={true} width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
+	//return <LineChart width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
 }
 
 export default ContributionChart;

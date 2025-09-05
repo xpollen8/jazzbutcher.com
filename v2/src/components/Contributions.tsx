@@ -44,7 +44,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 
 	if (justOneResult) {
 		return <>
-			<ContributionChart data={useData} />
+			<ContributionChart data={useData} stacked={true} />
 			{useData?.map(showData)}
 		</>
 	}

@@ -20,7 +20,7 @@ function _fetch () {
 	file=$2
 	echo "#fetching $remote into $TEMP_DIR/$file ($OUTPUT_DIR/$file)"
 	curl -s -o $TEMP_DIR/$file $remote
-	diffResult=$(diff --ignore-all-space --brief $TEMP_DIR/$file $OUTPUT_DIR/$file 2>&1)
+	diffResult=$(diff --brief $TEMP_DIR/$file $OUTPUT_DIR/$file 2>&1)
 	if [ "$diffResult" != "" ]; then
 		OLD=$(/bin/ls -latr $OUTPUT_DIR/$file)
 		NEW=$(/bin/ls -latr $TEMP_DIR/$file)

@@ -1,5 +1,5 @@
 import { type HashedType } from '@/lib/utils';
-import { LineChart } from 'react-chartkick';
+import { BarChart, ColumnChart, LineChart } from 'react-chartkick';
 import 'chartkick/chart.js';
 const ContributionChart = ({ data }: any) => {
 
@@ -31,13 +31,15 @@ const ContributionChart = ({ data }: any) => {
 		const ret = Object?.keys(years)?.map((y: string) => {
 			return [ y, years[y] ]
 		})
-		return [ ret, Math.trunc(maxCount * 1.1) ];
+		return [ ret, Math.trunc(maxCount * 1.0) ];
 	}
 
 	const [ addedData, addedCount ] = chartByAttribute(data, 'added');
 	const [ datetimeData, datetimeCount ] = chartByAttribute(data, 'datetime');
 
 	// @ts-ignore
+	return <BarChart stacked={true} width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
+	return <ColumnChart stacked={true} width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
 	return <LineChart width={'100%'} max={Math.max([ addedCount, datetimeCount ])} data={[{ name: "Event", data: datetimeData }, { name: "Added", data: addedData } ]} />;
 }
 

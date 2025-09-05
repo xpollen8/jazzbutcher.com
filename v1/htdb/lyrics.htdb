@@ -9895,7 +9895,7 @@ Break out and find out tonight.
 #define	running_on_fumes.html
 #live	if (getval(page) = running_on_fumes.html)
 	${lyricsHeader(title=Running on Fumes,
-		video=https://youtube.com/embed/0Wk4tzKjvJ4;;\@PlanetruthPictures;;;;2022-02-03;;Official Video,
+		video=https://youtube.com/embed/0Wk4tzKjvJ4;;Planetruth Pictures;;;;2022-02-03;;Official Video,
 		lyrics=${literalizeCommas(
 
 	Running on fumes, running on fumes, everybody's running on fumes<br />

@@ -37,14 +37,14 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 		return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
 			{(!!photos?.length) ? <PhotoSet title=<Link href={href || ts2URI(datetime)}>{datetime?.substring(0, 10)} {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>  photos={photos?.filter((f: any) => f?.added == added)} /> : 
 			<>
-			<Link className="monospace" href={href} >{datetime?.substring(0, 10) || summary}</Link> {pluralize(count, type, undefined, true)} {caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${added} - `)}
+			<Link className="monospace" href={href} >{datetime?.substring(0, 10) || summary}</Link> {pluralize(count, type, undefined, true)} {caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${added?.substring(0, 10)} - `)}
 			</>}
 		</div>
 	}
 
 	if (justOneResult) {
 		return <>
-			<ContributionChart data={useData} />
+			<ContributionChart data={useData} stacked={true} />
 			{useData?.map(showData)}
 		</>
 	}

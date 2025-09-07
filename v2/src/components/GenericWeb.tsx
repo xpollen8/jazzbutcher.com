@@ -16,6 +16,7 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 	//const cleanGX = <span dangerouslySetInnerHTML={{ __html: cleanG || '' }} />
 	const pattern = new RegExp(/(FMA[A-Z0-9]*)/);
 	const FMAraw = cleanG?.match(pattern);
+	if (g === '-UNKNOWN-') return;
 	return (
 		(x || g || u || parseDate(d)) && <span className={s}>
 			{(t) && <><b>{t}</b>:{' '}</>}

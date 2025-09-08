@@ -1282,7 +1282,7 @@ const	people: HashedType = {
 	rivers: { name: "John A. Rivers" },
 	rodney: { name: "Rodney Allen" },
 	rolo: { name: "Rolo McGinty", aliases: [ "Rolo", "King" ] },
-	russ: { name: "Russell Cooper", aliases: [ "Agent Cooper", "Agent Wilson" ] },
+	russ: { name: "Russell Cooper", aliases: [ "Agent Cooper", "Agent Wilson", "Agent Russell Cooper" ] },
 	russ_agent: { name: "Agent Wilson" },
 	simon: { name: "Simon Taylor" },
 	simon_mawby: { name: 'Simon Mawby' },

@@ -1304,7 +1304,7 @@ const	people: HashedType = {
 	tim_harries: { name: "Tim Harries" },
 	mat_wallis: { name: "Mat Wallis", aliases: [ "Tractor" ] },
 	tom_hall: { href: "/tomhall", name: "Tom Hall", act: true },
-	tony: { name:"Tony Foster" },
+	tony: { name:"Tony Foster", role: [ "'93 tour driver" ] },
 	tops: { name: "The Woodentops", act: true },
 	undertakers: { name: "The Undertakers", act: true },
 	weather: { name: "Weather Prophets", act: true },

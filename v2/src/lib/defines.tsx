@@ -1211,9 +1211,9 @@ const	people: HashedType = {
 	curt: { name: "Curtis E. Johnson", aliases: [ "Curt", "Curtis", "E-Man" ] },
 	curt_eman: { name: "E-Man" },
 	damm: { name: "Von Dämmerung" },
-	deirdre: { name: "Deirdre O'Donoghue" },
-	del: { name: "David Whittemore" },
-	dj: { name: "David J." },
+	deirdre: { name: "Deirdre O'Donoghue", role: [ "saint" ] },
+	del: { name: "David Whittemore", role: [ "photography" ] },
+	dj: { name: "David J.", role: [ "bass", "studio engineer" ] },
 	dooj: { name: "Dooj Wilkinson", aliases: [ "Dooj" ] },
 	eg: { href: '/projects/black_eg', name: 'The Black Eg', act: true },
 	emerson_hunt: { name: "Emerson Hunt" },
@@ -1223,15 +1223,15 @@ const	people: HashedType = {
 	felix: { name: "Felix Ray", aliases: [ "Felix" ] },
 	gab: { name: "Gabriel Turner", aliases: [ "Gabriel", "The Bishop" ] },
 	garofalo: { name: "Steve Garofalo" },
-	gerard: { name: "Gerard Langley" },
+	gerard: { name: "Gerard Langley", act: true },
 	gould: { name: "Greenwood Goulding" },
 	green: { name: "Alex Green" },
 	hask: { name: "Kevin Haskins", aliases: [ "Kevin" ] },
 	hend: { name: "Dave Henderson" },
 	hitch: { name: "Robyn Hitchcock", act: true },
 	hook: { name: "Paul Hookham" },
-	iain: { name: "Iain O'Higgins", aliases: [ "Iain", "O'Higgins" ] },
-	indge: { name: "Alastair Indge" },
+	iain: { name: "Iain O'Higgins", aliases: [ "Iain", "O'Higgins" ], role: [ "live soundman" ] },
+	indge: { name: "Alastair Indge", role: [ "photography" ] },
 	is: { name: "Ian Sturgess" },
 	joby: { name: "Joby Palmer" },
 	joe: { name:"Joe Foster" },
@@ -1253,22 +1253,22 @@ const	people: HashedType = {
 	lix: { name: "Alex Lee", aliases: [ "Lix" ] },
 	ll: { name: "Louis Leroi" },
 	lohan: { name: "Richard Lohan" },
-	loony: { name: "Pascal Legras" },
+	loony: { name: "Pascal Legras", role: [ "album art" ] },
 	lucien: { name: "Lucien Borderline" },
 	mark_hadley: { name: "Mark Hadley" },
 	mark_refoy: { name: "Mark Refoy" },
 	martin_k_daley: { name: "Martin K Daley", aliases: [ "M.K. Daley" ] },
 	max: { name: "Max Eider", aliases: [ "Max", "Eider" ] },
 	max_read: { name: "Max Read" },
-	mercer: { href: "https://www.mickmercer.com", name: "Mick Mercer" },
+	mercer: { href: "http://www.mickmercer.com", name: "Mick Mercer", role: [ "photography" ] },
 	mick: { name: "Mick Packwood" },
-	mike_novakovic: { name: "Mike Novakovic" },
+	mike_novakovic: { name: "Mike Novakovic", role: [ "engineer" ] },
 	mildew: { name: "Downey Mildew", act: true },
-	mitch: { name: "Mitch Jenkins" },
+	mitch: { name: "Mitch Jenkins", role: [ "photography" ] },
 	morgan: { name: "Dave Morgan" },
 	nick: { name: "Nick Burson" },
 	nick_bandy: { name: "Nick Bandy" },
-	novak: { name: "Alex Novak" },
+	novak: { name: "Alex Novak", role: [ "photography" ] },
 	otto: { name: 'Otto Von Dämmerung', aliases: [ "Otto" ] },
 	owen: { name: "Owen Jones", aliases: [ "Owen", "Owen P. Jones" ] },
 	pat: { href: "https://patfish.com", name: "Pat Fish", aliases: [ "Pat", "Butch", "The Butcher", "Headstone" ] },
@@ -1277,9 +1277,9 @@ const	people: HashedType = {
 	paul: { name: "Paul Mulreany", aliases: [ "Mulreany" ] },
 	perfect: { name: "The Perfect Disaster", act: true },
 	pete: { name: "Peter Crouch", aliases: [ "Crouchy" ] },
-	rev: { name: "Martin Stebbing", aliases: [ "Rev. Botus Whiteblood Fleming" ] },
-	richard: { name: "Richard Formby", aliases: [ "Richard" ] },
-	rivers: { name: "John A. Rivers" },
+	rev: { name: "Martin Stebbing", aliases: [ "Rev. Botus Whiteblood Fleming" ], role: [ "live soundman", "studio engineer", "producer" ] },
+	richard: { name: "Richard Formby", aliases: [ "Richard" ], role: [ "guitars", "studio engineer" ] },
+	rivers: { name: "John A. Rivers", role: [ "studio engineer", "producer" ] },
 	rodney: { name: "Rodney Allen" },
 	rolo: { name: "Rolo McGinty", aliases: [ "Rolo", "King" ] },
 	russ: { name: "Russell Cooper", aliases: [ "Agent Cooper", "Agent Wilson", "Agent Russell Cooper" ] },
@@ -1313,8 +1313,8 @@ const	people: HashedType = {
 //
 //	producers/engineers/soundmen/other
 //
-	proctor: { name: "Steve Proctor" },
-	howy: { name: "Howard Turner" },
+	proctor: { name: "Steve Proctor", role: [ "producer" ] },
+	howy: { name: "Howard Turner", role: [ "studio engineer" ] },
 	dronesclub: { href: "https://thedronesclub.co.uk/", name: "The Drones Club", act: true },
 	space: { href: "http://www.spiritualized.com/", name: "Spacemen 3", act: true },
 	tractors: { href: "http://www.geocities.com/Nashville/Stage/8818/favorite.htm", name: "Stranger Tractors", act: true },
@@ -1340,9 +1340,10 @@ export const peopleArray = Object.keys(people)?.map((lookup: string) => {
 	const obj: any = people[lookup];
 	const href = obj?.href || `/conspirators/${obj?.name}`;
 	const aliases = [ obj?.name, ...(obj?.aliases || []) ];
+	const roles = obj?.role;
 	const add = aliases?.map((name: string) => ({ href, lookup, name, aliases, snake: snake(name) })) || [];
 	const isAnAlias = allAliases?.includes(obj?.name);
-	return [ {...obj, isParent: true && !isAnAlias, href, lookup, aliases, snake: snake(obj?.name) }, ...add ];
+	return [ {...obj, isParent: true && !isAnAlias, href, lookup, aliases, snake: snake(obj?.name), roles }, ...add ];
 }).flat();
 
 const otherArray = [

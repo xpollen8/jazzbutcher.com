@@ -1221,7 +1221,7 @@ const	people: HashedType = {
 	erol: { name: "Erol Suleyman" },
 	felce: { name: "Dave Felce" },
 	felix: { name: "Felix Ray", aliases: [ "Felix" ] },
-	gab: { name: "Gabriel Turner", aliases: [ "Gabriel" ] },
+	gab: { name: "Gabriel Turner", aliases: [ "Gabriel", "The Bishop" ] },
 	garofalo: { name: "Steve Garofalo" },
 	gerard: { name: "Gerard Langley" },
 	gould: { name: "Greenwood Goulding" },

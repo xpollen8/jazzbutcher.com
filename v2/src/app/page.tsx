@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import EmbedMedia from '@/components/EmbedMedia';
 import Header from '@/components/Header';
 import ReleaseBlurb from '@/components/ReleaseBlurb';
 import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
@@ -46,6 +47,12 @@ const Home = (): React.ReactNode =>
 				<div className="border p-3 bg-slate-100">
 						<Memorial home={true} />
 				</div>
+				<EmbedMedia data={{
+					mediaurl: 'https://www.youtube.com/embed/tobI5zzi5M8',
+					song: 'The Good Ones',
+					mediacredit: 'Dhiren Basu',
+					added: '2020-05-27',
+					}} />
 				<OnThisDay />
 				<MostRecentNews />
 				<RecentUpdates />

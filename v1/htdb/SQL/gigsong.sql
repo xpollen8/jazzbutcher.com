@@ -198,7 +198,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1985-04-04 00:00:00','set',NULL,1,7,'Partyti
 INSERT INTO `gigsong` VALUES (NULL,'1985-04-04 00:00:00','set',NULL,1,8,'Mind Like A Playgroup',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-04-04 00:00:00','set',NULL,1,9,'My Time',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
-INSERT INTO `gigsong` VALUES (NULL,'1985-04-12 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,'1st gen analog sbd recording digital transfer 2021-12',NULL,'https://v1.jazzbutcher.com/audio/19850412/19850412_JazzButcher_Nuremberg_anothermadelfmaster.mp3','another madelf master',NULL,NULL,"2025-09-07");
+INSERT INTO `gigsong` VALUES (NULL,'1985-04-12 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,'1st gen analog sbd recording digital transfer 2021-12',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19850412/19850412_JazzButcher_Nuremberg_anothermadelfmaster.mp3','another madelf master',NULL,NULL,"2025-09-07");
 INSERT INTO `gigsong` VALUES (NULL,'1985-04-12 00:00:00','set',NULL,1,01, "Southern Mark Smith",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-04-12 00:00:00','set',NULL,1,02, "The Jazz Butcher Meets the Prime Minister",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1985-04-12 00:00:00','set',NULL,1,03, "Bigfoot Motel",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -4782,8 +4782,8 @@ INSERT INTO `gigsong` VALUES (NULL,'2017-09-22 00:00:00','set',NULL,1,5,'She\'s 
 INSERT INTO `gigsong` VALUES (NULL,'2017-09-22 00:00:00','set',NULL,1,6,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2017-09-22 00:00:00','set',NULL,1,7,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2017-09-22 00:00:00','set',NULL,1,8,'Quality People','Wilson',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','encore',NULL,1,1,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','encore',NULL,1,2,'Thoughtless Kind','John Cale',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,"https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/20171020/20171020_JazzButcher_Glasgow_anothermadelfmaster.mp3","another madelft master",NULL,NULL,"2025-09-07");
 INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','set',NULL,1,1,'The Highest in the Land',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','set',NULL,1,2,'Holiday',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','set',NULL,1,3,'Black Raoul',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -4792,6 +4792,10 @@ INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','set',NULL,1,5,'She\'s 
 INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','set',NULL,1,6,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','set',NULL,1,7,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','set',NULL,1,8,'Quality People','Wilson',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','encore',NULL,1,1,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2017-10-20 19:00:00','encore',NULL,1,2,'Thoughtless Kind','John Cale',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+
 INSERT INTO `gigsong` VALUES (NULL,'2017-10-21 19:30:00','encore',NULL,1,1,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2017-10-21 19:30:00','encore',NULL,1,2,'Thoughtless Kind','John Cale',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2017-10-21 19:30:00','set',NULL,1,1,'The Highest in the Land',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

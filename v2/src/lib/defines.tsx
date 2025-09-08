@@ -1255,7 +1255,7 @@ const	people: HashedType = {
 	lohan: { name: "Richard Lohan" },
 	loony: { name: "Pascal Legras", role: [ "artwork" ] },
 	lucien: { name: "Lucien Borderline", role: [ "photography" ] },
-	mark_hadley: { name: "Mark Hadley" },
+	marc_hadley: { name: "Marc Hadley", aliases: [ "Louis Leroi" ] },
 	mark_refoy: { name: "Mark Refoy" },
 	martin_k_daley: { name: "Martin K Daley", aliases: [ "M.K. Daley" ] },
 	max: { name: "Max Eider", aliases: [ "Max", "Eider" ] },
@@ -1326,10 +1326,6 @@ const	people: HashedType = {
 	eno: { name: "Brian Eno", act: true },
 	rocket: { name: "Love And Rockets", act: true },
 	levit: { name: "Levitation", act: true },
-//
-//	artwork
-//
-	dave_coverly: { href: "https://www.speedbump.com/", name: "Dave Coverly" },
 };
 
 const snake = (s: string) => s?.toLowerCase()?.replace(/[^a-zA-Z ]/g, '').replace(/ /g, '_');
@@ -1349,6 +1345,7 @@ export const peopleArray = Object.keys(people)?.map((lookup: string) => {
 const otherArray = [
 	{ name: 'Brian Kelly', lookup: 'Brian Kelly' },
 	{ name: 'James Duval', lookup: 'James Duval', aliases: [ 'Jimmy Duval', 'Duval' ] },
+	{ href: "https://www.speedbump.com/", name: "Dave Coverly" },
 ]?.map((obj: any) => {
 	const lookup = obj?.lookup;
 	const href = `/contributions/${lookup}`;

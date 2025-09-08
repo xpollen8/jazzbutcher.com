@@ -1335,12 +1335,14 @@ const	people: HashedType = {
 const snake = (s: string) => s?.toLowerCase()?.replace(/[^a-zA-Z ]/g, '').replace(/ /g, '_');
 
 // @ts-ignore
+const allAliases = Object.keys(people)?.map((lookup: string) => people[lookup]?.aliases).flat().filter((f: any) => f);
 export const peopleArray = Object.keys(people)?.map((lookup: string) => {
 	const obj: any = people[lookup];
 	const href = obj?.href || `/conspirators/${obj?.name}`;
 	const aliases = [ obj?.name, ...(obj?.aliases || []) ];
 	const add = aliases?.map((name: string) => ({ href, lookup, name, aliases, snake: snake(name) })) || [];
-	return [ {...obj, isParent: true, href, lookup, aliases, snake: snake(obj?.name) }, ...add ];
+	const isAnAlias = allAliases?.includes(obj?.name);
+	return [ {...obj, isParent: true && !isAnAlias, href, lookup, aliases, snake: snake(obj?.name) }, ...add ];
 }).flat();
 
 const otherArray = [

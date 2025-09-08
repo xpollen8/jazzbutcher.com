@@ -19,7 +19,7 @@ const Conspirators = () => {
 		<main>
 			<SectionOptions section='conspirators' />
 			{peopleArray.filter((p: any) => !p.act && p.isParent ).sort(sortByLastName).map((person: any, key: number) => {
-				const { name, href, lookup } = person;
+				const { name, href, lookup, roles } = person;
 				const letter = name.split(' ').pop().substring(0, 1);
 				let banner;
 				if (letter !== lastLetter) {
@@ -28,7 +28,7 @@ const Conspirators = () => {
 				}
 				return <div key={key}>
 					{banner}
-					<Link className="ml-5" href={href}>{name}</Link>
+					<Link className="ml-5" href={href}>{name}</Link> {(roles?.length) && <> - {roles.join(', ')}</>}
 				</div>
 			})}
 		</main>

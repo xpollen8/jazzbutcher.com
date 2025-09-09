@@ -53,7 +53,7 @@ const Contributions = (props: any) => {
 	const [ sortBy,setSortBy ] = useState('total');
 
   const { data, isLoading, error} = useContributions({ all: true });
-  if (!data) return;
+  //if (!data) return;
 
   const { gigmedia, gigtext, gigsong, press, pressmedia, media, lyricmedia } = data || {};
   const contributions: HashedType = {};

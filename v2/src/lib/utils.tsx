@@ -111,18 +111,25 @@ export const prettyDate = (dt: string) => moment.utc(dt).format("ddd, MMM Do YYY
 
 export const dateDisplay = (dt?: string, sep: string = ' - ') => {
 	const [orig, iy,im,id,ihh,imm,iss, unknownYear, unknownMonth, unknownDay]: any = parseDate(dt) || [];
-	if (!unknownYear) {
-		const padDate = (dt: number[]) => {
-			const [iy,im,id,ihh,imm,iss] = dt || [];
-			return localDate(`${iy}-${padZero(im)}-${padZero(id)} ${padZero(ihh)}:${padZero(imm)}:${padZero(iss)}`);
-		}
-		const display = (orig?.length < 10) ? orig : padDate([iy,im,id,ihh,imm,iss]);
-		return (<>
-			{sep}
-			<span className="date">{prettyDate(display)}</span> <span className={`date ${unknownDay} ${unknownMonth}`} />
-		</>)
+	if (unknownYear?.length) { return <span className={`date ${unknownYear}`} /> }
+	const padDate = (dt: number[]) => {
+		const [iy,im,id,ihh,imm,iss] = dt || [];
+		return localDate(`${iy}-${padZero(im)}-${padZero(id)} ${padZero(ihh)}:${padZero(imm)}:${padZero(iss)}`);
 	}
-	return <span className={`date ${unknownYear}`} />
+	const padded = padDate([iy,im,id,ihh,imm,iss]);
+	let display;
+	if (unknownDay?.length) {
+		display = padded?.substring(0, 7); // 1990-01
+	} else if (unknownMonth?.length) {
+		display = iy;
+	} else {
+		display = prettyDate(padded);
+	}
+
+	return (<>
+		{sep}
+		<span className="date">{display}</span> <span className={`date ${unknownDay} ${unknownMonth}`} />
+	</>)
 }
 
 export const dateAgo = (dt?: string, sep: string = ' - ', prefix: string = '') => {

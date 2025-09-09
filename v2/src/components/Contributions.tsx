@@ -9,6 +9,8 @@ import PhotoSet from '@/components/PhotoSet';
 import PressCards from '@/components/PressCards';
 import ContributionChart from '@/components/ContributionChart';
 
+const cleanDate = (dt?: string) => dt?.substring(0, 10)?.replace(/-00/g, '');
+
 const InPress = ({ inpress, name }: any) => {
 	if (!inpress?.numResults) return;
 	return <PressCards title={pluralize(inpress.numResults, 'press article', `"${name}" appears in`)} preventAutoExpand={true} items={inpress?.results?.map((p: any) => {
@@ -35,9 +37,9 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 			}
 		});
 		return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
-			{(!!photos?.length) ? <PhotoSet title=<Link href={href || ts2URI(datetime)}>{datetime?.substring(0, 10)} {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>  photos={photos?.filter((f: any) => f?.added == added)} /> : 
+			{(!!photos?.length) ? <PhotoSet title=<Link href={href || ts2URI(datetime)}>{cleanDate(datetime)} {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>  photos={photos?.filter((f: any) => f?.added == added)} /> : 
 			<>
-			<Link className="monospace" href={href} >{datetime?.substring(0, 10) || summary}</Link> {pluralize(count, type, undefined, true)} {caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${added?.substring(0, 10)} - `)}
+			<Link className="monospace" href={href} >{cleanDate(datetime) || summary}</Link> {pluralize(count, type, undefined, true)} {caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
 			</>}
 		</div>
 	}

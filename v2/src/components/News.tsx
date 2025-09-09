@@ -25,10 +25,8 @@ const recentNews = [
 		category: 'maintenance',
 		credit: 'David Whittemore',
 		body: <>
-			Want to know who played when? Want to see what your favorite Conspirator looks like?
-			I finally updated the <Link href={`/conspirators`}><b>Conspirators</b></Link> section.
-			<p />
-			Now, I need to tag more photos so that they get picked up and displayed.
+			Want to know who played when? What your favorite musician looks like?
+			See the updated <Link href={`/conspirators`}><b>Conspirators</b></Link> section.
 			<p />
 		</>
 	},

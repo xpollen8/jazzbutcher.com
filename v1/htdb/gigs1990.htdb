@@ -617,7 +617,7 @@
 			David Whittemore
 		,
 		photosets= /images/19901111/1990Nov11_pat.jpg$$
-			/images/19901111/1990Nov11_alex.jpg$$
+			/images/19901111/1990Nov11_alex.jpg;;Alex Green$$
 			David Whittemore;;;;1997-11-19
 		,
 		with=${literalizeCommas( The Blue Aeroplanes )},

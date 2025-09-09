@@ -53,7 +53,7 @@
 	recording=${literalizeCommas( ${q(7)}, ${p(C)}, ${i(C)}, ${mt}, ${DAT}, ${g_details(g=bad mix after ${angels})})},
 		who=${literalizeCommas( ${pat}, ${pete} )},
 		photosets= /images/19920425/19920425_del_pat.jpg$$
-			/images/19920425/19920425_del_pete.jpg$$
+			/images/19920425/19920425_del_pete.jpg;;Peter Crouch$$
 			David Whittemore;;;;2013-06-22
 
 	)}

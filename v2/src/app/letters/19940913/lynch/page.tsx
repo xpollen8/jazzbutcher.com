@@ -2,9 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import {
-	angels, dooj, honey, blue
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -32,12 +30,11 @@ const Letter = () =>
 		people (well, a person) are buying our stuff so far from
 		home!  Hope you like it there.
 		<p />
-		The &quot;Heaven&quot; bit on {angels} is, of course, a total steal
-		from <b>Eraserhead</b>.  It was {dooj}&apos;s idea, and it
+		The &quot;Heaven&quot; bit on {expand('angels')} is, of course, a total steal
+		from <b>Eraserhead</b>.  It was {expand('dooj')}&apos;s idea, and it
 		fitted perfectly with the mood of the time.  There it is.
 		<p />
-		See also the <b>Twin Peaks</b> reference in {honey} on
-		{blue}
+		See also the <b>Twin Peaks</b> reference in {expand('honey')} on {expand('blue')}.
 		By the way, George,
 		David Lynch
 		and Laurie Anderson use the same pet-psychologist.

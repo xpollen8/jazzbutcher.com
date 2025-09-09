@@ -1,9 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import {
-	del
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -21,7 +19,7 @@ const Letter = () =>
 		&gt; has ever created&apos;
 		</samp>
 		<blockquote className="annotation">
-		As {del}
+		As {expand('del')}
 		pointed out &quot;Why Vote For The Lesser Evil?&quot; is a slogan
 		from a crazed bunch of Americans who set up their own
 		political &quot;party&quot; at the last election.  The party, in fact,

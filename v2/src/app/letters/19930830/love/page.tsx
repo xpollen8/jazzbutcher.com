@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import { cave, bake, baltic, ben, braind, chang, coonce, davis, dooj, ghost, iain, kill, mall, nick, pat, penguin, pete, richard, stat, sweet, whad, } from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -12,7 +12,7 @@ const Letter = () =>
 		<div className="border">
 			<div className="flex flex-wrap justify-around">
 				<div className="m-1">
-					<Link href="https://v1.jazzbutcher.com/images/lovebus.jpg">
+					<Link href="/images/lovebus.jpg">
 						<Image alt="album cover" width={250} height={250} src="https://v1.jazzbutcher.com/images/lovebus.jpg" />
 					</Link>
 				</div>
@@ -22,7 +22,7 @@ const Letter = () =>
 			</div>
 		</div>
 		<a id="davis" />
-		{davis}
+		{expand('davis')}
 		<blockquote className="annotation">
 			Rosemary Davis, actress, writer and producer,
 			edited the original BBC Sound Effects records.  Today
@@ -30,7 +30,7 @@ const Letter = () =>
 			seem to come from another world.
 		</blockquote>
 		<a id="baker" />
-		{bake}
+		{expand('bake')}
 		<blockquote className="annotation">
 			Bakersfield is a place a couple of hours north of Los
 			Angeles where seekers after Purity Of Tone stand in
@@ -38,12 +38,12 @@ const Letter = () =>
 			bars of this fine and patriotic borough, and maybe stopping
 			by at one of its lifestyle motel complexes.  This particular
 			tune was inspired by a conversation in Boardner&apos;s Bar,
-			Hollywood, with {iain} and {coonce} of the {braind},
+			Hollywood, with {expand('iain')} and {expand('coonce')} of the {expand('braind')},
 			whose subsequent attempts to lend decency to the whole
 			concept are never going to wash with this writer.
 		</blockquote>
 		<a id="kids" />
-		{mall}
+		{expand('mall')}
 		<blockquote className="annotation">
 			The JBC spent New Year&apos;s Eve 1992 in Kaliningrad, a
 			rocking city of the old U.S.S.R., largely populated
@@ -52,45 +52,45 @@ const Letter = () =>
 			else altogether.
 		</blockquote>
 		<a id="whad" />
-		{whad}
+		{expand('whad')}
 		<blockquote className="annotation">
 			A true story.  Whaddya want?  A diagram?
 		</blockquote>
 		<a id="sweet" />
-		{sweet}
+		{expand('sweet')}
 		<blockquote className="annotation">
 			Inspired by and dedicated - in part - to the Sweetwater
 			Springs Saloon in Los Osos, California, a splendid rockin&apos;
 			redneck shed, which we heartily recommend to all pompous
 			English whiteboy groups trying to &quot;crack the market
-			Stateside&quot;.  If you&apos;re going to play {cave},
+			Stateside&quot;.  If you&apos;re going to play {expand('cave')},
 			sooner or later you&apos;re going to hurt
 			yourself; far better to stand in a giant refrigerator
 			with six bottles of Jaegermeister and your crew.
 		</blockquote>
 		<a id="ghosts" />
-		{ghost}
+		{expand('ghost')}
 		<blockquote className="annotation">
 			Why does the modern simpleton assume that he&apos;s causing
 			you a problem by killing you?  Inter mortuos nil nisi
 			bonum.
 		</blockquote>
 		<a id="baltic" />
-		{baltic}
+		{expand('baltic')}
 		<blockquote className="annotation">
 			I&apos;m not sure where this came from, and I&apos;m vaguely resentful
 			of the fact.  I suppose it imagines itself to well fin-de-siecle.
 			Hey! We&apos;re so doomed we&apos;ve learned to love it.
 		</blockquote>
 		<a id="kill" />
-		{kill}
+		{expand('kill')}
 		<blockquote className="annotation">
 			Imagine how RUDE it would be to die in someone else&apos;s
 			apartment.  Imagine how much BOTHER it could cause them.
 			Imagine how much you&apos;d CARE.
 		</blockquote>
 		<a id="ben" />
-		{ben}
+		{expand('ben')}
 		<blockquote className="annotation">
 			Written in January, after hearing some extraordinary
 			remarks from ordinarily decent people concerning a character
@@ -103,11 +103,11 @@ const Letter = () =>
 			the name this time.
 		</blockquote>
 		<a id="penguins" />
-			{penguin}
+			{expand('penguin')}
 		<div className="flex flex-wrap px-5">
-			<Image alt="a penguin" height={59} width={52} src="https://v1.jazzbutcher.com/images/penguin.gif" />
-			<Image alt="a penguin" height={59} width={52} src="https://v1.jazzbutcher.com/images/penguin.gif" />
-			<Image alt="a penguin" height={59} width={52} src="https://v1.jazzbutcher.com/images/penguin.gif" />
+			<Image alt="a penguin" height={59} width={52} src="/images/penguin.gif" />
+			<Image alt="a penguin" height={59} width={52} src="/images/penguin.gif" />
+			<Image alt="a penguin" height={59} width={52} src="/images/penguin.gif" />
 		</div>
 		<blockquote className="annotation">
 			In the most desolate place in the world they are standing
@@ -118,7 +118,7 @@ const Letter = () =>
 		</blockquote>
 		<p className="clear_float" />
 		<a id="chang" />
-		{chang}
+		{expand('chang')}
 		<blockquote className="annotation">
 			Wrestling with life in Post-Historical Universe, we
 			cast around awhile among some of the more extreme options
@@ -132,7 +132,7 @@ const Letter = () =>
 			No Home?  Why vote for the Lesser Evil?
 		</blockquote>
 		<a id="station" />
-		{stat}
+		{expand('stat')}
 		<blockquote className="annotation">
 			The inevitable and inglorious consequences of ill-conceived
 			short firm triumphalist capitalism considered at some
@@ -141,7 +141,7 @@ const Letter = () =>
 			and taking its time about it.  Sincerity quotient high,
 			reverbs lengthy.
 		</blockquote>
-		{davis} (Slight Return)
+		{expand('davis')} (Slight Return)
 		<blockquote className="annotation">
 			We can go out the way we came in, but we had best go
 			a bit more quietly.  I think that chap in the baseball
@@ -149,21 +149,21 @@ const Letter = () =>
 		</blockquote>
 		<LetterHeader title="L.P. LINE-UP:" subhead="Who did what" />
 			<p>
-				{richard}: Fender Jaguar, Gibson Firebird, Burns XII String,
+				{expand('richard')}: Fender Jaguar, Gibson Firebird, Burns XII String,
 				Tapes and effects, engineering, production.
 			</p>
 			<p>
-				{pat}: Fender Telecaster, Fender Jaguar, Yamaha SF800,
+				{expand('pat')}: Fender Telecaster, Fender Jaguar, Yamaha SF800,
 				Keyboards, Percussion, programming, voice, engineering.
 			</p>
 			<p>
-				{pete}: Fender Stratocaster, Yamaha SF800, Burns XII String.
+				{expand('pete')}: Fender Stratocaster, Yamaha SF800, Burns XII String.
 			</p>
 			<p>
-				{dooj}: Wal Bass Guitar, Voice.
+				{expand('dooj')}: Wal Bass Guitar, Voice.
 			</p>
 			<p>
-				{nick}: The Drums.
+				{expand('nick')}: The Drums.
 			</p>
 	</main>
 	<Footer />

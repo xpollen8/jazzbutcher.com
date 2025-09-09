@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import { loony, smiff, smith, rolo, tops, owen } from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -20,7 +20,7 @@ const Letter = () =>
 			&gt; Pat? Trip dispenser? Surely he couldn&apos;t mean...  ? I asked<br />
 			&gt; Pat last time he was in town: &quot;Is Pat-Trip Dispenser about<br />
 			&gt; you?&quot; The cryptic response: &quot;Well, Smith does shout &apos;McGinty!&apos;<br />
-			&gt; at the end.  And {smiff} was released the week<br />
+			&gt; at the end.  And {expand('smiff')} was released the week<br />
 			&gt; before.&quot; (Or was it the week after? I can&apos;t remember.)<br />
 			&gt; So: What&apos;s this &quot;McGinty&quot; stuff? Was this two bands slaggign<br />
 			&gt; each other off on vinyl? Was Pat bonking Brixie? (After all,<br />
@@ -29,13 +29,13 @@ const Letter = () =>
 		</samp>
 		<p />
 		<blockquote className="annotation">
-			We put out the single {smith} in the autumn of 1983.  The
+			We put out the single {expand('smith')} in the autumn of 1983.  The
 			Fall&apos;s <b>C.R.E.E.P.</b>, with <i>Pat, Trip Dispenser</i>
 			on the b-side, came out about the same time.  Therefore,
 			I feel that it must have been recorded some time BEFORE
 			the Fall could have heard our single.  Our bassist at
-			the time (and on the single) was none other than {rolo}
-			({tops}).  Accordingly, the combination of the Fall title
+			the time (and on the single) was none other than {expand('rolo')}
+			({expand('tops')}).  Accordingly, the combination of the Fall title
 			and Smith&apos;s strangled cries of &quot;McGinty!&quot; on the record
 			did make for rather spooky listening, but I believe it&apos;s
 			just a co-incidence.  A little later we received a letter
@@ -44,7 +44,7 @@ const Letter = () =>
 			them.  No one ever had sex with Brix (honest!), but she
 			did punch Mr Jones in the head once.  Coming off stage
 			at a show in <Link href="/gigs/1985/Mar7.html"><b>Hammersmith
-			Town Hall</b> in March &apos;85</Link>, {owen} was a touch peeved
+			Town Hall</b> in March &apos;85</Link>, {expand('owen')} was a touch peeved
 			about the fact that he&apos;d just had to play for forty five
 			minutes with no monitor mix worthy of the name, and,
 			in disgust, KICKED open the door to what he thought was
@@ -53,7 +53,7 @@ const Letter = () =>
 			alarmed Brixie.  After she realised what had happened,
 			though, she chilled right out and gave him a BIG KISS.
 			<p />
-			{loony} has always been a Fall fan (well, you DO, don&apos;t
+			{expand('loony')} has always been a Fall fan (well, you DO, don&apos;t
 			you?) and was very happy to start working with them a
 			couple of years ago, but I don&apos;t actually know how this
 			came to pass.  We&apos;re not really in touch with The Fall right now.

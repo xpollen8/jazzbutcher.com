@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import { bacon, ben, pete, girls, creat } from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -42,16 +42,16 @@ const Letter = () =>
 			he left the group I&apos;ve been practising really hard on
 			the guitar, to the point where I&apos;ve just about reached
 			the general sort of standard that Max displayed back
-			on {bacon}.  You know, you discover things on a guitar
+			on {expand('bacon')}.  You know, you discover things on a guitar
 			and you sort of think &quot;Oh, YEAAAH - I see what he was
-			up to...&quot;  So now and again (check the intro to {ben},
+			up to...&quot;  So now and again (check the intro to {expand('ben')},
 			for example) I do &quot;impressions&quot;.
 			<p />
 			But, yeh, obviously that kind of guitar playing was kinda
 			special to the JBC, so if we can still have a bit of
 			that sort of thing on our discs, even though Max isn&apos;t
-			there to do it, well, of course that&apos;s nice.  (Check {pete}&apos;s
-			solo on {girls}, for another example I&apos;ve just thought of.)
+			there to do it, well, of course that&apos;s nice.  (Check {expand('pete')}&apos;s
+			solo on {expand('girls')}, for another example I&apos;ve just thought of.)
 			And it...well...it hardly suggests that I want to bury
 			or disavow the Eider sound, and I certainly wouldn&apos;t
 			slag it off.  So I&apos;d argue that post-Eider Revisionism
@@ -78,7 +78,7 @@ const Letter = () =>
 			by a crooked Californian Record Company run by a crooked
 			Australian.  The JBC were actually
 			about three hours from signing with the same people at
-			that time.  We never signed, and escaped to {creat}.
+			that time.  We never signed, and escaped to {expand('creat')}.
 			It&apos;s a lottery, this game.
 			<p />
 			There are no huge great dark lurking things about the

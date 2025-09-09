@@ -1,16 +1,14 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import {
-	gab, gerard, aero, dooj, eg, filth, green, hend, karel, strange, vu,
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Sep94;;/letters/19940913', 'Gigs' ] } />
 	<main>
-		{green} now fully re-assimilated into live line-up, alongside
-		{dooj}, {gab}, {hend} and myself.  Since when we have played:
+		{expand('green')} now fully re-assimilated into live line-up, alongside
+		{expand('dooj')}, {expand('gab')}, {expand('hend')} and myself.  Since when we have played:
 		<p />
 		<Link href="/gigs/1994/Sep.html">
 		<b>FESTIVAL ROCK AU MAXIMUM, CLERMONT-FERRAND, FRANCE</b></Link>
@@ -19,7 +17,7 @@ const Letter = () =>
 		bill; The Posies, who all wore dresses, and Nyan Ferties,
 		who, being Scots, all wore kilts.  Thus, it was left to the
 		JBC to wear the trousers, which we duly did.  Dooj&apos;s were
-		exceptional.  {filth} made its live debut and worked well.
+		exceptional.  {expand('filth')} made its live debut and worked well.
 		</blockquote>
 		<b>FRIDGE TWO at SLURPS, NORTHAMPTON</b>
 		<Link href="/gigs/1994/Aug3.html">
@@ -32,7 +30,7 @@ const Letter = () =>
 		yard where we played; it looked more &quot;Apocalypse Now!&quot; to
 		me, with all the drunks stumbling about in the psychedelic
 		half-dark, but I guess early Floyd is pretty cool, too.  A
-		deliberately good-natured set, complete with gratuitous {vu}
+		deliberately good-natured set, complete with gratuitous {expand('vu')}
 		cover right at the top.
 		</blockquote>
 		<Link href="/gigs/1994/Aug6.html">
@@ -42,9 +40,9 @@ const Letter = () =>
 		recording commitments prevented them.  Instead their
 		collaborator, Dave Kirby, presented his live sound system.
 		On the dark and stormy night, under lights, it was hypnotic.
-		{eg}, on the other hand,
+		{expand('eg')}, on the other hand,
 		were just chaotic.
-		Amid rumours that {karel}
+		Amid rumours that {expand('karel')}
 		was being impersonated by someone else, and
 		confusion as to the origins of the mystery live vocals that
 		had no visible source, violence broke out between the
@@ -86,11 +84,11 @@ const Letter = () =>
 		<br />26 Jul 94</Link>
 		<blockquote>
 		Nearly forgot this one, as it came before Northampton and London.
-		A smallish crowd, but perfectly formed.  All of {strange}
+		A smallish crowd, but perfectly formed.  All of {expand('strange')}
 		showed up with wives, girlfriends and family pets, as did
-		half {aero}, and Donald Ross-Skinner.  We played well, the
+		half {expand('aero')}, and Donald Ross-Skinner.  We played well, the
 		P.A. was fine, and the party afterwards was long.
-		{hend}, Dylan nut, had been warned not to talk {gerard} about
+		{expand('hend')}, Dylan nut, had been warned not to talk {expand('gerard')} about
 		the Big Z., but went ahead and did it anyway.  Most
 		amusing.
 		</blockquote>

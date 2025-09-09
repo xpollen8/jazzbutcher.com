@@ -2,14 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { AU, FIDDLER, } from '@/lib/defines';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const tapes = [
-	{ uri: "/gigs/1993/Mar11.html", text: `Szene Wien, Vienna, ${AU} - March 1993` },
+	{ uri: "/gigs/1993/Mar11.html", text: `Szene Wien, Vienna, Austria - March 1993` },
 	{ uri: "/gigs/1992/Jun5.html", text: "Roxy Theatre, Hollywood, California - June 1992" },
 	{ uri: "/gigs/1992/Jun13.html", text: "Liberty Lunch, Austin, Texas - June 1992" },
-	{ uri: "/gigs/1993/May15.html", text: `${FIDDLER} Acoustic Room, London - May 1993` },
+	{ uri: "/gigs/1993/May15.html", text: "Mean Fiddler Acoustic Room, London - May 1993" },
 	{ uri: "/gigs/1992/Jun26.html", text: "Black Eg, Chicago Radio Session - June 1992" },
 	{ uri: "/gigs/1992/Jun3.html", text: "Sweetwater Saloon, Los Osos, California - June 1992" },
 ];

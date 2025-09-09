@@ -3,15 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import {
-	del, gloop, engine, zombie, gold, party, scandal, dist, sex, hask, rumour,
-	AU, DE, FIDDLER, HO, aero, angels, astor, bacon, bait, bake, baltic, ben, blue,
-	braind, bus, chang, chick, conspir, coonce, creat, cult, davis, dj, dooj, drugs,
-	ed, eno, fall, family, fishco, ghost, girls, good, go, green, hamburg, haus, hour,
-	iain, joea, joe, jules, kathie, kill, kizzy, larry, levit, lineo, lix,
-	mall, max, mbv, momus, nick, odd, owen, pat, paul, penguin, pete, planet, richard, rivers,
-	rodney, sa, shame, sis, sonic, stat, strange, sue, sweet, vu, walk, weather, whad, world,
-} from '@/lib/defines';
+import { expand, } from '@/lib/defines';
 
 const Letter = () =>  {
 	return ( <>
@@ -38,17 +30,17 @@ const Letter = () =>  {
 			<a id="bath" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/bath.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/bath_250.jpg" width={250} height={250} alt="album cover" />
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/bath_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" />
 				</Link>
-			{bacon}
+			{expand('bacon')}
 				<p />
 				The one nobody ever talks about, even though a surprising
 				number of you seem to have it.  Recorded for just &#163;300
 				(Kevin Shields please take note...), it&apos;s really just
 				the sound of a few mates failing to take seriously the
-				fact they they&apos;ve got an l.p. to make.  {gloop} and the
-				unfinished {engine} make me squirm a fair bit, but {zombie},
-				{gold} and {party} have all been good friends.  It seems
+				fact they they&apos;ve got an l.p. to make.  {expand('gloop')} and the
+				unfinished {expand('engine')} make me squirm a fair bit, but {expand('zombie')},
+				{expand('gold')} and {expand('party')} have all been good friends.  It seems
 				VERY early eighties now, but you must remember that there
 				was a LOT of crap for us to clear out of the way in those days.
 				<p className="clear_float" />
@@ -57,11 +49,11 @@ const Letter = () =>  {
 			<a id="scandal" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/scandal_front.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/scandal_front_250.jpg" width={250} height={250} alt="album cover" />
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/scandal_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" />
 				</Link>
-			{scandal}
+			{expand('scandal')}
 				<p />
-				The Albatross.  Since the recording of {bacon} (almost
+				The Albatross.  Since the recording of {expand('bacon')} (almost
 				two years before this one) we had become a &quot;proper&quot;
 				group.  For all that, we still pooled our skills in
 				the studio, and this isn&apos;t a bad two weeks&apos; work.  I
@@ -81,17 +73,17 @@ const Letter = () =>  {
 			<a id="sex" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/releases/sex_front.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/sex_front_250.jpg" width={250} height={250} alt="album cover" /></Link>
-			{sex}
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/sex_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+			{expand('sex')}
 				<p />
-				One day&apos;s rehearsal in {hask}&apos;s living room, five days&apos;
+				One day&apos;s rehearsal in {expand('hask')}&apos;s living room, five days&apos;
 				recording and two days&apos; mixing was all it took for us
 				to make my favourite of the Glass records.  Now that
 				the band had done a few dates with decent p.a. systems
 				and stuff, I was beginning to have some sort of a bead
 				on this singing business.  Also, having exhausted the
-				initial stick of JB songs (several of the {scandal} tunes
-				had actually been written at the time of {bacon}, but
+				initial stick of JB songs (several of the {expand('scandal')} tunes
+				had actually been written at the time of {expand('bacon')}, but
 				were rejected back then as needing further development),
 				I was obliged for the first time to write about my life
 				as it was at the time, which was very different to the
@@ -100,12 +92,12 @@ const Letter = () =>  {
 				Europe... I even started to write songs that were not
 				self-consciously deferential and mocking.  Hence, I
 				guess, the arrival of the first recorded &quot;big ballad&quot;
-				in {rumour}, where {dj}&apos;s harmonies at the end STILL give
+				in {expand('rumour')}, where {expand('dj')}&apos;s harmonies at the end STILL give
 				me the shivers.  I think that now we had started to
 				learn about actually creating recordings rather than
 				just recording the sound of a bunch of pals fooling
 				around, and the disc does have a nice, unified feel.
-				Credit {rivers} for his high-speed mixing job.  When
+				Credit {expand('rivers')} for his high-speed mixing job.  When
 				I think about it, this l.p. doesn&apos;t really have any
 				&quot;great&quot; tunes, in the sense of numbers that people request
 				or whatever, but it has a nice totality, a good, atmospheric
@@ -116,8 +108,8 @@ const Letter = () =>  {
 			<a id="dist" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/gentle.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/gentle_250.jpg" width={250} height={250} alt="album cover" /></Link>
-			{dist}
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/gentle_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+			{expand('dist')}
 				<p />
 				A Sri Lankan gentleman once sat down beside me in a
 				bar in Bremen, asked me to sign his copy of this record,
@@ -130,23 +122,23 @@ const Letter = () =>  {
 				Moon</b>.  Can you hear my flesh creeping?  Germans,
 				on the other hand, despise it almost universally.
 				We were deeply confused young men when we made this
-				record.  {max}, {owen} and I had all been drinking dangerously
+				record.  {expand('max')}, {expand('owen')} and I had all been drinking dangerously
 				for over a year now, and the poor bass player who replaced
-				{dj} was finding it almost impossible to keep up with
+				{expand('dj')} was finding it almost impossible to keep up with
 				our twisted thought patterns.  Do you like my bass playing?
-				That&apos;s me on {shame}, {sa} and a couple of others.  By
+				That&apos;s me on {expand('shame')}, {expand('sa')} and a couple of others.  By
 				now, effectively, Max and I had totally lost any sense
 				of quality control on my writing.  Tragic and sincere
 				or glib and ludicrous, we recorded EVERYTHING.  Sent
 				in to make demos for this l.p.  Max and I came out with
-				{conspir}, where we squandered a couple of great ideas
-				that this l.p. so badly needs.  {rivers}, you&apos;ll notice,
+				{expand('conspir')}, where we squandered a couple of great ideas
+				that this l.p. so badly needs.  {expand('rivers')}, you&apos;ll notice,
 				has bought a new reverb unit, a Lexicon, in fact.  He&apos;s
 				also taken to recording digitally.  The ensuing absurd
 				gloss, matched with an absence of native intelligence
 				around the bottom end, gives a lot of the songs a sound
-				that I dislike.  ON THE OTHER HAND, there&apos;s {angels},
-				there&apos;s {fall}, there&apos;s {world}.  Still, in 1986 the best
+				that I dislike.  ON THE OTHER HAND, there&apos;s {expand('angels')},
+				there&apos;s {expand('fall')}, there&apos;s {expand('world')}.  Still, in 1986 the best
 				plan would be to but the <Link href="/releases/angels.html"><b>12&quot;
 				single</b></Link> and go see the band in concert.
 				Generally, we had it down in concert.  In just about
@@ -165,30 +157,30 @@ const Letter = () =>  {
 			<a id="fishco" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/fishco.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/fishco_250.jpg" width={250} height={250} alt="album cover" /></Link>
-			{fishco}
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/fishco_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+			{expand('fishco')}
 				<p />
-				Having ended up on {creat}, which I took as a bit of
+				Having ended up on {expand('creat')}, which I took as a bit of
 				a validation, I was keen to get as far away from all
 				those &quot;w&quot; words that had followed my group around, and
 				to make it as clear as I could that this was a rock
 				& roll thing, not some &quot;eccentricity&quot;.  I had my shades
-				and I had my fringed suede jacket and I had the {weather}
+				and I had my fringed suede jacket and I had the {expand('weather')}
 				rhythm section.  In the last flickering days before
-				Marriage and Acid House would change the world {kizzy}
+				Marriage and Acid House would change the world {expand('kizzy')}
 				and I hung out in his dealer&apos;s flat in Islington and
 				WALKED to the studio in Waterloo everyday.  The sessions
 				were chaotic and funny.  At one stage Kizzy arrived
 				56 hours late for a mix, having been held by the Police
 				under the Prevention of Terrorism Act.
-				{del} has
+				{expand('del')} has
 				this down right as a sort of self-justificatory thing.
 				What disappoints me is that it came out sounding so
 				SMOOTH and tidy.  I&apos;d hoped it would be more harsh and
 				mad.  I guess perhaps it&apos;s the saxes, which, I recall,
-				enraged some reviewers.  {sonic} does good things on
-				{sue} (that&apos;s 4 of them big ballads at least, now), that
-				was more the idea.  Still, not to slag {iain} who began
+				enraged some reviewers.  {expand('sonic')} does good things on
+				{expand('sue')} (that&apos;s 4 of them big ballads at least, now), that
+				was more the idea.  Still, not to slag {expand('iain')} who began
 				a lengthy association with the JBC on this recording.
 				This sold rather well, which was pleasing, and seems
 				widely liked.  I can&apos;t fuck with that, but I had hoped
@@ -201,12 +193,12 @@ const Letter = () =>  {
 			<a id="planet" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/planet.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/planet_250.jpg" width={250} height={250} alt="album cover" /></Link>
-			{planet}
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/planet_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+			{expand('planet')}
 				<p />
 				This record gives me the pip.  I think that the blame
 				can be laid at my door and on the neatly-polished doorstep
-				of {rivers}.  This was a real &quot;band&quot; album by a touring
+				of {expand('rivers')}.  This was a real &quot;band&quot; album by a touring
 				unit which had become really quite ferocious.  In choosing
 				to work with John again we felt that we were sufficiently
 				noisy and fierce to cope with any over-tidy production
@@ -229,8 +221,8 @@ const Letter = () =>  {
 				concern, we wanted to see where we could take our pop
 				songs using things like breakdowns, the mixing in of
 				&quot;found&quot; voices (which we first heard NOT from Steinski
-				or the Bryne/{eno} collaboration, but from John Stapleton,
-				a DJ who scratched things in at early {aero} concerts),
+				or the Bryne/{expand('eno')} collaboration, but from John Stapleton,
+				a DJ who scratched things in at early {expand('aero')} concerts),
 				radical and unexpected changes of sounds - a series
 				of sonic events rather than plain old verse/chorus structure.
 				I probably did too much pre-production on my (new) 4-track
@@ -238,7 +230,7 @@ const Letter = () =>  {
 				Possibly with a more &quot;clued-in&quot; producer and a bit more
 				self-discipline we could have come up with something
 				like what we were looking for.  Instead, with the exception
-				of {good} (another one - Hi, Stuart) and maybe {lineo},
+				of {expand('good')} (another one - Hi, Stuart) and maybe {expand('lineo')},
 				it all comes out sounding kinda...&quot;wrong&quot;.  A curious
 				record.  If you actually put it on and play it then
 				it&apos;s pretty smart; it&apos;s just that I never really seem
@@ -250,26 +242,26 @@ const Letter = () =>  {
 			<a id="cult" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/cult.jpg" >
-				<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/cult_250.jpg" width={250} height={250} alt="album cover" /></Link>
-			{cult}
+				<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/cult_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+			{expand('cult')}
 				<p />
 				Well, if things seemed weird back in February 1989,
 				by January 1990, when we made this baby, the Weird were
-				going shopping on bikes.  With {kizzy} sick and unable
-				to tour, {richard} had joined and, during a long US/Canadian
+				going shopping on bikes.  With {expand('kizzy')} sick and unable
+				to tour, {expand('richard')} had joined and, during a long US/Canadian
 				tour has turned us all on to Can
 				and a lot of other weird things.  In a farmhouse in
 				the dead of winter, in personal circumstances too bizarre
 				and complex to relate, we set about making our &quot;commercial
-				suicide&quot; album.  When we delivered it to {creat} they
+				suicide&quot; album.  When we delivered it to {expand('creat')} they
 				did their nuts and said it was the best thing we&apos;d done
 				in years.  It took me a while to figure it out, but
 				then I agreed with them.  For the first time, I felt,
 				we had made an album that really sounded like us.  In
 				retrospect, one or two of the tunes are a touch throwaway,
-				and EVERYBODY hates poor ol&apos; {bait}, but you get {go},
-				{drugs} AND {sis} AND {odd} all on one record! Goodness!
-				This record does have personality.  It also has {lix}
+				and EVERYBODY hates poor ol&apos; {expand('bait')}, but you get {expand('go')},
+				{expand('drugs')} AND {expand('sis')} AND {expand('odd')} all on one record! Goodness!
+				This record does have personality.  It also has {expand('lix')}
 				on guitar, the start of another beautiful friendship.
 				One of my favourites, this.
 				<p className="clear_float" />
@@ -278,16 +270,16 @@ const Letter = () =>  {
 			<a id="blue" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/releases/blue_front.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/blue_front_250.jpg" width={250} height={250} alt="album cover" /></Link>
-			{blue}
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/blue_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+			{expand('blue')}
 				<p />
 				Four desperate men, all too desperate to notice how
 				desperate the others are, gather in a farmhouse with
 				a queue of lead guitarists stretching round the block.
 				For all the pain and crap from which this record was
 				made, the actual sessions were a gigantic and wonderful
-				party.  The songs are all long because we ({paul}, {joea},
-				{lix} & I) just enjoyed the playing on the &quot;to-be-faded&quot;
+				party.  The songs are all long because we ({expand('paul')}, {expand('joea')},
+				{expand('lix')} & I) just enjoyed the playing on the &quot;to-be-faded&quot;
 				bits so much that it seemed a shame not to let everyone
 				hear them.  This was warmly received by The Outside
 				World, less popular among those who counted themselves
@@ -305,21 +297,21 @@ const Letter = () =>  {
 				guitar.  This IS the sound of me having fun, and getting
 				me to do that in those dark days of mid-1991 was no
 				small job.  (Can anyone tell me how I *knew* that the
-				French were going to like {girls}?)
+				French were going to like {expand('girls')}?)
 				<p className="clear_float" />
 			</blockquote>
 			<p />
 			<a id="bus" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/lovebus.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/lovebus_250.jpg" width={250} height={250} alt="album cover" /></Link>
-			{bus}
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/lovebus_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+			{expand('bus')}
 				<p />
 				Too early for me to say, but there&apos;s a clean, simple
-				sound to a lot of this that {blue} detractors might
+				sound to a lot of this that {expand('blue')} detractors might
 				appreciate.  It&apos;s not a deliberate change of musical
 				policy, just a gradual personal evolution thing.  I&apos;m
-				ten years older now than when I made {bacon}, and right
+				ten years older now than when I made {expand('bacon')}, and right
 				now, after all that morbid stuff, it only really feels
 				like about three.  There&apos;s rockin&apos; shit and there&apos;s
 				a big ballad or two and some weird little pop songs
@@ -331,8 +323,8 @@ const Letter = () =>  {
 			<a id="hamburg" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/releases/hamburg_front.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/hamburg_front_250.jpg" width={250} height={250} alt="album cover" /></Link>
-			{hamburg}
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/hamburg_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+			{expand('hamburg')}
 				<p />
 				We were all disappointed at the way this came out.  The
 				concert was great, but logistics prevented us from making
@@ -346,11 +338,11 @@ const Letter = () =>  {
 			<a id="family" />
 			<blockquote className="annotation">
 				<Link href="https://v1.jazzbutcher.com/images/western.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/western_250.jpg" width={250} height={250} alt="album cover" /></Link>
-			{family}
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/western_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+			{expand('family')}
 				<p />
 				Yes, I believe something horrible DID happen to the
-				tapes somewhere.  The first time that {richard} and I
+				tapes somewhere.  The first time that {expand('richard')} and I
 				played this CD we sat there laughing.  Still, Bootleg
 				No.2 is easier to get used to than the first one, so
 				again, it&apos;s a souvenir.  After all, if you were there,

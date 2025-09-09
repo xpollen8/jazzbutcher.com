@@ -2,39 +2,36 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import {
-	FIDDLER, davis, boy, angels, monkey, sweet, odd, sis, party, drugs, ghost, rain, hour, skins, road, dooj, pat, hend, gab, pete,
-	kathie, curt
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', 'Mean Fiddler' ] } />
 	<main>
-		<LetterHeader title=<>That {FIDDLER} Set List In Full</> subhead=<Link href="/gigs/1994/Apr8.html">8th April 1994</Link> />
+		<LetterHeader title=<>That Mean Fiddler Set List In Full</> subhead=<Link href="/gigs/1994/Apr8.html">8th April 1994</Link> />
 		<dl>
-		<dd>{davis}</dd>
-		<dd>{boy}</dd>
-		<dd>{angels}</dd>
-		<dd>{monkey}</dd>
-		<dd>{sweet}</dd>
-		<dd>{odd}</dd>
-		<dd>{sis}</dd>
-		<dd>{party}</dd>
-		<dd>{drugs}</dd>
-		<dd>{ghost}</dd>
-		<dd>{rain}</dd>
+		<dd>{expand('davis')}</dd>
+		<dd>{expand('boy')}</dd>
+		<dd>{expand('angels')}</dd>
+		<dd>{expand('monkey')}</dd>
+		<dd>{expand('sweet')}</dd>
+		<dd>{expand('odd')}</dd>
+		<dd>{expand('sis')}</dd>
+		<dd>{expand('party')}</dd>
+		<dd>{expand('drugs')}</dd>
+		<dd>{expand('ghost')}</dd>
+		<dd>{expand('rain')}</dd>
 		<p />
-		<dd>{hour}</dd>
-		<dd>{skins}</dd>
-		<dd>{road}</dd>
+		<dd>{expand('hour')}</dd>
+		<dd>{expand('skins')}</dd>
+		<dd>{expand('road')}</dd>
 		</dl>
-		<p />{dooj} : Bass, voice
-		<p />{pat} : Guitar, voice
-		<p />{hend} : Electric Guitar
-		<p />{gab} : Drum, Cymbal
+		<p />{expand('dooj')} : Bass, voice
+		<p />{expand('pat')} : Guitar, voice
+		<p />{expand('hend')} : Electric Guitar
+		<p />{expand('gab')} : Drum, Cymbal
 		<p />
-		<p />The possee : {kathie}, {pete}, {curt}, Tony, Raj, Erika,
+		<p />The possee : {expand('kathie')}, {expand('pete')}, {expand('curt')}, Tony, Raj, Erika,
 		Carlos (one is from Northampton)
 		<p />The supports: Spittle Rattle (Michael, Catherine,
 		Sophie) and Nick &quot;Gilbert O&apos;Sullivan Green&quot;
@@ -43,7 +40,7 @@ const Letter = () =>
 			There were rather more than three in attendance, weren&apos;t
 			there, Matt? (Why didn&apos;t you say hello?) who seemed to
 			like it a lot.  Both new players did very well, and are
-			most likely here to stay, despite {pete}&apos;s recent disconcerting
+			most likely here to stay, despite {expand('pete')}&apos;s recent disconcerting
 			habits of buying us all hundreds of beers and trying
 			to rejoin the band (bless &apos;im...)  There was much consumption
 			of the Great God Jaegermeister and then we went home,

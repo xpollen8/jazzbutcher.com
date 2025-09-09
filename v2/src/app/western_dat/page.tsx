@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Attribution } from '@/components/GenericWeb';
-import { family, rev, creation_records } from '@/lib/defines';
+import { expand } from '@/lib/defines';
 import GigPlayer, { GigPlayerHeader, GigPlayerFooter } from '@/components/GigPlayer';
 
 const startSeconds = (str = '') => {
@@ -28,8 +28,8 @@ const WesternTape = () =>
 					src="https://v1.jazzbutcher.com/images/western_250.jpg"
 					height={250} width={250} alt="western cover" className="float-left m-3" /></Link>
 			<br />
-			{family},
-			the 1992 live album released on {creation_records}, is not the record
+			{expand('family')},
+			the 1992 live album released on {expand('creation_records')}, is not the record
 			it could have been..
 			<p />
 			This release was made entirely from live to-DAT
@@ -40,11 +40,11 @@ const WesternTape = () =>
 			<p />
 			As it happened, Pat decided to go ahead and construct a live release
 			from my master tapes.  After the tour, Pat and
-			{rev} went into Battery Studio in
+			{expand('rev')} went into Battery Studio in
 			Chicago and worked my tapes over.
 			<p />
 			Somewhere in the process, my master tapes were <b>lost</b> and what was sent
-			to {creation_records} for the pressing was worked over further by minions unknown, and the
+			to {expand('creation_records')} for the pressing was worked over further by minions unknown, and the
 			final release sounds, basically, rather poor.
 			<p />
 			I had resigned myself to this let-down until a sort-of miracle occurred:
@@ -66,7 +66,9 @@ const WesternTape = () =>
 					{ title: `She's On Drugs`, start: startSeconds('06:18') },
 					{ title: `She's A Yo-Yo`, start: startSeconds('10:24') },
 					{ title: `Pineapple Tuesday`, start: startSeconds('15:47') },
+					//{ title: `Pineapple Tuesday2`, src: 'https://v1.jazzbutcher.com/audio/19970917/19970917_JBC_SeattlePractice_PineappleTuesday.mp3' },
 					{ title: `Angels`, start: startSeconds('21:43') },
+					//{ title: `Angels2`, src: 'https://v1.jazzbutcher.com/audio/19970919/19970919_JazzButcher_Seattle_Angels_Master_EQd.mp3' },
 					{ title: `Racheland`, start: startSeconds('28:08') },
 					{ title: `Tugboat Captain`, start: startSeconds('35:57') },
 					{ title: `Sister Death`, start: startSeconds('40:14') },

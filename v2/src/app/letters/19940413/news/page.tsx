@@ -1,8 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import {
-	scandal, sex, fire_records, dooj
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -10,9 +8,9 @@ const Letter = () =>
 	<main>
 		<b>Those Old Records</b>
 		<p />
-		It now looks more likely than ever that {scandal} and
-		{sex}, at least, will appear this year, most probably
-		on {fire_records} (21a Maury Road, London N16 7BP) in the
+		It now looks more likely than ever that {expand('scandal')} and
+		{expand('sex')}, at least, will appear this year, most probably
+		on {expand('fire_records')} (21a Maury Road, London N16 7BP) in the
 		U.K. and RESTLESS RECORDS (1616 Vista Del Mar Ave, Hollywood
 		CA) in the States.  We are almost at an agreement, I
 		think.  More news as it comes up.
@@ -35,7 +33,7 @@ const Letter = () =>
 		A new touring line-up?  Not impossible.  More news as
 		and when it solidifies.
 		<p />
-		{dooj} hacked to death in the streets by crazed Christian
+		{expand('dooj')} hacked to death in the streets by crazed Christian
 		fundamentalists? No, actually.  Not yet, anyway.
 	</main>
 	<Footer />

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Attribution } from '@/components/GenericWeb';
-import { family, rev, creation_records } from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const WesternTape = () =>
 <>
@@ -14,8 +14,8 @@ const WesternTape = () =>
 					src="https://jazzbutcher.com/images/western_250.jpg"
 					height={250} width={250} alt="western cover" className="float-left m-3" /></Link>
 			<br />
-			{family},
-			the 1992 live album released on {creation_records}, is not the record
+			{expand('family')},
+			the 1992 live album released on {expand('creation_records')}, is not the record
 			it could have been..
 			<p />
 			This release was made entirely from live to-DAT
@@ -26,11 +26,11 @@ const WesternTape = () =>
 			<p />
 			As it happened, Pat decided to go ahead and construct a live release
 			from my master tapes.  After the tour, Pat and
-			{rev} went into Battery Studio in
+			{expand('rev')} went into Battery Studio in
 			Chicago and worked my tapes over.
 			<p />
 			Somewhere in the process, my master tapes were <b>lost</b> and what was sent
-			to {creation_records} for the pressing was worked over further by minions unknown, and the
+			to {expand('creation_records')} for the pressing was worked over further by minions unknown, and the
 			final release sounds, basically, rather poor.
 			<p />
 			I had resigned myself to this let-down until a sort-of miracle occurred:

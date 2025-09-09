@@ -2,8 +2,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
-import {
-} from '@/lib/defines';
 
 const Letter = () =>
 <>

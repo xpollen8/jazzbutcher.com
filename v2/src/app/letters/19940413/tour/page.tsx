@@ -3,9 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import {
-	_49, FR, angels, bake, boy, chang, curt, cvb, desert, dooj, drugs, ghost, go, h2o, hour, jungle, kathie, king, loony, mer, nick, odd, owen, party, pat, penguin, punks, rain, richman, road, rodney, sat, shirl, sis, skins, space, sweet, wheel, yo, zombie,
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -14,11 +12,11 @@ const Letter = () =>
 		<LetterHeader title="JBC TOUR REPORT : EUROPE 1994" />
 		<b>The players this time:</b>
 		<ul>
-		<li>{nick} - Drums</li>
-		<li>{dooj} - The Bass, vocals</li>
-		<li>{curt} - Acoustic &amp; Electric guitars, vocals</li>
-		<li>{pat} - Electric guitar, vocals, navigator</li>
-		<li>{kathie} - Tour manager, driver</li>
+		<li>{expand('nick')} - Drums</li>
+		<li>{expand('dooj')} - The Bass, vocals</li>
+		<li>{expand('curt')} - Acoustic &amp; Electric guitars, vocals</li>
+		<li>{expand('pat')} - Electric guitar, vocals, navigator</li>
+		<li>{expand('kathie')} - Tour manager, driver</li>
 		<li>Michael Holloway - Guitar tech, driver</li>
 		</ul>
 		<hr />
@@ -46,13 +44,13 @@ const Letter = () =>
 		Great joy as we reach Germany and have our first proper
 		hot meal since leaving Northampton.  Our soundcheck in
 		the Logo is long, but Curt is acting like a trouper.
-		{owen} stops by and declares himself in favour of this
+		{expand('owen')} stops by and declares himself in favour of this
 		diminiutive Scots-Nigerian skinhead.  The Butcher succeeds in
 		getting the bus lost in Hamburg (no, I mean, come ON...)
 		and Kathie manages to get arrested for running a red
 		light on the way to the show.  Somehow she charms her
 		way out of trouble and we get to begin the set with
-		{wheel} and a brace of truly spectacular timing mistakes.
+		{expand('wheel')} and a brace of truly spectacular timing mistakes.
 		The show is at times wildly inaccurate, but high on action
 		and good vibrations; we end up playing two encores to
 		the home crowd, and retire for a delicious dinner with
@@ -88,7 +86,7 @@ const Letter = () =>
 		early with a cassette player, and I hit the Jagermeister.
 		Early in the evening, however, I did at least get to
 		do rather a sweet little solo set on the local radio,
-		including - for no very good reason - a cover of {rodney}&apos;s
+		including - for no very good reason - a cover of {expand('rodney')}&apos;s
 		<i>Disney Head</i>.  Disney Head, bloody nose...
 		and a lot in between.
 		</blockquote>
@@ -101,7 +99,7 @@ const Letter = () =>
 		it easier for him to fit in.  And so we stumble upon
 		the set that we will play - with hardly any variation
 		- for the rest of the tour.  Curt, now seated, starts
-		on the acoustic guitar for {sweet} and {party} before we
+		on the acoustic guitar for {expand('sweet')} and {expand('party')} before we
 		begin, ever so gently, to crank the set up.  It works
 		like a dream.  Although the crowd looks disappointingly
 		small in this big, beautiful club, every last one of
@@ -284,7 +282,7 @@ const Letter = () =>
 		I find a curry house and dine extensively.  Curt and
 		Nick fail to get any couscous.  Later that night, a seedy-looking
 		individual appears at Nick&apos;s door, asking if he has anything
-		wict which he can wipe his needles!
+		with which he can wipe his needles!
 		</blockquote>
 		<Link href="/gigs/1994/Feb15.html">Day 16 : Toulouse -
 		<b>Le Bikini</b></Link>
@@ -339,9 +337,9 @@ const Letter = () =>
 		<Link href="/gigs/1994/Feb17.html">Day 18 : Paris - <b>Arapaho</b></Link>
 		<blockquote>
 		<Link href="https://v1.jazzbutcher.com/images/paris.jpg">
-			<Image className="float-right m-3" width={250} height={250} alt="[image]"
+			<Image className="float-right m-3" width={expand('250')} height={expand('250')} alt="[image]"
 			src="https://v1.jazzbutcher.com/images/paris.jpg" /></Link>
-		{loony} has been busy; as
+		{expand('loony')} has been busy; as
 		soon as we arrive in the venue he is on the phone: &quot;I&apos;ve
 		made you a backdrop - can you pick it up?&quot;  It&apos;s huge,
 		and covered in penguins.  We&apos;d hoped to have Michael
@@ -364,9 +362,9 @@ const Letter = () =>
 		the audience, when we began, was 80% black; and Curtis,
 		having delivered a wildly stoned opening set, managed
 		a more than respectable impersonation of Michael Schenker
-		during {zombie}.  We played for hours and hours, doing
-		covers that included the {space}&apos;s <i>Walking With Jesus</i>
-		and the best-ever version of {punks}.  It all went down
+		during {expand('zombie')}.  We played for hours and hours, doing
+		covers that included the {expand('space')}&apos;s <i>Walking With Jesus</i>
+		and the best-ever version of {expand('punks')}.  It all went down
 		very well, so once again we partied hard.  So hard, in
 		fact, that I think it rather alarmed our Dutch hosts.
 		I don&apos;t think they believed we had it in us.  Well, now they know!
@@ -377,12 +375,12 @@ const Letter = () =>
 		After a long sleep we drive the 30-odd kilometers to
 		Breda and join Marthy and his band, The Four One And
 		Onlies, at their tiny but beautifully-decorated studio.
-		They are recording a version of {richman}&apos;s
+		They are recording a version of {expand('richman')}&apos;s
 		<i>UFO Man</i> for some dubious &quot;tribute album&quot;, so we
 		join in with handclaps and backing vocals.  We have some
 		beers.  Those that are interested in this kind of thing
 		are advised to look for the LP on Alienor Records, an
-		independent out of Bordeaux{FR}, in the near future.
+		independent out of Bordeaux, France, in the near future.
 		<p />
 		In the evening, after an introduction to the World Of
 		Roti (tasty!), we descend on what is fast becoming the
@@ -390,7 +388,7 @@ const Letter = () =>
 		on the balcony (well, we hadn&apos;t played up there before)
 		we play two lengthly acoustic sets to a full house.  For
 		the last time Curt delivers his ragga-skinhead rap on
-		{cvb}&apos;s wonderful tune, and that is that.  Back
+		{expand('cvb')}&apos;s wonderful tune, and that is that.  Back
 		to Marthy&apos;s to watch The Monks on ancient euro-videos, then bed.
 		</blockquote>
 		Day 21 : Travel
@@ -409,7 +407,7 @@ const Letter = () =>
 			<Link href="/gigs/1994/Feb10.html">Zurich</Link>)</li>
 		<li>Worst Show :
 			<Link href="/gigs/1994/Feb3.html">Bremen</Link></li>
-		<li>Best Song : {sis}</li>
+		<li>Best Song : {expand('sis')}</li>
 		<li>Worst Song : n/a</li>
 		<li>Best Dinner : Kalash, Clermont-Ferrand</li>
 		<li>Worst Dinner : Hotel Moskva, Geneva</li>
@@ -436,41 +434,41 @@ const Letter = () =>
 		</blockquote>
 		<LetterHeader title="THE SET" />
 		<dl>
-		<dd>{sweet}</dd>
-		<dd>{party}</dd>
-		<dd>{sat}</dd>
-		<dd>{odd}</dd>
-		<dd>{ghost}</dd>
-		<dd>{drugs}</dd>
-		<dd>{bake}</dd>
-		<dd>{go}</dd>
-		<dd>{_49}</dd>
-		<dd>{penguin}</dd>
-		<dd>{shirl}</dd>
-		<dd>{yo}</dd>
-		<dd>{wheel}</dd>
-		<dd>{sis}</dd>
-		<dd>{chang}</dd>
+		<dd>{expand('sweet')}</dd>
+		<dd>{expand('party')}</dd>
+		<dd>{expand('sat')}</dd>
+		<dd>{expand('odd')}</dd>
+		<dd>{expand('ghost')}</dd>
+		<dd>{expand('drugs')}</dd>
+		<dd>{expand('bake')}</dd>
+		<dd>{expand('go')}</dd>
+		<dd>{expand('_49')}</dd>
+		<dd>{expand('penguin')}</dd>
+		<dd>{expand('shirl')}</dd>
+		<dd>{expand('yo')}</dd>
+		<dd>{expand('wheel')}</dd>
+		<dd>{expand('sis')}</dd>
+		<dd>{expand('chang')}</dd>
 		</dl>
 		<b>Also played</b>
 		<dl>
-		<dd>{angels}</dd>
-		<dd>{zombie}</dd>
-		<dd>{desert}</dd>
-		<dd>{hour}</dd>
-		<dd>{h2o}</dd>
-		<dd>{mer}</dd>
-		<dd>{jungle}</dd>
-		<dd>{boy}</dd>
-		<dd>{rain}</dd>
+		<dd>{expand('angels')}</dd>
+		<dd>{expand('zombie')}</dd>
+		<dd>{expand('desert')}</dd>
+		<dd>{expand('hour')}</dd>
+		<dd>{expand('h2o')}</dd>
+		<dd>{expand('mer')}</dd>
+		<dd>{expand('jungle')}</dd>
+		<dd>{expand('boy')}</dd>
+		<dd>{expand('rain')}</dd>
 		<dd><i>September Gurls</i></dd>
 		<dd><i>Ambiguity Song</i></dd>
-		<dd>{punks}</dd>
+		<dd>{expand('punks')}</dd>
 		<dd><i>Walkin&apos; With Jesus</i></dd>
 		<dd><i>Goodnight Irene</i></dd>
-		<dd>{king}</dd>
-		<dd>{skins}</dd>
-		<dd>{road}</dd>
+		<dd>{expand('king')}</dd>
+		<dd>{expand('skins')}</dd>
+		<dd>{expand('road')}</dd>
 		</dl>
 	</main>
 	<Footer />

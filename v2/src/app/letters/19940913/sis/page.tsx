@@ -2,9 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import {
-	star
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -53,7 +51,7 @@ const Letter = () =>
 			<p />
 			There you go.  Beyond that, the lyric was written very quickly and
 			without much conscious thought, which means that it&apos;s The Real Stuff
-			(as it were).  It also, however, means that - since I was listening to {star}&apos;s
+			(as it were).  It also, however, means that - since I was listening to {expand('star')}&apos;s
 			3rd LP an awful lot round that time (Dec. &apos;89) - I nicked
 			the &quot;get me out of here&quot; line wholesale from <i>Night Time</i>.
 			<p />

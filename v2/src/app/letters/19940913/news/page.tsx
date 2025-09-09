@@ -2,9 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import {
-	creat, bus, fishco, dj,
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -24,15 +22,15 @@ const Letter = () =>
 		<p />
 		We are, actually, slightly re-assured that the problems
 		stem from the arrangement that Sony have entered into
-		with {creat}.  We are afraid that the problems were
+		with {expand('creat')}.  We are afraid that the problems were
 		beginning with a lack of interest in London, which then
 		radiated out to places where it would undermine whatever
 		work we had done ourselves.
 		<p />
-		Now, however, it appears that {creat} have been experiencing
+		Now, however, it appears that {expand('creat')} have been experiencing
 		these difficulties with Sony over a number of artists
 		and in a number or territories.  The point of this is
-		that it IS something that {creat} are trying to sort
+		that it IS something that {expand('creat')} are trying to sort
 		out.  Thus, we can at least count on them in this situation.
 		Likewise, we know that something IS being done.  It could
 		have been worse, guys.
@@ -41,7 +39,7 @@ const Letter = () =>
 		and prepare in advance.  Further, we should look at a
 		simultaneous release Here and There, which will enable
 		us to move a lot more quickly and co-ordinatedly.  This
-		wasn&apos;t possible last time, because {bus} came out here
+		wasn&apos;t possible last time, because {expand('bus')} came out here
 		before the Sony Thing was fully set up.  next time, we
 		shan&apos;t waste so much time.
 		</blockquote>
@@ -49,19 +47,19 @@ const Letter = () =>
 		<LetterHeader title='THE GOOD NEWS' />
 		<p />
 		<blockquote>
-		It&apos;s been a long time since {bus} came out here.  If we can&apos;t take it round North
+		It&apos;s been a long time since {expand('bus')} came out here.  If we can&apos;t take it round North
 		America right now, then we might as well get in and record
 		a new LP.
 		<p />
 		And that is what we&apos;re going to do.  We&apos;ve got the money
-		off {creat}, and the studio is booked.  We go in on
+		off {expand('creat')}, and the studio is booked.  We go in on
 		16th October.  Release is planned for the end of January.
 		We should be moving into Europe around March &apos;95, and
 		then go on more or less directly to North America.  (Pretty
-		much a copy of the schedule for {fishco})  The live
+		much a copy of the schedule for {expand('fishco')})  The live
 		band will do the &quot;core&quot; of the LP, with help from the
 		Provisional Members.  Musical Direction will be down
-		to me; mixing will be done by {dj}.
+		to me; mixing will be done by {expand('dj')}.
 		</blockquote>
 		<p />
 		<LetterHeader title='THE ORDINARY NEWS' />

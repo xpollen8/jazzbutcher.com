@@ -2,9 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import {
-	aero, bwatch, haus, joea, jules, levit, lix, paul, rachel, strange, vu,
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -49,7 +47,7 @@ const Letter = () =>
 		<samp>
 		&gt; Date: Sun, 14 Aug 1994 11:52:04 -0400 (EDT)<br />
 		&gt; From: mrd@world.std.com (Mitchell R Dickerman)<br />
-		&gt; Subject: {strange}, {bwatch}<br />
+		&gt; Subject: {expand('strange')}, {expand('bwatch')}<br />
 		&gt; In the &apos;thank you&apos;s on The Black Watch&apos;s latest, _Amphetamines_,<br />
 		&gt; they thank Butchie. Anyone know the connection? Did they open for<br />
 		&gt; him on his last trip to the West Coast, where they&apos;re from?<br />
@@ -59,30 +57,30 @@ const Letter = () =>
 		&gt; is good but misses his touch), Alex Lee formed Strangelove.
 		</samp>
 		<blockquote className="annotation">
-		{bwatch} come from L.A.  We have got to know them
+		{expand('bwatch')} come from L.A.  We have got to know them
 		pretty well since we met on tour in 1989.  They&apos;re good
 		people.  They opened for us at <b>The Roxy</b> in
 		<Link href="/gigs/1992/Jun5.html">June
 		1992</Link>.  J&apos;Anne Jacobi, their violin vixen, played with
-		us that night on {rachel}, which REALLY dragged out the
-		{vu} influences, as you can imagine.  I&apos;m glad they gave
+		us that night on {expand('rachel')}, which REALLY dragged out the
+		{expand('vu')} influences, as you can imagine.  I&apos;m glad they gave
 		me a credit.  I&apos;d be gladder if they gave me a copy of
 		the LP.  We would like to play with them again in America.
 		<p />
-		{strange} are grand.  They are
+		{expand('strange')} are grand.  They are
 		<blockquote>
-		<br />{lix} - Guitar, songwriter,
+		<br />{expand('lix')} - Guitar, songwriter,
 		Provisional Member Of The JBC In Perpetuity.
-		<br />John Langley - Drums, ex {aero}, brother of Gerard,
+		<br />John Langley - Drums, ex {expand('aero')}, brother of Gerard,
 		all round leading human being.
 		<br />Patrick Duff - Singer, not really as miserable as all that...
-		<br />{joea}- Bass, ex-{levit}, played all the bass on <Link href="/releases/blue.html">Condition Mandrax.</Link>
-		<br />{jules} - Guitar, played
+		<br />{expand('joea')}- Bass, ex-{expand('levit')}, played all the bass on <Link href="/releases/blue.html">Condition Mandrax.</Link>
+		<br />{expand('jules')} - Guitar, played
 		lead with the JBC on 1990 tour of USA and Canada.
 		</blockquote>
 		I&apos;ve seen them twice on the recent U.K. tour and they were very good.
-		A severely cranked {paul}
-		however, watching the London show, pronounced: &quot;It&apos;s fuckin&apos; {haus},
+		A severely cranked {expand('paul')}
+		however, watching the London show, pronounced: &quot;It&apos;s fuckin&apos; {expand('haus')},
 		innit?&quot;  I don&apos;t know about any touring plans for
 		Strangelove in the US.  Sorry.
 		</blockquote>

@@ -3,9 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import {
-	hend
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -18,7 +16,7 @@ const Letter = () =>
 		activity is welcome to keep my mind off impending knock-on-the-door
 		in-the-night scenarios.
 		<p />
-		I&apos;ve been checking out a man called {hend}, who appears
+		I&apos;ve been checking out a man called {expand('hend')}, who appears
 		likely to take a guitarist&apos;s role in the JBC quite soon.
 		He lives here, and has played in a lot of dodgy middle-aged
 		hipster revisionist bands before.  Now he is bored, and

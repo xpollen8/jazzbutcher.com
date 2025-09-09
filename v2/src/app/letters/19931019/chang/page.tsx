@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import { chang, richard } from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -17,7 +17,7 @@ const Letter = () =>
 		<p />
 		<blockquote className="annotation">
 			Naggi, Naggi, Naggi.  I&apos;m sorry it&apos;s got to you this
-			way...but...  {chang}? Racist? I&apos;ve spent most of this
+			way...but...  {expand('chang')}? Racist? I&apos;ve spent most of this
 			afternoon wondering what you were thinking of.  Is it
 			the name Chang?  I hope so, coz at least that way I can
 			offer a defence.  You see, &quot;Chang&quot; or &quot;Changa&quot; is currently
@@ -38,7 +38,7 @@ const Letter = () =>
 			<p />
 			As for the music... NO APOLOGIES.  We jammed this fucker
 			live in the studio, and we&apos;re all stupidly proud of it.
-			I think {richard}&apos;s rhythm guitar is fucking wonderful.
+			I think {expand('richard')}&apos;s rhythm guitar is fucking wonderful.
 			Hey - I like a lot of different music, you know?  Sorry
 			we missed you in Los Osos.  It was an incredible night,
 			one of my favourite nights out that year.  There was

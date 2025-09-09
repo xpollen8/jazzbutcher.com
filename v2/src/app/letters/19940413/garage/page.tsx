@@ -2,9 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import {
-		gerard, pat, dooj, paul, walk, boy, sweet, davis, odd, jungle, monkey, ghost, party, sis, angels, hour, road, FIDDLER,
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -18,41 +16,40 @@ const Letter = () =>
 		<p />
 		For tonight the line-up is:
 		<ul>
-		<li>{pat} - Guitar, voice;</li>
-		<li>{dooj} - Bass, voice;</li>
-		<li>{paul} - Bongos, guitar, voice</li>
+		<li>{expand('pat')} - Guitar, voice;</li>
+		<li>{expand('dooj')} - Bass, voice;</li>
+		<li>{expand('paul')} - Bongos, guitar, voice</li>
 		</ul>
 		<p />
 		The set was:
 		<dl>
 		<dd><i>Introduction in A-minor-nothing</i></dd>
-		<dd>{walk}</dd>
-		<dd>{boy}</dd>
+		<dd>{expand('walk')}</dd>
+		<dd>{expand('boy')}</dd>
 		<dd><i>Stereoqueen</i></dd>
-		<dd>{sweet}</dd>
-		<dd>{davis}</dd>
-		<dd>{odd}</dd>
-		<dd>{jungle}</dd>
-		<dd>{monkey}</dd>
-		<dd>{ghost}</dd>
-		<dd>{party}</dd>
-		<dd>{sis}</dd>
-		<dd>{angels}</dd>
+		<dd>{expand('sweet')}</dd>
+		<dd>{expand('davis')}</dd>
+		<dd>{expand('odd')}</dd>
+		<dd>{expand('jungle')}</dd>
+		<dd>{expand('monkey')}</dd>
+		<dd>{expand('ghost')}</dd>
+		<dd>{expand('party')}</dd>
+		<dd>{expand('sis')}</dd>
+		<dd>{expand('angels')}</dd>
 		</dl>
 		Encores:
 		<dl>
-		<dd>{hour}</dd>
-		<dd>{road}</dd>
+		<dd>{expand('hour')}</dd>
+		<dd>{expand('road')}</dd>
 		</dl>
 		<p />
 		The support came from Spittle Rattle (in their normal
 		three piece line-up), the trucking was by Kathie and
 		the beer on the rider was Oranjeboom.  Lots of people
-		came and applauded, and - best of all - {gerard}
-		had to pay to get in!!!
+		came and applauded, and - best of all - {expand('gerard')} had to pay to get in!!!
 		<p />
 		The next manifestation of the Jazz Butcher Acoustic Conspiracy
-		will be at The {FIDDLER} Acoustic Room in London
+		will be at The Mean Fiddler Acoustic Room in London
 		on <Link href="/gigs/1994/Apr8.html">Friday 8th April 1994.</Link>
 		</blockquote>
 	</main>

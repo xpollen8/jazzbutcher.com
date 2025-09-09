@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { FIDDLER } from '@/lib/defines';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 
 const Letter = () => 
@@ -13,7 +12,7 @@ const Letter = () =>
 				<MakeSimpleURI uri="/letters/93Aug30/intro.html" text="Introduction" />
 				<MakeSimpleURI uri="/letters/93Aug30/albums.html" text="The Albums" />
 				<MakeSimpleURI uri="/letters/93Aug30/band.html" text="Where Is Butcher Band?" />
-				<MakeSimpleURI uri="/letters/93Aug30/fiddler.html" text={`${FIDDLER} gig, London`} />
+				<MakeSimpleURI uri="/letters/93Aug30/fiddler.html" text="Mean Fiddler gig, London" />
 				<MakeSimpleURI uri="/letters/93Aug30/love.html" text="Waiting For The Love Bus" />
 				<MakeSimpleURI uri="/letters/93Aug30/messages.html" text="Individual Messages" />
 				<MakeSimpleURI uri="/letters/93Aug30/tour.html" text="1993 European Tour Report" />

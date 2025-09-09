@@ -2,9 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import {
-	strange, paul, haus,
-} from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -29,8 +27,8 @@ const Letter = () =>
 		This has been expensive, exhausting, not particularly
 		productive and lots o fun.
 		<p />
-		I&apos;ve seen {strange} a couple of times (my opinion: Grand/{paul}&apos;s
-		opinion: {haus}), played a little bit with my band (see the
+		I&apos;ve seen {expand('strange')} a couple of times (my opinion: Grand/{expand('paul')}&apos;s
+		opinion: {expand('haus')}), played a little bit with my band (see the
 		accompanying), formed a formidable desire for Feta cheese
 		At All Times Of Day And Night, and some other things
 		that I&apos;ve forgotten.  Little Jake is fine.  Kathie remains

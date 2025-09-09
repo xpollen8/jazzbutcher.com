@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
-import { AU, FR, HO, DE, _4AD, belly, dooj, girls, haus, kathie, lix, nick, pat, pete, joe, tony } from '@/lib/defines';
+import { expand } from '@/lib/defines';
 
 const Letter = () =>
 <>
@@ -12,7 +12,7 @@ const Letter = () =>
 		<LetterHeader title="1993 EUROPEAN TOUR REPORT" />
 		<b>15.2</b>
 		<blockquote className="annotation">
-			JBC gets on the bus at 5am {pete} is roaring drunk.  {tony} considers bashing him.  Drive and float to Paris.
+			JBC gets on the bus at 5am {expand('pete')} is roaring drunk.  {expand('tony')} considers bashing him.  Drive and float to Paris.
 			French tour promoter is young and practically monolingual.
 			Tony considers belting him.  JBC play four live songs
 			and executes <Link href="/gigs/1993/Feb15.html">lengthy interview
@@ -29,7 +29,7 @@ const Letter = () =>
 		<Link href="/gigs/1993/Feb17.html"><b>17.2</b> Bordeaux : <b>Le Jimmy</b></Link>
 		<blockquote className="annotation">
 			650km.  drive to Bordeaux.
-			Wake up at the back, you&apos;re on tour.  {joe} gets
+			Wake up at the back, you&apos;re on tour.  {expand('joe')} gets
 			in massive ruck with everyone in the restaurant at dinner.
 			Tony considers judging him.  <b>Le Jimmy</b> (yes!)
 			is a punky club with about 200 souls.  We rock.  Many
@@ -123,11 +123,11 @@ const Letter = () =>
 		<Link href="/gigs/1993/Feb27.html"><b>27.2</b> Hamburg : <b>Logo</b></Link>
 		<blockquote className="annotation">
 			The first of four German dates
-			supporting {belly}.
+			supporting {expand('belly')}.
 			Nobody in Hamburg seems to know who they are.  350 people
 			in a smallish club.  We and they are great.  Quite forget
 			about Old Belly, who come on later and are not very
-			interested in a typically {_4AD} way.
+			interested in a typically 4AD way.
 			Many drunks.  Some narcotics abuse.
 		</blockquote>
 		<Link href="/gigs/1993/Feb28.html"><b>28.2</b> Berlin : <b>Loft</b></Link>
@@ -135,7 +135,7 @@ const Letter = () =>
 			Great journey to Berlin, wherein
 			Tony Pat and Kathie form <b>The New Government Of Russia</b>{' '}
 			(policies on application - $5,799.99).  Shoddy show
-			from the JBC but {belly} are more interesting tonight.  We like Gail
+			from the JBC but {expand('belly')} are more interesting tonight.  We like Gail
 			the bass player.  If anyone&apos;s worried about the two
 			singers they&apos;re being very adult about it.  400 people
 			in the house.  East German drunks.
@@ -148,13 +148,13 @@ const Letter = () =>
 			as a duo.  The &quot;club&quot; is the hall of Munich&apos;s only-just-disused
 			airport.  Intimate it isn&apos;t especially with only 200
 			people in this huge barn.  We all have fun, though,
-			and loot {belly}&apos;s booze n stuff ruthlessly.
+			and loot {expand('belly')}&apos;s booze n stuff ruthlessly.
 			Meanwhile, in Berlin, Joe fails to find the way to Cologne
 			for four hours.  Everyone, I&apos;m told, considers stabbing him.
 		</blockquote>
 		<Link href="/gigs/1993/Mar2.html"><b>2.3</b> Cologne : <b>Luxor</b></Link>
 		<blockquote className="annotation">
-			We arrive to find that {belly}&apos;s
+			We arrive to find that {expand('belly')}&apos;s
 			van has broken down.  We laugh and <Link
 			href="/press/94takeover.html"> send Tony in The Love
 			Bus to rescue them</Link>
@@ -191,7 +191,7 @@ const Letter = () =>
 			Small, communist-run
 			club, the opposite of last night, and all the more pleasing.
 			150 people, many drunks, and a support group something
-			like {haus}.  More drunks.
+			like {expand('haus')}.  More drunks.
 		</blockquote>
 		<Link href="/gigs/1993/Mar7.html"><b>7.3</b> Salzburg : <b>Nonntal</b></Link>
 		<blockquote className="annotation">
@@ -218,7 +218,7 @@ const Letter = () =>
 			We have a day off in Salzburg, which is all it takes.
 			I stay in bed till five, have a meal in the Styrian
 			bar, pick up our secret weapon and go back to the Styrian
-			bar, where I meet the group and introduce them to {lix}.
+			bar, where I meet the group and introduce them to {expand('lix')}.
 			Jagermeister.  Drunks.
 		</blockquote>
 		<Link href="/gigs/1993/Mar9.html"><b>9.3</b> Lienz : <b>Glocklturm</b></Link>
@@ -244,7 +244,7 @@ const Letter = () =>
 		<blockquote className="annotation">
 			300 people (more?)  Opening
 			act is one &quot;Jac&quot;, a lone 19 year old Austrian who is
-			brilliant.  JBC follow him on and open with {girls}, which
+			brilliant.  JBC follow him on and open with {expand('girls')}, which
 			Lix has just remembered a few minutes ago.  It, and
 			all that follows it, walks a charmed route through chaos,
 			and by the end of the night I am fairly sure that this
@@ -295,14 +295,14 @@ const Letter = () =>
 			we really did a lot to remind people how good this thing
 			can be, and the dates with Lix were Something Else.
 			Funny how things turn out.
-		<br/><b>{tony}:</b> First Driver, Justice and Security
-		<br/><b>{kathie}:</b> Relief driver, guitars and backline tech
-		<br/><b>{joe}:</b> Sound tech
-		<br/><b>{nick}:</b> Drums, voice
-		<br/><b>{dooj}:</b> Bass, guitar, voice
-		<br/><b>{pat}:</b> Guitars, voice
-		<br/><b>{pete}:</b> Guitars ({FR}, {HO}, {DE}, Italy)
-		<br/><b>{lix}:</b> Guitars ({AU})
+		<br/><b>{expand('tony')}:</b> First Driver, Justice and Security
+		<br/><b>{expand('kathie')}:</b> Relief driver, guitars and backline tech
+		<br/><b>{expand('joe')}:</b> Sound tech
+		<br/><b>{expand('nick')}:</b> Drums, voice
+		<br/><b>{expand('dooj')}:</b> Bass, guitar, voice
+		<br/><b>{expand('pat')}:</b> Guitars, voice
+		<br/><b>{expand('pete')}:</b> Guitars (France, Holland, Germany, Italy)
+		<br/><b>{expand('lix')}:</b> Guitars (Austria)
 	</main>
 	<Footer />
 </>

@@ -100,7 +100,6 @@ export const parseDate = (str?: string) => {
 			const unknownYear = anyKnown && (!iy) ? 'unknownYear' : '';
 			const unknownMonth = anyKnown && (!im) ? 'unknownMonth' : '';
 			const unknownDay = anyKnown && (!id) ? 'unknownDay' : '';
-			//if (!iy) return;
 			return [orig,iy,im || 1,id || 1,ihh,imm,iss, unknownYear, unknownMonth, unknownDay];
 		}
 		return;
@@ -118,10 +117,10 @@ export const dateDisplay = (dt?: string, sep: string = ' - ') => {
 	}
 	const padded = padDate([iy,im,id,ihh,imm,iss]);
 	let display;
-	if (unknownDay?.length) {
-		display = padded?.substring(0, 7); // 1990-01
-	} else if (unknownMonth?.length) {
+	if (unknownMonth?.length) {
 		display = iy;
+	} else if (unknownDay?.length) {
+		display = padded?.substring(0, 7); // 1990-01
 	} else {
 		display = prettyDate(padded);
 	}

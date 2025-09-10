@@ -870,7 +870,8 @@ ${d}
 		audio=http://www.adjective.com/audio/eg/whpk_interview.mp3;;The Interview;;Joe Beaulieu$$http://www.adjective.com/audio/eg/blackeg.mp3;;Excerpts;;David Whittemore,
 		summary=${literalizeCommas(
 			Karel Von Dämmerung , Otto Von Dämmerung give preposterous answers to preposterous questions.
-			)}
+			)},
+		dtadded=2003-12-22
 		)}
 
 	${addPress(type=interview,
@@ -1970,7 +1971,8 @@ subhead=(20 December 1957 – 5 October 2021),
 		title=Apollox shares a conversation with The Jazz Butcher over a Free Lunch,
 		location=UK,
 		credit=Andrew Brooksbank,
-		dtpublished=2003)}
+		dtpublished=2003,
+		dtadded=2003-12-02)}
 
 	${addPress(type=interview;profile,
 		url=${jbc_press}/interview_independent_8Aug2001.html,

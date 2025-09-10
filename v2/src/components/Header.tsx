@@ -132,7 +132,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	abcs_of_drugs: { parent: 'etc', title: "Eider's ABC's of Drugs", summary: '1998', body: "Max Eider, as a writer for Channel 4, produced a series on mind-altering drugs, which - due to its absolute brilliance - was mirrored here before it left the Channel 4 website." },
 	mad: { parent: 'etc', title: 'How MAD Are You?', summary: '1998', body: "Pat was in posession of a ridiculous photo of a fan doing a ridiculous thing - while wearing a JBC t-shirt. He mused that others in compomising attair might compete to be top loon, if the call were put out on the JBC mailing list. So that's what happened." },
 	tribute: { parent: 'etc', title: 'Fan Tribute Project', summary: '2000', inParentDirectory: false,  body: "Some brainiac on the old JBC mailing list decided that it would be fun to have the many JBC musician fans take a whack at doing a cover tune tribute album. The outcome is surprisingly not as cringe-worthy as it could have been." },
-	trivia: { parent: 'etc', title: 'Trivia', summary: '2002', body: "A multiple-choice JBC trivial test. Take the challenge: is Emil still pig?" },
+	trivia: { parent: 'etc', title: 'Trivia', summary: '1997', body: "A multiple-choice JBC trivial test. Take the challenge: is Emil still pig?" },
 	links: { parent: 'etc', title: "Pat's Recommended Links", summary: '2003', body: "Net-side bands and whatnot that Pat wanted to highlight." },
 	western_dat: { parent: 'etc', title: 'The Western Family DAT', summary: '2005', body: "Western Family , the 1992 live album released on Creation Records, is not the record it could have been.."},
 

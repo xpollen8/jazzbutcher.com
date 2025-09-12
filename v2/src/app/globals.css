@@ -439,6 +439,29 @@ p {
 .monospace {
 	font-family: monospace;
 }
+.email_listing {
+	list-style-type: decimal;
+	margin-left: 3em;
+	margin-bottom: 20px;
+	font-family: monospace;
+	font-size: .8em;
+}
+.email_body {
+	font-family: monospace;
+	white-space: pre-line;
+	font-size: .8em;
+	background: white;
+}
+.email_nav_selected {
+	font-weight: 900;
+	link-color: black;
+	color: black;
+}
+.email_nav {
+	margin: 10px;
+	padding: 10px;
+	background: white;
+}
 .lyrics_tablature {
 	margin-top: -20px;
 	font-family: Courier, monospace;

@@ -7,6 +7,7 @@ import { personName } from '@/lib/defines';
 import { removeHTML } from '@/components/GenericWeb';
 import { parseCaptionsSourcesEtc, localDate, returnResults, type HashedType, type CommentType } from '@/lib/utils';
 
+import jbclistStatic from '@/../public/data/jbc-list.json';
 import gigsongsStatic from '@/../public/data/gigsongs.json';
 import gigmediasStatic from '@/../public/data/gigmedias.json';
 import mediasStatic from '@/../public/data/medias.json';
@@ -587,6 +588,14 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					credit: (g?.credit?.length) ? removeHTML(g?.credit) : '-UNKNOWN-',
 				})));
 			}
+			case 'jbclist_contributions': {
+				// @ts-ignore
+				return returnResults(Object.keys(jbclistStatic)?.map((year: string) => jbclistStatic[year]?.map((g: any) => ({
+						...g,
+						credit: g?.from,
+					}))
+				).flat());
+			}
 			case 'gigmedia_contributions': {
 				const gigmedias = await apiData('gigmedias');
 				return returnResults(gigmedias?.results?.filter((g: any) => args?.all || (g?.credit?.length && g?.credit_date?.length))?.map((g: any) => ({
@@ -624,6 +633,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'contributions': {
 				const media = await apiData('media_contributions', args);
 				const gigmedia = await apiData('gigmedia_contributions', args);
+				const jbclist = await apiData('jbclist_contributions', args);
 				const gigsong = await apiData('gigsong_contributions', args);
 				const gigtext = await apiData('gigtext_contributions', args);
 				const press = await apiData('press_contributions', args);
@@ -634,6 +644,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				return {
 					media: findRecent(media, ['credit_date'], makeOptions(args, 'media')),
 					gigmedia: findRecent(gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
+					jbclist: findRecent(jbclist, ['date'], makeOptions(args, 'jbclist')),
 					gigsong: findRecent(gigsong, ['added'], makeOptions(args, 'gigsong')),
 					gigtext: findRecent(gigtext, ['credit_date'], makeOptions(args, 'gigtext')),
 					press: findRecent(press, ['dtadded'], makeOptions(args, 'press')),

@@ -894,6 +894,7 @@ ${d}
 		credit=Gonzo,
 		source=http://saltyka.blogspot.com/2009/05/jazz-butcher.html,
 		datetime=1990-04-11 00:00:00,
+		dtadded=2017-07-07,
 		dtpublished=1990-04-11)}
 
 	${addPress(type=interview;podcast, person=barker,
@@ -1101,6 +1102,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		images=${jbc_images}/19900308/19900308_press;;Pierre Guillaume,
 		title=Universal Club Postcard,
 		location=Madrid\, Spain,
+		dtadded=2017-04-01,
 		datetime=1990-03-08,
 		dtpublished=1990-03-08)}
 
@@ -1123,6 +1125,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		title=Gig clipping,
 		credit=Walsh,
 		location=Minneapolis\, Minnesota\, USA,
+		dtadded=2017-03-20,
 		datetime=1990-11-05,
 		dtpublished=1990-11-05)}
 
@@ -1181,6 +1184,7 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 		credit=Vincent Arquilliére,
 		location=France,
 		source=http://www.popnews.com/popnews/the-jazz-butcher-the-jasmine-minks-the-lexington-londres-15-avril-2017,
+		dtadded=2017-07-25,
 		datetime=2017-04-15,
 		dtpublished=2017-05-03)}
 
@@ -1990,6 +1994,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Metro Times,
 		title=Chatting up the Butch,
 		location=Detroit\, MI\, USA,
+		dtadded=2004-05-12,
 		dtpublished=2000-04-12)}
 
 	${addPress(type=interview,
@@ -2210,6 +2215,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		issue=#91,
 		location=Boston\, Massachusettes\, USA,
 		datetime=1988-06-03,
+		dtadded=2020-12-31,
 		dtpublished=1988-06-03)}
 
 	${addPress(type=preshow,
@@ -2795,6 +2801,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/star_india/Bodrul,
 		images=${jbc_images}/star_india/StarScrap;;Pat;;;;2002-07-09;;${literalizeCommas(In 1988 that I managed to take this top snap of Paul Mulreany and Laurence O'Keefe rioting at the table)},
 		summary=${literalizeCommas(Northampton's Star of India restaurant is dearly loved by the artist)},
+		dtadded=2002-07-09,
 		dtpublished=2002-07-09)}
 
 	${addPress(type=pat;gig,
@@ -2876,6 +2883,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=Sex and travel,
 		subhead=After nearly two decades of peerless pop\, the Jazz Butcher can't lose for breaking up,
 		location=Detroit\, MI\, USA,
+		dtadded=2004-05-12,
 		dtpublished=2000-04-12,
 		datetime=2000-04-19)}
 

@@ -1,14 +1,13 @@
-//import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import LetterHeader from '@/components/LetterHeader';
+import { JBCListing } from '@/components/JBCList';
 
 const MailinglistYear = ({ params }: any) => {
+	const { year } = params;
 	return (<>
-		<Header section="mailinglist" title={params.year} />
+		<Header section="mailinglist" title={year} />
 		<main className="etc">
-			<LetterHeader title="JBC Mailing List Archives" subhead={`For ${params.year}`} />
-			<h1>This section is not yet ported from old JBC site</h1>
+			<JBCListing year={year}  />
 		</main>
 		<Footer />
 	</>);

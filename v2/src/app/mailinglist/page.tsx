@@ -5,25 +5,21 @@ import MakeSimpleURI from '@/components/MakeSimpleURI';
 const MailingList = () => 
 <>
 	<Header section="mailinglist" />
-		<main className="etc">
-			<LetterHeader title="The mailing list is on hiatus.." subhead="(c. 2003)" />
+		<main className="listItem">
+			<LetterHeader title="The Jazz Butcher mailing list" />
 			<div className="flex flex-wrap justify-around">
 				<div>
-					{[...Array(15)].map((x: any, idx: number) => { 
+					{[...Array(16)].map((x: any, idx: number) => { 
 						const year = 1989 + idx;
-						if (year === 2000) return <>-- {year} ARCHIVES LOST --</>;
 						return <MakeSimpleURI key={idx} uri={`/mailinglist/${year}`} text={year + ''} />
 					})}
 				</div>
 				<div style={{ maxWidth: '50%' }}>
-					<div style={{ textDecoration: 'line-through' }}>
-					The Jazz Butcher Conspiracy mailing list has been in existence
-					since October 1989 and has a few hundred subscribers.  Several
-					subscribers are in contact with the band, and report here.
+					<div>
+					The jbc-list existed from October 1989 until early 2004
+					at which point manual spam filtering became too burdensome.
+					Several of the hundreds of subscribers were in contact with the band.
 					<p />
-					This is the place for up-to-date information.
-					For your convenience, the archives are here in their entirety,
-					although they can lag several months depending on how busy I am :-|
 				</div>
 			</div>
 		</div>

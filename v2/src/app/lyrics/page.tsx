@@ -18,7 +18,7 @@ const LyricList = (props: { lyrics: any[] }) => {
 			let banner;
 			if (lyric?.title?.substring(0, 1) !== chr) {
 				chr = lyric?.title?.substring(0, 1);
-				banner = <Tag>{chr}</Tag>;
+				banner = <div className="mt-2"><Tag>{chr}</Tag></div>;
 			}
 			return (<div key={key}>
 				{banner}

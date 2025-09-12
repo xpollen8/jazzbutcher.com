@@ -97,9 +97,9 @@ const prettyType = (type: string, t?: string) => {
 const Contributions = ({ options, label='Community contribution' }: HashedType) => {
 	const { data, isLoading, error} = useContributions(options);
 	if (!data) return;
-	const { gigmedia, gigtext, gigsong, press, pressmedia, media, inpress, lyric, lyricmedia } = data || {};
+	const { gigmedia, gigtext, gigsong, press, pressmedia, media, inpress, lyric, lyricmedia, jbclist } = data || {};
 	const contributions: HashedType = {};
-	const recent = [ gigmedia?.results[0]?.credit_date, gigsong?.results[0]?.added, gigtext?.results[0]?.credit_date, press?.results[0]?.dtadded]?.sort((a: any, b: any) => b?.localeCompare(a))[0];
+	const recent = [ gigmedia?.results[0]?.credit_date, gigsong?.results[0]?.added, gigtext?.results[0]?.credit_date, press?.results[0]?.dtadded ]?.sort((a: any, b: any) => b?.localeCompare(a))[0];
 	let total = 0;
 
 	const addInfo = (contributions: HashedType, info: any) => {
@@ -118,6 +118,19 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				datetime: r?.datetime,
 				summary: r?.song,
 				href: ts2URI(r?.datetime),
+			}
+		);
+	});
+
+	jbclist?.results?.forEach((r: any) => {
+		addInfo(contributions,
+			{
+				person: r?.credit,
+				type: 'jbclist',
+				added: r?.date,
+				summary: r?.subject,
+				caption: (r?.body) ? r.body?.substring(0, 500)?.replaceAll('{{', '')?.replaceAll('}}', '') + '...' : '',
+				href: `/mailinglist/${r.msgId}`,
 			}
 		);
 	});

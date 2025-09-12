@@ -127,7 +127,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "1986", body: "Early Fan Club issues" },
 	japan2000: { parent: 'writings', title: 'THE JBC GO JAPAN', summary: "2000", body: "Tour summary" },
 
-	mailinglist: { parent: 'etc', title: 'Mailing List', summary: '1989-2003', body: "The genesis of this Jazz Butcher website was the mailing list that David Whittemore maintained. During the 15 years it was active, several hundred technically-inclined JBC fans kept in touch and posted thousands of email messages." },
+	mailinglist: { parent: 'etc', title: 'jbc-list', summary: '1989-2004', body: "The genesis of this Jazz Butcher website was the mailing list that David Whittemore maintained. During the 15 years it was active, several hundred technically-inclined JBC fans kept in touch and posted thousands of email messages." },
 	auction: { parent: 'etc', title: 'Website Auction', summary: '1997', body: "The Butcher had some memorabilia sitting around his home which he was sick of tripping over. So, we decided to have an auction." },
 	abcs_of_drugs: { parent: 'etc', title: "Eider's ABC's of Drugs", summary: '1998', body: "Max Eider, as a writer for Channel 4, produced a series on mind-altering drugs, which - due to its absolute brilliance - was mirrored here before it left the Channel 4 website." },
 	mad: { parent: 'etc', title: 'How MAD Are You?', summary: '1998', body: "Pat was in posession of a ridiculous photo of a fan doing a ridiculous thing - while wearing a JBC t-shirt. He mused that others in compomising attair might compete to be top loon, if the call were put out on the JBC mailing list. So that's what happened." },

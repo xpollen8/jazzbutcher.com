@@ -34,6 +34,8 @@ CREATE TABLE `gigsong` (
 
 LOCK TABLES `gigsong` WRITE;
 /*!40000 ALTER TABLE `gigsong` DISABLE KEYS */;
+INSERT INTO `gigsong` VALUES (NULL,'2000-05-01 00:00:00','set',NULL,1,1,'D.R.I.N.K.',NULL,"I'm the happy little freak who sponsored the Deliveranceland concert in May of 2000 (Birmingham, Alabama). I have that concert (AEUK and JBC) on 3 minidiscs. If you might recall, I had that binaural black ugly-ass head microphone.",NULL,'https://v1.jazzbutcher.com/audio/20000501/20000501_JazzButcher_Birmingham_DRINK_namedotcom.mp3',"Namedotcom@...",NULL,NULL,"2025-09-12");
+
 INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,1,0,"Pat's cassette",NULL,"2 songs",NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19821218/19821218_JazzButcher_BlackLion_FMAC20.mp3',"Fishy Mansions Cassette FMAC20",NULL,NULL,"2025-07-17");
 INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,1,1,'Christmas With The Pygmies',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1982-12-18 00:00:00','set',NULL,1,2,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

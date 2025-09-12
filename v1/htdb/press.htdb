@@ -306,12 +306,12 @@ ${d}
 
 #define	updatePressDatabase()
 #live	if (defined(updateDatabase))
-<h1>truncate</h1>
 ##live		if (sql(truncate table press))
+<h1>truncate</h1>
 ##live		endif
 #live		loop (pi, 1, ${pressItems->numResults})
 #live			if (define(pr, pressItems[${pi}]))
-#<h3>${pi}: update (pub:${${pr}->dtpublished}) (gig: ${${pr}->datetime}) (type:${${pr}->type})</h3>
+<h3>${pi}: update (pub:${${pr}->dtpublished}) (gig: ${${pr}->datetime}) (type:${${pr}->type}) (type:${${pr}->url})</h3>
 #live				if (sql(x:insert IGNORE into press set type="${replace(${${pr}->type}, ;,,)}", todo="${${pr}->todo}", url="${${pr}->url}", album="${${pr}->album}", thumb="${${pr}->thumb}", images="${literalizeQuotes(${${pr}->images})}", media="${literalizeQuotes(${${pr}->media})}", annotation="${literalizeQuotes(${${pr}->annotation})}", audio="${literalizeQuotes(${${pr}->audio})}", publication="${literalizeQuotes(${${pr}->publication})}", issue="${literalizeQuotes(${${pr}->issue})}", title="${literalizeQuotes(${${pr}->title})}", headline="${literalizeQuotes(${${pr}->headline})}", subhead="${literalizeQuotes(${${pr}->subhead})}", location="${literalizeQuotes(${${pr}->location})}", summary="${literalizeQuotes(${${pr}->summary})}", source="${${pr}->source}", credit="${${pr}->credit}", dtadded="${fixDt(${${pr}->dtadded})}", dtpublished="${fixDt(${${pr}->dtpublished})}", dtgig="${fixDt(${${pr}->datetime})}", person="${literalizeQuotes(${${pr}->person})}", body="${literalizeQuotes(${${pr}->body})}"))
 #live				endif
 #live			endif
@@ -2784,6 +2784,16 @@ subhead=(20 December 1957 – 5 October 2021),
 		images=${jbc_images}/reviews/popculturecorn_com;;David Whittemore,
 		publication=Pop Culture Corn,
 		dtpublished=2000-06)}
+
+	${addPress(type=pat,
+		url=${jbc_press}/20010325_press_departurelounge.html,
+		title=RARE AND PRECIOUS EXCEPTIONALLY FINE ALBUM ALERT,
+		headline=TIM KEEGAN & DEPARTURE LOUNGE : OUT OF HERE,
+		subhead=Meek Giant Records MEEK003CD,
+		source=email,
+		credit=Pat Fish,
+		dtpublished=2001-03-25,
+		dtadded=2025-09-12)}
 
 	${addPress(type=pat,
 		url=${jbc_press}/japan2000.html,
@@ -21659,6 +21669,173 @@ For a prolific musical project with nearly as many compilations as official rele
 If Richard Hawley was more psychedelic story-weaver than twilight troubadour, or if Robyn Hitchcock had been separated at birth from an equally daft twin, they would be the Jazz Butcher, a.k.a. eccentric English singer/songwriter Pat Fish plus whomever he happened to have around since 1982.
 <p />
 Back in the day, that list of contributors included Max Eider, David J (Bauhaus, Love And Rockets) and Spacemen 3’s Sonic Boom, among others. Last Of The Gentleman Adventurers finds Fish reuniting with several of these trusted wingmen in service of recording/touring again after more than a decade out of the game, reissuing a self-pressed, limited-edition disc originally created to quietly celebrate the band’s 30th anniversary. Memorable melodies, lyrical yearning and stylistic elasticity (from the title track’s cowpoke jazz-blues to the trebly Lloyd Cole-like guitar pop of “All The Saints”) makes this band of merry men worthy of rediscovery, the same as they ever were.
+		)}
+	)}
+	${jbc_footer}
+#live	endif
+
+#define	20010325_press_departurelounge.html
+#live	if (getval(page) = 20010325_press_departurelounge.html)
+	${extractPress(
+		body=${literalizeCommas(
+Honestly, I'd just about given up on waiting around for any new
+guitar group to come and do something that would get to me. While
+it's fair to say that the Flaming Lips are out there somewhere
+on behalf of all us chickens, we might remember that this is
+a band that has been going for as long as the JBC.
+<p />
+Not all the over-forties are so lucky, so talented or persistently
+unconcerned with the trappings of success. One or two of my acquaintance
+are adapting to some kind of 21st Century white boy chicken-in-the-basket
+cabaret lifestyle, gathering for Saga holiday fun at the expense
+of trotting out some tunes that used to be a matter of life or
+death to them in their misguided youth. Others huddle, bearded,
+in basements, making heinous deep techno records, by way of which
+they wreak their revenge on the thankless youth who ignored their
+semi-acoustic ramblings. They crank the beat up for ages, then
+whip it away, leaving the hapless teens, frazzled with ecstasies
+and bloated with mineral water at a pound a pop, to hear the
+unmistakable voice of an American cop declaring:
+<p />
+She's your daughter, Mister Wilson<br />
+She died of an overdose!<br />
+Sorted!
+<p />
+I have actually heard this record. It's tops, as it goes I never
+said there was anything wrong with any of this.
+<p />
+Of the new groups, the Brits seem chiefly concerned with making
+the grandest, most vapid emotional declarations over an over-polished
+and undernourished MOR strum-along, while in the USA there seems
+to be a sinister tendency towards the deliberately, nay provocatively,
+incompetent, as though sonic ineptitude and lack of ambition
+might reveal a more genuine and deeply lovable individual Behind
+The Music. Bollocks to the lot of them, honestly.
+<p />
+Of course, our favourite big old satellites are still circling
+out there somewhere: Copey and Mister Hitchcock, Mister Cave
+and especially - we are double blessed Mister Robert Wyatt. I
+don't know about you, but much as I love these pop stars from
+an alternative universe, I honestly don't get around to buying
+every record they put out.
+<p />
+Every now and again, of course, one of them puts out a whopper,
+and we're all there, Johnny On The Spot. But it's pretty clear
+that part of the price you pay for being into the music thing
+for the long term these days is that if you insist on only making
+good records, you'll soon cease to be newsworthy. I don't think
+it's something that bothers those gentlemen in the slightest,
+of course. You make your choice and God can call you a c*** when
+you're dead.
+<p />
+Peter Astor bucked all the trends, of course. He went sideways
+and laid the golden egg.
+<p />
+But I've found this record. It's not particularly new or modern
+or relevant, though in its own warm and intimate way it is all
+of those things. All that modern shit is in there, beats and
+loops and bleeps and that, but what makes this record remarkable
+is that it is a guitar pop record by a gang of white British
+guys that does exactly what those kind of records are supposed
+to do to you.
+<p />
+I do know the man who wrote most of the songs on the record.
+I've known Tim Keegan since he was a wee lad. He used to put
+on my band and bring his band to support us. He's been making
+music ever since the eighties, and I've kept up with a lot of
+it.
+<p />
+This is, perhaps, Not a Good Thing. It makes it far too easy
+for me to think of Tim as Talented Youth With Melodic Guitar
+Band, Heart O'Gold. But Tim must be around thirty now, and, boy,
+is he ever hitting his stride. Even so, I had to listen to this
+release three or four times before the sheer magnificence of
+the whole enterprise hit me.
+<p />
+But, reader, you will have guessed it by now. It has hit me.
+<p />
+Initially a few tunes really jumped out and seized my attention.
+Oddly enough, they seemed to be the tunes from the end of the
+LP, not the start. They struck me as so fine that I had to investigate
+further.
+<p />
+Stay On The Line was the tune that first did it. I was smoking
+and playing backgammon and it completely stole my mind away.
+I still think of it as the stand-out track on the record. It's
+utterly gorgeous and intimate and real. The sound is phat and
+lush and all made of real instruments: stand-up bass, guitars,
+all that shit. Perfectly in tune in every way. What follows is
+a beautiful love song that turns into a mental sing-along rumpus
+that many bands would kill to have written. It's called I've
+got Everything (We Need)
+<p />
+It may or may not feature Mister Hitchcock or Mister Peter Buck,
+but that's certainly Ringo on drums. Of course, I'm intrigued
+by now so I lose at backgammon. There follows a mad instrumental
+that sounds like Calexico gone electronic. I can tell you that
+it went really well with the Leeds-Lazio game on TV tonight.
+<p />
+So I've started reviewing the record at the end. Bah! I don't
+do this very often. I should have started by saying that the
+opening tune is faintly funky, arch and ambitious. Tim's lush,
+healing vocal tells you 'l need a torch if you're following me
+before leading us into a sweet Boxtops style fake soul chorus
+of enormous merit.
+<p />
+The New You , which follows is deeply lovely and probably deeply
+ironic, but Tim sings it so sweetly that you almost believe him.
+Therein lies the agony of it, and therein the beauty.
+<p />
+Disconnected comes next, reminding your correspondent of the
+late lamented Perfect Disaster at their most poignant. It takes
+you from the weird atavistic memory of some long-forgotten and
+probably deeply uncool hit from when you were about eleven to
+a heart shattering Velvets Third moment in seconds. You are not
+ready and you are left gasping.
+<p />
+And so it goes. As you listen to this record you will hear echoes
+of the Beatles, the Kinks, Scott Walker, Peter Astor, Spiritualised
+and the Friends of Dean Martinez.
+<p />
+Gulp!- as Syd Barrett turns into the Smiths before your very
+ears! On one track you can clearly hear David J and Nick Lowe
+down the pub when Shane McGowan and Nick Cave slope in. Lap steel
+and tremolo arm wrestle it out in the smoky room before a Massive
+Stupid Flute Thing Chorus turns up and it all kicks off. You'll
+be thinking of The Prisoner and you'll be thinking whatever happened
+to that lovely young Lou Reed boy and you'll be thinking about
+John Lennon and maybe you'll be thinking about Deirdre O'Donoghue.
+<p />
+But this is an evocative album, not a derivative one.
+<p />
+His voice rings loud and clear throughout, even though he is
+unquestionably a man given to different vocal stylings. He sounds
+confident and happy and he should do. He has produced the best
+record of his life so far.
+<p />
+The instrumentation and the production are tough, sensitive and
+inventive throughout.
+<p />
+It is my suspicion that the record would sound quite American
+to British ears, and identifiably British to American ones. That
+would only be fair reflection of the fact that Tim and the band
+do, in fact, spend a great deal of time playing in the USA and
+hanging with American musicians. This is a record from a certain
+tradition of songwriting, but it is by no means anachronistic.
+It's tempting to refer to David Gray White Ladder, but the sound
+here is simultaneously more real and also more effectively produced.
+<p />
+As a casual listening experience it demands nothing and offers
+a great deal. Give it time on a nice phat pair of speakers and
+it will actually do your head in.
+<p />
+So there it is. Cynical old shit with a trolley full of Lee Perry
+albums gives rave review to English songwriter mate with white
+pop album. There must be something in it.
+<p />
+http://www.meekgiant.com/departurelounge
+<p />
+Pat
 		)}
 	)}
 	${jbc_footer}

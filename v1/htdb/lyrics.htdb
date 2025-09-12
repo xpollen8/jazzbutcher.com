@@ -2093,6 +2093,43 @@ The town in question is South Windsor, CT.
 	<br />Don't standing in the pouring rain, Maureen."
 
 	)},
+	tablature=${unfilter(${literalizeCommas(
+G_D_C (suspend it a bit then repeat)
+
+
+G D C
+Here I am I'm just lyin' on the floor with you
+We had to get drunk it was the only thing that we could do
+Well it's funny coz I thought that it could've turned out quite romantic
+But it isn't like that which is fine coz it means I can stand it
+
+D
+My best friend's girlfriend
+C
+Oh I've got a girlfriend
+D C
+And you're somebody's girlfriend too (You know it only ever makes me)
+
+G D C
+Down down
+Yeah you know it only makes me down
+This foolishness it only makes me, etc.
+
+Am C G
+
+Oh look it's easy, you come
+
+G D C
+'Round my house you give me information then you go home
+But it sure beats talking all that foolish nonsense on the telephone
+I don't know about the implications of all this I just feel so-so
+And it's a measure of a feeling that I can't identify that I can let you go
+
+
+Repeat chorus stuff, ad lib on departed pets and breaking rules, throw in
+some Petula Clark/Chrissie Hynde lyrics and a genius Max guitar part and enjoy!
+	)})},
+	tablature_credit=Knight Berman;;;;1997-10-01,
 		onlist=
 		hamburg .. scandal .. drainglass ..cake .. fire_wasted
 	, patsez=${literalizeCommas(
@@ -2736,6 +2773,11 @@ The town in question is South Windsor, CT.
 	Things move quicker and your blood runs thick along the line of death.
 
 	)},
+	tablature=${unfilter(${literalizeCommas(
+Line of Death: verses - E,G,D
+chorus - C,E
+	)})},
+	tablature_credit=Hollowhat@;;;;1997-10-04,
 		onlist=
 		planet .. closet .. fire_violent
 	)}
@@ -2979,6 +3021,11 @@ The town in question is South Windsor, CT.
 	[live] Hold your nose, it's Mr Odd!
 
 	)},
+	tablature=${unfilter(${literalizeCommas(
+Mr.Odd: verse,chorus - Em,C,G
+change or solo - D
+	)})},
+	tablature_credit=Hollowhat@;;;;1997-10-04,
 		onlist=
 		cult .. closet .. violent .. lunch .. va_pensioners90 .. fire_violent .. fire_cholmondley
 	)}
@@ -3016,6 +3063,15 @@ The town in question is South Windsor, CT.
 	And then we crashed
 
 	)},
+	tablature=${unfilter(${literalizeCommas(
+My Zeppelin: verse - A,D back and forth then E
+A
+
+.......wanted
+a zeppelin
+change or solo - F#,B,E,A
+	)})},
+	tablature_credit=Hollowhat@;;;;1997-10-04,
 		onlist=
 		cult .. fire_violent
 	)}
@@ -3079,6 +3135,12 @@ The town in question is South Windsor, CT.
 	<br />The little dog looked up and saw that he was really quite alone.
 
 	)},
+	tablature=${unfilter(${literalizeCommas(
+New Invention: verses - D,C,G
+bridge - D
+chorus - D,G
+	)})},
+	tablature_credit=Hollowhat@;;;;1997-10-04,
 		onlist=
 		planet .. newinv .. fire_violent .. fire_cholmondley
 	)}
@@ -3969,7 +4031,7 @@ Oh, but honey? I think I want to do it with you
 
 fade
 	)})},
-	tablature_credit=Hank Tomczak;;hankt@usa.net;;
+	tablature_credit=Hank Tomczak;;;;1997-10-01,
 	,
 		onlist=
 		cult .. closet .. shir .. uncond .. family .. violent .. lunch .. shock_drugs .. va_nationofsaints .. fire_violent
@@ -4177,6 +4239,17 @@ fade
 	<br />'Coz I heard it was like a southern Mark Smith
 
 	)},
+	tablature=${unfilter(${literalizeCommas(
+(WARNING - Simple chord progression enclosed.)
+
+
+Southern Mark Smith
+
+D - G - A - G
+
+That's it! Play over and over entire song , chorus, any version, no problem.
+)})},
+	tablature_credit=Hank Tomczak;;;;1997-10-06,
 		onlist=
 		scandal .. smith .. rmen .. gift1 .. nons .. uncond .. family .. drainglass .. bigtime_jungle .. fire_wasted .. fire_cholmondley
 	, patsez=${literalizeCommas(
@@ -4280,6 +4353,45 @@ fade
 	<br />Blot right out! Soul happy hour!
 
 	)},
+	tablature=${unfilter(${literalizeCommas(
+[ Note: As Usual,much of this is from memory,
+[ so if its is wrong, _please_ correct me. email below
+[ [e] = E Minor.
+
+The Jazz Butcher Conspiracy : Soul Happy Hour (Pat Fish/Max Eider)
+
+
+T[G]he best things in life are free
+B[e]ut you can give them to the SDP
+I[C] want to go to Tesco's store
+A[D]nd buy some drink and fall on the floor.
+
+I[G] don't care for s[e]mart new clothes
+I[C] don't care for r[D]eading books
+I[G] don't care for Q[e]uinn and Collins
+I[C] don't care for m[D]agaz[G]ines
+
+I[C] don't like lemonade
+I[G] hink milk should not be made
+I[C] don't like coffee and I don't like tea
+T[D]hese are the things that mystify me
+
+I[G] don't care for s[e]port or swimming
+I[C] don't care for all those n[D]asty old bogies
+I[G] don't care what's o[e]n TV
+I[C] just want to d[D]rink til I[G] can't see
+
+I[C] wish I'd been born a tree
+S[G]omeone'd come and make a barrel out of me
+I[C] get in a fury when I[D]'m not in a brewery
+
+W[G]hiskey Vodka S[e]pecial Brew
+A[C]ll of this is g[D]ood for you
+G[G]in sling, Cointreau, b[e]randy sour...
+B[C]lot right o[D]ut! Soul h[G]appy hour!
+
+	)})},
+	tablature_credit=Will Nerini;;;;1997-10-03,
 		onlist=
 		scandal .. hamburg ..cake .. fire_wasted
 	, patsez=${literalizeCommas(
@@ -5904,6 +6016,82 @@ G - G - C - D
 	<br />Oh
 
 	)},
+	tablature=${unfilter(${literalizeCommas(
+Eb gave me the Ok to re-write out his .crd
+I took some liberties with the chord placement.
+Should be about right. Just play around and figure it out.
+Lines with only [chord]s on them are just played.
+Chord diagrams at end of file. - Will
+
+
+Hey,hey, h[D]ey. [Dmaj7]
+Can I s[G]ee you again? [Bm]
+It's been such f[D]un,
+What we've d[Dmaj7]one, [A+]
+I should like to do it forever
+
+H[D]ey [Dmaj7]
+
+Tell me, w[G]hat do you say [Bm]
+If you say n[D]o,
+I don't k[Dmaj7]now, [A+]
+What I'm going to do with forever, because
+
+Y[D]ou ... have m[Dmaj7]e
+As f[D7]ar as I can s[D9]ee,
+R[G]oped and trussed just l[Bm]ike Dear Betty P[D]age
+Chorus:
+Y[D]ou ... have m[Dmaj7]e
+As f[D7]ar as I could s[D9]ee,
+R[G]oped and trussed just l[Bm]ike Dear Betty P[D]age
+[A+]
+
+Ooh, and I k[D]now, that it's f[Dmaj7]ine
+T[D7]hat sweet taste of G[D9]wendoline
+But you t[G]ie me up and I[Bm] don't want to diseng[D]age
+[A+]
+
+Oh g[G]irl what you've done to m[Bm]e
+[D] [A+]
+G[G]irl what you've done to m[Bm]e
+Oh g[G]irl [Bm] [D] [A+]
+
+
+Dmaj7: A+ (A Augmented)
+________________ ________________
+| | | | | | | | | | | |
+| | | | | | | | | | | o
+---------------- ----------------
+| | | | | | | | | | | |
+| | | o o o | | | o o |
+---------------- ----------------
+| | | | | | | | | | | |
+| | | | | | | | o | | |
+---------------- ----------------
+D9:
+----------------
+| | | | | |
+| | | | o |
+----------------
+| | | | | |
+| | | o | |
+----------------
+| | | | | |
+| | | | | |
+
+
+All chord diagrams start at the nut.
+These are only for what I think are
+the "rare" chords. Also they're the
+easiest variants to finger(IMHO).
+- Will
+
+That's it, really. The whole point of
+many early Jazz Butcher songs is that
+they use very cliched "lounge" chord
+progressions like the above. - Eb
+)})},
+	tablature_credit=Will Nerini;;;;1997-10-07,
 		onlist=
 		scandal .. drainglass .. glorious .. fire_wasted
 	, patsez=${literalizeCommas(
@@ -6050,8 +6238,7 @@ Chorus
 
 I haven't got a mind at all.
 	)},
-	tablature_credit=Will Nerini;;wnerini@ww-web.com;;
-	,
+	tablature_credit=Will Nerini;;;;1997-10-01,
 		onlist=
 		scandal .. fire_wasted
 	, patsez=${literalizeCommas(
@@ -6422,6 +6609,23 @@ I haven't got a mind at all.
 	Or in a bar.
 
 	)},
+	tablature=${unfilter(${literalizeCommas(
+[ Note: In my chord notation lowercase letters
+[ indicate a minor chord. I think it keeps the
+[ readability high.
+
+The Jazz Butcher Conspiracy (Max Eider) : Down The Drain
+
+G D G
+Well I wish I'd born in a bar
+G C D
+I wouldn't have to walk so bloody far
+G e C D
+I'd peel back my 'crain, put my brain in a jar
+G D G
+If only I'd been born in a bar
+	)})},
+	tablature_credit=Will Nerini;;;;1997-10-02,
 		onlist=
 		sex .. drainglass .. fire_wasted
 	)}
@@ -6723,6 +6927,65 @@ I haven't got a mind at all.
 	<br />Oh yes I wish they hadn't shot a good man down.
 
 	)},
+	tablature=${unfilter(${literalizeCommas(
+here's another chord file. this one's
+for another favorite of mine. the kind of tune that made me a rabid fan.
+
+[ Usual Note: This sounds right to me, and chord finder agrees.
+[ As usual, The chord changes may be a little off.
+[
+The Jazz Butcher Conspiracy : Olaf Palme
+
+Y'know?
+A G#
+Western Europe's still a civilized place
+A F#
+Despite those Americans all over the place
+D E A E
+But just the other week, I saw it take a little dive
+A G#
+I have always believed that if you're lucky enough
+A F#
+To have a leader who is friendly, decent, honest and just
+D
+And not a Tory
+E A E
+You'd better keep him alive
+
+D E A E
+So why'd they go and shoot Olaf Palme
+D E A E
+Why'd they go and gun that good man down.
+
+[ CHORDS REPEATED
+
+Well, you didn't read about him in the English papers much
+But he used to govern Sweden with a magic touch
+Everybody liked him even though the liquor prices were high
+And my god are they high
+
+But all the taxation helped to pay the bills
+For stuff like better work conditions and the curing of ills
+It made sense, and ladies and gents that's why...
+
+That's why I think we ought to have a drink for Olaf Palme
+Yes I think we ought to drink one to his name
+(Pat Fish: Everyone except Max, who's playing guitar)
+(Max Eider: Oh Gawd!)
+
+
+Oh, what'd they have to go and shoot him for
+Plenty of Prime Ministers deserve it much more
+He was only coming home from the Cinema
+And they shot him
+
+Well, I don't know much about your politics
+I only pick up stupid little bits that stick
+But I wish they hadn't shot Olaf Palme
+Oh yes I wish they hadn't shot Olaf Palme
+Oh yes I wish they hadn't shot a good man down.
+)})},
+	tablature_credit=Will Nerini;;;;1997-10-28,
 		onlist=
 		gift2 .. va_abigail
 	,mp3=${jbc_mp3}/olafpalm.mp3
@@ -7357,6 +7620,45 @@ I haven't got a mind at all.
 
 	${g_credit(g=Scott/Wolfe)}
 	)},
+	tablature=${unfilter(${literalizeCommas(
+[ Lost In France Recorded By The Jazz Butcher Conspiricy, by Scott/Wolfe
+
+I was l[D]ost in F[G]rance, in the f[Em]ields the birds were s[A]inging.
+I was l[D]ost in F[G]rance and the d[Em]ay was just beg[A]inning.
+I[A] looked up and she was standing there -
+I[G] knew I shouldn't but I d[Gm]idn't care.
+I was l[D]ost in F[G]rance in l[D]ove.
+
+[CHORDS REPEAT]
+
+I was lost in France, in the streets a band was playing.
+I was lost in France, didn't catch what they were saying.
+And I reached out for a telephone to say
+"Hello, baby, I won't be home"
+I was lost in France in love.
+
+Now, now, now, dance.
+Now, now, now, I'm dancing.
+
+I was lost in France, up above the stars were glowing
+I was lost in France, and the vines were overflowing.
+I reached out for a telephone to say
+"Hello, baby, I won't be home"
+I was lost in France in love.
+
+Now, now, now, dance.
+Now, now, now, I'm dancing.
+
+I looked round and she was standing there
+I knew I shouldn't but I didn't care:
+I was lost in France in love.
+It could happen to anybody,
+Lost in France in love.
+
+Now, now, now, dance.
+Now, now, now, I'm dancing. (mash up)
+)})},
+	tablature_credit=Will Nerini;;;;1997-11-05,
 		onlist=
 		va_gunfire ..
 		gift1 .. fire_cholmondley

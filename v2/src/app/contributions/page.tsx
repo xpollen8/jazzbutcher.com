@@ -55,7 +55,7 @@ const Contributions = (props: any) => {
   const { data, isLoading, error} = useContributions({ all: true });
   //if (!data) return;
 
-  const { gigmedia, gigtext, gigsong, press, pressmedia, media, lyricmedia } = data || {};
+  const { gigmedia, gigtext, gigsong, press, pressmedia, media, lyricmedia, jbclist } = data || {};
   const contributions: HashedType = {};
 	let total = 0;
 
@@ -90,6 +90,9 @@ const Contributions = (props: any) => {
 	});
 	gigtext?.results?.forEach((r: any) => {
 		addInfo(contributions, r?.credit, 'text', r?.credit_date, r?.datetime, true);
+	});
+	jbclist?.results?.forEach((r: any) => {
+		addInfo(contributions, r?.credit, 'text', r?.date, r?.datetime, true);
 	});
 	gigmedia?.results?.forEach((r: any) => {
 		addInfo(contributions, r?.credit, 'image', r?.credit_date, r?.datetime, true);

@@ -7,6 +7,7 @@ const MailingListMessage = ({ params }: any) => {
 	const i = parseInt(id);
 
 	if (i > 0) {
+		// we have an actual message
 		return (<>
 			<Header section="mailinglist" title={ [ `${year};;/mailinglist/${year}`, `${i}` ] } />
 			<main className="etc">
@@ -15,6 +16,7 @@ const MailingListMessage = ({ params }: any) => {
 			<Footer />
 		</>);
 	} else {
+		// otherwise we are in the 'listing mode' (by subject, by sender, etc)
 		return (<>
 			<Header section="mailinglist" title={ [ `${year};;/mailinglist/${year}`, `${id}` ] } />
 			<main className="etc">

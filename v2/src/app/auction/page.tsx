@@ -60,7 +60,7 @@ const AuctionFinePrint = () => (<>
 </>)
 
 const Body = () => (<>
-	<Tag>The Jazz Butcher&apos;s Virtual Lawn Sale</Tag>
+	<Tag>The Jazz Butcher&apos;s Virtual Lawn Sale (1997-10-29)</Tag>
 	<div className="flex flex-wrap p-3">
 		<div className="w-1/2">
 			<b style={{ fontSize: '1.5em' }} >What&apos;s going on here?</b>

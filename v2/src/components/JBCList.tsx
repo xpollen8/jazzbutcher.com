@@ -10,6 +10,7 @@ const JBCListNav = ({ year = '1989', id = 'date', next, prev }: any) => {
 	const yi = parseInt(year);
 	const py = (yi > 1989) ? yi - 1 : null;
 	const ny = (yi < 2004) ? yi + 1 : null;
+	if (!(yi >= 1989 && yi <= 2004)) return notFound();
 	const i = parseInt(id);
 	const mode = (i) ? <>Message: {i}</> : <>By: {id}</>;
 	const subject_selected = (id === 'subject') ? 'email_nav_selected' : '';
@@ -151,6 +152,7 @@ const JBCListMessage = ({ year = 1989, id = 1 }: any) => {
 	if (!yearMessages) return notFound();
 	const message = yearMessages[parseInt(id) - 1] || {};
 	const thisMessageIdx = message?.msgId;
+	if (!thisMessageIdx) return notFound();
 	const yearIdx = yearMessages?.findIndex((m: any) => m === message);
 	const { msgId: prevMsgId } = findPrevious(year, yearIdx - 1) || {};
 	const { msgId: nextMsgId } = findNext(year, yearIdx + 1) || {};

@@ -131,7 +131,11 @@ const subContrib = (chunk: string, key: number) => {
 	const s = chunk?.replace(', ', ',');
 	if (s?.endsWith('}}')) {
 		const sc = s.substring(0, s.length - 2)?.trim();
-		return <Link key={key} href={`/contributions/${sc}`}>{sc}</Link>
+		if (sc === 'jbc-list') {
+			return <Link key={key} href={`/mailinglist`}>{sc}</Link>
+		} else {
+			return <Link key={key} href={`/contributions/${sc}`}>{sc}</Link>
+		}
 	} else {
 		return s;
 	}

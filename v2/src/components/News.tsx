@@ -21,6 +21,19 @@ type NewsItemType = {
 const recentNews = [
 	{
 		subject: `Website/search improvement`,
+		dt: '2025-09-11',
+		category: 'maintenance',
+		credit: 'David Whittemore',
+		body: <>
+			<Link href={`/mailinglist`}>The jbc-list archives</Link> are back from exile.
+			The missing posts from the year 2000 have been recovered.
+			All identifying email address have been scrubbed, and each jbc-list participant can
+			find <Link href={`/contributions`}>their contributions here</Link>
+			<p />
+		</>
+	},
+	{
+		subject: `Website/search improvement`,
 		dt: '2025-08-25',
 		category: 'maintenance',
 		credit: 'David Whittemore',

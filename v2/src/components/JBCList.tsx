@@ -1,0 +1,172 @@
+import Link from 'next/link';
+import { type HashedType, prettyDate, dateAgo } from '@/lib/utils';
+import { notFound } from 'next/navigation';
+import messages from '@/../public/data/jbc-list.json';
+import LetterHeader from '@/components/LetterHeader';
+
+const pad = (n: number) => String(n + 1).padStart(4, '0');
+
+const JBCListNav = ({ year = '1989', id = 'date', next, prev }: any) => {
+	const yi = parseInt(year);
+	const py = (yi > 1989) ? yi - 1 : null;
+	const ny = (yi < 2004) ? yi + 1 : null;
+	const i = parseInt(id);
+	const mode = (i) ? <>Message: {i}</> : <>By: {id}</>;
+	const subject_selected = (id === 'subject') ? 'email_nav_selected' : '';
+	const date_selected = (id === 'date') ? 'email_nav_selected' : '';
+	const sender_selected = (id === 'sender') ? 'email_nav_selected' : '';
+	const yl = (i > 1) ? '' : `/${id}`;
+	return <LetterHeader title=<>{`jbc-list: ${year}`} - {mode}</> subhead=<>
+		{(py) && <>{' '}[<Link href={`/mailinglist/${py}${yl}`}>{py}</Link>]</>}
+		{(ny) && <>{' '}[<Link href={`/mailinglist/${ny}${yl}`}>{ny}</Link>]</>}
+		{' '}[<Link className={subject_selected} href={`/mailinglist/${year}/subject`}>By Subject</Link>]
+		{' '}[<Link className={date_selected} href={`/mailinglist/${year}`}>By Date</Link>]
+		{' '}[<Link className={sender_selected} href={`/mailinglist/${year}/sender`}>By Sender</Link>]
+		{(prev) && <>{' '}[<Link href={`/mailinglist/${prev}`}>Prev</Link>]</>}
+		{(next) && <>{' '}[<Link href={`/mailinglist/${next}`}>Next</Link>]</>}
+	</>
+	/>
+}
+
+export const JBCListing = ({ year, id = 'date' }: any) => {
+	// @ts-ignore
+	const yearMessages: HashedType = messages[year];
+
+	switch (id) {
+		case 'subject': {
+			const subjects: HashedType = {};
+			yearMessages?.forEach((m: any) => {
+				const subject = m.subject;
+				if (!subjects[subject]) subjects[subject] = [];
+				subjects[subject].push(m);
+			})
+			return <>
+				<JBCListNav year={year} id={id} />
+				{Object.keys(subjects).map((subject: string, key: number) => {
+					return <ol className="email_listing" key={key}>
+						<b>{subject}</b>
+						{subjects[subject]?.map((m: any, key: number) => {
+							return <li className="odd:bg-gray-100 border-b" key={key}>
+								{m.date.substring(0, 10)}: <Link href={`/mailinglist/${m.msgId}`}>{m.from}</Link>
+							</li>
+						})}
+					</ol>
+				})}
+			</>
+		}
+		break;
+		case 'sender': {
+			const senders: HashedType = {};
+			yearMessages?.forEach((m: any) => {
+				const sender = m.from;
+				if (!senders[sender]) senders[sender] = [];
+				senders[sender].push(m);
+			})
+			return <>
+				<JBCListNav year={year} id={id} />
+				{Object.keys(senders).map((sender: string, key: number) => {
+					return <ol className="email_listing" key={key}>
+						<b><Link href={`/contributions/${sender}`}>{sender}</Link></b>
+						{senders[sender]?.map((m: any, key: number) => {
+							return <li className="odd:bg-gray-100 border-b" key={key}>
+								{m.date.substring(0, 10)}: <Link href={`/mailinglist/${m.msgId}`}>{m.subject}</Link>
+							</li>
+						})}
+					</ol>
+				})}
+			</>
+		}
+		break;
+		default: {
+			const days: HashedType = {};
+			yearMessages?.forEach((m: any) => {
+				const day = m.date.substring(5, 10);
+				if (!days[day]) days[day] = [];
+				days[day].push(m);
+			})
+			return <>
+				<JBCListNav year={year} id={id} />
+				{Object.keys(days).map((day: string, key: number) => {
+					const [ mm, dd ] = day.split('-');
+					return <ol className="email_listing" key={key}>
+						<b>{year}-{day}</b>
+						{days[day]?.map((m: any, key: number) => {
+							return <li className="odd:bg-gray-100 border-b" key={key}>
+								<Link href={`/mailinglist/${m.msgId}`}>{m.subject}</Link>
+							</li>
+						})}
+					</ol>
+				})}
+			</>
+		}
+	}
+	return <>
+		YEAR: {year}
+		MODE: {id}
+	</>
+}
+
+const findPrevious = (year: number, yearIdx: number) => {
+	// @ts-ignore
+	const message = messages[year][yearIdx];
+	if (message) return message;
+	// try previous year
+	// @ts-ignore
+	const prevYear = messages[parseInt(year) - 1];
+	if (prevYear) return prevYear[prevYear.length - 1];
+}
+
+const findNext = (year: number, yearIdx: number) => {
+	// @ts-ignore
+	const message = messages[year][yearIdx];
+	if (message) return message;
+	// try next year
+	// @ts-ignore
+	const nextYear = messages[parseInt(year) + 1];
+	if (nextYear) return nextYear[0];
+}
+
+const subContrib = (chunk: string, key: number) => {
+	const s = chunk?.replace(', ', ',');
+	if (s?.endsWith('}}')) {
+		const sc = s.substring(0, s.length - 2)?.trim();
+		return <Link key={key} href={`/contributions/${sc}`}>{sc}</Link>
+	} else {
+		return s;
+	}
+}
+
+const bodySubstitutions = (body: string) => {
+	return body?.split('}}') // now we're an array
+		?.map((w) => {
+			if (!w?.includes('{{')) return w;
+			const text = w + '}}';
+			return text?.split('{{') ?.map(subContrib)?.flat();
+	});
+}
+
+const JBCListMessage = ({ year = 1989, id = 1 }: any) => {
+	// @ts-ignore
+	const yearMessages = messages[year];
+	if (!yearMessages) return notFound();
+	const message = yearMessages[parseInt(id) - 1] || {};
+	const thisMessageIdx = message?.msgId;
+	const yearIdx = yearMessages?.findIndex((m: any) => m === message);
+	const { msgId: prevMsgId } = findPrevious(year, yearIdx - 1) || {};
+	const { msgId: nextMsgId } = findNext(year, yearIdx + 1) || {};
+
+	return <>
+		<JBCListNav year={year} id={id} prev={prevMsgId} next={nextMsgId} />
+		<div className="email">
+			Date: {prettyDate(message.date)} {dateAgo(message.date)} <br />
+			From: <Link href={`/contributions/${message.from}`}>{message.from}</Link>
+			<br />Subject: <b>{message.subject}</b>
+			<p />
+			<div className="email_body">
+				{bodySubstitutions(message.body)?.map((part: any, key: number) => <span key={key}>{part}</span>)}
+			</div>
+		</div>
+	</>
+}
+
+export default JBCListMessage;

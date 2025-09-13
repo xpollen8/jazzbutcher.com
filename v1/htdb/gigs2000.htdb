@@ -1581,6 +1581,49 @@
 			Sunday and said "you must be Ray from China."
 		)}$$
 			Ray;;rlkoke@public1.tpt.tj.cn
+		---
+		${literalizeCommas(
+Shinjuku Loft, Tokyo, June 17, 2000
+<p />
+Perfect day to hear "Rain."
+I can't still believe the JBC Japan tour is really happening here in Japan.
+The show started at seven o'clock with a short solo performance by Max
+Eider. Max looked very nervous. The audience seemed not knowing how to react
+to him either, just listening carefully to him. The atmosphere was somewhat
+awkward at the beginning. Owen joined Max with the accordion from the fourth
+song.
+<p />
+As soon as Max left the stage, members of Dislocation Dance came in.
+Three of them were wearing aloha shirts, celebrating their reunion (?) Their
+performance was pretty good. I thought that tonight's audience was a little
+too calm until Pat showed up on stage and greeted to us with a Japanese word
+"konbanwa," meaning "good evening." The performance by JBC was extremely
+entertaining.
+<p />
+I heard many people constantly saying "great," "lovely,"
+"super," and such words in Japanese. Max looked more relaxed playing with
+Pat. He had many lovely smiles on his face. It was great to hear "Human
+Jungle" with Owen on drums. Steve's bass was unexpectedly wild! Most of the
+Jazz Butcher CDs and vinyls, including 'Rotten Soul,' previous Grass and
+Creation releases and even the Tonics were sold at the venue, together with
+the Vinyl Japan original T-shirts and pins. JBC Japan tour is organized by
+Vinyl Japan.
+<p />
+I sincerely appreciate Mr. Tetsuya Nakatani, President of the
+company, for his efforts in making this tour as well as the release of the
+JBC new album possible. Pat said 'Arigato' to us many times, but it was us,
+Japanese audience, who wanted to thank Pat, Max, Owen and Steve for their
+coming to Japan and giving a great show for us!!
+<p />
+Max Program: Sense of Motion; It Has To Be You; Bel Air Home; Perfect
+Companion; The One You Adore; My Other Life
+<p />
+JBC Program: Partytime; Baby It's You; Rain; Who Loves You Now?; Human
+Jungle; Diamorphine; Girlfriend; Niagara; Sleepwalking; Come On, Marie;
+Rosemary; Mr. Odd; She's On Drugs; Caroline Wheeler's Birthday Present;
+Zombie Love; Drink; Take Skinheads Bowling; Bigfoot Motel
+		)}$$
+			Mio Sugita;;;;2025-09-12
 		,
 		posters=/images/20000617/20000617_poster.jpg$$
 		    \@Mayumi3bi;;https://twitter.com/Mayumi3bi;;2023-06-02
@@ -1693,6 +1736,43 @@
 			And I'm still grinning.
 		)}$$
 			Ray;;rlkoke@public1.tpt.tj.cn
+		---
+		${literalizeCommas(
+Shinjuku Loft, Tokyo, June 18, 2000
+<p />
+The same audience from last night occupied the first row. The guy next to me
+was there last night too. He said to me that he wished JBC to play
+'Roadrunner' last night but thought it would be impolite to request it
+because it is a song originally by someone else. The lady on the other side,
+who was claimed to be a big fan of Max, said that she was a little scared at
+Max with black sunglasses on.
+<p />
+I suppose it is because in our consciousness,
+people wearing black sunglasses still remind us of 'Yakuzas.' It was very
+nice to meet other JBC fans in Japan. I didn't expect to meet so many of
+them. I have been to many shows by many different musicians in Japan as well
+as in other places, but I felt the JBC fans at Shinjuku Loft were all very
+friendly yet very polite. Tonight's program was a little different from last
+night. Owen's 'Don't Let Me Keep You' was very touching.
+<p />
+There were many
+teenagers who obviously came to see Dislocation Dance due to the influence
+by a trendy Japanese singer who recently made a cover of their song.
+However, they gave lots of shouts and clap hands to JBC too. It may be
+partly because of a sequence from the lively show by Dislocation Dance, but
+they did enjoy JBC.
+<p />
+The boys kept saying 'wow' by looking at mad guitar
+played by Pat. And the girls fell in love with Max. JBC played longer
+tonight. I look forward to another show in Osaka on June 20.
+<p />
+JBC Program: Partytime; Girl Who Keeps Goldfish; Don't Let Me Keep You;
+Baby, It's You; Rain; Mr. Odd; I Hate Love; Girlfriend; Diamorphine;
+Niagara; Sleepwalking; Human Jungle; Come On, Marie; Who Loves You Now?;
+Rosemary; She's On Drugs; Caroline Wheeler's Birthday Present; She's a
+Yo-Yo; Love Kitten and more
+		)}$$
+			Mio Sugita;;;;2025-09-12
 		,
 		posters=/images/20000618/20000618_poster.jpg$$
 		    \@Mayumi3bi;;https://twitter.com/Mayumi3bi;;2023-06-02
@@ -1709,7 +1789,35 @@
 		)},
 		pat=${literalizeCommas(
 			<a href="${jbc_root}/japan2000">Pat's Japan 2000 Travelogue</a>
-		)}
+		)},
+		reviews=${literalizeCommas(
+Shinsaibashi Muse Hall, Osaka, June 20, 2000
+<p />
+I met the girl who was also at two JBC shows in Tokyo. She had a picture of
+her cat in her wallet. I thought JBC fans have things in common. They did
+play 'Roadrunner on request (!),' fantastic!!
+<p />
+Owen's drums and backing
+vocals were so energetic, especially on 'Girlfriend.' I personally wished he
+played his song tonight too. I'm sure that the members were very tired, but
+they didn't show it in their performance. I danced and shouted throughout
+the show. Which show in Japan did I like the most? It's hard to say.
+<p />
+I
+really had a lovely time at each show. I've seen the Jazz Butcher shows
+several times before, but it was very nice to see Pat with Max and Owen
+playing together. They are the greatest! And of course, I have great respect
+for Steve as well. Many thanks to JBC!!
+<p />
+Max Program: Sense of Motion; (new song?); It Has To Be You; The One You
+Adore; Perfect Companion; My Other Life
+<p />
+JBC Program: Partytime; Baby, It's You, Rain; Who Loves You Now?; Human
+Jungle; Diamorphine; Girlfriend; Niagara; Soul Happy Hour; Come On, Marie;
+Mr. Odd; Rosemary; She's On Drugs; Caroline Wheeler's Birthday Present;
+Roadrunner; Thing; Walk With Devil; Zombie Love
+		)}$$
+			Mio Sugita;;;;2025-09-12
 	)}
 
 #define	page_requested	${${page}()}

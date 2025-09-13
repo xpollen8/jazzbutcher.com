@@ -502,6 +502,19 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+reviews=${literalizeCommas(
+Ah yes, TT the Bears. Small. Hot. Loud. Saw my first JBC
+show there in June, 1988. Lively, tipsy, fun show, despite fratboys
+singing along. Pat was wearing his "Vodka" medallion. Just before
+going on stage, he pushed his way through the crowd, stopped and looked
+quizzingly at me. Not knowing who he was, the best I could manage was a
+confused "huh?". Kizzy wasn't looking too well, and somebody shouted,
+"You look anemic!" to which Laurence replied, "Of course we do.
+We're from England." There was much feedback and flailing about.
+<p />
+Bliss.
+)}$$
+Craig Kolb;;;;2000-03-17
 
 	)}
 

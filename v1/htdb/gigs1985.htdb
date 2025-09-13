@@ -416,7 +416,7 @@
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 	posters=/images/19850628/19850628_poster.jpg$$
-		ruse@cableinet.co.uk;;;;2025-07-21
+		Russ W.;;;;2025-07-21
 
 	)}
 
@@ -425,7 +425,7 @@
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 	posters=/images/19850628/19850628_poster.jpg$$
-		ruse@cableinet.co.uk;;;;2025-07-21
+		Russ W.;;;;2025-07-21
 
 	)}
 
@@ -484,7 +484,7 @@
 			/images/19850727/19850727_ruse_JbJL003.jpg$$
 			/images/19850727/19850727_ruse_JbJL004.jpg$$
 			/images/19850727/19850727_ruse_JbJL005.jpg$$
-			ruse@cableinet.co.uk;;;;2001-02-03
+			Russ W.;;;;2001-02-03
 
 	)}
 
@@ -664,7 +664,7 @@
 	)},
 	tickets=
 		/images/19851029/19851029_ticket.jpg$$
-		ruse@cableinet.co.uk;;;;2004-02-13
+		Russ W.;;;;2004-02-13
 	,posters=
 		/images/19851029/19851029_poster.jpg$$
 		nothingelseon;;https://twitter.com/nothingelseon/status/1282961000950423554/photo/1;;2020-07-16

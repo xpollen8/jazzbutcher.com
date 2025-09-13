@@ -8,7 +8,7 @@
 		)},
 		,setlists=
 			/images/20000413/20000413_setlist.jpg$$
-			VerveNet@aol.com;;;;2001-08-09
+			VerveNet@...;;;;2001-08-09
 	,
 	reviews=
 		${literalizeCommas(
@@ -35,7 +35,7 @@
 			I was with.  Everyone played well, and I'm certain they would have 
 			gone on beyond the single encore if TT's wasn't about to close.
 		)}$$
-			A. Izenstark;;aizenstark@mindspring.com
+			Amanda Izenstark;;aizenstark@mindspring.com
 	---
 		${literalizeCommas(
 			No, I never did give away those two extra tickets from yesterday, which is 
@@ -268,7 +268,7 @@
 			/images/20000415/Buff46.jpg$$
 			/images/20000415/Buff47.jpg$$
 			/images/20000415/Buff49.jpg$$
-			Robert Ferin;;;;2001-08-04
+			Robert Ferin;;;;2000-06-16
 	,
 	reviews=
 		${literalizeCommas(
@@ -296,7 +296,20 @@
 			/images/20000416/erie_3.jpg$$
 			/images/20000416/erie_4.jpg$$
 			/images/20000416/erie_5.jpg$$
-			jlw;;welle@velocity.net;;2004-05-12
+			Jim Welle;;welle@velocity.net;;2004-05-12
+		,
+    reviews=
+        ${literalizeCommas(
+I'm holding in my hands (not literally,I have to type) a video tape of
+the JBC show in Erie, PA. AND IT ROCKS!! The first few songs were not
+recorded, but the rest of the show is there in living color & sometimes
+black & white. The person who shot it gets a little effects happy... but so
+be it. The sound is really quite good.
+I would be willing to trade copies for any live JBC recordings from this
+tour or any others. Please e-mail me if anyone is interested.
+<p />
+)}$$
+Jim Welle;;;;2000-05-25
 	)}
 
 #define	Apr17.html()
@@ -349,7 +362,7 @@
 			better design on it.  Oh well.
 			</p>
 		)}$$
-			Matt;;mlc139@psu.edu
+			Matt Condon;;mlc139@psu.edu
 	)}
 
 #define	Apr18.html()
@@ -488,7 +501,7 @@
 				mailing list and....
 				</p>
 			)}$$
-				WizardGlik@aol.com
+				Darren the illegal ebay dude
 	)}
 
 #define	Apr19.html()
@@ -733,7 +746,7 @@
 			rather small, but those who were there were
 			very appreciative.
 		)}$$
-			mns;;blowme@mnslab.com
+			Matthew Neil Sharp
 	)}
 
 #define	Apr29.html()
@@ -823,10 +836,28 @@
 		Jennifer Hubler;;https://www.flickr.com/photos/jenhuber/albums/72177720298823758;;2022-05-11
 	,setlists=
 			/images/20000503/20000503_setlist.jpg$$
-			;;;;2016-04-18
+			Knight Berman;;;;20000-05-10
 	,
 	posters=/images/20000503/20000503_poster.jpg$$
 	    ;;;;2004-05-19
+	,
+	reviews=${literalizeCommas(
+Thought you might enjoy the attached for your archive or personal
+amusement. Please forgive my scanning abilities (I ain't quite got
+the hang of it all yet).
+<p />
+Not listed on the set are the encores of "Somewhere Over the
+Rainbow," and "Take the Skinheads Bowling," which Pat prefaced by
+saying something to the effect of "If you were smart, you'd be in
+Athens right now watching Cracker," a reference to the fact that
+Cracker was playing at the 40 Watt the night before the JBC ventured
+there.
+<p />
+The show at the Echo Lounge was fabulous, as was the ill-attended 40
+Watt show. Fine playing and performances all-around. Steve is rocking
+the hell out of the bass!
+)}$$
+Knight Berman;;;;20000-05-10
 	)}
 
 #define	May4.html()
@@ -1172,7 +1203,7 @@
 			Whittemore for their extra touches. They made for quite a happy ending
 			for my group.
 		)}$$
-			TOM-MAX@concentric.net
+			Thomas Miller
 	---
 		${literalizeCommas(
 			Yes!  It was a great show.  The venue was much smaller than the 
@@ -1464,7 +1495,7 @@
 			/images/20000617/DCP_1082.jpg$$
 			/images/20000617/DCP_1083.jpg$$
 			/images/20000617/DCP_1084.jpg$$
-			Ray;;rlkoke@public1.tpt.tj.cn;;;;2004-05-11
+			Ray Koke;;rlkoke@public1.tpt.tj.cn;;;;2004-05-11
 			---
 			https://s3.amazonaws.com/assets.jazzbutcher.com/images/20000617/20000617_screenshot.jpg;;Captured from video$$
 			Disclocation Dance video;;https://youtu.be/rVQK2Bsdd7Q?t=161;;2023-04-16
@@ -1580,7 +1611,7 @@
 			note last weekend). Pat, whom I had not given my name, came up to me
 			Sunday and said "you must be Ray from China."
 		)}$$
-			Ray;;rlkoke@public1.tpt.tj.cn
+			Ray Koke;;rlkoke@public1.tpt.tj.cn
 		---
 		${literalizeCommas(
 Shinjuku Loft, Tokyo, June 17, 2000
@@ -1667,7 +1698,7 @@ Zombie Love; Drink; Take Skinheads Bowling; Bigfoot Motel
 			/images/20000618/DCP_1112.jpg$$
 			/images/20000618/DCP_1113.jpg$$
 			/images/20000618/DCP_1114.jpg$$
-			Ray;;rlkoke@public1.tpt.tj.cn;;;;2004-05-11
+			Ray Koke;;rlkoke@public1.tpt.tj.cn;;;;2004-05-11
 	,
 	reviews=
 		${literalizeCommas(
@@ -1735,7 +1766,7 @@ Zombie Love; Drink; Take Skinheads Bowling; Bigfoot Motel
 			<p>
 			And I'm still grinning.
 		)}$$
-			Ray;;rlkoke@public1.tpt.tj.cn
+			Ray Koke;;rlkoke@public1.tpt.tj.cn
 		---
 		${literalizeCommas(
 Shinjuku Loft, Tokyo, June 18, 2000

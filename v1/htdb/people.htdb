@@ -643,7 +643,7 @@ ${define(range[${z}]->end,)}
 		${g_credit(g=${del})}
 
 		<a href="${jbc_images}/people/20220714_WonderBat9_Photobook_MartinStebbing.jpg"><img src="${jbc_images}/people/20220714_WonderBat9_Photobook_MartinStebbing_500.jpg" alt="Botus"></a>
-		${g_credit(g=wonderbat9 , u=https://youtu.be/a6SzTBA7WG8?t=182, d=2022-07-14)}
+		${g_credit(g=Dhiren Basu , u=https://youtu.be/a6SzTBA7WG8?t=182, d=2022-07-14)}
 		${w_where} Chicago, Illinios.
 		Martin works freelance as a studio recording
 		engineer.  He has worked with ${scream},

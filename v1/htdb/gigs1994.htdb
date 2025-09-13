@@ -511,7 +511,7 @@
 				David Whittemore;;;;1997-05-29
 			---
 				/images/19940601/20220715_WonderBat9_Photoalbum_BlackEg.jpg;;Michael Horton-Jupiter meets The Black Eg$$
-				wonderbat9;;https://www.youtube.com/watch?v=a6SzTBA7WG8;;2022-07-14
+				Dhiren Basu;;https://www.youtube.com/watch?v=a6SzTBA7WG8;;2022-07-14
 			,
 		recording=${literalizeCommas(
 			${DAT} ${room}, ${q(8)}, ${p(A-)}, ${i(8)}

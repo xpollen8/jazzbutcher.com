@@ -4935,7 +4935,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00','set',NULL,1,4,'Gold','
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00','set',NULL,1,5,'La Mer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00','set',NULL,1,6,'Tombé dans les pommes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00','set',NULL,1,7,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00','set',NULL,1,8,'Baltic',NULL,NULL,NULL,'https://www.youtube.com/embed/T0LOGAmgodQ','Cathy Viale','https://www.youtube.com/channel/UCYKVWoD_73O1FCkY7QU1aMA',NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00','set',NULL,1,8,'Baltic',NULL,NULL,NULL,'https://www.youtube.com/embed/T0LOGAmgodQ','Catherine Viale','https://www.youtube.com/channel/UCYKVWoD_73O1FCkY7QU1aMA',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00','set',NULL,1,9,'She\'s on Drugs',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00','set',NULL,2,0,'Pale Blue Eyes','Lou Reed',NULL,NULL,'https://www.youtube.com/embed/s4MJEmH7KpI','Catherine Viale','https://www.youtube.com/channel/UCYKVWoD_73O1FCkY7QU1aMA',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-09-28 19:00:00','set',NULL,2,1,'The New You','Tim Keegan',NULL,NULL,NULL,NULL,NULL,NULL,NULL);

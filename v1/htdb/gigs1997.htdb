@@ -73,6 +73,59 @@
 		reviews=${literalizeCommas(
 		(verbatim from youtube) From Pat Fish:  This gig is from the 12 Bar Club in London's "Tin Pan Alley", Denmark Street in the West End on Thursday 11th September 1997. Max and I booked it as a warm-up for the trip to Seattle and San Francisco. It was the first time that we had played a set together in public since 1985. You can kind of tell; both players are on their best behaviour. 🙂
 		)}$$Hale;;https://www.youtube.com/senorme1001;;2023-03-01
+		---
+		${literalizeCommas(
+		I see no one's given any feedback on Thursday's 12 Bar Club gig. Well,
+		what can I say ? Pat & Max were nothing short of excellent. Anyone
+		going to S.F. is certainly in for a treat.
+		<p />
+		'Syd' Meats, Southampton's Leading Weird Bloke
+		"Quantity has a quality all of its own" - Lenin.
+		)}$$Sydney Meats;;;;1997-09-15
+		---
+		${literalizeCommas(
+		I was there too: Pat and Max were great, not taking it too seriously at
+		all ('Drink' was particularly silly), enjoying every moment of it. Max
+		was in fine and distinctive voice, and as nimble fingered as ever. Apart
+		from that, I don't want to give too much away, but I should think those
+		of you lucky enough to be as the All American Music Hall (or whatever)
+		will be treated to many cuts from the Bath of Bacon, and the Scandal in
+		Bohemia (no Human Jungle, but I didn't notice its absence until I got
+		home).
+		<p />
+		Robyn Hitchcock was later sighted skulking in the toilets, looking
+		grizzled and misanthropic. I suspect the secret of Pat's eternal youth
+		involves some sort of Picture of Dorian Grey arrangement. Anyway, enough
+		of these ramblings: "enjoy", as I believe they say in America.
+		)}$$Michael Whitworth;;;;1997-09-16
+		---
+		${literalizeCommas(
+		Just got back from my European trip, which included the 12 Bar show, my
+		first JB concert. Thouroughly enjoyed it. Bath of Bacon & Scandal in Bohemia
+		predate my collection, so a good chunk of the material was new to me, but a
+		lot of fun. Max has a kind of interesting expression when he plays, sort of
+		an amused 'I knew that was going to happen' look. And I agree with the
+		Dorian Grey comment previously posted.
+		<p />
+		Incredibly small room - I've never seen a set list taped to the front of the
+		balcony before! We were close enough to the stage that when Pat introduced a
+		song about 'small household pets' and I said to my non-JB familiar
+		girlfriend, 'Domestic Animal', Pat looked up and said 'not that one'.
+		<p />
+		Snared Pat for a few seconds after the encore and gave him a couple of
+		Fishirts I'd brought - T-shirts a friend of mine makes, one of a kind prints
+		using real (not live) fish, which he graciously accepted.
+		<p />
+		I love seeing music in London. Also caught John Otway at the Weavers just
+		before we left - hadn't seen him since '84, but he's as good as ever, and
+		has really developed as a comedian - the talk side of his show is very good
+		without being too polished. Believe my friend was actually much more taken
+		with John than with the Butcher. Am now the proud owner of the Really Free
+		20th anniversary of the hit t-shirt.
+		<p />
+		Looking forward to the news from the front after the S.F. show.
+		<p />
+		)}$$Derek Martin;;;;1997-09-19
 	)}
 
 #define	Sep16.html()

@@ -6,10 +6,28 @@ import useContributions from '@/lib/useContributions';
 import { type HashedType, parseCaptionsSourcesEtc, pluralize, dateAgo, ts2URI, parseCredit } from '@/lib/utils';
 import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
+import Tag from '@/components/Tag';
 import PressCards from '@/components/PressCards';
 import ContributionChart from '@/components/ContributionChart';
 
 const cleanDate = (dt?: string) => dt?.substring(0, 10)?.replace(/-00/g, '');
+
+const Pictures = ({ pictures, name }: any) => {
+	if (!pictures?.numResults) return;
+	return <>
+		<Tag>Photos tagged with &quot;{name}&quot;</Tag>
+    <PhotoSet photos={pictures?.results?.map((p: any) => {
+      return {
+        ...p,
+				caption: p?.image_caption,
+        alt: p?.datetime?.substring(0, 10),
+        href: ts2URI(p?.datetime),
+        src: p?.image
+      }
+      })
+    } />
+	</>
+}
 
 const InPress = ({ inpress, name }: any) => {
 	if (!inpress?.numResults) return;
@@ -97,7 +115,7 @@ const prettyType = (type: string, t?: string) => {
 const Contributions = ({ options, label='Community contribution' }: HashedType) => {
 	const { data, isLoading, error} = useContributions(options);
 	if (!data) return;
-	const { gigmedia, gigtext, gigsong, press, pressmedia, media, inpress, lyric, lyricmedia, jbclist } = data || {};
+	const { gigmedia, gigtext, gigsong, press, pressmedia, media, inpress, lyric, lyricmedia, jbclist, pictures } = data || {};
 	const contributions: HashedType = {};
 	const recent = [ gigmedia?.results[0]?.credit_date, gigsong?.results[0]?.added, gigtext?.results[0]?.credit_date, press?.results[0]?.dtadded ]?.sort((a: any, b: any) => b?.localeCompare(a))[0];
 	let total = 0;
@@ -232,6 +250,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		);
 	});
 	return <Loading isLoading={isLoading} >
+		{(!!options?.filter?.value) && <Pictures pictures={pictures} name={options?.filter?.value} />}
 		{(!!options?.filter?.value) && <InPress inpress={inpress} name={options?.filter?.value} />}
 		{(!!total) && <AllContributions contributions={contributions} total={total} recent={recent} label={label} options={options} />}
 	</Loading>

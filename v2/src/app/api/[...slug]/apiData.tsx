@@ -641,6 +641,9 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const inpress = await returnFilteredPath('presses', 'body', args?.filter?.value, false);
 				const lyric = await returnFilteredPath('lyrics', 'tablature_credit', args?.filter?.value, false);
 				const lyricmedia = await apiData('lyricmedia_contributions', args);;
+				const pictures = await returnFilteredPath('gigmedias', 'type', 'pix', true, (candidate: HashedType, value: string, exact: boolean) => {
+					return candidate?.image_caption?.toLowerCase()?.includes(args?.filter?.value?.toLowerCase());
+				});
 				return {
 					media: findRecent(media, ['credit_date'], makeOptions(args, 'media')),
 					gigmedia: findRecent(gigmedia, ['credit_date'], makeOptions(args, 'gigmedia')),
@@ -651,6 +654,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					pressmedia: findRecent(pressmedia, ['credit_date'], makeOptions(args, 'pressmedia')),
 					inpress,
 					lyric,
+					pictures,
 					lyricmedia: findRecent(lyricmedia, ['credit_date'], makeOptions(args, 'lyricmedia')),
 				}
 			}

@@ -4,7 +4,7 @@ import { parseImage, parseDomain, linkInternal, linkExternal } from '@/lib/utils
 import { expand } from '@/lib/defines';
 import { removeHTML } from '@/components/GenericWeb';
 
-const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, label, media, className, children }: {
+const FeaturedItem = ({ date, link, image, alt='thumbnail', title, buy, buy_title, label, media, className, children }: {
 	link?: string
 	image?: string
 	label?: string
@@ -55,6 +55,7 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, lab
 				<div className="album_blurb">
 					{children}
 				</div>
+				{date}
 			</div>
 		<p className="clear_float" />
 		</div>

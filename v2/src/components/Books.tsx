@@ -1,4 +1,21 @@
+import Link from 'next/link';
 import FeaturedItem from '@/components/FeaturedItem';
+
+export const BookEbooks = () =>
+	<FeaturedItem
+		title={`Ebooks!`}
+	>
+	<>
+		Subject to huge demand (OK, two people - one who said he wanted a portable copy, another who said the print
+		was a little small), we have released the Kindle versions of both <Link href={`https://www.amazon.com/Miracles-Wonders-meandering-cacophonous-concordance-ebook/dp/B0FMPGWJK3`}>Miracles and Wonders</Link> and <Link href={`https://www.amazon.com/Earl-Sikkorskis-Golden-Treasury-microscope-ebook/dp/B0BNDYQNMC`}>Earl
+		Sikkorski&quot;s Golden Treasury</Link>. The e-version will also give you illustrations in colour, and for ESGT in
+		particular, the ability to get into the fine detail of Sikko&quot;s scrapbook. So, if your eyesight has changed,
+		or you ride on aeroplanes, these are for you. You can still order hardcover copies from these pages at a
+		discount.
+		<p />
+		<div className="date">2025-09-15</div>
+	</>
+</FeaturedItem>
 
 export const BookSikkorski = () =>
 	<FeaturedItem

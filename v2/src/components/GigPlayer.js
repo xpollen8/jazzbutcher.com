@@ -8,12 +8,12 @@ import IconPause from '@/svg/IconPause';
 import { parseDomain, parseCredit, linkExternal } from '@/lib/utils';
 import { Attribution } from '@/components/GenericWeb';
 
-export const GigPlayerFooter = ({ source, comment, credit, crediturl }) => {
+export const GigPlayerFooter = ({ source, comment, credit, crediturl, added }) => {
 	const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = credit?.includes(';;') && parseCredit(credit) || { credit, crediturl  };
 	return (<div className="gigplayer_footer">
 		{comment && <div className="gigplayer_comment">{comment}</div>}
 		{source && <div className="gigplayer_source">{linkExternal(source, parseDomain(source))}</div>}
-		{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate} />}
+		{(mediacredit) && <Attribution g={mediacredit} u={mediacrediturl} d={mediacreditdate || added} />}
 	</div>)
 }
 
@@ -52,6 +52,7 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 	const [tracksEnds, setTrackEnds] = useState([]);
 
 	useEffect(() => {
+		//const ref = audioRef;
 		setDuration(audio.duration);
 		setTrackEnds(tracks?.map((p, i) => {
 			return {
@@ -64,9 +65,9 @@ const GigPlayer = ({ src, tracks, header, footer }) => {
 			if (intervalRef.current !== null) {
 				clearInterval(intervalRef.current);
 			}
-			if (!audioRef.current.paused) {
-				audioRef.current.pause();
-			}
+			//if (!ref?.current.paused) {
+				//ref?.current.pause();
+			//}
 		}
 	}, [audio?.duration, tracks]);
 

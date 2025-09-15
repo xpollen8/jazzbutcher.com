@@ -7,7 +7,7 @@ import OnThisDay from '@/components/OnThisDay';
 import Documentary from '@/components/Documentary';
 import RecentUpdates from '@/components/RecentUpdates';
 import Memorial from '@/components/Memorial';
-import { BookSikkorski, BookMiraclesAndWonders } from '@/components/Books';
+import { BookSikkorski, BookMiraclesAndWonders, BookEbooks } from '@/components/Books';
 import { MostRecentNews } from '@/components/News';
 import Tag from '@/components/Tag';
 
@@ -27,6 +27,7 @@ const relatedReleases = {
 
 const HomeBooks = () =>
 <>
+	<BookEbooks />
 	<BookSikkorski />
 	<BookMiraclesAndWonders />
 </>

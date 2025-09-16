@@ -11,7 +11,7 @@ const linkSearch = ({ name, text, act }:
 <>
 	{(() => {
 	if (act) return <Link href= {`/gigs?f=alsowith&q="${name}"`}>{(text) ? text : name}</Link>
-	return <Link href= {`/gigs?f=performer&q="${name}"`}>{(text) ? text : name}</Link>
+	return <Link href= {`/conspirators/${name}`}>{(text) ? text : name}</Link>
 	})()}
 </>
 
@@ -1013,7 +1013,7 @@ export const AutoLinkPlayer = (str?: string) => {
 		const player = isKnownPerson(name);
 		if (!player) {
 			if (str?.includes('person:')) {
-				return <Link href={`/gigs?f=performer&q="${name}"`}>{name}</Link>
+				return <Link href={`/conspirators/${name}`}>{name}</Link>
 			} else {
 				return <Link href={`/gigs?f=alsowith&q="${name}"`}>{name}</Link>
 			}

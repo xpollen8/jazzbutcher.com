@@ -834,7 +834,18 @@ bootleg: David W., walkman/audience. Includes soundcheck.
 
 	recording=${literalizeCommas(${q(7)}, ${p(B)}, ${i(B)}, ${g(0)})},
 	who=${literalizeCommas( ${pat} )},
-	reviews=${literalizeCommas( spontaneous end-of-tour hotel acoustic tunes
+	reviews=${literalizeCommas(
+The Morning After
+<p />
+Patrick Fish, aka Butch aka The Jazz Butcher aka ...
+<p />
+Patrick turned 32 in Atlanta, Georgia while on US tour with his group in 1989. It was the last show in the tour.
+<p />
+After the show, the night was spent draining the bathtub full of imported alcohol, howling stupid songs until management complained, singing from the Bible, tossing cake out of the window onto the roof of the tour van in the parking lot below.
+<p />
+The next morning - in the hotel lobby, before they climbed into their van for a trip back to the East Coast en route to the UK - was something special.
+<p />
+Out came an acoustic guitar and Pat began noodling around, taking requests from those few of us who hung around. Explanations of obscure lyrics, trading of mementos, addresses. Another guitar player was banging around on the piano in the lobby. The drummer was frantically searching for his passport.
 	)}$$David Whittemore,
 		photosets= /images/19891220/19891220_del_xmas.jpg$$
 			David Whittemore;;;;2013-06-22

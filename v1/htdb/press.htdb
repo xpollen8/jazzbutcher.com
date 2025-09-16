@@ -2041,7 +2041,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Music Express Magazine,
 		title=The Jazz Butcher Vaulting Synapses,
 		location=Canada,
-		dtadded=1996-08-19,
+		dtadded=1991-01-12,	// from jbc-list
 		dtpublished=1991-01)}
 
 	${addPress(type=interview,
@@ -2174,7 +2174,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		headline=FRUITCAKE SOCIOLOGY 101,
 		subhead=Life According to the Jazz Butcher,
 		location=USA,
-		dtadded=1996-08-19,
+		dtadded=1991-05-21,	// jbc-list
 		dtpublished=1986-09)}
 
 	${addPress(type=interview;gig,
@@ -2195,7 +2195,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/198503/198503_abstract5,
 		publication=Abstract Magazine,
 		issue=Issue #5,
-		dtadded=1996-08-19,
+		dtadded=1991-01-17,	// from jbc-list
 		dtpublished=1985-03)}
 
 	${addPress(type=interview,
@@ -2270,7 +2270,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=Ryder Magazine,
 		title=The Distressed Gentlefolk,
 		location=Bloomington\, IN\, USA,
-		dtadded=1996-08-19,
+		dtadded=1992-05-21,	// jbc-list
 		dtpublished=1992-05)}
 
 	${addPress(type=interview;preshow,
@@ -2398,7 +2398,7 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=album, url=${jbc_press}/disclaimerband.html, credit=Willie, source=http://www.disclaimerband.com/j.html, publication=Disclaimer, title=Music Review - All The Albums, dtpublished=2001)}
 
 	${addPress(type=album, url=${jbc_press}/87spex.html,
-		dtadded=1996-08-19,
+		dtadded=1991-03-29,	// from jbc-list
 		dtpublished=1989-08, location=Germany, publication=Spex Magazine, album=may)}
 
 	${addPress(type=album, album=dist,
@@ -2511,7 +2511,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		publication=KCMU Interview,
 		title=Red Dots In The Butcher's Basement,
 		location=Seattle\, WA\, USA,
-		dtadded=1996-08-19,
+		dtadded=1991-05-21,	// jbc-list
 		dtpublished=1990)}
 
 	${addPress(type=album, album=cult,
@@ -2534,7 +2534,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Andy Cowan,
 		publication=Rage Magazine,
 		location=UK,
-		dtadded=1996-08-19,
+		dtadded=1991-09-17,	// jbc-list
 		dtpublished=1991-09)}
 
 	${addPress(type=album, album=highest,
@@ -2562,7 +2562,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=chris heath,
 		publication=Details For Men,
 		location=USA,
-		dtadded=1996-08-19,
+		dtadded=1992-05-21,	// jbc-list
 		dtpublished=1992-06)}
 
 	${addPress(type=album, album=blue,
@@ -2591,14 +2591,14 @@ subhead=(20 December 1957 – 5 October 2021),
 		url=${jbc_press}/93cdconnection.html,
 		credit=Roch Parisien,
 		publication=Compact Disc Connection,
-		dtadded=1996-08-19,
+		dtadded=1993-10-15,	// jbc-list
 		dtpublished=1993)}
 
 	${addPress(type=album, album=bus,
 		url=${jbc_press}/93inrockuptible.html,
 		publication=Les Inrockuptibles,
 		location=France,
-		dtadded=1996-08-19,
+		dtadded=1993-06-02,
 		dtpublished=1993-06)}
 
 	${addPress(type=album, album=bus,
@@ -2606,7 +2606,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		credit=Adam St. James,
 		publication=Illinois Entertainer,
 		location=Chicago\, IL\, USA,
-		dtadded=1996-08-19,
+		dtadded=1994-09-03,	// jbc-list
 		dtpublished=1994-09)}
 
 	${addPress(type=album, album=bus,
@@ -2614,7 +2614,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		thumb=${jbc_images}/19940416/19940416_cashbox,
 		publication=Cash Box,
 		location=USA,
-		dtadded=1996-08-19,
+		dtadded=1994-09-03,	// jbc-list
 		dtpublished=1994-04-16)}
 
 	${addPress(type=album, album=bus,
@@ -2826,7 +2826,7 @@ subhead=(20 December 1957 – 5 October 2021),
 		issue=#34,
 		title=Excerpt from interview with the band Belly,
 		summary=JBC is favourably mentioned in an interview with Belly,
-		dtadded=1996-08-19,
+		dtadded=1994-03-06,	// jbc-list
 		dtpublished=1994)}
 
 	${addPress(type=gig,

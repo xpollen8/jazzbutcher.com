@@ -2574,7 +2574,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','encore','56:43',2,1,'T
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set','00:12',2,1,'Blues For Dead Dean Reed',NULL,'fast!',NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set','04:22',2,2,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set','07:47',2,4,'Bakersfield',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set','12:57',2,5,'Our Friends the Filth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set','12:57',2,5,'Our Friends the Filth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,"29:30;;(To Alex Lee) What kind of question is that? I'm Keith Jones;;/contributions/Keith Jones$$");
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set','18:03',2,6,'Old Snakey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set','22:33',2,7,'Harlan',NULL,'','Kathy McGinty backups',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-12-21 00:00:00','set','30:34',2,8,'She\'s A Yo-Yo',NULL,'tape flip','Alex Lee guitar',NULL,NULL,NULL,NULL,NULL);

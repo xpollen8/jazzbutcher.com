@@ -10,7 +10,7 @@ const ABCs = () =>
 	<Header section="abcs_of_drugs" />
 	<main className="etc">
 		<Drugs >
-			<Image style={{ float: 'right', paddingLeft: '5px' }} alt="pills" src="https://v1.jazzbutcher.com/images/abcs_of_drugs/pills.gif" width={255} height={266} />
+			<Image className="drugs_image" alt="pills" src="https://v1.jazzbutcher.com/images/abcs_of_drugs/pills.gif" width={255} height={266} />
 			More and more people are using illegal drugs. Cannabis is by far the most popular, but many young people also take drugs such as LSD, amphetamines and ecstasy as a normal part of their social lives, much as other people have a few drinks.
 			<p />
 			One reason for this may be that a drug&apos;s legal status is a poor guide to its safety. For instance, alcohol, like heroin, can lead to serious personal and social problems, serious damage to mental and physical health and even death. Or, to compare illegal drugs, the Misuse of Drugs Act puts ecstasy and heroin in the same class, but heroin carries a far greater risk of dependence and associated problems.

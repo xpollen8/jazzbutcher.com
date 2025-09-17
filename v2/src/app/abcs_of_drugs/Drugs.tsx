@@ -19,7 +19,7 @@ const Drugs = ({ data, children }: any) => {
 		<div className="drugs_body">
 			{(!!data) && <>
 				{(!!header) && <><b className="drugs_header">{header}</b></>}
-				{(!!image) && <p><Image alt={alt} src={src} width={width} height={height} /></p>}
+				{(!!image) && <p><Image className="drugs_image" alt={alt} src={src} width={width} height={height} /></p>}
 				{(!!description) && <><p />{description}<p /></>}
 				{(!!background) && <><p /><hr /><p /><b className="drugs_subheader">Background</b><p />{background}<p /></>}
 				{(!!why) && <><p /><hr /><p /><b className="drugs_subheader">Why people use it</b><p />{why}<p /></>}

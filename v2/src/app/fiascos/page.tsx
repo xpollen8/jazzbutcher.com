@@ -740,7 +740,7 @@ const Fiasco7 = ({ heading }: { heading: string }) =>
 			<br/>&quot;So that’s where all the money went&quot;
 
 
-			<h3>Pats&apos;s Story</h3>
+			<h3>Pat&apos;s Story</h3>
 
 			<div className="fiascoBox">
 			<p>

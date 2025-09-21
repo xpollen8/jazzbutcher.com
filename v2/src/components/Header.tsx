@@ -50,13 +50,14 @@ const sections : { [key: string]: BreadCrumb } = {
 	contributions: { parent: 'help', title: 'All contributions to this website' },
 
 	pat: { parent: 'jbc', title: 'Pat' },
+	memoriam: { parent: 'pat', title: 'In Memoriam' },
 //	media: { parent: 'jbc', title: 'Media' },
 
 	releases: { parent: 'jbc', title: 'Releases', summary: 'The records' },
 //	'press?filters=type%3B%3Balbum': { parent: 'press', title: 'Album Reviews' },
 
 	lyrics: { parent: 'jbc', title: 'Lyrics', summary: 'The words' },
-	audio: { parent: 'jbc', title: 'Audio', rootHideChildren: false },
+	audio: { parent: 'jbc', title: 'Audio', summary: 'Studio, Demos, Live', rootHideChildren: true },
 	video: { parent: 'jbc', title: 'Video', summary: 'Huge/unorganized. Sorry!', rootHideChildren: true },
 	press: { parent: 'jbc', title: 'Press', summary: "Reviews, Interviews, etc", rootHideChildren: true },
 	gigs: { parent: 'jbc', title: 'Gigs', summary: 'Live performance archives', rootHideChildren: true },
@@ -70,7 +71,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals", body: "Pat extensively journaled his projects. Some pages are shared here." },
 	fiascos: { parent: 'writings', title: 'Top 10 JBC Fiascos', summary: '2020', body: "When live on the road goes.. interesting" },
 
-	prejbc: { parent: 'pat', title: 'Pre-JBC', rootHideChildren: true },
+	prejbc: { parent: 'pat', title: 'Pre-JBC', rootHideChildren: false },
 
 //	album_reviews: { parent: 'writings', title: "Pat's albums reviews", summary: "Album opinions" },
 //	'press?filters=type%3B%3Bpat': { parent: 'writings', title: "Pat's gig reviews" },
@@ -114,7 +115,6 @@ const sections : { [key: string]: BreadCrumb } = {
 	//'gallery/dave_barker': { parent: 'gallery', title: 'David E. Barker' },
 	//'gallery/david_whittemore': { parent: 'gallery', title: 'David Whittemore' },
 	//'gallery/ruth_tidmarsh': { parent: 'gallery', title: 'Ruth Tidmarsh' },
-	memoriam: { parent: 'pat', title: 'In Memoriam' },
 	fma: { parent: 'pat', title: 'Fishy Mansions Archives', summary: "Items from Pat Fish's Estate" },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions Livestreams', summary: "COVID-era livestreams" },
 	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },

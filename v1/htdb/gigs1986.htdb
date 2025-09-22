@@ -384,6 +384,8 @@
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		pat=${literalizeCommas( First ever U.S. show
 	)},
+		cassettes= /images/FM/19860716_FMAC27.jpg$$
+		Fishy Mansions Cassette FMAC22;;;;2025-07-21,
 
 	)}
 

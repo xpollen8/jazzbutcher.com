@@ -33,7 +33,7 @@ const FMAIndex = ({ items }: any) => {
 			<summary className="tagClickable"> {title} </summary>
 			<br />
 			{obj?.map((c: any) => {
-				return { uri: `/fma/${c.ID}`, text: c.ID, aux: <>{c?.['Artist']?.length ? c?.['Artist'] : c?.['Type']} {maybeLink(c)}</>, children: c?.['Item Name'] }
+				return { uri: `/fma/${c.ID}`, text: c.ID, aux: <>{c?.['Artist']?.length ? c?.['Artist'] : c?.['Type']} {maybeLink(c)}</>, children: c?.['Cassette Name'] }
 			}).map(MakeSimpleURI)}
 			</details>
 		</div>

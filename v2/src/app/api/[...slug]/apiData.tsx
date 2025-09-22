@@ -60,7 +60,7 @@ const doFetchFileXLS = async (url: string) => {
 		//console.log("CACHE HIT", url);
 		return cache[url];
 	}
-	const path = process.cwd() + url.replace(/%20/g, ' ');
+	const path = process.cwd() + '/public/data/' + url.replace(/%20/g, ' ');
 	const arrayBuffer = fs.readFileSync(path, null).buffer;
 	const data = new Uint8Array(arrayBuffer);
 	const workbook = XLSX.read(data, { type: 'array' });

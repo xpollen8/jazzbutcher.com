@@ -1,10 +1,23 @@
 "use client";
 
+import Image from 'next/image';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import useFishyMansionsArchives from '@/lib/useFishyMansionsArchives';
 import LetterHeader from '@/components/LetterHeader';
 import Loading from '@/components/Loading';
+
+const showThing = (thing?: any) => {
+	if (typeof thing === 'string' && thing?.includes('.jpg')) {
+		return thing.split(',').map((t: string, key: number) => {
+			const image = `/images/FM/${t}`;
+			return <Link key={key} href={image}><Image src={image} alt="pic" width={250} height={250} /></Link>
+		});
+	} else {
+		return <i>{thing}</i>
+	}
+}
 
 const FishyMansionsArchivesItem = ({ item, slug }: any) => {
 	if (!item) return;
@@ -23,7 +36,7 @@ const FishyMansionsArchivesItem = ({ item, slug }: any) => {
 			<ul className="listItem">
 				{Object.keys(obj)?.map((k, i): any => {
 					return <li key={i}>
-					<b>{k}</b> <i>{obj[k]}</i>
+					<b>{k}</b> {showThing(obj[k])}
 					</li>
 				})}
 			</ul>

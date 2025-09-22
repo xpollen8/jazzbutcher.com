@@ -1,4 +1,5 @@
 "use server"
+const fs = require('fs');
 
 import moment from 'moment';
 import * as XLSX from 'xlsx';
@@ -59,8 +60,8 @@ const doFetchFileXLS = async (url: string) => {
 		//console.log("CACHE HIT", url);
 		return cache[url];
 	}
-	const response = await fetch(url);
-	const arrayBuffer = await response.arrayBuffer();
+	const path = process.cwd() + url.replace(/%20/g, ' ');
+	const arrayBuffer = fs.readFileSync(path, null).buffer;
 	const data = new Uint8Array(arrayBuffer);
 	const workbook = XLSX.read(data, { type: 'array' });
 
@@ -131,8 +132,6 @@ const doPostToDataServer = async (path: string, body: any, args?: string) => {
 			return { error: `POST to ${url} failed` };
 		});
 }
-
-const apiXLSFromStaticServer = async (path: string) => await doFetchFileXLS(`${process.env.JBC_HTDB_SERVER}/static/${path}`);
 
 const apiDataFromDataServer = async (path: string, args?: string) => {
 	if (!args) {
@@ -283,7 +282,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			/*
 				static file lookups
 			 */
-			case 'FMA Media List.xlsx': { return await apiXLSFromStaticServer(path); }
+			case 'FMA Media List.xlsx': { return await doFetchFileXLS(path); }
 			case 'gigs': { return gigsStatic; }
 			case 'gigmedias': { return gigmediasStatic; }
 			case 'gigsongs': { return gigsongsStatic; }

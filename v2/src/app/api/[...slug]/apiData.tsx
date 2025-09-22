@@ -134,8 +134,6 @@ const doPostToDataServer = async (path: string, body: any, args?: string) => {
 
 const apiXLSFromStaticServer = async (path: string) => await doFetchFileXLS(`${process.env.JBC_HTDB_SERVER}/static/${path}`);
 
-const apiDataFromHTDBServer = async (path: string) => await doFetch(`${process.env.JBC_HTDB_SERVER}/htdb/${path}`);
-
 const apiDataFromDataServer = async (path: string, args?: string) => {
 	if (!args) {
 		return await doFetch(`${process.env.JBC_DATA_SERVER}/api/${path}`);
@@ -271,7 +269,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				return await doPostToDataServer(path, formData, args);
 		}
 	} else {
-		switch (path) {
+		switch (path?.replace(/%20/g, ' ')) {
 			/*
 				feedback needs live db lookups
 			 */
@@ -285,7 +283,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			/*
 				static file lookups
 			 */
-			case 'FMA.xls': { return await apiXLSFromStaticServer(path); }
+			case 'FMA Media List.xlsx': { return await apiXLSFromStaticServer(path); }
 			case 'gigs': { return gigsStatic; }
 			case 'gigmedias': { return gigmediasStatic; }
 			case 'gigsongs': { return gigsongsStatic; }
@@ -469,10 +467,14 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'gig_by_datetime': {
 				const datetime = args?.replace(/%20/g, ' ')?.replace(/ 00:00:00/, '');
 				const gigs = gigsStatic?.results?.find((g: HashedType) => g?.datetime === datetime);
+				//const gigs = (await returnFilteredPath('gigs', 'datetime', datetime, true))?.results[0];
 				const played = gigsongsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime)
+				//const played = (await returnFilteredPath('gigsongs', 'datetime', datetime, true))?.results;
 				const media = gigmediasStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
-				const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
-				const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				//const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				const text = (await returnFilteredPath('gigtext', 'datetime', datetime, false))?.results;
+				//const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				const players = (await returnFilteredPath('performance', 'datetime', datetime, true))?.results;
 				const press = pressesStatic?.results?.filter((g: HashedType) => g?.dtgig === datetime);
 				// assumes gigs are already sorted by date by API
 				const indexOfGig = gigsStatic?.results?.map((g: HashedType, index: number) => ({ index, ...g }))?.find((g: HashedType) => g.gig_id === gigs?.gig_id)?.index || -1;
@@ -667,10 +669,15 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
 				return joinOn('lookup', [... new Set(performancesStatic?.results?.filter(value => (value?.category === 'release' && value?.song === useArgs))?.map(value => value?.lookup))]?.map(lookup => ({ lookup })), releasesStatic?.results);
 			}
+			/*
+			case 
+				select count(*) from gigsong where datetime in (select distinct(datetime) from gigsong where song='The Entire Performance') and song='It has to be you'
+				*/
 			case 'live_performances_by_song': {
 				// 'select * from gigsong gs, gig g where gs.datetime=g.datetime and song="{{value}}"' },
 				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
 				const { results } = await returnFilteredPath('gigsongs', 'song', useArgs, true);
+				// find full concerts that occur on same day
 				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 			case 'released_recordings_by_song': {

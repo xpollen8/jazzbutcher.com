@@ -1,5 +1,9 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    useCache: true,
+  },
+	// output: 'export',	// for static site generation
+
 	async rewrites() {
 			return [
 			]
@@ -7,6 +11,11 @@ const nextConfig = {
 
 	async redirects() {
 			return [
+				{
+					source: '/releases/western_tape',
+					destination: '/western_dat',
+					permanent: true,
+				},
 				{
 					source: '/albums/last_of_the_gentlemen_adventurers.html',
 					destination: '/releases/last_of_the_gentleman_adventurers',

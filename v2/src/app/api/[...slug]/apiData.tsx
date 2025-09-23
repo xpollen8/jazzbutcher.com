@@ -86,11 +86,12 @@ const doFetchFileXLS = async (url: string) => {
 			const row = {};
 			// @ts-ignore
 			headers.forEach((h: any, i: number) => {
-				// @ts-ignore
 				if (typeof r[i] === 'object') {
 					// date object - convert
+					// @ts-ignore
 					row[h] = moment.utc(r[i])?.format('YYYY-MM-DD');
 				} else {
+					// @ts-ignore
 					row[h] = r[i];
 				}
 			});

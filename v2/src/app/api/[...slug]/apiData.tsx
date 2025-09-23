@@ -63,7 +63,7 @@ const doFetchFileXLS = async (url: string) => {
 	const path = process.cwd() + '/public/data/' + url.replace(/%20/g, ' ');
 	const arrayBuffer = fs.readFileSync(path, null).buffer;
 	const data = new Uint8Array(arrayBuffer);
-	const workbook = XLSX.read(data, { type: 'array' });
+	const workbook = XLSX.read(data, { type: 'array', cellDates: true });
 
 	// Initialize result object to store sheets
 	const result = {};
@@ -87,7 +87,12 @@ const doFetchFileXLS = async (url: string) => {
 			// @ts-ignore
 			headers.forEach((h: any, i: number) => {
 				// @ts-ignore
-				row[h] = r[i];
+				if (typeof r[i] === 'object') {
+					// date object - convert
+					row[h] = moment.utc(r[i])?.format('YYYY-MM-DD');
+				} else {
+					row[h] = r[i];
+				}
 			});
 			// @ts-ignore
 			if (row?.ID?.length) {

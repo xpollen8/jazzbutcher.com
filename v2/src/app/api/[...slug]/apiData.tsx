@@ -197,7 +197,7 @@ const findRecent = (object: any, fields: string[] , options?: HashedType ) => {
 		return ('' + valA || '').localeCompare(valB || '')
 	}
 	const filterValues = ((r: HashedType) => {
-		return filterObjectByAttribute(r, filter?.field, filter?.value, filter?.exact);
+		//return filterObjectByAttribute(r, filter?.field, filter?.value, filter?.exact);
 		if (!filter?.field || !filter?.value) return true;
 		if (filter.exact) {
 			return r[filter.field]?.toLowerCase() === filter.value?.toLowerCase();

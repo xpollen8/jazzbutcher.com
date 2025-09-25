@@ -141,6 +141,54 @@ const subContrib = (chunk: string, key: number) => {
 	}
 }
 
+
+/**
+ * Extracts the plaintext content from a multipart email body
+ * @param {string} emailBody - The raw multipart email body
+ * @returns {string|null} The extracted plaintext content, or null if not found
+ */
+const extractPlaintextFromEmail = (emailBody: string) => {
+	emailBody = emailBody.trim().replace(/=\n/g, '');
+	if (emailBody.indexOf('This is a multi-part message in MIME format') !== 0 &&
+		emailBody.indexOf('--') !== 0) {
+		return emailBody;
+	}
+    // Split the email into parts using the boundary
+    const boundaryPattern = /(?<=\n)--([^\n]+)/;
+    const boundaryMatch = emailBody.match(boundaryPattern);
+    if (!boundaryMatch || !boundaryMatch[1]) {
+        return emailBody;
+    }
+    
+    const boundary = boundaryMatch[1];
+    const parts = emailBody.split(`--${boundary}`);
+    
+    // Process each part until we find the plaintext version
+    for (const part of parts) {
+        const contentPattern = /Content-Type:\s*text\/plain.*?\n([\s\S]*?)(?:--|$)/i;
+
+        const match = part.match(contentPattern);
+        
+        if (match && match[1]) {
+            // Clean up the extracted content
+            let plaintext = match[1].trim();
+            
+            // Remove quoted-printable encoding if present
+            plaintext = plaintext.replace(/=\r\n/g, '');
+            plaintext = plaintext.replace(/Content-Transfer-Encoding: 7bit/g, '');
+            plaintext = plaintext.replace(/charset="iso-8859-1"/g, '');
+            plaintext = plaintext.replace(/Content-Transfer-Encoding: quoted-printable/g, '');
+            plaintext = plaintext.replace(/=([0-9A-F]{2})/gi, (match, hex) => 
+                String.fromCharCode(parseInt(hex, 16))
+            );
+            
+            return plaintext.trim();
+        }
+    }
+    
+    return parts[1];
+}
+
 const bodySubstitutions = (body: string) => {
 	return body?.split('}}') // now we're an array
 		?.map((w) => {
@@ -169,7 +217,10 @@ const JBCListMessage = ({ year = 1989, id = 1 }: any) => {
 			<br />Subject: <b>{message.subject}</b>
 			<p />
 			<div className="email_body">
-				{bodySubstitutions(message.body)?.map((part: any, key: number) => <span key={key}>{part}</span>)}
+				{
+					// @ts-ignore
+					bodySubstitutions(extractPlaintextFromEmail(message.body))?.map((part: any, key: number) => <span key={key}>{part}</span>)
+				}
 			</div>
 		</div>
 	</>

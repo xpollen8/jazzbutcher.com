@@ -39,9 +39,9 @@ const AudioSection = ({ data }: any) => {
 						subtype,
 						type,
 					} = d;
-					const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = (credit?.includes(';;') && parseCredit(credit)) || {};
+					const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = (credit?.includes(';;') && parseCredit(credit)) || { credit };
 					const { credit: venue, crediturl: city, creditdate: country } = (collection?.includes(';;') && parseCredit(collection)) || {};
-					return <div key={key} className={(type === 'video') ? 'listItem' : ''}><EmbedMedia data={{ autolink: true, mediaurl: (!href?.includes('.html') && exists(href)) || exists(mp3), mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? exists(collection) : '', venue, city, datetime }} /></div>
+					return <div key={key}><EmbedMedia data={{ autolink: true, mediaurl: mp3, mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? exists(collection) : '', venue, city, datetime }} /></div>
 				})}
 			</div>)
 		})}

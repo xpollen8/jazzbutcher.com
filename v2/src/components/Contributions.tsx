@@ -46,20 +46,27 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 
 	const showData = (x: any, key: number) => {
 		const { count, type, datetime, added, summary, caption, href } = x;
-		const typeIsImage = type?.includes('image');
-		const photos = (!typeIsImage) ? [] : contributions?.filter((c: any) => c?.type == type && c?.datetime === datetime && c?.href === href)?.map((c: any) => {
+		if (type?.includes('image')) {
+			// gather together images from the same datetime
+			return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
+				<PhotoSet
+				title=<Link href={href || ts2URI(datetime)}>{cleanDate(datetime)} {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>
+				photos={contributions?.filter((c: any) => c?.added === added && c?.type == type && c?.datetime === datetime && c?.href === href)?.map((c: any) => {
 			return {
 				src: c?.image,
 				added: c?.added,
 				alt: c?.caption || '',
 			}
-		});
-		return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
-			{(!!photos?.length) ? <PhotoSet title=<Link href={href || ts2URI(datetime)}>{cleanDate(datetime)} {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>  photos={photos?.filter((f: any) => f?.added == added)} /> : 
-			<>
-			<Link className="monospace" href={href} >{cleanDate(datetime) || summary}</Link> {pluralize(count, type, undefined, true)} {caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
-			</>}
-		</div>
+		})}
+				/>
+				</div>
+			
+		} else {
+			return <div key={key} className="clickListItem odd:bg-gray-100 border-b">
+				<Link className="monospace" href={href} >{cleanDate(datetime) || summary}</Link>
+				{pluralize(count, type, undefined, true)} {caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
+			</div>
+		}
 	}
 
 	if (justOneResult) {
@@ -175,7 +182,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				added: r?.credit_date,
 				datetime: r?.datetime,
 				summary: r?.name,
-				href: ts2URI(r?.datetime),
+				href: ts2URI(r?.datetime) || r?.mp3,
 				image: r?.image,
 			}
 		);

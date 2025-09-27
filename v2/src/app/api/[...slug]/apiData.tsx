@@ -349,7 +349,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			}
 			case 'pressmedias': {
 				return returnResults(pressesStatic.results.map((p: any) => {
-					const { audio, images, thumb } = p;
+					const { audio, images, thumb, publication, title, headline } = p;
 					const au: any[] = [];
 					const im: any[] = [];
 					if (audio) {
@@ -361,6 +361,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 								audio,
 								credit: credit || p.credit,
 								credit_date: credit_date || p.dtadded || p.dtpublished,
+								title: title || headline || publication,
 							});
 						});
 					}
@@ -374,6 +375,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 									href: p?.url,
 									credit: credit || p.credit,
 									credit_date: credit_date || p.dtadded || p.dtpublished,
+								title: title || headline || publication,
 								});
 							}
 						});
@@ -388,6 +390,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 									href: p?.url,
 									credit: credit || p.credit,
 									credit_date: credit_date || p.dtadded || p.dtpublished,
+								title: title || headline || publication,
 								});
 							}
 						});
@@ -404,15 +407,11 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const releases = await apiData('releases_by_performer', args);
 				const performer = await apiData('gigs_by_musician', args);
 				const support = await apiData('gigs_by_act', args);
-				const pictures = await returnFilteredPath('gigmedias', 'type', 'pix', true, (candidate: HashedType, value: string, exact: boolean) => {
-					return candidate?.image_caption?.toLowerCase()?.includes(args?.toLowerCase());
-				});
 
 				return {
 					releases: joinOn('lookup', releases?.results, releasesStatic.results),
 					performer,
 					support,
-					pictures,
 				};
 			}
 			case 'songs_by_datetime': {
@@ -472,14 +471,13 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'gig_by_datetime': {
 				const datetime = args?.replace(/%20/g, ' ')?.replace(/ 00:00:00/, '');
 				const gigs = gigsStatic?.results?.find((g: HashedType) => g?.datetime === datetime);
-				//const gigs = (await returnFilteredPath('gigs', 'datetime', datetime, true))?.results[0];
 				const played = gigsongsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime)
 				//const played = (await returnFilteredPath('gigsongs', 'datetime', datetime, true))?.results;
 				const media = gigmediasStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
-				//const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
-				const text = (await returnFilteredPath('gigtext', 'datetime', datetime, false))?.results;
-				//const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
-				const players = (await returnFilteredPath('performance', 'datetime', datetime, true))?.results;
+				const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				//const text = (await returnFilteredPath('gigtext', 'datetime', datetime, false))?.results;
+				const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				//const players = (await returnFilteredPath('performance', 'datetime', datetime, true))?.results;
 				const press = pressesStatic?.results?.filter((g: HashedType) => g?.dtgig === datetime);
 				// assumes gigs are already sorted by date by API
 				const indexOfGig = gigsStatic?.results?.map((g: HashedType, index: number) => ({ index, ...g }))?.find((g: HashedType) => g.gig_id === gigs?.gig_id)?.index || -1;

@@ -10,7 +10,6 @@ import { GigSearchResults } from '@/components/GigSearch';
 import { notFound } from 'next/navigation';
 import { summaryBodySearch, removeHTML } from '@/components/GenericWeb';
 import Loading from '@/components/Loading';
-import PhotoSet from '@/components/PhotoSet';
 import Contributions from '@/components/Contributions';
 import useConspirator from '@/lib/useConspirator';
 import ReleaseCards from '@/components/ReleaseCards';
@@ -48,23 +47,6 @@ const Releases = ({ releases, name }: any) => {
 	return <ReleaseCards title={`${name} album appearance`} preventAutoExpand={(count > 4)} items={Object.keys(albums)?.map((a: any) => ({ ...albums[a], summary: <AlbumAppearance lookup={a?.lookup} object={albums[a]} /> }))} />
 }
 
-const Pictures = ({ pictures, name }: any) => {
-	if (!pictures?.numResults) return;
-	return <>
-		<Tag>Photos tagged with &quot;{name}&quot;</Tag>
-    <PhotoSet photos={pictures?.results?.map((p: any) => {
-      return {
-        ...p,
-				caption: p?.image_caption,
-        alt: p?.datetime?.substring(0, 10),
-        href: ts2URI(p?.datetime),
-        src: p?.image
-      }
-      })
-    } />
-	</>
-}
-
 const Player = ({ results }: any) => (!!results?.numResults) && <GigSearchResults results={results} banner={(results: any) => <Tag>Played in the band</Tag> } />
 
 const Act = ({ results }: any) => (!!results?.numResults) && <GigSearchResults results={results} banner={(results: any) => <Tag>Shared the bill</Tag> } />
@@ -76,7 +58,7 @@ const Conspirator = ({ params }: { params?: any }) => {
 	const known = isKnownMusician(conspirator);
 	const name = known && known.name || conspirator;
 	const { data, isLoading, error } = useConspirator(name);
-	const { releases, performer, support, pictures } = data || {};
+	const { releases, performer, support } = data || {};
 
 	if (!params || !params?.slug || !name.length) return notFound();
 
@@ -86,7 +68,6 @@ const Conspirator = ({ params }: { params?: any }) => {
 			<Loading isLoading={isLoading} >
 				<AKA aliases={known?.aliases?.filter((a: string) => a !== conspirator)} />
 				<Releases releases={releases} name={name} />
-				<Pictures pictures={pictures} name={name} />
 				<Player results={performer} />
 				<Act results={support} />
 				<Contributions label={`Website contributions by ${name}`} options={{

@@ -348,7 +348,7 @@ textplus1 {
 	width: 100%;
 	margin-bottom: 5px;
 }
-.listItem, .album_press {
+.clickItem, .listItem, .album_press {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	margin: 0px 0px 0px 0px;
@@ -360,10 +360,13 @@ textplus1 {
 .clickListItem {
 	margin-left: 20px;
 }
-.listItem b a:hover {
+.clickItem:hover {
+	outline: 1px solid;
+}
+.clickListItem b a:hover, .listItem b a:hover {
 	outline: 1px dashed;
 }
-.listItem b {
+.clickItem b, .clickListItem b, .listItem b {
 	color: #333;
 	background-color: #AFF1C3;
 	padding: 2px;

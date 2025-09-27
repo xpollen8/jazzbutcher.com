@@ -48,7 +48,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 		const { count, type, datetime, added, summary, caption, href } = x;
 		if (type?.includes('image')) {
 			// gather together images from the same datetime
-			return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
+			return <div key={key}  className="listItem odd:bg-gray-100 border-b">
 				<PhotoSet
 				title=<Link href={href || ts2URI(datetime)}>{cleanDate(datetime)} {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>
 				photos={contributions?.filter((c: any) => c?.added === added && c?.type == type && c?.datetime === datetime && c?.href === href)?.map((c: any) => {
@@ -62,10 +62,16 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 				</div>
 			
 		} else {
-			return <div key={key} className="clickListItem odd:bg-gray-100 border-b">
-				<Link className="monospace" href={href} >{cleanDate(datetime) || summary}</Link>
-				{pluralize(count, type, undefined, true)} {caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
+			return <div key={key} className="clickItem odd:bg-gray-100 border-b"><Link href={href} >
+				<div className="p-1" style={{ color: '#444' }}>
+				<i>{pluralize(count, type, undefined, true)}</i>{' - '}
+				{(cleanDate(datetime)) ? <>
+					<b className="monospace" >{cleanDate(datetime)}</b> {summary}
+					</> : <b className="monospace" >{summary}</b>
+				}
+				{' '}{caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
 			</div>
+			</Link></div>
 		}
 	}
 
@@ -76,7 +82,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 		</>
 	}
 
-	return <div className="clickListItem">
+	return <div className="listItem">
 		<details open={open || (contributions.length === 1)}>
 		<summary className="tagClickable">{who} {pluralize(contributions.length)}</summary>
 		{useData?.map(showData)}
@@ -111,11 +117,18 @@ const prettyType = (type: string, t?: string) => {
 		if (t === 'encore') return 'encore ' + type;
 		if (t === 'warmup') return 'warmup ' + type;
 	}
+	if (type === 'text' && t === 'announcement') return 'gig announcement';
 	if (type === 'text' && t === 'bootlegger') return 'taped the show';
 	if (type === 'text' && t === 'recording') return 'bootleg description';
 	if (t === 'pix') return 'event image';
 	if (t === 'review') return 'gig review';
 	if (t === 'selfreview') return 'Pat gig review';
+	if (t === 'press') {
+		if (type === 'image' || type === 'audio' || type === 'video') {
+			return 'press article ' + type;
+		}
+		return 'press article';
+	}
 	return t + ' ' + type;
 }
 
@@ -151,7 +164,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		addInfo(contributions,
 			{
 				person: r?.credit,
-				type: 'jbclist',
+				type: 'jbc-list',
 				added: r?.date,
 				summary: r?.subject,
 				caption: (r?.body) ? r.body?.substring(0, 500)?.replaceAll('{{', '')?.replaceAll('}}', '') + '...' : '',
@@ -168,7 +181,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				added: r?.credit_date,
 				datetime: r?.datetime,
 				caption: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substring(0, 50) + '...' : '',
-				summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substring(0, 50) + '...' : '',
+				//summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substring(20, 100) + '...' : '',
 				href: ts2URI(r?.datetime),
 			}
 		);
@@ -222,12 +235,12 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		addInfo(contributions,
 			{
 				person: r?.credit,
-				type: prettyType(r?.type, 'Press article'),
+				type: prettyType(r?.type, 'press'),
 				added: r?.credit_date,
 				href: r?.href,
 				image: r?.image,
 				audio: r?.audio,
-				summary: r?.caption,
+				summary: r?.title,
 			}
 		);
 	});
@@ -236,10 +249,10 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		addInfo(contributions,
 			{
 				person: r?.credit,
-				type: prettyType(r?.type, 'Press article'),
+				type: prettyType(r?.type, 'press'),
 				added: r?.dtadded || r?.dtpublished,
 				summary: r?.title || r?.publication,
-				caption: (r?.headline || r?.publication)?.substring(0, 50) + '...',
+				caption: (r?.headline || r?.publication || '')?.substring(0, 50) + '...',
 				href: r?.url,
 			}
 		);

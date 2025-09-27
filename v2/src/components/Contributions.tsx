@@ -48,7 +48,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 		const { count, type, datetime, added, summary, caption, href } = x;
 		if (type?.includes('image')) {
 			// gather together images from the same datetime
-			return <div key={key}  className="clickListItem odd:bg-gray-100 border-b">
+			return <div key={key}  className="listItem odd:bg-gray-100 border-b">
 				<PhotoSet
 				title=<Link href={href || ts2URI(datetime)}>{cleanDate(datetime)} {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>
 				photos={contributions?.filter((c: any) => c?.added === added && c?.type == type && c?.datetime === datetime && c?.href === href)?.map((c: any) => {
@@ -62,13 +62,15 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 				</div>
 			
 		} else {
-			return <div key={key} className="clickListItem odd:bg-gray-100 border-b">
-				<b>{pluralize(count, type, undefined, true)}</b>{' '}
+			return <div key={key} className="listItem odd:bg-gray-100 border-b">
+				<div className="p-2">
+				<i>{pluralize(count, type, undefined, true)}</i>{' '}
 				{(cleanDate(datetime)) ? <>
-					<Link className="monospace" href={href} >{cleanDate(datetime)}</Link> {summary}
-					</> : <Link className="monospace" href={href} >{summary}</Link>
+					<Link className="monospace" href={href} ><b>{cleanDate(datetime)}</b></Link> {summary}
+					</> : <Link className="monospace" href={href} ><b>{summary}</b></Link>
 				}
 				{' '}{caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
+			</div>
 			</div>
 		}
 	}
@@ -80,7 +82,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 		</>
 	}
 
-	return <div className="clickListItem">
+	return <div className="listItem">
 		<details open={open || (contributions.length === 1)}>
 		<summary className="tagClickable">{who} {pluralize(contributions.length)}</summary>
 		{useData?.map(showData)}

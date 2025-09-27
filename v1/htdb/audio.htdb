@@ -603,24 +603,24 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=Tombé dans les pommes, datetime=2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Tombe-fight.mp3, credit=Simon Taylor)}
-		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=When You's A Viper, datetime=2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Viper2.mp3, credit=Simon Taylor)}
+		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=Tombé dans les pommes, comment=Recorded 2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Tombe-fight.mp3, credit=Simon Taylor)}
+		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=When You's A Viper, comment=Recorded 2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Viper2.mp3, credit=Simon Taylor)}
 			Unreleased.
 			<br/>Recorded 2014-07-15
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(lookup=va_shadow, title=Affection, collection=Cak Bag Session, mp3=${jbc_audio}/JazzButcher_Affection.mp3, author=Jonathan Richman)}
+		${linkAudio(lookup=va_shadow, title=Affection, collection=Cak Bag Sessions, mp3=${jbc_audio}/JazzButcher_Affection.mp3, author=Jonathan Richman)}
 			From <b>${va_shadow}</b> (1984).
-			<br/>Recorded May 1983, "Cak Bag Session", Sketch Studio, Northampton
+			<br/>Recorded May 1983, "Cak Bag Sessions", Sketch Studio, Northampton
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(lookup=va_spark, title=Temptation Inside Your Heart, collection=Cak Bag Session, mp3=${jbc_audio}/JazzButcher_TemptationInsideYourHeart.mp3, author=Velvet Underground)}
+		${linkAudio(lookup=va_spark, title=Temptation Inside Your Heart, collection=Cak Bag Sessiosn, mp3=${jbc_audio}/JazzButcher_TemptationInsideYourHeart.mp3, author=Velvet Underground)}
 			From <b>${va_spark}</b> (1984).
-			<br/>Recorded from the May 1983, "Cak Bag Session", Sketch Studio, Northampton
+			<br/>Recorded from the May 1983, "Cak Bag Sessions", Sketch Studio, Northampton
 		</blockquote>
 
 		<blockquote>
@@ -631,14 +631,14 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(collection=Gentleman Adventurers Sessions, title=La Mer, datetime=2012-00-00, mp3=${jbc_audio}/tunes/2012_JBC_LaMer.mp3, credit=Simon Taylor)}
+		${linkAudio(collection=Gentleman Adventurers Sessions, title=La Mer, comment=Recorded Day 2 of session, mp3=${jbc_audio}/tunes/2012_JBC_LaMer.mp3, credit=Simon Taylor)}
 			From the 2012 ${adventurers} recording session (unreleased)
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=Poor Spy, collection=Cak Bag Session, mp3=${jbc_audio}/JazzButcher_PoorSpy.mp3)}
-			<br/>Recorded May 1983, "Cak Bag Session", Sketch Studio, Northampton
+		${linkAudio(title=Poor Spy, collection=Cak Bag Sessions, mp3=${jbc_audio}/JazzButcher_PoorSpy.mp3)}
+			<br/>Recorded May 1983, "Cak Bag Sessions", Sketch Studio, Northampton
 		</blockquote>
 
 		<blockquote>

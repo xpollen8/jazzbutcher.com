@@ -63,8 +63,12 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 			
 		} else {
 			return <div key={key} className="clickListItem odd:bg-gray-100 border-b">
-				<Link className="monospace" href={href} >{cleanDate(datetime) || summary}</Link>
-				{pluralize(count, type, undefined, true)} {caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
+				<b>{pluralize(count, type, undefined, true)}</b>{' '}
+				{(cleanDate(datetime)) ? <>
+					<Link className="monospace" href={href} >{cleanDate(datetime)}</Link> {summary}
+					</> : <Link className="monospace" href={href} >{summary}</Link>
+				}
+				{' '}{caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
 			</div>
 		}
 	}
@@ -168,7 +172,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				added: r?.credit_date,
 				datetime: r?.datetime,
 				caption: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substring(0, 50) + '...' : '',
-				summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substring(0, 50) + '...' : '',
+				//summary: (r?.body) ? removeHTML(r.body)?.replace(/<br\/>/gi, '')?.substring(20, 100) + '...' : '',
 				href: ts2URI(r?.datetime),
 			}
 		);
@@ -239,7 +243,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				type: prettyType(r?.type, 'Press article'),
 				added: r?.dtadded || r?.dtpublished,
 				summary: r?.title || r?.publication,
-				caption: (r?.headline || r?.publication)?.substring(0, 50) + '...',
+				caption: (r?.headline || r?.publication || '')?.substring(0, 50) + '...',
 				href: r?.url,
 			}
 		);

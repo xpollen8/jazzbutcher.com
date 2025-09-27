@@ -404,15 +404,11 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const releases = await apiData('releases_by_performer', args);
 				const performer = await apiData('gigs_by_musician', args);
 				const support = await apiData('gigs_by_act', args);
-				const pictures = await returnFilteredPath('gigmedias', 'type', 'pix', true, (candidate: HashedType, value: string, exact: boolean) => {
-					return candidate?.image_caption?.toLowerCase()?.includes(args?.toLowerCase());
-				});
 
 				return {
 					releases: joinOn('lookup', releases?.results, releasesStatic.results),
 					performer,
 					support,
-					pictures,
 				};
 			}
 			case 'songs_by_datetime': {

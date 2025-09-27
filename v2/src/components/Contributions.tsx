@@ -62,16 +62,16 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 				</div>
 			
 		} else {
-			return <div key={key} className="listItem odd:bg-gray-100 border-b">
-				<div className="p-2">
-				<i>{pluralize(count, type, undefined, true)}</i>{' '}
+			return <div key={key} className="clickItem odd:bg-gray-100 border-b"><Link href={href} >
+				<div className="p-1" style={{ color: '#444' }}>
+				<i>{pluralize(count, type, undefined, true)}</i>{' - '}
 				{(cleanDate(datetime)) ? <>
-					<Link className="monospace" href={href} ><b>{cleanDate(datetime)}</b></Link> {summary}
-					</> : <Link className="monospace" href={href} ><b>{summary}</b></Link>
+					<b className="monospace" >{cleanDate(datetime)}</b> {summary}
+					</> : <b className="monospace" >{summary}</b>
 				}
 				{' '}{caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
 			</div>
-			</div>
+			</Link></div>
 		}
 	}
 
@@ -117,6 +117,7 @@ const prettyType = (type: string, t?: string) => {
 		if (t === 'encore') return 'encore ' + type;
 		if (t === 'warmup') return 'warmup ' + type;
 	}
+	if (type === 'text' && t === 'announcement') return 'gig announcement';
 	if (type === 'text' && t === 'bootlegger') return 'taped the show';
 	if (type === 'text' && t === 'recording') return 'bootleg description';
 	if (t === 'pix') return 'event image';
@@ -157,7 +158,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		addInfo(contributions,
 			{
 				person: r?.credit,
-				type: 'jbclist',
+				type: 'jbc-list',
 				added: r?.date,
 				summary: r?.subject,
 				caption: (r?.body) ? r.body?.substring(0, 500)?.replaceAll('{{', '')?.replaceAll('}}', '') + '...' : '',

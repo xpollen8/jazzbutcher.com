@@ -123,6 +123,12 @@ const prettyType = (type: string, t?: string) => {
 	if (t === 'pix') return 'event image';
 	if (t === 'review') return 'gig review';
 	if (t === 'selfreview') return 'Pat gig review';
+	if (t === 'press') {
+		if (type === 'image' || type === 'audio' || type === 'video') {
+			return 'press article ' + type;
+		}
+		return 'press article';
+	}
 	return t + ' ' + type;
 }
 
@@ -229,12 +235,12 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		addInfo(contributions,
 			{
 				person: r?.credit,
-				type: prettyType(r?.type, 'Press article'),
+				type: prettyType(r?.type, 'press'),
 				added: r?.credit_date,
 				href: r?.href,
 				image: r?.image,
 				audio: r?.audio,
-				summary: r?.caption,
+				summary: r?.title,
 			}
 		);
 	});
@@ -243,7 +249,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		addInfo(contributions,
 			{
 				person: r?.credit,
-				type: prettyType(r?.type, 'Press article'),
+				type: prettyType(r?.type, 'press'),
 				added: r?.dtadded || r?.dtpublished,
 				summary: r?.title || r?.publication,
 				caption: (r?.headline || r?.publication || '')?.substring(0, 50) + '...',

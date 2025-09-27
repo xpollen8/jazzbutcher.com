@@ -349,7 +349,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			}
 			case 'pressmedias': {
 				return returnResults(pressesStatic.results.map((p: any) => {
-					const { audio, images, thumb } = p;
+					const { audio, images, thumb, publication, title, headline } = p;
 					const au: any[] = [];
 					const im: any[] = [];
 					if (audio) {
@@ -361,6 +361,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 								audio,
 								credit: credit || p.credit,
 								credit_date: credit_date || p.dtadded || p.dtpublished,
+								title: title || headline || publication,
 							});
 						});
 					}
@@ -374,6 +375,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 									href: p?.url,
 									credit: credit || p.credit,
 									credit_date: credit_date || p.dtadded || p.dtpublished,
+								title: title || headline || publication,
 								});
 							}
 						});
@@ -388,6 +390,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 									href: p?.url,
 									credit: credit || p.credit,
 									credit_date: credit_date || p.dtadded || p.dtpublished,
+								title: title || headline || publication,
 								});
 							}
 						});

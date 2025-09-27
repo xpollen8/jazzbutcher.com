@@ -544,8 +544,7 @@ p {
 }
 
 .etc {
-	filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.05));
-	background-color: rgba(0,0,0,.02);
+	filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.08));
 	outline: dashed;
 	outline-width: 1px;
 	padding: 5px;

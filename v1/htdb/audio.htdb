@@ -596,31 +596,31 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(collection=Alan Moore Session, title=London (Cowboys For Jesus), mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/AlanMoore/AlanMoore_PatFish_London+(Cowboys+For+Jesus+Mix).mp3)}
+		${linkAudio(collection=Alan Moore Sessions, title=London (Cowboys For Jesus), mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/projects/AlanMoore/AlanMoore_PatFish_London+(Cowboys+For+Jesus+Mix).mp3)}
 			Alan Moore and Pat Fish. From the same session that produced "Trampling Tokyo".
 			Unreleased.
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=Tombé dans les pommes, datetime=2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Tombe-fight.mp3)}
-		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=When You's A Viper, datetime=2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Viper2.mp3)}
+		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=Tombé dans les pommes, datetime=2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Tombe-fight.mp3, credit=Simon Taylor)}
+		${linkAudio(collection=Jazz Butcher Quartet Sessions, title=When You's A Viper, datetime=2014-7-15, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/audio/demos/20140715_JazzButcher_Viper2.mp3, credit=Simon Taylor)}
 			Unreleased.
 			<br/>Recorded 2014-07-15
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(lookup=va_shadow, title=Affection, collection=Cak Bag session, mp3=${jbc_audio}/JazzButcher_Affection.mp3, author=Jonathan Richman)}
+		${linkAudio(lookup=va_shadow, title=Affection, collection=Cak Bag Session, mp3=${jbc_audio}/JazzButcher_Affection.mp3, author=Jonathan Richman)}
 			From <b>${va_shadow}</b> (1984).
-			<br/>Recorded May 1983, "Cak Bag session", Sketch Studio, Northampton
+			<br/>Recorded May 1983, "Cak Bag Session", Sketch Studio, Northampton
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(lookup=va_spark, title=Temptation Inside Your Heart, collection=Cak Bag session, mp3=${jbc_audio}/JazzButcher_TemptationInsideYourHeart.mp3, author=Velvet Underground)}
+		${linkAudio(lookup=va_spark, title=Temptation Inside Your Heart, collection=Cak Bag Session, mp3=${jbc_audio}/JazzButcher_TemptationInsideYourHeart.mp3, author=Velvet Underground)}
 			From <b>${va_spark}</b> (1984).
-			<br/>Recorded from the May 1983, "Cak Bag session", Sketch Studio, Northampton
+			<br/>Recorded from the May 1983, "Cak Bag Session", Sketch Studio, Northampton
 		</blockquote>
 
 		<blockquote>
@@ -631,14 +631,14 @@ ${define(gsExtra[${dt}], ${summary})}
 
 		<blockquote>
 		<hr>
-		${linkAudio(collection=Jazz Butcher Adventurers Sessions, title=La Mer, datetime=2012-00-00, mp3=${jbc_audio}/tunes/2012_JBC_LaMer.mp3)}
+		${linkAudio(collection=Gentleman Adventurers Sessions, title=La Mer, datetime=2012-00-00, mp3=${jbc_audio}/tunes/2012_JBC_LaMer.mp3, credit=Simon Taylor)}
 			From the 2012 ${adventurers} recording session (unreleased)
 		</blockquote>
 
 		<blockquote>
 		<hr>
-		${linkAudio(title=Poor Spy, collection=Cak Bag session, mp3=${jbc_audio}/JazzButcher_PoorSpy.mp3)}
-			<br/>Recorded May 1983, "Cak Bag session", Sketch Studio, Northampton
+		${linkAudio(title=Poor Spy, collection=Cak Bag Session, mp3=${jbc_audio}/JazzButcher_PoorSpy.mp3)}
+			<br/>Recorded May 1983, "Cak Bag Session", Sketch Studio, Northampton
 		</blockquote>
 
 		<blockquote>
@@ -671,14 +671,14 @@ ${define(gsExtra[${dt}], ${summary})}
 		${tag_end}
 		<div class="listenItem">
 		<blockquote>
-			${linkAudio(collection=Cult Sessions, title=Excellent!, mp3=${jbc_audio}/cult/excellent.mp3)}
+			${linkAudio(collection=Cult of the Basement Sessions, title=Excellent!, mp3=${jbc_audio}/cult/excellent.mp3, credit=Martin Stebbing)}
 #			<a href="${jbc_video}/Excellent.m4v"><b>Video clip from the Star Trek episode where the final version's intro sample originated</b></a>
-			${linkAudio(collection=Cult Sessions, title=King Tut, mp3=${jbc_audio}/cult/kingtut.mp3)}
-			${linkAudio(collection=Cult Sessions, title=Pineapple Tuesday, mp3=${jbc_audio}/cult/pineapple.mp3)}
-			${linkAudio(collection=Cult Sessions, title=Fertiliser (Yes\, Mantor), mp3=${jbc_audio}/cult/yes_mantor.mp3)}
-			${linkAudio(collection=Cult Sessions, title=Girl-Go, mp3=${jbc_audio}/cult/girl.mp3)}
-			${linkAudio(collection=Cult Sessions, title=The Onion Field, mp3=${jbc_audio}/cult/onion.mp3)}
-			${linkAudio(collection=Cult Sessions, title=Sister Death, mp3=${jbc_audio}/cult/sister.mp3)}
+			${linkAudio(collection=Cult of the Basement Sessions, title=King Tut, mp3=${jbc_audio}/cult/kingtut.mp3, credit=Martin Stebbing)}
+			${linkAudio(collection=Cult of the Basement Sessions, title=Pineapple Tuesday, mp3=${jbc_audio}/cult/pineapple.mp3, credit=Martin Stebbing)}
+			${linkAudio(collection=Cult of the Basement Sessions, title=Fertiliser (Yes\, Mantor), mp3=${jbc_audio}/cult/yes_mantor.mp3, credit=Martin Stebbing)}
+			${linkAudio(collection=Cult of the Basement Sessions, title=Girl-Go, mp3=${jbc_audio}/cult/girl.mp3, credit=Martin Stebbing)}
+			${linkAudio(collection=Cult of the Basement Sessions, title=The Onion Field, mp3=${jbc_audio}/cult/onion.mp3, credit=Martin Stebbing)}
+			${linkAudio(collection=Cult of the Basement Sessions, title=Sister Death, mp3=${jbc_audio}/cult/sister.mp3, credit=Martin Stebbing)}
 		<p>
 		Provided by ${rev}, the session engineer.
 		</blockquote>

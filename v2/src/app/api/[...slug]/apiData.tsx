@@ -468,14 +468,13 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'gig_by_datetime': {
 				const datetime = args?.replace(/%20/g, ' ')?.replace(/ 00:00:00/, '');
 				const gigs = gigsStatic?.results?.find((g: HashedType) => g?.datetime === datetime);
-				//const gigs = (await returnFilteredPath('gigs', 'datetime', datetime, true))?.results[0];
 				const played = gigsongsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime)
 				//const played = (await returnFilteredPath('gigsongs', 'datetime', datetime, true))?.results;
 				const media = gigmediasStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
-				//const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
-				const text = (await returnFilteredPath('gigtext', 'datetime', datetime, false))?.results;
-				//const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
-				const players = (await returnFilteredPath('performance', 'datetime', datetime, true))?.results;
+				const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				//const text = (await returnFilteredPath('gigtext', 'datetime', datetime, false))?.results;
+				const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === datetime);
+				//const players = (await returnFilteredPath('performance', 'datetime', datetime, true))?.results;
 				const press = pressesStatic?.results?.filter((g: HashedType) => g?.dtgig === datetime);
 				// assumes gigs are already sorted by date by API
 				const indexOfGig = gigsStatic?.results?.map((g: HashedType, index: number) => ({ index, ...g }))?.find((g: HashedType) => g.gig_id === gigs?.gig_id)?.index || -1;

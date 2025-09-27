@@ -10,7 +10,7 @@ const AudioSection = ({ data }: any) => {
 		{data?.map((d: any, key: number) => {
 			const { credit=d.mediacredit, crediturl=d.mediacrediturl, creditdate, creditcaption } = parseCredit(d?.credit || '');
 			//if (d.credit) console.log("CR", { cr: d.credit, credit, crediturl, creditdate, creditcaption });
-			return <EmbedMedia key={key}
+			return <EmbedMedia className="clickListItem mt-3" key={key}
 				data={{
 					parent: ts2URI(d.datetime),
 					datetime: d.datetime,

@@ -41,7 +41,7 @@ const AudioSection = ({ data }: any) => {
 					} = d;
 					const { credit: mediacredit, crediturl: mediacrediturl, creditdate: mediacreditdate } = (credit?.includes(';;') && parseCredit(credit)) || { credit };
 					const { credit: venue, crediturl: city, creditdate: country } = (collection?.includes(';;') && parseCredit(collection)) || {};
-					return <div key={key}><EmbedMedia data={{ autolink: true, mediaurl: mp3, mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? exists(collection) : '', venue, city, datetime }} /></div>
+					return <div className="clickListItem" key={key}><EmbedMedia data={{ autolink: true, mediaurl: mp3, mediacredit, mediacrediturl, mediacreditdate, song: name, comment: exists(comment) ? comment : (!venue) ? exists(collection) : '', venue, city, datetime }} /></div>
 				})}
 			</div>)
 		})}

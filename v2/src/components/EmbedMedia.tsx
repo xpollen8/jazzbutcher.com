@@ -116,14 +116,14 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 					</EmbedSoundCloud>
 				</>
 			} else if (useMediaurl?.includes('.mp3')) {
-				return (<>
+				return (<div className={className}>
 					<LinkAudio version={version} lookup={lookup} parent={parent} title={useTitle} venue={venue} city={city} datetime={datetime} mp3={useMediaurl} artist={useArtist} author={useAuthor} comment={comment} ordinal={ordinal} setnum={setnum} collection={collection} />
 					{useAttribution}
 					{useSource}
 					<Download u={useMediaurl} />
 					{collection}
 					{children}
-				</>)
+				</div>)
 			} else {
 				return (<div className="listItem">
 					{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}

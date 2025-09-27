@@ -7,7 +7,7 @@ const AudioPage = () => {
 	return (<>
 		<Header section="audio" />
 		<main>
-			<Notes width={50} height={50} />
+			<Notes />
 			<SectionOptions section='audio' />
 		</main>
 		<Footer />

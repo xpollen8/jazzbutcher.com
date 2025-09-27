@@ -363,7 +363,7 @@ textplus1 {
 .listItem b a:hover {
 	outline: 1px dashed;
 }
-.listItem b {
+.clickListItem b, .listItem b {
 	color: #333;
 	background-color: #AFF1C3;
 	padding: 2px;

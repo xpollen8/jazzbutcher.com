@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import EmbedMedia from '@/components/EmbedMedia';
 import { Source } from '@/components/GenericWeb';
 import { dateDiff } from '@/lib/utils';
-import Tag from '@/components/Tag';
+import { NotesTag } from '@/components/Notes';
 
 const podcasts = [
 		{
@@ -95,8 +95,8 @@ const AudioElsewhere = () => {
 	return (<>
 		<Header section="audio/elsewhere" />
 		<main>
-		    <Tag>Some podcasts</Tag>    <blockquote>    {podcasts.map((p: any, key: number) => <div key={key} className="listItem"><EmbedMedia data={...p} ><blockquote><i>{p?.children}</i><br /><Source g={p.source} /><br />{dateDiff(p.datetime, '')}</blockquote></EmbedMedia></div>)}
-				    </blockquote>
+			<NotesTag> Some podcasts </NotesTag>
+			{podcasts.map((p: any, key: number) => <div key={key} className="listItem"><EmbedMedia data={...p} ><blockquote><i>{p?.children}</i><br /><Source g={p.source} /><br />{dateDiff(p.datetime, '')}</blockquote></EmbedMedia></div>)}
 		</main>
 		<Footer />
 	</>)

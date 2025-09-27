@@ -1,14 +1,14 @@
 "use client"
 
-import { parseCredit } from '@/lib/utils';
+import { type HashedType, parseCredit } from '@/lib/utils';
 import useAudioUnreleased from '@/lib/useAudioUnreleased';
 import EmbedMedia from '@/components/EmbedMedia';
+import { NotesTag } from '@/components/Notes';
 import Tag from '@/components/Tag';
-import { type HashedType } from '@/lib/utils';
 
 const exists = (str?: string) => (str && str?.length && str !== ';;;;') ? str : null;
 
-const AudioSection = ({ title, data }: any) => {
+const AudioSection = ({ data }: any) => {
 	const collections: HashedType = {};
 	if (!data) return;
 	console.log("AudioSection", data);
@@ -17,8 +17,6 @@ const AudioSection = ({ title, data }: any) => {
 		collections[track.collection]?.push(track);
 	}
 	return (data && data?.length) && (<>
-		<Tag>{title}</Tag>
-		<blockquote>
 		{Object.keys(collections)?.map((collection: string, key: number) => {
 			const data: any[] = collections[collection];
 			return (<div className="listItem" key={key}>
@@ -47,13 +45,15 @@ const AudioSection = ({ title, data }: any) => {
 				})}
 			</div>)
 		})}
-		</blockquote>
 	</>)
 }
 
 const AudioUnreleased = () => {
 	const { data, isLoading, error } = useAudioUnreleased();
-	return <AudioSection title="Un-released Audio" data={data?.results} />
+	return <>
+		<NotesTag> Un-released Audio </NotesTag>
+		<AudioSection title="Un-released Audio" data={data?.results} />
+	</>
 }
 
 export default AudioUnreleased;

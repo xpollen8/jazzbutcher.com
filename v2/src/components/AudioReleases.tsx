@@ -2,11 +2,10 @@
 
 import useAudioReleases from '@/lib/useAudioReleases';
 import EmbedMedia from '@/components/EmbedMedia';
-import LetterHeader from '@/components/LetterHeader';
+import { NotesTag } from '@/components/Notes';
 
-const AudioSection = ({ title, data }: any) => {
+const AudioSection = ({ data }: any) => {
 	return !!(data && data?.length) && (<>
-		<LetterHeader title={title} />
 		{data?.sort((a: any, b: any) => a?.song.localeCompare(b?.song))?.map((d: any, key: number) => {
 			const { performance_id, datetime, category, lookup, variant, type, performer, aka, title, setnum, ordinal, song, version, author, instruments, media } = d;
 			return <EmbedMedia key={key}
@@ -31,7 +30,10 @@ const AudioSection = ({ title, data }: any) => {
 
 const AudioReleases = ({ project='jbc' }: { project?: string }) => {
 	const { data, isLoading, error } = useAudioReleases(project);
-	return <AudioSection title="Tracks on official releases" data={data?.results} />
+	return <>
+		<NotesTag> Tracks on official releases </NotesTag>
+		<AudioSection data={data?.results} />
+	</>
 }
 
 export default AudioReleases;

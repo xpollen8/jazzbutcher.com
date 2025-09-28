@@ -5,7 +5,11 @@
 :root {
 	font-size: calc(12px + (26 - 12) * ((100vw - 320px) / (2560 - 320)));
 }
-
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+}
 .sortAsc:after {
 	content: "\2193";
 }
@@ -330,11 +334,11 @@ textplus1 {
 	color: #222;
 	background-color: #BCF1AF;
 	margin-bottom: 5px;
-	padding: 3px;
+	padding: 2px;
 	padding-left: 10px;
 	border: 1px solid #999;
 	border-radius: 3px;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 .tagClickable:hover {
 	outline: 2px solid;
@@ -367,8 +371,8 @@ textplus1 {
 	outline: 1px dashed;
 }
 .clickItem b, .clickListItem b, .listItem b {
-	color: #333;
-	background-color: #AFF1C3;
+	color: rgba(0,0,0,.7);
+	background-color: rgba(175,241,195,0.8);
 	padding: 2px;
 }
 .listenItem b {

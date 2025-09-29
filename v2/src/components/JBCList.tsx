@@ -45,7 +45,7 @@ export const JBCListing = ({ year, id = 'date' }: any) => {
 				if (!subjects[s]) subjects[s] = [];
 				subjects[s].push({ re: re + 'e:', ...m });
 			} else {
-				const s = subject.trim();
+				const s = subject?.trim();
 				if (!subjects[s]) subjects[s] = [];
 				subjects[s].push(m);
 			}

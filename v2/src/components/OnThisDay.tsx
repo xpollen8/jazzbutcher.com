@@ -10,6 +10,7 @@ const OnThisDay = () => {
 
 	return <Loading isLoading={isLoading} >
 		<GigSearchResults results={data} banner={() => <Tag>On This Day in JBC History</Tag>} />
+		{(!data?.numResults) && <div className="listItem">No Gigs today! This is a JBC Holiday!</div>}
 	</Loading>
 }
 

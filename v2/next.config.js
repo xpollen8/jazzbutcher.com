@@ -1,8 +1,10 @@
 const nextConfig = {
+	//output: 'export',	// for static site generation
+
   experimental: {
-    useCache: true,
+		serverActions: true,
+    //useCache: true,
   },
-	// output: 'export',	// for static site generation
 
 	async rewrites() {
 			return [
@@ -177,9 +179,6 @@ const nextConfig = {
 					pathname: '**',
 				},
 			],
-		},
-		experimental: {
-			serverActions: true,
 		},
 }
 

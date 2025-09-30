@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import EmbedMedia from '@/components/EmbedMedia';
 import Header from '@/components/Header';
@@ -48,12 +49,13 @@ const Home = (): React.ReactNode =>
 				<div className="border p-3 bg-slate-100">
 						<Memorial home={true} />
 				</div>
-				<EmbedMedia data={{
+				<Image src='/images/notebooks/lotga/LoTGA_60_WhenEggsAttack_1500.png' width={1500} height={500} alt='from LoTGA notebook' />
+				{/*<EmbedMedia data={{
 					mediaurl: 'https://www.youtube.com/embed/tobI5zzi5M8',
 					song: 'The Good Ones',
 					mediacredit: 'Dhiren Basu',
 					added: '2020-05-27',
-					}} />
+					}} />*/}
 				<OnThisDay />
 				<MostRecentNews />
 				<RecentUpdates />

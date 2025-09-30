@@ -27,7 +27,7 @@ const TomHall = () => {
 						</div>
 						<p />
 						<div className="border">
-							<Link href="/TomHall.pdf">
+							<Link href="https://v1.jazzbutcher.com/TomHall.pdf">
 								<Image alt="PDF preview"
 									src="https://v1.jazzbutcher.com/images/tom_hall_tribute_small.gif" width={207} height={269} />
 							</Link>

@@ -9,7 +9,9 @@ import LetterHeader from '@/components/LetterHeader';
 import Loading from '@/components/Loading';
 
 const showThing = (thing?: any) => {
-	if (typeof thing === 'string' && thing?.includes('.jpg')) {
+	if (thing?.match(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/)) {
+		return <Link href={`/gigs/${thing}`}>{thing}</Link>
+	} else if (typeof thing === 'string' && thing?.includes('.jpg')) {
 		return thing.split(',').map((t: string, key: number) => {
 			const image = `/images/FM/${t}`;
 			return <Link key={key} href={image}><Image src={image} alt="pic" width={250} height={250} /></Link>
@@ -48,7 +50,7 @@ const FishyMansionsArchives = ({ params }: { params?: any }) => {
 	const { data, isLoading } = useFishyMansionsArchives();
 
 	return <>
-		<Header section="FMA" />
+		<Header section="FMA" title={params?.slug} />
 		<Loading isLoading={isLoading} >
 			<main>
 				<FishyMansionsArchivesItem item={data?.results[0]} slug={params?.slug} />

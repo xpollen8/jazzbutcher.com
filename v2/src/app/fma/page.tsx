@@ -13,7 +13,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const maybeLink = (obj: any) => {
-	if (obj?.['Type'] === 'Live' && obj?.['Date']?.length === 10) {
+	if (obj?.['Type']?.includes('Live') && obj?.['Date']?.length === 10 && parseInt(obj?.['Date']?.substring(0, 4)) >= 1981) {
 		return <Link href={ts2URI(obj?.['Date'])}>{obj?.['Date']}</Link>;
 	} else {
 		return obj?.['Date'];
@@ -54,7 +54,7 @@ const FishyMansionsArchives = ({ params }: { params?: any }) => {
 			<FMAIndex items={data?.results[0]} />
 			<Contributions label={`Processed Item`} options={{
 				all: true,
-				filter: { field: 'credit', value: 'FMA' },
+				filter: { field: 'credit', value: 'FMA', exact: false },
 			}} />
 		</main>
 		<Footer />

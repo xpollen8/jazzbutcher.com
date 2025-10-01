@@ -1125,6 +1125,9 @@
 		)},
 		who=${literalizeCommas(
 		)},
+		cassettes=/images/FM/20050819_FMADAT01.jpg$$
+			Fishy Mansions DAT FMADAT01;;;;2025-10-01,
+		,
 		announcement=${literalizeCommas(
 			Wilson will be appearing during the afternoon at this fantastic extreme sports and music event.
 			For details, go to ${linkExternal(http://www.air05.co.uk)}

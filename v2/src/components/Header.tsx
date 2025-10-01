@@ -1,6 +1,7 @@
 //"use server"
 
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata, ResolvingMetadata } from 'next'
 //import IconMenu from '@/svg/IconMenu';
 
@@ -45,7 +46,7 @@ type BreadCrumb = {
 }
 
 const sections : { [key: string]: BreadCrumb } = {
-	jbc: { href: '/', title: 'The Jazz Butcher' },
+	jbc: { href: '/', title: <Image style={{ display: 'inline' }} src='/images/scandal_40.png' width={150} height={40} alt='The Jazz Butcher' /> },
 	help: { parent: 'jbc', title: 'Get Involved!', summary: "Share your JBC treasures!" },
 	contributions: { parent: 'help', title: 'All contributions to this website' },
 

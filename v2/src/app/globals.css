@@ -579,7 +579,7 @@ samp {
 .breadcrumb a {
 	text-decoration-line: underline;
 }
-.breadcrumb li:not(:last-child)::after {
+.breadcrumb li:not(:first-child):not(:last-child)::after {
 	display: inline-block;
 	color: #666;
 	content: "→";

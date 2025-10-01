@@ -34,7 +34,7 @@ export async function generateMetadata(
 }
 
 type BreadCrumb = {
-	title: string | string[]
+	title: any
 	href?: string
 	parent?: string
 	summary?: string

@@ -5282,6 +5282,12 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','encore',NULL,1,10,"Stand By Me"
 INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','encore',NULL,1,11,"Roadrunner","Jonathan Richman","Alan McGee, guitar",NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-09-08','encore',NULL,2,12,"Speedy Gonzalez","Hess, Kaye, Lee","Alan McGee, guitar",NULL,NULL,NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'2012-08-18','set',NULL,1,1,"All The Saints",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2012-08-18','set',NULL,1,2,"Shame About You",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2012-08-18','set',NULL,1,3,"Last of the Gentleman Adventureres",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2012-08-18','set',NULL,1,4,"Quality People",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2012-08-18','set',NULL,1,5,"Shirley Maclaine",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
 /*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
 UNLOCK TABLES;
 

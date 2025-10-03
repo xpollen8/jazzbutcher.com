@@ -40,10 +40,15 @@ export const JBCListing = ({ year, id = 'date' }: any) => {
 		m?.forEach((m: any) => {
 			const subject = m.subject;
 			const [ re, sub ] = (subject || '').split('e:');
+			const [ RE, SUB ] = (subject || '').split('E:');
 			if (re?.length && sub?.length) {
 				const s = sub.trim();
 				if (!subjects[s]) subjects[s] = [];
-				subjects[s].push({ re: re + 'e:', ...m });
+				subjects[s].push({ re: 'Re:', ...m });
+			} else if (RE?.length && SUB?.length) {
+				const s = SUB.trim();
+				if (!subjects[s]) subjects[s] = [];
+				subjects[s].push({ re: 'Re:', ...m });
 			} else {
 				const s = subject?.trim();
 				if (!subjects[s]) subjects[s] = [];

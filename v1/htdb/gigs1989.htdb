@@ -269,6 +269,8 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard} )},
+	posters=/images/19890920/19890920_poster.jpg$$
+		nothingelseon;;https://x.com/nothingelseon/status/1472305548016058368;;2025-10-04
 
 	)}
 

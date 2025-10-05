@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const NotebookHero = ({ arg }: any) => {
-	const [ src, setSrc ] = useState();
+	const [ src, setSrc ] = useState('');
 	const images = [
 		'lotga/LoTGA_44_Strata_1500.png',
 		'lotga/LoTGA_60_Pile_1500.png',
@@ -16,7 +16,7 @@ const NotebookHero = ({ arg }: any) => {
 	useEffect(() => {
 		setSrc('https://v1.jazzbutcher.com/images/notebooks/' + images[Math.floor(Math.random() * (images.length))]);
 	});
-	return src && <Link href={src}><Image className="mt-1" src={src} width={1500} height={500} alt='from LoTGA notebook' /></Link>
+	return src?.length && <Link href={src}><Image className="mt-1" src={src} width={1500} height={500} alt='from LoTGA notebook' /></Link>
 }
 
 export default NotebookHero;

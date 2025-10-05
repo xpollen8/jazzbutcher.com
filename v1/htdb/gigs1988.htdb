@@ -763,7 +763,7 @@ Craig Kolb;;;;2000-03-17
 		posters=/images/19880822/19880822_poster.jpg$$
 			nothingelseon;;https://twitter.com/nothingelseon/status/1388613677654319105;;2021-05-01
 		,cassettes=/images/19880822/19880822_cassette.jpg$$
-			shintomo;;https://twitter.com/tomokos88;;2025-10-04
+			 Tomoko Shintani;;https://twitter.com/tomokos88;;2025-10-04
 
 	)}
 
@@ -782,12 +782,12 @@ Craig Kolb;;;;2000-03-17
 			/images/19880908/19880908_shintomo_6.jpg$$
 			/images/19880908/19880908_shintomo_7.jpg$$
 			/images/19880908/19880908_shintomo_8.jpg;;w/Alan McGee$$
-			shintomo;;https://twitter.com/tomokos88/status/1429987603340697629;;2021-08-28
+			 Tomoko Shintani;;https://twitter.com/tomokos88/status/1429987603340697629;;2021-08-28
 		,reviews=${literalizeCommas(
 		During my first stay in London I saw the Jazz Butcher twice. I don’t remember the first one because I lost in London all night long after the live, so my memory was this episode.
-		)}$$shintomo;;https://twitter.com/tomokos88;;2021-10-13
+		)}$$ Tomoko Shintani;;https://twitter.com/tomokos88;;2021-10-13
 		,cassettes=/images/19880908/19880908_cassette.jpg$$
-			shintomo;;https://twitter.com/tomokos88;;2025-10-04
+			 Tomoko Shintani;;https://twitter.com/tomokos88;;2025-10-04
 	)}
 
 #define	Sep14.html()

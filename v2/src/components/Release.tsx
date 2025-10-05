@@ -140,11 +140,21 @@ const parseSource = (str: string, className: string = 'listItem') => {
 }
 
 const ReleaseNotes = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	/*
 	if (release?.notes || release?.blurb) {
 		return (<>
 			<Tag>Notes</Tag>
 			<blockquote>
 				{parseSource(release?.notes + '$$' + release?.blurb, 'block')}
+			</blockquote>
+		</>)
+	}
+	*/
+	if (release?.notes) {
+		return (<>
+			<Tag>Notes</Tag>
+			<blockquote>
+				{parseSource(release?.notes, 'block')}
 			</blockquote>
 		</>)
 	}

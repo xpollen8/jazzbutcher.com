@@ -173,6 +173,9 @@
 		   /images/FM/FMAC20_cover.jpg$$
 		   /images/FM/FMAC20_songs.jpg$$
 		   Fishy Mansions Cassette FMAC20;;;;2025-07-17
+		,
+		posters=/images/19821218/19821218_poster.jpg$$
+			Jooles Joyce;;;;2025-10-04
 	)}
 
 #define	page_requested	${${page}()}

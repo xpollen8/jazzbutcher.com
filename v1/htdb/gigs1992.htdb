@@ -3,7 +3,7 @@
 
 		who=${literalizeCommas( ${pat} )},
 		posters=/images/19920109/19920109_poster.jpg$$
-		    nothingelseon;;https://x.com/nothingelseon;;;;2025-07-14
+		    nothingelseon;;https://x.com/nothingelseon;;2025-07-14
 
 	)}
 

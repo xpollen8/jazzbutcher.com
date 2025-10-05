@@ -7,7 +7,6 @@ import MakeAlbumBlurb from '@/components/MakeAlbumBlurb';
 import OnThisDay from '@/components/OnThisDay';
 import Documentary from '@/components/Documentary';
 import RecentUpdates from '@/components/RecentUpdates';
-import Memorial from '@/components/Memorial';
 import { BookSikkorski, BookMiraclesAndWonders, BookEbooks } from '@/components/Books';
 import { MostRecentNews } from '@/components/News';
 import Tag from '@/components/Tag';
@@ -46,16 +45,7 @@ const Home = (): React.ReactNode =>
 		<div className="flex flex-col min-[1000px]:flex-row gap-1">
 			<div className="w-full min-[1000px]:w-[60%]">
 				<Documentary />
-				<div className="border p-3 bg-slate-100">
-						<Memorial home={true} />
-				</div>
 				<NotebookHero />
-				{/*<EmbedMedia data={{
-					mediaurl: 'https://www.youtube.com/embed/tobI5zzi5M8',
-					song: 'The Good Ones',
-					mediacredit: 'Dhiren Basu',
-					added: '2020-05-27',
-					}} />*/}
 				<OnThisDay />
 				<MostRecentNews />
 				<RecentUpdates />

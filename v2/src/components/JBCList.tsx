@@ -38,12 +38,17 @@ export const JBCListing = ({ year, id = 'date' }: any) => {
 	const doSubjects = (m: any, y: any, i: any) => {
 		const subjects: HashedType = {};
 		m?.forEach((m: any) => {
-			const subject = m.subject;
-			const [ re, sub ] = (subject || '').split('e:');
+			const subject = m.subject || '(no subject)';
+			const [ re, sub ] = subject.split('e:');
+			const [ RE, SUB ] = subject.split('E:');
 			if (re?.length && sub?.length) {
 				const s = sub.trim();
 				if (!subjects[s]) subjects[s] = [];
-				subjects[s].push({ re: re + 'e:', ...m });
+				subjects[s].push({ re: 'Re:', ...m });
+			} else if (RE?.length && SUB?.length) {
+				const s = SUB.trim();
+				if (!subjects[s]) subjects[s] = [];
+				subjects[s].push({ re: 'Re:', ...m });
 			} else {
 				const s = subject?.trim();
 				if (!subjects[s]) subjects[s] = [];
@@ -78,7 +83,7 @@ export const JBCListing = ({ year, id = 'date' }: any) => {
 					<b><Link href={`/contributions/${sender}`}>{sender}</Link></b>
 					{senders[sender]?.map((m: any, key: number) => {
 						return <li className="odd:bg-gray-100 border-b" key={key}>
-							{m.date.substring(0, 10)}: <Link href={`/mailinglist/${m.msgId}`}>{m.subject}</Link>
+							{m.date.substring(0, 10)}: <Link href={`/mailinglist/${m.msgId}`}>{m.subject || '(no subject)'}</Link>
 						</li>
 					})}
 				</ol>
@@ -100,7 +105,7 @@ export const JBCListing = ({ year, id = 'date' }: any) => {
 					<b>{day}</b>
 					{days[day]?.map((m: any, key: number) => {
 						return <li className="odd:bg-gray-100 border-b" key={key}>
-							<Link href={`/mailinglist/${m.msgId}`}>{m.subject}</Link>
+							<Link href={`/mailinglist/${m.msgId}`}>{m.subject || '(no subject)'}</Link>
 						</li>
 					})}
 				</ol>
@@ -181,7 +186,7 @@ const JBCListMessage = ({ year = 1989, id = 1 }: any) => {
 		<div className="email">
 			Date: {prettyDate(message.date)} {dateAgo(message.date)} <br />
 			From: <Link href={`/contributions/${message.from}`}>{message.from}</Link>
-			<br />Subject: <b>{message.subject}</b>
+			<br />Subject: <b>{message.subject || '(no subject)'}</b>
 			<p />
 			<div className="email_body">
 				{

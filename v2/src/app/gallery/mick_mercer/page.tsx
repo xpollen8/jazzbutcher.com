@@ -15,6 +15,7 @@ const mick_mercer = [
 	{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/images/gallery/mick_mercer/MickMercer_1984_8.jpg", },
 	{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/images/gallery/mick_mercer/MickMercer_1984_9.jpg", },
 	{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/images/gallery/mick_mercer/MickMercer_1984_10.jpg", },
+	{ src: "https://s3.amazonaws.com/assets.jazzbutcher.com/images/gallery/mick_mercer/MickMercer_1984_11.jpg", },
 ];
 
 const Gallery = () => 

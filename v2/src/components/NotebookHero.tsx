@@ -2,21 +2,31 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import PhotoSet from '@/components/PhotoSet';
 import { useState, useEffect } from 'react';
+
+const images = [
+	{ src: '/images/notebooks/lotga/LoTGA_44_Strata_1500.png', alt: 'Gents: I Bloody Hate Doing Strata' },
+	{ src: '/images/notebooks/lotga/LoTGA_60_Pile_1500.png', alt: "Gents: Pile 'O with Sword" },
+	{ src: '/images/notebooks/lotga/LoTGA_60_WhenEggsAttack_1500.png', alt: 'Gents: When Eggs Attack' },
+	{ src: '/images/notebooks/lotga/LoTGA_78_Ornette_1500.png', alt: 'Gents: Have you any Ornette Coleman?' },
+	{ src: '/images/notebooks/lotga/LoTGA_94_IslandPickings_1500.png', alt: 'Gents: Island Pickings' },
+];
 
 const NotebookHero = ({ arg }: any) => {
 	const [ src, setSrc ] = useState('');
-	const images = [
-		'lotga/LoTGA_44_Strata_1500.png',
-		'lotga/LoTGA_60_Pile_1500.png',
-		'lotga/LoTGA_60_WhenEggsAttack_1500.png',
-		'lotga/LoTGA_78_Ornette_1500.png',
-		'lotga/LoTGA_94_IslandPickings_1500.png',
-	];
+	const [ alt, setAlt ] = useState('');
 	useEffect(() => {
-		setSrc('https://v1.jazzbutcher.com/images/notebooks/' + images[Math.floor(Math.random() * (images.length))]);
+		const img = images[Math.floor(Math.random() * (images.length))];
+		setSrc('https://v1.jazzbutcher.com' + img.src);
+		setAlt(img.alt);
 	});
-	return src?.length && <Link href={src}><Image className="mt-1" src={src} width={1500} height={500} alt='from LoTGA notebook' /></Link>
+	if (!src?.length) return;
+	return <Link href='/notebooks'><Image className="mt-1" src={src} width={1500} height={500} alt={alt} /></Link>
+}
+
+export const NotebookHeros = () => {
+	return <PhotoSet title='Particularly Amusing Notebook Artwork' photos={images}  credit='Pat Fish' credit_date='2025-10-07' />
 }
 
 export default NotebookHero;

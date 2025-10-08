@@ -18,8 +18,10 @@ const NotebookHero = ({ arg }: any) => {
 	const [ alt, setAlt ] = useState('');
 	useEffect(() => {
 		const img = images[Math.floor(Math.random() * (images.length))];
-		setSrc('https://v1.jazzbutcher.com' + img.src);
-		setAlt(img.alt);
+		if (img) {
+			setSrc('https://v1.jazzbutcher.com' + img.src);
+			setAlt(img.alt);
+		}
 	});
 	if (!src?.length) return;
 	return <Link href='/notebooks'><Image className="mt-1" src={src} width={1500} height={500} alt={alt} /></Link>

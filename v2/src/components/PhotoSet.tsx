@@ -7,8 +7,8 @@ import { removeHTML } from '@/components/GenericWeb';
 
 import { Credit } from '@/components/GenericWeb';
 
-const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_date }: {
-	title?: string | React.ReactNode, photos: any[], pdf?: string, description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string
+const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_date, children }: {
+	title?: string | React.ReactNode, photos: any[], pdf?: string, description?: string | React.ReactNode, credit?: string, credit_url?: string, credit_date?: string, children?:  React.ReactNode
 }) => <>
 	{(title) && <Tag> {title} </Tag>}
 	{(description || credit || credit_url || pdf) && <div className="listItem">
@@ -16,7 +16,8 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 		{(credit || credit_url) && <>{(description) && <br />}<Credit g={credit} u={credit_url} d={credit_date} /></>}
 		{(pdf) && <><br /><Link href={pdf}>Download this photoset as a single PDF</Link> (large file)</>}
 	</div>}
-	{(!!photos?.length) && <div className="masonry listItem">
+	{(!!photos?.length) && <div className="listItem">
+		<div className="masonry">
 		{photos.map((w: any, key: number) => {
 			if (!w) return;
 			const { href, src, alt, credit, credit_url, credit_date, body, location, caption } = w;
@@ -36,6 +37,8 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 				</div>
 			</div>
 		})}
+		</div>
+	{children}
 	</div>}
 </>
 

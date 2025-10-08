@@ -47,15 +47,15 @@ const SimonTaylor = () => {
 	return <PhotoSet title="Simon Taylor art" photos={images}>
 	<p />
 	Simon Taylor, member of the JBQ and trumpet player on the last album has painted a
-	series of Pat and Raoul pictures. I’ve [Philip Snow] just bought the one on my mantle piece.
+	series featuring Pat and Raoul. I’ve [Philip Snow] just bought the one pictured on my mantle piece.
 	<p />
 	We’re offering A4 prints at £10 each, or postcard sets (likely for £10 the set).
 	Some original canvasses are for sale too and Simon is also willing to take commissions.
 	A typical 50x40cm canvas will cost about £250. All these prices plus
 	postage to wherever you are in the world.
 	<p />
-	If you’re interested, please FB message Philip Snow, or click the <CommentBubble className="commentBubbleSimple" /> and leave a message
-	Just tell me what you want and we’ll try to accommodate.
+	If you’re interested, please FB message Philip Snow, or click the <CommentBubble className="commentBubbleSimple" /> and leave a message.
+	Tell me what you want and we’ll try to accommodate.
 	All profits go to the artist.
 	❄️”
 	<p />

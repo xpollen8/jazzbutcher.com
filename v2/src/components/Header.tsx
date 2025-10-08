@@ -51,6 +51,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	contributions: { parent: 'help', title: 'All contributions to this website' },
 
 	pat: { parent: 'jbc', title: 'Pat' },
+	merch: { parent: 'jbc', title: 'Merchandise', summary: "Books, albums, artwork" },
 	memoriam: { parent: 'pat', title: 'In Memoriam' },
 //	media: { parent: 'jbc', title: 'Media' },
 

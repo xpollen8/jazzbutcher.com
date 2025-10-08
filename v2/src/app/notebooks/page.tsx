@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PhotoSet from '@/components/PhotoSet';
+import { NotebookHeros } from '@/components/NotebookHero';
 
 const whittemore_setlists = [
 	{ src: "/images/19860724/19860724_notebook_setlist.jpg", alt: "notebook" },
@@ -45,6 +46,8 @@ const Notebooks = () => {
 		<div className="listItem">
 		Throughout his life, Pat kept journals in which he documented his gigs, tours, general observations, drew sketches, and worked on lyrics.<p />They are utterly fascinating.  In 2012, Pat auctioned off many of his older notebooks to raise funds for Last of the Gentleman Adventurers
 		</div>
+		<NotebookHeros />
+		<hr />
 		<PhotoSet title='Katelin Smith' photos={katelin}  credit='Katelin Smith' credit_date='2021-10-06' />
 		<hr />
 		<PhotoSet title='James Duval' photos={duval} />

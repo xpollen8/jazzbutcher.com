@@ -21,33 +21,38 @@ type NewsItemType = {
 const recentNews = [
 	{
 		subject: `Website/search improvement`,
+		dt: '2025-10-08',
+		category: 'maintenance',
+		body: <>
+			All things-for-sale are now found in <Link href={`/merch`}>the new Merchandise section</Link>.
+			<p />
+			JBQ trumpetist Simon Taylor is offering for sale some fetching Pat/Raoul paintings and prints there.
+		</>
+	},
+	{
+		subject: `Website/search improvement`,
 		dt: '2025-09-11',
 		category: 'maintenance',
-		credit: 'David Whittemore',
 		body: <>
 			<Link href={`/mailinglist`}>The jbc-list archives</Link> are back from exile.
 			The missing posts from the year 2000 have been recovered.
 			All identifying email address have been scrubbed, and each jbc-list participant can
 			find <Link href={`/contributions`}>their contributions here</Link>
-			<p />
 		</>
 	},
 	{
 		subject: `Website/search improvement`,
 		dt: '2025-08-25',
 		category: 'maintenance',
-		credit: 'David Whittemore',
 		body: <>
 			Want to know who played when? What your favorite musician looks like?
 			See the updated <Link href={`/conspirators`}><b>Conspirators</b></Link> section.
-			<p />
 		</>
 	},
 	{
 		subject: `Website/search improvement`,
 		dt: '2025-08-15',
 		category: 'maintenance',
-		credit: 'David Whittemore',
 		body: <>
 			Fans of the JBC have provided many images/ticket/posters/etc over the years.
 			We acknowledge their efforts in the <Link href={`/help`}><b>Community contributions</b></Link> section.
@@ -55,20 +60,17 @@ const recentNews = [
 			Lotta backend data changes - most data now comes
 			from static JSON instead of live database calls.  This will make it easier
 			for future generations to get their hands on the data behind this website.
-			<p />
 		</>
 	},
 	{
 		subject: `Website/search improvement`,
 		dt: '2025-08-05',
 		category: 'maintenance',
-		credit: 'David Whittemore',
 		body: <>
 			The V2 &quot;card&quot; <b><Link href="/gigs">gig search result</Link></b> look
 			has been reverted to the V1 &quot;row&quot; style.
 			<p />
 			New search result feature: band names shown in the &quot;shared the bill with&quot; are now click-to-search.
-			<p />
 		</>
 	},
 	{

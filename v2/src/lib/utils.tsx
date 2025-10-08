@@ -321,7 +321,7 @@ export const parseMediaOrdinal = (ordinalS?: string) => {
 }
 
 const getImageBase = (str?: string) => {
-	if (str?.match(/jpg/i) || str?.match(/jpeg/i)) {
+	if (str?.match(/jpg/i) || str?.match(/jpeg/i) || str?.match(/.png$/i)) {
 		const buh = str?.split('.');
 		const ext = buh.pop();
 		const base = buh.join('.');
@@ -337,6 +337,8 @@ export const imageBase = (str?: string) => {
 
 export const imageThumb = (str?: string, width: number = 250) => {
 	const [ base, ext ] = getImageBase(str);
+	// hack: return PNG as-is
+	if (ext === 'png') return imageBase(base) + '.' + ext;
 	return imageBase(base) + '_' + width + '.' + ext;
 }
 

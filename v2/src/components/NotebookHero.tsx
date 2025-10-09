@@ -11,6 +11,10 @@ const images = [
 	{ src: '/images/notebooks/lotga/LoTGA_60_WhenEggsAttack_1500.png', alt: 'Gents: When Eggs Attack' },
 	{ src: '/images/notebooks/lotga/LoTGA_78_Ornette_1500.png', alt: 'Gents: Have you any Ornette Coleman?' },
 	{ src: '/images/notebooks/lotga/LoTGA_94_IslandPickings_1500.png', alt: 'Gents: Island Pickings' },
+	{ src: '/images/notebooks/lotga/LoTGA_122_SolarCore_1500.png', alt: 'Gents: Nothing Less..' },
+	{ src: '/images/notebooks/lotga/LoTGA_127_Certify_1500.png', alt: 'Gents: Certificate' },
+	{ src: '/images/notebooks/lotga/LoTGA_134_Ignored_1500.png', alt: 'Gents: Better to be ignored..' },
+	{ src: '/images/notebooks/lotga/LoTGA_156_Behead_1500.png', alt: 'Gents: BEHEAD those..' },
 ];
 
 const NotebookHero = ({ arg }: any) => {

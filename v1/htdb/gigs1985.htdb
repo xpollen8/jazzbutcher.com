@@ -2,6 +2,19 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${dj}, ${owen} )},
+	notes=${literalizeCommas(
+	The (poster is the ) work of Martin F Bedford
+	<p />
+	This is terrific, and recently uncovered. You may recognise the artist. Martin also produced the cover for Human Jungle / Death Dentist. He sadly died in 2023, but dedicated his life to his graphic art.
+	<p />
+	https://martinfbedford.com/
+	<p />
+	This copy, from the James Duval collection, complete with David J Haskins signature. He was there of course, for the first Jazz Butcher gig of 1985, part of the classic “me and Max and Dave and Jones” lineup.
+	)}$$
+	Philip Snow;;;;2025-10-14
+	,
+	posters=/images/19850105/19850105_poster.jpg$$
+		James Duval;;;;2025-10-14
 
 	)}
 
@@ -91,6 +104,7 @@
 		---
 		/images/19850307/19850307_lochgirl_pat.jpg$$
 			lochgirl;;;;2019-10-11
+		,
 		posters=/images/19850307/19850307_poster.jpg$$
 			nothingelseon;;https://twitter.com/nothingelseon/status/1257208646880030720;;2020-05-04
 

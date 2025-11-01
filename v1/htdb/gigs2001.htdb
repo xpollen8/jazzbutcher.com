@@ -206,6 +206,8 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
+		posters=/images/20010711/20010711_poster.jpg$$
+		    David Whittemore;;;;2025-11-01
 	)}
 
 #define	Jul11_2200.html()
@@ -214,6 +216,8 @@
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${owen}
 		)},
+		posters=/images/20010711/20010711_poster.jpg$$
+		    David Whittemore;;;;2025-11-01
 	)}
 
 #define	Jul14.html()

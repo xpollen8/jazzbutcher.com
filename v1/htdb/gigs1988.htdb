@@ -675,6 +675,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Downey Mildew)},
 		posters=/images/19880623/19880623_poster.jpg$$
 			;;;;2023-09-11
 

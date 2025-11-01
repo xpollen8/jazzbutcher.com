@@ -771,7 +771,7 @@ Craig Kolb;;;;2000-03-17
 #define	Sep8.html()
 	${gigHeader(
 
-		who=${literalizeCommas( ${solo} )},
+		who=${literalizeCommas( ${solo}, Alan McGee )},
 		with=${literalizeCommas( Biff Bang Pow
 		)},
 		photosets=

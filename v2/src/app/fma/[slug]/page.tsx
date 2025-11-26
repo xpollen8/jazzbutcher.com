@@ -9,7 +9,7 @@ import LetterHeader from '@/components/LetterHeader';
 import Loading from '@/components/Loading';
 
 const showThing = (thing?: any) => {
-	if (thing?.match(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/)) {
+	if (typeof thing === 'string' && thing?.match(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/)) {
 		return <Link href={`/gigs/${thing}`}>{thing}</Link>
 	} else if (typeof thing === 'string' && thing?.includes('.jpg')) {
 		return thing.split(',').map((t: string, key: number) => {

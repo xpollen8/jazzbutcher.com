@@ -25,7 +25,7 @@ const recentNews = [
 		category: 'media',
 		link: `/audio/miracles_interviews`,
 		body: <>
-			The audio for the Bath of Bacon segment of Philip Snow's interview of Pat Fish has been added.
+			The audio for the Bath of Bacon segment of Philip Snow&apos;s interview of Pat Fish has been added.
 			<p />
 			Robotic transcriptions for this and other interview segments are also now available.
 		</>

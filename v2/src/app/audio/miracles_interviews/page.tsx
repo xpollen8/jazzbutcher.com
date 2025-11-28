@@ -7,10 +7,525 @@ import { BookMiraclesAndWonders } from '@/components/Books';
 
 const interviews = [
 	{
+		number: '2',
+		title: 'Bath of Bacon',
+		topics: [],
+		media: 'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+2+Bath.mp3',
+		description: <>
+		</>,
+		body: `
+I'll probably be moving in the right direction. I have to say that we, have somewhat been taken over overtaken by events. And that laudable as this project is, we've all seen what happened yesterday. With The coup. Oh, yes.
+
+There's no other word for it. Yeah. Given your rather sensitive situation, you were interested in joining the resistance. Serious question. Whether they yeah.
+
+Serious question. Yeah. Possibly. Yes. Good.
+
+Because I don't think this can be allowed to continue any further. And, you know, we're getting hangry. There there was a time when you couldn't be a civil servant now with the communist party, but I think That's right. They've they've relaxed those things a little bit. Well, I'm not asking you to join anything.
+
+You know me. I'm not one of life's great joiners. So I might just sort of consider things. Yeah. I mean, you're you're probably gonna get heads up on stuff long before us normal folks.
+
+You know? Yeah. Well, what what all I see really is, a lot of panic and and planning, that isn't leading to much. You know? They they talk they talk in government about billions of pounds being spent on, no deal planning.
+
+Yeah. I'm not sure where that's really going. There's not there's not much practical planning. There's a lot of there's a lot of contractors being paid double the amount of civil servants to, to have ten year visions, but I'm sure I should be that one. Yeah.
+
+Much, there's a much real planning for real emergency stuff. Not emergency, which which is why I got out of it, really, and came back to my day job. Right. You've escaped from the Brexit planning department. Yeah.
+
+Yeah. Good plan. Yeah. I don't know. Just don't wanna be tainted with that.
+
+Just with Defra for a while. Yeah. And and and I got so depressed with, you know, the the son of son of, common agricultural policy. Didn't take long to think that I ought to just get back. And and just going home every day and then seeing it on the news Yeah.
+
+You know, it was just there was just people were just relentless, and there was no escape from it. No. It's depressing enough coming home and having to watch the news without having to sort of live live it a bit. Yeah. I mean, my giving up telly hasn't helped me in any way to have any more time, nor have I managed to save any money yet.
+
+So I've yet to phone them up and tell them to fuck off and die because I hate talking to people on the phone, especially in call centers. But I saw, I saw, an article of a a fellow who, had give had had no TV for thirty years and was still being bothered annually by the TV licensing fee. Oh, yeah. They're happens all the time. Yeah.
+
+And and no acceptance that there are people that don't watch TV and and No. They really they really won't have it. Of course, the thing is now you need a TV license anyway even if you're gonna watch it on your computer. Yeah. Since everyone's got a computer or even a phone where they can watch telly, I can understand that attitude now.
+
+Yeah. Well, this this guy, that I was reading about is properly analog. You know? Yeah. Good man.
+
+Yeah. No. It it hasn't benefited me in any particular way except that, I don't shout, you fascist Cal Rayworth quite so much as I used to. God, I hated that woman. I mean, you know, fifteen years ago, I had her down as the fucking little mother of the Soviet Union, fucking Nazi spokesperson, blonde.
+
+Well, it's like these people who represent for Trump, isn't it? They're all blonde and have, like, these desperate cheekbones that look like they died about twenty years ago. I'm not having it. Yeah. It's like the aforementioned, sort of consultants and contractors.
+
+They're sort of rife in public service these days. And Yeah. They they wear the uniform, the open neck shirt, the, you know, the smart suit, the bacon expression. I'm Steve Hilton. I am.
+
+I'm Dominic Cummings. You're all going to hell in a handcart. Yeah. Something's gotta be done. Something's gotta be done.
+
+And I'm concerned that if people take to the streets and riot, that's exactly what Boris Boris and Priti Patel want. It seems to me that we've arrived in a sort of John Woo situation where everyone is holding a gun to everybody else's head simultaneously, and everyone is waiting for the other lot to fuck up. You know? It's like everybody wants somebody else to make the first move so they can say, ah, you screwed up, and it will kick off kick off. And, you know, Corbyn with his, oh, I'm mister enigmatic and mysterious.
+
+Actually, I haven't got a clue what's going on. You know, Boris just waiting for someone to give him the opportunity to bring back the fucking death penalty. You know? We we were talking about or we touched on Heath, Heathcote, last week and his, sacred elephant. And, I was reading about I was reading about With you?
+
+Heathcote Williams, in the last week Mhmm. And how he wrote, I think, before he died I didn't realize he was dead, actually, until I looked at it. Died in early '17. But he, just before he died, wrote or had republished a book about Johnson called Profane Elephant. What was it?
+
+What was it now? Something from from mare to nightmare, I think it was called. Very nice. So it was it was it was about his attitude to Brexit. Yeah.
+
+And it was quite prophetic, I think, in some ways. It's interesting for Heath Cook Williams, isn't he? Because I you know, in a way, it's quite easy to dismiss him as, like, daft hippie or something. Yeah. But on the other hand, he does, on the whole system.
+
+Stuff and and, you know, so he was quite sort of ahead of his time, really, in a long way. Yeah. I think you're right. I think you're right. And it was his boy that Dave Gilmore adopted who ended up, like, piddling on statues or something.
+
+Yeah. He was draping flags over the cenotaph, ended up in in Wandsworth or wherever. And, I sort of disowned Hetker, I read, until the end of his life. So I went to see him as he was dying thing. Right.
+
+And there's some reconciliation, I think. Uh-huh. But, yeah, quite interesting characters. I must sort of try and look up his book on Johnson. I I'm trying to get a good habit.
+
+Yeah. Trying to get into the habit of not calling him Boris Yes. Because because it's, Makes him seem too cuddly, does he not? Yeah. It does.
+
+And and and I and I think he's engineered that a bit. You know? I think, he's encouraged that. Oh, yeah. Cuddly, friendly.
+
+Mhmm. And and there's something It's branding, isn't it? More sinister than that going on here. That's something much No no one no one calls him Johnson. No.
+
+I see a lot of people calling him Bozo these days. Yeah. Bozo. BoJo, they they say, don't they? I've seen that as well.
+
+Yeah. He is. And he's again, that's that's too much, you know, it's JLo, isn't it? It's like just desperate little creeps who wish they were American. This country would be a lot you know, for all that there's all these people stomping around saying they're patriots and calling the likes of me and trying to defend the fucking country as traitors.
+
+Mhmm. You know, I mean, I'd I'd I'd I love the idea that the queen might have told Boris to piss off yesterday. And, then all the gammon's would have been on her doorstep calling her a traitor. Yeah. And all that.
+
+Actually, in connection with She couldn't do anything but what she did. No. In connection with her and Heathcoat, I was also the last thing I was reading was about, was there a West Indian called Michael X or something? Oh, now then. What was it?
+
+This this will be an interesting thing for the, for the tome, actually. My massive schoolboy error. You familiar with the little collage on the inside of, distressed general phone? Yes. Yep.
+
+I put that together in the local library. I gave him some spiel about it for the student protect. It kinda came back to bite me a few months later when I walked into the record section there and found they'd got the album. But they let me do it. And, yeah, assembled all these guys, you know, like doomed doomed geniuses, George Mallory, Syd Barrett, Spike Milligan, all these guys who sort of, like who were chewed up and spat out by life.
+
+And in there, I meant to put Malcolm X, no sellout. In an unguarded moment of library fatigue, I dropped in a photograph of Michael X, Rackman's fucking enforcer. So it's a case of spot the deliberate error, children. Yeah. Except it wasn't deliberate.
+
+It was a genuine screw up. No one's ever called me on it. I've told one or two people, but I tend to keep it quiet because you don't really want to be putting monsters on your record sleep. No. But I think I I don't know whether it's the same Michael X.
+
+I think it's the same guy who was he was hanged in '75. Yeah. And, Hesketh was dobbing graffiti on Buckingham Palace because he was objecting to the queen signing his death warrant Good point. A decade or two after the abolition of the Yeah. Because it was like The Bahamas or one of those tough places, wasn't it?
+
+Yeah. Yeah. Where where they could still do that sort of thing? One of those, you know, shithole countries. Yeah.
+
+Yeah. I mean, the thing with Michael x is, like, I don't I don't believe in executing people. If murder is wrong, then don't commit another one. But he did kinda have it coming. He was a nasty man.
+
+Yes. I've I've just read a little bit about him having a tendency to burn down buildings with people still in it. Yeah. And, like, there was sort of, like, machete enhanced housing advice. You know?
+
+Yeah. Yeah. So I thought, last week was quite good, actually Yeah. On reflection. Oh, good.
+
+But it was it was and it was quite a good choice wildlife because it's a reflective piece. Yeah. There's a lot of thinking back of mostly to '88, it appears. Yeah. It's very much '88 that one.
+
+Yeah. Yeah. And and but I thought, and and and what I did since then was to to essentially transcribe. Didn't find at all, but actually, you know. Mhmm.
+
+Doing it manually is probably a good thing because people have said that the machines won't get all the proper names anyway. So No. Nor will they necessarily understand what I'm saying. I mean, you know, real people quite often get me wrong. So machines, I don't think you've got any chance.
+
+So, so I think I might just and, actually, what a lot of the transcribed stuff, I I could almost use, adorned or unchanged. So that's dead easy, really, for me. It turns me into a typist and and Oh, you did say you wanted to do the donkey work. And and it and it and that's what it may come down to. So it may just so I thought a bit of reordering at the end, and I'll be I'll get a shape of it as I do more.
+
+Yeah. I think I might need to do about 15 to 20 of these to get it all done. Fine by me. And, but I want to try and do it a little more chronologically so I'm not getting mixed up. You know?
+
+Yes. I guess if we do it chronologically, then the sort of it the sort of paths of history will reveal themselves rather than just diving in bit by bit and just oh, and that was when we and do you remember I said that we and yeah. So it saves me getting into a mess. And, there may be, as I said, I think last week, I don't I'm not gonna take it sort of track by track because that would be a bit painful. Mhmm.
+
+But there might be a stage where we might need to do some sweeping up at the end or something. Because I think we'll cover a lot of things. We'll we'll cover things acts we'll we'll we'll come to songs accidentally as I think we were we were doing last week with the great Euphrates the great, Yes. After the great Euphrates. Yes.
+
+For instance. It's a great conversation piece. Yeah. So, Martha Bacon. Righty o.
+
+My my copy, I think, for some reason, had this flyer in the front of it. So I so I must have gone to some gig with, wooden tops. Mhmm. And I don't know when this was, but the flyer says, first London show since 1992. So whether that makes this something that happened in '96 2006 or 2016 is beyond me.
+
+It's, 02/2006. You think? Yep. I know. Complete control.
+
+That's Tony Fraser. Nice guy. And, yep, that was a 100 club open for him there. That wasn't actually oh, it's their first London show. Yeah.
+
+They they did one the night before at the race horse with Wilson supporting them. Oh, yeah. And we destroyed Maybe I saw that and didn't maybe I saw that and didn't go to the London gig. Maybe. Yeah.
+
+Yeah. They got their own back. They they they beat me at home, but we killed them up here. It was a hot night. And after we'd finished, the place just emptied and never refilled.
+
+Yeah. And they just played to each other, basically. Yeah. Simon had that come in there. Yeah.
+
+And I was on that one as well at the Luminaire. I think I did that one with Max. Yeah. So I sort of I I must have just slipped it in my copy of Bath of Bacon because I'm I realized there's a there's a connection and, and, color match. Oh, yeah.
+
+That's rather tasteful. With Rolo and, Alice playing on the Bath of Bacon. So how how did that all happen, and what was the association with them from the start? Was this before the Woodentops formed or about the same time? Or I remember.
+
+Well, now we started making bath in the '82. Yeah. And around about that time, I was spending I had the day job, and, they used to send me down to do company law windings up and so forth on Monday mornings at the Royal Courts of Justice. And this because, you know, to send a partner would just be insanely expensive, and all you've gotta do is sit there and watch them go down. You know?
+
+So they used to send muggins here. So I would hit the expenses bucket on Friday night and take, like, a princely sum of, like, 15 or if I dared, £20. I'd then take a £2 bus to London on a Friday night and hang out with Roe. Rolo, that is. And, he was certainly, by 82, he was already demoing on his little four track at home.
+
+He was demoing stuff that would end up in the wooden top set. They didn't really get going, I don't think, as a public thing till '83, but then nor did we. And, indeed, he was he was still playing with me in '83. I can remember we had a blazing argument once because he'd, he'd agreed to do a show with me, and then he got a wooden top show and only told me that he couldn't do ours with about thirty six hours notice. Right.
+
+And, you know, in those days, I didn't quite have the pool of talent to draw upon that I do nowadays. You know, I couldn't phone up Eno's bass player and say, oh, could you, fill in, mate? But, yeah, things have improved that way. And and and Alice, were they I met Alice at Oxford, and we went out for a little while. She actually lived with me when we first moved to Northampton, but young girl from the Edinburgh, bourgeoisie, wanted to make it, write books and stuff, headed off to London after a while.
+
+And because she was in London, she actually lived in the same road as Rolo. So he wanted a keyboard player who was kind of programmable. He did he he wanted someone who would just do what he wanted them to do on a Casio. And she didn't know enough about keyboards to resist, so she was his perfect choice. You know?
+
+He could he could sort of, like, mold her into his own monster. Yeah. And I see she's had a, quite a career writing. Yeah. She's put a few few novels out.
+
+I read the first one. She'd get a lot of flack for that if it came out today, I tell you. I was wondering about She's quite distasteful scenes. I was thinking about flack for, Chinatown if it came out in 2020. I actually had an argument with a Chinese chap about this.
+
+Yeah. Do we I mean, I can't remember what the lyric was now about, having to be careful about the Chinese. I suppose maybe it's true that we Well, it was I I mean, we'll get to that. I should I should say first of all about Rolo. Yeah.
+
+Go ahead. We met at school. Alright. And I was having some sort of afternoon jam with some like minded kids in the school hall, which was empty, and we'd set up a couple of amps and a drumkit. And we were having a little jam.
+
+And we were making talk about full disclosure. We were making an attempt at covering Master of the Universe by Hawkwind. So we're sort of grinding along, essentially for that thing. Yeah. And the rest.
+
+And, yeah, we were grinding along, you know, bumping along like little white boys who couldn't really play. And this little lad came in in his school uniform with a sort of what looked a bit like a beetle haircut. So almost like a a jet black helmet of hair. And he just stood watching while we ground on. And finally, we sort of got it out of our systems and stopped.
+
+And this little guy, who was significantly younger than us and smaller than us, in his school uniform, as it finished, he just looked up and went, shouldn't it be, bit meaner than that? That was the first thing Rolo ever said to me. I read something about them being the shortest band, you'd ever come across or something like that. It's amazing how many bands are short. Quite early on in our career, we were supporting Alan Vega at the venue in Victoria.
+
+And after our set, which was fairly ignominious, I was milling around at the bar when I clocked Susie and the Banshees Oh. Or three quarters of them. There was Sue and Severin and Bujak. Yeah. Tiny, tiny, tiny people.
+
+Tiny people. David Bowie, tiny. Prince, tiny. Mick Jagger, tiny. Yeah.
+
+I was never gonna make it in this game. Quite admire Susie being, you know, lost in France for the last twenty years. Oh, she's a dame. You've gotta respect Susie. She's great.
+
+In fact, all of them Budgie's a brilliant, brilliant drummer. Severin's a clever bloke. Now I've got time for the banshees. John McGeach was brilliant. Loved him.
+
+Don't mind fat Bob. But, yeah, it's amazing how many pop musicians are tiny. It really is. But at the time, you know, we didn't know so many people, so we only knew that the wooden top's really cool and, not tall at all. That was Owen's.
+
+We must have a plan if we're to outweigh all those China men. Right. Well, the first thing that's gonna freak you out a little bit was that, originally, it wasn't about Chinese people at all. It was about the sausage people. Oh, yeah.
+
+The reference to that. Yeah. Rolo and I, we were in those days in the early eighties, when I was hanging around with him a lot down in Clapham, We would take quite a lot of LSD, and I think the sausage people emerged from that. And, yeah, the the demo of that, it is we must have a plan if we're talking about all the sausage people. But then something happens.
+
+On the television, I think the BBC, they started transmitting a program called the Chinese detective. Yeah. I see you. Watch me shift the blame here. And, unbelievably Nicky Jip or someone I seem to remember.
+
+What was the name of the actor? Yeah. Can't remember the actor's name, but I do remember the name of the character for it was detective sergeant Ho. Fortunately, like, the hip hop thing hadn't quite kicked in over here at that point. But, yeah, I just became enhanced by the concept of, so detective sergeant Ho.
+
+And, we had the baseline, and we got the, you know, the the line? It's a it's a glockenspiel. Oh, yeah. And, you know, we had the shape of it and the chords of it and everything. And it sort of suggested all that tinkly stuff that you hear.
+
+What what failed to convince my Chinese mate about this, but what is genuinely God's honest truth, is that I wasn't trying to take the piss out of Chinese people at all. I was trying to take the piss out of the way that privileged white people in television companies and film companies portrayed these things. Hence, in the music, the the glockenspiel are going like, The whole thing was a kind of two level piss take, if you if you see what I mean. And, yeah, I remember my auntie Primrose being a little bit concerned about this. He's like, oh, absolutely sure about this.
+
+It was Chinese thing. I said, I'm not having a go at the Chinese. I'm having a go at the people who made the Chinese detective. Yes. You see what I mean?
+
+Yeah. It was supposed to. A lot of the stuff on Bath of Bacon is operating just too far ahead of itself for its own good, basically. It is trying to ridicule the medium by operating within the medium. You know, at this point, I had no idea that I would ever make another record again and, quite reasonably, I think.
+
+And I had this thing. I mean, you know, calling it calling the character the jazz butcher, I never really thought that anyone had clocked that it was actually a real person, that it would be me. Yeah. I like the idea of sort of sniping from the margins was the phrase I've been using all this time. Mhmm.
+
+And so a lot of it was, like, having a go at pop music for being a bit stupid and having a go at the entertainment industry for being a bit stupid and a bit racist. I mean, I did a tune which never got released for obvious reasons called Belgian Congo, which was like a ridiculous kind of King Kong jungle theme from some imaginary idiot King Kong movie. All pounding bongos and, funny little sort of eastern melodies. And, the lyric, down in the place where the Brits don't go, everybody do the Belgian Congo. Tell you what, that melody got recycled.
+
+That melody turns up on Line of Death on Big Planet, Scary Planet. That one. But that they are. That was originally the Belgian Congo melody. And, just jumping about a bit.
+
+Yes. Christmas with the Pygmies and so on. There's another sort of another, sort of take on Yes. Again, you could you could just think that that's pure Tommy Robinson shit, but it's not. My favorite line line on that I mean, it was just it was just a bit of stupidity, like, the devil is my friend.
+
+You know? And these the thing is people seem to like stupidity. It comes back to haunt you. And you gotta bear in mind with Swinging With the Pygmies that we gave it away for nothing. We attached no value to this recording.
+
+You see what I'm saying? But my favorite bit on it is just as it's fading out, you know, everyone's going swinging with the pygmies. And, right on the fader, you can just hear me going intellectual pygmies, which I thought was kind of funny, but that's just me, really. I got in trouble because I was want I was doing metal banging, and they said, no. No.
+
+You've done enough metal banging. Get on with the next track. I was, I don't wanna bang me metal. They were like, no. Bring yourself in, fishy.
+
+I was I'm just going back to the sausage people. They're just sort of Yes. Mentioned in the in the Yeah. They get they And they're they're sort of dotted about the record, aren't they? And there are some Yeah.
+
+They get a credit as backing vocalists on something, I think. Yes. Yeah. Poisoned by food. And and the, Where else?
+
+And, we'll come back to that as well. But the but there are some names dropped in Sex Engine called Claude Beatty. Yeah. As Max Weil, X Benedict, Momental. Yeah.
+
+These were all from the sort of bucket of aliases, pseudonyms, and smokescreens that we were considering deploying around that time. Tammy Vermicelli and her jumping no. Tammy Ravioli and her jumping Vermicelli. Things like that. We just used to like making up daft names for groups.
+
+Like, for example. You know? So yeah. Yeah. The sausage people, they they were a thing at the time.
+
+And Lionel Brando? Oh, now Lionel Brando. That's the big one, isn't it? Who is Lionel Brando? Yeah.
+
+I shall we reveal that in the tome, do you think? I suppose we should. It was the alias of none other than d Elvis Barker himself. Yeah. I've wondered.
+
+Yeah. Yeah. Yeah. I did wonder. So he's sort of credited as, co producer, isn't he?
+
+Yes. I mean, yeah, we'd have been a bit sunk without him. And none of us knew anything about making records at all. I mean, I arrived with a nylon string guitar that had no pickup or anything like that. Walked up the stairs with it, got to the top, and Martin Daly, the engineer, just handed me an acoustic 12 string and said, play that.
+
+And I'd never even seen a 12 string before, never mind played one. But there I was straight in Girls Who Keep Goldfish on the 12 string. So, you know, you live and learn on the job. And so thinking about the the name, the jazz butcher, and how that came about and and whether you were at one p I get the feeling that at one period, you were sort of a bit embarrassed by it and particularly, you know, avoidance of the Jazz Butcher theme in at life. Well, why would you play that for thirty years, I guess?
+
+But I know that in recent years, you've you've dug it out occasionally. I like playing that tune. Yeah. I had to, when we did the hundred club, in the spring maybe. No.
+
+'18. The '18. The big one with where it was freezing cold, and we still managed to fill the under club with Tim Keegan supporting. Mhmm. And, yeah, I had to coax and cajole the band into allowing me to use it as a little intro just for the first few just the first sort of, like, perhaps a third of it just to introduce the set.
+
+And they were they were all a bit sort of sweaty eyed about it. They're all, really? Why why have we gotta do this? It's the intro. It's like an intro.
+
+The fans all know what it is. Because the great thing about the quartet and the quintet was that none of the guys in it really knew anything about the history of the Jazz Butcher, which was rather lovely. It was kinda liberating. And I didn't you know, if I taught them a song, I didn't play them the record. I thought, well, I'll just see how they respond to it.
+
+Yeah. So there wasn't there wasn't a period when you were sort of, like, dismissive or disowning. Oh, yeah. I'd I tried to shed it, when we moved from glass to creation. And Yeah.
+
+Like, before we did anything public at creation, we'd already got Fishcotheque in the can. And, actually, there was a lot of nomenclature dispute about this because I said to Alan at the time, Alan McGee, I said, you know, this jazz butcher thing. Right? There's people out there think we're a comedy band. Is there is this a chance for us to change it?
+
+No. No, Pat. That's the one they all know. You've got to keep it. And then brand, like it or not.
+
+Yeah. Exactly. And that's when I sort of realized I was stuck with it. But it got more complicated than that because we actually wanted to call Fishcotheque. We wanted to call the album Michael Jackson.
+
+Yes. And Alan said, no. His lawyers won't like it. So that and me and Kizzy were there in this in the office. And we kinda looked at each other, and we looked at Alan, and then we went, well, can we call it Kate Bush then?
+
+And then he saw the photo outside the Fiscotheque, and he went, that's it. That's the one they're going to want. And so that's what they got. You ever been back to that chippy? You know, it's a disgrace that I haven't.
+
+They probably still have the album or a picture or something inside. There are photos of me and Kizzy on the menus. I I shit you not. There are records framed hanging on the wall. They've really gone for it.
+
+At the time, it was run by this old fella. And, I remember Ed Ball took the record in to show him, and he became angry. He became indignant. He said, what's you doing? What's you doing putting this on?
+
+And Edward, being such a positive and agreeable personality, finally talked him around to the idea that people all over the world would be seeing his chip shop and that maybe it would be good for business. Yeah. So he mellowed and stopped his objections, and everything went ahead. But then many, many years later, sometime this century, I got a a message from the Fiscotheque. A a new generation had taken over.
+
+Yeah. Young guys. And they were really, really into it. And I was invited to the grand reopening, which for a number of reasons, I couldn't make. It was it was a real shame.
+
+I'll tell you why. It's because the trains had all gone to ship because it was Easter Sunday. And that's what happens when you let Muslims open a restaurant. They had the grand opening on Easter Sunday, bless them. So I literally couldn't be there.
+
+Physically could not be there. But, yeah, a a few mates have visited since, and they've sent back photographs, and it's ridiculous. I can show you. I've got them on my computer. It's ridiculous.
+
+It's it's really sweet. And people do. I mean, I've got again, I I have actual photographs of actual large American men in suits leaning on those railings recreating the cover. Going back to Bacon. Yes.
+
+And and well, actually, I'd like to explore a little more, playing heavy metal in at school, but maybe another time. We'll come back to that. I well, I mean, we could write a book called Why Hawkwind is Not Heavy Metal. Why Hawkwind are not hippies sounds even more outrageous, but I would argue that they were sort of proto punks. Yeah.
+
+Like the Pink Fairies and Nick Farrow and the Deviants. That whole Labyrinth Grove scene, I mean, the the attitude was punk. Sure. They look like hippies because that's what was on sale in the one stop hippie shop. You know?
+
+But, in reality, they were pretty hostile, anarchist nutcases. My kind of people. Partytime. Which is like a favorite, isn't it? That that's perennial.
+
+The thing is, even when the audience lets you get away with not playing it, the lead guitar player won't. All the guitar players want to go on that. You know? Old Joe Woolley, he's the right case in point. He loves playing that.
+
+And after a few years of flirting with it, he's pretty much got the Ida solo down. He's got all the widdly widdly widdly widdly widdly you know, it goes to the triplets. He's he's worked and worked and worked until he can reproduce that. Bless him. Yeah.
+
+And I he, you know, he gave it a good stab at the cash for cancer night, but he was a little bit stymied by having a very drunken Mick playing the drums. I say playing the drums, interfering with the drums. Tim. That's quite, quite an advanced solo, isn't it? Was Max was was he always did he did he arrive brilliant, or did he did he did he He was a very sure.
+
+He no. He was very interesting case. Before Jazz Butcher, we played in this band called Sonic Tonix. Oh, yes. Which was run by a very clever, very angry young man called John Silver, who has since made a small pile and done very nicely.
+
+I think I'm right in saying that John produced that television program, Grand Designs. Alright. I think he's responsible for that old pitfall. I I think the show should be renamed tax audit, but that's just me. And in the time that he was playing in the Tonics, Peter, Max, who had started out as a very earnest, long haired vegan hippie, When I first saw him playing in a in a band before that, he was he he he actually, the band actually played Freebird, and he got to do the interminable guitar solo.
+
+And that's when I first noticed him because we were doing a gig in Cambridge, and his band was supporting the Sonic Tonics. And he played an absolute blinder of a guitar solo on Freebird, of all things. And, the problem with that gig in Cambridge, we all suffered from it, was that we were used to drinking in Oxford where the ales were generally quite mild. And we got over to Cambridge, and we were all drinking, Abbott, which is almost twice as strong as what we were used to. So everyone basically was blind drunk, including Max when he played the solo on Freebird.
+
+But I guess it was only because he was drunk that I thought that he did so well. You know? And, yeah, he did that. And then he came into the Sonic Tonics, and that was a much more sort of new wave sort of post punk sort of thing. John was he he liked Wire and Gang of Four and and and Syd Barrett and all that.
+
+And like like all of us, he was of a generation where he had formed pre punk. But, he very much embraced it, and he was very good at writing these kind of spiky, paranoid sort of songs. He he had things like, the man who ate himself to death, for example. And Domestic Animal, that was one of John's. I only get a writing credit on that because I could only remember half of it, so I had to make the other half up.
+
+And Sonic Tonics released at at least a single? Two. And I don't think I've heard either. I've got them somewhere. You can have a borrow of them if you want.
+
+They're not very good. The one the first one without me on it is better than the second one with me on it. The second one, we got a bit confused. But Max came into that, and, you know, it's like he and I have been in a band before that called The Institution, which had Rolo in it. It's your crucial three, if you like.
+
+Yeah. And the institution was a kind of I don't know. It was a bit pretentious. It was a bit like sort of magazine or something like that. Whereas the tonics was, as I say, it was a much more sort of straight head spiky.
+
+So Max had got some experience of playing in the sort of new rave fashion, but he wasn't that convincing at it. And then the tonics kind of made him better at it, and he, you know, he was starting to listen now to things like the slits and the specials and, the gang of four. So he was he was getting with the program. And then the tonics split up in November '80. I I this is difficult for me.
+
+I'm not very good at the turn of decades for some reason. No. It would be November, the last tonics gigs. And for a month or so, I didn't see much Peter, for he was Peter back then. And then my mate, a very influential man whom we're gonna have to traverse quite a lot, my mate, the Antichrist, decided he was going to throw a rather ambitious cabaret evening.
+
+He was gonna take over the bar at Merton College. He was gonna replace the genial old geyser behind the bar with, waiters in white coats with trays. He's gonna run the whole thing like a posh cabaret and put on various alleged talents. And the interesting thing about it was the the things people that you were putting on were, like, pretty much imaginary, just pretty much notional acts. And I'd started sort of trying to think what was gonna happen to me after the Sonic Tonics.
+
+And I got into this reductionist walking away, Syd Barrett kind of attitude. You know, I'm I was 23, and I wanted to be Syd Barrett already. I mean, to be fair, he got there even younger, didn't he? And so I turned up to do my bit at Antis Cabaret. And looking for backup, I got ahold of Peter, and I said, listen.
+
+Do you wanna come and play guitar? It's all it's all just two, three chord songs. It's piece of piss. And he he said, yeah. I'll I'll come and do it.
+
+And he came and he backed me. He also backed Anti when Anti did his few songs. And it was extraordinary. Suddenly, there was Max Eider. Suddenly, there was this kind of country soul style that he's got with a little bit of sort of West Montgomery jazz sort of inflection to it.
+
+Obviously, nothing like as fully formed as it is these days, but it was there. You know, three or four weeks after he'd been sort of going on his Yamaha, suddenly, he'd got this fluid style that had emerged almost, like, fully formed overnight. And and he was singing a song called The Intro and the Outre, because that's the kind of songwriter he is. And Peter was backing him up. And after he'd sung a couple of verses, Anti went to introduce the instrumental passage, and he just went, take it, Max.
+
+That was the moment. That was the exact moment. It was the night John Lennon died. It was something like the 12/08/1981. And while poor old John Lennon was getting blown to bits, we were accidentally reinventing ourselves.
+
+Me as a sort of three chord idiot songwriter and Max as the guitar player that he became. Cabaret Somneuf, we called it. And somehow, we got away with it too, and we had the waiters. Yeah. Waiters and that.
+
+So, yeah, that was Max, and it was extraordinary, the the transition of the guitar style. And, obviously, I mean, if you look at party time, if you look at the different versions that have been recorded over the years, you can hear the solo maturing. But even so, right from the word go, he had that. Yeah. And is the song just about, going to parties and drinking for nothing?
+
+Brian Ferry. Not much of a role model. Loneliness is a crowded room full of faces that turn to stone all together, all alone. That's what it's about, isn't it? It's about being stuck in a room with a bunch of people you don't know who are talking about stuff that doesn't interest you.
+
+And, I think I'll have another of those. And and then And then you get drunk and you see the girl on the other side of the room, and you think, well, she might take me home. And, of course, she doesn't. And then you disgrace yourself, and you go home in an ambulance or something. It's just it's documentary, and it it fell out.
+
+Again, anti. I was around the Antichrist's room at Merton College for he was a student there. I'd left, but he was he was still there. And I was looking for drugs, basically. And I went around to Anti.
+
+He didn't have any drugs, but he knew a man who did. He said, look. You stop here, fishy, and, I'll go piling out and see if I can't get some bit of smoke. And he went off, and I was left alone in his room. And he was gone an unfeasibly long time.
+
+And I remember listening to Dare by the Human League, which had just come out. I'm thinking, blimey. That's different. And then I remember getting really bored, and I remember actually trying to sniff some glue. And then still, Anti had not returned.
+
+And out of total boredom, I picked up his acoustic guitar, and I couldn't really play guitar. But I just heard a record, and I don't know who performs it, but a record called The Rich Get Rich. I'd heard it on John Peel. And it was all this major seventh stuff. You know?
+
+And I thought, well I mean, I didn't know they were major seventh at the time, but I knew that it was like c with some bits left off. So I bashed at the c, and then I found the f. And, of course, like all idiots with guitars, it was good. And then I just whacked it out. By the time Anti finally turned up with the hash, the song was written pretty much as you'd hear it today.
+
+It came really, really quick, and it was only the second time I tried to write a song. The first song I ever wrote was with, a little wasp synthesizer that I borrowed, and that turned out into South America. But, yeah, party time was, like, the first thing I'd sort of, you know, sat down with guitar in my lap like a songwriter and come out with it. And it pretty much just fell out. And sometimes when I have to sing the lyric a hundred years later, it kind of feels like that.
+
+And the and the including the famous line, cold bath with someone you dislike, which is still like the tag line for the for the website. Yeah. Dave obviously likes that one. That line is interchangeable. You know, Lou Reed always used to, like, mess around and change the lines to songs.
+
+And over the years, that's had a few substitutions. Better than a cold bath with police chief Daryl Gates came up back in the sort of early nineties when he was going around whacking black men in the head. And a cold bath with the person we must call Johnson. I haven't really I don't think I'd even dignify the fat maggot with putting him in a song. But, Yeah.
+
+That that used to go down quite well on the West Coast, the old police chief tailgate. So better than a cold bath with Godzilla and his mates. That's another one. There's been a few over the years, but I don't know. Better than a cold bath with someone you dislike.
+
+I mean, it's not that good, is it? And, I was gonna talk a little bit about, the various animals on the Right. On the record like Bigfoot and kittens and goldfish. Tell us about Bigfoot first. Well The Bigfoot was written at work when I should have been doing lawyering, and I I sat in a little cupboard office by myself and spent most of the time talking to Dave Barker on the phone.
+
+He used to phone me up because I had no phone at my flat. So he used to phone me up at work and, like, sit there chuntering on for, like, an hour and a half. And, Dave had just been to America for some reason. And while he was out there, he'd seen a Saturday night live parody of the adverts for the Roach Motel. You know the Roach Motel?
+
+No. This was a product you could get in the eighties in America, maybe still can. Oh, yeah. And it's sort of shoebox sized. Yeah.
+
+And it's called Roach Motel. And the roaches go in, and they get gassed or poisoned or something. They check-in as well. Well, that's exactly it. Their slogan was they check in, but they don't check out.
+
+And Dave was very impressed with this. And, I think what he'd then seen was Saturday Night Live did a parody of this advert. Only instead of Roach Motel, it was Bigfoot Motel. And Dave was telling me about this, and I I hung up. And it was 1982, so, like, I've got sort of Burundi thing going on on the desks.
+
+Kinda heavy Bigfoot noise, like a Bigfoot motel. So that pretty much wrote itself instantaneously. You haven't been to the West Coast by then? No. No.
+
+I didn't get to go to America until we toured there in '86. Most places, I only seen for the first time because I was sent there for money. I've been to Paris before, and I've been to Rome as a small boy, but I didn't really count. I quite like the idea of, you know, them them being used for meat. Well, it is kinda comical, and it it would explain why, you know, it's it's like no one really knows the facts.
+
+It's like, you know, oh, it's a government cover up. It's no. No. No. No.
+
+It's not a government cover up. It's a corporate cover up because do you ever wonder how they make hot dogs? Mhmm. You see, I I I painted myself into a corner anyway because, alright, we've got this Bigfoot motel. We're trapping Bigfoots.
+
+What for? And, you know, you gotta remember Jazz Butcher. I mean, I, in those days, I was still guzzling dead animals. So, like, it was all quite funny to me. But, again, it's that sort of meta meta thing.
+
+You know, you're writing a song that's parodying a parody of an advert. And, in a world where people are sort of, like, nodding their heads to Paul Weller's latest opinions about the state of the world, you can't necessarily expect pop fans to, give it the kind of attention to sort of dig through to what you're actually saying. And there's there's another parody of an ad in Poisones by Food, which I think you've used a couple of times, the prized turkeys delight thing. Ah, yeah. Well, prized turkeys delight, of course, on chick on, the best way.
+
+Yeah. But, that was I mean, you gotta bear in mind this record here, I can't sing. I have not learned to sing. And quite what all that bellowing is about, I really don't know. It took I don't think I should really start singing properly until Sex and Travel, the third album.
+
+Mhmm. But I think that's partly a confidence thing. I quite like the well, like in a lot of early works of any anyone's, you know, the roughness and the, incompetence, if you like, for one. Oh, there's a charm to that. Yeah.
+
+Yeah. There's a charm to that. When Things that wouldn't make a later record. Things that you would scrub, you would you you Yes. You just don't know any better.
+
+Yeah. Yeah. Be quite happy with. And I mean, we've to be fair, we've always sort of held with that. We just don't know any better.
+
+People, you know, people say to me, like, oh god. Are there are there unreleased things? The answer is, well, no. We have no quality control. If we if we record it successfully, then we put it out.
+
+You know? Yeah. And there are and there are lots of not lots of mistakes, but there are, you know, rough rough bits. And the odd even even in later records, there's the odd jarring moment that you just decide you want second take. Yeah.
+
+I mean, sometimes, there's a there's a moment before the second take, maybe. I don't know. No. No. No.
+
+We've never been short of time. But there's a moment on Ghosts on Waiting for the Love Bus where Crouchy takes his guitar solo in the middle. And he he went searing off first take. He he was nailing it. And, when it was done, Richard and I, Rich Formby and I, we're like, yeah, mate.
+
+Come in. And we brought him in, and he sat down, and we listened to it. And there was a moment right in the middle of the sort of chorus part of the solo where it hits the big old g d e minus c radio chord sequence. And none of us had noticed it during the take. All three of us noticed it as soon as we listened back.
+
+There's just a moment where Crouch is, like, sailing like a big ship magnificent. And then he just goes, like, and bends his way out of it. And the first time we heard it, we all looked at each other. Oh, fuck. And we're about to send him back in, and Richard went, no.
+
+No. Listen one more time. And we listened one more time. And then we listened a third time. And we went, yeah.
+
+Keep it. And you and you get to like it. Yeah. It's it's I I I love it, actually. I wait for it now.
+
+When I'm listening to that record, I wait for Crouchie's note. You know? Because it is it's actually perfect. And we were actually, we were using oblique strategies during the making of Love Bus because a lot of it was, it was it wasn't a record that was like everything was written before. It was, quite I wouldn't say it's not improvised except for President Chang.
+
+That is literally a jam. But a lot of it was kinda cooked up on the fly. Follow your nose kind of thing in the studio. And we were using oblique strategies to help with this. And, of course, one of those, which we didn't pull the card out at the time, but it's it was in all our heads, I think.
+
+Correction. It was in Richard's head, and it was in my head. What was in Crouch's head, we'll never know. He's probably thinking about beer. And, yeah, of course, one of the big famous oblique strategies is honor your mistake as a hidden intention.
+
+Mhmm. And we did. Another outbreak of oblique strategies on that one where we did use the cards was, that song Kaliningrad. Alright. And I'd got a verse.
+
+See the bears see the bears from the air, that's the Soviet air force, pour the fat boy under the table. And I needed something that was gonna end up with awe. Nobody knows who they work for anymore. So I needed a run that ended with awe, but I could not I like the bears from the air, pulling the fat boy under the table. I was digging that, but I didn't know what to do next.
+
+And, you know, I think it was just me and Rich there. And, you know, Rich is an incredibly patient bloke, but it was getting to a sort of sort of moment. And, I said to him, Rich, I'm getting nowhere, mate. Pass us the old oblique strategies to see if that helps. And I pulled the card out, and it said, commit a sudden violent action.
+
+So immediately and without thinking, I just went through the whole box of cards up in the air. Oh, here we go. Spinning his drink and throwing all of his cards on the floor. They really work. And then the love kittens and the dark message behind the love kittens.
+
+Yes. Yes. You're onto this, aren't you? You know about this. I wrote that in the dying days of the Sonic Tonics.
+
+And I was very sad because in our own curious way, we we had a personality as a band, and we had good songs. And when we were good at that point, we were really quite something. And, you know, the so called psychedelic revival is just around the corner, and it all looked kinda good, but we collapsed under the weight of our own sort of aspirations, I suppose. And I was kinda sad about that, and I got into this walking away frame of mind. And I think I said the other day that we'd had this little office where Max and Owen lived where we used to sort of glue our slick record sleeves together and phone up people and harass them.
+
+And I found myself through there alone one afternoon. And, again, just picked up a guitar, started doing that major seventh thing. And it just it just came all of a rush, really. You know, a bloke who has become so disenchanted and disappointed with everything that he's pinning it all on kittens. You know, a lot of the stuff that people perceived is like comedy and the rest of it.
+
+It was like, well, don't think you're appreciating how much sort of thought and organization has gone into this. Because, actually, that's that's not what we're talking about. You know? I mean, it is funny. Yeah.
+
+Penguins, you can laugh if you want. But And and look, Barrett's Barrett's the same. I mean, Barrett's exactly the same. He'll do things that appear to be completely humorous. You know?
+
+And there are moments where teenage boys are smoking hash, listen to the second side of the madcap laughs, and the scum Waters and Gilmore leave the studio chat in between, and it say, oh, it sounds like Syd's having a nervous breakdown. I can tell you from personal experience that everybody sounds like that when they're trying to talk to a control room and the guy keeps not turning on the microphone or are you, what? Are you are you are you there? Are we no. It's just everybody does that.
+
+That's not Syd Barrett going mental, and they fucking knew it as well. There's a I mean, there's a certain conspiracy theory that buzzes around among Syd Barrett nuts that Waters, especially Anne Gilmore, sabotaged the making of Madcap Laughs. The title instantly was theirs, not his. Deliberately sabotaged it because they were scared that their newly song free and directionless, Pink Floyd, was gonna be eclipsed by the guy who'd written all the hits making a solo record. And, yeah, the myth of mad Syd and the rest of it.
+
+No. I'm sorry. Everybody talks like that in between in between takes because studios are annoying places, and the headphone mix is never right. You know? So Kittens is really just about finding comfort from domestic animals when all else fails Yeah.
+
+In other when all is lost. Yeah. In other words, yeah, it's about walking away from the human race and just taking comfort. It's it's like those dreadful things that you hear about, oh, I just want a baby because I want unconditional love. You know, that is such a Well, it becomes conditional with with the real people, I think you'll find after a while.
+
+You know? Oh, absolutely. Whereas whereas it doesn't animals. I I I it reminds me of, when my mother was in a nursing home Yeah. And one of her, one of her fellow inmates was was deriving comfort from a stuffed cat, which which she which she had stroked to the stuffing, you know, repeatedly.
+
+Yeah. It's it's it it's desperately, desperately sad that it has come to this, you know, that they are so starved of any kind of meaningful human interaction that lay solace in things like that. I myself had when I was at college in my room, I had a little rubber little squeaky rubber kitten about this big, which I'd had since I was a tiny little kid. And it was the the rubber was all dried out, and the squeak had gone. And it was nonetheless, the thing that was remarkable about it was that it was it was kind of textured, and it was actually quite a realistic rubber kitten.
+
+And I used to keep that. And in the absence of having any pussycat, I I I would fuss it. And then in my finals at university, there was a question in the moral philosophy exam, which I was dreading because I have no morals, and I know no philosophy. I I was looking through the many, many questions from which you had to choose, and one of them was a very simple question. It just said, does your cat have rights?
+
+And I said, well, of course not. It's made out of fucking rubber. But, yeah, I mean, I sometimes think about when we used to tour Germany a lot, we used to stop we always had stayed in the same place in Frankfurt. And there was a news agency there, and I used to go in, and they had what I call kitty porn. That is to say, beautiful glossy magazines for about four marks that were just full of pictures of cats, centerfolds.
+
+You know? I used I used to buy one or two of these for sort of humorous thing to read on the bus. But they weren't humorous. They were heartbreaking because I'm thinking, well, who buys who buys these? Well, who buys porn?
+
+Blokes who can't get laid. So who's buying this? Oh god. It's old ladies who live in flats when they're not allowed pets. So I find this just unspeakably sad.
+
+I feel the weight of the universe descending and crushing my heart as we speak just thinking about this. So the Kitten's song, you know, you've called it already. You know what it's about. Comfort. Comfort.
+
+It's not even comfort. It's just that it's just trying to draw a picture of someone in that state who is just so desperate for comfort. Yeah. Yeah. Girls Who keep goldfish.
+
+I saw a marvelous television program. Sometimes I do know your enemy television. And so I watched a documentary about Genesis. And Tony Banks was interviewed, the keyboard player, about their early records. And it was like, well, why do you write songs about giant hogweeds and invasions from your outer space and all this pretentious prog rock stuff?
+
+Why do you write these words? And he said, well, you see, the thing is we we didn't really know any girls, so just write about what you know. And in a way, I suppose Girls Who Keep Goldfish is a little bit like Tony's remark. It's like, oh, I don't really get girls. I mean, they're they're interesting in that, but well, those fish are alright.
+
+You know, it's it's it's not that far away from Love Kittens, actually. It's not that far away. It's there's an awful lot of it on the early records, and it is because a lot of that stuff was written at a time, and I'd walked away from a band that I liked that turned out not to be going anywhere. And I moved to a town that I didn't know, and I didn't know anybody. Moved to London, sis, or where you No.
+
+Up up here. Meeting here. Yeah. When I finally gave up on Oxford as a town I mean, I'd done done with the university a couple of years before. It took me about two years to realize it wasn't just the university that was up its own ass.
+
+It was everyone in the city. You know? It was the buskers. It was the blokes who pumped your gas. It was the bar ladies.
+
+It was everyone was up themselves. Coming here was like a liberation. But, initially, I had no money, no job. I was staying at my mom and dad's house. I had nowhere to go, no one to talk to.
+
+And that's when I started writing a lot of these songs. So there is a lot of isolation and sort of rejection and all that sort of thing. There's there's a lot of it underneath this. Great great fun and let's, sort of I I imagine it to be like, you know, being depressed and disenchanted with a day job and all of that. Is there an element to that in it, or am I reading too much?
+
+The thing about gray flannelette was I mean, it's obvious where the idea comes from. And it was anti. Again, it was and I can remember. Because I used to wear this gray suit of kind of not tweedy, but an actual sort of fabric rather than, like, you know, a smart smart suit like that. This was a bit more sort of wooly or whatever.
+
+I I love that suit, but it got pretty knackered because I wore it a lot. And, I remember Antje just looking up at me one day and just going, gray flannelette. And the verses to that came very fast. It was almost like automatic writing. Oh, and I've done my editing anyway with a bloody glockenspiel riff.
+
+It, you know, it was it it felt like Tubular Bells and The Exorcist, but, you know, I've got my headphones on. It's like a January afternoon. It's freezing cold. I can't take the chance of rolling a joint in case my mother comes in and has a fit. So I'm, like, taking lumps of dough, putting them on a pin under a wine glass, just filling it up with smoke and just going.
+
+So, like, getting about three joints worth of dope in one in one hit. So I'm off my cake. I'm in the headphones. It's going. And on the demo, you know, it's not very tight.
+
+There's two or three of them, and they're all just sprinkling and spankling around. And you don't please don't use that expression when you write it out. They're all just clattering around. And, yeah, the words just, like, completely just tumbled out really. And when I look back, there's one verse that I really like.
+
+I'm in the zoo. I'm looking at the animals thinking about sculpture made out of steak. Yeah. Of course, that's exactly what they are. I didn't think about it at the time.
+
+It just kinda tumbling out, but that's what animals are, isn't it? The sculpture made out of steak. So that was a lucky one. Yeah. That wasn't really that was more more just sort of daftness.
+
+And also, I did like the music, so I kinda kept it. But then there's the business with that. Right. And, of course, at the end money. Yeah.
+
+Exactly. And that that just you know, you you get the music down first, and we'd got enough of the music we knew that that would that would do. So, like, instead of just doing my to signal I was done with it, so I was just starting to go. And then, of course, when I'm doing the vocal, I'm hearing that, and I'm going, think I'll saw my leg off. We were not no.
+
+I can't say that we weren't into drugs because we were, but we didn't really do a lot of smoking or drug taking in the studio. But we did do a lot of drinking. So, again, that explains a lot of the sort of daft bellowing. Sex engine. You hear a voice go, take it out of here.
+
+I don't want it. And what that is is in the middle of the vocal take, someone's coming and offered me an entire bottle of wine. Take it out of here. I don't want it. We almost covered everything apart from, the French song and, the necromancy.
+
+The French song, I thought of earlier. You were talking about the sort of naivety and borderline incompetence of a lot of the performance on that. When we did, Gentleman Adventurer, we rerecorded it with Johnny Mattock, Tim Harris, the best player bass player in the world, Max and me. And there was a vague idea around at the time that we might reanimate La Mer. And that's how  Tombé dans les pommes got written as a potential b side for something that may or may not happen.
+
+Now, obviously, we didn't put La Mer on the LP. That would have been daft. But we thought, you know, keep it aside and just see what what may or may not come to pass with it. It's a bit of a tradition, though, thinking of, you know, a a French stomp song per album almost. Well, there's an element of that.
+
+Maybe not as as I don't I don't think they're as prevalent as that. But, I mean, the very fact recurrence anyways. The yeah. I mean, I think the very fact that we felt compelled to come up with  Tombé dans les pommes as a potential b side goes to show that we didn't have that many songs in French. But that that was cool because no one had heard that, so we could put that on the record.
+
+But we didn't wanna put La Mer on. But while we were mixing it, I was running a little sort of mental exercise in my head. And in French, in my head, I was writing the review of, this version of La Mar. And it was all basically about, oh, all the naive charm and, borderline incompetence of the first version that made it so particularly affecting is gone and has just been crushed under a tide of competent uselessness. You know?
+
+I still prefer the new version. I got nothing against a bit of competence me. I'm talking of recurring themes that or not the French song is that recurring, but No. There's a first mention of elephants at least. Yes.
+
+Well, you see, when I was I this I've told this so many times that it feels almost formulaic. But when I was at school, they used to try and teach us French. And to help with this, they had little flexi discs that would arrive. I think what happened was once a month, a comic would come, just a little four page comic, very cheaply produced, but it they'd always have these flexes and a song written out on the back. And even though I was, like, eight or nine years old, it did come to my attention that most songs in the French language appeared to be about elephants.
+
+And so what La Mer is actually about is it's about how people felt. I'm not doing this very well. Just give me a minute. Yeah. Basically, it's about people trying to teach English kids French.
+
+Yeah. And it's about how only very rather partial was their success as evidenced by the French in the lyric. And also the as a result of this attempt to educate me in the French language, I am now convinced that all French people are just obsessed with elephants. As you'll have noticed over the years, I'm quite fond of them too. But I have to say, when we, you know, when we sort of grew up and started touring and we started driving around France, you do see an awful lot of elephant logos and elephant related names of businesses.
+
+Alright. Yeah. Yeah. They're very they are keen on their elephants and driving trains too fast. And do and do the French understand the bad French lesson joke in that song?
+
+They definitely take a delight in the borderline competence of the French. Yeah. The when we first toured France, it was one of the last European countries to let us in. But we played some sort of weird indoor festival, and it was a it was a grand mallet. You know?
+
+They really went for it. And so in early eighty six, we had a a two week tour of France, which is almost unheard of in at the club level. And we arrived to find much fanfare and audiences of, like, three to 500 kids everywhere we went. More or less everywhere we went. And the first night was in Cannes, And somebody said in the dressing room, you know, practical question.
+
+Are we doing Stonehenge tonight? Someone went like, you know, are we gonna do La Mer? Now the first thing that happened was the the bass player, Felix, he goes, oh, I don't know that one. To which the three of us, Max Owen and me, all reply, you silly dick. We played it in Hamburg about three weeks ago.
+
+But, you know, well, aren't we gonna do it then? And I was like, are you fucking mad? If we go out there and sing that at French people, they're gonna throw shit, man. Well, the gig went really well, and we got a second encore, and it's like, Graham still going, I don't know it. I don't know it.
+
+It's it's a minor for Christ's sake. And, we went out and did it. And they went donuts. They went absolutely mental. '87, Alex and I did a tour.
+
+Alex Green on the sax. Just me on guitar, him on the sax. I was not good enough on guitar to undertake such responsibility at the time, but that didn't hold us back. And we got to this gig in Paris at the Little Rex. And we did the set, and it was all very jolly, and they asked for more.
+
+So we came out, and we played La Mer. And they went completely mad. And they bellowed for more, and we came back out. And they made us do La Mer again. Have you ever heard that Jonathan Richmond Live LP where they keep reprising ice cream man until everyone wants to die?
+
+It's absolutely hilarious. Rolo, I love that. It's another story. It was like that, though. I think Alex and I came back out to play La Mer five, possibly six times.
+
+Kevin, you mentioned Alex that reminds, reminds me of what I was thinking about about the saxophone and whether you felt and this because this reference in them includes driving or something about turning turning it off. Somebody turn that saxophone off. What he was putting me off, I was trying to do a little jam. I was saying, I need a taxi home. I need a taxi home.
+
+But I couldn't pitch it because fucking Louie's going all over the place. And I just go, somebody turn that saxophone off. It was like like the get it out here. I don't want it. It's just like it wasn't stuff that was really supposed to be included, but when we heard it back, we thought, if we left it up.
+
+I suppose everyone fell out of love with saxophones by the time the nineties arrived. So it just was natural evolution, was it, I guess? I'd I'd fallen out of love with saxophones. I used to be a saxophone player in the sonic tonics. I did singing.
+
+You've got a saxophone on the front top of the disc. That is the Sonic Tonics. Mhmm. That picture is at the Clarington. Dave Barker came down to see us.
+
+That's Max at the back. Alright. Makes me look like a blooming in with that picture. I I swear to god, Dave only signed us so that he could use that photograph he'd taken for his sleeve. I swear.
+
+Because his old his old job, his day job was doing record sleeves, and I think he felt constrained, and he wanted to do his own record sleeves. And if that meant having to record records to do it, then he would. You know? But what was that about? No.
+
+It's gone. Nope.
+
+It's gone. Ball line confidence. We have just about covered this thing, haven't we? Yes. Bar barring the Barring sex with the dead.
+
+Dead girlfriends. Yeah. Well, that, again, like so much of these things from this era, is anti's fault. There's a reason why they call him the Antichrist. And, we were mucking about.
+
+Must have been sort of Christmas eighty one, because when college finished for him for the Christmas holidays, he'd come back. He he lived in Northampton. That's how I got to know him. So I'd see him over that Christmas, and we spent a fair bit of time together. And neither of us could play guitar, neither of us could sing, but we're both kind of interested in writing humorous tunes.
+
+And I I was just doing this big dumb a minor g thing, and he was just jumping around the room going zombie love like this. And I was like, So when bored a week or so later on my own, I I cooked that up. And that is the reason. If I needed further pushing, that is why I adopted the name Jazz Butcher because I made a little tape of that and another couple of songs. And there was no way that I was gonna put my name on a cassette that had a song about having sex with dead people on it.
+
+You know? I wasn't it wasn't that stupid. No. It's just a big dumb thing, but my god. The amount of mileage we got out of that song was ridiculous.
+
+Because it's such a simple thing, you can, you know, you can just do so much with it. And it we used to finish the set with it for years. Eventually, it sort of all got a bit tired and formulaic, so I I stopped doing it. But Oh, it's a nice little rocking number. Yeah.
+
+And, like, you know, you can you can take it right down in the middle, and we'd we'd I can remember I went through a phase on the 85. I'd been reading, Stephen King Pet Sematary. My wife loves Pet Sematary. Yeah. It's a good book.
+
+Hey, Lou Reed, you rock and roll animal. So I was I was into this book. I was reading this book, and, yeah, the middle of zombie love suddenly just turned into, like, the first movie long before the original movie. There's there was our movie of the Pet Sematary used to happen in the middle of zombie love. They buried the cat on Friday.
+
+Saturday morning, the cat came back. The old Germans would be going mad down the front. Saturday morning, the cat came back. The Germans would go a bit more madder. You go, Saturday morning, that cat came back.
+
+Yeah. Loved it. Happy days. Before we finish, if we were being strictly chronological, should we have been thinking about Mark E Smith before this or not? I can't remember.
+
+The the single? Yeah. That comes a ways after this. This was recorded over the August '82, Whereas we didn't record Southern Mark Smith until the September '83, and it only got written in about August. So that can be that can be for next time.
+
+By all means. Let's see if we're still up and running. Yeah.
+		`,
+	},
+	{
 		date: '2019-10-05',
 		location: 'The Plough, Shutlanger',
 		number: '6',
-		title: 'Fishco',
+		title: 'Fishcotheque',
 		topics: [],
 		media: 'https://www.youtube.com/embed/zYpruNL9Rr0',
 		description: <>
@@ -1681,7 +2196,7 @@ const Miracles = () =>
 	<Tag>The Interviews</Tag>
 	<blockquote>
 	{interviews.map((i: any, key: number) => (<div key={key} className="listItem">
-		#{i.number}/16 - <b>{i.title}</b> - <span className="smalltext">({i.location}, {i.date})</span>
+		#{i.number}/16 - <b>{i.title}</b> {(i.location || i.date) && <>- <span className="smalltext">({i.location}, {i.date})</span></> }
 		<blockquote>
 		{i.description}
 		</blockquote>

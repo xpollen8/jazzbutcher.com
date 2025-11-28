@@ -2201,11 +2201,11 @@ const Miracles = () =>
 		<blockquote>
 		{i.description}
 		</blockquote>
+		<EmbedMedia data={{ mediaurl: i.media, mediacredit: 'Philip Snow' }} />
 		{(!!i.body?.length) && <pre style={{ margin: `20px`, border: '1px solid grey', padding: '15px', whiteSpace: `pre-wrap`, height: `250px`, overflowY: `auto` }}>
 		<h1>AI Transcription of the audio files follows...</h1>
 		{i.body}
 		</pre>}
-		<EmbedMedia data={{ mediaurl: i.media, mediacredit: 'Philip Snow' }} />
 	</div>))}
 	</blockquote>
 	<Tag>Get The Book</Tag>

@@ -527,7 +527,8 @@ By all means. Let's see if we're still up and running. Yeah.
 		number: '6',
 		title: 'Fishcotheque',
 		topics: [],
-		media: 'https://www.youtube.com/embed/zYpruNL9Rr0',
+		//media: 'https://www.youtube.com/embed/zYpruNL9Rr0',
+		media: 'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+6+Fishco.mp3',
 		description: <>
 		The late Pat Fish in conversation with me on 5th October 2019.
 		<p />Much of this would become the &apos;Fishcotheque&apos; chapter of &apos;Miracles and Wonders&apos;, the book Pat and I wrote, which I finished and published after he shuffled off on 5th October 2021.  

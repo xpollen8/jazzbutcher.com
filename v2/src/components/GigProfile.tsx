@@ -67,7 +67,9 @@ const GigMedia = ({ data }: any) => {
 
 const GigText = ({ data }: any) => {
 	const useCredit = removeHTML(data?.credit);
-	const useURL = (useCredit) ? `/contributions/${useCredit}` : data?.credit_url;
+	// if there is an explicit credit_url, use it.
+	// otherwise, construct a /contributions link if the name exists
+	const useURL = (useCredit && !data?.credit_url) ? `/contributions/${useCredit}` : data?.credit_url;
 	return (<>
 		<RenderHTML className="listItem" body={data?.body}>
 			<Credit g={useCredit} u={useURL} d={data?.credit_date} />

@@ -243,7 +243,7 @@ const GigReviews = (data: any) => <div className="listItem"><Iterator data={data
 
 const GigPresses = (data: any) => <PressCards items={...data} />
 
-const doIt = (label: any, val: any) => <span className="break-keep outline outline-1 outline-cyan-500 m-1"> <b>{label}</b> {val} </span>;
+const doIt = (label: any, val: any) => val && <span className="break-keep outline outline-1 outline-cyan-500 m-1"> <b>{label}</b> {val} </span>;
 
 const GigDetails = ({ gig, joins }: any) => {
 	if (!gig) return;
@@ -256,6 +256,8 @@ const GigDetails = ({ gig, joins }: any) => {
 			<div className="flex flex-wrap gap-1">
 				{(gig?.datetime) && doIt('Date', dateDiff(gig.datetime, ''))}
 				{(gig?.ticketweb) && doIt('Tickets', <Link href={gig.ticketweb}>{parseDomain(gig.ticketweb)}</Link>)}
+				{doIt('Project', gig.title)}
+				{doIt('Blurb', gig.blurb)}
 				{doIt('Venue', <Link href={`/gigs?f=venue&q="${encodeURIComponent(gig.venue)}"`}>{gig.venue}</Link>)}
 				{(gig?.eventweb) && doIt('Venue Website', <Link href={gig.eventweb}>{parseDomain(gig.eventweb)}</Link>)}
 				{(gig?.city) && doIt('Location', <>

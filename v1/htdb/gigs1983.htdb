@@ -123,9 +123,15 @@
 
 	who=${literalizeCommas( ${pat}, ${max}, ${rolo} )},
 		photosets= /images/19830925/19830925_wiggingout.jpg$$
-			;;;;2017-04-28
+			;;;;2017-04-28,
 
-	)}
+	pat=${literalizeCommas(
+	We were playing a CND benefit in Abington Park. And an interesting thing happened there. Instead of doing the bandy thing, we turned up, and there was Eider had his electric. I had an acoustic.
+	<p />
+	And Rolo also had an acoustic, but he'd laid it strings down in his lap and gaffer taped a tambourine to it and was basically playing drums by bashing on acoustic guitar with a tambour. And it was a glorious afternoon. We were all on acid, and the trees looked fucking marvelous in Irvington Park. And, I've got no idea what the set was like. It went down fairly well.
+	)}$$Pat Fish;;/audio/miracles_interviews;;2025-11-28,
+	)},
+
 
 #define	Oct20.html()
 	${gigHeader(

@@ -27,7 +27,7 @@ const recentNews = [
 		body: <>
 			The audio for the Wildlife, Bath of Bacon, and Scandal in Bohemia segments of Philip Snow&apos;s interview of Pat Fish have been added.
 			<p />
-			Robotic transcriptions for this and other interview segments are also now available.
+			Robotic transcriptions for these interview segments are now available.
 		</>
 	},
 	{

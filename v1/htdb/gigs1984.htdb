@@ -9,6 +9,12 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, The Antichrist (Ramon Destine) )},
+	pat=${literalizeCommas(
+	In very early '84, we came up against the brick wall that people lovingly call reality. And at a gig at Central London Poly, we spent an hour and a half failing to sound check two guitars and two mics. Student student, sound engineer. And the gig just ended in utter chaos and hostility. I mean, looking back, I'd have loved to have watched that gig, but, just not to be.
+	<p />
+	I was too busy shouting at people. Our pal you remember I mentioned the Antichrist last week? Mhmm. Yeah. He was he was on that trip, and it ended up with him dragging a stepladder onto the stage, climbing to the top of it, and just sitting on the top of the stepladder shouting at the audience for no apparent reason.
+	<p />
+	That was a great night.)}$$Pat Fish;;//audio/miracles_interviews;;2025-11-28,
 
 	)}
 

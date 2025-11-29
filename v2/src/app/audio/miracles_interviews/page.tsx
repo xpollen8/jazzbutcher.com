@@ -1095,6 +1095,711 @@ By all means. Let's see if we're still up and running. Yeah.
 		`,
 	},
 	{
+		number: '3',
+		title: 'Scandal in Bohemia',
+		topics: [],
+		media: 'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+3+Scandal.mp3',
+		description: <>
+		</>,
+		body: `
+Beautiful. La dee da. La dee da. There you go. Oh, I remember that's that bloody record, isn't it?
+
+Do you remember that one? After about forty minutes. Yeah. That was infuriating. I've just about shaken it out of my brain, and now it's back.
+
+I remember being, particularly annoyed at the time by that was a some sort of French song, wasn't it? Yes. Yes. That was really annoying. And I think the Muppets did a version of it, which was, you know, classic.
+
+I think the Muppets had already done a version of it. Yeah. I think we're gonna try and cover 83 and 84 today, if that's okay, being, trying to do things in order and all that? Now, see, this is my biggest beef with most rock books. First of all, we see them in the garage knowing nothing and knowing no one.
+
+And the next thing, we see them with a record out and gigs in London and whatever. And for me, the really interesting bit has always been how did they get from the garage to the Garage in Islington. Yeah. There's a bit of a there's a definite transformation, isn't there, between Bath and Bohemia and and what goes on in between? Yeah.
+
+What goes on in between, apart from anything else, is that, I think, what I described in the sleeve notes is a Byzantine episode of bass player wrestling, which no doubt we will get to. But yeah. Yeah. It was it was an interesting time. And I always remember the very first day of 1983.
+
+We'd had a little bit of a party, and Eider was up from London. I think Jonesy was there. Her mate, KB, he was there. And on the January 1, we We didn't quite know what to do, so we went and had a curry at the Star of India. I always remember that.
+
+And I remember someone had a copy of the old Private Eye, oddly enough. And on the front cover of Private Eye, there was a photograph of Yasser Arafat. And he was at the time, he was, like, down in favor, and his career wasn't looking like it was going anywhere much in a at the beginning of '83. And so the front cover of this private eye, he was there, and there was a speech bubble going, why don't you throw in the towel? To which Massey Yasser Arafat replied, I can't.
+
+I need it to wrap around my head. That was that's the first thing I remember from 1983. The re fortunately, the recall isn't all quite as total as that. And they're still throwing back, towel head out as in in parliament in the last week or so, mister Desai, our Sikh member from Salal or wherever he's from. Some people can't tell the difference between Sikhs and Taliban, can they?
+
+I mean, what? That that's, that's, poor. That is like I'm sorry, sir, but your opinion is valueless. If you can't tell a Hungarian from a Portugese, get out of my sight. So I think, that there's, going back to the turn of '83 then.
+
+Yeah. I think it's fair. I mean, Bath was in the can as it were. We had no idea if or when it would come out. And so at the very beginning of '83, we didn't really exist in any meaningful way.
+
+There wasn't really a we. You know? One thing that was hugely important at the beginning of '83 was, John Kale did a solo concert at a place called The Venue in Victoria. Used to be related to Virgin Industries, I think. And, yeah, he went down there and, like, just solo guitar and solo piano.
+
+And I think about 30 of our mates went to that that night. We just went there totally mop handed. And I swear to God, he changed everybody's lives, really, just to see him doing it. And I can remember saying to, Dave J on the night. I was saying, you know that John Cale?
+
+He can't he can't really play guitar much better than you or me, can he? And Dave is a bit sore. Don't know about that. He's a god. But, I think it is true.
+
+He's not he's not that great a guitarist. But you don't have to be if you got a good song. And this was sort of coinciding this time with the demise of the granddads of goth, I guess. So that was a sort of happy When did they go down? It probably was '83, I think, at some point.
+
+Yeah. Yeah. Because late eighty two, we supported them at the Hammersmith Palais in the face of spectacular hostility. That was really good fun. Yeah.
+
+I imagine it. Because they just hit the charts. So, I mean, a lot of people, they weren't even Bauhaus fans. They were just people who like trying to be fashionable, you know, and picked up their hair and put on a black T shirt and wanted to be whacked about with loud noises. And we went on there, and we did Partytime.
+
+We did Love Kittens. They were like, fuck off. And I was looking down at all the gorillas down the front. Fruity is Hammersmith Palais. You know, he's we'd never played anywhere like that before.
+
+And there are all these traps showing up. For the first time in my life, I thought, this is brilliant. These bouncers, this is brilliant. They can't hert us. Let's do another slow one.
+
+I saw Kevin Haskins after that, and I thought it must he was the only one that I knew. Then I said to him, well, you know, thanks for the, thanks for the experience, Kev. You know, it's nothing to do with me. Turned out to be his brother. Turned out to be Dave watching from a distance.
+
+It was his bright idea to get us on. So that was the '82. And in '83, they pulled a similar trick. They went down to, Hammersmith Palais. They did two nights.
+
+And, again, they brought local supports from Northampton, though on this occasion, not us. And those were the last two gigs. That was it. There's a very weird atmosphere at the time, actually. So, yeah, they would have gone down sometime, I guess, the '83.
+
+And then, Southern Mark Smith, in the '83. Yeah. We re we recorded that the August at Beck in Wellingborough. And it had only really been written a little while before. I think the first the very first attempt at it probably came at Easter that year, because I can remember watching the teatime news alone in the flat.
+
+And a fellow came on, and he said, thousands of people queuing in the rain to meet the pope. And I just started writing it down. There was a whole load of stuff about Lady Di in the original draft as well, because I was basically just copying down what I heard on the news and kinda sculpting it into some shape. And So maybe there was there was shuttle trips as well then. Shuttle trips?
+
+Into space. Yeah. That's probably what that was. Yeah. But the lyric kind of boiled itself down over the summer to where we recorded it, the first version.
+
+And then, of course, it it got recorded again with slightly different words because I thought I'd matured. So Kevin must have been free to play drums and, and Kevin was well up for it. Yeah. And Jones Owen wasn't really on the scene at that point. We had the sort of the very first lineup of the group.
+
+We had a drum machine to do that to the beats. We had Rolo playing bass, Alice playing keys, me and Max, and occasionally the idiot sax player Louie. And, that sort of stayed that way into '83. And then round about springtime '83, Woody's started getting going, wooden tops. Okay.
+
+Yep. Sorry. It takes a bit of remembering, obviously. So the band that recorded Southern Mark Smith was basically it was Rolo, Alice, Max, and Me, but with Kev playing the drums. But that was pretty much the last thing that that lineup did because Roe was off to do what he's, and he took Alice with him.
+
+And that coincided with me splitting up with Alice. And that all happened on the weekend of the September 25 where we were playing a CND benefit in Abington Park. And an interesting thing happened there. Instead of doing the bandy thing, we turned up, and there was Eider had his electric. I had an acoustic.
+
+And Rolo also had an acoustic, but he'd laid it strings down in his lap and gaffer taped a tambourine to it and was basically playing drums by bashing on acoustic guitar with a tambour. And it was a glorious afternoon. We were all on acid, and the trees looked fucking marvelous in Abington Park. And, I've got no idea what the set was like. It went down fairly well.
+
+And then after that, there was a big bus stop because Alice found me with a local punk rocker girl, and she went steaming off in a huff and nicked one of the kittens, which is a small price to pay. That was the death of it. And then through the autumn of '83, Max and I, we'd heard the Jacobites by then, and we liked what we heard. We liked the two guitar, big, dumb, three chord songs. In fact, we loved it.
+
+And so we resolved to go out just as a duo like that. And in November and early December, we did a string of dates supporting the newly solo Dave J. And we started getting halfway decent at that, and it was all quite enjoyable. I mean, there was only the two of us. We could go where we liked and do what we wanted.
+
+But in very early '84, we came up against the brick wall that people lovingly call reality. And at a gig at Central London Poly, we spent an hour and a half failing to sound check two guitars and two mics. Student student, sound engineer. And the gig just ended in utter chaos and hostility. I mean, looking back, I'd have loved to have watched that gig, but, just not to be.
+
+I was too busy shouting at people. Our pal you remember I mentioned the Antichrist last week? Mhmm. Yeah. He was he was on that trip, and it ended up with him dragging a stepladder onto the stage, climbing to the top of it, and just sitting on the top of the stepladder shouting at the audience for no apparent reason.
+
+That was a great night. But after that, Dave Barker comes in and he goes, you're gonna have to get yourselves rhythm section. And that's round about that point in early '84. I was at Max's house one Sunday morning, and we heard hammering coming from the kitchen. Boom.
+
+Boom. Boom. And on going in to investigate, we found this bearded long hair building himself a mini bedroom in the kitchen with some sort of kind of partition of hair. For it was Jones. And, him and him and Max had been at school together, and they they played together before in that in bands in, Oxford.
+
+At one point, they were both in Sonic Tonics with me and John. And so Max decided, oh, well, that's an end to our drummer problems then. I said, well, hang on a minute. Hang on a minute. Because Owen wasn't all out on the drums in them days.
+
+And I was like, well, let us hold on a moment here. He can play the drums on two conditions. One, he gets that fucking beard off. Two, he's only allowed kick drum, high hat, and snare. And so, Owen, was ushered in.
+
+Then, of course, we needed a bass player. And what we did was we stole the guy who'd been playing bass with Dave J on that tour back in November. Guy called Steve Musgrove. Absolutely brilliant bass player. You didn't have to tell him anything.
+
+You know, he just knew where things are going and could play just off the bat inspired player. Played double bass as well, which is glorious. But as a musician, top rank. As a geezer equipped for getting from one place to another by a certain time, not so clever. But, yeah, he he he lasted the early stages of '84, and then Dave got involved.
+
+But perhaps I'm getting ahead of myself here. But, yeah, it it was that was how we went from being a small band full of mates who were mucking about to a duo and then to the sort of genesis of the actual quartet that made Scandal in Bohemia. And Marnie's in the middle there somewhere, the early version of it, the single version of it in January, I read. Yeah. I think we made it in January '84.
+
+I think it probably came out a tiny bit after. Mick Mercer's review in Zig Zag. But soft, what yell from yonder greenhouse breaks? I love my notes. Thinking about some of the, lyrical things in Sweet Jane, the your version of Sweet Jane.
+
+I can't remember the version that we did on the Marnie record particularly, except for Dave Barker getting hold of one of those ridiculous Linn DRum things and going. Sweet Jane. That was all done really, really fast. The whole the whole EP was done in a day. And like the front side, we we took some effort and, you know, put some instruments on and did some mixing.
+
+The b side was really just like me and Eider strumming them out real quick without really any thought. Because we were on dead time in, DeWolf Studios in Soho. Oh, I was thinking of, reference to Sterling. Was there a cat called Sterling at the time? Yeah.
+
+Sterling was the son of Moe. He was a big, stripy orange cat, tomcat, who was a very good friend of mine. Stayed with me for a few years. And, yeah, he gets a name check there. And, just, just for completeness, going back to '83 and Southern Mark Smith and, did, I think I know that, again, I was reading online just before we came out.
+
+Did you know someone has written a something like a 34 part blog on Jazz Butcher songs? Is that Michael Whitworth? Yeah. Yeah. It's very comical.
+
+He is, I don't know if he's a professor or not, but he's a a teacher, if you will He is a lecturer, I think. Of English at Merton College where I went. And when we did the He's got a thesis going on there. It's yeah. I've read it, actually.
+
+It's quite flattering and largely very astute. He he he generally when he makes a what's the word I want? Well, a short word is guess. When he a conjecture. He generally seems to land it about right.
+
+He was very good on Scarlet, I remember. But, you know, he's bringing a level of textual analysis to it that most people don't really bother with. Yeah. So he describes, sort of Mark Smith as an oxymoron, which I suppose is the point, isn't it? The Yeah.
+
+I I used to say to people it's like a wet desert. Yeah. Yeah. And did, Mark was Mark himself ever ever aware of it or comment on it? Oh, yeah.
+
+Few months after it come out, we got a letter, And it was on this kind of DIY letterhead that said, The Fool, Prestwich. And it began, dear jazz butchers, we are still working your hard to read out, but it is very pleasant work. Signed, the fool. Now what was worrying about the word that we couldn't read is it started with r e. And for about two days, I thought it said revenge.
+
+Turned out it was record. We're still working your record out, but it's a very pleasant work. And He wasn't after you after all. No. And in fact, it's quite the opposite.
+
+He, over 84, we got quite a few supports with them around about the country. It's just and he was always nothing but friendly and gentlemanly towards us. He was a sweetheart. I can remember bumping into him at a gig once in, London. We were having a pint, and he said I told him, oh, yeah.
+
+We're going into Europe. We're going on a tour of Europe. And he put his arm around my shoulder and said, always get your carnet. Probably your what? Sorry.
+
+Your carnet. You know what those are. Right? Okay. Well, a carnet is a marvelous thing.
+
+And, And, of course, we haven't had them for years, and musicians at the minute are all grumbling about this Brexit insanity because they think they're gonna have to have their carnees again. And a carnet was a massive great sheaf of papers that you carried in the van. And listed upon it was every instrument, every lead, every stand, everything that you were transporting. And every time you hit an international border, Philip would have to park up the motor car, take this Carnet thing into an office, and get a geezer to go through it and stamp it. Boom.
+
+Boom. And this proved that we hadn't been buying gear and moving it from country to country and avoiding duty and stuff, you know. And, yeah, if you didn't have one, you're an idiot. And, the great thing about the carnet, of course, was that while Phil was in the, in the cupboard doing it, it gave all the sort of junior customs officers and junior border guards the opportunity to notice that there were some funny looking musicians in a van that they could poke around. Yeah.
+
+You're automatically targets, I imagine, at most borders. That's it. And you're sitting there helpless. You know? You're just stuck in your van with nowhere to go, and these guys are poking through the window.
+
+Should we should we do them, boss? And, the funniest one of that there are there are a couple of amusing ones, but my favorite one was, at the Italian border coming out of Switzerland. And we're at the border to Italy, and Phil was off doing the papers because we'd always got a carnet. And ignore that. I shall.
+
+And, while he was in the shed, sure enough, two very, very young Italian champs in enormous official coats started nosing around the bus and, like, looking in through the windows. And he was, oh, good. Here we go. Drop them. And, eventually, one of these kids comes up and taps on the window, and I wind the window down.
+
+It's like, you know, buon giorno, officer o. And he says, you are and I'm about to go, yes, a band. And he goes, jazz butcher? And I oh, yeah. Yeah.
+
+Yeah. Yeah. Here we are. Do you want a badge? They went off wearing little jazz butcher patches on their coats.
+
+So it wasn't all bad. That was like that time we went to America. Did I tell you about that? Coming in in '88, and it was the '88 version of the band, it was the first time they'd ever been to America. I was the only one who'd been before.
+
+I'm gonna fucking break that thing. We could switch to answer phone by now if you had one. It doesn't work. It'll ring. If I answer it, I will just hear and no voice.
+
+The fuck knows what they're hearing. It's usually me saying phone the fucking mobile, you fucking cheapskate. Right. Off is the direction in which we have fucked, is it? Sorry.
+
+It really, really winds me up then. Because it's so pointless. There's no point picking it up. You won't hear anything. You know?
+
+It's just rubbish. It's usually Mulreany phoning from Australia. It's like he's got my mobile number. Oh, what the fuck? What?
+
+Genius. This fucking Dhiren. Absolute genius. Do you need us to stop? You're right.
+
+Sorry? Do you need us to stop? You're right. Sorry. Hello.
+
+Hello. Hello. Hello. Are you well? Yeah.
+
+Yeah. Good. Thank you. It's very good. Yeah.
+
+Sorry. I hope I didn't fuck your recording. I just, was thinking I could be out there for a while. Yeah. I I I don't really know the answer.
+
+I mean, I think the thing to do is to hammer on the door, but of course if we're talking, we aren't necessarily even here that. I think it's the, just a bit of distance. Not to worry. I'm in now. Good.
+
+Terrific. Alright. Oh, I've got totally lost track of where the fuck we were now. I don't don't know what's going on. Off on the Italian border.
+
+Oh, that's right. It was the whole business of getting you carnet, cock. Yeah. Yeah. And and, and some, American border incident or Oh, how it's happening.
+
+Yes. That's right. '88, the beginning of that tour. No one had been to America before except me and filled a tour manager. And we came to JFK.
+
+And you know at JFK, like, you clear immigration and all that nonsense, and then you go down this massive long corridor before you hit customs. And we were going down there, and I was kinda, like, leading the way as it happened just by chance. I was at the front. And I saw further down the corridor coming this way, a fellow in customs uniform. And I could see that he was taking an interest.
+
+I could see that we'd been clocked. To use the local vernacular, I knew that we had been made. And, nothing I can do. I've gotta go this way. He's coming that way.
+
+Nothing we can do. And as we get closer, it's very clear. He's looking me up and down. He's checking me out. He's looking at the lads behind me.
+
+So, oh, Christ. On a bike. Now what? Comes the moment where we meet. Sure enough, he stops me.
+
+Sure enough, he speaks to me. And in front of an astonished band just behind me, he goes, gee. Are you guys still on creation records? So, you know, sometimes you get a pleasant surprise. Yeah.
+
+I think when we last went into when we went into into America this year, you know, we were a little tired after a fourteen hour flight via Phoenix, Arizona for some reason. And, of course, being starved deliberately starved of oxygen to save money. Yeah. And and the the customs guy, said, in effect, cheer up. You're on vacation.
+
+You know? Because that's real quite serious. And you you do put your serious face on when you go through security, don't you? Sometimes. Did did we do the great Canada problem?
+
+The great Canada airport terrorism incident? Well, I guess, you know, I was saying we should talk about the work and not the funny stories. Right? But these things come up, don't they? Yeah.
+
+They add color. Yeah. Canada was the funniest one. Like, god knows how many times I've told this story. It was which tour?
+
+Which tour? Which tour? It's not making any sense. It was either '89 or '90. And it would have been '80 oh, or was it '92?
+
+I don't think it was '92. It was '89 or '90. It was the Mulreany Mulreany O'Keefe type lineup. And we were in Ottawa. And I don't know if you know it, but we were on, Mercury label up there.
+
+So it was our only brush with major record labels. And in terms of publicity, they used to work my little socks off. And as we were setting up for the Ottawa gig, one of the reps from Polygram said to me, oh, Pat, is it alright if you, just drive directly to Toronto tonight after the show? And I said, why? Well, they've got a slot for you on, on television in Toronto at 03:30 tomorrow afternoon.
+
+I said, for us? She said, no. No. For you. Just me.
+
+Yeah. So you're asking me to make my band, who've already checked into their hotel, by the way, you're asking me to make my band abandon their hotel beds and drive through the night 300 miles or whatever it is to Toronto just so that I alone can appear on television. They're all gonna get mucked about so that I can be on television in Canada. Is that the story? Yeah.
+
+Yeah. Is that okay? No. It's not okay. And, record company Bird looks a bit upset and crestfallen.
+
+You know? I said, no. I'm I'm not doing it. That's that's the sort of thing that makes bands fall out. I I will not do that to my band for the sake of just what appears, at least, to them to just be my ego being on the telly on my own.
+
+You know? I'm not doing it. And I thought, I know what will shut him up. I said, if you want me to do that, you'll have to fly me. And I thought I thought, that's it.
+
+Game set match. She can fuck off. We'll do a gig now. Yeah. She came back with airplane tickets, didn't she?
+
+Just for me. Just for me. And in due course, I was delivered to the airport in Ottawa at something like 07:30 in the morning, still drunk. And I negotiate my way through checkin. I negotiate my way through security.
+
+I negotiate my my way all the way to the final little desk in the little glass shed before you get on the airplane. And at that point, things went a bit wrong. There was this kid. Oh, you took it this time. I did.
+
+It was a bloody godsend. Good. Makes life unbelievably easier. Yep. Figures.
+
+Yeah. Yeah. It does. But I just thought that the sort of impracticality of having to lock it up places and Mhmm. Wander off would be too much of a faff.
+
+But actually the distance is so fucking stupid that, actually it makes an enormous difference. And, I got the front end of an Aston Martin to bring home. That was that green shit you were carrying? That was that green shit that I was carrying. It's an Aston Martin.
+
+Great chunks of carbon fiber from the front of an Aston Martin. Bloody hell. Yeah. Mental. They were just slinging it in the bin.
+
+And I said, woah. Don't sling that in the bin. I'll put that on eBay. Bloody really lovely on my wall with my Porsche wheel arch. Anyway, that's the level of sadness, but I got a lot of jealous looks Okay.
+
+From people. It was nice. And, they're just nicer meetings. It feels like racing in the way that racing used to be Yeah. At the slightly smaller events.
+
+It's all run by Spaniards as well so it was super sorry about that. So it's all, yeah. Super friendly and, really nice. And you could wander in right onto the pit lane. Right.
+
+Right in and speak to drivers and mechanics and things like that and watch the pit stops actually happening right there, which, Under your nose, sort of thing. Which is great. Really great. Cool. And I managed to have a quick one with Darren Turner who I've tried to now, but most races that he's at, I missed him last week.
+
+But, Is that Darren Turner of Darren Turner Overdrive? It is Darren Turner of Darren Turner Overdrive. He, ain't seen nothing yet. So I've heard. Yeah.
+
+Yeah. Yeah. That's that's that's what he says to me all the time. But I've seen him too many races now. He's certainly seen something.
+
+He's certainly a lie. It must be a lie. But I don't mind him lying to me. He's a long one winner and I'll yeah. So he comes with innate forgiveness.
+
+I'm gonna take my, shit talking nonsense elsewhere and leave you to it. Super though. Lovely to see you. And I will catch you in a little bit. I'll catch you in a while.
+
+Yeah. Lovely. Thanks. Yeah. So there I am on my pilgrimage to do telly, severely weakened by my experiences, and I make it all the way to the little desk just before the aeroplane.
+
+And there's this little lad there with a kind of training mustache and an ill fitting uniform. And I've got my instrument, obviously, in the case, and, I pop the instrument pop the case down, and he says, oh, could you, open the case, please, sir? I went, yeah. Sure. Dink.
+
+Dink. Dink. Opened it up. Fender El Rio 1985 vintage lying in the case. He looks at it and goes, what's that, sir?
+
+At this point, my patience deserted me. And I said to him, that young man is 14 kilograms of prime checkers with vacuum Semtex explosives. For as you can see, I am a mad Iranian Mullah, and I'm going to blow that little motherfucker out of the sky. To which he replies, could you stay there please, sir? And wanders off.
+
+Like, you know, if I genuinely was a terrorist, he probably hadn't done the right thing. Right? So he goes wandering off, and he comes back with one, two, three mounties. The little red coats, the baggy pants, the silly little smoky bear hats. Yep.
+
+He's got mounties, and the mounties take me away to the funny room. And they say, sir, you can't be making jokes like that. Hey. It's not responsible. Hey.
+
+At the airport, it's not funny. Hey. No. That's not funny at all, sir. No.
+
+And I'm getting all this rah rah rah rah. And they don't seem to have any particular serious intent. I'm not particularly exercised. I'm just sort of like going, fuck's sake. The boy was an idiot.
+
+You know? And I said, well, we're we're gonna have to go and fetch the dog, sir. We're gonna have to go and fetch the drug doggy. And I heard you. Because I knew I didn't have any drugs on me, so I wasn't bothered about this.
+
+And so off they fucked. And not long after they'd fucked off, airplane took off, leaving me in the funny room. And I waited and I waited. After about a quarter of an hour, I thought, this is a rum do. So I went and tried the door, which was open.
+
+So I let myself out. I walked back the way that I came back into the front hall of the airport without being bothered, went to a payphone, called up the record company and said, you better send a car. And, of course, they did send a car, which is great because I could get in the back seat and go to go to sleep until we hit Toronto. All for the sake of some fatuous five minute appearance on some stupid Canadian version of MTV with someone who was completely uninterested in what we were doing anyway. You know?
+
+But, yeah. And you didn't have any vid you didn't even have, video to play, I guess? Probably not. I mean, I don't know. I mean, we used to have a few videos at the time.
+
+We did videos for Spooky and Girl Go and couple of other things. But I can't like, you you know, I mean, that's just advertising. I'm not concerned with advertising. I I make it. You sell it.
+
+You know? I'm not I'm not really concerned with publicity. Obviously, because you're the lead singer and the songwriter, it all falls on you. And one reason I was so keen not to put the band out was that if you're in the band and you're not the lead singer, and I know this. I've had conversations about this.
+
+If you're in the band and you're not the lead singer and you're not doing all the publicity, every time the lead singer goes off with some bird from the record company or some local DJ or whatever in a sports car, Everyone in the band just knows that he's having a little ego wank and, you know, it's like, oh, look at him swanning around like a bleeding pop star with his record company people in their open top motor. You know? Actually, I'm going, mate, if you don't get me back for soundcheck, my band are gonna fucking beat me up. You know, I I didn't wanna be anywhere. I was I was there to do gigs, and soundchecks are the most important part of the gig, really.
+
+And, they used to drive me up the bloody wall. I'm just I used to spend the whole time in a state of sort of frustration and rage and people going, hey. See, what about your new record, What about it? What do you wanna know? Why am I here?
+
+I should be at soundcheck. Really? What's your soundcheck, You know? Fuck. Going back to, the transformation from, you know, garage band to Sorry.
+
+Yeah. We to professional musicians. I was Got an issue with that. Of of the, the b side to Southern Mark Smith. I don't wanna get into, every single covering every single trap, but we'll try and see if we can do it during the course of the conversations.
+
+So JB versus Count Dracula was a was a bit of a another comedy record, comedy track. How do you see that? Yeah. And that had a video. Ah, now that yes.
+
+The video for that. That's a good story. Yeah. I think the inspiration for the tune was a dream that I had, and it was a great dream. It was early twenties kids' typical house party in a regular house like this in Northampton.
+
+And, you know, there was a a room of people playing music and dancing. There was a room of people sitting around watching TV and taking drugs. It was a just little typical kids' house party. And, I went to this thing, but it being a dream and everything, the bloke who came to the party with me was none other than Count Dracula. And it all it all ended up I can remember this like I was there.
+
+It ended up that we were in the in the drugs and telly room sitting in a darkened room, smoking too much spliff, watching a Dracula movie on TV with Count Dracula. And, I don't know. I mean, I really like that idea of, you know, they used to get things like scientist versus the evil vampires, for example. Close enough for rock and roll, isn't it? You know, like, scientist always had dub dub dub albums with mad titles like that.
+
+And so I always wanted to sort of you know, because I I I still felt very divorced from the jazz butcher. I still thought of him as, like, this enormous African bloke. Didn't didn't really connect the Jazz Butcher with the pasty white geezer from Northampton. You know? That story wondered, today whether it was a bit of a coincidence that, you know, you're record you're you're recording songs about Count Dracula with with a quarter of the of the granddads of Goth.
+
+You know? Kev was well into that one. There's a good story about Kev on that, actually. But, damn, I nearly I nearly had something important to say there, but I just derailed myself. The Cramps.
+
+That's what I was gonna say. You have to understand that in the 1983, Dave Barker was very clever, the Glass bloke. He was very clever. He used to bring us cassettes of shit to listen to, whereby he sort of programmed us. And we'd spent the summer I especially had spent the summer listening to the Cramps.
+
+And I think that's where I got the idea of a stealing wild thing, which is, of course, what a Southern Mark Smith is. And, also, that sort of rockabilly beat that you get on Count Dracula. And the daft 1950s caveman chorus. Again, that's this is me taking piss taking the piss out of how Hollywood and the sort of mass media see music. Like, you know, I was saying, like, Chinatown is full of stuff like that.
+
+And the the the again, this was like, you know, like, let's let the ceremony begin. No. No. No. No.
+
+You know, that that yeah.
+
+It was a sort of collision between the Cramps and and hammer, which, of course, I've grown up with because of Terry. So, yeah, that was the inspiration for it. But Kev played the drum part, and it was all tom-toms and snare. Like, when we we put it down live and, you know, Kev, it was also a boom, check a boom, check a boom, check a boom, check a boom, check a boom, check a boom, check a boom, check a boom. No real high-hats or cymbal involved.
+
+And so we got that down and get happy backing track for that and we're doing bits of dubs. And Kevin said to uh Derek Thompkins the engineer proprietor of Beck.
+
+He said, you know, who'd been recording Bauhaus since day one. That's where they did, Bela Lugosi. And Kev says to Derek, Derek, I I just wanna I wanna do a dub if I can. I just wanna, like, get the old rivets cymbal, you know, and just run it all the way through. So, like, give it that kind of old fifties rock and roll sound.
+
+And Derek, who even then was quite an old boy, turned around, and he said, over, Dub? Over, Dub? You can't even play the fucking drums, boy. The rest of us were like, you can't talk to him like that. He's been on top of the pops.
+
+But, of course, he could talk to him like that. You know? Because I I think I said, didn't I, that, the only reason that Bela Lugosi is dead is in Bossa Nova is that it was the only beat that Kevin knew at the time other than just rock one. And that's you know, he'll tell you the same thing. I'm not I'm not being a gossip there.
+
+It was he had two beats, and it wasn't gonna be rock one. So it had to be bossa. But, yeah, there was Derek, you know, two or three years down the track after they become quite successful. You can't even fucking play the fucking drums, boy. But he let him do it.
+
+But and but then by April, there's Roadrunner and Rain and and Drink. Right. Well, this Rain, Yeah. And and and starting to starting to sound quite tight because uncle Dave's on the roster. Well, I mean, to be fair Or it it to be fair, Rolo, who preceded him as bass player, was I don't think David have too much problem with this.
+
+I think that at the time, at any rate, Rolo was a better bass player than he was. I would say Rolo's a fantastic bass player. He's completely wasted bashing that acoustic and singing. He's a brilliant, brilliant bass player. He's like he's got that spring like Horace in the Specials.
+
+You know? He's just got a fantastic spring. But suddenly in April '84, though, those recordings I felt. It feels like a like a professional ensemble. Not you know?
+
+No disrespect to the previous. Well now, same studio, back again. Yeah. And it is funny because, like, as I say, end of January, the dream of doing it acoustic in public is kind of collapsing around our ears, and we're being told to get a drummer and that. And then we do a few gigs with Mazi on the, on the bass, and we're starting to make little inroads.
+
+We we got gigs with him. We were, like, played the Fridge in Brixton and places like that. So we were starting to make inroads as a quartet even then. And Dave, by then, was socializing. And, the idea was that Dave would produce our next record.
+
+That was that was the plan. But I think it was actually after that Fridge gig that Muzzy had been such a handful just to get him there. It involved using up my lunch hour at work. I had to go out of work, go to the station, buy a ticket, catch a bus, find Muzzy, put the railway ticket in his hand, and then go back to work. That was what was going on there.
+
+And, it just became too much hard work to keep Muzzy in the band, really. And, you know, it's not fair to question his commitment because he was only a sort of hired hand to begin with, really. He's only sort of, like, checking it out. So, like, it didn't feel like we were turning him over by leaving him behind in any way, and I don't think he was that concerned. But then a new bass player was required.
+
+So the man of whom we had stolen Massey ended up being the bass player, and that's how Dave came in. And, yeah, April '84. You see how quickly all that happened? But, yeah, we had been we had sneaked into London once or twice to do proper gigs by then. And then when Dave joined, obviously, that got a lot of attention because he'd been in Bauhaus, and Bauhaus had been in the top 20 sort of thing.
+
+You know? So, obviously, that did a lot of good for our public profile, if you like. And did you choose to release a cover for sort of cynical? Well, this I I I think we can I think we can genuinely lay this one at the door of Dave Haskins because you got to remember that that one of the last things the Bauhaus did was to put out that copy of, that cover of Ziggy Stardust? And I can remember them saying in public, and I can remember Dave saying in private as well, we've been knocking on the door at a chance now for a couple of years.
+
+We decided to stop knocking and kick it in. Yeah. And I think Dave had basically come into the band and decided that we should do exactly the same thing Yeah. With Roadrunner. Here's a formula that Yeah.
+
+Might help. And, you know, it's a jolly tune, and we all knew it. And, so it got recorded. Yeah. And some of the, variations, lyrical variations fell in love with Blackthorn and Northampton.
+
+Yeah. Well, you know, you wanna it's not a question of making it your own, but there has got you know, you've gotta have something of yourself in it. And, yeah, that space in the middle. And that's a that's a true story. Max did actually manage to get completely lost, just fall off the map just traveling from Wellingborough to Northampton.
+
+And, he's famous for his poor sense of direction. I remember once in Bristol, we walked out of a house to go somewhere, and he turned left, so I knew to turn right. It's as simple as that. And the Sikorsky's from hell. Is that a is that a Richmond a rip thing, or is that an invention?
+
+The Sikorsky's from hell goes back to me and Rolo taking acid in the front room at Landau Road in Clapham. And there had been a story on the news about a Sikorsky helicopter that crashed in the English Channel somewhere near the Channel Islands And tripping our brains out fiercely at about 07:00 one evening, we had a picture rather in the manner of a heavy metal album cover of this flaming Sikorsky helicopter with fangs reemerging from the seas. It was Sikorsky from hell. And it was at a gig in the '83. Oh, this is a really important gig in our history, actually, but I'll go into that later.
+
+At this gig, Max was on holiday. The sax player was on holiday. So there was just a drum machine, Rolo, Alice, and me. When you think that Alice and me couldn't really play, this is quite a challenge. Oddly enough, that was an evening where that same evening.
+
+Fucking hell. It's all coming together in my mind. I'm sorry it's so fragmentary, but you'll see it when it's all down. This is July '83. It's the Ad Lib Club in West London.
+
+Nobody's there. Actually, no. That's not true. That's not true, but a small crowd is there. Among them, Kevin Haskins.
+
+And we do this gig. There's no Eider. There's no jazzy sax player. And all we've really got to go on is, you know, a reliable drum machine, a top bass player, and enthusiasm. That's all we've got.
+
+Goes a long way in enthusiasm. And, also, we looked fucking cool, Wish it a weird thing to say about yourself, but we did that, like, by accident. And one of the things that we'd done in a sort of punk way is that Rolo had taken a sheet of A4 and a Sharpie, and he had written on it, Sikorsky's from hell, and shoved it on a mic stand where the punters could see it. And it's just a shitty piece of paper with Sikorsky's from hell. And the most beautiful thing is he hadn't even spelled it right.
+
+He put Sikorsky's from hell. And I Sikorskis from hell. Yeah. Practically. Yeah.
+
+Yeah. And I just loved that. And, yeah, because we just had, like, nothing to go on but enthusiasm and punk rock. We just went for it, made a filthy racket, had a really good time. And then at the end of it, Kevin jumped up and played the drums on Roadrunner, which is probably the first time we've done Roadrunner out.
+
+So that's '83. So it'd been around a while when Dave decided to kick the door in. Oddly enough, it didn't work because, we had very few defenders in the English music press at that point. There were some nice people at, Music Week. They used to say nice things about us, especially about that gig in July at the Ad Lib club.
+
+It was a really important night, actually. We just didn't know it at the time, and it really pumped us up. It it took away all the sort of initial faux jazz stylings and just stripped it down so that we could kind of rebuild on that model when Max came back from his holidays. We were sort of, like, ready to say, well, it's like this now. You know?
+
+And, so that was all that was all very good. But one of our few defenders in the sort of public music press was Mick Mercer and the Melody Maker, and he also wrote for Zig Zag Woods. He was the editor of. And we we we put out this the Roadrunner single, and we thought, well, you know, Mick will back us. Turned out Mick really dislikes Jonathan Richman.
+
+And, his review of our single of Roadrunner concluded with, it may be sunny outside, but in my heart, it's pissing down. So we totally let him down on that one and, didn't quite get the support we were hoping for. I, I wondered, but I think my research, my rather poor research before I came out today, made me realize that what I thought for a while about there being some Heseltine Westland helicopter scandal connection with the Sikorskis. Uh-huh. I was wrong because that wasn't Then it was too late.
+
+Yeah. I was 85 or 86, I discovered today. Yes. It was the '85. I can remember hearing it on the radio.
+
+Were in the news quite a bit. You know? Yes. Now this this predates it, and, I don't even know if the helicopter that crashed was a Sikorsky, but It's a good name. We were on acid.
+
+We were talking helicopters, and we knew that Sikorsky's were helicopters. So, yeah, the Sikorsky's from hell. I I I really like Rain. It's one of my favorites. Oh, yeah.
+
+Yeah. I and and that's that sounds feels like a quite grown up pop record. I always think of it as a rather juvenile pop record. I don't sort of stands the test of time quite well. I can remember writing it.
+
+I I came walked home from work to Birchfield Road where I was living in the upstairs flat, and I literally walked in, picked up a guitar, and started I'm just hitting D and G. You know? No big deal. But it just kind of fell out, and I'd been listening a lot to various Lou Reed acoustic things, bootlegs and that. And, I felt somehow as I as I put it down on the old Amstrad, on the old sort of one track, you know, as I as it built up, a sort of drone thing started happening.
+
+And I was thinking, oh, this is this is Velvets. This is like, I was talking to Ed who'd been reported dead by some mutual friend, Wild Child. And so I thought, well, I'll pursue it and chased it down. And I think, you know, by suppertime, it was it was in the on the cassette. It happened real, real fast.
+
+And I I do sort of feel that some of the lyrics show that they've been written real real real fast. And I've always wanted to change them, and I've never got around to it. And, of course, the in the middle has complete lift of, what Rolo was doing at the time. He had a song called Good Sing, and that was kind of slow and loping in African. It was like, But, basically, the vocal line is just a is just a lift.
+
+And quite often, we'd be singing it live, and someone would get in the gap and go, good thing. Just to let them know that we knew. But, yeah, I mean, throw throw away pop, really. The and the first drinking song. Ah, yes.
+
+Yes. If it weren't for heavy drink, he would never play sweet Jane. Yeah. Marvelous. I remember the afternoon he brought that to me.
+
+I I did write a couple of the lines of the lyrics, actually, but I can't really remember which ones. I think the one about going astray and all the parts from here to Mandalay is probably my work. But, yeah, he'd he'd got the whole thing in the can, basically. And, yeah, that was nice. Bone.
+
+Ah, rum boom. Who plays the trombone? I don't know the guy's name. We phoned up Louie, the daft sax player, who'd got some mates. You know, he used to play in jazz groups and soul groups and things in a horn section.
+
+And it was I think it was Dave's idea. It's like, let's let's get some, like, you know, Memphis style horns on it. Just go wap wap wap. And so we spoke with Louis, and he organized a trumpet player and a trombone player and himself to come up from London. And they wanted £40.
+
+£40. It's a lot of money. Well, it was a it was 84. But even so, £40. Three of them.
+
+A 100 miles. You know? And I was talking to Dave Barker on the phone about this. I was going, yeah. We wanna get horns on it, and we've we've organized it.
+
+We've got some guys. What do they want? They they want £40. Don't know about that pushing the boat out a bit with me. So a sort of tug of love started to take place.
+
+And eventually, Dave conceded the £40, and the horn players arrived and went. And, hence, when the trombone solo arrives on drink, hence, I just triumphant cry of, trombone. Because we'd fought for that trombone. Sounds good, I think. It's it's super.
+
+I all I can remember is the guy was called Paul. I can't remember his second name. And, that there's a bit of a connection. You know, obviously, there there's a sort of drinking song song about drinking on the scandal as well. And, Oh, the Soul Happy Hour.
+
+Which, I was thinking today, lyrically, is, you know, dated by both the SDP and Quinn and Collins. Yeah. Well, that record really annoyed me when they did, Pale Blue Eyes. I just I just thought, why are you big girl's blouses fannying about with pale blue eyes? You've got quite enough songwriting talent between the two of you.
+
+What the fuck do you think you're playing at? I expect they thought they were gonna kick the door in just like Dave did. But, there you go. No. That that really bugged me, that record side.
+
+That can be anything, that line, when I'm singing live. And, of course, you know, you can give them to the SDP. It's long been you can give it to the Spacemen three. Basically, going, I suppose, you know, the best things in life are free and, well, so are magic mushrooms. You know?
+
+Those were the days when we thought political parties had some longevity about it. Not so much these days. I never thought the SDP was gonna have any longevity about it. I'm not a man for splitters. Let let alone the independent group.
+
+It's just like the waiting room for joining the Liberal Democrats, ain't it? Yeah. What a load of rubbish. Change UK. I think you'll think you'll find that particular syllable has been a bit worn out the last ten years, kids.
+
+You know? And, like, what do they wanna change? Nothing. They want it to be 1998 forever. You know?
+
+Go to hell. Chuckarumano. What a fucking disappointment he turned out to be. Yeah. Well, my wife, not so secretly fancies Chuckar and thinks that, you know, he he, you know, he could have been the salvation, you know, of of the country, let alone, the Labour Party.
+
+You know? I think a lot of people used to feel that way, but it just goes to show the difference between perception and reality, doesn't it? I I think I think, it it's it's because, my wife thinks that, probably quite rightly, that, party what politics generally is about is about the good looking faces. You know? I was having this I was having this exact conversation last night with the chair of the Northampton South Labor Party, how it all goes back to, the Kennedy Nixon TV debate in about 1960.
+
+Yeah. And the fact that it was it became a sort of truism of American politics that Kennedy won that election because he was younger and better looking. I have in the past argued that this is conceivably why The US was so opposed to people like Che Guevara and Gaddafi because they were better looking than any American politician. I know it sounds ridiculous, but you've gotta see it from their kind of infantile mindset. You know?
+
+Yes. And and it goes back to the, you know, never trust them politician in a beard. You know? Yeah. Well I think Blunkett Blunkett had sort of similar issues.
+
+Pogonophobia. Walt Disney had that. Didn't like Jews much either. Jews with beards. God.
+
+Bloody hell. Run, rabbi, run. Rabbi, run. Run, run. Here comes Walt with a whole bunch of his flunkies.
+
+Yeah. No. I people with beards. I don't think beards are very cool. When that current fashion for, like, very sort of, like, meticulously sculpted beards started to develop.
+
+Obviously, these things start in London. And I was doing a gig one night in a place called the Betsy Trotwood in Clerkenwell, which is quite a cool little pub. In fact, they were so cool that when I walked in to get a pint, I looked at the chap behind the bar. I all I could conclude was that he was getting ready to join captain Scott on his trip walking across the Antarctic in a stout pair of brogues and plus fours. You know?
+
+And he got this ridiculous bushy red beard and the rest of it, and our eyes met. And I couldn't help it. I laughed in his face A polo nose at all? Then? No.
+
+No. No. Much more elaborate than that. I think there was a crew at involved. Honestly, gen gentleman Jim explores the Antarctic.
+
+And even though he's, like, 24, I just laughed in his face, poor lad. I just couldn't believe what I was seeing. I've got a great picture of, Henry Hudson, which and I I think I must have looked him up because, I quite like the Nico song. I think she must have written a song about Henry Hudson. Uh-huh.
+
+Frozen wastes. And, and I've got a sort of little engraving of of Henry on on its last voyage with a with a young with a cabin boy at his feet. Good. The raw guy. But, yeah, he has a great beard.
+
+Yep. Yep. So I I can understand polar explorers having beards. I mean, you know, you might lose your scuff. It might blow away.
+
+So, Southern Mark Smith, August '84, Leamington Spa, Woodbine or Woodbine Studio, at least. Woodbine. Yeah. We went to Woodbine. And John A Rivers.
+
+Yeah. We went to Woodbine for the we'd heard, the Jacobites record had been done there. You know, the one with Kings and Queens and Big Store and all that. And, we loved that. And also Dave J, he'd been doing his Crocodile album more or less sort of he doesn't record like us.
+
+We we we tend to get a bunch of songs together, steam into the studio for two or three weeks, and make the record. Dave tends to have one or two songs, and he'll pop in one studio and record them. And then he'll have a couple more, and he'll go to another studio and record them over a long period. So Crocodile Tears was kinda getting made in the time that he was joining the band in that. You know?
+
+And he did a song on Crocodile Tears called Slip the Rope, which, again, was recorded at Woodbine and, again, just had this fantastic, massive acoustic guitar sound. Yes. Quite, sounds a little like, an ocean. You know? It's a Yes.
+
+Yeah. No. No. Tidal. Exactly that.
+
+Yeah. Which, Which, of course, is exactly what Dave was looking for. And, when the reissues come out, there was a one of the reviews mentioned John Rivers, and it said, John Rivers, whose chief skill in the early eighties appeared to be taking garage bands and making them sound like they're playing in a canyon. Well, we wanted to be in a canyon. And, of course, the funny thing is with John, on that record, it's quite clean and tight.
+
+It's not canyony at all. And indeed, when he did go canyony on us on Distressed Gentlefolk, none of us liked it because he was using brand new very early digital reverbs instead of proper warm analog reverbs, and we didn't like it. Especially me, I didn't like it. But it was my own fault because I was going, ah, slander everything in reverb. And it's like, oh, but your reverb sounds like shit, mate.
+
+No. Not quite shit, but you know what I mean. But yeah. And, of course, he did Felt as well. And, again, made them sound like they were playing in a canyon.
+
+And he had also recorded Ghost Town by the Specials. And he was insanely expensive by our standards at the time. I don't know how we got it together. And, indeed, over the over our association with John Rivers, there was a lot of sitting around listening to John complaining about how Dave Barker or Alan McGee hadn't paid him yet. Yeah.
+
+John's quite a tidy person, and he likes things sorted out, eyes dotted, t's crossed. Where's my money? And he wasn't shy of tell letting the band hear how he felt about that even though, of course, we had no control of the situation whatsoever. So it's quite actually his least endearing trait probably, but most studio engineers will have a whinge about their unpaid bills at some point. And that and but the the this feeling that you're with a, you know, a professional, or you you may maybe had, you know, you were in a different sort of echelon of of, techies.
+
+Well, it was it was made made you feel that the need to rerecord Smith, Mark Smith and Marnie and Well, the Southern Mark Smith had mutated right at the beginning of the process that led to scandal. You remember I talked about that gig in September, the CND one in the park? That was the first time that version of Southern Mark Smith got played, and we immediately preferred it to the boom boom boom version that we put out because it sounded a bit like Slip the Rope or Sudden and Cussworth. It was much more that way. And you know the funny thing?
+
+I love Suicide, the band. And when Alan Vega died, I put a little thing on the Facebook. I said, like, I know it doesn't show in our music, but you're a fucking inspiration to me, bruv. And, actually, that whole version of Southern Mark Smith begins with us listening to, Cherie Cherie by suicide, which is the same chords. It's a Wild Thing again.
+
+And whether Rolo came up with it as a suggestion or which would seem most characteristic or whether Max came up with it by himself, which is not impossible, we arrived at a situation where instead of playing the guitar with a pick with his fingers, Eider was bashing it with a pencil. And at the gig in the park, he did that. I played sort of regular strumming acoustic guitar, and Roe was just bashing on his little imaginary drum kit. And that was the first time we did it, and we liked it. And when Max and I then went on to do those duo gigs through the end of '83, it was a sort of big thing in the set.
+
+So then when the rhythm section joined, when Owen came in and Dave eventually took over on bass, it was, you know, it was there. And it was it was so different to the other version that we just wanted to record it. And we also thought that John would be the man to record it because he's good at making guitar sound all big and spacey. And It's a little organ piece that that you saw that you that you've, you've reintroduced live recently, haven't you? Brought an organ player in what sort of advice into the quintet?
+
+Yeah. Nick Nick Nick Bandy from Leicester, he, he came in. And, yeah, he loved doing that. He was he was a fan of the band before we met him. So, like, he knew all that stuff, and he was just itching to do Smith just so he could go.
+
+And, yeah, that that that that had a lot to do with it, actually. And, also, that simple Hammond intro was incalculably important to the band because when Scandal was done, Dave Barker sent somehow around the world to various people to see what could be found. And they landed in the office of an agency in Hamburg called Jojo Concerts, which is run by a fellow called Joachim Clouch. And his assistant was Tommy Weber. And Tommy took Scandal in the out of its sleeve, and he put it on the office record player.
+
+And he said that as soon as the Hammond come in with a, he was shouting across the office, boss. And, basically, the two of them went nuts for it and brought us over to Hamburg to play a couple of nights where everybody else in Hamburg went nuts for it. And that basically got us into Germany and enabled us to become what we became all because of that Hammond intro. And that was all there simply because John had always been an organ player and had a Hammond lying around in the studio. You know?
+
+I mean, that could so easily have been a guitar part or maybe even a glockenspiel. You know? But there was a Hammond there, so we did it on that, and it changed everything. Just that little intro. Extraordinary.
+
+And it was Dave Barker's idea to call it big return because, obviously, the Hendrix slight return thing. You know? Dave just he loves to flirt with all that iconography, I suppose you'd say. You know? Marnie, is is that just a complete fantasy?
+
+Or or Well, I Are there big cats somewhere in a Here's the thing. Suspense it somewhere. Here's the thing. I think this must have happened subliminally. I don't really remember thinking about it.
+
+But Marnie is a Hitchcock film. Yeah. And the character of Marnie is played by Tippi Hedren. Yeah. Yeah.
+
+Tippi Hedren, in the early eighties, opened a wildlife park full of lions and tigers. And this was sort of announced. And in fact, she made a film called Roar, r o a r, all about how much she loves lions and tigers. So I think this must have got into the old reptile back brain. And, you know, oh, Marnie's got a problem.
+
+She wants to keep lying in her room. And, actually, she was. So although it sounds imaginary even to me, the truth is that once again, it's face it's pasting facts. But it's just sort of come come around the back way to It's it's Tippi. The birds.
+
+There is is that another blonde that that Hitchcock was infatuated by? I think that's Tippi Hedren as well. Yeah. Yeah. Yeah.
+
+They couple of years back, there was a spate of pictures and television programs about how beastly he was to her, weren't they? Yeah. Yeah. Yeah. Well, he's dead.
+
+He can't answer back, can he? Real men from Leeds. Oh god. That section at the end where, like, every line is a different thing was an absolutely nightmare. Well, sometimes, when you because I'm I've dig dug out some of these old things.
+
+I haven't played for a while doing this. And, and, yeah, it always always confuses me. You must have it written down. Well, no. This is the thing.
+
+This is the thing. And those vocals on that end bit, it's not just, you know, we stood around the mic and sang it once. They doubled, then then we do a harmony, then we double that. So there was an awful lot of choir activity, several takes, building it up. And having got down probably I did the I'd have done the lead vocal first, I guess.
+
+So I would have sung all these different variations. Right? And I would have that noted down. But when we went in to do the choirs, no one had written it down, and I'd kinda memorized what was coming next. And in order that everyone would know what was coming next, we worked out a bunch of little signals.
+
+And I can't remember what all of them were, but there was real men from Mars. Right? Mackenzie had decided that the sim the signal for that as we were singing along, you know, would be to go. And I went, and everybody just collapsed in helpless mirth. And that was it.
+
+We had the giggles from that point. So take after take after take after take. And nobody could do it without pissing themselves. It was murder. John Rivers is getting really annoyed with this.
+
+It had to do with Mars and Venus. Well, that was probably, maybe after. Venus and Mars? Men are from no. Men are from Mars.
+
+Oh. Women are from Venus. Probably the I don't book of the eighties or nineties. Yeah. I mean, if that if that was going on, it was going on subliminally.
+
+I hadn't intended that. No. It's I was literally just slinging them out. You know, real men from, oh, Leeds. Oh, real men from Mars.
+
+And not really thinking about it, which is why it was such a chore when we had to sort of double it and redouble it and redouble it. And, you know, every time the signals and as soon as that happened, everything just broke down again. Oh, it's hilarious. You've got Betty Page style freak fridge magnets even today. Oh, no.
+
+That was a thing. That's my friend Victoria from Portland. And I'd never met her. She'd sort of become a Internet friend. And we played one time in Tokyo, and it turns out she's half Japanese.
+
+And she was over there. So she came to the gig. And I had no idea what this girl looked like or anything like that. And we walked on stage in Antiknock in Tokyo. And right down the front, there was this, like, stunningly pretty girl with a really cool haircut.
+
+And she was going, Pat, Pat, it's me. And I was like, bloody hell. And then she reached in her bag and just passed me these two objects. And I sort of didn't really pay much attention about it. It's sort of, well, what have we got here?
+
+Are these chocolate bars? You know? And it turned out to be those fridge magnets. I'm thinking, really cute woman about half my age handing me dirty fridge magnets before we've played a note. Gonna be a good night.
+
+But, yeah, the Betty Page song, what's that all about? It's about Eider, really, isn't it? It's all about just that marvelous little acoustic solo. That took a minute or two. He's not he's not quick in the studio.
+
+Do you know Shakespeare in the Bible? Yes. That Owens. Yeah. Yeah.
+
+And they and they have a song about the big wood when they're on tour with Dave J. And there's a line in that big wood don't come quick because Max don't know the meaning of hurry. And that's particularly true in the recording studio. It's worth it, though. Gwendoline.
+
+Yeah. It was fucking cheap line, wasn't it? Like brewery and fury. I think I think that one's I think that one's legitimate. I passed a I passed a brewery or two in the last day or two, and I thought about fury.
+
+Makes me it does make me kick off. I've got a mate who has trouble saying brewery. He says buery. And library what's he say? Libuary.
+
+He's he's not an ignorant man by any stretch of the imagination. He just can't say brewery and library. Where is brewery? Yeah. Fib you fib No.
+
+I can't even begin to guess. Australia retain the Ashes. Do they indeed? Well, you've kind of had your cricket surprise for the summer already, haven't you, in that first game? I Need Meat.
+
+Easter 1983. I reckon that was out on the town. It's a really important week weekend, actually. It's it's, the one in Big Saturday as well. Easter weekend of '83.
+
+I found myself alone in the flat in Birchfield Road and just at large. And I didn't really know the town well or the people. And, I just had this really, really strange evening with, like, really attractive, really flirty young women, none of whom I took home. But it's it's, you know, it's it's as close to a straight up late fifties, early sixties sex frustration song as you're gonna get to. But using the butcher cover just put it that way.
+
+You know, it's like where's the beef, really? It's like, come on, ladies. It's a bit it's a bit throwaway. I liked the bassline. And then, of course, Dave did the bass solo on the record, which I think is really great.
+
+Whip it on Dave. Yeah. Yeah. Well, he's a he's a deviant glider. He's very, very clever in the studio.
+
+He brought a lot to that session. It's like on Soul Happy Hour, just at the corner before whiskey vodka special brew. Just on the d chord, he said, oh, I just wanna pop in and do something. And, like, you know, we were young and didn't know much about recording. It's like, really?
+
+Really? Shouldn't we get on? No. No. It won't be a minute.
+
+I'll just go alright then. And he goes in, and he takes an electric guitar, and he gets hold of a little tinny amp, and he just puts it on Maso Distorto. And just as the d part goes around at the end of Eider's little guitar solo, he just goes and, like, Rivers is in there and me and Max and and then we're all just gonna, like, really? But, actually, you hear it just as it comes back in. It's absolutely perfect.
+
+Well, what Dave could do in recording studio, we couldn't at that point, was see the future. You know? He could see how this was gonna slot in. We were too young and dumb to know that. Give you an idea of how much learning we did on that Scandal session.
+
+We went in I think one of the first things I think the first thing we tried to play was the Southern Mark Smith Big Return because we figured we knew it from live. You know? And, I can remember after a couple of takes John Rivers coming through on the talkback and saying, you, think it might be an idea if, like, the, the kick drum and the bass guitar played, like, together. Played the part together. And, like, they did.
+
+And instantly, it all fell into shame. Instantly. And it's like absolutely book book one, page one, rule one. Put a kick drum and a bass guitar together. But we were actually into recording our second LP before anyone mentioned it.
+
+You know? That was the level of learning. We went from being, like, ragamuffin to, like, half competent. Yeah. That's what makes it sound so tight, I think.
+
+Yeah. Yeah. I mean, the yeah. Dave's experience helped a lot, of course. And yeah.
+
+Yeah. I mean, it wasn't, it wasn't a difficult session. It was really very fast. We did the rhythm tracks. We all played together.
+
+Then we just kept the good drums and bass. And then Max and I would go in, and we'd do our guitars in the room together simultaneously. You know, I'd just play rhythm, and he'd play lead for the most part. Of course, Southern Mark Smith, that's that's like my first guitar solo at the end there. And I remember Eider going like, blimey.
+
+But it it it was kind of funny because all I really need what I wanted to do is just go like the organ does. And I didn't really have anything else left. I didn't really have anything else to do, but the thing was going on to the fade out. And I was just sort of sitting there just going, and really just hanging on for dear life, not having any idea what I was doing after that initial phrase. You know?
+
+But, yeah, that became my first guitar solo. But, yeah, we'd do that, and then then we'd do the singing and a bit of organ and glockenspieles and saxophones and the yellow plastic organ that I found in the street. I always imagined that Caroline Wheeler's birthday present was Willie. Is it is it not a song about Willie's Caroline Willie's birthday present? What?
+
+Dicks? No. Certainly not. Alright. It's actually about a letter I received from a chap called Cameron Lindo, who was in a band called In Embrace who were also on Glass.
+
+Oh. He still mates with Dave now. I have to see him now. And again, he comes to our gigs occasionally. And at the time, Cameron and I were pen pals, you know, stamps, envelopes, all that stuff.
+
+And he had the most beautiful handwriting. He would write I mean, he must have looked like a crazy lady art teacher, but he wrote in green ink with this beautiful italic hand. He's a bit of an aesthete, Cameron. And he was going out with a girl called Caroline Wheeler who lived in Nottingham. And, he wrote me an installment in the sort of letter exchange.
+
+I I got this letter. It was really quite a long letter. A lot of paper in there. And it turned out that most of this letter was detailing the things that he had bought for Caroline Wheeler's birthday. And, boy, there was a lot of stuff.
+
+Shakespeare in the Bible on Ballad of the Big Wood. Owen sings, it was something used. It was something so big you could give it to Caroline Wheeler. So, basically, what I had, I had a backing track which I put together for Alice, and she'd done some unconscionable tweed drivel over the top of it, and I hated it. And I read this Caroline Wheeler letter, and I was just going, heaven's sake, Cam.
+
+I mean, bloody hell, mate. This is this is the biggest pleading birthday. How big is this birthday present? And something possessed me. I think it had something to do with a couple of cans of special brew, and something possessed me to dig out the backing track cassette for this nonsense that Alice had committed before she split.
+
+And partly out of contempt for the Alice song and partly out of outrage, Cameron's ridiculous letter about all these birthday presents, and partly out of just sheer special brew, I just embarked upon this heinous, heinous thing. Have you ever heard the original Caroline Wheeler's birthday present? I can't remember. Maybe. The the bedroom tape.
+
+Yeah. I do I think I do have some old bedroom tapes, but it's been a while. It's on I'll tell you what. It's on the b side of the seven inch Armani, and that caused trouble in itself. But, yeah, it was it's basically just me, nasty drunk, snarling and shouting and carrying on into the cassette player.
+
+And when we went to do it at Woodbine, it was a sort of question of, can we recreate something as malevolent as what was committed on the cassette? I think we did alright. But it was it was as close to a jam as anything on that album. Nobody really knew what the fuck was going on at any point. Must be my dirty mind then thinking.
+
+Some are bigger than others. Yeah. I see what you mean. And this is what we have for Caroline. See what you're saying?
+
+Actually, I I have a friend who who was a comedian, and I can remember a gig in 1991. And Caroline was there, and he was there. And he spent pretty much the whole night hitting on it. And I can remember at the end of the night issuing fourth from the club just in time to see Caroline Wheeler kicking him in the pool. It's a funny night, actually, because he he got a mild kicking off her.
+
+And, I got a very severe kicking off a big Iranian bloke not long after. And then No. I was defending the honor of my recently my recently ex wife. It was a very, very, very frenetic evening. It'd get a chapter of its own if we were doing the biography.
+
+Yeah. It's justice, but it's certainly not poetic, was the judgment of Piazza. And I read online about the Hell Driver's reference and, Yes. They must be doing 50. Yeah.
+
+Yeah. I love that picture. Yeah. So that was David. Shit.
+
+Here come the Hell Driver. Yeah. We had a lot of fun on that. Oh, and the Bruce Grobbeler Leisure Center Yeah. Which I guess doesn't exist, but it'd be nice if it did.
+
+And and a bit of a throwback to, Bigfoot. They check-in to the Bruce Grobler Leisure Center. Well, yeah, people do check-in. I mean, look at Facebook. People are checking in all over the place these days.
+
+But the Bruce Grobler Leisure Center was interesting because on a Tuesday night in about 1984, I suppose, I walked into my flat and absentmindedly turned on the radio just in time to hear John Peel say this. Well, I don't normally enjoy this band. Not really my thing. But I have to play this because, it mentions Bruce Grobbela. And on it came.
+
+And as far as I'm aware, that is the only time that we got played by that fucking fraudulent, beautiful twat. Don't put that in the book. And what John Peel knew about music was absolutely fit on the end of a fucking biro. It was all John Walters. Are you ready?
+
+The producer. He just, you know, he just told him what to play. Booked the bands for the sessions. And if you, you know, if you look at if you're as old as me, I can remember John Peel wittering on about fairies and unicorns and playing like Tyrannosaurus Rex tracks that would embarrass Mark Boland. You know?
+
+And then I can remember him playing, like, Van de Graaff generator and King Crimson and Genesis and Mike Oldfield. He played the whole of Tubular Bells when it came out. It's all your fault. It's all your fault. And then suddenly, he loved the Ramones and the Undertones.
+
+And then he really lost his way with post punk. And a lot a lot about early jazz butcher was fucking hell. I am so sick of hearing boring goth bands from Southampton playing six eight on the John Peel show. Everything. While some fucking bird from art college wails on about something or other.
+
+But he really liked the Fall? Yeah. He really, really liked He did like the Fall. But, you know, even a stop clock is right twice a day. Right?
+
+And nobody talks about it, you know, when all that when all that fuss was going off about, like, sex pests and Jimmy Savile and all that nonsense. Nobody talks about the fact that John Peel would routinely turn up at Reading Festival dressed in a gym slip and black stockings and a little schoolgirl hat and would rant endlessly about schoolgirls in his sounds column and on the radio. Nobody ever mentions it. Have you seen schoolgirls? I mean, what's sexy about that?
+
+Seriously? I mean, have you seen them? I've been to both the John Peel graves. Yeah. You know, the, The real one and the DJ.
+
+The real one and the DJ. Mhmm. And the real one is in Cumbria somewhere. Yes. I think I've seen that.
+
+It's just a very elaborate, with, obviously, a sort of hunt scene on it. Yeah. And, and and the DJ's is in Suffolk. Yes. And there's there was a bottle of wine on it.
+
+Says it all really, doesn't it? Suffolk. That well known rock and roll hot spot. You know, there's Chicago and Detroit and Memphis and Suffolk. Yeah.
+
+Where Ed Sheeran's from. You know? That sort of rock and roll capital of the world as it is now. Yeah. You know, I'm really as we sit here talking, I'm beginning to feel the way that I used to feel in 1982.
+
+War on everything. That was actually one of our slogans, war on everything. And we had to modify it after Mark e Smith was nice to us. We then we said war on everything except for the Fall. Yeah.
+
+We were we were hostile. And part of the business of, like, putting jokes in the music and being lighthearted about it in many ways was actually a calculated act of aggression and resistance to all this, like, 22 year old singing about bones, you know? It it was something that doesn't get talked about very much, but just as apparently inconsequential songs like Love Kittens and Mind Like a Playgroup are actually about sort of like just an entire rejection of humanity. By the same token, a lot of the sort of comical asides and that, a lot of which were inspired by old soul records, you know, with talking on their on their records. Loved that.
+
+And as I say, I still hadn't connected the Butcher with myself. I still thought he was like Solomon Berg or someone. You know? Mind like a play playgroup, I think, we should sort of talked about before. And, We did let's face it.
+
+We we had that thing. We'd it happened a lot with John, actually, was if a song was of a certain type, we'd end up going a 110% down that road. So if it's a little bit country, you know, the next thing you know, some country was going yeehaw in the back end vocals or something. Or if it was a little bit reggie, then it had to sort of, like, go totally reggie, you know, that sort of thing. And, with that one, it went from a little bit wacky to what was referred to in the studio as wacky factor 10.
+
+We knew what we were doing, and we were delighting in it. Pots and pans and Yeah. Yeah. There's the bloke who wrote Bela Lugosi's Dead on his knees in the studio with a wooden spoon and a couple of saucepans of water going splishy splishy splishy splishy. Max looked at Owen.
+
+Owen looked at me. I looked at Owen. He looked at Max, and we all just went and then I when we did Wheeler, I had to top that. So I went upstairs to the kitchen, and I just removed John's cutlery drawer wholesale, took it down into the studio, mic'd it up and send this something. Like an idiot.
+
+So, yeah, I mean, we were look. We were having a lot of fun doing it. And as I say, in a way, the fact that we were overtly having fun was a sort of rebuke to all these third division Sisters of Mercy that was starting to appear on the Peel show. You know? I mean, Susie and the Banshees, yeah.
+
+Lincoln's version of Susie and the Banshees, not so much. Thanks. You know, that's that's where we were at. And does, Owen play, accordion on desert? That's not an accordion.
+
+Oh, what is it? That is a yellow bondempi plastic organ about yay big that I literally found in the street. Oh, is this the yellow one? Yeah. Alright.
+
+Okay. Yeah. But it Owen plays the little solo. That's him. But yeah.
+
+No. I don't even know if he was playing accordion at that stage. I I don't quite know when he took that up. Maybe when he moved to Germany, I guess. I always think of, I I always think my dessert is waiting.
+
+I don't know why I put an extra s in there, but not in my mind. I'm not quite sure what the connection is, but there is an old show tune. I'm not quite sure what it's from. Oh, it's from Kismet. You know the old musical Kismet?
+
+Mhmm. Just playing with spiders. Eek. That could cause damage if it goes into my little, Oh, that's quite true. Yeah.
+
+Socket. There he goes again. Look. Get out of it. My dad's like, yeah, Kismet was a musical.
+
+My grandmother liked it, and there was a song in that. It was it was all a bit sort of, orientalist, you know, all mystical Arabic and all that. And there was a song in that where a geezer with a towel on his head would sing, my desert is waiting. Like this. And for some quite how that got into my head and connected with that, I don't know.
+
+But it's it's another one of them Jug Band Blues jobs. It's it's another one of, like, look, mate. I'm not being funny. It is there, and it is waiting. You know?
+
+Yeah. I I love my desert. We tried to play out live around about that time. Alan McGee had this club down in, West End, and it was primitive as you like. The first time we played it, he introduced me to Joe Foster.
+
+He said, Pat, this is Joe. Joe's got the microphone. The microphone. You know? But I can remember trying to do a live version of that.
+
+We took the yellow organ, and we tried to mic it up. And we had a glockenspiel as well. Tried to mic that up. And, of course, in a crowded pub full of little hipsters falling over and getting drunk, it was a complete waste of time. So we never really tried to play it out again for years.
+
+And then when we were doing Masters of Budvar, I would do these odd supports. And, it was a time when I was doing a lot of computer music, so I used to just rush up backing tracks. And every set that I did at Budvar, basically, I focused on another jazz butcher album. And the one where we did Scandal, I thought partly because it was dead easy. I just programmed up, my desert.
+
+And I don't remember much about those sets, but what I do remember was the night that I did that. As it started up, I just heard Mark Refoy down the front going, no way. Basically, it's moments like that that keep me going. No way. It's like that story about when Teenage Fan Club took Alex Chilton down the pub in Glasgow, and he said as he as he walked into the Hipster's bar, the cries of get your fuck could be heard at the other end of Socky Hall Street.
+
+Which leaves, I think, another little perfect little pop song, Girlfriend Oh, yeah. Which I thought, had been done before by, by the other Elvis, girl of my best friend and all that. I never really listened to very much Elvis Costello. I really like that. What you mean Preseley?
+
+Oh, The King. You should've said. I mean, The King. Yeah. Girl of My Best Friend.
+
+Yeah. I don't I'm not really familiar with that song, to be honest. The inspiration for Girlfriend was a complete lift from a Lou Reed song called Billy, which I think is on it's possibly on Sally Can't Dance or one of the sort of mediocre lost lost period albums. And I think he's singing about Billy Name from the factory. And it is those chords, and he plays it in a kind of shuffle.
+
+Like that. And he sings, Billy was a friend of mine. And I heard that, and I don't know what kind of mood I was in. I was in the Birchfield Road flat, and I just felt compelled to copy it because there were such pretty chords. Because, you know, I didn't know anything about sunroin in those days.
+
+I was still stumbling across things that were obviously completely obvious to everybody else. But to me, they were like magic discoveries. You know? And, yeah, GDC. You done?
+
+So I banged it out, and I I copied Lou. I played it in a in a shuffle style and wrote my own words and the little changes and so forth. And it was only when Eider got hold of it. It's almost like he misunderstood what was on the cassette. He must have thought I was trying to play it in a four four, and he just put it into the sort of, you know, the pop beat, the Beatle beat.
+
+And then he wrote that that intro for it. And, just for doing those two things, I gave him half the songwriting credits because it was so important to what what happened with the song. I didn't like it going four four at the time. In fact, this is on the, the notes to the box set. But as we were listening to the take of Girlfriend, probably like the rhythm take, I was listening to it, and it's sort of zipping by real fast with this pop beat.
+
+And I became irate. What I'd seen as a sort of down late night kind of a song had turned into this sort of shiny pop thing. And I started muttering things about sort of, like, stultifying competence and Dire Straits and CDs and things like that. And eventually, I had to remove myself from the studio and spent that particular Thursday afternoon downtown in a pub in Lemmington just getting more and more bitter and twisted drinking and drinking and drinking and drinking through the afternoon. Oh, cunts.
+
+CUn ts. Because what I saw there was the thing that we talked about with La Mer. What I saw was, like, the sort of outsider nature of the music was being reined in and professionalized and made competent and therefore neutered. And I was really cross about it. And then, of course, when it come out, everybody liked it.
+
+And then to my absolute delight, one of the London fanzines, I think it was jamming, did a really good review of the album and described the song as being like an amphetamine Dire Straits. I was like, yeah. You see? I told you. I told you.
+
+But what I hadn't anticipated was that everyone was gonna like it quite so much. Yeah. I get the last thing I was gonna mention that you read about scandal is that you wrote somewhere that it sold 25,000 copies. And Or more. Yeah.
+
+Yeah. And I and I don't know whether, because I think it was the first Jazz Butcher album I bought. People discovered you through the Dave J connection Totally. Yeah. All that.
+
+You know? And that's what really helped it. And the fact that it was the first it was it was a big production, you know, in the in the way that the first album wasn't a big production. No. That's right.
+
+That's right. No. I mean, the first album was really sort of perceived as a kind of post punk sort of ramshackle thing, quite rightly. Whereas this, we'd sort of accidentally become, yeah, a bit more of a unit. And John, you know, he pulls things together, doesn't he?
+
+So I don't know. Yeah. An albatross. A bit of an albatross, you felt? Little bit.
+
+Yeah. Yeah. You know, I mean, there was no question that when you did a gig, the little three chord pop songs like Rain and Girlfriend went down a treat, especially with the old Germans. And it was kind of fun to do initially, but it wasn't really where I'd hoped to end up. It wasn't what I'd envisaged myself doing.
+
+Though, I mean, live, there was still a certain sort of ramshackle, Velvety element to it, so that was kinda cool. We were definitely better. Better value live, I think. And someone even drew drew a drew a cartoon for the front cover. Don't think it's out here, is it?
+
+Oh, it is. Yeah. Hunt Emerson? Yeah. Yeah.
+
+He's out of Birmingham. He's he's been doing it for years and years and years. And in fact, even in '84, the reason we were inspired to get on to him was, in the control room, because there's a lot of sitting about when you're making records, Dave had brought the big book of Hunt Emerson, which he just published. It was a big old compendium of lots of stuff that he'd done over the years, and we all loved it. We, you know, we all had a read of it over the course of the fortnight, and, we all loved it.
+
+And somebody said, well, why don't we get Hunt Emerson to do the sleeve? And we were all, well, come on. He's got a blooming book out. He's real. Who the fuck are we?
+
+Never happen. Dave Barker, on the other hand, being a clubbable fellow and not one who's easily put off, found Hunt Emerson, phoned him up, said, do you want me to cover for this band? And Hunt went, £150? And David, mhmm. Done deal.
+
+And so there it was. And it was as it was as easy as that. You know, it's we wanted it. We didn't think we could have it, and then we had it. Is he the same guy that did, the cover for The Ducks?
+
+Was that Hunt? No. That's, Edwin Pouncey, savage savage pencil he calls himself. Oh, yeah. Yeah.
+
+Yeah. Yeah. Yeah. That's right. Now you'll see Hunt's stuff in, Fortean Times every month.
+
+He's pretty much their house cartoonist these days. But he does he does fill the loads. Still around. Oh, yeah. Yeah.
+
+Very much so. Very much so. Yeah. And that's one thing that Dave and I kind of bonded over was comics in general. And, like, you know, he was mates with Alan and so forth.
+
+So that may have been the first night I ever met Dave, actually, was at at, this birthday party, Kevin's birthday party on a boat, on a canal boat. And the Sinister Ducks performed. Alan, Dave, and Alex, they got up the end of the boat, and they did their two songs. They did their repertoire. And, yeah, I think that's that's certainly the night I met Alan.
+
+And that was funny because Alan's first published ship was a thing called The Adventures of Saint Pancras panda, which came out in a little Oxford underground comic called The Backstreet Bugle. And, you know, little underground paper for the town. And Alan had this thing about some pancreas panda and I loved it. I absolutely loved this cartoon. Because by the time I'd met him, he'd done loads of stuff for 2000 AD, and he'd done Swamp Thing.
+
+I'm like, he'd certainly done V for Vendetta because David made the record with him. Yeah. And so he was he was quite a known bloke. But as our hands shook and we looked into each other's eyes, I was like, you're the bloke who did Saint Pancras panda. Brilliant.
+
+I may be the only person who's ever said that to him. Yeah. Yes. That may well have been the day day that I first really got to talk to Dave properly as well. Again, Summer '83, that was.
+
+And Kevin's quite a little catalyst in his own way, isn't he? Since the thread is there. And, of course, as it moves on, where did we practice up the songs for Sex and Travel? In Kevin's living room. Oh, yeah.
+
+I read that as well. Yeah. Yeah. This is before they thought we need to go somewhere where the sun shines more. I'm not quite sure what persuaded him to move to America altogether.
+
+Can't really remember. I think it was just the fact that Love and Rockets Took off a bit. Yeah. Pretty much from the word go. They they were successful over there.
+
+So I think it just made sense for them to be on-site as it were. You know? Wow. That's a long one. But,
+		`,
+	},
+	{
 		date: '2019-10-05',
 		location: 'The Plough, Shutlanger',
 		number: '6',

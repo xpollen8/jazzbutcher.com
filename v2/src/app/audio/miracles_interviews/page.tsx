@@ -1800,6 +1800,443 @@ So I think it just made sense for them to be on-site as it were. You know? Wow. 
 		`,
 	},
 	{
+		number: '4',
+		title: 'Sex and Travel',
+		topics: [],
+		media: 'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+4+Sex.mp3',
+		description: <>
+		</>,
+		body: `
+Knock it off. You wanna put it sort of over here and I'm just sort of, like, blacken into it. Hello? Yeah. There we go.
+
+Lovely. Lovely golden signal. So my homework's been elaborate this week. Yes. It has included watching two episodes of the human jungle.
+
+Oh. And, and gigs in Lucerne. Oh, I remember that gig. So we might we might get into that. Yeah.
+
+By all means. It wasn't Lucerne. It was Lausanne. Lausanne. It was La Dolce Vita.
+
+Yes. One of the few places where in adult life, a couple of years down the road from that, I engaged in serious fighting. I found someone I was wander wandered into the front door of the club late at night. I'd been out having a spliff in the front yard, and I walked in to find my ridiculous French booking agent who was touring with me locked in serious argument with some big Swiss bloke who was planning on landing landing one on him. Now I was face to face with the ridiculous French agent, and the angry Swiss bloke carrying on had his back to me.
+
+He had no idea I was there. And I thought, golden opportunity. I stood up behind him. Come on, my friend. We're leaving.
+
+Easiest thing I've ever done. So the I saw, one of the gigs in late '85. Mhmm. Someone has posted the entire the entire gig. Two posts for both both gigs.
+
+From the Dolce Vita? Yeah. One in one in November and one in '87. When you so in '85, you're with the the whole band. And in '87, it's just me and Alex.
+
+Yeah. Yeah. Yes. It was the '87 one where the fighting happened. And the the '85 one was, I remember you doing, well, everything at high speed.
+
+Yeah. But I was quite impressed when you slowed down and it's Still in the Kitchen, I think, which was quite early for that maybe. Quite an early outing. Yes. And that sounded all quite, very Velvety.
+
+You know? Very, Oh, we were totally, totally Velvetized at the time. Once we sort of became competent, we achieved on a good night, we could sort of do the Live 69 sort of sound. You know? Not as heavy and strong, but we could sort of do enough to delude ourselves that we're a bit like the Velvet Underground, you know.
+
+And the funny thing is most of the gigs on that autumn '85 tour were fantastic. That particular one, I can remember coming off stage and thinking, oh, well, that didn't really happen, did it? For me, that's one of the poorest gigs of that tour. Really? Really.
+
+It's the same Easily. I know. I was I saw that it came up. I didn't bother watching it. I've watched the first minute or two.
+
+But, it was very dark as well. There was nothing to look at, was there? No. Certainly. Yeah.
+
+There is it gets there is some there's some soothing in and out. Lots of Owen concentrating. Owen with his mullet? Yes. I think, you know, he just he just should have done something before we set off.
+
+I don't think any of us really noticed, you know, that, like, weeks went by and it was really turning into something embarrassing. Don't put that in. That's that's the reason I don't wanna write an autobiography because I'll say things like that and it would just make me look like a cunt. And, the eight the 87 gig, I although, you know, there was a certain amount of fast forwarding. But, there was a long elaborate joke about, about the the dog fetching the newspaper in the in the Scottish in the Scottish castle.
+
+That joke. It's for you. Yeah. Which is you're trying to trying to teach the the French speaking Swiss, I guess. I I didn't know.
+
+We were just we were just affit me and Alex. I mean, we we had no idea that tour in the beginning of '87 was gonna happen. And the way that it happened was daft. There was no and, you know, no one was about. And I was in New York when they told me it was gonna happen, and it was gonna start in about thirty six no.
+
+In about sixty hours, if the tour was probably gonna start. In Bergen, in Norway. And I'm in Queens in the basement, and I haven't got a band. So Alex and I, we got it together. Our tour manager wasn't about.
+
+We got our emergency tour manager and somehow we made it to Bergen. No rehearsals. Had no idea what we were doing. Just had a go. Did a gig there, did a gig in Oslo and then sat around Oslo three days waiting for our Swedish work permits.
+
+And after three days it turned out they were never going to come. So we spent a Saturday driving from Norway to Hamburg. Landed there very happily. And then we had to go from Hamburg to I'm just wondering if Lausanne was the next one or if there was another Swiss one before that. But it was certainly only the second or third of those duo things, so we ain't got a fucking clue on that.
+
+Quite relaxed, actually. Yeah. Yeah. Well, I mean, Alex Alex and I, you know, we it's that Northampton sense of humor just dried out like smoked salmon. You know?
+
+It's just like Alex is such a dry and murderous wit that we did have a lot of fun for him to take it seriously. He's still around, Alex? The story of Alex is so strange that it's it can almost not be told. The last time I saw him, quite a long time ago, I was still going out with Jackie, so certainly pre 02/2013. And it it could be dated, but, again, it'll make your Google search history look a bit weird.
+
+Because I don't know if we can put this out, honestly, but what happened was Alex showed up at my house totally unexpected. Come in, mate. Have a smoke. Have a coffee. What are you up to?
+
+Well, he'd been living in Jersey. This much I knew. His missus has run clubs and theatres for a long time now and was put in charge of the theater in Jersey, you know, proper theater, which apparently doesn't prevent her from being subjected to gratuitous racial abuse when she goes out in Jersey. It's quite a white town, isn't it? Yeah.
+
+The n word was used Yeah. You know, in this century in what is supposedly our country. So there you go. Alex meanwhile did something perhaps even dirtier. He got a job.
+
+He'd been working for a while in Barclays Bank and so when he landed up in Jersey with Jasmine, he got a job there. So I said, what you been doing? He said, oh I've been working for Barclays Bank and Bob Diamond, he said, with sort of mock seriousness. And he then went on to explain to me, you know, sworn to secrecy, he started to explain to me all these dreadful illegal doings that Barclays was doing through its Jersey branch. Like, for example, this was at a time when you weren't supposed to put any money into Iran and Bob Diamond and his chums in Jersey were gleefully passing their afternoons by doing exactly that.
+
+Things like that and other tax avoidance things that you'd expect in Jersey. Alex is just giving me this litany of outrages that they're committing for money. And after a couple of hours of that, we sort of part on amicable terms and off he goes. The following day I bought a copy of The Guardian, and when I got it home, opened it up, special exclusive to The Guardian. Barclays Bank in Jersey is completely rotten and are doing loads of illegal things.
+
+16 page special. The next day. I've not heard from Alex since, and you know these Barclays deals, there's always someone has to take the fall, right? I fear the worst. He could be inside.
+
+But he completely, jacked it with music. On this 1987 tour we were interviewed by a crazy radio guy in France, and Alex was interviewed just as much length as I was. And I had for years a copy of this interview, And Alex is going, well, number one is the horn. That's the primary mode of communication. 1987.
+
+At this meeting, I said to him, just you're still playing then? He goes, oh, I haven't got it out of the cupboard in years. Apparently, you're not communicating much. Yeah. Apparently not.
+
+Not in the primary means anyway. Bless him. Alex was fucking great at the time, but, you know, people's lives change, don't they? That's 85 and that's at Woodbine. Yes.
+
+Early '85. In the snow. Yeah. Oh, so I wonder whether, yeah, the mashed potato snow and all that. Which I just think is a good expression.
+
+Robin Gibson from sounds. He always loved that one. I I I I it's one of those things where you think, oh, fishy ender, a bit cheesy, are you sure you want to put that in? And then you sort of do because you're too lazy to think of anything better. And then complete strangers start going, woah ho, this guy can write like a panther.
+
+And it's like, oh Oh, you like that, do you? I had it just the other day. I'd written this song a few years back. About 2010, I wrote it. God, that's so long now.
+
+But it was one of those guys, unassuming little ballad, got shelved. I didn't want another Sleepwalking on my hands, you know. Once or twice when we were out with the quartet, we'd just throw a version out of it because they were that quick that you could do that. Just float it. But I was never really convinced of this song at all.
+
+And then quite recently I found a simple three word phrase that would bookend it front and back. And it suddenly all made sense. So the other day I played it to Dave Haskins because he gets a name check-in it. And I just played in the line about him. Like, and he went, oh.
+
+Oh. Can you do it all? And I went, yeah. Sure. He said, is it finished?
+
+I said, yeah. He said, can you do it? And he got his phone out, and we just did a very rough sort of field recording of it. And at the end of it, he goes, woah. That's up there with your very best, mate.
+
+And again, you know, I've been I've been thinking of shelving it. And what's that called? It's called Never Give Up. It's some nasty fucked up shit. Are we gonna look we must look out for that.
+
+Yeah. I mean, I'll I'll sing it to you sometime when the tape record is not on. So, have you ever had you by 85 ever been to Saint Petersburg on a Saturday? I've never been to Russia at all. I've been there not since.
+
+Ever. Okay. And I don't think I fancy it much. What that was about specifically in '85, which is still called wartime, obviously, he's calling it Saint Petersburg. Yeah.
+
+Because it's not. It's Leningrad. And, you know, me personally as myself, I would always call it Leningrad. But, it's part of the perversity of the song Like Tallulah fucking Bankhead. Guess whose idea that was?
+
+Not mine. It's David J. Because he gets a half writing credit on that because we wrote the lyric together. And, yeah. That was his bit.
+
+And Errol Flynn at 52? Yeah. Yeah. That's Dave. Oh, or But why why Errol at 50?
+
+Because he was getting pretty broken down and seedy after a life of crime. I think that's the idea. I mean, you know, at the time we thought 50 was, like, inconceivably old. Now I can barely remember it. Did you know did you or he know at the time about the Errol Flynn, Northampton connection?
+
+I'm almost a 100% certain Dave would have known about that. Yeah. Because I read, because obviously, we now have the Playhouse or whatever it's called, the cinema there. Oh well this this is hilarious. Yeah they named it the Errol Flynn Picture House because of that slender connection with the Royal and that.
+
+And when Alan Moore made his series of short films that leading up to The Show, they sent a proposal to Mitch saying would you be prepared to come down, show the five shorts and do a little Q and A? You know, a luxury evening with Alan Moore and Mitch Jenkins. And, Mitch was telling me, he took this idea to Alan and Alan was like, yeah. But. And then Alan regaled Mitch with all the appalling tales of Errol Flynn, like, engaging in sort of Jeffrey Epstein behaviour and trafficking and kiddy fiddling and just general appallingness.
+
+Well, I I read, which I hadn't heard before, that must be common knowledge that he was sacked from the Northampton Riff for throwing a female stagehand down the stairs. That rings a bell. Yeah. And, obviously, you know, if he hadn't have thrown said woman down the stairs, he wouldn't then have left and eventually crossed the Atlantic. And met his future wife on the boat.
+
+His future wife finds him film gigs and, you know, the and then he gets to be this crusty, wild 50 year old. So you're suggesting basically that if you want to get on in the entertainment industry, you should throw some unfortunate female roadie down the stairs. Yeah? It seemed it seems It's an outrage. It seems to have made him.
+
+That's funny how things turn out, isn't it? Anyway, Alan was fully aware of Errol's nonsense and declared flatly that as long as the theatre went under that name he had no intention of allowing them to show his pictures. Now this rolled and rolled and rolled and I have a friend Paul Williams who lately has got into film production game. And he was the producer on that film about Shirley Collins. And they had a showing of it down there, which I went to.
+
+It's the only time I've been there. And I figured if I didn't pay to get in, it was cool, you know. And so he's he's had some conversation on and off with the people who run this place. And eventually in recent times, I think maybe he was explaining why Alan wouldn't work with him or whatever, but he basically explained to them what kind of a man Errol Flynn was, you know, what kind of a person they'd named their cinema after, And it turned they they all gaped in horrified astonishment and simply didn't bloody know. Now it's called the Northampton Picture House.
+
+They have actually kicked the blighter off the bill, which I think is only right and proper, because it just, you know, I'm a disgusting man, but he's a really disgusting man. I, you know, I've I've said to people at gigs, my name's Pat Fish and I'm a very very bad man, But he's a very, very, very, very, very, very bad man. And you can but you can walk with him? Well, he'll walk at your side. Yeah.
+
+More interestingly is if you're walking with him and the devil, right, until the fucking Bankhead is at your feet, what's she doing? Rolling? This is this is the trouble. Sometimes pop pop music lyrics don't always make sense. Sorry, guys.
+
+There's a 109 reference. You just didn't just pull that number out of the air. 109 is my special number, and it all goes back to the ITV news graph ITN news graphic department in 1980. Do you remember a bunch of American geysers got seized by the Iranian revolutionary guard and locked up, I think, in the embassy there or something? And there was a big fuss and, oh, Jimmy Carter's a spineless twat because he can't get him out.
+
+Rah Rah Rah. They were in for a while. They were. Yeah. In fact, they were there for at least a hundred and nine days because on this day in early eight, we turned on the telly, and the first thing we saw was this stunning graphic.
+
+There was the three elements. I can't quite remember how they were incorporated, but the three elements in this image was a map of Iran, an American flag in tatters, and a sort of blindfolded squatty in the front just in silhouette. And right across this big banner it just said one hundred and nine days. And you know what? I think I was with my pal the Antichrist.
+
+I told you he was important at the beginning of this. And we looked at that and I said man, if there was a band called one hundred and nine days that would be a perfect fucking poster. Not so long after that, an opportunity came up to do something. There was a gap on a bill somewhere, and none of our real bands could do it. So we those who were about from the pack of bands that knew each other put together this covers band at about ten minutes notice, and we called it one hundred and nine days in Tehran.
+
+And ever since that time, 109 has been my lucky number. I will buy things in shops if they cost $1.09. Better not get into your PIN number. It's not there. All my Internet passwords end with one zero nine, but I'm quite happy to tell you that because you'll never guess what the rest of it is.
+
+If I'm referring to my phone from time to time, I'm just trying to jump around release dates, which amazing website will tell me at some point. But just thinking of, so I think we covered, Walk With The Devil unless you wanna say anything else about that. Oh, yeah. There's more to say about that. One thing to say about Walk With The Devil is that, again, the big choral vocals doubled and doubled and doubled.
+
+And we had a lot of fun doing that. And when we did the mix, Dave Barker put in a special request that he could just have the matched backing vocals from that chorus. Just a tape of just that naked. And, for the next three or four months, if you phoned up Glass Records and there was no one in, the answer phone would greet you with, WALK WITH THE DEVIL. Alright.
+
+It's Dave Barker. I'm not here right now. That's fucking brilliant. First time I heard it down the phone, I laughed like a train. There must be so much water saving that tune, mate.
+
+But whilst you're thinking about that, let's turn back to Yes. Start of the record. Big Saturday. And, I hadn't really, until I picked the lyrics off the website again, realized that King was obviously Rolo. Yes.
+
+Is there's an So so it must be referenced to a is it referenced to a particular Saturday? Yeah. Very much so. Easter 1983. There's a really I've explained this better than I will now already because I I sat down and wrote something for a French magazine, a year or two back when the when the boxes came out.
+
+And it's I saw it just the other day. I think it's, I don't know, pop matters is an American one isn't it? It's pop something. What I'll do is I'll dig it out for you and send it to you because it will explain much more eloquently than I can now what happened with that. It's it's the whole story.
+
+I wrote it I wrote the whole story out, and this guy, you know, he's just doing an interview, and he had no idea he was gonna get that. And he wrote back and went, woah. I I don't know. It just all came spilling out, the the whole story. And you're right about Rolo, and a lot of the rest of it concerns the bankruptcy courts.
+
+That was a mad fucking weekend. The weekend of Easter '83. What happened was, King, I hope you get things done. Because I phoned him up. I said, Look, it's Easter weekend.
+
+I've got loads of time off. I've got some money. What do you want to do? And he was like, No, no, no. I'm building this band.
+
+I've I've I'm booked into a rehearsal place all weekend. I can't come out and play. Alright. Alright. Well, good luck with that.
+
+And my girlfriend was away, Alice, and I had the flat to myself. And I went downtown on the Saturday night. It went mental. It's like, just mental. I didn't really know too many people in town in '83, and it was a mad night.
+
+There was women everywhere. And then the Sunday and the Monday hung over alone in a more or less empty flat. I just went into a kind of writing spasm. I Need Meat came out that weekend, just like Bettie Page came out that weekend, Big Saturday, of course, and a couple of others. There's a set called Slightly Mad One Easter, and it's like a c60 that's just full of things I tossed off on the old, the old Amstrad.
+
+So that was that was a really big weekend. But, yes, if I send you that French article, which I'll put in my notebook, then you'll get all the dope in black and white. I quite surprised myself with it. I didn't think I'd ever tell anyone what the big Saturday was about. Didn't seem to be any reason.
+
+And you've, you've reminded folk of regular English speaking gentlemen because you've been abroad recently and and I wasn't aware of that cover song that the girl had sung, which is quite a pretty version. I love the ending of it where the voices are all built up and there's a sort of like like sort of throbbing tremolo underneath instead of just that picking acoustic. It starts to sort of throb. And, yeah, I like that bit a lot. That's this observation of English speaking gentlemen or anyone you knew in particular?
+
+Well, you see, here's the thing. After we'd finished it and sequenced it, I was listening to it at home, and I went, oh, blimey. We've made a concept album. And I've said this before in public but like, yeah, we made a concept album and nobody noticed. Honestly, the only people who ever find out are people who are in the room with me at two in the morning when we're drinking beer.
+
+I've done a bloody concept album and no one fucking knows. You know? Well, isn't there a clue in the title? Well, I mean, you know, they made a suggestion about sex and travel. And also, I'll tell you where there's a clue, it's on the cover because Taking Tiger Mountain by Strategy could be said to be a bit of a cover album, concept album, and we deliberately stole the idea of the print being reproduced over and over in little colours.
+
+That's deliberately stolen from Tiger Mountain as a nod. It's a spy story. It's a spy story and it starts in Stockholm with Big Sandy, which is actually totally unrelated to the story of the song but it sounds like Stockholm. Then Holiday is in Prague. You know the the little organ solo?
+
+That kind of mad 1960s cinema organ sound? Yeah we figured that's what organs would sound like in Prague. And the regular English speaking gentleman, of course he's a facking spy, In the evening you can hear him typing typing typing letters to his colleagues back in England. Cameras is camera near those installations? I love that line.
+
+When I when I came out with that, I was just chuckling to myself. It's making my eyes water now. Yeah, he, you know, he will not disturb the pleasant he has no transistor radio to disturb the pleasant morning. He will not remove his camera when he's near those installations. But you know he's got one in his briefcase.
+
+So yeah that's I I always listen out for the, typewriter sound. Is that a real typewriter or Yeah. It was a it was a broken one. So there must have been quite something to the sequencing because I that is quite cleverly done. I think the the rhythm of the typewriter, you know, it's done That's me.
+
+Well, that's It's a live take. I mean, I just sat down there and whacked it. That's that's quite well done, I think. It's it's an old, one of the little white Olympia jobs, which had pretty much reached the end of its days, so, didn't really matter if I just battered it to death in the studio. But John Rivers does a nice crossfade with it at the end.
+
+Like, you know, everything's built up in the sort of fake Beach Boys chorus, and then that all sort of dies away. And you're left with the typewriter, and you just hear the little ping at the end. Details like that turn me on. Yeah. Yeah.
+
+I like the ping. I mustn't have that. It's one of my favorites. I've been trying to play it live. It doesn't always come off because there's an awful lot of remembering and breathing to be done.
+
+The quarter the quartet did it, didn't they? And you did No. Did it not? No. No.
+
+Well, I think I might have heard it recently. They might Yeah. I have done it at solo shows. And shall be at the next one, I think. It's it's yeah.
+
+I like I like Holiday. And, again, that wrote itself really quickly. It was another one in from work, you know, before before even sitting down to eat in from work. Bang. Off we went.
+
+And, you know, obviously once I hit on that Immediately I was thinking of Eno. I'll put my hand straight up. But no, I like it and I remember that moment where I thought, you know, you've got your chorus and then at the end it shifts into that slightly different chorus, goes a bit more melodic. I remember the moment I thought oh you can do that. That was a very very happy experience writing it.
+
+When we first tried to play it in the studio it was the end of the first day and let's be honest we were all stoned. And we went in, Dave J, Max and me, to do all of that together bass and two guitars. For some reason, I think genius producer Dave J Haskins said, no. We don't want a click track. And we did it.
+
+And John Rivers was like, yeah. I'll have a listen in the morning, lads. Let's shut down. And we got in the next morning, and we listened to it. It was like Yeah.
+
+Let's do it again. The funny thing about, that there's an there's an 80 there's a quite a famous video on YouTube, well, famous for Jazz Butcher anyway, of the TV show that you did. Must have been Munich. By Richard Rumfoq. Yeah.
+
+Where you're doing the where you you do, Human Jungle and Death Dentist. Yes. And I hadn't seen I hadn't seen or read the comments from the Death Dentist until last week. And you know these sort of closet critics? Yeah.
+
+What is the point of saying this twenty five years after the event or whatever? But some guy is saying, the drummer is struggling to, to keep a consistent rhythm there. Why are you telling me that? I was there. Yeah.
+
+Yeah. That was that that was the awesome tour of '85. That was November '85. Yeah. That seemed like a like a big thing, that TV show.
+
+It was about it it went out live. As we played it, they watched it on their TVs, which is pretty daunting because there was about 5,000,000 of them. Have you done TV before? Yeah. Bits and pieces, but largely playback, not generally actually playing live.
+
+That didn't upset us too much because we we found playback very upsetting experience, You know, where where they they play your record and you just mime. I mean, that you feel like a complete imbecile doing that. Later on, we devised strategies which are worth explaining at some point in in any tome worth its salt. We devised some strategies for this with varying degrees of success. But that was just straight on gig, about three or 400 people out there and us.
+
+And we were popular in Munich in those days. We'd gone through in the spring and we'd done a place called Manasia. About 300 people. Five uncles. We'd never had anything like it.
+
+It was our first German date on that tour and it just went mad. And this was the autumn of the same year and we were doing two nights at that venue, but we also had to do the telly thing. So it's a credit really that anyone turned up. But my favorite thing about that show was that, a few days later on the tour we had a day off in Frankfurt And, oh luck, oh joy, Tom Waits is doing his Rain Dogs tour and we can all go. We've blagged it in.
+
+So there we are. We go and see Waitsy. It's fantastic evening. And at the end of the night, it's in a big old sort of Freitzeitalla, you know, people's hall of culture type place in Frankfurt. And I'm out the front in the foyer waiting for Max to come back from the loo or something.
+
+You do a lot of waiting for Max on tour. And, he's a guitar player. It's it's normal. And I was just stood there minding my own business, and I could see him come. You you get a sense for these guys.
+
+I've still got it. You know when they're gonna they've clocked you and they're gonna shuffle up and have a chat. So he shuffles up. He has a chat, and he goes, yeah, Jazz Butcher. Yeah?
+
+And I'm like, yeah. Yeah. Yeah. Yeah. I saw you on the TV.
+
+I go, yeah? I said, yeah. It was a little bit boring. Alright. Right you are.
+
+I think I remember in the Swiss gig as well you mentioned in Raiser Gorbachev on when you're introducing Red Pets. Yeah. She's in there. Yeah. Missus Gorbachev as well don't give up all of their secrets.
+
+They got some stories to tell. Yeah, yeah, I kind of fancy to raise a Gorbachev. Yeah. Gorbachev. Better looking than Nancy Reagan.
+
+Yeah, And, also, the benefit of not being completely stark staring mad. Running US policy unlike astrologers. Mikhail's still alive, I noticed. I tried to read his book. It might be the fault of the translator, in which case the translator should be beheaded, but otherwise all I can say is that Michael writes a really really boring book.
+
+I had to give up after about 40 pages. I just thought I can't do this anymore. I have to wonder, you know, when I find out these people still exist, you know, what's he doing now? He's sitting in an armchair in Odessa or somewhere. He's probably in a library.
+
+There's a story about Vaslav Havel and Scandal in Bohemia. Did I tell you it? The woman I know in America, she works at the Library of Congress, and, she sent me an email one day saying, we've had that Vaslav Havel in here. He's been doing some research or other. And seeing that he was here, I took the opportunity and gave him a copy of Scandal in Bohemia.
+
+Thought he might like it. Well, Havel took it home, had a play, and when he next saw it, he said, yeah. Yeah. It's very good. Yeah.
+
+Yeah. We should have him over at the castle sometime. And she she emailed me this, and I was beside myself with excitement. It's like, yes. Me and Lou Reed, you know.
+
+And then he died. Then he died. Mind you, I've seen the castle from a distance, and it's on a bloody great hill. I've never got up here. They've had to fetch me a sedan chair.
+
+So is Red Pets just, nonsense? Or is, Well, it's just it's just again, it's like a commentary on the sort of received popular belief, like the music in Chinatown or something like that. In the, you know, oh, yeah. All them all them Eastern European birds have all bleeding weight lifters with mustaches innit. And without really having any sort of personal skin in the game, so to speak, I just thought it would be fun to, like, take that to pieces and write a write a tune about how sexy all else Eastern European birds were.
+
+Martina Labrassalova amongst them. That's right. Yeah. And somewhere, I have issued a public apology about this where I said, like, I have to apologize because at the time, I have to confess to being unaware that miss Novratilova had become a Californian. But, yeah.
+
+Saw the Czech ladies. A nice looking bunch. Looked like nice people. Kept bringing me beer. Ah, oh, can you imagine a country where Pilsner Urquell is everywhere?
+
+It's like, you know, a quid a can in the corner shop. Oh, joy. Sorry. I digress. So, yeah.
+
+We've got the Prague thing with Holiday and then Red Pets. You can see what's happening. I mean if there is a point to the story it's that our man is becoming ensnared with sexy eastern European girls. And then you get as far as Only a Rumour and it's like oh boy somebody regrets something quite a lot don't they? Oh something has leaked.
+
+What's this? I hear about you and Susan. Is it a Matahari sort of thing? That's the implication but it's just the implication of the hitherto undetected narrative that's running underneath the whole thing. You know?
+
+I mean, the song was written in isolation as a ballad, but it when it fits together with all the other songs, then it kind of plays its part. Yeah. It's quite, yeah. I like Only the Rumor. It's like, and I think the first proper songs we ever wrote, I think.
+
+Yeah. You you say somewhere. The first big ballad. Yeah. It's the first of the art misery thing.
+
+We it's it's a technical term used within generations of the band. Art misery ballad. And there have been so so many, Jazz Butcher compilations compiled with so many, different angles in mind that maybe the Misery Ballad compilation is something to think about. I've always wanted to do that. The trouble with compilations is that they are the work of desperate men and I have literally had people who should know a great deal better emailing me back going like thanks for the track, Mr Pat, but can't we put a few more of the hits?
+
+And I always email them back, you know. Hits? What hits? You know? What are you talking about?
+
+But they always want something like SOuthern Mark Smith, they always want Rain, they always want, you know, fast things that would appeal to fans of the fucking Wedding Present. We're nothing like those groups. For us, a lot of independent was a way of doing business and, like, getting access to what we wanted to do. It had absolutely nothing to do with the style of music or clothes or any of that shit. We just in the eighties we used to dress like football hooligans and when football hooligans changed how they dressed, so did the band, coincidentally, but it did.
+
+You know, we I like Phil Wilson and the June Brides for example, but we've got nothing in common with those guys. We were just trying to be a a rock and roll band, albeit a rock and roll band with, like, a bit of a sense of humor perhaps. But as I've said before, that was just a reaction to all these bands like Bone Orchard who wouldn't know a joke if you skewered their eyes out with it, you know. Only a Rumour is seems sort of quite an exposed sort of song lyrically, you know. Felt like it right in it.
+
+And as you know, I have no imagination, so the sort of faintly elusive stuff that's going on there, allusive that is, you know, at the time for me was felt. I mean, I still wasn't it's not Condition Blue as the song goes, but, yeah, it I I do feel quite sell to public hell and all that sort of business. Oh, look. A pop star moaning about being a pop star. Oh, great.
+
+Because I I'll tell you what. When I wrote that, I didn't know I was born yet. That would have been I would think probably I would have been writing about my first experiences of, like, serious touring. But, you know, that record was done in February '85. By November, then I could have told you a few things about being depressed on tour.
+
+That's a funny thing. I was I was quite I was having a really good time, but I was quite miserable. Yeah. Feels to me like the sort of song that Alan Bennett would would write, you know, when my my mother said I was a shy boy. Sort of like one of those, isn't it?
+
+I guess. Yeah. It's about shyness to a degree. Yeah. Yeah.
+
+It's also yeah. It's about a lot of things. It's about paranoia. And, what is that that you hear about you and Susie? Well, here's a confessional one.
+
+You see, in the context of what it is, as as I say, it's a little bit like, oh, our man's been indiscreet. There's been a leak. And that's kind that's yeah. There's been a leak. That's what I wanted to convey there because, long long long long long time ago, long before any of the stuff we're talking about, I had a crush on this lady piano player.
+
+And, I, you know, I had a crush on her so bad that I would help her move her ridiculously heavy Fender Rhodes to the upstairs gigs she was playing, you know. Just a clueless ute, a bit smitten. Nice to hang around her. And after a while, you know, she'd invite me out for a drink or something, which I found absolutely terrifying, of course. And, as far as I knew, it was just, you know, I was I was sufficiently self aware to think, well, you know, this is just your problem, Fishy.
+
+Nobody knows about this. And then one day, Rolo comes up to me in a pub and he goes, wait. I said, what? He said, what's what's what's this I hear about you and Rachel? And I was like, what?
+
+My brain has leaked. So what's this I hear about you and Susie? Because Susie is, you know, you're going to ask me about this. It's just a great rock Susie. It's just a great rock and roll cipher.
+
+Yeah. Sometimes when I like the song Susie, it's it's it's actually mostly about my own feelings about shit, but I use her as a sort of cipher. And, yeah, it's just it's just a great rock and roll name. As in wake up little and all that. Yeah.
+
+It's it's and it's great to sing, and it's, you know, you need one of those ciphers. I think I think a lot of people do that. You know? And I think very few people would use the actual real names of the people they were singing about. You know?
+
+And President Reagan's Birthday Present. Oh, yeah. And, Yeah. It's fantastic. The Russians are always shooting down those rockets, aren't they?
+
+Like the one over Ukraine. So that was this a similar incident? I can't remember. Is it an aircraft being downed? It's an aircraft.
+
+And A passenger aircraft. Unfortunately, it was a passenger aircraft. And it was flying over the Soviet Union, and it had this mega crash. And people started blaming the Soviet Air Force for shooting at it and that. And, there was a headline in the Sun, and it said red Russians shot the aeroplane down.
+
+Now, at the time, Rolo and me were mad into Suicide. We listened to very little else at the time because this song goes back a couple of years. In fact, there's there's an earlier version, but I'll explain that in a minute. This song goes back to '83 and I think the instant the headline is stuck in my head from probably a year or so before that. But, yeah, Rolo and I, we were just totally into this mad Suicide thing.
+
+So there's all this, all this, like, ridiculous Alan Vega impersonations going on over it. Yeah. But originally, that song was performed in 1983 on a compilation called City of Silver, which came out on Plastic Head Records, which was run by the bass player of Zuz. And he made an imaginary compilation of imaginary bands from LA called City of Silver. And one of these bands was called the Plymouth Fastbacks, and they performed Red Russian's Shot My Rocket Down.
+
+That's where it came from. He the guy had a loop, a little synthesizer loop just going. And Eider and me just got on the back of that and did some shit. And that's a recreation of it. And the sort of shuffley rhythm that Owens got, as you say, in 1985, everybody did everything far too fast.
+
+We weren't even on speed. I mean that wasn't an issue. We were just young and overexcited and dumb and like, yeah, some of the gigs. Rolo's band, they did that live album. It's called Live Hypno Beat Live.
+
+Now, from my ridiculous education, I know that hypnos in ancient Greek means sleep. Sleep. It's like a bleeding Olympic sprint. And the world has always played their records too fast, but, like, that that live show at the Roxy, oh my days. So, like, you last got another gig up the street at ten, 11:00 or something.
+
+I noticed something in, in, Reagan's Birthday Present, with like like an extended real life. And it reminded me of the Tones on Tail real life song. Now I would have been given Tones On Tail records by Kevin, but that doesn't mean I ever got around to playing them. That, like so many bits on there, is an Alan Vega lift that there's a song on, second Suicide album, I think, where he just goes to the real life. Alright.
+
+So maybe Likewise, the b b b b b b b. That's that's Alan Vega lift. Maybe turn on to Hamilton as well. I wouldn't be at all surprised. Pictures of himself as an eagle scout of a sudden.
+
+That's, William Burroughs quote. Can't think what else is in there. But, yeah, once again, no imagination required. Ridiculous Sun headline. Rocket put in instead of whatever they put.
+
+And where are we in the spy story, dear? Well, it's all kicked off, hasn't it? Somebody's leaked and now it's all kicked off. And then you get to the next song. Oh, hello, donkey head.
+
+Oh, dear. Oh, dear. Oh, dear. You see? My wife sometimes and kindly says, that I have a head like a shaped like a horse's.
+
+Why the long face and all that? She's lucky she's not married to Peter Murphy. One of the things that we did in Prague was that Dave showed me. Do you remember the night in Sweden where, on on the Ruby tour where Peter Murphy got in a massive fight and policemen were called and all this? I was a bit of a mess on the Internet at the time.
+
+I I saw some footage from earlier in that evening in the dressing room of Peter Murphy dancing his little clogs off to Dancing Queen by ABBA. Having the time off is love. Dave says, no one's seen this outside the inner circle. I'm not surprised, mate. He's very good at it, but yeah.
+
+So, you're the man with the head of an ass. The initial line that sparked it I just found in my notebook one day a single line. It said how now man with the head of ass which sounds to me like I might have been watching something to do with the mid summer night stream or something. Now I don't think donkey head was a term of abuse in the band before I wrote it. It became one because of the song, but, like, no.
+
+I think it all just came from that one line. And it's unusual for me because it's almost a story song. You know? It sort of develops. I I actually worked at holding back the revelation for a couple of verses.
+
+You know? I wanted to be like questions questions questions, and then more questions. So I held the chorus back for a couple of verses and then bang. You all know that. You got the head of a fucking donkey, man.
+
+Of course people treat you strangely, you know. Lovely guitar solo, ain't it? Yeah. What with the devil we've been through? Oh, we've all been through that.
+
+Yeah. You see, this is this is the bitter recriminations. This is, you know, this is the terrible consequences of how it's all gone wrong in Eastern Europe and oh god. Oh dear. Oh blimey.
+
+Later on, when we started singing it live, I used to sing at the end you could walk on down the Finland Station Hall, which I thought made a lot more sense. It's like you come back where you came from, Western spy. But, at the time, I hadn't figured that out. And then you end up Down the Drain. The the funny thing about that is, you know, I'm reading all of these, on the the JBC website where each song is, there's a post mortem over each song, isn't there?
+
+And What do you mean? Well, you know, comments on Oh, yes. Yes. Yes. Of course.
+
+There's a comments comments space. Yes. The cycling club folds. Spooky. That sort of thing.
+
+And, and under Down the Drain, there's a guy who says because under every song lyric, there's some guy somewhere who says, this is my favorite JBC song. Alright. Right. Everyone, you know, regardless of how obscure It's nice, isn't it? And someone says, you know, this is my favorite Yeah.
+
+Bless you. JBC song. This is the value of being diverse in your output. Because my because my two children were born in Selangor. Wow.
+
+You know, so this is So if I ever get in trouble. Right? So that's why he likes Fabulous. Yeah. So that's the thing.
+
+Isn't it though? What a sec. What were you doing out there? Breeding. Fantastic.
+
+His two children were born in Selangor, I should say. Sorry? His two children were born in Selangor. Oh, the guy who wrote this? The commenter.
+
+Ah, right. I thought you meant yours. No. Alright. Alright.
+
+His two children, which is why he likes the song. Good lord. Isn't that about that? Yes. Yeah.
+
+So there's a connection, you know, that you know, thought you'd make. It's so you know, doing doing what I do. Most of the time, it seems as close to the Daily Mail reader's idea of parasitical as it's possible to get. Because basically I'm just like doing my own therapy for money and, you know, expecting the world to owe me a living. And I'm very aware of this and I'm very happy indeed on the rare and specific occasions where someone actually tells you that you have in some way been useful in their life.
+
+Geezer once come up to me in Spain and he said, you have Fischoteque record. I am I'm heroin. I'm heroin. I stop the heroin. I stop the heroin.
+
+Oh, I have Fischoteque record. I say you you saved my life, man. You know, you don't get many of those but you do get these little sort of things where you have accidentally become important in someone's life for some particular little reason that's more theirs than yours. And it's very gratifying because you do actually feel like what you're doing is actually some use. You know?
+
+Yeah. Because, like, you know, if you want build roads or work in a hospital or sell food, then it's pretty obvious what good you're doing. With us lot, we just sling it out there. You're you're you're very solidistic. You're very internalized.
+
+You know? It's it's you and your mates against the world. And you sometimes you just think, well, we're just pirates, man. But with pirates, you can control the speed of your heartbeat, so watch out. Would you like another cup of tea?
+
+No. Thank you. So Max kind of, even today, still rather regrets putting rather regrets putting Down the Drain on the end of that record. And every time he says so, I say no, but you don't understand. It had to be there because somehow, up to the age of 21, I've managed to listen to the Velvet Underground third LP many times and believe for some reason that it concluded at the end of the murder mystery.
+
+You know, I key, I key, I key, I key, coming to the back me. All that business. I thought, yeah. There it goes. It just goes out in a cloud of black evil smoke.
+
+And I think it was the evening of my 21st birthday. I was sitting in a damp room on my own in somebody else's flat in Oxford feeling thoroughly pissed off. And so I thought I'll put Uncle Lou's arm around my shoulder and I put on the third LP. And we got to the end of Murder Mystery and I was, like, standing up to take the record off. One two three.
+
+After Hours. Well, I nearly died. I'm filling up thinking about it right now. And if we ever collaborate on a book about the Velvet Underground, well we'll be talking about that moment for about a whole chapter. And this was our third album.
+
+It had to end with Down the Drain because that is a laugh show of us. And it's exactly the same spirit as well. We you and this is Max talking now, not me, but we're back with that walking away thing. You know? I'd rail on all humanity.
+
+I'd give it up for good if only I'd been born in the wood. Very occasionally, we must have played it live because he would change the lyric at the end. He's like, I wish I'd been born down the drain. It's where I've ended up all the same. I've talked to the spiders, and I'd never pulled a chain.
+
+And because I've heard him sing that, we must have sung it live, which in itself seems incredible now. I quite like, the final. Or in a bar. Yeah. Yeah.
+
+Yeah. It would have been the record would have been 40% less good if that wasn't there. I'm completely serious. Yeah. And so he's a bit embarrassed because he's written this little nursery rhyme, you know, and the rest of it.
+
+But for my money, it's After Hours. It's Effervesing Elephant at the end of Barrett. You know, the last thing that you hear and see Barrett's official output ever. So I just I I just love things like that. And, yeah.
+
+And then, so all of that was recorded in February '85. Uh-huh. And so when I haven't done my research enough to know when, Human Jungle and I think Hard I just saw was was recorded in late '85 but released in '86. Yeah. It might actually have been recorded in very early '86.
+
+Yeah. So was Human Jungle recorded, in '85 or was that later? Human Jungle was recorded in the summer of '85 and I think came out in the early autumn though. So So that's why you're playing it on German TV. Yeah.
+
+Well, it was just in the set. You know? Yeah. It was it was fresh, and it had reached a point where, as you can tell from the video, we kinda could play it live. You know?
+
+The best thing about that record was, we were rehearsing it. And we were in this house in the country, and we it's it was a beautiful day. And we'd set up with a kit on the lawn to have a rehearsal of this Human Jungle song, which I'd just written. It wasn't one that we'd been playing out live before. I wanted to call the single Sex and Travel because there was an album called Sex and Travel but this wasn't on it, and I thought this was kind of cool.
+
+Dave Barker said no you're an idiot. People won't know what to buy. They'll just buy the cheap version of the album, you know. Yeah. Alright, Dave.
+
+I get it. But we were rehearsing this tune up on the lawn. An Eider, it was, popped inside to get some beers or something. And the telly was on because it was the day of live aid in the in the living room. The telly was on being ignored by all.
+
+Max pops in, comes out with the beers. He goes, chaps. Yeah? You, you might wanna come in a minute. Yeah?
+
+Yeah. Come. Alright. So we stop what we're doing. We go inside.
+
+There's the telly. What's on it? Queen. And we're all looking at Max a bit. So, and then we look at the telly, and then we go, oh.
+
+Oh. Oh. You know? It was a real moment. I really, really, really do not like Queen.
+
+I don't mean his people. I mean, just their music. I just detest it. And, yeah, that day, they they held us all absolutely fucking spellbound. Yeah.
+
+Amazing. I mean, this is how the new the the Freddie Mercury biopic finishes with that. Oh, yeah. The apotheosis. The two episodes of Human Jungle I saw were, one with Jess Conrad.
+
+Uh-huh. I don't know if you you're familiar with the 24 episodes of Human Jungle. Well, I've seen many of them, but many of them when I was very small. So there was an essay with Jess Conrad where he plays a pop star who who keeps seeing his double. And it's something to do with some guilt complex he has over losing his wife, when he's when he's out gigging when he should be looking after his pregnant wife at home.
+
+And then I also saw an episode called Run with the Devil. Wow. I wonder if that just went in my back brain when I was about six and stayed there. Yeah. Run with the Devil, which is about some, repressed, religious chap who had a less repressed, more sexually, mature, wife who was who was making him more repressed and more guilty.
+
+And Yeah. And, obviously, Corder was sorting sorting them both out. That's what he does. It you know, forty five minutes fixed. That's it's gotta be good.
+
+And what, what I thought was cool, that he probably thought was cool, was that he had he had a a drawer with a tape recorder in it and and a tape recorder on every desk. You know, in the hospital, there's a tape recorder on his desk. Yes. Tape recorders everywhere. Yeah.
+
+I just liked him even when I was a little kid. And round about '85, '86 time channel four started rerunning it about two in the afternoon. Weekdays, early afternoons on channel four in the early days you could pretty much guarantee you'd either get The Avengers or The Human Jungle and on some golden afternoons both. So it was on my mind and yeah. Yeah.
+
+I wanted to write something that was a bit like New York. That's why I like the 12 inches so much better because you get that bit at the end where the guitar's all going like the Beedle Orchestra or something like that. I wanted, I wanted to be a bit disco. To be fair, I do like Owen's beat on that. It was very funny because well it wasn't very funny, not if you were Owen.
+
+It wasn't very funny at all. But about a week before we were due to go in and record that number, he fell down the stairs at the anarchist cafe in Islington and broke his foot, his bass drum kicking foot. But John rigged him up some kind of trigger thing so he didn't have to hit hard to make the drum work. He just had, like, electronic trigger that would trigger the sound nice and soft so he could do it. And using the little blocks of wood like you play at school?
+
+Now that's John Rivers. That is our glorious leader. I think that's why the blocks of wood are as loud as the rest of the band put together. He wants to drop his part. Oh, boy.
+
+Now that that John just went, oh, I know. I know. It went steaming off in there. There's nothing we could do to stop him. So anything else to say on the spy story?
+
+And, Well, I mean, you you kind of see how it plays out. And, yeah, it ends up with that that sort of rejection of all humanity, and I give up once again it's yeah. It's it's almost like a little jazz butcher manifesto because you see it isn't just me is it? I mean Eider's just just as bad even on the last record. What's he got?
+
+Count me out, you know? I know I should keep driving but I'm out of fuel. But no I think that's that's the sex and travel thing actually quite quite sweetly sorted out. Okay. We're gonna wrap up there I think and and think about Rain next time and and and maybe Conspiracy separate to, the Distressed Gentlefolk.
+
+I don't know. Or or can we do them all in one go? It'll be a long be a long go. Conspiracy and Gentlefolk are related. Yeah.
+
+They're related stories. I think it'd be worth trying to get them both done at once. Yeah. I've got a lot of songs to cover. What I will say about Sex and Travel very quickly is that a lot of those songs are written quite shortly before the recording.
+
+And the whole record was rehearsed with you know, people had been sent cassettes of bedroom tapes, but, like, the whole record got rehearsed by the band in one day in Kevin Haskin's living room, which at the time was a living room like this up in Kingsthorp. And, yeah, that was Sunday. Monday, we were in and putting down the tracks. One last thing I was going to, ask was, Felix is credited on this for the first time. There's so there's some sort of, transfer of bass power, is there, at this point?
+
+Well, we knew Dave was off, and so, yeah, efforts have been made to find a replacement, he was playing in a local band called Groovy Underwear. Of course. They're still going, unbelievably, though. They're Brighton based now. Yeah.
+
+Yeah. We looted him from Groovy Underwear. And I'm just trying to think. I think his role on Sex and Travel was just limited to doing a few backing vocals. I don't think he actually plays bass on anything.
+
+But he's obviously playing live when you're when you start out in the autumn. Yeah. In fact, he came in for the, he came in for the spring tour because, like And played in on, on on Human Jungle as well. Yeah. That's him on Human Jungle.
+
+Yeah. He's a great great player, but a very, very difficult man to figure out. But that's that's another story. Is he still around? The it's all it's actually it's all gone a bit Syd Barret.
+
+It's like Russ Cooper, who used to share a flat with him, said at a couple of drones club gigs lately, he said, did you, did you see him? Right. No. I'm sure he was in lurking about. And we've both had Facebook requests from him, which we've both ignored.
+
+You know, I was in his company probably most of the time that he was in the band from, like, spring '85 to autumn '86. I was more in his company than not, and Owen put it very well. One day in, Detroit, he said, you know, Pat, he's been in the band for, like, eighteen months now, and I feel like I know him less well than when we met him. People have coping strategies on tour, and some of them are more antisocial than others. His chief A private.
+
+His chief problem was, with you know, we would share two to a room when we were traveling, and we'd we'd mix it up. But things got a bit fucking fraught because nobody wanted to share with Graham because when you share with him, you don't go in the bathroom. You can't. It's permanently door locked, steam issuing forth the smell of a 100 dodgy male cosmetics from Boots. I took woah.
+
+Yeah. His coping strategy involved a lot of physical self care, and it was like, I'm dying for a shit out here. People would, you know, people it was a routine for people to knock your your room door and say listen can I just pop in your bathroom mate? And he goes yeah I know. When this isn't for publication but in, a French tour at the beginning '86, about three days in, Max had an existential crisis.
+
+And to put it in medieval terms, the gates of hell opened beneath his feet while he was sitting on the bus. And he just went into one. He, he went into a sort of sardine or what he was going. It's shit. It's all it's all shit.
+
+Just shit. Everywhere is shit. I mean, you might as well just I mean, I'm I'm I'm I'm going to share a bathroom with Graham all through the tour because it doesn't matter because it's all shit. He's you know, in the in the middle it was a genuine crisis. He was genuinely freaking out for half an hour.
+
+And so in the depths of this private hell on the bus, the most extreme thing he could think of to illustrate it was sharing a room with Graham and not being able to get in the bathroom. He was literally in hell and that was the way he chose to describe it. Poor man. We got him back. How much work have I got?
+
+Not too much.
+		`,
+	},
+	{
 		date: '2019-10-05',
 		location: 'The Plough, Shutlanger',
 		number: '6',

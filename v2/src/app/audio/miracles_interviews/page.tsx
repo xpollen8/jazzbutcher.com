@@ -3473,7 +3473,7 @@ const Miracles = () =>
 	<main>
 	<SectionOptions section='audio/miracles_interviews' />
 	<Tag>The Interviews</Tag>
-	<blockquote>
+	<div>
 	{interviews.map((i: any, key: number) => (<div key={key} className="listItem">
 		#{i.number}/16 - <b>{i.title}</b> {(i.location || i.date) && <>- <span className="smalltext">({i.location}, {i.date})</span></> }
 		<blockquote>
@@ -3488,7 +3488,7 @@ const Miracles = () =>
 		{i.body.split(' ')?.length?.toLocaleString()} words.
 		</>}
 	</div>))}
-	</blockquote>
+	</div>
 	<Tag>Get The Book</Tag>
 	<blockquote>
 	<BookMiraclesAndWonders />

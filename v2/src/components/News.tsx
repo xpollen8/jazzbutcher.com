@@ -20,6 +20,17 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: `Philip Snow/Pat Fish 'Miracles and Wonders' interview: Wildlife, Bath of Bacon`,
+		dt: '2025-11-27',
+		category: 'media',
+		link: `/audio/miracles_interviews`,
+		body: <>
+			The audio for the Wildlife, and the Bath of Bacon segments of Philip Snow&apos;s interview of Pat Fish have been added.
+			<p />
+			Robotic transcriptions for this and other interview segments are also now available.
+		</>
+	},
+	{
 		subject: `Website/search improvement`,
 		dt: '2025-10-08',
 		category: 'maintenance',

@@ -114,6 +114,29 @@ const doPostToDataServer = async (path: string, body: any, args?: string) => {
 		return cache[url];
 	}
 	*/
+
+	/*
+		block spammer strings like "eDCLdEUSUSFGeKvQWHDU"
+	 */
+	const hasUpperCaseAfterFirst = (str?: string) => {
+		const minLen = 10;
+		if (!str) return false;
+		if (str?.length < minLen) return false;
+		
+		// Check if entire string is uppercase
+		if (str === str?.toUpperCase()) return false;
+		
+		// Remove first character and check for uppercase letters
+		const restOfString = str?.slice(1);
+		return /[A-Z]/.test(restOfString);
+	}
+
+	const isBad = (str?: string) => str?.split(' ')?.map((x?: string) => x?.trim())?.every(hasUpperCaseAfterFirst);
+
+	if (isBad(body.subject) && isBad(body.whence) && isBad(body.comments)) {
+		body.isdeleted = 'T';
+	}
+
 	return await fetch(url,
 		{
 			method: 'POST',

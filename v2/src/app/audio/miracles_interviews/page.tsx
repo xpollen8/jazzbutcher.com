@@ -7,6 +7,579 @@ import { BookMiraclesAndWonders } from '@/components/Books';
 
 const interviews = [
 	{
+		number: '1',
+		title: 'Wildlife And 1988',
+		topics: [],
+		media: 'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/interviews/PhilipSnow_PatFish/Pat+1+Wildlife+And+88.mp3',
+		description: <>
+		</>,
+		body: `
+Or could it sit at the desk if you like and then have it right between us? Sort of. It's up to you. Yeah. That's that's fine.
+
+Mhmm. Testing. Yeah. Let's get let's get in something. Talky.
+
+Talk. Talk. Oh, yeah. I see a little waveform happening there. It's pretty tiny.
+
+Yes. It's, it I don't know where the mic is on the phone. I'm terrible if I touch these things. They usually go wrong. Do we have a larger wave oh, oh, it's a beauty.
+
+Oh, I had no idea my voice looked so nice. And now I I I was I was, searching earlier to see if I could do something clever like, audio to tech to to text machines Oh, wow. Which is which is a capability that some machines possess. But They do get it wrong, though. You see it on the BBC.
+
+They they they mishear things terribly. So, but I I I haven't found anything properly. And it might come to me just doing a little bit of transcribing. And I may not even really properly transcribe. It's just to get some ideas really more than anything.
+
+Yeah. And I was, you know, I was saying yesterday about, what we were talking about, the concordance and how we might try and think about picking out some low level detail Yeah. That Deep detail. That that requires, description and further explanation and indexing and cross referencing and lots of complicated stuff like that. Oh, it's bloody Susie again.
+
+Yeah. Oh, there she is. And it and and it all made sense because it links with Sometimes they do. Sometimes it looks like I'm playing the long game, but most of the time I'm just lucky. And there have been incredible schoolboy errors.
+
+And this is one that I only noticed when they reissued Cult of the Basement recently. I hadn't heard that record in ten years, and I'd never heard it as a CD, as a sort of one one way trip all the way through. So when it arrived, Raul and I sat down. He was on the sofa with me, and we just we scan up, scun up, and we put it on. And at the end of it, I was quite shaken.
+
+I said to Raoul, well, that was a ride. And he went, who's it? Where's uncle? But I noticed after sort of, what, twenty five, thirty years. I don't even know how long.
+
+One of my favorite songs. Oh, for fuck's sake. Excuse me. They do. Yeah.
+
+But sometimes you get caught out. I was out there with the band, and we were actually starting with quite jazzy stuff with the jump in there. Just to sort of ease ourselves in because these weren't places where they knew us at all. Yeah. And after the first night, this time I come up with it.
+
+Oh, god. I'm They're up in the cafe next door. Every now and then, they come in and give me about three loaves of bread. Sometimes I get cake. Perfect.
+
+So they're in operation on a Sunday then? Yeah. He's very curious. I lent him some records, and he he kind of dug them. And he's very curious.
+
+But he's nice. I like him. And there's a cafe next door. I I used to sit here in the nineties darkly predicting that if this gentrification luck goes on much longer, then I have pavement cafes on Going Road. Yeah.
+
+Sure enough. Yeah. They haven't gone gone as far as putting, chairs and tables on the pavement. They have little chairs out in the afternoons. Yeah.
+
+Wow. People all hot. People sit outside my window and have a nice chat. It's like, fuck off. I'm recording.
+
+So recording, Cult of the basement, schoolboy era. One of my favorite songs on that is Daycare Nation. And in Daycare Nation, the lyric mentions thousands of Mister Odds living inside of Royal Oak Station. Three songs later or something like that, we're introduced to mister Odd. Schoolboy era.
+
+Took me thirty years to notice. There's a sequencing error. Yeah. Yeah. And my god, the sequencing for that record.
+
+Oh my goodness. We had this whopping great map of all the different little tiny bits of music we'd recorded. Because we didn't just do the songs. We did all these daft things as well. Thing, babies, and Hawaiian guitars and stuff.
+
+All this old nonsense. Yeah. That's actually it's not Hawaiian guitar. It's Lawrence playing a fretless bass with his, Zippo Alright. With his lighter.
+
+It's a technique that he perfected on slow evenings. Sounds sounds Hawaiian and slidey. Yeah. I mean, there's there's we lost the Great Euphrates in San Francisco, so it's not entirely inappropriate. Well, what was the Great Euphrates?
+
+The Great Euphrates, I think I may have a picture of him, was, Oh, a person? Sort of. He was a plastic lobster about this size who had been spray painted gold. And Lawrence bought him off a street guy in New York City, Basically, because the guy had pointed out, it makes a great conversation piece. And he wasn't kidding.
+
+We had conversations about Euphrates all the way across The US. And there's I think there's a photograph of us. We took him into a diner and put him in a highchair. We're very fond of you, Fraisees. And at the gig in San Francisco, he disappeared.
+
+Lawrence was absolutely beside himself. And eventually, just we just had to admit the great Euphrates had legged it. I figured he'd made made for the bay and just gone to rejoin its people. You were carrying around plastic, plastic dinosaurs at one point as well. We had a couple of plastic dinosaurs during the making of Cult of the basement.
+
+They were parked on the, on the desk. And one of them was called Egulos. I can't remember what the other one was called. It might have been Mantaor. I'm not sure.
+
+But And you're quite keen on these pictures of, of dinosaurs meeting Jesus? And, I kinda collect them. Yeah. Because it's, you know, it's some of those American evangelical fundamentalist televangelist people, you know, the guys who want to live like it's Saudi Arabia, those guys. They are so mixed up about dinosaurs.
+
+Yes. From the creation. The it's all archbishop Butler's fault, isn't it? Was that his name, Butler? He some point in the nineteenth century, he'd he just decided that that he'd worked it out by reading his bible and doing genealogies and that.
+
+He'd worked it back. And he The Earth was created in on a Tuesday, April 04/2004. Yeah. Yeah. It's all his fault.
+
+Yeah. It should have been really revolutionary, really, this the the Victorians digging up fossils in Purbeck and the like. Yeah. You you'd imagine. I mean, it must have been quite controversial.
+
+And, I mean, some of the early projections of what they dug up turned out to be wildly inaccurate. And we're still laboring with that. We're still laboring with this saurus idea. Mhmm. The whole lizard thing.
+
+You know, if there was a book came out in, I think, the late seventies. It was called The Hot Blooded Dinosaurs. It revolutionized my way of seeing the world, really. One of the most persuasive arguments you'll ever see against dinosaurs as reptiles is that they calculated how long a stegosaurus would need to bask in the sunshine before it had absorbed enough energy to get up and walk around. And the figure they came up with, given the bulk of the creature and the surface area and the strength of the sun back in them days, Five days.
+
+Not accounting for heat loss at night. They just you look at some of them things. They're like you know, you look at the T Rexes and that. Those things are built for speed. The idea that they've just got to stand there and warm up for two and a half hours before they can actually chase you is fatuous.
+
+So pterodactyls covered in snow white fur. Mhmm. You know? That's real. That I have no imagination.
+
+You're you're gonna find this. You're gonna get really bored with this project really quickly because, like, it's all just stuff that I've seen or heard. But but I I I think I always think more and more that if you, you know, if you want to see evidence of, dinosaurs Oh. Then you only need to look at birds as we were saying last night. You know, there's a there's a direct correlation between the intelligence of crows and, you know, even the the birds the the non flying birds that look more like your your raptors.
+
+Your cassowaries and things like that. Yeah. Yeah. They're obviously, They're visually the same animal, aren't they? I mean, look at the feet.
+
+Look at the feet. Come on. And, you know, what you have to say about that also is that you have to understand that they've got sixty seven million extra years of evolution behind them. We've been around for, like, those guys, they've been around so long. They can fly.
+
+If they wanna go to Africa, they just go to Africa. They know the way. And yet their brains are these tiny things that weigh nothing. And we say birdbrain as an insult. It's mad isn't it?
+
+Those guys. You see the the swifts that have come over here in the summer, and you see them hunt. It's, you know, you wouldn't wanna be an insect. You really wouldn't. It's like a mad killer ballet.
+
+And the way they operate is extraordinary. The fact there's never a collision is in itself remarkable. I wanted to talk a bit about, quite a bit about wildlife Yeah. Which we sort of onto a little bit. And, and particularly, you know, the piss poor Midwest rock display.
+
+Do you know who that is? No. No. That's Guns N' Roses. Oh, is it?
+
+We had a I mean, I I see yeah. There's a lot needs explaining, but it it all happened quite quickly. It was the '88, and we were on a five week tour of The US. And Los Angeles is pretty much the end of it. We started in New York City, made our way along the sort of Canadian border and down.
+
+Yes. And, yeah, pretty road hardened. Knew what we were doing. And in New York, Phil, the driver, started it. He was driving around in the rented van with the windows down, his elbows sticking out, playing Public Enemy at full blast.
+
+I'm a sucker to decide I know you hate my '98. It's a Ford. It's a Ford van. You know? But we've been playing your records since we left New York.
+
+That's gonna come up. Yeah. So we arrive in Los Angeles, and it's a weird it's not a hotel. It's one of these sort of, like, apartment block thingies, like the Tropicana of infamy, but, happily, a lot cleaner and tidier than that. But we're trying to get the van into subterranean parking, and there's a whole load of pipes and shit in the roof.
+
+And it is it's not even touch and go. It's scrape and hope. Now we don't care what happens to the roof of the van, but I, for one, am terrified that we're gonna blow a gas pipe or something or, like, have sewage suddenly come all over us. You know? So while we're all sat on the van, sitting there, sort of going, oh, fuck.
+
+Oh, fucking hell. We become aware that we are being subjected to a hail of abuse from one of the balconies at the front of the hotel. And looking up, we see these pathetic, hairy, fucking relics of another age. Sweaty, fat kids in shit clothes, All on their balcony with a couple of beers, you know. All going, hey, you lame assholes.
+
+You can't even break your fucking van. And all this kind of shit. Right? And, like, you know, we're a little bit tense about this fucking van business anyway right now. And, these geezers are yelling at us, and we respond as that generation of the band would respond.
+
+Why in the winters take a fuck off you long hair, cunts. And that was the first time we met Guns N' Roses. Oh, my god. And I was immediately contemptuous because, oh, I thought you were supposed to be an LA band, But you're staying in a hotel like people from London. You know?
+
+What's that about then? And, of course, later on, you find out that Axel and his mates come from, like, butt fuck Idaho or something. You know? Midwest rock display. So that's them.
+
+The funny joke is that we're not alone, them and us, in this hotel. There's another band in residence. As I find out when I go in the elevator and find myself face to face with Flavor Flav with his clock on. He's like, where you're from, man? He's like, I'm from London.
+
+He goes, London? Yeah. I've been to London on two world tours. And I'm stood there thinking, well, what the fuck do you think I'm doing here? But I say, nothing.
+
+You go, you don't love black folks in London? I said, yeah, man. They're all over the place. That's French far and wide. Yeah.
+
+So, like, that that happened. And it turned out my room was to directly beneath the room of Chuck d. And my wife had come out to join us at this point, so having my own room with my own wife was kinda cool. What kind of took the erotic edge off it a little bit was upstairs Chuck in all night heated debate with his crew all going, yo. Yo.
+
+Yo. Yo. Yo. Yo. Yo.
+
+You can't say no. Yo. Yo. Yo. Yo.
+
+All night long. Obviously, they just fucking stoned out their gourds and being all fucking you know? This is important. And the following day, Kizzy and me went for a swim in the little hotel pool. And who do we find ourselves in the pool with?
+
+Chuck D and Flavor Flav. So it's you know, there's no imagination in it. It all just that's what happened. And, yeah, we we found the company of Public Enemy a great deal more agreeable than that of, the hairy twats from Bumfuck, Idaho. I I imagine that there was some some real wildlife involved.
+
+There was something about, you know, captive dolphins or some thing or dolphins on display that maybe I'd rather infer that. No. I mean, really, when I say wildlife, I've got my big irony hat on because we are the wildlife. We're the freaks. You know?
+
+Like, the white Americans scream abusers. The black Americans just fucking curious. You know? We must study them. And so it was like, we're the wildlife, basically.
+
+Hey. Hey. Yeah. And and and Kizzy walking up to the bad man. Iain O'Higgins, who mixed Fiscotech and then he joined us as a live sound man.
+
+It was just one of the great jazz butcher cliches. You know Higgins? He's a very, very, very bad man. That's just one of them things. He's a boy.
+
+A very, very, very bad man. He, unfortunately, man, he looked and sounded just like Bob Geldof. It was it really was nuts. And so yeah. Oh, that's all Higgins.
+
+He's a very, very, very bad bad bad man. And that weekend when we checked into that little fucking apartment hotel complex, the first night, Higgins went off to a party with some of our mates in LA. And, you know, I was I was busy being wifed, so I didn't really clock any of this. But Higgins took the band bag apart to the party with him. Gizzy, who just he was clearly planning on just spending an evening in his hotel room smoking until he couldn't see, discovered this and became so enraged that he ordered a taxi.
+
+He had himself delivered across town to this party when stopping him, walked straight up to O'Higgins and clocked him one. It's very, very, very, very uncharacteristic Kizzy behavior, but it had obviously been building in him ever since he made the discovery of what had happened. He's just been building and building and building, and so I'm gonna thump him. I didn't imagine he was one of your party. I I imagine he was someone else.
+
+So that's, that's helped clear Yeah. Something up. Yeah. The bad man is Higgins. Sometimes sometimes I thump him just for fun.
+
+And the other thing with Higgins is that, there's rule in that generation, the JVC, because we didn't know each other very well when we started out. We we were sort of assembled a bit like, you know, blue or five or something by McGee. And because I'd seen what happened with the last lot because they didn't know what they were getting into. I didn't with this new lot, very early on, we set down a whole sort of bunch of almost like rules. We called it the Rennes Accords because it was done in Rennes.
+
+And that enabled the system of sanctions, chief amongst which was the head slap. There was a there was an ultimate sanction, which was the bus slap, and only one of those was ever administered. Oddly enough, to O'Higgins. The charge we all saw it. We we were we were all there late night in a Turkish run pizzeria in provincial Austria.
+
+That's fair. Yeah. All the pizzerias in Germany and Austria are Turkish. Yeah. And late at night, the guys are obviously tired of us.
+
+We've had our pizzas, and the guys were standing there. Right? Who wants who wants dessert? And who wants dessert? Come on.
+
+Come on. Hurry up. And Higgins has obviously decided he wants some dessert. And so he goes, I do in a Turkish restaurant in Austria. Well, we decided that such a case of bringing the game into disrepute merited the ultimate sanction.
+
+And the following morning at the gas station, you got a bus slap. So the bus slap is? They drive the bus at you and you get hit by it. They don't do it very fast. And and, I think it's still with us, is he?
+
+Yeah. Bless him. He met a friend of ours out there, Nancy McCoy, and he married her. And they've got two lovely grown up daughters now. And, yeah, they're disgustingly happy.
+
+It's a funny thing, Nancy. You could do a chapter on Nancy all by herself. When we first met her, she was working for the record company that put out bloody nonsense over there at the compilation. And she when we got to LA where she lived, she also turned out to have this band Downey Mildew. And, they supported us a lot.
+
+They came on tour with us in '88. Seeing them in Canada was hilarious. All of them just like born and bred Californians. Some of them Mexican. And to see them in Saskatchewan was a joy.
+
+You know? It's like you you think, oh, yeah. Britain, America, Canada, it's all the same. No. Forget it.
+
+It was like Hungarians in Portugal. And so, yeah, it was on that '88 tour that I made my big mistake. On the previous trip in '86, Max and Owen had both fallen in love head over heels in love with Nancy. Graham probably hadn't noticed that she was there. But what goes on in Graham's mind is another chapter, one that should probably best be remain unwritten.
+
+And so those two in '86 just flipped for Nancy. In '88, Paul Mulraney just went, oh, Nancy, I'm gonna marry you. And as we can see from the subsequent evidence, so did Higgins. And, when my wife came to join us on that tour on the West Coast, we were in it happened in Seattle. We'd done the gig.
+
+We were hanging around, I think, a gay bar. And so things are a little bit tense because they were a bit resentful that we'd brought a couple of girls with us. It all panned out fine. But she had noticed that Paul was very taken with Nancy. And she remarked upon this this to me, and very, very carelessly, because of Max and Owen and Higgins and Paul, I just went, ah, yeah.
+
+All the musicians love Nancy. Forgetting, schoolboy error, that I too am a musician. Small angry New York American wife, she hadn't forgotten I was a musician. She started kicking me in the shins, and to this day, I have footballer's legs. That when I when I went for treatment at the hospital, the doctor looked at my legs and went, what the fuck is that?
+
+I said, that is a small angry New York punk rock girl kicking me in his shins. You know? Right. Yeah. Got a different one here, boss.
+
+I don't I don't know if those hospital guys really care if you're different. You know? I mean, you're probably just another tumor to them. But they are awfully nice. I don't know.
+
+To the these the people that didn't make it and the the the ones that can't be here stay with you. Dust diffs. They haven't passed the they're definitely dead. So how do we go? Greg Shaw?
+
+Yes. Greg Greg Shaw was the boss of Bomp Records. Yeah. I've I've I've looked them up. Yeah.
+
+I've I've I've tried tried to guess. Yeah. And and the connections. Well, the reason I got friendly with Greg was through Sonic Sonic Boom. Yeah.
+
+I saw that he released some Space Men 3 stuff. Yeah. And he he gave me one of those lovely posters for that American tour that never happened because they never got let in. Alright. But, yeah, Sonic brought him around here one night.
+
+I I knew of him from, like, you know, rock history, but I'd never met the guy. And Sonic brought him around, and we got on really well. And then I was a year or two later, I was in Los Angeles, and, he took me clubbing to the most ridiculous nightclub I've ever been to. And he was saying really daft things like, wow. This is the most exciting thing I ever seen since the Grateful Dead man.
+
+And he's a sweetheart. But then he died. So he can't be there. And, I I you know, I saw this the title of this this zine that, he created in the sixties, which was a really cool title of Mojo Navigator. Have you heard of that?
+
+I didn't know that one. No. Yeah. It's That's a good title. It it's, it's sort of, cited as inspiration for Rolling Stone magazine.
+
+Yeah. Well, everyone's got a cross to bear. Sometimes, like, they don't they seem to have gone away now, but there was a a a terrible period of life where there was a thing called the Barenaked Ladies that came from Canada. Yeah. I understand.
+
+And once or twice, I saw them doing their witty, ironic Canadian songs on a telly or on the radio. And as my flesh crept against my bones, I began to think, Christ. I hope this isn't my fault. Oh, Canadian rock. Canadian rock.
+
+Oh my goodness. Oh my goodness. We've got some unlikely friends on the Canadian rock scene. We, had quite a nice round about the time of the '88 tour again, we seem to be keep coming back over and over to '88. But that was when we made friends with Skinny Puppy.
+
+Celebrated industrial animal anarchists. They were actually just sweet Canadian boys who like our songs about elephants. Very nice chaps. And then Donahue, is that John O'Donahue? No, sir.
+
+That is Deirdre O'Donahue. Alright. Okay. She was a DJ on a station called KCRW out of Santa Monica. And KCRW is still going today, and it's still the best place to hear, like, original music in Los Angeles.
+
+And she used to get us in there and play our records and just a really good mate. And once I went on holiday with Deirdre by mistake. And what a story that was. Should I? I don't know.
+
+I mean, there's so much of this stuff. Yes. Expand. You see, I I I I I I'm, I was taken completely down a dead end Yeah. By just the surname.
+
+So, you know, so I Googled O'Donoghue and the the person that turns it is John O'Donoghue. Have you heard of him? Irish poet, priest, philosopher, fan of Hegel. No. No.
+
+I didn't know about him. Exactly. Sounds sounds like your cover too, actually. Died in 02/2008. I thought this is perfect.
+
+He's a dead man. That'll be him. He's a poet. Philosopher. Yeah.
+
+Yeah. No. No. Deidre was a poet in her own way, I guess. She was very, very good at talking on the radio.
+
+Our first face to face encounter with her came in '89. She'd expected us to go and do a thing with her on the '88 tour, but we were too busy going swimming and just being flaky. And we didn't know we were supposed to go. And when we arrived at the Roxy that night for the soundcheck, we were delivered of just enormous pile of Tiffany posters. Big posters of Tiffany.
+
+Hundreds of them with a note going, that's for not turning up you assholes or something like this. Right? And we didn't even know. Turning up to what? What what's this all about?
+
+And we just took the Tiffany posters, and we just did the whole fucking stage. Just millions of Tiffany's. And the next year, she and the tour manager cooked it up that we would go in and we would play live in her studio, live to air. Only the tour manager only told us this on the afternoon as we drove towards the place. And we're all in a blind we're all in a blind funk like.
+
+Live? To air? Oh, they're in in Los Angeles, where all our fans live. Christ. You know?
+
+What the fuck? So we put put our feet down. She said, right. She gets two numbers. She'll interview.
+
+Two numbers by the band. That's it. No more. Two numbers. So we get settled in.
+
+We have a little sound check somehow. Headphones and that. All in the room together. And, our pals showed up. Downey Mildew, Nancy's band.
+
+They're all in the control room along with our crew. And this Deirdre who's sat there talking to us down the headphones, and, oh, dear, she's got a voice for radio, this girl. She ends up getting 13 songs out of us just coaxing and cajoling. And if the bloody thing ever comes out, that whole session is going to be in the next box set with all the a sides and b sides. So I divided into a sides, b sides, c sides.
+
+And being a Santa Monica is sea side. And that's like the whole session. I've taken out the interview stuff because it's a bit like, you know, when when it's the wildlife thing again. I can hear myself in the interview, you know, taking the piss out of people who are now dead. So I'm not gonna put that out for money.
+
+So we just said, no. Just leave the music. You do hear her voice once or twice, so you can just hear her introduce in a couple of little bits and pieces. But, oh, yeah. She totally cajoled us.
+
+And after that, we were great mates, and I used to go and, like, always see her when I was over there. We weren't lovers or anything. She had a bit of an unfortunate history of accidentally sleeping with pop musicians, but I wasn't one of them. I think that's why she liked me. And then and she and she must have died around the same sort of time before you wrote all that?
+
+Yeah. She went sometime in the early two thousands. She lived alone. Nice little house in Santa Monica. I've been there.
+
+And, yeah, nobody saw her for a while, and a couple of coppers went in, just found her face down on the floor in the living room. Just went over. And it was funny. I I, you know, I felt sad at the time, obviously, lose a mate. But some strange little thing happened months months later.
+
+I was not thinking about her at all, and some record came on. And it was just bang! It was like being punched in the head. The tears came. I was like, proper well, grief surprise.
+
+You know? Terrible. Can't even remember what the record was that triggered it now. But chances are that helped to trigger writing Wildlife. Also, chances are I was probably upper I I know for a fact.
+
+I was operating very much under the influence of of the fact that I'd just been to see John Kale performing Paris 1919 live on the South Bank with an orchestra. Yeah. And, you know, that that is there are complete lifts. You know, everything's burning, isn't it? Brentwood's burning the upline.
+
+It even be posh part of town. You know? That's a direct lift from the middle of, Antarctica Starts Here. And then it gets worse. It goes And that, again, I mean, you know, I haven't even bothered to repaint the bike.
+
+I've just stolen it. It's just a complete lift. I just it wasn't done for, like, great release. It was done for Graham's Northampton compilation. Yes.
+
+And it felt like a chance to do something a little bit daft without really incurring anyone's grief, anyone's Yeah. I was I was surprised by that. It wasn't, it wasn't turned into something grander for a for a formal release. It would have been nice, I think. Well, these things It seems like, you know, it it, you know, it could, it would it would survive a grand makeover, you know, being polished up and, and expanded Yeah.
+
+With strings. Almost. Possibly. Yeah. I mean, these things can lie around like unexploded ordnance from a forgotten war and then suddenly turn up much, much later.
+
+And it seems if if if So it's not impossible. It might appear. It feels like, sort of three three or four songs in one. You know? A hard rain has fallen.
+
+We haven't we haven't covered Alex or Nikki yet. Nikki Sudden, I met very, very early on. Dave Barker knew him. And Dave Barker at Glass Records says the man who changed my life. The man to whom I owe my life.
+
+I don't mean he stopped me from being killed, but the life I've had is entirely the responsibility of Dave Barker. I I take no responsibility for any of it myself. So he has a lot to answer for. But no. I mean, without without Dave, I would have had a completely different life is what I'm saying.
+
+No one else would have given me the, the oxygen to get away with what I did. Because and talk about growing up in public. You know? More so than McGee then. You know?
+
+Well, I mean, I the when Alan came along sort of at the right time, I'd sort of forgotten about him, and I assumed that he'd pretty much forgotten about me. But he hadn't. He tracked me down. I didn't even realize the glass contract had run out. So I you know, young bands will sit where you're sitting, and they will say, Uncle Pat, Uncle Pat, you've had record deals.
+
+How do you get one? And I go, I have no idea. Because if they want you know, if people wanna put you out, they'll come to you. Right? Put you out sounds like prostitution, which it sort of is.
+
+If they want to, balance you on a little stool in a little window somewhere. They'll do it. Oh, I'm bloody certain I must have been balanced on stools in windows at various stages. I was thinking the other night about a venue in Belgium that we went to. The town is called Hoekstraaten, which translates just as high street, and that's pretty much what it was.
+
+It was after playing in Brussels, this was a little bit comedown. You know? And the venue was more like a sort of cafe with a big glass fronted window and all that. So it made me think of it. And it all seemed a little bit tame and provincial and not really the thing for the last night of this leg of the tour.
+
+So we were setting up and making the best of the little PA and that, and I was talking to the barman. I was saying, so, what time do you go? What time do you chaps close then? Fearing he might say, like, oh, eleven. You know?
+
+Leaving us stranded in Hoekstraaten. I said, so what what what time do you chaps close this evening? He says, well, it's supposed to be five, but you know? Yeah. Sorry I asked.
+
+And we missed the boat home the next day. The Domino's Pizza in Leicester, where I've just driven from, is, open till 5AM, seven days a week. Wow. Who needs pizza at five in the morning on a Tuesday? Bad people.
+
+Whatever they're doing with that pizza, they're up to no good. God. Lord. So yeah. Nicky Sudden.
+
+Sorry. Dave Barker introduced me to him. Somehow because, I mean, Nikki had been in Swell Maps and was a regular on John Peel and in the NME. And to me, he was a real pop star. You know?
+
+Yeah. But somehow, Dave persuaded him to support me and Max at a little gig here in Northampton. And, that's where I met him. He turned up very, very late, came shambling in in his crushed velvet jacket and his flappy trousers and his, like, you know, scarves. And he had a girl with him who I'd seen once or twice at gigs in London.
+
+She's a kind of scene girl. I think she might have been called Emily. And, she came steaming in. Sudden literally, the first thing that Sudden said to me was, so has anybody got any drugs? First thing.
+
+She goes, this is Nicola. Nicola has syphilis. Yeah. For yes. I remember it verbatim.
+
+Yes. I was freaking out. I said, oh, no. What am I involved with now? And what was most comical about it was he stayed the night.
+
+And my girlfriend, who was quite a bit younger than me, she was about 18, and not that worldly, not that well versed in musician humor, soon as he left the following lunchtime, she's running around going burn the sheets. Burn the sheets. I I was surprised that he released 13 studio albums I read. I'm surprised it's that few, honestly. He just worked and worked and worked.
+
+Have you have you heard them all? No. No. We got to be good pals, though, and we both spent a lot of time in Germany. So we'd always be, like, bumping into each other on things, which was really nice.
+
+And, I also read that he was with Creation and Bomp, which takes us back to To Greg. Yeah. To Greg. So Greg must have released one or two of either the Jacobites or his albums through Bomp in The US, I guess. I would think he probably did something for Sudden.
+
+Yeah. I think the Jacobites go through, Secretly Canadian over there. I think. I don't know. Dave Dave Barker's the man.
+
+He knows all the tie ups. Because, like, back I can remember back in the day in '86, he put out a record of the Replacements. And he did a swap for the Jacobites with a Minneapolis label called Twin Tone. It all comes rushing back. Yeah.
+
+He he got, I think, an album and a compilation out of the Replacements, and they got Jacobites and Robespierre's. But I think these days, someone else does it. And, one of one of his album titles jumped out at me. It's called from from the Warwick Road to the Banks Of The Nile. And I and I didn't know.
+
+You know, there maybe isn't a connection between that and the East Of The Nile, West Of The Rockies. Yeah. East Of The River Nile. It's an LP by, oh, come on, Augustus Pablo. The guy with the melodica, in fact.
+
+Oh, right. Oh, okay. And it's it's a real spooky reggae classic. It's a beauty. Nothing to do with Nicki then?
+
+On this in this case, no. No. I've got a bad feeling that Nicky was I think Alex was the last one to be added to the the death toll in the last verse. Nicky died Nicky died in 2006. '6.
+
+Yeah. Yeah. And and Alex in '10. Yeah. And it the song was written in '10.
+
+So, yeah, Alex would have been the last one on. I can't remember who had his place before. Isn't that awful? Just before we leave Nicky for a second. So much to say about Sudden.
+
+Yeah. There's there's, He's got his own book though. Right? Yeah. It's written, I think.
+
+I haven't read it, but it's there. I saw it last night. And, obviously, a lot is made of this, Death is Hanging Over Me. Which he must have must have been a regular of his, I guess, his set, the fact that he's singing it. I guess.
+
+The one I always remember him singing is Baby, I'm the last bandit. I can you know, he'd turn up at a gig in Nuremberg, barge his way onto the bill. And while you were hoping to do a soundcheck, Nicky would be up there with his acoustic out of tune going, Baby, I'm the last bandit. And you're kinda, really? I used to think you were a proper pop star.
+
+But, of course, he always was. You know, fucking Mick Taylor from the Rolling Stones turned up at his funeral. Oh, wow. Which, you know, Kusworth was denied. Isn't that mad?
+
+When Stevie Garafalo died, we all went piling up to the church service. And afterwards, nine of us came back here, all gentlemen, all in suits. And we sat around drinking beer and smoking pot and ruminating. And it went you know Tim Harris? Bass player?
+
+Best bass player in the world? Yeah. At one point, he just went someone remarked on how smart he was looking, and he went, yeah. Yeah. I really like to wear a suit.
+
+It's it's just a shame that someone's got to die. That's become a bit of a staple around this house. So the old adage about, you know, weddings and bar mitzvahs and funerals. Have you played at a funeral? Not yet.
+
+Would you? Yep. If you're invited. If paid. And the collection today is not the Northamptonshire air ambulance.
+
+Wouldn't that be scandalous? Wouldn't that be scandalous? It's like, oh oh, could you could you play Dave's funeral? £150. It'd be worth it.
+
+I'd I mean, actually, yeah, it'd be worth doing it just to see their faces. Glenn Campling got me the other night. I've done this gig with Mickey Greeney up the road. And, Glenn I don't know when Glenn last saw me perform, probably early eighties or something. You know?
+
+And he came up afterwards, and he went, yeah. Lovely, lovely guitar. A lovely performance. It put me in mind of, Duroty Cullum. And I was going, oh, I'll take that.
+
+And without dropping a beat, he just went, singing was shit, though. He's still around, mate. He's I thought he sort of disappeared off the face of the earth. Yeah. Well, for years, he hasn't had anything to do with anybody on the scene.
+
+Yeah. And he jealously hoards all his Bauhaus films and tapes. But the times they are are changing. The guy who brought him down to my thing was, Andy Brooksbank, who used to be just like this mad fan and has lately become sort of the world's leading Bauhausologist. When Dave wrote his the his book, you know, Who Killed Mister Moonlight, he was phoning Andy up to ask him when he did things.
+
+You know? When did this happen? And so he's become, like, an authority now. And it because he will do anything to do with Bauhaus, that that extends as far as me. In fact, at one point, it extended as far as Stranger Tractors.
+
+He was running a Love and Rockets fan scene monthly, and Love and Rockets weren't doing anything. David j wasn't doing anything solo, nor was Danny, nor was Kevin. I wasn't doing anything. Jazz Butcher. But I was playing drums with Curtis.
+
+So he did a whole episode of the Love and Rockets fan scene about bloody Stranger Tractors. That's how keen he is. And he's conducted insanely long interviews with me and Eider where you can see the mental disintegration as the beers go down. You know, you can we just basically stop making any sense, but he doesn't stop asking questions. Sorry.
+
+Talking of that, I've rambled on madly, and I can't even remember what I was supposed to be telling you. Moving on to Alex Chilton. Oh, dear god. Yeah. All these guys have chapters in their own right.
+
+I I saw, you know, there's a definite connection with Alex and your, your leanings. He appeared on he appeared on those two sort of cover tribute albums for Brian Wilson and Tom Waits. And I read that his last studio appearance was on Ray Davies, See My Friends Right. Which which was released after Alex died. He did become friends with Ray Davies.
+
+They they were neighbors in New Orleans. Alright. That's right. Live there? Apparently so.
+
+I didn't know this, but, yeah, they were practically next door neighbors. And, of course, Alex has always loved the Kinks. He used to do Kinks covers even back in Big Star. So, like, no surprises there that they got on. And I went to this rather ridiculous thing at the Barbican Center where they recreate a bunch of young hipsters and the twit from REM, the bass player, the nerd from REM, and Terry Edwards, because they always need someone to MD these things.
+
+Big old ensemble of young hipsters and old heads recreating Big Star third live. And, right at the end of that encore time, on comes Ray Davies to do, I think they did At The End Of The Day. And, you know, I am sitting as close to Ray Davies as I am to you. I've got front row center seat, which I didn't even ask for, let alone pay for. But when I found my seat, that's where it was.
+
+Ray Davies comes running on, and he's a cantankerous champ. He's not happy with the public, really. But tonight, he is just mister good vibes. As soon as he's on, everyone goes nuts. And he's just beaming and radiating love and decency and everything he'd want Ray Davies to radiate.
+
+Now I'm thinking, Fishy, this is the chance of a lifetime. And so because, you know, I'm that close to him. So I just in in all the jolliness that's carrying on, I just go, you dirty goona. There's no way he didn't hear me, but he stayed cheerful because it would have been embarrassing if he'd had a tantrum and stomped off and it was all my fault. That would have been poor.
+
+You've spoken to him, have you? No. Not beyond not beyond that? No. No.
+
+We've never met. I mean, he's just a different world to me. I wouldn't know what to say to him if I did meet him. So I did see a documentary once about his hat. He's I did read his autobiography X-ray, which is a very strange conceit.
+
+I mean, I read through the whole thing, but I wouldn't say that I really understood who was talking at any given point. So he does he does like these oblique takes on things. And yet, you know, his songwriting is so direct and so open and so generous. But in all other departments, he seems to be kinda... What did you think of him, at the twenty twelve Olympics opening?
+
+Didn't see it. Did you know? He's there. He's there between, who would it be? Dizzy Rascal and Good lord.
+
+And some and some northern rock band. What are they called? There's an awful lot of that sort of thing these days. Embrace, Kiesche, Verve. Other northern bands are available.
+
+Shed Seven, for example. Yeah. Three piece guitar, proper slip back hair. I forgot. Not a brassie, though.
+
+No. No. But anyway, you know Rock guys. Ray Ray's there as well, being quintessentially Ray as as they're trying to describe, you know, the the this vast tableau that describes Britain. It was basically a sort of fantastic public display of everything which the government was proposing to destroy over the next half dozen years.
+
+Yeah. Take take take a last look at your NHS. Take a last look at your talented songwriters. Take a last look because in a minute, ain't gonna be nothing left except health insurance and Jessie j. Yeah.
+
+It'd be it'd be nice to do, it'd be nice to do, to have a chat about Sixteen Years or whatever it turned out to be probably seventeen years plus the next ten, plus the next six. Yeah. Sort of continuation. Yeah. I have a friend who's active.
+
+She's the chairman of Northampton South Labour Party. And she's a nice woman, but she's a bit naive sometimes. She listens to my stuff, and she goes like she said this Sixteen Years, and it's like, oh, oh, that's, that's really political. You should do the political years. Like, you know, like the violent years, you should do the political years.
+
+And I say, yeah. But do you know how many of these there are? You know? And and and really, assembling them like that. I mean, Mind Like a Playgroup is political after its own fashion.
+
+You know, it's a it's a party political broadcast for the Syd Barrett turn you back and walk away party, but it is in its own little way. You know, if if if some angst ridden Midwestern American kid can write emo anthems and say, you know, oh, it's it's it is political, though, whether you choose to eat broccoli or not, then I can say that Mind Like a Playgroup for all the noises on it. It's conceived I think probably if there was a model for that song, it's a kind of idiot version of, Jug Band Blues, isn't it? By who? Sorry.
+
+Syd Barrett. Alright. That's, the last song he recorded with Pink Floyd. And people Nick Kent famously said, oh, Jug Band Blues, the most searing self diagnosis of schizophrenia ever committed to vinyl. Mad sits back.
+
+Right. Okay. What it is and you can deconstruct it line by line, and I can do chapter and verse on this. I could I you could get a book out of my thoughts about Jug Band Blues. What it is, it's just a massive fuck you to Roger Waters.
+
+That's what it is. And there's a fabulous TV thing shot at a stage late in 1967 when Syd is supposed to be just too mad to operate. You know? We we had to stop picking him up because he was just too mad. They booted him out in January, and this film was done the previous month, December.
+
+And he's there. Christ knows who decided to put Jug Band Blues on the telly, but they did. And, he's there obediently miming, lip synching, Bang on it. Professional. But at the same time, looking really strange and, like, you get to the very end of the song.
+
+It goes mental. It falls to pieces. There's a brass band. There's a load of Syd just going on his guitar for few minutes, and then it fades back up to just him alone with the guitar. Strumming just these last few chords.
+
+And the last lines of the song is, "And what exactly is a dream? And what exactly is a joke?" And on his TV broadcast, as he sings that last word joke, he just turns around and fixes Roger Waters with the stare. That ain't, mental illness. That's something else.
+
+Oh, that's something else that is. There was a there there's another, sort of maybe only slightly veiled political comment about, in one of, the Jasper Tzu songs about, Care in the Community. As a reference somewhere, it escapes me. Well, you got your day care nation, but that was just really us being irresponsible with Sonic Youth's titles. Yeah.
+
+I don't know. I mean, there's there's a whole song about Ben Silcock on Waiting for the Love Bus. Yeah. Do you remember him? Yeah.
+
+Jumped in with the Lions. Yeah. What fascinated me was that everyone I heard talking about it were just being really hostile to him. There's a guy who goes, stupid man. Bloody hell.
+
+Really putting him down. Oh, I think, oh, I hope the lions ate him and all this kind of nonsense. And I'm like, can you can can nobody here see you? This is the act of a really desperate man. You know?
+
+I mean, he needs a fag and a hug, at least. And I I really identified with the cunt, and I remember that Christmas talking to my parents about it, and they were like they they just didn't get it. They're like, well, you're just bothering the lions. They said, but but but but, you know, there but for a traumatic twenty minute episode on a tube train one day, it goes you or I. You know?
+
+What the fuck? So I felt compelled to write the tune. I wonder I I have looked at Ben Silcock, actually, and I wonder wonder if he's still around or if he's whether he's recovered and all of that. Well, of course, who knows? He might have his own lion and tiger sanctuary somewhere in Kent by now.
+
+That'd be nice, wouldn't it? It'd be nice to see a happy ending for once. Folk music. You know, I'm I'm friends with Joe Woolley, and he's deep into all the folk. Yes.
+
+The lords and all that. Yeah. Well, he was singing a song once, old traditional folk song. I think it might be one that they've recorded. No.
+
+I'm talking absolute garbage. It wasn't even Joe that brought me this insight. No. It was when Paul Williams got involved with the producing of that Shirley Collins movie. And well Paul and Tim Harris and I were watching, like, an early version of it, an early cut.
+
+And she performed some old folk song or other. And verse by verse, it dawned on me. Nothing ever gets better in a folk song. You know? They've they they've murdered the daughter in verse three.
+
+And, oh my god, they're going to murder all their children in verse four. You know? Oh, and then they'll all be eaten by a dragon down by the old canal. It's a bit like the the tradition of, of nursery rhymes for children in England. Yeah.
+
+Which, of course The ladybug fly away home. Your your house is on fire, and your children are dead. There's a chap called Rob Chapman who wrote a fantastic book about Syd Barrett. And he points out that Syd, although he's probably only got ten or eleven years on me, he was raised on completely different intellectual diet. To him, Edward, Lear, Hillaire, Belloc, these sort of compendia you used to get, you know, a trial to treasury of verse, that kind of thing.
+
+To him, that would be, like, just what there was. To me, just ten year growing up just ten or twelve years later, there's, like, do not adjust your set and Doctor Who and the Kinks. And if I'm reading anything, it's probably comics. But he's just the tail end of all that sort of you know, people talk about all the the the fairy story type feeling and some of the lyrics on Piper at the Gates of Dawn. And, yeah, it's there.
+
+And in fact, Chapman does a fantastic analysis and finds, like, whole chunks that have been lifted from various bits and pieces. And it's stunning. His Syd's reference points, just a decade away, are utterly alien to the ones that I grew up with. And chances are you as well. I don't know.
+
+Yeah. Yeah. There's a a a a quaintness that disappeared probably in the late fifties and sixties. It's almost like the sort of the English take on psychedelia was almost like a sort of last flowering of that. You know?
+
+It all went pretty Alice in Wonderland and granny spectacles, and it was all a bit airy fairy. Rupert's people. You know? Well, maybe another time. But so so I think, I I have, you know, some ideas about maybe some topics for another time.
+
+So so politics in Sixteen Years plus might be one. We haven't even done Alex. No. We were supposed to do Alex. We never did.
+
+No. Just touched on him briefly and then and then veered off into Ray because he he played that song. That's right. Ray's last or Ray's Well, it was the see my friends album. Yeah.
+
+That's right. Yeah. So yes. Sorry. Tell me about Alex.
+
+As as we were going into that night where Ray's saying that sort of recreation of Big Star three, which they did very earnestly and very well. It's just kinda weird without him. But as we're walking into the Guardian Complex Guardian? Barbican. Barbican.
+
+Yeah. We'd been in this lovely boozer. It was a beautiful May evening, and the the the boozer had a kind of luminaire. So it was getting daylight even, as you say, in the pub drinking. And the last thing I wanted to do is go and see this earnest Q Magazine type rock tribute shit in a great big concrete airport type building.
+
+I wasn't in the mood. And I remember we we made it under the Barbican down to where the center is. And you sort of descend into the concrete bowels, you know. And I turned to my mate, Matt, and I said, you know what? Alex would have fucking hated this.
+
+He would. He'd have run a mile. He'd have gone missing. Not not his environment at all. One of the coolest things he ever said to me I've spent very little time with him, but I remember it well.
+
+But one of the coolest things he said, we were driving through New Orleans, and we passed a club on a corner. And he said, see that club that that's I think he said it was Muddy Waters Club. Yeah. So, well, the Muddy Waters Club. Yeah.
+
+Yeah. Yeah. That's his club there. Had some of the best nights of my life in there, he says. And I'm like, well, playing.
+
+Yeah? He goes, no. I was the janitor. That's him all over. That's How did you come to meet Alex?
+
+We shared an agent is how it began. In fact, our agent, Frank Riley, rescued Alex. He literally found him face down in the Bowery, and picked him up and went, weren't you Alex Chilton? And he got him a record deal, and as he was quite a high powered agent, he took care of his gigs. And so things, you know, wound up again, and it was time to go on the road.
+
+Alex had a little trio. It was just him and a rhythm section from New Orleans, and they'd just done the High Priest LP. And it was yeah. They wanted to go on tour, and we were coming again, it's the '88 tour again. It's 1988 night.
+
+Can't get away. And as we hit California, we had four days. We had the I Beam in San Francisco. We had two nights at the Roxy. And where was the other one?
+
+I wonder. Could have been Long Beach, maybe. I can I can dig all this out? I've got it all written down somewhere. It was e no.
+
+I think it might have been San Juan Capistrano, actually, where the swallows go. So we had four dates. And here's the thing. Alex Chilton is supporting us. That's the thing.
+
+And the first night, like I say, he's got this very small, very sort of rootsy little band going, and he's singing these largely quite comical and either comical or soulful tunes or mock soulful tunes off of High Priest. And I'm watching at the I Beam from the side of the stage, and, Mulrheaey comes shuffling up beside me. And he goes, who's this old pub rock twat then? I said to him, is he him? That's god, that is.
+
+He's a fuck off. I'm seriously. And, like, you know, a few years later, once the Scream and the Teenage Fan Club and that got into him and started hanging out with him, suddenly, like, everyone at creation is like, oh my god. It's Alex Chilton. I can remember when Mulrheany come and went, who's this old pub rock twat then?
+
+So we got to know him a little bit on that California trip. Not really very well at all, but we we sort of hang out little bit. But then in '92, we went to play in New Orleans, and he came to see us. And everything went terribly, terribly wrong. The tour manager on that trip, who knew him, said that's we were, like, getting out of the van.
+
+So I know he's coming down, and don't give him beer. He's he's cleaning up his act, so don't get him on the on the bit. Well, you can probably imagine what happened next week on the day. Give that advice to you. Yeah.
+
+Yeah. No. I mean, what can you do? Alex Chilton is in your dressing room, and there's beer all over the place. You are forced by all the laws of nature to offer him one.
+
+Right? And, Alex, without making any fuss or bother at all, as well. Thank you very much. And so it began. We were out till seven, I would say, that night.
+
+And the next day, we had a day off in New Orleans, and I thought, oh, that'd be nice. And I went out with Kathy McGinty who was driving on that tour, and we had some lunch. And as we left lunch at about two in the afternoon, we passed a bar. And you know that thing when your mate goes do do do do on the window? That's Alex Chilton.
+
+Alex Chilton is telling me to go to the pub. I'm like, I don't need telling twice. And so it started again, and it went on to about 07:00 the next morning when we ended up in a bar called Roundup, which was a, I shit you not, a transvestite cowboy bar. It's light outside, and I'm in a transvestite cowboy bar with Alex Chilton who is now so pissed that he is making lunges at Kathy McGinty because she's still trapped. You know?
+
+She's been there since lunch. Right? She's still stuck on this Alex train. Yeah. Yeah.
+
+Forty eight hour Alex Chilton Binge. So I got to name a little bit in that time. He's very, very, very courteous man. He said the most outrageously ridiculous thing quite early on when we were still in the dressing room at Tipatina's. He was talking about the scene.
+
+I don't hear a lot of stuff I like these days. I don't think there's anyone out there who's very good apart from you guys, of course. And that's just pure southern manners, isn't it? You know, that is just manners. And, yeah, in interesting fellow.
+
+He really he had that southern thing where he was, like, really did genuinely have a deep interest and belief in astrology and stuff like that. There are a few other names, on in Wildlife. There are a few, aren't there? I can't remember off off the top Sing a song of Jen Jen. She's got a human bone.
+
+1988 again. End of the tour. We've done Los Angeles. Chilton's disappeared back into the mists, and we're hanging around for a day or two for reasons obscure before we fly home. And we go to a party at Downey Mildew's Scaff, which is the Bald Eagle.
+
+It's a disused boozer, which they've kind of, like, taken over down in South Central. And, like, you can go on the roof. It's huge. Charlie's got a big room to do his massive paintings. They've got a little rehearsal space.
+
+You know? It's like we were impressed. And I was up on the roof, smoking a joint, gazing across the scenery. Well, this is South Central, is it? This is where NWA live, is it?
+
+And the singer from Danny Mildew, Jenny Homer, small girl, very intense, incredible singer, but a little bit Californian and witchy for the likes of us peasants from over here. Us scum scarfers as somebody put it the other day. And, yeah, I'm just minding my own business, smoking a joint, enjoying the scene, thinking how cool this all is. And she comes shuffling up with her hands kinda cupped in front of her. And she's, Pat, Jen-Jen, I have in my hand a human bone with this expression of sort of Bjork like delight on her face.
+
+You know? So, yeah, sing a song of Jen-Jen. She's got a human bone. Nancy's driving. That's Nancy McCoy.
+
+There was a celebrated day where some idiot let Nancy drive the, Downey Mildew bus across the Canadian Prairie. And Nancy drove all the way on these perfectly straight empty roads across the tundra. Religiouusly speed of 50 miles an hour all the way. Like, 300 miles or something, driving the rest of the band absolutely crazy. Nancy's driving far from home.
+
+Something about Randy. Now I am at I have been chastised for this by my Los Angeles pals. I'll say Randy was a snake. They go, oh, Pat, don't say that about Randy. He was a good guy and all this kind of thing.
+
+It's like, no. He was a cunt. He had a record label called, I think, Giant. And this concerns the Big Planet Scary Planet record, which we were touring in '88. And were we?
+
+Had we made it yet? No. But we were playing those songs. We oh, no. We weren't.
+
+No. I delude myself. No. No. No.
+
+We weren't playing those songs. Not yet. That was the eighty nine tour. Derailed. Sorry.
+
+I shouldn't have smoked that joint. I've derailed myself. Randy. Put out Big Planet, Scary Planet. So that would have been, like, 89.
+
+And he did a a deal with Creation, and he up fronted $7,000. I don't know what that record sold, but it was, all over the radio. It was all over the whatchamacallit college radio. It's all over the press, charts, things like that, you know, alternative charts, all that kind of thing, CMJ. It was at one point, it was number one on the MTV alternative chart, which was pretty good because we hadn't got a video.
+
+Mhmm. And all the dates were sold out. You know, $7,000. We never saw anything more. That's why I say, Randy was a snake, but I still like it in Silverlake.
+
+And then oh god. Someone was a panther come before him. Harry was a panther. Harry was great. Harry lived with, April and John, as in April, John, and Cole.
+
+John was the drummer in Downey Mildew at the time. April was his gorgeous girlfriend. Again, kind of witchy in Californian, but in a kind of mad Betty Davis sort of Baby Jane sort of a really quiet. Should have been uncool, but it was cool. And they lived happily together with this cat called Harry, who was a big ginger bastard.
+
+He was unnaturally big, and he was still he wasn't even a year old, and he was unnaturally mated with something that wasn't quite a pussycat. And, you know, I like cats, and I would do my best to socialize with Harry. Well, I used to go around there and play a lot of chess, oddly, which I'm shit at chess, but we did. And so word began to leak into the sort of local community that I could handle Harry. Pat can handle Harry.
+
+In fact, this made me unusual. April was terrified of him. And, yeah, we were having that conversation one day. We were having the, Pat can handle Harry come. Harry?
+
+Harry? Conversation. I'm stood there. Harry comes trolling up to me, Bruce stands on my feet, looking up at me. I reach down to go, hello, mate.
+
+He launches himself, claws first, into my face, And I swear I mean, it can't be true. He can't have been there long, but it felt like he was just hanging off my face. All these enormous fucking orange catweight is just hanging off my face. You know, I pack a hell of Harry. So Harry was a panther.
+
+Randy was a snake, but it was alright. And then, yeah, April, John, you know about them. Cole, he's my best mate. He was Downey Mildew's sound man, and he was a really good mate. Liz and Charlie.
+
+Liz is Liz Garrow who's all she's like queen of Los Angeles. She has I don't know if I should take responsibility for this. I I think it's really Liz's fault. And she she runs the Echo now anyway in Echo Park in Los Angeles, rock venue. There's the Echo and the Echo Plex.
+
+A couple of years ago, the Rolling Stones played there. Uh-huh. It's a club. You know? And they did a Stones gig.
+
+And guess who got to get into that for nothing? Yep. Dave J. The universe obeys his every desire. So that's Liz.
+
+And, yeah, the trouble with Liz is that because she knows everybody and because she's so fucking cool, when you're escaping from the Roxy after a gig late at night, and that takes some escaping, not least the bit where you have to drive down the alleyway next to the rainbow room, and there's all these people who wanna be Lemmy wandering around in their ridiculous outfits being drunk. Oh, hello, lads. It's those guns and roses. I just wanna say, hello, lads. And we're in the van just desperately trying to achieve escape velocity and go to a nice, quiet, working men's type bar where we can have a nice, quiet after work pint.
+
+But, you know, maybe the Downies are there, and so maybe they they wanna come and have a nice, quiet pint with us. And, of course, who's friends with them? Liz is friends with them. So the next thing you know, you're driving down Sunset in an easterly direction as fast as you can without causing a fuss. And you become aware that there is a convoy behind you.
+
+And should there be one on the bus, that is when the mobile phone will start to ring. We, with Liz's help, have destroyed so many nice, quiet hangouts and turned them into hipster hell holes over the years. Eventually, in '92, it got so bad that the only place left where we felt safe from the West Hollywood people was this bar down in the depths of god knows where called the Smog Cutter. Scraggy, long haired, bearded Vietnamese veteran in double denim on the door. Angry Chinese or Filipino.
+
+No. Definitely Chinese, bar maids. One of whom is called Sunshine and is given now and again singing sunshine on my face. And when she met me the first time, she just went, will you give us back our Hong Kong? Just like that.
+
+You know? What you are, foo young? I know Chinese people always stand cross, but she really did say like, she went, I say, I ain't got your Hong Kong. You've got a beer. I ain't got your Hong Kong.
+
+And, you know, honestly, hostile place, marginal marginal punters, no decent beer. It's all like Coors or Bud. It's a hellhole. They won't follow us here. Mhmm.
+
+And it's true. In '92, only the very bravest followed us there. They got to witness some shenanigans. The drummer popped out for a bit of fresh air. It was all getting a bit much for the boy.
+
+So he popped out for a bit of fresh air, and he sat down on the pavement with his back to the pub. And I hadn't even noticed he'd gone. But suddenly, there was this big kerfuffle, and the old vet vet on the door was, like, locking bolting up the door and shit. And it was like, oh, what's happening? Are we closing?
+
+What's going on? Oh, there's a gunfight outside. Couple of gangs with machine guns having a war in the street, firing over the drummer's head while he's saying that. So she better get him in. So that's the kind of place it was.
+
+Right? But two years later, I'm reading an American rock magazine of some kind. And it says, Los Angeles' most fashionable new bar is the Smog Cutter ever since KD Lang did an unscheduled appearance there. And I thought, Christ, we've lost that one as well. Even the Smog Cutter has gone down.
+
+And we took out the Dresden rooms. It it was bad enough that we did it. What followed was that David Lynch went there. And David Lynch kinda got into Marty and Elaine, the ancient jazz duo that used to play in there. That was it.
+
+But before Lynch, I can remember flood it I can remember the manager at the Dresden complaining to me because we brought too many people into his bar. I'm like, but isn't that what you no. I'm sorry. Yeah. So we ruined the Dresden.
+
+We ruined the Ski Room before that. We were just a fucking liability because just half the audience would just follow you. You know? It's ridiculous. It's not like it.
+
+Because I I I'm very much aware that it sounds, you know, to say things in this context, the life we lead, to be telling these stories. It does sound as though I've just, like, taken a bunch of acid and made it up. But my guarantee to you, of course, is the fact that I have no imagination. True stories and all that. Yeah.
+
+Yeah. I when people give it in America, they do it a lot. They go like, oh, you're like Robyn Hitchcock. It's like English telecaster suit. Guilty as charged.
+
+You know? But I always say to him that Robyn Hitchcock's got an imagination, and I haven't. And that's how you can tell the difference. I'm just a documentary maker. But, you lie awake at night remembering all those people you've known, which is what And it is all yeah.
+
+It's all true. You see? They're all there. And Cole, yeah, he's really my best mate in LA. I've stayed in his house for ages.
+
+Had all kinds of adventures with him. He was there the night that Greg took us to that mental club in Hollywood. Dear. Oh, dear. Oh, dear.
+
+Mummification. They were doing mummification to a soundtrack of, like, depache mode. I got propositioned five times that night all by men. Good looking men at that. I was quite apologetic about the whole business, but it's like, no.
+
+Painfully straight. Quite bewildered at the moment. Don't really like Depeche mode much either. Nice hair. Greg is Greg's running around going, oh my god.
+
+It's the dawning of a new age. It's like, Greg, they're tying each other up in bandages. And Cole. Right? Cole is not a native Californian.
+
+He's originally from Mississippi, and he's got that very grounded southern thing. Don't really take a great deal of shit. And to see Cole at large in this fucking club was just delightful. I mean, he he you know, he he wasn't he wasn't snarky or anything. He wasn't nasty to anybody, but you could just see it.
+
+Oh my goodness. As as were we all. That's the most exciting thing I've seen since the Grateful Dead. Quick. I think it was because he had a new girlfriend, and she was into it.
+
+I think that's why he was getting so excited. I think she just, like, enthused him. I'd rather think that she and I are still in touch on the Facebook. Victoria, her name was. That may be enough for this week, I think.
+
+Yeah. Recording. Are you still are we still I have no idea if it's working or not. It's just sitting here all dark. If not, we're in trouble.
+
+But we've had a great time. Because if I can remember it this time, I can always remember it again. 01/27, that was.
+		`,
+	},
+	{
 		number: '2',
 		title: 'Bath of Bacon',
 		topics: [],

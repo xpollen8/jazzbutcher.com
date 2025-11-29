@@ -20,12 +20,12 @@ type NewsItemType = {
 
 const recentNews = [
 	{
-		subject: `Philip Snow/Pat Fish 'Miracles and Wonders' interview: Wildlife, Bath of Bacon, Scandal in Bohemia`,
-		dt: '2025-11-27',
+		subject: `Philip Snow/Pat Fish 'Miracles and Wonders' interview: Wildlife, Bath of Bacon, Scandal in Bohemia, Sex and Travel`,
+		dt: '2025-11-29',
 		category: 'media',
 		link: `/audio/miracles_interviews`,
 		body: <>
-			The audio for the Wildlife, Bath of Bacon, and Scandal in Bohemia segments of Philip Snow&apos;s interview of Pat Fish have been added.
+			The audio for the Wildlife, Bath of Bacon, Scandal in Bohemia, and Sex and Travel segments of Philip Snow&apos;s interview of Pat Fish have been added.
 			<p />
 			Robotic transcriptions for these interview segments are now available.
 		</>

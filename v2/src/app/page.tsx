@@ -10,11 +10,17 @@ const Home = (): React.ReactNode =>
 <>
 	<Header section='jbc' />
 	<main>
-		<Documentary />
 		<NotebookHero />
-		<OnThisDay />
-		<MostRecentNews />
-		<RecentUpdates />
+		<div className="flex flex-col min-[750px]:flex-row gap-5">
+			<div className="w-full min-[750px]:w-1/2">
+				<Documentary />
+				<OnThisDay />
+			</div>
+			<div className="w-full min-[750px]:w-1/2">
+				<MostRecentNews />
+				<RecentUpdates />
+			</div>
+		</div>
 	</main>
 	<Footer />
 </>

@@ -11,7 +11,7 @@ const Home = (): React.ReactNode =>
 	<Header section='jbc' />
 	<main>
 		<NotebookHero />
-		<div className="flex flex-col min-[750px]:flex-row gap-5">
+		<div className="flex flex-col min-[750px]:flex-row gap-1">
 			<div className="w-full min-[750px]:w-1/2">
 				<Documentary />
 				<OnThisDay />

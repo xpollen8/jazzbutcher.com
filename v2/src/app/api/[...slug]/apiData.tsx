@@ -542,6 +542,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'recent_gigsongs_media': {
 				const gigsong_media =  await apiData('gigsongs_media', args);
 				const { results } = await findRecent(gigsong_media, ['added','datetime'], args?.gigsong_media);
+				//console.log("recent_gigsongs_media", results, args?.gigsong_media);
 				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 			case 'recent_updates': {
@@ -560,7 +561,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			}
 			case 'gigsongs_media': {
 				const { results } = await apiData('gigsongs');
-				return returnResults(results?.filter((g: any) => g?.mediaurl?.match(/.mp3$/)));
+				return returnResults(results?.filter((g: any) => g?.mediaurl?.match(/.mp3$/) || g?.mediaurl?.match(/.mp4$/)));
 			}
 			case 'gigs_with_audio': {
 				const { results } = await apiData('gigsongs_media');

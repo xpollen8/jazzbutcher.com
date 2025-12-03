@@ -985,7 +985,7 @@ export const mapSongs: {[key: string]: string} = {
 	if there's a hit, then perform the expansion.
  */
 export const AutoLink = (str?: string) => {
-	
+	return str;
 }
 
 export const AutoLinkSong = (str?: string) => {

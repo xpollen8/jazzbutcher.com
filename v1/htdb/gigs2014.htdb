@@ -404,6 +404,8 @@
 		announcement=${literalizeCommas(
 			The Jazz Butcher and his Gentleman Adventurers
 		)},
+		posters=/images/20140719/20140719_poster.jpg$$
+		    Fishy Mansions Archives;;;;2025-12-08
 	)}
 
 #define	page_requested	${${page}()}

@@ -294,6 +294,9 @@
 		)},
 		posters=/images/20150801/20150801_poster.jpg$$
 		    Fishy Mansions Archives;;;;2025-12-08
+		,
+		photosets= /images/20150801/20150801_pat.jpg$$
+		    Fishy Mansions Archives;;;;2025-12-08
 	)}
 
 #define	Aug29.html()

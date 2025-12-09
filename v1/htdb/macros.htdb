@@ -131,7 +131,7 @@
 #${stripTags(${list})}
 #</pre>
 # SET THIS TO UPDATE performance TABLE
-#live	if (getval(cgi->http_x_real_ip) = X192.184.191.56)
+#live	if (getval(cgi->http_x_real_ip) = X192.184.196.233)
 #live	if (makeArray(deparse_list, \[comma], ${stripTags(${list})}))
 #**${deparse_list->numResults}**
 #live		loop(l, 1, ${deparse_list->numResults})

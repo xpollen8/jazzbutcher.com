@@ -287,6 +287,15 @@
 			Francis Puydebois;;;;2015-08-30
 	)}
 
+#define	Aug1.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}
+		)},
+		posters=/images/20150801/20150801_poster.jpg$$
+		    Fishy Mansions Archives;;;;2025-12-08
+	)}
+
 #define	Aug29.html()
 	${gigHeader(
 		who=${literalizeCommas(

@@ -184,6 +184,11 @@
 		,
 		posters=/images/20150612/20150612_poster.jpg$$
 		    Pat Fish;;;;2015-06-18
+		,
+		setlists=
+			/images/20150612/20150612_setlist.jpg$$
+			Fishy Mansions Archives;;;;2025-12-08
+		,
 	)}
 
 #define	Jun19.html()
@@ -280,6 +285,18 @@
 			/images/20150628/20150628_puydebois_2.jpg$$
 			/images/20150628/20150628_puydebois_gig.jpg$$
 			Francis Puydebois;;;;2015-08-30
+	)}
+
+#define	Aug1.html()
+	${gigHeader(
+		who=${literalizeCommas(
+			${pat}
+		)},
+		posters=/images/20150801/20150801_poster.jpg$$
+		    Fishy Mansions Archives;;;;2025-12-08
+		,
+		photosets= /images/20150801/20150801_pat.jpg$$
+		    Fishy Mansions Archives;;;;2025-12-08
 	)}
 
 #define	Aug29.html()

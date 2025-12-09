@@ -64,7 +64,12 @@
 			<p>
 			Set 1: ${duo}
 			Set 2: ${pat}, ${max}, Tim Harries, Jonny Mattock
-		)}
+		)},
+		photosets= /images/20130613/patandmax_6854_1.jpg$$
+			/images/20130613/patandmax_7003.jpg$$
+			/images/20130613/patandmax_7021.jpg$$
+			Fishy Mansions Archives;;;;2025-12-08
+		,
 	)}
 
 #define	Jun15.html()

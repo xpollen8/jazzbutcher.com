@@ -64,6 +64,41 @@
 			/images/20140719/20140719_group2.jpg$$
 			/images/20140719/20140719_group3.jpg$$
 			;;;;2014-07-22
+			---
+			/images/20140719/20140719_1.jpg$$
+			/images/20140719/20140719_10.jpg$$
+			/images/20140719/20140719_3-hat.jpg$$
+			/images/20140719/20140719_4.jpg$$
+			/images/20140719/20140719_5.jpg$$
+			/images/20140719/20140719_6-chin.jpg$$
+			/images/20140719/20140719_7.jpg$$
+			/images/20140719/20140719_9.jpg$$
+			/images/20140719/20140719_GT.jpg$$
+			/images/20140719/20140719_behind.jpg$$
+			/images/20140719/20140719_behind2.jpg$$
+			/images/20140719/20140719_behind3.jpg$$
+			/images/20140719/20140719_nopat.jpg$$
+			/images/20140719/20140719_outside.jpg$$
+			/images/20140719/20140719_pat.jpg$$
+			/images/20140719/20140719_patsteven.jpg$$
+			/images/20140719/20140719_reflection.jpg$$
+			/images/20140719/20140719_simon.jpg$$
+			/images/20140719/20140719_simon2.jpg$$
+			/images/20140719/20140719_simonGT.jpg$$
+			/images/20140719/20140719_simonGT2.jpg$$
+			/images/20140719/20140719_steveg.jpg$$
+			/images/20140719/20140719_steveg2.jpg$$
+			/images/20140719/20140719_steveg3.jpg$$
+			/images/20140719/20140719_steveg4.jpg$$
+			/images/20140719/20140719_steven.jpg$$
+			/images/20140719/20140719_steven2.jpg$$
+			/images/20140719/20140719_stevenGT.jpg$$
+			/images/20140719/20140719_steves.jpg$$
+			/images/20140719/20140719_steves2.jpg$$
+			/images/20140719/20140719_talkintome.jpg$$
+			/images/20140719/20140719_up.jpg$$
+			/images/20140719/20140719_whosthatman.jpg$$
+			Fishy Mansions Archives;;;;2025-12-08
 		,
 		posters=/images/20140719/20140719_poster.jpg$$
 		    Pat Fish;;;;2017-02-12
@@ -83,8 +118,31 @@
 		/images/20140820/20140820_foodiecraftbeerlife.jpg$$
 			FoodieCraftBeerLife;;https://www.instagram.com/foodiecraftbeerlife/;;2017-04-08
 		---
-		/images/20140820/20140820_group.jpg$$
-			Mat Wallis;;;;2023-11-20
+		/images/20140820/20140820_Cunningham1.jpg$$
+		/images/20140820/20140820_Cunningham2.jpg$$
+			Cunningham;;;;2025-12-08
+		---
+		/images/20140820/20140820_1.jpg$$
+		/images/20140820/20140820_2.jpg$$
+		/images/20140820/20140820_3.jpg$$
+		/images/20140820/20140820_4.jpg$$
+		/images/20140820/20140820_5.jpg$$
+		/images/20140820/20140820_6.jpg$$
+		/images/20140820/20140820_7.jpg$$
+		/images/20140820/20140820_8.jpg$$
+		/images/20140820/20140820_9.jpg$$
+		/images/20140820/20140820_10.jpg$$
+		/images/20140820/20140820_11.jpg$$
+		/images/20140820/20140820_12.jpg$$
+		/images/20140820/20140820_13.jpg$$
+		/images/20140820/20140820_14.jpg$$
+		/images/20140820/20140820_15.jpg$$
+		/images/20140820/20140820_16.jpg$$
+		/images/20140820/20140820_17.jpg$$
+		/images/20140820/20140820_18.jpg$$
+		/images/20140820/20140820_19.jpg$$
+		/images/20140820/20140820_20.jpg$$
+			Mat Wallis;;;;2025-12-08
 		,
 		posters=/images/20140820/20140820_poster.jpg$$
 		    Pat Fish;;;;2014-11-27
@@ -117,6 +175,9 @@
 			/images/20140821/20140821_michaelwhitworth_3.jpg$$
 			/images/20140821/20140821_michaelwhitworth_4.jpg$$
 			Michael Whitworth;;https://www.flickr.com/photos/antisyzygy;;2014-09-22
+			---
+			/images/20140821/20140821_anitamakri.jpg$$
+			Anita Makri;;;;2015-12-08
 		,
 		posters=/images/20140821/20140821_poster.jpg$$
 		    Ayuko Koyabashi;;;;2014-11-20
@@ -132,6 +193,14 @@
 			/images/20140822/20140822_johncannon_drums.jpg$$
 			/images/20140822/20140822_johncannon_bass.jpg$$
 			John Cannon;;;;2014-08-31
+			---
+			/images/20140822/20140822_tom1.jpg$$
+			/images/20140822/20140822_tom2.jpg$$
+			/images/20140822/20140822_tom3.jpg$$
+			Tom;;;;2025-12-08
+			---
+			/images/20140822/20140822_rivers.jpg$$
+			Rivers;;;;2025-12-08
 		,
 		setlists=
 			/images/20140822/20140822_stevegarofalo_setlist.jpg$$
@@ -370,6 +439,8 @@
 		announcement=${literalizeCommas(
 			The Jazz Butcher and his Gentleman Adventurers
 		)},
+		posters=/images/20141219/20141219_poster.jpg$$
+		    Fishy Mansions Archives;;;;2025-12-08
 	)}
 
 #define	page_requested	${${page}()}

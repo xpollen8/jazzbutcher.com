@@ -184,6 +184,11 @@
 		,
 		posters=/images/20150612/20150612_poster.jpg$$
 		    Pat Fish;;;;2015-06-18
+		,
+		setlists=
+			/images/20150612/20150612_setlist.jpg$$
+			Fishy Mansions Archives;;;;2025-12-08
+		,
 	)}
 
 #define	Jun19.html()

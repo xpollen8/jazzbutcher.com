@@ -16,6 +16,8 @@
 
 #define	May25_2000.html()
 	${gigHeader(
+		photosets= /images/20140525/20140525_tonymeadnn.jpg$$
+			Tony Mead;;;;2025-12-08
 	)}
 
 #define	Jun27_2000.html()

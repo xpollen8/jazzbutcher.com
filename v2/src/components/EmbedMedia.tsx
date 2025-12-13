@@ -128,10 +128,11 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 				return (<div className="listItem">
 					{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 
-					{!!(city?.length && venue?.length && datetime?.length && !datetime.match(/0000-00-00 00:00:00/)) && <>
+					{!!(venue?.length && datetime?.length && !datetime.match(/0000-00-00 00:00:00/)) && <>
 						{(parent) && <Link href={parent}><b>{datetime?.substring(0, 10)}</b></Link>}
 						{!(parent) && <Link href={ts2URI(datetime)}><b>{datetime?.substring(0, 10)}</b></Link>}
 						{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
+						{(!city && venue) && <>{' '}{venue}<br /></>}
 					</>}
 					{(useArtist) && <b>{useArtist}{ }</b>} {autoLink(useTitle, autolink)}
 					{(useAuthor) && <span className="smalltext">{' '}({expandAll(useAuthor)})</span>}

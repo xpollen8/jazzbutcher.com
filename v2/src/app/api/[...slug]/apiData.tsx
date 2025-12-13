@@ -311,7 +311,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			/*
 				static file lookups
 			 */
-			case 'FMA Media List.xls': { return await doFetchFileXLS(path); }
+			case 'FMA Media List.xlsx': { return await doFetchFileXLS(path); }
 			case 'gigs': { return gigsStatic; }
 			case 'gigmedias': { return gigmediasStatic; }
 			case 'gigsongs': { return gigsongsStatic; }

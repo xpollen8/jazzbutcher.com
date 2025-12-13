@@ -2353,6 +2353,8 @@ INSERT INTO `gigsong` VALUES (NULL,'1993-03-04 00:00:00','set',NULL,1,2,'Partyti
 
 INSERT INTO `gigsong` VALUES (NULL,'1993-04-21 00:00:00','set',NULL,1,1,'Waiting For The Love Bus',NULL,'premier',NULL,NULL,NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'2009-03-02 00:00:00','set',NULL,1,0,'Dolphin','Fred Neil',NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20090302/20090302_JazzButcher_London_DreamMachine_Dolphin_AlastairIndge.mp4','Alastair Indge',NULL,NULL,"2025-12-12");
+
 INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,"Stereo mix from mono audience recording",NULL,"https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19930515/19930515_JazzButcher_MeanFiddler_London_Cockerill.mp3","Matthew Cockerill",NULL,NULL,"2025-08-14");
 INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','encore',NULL,1,1,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1993-05-15 00:00:00','encore',NULL,1,2,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL,NULL);

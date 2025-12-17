@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import NotebookHero from '@/components/NotebookHero';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -13,10 +14,11 @@ const Home = (): React.ReactNode =>
 		<NotebookHero />
 		<div className="flex flex-col min-[750px]:flex-row gap-1">
 			<div className="w-full min-[750px]:w-1/2">
-				<Documentary />
+				<Image src={`/images/20251217_Eider.jpg`} height={750} width={750} alt={`Max Eider RIP 2025-12-17`} />
 				<OnThisDay />
 			</div>
 			<div className="w-full min-[750px]:w-1/2">
+				<Documentary />
 				<MostRecentNews />
 				<RecentUpdates />
 			</div>

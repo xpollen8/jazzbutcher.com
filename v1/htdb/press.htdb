@@ -1726,6 +1726,16 @@ subhead=(20 December 1957 – 5 October 2021),
 		dtadded=2023-09-20,
 		dtpublished=2021-10-07)}
 
+	${addPress(type=retrospective, person=max_eider,
+		url=${jbc_press}/20251218_press_louderthanwar.html,
+		title=Max Eider (Jazz Butcher Conspiracy) RIP,
+		headline=a tribute to an undergound talent,
+		publication=Louder Than War,
+		source=https://louderthanwar.com/max-eider/,
+		credit=Alex Maiolo,
+		dtadded=2025-12-18,
+		dtpublished=2025-12-18)}
+
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220210_louderthanwar.html,
 		title=The Jazz Butcher,
@@ -20289,6 +20299,54 @@ RATING 7
 	)}
 	${jbc_footer}
 #live	endif
+
+#define	20251218_press_louderthanwar.html
+#live	if (getval(page) = 20251218_press_louderthanwar.html)
+	${extractPress(
+		body=${literalizeCommas(
+Last week, when I was in the U.K., I spent some time in some pubs, as one does. No matter how good a “pub” is in the U.S., there is a cosplay element to it I can’t get past. 
+<p />
+Frankly, a good number of U.K. pubs drive me crazy too. The glow of the TV is something I just can’t deal with. I consider them sacred places where conversations happen. The sensory overload of the television, or many at once, can play merry hell with that. 
+<p />
+This is why I often dream of the next time I’ll get to sit in The King Charles I, in King’s Cross London, The Kirkstile, in Loweswater, or Manchester’s Old Wellington, all still gloriously TV-less.
+<p />
+The pub’s connection to music is intrinsic. It’s where bands form. Then it becomes the office. Then the boardroom. It’s where successes are celebrated, and where groups break up. 
+<p />
+And of course it’s where the early gigs happen.
+Pubs are cultural linchpins.
+<p />
+Often when I’m having a pint by myself my mind turns to all things Jazz Butcher, one of the most quotable bands in pop music history. Its members were known to keep a stool warm.
+<p />
+Of course there’s “Drink,” a jaunty tune about Britain’s national pastime that’s about as misunderstood as the “Shouting ‘Lager! Lager! Lager!’” verse of Underworld’s “Born Slippy.”
+A plea for help hidden within a party battle cry Trojan Horse.
+<p />
+Recently I tried to explain some of the lines of “Party Time” to my French mother in law, who has a marvelous sense of humor.
+<p />
+“It’s better than a cold bath with someone you dislike.”<br />
+“Ah, oui.”<br />
+“You’ve got to say it’s better than a war.”<br />
+“Oui.”<br />
+“You get it? He’s not really having a good time.”<br />
+“Ah yes, oui, ‘ee doesn’t seem to be.”<br />
+Sometimes humor can be, perhaps, a bit too British.
+<p />
+Four years ago I wrote about the sudden death of the band’s leader, Pat Fish, making the claim that he was the last of his kind.
+https://louderthanwar.com/pat-fish-aka-the-jazz-butcher-rip-an-appreciation-farewell-to-the-last-of-the-gentleman-adventurers/
+But you know, that wasn’t entirely true. The yang to his ying, Peter Millson, better-known as Max Eider, has just left us.
+<p />
+The Jazz Butcher Conspiracy was like no other band. How could music like this be made with that particular revolving cast of characters, some of whom were in the Year Zero goth band Bauhaus? The JBC hung around with legendary miscreants Spacemen 3, but made music that was basically the polar opposite of theirs in every single way. Both Fish and Eider were Oxford men. We can assume they were supreme disappointments to their counselors after choosing such a career path.
+<p />
+Despite the name, they were more of a pop group than a bop group, but when they jazzed it was largely due to the fretwork of Eider. Any “serrrrrrious” jazz combo would have been lucky to have him in the mix, but Max’s lot was to give the world near-perfect pop.
+<p />
+It actually hurts my soul that The JBC isn’t one of the most celebrated bands ever to hail from Blighty. I’ll say the same for Eider’s solo work. His first release, The Best Kisser In The World is an album I return to often. It never loses its charm.
+<p />
+Social media may be a total hellscape these days, but it can still be the source of news from people you don’t often interact with IRL. I’m not sure I would have found out about Eider’s passing without it. Not immediately, at least, since he was the very definition of the criminally underrated guitar genius.
+<p />
+There was something comforting about hearing the news from The Woodentops’ Rolo McGinty, who’d done time in The JBC, remaining friends with members throughout the years.
+<p />
+Along with Eider, McGinty was one of the players on David J’s “Quelle Tristesse,” a song written in memory of Pat Fish. I’m secretly hoping someone in the Jazz Butcher contingent sends Max off similarly. In the meantime I’m going to cue up Eider’s “My Other Life” and once again marvel at the fact that anyone could write a song so great.
+		)}
+	)}
 
 #define	20220210_louderthanwar.html
 #live	if (getval(page) = 20220210_louderthanwar.html)

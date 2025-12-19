@@ -18,11 +18,11 @@ const RecentPress = (props: any) => {
 		<summary className="tagClickable">{pluralize(press.numResults, 'press/clipping', 'Recently added')} {dateAgo(press?.results[0]?.dtadded)}</summary>
 		<PhotoSet photos={press.results?.map((p: any) => {
 			const { image, thumb } = parseImage(p?.images, 250);
-			if (!p?.thumb && !image && !thumb) return;
+			//if (!p?.thumb && !image && !thumb) return;
 			return {
 				...p,
 				src: p?.thumb || image || thumb,
-				alt: p?.publication,
+				alt: p?.title || p?.publication,
 				body: '',
 				href: p?.url,
 				credit_date: p?.dtadded,

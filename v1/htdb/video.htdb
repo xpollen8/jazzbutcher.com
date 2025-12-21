@@ -215,10 +215,10 @@
 			(${Wilson_BackingTracks[${x}]->comment})
 #live	endif
 #live	if (getval(Wilson_BackingTracks[${x}]->hasMP3))
-			${linkAudio(project=wilson, collection=Curtis' Backing Tracks, mp3=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws}.mp3)}
+			${linkAudio(project=wilson, collection=Curtis' Backing Tracks, mp3=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws}.mp3)}
 #live	else
 #live	endif
-		${embedVideo(project=wilson, name=${Wilson_BackingTracks[${x}]->title}, collection=Curtis' Backing Tracks, url=http://assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws})}
+		${embedVideo(project=wilson, name=${Wilson_BackingTracks[${x}]->title}, collection=Curtis' Backing Tracks, url=https://s3.amazonaws.com/assets.jazzbutcher.com/video/Wilson/${Wilson_BackingTracks[${x}]->aws})}
 	</div>
 #live	endwhile
 	${tag_beg}

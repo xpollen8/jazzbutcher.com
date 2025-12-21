@@ -12,6 +12,11 @@ import ContributionChart from '@/components/ContributionChart';
 
 const cleanDate = (dt?: string) => dt?.substring(0, 10)?.replace(/-00/g, '');
 
+const isTypeImage = (type?: string) => {
+	const lower = type?.toLowerCase();
+	return lower?.includes('image') || lower?.includes('photo') || lower?.includes('poster') || lower?.includes('ticket') || lower?.includes('setlist');
+}
+
 const Pictures = ({ pictures, name }: any) => {
 	if (!pictures?.numResults) return;
 	return <>
@@ -38,7 +43,7 @@ const InPress = ({ inpress, name }: any) => {
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
-		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: (a?.type?.includes('image')) ? '' : a?.summary, caption: (a?.type?.includes('image')) ? '' : a?.caption });
+		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: isTypeImage(a?.type) ? '' : a?.summary, caption: isTypeImage(a?.type) ? '' : a?.caption });
 		return { ...acc, [key]: (acc[key] || 0) + 1};
 	}, {});
 
@@ -46,7 +51,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 
 	const showData = (x: any, key: number) => {
 		const { count, type, datetime, added, summary, caption, href } = x;
-		if (type?.includes('image')) {
+		if (isTypeImage(type)) {
 			// gather together images from the same datetime
 			return <div key={key}  className="listItem odd:bg-gray-100 border-b">
 				<PhotoSet
@@ -112,22 +117,37 @@ const AllContributions = ({ contributions, total, recent, label, options={} }: a
 }
 
 const prettyType = (type: string, t?: string) => {
-	if (type === 'audio' || type === 'video') {
-		if (t === 'set') return 'live ' + type;
-		if (t === 'encore') return 'encore ' + type;
-		if (t === 'warmup') return 'warmup ' + type;
+	const tl = type.toLowerCase();
+	if (tl === 'audio') {
+		if (t === 'set') return 'Live Audio';
+		if (t === 'encore') return 'Encore Audio';
+		if (t === 'warmup') return 'Warmup Audio';
 	}
-	if (type === 'text' && t === 'announcement') return 'gig announcement';
-	if (type === 'text' && t === 'bootlegger') return 'taped the show';
-	if (type === 'text' && t === 'recording') return 'bootleg description';
-	if (t === 'pix') return 'event image';
-	if (t === 'review') return 'gig review';
-	if (t === 'selfreview') return 'Pat gig review';
+	if (tl === 'video') {
+		if (t === 'set') return 'Live Video';
+		if (t === 'encore') return 'Encore Video';
+		if (t === 'warmup') return 'Warmup Video';
+	}
+	if (tl === 'text' && t === 'announcement') return 'Gig Announcement';
+	if (tl === 'text' && t === 'bootlegger') return 'Taped the Show';
+	if (tl === 'text' && t === 'recording') return 'Bootleg Description';
+	if (t === 'poster') return 'Event Poster';
+	if (t === 'ticket') return 'Event Ticket';
+	if (t === 'setlist') return 'Event Setlist';
+	if (t === 'pix') return 'Event Image';
+	if (t === 'review') return 'Gig Review';
+	if (t === 'selfreview') return 'Pat Gig Review';
 	if (t === 'press') {
-		if (type === 'image' || type === 'audio' || type === 'video') {
-			return 'press article ' + type;
+		if (tl === 'image') {
+			return 'Press Article Image';
 		}
-		return 'press article';
+		if (tl === 'audio') {
+			return 'Press Article Audio';
+		}
+		if (tl === 'video') {
+			return 'Press Article Video';
+		}
+		return 'Press Article';
 	}
 	return t + ' ' + type;
 }
@@ -151,7 +171,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		addInfo(contributions,
 			{
 				person: r?.credit,
-				type: prettyType(r?.mediaurl?.includes('.mp3') ? 'audio' : 'video', r?.type),
+				type: prettyType(r?.mediaurl?.includes('.mp3') ? 'Audio' : 'Video', 'Event'),
 				added: r?.added,
 				datetime: r?.datetime,
 				summary: r?.song,

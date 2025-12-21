@@ -238,6 +238,14 @@
 			/images/20091011/4004486186_25bfbf1fda_o.jpg$$
 			/images/20091011/4004491572_e91b2d5bf2_o.jpg$$
 			Ned Raggett;;https://www.flickr.com/photos/nedraggett/;;2023-09-21
+			---
+			/images/20091011/20091011_JazzButcher_ColeCoonce0.jpg$$
+			/images/20091011/20091011_JazzButcher_ColeCoonce1.jpg$$
+			/images/20091011/20091011_JazzButcher_ColeCoonce2.jpg$$
+			/images/20091011/20091011_JazzButcher_ColeCoonce3.jpg$$
+			/images/20091011/20091011_JazzButcher_ColeCoonce4.jpg$$
+			/images/20091011/20091011_JazzButcher_ColeCoonce5.jpg$$
+			Cole Coonce;;;;2025-12-20
 		,
 		who=${literalizeCommas(
 			${pat}, ${max}, ${steve}, ${hask}

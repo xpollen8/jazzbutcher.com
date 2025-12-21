@@ -188,7 +188,7 @@
 			<source src="${url}.mp4" type="video/mp4">
 		</video>
 #live	endif
-#live	else if (define(urlClean, ${replace(${url}, https://vimeo.com/, https://assets.jazzbutcher.com/video/)}))
+#live	else if (define(urlClean, ${replace(${url}, https://vimeo.com/, https://s3.amazonaws.com/assets.jazzbutcher.com/video/)}))
 		<div class="js-video [vimeo, widescreen]">
 			<iframe width="560" height="315" src="${urlClean}?showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</div>

@@ -41,7 +41,7 @@ ${tag_end}
 
 <div class="fiascoBox">
 	<video controls preload="none" style="max-width: 100%;" poster="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/teaser_thumb.jpg">
-		<source src="http://assets.jazzbutcher.com/images/fiascos/teaser.mp4" type="video/mp4">
+		<source src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/teaser.mp4" type="video/mp4">
 	</video>
 </div>
 

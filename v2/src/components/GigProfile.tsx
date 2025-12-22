@@ -315,7 +315,7 @@ const Content = ({ gig }: { gig: any }) => {
 		any photoset w/fewer than X items per credit
 		will get combined in the UI
 	 */
-	const smallLimit = 5;
+	const smallLimit = 2;
 	const largePhotoSets = Object?.keys(photoSets)?.filter((f: string) => photoSets[f] > smallLimit)?.map((f: string) => f);
 	// joins.media_* (gigmedia table)
 	gig?.media?.forEach((t: any) => {

@@ -211,7 +211,8 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		addInfo(contributions,
 			{
 				person: r?.credit,
-				type: prettyType(r?.type, r?.subtype || ''),
+				type: prettyType(r?.href?.includes('.mp3') ? 'Audio' : 'Video', 'Media'),
+				//type: prettyType(r?.type, r?.subtype || ''),
 				added: r?.credit_date,
 				datetime: r?.datetime,
 				summary: r?.name,

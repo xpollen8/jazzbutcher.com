@@ -1736,6 +1736,15 @@ subhead=(20 December 1957 – 5 October 2021),
 		dtadded=2025-12-18,
 		dtpublished=2025-12-18)}
 
+	${addPress(type=retrospective, person=max_eider,
+		url=${jbc_press}/20251222_press_cloudberryrecords.html,
+		title=The Best Kisser in the World,
+		publication=Cloudberry Records Blog,
+		source=https://www.cloudberryrecords.com/blog/?p=15580,
+		credit=Roque,
+		dtadded=2025-12-22,
+		dtpublished=2025-12-22)}
+
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/20220210_louderthanwar.html,
 		title=The Jazz Butcher,
@@ -20299,6 +20308,36 @@ RATING 7
 	)}
 	${jbc_footer}
 #live	endif
+
+#define	20251222_press_cloudberryrecords.html
+#live	if (getval(page) = 20251222_press_cloudberryrecords.html)
+	${extractPress(
+		body=${literalizeCommas(
+A few days ago we got the news that Peter Millson had died. He went under the name Maximilian Theodor Eider III but we knew him as Max Eider, one of the best guitarists ever.
+<p />
+I had just traveled for my holiday vacations. I wasn’t expecting to write new posts. I have a few prepared for the next coming weeks until I’m back to New York City. But then two days ago, December 17, 2025, the Facebook page of The Jazz Butcher, the band he was in with Pat Fish announced that Max Eider had sadly passed away. I was shocked. It was only a few years ago that I was writing a post about Pat Fish passing too. I was speechless.
+<p />
+When I wrote about Pat passing away I mentioned a show in Brooklyn where I saw The Jazz Butcher. That was the only time I had seen them both Pat and Max. It was quite a strange gig for me, I went with a coworker who loved them as he had listened to them while in college thanks to the famous “college radio” of the time that played actual good music. This coworker liked some 80s bands that I liked, but he wasn’t into indiepop at all. He just liked what he had heard on college radio, more mainstream indiepop like My Bloody Valentine or The Jesus and Mary Chain. But there was a band he loved, The Jazz Butcher, especially the song “Southern Mark Smith (Big Return)”. For me that gig was magical, it was so special. I had just moved to New York City and didn’t expect to see them at all.
+<p />
+I always thought I was going to see them on the many trips I have done to the UK. Maybe in one of the festivals I had attended. Indietracks? I wonder why they were never booked. Would have been fantastic. The Jazz Butcher were terrific, had so many great songs, a catalogue of records to be jealous of. And Max Eider played the guitar like he was enchanting snakes. He was such a good guitar player, original, elegant, classy.
+<p />
+When I moved to NYC I had the idea I was going to find good records for my collection. Records that I loved. I thought NYC was like London. That you know, second-hand shops would have good records. My surprise was that it wasn’t so. There were tons of records, but mainly 60s, 70s, stuff I didn’t care for. But the very first gem I found was a second-hand copy of “The Best Kisser in the World”, Max Eider’s first LP at Academy Records Annex in Greenpoint.
+<p />
+That was the first album he released solo. It was in 1987 on Big Time. I have the US version of that record that would later be released in Japan by Vinyl Japan, Zafiro in Spain and of course Big Time too in the UK. It is a work of art this album. I used to play time and time again when I just moved to NYC. That’s one of the reasons I was truly thankful when I got the chance to see them live in a small venue in Brooklyn. I chatted a bit with both of them. Maybe more with Pat if my memory serves correct. It’s been a while. I do remember though Max was friendly and kind when I was just being a fanboy.
+<p />
+Max would later release five more releases, “Hotel Figueroa”, “Back in the Bedroom”, “Disaffection”, “Duckdance” and “All Shall Be Well”. This last one a CDR on Glass Modern from 2024. I remember that during the Myspace days there was a page for Tundraduck Records, who released the last 3 of his albums. It was actually Max’s own label (alongside Augustus Pokerback). I bought “Disaffection” and “Back in the Bedroom” directly from Max and the label, by messaging them. It was quite cool. It was a time where musicians and fans were becoming closer thanks to the internet.
+<p />
+I haven’t listened “Duckdance” or “All Shall Be Well”. I should fix that. By the time these records came out Myspace wasn’t around and buying records that had smaller distribution became a bit harder. Still it is definitely my fault for not having listened to them, which I believe will be great records with top songs. If Max plays the guitar on a song, you know it is quality. And he was very good songwriter too. There’s no denying of that.
+<p />
+It is a difficult time for me. In general, I have very little time to listen to music these days. If I can listen 30 minutes to an hour a day it is a success. Years ago I could be listening music for more than 5 hours a day. This new situation, since becoming a dad, has made my indiepop heroes, my favourite albums, my favourite songs, to acquire a larger, bigger, importance and status that whenever I have a few minutes to listen to music I go back to them. This means I get to listen less new music. And when it comes to Max Eider, I do play “”My Other Life” and Rosemary” often. I love these songs. Maybe they are my favourite? I don’t know. I have many that I like. But it seems if I pick one, it ends to be one of these two. They are perhaps the most immediate ones, the catchiest.
+<p />
+For me Max is an indiepop legend. I am no one to ask for people to write/do tributes, but if anyone deserves them, Max Eider definitely does.
+<p />
+A genius of pop music is gone.
+<p />
+Rest in peace hero.
+		)}
+	)}
 
 #define	20251218_press_louderthanwar.html
 #live	if (getval(page) = 20251218_press_louderthanwar.html)

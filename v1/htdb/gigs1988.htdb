@@ -493,6 +493,7 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Peter Blegvad)},
 		posters=/images/19880602/19880602_poster.jpg$$
 			MHoganSays;;https://twitter.com/MHoganSays/status/1270094614813261824;;;;2020-06-09
 
@@ -618,6 +619,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Nobody Nose)},
 		posters=/images/19880615/19880615_poster.jpg$$
 			;;;;2023-09-21
 
@@ -641,6 +643,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Downey Mildew)},
 		posters=/images/19880618/19880618_poster.jpg$$
 			Greg Pohl;;;;2021-11-20
 
@@ -649,7 +652,22 @@ Craig Kolb;;;;2000-03-17
 #define	Jun19.html()
 	${gigHeader(
 
+		with=${literalizeCommas(Downey Mildew)},
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+
+	)}
+
+#define	Jun21_1200.html()
+	${gigHeader(
+
+		who=${literalizeCommas( ${pat}, ${kizzy}, ${paul} )},
+		notes=${literalizeCommas(
+		A short set recorded at a record store; JBC did quite a few of these on Canadian tours, on the afternoon of concert day. 
+		<p />
+		This is the full set, as far as I know. Source - audience recording, using PZM mics. Recorder - "Keith". Pretty sure this is the original master tape. 
+		<p />
+		This tape came to me along with #2 and #3, from a young man in the Vancouver area who obsessively taped local shows in the late 1980s. If I recall right, I met him working at a record store, and subsequently traded tapes of live shows. At some point in about 1989 or 1990, I paid him a visit; he'd found religion in a big way, and wanted to rid his life of all this music, so he gave these and other recordings to me, simply to get them out of his possession.
+		)}$$Greg Pohl;;;;2025-12-25
 
 	)}
 
@@ -657,6 +675,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Downey Mildew)},
 		posters=/images/19880621/19880621_poster.jpg$$
 			;;;;2023-09-11
 
@@ -666,6 +685,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Downey Mildew)},
 		posters=/images/19880622/19880622_poster.jpg$$
 			;;;;2023-09-11
 
@@ -761,6 +781,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		with=${literalizeCommas(Biff Bang Pow, Summerhill)},
 		posters=/images/19880822/19880822_poster.jpg$$
 			nothingelseon;;https://twitter.com/nothingelseon/status/1388613677654319105;;2021-05-01
 		,cassettes=/images/19880822/19880822_cassette.jpg$$

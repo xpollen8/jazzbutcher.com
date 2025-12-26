@@ -493,6 +493,7 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Peter Blegvad)},
 		posters=/images/19880602/19880602_poster.jpg$$
 			MHoganSays;;https://twitter.com/MHoganSays/status/1270094614813261824;;;;2020-06-09
 
@@ -618,6 +619,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Nobody Nose)},
 		posters=/images/19880615/19880615_poster.jpg$$
 			;;;;2023-09-21
 
@@ -641,6 +643,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Downey Mildew)},
 		posters=/images/19880618/19880618_poster.jpg$$
 			Greg Pohl;;;;2021-11-20
 
@@ -649,6 +652,7 @@ Craig Kolb;;;;2000-03-17
 #define	Jun19.html()
 	${gigHeader(
 
+		with=${literalizeCommas(Downey Mildew)},
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
 
 	)}
@@ -763,6 +767,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+		with=${literalizeCommas(Biff Bang Pow, Summerhill)},
 		posters=/images/19880822/19880822_poster.jpg$$
 			nothingelseon;;https://twitter.com/nothingelseon/status/1388613677654319105;;2021-05-01
 		,cassettes=/images/19880822/19880822_cassette.jpg$$

@@ -1209,6 +1209,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-12-21 00:00:00','set',NULL,2,7,'Partyti
 INSERT INTO `gigsong` VALUES (NULL,'1988-12-21 00:00:00','set',NULL,2,8,'Angels',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-12-21 00:00:00','set',NULL,2,9,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
+INSERT INTO `gigsong` VALUES (NULL,'1988-06-21 12:00:00','set',NULL,1,0,'The Entire Performance',NULL,'recorded by \'Keith\'',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19880621/19880621_JazzButcher_AARecords_Vancouver_Keith.mp3','Greg Pohl',NULL,NULL,'2025-12-25');
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-21 12:00:00','set',NULL,1,1,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-21 12:00:00','set',NULL,1,2,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-21 12:00:00','set',NULL,1,3,'Olof Palme',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

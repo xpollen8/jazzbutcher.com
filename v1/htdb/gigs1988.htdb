@@ -661,6 +661,13 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${paul} )},
+		notes=${literalizeCommas(
+		A short set recorded at a record store; JBC did quite a few of these on Canadian tours, on the afternoon of concert day. 
+		<p />
+		This is the full set, as far as I know. Source - audience recording, using PZM mics. Recorder - "Keith". Pretty sure this is the original master tape. 
+		<p />
+		This tape came to me along with #2 and #3, from a young man in the Vancouver area who obsessively taped local shows in the late 1980s. If I recall right, I met him working at a record store, and subsequently traded tapes of live shows. At some point in about 1989 or 1990, I paid him a visit; he'd found religion in a big way, and wanted to rid his life of all this music, so he gave these and other recordings to me, simply to get them out of his possession.
+		)}$$Greg Pohl;;;;2025-12-25
 
 	)}
 

@@ -657,6 +657,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Downey Mildew)},
 		posters=/images/19880621/19880621_poster.jpg$$
 			;;;;2023-09-11
 
@@ -666,6 +667,7 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+		with=${literalizeCommas(Downey Mildew)},
 		posters=/images/19880622/19880622_poster.jpg$$
 			;;;;2023-09-11
 

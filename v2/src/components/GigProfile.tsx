@@ -253,6 +253,8 @@ const GigDetails = ({ gig, joins }: any) => {
 	if (gig?.extra?.includes('interview')) { showType = 'Interview' }
 	if (gig?.extra?.includes('instore')) { showType = 'In-Store' }
 	if (gig?.extra?.includes('project')) { showType = 'Side Project' }
+	if (gig?.extra?.includes('broadcast')) { showType = `Broadcast ${showType}` }
+	if (gig?.extra?.includes('online')) { showType = `Streamed ${showType}` }
 	return (<>
 		<Tag>
 		<b>{showType}</b> - {htmlString(gig?.venue)} - {htmlString(gig?.city)} {gig?.country}

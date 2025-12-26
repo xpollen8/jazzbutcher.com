@@ -194,7 +194,11 @@
 	With a little help from ${astor} on the encores. A very long set,
 	with some odd cover versions.
 	)},
-
+	photosets=
+		/images/19890707/19890707_JazzButcher_Hamburg_Marmot_front.jpg$$
+		/images/19890707/19890707_JazzButcher_Hamburg_Marmot_back.jpg$$
+		/images/19890707/19890707_JazzButcher_Hamburg_Marmot_tracks.jpg$$
+		Marmot;;;;2025-12-25
 	)}
 
 #define	Jul9.html()

@@ -1290,7 +1290,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1989-07-06 00:00:00','set',NULL,1,7,'Girl-Go
 INSERT INTO `gigsong` VALUES (NULL,'1989-07-06 00:00:00','set',NULL,1,8,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-07-06 00:00:00','set',NULL,1,9,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
-INSERT INTO `gigsong` VALUES (NULL,'1989-07-07 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,'room recording from cassette of unknown generation',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19890707/19890707_JazzButcher_Hamburg_CASSETTE.mp3','David Whittemore',NULL,NULL,'2025-12-25');
+INSERT INTO `gigsong` VALUES (NULL,'1989-07-07 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,'room recording',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19890707/19890707_JazzButcher_Hamburg_Marmot.mp3','Marmot',NULL,NULL,'2025-12-25');
 INSERT INTO `gigsong` VALUES (NULL,'1989-07-07 00:00:00','set',NULL,1,1,'Baby Sister','Lou Reed',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-07-07 00:00:00','set',NULL,1,10,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1989-07-07 00:00:00','set',NULL,1,11,'Hysteria',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

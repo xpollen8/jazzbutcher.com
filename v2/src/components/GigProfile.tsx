@@ -224,7 +224,7 @@ const GigWit = ({ data }: any) => {
 }
 const GigWith = (data: any) => <div className="listItem"><Iterator data={data} func={GigWit} /></div>
 
-const GigPlayer = ({ data }: any) => data?.performer && doIt(AutoLinkPlayer(data.performer), (data?.instruments?.length) ? data?.instruments?.split(',').join(', ') : '');
+const GigPlayer = ({ data }: any) => data?.performer && doIt(AutoLinkPlayer(data.performer), (data?.instruments?.length) ? data?.instruments?.split(',').join(', ') : ' ');
 
 const GigPlayers = (data: any) => (
 	<div className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>

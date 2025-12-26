@@ -249,7 +249,10 @@ const doIt = (label: any, val: any) => val && <span className="break-keep outlin
 
 const GigDetails = ({ gig, joins }: any) => {
 	if (!gig) return;
-	const showType = gig?.extra?.includes('interview') ? 'Interview' : 'Live Performance';
+	let showType = 'Live Performance';
+	if (gig?.extra?.includes('interview')) { showType = 'Interview' }
+	if (gig?.extra?.includes('instore')) { showType = 'In-Store' }
+	if (gig?.extra?.includes('project')) { showType = 'Side Project' }
 	return (<>
 		<Tag>
 		<b>{showType}</b> - {htmlString(gig?.venue)} - {htmlString(gig?.city)} {gig?.country}

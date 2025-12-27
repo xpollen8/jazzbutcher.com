@@ -726,8 +726,8 @@
 #define	albums[18]->notes	GLALP 104 was included in some copies of ${dist}
 #define	albums[18]->country	UK
 #define	albums[18]->media	LP
-#define	albums[18]->thumb	${jbc_images}/releases/conspiracy_front
-#define	albums[18]->images	${jbc_images}/releases/conspiracy_back
+#define	albums[18]->thumb	${jbc_images}/releases/conspiracyLP_front
+#define	albums[18]->images	${jbc_images}/releases/conspiracyLP_back
 #define	albums[18]->blurb	<div class="annotation">Ever wondered what Max and I get up to away from the glamour of the modern stage? No, probably not, but let me tell you that there is nothing we like better that to get our teeth into those Big Questions.</div>
 #define	albums[18]->thanks
     This disc is dedicated to the immortal memory of the great

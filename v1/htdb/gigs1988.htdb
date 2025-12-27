@@ -678,6 +678,9 @@ Craig Kolb;;;;2000-03-17
 		with=${literalizeCommas(Downey Mildew)},
 		posters=/images/19880621/19880621_poster.jpg$$
 			;;;;2023-09-11
+		,notes=${literalizeCommas(
+			Source - audience recording, using PZM mics. Recorder - "Keith". Pretty sure this is the original master tape.
+		)}$$Greg Pohl;;;;2025-12-26
 
 	)}
 
@@ -688,6 +691,9 @@ Craig Kolb;;;;2000-03-17
 		with=${literalizeCommas(Downey Mildew)},
 		posters=/images/19880622/19880622_poster.jpg$$
 			;;;;2023-09-11
+		,notes=${literalizeCommas(
+			Source - audience recording, using PZM mics. Recorder - "Keith". Pretty sure this is the original master tape.
+		)}$$Greg Pohl;;;;2025-12-26
 
 	)}
 

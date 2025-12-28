@@ -8,7 +8,7 @@ import useRelease from '@/lib/useRelease';
 import Loading from '@/components/Loading';
 
 const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comment, wav, mp3, url, artist, author, autolink = false, setnum, ordinal, children }: {
-	title: string
+	title?: string
 	setnum?: string
 	ordinal?: string
 	lookup?: string
@@ -51,7 +51,7 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 					} else if (title?.endsWith('.html') || title?.includes(':')) {
 						return title;
 					} else if (autolink) {
-						return autoLink(title, autolink)
+						return title && autoLink(title, autolink)
 					} else {
 						return AutoLinkSong(title);
 					}

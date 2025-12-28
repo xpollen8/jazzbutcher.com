@@ -251,13 +251,14 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 		addInfo(contributions,
 			{
 				person: r?.credit,
-				type: prettyType(r?.href?.includes('.mp3') ? 'Audio' : 'Video', 'Media'),
+				type: prettyType(r?.href?.includes('.mp3') || r?.mp3 ? 'Audio' : 'Video', 'Media'),
 				//type: prettyType(r?.type, r?.subtype || ''),
 				added: r?.credit_date,
 				datetime: r?.datetime,
 				summary: r?.name,
 				href: ts2URI(r?.datetime) || r?.mp3,
-				video: r?.href,
+				audio: r?.href?.includes('.mp3') ? r?.href : (r?.mp3 ? r.mp3 : null),
+				video: !(r?.href?.includes('.mp3') || r?.mp3) ? r?.href : null,
 				image: r?.image,
 			}
 		);

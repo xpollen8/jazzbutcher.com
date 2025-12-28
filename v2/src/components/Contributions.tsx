@@ -8,6 +8,8 @@ import Loading from '@/components/Loading';
 import PhotoSet from '@/components/PhotoSet';
 import Tag from '@/components/Tag';
 import PressCards from '@/components/PressCards';
+import LinkAudio from '@/components/LinkAudio';
+import EmbedMedia from '@/components/EmbedMedia';
 import ContributionChart from '@/components/ContributionChart';
 
 const cleanDate = (dt?: string) => dt?.substring(0, 10)?.replace(/-00/g, '');
@@ -15,6 +17,16 @@ const cleanDate = (dt?: string) => dt?.substring(0, 10)?.replace(/-00/g, '');
 const isTypeImage = (type?: string) => {
 	const lower = type?.toLowerCase();
 	return lower?.includes('image') || lower?.includes('photo') || lower?.includes('poster') || lower?.includes('ticket') || lower?.includes('setlist');
+}
+
+const isTypeAudio = (type?: string) => {
+	const lower = type?.toLowerCase();
+	return lower?.includes('audio');
+}
+
+const isTypeVideo = (type?: string) => {
+	const lower = type?.toLowerCase();
+	return lower?.includes('video');
 }
 
 const Pictures = ({ pictures, name }: any) => {
@@ -43,7 +55,7 @@ const InPress = ({ inpress, name }: any) => {
 
 const IndividualContributions = ({ who, contributions, total, recent, open, justOneResult }: any) => {
 	const uniques = contributions.reduce((acc: any, a: any) => {
-		const key = JSON.stringify({ who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: isTypeImage(a?.type) ? '' : a?.summary, caption: isTypeImage(a?.type) ? '' : a?.caption });
+		const key = JSON.stringify({ mediaurl: a?.video || a?.mediaurl, audio: a?.audio, who: a?.who, datetime: a?.datetime, type: a?.type, href: a?.href, added: a?.added, summary: isTypeImage(a?.type) ? '' : a?.summary, caption: isTypeImage(a?.type) ? '' : a?.caption });
 		return { ...acc, [key]: (acc[key] || 0) + 1};
 	}, {});
 
@@ -66,6 +78,32 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 				/>
 				</div>
 			
+		} else if (isTypeVideo(type)) {
+			return <div key={key} className="odd:bg-gray-100 border-b">
+				<EmbedMedia data={{...x}}>
+				<Link href={href} ><div className="clickItem" style={{ color: '#444', marginTop: '5px' }}>
+				<i>{pluralize(count, type, undefined, true)}</i>{' - '}
+				{(cleanDate(datetime)) ? <>
+					<b className="monospace" >{cleanDate(datetime)}</b> {summary}
+					</> : <b className="monospace" >{summary}</b>
+				}
+				{' '}{caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
+				</div></Link>
+				</EmbedMedia>
+			</div>
+		} else if (isTypeAudio(type)) {
+			return <div key={key} className="odd:bg-gray-100 border-b">
+				<LinkAudio mp3={x?.audio}>
+				<Link href={href} ><div className="clickItem" style={{ color: '#444', marginTop: '5px' }}>
+				<i>{pluralize(count, type, undefined, true)}</i>{' - '}
+				{(cleanDate(datetime)) ? <>
+					<b className="monospace" >{cleanDate(datetime)}</b> {summary}
+					</> : <b className="monospace" >{summary}</b>
+				}
+				{' '}{caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
+				</div></Link>
+				</LinkAudio>
+			</div>
 		} else {
 			return <div key={key} className="clickItem odd:bg-gray-100 border-b"><Link href={href} >
 				<div className="p-1" style={{ color: '#444' }}>
@@ -175,6 +213,8 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				added: r?.added,
 				datetime: r?.datetime,
 				summary: r?.song,
+				audio: r?.mediaurl?.includes('.mp3') ? r?.mediaurl : null,
+				video: !r?.mediaurl?.includes('.mp3') ? r?.mediaurl : null,
 				href: ts2URI(r?.datetime),
 			}
 		);
@@ -217,6 +257,7 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 				datetime: r?.datetime,
 				summary: r?.name,
 				href: ts2URI(r?.datetime) || r?.mp3,
+				video: r?.href,
 				image: r?.image,
 			}
 		);

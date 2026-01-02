@@ -248,6 +248,14 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	});
 
 	media?.results?.forEach((r: any) => {
+		/*
+		only add media that do not already exist in gigsong
+		 */
+		if (gigsong?.results?.find((x: any) => {
+			if (x?.mediaurl) {
+				return x?.mediaurl === r?.href;
+			}
+			})) { return; }
 		addInfo(contributions,
 			{
 				person: r?.credit,
@@ -280,6 +288,14 @@ const Contributions = ({ options, label='Community contribution' }: HashedType) 
 	});
 
 	lyricmedia?.results?.forEach((r: any) => {
+		/*
+		only add media that do not already exist in gigsong
+		 */
+		if (gigsong?.results?.find((x: any) => {
+			if (x?.mediaurl) {
+				return x?.mediaurl === r?.audio || x?.mediaurl === r?.video;
+			}
+			})) { return; }
 		addInfo(contributions,
 			{
 				person: r?.credit,

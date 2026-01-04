@@ -96,7 +96,7 @@ const AudioElsewhere = () => {
 		<Header section="audio/elsewhere" />
 		<main>
 			<NotesTag> Some podcasts </NotesTag>
-			{podcasts.map((p: any, key: number) => <div key={key} className="listItem"><EmbedMedia data={...p} ><blockquote><i>{p?.children}</i><br /><Source g={p.source} /><br />{dateDiff(p.datetime, '')}</blockquote></EmbedMedia></div>)}
+			{podcasts.map((p: any, key: number) => <div key={key} className="listItem"><EmbedMedia data={{...p}} ><blockquote><i>{p?.children}</i><br /><Source g={p.source} /><br />{dateDiff(p.datetime, '')}</blockquote></EmbedMedia></div>)}
 		</main>
 		<Footer />
 	</>)

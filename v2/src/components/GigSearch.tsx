@@ -7,6 +7,9 @@ import { parseYear, parseMonth, parseDayOrdinal, parseHour, parseHourAMPM, parse
 import { removeHTML } from '@/components/GenericWeb';
 import GigGraph, { GigBarTypes } from '@/components/GigGraph';
 import { AutoLinkPlayer, AutoLinkSong, AutoLinkAct } from '@/lib/defines';
+//import ContributionChart from '@/components/ContributionChart';
+import { PieChart, BarChart, ColumnChart, LineChart } from 'react-chartkick';
+import 'chartkick/chart.js';
 
 import IconSonglist from '@/svg/IconSonglist';
 import IconPix from '@/svg/IconPix';
@@ -150,7 +153,7 @@ const Venue = ({ record }: { record: RecordType }) =>
 const layoutPerformer = (record: RecordType, key: number) => {
 	const { gig } = record;
 	return <div key={key}>
-		<Venue record={...gig} />
+		<Venue record={{...gig}} />
 		<div style={{ marginBottom: '15px' }}>Musician:{' '}
 		<i>
 			{AutoLinkPlayer(record?.performer)}
@@ -162,7 +165,7 @@ const layoutPerformer = (record: RecordType, key: number) => {
 const layoutSongs = (record: RecordType, key: number) => {
 	const { gig } = record;
 	return <div key={key}>
-		<Venue record={...gig} />
+		<Venue record={{...gig}} />
 		<div style={{ marginBottom: '15px' }}>Played:{' '}
 		<i>
 			&quot;{AutoLinkSong(record?.song)}&quot;
@@ -404,12 +407,26 @@ export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: b
 
 	const makeGigYear = (queryString: string, year: number, gigs: RecordType[]) => {
 		const months: HashedType = {};
+		//const chartData: HashedType = {};
 		gigs.forEach(g => {
 			const month = parseMonth(g.datetime);
 			if (!months[month]) months[month] = [];
 			months[month].push(g);
+			/*
+			determineTypes(g)?.forEach((t: string) => {
+				const key = GigBarTypes[t]?.title || 'JBC';
+				if (!chartData[key]) chartData[key] = 0;
+				chartData[key] = chartData[key] + 1;
+			});
+			*/
 		});
+		/*
+		const data = Object.keys(chartData).map((t: string) => {
+			return { name: t, data: [[ year, chartData[t] ]] };
+		 });
+		 */
 		return <details key={year} open={(!preventAutoExpand) && (gigs?.length === 0 || Object.keys(years)?.length === 1)}>
+			{/*<BarChart data={data} stacked={true} height="100px" />*/}
 			<summary className="flex hover:outline mb-1">
 				<GigGraph scaling={scaling} year={year} gigs={gigs} queryString={queryString} />
 			</summary>

@@ -6,7 +6,7 @@ import type { Metadata, ResolvingMetadata } from 'next'
 //import IconMenu from '@/svg/IconMenu';
 
 import { parseCaptionSourceEtc } from '@/lib/utils';
-import { useSearchParams } from 'next/navigation';
+//import { useSearchParams } from 'next/navigation';
 import PageComments from '@/components/PageComments';
  
 type Props = {

@@ -3920,8 +3920,8 @@ const Miracles = () =>
 		{(!!i.body?.length) && <>
 		<p />
 		<h1>AI transcription of the audio follows...</h1>
-		<pre style={{ margin: `20px`, border: '1px solid grey', padding: '15px', whiteSpace: `pre-wrap`, height: `250px`, overflowY: `auto` }}>
-		{i.body}
+		<pre style={{ margin: `10px`, border: '1px solid grey', padding: '5px', whiteSpace: `pre-wrap`, height: `250px`, overflowY: `auto`, background: `#f7f7f7` }}>
+		{i.body?.trim()}
 		</pre>
 		{i.body.split(' ')?.length?.toLocaleString()} words.
 		</>}

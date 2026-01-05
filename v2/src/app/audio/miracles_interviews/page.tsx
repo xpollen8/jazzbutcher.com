@@ -3918,8 +3918,9 @@ const Miracles = () =>
 		</blockquote>
 		<EmbedMedia data={{ mediaurl: i.media, mediacredit: 'Philip Snow' }} />
 		{(!!i.body?.length) && <>
+		<p />
+		<h1>AI transcription of the audio follows...</h1>
 		<pre style={{ margin: `20px`, border: '1px solid grey', padding: '15px', whiteSpace: `pre-wrap`, height: `250px`, overflowY: `auto` }}>
-		<h1>AI Transcription of the audio files follows...</h1>
 		{i.body}
 		</pre>
 		{i.body.split(' ')?.length?.toLocaleString()} words.

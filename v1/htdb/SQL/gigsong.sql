@@ -5042,7 +5042,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2019-11-09 19:30:00','set',NULL,1,5,'Shame A
 INSERT INTO `gigsong` VALUES (NULL,'2019-11-09 19:30:00','set',NULL,1,6,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-11-09 19:30:00','set',NULL,1,7,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2019-11-09 19:30:00','set',NULL,1,8,'Never Give Up',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-06-14 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200614/20200614_PatFish_FishyMansions.mp4',NULL,NULL,NULL,"2021-11-03");
+INSERT INTO `gigsong` VALUES (NULL,'2020-06-14 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200614/20200614_PatFish_FishyMansions.mp4','Dhiren Basu',NULL,NULL,"2021-11-03");
 INSERT INTO `gigsong` VALUES (NULL,'2020-06-14 00:00:00','set',NULL,1,1,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-06-14 00:00:00','set',NULL,1,10,'Shame About You',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-06-14 00:00:00','set',NULL,1,11,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5059,7 +5059,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2020-06-14 00:00:00','set',NULL,1,6,'Gold','
 INSERT INTO `gigsong` VALUES (NULL,'2020-06-14 00:00:00','set',NULL,1,7,'Water',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-06-14 00:00:00','set',NULL,1,8,'Vienna Song',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-06-14 00:00:00','set',NULL,1,9,'Keeping the Curtains Closed',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-07-12 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200712/20200712_PatFish_FishyMansions.mp4',NULL,NULL,NULL,"2021-11-03");
+INSERT INTO `gigsong` VALUES (NULL,'2020-07-12 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200712/20200712_PatFish_FishyMansions.mp4','Dhiren Basu',NULL,NULL,"2021-11-03");
 INSERT INTO `gigsong` VALUES (NULL,'2020-07-12 00:00:00','set',NULL,1,1,'Olof Palme',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-07-12 00:00:00','set',NULL,1,10,'Bob Dylan Blues','Syd Barrett',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-07-12 00:00:00','set',NULL,1,11,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5073,7 +5073,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2020-07-12 00:00:00','set',NULL,1,6,'Looking
 INSERT INTO `gigsong` VALUES (NULL,'2020-07-12 00:00:00','set',NULL,1,7,'Almost Brooklyn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-07-12 00:00:00','set',NULL,1,8,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-07-12 00:00:00','set',NULL,1,9,'Whaddya?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200927/20200927_PatFish_FishyMansions.mp4',NULL,NULL,NULL,"2021-11-10");
+INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20200927/20200927_PatFish_FishyMansions.mp4','Dhiren Basu',NULL,NULL,"2021-11-10");
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00','set',NULL,1,1,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00','set',NULL,1,10,'Marnie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00','set',NULL,1,11,'She\'s on Drugs',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5089,7 +5089,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00','set',NULL,1,6,'Tombé 
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00','set',NULL,1,7,'La Mer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00','set',NULL,1,8,'Baltic',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-09-27 22:00:00','set',NULL,1,9,'Aftergirls',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-12-06 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20201206/20201206_PatFish_FishyMansions.mp4',NULL,NULL,NULL,"2021-11-04");
+INSERT INTO `gigsong` VALUES (NULL,'2020-12-06 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20201206/20201206_PatFish_FishyMansions.mp4','Dhiren Basu',NULL,NULL,"2021-11-04");
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-06 00:00:00','set',NULL,1,1,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-06 00:00:00','set',NULL,1,10,'Silver Street','Dave Kusworth',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-06 00:00:00','set',NULL,1,11,'I\'ll Be Your Chauffeur','David J.',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5105,7 +5105,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2020-12-06 00:00:00','set',NULL,1,6,'Old Sna
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-06 00:00:00','set',NULL,1,7,'Baltic',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-06 00:00:00','set',NULL,1,8,'What\'s The Matter, Boy?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-06 00:00:00','set',NULL,1,9,'Running On Fumes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20201231/20201231_PatFish_FishyMansions.mp4',NULL,NULL,NULL,"2021-11-03");
+INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20201231/20201231_PatFish_FishyMansions.mp4','Dhiren Basu',NULL,NULL,"2021-11-03");
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,1,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,10,'Here Comes a Regular','Paul Westerberg',NULL,NULL,'https://www.youtube.com/embed/PFBa-B2O2RY','chrisseventeen','https://www.youtube.com/channel/UCU-Hjd2mk1LeXDckDL6M1oQ',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,11,'Love Kittens',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5120,7 +5120,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,6,'The Bal
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,7,'O, Wot a Dream','Kevin Ayers',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,8,'Bob Dylan Blues','Syd Barrett',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2020-12-31 00:00:00','set',NULL,1,9,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210228/20210228_PatFish_FishyMansions.mp4',NULL,NULL,NULL,"2021-11-10");
+INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210228/20210228_PatFish_FishyMansions.mp4','Dhiren Basu',NULL,NULL,"2021-11-10");
 INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,1,'Domestic Animal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,10,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,11,'Niagara',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5142,7 +5142,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,7,'Quality
 INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,8,'When I Win The Lottery','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-02-28 00:00:00','set',NULL,1,9,'Here\'s a Picture of a Kitten, Give Me Money',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00','set',NULL,1,0,'Big Saturday / All the Saints / I\'ll Be Your Chauffeur',NULL,NULL,NULL,'https://www.youtube.com/embed/0aYjOJjDrXU','coordinatezero','https://www.youtube.com/channel/UCiCZlujirZWRQvzXqzw6r1A',NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210418/20210418_PatFish_FishyMansions.mp4',NULL,NULL,NULL,"2021-11-03");
+INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210418/20210418_PatFish_FishyMansions.mp4','Dhiren Basu',NULL,NULL,"2021-11-03");
 INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00','set',NULL,1,1,'Dream Tobacco','Max Wall',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00','set',NULL,1,10,'I\'ll be Your Chauffeur','David J',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00','set',NULL,1,11,'Wildlife',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5161,7 +5161,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00','set',NULL,1,6,'She\'s 
 INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00','set',NULL,1,7,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00','set',NULL,1,8,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-04-18 22:00:00','set',NULL,1,9,'All the Saints',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210606/20210606_PatFish_FishyMansions.mp4',NULL,NULL,NULL,"2021-11-03");
+INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210606/20210606_PatFish_FishyMansions.mp4','Dhiren Basu',NULL,NULL,"2021-11-03");
 INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00','set',NULL,1,1,'What\'s the Matter, Boy?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00','set',NULL,1,10,'Marnie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00','set',NULL,1,11,'The Sun is Still Sunny','Dean Wareham/Britta Phillips',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5179,7 +5179,7 @@ INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00','set',NULL,1,6,'Girls w
 INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00','set',NULL,1,7,'Crimson & Clover','Tommy James & the Shondells',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00','set',NULL,1,8,'That Cat is High','The Inkspots',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-06-06 22:00:00','set',NULL,1,9,'The Fat Lady of Limburg','Eno',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'2021-07-25 22:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210725/20210725_PatFish_FishyMansions.mp4',NULL,NULL,NULL,"2021-11-03");
+INSERT INTO `gigsong` VALUES (NULL,'2021-07-25 22:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20210725/20210725_PatFish_FishyMansions.mp4','Dhiren Basu',NULL,NULL,"2021-11-03");
 INSERT INTO `gigsong` VALUES (NULL,'2021-07-25 22:00:00','set',NULL,1,1,'Domestic Animal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-07-25 22:00:00','set',NULL,1,10,'She\'s on Drugs',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-07-25 22:00:00','set',NULL,1,11,'Taxi Driver','Bobby Benson','Excerpt',NULL,NULL,NULL,NULL,NULL,NULL);

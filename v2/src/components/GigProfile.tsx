@@ -243,7 +243,7 @@ const GigReview = ({ data }: any) => {
 }
 const GigReviews = (data: any) => <div className="listItem"><Iterator data={data} func={GigReview} /></div>
 
-const GigPresses = (data: any) => <PressCards items={...data} />
+const GigPresses = (data: any) => <PressCards items={data} />
 
 const doIt = (label: any, val: any) => val && <span className="break-keep outline outline-1 outline-cyan-500 m-1"> <b>{label}</b> {val} </span>;
 

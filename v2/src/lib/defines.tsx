@@ -1125,7 +1125,7 @@ const	people: HashedType = {
 	joea: { name: "Joe Allen" },
 	joel_harries: { name: "Joel Harries" },
 	john_silver: { name: 'John Silver' },
-	jonny_mattock: { name: "Jonny Mattock" },
+	jonny_mattock: { name: "Jonny Mattock", aliases: [ "Jon Mattock" ] },
 	jules: { name: "Julian Poole", aliases: [ "Julian", "Jules" ] },
 	karel: { name: 'Karel Von Dämmerung', aliases: [ "Karel" ] },
 	kathie: { name: "Kathie McGinty", aliases: [ "Kathie", "Kathie M" ] },

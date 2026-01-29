@@ -24,7 +24,7 @@ const TheUndertakers = () =>
 		</div>
 		<div className="listItem">
 			<blockquote className="annotation">
-				In 1995 a friend with a bar made me form a supergroup to keep him entertained on a slow Wednesday night. We had me, Mark Refoy (Guitarist: Spacemen 3, Spiritualised, Slipstream, Pet Shop Boys); Tim Harries (Bassist: Eno, Steeleye Span, David Holmes, Katie Melua!) and Jon Mattock (Drummer: Spacemen 3, Spiritualised. Slipstream, Perfect Disaster, The Breeders, Massive Attack). The set was all covers. I remember we did the Velvets’ “Foggy Notion,” Can’s “Mother Sky,” some Plastic Ono Band stuff, “Suzie Q,” “Roadrunner” and a few others. We called ourselves The Undertakers. We only ever did it twice. In a sort of KLF moment, I sold the only cassette of the show for £80.
+				In 1995 a friend with a bar made me form a supergroup to keep him entertained on a slow Wednesday night. We had me, {expand('mark_refoy')} (Guitarist: Spacemen 3, Spiritualised, Slipstream, Pet Shop Boys); {expand('tim_harries')} (Bassist: Eno, Steeleye Span, David Holmes, Katie Melua!) and {expand('jonny_mattock')} (Drummer: Spacemen 3, Spiritualised. Slipstream, Perfect Disaster, The Breeders, Massive Attack). The set was all covers. I remember we did the Velvets’ “Foggy Notion,” Can’s “Mother Sky,” some Plastic Ono Band stuff, “Suzie Q,” “Roadrunner” and a few others. We called ourselves The Undertakers. We only ever did it twice. In a sort of KLF moment, I sold the only cassette of the show for £80.
 				<p />
 			</blockquote>
 			<Source g="Pat Fish" u="/press/20081120_caughtinthecarousel#undertakers" p="Caught in the Carousel" d="2008-11-20" />
@@ -37,8 +37,8 @@ const TheUndertakers = () =>
 			<b>Pat&apos;s Description:</b>
 				<blockquote>
 					Formed as the house band of Slurp&apos;s Bar, Northampton, the
-					Undertakers feature {expand('pat')}, Mark Refoy and Jon Mattocks ({expand('space')},
-					Spiritualized), and Tim Harris (Everything But The Girl, Doctor Didg).
+					Undertakers feature {expand('pat')}, {expand('mark_refoy')} and {expand('jonny_mattock')} (Spacemen 3,
+					Spiritualized), and {expand('tim_harries')} (Everything But The Girl, Doctor Didg).
 					They don&apos;t rehearse, they only play covers, and a total of about 43
 					people have ever seen them play live.  How cool is that?
 					Sound quality is exactly the same as on the Velvet Underground&apos;s

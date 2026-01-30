@@ -6750,7 +6750,9 @@ If only I'd been born in a bar
 
 #define	grooving_in_the_bus_lane.html
 #live	if (getval(page) = grooving_in_the_bus_lane.html)
-	${lyricsHeader(title=Grooving In The Bus Lane, annotated=yes, lyrics=${literalizeCommas(
+	${lyricsHeader(title=Grooving In The Bus Lane, annotated=yes,
+	images=${jbc_images}/pat_and_an_antonelli;;Owen Jones;;;;2026-01-28;;Pat and an Antonelli,
+	lyrics=${literalizeCommas(
 
 	Well, well, well
 	<p />

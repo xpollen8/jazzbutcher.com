@@ -5237,6 +5237,10 @@ INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00','set',NULL,2,7,'Sweet J
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00','set',NULL,2,8,'Domestic Animal',NULL,NULL,'Bid vocals, Dave Morgan drums, Simon Mawby bass, David Musker keyboards, John Silver bass','https://www.youtube.com/embed/m9osNtXDF74','Jane B','https://www.youtube.com/user/Caryne99',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2021-11-27 19:30:00','set',NULL,2,9,'Another World','Rolo McGinty',NULL,'Rolo McGinty vocals and guitar, Dave Morgan drums, Simon Mawby bass, David Musker keyboards, John Silver bass','https://www.youtube.com/embed/o-IAnHjDX6Q','Jane B','https://www.youtube.com/user/Caryne99',NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'2023-04-02 19:00:00','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/video/gigs/20230402/20230402_Dhiren_TributeShow.mp4','Dhiren Basu',NULL,NULL,"2023-04-04");
+INSERT INTO `gigsong` VALUES (NULL,'2023-04-02 19:00:00','set',NULL,1,1,"Melanie Hargreaves' Father's Jaguar",NULL,NULL,NULL,'https://www.youtube.com/embed/lLBnJGoDg9g','Planetruth Pictures',NULL,NULL,"2026-01-30");
+INSERT INTO `gigsong` VALUES (NULL,'2023-04-02 19:00:00','set',NULL,1,2,"Keeping the Curtains Closed",NULL,NULL,NULL,'https://www.youtube.com/embed/TCt4xQz27W8','Planetruth Pictures',NULL,NULL,"2026-01-30");
+INSERT INTO `gigsong` VALUES (NULL,'2023-04-02 19:00:00','set',NULL,1,3,"Sea Madness",NULL,NULL,NULL,'https://www.youtube.com/embed/5jI_FM89sxs','Planetruth Pictures',NULL,NULL,"2026-01-30");
+INSERT INTO `gigsong` VALUES (NULL,'2023-04-02 19:00:00','set',NULL,1,4,"Southern Mark Smith",NULL,NULL,NULL,'https://www.youtube.com/embed/JCrl8DqUvwU','Planetruth Pictures',NULL,NULL,"2026-01-30");
 
 INSERT INTO `gigsong` VALUES (NULL,'1989-11-05 00:00:00','set',NULL,1,0,'The Entire Performance',NULL,'audience master - aiwa jh800 w/ sony 909 mic',NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19891105/19891105_JazzButcher_NYC_anothermadelfmaster.mp3','another madelf master',NULL,NULL,"2025-07-09");
 

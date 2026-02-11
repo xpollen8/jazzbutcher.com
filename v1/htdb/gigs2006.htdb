@@ -1035,6 +1035,8 @@
 #define	Oct1.html()
 	${gigHeader(
 		cost=,
+		posters=/images/20061001/20061001_poster.jpg$$
+		    James Duval;;;;2026-02-10,
 		with=${literalizeCommas(
 			Joe Woolley
 		)},

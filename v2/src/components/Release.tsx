@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 import { removeHTML, Attribution, Source } from '@/components/GenericWeb';
 import Tag from '@/components/Tag';
+import PhotoSet from '@/components/PhotoSet';
 import ImageStrip from '@/components/ImageStrip';
 import MakeReleasePress from '@/components/MakeReleasePress';
 import EmbedMedia from '@/components/EmbedMedia';
@@ -322,11 +323,30 @@ const ReleaseVideos = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	}
 }
 
-const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
-	if (release?.images || release?.thumb) {
-		const images = parseCaptionsSourcesEtc(release.thumb + '$$' + release.images);
+const ReleaseThumbs = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	if (release?.thumb) {
+		const images = parseCaptionsSourcesEtc(release.thumb);
 		if (images?.length) {
 				return <ImageStrip images={images} />
+		}
+	}
+}
+
+const ReleaseImages = ({ release }: { release: ReleaseTypeWithChildren }) => {
+	if (release?.images) {
+		const images = parseCaptionsSourcesEtc(release.images);
+		// get into PhotoSet format
+		const photos = images?.map(([ inImage, caption, source, sourceurl, sourcedate ]: any) => ({
+			href: inImage + '.jpg',
+			src: inImage + '.jpg',
+			//alt: caption,
+			credit: source,
+			credit_url: sourceurl,
+			credit_date: sourcedate,
+			caption
+		}));
+		if (photos?.length) {
+				return <PhotoSet title={'Related Images'} photos={photos} />
 		}
 	}
 }
@@ -401,9 +421,10 @@ const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number)
 	// merge duplicates in ->audio and ->songs
 	const tracks = mergeAudioAndMedia(release?.audio, data?.songs?.results);
 	return <Loading isLoading={isLoading} >
-		<ReleaseImages release={release} />
+		<ReleaseThumbs release={release} />
 		<ReleaseDetails release={release} />
 		<ReleaseNotes release={release} />
+		<ReleaseImages release={release} />
 		<ReleaseTracks songs={tracks} lookup={lookup} />
 		<ReleaseDownloads release={release} />
 		<ReleaseCredits credits={credits} />

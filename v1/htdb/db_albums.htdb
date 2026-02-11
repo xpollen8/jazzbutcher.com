@@ -3689,7 +3689,7 @@ it should say ",...in my monster world, with my monster girl,..." right before "
 #define	albums[100]->project	The Vaguely Familiar/Duck
 #define	albums[100]->title	The First One Thousand Years
 #define	albums[100]->thumb	${jbc_images}/20220715_WonderBat9_Photoalbum_Vegette;;The Vegette;;Dhiren Basu;;https://youtube.com/watch?v=a6SzTBA7WG8;;2022-07-14
-#define	albums[100]->images	${jbc_images}/199107/199107_VaguelyFamiliar_Master1$$${jbc_images}/199107/199107_VaguelyFamiliar_Master2;;;;Richard Formby;;;;2021-12-10
+#define	albums[100]->images	${jbc_images}/199107/199107_VaguelyFamiliar_Master1$$${jbc_images}/199107/199107_VaguelyFamiliar_Master2;;;;Richard Formby;;;;2021-12-10$$${jbc_images}/199107/199107_Vaguely_Familiar-Sumishta1;;Sumishta and Richard$$${jbc_images}/199107/199107_Vaguely_Familiar-Sumishta2;;Pat$$${jbc_images}/199107/199107_Vaguely_Familiar-Sumishta3;;Richard$$${jbc_images}/199107/199107_Vaguely_Familiar-Sumishta4;;Richard;;Sumishta Brahm;;;;2026-02-10$$
 #define	albums[100]->liner
 #define	albums[100]->audio	/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_AMatterOfTime.mp3;;A Matter of Time::1::A 13 Frightenened Girls number;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Bombed.mp3;;Bombed::2::by Richard\, which was featured on the Autumn 93 jbc European tour;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_PedbysGrace.mp3;;Pedby's Grace::3::by me and Sumishta;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_ColourWaltz.mp3;;Colour Waltz::4::by me and  Richard;;$$/audio/TheVaguelyFamiliar/199107_TheVaguelyFamiliar_Elwood.mp3;;Elwood::5::by Sumishta and me;;$$
 #define	albums[100]->blurb

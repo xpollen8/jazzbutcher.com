@@ -565,13 +565,16 @@ Craig Kolb;;;;2000-03-17
 	${gigHeader(
 		cost=$9,
 		with=${literalizeCommas(
+			Downey Mildew
 		)},
 		who=${literalizeCommas(
 			${pat}, ${kizzy}, ${larry}, ${paul}
 		)},
 		pat=${literalizeCommas(
 		)},
-		photosets=
+		posters=/images/19880611/19880611_poster.jpg$$
+			David Whittemore;;;;2026-02-25
+		,photosets=
 			/images/19880611/19880611_del_cubbybear_11.jpg$$
 			David Whittemore;;;;1997-05-28
 			---

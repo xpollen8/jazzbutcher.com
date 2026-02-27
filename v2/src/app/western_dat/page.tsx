@@ -29,7 +29,7 @@ const WesternTape = () =>
 					src="https://v1.jazzbutcher.com/images/western_250.jpg"
 					height={250} width={250} alt="western cover"/></Link>
 			<br />
-			<Link href="/https://v1.jazzbutcher.com/images/1992/1992_WesternFamilyBroadcasting.jpg"><Image
+			<Link href="https://v1.jazzbutcher.com/images/1992/1992_WesternFamilyBroadcasting.jpg"><Image
 					src="https://v1.jazzbutcher.com/images/1992/1992_WesternFamilyBroadcasting_250.jpg"
 					height={250} width={250} alt="JBC broadcasting"/></Link>
 			</div>

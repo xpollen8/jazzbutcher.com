@@ -622,6 +622,9 @@
 		,
 		photosets= /images/19920617/19920617_lis_pete.jpg;;${pete}$$
 			Suzanne Lis;;;;2017-03-20
+			---
+			/images/1992/1992_WesternFamilyBroadcasting.jpg;;${literalizeCommas(The Sony TCD-D3 DAT recorder used to record Western Family, and the homebuilt low-power FM transmitter used by Whittemore to monitor mixes in his car. Pat references this "JBC Broadcasting" setup at the start of Beautiful Snow White Hair)}$$
+			Daviud Whittemore;;;;2026-02-26
 	)}
 
 #define	Jun26.html()

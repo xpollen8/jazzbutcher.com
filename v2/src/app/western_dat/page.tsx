@@ -24,9 +24,15 @@ const WesternTape = () =>
 <>
 	<Header section="etc" title="Western Family Tape" />
 		<main className="etc">
+			<div className="float-left m-3">
 			<Link href="/releases/western.html"><Image
 					src="https://v1.jazzbutcher.com/images/western_250.jpg"
-					height={250} width={250} alt="western cover" className="float-left m-3" /></Link>
+					height={250} width={250} alt="western cover"/></Link>
+			<br />
+			<Link href="/https://v1.jazzbutcher.com/images/1992/1992_WesternFamilyBroadcasting.jpg"><Image
+					src="https://v1.jazzbutcher.com/images/1992/1992_WesternFamilyBroadcasting_250.jpg"
+					height={250} width={250} alt="JBC broadcasting"/></Link>
+			</div>
 			<br />
 			{expand('family')},
 			the 1992 live album released on {expand('creation_records')}, is not the record
@@ -52,6 +58,7 @@ const WesternTape = () =>
 			tunes from beyond the grave.
 			<p />
 			<Attribution g="David Whittemore" d="2005-11-15" />
+			<br className="clear_float" />
       <GigPlayer
 				src="https://s3.us-east-1.amazonaws.com/assets.jazzbutcher.com/audio/1992_JazzButcher_WesternFamily_PreMaster_DAT_CBR.mp3"
 				tracks={[

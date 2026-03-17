@@ -2493,6 +2493,17 @@ subhead=(20 December 1957 – 5 October 2021),
 		dtadded=1996-08-19,
 		dtpublished=1989)}
 
+	${addPress(type=album, album=bacon,
+		url=${jbc_press}/19830806_press_sounds.html,
+		thumb=${jbc_images}/19830806/19830806_press_sounds;;David Whittemore,
+		credit=Ralph Traitor,
+		publication=Sounds,
+		title=The Jazz Butcher,
+		subtitle=The Jazz Butcher in Bath of Bacon,
+		location=UK,
+		dtadded=2026-03-16,
+		dtpublished=1983-08-06)}
+
 	${addPress(type=album, album=planet,
 		url=${jbc_press}/89sounds.html,
 		thumb=${jbc_images}/19890729/19890729_press_sounds;;David Whittemore,
@@ -4831,6 +4842,128 @@ The Jazz Butcher along with friends The Blue Aeroplanes play Peter Clark Hall on
 
 	)})}
 	${jbc_footer}
+#live	endif
+
+#define	19830806_press_sounds.html
+#live	if (getval(page) = 19830806_press_sounds.html)
+	${extractPress(
+		body=${literalizeCommas(
+THE JAZZ Butcher's debut
+platter is the sort of record
+which has the bamboozled critic
+scratching his head after one
+play and asking ‘Why me?’. Not
+because, you understand, | do
+not like the Jazz Butcher — on
+the contrary, I'm rather
+enamoured by this peculiar
+waxing. No, it’s simply that one
+wonders where exactly Le
+Butcher is ‘coming from’.
+<p />
+It's obvious that the boy's
+influences run in two main
+furrows, the first being the
+subcultural cool-school of Lou
+Reed circa ‘Street Hassle’ and
+Coney Island Baby’, the
+second being the good old-fashioned funk of James Brown
+and his soul brother
+contemporaries. One knows the
+latter assertion to be fact when
+JB (Jazz Butcher, that is) quips
+Stay on the scene like a fruit
+Machine during ‘Jazz Butcher
+Theme’, a song mean on the
+downstoke with offhand,
+eminently likeable vocals and a
+closed-circuit funk that goes
+nowhere fast, something of a
+trait with JB as it happens.
+<p />
+Yes, this record is the sort
+that's both born and destined
+to have takeaway droppings
+and beer glass stains all over it,
+a strutting and greasy little bit
+of Clapham stapled to a big
+chunk of The Big Abbatoir; a
+low budget bridging of the Big
+Muddy.
+<p />
+After getting past ‘Gloop
+Jiving' with its lengthy thank-
+you's - delivered in true
+tawdry pro-musician style -
+and ingesting the
+aforementioned ‘Theme’, then
+comes the privilege of
+'Partytime', ensconsed behind
+ritual shades, mellow and
+
+myopic in the nicest possible
+way and enjoying the gentle roll
+of an understated acoustic
+strum for tempo; strictly for
+play only past sunset. It's rather
+excellent.
+<p />
+‘Bigfoot Motel’ shuffles in on
+a railroading snarebeat matched
+to exclamatory guitar, kind of
+like a spastic roulette wheel.
+Filled with a slightly buried and
+slightly doopy dialogue about a
+variety of Americana, | suspect
+that JB is at heart a
+tremendous cornball and, yes,
+he wears it well.
+<p />
+‘Zombie Love’ ushers in side
+two, a frisky wire-brush of
+sound, youthful and playful.
+‘Grey Flannellette’ is a silly
+parody of ‘Warm Leatherette’
+complete with reedy, weedy
+synthesisers moping
+mechanically at the back while
+JB weaves his South London
+tale of woe deadpan. He then
+dons his French hat, no doubt a
+beret, for ‘La Mer’ which is
+Continental fare at its dogiest
+but the side really picks up with
+‘Poisoned By Food’ where, as
+per usual, the music takes a
+back seat to the maestro’s
+lyrical sketchings which
+succeed in being witty,
+somewhat sardonic and at
+times even perversely insightful
+and wise.
+<p />
+JB is obviously a
+temperamental fellow dying to
+be indulged and although he
+does at times test the listener,
+the investment in patience is
+alway rewarded. Such is the
+nature of true prodigality, |
+suppose?
+<p />
+And that is the Jazz Butcher.
+Being a total Philistine when it
+comes to jazz, | won't even
+venture to explore his worth as
+a jazz artist and it’s just as well
+| don't, | dare say, ahem,
+however, this is a record that
+grows likeable in leaps and
+bounds and | recommend it to
+all seeking an experience
+beyond the norm.
+		)}
+	)}
 #live	endif
 
 #define	89sounds.html

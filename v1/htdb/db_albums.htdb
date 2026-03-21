@@ -984,6 +984,7 @@
 #define	albums[24]->href	${jbc_albums}/planet.html
 #define	albums[24]->title	Big Planet, Scarey Planet
 #define	albums[24]->thumb	${jbc_images}/planet
+#define	albums[24]->images	${jbc_images}/releases/20230223_BigPlanet_LouReedLibrary;;${literalizeCommas(Big Planet in the Lou Reed Library exhibition)};;The Library for Performing Arts;;https://x.com/nypl_lpa/status/1626992489646247936;;2026-03-21$$
 #define	albums[24]->label	creation_records, Genius
 #define	albums[24]->catalog	GENICD008, GENI-008CD
 #define	albums[24]->dtreleased	1989

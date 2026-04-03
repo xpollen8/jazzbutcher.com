@@ -188,6 +188,13 @@
 		cost=,
 	)}
 
+#define	Apr16.html()
+	${gigHeader(
+		cost=,
+		venue=The Exeter Hall,
+		city=Oxford,
+	)}
+
 #define	May4.html()
 	${gigHeader(
 		cost=,

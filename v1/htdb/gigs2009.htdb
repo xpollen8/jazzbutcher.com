@@ -59,6 +59,9 @@
 
 #define	Apr4.html()
 	${gigHeader(
+		venue=${literalizeCommas(Mandela Room, Northampton University)},
+		city=Northampton,
+		blurb=Blinky's birthday,
 		pat=${literalizeCommas(
 			Played a mate's birthday party last night with Wilson.
 			<p />

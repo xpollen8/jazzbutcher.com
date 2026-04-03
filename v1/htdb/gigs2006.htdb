@@ -33,6 +33,16 @@
 		    ;;;;2017-02-12
 	)}
 
+#define	Feb3.html()
+	${gigHeader(
+		venue=Willen Lakes,
+		city=Milton Keynes,
+		with=${literalizeCommas(
+		)},
+		announcement=${literalizeCommas(
+		)},
+	)}
+
 #define	Jan23.html()
 	${gigHeader(
 		cost=free,

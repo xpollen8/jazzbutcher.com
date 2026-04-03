@@ -1103,6 +1103,22 @@
 		    Pat Fish;;;;2017-02-12
 	)}
 
+#define	Aug4.html()
+	${gigHeader(
+		venue=${literalizeCommas(The Rocking Horse)},
+		with=${literalizeCommas(
+		)},
+		blurb=${literalizeCommas(
+		Lindsay's wedding
+		)},
+		who=${literalizeCommas(
+		)},
+		announcement=${literalizeCommas(
+		)},
+		pat=${literalizeCommas(
+		)}
+	)}
+
 #define	Aug11.html()
 	${gigHeader(
 		cost=&pound;3:00,

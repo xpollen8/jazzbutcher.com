@@ -3,7 +3,6 @@ import NotebookHero from '@/components/NotebookHero';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import OnThisDay from '@/components/OnThisDay';
-import Documentary from '@/components/Documentary';
 import RecentUpdates from '@/components/RecentUpdates';
 import { MostRecentNews } from '@/components/News';
 
@@ -18,7 +17,6 @@ const Home = (): React.ReactNode =>
 				<OnThisDay />
 			</div>
 			<div className="w-full min-[750px]:w-1/2">
-				<Documentary />
 				<MostRecentNews />
 				<RecentUpdates />
 			</div>

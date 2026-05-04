@@ -50,7 +50,7 @@
 
 #define	Mar13.html()
 	${gigHeader(
-		posters=/images/19840313/03130203_poster.jpg$$
+		posters=/images/19840313/19840313_poster.jpg$$
 			David J.;;;;2026-05-04
 	)}
 

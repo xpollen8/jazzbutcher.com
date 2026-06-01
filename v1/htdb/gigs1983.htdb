@@ -60,6 +60,7 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${at}, ${ll}, ${max}, ${rolo}, ${hook} )},
+	with=Nikki Sudden,
 
 	)}
 

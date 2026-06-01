@@ -107,8 +107,9 @@ Yeah. And I just loved that. And, yeah, because we just had, like, nothing to go
 #define	Aug21.html()
 	${gigHeader(
 
-	ootleg=${literalizeCommas( ${w}, ${q(4)}, ${p(D)} )},
+	bootleg=${literalizeCommas( ${w}, ${q(4)}, ${p(D)} )},
 	who=${literalizeCommas( ${pat}, ${at}, ${rolo}, ${max} )},
+	with=${literalizeCommas(The Tempest, Embrace)},
 	cassettes=
 	   /images/FM/FMAC20_cover.jpg$$
 	   /images/FM/FMAC20_songs.jpg$$

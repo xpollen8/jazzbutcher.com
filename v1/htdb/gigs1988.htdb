@@ -571,7 +571,8 @@ Craig Kolb;;;;2000-03-17
 			${pat}, ${kizzy}, ${larry}, ${paul}
 		)},
 		pat=${literalizeCommas(
-		)},
+			It was hot in there and occasionally mental.
+		)}$$;;;;2021-06-11,
 		posters=/images/19880611/19880611_poster.jpg$$
 			David Whittemore;;;;2026-02-25
 		,photosets=

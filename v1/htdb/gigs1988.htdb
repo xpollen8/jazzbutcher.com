@@ -572,7 +572,7 @@ Craig Kolb;;;;2000-03-17
 		)},
 		pat=${literalizeCommas(
 			It was hot in there and occasionally mental.
-		)}$$;;;;2021-06-11,
+		)}$$;;;;2021-06-12,
 		posters=/images/19880611/19880611_poster.jpg$$
 			David Whittemore;;;;2026-02-25
 		,photosets=
@@ -602,6 +602,9 @@ Craig Kolb;;;;2000-03-17
 			/images/19880611/19880611_del_cubbybear_22.jpg$$
 			/images/19880611/19880611_del_cubbybear_23.jpg$$
 			David Whittemore;;;;2013-07-06
+		---
+		/images/19880611/19880611_FB_screenshot.jpg$$
+			Pat Fish;;;;2021-06-12
 	)}
 
 #define	Jun12.html()

@@ -71,7 +71,7 @@ const IntroPat = ({ heading }: { heading: string }) =>
 const Fiasco1 = ({ heading }: { heading: string }) => 
 <Fiasco heading={heading}>
 	<p>
-		<i>The Riverie at Buxton Mill, Norfolk, <span className="release_title"><Link href="http://jazzbutcher.com/gigs/2001/Dec31.html">31 December 2001</Link></span></i>
+		<i>The Riverie at Buxton Mill, Norfolk, <span className="release_title"><Link href="https://jazzbutcher.com/gigs/2001/Dec31">31 December 2001</Link></span></i>
 	</p>
 
 	<p>
@@ -79,7 +79,7 @@ const Fiasco1 = ({ heading }: { heading: string }) =>
 	</p>
 
 	<p>
-		<Link href="http://jazzbutcher.com/gigs/2001/Dec31.html">(See also: Pat&apos;s contempory account of the gig in question)</Link>
+		<Link href="https://jazzbutcher.com/gigs/2001/Dec31">(See also: Pat&apos;s contemporaneous account of the gig in question)</Link>
 	</p>
 
 	<p>
@@ -1067,7 +1067,7 @@ const Fiascos = (): React.ReactNode =>
 
 			<div className="fiascoBox">
 				<video controls preload="none" poster="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/teaser_thumb.jpg">
-					<source src="http://assets.jazzbutcher.com/images/fiascos/teaser.mp4" type="video/mp4" />
+					<source src="https://s3.amazonaws.com/assets.jazzbutcher.com/images/fiascos/teaser.mp4" type="video/mp4" />
 				</video>
 			</div>
 

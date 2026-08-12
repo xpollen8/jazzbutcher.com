@@ -2,7 +2,7 @@ const nextConfig = {
 	//output: 'export',	// for static site generation
 
   experimental: {
-		serverActions: true,
+		//serverActions: true,
     //useCache: true,
   },
 

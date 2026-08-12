@@ -7,10 +7,10 @@ Images and audio/video are delivered either from (https://jazzbutcher.com/), or 
 
 ## Getting Started
 
-We insist upon node 17+, so install that:
+We insist upon node 24+, so install that:
 
 ```bash
-nvm use 17
+nvm use 24
 ```
 
 Then, install dependencies:

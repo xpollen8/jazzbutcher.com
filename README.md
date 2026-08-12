@@ -38,9 +38,9 @@ I am *completely* open to collaborating with people with web design and/or UX ex
 ## How to run your own local JBC com V2!
 
 * have git installed
-* have nodejs 20+ installed (i use nvm)
+* have nodejs 24+ installed (i use nvm)
 
-`nvm install 20 && nvm use 20`
+`nvm install 24 && nvm use 24`
 
 * install the code
 

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+		"noUncheckedSideEffectImports": false,
     "typeRoots": [
       "node_modules/@types",
       "src/types"
@@ -23,7 +24,7 @@
     ],
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {

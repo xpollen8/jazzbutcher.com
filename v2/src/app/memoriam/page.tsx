@@ -16,6 +16,7 @@ const Memoriam = () =>
 			<div className="min-[1000px]:w-[60%] border drop-shadow-sm bg-slate-100">
 				<Memorial />
 				<TributeText />
+				<Image src={`/images/20251217_Eider.jpg`} height={750} width={750} alt={`Max Eider RIP 2025-12-17`} />
 			</div>
 			<div className="min-[1000px]:w-[40%]">
 				<TributeAudio />

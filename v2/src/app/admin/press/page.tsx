@@ -1,5 +1,6 @@
 "use client"
 
+import { use } from "react";
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState, useTransition } from 'react';
 
@@ -10,16 +11,16 @@ import { parseProject, pressFiltersInclude } from '@/lib/utils';
 
 import usePresses from '@/lib/usePresses';
 
-const Press = (props: any) => {
+const Press = ({ searchParams }: { searchParams: Promise<{ filters?: string, pressID?: string }> }) => {
 	const { data, isLoading, error } = usePresses();
 
 	const router = useRouter();
 	const pathname = usePathname();
-	const searchParams = useSearchParams();
+	const params = use(searchParams);
 
 	const [isPending, startTransition] = useTransition();
-	const [filtersUsed, setFiltersUsed] = useState(searchParams.get('filters') || '');
-	const [pressID, setPressID] = useState(searchParams.get('pressID'));
+	const [filtersUsed, setFiltersUsed] = useState(params.filters || '');
+	const [pressID, setPressID] = useState(params.pressID || '');
 
 	const filters = [
 		{ name: 'interviews', func: (item: any) => pressFiltersInclude(item.type, 'interview') && !item.url.includes('.mp3') },

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
@@ -23,7 +24,9 @@ const Wilson = (props: any) =>
 		<FilterReleases project='wilson' filters={props.searchParams?.filters} />
 		<AudioReleases project='wilson' />
 		<VideoReleases project='wilson' />
-		<FilterPresses project='wilson' />
+		<Suspense>
+			<FilterPresses project='wilson' />
+		</Suspense>
 	</main>
 	<Footer />
 </>

@@ -4,7 +4,7 @@ import { type ReleaseType, type ReleaseTypeWithChildren } from './Release';
 import { truncAt, parseCaptionsSourcesEtc } from '@/lib/utils';
 import { expand } from '@/lib/defines';
 
-const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key: number | undefined) => {
+const MakeAlbumBlurb = (props: ReleaseTypeWithChildren, key?: number | undefined) => {
 	const { type, href, title, thumb, blurb, dtreleased, dtrecorded, studio, buy, lookup,
 		label, catalog, media, country, contribution, children, inPage=false } = props; 
 	const parsed_blurb = parseCaptionsSourcesEtc(blurb) || [];

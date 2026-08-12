@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react';
-import { useSearchParams, usePathname, useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 export type TypeFilterEntry = [
 	string,

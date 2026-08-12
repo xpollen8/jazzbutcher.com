@@ -1,10 +1,12 @@
+import { use } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Contributions from '@/components/Contributions';
 import { isKnownPerson } from '@/lib/defines';
 
 const Person = ({ params }: { params?: any }) => {
-	const person = decodeURIComponent(params?.who);
+	const Params: any = use(params);
+	const person = decodeURIComponent(Params?.who);
 	const known = isKnownPerson(person);
 	return <>
 		<Header section="contributions" title={person} />

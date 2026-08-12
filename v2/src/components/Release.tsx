@@ -414,7 +414,7 @@ const ReleaseDetails = ({ release }: { release: ReleaseTypeWithChildren }) => {
 	</div>)
 }
 
-const Release = ({ release }: { release: ReleaseTypeWithChildren }, key: number) => {
+const Release = ({ release }: { release: ReleaseTypeWithChildren }, key?: number) => {
 	const lookup = release?.lookup ?? '';
 	const { data, isLoading, error } = useReleaseSongs(lookup);
 	const { songs, credits } = data || {};

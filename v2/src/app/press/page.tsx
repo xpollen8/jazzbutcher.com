@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Header from '@/components/Header';
 import SectionOptions from '@/components/SectionOptions';
 import FilterPresses from '@/components/FilterPresses';
@@ -6,7 +7,9 @@ const Press = (props: any) => {
 	return (<>
 		<Header section='press' />
 		<main>
-			<FilterPresses />
+			<Suspense>
+				<FilterPresses />
+			</Suspense>
 		</main>
 	</>)
 }

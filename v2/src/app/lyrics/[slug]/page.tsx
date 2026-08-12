@@ -1,5 +1,6 @@
 "use client"
 
+import { use } from "react";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
@@ -249,7 +250,8 @@ const LiveAudio = (props: any) => {
 }
 
 const Lyric = ({ params }: { params?: any }) => {
-	const { data, isLoading, error } = useLyric(params?.slug);
+	const Params: any = use(params);
+	const { data, isLoading, error } = useLyric(Params?.slug);
 	const { lyrics, released_recordings, live, releaseAudio, releaseVideo, foundon, unreleased } = data || {};
 	const song = {
 		...lyrics?.results[0],

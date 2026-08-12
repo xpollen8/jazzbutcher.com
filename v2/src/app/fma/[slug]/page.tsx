@@ -1,5 +1,6 @@
 "use client";
 
+import { use } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
@@ -47,13 +48,14 @@ const FishyMansionsArchivesItem = ({ item, slug }: any) => {
 }
 
 const FishyMansionsArchives = ({ params }: { params?: any }) => {
+	const Params: any = use(params);
 	const { data, isLoading } = useFishyMansionsArchives();
 
 	return <>
-		<Header section="FMA" title={params?.slug} />
+		<Header section="FMA" title={Params?.slug} />
 		<Loading isLoading={isLoading} >
 			<main>
-				<FishyMansionsArchivesItem item={data?.results[0]} slug={params?.slug} />
+				<FishyMansionsArchivesItem item={data?.results[0]} slug={Params?.slug} />
 			</main>
 		</Loading>
 		<Footer />

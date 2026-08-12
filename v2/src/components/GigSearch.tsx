@@ -365,8 +365,8 @@ export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: b
 			//{ type: 'self', func: IconPatReview },
 			].filter((a: any) => useG?.extra?.includes(a?.type));;
 
-		return (<div className="tagClickable w-full mt-3" style={{ background: '#cceeff', border: '1px solid #777', paddingLeft: '3px' }}>
-			<Link key={key} href={ts2URI(record?.datetime)} style={{ color: '#333' }}>
+		return (<div key={key} className="tagClickable w-full mt-3" style={{ background: '#cceeff', border: '1px solid #777', paddingLeft: '3px' }}>
+			<Link href={ts2URI(record?.datetime)} style={{ color: '#333' }}>
 				{types?.map((type: string, key: number) => <div key={key} className={`gig_${type}`}/>)}
 				<div style={{ background: '#ccccdd' }} > {prettyDate(record?.datetime)} </div>
 				<div className="flex justify-between">
@@ -374,7 +374,7 @@ export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: b
 						{layout(record, record?.datetime)}
 						<div className="m-1">
 							<div className="m-1 flex flex-wrap float-right">
-							{extras?.map((ex: any, key: number) => ex.func({ key, height: 25, width: 25, style: { padding: '3px' } }))}
+							{extras?.map((ex: any, key: number) => <div key={key}>{ex.func({ height: 25, width: 25, style: { padding: '3px' } })}</div>)}
 							</div>
 							{(record?.alsowith) && <div className="pt-1">{record?.alsowith?.split(',')?.map((a: string, key: number) => {
 								const [ nameX, akaX ] = removeHTML(a.trim())?.toLowerCase()?.split('(') || [];

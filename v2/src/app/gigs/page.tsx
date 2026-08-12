@@ -1,5 +1,6 @@
 "use client"
 
+import { use } from "react";
 import { useSearchParams } from 'next/navigation'
 
 import Header from '@/components/Header';
@@ -10,10 +11,10 @@ import { GigSearchDialog, GigSearchResults, BannerGigs } from '@/components/GigS
 import Loading from '@/components/Loading';
 import useGigs from '@/lib/useGigs';
 
-const Gigs = () => {
-	const searchParams = useSearchParams();
-	const type = searchParams.get('f') as string;
-	const query = searchParams.get('q') as string;
+const Gigs = ({ searchParams }: { searchParams: Promise<{ q?: string, f?: string }>}) => {
+	const params = use(searchParams);
+	const type = params.f as string;
+	const query = params.q as string;
 	// remove quotes from 'performer','alsowith' types
 	const { data, isLoading, error } = useGigs({ type, query: (['performer','alsowith'].includes(type)) ? query?.replace(/"/g, '') : query });
 

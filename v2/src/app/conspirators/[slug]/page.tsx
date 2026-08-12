@@ -1,5 +1,6 @@
 "use client"
 
+import { use } from "react";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
@@ -19,7 +20,7 @@ const AlbumAppearance = ({ lookup, object }: any) => {
 	return <div>
 		{(!!roles?.length) && <div><b>Role</b>: {roles}</div>}
 		{Object?.keys(object?.songs)?.map((s: string, key: number) => {
-			return <div key="key">
+			return <div key={key}>
 				<b>{AutoLinkSong(s)}</b> - {object?.songs[s]?.join(', ')}
 			</div>
 		})}
@@ -54,13 +55,14 @@ const Act = ({ results }: any) => (!!results?.numResults) && <GigSearchResults r
 const AKA = ({ aliases }: any) => (!!aliases?.length) && (<><Tag>Also Known As</Tag><div className="listItem">{aliases?.map((alias: string, key: number) => <span key={key} className="break-keep outline outline-1 outline-cyan-500 m-1"> <b>AKA</b> <Link href={`/conspirators/${alias}`}>{alias}</Link> </span>)}</div></>);
 
 const Conspirator = ({ params }: { params?: any }) => {
-	const conspirator = decodeURIComponent(params?.slug);
+	const Params: any = use(params);
+	const conspirator = decodeURIComponent(Params?.slug);
 	const known = isKnownMusician(conspirator);
 	const name = known && known.name || conspirator;
 	const { data, isLoading, error } = useConspirator(name);
 	const { releases, performer, support } = data || {};
 
-	if (!params || !params?.slug || !name.length) return notFound();
+	if (!Params || !Params?.slug || !name.length) return notFound();
 
 	return <>
 		<Header section="conspirators" title={name} />

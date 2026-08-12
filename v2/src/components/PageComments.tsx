@@ -95,7 +95,7 @@ const DeleteComment = (props: any) => {
 	</>
 }
 
-const Comment = (props: CommentType & any, key: number) => {
+const Comment = (props: CommentType & any, key?: number) => {
 	const { mutate, editing=false, session, feedback_id, subject, dtcreated, who, whence, comments, toggleCommentForm, children, uri, showForm } = props;
 	const [ replying, setReplying ] = useState(false);
 

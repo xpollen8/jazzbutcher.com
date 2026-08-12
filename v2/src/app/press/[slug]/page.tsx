@@ -1,5 +1,6 @@
 "use client";
 
+import { use } from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
@@ -10,7 +11,8 @@ import usePressArticle from '@/lib/usePressArticle';
 import Loading from '@/components/Loading';
 
 const PressArticle = ({ params }: { params?: any }) => {
-	const { data, isLoading } = usePressArticle(params?.slug);
+	const Params: any = use(params);
+	const { data, isLoading } = usePressArticle(Params?.slug);
 
 	const article = data?.results[0];
 	const subTitle = article?.publication || (article?.type?.includes('pat') && 'The Butcher Writes') || article?.title;

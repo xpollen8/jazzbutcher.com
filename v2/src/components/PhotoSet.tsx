@@ -26,7 +26,7 @@ const PhotoSet = ({ title, photos, pdf, description, credit, credit_url, credit_
 			const useURL = (useCredit) ? `/contributions/${useCredit}` : credit_url;
 			const useLink: any = href || image;
 			return <div key={key} className="text-center drop-shadow-sm border border-slate-400 rounded-sm">
-				{(image) && <Link href={useLink}>{(thumb) && <Image className="rounded-sm" key={key} unoptimized src={thumb} width={350} height={350} alt={alt} />}</Link>}
+				{(image) && <Link href={useLink}>{(thumb) && <Image className="rounded-sm" key={key} unoptimized src={thumb} width={350} height={350} alt={alt || 'no alt'} />}</Link>}
 				<div className="text-sm font-light px-1">
 				{(credit_date?.length === 4) && <div>{credit_date}</div>}
 				{(caption) && <div>{expandAll(caption)}</div>}

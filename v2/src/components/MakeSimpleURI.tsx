@@ -7,7 +7,7 @@ const MakeSimpleURI = ({ strikeout=false, uri='', text, aux, children, className
 	aux?: string | React.ReactNode
 	className?: string
 	children?: string | React.ReactNode
-}, key: number): React.ReactNode  => {
+}, key?: number): React.ReactNode  => {
 	const useUri = (uri?.startsWith('/') || uri?.startsWith('http')) ? uri : `/${uri}`;
 	const strikeClass = (strikeout) ? "[text-decoration:underline_line-through]" : "";
 	return (

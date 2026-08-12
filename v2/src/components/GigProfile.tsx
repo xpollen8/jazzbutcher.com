@@ -1,5 +1,6 @@
 "use client"
 
+import { use } from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -453,9 +454,13 @@ const Content = ({ gig }: { gig: any }) => {
 }
 
 const GigProfile = (props: any) => {
-	let datetime = props?.params?.datetime && props.params.datetime.replace(/%20/g, ' ').replace(/%3A/g, ':');
-	const year = props?.params?.year || parseYear(datetime);
-	const pday = props?.params?.day;
+	const params: any = use(props.params);
+	const paramsDatetime = params?.datetime;
+	const paramsYear = params?.year;
+	const paramsDay = params?.day;
+	let datetime = paramsDatetime && paramsDatetime.replace(/%20/g, ' ').replace(/%3A/g, ':');
+	const year =paramsYear || parseYear(datetime);
+	const pday = paramsDay;
 	if (datetime) {
 		if (datetime.length === 10) {
 			datetime = datetime + ' 00:00:00';

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AudioLive from '@/components/AudioLive';
@@ -23,7 +24,9 @@ const EgAudio = (props: any) =>
 			<EmbedMedia className="clickListItem mt-3" data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheBlackEg/BlackEg_KevinCarroll_Ostrava Girls.mp3", song: "Ostrava Girls", mediacredit: "Kevin Carroll", mediacreditdate: "2018-08-31" }} />
 			<EmbedMedia className="clickListItem mt-3" data={{ mediaurl: "https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheBlackEg/BlackEg_KevinCarroll_Indianapolis 500.mp3", song: "Indianapolis 500", mediacredit: "Kevin Carroll", mediacreditdate: "2018-08-31" }} />
 		<p />
-		<FilterPresses project="eg" />
+		<Suspense>
+			<FilterPresses project="eg" />
+		</Suspense>
 	</main>
 	<Footer />
 </>

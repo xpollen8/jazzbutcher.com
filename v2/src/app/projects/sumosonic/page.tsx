@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -23,7 +24,9 @@ const Sumosonic = (props: any) =>
 		<FilterReleases project="sumo" filters={props.searchParams?.filters} />
 		<AudioReleases project="sumo" />
 		<VideoReleases project="sumo" />
-		<FilterPresses project="sumo" />
+		<Suspense>
+			<FilterPresses project="sumo" />
+		</Suspense>
 	</main>
 	<Footer />
 </>

@@ -1,9 +1,10 @@
 const nextConfig = {
 	//output: 'export',	// for static site generation
 
+	//cacheComponents: true,
   experimental: {
-		//serverActions: true,
-    //useCache: true,
+		turbopackFileSystemCacheForDev: true,
+		turbopackFileSystemCacheForBuild: true,
   },
 
 	async rewrites() {

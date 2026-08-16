@@ -258,8 +258,13 @@ const joinOn = (field: string, arr1: Array<HashedType>, arr2: Array<HashedType>)
 	})?.filter((gs: any) => gs && gs[field]));
 }
 
-const returnFilteredPath = async (path: string, attribute?: string, value?: string,  exact?: boolean, func?: any) => {
-	const { results } = await apiData(path);
+const returnFilteredPath = async (path: any, attribute?: string, value?: string,  exact?: boolean, func?: any) => {
+	let results;
+	if (typeof path === 'string') {
+		results = (await apiData(path))?.results;
+	} else {
+		results = path?.results;
+	}
 	return returnResults(results?.filter((r: HashedType) => {
 		if (func) { return func(r, value, exact) };
 		return filterObjectByAttribute(r, attribute, value, exact)
@@ -438,10 +443,10 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				};
 			}
 			case 'songs_by_datetime': {
-				return await returnFilteredPath('gigsongs', 'datetime', args, false);
+				return await returnFilteredPath(gigsongsStatic, 'datetime', args, false);
 			}
 			case 'presses_by_release': {
-				return await returnFilteredPath('presses', 'album', args, true);
+				return await returnFilteredPath(pressesStatic, 'album', args, true);
 			}
 			case 'recent_releases': {
 				return findRecent(releasesStatic, ['dtadded','dtreleased','datetime'], args?.releases);
@@ -457,15 +462,13 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				more complex lookups
 			 */
 			case 'release_video_by_project': {	//   { noun: "release_video_by_project", key: 'project', query: "select * from media where ? and type='video' order by collection, ordinal" },
-				const { results } = await apiData('medias');
-				return returnResults(results
+				return returnResults(mediasStatic?.results
 					?.filter((p: HashedType) => p?.project === args && p?.type === 'video' && !p?.datetime)
 					?.sort((a: HashedType, b: HashedType) => a?.collection?.localeCompare(b?.collection) || a?.ordinal - b?.ordinal));
 			}
 			case 'live_video_by_project': {		// { noun: "live_video_by_project", key: 'project', query: "select * from media where ? and type='video' and datetime <> '0000-00-00 00:00:00' order by collection, ordinal" },
 				// no actual results right now
-				const { results } = await apiData('medias');
-				return returnResults(results
+				return returnResults(mediasStatic?.results
 					?.filter((p: HashedType) => p?.project === args && p?.type === 'video' && p?.datetime)
 					?.sort((a: HashedType, b: HashedType) => a?.collection?.localeCompare(b?.collection) || a?.ordinal - b?.ordinal));
 			}
@@ -500,12 +503,9 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				// extract the real datetime from whichever matched
 				const useDT = gigs?.datetime;
 				const played = gigsongsStatic?.results?.filter((g: HashedType) => g?.datetime === useDT)
-				//const played = (await returnFilteredPath('gigsongs', 'datetime', useDT, true))?.results;
 				const media = gigmediasStatic?.results?.filter((g: HashedType) => g?.datetime === useDT);
 				const text = gigtextsStatic?.results?.filter((g: HashedType) => g?.datetime === useDT);
-				//const text = (await returnFilteredPath('gigtext', 'datetime', useDT, false))?.results;
 				const players = performancesStatic?.results?.filter((g: HashedType) => g?.datetime === useDT);
-				//const players = (await returnFilteredPath('performance', 'datetime', useDT, true))?.results;
 				const press = pressesStatic?.results?.filter((g: HashedType) => g?.dtgig === useDT);
 				// assumes gigs are already sorted by date by API
 				const indexOfGig = gigsStatic?.results?.map((g: HashedType, index: number) => ({ index, ...g }))?.find((g: HashedType) => g.gig_id === gigs?.gig_id)?.index || -1;
@@ -523,7 +523,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				}
 			}
 			case 'press_by_href': {
-				return await returnFilteredPath('presses', 'url', args, true, (candidate: HashedType, value: string, exact: boolean) => {
+				return await returnFilteredPath(pressesStatic, 'url', args, true, (candidate: HashedType, value: string, exact: boolean) => {
 					const vl = value?.toLowerCase();
 					const cl = candidate?.url?.toLowerCase();
 					return cl === `/press/${vl}` || cl === `/press/${vl}.html`;
@@ -672,10 +672,10 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 				const gigtext = await apiData('gigtext_contributions', args);
 				const press = await apiData('press_contributions', args);
 				const pressmedia = await apiData('pressmedia_contributions', args);
-				const inpress = await returnFilteredPath('presses', 'body', args?.filter?.value, false);
-				const lyric = await returnFilteredPath('lyrics', 'tablature_credit', args?.filter?.value, false);
-				const lyricmedia = await apiData('lyricmedia_contributions', args);;
-				const pictures = await returnFilteredPath('gigmedias', 'type', 'pix', true, (candidate: HashedType, value: string, exact: boolean) => {
+				const inpress = await returnFilteredPath(pressesStatic, 'body', args?.filter?.value, false);
+				const lyric = await returnFilteredPath(lyricsStatic, 'tablature_credit', args?.filter?.value, false);
+				const lyricmedia = await apiData('lyricmedia_contributions', args);
+				const pictures = await returnFilteredPath(gigmediasStatic, 'type', 'pix', true, (candidate: HashedType, value: string, exact: boolean) => {
 					return candidate?.image_caption?.toLowerCase()?.includes(args?.filter?.value?.toLowerCase());
 				});
 				return {
@@ -694,7 +694,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			}
 			case 'releases_by_performer': {
 				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
-				return  await returnFilteredPath('performances', 'performer', useArgs, true, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('release', candidate, value, exact));
+				return  await returnFilteredPath(performancesStatic, 'performer', useArgs, true, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('release', candidate, value, exact));
 			}
 			case 'releases_by_song': {
 				//select distinct(lookup), media, version from performance where ? and category="release"'
@@ -708,20 +708,20 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'live_performances_by_song': {
 				// 'select * from gigsong gs, gig g where gs.datetime=g.datetime and song="{{value}}"' },
 				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
-				const { results } = await returnFilteredPath('gigsongs', 'song', useArgs, true);
+				const { results } = await returnFilteredPath(gigsongsStatic, 'song', useArgs, true);
 				// find full concerts that occur on same day
 				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 			case 'released_recordings_by_song': {
 				// select * from performance where song="{{value}}" and media IS NOT NULL
 				const useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
-				const { results } = await returnFilteredPath('performances', 'song', useArgs, true);
+				const { results } = await returnFilteredPath(performancesStatic, 'song', useArgs, true);
 				return returnResults(results?.filter((r: HashedType) => r?.media?.length));
 			}
 			case 'lyric_by_href': {
 				const releases = await apiData('releases', args);
 				const matchOn = args + '.html';
-				const lyrics = await returnFilteredPath('lyrics', 'href', matchOn, true);
+				const lyrics = await returnFilteredPath(lyricsStatic, 'href', matchOn, true);
 				const title = lyrics?.results[0]?.title;
 				const live = await apiData('live_performances_by_song', title);
 				const unreleased = returnResults(performancesStatic?.results?.filter((g: HashedType) => g?.name === title && g?.lookup && g?.media));
@@ -741,7 +741,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			}
 			case 'songs_by_release': {
 				//select *, song as title from performance where lookup = "{{value}}" and length(performer) = 0 order by type, ordinal
-				const X = await returnFilteredPath('performances', 'lookup', args, true);
+				const X = await returnFilteredPath(performancesStatic, 'lookup', args, true);
 				const results = X?.results?.map((r: HashedType) => ({...r, title: r?.song }));
 				const data = returnResults(results?.filter((r: HashedType) => !r?.performer?.length)?.sort((a: HashedType, b: HashedType) => a?.type?.localeCompare(b?.type) || a?.ordinal - b?.ordinal));
 				//'select * from performance where lookup="{{value}}" and length(performer) > 0'
@@ -792,13 +792,13 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					exact = true;
 					useArgs = useArgs.replace(/"/g, '');
 				}
-				const { results } = await returnFilteredPath('performances', 'performer', useArgs, exact, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('with', candidate, value, exact));
+				const { results } = await returnFilteredPath(performancesStatic, 'performer', useArgs, exact, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('with', candidate, value, exact));
 				//console.log("ACTS", results);
 				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 			case 'gigs_by_musician': {
 				let useArgs = args?.replace(/%22/g, '')?.replace(/%20/g, ' ');
-				const { results } = await returnFilteredPath('performances', 'performer', useArgs, true, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('event', candidate, value, exact));
+				const { results } = await returnFilteredPath(performancesStatic, 'performer', useArgs, true, (candidate: HashedType, value: string, exact: boolean) => matchesPerformerField('event', candidate, value, exact));
 				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 			case 'gigs_by_song': {
@@ -808,7 +808,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 					exact = true;
 					useArgs = useArgs.replace(/"/g, '');
 				}
-				const { results } = await returnFilteredPath('gigsongs', 'song', useArgs, exact);
+				const { results } = await returnFilteredPath(gigsongsStatic, 'song', useArgs, exact);
 				return joinOn('datetime', results || [], gigsStatic?.results || []);
 			}
 		}

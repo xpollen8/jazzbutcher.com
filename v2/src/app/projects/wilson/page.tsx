@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { use, Suspense } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
@@ -10,8 +10,9 @@ import AudioReleases from '@/components/AudioReleases';
 import VideoReleases from '@/components/VideoReleases';
 import { Credit } from '@/components/GenericWeb';
 
-const Wilson = (props: any) => 
-<>
+const Wilson = (props: any) => {
+	const searchParams: any = use(props.searchParams);
+return (<>
 	<Header project="wilson" section="wilson" />
 	<main>
 		<MakeSimpleURI uri='/press/20040512_wilson_about.html' text="Wilson Explainer" aux='(2002)'>
@@ -21,7 +22,7 @@ const Wilson = (props: any) =>
 		<Credit g="Dave Coverly" u="https://speedbump.com" d="2003-09-27" />
 		</div>
 		</MakeSimpleURI>
-		<FilterReleases project='wilson' filters={props.searchParams?.filters} />
+		<FilterReleases project='wilson' filters={searchParams?.filters} />
 		<AudioReleases project='wilson' />
 		<VideoReleases project='wilson' />
 		<Suspense>
@@ -29,6 +30,7 @@ const Wilson = (props: any) =>
 		</Suspense>
 	</main>
 	<Footer />
-</>
+</>);
+}
 
 export default Wilson;

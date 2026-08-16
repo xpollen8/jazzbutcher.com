@@ -1,5 +1,6 @@
 "use client"
 
+import { use } from 'react';
 import Link from 'next/link';
 
 import Header from '@/components/Header';
@@ -41,7 +42,8 @@ const filters = [
 
 const Lyrics= (props: any) => {
 	const { data, isLoading, error } = useLyrics();
-	const filtersUsed = parseFilters(props?.searchParams?.filters || '') || [];
+	const searchParams: any = use(props?.searchParams);
+	const filtersUsed = parseFilters(searchParams?.filters || '') || [];
 
 	return (<>
 		<Header section='lyrics' />

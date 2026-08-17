@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { use, Suspense } from "react";
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -16,19 +16,21 @@ const duval = [
 	alt: 'The "This Is Sumo" Demo is almost Identical artwork to the Sumo Demos on jazzbutcher.com except slightly altered artwork but with the same track listing. ' },
 ];
 
-const Sumosonic = (props: any) => 
-<>
-	<Header project="sumo" section="sumosonic" />
-	<main>
-		<PhotoSet title="James Duval promo cassettes" photos={duval} credit="James Duval" credit_date="2022-01-29" description=<>Here are scans of the Sumosonic Cassettes I got from Pat back in the 90&apos;s. The &quot;This Is Sumo&quot; Demo is almost Identical artwork to the Sumo Demos on jazzbutcher.com except slightly altered artwork but with the same track listing. The other two Sumo cassettes were promo advances to the single &quot;Come, Friendly Spaceman&quot; and the album &quot;This Is Sumo&quot;.</>/>
-		<FilterReleases project="sumo" filters={props.searchParams?.filters} />
-		<AudioReleases project="sumo" />
-		<VideoReleases project="sumo" />
-		<Suspense>
-			<FilterPresses project="sumo" />
-		</Suspense>
-	</main>
-	<Footer />
-</>
+const Sumosonic = (props: any) => {
+	const searchParams: any = use(props.searchParams);
+	return (<>
+		<Header project="sumo" section="sumosonic" />
+		<main>
+			<PhotoSet title="James Duval promo cassettes" photos={duval} credit="James Duval" credit_date="2022-01-29" description=<>Here are scans of the Sumosonic Cassettes I got from Pat back in the 90&apos;s. The &quot;This Is Sumo&quot; Demo is almost Identical artwork to the Sumo Demos on jazzbutcher.com except slightly altered artwork but with the same track listing. The other two Sumo cassettes were promo advances to the single &quot;Come, Friendly Spaceman&quot; and the album &quot;This Is Sumo&quot;.</>/>
+			<FilterReleases project="sumo" filters={searchParams?.filters} />
+			<AudioReleases project="sumo" />
+			<VideoReleases project="sumo" />
+			<Suspense>
+				<FilterPresses project="sumo" />
+			</Suspense>
+		</main>
+		<Footer />
+	</>)
+}
 
 export default Sumosonic;

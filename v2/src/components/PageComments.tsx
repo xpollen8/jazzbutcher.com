@@ -10,7 +10,7 @@ import IconReply from '@/svg/IconReply';
 import IconLike from '@/svg/IconLike';
 import IconAddComment from '@/svg/IconAddComment';
 
-import usePageComments, { patchPageComment, deletePageComment, usePageCommentLike, usePageCommentReply, } from '@/lib/usePageComments';
+import usePageComments, { deletePageComment, usePageCommentLike, usePageCommentReply, } from '@/lib/usePageComments';
 import { type CommentType, dateDiff } from '@/lib/utils';
 
 const uuidv4 = () => 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c: string) => {
@@ -66,7 +66,7 @@ const DeleteComment = (props: any) => {
 			setConfirm(!confirm);
 			//await deletePageComment(feedback_id);
 
-			const updated = await fetch(`/api/feedback_delete/${feedback_id}`, {
+			const updated = await fetch(`/api/feedback_delete/${feedback_id}/${props?.session}`, {
 				cache: "no-cache",
 				method: 'GET',
 				headers: {

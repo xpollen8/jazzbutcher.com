@@ -132,7 +132,7 @@
 	${gigHeader(
 		cost=,
 		who=${literalizeCommas(
-			${pat}, ${max}, Joe Skyward (bass), Greg Gilmore (drums)
+			${pat}, ${max}, Joe Skyward:bass, Greg Gilmore:drums
 		)},
 		photosets=/images/19970916/19970916_notebook_spaceneedle.jpg$$
 			Pat Fish Notebook;;;;2017-04-02,
@@ -142,7 +142,7 @@
 	${gigHeader(
 		cost=,
 		who=${literalizeCommas(
-			${pat}, ${max}, Joe Skyward (bass), Greg Gilmore (drums)
+			${pat}, ${max}, Joe Skyward:bass, Greg Gilmore:drums
 		)},
 		photosets= /images/19970917/17Sep97_1.jpg$$
 			/images/19970917/17Sep97_2.jpg$$
@@ -154,7 +154,7 @@
 	${gigHeader(
 		cost=,
 		who=${literalizeCommas(
-			${pat}, ${max}, Joe Skyward (bass), Greg Gilmore (drums)
+			${pat}, ${max}, Joe Skyward:bass, Greg Gilmore:drums
 		)},
 		reviews=${literalizeCommas(
 			${del} ran sound.

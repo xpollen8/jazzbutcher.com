@@ -126,7 +126,7 @@
 	${gigHeader(
 		cost=&pound;10,
 		who=${literalizeCommas(
-			Jon Mattock (drums), Tim Harries (bass), Mark Refoy (guitar), Joe Woolley (guitar), Andrea Parra (tambourine), ${pat} (singing, guitar), Will Carruthers (finger-pointing)
+			Jon Mattock:drums, Tim Harries:bass, Mark Refoy:guitar, Joe Woolley:guitar, Andrea Parra:tambourine, ${pat}, Will Carruthers:finger-pointing
 		)},
 		photosets=
 			/images/20190622/20190622_johnnyp_pat_kusworth.jpg;;Dave Kusworth\, ${pat}$$

@@ -7,9 +7,9 @@
 #live		endif
 #live	endif
 #live	if (getval(UA))
-#live		if (sql(delete from lyrics where href="${page}"))
+#live		if (sql(delete from lyrics where href='${page}'))
 #live		endif
-#live		if (sql(insert IGNORE into lyrics set href="${page}", project="${project}", title="${title}", tablature="${literalizeQuotes(${unfilter(${tablature})})}", tablature_credit="${literalizeQuotes(${unfilter(${tablature_credit})})}", lyrics="${literalizeQuotes(${unfilter(${lyrics})})}", mp3="${literalizeQuotes(${unfilter(${mp3})})}", embed_link="${literalizeQuotes(${unfilter(${embed_link})})}", found_on="${literalizeQuotes(${unfilter(${onlist})})}", pat_says="${literalizeQuotes(${unfilter(${patsez})})}", others_say="${literalizeQuotes(${unfilter(${others})})}", caption="${literalizeQuotes(${unfilter(${caption})})}", credits="${literalizeQuotes(${unfilter(${credits})})}", annotated="${annotated}", is_instrumental="${is_instrumental}", images="${images}", video="${video}"))
+#live		if (sql(insert IGNORE into lyrics set href='${page}', project='${project}', title='${title}', tablature='${literalizeQuotes(${unfilter(${tablature})})}', tablature_credit='${literalizeQuotes(${unfilter(${tablature_credit})})}', lyrics='${literalizeQuotes(${unfilter(${lyrics})})}', mp3='${literalizeQuotes(${unfilter(${mp3})})}', embed_link='${literalizeQuotes(${unfilter(${embed_link})})}', found_on='${literalizeQuotes(${unfilter(${onlist})})}', pat_says='${literalizeQuotes(${unfilter(${patsez})})}', others_say='${literalizeQuotes(${unfilter(${others})})}', caption='${literalizeQuotes(${unfilter(${caption})})}', credits='${literalizeQuotes(${unfilter(${credits})})}', annotated='${annotated}', is_instrumental='${is_instrumental}', images='${images}', video='${video}'))
 #live		endif
 #live	endif
 	${mkHeader(project=${project}, section=Lyrics, title=${title})}
@@ -94,7 +94,7 @@ ${endTab}
 #
 #	noun:live_performances_by_song
 #
-#live	if ((sql(lsc:select count(*) as cnt from gigsong where song="${title}")) && (getnum(lsc->cnt) > 0))
+#live	if ((sql(lsc:select count(*) as cnt from gigsong where song='${title}')) && (getnum(lsc->cnt) > 0))
 ${begTab(Live Stats)}
 ${doGigSong(${title})}
 ${endTab}
@@ -102,7 +102,7 @@ ${endTab}
 #
 #	noun:live_performances_with_media_by_song
 #
-#live	if (sql(lscm:select count(*) as cnt from gigsong where song="${title}" and length(mediaurl) > 0))
+#live	if (sql(lscm:select count(*) as cnt from gigsong where song='${title}' and length(mediaurl) > 0))
 #live	endif
 #live	if ((getnum(lscm->cnt) > 0) || (defined(video)) || (defined(mp3)) || (defined(embed_link)))
 ${begTab(Media)}

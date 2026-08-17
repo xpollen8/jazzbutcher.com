@@ -18,7 +18,7 @@
 	</div>
 
 #define	randomLiveVideo()
-#live	if ((sql(ev:select g.*, gs.* from gigsong gs, gig g where gs.datetime=g.datetime and gs.mediaurl like "%%youtube%%" order by rand() limit 1)) && (getnum(ev->numResults) = 1))
+#live	if ((sql(ev:select g.*, gs.* from gigsong gs, gig g where gs.datetime=g.datetime and gs.mediaurl like '%%youtube%%' order by rand() limit 1)) && (getnum(ev->numResults) = 1))
 	${tag_beg}
 	Random Forced Viewing
 	${tag_end}

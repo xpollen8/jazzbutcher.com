@@ -18,7 +18,7 @@ ${tag_end}
 
 #define	fetchAlbumSongs(release)
 #
-#live	if ((sql(as:select * from performance where lookup="${release}" and performer = '' and song is not null order by type, ordinal)) && (getnum(as->numResults) > 0))
+#live	if ((sql(as:select * from performance where lookup='${release}' and performer = '' and song is not null order by type, ordinal)) && (getnum(as->numResults) > 0))
 #live	if (define(_side,))
 #live	endif
 
@@ -80,7 +80,7 @@ ${tag_end}
 #
 #	noun:album_personnel
 #
-#live	if ((sql(ap:select * from performance where lookup="${release}" and performer <> '')) && (getnum(ap->numResults) > 0))
+#live	if ((sql(ap:select * from performance where lookup='${release}' and performer <> '')) && (getnum(ap->numResults) > 0))
 	${players_beg}
 ${define(lastPer,XXX)}
 #live	while (api = ap[*]->performer)
@@ -218,18 +218,18 @@ ${define(lastPer, ${ap[${api}]->performer})}
 
 #define	clearAlbumPerf(release)
 #live	if (defined(UA))
-#live		if (sql(delete from performance where lookup="${release}"))
+#live		if (sql(delete from performance where lookup='${release}'))
 #live		endif
 #live	endif
 
 #define	addAlbumPerf(release, person, category=release, aka=NULL, instruments, song=NULL, ordinal=NULL, type=set, datetime, media=NULL, author=NULL, version, variant, project, collection)
 #live	if (defined(UA))
-#insert into performance set lookup="${release}", category="${category}", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal="${ordinal}", song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}";
-#live		if (sql(insert into performance set lookup="${release}", category="release", type="${type}", performer="${person}", aka=${aka}, instruments="${instruments}", ordinal="${ordinal}", song=${song}, datetime="${datetime}", media="${media}", author="${author}", version="${version}", variant="${variant}", project="${project}"))
+#insert into performance set lookup='${release}', category='${category}', type='${type}', performer='${person}', aka=${aka}, instruments='${instruments}', ordinal='${ordinal}', song=${song}, datetime='${datetime}', media='${media}', author='${author}', version='${version}', variant='${variant}';
+#live		if (sql(insert into performance set lookup='${release}', category='release', type='${type}', performer='${person}', aka=${aka}, instruments='${instruments}', ordinal='${ordinal}', song=${song}, datetime='${datetime}', media='${media}', author='${author}', version='${version}', variant='${variant}', project='${project}'))
 #live		endif
 
 #live	if ((defined(media)) && (getval(media) != NULL))
-#live		if (sql(insert IGNORE into media set lookup="${release}", project="${project}", type="audio", name=${song}, mp3="${media}", author="${author}", version="${version}", variant="${variant}", collection="${collection}", ordinal="${ordinal}", datetime=NOW()))
+#live		if (sql(insert IGNORE into media set lookup='${release}', project='${project}', type='audio', name=${song}, mp3='${media}', author='${author}', version='${version}', variant='${variant}', collection='${collection}', ordinal='${ordinal}', datetime=NOW()))
 #live		endif
 #live	endif
 #live	endif

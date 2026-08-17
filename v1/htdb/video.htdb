@@ -150,7 +150,7 @@
 #live   while (i = v[*]->gig_id)
 
 #live	if (getval(update))
-#live		if (sql(insert IGNORE into media set datetime="${v[${i}]->datetime}", type="video", subtype="live", comment="${literalizeQuotes(${v[${i}]->comment})}", href="${literalizeQuotes(${v[${i}]->mediaurl})}", collection="${literalizeQuotes(${v[${i}]->venue};;${v[${i}]->city};;${v[${i}]->country})}", name="${literalizeQuotes(${v[${i}]->song})}", ordinal="${v[${i}]->type};;${v[${i}]->setnum};;${v[${i}]->ordinal}", credit="${literalizeQuotes(${v[${i}]->mediacredit};;${v[${i}]->mediacrediturl})}"))
+#live		if (sql(insert IGNORE into media set datetime='${v[${i}]->datetime}', type='video', subtype='live', comment='${literalizeQuotes(${v[${i}]->comment})}', href='${literalizeQuotes(${v[${i}]->mediaurl})}', collection='${literalizeQuotes(${v[${i}]->venue};;${v[${i}]->city};;${v[${i}]->country})}', name='${literalizeQuotes(${v[${i}]->song})}', ordinal='${v[${i}]->type};;${v[${i}]->setnum};;${v[${i}]->ordinal}', credit='${literalizeQuotes(${v[${i}]->mediacredit};;${v[${i}]->mediacrediturl})}'))
 #live		endif
 #live	endif
 

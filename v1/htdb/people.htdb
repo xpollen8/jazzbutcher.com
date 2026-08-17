@@ -1,7 +1,7 @@
 #define	fetchPerformerRole(person, extra_roles)
 #live	if (define(roles->numResults, 0))
 #live	endif
-#live	if ((sql(r:select distinct(instruments) as instr from performance where (performer = "[[person:${space2underscore(${person})}]]" or aka = "[[person:${space2underscore(${person})}]]") and instruments is not null)) && (getnum(r->numResults) > 0))
+#live	if ((sql(r:select distinct(instruments) as instr from performance where (performer = '[[person:${space2underscore(${person})}]]' or aka = '[[person:${space2underscore(${person})}]]') and instruments is not null)) && (getnum(r->numResults) > 0))
 	${begTab(Roles)}
 	${tag_beg}Roles${tag_end}
 	<blockquote>

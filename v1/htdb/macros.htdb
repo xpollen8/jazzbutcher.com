@@ -132,7 +132,7 @@
 #</pre>
 # SET THIS TO UPDATE performance TABLE
 #**${cgi->http_x_real_ip}**${list}**
-#live	if (getval(cgi->http_x_real_ip) = 192.184.192.180)
+#live	if (getval(cgi->http_x_real_ip) = X192.184.192.180)
 #live	if (makeArray(deparse_list, \[comma], ${stripTags(${list})}))
 #**${deparse_list->numResults}**
 #live		loop(l, 1, ${deparse_list->numResults})
@@ -147,16 +147,28 @@
 #live				if (define(thing, ${deparse_list[${l}]}))
 #live				endif
 #live			else
-#live				if (define(thing, [[${use_type}:${space2underscore(${stripWhitespace(${stripTags(${deparse_list[${l}]})})})}]]))
+# IF IN X:Y format, then X is name and Y is instrument
+#live				if (makeArray(details, :, ${stripTags(${deparse_list[${l}]})}))
+#live					if (define(thing_performer, [[${use_type}:${space2underscore(${stripWhitespace(${details[1]})})}]]))
+#live					endif
+#live					if (defined(details[2]))
+#live						if (define(thing_instruments, ${details[2]}))
+#live						endif
+#live					else
+#live						if (define(thing_instruments, ))
+#live						endif
+#live					endif
 #live				endif
+#**${thing_performer} : ${thing_instruments}**
+#OLD#live				if (define(thing, [[${use_type}:${space2underscore(${stripWhitespace(${stripTags(${deparse_list[${l}]})})})}]]))
+#OLD#live				endif
 #live			endif
 #<br/>
-#**${thing}**
-#live			if (sql(z:select performance_id from performance where datetime='${datetime}' and category='${category}' and performer='${thing}'))
+#**${thing_performer}**
+#live			if (sql(z:select performance_id from performance where datetime='${datetime}' and category='${category}' and performer='${thing_performer}'))
 #live				if (getnum(z->numResults) = 0)
-#live					if (sql(y:insert into performance set datetime='${datetime}', category='${category}', performer='${thing}'))
+#live					if (sql(y:insert into performance set datetime='${datetime}', category='${category}', performer='${thing_performer}', instruments='${thing_instruments}'))
 #live					endif
-#live				else
 #live				endif
 #live			endif
 #live		endloop

@@ -202,7 +202,7 @@
 		ticketweb=https://www.bristolticketshop.co.uk/eventdetails.aspx?e=18056,
 		eventweb=https://thethunderbolt.net,
 		who=${literalizeCommas(
-		${pat}, ${tim_harries}, ${joel_harries}, ${joe_woolley}
+		${pat}, ${tim_harries}:bass, ${joel_harries}:drums, ${joe_woolley}:guitar
 		)},
 		with=${literalizeCommas(The Would-be-goods Two, Short Stories)},
 		photosets=

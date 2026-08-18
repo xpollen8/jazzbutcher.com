@@ -999,15 +999,6 @@ export const AutoLinkSong = (str?: string) => {
 export const AutoLinkPlayer = (str?: string) => {
   if (!str?.length) return;
 	const match = str.match(/\[\[(?:act|person):(.*?)\]\]/);
-	/*
-	if (match) {
-		const lookup = match[1]?.replace("'", '').replace('.', '');
-		const found = lookup && mapPerformers[lookup];
-		if (!found) return lookup?.replace(/_/g, ' ');
-		return expand(found);
-	}
-	return AutoLinkAct(str);	// maybe it is an Act?
-	*/
 	const name = (match && match[1])?.replace(/_/g, ' ') || str;
 	if (name) {
 		const player = isKnownPerson(name);
@@ -1023,28 +1014,7 @@ export const AutoLinkPlayer = (str?: string) => {
 	return str;
 }
 
-export const AutoLinkAct = (str?: string) => {
-	return AutoLinkPlayer(str);
-	/*
-  if (!str?.length) return;
-	const match = str.match(/\[\[(?:act|person):(.*?)\]\]/);
-	if (match) {
-		const lookup = match[1]?.replace("'", '')?.replace('.', '');
-		const found = lookup && mapActs[lookup];
-		if (!found) {
-			const act = lookup?.replace(/_/g, ' ');
-			return <Link href={`/gigs?f=alsowith&q="${act}"`}>{act}</Link>
-		}
-		const expanded = expand(found);
-		if (expanded !== found) return expanded;
-		return <Link href={`/gigs?f=alsowith&q="${found}"`}>{found}</Link>
-	}
-	const lookup = str.replace("'", '').replace(/\./g, '').replace(',', '').replace(/\'/g, '').replace(/ /g, '_');
-	const found = mapActs[lookup];
-	if (!found) return <Link href={`/gigs?f=alsowith&q="${str?.replace(/_/g, ' ')}"`}>{str}</Link>
-	return expand(found);
-	*/
-}
+export const AutoLinkAct = AutoLinkPlayer;
 
 export const expand = (str?: string, treatAsHTML: boolean = false) => {
 	const doIt = (str?: string) => {

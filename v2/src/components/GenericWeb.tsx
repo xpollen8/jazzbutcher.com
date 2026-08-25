@@ -8,8 +8,8 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 	u?: string
 	t?: string
 	p?: string	// "publication"
-	s?: string
-	d?: string
+	s?: string	// CSS class to use
+	d?: string	// datetime
 }) => {
 	const cleanG = removeHTML(g);
 	//const cleanG = g?.replace('</p>', '').replace('<p>', '<br/><br/>');
@@ -36,7 +36,7 @@ const	genericWeb = ({ x, g, u, t, s, d, p }: {
 						// auto-link Fishy Mansions Archives
 						if (FMAraw) return linkInternal(`/fma/${FMAraw[0]}`, g);
 						// only auto link to there's a chance it was a dated gig* thing
-						if (d && cleanG) return linkInternal(`/contributions/${cleanG}`, cleanG);
+						if (cleanG) return linkInternal(`/contributions/${cleanG}`, cleanG);
 						return cleanG;
 					}
 				}

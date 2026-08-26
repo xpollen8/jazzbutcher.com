@@ -25,6 +25,18 @@ const pictures = [
 		poster: "https://v1.jazzbutcher.com/images/20121201/20121201_opal_krusch_patsmiles.jpg",
 	},
 	{
+		title: "Festival Veni Vidi Vici - Frejus France",
+		credit: { g: "Franck Yeznikian", d: "1987-08-02" },
+		href: "/gigs/1987-08-02",
+		poster: "https://v1.jazzbutcher.com/images/19870802/19870802_FranckYeznikian_pat.jpg",
+	},
+	{
+		title: "New York City",
+		credit: { g: "Alastair Indge", d: "1986-07-17" },
+		href: "/gigs/1986-07-17",
+		poster: "https://v1.jazzbutcher.com/images/19860717/19860717_pat_catclub_indge.jpg",
+	},
+	{
 		title: "The Bronx - Edmonton",
 		credit: { g: "Auersberger", d: "1992-05-24" },
 		href: "/gigs/1992-05-24",
@@ -340,11 +352,11 @@ const HomeGalleryItem = ({ item }: any) => {
 	const { g, d, u } = item?.credit || {};
 	return (<div className="flex flex-wrap justify-center bg-slate-200 p-1">
 		<Tag><b>{item.title}</b> : <span className="date">{d}</span></Tag>
-		<Link href={item?.href || ''}>
-			<div style={{ marginLeft: '3em', marginRight: '3em' }}>
-			<Image src={item?.poster} width='1500' height='500' alt={item?.title} objectFit='contain' />
-			</div>
-		</Link>
+		<div style={{ marginLeft: '4em', marginRight: '4em' }}>
+			<Link href={item?.href || ''}>
+				<Image src={item?.poster} width='1500' height='500' alt={item?.title} objectFit='contain' />
+			</Link>
+		</div>
 		{(item?.story) && <div className="py-10">
 			{item.story}
 		</div>}

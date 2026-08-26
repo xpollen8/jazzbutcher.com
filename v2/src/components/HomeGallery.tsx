@@ -338,10 +338,12 @@ const pictures = [
 
 const HomeGalleryItem = ({ item }: any) => {
 	const { g, d, u } = item?.credit || {};
-	return (<div className="flex flex-wrap justify-center bg-slate-200 p-1 pl-10 pr-10">
+	return (<div className="flex flex-wrap justify-center bg-slate-200 p-1">
 		<Tag><b>{item.title}</b> : <span className="date">{d}</span></Tag>
 		<Link href={item?.href || ''}>
+			<div style={{ marginLeft: '3em', marginRight: '3em' }}>
 			<Image src={item?.poster} width='1500' height='500' alt={item?.title} objectFit='contain' />
+			</div>
 		</Link>
 		{(item?.story) && <div className="py-10">
 			{item.story}

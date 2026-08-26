@@ -338,19 +338,15 @@ const pictures = [
 
 const HomeGalleryItem = ({ item }: any) => {
 	const { g, d, u } = item?.credit || {};
-	return (<div className="flex flex-wrap justify-center bg-slate-200 p-5">
-		<div className="pl-10 px-1 w-2/3">
-			<Link href={item?.href || ''}>
-				<Image src={item?.poster} width='1500' height='500' alt={item?.title} objectFit='contain' />
-			</Link>
-		</div>
-		<div className="px-1 w-1/3 pr-10">
-			<Tag><b>{item.title}</b> : <span className="date">{d}</span></Tag>
-			{(item?.story) && <div className="py-10">
-				{item.story}
-			</div>}
-			<Credit g={g} d={d} />
-		</div>
+	return (<div className="flex flex-wrap justify-center bg-slate-200 p-1 pl-10 pr-10">
+		<Tag><b>{item.title}</b> : <span className="date">{d}</span></Tag>
+		<Link href={item?.href || ''}>
+			<Image src={item?.poster} width='1500' height='500' alt={item?.title} objectFit='contain' />
+		</Link>
+		{(item?.story) && <div className="py-10">
+			{item.story}
+		</div>}
+		<Credit g={g} d={d} />
 	</div>);
 }
 

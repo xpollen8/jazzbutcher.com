@@ -170,6 +170,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+		posters=/images/19860305/19860305_poster.jpg$$
+			Pierre Guillaume;;;;2026-09-01
 
 	)}
 

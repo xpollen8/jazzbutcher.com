@@ -1,3 +1,4 @@
+import HomeGallery from '@/components/HomeGallery';
 import NotebookHero from '@/components/NotebookHero';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -9,7 +10,10 @@ const Home = (): React.ReactNode =>
 <>
 	<Header section='jbc' />
 	<main>
-		<NotebookHero />
+		<HomeGallery />
+		<center>
+			<NotebookHero />
+		</center>
 		<div className="flex flex-col min-[750px]:flex-row gap-1">
 			<div className="w-full min-[750px]:w-1/2">
 				<OnThisDay />

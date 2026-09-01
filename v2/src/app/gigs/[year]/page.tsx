@@ -7,7 +7,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { GigSearchDialog } from '@/components/GigSearch';
 import { PrevArrow, NextArrow } from '@/components/Arrows';
-import GigProfile from '@/components/GigProfile';
+import { GigProfile, GigProfileExact } from '@/components/GigProfile';
 import GigYear from '@/components/GigYear';
 
 const Gigs = () => {
@@ -19,7 +19,7 @@ const Gigs = () => {
 	const type = searchParams.get('f') as string;
 	const query = searchParams.get('q') as string;
 	// new style: /gigs/1999-09-23 12:00:00
-	if (pyear?.length > 4) return GigProfile({ params: { datetime: params.year } });
+	if (pyear?.length > 4) return GigProfileExact({ datetime: params.year });
 
 	const ExtraNav = ({ year }: { year: number }) => {
 		const prevGig = (year > 1982) && <Link href={`/gigs/${year - 1}`}><PrevArrow className="arrows" /></Link>;

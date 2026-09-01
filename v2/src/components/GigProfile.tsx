@@ -453,28 +453,19 @@ const Content = ({ gig }: { gig: any }) => {
 	</>
 }
 
-const GigProfile = (props: any) => {
-	const params: any = use(props.params);
-	const paramsDatetime = params?.datetime;
-	const paramsYear = params?.year;
-	const paramsDay = params?.day;
-	let datetime = paramsDatetime && paramsDatetime.replace(/%20/g, ' ').replace(/%3A/g, ':');
-	const year =paramsYear || parseYear(datetime);
-	const pday = paramsDay;
-	if (datetime) {
-		if (datetime.length === 10) {
-			datetime = datetime + ' 00:00:00';
-		}
-	} else {
-		datetime = gigPage2Datetime(`/${year}/${pday}.html`);
+export const GigProfileExact = ({ datetime }: any) => {
+	let useDatetime = datetime.replace(/%20/g, ' ').replace(/%3A/g, ':');
+	if (useDatetime.length === 10) {
+		useDatetime = useDatetime + ' 00:00:00';
 	}
-	const { data, isLoading, error } = useGig(datetime)
+	const year = parseYear(useDatetime);
+	const { data, isLoading, error } = useGig(useDatetime)
 	const gig = data;
 
 	if (!isLoading && !gig?.gig_id) return notFound();
 
 	return <>
-		<Nav year={year} datetime={datetime} gig={gig} />
+		<Nav year={year} datetime={useDatetime} gig={gig} />
 		<Loading isLoading={isLoading} >
 			<main>
 				<Content gig={gig} />
@@ -482,6 +473,11 @@ const GigProfile = (props: any) => {
 		</Loading>
 		<Footer />
 	</>
+}
+
+export const GigProfile = (props: any) => {
+	const { year, day }: any = use(props?.params);
+	return GigProfileExact({ datetime: gigPage2Datetime(`/${year}/${day}.html`) });
 }
 
 export default GigProfile;

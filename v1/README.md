@@ -1,6 +1,6 @@
 # jazzbutcher.com V1 - (HTDB codebase)
 
-Contained here are the .htdb files which drive the rendering of the jazzbutcher.com website.
+Contained here are the .htdb files which drive the rendering of the v1.jazzbutcher.com website.
 
 These are being shared in order to facilitate a reference for a codebase modernization.
 

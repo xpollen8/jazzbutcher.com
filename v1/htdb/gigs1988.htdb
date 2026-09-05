@@ -768,8 +768,12 @@ Craig Kolb;;;;2000-03-17
 		who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
 		with=${literalizeCommas( Alex Chilton
 		)},
-		tickets=/images/19880701/19880701_ticket.jpg$$
-		;;;;2021-10-07
+		tickets=
+			/images/19880701/19880701_ticket.jpg$$
+			;;;;2021-10-07
+			---
+			/images/19880701/19880701_ticket2.jpg$$
+			Random Ebay Auction;;;;2026-09-05
 
 	)}
 

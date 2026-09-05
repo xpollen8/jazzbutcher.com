@@ -140,6 +140,8 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${larry}, ${paul}, ${richard}, ${green} )},
+		posters=/images/19900405/19900405_poster.jpg$$
+			Random Ebay Auction;;;;2026-09-05
 
 	)}
 

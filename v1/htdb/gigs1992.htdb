@@ -336,6 +336,9 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+		tickets=
+			/images/19920518/19920518_ticket.jpg$$
+			Random Ebay Auction;;;;2026-09-05
 
 	)}
 

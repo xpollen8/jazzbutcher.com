@@ -1,6 +1,5 @@
 const nextConfig = {
 	//output: 'export',	// for static site generation
-	prefetch: 'off',
 
 	//cacheComponents: true,
   experimental: {

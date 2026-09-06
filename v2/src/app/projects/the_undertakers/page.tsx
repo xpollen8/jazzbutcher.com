@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -13,8 +13,8 @@ const TheUndertakers = () =>
 		<LetterHeader title="The Undertakers (1995)" />
 		<div className="listItem">
 			<div className="flex flex-wrap justify-center gap-3">
-			<Link href="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers.jpg"><Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers.jpg" width={500} height={500} alt="The Undertakers" /></Link>
-			<Link href="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers2.jpg"><Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers2.jpg" width={500} height={500} alt="The Undertakers 2" /></Link>
+			<MyLink href="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers.jpg"><Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers.jpg" width={500} height={500} alt="The Undertakers" /></MyLink>
+			<MyLink href="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers2.jpg"><Image src="https://s3.amazonaws.com/assets.jazzbutcher.com/projects/TheUndertakers/1995_MarkRefoy_TheUndertakers2.jpg" width={500} height={500} alt="The Undertakers 2" /></MyLink>
 			</div>
 			<blockquote className="annotation">
 				My dear old friend, mentor and all round genius Pat Fish aka Jazz Butcher has passed on. Heartbreaking. Here he is after a gig with our ramshackle knockabout beat combo The Undertakers in the 90s. Rest easy Pat mate

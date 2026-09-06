@@ -1,6 +1,6 @@
 //"use server"
 
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import type { Metadata, ResolvingMetadata } from 'next'
 //import IconMenu from '@/svg/IconMenu';
@@ -184,7 +184,7 @@ const parseTitle = (title: string | string[], key0: number) => {
 	if (title?.constructor === Array && title[0]?.constructor === String) {
 		return title?.map((t: string, key: number) => {
 			const [ text, href ] = parseCaptionSourceEtc(t) || [];
-			if (href) return <li className="navTop" key={key0+key}><Link href={href}>{text}</Link></li>;
+			if (href) return <li className="navTop" key={key0+key}><MyLink href={href}>{text}</MyLink></li>;
 			return <li key={key0+key}><span aria-current="page">{text}</span></li>;
 		});
 	}
@@ -230,7 +230,7 @@ const NavSections = (props: Props_Header): React.ReactNode  => {
 					const useHref = (inParentDirectory) ? `${parent}/${href}` : href;
 					return (
 						<div key={key} className={`navItem ${(depth === 0) ? 'outer' : ''}`}>
-							<Link href={useHref.includes('https') ? useHref : `/${useHref}`}>{title}</Link>
+							<MyLink href={useHref.includes('https') ? useHref : `/${useHref}`}>{title}</MyLink>
 							{(summary) && <div style={{ display: 'inline' }} className="date">{' - '}{summary}</div>}
 							{makeMenuOptions(href, depth + 1)}
 						</div>
@@ -249,7 +249,7 @@ const NavSections = (props: Props_Header): React.ReactNode  => {
 						const mainOptions = makeMenuOptions((obj?.href === '/') ? 'jbc' : obj?.href.substring(1), 0);
 						return (
 							<li key={key} className="navTop">
-								<Link id="summary" href={obj.href}>{obj.title}</Link>
+								<MyLink id="summary" href={obj.href}>{obj.title}</MyLink>
 								{!!(mainOptions?.length) && <div className="navOverlay" id="detail"> {mainOptions} </div>}
 							</li>
 						)

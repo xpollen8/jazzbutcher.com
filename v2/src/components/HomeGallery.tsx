@@ -1,6 +1,6 @@
 "use client"
 
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import Tag from '@/components/Tag';
 import { Credit } from '@/components/GenericWeb';
@@ -353,9 +353,9 @@ const HomeGalleryItem = ({ item }: any) => {
 	return (<div className="flex flex-wrap justify-center bg-slate-200 p-1">
 		<Tag><b>{item.title}</b> : <span className="date">{d}</span></Tag>
 		<div style={{ marginLeft: '4em', marginRight: '4em' }}>
-			<Link href={item?.href || ''}>
+			<MyLink href={item?.href || ''}>
 				<Image src={item?.poster} width='1500' height='500' alt={item?.title} objectFit='contain' />
-			</Link>
+			</MyLink>
 		</div>
 		{(item?.story) && <div className="py-10">
 			{item.story}

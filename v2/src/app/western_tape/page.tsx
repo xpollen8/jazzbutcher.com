@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 
 import Header from '@/components/Header';
@@ -10,9 +10,9 @@ const WesternTape = () =>
 <>
 	<Header section="etc" title="Western Family Tape" />
 		<div className="etc">
-			<Link href="/releases/western.html"><Image
+			<MyLink href="/releases/western.html"><Image
 					src="https://jazzbutcher.com/images/western_250.jpg"
-					height={250} width={250} alt="western cover" className="float-left m-3" /></Link>
+					height={250} width={250} alt="western cover" className="float-left m-3" /></MyLink>
 			<br />
 			{expand('family')},
 			the 1992 live album released on {expand('creation_records')}, is not the record

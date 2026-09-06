@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -12,9 +12,9 @@ const Letter = () =>
 		<div className="border">
 			<div className="flex flex-wrap justify-around">
 				<div className="m-1">
-					<Link href="/images/lovebus.jpg">
+					<MyLink href="/images/lovebus.jpg">
 						<Image alt="album cover" width={250} height={250} src="https://v1.jazzbutcher.com/images/lovebus.jpg" />
-					</Link>
+					</MyLink>
 				</div>
 				<div className="min-w-[50%] p-10">
 					<LetterHeader title="WAITING FOR THE LOVE BUS" subhead="Cultural guidance notes issued to the U.K. press" />

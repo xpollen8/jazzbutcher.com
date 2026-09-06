@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 
 import { parseImage, parseYear, pluralize } from '@/lib/utils';
@@ -23,7 +23,7 @@ const ReleaseCards = ({ items, preventAutoExpand=false, title='Release' }: any) 
 						{(thumb) ?
 						<>
 						{(item?.href) ?
-							<Link href={item?.href}><Image className="w-full" src={thumb} width={250} height={250} alt="cover" /></Link>
+							<MyLink href={item?.href}><Image className="w-full" src={thumb} width={250} height={250} alt="cover" /></MyLink>
 							:
 							<Image className="w-full" src={thumb} width={250} height={250} alt="cover" />
 							}
@@ -31,11 +31,11 @@ const ReleaseCards = ({ items, preventAutoExpand=false, title='Release' }: any) 
 						:
 						<div className="p-7" />
 						}
-						<Link href={item?.href || ''}><div className="text-center text-sky-800 px-2">
+						<MyLink href={item?.href || ''}><div className="text-center text-sky-800 px-2">
 							{(item.project) && <><b>{expand(item.project)}</b><hr /></>}
 							{(item.collaboration) && <><b>{item.collaboration}</b><hr /></>}
 							<span className="font-bold">{item?.title?.replace('&amp;', '&')}</span>
-						</div></Link>
+						</div></MyLink>
 						{(item?.summary) && <div className="listItem">{item.summary}</div>}
 					</div>
 				</div>)

@@ -1,6 +1,6 @@
 "use client"
 
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 
 import { truncate, dateDiff, pluralize, truncAt, parseProject, parseImage } from '@/lib/utils';
@@ -28,7 +28,7 @@ const PressCards = ({ items, project, showAlbum, preventAutoExpand=false, title 
 				<span className="p-1"> {item.dtpublished?.substring(0, 10).replace(/-00/g, '')} {info} </span>
 				</InfoTag>
 				<div className="outline outline-slate-300 drop-shadow-sm">
-					<Link key={key} href={item.url}>
+					<MyLink key={key} href={item.url}>
 						<div className={`gig_${parseProject(item.type)}`} />
 						{(showAlbum && item?.album) && <AlbumCover album={item?.album} />}
 						{(thumb) ? <Image className="w-full" src={parseImage(thumb)?.thumb || ''} width={250} height={250} alt="cover" /> : <br />}
@@ -46,7 +46,7 @@ const PressCards = ({ items, project, showAlbum, preventAutoExpand=false, title 
 								{(item?.dtadded) && <div>{dateDiff(item.dtadded, 'added: ')}</div>}
 							</div>}
 						</div>
-					</Link>
+					</MyLink>
 				</div>
 			</div>)
 		})}

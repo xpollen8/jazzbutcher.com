@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { expand } from '@/lib/defines';
@@ -10,8 +10,8 @@ const Letter = () =>
 		{expand('green')} now fully re-assimilated into live line-up, alongside
 		{expand('dooj')}, {expand('gab')}, {expand('hend')} and myself.  Since when we have played:
 		<p />
-		<Link href="/gigs/1994/Sep.html">
-		<b>FESTIVAL ROCK AU MAXIMUM, CLERMONT-FERRAND, FRANCE</b></Link>
+		<MyLink href="/gigs/1994/Sep.html">
+		<b>FESTIVAL ROCK AU MAXIMUM, CLERMONT-FERRAND, FRANCE</b></MyLink>
 		<blockquote>
 		Very good.  Big hall, big P.A., big crowd.  Also on the
 		bill; The Posies, who all wore dresses, and Nyan Ferties,
@@ -20,8 +20,8 @@ const Letter = () =>
 		exceptional.  {expand('filth')} made its live debut and worked well.
 		</blockquote>
 		<b>FRIDGE TWO at SLURPS, NORTHAMPTON</b>
-		<Link href="/gigs/1994/Aug3.html">
-		3 Aug 94</Link>
+		<MyLink href="/gigs/1994/Aug3.html">
+		3 Aug 94</MyLink>
 		<blockquote>
 		As detailed already by Matt Cockerill, who had a chat with me that
 		evening.  Very enjoyable to be able to put on the whole band
@@ -33,8 +33,8 @@ const Letter = () =>
 		deliberately good-natured set, complete with gratuitous {expand('vu')}
 		cover right at the top.
 		</blockquote>
-		<Link href="/gigs/1994/Aug6.html">
-		6 Aug 94</Link>
+		<MyLink href="/gigs/1994/Aug6.html">
+		6 Aug 94</MyLink>
 		<blockquote>
 		Transambient Communications were billed to open, but
 		recording commitments prevented them.  Instead their
@@ -52,8 +52,8 @@ const Letter = () =>
 		JBC could be found.  We were here getting pissed.
 		</blockquote>
 		<b>THE BORDERLINE, LONDON ENGLAND</b>
-		<Link href="/gigs/1994/Aug17.html">
-		<br />17 Aug 94</Link>
+		<MyLink href="/gigs/1994/Aug17.html">
+		<br />17 Aug 94</MyLink>
 		<blockquote>
 		JBC in business success shock horror!  Pissed at our agent
 		for being useless, we booked this ourselves.  As a
@@ -80,8 +80,8 @@ const Letter = () =>
 		Germany.  Yes, a lovely night.
 		</blockquote>
 		<b>FLEECE AND FLIRKIN BRISTOL ENGLAND</b>
-		<Link href="/gigs/1994/Jul26.html">
-		<br />26 Jul 94</Link>
+		<MyLink href="/gigs/1994/Jul26.html">
+		<br />26 Jul 94</MyLink>
 		<blockquote>
 		Nearly forgot this one, as it came before Northampton and London.
 		A smallish crowd, but perfectly formed.  All of {expand('strange')}

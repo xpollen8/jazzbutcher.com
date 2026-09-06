@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { expand } from '@/lib/defines';
@@ -22,8 +22,8 @@ const Letter = () =>
 		Here, as normal, is a bunch of stuff in response to what&apos;s
 		been on lately, plus various updates.  Life here in Northampton
 		has been hectic and enjoyable since the
-		<Link href="/letters/94Sep13/gigs.html">Fridge Two series
-		of gigs</Link>; the party vibe just didn&apos;t dissipate somehow.
+		<MyLink href="/letters/94Sep13/gigs.html">Fridge Two series
+		of gigs</MyLink>; the party vibe just didn&apos;t dissipate somehow.
 		This has been expensive, exhausting, not particularly
 		productive and lots o fun.
 		<p />

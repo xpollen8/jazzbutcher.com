@@ -1,6 +1,6 @@
 "use client";
 
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import PhotoSet from '@/components/PhotoSet';
 import { useState, useEffect } from 'react';
@@ -29,7 +29,7 @@ const NotebookHero = ({ arg }: any) => {
 		}
 	});
 	if (!src?.length) return;
-	return <Link href='/notebooks'><Image className="mt-1" src={src} width={1500} height={500} alt={alt} /></Link>
+	return <MyLink href='/notebooks'><Image className="mt-1" src={src} width={1500} height={500} alt={alt} /></MyLink>
 }
 
 export const NotebookHeros = () => {

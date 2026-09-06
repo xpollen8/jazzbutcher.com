@@ -1,7 +1,7 @@
 "use client"
 
 import { useParams, useSearchParams } from 'next/navigation';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -22,8 +22,8 @@ const Gigs = () => {
 	if (pyear?.length > 4) return GigProfileExact({ datetime: params.year });
 
 	const ExtraNav = ({ year }: { year: number }) => {
-		const prevGig = (year > 1982) && <Link href={`/gigs/${year - 1}`}><PrevArrow className="arrows" /></Link>;
-		const nextGig = (year < 2023) && <Link href={`/gigs/${year + 1}`}><NextArrow className="arrows" /></Link>;
+		const prevGig = (year > 1982) && <MyLink href={`/gigs/${year - 1}`}><PrevArrow className="arrows" /></MyLink>;
+		const nextGig = (year < 2023) && <MyLink href={`/gigs/${year + 1}`}><NextArrow className="arrows" /></MyLink>;
 		return <> {prevGig} year {nextGig} </>
 	}
 

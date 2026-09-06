@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
@@ -37,9 +37,9 @@ const Letters = () =>
 			</div>
 			<div className="m-1">
 				<center>
-				<Link href="https://v1.jazzbutcher.com/images/pat_party.jpg">
+				<MyLink href="https://v1.jazzbutcher.com/images/pat_party.jpg">
 					<Image alt="[photo]" width={400} height={400} src="https://v1.jazzbutcher.com/images/pat_party.jpg" />
-				</Link>
+				</MyLink>
 				<Image alt="[PatFishInfo]" width={289} height={139} src="https://v1.jazzbutcher.com/images/pat_sig.gif" />
 				</center>
 			</div>

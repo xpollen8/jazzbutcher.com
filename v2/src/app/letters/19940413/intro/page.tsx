@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -21,11 +21,11 @@ const Letter = () =>
 		He lives here, and has played in a lot of dodgy middle-aged
 		hipster revisionist bands before.  Now he is bored, and
 		coming round my house to learn some new tunes.  He&apos;s
-		very good, in an <Link href="/conspirators/max_eider.html">
-		Eider</Link>-esque way.  He&apos;s got the soul thing and the
+		very good, in an <MyLink href="/conspirators/max_eider.html">
+		Eider</MyLink>-esque way.  He&apos;s got the soul thing and the
 		country thing - the noise thing won&apos;t take long to sort
 		out, I feel.  More news as it comes up.  This, as you
-		will understand, in no way compromises the position of <Link href="/conspirators/richard_formby.html">Uncle Richard;</Link>
+		will understand, in no way compromises the position of <MyLink href="/conspirators/richard_formby.html">Uncle Richard;</MyLink>
 		just keeping the gene pool up to scratch...
 		<p />
 		Not much happening at the moment.  Spittle Rattle have
@@ -45,7 +45,7 @@ const Letter = () =>
 		and Belgium (the country, not the club!), and assembling
 		demo tapes for the next LP.  Also, both my guitarists
 		need medical attention.  Can&apos;t imaging why...  Spoke
-		to the <Link href="/conspirators/martin_stebbing.html">Rev. Botus</Link>,
+		to the <MyLink href="/conspirators/martin_stebbing.html">Rev. Botus</MyLink>,
 		who indicated a desire to do some JBC touring action.
 		<p className="clear_float" />
 	</main>

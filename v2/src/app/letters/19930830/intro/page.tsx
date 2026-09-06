@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
@@ -18,8 +18,8 @@ const Letter = () =>
 	<Header section='letters' title={ [ '30Aug93;;/letters/19930830', 'Introduction' ] } />
 	<main>
 		<blockquote className="annotation">
-			I have <Link href="/letters/19940624/all_the_gigs.html">
-			tapes of all manner of JBC live</Link>, tapes and recordings
+			I have <MyLink href="/letters/19940624/all_the_gigs.html">
+			tapes of all manner of JBC live</MyLink>, tapes and recordings
 			of radio sessions, all line-ups, all periods, all qualities
 			of sound and performance.  I&apos;ll glady trade what you want,
 			but I ONLY WANT the following recordings:
@@ -32,9 +32,9 @@ const Letter = () =>
 				<p />
 			</div>
 			<div className="m-1">
-				<Link href="https://v1.jazzbutcher.com/images/advert.gif">
+				<MyLink href="https://v1.jazzbutcher.com/images/advert.gif">
 					<Image src="https://v1.jazzbutcher.com/images/advert.gif" width={400} height={400} alt="[advert]" />
-				</Link>
+				</MyLink>
 			</div>
 		</div>
 	</main>

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import LetterHeader from '@/components/LetterHeader';
@@ -14,7 +14,7 @@ import Footer from '@/components/Footer';
 
 const maybeLink = (obj: any) => {
 	if (obj?.['Type']?.includes('Live') && obj?.['Date']?.length === 10 && parseInt(obj?.['Date']?.substring(0, 4)) >= 1981) {
-		return <Link href={ts2URI(obj?.['Date'])}>{obj?.['Date']}</Link>;
+		return <MyLink href={ts2URI(obj?.['Date'])}>{obj?.['Date']}</MyLink>;
 	} else {
 		return obj?.['Date'];
 	}
@@ -47,7 +47,7 @@ const FishyMansionsArchives = ({ params }: { params?: any }) => {
 		<Header section="FMA" />
 		<main>
 			<LetterHeader title="Fishy Mansions Archives" aux=<>
-				As part of the <Link href="https://www.gofundme.com/f/help-james-and-tom-preserve-jazz-butchers-legacy">JBC Documentary</Link>, we are striving to digitize all cassettes, CDs demo and live recordings from Pat Fish&apos;s estate. Here is an initial summary of the items being considered.
+				As part of the <MyLink href="https://www.gofundme.com/f/help-james-and-tom-preserve-jazz-butchers-legacy">JBC Documentary</MyLink>, we are striving to digitize all cassettes, CDs demo and live recordings from Pat Fish&apos;s estate. Here is an initial summary of the items being considered.
 				<Image className="w-full"  width={250} height={250} src={`https://v1.jazzbutcher.com/static/20241022_FMA1.jpg`} alt="fish mansion archive CDs" />
 				</>
 			/>

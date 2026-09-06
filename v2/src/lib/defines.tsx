@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import { type HashedType, linkInternal, linkExternal } from './utils';
 
@@ -10,8 +10,8 @@ const linkSearch = ({ name, text, act }:
 }) =>
 <>
 	{(() => {
-	if (act) return <Link href= {`/gigs?f=alsowith&q="${name}"`}>{(text) ? text : name}</Link>
-	return <Link href= {`/conspirators/${name}`}>{(text) ? text : name}</Link>
+	if (act) return <MyLink href= {`/gigs?f=alsowith&q="${name}"`}>{(text) ? text : name}</MyLink>
+	return <MyLink href= {`/conspirators/${name}`}>{(text) ? text : name}</MyLink>
 	})()}
 </>
 
@@ -19,7 +19,7 @@ const linkPerson = (props: { href: string, name: string }) => <span className="p
 const linkAlbum = (props: { title: string, href?: string }) =>
 <>
 {(props?.href) ?
-  <span className="release_title"><b><Link href= {props?.href}>{props?.title}</Link></b></span>
+  <span className="release_title"><b><MyLink href= {props?.href}>{props?.title}</MyLink></b></span>
 	:
 	<span className="release_title"><b>{props?.title}</b></span>
 }
@@ -27,7 +27,7 @@ const linkAlbum = (props: { title: string, href?: string }) =>
 const linkSingle = (props: { title: string, href?: string }) =>
 <>
 {(props?.href) ?
-  <span className="release_title"><b><Link href={props?.href}>{props?.title}</Link></b></span>
+  <span className="release_title"><b><MyLink href={props?.href}>{props?.title}</MyLink></b></span>
 	:
 	<span className="release_title"><b>{props?.title}</b></span>
 }
@@ -38,7 +38,7 @@ const linkSong = (props: { title?: string, href?: string, author?: string | Reac
   <span className='song'>
 	{(() => {
 		if (props?.title && props?.href) {
-			return <i>{' '}<Link href= {props.href}>{props.title}</Link>{' '}</i>
+			return <i>{' '}<MyLink href= {props.href}>{props.title}</MyLink>{' '}</i>
 		} else if (props?.title) {
 			return <i>{' '}{props.title}{' '}</i>
 		}
@@ -178,7 +178,7 @@ export const davidj = dj;
 export const bwatch = linkExternal("http://www.theblackwatchmusic.com", "The Black Watch");
 export const purelove = linkExternal("http://ourworld.compuserve.com/homepages/RobertFliegel/purelove.htm, Purelove");
 export const eg	= linkInternal('/projects/black_eg', 'The Black Eg');
-export const vergift = <Link href="https://adjective.com/vergiftung/site">Vergiftung</Link>
+export const vergift = <MyLink href="https://adjective.com/vergiftung/site">Vergiftung</MyLink>
 export const cave = linkSearch({ name: "Nick Cave", act: true });
 export const cvb = "Camper Van Beethoven";
 export const mbv = "My Bloody Valentine";
@@ -1004,12 +1004,12 @@ export const AutoLinkPlayer = (str?: string) => {
 		const player = isKnownPerson(name);
 		if (!player) {
 			if (str?.includes('person:')) {
-				return <Link href={`/conspirators/${name}`}>{name}</Link>
+				return <MyLink href={`/conspirators/${name}`}>{name}</MyLink>
 			} else {
-				return <Link href={`/gigs?f=alsowith&q="${name}"`}>{name}</Link>
+				return <MyLink href={`/gigs?f=alsowith&q="${name}"`}>{name}</MyLink>
 			}
 		}
-		return <Link href={player?.href}>{player?.name}</Link>;
+		return <MyLink href={player?.href}>{player?.name}</MyLink>;
 	}
 	return str;
 }
@@ -1235,7 +1235,7 @@ export const expandAll = (s?: string, commate: boolean = false) => {
 						const musician = str.substring(0, str.length - 2)?.trim();
 						const known = isKnownPerson(musician);
 						return <span key={key}>
-							{' '}{(known) ? <Link href={known?.href}>{musician}</Link> : musician}
+							{' '}{(known) ? <MyLink href={known?.href}>{musician}</MyLink> : musician}
 						</span>
 					} else {
 						return str;

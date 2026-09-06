@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -12,7 +12,7 @@ const Letter = () =>
 			&gt; Wed, 2 Jun 93<br />
 			&gt; joe@cetia.fr (Joe Nicholson)<br />
 			&gt; Here is the translation of the review of the JBC<br />
-			&gt; Waiting for the love bus album. <Link href="/press/93inrockuptible.html">Taken from Les Inrockuptibles,</Link><br />
+			&gt; Waiting for the love bus album. <MyLink href="/press/93inrockuptible.html">Taken from Les Inrockuptibles,</MyLink><br />
 			&gt; June 1993:
 		</samp>
 		<p />

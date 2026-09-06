@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -19,25 +19,25 @@ const TomHall = () => {
 				<div className="float-right flex flex-col outline p-1 ml-2">
 					<center>
 						<div className="border">
-							<Link href="/tomhall/neil_spencer.html">
+							<MyLink href="/tomhall/neil_spencer.html">
 								<Image alt="Neil Spencer and Tom Hall"
 								src="https://v1.jazzbutcher.com/images/tom_hall_neil_spencer.jpg" width={222} height={291} />
-							</Link>
-							<Link href="tomhall/neil_spencer.html">Neil Spencer&apos;s tribute</Link>.
+							</MyLink>
+							<MyLink href="tomhall/neil_spencer.html">Neil Spencer&apos;s tribute</MyLink>.
 						</div>
 						<p />
 						<div className="border">
-							<Link href="https://v1.jazzbutcher.com/TomHall.pdf">
+							<MyLink href="https://v1.jazzbutcher.com/TomHall.pdf">
 								<Image alt="PDF preview"
 									src="https://v1.jazzbutcher.com/images/tom_hall_tribute_small.gif" width={207} height={269} />
-							</Link>
-							<Link href="https://v1.jazzbutcher.com/TomHall.pdf">Mark Griffiths&apos; Tribute (pdf)</Link>
+							</MyLink>
+							<MyLink href="https://v1.jazzbutcher.com/TomHall.pdf">Mark Griffiths&apos; Tribute (pdf)</MyLink>
 						</div>
 						<div className="border" style={{ width: '250px' }} >
-							<Link href="/gigs/2003/Sep6_1930.html"><Image
+							<MyLink href="/gigs/2003/Sep6_1930.html"><Image
 								src="https://v1.jazzbutcher.com/images/20030906/20030906_poster_250.jpg" alt="poster"
-								width={250} height={250} /></Link>
-							There will be a memorial gig for The Great Tom Hall on <Link href="/gigs/2003/Sep6_1930.html">Saturday 6th September 2003</Link> at
+								width={250} height={250} /></MyLink>
+							There will be a memorial gig for The Great Tom Hall on <MyLink href="/gigs/2003/Sep6_1930.html">Saturday 6th September 2003</MyLink> at
 							the Ken Turner Pavilion, Northamptonshire County Cricket
 							Club, Wantage Road, Northampton. Taking part will be many of the musicians
 							who worked with Tom over the years in a revue sort of format. {expand('pat')} and {expand('curt')}

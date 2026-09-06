@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -8,7 +8,7 @@ const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', 'Gigs' ] } />
 	<main>
-		<LetterHeader title=<>After the <Link href="/letters/19930830/tour.html">European tour of early 1993</Link></>
+		<LetterHeader title=<>After the <MyLink href="/letters/19930830/tour.html">European tour of early 1993</MyLink></>
 			subhead="listed last time, we did this..." />
 		<samp>
 		<h2>1993</h2>

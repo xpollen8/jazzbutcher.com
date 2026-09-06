@@ -1,6 +1,6 @@
 "use client"
 
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 
 import { removeHTML, Attribution, Source } from '@/components/GenericWeb';
@@ -217,7 +217,7 @@ const ReleaseDownloads = ({ release }: { release: ReleaseTypeWithChildren }) => 
 				<Tag>Downloadable Media</Tag>
 				<blockquote>
 				{downloads?.filter(([ file, caption]: any) => file)?.map(([ file, caption ]: any, key: number) => (<div key={key}>
-					<Link href={`https://v1.jazzbutcher.com${file}`} className="border">{caption}</Link>
+					<MyLink href={`https://v1.jazzbutcher.com${file}`} className="border">{caption}</MyLink>
 					<br />
 				</div>)
 				)}

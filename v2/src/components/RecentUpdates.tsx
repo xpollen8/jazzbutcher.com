@@ -1,6 +1,6 @@
 "use client"
 
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import EmbedMedia from '@/components/EmbedMedia';
 import PhotoSet from '@/components/PhotoSet';
@@ -49,7 +49,7 @@ const RecentFeedback = (props: any) => {
 		<summary className="tagClickable">{pluralize(feedback.numResults, 'website comment', 'Recent')} <CommentBubble className="commentBubbleSimple"/>{dateAgo(feedback?.results[0]?.dtcreated)}</summary>
 		{feedback.results.map((p: any, key: number) => {
 			return <div key={key} className="listItem clickListItem">
-				<b><Link href={feedbackURI2Pathname(p.uri)}>{p.uri}</Link></b> <span className="date">{dateDiff(p.dtcreated, '')}</span>
+				<b><MyLink href={feedbackURI2Pathname(p.uri)}>{p.uri}</MyLink></b> <span className="date">{dateDiff(p.dtcreated, '')}</span>
 				<div className="listItem">
 				<b>{p.subject}</b>
 				<blockquote>
@@ -104,7 +104,7 @@ const RecentReleases = (props: any) => {
 			{releases.results.map((p: any, key: number) => {
 				return <div key={key} className="listItem">
 					<div className="date">{dateDiff(p.dtadded, '')}</div>
-					<Link href={p.href}><b>{p.title}</b></Link>
+					<MyLink href={p.href}><b>{p.title}</b></MyLink>
 				</div>
 			})}
 		</blockquote>

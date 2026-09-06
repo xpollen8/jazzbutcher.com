@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -37,7 +37,7 @@ const Letter = () =>
 		</samp>
 		<p />
 		<blockquote className="annotation">
-			Post-<Link href="/conspirators/max_eider.html">Eider</Link>
+			Post-<MyLink href="/conspirators/max_eider.html">Eider</MyLink>
 			Revisionism?  Whoa!  It&apos;s true that over the years since
 			he left the group I&apos;ve been practising really hard on
 			the guitar, to the point where I&apos;ve just about reached

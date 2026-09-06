@@ -1,6 +1,6 @@
 "use client"
 
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import { parseImage, truncAt, autoLink, linkExternal, ts2URI } from '@/lib/utils';
 import { AutoLinkSong } from '@/lib/defines';
@@ -40,8 +40,8 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 			{(setnum && (typeof setnum === 'string') && !['set','NULL'].includes(setnum)) && <>{setnum?.replace('side', '')}{': '}</>}
 			{(!!ordinal) && <span className='listenItemOrdinal'>{ordinal}.</span>}{' '}
 			{(city?.length && venue?.length && datetime?.length && !datetime.match(/0000-00-00 00:00:00/)) && <>
-				{(parent) && <Link href={parent}><b>{datetime?.substring(0, 10)}</b></Link>}
-				{!(parent) && <Link href={ts2URI(datetime)}><b>{datetime?.substring(0, 10)}</b></Link>}
+				{(parent) && <MyLink href={parent}><b>{datetime?.substring(0, 10)}</b></MyLink>}
+				{!(parent) && <MyLink href={ts2URI(datetime)}><b>{datetime?.substring(0, 10)}</b></MyLink>}
 				{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
 			</>}
 			<i>
@@ -62,9 +62,9 @@ const LinkAudio = ({ lookup, version, parent, datetime, venue, city, title, comm
 			{(comment) && <span className="smalltext"> <i>(<span dangerouslySetInnerHTML={{ __html: comment }} /></i>)</span>}
 			<div className="flex">
 				{(lookup && thumb) && <>
-					<Link href={release?.href}>
+					<MyLink href={release?.href}>
 						<Image width={60} height={60} alt={lookup} src={thumb} />
-					</Link>
+					</MyLink>
 				</> }
 				<div className="w-full">
 				{(mp3) &&

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import LinkAudio from '@/components/LinkAudio';
 import EmbedVideo from '@/components/EmbedVideo';
 import { imageBase, autoLink, ts2URI } from '@/lib/utils';
@@ -129,8 +129,8 @@ const EmbedMedia = ({ data = {}, className, children, disableVideo=false } : { d
 					{(ordinal) && <span className="listenItemOrdinal">{ordinal}.</span>}
 
 					{!!(venue?.length && datetime?.length && !datetime.match(/0000-00-00 00:00:00/)) && <>
-						{(parent) && <Link href={parent}><b>{datetime?.substring(0, 10)}</b></Link>}
-						{!(parent) && <Link href={ts2URI(datetime)}><b>{datetime?.substring(0, 10)}</b></Link>}
+						{(parent) && <MyLink href={parent}><b>{datetime?.substring(0, 10)}</b></MyLink>}
+						{!(parent) && <MyLink href={ts2URI(datetime)}><b>{datetime?.substring(0, 10)}</b></MyLink>}
 						{(city && venue) && <>{' '}{city}{', '}{venue}<br /></>}
 						{(!city && venue) && <>{' '}{venue}<br /></>}
 					</>}

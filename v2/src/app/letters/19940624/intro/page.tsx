@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -8,7 +8,7 @@ const Letter = () =>  {
 	return ( <>
 		<Header section='letters' title='6Jun94' />
 		<main>
-			I have passed the time since <Link href="/letters/19940604">[4Jun94]</Link> ruthlessly instilling
+			I have passed the time since <MyLink href="/letters/19940604">[4Jun94]</MyLink> ruthlessly instilling
 			an iron discipline within the ranks, and things are starting
 			to happen.  Like - would you believe?  - a live version of
 			{expand('filth')}!

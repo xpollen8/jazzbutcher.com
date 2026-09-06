@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 
 import ImageStrip from '@/components/ImageStrip';
@@ -25,13 +25,13 @@ const PressItem = ({ item }: { item: any }) => {
 					{(article?.location) && doItem('Location', article.location)}
 					{(article?.dtpublished) && doItem('Published', dateDisplay(article.dtpublished, ''))}
 					{(article?.credit) && doItem('Author', <Attribution g={article?.credit} u={`/contributions/${article?.credit}` || article?.crediturl} />)}
-					{(article?.source) && doItem('Source', <Link href={article.source}>{parseDomain(article.source)}</Link>)}
+					{(article?.source) && doItem('Source', <MyLink href={article.source}>{parseDomain(article.source)}</MyLink>)}
 					{types.map((t: string, key: number) => (<div key={key}>
 							{(t === 'kit') && doItem('Category', 'Press Kit/Biography')}
 							{(t === 'clipping') && doItem('Category', 'Press Clipping')}
 							{(t === 'pat') && doItem('Category', 'The Butcher Writes')}
 							{(t === 'interview') && doItem('Interview w/Conspirator', article.person.split(';').map(expand))}
-							{((t === 'gig' || t === 'preshow') && article.dtgig) && doItem('The associated Gig', <Link href={ts2URI(article.dtgig)}>{article.dtgig.substring(0, 10)}</Link>)}
+							{((t === 'gig' || t === 'preshow') && article.dtgig) && doItem('The associated Gig', <MyLink href={ts2URI(article.dtgig)}>{article.dtgig.substring(0, 10)}</MyLink>)}
 							{(t === 'album' && article?.album) && doItem('Album Review', expand(article.album))}
 					</div>))}
 					{(!!parseInt(article?.dtadded, 10)) && doItem('Item added', dateDiff(article.dtadded, ''))}
@@ -83,7 +83,7 @@ const PressItem = ({ item }: { item: any }) => {
 				return (<>
 					<b >Download:</b>{' '}
 					{media?.filter(([ file, caption ]: any) => file)?.map(([ file, caption ]: any, key: number) => (<>
-						<Link key={key} href={file?.includes('https:') ? file : `https://v1.jazzbutcher.com${file}`} className="border">{caption || file}</Link>
+						<MyLink key={key} href={file?.includes('https:') ? file : `https://v1.jazzbutcher.com${file}`} className="border">{caption || file}</MyLink>
 					</>)
 					)}
 					<p />

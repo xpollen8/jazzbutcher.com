@@ -1,11 +1,11 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 
 const NavItem = ({ uri, text }: {
 	uri?: string
 	text: string
 }): React.ReactNode  => (
 	<div className="menuDiv hover:outline">
-		{uri ? <Link href={uri}>{text}</Link> : <div>{text}</div>}
+		{uri ? <MyLink href={uri}>{text}</MyLink> : <div>{text}</div>}
 	</div>
 )
 

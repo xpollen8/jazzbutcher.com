@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -29,9 +29,9 @@ const Letter = () =>  {
 			<p />
 			<a id="bath" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/bath.jpg" >
+				<MyLink href="https://v1.jazzbutcher.com/images/bath.jpg" >
 					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/bath_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" />
-				</Link>
+				</MyLink>
 			{expand('bacon')}
 				<p />
 				The one nobody ever talks about, even though a surprising
@@ -48,9 +48,9 @@ const Letter = () =>  {
 			<p />
 			<a id="scandal" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/scandal_front.jpg" >
+				<MyLink href="https://v1.jazzbutcher.com/images/scandal_front.jpg" >
 					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/scandal_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" />
-				</Link>
+				</MyLink>
 			{expand('scandal')}
 				<p />
 				The Albatross.  Since the recording of {expand('bacon')} (almost
@@ -72,8 +72,8 @@ const Letter = () =>  {
 			<p />
 			<a id="sex" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/releases/sex_front.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/sex_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+				<MyLink href="https://v1.jazzbutcher.com/images/releases/sex_front.jpg" >
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/sex_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></MyLink>
 			{expand('sex')}
 				<p />
 				One day&apos;s rehearsal in {expand('hask')}&apos;s living room, five days&apos;
@@ -107,8 +107,8 @@ const Letter = () =>  {
 			<p />
 			<a id="dist" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/gentle.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/gentle_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+				<MyLink href="https://v1.jazzbutcher.com/images/gentle.jpg" >
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/gentle_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></MyLink>
 			{expand('dist')}
 				<p />
 				A Sri Lankan gentleman once sat down beside me in a
@@ -139,8 +139,8 @@ const Letter = () =>  {
 				around the bottom end, gives a lot of the songs a sound
 				that I dislike.  ON THE OTHER HAND, there&apos;s {expand('angels')},
 				there&apos;s {expand('fall')}, there&apos;s {expand('world')}.  Still, in 1986 the best
-				plan would be to but the <Link href="/releases/angels.html"><b>12&quot;
-				single</b></Link> and go see the band in concert.
+				plan would be to but the <MyLink href="/releases/angels.html"><b>12&quot;
+				single</b></MyLink> and go see the band in concert.
 				Generally, we had it down in concert.  In just about
 				every other department, however, we were coming to bits,
 				individually and collectively, and to me this record
@@ -156,8 +156,8 @@ const Letter = () =>  {
 			<p />
 			<a id="fishco" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/fishco.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/fishco_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+				<MyLink href="https://v1.jazzbutcher.com/images/fishco.jpg" >
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/fishco_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></MyLink>
 			{expand('fishco')}
 				<p />
 				Having ended up on {expand('creat')}, which I took as a bit of
@@ -192,8 +192,8 @@ const Letter = () =>  {
 			<p />
 			<a id="planet" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/planet.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/planet_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+				<MyLink href="https://v1.jazzbutcher.com/images/planet.jpg" >
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/planet_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></MyLink>
 			{expand('planet')}
 				<p />
 				This record gives me the pip.  I think that the blame
@@ -241,8 +241,8 @@ const Letter = () =>  {
 			<p />
 			<a id="cult" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/cult.jpg" >
-				<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/cult_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+				<MyLink href="https://v1.jazzbutcher.com/images/cult.jpg" >
+				<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/cult_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></MyLink>
 			{expand('cult')}
 				<p />
 				Well, if things seemed weird back in February 1989,
@@ -269,8 +269,8 @@ const Letter = () =>  {
 			<p />
 			<a id="blue" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/releases/blue_front.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/blue_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+				<MyLink href="https://v1.jazzbutcher.com/images/releases/blue_front.jpg" >
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/blue_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></MyLink>
 			{expand('blue')}
 				<p />
 				Four desperate men, all too desperate to notice how
@@ -303,8 +303,8 @@ const Letter = () =>  {
 			<p />
 			<a id="bus" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/lovebus.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/lovebus_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+				<MyLink href="https://v1.jazzbutcher.com/images/lovebus.jpg" >
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/lovebus_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></MyLink>
 			{expand('bus')}
 				<p />
 				Too early for me to say, but there&apos;s a clean, simple
@@ -322,8 +322,8 @@ const Letter = () =>  {
 			<p />
 			<a id="hamburg" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/releases/hamburg_front.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/hamburg_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+				<MyLink href="https://v1.jazzbutcher.com/images/releases/hamburg_front.jpg" >
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/releases/hamburg_front_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></MyLink>
 			{expand('hamburg')}
 				<p />
 				We were all disappointed at the way this came out.  The
@@ -337,8 +337,8 @@ const Letter = () =>  {
 			<p />
 			<a id="family" />
 			<blockquote className="annotation">
-				<Link href="https://v1.jazzbutcher.com/images/western.jpg" >
-					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/western_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></Link>
+				<MyLink href="https://v1.jazzbutcher.com/images/western.jpg" >
+					<Image className="float-left release"  src="https://v1.jazzbutcher.com/images/western_250.jpg" width={expand('250')} height={expand('250')} alt="album cover" /></MyLink>
 			{expand('family')}
 				<p />
 				Yes, I believe something horrible DID happen to the

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import MyLink from '@/components/MyLink';
 import Image from 'next/image'
 import './style.css';
 import Header from '@/components/Header';
@@ -22,36 +22,36 @@ const ABCs = () =>
 			<b className="drugs_header">Contents</b>
 			<p />
 			<div className="drugs_contents">
-				<Link href="/abcs_of_drugs/intro">Introduction</Link><br />
-				<Link href="/abcs_of_drugs/intro_safety">Drugs and general safety</Link><br />
-				<Link href="/abcs_of_drugs/intro_difficulties">What to do if someone is in difficulties</Link><br />
-				<Link href="/abcs_of_drugs/intro_addiction">What is drug dependence/addiction?</Link><br />
-				<Link href="/abcs_of_drugs/intro_groups">Drug groups</Link>
+				<MyLink href="/abcs_of_drugs/intro">Introduction</MyLink><br />
+				<MyLink href="/abcs_of_drugs/intro_safety">Drugs and general safety</MyLink><br />
+				<MyLink href="/abcs_of_drugs/intro_difficulties">What to do if someone is in difficulties</MyLink><br />
+				<MyLink href="/abcs_of_drugs/intro_addiction">What is drug dependence/addiction?</MyLink><br />
+				<MyLink href="/abcs_of_drugs/intro_groups">Drug groups</MyLink>
 				<p />
 				<hr />
 				<p />
-				<Link href="/abcs_of_drugs/alcohol">Alcohol</Link><br />
-				<Link href="/abcs_of_drugs/amphetamines">Amphetamines (speed)</Link><br />
-				<Link href="/abcs_of_drugs/anabolic_steroids">Anabolic steroids</Link><br />
-				<Link href="/abcs_of_drugs/barbiturates">Barbiturates</Link><br />
-				<Link href="/abcs_of_drugs/benzodiazepines">Benzodiazepines (tranquillisers)</Link><br />
-				<Link href="/abcs_of_drugs/caffeine">Caffeine</Link><br />
-				<Link href="/abcs_of_drugs/cannabis">Cannabis</Link><br />
-				<Link href="/abcs_of_drugs/cocaine_crack">Cocaine/crack</Link><br />
-				<Link href="/abcs_of_drugs/ecstasy">Ecstasy</Link><br />
-				<Link href="/abcs_of_drugs/GHB">GHB</Link><br />
-				<Link href="/abcs_of_drugs/heroin">Heroin, methadone and other opiates</Link><br />
-				<Link href="/abcs_of_drugs/ketamine">Ketamine</Link><br />
-				<Link href="/abcs_of_drugs/LSD">LSD</Link><br />
-				<Link href="/abcs_of_drugs/mushrooms">Magic mushrooms</Link><br />
-				<Link href="/abcs_of_drugs/poppers">Nitrites (poppers)</Link><br />
-				<Link href="/abcs_of_drugs/solvents">Solvents/glues and gases</Link><br />
-				<Link href="/abcs_of_drugs/tobacco">Tobacco/nicotine</Link>
+				<MyLink href="/abcs_of_drugs/alcohol">Alcohol</MyLink><br />
+				<MyLink href="/abcs_of_drugs/amphetamines">Amphetamines (speed)</MyLink><br />
+				<MyLink href="/abcs_of_drugs/anabolic_steroids">Anabolic steroids</MyLink><br />
+				<MyLink href="/abcs_of_drugs/barbiturates">Barbiturates</MyLink><br />
+				<MyLink href="/abcs_of_drugs/benzodiazepines">Benzodiazepines (tranquillisers)</MyLink><br />
+				<MyLink href="/abcs_of_drugs/caffeine">Caffeine</MyLink><br />
+				<MyLink href="/abcs_of_drugs/cannabis">Cannabis</MyLink><br />
+				<MyLink href="/abcs_of_drugs/cocaine_crack">Cocaine/crack</MyLink><br />
+				<MyLink href="/abcs_of_drugs/ecstasy">Ecstasy</MyLink><br />
+				<MyLink href="/abcs_of_drugs/GHB">GHB</MyLink><br />
+				<MyLink href="/abcs_of_drugs/heroin">Heroin, methadone and other opiates</MyLink><br />
+				<MyLink href="/abcs_of_drugs/ketamine">Ketamine</MyLink><br />
+				<MyLink href="/abcs_of_drugs/LSD">LSD</MyLink><br />
+				<MyLink href="/abcs_of_drugs/mushrooms">Magic mushrooms</MyLink><br />
+				<MyLink href="/abcs_of_drugs/poppers">Nitrites (poppers)</MyLink><br />
+				<MyLink href="/abcs_of_drugs/solvents">Solvents/glues and gases</MyLink><br />
+				<MyLink href="/abcs_of_drugs/tobacco">Tobacco/nicotine</MyLink>
 				<p />
 				<hr />
 				<p />
-				<Link href="/abcs_of_drugs/law">Drugs and the law </Link><br />
-				<Link href="/abcs_of_drugs/law_information">Sources of help and further information </Link>
+				<MyLink href="/abcs_of_drugs/law">Drugs and the law </MyLink><br />
+				<MyLink href="/abcs_of_drugs/law_information">Sources of help and further information </MyLink>
 			</div>
 		</Drugs>
 	</main>

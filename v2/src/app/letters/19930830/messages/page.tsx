@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -25,8 +25,8 @@ const Letter = () =>
 			man.&quot;
 		<p />
 			The 1990 &quot;Live review of something else&quot; was, actually,
-			a 1988 live review of the <Link href="/gigs/1988/Aug7_2200.html">
-			Doing For The Kids concert in London.</Link>
+			a 1988 live review of the <MyLink href="/gigs/1988/Aug7_2200.html">
+			Doing For The Kids concert in London.</MyLink>
 			Barbara Ellen quite rightly hated The House
 			Of Love and that boring old pervert {expand('momus')}, slept through
 			{expand('mbv')}, ignored 
@@ -45,12 +45,12 @@ const Letter = () =>
 			that would have won a more fashionable act a great deal
 			of space, I suspect.  They did print a small photo, though.
 		<p />
-			The <Link href="/press/90melody.html"><b>MM</b> also gave
-			a positive review,</Link> and their Chris Roberts wrote
+			The <MyLink href="/press/90melody.html"><b>MM</b> also gave
+			a positive review,</MyLink> and their Chris Roberts wrote
 			a half-page feature, with photo, talking about things
-			like &quot;maverick genius&quot;.  <Link href="/press/91select.html"><b>
+			like &quot;maverick genius&quot;.  <MyLink href="/press/91select.html"><b>
 			Select magazine</b> also printed a lengthy review with
-			a photo</Link>.
+			a photo</MyLink>.
 			{expand('blue')} did not get reviewed in the weeklies, as far as
 			I know, though I did see a quota from the <b>NME</b>&apos;s
 			Simon Williams from the summer of 1991 that called me
@@ -87,26 +87,26 @@ const Letter = () =>
 		<p />
 			Your remark about headlining at the <b>Dingwalls</b>
 			thing doesn&apos;t have much substance.  In
-			<Link href="/gigs/1988/index.html">1988</Link> we played
+			<MyLink href="/gigs/1988/index.html">1988</MyLink> we played
 			37 shows in the UK and Ireland (including one at
-			<Link href="/gigs/1988/Feb27.html"><b>The Venue</b>,
-			Edinburgh</Link>), which, I suspect, were more the result
+			<MyLink href="/gigs/1988/Feb27.html"><b>The Venue</b>,
+			Edinburgh</MyLink>), which, I suspect, were more the result
 			of efforts made by our agent than the desire of one
 			crazed news editor from Paisely.  Train-spotters will
 			need to know that we also played 30 dates in Continental
 			Europe, 14 in the USA and 15 in Canada.
 			In fact, those who need to know could conceivably get
-			<Link href="/letters/94Jun24/all_the_gigs.html">a list
-			of every live JBC manifestation ever</Link> from this very
+			<MyLink href="/letters/94Jun24/all_the_gigs.html">a list
+			of every live JBC manifestation ever</MyLink> from this very
 			writer... if they really want it.
 		<p />
 			I enjoyed your remarks about the K.D. Land (fuck it,
 			start again; kd lang) photo.
 		<p />
-			<Link href="https://v1.jazzbutcher.com/images/pat_plays.jpg">
+			<MyLink href="https://v1.jazzbutcher.com/images/pat_plays.jpg">
 				<Image className="float-right" alt="not kd lang" width={300} height={300}
 					src="https://v1.jazzbutcher.com/images/pat_plays.jpg" />
-			</Link>
+			</MyLink>
 		I *know* this photograph!  The best lookalike story
 		I know concern the {expand('aero')} when they supported
 		REM on the Green tour of the UK in 1989.  At the Birmingham

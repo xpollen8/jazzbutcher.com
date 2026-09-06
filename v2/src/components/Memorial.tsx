@@ -1,11 +1,11 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import { Credit } from '@/components/GenericWeb';
 
 const MemorialGuitar = ({ link }: { link: string }) => (
 	<div className="flex flex-col min-[500px]:flex-row gap-9 items-center">
 		<div className="min-[500px]:w-1/2 justify-self-center">
-			<Link href={link}><Image src="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={300} height={300} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} /></Link>
+			<MyLink href={link}><Image src="https://v1.jazzbutcher.com/images/20211008_joolesjoyce_tribute_500.jpg" width={300} height={300} alt="Guitar on tree" style={{ border: "1px", borderRadius: "10px" }} /></MyLink>
 			<Credit g="Jooles Joyce" />
 		</div>
 		<div>
@@ -30,9 +30,9 @@ const MemorialSarah = () => (
 			</div>
 		</div>
 		<div className="w-full min-[500px]:w-1/2">
-			<Link href="https://v1.jazzbutcher.com/images/20250206_onetoysarah_gravemarker.jpg">
+			<MyLink href="https://v1.jazzbutcher.com/images/20250206_onetoysarah_gravemarker.jpg">
 				<Image src="https://v1.jazzbutcher.com/images/20250206_onetoysarah_gravemarker.jpg" width={300} height={300} alt="Grave marker" style={{ border: "1px", borderRadius: "10px" }} />
-			</Link>
+			</MyLink>
 			<Credit g="onetoysarah" u="https://www.instagram.com/r_v_ra/p/DFurSIqqJjN/?img_index=1" d="2025-02-06" />
 		</div>
 	</div>

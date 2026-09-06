@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PhotoSet from '@/components/PhotoSet';
@@ -28,15 +28,15 @@ const whittemore_miracles = [
 	{ src: "/assets/images/notebooks/DSC_3974.jpg", alt: "notebook" },
 	{ src: "/assets/images/notebooks/DSC_3975.jpg", alt: "notebook" },
 
-	{ src: "/assets/images/notebooks/notebook_lyrics_old_snakey.jpg", alt: <Link href="/lyrics/old_snakey">Old Snakey</Link> },
+	{ src: "/assets/images/notebooks/notebook_lyrics_old_snakey.jpg", alt: <MyLink href="/lyrics/old_snakey">Old Snakey</MyLink> },
 ];
 
 const duval = [
-	{ src: "/assets/images/notebooks/notebook_lyrics_sister_death.jpg", alt: <><Link href="/lyrics/sister_death">Sister Death</Link> lyrics</>, credit: 'James Duval', credit_date: '2022-08-20', body: "I just received these handwritten lyrics from Mr. Curtis E Johnson himself!" }
+	{ src: "/assets/images/notebooks/notebook_lyrics_sister_death.jpg", alt: <><MyLink href="/lyrics/sister_death">Sister Death</MyLink> lyrics</>, credit: 'James Duval', credit_date: '2022-08-20', body: "I just received these handwritten lyrics from Mr. Curtis E Johnson himself!" }
 ];
 
 const katelin = [
-	{ src: "/images/20211006/20211006_press_jericsmith.jpg", alt: <><Link href="/lyrics/drink">D.R.I.N.K.</Link> lyrics</>, body: "Max's handwritten DRINK lyrics from the 2012 Adventurer's fundraising" }
+	{ src: "/images/20211006/20211006_press_jericsmith.jpg", alt: <><MyLink href="/lyrics/drink">D.R.I.N.K.</MyLink> lyrics</>, body: "Max's handwritten DRINK lyrics from the 2012 Adventurer's fundraising" }
 ];
 
 const Notebooks = () => {

@@ -1,7 +1,7 @@
 "use client"
 
 import { use } from 'react';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -23,7 +23,7 @@ const LyricList = (props: { lyrics: any[] }) => {
 			}
 			return (<div key={key}>
 				{banner}
-				<Link className="ml-5" href={`/lyrics/${lyric?.href}`}>{lyric?.title}</Link> <span className="smalltext">{lyric?.tablature ? '(Tablature)' : ''} {lyric?.annotated ? '(Annotated)' : ''} {lyric?.is_instrumental ? '(Instrumental)' : ''} {lyric?.project ? lyric.project : ''} {lyric?.video?.length ? '(Video)' : ''} {lyric?.mp3?.includes('mp3') ? '(Audio excerpt)' : ((lyric?.mp3?.length) ? '(Audio)' : '')} {lyric?.images?.includes('notebook') ? '(Notebook)' : ''}</span> 
+				<MyLink className="ml-5" href={`/lyrics/${lyric?.href}`}>{lyric?.title}</MyLink> <span className="smalltext">{lyric?.tablature ? '(Tablature)' : ''} {lyric?.annotated ? '(Annotated)' : ''} {lyric?.is_instrumental ? '(Instrumental)' : ''} {lyric?.project ? lyric.project : ''} {lyric?.video?.length ? '(Video)' : ''} {lyric?.mp3?.includes('mp3') ? '(Audio excerpt)' : ((lyric?.mp3?.length) ? '(Audio)' : '')} {lyric?.images?.includes('notebook') ? '(Notebook)' : ''}</span> 
 			</div>)
 		})}
 	</>)

@@ -1,5 +1,5 @@
 import moment from 'moment';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
 import Tag from '@/components/Tag';
@@ -35,7 +35,7 @@ const recentNews = [
 		dt: '2025-10-08',
 		category: 'maintenance',
 		body: <>
-			All things-for-sale are now found in <Link href={`/merch`}>the new Merchandise section</Link>.
+			All things-for-sale are now found in <MyLink href={`/merch`}>the new Merchandise section</MyLink>.
 			<p />
 			JBQ trumpetist Simon Taylor is offering for sale some fetching Pat/Raoul paintings and prints there.
 		</>
@@ -45,10 +45,10 @@ const recentNews = [
 		dt: '2025-09-11',
 		category: 'maintenance',
 		body: <>
-			<Link href={`/mailinglist`}>The jbc-list archives</Link> are back from exile.
+			<MyLink href={`/mailinglist`}>The jbc-list archives</MyLink> are back from exile.
 			The missing posts from the year 2000 have been recovered.
 			All identifying email address have been scrubbed, and each jbc-list participant can
-			find <Link href={`/contributions`}>their contributions here</Link>
+			find <MyLink href={`/contributions`}>their contributions here</MyLink>
 		</>
 	},
 	{
@@ -57,7 +57,7 @@ const recentNews = [
 		category: 'maintenance',
 		body: <>
 			Want to know who played when? What your favorite musician looks like?
-			See the updated <Link href={`/conspirators`}><b>Conspirators</b></Link> section.
+			See the updated <MyLink href={`/conspirators`}><b>Conspirators</b></MyLink> section.
 		</>
 	},
 	{
@@ -66,7 +66,7 @@ const recentNews = [
 		category: 'maintenance',
 		body: <>
 			Fans of the JBC have provided many images/ticket/posters/etc over the years.
-			We acknowledge their efforts in the <Link href={`/help`}><b>Community contributions</b></Link> section.
+			We acknowledge their efforts in the <MyLink href={`/help`}><b>Community contributions</b></MyLink> section.
 			<p />
 			Lotta backend data changes - most data now comes
 			from static JSON instead of live database calls.  This will make it easier
@@ -78,7 +78,7 @@ const recentNews = [
 		dt: '2025-08-05',
 		category: 'maintenance',
 		body: <>
-			The V2 &quot;card&quot; <b><Link href="/gigs">gig search result</Link></b> look
+			The V2 &quot;card&quot; <b><MyLink href="/gigs">gig search result</MyLink></b> look
 			has been reverted to the V1 &quot;row&quot; style.
 			<p />
 			New search result feature: band names shown in the &quot;shared the bill with&quot; are now click-to-search.
@@ -95,7 +95,7 @@ const recentNews = [
 			<p />
 			Also added is the ability to search gigs by &quot;State&quot;.
 			<p />
-			There is a new section for the <b><Link href="/fma">Fishy Mansions Archives</Link></b> items
+			There is a new section for the <b><MyLink href="/fma">Fishy Mansions Archives</MyLink></b> items
 			which are being digitized as part of the Documentary efforts.
 			<p />
 			Check out the <b>Recent gig images</b> section below for gig page updates!
@@ -109,24 +109,24 @@ const recentNews = [
 		credit: 'David Whittemore',
 		body: <>
 			<b>Full show performances from David Whittemore&apos;s DAT masters of 1992 US Tour</b>
-			(the tapes NOT lost in the <Link href="/western_dat">Western Family Fiasco</Link>):
-			<p /><Link href="/gigs/1992/Apr24">1992-04-24: Athens, Georgia</Link>
-			<br /><Link href="/gigs/1992/Apr26_2000">1992-04-26: Chapel Hill, North Carolina</Link>
-			<br /><Link href="/gigs/1992/Apr28">1992-04-28: Baltimore, Maryland</Link>
-			<br /><Link href="/gigs/1992/May1">1992-05-01: Washington DC</Link>
-			<br /><Link href="/gigs/1992/May3">1992-05-03: Providence, Rhode Island</Link>
-			<br /><Link href="/gigs/1992/May5">1992-05-05: Boston, Massachusetts</Link>
-			<br /><Link href="/gigs/1992/May6_2000">1992-05-06: Montreal</Link>
-			<br /><Link href="/gigs/1992/May8">1992-05-08: Waterloo</Link>
-			<br /><Link href="/gigs/1992/May9">1992-05-09: Toronto</Link>
-			<br /><Link href="/gigs/1992/May16_2000">1992-05-16: Chicago</Link>
-			<br /><Link href="/gigs/1992/May16_1200">1992-05-16: Tower Records, Chicago</Link>
-			<br /><Link href="/gigs/1992/Jun5">1992-06-05: Los Angeles</Link>
+			(the tapes NOT lost in the <MyLink href="/western_dat">Western Family Fiasco</MyLink>):
+			<p /><MyLink href="/gigs/1992/Apr24">1992-04-24: Athens, Georgia</MyLink>
+			<br /><MyLink href="/gigs/1992/Apr26_2000">1992-04-26: Chapel Hill, North Carolina</MyLink>
+			<br /><MyLink href="/gigs/1992/Apr28">1992-04-28: Baltimore, Maryland</MyLink>
+			<br /><MyLink href="/gigs/1992/May1">1992-05-01: Washington DC</MyLink>
+			<br /><MyLink href="/gigs/1992/May3">1992-05-03: Providence, Rhode Island</MyLink>
+			<br /><MyLink href="/gigs/1992/May5">1992-05-05: Boston, Massachusetts</MyLink>
+			<br /><MyLink href="/gigs/1992/May6_2000">1992-05-06: Montreal</MyLink>
+			<br /><MyLink href="/gigs/1992/May8">1992-05-08: Waterloo</MyLink>
+			<br /><MyLink href="/gigs/1992/May9">1992-05-09: Toronto</MyLink>
+			<br /><MyLink href="/gigs/1992/May16_2000">1992-05-16: Chicago</MyLink>
+			<br /><MyLink href="/gigs/1992/May16_1200">1992-05-16: Tower Records, Chicago</MyLink>
+			<br /><MyLink href="/gigs/1992/Jun5">1992-06-05: Los Angeles</MyLink>
 			<p />
 			<b>Some other lovely older shows</b>:
-			<p /><Link href="/gigs/1989/Dec10">1989-12-10: San Juan Capistrano</Link>
-			<br /><Link href="/gigs/1991/Jun18">1991-06-18: London</Link>
-			<br /><Link href="/gigs/1998/May1">1998-05-01: Atlanta</Link>
+			<p /><MyLink href="/gigs/1989/Dec10">1989-12-10: San Juan Capistrano</MyLink>
+			<br /><MyLink href="/gigs/1991/Jun18">1991-06-18: London</MyLink>
+			<br /><MyLink href="/gigs/1998/May1">1998-05-01: Atlanta</MyLink>
 			<p />
 		</>
 	},
@@ -304,14 +304,14 @@ const recentNews = [
 	{
 		subject: "artwork: Trampling Tokyo lyrics",
 		dt: '2023-12-25',
-		body: <Link href="/releases/collaboration_trampling_tokyo"><Image src="https://v1.jazzbutcher.com/images/trampling_tokyo_negative_burn_lyrics3_250.jpg" width="250" height="250" alt="poster" /></Link>,
+		body: <MyLink href="/releases/collaboration_trampling_tokyo"><Image src="https://v1.jazzbutcher.com/images/trampling_tokyo_negative_burn_lyrics3_250.jpg" width="250" height="250" alt="poster" /></MyLink>,
 		link: '/releases/collaboration_trampling_tokyo',
 		category: 'media',
 	},
 	{
 		subject: "artwork: Cult of the Basement in-studio poster",
 		dt: '2023-12-24',
-		body: <><Link href="https://v1.jazzbutcher.com/images/releases/cult_studio_poster.jpg"><Image src="https://v1.jazzbutcher.com/images/releases/cult_studio_poster_250.jpg" width="250" height="250" alt="poster" /></Link>
+		body: <><MyLink href="https://v1.jazzbutcher.com/images/releases/cult_studio_poster.jpg"><Image src="https://v1.jazzbutcher.com/images/releases/cult_studio_poster_250.jpg" width="250" height="250" alt="poster" /></MyLink>
 		The original map of the &quot;Cult Of The Basement&quot; album, drawn up by the Conspiracy in the studio, January 1990.
 		</>,
 		link: '/releases/cult',
@@ -325,14 +325,14 @@ const recentNews = [
 	},
 	{
 		subject: "setlist: 2020-09-27",
-		body: <Link href="/gigs/2020/Sep27_2200"><Image src="https://v1.jazzbutcher.com/images/20200927/20200927_setlist_250.jpg" width="250" height="250" alt="setlist" /></Link>,
+		body: <MyLink href="/gigs/2020/Sep27_2200"><Image src="https://v1.jazzbutcher.com/images/20200927/20200927_setlist_250.jpg" width="250" height="250" alt="setlist" /></MyLink>,
 		dt: '2023-12-24',
 		link: '/gigs/2020/Sep27_2200',
 		category: 'media',
 	},
 	{
 		subject: "gig poster: 1993-12-23",
-		body: <Link href="/gigs/1993/Dec23"><Image src="https://v1.jazzbutcher.com/images/19931223/19931223_poster_250.jpg" width="250" height="250" alt="poster" /></Link>,
+		body: <MyLink href="/gigs/1993/Dec23"><Image src="https://v1.jazzbutcher.com/images/19931223/19931223_poster_250.jpg" width="250" height="250" alt="poster" /></MyLink>,
 		dt: '2023-12-23',
 		link: '/gigs/1993/Dec23',
 		category: 'media',
@@ -345,11 +345,11 @@ const recentNews = [
 		In the process, much new content was added, and everything was generally cleaned-up.
 		<p />A couple sections (the old mailing list, the &quot;conspirators&quot;) still need porting, but we wanted to deploy prior to what would have been Pat&apos;s 66th birthday.
 		<p />
-		The old/V1 site is now at <Link href="https://v1.jazzbutcher.com">v1.jazzbutcher.com</Link>
+		The old/V1 site is now at <MyLink href="https://v1.jazzbutcher.com">v1.jazzbutcher.com</MyLink>
 		<p />
 		<hr />
 		<p />
-		As a special treat, Philip Snow has <Link href='/audio/miracles_interviews'>graciously shared</Link> a few of his audio interviews with Pat
+		As a special treat, Philip Snow has <MyLink href='/audio/miracles_interviews'>graciously shared</MyLink> a few of his audio interviews with Pat
 		which served as source material for their book Miracles and Wonders.
 		<p />
 		Here is 3 hour(!) final interview (#16), which covers &apos;Highest in the Land&apos;

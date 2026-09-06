@@ -3,7 +3,7 @@
 import { use } from "react";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Tag from '@/components/Tag';
 import { isKnownMusician, AutoLinkSong } from '@/lib/defines';
 import { type HashedType, ts2URI, truncAt, pluralize } from '@/lib/utils';
@@ -52,7 +52,7 @@ const Player = ({ results }: any) => (!!results?.numResults) && <GigSearchResult
 
 const Act = ({ results }: any) => (!!results?.numResults) && <GigSearchResults results={results} banner={(results: any) => <Tag>Shared the bill</Tag> } />
 
-const AKA = ({ aliases }: any) => (!!aliases?.length) && (<><Tag>Also Known As</Tag><div className="listItem">{aliases?.map((alias: string, key: number) => <span key={key} className="break-keep outline outline-1 outline-cyan-500 m-1"> <b>AKA</b> <Link href={`/conspirators/${alias}`}>{alias}</Link> </span>)}</div></>);
+const AKA = ({ aliases }: any) => (!!aliases?.length) && (<><Tag>Also Known As</Tag><div className="listItem">{aliases?.map((alias: string, key: number) => <span key={key} className="break-keep outline outline-1 outline-cyan-500 m-1"> <b>AKA</b> <MyLink href={`/conspirators/${alias}`}>{alias}</MyLink> </span>)}</div></>);
 
 const Conspirator = ({ params }: { params?: any }) => {
 	const Params: any = use(params);

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PhotoSet from '@/components/PhotoSet';
@@ -38,9 +38,9 @@ const Letter = () =>  {
 				</div>
 				<div className="m-1">
 					<center>
-					<Link href="https://v1.jazzbutcher.com/images/paris.jpg">
+					<MyLink href="https://v1.jazzbutcher.com/images/paris.jpg">
 						<Image width={400} height={400} src="https://v1.jazzbutcher.com/images/paris.jpg" alt="paris group"/>
-					</Link>
+					</MyLink>
 					<ParsedCaption
 						image_caption="Nick, Curt, Pat, Dooj (Paris)"
 						credit_date="1994-02-17"

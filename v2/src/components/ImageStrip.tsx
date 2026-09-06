@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import { Attribution } from '@/components/GenericWeb';
 import { parseImage } from '@/lib/utils';
@@ -14,14 +14,14 @@ const ImageStrip = (props: any) => {
 			const { image, thumb='' } = parseImage(inImage);
 			const { href } = person(source) || {};
 			return image && <div key={key}>
-			<Link href={image}>
+			<MyLink href={image}>
 				<Image
 					className="drop-shadow-md"
 					alt={caption || 'album image'}
 					width={width} height={width}
 					src={thumb}
 				/>
-			</Link>
+			</MyLink>
 				{(caption) && <><i>{caption}</i><br/></>}
 				{(source) && <Attribution g={source} u={sourceurl || `/contributions/${source}`} d={sourcedate} />}
 			</div>

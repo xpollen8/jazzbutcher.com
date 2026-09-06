@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -66,7 +66,7 @@ const Letter = () =>
 		<p />
 		<blockquote>
 		We shall be playing at <b>The Boat Race</b>, Cambridge,
-		England on <Link href="/gigs/1994/Oct7.html">7th October 1994</Link>.
+		England on <MyLink href="/gigs/1994/Oct7.html">7th October 1994</MyLink>.
 		After we finish the LP, in mid-November, we are aiming
 		for a few European dates to take us up to Christmas.
 		<p />

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -30,7 +30,7 @@ const madness = [
 		description: <>
 	Unfortunately, I don&apos;t have any JBCwear (but I want some - give me a
 	source!), but here I am playing the kazoo to the D.R.I.N.K. trombone
-	solo, while driving from New Orleans to Atlanta for the <Link href='/gigs/1998/May1.html'>5/1/98 Pat&Max show.</Link>
+	solo, while driving from New Orleans to Atlanta for the <MyLink href='/gigs/1998/May1.html'>5/1/98 Pat&Max show.</MyLink>
 	I was annoying the hell out of the passenger/photographer.
 	</>
 	},

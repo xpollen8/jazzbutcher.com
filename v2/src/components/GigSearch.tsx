@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState, useTransition } from 'react';
@@ -366,7 +366,7 @@ export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: b
 			].filter((a: any) => useG?.extra?.includes(a?.type));;
 
 		return (<div key={key} className="tagClickable w-full mt-3" style={{ background: '#cceeff', border: '1px solid #777', paddingLeft: '3px' }}>
-			<Link href={ts2URI(record?.datetime)} style={{ color: '#333' }}>
+			<MyLink href={ts2URI(record?.datetime)} style={{ color: '#333' }}>
 				{types?.map((type: string, key: number) => <div key={key} className={`gig_${type}`}/>)}
 				<div style={{ background: '#ccccdd' }} > {prettyDate(record?.datetime)} </div>
 				<div className="flex justify-between">
@@ -389,7 +389,7 @@ export const templateGigs = (data: RecordType, layout: any, preventAutoExpand: b
 					</div>
 					{(poster) && <div className=""><Image alt='poster' width={100} height={100} src={poster}/></div>}
 				</div>
-			</Link>
+			</MyLink>
 		</div>)
 	}
 

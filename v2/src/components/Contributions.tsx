@@ -1,6 +1,6 @@
 "use client"
 
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import { summaryBodySearch, removeHTML } from '@/components/GenericWeb';
 import useContributions from '@/lib/useContributions';
 import { type HashedType, parseCaptionsSourcesEtc, pluralize, dateAgo, ts2URI, parseCredit } from '@/lib/utils';
@@ -67,7 +67,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 			// gather together images from the same datetime
 			return <div key={key}  className="listItem odd:bg-gray-100 border-b">
 				<PhotoSet
-				title=<Link href={href || ts2URI(datetime)}>{cleanDate(datetime)} {type} {dateAgo(added,' - ',`added: ${added} - `)}</Link>
+				title=<MyLink href={href || ts2URI(datetime)}>{cleanDate(datetime)} {type} {dateAgo(added,' - ',`added: ${added} - `)}</MyLink>
 				photos={contributions?.filter((c: any) => c?.added === added && c?.type == type && c?.datetime === datetime && c?.href === href)?.map((c: any) => {
 			return {
 				src: c?.image,
@@ -81,31 +81,31 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 		} else if (isTypeVideo(type)) {
 			return <div key={key} className="odd:bg-gray-100 border-b">
 				<EmbedMedia data={{...x}}>
-				<Link href={href} ><div className="clickItem" style={{ color: '#444', marginTop: '5px' }}>
+				<MyLink href={href} ><div className="clickItem" style={{ color: '#444', marginTop: '5px' }}>
 				<i>{pluralize(count, type, undefined, true)}</i>{' - '}
 				{(cleanDate(datetime)) ? <>
 					<b className="monospace" >{cleanDate(datetime)}</b> {summary}
 					</> : <b className="monospace" >{summary}</b>
 				}
 				{' '}{caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
-				</div></Link>
+				</div></MyLink>
 				</EmbedMedia>
 			</div>
 		} else if (isTypeAudio(type)) {
 			return <div key={key} className="odd:bg-gray-100 border-b">
 				<LinkAudio mp3={x?.audio}>
-				<Link href={href} ><div className="clickItem" style={{ color: '#444', marginTop: '5px' }}>
+				<MyLink href={href} ><div className="clickItem" style={{ color: '#444', marginTop: '5px' }}>
 				<i>{pluralize(count, type, undefined, true)}</i>{' - '}
 				{(cleanDate(datetime)) ? <>
 					<b className="monospace" >{cleanDate(datetime)}</b> {summary}
 					</> : <b className="monospace" >{summary}</b>
 				}
 				{' '}{caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
-				</div></Link>
+				</div></MyLink>
 				</LinkAudio>
 			</div>
 		} else {
-			return <div key={key} className="clickItem odd:bg-gray-100 border-b"><Link href={href} >
+			return <div key={key} className="clickItem odd:bg-gray-100 border-b"><MyLink href={href} >
 				<div className="p-1" style={{ color: '#444' }}>
 				<i>{pluralize(count, type, undefined, true)}</i>{' - '}
 				{(cleanDate(datetime)) ? <>
@@ -114,7 +114,7 @@ const IndividualContributions = ({ who, contributions, total, recent, open, just
 				}
 				{' '}{caption && `"${caption}"`} {dateAgo(added,' - ',`added: ${cleanDate(added)} - `)}
 			</div>
-			</Link></div>
+			</MyLink></div>
 		}
 	}
 

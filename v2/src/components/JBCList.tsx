@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import { type HashedType, prettyDate, dateAgo } from '@/lib/utils';
 import { notFound } from 'next/navigation';
 import messages from '@/../public/data/jbc-list.json';
@@ -20,13 +20,13 @@ const JBCListNav = ({ year = '1989', id = 'date', next, prev }: any) => {
 		const sender_selected = (id === 'sender') ? 'email_nav_selected' : '';
 		const yl = (i > 1) ? '' : `/${id}`;
 		return <LetterHeader title=<>{`jbc-list: ${year}`} - {mode}</> subhead=<>
-			{(py) && <>{' '}[<Link href={`/mailinglist/${py}${yl}`}>{py}</Link>]</>}
-			{(ny) && <>{' '}[<Link href={`/mailinglist/${ny}${yl}`}>{ny}</Link>]</>}
-			{' '}[<Link className={subject_selected} href={`/mailinglist/${year}/subject`}>By Subject</Link>]
-			{' '}[<Link className={date_selected} href={`/mailinglist/${year}`}>By Date</Link>]
-			{' '}[<Link className={sender_selected} href={`/mailinglist/${year}/sender`}>By Sender</Link>]
-			{(prev) && <>{' '}[<Link href={`/mailinglist/${prev}`}>Prev</Link>]</>}
-			{(next) && <>{' '}[<Link href={`/mailinglist/${next}`}>Next</Link>]</>}
+			{(py) && <>{' '}[<MyLink href={`/mailinglist/${py}${yl}`}>{py}</MyLink>]</>}
+			{(ny) && <>{' '}[<MyLink href={`/mailinglist/${ny}${yl}`}>{ny}</MyLink>]</>}
+			{' '}[<MyLink className={subject_selected} href={`/mailinglist/${year}/subject`}>By Subject</MyLink>]
+			{' '}[<MyLink className={date_selected} href={`/mailinglist/${year}`}>By Date</MyLink>]
+			{' '}[<MyLink className={sender_selected} href={`/mailinglist/${year}/sender`}>By Sender</MyLink>]
+			{(prev) && <>{' '}[<MyLink href={`/mailinglist/${prev}`}>Prev</MyLink>]</>}
+			{(next) && <>{' '}[<MyLink href={`/mailinglist/${next}`}>Next</MyLink>]</>}
 		</>
 		/>
 	} else {
@@ -62,7 +62,7 @@ export const JBCListing = ({ year, id = 'date' }: any) => {
 					<b>{subject}</b>
 					{subjects[subject]?.map((m: any, key: number) => {
 						return <li className="odd:bg-gray-100 border-b" key={key}>
-							{m.date.substring(0, 10)}: <Link href={`/mailinglist/${m.msgId}`}>{m.re} {m.from}</Link>
+							{m.date.substring(0, 10)}: <MyLink href={`/mailinglist/${m.msgId}`}>{m.re} {m.from}</MyLink>
 						</li>
 					})}
 				</ol>
@@ -80,10 +80,10 @@ export const JBCListing = ({ year, id = 'date' }: any) => {
 			<JBCListNav year={y} id={i} />
 			{Object.keys(senders).map((sender: string, key: number) => {
 				return <ol className="email_listing" key={key}>
-					<b><Link href={`/contributions/${sender}`}>{sender}</Link></b>
+					<b><MyLink href={`/contributions/${sender}`}>{sender}</MyLink></b>
 					{senders[sender]?.map((m: any, key: number) => {
 						return <li className="odd:bg-gray-100 border-b" key={key}>
-							{m.date.substring(0, 10)}: <Link href={`/mailinglist/${m.msgId}`}>{m.subject || '(no subject)'}</Link>
+							{m.date.substring(0, 10)}: <MyLink href={`/mailinglist/${m.msgId}`}>{m.subject || '(no subject)'}</MyLink>
 						</li>
 					})}
 				</ol>
@@ -105,7 +105,7 @@ export const JBCListing = ({ year, id = 'date' }: any) => {
 					<b>{day}</b>
 					{days[day]?.map((m: any, key: number) => {
 						return <li className="odd:bg-gray-100 border-b" key={key}>
-							<Link href={`/mailinglist/${m.msgId}`}>{m.subject || '(no subject)'}</Link>
+							<MyLink href={`/mailinglist/${m.msgId}`}>{m.subject || '(no subject)'}</MyLink>
 						</li>
 					})}
 				</ol>
@@ -152,9 +152,9 @@ const subContrib = (chunk: string, key: number) => {
 	if (s?.endsWith('}}')) {
 		const sc = s.substring(0, s.length - 2)?.trim();
 		if (sc === 'jbc-list') {
-			return <Link key={key} href={`/mailinglist`}>{sc}</Link>
+			return <MyLink key={key} href={`/mailinglist`}>{sc}</MyLink>
 		} else {
-			return <Link key={key} href={`/contributions/${sc}`}>{sc}</Link>
+			return <MyLink key={key} href={`/contributions/${sc}`}>{sc}</MyLink>
 		}
 	} else {
 		return s;
@@ -185,7 +185,7 @@ const JBCListMessage = ({ year = 1989, id = 1 }: any) => {
 		<JBCListNav year={year} id={id} prev={prevMsgId} next={nextMsgId} />
 		<div className="email">
 			Date: {prettyDate(message.date)} {dateAgo(message.date)} <br />
-			From: <Link href={`/contributions/${message.from}`}>{message.from}</Link>
+			From: <MyLink href={`/contributions/${message.from}`}>{message.from}</MyLink>
 			<br />Subject: <b>{message.subject || '(no subject)'}</b>
 			<p />
 			<div className="email_body">

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 
 import Header from '@/components/Header';
@@ -25,13 +25,13 @@ const WesternTape = () =>
 	<Header section="etc" title="Western Family Tape" />
 		<main className="etc">
 			<div className="float-left m-3">
-			<Link href="/releases/western.html"><Image
+			<MyLink href="/releases/western.html"><Image
 					src="https://v1.jazzbutcher.com/images/western_250.jpg"
-					height={250} width={250} alt="western cover"/></Link>
+					height={250} width={250} alt="western cover"/></MyLink>
 			<br />
-			<Link href="https://v1.jazzbutcher.com/images/1992/1992_WesternFamilyBroadcasting.jpg"><Image
+			<MyLink href="https://v1.jazzbutcher.com/images/1992/1992_WesternFamilyBroadcasting.jpg"><Image
 					src="https://v1.jazzbutcher.com/images/1992/1992_WesternFamilyBroadcasting_250.jpg"
-					height={250} width={250} alt="JBC broadcasting"/></Link>
+					height={250} width={250} alt="JBC broadcasting"/></MyLink>
 			</div>
 			<br />
 			{expand('family')},

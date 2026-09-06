@@ -2,7 +2,7 @@
 
 import { use } from "react";
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import useFishyMansionsArchives from '@/lib/useFishyMansionsArchives';
@@ -11,11 +11,11 @@ import Loading from '@/components/Loading';
 
 const showThing = (thing?: any) => {
 	if (typeof thing === 'string' && thing?.match(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/)) {
-		return <Link href={`/gigs/${thing}`}>{thing}</Link>
+		return <MyLink href={`/gigs/${thing}`}>{thing}</MyLink>
 	} else if (typeof thing === 'string' && thing?.includes('.jpg')) {
 		return thing.split(',').map((t: string, key: number) => {
 			const image = `/images/FM/${t}`;
-			return <Link key={key} href={image}><Image src={image} alt="pic" width={250} height={250} /></Link>
+			return <MyLink key={key} href={image}><Image src={image} alt="pic" width={250} height={250} /></MyLink>
 		});
 	} else {
 		return <i>{thing}</i>

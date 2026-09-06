@@ -1,5 +1,5 @@
 import './style.css';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 
 const Drugs = ({ data, children }: any) => {
@@ -7,7 +7,7 @@ const Drugs = ({ data, children }: any) => {
 	const { alt, src, width, height } = image || {};
 	return <div className="drugs">
 		<div style={{ background: 'red' }}>
-			<Link href="/abcs_of_drugs"><Image alt="index" src="https://v1.jazzbutcher.com/images/abcs_of_drugs/homepic.gif" width={400} height={120} /></Link>
+			<MyLink href="/abcs_of_drugs"><Image alt="index" src="https://v1.jazzbutcher.com/images/abcs_of_drugs/homepic.gif" width={400} height={120} /></MyLink>
 		</div>
 		<hr />
 		<div className="drugs_body">
@@ -36,7 +36,7 @@ const Drugs = ({ data, children }: any) => {
 		</div>
 		<hr />
 		<div className="drugs drugs_footer">
-			Produced by <Link href="http://www.bss.org" target="new">BSS</Link> to accompany <i>Drugs Uncovered</i> a season of programmes exploring drug-related issues, first shown on Channel 4 in autumn 1998<br />
+			Produced by <MyLink href="http://www.bss.org" target="new">BSS</MyLink> to accompany <i>Drugs Uncovered</i> a season of programmes exploring drug-related issues, first shown on Channel 4 in autumn 1998<br />
 			<br />
 			Writer: Peter Millson<br />
 			Editor: Paula Snyder<br />
@@ -53,7 +53,7 @@ const Drugs = ({ data, children }: any) => {
 			Or you can telephone 0990 44 66 99.<br />
 		</div>
 		<hr />
-		<Link href="/abcs_of_drugs"><Image alt="index" src="https://v1.jazzbutcher.com/images/abcs_of_drugs/abc_title.gif" width={219} height={53} /></Link>
+		<MyLink href="/abcs_of_drugs"><Image alt="index" src="https://v1.jazzbutcher.com/images/abcs_of_drugs/abc_title.gif" width={219} height={53} /></MyLink>
 	</div>
 }
 

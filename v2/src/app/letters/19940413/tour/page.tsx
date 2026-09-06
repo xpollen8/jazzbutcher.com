@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -39,7 +39,7 @@ const Letter = () =>
 		this morning, and will now be doing without sleep as
 		I march him through about two hours&apos; worth of tunes.
 		</blockquote>
-		<Link href="/gigs/1994/Feb1.html">Day 2 : Hamburg - <b>Logo</b></Link>
+		<MyLink href="/gigs/1994/Feb1.html">Day 2 : Hamburg - <b>Logo</b></MyLink>
 		<blockquote>
 		Great joy as we reach Germany and have our first proper
 		hot meal since leaving Northampton.  Our soundcheck in
@@ -60,7 +60,7 @@ const Letter = () =>
 		think we got away with murder!  Several drinks later,
 		I leave my beret in a bar and retire to bed.
 		</blockquote>
-		<Link href="/gigs/1994/Feb2.html">Day 3 : Berlin - <b>Loft</b></Link>
+		<MyLink href="/gigs/1994/Feb2.html">Day 3 : Berlin - <b>Loft</b></MyLink>
 		<blockquote>
 		Curt, having been equipped with maps of the songs on
 		the long journey to Berlin, plays a lot tighter tonight,
@@ -73,7 +73,7 @@ const Letter = () =>
 		an incredible dinner at 2:30 in the morning.  It&apos;s starting
 		to look good out here.
 		</blockquote>
-		<Link href="/gigs/1994/Feb3.html">Day 4: Bremen - <b>Roemer</b></Link>
+		<MyLink href="/gigs/1994/Feb3.html">Day 4: Bremen - <b>Roemer</b></MyLink>
 		<blockquote>
 		We had spoken too soon.  A small crowd in a vibe-free
 		club with a poor P.A. get to see the worst JBC performance
@@ -90,8 +90,8 @@ const Letter = () =>
 		<i>Disney Head</i>.  Disney Head, bloody nose...
 		and a lot in between.
 		</blockquote>
-		<Link href="/gigs/1994/Feb4.html">Day 5 : Dortmund -
-		<b>Livestation</b></Link>
+		<MyLink href="/gigs/1994/Feb4.html">Day 5 : Dortmund -
+		<b>Livestation</b></MyLink>
 		<blockquote>
 		Curt refuses to come out of his headphones until well
 		into the soundcheck.  Meanwhile, the rest of us have
@@ -111,7 +111,7 @@ const Letter = () =>
 		with an interesting bunch of people from Muenster.
 		Cool.
 		</blockquote>
-		<Link href="/gigs/1994/Feb5.html">Day 6 : Bielefeld - <b>Kamp</b></Link>
+		<MyLink href="/gigs/1994/Feb5.html">Day 6 : Bielefeld - <b>Kamp</b></MyLink>
 		<blockquote>
 		It&apos;s a beautiful morning in Dortmund Beer City as we
 		pull in to buy gas.  As the bus pulls away, a small and
@@ -128,8 +128,8 @@ const Letter = () =>
 		the Elektronische Handbefeuchter, an item which looks
 		suspiciously like a kettle.  Perhaps you had to be there.
 		</blockquote>
-		<Link href="/gigs/1994/Feb6.html">Day 7 : Frankfurt -
-		<b>Nachtleben</b></Link>
+		<MyLink href="/gigs/1994/Feb6.html">Day 7 : Frankfurt -
+		<b>Nachtleben</b></MyLink>
 		<blockquote>
 		On the way to Frankfurt I realise - quite by chance -
 		that tonight will be my hundredth show in Germany.  The
@@ -165,7 +165,7 @@ const Letter = () =>
 		pizzas, watch &quot;Married With Children&quot; in German, and
 		introduce Michael to the joys of Gluhwein.
 		</blockquote>
-		<Link href="/gigs/1994/Feb8.html">Day 9 : Geneva - <b>L&apos;Usine</b></Link>
+		<MyLink href="/gigs/1994/Feb8.html">Day 9 : Geneva - <b>L&apos;Usine</b></MyLink>
 		<blockquote>
 		On the Swiss border, Michael and I are incapable of avoiding
 		the local cigarette called &quot;Marocaine&quot;.  On the assumption
@@ -188,8 +188,8 @@ const Letter = () =>
 		will fill up with teenage Canadian boys, on a sports
 		tour.  I hide in my room.
 		</blockquote>
-		<Link href="/gigs/1994/Feb9.html">Day 10 : Fribourg -
-		<b>Cafe Des Grandes Places</b></Link>
+		<MyLink href="/gigs/1994/Feb9.html">Day 10 : Fribourg -
+		<b>Cafe Des Grandes Places</b></MyLink>
 		<blockquote>
 		This was always going to be a weird one.  Rather than
 		put up with a day off in a expensive Switzerland, we
@@ -213,8 +213,8 @@ const Letter = () =>
 		and would later win him the Best Dressed Man Of The Tour
 		award.
 		</blockquote>
-		<Link href="/gigs/1994/Feb10.html">Day 11 : Zurich -
-		<b>Palais Extra</b></Link>
+		<MyLink href="/gigs/1994/Feb10.html">Day 11 : Zurich -
+		<b>Palais Extra</b></MyLink>
 		<blockquote>
 		The drives in Switzerland are really short!  All the
 		more time to enjoy our excellent hotel, although the
@@ -233,7 +233,7 @@ const Letter = () =>
 		who appeared to be paid to finish off the food that we
 		couldn&apos;t manage ourselves.  Bit of a night, son.
 		</blockquote>
-		<Link href="/gigs/1994/Feb11.html">Day 12 : Bern - <b>I.S.C.</b></Link>
+		<MyLink href="/gigs/1994/Feb11.html">Day 12 : Bern - <b>I.S.C.</b></MyLink>
 		<blockquote>
 		Yet another short trip to beautiful Bern.  The house
 		soundman plays Sting at the soundcheck until Curt explains
@@ -248,8 +248,8 @@ const Letter = () =>
 		who has modeled his appearance on Coppola&apos;s Dracula,
 		we are still having fun.
 		</blockquote>
-		<Link href="/gigs/1994/Feb12.html">Day 13 : Moudon -
-		<b>Anciennes Prisons</b></Link>
+		<MyLink href="/gigs/1994/Feb12.html">Day 13 : Moudon -
+		<b>Anciennes Prisons</b></MyLink>
 		<blockquote>
 		At last!  The JBC got to jail!  Pausing only to offload
 		a huge rider backlog of fruit on the bears of Bern, we
@@ -284,8 +284,8 @@ const Letter = () =>
 		individual appears at Nick&apos;s door, asking if he has anything
 		with which he can wipe his needles!
 		</blockquote>
-		<Link href="/gigs/1994/Feb15.html">Day 16 : Toulouse -
-		<b>Le Bikini</b></Link>
+		<MyLink href="/gigs/1994/Feb15.html">Day 16 : Toulouse -
+		<b>Le Bikini</b></MyLink>
 		<blockquote>
 		I get downstairs to find the JBC in a state of high excitement.
 		Apparently the old lady in charge of the breakfast cafe
@@ -309,8 +309,8 @@ const Letter = () =>
 		and have a big old party with The French.  Much bus-surfing
 		in the hotel car park, then bed.
 		</blockquote>
-		<Link href="/gigs/1994/Feb16.html">Day 17 : Clermont-Ferrand -
-		<b>Club 3000</b></Link>
+		<MyLink href="/gigs/1994/Feb16.html">Day 17 : Clermont-Ferrand -
+		<b>Club 3000</b></MyLink>
 		<blockquote>
 		The drive to Clermont-Ferrand is long and winding, over
 		many hills.  At a place called Cahors Kathie saves us
@@ -334,11 +334,11 @@ const Letter = () =>
 		so we split.  We have already received our invitation
 		to return for a festival later in the year.
 		</blockquote>
-		<Link href="/gigs/1994/Feb17.html">Day 18 : Paris - <b>Arapaho</b></Link>
+		<MyLink href="/gigs/1994/Feb17.html">Day 18 : Paris - <b>Arapaho</b></MyLink>
 		<blockquote>
-		<Link href="https://v1.jazzbutcher.com/images/paris.jpg">
+		<MyLink href="https://v1.jazzbutcher.com/images/paris.jpg">
 			<Image className="float-right m-3" width={expand('250')} height={expand('250')} alt="[image]"
-			src="https://v1.jazzbutcher.com/images/paris.jpg" /></Link>
+			src="https://v1.jazzbutcher.com/images/paris.jpg" /></MyLink>
 		{expand('loony')} has been busy; as
 		soon as we arrive in the venue he is on the phone: &quot;I&apos;ve
 		made you a backdrop - can you pick it up?&quot;  It&apos;s huge,
@@ -351,8 +351,8 @@ const Letter = () =>
 		find the hotel - very nice, but a little discreet, non?
 		<p className="clear_float" />
 		</blockquote>
-		<Link href="/gigs/1994/Feb18.html">Day 19 : Dordrecht -
-		<b>Odd Balls</b></Link>
+		<MyLink href="/gigs/1994/Feb18.html">Day 19 : Dordrecht -
+		<b>Odd Balls</b></MyLink>
 		<blockquote>
 		Paris was, officially, the last date of the tour, but
 		we were having too much fun to stop there, so we&apos;d asked
@@ -369,8 +369,8 @@ const Letter = () =>
 		fact, that I think it rather alarmed our Dutch hosts.
 		I don&apos;t think they believed we had it in us.  Well, now they know!
 		</blockquote>
-		<Link href="/gigs/1994/Feb19.html">Day 20 : Breda -
-		<b>Zinetti</b></Link>
+		<MyLink href="/gigs/1994/Feb19.html">Day 20 : Breda -
+		<b>Zinetti</b></MyLink>
 		<blockquote>
 		After a long sleep we drive the 30-odd kilometers to
 		Breda and join Marthy and his band, The Four One And
@@ -400,13 +400,13 @@ const Letter = () =>
 		<blockquote>
 		<ul>
 		<li>Best Show :
-			<Link href="/gigs/1994/Feb16.html">
-			Clermont-Ferrand</Link> (runners-up:
-			<Link href="/gigs/1994/Feb17.html">Paris</Link>,
-			<Link href="/gigs/1994/Feb4.html">Dortmund</Link>,
-			<Link href="/gigs/1994/Feb10.html">Zurich</Link>)</li>
+			<MyLink href="/gigs/1994/Feb16.html">
+			Clermont-Ferrand</MyLink> (runners-up:
+			<MyLink href="/gigs/1994/Feb17.html">Paris</MyLink>,
+			<MyLink href="/gigs/1994/Feb4.html">Dortmund</MyLink>,
+			<MyLink href="/gigs/1994/Feb10.html">Zurich</MyLink>)</li>
 		<li>Worst Show :
-			<Link href="/gigs/1994/Feb3.html">Bremen</Link></li>
+			<MyLink href="/gigs/1994/Feb3.html">Bremen</MyLink></li>
 		<li>Best Song : {expand('sis')}</li>
 		<li>Worst Song : n/a</li>
 		<li>Best Dinner : Kalash, Clermont-Ferrand</li>

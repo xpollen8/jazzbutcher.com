@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { expand } from '@/lib/defines';
@@ -20,7 +20,7 @@ const Letter = () =>
 		I don&apos;t know what will happen to them.  Alan is also
 		planning sessions with {expand('dj')} and others.
 		<p />
-		I have a solo gig on <Link href="/gigs/1993/Oct28.html">28th October at <b>The Forum</b></Link> (formerly the <b>Town
+		I have a solo gig on <MyLink href="/gigs/1993/Oct28.html">28th October at <b>The Forum</b></MyLink> (formerly the <b>Town
 		& Country Club</b>) in London.  I&apos;m opening for {expand('cale')}.
 		I&apos;m on at eight o&apos;clock.  I&apos;m very afraid.  Please come
 		and help me out.  Help!
@@ -29,11 +29,11 @@ const Letter = () =>
 		<p />
 		The JBC (currently standing at Fish, {expand('dooj')}, {expand('paul')} and {expand('richard')} as {expand('lix')} has returned to his Real Group, {expand('strange')})
 		have two gigs in October.
-		We will be at <b>The Racehorse</b> in Northampton on <Link href="/gigs/1993/Oct22.html">Friday 22nd October</Link>.
+		We will be at <b>The Racehorse</b> in Northampton on <MyLink href="/gigs/1993/Oct22.html">Friday 22nd October</MyLink>.
 		Support act is Spittle Rattle, and extraordinary folk-goth-blues
 		outfit.  Then we will be playing at the festival in <b>St.
-		Quentin</b> in Northen France on <Link href="/gigs/1993/Oct30.html">Saturday 30th October</Link>.
-		In November we will be playing dates in <Link href="/gigs/1993/Nov19.html">Paris</Link>, <Link href="/gigs/1993/Nov13.html">Colmar</Link> and elsewhere in France.
+		Quentin</b> in Northen France on <MyLink href="/gigs/1993/Oct30.html">Saturday 30th October</MyLink>.
+		In November we will be playing dates in <MyLink href="/gigs/1993/Nov19.html">Paris</MyLink>, <MyLink href="/gigs/1993/Nov13.html">Colmar</MyLink> and elsewhere in France.
 		<p />
 		Touring in central Europe has been put back to January/February.
 		The Germans have, however, now issued {expand('sweet')} as a single,
@@ -44,8 +44,8 @@ const Letter = () =>
 		immediate bootleg cassette deluge.
 		<p />
 		<Image className="float-right" width={250} height={250} alt="[signature]" src="https://v1.jazzbutcher.com/images/19931019/93Oct19_sig.gif" />
-		Somebody said something about a second <Link
-		href="/gigs/bootlegs.html#petermurphy">Black Eg</Link> album.
+		Somebody said something about a second <MyLink
+		href="/gigs/bootlegs.html#petermurphy">Black Eg</MyLink> album.
 		If you send enough money NOW I may still be in a position
 		to do something about preventing this AWFUL THING from
 		happening.

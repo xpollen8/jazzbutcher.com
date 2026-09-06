@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Tag from '@/components/Tag';
@@ -28,7 +28,7 @@ const Conspirators = () => {
 				}
 				return <div key={key}>
 					{banner}
-					<Link className="ml-5" href={href}>{name}</Link> {(roles?.length) && <> - {roles.join(', ')}</>}
+					<MyLink className="ml-5" href={href}>{name}</MyLink> {(roles?.length) && <> - {roles.join(', ')}</>}
 				</div>
 			})}
 		</main>

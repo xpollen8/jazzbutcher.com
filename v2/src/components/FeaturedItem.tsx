@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import { parseImage, parseDomain, linkInternal, linkExternal } from '@/lib/utils';
 import { expand } from '@/lib/defines';
@@ -25,9 +25,9 @@ const FeaturedItem = ({ link, image, alt='thumbnail', title, buy, buy_title, lab
 				<div className={className} />
 				{!!(useImage?.length && useThumb?.length) &&
 					<div className="float-right text-center">
-					<Link href={link || useImage}>
+					<MyLink href={link || useImage}>
 						<Image className="border border-slate-600 ml-2 rounded-md" src={useThumb} width={200} height={200} alt={alt} />
-					</Link>
+					</MyLink>
 					<div className="smalltext">{(typeof label === 'string') ? <div style={{ width: '200px' }} className="grid grid-cols-1">{label?.split(',').map((x: string, key: number) => {
 						const exp = expand(x);
 						return <div className="break-keep" key={key}>{(typeof exp === 'string') ? removeHTML(exp) : exp}<br /></div>

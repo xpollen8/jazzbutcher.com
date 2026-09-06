@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 
 const MakeSimpleURI = ({ strikeout=false, uri='', text, aux, children, className }: {
 	strikeout?: boolean
@@ -13,12 +13,12 @@ const MakeSimpleURI = ({ strikeout=false, uri='', text, aux, children, className
 	return (
 		<div key={key} className={className}>
 		{(uri) ?
-			<Link href={useUri} style={{ display: 'inline-block', width: '100%', borderBottom: 'none' }}>
+			<MyLink href={useUri} style={{ display: 'inline-block', width: '100%', borderBottom: 'none' }}>
 				<div className={`clickDiv hover:outline bg-white ${strikeClass}`}>
 					{text}
 					{(aux) && <>{' - '}<span className="smalltext">{aux}</span></>}
 				</div>
-			</Link>
+			</MyLink>
 			:
 			<div className="clickDiv bg-white">
 				{text}

@@ -1,6 +1,6 @@
 import { use, Suspense } from "react";
 import Image from 'next/image';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
@@ -18,7 +18,7 @@ return (<>
 		<MakeSimpleURI uri='/press/20040512_wilson_about.html' text="Wilson Explainer" aux='(2002)'>
 			I started the Wilson project fondly imagining that it would be a solo thing
 		<div className="listItem">
-		<Link href="/images/20030927_DaveCoverly_Wilson.jpg"><Image unoptimized src="/images/20030927_DaveCoverly_Wilson_250.jpg" width={250} height={250} alt="Dave Coverly cartoon" /></Link>
+		<MyLink href="/images/20030927_DaveCoverly_Wilson.jpg"><Image unoptimized src="/images/20030927_DaveCoverly_Wilson_250.jpg" width={250} height={250} alt="Dave Coverly cartoon" /></MyLink>
 		<Credit g="Dave Coverly" u="https://speedbump.com" d="2003-09-27" />
 		</div>
 		</MakeSimpleURI>

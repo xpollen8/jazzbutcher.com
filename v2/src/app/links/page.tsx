@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MakeSimpleURI from '@/components/MakeSimpleURI';
@@ -69,7 +69,7 @@ const links = [
 			say that Roger left the band shortly thereafter and has not been heard from
 			again...)
 			<p />
-			When we played <Link href="/gigs/1992/Jun5">The Roxy in 1992</Link> the Black Watch opened for us, and J&apos;Anna
+			When we played <MyLink href="/gigs/1992/Jun5">The Roxy in 1992</MyLink> the Black Watch opened for us, and J&apos;Anna
 			joined the JBC with her violin for a version of Racheland. So now you know
 			the best musician we ever worked with.
 			<p />
@@ -116,7 +116,7 @@ const links = [
 			<p />
 			The Warlocks are a fine bunch of drone-rockers from Los Angeles. (The NME thinks they come from San
 			Francisco. They do not.)
-			They actually <Link href="/gigs/1999/Sep9.html">opened for the JBC at the Troubadour on 9/9/99</Link>,
+			They actually <MyLink href="/gigs/1999/Sep9.html">opened for the JBC at the Troubadour on 9/9/99</MyLink>,
 			but we didn&apos;t get to see much of them that night.
 			Last week they came to NN1 and {personLink('sonic')} and I went to see them. They have really come on, and
 			anybody who likes Spacemen 3 is going to dig this band. Sonic even joined them for a couple of
@@ -155,8 +155,8 @@ const links = [
 		children:
 			<>
 			A young man from
-			California asked me to contribute to a charity compilation album in memory <Link href="http://mill.net/dumyhead">of his
-			unfortunate girlfriend</Link> who died real young. The money goes to help disadvantaged and abused kids with art projects.
+			California asked me to contribute to a charity compilation album in memory <MyLink href="http://mill.net/dumyhead">of his
+			unfortunate girlfriend</MyLink> who died real young. The money goes to help disadvantaged and abused kids with art projects.
 			<p />
 			I contributed a track, recorded on Curtis&apos; computer.
 			It&apos;s a version of &quot;Indian Summer&quot; as written by the Beat Happening, and

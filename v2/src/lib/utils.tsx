@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import moment from 'moment';
 import songMap from './songMap';
@@ -33,8 +33,8 @@ export const truncate = (str: string, len: number) => {
 }
 export const htmlString = (x: any) => x ? <span dangerouslySetInnerHTML={{ __html: x }} /> : '';
 
-export const linkExternal = (href: string, text?: string | React.ReactElement): React.ReactNode => (href?.includes('@') ? text : <Link target="_new" href={autoHREF(href)}>{' '}{text || href}</Link>)
-export const linkInternal = (href: string, text?: string | React.ReactElement): React.ReactNode => (href?.includes('@') ? text : <Link href={href}>{' '}{text || href}</Link>)
+export const linkExternal = (href: string, text?: string | React.ReactElement): React.ReactNode => (href?.includes('@') ? text : <MyLink target="_new" href={autoHREF(href)}>{' '}{text || href}</MyLink>)
+export const linkInternal = (href: string, text?: string | React.ReactElement): React.ReactNode => (href?.includes('@') ? text : <MyLink href={href}>{' '}{text || href}</MyLink>)
 
 export const parseYear = (datetime?: string): number => (datetime && parseInt(datetime.substring(0, 4), 10)) || 0;
 export const parseMonth = (datetime: string): number => parseInt(localDate(datetime)?.substring(5, 5 + 2), 10);

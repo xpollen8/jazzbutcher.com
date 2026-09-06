@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -60,8 +60,8 @@ const Letter = () =>
 		{expand('bwatch')} come from L.A.  We have got to know them
 		pretty well since we met on tour in 1989.  They&apos;re good
 		people.  They opened for us at <b>The Roxy</b> in
-		<Link href="/gigs/1992/Jun5.html">June
-		1992</Link>.  J&apos;Anne Jacobi, their violin vixen, played with
+		<MyLink href="/gigs/1992/Jun5.html">June
+		1992</MyLink>.  J&apos;Anne Jacobi, their violin vixen, played with
 		us that night on {expand('rachel')}, which REALLY dragged out the
 		{expand('vu')} influences, as you can imagine.  I&apos;m glad they gave
 		me a credit.  I&apos;d be gladder if they gave me a copy of
@@ -74,7 +74,7 @@ const Letter = () =>
 		<br />John Langley - Drums, ex {expand('aero')}, brother of Gerard,
 		all round leading human being.
 		<br />Patrick Duff - Singer, not really as miserable as all that...
-		<br />{expand('joea')}- Bass, ex-{expand('levit')}, played all the bass on <Link href="/releases/blue.html">Condition Mandrax.</Link>
+		<br />{expand('joea')}- Bass, ex-{expand('levit')}, played all the bass on <MyLink href="/releases/blue.html">Condition Mandrax.</MyLink>
 		<br />{expand('jules')} - Guitar, played
 		lead with the JBC on 1990 tour of USA and Canada.
 		</blockquote>

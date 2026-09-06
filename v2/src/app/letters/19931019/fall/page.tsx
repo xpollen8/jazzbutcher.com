@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -43,8 +43,8 @@ const Letter = () =>
 			record, and later we did quite a few dates supporting
 			them.  No one ever had sex with Brix (honest!), but she
 			did punch Mr Jones in the head once.  Coming off stage
-			at a show in <Link href="/gigs/1985/Mar7.html"><b>Hammersmith
-			Town Hall</b> in March &apos;85</Link>, {expand('owen')} was a touch peeved
+			at a show in <MyLink href="/gigs/1985/Mar7.html"><b>Hammersmith
+			Town Hall</b> in March &apos;85</MyLink>, {expand('owen')} was a touch peeved
 			about the fact that he&apos;d just had to play for forty five
 			minutes with no monitor mix worthy of the name, and,
 			in disgust, KICKED open the door to what he thought was

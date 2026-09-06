@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -11,9 +11,9 @@ const Artwork = () =>
 	<main>
 		<div className="flex flex-wrap justify-around border pt-3">
 			<div className="m-1">
-				<Link href="https://adjective.com/images/eg/pmurphy.jpg">
+				<MyLink href="https://adjective.com/images/eg/pmurphy.jpg">
 					<Image width={400} height={400} alt="[image]" src="https://adjective.com/images/eg/pmurphy.jpg" />
-				</Link>
+				</MyLink>
 			</div>
 			<div className="min-w-[50%]">
 				<LetterHeader title="Extracted Images:" />

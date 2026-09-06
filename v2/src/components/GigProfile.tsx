@@ -2,7 +2,7 @@
 
 import { use } from 'react';
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Image from 'next/image';
 import EmbedMedia from '@/components/EmbedMedia';
 import PhotoSet from '@/components/PhotoSet';
@@ -59,9 +59,9 @@ const GigMedia = ({ data }: any) => {
 
 	const useDate = (data?.credit_date === '0000-00-00 00:00:00') ? '' : data?.credit_date;
 	return (<div className="image drop-shadow-md" style={{ width: width / 1.45 }}>
-		<Link href={image}>
+		<MyLink href={image}>
 			<Image unoptimized src={thumb} width={width / 1.5} height={height / 1.5} alt={alt} className="max-w-md" />
-		</Link>
+		</MyLink>
 		<ParsedCaption {...data} credit_date={useDate} />
 	</div>)
 }
@@ -263,15 +263,15 @@ const GigDetails = ({ gig, joins }: any) => {
 		<blockquote className="listItem" style={{ border: '1px solid', background: '#eeffee' }}>
 			<div className="flex flex-wrap gap-1">
 				{(gig?.datetime) && doIt('Date', dateDiff(gig.datetime, ''))}
-				{(gig?.ticketweb) && doIt('Tickets', <Link href={gig.ticketweb}>{parseDomain(gig.ticketweb)}</Link>)}
+				{(gig?.ticketweb) && doIt('Tickets', <MyLink href={gig.ticketweb}>{parseDomain(gig.ticketweb)}</MyLink>)}
 				{doIt('Project', gig.title)}
 				{doIt('Blurb', gig.blurb)}
-				{doIt('Venue', <Link href={`/gigs?f=venue&q="${encodeURIComponent(gig.venue)}"`}>{gig.venue}</Link>)}
-				{(gig?.eventweb) && doIt('Venue Website', <Link href={gig.eventweb}>{parseDomain(gig.eventweb)}</Link>)}
+				{doIt('Venue', <MyLink href={`/gigs?f=venue&q="${encodeURIComponent(gig.venue)}"`}>{gig.venue}</MyLink>)}
+				{(gig?.eventweb) && doIt('Venue Website', <MyLink href={gig.eventweb}>{parseDomain(gig.eventweb)}</MyLink>)}
 				{(gig?.city) && doIt('Location', <>
 					{htmlString(gig?.address)}{' '}
-					{(gig?.city && <Link href={`/gigs?f=city&q="${encodeURIComponent(gig.city)}"`}>{htmlString(gig?.city)}</Link>)}{' '}
-					{(gig?.state && <Link href={`/gigs?f=state&q="${encodeURIComponent(gig.state)}"`}>{htmlString(gig?.state)}</Link>)}{' '}
+					{(gig?.city && <MyLink href={`/gigs?f=city&q="${encodeURIComponent(gig.city)}"`}>{htmlString(gig?.city)}</MyLink>)}{' '}
+					{(gig?.state && <MyLink href={`/gigs?f=state&q="${encodeURIComponent(gig.state)}"`}>{htmlString(gig?.state)}</MyLink>)}{' '}
 					{gig?.country ?? ''} {gig?.postalcode ?? ''}
 				</>)}
 				{(gig?.phone) && doIt('Telephone', gig.phone)}
@@ -290,8 +290,8 @@ const ExtraNav = ({ gig }: { gig: any }) => {
 	if (gig?.prev && gig?.next) {
 		const prev = gig?.prev[0]?.datetime;
 		const next = gig?.next[0]?.datetime;
-		const prevGig = <Link href={ts2URI(prev)}><PrevArrow className="arrows" /></Link>;
-		const nextGig = <Link href={ts2URI(next)}><NextArrow className="arrows" /></Link>;
+		const prevGig = <MyLink href={ts2URI(prev)}><PrevArrow className="arrows" /></MyLink>;
+		const nextGig = <MyLink href={ts2URI(next)}><NextArrow className="arrows" /></MyLink>;
 		return <> {prevGig} gig {nextGig} </>
 	}
 }

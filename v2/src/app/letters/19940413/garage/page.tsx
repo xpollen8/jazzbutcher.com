@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LetterHeader from '@/components/LetterHeader';
@@ -8,7 +8,7 @@ const Letter = () =>
 <>
 	<Header section='letters' title={ [ '13Apr94;;/letters/19940413', 'Garage' ] } />
 	<main>
-		<LetterHeader title="UPSTAIRS AT THE GARAGE, LONDON" subhead=<Link href="/gigs/1994/Mar10.html">10th MARCH 1994</Link> />
+		<LetterHeader title="UPSTAIRS AT THE GARAGE, LONDON" subhead=<MyLink href="/gigs/1994/Mar10.html">10th MARCH 1994</MyLink> />
 		<blockquote>
 		A new &quot;acoustic&quot; venue in the heart of fashionable Islington
 		plays host to something which my agent calls THE JAZZ
@@ -50,7 +50,7 @@ const Letter = () =>
 		<p />
 		The next manifestation of the Jazz Butcher Acoustic Conspiracy
 		will be at The Mean Fiddler Acoustic Room in London
-		on <Link href="/gigs/1994/Apr8.html">Friday 8th April 1994.</Link>
+		on <MyLink href="/gigs/1994/Apr8.html">Friday 8th April 1994.</MyLink>
 		</blockquote>
 	</main>
 	<Footer />

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -22,7 +22,7 @@ const Gallery = () =>
 <>
 	<Header section="gallery" title="Mick Mercer" />
 	<main>
-		<PhotoSet photos={mick_mercer} title="Mick Mercer - THE JAZZ BUTCHER BAND ON MANOEUVRES, 1984" description=<>JB (R.I.P.), Max Eider and David J, in town for a little Zigzag magazine tête-à-tête. The Butch, you’ll be amazed to learn, was a little the worse for wear.<p />My delightful Jazz Butcher photobook <Link href="https://www.lulu.com/shop/mick-mercer/the-jazz-butcher-photo-book/paperback/product-1wz469zj.html">HERE</Link><br /></> credit="Mick Mercer" credit_url="https://mickmercer.substack.com/p/the-jazz-butcher-band-on-manoeuvres" credit_date="2023-03-06" />
+		<PhotoSet photos={mick_mercer} title="Mick Mercer - THE JAZZ BUTCHER BAND ON MANOEUVRES, 1984" description=<>JB (R.I.P.), Max Eider and David J, in town for a little Zigzag magazine tête-à-tête. The Butch, you’ll be amazed to learn, was a little the worse for wear.<p />My delightful Jazz Butcher photobook <MyLink href="https://www.lulu.com/shop/mick-mercer/the-jazz-butcher-photo-book/paperback/product-1wz469zj.html">HERE</MyLink><br /></> credit="Mick Mercer" credit_url="https://mickmercer.substack.com/p/the-jazz-butcher-band-on-manoeuvres" credit_date="2023-03-06" />
 	</main>
 	<Footer />
 </>

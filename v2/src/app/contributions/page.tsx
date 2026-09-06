@@ -1,6 +1,6 @@
 "use client"
 
-import Link from 'next/link';
+import MyLink from '@/components/MyLink';
 import Header from '@/components/Header';
 import Tag from '@/components/Tag';
 import Loading from '@/components/Loading';
@@ -34,7 +34,7 @@ const ContributionsTable = ({ data, total, onClick, sortBy, sortOrder }: any) =>
 			{data?.map((obj: HashedType, key: number) => {
 				const { person, total, image, text, av, min, max } = obj;
 				return <tr key={key} className="odd:bg-gray-100 text-end">
-					<td className="pl-2 text-start border-b"> <Link href={`/contributions/${encodeURIComponent(person)}`}><b>{truncate(person, 40)}</b></Link> </td>
+					<td className="pl-2 text-start border-b"> <MyLink href={`/contributions/${encodeURIComponent(person)}`}><b>{truncate(person, 40)}</b></MyLink> </td>
 					<td className="text-end border-b"> {total} </td>
 					<td className="text-end border-b"> {image} </td>
 					<td className="text-end border-b"> {text} </td>

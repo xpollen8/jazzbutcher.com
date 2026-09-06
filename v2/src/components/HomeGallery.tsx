@@ -354,7 +354,7 @@ const HomeGalleryItem = ({ item }: any) => {
 		<Tag><b>{item.title}</b> : <span className="date">{d}</span></Tag>
 		<div style={{ marginLeft: '4em', marginRight: '4em' }}>
 			<MyLink href={item?.href || ''}>
-				<Image src={item?.poster} width='1500' height='500' alt={item?.title} objectFit='contain' />
+				<Image src={item?.poster} width='1500' height='500' alt={item?.title} />
 			</MyLink>
 		</div>
 		{(item?.story) && <div className="py-10">

@@ -309,7 +309,7 @@ const apiData = async (path: string, args?: any, formData?: any): Promise<Hashed
 			case 'feedback_delete': { return await apiDataFromDataServer(path, args); }
 			case 'feedback_by_page': { return await apiDataFromDataServer('feedback', args); }
 			case 'recent_feedback': {
-					const feedbacks = await apiDataFromDataServer('feedbacks', JSON.stringify(args));
+					const feedbacks = await apiDataFromDataServer('feedbacks');
 					return findRecent(feedbacks, ['dtcreated'], {});
 			}
 

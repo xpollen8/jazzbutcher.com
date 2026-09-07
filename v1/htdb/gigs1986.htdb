@@ -204,6 +204,9 @@
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		posters=/images/19860313/19860313_poster.jpg$$
 			nothingelseon;;https://twitter.com/nothingelseon/status/1302170870580826112;;2020-09-05
+		---
+		/images/19860313/19860313_poster2.jpg$$
+			James Duval;;;;2026-09-07
 
 	)}
 
@@ -538,6 +541,7 @@
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 
+
 	)}
 
 #define	Aug2.html()
@@ -584,6 +588,11 @@
 	${gigHeader(
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+		with=${literalizeCommas(
+			Gary Heffern, The Cunninghams
+		)},
+		posters=/images/19860810/19860810_poster.jpg$$
+			James Duval;;;;2026-09-07
 
 	)}
 

@@ -50,9 +50,10 @@ const gallery = [
 		body: <MyLink href="/projects/sumosonic">Project Page</MyLink>
   },
 	{
-    src: "/images/stranger_tractors/Strangers.jpg",
+    src: "/images/stranger_tractors/Tractor_curt.jpg",
 		credit_date: "1994",
 		alt: "Stranger Tractors",
+		credit: "Curtis E. Johnson",
 		body: <MyLink href="/projects/stranger_tractors">Project Page</MyLink>
   },
 	{
@@ -95,10 +96,16 @@ const gallery = [
 		alt: "BigTime Promo",
   },
 	{
-    src: "/images/promo/Promotional_GlassRecords_Hallway.jpg",
+    src: "/images/promo/Promotional_GlassRecords_SoppyPussycats_JoolsJoyce.jpg",
 		credit_date: "1984",
 		alt: "Glass Records Promo",
-		credit: "Mitch Jenkins",
+		credit: "Jules Joyce",
+  },
+	{
+    src: "/images/promo/Promotional_GlassRecords_Hallway_JoolsJoyce.jpg",
+		credit_date: "1984",
+		alt: "Glass Records Promo",
+		credit: "Jules Joyce",
   },
 ];
 

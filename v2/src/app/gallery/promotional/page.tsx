@@ -99,13 +99,13 @@ const gallery = [
     src: "/images/promo/Promotional_GlassRecords_SoppyPussycats_JoolsJoyce.jpg",
 		credit_date: "1984",
 		alt: "Glass Records Promo",
-		credit: "Jules Joyce",
+		credit: "Jooles Joyce",
   },
 	{
     src: "/images/promo/Promotional_GlassRecords_Hallway_JoolsJoyce.jpg",
 		credit_date: "1984",
 		alt: "Glass Records Promo",
-		credit: "Jules Joyce",
+		credit: "Jooles Joyce",
   },
 ];
 

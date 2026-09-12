@@ -113,7 +113,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	gallery: { parent: 'jbc', title: 'Images', summary: "Selected candids and live pictures"  },
 	'gallery/photosets': { parent: 'gallery', title: 'Interesting Photosets' },
 	'gallery/promotional': { parent: 'gallery', title: 'Promotional Materials' },
-	//'gallery/tours': { parent: 'gallery', title: 'Tour Posters' },
+	'gallery/tours': { parent: 'gallery', title: 'Tour Posters' },
 	fma: { parent: 'pat', title: 'Fishy Mansions Archives', summary: "Items from Pat Fish's Estate" },
 	fishy_mansions: { parent: 'pat', title: 'Fishy Mansions Livestreams', summary: "COVID-era livestreams" },
 	writings: { parent: 'pat', title: 'The Butcher Writes', summary: 'Online, offline' },

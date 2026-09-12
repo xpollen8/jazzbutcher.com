@@ -5,6 +5,11 @@ import MyLink from '@/components/MyLink';
 
 const gallery = [
 	{
+    src: "/images/19850628/19850628_poster.jpg",
+		credit_date: "1985",
+		alt: "Glass gig poster",
+  },
+	{
     src: "/images/releases/fire_wasted/JazzButcherGroupBW1.jpg",
 		credit_date: "1984",
 		alt: "With David J.",

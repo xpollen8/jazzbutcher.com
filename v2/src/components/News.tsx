@@ -20,6 +20,15 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: `Photo Gallery Enhancements`,
+		dt: '2026-09-07',
+		category: 'media',
+		link: `/gallery`,
+		body: <>
+			Added a <i>Promotional Materials</i> section and re-organized <i>Interesting Photosets</i>.
+		</>
+	},
+	{
 		subject: `Philip Snow/Pat Fish 'Miracles and Wonders' interview: Wildlife, Bath of Bacon, Scandal in Bohemia, Sex and Travel`,
 		dt: '2025-11-29',
 		category: 'media',

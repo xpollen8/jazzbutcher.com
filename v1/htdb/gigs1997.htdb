@@ -70,7 +70,7 @@
 		who=${literalizeCommas(
 			${pat}, ${max}
 		)},
-		setlists= /images/19970911/19970911_setlist1.jpg;;${literalizeCommas(The actual setlist)}$$
+		setlists= /images/19970911/19970911_setlist1.jpg;;${literalizeCommas(I found my copy of the setlist, ripped out of Pat's notebook and handed directly to me after Pat & Max finished the gig. It's two sides-- one with the official set list and one abortive list on the other side.)}$$
 			/images/19970911/19970911_setlist2.jpg;;${literalizeCommas(The not-used setlist)}$$
 			Doc;;;;2026-09-19
 		,

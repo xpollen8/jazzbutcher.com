@@ -656,6 +656,16 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
+	photosets=
+		/images/19851026/19851026_JazzButcher_JohnEley_1.jpg$$
+		/images/19851026/19851026_JazzButcher_JohnEley_2.jpg$$
+		/images/19851026/19851026_JazzButcher_JohnEley_3.jpg$$
+		/images/19851026/19851026_JazzButcher_JohnEley_4.jpg$$
+		/images/19851026/19851026_JazzButcher_JohnEley_5.jpg$$
+		/images/19851026/19851026_JazzButcher_JohnEley_6.jpg$$
+		/images/19851026/19851026_JazzButcher_JohnEley_7.jpg$$
+		/images/19851026/19851026_JazzButcher_JohnEley_8.jpg$$
+		John Eley;;;;2026-10-05
 
 	)}
 

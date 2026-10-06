@@ -82,6 +82,7 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul} )},
+	blurb=${literalizeCommas(benefit for Artists For Animals)},
 
 	)}
 
@@ -96,6 +97,10 @@
 	${gigHeader(
 
 	who=${literalizeCommas( ${pat}, ${kizzy}, ${larry}, ${paul}, ${green} )},
+	with=${literalizeCommas(
+		Happy Mondays
+	)},
+
 	posters=/images/19890503/19890503_poster.jpg$$
 		;;;;2023-12-23
 

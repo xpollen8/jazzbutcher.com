@@ -138,7 +138,9 @@
 	posters=/images/19840602/19840602_poster.jpg$$
 		/images/19840602/19840602_poster_reverse.jpg$$
 		Andrew Brooksbank;;;;2024-11-21
-	)}
+		,
+	pat=${literalizeCommas(From Pat's letter to Andrew Brooksbank, dated 1988-09-22:"ROADRUNNER: Filmed by Mitch.. The live stuff is from a show in Northampton Lings Theatre, 2nd June 1984..")}$$Andrew Brooksbank;;;;2026-10-05,
+	)},
 
 #define	Jun11.html()
 	${gigHeader(

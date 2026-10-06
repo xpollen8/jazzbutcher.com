@@ -1964,6 +1964,18 @@ subhead=(20 December 1957 – 5 October 2021),
 		source=http://louderthanwar.com/the-butch-is-back-the-return-of-the-jazz-butcher)}
 
 	${addPress(type=interview,
+		url=${jbc_press}/198609_press_CRFM_KRAK.html,
+		thumb=${jbc_images}/198609_press_CRFM_KRAK,
+		publication=CRFM KRAK,
+		issue=Vol 1 No 2,
+		title=Pretty Butch,
+		source=https://archive.org/details/cfrmkrak_1986-09/page/n1/mode/2up?q=%22Jazz+Butcher%22,
+		location=Montreal\, QU\, Canada,
+		credit=Paul Bisson,
+		dtadded=2026-10-05,
+		dtpublished=1986-09)}
+
+	${addPress(type=interview,
 		url=${jbc_press}/200505_apollox.html,
 		publication=Apollox Magazine,
 		title=Fish heads,
@@ -15219,6 +15231,317 @@ postscript – for guitar players (nerds) only after the show I asked max way to
 as I was standing near the stage I can attest to the fact that max plugged directly into a fender deville 4 x 10 amp. fiddling with a couple of the knobs during the show. the chorus effect made no appearance, apparently banished to a bygone era.	<p />
 	)})}
 	${jbc_footer}
+#live	endif
+
+#define	198609_press_CRFM_KRAK.html
+#live	if (getval(page) = 198609_press_CRFM_KRAK.html)
+	${extractPress(
+		body=${literalizeCommas(
+<div class="iview_intro">
+The Jazz Butcher, otherwise known
+as Pat Fish (Butch), Maximillian Elder,
+Felix and Mr. Jones made their North
+American debut July 22 at Business to
+a patient audience that had waited 'til
+afer midnight for Butch and his Sikkorskis
+from Hell to take the stage.
+<p/>
+Halling from Northhamptonehire,
+England and touring on the heels of
+the release of Bloody Nonsense, their
+first lp on a domestic label, the Butcher
+played a strong set of well-crafted, witty
+pop tunes which ranged in subject
+from alcoholism to the story of a
+homocidal dentist. As an encore they
+did a song entirety in French, with
+tongue firmnly in cheek. The Sikkorskis
+are a rather reserved bunch, but Butch
+looks like he's having more fun than
+human being should be allowed.
+<p/>
+I had the pleasure of speaking with
+Butch the next day and found him to an
+immensely ertertaining, intelligent individual.
+<p/>
+The following is an excerpt from our chat.
+</div>
+
+<div class="iview_q">
+KRAK: What did you think of your first
+performance in North America last night?
+
+</div>
+<div class="iview_a">
+J.B.: Lovely. You get into a country
+you've never been to before an you
+never know what's going to happen.
+We weren't playing at our very
+best, I'm afraid. We had been up st
+8:00 am in Boston and didn't get
+out until after 2:30 p.m., thanks to a
+number of bureaucrats down there.
+We weren’t in the best of conditions
+when we arrived, but under the circumstances
+we were delighted.
+The audience was a nice bunch of people.
+
+</div>
+<div class="iview_q">
+KRAK: I was just curious to know how
+the name "Jazz Butcher" came
+about, end especially the Sikkorskis
+fom Hell, the name of the rhythm section.
+
+</div>
+<div class="iview_a">
+J.B.: The name is always a great
+disappointment to people when I
+tell them how it came about. The
+truth of the matter is that I had a
+friend called Mark and we liked sitting
+around in bars making up stupid names
+for groups. We would come up wih such things
+as: Panama guns. Satan’s Submarines,
+Victor Ravioli and his Jumping Vermicelli,
+and in this pile of old drag was the
+Jazz Butcher.
+<p />
+We imagined the Jazz Butcher as
+being black person, 150 pounds 
+wih no teeth. Sort of Bo Diddley
+from Hell figure. Six monthe later I
+started writing silly songs and I felt I
+needed a name to hang them on. I
+decided on the Jazz Butcher, quite accidentally.
+<p />
+The Sikkorskis from Hell was in
+spired in 1983 when a Sikkorski
+helicopter crashed into the English
+Channel. My friend Rolo (formerly
+bassist with the Jazz Butcher, now
+with the Woodentops) and I were
+just raving it up and we had this
+idea of these awful heavy metal
+albums with these sort of gothic
+covers saying soemthing like
+"Abomination from Outer Space".
+We just envisaged these Sikkorskis
+from Hell with big teeth and flames
+coming out: but really, I just like
+messing around with sily names
+for groups.
+
+</div>
+<div class="iview_q">
+KRAK: Deapite the name "Jazz Butcher",
+I was wondering if you liked
+jazz because some of your songs
+have a jazzy feel to them.
+
+</div>
+<div class="iview_a">
+J.B. Some of the songs do have that
+feel, but it dosen't really mean
+anything. Sometimes you get people saying do you play jazz? And we say no. We don’t hand out bits
+of meat between songs either.
+Basically, we're just a pop group made up
+of four vegetarians just happen to be called the "Jazz Butcher".
+
+</div>
+<div class="iview_q">
+KRAK: You have said that you find the
+whole idea of being on stage, being
+applauded as well as being paid to
+travel around rather silly. You also
+mentioned the pop music isn't really
+that important and that there are
+better things to think about. First,
+why do you find being on stage,
+etc., silly; and second, what are
+those important things?
+
+</div>
+<div class="iview_a">
+J.B.: That's a fair question, isn't it. I
+don't really find it silly. I mean, I
+love this stuff and I love the whole
+thing about pop music; but you
+have to remember that the whole
+thing is only there because there
+are teenagers running around with
+more money than they know what
+to do with. Pop music, after all, is
+like excess weighr on a society; you
+don’t need it to function. We do
+become aware that this is all rather
+strange. It's just the four of us and I
+think it's healthy to keep sight of
+the absurdity of it all. These people
+who take themselves so seriously
+and think they are doing something
+so important should be reminded
+that they're only there because someone
+thinks they can make
+money out of dumb teenagers.
+
+</div>
+<div class="iview_q">
+KRAK: Bands such as U2 do take their
+music and the message very
+seriously, How do you feel about
+these groups who can be so passionate
+about the message they're
+delivering?
+
+
+
+</div>
+<div class="iview_a">
+J.B.: We aleo take our music dead
+seriously and we address serious
+issues, But, unlike U2, we don't run
+around posturing as soldiers waving
+our guitars around like they
+were rifles, and we don’t have
+religious experiences on stage
+either. What we have on stage is
+fun making pop music; and we sing
+about sertous things. But I think it's
+a question of attitude. You just
+can't get inflated. Pop music is like
+a great big balloon full of hot air and
+we're running around with a couple
+of knitting needles.
+
+</div>
+<div class="iview_q">
+KRAK: One writer once said that your
+songs reflect a multi-dimensional
+love-hate relationship with rock's
+rich tapestry. And in the Jonathan
+Richman classic Roadrunner you
+cover there is a line that goes "I'm
+at war with modern music". Obviously
+your brand of pop music
+isn't conventional. What aspects of
+modem music would you say the
+"Jazz Butcher" is at war with?
+
+</div>
+<div class="iview_a">
+J.B.: For a start these big egos that go
+running around; and also the sort of
+commercialism (for want of a better
+word) that’s happening. The word
+doesn't bring about my full loathing
+for this, but there are some people
+who slag groups off for being commercial
+when what they mean is
+popular, That's fine if you want a
+pop group to hug to your bosom
+and you don't want them to make
+money. Your pop group won't live if
+people don't hear it.
+<p />
+I hate the idea of groups starting
+up and saying we are going to play
+to these people, we're going to
+wear these clothes and we're going
+to make this noise.
+I that is truly loathsome.
+<p />
+This group began by accident and I think
+that is reflected in the fact that if we were
+out to make and address a certain
+market we wouldn't look or sound
+the way we do. We're just incredibly lucky
+having started by accident and being
+at the point where we have free paid holidays.
+<p />
+One thing I object to are groups
+that flirt with ideas they don’t fully
+understand. There are, for instance,
+very talented people like, say, Billy Bragg
+who can talk politics in a three minute pop song
+that makes you weep.
+<p />
+I'm all for him. One of the great talents. On
+the other hand you get a bunch of
+dressed up ninnies like Depeche
+Mode singing. “let's play master
+and servant’. For them to be fooling
+around with S & M imagery
+when they have an audience of
+twelve yeer old schoo! kids is quite
+embarrassing, frankly.
+
+</div>
+<div class="iview_q">
+KRAK: You have said that you approach
+music like being in toyshop
+where you can mess around with
+things. Sometimes the toys break;
+sometimes they don't. Obviously
+you take risks and will not stick to a
+formula as some bands do. What if,
+by some bizarre turn of events, he
+Jazz Butcher becomes big? Would
+the Jazz Butcher remain the Jazz
+Butcher?
+
+</div>
+<div class="iview_a">
+J.B.: I think we would. I don't know
+what !'d do about interview
+schedules. (laugh) I don't think it
+would bother us. We'd probably
+make quite good pop stars; we're
+all quite old, literate and bloody-minded
+I don’t think we're the type
+to be manoeuvered into wearing
+spandex suits or riding motor bikes
+on stage. Obviously we don't go
+out looking for success, but we
+wouldn't mind it. If no one was
+listening, we'd still be doing this at
+home in our living rooms which is
+what we do at home, anyway. For
+us, we regard this all as some gift
+from God. "Whoopee, look at all
+these people who like us and give
+us money. Thank you, Thank you!"
+I know that sounds naive to the
+point of being a lie, but it isn't it's
+just the way I see it. I'm delighted.
+This is the best job in the world.
+</div>
+
+
+
+<div class="iview_outro">
+Before I said good-bye and left the
+Jazz Butcher to his grilled cheese
+sandwich, I asked him what he
+thought about the fact that American
+critics described him as Lloyd Cole
+meets Jonathan Richman meets Iggy
+Pop. He said a nasty word about
+American critics and went on to say
+that he dosen’t like being compared to
+Lloyd Cole though he likes him (a bit).
+He also told me thar there would be a
+new album released in October. By
+then, maybe, just maybe, the Jazz Butcher
+will be a bit bigger, you'll want to
+own their albums (which you should,
+already) and you won't mise them the
+next time they're in town. Got that?
+<p />
+—Interview conducted by Paul Bisson
+</div>
+		)}
+	)}
 #live	endif
 
 #define	2014_louderthanwar.html

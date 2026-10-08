@@ -1066,8 +1066,6 @@
 			${pat} solo
 	<br><a href="${jbc_gigs}/1989/Oct14.html">1989-Oct-14</a>	The Falcon${LO}
 			${pat}, ${larry}, ${paul}, ${richard}
-	<br><a href="${jbc_gigs}/1989/Oct24.html">1989-Oct-24</a>	The Falcon${LO}
-			${pat} solo
 	<br><a href="${jbc_gigs}/1989/Nov3.html">1989-Nov-3</a>	Maxwell's, Hoboken, New Jersey${USA}
 			${pat}, ${larry}, ${paul}, ${richard}
 	<br><a href="${jbc_gigs}/1989/Nov4.html">1989-Nov-4</a>	930 Club, Washington D.C.${USA}

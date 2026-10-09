@@ -1,16 +1,16 @@
-#define	Nov1.html()
+#define	Oct31.html()
 	${gigHeader(
-		who=${literalizeCommas( ${pat}, ${max} )},
+		who=${literalizeCommas( ${pat}, ${max}, ${louis} )},
 	)}
 
 #define	Dec1.html()
 	${gigHeader(
-		who=${literalizeCommas( ${pat}, ${max} )},
+		who=${literalizeCommas( ${pat}, ${max}, ${louis} )},
 	)}
 
 #define	Dec31.html()
 	${gigHeader(
-		who=${literalizeCommas( ${pat}, ${max} )},
+		who=${literalizeCommas( ${pat}, ${max}, ${louis} )},
 	)}
 
 #define	page_requested	${${page}()}

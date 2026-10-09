@@ -1986,6 +1986,17 @@ subhead=(20 December 1957 – 5 October 2021),
 		dtadded=2017-07-30,
 		dtpublished=2005-05)}
 
+	${addPress(type=gig,
+		url=${jbc_press}/19950406_press_leveildepontaudemer.html,
+		thumb=${jbc_images}/19950406_press_leveildepontaudemer;;Cathimini;;;;2026-10-09,
+		publication=L'Éveil de Pont-Audemer,
+		title=Ça déménage avec le group "The Jazz Butcher"!,
+		location=Pont-Audemer\, France,
+		credit=Cathimini,
+		datetime=1995-04-04,
+		dtadded=2026-10-09,
+		dtpublished=1995-04-06)}
+
 	${addPress(type=interview, person=alex_green,
 		url=${jbc_press}/1995_apollox_alex_green.html,
 		publication=Apollox Magazine,

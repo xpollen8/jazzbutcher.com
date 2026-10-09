@@ -1,13 +1,22 @@
+#define	riffs[1]	riff_1.mp3
+#define	riffs[2]	D.R.I.N.K.
+#define	riffs[3]	It has to be you
+#define	riffs[4]	riff_4.mp3
+#define	riffs[5]	riff_5.mp3
+#define	riffs[6]	Who loves you now?
+#define	riffs[7]	The Black Dog
+#define	riffs[8]	riff_8.mp3
+#define	riffs[9]	riff_9.mp3
+#define	riffs[10]	riff_10.mp3
 #define	index.html
-Max Eider website "riffs" (circa 2011)
-<hr/>
-${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_1.mp3)}
-${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_2.mp3)}
-${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_3.mp3)}
-${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_4.mp3)}
-${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_5.mp3)}
-${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_6.mp3)}
-${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_7.mp3)}
-${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_8.mp3)}
-${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_9.mp3)}
-${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_10.mp3)}
+<h1>Max Eider website "riffs" (circa 2011)</h1>
+<div style="display: flex; flex-wrap: wrap; text-align: center; gap: 5px;">
+#live	while(r = riffs[*])
+	<div style="border: 1px solid; padding: 5px;">
+#live	if (getval(riffs[${r}]) != mp3)
+		<b>${riffs[${r}]}</b><br />
+#live	endif
+		${linkAudio(mp3=${jbc_audio}/EiderRiffs/riff_${r}.mp3)}
+	</div>
+#live	endwhile
+</div>

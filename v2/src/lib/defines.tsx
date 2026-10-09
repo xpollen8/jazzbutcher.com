@@ -80,6 +80,7 @@ export const gerard = linkSearch({ name: "Gerard Langley" });
 export const gould = linkPerson({ href: 'greenwood_goulding', name: "Greenwood Goulding" });
 export const louis = linkPerson({ href: "louis", name: "Louis Leroi" });
 export const anti = linkPerson({ href: "anti", name: "The Antichrist" });
+export const ramon = linkPerson({ href: "ramon", name: "Ramon Destine" });
 export const green = linkPerson({ href: "alex_green", name: "Alex Green" });
 export const hask = linkPerson({ href: "kevin_haskins", name: "Kevin Haskins" });
 export const hend = linkPerson({ href: "dave_henderson", name: "Dave Henderson" });
@@ -1087,10 +1088,10 @@ const	people: HashedType = {
 	green: { name: "Alex Green" },
 	hask: { name: "Kevin Haskins", aliases: [ "Kevin" ] },
 	louis: { name: "Louis Leroi" },
-	anti: { name: "Mark Fiddes", aliases: [ "The Antichrist" ] },
+	anti: { name: "Mark Fiddes", aliases: [ "The Antichrist", "Ramon Destine" ] },
 	hend: { name: "Dave Henderson" },
 	hitch: { name: "Robyn Hitchcock", act: true },
-	hook: { name: "Paul Hookham" },
+	hook: { name: "Paul Hookham", role: [ 'drums' ] },
 	iain: { name: "Iain O'Higgins", aliases: [ "Iain", "O'Higgins" ], role: [ "live soundman" ] },
 	indge: { name: "Alastair Indge", role: [ "photography" ] },
 	is: { name: "Ian Sturgess" },

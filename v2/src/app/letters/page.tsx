@@ -9,7 +9,7 @@ import MakeSimpleURI from '@/components/MakeSimpleURI';
 export const toDavidWhittemore = {
 	name: 'David Whittemore',
 	description: `
-				Just prior to gaining Internet access for himself, Pat would update the website&apos;s maintainer the old-fashioned way: through type-written correspondence.
+				Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.
 				Pat's letters to David bootstrapped the jazzbutcher.com website contents.
 	`,
 	letters: [

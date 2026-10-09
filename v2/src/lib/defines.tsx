@@ -78,6 +78,8 @@ export const gab = linkPerson({ href: "gabriel_turner", name: "Gabriel Turner" }
 export const garofalo = linkPerson({ href: "steve_garofalo", name: "Steve Garofalo" });
 export const gerard = linkSearch({ name: "Gerard Langley" });
 export const gould = linkPerson({ href: 'greenwood_goulding', name: "Greenwood Goulding" });
+export const louis = linkPerson({ href: "louis", name: "Louis Leroi" });
+export const anti = linkPerson({ href: "anti", name: "The Antichrist" });
 export const green = linkPerson({ href: "alex_green", name: "Alex Green" });
 export const hask = linkPerson({ href: "kevin_haskins", name: "Kevin Haskins" });
 export const hend = linkPerson({ href: "dave_henderson", name: "Dave Henderson" });
@@ -1084,6 +1086,8 @@ const	people: HashedType = {
 	gould: { name: "Greenwood Goulding" },
 	green: { name: "Alex Green" },
 	hask: { name: "Kevin Haskins", aliases: [ "Kevin" ] },
+	louis: { name: "Louis Leroi" },
+	anti: { name: "Mark Fiddes", aliases: [ "The Antichrist" ] },
 	hend: { name: "Dave Henderson" },
 	hitch: { name: "Robyn Hitchcock", act: true },
 	hook: { name: "Paul Hookham" },

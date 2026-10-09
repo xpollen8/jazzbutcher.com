@@ -28,7 +28,30 @@
 		)},
 		pat=${literalizeCommas(
 			The French schoolkids' gig!
-		)}
+		)},
+		photosets=
+			/images/19950404/19950404_JazzButcher_Cathimini_15.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_21.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_27.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_48.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_16.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_22.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_28.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_49.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_17.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_23.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_29.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_50.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_18.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_24.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_30.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_19.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_25.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_31.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_20.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_26.jpg$$
+			/images/19950404/19950404_JazzButcher_Cathimini_32.jpg$$
+		Cathimini;;;;2026-10-09
 	)}
 
 #define	Jul11.html()

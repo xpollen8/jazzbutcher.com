@@ -161,7 +161,7 @@
 	<p>
 	These shows, which were almost entirely acoustic also
 	featured the shadowy figure of The Antichrist, who performed
-	as Ramon Destine (with ${max}
+	as ${ramon} (with ${max}
 	on guitar; it was Ramon who first uttered the words "Take
 	it, Max... "), the Rockin' Belgians and Terence Walpole,
 	a deranged poet later to find recording fame with ${eg}.
@@ -186,7 +186,7 @@
 	"gig" together.  This is where it really starts ...
 	<hr>
 	<br><a href="${jbc_gigs}/1982/Feb20.html">1982-Feb-20</a>	Merton College, Oxford${UK}
-			${pat}, Ramon Destine, ${at}, Chris Rudd, ${owen}
+			${pat}, ${ramon}, ${at}, Chris Rudd, ${owen}
 	<br><a href="${jbc_gigs}/1982/Jun27.html">1982-Jun</a>	Private Party, Oxford${UK}
 			${pat}, ${max}, Louis
 	<br><a href="${jbc_gigs}/1982/Jun12.html">1982-Jun-12</a>	Black Lion, ${NH}
@@ -250,7 +250,7 @@
 	<br><a href="${jbc_gigs}/1984/Jan8.html">1984-Jan-8</a>	Derngate Centre, ${NH}
 			${pat}, ${max},Ady Tilley,Tim
 	<br><a href="${jbc_gigs}/1984/Jan27.html">1984-Jan-27</a>	City Polytechnic${LO}
-			${pat}, ${max}, Ramon Destine
+			${pat}, ${max}, ${ramon}
 	<br><a href="${jbc_gigs}/1984/Feb3.html">1984-Feb-3</a>	The Rock Garden${LO}
 			${pat}, ${max}, ${owen}, Louis
 	<br><a href="${jbc_gigs}/1984/Feb27.html">1984-Feb-27</a>	Chez Nonne${LO}

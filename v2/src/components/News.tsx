@@ -26,7 +26,7 @@ const recentNews = [
 		link: `/letters`,
 		body: <>
 			Added several scans of letters Pat had sent to David J, a couple to James Duval,
-			and added a placeholder for the planned substantial Andrew Brooksbanks collection.
+			and added a placeholder for the planned substantial Andrew Brooksbank collection.
 		</>
 	},
 	{

@@ -14,14 +14,10 @@ const Home = (): React.ReactNode =>
 		<center>
 			<NotebookHero />
 		</center>
-		<div className="flex flex-col min-[750px]:flex-row gap-1">
-			<div className="w-full min-[750px]:w-1/2">
-				<OnThisDay />
-			</div>
-			<div className="w-full min-[750px]:w-1/2">
-				<MostRecentNews />
-				<RecentUpdates />
-			</div>
+		<div>
+			<OnThisDay />
+			<MostRecentNews />
+			<RecentUpdates />
 		</div>
 	</main>
 	<Footer />

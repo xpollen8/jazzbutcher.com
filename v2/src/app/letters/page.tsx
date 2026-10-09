@@ -50,10 +50,10 @@ const letters = [
 	toAndrewBrooksbank,
 ];
 
-export const letterMeta = (meta: any, key: number) => {
+export const letterMeta = (meta: any) => {
 	const { name, description, letters } = meta;
 	return (
-		<div key={key} style={{ border: '1px solid black', background: '#efefef', padding: '.5em' }}>
+		<div style={{ border: '1px solid black', background: '#efefef', padding: '.5em' }}>
 			<h1 className='tag'>Letters to {name}</h1>
 			{description}
 			<p />
@@ -79,7 +79,7 @@ const Letters = () =>
 			</>
 		/>
 		<div style={{ display: 'grid', gap: '1em' }}>
-			{letters.map(letterMeta)}
+			{letters.map((l, key) => <div key={key}>{letterMeta(l)}</div>)}
 		</div>
 	</main>
 	<Footer />

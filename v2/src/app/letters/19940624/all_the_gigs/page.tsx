@@ -1805,10 +1805,6 @@ const Letter = () =>
 		<p className="ml-20 -mt-1 mb-3">
 			{expand('pat')}, {expand('larry')}, {expand('paul')}, {expand('richard')}
 			</p>
-		<MyLink href="/gigs/1989/Oct24.html">1989-Oct-24</MyLink>	The Falcon, London, England
-		<p className="ml-20 -mt-1 mb-3">
-			{expand('pat')} solo
-			</p>
 		<MyLink href="/gigs/1989/Nov3.html">1989-Nov-3</MyLink>	Maxwell&apos;s, Hoboken, New Jersey, USA
 		<p className="ml-20 -mt-1 mb-3">
 			{expand('pat')}, {expand('larry')}, {expand('paul')}, {expand('richard')}

@@ -33,20 +33,30 @@ export const toJamesDuval = {
 	],
 };
 
-const toAndrewBrooksbank = {
+export const toAndrewBrooksbank = {
 	name: 'Andrew Brooksbank',
 	description: `coming soon`,
 };
 
-const toDavidJ = {
+export const toDavidJ = {
 	name: 'David J',
-	description: `coming soon`,
+	letters: [
+		{ uri: "/letters/DavidJ/19840106", text: "1984-01-06" },
+		{ uri: "/letters/DavidJ/19840111", text: "1984-01-11" },
+		{ uri: "/letters/DavidJ/19840126", text: "1984-01-26" },
+		{ uri: "/letters/DavidJ/19840307", text: "1984-03-07" },
+		{ uri: "/letters/DavidJ/19840402", text: "1984-04-02" },
+		{ uri: "/letters/DavidJ/19850312", text: "1985-03-12" },
+		{ uri: "/letters/DavidJ/19860203", text: "1986-02-03" },
+		{ uri: "/letters/DavidJ/19970504", text: "1997-05-04", aux: "mentions upcoming gigs with The Purelove" },
+		{ uri: "/letters/DavidJ/undated", text: "un-dated", aux: "fun drawings on lined notebook paper" },
+	],
 };
 
 const letters = [
 	toDavidWhittemore,
-	toJamesDuval,
 	toDavidJ,
+	toJamesDuval,
 	toAndrewBrooksbank,
 ];
 

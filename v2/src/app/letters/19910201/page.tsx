@@ -6,9 +6,9 @@ import PhotoSet from '@/components/PhotoSet';
 import { personLink } from '@/lib/defines';
 
 const letter = [
-  { src: '/images/letters/DavidWhittemore/19910201_DavidWhittemore_LetterFromPatFish/19910201_DavidWhittemore_LetterFromPatFish_envelope.jpg', alt: 'The envelope' },
-  { src: '/images/letters/DavidWhittemore/19910201_DavidWhittemore_LetterFromPatFish/19910201_DavidWhittemore_LetterFromPatFish_1.jpg' },
-  { src: '/images/letters/DavidWhittemore/19910201_DavidWhittemore_LetterFromPatFish/19910201_DavidWhittemore_LetterFromPatFish_2.jpg' },
+  { src: '/images/letters/DavidWhittemore/19910201/19910201_DavidWhittemore_LetterFromPatFish_envelope.jpg', alt: 'The envelope' },
+  { src: '/images/letters/DavidWhittemore/19910201/19910201_DavidWhittemore_LetterFromPatFish_1.jpg' },
+  { src: '/images/letters/DavidWhittemore/19910201/19910201_DavidWhittemore_LetterFromPatFish_2.jpg' },
 ]
 
 const Letter = () => 
@@ -142,7 +142,7 @@ const Letter = () =>
 		Northampton, finds typewriters DEAD INTERSTING.
 		</p>
 		<Image width={456} height={52} alt="[signature]" src="https://v1.jazzbutcher.com/images/19910201/91Feb1_sig.gif" />
-		<PhotoSet title='The Letter' photos={letter} pdf='/images/letters/DavidWhittemore/19910201_DavidWhittemore_LetterFromPatFish/19910201_DavidWhittemore_LetterFromPatFish.pdf' description="600 DPI scan of Pat's letter to David Whittemore, received 1991-02-01" credit='David Whittemore' credit_date='2026-10-08' />
+		<PhotoSet title='The Letter' photos={letter} pdf='/images/letters/DavidWhittemore/19910201/19910201_DavidWhittemore_LetterFromPatFish.pdf' description="600 DPI scan of Pat's letter to David Whittemore, received 1991-02-01" credit='David Whittemore' credit_date='2026-10-08' />
 	</main>
 	<Footer />
 </>

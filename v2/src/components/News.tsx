@@ -20,6 +20,16 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: `Letters From Pat - major updates`,
+		dt: '2026-10-09',
+		category: 'media',
+		link: `/letters`,
+		body: <>
+			Added several scans of letters Pat had sent to David J, a couple to James Duval,
+			and added a placeholder for the planned substantial Andrew Brooksbanks collection.
+		</>
+	},
+	{
 		subject: `Photo Gallery Enhancements`,
 		dt: '2026-09-07',
 		category: 'media',

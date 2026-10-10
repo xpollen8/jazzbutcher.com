@@ -18340,6 +18340,72 @@ As you can see, I have my finger very much on the pulse.
 #live	endif
 
 
+#define	19950406_press_leveildepontaudemer.html
+#live	if (getval(page) = 19950406_press_leveildepontaudemer.html)
+	${extractPress(
+		body=${literalizeCommas(
+DU ROCK AU COURGE CURIE 
+Ça déménage avec le groupe "The Jazz Butcher"! 
+<p />
+"The Jazz Butcher" dans les coulisses du théâtre: pas un groupe triste 
+<p />
+
+On appelle ça un P.A.E
+(Projet d'Action Educatif)
+dans le milieu scolaire, et il
+peut parfois déboucher, comme
+mardi dernier au théâtre
+municipal, sur la venue d'u
+ groupe de musique britannique.
+"The Jazz Butcher", littéralement "les bouchers du jazz",
+qui ne sont pas d'ailleurs des inconnus du monde du rock,
+ont ainsi débarqué en France, à l'appel du collège Pierre et Marie Curie,
+pour un concert unique en son genre en prélude à leur tournée européenne.
+<p />
+Incroyable n'est-il pas, même si pour la plupart des Pont-Audemériens "The Jazz Butcher" n'a jamais atteint la 
+notorité de Michel Sardou ou Jacques Brel, c'était un miniévénement dans la cité des tanneurs.
+<p />
+C'est d'ailleurs pour la sortie de leur dixième album, "Illuminate", que le groupe anglais se présentait
+à un public constitué de 650 collégiens volontaires et de quelques invités. Tout cela grâce à M. Leroux, conseiller d'éducation et photographe à ses heures, puisque c'est en collaborant à certaines pochettes de la formation britannique qu'il avait réussi ce tour de force.
+<p />
+Et le projet éducatif me direz-vous ? Il était bien présent, et depuis quelques mois, car, avec les professeurs 
+d'anglais du collège, les élèves avaient potassé les paroles du groupe. Et pas seulement pour les reprendre en choeur le jour du concert !
+<p />
+De plus, dans le hall d'entrée de l'établissement, une exposition du photographe, Lucien Borderline, était présentée sur le thème du "jazz butcher".
+<p />
+Organisé par le foyer socio-éducatif, cet après-midi donnait aussi sa chance à un groupe rouennais, "Candy Lies", en avant-première. Avec "The Jazz Butcher", à la frontière du Velvet Underground et de la musique soul du Memphis préhistorique, le théâtre a vibré. Dans tous les sens du terme... 
+<p />
+Les collégiens de Curie ont apprécié cet après-midi récréatif 
+
+<hr />
+ <h1>ROBOTIC ENGLISH TRANSLATION</h1>
+
+FROM ROCK TO CURIE SQUASH
+<p />
+It’s a blast with the band "The Jazz Butcher"!  
+<p />
+"The Jazz Butcher" backstage at the theater: not a sad band
+<p />
+This is called a P.A.E  
+(Educational Action Project)  
+in the school environment, and it can sometimes lead, as it did last Tuesday at the municipal theater, to the arrival of a British music group.  
+"The Jazz Butcher," literally "the butchers of jazz," who are not unknown in the rock world, landed in France at the invitation of Pierre and Marie Curie College for a unique concert as a prelude to their European tour.  
+<p />
+Incredible, isn’t it? Even though for most people in Pont-Audemer, "The Jazz Butcher" has never reached the fame of Michel Sardou or Jacques Brel, it was a mini-event in the tanning city.  
+<p />
+In fact, the English band was there to celebrate the release of their tenth album, "Illuminate," performing for an audience of 650 enthusiastic students and a few guests. All of this was thanks to Mr. Leroux, an education advisor and photographer in his spare time, as he managed to pull off this feat by collaborating on some of the British band's album covers.  
+<p />
+And what about the educational project, you might ask? It was indeed present for several months, as the English teachers at the college had worked with the students on the band’s lyrics. And not just to sing them in unison on the day of the concert!  
+<p />
+Moreover, in the entrance hall of the establishment, a photography exhibition by Lucien Borderline was showcased on the theme of "jazz butcher."  
+<p />
+Organized by the socio-educational center, this afternoon also gave a chance to a Rouen-based group, "Candy Lies," as the opening act. With "The Jazz Butcher," straddling the line between the Velvet Underground and prehistoric Memphis soul music, the theater resonated. In every sense of the word...  
+<p />
+The Curie students enjoyed this recreational afternoon.
+		)}
+	)}
+#live	endif
+
 #define	1995_apollox_alex_green.html
 #live	if (getval(page) = 1995_apollox_alex_green.html)
 	${extractPress(

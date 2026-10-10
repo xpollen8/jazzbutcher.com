@@ -1,7 +1,7 @@
 #define	Jan8.html()
 	${gigHeader(
 
-	who=${literalizeCommas( ${pat}, ${max},Ady Tilley,Tim )},
+	who=${literalizeCommas( ${pat}, ${max},Ady Tilley,Tim Cantrell)},
 	with=David J.
 	)}
 

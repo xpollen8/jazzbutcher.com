@@ -3,7 +3,7 @@
 		eventweb=,
 		cost=,
 		who=${literalizeCommas(
-			${pat}, The Antichrist (Ramon Destine), ${at}, Chris "Snogger" Rudd, ${owen}
+			${pat}, ${anti}, ${at}, Chris "Snogger" Rudd, ${owen}
 		)},
 		pat=${literalizeCommas(
 			The first show to be advertised as "The Jazz Butcher".

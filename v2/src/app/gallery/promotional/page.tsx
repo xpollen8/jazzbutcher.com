@@ -99,7 +99,7 @@ const gallery = [
 	{
     src: "/images/promo/Promotional_BigTime_Outside_1986.jpg",
 		credit: "Pursued By Trees",
-		credit_date: "1986-05-20",
+		credit_date: "1986",
 		alt: "BigTime Promo",
   },
 	{

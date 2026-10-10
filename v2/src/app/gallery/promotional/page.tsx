@@ -68,7 +68,7 @@ const gallery = [
 		body: <MyLink href="/projects/drones_club">Project Page</MyLink>
   },
 	{
-    src: "/images/promo2.jpg",
+    src: "/images/Promotional_ConditionBluePressKitPhoto.jpg",
 		credit_date: "1992",
 		alt: "Sky Records Promo",
 		body: <MyLink href="/press/92biography">Full Promo Package</MyLink>

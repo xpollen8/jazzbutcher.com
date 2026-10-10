@@ -68,9 +68,10 @@ const gallery = [
 		body: <MyLink href="/projects/drones_club">Project Page</MyLink>
   },
 	{
-    src: "/images/promo2.jpg",
+    src: "/images/Promotional_ConditionBluePressKitPhoto.jpg",
 		credit_date: "1992",
 		alt: "Sky Records Promo",
+		credit: "Pursued By Trees",
 		body: <MyLink href="/press/92biography">Full Promo Package</MyLink>
   },
 	{
@@ -97,6 +98,7 @@ const gallery = [
   },
 	{
     src: "/images/promo/Promotional_BigTime_Outside_1986.jpg",
+		credit: "Pursued By Trees",
 		credit_date: "1986",
 		alt: "BigTime Promo",
   },

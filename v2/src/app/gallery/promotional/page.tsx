@@ -71,6 +71,7 @@ const gallery = [
     src: "/images/Promotional_ConditionBluePressKitPhoto.jpg",
 		credit_date: "1992",
 		alt: "Sky Records Promo",
+		credit: "Pursued By Trees",
 		body: <MyLink href="/press/92biography">Full Promo Package</MyLink>
   },
 	{
@@ -97,7 +98,8 @@ const gallery = [
   },
 	{
     src: "/images/promo/Promotional_BigTime_Outside_1986.jpg",
-		credit_date: "1986",
+		credit: "Pursued By Trees",
+		credit_date: "1986-05-20",
 		alt: "BigTime Promo",
   },
 	{

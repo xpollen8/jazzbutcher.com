@@ -671,7 +671,8 @@
 
 		who=${literalizeCommas( ${pat}, ${max}, ${owen}, ${felix} )},
 		photosets=/images/19860815/19860815_JazzButcher_TexasRecordsInstore_SantaMonica_DavidJamesBuckner.jpg$$
-			David James Buckner;;;;2026-10-10
+			/images/19860815/19860815_JazzButcher_TexasRecordsInstore_SantaMonica_DavidJamesBuckner_2.jpg$$
+			David James Buckner;;;;2026-10-13
 
 	)}
 

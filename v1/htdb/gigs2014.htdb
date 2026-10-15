@@ -25,6 +25,8 @@
 		who=${literalizeCommas(
 			${pat}, ${garofalo}, ${stevenew}, ${simon}
 		)},
+		posters=/images/20140627/20140627_poster_FMACD34.jpg$$
+		    Fishy Mansions CD FMACD34;;;;2026-10-15
 		announcement=${literalizeCommas(
 			In the Upstairs Bar
 			<p>

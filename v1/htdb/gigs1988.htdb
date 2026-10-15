@@ -760,6 +760,10 @@ Craig Kolb;;;;2000-03-17
 		photosets=
 			/images/19880630/19880630_RareVicRec_Roxy_PatKizzy.jpg$$
 			RareVicRe;;https://twitter.com/RareVicRec;;2023-07-03
+		---
+			/images/19880630/19880630_JazzButcher_DavidJamesBuckner_1.jpg$$
+			/images/19880630/19880630_JazzButcher_DavidJamesBuckner_2.jpg$$
+			David James Buckner;;;;2026-10-15
 	)}
 
 #define	Jul1.html()

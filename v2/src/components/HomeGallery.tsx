@@ -14,13 +14,13 @@ import 'swiper/css/scrollbar';
 const pictures = [
 	{
 		title: "The Roxy Theatre - Los Angeles",
-		credit: { g: "David James Buckner", d: "2026-10-15" },
+		credit: { g: "David James Buckner", d: "1986-06-30" },
 		href: "/gigs/1988-06-30",
 		poster: 'https://v1.jazzbutcher.com/images/19880630/19880630_JazzButcher_DavidJamesBuckner_2.jpg',
 	},
 	{
 		title: "The Prince Albert - Brighton",
-		credit: { g: "Ms Dee", d: "2010-06-09" },
+		credit: { g: "Ms Dee", d: "2009-05-24" },
 		href: "/gigs/2009-05-24",
 		poster: 'https://v1.jazzbutcher.com/images/20090524/20090524_Pat1_MsDee23.jpg',
 	},

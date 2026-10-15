@@ -642,16 +642,38 @@ ${d}
 		dtpublished=1982-11-06,
 		dtadded=2025-08-28)}
 
+	${addPress(type=interview, album=rmen,
+		url=${jbc_press}/198502_press_jamming_RealMen.html,
+		publication=Jamming!,
+		issue=25,
+		thumb=${jbc_images}/198502_press_jamming_RealMen;;Philip Snow;;;;2026-10-14,
+		images=${jbc_images}/198502_press_jamming_cover;;Philip Snow;;;;2026-10-14$$,
+		title=THE JAZZ BUTCHER,
+		headline=Real Men (Glass),
+		credit=Bruce Dessau,
+		location=London\, UK,
+		dtpublished=1985-02,
+		dtadded=2026-10-14)}
+
+	${addPress(type=interview,
+		url=${jbc_press}/198502_press_jamming.html,
+		publication=Jamming!,
+		issue=25,
+		thumb=${jbc_images}/198502_press_jamming;;Philip Snow;;;;2026-10-14,
+		images=${jbc_images}/198502_press_jamming_cover;;Philip Snow;;;;2026-10-14$$,
+		location=London\, UK,
+		title=Jazz Butcher,
+		dtpublished=1985-02,
+		dtadded=2026-10-14)}
+
 	${addPress(type=album, album=bacon,
 		url=${jbc_press}/19820905_press_mercuryandherald.html,
 		publication=Mercury And Herald,
 		thumb=${jbc_images}/19820905/19820905_press_mercuryandherald;;Philip Snow;;;;2022-06-02,
-		todo=OCR,
 		location=Northampton\, UK,
 		credit=Alex Dawson,
 		title=Jazz Butcher set for a debut,
-		headline=The choice cuts sound 'very promising',
-		subhead=and different,
+		headline=The choice cuts sound 'very promising' - and different,
 		dtpublished=1982-09-05,
 		dtadded=2023-09-10)}
 
@@ -1130,9 +1152,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=preshow;clipping,
 		url=${jbc_press}/19901105_press_minneapolis.html,
 		thumb=${jbc_images}/19901105/19901105_press,
-		todo=OCR,
 		publication=Newspaper,
-		title=Gig clipping,
+		title=Jazz Butcher/Blue Aeroplanes/Jellyfish,
 		credit=Walsh,
 		location=Minneapolis\, Minnesota\, USA,
 		dtadded=2017-03-20,
@@ -1283,9 +1304,8 @@ C'mon, it's April. Get over it — or as Pat would say… “pass us another Hei
 	${addPress(type=album, album=highest,
 		url=${jbc_press}/202201_press_uncut.html,
 		images=${jbc_images}//202201/202201_press_uncut,
-		title=The Jazz Butcher,
-		headline=The Highest in the Land,
-		todo=OCR,
+		title=So long and thanks for all the Fish,
+		headline=indie eccentric's swansong,
 		publication=Uncut Magazine,
 		credit=Jim Wirth,
 		dtpublished=2022-01,
@@ -2307,7 +2327,6 @@ subhead=(20 December 1957 – 5 October 2021),
 	${addPress(type=preshow,
 		url=${jbc_press}/19990923_press_timeout.html,
 		thumb=${jbc_images}/19990923/19990923_press_timeout,
-		todo=OCR,
 		credit=Dev Sherlock,
 		publication=Timeout,
 		location=New York\, New York\, USA,
@@ -22479,6 +22498,286 @@ Pat
 		)}
 	)}
 	${jbc_footer}
+#live	endif
+
+#define	198502_press_jamming_RealMen.html
+#live	if (getval(page) = 198502_press_jamming_RealMen.html)
+	${extractPress(
+		body=${literalizeCommas(
+		I shall never use words like 'quirky/whimsy' in their precense again.
+		The Jazz Butcher here are wise, witty and wonderful.  Perceptive and clever
+		without being perceptive and clever clever, just one line about real men,
+		"Notice how they never sit together on buses?".  Engagingly accurate and nifty tune too.
+		)}
+	)}
+#live	endif
+
+#define	198502_press_jamming.html
+#live	if (getval(page) = 198502_press_jamming.html)
+	${extractPress(
+		body=${literalizeCommas(
+		<div class="iview_intro">
+		Glass recording artist, The Jazz Butcher is one of
+		pop’s most enigmatic and colourful characters. With the
+		singles, ‘Southern Mark Smith’ and ‘Roadrunner’, he has
+		carved out his own niche on pop’s offbeat side. Having
+		now recruited ex-Bauhaus bassist David J. to the
+		Butcher ranks, his acute pop sensibility looks set to
+		spread. Jamming! asked The Jazz Butcher to pin down
+		his mad methods in his own words
+		</div>
+		<p />
+		99p. packet of cigarettes and a glass of Scotch.
+		Could be worse, really, for the time of night. Jazz
+		Butcher at the controls here, ever grateful to
+		Maximilian, long-term associate of suit and sunglasses
+		notoriety, D.J. the one with the film library
+		and ACUTE POP SENSIBILITY, and Jones, who can
+		do anything, including cook. Do the decent thing,
+		girls, ask him to marry you! (Wonder what he'll
+		say). Supporting roles well and intelligently played
+		by the likes of Dave B., Sterling, the orange cat
+		with manners, Earl “It-wasn't-me-I-didn’t-do-it"
+		Sikkorski and further friends, if not neighbours.
+		<p />
+		Neighbours, you see, give me trouble (did you
+		know that I was born on the same day as W.
+		Bragg, Esq.?). They don't like the row, and they
+		think it's time I settled down with a regular family.
+		I get trouble in shops too.
+		<p />
+		A true; but nonetheless typical incident. David
+		and I are driving up the M1 on the way home to
+		Northampton after a pleasantly successful London
+		show. We stop at a service station (a curious
+		misnomer, I'd say: no trains and no service) to fill
+		up with petrol. I decide to purchase a packet of
+		fags from the ciggomat in the corner of the petrol
+		paying type place. Said device swallows my 50p.
+		bit. Won't give it back. I battle gamely but drunkenly
+		with the machine awhile, before addressing
+		myself to the all-night petrol lady, who is regarding
+		my dishevelled and impatient struggles with suspicion.
+		<p />
+		I try to explain what has befallen me, and mention
+		by way of intelligent conversation (breaks the
+		ice at all the cutest parties) that “these bloody
+		things have never worked since they put the price
+		up to £1.20". My frustrated but innocent remark is
+		immediately met with an order that I fill in a
+		FORM. “Market research?” I think to myself, “At
+		this time of night?” — but I say nothing. Until, that
+		is, it hits me that this lady really does want me to
+		fill in a sort of “I just lost 50p. and I understand
+		that the deliberate giving of false information can
+		result in prosecution under the Watch Your Step
+		Or I'll Have You Son Act 1979" Form. Then I give it
+		some outraged citizen, which she doesn't enjoy at
+		all.
+		<p />
+		By now things are getting silly. Dave has long
+		since paid for his gas and returned to the motor
+		where he and Sikkorski are sitting impatient for
+		my return. Meanwhile I have reached a sort of
+		Hungarian Impasse with the ciggylady. I “step on
+		it”. I try to get something done. I plead for either
+		the return of my 50p., or for my packet of fags. I
+		have no more such coins — no more money at all,
+		in fact — and I need a snout. I am genuine and your
+		beastly sodding machine really did pinch my
+		money.
+		<p />
+		I have to fill out the FORM. I give my name,
+		address and a number of other details, which now
+		escape me, but which probably related to my
+		membership of political organisations. On my
+		signing the FORM, the lady finally, and with rather
+		poor grace, delivers me of a further 50p. I purchase
+		my cigarettes, without having to put any
+		more coins into the machine (was I telling the
+		truth or what, lady?). Triumphantly I turn to the
+		lady and show that ALL I EVER WANTED WAS 20
+		CIGARETTES! With a look that might cause a more
+		sober man’s right ear to drop into his left-hand
+		pocket, the lady says that I am A PROFESSIONAL,
+		and had better not show my face in her manor
+		again!
+		<p />
+		Now when did that sort of thing ever happen to
+		you, huh? If it has happened recently, I'll bet you
+		remember it. Trouble in shops: “That's not a donut
+		... that's a FINGER!"
+		<p />
+		I declare that the hidebound mentality of those
+		who give me trouble in shops is the same
+		mentality that presently infects the body of
+		pop; the sort of people who call my group “The
+		Jazz Butchers” and charge us for playing in their
+		drafty clubs (It won't work — go away!).
+		<p />
+		Another thing: the ICA recently ran a week of
+		shows under the collective slogan “putting the fun
+		back into being pretentious”. Now, come ON!!!
+		That's not going to help anyone but the fatties.
+		What's wrong with just fun?
+		<p />
+		There's a good quote, which everyone in pop
+		music ought to remember — especially the
+		trouble-in-shops parasites, who might as well be
+		soap salesmen (in fact, why not try that, boys? You
+		might make more money). It was written on a
+		bottle of Molson which I bought in the County
+		Tavern in Northampton: “An honest brew makes
+		its own friends”. Best purchase I ever made, that
+		bottle.
+		<p />
+		Another good quote (nothing to do with pop):
+		Doctor, when I die I want to be buried right in the
+		same coffin as you!" William Burroughs said that,
+		and I wish that people realised how FUNNY he can
+		be. I never much cared for him until I heard tapes
+		of him reading his work. There are loads of records
+		of this, and you should have one.
+		<p />
+		My manager, incidentally, a man of immense
+		taste and tolerance, suggested that I should mention
+		that the Jazz Butcher group has made some
+		records. Okay, it's true, we've made some records.
+		You don't have to buy them if you don't
+		want to, though.
+		<p />
+		The Jazz Butcher's fashion tip for 1985, if
+		you're interested, is those neat Russian army hats
+		with ear-flap things. Early in 1985 the mighty
+		Muscovite army will liberate the ICA, to the considerable
+		gratitude of an oppressed proletariat. So
+		just remember who told you first.
+		)}
+	)}
+#live	endif
+
+#define	19820905_press_mercuryandherald.html
+#live	if (getval(page) = 19820905_press_mercuryandherald.html)
+	${extractPress(
+		body=${literalizeCommas(
+		ECCENTRIC Northampton composer/musician The Jazz Butcher will be putting the finishing touches to his debut LP in a London studio this weekend.
+		<p />
+		The album, The Jazz Butcher in Bath of Bacon, could well be out on the Glass label by the end of the year.
+		<p />
+		J.B. (real name Pat Fish) played me a very promising demo of the LP this week over a couple of been at his otherwise empty Northampton flat. 
+		<p />
+		Apologising 
+		<p />
+		"I think the recording has come out quite, well, though I still find myself apologising to everybody about the tapes," he admitted.
+		<p />
+		Among the tracks on the new album are classics like Love Kittens (the favourite for the first single) Grey Flanelette, plus of course Bath of Bacon.
+		<p />
+		It's eccentric jazz flavured pop, with Influences of Syd Barrett, Lou Reed and an obscure French singer called Charles Trenet, the Jazz Butcher claims.
+		<p />
+		"It's not a comedy record, but 1 want people to smile and enjoy It" he added.
+		<p />
+		The Jazz. Butcher also hopes to meet the people in New York at Easter, playing enough concerts there to raise the air fare home again!
+		<p />
+		His two major hobbies at the moment are writing songs for LP number two and feeding spaghetti to the ducks in Abington Park.
+		<p />
+		Listen out for the new Jazz Butcher LP. It sounds like a goody to me, and is quite different from anything else on the current pop market. 
+		)}
+	)}
+#live	endif
+
+#define	202201_press_uncut.html
+#live	if (getval(page) = 202201_press_uncut.html)
+	${extractPress(
+		body=${literalizeCommas(
+		"When life becomes impossible we want to be handled softly, kissed and told that we're worth something",
+		sang Pat Fish on "Goodnight Sweetheart", the closing song on what proved to be the final new LP The Jazz Butcher recorded before his death, at 63, in October.
+		<p />
+		Beset by health worries in recent years, mortality was on the mind of Northampton's answer to Robyn Hitchcock, "Time" stating baldly: "My hair's all wrong, my time ain't long". However, the bleak but beautiful moments here represent a suave, dignified coda for an artist whose work never quite got the hugs it deserved.
+		<p />
+		7/10
+		)}
+	)}
+#live	endif
+
+#define	19990923_press_timeout.html
+#live	if (getval(page) = 19990923_press_timeout.html)
+	${extractPress(
+		body=${literalizeCommas(
+		This is certainly an event that Jazz
+		Butcher fans never expected to witness again, since the effervescent
+		Pat Fish - sole constant member, songwriter and, for all intents and purposes,
+		the Jazz Butcher himself - brought his
+		“band” to a close three years ago. Moreover, the band had not toured stateside
+		since 1992, aside from a pair of one-offs
+		last year. Fish has assembled no mere
+		pickup band for this special five-city reunion tour (of sorts); infact, it’s the most
+		talent- and star-packed lineup in the
+		band’s long and winding history. Longtime member Owen Jones and brothers
+		David J and Kevin Haskins (Bauhaus,
+		Love & Rockets) will be on board, along
+		with guitarist Max Eider, who served as
+		Fish’s main sidekick during the Butcher’s early years. Upon Eider’s departure
+		in 1986 (following a bout of drunken
+		fisticuffs, according to band lore), the
+		Butcher was never quite the same band.
+		Even though Fish would go on to write
+		some of his best music, the group
+		missed Eider’s fluid, jazzy flourishes
+		and drinking partnership.
+		<p />
+		The black sheep of Creation Records for the past decade, the Jazz Butcher was a personal favorite of label
+		owner Alan McGee, who was forced to
+		finally drop it from the roster in 1996
+		after the label's post-Oasis corporate
+		face-lift. But throughout the ‘80s and
+		"90s, the Jazz Butcher quietly plowed its
+		own furrow, leaving behind a catalog of
+		classic drinking songs, timeless ballads
+		(principally concerned with love, sex
+		and travel) and playful bombast that
+		consistently found favor throughout
+		the odd corners of Europe and on
+		American college radio. Indeed, it’s
+		hard to avoid the term “cult artist”
+		when talking about the Jazz Butcher - vinyl versions of its early albums regularly fetch upward of $100 on eBay, as
+		they have never been available on CD.
+		(Hello, record companies?)
+		<p />
+		On this tour, fans can look forward
+		to plenty of JB classics (indeed, many
+		of which this particular lineup had a
+		hand in). Reports from the tour's-first
+		show in L.A. found them unearthing
+		the likes of "Jazz Butcher vs. Count
+		Dracula," "Real Men" and their rousing
+		cover of "Roadrunner." But the highlights will certainly be signature tunes
+		such as "Partytime," "Drink" and, one
+		can only hope, "Southern Mark Smith."
+		)}
+	)}
+#live	endif
+
+#define	19901105_press_minneapolis.html
+#live	if (getval(page) = 19901105_press_minneapolis.html)
+	${extractPress(
+		body=${literalizeCommas(
+		A white wimpy wock wover’s nirvana. The
+		eccentric Butcherman (nee Pat Fish)’s latest Cult
+		of the Basement (Rough Trade) is the perfect
+		party album for all geeks, bookworms and other
+		true hepcats. Like the aerodynamically-
+		monikered Screaming Blue Messiahs, Brit vets
+		the Blue Acroplanes fly the frantic skies with
+		heavy guitars and minimalistic vocals on their
+		new Swagger (Chrysalis). Jellyfish, who wowed
+		some with their costumes, bubble machine and
+		covers of Wings’ “Live And Let Die” and
+		Badfinger’s “No Matter What” opening for
+		World Party last month, play between the Jazz-
+		plane sets in the Entry. 8 p.m., First Avenue, 701
+		First Ave. N., Mpls, 338-8388. (Walsh)
+		)}
+	)}
 #live	endif
 
 #define	198503_press_goforgold3_germany.html

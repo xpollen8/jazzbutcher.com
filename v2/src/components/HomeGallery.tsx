@@ -14,7 +14,7 @@ import 'swiper/css/scrollbar';
 const pictures = [
 	{
 		title: "The Roxy Theatre - Los Angeles",
-		credit: { g: "David James Buckner", d: "1986-06-30" },
+		credit: { g: "David James Buckner", d: "1988-06-30" },
 		href: "/gigs/1988-06-30",
 		poster: 'https://v1.jazzbutcher.com/images/19880630/19880630_JazzButcher_DavidJamesBuckner_2.jpg',
 	},

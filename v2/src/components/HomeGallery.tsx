@@ -13,6 +13,18 @@ import 'swiper/css/scrollbar';
 
 const pictures = [
 	{
+		title: "The Roxy Theatre - Los Angeles",
+		credit: { g: "David James Buckner", d: "2026-10-15" },
+		href: "/gigs/1986-08-14",
+		poster: 'https://v1.jazzbutcher.com/images/19860814/19860814_JazzButcher_DavidJamesBuckner_2.jpg',
+	},
+	{
+		title: "The Prince Albert - Brighton",
+		credit: { g: "Ms Dee", d: "2010-06-09" },
+		href: "/gigs/2009-05-24",
+		poster: 'https://v1.jazzbutcher.com/images/20090524/20090524_Pat1_MsDee23.jpg',
+	},
+	{
 		title: "NN Cafe - Northampton",
 		credit: { g: "Mat Wallis", d: "2014-08-20" },
 		href: "/gigs/2014-08-20",

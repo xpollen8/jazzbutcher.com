@@ -71,7 +71,6 @@ const sections : { [key: string]: BreadCrumb } = {
 	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The musicians', rootHideChildren: false },
 	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994", body: "Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.  Includes then-current news and answers to fan questions in 9 lengthy letters." },
 	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals", body: "Pat extensively journaled his projects. Some pages are shared here." },
-	fiascos: { parent: 'writings', title: 'Top 10 JBC Fiascos', summary: '2020', body: "When live on the road goes.. interesting" },
 
 	prejbc: { parent: 'pat', title: 'Pre-JBC', rootHideChildren: false },
 
@@ -122,11 +121,15 @@ const sections : { [key: string]: BreadCrumb } = {
 	eulogy: { parent: 'memoriam', title: 'Eulogy', summary: "Alan Moore" },
 	homage: { parent: 'memoriam', title: 'Musical Tributes', summary: "Songs in praise of The Butcher" },
 
-	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003", body: "The passing of Northampton-based folk music legend Tom Hall prompted Pat to pen a memorial."},
+	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003", body: "On the passing of Northampton-based folk music legend Tom Hall."},
 	'press/20010325_press_departurelounge': { parent: 'writings', title: "Review of Departure Lounge LP", summary: "2001", body: "A lengthy review upon the release of Tim Keegan's record" },
 	'press/20020709_starindia': { parent: 'writings', title: "The Star Of India Restaurant", summary: "2002", body: "Northampton's Star of India restaurant is dearly loved by the artist" },
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "1986", body: "Early Fan Club issues" },
-	japan2000: { parent: 'writings', title: 'THE JBC GO JAPAN', summary: "2000", body: "Tour summary" },
+	'tours': { parent: 'pat', title: 'Tour Stories', inParentDirectory: false },
+	'letters/19930830/tour': { parent: 'tours', title: 'EUROPEAN TOUR REPORT', summary: '1993', body: "From typed letter to David Whittemore", inParentDirectory: false },
+	'usa1999': { parent: 'tours', title: 'J.B.C GO America', summary: "1999", body: "The Glorious and Idiotic US Tour 1999", inParentDirectory: true },
+	'japan2000': { parent: 'tours', title: 'THE JBC GO JAPAN', summary: "2000", body: "EASTSIDE!", inParentDirectory: true },
+	fiascos: { parent: 'tours', title: 'Top 10 JBC Fiascos', summary: '2020', body: "When live on the road goes.. interesting", inParentDirectory: false },
 
 	mailinglist: { parent: 'etc', title: 'jbc-list', summary: '1989-2004', body: "The genesis of this Jazz Butcher website was the mailing list that David Whittemore maintained. During the 15 years it was active, several hundred technically-inclined JBC fans kept in touch and posted thousands of email messages." },
 	auction: { parent: 'etc', title: 'Website Auction', summary: '1997', body: "The Butcher had some memorabilia sitting around his home which he was sick of tripping over. So, we decided to have an auction." },
@@ -190,6 +193,21 @@ const parseTitle = (title: string | string[], key0: number) => {
 
 export const sectionOptions = (match: string) => {
 	const options = Object.keys(sections).map((section: string) => {
+		/*
+		const buildParent = (href: any) => {
+			// @ts-ignore
+			const { title, parent, summary, inParentDirectory }: BreadCrumb = sections[href];
+			if (inParentDirectory) {
+				console.log("RECURSE", href);
+				const p = buildParent(parent);
+				return { title, parent, summary, useHref: `${p?.parent}/${parent}/${href}` };
+			}
+			//const useHref = (inParentDirectory) ? `${parent}/${href}` : href;
+			return { title, parent, summary, useHref: href };
+		}
+		const { title, parent, summary, useHref } = buildParent(href);
+		*/
+
 		const this_section = sections[section];
 		const parent_section = this_section?.parent && sections[this_section?.parent];
 		return {
@@ -222,9 +240,13 @@ const NavSections = (props: Props_Header): React.ReactNode  => {
 					return parent && !(sections[parent]?.rootHideChildren && depth === 1) && (parent === section && !sections[href]?.hide)
 				})
 				?.map((href: string, key: number) => {
-					// @ts-ignore
-					const { title, parent, summary, inParentDirectory }: BreadCrumb = sections[href];
-					const useHref = (inParentDirectory) ? `${parent}/${href}` : href;
+					const buildParent = (href: any) => {
+						// @ts-ignore
+						const { title, parent, summary, inParentDirectory }: BreadCrumb = sections[href];
+						const useHref = (inParentDirectory) ? `${parent}/${href}` : href;
+						return { title, parent, summary, useHref };
+					}
+					const { title, parent, summary, useHref } = buildParent(href);
 					return (
 						<div key={key} className={`navItem ${(depth === 0) ? 'outer' : ''}`}>
 							<MyLink href={useHref.includes('https') ? useHref : `/${useHref}`}>{title}</MyLink>

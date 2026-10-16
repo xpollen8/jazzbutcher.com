@@ -1188,6 +1188,16 @@ INSERT INTO `gigsong` VALUES (NULL,'1988-06-12 00:00:00','set',NULL,1,7,'Soul Ha
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-12 00:00:00','set',NULL,1,8,'Grey Flanelette',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19880612/19880612_DouglasBuege_JazzButcher_Milwaukee_OddRockCafe_08_Grey_Flanelette.mp3','Douglas Buege','',NULL,"2023-02-22");
 INSERT INTO `gigsong` VALUES (NULL,'1988-06-12 00:00:00','set',NULL,1,9,'Susie',NULL,NULL,NULL,'https://s3.amazonaws.com/assets.jazzbutcher.com/audio/gigs/19880612/19880612_DouglasBuege_JazzButcher_Milwaukee_OddRockCafe_09_Susie.mp3','Douglas Buege','',NULL,"2023-02-22");
 INSERT INTO `gigsong` VALUES (NULL,'1988-08-07 22:00:00','set',NULL,1,0,'The Entire Performance',NULL,'Extracted and EQd from mixcloud',NULL,'https://v1.jazzbutcher.com/audio/19880807/19880807_JBC_Creation_TownCountry.mp3','Creation Records','https://www.mixcloud.com/creationrecords/doing-it-for-the-kids-all-dayer-1988',NULL,"2016-04-03");
+
+INSERT INTO `gigsong` VALUES (NULL,'2016-11-13','set',NULL,1,0,'The Entire Performance',NULL,NULL,NULL,'https://v1.jazzbutcher.com/audio/20161113/20161113_JazzButcher_BlackHeart.mp3','Fishy Mansions CD FMACD01',NULL,NULL,'2026-10-15');
+INSERT INTO `gigsong` VALUES (NULL,'2016-11-13','set','00:29',1,1,'The Highest In The Land',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2016-11-13','set','05:00',1,2,'Mess Up','David J.',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2016-11-13','set','08:15',1,3,'Last of the Gentleman Adventurers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2016-11-13','set','13:33',1,4,'Melanie Hargreaves\' Father\'s Jaguar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2016-11-13','set','17:21',1,5,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2016-11-13','set','20:21',1,6,'True Love Will Find You in the End','Daniel Johnston',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `gigsong` VALUES (NULL,'2016-11-13','set','22:20',1,7,'Dream Baby Dream','Suicide',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1988-08-07 22:00:00','set',NULL,1,1,'Real Men',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-08-07 22:00:00','set',NULL,1,2,'Looking For Lot 49',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1988-08-07 22:00:00','set',NULL,1,3,'Out Of Touch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

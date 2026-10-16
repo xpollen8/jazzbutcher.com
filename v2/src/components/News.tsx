@@ -20,6 +20,17 @@ type NewsItemType = {
 
 const recentNews = [
 	{
+		subject: `Tour Stories`,
+		dt: '2026-10-15',
+		category: 'media',
+		link: `/tours`,
+		body: <>
+			Added <MyLink href="/tours/usa1999">J.B.C GO America - 1999</MyLink> and consolidated all other known tour diaries into a <MyLink href="/tours">new tours section</MyLink>.
+			<p />
+			Also added a short story: <MyLink href="/writings/elrabido">El Rabido</MyLink> from 1990.
+		</>
+	},
+	{
 		subject: `Letters From Pat - major updates`,
 		dt: '2026-10-09',
 		category: 'media',

@@ -5,11 +5,12 @@ import { personLink } from '@/lib/defines';
 
 const Japan2000 = () => 
 <>
-	<Header section="fanclub" />
+	<Header section="japan2000" />
 	<main>
 		<div>
-		<h1>&quot;EASTSIDE!&quot;</h1>
-		<h2>THE JBC GO JAPAN</h2>
+		<b>&quot;EASTSIDE!&quot;</b>
+		<br />
+		<b>THE JBC GO JAPAN</b>
 		
 		<h3>European Squad</h3>
 		

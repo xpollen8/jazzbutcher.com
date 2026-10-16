@@ -127,6 +127,7 @@ const sections : { [key: string]: BreadCrumb } = {
 	fanclub: { parent: 'writings', title: 'Fan Club', summary: "1986", body: "Early Fan Club issues" },
 	'tours': { parent: 'pat', title: 'Tour Stories', inParentDirectory: false },
 	'letters/19930830/tour': { parent: 'tours', title: 'EUROPEAN TOUR REPORT', summary: '1993', body: "From typed letter to David Whittemore", inParentDirectory: false },
+	'letters/19940413/tour': { parent: 'tours', title: 'JBC TOUR REPORT : EUROPE', summary: '1994', body: "From typed letter to David Whittemore", inParentDirectory: false },
 	'usa1999': { parent: 'tours', title: 'J.B.C GO America', summary: "1999", body: "The Glorious and Idiotic US Tour 1999", inParentDirectory: true },
 	'japan2000': { parent: 'tours', title: 'THE JBC GO JAPAN', summary: "2000", body: "EASTSIDE!", inParentDirectory: true },
 	fiascos: { parent: 'tours', title: 'Top 10 JBC Fiascos', summary: '2020', body: "When live on the road goes.. interesting", inParentDirectory: false },

@@ -69,8 +69,8 @@ const sections : { [key: string]: BreadCrumb } = {
 //TODO	live_shots: { parent: 'gigs', title: 'Concert Shots', inParentDirectory: true },
 
 	conspirators: { parent: 'jbc', title: 'Conspirators', summary: 'The musicians', rootHideChildren: false },
+	fanclub: { parent: 'writings', title: 'Fan Club', summary: "1986", body: "Early Fan Club issues" },
 	letters: { parent: 'writings', title: 'Letters From Pat', summary: "1990-1994", body: "Just prior to gaining Internet access for himself, Pat would update the website's maintainer the old-fashioned way: through type-written correspondence.  Includes then-current news and answers to fan questions in 9 lengthy letters." },
-	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals", body: "Pat extensively journaled his projects. Some pages are shared here." },
 
 	prejbc: { parent: 'pat', title: 'Pre-JBC', rootHideChildren: false },
 
@@ -121,10 +121,11 @@ const sections : { [key: string]: BreadCrumb } = {
 	eulogy: { parent: 'memoriam', title: 'Eulogy', summary: "Alan Moore" },
 	homage: { parent: 'memoriam', title: 'Musical Tributes', summary: "Songs in praise of The Butcher" },
 
-	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003", body: "On the passing of Northampton-based folk music legend Tom Hall."},
+	elrabido: { parent: 'writings', title: 'EL RABIDO', summary: "1990-03", body: "Short story about a small dog named Caesar", inParentDirectory: true },
 	'press/20010325_press_departurelounge': { parent: 'writings', title: "Review of Departure Lounge LP", summary: "2001", body: "A lengthy review upon the release of Tim Keegan's record" },
 	'press/20020709_starindia': { parent: 'writings', title: "The Star Of India Restaurant", summary: "2002", body: "Northampton's Star of India restaurant is dearly loved by the artist" },
-	fanclub: { parent: 'writings', title: 'Fan Club', summary: "1986", body: "Early Fan Club issues" },
+	tomhall: { parent: 'writings', title: 'Tom Hall Memorial', summary: "2003", body: "On the passing of Northampton-based folk music legend Tom Hall."},
+	notebooks: { parent: 'writings', title: 'Notebooks', summary: "Excerpts from his journals", body: "Pat extensively journaled his projects. Some pages are shared here." },
 	'tours': { parent: 'pat', title: 'Tour Stories', inParentDirectory: false },
 	'letters/19930830/tour': { parent: 'tours', title: 'EUROPEAN TOUR REPORT', summary: '1993', body: "From typed letter to David Whittemore", inParentDirectory: false },
 	'letters/19940413/tour': { parent: 'tours', title: 'JBC TOUR REPORT : EUROPE', summary: '1994', body: "From typed letter to David Whittemore", inParentDirectory: false },

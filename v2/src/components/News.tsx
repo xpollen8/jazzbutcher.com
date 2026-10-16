@@ -25,7 +25,9 @@ const recentNews = [
 		category: 'media',
 		link: `/tours`,
 		body: <>
-			Added 'J.B.C GO America - 1999' and consolidated all other known tour diaries into a new section.
+			Added <MyLink href="/tours/usa1999">J.B.C GO America - 1999</MyLink> and consolidated all other known tour diaries into a <MyLink href="/tours">new tours section</MyLink>.
+			<p />
+			Also added a short story: <MyLink href="/writings/elrabido">El Rabido</MyLink> from 1990.
 		</>
 	},
 	{

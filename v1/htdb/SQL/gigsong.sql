@@ -601,24 +601,7 @@ INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',NULL,1,6,'Rain',N
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',NULL,1,7,'Angels',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',NULL,1,8,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-07-25 21:00:00','set',NULL,1,9,'Hungarian Love Song',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','encore',NULL,1,1,'Sweet Jane','Lou Reed',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,1,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,10,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,11,'Falling In Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,12,'Death Dentist',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,13,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,14,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,15,'Zombie Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,16,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,17,'Marnie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,2,'Grooving in the Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,3,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,4,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,5,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,6,'Walk With The Devil',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,7,'D.R.I.N.K.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,8,'Rain',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `gigsong` VALUES (NULL,'1986-07-31 00:00:00','set',NULL,1,9,'Angels',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
 INSERT INTO `gigsong` VALUES (NULL,'1986-11-14 00:00:00','set',NULL,1,1,'Forever',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-11-14 00:00:00','set',NULL,1,10,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1986-11-14 00:00:00','set',NULL,1,11,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -5448,6 +5431,40 @@ insert into gigsong values(NULL,'1992-05-15','set','01:32:12',1,14,'Racheland',N
 insert into gigsong values(NULL,'1992-05-15','encore','01:43:43',1,1,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 insert into gigsong values(NULL,'1992-05-15','encore','01:48:04',1,2,'Indian Summer','Beat Happening',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 insert into gigsong values(NULL,'1992-05-15','encore','01:48:38',1,3,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+insert into gigsong values(NULL,'1986-07-31','set',NULL,1,0,'The Entire Performance',NULL,'Recording generously loaned from the Aadam Jacobs Audio Archive. \
+Source: TEAC V-450X (Aiwa CM-30A Stereo Mic) \
+Lineage: Master cassette > [sides A & B: Yamaha KX-230 > MAudio Microtrack II, side C: Yamaha K-520 > Tascam DR-05] > .WAV > iZotope RX7 [fades, normalization] > CDWav (tracking) > FLAC Frontend v2.1 (level 5) > FLAC > TagScanner 6.1.19 (tagging) \
+ \
+Recorded by: Aadam Jacobs \
+Transfer by: Brian Emerick \
+Mastered by: emmanuel \
+ \
+Recording 04138 from the Aadam Jacobs Collection Project \
+Coordinated by the Live Music Archive at the Internet Archive \
+Contact info: aadam.jacobs.project AT gmail DOT com',NULL,'https://v1.jazzbutcher.com/audio/19860731/19860731_JazzButcher_Chicago_AJC.mp3','AJC Project','https://archive.org/details/ajc04138_thejazzbutcherconspiracy_1986-07-31/TheJazzButcherConspiracy1986-07-31',NULL,'2026-10-20');
+
+insert into gigsong values(NULL,'1986-07-31','warmup','00:00',1,1,'Rain/Falling In Love',NULL,'guitar noodlings',NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','warmup','04:18',1,2,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','warmup','07:43',1,3,'Rain',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','warmup','12:24',1,4,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','16:28',1,1,'Big Saturday',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','20:20',1,2,'Grooving In The Bus Lane',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','23:40',1,3,'Soul Happy Hour',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','26:33',1,4,'The Jazz Butcher Meets Count Dracula',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','29:44',1,5,'The Human Jungle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','34:57',1,6,'Walk With The Devil',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','41:33',1,7,'D.R.I.N.K.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','45:58',1,8,'Rain',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','50:03',1,9,'Angels',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','54:56',1,10,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','59:51',1,11,'Falling In Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','01:03:41',1,12,'Death Dentist',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','01:08:48',1,13,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','01:13:00',1,14,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','01:26:57',1,15,'The Devil Is My Friend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','set','01:29:55',1,16,'Marnie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1986-07-31','encore','01:35:21',1,1,'Sweet Jane','Lou Reed',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
 /*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
 UNLOCK TABLES;

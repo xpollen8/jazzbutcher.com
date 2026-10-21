@@ -273,6 +273,8 @@
 		announcement=${literalizeCommas(
 			This is Alan McGee's club. Come watch the JBC annoy the glitterati!
 		)},
+		tickets=/images/20010809/20010809_ticket.jpg$$
+			Pursued By Trees;;2026-10-09
 	)}
 
 #define	Aug9.html()

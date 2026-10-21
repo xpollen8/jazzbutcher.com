@@ -302,7 +302,7 @@
 #define	May15.html()
 	${gigHeader(
 
-	bootlegger=${literalizeCommas(David Whittemore)},
+	bootlegger=${literalizeCommas(Aadam Jacobs)},
 	who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
 	)}
 

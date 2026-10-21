@@ -299,6 +299,13 @@
 
 	)}
 
+#define	May15.html()
+	${gigHeader(
+
+	bootlegger=${literalizeCommas(David Whittemore)},
+	who=${literalizeCommas( ${pat}, ${dooj}, ${pete}, ${nick} )},
+	)}
+
 #define	May16_1200.html()
 	${gigHeader(
 

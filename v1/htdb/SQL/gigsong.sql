@@ -5415,6 +5415,40 @@ INSERT INTO `gigsong` VALUES (NULL,'1995-04-04','set',NULL,1,14,'Land',NULL,NULL
 INSERT INTO `gigsong` VALUES (NULL,'1995-04-04','set',NULL,1,15,'Sister Death',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `gigsong` VALUES (NULL,'1995-04-04','set',NULL,1,16,'President Chang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
+insert into gigsong values(NULL,'1992-05-15','set',NULL,1,0,'The Entire Performance',NULL,'Recording generously loaned from the Aadam Jacobs Audio Archive. \
+ \
+Source: Realistic PZM Mics > Sony TC-D5M > Cassette (M) \
+Lineage: Master cassette > [sides A & B: Yamaha K-420 > Tascam DR-40, sides C & D: Yamaha K-220 > Sony A-10] > .WAV > iZotope RX7 [fades, normalization] > CDWav (tracking) > FLAC Frontend v2.1 (level 5) > FLAC > TagScanner 6.1.19 (tagging) \
+ \
+Recorded by: Aadam Jacobs \
+Transfer by: Brian Emerick \
+Mastered by: emmanuel \
+ \
+Recording 04140 from the Aadam Jacobs Collection Project \
+Coordinated by the Live Music Archive at the Internet Archive \
+Contact info: aadam.jacobs.project AT gmail DOT com',NULL,'https://v1.jazzbutcher.com/audio/19920515/19920515_JazzButcher_Chicago_AJC.mp3','AJC Project','https://archive.org/details/ajc04140_thejazzbutcherconspiracy_1992-05-15/TheJazzButcherConspiracy1992-05-15',NULL,'2026-10-20');
+
+insert into gigsong values(NULL,'1992-05-15','warmup','00:00',1,1,'A Cowboy Needs A Horse','Paul Mason Howard/Billy Mills',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','warmup','03:13',1,2,'She\'s A Yo-Yo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','warmup','09:42',1,3,'Pineapple Tuesday',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','11:40',1,1,'Over the Rainbow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','16:39',1,2,'She\'s A Yo-Yo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','22:50',1,3,'Honey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','26:59',1,4,'Girlfriend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','33:02',1,5,'Falling In Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','37:15',1,6,'Angels',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','44:47',1,7,'Partytime',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','49:38',1,8,'Beautiful Snow-White Hair',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','59:42',1,9,'Mr. Odd',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','01:04:07',1,10,'Southern Mark Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','01:10:09',1,11,'She\'s On Drugs',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','01:15:36',1,12,'Sister Death',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','01:24:49',1,13,'Shirley Maclaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','set','01:32:12',1,14,'Racheland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','encore','01:43:43',1,1,'Bigfoot Motel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','encore','01:48:04',1,2,'Indian Summer','Beat Happening',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert into gigsong values(NULL,'1992-05-15','encore','01:48:38',1,3,'Take The Skinheads Bowling','Camper Van Beethoven',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
 /*!40000 ALTER TABLE `gigsong` ENABLE KEYS */;
 UNLOCK TABLES;
 

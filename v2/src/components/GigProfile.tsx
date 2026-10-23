@@ -183,6 +183,7 @@ const GigPlayed = (data: any) => {
 					title: i.song,
 					start: startSeconds(i.start),
 					version: i.comment,
+					author: i.author,
 					annotation: i?.annotation ? parseAnnotation(i?.annotation) : (i?.performers ? [ { comment: i.performers }] : null ),
 				})),
 				...d	// data needed for old format

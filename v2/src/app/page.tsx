@@ -1,3 +1,4 @@
+import { GlassBook } from '@/components/Merch';
 import HomeGallery from '@/components/HomeGallery';
 import NotebookHero from '@/components/NotebookHero';
 import Header from '@/components/Header';
@@ -14,6 +15,7 @@ const Home = (): React.ReactNode =>
 		<center>
 			<NotebookHero />
 		</center>
+		<GlassBook />
 		<div>
 			<OnThisDay />
 			<MostRecentNews />
